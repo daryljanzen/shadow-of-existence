@@ -7632,3 +7632,308 @@ Two small generalisations of the template:
 `check_unread_figure` **OWED 31**, 88/88, ceiling 48. `check_prose_pins` 141 keys, `UNADJUDICATED 0`. `check_marker_transposition` green. Fast job green.
 
 ⛔ **`check_unread_figure` is red on `main` itself** — 100 sites against 99 rows, the missing one `P15_the_seam_limit_of_the_carried_layer...`, which arrived with main's own commits without a baseline row. Verified in a clean worktree at `origin/main`. I recorded the row here so this branch's gate describes the tree, noting it is not mine; **main stays red until someone lands it there.**
+
+### ⌗ A registered figure generator makes the suite non-idempotent on a tracked binary
+
+Running the 49-receipt suite scope left the tree dirty in exactly one file: `corpus/fig_acoustic_two_arm.pdf`, 55234 → 55228 bytes. **The plot is identical**; the only difference is the embedded timestamp, `/CreationDate (D:20260926203951-06'00')` → `(D:20261004015857Z)`, and the new one falls inside the suite run's own window.
+
+⇒ `corpus/make_fig_acoustic_two_arm.py` is **itself a registered receipt**, so the suite runs the generator and the generator rewrites its tracked output with a fresh Matplotlib `CreationDate` every time. **Any seat that runs the suite gets a dirty tree**, and committing it adds byte churn to a binary whose content did not change.
+
+I restored the file rather than committing it — I did not author a figure change, and a timestamp diff in a tracked PDF is noise. ⚑ But the dirty tree is the real cost: my own stop-hook flagged it, which is how it was found, and it will flag for every seat running the suite locally.
+
+**The remedy is one argument and I have not applied it:** Matplotlib's PDF backend takes `metadata={'CreationDate': None}` at `savefig`, and honours `SOURCE_DATE_EPOCH`. Either makes the output byte-identical for identical input. Not applied because it means regenerating and committing a tracked binary, which is the kind of change better gated than found — the one-line form is named so it costs 66 a decision rather than an investigation. ⌗ It is also this round's determinism class one artefact over: a figure that differs on every run is the same shape as a receipt that hashes differently on every run.
+
+### ⛔ A correction against myself: I read the plain-suite red as contention before checking whether it was deterministic
+
+I told PR #261 the red was a declared per-receipt budget meeting contention — the `cc66.113` family. **Wrong, and posted before the evidence that kills it was in.**
+
+**Two facts kill it.** Both plain-suite runs on the *same commit* failed — the `pull_request` one and the `push` one — and a contention-dependent timeout does not land identically on both. And the `pull_request` job ended at **11 minutes, earlier than my own local pass of the same scope at 703 s**. A timeout makes a run longer, not shorter, so a receipt failed and nothing timed out.
+
+| candidate | result |
+|---|---|
+| contention / over-timeout | **out** — both runs failed; job ended *earlier* than the local pass |
+| the job limit | out — 11 min of 75 |
+| the runner's `--wall` | out — defaults to 0, deadline path guarded by `if a.wall:` |
+| dependency drift | out — `sympy==1.14.0`, `numpy==2.4.6` pinned and identical here |
+| `corpus/paper_formula.py` absent from the tree | out — tracked, present in `c482ecb1` |
+| banked `.npz` inputs absent in CI | out — all three checked are tracked |
+| `P15_expansion_law.py`, which the carry names | **passes** locally, in 2 s under the runner, and in a **clean worktree at `bcfbe264`** |
+
+⇒ The carry row is **stale from `c482ecb1`**, not a claim about this head: `red_carry` clears an entry only on a run that yields the verdict line, and no suite run since has yielded one.
+
+**What blocks me, stated once:** I cannot read the failing job's log — this session's GitHub client refuses the log host (`refusing a redirect to productionresultssa12.blob.core.windows.net`) and the annotations carry only `Process completed with exit code 1`. The step is `run_all_receipts … | tee` then `grep -Eq '0 fail, 0 over timeout'`, **so the pipe masks the runner's exit code and the log is the only place the failing receipt is named.** What I need is that step's log or someone who can read it. The one re-run is spent, on `111336601125`.
+
+⚑ **The lesson is one I had already written down.** At `cc66.113` I recorded that *an exit code from a compound shell is not a measurement of the thing at the end of the pipe.* Here I did the same thing one level up: **I read a duration and a family resemblance as a diagnosis and published it, before checking the cheapest discriminator — whether the other run of the same commit agreed.** The rule: **two runs of one commit is the first thing to look at, not the last.** It is free, already on the page, and settles flake-versus-real before any reasoning begins.
+
+---
+
+## `cc66.118` — the plain-suite red has a name, and the reason it took four heads is that **the log was readable the whole time**
+
+⛔ **The blocker I stated at `cc66.117` was not real, and the correction is the finding.** I wrote there,
+and told PR #261, that I could not read the failing job's log because this session's GitHub client
+refuses the log host (`refusing a redirect to productionresultssa12.blob.core.windows.net`). That is
+true of `gh api .../logs`. It is **not** true of the session's other route to the same bytes: the GitHub
+MCP tool `get_job_logs`, called with the run id, `failed_only` and `return_content`, returns the log
+body inline. One call, and the failing receipt is named.
+
+⇒ **Every reading I published about this red was published while a measurement I had not attempted
+would have settled it.** First "the contention/declared-budget family", then the correction to "not
+contention, cause unknown". The rule at `cc66.117` was *two runs of one commit is the first thing to
+look at, not the last.* It generalises, and this is the general form: **before reasoning about a
+failure, enumerate the ways of reading it, not just the one that failed.** One refused route is not
+no access.
+
+### What the log says
+
+Both *completed* failing PR runs — `37163749574` (head `c482ecb1`) and `37163766926` (head
+`5e640eb0`) — name one receipt, at the same tree:
+
+| | |
+|---|---|
+| failing receipt | `receipts/P15_CR_cosmology/P15_expansion_law.py` |
+| duration | 2 s (the suite's wall was 668 s / 669 s, 39 pass 1 fail) |
+| kept output | `RESULT: FAILED -- one or more symbolic identities above did not hold.` |
+| `TREE-DIGEST` | `99a97d72a10afbe3` in **both** runs |
+
+⌗ Also measured off the same logs: the two heads' *push* runs differ from their PR runs because the
+scopes differ, and `f6858e27`'s push run was **green** — which is why "deterministic across four
+heads" was itself too strong. Three failures, two heads, one receipt.
+
+### And it is still not reproduced here. Measured, not assumed
+
+| hypothesis | verdict |
+|---|---|
+| the repair was incomplete at those heads | **out** — the pre-repair receipt at `5e640eb0`, and `c482ecb1`'s, both pass in clean worktrees |
+| CI checks out the PR *merge* ref, not my head | **out** — my merge-base **is** `main`'s tip (`05ffab46`), so the merge tree is my head's tree |
+| a flaky / nondeterministic `simplify` | **out** — 12 consecutive runs, all pass |
+| CI's child environment | **out** — `NODE=ci`, `PYTHONUNBUFFERED=1` and the five one-thread BLAS vars, reproduced exactly: passes |
+| a sibling receipt rewriting the paper under it | **out** — 7 receipts in scope read `corpus/CR_cosmology.tex`, **none writes it** |
+| the tex arriving as an LFS pointer (only the compile job sets `lfs: true`) | **out** — `.gitattributes` declares **no LFS** at all, by a decision recorded at `r2419` |
+| sympy ground types (`gmpy2` / `python-flint` present in CI) | **out** — `GROUND_TYPES` is `python` here and neither package is in `requirements-ci.txt` |
+| dependency drift | **out** — `sympy 1.14.0`, `mpmath 1.3.0`, `numpy 2.4.6`, `scipy 1.17.1` pinned and identical, and `camb`/`pynucastro`/`matplotlib` are all present here too |
+| the parallel batch, on CI's own scope | **out** — CI's `pull_request` range reproduced byte-for-byte through `receipt_scope.py --ci` (49 receipts, the same derivation CI runs), then run through `run_all_receipts --jobs 4 --timeout 600`: **49 pass, 0 fail, 0 over timeout, 864 s wall** |
+
+⇒ **One difference is left and I cannot close it from here: the interpreter is `3.11.15` in this
+container and `3.11.16` in CI** (pinned by `setup-python`, `r6985+70.1`). It is the only pinned
+quantity this container cannot match, and `requirements-ci.txt` names the interpreter as the first of
+the four fingerprinted quantities for exactly this reason.
+
+### ⛔ The defect that made a 2-second failure cost four heads, and it is not this receipt's alone
+
+`run_all_receipts` reports a failing receipt as its **last three non-blank lines**, joined with ` / `
+and cut at 300 characters (`scripts/run_all_receipts.py:416`). For this receipt those three lines were
+the closing banner and the RESULT rule — so three CI runs reported `FAILED` and named **no check, no
+value, no environment.**
+
+⇒ *A receipt whose only failing output is its verdict can be debugged only where it can be run, which
+is exactly not where it fails.*
+
+**Repaired in the receipt**, in two parts because the two readers are different:
+* a long diagnostic block for a human running the file directly — environment, the paper's path,
+  length and sha, and every parsed expression beside this file's own form with the residual; and
+* **three compact lines printed AFTER the closing banner**, because the last three are the only ones
+  the suite keeps. A diagnostic printed before the banner is invisible in CI — which is the mistake
+  the first draft of this block was one edit away from making. They name the failing check with its
+  residual, then the environment, then the parsed expressions, each trimmed to survive the cut.
+
+Verified against the runner's own tail rule, both ways:
+* a genuinely broken identity ⇒ `⛔ FAILING: eq:amplitude=(-2**(1/3) + 5**(2/3)*6**(1/3)/5)/sq …`
+* a broken *check expression* whose identity still holds ⇒ `⛔ FAILING: none isolated -- a check failed
+  that this block does not cover`, which is the honest answer rather than a confident wrong one.
+
+**What I did NOT touch, and it is the half that matters corpus-wide:** the three-line budget is
+`run_all_receipts`' own code, but it is the suite's contract with all **974** registered receipts.
+Either every receipt carries its own compact tail — what I have now done for exactly one — or the
+runner keeps more on a FAIL, which is one edit and covers all of them. **The runner is the shared
+instrument and the choice is 66's; routed, not taken.**
+
+### `cc66.118` addendum — **the second red job is the same receipt, and the tolerance sweep flagged nothing**
+
+`scoped — the tolerance perturbation` also failed on `f6858e27`'s PR run (job `111342185821`), exit 2:
+
+> `VERDICT (both comparisons): NOT A SWEEP -- nothing flagged, a receipt unmeasured`
+
+**That is not a second finding.** `sweep_tolerances.not_swept` (line 440) lists *every receipt whose
+probe did not run to exit 0 on BOTH builds*, and exit 2 is defined as `NOT A SWEEP -- no site flagged,
+but a receipt was not measured on both builds`. A receipt that exits 1 therefore makes the sweep
+unmeasurable by construction — so `P15_expansion_law`'s failure propagates straight into this job.
+
+⇒ **Both red jobs have one root cause, and the tolerance comparison itself found nothing moved.** The
+guard is doing exactly the job `r6977+70.1` built it for: *a comparison of nothing is not a clean
+result.* ⌗ *Stated as derived from the gate's own rule rather than from a log line — the `not_swept`
+list naming the receipt is above the tail I read, and the next run will carry it. I am not calling it
+confirmed by a measurement I did not take.*
+
+---
+
+## `cc66.119` — the diagnostic reported on its first run, and it moves the blame **off** the `r7157` repair
+
+CI run `37172757320`, job `111348927510`, head `6706feda`, kept tail:
+
+> `⛔ FAILING: eq:rate[1]=17*Lambda*c**2*coth(sqrt(3)*sqrt(Lam; late-time=17*Lambda*c**2/192`
+> `⛔ ENV: python 3.11.16 sympy 1.14.0 ground python tex 404639ch/4b34023fcc5d`
+
+### ⓵ The parse is sound, and what fails is older than the repair
+
+**`amp` and `omega-ratio` both pass, and both are PARSED.** The tex digest in CI
+(`404639ch/4b34023fcc5d`) is **byte-identical to this container's**. And `late-time` touches no parse
+at all — it is `simplify(limit(H**2, tau, oo) - Lam*c**2/3)`, this file's own expression against a
+literal, a check that predates `r7157` entirely.
+
+⇒ ***So the failure is in `H`, not in `paper_formula`, and `r7157`'s repair is not what is red.*** That
+agrees with the measurement I already had and had not explained: the **pre-repair** receipt at
+`5e640eb0` failed in CI too. ⌗ *The receipt is only in a suite scope on a push that touches it, which
+is why a CI-only failure in a years-old check could sit unseen until I edited the file.*
+
+### ⓶ The residuals pin it numerically, and a one-character model reproduces them exactly
+
+`H = (2/3)·B_c·coth(B_c τ)` with `B_c² = ¾Λc²` gives `H² = ⅓Λc²coth²`. CI's `late-time` residual
+`17Λc²/192` puts the coefficient at `64/192 + 17/192 = 81/192 = 27/64` instead of `⅓`.
+
+**Substituting `sp.Rational(3,4)` for `sp.Rational(2,3)` in `H` reproduces both CI residuals exactly** —
+`H2=27/64`, `lim=27/64`, `rate=1/3`, with `amp`/`omega-ratio` still passing and `eq:rate[1]` and
+`late-time` the only two failures. `(3/4)²·(3/4) = 27/64`.
+
+⛔ **That is a model that fits the residuals, not an explanation, and I am not recording it as one.**
+`sp.Rational(2,3)` cannot be `3/4`, so either the coefficient is not where the difference is or
+something upstream of it is. **The next run discriminates directly**: the tail now carries exact
+rationals — `R23`, `Bc2`, `H2`, `lim`, `rate`, `amp2` — so whichever of them moves is named.
+
+### ⓷ ⌗ Why the first diagnostic was not enough, which is the same mistake one level up
+
+It printed the residual **expressions**, and the 300-character cut ate them: CI reported
+`eq:rate[1]=17*Lambda*c**2*coth(sqrt(3)*sqrt(Lam` and stopped. *A diagnostic sized for a budget it has
+not measured is the same mistake as a pin.* The tail now carries exact scalars, each a handful of
+characters — **178 characters untruncated against a 300-character budget, measured rather than
+assumed.**
+
+### ⛔ ⓸ AND I NEARLY SHIPPED THE ONE DEFECT THIS RECEIPT IS A MONUMENT TO
+
+My edit rewrote the file from an anchor to the end and **dropped `raise SystemExit(0 if allpass else 1)`**.
+The receipt would have printed `FAILING`, printed `RESULT: FAILED`, and **exited 0** — which is verbatim
+the defect recorded in its own comment block: *"THIS FILE COULD NOT FAIL ITS CALLER UNTIL
+`r2376+c54.179`, AND ITS VERDICT WAS UNCONDITIONAL."*
+
+⇒ **Caught because I checked the broken copy's EXIT CODE and not its output** — it printed every
+failing line and returned `rc=0`. Restored, and both directions are now verified: clean `rc=0`, broken
+`rc=1` with the diagnostic in the kept tail.
+
+⚑ **The rule, and it is the third of this shape I have recorded this round:** *a diagnostic that reports
+a failure is not a receipt that fails its caller.* The text and the exit code are different claims, and
+only one of them is what CI reads. ⌗ *`cc66.113`: an exit code from a compound shell is not a
+measurement of the thing at the end of the pipe. `cc66.118`: a refused route is not no access. This
+one: printed output is not an exit code.* **All three are the same error — reading a proxy for the
+thing.**
+
+### `cc66.119` addendum — **the interpreter lead is weak, measured rather than left standing**
+
+I named python `3.11.15` vs CI's `3.11.16` as the one difference this container could not close. I could
+not install `3.11.16` (`uv` has no such build; `apt`'s candidate is `3.11.15`), so I closed the
+*question* instead of the version: **the receipt was run on `3.10`, `3.11.15`, `3.12` and `3.13`, each
+with the pinned `sympy==1.14.0` and `mpmath==1.3.0`. All four pass.**
+
+⇒ **A check that is stable across four MAJOR versions is not plausibly broken by a PATCH release.** So
+the interpreter is demoted from "the remaining lead" to "not ruled out, but weak" — and I am saying so
+rather than leaving a convenient hypothesis standing because it was the last one left. ⌗ *An
+unfalsified hypothesis is not a surviving one.*
+
+Two more candidates closed while waiting on the next run:
+* **a stale or foreign blob** — `git log -S "Rational(3,4)"` on this receipt is **empty**: the line has
+  never read `3/4` in its history, and `main`'s copy (now `fbb0f749`, which carries my `bcfbe264`) has
+  the same `H`. So the `3/4` fit has no historical original, which strengthens "fit, not cause".
+* **the PR merge ref** — `main` *has* moved since I first checked, so the earlier dismissal had gone
+  stale; merged in (`fbb0f749`) and re-measured. `H` is identical on both sides.
+
+⇒ **What remains is: identical source, identical sympy, identical paper bytes, identical ground types,
+four interpreters green here, and a reproducible failure there.** The next run's `COEFS` line prints
+`R23`, `Bc2`, `H2`, `lim`, `rate` and `amp2` as exact rationals, which names the moving quantity
+directly. **I am not theorising past that point** — three times today a published reading preceded an
+available measurement.
+
+---
+
+## `cc66.120` — the coefficients CI returned are **arithmetically impossible**, and that is the finding
+
+Head `46ae06b2`, job `111352511756`:
+
+> `⛔ COEFS: R23=2/3 Bc2=3/4 H2=27/64 lim=27/64 rate=1/3 amp2=2**(2/3)`
+> `⛔ ENV: python 3.11.16 sympy 1.14.0 ground python tex 406760ch/2ec320591e74`
+
+**`H2` is defined as `H**2/(Λc²coth²)` and `H` is defined as `R23*Bc*coth`, so `H2` is forced to equal
+`R23² · Bc2` = `(2/3)²·(3/4)` = `1/3`.** CI returned `27/64` — which is `(3/4)²·(3/4)`, and which is
+**exactly what this file produces when `sp.Rational(2,3)` in `H` is replaced by `sp.Rational(3,4)`**,
+the substitution I used to force a failure while testing the block. And `R23`, evaluated in the *same
+process*, printed `2/3`.
+
+⇒ **So either the source CI executes is not the blob CI reports, or `H**2` is not
+`(R23*Bc*coth)**2` there.** Every git object I can read says `Rational(2,3)` — my head, `main`
+(`fbb0f749`), and **`refs/pull/261/merge`, the ref `actions/checkout` resolves for a `pull_request`
+event**, which I fetched and read directly rather than inferring. The line has never read `3/4` in its
+history.
+
+### ⛔ And `R23` could not tell those apart, which is a defect in my own instrument
+
+`R23` is `sp.Rational(2, 3)` **written in the diagnostic** — a constant, not `H`'s coefficient. It
+proves only that sympy's `Rational` works, which was never in doubt. *A diagnostic that reports a
+quantity nothing depends on is decoration.* ⌗ **Second instrument defect in two revisions, both of the
+same kind: at `cc66.119` the residual expressions did not fit the budget; here a reported value did not
+bear on the question.** The rule: *decide what a diagnostic would have to print to CHANGE the
+conclusion, and print that.*
+
+### The two discriminators, pushed
+
+* **`Hc`** = `simplify(H / (Bc·coth(Bc τ)))` — the coefficient read **out of `H` itself**. If CI
+  returns `3/4` while `R23` returns `2/3`, the executed source is not the blob: a fact about CI, not
+  about this receipt.
+* **`H2r`** — `H` **rebuilt in the diagnostic** from `Rational(2,3)` and `Bc`, asked the same question.
+  If `H2r=1/3` while `H2=27/64`, the two `H`s differ and `Hc` says how.
+
+Verified both directions here: clean `rc=0`; and on the `3/4` copy, `Hc=3/4 H2=27/64 H2r=1/3` with
+`R23=2/3` — the signature to look for. **179 characters untruncated against the 300-character budget.**
+
+⌗ *The tex digest now reads `406760ch/2ec320591e74` here as well, matching CI: the earlier mismatch was
+only `main` having moved, and the merge closed it. The paper is identical again.*
+
+---
+
+## ✔ `cc66.122` — **the plain suite is GREEN, and I did not find the cause**
+
+Run `37175100214` (PR) and `37175097956` (push), head `ee63b538`: **all four scoped jobs green**, and
+`28795b97`'s PR run too.
+
+**Verified that it RAN rather than skipped**, because a green that measured nothing is the failure mode
+this corpus already has a gate for: the `run the scoped receipts` step ran **03:49:26 → 03:59:04, 9 min
+38 s**, and the job's `nothing in scope — nothing runs` step is marked *skipped*, which is how that
+workflow says something **was** in scope. The tolerance perturbation ran 6 min 52 s and passed,
+clearing the downstream red of `cc66.118` exactly as derived.
+
+### ⛔ What cleared it is not established, and I am not dressing the correlation as a cause
+
+The only substantive change between the last red head (`46ae06b2`) and the first green one
+(`28795b97`) was **merging `main` (`fbb0f749`)**; the rest was appends to this file and `FOR_66`.
+
+⇒ ***That is a correlation of one, and it does not explain the measurement.*** The red was
+`H2 = 27/64` where `H2` is forced by definition to be `R23² · Bc2 = 1/3`, and nothing in a merge of
+`main` touches `H`, `Bc` or `Rational`. ⌗ *Candidates I could construct and reject on inspection: a
+mangled three-way merge of the receipt (git would conflict, not silently mangle, and a conflict fails
+checkout); `paper_formula` rebinding the receipt's `H` (Python scoping forbids a callee rebinding a
+caller's local).*
+
+**So the honest state is: five fresh failures across three heads, then green across two heads, with no
+established cause.** ⇒ *I would rather leave this open in the record than close it with the only story
+available.*
+
+### What is left in place deliberately
+
+* The receipt's **diagnostic stays**. It costs nothing on a pass and it turned an unreadable `FAILED`
+  into a named check with an exact residual in one run. **If this recurs it reports itself**, including
+  `Hc` and `H2r`, which separate "the executed source is not the blob" from "the two `H`s differ" —
+  the question that was open when it went green.
+* **`cc66.118`'s routing to 66 stands on its own merits**: the suite's three-line, 300-character FAIL
+  tail is the contract with all 974 receipts, and raising it in the runner is still one edit against
+  974. *That was never contingent on this receipt's cause.*
+
+⚑ **And the round's own rule applies to me here.** *Do not pin a gate to something the work it gates is
+trying to move* — the reciprocal is: **do not close an investigation on the only hypothesis left
+standing.** Three times this round I published a reading before an available measurement; this time the
+measurement exists, says *green*, and says nothing about why. That is the whole report.

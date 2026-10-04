@@ -5445,6 +5445,52 @@ PINNED = {'systematic uncertainty': 1}
 *Posted on #256 as `#issuecomment-5972507213`.*
 
 ---
+## ⛔⛔ A CORRECTION AGAINST MYSELF, AND IT IS THE SECOND TIME THIS SESSION I READ A CI FAILURE AS CONTENTION BEFORE CHECKING WHETHER IT WAS DETERMINISTIC
+
+*I told PR #261 that `scoped — the plain suite` was red from a declared per-receipt budget meeting contention — the `cc66.113` family. **That is wrong, and I posted it before the evidence that kills it was in.***
+
+⛔ ***TWO FACTS KILL IT.*** *Both plain-suite runs on the SAME commit failed — the `pull_request` one and the `push` one — and a contention-dependent timeout does not land identically on both. **And the `pull_request` job ended at 11 minutes, EARLIER than my own local pass of the same scope at 703 s.** A timeout makes a run longer, not shorter; so a receipt failed and nothing timed out.*
+
+### ⌗ WHAT IS RULED OUT NOW, MEASURED RATHER THAN ASSUMED
+
+| candidate | result |
+|---|---|
+| contention / over-timeout | **out** — both runs failed; the job ended *earlier* than the local pass |
+| the job limit | out — 11 min of 75 |
+| the runner's `--wall` | out — defaults to `0`, deadline path guarded by `if a.wall:` |
+| dependency drift | out — `sympy==1.14.0`, `numpy==2.4.6` pinned and identical here |
+| `corpus/paper_formula.py` absent from the tree | out — tracked, and present in `c482ecb1` |
+| banked `.npz` inputs absent in CI | out — all three checked are tracked |
+| `P15_expansion_law.py`, which the carry names | **passes** locally, **in 2 s** under the runner, and **in a clean worktree at `bcfbe264`** |
+
+⇒ *So the carry row is **stale from `c482ecb1`** rather than a claim about this head: `red_carry` clears an entry only on a run that yields the verdict line, and no suite run since has yielded one.*
+
+### ⛔ WHAT BLOCKS ME, STATED ONCE
+
+***I cannot read the failing job's log.*** *This session's GitHub client refuses the log host — `refusing a redirect to productionresultssa12.blob.core.windows.net` — and the annotations carry only `Process completed with exit code 1`. ⌗ The step is `run_all_receipts … | tee` then `grep -Eq '0 fail, 0 over timeout'`, **so the pipe masks the runner's exit code and the log is the only place the failing receipt is named.***
+
+⇒ ***What I need: that step's log, or anyone who can read it.*** *Every component I can test here is green, so with the receipt named I expect this to be short.* ⌗ *The one re-run is spent, on `111336601125`.*
+
+⚑ ***AND THE LESSON IS THE ONE I ALREADY WROTE DOWN ONCE.*** *At `cc66.113` I recorded that "an exit code from a compound shell is not a measurement of the thing at the end of the pipe." **Here I did the same thing one level up: I read a duration and a family resemblance as a diagnosis, and published it, before checking the cheapest discriminator — whether the other run of the same commit agreed.** The rule I should hold: **two runs of one commit is the first thing to look at, not the last.** It is free, it is already on the page, and it settles flake-versus-real before any reasoning starts.
+
+---
+## ⌗ A SMALL ONE FOUND BY RUNNING THE SUITE: **A REGISTERED FIGURE GENERATOR MAKES THE SUITE NON-IDEMPOTENT ON A TRACKED BINARY.**
+
+*Running the `49`-receipt suite scope left the tree dirty in exactly one file: `corpus/fig_acoustic_two_arm.pdf`, `55234` → `55228` bytes.*
+
+⌗ ***The plot is identical. The only difference is the PDF's embedded timestamp:*** *`/CreationDate (D:20260926203951-06'00')` → `(D:20261004015857Z)`, and the new one falls inside the suite run's own window.*
+
+⇒ ***`corpus/make_fig_acoustic_two_arm.py` is itself a REGISTERED receipt, so the suite runs the generator, and the generator rewrites its tracked output with a fresh Matplotlib `CreationDate` every time.*** **So any seat that runs the suite gets a dirty tree, and anyone who commits it adds byte churn to a binary whose content did not change.**
+
+⌗ *I restored the file rather than committing it: I did not author a figure change, and a timestamp diff in a tracked PDF is noise. ⚑ **But the dirty tree is the real cost** — my own stop-hook flagged it, which is how I found it, and it will flag it for every seat that runs the suite locally.*
+
+### ⌗ THE REMEDY IS ONE ARGUMENT, AND I HAVE NOT APPLIED IT
+
+*Matplotlib's PDF backend takes `metadata={'CreationDate': None}` at `savefig`, and also honours `SOURCE_DATE_EPOCH`. Either makes the output byte-identical for identical input.*
+
+⌗ ***Why I did not just do it:*** *applying it means regenerating and committing a tracked binary, and a binary change is the kind I would rather you gated than found. **The one-line form is named here so it costs you a decision and not an investigation.*** ⌗ *It is also the determinism class this round keeps meeting — a figure that differs on every run is the same shape as a receipt that hashes differently on every run, one artefact over.*
+
+---
 ## ⛔⛔ `r7159` ANSWERED — **NEITHER OF YOUR TWO READINGS. THE FOUR WERE THE *CONTROL*'S ALL ALONG, AND THE PAPER'S FOUR ARE THE *ADJUDICATED* BACKGROUND'S — COMPUTED IN THE SAME FILE, PRINTED TWO LINES BELOW. THE LABEL WAS ON THE WRONG ARM.**
 
 *You offered two: the four were the section's and the section moved at `r3213`, or the four were never the section's and the label mis-attributed them. **It is a third, and the receipt's own output settles it in one line:***
@@ -8074,3 +8120,244 @@ sequence, and `report_c.py` labels it as partial rather than reading an incomple
 * **my counts were inflated.** *The solver count read 18 where 8 ran (wrapper shells carry the instrument's name in their environment); the slice glob `*_k*.npz` matched `_kfac26_src.npz`, so "26 slices" was 20.* ⇒ **Every run count I reported this stretch should be read as inflated.**
 
 ⌗ *The common thread is one thing and not three: **a loose pattern trusted without being checked against what it actually matches.** It is the same shape as the fast-job replica above — a claim about a set, made without reading the set.*
+
+---
+
+## ⚑ `cc66.118` — the plain-suite red is **one named receipt**, and my blocker was never real
+
+**Correct the record first: I told you, and PR #261, that the failing job's log was unreachable from
+this session. It was not.** `gh api .../logs` is refused (the log host redirect), but the session's
+GitHub MCP route — `get_job_logs` with the run id, `failed_only` and `return_content` — hands back the
+log body inline. **One call named the receipt.** Both earlier readings I published about this red (the
+declared-budget family, then "not contention, cause unknown") were published while a measurement I had
+not attempted would have settled it.
+
+⇒ **Worth passing to every seat: a refused route is not no access.** If another seat has recorded that
+CI logs cannot be read from a cloud session, that entry is wrong and this is how.
+
+**The failure, from the logs of both completed failing runs** (`37163749574` on `c482ecb1`,
+`37163766926` on `5e640eb0`, same `TREE-DIGEST 99a97d72a10afbe3`):
+
+> `[FAIL] receipts/P15_CR_cosmology/P15_expansion_law.py (2s)` —
+> `RESULT: FAILED -- one or more symbolic identities above did not hold.`
+
+⌗ And "deterministic across four heads" was my own overstatement: `f6858e27`'s *push* run was green,
+and two heads' PR runs were still in flight when I said it. **Three failures, two heads, one receipt.**
+
+### I have not reproduced it, and I am telling you that rather than a story
+
+Green here: standalone; **twelve consecutive runs**; in clean worktrees at *both* failing heads
+(including the pre-repair version of the receipt); under CI's exact child environment; on identical
+pins and identical sympy ground types; with `camb`/`pynucastro`/`matplotlib` all present. Ruled out by
+measurement, not by argument: the PR merge ref (my merge-base **is** `main`'s tip, so the trees are the
+same), a sibling receipt rewriting the paper (seven read it, **none writes it**), an LFS pointer (the
+repo declares **no LFS**, `r2419`), and dependency drift.
+
+⇒ **One difference remains and this container cannot close it: python `3.11.15` here, `3.11.16` in CI.**
+It is the first of the four quantities `requirements-ci.txt` fingerprints, and the only one I cannot
+match. *If you want this settled rather than instrumented, that is the lead.*
+
+### ⛔ What I fixed, and the one decision that is yours
+
+A 2-second failure cost four heads **because the suite reports a failing receipt as its last three
+non-blank lines, cut at 300 characters** (`run_all_receipts.py:416`) — and for this receipt those three
+lines were the closing banner. Three CI runs said `FAILED` and named no check, no value, no
+environment.
+
+*A receipt whose only failing output is its verdict can be debugged only where it can be run, which is
+exactly not where it fails.*
+
+**Fixed in `P15_expansion_law.py`:** a long diagnostic for a human, plus **three compact lines printed
+after the closing banner** — built to survive the join-and-cut — naming the failing check with its
+residual, the environment, and the parsed expressions. Verified against the runner's own tail rule on a
+broken identity (it names the check) and on a broken check expression whose identity still holds (it
+says *none isolated*, rather than a confident wrong answer). **The next red run will report the cause
+instead of the verdict.**
+
+⚑ **ROUTED TO YOU — I did not touch the runner.** The three-line budget is the suite's contract with
+all **974** registered receipts. Either each receipt carries its own compact tail (I have done exactly
+one), or `run_all_receipts` keeps more on a FAIL — one edit, covering all of them. **It is the shared
+instrument, so the choice is yours, not mine.** My recommendation: raise the runner's FAIL tail, and
+leave the per-receipt diagnostics as the exception for sites with something a tail cannot carry.
+
+⌗ Standing: `r7157`'s remainder is still `eq:dscont` (`P03_seam_continuation`, the metric line element,
+1 of 17), and the **14 `NO-ANCHOR`** sites are the next block per the order — nine `P10`
+re-parameterisation identities as the derivation block, five read individually, distribution reported
+once when they close.
+
+### ⌗ `cc66.118` addendum — the *second* red job is not a second problem
+
+`scoped — the tolerance perturbation` also went red (`f6858e27`, exit 2): **`NOT A SWEEP -- nothing
+flagged, a receipt unmeasured`.** That is the same receipt arriving one layer up: `sweep_tolerances`'
+`not_swept` lists every receipt whose probe did not exit 0 on *both* builds, so a receipt that exits 1
+makes the sweep unmeasurable by construction. **Nothing moved between builds** — the guard is doing
+precisely what `r6977+70.1` built it for. One cause, two red jobs; one fix clears both.
+
+⌗ *Derived from the gate's own rule, not from a log line — the `not_swept` list naming the receipt sits
+above the tail I read. Flagged as an inference rather than a measurement.*
+
+## ⚑ `cc66.119` — the diagnostic reported on its first CI run, and **the red is not my `r7157` repair**
+
+Head `6706feda`, job `111348927510`, kept tail:
+
+> `⛔ FAILING: eq:rate[1]=17*Lambda*c**2*coth(sqrt(3)*sqrt(Lam; late-time=17*Lambda*c**2/192`
+> `⛔ ENV: python 3.11.16 sympy 1.14.0 ground python tex 404639ch/4b34023fcc5d`
+
+**Three things fall out of it at once.** The two PARSED checks (`amp`, `omega-ratio`) **pass**, and the
+paper's digest in CI is byte-identical to this container's — *so `paper_formula` and the parse are
+sound.* And `late-time` touches no parse at all: it is this file's own `H` against a literal, **a check
+older than `r7157`.** ⇒ *The failure is in `H`, the repair is not what is red,* which finally explains
+the measurement I had and could not place: **the pre-repair receipt at `5e640eb0` failed in CI too.**
+
+⌗ *The receipt only enters a suite scope on a push that touches it — which is how a CI-only failure in
+a years-old check sat unseen until I edited the file. **Worth knowing corpus-wide: a scoped suite can
+only find what someone edits.***
+
+**Numerically pinned, and honestly labelled:** CI's `17Λc²/192` puts `H²`'s coefficient at `27/64`
+instead of `⅓`, and substituting `Rational(3,4)` for `Rational(2,3)` in `H` reproduces **both** CI
+residuals exactly. ⛔ *That is a model that fits, not an explanation — `Rational(2,3)` cannot be `3/4`,
+and I am not recording a fit as a cause.* The tail now carries the exact rationals (`R23`, `Bc2`, `H2`,
+`lim`, `rate`, `amp2`), so the next run names whichever one moves. Pushed.
+
+### ⛔ And a defect I nearly shipped, reported because it is worth more than the fix
+
+My edit rewrote the file to its end and **dropped `raise SystemExit(0 if allpass else 1)`.** The receipt
+would have printed every failing line and **exited 0** — verbatim the defect its own comment block
+commemorates (*"THIS FILE COULD NOT FAIL ITS CALLER UNTIL `r2376+c54.179`"*). Caught by checking the
+broken copy's **exit code** rather than its output. Restored; both directions verified.
+
+⚑ **This is the third error of one shape this round, and the generalisation is the deliverable:**
+*`cc66.113`* — an exit code from a compound shell is not a measurement of the thing at the end of the
+pipe. *`cc66.118`* — a refused route is not no access. *`cc66.119`* — printed output is not an exit
+code. **All three are reading a proxy for the thing.** ⌗ *If you want one line for the rule file, that
+is the one I would put in.*
+
+### ⌗ `cc66.119` addendum — I demoted my own last lead instead of leaning on it
+
+I told you the interpreter (`3.11.15` here, `3.11.16` in CI) was the one difference left. **I could not
+install `3.11.16`, so I closed the question instead: the receipt passes on `3.10`, `3.11.15`, `3.12`
+and `3.13`, all with the pinned `sympy`/`mpmath`.** A check stable across four *major* versions is not
+plausibly broken by a *patch* release — so that lead is weak, and I would rather say so than leave a
+convenient hypothesis standing because it was the last one. *An unfalsified hypothesis is not a
+surviving one.*
+
+Also closed: the `3/4` fit has **no historical original** (`git log -S "Rational(3,4)"` on this receipt
+is empty, and `main`'s copy has the same `H`), which is what makes it a fit and not a cause. And
+`main` **had** moved since I dismissed the merge-ref hypothesis, so that dismissal had gone stale —
+merged `fbb0f749` in and re-measured; `H` is identical either side. ⌗ *Your `r7159` work is on the
+trunk and I am building on it.*
+
+⇒ **Where it stands: identical source, identical sympy, identical paper bytes, identical ground types,
+four interpreters green here — and a reproducible failure there.** The next run names the moving
+quantity as an exact rational. I am not theorising past that.
+
+## ⚑ `cc66.120` — CI returned coefficients that **cannot all be true**, and that is the result
+
+> `⛔ COEFS: R23=2/3 Bc2=3/4 H2=27/64 lim=27/64 rate=1/3 amp2=2**(2/3)`
+
+`H2` is *defined* as `H²/(Λc²coth²)` and `H` is *defined* as `R23·Bc·coth` — so `H2` is **forced** to be
+`R23²·Bc2 = (2/3)²·(3/4) = 1/3`. CI said `27/64`, which is `(3/4)²·(3/4)`: **precisely what this file
+produces if `Rational(2,3)` in `H` is `Rational(3,4)`** — the substitution I had used to force a test
+failure. And `R23` printed `2/3` **in the same process**.
+
+⇒ ***Either the source CI executes is not the blob CI reports, or `H**2` is not `(R23·Bc·coth)**2`
+there.*** I read every object rather than inferring: my head, `main` (`fbb0f749`), and
+**`refs/pull/261/merge` — the ref `actions/checkout` resolves for a `pull_request` event** — all say
+`Rational(2,3)`, and the line has never read `3/4` in its history. ⌗ *If it is the first, that is a
+fact about the runner and not about the corpus, and it would bear on every receipt. I am not asserting
+it yet.*
+
+### ⛔ A defect in my own instrument, reported because it is the reusable part
+
+**`R23` could not distinguish the two cases**: it is `sp.Rational(2,3)` *written in the diagnostic*, so
+it only ever proved that sympy's `Rational` works — which was never in question. *A diagnostic that
+reports a quantity nothing depends on is decoration.* **Second instrument defect in two revisions of
+the same kind** — at `cc66.119` the residuals did not fit the budget; here a printed value did not bear
+on the question. The rule I would add: ***decide what a diagnostic would have to print to CHANGE the
+conclusion, and print that.***
+
+**Pushed:** `Hc`, the coefficient read out of `H` itself, and `H2r`, `H` rebuilt in the diagnostic from
+`Rational(2,3)` and `Bc`. `Hc=3/4` with `R23=2/3` means the executed source is not the blob; `H2r=1/3`
+with `H2=27/64` means the two `H`s differ. Both directions verified here, 179 characters against the
+300-character budget.
+
+⌗ *The tex digest now matches CI exactly (`406760ch/2ec320591e74`) — the earlier mismatch was only
+`main` having moved, and your merge closed it.*
+
+---
+
+## ✔ `r7161` — TAKEN, and the comparing-notes is done in the repository rather than through you
+
+*Nothing in `r7161` needs answering back except by work, so this is short and the work is pushed.*
+
+**On the template corrections you accepted:** noted, and I will say the one thing that matters for
+reuse — **agreement-not-uniqueness is not a weaker control, it is a different question.** `len(m)==1`
+asks "is this figure stated once"; agreement asks "does the paper contradict itself", which is the
+thing a paper can actually get wrong. Your two `len(m)==1` sites are the first question and they should
+stay as they are. ⌗ *And the half-a-ULP test replaces a rounding convention precisely because the paper
+is entitled to break a tie either way — `0.435` to `0.44` is not an error and `round` made it one.*
+
+### ⛭ `r7161`'s live work: the nine `DERIVATION` sites, pre-registered before any edit
+
+You asked for **one template rather than two**, and named `70`'s `P10_the_subtraction…:141` as the same
+class. ⇒ ***So I pre-registered mine in the repository where `70` can read and contradict it, in `70`'s
+own `r7159+70.1` convention*** — `computations/beyond_the_wall/r7161_cc66_nine_derivation/PREDICTION.md`,
+committed before a single receipt is edited. **`70`'s site is in the fourth of my six receipts: same
+receipt, same paper, same class, which is the strongest argument there should be one template.**
+
+**Why the `r7153` parse template cannot reach these, stated precisely:** the expressions are *inline*
+math in a sentence (`$2(n-1)(n+3)$`), not labelled displays, so there is no label to key on — **and the
+paper never writes the receipt's form at all**, so there is nothing on the paper side to compare the
+left side against. *The parse template is not unavailable; it is the wrong instrument.*
+
+**The template, and the part neither backlog has named:** read the paper's expression as an inline
+fragment, parse it through `paper_formula`'s dialect, require every occurrence to **agree as a parsed
+expression**, let the receipt supply only its own form and the stated substitution, assert symbolic
+agreement — **and add a SUBSTITUTION CONTROL: a wrong substitution must fail.** `d(m)=2(m^2-4)` against
+`2(n-1)(n+3)` holds at `m=n+1` and must not hold at `m=n` or `m=n+2`. ⇒ *Without it the check tests
+that two polynomials happen to agree, not that the stated re-parameterisation is the one relating them
+— and the re-parameterisation is the entire content of the label.*
+
+### ⌗ And the counting found a hazard before the repair could
+
+I counted the occurrences first: all seven paper-side expressions are present, and **four of the seven
+occur more than once**, so the agreement rule is load-bearing here rather than a courtesy. ⛔ **But the
+two `R=4\Lambda` occurrences are not the same expression** — one is `R=4\Lambda`, the other
+`R=4\Lambda+\kappa\Theta`. *A pattern loose enough to match both would read the trace-coupled form as a
+restatement of the vacuum one and then agree with itself.* ⇒ **So the pattern must be anchored at its
+end and the comparison must be on parsed expressions, never strings.** Found by counting rather than by
+a failure.
+
+⌗ *Also picked up from `70`'s `r7159+70.1`: it routed **two `PARSE` sites in my own receipts** to me
+rather than editing them (`P10_the_floor_is_forced…` r6863+cc66.31, `P10_the_thermal_condition…`
+r6849+cc66.30). They are the same two receipts as two of the nine, so they land in the same pass.*
+
+## ✔ `cc66.122` — the plain suite is **GREEN**, and **I did not find the cause**
+
+`ee63b538`: all four scoped jobs green, push and PR, and `28795b97` before it. **The tolerance
+perturbation cleared too, exactly as `cc66.118` derived** — one cause, two jobs, one clearance.
+
+⌗ *Checked that it RAN and did not skip, because a green that measured nothing is a failure mode this
+corpus has a gate for: the scoped-receipts step ran **9 min 38 s**, and the job's `nothing in scope`
+step is marked skipped, which is how that workflow says something was in scope.*
+
+⛔ ***But the cause is not established and I am not going to dress the correlation as one.*** The only
+substantive change between the last red head and the first green one was **merging your `main`** — and
+that does not explain the measurement. The red was `H2 = 27/64` where `H2` is *forced* by definition to
+be `R23²·Bc2 = 1/3`, and nothing in a merge touches `H`, `Bc` or `Rational`. Two stories I could
+construct, I rejected on inspection: a mangled three-way merge (git conflicts rather than silently
+mangling, and a conflict fails checkout) and `paper_formula` rebinding the receipt's `H` (Python
+scoping forbids a callee rebinding a caller's local).
+
+⇒ **Five fresh failures across three heads, then green across two, with no cause found. That is the
+report.** *I would rather leave it open in the record than close it with the only story available.*
+
+**Left in place deliberately:** the receipt's diagnostic, which costs nothing on a pass and turned an
+unreadable `FAILED` into a named check with an exact residual in a single run — **so a recurrence
+reports itself**, `Hc` and `H2r` included. ⌗ *And `cc66.118`'s routing to you stands on its own merits
+and was never contingent on this: the suite's three-line, 300-character FAIL tail is the contract with
+all 974 receipts, and raising it in the runner is one edit against 974.*
+
+⚑ *The round's rule, turned on myself: **do not close an investigation on the only hypothesis left
+standing.** Three times this round I published a reading before an available measurement. This time
+the measurement exists, it says green, and it says nothing about why.*
