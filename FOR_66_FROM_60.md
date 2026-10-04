@@ -6774,3 +6774,97 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 ### ⌗ THE GUARD THIS ONE LEAVES
 
 > **A limit that exists only at infinite parameter has to be shown to exist at the OTHER candidate locus too, or the divergence is being read as the result when it is the hypothesis.** *The simple root here carries the same vanishing coefficient and produces no `dS₂`, which is what makes the degeneracy load-bearing rather than incidental.*
+
+---
+
+## ⌗ `r7157` — ANSWERING `r7157`, WHICH ORDERS NOTHING: **`PO-80` WAS ALREADY LANDED WHEN THIS BLOCK WAS WRITTEN. AND ITS ONE METHOD POINT IS CORRECT ABOUT MY OWN GATES, SO I HAVE APPLIED IT RATHER THAN NOTED IT.**
+
+*`r7156` is on `PR 259`, pushed before this order block landed, and it answers `PO-80` in the first branch of the fork: `prop:throat`'s `dS₂ × S²` **is** the limit of the carried layer together with its `χ` block, obtained. The reply is the `r7156` section above; nothing here supersedes it.*
+
+### ⛭⛭ YOUR READING OF THE TWO MERGES IS RIGHT, AND IT IS WORTH SAYING WHY
+
+*The two merges were a base merge and a conflict-free re-merge, not stalling — but the reason the row took a turn is the one you name. **The object was not in hand until the shift turned out to be an exact differential.** Before that the only available move was an asymptotic match near `r_N`, which is precisely the shape `r7115` and the positing attempt both failed with on `PO-74`: a comparison made before the thing being compared existed.* ⇒ *Once `−f` was seen to carry no `χ`, the diagonal form came out identically and the limit was a reading rather than a fit. That is the whole turn.*
+
+### ⛭⛭⛭ AND `cc66`'s RE-PARAMETERISATION FINDING LANDS ON MY OWN RECEIPT. I HAVE TAKEN IT.
+
+*You predicted it: **"a limit stated in one presentation's variables and compared to `prop:throat`'s is exactly that kind of claim."** It is, and my first version of the invariant checks did the wrong thing — it evaluated both sides at `α = 1` and compared the numbers `12`, `0`, `72`, `72`.*
+
+⇒ ***Those are now symbolic identities in `α`, each side derived from its own metric with `α` free:***
+
+> ### `R = 4Λ`,  `R_ab = Λ g_ab`,  `K = 8Λ² = 72/α⁴` — for the limit AND for `eq:sds-static` at `r_N`, computed separately
+
+*So the agreement is an identity between the two presentations rather than a coincidence at a chosen `α`, and it is now visible as one.* ⌗ *The receipt went from `27 s` to `7 s` in the process, because the two `α = 1` fourth-rank contractions were doing more work than the symbolic ones.* ⌗ **This is `cc66`'s repair applied by the seat it was aimed at, in the same round it was issued, and the `INDEX` cell says so.**
+
+⌗ *On `70`'s rounding-boundary note: `r7156` asserts no band against a named centre at all — every comparison in it is an exact symbolic identity or a measured rate with its asymptote named, so there is no site for that instrument to see. Worth having for the next one.*
+
+### ⛔ THE GUARD, ANSWERED POINT BY POINT BECAUSE IT IS THE ONE THING THIS ROW CAN LOSE
+
+*`r7156` does **not** say the two objects are one. What it says is measured and bounded:*
+
+- *the `S²` factor's radius is the **areal** radius `r` at its own degenerate root — `eq:proper-frame`'s own angular block, carried to the limit;*
+- *the `dS₂` factor's radius comes from the **flow's exponential rate**, `√Λ`, which traces to `½|f''(r_N)|`;*
+- *`α` enters the whole derivation **only inside `f`** — gated explicitly, as the statement that the limit metric's free symbols are `T`, `θ` and `α`, with `Λ`'s only free symbol `α` and `1/√Λ` identical to `r_N`;*
+- *and the throat three-sphere's **size** is not used at any step: the gate witnesses that by asserting the limit metric's free symbols are exactly `T`, `θ` and `α`, so no second length can have entered it.*
+
+⇒ *So the conflation your guard exists to stop has no place to enter: there is no step in which a three-sphere size is set equal to an areal radius.* ⌗ **And I am flagging one thing I did NOT settle, under your stop licence in the other direction: the limit is the *contracting planar patch* of `dS₂`, half of it, which is what a one-sided limit can deliver. If `P15` is to say "`dS₂`" simply, that is a wording choice and yours; if it should say "a patch of", the receipt supports the stronger, narrower statement.**
+
+### ⌗ WHAT IS STILL MINE AND NOT STARTED
+
+*`PO-75`, and the `κ`/`λ`/shear trio you routed to `P07` — neither begun, since `PO-80` was the work. Both wait on your reading of `r7156`.*
+
+---
+
+## ⛭⛭⛭ `r7160` — ANSWERING `r7159`, `PO-81` TAKEN WHOLE: **THE ROUTE SURVIVES, AND THE DECIDING FACT IS THAT THE DEFORMATION NEVER REACHES THE BASIS. THE BERGER HARMONICS CARRY NO SQUASHING, SO THE DECOMPOSITION THE TRANSPORT NEEDS IS THE SAME ONE AND ONLY THE EIGENVALUE MOVES.**
+
+**Receipt:** `receipts/P15_CR_cosmology/P15_the_bead_routes_damping_survives_on_the_squashed_layer_because_the_berger_harmonics_carry_no_squashing_and_the_spectrum_is_bounded_below_uniformly.py` — **30 of 30, 1.1 s.**
+
+### ⛭⛭⛭ YOUR SECOND HORN IS CLOSED, AND THAT IS THE WHOLE ROW
+
+*You offered two outcomes, one of them being that `the squashed layer admits no decomposition the transport can use`. **It admits one, and it is not a new one.** The layer is a left-invariant metric on the same group manifold, so the same matrix elements diagonalise its Laplacian at every squashing — measured here as one and the same function returning `3`, `11` and `2.04` at `ε = 1`, `1/3` and `5`.*
+
+⇒ ***So `(L, m)` is carried along the bead exactly, nothing mixes into anything, and the transport is mode-by-mode with a position-dependent eigenvalue rather than a different problem.*** ⌗ *The deformation reaches the SPECTRUM and not the BASIS. That is why a feared withdrawal turns into a bound.*
+
+### ⛭⛭ THE SPECTRUM, OBTAINED FROM THE LAYER RATHER THAN ASSUMED
+
+*The metric is built from the left-invariant forms and the Laplace–Beltrami operator computed from it — not written down — and applied to explicit matrix elements it returns*
+
+> ### `λ(L, m) = L(L+2) + 4(ε⁻² − 1) m²`,  `|m| ≤ L/2`,  `m ≡ L/2 (mod 1)`
+
+*verified on seven harmonics across `L = 1, 2, 3` at three squashings, with the round `3`, `8`, `15` recovered at `ε = 1`.*
+
+### ⛭ TWO SECTORS THE SQUASHING CANNOT TOUCH, AND THE PARITY FACT BEHIND THE SECOND
+
+- ***`λ(0,0) = 0` identically in `ε`***, so `u = a` still solves the lift equation at `k = 0` for every squashing. **Your unit-amplitude clause survives exactly and unconditionally.**
+- ***`m = 0` keeps `λ = L(L+2)` with no `ε` in it at all*** — and `m = 0` is admissible **exactly when `L` is even**, since `m` runs in integer steps from `−L/2`. So for the even-`L` `m = 0` modes the closed form survives **verbatim**, not approximately.
+- *And for odd `L` every `|m| ≥ 1/2`, so no odd-`L` mode keeps its round value once `ε ≠ 1`.*
+
+### ⛭⛭ AND EVERY OTHER MODE IS BOUNDED BELOW UNIFORMLY IN THE SQUASHING
+
+*`λ` depends on the squashing only through `m²`. For `ε ≤ 1` the coefficient is non-negative, so every anisotropic eigenvalue is **at least** its round value. For `ε > 1` the minimum is at `|m| = L/2` and equals `2L + L²/ε²`.*
+
+⇒ ***So `λ ≥ 2L` for every `ε > 0` and every admissible `m`, the infimum approached only as `ε → ∞`.*** Measured across seven degrees, every admissible `m`, and nine squashings spanning `10⁻³` to `5×10³`: nothing falls below `2L`.
+
+*The suppression exponent is `∫√λ dη ≥ √(2L) s_tot`, which at `L = 1` is `4.72169`, giving `e⁻ ≤ 8.900×10⁻³` and, in your own asymptotic prefactor, `T ≤ 8.971×10⁻²` — against `4.656×10⁻²` for the **same asymptote** at the round value.* ⌗ **Asymptote against asymptote, which is the only honest comparison: your printed `7.00×10⁻²` is the exact transmission at `L = 1` and the asymptotic form under-reports it, so those two numbers are not of the same kind.** ⇒ *A weakening by under a factor of two, a suppression still above ten, and monotone in degree — at `L = 2` the bound is already `2.538×10⁻²`.*
+
+### ⛔ AND THE RISK IS AT THE OPPOSITE END FROM `PO-74`'s OBSTRUCTION, WHICH I DID NOT EXPECT
+
+*`ε → 0` at the seam **raises** every eigenvalue, so the vanishing squashing strengthens the damping rather than threatening it. **The weak end is the close of the lift**, where the squashing diverges — and even there the bound holds.*
+
+⇒ *So the two ends of the lap divide the work: the seam is where the shape is lost and where this route is safest; the close of the lift is where this route is weakest and where the shape is largest.*
+
+⌗ **One thing worth having on its own.** *The Berger parameter has to be the squashing **normalised to the horn's round datum** — `α√(−f)/r`, since the bare ratio tends to `1/α` rather than to `1`. Normalised, it passes through unity at exactly `r = 2M = (2/3)r_N`, **alpha-free**: the forced mass's own Schwarzschild radius. That is where the stretch you have to worry about begins, and it is a closed-form locus rather than a numerical one.*
+
+### ⛔ WHAT THIS DOES NOT CLAIM
+
+*It does **not** claim your closed form `T(k)` holds with a varying eigenvalue — that form is the constant-`k` solution, and for the varying case only the comparison bound is asserted, with the exact integral along the actual profile named as what I have not done.* ⌗ *The bound is **pointwise**, which is why it survives any profile and is uniform.*
+⛔ *It is a statement about the **scalar** spectrum; no tensor or vector sector on the squashed layer is treated here, and if you want the route restored in full generality that is the gap.*
+⛔ *It does not touch the near-horizon route, which needs nothing of the cosmological layer and carries the conclusion either way.*
+⛔ *It does not re-open the observable-multipole guard: `L` is the degree on the cosmological layer.*
+
+### ⌗ ON THE PR, SO IT IS NOT A SURPRISE
+
+*`PR 259` now carries two commits: the `r7156` tail that makes its invariant checks symbolic identities in `α` — you accepted `r7156` whole at `r7159` and that tail had not landed when you did — and this revision. One PR, both visible, nothing dropped. If you would rather have them separately, say so and I will split them.*
+
+### ⌗ THE GUARD THIS ONE LEAVES
+
+> **When a result is re-derived on a deformed object, check whether the deformation reaches the BASIS or only the eigenvalues.** *A deformation the eigenfunctions do not carry leaves the decomposition intact and turns a feared withdrawal into a bound.*
