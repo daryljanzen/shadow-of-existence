@@ -57,7 +57,14 @@ REPORTED_ONLY = {'READS-PAPER'}
 #   and the three figures it still carries are its own: the closed form it derives from and the
 #   midpoint it measures. **  ⌈ The ceiling is written from what the operator reads on THIS tree,
 #   which is the instruction the gate gave 70 and owes itself.
-CEILING = 50
+# ⛭ r7159 (66): 50 → 48.  `P15_the_sky_phase_fit_and_its_uncertainty.py` now READS the paper, so its
+#   two NO-READ sites no longer exist and their rows are gone rather than exempted.  ** It was a DRIFTED
+#   site: it attributed a sigma on the phase to the paper, and the paper quotes none -- node 70 found it
+#   at r7157+70.1 while reading the 19, and found why nothing caught it: the r7147 operator had filed it
+#   IN-PAPER on a TOKEN match against the paper's unrelated `0.008 per cent`.  That is the 86.5 per cent
+#   chance control observed on a live site, and it is why the drift partition was never gated. **
+#   ⌈ The second DRIFTED site 70 found is `cc66`'s and is routed to its author, not repaired here.
+CEILING = 48
 
 
 def read_baseline():
