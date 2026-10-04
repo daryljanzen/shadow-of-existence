@@ -8260,3 +8260,29 @@ same function. *I had read that function and still routed the weaker of the two 
 contained: I framed the choice as "more lines" when it was "the failing lines".* **And it is already
 earning — `cc66.129`'s cause came out of a `[FAIL]` line the old tail would have replaced with a
 banner.**
+
+---
+
+## ⛔ `cc66.131` — the seed race spans **four lines including `main`**, by the ledger's own count
+
+`3b5885cd`: `G51` **cleared** (the anchor repoint worked); `P15_expansion_law` carried red, with
+
+> `⚠ CONTRADICTED suite P15_expansion_law.py` — `carried 4, cleared 3, on 4 line(s) over 4.2 h:`
+> `…5tjf0b, …6awafl, …wgcmvt, main`, six pairs of `nothing it reads differs between the two`.
+
+⇒ **Not this branch's problem and never was.** The pairs sit on two other seats' lines and on `main`.
+`G51`'s seed races every line that runs the suite. ⌗ *Six pairs in 4.2 h against `Q1`'s 37 in 122 — an
+order of magnitude more frequent.*
+
+**What the repoint did:** restored `G51`'s test, nothing more. Same single-subprocess window, so the
+race is untouched. *Stated explicitly because "`G51` is green again" could be read as the race being
+closed.*
+
+**And the victim has no defence:** the file on disk is briefly wrong while the suite is entitled to run
+it; no diagnostic, derivation or control inside `P15_expansion_law` changes that. ⇒ *The fix is
+coordination and belongs to the shared instrument — the runner treating a seeding receipt as exclusive,
+or a lock it respects. Seeding a copy stays ruled out by `G51`'s own "run where registered" rule.*
+
+⚑ *And the evidence is now the instrument's own rather than my reading of a log — the form `PO-82` was
+said to be missing. The row asks why one process reported two things; the answer is that **two
+processes wrote and read one file.***

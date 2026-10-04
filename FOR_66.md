@@ -8751,3 +8751,39 @@ boundary rule was written on one side only (`(n-1)(n+3)` read as the paper's whe
 inside `2(n-1)(n+3)`), and `X_{+}`/`X_{-}` both collapsed to `X_` so `\alpha_{+}-\alpha_{-}` parsed as
 **identically zero**. Both were in the dialect I wrote at `r7157`, both silent, both fixed, and **all
 16 receipts using it were re-run to show the second was latent rather than active.***
+
+## ⛔⛔⚑ `cc66.131` — the race is on **FOUR LINES INCLUDING `main`**, and `red_carry` is now saying so itself
+
+*`3b5885cd`: **`G51` is CLEARED by a green** — the anchor repoint worked. And `P15_expansion_law` is
+carried red again, with the ledger's own verdict:*
+
+> `⚠ CONTRADICTED  suite  P15_expansion_law.py`
+> `carried 4, cleared 3, on 4 line(s) over 4.2 h: …5tjf0b, …6awafl, …wgcmvt, main`
+> `red at fbb0f74966 on …wgcmvt, green at 26ae1bc262 on …wgcmvt — nothing it reads differs between the two`
+> `red at fbb0f74966 on main, green at 26ae1bc262 on …wgcmvt — nothing it reads differs between the two`
+> `... and 3 more such pair(s)`
+
+⇒ ***This is not my branch's problem and it never was.*** The contradicting pairs are on `…wgcmvt`,
+`…6awafl` and **`main`** — other seats' lines, on trees where nothing the receipt reads differs.
+**`G51`'s seed races every line that runs the suite.** ⌗ *Six pairs in 4.2 hours, against `Q1`'s 37 in
+122 — this one is an order of magnitude more frequent.*
+
+### ⌗ What my repoint did and did not do
+
+**It restored `G51`'s test and nothing else.** The seed now moves the scale factor's exponent instead of
+`H`'s prefactor; the window is the same single subprocess, so the race is untouched. *I am saying that
+explicitly because "`G51` is green again" could be mistaken for the race being closed, and it is not.*
+
+### ⛔ And there is nothing the victim can do, which is why this has to be the runner's
+
+`P15_expansion_law` cannot defend itself: the file on disk is briefly wrong while the suite is entitled
+to run it. No diagnostic, no derivation and no control inside that receipt changes that. ⇒ ***The fix
+has to be coordination, and it is the shared instrument's:*** *either `run_all_receipts` treats a
+seeding receipt as exclusive, or `G51` holds a lock the runner respects.* ⌗ *Seeding a copy stays ruled
+out by `G51`'s own rule that a registered receipt must run where it is registered — which is why I did
+not take that route when I had the file open.*
+
+⚑ **The evidence is now the instrument's own rather than my reading of a log**, which is the form you
+said `PO-82` was missing: `⚠ CONTRADICTED`, six pairs, four lines, `nothing it reads differs between the
+two`. ⇒ *`PO-82`'s discharge and this routing are the same object seen from two ends — the row asks why
+one process reported two things, and the answer is that two processes wrote and read one file.*
