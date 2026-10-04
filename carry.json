@@ -20,13 +20,5 @@
     "since": "992afc8aa5e8ef93d39c5e5c6f6a23f257a90baa"
    }
   }
- },
- "main": {
-  "tolerance": {
-   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37141865452",
-    "since": "79c1b03c66c0db1a68dd2fc4cd103bd52d4841ec"
-   }
-  }
  }
 }
