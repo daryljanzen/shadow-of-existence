@@ -9133,3 +9133,58 @@ comment block above it; the `INDEX` row appended forward with the three readings
 `rc=0`. Nothing else of yours touched.*
 
 ⇒ **Nothing is routed back. This answers the only thing you asked.**
+
+---
+
+## ⛔⛔ `cc66.137` — **I MUST WITHDRAW `cc66.135c`. IT IS WRONG, AND IT IS WRONG BY THIS ROUND'S OWN ERROR SHAPE**
+
+***Do not take `cc66.135c`'s conclusion. The head's green was never narrower than the branch's, and
+the receipt was covered all along.*** *It is still in the open PR rather than merged, so you are
+reading the correction before the claim — but the claim is in the diff and I am not quietly
+revising it.*
+
+### ⛔ WHAT I GOT WRONG, AND THE MECHANISM
+
+***Each head carries TWO check runs called `scoped — the plain suite`, and I read one of them as
+the check run.*** *The `push`-event run scopes **that push's diff**. The `pull_request`-event run
+scopes **the whole PR** — its own log says so in as many words: `a pull_request event reads the
+ledger and does not write it (its scope is the whole PR, asked again on every PR event)`.*
+
+| head | `push`-event run | `pull_request`-event run |
+|---|---|---|
+| `2dae1b8b` (PR #273's head, prose only) | **3** receipts, 320 s | **164** receipts, **1226** s |
+| `dc623701` (PR #274's head, prose only) | **3** receipts, 320 s | **48** receipts, **646** s |
+
+⇒ ***So the head IS covered, by its `pull_request` twin, in both cases.*** *I verified the PR-wide
+scope locally rather than inferring it again: `receipt_scope.py --range $(git merge-base origin/main
+HEAD)..HEAD` returns **`48`**, exactly what CI reported, with the edited receipt at line `41`.*
+
+⛔ ***AND THIS IS THE NINTH INSTANCE OF THE ROUND'S SHAPE, THE PUREST ONE YET, AND MINE: the check
+run's NAME stood in for the check run.*** *Two runs share that name per head; I took the first one
+the API listed and called its scope "the head's scope". **A proxy for the thing again — and worse
+than the earlier eight, because I had the fact written down.** This session's own notes already said
+the duplicate runs per head carry DIFFERENT scopes. I had it, and I did not apply it.*
+
+### ⌗ WHAT SURVIVES OF `cc66.135c`, WHICH IS LESS THAN IT CLAIMED
+
+*Two narrow facts stand and the conclusion does not:*
+
+- ✔ *The `push`-event run's scope really is the push diff, so a prose-only push really does give
+  **that run** a 3-receipt scope.*
+- ✔ *The `348`-receipt figure for `d72fda5c` was right, and the receipt really was line `286` of it.*
+- ⛔ ***But "the head's green says nothing about what the branch added" is FALSE***, and so is the
+  rule I drew from it. **There is no reader hazard here: a reader who checks the head's checks sees
+  both runs, and the PR-wide one is the one that gates.** *The thing I called a finding was my own
+  misreading of a check-run list.*
+
+⇒ ***`PO-78` should not take `cc66.135c` as a member.*** *If anything in it is worth keeping it is
+the error and not the finding: **when two checks share a name, "the check" is not a thing you can
+refer to** — and a count read off one of them is a claim about which one you happened to read.*
+
+### ⌗ WHAT THIS DOES NOT TOUCH
+
+*`cc66.136` stands whole — the three-way refusal measurement, the classifier, and the answer to your
+`r7167` question are independent of this and were each measured directly. **And `cc66.135`'s own
+finding, the `$2.56$` quantity, is unaffected.** *Only the CI-coverage addendum is withdrawn.**
+
+⇒ **Nothing is routed. This is a withdrawal, and the PR body carries the same correction.**

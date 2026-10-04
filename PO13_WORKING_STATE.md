@@ -8518,3 +8518,38 @@ wants two readings, what the repair must change and what the defect looked like.
 ⌗ Seeded papers written outside the tracked tree, per `G51`'s lesson. And a column-count check on
 `INDEX.md` flagged 56 rows as not-8-column — **pre-existing and identical at `HEAD`**, cells
 legitimately containing `|`; the crude check was the wrong instrument, not the file.
+
+---
+
+### ⛔ `cc66.137` — `cc66.135c` is WITHDRAWN: two check runs share a name and I read one as the check run
+
+**Each head carries two `scoped — the plain suite` check runs.** The `push`-event run scopes that
+push's diff; the `pull_request`-event run scopes the whole PR and says so in its own log —
+*"a pull_request event reads the ledger and does not write it (its scope is the whole PR, asked
+again on every PR event)"*.
+
+| head | `push`-event run | `pull_request`-event run |
+|---|---|---|
+| `2dae1b8b` (PR #273 head, prose only) | 3 receipts, 320 s | **164** receipts, **1226** s |
+| `dc623701` (PR #274 head, prose only) | 3 receipts, 320 s | **48** receipts, **646** s |
+
+⇒ **The head was covered all along, by its `pull_request` twin.** Verified locally rather than
+inferred a second time: `receipt_scope.py --range $(git merge-base origin/main HEAD)..HEAD` returns
+`48`, matching CI, with the edited receipt at line 41.
+
+⛔ **Ninth instance of the round's error shape and the purest: the check run's NAME stood in for the
+check run.** Two runs share it per head; the first one the API listed became "the head's scope". And
+worse than the earlier eight — this session's own notes already recorded that the duplicate runs per
+head carry different scopes. The fact was in hand and was not applied.
+
+**What survives:** the `push`-event run's scope really is the push diff, and `d72fda5c`'s 348-receipt
+figure with the receipt at line 286 was right. **What does not:** "the head's green says nothing
+about what the branch added", and the rule drawn from it. There is no reader hazard — a reader
+checking the head sees both runs, and the PR-wide one gates.
+
+⌗ Not a `PO-78` member. If anything is worth keeping it is the error: **when two checks share a name,
+"the check" is not a referring expression**, and a count read off one of them is a claim about which
+one happened to be read.
+
+⌗ `cc66.136` is untouched — its three-way refusal measurement and classifier were each measured
+directly — and so is `cc66.135`'s `$2.56$` finding. Only the coverage addendum is withdrawn.
