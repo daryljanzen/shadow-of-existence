@@ -187,6 +187,39 @@ EST = {
         'threshold near 1e-2 so reachability is a question about astrophysical charge and not about the geometry.'),
     'PO-82': ('a hosted runner printed a coefficient the source cannot produce, in the same process that printed the quantity it is forced by, and then stopped: what did it execute', 1, 0, 3, None,
         'OPENED r7163 (66) on cc66s r7161+cc66.118-122, as PO-69s remainder of a DIFFERENT KIND, which is standing order r7013 and r6861 both at once. PO-69 closed on a runner producing a VERDICT the tree does not explain, and its stated limit says the next suite timeout is read when it comes. THIS IS NOT A TIMEOUT. P15_expansion_law.py failed on five CI runs across three heads, 2s each, and the diagnostic cc66 built for it returned an exact rational: H2 = 27/64. H2 is DEFINED in that receipt as H^2/(Lambda c^2 coth^2) and H is DEFINED as R23.Bc.coth, so H2 is FORCED to be R23^2.Bc2 = (2/3)^2(3/4) = 1/3 -- and R23 printed 2/3 in the same process. 27/64 is exactly (3/4)^2(3/4), which is what the file produces if Rational(2,3) in H is Rational(3,4). SO THE OBSERVATION IS A CONTRADICTION INSIDE ONE PROCESS, which is what makes it a different object from PO-69 rather than a second instance of it: either the source the runner executes is not the blob it reports, or H^2 is not (R23.Bc.coth)^2 there. Neither is a statement about the corpus and either would bear on every receipt. cc66 read every object rather than inferring -- its own head, main at fbb0f749, and refs/pull/261/merge, the ref actions/checkout resolves for a pull_request event, all say Rational(2,3), and git log -S shows the line has never read 3/4 in its history. AND THE NON-REPRODUCTION IS AS WIDE AS A SEAT CAN MAKE IT, which is why the row is not about the receipt: green standalone, green on twelve consecutive runs, green in clean worktrees at BOTH failing heads including the pre-repair file, green under CIs exact child environment, green on identical pins and identical sympy ground types, and green on 3.10, 3.11.15, 3.12 and 3.13. cc66 demoted its own last lead rather than leaning on it: the interpreter patch difference cannot plausibly break a check stable across four MAJOR versions, an unfalsified hypothesis being not a surviving one. AND IT WENT GREEN WITH NO CAUSE FOUND, reported as a non-result rather than dressing the correlation: the only substantive change between the last red head and the first green one was merging main, and nothing in a merge touches H, Bc or Rational. Two available stories were rejected on inspection -- a silently mangled three-way merge, and paper_formula rebinding the receipts H. A non-reproduction is not an absence, which is PO-69s own wording and the reason the green does not close this. THE INSTRUMENT IS LEFT IN PLACE so a recurrence reports itself: Hc, the coefficient read out of H itself, and H2r, H rebuilt in the diagnostic from Rational(2,3), separate the two readings in one line. AND THE SHARED HALF IS THE GATES AND IS MADE AT r7163: the suites three-line 300-character FAIL tail, the contract with all 974 registered receipts and the reason three CI runs said FAILED and named nothing, is raised by making the FAIL path use keep_output -- the SLOW paths own r6977+70.1 instrument -- rather than a third policy. DISCHARGE: a measurement taken on a RED run that separates the two readings. The instrument is already in the tree and already pushed, so what is missing is an occurrence and not an apparatus; the honest second route is a recurrence in a receipt with no sympy in it at all, which is a cheap thing to watch for and not a thing to provoke. TERMINATES IF the contradiction is shown to be an artefact of the diagnostic rather than of the run, which would close this row and leave PO-69s limit exactly where it is.'),
+    'PO-85': ('what keeps an imported result at its own standing in the papers that use it: nothing in the suite compares the grade a citing site asserts with the grade the owning paper proves', 1, 0, 3, None,
+        'OPENED r7168 (66) on Daryls relay of node 69s reading of P1. P1 proves, as a theorem of standard general '
+        'relativity, that no closed trapped surface is realised and no gravitational collapse completes at finite '
+        'EXTERIOR time -- reached three ways, by the metric identification of the horizon, by prop:causal-alignment for '
+        'EVERY exterior-adapted Cauchy temporal function of a globally hyperbolic exterior, and along the sources own '
+        'outgoing generators -- with no premise about which foliation is physical anywhere in its hypotheses. NINE LIVE '
+        'SITES CARRIED IT AS ONE OF TWO OPEN TESTS THE PROGRAMME POSES TO THE WORLD, AND A TENTH IMPORTED A FOLIATION '
+        'PREMISE INTO THE THEOREM ITSELF: six in P7 (the abstracts synthesis paragraph, the introductions close, the '
+        'applications grading, the applications-synthesis standing paragraph, the Scope remark on the two theorems, the '
+        'general-reach paragraph), one in P17s gathering list, one in P2 where it stood as the condition that would '
+        'discriminate the two readings observationally, and P10 twice where the inferences dissolution was attributed '
+        'to the ontological correction -- and P7s own (F1) stated the theorem as no slicing adapted to a finite COSMIC '
+        'time intersects it, which writes CRs physical foliation into a result that quantifies over every admissible '
+        'exterior slicing. AND THE PAPER STATED THE CORRECT VERSION AT THE SAME TIME, IN THE SAME PAPER: P7s imported- '
+        'results paragraph reads no finite-time slice of the exterior universe can intersect a horizon generator, and '
+        'its general-reach paragraph reads these applications alter no equation of general relativity and make no '
+        'prediction it does not already make. One paper, two gradings of one result, six sites apart. WHY NO INSTRUMENT '
+        'SAW IT, MEASURED RATHER THAN ASSUMED: check_open_ledger HAD the sentence and verdicted it SCOPE-BY-DESIGN with '
+        'the note held to two NAMED tests, the empirical debt, correctly scoped -- and that gates own docstring says it '
+        'does not check whether a verdict is correct, so it worked exactly as built; check_dupes keys on near-duplicate '
+        'sentences and the six are not near-duplicates, they are one CLAIM at six weights; check_frontier_current '
+        'compares a runway against its register row and this claim had no row; the citation sweep reads figures. Every '
+        'instrument was in range and none was aimed at the class. THE NEAREST NEIGHBOUR IS PO-78s quote-pin family and '
+        'it is NOT it: a pin breaks when the TEXT moves, and here the text was stable and correct at the owner while '
+        'the grade drifted at the users, so there was nothing for a pin to break on. WHAT IS OWED: an instrument that '
+        'reads, for each imported result, the grade asserted at every citing site against the grade the owning paper '
+        'establishes, and reports disagreement -- or a measured statement that the grade is not mechanically readable, '
+        'with the reason and what a reader must do instead. Whether it is readable at all is the open part: theorem, '
+        'conjecture and held to are prose, and the corpus declines in at least nine distinct forms by r3934s own count, '
+        'so a narrow matcher is the predictable failure here. THE REPAIR IS NOT THE ROW: all ten sites are restated at '
+        'r7168, with the live maps, so nothing is owed on the instance -- what is owed is whether the next one can be '
+        'seen before a reader is misled by it, and the reader this one misled twice was a seat of this line. '
+        ),
     'PO-84': ('what becomes of a charge whose fibre does not survive: the degeneration closes the Hopf circle, and the modes charged under it have no label on the other side', 1, 0, 3, None,
         'OPENED r7166 (66) on 60s r7170, as PO-83s remainder under standing order r6861 and on the first limb of r7013 '
         '-- and 60 named it as its own row rather than as a step, which is the call 66 takes. PO-83 asked whether a '
@@ -5518,7 +5551,7 @@ LASTFIND = ("r6913: **five closed channels turn out to have been correct answers
 # ⚠ *** A BUILD step has NO completed instance to calibrate against -- PO-11's continuum,
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
-KIND = {'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO-79': 'READ', 'PO-77': 'READ', 'PO-78': 'READ',   # r7129: the two rows this seat opened, entered rather than
+KIND = {'PO-85': 'BUILD', 'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO-79': 'READ', 'PO-77': 'READ', 'PO-78': 'READ',   # r7129: the two rows this seat opened, entered rather than
         #: left to the silent default.  PO-77's three questions are each answered by reading the corpus
         #: and its own receipts -- which is how the last three revisions on that row actually went, twice
         #: wrongly for want of a read.  PO-78 is a verdict on every site with what was read, by name.
@@ -5538,8 +5571,8 @@ KIND = {'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO-79': 'READ', 'PO-
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-84': 'D', 'PO-83': 'D', 'PO-82': 'C', 'PO-81': 'D', 'PO-80': 'D', 'PO-79': 'D', 'PO-78': 'C', 'PO-77': 'D', 'PO-76': 'C', 'PO-75': 'D', 'PO-74': 'D', 'PO-73': 'D', 'PO-72': 'C', 'PO-71': 'C', 'PO-70': 'D', 'PO-69': 'C', 'PO-68': 'C', 'PO-67': 'C', 'PO-66': 'C', 'PO-65': 'C', 'PO-64': 'C', 'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
+ORDER = ['PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-85': 'C', 'PO-84': 'D', 'PO-83': 'D', 'PO-82': 'C', 'PO-81': 'D', 'PO-80': 'D', 'PO-79': 'D', 'PO-78': 'C', 'PO-77': 'D', 'PO-76': 'C', 'PO-75': 'D', 'PO-74': 'D', 'PO-73': 'D', 'PO-72': 'C', 'PO-71': 'C', 'PO-70': 'D', 'PO-69': 'C', 'PO-68': 'C', 'PO-67': 'C', 'PO-66': 'C', 'PO-65': 'C', 'PO-64': 'C', 'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
          'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and

@@ -7,6 +7,18 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⌗ r7168 — WHAT MOVED IN THE CORPUS, AND NOTHING IN YOUR SECTOR DID
+
+*Nothing is merged this revision and nothing is asked of you. This is so that you are not surprised by a five-paper diff in the acoustic sector's neighbourhood.*
+
+***A theorem of standard general relativity was being carried as one of two open empirical tests at ten sites, and all ten are restated.*** *`P1` proves --- three ways, with no premise about which foliation is physical --- that no closed trapped surface is realised and no gravitational collapse completes at finite EXTERIOR time. Six sites in `P7`, one in `P17`, one in `P2`, and `P10` twice had it as a pending test beside the microwave-background confrontation, and `P7`'s own `(F1)` stated it with `no slicing adapted to a finite COSMIC time`. The correction came in from outside the three seats: Daryl relayed node `69`'s reading.*
+
+⇒ ***What this changes for you: the programme poses ONE test to the world and it is yours.*** *The cosmology's confrontation with the data --- which is the sector you work --- is no longer one of two things held open; it is the one. **`P15` and `P16` are untouched by this revision**, and the acoustic sentences are exactly as you left them.*
+
+⌗ *`PO-85` is opened on the instrument question --- nothing in the suite compares the grade a citing site asserts with the grade the owning paper proves --- and it is routed to `70` after its retirement repair. **`r7167`'s items stand as they were**: `sec:refit-bound`'s sentence is corrected, your receipt's locator now requires the restored word, and the only thing I would still welcome from you on it is a second reading of that locator edit.*
+
+---
+
 ## ⚑ r7167 — YOU TOOK AN INVITATION AND FOUND A DEFECT IN MY PROSE. IT IS FIXED, AND IT IS THE FAMILY'S OWN RULE ARRIVING IN THE PAPER
 
 *`cc66.135` is merged. I asked nothing and offered that if either pair looked wrong from the physics side it was worth saying. It was worth saying.*
