@@ -8120,3 +8120,67 @@ sequence, and `report_c.py` labels it as partial rather than reading an incomple
 * **my counts were inflated.** *The solver count read 18 where 8 ran (wrapper shells carry the instrument's name in their environment); the slice glob `*_k*.npz` matched `_kfac26_src.npz`, so "26 slices" was 20.* ⇒ **Every run count I reported this stretch should be read as inflated.**
 
 ⌗ *The common thread is one thing and not three: **a loose pattern trusted without being checked against what it actually matches.** It is the same shape as the fast-job replica above — a claim about a set, made without reading the set.*
+
+---
+
+## ⚑ `cc66.118` — the plain-suite red is **one named receipt**, and my blocker was never real
+
+**Correct the record first: I told you, and PR #261, that the failing job's log was unreachable from
+this session. It was not.** `gh api .../logs` is refused (the log host redirect), but the session's
+GitHub MCP route — `get_job_logs` with the run id, `failed_only` and `return_content` — hands back the
+log body inline. **One call named the receipt.** Both earlier readings I published about this red (the
+declared-budget family, then "not contention, cause unknown") were published while a measurement I had
+not attempted would have settled it.
+
+⇒ **Worth passing to every seat: a refused route is not no access.** If another seat has recorded that
+CI logs cannot be read from a cloud session, that entry is wrong and this is how.
+
+**The failure, from the logs of both completed failing runs** (`37163749574` on `c482ecb1`,
+`37163766926` on `5e640eb0`, same `TREE-DIGEST 99a97d72a10afbe3`):
+
+> `[FAIL] receipts/P15_CR_cosmology/P15_expansion_law.py (2s)` —
+> `RESULT: FAILED -- one or more symbolic identities above did not hold.`
+
+⌗ And "deterministic across four heads" was my own overstatement: `f6858e27`'s *push* run was green,
+and two heads' PR runs were still in flight when I said it. **Three failures, two heads, one receipt.**
+
+### I have not reproduced it, and I am telling you that rather than a story
+
+Green here: standalone; **twelve consecutive runs**; in clean worktrees at *both* failing heads
+(including the pre-repair version of the receipt); under CI's exact child environment; on identical
+pins and identical sympy ground types; with `camb`/`pynucastro`/`matplotlib` all present. Ruled out by
+measurement, not by argument: the PR merge ref (my merge-base **is** `main`'s tip, so the trees are the
+same), a sibling receipt rewriting the paper (seven read it, **none writes it**), an LFS pointer (the
+repo declares **no LFS**, `r2419`), and dependency drift.
+
+⇒ **One difference remains and this container cannot close it: python `3.11.15` here, `3.11.16` in CI.**
+It is the first of the four quantities `requirements-ci.txt` fingerprints, and the only one I cannot
+match. *If you want this settled rather than instrumented, that is the lead.*
+
+### ⛔ What I fixed, and the one decision that is yours
+
+A 2-second failure cost four heads **because the suite reports a failing receipt as its last three
+non-blank lines, cut at 300 characters** (`run_all_receipts.py:416`) — and for this receipt those three
+lines were the closing banner. Three CI runs said `FAILED` and named no check, no value, no
+environment.
+
+*A receipt whose only failing output is its verdict can be debugged only where it can be run, which is
+exactly not where it fails.*
+
+**Fixed in `P15_expansion_law.py`:** a long diagnostic for a human, plus **three compact lines printed
+after the closing banner** — built to survive the join-and-cut — naming the failing check with its
+residual, the environment, and the parsed expressions. Verified against the runner's own tail rule on a
+broken identity (it names the check) and on a broken check expression whose identity still holds (it
+says *none isolated*, rather than a confident wrong answer). **The next red run will report the cause
+instead of the verdict.**
+
+⚑ **ROUTED TO YOU — I did not touch the runner.** The three-line budget is the suite's contract with
+all **974** registered receipts. Either each receipt carries its own compact tail (I have done exactly
+one), or `run_all_receipts` keeps more on a FAIL — one edit, covering all of them. **It is the shared
+instrument, so the choice is yours, not mine.** My recommendation: raise the runner's FAIL tail, and
+leave the per-receipt diagnostics as the exception for sites with something a tail cannot carry.
+
+⌗ Standing: `r7157`'s remainder is still `eq:dscont` (`P03_seam_continuation`, the metric line element,
+1 of 17), and the **14 `NO-ANCHOR`** sites are the next block per the order — nine `P10`
+re-parameterisation identities as the derivation block, five read individually, distribution reported
+once when they close.

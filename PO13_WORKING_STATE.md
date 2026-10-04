@@ -7664,3 +7664,85 @@ I told PR #261 the red was a declared per-receipt budget meeting contention — 
 **What blocks me, stated once:** I cannot read the failing job's log — this session's GitHub client refuses the log host (`refusing a redirect to productionresultssa12.blob.core.windows.net`) and the annotations carry only `Process completed with exit code 1`. The step is `run_all_receipts … | tee` then `grep -Eq '0 fail, 0 over timeout'`, **so the pipe masks the runner's exit code and the log is the only place the failing receipt is named.** What I need is that step's log or someone who can read it. The one re-run is spent, on `111336601125`.
 
 ⚑ **The lesson is one I had already written down.** At `cc66.113` I recorded that *an exit code from a compound shell is not a measurement of the thing at the end of the pipe.* Here I did the same thing one level up: **I read a duration and a family resemblance as a diagnosis and published it, before checking the cheapest discriminator — whether the other run of the same commit agreed.** The rule: **two runs of one commit is the first thing to look at, not the last.** It is free, already on the page, and settles flake-versus-real before any reasoning begins.
+
+---
+
+## `cc66.118` — the plain-suite red has a name, and the reason it took four heads is that **the log was readable the whole time**
+
+⛔ **The blocker I stated at `cc66.117` was not real, and the correction is the finding.** I wrote there,
+and told PR #261, that I could not read the failing job's log because this session's GitHub client
+refuses the log host (`refusing a redirect to productionresultssa12.blob.core.windows.net`). That is
+true of `gh api .../logs`. It is **not** true of the session's other route to the same bytes: the GitHub
+MCP tool `get_job_logs`, called with the run id, `failed_only` and `return_content`, returns the log
+body inline. One call, and the failing receipt is named.
+
+⇒ **Every reading I published about this red was published while a measurement I had not attempted
+would have settled it.** First "the contention/declared-budget family", then the correction to "not
+contention, cause unknown". The rule at `cc66.117` was *two runs of one commit is the first thing to
+look at, not the last.* It generalises, and this is the general form: **before reasoning about a
+failure, enumerate the ways of reading it, not just the one that failed.** One refused route is not
+no access.
+
+### What the log says
+
+Both *completed* failing PR runs — `37163749574` (head `c482ecb1`) and `37163766926` (head
+`5e640eb0`) — name one receipt, at the same tree:
+
+| | |
+|---|---|
+| failing receipt | `receipts/P15_CR_cosmology/P15_expansion_law.py` |
+| duration | 2 s (the suite's wall was 668 s / 669 s, 39 pass 1 fail) |
+| kept output | `RESULT: FAILED -- one or more symbolic identities above did not hold.` |
+| `TREE-DIGEST` | `99a97d72a10afbe3` in **both** runs |
+
+⌗ Also measured off the same logs: the two heads' *push* runs differ from their PR runs because the
+scopes differ, and `f6858e27`'s push run was **green** — which is why "deterministic across four
+heads" was itself too strong. Three failures, two heads, one receipt.
+
+### And it is still not reproduced here. Measured, not assumed
+
+| hypothesis | verdict |
+|---|---|
+| the repair was incomplete at those heads | **out** — the pre-repair receipt at `5e640eb0`, and `c482ecb1`'s, both pass in clean worktrees |
+| CI checks out the PR *merge* ref, not my head | **out** — my merge-base **is** `main`'s tip (`05ffab46`), so the merge tree is my head's tree |
+| a flaky / nondeterministic `simplify` | **out** — 12 consecutive runs, all pass |
+| CI's child environment | **out** — `NODE=ci`, `PYTHONUNBUFFERED=1` and the five one-thread BLAS vars, reproduced exactly: passes |
+| a sibling receipt rewriting the paper under it | **out** — 7 receipts in scope read `corpus/CR_cosmology.tex`, **none writes it** |
+| the tex arriving as an LFS pointer (only the compile job sets `lfs: true`) | **out** — `.gitattributes` declares **no LFS** at all, by a decision recorded at `r2419` |
+| sympy ground types (`gmpy2` / `python-flint` present in CI) | **out** — `GROUND_TYPES` is `python` here and neither package is in `requirements-ci.txt` |
+| dependency drift | **out** — `sympy 1.14.0`, `mpmath 1.3.0`, `numpy 2.4.6`, `scipy 1.17.1` pinned and identical, and `camb`/`pynucastro`/`matplotlib` are all present here too |
+| the parallel batch, on CI's own scope | **out** — CI's `pull_request` range reproduced byte-for-byte through `receipt_scope.py --ci` (49 receipts, the same derivation CI runs), then run through `run_all_receipts --jobs 4 --timeout 600`: **49 pass, 0 fail, 0 over timeout, 864 s wall** |
+
+⇒ **One difference is left and I cannot close it from here: the interpreter is `3.11.15` in this
+container and `3.11.16` in CI** (pinned by `setup-python`, `r6985+70.1`). It is the only pinned
+quantity this container cannot match, and `requirements-ci.txt` names the interpreter as the first of
+the four fingerprinted quantities for exactly this reason.
+
+### ⛔ The defect that made a 2-second failure cost four heads, and it is not this receipt's alone
+
+`run_all_receipts` reports a failing receipt as its **last three non-blank lines**, joined with ` / `
+and cut at 300 characters (`scripts/run_all_receipts.py:416`). For this receipt those three lines were
+the closing banner and the RESULT rule — so three CI runs reported `FAILED` and named **no check, no
+value, no environment.**
+
+⇒ *A receipt whose only failing output is its verdict can be debugged only where it can be run, which
+is exactly not where it fails.*
+
+**Repaired in the receipt**, in two parts because the two readers are different:
+* a long diagnostic block for a human running the file directly — environment, the paper's path,
+  length and sha, and every parsed expression beside this file's own form with the residual; and
+* **three compact lines printed AFTER the closing banner**, because the last three are the only ones
+  the suite keeps. A diagnostic printed before the banner is invisible in CI — which is the mistake
+  the first draft of this block was one edit away from making. They name the failing check with its
+  residual, then the environment, then the parsed expressions, each trimmed to survive the cut.
+
+Verified against the runner's own tail rule, both ways:
+* a genuinely broken identity ⇒ `⛔ FAILING: eq:amplitude=(-2**(1/3) + 5**(2/3)*6**(1/3)/5)/sq …`
+* a broken *check expression* whose identity still holds ⇒ `⛔ FAILING: none isolated -- a check failed
+  that this block does not cover`, which is the honest answer rather than a confident wrong one.
+
+**What I did NOT touch, and it is the half that matters corpus-wide:** the three-line budget is
+`run_all_receipts`' own code, but it is the suite's contract with all **974** registered receipts.
+Either every receipt carries its own compact tail — what I have now done for exactly one — or the
+runner keeps more on a FAIL, which is one edit and covers all of them. **The runner is the shared
+instrument and the choice is 66's; routed, not taken.**

@@ -84,17 +84,60 @@ allpass&=ok(f"eq:omega-ratio PARSED: Omega_m/Omega_Lambda = matter_term/Lambda_t
 # and H^2 = (1/3)(8 pi G rho + Lambda c^2) form: the Lambda term is exactly (1/3)Lambda c^2
 allpass&=ok("H^2 late-time -> (1/3)Lambda c^2 (the standard rate (1/2)sqrt(3 Lambda) c as tau->inf)",
             sp.simplify(sp.limit(H**2,tau,sp.oo)-Lam*c**2/3)==0)
+#: ⛭ r7161+cc66.118: ** A CHECK THAT FAILS ONLY WHERE I CANNOT RUN IT MUST SAY WHAT IT GOT. **
+#: This receipt is red in CI's `scoped — the plain suite` and green here on the same tree -- measured
+#: standalone, in a clean worktree at each failing head, twelve times over, under CI's own child
+#: environment, and inside the same parallel batch on the same scope; same pins (sympy 1.14.0,
+#: mpmath 1.3.0, numpy 2.4.6, scipy 1.17.1), same sympy ground types, same camb/pynucastro/matplotlib.
+#: ⛔ ** AND THE SUITE'S REPORT NAMED NEITHER A CHECK NOR A VALUE. **  `run_all_receipts` keeps a
+#: failing receipt's LAST THREE non-blank lines, which here were the RESULT banner and its rules --
+#: so three CI runs said `FAILED` and nothing else, and the diagnosis cost four heads and three wrong
+#: readings before the job log was read at all.  *A receipt whose only failing output is its verdict
+#: can be debugged only where it can be run, which is exactly not where it fails.*
+#: So the evidence is carried here, in two parts, because the two readers are different:
+#:   • the long block below, for a human running this file directly; and
+#:   • ** THREE COMPACT LINES PRINTED LAST, AFTER the closing banner **, because the last three are
+#:     the only ones the suite keeps -- a diagnostic printed before the banner is invisible in CI,
+#:     which is the mistake this block was one edit away from repeating.
+#: Both print only on failure.
+if not allpass:
+    import platform, hashlib
+    try:
+        _gt = sp.external.gmpy.GROUND_TYPES
+    except Exception as _e:                                            # noqa: BLE001
+        _gt = 'unreadable(%s)' % type(_e).__name__
+    #: the fifth field is `want_zero`: False for the CONTROL, whose whole point is a NON-zero residual
+    _DIAG = [
+        ('eq:amplitude',   _AMP,       amp_nariai,        sp.simplify(amp_nariai - _AMP), True),
+        ('eq:scalefac',    None,       None,
+         sp.simplify(sp.expand_trig(lhs - rhs)), True),
+        ('CONTROL',        None,       None,
+         sp.simplify(sp.expand_trig(sp.diff(r_bad, tau)**2
+                                    - (2*G*M/r_bad + (Lam/3)*r_bad**2))), False),
+        ('eq:rate[1]',     _RATE_COTH, H**2,              sp.simplify(H**2 - _RATE_COTH), True),
+        ('coth2=1+csch2',  None,       None,
+         sp.simplify(sp.coth(x)**2 - (1 + sp.csch(x)**2)), True),
+        ('eq:omega-ratio', _OMR,       mat_term/Lam_term,
+         sp.simplify(mat_term/Lam_term - _OMR), True),
+        ('late-time',      None,       None,
+         sp.simplify(sp.limit(H**2, tau, sp.oo) - Lam*c**2/3), True),
+    ]
+    _BAD = [(n, r) for n, _p, _m, r, _wz in _DIAG if (r != 0) == _wz]
+    _ENV = ('python %s sympy %s ground %s tex %dch/%s'
+            % (platform.python_version(), sp.__version__, _gt, len(_P15F),
+               hashlib.sha256(_P15F.encode('utf-8')).hexdigest()[:12]))
+    print("-"*72)
+    print("  DIAGNOSTIC -- what THIS run got, because the verdict alone does not carry it:")
+    print("    " + _ENV)
+    print("    paper " + _P15F_PATH)
+    for _n, _p, _m, _r, _wz in _DIAG:
+        print("    %-16s residual=%r   (want %s)" % (_n, _r, '0' if _wz else 'non-zero'))
+        if _p is not None:
+            print("      PARSED from the paper : %s" % (_p,))
+            print("      this file's own form  : %s" % (_m,))
+    print("    eq:rate sides parsed: %d -> %s" % (len(_RATE_SIDES), _RATE_SIDES))
+    print("-"*72)
 print("="*72)
-print("RESULT:", "ALL PASS -- amplitude, the sinh^{2/3} scale factor (E=1 geodesic, 2/3 forced by the control),\n         the Friedmann coth^2 rate, and the csch^2 density-ratio all verified symbolically." if allpass else "SOME FAILED")
-print("="*72)
-# ** THIS FILE COULD NOT FAIL ITS CALLER UNTIL r2376+c54.179, AND ITS VERDICT WAS UNCONDITIONAL. **
-# `allpass` was accumulated through every check and then never read: the RESULT line printed
-# "ALL PASS" as a literal, and the process exited 0 whether the symbolic identities held or not.
-# ** Breaking the late-time-rate claim printed two FAILs and still returned rc=0. **
-# It was masked because `scripts/lint_assertions.py` counted the presence of `allpass &=` as a check
-# in itself; the two-part rule adopted in the same revision -- a failure-collection idiom AND a
-# non-zero exit path -- is what surfaced it.  *An instrument that accepts the bookkeeping for the
-# acting will pass a receipt that does neither.*
 if allpass:
     print("RESULT: ALL PASS -- amplitude, the sinh^{2/3} scale factor (E=1 geodesic, 2/3 forced by")
     print("        the control), the Friedmann coth^2 rate, and the csch^2 density-ratio, all")
@@ -102,4 +145,13 @@ if allpass:
 else:
     print("RESULT: FAILED -- one or more symbolic identities above did not hold.")
 print("="*72)
+if not allpass:
+    #: ⛔ ** THESE THREE LINES ARE LAST BECAUSE THE SUITE KEEPS ONLY THE LAST THREE, **
+    #: joined and cut at 300 characters -- so they are built to survive that cut and to name the
+    #: check, the value and the environment in that order of use.
+    print("⛔ FAILING: %s" % ('; '.join('%s=%s' % (n, str(r)[:36]) for n, r in _BAD)
+                             or 'none isolated -- a check failed that this block does not cover'))
+    print("⛔ ENV: %s" % _ENV)
+    print("⛔ PARSED: amp=%s rate=%s omr=%s"
+          % (str(_AMP)[:30], str(_RATE_COTH)[:44], str(_OMR)[:30]))
 raise SystemExit(0 if allpass else 1)
