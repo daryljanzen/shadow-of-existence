@@ -326,7 +326,8 @@ head("Ⓖ  WHAT THE PAPER CARRIES, AND THE ONE CLAUSE THIS ROW IS NAMED FROM")
 
 _STOT = (r"$s_{\rm tot}=\Gamma(\tfrac16)\sqrt\pi/\Gamma(\tfrac23)\sqrt3\,2^{1/3}=3.3387380$")
 _UNITY = "There the isotropic mode crosses with amplitude exactly unity"
-_SPEC = "eq:squashed-spectrum"
+_SPEC_LBL = r"\label{eq:squashed-spectrum}"
+_SPEC_REF = r"\eqref{eq:squashed-spectrum}"
 _BOUNDS = r"which puts the suppression exponent at no less than $\sqrt{2L}\,s_{\rm tot}$"
 _BASIS = "The deformation reaches the spectrum and not the basis"
 _SEG = r"the lift from the comoving turnaround to $r=0$"
@@ -338,8 +339,9 @@ gate("Ⓖ②  the segment is the paper's own, from the comoving turnaround to r 
      b15.count(_SEG) == 1)
 gate("Ⓖ③  the unit-amplitude clause is in print, and the σ = 0 endpoint is its generalisation",
      b15.count(_UNITY) == 1)
-gate("Ⓖ④  eq:squashed-spectrum is in print -- the equation this receipt integrates",
-     b15.count(_SPEC) == 2)
+gate("Ⓖ④  eq:squashed-spectrum is in print, labelled once and cited -- the equation this receipt"
+     " integrates (a count of citations is not pinned: landing a result adds them)",
+     b15.count(_SPEC_LBL) == 1 and b15.count(_SPEC_REF) >= 1)
 gate("Ⓖ⑤  and so is the bound sentence this receipt shows is not attained",
      b15.count(_BOUNDS) == 1 and b15.count(_BASIS) == 1)
 

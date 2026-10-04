@@ -341,6 +341,37 @@ def registered():
 _ONE_THREAD = {
     'OMP_NUM_THREADS': '1', 'OPENBLAS_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1',
     'NUMEXPR_NUM_THREADS': '1', 'VECLIB_MAXIMUM_THREADS': '1',
+    # ⛭ r7163 (node 66, the gate, on `cc66`'s routed figure-determinism decision): THE SUITE IS
+    #   NON-IDEMPOTENT ON A TRACKED BINARY, AND THE CAUSE IS A TIMESTAMP AND NOT A PLOT.
+    #   `cc66` ran the 49-receipt scope and the tree came back dirty in exactly one file --
+    #   `corpus/fig_acoustic_two_arm.pdf`, 55234 -> 55228 bytes -- with an identical plot and a fresh
+    #   `/CreationDate` falling inside the run's own window.  Its generator is itself a REGISTERED
+    #   receipt, so the suite runs it and it rewrites its own tracked output every time.
+    #   ** Why one environment variable and not 33 `savefig` edits: ** the census is `33` generators
+    #   with `savefig` in `corpus/` and `scripts/` and not one of them passes `metadata=`, so a
+    #   per-site fix is 33 edits that the 34th generator reopens.  Matplotlib honours
+    #   `SOURCE_DATE_EPOCH`; measured on `3.10.9`, two runs of one figure come back byte-identical
+    #   with it set and differ without it.  ** One edit, every generator, every future one. **
+    #   ** The constant is fixed and not derived: ** a value taken from the clock or from the commit
+    #   is this same defect wearing a reproducible name -- the output would churn per run or per
+    #   commit.  `1700000000` is `2023-11-14T22:13:20Z`, carries no meaning, and is chosen so that
+    #   it cannot be mistaken for one.
+    #   ⌗ ** AND THE SAME RUN TURNED UP A SECOND NON-IDEMPOTENCE ON A SECOND TRACKED BINARY, WHICH
+    #   THIS VARIABLE DOES NOT REACH AND THE ONE-THREAD PINNING ABOVE ALREADY DOES. **  Regenerating
+    #   that figure by hand also rewrote `computations/beyond_the_wall/spectra/
+    #   cc66_fig_acoustic_numbers.npz` -- same size, 14 of its 28 members differing in bytes, at a
+    #   worst RELATIVE difference of 1.1e-14.  That is BLAS reduction order and not a timestamp:
+    #   multithreaded, the fit's sums associate differently from run to run.
+    #     ⇒ *** MEASURED, AND IT IS WHY THIS BLOCK SITS IN THIS DICT RATHER THAN IN THE GENERATOR: ***
+    #       two consecutive runs of that generator under THIS dict's full environment come back
+    #       byte-identical to each other AND byte-identical to the committed `.npz`.  So the suite is
+    #       idempotent on both binaries -- the timestamp closed by the line below, the arithmetic
+    #       closed by the thread pinning that was already here for an unrelated reason.
+    #   ⌗ ** What this does NOT fix, stated because it is the remainder and it is now two things: **
+    #   a seat invoking a generator BY HAND, outside the suite, gets a fresh timestamp AND an
+    #   unpinned BLAS, and the second one moves NUMBERS rather than bytes.  What was measured as the
+    #   cost is the suite leaving every seat's tree dirty, and that is what closes here.
+    'SOURCE_DATE_EPOCH': '1700000000',
 }
 
 
@@ -413,8 +444,21 @@ def run_one(path, timeout):
         dt = time.time() - t0
         if r.returncode == 0:
             return ('PASS', path, dt, '')
-        tail = [l for l in (r.stdout + r.stderr).split('\n') if l.strip()][-3:]
-        return ('FAIL', path, dt, ' / '.join(tail)[:300])
+        # ⛭ r7163 (node 66, the gate, on `cc66.118`'s routing): A FAILING RECEIPT KEEPS WHAT THE SLOW
+        #   PATH ALREADY KEEPS, BECAUSE THREE LINES AT 300 CHARACTERS HELD A CLOSING BANNER AND NOTHING
+        #   ELSE.  `P15_expansion_law` failed on three CI runs across two heads and every one of them
+        #   reported `RESULT: FAILED` and named no check, no value and no environment -- so the receipt
+        #   could be debugged only where it could be run, which is exactly not where it failed.
+        #   ** Why this and not a bigger number: ** `keep_output` is `r6977+70.1`'s instrument, already
+        #   used by the SLOW branch five lines down and already exercised by every timeout this suite
+        #   has recorded.  It keeps EVERY line matching `FAIL` wherever it sits, plus both streams'
+        #   tails -- so the fix is to stop having two policies, not to invent a third.  At most ~30 KB
+        #   for one failing receipt, and nothing for a passing one.
+        #   ** Why in the runner and not per receipt: ** the three-line budget is the suite's contract
+        #   with all 974 registered receipts; `cc66` carried its own diagnostic in one of them and
+        #   routed the shared edit here, which is the right split.
+        kept = _ST.output_lines(_ST.keep_output(r.stdout, r.stderr))
+        return ('FAIL', path, dt, '\n'.join(kept) if kept else '(the receipt printed nothing)')
     except subprocess.TimeoutExpired as e:
         kept = _ST.output_lines(_ST.keep_output(_ST._text(e.stdout), _ST._text(e.stderr)))
         return ('SLOW', path, time.time() - t0, '\n'.join([f'exceeded {timeout}s'] + kept))
@@ -642,7 +686,8 @@ def main():
     bad = [r for r in res if r[0] == 'FAIL']
     for st, p, dt, msg in sorted(bad, key=lambda r: r[1]):
         print(f"    [FAIL] {os.path.relpath(p, ROOT)}  ({dt:.0f}s)")
-        print(f"           {msg}")
+        for l in msg.split('\n'):
+            print(l if l.startswith(' ') else f"           {l}")
     for st, p, dt, msg in sorted(slow, key=lambda r: r[1]):
         first, *kept = msg.split('\n')
         print(f"    [slow] {os.path.relpath(p, ROOT)}  -- {first}")

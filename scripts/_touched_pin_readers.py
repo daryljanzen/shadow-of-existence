@@ -57,6 +57,30 @@ def changed_files(ref):
     return sorted(set(out))
 
 
+# ⛭⛭⛭ r7163 (66) ON NODE 70's r7161+70.2 SEED: THE FOURTH MEMBER OF THE BLINDNESS SHAPE, AND THE
+#   FIRST FOUND BY A PLANTED SEED RATHER THAN BY A BREAK ON `main`.
+#   ** Every selector in this file requires a receipt to NAME the changed file.  A receipt that reads its
+#   paper through `reach_baseline` names none -- it imports a module whose `bodies()` globs every
+#   `corpus/*.tex` -- so it was invisible to this gate ALWAYS, not merely in a window. **
+#   ⌈ Standing size, measured by 70: `21` registered receipts read their paper that way.  Its first count
+#   was `22` and it corrected itself: `L281/P1` only reads `reach_baseline.py`'s source as text and does
+#   not import it.
+#   ⇒ *An importer reads every paper, so for ANY paper change it counts as naming the changed one.  That
+#   is why this widening is safe rather than generous: the literal and numeric intersections after the test
+#   are untouched, so the cost is 21 more sources string-scanned and a reader still runs only when one of
+#   its pinned literals sits in a changed line.*
+#   ⌈ Proved in 70's throwaway worktree before it was routed here: with it the seed's `S2` goes IN and
+#   `S1`, `S3`, `S4` are unchanged.
+_RB_IMPORT = re.compile(r'^\s*(?:import reach_baseline|from reach_baseline )', re.M)
+
+
+def _names_the_change(src, names):
+    """Does this receipt read a changed corpus file -- by name, or by importing the reader that globs them?"""
+    if any(nm in src for nm in names):
+        return True
+    return bool(any(nm.endswith('.tex') for nm in names) and _RB_IMPORT.search(src))
+
+
 def main():
     ref = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else None
     blob = touched_lines(ref)
@@ -112,7 +136,7 @@ def main():
                     src = io.open(path, encoding='utf-8', errors='replace').read()
                 except OSError:
                     continue
-                if any(nm in src for nm in names) and any(n in src for n in nums):
+                if _names_the_change(src, names) and any(n in src for n in nums):
                     hits.add(path)
     # ⛭⛭⛭ AND THE THIRD HALF, ADDED r7151 BECAUSE THIS GATE MISSED A BREAK FOR THE THIRD TIME AND
     #   THE CAUSE WAS ITS OWN STATED LIMIT RATHER THAN A NEW ONE.
@@ -140,7 +164,7 @@ def main():
                     src = io.open(path, encoding='utf-8', errors='replace').read()
                 except OSError:
                     continue
-                if not any(nm in src for nm in names):
+                if not _names_the_change(src, names):
                     continue
                 for lit in lits_re.findall(src):
                     if lit in blob:
