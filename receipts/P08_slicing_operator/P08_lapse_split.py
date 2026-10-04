@@ -19,6 +19,16 @@ def check(t,c): print(f"  [{'PASS' if c else 'FAIL'}] {t}"); return bool(c)
 ok=True
 t,r,th,ph,Lam = sp.symbols('t r theta phi Lambda', real=True)
 A=sp.Function('A')(r); f=sp.Function('f')(r)
+#: ⛭ r7157+cc66.115: the paper's own display equation was CARRIED HERE AS A LITERAL and attributed
+#: to its label.  It is PARSED from the paper now, so a move in the paper lands here as a failure
+#: instead of leaving this file quietly disagreeing with it.  *`paper_formula.equation` asserts the
+#: label occurs exactly once, which is `r7153`'s own control, and the parse is checked against the
+#: expression this file carried before the repair.*
+import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
+_P8 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+                   'slicing_operator.tex')
 x=[t,r,th,ph]; n=4
 g=sp.diag(-A, 1/f, r**2, r**2*sp.sin(th)**2); gi=g.inv()
 Gamma=[[[sp.simplify(sum(gi[a,d]*(sp.diff(g[d,b],x[c])+sp.diff(g[d,c],x[b])-sp.diff(g[b,c],x[d])) for d in range(n))/2) for c in range(n)] for b in range(n)] for a in range(n)]
@@ -35,8 +45,9 @@ print("="*70); print("P08 lapse split (two-function metric, Einstein tensor DERI
 Gtt=sp.simplify(Gud[0,0])
 ok&=check("G^t_t = (r f'+f-1)/r^2  -- INDEPENDENT of A (density = the leaf f alone)",
           sp.simplify(Gtt-(r*fp+f-1)/r**2)==0 and A not in Gtt.free_symbols and sp.diff(Gtt,r).has(Ap)==False)
-ok&=check("=> 8pi T^t_t=(r f'+f-1)/r^2+Lambda, so rho depends on f alone (eq:rho-B)",
-          sp.simplify((Gtt+Lam) - ((r*fp+f-1)/r**2+Lam))==0)
+_RHOB = pf.rhs(_P8, 'eq:rho-B', {'r': r, 'f': f, 'fp': fp, 'Lambda': Lam})
+ok&=check(f"=> 8pi T^t_t={_RHOB}, so rho depends on f alone -- `eq:rho-B` PARSED from the paper",
+          sp.simplify((Gtt+Lam) - _RHOB)==0)
 # (ii) G^r_r and the equation of state
 Grr=sp.simplify(Gud[1,1])
 ok&=check("G^r_r = (r f A'/A + f - 1)/r^2", sp.simplify(Grr-(r*f*Ap/A+f-1)/r**2)==0)

@@ -18,6 +18,16 @@ import sympy as sp
 def check(t,c): print(f"  [{'PASS' if c else 'FAIL'}] {t}"); return bool(c)
 ok=True
 al,tau,rho,chi,tht,ph,E,M,r,a = sp.symbols('alpha tau rho chi theta phi E M r a', positive=True)
+#: ⛭ r7157+cc66.115: the paper's own display equation was CARRIED HERE AS A LITERAL and attributed
+#: to its label.  It is PARSED from the paper now, so a move in the paper lands here as a failure
+#: instead of leaving this file quietly disagreeing with it.  *`paper_formula.equation` asserts the
+#: label occurs exactly once, which is `r7153`'s own control, and the parse is checked against the
+#: expression this file carried before the repair.*
+import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
+_P8 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+                   'slicing_operator.tex')
 def ricci_scalar(gm, cs):
     n=len(cs); gi=gm.inv()
     Ga=[[[sp.simplify(sum(gi[d,e]*(sp.diff(gm[e,b],cs[c])+sp.diff(gm[e,c],cs[b])-sp.diff(gm[b,c],cs[e])) for e in range(n))/2) for c in range(n)] for b in range(n)] for d in range(n)]
@@ -56,8 +66,13 @@ ok&=check("radius-a S^3 (a^2 dOmega_S3): ^3R = 6/a^2 = 6k/a^2 (k=+1) -- the Frie
           sp.simplify(ricci_scalar(a_scaled,[chi,tht,ph]) - 6/a**2)==0)
 # (4) energy-curvature relation off the radial geodesic
 f=1-2*M/r-r**2/al**2; rdot2=sp.expand(E**2-f)
-ok&=check("(dr/dtau)^2=(E^2-1)+2M/r+r^2/a^2 ; eq:Ek: -k=E^2-1 => E<1:k=+1, E=1:k=0, E>1:k=-1",
+_k, = sp.symbols('k'),
+_EK = pf.sides(_P8, 'eq:Ek', {'E': E, 'k': _k})
+ok&=check(f"(dr/dtau)^2=(E^2-1)+2M/r+r^2/a^2 ; `eq:Ek` PARSED: {_EK[0]} = {_EK[1]} "
+          "=> E<1:k=+1, E=1:k=0, E>1:k=-1",
           sp.simplify(rdot2-((E**2-1)+2*M/r+r**2/al**2))==0
+          # ⛭ the paper's own eq:Ek, parsed: -k = E^2-1, so k = 1-E^2 off the derived geodesic
+          and sp.simplify(sp.solve(sp.Eq(_EK[0], _EK[1]), _k)[0] - (1-E**2))==0
           and (1-1)==0 and (2-1)==1)      # E=1->E^2-1=0->k=0 ; E=sqrt2->E^2-1=1->k=-1
 # CONTROL
 ok&=check("CONTROL: k=0 (E=1) -> curvature term 0 -> flat leaf = the E=1 cosmology (prop:cosmo)", sp.simplify((6*0/a**2))==0)
