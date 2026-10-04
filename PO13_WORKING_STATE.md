@@ -7763,3 +7763,64 @@ guard is doing exactly the job `r6977+70.1` built it for: *a comparison of nothi
 result.* ⌗ *Stated as derived from the gate's own rule rather than from a log line — the `not_swept`
 list naming the receipt is above the tail I read, and the next run will carry it. I am not calling it
 confirmed by a measurement I did not take.*
+
+---
+
+## `cc66.119` — the diagnostic reported on its first run, and it moves the blame **off** the `r7157` repair
+
+CI run `37172757320`, job `111348927510`, head `6706feda`, kept tail:
+
+> `⛔ FAILING: eq:rate[1]=17*Lambda*c**2*coth(sqrt(3)*sqrt(Lam; late-time=17*Lambda*c**2/192`
+> `⛔ ENV: python 3.11.16 sympy 1.14.0 ground python tex 404639ch/4b34023fcc5d`
+
+### ⓵ The parse is sound, and what fails is older than the repair
+
+**`amp` and `omega-ratio` both pass, and both are PARSED.** The tex digest in CI
+(`404639ch/4b34023fcc5d`) is **byte-identical to this container's**. And `late-time` touches no parse
+at all — it is `simplify(limit(H**2, tau, oo) - Lam*c**2/3)`, this file's own expression against a
+literal, a check that predates `r7157` entirely.
+
+⇒ ***So the failure is in `H`, not in `paper_formula`, and `r7157`'s repair is not what is red.*** That
+agrees with the measurement I already had and had not explained: the **pre-repair** receipt at
+`5e640eb0` failed in CI too. ⌗ *The receipt is only in a suite scope on a push that touches it, which
+is why a CI-only failure in a years-old check could sit unseen until I edited the file.*
+
+### ⓶ The residuals pin it numerically, and a one-character model reproduces them exactly
+
+`H = (2/3)·B_c·coth(B_c τ)` with `B_c² = ¾Λc²` gives `H² = ⅓Λc²coth²`. CI's `late-time` residual
+`17Λc²/192` puts the coefficient at `64/192 + 17/192 = 81/192 = 27/64` instead of `⅓`.
+
+**Substituting `sp.Rational(3,4)` for `sp.Rational(2,3)` in `H` reproduces both CI residuals exactly** —
+`H2=27/64`, `lim=27/64`, `rate=1/3`, with `amp`/`omega-ratio` still passing and `eq:rate[1]` and
+`late-time` the only two failures. `(3/4)²·(3/4) = 27/64`.
+
+⛔ **That is a model that fits the residuals, not an explanation, and I am not recording it as one.**
+`sp.Rational(2,3)` cannot be `3/4`, so either the coefficient is not where the difference is or
+something upstream of it is. **The next run discriminates directly**: the tail now carries exact
+rationals — `R23`, `Bc2`, `H2`, `lim`, `rate`, `amp2` — so whichever of them moves is named.
+
+### ⓷ ⌗ Why the first diagnostic was not enough, which is the same mistake one level up
+
+It printed the residual **expressions**, and the 300-character cut ate them: CI reported
+`eq:rate[1]=17*Lambda*c**2*coth(sqrt(3)*sqrt(Lam` and stopped. *A diagnostic sized for a budget it has
+not measured is the same mistake as a pin.* The tail now carries exact scalars, each a handful of
+characters — **178 characters untruncated against a 300-character budget, measured rather than
+assumed.**
+
+### ⛔ ⓸ AND I NEARLY SHIPPED THE ONE DEFECT THIS RECEIPT IS A MONUMENT TO
+
+My edit rewrote the file from an anchor to the end and **dropped `raise SystemExit(0 if allpass else 1)`**.
+The receipt would have printed `FAILING`, printed `RESULT: FAILED`, and **exited 0** — which is verbatim
+the defect recorded in its own comment block: *"THIS FILE COULD NOT FAIL ITS CALLER UNTIL
+`r2376+c54.179`, AND ITS VERDICT WAS UNCONDITIONAL."*
+
+⇒ **Caught because I checked the broken copy's EXIT CODE and not its output** — it printed every
+failing line and returned `rc=0`. Restored, and both directions are now verified: clean `rc=0`, broken
+`rc=1` with the diagnostic in the kept tail.
+
+⚑ **The rule, and it is the third of this shape I have recorded this round:** *a diagnostic that reports
+a failure is not a receipt that fails its caller.* The text and the exit code are different claims, and
+only one of them is what CI reads. ⌗ *`cc66.113`: an exit code from a compound shell is not a
+measurement of the thing at the end of the pipe. `cc66.118`: a refused route is not no access. This
+one: printed output is not an exit code.* **All three are the same error — reading a proxy for the
+thing.**

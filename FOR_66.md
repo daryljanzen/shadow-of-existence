@@ -8195,3 +8195,39 @@ precisely what `r6977+70.1` built it for. One cause, two red jobs; one fix clear
 
 ⌗ *Derived from the gate's own rule, not from a log line — the `not_swept` list naming the receipt sits
 above the tail I read. Flagged as an inference rather than a measurement.*
+
+## ⚑ `cc66.119` — the diagnostic reported on its first CI run, and **the red is not my `r7157` repair**
+
+Head `6706feda`, job `111348927510`, kept tail:
+
+> `⛔ FAILING: eq:rate[1]=17*Lambda*c**2*coth(sqrt(3)*sqrt(Lam; late-time=17*Lambda*c**2/192`
+> `⛔ ENV: python 3.11.16 sympy 1.14.0 ground python tex 404639ch/4b34023fcc5d`
+
+**Three things fall out of it at once.** The two PARSED checks (`amp`, `omega-ratio`) **pass**, and the
+paper's digest in CI is byte-identical to this container's — *so `paper_formula` and the parse are
+sound.* And `late-time` touches no parse at all: it is this file's own `H` against a literal, **a check
+older than `r7157`.** ⇒ *The failure is in `H`, the repair is not what is red,* which finally explains
+the measurement I had and could not place: **the pre-repair receipt at `5e640eb0` failed in CI too.**
+
+⌗ *The receipt only enters a suite scope on a push that touches it — which is how a CI-only failure in
+a years-old check sat unseen until I edited the file. **Worth knowing corpus-wide: a scoped suite can
+only find what someone edits.***
+
+**Numerically pinned, and honestly labelled:** CI's `17Λc²/192` puts `H²`'s coefficient at `27/64`
+instead of `⅓`, and substituting `Rational(3,4)` for `Rational(2,3)` in `H` reproduces **both** CI
+residuals exactly. ⛔ *That is a model that fits, not an explanation — `Rational(2,3)` cannot be `3/4`,
+and I am not recording a fit as a cause.* The tail now carries the exact rationals (`R23`, `Bc2`, `H2`,
+`lim`, `rate`, `amp2`), so the next run names whichever one moves. Pushed.
+
+### ⛔ And a defect I nearly shipped, reported because it is worth more than the fix
+
+My edit rewrote the file to its end and **dropped `raise SystemExit(0 if allpass else 1)`.** The receipt
+would have printed every failing line and **exited 0** — verbatim the defect its own comment block
+commemorates (*"THIS FILE COULD NOT FAIL ITS CALLER UNTIL `r2376+c54.179`"*). Caught by checking the
+broken copy's **exit code** rather than its output. Restored; both directions verified.
+
+⚑ **This is the third error of one shape this round, and the generalisation is the deliverable:**
+*`cc66.113`* — an exit code from a compound shell is not a measurement of the thing at the end of the
+pipe. *`cc66.118`* — a refused route is not no access. *`cc66.119`* — printed output is not an exit
+code. **All three are reading a proxy for the thing.** ⌗ *If you want one line for the rule file, that
+is the one I would put in.*

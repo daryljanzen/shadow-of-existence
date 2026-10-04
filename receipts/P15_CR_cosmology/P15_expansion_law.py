@@ -147,11 +147,23 @@ else:
 print("="*72)
 if not allpass:
     #: ⛔ ** THESE THREE LINES ARE LAST BECAUSE THE SUITE KEEPS ONLY THE LAST THREE, **
-    #: joined and cut at 300 characters -- so they are built to survive that cut and to name the
-    #: check, the value and the environment in that order of use.
-    print("⛔ FAILING: %s" % ('; '.join('%s=%s' % (n, str(r)[:36]) for n, r in _BAD)
+    #: joined and cut at 300 characters.  ⌘ r7161+cc66.119: the first version printed the residual
+    #: EXPRESSIONS and the cut ate them -- CI reported `eq:rate[1]=17*Lambda*c**2*coth(sqrt(3)*sqrt(Lam`
+    #: and stopped there.  *A diagnostic sized for a budget it has not measured is the same mistake as a
+    #: pin.*  So what goes in the budget now is the decisive SCALARS: every coefficient below is an exact
+    #: rational, each a handful of characters, and between them they separate "the parse moved" from
+    #: "this file's own `H` is not what it reads as" without any expression surviving the cut.
+    _C = lambda e: sp.simplify(e)
+    _COEF = [
+        ('R23',  sp.Rational(2, 3)),                                     # want 2/3
+        ('Bc2',  _C(Bc**2 / (Lam*c**2))),                                # want 3/4
+        ('H2',   _C(H**2 / (Lam*c**2*sp.coth(Bc*tau)**2))),              # want 1/3
+        ('lim',  _C(sp.limit(H**2, tau, sp.oo) / (Lam*c**2))),           # want 1/3
+        ('rate', _C(_RATE_COTH / (Lam*c**2*sp.coth(Bc*tau)**2))),        # want 1/3
+        ('amp2', _C(amp_nariai**2 * Lam)),                               # want 2**(2/3)
+    ]
+    print("\u26d4 FAILING: %s" % ('; '.join(n for n, _r in _BAD)
                              or 'none isolated -- a check failed that this block does not cover'))
-    print("⛔ ENV: %s" % _ENV)
-    print("⛔ PARSED: amp=%s rate=%s omr=%s"
-          % (str(_AMP)[:30], str(_RATE_COTH)[:44], str(_OMR)[:30]))
+    print("\u26d4 COEFS: %s" % ' '.join('%s=%s' % (n, v) for n, v in _COEF))
+    print("\u26d4 ENV: %s" % _ENV)
 raise SystemExit(0 if allpass else 1)
