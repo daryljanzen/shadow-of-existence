@@ -1,1 +1,10 @@
-{}
+{
+ "claude/shadow-of-existence-setup-6awafl": {
+  "suite": {
+   "receipts/P10_canonical_time/P10_the_algebraic_quartic_is_settled_by_the_frame_constant_level_at_every_level_and_the_remainder_is_the_derivative_sectors_eight.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37212091658",
+    "since": "0b71dad9e72592b55359be9e733d05206d458021"
+   }
+  }
+ }
+}
