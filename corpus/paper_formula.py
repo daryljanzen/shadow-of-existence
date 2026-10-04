@@ -37,7 +37,7 @@ _NAMES = {r'\alpha': 'alpha', r'\Lambda': 'Lambda', r'\lambda': 'lambda_', r'\pi
           r'\log': 'log', r'\exp': 'exp', r'\infty': 'oo',
           #: ⌗ `\psi` is declared above; `check_loaders` caught it listed twice here, where the
           #: later entry would have silently won and any edit to the first been discarded at load.
-          r'\Psi': 'Psi', r'\Phi': 'Phi'}
+          r'\Psi': 'Psi', r'\Phi': 'Phi', r'\beta': 'beta'}
 
 
 def _brace(s, i):
@@ -109,8 +109,52 @@ def _subscripts(s):
         a1 = _brace(s, a0)
         inner = s[a0 + 1:a1]
         assert '{' not in inner, 'paper_formula: nested subscript ' + repr(inner)
-        s = s[:m.start()] + '_' + re.sub(r'[^A-Za-z0-9]', '', inner.replace('\\', '')) + s[a1 + 1:]
+        #: ⛔ ⛭ r7161+cc66.128: ** `X_{+}` AND `X_{-}` BOTH BECAME `X_`, AND THAT IS A SILENT WRONG
+        #: ANSWER RATHER THAN A REFUSAL. **  The strip below removes every non-alphanumeric, so a sign
+        #: subscript vanished: `\alpha_{+}-\alpha_{-}` translated to `alpha_-alpha_`, which is
+        #: IDENTICALLY ZERO -- a difference of two distinct quantities reading as vanishing.  *Measured
+        #: on the shipped dialect, which I wrote at r7157, while extending it for the `-6H^2` site.*
+        #:   · `+` and `-` are NAMED, as `plus` and `minus`, because a sign subscript labels a thing
+        #:     (Misner's `\beta_{\pm}`, a root `r_{\pm}`) and is not an index to compute with -- the
+        #:     same reading this function already applies to `\Delta_r`.
+        #:   · and a subscript that strips to NOTHING is now REFUSED, which is the general repair: the
+        #:     two sign cases are the ones these papers use, and anything else that would collapse to a
+        #:     bare `X_` stops the parse instead of colliding with its sibling.
+        _sub = inner.replace('\\', '')
+        for _a, _b in (('+', 'plus'), ('-', 'minus')):
+            _sub = _sub.replace(_a, _b)
+        _sub = re.sub(r'[^A-Za-z0-9]', '', _sub)
+        assert _sub or not inner.strip(), (
+            'paper_formula: the subscript %r carries nothing a symbol name can hold, so `%s_` would '
+            'collide with every other subscript of the same base. The site is refused rather than '
+            'translated to a name that is not its own.' % (inner, s[:m.start()].strip()[-12:]))
+        s = s[:m.start()] + '_' + _sub + s[a1 + 1:]
     s = re.sub(r'_\s*(\\[A-Za-z]+|[A-Za-z0-9])', lambda m: '_' + m.group(1).lstrip('\\'), s)
+    return s
+
+
+def _dot(s):
+    r"""`\dot\beta_{+}` / `\dot{x}` -> `<name>_dot`, a symbol distinct from the undotted one.
+
+    ⌗ The same convention as `_tilde`, and for the same reason: a dot NAMES a different quantity (a
+    time derivative) and this dialect holds symbols rather than differentiating.  ** A receipt that
+    wants the derivative COMPUTED must compute it; what this gives it is the paper's own name for it. **
+    ⛔ And `\dot` applied to a BRACKETED EXPRESSION rather than a single name is refused, because
+    `\dot{(ab)}` is a derivative of a product and naming it `ab_dot` would assert a factorisation the
+    paper did not write.
+    """
+    #: ⛔ the braced form must hold ONE NAME and nothing else.  The first draft of this guard looked
+    #: for an operator inside the braces, which let `\dot{(ab)}` through as `(ab)_dot` -- a name that
+    #: asserts the derivative of a product is a symbol.  *Caught by testing the guard against the case
+    #: it was written for, which is the fourth time this round that my check was narrower than my
+    #: claim.*  An allow-list of "a single name" refuses every such form instead of enumerating them.
+    for _m in re.finditer(r'\\dot\s*\{([^{}]*)\}', s):
+        assert re.fullmatch(r'\\?[A-Za-z]+', _m.group(1).strip()), (
+            'paper_formula: `\\dot` applied to %r, which is not a single name. This dialect NAMES a '
+            'dotted symbol rather than differentiating, so the site is refused instead of being given '
+            'a name that asserts a structure the paper did not write.' % _m.group(1))
+    s = re.sub(r'\\dot\s*\{([^{}]*)\}', lambda m: m.group(1).lstrip('\\') + '_dot', s)
+    s = re.sub(r'\\dot\s*(\\[A-Za-z]+|[A-Za-z])', lambda m: m.group(1).lstrip('\\') + '_dot', s)
     return s
 
 
@@ -174,6 +218,7 @@ def to_text(frag):
     s = frag
     s = _fn_power(s)
     s = _bare_arg(s)
+    s = _dot(s)
     s = _tilde(s)
     s = _frac(s)
     s = _tud(s)
@@ -301,3 +346,108 @@ def sides(tex, label, locals_=None):
     body = equation(tex, label)
     parts = [p for p in body.split('=') if p.strip()]
     return [to_sympy(p, locals_) for p in parts]
+
+
+# ---------------------------------------------------------------------------- r7161+cc66.123
+#: ** THE INLINE READER: for a figure the paper states in a SENTENCE and not in a labelled display. **
+#: `equation()` keys on `\label{}`, which is why `r7155`'s feasibility measurement split the backlog
+#: into `17 ANCHORED` and `14 NO-ANCHOR`.  The `NO-ANCHOR` sites are not harder, they are a different
+#: claim: the expression is inline math inside prose (`the degeneracy is $2(n-1)(n+3)$`), and the paper
+#: never writes the RECEIPT's form at all -- so there is nothing to compare a left side against and the
+#: labelled-display template is the wrong instrument rather than an unavailable one.
+#:
+#: ⛭ AGREEMENT, NOT UNIQUENESS -- the `r7159` correction, here by construction.  Four of the seven
+#: expressions these sites cite occur more than once in their paper, so `exactly once` would refuse a
+#: paper for restating its own result.  Every occurrence is PARSED and compared as an expression, so a
+#: re-spacing, a `\!` or a `\left` is not a disagreement.
+#:
+#: ⛔ AND A PREFIX OF A LONGER EXPRESSION IS NOT AN OCCURRENCE.  `canonical_time.tex` writes both
+#: `R=4\Lambda` and `R=4\Lambda+\kappa\Theta`; `n(n+2)` also appears inside `n(n+2)-2`.  A reader that
+#: counted those would compare the trace-coupled form against the vacuum one and then "agree" with
+#: itself.  *Found by COUNTING the occurrences before writing the repair, and recorded in
+#: `r7161_cc66_nine_derivation/PREDICTION.md` before either was touched.*  So a match whose next
+#: character would CONTINUE the expression is skipped, and the count of skipped ones is returned rather
+#: than swallowed -- a reader that silently drops half its matches is the same defect one level down.
+def _extends(src, j):
+    """Would the text at `j` continue a mathematical expression?  `+`, `-`, a digit, a letter or a
+    LaTeX name do; `$`, punctuation, `\\,` and a `\\\\` line break do not."""
+    t = src[j:j + 2]
+    if not t:
+        return False
+    if t[0] in '+-*/^_=' or t[0].isdigit() or t[0].isalpha():
+        return True
+    if t[0] == '\\' and len(t) > 1:
+        return t[1].isalpha()
+    return False
+
+
+#: ⛔ ⛭ r7161+cc66.124: ** AND A SUFFIX IS NOT AN OCCURRENCE EITHER, WHICH THE FIRST VERSION GOT WRONG
+#: AND WOULD HAVE ANSWERED SILENTLY. **  `_extends` looks only FORWARD, so `(n-1)(n+3)` -- which the
+#: NEXT receipt in this block cites -- read as `kept=2, skipped=0` against a paper that writes
+#: `2(n-1)(n+3)` both times.  *That is not a refusal and not a disagreement: it is the degeneracy
+#: without its factor of two, attributed to the paper as if the paper had printed it.*
+#: ⇒ Found by testing the instrument against the NEXT site before using it there, rather than by the
+#: site passing wrongly.  ⌗ The trailing case was predicted and the leading one was not, and they are
+#: the same class -- *a boundary rule written on one side is half a boundary rule.*
+#: ⌈ STATED LIMIT, because naming it is the honest half: a match preceded by `(` is treated as a
+#: boundary, so an expression quoted out of the inside of a group is still readable.  Requiring more
+#: would refuse `$(n-1)(n+3)$` itself.  A receipt citing a parenthesised sub-expression therefore gets
+#: no protection from this rule and has to be read by hand.
+def _preceded(src, i):
+    """Would the text ending at `i` be part of a LARGER expression to its left?"""
+    k = i - 1
+    while k >= 0 and src[k] == ' ':
+        k -= 1
+    if k < 0:
+        return False
+    ch = src[k]
+    return ch in '+-*/^_)}' or ch.isdigit() or ch.isalpha()
+
+
+def inline(tex, pattern, locals_=None, strict=True):
+    """Parse an expression the paper states inline, from EVERY occurrence, requiring agreement.
+
+    `pattern` is a regex matching the expression as the paper writes it.  Returns
+    `(expr, kept, skipped)`: the agreed sympy expression, how many occurrences were read, and how
+    many were skipped as prefixes of something longer.
+    """
+    src = tex if '\n' in tex else open(tex, encoding='utf-8').read()
+    kept, skipped, got = [], 0, None
+    for m in re.finditer(pattern, src):
+        if _extends(src, m.end()) or _preceded(src, m.start()):
+            skipped += 1
+            continue
+        kept.append(m)
+    #: ⛭ r7161+cc66.123: ** NO MATCH AND ALL-SKIPPED ARE DIFFERENT FINDINGS AND WERE ONE MESSAGE. **
+    #: The first draft said "matches 0 time(s) and every one of them is a PREFIX", which is incoherent
+    #: at zero and would have sent a reader looking for a longer expression that does not exist.
+    #: *Found by the pre-registered perturbation test (`Q5`), which is what that test is for: it
+    #: perturbed the paper, the refusal fired correctly, and the SENTENCE was wrong.*
+    #:   · 0 matches  ⇒ the paper does not carry this expression at all: a DRIFTED attribution, or a
+    #:     pattern that does not match how the paper writes it.  Either way not a parse failure.
+    #:   · matched but every one skipped ⇒ the paper states it only INSIDE something longer, so it is
+    #:     not a figure the paper asserts on its own.  `canonical_time`'s `-6H^{2}` is exactly this:
+    #:     the paper prints `K_{ij}K^{ij}-K^{2}=-6H^{2}+6(...)` and `-6H^2` is its ISOTROPIC LIMIT,
+    #:     which a receipt must derive rather than quote.
+    if not kept:
+        assert skipped, (
+            'paper_formula.inline: %r does not match the paper at ALL. Either the paper no longer '
+            'carries this expression -- a DRIFTED attribution, which is a finding and not a parse '
+            'failure -- or the pattern does not match how the paper writes it.' % (pattern,))
+        raise AssertionError(
+            'paper_formula.inline: %r matches %d time(s) in the paper and EVERY ONE is PART of a '
+            'longer expression -- extended on the left, the right or both -- so the paper never states '
+            'this figure on its own; it states something of which this is a part. What the receipt '
+            'claims is a DERIVED CONSEQUENCE and not a quotation, and it has to be derived here rather '
+            'than pattern-matched.' % (pattern, skipped))
+    for m in kept:
+        frag = m.group(1) if m.groups() else m.group(0)
+        e = to_sympy(frag, locals_, strict=strict)
+        if got is None:
+            got = e
+        else:
+            assert sp.simplify(got - e) == 0, (
+                'paper_formula.inline: the paper states %r as %r in one place and %r in another, which '
+                'do not agree as expressions -- the paper contradicts itself and no reading of it is '
+                'the attribution.' % (pattern, str(got), str(e)))
+    return got, len(kept), skipped

@@ -116,6 +116,10 @@ import sys
 
 import mpmath as mp
 import sympy as sp
+import os, sys
+_HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(_HERE, '..', '..', 'corpus'))
+import paper_formula as pf
 
 print(__doc__.split("\n", 1)[1].split("COMPUTES:")[0].rstrip())
 print("COMPUTES:" + __doc__.split("COMPUTES:")[1].split("rc=0")[0].rstrip())
@@ -147,8 +151,20 @@ t, al, Lam, C, G, r, mu, a = sp.symbols('t alpha Lambda C G r mu a', positive=Tr
 af = sp.Function('a')(t)
 R_gen = 6 * (sp.diff(af, t, 2) / af + sp.diff(af, t) ** 2 / af ** 2 + 1 / af ** 2)
 print(f"\n  A1. closed FRW, proper time:  R = {R_gen}")
-check(sp.simplify(R_gen.subs(af, al * sp.cosh(t / al)).doit() - 12 / al ** 2) == 0,
-      "NULL CONTROL: on a = alpha cosh(t/alpha), R = 12/alpha^2 -- P10's background, R constant")
+#: ⛭ r7161+cc66.125: the paper's two curvature scalars are PARSED from `canonical_time.tex` rather
+#: than carried here.  ⌗ `R=4\Lambda` is the hazard this block pre-registered and then met: the paper
+#: writes BOTH `R=4\Lambda` and `R=4\Lambda+\kappa\Theta`, so a pattern loose enough to match the
+#: second would read the trace-coupled form as a restatement of the vacuum one and agree with itself.
+#: `paper_formula.inline` skips the extended match and REPORTS the skip, so the count is visible here.
+_P10D = open(os.path.join(_HERE, '..', '..', 'corpus', 'canonical_time.tex'), encoding='utf-8').read()
+_RCOSH, _RCk, _RCs = pf.inline(_P10D, r'12/\\alpha\^\{2\}', {'alpha': al})
+_R4L, _R4k, _R4s = pf.inline(_P10D, r'R=(4\\Lambda)', {'Lambda': Lam})
+print(f"  P10 PARSED: the cosh background's R = {_RCOSH} ({_RCk} statement(s)); "
+      f"Lambda+radiation's R = {_R4L} ({_R4k} statement(s), {_R4s} skipped as part of "
+      f"`R=4\\Lambda+\\kappa\\Theta`, which is a different claim)")
+check(sp.simplify(R_gen.subs(af, al * sp.cosh(t / al)).doit() - _RCOSH) == 0,
+      f"NULL CONTROL: on a = alpha cosh(t/alpha), R = {_RCOSH} -- P10's background, R constant, "
+      "PARSED from the paper")
 
 # A2 -- the criterion, as an exact identity in an arbitrary positive weight.
 print("\n  A2. the degeneracy IS 'R constant', and the failure is EXACTLY a variance.")
@@ -176,8 +192,9 @@ adot2_rad = Lam * a ** 2 / 3 + C / a ** 2 - 1
 addot_rad = sp.simplify(sp.diff(adot2_rad, a) / 2)
 R_rad = sp.simplify(6 * (addot_rad / a + adot2_rad / a ** 2 + 1 / a ** 2))
 print(f"      Lambda + radiation:  R = {R_rad}")
-check(sp.simplify(R_rad - 4 * Lam) == 0,
-      "Lambda+radiation: R = 4*Lambda EXACTLY though a is nothing like the cosh")
+check(sp.simplify(R_rad - _R4L) == 0,
+      f"Lambda+radiation: R = {_R4L} EXACTLY though a is nothing like the cosh -- PARSED from the "
+      "paper, and NOT from its `R=4Lambda+kappa Theta`, which the reader skipped as a different claim")
 check(sp.simplify(sp.diff(R_rad, a)) == 0,
       "  dR/da = 0 -- so the degeneracy SURVIVES off the cosh.  The inference needed R constant")
 

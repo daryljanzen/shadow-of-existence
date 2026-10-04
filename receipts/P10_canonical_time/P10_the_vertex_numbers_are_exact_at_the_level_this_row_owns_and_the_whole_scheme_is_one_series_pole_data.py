@@ -104,6 +104,10 @@ difference between a residue and a partial sum's lower terms.*
 import sys
 
 import sympy as sp
+import os, sys
+_VHERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(_VHERE, '..', '..', 'corpus'))
+import paper_formula as pf
 
 FAILED = []
 
@@ -128,12 +132,34 @@ print("=" * 94)
 # --- A1  the extrinsic-curvature scalar, derived from K^i_j = diag(H + betadot_i)
 d = [bdp + sp.sqrt(3) * bdm, bdp - sp.sqrt(3) * bdm, -2 * bdp]
 KK = sp.simplify(sp.expand(sum((H + x) ** 2 for x in d) - (3 * H + sum(d)) ** 2))
-check(sp.simplify(sum(d)) == 0 and sp.simplify(KK - (-6 * H**2 + 6 * (bdp**2 + bdm**2))) == 0,
-      f"the frame-constant sector's extrinsic curvature gives K_ij K^ij - K^2 = {KK} exactly -- the Misner "
-      "velocities summing to zero, so the volume and the anisotropies separate with no cross term")
-check(sp.simplify(KK.subs({bdp: 0, bdm: 0}) + 6 * H**2) == 0,
-      "and its isotropic limit is -6H^2, which with the three-curvature's 6 returns the standard closed-FRW "
-      "Lagrangian -- the calibration that the reduction is the section's own geometry")
+#: ⛭ r7161+cc66.128: ** THE PAPER'S WHOLE EXPRESSION IS PARSED, AND THE ISOTROPIC LIMIT IS TAKEN ON
+#: BOTH SIDES RATHER THAN TYPED. **  This is the site `cc66.123` named as needing a different shape
+#: from the other eight: `paper_formula.inline` REFUSED the pattern `-6H^{2}` because the paper prints
+#: `K_{ij}K^{ij}-K^{2}=-6H^{2}+6(\dot\beta_{+}^{2}+\dot\beta_{-}^{2})` and `-6H^2` is that
+#: expression's ISOTROPIC LIMIT, not a figure the paper states on its own.  *Pattern-matching it would
+#: have attributed a derived limit to the paper as a quotation.*
+#: ⇒ So the paper's full expression is read, and the limit is applied to the PARSED side as well as to
+#: this file's own -- the stated OPERATION, where the other eight sites take a substitution.  `-6H^2`
+#: is now typed nowhere in this check.
+_P10V = open(os.path.join(_VHERE, '..', '..', 'corpus', 'canonical_time.tex'), encoding='utf-8').read()
+_KK_PAPER, _KKk, _KKs = pf.inline(
+    _P10V,
+    r'K_\{ij\}K\^\{ij\}-K\^\{2\}=(-6H\^\{2\}\+6\(\\dot\\beta_\{\+\}\^\{2\}'
+    r'\+\\dot\\beta_\{-\}\^\{2\}\))',
+    {'H': H, 'beta_dot_plus': bdp, 'beta_dot_minus': bdm})
+_ISO = {bdp: 0, bdm: 0}
+check(sp.simplify(sum(d)) == 0 and sp.simplify(KK - _KK_PAPER) == 0,
+      f"the frame-constant sector's extrinsic curvature gives K_ij K^ij - K^2 = {KK} exactly, matching "
+      f"the paper's own {_KK_PAPER} PARSED from it ({_KKk} statement) -- the Misner velocities summing "
+      "to zero, so the volume and the anisotropies separate with no cross term")
+check(sp.simplify(KK.subs(_ISO) - _KK_PAPER.subs(_ISO)) == 0,
+      f"and its isotropic limit is {sp.simplify(_KK_PAPER.subs(_ISO))}, taken on the PARSED expression "
+      "as well as on this file's own rather than typed -- which with the three-curvature's 6 returns "
+      "the standard closed-FRW Lagrangian, the calibration that the reduction is the section's own "
+      "geometry")
+check(sp.simplify(_KK_PAPER.subs(_ISO) - _KK_PAPER) != 0,
+      "    CONTROL -- the limit is not vacuous: the paper's expression is NOT already isotropic, so "
+      "the anisotropy terms it carries are really being set to zero")
 
 # --- A2  the three-curvature, exactly and then expanded
 b = [bp + sp.sqrt(3) * bm, bp - sp.sqrt(3) * bm, -2 * bp]

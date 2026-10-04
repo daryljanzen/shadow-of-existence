@@ -70,7 +70,72 @@ REPORTED_ONLY = {'READS-PAPER'}
 #   carrying it. **  ⌈ The one site added in the same pass is a NEW member entered as OWED rather than
 #   exempted -- a fourth site in a P10 receipt, exposed by 70's work on its siblings -- because the
 #   ceiling only falls and a new member of the class is what this ratchet exists to count.
-CEILING = 22
+# ⛭ r7161+cc66.123: 22 → 18, the first of the DERIVATION block, and ** THREE REPAIRS RETIRED FOUR ROWS,
+#   WHICH IS NOT THREE REPAIRS AND A BONUS. **  `P10_the_floor_is_forced...` had four NO-READ sites.
+#   Three are genuinely repaired: the paper's `2(n-1)(n+3)`, `n(n+2)-2` and `n(n+2)` are now PARSED out
+#   of `canonical_time.tex`'s own sentences by `paper_formula.inline`, each with a SUBSTITUTION CONTROL
+#   that fails the check under `m = n` or `m = n+2` -- so the label tests the re-parameterisation it
+#   claims and not a coincidence of two polynomials.  ⌈ And they LEFT the class rather than earning a
+#   better verdict, exactly as the r7143 close found: a label reading "P10's degeneracy" has no literal
+#   left to pin.
+#   ⛔ ** THE FOURTH IS NOT A REPAIR AND IS RECORDED AS `READS-PAPER` WITH THAT SAID IN ITS ROW. **  Its
+#   `15/4` is still carried; what changed is that the FILE now opens the paper, and this gate decides
+#   READS-PAPER from the file's own source -- so one `open()` reclassified every site in the file.
+#   *That is a property of the instrument, and the honest reading of the fall is 18 = 22 - 3 - 1, with
+#   the 1 owed a read of its own rather than counted as done.*  ⌈ It is the same shape as the note at
+#   r7157 that a repair almost made its own reads invisible here: this gate sees FILES, not sites.
+# ⛭ r7161+cc66.124: 18 → 15, the second DERIVATION receipt, and ** THE SAME ARITHMETIC AS cc66.123:
+#   THREE ROWS RETIRED FOR TWO REPAIRS, SO THE FALL IS 15 = 18 - 2 - 1. **  In
+#   `P10_the_thermal_condition...` the Casimir eigenvalue and the per-family dimension are now read
+#   from `canonical_time.tex`, each with a substitution control.  The third site (the floor's
+#   self-dual/anti-self-dual FIVEs) still carries its own figures and is OWED a read; it changed
+#   partition only because the file now opens the paper.
+#   ⌗ ** AND THE PER-FAMILY DIMENSION IS DERIVED RATHER THAN QUOTED, BECAUSE THE READER REFUSED IT. **
+#   `paper_formula.inline` rejected the pattern `(n-1)(n+3)`: both occurrences sit inside
+#   `2(n-1)(n+3)`, so the paper states the TOTAL and never the half.  The receipt now asserts
+#   `2 x (its per-family dimension) = the paper's parsed total`.  ⛔ *The first version of that reader
+#   looked only at the character AFTER a match and returned this site as `kept=2, skipped=0` -- the
+#   degeneracy without its factor of two, attributed to the paper, silently.  Caught by testing the
+#   instrument against the NEXT site before using it there.  A boundary rule written on one side is
+#   half a boundary rule.*
+# ⛭ r7161+cc66.125: 15 → 13, and ** THIS TIME THE ARITHMETIC IS CLEAN: 13 = 15 - 2, two rows for two
+#   repairs. **  `P10_the_degeneracy_needs_r_constant...` and `P10_the_descent_is_free...` each had
+#   exactly ONE site, so the file-level reclassification that inflated cc66.123 and cc66.124 by one
+#   apiece had nothing to inflate here.  ⌈ *That is the confirmation of the diagnosis rather than a
+#   different outcome: the gate reads READS-PAPER off the FILE, so the inflation appears exactly when a
+#   repaired file carries OTHER sites and never otherwise.*
+#   ⌗ And two rows were removed while only one was added, because one site LEFT THE CLASS: with the
+#   figure parsed, the label is an f-string and carries no literal for the instrument to see -- the
+#   r7143 finding again, that a pin repaired properly leaves the class rather than earning a better
+#   verdict.
+#   ⛭ THE PRE-REGISTERED HAZARD FIRED ON A LIVE REPAIR.  The paper writes both `R=4\Lambda` and
+#   `R=4\Lambda+\kappa\Theta`; `paper_formula.inline` skipped the extended match and reported the
+#   skip, so the trace-coupled scalar is not read as a restatement of the vacuum one.  Both receipts
+#   print the skip count in their own output.
+# ⛭ r7161+cc66.128: 13 → 12, the LIMIT form, and the site LEFT THE CLASS -- one row removed and none
+#   added, because with the paper's whole expression parsed both labels are f-strings and carry no
+#   literal for the instrument to see.  ** `P10_the_vertex_numbers...` is the site cc66.123 named as
+#   needing a different shape from the other eight: the paper prints
+#   `K_{ij}K^{ij}-K^{2}=-6H^{2}+6(\dot\beta_{+}^{2}+\dot\beta_{-}^{2})` and `-6H^2` is its
+#   ISOTROPIC LIMIT, so `inline` refused the bare pattern. **  The whole expression is read and the
+#   limit is applied to the PARSED side as well as to the receipt's own, with a non-vacuity control
+#   asserting the paper's expression is not already isotropic.  `-6H^2` is typed nowhere.
+# ⛭ r7163+cc66.132: 12 → 10, closing the nine-site DERIVATION block -- and ** ONE OF THE TWO IS NOT A
+#   REPAIR AND THE COUNT NOW UNDERSTATES THE DEBT BY ONE. **  In
+#   `P10_the_subtraction_is_at_operator_dimension...`: the section's order rule `2k-4` is now PARSED and
+#   then solved (`k=3`, dimension six) with a control -- that one is node 70's site, routed to cc66 at
+#   `r7159+70.1` and taken through the same template per `r7161`.
+#   ⛔ The second site, `(i) the interacting quartic energy is EXACTLY (l_P/a)^2 ...`, is ** NAMED AND
+#   NOT REPAIRED **: the paper does not state `(\ell_P/a)^2`, it writes
+#   `a^{-1}\sum_j f_j(\ell_P/a)^{j}`, so the figure is that expansion's `j=2` TERM.  Measured rather
+#   than argued -- `inline` on `(\ell_P/a)` returns one match, part of a longer expression, since it is
+#   followed by `^{j}`; and a `\sum` with a free index is not a closed form this dialect holds.
+#   ⇒ ** IT COUNTS AS `READS-PAPER` ONLY BECAUSE THE FILE OPENS THE PAPER. **  This gate reads the
+#   partition off the FILE, so a repair elsewhere in the same file retired a site whose attribution was
+#   never checked.  *cc66.123 and .124 showed this inflating the apparent repair count; here it LOSES a
+#   debt, which is the worse direction.*  The row says so in its own note and the site is owed a read.
+#   ⌈ Routed rather than patched: making the partition per-site is this gate's design and not mine.
+CEILING = 10
 
 
 def read_baseline():

@@ -194,9 +194,31 @@ print()
 print("=" * 78)
 print("PART 3 — TWO REAL-DEFECT SEEDS, REPRODUCED HERE RATHER THAN RECALLED")
 print("=" * 78)
+#: ⛭ r7161+cc66.129 (cc66): the `P15_expansion_law` anchor MOVED, because the line it anchored on no
+#: longer exists.  ** `H=sp.Rational(2,3)*Bc*sp.coth(Bc*tau)` was a typed literal and `H` is now
+#: DERIVED -- `H = simplify(diff(_r_c, tau) / _r_c)`, the log-derivative of the scale factor the same
+#: file verifies against the `E=1` geodesic two checks earlier. **  So the anchor count went to 0 and
+#: this seed reported `the seed anchor ... is no longer unique`, correctly.
+#: ⇒ The seed now moves the SCALE FACTOR'S EXPONENT, `2/3 -> 3/4`, which is the quantity the derived
+#: `H` is built from -- so it is the same defect reaching the same checks: measured here, the seeded
+#: receipt exits 1 and prints `[FAIL] eq:rate ...`, exactly as the old seed did.  *The anchor is a
+#: line of another receipt's source, so a repair over there retires the seed over here; that coupling
+#: is worth knowing and is not weakened by this edit.*
+#: ⛔⛔ AND A LARGER THING THIS SEED DOES, ROUTED AND NOT CHANGED HERE.  This loop writes the seeded
+#: source to the LIVE TRACKED FILE and restores it in a `finally`, with a subprocess run of up to 300s
+#: in between.  `run_all_receipts` runs four receipts at a time -- so when `P15_expansion_law` is in
+#: the same scope it can be SCHEDULED INSIDE THE SEED WINDOW and execute the seeded file.
+#: ** That is a race between two receipts over one file, and it produced five CI reds across four
+#: heads whose cause I could not find from the suite's own report. **  The signature was exact: the
+#: receipt's diagnostic printed `Hc=3/4` for `H`'s own coefficient while `sp.Rational(2,3)` in the
+#: same process printed `2/3` -- the seed's string matched line 57 and not the diagnostic's own
+#: literals.  ⌈ Remedy not attempted here: seeding a copy would conflict with this file's own rule
+#: that a receipt must run where it is registered, so it belongs to this receipt's owner.  Routed in
+#: `FOR_66.md` at `cc66.129`.
 SEEDS = [
-    ('P15_expansion_law', 'H=sp.Rational(2,3)*Bc*sp.coth(Bc*tau)',
-     'H=sp.Rational(3,4)*Bc*sp.coth(Bc*tau)', 'the rate coefficient 2/3 -> 3/4'),
+    ('P15_expansion_law', '_r_c = A * sp.sinh(Bc * tau) ** sp.Rational(2, 3)',
+     '_r_c = A * sp.sinh(Bc * tau) ** sp.Rational(3, 4)',
+     "the scale factor's exponent 2/3 -> 3/4, which the derived rate is built from"),
     ('AS_amplitude_leftward', '/ x**3 / 2\n', '/ x**3 / 2.05\n',
      'the amplitude reference divided by 2.05 instead of 2'),
 ]

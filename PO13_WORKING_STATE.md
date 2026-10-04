@@ -7937,3 +7937,442 @@ available.*
 trying to move* — the reciprocal is: **do not close an investigation on the only hypothesis left
 standing.** Three times this round I published a reading before an available measurement; this time the
 measurement exists, says *green*, and says nothing about why. That is the whole report.
+
+---
+
+## `cc66.123` — the `DERIVATION` template, first pass: 3 of 9, and four findings beside them
+
+Full outcome against the pre-registered predictions:
+`computations/beyond_the_wall/r7161_cc66_nine_derivation/OUTCOME.txt`. Headline:
+
+| | |
+|---|---|
+| sites repaired | **3** of 9, all in `P10_the_floor_is_forced…` |
+| instrument | `paper_formula.inline` — inline prose read, agreement across occurrences, prefix-aware |
+| `check_unread_figure` | `OWED` 22 → **18**, `CEILING` 22 → **18**, ratchet holding exactly |
+| fast job | green |
+| `Q1` | holds for 3, **refuted for `-6H²`** — and that refutation is the useful half |
+| `Q2` | holds — same checks plus three substitution controls, receipt exits 0 |
+| `Q3` | **does not hold: the control bites on none of the three**, reported as predicted |
+| `Q4` | partial as scoped, and the fall is `18 = 22 − 3 − 1`, not `22 − 4` |
+| `Q5` | holds, **and broke the instrument's own refusal message rather than the receipt** |
+| `Q6` | holds — no measurement or tolerance moved |
+
+Both pre-registered hazards fired on live paper text: `n(n+2)` skipped one prefix inside `n(n+2)-2`,
+`R=4\Lambda` skipped one inside `R=4\Lambda+\kappa\Theta`. ⌗ *Predictions rather than post-hoc
+explanations, because the counting came first.*
+
+⛔ **`-6H²` is refused and named.** `canonical_time` prints
+`$K_{ij}K^{ij}-K^{2}=-6H^{2}+6(\dot\beta_+^2+…)$`; `-6H²` is its **isotropic limit**, so the site needs
+the paper's full expression plus the stated *operation* rather than a pattern. **That is the condition
+the pre-registration set for naming a site instead of widening the template until it fits.**
+
+⛔ **And the three repairs retired four baseline rows.** The fourth still carries `15/4`; it changed
+verdict because the FILE now opens the paper and the gate reads `READS-PAPER` off the file's own source.
+*One `open()` reclassified every site in the file.* Written into its row and the ceiling comment, and
+owed a read of its own. **Three repairs and a reclassification is not four repairs, and the record says
+so in both places a reader would look.**
+
+### `cc66.123` addendum — the `8ebe6a70` tolerance red is `Q1`'s child, and it points the **same** way, so it is not re-routed
+
+`scoped — the tolerance perturbation` failed on `8ebe6a70` (job `111357778031`), exit 2, on a head
+whose plain suite was green. Read rather than left to a newer green, because the scopes differ between
+heads and a flagged site would not necessarily be asked again.
+
+**The tolerance comparison flagged nothing** — `VERDICT: no site flagged`. Exit 2 is the
+unmeasured-receipt guard again, and this time the receipt is **`L_numerics/Q1`**, not
+`P15_expansion_law`: `VERDICT: 1 CHECK(S) FAILED, of 11 run`, with
+`P16_the_scalar_monodromy_is_four_pi_over_rho.py passes at its own tolerances` named beside it.
+
+**Measured here, same tree, `NODE=ci`:** `rc=0`, **11 `[ok]` checks and none failed** — *the same
+eleven CI ran*, so the two runs are comparable rather than two different statistics. Locally that
+check reads `rc=0  P16_the_scalar_monodromy_is_four_pi_over_rho.py` → `[ok] … got=0 want=0`.
+
+⇒ **So the failing check is the one whose condition is a CHILD receipt's exit code.** ⌗ *Labelled as
+an inference and not a measurement: I did not see the child's `rc` in the log, I identified the check
+by its text and read its condition from the local run. The inference is tight but it is an inference.*
+
+### And that is the class `r7047` closed, so it stays closed
+
+`r7047`: *"a child that runs in 40 s standalone and exceeds a cap in CI is the same object 70
+characterised across three readings… not a slow solve, an event"* — closed on a **stated limit**, with
+the instruction *"do not route it again unless a reading points the other way."*
+
+⇒ ***This reading points the SAME way: green standalone, the child failing only under CI.*** It is a
+fifth confirming reading of a finished item, and `r7047` is explicit that a confirming reading is a
+correction on a finished item rather than a reason to reopen one. **Recorded, not routed.** ⌗ *The
+tolerance job was green again on the next head (`d9f50809`), which is what the event class predicts and
+a stable numeric failure would not.*
+
+⚑ *Worth noting against `cc66.118`'s routing: this is the second distinct receipt whose CI-only failure
+was unreadable from the suite's own report, and in both cases the answer came from the job log. The
+case for raising the runner's FAIL tail is now two receipts wide, not one.*
+
+---
+
+## `cc66.124` — 5 of the 9, and the reader's boundary rule was **half a rule**
+
+| | |
+|---|---|
+| sites | **5** of 9 (`P10_the_thermal_condition…` adds 2) |
+| `check_unread_figure` | `OWED` 18 → **15**, `CEILING` lowered to match, ratchet holding exactly |
+| fast job | green |
+
+⛔ **The defect, and it would have answered silently.** `_extends` checked only the character *after* a
+match, so the pattern `(n-1)(n+3)` returned `kept=2, skipped=0` against a paper that writes
+`2(n-1)(n+3)` in both places — **the degeneracy without its factor of two, attributed to the paper as
+though printed.** Not a refusal, not a disagreement: a wrong answer.
+
+⇒ *Found by testing the instrument against the NEXT site before using it there.* The trailing case was
+pre-registered, the leading one was not, **and they are the same class — a boundary rule written on one
+side is half a boundary rule.** Fixed with `_preceded`, and with the residual limit **stated**: a match
+preceded by `(` is still a boundary, because requiring more would refuse `$(n-1)(n+3)$` itself.
+
+⌗ **The refusal message was wrong again** (still "prefix" once a match could extend either way). *Fourth
+reporting defect of the round, all four in the reporting and none in the arithmetic. **I write the
+measurement correctly and describe it wrongly** — consistent enough now to be the finding rather than
+four accidents.*
+
+**What the refusal bought:** the receipt asserts `2 × (its per-family dimension) = the paper's parsed
+total` — the derivation the refusal asked for, not a looser pattern.
+
+⌗ *Standing: the substitution control **bites on nothing** across four controls; and `OWED` again fell
+by three for two repairs (`15 = 18 − 2 − 1`), the third site owed a read of its own. Second receipt in
+a row where the gate's file-level reading inflates the apparent repair count by one.*
+
+---
+
+## `cc66.125` — 7 of the 9, and the file-level inflation is **confirmed by its absence**
+
+| | |
+|---|---|
+| sites | **7** of 9 (+1 bonus beyond the nine) |
+| `check_unread_figure` | `OWED` 15 → **13**, `CEILING` lowered, ratchet holding exactly |
+| fast job | green |
+
+⛭ **The pre-registered hazard fired on a live repair, not in a test.** Both receipts print
+`1 statement, 1 skipped as part of R=4\Lambda+\kappa\Theta, which is a different claim` — the exact
+case named before either receipt was touched.
+
+⛭ **The inflation is confirmed by its absence.** `cc66.123` retired 4 rows for 3 repairs, `cc66.124`
+3 for 2; here **2 for 2, `13 = 15 − 2` exactly.** Both of these receipts carried a *single* site, so
+there was nothing for the gate's file-level reading to reclassify. ⇒ *The inflation appears precisely
+when a repaired file carries other sites, and never otherwise — which makes it the diagnosis rather
+than a coincidence of counts.* ⌗ **A mechanism that predicts where it will NOT appear is better
+evidenced than one that only explains where it did.**
+
+⌗ *Two rows removed, one added: a site left the class, the `r7143` effect again.*
+
+⛔ **One of my own bugs, caught by the instrument rather than by a paper.** The `12/\alpha^{2}` pattern
+reached the file as `r'12/\alpha\^\{2\}'` — regex `\a` is BEL, not a literal backslash — so it matched
+nothing. The reader refused with *"does not match the paper at ALL … a DRIFTED attribution, or the
+pattern does not match how the paper writes it"*. **That is the message `cc66.123` split out of the
+incoherent one, and it paid for itself one revision later by naming the right half.**
+
+⌗ *The substitution control still bites on nothing. These two sites take no substitution — paper and
+receipt share the variable — so no control was added rather than a vacuous one.*
+
+---
+
+## ⚑ `cc66.126` — `red_carry`'s own ledger **confirms** `r7047` and prices it: carried 70, cleared 70, **37+ self-contradicting pairs**
+
+The tolerance job on `70e1296c` printed the `PO-68` ledger history for what is red, and it is the
+strongest evidence yet — produced by the corpus's own instrument, not by me:
+
+> `⚠ CONTRADICTED  tolerance Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py`
+> `carried 70, cleared 70, on 4 line(s) over 122.6 h: …5tjf0b, …6awafl, …wgcmvt, main`
+> `red at e0322606e7 on main, green at e0322606e7 on …-6awafl -- nothing it reads differs between the two`
+> `red at 5a5eb7fc2a on main, green at 2e1ded5051 on …-5tjf0b -- nothing it reads differs between the two`
+> `red at 19158dcf1e on …-wgcmvt, green at 096098dd76 on main -- nothing it reads differs between the two`
+> `... and 34 more such pair(s)` · `139 pair(s) UNCHECKABLE: a pushed tree is no longer fetchable`
+
+### ⓵ This CONFIRMS the adjudication, and that is the first thing to say
+
+`r7047` closed this as *"not a slow solve, an event"* — a condition on a hosted runner that no tree the
+corpus controls produces. **Thirty-seven-plus pairs reading red on one line and green on another with
+`nothing it reads differs between the two` is exactly that claim, measured.** ⇒ *So the cause stays
+closed and I am not reopening it. This is a sixth confirming reading, not a reading that points the
+other way.*
+
+### ⓶ ⛔ What is NEW is not the cause but the COST, and it is the corpus's own rule
+
+**Carried 70 and cleared 70, over 122.6 hours, on four lines including `main`** — and `red_carry`
+labels it `⚠ CONTRADICTED` itself. `sweep_tolerances.py:583`, written by node 70 for the `JUDGED`
+mechanism, states the principle:
+
+> *"a gate that is red for a known reason is a gate that gets ignored."*
+
+⇒ ***The adjudication closed the item and left the gate wired to it.*** That is not the cause being
+wrong; it is a finished finding still producing red. ⌗ *And the `JUDGED` mechanism already exists for
+exactly this shape — a judgement bound to the receipt's git blob, lapsing the moment the receipt
+changes — so the remedy is the instrument's own and needs no new machinery.*
+
+⚠ **I am recording this and routing the GATE question, explicitly not the cause.** `r7047` said not to
+route the Q1 item again unless a reading points the other way, and this one does not. *The question
+"why is Q1 red" is closed. The question "should a closed finding keep the gate red on four lines" is a
+different one, it is node 70's instrument, and the routing call is 66's.*
+
+### ⓷ ⌗ And the ledger's evidence base is eroding
+
+**`139 pair(s) UNCHECKABLE: a pushed tree is no longer fetchable.`** More than three times as many
+unusable pairs as usable ones, because the branches were deleted. ⇒ *The contradiction evidence is the
+thing that makes this class legible, and it is being lost at that rate as lines are reaped.* Reported
+as an observation about the instrument's reach, not as a request.
+
+---
+
+## ⛔ `cc66.127` — the discriminator answered: **`H` and a line written identically to it differ as objects in CI**
+
+`a86cac9d`, `P15_expansion_law`:
+
+> `⛔ COEFS: R23=2/3 Bc2=3/4 Hc=3/4 H2=27/64 H2r=1/3 lim=27/64 rate=1/3`
+
+In one process: `sp.Rational(2,3)` → **2/3**; `H` **rebuilt** from it and `Bc` → **`H2r = 1/3`**,
+correct; `H`'s own coefficient → **`Hc = 3/4`**; `H2 = lim = 27/64 = (3/4)²·(3/4)`.
+
+**`Bc` cannot be the difference** (`Bc2 = 3/4`, and a differently-built `Bc` would leave the ratio
+`H/(Bc·coth(Bc τ))` non-rational rather than a bare `3/4`). **And `H` has exactly one binding** —
+checked across every binding form this time, not an anchored `^H=` grep, because *reading a proxy for
+the thing* is the error I have recorded three times this round.
+
+⇒ **The executed line carries `3/4` where every git object carries `2/3`**: my head, `main`,
+`refs/pull/261/merge`, and never `3/4` anywhere in its history.
+
+⌗ **Reported as what the instrument says, with no mechanism named.** I have no measurement of the
+runner's checkout; the constructible candidates were already rejected (a stale `__pycache__` cannot
+apply to a script run as `__main__`; a three-way merge conflicts rather than silently mangling). *If it
+is real it bears on every receipt, which is why it goes to 66 instead of being patched around.*
+
+### The repair that WAS mine
+
+`H`'s leading `2/3` was a typed literal beside a quantity the file derives. Now
+`H = simplify(diff(r_c, tau)/r_c)` — `d(ln r)/dτ`, no typed prefactor. The remaining `2/3` is the scale
+factor's exponent, which check (2) and its control force from the `E=1` geodesic rather than assume.
+
+⇒ *It is also a test of the reading rather than a workaround: the disagreeing literal no longer exists.
+**If CI still reports a wrong `H2`, the "source differs" reading is wrong and I will say so.***
+
+---
+
+## ⛔ `cc66.128` — 8 of the 9, and a **silent wrong answer** in `paper_formula`
+
+| | |
+|---|---|
+| sites | **8** of 9 — the `-6H²` limit form, exactly the shape `cc66.123` predicted |
+| `check_unread_figure` | `OWED` 13 → **12**, `CEILING` 12, site **left the class** (1 removed, 0 added) |
+| fast job | green |
+
+**The defect:** `_subscripts` stripped every non-alphanumeric, so `X_{+}` and `X_{-}` both became `X_`
+— and `\alpha_{+}-\alpha_{-}` parsed to `alpha_-alpha_`, **identically zero.** A difference of two
+distinct quantities reading as vanishing: the one outcome a parse must never produce. *Found while
+extending the dialect, not by a receipt going green for the wrong reason.*
+
+**Fixed:** `+`/`-` are named `plus`/`minus`, **and any subscript that strips to nothing is refused** —
+the general repair, so anything else that would collapse to a bare `X_` stops rather than colliding.
+
+⚑ **Latent, not active — measured.** All **16** receipts importing `paper_formula` were run after the
+fix: **16 of 16 pass.** No shipped repair read a sign-subscripted name. *"A silent wrong answer existed
+in the instrument" and "a result was wrong" are different claims; only the first is true.*
+
+⌗ **New `\dot` convention**, naming a dotted symbol rather than differentiating — **and its first guard
+was too narrow**, letting `\dot{(ab)}` through as `(ab)_dot`. Caught by testing the guard against the
+case it was written for; replaced by an allow-list.
+
+⚑ *Fifth time this round a check was narrower than its claim. The first four were in the reporting;
+**this one and the boundary rule were in the logic**, which is the worse class.*
+
+---
+
+## ⛔⛔ `cc66.129` — **the cause is `G51`'s seed, and `cc66.127`'s attribution was wrong**
+
+**Correction first.** `cc66.127` said the `P15_expansion_law` red was *"a fact about the runner and not
+about the corpus"*. **Wrong attribution.** The content was right — the executed source carried `3/4` —
+but the mechanism is a sibling receipt deliberately writing it.
+
+`G51_the_twelve_can_all_exit_non_zero…` holds:
+
+```python
+('P15_expansion_law', 'H=sp.Rational(2,3)*Bc*sp.coth(Bc*tau)',
+ 'H=sp.Rational(3,4)*Bc*sp.coth(Bc*tau)', 'the rate coefficient 2/3 -> 3/4'),
+```
+
+It writes that to the **live tracked file**, runs it to prove `rc = 1`, and restores it in a `finally`,
+with a subprocess of up to 300 s in between. `run_all_receipts` runs **four at a time** ⇒
+**`P15_expansion_law` can be scheduled inside the seed window and execute the seeded file.**
+
+⇒ **A race between two receipts over one file. Five CI reds, four heads.** It explains every
+observation that would not fit: never reproducible here, moving with the scope, and the apparent
+clearing when `main` was merged — which I declined to call a cause.
+
+### The diagnostic found it, and the "impossible" triple was the fingerprint
+
+`Hc = 3/4` with `R23 = 2/3` and `H2r = 1/3`, in one process, is exactly what a seed matching line 57's
+string and not the diagnostic's own literals produces. *What I read as a contradiction was the
+signature.*
+
+### `G51`'s anchor, and the coupling
+
+My repair removed the seeded literal, so the anchor count went to 0 and `G51` correctly reported it.
+**Repointed** at the scale factor's exponent — the quantity the derived `H` is built from — so it is
+the same defect reaching the same checks: seeded `rc = 1` with `[FAIL] eq:rate`, restored `rc = 0`.
+
+⚑ **A gate-testing receipt anchors on another receipt's exact source line, so repairing a literal
+retires a seed elsewhere.** *Every site this round repairs is a potential seed anchor.*
+
+### ⛔ Routed, not changed
+
+`G51`'s seed-the-live-file design is not mine to change: seeding a copy collides with its own rule that
+a registered receipt must run where it is registered. Candidates (a lock the runner respects; the
+runner treating a seeding receipt as exclusive) are the shared instrument's.
+
+---
+
+## `cc66.130` — `r7163` answered: **`PO-82` is dischargeable**, and its forcing argument needs one correction
+
+`r7163` opened `PO-82` for the impossible coefficient and set its discharge condition as *a measurement
+on a RED run separating the two readings*. **`cc66.129` (head `3b5885cd`) met it and landed between
+66's reading of `cc66.122` and its writing of `r7163`**, so the row was opened without it. The cause is
+`G51`'s seed writing the live tracked file while `run_all_receipts` runs four at a time.
+
+### ⛔ The correction, and it matters for whoever reads the row next
+
+The row's forcing argument runs through `R23`: *"`H2` is forced … to be `R23²·Bc2 = 1/3`, and a run
+that printed `27/64` beside `R23=2/3` reported two incompatible things about one process."*
+
+⇒ **The forcing does not go through `R23`.** `R23` is `sp.Rational(2, 3)` *written in the diagnostic*,
+and `cc66.120`'s own comment in the file says so. The seed replaced **one exact string**, covering
+line 57 and neither `R23` nor `_Hr`. ⇒ *All three values came from one consistent file — the seeded one
+— so **nothing incompatible was ever reported about one process.*** The forcing quantities are **`Hc`**
+(H's own coefficient) and **`H2r`** (the rebuild): `Hc = 3/4` with `H2r = 1/3` is what cannot be true of
+one source.
+
+⌗ *Routed to 66 to restate, because a row that names a contradiction which is not there will send the
+next seat looking for it.*
+
+⌗ **And 66's watch-item could not have fired.** "Would show up in a receipt with no `sympy` in it at
+all" is a sound discriminator for the runner reading, but the seed targets one exact line in one
+receipt, so no other receipt was ever at risk.
+
+### ⌗ On the FAIL tail, said plainly
+
+66 raised it with `keep_output` — the SLOW path's own instrument, five lines below the FAIL path in the
+same function. *I had read that function and still routed the weaker of the two policies it already
+contained: I framed the choice as "more lines" when it was "the failing lines".* **And it is already
+earning — `cc66.129`'s cause came out of a `[FAIL]` line the old tail would have replaced with a
+banner.**
+
+---
+
+## ⛔ `cc66.131` — the seed race spans **four lines including `main`**, by the ledger's own count
+
+`3b5885cd`: `G51` **cleared** (the anchor repoint worked); `P15_expansion_law` carried red, with
+
+> `⚠ CONTRADICTED suite P15_expansion_law.py` — `carried 4, cleared 3, on 4 line(s) over 4.2 h:`
+> `…5tjf0b, …6awafl, …wgcmvt, main`, six pairs of `nothing it reads differs between the two`.
+
+⇒ **Not this branch's problem and never was.** The pairs sit on two other seats' lines and on `main`.
+`G51`'s seed races every line that runs the suite. ⌗ *Six pairs in 4.2 h against `Q1`'s 37 in 122 — an
+order of magnitude more frequent.*
+
+**What the repoint did:** restored `G51`'s test, nothing more. Same single-subprocess window, so the
+race is untouched. *Stated explicitly because "`G51` is green again" could be read as the race being
+closed.*
+
+**And the victim has no defence:** the file on disk is briefly wrong while the suite is entitled to run
+it; no diagnostic, derivation or control inside `P15_expansion_law` changes that. ⇒ *The fix is
+coordination and belongs to the shared instrument — the runner treating a seeding receipt as exclusive,
+or a lock it respects. Seeding a copy stays ruled out by `G51`'s own "run where registered" rule.*
+
+⚑ *And the evidence is now the instrument's own rather than my reading of a log — the form `PO-82` was
+said to be missing. The row asks why one process reported two things; the answer is that **two
+processes wrote and read one file.***
+
+---
+
+## ⛭ `cc66.132` — the nine-site `DERIVATION` block **closes**
+
+| | |
+|---|---|
+| repaired | **8** of 9, plus node `70`'s site in the same pass, one template |
+| named, not repaired | **1** — `(\ell_P/a)^2`, because the paper states a **series** and not a term |
+| `check_unread_figure` | `OWED` **31 → 10**, ceiling lowered with it at every step |
+| fast job | green at every step |
+
+**`70`'s site:** the order rule `2k-4` parsed and then **solved** (`k=3`, dimension six), with a control
+that a rule reading `2k` would give `k=1`. *The receipt already inverted the rule — what it carried was
+the rule, and now the rule comes from the paper.*
+
+**The 9th, measured rather than argued:** the paper writes `$a^{-1}\sum_j f_j(\ell_P/a)^{j}$`, so
+`(\ell_P/a)^2` is the `j=2` term; `inline` returns *1 match, part of a longer expression*, and a `\sum`
+with a free index is not a closed form. The check's own assertion is unchanged.
+
+### ⛔ The gate's `OWED` now understates by one
+
+That site reads `READS-PAPER` **only because the file opens the paper** for the repair beside it. ⇒
+*`cc66.123`/`.124` showed the file-level partition inflating a credit; here it **loses a debt**.* `OWED`
+is 10 where the honest figure is 11. Carried in the row's note and the ceiling comment; the per-site
+partition is the gate's design and is routed.
+
+### Standing, undressed
+
+**`Q3` does not hold:** five substitution controls, **none** caught a wrong substitution that would
+otherwise have passed. *Pre-registered that this would be said.*
+
+**Six instrument defects**, all mine from `r7157`, all fixed — four in the reporting, two in the logic.
+**Every one found by testing the instrument against the next site before using it there; none by a
+paper.**
+
+### `cc66.132` addendum — the repointed seed reproduces the old one's signature **exactly**, and the race count is now 7/4 over 7 hours
+
+`eda1095c`'s plain suite (343 pass, 1 fail of 344) carried `P15_expansion_law` again, and its diagnostic
+printed:
+
+> `⛔ COEFS: R23=2/3 Bc2=3/4 Hc=3/4 H2=27/64 H2r=1/3 lim=27/64 rate=1/3`
+
+**That is byte-for-byte the signature the OLD seed produced** — and the seed had already been repointed
+at `3b5885cd`, with `H` derived since `c9ea87e4`. ⇒ *With `r_c = A·sinh(B_c τ)^{3/4}` the derived
+`H = d(ln r_c)/dτ` carries the prefactor `3/4`, so `H2 = (3/4)³ = 27/64`.* **The exponent seed reaches
+`H`'s coefficient by derivation and lands on the same three numbers the prefactor seed reached by
+assignment.**
+
+⚑ *That is a measurement I did not plan and it confirms a claim I made when repointing the anchor —
+"the same defect reaching the same checks". I asserted it from one `rc=1` and a `[FAIL]` line; this is
+the stronger form, and it arrived by accident rather than by design.*
+
+⌗ **And the ledger's count has moved**: `carried 7, cleared 4, on 4 line(s) over 7.0 h`, up from 6
+pairs over 4.2 h, with `10 pair(s) UNCHECKABLE` now. *The race is steady, not decaying, and its
+evidence is being reaped at roughly the rate it accumulates.*
+
+⇒ *No action: the cause is established, the check is already named once on the PR, and the two newer
+heads (`5717e5f6`, `1f1513b6`) are green.*
+
+---
+
+## ⛔⛔ `cc66.133` — `G50` and `G51` are **mutually incompatible under parallel execution**
+
+`7016753e`'s tolerance job: exit 2, nothing flagged, and the unmeasured receipt is **not**
+`P15_expansion_law` — it is **`G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry`**:
+
+> `FAILED: the runner's stamp does not match the digest computed here`
+
+`G50` recomputes `TREE-DIGEST` — *"a hash of everything a receipt can READ"* — and compares it to the
+runner's stamp. ⌗ *Ruled out first: `sweep_tolerances` writes only logs and a temp seed under `tmp`,
+never a tracked source.* ⇒ **The mismatch means the tracked tree genuinely moved between the stamp and
+the recomputation, and `G51` seeding `P15_expansion_law.py` is exactly that.**
+
+### The statement of the finding
+
+**`G51` mutates a tracked file during the run; `G50` asserts no tracked file moves during the run.**
+⇒ *They cannot both pass reliably in one parallel run — incompatible by design, colliding by
+scheduling coincidence.* **That is why it reads as a flake: the collision is intermittent, the
+incompatibility is not.**
+
+⌗ **Three independent instruments, one cause:** the receipt's own diagnostic (`Hc=3/4`, `H2r=1/3`);
+`red_carry`'s `⚠ CONTRADICTED` on four lines including `main`; and `G50`'s digest mismatch. *The first
+took the whole round to read. The third was in the tree the entire time, failing, with a message that
+says exactly what happened.*
+
+⇒ **Routed, not taken.** The choice is narrower than it looked: not "make `G51` safer" but *which of
+two receipts is allowed to be true during a parallel run*. Scoping `G50`'s claim would weaken the only
+detector the corpus has for this class, so serialising the mutating receipt is the better reading —
+but it is the shared instrument's call.

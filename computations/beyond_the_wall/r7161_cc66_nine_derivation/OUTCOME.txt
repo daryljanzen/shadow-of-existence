@@ -1,0 +1,237 @@
+r7161+cc66.123 -- OUTCOME of the first DERIVATION pass, against the predictions as written
+
+  SCOPE DONE: 3 of 9 sites, all in P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_is_a
+  _convention_and_the_residue_is_the_absorbed_constant.py.  The instrument is new, so one receipt
+  first and the rest on the proven template.
+
+  THE INSTRUMENT: corpus/paper_formula.inline(tex, pattern, locals_) -> (expr, kept, skipped).
+  Reads an expression the paper states INLINE in prose, parses EVERY occurrence through the existing
+  dialect, and requires them to agree AS EXPRESSIONS.  Returns the counts rather than swallowing them.
+
+  Q1  HOLDS for the three, AND IS REFUTED FOR A FOURTH -- which is the useful half.
+        2(n-1)(n+3)   kept 2, skipped 0, agreeing
+        n(n+2)-2      kept 1, skipped 0
+        n(n+2)        kept 2, SKIPPED 1   <- the prefix inside `n(n+2)-2`, as pre-registered
+        R=4\Lambda    kept 1, SKIPPED 1   <- the prefix inside `R=4\Lambda+\kappa\Theta`
+        12/\alpha^{2} kept 1, skipped 0
+      => BOTH pre-registered hazards fired on live data, on the paper, not in a test.
+      -6H^{2}  REFUSED, every match a prefix.  The paper prints
+         $K_{ij}K^{ij}-K^{2}=-6H^{2}+6(\dot\beta_+^2+...)$
+      so -6H^2 is the ISOTROPIC LIMIT of a printed expression and not a figure the paper states on its
+      own.  Pattern-matching it would have attributed a derived limit to the paper as a quotation.
+      ** This is the condition the prediction named for abandoning the template rather than widening
+      it: the site needs the paper's FULL expression plus the stated operation (a limit, not a
+      substitution).  Named, not absorbed. **
+
+  Q2  HOLDS.  Same checks as before plus three substitution controls; the receipt exits 0.
+
+  Q3  DOES NOT HOLD, AND IS REPORTED AS THAT.  The substitution control BITES ON NONE of the three:
+      no wrong substitution (m = n, m = n+2) matched any of the paper's three expressions.
+      ** So on this receipt the control is honest bookkeeping and caught nothing, which is what the
+      prediction said would be said. **  It still earns its place -- it is the difference between
+      asserting that two polynomials agree and asserting that m = n+1 is what relates them -- but no
+      claim is made that it found a defect here.  Open on the remaining six.
+
+  Q4  PARTIAL, AS SCOPED.  check_unread_figure OWED 22 -> 18, CEILING lowered 22 -> 18.
+      ** And three repairs retired FOUR rows, which is not three repairs and a bonus. **  The fourth
+      ("the 1/m coefficient is exactly 15/4") still carries its literal; it changed verdict only
+      because the FILE now opens the paper, and the gate decides READS-PAPER from the file's own
+      source.  Recorded as READS-PAPER with that said in its row, and owed a read of its own.
+      The honest reading of the fall is 18 = 22 - 3 - 1.
+
+  Q5  HOLDS, AND FOUND A DEFECT IN THE INSTRUMENT'S OWN REPORTING.  Perturbing `2(n-1)(n+3)` to
+      `2(n-1)(n+4)` in a scratch copy of the paper makes the receipt exit 1; restoring it restores
+      exit 0.  ** But the refusal SENTENCE was wrong: it read "matches 0 time(s) and every one of them
+      is a PREFIX", which is incoherent at zero and would send a reader looking for a longer
+      expression that does not exist. **  Zero matches (a DRIFTED attribution, or a pattern that does
+      not match the paper's spelling) and all-skipped (the paper states it only inside something
+      longer) are different findings and were one message.  Split into two, each verified.
+      => The perturbation test earned its turn by breaking the instrument rather than the receipt.
+
+  Q6  HOLDS.  No measurement and no tolerance changed; only the paper side moved from literal to
+      parsed, plus the new controls.
+
+  WHAT IS LEFT: 6 of the 9 (five receipts), one of which (-6H^2) is now known to need the limit form
+  rather than the substitution form.  70's `2k-4` site needs `k` declared -- the dialect refused it
+  strictly rather than guessing, which is the behaviour the shared template should keep.
+
+--------------------------------------------------------------------------------------------------
+r7161+cc66.124 -- SECOND PASS: 5 of 9, and the instrument's boundary rule was half a rule
+
+  SITES DONE: 5 of 9.  Added P10_the_thermal_condition_is_helicity_blind... (2 sites).
+  check_unread_figure OWED 18 -> 15, CEILING lowered to match.  Fast job green.
+
+  ** THE DEFECT, AND IT WOULD HAVE ANSWERED SILENTLY. **  `_extends` looked only at the character
+  AFTER a match, so the next receipt's pattern `(n-1)(n+3)` came back kept=2, skipped=0 against a
+  paper that writes `2(n-1)(n+3)` in both places.  That is not a refusal and not a disagreement:
+  it is the degeneracy WITHOUT its factor of two, attributed to the paper as though printed.
+  => Found by testing the instrument against the NEXT site before using it there, not by the site
+     passing wrongly.  The trailing case was pre-registered; the leading one was not, and they are
+     the same class.  ** A boundary rule written on one side is half a boundary rule. **
+  FIXED: `_preceded` rejects a match extended to its left.  STATED LIMIT, named rather than left
+  implicit: a match preceded by `(` is still treated as a boundary, because requiring more would
+  refuse `$(n-1)(n+3)$` itself -- so a receipt citing a parenthesised sub-expression gets no
+  protection from this rule and must be read by hand.
+  AND THE MESSAGE WAS WRONG AGAIN: it still said "prefix" once a match could be extended either
+  way.  Now "PART of a longer expression -- extended on the left, the right or both".
+  ** Fourth reporting defect of the round and the fourth to be in the reporting rather than the
+  arithmetic.  The pattern is consistent enough to be the finding: I write the measurement
+  correctly and describe it wrongly. **
+
+  Q1  REFUTED FOR A SECOND SITE, usefully.  `(n-1)(n+3)` is refused: the paper states the TOTAL
+      degeneracy and never the per-family half.  => The receipt now asserts
+      `2 x (its per-family dimension) = the paper's parsed total`, which is the DERIVATION the
+      refusal asked for rather than a looser pattern.  The claim the file makes is unchanged; what
+      changed is that the paper side is read and the half is derived from it.
+  Q3  STILL BITES ON NOTHING.  Four substitution controls now, none has caught a wrong
+      substitution that would otherwise have passed.  Reported as bookkeeping, as predicted.
+  Q4  OWED 18 -> 15, and again THREE rows retired for TWO repairs: 15 = 18 - 2 - 1.  The third
+      site (the floor's two FIVEs) still carries its figures and is owed a read; it changed
+      partition only because the file now opens the paper.  ** Second receipt in a row where this
+      gate's file-level reading inflates the apparent repair count by one. **
+  Q6  HOLDS.  No measurement or tolerance moved.
+
+  REMAINING: 4 of 9 -- P10_the_degeneracy_needs_r_constant (R = 12/alpha^2),
+  P10_the_descent_is_free (R = 4Lambda, one real occurrence and one prefix of R=4Lambda+kappa Theta),
+  P10_the_subtraction_is_at_operator_dimension (the (l_P/a)^2 scaling; 70's `2k-4` site is here),
+  P10_the_vertex_numbers (-6H^2, now KNOWN to need the limit form rather than the substitution form).
+
+--------------------------------------------------------------------------------------------------
+r7161+cc66.125 -- THIRD PASS: 7 of 9, the R=4Lambda hazard fires on a live repair, and the
+                  file-level inflation is CONFIRMED by its absence
+
+  SITES DONE: 7 of 9.  Added P10_the_degeneracy_needs_r_constant (12/alpha^2) and
+  P10_the_descent_is_free (R=4Lambda).  A bonus site beyond the nine was parsed in the same pass:
+  the degeneracy receipt's own `Lambda+radiation: R = 4*Lambda`.
+  check_unread_figure OWED 15 -> 13, CEILING lowered to match.  Fast job green.
+
+  ** THE PRE-REGISTERED HAZARD FIRED ON A LIVE REPAIR, NOT IN A TEST. **  Both receipts now print
+  `1 statement, 1 skipped as part of R=4\Lambda+\kappa\Theta, which is a different claim`.  That is
+  the exact case the PREDICTION named before either receipt was touched: a pattern loose enough to
+  match the trace-coupled form would have read it as a restatement of the vacuum one and agreed with
+  itself.
+
+  ** AND THE FILE-LEVEL INFLATION IS CONFIRMED BY ITS ABSENCE, WHICH IS THE BETTER EVIDENCE. **
+  cc66.123 retired 4 rows for 3 repairs and cc66.124 retired 3 for 2.  Here: 2 rows for 2 repairs,
+  13 = 15 - 2, exactly.  These two receipts each carried ONE site, so there was nothing for the
+  file-level reading to reclassify.  => The inflation appears exactly when a repaired file carries
+  OTHER sites and never otherwise, which is the diagnosis rather than a coincidence of counts.
+
+  ⌗ Two rows were removed and only ONE added: one site LEFT THE CLASS, because with the figure
+  parsed the label is an f-string and carries no literal for the instrument to see.  The r7143
+  finding again -- a pin repaired properly leaves the class rather than earning a better verdict.
+
+  ⛔ A TRANSLATION BUG, CAUGHT BY THE INSTRUMENT AND NOT BY A PAPER: the first version of the
+  `12/\alpha^{2}` pattern reached the file as `r'12/\alpha\^\{2\}'`, where regex `\a` is the BEL
+  character rather than a literal backslash, so it matched nothing.  The reader REFUSED with "does
+  not match the paper at ALL ... a DRIFTED attribution, or the pattern does not match how the paper
+  writes it" -- which is exactly the message that distinguishes the two, and it named the second.
+  *The cc66.123 split of that message into two cases paid for itself one revision later.*
+
+  Q3  STILL BITES ON NOTHING.  Four substitution controls, none has caught a wrong substitution.
+      These two sites take no substitution at all (the paper and the receipt share the variable), so
+      no control was added for them rather than adding a vacuous one.
+
+  REMAINING: 2 of 9 -- P10_the_subtraction_is_at_operator_dimension (the (l_P/a)^2 scaling; 70's
+  `2k-4` site is in the same receipt, and r7161 asked for one template, so they go together), and
+  P10_the_vertex_numbers (-6H^2, known since cc66.123 to need the limit form).
+
+--------------------------------------------------------------------------------------------------
+r7161+cc66.128 -- FOURTH PASS: 8 of 9, the LIMIT form, and a SILENT WRONG ANSWER in the dialect
+
+  SITES DONE: 8 of 9.  P10_the_vertex_numbers (-6H^2) is the site cc66.123 named as needing a
+  different shape, and it needed exactly that: the paper prints
+  K_{ij}K^{ij}-K^{2}=-6H^{2}+6(\dot\beta_{+}^{2}+\dot\beta_{-}^{2}) and -6H^2 is its ISOTROPIC
+  LIMIT.  The whole expression is parsed and the limit applied to the PARSED side as well as the
+  receipt's own, plus a NON-VACUITY control (the paper's expression is not already isotropic).
+  -6H^2 is typed nowhere.  check_unread_figure OWED 13 -> 12, and the site LEFT THE CLASS: one row
+  removed, NONE added.
+
+  ⛔⛔ ** A SILENT WRONG ANSWER IN THE DIALECT I WROTE AT r7157, FOUND WHILE EXTENDING IT. **
+  `_subscripts` stripped every non-alphanumeric from a subscript, so `X_{+}` and `X_{-}` BOTH became
+  `X_`.  Measured on the shipped dialect:
+      \alpha_{+}            -> alpha_
+      \alpha_{-}            -> alpha_
+      \alpha_{+}-\alpha_{-} -> alpha_-alpha_        ** IDENTICALLY ZERO **
+  => A difference of two distinct quantities would have parsed as vanishing.  Not a refusal and not
+     a disagreement: the one outcome a parse must never produce.
+  FIXED two ways, the second being the general one: `+` and `-` are NAMED (`plus`, `minus`) because a
+  sign subscript labels a thing and is not an index; and ** any subscript that strips to NOTHING is
+  now REFUSED **, so anything else that would collapse to a bare `X_` stops the parse instead of
+  colliding with its sibling.
+  ** AND IT WAS LATENT, NOT ACTIVE -- MEASURED RATHER THAN ASSUMED. **  All 16 receipts that import
+  paper_formula were run after the fix: 16 of 16 still pass.  No shipped repair was reading a
+  sign-subscripted name, so nothing green was green for this reason.  *Said precisely because
+  "a silent wrong answer existed" and "a result was wrong" are different claims.*
+
+  NEW CONVENTION: `\dot`.  `\dot\beta_{+}` -> `beta_dot_plus`, in the shape `_tilde` already uses --
+  the dialect NAMES a dotted symbol rather than differentiating, and a receipt that wants the
+  derivative computed must compute it.
+  ⛔ AND THE FIRST DRAFT OF ITS GUARD WAS TOO NARROW: it looked for an operator inside the braces,
+  which let `\dot{(ab)}` through as `(ab)_dot` -- a name asserting that the derivative of a product
+  is a symbol.  Caught by testing the guard against the case it was written for.  Replaced by an
+  allow-list: `\dot{...}` must hold ONE NAME, and every other form is refused.
+  ** Fifth time this round that my check was narrower than my claim.  The four before it were in the
+  reporting; this one and the boundary rule were in the logic. **
+
+  Q3  The substitution control still bites on nothing.  This site takes a LIMIT rather than a
+      substitution, so it carries a non-vacuity control instead -- which passes, meaning the limit
+      is real rather than that it caught an error.  Stated that way rather than counted as a catch.
+
+  REMAINING: 1 of 9 -- the (l_P/a)^2 scaling in P10_the_subtraction_is_at_operator_dimension, where
+  node 70's `2k-4` site also lives.  Per r7161's one-template-rather-than-two they go together.
+
+--------------------------------------------------------------------------------------------------
+r7163+cc66.132 -- THE BLOCK CLOSES: 8 of 9 repaired, the 9th NAMED, and 70's site done in the same pass
+
+  FINAL: 8 of the 9 DERIVATION sites read their paper and assert agreement under the stated
+  operation.  The 9th is NAMED and not repaired.  Node 70's `2k-4` site, in the same receipt as the
+  9th, is DONE through the same template -- one template, as r7161 asked.
+  check_unread_figure OWED 31 -> 10 across the block.  Fast job green at every step.
+
+  ⓵ 70'S SITE, by the same instrument: the section's order rule is PARSED (`2k-4`, 1 kept and 1
+  skipped as part of a longer expression) and then SOLVED -- k = 3, operator dimension six -- with a
+  control that a rule reading `2k` would give k = 1 and dimension two.  The receipt already INVERTED
+  the rule rather than hard-coding six, which is why it was DERIVATION and not PARSE: what it carried
+  was the RULE, and now the rule comes out of the paper.
+
+  ⓶ THE 9th IS NAMED, AND THE REASON IS MEASURED RATHER THAN ARGUED.
+      `(i) the interacting quartic energy is EXACTLY (l_P/a)^2 times the free tower's scale`
+      The paper does not state `(\ell_P/a)^2`.  It writes  $a^{-1}\sum_j f_j(\ell_P/a)^{j}$  -- so the
+      figure is that expansion's j=2 TERM.  `inline` on `(\ell_P/a)` returns 1 match, EVERY ONE part
+      of a longer expression, because it is followed by `^{j}`; and a `\sum` with a free index is not
+      a closed form this dialect can hold.
+      => This is the condition the PREDICTION set for naming a site rather than widening the template
+      until it fits.  What the check asserts is unchanged -- the ratio of two scales the file derives
+      -- so nothing is weaker than before; what is absent is a paper-side read, absent because the
+      paper states a SERIES and not a term.
+
+  ⓷ ⛔ AND THE GATE'S COUNT NOW UNDERSTATES THE DEBT BY ONE, WHICH IS THE BLOCK'S LAST FINDING.
+      That 9th site is recorded READS-PAPER **only because the FILE opens the paper**, for the repair
+      beside it.  check_unread_figure reads the partition off the FILE, so a repair elsewhere in one
+      file retires a site whose attribution was never checked.
+      ** cc66.123 and .124 showed this inflating the apparent repair count by one each; here it LOSES
+      a debt, which is the worse direction. **  The row carries that in its own note, the ceiling
+      comment carries it, and making the partition per-site is the gate's design and is routed.
+
+  PREDICTIONS, FINAL STATE
+   Q1  HOLDS for 8, REFUTED for 2 and both refutations were worth more than a repair: `-6H^2` needed
+       the limit form (done), `(\ell_P/a)^2` needs a series the dialect cannot hold (named).
+   Q2  HOLDS.  Every repaired receipt exits 0 with its checks plus the new controls.
+   Q3  ** DOES NOT HOLD, AND IS REPORTED AS THAT. **  Five substitution controls across the block and
+       NOT ONE caught a wrong substitution that would otherwise have passed.  The control is honest
+       bookkeeping here; it is the difference between asserting two polynomials agree and asserting
+       that the stated re-parameterisation relates them, and no claim is made beyond that.
+   Q4  OWED 31 -> 10.
+   Q5  HOLDS, and the perturbation test broke the INSTRUMENT rather than a receipt twice.
+   Q6  HOLDS.  No receipt's own measurement or tolerance changed anywhere in the block.
+
+  INSTRUMENT DEFECTS FOUND BY THE BLOCK, all in paper_formula, all mine from r7157, all fixed:
+    · the boundary rule was written on one side only -- `(n-1)(n+3)` read as the paper's when both
+      occurrences sit inside `2(n-1)(n+3)`;
+    · `X_{+}` and `X_{-}` both collapsed to `X_`, so `\alpha_{+}-\alpha_{-}` parsed as IDENTICALLY
+      ZERO (latent, not active: all 16 receipts re-run to show it);
+    · the `\dot` guard admitted `\dot{(ab)}` as `(ab)_dot`;
+    · and two refusal MESSAGES described the wrong condition.
+  ** Four of the six were in the reporting and two in the logic.  Every one was found by testing the
+  instrument against the next site before using it there, and none by a paper. **

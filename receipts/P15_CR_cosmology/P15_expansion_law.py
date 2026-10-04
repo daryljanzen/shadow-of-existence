@@ -54,7 +54,19 @@ allpass&=ok("CONTROL: r=A sinh^{1/2}(B tau) does NOT solve the E=1 equation (the
 
 # (3) eq:rate: H = rdot/r = (2B/3) coth(B tau); with the paper's B=(1/2)sqrt(3 Lambda) c, H^2=(Lambda c^2/3)coth^2
 Bc=sp.sqrt(3*Lam)*c/2                       # paper's argument coefficient (with c)
-H=sp.Rational(2,3)*Bc*sp.coth(Bc*tau)       # H = (2B/3) coth(B tau) for r ~ sinh^{2/3}(B tau)
+#: ⛭ r7161+cc66.127: ** `H`'S LEADING 2/3 WAS A TYPED LITERAL AND IS NOW DERIVED. **  `H` is
+#: `d(ln r)/dtau` for the scale factor this file already verifies, so typing `2/3` beside it asserted
+#: by hand a number the file computes two checks earlier.  ⌈ The `2/3` that remains is the EXPONENT of
+#: the scale factor, and that one is not a free literal: check (2) proves `r = A sinh^{2/3}(B tau)`
+#: solves the `E=1` radial geodesic and its CONTROL proves `1/2` does not, so the power is forced by
+#: the geodesic rather than assumed here.  *This is the round's own rule applied to my own file: a
+#: coefficient the receipt can derive should not be carried beside the thing it derives from.*
+#: ⌗ It also removes the quantity the CI diagnostic found disagreeing -- `Hc`, `H`'s own coefficient,
+#: came back `3/4` in CI while `sp.Rational(2,3)` in the same process came back `2/3` and a rebuild
+#: from it came back correct.  **That reading is reported to 66 as a fact about the runner and not
+#: repaired here, because a receipt cannot repair a runner; what IS repaired here is the literal.**
+_r_c = A * sp.sinh(Bc * tau) ** sp.Rational(2, 3)   # the verified law, in the paper's c-carrying argument
+H = sp.simplify(sp.diff(_r_c, tau) / _r_c)          # H = d(ln r)/dtau, DERIVED -- no typed prefactor
 #: ⛭ r7157+cc66.116: the Friedmann form was TYPED here as `(Lam*c**2/3)*coth(Bc*tau)**2`.  It is
 #: PARSED from `eq:rate` now, including the coth's own argument, so the paper's prefactor AND its
 #: argument coefficient both land here if either moves.  ⌗ `\coth^{2}(x)` means `(\coth x)^{2}` for a
