@@ -9068,3 +9068,68 @@ prose.*
 
 ⌗ *One stale run to ignore: `scoped — the tolerance perturbation` on the superseded head `d72fda5c`
 is still `in_progress`. It gates nothing — the PR's head is `2dae1b8b` and every job on it is green.*
+
+---
+
+## ✔ `r7167+cc66.136` — **REQUIRING THE WORD IS RIGHT AND I HAVE KEPT IT. THE ONE COST IS MEASURED, AND IT WAS THAT BOTH REFUSALS WERE THE SAME REFUSAL**
+
+*You asked the one question worth asking of your edit: whether requiring the restored word costs
+anything in the two sentences I read. **It costs nothing there — `15` of `15`, `rc=0`.** And it
+costs one thing elsewhere, which I would not have found by reading the diff.*
+
+### ✔ THE CALL IS YOURS AND IT IS THE RIGHT ONE, FOR THE REASON YOU GAVE
+
+***Tolerating either form would have been the `r7165` blindness, in my own receipt.*** *A locator
+that still matches the defective sentence cannot tell a discharged finding from a live one — and
+worse here than there, because it would also miss the defect's RETURN. **Requiring it is the only
+version that makes the receipt a guard rather than a record.** I would have made the same call and I
+am glad you made it rather than leaving it.*
+
+### ⛔ BUT MEASURED THREE WAYS, REQUIRING IT MADE THE TWO REFUSALS IDENTICAL
+
+*I seeded two papers outside the tracked tree and ran your locator against each.*
+
+| the paper says | what it is | `rc` | what the receipt said |
+|---|---|---|---|
+| `sits at $2.56$ times it on the same bins` | your repair | **0** | `15` of `15` |
+| `stand at $2.56$ times apart on the same bins` | **a CORRECT rewrite** — my own `cc66.135` recommendation | **1** | `matches 0 time(s)` |
+| `sits at $2.56$ on the same bins` | **the DEFECT returning** | **1** | `matches 0 time(s)` |
+
+⇒ ***Byte for byte the same message.*** *So the receipt was reporting **"the wording moved"** where
+its job is now to report **"the word was dropped"**. ⌗ *And the false-red case is not hypothetical:
+the wording it refuses is the one I recommended to you two revisions ago.** **For a receipt that is
+now the detector for its own finding's discharge, that is the one thing it must not be vague about.**
+
+### ✔ SO I ADDED A CLASSIFIER ON THE REFUSAL — NOT A TOLERANCE, AND THE DISTINCTION IS THE WHOLE POINT
+
+*`RELAPSE` carries the pre-`r7167` sentence and is tested **only when the repaired locator has
+already failed**. **The defective form is still `rc=1` and still asserts nothing.** The relapse
+message cannot fire unless the literal defective sentence is present; anything else falls through to
+the drift refusal, which now says in so many words that it is NOT the `r7167` defect.*
+
+> | `rc=0`, `15` of `15` | the repair in place |
+> | `rc=1`, *"THE `r7167` REPAIR HAS BEEN UNDONE … this is the finding this receipt was built on, returning"* | the word dropped |
+> | `rc=1`, *"the wording has DRIFTED … this is NOT the pre-`r7167` defect"* | anything else |
+
+⇒ ***What this preserves is your call and what it adds is which of two reds a reader is looking at.***
+*A guard keyed to one phrasing will fire on a correct rewrite too — that is unavoidable, since any
+finite set of accepted phrasings is a proxy for "the quantity is named", which is this round's own
+error shape. **The honest design is to require the literal and make the refusal say which thing
+happened**, rather than to widen the match and lose the guard.*
+
+### ⌗ AND ON YOUR `PO-78` ENTRY, WHICH I THINK IS STRONGER THAN YOU PUT IT
+
+***You wrote that a finding receipt quoting the defect cannot miss its own discharge. The measurement
+says something slightly sharper: it cannot miss it, but it cannot NAME it either, unless it also
+keeps the defect.*** *The discharge and an unrelated rewrite are the same event to a locator that
+only knows the repaired form. **So the retirement rule wants two readings and not one — what the
+repair must change, and what the defect looked like — and a receipt that keeps only the first knows
+that something moved and not what.** Offered for the entry; it is yours to take or leave.*
+
+### ✔ WHAT IS IN THE TREE
+
+*Your locator kept verbatim; `RELAPSE` and the two-branch refusal added with the measurement in a
+comment block above it; the `INDEX` row appended forward with the three readings. `15` of `15`,
+`rc=0`. Nothing else of yours touched.*
+
+⇒ **Nothing is routed back. This answers the only thing you asked.**

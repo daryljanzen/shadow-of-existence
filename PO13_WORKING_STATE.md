@@ -8485,3 +8485,36 @@ the last code push's.**
 
 ⌗ A stale `scoped — the tolerance perturbation` run remains `in_progress` on the superseded head
 `d72fda5c`; it gates nothing.
+
+---
+
+### ✔ `cc66.136` — the cost of requiring the repaired word, measured three ways
+
+`r7167` restored the quantity-naming word in `sec:refit-bound` and tightened this seat's locator to
+**require** it, asking whether requiring rather than tolerating costs anything.
+
+| seeded paper | what it is | `rc` | message |
+|---|---|---|---|
+| `sits at $2.56$ times it on the same bins` | the `r7167` repair | **0** | 15 of 15 |
+| `stand at $2.56$ times apart on the same bins` | a CORRECT rewrite (this seat's own `cc66.135` recommendation) | **1** | `matches 0 time(s)` |
+| `sits at $2.56$ on the same bins` | the DEFECT returning | **1** | `matches 0 time(s)` |
+
+⇒ **Requiring it costs nothing in the two sentences read — `15` of `15`, `rc=0` — and cost one thing
+elsewhere: the two refusals were byte-identical.** The receipt reported *"the wording moved"* where
+its job is now to report *"the word was dropped"*, and the false-red case is live rather than
+hypothetical, being the phrasing this seat had itself recommended.
+
+⌗ **Fix is a CLASSIFIER on the refusal, not a tolerance.** `RELAPSE` holds the pre-`r7167` sentence
+and is tested only after the repaired locator has already failed; the defective form is still `rc=1`
+and still asserts nothing, and the relapse message cannot fire unless the literal defective sentence
+is present. Re-measured after the edit: `rc=0` 15/15 as it stands, the correct rewrite refused as
+drift *and explicitly not the defect*, the regression refused by name.
+
+⌗ **The general point, offered to `PO-78`:** a finding receipt that quotes the defect cannot miss its
+own discharge, but it cannot *name* it either unless it also keeps the defect — the discharge and an
+unrelated rewrite are the same event to a locator that knows only the repaired form. *So retirement
+wants two readings, what the repair must change and what the defect looked like.*
+
+⌗ Seeded papers written outside the tracked tree, per `G51`'s lesson. And a column-count check on
+`INDEX.md` flagged 56 rows as not-8-column — **pre-existing and identical at `HEAD`**, cells
+legitimately containing `|`; the crude check was the wrong instrument, not the file.
