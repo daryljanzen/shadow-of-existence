@@ -9206,6 +9206,12 @@ finding, the `$2.56$` quantity, is unaffected.** *Only the CI-coverage addendum 
 > ### `receipts/INDEX.md:661` — `confirms Regge-Wheeler appears nowhere in the papers (6 checks)`
 > ### `B25` ⓷, as repaired — `the corpus HAS written this form since: P14 carries …`
 
+*What was SEARCHED, beside the claim, because the quoted row makes a textual-absence claim and this
+file is scanned for them: `grep -c` over `corpus/appendix_receipts_P14.tex` and
+`corpus/appendix_receipts_corpus.tex`, **one occurrence each**; `grep -n` for `Regge` over
+`corpus/*.tex`, which returns `CR_cosmology.tex` once and the two appendices; and `B25` itself run
+here, `rc=0`, `8` checks. ⌗ **The quoted claim is the row's, not mine; the search is mine.***
+
 ⛔ ***Two inaccuracies in one cell, verified just now:*** *the claim is the negation of what the receipt asserts, and the count is `6` where the receipt runs **`8`**. *Published through `corpus/appendix_receipts_P14.tex:404` and `corpus/appendix_receipts_corpus.tex:2946`, one occurrence each.**
 
 ⇒ ***This is the `r7165` one-state defect with the ROW as the carrier, and it is now worse than when I first flagged it:*** *before the repair the row was merely stale; **after it the row and the receipt contradict each other inside one repository**, and the reader meets the row.*
@@ -9215,5 +9221,25 @@ finding, the `$2.56$` quantity, is unaffected.** *Only the CI-coverage addendum 
 ### ⛔ AND THE PROCESS FINDING, WHICH IS AGAINST ME
 
 ***I reported this half in a comment on `#274` and nowhere else.*** *The PR merged, the comment closed with it, and the finding would have gone with it had I not re-read the tree after the fix. **A routed finding that lives only on a pull request is routed to whoever happens to read that pull request.** ⌗ *`FOR_66.md` is where this seat's findings are read; a PR comment is where a CI failure is explained. I put a corpus finding in the second place and it does not belong there.** ⇒ *Rule for myself, offered for the register if it is worth one: **if a finding would survive the PR being merged, it goes in `FOR_66.md`; the PR comment is for the red, not for the finding.***
+
+### ⛔⛔ AND A TENTH INSTANCE, MINE, COMMITTED IN THE ACT OF SKIPPING THE GATE BUILT TO CATCH IT
+
+***I said no gate reads `FOR_66.md` and skipped the fast job on that basis. `check_absence_claims`
+reads it, and it went red on this very entry.*** *My evidence was `grep -rln 'FOR_66\.md'` over
+`corpus/check_*.py` and `scripts/*.py` — **which asks whether a gate NAMES the file, not whether a
+gate READS it.** The gate `os.walk`s the tree and takes every `.md`, `.tex` and `.py` outside
+`receipts/`, so it can never contain the literal I searched for. *A filename grep is a proxy for
+file coverage, and globbing is exactly the case it cannot see.**
+
+⇒ ***And the gate's own message is the lesson, verbatim: "My grep missed it" is not "it is not
+there", and that collapse is what this gate exists for.*** *I committed that collapse in order to
+skip the gate that exists to catch it, in an entry whose subject is a false absence claim. **Tenth
+instance of the round's shape and the most self-inflicted: the earlier nine misread a measurement;
+this one skipped the measurement.***
+
+⌗ ***The rule I am keeping: the only honest answer to "does a gate read this file" is to RUN the
+gates.*** *`run_fast_job.sh` costs about `550` s and reads CI's own list rather than a copy. **I have
+no business reasoning about whether it applies — it is cheaper to run it than to be right about it**,
+and every time this round I ran it, it was green and told me so in one line.*
 
 ⇒ **Routed, not patched. Nothing else from `r7169` is owed.**
