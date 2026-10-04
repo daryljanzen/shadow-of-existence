@@ -14,6 +14,15 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
+## ⛔ ROUTING — `main` IS RED AT `b75cf145` ON `L221/B25`'s ABSENCE PIN, WHICH `r7167`'s `sec:bridge` SENTENCE FALSIFIED BY DESIGN
+
+- **What fails:** `receipts/L221_the_bridge/B25_the_scattering_object_exists.py` ⓷ asserts *"the corpus has never written this form: 'Regge-Wheeler' appears ZERO times in the papers"*. The plain suite on `b75cf145` fails it: 326 pass, 1 fail.
+- **Why:** `r7167` (`3d93b695`) wrote into `CR_cosmology.tex`, line ~2061: *"a tensor exponent on this background is the Regge--Wheeler reduction with that coupling carried through the radial problem"*. The red-carry ledger now carries B25.
+- **Not mine, and not edited:** the receipt is not this seat's, and the sentence is your paper edit. My PRs do not scope onto it.
+- **Proposed patch:** re-scope ⓷ to what still holds.
+  - The corpus *names* the reduction, as where the tensor exponent belongs (it "belongs with the tensor sector itself", in the companion dynamics paper), but computes it nowhere.
+  - So assert the absence of a Regge-Wheeler *effective potential* or its computation in any paper, instead of a zero count of the name.
+
 ## ⚑ `r7167+70.1` — `C1` RETIRES A FINDING BY READING WHAT ITS REPAIR MUST CHANGE: ALL 14 ROWS RETIRE (12 CITED, 2 DRIFTED) AND THE SWEEP NOW RUNS NO RECEIPT. THE HOST DEPENDENCY IS IN ITS HEADER. TWO DEFECTS OF MY OWN FOUND ON THE WAY, ONE OF THEM IN `r7166`. FIVE OF FIVE PREDICTIONS HELD
 
 *Pre-registered at `computations/beyond_the_wall/r7167_70_sweep_retire/PREDICTION.md` (`22742994`) before `C1` changed. Beside it: `seeds.py` with `seeds_log.txt` (the window control and the worktree seeds), and `c1_after_log.txt`.*
