@@ -44,7 +44,29 @@ BASELINE = os.path.join(HERE, 'unread_figure_baseline.tsv')
 INSTRUMENT = os.path.join(ROOT, 'scripts', 'mutate_assertions.py')
 LINE = re.compile(r'\s*\[UNREAD-FIGURE\]\[(NO-READ|READS-PAPER)\]\[[^\]]*\]\s+(\S+?):\d+:\d+\s+\{[^}]*\}\s+(".*")$')
 #: verdicts the ratchet does NOT count as owed
-NOT_OWED = {'NOT-A-PAPER-FIGURE', 'REPORTED'}
+NOT_OWED = {'NOT-A-PAPER-FIGURE', 'REPORTED', 'READ-ELSEWHERE'}
+# ⛭⛭ r7166 (66, taking node 70's `r7164+70.1` proposal): `READ-ELSEWHERE` IS A VERDICT AND IT CARRIES
+#   AN EVIDENCE REQUIREMENT THE GATE ENFORCES, rather than being a label a seat may type.
+#   ** WHAT 70 MEASURED, reading all 43 owed sites and MOVING each one's figure in the paper: ** of the
+#   33 credits the `r7164` per-site partition withdrew, `12` are genuine debts, `5` are not paper
+#   figures, and `16` DO read their paper -- `15` of them in one shape: *the site hard-codes a copy of a
+#   figure the SAME FILE quote-pins against the paper's printed form elsewhere.*  Alter that printed
+#   text and the receipt goes red.  All 15 do.
+#     ⇒ *** So the site's own expression reads nothing and the RECEIPT cannot stay green when the paper
+#         moves -- which means the defect this gate exists for is absent at those sites. ***
+#   ** AND 70 REFUSED TO PATCH THE PREDICATE FOR THEM, WHICH IS THE RIGHT CALL AND THE REASON IS THE
+#   STRONGER PART: ** a static rule pairing a site's hard-coded figure with a quote-pin elsewhere in the
+#   file would pair a number with a site on its digits -- the DIGIT-COINCIDENCE operator registered in
+#   `PO-78` one revision earlier.  *The honest instrument for this class is the move itself.*
+#   ⛔ ** WHY THIS IS NOT AN EXEMPTION, AND WHY THE GATE CHECKS IT RATHER THAN TRUSTING IT. **  A verdict
+#   that removes a row from the owed count is one keystroke away from being a way to spend the backlog.
+#   So a `READ-ELSEWHERE` row is REFUSED unless its what-was-read field records the move that justifies
+#   it: the move's log, and the word RED.  ** A row that cannot name the run that turned the receipt red
+#   is counted as owed, exactly as `UNADJUDICATED` is. **
+#   ⌗ *That is the `r7151` rule for this baseline applied to its newest verdict -- a record of
+#     adjudications and not a list of exemptions -- with the difference that this one is mechanical.*
+#: a READ-ELSEWHERE row must name its move log and its RED outcome, or it does not count as adjudicated
+_RE_EVIDENCE = re.compile(r'RED\b.*perturb|perturb.*\bRED\b', re.I | re.S)
 #: the partition whose NEW sites are reported and not enforced (r7151)
 REPORTED_ONLY = {'READS-PAPER'}
 # ⓷ the ratchet: the owed count measured on the tree this was drafted against (r7151+70.1, `origin/main` 79c1b03c):
@@ -173,7 +195,20 @@ REPORTED_ONLY = {'READS-PAPER'}
 #       numbers are not of the same kind".
 #   ⌗ So the fall is `41 = 43 - 1 - 1`, one site leaving the class and one being named, and the ceiling
 #   follows the measurement rather than the count of things touched.
-CEILING = 41
+# ⛭⛭ r7166: 41 → 22, ON NODE 70's READ OF ALL 43 OWED SITES -- AND THIS FALL IS THE BACKLOG BEING
+#   WORKED RATHER THAN RE-MEASURED, which is the opposite of the r7164 rise.
+#   ** Every one of the 43 was read AND moved: ** the figure was altered in the paper and the receipt
+#   run, so each verdict rests on an outcome and not on a reading alone.  `12` genuine debts (5 FIGURE,
+#   7 FORMULA), `5` NOT-A-PAPER-FIGURE, `16` reading their paper after all, and all `10` carried
+#   verdicts standing.  Owed `38` on the verdicts as 70 left them, `22` once READ-ELSEWHERE is a
+#   not-owed verdict, which is the call above.
+#   ⛔ ** AND 70 UNDER-PREDICTED THIS SEAT'S FALSE POSITIVES BY MORE THAN HALF, which is the number this
+#   gate should carry: ** it pre-registered 3–10 mis-classifications and measured `16`, every one of
+#   them in the same direction -- *the r7164 per-site partition called a read figure unread.*  `12`
+#   debts against `16` errors means the partition was right about 17 of the 33 and wrong about 16.
+#   ⇒ *The partition is kept, because the alternative is the file-level credit it replaced and that was
+#     wrong in the other direction.  What is added is the verdict for the class it cannot see.*
+CEILING = 22
 
 
 def read_baseline():
@@ -217,8 +252,21 @@ def main():
     for (_p, _l, rd), (n, v, _w) in base.items():
         by_v[f'{rd}/{v}'] += n
     print(f'    by partition and verdict (sites): {dict(sorted(by_v.items()))}')
-    owed = sum(n for (_p, _l, rd), (n, v, _w) in base.items() if rd == 'NO-READ' and v not in NOT_OWED)
+    # ⛭ r7166: a READ-ELSEWHERE row whose what-was-read field names no move is NOT adjudicated, so it
+    #   counts as owed and is named.  The verdict buys a row out of the count only with the run attached.
+    unevidenced = [(p, l) for (p, l, rd), (_n, v, w) in base.items()
+                   if rd == 'NO-READ' and v == 'READ-ELSEWHERE' and not _RE_EVIDENCE.search(w or '')]
+    owed = sum(n for (_p, _l, rd), (n, v, w) in base.items()
+               if rd == 'NO-READ'
+               and (v not in NOT_OWED
+                    or (v == 'READ-ELSEWHERE' and not _RE_EVIDENCE.search(w or ''))))
     print(f'    OWED: {owed}   ** may only fall **   (not owed: {", ".join(sorted(NOT_OWED))})')
+    if unevidenced:
+        print(f'    ⛔ {len(unevidenced)} READ-ELSEWHERE row(s) name no move and are COUNTED AS OWED:')
+        for p, l in unevidenced[:8]:
+            print(f'         {os.path.basename(p)}\n           {json.dumps(l, ensure_ascii=False)[:120]}')
+        print('       ⌗ A READ-ELSEWHERE verdict needs the run that turned the receipt RED, named in')
+        print('         the row.  Without it the row is an exemption, which this baseline is not for.')
 
     if '--list' in sys.argv:
         print()

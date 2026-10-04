@@ -1079,10 +1079,21 @@ def _paper_tainted(tree, src):
             body = ast.get_source_segment(src, n) or ''
             if _TEXREAD.search(body) or re.search(r'\bBODIES(?:_TEX)?\s*\[|\breach_baseline\b', body):
                 tainted.add(n.name)
+    # ⛭ r7166 (66, taking node 70's `r7164+70.1` probe as written): A HELPER WHOSE BODY MENTIONS A
+    #   TAINTED NAME IS ITSELF TAINTED, which closes the one shape the r7164 root test could not reach:
+    #   `def paper_one(...): ... re.findall(pattern, SRC)` reads the paper through the module-level
+    #   `SRC`, so its own body matches neither `.tex` nor `reach_baseline`.
+    #   ** Measured by 70 against the 43 owed sites: this is 1 of the 16 the r7164 partition
+    #   mis-classified, and it is the gate's own `r7153` repair template -- so without this rule the
+    #   repairs written to this standard are exactly the sites that lose their credit. **
+    #   ⌗ The other 15 are a different shape and are NOT patched here: see `READ-ELSEWHERE` in
+    #   `check_unread_figure`, and 70's reason for refusing a static rule for them.
+    _defs = [(n.name, {x.id for x in ast.walk(n) if isinstance(x, ast.Name)})
+             for n in ast.walk(tree) if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))]
     grew = True
     while grew:
         grew = False
-        for nm, names in prepared:
+        for nm, names in prepared + _defs:
             if nm not in tainted and (names & tainted):
                 tainted.add(nm)
                 grew = True
