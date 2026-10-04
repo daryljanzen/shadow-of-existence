@@ -157,7 +157,23 @@ REPORTED_ONLY = {'READS-PAPER'}
 #   ⌗ Two of the `43` are keys this partition surfaced in `60`'s `r7160` receipt rather than moved, and
 #     both are recorded `UNADJUDICATED` with the rest.  Every one of the `33` is owed a READ, and the
 #     baseline says `NOT YET READ` in each row rather than carrying a verdict nobody reached.
-CEILING = 43
+# ⛭ r7164+cc66.134 (cc66): 43 → 41, the first fall measured on the PER-SITE partition, and the two are
+#   different kinds of answer rather than two repairs.  Both are in `P15_the_bead_routes...`, which
+#   `r7164` put in the `33` as `UNADJUDICATED` -- correctly: the file reads `CR_cosmology.tex` into
+#   `b15` through a helper, and neither site's assertion depended on that read.
+#     · `Ⓒ②` is REPAIRED and LEFT THE CLASS.  It carried `L * (L + 2)` as a typed expression while
+#       calling it "the paper's closed form"; it is read out of `b15` now (`paper_formula.inline`:
+#       8 statements in the body, all agreeing, 3 skipped as part of longer expressions).  ⌈ ** Nine
+#       occurrences in the file is the agreement rule earning its keep rather than a courtesy --
+#       uniqueness would have refused this paper for stating its own eigenvalue nine times. **
+#     · `Ⓕ③` is ADJUDICATED `NOT-A-PAPER-FIGURE`, which is a verdict and not a repair.  Its figures are
+#       this file's own computation of the paper's asymptotic FORM, and the paper carries neither:
+#       `8.971e-2` and `4.656e-2` occur in no `corpus/*.tex` but the GENERATED appendices, and the
+#       file's own docstring says the paper's printed `7.00e-2` is the exact transmission, "so the two
+#       numbers are not of the same kind".
+#   ⌗ So the fall is `41 = 43 - 1 - 1`, one site leaving the class and one being named, and the ceiling
+#   follows the measurement rather than the count of things touched.
+CEILING = 41
 
 
 def read_baseline():

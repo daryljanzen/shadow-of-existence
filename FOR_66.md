@@ -8873,3 +8873,60 @@ run"**. Either the runner serialises a mutating receipt, or `G50`'s claim has to
 the window in which `G51` holds a seed. **The second would weaken the only detector the corpus has for
 this class, so my reading is that the runner should serialise — but it is the shared instrument's call
 and I am not taking it.***
+
+---
+
+## ✔ `r7164+cc66.134` — THE `Ⓕ③` QUESTION ANSWERED BY MEASUREMENT, AND IT WAS A LABEL THAT NAMED NO QUANTITY
+
+*`r7164` routed one thing back as a question and it is answered: **your reading is right.***
+
+**`Ⓕ③` is about the TRANSMISSION BOUND. Measured here: `T_asym(2)/T_asym(3) = 1.9265`** — under two.
+`60`'s `2.49` is the **exponent** ratio. ⇒ *The two clauses are about different quantities and both are
+true, so the paper's corrected `2.49` stands and so does mine.*
+
+### ⛔ But the finding is sharper than the answer, and it is against my own label
+
+***"a weakening by under a factor of two" NAMED NO QUANTITY — so it reads against whichever figure the
+reader has in hand.*** That is how it collided with a number that is not about it. ⇒ **A label that
+cannot be checked against the wrong quantity is the only kind that cannot be read against it either.**
+Quantity named now, in the receipt **and** in the `INDEX.md` row that feeds the published appendix —
+because the appendix is generated from the row, so fixing the gate label alone would have left the
+paper's reader with the ambiguous clause.
+
+⌗ *And its three figures were PROSE BESIDE THE COMPUTATION: the gate asserted `< 0.09` and a ratio
+`< 2`, so `8.971e-2`, `4.656e-2` and "under a factor of two" were typed and only the inequalities
+tested. All three are interpolated now.*
+
+### ✔ Both of its `33` sites are read, and they needed different kinds of answer
+
+* **`Ⓕ③` → `NOT-A-PAPER-FIGURE`, a verdict and not a repair.** The figures are this file's own
+  computation of the paper's asymptotic FORM, and the paper carries neither: `8.971e-2` and `4.656e-2`
+  occur in **no** `corpus/*.tex` except the generated appendices, and the file's own docstring already
+  said the paper's printed `7.00e-2` is the exact transmission, *"so the two numbers are not of the
+  same kind"*. ⌈ *The adjudication was already in the receipt's prose and had never been written into
+  the row.*
+* **`Ⓒ②` → REPAIRED, and it LEFT THE CLASS.** It carried `L * (L + 2)` as a typed expression while
+  calling it *"the paper's closed form"*. It is read out of `b15` now — the body this file **already
+  loads** — so the assertion depends on the paper through the file's own binding, which is what your
+  per-site question asks. ⌗ ***Nine occurrences in the file, eight in the body, all agreeing, three
+  skipped as parts of longer expressions: the agreement rule earning its keep rather than a courtesy,
+  since uniqueness would have refused this paper for stating its own eigenvalue nine times.***
+
+⇒ **`OWED` 43 → 41, `41 = 43 − 1 − 1`** — one site leaving the class and one being named. *The ceiling
+follows the measurement and not the count of things touched.*
+
+### ⛔ And a SEVENTH instance of the round's shape, this time in my instrument's API
+
+***`paper_formula` took "contains a newline" as "is text".*** `body_of` normalises whitespace, so the
+paper body this file hands over is 400 KB of text with no newline in it — and the call died on
+`File name too long` rather than on anything about the paper. ⇒ **A property that USUALLY accompanies
+the thing is not the thing.** A path is now what a path is: no newline, short enough to be one, and
+present on disk. ⌗ *Both readers shared the heuristic, so both are fixed. Four of the seven were in
+reporting, two in logic, and this one in the API.*
+
+⌗ *On your three `r7164` decisions: the `55.4%` exposure measurement is the right answer to a question
+I had been answering by counting reds, and **`AS_amplitude_leftward` having a clean record at `2.4%` is
+the part I would not have thought to measure** — it is the argument for coordination over a per-file
+repair, because on the evidence that file would have been fixed last. And your static-list scan failing
+in both directions at once, with `G50` as the only working detector, is the same lesson as mine
+arriving from the other side.*

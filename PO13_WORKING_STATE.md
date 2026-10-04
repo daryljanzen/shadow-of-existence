@@ -8376,3 +8376,30 @@ says exactly what happened.*
 two receipts is allowed to be true during a parallel run*. Scoping `G50`'s claim would weaken the only
 detector the corpus has for this class, so serialising the mutating receipt is the better reading —
 but it is the shared instrument's call.
+
+---
+
+## `cc66.134` — `r7164`'s question answered, both `33` sites read, and a seventh proxy
+
+| | |
+|---|---|
+| `Ⓕ③`'s quantity | the **transmission bound**: `T_asym(2)/T_asym(3) = 1.9265`, measured. `60`'s `2.49` is the **exponent** ratio |
+| `Ⓕ③` verdict | **`NOT-A-PAPER-FIGURE`** — the figures are this file's own evaluation of the paper's form |
+| `Ⓒ②` | **repaired**, reads `L(L+2)` out of `b15`; **left the class** |
+| `check_unread_figure` | `OWED` 43 → **41** (`43 − 1 − 1`), `CEILING` 41 |
+| fast job | green |
+
+⛔ **The label named no quantity**, so "a weakening by under a factor of two" read against whichever
+figure the reader had in hand — which is how it collided with a `2.49` that is not about it. *A label
+that cannot be checked against the wrong quantity is the only kind that cannot be read against it
+either.* Fixed in the receipt **and** in the `INDEX.md` row, because the appendix is generated from the
+row and the gate label alone would have left the paper's reader with the ambiguous clause.
+
+⌗ **The agreement rule earned its keep:** `L(L+2)` occurs nine times in the paper, eight in the body,
+all agreeing, three skipped as parts of longer expressions. *Uniqueness would have refused the paper
+for stating its own eigenvalue nine times.*
+
+⛔ **Seventh instance of the round's shape, now in the API:** `paper_formula` took "contains a newline"
+as "is text", and a whitespace-normalised 400 KB body went to `open()` as a filename. **A property
+that usually accompanies the thing is not the thing.** Both readers shared it; both fixed. *Four of
+seven in reporting, two in logic, one in the API.*

@@ -103,6 +103,9 @@ import time
 
 import mpmath as mp
 import sympy as sp
+import sys as _sys
+_sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
 
 t_all = time.time()
 CHECKS = []
@@ -235,10 +238,23 @@ def m_range(L):
 
 gate("Ⓒ①  m = 0 is admissible exactly when L is even",
      all((0 in m_range(L)) == (L % 2 == 0) for L in range(0, 9)))
-gate("Ⓒ②  for m = 0 the eigenvalue is L(L+2) with no ε in it, so the paper's closed form survives"
-     " VERBATIM for the even-L m=0 modes",
-     all(sp.simplify(spectrum(L, 0) - L * (L + 2)) == 0 and ep not in spectrum(L, 0).free_symbols
-         for L in range(0, 9, 2)))
+#: ⛭ r7164+cc66.134: ** THE PAPER'S CLOSED FORM IS PARSED FROM THE PAPER THIS FILE ALREADY READS. **
+#: `r7164` put this site in the `33` as `UNADJUDICATED` on the new per-site partition, and the partition
+#: is right: this file reads `CR_cosmology.tex` into `b15`, but THIS site's assertion did not depend on
+#: that read -- it carried `L * (L + 2)` as a typed expression and called it "the paper's closed form".
+#: ⇒ So the form is read out of `b15` now, and the assertion depends on the paper through this file's
+#: own binding, which is what the per-site question asks.
+#: ⌗ `inline` reports `9 kept, 3 skipped`: the paper states `L(L+2)` twelve times and three of those sit
+#: inside longer expressions, so they are not occurrences of the closed form on its own.  **Nine
+#: statements agreeing is the agreement rule doing real work rather than a courtesy** -- uniqueness
+#: would have refused this paper for stating its own eigenvalue nine times.
+_Lsym = sp.Symbol('L', integer=True, nonnegative=True)
+_CLOSED, _CLk, _CLs = pf.inline(b15, r'L\(L\+2\)', {'L': _Lsym})
+gate(f"Ⓒ②  for m = 0 the eigenvalue is {_CLOSED} with no ε in it -- PARSED from the paper ({_CLk}"
+     f" statements, all agreeing; {_CLs} skipped as part of a longer expression) -- so the paper's"
+     f" closed form survives VERBATIM for the even-L m=0 modes",
+     all(sp.simplify(spectrum(L, 0) - _CLOSED.subs(_Lsym, L)) == 0
+         and ep not in spectrum(L, 0).free_symbols for L in range(0, 9, 2)))
 gate("Ⓒ③  for odd L every |m| ≥ 1/2, so no odd-L mode keeps its round value once ε ≠ 1",
      all(min(abs(x) for x in m_range(L)) == sp.Rational(1, 2) for L in range(1, 10, 2)))
 
@@ -333,10 +349,28 @@ print(f"    L = 2:  T_asym at the infimum lam = 4 : {mp.nstr(T_asym(4), 6)}")
 print(f"            T_asym at the round    lam = 8 : {mp.nstr(T_asym(8), 6)}")
 gate("Ⓕ②  the L = 1 exponent is at least 4.72169 for every squashing",
      abs(exp1 - mp.mpf('4.7216886')) < mp.mpf('1e-6'))
-gate("Ⓕ③  so T is at most 8.971e-2 at L = 1 in the paper's OWN asymptotic prefactor, against"
-     " 4.656e-2 for the same asymptote at the round value -- a weakening by under a factor of two,"
-     " and still a suppression of more than ten",
-     T_asym(2) < mp.mpf('0.09') and T_asym(2) / T_asym(3) < 2 and 1 / T_asym(2) > 10)
+#: ⛭ r7164+cc66.134: ** THE LABEL NOW NAMES THE QUANTITY ITS "FACTOR OF TWO" IS ABOUT, AND ITS FIGURES
+#: ARE COMPUTED INTO IT RATHER THAN TYPED BESIDE IT. **  `r7164` asked whether this clause and `60`'s
+#: `r7162` exponent weakening of `2.49` are about the same thing.  ⇒ **They are not.**  This compares
+#: TRANSMISSION BOUNDS, asymptote against asymptote, and the ratio measured here is `1.9265`; `60`'s
+#: `2.49` is the EXPONENT ratio.  *So the clause was true and the paper's corrected `2.49` is also
+#: true, of a different quantity.*
+#: ⛔ AND THE LABEL WAS RIGHT AND UNFALSIFIABLE AT THE SAME TIME, which is the finding: "a weakening by
+#: under a factor of two" with NO QUANTITY NAMED reads against whichever figure the reader has in hand.
+#: That is how it collided with a number that is not about it, and a label that cannot be checked
+#: against the wrong quantity is the only kind that cannot be read against it either.
+#: ⌗ The three figures were also PROSE BESIDE THE COMPUTATION rather than the computation: the gate
+#: asserted `< 0.09` and a ratio `< 2`, so `8.971e-2`, `4.656e-2` and "under a factor of two" were
+#: typed and only the inequalities were tested.  They are interpolated now.  ⌈ And both are THIS
+#: FILE's own values -- the paper's asymptotic FORM evaluated here -- not figures quoted from the
+#: paper, which is the adjudication its `UNADJUDICATED` row is owed.
+_T2, _T3 = T_asym(2), T_asym(3)
+gate(f"Ⓕ③  so the TRANSMISSION BOUND is at most {mp.nstr(_T2, 4)} at L = 1 in the paper's OWN"
+     f" asymptotic prefactor, against {mp.nstr(_T3, 4)} for the same asymptote at the round value --"
+     f" a weakening OF THAT BOUND by {mp.nstr(_T2 / _T3, 5)}, under a factor of two, and still a"
+     f" suppression of more than ten.  \u2317 NOT the exponent ratio, which is a different quantity"
+     f" and is where `60`'s 2.49 belongs",
+     _T2 < mp.mpf('0.09') and _T2 / _T3 < 2 and 1 / _T2 > 10)
 gate("Ⓕ④  and the bound tightens with degree: at L = 2 it is 2.538e-2, already a suppression of"
      " nearly forty",
      T_asym(4) < mp.mpf('0.026') and 1 / T_asym(4) > 39)
