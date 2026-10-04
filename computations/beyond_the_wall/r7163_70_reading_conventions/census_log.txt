@@ -1,0 +1,96 @@
+  d-SUPERSET artefacts (corpus/* read whole, but only corpus/*.py opened -- not paper readers): 4 receipts, 286 pairs: ['O1_the_registry_was_turned_outward_and_t', 'P15_the_onset_bracket_family_is_latent_e', 'R1_the_registry_was_checked_from_citatio', 'V1_a_translation_table_validated_only_ag']
+  traced receipts present: 859;  blob unchanged since trace: 784;  edited: 75
+  clean receipts whose trace reads a corpus .tex/.tsv/.txt: 210  (.tex: 210)
+  glob-MEMBERSHIP-only pairs (names listed, content not read; not a paper-edit dependency): 1398 in 44 receipts
+
+  (receipt, corpus file) read pairs: 1378
+    GLOB/WALK           853 pairs   61.9 %   in 27 receipts
+    NAME                291 pairs   21.1 %   in 191 receipts
+    RB-IMPORT           134 pairs    9.7 %   in 8 receipts
+    RB-PATHLOAD          65 pairs    4.7 %   in 4 receipts
+    HELPER               35 pairs    2.5 %   in 1 receipts
+
+  receipts by convention (a receipt counts under each convention it uses):
+    NAME              191 receipts
+    GLOB/WALK          27 receipts
+    HELPER              1 receipts
+    RB-PATHLOAD         4 receipts
+    RB-IMPORT           8 receipts
+
+  receipts with >=1 pair the current gate cannot see (not NAME, not RB-IMPORT): 32
+
+  modules carrying HELPER / RECEIPT-IMPORT reads (pairs):
+       35  corpus/check_paper_tense.py
+
+  per receipt, non-NAME conventions (excluding RB-IMPORT-only):
+    receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py
+        GLOB/WALK
+    receipts/L165_defining_the_sum/S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is.py
+        GLOB/WALK
+    receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py
+        GLOB/WALK
+    receipts/L175_dimensional_descent/N3_the_criterion_is_the_programmes_own_and_it_is_stated.py
+        GLOB/WALK
+    receipts/L204_physics_reach/C3_the_isotropy_citation_runs_in_a_loop.py
+        GLOB/WALK
+    receipts/L204_physics_reach/P13_the_entropy_is_the_corpuss_own_number.py
+        GLOB/WALK
+    receipts/L204_physics_reach/P5_the_two_absences_verified_independently.py
+        GLOB/WALK
+    receipts/L204_physics_reach/P6_the_nariai_frame_does_not_exist_and_the_transplanckian_scope.py
+        GLOB/WALK
+    receipts/L204_physics_reach/P8_the_higgs_join_is_an_identity.py
+        GLOB/WALK
+    receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py
+        GLOB/WALK
+    receipts/L221_the_bridge/B25_the_scattering_object_exists.py
+        GLOB/WALK
+    receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py
+        GLOB/WALK
+    receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py
+        GLOB/WALK
+    receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py
+        HELPER:corpus/check_paper_tense.py
+    receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py
+        GLOB/WALK
+    receipts/L263_the_station_audit/S1_three_of_eight_stations_are_already_held_and_one_was_noticed_and_not_propagated.py
+        RB-PATHLOAD
+    receipts/L264_station_H_the_index_is_canonical/K1_the_traced_index_is_computable_and_the_computation_is_a_limit_point_test.py
+        RB-PATHLOAD
+    receipts/L265_station_G_the_sequence_is_the_object/A1_the_atiyah_sequence_is_not_missing_from_P12_it_is_P12s_object_unnamed.py
+        RB-PATHLOAD
+    receipts/L266_station_C_three_readings_of_the_dial/C1_the_degree_six_dial_has_three_readings_and_the_paper_excludes_one.py
+        RB-PATHLOAD
+    receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py
+        GLOB/WALK
+    receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py
+        GLOB/WALK
+    receipts/L831_graph_theory/G4_the_2026_sharpness_theorem_misses_and_finiteness_is_the_binding_hypothesis.py
+        GLOB/WALK
+    receipts/P01_BH_causality/P1_the_unruh_case_is_what_makes_the_criterion_completion_and_not_perspective.py
+        GLOB/WALK
+    receipts/P03_SdS_slicing/A6_item_58_resolves_split.py
+        GLOB/WALK
+    receipts/P03_SdS_slicing/P03_the_symbol_T_carries_four_structural_referents.py
+        GLOB/WALK
+    receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py
+        GLOB/WALK
+    receipts/P07_CR_framework/P07_the_page_curve_is_a_falsifier_here_and_the_daughter_is_not_disconnected.py
+        GLOB/WALK
+    receipts/P12_algebroid/A4_the_ledger_seven_swept.py
+        GLOB/WALK
+    receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py
+        GLOB/WALK
+    receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py
+        GLOB/WALK
+    receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py
+        GLOB/WALK
+    receipts/P16_cosmogenesis_paper/P16_CR_makes_no_Neff_prediction_because_it_fixes_a_place_and_not_a_coupling.py
+        GLOB/WALK
+
+  static, over all 965 receipts/**/*.py:
+       88  subprocess + corpus ref (static)
+       83  glob/walk + corpus ref (static)
+       53  GIT-SHOW of corpus (static)
+       13  RB-IMPORT (static, all .py)
+        6  reach_baseline.py by path (static)
