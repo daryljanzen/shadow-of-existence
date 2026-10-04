@@ -26,8 +26,15 @@ f = 1 - 2*M/r - r**2/al**2
 #: the paper in the label.  It is now PARSED from `slicing_operator.tex`'s own display equation, so a
 #: move in the paper lands here as a failure instead of leaving this file quietly disagreeing with it.
 #: *`paper_formula.equation` asserts the label occurs exactly once, which is `r7153`'s own control.*
-_P8 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+#: ⛔ AND THE RECEIPT OPENS THE PAPER ITSELF rather than handing a PATH to the helper.
+#: `check_unread_figure` decides READS-PAPER from THIS file's own source, so a read delegated
+#: to `paper_formula` is invisible to it -- the repair would have left the site reading the
+#: paper and still counting as NO-READ.  *Found because `P15_expansion_law` stayed NO-READ
+#: after its figures were parsed.*  `paper_formula` takes the TEXT, so the open stays here
+#: where the instrument can see it and the parse stays there.
+_P8_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
                    'slicing_operator.tex')
+_P8 = open(_P8_PATH, encoding='utf-8').read()
 _E1 = pf.rhs(_P8, 'eq:E1', {'r': r, 'M': M, 'alpha': al})
 print("="*70); print("P08 E=1 cosmology (radial SdS geodesic -> flat-LCDM scale factor)"); print("="*70)
 # (1) geodesic: E=f dt/dtau conserved; timelike normalization -> (dr/dtau)^2 = E^2 - f

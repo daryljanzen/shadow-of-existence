@@ -5445,6 +5445,44 @@ PINNED = {'systematic uncertainty': 1}
 *Posted on #256 as `#issuecomment-5972507213`.*
 
 ---
+## ⚑⚑ `r7157` — **`16` OF THE `17` ARE REPAIRED, `OWED` `50` → `34`. MY `9`-OF-`17` REACH WAS WRONG IN THE OTHER DIRECTION: THREE OF THE FOUR "REFUSALS" WERE MY TRANSLATOR AND NOT THE PAPERS. AND THE REPAIR ALMOST MADE ITS OWN READS INVISIBLE TO THE GATE.**
+
+`check_unread_figure`: **`OWED` `50` → `34`**, `FORMULA` **`31` → `15`** — *down by exactly the sixteen*. `87` sites / `87` rows, no new `NO-READ` site, no stale entry, ceiling left at `50` (it is `70`'s). `check_prose_pins`: `140` keys, `UNADJUDICATED 0`, ceiling `0`. Fast job green; twelve receipts green and hash-identical across `PYTHONHASHSEED` `0`/`99`.
+
+### ⛔ FIRST, A CORRECTION TO MY OWN CORRECTION
+
+*Last push I said the parse reached `9` of `17` and that `4` were refused by the dialect. **Three of those four were refused by MY TRANSLATOR, not by the papers** — and finding that out is what took the block from `9` to `16`:*
+
+- ***`f^{n}(x)` for a NAMED function is a CONVENTION, not an ambiguity.*** *`\coth^2(x)` means `(\coth x)^2` everywhere in these papers and in ordinary usage; the one reading that is not this is `f^{-1}`. ⇒ **Translating it correctly beat refusing it**, and `eq:rate` and `eq:omega-ratio` came in on that alone.*
+- ***The function-application guard was over-broad twice.*** *It first refused ANY identifier before a bracket — which also refused `-4\Lambda(r^{2}+p^{2})`, where juxtaposition **is** multiplication and the paper means exactly that. ⇒ **The test is the PRIME and not the bracket:** `f'(x)` is an application in every reading, `\Lambda(x)` is a product in this corpus's. Narrowed to that, `eq:separated`'s right side came in while its primed left side stays refused.*
+
+⇒ ***So the honest sequence is: I over-claimed the reach, then under-claimed it, and only reading each refusal found which was which.*** ⌗ *The guards caught my translator **four** times across this block and the papers **never**.*
+
+### ⛔⛔ AND THE ONE I WOULD MOST WANT GATED: THE REPAIR ALMOST MADE ITS OWN READS INVISIBLE
+
+*`check_unread_figure` decides `READS-PAPER` **from the receipt's own source**. I had the receipts hand a PATH to `paper_formula` and let the helper open the paper — so **the read happened and the instrument could not see it.***
+
+⇒ ***The repair would have left eight sites genuinely reading the paper and still counted `NO-READ`.*** ⌗ *Found only because `P15_expansion_law` stayed `NO-READ` after its three figures were parsed, which I noticed in the gate's own delta rather than by thinking of it.* **Fixed by having each receipt `open()` the paper itself and pass the TEXT; `paper_formula` already took text, so the open sits where the instrument looks and the parse stays in the helper.**
+
+⌗ ***This is a general hazard for any shared-helper repair in this corpus, and it is worth a line in the register:*** *an instrument that reads a receipt's SOURCE measures what the receipt says it does, not what it does. **Moving work into a helper can discharge the work and keep the finding.***
+
+### ⌗ TWO NEW PROSE-PIN KEYS, CREATED BY THIS REPAIR, AND THEY ARE THE SHAPE I NAMED
+
+*`len(_RULE) == 1` and `len(_d) == 1` — the uniqueness asserts on the two sentence parses. Verdicted **`DELIBERATE`**, **`UNIQUENESS ON A LIVE DOCUMENT`**: two matches means the attribution is ambiguous and nothing is being checked; zero means the paper has dropped the sentence. **Both must fail, so `== 1` is the claim.***
+
+⇒ *Your `r7155` called this exactly — "a repaired pin leaves one class and may create a key in another, which is accounting and not a defect." ⌗ *It is also the shape I named at `r7151` arriving in my own work rather than in someone else's receipt.**
+
+### ⌗ THE ONE REMAINING, NAMED RATHER THAN ABSORBED
+
+***`eq:dscont` (`P03_seam_continuation`): `ds^{2}=-d\psi^{2}+\cosh^{2}\psi\,d\Omega^{2}`.*** *A METRIC LINE ELEMENT. `d\psi` and `d\Omega` are differentials, and every algebraic parse turns them into products — mine returns `Omega**2*d*cosh(psi)**2 - d*psi**2`, which is wrong and only looks right.*
+
+⇒ ***The instrument it wants is a LINE-ELEMENT parse: a map from each differential squared to its coefficient, verified term by term*** *(`-1` on `d\psi^{2}`, `\cosh^{2}\psi` on `d\Omega^{2}`).* ⌗ **I did not build it as a regex fitted to this one metric, because a bound fitted to the single case in front of me is the shape this round keeps rejecting.** *One site does not earn a general instrument yet; if the `19` `FIGURE` class turns up more line elements it will.*
+
+### ⌗ NEXT, PER THE ORDER
+
+*The `14` `NO-ANCHOR` sites as the derivation block — **nine `P10` re-parameterisation identities** and five to read individually. **The distribution goes in once when those close**, with the `16`/`1` above folded into it.*
+
+---
 ## ⛑ `r7157` IN FLIGHT — **`9` OF THE `17` REPAIRED AND THE GATE MOVED `50` → `41`. AND MY OWN `17` WAS OPTIMISTIC: `ANCHORED` MEASURED WHETHER THE PAPER DEFINES THE LABEL, NOT WHETHER THE THING ATTRIBUTED IS A PARSEABLE EXPRESSION.**
 
 *`corpus/paper_formula.py` is `r7153`'s template at the next size up — **an EXPRESSION in a labelled equation instead of a number in a sentence** — and it keeps `r7153`'s own control: the label must occur **exactly once** in the paper, since an attribution to a label carried twice is not an attribution.*

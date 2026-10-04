@@ -27,8 +27,15 @@ f_SdS=1-2*Ms/r-r**2/als**2; f_dS=1-r**2/als**2
 import os, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
 import paper_formula as pf
-_P9 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+#: ⛔ AND THE RECEIPT OPENS THE PAPER ITSELF rather than handing a PATH to the helper.
+#: `check_unread_figure` decides READS-PAPER from THIS file's own source, so a read delegated
+#: to `paper_formula` is invisible to it -- the repair would have left the site reading the
+#: paper and still counting as NO-READ.  *Found because `P15_expansion_law` stayed NO-READ
+#: after its figures were parsed.*  `paper_formula` takes the TEXT, so the open stays here
+#: where the instrument can see it and the parse stays there.
+_P9_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
                    'range_paper.tex')
+_P9 = open(_P9_PATH, encoding='utf-8').read()
 print("="*70); print("P09 Kerr-de Sitter: vacuum-Lambda on the substrate"); print("="*70)
 _DD = pf.rhs(_P9, 'eq:deltadecomp',
              {'r': r, 'a': as_, 'f_SdS': f_SdS, 'f_dS': f_dS})

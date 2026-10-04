@@ -16,8 +16,15 @@ G,M,Lam,c,tau,r=sp.symbols('G M Lambda c tau r',positive=True)
 import os, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
 import paper_formula as pf
-_P15F = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+#: ⛔ AND THE RECEIPT OPENS THE PAPER ITSELF rather than handing a PATH to the helper.
+#: `check_unread_figure` decides READS-PAPER from THIS file's own source, so a read delegated
+#: to `paper_formula` is invisible to it -- the repair would have left the site reading the
+#: paper and still counting as NO-READ.  *Found because `P15_expansion_law` stayed NO-READ
+#: after its figures were parsed.*  `paper_formula` takes the TEXT, so the open stays here
+#: where the instrument can see it and the parse stays there.
+_P15F_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
                    'CR_cosmology.tex')
+_P15F = open(_P15F_PATH, encoding='utf-8').read()
 allpass=True
 print("="*72); print("P15 derivation core -- amplitude, sinh^{2/3} scale factor, Friedmann forms"); print("="*72)
 
@@ -48,8 +55,20 @@ allpass&=ok("CONTROL: r=A sinh^{1/2}(B tau) does NOT solve the E=1 equation (the
 # (3) eq:rate: H = rdot/r = (2B/3) coth(B tau); with the paper's B=(1/2)sqrt(3 Lambda) c, H^2=(Lambda c^2/3)coth^2
 Bc=sp.sqrt(3*Lam)*c/2                       # paper's argument coefficient (with c)
 H=sp.Rational(2,3)*Bc*sp.coth(Bc*tau)       # H = (2B/3) coth(B tau) for r ~ sinh^{2/3}(B tau)
-allpass&=ok("eq:rate: H^2 = (Lambda c^2/3) coth^2((1/2)sqrt(3 Lambda) c tau)",
-            sp.simplify(H**2-(Lam*c**2/3)*sp.coth(Bc*tau)**2)==0)
+#: ⛭ r7157+cc66.116: the Friedmann form was TYPED here as `(Lam*c**2/3)*coth(Bc*tau)**2`.  It is
+#: PARSED from `eq:rate` now, including the coth's own argument, so the paper's prefactor AND its
+#: argument coefficient both land here if either moves.  ⌗ `\coth^{2}(x)` means `(\coth x)^{2}` for a
+#: named function, which is a convention and not a guess -- `paper_formula` translates it on that
+#: ground and leaves `f^{-1}` alone.
+#: ⌗ `eq:rate` is a CHAIN -- H^2 = (Lambda c^2/3) coth^2(..) = (1/3)(8 pi G rho + Lambda c^2) -- so
+#: every side is parsed and the middle one is the form this check compares.  `H` is supplied as this
+#: file's own expression for it, which is what lets the strict naming check pass the left side.
+_RATE_SIDES = pf.sides(_P15F, 'eq:rate',
+                       {'H': H, 'Lambda': Lam, 'c': c, 'tau_tilde': tau, 'G': G,
+                        'rho': sp.Symbol('rho')})
+_RATE_COTH = _RATE_SIDES[1]
+allpass&=ok(f"eq:rate PARSED: H^2 = {_RATE_COTH}",
+            sp.simplify(H**2-_RATE_COTH)==0)
 
 # (4) eq:omega-ratio: coth^2 = 1 + csch^2 => H^2 = Lambda c^2/3 + (Lambda c^2/3) csch^2;
 #     the Lambda c^2/3 is the Lambda term, (Lambda c^2/3)csch^2 the matter term => Omega_m/Omega_L = csch^2
@@ -57,8 +76,11 @@ x=sp.symbols('x')
 allpass&=ok("coth^2 = 1 + csch^2 (splits H^2 into Lambda term + matter term)",
             sp.simplify(sp.coth(x)**2-(1+sp.csch(x)**2))==0)
 Lam_term=Lam*c**2/3; mat_term=(Lam*c**2/3)*sp.csch(Bc*tau)**2
-allpass&=ok("eq:omega-ratio: Omega_m/Omega_Lambda = matter_term/Lambda_term = csch^2((1/2)sqrt(3 Lambda) c tau)",
-            sp.simplify(mat_term/Lam_term-sp.csch(Bc*tau)**2)==0)
+_OMR = pf.rhs(_P15F, 'eq:omega-ratio',
+              {'Lambda': Lam, 'c': c, 'tau_tilde': tau,
+               'Omega_m': sp.Symbol('Omega_m'), 'Omega_Lambda': sp.Symbol('Omega_Lambda')})
+allpass&=ok(f"eq:omega-ratio PARSED: Omega_m/Omega_Lambda = matter_term/Lambda_term = {_OMR}",
+            sp.simplify(mat_term/Lam_term-_OMR)==0)
 # and H^2 = (1/3)(8 pi G rho + Lambda c^2) form: the Lambda term is exactly (1/3)Lambda c^2
 allpass&=ok("H^2 late-time -> (1/3)Lambda c^2 (the standard rate (1/2)sqrt(3 Lambda) c as tau->inf)",
             sp.simplify(sp.limit(H**2,tau,sp.oo)-Lam*c**2/3)==0)

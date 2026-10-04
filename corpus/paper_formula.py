@@ -121,9 +121,58 @@ def _tilde(s):
     return s
 
 
+_FN = (r'sin|cos|tan|cot|sec|csc|sinh|cosh|tanh|coth|csch|sech|log|exp'
+       r'|arcsin|arccos|arctan|operatorname\{csch\}|operatorname\{sech\}')
+
+
+def _fn_power(s):
+    r"""`\coth^{2}(x)` -> `(\coth(x))^{2}`.
+
+    ⌗ THIS IS A CONVENTION AND NOT A GUESS, which is why it is translated rather than refused.
+    For a NAMED function `f^{n}(x)` means `(f(x))^{n}` throughout this corpus's papers and in
+    ordinary usage -- `\coth^2`, `\cosh^2`, `\csch^2`.  *The one reading that is NOT this is
+    `f^{-1}`, the inverse, so a negative exponent is left alone and then refused downstream.*
+    ⛔ Before this, the rewrites below turned `\coth^2(x)` into `coth**2 * (x)` -- a silent wrong
+    answer over the right symbols.  Refusing it was better than that; translating it is better still.
+    """
+    pat = re.compile(r'\\(' + _FN + r')\s*\^\s*(?:\{(\d+)\}|(\d+))')
+    while True:
+        m = pat.search(s)
+        if not m:
+            return s
+        fn, n = m.group(1), (m.group(2) or m.group(3))
+        j = m.end()
+        while j < len(s) and (s[j].isspace() or s.startswith('\\!', j) or s.startswith('\\,', j)):
+            j += 2 if s[j] == '\\' else 1
+        #: the argument: a braced group, a (possibly \left-sized) bracket, or one bare token
+        if j < len(s) and s[j] == '{':
+            k = _brace(s, j)
+            arg, rest = s[j + 1:k], s[k + 1:]
+        elif s.startswith('\\left(', j) or (j < len(s) and s[j] == '('):
+            o = s.index('(', j)
+            d, k = 0, None
+            for i in range(o, len(s)):
+                if s[i] == '(':
+                    d += 1
+                elif s[i] == ')':
+                    d -= 1
+                    if d == 0:
+                        k = i
+                        break
+            assert k is not None, 'paper_formula: unbalanced bracket after ' + fn
+            arg, rest = s[o + 1:k], s[k + 1:]
+            arg = arg.replace('\\left', '').replace('\\right', '')
+        else:
+            mt = re.match(r'(\\[A-Za-z]+|[A-Za-z0-9])', s[j:])
+            assert mt, 'paper_formula: no argument after %s^%s' % (fn, n)
+            arg, rest = mt.group(1), s[j + mt.end():]
+        s = s[:m.start()] + '((\\%s(%s))^{%s})' % (fn, arg, n) + rest
+
+
 def to_text(frag):
     """The LaTeX fragment as a sympify-able string.  Raises on anything it cannot name."""
     s = frag
+    s = _fn_power(s)
     s = _bare_arg(s)
     s = _tilde(s)
     s = _frac(s)
@@ -151,17 +200,19 @@ def to_text(frag):
     #: above would produce.  That is a SILENT mistranslation -- the one outcome that would make a
     #: receipt agree with a paper it had misread -- so it is refused instead of guessed.
     _fn = r'(?:sin|cos|tan|cot|sec|csc|sinh|cosh|tanh|coth|csch|sech|sqrt|log|exp)'
-    #: ⛔ AND FUNCTION APPLICATION OF A NON-FUNCTION IS THE SAME TRAP ONE STEP OVER.
+    #: ⛔ AND A PRIMED NAME FOLLOWED BY A BRACKET IS AN APPLICATION, NOT A PRODUCT.
     #: `\Delta_{r}''(r)` rewrites to `Delta_rpp(r)`, which implicit multiplication reads as the
-    #: PRODUCT `Delta_rpp * r`.  *The strict check cannot catch it, because both names are declared
-    #: -- it returns a plausible expression over the right symbols and the wrong operation.*  Found
-    #: by reading `eq:separated`'s parse rather than by any assertion, which is why it is a guard now.
-    _known = r'(?:sin|cos|tan|cot|sec|csc|sinh|cosh|tanh|coth|csch|sech|sqrt|log|exp|Abs|re|im)'
-    for _m in re.finditer(r'([A-Za-z_][A-Za-z0-9_]*)\s*\(', s):
-        assert re.fullmatch(_known, _m.group(1)), (
-            'paper_formula: %r applies %r to an argument; this dialect multiplies instead of '
-            'applying, so the site is refused rather than mistranslated.'
-            % (frag[:60], _m.group(1)))
+    #: PRODUCT `Delta_rpp * r`.  *The strict check cannot catch it: both names are declared, so it
+    #: returns a plausible expression over the right symbols and the wrong operation.*
+    #: ⌗ THE TEST IS THE PRIME AND NOT THE BRACKET, and getting that wrong cost two passes.  A first
+    #: version refused ANY identifier before a bracket, which also refused `-4\Lambda(r^{2}+p^{2})` --
+    #: where juxtaposition IS multiplication and the paper means exactly that.  **`f'(x)` is an
+    #: application in every reading; `\Lambda(x)` is a product in this corpus's.**  So the raw
+    #: fragment is tested for a prime immediately before a bracket, before the prime is rewritten
+    #: away, and an undeclared name is left to the strict check below.
+    assert not re.search(r"['\u2032]+\s*\\?[a-z]*\s*\(", frag), (
+        'paper_formula: %r applies a PRIMED name to an argument; this dialect multiplies instead of '
+        'applying, so the site is refused rather than mistranslated.' % frag[:70])
     assert not re.search(_fn + r'\s*\*\*', s), (
         'paper_formula: a function raised to a power is outside this dialect -- '
         '`f^n(x)` is ambiguous here and is not guessed: ' + repr(frag[:80]))
@@ -226,6 +277,11 @@ def equation(tex, label):
     body = re.sub(r'\\label\{[^}]*\}', ' ', body)
     body = re.sub(r'\\qquad.*$', '', body, flags=re.S)
     body = re.sub(r'\\text\{[^}]*\}', ' ', body)
+    #: ⌗ AN APPROXIMATION IS A DIFFERENT CLAIM FROM AN EQUALITY, so the exact chain ends at the
+    #: first `\approx`.  `eq:ds-entropy` reads `S = A/4l^2 = pi(a/l)^2 = 3pi/(Lambda l^2) \approx 3e122`:
+    #: what a receipt attributes to it is the exact tail, and the numeric estimate after it is the
+    #: paper rounding, not the identity.  *Keeping it would make the dialect refuse the site instead.*
+    body = re.split(r'\\(?:approx|simeq|sim|propto|lesssim|gtrsim)', body)[0]
     return body.strip().rstrip(',.').strip()
 
 

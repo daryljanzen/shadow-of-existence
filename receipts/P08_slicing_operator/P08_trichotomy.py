@@ -26,8 +26,15 @@ al,tau,rho,chi,tht,ph,E,M,r,a = sp.symbols('alpha tau rho chi theta phi E M r a'
 import os, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
 import paper_formula as pf
-_P8 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+#: ⛔ AND THE RECEIPT OPENS THE PAPER ITSELF rather than handing a PATH to the helper.
+#: `check_unread_figure` decides READS-PAPER from THIS file's own source, so a read delegated
+#: to `paper_formula` is invisible to it -- the repair would have left the site reading the
+#: paper and still counting as NO-READ.  *Found because `P15_expansion_law` stayed NO-READ
+#: after its figures were parsed.*  `paper_formula` takes the TEXT, so the open stays here
+#: where the instrument can see it and the parse stays there.
+_P8_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
                    'slicing_operator.tex')
+_P8 = open(_P8_PATH, encoding='utf-8').read()
 def ricci_scalar(gm, cs):
     n=len(cs); gi=gm.inv()
     Ga=[[[sp.simplify(sum(gi[d,e]*(sp.diff(gm[e,b],cs[c])+sp.diff(gm[e,c],cs[b])-sp.diff(gm[b,c],cs[e])) for e in range(n))/2) for c in range(n)] for b in range(n)] for d in range(n)]

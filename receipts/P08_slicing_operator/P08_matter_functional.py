@@ -44,8 +44,15 @@ fp=sp.diff(f,r); fpp=sp.diff(f,r,2)
 import os, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
 import paper_formula as pf
-_P8 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+#: ⛔ AND THE RECEIPT OPENS THE PAPER ITSELF rather than handing a PATH to the helper.
+#: `check_unread_figure` decides READS-PAPER from THIS file's own source, so a read delegated
+#: to `paper_formula` is invisible to it -- the repair would have left the site reading the
+#: paper and still counting as NO-READ.  *Found because `P15_expansion_law` stayed NO-READ
+#: after its figures were parsed.*  `paper_formula` takes the TEXT, so the open stays here
+#: where the instrument can see it and the parse stays there.
+_P8_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
                    'slicing_operator.tex')
+_P8 = open(_P8_PATH, encoding='utf-8').read()
 # (i) 8pi T^t_t and 8pi T^theta_theta
 Ttt = sp.simplify(Gud[0,0] + Lam)                    # 8pi T^t_t = G^t_t + Lambda
 Tthth = sp.simplify(Gud[2,2] + Lam)

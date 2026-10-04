@@ -99,7 +99,10 @@ COMPUTES: scope.
 
 Written r3708 by node 60, number-theory v2 pass B rows 1 and 2 (`p0`, `P03`).
 """
+import os, re, sys
 import sympy as sp
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
 
 r, M = sp.symbols('r M', real=False)
 
@@ -164,8 +167,18 @@ if __name__ == '__main__':
     print('           the same Gauss-lemma fact P05 proves over C(M) -- degree one in 2M')
 
     disc = sp.expand(sp.discriminant(CUBIC, r))
-    check(f'discriminant of r^3-r+2M  ->  {disc}   (i.e. 4 - 27(2M)^2, exactly P05 sec:deck)',
-          sp.simplify(disc - (4 - 108 * M**2)) == 0)
+    #: ⛭ r7157+cc66.116: `4 - 108 M^2` was typed here and attributed to `P05` `sec:deck`, which
+    #: states it as `\Delta = 4-27(2M)^{2}`.  It is PARSED from the paper's own sentence now, with the
+    #: match asserted unique.  ⌗ `sec:deck` is a SECTION, so this is `r7153`'s sentence template and
+    #: not an equation parse -- and the parsed form is the paper's `(2M)^2` grouping, expanded here,
+    #: so this receipt no longer carries the arithmetic the paper did.
+    _GP = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+                            'groupoid_paper.tex'), encoding='utf-8').read()
+    _d = re.findall(r'with discriminant \$\\Delta=([^$]+)\$', _GP)
+    assert len(_d) == 1, f"sec:deck's discriminant: the paper carries {len(_d)} statement(s), not one"
+    _DISC = sp.expand(pf.to_sympy(_d[0], {'M': M}))
+    check(f'discriminant of r^3-r+2M  ->  {disc}   (P05 `sec:deck` PARSED: {_d[0]} = {_DISC})',
+          sp.simplify(disc - _DISC) == 0)
     sq = is_square_in_QQ_M(disc)
     check(f'the discriminant is a square in Q(M)?  ->  {sq}   (NOT a square, so Gal = S_3 '
           f'over the REAL base too)', sq is False)

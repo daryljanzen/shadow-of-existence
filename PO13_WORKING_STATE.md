@@ -7558,3 +7558,38 @@ Earliest is `r6959`. ⇒ **A standing inconsistency, not one mistyped subject:**
 ### What is left
 
 The 4 `sec:` sites next, on `r7153`'s sentence template; then the 4 refused, read individually and **named rather than absorbed**. The distribution goes in once when the 17 close.
+
+## cc66.116 — `r7157`: 16 of the 17 anchored sites repaired, `OWED` 50 → 34. My 9-of-17 reach was wrong in the other direction — three of the four "refusals" were my translator, not the papers. And the repair almost made its own reads invisible to the gate
+
+`check_unread_figure`: **OWED 50 → 34**, `FORMULA` **31 → 15** — down by exactly the sixteen. 87 sites / 87 rows, no new `NO-READ` site, no stale entry, ceiling left at 50 (70's). `check_prose_pins`: 140 keys, `UNADJUDICATED 0`, ceiling 0. Fast job green; twelve receipts green and hash-identical across `PYTHONHASHSEED` 0/99.
+
+### ⛔ A correction to my own correction
+
+`cc66.115` said the parse reached 9 of 17 with 4 refused by the dialect. **Three of those four were refused by my translator, not by the papers**, and finding that took the block from 9 to 16:
+
+- **`f^{n}(x)` for a named function is a convention, not an ambiguity.** `\coth^2(x)` means `(\coth x)^2` throughout these papers; the one reading that isn't is `f^{-1}`. Translating it correctly beat refusing it, and `eq:rate` and `eq:omega-ratio` came in on that alone.
+- **The function-application guard was over-broad twice.** It first refused *any* identifier before a bracket — which also refused `-4\Lambda(r^2+p^2)`, where juxtaposition **is** multiplication. ⇒ **The test is the PRIME, not the bracket:** `f'(x)` is an application in every reading, `\Lambda(x)` is a product in this corpus's. Narrowed to that, `eq:separated`'s right side came in while its primed left side stays refused.
+
+⇒ So: I over-claimed the reach, then under-claimed it, and only reading each refusal found which was which. **The guards caught my translator four times across this block and the papers never.**
+
+### ⛔⛔ The finding most worth gating: the repair almost made its own reads invisible
+
+`check_unread_figure` decides `READS-PAPER` **from the receipt's own source.** I had the receipts hand a *path* to `paper_formula` and let the helper open the paper — so **the read happened and the instrument could not see it.** The repair would have left eight sites genuinely reading the paper and still counted `NO-READ`.
+
+Found only because `P15_expansion_law` stayed `NO-READ` after its three figures were parsed — noticed in the gate's own delta, not by foresight. Fixed by having each receipt `open()` the paper itself and pass the **text**; `paper_formula` already accepted text, so the open sits where the instrument looks and the parse stays in the helper.
+
+⌗ **A general hazard for any shared-helper repair here:** an instrument that reads a receipt's *source* measures what the receipt says it does, not what it does. **Moving work into a helper can discharge the work and keep the finding.**
+
+### Two new prose-pin keys, created by this repair, and they are the shape I named
+
+`len(_RULE) == 1` and `len(_d) == 1` — the uniqueness asserts on the two sentence parses. Verdicted **DELIBERATE**, **UNIQUENESS ON A LIVE DOCUMENT**: two matches means the attribution is ambiguous and nothing is checked; zero means the paper dropped the sentence. Both must fail, so `== 1` *is* the claim. `r7155` predicted this accounting exactly.
+
+### The one remaining, named rather than absorbed
+
+**`eq:dscont` (`P03_seam_continuation`): `ds^2 = -d\psi^2 + \cosh^2\psi\,d\Omega^2`** — a metric line element. `d\psi` and `d\Omega` are differentials and every algebraic parse turns them into products; mine returns `Omega**2*d*cosh(psi)**2 - d*psi**2`, which is wrong and only looks right.
+
+⇒ The instrument it wants is a **line-element parse**: a map from each differential squared to its coefficient, verified term by term (`-1` on `d\psi^2`, `\cosh^2\psi` on `d\Omega^2`). **Not built as a regex fitted to this one metric** — a bound fitted to the single case in front of me is the shape this round keeps rejecting. One site does not earn a general instrument yet.
+
+### Next
+
+The 14 `NO-ANCHOR` sites as the derivation block — nine `P10` re-parameterisation identities and five to read individually. The distribution goes in once when those close, with the 16/1 folded into it.
