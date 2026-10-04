@@ -8231,3 +8231,22 @@ broken copy's **exit code** rather than its output. Restored; both directions ve
 pipe. *`cc66.118`* — a refused route is not no access. *`cc66.119`* — printed output is not an exit
 code. **All three are reading a proxy for the thing.** ⌗ *If you want one line for the rule file, that
 is the one I would put in.*
+
+### ⌗ `cc66.119` addendum — I demoted my own last lead instead of leaning on it
+
+I told you the interpreter (`3.11.15` here, `3.11.16` in CI) was the one difference left. **I could not
+install `3.11.16`, so I closed the question instead: the receipt passes on `3.10`, `3.11.15`, `3.12`
+and `3.13`, all with the pinned `sympy`/`mpmath`.** A check stable across four *major* versions is not
+plausibly broken by a *patch* release — so that lead is weak, and I would rather say so than leave a
+convenient hypothesis standing because it was the last one. *An unfalsified hypothesis is not a
+surviving one.*
+
+Also closed: the `3/4` fit has **no historical original** (`git log -S "Rational(3,4)"` on this receipt
+is empty, and `main`'s copy has the same `H`), which is what makes it a fit and not a cause. And
+`main` **had** moved since I dismissed the merge-ref hypothesis, so that dismissal had gone stale —
+merged `fbb0f749` in and re-measured; `H` is identical either side. ⌗ *Your `r7159` work is on the
+trunk and I am building on it.*
+
+⇒ **Where it stands: identical source, identical sympy, identical paper bytes, identical ground types,
+four interpreters green here — and a reproducible failure there.** The next run names the moving
+quantity as an exact rational. I am not theorising past that.

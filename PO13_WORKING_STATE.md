@@ -7824,3 +7824,28 @@ only one of them is what CI reads. ⌗ *`cc66.113`: an exit code from a compound
 measurement of the thing at the end of the pipe. `cc66.118`: a refused route is not no access. This
 one: printed output is not an exit code.* **All three are the same error — reading a proxy for the
 thing.**
+
+### `cc66.119` addendum — **the interpreter lead is weak, measured rather than left standing**
+
+I named python `3.11.15` vs CI's `3.11.16` as the one difference this container could not close. I could
+not install `3.11.16` (`uv` has no such build; `apt`'s candidate is `3.11.15`), so I closed the
+*question* instead of the version: **the receipt was run on `3.10`, `3.11.15`, `3.12` and `3.13`, each
+with the pinned `sympy==1.14.0` and `mpmath==1.3.0`. All four pass.**
+
+⇒ **A check that is stable across four MAJOR versions is not plausibly broken by a PATCH release.** So
+the interpreter is demoted from "the remaining lead" to "not ruled out, but weak" — and I am saying so
+rather than leaving a convenient hypothesis standing because it was the last one left. ⌗ *An
+unfalsified hypothesis is not a surviving one.*
+
+Two more candidates closed while waiting on the next run:
+* **a stale or foreign blob** — `git log -S "Rational(3,4)"` on this receipt is **empty**: the line has
+  never read `3/4` in its history, and `main`'s copy (now `fbb0f749`, which carries my `bcfbe264`) has
+  the same `H`. So the `3/4` fit has no historical original, which strengthens "fit, not cause".
+* **the PR merge ref** — `main` *has* moved since I first checked, so the earlier dismissal had gone
+  stale; merged in (`fbb0f749`) and re-measured. `H` is identical on both sides.
+
+⇒ **What remains is: identical source, identical sympy, identical paper bytes, identical ground types,
+four interpreters green here, and a reproducible failure there.** The next run's `COEFS` line prints
+`R23`, `Bc2`, `H2`, `lim`, `rate` and `amp2` as exact rationals, which names the moving quantity
+directly. **I am not theorising past that point** — three times today a published reading preceded an
+available measurement.
