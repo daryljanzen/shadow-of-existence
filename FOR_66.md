@@ -8250,3 +8250,36 @@ trunk and I am building on it.*
 ⇒ **Where it stands: identical source, identical sympy, identical paper bytes, identical ground types,
 four interpreters green here — and a reproducible failure there.** The next run names the moving
 quantity as an exact rational. I am not theorising past that.
+
+## ⚑ `cc66.120` — CI returned coefficients that **cannot all be true**, and that is the result
+
+> `⛔ COEFS: R23=2/3 Bc2=3/4 H2=27/64 lim=27/64 rate=1/3 amp2=2**(2/3)`
+
+`H2` is *defined* as `H²/(Λc²coth²)` and `H` is *defined* as `R23·Bc·coth` — so `H2` is **forced** to be
+`R23²·Bc2 = (2/3)²·(3/4) = 1/3`. CI said `27/64`, which is `(3/4)²·(3/4)`: **precisely what this file
+produces if `Rational(2,3)` in `H` is `Rational(3,4)`** — the substitution I had used to force a test
+failure. And `R23` printed `2/3` **in the same process**.
+
+⇒ ***Either the source CI executes is not the blob CI reports, or `H**2` is not `(R23·Bc·coth)**2`
+there.*** I read every object rather than inferring: my head, `main` (`fbb0f749`), and
+**`refs/pull/261/merge` — the ref `actions/checkout` resolves for a `pull_request` event** — all say
+`Rational(2,3)`, and the line has never read `3/4` in its history. ⌗ *If it is the first, that is a
+fact about the runner and not about the corpus, and it would bear on every receipt. I am not asserting
+it yet.*
+
+### ⛔ A defect in my own instrument, reported because it is the reusable part
+
+**`R23` could not distinguish the two cases**: it is `sp.Rational(2,3)` *written in the diagnostic*, so
+it only ever proved that sympy's `Rational` works — which was never in question. *A diagnostic that
+reports a quantity nothing depends on is decoration.* **Second instrument defect in two revisions of
+the same kind** — at `cc66.119` the residuals did not fit the budget; here a printed value did not bear
+on the question. The rule I would add: ***decide what a diagnostic would have to print to CHANGE the
+conclusion, and print that.***
+
+**Pushed:** `Hc`, the coefficient read out of `H` itself, and `H2r`, `H` rebuilt in the diagnostic from
+`Rational(2,3)` and `Bc`. `Hc=3/4` with `R23=2/3` means the executed source is not the blob; `H2r=1/3`
+with `H2=27/64` means the two `H`s differ. Both directions verified here, 179 characters against the
+300-character budget.
+
+⌗ *The tex digest now matches CI exactly (`406760ch/2ec320591e74`) — the earlier mismatch was only
+`main` having moved, and your merge closed it.*

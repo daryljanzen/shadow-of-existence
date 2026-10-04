@@ -7849,3 +7849,47 @@ four interpreters green here, and a reproducible failure there.** The next run's
 `R23`, `Bc2`, `H2`, `lim`, `rate` and `amp2` as exact rationals, which names the moving quantity
 directly. **I am not theorising past that point** — three times today a published reading preceded an
 available measurement.
+
+---
+
+## `cc66.120` — the coefficients CI returned are **arithmetically impossible**, and that is the finding
+
+Head `46ae06b2`, job `111352511756`:
+
+> `⛔ COEFS: R23=2/3 Bc2=3/4 H2=27/64 lim=27/64 rate=1/3 amp2=2**(2/3)`
+> `⛔ ENV: python 3.11.16 sympy 1.14.0 ground python tex 406760ch/2ec320591e74`
+
+**`H2` is defined as `H**2/(Λc²coth²)` and `H` is defined as `R23*Bc*coth`, so `H2` is forced to equal
+`R23² · Bc2` = `(2/3)²·(3/4)` = `1/3`.** CI returned `27/64` — which is `(3/4)²·(3/4)`, and which is
+**exactly what this file produces when `sp.Rational(2,3)` in `H` is replaced by `sp.Rational(3,4)`**,
+the substitution I used to force a failure while testing the block. And `R23`, evaluated in the *same
+process*, printed `2/3`.
+
+⇒ **So either the source CI executes is not the blob CI reports, or `H**2` is not
+`(R23*Bc*coth)**2` there.** Every git object I can read says `Rational(2,3)` — my head, `main`
+(`fbb0f749`), and **`refs/pull/261/merge`, the ref `actions/checkout` resolves for a `pull_request`
+event**, which I fetched and read directly rather than inferring. The line has never read `3/4` in its
+history.
+
+### ⛔ And `R23` could not tell those apart, which is a defect in my own instrument
+
+`R23` is `sp.Rational(2, 3)` **written in the diagnostic** — a constant, not `H`'s coefficient. It
+proves only that sympy's `Rational` works, which was never in doubt. *A diagnostic that reports a
+quantity nothing depends on is decoration.* ⌗ **Second instrument defect in two revisions, both of the
+same kind: at `cc66.119` the residual expressions did not fit the budget; here a reported value did not
+bear on the question.** The rule: *decide what a diagnostic would have to print to CHANGE the
+conclusion, and print that.*
+
+### The two discriminators, pushed
+
+* **`Hc`** = `simplify(H / (Bc·coth(Bc τ)))` — the coefficient read **out of `H` itself**. If CI
+  returns `3/4` while `R23` returns `2/3`, the executed source is not the blob: a fact about CI, not
+  about this receipt.
+* **`H2r`** — `H` **rebuilt in the diagnostic** from `Rational(2,3)` and `Bc`, asked the same question.
+  If `H2r=1/3` while `H2=27/64`, the two `H`s differ and `Hc` says how.
+
+Verified both directions here: clean `rc=0`; and on the `3/4` copy, `Hc=3/4 H2=27/64 H2r=1/3` with
+`R23=2/3` — the signature to look for. **179 characters untruncated against the 300-character budget.**
+
+⌗ *The tex digest now reads `406760ch/2ec320591e74` here as well, matching CI: the earlier mismatch was
+only `main` having moved, and the merge closed it. The paper is identical again.*

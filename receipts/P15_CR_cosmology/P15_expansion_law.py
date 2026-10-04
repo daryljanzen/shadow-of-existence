@@ -153,14 +153,31 @@ if not allpass:
     #: pin.*  So what goes in the budget now is the decisive SCALARS: every coefficient below is an exact
     #: rational, each a handful of characters, and between them they separate "the parse moved" from
     #: "this file's own `H` is not what it reads as" without any expression surviving the cut.
+    #: ⌘ r7161+cc66.120: ** THE FIRST SET OF COEFFICIENTS WAS ARITHMETICALLY IMPOSSIBLE, AND THAT IS
+    #: THE FINDING. **  CI returned `R23=2/3 Bc2=3/4 H2=27/64`.  But `H2` is *defined* as
+    #: `H**2/(Lam c^2 coth^2)` and `H` is *defined* as `R23*Bc*coth`, so `H2` is forced to be
+    #: `R23^2 * Bc2` = `(2/3)^2 * (3/4)` = `1/3`.  **27/64 is `(3/4)^2 * (3/4)`** -- exactly what this
+    #: file produces when `sp.Rational(2,3)` in `H` is replaced by `sp.Rational(3,4)`, which is how I
+    #: forced a failure to test this block.  *And `R23`, evaluated in the SAME process, prints `2/3`.*
+    #: ⛔ So either the source CI executes is not the blob CI reports -- every git object I can read,
+    #: including `refs/pull/261/merge`, says `Rational(2,3)` -- or `H**2` is not `(R23*Bc*coth)**2`
+    #: there.  **`R23` was useless for telling those apart: it is a constant written HERE, not `H`'s
+    #: own coefficient.**  A diagnostic that reports a quantity nothing depends on is decoration.
+    #: So two discriminators, and they are the whole point of this revision:
+    #:   • `Hc` reads the coefficient OUT OF `H` itself -- if it is `3/4` while `R23` is `2/3`, the
+    #:     executed source is not the blob, which is a fact about CI and not about this receipt; and
+    #:   • `H2r` REBUILDS `H` here from `R23` and `Bc` and asks the same question of the rebuild -- if
+    #:     `H2r` is `1/3` while `H2` is `27/64`, then the two `H`s differ and `Hc` says how.
     _C = lambda e: sp.simplify(e)
+    _Hr = sp.Rational(2, 3)*Bc*sp.coth(Bc*tau)          # H, rebuilt here from the same two factors
     _COEF = [
         ('R23',  sp.Rational(2, 3)),                                     # want 2/3
         ('Bc2',  _C(Bc**2 / (Lam*c**2))),                                # want 3/4
+        ('Hc',   _C(H / (Bc*sp.coth(Bc*tau)))),                          # want 2/3 -- H's OWN coef
         ('H2',   _C(H**2 / (Lam*c**2*sp.coth(Bc*tau)**2))),              # want 1/3
+        ('H2r',  _C(_Hr**2 / (Lam*c**2*sp.coth(Bc*tau)**2))),            # want 1/3 -- the rebuild
         ('lim',  _C(sp.limit(H**2, tau, sp.oo) / (Lam*c**2))),           # want 1/3
         ('rate', _C(_RATE_COTH / (Lam*c**2*sp.coth(Bc*tau)**2))),        # want 1/3
-        ('amp2', _C(amp_nariai**2 * Lam)),                               # want 2**(2/3)
     ]
     print("\u26d4 FAILING: %s" % ('; '.join(n for n, _r in _BAD)
                              or 'none isolated -- a check failed that this block does not cover'))
