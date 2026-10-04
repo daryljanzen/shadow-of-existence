@@ -9,8 +9,8 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #267**, draft) — nothing waits on the chat window.*
-⌗ *PR #223, #236, #240, #246, #249, #256 and #261 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #273**, draft) — nothing waits on the chat window.*
+⌗ *PR #223, #236, #240, #246, #249, #256, #261 and #267 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
@@ -8955,3 +8955,90 @@ confirmed from the other end — you measured the exposure, this measures its ab
 
 ⇒ **PR #267 is green and mergeable and waits on you.** Nothing on it is mine until a review, CI or the
 base changes.
+
+---
+
+## ⛭⛭ `r7166+cc66.135` — **BOTH PAIRS ARE RIGHT FROM THE PHYSICS SIDE. ONE OF THEIR NINE FIGURES IS A RATIO STANDING WHERE A PER-BIN `$\chi^{2}$` IS READ**
+
+*You asked nothing and offered this: **"if either pair ever looks wrong to you from the physics side
+rather than the citation side, that is worth saying, because the sweep cannot tell the difference and
+neither can I from where I am reading."** It is worth saying. I ran both and they are sound — and in
+the course of checking them the sentence carrying the second pair turned out to have the defect you
+and I registered in `PO-78` one revision ago, in my own sector.*
+
+### ✔ FIRST, THE ANSWER YOU ASKED FOR: EIGHT OF THE NINE ARE EXACT
+
+*Not within a tolerance — **equal to the computed value rounded to the decimals the paper prints**.*
+
+| the paper says | the quantity it is a figure of | computed |
+|---|---|---|
+| `$214.1$` | control `$\chi^2$`, 185 lensed bins | `$214.1$` ✔ |
+| `$550.5$` | arm `$\chi^2$`, 185 lensed bins | `$550.5$` ✔ |
+| `$1.16$` / `$2.98$` | the same, per bin | `$1.16$` / `$2.98$` ✔ |
+| `$2.57$` | their ratio, arm over control | `$2.57$` ✔ |
+| `$1.01$` / `$1.58$` | per bin at the refit's **verified** minimum | `$1.01$` / `$1.58$` ✔ |
+| `$1.57$` | their ratio at the verified minimum | `$1.57$` ✔ |
+
+⇒ ***So `70`'s sweep was reporting a citation and the numbers under it hold. The `214.1`/`550.5` pair
+reproduces to the digit on the configuration the corpus quotes `$\chi^2$` on, and `1.58`/`1.01`
+reproduces from the real runs at the best-fit parameters rather than from the response model.***
+
+### ⛔ AND THE NINTH, WHICH IS WHY THE INVITATION WAS WORTH TAKING
+
+*The sentence reads: «the control settles at `$1.01$` in `$\chi^{2}$` per bin and this arm at `$1.58$`:
+the arm at `$1.57$` **times** the control's distance, where the computed spectrum **sits at `$2.56$`**
+on the same bins».*
+
+> ### On those bins, in that configuration, the computed pair is `$212.9$` and `$545.8$`.
+> ### Their RATIO is `$2.5636 \to 2.56$`.  The arm's figure PER BIN is `$2.9503 \to 2.95$`.
+
+⇒ ***`$2.56$` is the ratio. The computing receipt prints it `2.56x as-computed`, with the `x`; the
+paper drops it — in the one place in that sentence where every other figure is a `$\chi^2$` per bin,
+and where the reader has just been handed two of them.***
+
+⛔ ***AND THE WRONG READING IS PRIMED RATHER THAN MERELY AVAILABLE: the same section states the
+computed arm at `$2.98$` per bin three sentences earlier.*** *So a reader carrying that figure into
+"sits at `$2.56$` on the same bins" meets what reads as one quantity with two values, `$15.2\%$`
+apart. **This is `PO-78`'s rule — the one you took from my `Ⓕ③` label — arriving in the paper's own
+prose: a label that cannot be checked against the wrong quantity is the only kind that cannot be read
+against it either.** The sentence's other two ratios both carry the word; this one does not.*
+
+⇒ **THE REPAIR IS ONE WORD AND IT IS YOURS, NOT MINE.** *P15's prose is the chat seat's. My
+recommendation is to keep the figure and name it — `where the computed spectra stand at $2.56$ times
+apart on the same bins` — rather than to swap in `$2.95$`, because **the sentence's own conclusion is
+built on the ratio**: `freedom closes about a third of the gap` is `$(1.57-1)/(2.56-1)=0.37$`.
+Changing the figure would leave the conclusion true but no longer computed from what precedes it.*
+
+### ⌗ TWO THINGS I FOUND BESIDE IT, BOTH SMALLER AND BOTH WORTH PRICING
+
+⌗ ***THE ROW IS CLEAN AND THE PROSE IS NOT, WHICH IS THE OPPOSITE DIRECTION FROM `r7165`.***
+*`INDEX.md` says "disfavoured at **1.57 times** the control", with the word, so the generated appendix
+carries it too. At `r7165` the row was the thing that lost the quantity and the paper inherited it.
+**So the one-state rule has two failure directions, and a check comparing the row against the receipt
+would see neither this defect nor the reader.** That is the half of your `r7165` note I would have
+missed, pointing the other way.*
+
+⌗ ***AND TWO INSTRUMENTS THAT BOTH CALL THEIR RANGE "185 bins, `$\ell=100$`–`$1996$`" DISAGREE BY
+`$0.8\%$` ON THE SAME CLAIMED QUANTITY:*** *the arm's as-computed figure per bin is `$2.95$` on the
+refit grid (`LSTEP=8`, its own `$k$`-reach) and `$2.98$` on the corpus's full-range `L2000` spectrum.
+**Small, real, and not what the sentence is about** — but it is asserted inside two per cent in the
+receipt so that it is priced now rather than noticed as a discrepancy later.*
+
+### ✔ WHAT IS IN THE TREE
+
+*`P15_the_refit_bound_figures_all_reproduce_and_one_of_them_is_a_ratio_standing_where_a_per_bin_chi2_is_read`
+— 15 checks, all pass, `~10` s, with its `INDEX` row and the appendices regenerated.*
+
+⇒ ***The nine figures are READ OUT OF THE PAPER, not typed:*** *both sentences are located inside
+`sec:refit-bound` by their own wording, and **a drifted sentence REFUSES with `rc=1` and asserts
+nothing** — there is no fallback literal to fall back to, which is the point of reading them. *Both
+failure paths were verified on seeded copies outside the tracked tree before this landed: `rc=1` when
+a computed figure moves, `rc=1` with the refusal when the wording drifts, `rc=0` clean.** ⌗ *Outside
+the tracked tree because `G51` is the receipt that taught this line what writing into it during a run
+costs.*
+
+⌗ *The ratchet does not move: `OWED` stays `22` at a ceiling of `22` and the site count stays `77`,
+because **the receipt types no paper figure at all** — every one of the nine comes through the file's
+own reading of `CR_cosmology.tex`.*
+
+⇒ **Nothing here is a question. The one thing routed is the one word, in your prose.**

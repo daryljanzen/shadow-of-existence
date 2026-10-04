@@ -8417,3 +8417,48 @@ green that measured nothing is exactly what a closing confirmation must not be.*
 ⇒ `_MUTATES_TREE` holds on a real PR scope, not only on 66's three-receipt control. *66 measured the
 exposure at 55.4% per shared scope; this measures its absence — five consecutive reds before the
 serialisation, green on the first head after it.*
+
+---
+
+### ⛭⛭ `cc66.135` — `sec:refit-bound`'s nine quoted figures, measured against the three configurations they are figures of
+
+**The measurement, from banked spectra with P15's own derived CAMB lensing operator imposed on both
+arms alike.** Each configuration asserted at 185 bins; nothing re-solved and no fit re-run.
+
+| configuration | source | control | /bin | arm | /bin | arm/control |
+|---|---|---|---|---|---|---|
+| full-range `L2000` | `spectra/cc66_{lcdm,cr_x_h686}_L2000` | **214.1** | **1.16** | **550.5** | **2.98** | **2.57×** |
+| refit grid, as-computed | `refit_grid185/{lcdm,cr}_base` | 212.9 | 1.15 | 545.8 | **2.95** | **2.56×** |
+| refit, verified minimum | `spectra/cc66_r185_verify_{lcdm,cr}` | 186.5 | **1.01** | 292.4 | **1.58** | **1.57×** |
+
+⇒ **Eight of the paper's nine figures equal the computed value rounded to the decimals the paper
+prints** — `214.1`, `550.5`, `1.16`, `2.98`, `2.57`, `1.01`, `1.58`, `1.57`. *No tolerance: a
+tolerance wide enough to absorb a wrong quantity cannot report one.*
+
+⛔ **The ninth, `2.56`, is the as-computed RATIO** (`545.8/212.9 = 2.5636`), standing in a sentence
+whose every other figure is a χ² per bin. The arm's as-computed figure *per bin* on those bins is
+**2.95** — the two readings `15.2%` apart. The computing receipt prints it `2.56x as-computed`, with
+the `x`; the paper's sentence drops it, three sentences after stating the computed arm at `2.98` per
+bin, so the wrong reading is primed and not merely available.
+
+⌗ **`PO-78`'s rule, registered at `r7165` from this seat's own `Ⓕ③` label, in the paper's prose.** The
+sentence's other two ratios both carry the word "times". Routed to the chat seat at `r7166+cc66.135`
+with a recommended replacement that keeps the figure and names it, because the sentence's own
+conclusion — *"freedom closes about a third of the gap"* — is `(1.57−1)/(2.56−1) = 0.37`, computed
+from the ratio and not from the per-bin pair.
+
+⌗ **Two failure directions for the one-state rule, not one.** At `r7165` the `INDEX` row lost the
+quantity and the generated appendix carried it to the reader. Here the row is clean — it says *"1.57
+times the control"* — and only the prose is wrong. *So a check comparing the row against the receipt
+sees neither this defect nor the reader.*
+
+⌗ **A `0.8%` instrument gap, priced rather than left to be found.** The arm's as-computed per bin is
+`2.95` on the refit grid (`LSTEP=8`, its own k-reach) and `2.98` on the corpus's full-range `L2000`
+spectrum — the same claimed quantity on the same 185 bins, two configurations. Asserted inside two
+per cent in the receipt.
+
+⌗ **Both failure paths of the new receipt verified on seeded copies placed OUTSIDE the tracked tree**
+— `rc=1` when a computed figure moves (6 of the 9 checks fail under a 3% scaling; the ratios
+correctly survive it), `rc=1` with an explicit refusal when the paper's wording drifts, `rc=0` clean.
+*Outside the tracked tree because `G51` is the receipt that taught this line what writing into it
+during a run costs.*
