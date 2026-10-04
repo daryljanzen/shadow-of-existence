@@ -1,12 +1,4 @@
 {
- "claude/shadow-of-existence-setup-wgcmvt": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_expansion_law.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37182713251",
-    "since": "e38af0bc732268a56f9a8e1f6196574a1d131b90"
-   }
-  }
- },
  "main": {
   "suite": {
    "receipts/P15_CR_cosmology/P15_expansion_law.py": {
