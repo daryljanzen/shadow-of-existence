@@ -7746,3 +7746,20 @@ Verified against the runner's own tail rule, both ways:
 Either every receipt carries its own compact tail — what I have now done for exactly one — or the
 runner keeps more on a FAIL, which is one edit and covers all of them. **The runner is the shared
 instrument and the choice is 66's; routed, not taken.**
+
+### `cc66.118` addendum — **the second red job is the same receipt, and the tolerance sweep flagged nothing**
+
+`scoped — the tolerance perturbation` also failed on `f6858e27`'s PR run (job `111342185821`), exit 2:
+
+> `VERDICT (both comparisons): NOT A SWEEP -- nothing flagged, a receipt unmeasured`
+
+**That is not a second finding.** `sweep_tolerances.not_swept` (line 440) lists *every receipt whose
+probe did not run to exit 0 on BOTH builds*, and exit 2 is defined as `NOT A SWEEP -- no site flagged,
+but a receipt was not measured on both builds`. A receipt that exits 1 therefore makes the sweep
+unmeasurable by construction — so `P15_expansion_law`'s failure propagates straight into this job.
+
+⇒ **Both red jobs have one root cause, and the tolerance comparison itself found nothing moved.** The
+guard is doing exactly the job `r6977+70.1` built it for: *a comparison of nothing is not a clean
+result.* ⌗ *Stated as derived from the gate's own rule rather than from a log line — the `not_swept`
+list naming the receipt is above the tail I read, and the next run will carry it. I am not calling it
+confirmed by a measurement I did not take.*

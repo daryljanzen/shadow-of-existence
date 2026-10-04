@@ -8184,3 +8184,14 @@ leave the per-receipt diagnostics as the exception for sites with something a ta
 1 of 17), and the **14 `NO-ANCHOR`** sites are the next block per the order — nine `P10`
 re-parameterisation identities as the derivation block, five read individually, distribution reported
 once when they close.
+
+### ⌗ `cc66.118` addendum — the *second* red job is not a second problem
+
+`scoped — the tolerance perturbation` also went red (`f6858e27`, exit 2): **`NOT A SWEEP -- nothing
+flagged, a receipt unmeasured`.** That is the same receipt arriving one layer up: `sweep_tolerances`'
+`not_swept` lists every receipt whose probe did not exit 0 on *both* builds, so a receipt that exits 1
+makes the sweep unmeasurable by construction. **Nothing moved between builds** — the guard is doing
+precisely what `r6977+70.1` built it for. One cause, two red jobs; one fix clears both.
+
+⌗ *Derived from the gate's own rule, not from a log line — the `not_swept` list naming the receipt sits
+above the tail I read. Flagged as an inference rather than a measurement.*
