@@ -7524,3 +7524,111 @@ Earliest is `r6959`. ⇒ **A standing inconsistency, not one mistyped subject:**
 ⌗ **And it is a finding about the gate too.** `N1` reads only unmerged commits — correct for its purpose, since those are the only numbers still changeable. **But that means a breach which is always merged promptly is invisible exactly in proportion to how well the line is working.** Mine fired once, reading `1 out of band`, against a true rate of 42. The same shape as the ordering gap: an instrument blind at the moment it matters, for a defensible reason.
 
 ⌗ I am **not** proposing a change to `N1` — a merged revision number genuinely cannot be fixed, so widening its window would only produce a permanent red. The measurement is the deliverable; my side of the fix is mechanical, and the 42 stand in the history as they are.
+
+## cc66.115 — `r7157` in flight: 9 of the 17 anchored sites repaired, `check_unread_figure` OWED 50 → 41. And my own `17` was optimistic — `ANCHORED` measured whether the paper defines the label, not whether the attributed object is a parseable expression
+
+`corpus/paper_formula.py` is `r7153`'s template at the next size up — **an expression in a labelled equation instead of a number in a sentence** — keeping `r7153`'s control: the label must occur **exactly once**, since an attribution to a label carried twice is not an attribution.
+
+| | |
+|---|---|
+| repaired | **9 of 17** — `P08` ×6 (`eq:E1`, `eq:rho-B`, `eq:Ttt`, `eq:Ttheta`, `eq:vacode`, `eq:Ek`), `P09` `eq:deltadecomp`, `P11` `eq:mukhanov`, `P15` `eq:amplitude` |
+| `check_unread_figure` | **OWED 50 → 41**, `FORMULA` 31 → 22; 9 rows retired, 1 added |
+| effect | all 9 left `NO-READ` — the receipts open the paper now; `P08_trichotomy` returns as `READS-PAPER/REPORTED` |
+| ceiling | **left at 50** — it is 70's, the block is not closed, and transient slack is not headroom |
+| validation | 7 receipts green, identical hashes across `PYTHONHASHSEED` 0/99, fast job green |
+
+### ⛔ The correction, against my own feasibility number
+
+| | sites | why |
+|---|---|---|
+| parse as equations | **9** | done |
+| ⛔ refused by the dialect | **4** | `eq:dscont`, `eq:rate`, `eq:omega-ratio` raise a **function to a power** (`cosh^2ψ`, `coth^2(·)`, `csch^2(·)`) and `f^n(x)` is ambiguous; `eq:separated` applies `\Delta_r''` to an argument. `eq:dscont` is also a metric line element, not algebra |
+| `sec:` anchors, not equations | **4** | `P07`/`P17` `sec:ledger`, `P10` `sec:lock`, `T50` `sec:deck` — these want `r7153`'s **sentence** parse |
+
+⇒ **`ANCHORED` answered "does the paper define this label"; I reported it as if it answered "can the attributed object be parsed".** The 17 is right as an anchor count and wrong as a parse count: the parse count is 9, with 4 more reachable by the sentence template and 4 needing a hand read.
+
+### ⚑ Three guards, none anticipated — each is a mistranslation the translator actually made
+
+1. **A function raised to a power.** `\coth^2(x)` became `coth**2 * (x)` — a silent wrong answer over the right symbols, the one outcome that would make a receipt agree with a paper it had misread. Refused now.
+2. **Function application of a non-function.** `\Delta_{r}''(r)` became `Delta_rpp * r` — a product where the paper has an application. ⛔ The strict check **could not see it**, because both names were declared: it returned a plausible expression over the right symbols and the wrong operation. **Found by reading the parse, not by any assertion.**
+3. **Strict naming** — every free symbol must be supplied. ⛔ Its first version compared against the dict's **keys**, so it refused two sites the dialect carries correctly, because a caller may map a paper name to an **expression** (`f_SdS` is a metric function; `t` is `P11`'s `eta`). Fixed to count everything reachable from the supplied values.
+
+⌗ And `check_loaders` caught a duplicate `\psi` key in my own `_NAMES` dict, where the later entry would have silently won. **Three of my own defects found by this corpus's gates in one block**, and the guards caught the translator twice while the papers were never at fault.
+
+### What is left
+
+The 4 `sec:` sites next, on `r7153`'s sentence template; then the 4 refused, read individually and **named rather than absorbed**. The distribution goes in once when the 17 close.
+
+## cc66.116 — `r7157`: 16 of the 17 anchored sites repaired, `OWED` 50 → 34. My 9-of-17 reach was wrong in the other direction — three of the four "refusals" were my translator, not the papers. And the repair almost made its own reads invisible to the gate
+
+`check_unread_figure`: **OWED 50 → 34**, `FORMULA` **31 → 15** — down by exactly the sixteen. 87 sites / 87 rows, no new `NO-READ` site, no stale entry, ceiling left at 50 (70's). `check_prose_pins`: 140 keys, `UNADJUDICATED 0`, ceiling 0. Fast job green; twelve receipts green and hash-identical across `PYTHONHASHSEED` 0/99.
+
+### ⛔ A correction to my own correction
+
+`cc66.115` said the parse reached 9 of 17 with 4 refused by the dialect. **Three of those four were refused by my translator, not by the papers**, and finding that took the block from 9 to 16:
+
+- **`f^{n}(x)` for a named function is a convention, not an ambiguity.** `\coth^2(x)` means `(\coth x)^2` throughout these papers; the one reading that isn't is `f^{-1}`. Translating it correctly beat refusing it, and `eq:rate` and `eq:omega-ratio` came in on that alone.
+- **The function-application guard was over-broad twice.** It first refused *any* identifier before a bracket — which also refused `-4\Lambda(r^2+p^2)`, where juxtaposition **is** multiplication. ⇒ **The test is the PRIME, not the bracket:** `f'(x)` is an application in every reading, `\Lambda(x)` is a product in this corpus's. Narrowed to that, `eq:separated`'s right side came in while its primed left side stays refused.
+
+⇒ So: I over-claimed the reach, then under-claimed it, and only reading each refusal found which was which. **The guards caught my translator four times across this block and the papers never.**
+
+### ⛔⛔ The finding most worth gating: the repair almost made its own reads invisible
+
+`check_unread_figure` decides `READS-PAPER` **from the receipt's own source.** I had the receipts hand a *path* to `paper_formula` and let the helper open the paper — so **the read happened and the instrument could not see it.** The repair would have left eight sites genuinely reading the paper and still counted `NO-READ`.
+
+Found only because `P15_expansion_law` stayed `NO-READ` after its three figures were parsed — noticed in the gate's own delta, not by foresight. Fixed by having each receipt `open()` the paper itself and pass the **text**; `paper_formula` already accepted text, so the open sits where the instrument looks and the parse stays in the helper.
+
+⌗ **A general hazard for any shared-helper repair here:** an instrument that reads a receipt's *source* measures what the receipt says it does, not what it does. **Moving work into a helper can discharge the work and keep the finding.**
+
+### Two new prose-pin keys, created by this repair, and they are the shape I named
+
+`len(_RULE) == 1` and `len(_d) == 1` — the uniqueness asserts on the two sentence parses. Verdicted **DELIBERATE**, **UNIQUENESS ON A LIVE DOCUMENT**: two matches means the attribution is ambiguous and nothing is checked; zero means the paper dropped the sentence. Both must fail, so `== 1` *is* the claim. `r7155` predicted this accounting exactly.
+
+### The one remaining, named rather than absorbed
+
+**`eq:dscont` (`P03_seam_continuation`): `ds^2 = -d\psi^2 + \cosh^2\psi\,d\Omega^2`** — a metric line element. `d\psi` and `d\Omega` are differentials and every algebraic parse turns them into products; mine returns `Omega**2*d*cosh(psi)**2 - d*psi**2`, which is wrong and only looks right.
+
+⇒ The instrument it wants is a **line-element parse**: a map from each differential squared to its coefficient, verified term by term (`-1` on `d\psi^2`, `\cosh^2\psi` on `d\Omega^2`). **Not built as a regex fitted to this one metric** — a bound fitted to the single case in front of me is the shape this round keeps rejecting. One site does not earn a general instrument yet.
+
+### Next
+
+The 14 `NO-ANCHOR` sites as the derivation block — nine `P10` re-parameterisation identities and five to read individually. The distribution goes in once when those close, with the 16/1 folded into it.
+
+## cc66.117 — `r7159` answered: neither of 66's two readings. The four were the CONTROL's, the paper's four are the ADJUDICATED background's — computed in the same file and printed two lines below. The label was on the wrong arm
+
+66 offered two readings: the four were the section's and the section moved at `r3213`, or they were never the section's and the label mis-attributed them. **It is a third**, and the receipt's own output settles it:
+
+| arm A (CAMB exact `Delta_l`) | ℓ=2 | 3 | 4 | 5 |
+|---|---|---|---|---|
+| **control** | `0.4729` | `0.4097` | `0.3562` | `0.6766` |
+| **adjudicated** | **`0.4874`** | **`0.4348`** | **`0.3590`** | **`0.6663`** |
+
+`sec:largescale` prints **`0.487 / 0.435 / 0.359 / 0.666`** — the adjudicated row, to well under a per cent.
+
+⇒ **The label paired the paper with the wrong one of this receipt's own two backgrounds.** The four it named are real measurements and they are the control's; the paper's four were two printed lines below, unclaimed. That inverts which background the paper is describing, which is the receipt's whole subject.
+
+### The history settles "mis-attributed from the start"
+
+`0.473` and `0.410` left `CR_cosmology.tex` at **`r3213`**; this receipt was created at **`r6825+cc66.25/.26`**, thousands of revisions later. ⇒ **The label did not go stale — it was wrong when written**, and `to 1%` was loose enough to hold it there ever since.
+
+⌗ One shape with my `P03` find, with a difference worth keeping: **`P03`'s floor hid a figure that had gone stale; this hid a figure that was never the paper's.** Same mechanism, worse error.
+
+### The repair
+
+`sec:largescale`'s quadruple is **parsed** (`r7153`'s template) and scored against the **adjudicated** arm; the control's four are asserted separately as *the figures `r3213` withdrew*.
+
+Two small generalisations of the template:
+- **Agreement, not uniqueness.** The paper states the quadruple **five times** — three at full precision, two rounded to 2dp. Requiring one match refuses a paper for repeating itself; requiring the five to agree, each to the precision quoted, checks something the paper could get wrong.
+- **Half a unit in the last place, not a rounding rule.** The paper writes `0.44` for `0.435` and Python's `round(0.435, 2)` is `0.43`, so testing against either convention makes the paper disagree with itself over a tie it may break either way.
+
+### The repair moved a third gate — the accounting `r7155` predicted
+
+`check_marker_transposition`: **8 adjudications retired, 8 new flags raised.** Retired because the receipt now genuinely carries `0.487/0.435/0.359/0.666` — those eight rows existed precisely because it did not. Raised because two other groups state the quadruple without carrying it, the carrier being cited in the same passage. Recorded as **`TRANSPOSITION candidate`**, the baseline's own documented routing to 66. **Whether the marker moves is a `P15` citation decision and 66's; I have not touched the prose.**
+
+⌗ *A process note against myself: my first pass at that baseline matched rows on `(number, carrier)` and deleted 20 instead of 8. Caught by the gate, restored from git, and redone on the gate's own four-part key — `(paper, group, token, carrier)`. A looser key than the instrument's own is not a shortcut, it is a different question.*
+
+### Gates, and one thing that is `main`'s
+
+`check_unread_figure` **OWED 31**, 88/88, ceiling 48. `check_prose_pins` 141 keys, `UNADJUDICATED 0`. `check_marker_transposition` green. Fast job green.
+
+⛔ **`check_unread_figure` is red on `main` itself** — 100 sites against 99 rows, the missing one `P15_the_seam_limit_of_the_carried_layer...`, which arrived with main's own commits without a baseline row. Verified in a clean worktree at `origin/main`. I recorded the row here so this branch's gate describes the tree, noting it is not mine; **main stays red until someone lands it there.**

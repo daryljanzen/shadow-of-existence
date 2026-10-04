@@ -64,7 +64,13 @@ REPORTED_ONLY = {'READS-PAPER'}
 #   IN-PAPER on a TOKEN match against the paper's unrelated `0.008 per cent`.  That is the 86.5 per cent
 #   chance control observed on a live site, and it is why the drift partition was never gated. **
 #   ⌈ The second DRIFTED site 70 found is `cc66`'s and is routed to its author, not repaired here.
-CEILING = 48
+# ⛭⛭ r7161 (66): 48 → 22, the largest single fall this ratchet has taken, and it is two seats'
+#   repairs rather than a re-verdict.  ** cc66 took the 17 ANCHORED sites and node 70 the 19 FIGURE ones,
+#   and between them 26 receipts now PARSE the figure out of their paper's own sentence instead of
+#   carrying it. **  ⌈ The one site added in the same pass is a NEW member entered as OWED rather than
+#   exempted -- a fourth site in a P10 receipt, exposed by 70's work on its siblings -- because the
+#   ceiling only falls and a new member of the class is what this ratchet exists to count.
+CEILING = 22
 
 
 def read_baseline():

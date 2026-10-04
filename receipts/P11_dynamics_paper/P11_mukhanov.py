@@ -17,6 +17,23 @@ import sympy as sp
 def check(t,c): print(f"  [{'PASS' if c else 'FAIL'}] {t}"); return bool(c)
 ok=True
 eta,k,m,H=sp.symbols('eta k m H', real=True)
+#: ⛭ r7157+cc66.115: the paper's own display equation was CARRIED HERE AS A LITERAL and attributed to
+#: its label.  It is PARSED from the paper now, so a move in the paper lands here as a failure.
+#: *`paper_formula` asserts the label occurs exactly once (`r7153`'s control), refuses a fragment
+#: its dialect cannot carry rather than guessing, and the parse is checked against the expression
+#: this file carried before the repair.*
+import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
+#: ⛔ AND THE RECEIPT OPENS THE PAPER ITSELF rather than handing a PATH to the helper.
+#: `check_unread_figure` decides READS-PAPER from THIS file's own source, so a read delegated
+#: to `paper_formula` is invisible to it -- the repair would have left the site reading the
+#: paper and still counting as NO-READ.  *Found because `P15_expansion_law` stayed NO-READ
+#: after its figures were parsed.*  `paper_formula` takes the TEXT, so the open stays here
+#: where the instrument can see it and the parse stays there.
+_P11_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+                   'dynamics_paper.tex')
+_P11 = open(_P11_PATH, encoding='utf-8').read()
 a=sp.Function('a')(eta); W=sp.Function('W')(eta)
 print("="*70); print("P11 Mukhanov reduction: massless de Sitter mode"); print("="*70)
 # (1) the exact transformation: substitute deltapsi=W/a into the conformal-time equation
@@ -32,8 +49,14 @@ app_over_a = sp.simplify(sp.diff(a_dS,eta,2)/a_dS)
 ok&=check("de Sitter a=-1/(H eta): a''/a = 2/eta^2", sp.simplify(app_over_a - 2/eta**2)==0)
 # (3) massless (m^2=0) on de Sitter: W'' + (k^2 - 2/eta^2) W = 0  (eq:mukhanov)
 pot_massless = sp.simplify((k**2 + 0*a_dS**2 - app_over_a))
-ok&=check("PHYSICAL massless mode (m^2=0): W'' + (k^2 - 2/eta^2) W = 0  (eq:mukhanov, effective mass zero)",
-          sp.simplify(pot_massless - (k**2 - 2/eta**2))==0)
+#: ⌗ the paper writes `eq:mukhanov` as `W'' + (k^2 - 2/t^2) W = 0` in its own time variable;
+#: the potential this file compares is the bracket, so the parse supplies `W''` and `W` as symbols
+#: and the bracket is recovered as the coefficient of `W`.
+_W, _Wpp = sp.symbols('W Wpp')
+_MUK = pf.sides(_P11, 'eq:mukhanov', {'W': _W, 'Wpp': _Wpp, 'k': k, 't': eta})[0]
+_POT = sp.simplify(sp.expand(_MUK - _Wpp).coeff(_W))
+ok&=check(f"PHYSICAL massless mode (m^2=0): W'' + ({_POT}) W = 0  -- `eq:mukhanov` PARSED from the paper",
+          sp.simplify(pot_massless - _POT)==0)
 # (4) the naive m^2=2Lambda=6H^2 would give +4/eta^2 (the flagged 6H^2->4H^2 artifact)
 m2_naive=6*H**2
 pot_naive = sp.simplify(k**2 + m2_naive*a_dS**2 - app_over_a)

@@ -19,8 +19,25 @@ Lam=sp.Rational(12,100); c2,c1,c0,d1=sp.Rational(1),sp.Rational(-6,10),sp.Ration
 Dr=-Lam/3*r**4+c2*r**2+c1*r+c0; Dp=-Lam/3*p**4-c2*p**2+d1*p+c0
 print("="*70); print("P09 Carter constant = a genuine Killing tensor (the substrate's hidden symmetry)"); print("="*70)
 # (1) symbolic separation
-ok&=check("quartics satisfy eq:separated: Dr''(r)+Dp''(p) = -4 Lambda (r^2+p^2)",
-          sp.simplify(sp.diff(Dr,r,2)+sp.diff(Dp,p,2)-(-4*Lam*(r**2+p**2)))==0)
+#: ⛭ r7157+cc66.116: `-4 Lambda (r^2+p^2)` was typed here and attributed to `eq:separated`.  It is
+#: PARSED from the paper now.  ⌗ Only the RIGHT side is parsed, and that is the whole claim: the
+#: paper's LEFT side applies its own functions, `\Delta_{r}''(r)+\Delta_{p}''(p)`, which this dialect
+#: refuses rather than mistranslate into a product -- and this file builds that side itself, from its
+#: own quartics, which is the derivation the receipt exists to do.
+import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
+#: ⛔ AND THE RECEIPT OPENS THE PAPER ITSELF rather than handing a PATH to the helper.
+#: `check_unread_figure` decides READS-PAPER from THIS file's own source, so a read delegated
+#: to `paper_formula` is invisible to it -- the repair would have left the site reading the
+#: paper and still counting as NO-READ.  *Found because `P15_expansion_law` stayed NO-READ
+#: after its figures were parsed.*  `paper_formula` takes the TEXT, so the open stays here
+#: where the instrument can see it and the parse stays there.
+_P9_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus', 'range_paper.tex')
+_P9 = open(_P9_PATH, encoding='utf-8').read()
+_SEP = pf.rhs(_P9, 'eq:separated', {'r': r, 'p': p, 'Lambda': Lam})
+ok&=check(f"quartics satisfy eq:separated: Dr''(r)+Dp''(p) = {_SEP}  -- PARSED from the paper",
+          sp.simplify(sp.diff(Dr,r,2)+sp.diff(Dp,p,2)-_SEP)==0)
 sr=sp.simplify(sp.diff(Dr,r,2)+4*Lam*r**2); spp=sp.simplify(sp.diff(Dp,p,2)+4*Lam*p**2)
 ok&=check(f"separation constant: Dr''+4L r^2 = {sr} (=2c2) and Dp''+4L p^2 = {spp} (=-2c2), constant & opposite -> the CARTER constant",
           sr.free_symbols==set() and spp.free_symbols==set() and sp.simplify(sr+spp)==0 and sr!=0)

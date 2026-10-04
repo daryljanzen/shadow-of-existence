@@ -36,20 +36,41 @@ G_dn=sp.simplify(Ric - Rs*g/2)                       # G_{mu nu}
 Gud=sp.simplify(gi*G_dn)                              # G^mu_nu
 print("="*70); print("P08 matter functional (Einstein tensor of the construction gauge, DERIVED)"); print("="*70)
 fp=sp.diff(f,r); fpp=sp.diff(f,r,2)
+#: ⛭ r7157+cc66.115: the paper's own display equation was CARRIED HERE AS A LITERAL and attributed
+#: to its label.  It is PARSED from the paper now, so a move in the paper lands here as a failure
+#: instead of leaving this file quietly disagreeing with it.  *`paper_formula.equation` asserts the
+#: label occurs exactly once, which is `r7153`'s own control, and the parse is checked against the
+#: expression this file carried before the repair.*
+import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
+#: ⛔ AND THE RECEIPT OPENS THE PAPER ITSELF rather than handing a PATH to the helper.
+#: `check_unread_figure` decides READS-PAPER from THIS file's own source, so a read delegated
+#: to `paper_formula` is invisible to it -- the repair would have left the site reading the
+#: paper and still counting as NO-READ.  *Found because `P15_expansion_law` stayed NO-READ
+#: after its figures were parsed.*  `paper_formula` takes the TEXT, so the open stays here
+#: where the instrument can see it and the parse stays there.
+_P8_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+                   'slicing_operator.tex')
+_P8 = open(_P8_PATH, encoding='utf-8').read()
 # (i) 8pi T^t_t and 8pi T^theta_theta
 Ttt = sp.simplify(Gud[0,0] + Lam)                    # 8pi T^t_t = G^t_t + Lambda
 Tthth = sp.simplify(Gud[2,2] + Lam)
-ok&=check("8pi T^t_t = (r f' + f - 1)/r^2 + Lambda   (eq:Ttt, DERIVED)",
-          sp.simplify(Ttt - ((r*fp+f-1)/r**2 + Lam))==0)
-ok&=check("8pi T^theta_theta = f''/2 + f'/r + Lambda   (eq:Ttheta, DERIVED)",
-          sp.simplify(Tthth - (fpp/2 + fp/r + Lam))==0)
+_L = {'r': r, 'f': f, 'fp': fp, 'fpp': fpp, 'Lambda': Lam}
+_TTT = pf.rhs(_P8, 'eq:Ttt', _L)
+ok&=check(f"8pi T^t_t = {_TTT}   -- `eq:Ttt` PARSED from the paper, DERIVED here",
+          sp.simplify(Ttt - _TTT)==0)
+_TTH = pf.rhs(_P8, 'eq:Ttheta', _L)
+ok&=check(f"8pi T^theta_theta = {_TTH}   -- `eq:Ttheta` PARSED from the paper, DERIVED here",
+          sp.simplify(Tthth - _TTH)==0)
 # (ii) the lock: T^t_t = T^r_r identically (p_r = -rho)
 ok&=check("lock g_tt g_rr=-1 => T^t_t = T^r_r identically (p_r=-rho) for every f",
           sp.simplify(Gud[0,0]-Gud[1,1])==0)
 # (iii) thm:kernel -- vacuum ODE + SdS general solution
 vac_ode = sp.simplify((Ttt*r**2))                    # =0 gives r f'+f-1+Lambda r^2 ... check equals r f'+f-1+Lam r^2
-ok&=check("thm:kernel: T^t_t=0  <=>  r f' + f - 1 + Lambda r^2 = 0  (eq:vacode)",
-          sp.simplify(vac_ode - (r*fp+f-1+Lam*r**2))==0)
+_VAC = pf.sides(_P8, 'eq:vacode', _L)[0]
+ok&=check(f"thm:kernel: T^t_t=0  <=>  {_VAC} = 0  -- `eq:vacode` PARSED from the paper",
+          sp.simplify(vac_ode - _VAC)==0)
 M=sp.symbols('M'); f_sds=1-2*M/r-Lam*r**2/3
 ok&=check("SdS f=1-2M/r-Lambda r^2/3 solves the vacuum ODE", sp.simplify((r*sp.diff(f_sds,r)+f_sds-1+Lam*r**2))==0)
 gen=sp.dsolve(sp.Eq(r*fp+f-1+Lam*r**2,0), f)         # general solution

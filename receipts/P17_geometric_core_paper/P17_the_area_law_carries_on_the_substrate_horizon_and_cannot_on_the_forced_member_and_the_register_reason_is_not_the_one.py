@@ -144,10 +144,31 @@ check("the substrate horizon sits at alpha with kappa = 1/alpha and T = 1/(2 pi 
       roots0 == [al] and sp.simplify(k0 - 1 / al) == 0)
 
 lP = sp.Symbol('ell_P', positive=True)
+#: ⛭ r7157+cc66.116: `sec:ledger`'s value was CARRIED HERE AS A LITERAL.  The section states it in a
+#: LABELLED equation, `eq:ds-entropy`, so it is PARSED from the paper now rather than retyped --
+#: and the parse takes the exact chain, stopping at the paper's own `\approx 3e122`, which is a
+#: rounding and not the identity.  *`paper_formula` asserts the label occurs exactly once.*
+import os
+#: ⛔ AND THE RECEIPT OPENS THE PAPER ITSELF rather than handing a PATH to the helper.
+#: `check_unread_figure` decides READS-PAPER from THIS file's own source, so a read delegated
+#: to `paper_formula` is invisible to it -- the repair would have left the site reading the
+#: paper and still counting as NO-READ.  *Found because `P15_expansion_law` stayed NO-READ
+#: after its figures were parsed.*  `paper_formula` takes the TEXT, so the open stays here
+#: where the instrument can see it and the parse stays there.
+_GC_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+                   'geometric_core_paper.tex')
+_GC = open(_GC_PATH, encoding='utf-8').read()
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
 S_ledger = sp.simplify(4 * sp.pi * al ** 2 / (4 * lP ** 2))
-check("and sec:ledger's own value reproduces: S = pi (alpha/l_P)^2 = 3 pi/(Lambda l_P^2) (item 52)",
-      sp.simplify(S_ledger - sp.pi * (al / lP) ** 2) == 0
-      and sp.simplify(S_ledger.subs(al, sp.sqrt(3 / Lam)) - 3 * sp.pi / (Lam * lP ** 2)) == 0)
+#: ⌗ the paper writes `eq:ds-entropy` as a CHAIN -- S = A/4l^2 = pi(a/l)^2 = 3pi/(Lambda l^2) --
+#: so both halves of this check are sides of the one equation, parsed in the paper's own order
+#: rather than written out twice here.
+_LS = pf.sides(_GC, 'eq:ds-entropy', {'alpha': al, 'Lambda': Lam, 'ell_P': lP, 'A': 4*sp.pi*al**2,
+                                      'S': S_ledger})
+check(f"and sec:ledger's own value reproduces: S = {_LS[2]} = {_LS[3]} (item 52) -- `eq:ds-entropy` PARSED",
+      sp.simplify(S_ledger - _LS[2]) == 0
+      and sp.simplify(S_ledger.subs(al, sp.sqrt(3 / Lam)) - _LS[3]) == 0)
 
 # =========================================================================================
 print()

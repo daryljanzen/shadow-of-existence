@@ -116,6 +116,22 @@ def check(label, ok):
 print(__doc__)
 
 r, M, al, lP, Lam = sp.symbols('r M alpha ell_P Lambda', positive=True)
+#: ⛭ r7157+cc66.116: `sec:ledger`'s value was CARRIED HERE AS A LITERAL.  The section states it in a
+#: LABELLED equation, `eq:ds-entropy`, so it is PARSED from the paper now rather than retyped --
+#: and the parse takes the exact chain, stopping at the paper's own `\approx 3e122`, which is a
+#: rounding and not the identity.  *`paper_formula` asserts the label occurs exactly once.*
+import os
+#: ⛔ AND THE RECEIPT OPENS THE PAPER ITSELF rather than handing a PATH to the helper.
+#: `check_unread_figure` decides READS-PAPER from THIS file's own source, so a read delegated
+#: to `paper_formula` is invisible to it -- the repair would have left the site reading the
+#: paper and still counting as NO-READ.  *Found because `P15_expansion_law` stayed NO-READ
+#: after its figures were parsed.*  `paper_formula` takes the TEXT, so the open stays here
+#: where the instrument can see it and the parse stays there.
+_GC_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+                   'geometric_core_paper.tex')
+_GC = open(_GC_PATH, encoding='utf-8').read()
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
 f = 1 - 2 * M / r - r ** 2 / al ** 2
 M_N, r_N = sp.sqrt(3) * al / 9, al / sp.sqrt(3)
 
@@ -184,8 +200,9 @@ print(f"""
                                                 first law admits no solution for delta S there
     the CC factor:          {CC}
 """)
-check("the substrate value reproduces sec:ledger's 3 pi/(Lambda l_P^2)",
-      sp.simplify(S_sub - 3 * sp.pi / (Lam * lP ** 2)) == 0)
+_LEDGER_S = pf.rhs(_GC, 'eq:ds-entropy', {'alpha': al, 'Lambda': Lam, 'ell_P': lP})
+check(f"the substrate value reproduces sec:ledger's {_LEDGER_S}  -- `eq:ds-entropy` PARSED, not retyped",
+      sp.simplify(S_sub - _LEDGER_S) == 0)
 check("and the seam's arithmetic value is a third of it, as the areas are",
       sp.simplify(S_seam / S_sub) == sp.Rational(1, 3))
 print(f"    ⚠ ratios to the CC factor: substrate {sp.simplify(S_sub/CC)}, seam {sp.simplify(S_seam/CC)} — "

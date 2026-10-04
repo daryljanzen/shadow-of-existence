@@ -19,9 +19,28 @@ r,th=sp.symbols('r theta', real=True)
 Ms,as_,als=sp.symbols('M a alpha', positive=True)
 Dr_def=(r**2+as_**2)*(1-r**2/als**2)-2*Ms*r
 f_SdS=1-2*Ms/r-r**2/als**2; f_dS=1-r**2/als**2
+#: ⛭ r7157+cc66.115: the paper's own display equation was CARRIED HERE AS A LITERAL and attributed to
+#: its label.  It is PARSED from the paper now, so a move in the paper lands here as a failure.
+#: *`paper_formula` asserts the label occurs exactly once (`r7153`'s control), refuses a fragment
+#: its dialect cannot carry rather than guessing, and the parse is checked against the expression
+#: this file carried before the repair.*
+import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
+#: ⛔ AND THE RECEIPT OPENS THE PAPER ITSELF rather than handing a PATH to the helper.
+#: `check_unread_figure` decides READS-PAPER from THIS file's own source, so a read delegated
+#: to `paper_formula` is invisible to it -- the repair would have left the site reading the
+#: paper and still counting as NO-READ.  *Found because `P15_expansion_law` stayed NO-READ
+#: after its figures were parsed.*  `paper_formula` takes the TEXT, so the open stays here
+#: where the instrument can see it and the parse stays there.
+_P9_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+                   'range_paper.tex')
+_P9 = open(_P9_PATH, encoding='utf-8').read()
 print("="*70); print("P09 Kerr-de Sitter: vacuum-Lambda on the substrate"); print("="*70)
-ok&=check("Delta_r = r^2 f_SdS + a^2 f_dS  (exact decomposition, eq:deltadecomp)",
-          sp.simplify(Dr_def-(r**2*f_SdS+as_**2*f_dS))==0)
+_DD = pf.rhs(_P9, 'eq:deltadecomp',
+             {'r': r, 'a': as_, 'f_SdS': f_SdS, 'f_dS': f_dS})
+ok&=check(f"Delta_r = {_DD}  -- `eq:deltadecomp` PARSED from the paper, exact decomposition",
+          sp.simplify(Dr_def-_DD)==0)
 ok&=check("a->0: Delta_r -> r^2 f_SdS = r^2-2Mr-r^4/a^2 (SdS reduction); Delta_theta->1, Xi->1",
           sp.simplify(Dr_def.subs(as_,0)-(r**2-2*Ms*r-r**4/als**2))==0
           and sp.simplify((1+(as_**2/als**2)*sp.cos(th)**2).subs(as_,0)-1)==0

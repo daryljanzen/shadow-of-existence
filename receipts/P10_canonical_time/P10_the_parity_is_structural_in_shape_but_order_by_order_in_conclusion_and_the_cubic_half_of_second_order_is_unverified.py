@@ -158,16 +158,37 @@ gate("⌗ and the row's TERMINUS IS NOT TAKEN: the parity follows from the verte
 head("C.  THE ORDER RULE ADMITS EXACTLY ONE DIMENSION PER EVEN ORDER")
 
 k = sp.Symbol("k", integer=True, positive=True)
+#: ⛭ r7157+cc66.116: `sec:lock`'s ORDER RULE was typed here as `2*k - 4` and attributed to the
+#: section.  It is PARSED from the paper's own sentence now -- *"a counterterm of operator dimension
+#: $2k$ contributes at an order in that ratio equal to $2k-4$ exactly"* -- with the match asserted
+#: unique, so a reworded or renumbered rule lands here instead of leaving this file asserting a rule
+#: the paper no longer states.  ⌗ `sec:lock` is a SECTION and not a labelled equation, so this is
+#: `r7153`'s sentence template rather than `paper_formula`'s equation parse.
+import os, re, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
+_CT = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+                        'canonical_time.tex'), encoding='utf-8').read()
+_RULE = re.findall(r'counterterm of operator dimension \$([^$]+)\$ contributes at an order in that '
+                   r'ratio equal to\s*\$([^$]+)\$ exactly', _CT)
+assert len(_RULE) == 1, f"sec:lock's order rule: the paper carries {len(_RULE)} statement(s), not one"
+_DIM_EXPR = pf.to_sympy(_RULE[0][0], {'k': k})     # the operator dimension, `2k`
+_ORD_EXPR = pf.to_sympy(_RULE[0][1], {'k': k})     # the order it contributes at, `2k-4`
+print(f"      sec:lock PARSED: dimension {_DIM_EXPR} contributes at order {_ORD_EXPR}", flush=True)
 DIMS = {}
 for jj in (0, 2, 4, 6):
-    sol = sp.solve(sp.Eq(2*k - 4, jj), k)
-    DIMS[jj] = 2*sol[0]
+    sol = sp.solve(sp.Eq(_ORD_EXPR, jj), k)
+    DIMS[jj] = _DIM_EXPR.subs(k, sol[0])
     print(f"      order j = {jj}  ->  2k - 4 = {jj}  ->  operator dimension {2*sol[0]}"
           f"   ({len(sol)} solution)", flush=True)
 gate("sec:lock's rule -- a counterterm of operator dimension 2k contributes at order 2k-4 exactly -- "
      "inverts to 2k = j + 4 with ONE solution per order, so each even order admits exactly one "
      "dimension and no other",
-     DIMS == {0: 4, 2: 6, 4: 8, 6: 10} and len(sp.solve(sp.Eq(2*k - 4, 4), k)) == 1)
+     #: ⌗ the expected map is DERIVED from the parsed rule rather than typed beside it: inverting
+     #: `order = {_ORD_EXPR}` at each even order must give one dimension, and that dimension is
+     #: `{_DIM_EXPR}` at the solution.  *A typed dict here would agree with a rule the paper had changed.*
+     DIMS == {jj: _DIM_EXPR.subs(k, sp.solve(sp.Eq(_ORD_EXPR, jj), k)[0]) for jj in (0, 2, 4, 6)}
+     and all(len(sp.solve(sp.Eq(_ORD_EXPR, jj), k)) == 1 for jj in (0, 2, 4, 6)))
 gate("⇒ ⛭ AND FOURTH ORDER IS OPERATOR DIMENSION EIGHT, which is where the next pole sits by (B) -- an "
      "object the corpus has already touched, r6999 having asked whether the covariant-constancy "
      "argument reaches it", DIMS[4] == 8 and TAB[4])
