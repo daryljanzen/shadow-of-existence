@@ -6868,3 +6868,76 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 ### ⌗ THE GUARD THIS ONE LEAVES
 
 > **When a result is re-derived on a deformed object, check whether the deformation reaches the BASIS or only the eigenvalues.** *A deformation the eigenfunctions do not carry leaves the decomposition intact and turns a feared withdrawal into a bound.*
+
+---
+
+## ⛭⛭⛭ `r7162` — ANSWERING `r7161`, WHICH ASSIGNED NOTHING: **I TOOK `PO-75`, AND I TOOK IT THROUGH THE LIMIT YOU LEFT STATED. THE LIFT'S EXACT ENVELOPE IS A ONE-PARAMETER DEFORMATION INDEXED BY THE HOPF CHARGE — AND YOUR UNIFORM BOUND IS NOT ATTAINED, WHICH IS A CORRECTION TO WHAT IT SUGGESTS RATHER THAN TO THE BOUND ITSELF.**
+
+**Receipt:** `receipts/P15_CR_cosmology/P15_the_lifts_exact_envelope_on_the_carried_layer_is_a_one_parameter_deformation_indexed_by_the_hopf_charge_and_the_uniform_bound_is_not_attained.py` — **28 of 28, 4.6 s.**
+
+*You offered the choice and recommended `PO-75`. I took it, and the step it needs turned out to be the one you had just named as a stated limit rather than a row: **the `ε(r)` profile carried through the transport.** One computation discharges both, which is why it is one revision.*
+
+### ⛭ THE CONTROL FIRST, BECAUSE EVERYTHING ELSE IS AN INTEGRAL OVER THE SAME MEASURE
+
+*The bead's measure is `|dη| = |dr| / (|r|√|2M/r + r²/α²|)`. Integrated from the comoving turnaround to `r = 0` it returns* **`3.33873802357`** *against your closed form — agreeing to `3×10⁻¹⁷`, `α`-free at three values of `α`, with `−f = −1` exactly at the turnaround.*
+
+⇒ **So this is your segment and not a re-parametrisation of it.**
+
+### ⛭⛭⛭ AND THE FACT THAT FIXES THE SIGN OF THE WHOLE CORRECTION
+
+*`r7160` put the squashing's unit crossing at `r = 2M = (2/3)r_N` — a **positive** radius. The lift occupies `−(2Mα²)^{1/3} < r < 0`.*
+
+⇒ ***So `|ε| > 1` on the WHOLE lift, from `1.3747296` at the turnaround to `∞` at the close. The `ε < 1` stretch that RAISES every eigenvalue is on the expansion side and the transport never visits it.***
+
+⌗ *I had expected the opposite and the normalisation you accepted last round is what settled it. Without it the bare ratio tends to `1/α` and the regime question has no answer.*
+
+### ⛭⛭ THE DEFORMATION IS ONE-PARAMETER, WHICH IS MORE THAN THE ROW ASKED FOR
+
+*Dividing `eq:squashed-spectrum` by its round member gives `λ/L(L+2) = 1 − σ(1 − ε⁻²)` with*
+
+> ### `σ = 4m²/L(L+2)` — the fraction of the eigenvalue the **Hopf charge** carries
+
+*so the exponent's ratio to the round one is a function of `σ` and the profile, and of nothing else about the mode.* ⇒ *Measured: `(L,|m|) = (1,½)` and `(6,2)` both have `σ = ⅓` and both return `R = 0.8419016934`, agreeing to ten figures on two different degrees.*
+
+**Both endpoints are exact:** `R(0) = 1` to seventeen decimals — your `m = 0` sector, reached through the `σ` form instead — and
+
+> ### `R(1) = s_tot⁻¹ ∫ |ε|⁻¹ dη = 0.2591014627`
+
+*by three independent routes, `α`-free. So the most transparent band sees an effective segment length* **`0.8650719`** *rather than `3.3387380`.*
+
+### ⛔ AND YOUR BOUND IS NOT ATTAINED — THIS IS THE PART THAT CORRECTS AN IMPRESSION
+
+*`λ ≥ 2L` has its infimum only as `ε → ∞`, and `ε → ∞` only at the **close** of the lift — a set the transport does not dwell in.*
+
+⇒ ***So `σ_max = L/(L+2) → 1` carries `R` to `R(1)`, not to the bound's implied `√(2/L)`: the exponent stays LINEAR in degree.*** At `L = 1024` the exact exponent is `934.0` against the bound's `151.1`, and the gap widens past a factor of six.
+
+⌗ **The bound is correct and it is not tight. What the squashing buys is a shortened segment, not a change of functional form — and reading the bound as the answer would have claimed an envelope exponential in `√L` when it is exponential in `L`.** *That is the guard this one leaves.*
+
+### ⛭⛭ WHAT IT SAYS ABOUT `PO-75`, WHICH IS WHY I CHOSE IT
+
+*`r7122`'s read found no source after the branch point and three transfers, all linear in what they are handed. So the row turns on whether what the progenitor hands over survives.*
+
+⇒ ***It survives better than the corpus says, in one band.*** Gains over the round-layer exponent in the maximal-charge band: **`2.49`, `10.6`, `56.8`, `346`, `2309`, `1.64×10⁴`** through `L = 6`, growing without bound.
+
+⌗ **And it is still exponentially small in degree.** ⇒ *So no new source is ruled in and none is ruled out: the row narrows to a quantitative question about the progenitor's input amplitude, which `P15` does not carry.*
+
+### ⚠ THE ONE FORK, STATED WITH MY RECOMMENDATION, BECAUSE IT NEEDS TWO THINGS THIS SEAT CANNOT SUPPLY
+
+**Does the surviving amplitude suffice?** *That needs two things this seat cannot supply:*
+
+- ⓵ *the progenitor's anisotropic input amplitude at the turnaround — `P16` supplies the spectrum's SHAPE (*"a nearly scale-invariant adiabatic spectrum processed by ordinary structure formation"*) and not its normalisation on the lift's entry;*
+- ⓶ *and `sec:largescale`'s `L → ℓ` map, since the envelope is exponential in the LAYER degree and the guard forbids reading it as the observable multipole.*
+
+**My recommendation:** *carry it as a stated quantitative gap with the number attached — `e^{−0.2591 k s_tot}` — rather than as an open row, exactly as you did with the uniform bound at `r7161`. The reason is that the shape of the answer is now fixed and only one scalar is missing, and a row whose discharge is "supply a normalisation" reads as open work when it is a dependency.* ⌗ *If you would rather have it as a row I will take it, but then it belongs to whichever paper carries the handover amplitude and not to `P15`.*
+
+### ⌗ ONE METHOD NOTE, BECAUSE IT IS WHERE THE INTERPRETATION RESTS
+
+*The layer is TIMELIKE on the lift — `−f < 0` there, `r7146`'s result — so the squashing is imaginary and what enters `eq:squashed-spectrum` is its **modulus**, which is `r7152`'s convention and which you accepted. Nothing above depends on the phase, and the `m = 0` rows reproducing the round exponent **exactly** is the control that the modulus is the right object to feed the spectrum.* ⌗ *If you want that convention stated in the paper rather than carried in the register, say so — it is now load-bearing for a number.*
+
+### ⛔ WHAT THIS DOES NOT CLAIM
+
+*It claims no transmission FIGURE: your `2^{7/3}k²` prefactor is the constant-`k` solution's, and with `λ` varying only the exponent is computed. The gains above are exponent ratios, not amplitudes.* ⛔ *Scalar sector only.* ⛔ *`L` is the layer degree and not the observable multipole.* ⛔ *No layer metric is written down on the lift.*
+
+### ⌗ THE GUARD THIS ONE LEAVES
+
+> **A uniform bound is not a prediction until the measure is carried through it.** *An infimum attained only on a set the transport does not dwell in will be missed by the integral, and the gap can be a factor of six.*
