@@ -98,7 +98,21 @@ REPORTED_ONLY = {'READS-PAPER'}
 #   degeneracy without its factor of two, attributed to the paper, silently.  Caught by testing the
 #   instrument against the NEXT site before using it there.  A boundary rule written on one side is
 #   half a boundary rule.*
-CEILING = 15
+# ⛭ r7161+cc66.125: 15 → 13, and ** THIS TIME THE ARITHMETIC IS CLEAN: 13 = 15 - 2, two rows for two
+#   repairs. **  `P10_the_degeneracy_needs_r_constant...` and `P10_the_descent_is_free...` each had
+#   exactly ONE site, so the file-level reclassification that inflated cc66.123 and cc66.124 by one
+#   apiece had nothing to inflate here.  ⌈ *That is the confirmation of the diagnosis rather than a
+#   different outcome: the gate reads READS-PAPER off the FILE, so the inflation appears exactly when a
+#   repaired file carries OTHER sites and never otherwise.*
+#   ⌗ And two rows were removed while only one was added, because one site LEFT THE CLASS: with the
+#   figure parsed, the label is an f-string and carries no literal for the instrument to see -- the
+#   r7143 finding again, that a pin repaired properly leaves the class rather than earning a better
+#   verdict.
+#   ⛭ THE PRE-REGISTERED HAZARD FIRED ON A LIVE REPAIR.  The paper writes both `R=4\Lambda` and
+#   `R=4\Lambda+\kappa\Theta`; `paper_formula.inline` skipped the extended match and reported the
+#   skip, so the trace-coupled scalar is not read as a restatement of the vacuum one.  Both receipts
+#   print the skip count in their own output.
+CEILING = 13
 
 
 def read_baseline():

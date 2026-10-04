@@ -8039,3 +8039,35 @@ total` — the derivation the refusal asked for, not a looser pattern.
 ⌗ *Standing: the substitution control **bites on nothing** across four controls; and `OWED` again fell
 by three for two repairs (`15 = 18 − 2 − 1`), the third site owed a read of its own. Second receipt in
 a row where the gate's file-level reading inflates the apparent repair count by one.*
+
+---
+
+## `cc66.125` — 7 of the 9, and the file-level inflation is **confirmed by its absence**
+
+| | |
+|---|---|
+| sites | **7** of 9 (+1 bonus beyond the nine) |
+| `check_unread_figure` | `OWED` 15 → **13**, `CEILING` lowered, ratchet holding exactly |
+| fast job | green |
+
+⛭ **The pre-registered hazard fired on a live repair, not in a test.** Both receipts print
+`1 statement, 1 skipped as part of R=4\Lambda+\kappa\Theta, which is a different claim` — the exact
+case named before either receipt was touched.
+
+⛭ **The inflation is confirmed by its absence.** `cc66.123` retired 4 rows for 3 repairs, `cc66.124`
+3 for 2; here **2 for 2, `13 = 15 − 2` exactly.** Both of these receipts carried a *single* site, so
+there was nothing for the gate's file-level reading to reclassify. ⇒ *The inflation appears precisely
+when a repaired file carries other sites, and never otherwise — which makes it the diagnosis rather
+than a coincidence of counts.* ⌗ **A mechanism that predicts where it will NOT appear is better
+evidenced than one that only explains where it did.**
+
+⌗ *Two rows removed, one added: a site left the class, the `r7143` effect again.*
+
+⛔ **One of my own bugs, caught by the instrument rather than by a paper.** The `12/\alpha^{2}` pattern
+reached the file as `r'12/\alpha\^\{2\}'` — regex `\a` is BEL, not a literal backslash — so it matched
+nothing. The reader refused with *"does not match the paper at ALL … a DRIFTED attribution, or the
+pattern does not match how the paper writes it"*. **That is the message `cc66.123` split out of the
+incoherent one, and it paid for itself one revision later by naming the right half.**
+
+⌗ *The substitution control still bites on nothing. These two sites take no substitution — paper and
+receipt share the variable — so no control was added rather than a vacuous one.*

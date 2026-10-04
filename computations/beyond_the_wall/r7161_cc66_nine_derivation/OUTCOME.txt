@@ -95,3 +95,43 @@ r7161+cc66.124 -- SECOND PASS: 5 of 9, and the instrument's boundary rule was ha
   P10_the_descent_is_free (R = 4Lambda, one real occurrence and one prefix of R=4Lambda+kappa Theta),
   P10_the_subtraction_is_at_operator_dimension (the (l_P/a)^2 scaling; 70's `2k-4` site is here),
   P10_the_vertex_numbers (-6H^2, now KNOWN to need the limit form rather than the substitution form).
+
+--------------------------------------------------------------------------------------------------
+r7161+cc66.125 -- THIRD PASS: 7 of 9, the R=4Lambda hazard fires on a live repair, and the
+                  file-level inflation is CONFIRMED by its absence
+
+  SITES DONE: 7 of 9.  Added P10_the_degeneracy_needs_r_constant (12/alpha^2) and
+  P10_the_descent_is_free (R=4Lambda).  A bonus site beyond the nine was parsed in the same pass:
+  the degeneracy receipt's own `Lambda+radiation: R = 4*Lambda`.
+  check_unread_figure OWED 15 -> 13, CEILING lowered to match.  Fast job green.
+
+  ** THE PRE-REGISTERED HAZARD FIRED ON A LIVE REPAIR, NOT IN A TEST. **  Both receipts now print
+  `1 statement, 1 skipped as part of R=4\Lambda+\kappa\Theta, which is a different claim`.  That is
+  the exact case the PREDICTION named before either receipt was touched: a pattern loose enough to
+  match the trace-coupled form would have read it as a restatement of the vacuum one and agreed with
+  itself.
+
+  ** AND THE FILE-LEVEL INFLATION IS CONFIRMED BY ITS ABSENCE, WHICH IS THE BETTER EVIDENCE. **
+  cc66.123 retired 4 rows for 3 repairs and cc66.124 retired 3 for 2.  Here: 2 rows for 2 repairs,
+  13 = 15 - 2, exactly.  These two receipts each carried ONE site, so there was nothing for the
+  file-level reading to reclassify.  => The inflation appears exactly when a repaired file carries
+  OTHER sites and never otherwise, which is the diagnosis rather than a coincidence of counts.
+
+  ⌗ Two rows were removed and only ONE added: one site LEFT THE CLASS, because with the figure
+  parsed the label is an f-string and carries no literal for the instrument to see.  The r7143
+  finding again -- a pin repaired properly leaves the class rather than earning a better verdict.
+
+  ⛔ A TRANSLATION BUG, CAUGHT BY THE INSTRUMENT AND NOT BY A PAPER: the first version of the
+  `12/\alpha^{2}` pattern reached the file as `r'12/\alpha\^\{2\}'`, where regex `\a` is the BEL
+  character rather than a literal backslash, so it matched nothing.  The reader REFUSED with "does
+  not match the paper at ALL ... a DRIFTED attribution, or the pattern does not match how the paper
+  writes it" -- which is exactly the message that distinguishes the two, and it named the second.
+  *The cc66.123 split of that message into two cases paid for itself one revision later.*
+
+  Q3  STILL BITES ON NOTHING.  Four substitution controls, none has caught a wrong substitution.
+      These two sites take no substitution at all (the paper and the receipt share the variable), so
+      no control was added for them rather than adding a vacuous one.
+
+  REMAINING: 2 of 9 -- P10_the_subtraction_is_at_operator_dimension (the (l_P/a)^2 scaling; 70's
+  `2k-4` site is in the same receipt, and r7161 asked for one template, so they go together), and
+  P10_the_vertex_numbers (-6H^2, known since cc66.123 to need the limit form).

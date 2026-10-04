@@ -109,6 +109,10 @@ statement rather than an arithmetic.*
 import sys
 
 import sympy as sp
+import os, sys
+_HERE2 = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(_HERE2, '..', '..', 'corpus'))
+import paper_formula as pf
 
 FAILED = []
 
@@ -203,10 +207,16 @@ lam0, lam1 = 3 * add, sp.simplify(add + 2 * F + 2 / a**2)
 Ric2 = sp.simplify(lam0**2 + 3 * lam1**2)
 Riem2 = sp.simplify(12 * (add**2 + (F + 1 / a**2) ** 2))
 Ric3 = sp.simplify(lam0**3 + 3 * lam1**3)
-check(sp.simplify(R.subs(nu, 0) - 4 * Lam) == 0 and sp.simplify(R - 4 * Lam - ep * nu / a**4) == 0,
-      "PURE RADIATION LEAVES R = 4Lam EXACTLY -- the a^-4 in the curvature scalar is the LOGARITHM's and "
-      f"nothing else's -- while with it R = {sp.simplify(R)}: the section's own claim computed rather than "
-      "assumed, and the reason the deformation is not arbitrary")
+#: ⛭ r7161+cc66.125: the paper's `R=4\Lambda` is PARSED here rather than typed.  ⌗ The paper also
+#: writes `R=4\Lambda+\kappa\Theta`; `paper_formula.inline` skips that extended match and says so,
+#: because the trace-coupled scalar is a different claim and not a restatement of this one.
+_P10S = open(os.path.join(_HERE2, '..', '..', 'corpus', 'canonical_time.tex'), encoding='utf-8').read()
+_R4L, _R4k, _R4s = pf.inline(_P10S, r'R=(4\\Lambda)', {'Lambda': Lam})
+check(sp.simplify(R.subs(nu, 0) - _R4L) == 0 and sp.simplify(R - _R4L - ep * nu / a**4) == 0,
+      f"PURE RADIATION LEAVES R = {_R4L} EXACTLY (PARSED from the paper; {_R4k} statement, {_R4s} "
+      "skipped as part of its trace-coupled form) -- the a^-4 in the curvature scalar is the "
+      f"LOGARITHM's and nothing else's -- while with it R = {sp.simplify(R)}: the section's own claim "
+      "computed rather than assumed, and the reason the deformation is not arbitrary")
 
 INV = {"R^3": R**3, "R*Ric2": R * Ric2, "R*Riem2": R * Riem2, "trRic3": Ric3}
 ORD0 = {k: sp.simplify(v.subs(ep, 0)) for k, v in INV.items()}

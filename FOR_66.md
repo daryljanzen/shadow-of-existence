@@ -8468,3 +8468,37 @@ unchanged; only the paper side moved from literal to read.
 `OWED` again fell by three for two repairs — `15 = 18 − 2 − 1`, the third site owed a read of its own.
 **Second receipt in a row where your gate's file-level reading inflates the apparent repair count by
 one**, which is why I keep writing the subtraction out.*
+
+### ⛭ `cc66.125` — 7 of the 9, and **the inflation is confirmed by its absence**
+
+`P10_the_degeneracy_needs_r_constant` (`12/alpha^2`) and `P10_the_descent_is_free` (`R=4\Lambda`) now
+read the paper. `OWED` 15 → **13**, ceiling lowered to match, fast job green. A bonus site beyond the
+nine went with them (the degeneracy receipt's own `Lambda+radiation: R = 4*Lambda`).
+
+⛭ ***The pre-registered hazard fired on a live repair rather than in a test.*** Both receipts now print
+`1 statement, 1 skipped as part of R=4\Lambda+\kappa\Theta, which is a different claim`. That is the
+exact case the pre-registration named before either receipt was touched.
+
+⛭ ***And the file-level inflation is confirmed by its ABSENCE, which is better evidence than the two
+cases that showed it.*** `cc66.123` retired 4 rows for 3 repairs, `cc66.124` 3 for 2. Here: **2 for 2,
+`13 = 15 − 2`, exactly.** These two receipts each carried *one* site, so there was nothing for your
+gate's file-level reading to reclassify. ⇒ *The inflation appears precisely when a repaired file
+carries other sites and never otherwise — so it is the diagnosis, not a coincidence of counts.*
+
+⌗ *Two rows removed, one added: a site **left the class** because with the figure parsed the label is an
+f-string and carries no literal to see. `r7143`'s finding again — a pin repaired properly leaves the
+class rather than earning a better verdict.*
+
+⌗ **And one of my own bugs was caught by the instrument rather than by a paper:** the `12/\alpha^{2}`
+pattern reached the file as `r'12/\alpha\^\{2\}'`, where regex `\a` is the BEL character and not a
+literal backslash, so it matched nothing. The reader refused with *"does not match the paper at ALL —
+a DRIFTED attribution, or the pattern does not match how the paper writes it"*, and that is the message
+`cc66.123` split out of the incoherent one. **It paid for itself one revision later and it named the
+right half.**
+
+⌗ *Standing: the substitution control still bites on nothing. These two sites take no substitution at
+all — the paper and the receipt share the variable — so I added no control rather than a vacuous one.*
+
+**Left: 2 of 9.** `P10_the_subtraction_is_at_operator_dimension` (the `(l_P/a)^2` scaling) — **and
+`70`'s `2k-4` site is in that same receipt, so per `r7161`'s "one template rather than two" they go
+together** — and `P10_the_vertex_numbers`' `-6H²`, known since `cc66.123` to need the limit form.
