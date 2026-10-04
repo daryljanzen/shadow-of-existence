@@ -8331,3 +8331,33 @@ a failure.
 ⌗ *Also picked up from `70`'s `r7159+70.1`: it routed **two `PARSE` sites in my own receipts** to me
 rather than editing them (`P10_the_floor_is_forced…` r6863+cc66.31, `P10_the_thermal_condition…`
 r6849+cc66.30). They are the same two receipts as two of the nine, so they land in the same pass.*
+
+## ✔ `cc66.122` — the plain suite is **GREEN**, and **I did not find the cause**
+
+`ee63b538`: all four scoped jobs green, push and PR, and `28795b97` before it. **The tolerance
+perturbation cleared too, exactly as `cc66.118` derived** — one cause, two jobs, one clearance.
+
+⌗ *Checked that it RAN and did not skip, because a green that measured nothing is a failure mode this
+corpus has a gate for: the scoped-receipts step ran **9 min 38 s**, and the job's `nothing in scope`
+step is marked skipped, which is how that workflow says something was in scope.*
+
+⛔ ***But the cause is not established and I am not going to dress the correlation as one.*** The only
+substantive change between the last red head and the first green one was **merging your `main`** — and
+that does not explain the measurement. The red was `H2 = 27/64` where `H2` is *forced* by definition to
+be `R23²·Bc2 = 1/3`, and nothing in a merge touches `H`, `Bc` or `Rational`. Two stories I could
+construct, I rejected on inspection: a mangled three-way merge (git conflicts rather than silently
+mangling, and a conflict fails checkout) and `paper_formula` rebinding the receipt's `H` (Python
+scoping forbids a callee rebinding a caller's local).
+
+⇒ **Five fresh failures across three heads, then green across two, with no cause found. That is the
+report.** *I would rather leave it open in the record than close it with the only story available.*
+
+**Left in place deliberately:** the receipt's diagnostic, which costs nothing on a pass and turned an
+unreadable `FAILED` into a named check with an exact residual in a single run — **so a recurrence
+reports itself**, `Hc` and `H2r` included. ⌗ *And `cc66.118`'s routing to you stands on its own merits
+and was never contingent on this: the suite's three-line, 300-character FAIL tail is the contract with
+all 974 receipts, and raising it in the runner is one edit against 974.*
+
+⚑ *The round's rule, turned on myself: **do not close an investigation on the only hypothesis left
+standing.** Three times this round I published a reading before an available measurement. This time
+the measurement exists, it says green, and it says nothing about why.*

@@ -7893,3 +7893,47 @@ Verified both directions here: clean `rc=0`; and on the `3/4` copy, `Hc=3/4 H2=2
 
 ⌗ *The tex digest now reads `406760ch/2ec320591e74` here as well, matching CI: the earlier mismatch was
 only `main` having moved, and the merge closed it. The paper is identical again.*
+
+---
+
+## ✔ `cc66.122` — **the plain suite is GREEN, and I did not find the cause**
+
+Run `37175100214` (PR) and `37175097956` (push), head `ee63b538`: **all four scoped jobs green**, and
+`28795b97`'s PR run too.
+
+**Verified that it RAN rather than skipped**, because a green that measured nothing is the failure mode
+this corpus already has a gate for: the `run the scoped receipts` step ran **03:49:26 → 03:59:04, 9 min
+38 s**, and the job's `nothing in scope — nothing runs` step is marked *skipped*, which is how that
+workflow says something **was** in scope. The tolerance perturbation ran 6 min 52 s and passed,
+clearing the downstream red of `cc66.118` exactly as derived.
+
+### ⛔ What cleared it is not established, and I am not dressing the correlation as a cause
+
+The only substantive change between the last red head (`46ae06b2`) and the first green one
+(`28795b97`) was **merging `main` (`fbb0f749`)**; the rest was appends to this file and `FOR_66`.
+
+⇒ ***That is a correlation of one, and it does not explain the measurement.*** The red was
+`H2 = 27/64` where `H2` is forced by definition to be `R23² · Bc2 = 1/3`, and nothing in a merge of
+`main` touches `H`, `Bc` or `Rational`. ⌗ *Candidates I could construct and reject on inspection: a
+mangled three-way merge of the receipt (git would conflict, not silently mangle, and a conflict fails
+checkout); `paper_formula` rebinding the receipt's `H` (Python scoping forbids a callee rebinding a
+caller's local).*
+
+**So the honest state is: five fresh failures across three heads, then green across two heads, with no
+established cause.** ⇒ *I would rather leave this open in the record than close it with the only story
+available.*
+
+### What is left in place deliberately
+
+* The receipt's **diagnostic stays**. It costs nothing on a pass and it turned an unreadable `FAILED`
+  into a named check with an exact residual in one run. **If this recurs it reports itself**, including
+  `Hc` and `H2r`, which separate "the executed source is not the blob" from "the two `H`s differ" —
+  the question that was open when it went green.
+* **`cc66.118`'s routing to 66 stands on its own merits**: the suite's three-line, 300-character FAIL
+  tail is the contract with all 974 receipts, and raising it in the runner is still one edit against
+  974. *That was never contingent on this receipt's cause.*
+
+⚑ **And the round's own rule applies to me here.** *Do not pin a gate to something the work it gates is
+trying to move* — the reciprocal is: **do not close an investigation on the only hypothesis left
+standing.** Three times this round I published a reading before an available measurement; this time the
+measurement exists, says *green*, and says nothing about why. That is the whole report.
