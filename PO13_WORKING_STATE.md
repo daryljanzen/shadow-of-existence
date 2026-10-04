@@ -8462,3 +8462,94 @@ per cent in the receipt.
 correctly survive it), `rc=1` with an explicit refusal when the paper's wording drifts, `rc=0` clean.
 *Outside the tracked tree because `G51` is the receipt that taught this line what writing into it
 during a run costs.*
+
+### ⌗ `cc66.135` addendum — the head's green and the branch's green are different scopes
+
+PR #273, head `2dae1b8b`: all jobs green, `mergeable_state: clean`, 0 review comments.
+
+| head | plain-suite scope | wall | carries the new receipt? |
+|---|---|---|---|
+| `d72fda5c` (added the receipt) | **348** receipts | 2472 s | **yes** — line 286 of the scope |
+| `2dae1b8b` (prose only, the PR head) | **3** receipts | 320 s | no |
+
+**Established, not inferred from the count:** `receipt_scope.py --range 07c7ad0e..d72fda5c --scope
+suite` reproduces `348` locally with the new file in it, and `--range d72fda5c..2dae1b8b` reproduces
+the `3` CI reported. Both CI logs also print the `EXCLUSIVE` line for `G51`, so `_MUTATES_TREE` is
+live on both.
+
+⇒ **The general shape:** scope is computed per push, so a documentation-only follow-up narrows the
+head's scope. *On a branch whose last push touches no receipt, the head's green is narrower than the
+branch's and says nothing about what the branch added.* The workflow is correct — it answers "what
+can this push have changed" — and the defect is in the reading. **The green to read on such a PR is
+the last code push's.**
+
+⌗ A stale `scoped — the tolerance perturbation` run remains `in_progress` on the superseded head
+`d72fda5c`; it gates nothing.
+
+---
+
+### ✔ `cc66.136` — the cost of requiring the repaired word, measured three ways
+
+`r7167` restored the quantity-naming word in `sec:refit-bound` and tightened this seat's locator to
+**require** it, asking whether requiring rather than tolerating costs anything.
+
+| seeded paper | what it is | `rc` | message |
+|---|---|---|---|
+| `sits at $2.56$ times it on the same bins` | the `r7167` repair | **0** | 15 of 15 |
+| `stand at $2.56$ times apart on the same bins` | a CORRECT rewrite (this seat's own `cc66.135` recommendation) | **1** | `matches 0 time(s)` |
+| `sits at $2.56$ on the same bins` | the DEFECT returning | **1** | `matches 0 time(s)` |
+
+⇒ **Requiring it costs nothing in the two sentences read — `15` of `15`, `rc=0` — and cost one thing
+elsewhere: the two refusals were byte-identical.** The receipt reported *"the wording moved"* where
+its job is now to report *"the word was dropped"*, and the false-red case is live rather than
+hypothetical, being the phrasing this seat had itself recommended.
+
+⌗ **Fix is a CLASSIFIER on the refusal, not a tolerance.** `RELAPSE` holds the pre-`r7167` sentence
+and is tested only after the repaired locator has already failed; the defective form is still `rc=1`
+and still asserts nothing, and the relapse message cannot fire unless the literal defective sentence
+is present. Re-measured after the edit: `rc=0` 15/15 as it stands, the correct rewrite refused as
+drift *and explicitly not the defect*, the regression refused by name.
+
+⌗ **The general point, offered to `PO-78`:** a finding receipt that quotes the defect cannot miss its
+own discharge, but it cannot *name* it either unless it also keeps the defect — the discharge and an
+unrelated rewrite are the same event to a locator that knows only the repaired form. *So retirement
+wants two readings, what the repair must change and what the defect looked like.*
+
+⌗ Seeded papers written outside the tracked tree, per `G51`'s lesson. And a column-count check on
+`INDEX.md` flagged 56 rows as not-8-column — **pre-existing and identical at `HEAD`**, cells
+legitimately containing `|`; the crude check was the wrong instrument, not the file.
+
+---
+
+### ⛔ `cc66.137` — `cc66.135c` is WITHDRAWN: two check runs share a name and I read one as the check run
+
+**Each head carries two `scoped — the plain suite` check runs.** The `push`-event run scopes that
+push's diff; the `pull_request`-event run scopes the whole PR and says so in its own log —
+*"a pull_request event reads the ledger and does not write it (its scope is the whole PR, asked
+again on every PR event)"*.
+
+| head | `push`-event run | `pull_request`-event run |
+|---|---|---|
+| `2dae1b8b` (PR #273 head, prose only) | 3 receipts, 320 s | **164** receipts, **1226** s |
+| `dc623701` (PR #274 head, prose only) | 3 receipts, 320 s | **48** receipts, **646** s |
+
+⇒ **The head was covered all along, by its `pull_request` twin.** Verified locally rather than
+inferred a second time: `receipt_scope.py --range $(git merge-base origin/main HEAD)..HEAD` returns
+`48`, matching CI, with the edited receipt at line 41.
+
+⛔ **Ninth instance of the round's error shape and the purest: the check run's NAME stood in for the
+check run.** Two runs share it per head; the first one the API listed became "the head's scope". And
+worse than the earlier eight — this session's own notes already recorded that the duplicate runs per
+head carry different scopes. The fact was in hand and was not applied.
+
+**What survives:** the `push`-event run's scope really is the push diff, and `d72fda5c`'s 348-receipt
+figure with the receipt at line 286 was right. **What does not:** "the head's green says nothing
+about what the branch added", and the rule drawn from it. There is no reader hazard — a reader
+checking the head sees both runs, and the PR-wide one gates.
+
+⌗ Not a `PO-78` member. If anything is worth keeping it is the error: **when two checks share a name,
+"the check" is not a referring expression**, and a count read off one of them is a claim about which
+one happened to be read.
+
+⌗ `cc66.136` is untouched — its three-way refusal measurement and classifier were each measured
+directly — and so is `cc66.135`'s `$2.56$` finding. Only the coverage addendum is withdrawn.

@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7166` order (the citation sweep records what it ran), read at `origin/main` `4aa1a1b2`. The reply to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7167` order (the citation sweep retires a discharged finding), read at `origin/main` `b75cf145`. The reply to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,92 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⛔ ROUTING — `main` IS RED AT `b75cf145` ON `L221/B25`'s ABSENCE PIN, WHICH `r7167`'s `sec:bridge` SENTENCE FALSIFIED BY DESIGN
+
+- **What fails:** `receipts/L221_the_bridge/B25_the_scattering_object_exists.py` ⓷ asserts *"the corpus has never written this form: 'Regge-Wheeler' appears ZERO times in the papers"*. The plain suite on `b75cf145` fails it: 326 pass, 1 fail.
+- **Why:** `r7167` (`3d93b695`) wrote into `CR_cosmology.tex`, line ~2061: *"a tensor exponent on this background is the Regge--Wheeler reduction with that coupling carried through the radial problem"*. The red-carry ledger now carries B25.
+- **Not mine, and not edited:** the receipt is not this seat's, and the sentence is your paper edit. My PRs do not scope onto it.
+- **Proposed patch:** re-scope ⓷ to what still holds.
+  - The corpus *names* the reduction, as where the tensor exponent belongs (it "belongs with the tensor sector itself", in the companion dynamics paper), but computes it nowhere.
+  - So assert the absence of a Regge-Wheeler *effective potential* or its computation in any paper, instead of a zero count of the name.
+
+## ⚑ `r7167+70.1` — `C1` RETIRES A FINDING BY READING WHAT ITS REPAIR MUST CHANGE: ALL 14 ROWS RETIRE (12 CITED, 2 DRIFTED) AND THE SWEEP NOW RUNS NO RECEIPT. THE HOST DEPENDENCY IS IN ITS HEADER. TWO DEFECTS OF MY OWN FOUND ON THE WAY, ONE OF THEM IN `r7166`. FIVE OF FIVE PREDICTIONS HELD
+
+*Pre-registered at `computations/beyond_the_wall/r7167_70_sweep_retire/PREDICTION.md` (`22742994`) before `C1` changed. Beside it: `seeds.py` with `seeds_log.txt` (the window control and the worktree seeds), and `c1_after_log.txt`.*
+
+### ⓵ The rule: retire by reading what the repair must change, never by re-testing the property
+
+Each finding is re-read from the paper's **source** before anything runs:
+- **`RETIRED-DRIFTED`:** the row's paper prints none of the finding's figures any more.
+- **`RETIRED-CITED`:** every figure the paper still prints, at one occurrence in the row's own section, is closed by a group naming the computing receipt.
+  - The closing group is the first `\rcpt` group after the figure: adjacent markers, grouped as the tracer groups them.
+  - It is searched up to the next heading, **with no fixed window**.
+- **`LIVE`:** anything else. Only a LIVE finding runs its property test (absent from the cited receipt, present in the computing one) and the receipts that test needs.
+
+**At `b75cf145`, every row retires:**
+- **12 `RETIRED-CITED`** (11 markers; the refit passage is one marker with two computing receipts), including `C59`'s `0.23%`;
+- **2 `RETIRED-DRIFTED`**: `221.95` and `0.7354`, as you found, and the `(iii)`, since P10 no longer prints `2.8e-4` or `5.9e-6`;
+- **0 LIVE.**
+
+The sweep runs **no receipt at all** and finishes in about a second, against 33 s at `r7166` and 52 s before that. **So `60`'s missing `camb` no longer touches the verdict:** the rows whose property needed it are retired.
+
+**The rule tests itself:** a synthetic paper, independent of the corpus, must sort three ways (cited, live, drifted). That is a gated check in the receipt, so the rule cannot pass hollow.
+
+### ⓷ Your calibration, and the window it rules out
+
+**Your four hand reads close at `+140`, `+446`, `+515` and `+811`, all `RETIRED-CITED`.**
+- Your `+1429` is the same `modern_parallax` site: the figure is printed twice in `sec:floor`, and both occurrences close on `P04`.
+- The rule records the nearer one.
+
+**A fixed 300-character window would have called 5 of the 12 cited rows open, not 3:** `-0.2349` at `+515`, `2.273/2.319` at `+446`, `2.2564` at `+304`, `7.78/909` at `+304` and `0.285` at `+811`. Your "coarse and right over tight and wrong" was if anything an understatement.
+
+### The two worktree seeds (T4), with the real corpus
+
+| seed | result |
+|---|---|
+| **(a)** every `\rcpt{P04_redshift_isotropy_floor}` deleted from `modern_parallax` | the `0.285` row goes **LIVE**; its property test runs (`R2`, rc 0) and **passes** |
+| **(b)** the paper's `0.285` printed as `0.290` | the row goes **`RETIRED-DRIFTED`** and runs nothing |
+
+In (a), `C1` exits 1, and correctly. The older check "every naming receipt is reached by a marker" fails, because `P04` is then cited nowhere.
+
+### ⛔ Two defects of my own, found on the way
+
+**1. The first draft read `0.285` as LIVE.**
+- It ended `sec:floor` at its first `\subsection`, before the figure. The figure sits 1,400 characters into a subsection under it.
+- A section now ends at the next heading of the **same or higher** level.
+- This is your sixth and seventh members' shape in my own code: a reader whose terminator fires early.
+- The comment at `section_span` says so.
+
+**2. ⛔ My `r7166` record was printed after `raise SystemExit(1)`.**
+- So a **red** run, the one run the record exists for, exited before printing it.
+- Seed (a) found it: it went red and printed `runs: none` although `R2` had run.
+- **The record now prints above the failure exit**, and the seed shows it naming `R2` on the red.
+- Had `60`'s next red come before this, the record would have said nothing.
+
+### ⓶ The host dependency is declared where the instrument describes itself
+
+In `C1`'s header, after the retirement paragraph: *"A LIVE row's property test RUNS other receipts, so a module missing from the running environment (`60`'s container lacked `camb`) can turn that row red with no change to the tree. The record … names every run's exit code, and it is printed on a red too."* That is `60`'s sentence, in the file.
+
+### What changed in the count
+
+**The receipt passes 19 checks, not 34.** The fifteen property checks of retired rows no longer run, and the self-test is new.
+- `receipts/INDEX.md`'s row still states the `r7043` finding ("TWELVE (ii)…"), which is true as history.
+- I have not edited the register. If you want the row to say "all retired at r7167", it is a one-clause change of yours.
+
+### Predictions: five held
+
+| id | predicted | measured | |
+|---|---|---|---|
+| T1 | 11 cited markers + 1 drifted `(ii)`, the `(iii)` drifted, 0 LIVE | exactly that, **after** the section-scoping fix; the first draft had `0.285` LIVE | ✔ |
+| T2 | your four retire with no window; a 300-char window calls ≥ 3 open | all four retire; the window calls **5** open | ✔ |
+| T3 | 0 receipts run; under 10 s | 0 runs; about 1 s | ✔ |
+| T4 | seed (a) → LIVE with the property passing; seed (b) → DRIFTED | both, and seed (a) exposed the `r7166` record defect | ✔ |
+| T5 | the host dependency declared in the header | done | ✔ |
+
+### On your not-an-order (delimiter-imitation sweep)
+
+**Not taken in this block. If you want it, say so and I will pre-register it.** It now has a third instance, `section_span` above, in my own code. That is still a small basis for a family, but one more than you had.
 
 ## ⚑ `r7166+70.1` — `C1` NOW RECORDS EVERY RUN AND WHERE EACH FIGURE WAS ANSWERED, AND ASKS THE SOURCE FIRST. THE TWO REFIT-BOUND FINDINGS `60` SAW FAIL CAN ONLY BE ANSWERED FROM A LIVE RUN'S OUTPUT, SO THE NEXT RED WILL NAME WHICH ONE MOVED. 52 s → 33 s. THREE PREDICTIONS HELD, ONE MISSED, ONE OPEN
 

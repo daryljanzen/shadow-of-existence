@@ -9,8 +9,8 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #273**, draft) — nothing waits on the chat window.*
-⌗ *PR #223, #236, #240, #246, #249, #256, #261 and #267 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #274**, draft) — nothing waits on the chat window.*
+⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267 and #273 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
@@ -9042,3 +9042,149 @@ because **the receipt types no paper figure at all** — every one of the nine c
 own reading of `CR_cosmology.tex`.*
 
 ⇒ **Nothing here is a question. The one thing routed is the one word, in your prose.**
+
+### ✔ `cc66.135` addendum — **CI RAN IT, BUT NOT ON THE HEAD YOU WILL LOOK AT**, and that generalises
+
+*PR #273 is green on every job and `mergeable_state: clean`. ⌗ **I checked the green was not vacuous
+and the first reading was the wrong one**, so the correction is here rather than in my head.*
+
+> ### The head's `scoped — the plain suite` ran **3** receipts, and the new one is not among them.
+> ### The push that ADDED it ran **348**, in `2472` s, and it is line `286` of that scope.
+
+⇒ ***Because the scope is computed per push, and `cc66.135b` changed only `FOR_66.md`.*** *So the
+head carries a green over a three-receipt scope while the receipt's own coverage sits one commit
+back. **Both greens are real and neither is the one a reader would check.** I established it rather
+than inferring it from the count: `receipt_scope.py --range 07c7ad0e..d72fda5c --scope suite`
+reproduces `348` exactly, locally, with the new file in it — and `--range d72fda5c..2dae1b8b`
+reproduces the `3`.*
+
+⌗ ***THE GENERAL SHAPE, WHICH IS WORTH MORE THAN THIS INSTANCE:*** *a documentation-only follow-up
+push narrows the head's scope, so **on a branch whose last push touches no receipt, the head's green
+is narrower than the branch's** and says nothing about what the branch added. *Nothing is wrong with
+the workflow — it is answering "what can this push have changed", correctly. It is the reader who
+will take the head's green for the branch's.** ⇒ *If you want a rule from it: on a PR whose last
+commit is prose, the green to read is the last code push's, and the head's green is a claim about
+prose.*
+
+⌗ *One stale run to ignore: `scoped — the tolerance perturbation` on the superseded head `d72fda5c`
+is still `in_progress`. It gates nothing — the PR's head is `2dae1b8b` and every job on it is green.*
+
+---
+
+## ✔ `r7167+cc66.136` — **REQUIRING THE WORD IS RIGHT AND I HAVE KEPT IT. THE ONE COST IS MEASURED, AND IT WAS THAT BOTH REFUSALS WERE THE SAME REFUSAL**
+
+*You asked the one question worth asking of your edit: whether requiring the restored word costs
+anything in the two sentences I read. **It costs nothing there — `15` of `15`, `rc=0`.** And it
+costs one thing elsewhere, which I would not have found by reading the diff.*
+
+### ✔ THE CALL IS YOURS AND IT IS THE RIGHT ONE, FOR THE REASON YOU GAVE
+
+***Tolerating either form would have been the `r7165` blindness, in my own receipt.*** *A locator
+that still matches the defective sentence cannot tell a discharged finding from a live one — and
+worse here than there, because it would also miss the defect's RETURN. **Requiring it is the only
+version that makes the receipt a guard rather than a record.** I would have made the same call and I
+am glad you made it rather than leaving it.*
+
+### ⛔ BUT MEASURED THREE WAYS, REQUIRING IT MADE THE TWO REFUSALS IDENTICAL
+
+*I seeded two papers outside the tracked tree and ran your locator against each.*
+
+| the paper says | what it is | `rc` | what the receipt said |
+|---|---|---|---|
+| `sits at $2.56$ times it on the same bins` | your repair | **0** | `15` of `15` |
+| `stand at $2.56$ times apart on the same bins` | **a CORRECT rewrite** — my own `cc66.135` recommendation | **1** | `matches 0 time(s)` |
+| `sits at $2.56$ on the same bins` | **the DEFECT returning** | **1** | `matches 0 time(s)` |
+
+⇒ ***Byte for byte the same message.*** *So the receipt was reporting **"the wording moved"** where
+its job is now to report **"the word was dropped"**. ⌗ *And the false-red case is not hypothetical:
+the wording it refuses is the one I recommended to you two revisions ago.** **For a receipt that is
+now the detector for its own finding's discharge, that is the one thing it must not be vague about.**
+
+### ✔ SO I ADDED A CLASSIFIER ON THE REFUSAL — NOT A TOLERANCE, AND THE DISTINCTION IS THE WHOLE POINT
+
+*`RELAPSE` carries the pre-`r7167` sentence and is tested **only when the repaired locator has
+already failed**. **The defective form is still `rc=1` and still asserts nothing.** The relapse
+message cannot fire unless the literal defective sentence is present; anything else falls through to
+the drift refusal, which now says in so many words that it is NOT the `r7167` defect.*
+
+> | `rc=0`, `15` of `15` | the repair in place |
+> | `rc=1`, *"THE `r7167` REPAIR HAS BEEN UNDONE … this is the finding this receipt was built on, returning"* | the word dropped |
+> | `rc=1`, *"the wording has DRIFTED … this is NOT the pre-`r7167` defect"* | anything else |
+
+⇒ ***What this preserves is your call and what it adds is which of two reds a reader is looking at.***
+*A guard keyed to one phrasing will fire on a correct rewrite too — that is unavoidable, since any
+finite set of accepted phrasings is a proxy for "the quantity is named", which is this round's own
+error shape. **The honest design is to require the literal and make the refusal say which thing
+happened**, rather than to widen the match and lose the guard.*
+
+### ⌗ AND ON YOUR `PO-78` ENTRY, WHICH I THINK IS STRONGER THAN YOU PUT IT
+
+***You wrote that a finding receipt quoting the defect cannot miss its own discharge. The measurement
+says something slightly sharper: it cannot miss it, but it cannot NAME it either, unless it also
+keeps the defect.*** *The discharge and an unrelated rewrite are the same event to a locator that
+only knows the repaired form. **So the retirement rule wants two readings and not one — what the
+repair must change, and what the defect looked like — and a receipt that keeps only the first knows
+that something moved and not what.** Offered for the entry; it is yours to take or leave.*
+
+### ✔ WHAT IS IN THE TREE
+
+*Your locator kept verbatim; `RELAPSE` and the two-branch refusal added with the measurement in a
+comment block above it; the `INDEX` row appended forward with the three readings. `15` of `15`,
+`rc=0`. Nothing else of yours touched.*
+
+⇒ **Nothing is routed back. This answers the only thing you asked.**
+
+---
+
+## ⛔⛔ `cc66.137` — **I MUST WITHDRAW `cc66.135c`. IT IS WRONG, AND IT IS WRONG BY THIS ROUND'S OWN ERROR SHAPE**
+
+***Do not take `cc66.135c`'s conclusion. The head's green was never narrower than the branch's, and
+the receipt was covered all along.*** *It is still in the open PR rather than merged, so you are
+reading the correction before the claim — but the claim is in the diff and I am not quietly
+revising it.*
+
+### ⛔ WHAT I GOT WRONG, AND THE MECHANISM
+
+***Each head carries TWO check runs called `scoped — the plain suite`, and I read one of them as
+the check run.*** *The `push`-event run scopes **that push's diff**. The `pull_request`-event run
+scopes **the whole PR** — its own log says so in as many words: `a pull_request event reads the
+ledger and does not write it (its scope is the whole PR, asked again on every PR event)`.*
+
+| head | `push`-event run | `pull_request`-event run |
+|---|---|---|
+| `2dae1b8b` (PR #273's head, prose only) | **3** receipts, 320 s | **164** receipts, **1226** s |
+| `dc623701` (PR #274's head, prose only) | **3** receipts, 320 s | **48** receipts, **646** s |
+
+⇒ ***So the head IS covered, by its `pull_request` twin, in both cases.*** *I verified the PR-wide
+scope locally rather than inferring it again: `receipt_scope.py --range $(git merge-base origin/main
+HEAD)..HEAD` returns **`48`**, exactly what CI reported, with the edited receipt at line `41`.*
+
+⛔ ***AND THIS IS THE NINTH INSTANCE OF THE ROUND'S SHAPE, THE PUREST ONE YET, AND MINE: the check
+run's NAME stood in for the check run.*** *Two runs share that name per head; I took the first one
+the API listed and called its scope "the head's scope". **A proxy for the thing again — and worse
+than the earlier eight, because I had the fact written down.** This session's own notes already said
+the duplicate runs per head carry DIFFERENT scopes. I had it, and I did not apply it.*
+
+### ⌗ WHAT SURVIVES OF `cc66.135c`, WHICH IS LESS THAN IT CLAIMED
+
+*Two narrow facts stand and the conclusion does not:*
+
+- ✔ *The `push`-event run's scope really is the push diff, so a prose-only push really does give
+  **that run** a 3-receipt scope.*
+- ✔ *The `348`-receipt figure for `d72fda5c` was right, and the receipt really was line `286` of it.*
+- ⛔ ***But "the head's green says nothing about what the branch added" is FALSE***, and so is the
+  rule I drew from it. **There is no reader hazard here: a reader who checks the head's checks sees
+  both runs, and the PR-wide one is the one that gates.** *The thing I called a finding was my own
+  misreading of a check-run list.*
+
+⇒ ***`PO-78` should not take `cc66.135c` as a member.*** *If anything in it is worth keeping it is
+the error and not the finding: **when two checks share a name, "the check" is not a thing you can
+refer to** — and a count read off one of them is a claim about which one you happened to read.*
+
+### ⌗ WHAT THIS DOES NOT TOUCH
+
+*`cc66.136` stands whole — the three-way refusal measurement, the classifier, and the answer to your
+`r7167` question are independent of this and were each measured directly. **And `cc66.135`'s own
+finding, the `$2.56$` quantity, is unaffected.** *Only the CI-coverage addendum is withdrawn.**
+
+⇒ **Nothing is routed. This is a withdrawal, and the PR body carries the same correction.**

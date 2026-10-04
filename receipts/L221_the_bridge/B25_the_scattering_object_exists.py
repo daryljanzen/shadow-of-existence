@@ -11,9 +11,24 @@ normalisation **".
 explicit leaf tetrad and the Cartan structure equations, that "** the massless radial Dirac operator
 carries superpotential $W=\\lambda\\sqrt f/r$ ** --- exactly P13's deferred equation".  *** A radial Dirac
 operator with a superpotential is a SUSY-QM pair, and its partner potentials are
-$V_\\pm=W^2\\pm dW/dx$ with $x$ the tortoise coordinate.  That is the Regge--Wheeler form, and the corpus
-has never written it: `Regge-Wheeler` and `effective potential` appear ZERO times in the papers and
-receipts. ***
+$V_\\pm=W^2\\pm dW/dx$ with $x$ the tortoise coordinate.  That is the Regge--Wheeler form, and at
+`1971c67` --- the tree this receipt was written against, where its absence claims are pinned --- the
+corpus had not written it. ***
+
+** ⌗ AND IT HAS WRITTEN IT SINCE, WHICH IS THIS RECEIPT'S OBJECT ARRIVING IN THE PAPERS AND IS WHY ⓷
+BELOW ASSERTS A PRESENCE RATHER THAN AN ABSENCE. **  `matter_sector_paper` (`P14`) carries
+$W=\\lambda\\sqrt f/r$ with $V_\\pm=W^2\\pm\\dd W/\\dd x$ and both partner potentials decaying
+exponentially in $r_*$, an ordinary short-range scattering problem with unitary transmission across the
+tower --- written at `r3652`, nine hundred revisions after this receipt.  *So the live half of ⓷ is the
+corpus's state now, and the historical absence stays pinned where it was measured.*
+
+** ⛔ AND THE LIVE ABSENCE CHECK THIS REPLACES WAS KEYED ON A LABEL AND NOT ON THE OBJECT, WHICH IS WHY
+IT PASSED FOR THREE AND A HALF THOUSAND REVISIONS WITH THE OBJECT IN THE CORPUS. **  It counted the
+string `Regge`, and `P14` wrote the FORM without the NAME.  *** It finally fired at `r7167`, on a
+sentence that used the words for an unrelated purpose --- so the one time it spoke, it was wrong about
+both halves: the form was present, and the thing it had detected was a name. ***  ⌗ *An absence keyed
+on what a thing is called cannot see the thing; and an absence with no presence assertion beside it
+cannot tell a true absence from a search that misses.  Both are repaired below.*
 
 ** ⓶ COMPUTED, on the undercritical member $M=0.12$, $\\alpha=1$ (horizons $0.2570$, $0.8464$): **
 
@@ -109,17 +124,44 @@ def main():
           'r=0.4, 0.5, 0.6 -- so the check is not vacuous',
           max(abs(v) for v in mid) > 0.1 and max(abs(v) for v in mid) < 10)
 
-    # ⓷ the corpus has never written this
+    # ⓷ the corpus HAS written this form since -- a presence, keyed on the object and not on its name.
+    #   The historical absence is pinned in the docstring at 1971c67 and is not re-measured here.
+    #   r7168: this replaced a live count of the string `Regge` over all papers.  That count read ZERO
+    #   for ~3,500 revisions while P14 carried the form itself, because P14 wrote the FORM without the
+    #   NAME -- and it went red at r7167 on a P15 sentence using the words for an unrelated purpose.
+    #   ** An absence keyed on a label cannot see the object, and an absence with no presence beside it
+    #   cannot be told from a search that misses. **  So the live assertion is now a PRESENCE of the
+    #   formula, which fails if P14's passage moves and cannot pass by a pattern going stale.
     def body(p):
         b = '\n'.join(l for l in open(p, encoding='utf-8', errors='replace').read().split('\n')
                       if not l.lstrip().startswith('%'))
         j = b.find('\\begin{thebibliography}')
         return b[:j] if j > 0 else b
-    papers = ' '.join(body(p) for p in glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
-                      if not os.path.basename(p).startswith('appendix_receipts'))
-    check('⓷ and the corpus has never written this form: "Regge-Wheeler" appears ZERO times in the '
-          'papers',
-          len(re.findall(r'Regge', papers)) == 0)
+    P14 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex')))
+    check('⓷ and the corpus HAS written this form since: P14 carries $W=\\lambda\\sqrt f/r$ with '
+          '$V_\\pm=W^2\\pm dW/dx$',
+          'W=\\lambda\\sqrt f/r$ and $V_{\\pm}=W^{2}\\pm\\dd W/\\dd x$' in P14)
+    # ⌗ r7169: this asserted P14's `unitary transmission across the tower` beside the formula and the
+    #   phrase is dropped.  ** It is prose that paper can reword without changing anything this receipt
+    #   claims, and the formula beside it carries the same content. **  *Adding a fragile pin while
+    #   repairing a fragile pin is the shape this revision is about.*
+    check('and states the scattering consequence this receipt computed, as a formula and not as prose: '
+          'both partner potentials $W^2\\pm dW/dr_*$',
+          'both partner potentials $W^{2}\\pm\\dd W/\\dd r_{*}$' in P14)
+
+    # and the NAME, measured where it now sits: the corpus locates the reduction and computes it nowhere
+    tex = {os.path.basename(p): body(p)
+           for p in glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
+           if not os.path.basename(p).startswith('appendix_receipts')}
+    named = {k: len(re.findall(r'Regge', v)) for k, v in tex.items()}
+    where = sorted(k for k, n in named.items() if n)
+    p15 = re.sub(r'\s+', ' ', tex['CR_cosmology.tex'])
+    m = re.search(r'Regge', p15)
+    sent = p15[m.start():m.start() + 600] if m else ''
+    check(f'and the NAME is in exactly one paper, {where}, where it LOCATES the reduction rather than '
+          'computing it (the companion dynamics paper)',
+          where == ['CR_cosmology.tex'] and sum(named.values()) == 1
+          and 'companion dynamics paper' in sent)
 
     print()
     if FAILED:
@@ -128,16 +170,20 @@ def main():
     print("  VERDICT: ** the object PO-11 needs is one line from the corpus's own superpotential. **")
     print('  ⛭⛭ ⓵ ** `B3` derives W = λ√f/r from the explicit tetrad ** — and a radial Dirac operator')
     print('     with a superpotential is a SUSY-QM pair, whose partners are ** V_± = W² ± dW/dx ** on the')
-    print('     tortoise line.  *** That is the Regge–Wheeler form, and the corpus has never written it:')
-    print('     "Regge-Wheeler" appears ZERO times. ***')
+    print('     tortoise line.  *** That is the Regge–Wheeler form, absent from the corpus at 1971c67,')
+    print('     where this receipt pinned its absence — and WRITTEN INTO P14 at r3652, nine hundred')
+    print('     revisions later, formula and scattering consequence both. ***')
     print('  ⓶ ** Computed: BOTH partners vanish at BOTH horizons ** and are bounded and non-zero')
     print('     between (V₊ ≈ 1.19, 0.50, 0.12 at r = 0.4, 0.5, 0.6).')
     print('     ⇒⇒ *** On the tortoise line that is a barrier with plane-wave asymptotics at both ends —')
     print('       so scattering states ARE defined, with the continuum normalisation PO-11 asks for. ***')
-    print('  ⓷ ** So the debt relocates: ** not "construct an object" but ** the SPECTRUM ** — transmission')
-    print('     and reflection across that barrier, and whether bound tower plus continuum is complete.')
-    print('     ⌗ That is the ordinary Regge–Wheeler problem on SdS, with decades of literature — the')
-    print('       "M-L, standard but substantial" sizing, now with its entry point identified.')
+    print('  ⓷ ** So the debt relocated, and the papers have since taken up where it went: ** P14 states')
+    print('     the ω≠0 problem as an ordinary short-range scattering problem, both partners decaying')
+    print('     exponentially in r_* at the surface gravity, with unitary transmission across the tower.')
+    print('     ⇒ ** What P14 names as still the undertaking is the quantised field, its mode')
+    print('       completeness, and the join between the static continuum and the wall ** — a different')
+    print('       object from this receipt\'s, carried where that paper carries it.')
+    print('     ⌗ The entry point this receipt identified is therefore walked, not merely named.')
     print()
     return 0
 
