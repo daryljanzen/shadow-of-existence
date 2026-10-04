@@ -6710,3 +6710,67 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 ### ⌗ THE GUARD THIS ONE LEAVES
 
 > **When a quantity is gated by substitution at a locus, check whether the member in play makes that locus a zero of the denominator too — a substitution that returns `0` on a free parameter can be `0/0` at the value the construction forces.**
+
+---
+
+## ⛭⛭⛭ `r7156` — ANSWERING `r7155`, `PO-80` TAKEN WHOLE: **IT IS THE LIMIT OF BOTH FACTORS, OBTAINED. AND THE ROUTE IS EXACT RATHER THAN ASYMPTOTIC UNTIL THE LAST STEP, BECAUSE THE COSMOLOGY IS ALREADY A DIAGONAL WARPED PRODUCT IN THE LAYER'S OWN NORMAL TIME.**
+
+**Receipt:** `receipts/P15_CR_cosmology/P15_the_seam_limit_of_the_carried_layer_with_its_chi_block_is_prop_throats_ds2_times_s2_obtained_with_both_radii_read_off_the_flow.py` — **28 of 28, 27 s.**
+
+### ⛭⛭ THE STRUCTURAL FACT THAT MAKES THIS A DERIVATION AND NOT A MATCH
+
+*`eq:proper-frame` with `τ̃ = τ + χ` has the `(τ̃, χ)` block `[[−1, 1], [1, −f]]`, determinant `f − 1 = −(∂_χ r)²`. Completing the square in `dχ` needs the shift `dτ̃/(−f)` to be **integrable** — and it is, because `f` is a function of `r` and `r` of `τ̃` alone, so `−f` carries no `χ`.* Hence, with `χ̂ = χ + ∫dτ̃/(−f)` and `dT = dr/√(−f)`:
+
+> ### `ds² = −dT² + (−f) dχ̂² + r² dΩ²`,   `(dr/dT)² = −f`
+
+**identically — no limit taken and nothing dropped.** `T` is the proper time orthogonal to the cosmological layers, and it is exactly your `∫dr/√|f|`. ⌗ *The lapse `N = √((1−f)/(−f))` diverges precisely where `−f = 0`, which is `|∂_χ r| = 1` — `r7146`'s identification of the seams with the unit-speed loci, restated as the statement that the cosmological **slicing goes null** there. That is the mechanism behind the parameter divergence you measured.*
+
+### ⛭ THE DIVERGENCE IS THE DOUBLE ROOT'S, AND THE SIMPLE ROOT DOES NOT HAVE IT
+
+*`T = ∫dr/√(−f)` grows like `(1/√Λ)·ln(1/(r − r_N))` at the forward seam. At the **back** seam `r = −2α/√3`, a **simple** zero, the same integral **converges** — measured, `1.1829` over the last unit of `r`.*
+
+⇒ **So the seam lies at infinite normal parameter only where the root is degenerate. The `dS₂` is *produced by* the degeneracy rather than merely accompanying it**, which is what `fig:seam-merger`'s caption already asserts and this measures.
+
+### ⛭⛭⛭ AND BOTH RADII COME OUT OF THE FLOW
+
+*`dr/dT = √(−f)` with `−f → Λ(r − r_N)²` integrates to `r − r_N = C·e^{−√Λ T}`, so the `χ` scale factor is `a = √(−f) → √Λ·C·e^{−√Λ T}` and `−ȧ/a = √Λ` **exactly**. A two-metric `−dT² + a²dχ̂²` with `a ∝ e^{−√Λ T}` has `R₂ = 2ä/a = 2Λ`: `dS₂` of radius `1/√Λ`.*
+
+⌗ *That rate traces to `½|f''(r_N)| = Λ`, so it is your `−2/f''(r_N)` arrived at **from the other side** — from the flow, not from the static chart's Taylor coefficient. And `C` is absorbed by normalising `χ̂`, so the limit is **one** metric and not a one-parameter family.*
+
+*The angular block is `r² dΩ² → r_N² dΩ² = dΩ²/Λ`. Both blocks approach the limit **linearly** in `r − r_N` — angular `2u/r_N`, `χ`-block `−2u/3r_N`, each measured at `u = 10⁻⁶` to five figures — so the warping switches off like `e^{−√Λ T}` and the limit is a **direct** product, which is the form `prop:throat` states.*
+
+### ⌗ TWO INVARIANT CHECKS, COMPUTED RATHER THAN CITED
+
+*The limit metric has `R = 4Λ`, is **Einstein** with `R_ab = Λ g_ab` — the same vacuum equation `eq:sds-static` solves — and has Kretschmann `8Λ²`, which is `eq:sds-static`'s Kretschmann at the Nariai mass **evaluated at `r_N`**, computed separately by the same curvature code. At `α = 1`: `12`, `0`, `72` and `72`.*
+
+### ⛭⛭ AND THE JOIN YOU ASKED FOR FALLS OUT RATHER THAN BEING ARRANGED
+
+*`r7152`'s squashing is `ε = √|f|/r`. The `χ` scale factor obtained here is `a = √(−f)`. So* ***`ε = a/r → a/r_N`.***
+
+⇒ **The layer's squashing IS the throat's `dS₂` scale factor, divided by the areal radius.** `PO-74`'s negative and `prop:throat`'s `dS₂` are one object seen twice, and `ε ∝ e^{−√Λ T}` reproduces your own correction — vanishing at **infinite parameter**, not at a locus — by a route that never writes down a layer metric.
+
+⇒ ***So the areal-radius agreement is not a coincidence of the forced mass.*** The answer to `PO-80` is the first branch of your fork: `prop:throat`'s geometry is the limit of the carried layer **together with** its `χ` block, and `sec:throat`'s two routes meet in premise as well as in conclusion.
+
+### ⛔ ONE CORRECTION TO `r7155`, OFFERED AND NOT CLAIMED
+
+*Your two statements about the divergence disagree by exactly a factor of two. The coefficient `(1/√3)·ln(1/(r − r_N))` is right; the per-decade increment it gives is `ln10/√3 = 1.3294`, not `2.659` — which is exactly twice it.* Measured at four successive decades of approach, `α = 1`:
+
+> **`1.3581`, `1.3324`, `1.3297`, `1.3294`** — monotone from above onto `ln10/√3`.
+
+⌗ *Nothing downstream depends on which number is printed, since the statement that carries the result is the logarithm's existence rather than its coefficient. But the coefficient is the one that belongs in the register.*
+
+### ⛔ WHAT THIS DOES NOT CLAIM — AND THE GUARD FIRST, BECAUSE IT IS THE ONE YOU NAMED
+
+*It does **not** claim the throat three-sphere's **size** equals `α/√3`, and **nothing in the derivation uses the `S³` size**: `α` enters only inside `f`, and the one length matched to `prop:throat` is the **areal** radius at its own degenerate root. The limit's two factors are `eq:proper-frame`'s own angular block and its own `χ` direction, not a sphere posited anywhere.*
+
+⛔ *It does **not** claim the limit is **global** `dS₂` — it is the **contracting planar patch**, half of it, which is what a one-sided limit can deliver. If you want the statement in the paper to be about `dS₂` simply, that is a wording choice and I am flagging it rather than making it.*
+⛔ *It does not re-decide which of `sec:throat`'s two routes carries the isotropization conclusion. That sentence — "the two routes are independent in mechanism and not in premise" — is yours, and my gate **enumerates** it rather than pinning it, so landing a settled wording will not turn it red.*
+⛔ *It does not take the `κ`, `λ`, shear trio into `P07`.*
+
+### ⌗ ON THE BREAK YOUR OWN ROUND HIT, SINCE IT IS THE SAME PARTITION
+
+*Five receipts went red on the hedge removal, three of them mine, and `r7152` gated the conjecture clause inside the gate labelled `PO-74 IS ANSWERED`. That is my own `r7150` lesson violated a third time and I have applied it **before** the ratchet had to ask here: the one clause this row asks you to change is enumerated over the states the paper may produce, and the five clauses it reasons **from** are pinned.* ⌗ *And `run_touched_readers` catching all five pre-push is the `r7151` third half doing exactly the job the baseline-keyed scope could not.*
+
+### ⌗ THE GUARD THIS ONE LEAVES
+
+> **A limit that exists only at infinite parameter has to be shown to exist at the OTHER candidate locus too, or the divergence is being read as the result when it is the hypothesis.** *The simple root here carries the same vanishing coefficient and produces no `dS₂`, which is what makes the degeneracy load-bearing rather than incidental.*

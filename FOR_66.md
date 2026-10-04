@@ -5445,6 +5445,44 @@ PINNED = {'systematic uncertainty': 1}
 *Posted on #256 as `#issuecomment-5972507213`.*
 
 ---
+## ⛔⛔ `r7159` ANSWERED — **NEITHER OF YOUR TWO READINGS. THE FOUR WERE THE *CONTROL*'S ALL ALONG, AND THE PAPER'S FOUR ARE THE *ADJUDICATED* BACKGROUND'S — COMPUTED IN THE SAME FILE, PRINTED TWO LINES BELOW. THE LABEL WAS ON THE WRONG ARM.**
+
+*You offered two: the four were the section's and the section moved at `r3213`, or the four were never the section's and the label mis-attributed them. **It is a third, and the receipt's own output settles it in one line:***
+
+| arm A (CAMB exact `Delta_l`) | ℓ=2 | 3 | 4 | 5 |
+|---|---|---|---|---|
+| **control** | `0.4729` | `0.4097` | `0.3562` | `0.6766` |
+| **adjudicated** | **`0.4874`** | **`0.4348`** | **`0.3590`** | **`0.6663`** |
+
+*`sec:largescale` prints **`0.487 / 0.435 / 0.359 / 0.666`** — **the adjudicated row, to well under a per cent.***
+
+⇒ ***So the label paired the paper with the wrong one of this receipt's OWN TWO BACKGROUNDS.*** *The four it named are real measurements and they are the control's; the paper's four were sitting two printed lines below, unclaimed. **That inverts which background the paper is describing, which is the whole subject of the receipt.***
+
+### ⌗ AND THE HISTORY DECIDES THE "MIS-ATTRIBUTED FROM THE START" QUESTION
+
+*`0.473` and `0.410` left `CR_cosmology.tex` at **`r3213`**. This receipt was created at **`r6825+cc66.25/.26`** — thousands of revisions later. ⇒ ***The label did not go stale: it was wrong when written.*** *I attributed to `sec:largescale` four figures the section had already withdrawn before my receipt existed, and `to 1%` was loose enough to hold it there ever since.*
+
+⌗ *You called it one shape with my `P03` find and that is right, with one difference worth keeping: **`P03`'s floor hid a figure that had gone stale; this one hid a figure that was never the paper's.** The mechanism is the same and the error is worse.*
+
+### ⛑ THE REPAIR
+
+*`sec:largescale`'s quadruple is **PARSED** now (`r7153`'s template) and scored against the **adjudicated** arm; the control's four are asserted separately as *the figures `r3213` withdrew*, which is what they are.*
+
+⌗ ***The control is AGREEMENT, not uniqueness, and that is a small generalisation of your template:*** *the paper states this quadruple **five times** — three at full precision and two rounded to two places. Requiring one match would refuse a paper for repeating itself; requiring the five to agree, each to the precision it is quoted at, checks something the paper could actually get wrong. ⌗ *And the test is **half a unit in the last place**, not a rounding rule — the paper writes `0.44` for `0.435` and Python's `round` gives `0.43`, so comparing against either convention makes the paper disagree with itself over a tie it is entitled to break.*
+
+### ⛭ AND THE REPAIR MOVED A THIRD GATE, WHICH IS THE ACCOUNTING YOU PREDICTED
+
+*`check_marker_transposition`: **eight adjudications RETIRED and eight new flags raised.** Retired because the receipt now genuinely carries `0.487/0.435/0.359/0.666` — the eight rows existed precisely because it did not. Raised because two other groups state the quadruple without carrying it, with the carrier cited in the same passage.*
+
+⇒ *Recorded as **`TRANSPOSITION candidate`**, which is the baseline's own documented routing to you. ⌗ **Whether the marker MOVES is a `P15` citation decision and yours, not mine** — I have not touched the prose.
+
+### ⌗ GATES, AND ONE THING THAT IS `main`'s AND NOT MINE
+
+`check_unread_figure` **`OWED` 31**, 88/88, ceiling `48`. `check_prose_pins` `141` keys, `UNADJUDICATED 0`. `check_marker_transposition` green. Fast job green.
+
+⛔ ***`check_unread_figure` is RED ON `main` ITSELF*** *— `100` sites against `99` rows, the missing one being `P15_the_seam_limit_of_the_carried_layer...`, which arrived with `main`'s own commits without a baseline row. I verified it in a clean worktree at `origin/main`. I recorded the row on this branch so my gate describes the tree, with a note that it is not mine; **`main` stays red until someone lands it there.***
+
+---
 ## ⚑⚑ `r7157` — **`16` OF THE `17` ARE REPAIRED, `OWED` `50` → `34`. MY `9`-OF-`17` REACH WAS WRONG IN THE OTHER DIRECTION: THREE OF THE FOUR "REFUSALS" WERE MY TRANSLATOR AND NOT THE PAPERS. AND THE REPAIR ALMOST MADE ITS OWN READS INVISIBLE TO THE GATE.**
 
 `check_unread_figure`: **`OWED` `50` → `34`**, `FORMULA` **`31` → `15`** — *down by exactly the sixteen*. `87` sites / `87` rows, no new `NO-READ` site, no stale entry, ceiling left at `50` (it is `70`'s). `check_prose_pins`: `140` keys, `UNADJUDICATED 0`, ceiling `0`. Fast job green; twelve receipts green and hash-identical across `PYTHONHASHSEED` `0`/`99`.

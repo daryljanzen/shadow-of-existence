@@ -298,7 +298,47 @@ A = {}
 for bg in (CTL, ADJ):
     e, r = armA(*bg)
     A[bg] = {int(l): float(r[i]) for i, l in enumerate(e)}
-check("arm A on the control still reproduces sec:largescale's 0.473 / 0.410 / 0.356 / 0.676 to 1%",
+#: ⛔⛔ r7159+cc66.117: THIS CHECK HAD THE PAPER ON THE WRONG BACKGROUND, and it passed for
+#: thousands of revisions because `to 1%` is loose enough to hold a stale attribution in place --
+#: the same shape as `P03`'s `>= 3` sitting under "its three uses" at eleven.
+#:   ⌗ WHAT IT SAID: *arm A on the CONTROL reproduces `sec:largescale`'s 0.473 / 0.410 / 0.356 /
+#:   0.676*.  ⌗ WHAT IS TRUE: those four are the CONTROL's values, and `sec:largescale` prints
+#:   **0.487 / 0.435 / 0.359 / 0.666** -- which are the ADJUDICATED background's, computed in this
+#:   same file and printed two lines below.  *So the attribution was attached to the wrong one of
+#:   this receipt's own two backgrounds, and the figures it named were the ones the paper WITHDREW.*
+#:   ⌗ WHEN: `0.473` and `0.410` left `CR_cosmology.tex` at `r3213`, whose own subject is "P15's
+#:   withdrawn depth figures were still live in six places".  **This receipt was created at
+#:   `r6825+cc66.25/.26`, long after** -- so the label did not go stale, it was wrong when written.
+#: ⇒ Repaired by PARSING the four from the paper (`r7153`'s template) and scoring the ADJUDICATED
+#:   background against them, with the control's own four asserted separately as what they are.
+_P15TEX = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read()
+_QUAD = re.findall(
+    r'\$\\?a?p?p?r?o?x?\s*?(0\.\d+)\$,?\s*\$(0\.\d+)\$,?\s*\$(0\.\d+)\$\s*(?:and\s*)?\$?,?\s*'
+    r'\$?(0\.\d+)\$.{0,60}?expectation at \$\\ell=2,3,4,5\$', _P15TEX)
+assert _QUAD, "sec:largescale: the four-figure depth statement did not parse"
+#: ⌗ THE CONTROL IS AGREEMENT AND NOT UNIQUENESS, because the paper states this quadruple FIVE
+#: times -- three at full precision and two rounded to two places.  Requiring one match would refuse
+#: a paper that simply repeats itself; requiring the statements to AGREE, each to the precision it is
+#: quoted at, checks something the paper could actually get wrong.
+_PREC = max(_QUAD, key=lambda q: min(len(x.split('.')[1]) for x in q))
+_PAPER4 = [float(x) for x in _PREC]
+#: ⌗ THE TEST IS HALF A UNIT IN THE LAST PLACE AND NOT A ROUNDING RULE.  The paper writes `0.44`
+#: for `0.435`, and Python's `round(0.435, 2)` is `0.43` -- so comparing against any one rounding
+#: convention makes the paper disagree with itself over a tie the paper is entitled to break either
+#: way.  *What consistency actually means here is that each quoted figure sits within half a unit of
+#: the precise one at the precision it is quoted to.*
+for _q in _QUAD:
+    for _x, _v in zip(_q, _PAPER4):
+        _dp = len(_x.split('.')[1])
+        assert abs(float(_x) - _v) <= 0.5 * 10 ** -_dp + 1e-12, (
+            f"sec:largescale states the depth quadruple inconsistently: {_x} against {_v}")
+print(f"      sec:largescale PARSED: {' / '.join(f'{v:.3f}' for v in _PAPER4)}"
+      f"   ({len(_QUAD)} statements, all agreeing)")
+check(f"arm A on the ADJUDICATED background reproduces sec:largescale's "
+      f"{' / '.join(f'{v:.3f}' for v in _PAPER4)} to 1% -- PARSED from the paper",
+      all(abs(A[ADJ][l] / v - 1) < 0.01 for l, v in zip((2, 3, 4, 5), _PAPER4)))
+check("and arm A on the CONTROL reproduces 0.473 / 0.410 / 0.356 / 0.676 -- the figures `sec:largescale` "
+      "WITHDREW at r3213, so this is the control's own state and NOT the paper's",
       all(abs(A[CTL][l] / v - 1) < 0.01
           for l, v in ((2, 0.473), (3, 0.410), (4, 0.356), (5, 0.676))))
 B_frozen = {CTL: KSCAN[0.1], ADJ: armB(ADJ, ZEND=0, NTAU=150000, KLO=0.1, NLOW=480)[0]}

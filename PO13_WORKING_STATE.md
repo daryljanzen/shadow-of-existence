@@ -7593,3 +7593,42 @@ Found only because `P15_expansion_law` stayed `NO-READ` after its three figures 
 ### Next
 
 The 14 `NO-ANCHOR` sites as the derivation block — nine `P10` re-parameterisation identities and five to read individually. The distribution goes in once when those close, with the 16/1 folded into it.
+
+## cc66.117 — `r7159` answered: neither of 66's two readings. The four were the CONTROL's, the paper's four are the ADJUDICATED background's — computed in the same file and printed two lines below. The label was on the wrong arm
+
+66 offered two readings: the four were the section's and the section moved at `r3213`, or they were never the section's and the label mis-attributed them. **It is a third**, and the receipt's own output settles it:
+
+| arm A (CAMB exact `Delta_l`) | ℓ=2 | 3 | 4 | 5 |
+|---|---|---|---|---|
+| **control** | `0.4729` | `0.4097` | `0.3562` | `0.6766` |
+| **adjudicated** | **`0.4874`** | **`0.4348`** | **`0.3590`** | **`0.6663`** |
+
+`sec:largescale` prints **`0.487 / 0.435 / 0.359 / 0.666`** — the adjudicated row, to well under a per cent.
+
+⇒ **The label paired the paper with the wrong one of this receipt's own two backgrounds.** The four it named are real measurements and they are the control's; the paper's four were two printed lines below, unclaimed. That inverts which background the paper is describing, which is the receipt's whole subject.
+
+### The history settles "mis-attributed from the start"
+
+`0.473` and `0.410` left `CR_cosmology.tex` at **`r3213`**; this receipt was created at **`r6825+cc66.25/.26`**, thousands of revisions later. ⇒ **The label did not go stale — it was wrong when written**, and `to 1%` was loose enough to hold it there ever since.
+
+⌗ One shape with my `P03` find, with a difference worth keeping: **`P03`'s floor hid a figure that had gone stale; this hid a figure that was never the paper's.** Same mechanism, worse error.
+
+### The repair
+
+`sec:largescale`'s quadruple is **parsed** (`r7153`'s template) and scored against the **adjudicated** arm; the control's four are asserted separately as *the figures `r3213` withdrew*.
+
+Two small generalisations of the template:
+- **Agreement, not uniqueness.** The paper states the quadruple **five times** — three at full precision, two rounded to 2dp. Requiring one match refuses a paper for repeating itself; requiring the five to agree, each to the precision quoted, checks something the paper could get wrong.
+- **Half a unit in the last place, not a rounding rule.** The paper writes `0.44` for `0.435` and Python's `round(0.435, 2)` is `0.43`, so testing against either convention makes the paper disagree with itself over a tie it may break either way.
+
+### The repair moved a third gate — the accounting `r7155` predicted
+
+`check_marker_transposition`: **8 adjudications retired, 8 new flags raised.** Retired because the receipt now genuinely carries `0.487/0.435/0.359/0.666` — those eight rows existed precisely because it did not. Raised because two other groups state the quadruple without carrying it, the carrier being cited in the same passage. Recorded as **`TRANSPOSITION candidate`**, the baseline's own documented routing to 66. **Whether the marker moves is a `P15` citation decision and 66's; I have not touched the prose.**
+
+⌗ *A process note against myself: my first pass at that baseline matched rows on `(number, carrier)` and deleted 20 instead of 8. Caught by the gate, restored from git, and redone on the gate's own four-part key — `(paper, group, token, carrier)`. A looser key than the instrument's own is not a shortcut, it is a different question.*
+
+### Gates, and one thing that is `main`'s
+
+`check_unread_figure` **OWED 31**, 88/88, ceiling 48. `check_prose_pins` 141 keys, `UNADJUDICATED 0`. `check_marker_transposition` green. Fast job green.
+
+⛔ **`check_unread_figure` is red on `main` itself** — 100 sites against 99 rows, the missing one `P15_the_seam_limit_of_the_carried_layer...`, which arrived with main's own commits without a baseline row. Verified in a clean worktree at `origin/main`. I recorded the row here so this branch's gate describes the tree, noting it is not mine; **main stays red until someone lands it there.**
