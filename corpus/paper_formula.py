@@ -297,13 +297,30 @@ def to_sympy(frag, locals_=None, strict=True):
     return out
 
 
+#: ⛔ ⛭ r7164+cc66.134: ** "CONTAINS A NEWLINE" WAS A PROXY FOR "IS TEXT", AND IT SENT 400 KB OF A
+#: PAPER TO `open()` AS A FILENAME. **  Both readers took `tex` as a path unless it held a newline.
+#: `P15_the_bead_routes...` reads its paper through a helper that NORMALISES WHITESPACE, so the body it
+#: hands over is text with no newline in it -- and the call died on `File name too long` rather than on
+#: anything about the paper.
+#: ⇒ A path is now what a path actually is: no newline, short enough to be one, AND present on disk.
+#: Anything else is the source itself.  ⌈ `os.path.exists` swallows the OSError a 400 KB "name" raises,
+#: so the length bound is what makes the test decide rather than merely not crash.
+#: *Seventh of this round's shape and the first in the instrument's API rather than its logic: a
+#: property that USUALLY accompanies the thing is not the thing.*
+def _source(tex):
+    """The paper's text, whether `tex` is the text or a path to it."""
+    if '\n' not in tex and len(tex) < 4096 and os.path.exists(tex):
+        return open(tex, encoding='utf-8').read()
+    return tex
+
+
 def equation(tex, label):
     """The body of the equation carrying `\\label{label}`, as LaTeX.
 
     Asserts the label occurs EXACTLY ONCE in the paper -- the same control as `r7153`'s
     `len(m) == 1`: an attribution to a label the paper carries twice is not an attribution.
     """
-    src = tex if '\n' in tex else open(tex, encoding='utf-8').read()
+    src = _source(tex)
     tag = r'\label{%s}' % label
     assert src.count(tag) == 1, f'{label}: the paper carries {src.count(tag)} copies, not one'
     i = src.index(tag)
@@ -411,7 +428,7 @@ def inline(tex, pattern, locals_=None, strict=True):
     `(expr, kept, skipped)`: the agreed sympy expression, how many occurrences were read, and how
     many were skipped as prefixes of something longer.
     """
-    src = tex if '\n' in tex else open(tex, encoding='utf-8').read()
+    src = _source(tex)
     kept, skipped, got = [], 0, None
     for m in re.finditer(pattern, src):
         if _extends(src, m.end()) or _preceded(src, m.start()):
