@@ -1,0 +1,128 @@
+C1 -- DOES EACH CITED RECEIPT COMPUTE WHAT ITS SENTENCE SAYS?  THE CITATION SWEEP (node 70, `r7043`).
+
+606 `\rcpt` markers across seventeen papers cite 500 distinct receipts, and every one resolves to a file.  The
+question is content: ** for every marker, does the named receipt compute the quantity the sentence attributes to
+it?**  Three-way verdict: (i) it does; (ii) it does not and a DIFFERENT receipt does -- named; (iii) no receipt
+in the repository computes it.
+
+THE INSTRUMENT.  Every cited receipt (and, so a "found nowhere" is honest, every uncited one under 300 s) was run
+once and its output kept; each marker's numbers are matched against the cited receipt's SOURCE AND OUTPUT, at the
+precision the paper quotes, with adjacent markers treated as one group citation.  The tracer's (ii) and (iii) are
+candidates; every one was read by hand.  ⚠ Found running it, not pre-registered: the claim window is the whole
+passage the marker closes (since the previous marker or paragraph break), not the last sentence -- the last
+sentence misses numbers the same marker covers.  And three tracer artefacts were fixed and named: a Unicode minus,
+integers rounded from the receipt's decimals, and exponent fragments (10^{-111} read as "111").
+
+** THE ANSWER TO c), FIRST: NO ABSTRACT AND NO CONCLUSION IN THE CORPUS CITES THE WRONG RECEIPT OR NONE. **
+The fifteen markers under an abstract or conclusion -- ten in the matter-sector abstract, three in the geometric
+core's, the cosmogenesis abstract and its verdict section -- were read by hand against their receipts' stated
+results, and each receipt establishes what its sentence says.
+
+** BELOW THE HEADLINE: TWELVE (ii) AND ONE (iii). **  Ten of the twelve are in `CR_cosmology`'s acoustic comparison,
+and five of those name a receipt the paper cites NOWHERE:
+  (ii) sec:refit-bound, the chi^2 per bin 1.16 / 2.98 (214.1 / 550.5), cited to `P15_where_the_likelihood_sits`,
+       computed by the uncited `P15_the_full_range_lensed_comparison...`;
+  (ii) the refit 1.01 / 1.58 and the band-by-band 1.70 ... 9.29, cited to the 132-BIN refit, computed by the
+       uncited `P15_the_full_range_refit...` and `P15_at_its_own_preferred_H0...`;
+  (ii) the arm's peaks, comb 298.0, phase -0.2349 and height ratios, cited to the fourth-peak receipt, computed by
+       the uncited `P15_at_its_own_preferred_H0...`;
+  (ii) the control's 2.195 at peaks 220/536/814, cited to the two-arm control, computed by the uncited
+       `P15_the_third_peak_deficit...`;
+  (ii) the second-instrument comparison 2.273 / 2.319, cited to the locator, computed by the uncited
+       `P15_the_crossing_spectrum_reproduces...`;
+  (ii) the sky's P1/P2 = 2.2564 cited to the baryon term, the arm's comb 298.0 against 302.9 cited to the
+       free-streaming knob, the alternative assignment's 221.95 -> 226.16 cited to the visibility clock -- each
+       computed by a receipt the paper cites elsewhere for another sentence;
+  (ii) "validated on its control to 0.23%" cited to C59 -- C59 states 0.14%, the figure the paper itself calls "a
+       different run"; the 0.23% is the third-peak run's;
+  (ii) two NEIGHBOURS: a number placed under the marker beside the one that computes it (P15's 0.1792;
+       cosmogenesis's 7.78 and interior mode 909);
+  (ii) modern_parallax's sigma_8,eff = 0.285 cited to R2, an input set in `P04_redshift_isotropy_floor`.
+  (iii) canonical_time sec (the adiabatic residual): "2.8e-4 in amplitude at n=2, 5.9e-6 at n=3" -- computed by no
+       receipt in the repository; the cited receipt's own table gives 7.92e-5 and 2.42e-6, and its printed
+       "7.9e-08 in power" is a literal that disagrees with its own computed n=2 power, 6.28e-9.
+
+⛔ NOT CLAIMED: that any number is wrong -- only whether the cited receipt produces it; the (iii)'s internal
+disagreement is REPORTED, not adjudicated.  469 markers state no number and are not verdicted by the tracer: the
+fifteen headline ones are read by hand, the rest are a STATED LIMIT, not a silent pass.  No prose edited -- every
+hit is routed to 66.  No physics, no re-scoring, no other seat's receipt touched.
+
+** r7167: A FINDING IS RETIRED BY WHAT ITS REPAIR MUST CHANGE. **  Each finding above is now re-read from the
+paper's SOURCE before anything runs: RETIRED-DRIFTED if the paper prints none of its figures any more,
+RETIRED-CITED if every figure it still prints is closed, in its own section and with no fixed window, by a group
+naming the computing receipt; otherwise LIVE, and only a LIVE finding runs its property test.  ⛭ r7169: a
+refusal says WHICH red -- LIVE-DEFECT when the figure is closed by the originally cited receipt (the r7043
+finding as stated; its property test runs), LIVE-UNRECOGNISED otherwise (a FAIL that says it is NOT the original
+defect, names what closes the figure, and runs nothing).  A repair-only test gives both one message (`cc66`, r7169).  At r7167 all
+fourteen rows retire (twelve cited, two drifted) and the sweep runs no receipt at all.  The property the findings
+were stated as is untouched by their repair, so testing it again could never retire one (66, r7165/r7167).
+
+** HOST DEPENDENCY. **  A LIVE row's property test RUNS other receipts, so a module missing from the running
+environment (`60`'s container lacked `camb`, r7167) can turn that row red with no change to the tree.  The record
+printed above the verdict (`WHAT THIS VERDICT RAN`) names every run's exit code, and it is printed on a red too.
+
+Written r7043 by node 70.  Retirement and the run record added r7166-r7167.  Stated for reversal.
+
+====================================================================================================
+PART 0 -- THE PRE-REGISTRATION CAME FIRST; THE ONE DEVIATION IS DECLARED
+====================================================================================================
+  [PASS] the pre-registration fixed source-AND-output matching and hand-read candidates before any verdict
+  [PASS] ⚠ and the claim-window deviation and the three tracer artefacts are declared in the header, not hidden
+    markers now: 705; distinct receipts: 560; unresolved: 0   (REPORTED, not gated)
+
+====================================================================================================
+PART c) -- THE FIFTEEN HEADLINE MARKERS: each receipt establishes what its sentence says
+====================================================================================================
+  [PASS] (i) headline: `P16_recollapse_is_the_nariai_threshold` states its result   (EXACTLY THE NARIAI THRESHOLD)
+  [PASS] (i) headline: `P16_theory_error_and_likelihood` states its result   (D/H -0.5sigma)
+  [PASS] (i) headline: `P17_no_second_scale_on_either_face` states its result   (SUPPLIES A SECOND SCALE)
+  [PASS] (i) headline: `Q3_cayley_klein` states its result   (log-cross-ratio)
+  [PASS] (i) headline: `Q6r_polar_is_the_background` states its result   (signature (1,4))
+  [PASS] (i) headline: `P14_dual_norm` states its result   (LEAF norm)
+  [PASS] (i) headline: `P14_leaf_compactness` states its result   (FINITE total length)
+  [PASS] (i) headline: `P14_mode_monodromy_at_the_wall` states its result   (the wall IS the branch point)
+  [PASS] (i) headline: `P14_the_count_specified` states its result   (the count problem, specified)
+  [PASS] (i) headline: `W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_chi` states its result   (EXCLUDED BY A SYMMETRY)
+  [PASS] (i) headline: `P14_the_twist_conjugates_T_it_does_not_project_it` states its result   (PERMITS the 2+1+1 but does not SELECT)
+  [PASS] (i) headline: `P14_quark_lepton_frontier` states its result   (WHAT IT DOES NOT LAND: the count)
+  [PASS] (i) headline: `C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_a` states its result   (GENERIC TO CUBICS)
+
+====================================================================================================
+PART (ii) -- TWELVE MARKERS: the cited receipt does not produce the numbers; the named one does
+====================================================================================================
+  [PASS] ⛭ r7167/r7169: the retirement rule sorts its own synthetic paper four ways -- repaired, the defect back, an unrecognised rewrite, drifted   (('RETIRED-CITED', 'LIVE-DEFECT', 'LIVE-UNRECOGNISED', 'RETIRED-DRIFTED'))
+  [RETIRED-CITED] (ii) CR_cosmology sec:refit-bound: ['214.1', '550.5'] -- closing group names the computing receipt at +140, +99 chars
+  [RETIRED-CITED] (ii) CR_cosmology sec:refit-bound: ['1.58', '2.56'] -- closing group names the computing receipt at +202, +104 chars
+  [RETIRED-CITED] (ii) CR_cosmology sec:refit-bound: ['9.29'] -- closing group names the computing receipt at +222 chars
+  [RETIRED-CITED] (ii) CR_cosmology sec:refit-bound: ['-0.2349'] -- closing group names the computing receipt at +515 chars
+  [RETIRED-CITED] (ii) CR_cosmology sec:refit-bound: ['2.195'] -- closing group names the computing receipt at +271 chars
+  [RETIRED-CITED] (ii) CR_cosmology sec:refit-bound: ['2.273', '2.319'] -- closing group names the computing receipt at +446, +434 chars
+  [RETIRED-CITED] (ii) CR_cosmology sec:diffusion: ['2.2564'] -- closing group names the computing receipt at +304 chars
+  [RETIRED-CITED] (ii) CR_cosmology sec:refit-bound: ['302.9'] -- closing group names the computing receipt at +251 chars
+  [RETIRED-DRIFTED] (ii) CR_cosmology sec:refit-bound: ['221.95', '0.7354'] -- the paper prints none of ['221.95', '0.7354']
+  [RETIRED-CITED] (ii) CR_cosmology sec:refit-bound (neighbour): ['0.1792'] -- closing group names the computing receipt at +92 chars
+  [RETIRED-CITED] (ii) cosmogenesis progenitor (neighbour): ['7.78', '909'] -- closing group names the computing receipt at +304, +193 chars
+  [RETIRED-CITED] (ii) modern_parallax sec:floor: ['0.285'] -- closing group names the computing receipt at +811 chars
+  [PASS] ⛭ and EVERY naming receipt is now reached by a marker -- the five that were not are, since r7049   (0 distinct sources uncited)
+  [RETIRED-CITED] (ii) CR_cosmology sec:scope: ['0.23'] (the C59 marker) -- closing group names the computing receipt at +99 chars
+
+====================================================================================================
+PART (iii) -- ONE: numbers no receipt in the repository computes
+====================================================================================================
+  [RETIRED-DRIFTED] (iii) canonical_time: ['2.8e-4', '5.9e-6'] -- the paper prints none of ['2.8e-4', '5.9e-6']
+
+====================================================================================================
+PART c) -- PER PAPER, AND WHERE
+====================================================================================================
+    (ii) per paper: {'CR_cosmology': 10, 'cosmogenesis': 1, 'modern_parallax': 1};  (iii): {'canonical_time': 1};  every other paper 0
+  [PASS] ⇒ twelve (ii) markers, ten in CR_cosmology, and one (iii); NONE under an abstract or conclusion -- and every table row maps to a counted marker
+  [PASS] ⛔ the limits are written: qualitative markers are a stated limit, the (iii) disagreement is not adjudicated, and every hit is routed
+
+====================================================================================================
+WHAT THIS VERDICT RAN (r7166+70.1) -- every subprocess, and where each (ii) figure was answered
+====================================================================================================
+    0 run(s), 0s in all; non-zero or timed out: none
+
+====================================================================================================
+    findings: 14 rows -- LIVE 0, RETIRED-CITED 12, RETIRED-DRIFTED 2
+VERDICT: ALL PASS -- no headline marker cites the wrong receipt; of the r7043 findings below the headline, 0 live and 14 retired by what the paper now prints and cites.
