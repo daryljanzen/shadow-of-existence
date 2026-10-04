@@ -112,7 +112,15 @@ REPORTED_ONLY = {'READS-PAPER'}
 #   `R=4\Lambda+\kappa\Theta`; `paper_formula.inline` skipped the extended match and reported the
 #   skip, so the trace-coupled scalar is not read as a restatement of the vacuum one.  Both receipts
 #   print the skip count in their own output.
-CEILING = 13
+# ⛭ r7161+cc66.128: 13 → 12, the LIMIT form, and the site LEFT THE CLASS -- one row removed and none
+#   added, because with the paper's whole expression parsed both labels are f-strings and carry no
+#   literal for the instrument to see.  ** `P10_the_vertex_numbers...` is the site cc66.123 named as
+#   needing a different shape from the other eight: the paper prints
+#   `K_{ij}K^{ij}-K^{2}=-6H^{2}+6(\dot\beta_{+}^{2}+\dot\beta_{-}^{2})` and `-6H^2` is its
+#   ISOTROPIC LIMIT, so `inline` refused the bare pattern. **  The whole expression is read and the
+#   limit is applied to the PARSED side as well as to the receipt's own, with a non-vacuity control
+#   asserting the paper's expression is not already isotropic.  `-6H^2` is typed nowhere.
+CEILING = 12
 
 
 def read_baseline():

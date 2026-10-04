@@ -8151,3 +8151,32 @@ factor's exponent, which check (2) and its control force from the `E=1` geodesic
 
 ⇒ *It is also a test of the reading rather than a workaround: the disagreeing literal no longer exists.
 **If CI still reports a wrong `H2`, the "source differs" reading is wrong and I will say so.***
+
+---
+
+## ⛔ `cc66.128` — 8 of the 9, and a **silent wrong answer** in `paper_formula`
+
+| | |
+|---|---|
+| sites | **8** of 9 — the `-6H²` limit form, exactly the shape `cc66.123` predicted |
+| `check_unread_figure` | `OWED` 13 → **12**, `CEILING` 12, site **left the class** (1 removed, 0 added) |
+| fast job | green |
+
+**The defect:** `_subscripts` stripped every non-alphanumeric, so `X_{+}` and `X_{-}` both became `X_`
+— and `\alpha_{+}-\alpha_{-}` parsed to `alpha_-alpha_`, **identically zero.** A difference of two
+distinct quantities reading as vanishing: the one outcome a parse must never produce. *Found while
+extending the dialect, not by a receipt going green for the wrong reason.*
+
+**Fixed:** `+`/`-` are named `plus`/`minus`, **and any subscript that strips to nothing is refused** —
+the general repair, so anything else that would collapse to a bare `X_` stops rather than colliding.
+
+⚑ **Latent, not active — measured.** All **16** receipts importing `paper_formula` were run after the
+fix: **16 of 16 pass.** No shipped repair read a sign-subscripted name. *"A silent wrong answer existed
+in the instrument" and "a result was wrong" are different claims; only the first is true.*
+
+⌗ **New `\dot` convention**, naming a dotted symbol rather than differentiating — **and its first guard
+was too narrow**, letting `\dot{(ab)}` through as `(ab)_dot`. Caught by testing the guard against the
+case it was written for; replaced by an allow-list.
+
+⚑ *Fifth time this round a check was narrower than its claim. The first four were in the reporting;
+**this one and the boundary rule were in the logic**, which is the worse class.*

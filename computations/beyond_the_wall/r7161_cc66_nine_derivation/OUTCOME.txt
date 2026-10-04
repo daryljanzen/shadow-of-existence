@@ -135,3 +135,48 @@ r7161+cc66.125 -- THIRD PASS: 7 of 9, the R=4Lambda hazard fires on a live repai
   REMAINING: 2 of 9 -- P10_the_subtraction_is_at_operator_dimension (the (l_P/a)^2 scaling; 70's
   `2k-4` site is in the same receipt, and r7161 asked for one template, so they go together), and
   P10_the_vertex_numbers (-6H^2, known since cc66.123 to need the limit form).
+
+--------------------------------------------------------------------------------------------------
+r7161+cc66.128 -- FOURTH PASS: 8 of 9, the LIMIT form, and a SILENT WRONG ANSWER in the dialect
+
+  SITES DONE: 8 of 9.  P10_the_vertex_numbers (-6H^2) is the site cc66.123 named as needing a
+  different shape, and it needed exactly that: the paper prints
+  K_{ij}K^{ij}-K^{2}=-6H^{2}+6(\dot\beta_{+}^{2}+\dot\beta_{-}^{2}) and -6H^2 is its ISOTROPIC
+  LIMIT.  The whole expression is parsed and the limit applied to the PARSED side as well as the
+  receipt's own, plus a NON-VACUITY control (the paper's expression is not already isotropic).
+  -6H^2 is typed nowhere.  check_unread_figure OWED 13 -> 12, and the site LEFT THE CLASS: one row
+  removed, NONE added.
+
+  ⛔⛔ ** A SILENT WRONG ANSWER IN THE DIALECT I WROTE AT r7157, FOUND WHILE EXTENDING IT. **
+  `_subscripts` stripped every non-alphanumeric from a subscript, so `X_{+}` and `X_{-}` BOTH became
+  `X_`.  Measured on the shipped dialect:
+      \alpha_{+}            -> alpha_
+      \alpha_{-}            -> alpha_
+      \alpha_{+}-\alpha_{-} -> alpha_-alpha_        ** IDENTICALLY ZERO **
+  => A difference of two distinct quantities would have parsed as vanishing.  Not a refusal and not
+     a disagreement: the one outcome a parse must never produce.
+  FIXED two ways, the second being the general one: `+` and `-` are NAMED (`plus`, `minus`) because a
+  sign subscript labels a thing and is not an index; and ** any subscript that strips to NOTHING is
+  now REFUSED **, so anything else that would collapse to a bare `X_` stops the parse instead of
+  colliding with its sibling.
+  ** AND IT WAS LATENT, NOT ACTIVE -- MEASURED RATHER THAN ASSUMED. **  All 16 receipts that import
+  paper_formula were run after the fix: 16 of 16 still pass.  No shipped repair was reading a
+  sign-subscripted name, so nothing green was green for this reason.  *Said precisely because
+  "a silent wrong answer existed" and "a result was wrong" are different claims.*
+
+  NEW CONVENTION: `\dot`.  `\dot\beta_{+}` -> `beta_dot_plus`, in the shape `_tilde` already uses --
+  the dialect NAMES a dotted symbol rather than differentiating, and a receipt that wants the
+  derivative computed must compute it.
+  ⛔ AND THE FIRST DRAFT OF ITS GUARD WAS TOO NARROW: it looked for an operator inside the braces,
+  which let `\dot{(ab)}` through as `(ab)_dot` -- a name asserting that the derivative of a product
+  is a symbol.  Caught by testing the guard against the case it was written for.  Replaced by an
+  allow-list: `\dot{...}` must hold ONE NAME, and every other form is refused.
+  ** Fifth time this round that my check was narrower than my claim.  The four before it were in the
+  reporting; this one and the boundary rule were in the logic. **
+
+  Q3  The substitution control still bites on nothing.  This site takes a LIMIT rather than a
+      substitution, so it carries a non-vacuity control instead -- which passes, meaning the limit
+      is real rather than that it caught an error.  Stated that way rather than counted as a catch.
+
+  REMAINING: 1 of 9 -- the (l_P/a)^2 scaling in P10_the_subtraction_is_at_operator_dimension, where
+  node 70's `2k-4` site also lives.  Per r7161's one-template-rather-than-two they go together.

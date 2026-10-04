@@ -8579,3 +8579,59 @@ file: a coefficient the receipt can derive should not be carried beside the thin
 ⌗ *And it is a real test of the reading above rather than a workaround: the disagreeing quantity no
 longer exists as a literal. If CI still reports a wrong `H2` after this, the "source differs" reading
 is wrong and I will say so.*
+
+## ⛔⛭ `cc66.128` — 8 of the 9, and **a silent wrong answer in the dialect I wrote at `r7157`**
+
+The `-6H²` site is done, and it needed exactly the shape `cc66.123` predicted: the paper prints
+`K_{ij}K^{ij}-K^{2}=-6H^{2}+6(\dot\beta_{+}^{2}+\dot\beta_{-}^{2})`, so `-6H²` is its **isotropic
+limit**. The whole expression is parsed, the limit is applied to the **parsed** side as well as the
+receipt's own, and a non-vacuity control asserts the paper's expression is not already isotropic.
+**`-6H²` is typed nowhere.** `OWED` 13 → **12**, and the site **left the class** — one row removed,
+none added.
+
+### ⛔⛔ But this is the part that matters, and it is mine
+
+`paper_formula._subscripts` stripped every non-alphanumeric from a subscript, so **`X_{+}` and `X_{-}`
+both became `X_`.** Measured on the shipped dialect:
+
+```
+\alpha_{+}            -> alpha_
+\alpha_{-}            -> alpha_
+\alpha_{+}-\alpha_{-} -> alpha_-alpha_        ** IDENTICALLY ZERO **
+```
+
+⇒ ***A difference of two distinct quantities would have parsed as vanishing.*** Not a refusal, not a
+disagreement — the one outcome a parse must never produce. **Found while extending the dialect for this
+site, not by a receipt going green for the wrong reason.**
+
+**Fixed two ways, the second being the general one:** `+` and `-` are now *named* (`plus`, `minus`),
+because a sign subscript labels a thing and is not an index to compute with; **and any subscript that
+strips to nothing is now REFUSED**, so anything else that would collapse to a bare `X_` stops the parse
+instead of colliding with its sibling.
+
+⚑ ***And it was LATENT rather than active — measured, not assumed.*** I ran **all 16** receipts that
+import `paper_formula` after the fix: **16 of 16 still pass.** No shipped repair was reading a
+sign-subscripted name, so nothing green was green for this reason. *I am stating it that precisely
+because "a silent wrong answer existed in the instrument" and "a result was wrong" are different
+claims, and only the first is true.*
+
+### ⌗ A new convention, and its guard was also too narrow at first
+
+`\dot\beta_{+}` → `beta_dot_plus`, in the shape `_tilde` already uses: the dialect **names** a dotted
+symbol rather than differentiating, and a receipt that wants the derivative computed must compute it.
+
+⛔ *The first draft of its guard looked for an operator inside the braces, which let `\dot{(ab)}`
+through as `(ab)_dot` — a name asserting that the derivative of a product is a symbol. Caught by
+testing the guard against the case it was written for.* Replaced by an allow-list: `\dot{…}` must hold
+**one name**, everything else refused.
+
+⚑ **Fifth time this round my check was narrower than my claim.** The first four were in the reporting;
+this one and the boundary rule were **in the logic**. *That is a worse class and I would rather you see
+it counted than smoothed.*
+
+⌗ *Standing: the substitution control still bites on nothing. This site takes a limit rather than a
+substitution, so it carries a non-vacuity control — which passes, meaning the limit is real, not that
+it caught an error.*
+
+**Left: 1 of 9** — the `(l_P/a)²` scaling in `P10_the_subtraction_is_at_operator_dimension`, where
+`70`'s `2k-4` site also lives, so per `r7161` they go together.

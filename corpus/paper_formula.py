@@ -37,7 +37,7 @@ _NAMES = {r'\alpha': 'alpha', r'\Lambda': 'Lambda', r'\lambda': 'lambda_', r'\pi
           r'\log': 'log', r'\exp': 'exp', r'\infty': 'oo',
           #: ⌗ `\psi` is declared above; `check_loaders` caught it listed twice here, where the
           #: later entry would have silently won and any edit to the first been discarded at load.
-          r'\Psi': 'Psi', r'\Phi': 'Phi'}
+          r'\Psi': 'Psi', r'\Phi': 'Phi', r'\beta': 'beta'}
 
 
 def _brace(s, i):
@@ -109,8 +109,52 @@ def _subscripts(s):
         a1 = _brace(s, a0)
         inner = s[a0 + 1:a1]
         assert '{' not in inner, 'paper_formula: nested subscript ' + repr(inner)
-        s = s[:m.start()] + '_' + re.sub(r'[^A-Za-z0-9]', '', inner.replace('\\', '')) + s[a1 + 1:]
+        #: ⛔ ⛭ r7161+cc66.128: ** `X_{+}` AND `X_{-}` BOTH BECAME `X_`, AND THAT IS A SILENT WRONG
+        #: ANSWER RATHER THAN A REFUSAL. **  The strip below removes every non-alphanumeric, so a sign
+        #: subscript vanished: `\alpha_{+}-\alpha_{-}` translated to `alpha_-alpha_`, which is
+        #: IDENTICALLY ZERO -- a difference of two distinct quantities reading as vanishing.  *Measured
+        #: on the shipped dialect, which I wrote at r7157, while extending it for the `-6H^2` site.*
+        #:   · `+` and `-` are NAMED, as `plus` and `minus`, because a sign subscript labels a thing
+        #:     (Misner's `\beta_{\pm}`, a root `r_{\pm}`) and is not an index to compute with -- the
+        #:     same reading this function already applies to `\Delta_r`.
+        #:   · and a subscript that strips to NOTHING is now REFUSED, which is the general repair: the
+        #:     two sign cases are the ones these papers use, and anything else that would collapse to a
+        #:     bare `X_` stops the parse instead of colliding with its sibling.
+        _sub = inner.replace('\\', '')
+        for _a, _b in (('+', 'plus'), ('-', 'minus')):
+            _sub = _sub.replace(_a, _b)
+        _sub = re.sub(r'[^A-Za-z0-9]', '', _sub)
+        assert _sub or not inner.strip(), (
+            'paper_formula: the subscript %r carries nothing a symbol name can hold, so `%s_` would '
+            'collide with every other subscript of the same base. The site is refused rather than '
+            'translated to a name that is not its own.' % (inner, s[:m.start()].strip()[-12:]))
+        s = s[:m.start()] + '_' + _sub + s[a1 + 1:]
     s = re.sub(r'_\s*(\\[A-Za-z]+|[A-Za-z0-9])', lambda m: '_' + m.group(1).lstrip('\\'), s)
+    return s
+
+
+def _dot(s):
+    r"""`\dot\beta_{+}` / `\dot{x}` -> `<name>_dot`, a symbol distinct from the undotted one.
+
+    ⌗ The same convention as `_tilde`, and for the same reason: a dot NAMES a different quantity (a
+    time derivative) and this dialect holds symbols rather than differentiating.  ** A receipt that
+    wants the derivative COMPUTED must compute it; what this gives it is the paper's own name for it. **
+    ⛔ And `\dot` applied to a BRACKETED EXPRESSION rather than a single name is refused, because
+    `\dot{(ab)}` is a derivative of a product and naming it `ab_dot` would assert a factorisation the
+    paper did not write.
+    """
+    #: ⛔ the braced form must hold ONE NAME and nothing else.  The first draft of this guard looked
+    #: for an operator inside the braces, which let `\dot{(ab)}` through as `(ab)_dot` -- a name that
+    #: asserts the derivative of a product is a symbol.  *Caught by testing the guard against the case
+    #: it was written for, which is the fourth time this round that my check was narrower than my
+    #: claim.*  An allow-list of "a single name" refuses every such form instead of enumerating them.
+    for _m in re.finditer(r'\\dot\s*\{([^{}]*)\}', s):
+        assert re.fullmatch(r'\\?[A-Za-z]+', _m.group(1).strip()), (
+            'paper_formula: `\\dot` applied to %r, which is not a single name. This dialect NAMES a '
+            'dotted symbol rather than differentiating, so the site is refused instead of being given '
+            'a name that asserts a structure the paper did not write.' % _m.group(1))
+    s = re.sub(r'\\dot\s*\{([^{}]*)\}', lambda m: m.group(1).lstrip('\\') + '_dot', s)
+    s = re.sub(r'\\dot\s*(\\[A-Za-z]+|[A-Za-z])', lambda m: m.group(1).lstrip('\\') + '_dot', s)
     return s
 
 
@@ -174,6 +218,7 @@ def to_text(frag):
     s = frag
     s = _fn_power(s)
     s = _bare_arg(s)
+    s = _dot(s)
     s = _tilde(s)
     s = _frac(s)
     s = _tud(s)
