@@ -69,6 +69,11 @@ The measurements and tolerances are untouched.
 - **Fix:** the READ partition now also recognises `BODIES[`, `BODIES_TEX[` and `reach_baseline`. This touches only `unread_figure()`; the shared `_READ` pattern the quote operator uses is unchanged.
 - **Effect:** `NO-READ` falls from 47 to 45 independently of the repairs. *C1's site was `NOT-A-PAPER-FIGURE`, so owed does not move for it.*
 - ⇒ ***The read test is a syntax check, and a receipt can read its paper through an import the syntax check cannot see.*** *Two of 60 is the measured rate of that miss.*
+- ⛔ **Correction, written after the reply above was committed (`f2310a0c`):** "`NO-READ` falls from 47 to 45 independently of the repairs" is wrong.
+  - The baseline carried **55** `NO-READ` sites before this revision and the operator now reports **45**.
+  - **9** of the 10 are the repairs, H1 among them; H1 would have left by repair either way.
+  - **1** is C1, moved by the partition fix alone.
+  - *I wrote the 47 without reading the counts. That is the same slip as the r7141 "95"; the figures above are now the ones the gate prints.*
 
 ### ⓷ ROUTED TO YOU AS PAPER EDITS: THE FOUR ANCHORS
 
