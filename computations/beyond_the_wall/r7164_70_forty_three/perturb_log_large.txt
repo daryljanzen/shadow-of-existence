@@ -1,0 +1,12 @@
+ 0 base rc 0  GREEN-ON-MOVE    ['12']  in 906 place(s) of 38 paper(s)  S7_the_successor_was_misaimed.py
+ 2 base rc 0  NOT-IN-PAPER     ['0.1179']  in 0 place(s) of 0 paper(s)  B55_right_kind_right_place_numerical_declined.py
+ 4 base rc 0  GREEN-ON-MOVE    ['0.05']  in 34 place(s) of 5 paper(s)  S1_the_first_programme_is_a_power_calculation_and_the_design
+ 5 base rc 0  GREEN-ON-MOVE    ['24']  in 201 place(s) of 24 paper(s)  C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3
+13 base rc 0  GREEN-ON-MOVE    ['15']  in 3630 place(s) of 35 paper(s)  P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_
+15 base rc 0  GREEN-ON-MOVE    ['10']  in 2213 place(s) of 40 paper(s)  P10_the_thermal_condition_is_helicity_blind_at_the_mode_func
+22 base rc 0  GREEN-ON-MOVE    ['9.4']  in 23 place(s) of 3 paper(s)  C26_the_onset_is_not_free.py
+23 base rc 0  GREEN-ON-MOVE    ['9.4']  in 23 place(s) of 3 paper(s)  C26_the_onset_is_not_free.py
+24 base rc 0  GREEN-ON-MOVE    ['185']  in 90 place(s) of 3 paper(s)  C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_wha
+27 base rc 0  GREEN-ON-MOVE    ['50']  in 174 place(s) of 25 paper(s)  P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_f
+30 base rc 0  GREEN-ON-MOVE    ['3.3387380236']  in 6 place(s) of 2 paper(s)  P15_the_exact_transmission_ratios_are_recomputed_and_the_off
+33 base rc 0  NOT-IN-PAPER     ['1e-12']  in 0 place(s) of 0 paper(s)  P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_

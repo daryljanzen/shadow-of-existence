@@ -1,0 +1,18 @@
+--- scripts/mutate_assertions.py	2026-10-04 15:09:58.704519372 +0000
++++ computations/beyond_the_wall/r7164_70_forty_three/_ma_probe.py	2026-10-04 15:14:37.271437344 +0000
+@@ -1079,10 +1079,14 @@
+             body = ast.get_source_segment(src, n) or ''
+             if _TEXREAD.search(body) or re.search(r'\bBODIES(?:_TEX)?\s*\[|\breach_baseline\b', body):
+                 tainted.add(n.name)
++    # ⛭ r7164+70.1 PROBE (node 70): a helper whose BODY mentions a tainted name is itself tainted -- `def
++    #   paper_one(...): ... re.findall(pattern, SRC)` reads the paper through the module-level `SRC`.
++    _defs = [(n.name, {x.id for x in ast.walk(n) if isinstance(x, ast.Name)})
++             for n in ast.walk(tree) if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))]
+     grew = True
+     while grew:
+         grew = False
+-        for nm, names in prepared:
++        for nm, names in prepared + _defs:
+             if nm not in tainted and (names & tainted):
+                 tainted.add(nm)
+                 grew = True
