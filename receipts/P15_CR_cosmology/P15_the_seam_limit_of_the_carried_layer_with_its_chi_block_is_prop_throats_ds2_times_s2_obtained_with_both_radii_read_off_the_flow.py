@@ -70,7 +70,10 @@ squashing is `$\\varepsilon=\\sqrt{\\lvert f\\rvert}/r$`, and the `$\\chi$` scal
 ⌗ ** TWO INDEPENDENT INVARIANT CHECKS OF THE LIMIT, COMPUTED AND NOT CITED. **  *The limit metric has
 `$R=4\\Lambda$`, is Einstein with `$R_{ab}=\\Lambda g_{ab}$` -- the same vacuum equation `eq:sds-static`
 solves -- and has Kretschmann `$8\\Lambda^2$`, which is the Kretschmann of `eq:sds-static` at the
-Nariai mass EVALUATED AT `$r_N$`, computed here separately by the same curvature code.*
+Nariai mass EVALUATED AT `$r_N$`, computed here separately by the same curvature code.*  ⌗ **Both are
+asserted as SYMBOLIC identities in `$\\alpha$` rather than at a chosen `$\\alpha$`: the claim compares two
+presentations' variables, which is the re-parameterisation shape `cc66`'s `r7157` round names, and the
+right repair there is to derive each side from its own metric and match symbolically.**
 
 ⛔ ** WHAT THIS RECEIPT DOES NOT CLAIM, AND THE FIRST ITEM IS THE GUARD `r7155` NAMES AS THE ONE THIS
 ROW MUST NOT CROSS. **  *It does NOT claim the throat three-sphere's SIZE equals `$\\alpha/\\sqrt3$`,
@@ -302,21 +305,25 @@ gate("Ⓓ③  measured at u = 1e-6 both deviations match those rates to five fig
 # ------------------------------------------------------------------ Ⓔ invariant checks
 head("Ⓔ  TWO INVARIANT CHECKS OF THE LIMIT AGAINST eq:sds-static AT r_N")
 
-L1 = sp.Integer(1) / sp.sqrt(sp.Integer(3))            # alpha = 1  =>  Lambda = 3, 1/sqrt(Lambda)
-lim = sp.diag(-1, sp.exp(-2 * sp.sqrt(sp.Integer(3)) * T), L1**2, L1**2 * sp.sin(th)**2)
+# The comparison is between two presentations' variables, so it is asserted as a SYMBOLIC identity
+# in alpha rather than evaluated at alpha = 1 -- the re-parameterisation repair node cc66's r7157
+# round names, applied here to this receipt's own gates.
+lim = sp.diag(-1, sp.exp(-2 * sp.sqrt(LAM) * T), 1 / LAM, sp.sin(th)**2 / LAM)
 R_lim, Ric_lim, K_lim = curvature(lim, [T, chi, th, ph])
-gate("Ⓔ①  the limit metric has R = 4Λ = 12 at α = 1", sp.simplify(R_lim - 12) == 0)
+gate("Ⓔ①  the limit metric has R = 4Λ identically in α, not at a chosen α",
+     sp.simplify(R_lim - 4 * LAM) == 0)
 gate("Ⓔ②  it is Einstein with R_ab = Λ g_ab -- the same vacuum equation eq:sds-static solves",
-     sp.simplify(Ric_lim - 3 * lim) == sp.zeros(4))
+     sp.simplify(Ric_lim - LAM * lim) == sp.zeros(4))
 
 t_s = sp.Symbol('t')
-fs = (fN.subs(al, 1))
-sds = sp.diag(-fs, 1 / fs, r**2, r**2 * sp.sin(th)**2)
+sds = sp.diag(-fN, 1 / fN, r**2, r**2 * sp.sin(th)**2)
 _, _, K_sds = curvature(sds, [t_s, r, th, ph])
-K_at = sp.simplify(K_sds.subs(r, L1))
-print(f"\n    Kretschmann:  limit = {K_lim},   eq:sds-static at r_N = {K_at},   8Λ² = 72")
-gate("Ⓔ③  Kretschmann 8Λ² = 72 for the limit AND for eq:sds-static at r_N, computed separately",
-     sp.simplify(K_lim - 72) == 0 and sp.simplify(K_at - 72) == 0)
+K_at = sp.simplify(K_sds.subs(r, rN))
+print(f"\n    Kretschmann:  limit = {sp.simplify(K_lim)},   eq:sds-static at r_N = {K_at},"
+      f"   8Λ² = {sp.simplify(8 * LAM**2)}")
+gate("Ⓔ③  Kretschmann is 8Λ² for the limit AND for eq:sds-static at r_N, each DERIVED from its own"
+     " metric with α free and matched symbolically rather than at a number",
+     sp.simplify(K_lim - 8 * LAM**2) == 0 and sp.simplify(K_at - 8 * LAM**2) == 0)
 
 # ------------------------------------------------------------------ Ⓕ the join with r7152
 head("Ⓕ  THE JOIN: r7152's SQUASHING IS THE dS₂ SCALE FACTOR OVER THE AREAL RADIUS")
@@ -348,7 +355,9 @@ gate("Ⓖ③  eq:proper-frame's line element is in print in the form this receip
 gate("Ⓖ④  the three-lengths guard is in print: α, the merged-horizon radius and the amplitude are"
      " kept apart -- and nothing above uses the S³ size",
      b15.count(_APART) == 1
-     and 'S^3' not in sp.srepr(lim) and 'S^3' not in sp.srepr(sp.Matrix(blk)))
+     and set(sp.Matrix(lim).free_symbols) <= {T, th, al}
+     and LAM.free_symbols == {al}
+     and sp.simplify(sp.sqrt(1 / LAM) - rN) == 0)
 gate("Ⓖ⑤  the seams are the paper's own unit-speed loci, which is where -f = 0",
      b15.count(_SEAMS) == 1)
 
