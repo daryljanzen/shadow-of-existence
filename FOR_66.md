@@ -5445,6 +5445,35 @@ PINNED = {'systematic uncertainty': 1}
 *Posted on #256 as `#issuecomment-5972507213`.*
 
 ---
+## ⛔⛔ A CORRECTION AGAINST MYSELF, AND IT IS THE SECOND TIME THIS SESSION I READ A CI FAILURE AS CONTENTION BEFORE CHECKING WHETHER IT WAS DETERMINISTIC
+
+*I told PR #261 that `scoped — the plain suite` was red from a declared per-receipt budget meeting contention — the `cc66.113` family. **That is wrong, and I posted it before the evidence that kills it was in.***
+
+⛔ ***TWO FACTS KILL IT.*** *Both plain-suite runs on the SAME commit failed — the `pull_request` one and the `push` one — and a contention-dependent timeout does not land identically on both. **And the `pull_request` job ended at 11 minutes, EARLIER than my own local pass of the same scope at 703 s.** A timeout makes a run longer, not shorter; so a receipt failed and nothing timed out.*
+
+### ⌗ WHAT IS RULED OUT NOW, MEASURED RATHER THAN ASSUMED
+
+| candidate | result |
+|---|---|
+| contention / over-timeout | **out** — both runs failed; the job ended *earlier* than the local pass |
+| the job limit | out — 11 min of 75 |
+| the runner's `--wall` | out — defaults to `0`, deadline path guarded by `if a.wall:` |
+| dependency drift | out — `sympy==1.14.0`, `numpy==2.4.6` pinned and identical here |
+| `corpus/paper_formula.py` absent from the tree | out — tracked, and present in `c482ecb1` |
+| banked `.npz` inputs absent in CI | out — all three checked are tracked |
+| `P15_expansion_law.py`, which the carry names | **passes** locally, **in 2 s** under the runner, and **in a clean worktree at `bcfbe264`** |
+
+⇒ *So the carry row is **stale from `c482ecb1`** rather than a claim about this head: `red_carry` clears an entry only on a run that yields the verdict line, and no suite run since has yielded one.*
+
+### ⛔ WHAT BLOCKS ME, STATED ONCE
+
+***I cannot read the failing job's log.*** *This session's GitHub client refuses the log host — `refusing a redirect to productionresultssa12.blob.core.windows.net` — and the annotations carry only `Process completed with exit code 1`. ⌗ The step is `run_all_receipts … | tee` then `grep -Eq '0 fail, 0 over timeout'`, **so the pipe masks the runner's exit code and the log is the only place the failing receipt is named.***
+
+⇒ ***What I need: that step's log, or anyone who can read it.*** *Every component I can test here is green, so with the receipt named I expect this to be short.* ⌗ *The one re-run is spent, on `111336601125`.*
+
+⚑ ***AND THE LESSON IS THE ONE I ALREADY WROTE DOWN ONCE.*** *At `cc66.113` I recorded that "an exit code from a compound shell is not a measurement of the thing at the end of the pipe." **Here I did the same thing one level up: I read a duration and a family resemblance as a diagnosis, and published it, before checking the cheapest discriminator — whether the other run of the same commit agreed.** The rule I should hold: **two runs of one commit is the first thing to look at, not the last.** It is free, it is already on the page, and it settles flake-versus-real before any reasoning starts.
+
+---
 ## ⌗ A SMALL ONE FOUND BY RUNNING THE SUITE: **A REGISTERED FIGURE GENERATOR MAKES THE SUITE NON-IDEMPOTENT ON A TRACKED BINARY.**
 
 *Running the `49`-receipt suite scope left the tree dirty in exactly one file: `corpus/fig_acoustic_two_arm.pdf`, `55234` → `55228` bytes.*

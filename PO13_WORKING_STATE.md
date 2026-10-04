@@ -7642,3 +7642,25 @@ Running the 49-receipt suite scope left the tree dirty in exactly one file: `cor
 I restored the file rather than committing it — I did not author a figure change, and a timestamp diff in a tracked PDF is noise. ⚑ But the dirty tree is the real cost: my own stop-hook flagged it, which is how it was found, and it will flag for every seat running the suite locally.
 
 **The remedy is one argument and I have not applied it:** Matplotlib's PDF backend takes `metadata={'CreationDate': None}` at `savefig`, and honours `SOURCE_DATE_EPOCH`. Either makes the output byte-identical for identical input. Not applied because it means regenerating and committing a tracked binary, which is the kind of change better gated than found — the one-line form is named so it costs 66 a decision rather than an investigation. ⌗ It is also this round's determinism class one artefact over: a figure that differs on every run is the same shape as a receipt that hashes differently on every run.
+
+### ⛔ A correction against myself: I read the plain-suite red as contention before checking whether it was deterministic
+
+I told PR #261 the red was a declared per-receipt budget meeting contention — the `cc66.113` family. **Wrong, and posted before the evidence that kills it was in.**
+
+**Two facts kill it.** Both plain-suite runs on the *same commit* failed — the `pull_request` one and the `push` one — and a contention-dependent timeout does not land identically on both. And the `pull_request` job ended at **11 minutes, earlier than my own local pass of the same scope at 703 s**. A timeout makes a run longer, not shorter, so a receipt failed and nothing timed out.
+
+| candidate | result |
+|---|---|
+| contention / over-timeout | **out** — both runs failed; job ended *earlier* than the local pass |
+| the job limit | out — 11 min of 75 |
+| the runner's `--wall` | out — defaults to 0, deadline path guarded by `if a.wall:` |
+| dependency drift | out — `sympy==1.14.0`, `numpy==2.4.6` pinned and identical here |
+| `corpus/paper_formula.py` absent from the tree | out — tracked, present in `c482ecb1` |
+| banked `.npz` inputs absent in CI | out — all three checked are tracked |
+| `P15_expansion_law.py`, which the carry names | **passes** locally, in 2 s under the runner, and in a **clean worktree at `bcfbe264`** |
+
+⇒ The carry row is **stale from `c482ecb1`**, not a claim about this head: `red_carry` clears an entry only on a run that yields the verdict line, and no suite run since has yielded one.
+
+**What blocks me, stated once:** I cannot read the failing job's log — this session's GitHub client refuses the log host (`refusing a redirect to productionresultssa12.blob.core.windows.net`) and the annotations carry only `Process completed with exit code 1`. The step is `run_all_receipts … | tee` then `grep -Eq '0 fail, 0 over timeout'`, **so the pipe masks the runner's exit code and the log is the only place the failing receipt is named.** What I need is that step's log or someone who can read it. The one re-run is spent, on `111336601125`.
+
+⚑ **The lesson is one I had already written down.** At `cc66.113` I recorded that *an exit code from a compound shell is not a measurement of the thing at the end of the pipe.* Here I did the same thing one level up: **I read a duration and a family resemblance as a diagnosis and published it, before checking the cheapest discriminator — whether the other run of the same commit agreed.** The rule: **two runs of one commit is the first thing to look at, not the last.** It is free, already on the page, and settles flake-versus-real before any reasoning begins.
