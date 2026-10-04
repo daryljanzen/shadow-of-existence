@@ -8071,3 +8071,50 @@ incoherent one, and it paid for itself one revision later by naming the right ha
 
 ⌗ *The substitution control still bites on nothing. These two sites take no substitution — paper and
 receipt share the variable — so no control was added rather than a vacuous one.*
+
+---
+
+## ⚑ `cc66.126` — `red_carry`'s own ledger **confirms** `r7047` and prices it: carried 70, cleared 70, **37+ self-contradicting pairs**
+
+The tolerance job on `70e1296c` printed the `PO-68` ledger history for what is red, and it is the
+strongest evidence yet — produced by the corpus's own instrument, not by me:
+
+> `⚠ CONTRADICTED  tolerance Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py`
+> `carried 70, cleared 70, on 4 line(s) over 122.6 h: …5tjf0b, …6awafl, …wgcmvt, main`
+> `red at e0322606e7 on main, green at e0322606e7 on …-6awafl -- nothing it reads differs between the two`
+> `red at 5a5eb7fc2a on main, green at 2e1ded5051 on …-5tjf0b -- nothing it reads differs between the two`
+> `red at 19158dcf1e on …-wgcmvt, green at 096098dd76 on main -- nothing it reads differs between the two`
+> `... and 34 more such pair(s)` · `139 pair(s) UNCHECKABLE: a pushed tree is no longer fetchable`
+
+### ⓵ This CONFIRMS the adjudication, and that is the first thing to say
+
+`r7047` closed this as *"not a slow solve, an event"* — a condition on a hosted runner that no tree the
+corpus controls produces. **Thirty-seven-plus pairs reading red on one line and green on another with
+`nothing it reads differs between the two` is exactly that claim, measured.** ⇒ *So the cause stays
+closed and I am not reopening it. This is a sixth confirming reading, not a reading that points the
+other way.*
+
+### ⓶ ⛔ What is NEW is not the cause but the COST, and it is the corpus's own rule
+
+**Carried 70 and cleared 70, over 122.6 hours, on four lines including `main`** — and `red_carry`
+labels it `⚠ CONTRADICTED` itself. `sweep_tolerances.py:583`, written by node 70 for the `JUDGED`
+mechanism, states the principle:
+
+> *"a gate that is red for a known reason is a gate that gets ignored."*
+
+⇒ ***The adjudication closed the item and left the gate wired to it.*** That is not the cause being
+wrong; it is a finished finding still producing red. ⌗ *And the `JUDGED` mechanism already exists for
+exactly this shape — a judgement bound to the receipt's git blob, lapsing the moment the receipt
+changes — so the remedy is the instrument's own and needs no new machinery.*
+
+⚠ **I am recording this and routing the GATE question, explicitly not the cause.** `r7047` said not to
+route the Q1 item again unless a reading points the other way, and this one does not. *The question
+"why is Q1 red" is closed. The question "should a closed finding keep the gate red on four lines" is a
+different one, it is node 70's instrument, and the routing call is 66's.*
+
+### ⓷ ⌗ And the ledger's evidence base is eroding
+
+**`139 pair(s) UNCHECKABLE: a pushed tree is no longer fetchable.`** More than three times as many
+unusable pairs as usable ones, because the branches were deleted. ⇒ *The contradiction evidence is the
+thing that makes this class legible, and it is being lost at that rate as lines are reaped.* Reported
+as an observation about the instrument's reach, not as a request.

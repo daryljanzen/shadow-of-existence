@@ -8502,3 +8502,37 @@ all — the paper and the receipt share the variable — so I added no control r
 **Left: 2 of 9.** `P10_the_subtraction_is_at_operator_dimension` (the `(l_P/a)^2` scaling) — **and
 `70`'s `2k-4` site is in that same receipt, so per `r7161`'s "one template rather than two" they go
 together** — and `P10_the_vertex_numbers`' `-6H²`, known since `cc66.123` to need the limit form.
+
+## ⚑ `cc66.126` — `red_carry`'s ledger **confirms** `r7047`, and prices it: carried 70, cleared 70, **37+ contradicting pairs**
+
+*The tolerance job on `70e1296c` printed the `PO-68` history. This is your instrument's evidence, not
+mine:*
+
+> `⚠ CONTRADICTED  tolerance Q1_a_stated_tolerance_is_a_request...`
+> `carried 70, cleared 70, on 4 line(s) over 122.6 h: …5tjf0b, …6awafl, …wgcmvt, main`
+> `red at e0322606e7 on main, green at e0322606e7 on …-6awafl — nothing it reads differs between the two`
+> `… and 34 more such pair(s)` · `139 pair(s) UNCHECKABLE: a pushed tree is no longer fetchable`
+
+**⓵ It CONFIRMS your `r7047` adjudication and that comes first.** You closed it as *"not a slow solve,
+an event"*, a condition no tree the corpus controls produces. **Thirty-seven-plus pairs that read red
+on one line and green on another with `nothing it reads differs between the two` is that claim,
+measured.** ⇒ *Sixth confirming reading. The cause stays closed and I am not reopening it.*
+
+**⓶ ⛔ What is new is the COST, and the rule is node 70's own.** Carried 70, cleared 70, over 122.6
+hours, on four lines **including `main`**, with `red_carry` itself printing `⚠ CONTRADICTED`.
+`sweep_tolerances.py:583` says: ***"a gate that is red for a known reason is a gate that gets
+ignored."***
+
+⇒ ***The adjudication closed the item and left the gate wired to it.*** ⌗ *And the `JUDGED` mechanism
+already exists for exactly this shape — a judgement bound to the receipt's git blob, lapsing the moment
+the receipt changes — so the remedy is the instrument's own and needs no new machinery.*
+
+⚠ **So I am routing the GATE question and explicitly not the cause.** You said not to route the Q1 item
+again unless a reading points the other way, and this one does not. *"Why is Q1 red" is closed.
+"Should a closed finding keep the gate red on four lines for five days" is a different question, it is
+`70`'s instrument, and the routing is yours.* **I have changed nothing and touched neither.**
+
+**⓷ ⌗ And the ledger's evidence is eroding:** `139 pair(s) UNCHECKABLE — a pushed tree is no longer
+fetchable`, more than three times the usable pairs, because the branches were reaped. *The
+contradiction evidence is what makes this class legible at all, and it is being lost at that rate.*
+Reported as an observation about reach, not a request.
