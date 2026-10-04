@@ -1,9 +1,9 @@
 {
  "claude/shadow-of-existence-setup-5tjf0b": {
   "suite": {
-   "receipts/L237_gates_check_declarations/G51_the_twelve_can_all_exit_non_zero_and_the_backlog_is_an_artefact.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37182352970",
-    "since": "c9ea87e47dad8a22d5a94effba22cf027339f40b"
+   "receipts/P15_CR_cosmology/P15_expansion_law.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37183911303",
+    "since": "3b5885cd742b58a77e5be97f5bc7a1b223849f8c"
    }
   },
   "tolerance": {
