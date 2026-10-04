@@ -1,0 +1,3 @@
+ 0 base rc 0  GREEN-ON-MOVE    ['12']  in 906 place(s) of 38 paper(s)  S7_the_successor_was_misaimed.py
+ 2 base rc 0  NOT-IN-PAPER     ['0.1179']  in 0 place(s) of 0 paper(s)  B55_right_kind_right_place_numerical_declined.py
+ 4 base rc 0  GREEN-ON-MOVE    ['0.05']  in 34 place(s) of 5 paper(s)  S1_the_first_programme_is_a_power_calculation_and_the_design

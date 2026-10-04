@@ -1,0 +1,496 @@
+[
+ {
+  "receipt": "receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py",
+  "site": "85:4",
+  "read": "NO-READ",
+  "where": "IN-SOME-TEX",
+  "figs": [
+   "12",
+   "2"
+  ],
+  "label": "while P15's layer runs, reaching $12H^2$ late",
+  "verdict": "FORMULA"
+ },
+ {
+  "receipt": "receipts/L207_the_bend/W2_the_general_inhomogeneous_leaf_exhibited.py",
+  "site": "113:4",
+  "read": "NO-READ",
+  "where": "IN-SOME-TEX",
+  "figs": [
+   "2",
+   "4",
+   "8"
+  ],
+  "label": "which is P8's rho = m'/(4 pi R^2 R') with no condition on m",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/L221_the_bridge/B55_right_kind_right_place_numerical_declined.py",
+  "site": "125:4",
+  "read": "NO-READ",
+  "where": "IN-SOME-TEX",
+  "figs": [
+   "0.1179"
+  ],
+  "label": "⇒ and the reason to stop is that $\\alpha_s$ RUNS: it is {} at $M_Z$ and {} at 1 TeV -- ** no single value to b",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/L246_the_achirality_is_the_obstruction/W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_chiral_member_does_not_have.py",
+  "site": "200:0",
+  "read": "NO-READ",
+  "where": "IN-SOME-TEX",
+  "figs": [
+   "2"
+  ],
+  "label": "⓸ᵇ ⛭ and every surviving action is 2+2 or 1+1+1+1 -- which is exactly the shape P14 reports, so the paper's ob",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/L271_the_statistics_bake/S1_the_first_programme_is_a_power_calculation_and_the_design_it_proposes_is_the_expensive_one.py",
+  "site": "250:4",
+  "read": "NO-READ",
+  "where": "IN-SOME-TEX",
+  "figs": [
+   "0.05"
+  ],
+  "label": "⓸ so read as a paired sign test P06's five instances clear 0.05 outright",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/L273_the_cartan_bake/C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py",
+  "site": "309:4",
+  "read": "NO-READ",
+  "where": "IN-SOME-TEX",
+  "figs": [
+   "24"
+  ],
+  "label": "⓸ᶜ ⛭⛭ SO THE CLOSURE IS A RANK-THREE FACT: at so(8,C) the cubic still gives 24 and the Weyl group gives {} -- ",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py",
+  "site": "190:4",
+  "read": "NO-READ",
+  "where": "IN-SOME-TEX",
+  "figs": [
+   "2",
+   "4"
+  ],
+  "label": "⓸ at P10's own slicing a = alpha cosh(T/alpha): R = {}, R^2 = {}, Ric^2 = {}, Riem^2 = {} -- S50's D=4 row, re",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py",
+  "site": "231:4",
+  "read": "NO-READ",
+  "where": "IN-SOME-TEX",
+  "figs": [
+   "2"
+  ],
+  "label": "⓹ on P15's OWN running layer a = sinh^(2/3)(3Ht/2), recomputed from ITS metric: R runs {} -> {}, so the curvat",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P03_SdS_slicing/P03_charge_obstructs_the_beads_closure_and_not_the_cosmogenesis.py",
+  "site": "113:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2"
+  ],
+  "label": "r_- -> Q^2/2M as Q -> 0, reproducing P03's stated limit",
+  "verdict": "FORMULA"
+ },
+ {
+  "receipt": "receipts/P03_SdS_slicing/P03_seam_continuation.py",
+  "site": "34:4",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2"
+  ],
+  "label": "=> ds^2 = -dpsi^2 + cosh^2 psi dOmega^2 (eq:dscont), Lorentzian (-,+)",
+  "verdict": "FORMULA"
+ },
+ {
+  "receipt": "receipts/P03_SdS_slicing/P03_the_interior_mass_function_is_p_equals_one_along_the_shell_and_the_charge_falls_short_of_the_equality_radius.py",
+  "site": "159:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2"
+  ],
+  "label": "a'' + a = A/2 -- P16's driven oscillator (conformal time)",
+  "verdict": "FORMULA"
+ },
+ {
+  "receipt": "receipts/P08_slicing_operator/P08_the_second_ruling_reading_does_not_extend_to_the_collapse_face.py",
+  "site": "120:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "6"
+  ],
+  "label": "P07's stated value for the massless discriminant, 4 alpha^6",
+  "verdict": "FORMULA"
+ },
+ {
+  "receipt": "receipts/P10_canonical_time/P10_gamma_is_one_quarter_and_is_the_maximum.py",
+  "site": "98:4",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "4"
+  ],
+  "label": "and Gamma(1) = 1/4 EXACTLY -- the paper's value",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P10_canonical_time/P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_is_a_convention_and_the_residue_is_the_absorbed_constant.py",
+  "site": "223:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "15",
+   "4"
+  ],
+  "label": "the 1/m coefficient is exactly 15/4, which is P10 sec:lock's own L",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P10_canonical_time/P10_the_subtraction_is_at_operator_dimension_six_pinned_three_ways_and_it_is_not_degenerate_so_the_ledger_cost_is_real.py",
+  "site": "153:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2"
+  ],
+  "label": "(i) the interacting quartic energy is EXACTLY (l_P/a)^2 times the free tower's scale -- with kappa hbar = l_P^",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P10_canonical_time/P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity_odd_entry_is_not_owed.py",
+  "site": "166:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "10",
+   "2"
+  ],
+  "label": "the floor n=2 is (2,0) + (0,2): a self-dual FIVE and an anti-self-dual FIVE, ten in all, reproducing P10's own",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P10_canonical_time/P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping.py",
+  "site": "129:4",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2"
+  ],
+  "label": "⓵ᵈ in m = n+1 the paper's spectrum is mu^2 = {}, d = {} -- the standard transverse-traceless S^3 form, so the ",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py",
+  "site": "403:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "3"
+  ],
+  "label": "but P14's 3 only changes SIGN under that convention, never vanishing",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P14_matter_sector_paper/P14_the_lifts_own_measure_returns_the_same_three_quarters_so_the_removed_derivation_was_not_the_only_one.py",
+  "site": "158:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "3",
+   "4"
+  ],
+  "label": "** THE THRESHOLD ON THE LIFT'S OWN MEASURE IS lambda < 3/4 -- the number sec:lift states **",
+  "verdict": "FIGURE"
+ },
+ {
+  "receipt": "receipts/P14_matter_sector_paper/P14_the_lifts_own_measure_returns_the_same_three_quarters_so_the_removed_derivation_was_not_the_only_one.py",
+  "site": "190:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "3",
+   "4"
+  ],
+  "label": "** no admissible lambda attains lambda < 3/4 -- sec:lift's rejection stands, margin 1 vs 3/4 **",
+  "verdict": "FIGURE"
+ },
+ {
+  "receipt": "receipts/P14_matter_sector_paper/P14_the_propagating_three_is_inherited_and_the_pairing_fails_only_at_the_bound_energy.py",
+  "site": "297:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "3"
+  ],
+  "label": "③ᵇ its order is three exactly on omega = i n / alpha with n not divisible by three -- the Matsubara tower, whi",
+  "verdict": "FIGURE"
+ },
+ {
+  "receipt": "receipts/P14_matter_sector_paper/P14_the_stratifications_two_valued_data_are_one_involution_and_it_is_R.py",
+  "site": "207:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2",
+   "3"
+  ],
+  "label": "② the pencil identity r^3 + (f-1) alpha^2 r + 2 M alpha^2 = 0 is P07's own, recomputed -- one cubic family wit",
+  "verdict": "FORMULA"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py",
+  "site": "161:4",
+  "read": "NO-READ",
+  "where": "IN-OTHER-TEX",
+  "figs": [
+   "9.4"
+  ],
+  "label": "⚠ ⓷ unweighted at the true onset gives {}%, above P15's $+9.4\\%$",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py",
+  "site": "162:4",
+  "read": "NO-READ",
+  "where": "IN-OTHER-TEX",
+  "figs": [
+   "9.4"
+  ],
+  "label": "and weighting toward recombination brings it down: $a^3\\to{}\\%$, $a^6\\to{}\\%$ -- P15's $+9.4\\%$ lies between t",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on.py",
+  "site": "351:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "185"
+  ],
+  "label": "the 185-bin ceiling is P15's, and here the bin set IS the full one (data starts at l=30)",
+  "verdict": "FIGURE"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_free_potential_amplitude_while_on_the_segments_own_branch_a_sound_speed_costs_a_tilt_equal_to_its_whole_exponent.py",
+  "site": "187:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2",
+   "3"
+  ],
+  "label": "Ⓑ① `$\\partial_k$` OF THE PAPER'S OWN POTENTIAL EQUATION IS **IDENTICALLY ZERO** AT `$w=0$` AND `$2k\\Phi/3$` AT",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_free_potential_amplitude_while_on_the_segments_own_branch_a_sound_speed_costs_a_tilt_equal_to_its_whole_exponent.py",
+  "site": "235:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2"
+  ],
+  "label": "Ⓒ② AND `$r=As^{1/3}$` TURNS EACH INTEGRAND INTO A BETA INTEGRAND SYMBOLICALLY, WITH `$1/3A=c_0/2$` EXACTLY -- ",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_free_potential_amplitude_while_on_the_segments_own_branch_a_sound_speed_costs_a_tilt_equal_to_its_whole_exponent.py",
+  "site": "277:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "50"
+  ],
+  "label": "Ⓓ③ *** SO THE SUB-HORIZON SHARE OF THE SEGMENT'S CONFORMAL LENGTH IS `{}`, `{}` AND `{}` ACROSS THE PAPER'S OW",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_bead_routes_damping_survives_on_the_squashed_layer_because_the_berger_harmonics_carry_no_squashing_and_the_spectrum_is_bounded_below_uniformly.py",
+  "site": "238:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2"
+  ],
+  "label": "Ⓒ② for m = 0 the eigenvalue is L(L+2) with no ε in it, so the paper's closed form survives VERBATIM for the ev",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_bead_routes_damping_survives_on_the_squashed_layer_because_the_berger_harmonics_carry_no_squashing_and_the_spectrum_is_bounded_below_uniformly.py",
+  "site": "336:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2"
+  ],
+  "label": "Ⓕ③ so T is at most 8.971e-2 at L = 1 in the paper's OWN asymptotic prefactor, against 4.656e-2 for the same as",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_exact_transmission_ratios_are_recomputed_and_the_offset_saturates.py",
+  "site": "150:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "3.3387380236"
+  ],
+  "label": "the closed form {} is the paper's own printed figure {} to the digits it prints",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py",
+  "site": "509:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2",
+   "6"
+  ],
+  "label": "⛭⛭⛭ (iv) THE JOIN IS NOT MADE GOOD: the constant-cosmic-time surface of `eq:proper-frame` has Ricci scalar `2/",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_laps_own_closure_is_a_translation_by_sqrt3_alpha_so_the_reflection_that_the_absolute_radius_implements_is_not_the_substrate_identification_and_the_two_agree_at_one_point_only.py",
+  "site": "113:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2"
+  ],
+  "label": "Ⓐ② SO ONE LAP IS `$\\Delta\\varphi=2\\pi$`, WHICH IN THE CHART IS `$\\Delta r=\\sqrt3\\alpha$` **EXACTLY** -- the tr",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py",
+  "site": "229:0",
+  "read": "NO-READ",
+  "where": "IN-NO-TEX",
+  "figs": [
+   "1e-12"
+  ],
+  "label": "⓷ `eq:proper-frame`'s Kretschmann scalar is `$24/\\alpha^4+12r_s^2/r^6$`, computed from the full four-metric an",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py",
+  "site": "260:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2"
+  ],
+  "label": "Ⓑ① THE LAYER'S THREE-METRIC IS **OBTAINED**: on a constant-`$\\tilde\\tau$` surface `$\\dd\\tau=-\\dd\\chi$`, so `eq",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py",
+  "site": "300:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2",
+   "3",
+   "6"
+  ],
+  "label": "Ⓒ① THE CODE RETURNS `$\\mathcal R=6/R^2$`, `$V=2\\pi^2R^3$` AND `$\\mathcal R V^{2/3}={}$` WITH THE RADIUS **CANC",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py",
+  "site": "357:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2",
+   "3",
+   "4"
+  ],
+  "label": "Ⓓ② *** AND THE TEST FAILS ITS OWN DEFINING PROPERTY ON THE OBJECT THE FLOW DELIVERS: `$\\mathcal R V^{2/3}=4\\cd",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py",
+  "site": "340:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "0.356",
+   "0.410",
+   "0.473",
+   "0.676"
+  ],
+  "label": "and arm A on the CONTROL reproduces 0.473 / 0.410 / 0.356 / 0.676 -- the figures `sec:largescale` WITHDREW at ",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_seam_limit_of_the_carried_layer_with_its_chi_block_is_prop_throats_ds2_times_s2_obtained_with_both_radii_read_off_the_flow.py",
+  "site": "324:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "8"
+  ],
+  "label": "Ⓔ③ Kretschmann is 8Λ² for the limit AND for eq:sds-static at r_N, each DERIVED from its own metric with α free",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py",
+  "site": "183:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "1.5338",
+   "2"
+  ],
+  "label": "Ⓑ② WITH THE INHERITED DATUM (`$\\rho_r/\\rho_m=2$` AT THE SEAM, SO `$A_r=4Mr_{\\rm seam}$`) THE QUARTIC RETURNS `",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_sky_phase_fit_and_its_uncertainty.py",
+  "site": "61:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "0.2404"
+  ],
+  "label": "⓵ the first three peaks fit to phi/pi = {}, the paper's -0.2404",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_third_possibility_cannot_be_because_C21s_limit_is_taken_on_exactly_the_segment_the_lift_occupies_so_the_two_transfers_overlap_rather_than_compose.py",
+  "site": "224:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2",
+   "3"
+  ],
+  "label": "⛭⛭⛭ `$A/r_N=2^{1/3}$` SYMBOLICALLY, so the bead's collapse leg `$\\lvert r\\rvert=A\\cosh^{2/3}\\ge A=2^{1/3}r_N>r",
+  "verdict": "UNADJUDICATED"
+ },
+ {
+  "receipt": "receipts/P17_geometric_core_paper/P17_the_ledgers_entropy_is_the_de_sitter_readings_and_the_other_reading_has_a_number_but_not_an_entropy.py",
+  "site": "205:0",
+  "read": "NO-READ",
+  "where": "IN-PAPER",
+  "figs": [
+   "2",
+   "3"
+  ],
+  "label": "⚑ eq:ds-entropy reproduces: S = 3 pi/(Lambda l_P^2) — the order's arithmetic confirmed FROM the derivation",
+  "verdict": "UNADJUDICATED"
+ }
+]
