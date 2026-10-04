@@ -197,10 +197,17 @@ def main():
           dec[5][2] > 0.3 and dec[6][2] > 0.3 and dec[5][2] > dec[5][1])
     rec_full = next(l for l in range(2, 60) if parts(l)[0] >= 0.99)
     rec_floor = next(l for l in range(2, 60) if parts(l)[1] >= 0.99)
+    # ⛭ r7159+70.1 (70): the paper's recovery multipole is READ from its Boltzmann sentence -- "recovering by
+    #   $\ell\approx8$ (receipts: verify_lowell_boltzmann ..." -- matched exactly once, rather than carried as the
+    #   literal 8 beside the words "the paper's quoted" (check_unread_figure, r7151: FIGURE).  The paper prints the
+    #   phrase three times; the Boltzmann one is the sentence this check measures against.
+    _rec = re.findall(r'recovering by \$\\ell\\approx(\d+)\$ \(receipts: \\texttt\{verify\\_lowell\\_boltzmann', p15)
+    assert len(_rec) == 1, f'P15: the Boltzmann recovery sentence matches {len(_rec)} time(s), not once'
+    P15_REC = int(_rec[0])
     check(f'⓶ᵇ and it sets the recovery multipole: with it the spectrum recovers to 99% at l='
-          f'{rec_full}, floor alone at l={rec_floor} -- so the paper\'s quoted "recovery by l≈8" '
-          'is the ladder\'s number and not the floor\'s',
-          rec_full < rec_floor and rec_full == 8)
+          f'{rec_full}, floor alone at l={rec_floor} -- so the paper\'s printed "recovering by '
+          f'l≈{P15_REC}" is the ladder\'s number and not the floor\'s',
+          rec_full < rec_floor and rec_full == P15_REC)
     # ** r6921: THIS CHECK'S PREMISE IS DISCHARGED, AND BY THE CORPUS RATHER THAN BY A REWORDING.
     #   It read the paper as stating the location/depth split QUALITATIVELY and not computing it,
     #   pinned to "the location is geometric and robust; the depth is whatever the full Boltzmann

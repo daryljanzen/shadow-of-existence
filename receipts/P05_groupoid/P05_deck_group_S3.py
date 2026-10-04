@@ -67,7 +67,13 @@ ok&=check(f"CONTROL: around a generic 2M=0.10 (non-branch), monodromy = identity
 # sec:classification -- the full solution-space symmetry: deck S3 x orientation Z2 = S3xZ2 = D6 (order 12)
 S3_perms=set(itertools.permutations(range(3)))
 D6 = {(p,e) for p in S3_perms for e in (0,1)}         # S3 x Z2, the orientation Z2 (R) central
-ok&=check("sec:classification: <deck S3, orientation R> = S3 x Z2 (order 12)", len(D6)==12)
+# r7159+70.1 (70): the order is READ from sec:classification's display, `(\text{order }12)`, matched exactly once --
+#   until now a literal beside the section's name in a file that opened no paper (check_unread_figure: NO-READ/FIGURE)
+import os, re
+_P05 = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus', 'groupoid_paper.tex'), encoding='utf-8').read()
+_ord = re.findall(r'S_\{3\}\\times\\mathbb\{Z\}_\{2\}\\cong D_\{6\}\\quad\(\\text\{order \}(\d+)\)', _P05)
+assert len(_ord) == 1, f'P5 sec:classification: the order display matches {len(_ord)} time(s), not once'
+ok&=check(f"sec:classification: <deck S3, orientation R> = S3 x Z2 has order {len(D6)}, the display's printed {int(_ord[0])}", len(D6)==int(_ord[0]))
 # S3xZ2 has an element of order 6 ((3-cycle, 1)) -> = D6 (dihedral of the hexad), not another order-12 group here
 has_ord6 = any((lcm:=np.lcm(3 if p in {(1,2,0),(2,0,1)} else (1 if p==(0,1,2) else 2), 2 if e else 1))==6 for (p,e) in D6)
 ok&=check("  S3 x Z2 has an element of order 6 (3-cycle x flip) => = D6, the dial's hexad symmetry Aut(A2)", has_ord6)

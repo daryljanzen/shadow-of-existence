@@ -46,10 +46,25 @@ nothing else" is a graph-theoretic statement, and this is the graph that says it
 """
 import itertools
 import math
+import os
+import re
 import sys
 
 ALPHA = 1.0
 FAILED = []
+
+#: ⛭ r7159+70.1 (70): P03's THREE COUNTS ARE READ FROM P03.  They were literals beside "P03 sec:tour" in a file
+#: that opens no paper (`check_unread_figure`, r7151: NO-READ/FIGURE), so `sec:tour` could change a class count
+#: and this receipt would stay green.  ⇒ *They are parsed from `sec:tour`'s one display -- "timelike ... (3),
+#: spacelike ... (6), null ... (6)" -- the pattern required to match exactly once.*  The geometry is unchanged.
+_P03 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus', 'SdS-slicing-curve_v2.tex')
+with open(_P03, encoding='utf-8') as _fh:
+    _SRC = _fh.read()
+_tour = re.findall(r'\\text\{timelike\}\\iff\\text\{same hinge\}\\ \((\d+)\),\\qquad\s*'
+                   r'\\text\{spacelike\}\\iff\\text\{same horn\}\\ \((\d+)\),\\qquad\s*'
+                   r'\\text\{null\}\\iff\\text\{neither\}\\ \((\d+)\)', _SRC)
+assert len(_tour) == 1, f'P03 sec:tour: the class display matches {len(_tour)} time(s), not once'
+P03_TOUR = dict(zip(('timelike', 'spacelike', 'null'), (int(x) for x in _tour[0])))
 
 
 def check(label, ok):
@@ -87,9 +102,9 @@ def main():
             cls.setdefault('unclassified', []).append((A, B, d))
 
     # ⓵ P03's own counts, recomputed rather than quoted
-    check('P03 sec:tour: TIMELIKE pairs number 3',  len(cls['timelike']) == 3)
-    check('P03 sec:tour: spacelike pairs number 6', len(cls['spacelike']) == 6)
-    check('P03 sec:tour: NULL pairs number 6',      len(cls['null']) == 6)
+    for _c in ('timelike', 'spacelike', 'null'):
+        check(f"P03 sec:tour: {_c} pairs number {len(cls[_c])}, the display's printed {P03_TOUR[_c]}",
+              len(cls[_c]) == P03_TOUR[_c])
     check('the trichotomy is COMPLETE -- 3+6+6 = 15 = C(6,2), no pair unclassified',
           'unclassified' not in cls
           and len(cls['timelike']) + len(cls['spacelike']) + len(cls['null']) == 15)

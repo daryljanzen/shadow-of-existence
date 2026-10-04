@@ -1,0 +1,20 @@
+== P10: $0.61$ -> $0.71$
+    rc=1  failing lines: 1
+    FAIL  eps(n=2) = 0.6081 reproduces P10's printed 0.71
+  restored:
+    rc=0  failing lines: 0
+== P03: timelike (3) -> (4)
+    rc=1  failing lines: 1
+    FAIL  P03 sec:tour: timelike pairs number 3, the display's printed 4
+  restored:
+    rc=0  failing lines: 0
+== P05: order 12 -> 13
+    rc=1  failing lines: 2
+  [FAIL] sec:classification: <deck S3, orientation R> = S3 x Z2 has order 12, the display's printed 13
+  restored:
+    rc=0  failing lines: 0
+== P15: recovering by l~8 -> 9
+    rc=1  failing lines: 1
+    FAIL  ⓶ᵇ and it sets the recovery multipole: with it the spectrum recovers to 99% at l=8, floor alone at l=10 -- so the paper's printed "recovering by l
+  restored:
+    rc=0  failing lines: 0
