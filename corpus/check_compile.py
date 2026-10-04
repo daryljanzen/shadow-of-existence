@@ -5,7 +5,7 @@ checked it per turn.  144 errors were found at c54.9 by accident.  This is the f
 Compiles every paper with a \documentclass and fails on any LaTeX error, undefined citation
 or undefined reference.  Run it every turn; it is the cheapest gate the corpus has.
 """
-import glob, os, re, shutil, subprocess, sys
+import glob, os, re, shutil, subprocess, sys, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 SKIP = re.compile(r'^(RETIRED_|arp_standalone)')
 def main():
@@ -39,12 +39,33 @@ def main():
         print(f"    {len(papers)} paper(s) went UNCOMPILED here.  The static halves above DID run.")
         return 0
 
-    print(f"  compiling {len(papers)} papers")
+    # --- THIS GATE USED TO REWRITE EVERY TRACKED PDF IT TOUCHED (r7163, 66, the gate) ----------
+    # ** FOUND BY MEASUREMENT AND NOT BY A FAILURE. **  `cc66` reported at `r7161+cc66` that the
+    # receipt suite left the tree dirty in one tracked binary -- a figure whose generator rewrote
+    # it with a fresh matplotlib `/CreationDate` on every run.  Fixing that one, this seat ran the
+    # fast job and found `18` tracked PDFs dirty: EVERY paper in `corpus/`.
+    #   ⇒ *** AND THE CAUSE WAS THIS GATE. ***  It compiled with `cwd=HERE` and no output
+    #     directory, so each run overwrote `corpus/<paper>.pdf` in place.  Measured: the before and
+    #     after bytes are the SAME LENGTH and become IDENTICAL once `/CreationDate`, `/ModDate` and
+    #     the trailer `/ID` are stripped.  Nothing about any paper changed; pdfTeX stamped the clock.
+    # ** WHY AN OUTPUT DIRECTORY AND NOT A DETERMINISM FLAG. **  `SOURCE_DATE_EPOCH` with
+    # `FORCE_SOURCE_DATE=1` would make the stamps reproducible, and it would still have this gate
+    # writing the tracked tree on every run of the fast job.  *** A gate that asks a question should
+    # not leave an artefact behind: this one asks whether the corpus compiles, and the answer is in
+    # the log. ***  So the compile goes to a scratch directory and the tracked PDFs are written by
+    # whoever is landing a paper, deliberately, which is where that responsibility already sat.
+    #   ⌗ The two passes share the scratch directory, so the second still reads the first's `.aux`
+    #     and the undefined-reference and dead-link counts below are unchanged.  Inputs -- figures,
+    #     bibliography, class files -- still resolve from `cwd=HERE`.
+    #   ⌗ ** The remainder, stated: ** the stamps are still non-deterministic inside the scratch
+    #     directory.  That is now nobody's cost, because nothing in the tree reads them.
+    out = tempfile.mkdtemp(prefix='check_compile_')
+    print(f"  compiling {len(papers)} papers  (into a scratch directory, not over the tracked PDFs)")
     for f in papers:
-        subprocess.run(['pdflatex', '-interaction=nonstopmode', f], cwd=HERE,
-                       capture_output=True)
-        p = subprocess.run(['pdflatex', '-interaction=nonstopmode', f], cwd=HERE,
-                           capture_output=True, text=True, errors='replace')
+        subprocess.run(['pdflatex', '-interaction=nonstopmode', '-output-directory', out, f],
+                       cwd=HERE, capture_output=True)
+        p = subprocess.run(['pdflatex', '-interaction=nonstopmode', '-output-directory', out, f],
+                           cwd=HERE, capture_output=True, text=True, errors='replace')
         log = p.stdout
         errs = len(re.findall(r'(?m)^! ', log))
         cites = len(re.findall(r'Citation .* undefined', log))
@@ -59,6 +80,7 @@ def main():
             print(f"    [FAIL] {f}: {errs} errors, {cites} undefined citations, "
                   f"{refs} undefined refs, {dead} dead receipt links"
                   + ("  <- run make_all_appendices.py" if dead else ""))
+    shutil.rmtree(out, ignore_errors=True)
     print()
     if bad:
         print(f"  COMPILE FAILURES: {len(bad)} of {len(papers)}")
