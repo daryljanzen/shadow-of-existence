@@ -8403,3 +8403,17 @@ for stating its own eigenvalue nine times.*
 as "is text", and a whitespace-normalised 400 KB body went to `open()` as a filename. **A property
 that usually accompanies the thing is not the thing.** Both readers shared it; both fixed. *Four of
 seven in reporting, two in logic, one in the API.*
+
+### ✔ `cc66.134` addendum — the seed race is closed **in CI**, on a real scope
+
+`f452501f` (PR #267): all jobs green, including **`scoped — the plain suite`** (scoped receipts ran
+11 min 03 s) and **`scoped — the tolerance perturbation`** (three-build probe 12 min 09 s) — the two
+that were red on every head from `c482ecb1` to `c8446145`.
+
+⌗ **Checked that they RAN and did not skip:** the `nothing in scope — nothing runs` step is *skipped*
+in both, which is how the workflow says something was in scope, and the durations are real work. *A
+green that measured nothing is exactly what a closing confirmation must not be.*
+
+⇒ `_MUTATES_TREE` holds on a real PR scope, not only on 66's three-receipt control. *66 measured the
+exposure at 55.4% per shared scope; this measures its absence — five consecutive reds before the
+serialisation, green on the first head after it.*

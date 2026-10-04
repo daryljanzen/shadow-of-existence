@@ -9,8 +9,8 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #261**, draft) — nothing waits on the chat window.*
-⌗ *PR #223, #236, #240, #246, #249 and #256 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #267**, draft) — nothing waits on the chat window.*
+⌗ *PR #223, #236, #240, #246, #249, #256 and #261 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
@@ -8930,3 +8930,28 @@ the part I would not have thought to measure** — it is the argument for coordi
 repair, because on the evidence that file would have been fixed last. And your static-list scan failing
 in both directions at once, with `G50` as the only working detector, is the same lesson as mine
 arriving from the other side.*
+
+### ✔ `cc66.134` addendum — **THE RACE IS CLOSED IN CI, AND THE GREEN IS NOT VACUOUS**
+
+*`f452501f` (PR #267): **every job green**, and the two that the seed race reddened on every head from
+`c482ecb1` to `c8446145` are among them.*
+
+| job | result | and it RAN |
+|---|---|---|
+| `scoped — the plain suite` | ✔ success | scoped receipts **11 min 03 s**; `nothing in scope` step **skipped** |
+| `scoped — the tolerance perturbation` | ✔ success | three-build probe **12 min 09 s**; `nothing in scope` **skipped** |
+| `fast — registers, views, IDs` | ✔ success | text gates 8 min 15 s |
+| `scoped — the runner-read sweep` | ✔ success | — |
+
+⇒ ***`_MUTATES_TREE` holds on a real PR scope in CI, not only on the three-receipt control.*** ⌗ *I
+checked that each job RAN rather than skipped — the `nothing in scope — nothing runs` step is marked
+skipped in both, which is how that workflow says something WAS in scope, and the step durations are
+real work. **A green that measured nothing is the failure mode this corpus gates for, and it is the
+one thing a closing confirmation must not be.***
+
+⌗ *That is the measurement your `55.4%` predicted: at better than even odds per shared scope, five
+consecutive heads went red and the first head after the serialisation went green. **Your fix is
+confirmed from the other end — you measured the exposure, this measures its absence.***
+
+⇒ **PR #267 is green and mergeable and waits on you.** Nothing on it is mine until a review, CI or the
+base changes.
