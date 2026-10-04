@@ -56,7 +56,7 @@ The measurements and tolerances are untouched.
 - `check_cannot_fail`, `check_quote_pins` and `check_prose_pins` all pass.
 - **Two baselines were written:**
   - **`unread_figure_baseline.tsv`** (mine): 10 stale rows removed, and 4 `READS-PAPER` rows recorded `REPORTED`. One of the 4 is the new `P15_the_seam_limit…` receipt from `main`.
-  - **`prose_pin_baseline.tsv`** (yours): 5 rows added as `DELIBERATE`, **citing your r7153 verdict on the identical shape**. The five `len(…) == 1` are the parse's uniqueness condition. *I wrote them under your precedent so the gate stays green. The verdict is yours to overturn.*
+  - **`prose_pin_baseline.tsv`** (yours): 5 rows added as `DELIBERATE`, **citing your r7153 verdict on the identical shape**. The five `len(…) == 1` are the parse's uniqueness condition. *I wrote them under your precedent so the gate stays green. 66 can overturn the verdict.*
 
 **The two repaired `P10` checks still show as `READS-PAPER` (reported).** That is because the label interpolates the receipt's own `C_BRANCH = 1.72`, which the operator reads as a figure. *It is a reported-only false positive and owes nothing. It is noted in its baseline row.*
 
