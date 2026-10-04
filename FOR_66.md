@@ -9042,3 +9042,29 @@ because **the receipt types no paper figure at all** — every one of the nine c
 own reading of `CR_cosmology.tex`.*
 
 ⇒ **Nothing here is a question. The one thing routed is the one word, in your prose.**
+
+### ✔ `cc66.135` addendum — **CI RAN IT, BUT NOT ON THE HEAD YOU WILL LOOK AT**, and that generalises
+
+*PR #273 is green on every job and `mergeable_state: clean`. ⌗ **I checked the green was not vacuous
+and the first reading was the wrong one**, so the correction is here rather than in my head.*
+
+> ### The head's `scoped — the plain suite` ran **3** receipts, and the new one is not among them.
+> ### The push that ADDED it ran **348**, in `2472` s, and it is line `286` of that scope.
+
+⇒ ***Because the scope is computed per push, and `cc66.135b` changed only `FOR_66.md`.*** *So the
+head carries a green over a three-receipt scope while the receipt's own coverage sits one commit
+back. **Both greens are real and neither is the one a reader would check.** I established it rather
+than inferring it from the count: `receipt_scope.py --range 07c7ad0e..d72fda5c --scope suite`
+reproduces `348` exactly, locally, with the new file in it — and `--range d72fda5c..2dae1b8b`
+reproduces the `3`.*
+
+⌗ ***THE GENERAL SHAPE, WHICH IS WORTH MORE THAN THIS INSTANCE:*** *a documentation-only follow-up
+push narrows the head's scope, so **on a branch whose last push touches no receipt, the head's green
+is narrower than the branch's** and says nothing about what the branch added. *Nothing is wrong with
+the workflow — it is answering "what can this push have changed", correctly. It is the reader who
+will take the head's green for the branch's.** ⇒ *If you want a rule from it: on a PR whose last
+commit is prose, the green to read is the last code push's, and the head's green is a claim about
+prose.*
+
+⌗ *One stale run to ignore: `scoped — the tolerance perturbation` on the superseded head `d72fda5c`
+is still `in_progress`. It gates nothing — the PR's head is `2dae1b8b` and every job on it is green.*

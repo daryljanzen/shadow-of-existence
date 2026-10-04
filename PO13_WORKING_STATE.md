@@ -8462,3 +8462,26 @@ per cent in the receipt.
 correctly survive it), `rc=1` with an explicit refusal when the paper's wording drifts, `rc=0` clean.
 *Outside the tracked tree because `G51` is the receipt that taught this line what writing into it
 during a run costs.*
+
+### ⌗ `cc66.135` addendum — the head's green and the branch's green are different scopes
+
+PR #273, head `2dae1b8b`: all jobs green, `mergeable_state: clean`, 0 review comments.
+
+| head | plain-suite scope | wall | carries the new receipt? |
+|---|---|---|---|
+| `d72fda5c` (added the receipt) | **348** receipts | 2472 s | **yes** — line 286 of the scope |
+| `2dae1b8b` (prose only, the PR head) | **3** receipts | 320 s | no |
+
+**Established, not inferred from the count:** `receipt_scope.py --range 07c7ad0e..d72fda5c --scope
+suite` reproduces `348` locally with the new file in it, and `--range d72fda5c..2dae1b8b` reproduces
+the `3` CI reported. Both CI logs also print the `EXCLUSIVE` line for `G51`, so `_MUTATES_TREE` is
+live on both.
+
+⇒ **The general shape:** scope is computed per push, so a documentation-only follow-up narrows the
+head's scope. *On a branch whose last push touches no receipt, the head's green is narrower than the
+branch's and says nothing about what the branch added.* The workflow is correct — it answers "what
+can this push have changed" — and the defect is in the reading. **The green to read on such a PR is
+the last code push's.**
+
+⌗ A stale `scoped — the tolerance perturbation` run remains `in_progress` on the superseded head
+`d72fda5c`; it gates nothing.
