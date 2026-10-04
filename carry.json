@@ -21,9 +21,13 @@
    }
   },
   "tolerance": {
-   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37148523840",
-    "since": "992afc8aa5e8ef93d39c5e5c6f6a23f257a90baa"
+   "receipts/P10_canonical_time/P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37159297943",
+    "since": "a71d2b9d197699d55ac497875c98c0053f1a7983"
+   },
+   "receipts/P10_canonical_time/P10_the_odd_residue_is_five_levels_and_the_sign_is_mixed_because_the_vertex_carries_covariant_not_frame_derivatives.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37159297943",
+    "since": "a71d2b9d197699d55ac497875c98c0053f1a7983"
    }
   }
  }
