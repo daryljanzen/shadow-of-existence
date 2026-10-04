@@ -110,6 +110,20 @@ REFIT = (r"the control settles at \$([0-9.]+)\$ in \$\\chi\^\{2\}\$ per bin and 
          r"\$([0-9.]+)\$: \\emph\{the arm at \$([0-9.]+)\$ times the control's distance, where the "
          r"computed spectrum sits at \$([0-9.]+)\$ times it on the same bins\}")
 
+# ** THE PRE-`r7167` DEFECTIVE SENTENCE, KEPT SO THE REFUSAL CAN SAY WHICH THING HAPPENED. **
+# Requiring `times it` above is right -- tolerating the old form would be the `r7165` blindness,
+# a locator that cannot tell a discharged finding from a live one.  *But measured at `cc66.136`,
+# requiring it made the two refusals IDENTICAL: a correct rewording that names the quantity
+# differently and a regression that drops the word again both came back `matches 0 time(s)`,
+# byte for byte.*  => So the receipt detected "the wording moved" and not "the word was
+# dropped", which for a receipt whose job is now to detect its own discharge is the one thing it
+# must not be vague about.  ** This is a CLASSIFIER on the refusal and NOT a tolerance: the
+# defective form is still refused with rc=1 and still asserts nothing, and the relapse message
+# can never fire unless the literal defective sentence is there. **
+RELAPSE = (r"the control settles at \$[0-9.]+\$ in \$\\chi\^\{2\}\$ per bin and this arm at "
+           r"\$[0-9.]+\$: \\emph\{the arm at \$[0-9.]+\$ times the control's distance, where the "
+           r"computed spectrum sits at \$[0-9.]+\$ on the same bins\}")
+
 PAPER = {}
 for name, pat, keys in (('the lensed pair', LENSED,
                          ('chi2_ctl', 'bin_ctl', 'chi2_arm', 'bin_arm', 'ratio')),
@@ -117,9 +131,18 @@ for name, pat, keys in (('the lensed pair', LENSED,
                          ('rf_bin_ctl', 'rf_bin_arm', 'rf_ratio', 'as_computed'))):
     hits = re.findall(pat, SECTION)
     if len(hits) != 1:
-        print(f"  ⛔ REFUSED: {name}'s sentence matches {len(hits)} time(s) in sec:refit-bound.  "
-              f"The wording this receipt reads has DRIFTED, and a figure that cannot be located is "
-              f"not a figure that can be checked.  Nothing is asserted.")
+        if pat is REFIT and re.search(RELAPSE, SECTION):
+            print("  \u26d4 REFUSED -- ** THE `r7167` REPAIR HAS BEEN UNDONE: the clause reads "
+                  "`sits at $2.56$ on the same bins` again, without the word. **  That figure is "
+                  "the arm-over-control RATIO, and the sentence puts it back where every other "
+                  "figure is a chi^2 per bin -- three sentences after the computed arm is given "
+                  "at 2.98 per bin.  *This is the finding this receipt was built on, returning.*"
+                  "  Nothing is asserted.")
+        else:
+            print(f"  \u26d4 REFUSED: {name}'s sentence matches {len(hits)} time(s) in "
+                  f"sec:refit-bound.  The wording this receipt reads has DRIFTED, and a figure "
+                  f"that cannot be located is not a figure that can be checked.  ** This is NOT "
+                  f"the pre-r7167 defect, which has its own refusal. **  Nothing is asserted.")
         sys.exit(1)
     for k, v in zip(keys, hits[0]):
         PAPER[k] = v
