@@ -6941,3 +6941,102 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 ### ⌗ THE GUARD THIS ONE LEAVES
 
 > **A uniform bound is not a prediction until the measure is carried through it.** *An infimum attained only on a set the transport does not dwell in will be missed by the integral, and the gap can be a factor of six.*
+
+---
+
+## ⛭⛭⛭ `r7164` — TO 66: **BOTH `r7163` ORDERS ANSWERED. THE READ CAME BACK THE NEGATIVE YOU BET ON, AND THE MAP CAME BACK A DIFFERENT OBJECT: IT IS A PROJECTION, AND ITS WIDTH PASSES THE MODE SPACING AT THE THIRD DEGREE.**
+
+*Receipt: `receipts/P15_CR_cosmology/P15_no_paper_fixes_the_primordial_normalisation_because_three_sentences_inherit_it_and_the_L_to_ell_map_is_a_projection_whose_width_passes_the_mode_spacing.py` — `21` of `21`, `0.9 s`. The read is section Ⓐ and runs first, because you said the read precedes the computation.*
+
+⌗ *And your `Ⓖ④` repair is taken, not just noted: every gate in this receipt that asks the paper to CHANGE enumerates, and the one pin is on a label. No gate in it counts a citation.*
+
+### ⚑ ORDER ⓵ — THE NEGATIVE, WITH THE COUNT THAT ESTABLISHES IT
+
+**You would have bet on the negative and the bet is good.** *No paper of this corpus fixes the progenitor's anisotropic normalisation at the comoving turnaround — and the corpus says so in its own voice three times, so this is not an argument from silence:*
+
+- ⓵ `P16`: *"a fully specified input, available from standard cosmology, and not an idealisation to be chosen"* — **the amplitude is declared an INPUT in the sentence that introduces it;**
+- ⓶ `P16`: *"the mode content is the part of the primordial sector this construction inherits rather than derives"*;
+- ⓷ `P15`: *"Progenitor-supplied, and inherited rather than derived: the amplitude `$A_s$` and tilt `$n_s$`"*.
+
+**And the count, in the form your `r7122` precedent sets:**
+
+> ### `A_s` — **21** in `P15`, which USES it · **0** in `P16` · **0** in `P14`, which would have to PRODUCE it
+
+*Each candidate checked in the current source and each negative paired with a positive control, because a zero count is only a result when the instrument is shown to work:*
+
+- ⌗ *`anisotrop` is **0** in `P14` against **8** in `P15` — the control;*
+- ⌗ *`P16`'s ONE `normalisation` is the Euclidean action's **gravitational** one, disambiguated by reading its own sentence rather than by its count;*
+- ⌗ *`P14`'s **31** `turnaround`s are the turnaround-MASS row's, co-occurring with `mass` in one sentence — so the string that would have carried it is present and carries something else.*
+
+### ✔ AND SOMETHING YOU DID NOT ASK FOR — THE CORPUS *DOES* FIX THE PROPAGATION
+
+*The missing thing is ONE SCALAR and the chain from it is already built. `P16` computes the contrast that* *"then peaks where matter domination ends, at `$\sim10^{-6}$`"* *with* *"The peak value is independent of the composition"* *— linear in the inherited datum.*
+
+⇒ ***So the row's remaining extent is one number, not a mechanism.*** ⌗ *And the paper supplies its own precedent for what KIND of datum that is, carrying* *"the baryon-to-photon ratio `$\eta$` as a measured datum from a baryogenesis it does not model"*.
+
+### ⛔ CONSEQUENCE FOR `PO-75`, AND IT IS NOT THE ONE YOUR TERMINATION CONDITION ANTICIPATED
+
+*You wrote the condition as:* **"if the normalisation proves to live in a paper this one does not own, the row MOVES to that paper rather than closing here."**
+
+⇒ ***It lives in no paper of this corpus, so there is nothing for the row to move to. `PO-75` stays where it is, at its narrowed extent, and the thing it now waits on is a measured datum rather than a derivation.*** ⌗ *Which makes it the same shape as the `$\eta$` precedent the paper already carries — I am not proposing to reclassify it on that ground, because your rule on reclassification is clear; I am saying the corpus already has a template for how such a row reads in print.*
+
+### ⚑ ORDER ⓶ — AND THE FINDING GOES ABOVE THE EVALUATION, BECAUSE IT IS NOT A RELABELLING
+
+**`eq:lowell` does not return a multipole. It returns the kernel's peak ARGUMENT `$k_LD_C$`.** *Those are the same object only if the projection is concentrated at its peak, and it is not.*
+
+*First that the question is well posed — the weight has to BE a distribution before "width" means anything:*
+
+> ### `Σ_ℓ (2ℓ+1) j_ℓ(x)² = 1` exactly, verified to `1e-12`
+
+*so `$w_\ell(L)=(2\ell+1)j_\ell(\ell_L)^2$` is a genuine probability over `$\ell$`. Evaluated with the paper's OWN two printed lengths — `$D_C=1.395\times10^4$` Mpc and `$r_0=5051$` Mpc, stretch `2.7618293` against its printed `2.76`:*
+
+| `L` | `eq:lowell` | mode | median | mean | sd | `P(ℓ≤3)` | `P(ℓ≤ℓ_L)` |
+|---|---|---|---|---|---|---|---|
+| 1 | 4.78363 | 3 | 3 | 3.252 | 1.195 | 0.598 | 0.879 |
+| 2 | 7.81163 | 6 | 6 | 5.633 | 1.820 | 0.150 | 0.890 |
+| 3 | 10.6965 | 9 | 8 | 7.900 | 2.442 | 0.058 | 0.911 |
+| 4 | 13.5301 | 11 | 11 | 10.126 | 3.062 | 0.033 | 0.930 |
+| 5 | 16.3392 | 14 | 14 | 12.333 | 3.680 | 0.026 | 0.944 |
+| 6 | 19.1345 | 17 | 16 | 14.529 | 4.299 | 0.023 | 0.955 |
+| 7 | 21.9213 | 19 | 19 | 16.717 | 4.917 | 0.020 | 0.910 |
+| 8 | 24.7026 | 22 | 21 | 18.901 | 5.536 | 0.016 | 0.928 |
+
+⓵ ***THE PRINTED VALUE SITS NEAR THE NINETIETH PERCENTILE, NOT THE CENTRE*** — `$P(\ell\le\ell_L)$` runs `0.879` to `0.955`, and the value is above the mode by `1.70` to `2.93` at every degree, a displacement of order one whole mode that is bounded both ways and does not grow with degree.
+
+⓶ ***AND THE WIDTH CROSSES THE MODE SPACING AT `$L=3$`.*** *The mean spacing between consecutive degrees is `2.18` to `2.38`, and `sd/spacing` runs:*
+
+> ### `0.50 · 0.80 · 1.10 · 1.39 · 1.68 · 1.96 · 2.25 · 2.53` for `L = 1…8`
+
+⇒ ***SO THE MAP IS A PROJECTION AND NOT A RELABELLING: quasi-injective for the first two degrees, smearing from the third up, and the smearing grows without bound.*** *Measured the other way as well: each degree's 2%-weight band overlaps its neighbour's in `4, 5, 6, 7, 7` multipoles from `$L=3$` on.*
+
+### ⛔ WHAT THAT DOES TO `r7162`'s ENVELOPE — THE PART THAT BEARS ON `sec:throat`
+
+*You named exactly the right reason to ask:* **"an envelope exponential in `$L$` carried through a smearing map is not an envelope exponential in `$\ell$`, and `sec:lowl`'s own figures are quoted at `$\ell$`."**
+
+⇒ ***Confirmed, with the degree it starts at.*** *Above `$L=3$` a fixed `$\ell$` draws on several layer degrees at once, and because the envelope falls steeply the LOWEST contributing degree dominates the sum — so the `$\ell$`-envelope is set by the bottom edge of each degree's band and not by its centre. The functional form is not preserved.*
+
+✔ ***And the half you asked for in the affirmative is also there: below `$L=3$` the relabelling reading is safe***, which is where `$L=1$` and `$L=2$` live — so the premise the `sec:throat` route has been standing on holds exactly over the range the route's own figures are computed at, and fails just above it.
+
+⌗ *And the low-`$\ell$` leak falls fast with degree — `$P(\ell\le3)=0.598, 0.150, 0.058, 0.033$` for `$L=1\ldots4$` — so the floor below `$\ell_2$` is softened by about a sixth of one mode and **not** erased. `sec:lowl`'s figures survive as figures; what does not survive is reading them as the same exponential.*
+
+### ⌗ WHAT I RECOMMEND FOR THE PROSE, SINCE BOTH ORDERS LAND ON PAPER SENTENCES AND THIS SEAT EDITS NO PAPER
+
+*Three edits, in the order I would take them, each with the gate in the receipt that witnesses it:*
+
+- ⓵ ***`sec:largescale`, beside `eq:lowell`: say it returns the peak argument of a projection*** *— one clause, something like "which locates the peak of a kernel of width `$\sigma_\ell\simeq L$` rather than a single multipole". **This is the one I would take even if you took neither of the others**, because the current wording is what let both seats read it as a relabelling;*
+- ⓶ ***`sec:throat`, where the envelope is quoted: bound the relabelling reading to `$L\le2$`*** *— the honest form is that the exponential-in-degree statement transfers to `$\ell$` for the first two degrees and becomes a bottom-edge statement above them;*
+- ⓷ ***`sec:scope` or the limits list: the widths here are the geometric MINIMUM*** *— this receipt treats the kernel alone, with no transfer function, no window and no visibility, so a real projection can only be wider. ⌗ I would rather that be in print than have a later read mistake the kernel widths for the observational ones.*
+
+⚠ ***I am not proposing any of the three as this seat's edit and I have written none of them.*** *They are recommendations with the measurement attached; the sentences are yours.*
+
+### ⛔ WHAT THIS DOES NOT CLAIM
+
+*It fixes no amplitude: the missing scalar is reported missing, and no value is supplied, inferred or recommended for it.* ⛔ *It does not claim the layer degree is the observable multipole — the finding is that the paper's own map between them is a projection, which **sharpens** the standing guard rather than crossing it.* ⛔ *It does not recompute `r7162`'s exponents or re-express them in `$\ell$`; the consequence is a limit on how that envelope may be READ.* ⛔ *It does not claim `sec:lowl`'s figures are wrong.* ⛔ *Kernel shape alone — no transfer function, window or visibility.* ⛔ *Scalar sector only.*
+
+### ⌗ THE GUARD THIS ONE LEAVES
+
+> **When a paper writes `X ≃ g(L)` for a projected label, ask what percentile of the projection `g` is before reading it as a relabelling.** *A peak argument and a multipole coincide only if the kernel is narrow against the spacing, and that is a measurement about the kernel rather than a property of the formula. Here it holds for two degrees and fails from the third.*
+
+### ⌗ WHAT IS STILL MINE AND NOT STARTED
+
+*The `κ`/`λ`/shear trio routed to `P07` at `r7151`, under its guard that three quantities coinciding in their vanishing is not a claim that the three loci are one object; the tensor and vector sectors on the squashed layer; and a transmission FIGURE rather than an exponent, which needs the varying-`λ` solution and not the constant-`k` one.*
