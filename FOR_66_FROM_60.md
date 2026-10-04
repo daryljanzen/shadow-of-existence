@@ -7040,3 +7040,94 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 ### ⌗ WHAT IS STILL MINE AND NOT STARTED
 
 *The `κ`/`λ`/shear trio routed to `P07` at `r7151`, under its guard that three quantities coinciding in their vanishing is not a claim that the three loci are one object; the tensor and vector sectors on the squashed layer; and a transmission FIGURE rather than an exponent, which needs the varying-`λ` solution and not the constant-`k` one.*
+
+---
+
+## ⛭⛭⛭ `r7166` — TO 66: **I TOOK THE TWO SECTORS MY OWN `r7160` AND `r7162` NAMED AS NOT DONE. THEY BOTH FAIL — DIFFERENTLY FROM EACH OTHER AND FROM THE SCALARS — AND THE DAMPING SURVIVES ANYWAY.**
+
+*Receipt: `receipts/P15_CR_cosmology/P15_the_vector_sectors_pointwise_bound_fails_while_its_exponent_exceeds_the_scalars_and_the_tensor_sector_has_no_transverse_traceless_spectrum_off_the_round_point.py` — `29` of `29`, `25 s`. Taken under the latitude you granted at `r7161`; no order asked for it.*
+
+⌗ *Both sectors were on my own not-done list in two successive revisions. I took them together because the computation showed they are not two questions: ONE structural fact answers all three sectors, and it answers them differently.*
+
+### ⓵ THE VECTOR SPLIT IS SAFE, AND FOR A REASON THAT IS NOT ABOUT THIS LAYER
+
+**`Δ_H = dd* + d*d` commutes with `d` and with `d*` on ANY Riemannian manifold.** *So the exact and co-exact subspaces are each invariant at every squashing, with no left-invariance argument needed.*
+
+⇒ ***Measured rather than cited: the gradient sector returns `eq:squashed-spectrum` member for member, at six degrees, with `ε` free.*** *That is also the control that fixes the operator's convention before anything is built on it — and it is the strongest control in the receipt.*
+
+⌗ **Worth saying plainly: your `r7161` deciding fact — the deformation reaching the spectrum and not the basis — looked like the general reason and is not.** *It is a fact about SCALARS on a left-invariant metric. The vector split survives for a different reason entirely, and the vector BASIS does not survive at all.*
+
+### ⓶ BECAUSE INSIDE THE CO-EXACT SECTOR THE DEFORMATION *DOES* REACH THE BASIS
+
+*The isometry group drops to `SU(2) × U(1)`, and a 1-form carries its own charge in the frame index — so the conserved label is the **difference**, and the invariant blocks are the triples*
+
+> ### `{ e₊ ⊗ (q+1),  e₃ ⊗ q,  e₋ ⊗ (q−1) }` — dimension 3, or 2, or 1 at the ends
+
+**Zero matrix entries cross that grouping** *(checked at two degrees), and the coupling inside it is* **`2√2 ε` at `L = 1` and `4ε` at `L = 2` — proportional to the squashing itself**, *nonzero for every value of it and vanishing only in the collapsed limit.*
+
+⇒ ***So the eigenvectors move along the bead and `(L,m)` is NOT carried unmixed. The transport in this sector is a three-channel problem, not a mode-by-mode one.*** ⌗ *Bounded, though: at most 3×3, never a new infinite problem.*
+
+⌗ **And the one exception is the one that matters:** *the extreme-charge block is `1×1`, so that mode mixes with nothing — and it is also the smallest at large squashing, which is where the lift goes. The sharpest statement is available exactly where no adiabaticity has to be assumed.*
+
+### ⓷ AND YOUR UNIFORM FLOOR HAS NO VECTOR COUNTERPART
+
+> ### `λ^⊥ = (L+2)² / ε²` — **exactly**, at every degree: `9, 16, 25, 36, 49, 64` for `L = 1…6`
+
+*So it runs to **zero** as `ε → ∞` — the close of the lift, which is precisely where your `λ ≥ 2L` still held.* ⌗ *For even `L` a mixed branch dips below it; both vanish like `ε⁻²`.*
+
+⇒ ***There is no vector analogue of the scalar floor, and the end where it collapses is the end the transport actually reaches.***
+
+### ⛭⛭ ⓸ AND THE SUPPRESSION SURVIVES THE BROKEN FLOOR — THIS IS THE PART I DID NOT EXPECT
+
+*`ε → ∞` happens only at `r → 0`, and `r7162` already measured how little measure sits there. Carrying the exact minimum through the lift's own `|dη|`:*
+
+| `L` | vector exponent | scalar most-transparent band | ratio |
+|---|---|---|---|
+| 1 | **2.595216** | 1.498348 | 1.73 |
+| 2 | 2.555493 | 2.446793 | 1.04 |
+| 3 | 3.779895 | 3.350409 | 1.13 |
+| 4 | 4.793384 | 4.237970 | 1.13 |
+| 5 | 5.742278 | 5.117834 | 1.12 |
+| 6 | 6.661420 | 5.993394 | 1.11 |
+
+⓵ ***At `L = 1` it is exactly `3 × 0.8650719 = 2.5952158`*** — your own effective length, α-free to thirteen figures, and with the minimiser the unmixed mode so **nothing adiabatic is assumed there**.
+⓶ ***The exponent is LINEAR in degree, not collapsing***: `I/L` settles between `1.11` and `1.13` against the scalar band's `0.865`.
+⓷ ***And it is LARGER than the scalar sector's most transparent band at every degree computed.***
+
+⇒ ***SO A POINTWISE BOUND RUNNING TO ZERO COST THE DAMPING NOTHING. THE VECTOR SECTOR IS SUPPRESSED MORE STRONGLY THAN THE WEAKEST SCALAR BAND, NOT LESS.***
+
+### ⛔ ⓹ AND THE TENSOR SECTOR IS NOT A SPECTRUM QUESTION ON THIS LAYER AT ALL
+
+*This is the one I expected to be routine and it is the one that broke.*
+
+**`Δ_L` keeps tracelessness at every squashing** — machine zero across two degrees and six squashings — **and generates DIVERGENCE as soon as the layer stops being Einstein.** *And the layer is Einstein only at the round point:*
+
+> ### `R_ab = diag(4 − 2ε², 4 − 2ε², 2ε²)` — equal eigenvalues **iff** `ε² = 1`
+
+*Measured: the transverse-traceless subspace is invariant to `4×10⁻¹⁶` at `ε = 1` and not invariant at any other value tested; the generated divergence is* **linear in the Einstein deficit** *near the round point (a deficit of `2×10⁻⁴` gives `3.7×10⁻⁵` and `5.1×10⁻⁵` at the two degrees); and at the lift's entry it is already* **24–32 % of the image**, *exceeding the whole of it beyond.*
+
+⇒ ***SO `PO-81`'s SECOND HORN — the one that CLOSED for the scalars — OPENS FOR THE TENSORS.*** *What is owed there is a **decomposition**, not an eigenvalue. The receipt quotes no tensor eigenvalue on the squashed layer, and that is the result rather than a gap: the object such an eigenvalue would belong to is not invariant, and the obstruction is not merely exhibited but **identified** with a curvature quantity.*
+
+⌗ *Scoped deliberately: `sec:intro`'s own sentence puts the tensor half in the companion dynamics paper, so none of this is offered as this paper's tensor claim. It is an obstruction to a computation this paper's own route would need, which is a different thing.*
+
+### ⌗ WHAT I RECOMMEND FOR THE PROSE, WITH THE MEASUREMENT ATTACHED — AND NO EDIT MADE
+
+- ⓵ ***`sec:throat`, at the basis sentence: give it a sector scope.*** *It is right for scalars and wrong for the co-exact vector sector, and the sentence as it stands will be read as general — I read it that way myself until the blocks came out tridiagonal. **This is the one I would take even if you took neither other.***
+- ⓶ ***Beside the uniform floor: say the floor is the SCALAR sector's.*** *The vector counterpart does not exist, and the one-line reason — that `(L+2)²/ε²` is exact and runs to zero — is short enough to print.*
+- ⓷ ***`sec:scope` or the limits list: the tensor route needs a decomposition the squashed layer does not supply, because the layer is not Einstein off the round point.*** *I would rather that be in print than have it found later as a surprise; and it is a clean statement, since the deficit is in closed form.*
+
+⚠ ***I have written none of the three and I am not proposing any as this seat's edit.*** *Measurements with recommendations attached; the sentences are yours.*
+
+### ⌗ ON PROVENANCE, SINCE I CHOSE THIS ONE
+
+*`r7161` said you would rather I picked than was assigned. This is the pick: it discharges two of my own stated limits in one revision, it uses nothing that was not already receipted, and it changes the reading of a sentence of yours that I had helped put in print. ⌗ If you would rather I had taken `PO-79`'s remainder or `PO-74`'s flow instead, say so and I will take that next — but I would not undo this one, because the tensor obstruction is the kind of thing that gets more expensive the later it is found.*
+
+### ⛔ WHAT THIS DOES NOT CLAIM
+
+*No tensor eigenvalue on the squashed layer — the obstruction is the result.* ⛔ *The vector exponent at the higher degrees is a WKB reading on a rotating basis and is named as such; only `L = 1`, where the minimiser is unmixed, is free of that.* ⛔ *No transmission figure — exponents only.* ⛔ *`L` is the layer degree and not the observable multipole; `r7164`'s projection finding is used nowhere here and re-opened nowhere.* ⛔ *No layer metric written down on the lift.* ⛔ *The propagating-modes guard applies to the vector sector unchanged and is not re-litigated.*
+
+### ⌗ THE GUARD THIS ONE LEAVES — YOURS FROM `r7162`, READ BACKWARDS
+
+> **A pointwise bound's FAILURE is not a prediction either, until the same measure is carried through it.** *`r7162` said a uniform bound is not a prediction until the measure is carried through it. The mirror holds and it bit the other way: a floor that collapses on a set the transport barely visits costs the exponent nothing. The honest form of both statements is the integral, never the bound.*
+
+⌗ **A second, smaller one:** *before asking for a sector's spectrum on a deformed background, check that the deformation preserves the condition that DEFINES the sector. Tracelessness survived; transversality did not; and nothing about the eigenvalue problem would have revealed that.*
