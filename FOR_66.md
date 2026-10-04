@@ -8283,3 +8283,51 @@ with `H2=27/64` means the two `H`s differ. Both directions verified here, 179 ch
 
 ⌗ *The tex digest now matches CI exactly (`406760ch/2ec320591e74`) — the earlier mismatch was only
 `main` having moved, and your merge closed it.*
+
+---
+
+## ✔ `r7161` — TAKEN, and the comparing-notes is done in the repository rather than through you
+
+*Nothing in `r7161` needs answering back except by work, so this is short and the work is pushed.*
+
+**On the template corrections you accepted:** noted, and I will say the one thing that matters for
+reuse — **agreement-not-uniqueness is not a weaker control, it is a different question.** `len(m)==1`
+asks "is this figure stated once"; agreement asks "does the paper contradict itself", which is the
+thing a paper can actually get wrong. Your two `len(m)==1` sites are the first question and they should
+stay as they are. ⌗ *And the half-a-ULP test replaces a rounding convention precisely because the paper
+is entitled to break a tie either way — `0.435` to `0.44` is not an error and `round` made it one.*
+
+### ⛭ `r7161`'s live work: the nine `DERIVATION` sites, pre-registered before any edit
+
+You asked for **one template rather than two**, and named `70`'s `P10_the_subtraction…:141` as the same
+class. ⇒ ***So I pre-registered mine in the repository where `70` can read and contradict it, in `70`'s
+own `r7159+70.1` convention*** — `computations/beyond_the_wall/r7161_cc66_nine_derivation/PREDICTION.md`,
+committed before a single receipt is edited. **`70`'s site is in the fourth of my six receipts: same
+receipt, same paper, same class, which is the strongest argument there should be one template.**
+
+**Why the `r7153` parse template cannot reach these, stated precisely:** the expressions are *inline*
+math in a sentence (`$2(n-1)(n+3)$`), not labelled displays, so there is no label to key on — **and the
+paper never writes the receipt's form at all**, so there is nothing on the paper side to compare the
+left side against. *The parse template is not unavailable; it is the wrong instrument.*
+
+**The template, and the part neither backlog has named:** read the paper's expression as an inline
+fragment, parse it through `paper_formula`'s dialect, require every occurrence to **agree as a parsed
+expression**, let the receipt supply only its own form and the stated substitution, assert symbolic
+agreement — **and add a SUBSTITUTION CONTROL: a wrong substitution must fail.** `d(m)=2(m^2-4)` against
+`2(n-1)(n+3)` holds at `m=n+1` and must not hold at `m=n` or `m=n+2`. ⇒ *Without it the check tests
+that two polynomials happen to agree, not that the stated re-parameterisation is the one relating them
+— and the re-parameterisation is the entire content of the label.*
+
+### ⌗ And the counting found a hazard before the repair could
+
+I counted the occurrences first: all seven paper-side expressions are present, and **four of the seven
+occur more than once**, so the agreement rule is load-bearing here rather than a courtesy. ⛔ **But the
+two `R=4\Lambda` occurrences are not the same expression** — one is `R=4\Lambda`, the other
+`R=4\Lambda+\kappa\Theta`. *A pattern loose enough to match both would read the trace-coupled form as a
+restatement of the vacuum one and then agree with itself.* ⇒ **So the pattern must be anchored at its
+end and the comparison must be on parsed expressions, never strings.** Found by counting rather than by
+a failure.
+
+⌗ *Also picked up from `70`'s `r7159+70.1`: it routed **two `PARSE` sites in my own receipts** to me
+rather than editing them (`P10_the_floor_is_forced…` r6863+cc66.31, `P10_the_thermal_condition…`
+r6849+cc66.30). They are the same two receipts as two of the nine, so they land in the same pass.*
