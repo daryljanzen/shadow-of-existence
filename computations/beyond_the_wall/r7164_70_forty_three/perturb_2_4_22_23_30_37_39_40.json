@@ -1,0 +1,652 @@
+[
+ {
+  "i": 0,
+  "receipt": "receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py",
+  "site": "85:4",
+  "figs": [
+   "12"
+  ],
+  "base_rc": 0,
+  "result": "GREEN-ON-MOVE",
+  "touched": {
+   "CR_cosmology.tex": 24,
+   "CR_framework.tex": 14,
+   "SdS-slicing-curve_v2.tex": 30,
+   "algebroid_paper.tex": 6,
+   "appendix_ledgers_P17.tex": 2,
+   "appendix_ledgers_P3.tex": 2,
+   "appendix_ledgers_P4.tex": 2,
+   "appendix_ledgers_SYN.tex": 2,
+   "appendix_ledgers_corpus.tex": 2,
+   "appendix_receipts_P01.tex": 2,
+   "appendix_receipts_P02.tex": 3,
+   "appendix_receipts_P03.tex": 23,
+   "appendix_receipts_P04.tex": 3,
+   "appendix_receipts_P05.tex": 9,
+   "appendix_receipts_P06.tex": 5,
+   "appendix_receipts_P07.tex": 5,
+   "appendix_receipts_P08.tex": 15,
+   "appendix_receipts_P09.tex": 1,
+   "appendix_receipts_P10.tex": 58,
+   "appendix_receipts_P11.tex": 4,
+   "appendix_receipts_P12.tex": 83,
+   "appendix_receipts_P13.tex": 5,
+   "appendix_receipts_P14.tex": 51,
+   "appendix_receipts_P15.tex": 88,
+   "appendix_receipts_P16.tex": 8,
+   "appendix_receipts_P17.tex": 4,
+   "appendix_receipts_corpus.tex": 382,
+   "boundary_paper.tex": 4,
+   "canonical_time.tex": 17,
+   "cosmogenesis_paper.tex": 5,
+   "dynamics_paper.tex": 8,
+   "geometric_core_paper.tex": 7,
+   "groupoid_paper.tex": 7,
+   "janzen_circle_v3.tex": 9,
+   "matter_sector_paper.tex": 12,
+   "range_paper.tex": 2,
+   "shadow_of_existence.tex": 1,
+   "slicing_operator.tex": 1
+  },
+  "fails": []
+ },
+ {
+  "i": 1,
+  "receipt": "receipts/L207_the_bend/W2_the_general_inhomogeneous_leaf_exhibited.py",
+  "site": "113:4",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2",
+   "4",
+   "8"
+  ]
+ },
+ {
+  "i": 2,
+  "receipt": "receipts/L221_the_bridge/B55_right_kind_right_place_numerical_declined.py",
+  "site": "125:4",
+  "figs": [
+   "0.1179"
+  ],
+  "base_rc": 0,
+  "result": "NOT-IN-PAPER",
+  "touched": {},
+  "fails": []
+ },
+ {
+  "i": 3,
+  "receipt": "receipts/L246_the_achirality_is_the_obstruction/W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_chiral_member_does_not_have.py",
+  "site": "200:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2"
+  ]
+ },
+ {
+  "i": 4,
+  "receipt": "receipts/L271_the_statistics_bake/S1_the_first_programme_is_a_power_calculation_and_the_design_it_proposes_is_the_expensive_one.py",
+  "site": "250:4",
+  "figs": [
+   "0.05"
+  ],
+  "base_rc": 0,
+  "result": "GREEN-ON-MOVE",
+  "touched": {
+   "CR_cosmology.tex": 1,
+   "appendix_receipts_P06.tex": 1,
+   "appendix_receipts_P15.tex": 15,
+   "appendix_receipts_P16.tex": 1,
+   "appendix_receipts_corpus.tex": 16
+  },
+  "fails": []
+ },
+ {
+  "i": 5,
+  "receipt": "receipts/L273_the_cartan_bake/C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py",
+  "site": "309:4",
+  "figs": [
+   "24"
+  ],
+  "base_rc": 0,
+  "result": "GREEN-ON-MOVE",
+  "touched": {
+   "CR_cosmology.tex": 3,
+   "CR_framework.tex": 6,
+   "algebroid_paper.tex": 3,
+   "appendix_ledgers_P4.tex": 2,
+   "appendix_ledgers_SYN.tex": 2,
+   "appendix_ledgers_corpus.tex": 2,
+   "appendix_receipts_P02.tex": 1,
+   "appendix_receipts_P03.tex": 5,
+   "appendix_receipts_P07.tex": 4,
+   "appendix_receipts_P10.tex": 17,
+   "appendix_receipts_P12.tex": 1,
+   "appendix_receipts_P13.tex": 1,
+   "appendix_receipts_P14.tex": 13,
+   "appendix_receipts_P15.tex": 35,
+   "appendix_receipts_P16.tex": 2,
+   "appendix_receipts_P17.tex": 2,
+   "appendix_receipts_corpus.tex": 84,
+   "boundary_paper.tex": 3,
+   "canonical_time.tex": 3,
+   "dynamics_paper.tex": 1,
+   "geometric_core_paper.tex": 1,
+   "janzen_circle_v3.tex": 5,
+   "matter_sector_paper.tex": 4,
+   "shadow_of_existence.tex": 1
+  },
+  "fails": []
+ },
+ {
+  "i": 6,
+  "receipt": "receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py",
+  "site": "190:4",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2",
+   "4"
+  ]
+ },
+ {
+  "i": 7,
+  "receipt": "receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py",
+  "site": "231:4",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2"
+  ]
+ },
+ {
+  "i": 8,
+  "receipt": "receipts/P03_SdS_slicing/P03_charge_obstructs_the_beads_closure_and_not_the_cosmogenesis.py",
+  "site": "113:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2"
+  ]
+ },
+ {
+  "i": 9,
+  "receipt": "receipts/P03_SdS_slicing/P03_seam_continuation.py",
+  "site": "34:4",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2"
+  ]
+ },
+ {
+  "i": 10,
+  "receipt": "receipts/P03_SdS_slicing/P03_the_interior_mass_function_is_p_equals_one_along_the_shell_and_the_charge_falls_short_of_the_equality_radius.py",
+  "site": "159:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2"
+  ]
+ },
+ {
+  "i": 11,
+  "receipt": "receipts/P08_slicing_operator/P08_the_second_ruling_reading_does_not_extend_to_the_collapse_face.py",
+  "site": "120:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "6"
+  ]
+ },
+ {
+  "i": 12,
+  "receipt": "receipts/P10_canonical_time/P10_gamma_is_one_quarter_and_is_the_maximum.py",
+  "site": "98:4",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "4"
+  ]
+ },
+ {
+  "i": 13,
+  "receipt": "receipts/P10_canonical_time/P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_is_a_convention_and_the_residue_is_the_absorbed_constant.py",
+  "site": "223:0",
+  "figs": [
+   "15"
+  ],
+  "base_rc": 0,
+  "result": "GREEN-ON-MOVE",
+  "touched": {
+   "BH_causality_v2.tex": 1,
+   "CR_cosmology.tex": 231,
+   "CR_framework.tex": 15,
+   "CR_synthesis.tex": 1,
+   "SdS-slicing-curve_v2.tex": 5,
+   "algebroid_paper.tex": 4,
+   "appendix_ledgers_P13.tex": 2,
+   "appendix_ledgers_corpus.tex": 2,
+   "appendix_receipts_P01.tex": 3,
+   "appendix_receipts_P02.tex": 1,
+   "appendix_receipts_P03.tex": 18,
+   "appendix_receipts_P05.tex": 3,
+   "appendix_receipts_P07.tex": 4,
+   "appendix_receipts_P08.tex": 2,
+   "appendix_receipts_P09.tex": 1,
+   "appendix_receipts_P10.tex": 57,
+   "appendix_receipts_P11.tex": 1,
+   "appendix_receipts_P12.tex": 6,
+   "appendix_receipts_P13.tex": 7,
+   "appendix_receipts_P14.tex": 20,
+   "appendix_receipts_P15.tex": 1515,
+   "appendix_receipts_P16.tex": 14,
+   "appendix_receipts_P17.tex": 5,
+   "appendix_receipts_corpus.tex": 1677,
+   "boundary_paper.tex": 2,
+   "canonical_time.tex": 10,
+   "cosmogenesis_paper.tex": 7,
+   "dynamics_paper.tex": 1,
+   "geometric_core_paper.tex": 7,
+   "janzen_circle_v3.tex": 1,
+   "matter_sector_paper.tex": 3,
+   "modern_parallax.tex": 1,
+   "range_paper.tex": 1,
+   "shadow_of_existence.tex": 1,
+   "slicing_operator.tex": 1
+  },
+  "fails": []
+ },
+ {
+  "i": 14,
+  "receipt": "receipts/P10_canonical_time/P10_the_subtraction_is_at_operator_dimension_six_pinned_three_ways_and_it_is_not_degenerate_so_the_ledger_cost_is_real.py",
+  "site": "153:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2"
+  ]
+ },
+ {
+  "i": 15,
+  "receipt": "receipts/P10_canonical_time/P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity_odd_entry_is_not_owed.py",
+  "site": "166:0",
+  "figs": [
+   "10"
+  ],
+  "base_rc": 0,
+  "result": "GREEN-ON-MOVE",
+  "touched": {
+   "BH_causality_v2.tex": 8,
+   "CR_cosmology.tex": 80,
+   "CR_framework.tex": 17,
+   "CR_synthesis.tex": 11,
+   "SdS-slicing-curve_v2.tex": 3,
+   "algebroid_paper.tex": 10,
+   "appendix_ledgers_P1.tex": 2,
+   "appendix_ledgers_P10.tex": 2,
+   "appendix_ledgers_P11.tex": 2,
+   "appendix_ledgers_P14.tex": 2,
+   "appendix_ledgers_P17.tex": 2,
+   "appendix_ledgers_SYN.tex": 2,
+   "appendix_ledgers_corpus.tex": 2,
+   "appendix_receipts_P01.tex": 1,
+   "appendix_receipts_P02.tex": 2,
+   "appendix_receipts_P03.tex": 23,
+   "appendix_receipts_P04.tex": 2,
+   "appendix_receipts_P05.tex": 3,
+   "appendix_receipts_P07.tex": 13,
+   "appendix_receipts_P08.tex": 3,
+   "appendix_receipts_P10.tex": 577,
+   "appendix_receipts_P11.tex": 7,
+   "appendix_receipts_P12.tex": 12,
+   "appendix_receipts_P13.tex": 6,
+   "appendix_receipts_P14.tex": 23,
+   "appendix_receipts_P15.tex": 229,
+   "appendix_receipts_P16.tex": 20,
+   "appendix_receipts_P17.tex": 5,
+   "appendix_receipts_corpus.tex": 972,
+   "boundary_paper.tex": 4,
+   "canonical_time.tex": 85,
+   "cosmogenesis_paper.tex": 39,
+   "dynamics_paper.tex": 2,
+   "geometric_core_paper.tex": 19,
+   "janzen_circle_v3.tex": 1,
+   "matter_sector_paper.tex": 3,
+   "modern_parallax.tex": 15,
+   "range_paper.tex": 1,
+   "shadow_of_existence.tex": 1,
+   "slicing_operator.tex": 2
+  },
+  "fails": []
+ },
+ {
+  "i": 16,
+  "receipt": "receipts/P10_canonical_time/P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping.py",
+  "site": "129:4",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2"
+  ]
+ },
+ {
+  "i": 17,
+  "receipt": "receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py",
+  "site": "403:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "3"
+  ]
+ },
+ {
+  "i": 18,
+  "receipt": "receipts/P14_matter_sector_paper/P14_the_lifts_own_measure_returns_the_same_three_quarters_so_the_removed_derivation_was_not_the_only_one.py",
+  "site": "158:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "3",
+   "4"
+  ]
+ },
+ {
+  "i": 19,
+  "receipt": "receipts/P14_matter_sector_paper/P14_the_lifts_own_measure_returns_the_same_three_quarters_so_the_removed_derivation_was_not_the_only_one.py",
+  "site": "190:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "3",
+   "4"
+  ]
+ },
+ {
+  "i": 20,
+  "receipt": "receipts/P14_matter_sector_paper/P14_the_propagating_three_is_inherited_and_the_pairing_fails_only_at_the_bound_energy.py",
+  "site": "297:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "3"
+  ]
+ },
+ {
+  "i": 21,
+  "receipt": "receipts/P14_matter_sector_paper/P14_the_stratifications_two_valued_data_are_one_involution_and_it_is_R.py",
+  "site": "207:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2",
+   "3"
+  ]
+ },
+ {
+  "i": 22,
+  "receipt": "receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py",
+  "site": "161:4",
+  "figs": [
+   "9.4"
+  ],
+  "base_rc": 0,
+  "result": "GREEN-ON-MOVE",
+  "touched": {
+   "appendix_receipts_P15.tex": 11,
+   "appendix_receipts_corpus.tex": 11,
+   "modern_parallax.tex": 1
+  },
+  "fails": []
+ },
+ {
+  "i": 23,
+  "receipt": "receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py",
+  "site": "162:4",
+  "figs": [
+   "9.4"
+  ],
+  "base_rc": 0,
+  "result": "GREEN-ON-MOVE",
+  "touched": {
+   "appendix_receipts_P15.tex": 11,
+   "appendix_receipts_corpus.tex": 11,
+   "modern_parallax.tex": 1
+  },
+  "fails": []
+ },
+ {
+  "i": 24,
+  "receipt": "receipts/P15_CR_cosmology/C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on.py",
+  "site": "351:0",
+  "figs": [
+   "185"
+  ],
+  "base_rc": 0,
+  "result": "GREEN-ON-MOVE",
+  "touched": {
+   "CR_cosmology.tex": 4,
+   "appendix_receipts_P15.tex": 43,
+   "appendix_receipts_corpus.tex": 43
+  },
+  "fails": []
+ },
+ {
+  "i": 25,
+  "receipt": "receipts/P15_CR_cosmology/P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_free_potential_amplitude_while_on_the_segments_own_branch_a_sound_speed_costs_a_tilt_equal_to_its_whole_exponent.py",
+  "site": "187:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2",
+   "3"
+  ]
+ },
+ {
+  "i": 26,
+  "receipt": "receipts/P15_CR_cosmology/P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_free_potential_amplitude_while_on_the_segments_own_branch_a_sound_speed_costs_a_tilt_equal_to_its_whole_exponent.py",
+  "site": "235:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2"
+  ]
+ },
+ {
+  "i": 27,
+  "receipt": "receipts/P15_CR_cosmology/P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_free_potential_amplitude_while_on_the_segments_own_branch_a_sound_speed_costs_a_tilt_equal_to_its_whole_exponent.py",
+  "site": "277:0",
+  "figs": [
+   "50"
+  ],
+  "base_rc": 0,
+  "result": "GREEN-ON-MOVE",
+  "touched": {
+   "BH_causality_v2.tex": 4,
+   "CR_cosmology.tex": 1,
+   "CR_framework.tex": 3,
+   "SdS-slicing-curve_v2.tex": 3,
+   "algebroid_paper.tex": 1,
+   "appendix_receipts_P01.tex": 1,
+   "appendix_receipts_P03.tex": 2,
+   "appendix_receipts_P04.tex": 3,
+   "appendix_receipts_P05.tex": 1,
+   "appendix_receipts_P10.tex": 15,
+   "appendix_receipts_P11.tex": 7,
+   "appendix_receipts_P12.tex": 4,
+   "appendix_receipts_P14.tex": 11,
+   "appendix_receipts_P15.tex": 12,
+   "appendix_receipts_P17.tex": 9,
+   "appendix_receipts_corpus.tex": 73,
+   "canonical_time.tex": 2,
+   "dynamics_paper.tex": 2,
+   "geometric_core_paper.tex": 6,
+   "groupoid_paper.tex": 3,
+   "janzen_circle_v3.tex": 3,
+   "matter_sector_paper.tex": 1,
+   "modern_parallax.tex": 1,
+   "range_paper.tex": 3,
+   "slicing_operator.tex": 3
+  },
+  "fails": []
+ },
+ {
+  "i": 28,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_bead_routes_damping_survives_on_the_squashed_layer_because_the_berger_harmonics_carry_no_squashing_and_the_spectrum_is_bounded_below_uniformly.py",
+  "site": "238:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2"
+  ]
+ },
+ {
+  "i": 29,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_bead_routes_damping_survives_on_the_squashed_layer_because_the_berger_harmonics_carry_no_squashing_and_the_spectrum_is_bounded_below_uniformly.py",
+  "site": "336:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2"
+  ]
+ },
+ {
+  "i": 30,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_exact_transmission_ratios_are_recomputed_and_the_offset_saturates.py",
+  "site": "150:0",
+  "figs": [
+   "3.3387380236"
+  ],
+  "base_rc": 0,
+  "result": "GREEN-ON-MOVE",
+  "touched": {
+   "appendix_receipts_P15.tex": 3,
+   "appendix_receipts_corpus.tex": 3
+  },
+  "fails": []
+ },
+ {
+  "i": 31,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py",
+  "site": "509:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2",
+   "6"
+  ]
+ },
+ {
+  "i": 32,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_laps_own_closure_is_a_translation_by_sqrt3_alpha_so_the_reflection_that_the_absolute_radius_implements_is_not_the_substrate_identification_and_the_two_agree_at_one_point_only.py",
+  "site": "113:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2"
+  ]
+ },
+ {
+  "i": 33,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py",
+  "site": "229:0",
+  "figs": [
+   "1e-12"
+  ],
+  "base_rc": 0,
+  "result": "NOT-IN-PAPER",
+  "touched": {},
+  "fails": []
+ },
+ {
+  "i": 34,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py",
+  "site": "260:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2"
+  ]
+ },
+ {
+  "i": 35,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py",
+  "site": "300:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2",
+   "3",
+   "6"
+  ]
+ },
+ {
+  "i": 36,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py",
+  "site": "357:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2",
+   "3",
+   "4"
+  ]
+ },
+ {
+  "i": 37,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py",
+  "site": "340:0",
+  "figs": [
+   "0.356",
+   "0.410",
+   "0.473",
+   "0.676"
+  ],
+  "base_rc": 0,
+  "result": "GREEN-ON-MOVE",
+  "touched": {
+   "appendix_receipts_P15.tex": 7,
+   "appendix_receipts_corpus.tex": 7
+  },
+  "fails": []
+ },
+ {
+  "i": 38,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_seam_limit_of_the_carried_layer_with_its_chi_block_is_prop_throats_ds2_times_s2_obtained_with_both_radii_read_off_the_flow.py",
+  "site": "324:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "8"
+  ]
+ },
+ {
+  "i": 39,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py",
+  "site": "183:0",
+  "figs": [
+   "1.5338"
+  ],
+  "base_rc": 0,
+  "result": "GREEN-ON-MOVE",
+  "touched": {
+   "appendix_receipts_P15.tex": 4,
+   "appendix_receipts_corpus.tex": 4
+  },
+  "fails": []
+ },
+ {
+  "i": 40,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_sky_phase_fit_and_its_uncertainty.py",
+  "site": "61:0",
+  "figs": [
+   "0.2404"
+  ],
+  "base_rc": 0,
+  "result": "RED-ON-MOVE",
+  "touched": {
+   "CR_cosmology.tex": 1,
+   "appendix_receipts_P15.tex": 1,
+   "appendix_receipts_corpus.tex": 1
+  },
+  "fails": [
+   "FAIL  ⓷ the paper quotes the fit and the comparison and NO uncertainty on phi/pi, so the sigma below is this receipt's own: the three figures it does print are parsed and reproduce",
+   "1 check(s) FAILED"
+  ]
+ },
+ {
+  "i": 41,
+  "receipt": "receipts/P15_CR_cosmology/P15_the_third_possibility_cannot_be_because_C21s_limit_is_taken_on_exactly_the_segment_the_lift_occupies_so_the_two_transfers_overlap_rather_than_compose.py",
+  "site": "224:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2",
+   "3"
+  ]
+ },
+ {
+  "i": 42,
+  "receipt": "receipts/P17_geometric_core_paper/P17_the_ledgers_entropy_is_the_de_sitter_readings_and_the_other_reading_has_a_number_but_not_an_entropy.py",
+  "site": "205:0",
+  "result": "NOT-PERTURBABLE",
+  "figs": [
+   "2",
+   "3"
+  ]
+ }
+]
