@@ -7972,3 +7972,38 @@ verdict because the FILE now opens the paper and the gate reads `READS-PAPER` of
 *One `open()` reclassified every site in the file.* Written into its row and the ceiling comment, and
 owed a read of its own. **Three repairs and a reclassification is not four repairs, and the record says
 so in both places a reader would look.**
+
+### `cc66.123` addendum — the `8ebe6a70` tolerance red is `Q1`'s child, and it points the **same** way, so it is not re-routed
+
+`scoped — the tolerance perturbation` failed on `8ebe6a70` (job `111357778031`), exit 2, on a head
+whose plain suite was green. Read rather than left to a newer green, because the scopes differ between
+heads and a flagged site would not necessarily be asked again.
+
+**The tolerance comparison flagged nothing** — `VERDICT: no site flagged`. Exit 2 is the
+unmeasured-receipt guard again, and this time the receipt is **`L_numerics/Q1`**, not
+`P15_expansion_law`: `VERDICT: 1 CHECK(S) FAILED, of 11 run`, with
+`P16_the_scalar_monodromy_is_four_pi_over_rho.py passes at its own tolerances` named beside it.
+
+**Measured here, same tree, `NODE=ci`:** `rc=0`, **11 `[ok]` checks and none failed** — *the same
+eleven CI ran*, so the two runs are comparable rather than two different statistics. Locally that
+check reads `rc=0  P16_the_scalar_monodromy_is_four_pi_over_rho.py` → `[ok] … got=0 want=0`.
+
+⇒ **So the failing check is the one whose condition is a CHILD receipt's exit code.** ⌗ *Labelled as
+an inference and not a measurement: I did not see the child's `rc` in the log, I identified the check
+by its text and read its condition from the local run. The inference is tight but it is an inference.*
+
+### And that is the class `r7047` closed, so it stays closed
+
+`r7047`: *"a child that runs in 40 s standalone and exceeds a cap in CI is the same object 70
+characterised across three readings… not a slow solve, an event"* — closed on a **stated limit**, with
+the instruction *"do not route it again unless a reading points the other way."*
+
+⇒ ***This reading points the SAME way: green standalone, the child failing only under CI.*** It is a
+fifth confirming reading of a finished item, and `r7047` is explicit that a confirming reading is a
+correction on a finished item rather than a reason to reopen one. **Recorded, not routed.** ⌗ *The
+tolerance job was green again on the next head (`d9f50809`), which is what the event class predicts and
+a stable numeric failure would not.*
+
+⚑ *Worth noting against `cc66.118`'s routing: this is the second distinct receipt whose CI-only failure
+was unreadable from the suite's own report, and in both cases the answer came from the job log. The
+case for raising the runner's FAIL tail is now two receipts wide, not one.*

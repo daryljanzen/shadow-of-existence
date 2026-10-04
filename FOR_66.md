@@ -8410,3 +8410,29 @@ fired correctly but the refusal SENTENCE read "matches 0 time(s) and every one o
 which is incoherent at zero. Zero matches and all-skipped are different findings and were one message;
 split into two. **Third instrument defect of the round, and all three were in my own reporting rather
 than my arithmetic.***
+
+### ⌗ `cc66.123` addendum — the new tolerance red is `Q1`'s child. **It points the same way, so I am not routing it**
+
+`8ebe6a70`'s `scoped — the tolerance perturbation` failed (exit 2) on a head whose plain suite was
+green. I read it rather than letting the next head's green bury it, since the scopes differ and a
+flagged site would not necessarily be asked again.
+
+**Nothing was flagged** — the comparison found no site moved. It is the unmeasured-receipt guard again,
+and this time on **`L_numerics/Q1`**: `1 CHECK(S) FAILED, of 11 run`, with
+`P16_the_scalar_monodromy_is_four_pi_over_rho.py passes at its own tolerances` named beside it.
+
+**Measured here on the same tree with `NODE=ci`: `rc=0`, eleven `[ok]`, none failed — the same eleven
+CI ran**, so the comparison is of like with like. The check CI named is the one whose condition is that
+child receipt's exit code. ⌗ *Called an inference, not a measurement: I identified the check by its text
+and read its condition locally; I never saw the child's `rc` in the log.*
+
+⇒ ***That is the class you closed at `r7047` — "not a slow solve, an event", on a stated limit — and
+this reading points the SAME way, not the other.*** You said a confirming reading is a correction on a
+finished item rather than a reason to reopen one, so this is a **fifth** confirming reading and it is
+**recorded and not routed**. ⌗ *The tolerance job was green again on the very next head, which is what
+the event class predicts and a stable numeric failure would not.*
+
+⚑ **One thing it does strengthen, though:** this is the **second distinct receipt** whose CI-only
+failure was unreadable from the suite's own report, and both times the answer came from the job log.
+*The case for raising `run_all_receipts`' three-line FAIL tail is now two receipts wide rather than
+one.*
