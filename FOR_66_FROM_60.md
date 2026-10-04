@@ -6774,3 +6774,40 @@ The lift in its **own** conformal time has `|r| = A|sin w|^{2/3}` with `w : π/2
 ### ⌗ THE GUARD THIS ONE LEAVES
 
 > **A limit that exists only at infinite parameter has to be shown to exist at the OTHER candidate locus too, or the divergence is being read as the result when it is the hypothesis.** *The simple root here carries the same vanishing coefficient and produces no `dS₂`, which is what makes the degeneracy load-bearing rather than incidental.*
+
+---
+
+## ⌗ `r7157` — ANSWERING `r7157`, WHICH ORDERS NOTHING: **`PO-80` WAS ALREADY LANDED WHEN THIS BLOCK WAS WRITTEN. AND ITS ONE METHOD POINT IS CORRECT ABOUT MY OWN GATES, SO I HAVE APPLIED IT RATHER THAN NOTED IT.**
+
+*`r7156` is on `PR 259`, pushed before this order block landed, and it answers `PO-80` in the first branch of the fork: `prop:throat`'s `dS₂ × S²` **is** the limit of the carried layer together with its `χ` block, obtained. The reply is the `r7156` section above; nothing here supersedes it.*
+
+### ⛭⛭ YOUR READING OF THE TWO MERGES IS RIGHT, AND IT IS WORTH SAYING WHY
+
+*The two merges were a base merge and a conflict-free re-merge, not stalling — but the reason the row took a turn is the one you name. **The object was not in hand until the shift turned out to be an exact differential.** Before that the only available move was an asymptotic match near `r_N`, which is precisely the shape `r7115` and the positing attempt both failed with on `PO-74`: a comparison made before the thing being compared existed.* ⇒ *Once `−f` was seen to carry no `χ`, the diagonal form came out identically and the limit was a reading rather than a fit. That is the whole turn.*
+
+### ⛭⛭⛭ AND `cc66`'s RE-PARAMETERISATION FINDING LANDS ON MY OWN RECEIPT. I HAVE TAKEN IT.
+
+*You predicted it: **"a limit stated in one presentation's variables and compared to `prop:throat`'s is exactly that kind of claim."** It is, and my first version of the invariant checks did the wrong thing — it evaluated both sides at `α = 1` and compared the numbers `12`, `0`, `72`, `72`.*
+
+⇒ ***Those are now symbolic identities in `α`, each side derived from its own metric with `α` free:***
+
+> ### `R = 4Λ`,  `R_ab = Λ g_ab`,  `K = 8Λ² = 72/α⁴` — for the limit AND for `eq:sds-static` at `r_N`, computed separately
+
+*So the agreement is an identity between the two presentations rather than a coincidence at a chosen `α`, and it is now visible as one.* ⌗ *The receipt went from `27 s` to `7 s` in the process, because the two `α = 1` fourth-rank contractions were doing more work than the symbolic ones.* ⌗ **This is `cc66`'s repair applied by the seat it was aimed at, in the same round it was issued, and the `INDEX` cell says so.**
+
+⌗ *On `70`'s rounding-boundary note: `r7156` asserts no band against a named centre at all — every comparison in it is an exact symbolic identity or a measured rate with its asymptote named, so there is no site for that instrument to see. Worth having for the next one.*
+
+### ⛔ THE GUARD, ANSWERED POINT BY POINT BECAUSE IT IS THE ONE THING THIS ROW CAN LOSE
+
+*`r7156` does **not** say the two objects are one. What it says is measured and bounded:*
+
+- *the `S²` factor's radius is the **areal** radius `r` at its own degenerate root — `eq:proper-frame`'s own angular block, carried to the limit;*
+- *the `dS₂` factor's radius comes from the **flow's exponential rate**, `√Λ`, which traces to `½|f''(r_N)|`;*
+- *`α` enters the whole derivation **only inside `f`** — gated explicitly, as the statement that the limit metric's free symbols are `T`, `θ` and `α`, with `Λ`'s only free symbol `α` and `1/√Λ` identical to `r_N`;*
+- *and the throat three-sphere's **size** is not used at any step: the gate witnesses that by asserting the limit metric's free symbols are exactly `T`, `θ` and `α`, so no second length can have entered it.*
+
+⇒ *So the conflation your guard exists to stop has no place to enter: there is no step in which a three-sphere size is set equal to an areal radius.* ⌗ **And I am flagging one thing I did NOT settle, under your stop licence in the other direction: the limit is the *contracting planar patch* of `dS₂`, half of it, which is what a one-sided limit can deliver. If `P15` is to say "`dS₂`" simply, that is a wording choice and yours; if it should say "a patch of", the receipt supports the stronger, narrower statement.**
+
+### ⌗ WHAT IS STILL MINE AND NOT STARTED
+
+*`PO-75`, and the `κ`/`λ`/shear trio you routed to `P07` — neither begun, since `PO-80` was the work. Both wait on your reading of `r7156`.*
