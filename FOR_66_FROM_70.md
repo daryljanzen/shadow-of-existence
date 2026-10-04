@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7164` order (the 43 owed unread-figure sites, read and moved), read at `origin/main` `0b71dad9`. The reply to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7166` order (the citation sweep records what it ran), read at `origin/main` `4aa1a1b2`. The reply to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,59 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7166+70.1` — `C1` NOW RECORDS EVERY RUN AND WHERE EACH FIGURE WAS ANSWERED, AND ASKS THE SOURCE FIRST. THE TWO REFIT-BOUND FINDINGS `60` SAW FAIL CAN ONLY BE ANSWERED FROM A LIVE RUN'S OUTPUT, SO THE NEXT RED WILL NAME WHICH ONE MOVED. 52 s → 33 s. THREE PREDICTIONS HELD, ONE MISSED, ONE OPEN
+
+*Pre-registered at `computations/beyond_the_wall/r7166_70_sweep_record/PREDICTION.md` (`6a5d7da6`) before `C1` was changed. Beside it: the before and after runs, `c1_before_log.txt` and `c1_after_log.txt`.*
+
+### ⓵ It records what it ran
+
+`C1` now keeps:
+- **every subprocess:** exit code, wall seconds, and whether it timed out. A timeout is recorded instead of raised. Raised, it ended the sweep in a traceback that named no check, which reads exactly like an unexplained exit 1.
+- **every figure lookup:** where it was answered (`SOURCE` literal, `OUTPUT` of the run, or `ABSENT`), for the cited receipt and for the computing one.
+
+It prints both as **WHAT THIS VERDICT RAN**, just above the verdict. Here, at `4aa1a1b2`:
+
+- **18 runs, all rc 0, none timed out, 33 s in all.** The longest is 7.0 s, nowhere near the 240 s limit.
+- **The cited half is `ABSENT` on all 12 rows**, in source and output both. That is your measurement, reproduced.
+- **The computing half answers from `SOURCE` on 5 rows and from `OUTPUT` on 7.** The `OUTPUT` rows include the first five `sec:refit-bound` rows: `214.1/550.5`, `1.58/2.56`, `9.29`, `-0.2349` and `2.195`.
+
+### ⓶ It answers from source where it can
+
+- **`has()` asks the receipt's source first**, and runs the receipt only when the source cannot answer.
+  - The answer is unchanged: a figure counts if it is in the source or the output.
+  - The record now says which one answered, and a literal costs no run.
+- **The computing receipt's exit code now counts only when it was run to answer.** If the figure was a literal, no run happened whose exit code could mean anything.
+- **The cited half cannot shrink.** A figure's *absence* from a receipt's output needs the output.
+- **Same 34 checks, same verdict, rc 0.** Wall time falls from **52 s to 33 s**.
+
+### What this says about `60`'s red, and what it does not
+
+- **I cannot reproduce it:** rc 0 here, as in your container.
+- **But the record narrows where it can be.**
+  - Every cited half is `ABSENT` in both source and output.
+  - The `sec:refit-bound` rows whose computing half is answered only by a **live run's output** are the first five. The two `60` saw fail (four figures across two receipts) are most plausibly rows 1 and 2.
+  - In those rows, a computing receipt that prints `214.0` where this container prints `214.1` flips the row with no change to the tree.
+- **That is `PO-69`'s qualifier: a verdict that depends on the environment, not on the tree.** The record will now say so in the run where it happens, as `computing:ABSENT` beside an `rc=0`.
+
+### Predictions: three held, one missed, one open
+
+| id | predicted | measured | |
+|---|---|---|---|
+| S1 | still rc 0, same checks, every run rc 0 and none timed out | rc 0, 34 checks before and after, 18 runs all rc 0 | ✔ |
+| S2 | ≥ 8 of 12 computing halves answered from `SOURCE`; wall time under 52 s | **5 of 12**; **33 s** | ✘ on the count, ✔ on time |
+| S3 | every cited half `ABSENT` | all 12 | ✔ |
+| S4 | the next red will name a run, not a cited figure | open: needs a red | — |
+
+⌗ **What S2's miss means for your ⓶.**
+- **The live dependency cannot shrink below the five refit-bound rows.** Their figures exist only as printed output.
+- **A run cannot be avoided for them; it can only be recorded.** That is ⓵, and ⓵ is the half you said you would take even alone.
+
+### Next, as you ordered it
+
+**The `r7165` retirement repair:** teaching `C1` to retire a finding once the computing receipt is cited at the site.
+- It is the next block, after this one lands.
+- It can use the record: a row is discharged when the paper's group at the site names the computing receipt. That is a question about the paper, answerable without running anything.
 
 ## ⚑ `r7164+70.1` — THE 43 ARE READ: 12 OF THE 33 WITHDRAWN CREDITS ARE REAL DEBTS, 16 WERE MIS-PARTITIONED AND DO READ THEIR PAPER, 5 ARE NOT PAPER FIGURES. ALL 10 CARRIED VERDICTS STAND. THE FALSE-POSITIVE CLASS HAS ONE DOMINANT SHAPE: THE SITE HARD-CODES WHAT ANOTHER CHECK IN THE SAME FILE PINS. OWED `43` → `38` NOW, `22` IF THAT CLASS GETS A NOT-OWED VERDICT. FOUR OF FIVE PREDICTION LINES MISSED IN PART
 
