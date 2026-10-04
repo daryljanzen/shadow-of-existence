@@ -9,8 +9,8 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #256**, draft) — nothing waits on the chat window.*
-⌗ *PR #223, #236, #240, #246 and #249 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #261**, draft) — nothing waits on the chat window.*
+⌗ *PR #223, #236, #240, #246, #249 and #256 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
@@ -5443,6 +5443,45 @@ PINNED = {'systematic uncertainty': 1}
 ⇒ ***I reported that wrong reading before re-running it, and only re-running caught it.*** ⌗ *The rule it breaks is one I already hold: an exit code from a compound shell is not a measurement of the thing at the end of the pipe. Recorded rather than quietly fixed, because I would have routed a false "red on main" to you.*
 
 *Posted on #256 as `#issuecomment-5972507213`.*
+
+---
+## ⛑ `r7157` IN FLIGHT — **`9` OF THE `17` REPAIRED AND THE GATE MOVED `50` → `41`. AND MY OWN `17` WAS OPTIMISTIC: `ANCHORED` MEASURED WHETHER THE PAPER DEFINES THE LABEL, NOT WHETHER THE THING ATTRIBUTED IS A PARSEABLE EXPRESSION.**
+
+*`corpus/paper_formula.py` is `r7153`'s template at the next size up — **an EXPRESSION in a labelled equation instead of a number in a sentence** — and it keeps `r7153`'s own control: the label must occur **exactly once** in the paper, since an attribution to a label carried twice is not an attribution.*
+
+### ⌗ WHAT LANDED
+
+| | |
+|---|---|
+| repaired | **9 of 17** — `P08` ×6 (`eq:E1`, `eq:rho-B`, `eq:Ttt`, `eq:Ttheta`, `eq:vacode`, `eq:Ek`), `P09` `eq:deltadecomp`, `P11` `eq:mukhanov`, `P15` `eq:amplitude` |
+| `check_unread_figure` | **OWED `50` → `41`**, `FORMULA` `31` → `22`; 9 rows retired, 1 added |
+| all 9 sites | left `NO-READ` — *the receipts open the paper now*; `P08_trichotomy` returns as `READS-PAPER/REPORTED` |
+| ceiling | **left at `50`.** It is `70`'s, the block is not closed, and transient slack is not headroom |
+| validation | 7 receipts green, identical hashes across `PYTHONHASHSEED` `0`/`99`, fast job green |
+
+### ⛔ THE CORRECTION, AND IT IS AGAINST MY OWN FEASIBILITY NUMBER
+
+*`r7157` valued the measurement for finding that a third of the block needed a different instrument. **The measurement was right about that and wrong about the rest**, and the honest reach is:*
+
+| | sites | why |
+|---|---|---|
+| **parse as equations** | **9** | done |
+| ⛔ **refused by the dialect** | **4** | `eq:dscont`, `eq:rate`, `eq:omega-ratio` raise a FUNCTION TO A POWER — `cosh^2\psi`, `coth^2(\cdot)`, `csch^2(\cdot)` — and `f^n(x)` is ambiguous; `eq:separated` applies `\Delta_r''` to an argument. ⌗ *`eq:dscont` is also a metric line element, not algebra at all* |
+| **`sec:` anchors, not equations** | **4** | `P07`/`P17` `sec:ledger`, `P10` `sec:lock`, `T50` `sec:deck` — these want `r7153`'s **sentence** parse, which is the original template and still applies |
+
+⇒ ***So `ANCHORED` answered "does the paper define this label", and I reported it as if it answered "can the attributed object be parsed". Two questions.*** *The `17` is right as an anchor count and wrong as a parse count; the parse count is `9`, with `4` more reachable by the sentence template and `4` needing a hand read.*
+
+### ⚑ THE THREE GUARDS, AND NOT ONE OF THEM WAS ANTICIPATED — EACH IS A MISTRANSLATION IT ACTUALLY MADE
+
+1. ***A function raised to a power.*** *`\coth^2(x)` became `coth**2 * (x)`. **A silent wrong answer over the right symbols**, which is the one outcome that would make a receipt agree with a paper it had misread. Refused now.*
+2. ***Function application of a non-function.*** *`\Delta_{r}''(r)` became `Delta_rpp * r` — **a product where the paper has an application**. ⛔ *The strict check could NOT see it, because both names were declared: it returned a plausible expression over the right symbols and the wrong operation.* **Found by reading the parse, not by any assertion** — which is why it is a guard and not a note.*
+3. ***Strict naming*** *— every free symbol must have been supplied. ⛔ **And its first version was wrong**: it compared against the dict's KEYS, so it refused two sites the dialect carries correctly, because a caller may map a paper's name to an **expression** (`f_SdS` is a whole metric function; `t` is `P11`'s `eta`). Fixed to count everything reachable from the supplied values. ⌗ The guard caught my translator twice and the paper never.*
+
+⌗ *And `check_loaders` caught a duplicate `\psi` key in my own `_NAMES` dict, where the later entry would have silently won and an edit to the first been discarded at load. **Three of my own defects found by this corpus's own gates in one block.***
+
+### ⌗ WHAT IS LEFT, AND THE ORDER OF IT
+
+*The `4` `sec:` sites next, on `r7153`'s sentence template. Then the `4` refused, read individually and named rather than absorbed, as you asked. **The distribution goes in once when the `17` close**, not here.*
 
 ---
 ## ⛔⛔ `L-251`'s `N1` CAUGHT A CONVENTION BREACH OF MINE, AND MEASURING IT SHOWS IT IS NOT A SLIP — **`42` OF MY `217` COMMITS. AND IT EXPOSES WHAT THAT GATE CANNOT SEE.**

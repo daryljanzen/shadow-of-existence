@@ -7524,3 +7524,37 @@ Earliest is `r6959`. ⇒ **A standing inconsistency, not one mistyped subject:**
 ⌗ **And it is a finding about the gate too.** `N1` reads only unmerged commits — correct for its purpose, since those are the only numbers still changeable. **But that means a breach which is always merged promptly is invisible exactly in proportion to how well the line is working.** Mine fired once, reading `1 out of band`, against a true rate of 42. The same shape as the ordering gap: an instrument blind at the moment it matters, for a defensible reason.
 
 ⌗ I am **not** proposing a change to `N1` — a merged revision number genuinely cannot be fixed, so widening its window would only produce a permanent red. The measurement is the deliverable; my side of the fix is mechanical, and the 42 stand in the history as they are.
+
+## cc66.115 — `r7157` in flight: 9 of the 17 anchored sites repaired, `check_unread_figure` OWED 50 → 41. And my own `17` was optimistic — `ANCHORED` measured whether the paper defines the label, not whether the attributed object is a parseable expression
+
+`corpus/paper_formula.py` is `r7153`'s template at the next size up — **an expression in a labelled equation instead of a number in a sentence** — keeping `r7153`'s control: the label must occur **exactly once**, since an attribution to a label carried twice is not an attribution.
+
+| | |
+|---|---|
+| repaired | **9 of 17** — `P08` ×6 (`eq:E1`, `eq:rho-B`, `eq:Ttt`, `eq:Ttheta`, `eq:vacode`, `eq:Ek`), `P09` `eq:deltadecomp`, `P11` `eq:mukhanov`, `P15` `eq:amplitude` |
+| `check_unread_figure` | **OWED 50 → 41**, `FORMULA` 31 → 22; 9 rows retired, 1 added |
+| effect | all 9 left `NO-READ` — the receipts open the paper now; `P08_trichotomy` returns as `READS-PAPER/REPORTED` |
+| ceiling | **left at 50** — it is 70's, the block is not closed, and transient slack is not headroom |
+| validation | 7 receipts green, identical hashes across `PYTHONHASHSEED` 0/99, fast job green |
+
+### ⛔ The correction, against my own feasibility number
+
+| | sites | why |
+|---|---|---|
+| parse as equations | **9** | done |
+| ⛔ refused by the dialect | **4** | `eq:dscont`, `eq:rate`, `eq:omega-ratio` raise a **function to a power** (`cosh^2ψ`, `coth^2(·)`, `csch^2(·)`) and `f^n(x)` is ambiguous; `eq:separated` applies `\Delta_r''` to an argument. `eq:dscont` is also a metric line element, not algebra |
+| `sec:` anchors, not equations | **4** | `P07`/`P17` `sec:ledger`, `P10` `sec:lock`, `T50` `sec:deck` — these want `r7153`'s **sentence** parse |
+
+⇒ **`ANCHORED` answered "does the paper define this label"; I reported it as if it answered "can the attributed object be parsed".** The 17 is right as an anchor count and wrong as a parse count: the parse count is 9, with 4 more reachable by the sentence template and 4 needing a hand read.
+
+### ⚑ Three guards, none anticipated — each is a mistranslation the translator actually made
+
+1. **A function raised to a power.** `\coth^2(x)` became `coth**2 * (x)` — a silent wrong answer over the right symbols, the one outcome that would make a receipt agree with a paper it had misread. Refused now.
+2. **Function application of a non-function.** `\Delta_{r}''(r)` became `Delta_rpp * r` — a product where the paper has an application. ⛔ The strict check **could not see it**, because both names were declared: it returned a plausible expression over the right symbols and the wrong operation. **Found by reading the parse, not by any assertion.**
+3. **Strict naming** — every free symbol must be supplied. ⛔ Its first version compared against the dict's **keys**, so it refused two sites the dialect carries correctly, because a caller may map a paper name to an **expression** (`f_SdS` is a metric function; `t` is `P11`'s `eta`). Fixed to count everything reachable from the supplied values.
+
+⌗ And `check_loaders` caught a duplicate `\psi` key in my own `_NAMES` dict, where the later entry would have silently won. **Three of my own defects found by this corpus's gates in one block**, and the guards caught the translator twice while the papers were never at fault.
+
+### What is left
+
+The 4 `sec:` sites next, on `r7153`'s sentence template; then the 4 refused, read individually and **named rather than absorbed**. The distribution goes in once when the 17 close.

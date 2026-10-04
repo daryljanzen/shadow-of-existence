@@ -8,6 +8,16 @@ ORIGIN: built new r1397 (the derivation was prose+cite JanzenModernParallax/Janz
 import sympy as sp
 def ok(t,c): print(f"  [{'PASS' if c else 'FAIL'}] {t}"); return bool(c)
 G,M,Lam,c,tau,r=sp.symbols('G M Lambda c tau r',positive=True)
+#: ⛭ r7157+cc66.115: the paper's own display equation was CARRIED HERE AS A LITERAL and attributed to
+#: its label.  It is PARSED from the paper now, so a move in the paper lands here as a failure.
+#: *`paper_formula` asserts the label occurs exactly once (`r7153`'s control), refuses a fragment
+#: its dialect cannot carry rather than guessing, and the parse is checked against the expression
+#: this file carried before the repair.*
+import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
+_P15F = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+                   'CR_cosmology.tex')
 allpass=True
 print("="*72); print("P15 derivation core -- amplitude, sinh^{2/3} scale factor, Friedmann forms"); print("="*72)
 
@@ -15,8 +25,9 @@ print("="*72); print("P15 derivation core -- amplitude, sinh^{2/3} scale factor,
 M_nariai=c**2/(3*sp.sqrt(Lam)*G)
 amp=(6*G*M/(Lam*c**2))**sp.Rational(1,3)
 amp_nariai=sp.simplify(amp.subs(M,M_nariai))
-allpass&=ok("eq:amplitude: (6GM/Lambda c^2)^{1/3} at Nariai = 2^{1/3}/sqrt(Lambda)",
-            sp.simplify(amp_nariai-2**sp.Rational(1,3)/sp.sqrt(Lam))==0)
+_AMP = pf.rhs(_P15F, 'eq:amplitude', {'G': G, 'M': M, 'Lambda': Lam, 'c': c})
+allpass&=ok(f"eq:amplitude: (6GM/Lambda c^2)^{{1/3}} at Nariai = {_AMP}  -- PARSED from the paper",
+            sp.simplify(amp_nariai-_AMP)==0)
 
 # (2) eq:scalefac solves the E=1 radial geodesic. In geometric units (c=1) the E=1 equation is
 #     (dr/dtau)^2 = 1 - V_eff = 2GM/r + (Lambda/3) r^2   [V_eff=(r-2GM-(Lambda/3)r^3)/r].

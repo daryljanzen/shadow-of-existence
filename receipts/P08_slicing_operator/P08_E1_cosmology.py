@@ -14,11 +14,21 @@ LEVEL: GENERATES L1.  The stacking rate is obtained by dividing the E=1 geodesic
   to GET the rate; coth^2 = 1 + csch^2 splits the already-derived rate and only then is the remainder
   NAMED 8pi rho/3.  The cut is primary and rho the name of its bend -- the leftward reading, in code.
 """
+import os, sys
 import sympy as sp
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
 def check(t,c): print(f"  [{'PASS' if c else 'FAIL'}] {t}"); return bool(c)
 ok=True
 r,tau,M,al,E,Lam = sp.symbols('r tau M alpha E Lambda', positive=True)
 f = 1 - 2*M/r - r**2/al**2
+#: ⛭ r7157+cc66.115: `eq:E1`'s right-hand side was CARRIED HERE AS A LITERAL and attributed to
+#: the paper in the label.  It is now PARSED from `slicing_operator.tex`'s own display equation, so a
+#: move in the paper lands here as a failure instead of leaving this file quietly disagreeing with it.
+#: *`paper_formula.equation` asserts the label occurs exactly once, which is `r7153`'s own control.*
+_P8 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+                   'slicing_operator.tex')
+_E1 = pf.rhs(_P8, 'eq:E1', {'r': r, 'M': M, 'alpha': al})
 print("="*70); print("P08 E=1 cosmology (radial SdS geodesic -> flat-LCDM scale factor)"); print("="*70)
 # (1) geodesic: E=f dt/dtau conserved; timelike normalization -> (dr/dtau)^2 = E^2 - f
 tdot = E/f                                      # from E = f dt/dtau
@@ -29,12 +39,13 @@ rdot2_sol = sp.solve(norm, rdot2)[0]
 ok&=check("(dr/dtau)^2 = E^2 - f  (from E=f dt/dtau + timelike normalization)", sp.simplify(rdot2_sol-(E**2-f))==0)
 # (2) E=1 -> (dr/dtau)^2 = 2M/r + r^2/alpha^2
 e1 = sp.simplify((E**2-f).subs(E,1))
-ok&=check("E=1: (dr/dtau)^2 = 2M/r + r^2/alpha^2  (eq:E1)", sp.simplify(e1-(2*M/r+r**2/al**2))==0)
+ok&=check(f"E=1: (dr/dtau)^2 = {_E1}  -- `eq:E1` AS THE PAPER PRINTS IT, parsed and not retyped",
+          sp.simplify(e1-_E1)==0)
 # (3) the scale factor solves eq:E1
 r_tau = (2*M*al**2)**sp.Rational(1,3)*sp.sinh(3*tau/(2*al))**sp.Rational(2,3)
 drdt = sp.diff(r_tau, tau)
 lhs = sp.simplify(drdt**2)
-rhs = sp.simplify((2*M/r+r**2/al**2).subs(r, r_tau))
+rhs = sp.simplify(_E1.subs(r, r_tau))
 ok&=check("r(tau)=(2M a^2)^{1/3} sinh^{2/3}(3 tau/2a) solves (dr/dtau)^2=2M/r+r^2/a^2", sp.simplify(lhs-rhs)==0)
 # (4) Friedmann readout: H^2 = (dr/dtau)^2/r^2 = 2M/r^3 + 1/alpha^2 = (Lambda/3) coth^2(...) with a^2=3/Lambda
 H2 = sp.simplify(drdt**2/r_tau**2)
