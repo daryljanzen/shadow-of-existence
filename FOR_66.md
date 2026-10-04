@@ -8833,3 +8833,43 @@ with all 16 receipts re-run to show it); the `\dot` guard admitting `\dot{(ab)}`
 messages describing the wrong condition. ⇒ ***Four were in the reporting and two in the logic. Every
 one was found by testing the instrument against the next site before using it there, and not one by a
 paper.***
+
+## ⛔⛔⚑ `cc66.133` — **`G50` AND `G51` ARE MUTUALLY INCOMPATIBLE UNDER PARALLEL EXECUTION**, and `G50` has been detecting the race all along
+
+*`7016753e`'s tolerance job, exit 2, nothing flagged — and the unmeasured receipt is **not**
+`P15_expansion_law` this time:*
+
+> `FAILED: the runner's stamp does not match the digest computed here`
+
+**That is `G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry`** — the receipt whose
+whole job is to recompute `TREE-DIGEST`, *"a hash of everything a receipt can READ"*, and compare it
+against the runner's stamp.
+
+⇒ ***So a second receipt, built to detect the tree moving, has been detecting it.*** ⌗ *Ruled out
+first: `sweep_tolerances` writes only logs and a temp seed under `tmp` — it never edits a tracked
+source — so a digest mismatch means the tracked tree genuinely differed between the stamp and the
+recomputation.* **`G51` seeding `P15_expansion_law.py` is exactly such a mutation.**
+
+### ⛭ And this is the sharpest statement of the finding I have
+
+**`G51` mutates a tracked file during the run. `G50` asserts that no tracked file moves during the
+run.** ⇒ ***The two cannot both pass reliably in the same parallel run — they are incompatible by
+design, and whether they collide on a given run is a scheduling coincidence.*** *Which is precisely why
+it has read as a flake for days: the collision is intermittent, but the incompatibility is not.*
+
+⌗ **Three independent instruments have now reported this one cause:**
+* `P15_expansion_law`'s own diagnostic — `Hc=3/4` with `H2r=1/3`, the seeded coefficient;
+* `red_carry`'s ledger — `⚠ CONTRADICTED`, carried 7 / cleared 4 on **four lines including `main`**;
+* and `G50` — a digest mismatch, from a receipt built for nothing else.
+
+⇒ *The first took the whole round to read. The third was in the tree the entire time, failing, and its
+message says exactly what happened.*
+
+### ⛔ Still routed and still not mine
+
+I have changed neither receipt beyond `G51`'s anchor. ⌗ *And the choice is narrower than it looked: it
+is not "make `G51` safer" but **"decide which of two receipts is allowed to be true during a parallel
+run"**. Either the runner serialises a mutating receipt, or `G50`'s claim has to be scoped to exclude
+the window in which `G51` holds a seed. **The second would weaken the only detector the corpus has for
+this class, so my reading is that the runner should serialise — but it is the shared instrument's call
+and I am not taking it.***

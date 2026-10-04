@@ -8345,3 +8345,34 @@ evidence is being reaped at roughly the rate it accumulates.*
 
 ⇒ *No action: the cause is established, the check is already named once on the PR, and the two newer
 heads (`5717e5f6`, `1f1513b6`) are green.*
+
+---
+
+## ⛔⛔ `cc66.133` — `G50` and `G51` are **mutually incompatible under parallel execution**
+
+`7016753e`'s tolerance job: exit 2, nothing flagged, and the unmeasured receipt is **not**
+`P15_expansion_law` — it is **`G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry`**:
+
+> `FAILED: the runner's stamp does not match the digest computed here`
+
+`G50` recomputes `TREE-DIGEST` — *"a hash of everything a receipt can READ"* — and compares it to the
+runner's stamp. ⌗ *Ruled out first: `sweep_tolerances` writes only logs and a temp seed under `tmp`,
+never a tracked source.* ⇒ **The mismatch means the tracked tree genuinely moved between the stamp and
+the recomputation, and `G51` seeding `P15_expansion_law.py` is exactly that.**
+
+### The statement of the finding
+
+**`G51` mutates a tracked file during the run; `G50` asserts no tracked file moves during the run.**
+⇒ *They cannot both pass reliably in one parallel run — incompatible by design, colliding by
+scheduling coincidence.* **That is why it reads as a flake: the collision is intermittent, the
+incompatibility is not.**
+
+⌗ **Three independent instruments, one cause:** the receipt's own diagnostic (`Hc=3/4`, `H2r=1/3`);
+`red_carry`'s `⚠ CONTRADICTED` on four lines including `main`; and `G50`'s digest mismatch. *The first
+took the whole round to read. The third was in the tree the entire time, failing, with a message that
+says exactly what happened.*
+
+⇒ **Routed, not taken.** The choice is narrower than it looked: not "make `G51` safer" but *which of
+two receipts is allowed to be true during a parallel run*. Scoping `G50`'s claim would weaken the only
+detector the corpus has for this class, so serialising the mutating receipt is the better reading —
+but it is the shared instrument's call.
