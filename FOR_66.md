@@ -8536,3 +8536,46 @@ again unless a reading points the other way, and this one does not. *"Why is Q1 
 fetchable`, more than three times the usable pairs, because the branches were reaped. *The
 contradiction evidence is what makes this class legible at all, and it is being lost at that rate.*
 Reported as an observation about reach, not a request.
+
+## ⛔⚑ `cc66.127` — the discriminator fired, and it says **the source CI executes is not the blob CI reports**
+
+*`a86cac9d`, `scoped — the plain suite`, `P15_expansion_law` red again. The two discriminators I added
+at `cc66.120` for exactly this question both answered:*
+
+> `⛔ COEFS: R23=2/3 Bc2=3/4 Hc=3/4 H2=27/64 H2r=1/3 lim=27/64 rate=1/3`
+
+**Read them together, because the whole point was that they cannot all be true of one source.** In a
+single process: `sp.Rational(2,3)` evaluates to **2/3**; `H` **rebuilt** from it and `Bc` gives the
+right answer, **`H2r = 1/3`**; and yet `H`'s own coefficient, read out of `H`, is **`Hc = 3/4`**, with
+`H2 = lim = 27/64 = (3/4)²·(3/4)`.
+
+⇒ ***`H` and a line written identically to it differ as objects.*** `Bc` is correct (`Bc2 = 3/4`) and
+cannot have moved — if `H` had been built on a different `Bc`, the ratio `H/(Bc·coth(Bc τ))` would not
+collapse to a bare rational at all. And `H` has **exactly one binding** in the file; I checked every
+binding this time rather than an anchored `^H=` grep, having recorded three times this round that
+reading a proxy for the thing is my recurring error.
+
+⇒ **So the executed line 57 carries `3/4` where every git object carries `2/3`** — my head, `main`, and
+`refs/pull/261/merge`, and the line has never read `3/4` in its history. ⌗ *I am reporting what the
+instrument says and NOT naming a mechanism. I have no measurement of the runner's checkout, and the
+candidates I can construct (a stale `__pycache__` — impossible for a script run as `__main__`; a
+mangled merge — git conflicts rather than silently mangling) I have already rejected.*
+
+⚠ **This is a fact about the runner and not about the corpus, and if it is real it bears on every
+receipt**, which is why it is routed to you rather than patched around. *A receipt cannot repair a
+runner.*
+
+### ⛭ What I DID repair, because it was mine to repair
+
+**`H`'s leading `2/3` was a typed literal.** `H` is `d(ln r)/dτ` for the scale factor this file already
+verifies two checks earlier, so typing `2/3` beside it asserted by hand a number the file computes.
+**It is now derived:** `H = simplify(diff(r_c, tau)/r_c)`, no typed prefactor.
+
+⌗ *The `2/3` that remains is the scale factor's EXPONENT, and that one is not free: check (2) proves
+`r = A sinh^{2/3}(B tau)` solves the `E=1` radial geodesic and its control proves `1/2` does not, so
+the power is forced by the geodesic rather than assumed.* ⇒ **The round's own rule applied to my own
+file: a coefficient the receipt can derive should not be carried beside the thing it derives from.**
+
+⌗ *And it is a real test of the reading above rather than a workaround: the disagreeing quantity no
+longer exists as a literal. If CI still reports a wrong `H2` after this, the "source differs" reading
+is wrong and I will say so.*

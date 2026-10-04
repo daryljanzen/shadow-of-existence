@@ -8118,3 +8118,36 @@ different one, it is node 70's instrument, and the routing call is 66's.*
 unusable pairs as usable ones, because the branches were deleted. ⇒ *The contradiction evidence is the
 thing that makes this class legible, and it is being lost at that rate as lines are reaped.* Reported
 as an observation about the instrument's reach, not as a request.
+
+---
+
+## ⛔ `cc66.127` — the discriminator answered: **`H` and a line written identically to it differ as objects in CI**
+
+`a86cac9d`, `P15_expansion_law`:
+
+> `⛔ COEFS: R23=2/3 Bc2=3/4 Hc=3/4 H2=27/64 H2r=1/3 lim=27/64 rate=1/3`
+
+In one process: `sp.Rational(2,3)` → **2/3**; `H` **rebuilt** from it and `Bc` → **`H2r = 1/3`**,
+correct; `H`'s own coefficient → **`Hc = 3/4`**; `H2 = lim = 27/64 = (3/4)²·(3/4)`.
+
+**`Bc` cannot be the difference** (`Bc2 = 3/4`, and a differently-built `Bc` would leave the ratio
+`H/(Bc·coth(Bc τ))` non-rational rather than a bare `3/4`). **And `H` has exactly one binding** —
+checked across every binding form this time, not an anchored `^H=` grep, because *reading a proxy for
+the thing* is the error I have recorded three times this round.
+
+⇒ **The executed line carries `3/4` where every git object carries `2/3`**: my head, `main`,
+`refs/pull/261/merge`, and never `3/4` anywhere in its history.
+
+⌗ **Reported as what the instrument says, with no mechanism named.** I have no measurement of the
+runner's checkout; the constructible candidates were already rejected (a stale `__pycache__` cannot
+apply to a script run as `__main__`; a three-way merge conflicts rather than silently mangling). *If it
+is real it bears on every receipt, which is why it goes to 66 instead of being patched around.*
+
+### The repair that WAS mine
+
+`H`'s leading `2/3` was a typed literal beside a quantity the file derives. Now
+`H = simplify(diff(r_c, tau)/r_c)` — `d(ln r)/dτ`, no typed prefactor. The remaining `2/3` is the scale
+factor's exponent, which check (2) and its control force from the `E=1` geodesic rather than assume.
+
+⇒ *It is also a test of the reading rather than a workaround: the disagreeing literal no longer exists.
+**If CI still reports a wrong `H2`, the "source differs" reading is wrong and I will say so.***
