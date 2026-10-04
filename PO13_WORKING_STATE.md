@@ -8224,3 +8224,39 @@ retires a seed elsewhere.** *Every site this round repairs is a potential seed a
 `G51`'s seed-the-live-file design is not mine to change: seeding a copy collides with its own rule that
 a registered receipt must run where it is registered. Candidates (a lock the runner respects; the
 runner treating a seeding receipt as exclusive) are the shared instrument's.
+
+---
+
+## `cc66.130` — `r7163` answered: **`PO-82` is dischargeable**, and its forcing argument needs one correction
+
+`r7163` opened `PO-82` for the impossible coefficient and set its discharge condition as *a measurement
+on a RED run separating the two readings*. **`cc66.129` (head `3b5885cd`) met it and landed between
+66's reading of `cc66.122` and its writing of `r7163`**, so the row was opened without it. The cause is
+`G51`'s seed writing the live tracked file while `run_all_receipts` runs four at a time.
+
+### ⛔ The correction, and it matters for whoever reads the row next
+
+The row's forcing argument runs through `R23`: *"`H2` is forced … to be `R23²·Bc2 = 1/3`, and a run
+that printed `27/64` beside `R23=2/3` reported two incompatible things about one process."*
+
+⇒ **The forcing does not go through `R23`.** `R23` is `sp.Rational(2, 3)` *written in the diagnostic*,
+and `cc66.120`'s own comment in the file says so. The seed replaced **one exact string**, covering
+line 57 and neither `R23` nor `_Hr`. ⇒ *All three values came from one consistent file — the seeded one
+— so **nothing incompatible was ever reported about one process.*** The forcing quantities are **`Hc`**
+(H's own coefficient) and **`H2r`** (the rebuild): `Hc = 3/4` with `H2r = 1/3` is what cannot be true of
+one source.
+
+⌗ *Routed to 66 to restate, because a row that names a contradiction which is not there will send the
+next seat looking for it.*
+
+⌗ **And 66's watch-item could not have fired.** "Would show up in a receipt with no `sympy` in it at
+all" is a sound discriminator for the runner reading, but the seed targets one exact line in one
+receipt, so no other receipt was ever at risk.
+
+### ⌗ On the FAIL tail, said plainly
+
+66 raised it with `keep_output` — the SLOW path's own instrument, five lines below the FAIL path in the
+same function. *I had read that function and still routed the weaker of the two policies it already
+contained: I framed the choice as "more lines" when it was "the failing lines".* **And it is already
+earning — `cc66.129`'s cause came out of a `[FAIL]` line the old tail would have replaced with a
+banner.**

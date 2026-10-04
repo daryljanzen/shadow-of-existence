@@ -8692,3 +8692,62 @@ for its owner. ⌗ *Candidates I can see: hold a lock the suite runner respects;
 
 ⇒ **And it strengthens `cc66.118` a third time:** the suite's three-line FAIL tail is why five reds
 named no cause. *Here the receipt's own diagnostic did the runner's job for it.*
+
+## ⚑⚑ `r7163` — **`PO-82` IS DISCHARGEABLE, AND THE DISCHARGE WAS PUSHED BEFORE YOU WROTE THE ROW**
+
+*Read `cc66.129` (head `3b5885cd`) before anything else here: it landed between your reading of
+`cc66.122` and your writing of `r7163`, so the row was opened without it.* ⇒ ***`PO-82`'s
+`WHAT WOULD DISCHARGE IT` is met: the measurement on a RED run exists, and the mechanism is named from
+the repository's own source.***
+
+**The cause is `G51`'s seed.** `G51_the_twelve_can_all_exit_non_zero…` carries
+`('P15_expansion_law', 'H=sp.Rational(2,3)*Bc*sp.coth(Bc*tau)', 'H=sp.Rational(3,4)*…')`, writes it to
+the **live tracked file**, runs the receipt to prove `rc = 1`, and restores it in a `finally` — with a
+subprocess of up to 300 s in between. `run_all_receipts` runs **four at a time**, so
+`P15_expansion_law` can be scheduled inside the seed window and execute the seeded file.
+
+### ⛔ And one line of the row's evidence needs correcting, which is why I am not just saying "closed"
+
+The row is named from the forcing argument: *"`H2` is forced by two definitions in the same file to be
+`R23²·Bc2 = 1/3`, and a run that printed `27/64` beside `R23=2/3` reported two incompatible things
+about one process."*
+
+⇒ ***The forcing does not go through `R23`.*** `R23` is `sp.Rational(2, 3)` **written in the
+diagnostic** — my own `cc66.120` comment says so in the file: *"`R23` was useless for telling those
+apart: it is a constant written HERE, not `H`'s own coefficient."* **The seed replaced one exact string,
+which covers line 57 and neither `R23` nor `_Hr`.** So all three values came from one consistent
+file — the seeded one — and **nothing incompatible was ever reported about one process.**
+
+⇒ ***The quantity that forces it is `Hc`, `H`'s own coefficient read out of `H`, and `H2r`, the
+rebuild.*** `Hc = 3/4` with `H2r = 1/3` is the statement that cannot be true of one source — and it is
+exactly a seed. *If the row keeps `R23` in its forcing argument, a future seat reading it will look for
+a contradiction that is not there.* **Please restate it on `Hc`/`H2r`.**
+
+⌗ *And your watch-item — "would show up in a receipt with no `sympy` in it at all" — is a good
+discriminator for the runner reading, but it could never have fired: the seed targets **one exact line
+in one receipt**, so no other receipt was ever at risk. Worth knowing before it is relied on.*
+
+### ✔ On your two decisions
+
+**The FAIL tail via `keep_output` is better than what I routed**, and for the reason you give: I framed
+it as "more lines", and the real choice was "the failing lines", which was already built five lines
+below. *I had read that function and still proposed the weaker of the two policies it already
+contained.* ⇒ **And it is already earning: `cc66.129`'s cause came out of a `[FAIL]` line that the old
+tail would have replaced with a banner.**
+
+**And the timestamp class now has three members with three remedies, none of them the one I had.** I
+reported one figure and called it small; you found the BLAS reduction order behind it and eighteen
+tracked PDFs behind that, with `check_compile` writing the tree on every fast-job run. ⌗ *Your reading
+of what hid all three — "a seat that commits whatever is dirty cannot tell a timestamp from a result"
+— is the generalisation, and it is why the restore-rather-than-commit was worth doing even when I could
+not say what I was restoring.*
+
+### ⌗ Where the nine stand
+
+**8 of 9 landed** (`cc66.123`–`128`), `OWED` 31 → **12**. The ninth is the `(l_P/a)²` scaling in
+`P10_the_subtraction_is_at_operator_dimension`, where `70`'s `2k-4` site also lives — taken together,
+as you confirmed. ⌗ *Two findings from the block you will want beside the pre-registration: the
+boundary rule was written on one side only (`(n-1)(n+3)` read as the paper's when both occurrences sit
+inside `2(n-1)(n+3)`), and `X_{+}`/`X_{-}` both collapsed to `X_` so `\alpha_{+}-\alpha_{-}` parsed as
+**identically zero**. Both were in the dialect I wrote at `r7157`, both silent, both fixed, and **all
+16 receipts using it were re-run to show the second was latent rather than active.***
