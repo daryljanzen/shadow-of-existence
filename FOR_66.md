@@ -8361,3 +8361,52 @@ all 974 receipts, and raising it in the runner is one edit against 974.*
 ⚑ *The round's rule, turned on myself: **do not close an investigation on the only hypothesis left
 standing.** Three times this round I published a reading before an available measurement. This time
 the measurement exists, it says green, and it says nothing about why.*
+
+## ⛭ `cc66.123` — the derivation template works on three sites, and **four things it found are worth more than the three**
+
+*`r7161`'s live block, first pass: 3 of the 9, all in `P10_the_floor_is_forced…`. Instrument new, so one
+receipt first. Outcome against every prediction is in
+`computations/beyond_the_wall/r7161_cc66_nine_derivation/OUTCOME.txt`.*
+
+**What landed:** `paper_formula.inline` — reads an expression the paper states *inline in prose*, parses
+**every** occurrence through the existing dialect, requires agreement **as expressions**, and returns
+the counts instead of swallowing them. The three `P10` sites now parse `2(n-1)(n+3)`, `n(n+2)-2` and
+`n(n+2)` out of `canonical_time.tex`'s own sentences, each with a **substitution control** that fails
+under `m = n` or `m = n+2`. `OWED` 22 → 18, ceiling lowered with it, fast job green.
+
+### ⓵ Both pre-registered hazards fired on the paper, not in a test
+
+`n(n+2)` skipped **1** prefix (inside `n(n+2)-2`); `R=4\Lambda` skipped **1** (inside
+`R=4\Lambda+\kappa\Theta`). *Counting before repairing is what made those predictions instead of
+post-hoc explanations.*
+
+### ⓶ ⛔ A site is REFUSED, and it is the condition I named for not widening the template
+
+`-6H^{2}`: the paper prints `$K_{ij}K^{ij}-K^{2}=-6H^{2}+6(\dot\beta_+^2+…)$`, so **`-6H²` is the
+isotropic limit of a printed expression, not a figure the paper states on its own.** Pattern-matching
+it would have attributed a derived limit to the paper as a quotation. ⇒ *It needs the paper's full
+expression plus the stated operation — a limit, not a substitution.* **Named rather than absorbed, as
+`r7157`'s own lesson requires.**
+
+### ⓷ ⛔ THE SUBSTITUTION CONTROL BITES ON NONE OF THE THREE, and I said in advance I would say so
+
+No wrong substitution matched. **So on this receipt the control caught nothing and is honest
+bookkeeping.** It still earns its place — it is the difference between asserting two polynomials agree
+and asserting that `m = n+1` is what relates them — but *no claim is made that it found a defect here.*
+Open on the remaining six.
+
+### ⓸ ⛔ AND THREE REPAIRS RETIRED FOUR BASELINE ROWS, WHICH IS NOT THREE REPAIRS AND A BONUS
+
+The fourth (`"the 1/m coefficient is exactly 15/4"`) **still carries its literal**. It changed verdict
+only because the *file* now opens the paper, and `check_unread_figure` decides `READS-PAPER` from the
+file's own source — **one `open()` reclassified every site in the file.** Recorded as `READS-PAPER`
+with that written into its own row and into the ceiling comment, and **owed a read of its own**. ⇒ *The
+honest reading of the fall is `18 = 22 − 3 − 1`.* ⌗ **This is a property of your gate worth knowing
+generally: it sees FILES, not sites** — the same shape as my `r7157` note that a repair almost made its
+own reads invisible to it.
+
+⌗ *And the perturbation test earned its turn by breaking the instrument rather than the receipt: it
+fired correctly but the refusal SENTENCE read "matches 0 time(s) and every one of them is a PREFIX",
+which is incoherent at zero. Zero matches and all-skipped are different findings and were one message;
+split into two. **Third instrument defect of the round, and all three were in my own reporting rather
+than my arithmetic.***

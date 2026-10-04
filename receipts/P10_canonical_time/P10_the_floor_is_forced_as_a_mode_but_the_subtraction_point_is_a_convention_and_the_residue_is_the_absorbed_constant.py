@@ -127,6 +127,10 @@ or any control failing to break.
 import mpmath as mp
 import numpy as np
 import sympy as sp
+import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus'))
+import paper_formula as pf
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
 
 FAILS = []
 
@@ -150,14 +154,46 @@ print("\nPART 1 -- THE SPECTRUM AND THE FLOOR.  IS m = 3 A CHOICE?")
 print("-" * 100)
 d_sym = 2 * (m ** 2 - 4)
 mu_sym = sp.sqrt(m ** 2 - 1)        # r6975: the FREQUENCY.  Laplace is m^2-3; see below.
-print("  P10 sec:lock:  degeneracy 2(n-1)(n+3), eigenvalue mu_n^2 = n(n+2)-2, n >= 2;  m = n+1.")
-check("d(m) = 2(m^2-4) is P10's 2(n-1)(n+3) at m = n+1",
-      sp.simplify(d_sym.subs(m, n + 1) - 2 * (n - 1) * (n + 3)) == 0)
-check("the LAPLACE eigenvalue m^2-3 is P10's n(n+2)-2 at m = n+1 -- untouched by r6974",
-      sp.simplify((m ** 2 - 3).subs(m, n + 1) - (n * (n + 2) - 2)) == 0)
-check("and the FREQUENCY is that eigenvalue displaced by the curvature term's +2K: mu^2 = m^2-1, "
-      "which is P10's n(n+2) at m = n+1",
-      sp.simplify((m ** 2 - 1).subs(m, n + 1) - (n * (n + 2))) == 0)
+#: ⛭ r7161+cc66.123: ** THE PAPER'S THREE EXPRESSIONS WERE CARRIED HERE AS LITERALS AND ARE PARSED
+#: NOW. **  This is the `DERIVATION` block's template, pre-registered in
+#: `computations/beyond_the_wall/r7161_cc66_nine_derivation/PREDICTION.md` before this edit.
+#: The `r7153` parse template cannot reach these: they are INLINE math in a sentence, not labelled
+#: displays, so there is no `\label{}` to key on -- and `P10` never writes the receipt's own `m`-form
+#: at all, so there is nothing on the paper side to compare a left side against.  *The parse template
+#: was not unavailable here; it was the wrong instrument, which is what `r7155` measured.*
+#: ⌗ `paper_formula.inline` requires every occurrence to AGREE as a parsed expression (`r7159`'s
+#: correction, by construction: `2(n-1)(n+3)` is printed twice) and SKIPS a match that is a prefix of
+#: something longer -- `n(n+2)` also appears inside `n(n+2)-2`, and counting that would compare the
+#: eigenvalue against itself-minus-two and call it agreement.
+#: ⛔ AND EACH CHECK NOW CARRIES A SUBSTITUTION CONTROL, which is the part neither backlog named.
+#: Without it the check asserts that two polynomials happen to agree, NOT that `m = n+1` is the
+#: re-parameterisation relating them -- and the re-parameterisation is the entire content of the label.
+_P10F = open(os.path.join(ROOT, 'corpus', 'canonical_time.tex'), encoding='utf-8').read()
+_PAPER_LOC = {'n': n}
+_DEG, _DEGk, _DEGs = pf.inline(_P10F, r'2\(n-1\)\(n\+3\)', _PAPER_LOC)
+_LAP, _LAPk, _LAPs = pf.inline(_P10F, r'n\(n\+2\)-2', _PAPER_LOC)
+_FRQ, _FRQk, _FRQs = pf.inline(_P10F, r'n\(n\+2\)', _PAPER_LOC)
+print(f"  P10 sec:lock PARSED:  degeneracy {_DEG}  ({_DEGk} statement(s), agreeing; {_DEGs} skipped as "
+      f"a prefix),  Laplace eigenvalue {_LAP},  frequency {_FRQ} ({_FRQk} agreeing, {_FRQs} skipped);"
+      f"  m = n+1.")
+_SUB, _WRONG = {m: n + 1}, ({m: n}, {m: n + 2})
+
+
+def derives(name, receipt_expr, paper_expr):
+    """the receipt's form equals the paper's UNDER THE STATED SUBSTITUTION, and not under a wrong one"""
+    ok = sp.simplify(receipt_expr.subs(_SUB) - paper_expr) == 0
+    bad = [w for w in _WRONG if sp.simplify(receipt_expr.subs(w) - paper_expr) == 0]
+    check(name, ok)
+    check(f"    CONTROL -- {name.split(' is ')[0].strip()} does NOT match it under m = n or m = n+2, so "
+          f"the check tests the re-parameterisation and not a coincidence of two polynomials",
+          not bad, got=(f"also matched under {bad}" if bad else None))
+
+
+derives("d(m) = 2(m^2-4) is P10's degeneracy at m = n+1 -- PARSED from the paper", d_sym, _DEG)
+derives("the LAPLACE eigenvalue m^2-3 is P10's at m = n+1 -- PARSED, untouched by r6974",
+        m ** 2 - 3, _LAP)
+derives("and the FREQUENCY is that eigenvalue displaced by the curvature term's +2K: mu^2 = m^2-1, "
+        "which is P10's at m = n+1 -- PARSED", m ** 2 - 1, _FRQ)
 
 jL, jR = (m + 1) / 2, (m - 3) / 2
 print(f"\n  r4547's family: (j_L, j_R) = ({jL}, {jR}) and its swap.")

@@ -70,7 +70,21 @@ REPORTED_ONLY = {'READS-PAPER'}
 #   carrying it. **  ⌈ The one site added in the same pass is a NEW member entered as OWED rather than
 #   exempted -- a fourth site in a P10 receipt, exposed by 70's work on its siblings -- because the
 #   ceiling only falls and a new member of the class is what this ratchet exists to count.
-CEILING = 22
+# ⛭ r7161+cc66.123: 22 → 18, the first of the DERIVATION block, and ** THREE REPAIRS RETIRED FOUR ROWS,
+#   WHICH IS NOT THREE REPAIRS AND A BONUS. **  `P10_the_floor_is_forced...` had four NO-READ sites.
+#   Three are genuinely repaired: the paper's `2(n-1)(n+3)`, `n(n+2)-2` and `n(n+2)` are now PARSED out
+#   of `canonical_time.tex`'s own sentences by `paper_formula.inline`, each with a SUBSTITUTION CONTROL
+#   that fails the check under `m = n` or `m = n+2` -- so the label tests the re-parameterisation it
+#   claims and not a coincidence of two polynomials.  ⌈ And they LEFT the class rather than earning a
+#   better verdict, exactly as the r7143 close found: a label reading "P10's degeneracy" has no literal
+#   left to pin.
+#   ⛔ ** THE FOURTH IS NOT A REPAIR AND IS RECORDED AS `READS-PAPER` WITH THAT SAID IN ITS ROW. **  Its
+#   `15/4` is still carried; what changed is that the FILE now opens the paper, and this gate decides
+#   READS-PAPER from the file's own source -- so one `open()` reclassified every site in the file.
+#   *That is a property of the instrument, and the honest reading of the fall is 18 = 22 - 3 - 1, with
+#   the 1 owed a read of its own rather than counted as done.*  ⌈ It is the same shape as the note at
+#   r7157 that a repair almost made its own reads invisible here: this gate sees FILES, not sites.
+CEILING = 18
 
 
 def read_baseline():

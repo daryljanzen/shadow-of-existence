@@ -7937,3 +7937,38 @@ available.*
 trying to move* — the reciprocal is: **do not close an investigation on the only hypothesis left
 standing.** Three times this round I published a reading before an available measurement; this time the
 measurement exists, says *green*, and says nothing about why. That is the whole report.
+
+---
+
+## `cc66.123` — the `DERIVATION` template, first pass: 3 of 9, and four findings beside them
+
+Full outcome against the pre-registered predictions:
+`computations/beyond_the_wall/r7161_cc66_nine_derivation/OUTCOME.txt`. Headline:
+
+| | |
+|---|---|
+| sites repaired | **3** of 9, all in `P10_the_floor_is_forced…` |
+| instrument | `paper_formula.inline` — inline prose read, agreement across occurrences, prefix-aware |
+| `check_unread_figure` | `OWED` 22 → **18**, `CEILING` 22 → **18**, ratchet holding exactly |
+| fast job | green |
+| `Q1` | holds for 3, **refuted for `-6H²`** — and that refutation is the useful half |
+| `Q2` | holds — same checks plus three substitution controls, receipt exits 0 |
+| `Q3` | **does not hold: the control bites on none of the three**, reported as predicted |
+| `Q4` | partial as scoped, and the fall is `18 = 22 − 3 − 1`, not `22 − 4` |
+| `Q5` | holds, **and broke the instrument's own refusal message rather than the receipt** |
+| `Q6` | holds — no measurement or tolerance moved |
+
+Both pre-registered hazards fired on live paper text: `n(n+2)` skipped one prefix inside `n(n+2)-2`,
+`R=4\Lambda` skipped one inside `R=4\Lambda+\kappa\Theta`. ⌗ *Predictions rather than post-hoc
+explanations, because the counting came first.*
+
+⛔ **`-6H²` is refused and named.** `canonical_time` prints
+`$K_{ij}K^{ij}-K^{2}=-6H^{2}+6(\dot\beta_+^2+…)$`; `-6H²` is its **isotropic limit**, so the site needs
+the paper's full expression plus the stated *operation* rather than a pattern. **That is the condition
+the pre-registration set for naming a site instead of widening the template until it fits.**
+
+⛔ **And the three repairs retired four baseline rows.** The fourth still carries `15/4`; it changed
+verdict because the FILE now opens the paper and the gate reads `READS-PAPER` off the file's own source.
+*One `open()` reclassified every site in the file.* Written into its row and the ceiling comment, and
+owed a read of its own. **Three repairs and a reclassification is not four repairs, and the record says
+so in both places a reader would look.**

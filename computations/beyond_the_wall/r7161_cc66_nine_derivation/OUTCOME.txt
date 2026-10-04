@@ -1,0 +1,56 @@
+r7161+cc66.123 -- OUTCOME of the first DERIVATION pass, against the predictions as written
+
+  SCOPE DONE: 3 of 9 sites, all in P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_is_a
+  _convention_and_the_residue_is_the_absorbed_constant.py.  The instrument is new, so one receipt
+  first and the rest on the proven template.
+
+  THE INSTRUMENT: corpus/paper_formula.inline(tex, pattern, locals_) -> (expr, kept, skipped).
+  Reads an expression the paper states INLINE in prose, parses EVERY occurrence through the existing
+  dialect, and requires them to agree AS EXPRESSIONS.  Returns the counts rather than swallowing them.
+
+  Q1  HOLDS for the three, AND IS REFUTED FOR A FOURTH -- which is the useful half.
+        2(n-1)(n+3)   kept 2, skipped 0, agreeing
+        n(n+2)-2      kept 1, skipped 0
+        n(n+2)        kept 2, SKIPPED 1   <- the prefix inside `n(n+2)-2`, as pre-registered
+        R=4\Lambda    kept 1, SKIPPED 1   <- the prefix inside `R=4\Lambda+\kappa\Theta`
+        12/\alpha^{2} kept 1, skipped 0
+      => BOTH pre-registered hazards fired on live data, on the paper, not in a test.
+      -6H^{2}  REFUSED, every match a prefix.  The paper prints
+         $K_{ij}K^{ij}-K^{2}=-6H^{2}+6(\dot\beta_+^2+...)$
+      so -6H^2 is the ISOTROPIC LIMIT of a printed expression and not a figure the paper states on its
+      own.  Pattern-matching it would have attributed a derived limit to the paper as a quotation.
+      ** This is the condition the prediction named for abandoning the template rather than widening
+      it: the site needs the paper's FULL expression plus the stated operation (a limit, not a
+      substitution).  Named, not absorbed. **
+
+  Q2  HOLDS.  Same checks as before plus three substitution controls; the receipt exits 0.
+
+  Q3  DOES NOT HOLD, AND IS REPORTED AS THAT.  The substitution control BITES ON NONE of the three:
+      no wrong substitution (m = n, m = n+2) matched any of the paper's three expressions.
+      ** So on this receipt the control is honest bookkeeping and caught nothing, which is what the
+      prediction said would be said. **  It still earns its place -- it is the difference between
+      asserting that two polynomials agree and asserting that m = n+1 is what relates them -- but no
+      claim is made that it found a defect here.  Open on the remaining six.
+
+  Q4  PARTIAL, AS SCOPED.  check_unread_figure OWED 22 -> 18, CEILING lowered 22 -> 18.
+      ** And three repairs retired FOUR rows, which is not three repairs and a bonus. **  The fourth
+      ("the 1/m coefficient is exactly 15/4") still carries its literal; it changed verdict only
+      because the FILE now opens the paper, and the gate decides READS-PAPER from the file's own
+      source.  Recorded as READS-PAPER with that said in its row, and owed a read of its own.
+      The honest reading of the fall is 18 = 22 - 3 - 1.
+
+  Q5  HOLDS, AND FOUND A DEFECT IN THE INSTRUMENT'S OWN REPORTING.  Perturbing `2(n-1)(n+3)` to
+      `2(n-1)(n+4)` in a scratch copy of the paper makes the receipt exit 1; restoring it restores
+      exit 0.  ** But the refusal SENTENCE was wrong: it read "matches 0 time(s) and every one of them
+      is a PREFIX", which is incoherent at zero and would send a reader looking for a longer
+      expression that does not exist. **  Zero matches (a DRIFTED attribution, or a pattern that does
+      not match the paper's spelling) and all-skipped (the paper states it only inside something
+      longer) are different findings and were one message.  Split into two, each verified.
+      => The perturbation test earned its turn by breaking the instrument rather than the receipt.
+
+  Q6  HOLDS.  No measurement and no tolerance changed; only the paper side moved from literal to
+      parsed, plus the new controls.
+
+  WHAT IS LEFT: 6 of the 9 (five receipts), one of which (-6H^2) is now known to need the limit form
+  rather than the substitution form.  70's `2k-4` site needs `k` declared -- the dialect refused it
+  strictly rather than guessing, which is the behaviour the shared template should keep.

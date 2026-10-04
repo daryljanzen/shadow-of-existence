@@ -301,3 +301,84 @@ def sides(tex, label, locals_=None):
     body = equation(tex, label)
     parts = [p for p in body.split('=') if p.strip()]
     return [to_sympy(p, locals_) for p in parts]
+
+
+# ---------------------------------------------------------------------------- r7161+cc66.123
+#: ** THE INLINE READER: for a figure the paper states in a SENTENCE and not in a labelled display. **
+#: `equation()` keys on `\label{}`, which is why `r7155`'s feasibility measurement split the backlog
+#: into `17 ANCHORED` and `14 NO-ANCHOR`.  The `NO-ANCHOR` sites are not harder, they are a different
+#: claim: the expression is inline math inside prose (`the degeneracy is $2(n-1)(n+3)$`), and the paper
+#: never writes the RECEIPT's form at all -- so there is nothing to compare a left side against and the
+#: labelled-display template is the wrong instrument rather than an unavailable one.
+#:
+#: ⛭ AGREEMENT, NOT UNIQUENESS -- the `r7159` correction, here by construction.  Four of the seven
+#: expressions these sites cite occur more than once in their paper, so `exactly once` would refuse a
+#: paper for restating its own result.  Every occurrence is PARSED and compared as an expression, so a
+#: re-spacing, a `\!` or a `\left` is not a disagreement.
+#:
+#: ⛔ AND A PREFIX OF A LONGER EXPRESSION IS NOT AN OCCURRENCE.  `canonical_time.tex` writes both
+#: `R=4\Lambda` and `R=4\Lambda+\kappa\Theta`; `n(n+2)` also appears inside `n(n+2)-2`.  A reader that
+#: counted those would compare the trace-coupled form against the vacuum one and then "agree" with
+#: itself.  *Found by COUNTING the occurrences before writing the repair, and recorded in
+#: `r7161_cc66_nine_derivation/PREDICTION.md` before either was touched.*  So a match whose next
+#: character would CONTINUE the expression is skipped, and the count of skipped ones is returned rather
+#: than swallowed -- a reader that silently drops half its matches is the same defect one level down.
+def _extends(src, j):
+    """Would the text at `j` continue a mathematical expression?  `+`, `-`, a digit, a letter or a
+    LaTeX name do; `$`, punctuation, `\\,` and a `\\\\` line break do not."""
+    t = src[j:j + 2]
+    if not t:
+        return False
+    if t[0] in '+-*/^_=' or t[0].isdigit() or t[0].isalpha():
+        return True
+    if t[0] == '\\' and len(t) > 1:
+        return t[1].isalpha()
+    return False
+
+
+def inline(tex, pattern, locals_=None, strict=True):
+    """Parse an expression the paper states inline, from EVERY occurrence, requiring agreement.
+
+    `pattern` is a regex matching the expression as the paper writes it.  Returns
+    `(expr, kept, skipped)`: the agreed sympy expression, how many occurrences were read, and how
+    many were skipped as prefixes of something longer.
+    """
+    src = tex if '\n' in tex else open(tex, encoding='utf-8').read()
+    kept, skipped, got = [], 0, None
+    for m in re.finditer(pattern, src):
+        if _extends(src, m.end()):
+            skipped += 1
+            continue
+        kept.append(m)
+    #: ⛭ r7161+cc66.123: ** NO MATCH AND ALL-SKIPPED ARE DIFFERENT FINDINGS AND WERE ONE MESSAGE. **
+    #: The first draft said "matches 0 time(s) and every one of them is a PREFIX", which is incoherent
+    #: at zero and would have sent a reader looking for a longer expression that does not exist.
+    #: *Found by the pre-registered perturbation test (`Q5`), which is what that test is for: it
+    #: perturbed the paper, the refusal fired correctly, and the SENTENCE was wrong.*
+    #:   · 0 matches  ⇒ the paper does not carry this expression at all: a DRIFTED attribution, or a
+    #:     pattern that does not match how the paper writes it.  Either way not a parse failure.
+    #:   · matched but every one skipped ⇒ the paper states it only INSIDE something longer, so it is
+    #:     not a figure the paper asserts on its own.  `canonical_time`'s `-6H^{2}` is exactly this:
+    #:     the paper prints `K_{ij}K^{ij}-K^{2}=-6H^{2}+6(...)` and `-6H^2` is its ISOTROPIC LIMIT,
+    #:     which a receipt must derive rather than quote.
+    if not kept:
+        assert skipped, (
+            'paper_formula.inline: %r does not match the paper at ALL. Either the paper no longer '
+            'carries this expression -- a DRIFTED attribution, which is a finding and not a parse '
+            'failure -- or the pattern does not match how the paper writes it.' % (pattern,))
+        raise AssertionError(
+            'paper_formula.inline: %r matches %d time(s) in the paper and EVERY ONE is a prefix of a '
+            'longer expression, so the paper never states this figure on its own -- it states something '
+            'of which this is a part. What the receipt claims is a derived consequence, not a quotation, '
+            'and it has to be derived here rather than pattern-matched.' % (pattern, skipped))
+    for m in kept:
+        frag = m.group(1) if m.groups() else m.group(0)
+        e = to_sympy(frag, locals_, strict=strict)
+        if got is None:
+            got = e
+        else:
+            assert sp.simplify(got - e) == 0, (
+                'paper_formula.inline: the paper states %r as %r in one place and %r in another, which '
+                'do not agree as expressions -- the paper contradicts itself and no reading of it is '
+                'the attribution.' % (pattern, str(got), str(e)))
+    return got, len(kept), skipped
