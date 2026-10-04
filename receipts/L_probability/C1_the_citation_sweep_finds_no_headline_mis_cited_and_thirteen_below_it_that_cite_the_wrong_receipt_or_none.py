@@ -54,6 +54,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 
 FAILS = []
 
@@ -77,15 +78,27 @@ HDR = ' '.join(__doc__.split())
 PRE = ' '.join(open(os.path.join(WORK, 'PREDICTION.md'), encoding='utf-8').read().split())
 SRC = T.SRC
 _RUN = {}
+#: ⛭ r7166+70.1 (70): WHAT THIS VERDICT RAN, recorded rather than inferred.  ** At `c07c594a` `60` read this sweep
+#:   exit 1 with two `sec:refit-bound` findings failing and `66` read it exit 0 at the same ref, and neither run
+#:   said which of its subprocesses had moved. **  So every run's exit code, wall time and timeout is kept, every
+#:   figure lookup keeps WHERE it was answered (SOURCE literal, OUTPUT of the run, or ABSENT), and both are printed
+#:   at the end.  A timeout is recorded, not raised: raised, it ended the sweep in a traceback that named no check.
+RAN = {}
+WHERE = {}
 
 
 def run(name):
-    """a receipt's own output, run once in its own directory"""
+    """a receipt's own output, run once in its own directory -- and RECORDED: (rc, seconds, timed out)"""
     if name not in _RUN:
         p = SRC[name]
-        r = subprocess.run([sys.executable, os.path.basename(p)], cwd=os.path.dirname(p), capture_output=True,
-                           text=True, timeout=240, env=dict(os.environ, PYTHONUNBUFFERED='1'))
-        _RUN[name] = (r.stdout + r.stderr).replace('\u2212', '-'), r.returncode
+        t0 = time.time()
+        try:
+            r = subprocess.run([sys.executable, os.path.basename(p)], cwd=os.path.dirname(p), capture_output=True,
+                               text=True, timeout=240, env=dict(os.environ, PYTHONUNBUFFERED='1'))
+            _RUN[name] = (r.stdout + r.stderr).replace('\u2212', '-'), r.returncode
+        except subprocess.TimeoutExpired:
+            _RUN[name] = '', 'TIMEOUT'
+        RAN[name] = (_RUN[name][1], round(time.time() - t0, 1))
     return _RUN[name]
 
 
@@ -100,10 +113,19 @@ def vals(text):
 
 
 def has(name, num, output=True):
+    """is `num` carried by receipt `name` -- in its SOURCE, else (if `output`) in its run's OUTPUT.
+    ⛭ r7166+70.1: the source is asked FIRST and the receipt is run only when the source cannot answer, so a figure
+    the receipt writes as a literal costs no run.  The answer is the same either way (source OR output); what changes
+    is that the record says which one answered."""
     t = open(SRC[name], encoding='utf-8', errors='replace').read().replace('\u2212', '-')
-    if output:
-        t += '\n' + run(name)[0]
-    return T.matches(num, vals(t))
+    if T.matches(num, vals(t)):
+        WHERE[(name, num)] = 'SOURCE'
+        return True
+    if output and T.matches(num, vals(run(name)[0])):
+        WHERE[(name, num)] = 'OUTPUT'
+        return True
+    WHERE[(name, num)] = 'ABSENT' if output else 'ABSENT-FROM-SOURCE'
+    return False
 
 
 # ======================================================================================================== PART 0
@@ -179,12 +201,16 @@ II = [
      'P04_redshift_isotropy_floor', ['0.285'], False),
 ]
 CITED_ANY = set(n for _, n in MARK)
+ROWS = []
 uncited = set()
 for paper, sec, cited, source, nums, _unc in II:
     cited = next(k for k in SRC if k.startswith(cited[:80]))
     source = next(k for k in SRC if k.startswith(source[:80]))
     absent = all(not has(cited, n) for n in nums)
-    present = all(has(source, n) for n in nums) and run(source)[1] == 0
+    # ⛭ r7166+70.1: the computing receipt's exit code counts only when it was RUN to answer -- a figure it writes as a
+    #   literal is answered from source, and then no run happened whose exit code could mean anything.
+    present = all(has(source, n) for n in nums) and (source not in RAN or RAN[source][0] == 0)
+    ROWS.append((paper, sec, cited, source, nums))
     if source not in CITED_ANY:
         uncited.add(source)
     check(f"(ii) {paper} {sec}: {nums} -- not in `{cited[:40]}...`, computed by `{source[:40]}...`"
@@ -257,6 +283,17 @@ if FAILS:
     for f in FAILS:
         print(f"  - {f}")
     raise SystemExit(1)
+# ======================================================================================================== THE RECORD
+print('\n' + '=' * 100)
+print('WHAT THIS VERDICT RAN (r7166+70.1) -- every subprocess, and where each (ii) figure was answered')
+print('=' * 100)
+for nm, (rc, sec_) in sorted(RAN.items(), key=lambda kv: -kv[1][1]):
+    print(f"    ran  rc={str(rc):<8} {sec_:7.1f}s  {nm[:90]}")
+print(f"    {len(RAN)} run(s), {sum(v[1] for v in RAN.values()):.0f}s in all; non-zero or timed out: "
+      f"{[n[:50] for n, v in RAN.items() if v[0] != 0] or 'none'}")
+for paper, sec_, cited, source, nums in ROWS:
+    print(f"    (ii) {paper} {sec_}: " + ', '.join(
+        f"{n} cited:{WHERE.get((cited, n), '-')} computing:{WHERE.get((source, n), '-')}" for n in nums))
 print("VERDICT: ALL PASS -- no headline marker cites the wrong receipt; below the headline, twelve (ii) -- ten in the")
 # ⌗ *the banner asserted the clause the pin above withdrew.  A verdict line that outlives its own
 #   check is the harder half of a stale pin: the gate goes green and the sentence stays wrong.*
