@@ -8635,3 +8635,60 @@ it caught an error.*
 
 **Left: 1 of 9** — the `(l_P/a)²` scaling in `P10_the_subtraction_is_at_operator_dimension`, where
 `70`'s `2k-4` site also lives, so per `r7161` they go together.
+
+## ⛔⛔⚑ `cc66.129` — **THE CAUSE IS FOUND, AND MY `cc66.127` ATTRIBUTION WAS WRONG**
+
+***Correct me first: I told you the `P15_expansion_law` red was "a fact about the runner and not about
+the corpus". That attribution is wrong.*** The literal content of the reading was right — the source
+CI executed really did carry `3/4` — but **the mechanism is a sibling receipt in the same suite run
+deliberately writing it there.**
+
+### What it is, from the repository's own source
+
+`receipts/L237_gates_check_declarations/G51_the_twelve_can_all_exit_non_zero…` carries:
+
+```python
+SEEDS = [
+    ('P15_expansion_law', 'H=sp.Rational(2,3)*Bc*sp.coth(Bc*tau)',
+     'H=sp.Rational(3,4)*Bc*sp.coth(Bc*tau)', 'the rate coefficient 2/3 -> 3/4'),
+```
+
+**`G51` writes that seeded source to the LIVE TRACKED FILE, runs it to prove the receipt exits 1, and
+restores it in a `finally` — with a subprocess run of up to 300 s in between.** `run_all_receipts` runs
+**four receipts at a time**, so when `P15_expansion_law` is in the same scope it can be **scheduled
+inside the seed window and execute the seeded file.**
+
+⇒ ***That is a race between two receipts over one file, and it produced five CI reds across four
+heads.*** ⌗ *It also explains every observation I could not place: why it never reproduced here (I
+never ran `G51` concurrently with it), why it moved with the scope, and why "merging `main` cleared it"
+— which I refused to call a cause, correctly.*
+
+### ⛭ And the diagnostic is what found it
+
+The signature was **exact**: `Hc = 3/4` for `H`'s own coefficient while `sp.Rational(2,3)` in the *same
+process* printed `2/3` and a rebuild from it printed `1/3`. **That is precisely what a seed whose
+string matches line 57 and not the diagnostic's own literals produces.** Without the `Hc`/`H2r`
+discriminators the cause would still be unknown — and with them, the "impossible" coefficient triple
+was the fingerprint rather than a contradiction.
+
+### ⌗ Why `G51` then went red, and what I did about it
+
+**My repair removed the literal `G51` seeds.** `H` is now derived, so the anchor count went to **0** and
+`G51` correctly reported *"the seed anchor … is no longer unique"*. ⇒ **I repointed the seed at the
+scale factor's exponent** — `_r_c = A * sp.sinh(Bc * tau) ** sp.Rational(2, 3)` → `(3, 4)` — which is
+the quantity the derived `H` is built from, so it is the same defect reaching the same checks.
+Measured: seeded `rc = 1` with `[FAIL] eq:rate …`, restored `rc = 0`, `G51` green.
+
+⚑ ***And the coupling is a finding in its own right:*** **a gate-testing receipt anchors on another
+receipt's exact source line, so repairing a literal over there retires a seed over here.** *Every site
+this round's work repairs is a potential seed anchor. Worth knowing before the next block.*
+
+### ⛔ ROUTED, not changed: the race itself
+
+I did **not** touch `G51`'s seed-the-live-file approach. Seeding a copy would collide with that file's
+own rule that *a registered receipt must run where it is registered*, so the remedy is a design call
+for its owner. ⌗ *Candidates I can see: hold a lock the suite runner respects; or have
+`run_all_receipts` treat a seeding receipt as exclusive. Both are the shared instrument's, not mine.*
+
+⇒ **And it strengthens `cc66.118` a third time:** the suite's three-line FAIL tail is why five reds
+named no cause. *Here the receipt's own diagnostic did the runner's job for it.*

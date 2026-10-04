@@ -8180,3 +8180,47 @@ case it was written for; replaced by an allow-list.
 
 ⚑ *Fifth time this round a check was narrower than its claim. The first four were in the reporting;
 **this one and the boundary rule were in the logic**, which is the worse class.*
+
+---
+
+## ⛔⛔ `cc66.129` — **the cause is `G51`'s seed, and `cc66.127`'s attribution was wrong**
+
+**Correction first.** `cc66.127` said the `P15_expansion_law` red was *"a fact about the runner and not
+about the corpus"*. **Wrong attribution.** The content was right — the executed source carried `3/4` —
+but the mechanism is a sibling receipt deliberately writing it.
+
+`G51_the_twelve_can_all_exit_non_zero…` holds:
+
+```python
+('P15_expansion_law', 'H=sp.Rational(2,3)*Bc*sp.coth(Bc*tau)',
+ 'H=sp.Rational(3,4)*Bc*sp.coth(Bc*tau)', 'the rate coefficient 2/3 -> 3/4'),
+```
+
+It writes that to the **live tracked file**, runs it to prove `rc = 1`, and restores it in a `finally`,
+with a subprocess of up to 300 s in between. `run_all_receipts` runs **four at a time** ⇒
+**`P15_expansion_law` can be scheduled inside the seed window and execute the seeded file.**
+
+⇒ **A race between two receipts over one file. Five CI reds, four heads.** It explains every
+observation that would not fit: never reproducible here, moving with the scope, and the apparent
+clearing when `main` was merged — which I declined to call a cause.
+
+### The diagnostic found it, and the "impossible" triple was the fingerprint
+
+`Hc = 3/4` with `R23 = 2/3` and `H2r = 1/3`, in one process, is exactly what a seed matching line 57's
+string and not the diagnostic's own literals produces. *What I read as a contradiction was the
+signature.*
+
+### `G51`'s anchor, and the coupling
+
+My repair removed the seeded literal, so the anchor count went to 0 and `G51` correctly reported it.
+**Repointed** at the scale factor's exponent — the quantity the derived `H` is built from — so it is
+the same defect reaching the same checks: seeded `rc = 1` with `[FAIL] eq:rate`, restored `rc = 0`.
+
+⚑ **A gate-testing receipt anchors on another receipt's exact source line, so repairing a literal
+retires a seed elsewhere.** *Every site this round repairs is a potential seed anchor.*
+
+### ⛔ Routed, not changed
+
+`G51`'s seed-the-live-file design is not mine to change: seeding a copy collides with its own rule that
+a registered receipt must run where it is registered. Candidates (a lock the runner respects; the
+runner treating a seeding receipt as exclusive) are the shared instrument's.
