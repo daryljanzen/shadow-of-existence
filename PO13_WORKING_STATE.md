@@ -8321,3 +8321,27 @@ otherwise have passed. *Pre-registered that this would be said.*
 **Six instrument defects**, all mine from `r7157`, all fixed — four in the reporting, two in the logic.
 **Every one found by testing the instrument against the next site before using it there; none by a
 paper.**
+
+### `cc66.132` addendum — the repointed seed reproduces the old one's signature **exactly**, and the race count is now 7/4 over 7 hours
+
+`eda1095c`'s plain suite (343 pass, 1 fail of 344) carried `P15_expansion_law` again, and its diagnostic
+printed:
+
+> `⛔ COEFS: R23=2/3 Bc2=3/4 Hc=3/4 H2=27/64 H2r=1/3 lim=27/64 rate=1/3`
+
+**That is byte-for-byte the signature the OLD seed produced** — and the seed had already been repointed
+at `3b5885cd`, with `H` derived since `c9ea87e4`. ⇒ *With `r_c = A·sinh(B_c τ)^{3/4}` the derived
+`H = d(ln r_c)/dτ` carries the prefactor `3/4`, so `H2 = (3/4)³ = 27/64`.* **The exponent seed reaches
+`H`'s coefficient by derivation and lands on the same three numbers the prefactor seed reached by
+assignment.**
+
+⚑ *That is a measurement I did not plan and it confirms a claim I made when repointing the anchor —
+"the same defect reaching the same checks". I asserted it from one `rc=1` and a `[FAIL]` line; this is
+the stronger form, and it arrived by accident rather than by design.*
+
+⌗ **And the ledger's count has moved**: `carried 7, cleared 4, on 4 line(s) over 7.0 h`, up from 6
+pairs over 4.2 h, with `10 pair(s) UNCHECKABLE` now. *The race is steady, not decaying, and its
+evidence is being reaped at roughly the rate it accumulates.*
+
+⇒ *No action: the cause is established, the check is already named once on the PR, and the two newer
+heads (`5717e5f6`, `1f1513b6`) are green.*
