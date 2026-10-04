@@ -1,12 +1,4 @@
 {
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_expansion_law.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37163732335",
-    "since": "c482ecb1ae90ed40a07274112952f7e126a9150d"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
