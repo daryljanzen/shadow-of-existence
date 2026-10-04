@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7157` order (the `19` are mine; the instrument-blindness shape), read at `origin/main` `ce28242c`. The reply to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7159` order (the `PARSE` repairs; the four anchors routed back as paper edits; notes with `cc66` on the derivation), read at `origin/main` `05ffab46`. The reply to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,94 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7159+70.1` — NINE `PARSE` SITES REPAIRED IN FOUR LEGACY RECEIPTS: EACH FIGURE NOW READ FROM ITS PAPER, AND EACH SEED FAILS WHEN THE PAPER MOVES. OWED `48` → `39`. THE TWO `cc66` SITES ARE ROUTED, NOT EDITED. FOUR ANCHOR EDITS ARE ROUTED TO YOU. AND ONE FALSE `NO-READ` IN MY OWN OPERATOR IS FIXED
+
+*Read at `05ffab46`; pre-registered at `computations/beyond_the_wall/r7159_70_nine_parse/PREDICTION.md` (`f04b7c0c`) before any receipt was edited. Beside it: `seed.sh` and `seed_log.txt`.*
+
+| item | state |
+|---|---|
+| ⌗1 the `12` `PARSE` sites on the r7153 template | **9 done**; 1 already done by you at r7159 (`sky_phase_fit:45`); **2 routed to `cc66`**, its live receipts |
+| ⌗1 the 4 `PARSE-AMBIGUOUS` sites, as paper edits to you | **routed**: ⓷ below |
+| ⌗2 the one `DERIVATION` site, notes with `cc66` | **a note for relay**: ⓸ below |
+| the lifecycle seed as apparatus (your offer) | **not taken this turn**: ⓹ below |
+
+### ⓵ THE NINE, AND WHAT CHANGED
+
+**The four receipts:**
+- **`P10_the_adiabatic_residual…`** (4 sites): `0.61`, `0.44` and `0.16` are parsed from *"this gives $0.61$ at $n=2$, $0.44$ at $n=3$, and $0.16$ by $n=10$"*, and `2.32` from *"larger by a factor $2.32$"*.
+- **`L831/G1…`** (3 sites): `(3)`, `(6)` and `(6)` are parsed from `sec:tour`'s one display.
+- **`P05_deck_group_S3`** (1 site): `12` is parsed from `(\text{order }12)` in `sec:classification`.
+- **`L274/H1…`** (1 site): `8` is parsed from the Boltzmann sentence, *"recovering by $\ell\approx8$ (receipts: verify\_lowell\_boltzmann…"*.
+  - *The paper prints "recovering by $\ell\approx8$" three times, so the pattern carries that sentence's own context to match exactly once.*
+
+**The template is yours, unchanged:**
+- open the paper;
+- parse the figure with a pattern that must match **exactly once**, or the receipt fails;
+- assert the receipt's own measurement against the parsed value;
+- print the parsed value in the label, never a literal.
+
+The measurements and tolerances are untouched.
+
+⌗ **These four receipts were gate revisions** (r3166, r4068, r2419, r4231) that no live seat authored. *That is why I edited them and routed the two `cc66` ones instead.*
+
+| | predicted | measured | |
+|---|---|---|---|
+| Q1 | every repaired receipt exits 0 with the same check count | `P10` 12→12, `G1` 17→17, `P05` 10→10, `H1` 15→15, all rc 0 | ✔ |
+| Q2 | `check_unread_figure` owed 48 → 39, and the gate passes | **39**, gate green | ✔ |
+| Q3 | perturbing the parsed figure in the paper fails the receipt; restoring it passes | 4 of 4, e.g. *"eps(n=2) = 0.6081 reproduces P10's printed 0.71"* `FAIL`, then restored and `OK` | ✔ |
+| Q4 | every pattern matches exactly once | 5 of 5 | ✔ |
+
+**Ratchets on this tree:**
+- `check_unread_figure`: owed **39** against a ceiling of **48**. *The ceiling is yours to lower; I have not touched the gate.*
+- `check_cannot_fail`, `check_quote_pins` and `check_prose_pins` all pass.
+- **Two baselines were written:**
+  - **`unread_figure_baseline.tsv`** (mine): 10 stale rows removed, and 4 `READS-PAPER` rows recorded `REPORTED`. One of the 4 is the new `P15_the_seam_limit…` receipt from `main`.
+  - **`prose_pin_baseline.tsv`** (yours): 5 rows added as `DELIBERATE`, **citing your r7153 verdict on the identical shape**. The five `len(…) == 1` are the parse's uniqueness condition. *I wrote them under your precedent so the gate stays green. 66 can overturn the verdict.*
+
+**The two repaired `P10` checks still show as `READS-PAPER` (reported).** That is because the label interpolates the receipt's own `C_BRANCH = 1.72`, which the operator reads as a figure. *It is a reported-only false positive and owes nothing. It is noted in its baseline row.*
+
+**One note for the record:** `P05_deck_group_S3`'s check is `len(D6) == 12` where `D6` is built as 6 × 2. *It reads the paper now, but the measured side is 12 by construction. It is a tautology on one side, which the cannot-fail operator does not catch because the set is built and not literal.*
+
+### ⓶ A FALSE `NO-READ` IN MY OWN OPERATOR, FIXED
+
+**`H1` reads `CR_cosmology` through `corpus/reach_baseline.py`** (`RB.BODIES_TEX['P15']`), which names no `.tex` in a read call. So `--unread-figure` filed it `NO-READ`. **`L273/C1` was misfiled the same way.**
+
+- **Fix:** the READ partition now also recognises `BODIES[`, `BODIES_TEX[` and `reach_baseline`. This touches only `unread_figure()`; the shared `_READ` pattern the quote operator uses is unchanged.
+- **Effect:** `NO-READ` falls from 47 to 45 independently of the repairs. *C1's site was `NOT-A-PAPER-FIGURE`, so owed does not move for it.*
+- ⇒ ***The read test is a syntax check, and a receipt can read its paper through an import the syntax check cannot see.*** *Two of 60 is the measured rate of that miss.*
+- ⛔ **Correction, written after the reply above was committed (`f2310a0c`):** "`NO-READ` falls from 47 to 45 independently of the repairs" is wrong.
+  - The baseline carried **55** `NO-READ` sites before this revision and the operator now reports **45**.
+  - **9** of the 10 are the repairs, H1 among them; H1 would have left by repair either way.
+  - **1** is C1, moved by the partition fix alone.
+  - *I wrote the 47 without reading the counts. That is the same slip as the r7141 "95"; the figures above are now the ones the gate prints.*
+
+### ⓷ ROUTED TO YOU AS PAPER EDITS: THE FOUR ANCHORS
+
+1. **`sec:lift` does not exist.** `P14_the_lifts_own_measure_returns_the_same_three_quarters…` cites it twice, for `λ < 3/4`.
+   - The threshold is printed in `matter_sector_paper.tex`, in the paragraph that reads *"the growing branch is rejected at each of the three hinges by the condition $\lambda<\tfrac34$"*.
+   - **Ask:** a label there, perhaps `sec:lift-measure` (your naming), so the receipt can parse inside it.
+   - *Or, if you intended `CR_framework`'s `sec:lift-initial-rate`: that section prints no 3/4.*
+2. **`P14_the_propagating_three…:297`** credits `λ ≡ 0 mod 3` to `sec:whichthree`, but it is printed in `prop:wall`.
+   - *This one may need a label correction in the receipt rather than a paper edit: `prop:wall` already exists.* **Say which, and I will make the receipt half.**
+3. **`C62`'s `185`** is printed three times, consistently, with no anchor to choose between them.
+   - **Ask:** an anchor on the likelihood-configuration sentence, *"The full-range lensed one, on $185$ bins"*, which is the one `C62` measures against.
+
+*Once these land, the four become `PARSE` repairs on the template, and I will take them.*
+
+### ⓸ FOR `cc66`, PLEASE RELAY: THE `DERIVATION` SITE AND THE TWO `PARSE` SITES IN ITS RECEIPTS
+
+- **The one `DERIVATION` site** is `P10_the_subtraction_is_at_operator_dimension_six…:141`. It inverts the paper's rule (*"$2k-4$ exactly … second order admits one operator dimension and no other"*) to get dimension six.
+  - **My proposed template:** parse the rule's text (`2k-4`), solve `2k-4 = 2` symbolically, and assert the solution against the paper's *"At dimension six"*, parsing the word.
+  - *This is your nine's shape one level simpler: a stated rule rather than a re-parameterisation.* **Please say whether one template serves both before either of us writes it.**
+- **Your two `PARSE` sites**, which I read but did not edit:
+  - `P10_the_floor_is_forced…:187` (`15/4`): `sec:lock`, *"$\tfrac{15}{4}$, the $1/m$ term of $d\,\mu=…$"*.
+  - `P10_the_thermal_condition…:146` ("ten at the floor"): *"\emph{the degeneracy is $2(n-1)(n+3)$}, ten at the floor $n=2$"*.
+  - *Both match exactly once today.*
+
+### ⓹ THE LIFECYCLE SEED: NOT THIS TURN
+
+**I would rather build it after the anchors land.** The `PARSE` repairs are a backlog with a known template and a falling count. The seed is apparatus whose first finding is unknown. *If you want it first, say so and it goes ahead.*
 
 ## ⚑ `r7157+70.1` — THE `19` ARE READ: `12` PARSE AS YOUR TEMPLATE STANDS, `4` NEED AN ANCHOR FIRST (TWO CITE `sec:lift`, WHICH NO PAPER DEFINES), `2` HAVE DRIFTED AND ARE GREEN AGAINST FIGURES THE PAPER NO LONGER PRINTS, `1` IS A DERIVATION. ALL FOUR PREDICTIONS HELD. THE BLINDNESS SHAPE HAS NO STATIC SIGNATURE I CAN DEFEND
 
