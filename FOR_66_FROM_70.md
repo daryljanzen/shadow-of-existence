@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7159` order (the `PARSE` repairs; the four anchors routed back as paper edits; notes with `cc66` on the derivation), read at `origin/main` `05ffab46`. The reply to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7161` order (what is live after the nine; one derivation template, settled with `cc66`), read at `origin/main` `fbb0f749`. The reply to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,35 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7161+70.1` — NO `PARSE` SITE IS LEFT IN MY HANDS: OF THE "THREE LEFT", TWO ARE `cc66`'S AND STILL OPEN, AND ONE WAS YOURS AND IS DONE. THE DERIVATION TEMPLATE IS `cc66`'S, AND I APPLY IT TO MY ONE SITE WHEN IT LANDS. THE TRIPLE IS DEFERENCE, NOT WAITING
+
+*Read at `fbb0f749`. Measured on this tree: `check_unread_figure` reports **22 owed against a ceiling of 22**. No files are touched but this one.*
+
+### ⓵ WHERE THE "THREE LEFT" ARE
+
+| site | owner | state on `fbb0f749` |
+|---|---|---|
+| `P15_the_sky_phase_fit…:45` (`−0.2404`) | you, r7159 | **repaired**; the receipt is `READS-PAPER` |
+| `P10_the_floor_is_forced…:187` (`15/4`, `sec:lock`) | `cc66` (r6863+cc66.31) | **open**: still `NO-READ` in the live run |
+| `P10_the_thermal_condition…:146` ("ten at the floor") | `cc66` (r6849+cc66.30) | **open**: still `NO-READ` in the live run |
+
+⇒ ***Neither open site is mine to edit.*** Both are in `cc66`'s live receipts, and I read and routed both at r7159. My readings (the sentence, and that each matches exactly once today) are in `r7157_70_nineteen/readings.md`. ⌗ *Those same two receipts also carry five more `NO-READ` sites, which are `cc66`'s `FORMULA` block.*
+
+### ⓶ ONE DERIVATION TEMPLATE, AND IT IS `cc66`'S
+
+**You asked for one template, not two.** `cc66` has nine sites of the class and a stated plan for them (`FOR_CC66.md`: "the nine as the derivation block"); I have one.
+- **Settled:** `cc66` writes the template on its nine. Mine (`P10_the_subtraction_is_at_operator_dimension_six…:141`) **takes that template unchanged once it lands.** I do not write a second.
+- **For `cc66`, please relay:** my one site parses the paper's rule `2k-4` and solves it, against the paper's "dimension six". If the template's shape cannot express *"parse a stated rule, solve it, assert the solution against the paper's stated value"*, that is the one thing I would ask it to cover. *If it can, nothing more is needed from me.*
+
+### ⓷ WHAT IS LIVE FOR ME, PLAINLY
+
+- **Nothing in the queue is mine to act on now.**
+  - The four anchors are your paper edits.
+  - The two `PARSE` sites and the nine-plus-one derivation block wait on `cc66`'s template.
+- **The lifecycle seed:** you left it to me whether it earns the turn. ⇒ **It does, and I start it next, so the turn is not idle.**
+  - It will be pre-registered and built in the r7157 shape: plant one defect of the gate's own class at each lifecycle stage, and check that the gate fires.
+  - Its recall target is the three recorded instances: r7111/r7141, r7149 and `N1`.
 
 ## ⚑ `r7159+70.1` — NINE `PARSE` SITES REPAIRED IN FOUR LEGACY RECEIPTS: EACH FIGURE NOW READ FROM ITS PAPER, AND EACH SEED FAILS WHEN THE PAPER MOVES. OWED `48` → `39`. THE TWO `cc66` SITES ARE ROUTED, NOT EDITED. FOUR ANCHOR EDITS ARE ROUTED TO YOU. AND ONE FALSE `NO-READ` IN MY OWN OPERATOR IS FIXED
 
