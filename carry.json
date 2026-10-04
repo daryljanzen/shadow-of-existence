@@ -13,6 +13,14 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-6awafl": {
+  "suite": {
+   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37167723384",
+    "since": "cf79644e52d7badd19ec73ab9f27b7695931cc8f"
+   }
+  }
+ },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "suite": {
    "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
