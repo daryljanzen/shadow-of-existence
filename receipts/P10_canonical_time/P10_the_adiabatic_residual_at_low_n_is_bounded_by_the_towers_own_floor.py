@@ -41,6 +41,8 @@ asks for, since its closing condition is whether the residual reaches an observa
 and not what its exact value is.
 """
 import math
+import os
+import re
 import sys
 
 FAILED = []
@@ -51,6 +53,23 @@ def check(label, ok):
     if not ok:
         FAILED.append(label)
 
+
+#: ⛭ r7159+70.1 (70): THE FOUR FIGURES THIS FILE ATTRIBUTES TO P10 ARE READ FROM P10.  Until now each was a
+#: literal beside the words "P10's" in a file that opens no paper (`check_unread_figure`, r7151: NO-READ/FIGURE):
+#: the paper could move and this receipt would stay green against the old number.  ⇒ *They are parsed from
+#: `canonical_time.tex`'s own two sentences -- "this gives $0.61$ at $n=2$, $0.44$ at $n=3$, and $0.16$ by
+#: $n=10$" and "larger by a factor $2.32$" -- each pattern required to match exactly once, so a moved digit or a
+#: reworded sentence lands here as a failure.*  The measurements and their tolerances are unchanged.
+_P10 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus', 'canonical_time.tex')
+with open(_P10, encoding='utf-8') as _fh:
+    _SRC = _fh.read()
+_eps = re.findall(r'this gives \$(\d+\.\d+)\$ at \$n=2\$, \$(\d+\.\d+)\$ at \$n=3\$, and '
+                  r'\$(\d+\.\d+)\$ by \$n=10\$', _SRC)
+assert len(_eps) == 1, f'P10: the adiabaticity sentence matches {len(_eps)} time(s), not once'
+P10_EPS = dict(zip((2, 3, 10), (float(x) for x in _eps[0])))
+_rat = re.findall(r'the exact exponent is larger by a factor \$(\d+\.\d+)\$', _SRC)
+assert len(_rat) == 1, f'P10: the exponent-ratio sentence matches {len(_rat)} time(s), not once'
+P10_RATIO = float(_rat[0])
 
 I_EXACT = 3.3387       # int ds/|r| on the forced member, units alpha^-1  (P10 eq:adiabatic-exponent)
 I_NAIVE = 1.4396       # constant-frequency estimate at the turnaround value
@@ -86,14 +105,14 @@ for n in range(2, 11):
           f" {C_BRANCH/mu(n):12.3f}")
 print()
 
-# P10 states 0.61 at n=2, 0.44 at n=3, 0.16 by n=10 (r6975: at the corrected frequency)
-check("eps(n=2) reproduces P10's 0.61", abs(C_BRANCH / mu(2) - 0.61) < 0.01)
-check("eps(n=3) reproduces P10's 0.44", abs(C_BRANCH / mu(3) - 0.44) < 0.01)
-check("eps(n=10) reproduces P10's 0.16", abs(C_BRANCH / mu(10) - 0.16) < 0.01)
+# P10 states eps at n=2, 3 and 10 (r6975: at the corrected frequency) -- read from its sentence, r7159+70.1
+for _n in (2, 3, 10):
+    check(f"eps(n={_n}) = {C_BRANCH / mu(_n):.4f} reproduces P10's printed {P10_EPS[_n]}",
+          abs(C_BRANCH / mu(_n) - P10_EPS[_n]) < 0.01)
 
-# the exact-to-naive ratio P10 states as 2.32
-check("exact/naive exponent ratio is P10's 2.32",
-      abs(I_EXACT / I_NAIVE - 2.32) < 0.01)
+# the exact-to-naive ratio P10 states -- read from its sentence, r7159+70.1
+check(f"exact/naive exponent ratio {I_EXACT / I_NAIVE:.4f} is P10's printed {P10_RATIO}",
+      abs(I_EXACT / I_NAIVE - P10_RATIO) < 0.01)
 
 # --------------------------------------------------------------------- (iii)
 mono = all(suppression(n + 1) < suppression(n) for n in range(2, 20))

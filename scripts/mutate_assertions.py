@@ -1042,7 +1042,10 @@ def unread_figure(root, files=None, tex_root=None):
         asg, fns = _defs(tree)
         forb = _for_bindings(tree, src)
         checky = {k for k, fn in fns.items() if _VERDICT.search(_seg(src, fn) or '')}
-        reads = 'READS-PAPER' if (_TEXREAD.search(src) and _READ.search(src)) else 'NO-READ'
+        # ⛭ r7159+70.1: a receipt that reads its paper through `corpus/reach_baseline.py` (`RB.BODIES_TEX['P15']`)
+        #   names no `.tex` in a read call; the first partition filed two such receipts NO-READ (H1, C1).
+        reads = 'READS-PAPER' if ((_TEXREAD.search(src) and _READ.search(src))
+                                  or re.search(r'\bBODIES(?:_TEX)?\s*\[|\breach_baseline\b', src)) else 'NO-READ'
         m = re.match(r'(P\d+|p0)_', os.path.basename(os.path.dirname(f)))
         home = PAPER_OF_DIR.get(re.sub(r'^P0', 'P', m.group(1))) if m else None
         for n in ast.walk(tree):
