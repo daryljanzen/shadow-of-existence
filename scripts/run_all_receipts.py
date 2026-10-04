@@ -414,6 +414,69 @@ def budget(path, default):
     return LONG.get(os.path.basename(path), default)
 
 
+# ---------------------------------------------------------------- r7163+cc66.129/.131/.133 -> r7164
+# ** A RECEIPT THAT MUTATES A TRACKED FILE RUNS ALONE, BECAUSE TWO RECEIPTS OF THIS SUITE ARE
+#    INCOMPATIBLE BY DESIGN AND THE COLLISION HAS BEEN READING AS A FLAKE FOR DAYS. **
+#
+# `G51_the_twelve_can_all_exit_non_zero...` proves twelve receipts can fail by SEEDING A REAL DEFECT:
+# it writes the seeded source to the LIVE TRACKED FILE, runs the receipt to show it exits 1, and
+# restores it in a `finally` -- two seeds, each with a subprocess of up to 300s, so two tracked
+# receipt files are briefly wrong for up to ten minutes of a run.
+# `G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry` recomputes `TREE-DIGEST`,
+# "a hash of everything a receipt can READ", and asserts it matches the runner's stamp.
+#   ⇒ *** G51 MUTATES A TRACKED FILE DURING THE RUN.  G50 ASSERTS THAT NO TRACKED FILE MOVES DURING
+#       THE RUN.  The two cannot both pass reliably in the same parallel run -- they are incompatible
+#       by design, and whether they collide on a given run is a scheduling coincidence. ***  That is
+#       why it read as a flake: the collision is intermittent and the incompatibility is not.
+#
+# ** WHAT IT COST, measured by three independent instruments rather than argued. **  Five CI reds
+# across four heads on `P15_expansion_law`, whose own diagnostic printed the fingerprint (`Hc = 3/4`
+# for `H`'s coefficient while `sp.Rational(2,3)` in the same process printed `2/3`); `red_carry`'s
+# ledger at `⚠ CONTRADICTED`, carried 7 and cleared 4 on FOUR LINES INCLUDING `main` in 4.2 hours,
+# with `nothing it reads differs between the two` on every pair; and G50 itself, failing with `the
+# runner's stamp does not match the digest computed here` -- a receipt built for nothing else, which
+# was in the tree the whole time saying exactly what had happened.
+#
+# ** WHY SERIALISE AND NOT SCOPE G50.  ** The choice is not "make G51 safer", it is which of two
+# receipts is allowed to be true during a parallel run.  Scoping G50 to exclude the seed window would
+# weaken the only detector the corpus has for this class -- the one that reported this.  Seeding a
+# copy is ruled out for THIS receipt: a receipt runs from its own directory and reaches the corpus
+# through a root computed from that path, so a copy in a scratch directory would break the seeded
+# receipt's own reads.  (`A1_a_rule_made_of_spellings...` does seed a copy in a temp directory and is
+# the right pattern where the target reads nothing relative to itself.)
+#   ⇒ So the runner coordinates, which is where a conflict between two receipts belongs.
+#
+# ** THE LIST IS DECLARED, AND THE DETECTOR FOR IT GOING STALE IS G50 ITSELF -- which is why there is
+#    no static gate on this list. **  A scan was run before declaring it: every `open(..., 'w'|'a')`
+#    in `receipts/**` whose path argument mentions a tracked directory.  It returned five candidates;
+#    hand-read, FOUR were regex artefacts (the `w` of `'workflows'` inside a path) and the fifth
+#    writes to a temp directory.  *** It found none of the true cases and missed G51, which is the
+#    only one. ***  A proxy for "does this receipt write the tree" is not the instrument; G50 is, and
+#    it fires on exactly the thing this list exists to prevent.  So an undeclared mutator shows up as
+#    a G50 failure, which is a named red rather than a flake.
+#
+# ** AND THE EXPOSURE IS MEASURED RATHER THAN INFERRED FROM THE REDS, because the collision is a
+#    scheduling coincidence and a control run of the two receipts together did NOT reproduce it. **
+#    G51 was run while a 50 Hz poller watched both seeded files on disk:
+#        P15_expansion_law.py    seeded for 1.86s of a 3.4s run -- 55.4% of it, from 0.12s in
+#        AS_amplitude_leftward.py  seeded for 0.06s          --  2.4% of it, from 3.24s in
+#   ⇒ *** So a receipt scheduled into the window does not have bad luck; for the first file it has
+#       BETTER THAN EVEN ODDS of executing a seeded source whenever the two share a parallel scope.
+#       That is the number the five CI reds were sampling. ***
+#   ⌗ ** And the second file is the honest half of it: ** `AS_amplitude_leftward` is exposed too and
+#     has never been seen red.  Its window is thirty times smaller, so its clean record measures the
+#     window and not its safety -- which is why the remedy is coordination and not a per-file repair.
+_MUTATES_TREE = (
+    'G51_the_twelve_can_all_exit_non_zero_and_the_backlog_is_an_artefact.py',
+)
+
+
+def split_exclusive(todo):
+    """(mutators, the rest) -- mutators run alone, first, with no other receipt in flight."""
+    mut = [f for f in todo if os.path.basename(f) in _MUTATES_TREE]
+    return mut, [f for f in todo if os.path.basename(f) not in _MUTATES_TREE]
+
+
 # ⛭ r7019 (70.1) ⓵: A RECEIPT KILLED AT ITS BUDGET KEEPS WHAT IT SAID BEFORE THE KILL.  Until now `SLOW`
 #   carried only "exceeded Ns", so `Q1`'s ten suite timeouts (09-28/09-29) recorded nothing of where each one
 #   had got to.  ** The same rule, sizes and child environment as the two sweep instruments, through ONE
@@ -637,6 +700,15 @@ def main():
               + (f", stopping cleanly at {a.wall}s" if a.wall else ""))
         print()
     incomplete = []
+    # ⛭ r7164: the declared tree-mutators run FIRST and ALONE, before anything is submitted to the
+    #   pool, so no other receipt can be scheduled inside a seed window.  First rather than last
+    #   because the restore is in a `finally`: a mutator killed at its budget still restores, and
+    #   putting it first means the rest of the run reads a settled tree either way.
+    mutators, todo = split_exclusive(todo)
+    for f in mutators:
+        print(f"  EXCLUSIVE: {os.path.relpath(f, ROOT)} mutates a tracked file -- "
+              f"run alone, nothing else in flight")
+        cache.put(*run_one(f, budget(f, a.timeout)))
     if a.wall:
         # ** A BUDGET THAT STOPS THE RUNNER IS NOT THE SAME AS ONE THAT KILLS IT. **  Futures not
         # yet started are cancelled and the invocation reports what it did NOT reach by name, so
@@ -667,7 +739,9 @@ def main():
     # ⛭ r4554: record THIS invocation under its own id, with how many receipts it actually
     #   measured.  A re-assembly that measures nothing still costs a second or two and is recorded
     #   as such -- what it can no longer do is inherit another invocation's minutes.
-    cache.invs[_inv] = [time.time() - t0, len(todo) - len(incomplete)]
+    # r7164: the exclusive mutators ran outside the pool and are counted with the rest, so this
+    # figure stays what its name says -- how many receipts THIS invocation measured.
+    cache.invs[_inv] = [time.time() - t0, len(todo) + len(mutators) - len(incomplete)]
     if a.resume:
         cache._write()
     res = [cache.get(os.path.relpath(f, ROOT)) for f in files]

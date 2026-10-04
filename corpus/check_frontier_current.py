@@ -45,12 +45,24 @@ def runway_blocks(gen):
 
 
 def register_rows(reg):
+    """Each row is ONE LINE of the register, so the row ends at the next newline and nowhere else.
+
+    ⛭ r7164: THIS FUNCTION USED TO CUT A ROW AT 60,000 CHARACTERS and silently read the stump.
+      ** Found by `PO-78` reaching 68,599 characters: its `r7164` blocks sat past the cut, so this
+      gate read a row whose newest revision was `r7163`, compared it against a runway at `r7163`, and
+      reported the runway CURRENT while it lagged. **
+      ⇒ *** A STALENESS CHECK THAT TRUNCATES ITS INPUT GOES BLIND EXACTLY WHEN A ROW IS BEING WORKED
+          HARDEST -- the row grows past the cut because somebody is writing it, which is when its
+          runway is most likely to lag. ***  It is the same shape as the four blindness members in
+      `PO-78`: an instrument blind at the moment it matters, for a defensible-looking reason.
+      ⌗ The cut was a guard against `' |\\n'` not being found and the slice running to the end of the
+      file.  Splitting on the newline cannot run away, so the guard is not needed: a row is a line.
+    """
     out = {}
     for pid in re.findall(r'\| \*\*(PO-\d+)\*\*', reg):
         i = reg.index(f'| **{pid}**')
-        row = reg[i:]
-        row = row[:row.index(' |\n')] if ' |\n' in row[:60000] else row[:60000]
-        out[pid] = row
+        nl = reg.find('\n', i)
+        out[pid] = reg[i:nl if nl != -1 else len(reg)]
     return out
 
 

@@ -135,7 +135,29 @@ REPORTED_ONLY = {'READS-PAPER'}
 #   never checked.  *cc66.123 and .124 showed this inflating the apparent repair count; here it LOSES a
 #   debt, which is the worse direction.*  The row says so in its own note and the site is owed a read.
 #   ⌈ Routed rather than patched: making the partition per-site is this gate's design and not mine.
-CEILING = 10
+# ⛭⛭⛭ r7164 (66, the gate, taking that routing): THE PARTITION IS NOW PER-SITE, AND THE CEILING IS
+#   RE-MEASURED RATHER THAN CARRIED -- ** 10 -> 43, WHICH IS A RISE AND IS THE POINT. **
+#   `cc66` was right that this is the gate's design, and right about the direction: the file-level
+#   partition was crediting sites for a read that happened somewhere else in their file.  The partition
+#   now asks the SITE's own question in `mutate_assertions._paper_tainted` -- does the asserted
+#   expression depend, through this file's own bindings, on a name that came from a paper?
+#   ** MEASURED, one-way, and against the old partition before it was believed: ** `33` sites lost a
+#   credit they had not earned and `0` gained one, which is the direction the analysis permits.  Two
+#   were read by hand as the control:
+#     · `P15_the_sky_phase_fit...:61` asserts `abs(x3 - (-0.2404)) < 2e-3` under the label "the paper's
+#       -0.2404" -- a typed literal, in a file that does read its paper elsewhere;
+#     · `C26_the_onset_is_not_free:161` asserts `unw > 9.4` under "above P15's $+9.4\%$" -- the same.
+#   ⇒ *** SO THE BACKLOG DID NOT GROW; THE INSTRUMENT STOPPED DISCOUNTING IT. ***  `43` is what `10`
+#       always was once the file-level credit is withdrawn, and the `53 -> 22 -> 10` fall recorded in
+#       the blocks above was measured on a partition that was reading the file and reporting the site.
+#   ⛔ ** A CEILING MAY ONLY FALL, AND THIS ONE ROSE, SO THE DISTINCTION HAS TO BE STATED: ** the figure
+#     is not relaxed on the same instrument, it is re-measured on a different one.  The ratchet binds
+#     from `43` and the next revision cannot spend it.  *A ceiling carried across a partition change
+#     would have been a number about the old question defended against the new one.*
+#   ⌗ Two of the `43` are keys this partition surfaced in `60`'s `r7160` receipt rather than moved, and
+#     both are recorded `UNADJUDICATED` with the rest.  Every one of the `33` is owed a READ, and the
+#     baseline says `NOT YET READ` in each row rather than carrying a verdict nobody reached.
+CEILING = 43
 
 
 def read_baseline():

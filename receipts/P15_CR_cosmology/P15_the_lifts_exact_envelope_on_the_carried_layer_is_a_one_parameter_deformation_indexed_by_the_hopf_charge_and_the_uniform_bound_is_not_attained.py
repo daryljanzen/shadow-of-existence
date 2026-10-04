@@ -329,7 +329,17 @@ _UNITY = "There the isotropic mode crosses with amplitude exactly unity"
 _SPEC_LBL = r"\label{eq:squashed-spectrum}"
 _SPEC_REF = r"\eqref{eq:squashed-spectrum}"
 _BOUNDS = r"which puts the suppression exponent at no less than $\sqrt{2L}\,s_{\rm tot}$"
-_BASIS = "The deformation reaches the spectrum and not the basis"
+# ⛭ r7164 (66, the gate, repairing a receipt its own edit broke): THIS PIN READ THE BASIS CLAUSE
+#   UNSCOPED, and `60`'s `r7166` showed the clause is true of SCALARS only -- the deformation does
+#   reach the basis in the co-exact vector sector -- so landing that result put `For scalars` at the
+#   front of the sentence and this count went to zero.
+#   ⇒ *** THE SAME ONE-SENTENCE SCOPING BROKE PINS IN TWO RECEIPTS FROM TWO DIFFERENT SEATS IN ONE
+#       REVISION: this one and `r7166`'s own `Ⓔ③`. ***  That is the cost of a clause being
+#       load-bearing in several places at once, and it is an argument for pinning the part of a
+#       sentence that carries the claim rather than the sentence as typed.
+#   ⌗ Repaired by dropping the leading article from the pattern, so a scope word in front of the
+#     clause no longer breaks it while the claim it names is still what is matched.
+_BASIS = "deformation reaches the spectrum and not the basis"
 _SEG = r"the lift from the comoving turnaround to $r=0$"
 _OWED = ("it requires a source the single Nariai worldline of this construction does not carry")
 

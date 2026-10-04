@@ -563,8 +563,21 @@ gate("Ⓓ⑥  so no tensor eigenvalue is quoted on the squashed layer by this re
 head("Ⓔ  THE PAPER'S OWN CLAUSES, LOCATED IN THE CURRENT SOURCE AND PARTITIONED")
 
 _SCOPE = 'the scalar half is here'
-_BASIS = 'The deformation reaches the spectrum and not the basis'
-_FLOOR = 'every other mode is bounded below uniformly'
+_BASIS = 'deformation reaches the spectrum and not the basis'
+# ⛭ r7164 (66, the gate, repairing a receipt its own edit broke -- the standing exception): Ⓔ③ pinned
+#   `every other mode is bounded below uniformly` and the basis clause at their r7166 wording, and
+#   LANDING THIS RECEIPT'S RESULT rescoped both -- they now read `every other SCALAR mode ...` and
+#   `For scalars the deformation ...`, because the whole finding is that the scalar scope is where they
+#   are true.  ** So the receipt went red on the success of its own recommendation, for the fourth
+#   revision running in this family. **
+#   ⇒ *** AND IT IS A SHARPER FORM THAN r7163's: that one was a count of citations rising.  This is a
+#       receipt PINNING THE PROSE ITS OWN RESULT ASKS TO BE CHANGED -- so the pin is red exactly when
+#       the recommendation is taken, and green exactly while it is ignored. ***  `Ⓔ⑤` two gates below
+#       enumerates over the states the paper may produce and held through the same landing, which is
+#       the form that works; these two counted instead.
+#   ⌗ Repaired to the clauses as the scoping leaves them, with the scope word carried in the pattern
+#     rather than assumed away: `_FLOOR` keeps the word `scalar`, which is what this receipt put there.
+_FLOOR = 'every other scalar mode is bounded below uniformly'
 _UNMIX = 'so $(L,m)$ is conserved along the bead and nothing mixes'
 _PROP = 'The computation above is a statement about propagating field modes'
 

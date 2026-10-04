@@ -62,13 +62,20 @@ def changed_files(ref):
 #   ** Every selector in this file requires a receipt to NAME the changed file.  A receipt that reads its
 #   paper through `reach_baseline` names none -- it imports a module whose `bodies()` globs every
 #   `corpus/*.tex` -- so it was invisible to this gate ALWAYS, not merely in a window. **
-#   ⌈ Standing size, measured by 70: `21` registered receipts read their paper that way.  Its first count
-#   was `22` and it corrected itself: `L281/P1` only reads `reach_baseline.py`'s source as text and does
-#   not import it.
-#   ⇒ *An importer reads every paper, so for ANY paper change it counts as naming the changed one.  That
-#   is why this widening is safe rather than generous: the literal and numeric intersections after the test
-#   are untouched, so the cost is 21 more sources string-scanned and a reader still runs only when one of
-#   its pinned literals sits in a changed line.*
+#   ⌈ Standing size: `13` registered importers, measured on the tree at r7163 and CORRECTED FROM THE `21`
+#   this comment first carried.  70 recovered the command behind the `21` at r7163+70.1: it counted sources
+#   matching the READ partition's `\breach_baseline\b|BODIES(_TEX)?\s*\[`, which matches any MENTION of
+#   the module or a subscript of a `BODIES` table -- `22`, of which `21` have a trace recording a `.tex`
+#   read.  ** So a mention count was labelled an import count, and the lesson is 70's own: a census figure
+#   has to carry the predicate that produced it. **  (`18` is the same regex without the `BODIES[` half,
+#   which is why a reconstruction from imports could not reach either number.)
+#   ⇒ *An importer reads every paper, so for ANY paper change it counted as naming the changed one.*
+#   ⛔ AND THAT IS THE PART THAT WAS WRONG, measured by 70 at r7163+70.1 and corrected below: it is a
+#   widening with a false-positive CLASS, not merely a generous one.  Replayed over `main`'s last 30
+#   paper-touching commits, it over-selects `9` importers on every commit that changed only the GENERATED
+#   `appendix_receipts_*.tex` -- their traces show `bodies()` opens the 17 papers and no appendix.
+#   ⇒ *** A receipt that reads every paper does not read every `.tex`, and the predicate below asks what
+#       each one was SEEN to open instead of what its import implies. ***
 #   ⌈ Proved in 70's throwaway worktree before it was routed here: with it the seed's `S2` goes IN and
 #   `S1`, `S3`, `S4` are unchanged.
 _RB_IMPORT = re.compile(r'^\s*(?:import reach_baseline|from reach_baseline )', re.M)
@@ -79,6 +86,168 @@ def _names_the_change(src, names):
     if any(nm in src for nm in names):
         return True
     return bool(any(nm.endswith('.tex') for nm in names) and _RB_IMPORT.search(src))
+
+
+# ⛭ r7163+70.1 PROPOSAL (node 70) -- NOT A NAME TEST.  "Does this receipt read this file" answered by what it
+#   was SEEN to open, widened by what its source CAN open:
+#   ⓐ the trace: `receipts/READ_INDEX.json` records the file among the receipt's opened paths (`r`), or under a
+#      directory it read whole (`d`) when it opened a file of that kind at all (a `d` over corpus/*.py gates
+#      is not a paper read);
+#   ⓑ the source, by the conventions r7163+70.1's census found: it names the file; imports `reach_baseline`
+#      or loads it by path; globs / lists / walks `corpus/` itself; builds the path from the stem; or imports
+#      -- transitively, inside the repo -- or runs as a python child, a module that does any of these.
+#   ⓐ decides for a receipt traced at its current blob (plus a python child, which no trace sees); ⓑ decides
+#   for a receipt the trace has not met at this blob.  ⓐ is what sees a path built from DATA, which no source
+#   scan can; ⓑ is what sees a receipt landed since the trace, which no trace can.
+_GLOBWALK = re.compile(r"(glob\.glob|glob\(|iglob|os\.listdir|os\.walk|scandir|\.rglob\(|\.iterdir\()")
+_CORPUS_DIR = re.compile(r"""['"]corpus['"/]|corpus/|\bCORPUS\b""")
+_RB_PATH = re.compile(r"reach_baseline\.py['\"]")
+_IMPORTS = re.compile(r'^\s*(?:from\s+([\w.]+)\s+import|import\s+([\w.]+))', re.M)
+_CHILD = re.compile(r"""['"]([\w./-]+\.py)['"]""")
+_READ_INDEX = None
+_SRC = {}
+
+
+def _src(p):
+    if p not in _SRC:
+        try:
+            _SRC[p] = io.open(p, encoding='utf-8', errors='replace').read()
+        except OSError:
+            _SRC[p] = ''
+    return _SRC[p]
+
+
+def _index():
+    global _READ_INDEX
+    if _READ_INDEX is None:
+        import json
+        try:
+            _READ_INDEX = json.load(io.open(os.path.join('receipts', 'READ_INDEX.json'), encoding='utf-8'))['receipts']
+        except (OSError, ValueError, KeyError):
+            _READ_INDEX = {}
+    return _READ_INDEX
+
+
+def _module(name, here):
+    for d in (here, 'corpus', 'scripts', '.'):
+        p = os.path.join(d, name.replace('.', '/') + '.py')
+        if os.path.exists(p):
+            return p
+    return None
+
+
+def _globs_corpus(s):
+    L = s.splitlines()
+    for i, ln in enumerate(L):
+        win = '\n'.join(L[max(0, i - 1):i + 3])
+        # a glob near the corpus DIRECTORY, or a glob for papers by their extension wherever it is rooted (a helper
+        # living in corpus/ globs its own `dirname(__file__)` and never writes the word)
+        if _GLOBWALK.search(ln) and not ln.lstrip().startswith('#') and (_CORPUS_DIR.search(win) or '*.tex' in win):
+            return True
+    return False
+
+
+def _src_reaches(p, names, seen):
+    if p in seen or len(seen) > 40:
+        return False
+    seen.add(p)
+    s = _src(p)
+    if any(nm in s for nm in names):
+        return True
+    tex = any(nm.endswith('.tex') for nm in names)
+    if tex and (_RB_IMPORT.search(s) or _RB_PATH.search(s) or _globs_corpus(s)
+                or any(re.search(r"['\"]" + re.escape(nm[:-4]) + r"['\"]", s) for nm in names if nm.endswith('.tex'))):
+        return True
+    here = os.path.dirname(p)
+    for a, b in _IMPORTS.findall(s):
+        q = _module(a or b, here)
+        if q and _src_reaches(q, names, seen):
+            return True
+    if 'subprocess' in s:
+        for sc in _CHILD.findall(s):
+            q = next((c for c in (sc, os.path.join(here, sc)) if os.path.exists(c)), None)
+            if q and q != p and _src_reaches(q, names, seen):
+                return True
+    return False
+
+
+def _blob(p):
+    import hashlib
+    try:
+        b = io.open(p, 'rb').read()
+    except OSError:
+        return ''
+    return hashlib.sha1(b'blob %d\0' % len(b) + b).hexdigest()
+
+
+def _child_reaches(p, names):
+    s = _src(p)
+    if 'subprocess' not in s:
+        return False
+    here = os.path.dirname(p)
+    for sc in _CHILD.findall(s):
+        q = next((c for c in (sc, os.path.join(here, sc)) if os.path.exists(c)), None)
+        if q and q != p and _src_reaches(q, names, set()):
+            return True
+    return False
+
+
+def _reads_the_change(path, src, names):
+    """ⓐ for a receipt the trace has met UNCHANGED, the trace decides -- it saw which files were opened, so a glob
+    that filters out the appendices is not widened back over them -- plus the one read a trace cannot see, a
+    python child.  ⓑ for a receipt the trace has not met, or met at another blob, the source decides."""
+    import fnmatch
+    e = _index().get(path)
+    if e and _blob(path).startswith(e.get('sha', '-')):
+        if any(nm in src for nm in names):
+            return True
+        changed = [f for f in _changed_paths if os.path.basename(f) in names]
+        r = e.get('r', [])
+        if any(f in r for f in changed):
+            return True
+        for f in changed:
+            kind = os.path.splitext(f)[1]
+            if any(fnmatch.fnmatchcase(f, d) for d in e.get('d', [])) and any(
+                    x.startswith('corpus/') and x.endswith(kind) for x in r):
+                return True
+        return _child_reaches(path, names)
+    return _src_reaches(path, names, set())
+
+
+_changed_paths = []
+
+# ⛭⛭⛭ r7164 (66): NODE 70's `r7163+70.1` PREDICATE IS ADOPTED AS WRITTEN, AND IT REPLACES THIS GATE'S
+#   r7163 WIDENING RATHER THAN SITTING BESIDE IT.  The selector is this seat's, so the call is this
+#   seat's; what makes it an easy one is that the measurement condemns this seat's own patch.
+#   ** WHAT 70 MEASURED, with five of eleven pre-registered predictions MISSED and every miss reported:
+#   there are SIX ways a receipt reaches a paper and the gate saw one and a half. **  Of ten seeds planted
+#   one per convention, `run_touched_readers` with the r7163 patch in missed `8 of 8` non-literal ones --
+#   a glob over `corpus/*.tex`, an `os.listdir`, `reach_baseline` loaded by path through `importlib`, a
+#   helper module in `corpus/` globbing its own directory, a sibling import, a python child, and a path
+#   built as `PAPER + '.tex'`.  `receipt_scope --scope suite` missed `9 of 10`, the import control
+#   included.  The trace saw `9 of 10`, missing only the child process.
+#     ⇒ *** NO STATIC PREDICATE IS COMPLETE AND NO TRACE IS COMPLETE EITHER, so the predicate is both: a
+#         path built from DATA is invisible to every source scan and the trace sees it; a read through a
+#         python child is invisible to the trace and the source sees it; and a receipt that landed after
+#         the trace was taken -- 105 of them, plus 75 edited since -- is invisible to the trace alone. ***
+#   ** THE COST AND THE GAIN, replayed commit by commit rather than argued. **  Over `main`'s last 30
+#   first-parent commits touching `corpus/*.tex`, each checked out and both selectors run against its
+#   parent: `1,919` receipts run against today's `1,470`.  `507` added, of which `338` the trace confirms
+#   opened a file that commit changed -- ** 11.3 true readers per commit that today's gate never asks **,
+#   across about 90 distinct receipts, mostly the `L204`, `L221`, `L165` and `P15/C*` glob readers.  `58`
+#   dropped, and all 58 are correct: they are this seat's over-selected importers on appendix-only commits.
+#   The price is `16.9` more receipts run per commit and `0.6`s of scan against `0.2`s.
+#   ⌗ *What it does not claim, in 70's words: not that the extra 338 would have been RED.  They read the
+#     edited paper; whether a pinned literal moved is the intersection's job and that is unchanged.  The
+#     replay shows only that today's gate never asked them.*
+#   ⛔ ** THE ONE HOLE LEFT IS NAMED AND IT IS A PROCESS RULE, WHICH IS WHY NO CODE HERE CLOSES IT: ** a
+#     NEW receipt whose path comes from data would be invisible to the source and absent from the trace.
+#     The census finds zero such receipts today (`TABLE` 0, `COMPUTED-NAME` 1), and it closes by writing a
+#     receipt's index entry when it lands -- `sweep_runner_reads.py --from <the new receipt>`, one run of
+#     a receipt the gate runs anyway.  Routed by 70 as a rule rather than written as a patch, correctly.
+#   ⌈ And the four `D-SUPERSET` artefacts 70 found by hand are why ⓐ's directory arm requires that the
+#     receipt opened a file OF THAT KIND: a `d: corpus/*` entry recorded for a receipt that read most of
+#     `corpus/` names every paper and opened only `corpus/*.py` gates.  Membership of a glob is not a read.
 
 
 def main():
@@ -125,7 +294,8 @@ def main():
     #   that do both.*  ⌗ The stated cost: a receipt that reads the paper and happens to contain the
     #   number for another reason is run anyway, which is runtime and not correctness.
     nums = set(re.findall(r'(?<![\w.])\d+\.\d{2,}(?![\w])', blob))
-    names = set(os.path.basename(f) for f in changed_files(ref))
+    _changed_paths[:] = changed_files(ref)
+    names = set(os.path.basename(f) for f in _changed_paths)
     if nums and names:
         for root, _dirs, files in os.walk('receipts'):
             for fn in files:
@@ -136,7 +306,7 @@ def main():
                     src = io.open(path, encoding='utf-8', errors='replace').read()
                 except OSError:
                     continue
-                if _names_the_change(src, names) and any(n in src for n in nums):
+                if _reads_the_change(path, src, names) and any(n in src for n in nums):
                     hits.add(path)
     # ⛭⛭⛭ AND THE THIRD HALF, ADDED r7151 BECAUSE THIS GATE MISSED A BREAK FOR THE THIRD TIME AND
     #   THE CAUSE WAS ITS OWN STATED LIMIT RATHER THAN A NEW ONE.
@@ -164,7 +334,7 @@ def main():
                     src = io.open(path, encoding='utf-8', errors='replace').read()
                 except OSError:
                     continue
-                if not _names_the_change(src, names):
+                if not _reads_the_change(path, src, names):
                     continue
                 for lit in lits_re.findall(src):
                     if lit in blob:

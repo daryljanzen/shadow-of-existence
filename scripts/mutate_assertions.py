@@ -1029,6 +1029,66 @@ def _in_tex(lit, toks):
     return False
 
 
+def _paper_tainted(tree, src):
+    """The names in this file whose value comes, transitively, from reading a paper.
+
+    ⓐ a binding is a ROOT when its right-hand side's own source text reads a `.tex` or reaches the
+    corpus through `reach_baseline`/`BODIES[`; ⓑ it is tainted when its right-hand side mentions a
+    tainted name; ⓒ iterated to a fixpoint, which terminates because the set only grows and is
+    bounded by the file's names.  ⌗ A loop target over a tainted iterable is included, because
+    `for k, v in BODIES.items()` binds the paper's own text.
+    """
+    binds = []                                   # (name, value-node)
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Assign):
+            for t in n.targets:
+                for nm in (x for x in ast.walk(t) if isinstance(x, ast.Name)):
+                    binds.append((nm.id, n.value))
+        elif isinstance(n, (ast.AugAssign, ast.AnnAssign)) and isinstance(n.target, ast.Name) and n.value:
+            binds.append((n.target.id, n.value))
+        elif isinstance(n, (ast.For, ast.AsyncFor)):
+            for nm in (x for x in ast.walk(n.target) if isinstance(x, ast.Name)):
+                binds.append((nm.id, n.iter))
+        elif isinstance(n, ast.withitem) and n.optional_vars is not None:
+            for nm in (x for x in ast.walk(n.optional_vars) if isinstance(x, ast.Name)):
+                binds.append((nm.id, n.context_expr))
+    tainted, prepared = set(), []
+    for nm, val in binds:
+        try:
+            txt = ast.get_source_segment(src, val) or ''
+        except Exception:                                      # noqa: BLE001
+            txt = ''
+        names = {x.id for x in ast.walk(val) if isinstance(x, ast.Name)}
+        if _TEXREAD.search(txt) or re.search(r'\bBODIES(?:_TEX)?\s*\[|\breach_baseline\b', txt):
+            # ⌗ A ROOT IS A MENTION OF A PAPER, NOT A READ OF ONE, and the reason is the commonest idiom
+            #   in this corpus: `P15 = os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')` on one line and
+            #   `p15 = open(P15).read()` on the next.  ** A first draft required the path and the read in
+            #   ONE expression and so rooted at neither, which marked 54 sites NO-READ that plainly read
+            #   their paper -- measured against the file-level partition before it was believed. **  The
+            #   file-level test above remains the outer bound, so a bare `.tex` string in a file that
+            #   never reads one taints nothing.
+            tainted.add(nm)
+        else:
+            prepared.append((nm, names))
+    # ⌗ AND A HELPER'S NAME IS A ROOT WHEN ITS BODY READS A PAPER, because taint does not flow through a
+    #   `def`: `def paper_one(pat): ... open(P15) ...` then `v = paper_one(...)` has no paper in the
+    #   binding's own text.  That is the shape of this corpus' repaired receipts (the `r7153` template),
+    #   so without this the repairs would be the sites that lost their credit.
+    for n in ast.walk(tree):
+        if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef)):
+            body = ast.get_source_segment(src, n) or ''
+            if _TEXREAD.search(body) or re.search(r'\bBODIES(?:_TEX)?\s*\[|\breach_baseline\b', body):
+                tainted.add(n.name)
+    grew = True
+    while grew:
+        grew = False
+        for nm, names in prepared:
+            if nm not in tainted and (names & tainted):
+                tainted.add(nm)
+                grew = True
+    return tainted
+
+
 def unread_figure(root, files=None, tex_root=None):
     out = []
     tex = _tex_texts(tex_root or root)
@@ -1044,8 +1104,34 @@ def unread_figure(root, files=None, tex_root=None):
         checky = {k for k, fn in fns.items() if _VERDICT.search(_seg(src, fn) or '')}
         # ⛭ r7159+70.1: a receipt that reads its paper through `corpus/reach_baseline.py` (`RB.BODIES_TEX['P15']`)
         #   names no `.tex` in a read call; the first partition filed two such receipts NO-READ (H1, C1).
-        reads = 'READS-PAPER' if ((_TEXREAD.search(src) and _READ.search(src))
-                                  or re.search(r'\bBODIES(?:_TEX)?\s*\[|\breach_baseline\b', src)) else 'NO-READ'
+        # ⛭ r7164 (66, the gate, on `cc66.132`'s routing): THE PARTITION IS PER-SITE AND NOT PER-FILE.
+        #   ** The defect, and `cc66` found it costing a debt rather than a credit. **  This label was
+        #   computed ONCE from the whole file and then stamped on every site in it, so one `open()`
+        #   anywhere reclassified every assertion in the file.  `cc66.123` and `.124` showed that
+        #   inflating an apparent repair count by one apiece; at `.132` it RETIRED a site whose
+        #   attribution had never been checked -- `(i) the interacting quartic energy is EXACTLY
+        #   (l_P/a)^2`, which the paper does not state at all (it writes `a^{-1}\sum_j f_j(\ell_P/a)^j`,
+        #   so the figure is that series' `j=2` term).  *** A gate that credits a site for a read
+        #   happening elsewhere in its file is measuring the file and reporting the site. ***
+        #   ** WHY PROVENANCE AND NOT A NARROWER PROXY. **  The tempting fix is to scope the same string
+        #   test to the enclosing function.  That is a smaller window on the same proxy, and it fails the
+        #   moment a module-level read feeds a check inside a function -- which is the common shape here.
+        #   So the question is asked of the SITE's own figure: does the asserted expression depend, through
+        #   this file's own assignments, on a name bound from a paper read?
+        #   ⓐ ROOTS: a name bound from a call whose source text reads a `.tex`, or reaches the corpus
+        #     through `reach_baseline`/`BODIES[`.  ⓑ CLOSURE: any binding whose right-hand side mentions a
+        #     tainted name, to a fixpoint.  ⓒ THE SITE: tainted if the verdict expression's own free names
+        #     meet that set.
+        #   ⌗ ** Direction, stated because it governs the ceiling: ** this can only move a site from
+        #     `READS-PAPER` to `NO-READ`, never the other way, so the owed count can only RISE.  It does
+        #     not find new sites and it does not reclassify a verdict; it withdraws credit that was never
+        #     earned.  The ceiling below is re-measured on this partition rather than carried over.
+        #   ⌈ ** And the file-level answer remains the outer bound: ** a file with no paper read anywhere
+        #     has no tainted names, so every site in it is `NO-READ` exactly as before.  What changes is
+        #     only the file that DOES read and carries sites that do not touch the read.
+        _reads_any = ((_TEXREAD.search(src) and _READ.search(src))
+                      or re.search(r'\bBODIES(?:_TEX)?\s*\[|\breach_baseline\b', src))
+        _tainted = _paper_tainted(tree, src) if _reads_any else set()
         m = re.match(r'(P\d+|p0)_', os.path.basename(os.path.dirname(f)))
         home = PAPER_OF_DIR.get(re.sub(r'^P0', 'P', m.group(1))) if m else None
         for n in ast.walk(tree):
@@ -1082,6 +1168,8 @@ def unread_figure(root, files=None, tex_root=None):
                 where = 'PARTLY-IN-TEX'
             else:
                 where = 'IN-NO-TEX'
+            _site_names = {x.id for x in ast.walk(verdict) if isinstance(x, ast.Name)} | lnames
+            reads = 'READS-PAPER' if (_reads_any and (_site_names & _tainted)) else 'NO-READ'
             out.append(dict(receipt=os.path.relpath(f, root), site=f'{n.lineno}:{n.col_offset}', read=reads,
                             where=where, figs=figs, label=' '.join(ltext.split())[:110]))
     out.sort(key=lambda r: (r['receipt'], tuple(int(x) for x in r['site'].split(':'))))
