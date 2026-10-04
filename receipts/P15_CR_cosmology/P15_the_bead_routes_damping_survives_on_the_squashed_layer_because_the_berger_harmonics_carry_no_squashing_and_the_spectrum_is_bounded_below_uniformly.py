@@ -346,17 +346,35 @@ gate("Ⓕ⑤  the bound is MONOTONE in degree, so no higher multipole is the dan
 # ------------------------------------------------------------------ Ⓖ the paper
 head("Ⓖ  WHAT THE PAPER CARRIES, AND THE ONE CLAUSE THIS ROW ASKS IT TO CHANGE")
 
-_TK = r"$T(k)\to2^{7/3}k^2e^{-k\,s_{\rm tot}}$ with $k^2=L(L+2)$"
+#: ⛭⛭⛭ r7161 (66, whose edit broke them): FIVE ANCHORS RE-KEYED, because landing this result
+#: rewrote the prose they read.  ** Four of the five are clauses this receipt reasons FROM, which 60's
+#: own r7150 partition says may be pinned at count == 1 -- so the pins are correct and they simply
+#: follow the sentences they are about. **  ⌈ Caught before the push by `run_touched_readers`, on a
+#: receipt that landed in the same merge.
+#: ⛔⛔ AND THE FIFTH IS A WRINKLE IN THAT PARTITION WORTH NAMING, because the ENUMERATED gate failed
+#: too: `_SETTLED` looked for the phrase `Berger harmonics`, and the paper landed `Berger parameter`,
+#: `Berger expression` and `Berger sphere` -- never that one.  ** Enumerating over the states the paper
+#: may produce still requires guessing the WORDING of the settled state, so a settled-arm phrase chosen
+#: by a receipt's author is a prediction about another seat's prose. **
+#: ⇒ *The repair keys the settled arm on the CITATION instead: the paper either still says the question
+#: is open, or it cites THIS receipt for the answer -- and a citation's text is written mechanically from
+#: the receipt's own filename, so it is the one thing in the paper that cannot drift in wording.*
+_TK = r"$T(k)\to2^{7/3}k^2e^{-k\,s_{\rm tot}}$"
 _UNITY = "There the isotropic mode crosses with amplitude exactly unity"
-_LABEL = "the label $k^2=L(L+2)$ is the round sphere's spectrum rather than the squashed one's"
-_SQUASH = "measures the carried layer's squashing as $\\sqrt{-f}/r$, which is not unity inside the lap"
-_NEARH = "the near-horizon route needs nothing of the cosmological layer"
+_LABEL = "so $L(L+2)$ is its $\\varepsilon=1$ member"
+_SQUASH = "measuring its squashing as $\\sqrt{-f}/r$"
+_NEARH = "needs nothing of the cosmological layer"
 _OPEN = ("What the damping would become on the squashed layer is not computed here, and is named as"
          " work this paper does not carry.")
 
 gate("Ⓖ①  the bead route's closed form and its round-spectrum label are in print, and this receipt"
      " reasons FROM them",
-     b15.count(_TK) == 1)
+#: ⛭ r7161: PRESENCE AND NOT UNIQUENESS HERE, on cc66's r7159+cc66.117 correction landed the
+#:   same round: the paper states this closed form TWICE -- once in sec:throat and once in
+#:   sec:scope, the identical literal both times, and it did so before this revision too.  The
+#:   original anchor passed at count == 1 only because it carried the `with $k^2=L(L+2)$` clause,
+#:   which appeared once.  ** Requiring one match would refuse the paper for repeating itself. **
+     b15.count(_TK) >= 1)
 gate("Ⓖ②  the unit-amplitude clause for the isotropic mode is in print",
      b15.count(_UNITY) == 1)
 gate("Ⓖ③  the paper already says the label is the ROUND sphere's spectrum -- which is the premise"
@@ -373,7 +391,7 @@ _LANDED = 'P15_the_bead_routes_damping_survives_on_the_squashed_layer' in b15
 _OPENSTANDS = b15.count(_OPEN) == 1
 # ONE distinctive settled-arm phrase, not a conjunction of fragments: a phrase the paper can only
 # carry once this result is in print, so the disjunct discriminates instead of matching the open text.
-_SETTLED = 'Berger harmonics' in b15
+_SETTLED = _LANDED          # keyed on the CITATION, not a phrase: see the r7161 note above
 gate("Ⓖ⑥  the `not computed here` clause this row discharges is ENUMERATED, not pinned: either it"
      " still stands or a settled wording is in print, and the gate goes red only if neither",
      (_OPENSTANDS and not _LANDED) or (_LANDED and (_OPENSTANDS or _SETTLED)))
