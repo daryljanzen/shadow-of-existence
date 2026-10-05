@@ -7964,3 +7964,67 @@ is next in your own ordering and I will take that unless you say otherwise.*
 ⌗ *`15` of `15`, `0.2` s. ⌗ **And on `PO-85`'s strike: a measured negative that no corpus-wide grade
 instrument is possible is the better outcome and `70` should have the credit for it.** I will keep
 doing the check by hand where it is cheap, which is what the two instances showed it is.*
+
+## ⚑ ORDER ⓶ IN PROGRESS — **NOT DELIVERED, AND I AM TELLING YOU WHY BEFORE I HAVE IT RATHER THAN AFTER**
+
+*`r7171` ORDER ⓶: re-derive `P16`'s* `the $S^3$ tensor tower starts at $L=2$ and has no $k=0$ member`
+*on the construction's own `$S^3$`, so the containment is a comparison of two proved things. **I have
+one real finding and one control failure, and no receipt. Both are below.***
+
+### ⛔ THE CONTROL FAILURE, FIRST, BECAUSE IT IS WHY THERE IS NO RECEIPT
+
+*I extended `r7166`'s left-invariant frame machinery from one-forms to symmetric two-tensors — spin
+matrices for the frame derivatives, the connection from the same structure constants — and built the
+transverse-traceless kernel level by level.* ⛔ ***It does not reproduce the round sphere's six Killing
+vectors.*** *The gauge map's kernel comes back `3` at the constant level and `0` at the next, where the
+three right-invariant Killing fields should appear.*
+
+⇒ **So the per-level counts that machinery produces are not to be trusted, and I am not writing them
+into a receipt.** *The sequence it gives — `5, 6, 7, 8, 10, 12, 14` for `$L=0\dots6$` — is not a
+representation-theoretic shape either, which is the second reason to distrust it. **Most likely the
+one-sided spin action and the `$(2j+1)$` degeneracy factor do not compose the way I assumed for a
+two-index object**, and that is a real bug and not a tolerance.*
+
+### ✔ BUT ONE FINDING SURVIVES INDEPENDENTLY OF THE MACHINERY, AND IT CHANGES WHAT THE CLAIM CAN MEAN
+
+***At `$L=0$` the transverse-traceless condition is satisfied by EVERY constant traceless symmetric
+left-invariant tensor — all five of them — and it takes two lines with no spin matrices in them:***
+
+- *the connection's trace `$\Gamma^d{}_{aa}$` vanishes identically on the round frame;*
+- *and the remaining term contracts `$\varepsilon_{dac}h_{ad}$`, which is zero for ANY symmetric
+  `$h$` by antisymmetry.*
+
+⇒ *** SO `$\operatorname{div}h\equiv0$` FOR EVERY CONSTANT SYMMETRIC `$h$`, AND THE `$L=0$`
+    TRANSVERSE-TRACELESS SPACE IS NOT EMPTY — IT IS FIVE-DIMENSIONAL. ***
+
+⌗ ***Which means `P16`'s* `no $k=0$ member` *cannot mean that the condition is unsolvable there.*** *It
+must mean those five solutions are **excluded** — and `P16`'s own sentence says exactly why, in the
+clause right before it:* `a genuinely homogeneous shear is not a perturbation of a closed ball at all`
+*, so it would be* `a change of background class, from FRW to Bianchi IX`*. **The five constant modes
+ARE that homogeneous shear.***
+
+⇒ ⌗ **So the floor is not a counting fact about a differential condition. It is a statement about
+which solutions are perturbations of the background rather than changes of it** — and a correct
+derivation has to show that, not just exhibit an empty kernel. *That is what I now know the order
+needs, and it is worth more than the count I failed to get.*
+
+### ⌗ MY RECOMMENDATION FOR THE ROUTE, SINCE MINE BROKE
+
+*Two ways, and I would take the first:*
+
+- ⓵ ***Representation theory on `$S^3=SU(2)$` with BOTH factors carried***, *so the Killing count is a
+  control the method has to pass before any tensor count is believed. The `$(j_L,j_R)$` labelling makes
+  the gauge, homogeneous and physical pieces separable by construction rather than by a rank
+  computation, and **the six Killing vectors are then a cheap test I can run first.***
+- ⓶ *Or explicit harmonics in coordinates, which is heavier and loses the algebraic clarity, but has
+  no composition subtlety to get wrong.*
+
+⌗ **I will take ⓵ unless you would rather it waited.** *And I would rather hand you the Killing control
+passing before I hand you a floor.*
+
+### ⌗ WHY YOU ARE HEARING THIS NOW
+
+***Because `r7184`'s own guard was that a limit of mine was one scope too wide for the third time, and
+the mirror of that habit is claiming a derivation I have not got.*** *The count was there to be
+written up and it would have looked like an answer. **The Killing control is the only reason I know it
+is not one**, and that is the kind of thing worth saying out loud rather than quietly fixing.*
