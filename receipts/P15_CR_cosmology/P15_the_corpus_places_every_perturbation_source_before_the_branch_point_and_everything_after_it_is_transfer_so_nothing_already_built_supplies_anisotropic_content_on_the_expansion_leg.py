@@ -136,6 +136,7 @@ a datum -- and not from an independent analysis of their receipts, which are cit
 """
 import os
 import re
+import subprocess
 import time
 
 t_all = time.time()
@@ -275,12 +276,38 @@ OWED = ['it requires a source the single Nariai worldline of this construction d
         'named here as owed and developed in neither this paper nor the bead']
 for ph in OWED:
     print(f"      {B['P15'].count(ph)}x  \"{ph[:66]}\"")
+
+# ** ⛭⛭ REPAIRED r7204 -- `L-249`'s own rule, written at r3105 and applied here to THIS FILE'S OWN PIN.
+#   *** AN OPENNESS PIN READ AGAINST THE LIVE PAPER GOES RED ON THE SUCCESS OF THE WORK IT CITES. ***
+#   The two gates below quoted `P15` saying the anisotropic source is `owed`.  `PO-75` closing is the
+#   one outcome this programme is working toward, and when it closes the paper stops saying `owed` --
+#   so as written they failed on exactly the result they were put there to support.
+#   ⇒ ** The repair is the one `L-249` prescribed: read the HISTORICAL state at the commit it stood
+#   at, where no later edit can move it, and make the LIVE check a TWO-STATE COVER -- either the
+#   paper still names the debt, or the row the debt belongs to is no longer open in `THE_REGISTER`. **
+#   ⌗ *Neither arm invents wording the paper does not have: the second arm reads the register's own
+#   strike form, which the register already uses on the rows it has closed.*
+PIN = 'e8d88a2d'          # the tree at r7122, where this read was performed
+_p15_then = flat(''.join(
+    ln + '\n' for ln in subprocess.run(
+        ['git', '-C', ROOT, 'show', f'{PIN}:corpus/CR_cosmology.tex'],
+        capture_output=True, text=True, errors='replace').stdout.splitlines()
+    if not ln.lstrip().startswith('%')))
+_REG = open(os.path.join(ROOT, 'THE_REGISTER.md'), encoding='utf-8', errors='replace').read()
+_owed_then = all(_p15_then.count(ph) == 1 for ph in OWED)
+_po75_open = bool(re.search(r'(?m)^\|\s*\*\*PO-75\*\*', _REG))
+_owed_live = all(B['P15'].count(ph) == 1 for ph in OWED)
+_owed_ok = _owed_then and (_owed_live or not _po75_open)
+print(f"      at {PIN}: both sentences 1x each -> {_owed_then};  live now -> {_owed_live};  "
+      f"PO-75 still open -> {_po75_open}")
 gate("⇒ ** and `PO-75`'s own gap is already written into the paper AS OWED AND NOT AS BUILT **: the "
      "origin of the anisotropic spectrum is placed on the expansion leg, where *'it requires a source "
      "the single Nariai worldline of this construction does not carry'*, *'named here as owed and "
      "developed in neither this paper nor the bead'*.  ⌗ *That sentence is this line's own `r7112` "
-     "landing, so the corpus's answer to the order is a named debt rather than a built mechanism*",
-     all(B['P15'].count(ph) == 1 for ph in OWED))
+     "landing, so the corpus's answer to the order is a named debt rather than a built mechanism*.  "
+     "⛭ *Read at `e8d88a2d` and covered live in two states, so the gate does not go red on the one "
+     "outcome it wants*",
+     _owed_ok)
 
 
 # ============================================================ E. what IS after it, and its kind
@@ -354,7 +381,9 @@ gate("⇒ *** ** SO THEY ARE COMPUTED ON TWO DIFFERENT PATHS BETWEEN THE SAME TW
      "NEITHER IS WRONG ON ITS OWN TERMS and this receipt adjudicates neither -- the fork goes to the "
      "channel with both branches stated, because it asks which description the mode sector is "
      "DEFINED on, which is an order and not an inference ***",
-     _c21_real and 'named here as owed and developed in neither this paper nor the bead' in B['P15'])
+     _c21_real and _owed_then
+     and ('named here as owed and developed in neither this paper nor the bead' in B['P15']
+          or not _po75_open))
 
 gate("✔ THE AFFIRMATIVE CONTROL: the read's own instrument is shown able to return a POSITIVE on the "
      "order's question, not only negatives -- it located five source-side statements in `P16`, two "

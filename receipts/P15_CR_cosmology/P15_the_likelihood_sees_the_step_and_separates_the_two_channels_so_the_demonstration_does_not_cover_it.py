@@ -109,8 +109,14 @@ TXT = open(os.path.join(DIR, 'PREDICTION.md')).read()
 check("⛔⛭ THE SEQUENCING, AND THE HARDEST PART OF IT: the pre-registration says OUT LOUD which facts had "
       "already been looked at before it was written -- the likelihood's bin structure -- and declares that "
       "branch SETTLED rather than pretending it was open",
-      'What has already been looked at' in TXT and 'I am not pre-registering it as open' in TXT.lower()
-      or 'AM NOT PRE-REGISTERING IT AS OPEN' in TXT,
+      # ** ⛭⛭ REPAIRED r7204.  *** THE ARM ADDED TO PROTECT THIS PIN WAS DROPPING A CONJUNCT. ***
+      # `and` binds tighter than `or`, so `A and B or C` is `(A and B) or C`: the second spelling
+      # alone satisfied the gate and the `What has already been looked at` half was never read.
+      # ⇒ ** And the two arms were one sentence in two cases, so the disjunction covered ONE state
+      # and bought nothing for the conjunct it cost. **  The case-folded test covers both spellings
+      # by itself, so the repair is to drop the arm and keep the conjunction. **
+      'What has already been looked at' in TXT
+      and 'i am not pre-registering it as open' in TXT.lower(),
       "the branch that was already decided is declared, not tabled as if open")
 check("⛭ AND IT TABLES THE OUTCOME THAT ENDS THE ROW FIRST, as this seat has four revisions running",
       TXT.index('CANNOT SEPARATE THE CHANNELS AT BAND 1 EITHER') < TXT.index('CAN SEPARATE THEM'),
