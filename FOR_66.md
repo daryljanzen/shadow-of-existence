@@ -9,7 +9,7 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #286**, draft) — nothing waits on the chat window.*
+`claude/shadow-of-existence-setup-5tjf0b` (**a fresh PR, draft — number on this line once opened**) — nothing waits on the chat window.*
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282 and #283 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
@@ -9555,3 +9555,68 @@ inventory block during verification — `main`'s copies were stale because `EXPL
 without re-running it — and that regeneration is committed. It now records `UNCLASSIFIED 1`
 truthfully rather than hiding it.* ⇒ **So everything on this branch is green except that one gate,
 and that one gate is red on the base.**
+
+---
+
+## ⛭⛭ `r7179+cc66.143` — **YOUR RE-KEYING IS RIGHT AND IT REACHED THE CLASSIFIER BUT NOT THE VERDICT. THE RECEIPT EXITED `0` PRINTING THE PRE-REPAIR WORLD, WHICH IS `cc66.138`'s MEMBER IN MY OWN VOICE**
+
+*Answering `r7179`, which orders nothing. Receipt unchanged in what it reads; `25` checks, `rc=0`.
+Measurements in `PO13_WORKING_STATE` `r7179+cc66.143`.*
+
+### ⓵ ✔ YOUR REPAIR IS CORRECT AND I RAN IT BEFORE SAYING SO
+
+**Classified on the values rather than on whether a shape is present — that is the right fix, and
+your diagnosis of why mine could not fire is exact.** *`DC_approx`'s pattern matches the SENTENCE,
+which the repair leaves standing while changing the number inside it, so `GOT` being empty was never
+going to signal a discharge.* ⌗ Run on `main` at `a918498d`: Part 1 prints **`✔ DISCHARGED`**, the
+two cost checks assert the construction's side, and the tolerance walk reads `0`.
+
+### ⓶ ⛔⛔ BUT THE TERMINAL VERDICT WAS NEVER BRANCHED, AND IT IS THE PART THAT GETS READ
+
+| what the run printed | true on this tree? |
+|---|---|
+| Part 1 classifier: `✔ DISCHARGED` | ✔ |
+| Part 5: the clause and `r7164`'s bracket admit the construction's range | ✔ |
+| Part 6: `0 found by walking receipts/` | ✔ |
+| **the verdict**: *"the repair crosses the printed displacement ceiling `2.93`, turning `r7164`'s Ⓑ⑤ red unless that clause moves in the same pass"* | **✘ — it had already moved** |
+
+⇒ ***The receipt exited `0` with its verdict contradicting its own classifier three hundred lines
+above it.*** **That is `cc66.138`'s member in this receipt's own voice** — *there an `INDEX` row
+carried the negation of the repaired receipt; here the verdict carries the negation of the branch,
+and the verdict is what a terminal reader and the appendix row actually carry.* ⌈ *Your re-keying
+fixed which way the branch tests. What I had never done is let anything downstream of it know there
+were two ways.*
+
+**Repaired: the verdict prints the classifier's own state.** Under `DEFECT`, the collision is in
+print and repairing it costs the clause and the bracket. Otherwise, discharged **by name**, with the
+cost recorded as paid and the background half still asserting. *So the two cannot part again.*
+
+### ⓷ ⛭ AND THE SAME SHAPE ONE STEP FURTHER OUT, IN MY KEY NAMES
+
+***After your repair, `stale_DC` holds `1.4011`.*** All five keys were named for the configuration
+expected there while their patterns are keyed on a sentence's FORM — **so every name stated the
+opposite of its contents while the code was correct.** *The same defect you fixed one level in.*
+
+⇒ Renamed to `DC_approx`, `r0_approx`, `st_as_ratio`, `st_as_bare`, `DC_as_eq`. **Your patterns and
+your branch logic are untouched** — only the names, and the historical note keeps `stale_DC` so your
+`r7179` comment still locates what it describes. ⌗ *A name that cannot go stale is the only kind
+that cannot be read wrong either — which is `PO-78`'s label rule from my own `Ⓕ③`, arriving in my
+own identifiers.*
+
+### ⓸ ⌗ ONE LIMITATION I AM RECORDING RATHER THAN REPAIRING, SO IT IS NOT READ AS A DEFECT LATER
+
+**Your branches compare against the literal sets `{1.395, 1.4011}` and `{2.76, 2.774}`.** *So a
+THIRD legitimate configuration — a later refit moving the stretch again — refuses as a drift.* ⇒ *I
+think that is the right default: this receipt's subject is these two configurations, and a third is
+new work rather than a relapse, which the refusal should make someone come and look at.* **Noted in
+`PO13_WORKING_STATE` so the refusal reads as a scope boundary. If you would rather it widened, say
+so and it is a two-line change.**
+
+### ⇒ WHAT IS YOURS
+
+- **Nothing.** `r7179` ordered nothing and this is the discharge of its one unreported state.
+- ⌗ *The `INDEX` row is repaired in the same pass: `27` → `25` checks, the four tolerances recorded
+  as CLOSED rather than as open, and the cost cell restated as paid.* **Both appendices regenerated.**
+- ⚠ *`PR #286`'s commits are in `main` (`60512ead`, `6971c416`, `b94acb1f`) but the PR is still
+  OPEN. I have restarted the branch from `main` and opened a fresh PR for this round, per the
+  header's own rule; **#286 wants closing and is not mine to close safely without you knowing**.*

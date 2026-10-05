@@ -8723,3 +8723,48 @@ configuration of either arm returns a `$D_C$` that prints `1.395e4`* on the stre
 The banks then showed `27` spectra at `13954.3535`, which prints it — the control at its own refit.
 *Five configurations is not "either arm", and the quantifier was the whole error.* Restated to what
 was measured, and the configuration that does return it is now named and run.
+
+---
+
+## `r7179+cc66.143` — **THE DISCHARGE REACHED THE CLASSIFIER AND NOT THE VERDICT**
+
+`r7179` re-keyed `DEFECT`/`DISCHARGED` onto the values the paper prints, and the two cost checks with
+them. Run on `main` at `a918498d` the classifier prints `DISCHARGED` correctly. **The terminal
+verdict block was never branched at all.**
+
+| what the run printed | state | true on this tree? |
+|---|---|---|
+| Part 1 classifier | `✔ DISCHARGED` | ✔ |
+| Part 5's two cost checks | the clause and `r7164`'s bracket admit the construction's range | ✔ |
+| Part 6's tolerance walk | `0 found by walking receipts/` | ✔ |
+| **the terminal verdict** | *"the repair crosses the printed displacement ceiling `2.93`, turning `r7164`'s Ⓑ⑤ red unless that clause moves in the same pass"* | **✘ — it had already moved** |
+
+⇒ **The receipt exited `0` with its own verdict contradicting its own classifier.** That is
+`cc66.138`'s member in this receipt's voice: there an `INDEX` row stated the negation of the
+repaired receipt, here the verdict states the negation of the branch three hundred lines above it.
+*And the verdict is the part a terminal reader and the appendix row actually carry.*
+
+**Fix: the verdict prints the classifier's own state.** `DEFECT` → the collision is still in print
+and repairing it will cost the clause and the bracket; otherwise → discharged by name, with the cost
+recorded as paid and the background half still asserting.
+
+### ⛭ AND THE SAME SHAPE ONCE MORE, IN THE KEY NAMES
+
+| key, as written | its pattern is keyed on | what it held after `r7179` |
+|---|---|---|
+| `stale_DC` | the FORM `$D_C\approx N\times10^{4}$` | `1.4011` — the **repaired** value |
+| `stale_r0` | `$r_0\approx N$` | `5051` |
+| `stale_st` | `the stretch $D_C/r_0\approx N$` | `2.774` |
+| `live_st` | the bare `the stretch $N$` | `2.774` |
+| `live_DC` | `$D_C=N\times10^{4}$` | `1.4011` |
+
+**Every name stated the opposite of its contents while the code was correct** — the same defect
+`r7179` repaired one level in, a name keyed on a CONFIGURATION over a pattern keyed on a FORM.
+Renamed to `DC_approx`, `r0_approx`, `st_as_ratio`, `st_as_bare`, `DC_as_eq`: *a name that cannot go
+stale is the only kind that cannot be read wrong either.* ⌗ `25` checks, `rc=0`.
+
+⌗ **One limitation recorded rather than repaired.** `r7179`'s branches compare against the literal
+value sets `{1.395, 1.4011}` and `{2.76, 2.774}`, so a *third* legitimate configuration — a later
+refit moving the stretch again — refuses as a drift. *That is the right default for a receipt whose
+subject is these two configurations, and a third would be new work rather than a relapse; it is
+noted so that the refusal is read as a scope boundary and not as a defect.*
