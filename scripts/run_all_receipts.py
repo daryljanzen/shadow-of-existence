@@ -280,10 +280,11 @@ LONG = {
     #   ⌗ *THE RUNNER, twice, on saturated runs: `fad794492e` (351 in scope, 2009s wall) and
     #     `90e34c1155` (169 in scope, 1992s wall), both `0 fail, 1 over timeout` naming this file.
     #     A >=46x gap against the local cost, where `C59`'s entry documents a worst observed spread
-    #     of 1.47x.  **The gap is not explained.**  Starvation on a run holding several 600-1400s
-    #     memory-heavy children fits it, and that is a hypothesis and not a measurement -- a first
-    #     reading of this red was reported as a one-off on a green that, checked afterwards, did not
-    #     have this file in scope at all.*
+    #     of 1.47x.  **At the time this entry was written the gap was UNEXPLAINED** and starvation on
+    #     a run holding several 600-1400s memory-heavy children was offered as a hypothesis and not a
+    #     measurement -- a first reading of this red having been reported as a one-off on a green
+    #     that, checked afterwards, did not have this file in scope at all.  *The block below
+    #     supersedes that: it is explained now, and by a measurement rather than by the hypothesis.*
     #   ⇒ *** SO THE NUMBER IS THE TABLE'S SMALLEST STEP AND NOT A COMFORTABLE ONE: 900s, 1.5x the
     #       cap it crossed.  Chosen so that the next completing run yields the FIRST real upper
     #       figure, after which this entry should be re-declared to the 1.7x product -- as `C59`'s
@@ -304,6 +305,21 @@ LONG = {
     #     ⌗ ** 900s THEREFORE STANDS, now on an upper measurement rather than a lower bound, and the
     #       stop condition below is UNSPENT: it has not been crossed. **  *A later seat wanting to
     #       tighten this needs the distribution and not another single reading.*
+    #   ⛭⛭ ** AND THE GAP IS NOW EXPLAINED, BY A MEASUREMENT THE INSTRUMENTS FORCED OUT OF THIS
+    #     RECEIPT. **  *The first version of the accompanying receipt asserted wall-clock ratios.  That
+    #     was a design error -- a timing moves between builds, so the tolerance sweep flagged it, and
+    #     the subprocess runs die under the read trace -- and the gates were removed.  **But on the
+    #     one runner that ran them before removal, at `98d11b2d6b`, they measured it: `15`s alone
+    #     against `112`s for four concurrent copies of the same file.** *
+    #     ⇒ *** A `7.5x` CONTENTION SPREAD ON THE RUNNER, where this machine shows `1.0x` across the
+    #         same four copies.  That is the missing factor: against a `~13`s base, four-way
+    #         contention of that size on a run also holding several 600-1400s memory-heavy children
+    #         makes the >600s excursions ordinary rather than anomalous. ***
+    #     ⌗ *So `C59`'s `1.47x` is the spread of ONE heavy receipt measured alone-to-runner; it is not
+    #       the spread a light receipt sees under four-way contention, and this entry is the first in
+    #       the table to have that figure.  **The `46x` first reported as unexplained was the
+    #       composition of a `7.5x` scheduler effect with a short base -- recorded here because the
+    #       earlier claim that it was unexplained is now false.***
     #   ⚠ *On `Q1`'s pattern: THE DECLARATION IS THE SYMPTOM'S FIX, NOT THE CAUSE'S.  The receipt is
     #     merged, reviewed work and its computation is untouched -- rewriting a landed result's
     #     verification to fit an infrastructure budget is the worse trade.  The profile says its cost

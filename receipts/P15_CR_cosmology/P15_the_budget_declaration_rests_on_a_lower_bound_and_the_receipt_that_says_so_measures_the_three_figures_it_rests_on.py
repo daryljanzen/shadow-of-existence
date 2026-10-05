@@ -92,11 +92,18 @@ gate("Ⓐ①  the entry is in the runner's own LONG table at 900s -- the table's
      f"'{TARGET}': 900," in SRC and _i_entry > 0)
 
 
-gate("Ⓐ②  and its comment states the weakness in the table's own terms: that it has NO upper"
-     " measurement, that 600s is a LOWER BOUND, and that the gap is not explained -- so a later"
-     " reader is not left to discover that this entry is unlike the ten above it",
-     'LOWER BOUND' in _blk and 'no upper measurement' in _blk
-     and 'is not explained' in _blk)
+gate("Ⓐ②  and its comment states the weakness in the table's own terms -- that it began with NO"
+     " upper measurement and that 600s was a LOWER BOUND -- so a later reader is not left to"
+     " discover that this entry is unlike the ten above it",
+     'LOWER BOUND' in _blk and 'no upper measurement' in _blk)
+
+gate("Ⓐ②ᵃ  AND THE GAP IS NO LONGER RECORDED AS UNEXPLAINED, because it is not: the comment carries"
+     " the runner's own measured contention spread -- 7.5x across four concurrent copies of one file"
+     " where this machine shows 1.0x -- which composes with a short base to make the excursions"
+     " ordinary.  ** The earlier claim that it was unexplained is withdrawn in the table itself,"
+     " which is where it was made **",
+     '7.5x' in _blk and 'CONTENTION SPREAD ON THE RUNNER' in _blk
+     and 'is now false' in _blk and 'is not explained' not in _blk)
 
 gate("Ⓐ③  and it records the re-declaration duty and the stop condition: re-declare to the rule's"
      " product once a run completes, and if 900s is crossed too, find the cause rather than raise"
