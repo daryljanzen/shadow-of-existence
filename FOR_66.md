@@ -9711,3 +9711,108 @@ not make it the headline.***
   with the control's* — it should say the arm's pull is small *compared with its own constraint's
   width*, which is the statement that survives.
 - ⌗ *Nothing in `P15` is touched. No new grid, no `LEAFGEOM`, no `$\Delta N_{\rm eff}$`.*
+
+---
+
+## ⚑⚑ `r7183+cc66.145/146` — **BOTH ORDERS. THE NO-FIT CONFRONTATION IS `3.00` PER BIN AND ITS RESIDUAL CARRIES A `9.1σ` MODULATION AT `ℓ_A` — WHICH THE OPERATION YOU ORDERED CANCELS. AND ALL THREE RATES AGREE, BECAUSE THE COLLAPSE YOU FEARED WAS FOUND AND SPLIT AT `r7095`**
+
+*Answering `r7183` ⓵ and ⓶. Receipts: `P15_the_no_fit_confrontation_...` (12 checks) and
+`P15_all_three_steps_of_chi_...` (10 checks), both `rc=0`. Figure
+`corpus/fig_acoustic_nofit.pdf`, generator `corpus/make_fig_acoustic_nofit.py`. Tables in
+`PO13_WORKING_STATE` `r7183+cc66.145/146`. **No new physics run — every spectrum was banked.***
+
+### ⓵ THE FIGURE, AND THE NUMBER ON IT
+
+| | `$\chi^2$`/bin | |
+|---|---|---|
+| control, nothing fitted | **1.129** | |
+| **CR arm, nothing fitted** | **3.002** | **`2.660×`** |
+| control, refitted | 0.994 | |
+| CR arm, refitted | 1.581 | `1.591×` |
+
+*179 bins, `$100\le\ell\le1900$` — `fig:acoustic`'s own range, so the two figures are comparable.
+⚠ Not the refit receipt's 185-bin range; both are stated wherever they appear.*
+
+### ⓶ ⛔⛔ AND THE OPERATION YOU ORDERED IS THE ONE THAT CANCELS WHAT IT WAS ORDERED TO SHOW
+
+***A bin one period wide averages a full cycle of any modulation at that period, so its mean is that
+modulation's own mean.*** **Binning AT `$\ell_A$` is the one operation guaranteed to remove a signal
+at `$\ell_A$`.** *Measured: the arm's band means change sign twice across six bands — `+1.273` to
+`−0.808`, a slow swing, not a per-period alternation. Robust to the anchoring (edges on `100`, on
+the first peak `222`, on `220.4`, on the troughs — all give 2–3).*
+
+⇒ ***Folded by phase WITHIN the period instead, anchored on the arm's own first peak:***
+
+| one harmonic at `$\ell_A$` | amplitude | |
+|---|---|---|
+| **CR arm, nothing fitted** | **`1.3729 ± 0.1512`** | **`9.08σ`** |
+| CR arm, refitted | `0.8128 ± 0.1180` | `6.89σ` |
+| control, nothing fitted | `0.2028 ± 0.1126` | `1.80σ` |
+| control, refitted | `0.1051 ± 0.1049` | `1.00σ` |
+
+**The modulation you believed was there is there, at `9.1σ`, and it is the arm's — the control is
+consistent with none. Four free parameters halve the amplitude and leave `6.9σ`.** ⌈ *So the
+rejection is shaped at the acoustic period, the shape survives the refit, and the parameters absorb
+part of it rather than its cause.*
+
+⌗ ***Both panels are drawn.*** *The period bins because they are what you asked for and what a
+reader will look for, and because what they DO show — a slow swing — is a true and separate
+statement. The fold beside them, labelled as the one that answers.* **If you would rather the figure
+carried only the fold, say so; I have kept your operation because being shown why it fails is worth
+more than its absence.**
+
+### ⓷ ORDER ⓶ — THREE STEPS, THREE AGREEMENTS
+
+| step | the code uses | the rule assigns | |
+|---|---|---|---|
+| the conversion `$z\to\chi$` | `$\chi=\eta_0-\eta$` **identically**; grid on `Hgeom` = radiation-free | comoving separation across leaves → stacking | **AGREE** |
+| the ionisation history | `Hrec = Hleaf`, `LEAFREC=1` by default | a process running IN the content → leaf | **AGREE** |
+| the optical depth's measure | `$d\tau$` unweighted, `VISLEAF=0` | a photon-path observable → stacking | **AGREE** |
+
+***Step (1) cannot be misclassified, which is stronger than its being right: `$d\chi/d\eta = 1$`, so
+there is no conversion step with a rate in it.*** *The two clocks sit between `$r_s$` and `$\eta$`,
+not between `$\chi$` and `$\eta$` — `r6929+cc66.44` already says so in those words.* ⌗ *And step (3)
+agrees by a RULING rather than a default: `r7095` derived it and withdrew `r7092`'s `VISLEAF=1`.*
+
+### ⓸ ⛭⛭⛭ AND THE COLLAPSE YOU FEARED IS EXACTLY WHAT `LEAFGEOM` WAS
+
+*You wrote: "if the conversion is being done on the leaf rate because the ionisation history is,
+that is a classification error of exactly the kind the rule exists to prevent."* ⇒ ***That is
+`LEAFGEOM`: ONE switch over the conformal-time grid AND the ionisation history, which the rule
+assigns OPPOSITELY — so no setting satisfied both and the rule's own configuration was unreachable
+from the file.*** **Found, named and split at `r7095`**, which pulled `LEAFREC` out and defaulted it
+**ON** — the only clock switch in that file whose default has ever moved.
+
+⌗ *Measured here rather than read off the comment: the grid on `Hphys` and recombination on `Hleaf`
+in one and the same default run.* **So the question you could not see the answer to from the chat
+seat was answered two revisions before you asked it, and the answer is that it was classified
+separately because someone noticed the knob could not express the distinction.**
+
+### ⓹ ⌗ AND YOUR `+14.6` PER CENT IS CONFIRMED, NOT CORRECTED
+
+**`43.2138` against `37.7993` Mpc at the pair the paper carries → `+14.3` per cent.** *Invariant
+under `LEAFREC` to four decimals, so it survives `r7095`'s default change — the one switch that
+could have made the figure you quote pre-date the rule's own configuration.* ⌗ *What `LEAFREC` moves
+is where the visibility sits, not how wide it is.*
+
+⚠ ***What ⓶ removes is one candidate explanation for the contrast. It does not explain it.*** *The
+sector's disagreement stands exactly where `r7183` leaves it, and the receipt says so rather than
+letting an agreement read as a result.*
+
+### ⓺ ⌗ ONE TRAP OF MINE, RECORDED BECAUSE THE WARNING WAS ALREADY IN THE FILE I COPIED
+
+**The figure's first draft plotted raw `X_DATA`, which is binned `$C_\ell$` — so the peaks vanished
+under the falling plateau and the top panel showed a featureless curve.** *`make_fig_acoustic_two_arm.py`
+carries that exact warning in its own source, naming it as "the same trap the locator hit at
+`cc66.28`, here in the figure".* ⇒ **The warning was in the file I modelled this on, and I walked
+into it anyway; what caught it was rendering the figure and looking at it.** *Recorded in
+`PO13_WORKING_STATE` with the `$\mathcal{D}_\ell$` factor now applied at every plot call.*
+
+### ⇒ WHAT IS YOURS
+
+- **The figure is built and checkable** — the receipt recomputes its numbers from the spectra and
+  requires the figure's own banked `.npz` to agree, so a drift in the generator fails there.
+- ⛔ ***I have not touched `P15`.*** *The `\includegraphics` and the caption are yours. If you want a
+  caption from me, say so and I will draft one against the numbers rather than you re-reading them.*
+- ⛔ **One decision is yours**: whether the figure keeps the period-binned panel. *I kept it, for the
+  reason in ⓶ — but it shows a null by construction and you may not want a null panel in print.*

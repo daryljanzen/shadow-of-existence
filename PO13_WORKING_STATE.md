@@ -8840,3 +8840,79 @@ Planck's `$100\theta_* = 1.04109 \pm 0.00030$`, the arm's background sits `$-15.
 
 ⌗ **No new grid.** The order said read the banked minima if they are there; they were, in
 `refit_grid185/` with its launcher beside them.
+
+---
+
+## `r7183+cc66.145/146` — **THE NO-FIT CONFRONTATION, AND THE THREE RATES OF `$\chi(z)$`**
+
+### ⓵ THE CONFRONTATION THE PAPER HAS NEVER CARRIED
+
+Four banked spectra, each identified by its own stored `$D_M$`. Scored on `fig:acoustic`'s own bins
+and lensing operator, 179 bins, `$100\le\ell\le1900$`.
+
+| | `$\chi^2$` | per bin | `$D_M$` |
+|---|---|---|---|
+| control, nothing fitted | 202.02 | **1.129** | 13864.6627 |
+| **CR arm, nothing fitted** | **537.38** | **3.002** | **14011.4567** |
+| control, refitted | 177.88 | 0.994 | 13954.3535 |
+| CR arm, refitted | 282.96 | 1.581 | 14017.0386 |
+
+arm/control: **`2.660×` with nothing fitted, `1.591×` refitted.**
+
+### ⛭⛭ THE RESIDUAL, TWO WAYS — AND THE ORDERED ONE CANCELS THE RESULT
+
+| | binned AT `$\ell_A$` (6 bands) | folded by phase within `$\ell_A$` |
+|---|---|---|
+| CR arm, nothing fitted | `+1.273 +0.022 −0.000 −0.808 +0.192 +1.066`, 2 sign changes | **`1.3729 ± 0.1512` → `9.08σ`** |
+| CR arm, refitted | — | `0.8128 ± 0.1180` → `6.89σ` |
+| control, nothing fitted | — | `0.2028 ± 0.1126` → `1.80σ` |
+| control, refitted | — | `0.1051 ± 0.1049` → `1.00σ` |
+
+⇒ **A bin one period wide averages a full cycle of any modulation at that period, so its mean is
+that modulation's own mean.** *Binning AT `$\ell_A$` is the one operation guaranteed to remove a
+signal at `$\ell_A$`.* The fold, anchored on the arm's own first peak at `$\ell=222$`, is what shows
+it. **Both are drawn.** ⌗ *Robust to the anchoring: edges on `100`, on `222`, on `220.4` and on the
+troughs all give 2–3 sign changes in the bins and the same harmonic in the fold.*
+
+⌗ **One trap of this seat's, walked into on the first draft and recorded.** The top panel was plotted
+as raw `X_DATA`, which is binned `$C_\ell$` — so the peaks vanished under the falling plateau and the
+figure showed a featureless curve. `make_fig_acoustic_two_arm.py` carries that exact warning in its
+own source, naming it as *"the same trap the locator hit at `cc66.28`, here in the figure"*. **The
+warning was in the file this figure was modelled on, and reading it was what caught it.** *The
+`$\mathcal{D}_\ell$` factor is now applied at every plot call with the reason beside it.*
+
+### ⓶ THE THREE STEPS OF `$\chi(z)$` FOR THE VISIBILITY
+
+| step | the code uses | the rule assigns | verdict |
+|---|---|---|---|
+| the conversion `$z\to\chi$` | `$\chi=\eta_0-\eta$` **identically**; grid on `Hgeom` = `Hphys` (radiation-free) | a comoving separation read across leaves → stacking | **AGREE** |
+| the ionisation history `$x_e$` | `Hrec = Hleaf`, `LEAFREC=1` **by default since `r7095`** | a process running IN the content → leaf | **AGREE** |
+| the optical depth's measure | `$d\tau$` unweighted, `VISLEAF=0` | a photon-path observable → stacking | **AGREE** |
+
+⇒ ***Step (1) cannot be misclassified: `$d\chi/d\eta=1$`, so there is no conversion step with a rate
+in it.*** The two clocks sit between `$r_s$` and `$\eta$`, **not** between `$\chi$` and `$\eta$`.
+⌗ *Step (3) agrees by a RULING — `r7095` derived it and withdrew `r7092`'s `VISLEAF=1`: weighting
+`$d\tau$` by `Jac` counts the scatterings of a photon crossing the same proper length in less time.*
+
+### ⛭⛭⛭ AND THE COLLAPSE THE ORDER FEARED WAS FOUND AND SPLIT AT `r7095`
+
+`LEAFGEOM` was **one switch over two objects the rule assigns oppositely** — the conformal-time grid
+and the ionisation history — so no setting satisfied both and *the rule's own configuration was
+unreachable from the file*. `r7095` split `LEAFREC` out and defaulted it **ON**, the only clock
+switch in that file whose default has moved. **Measured here: the grid on `Hphys` and recombination
+on `Hleaf` in one and the same default run.**
+
+### ⌗ THE WIDTH THE ORDER QUOTES — CONFIRMED
+
+| | FWHM in `$\chi$` |
+|---|---|
+| arm, at `(68.60, 0.2973)` | **43.2138 Mpc** |
+| control, at `(67.40, 0.3150)` | **37.7993 Mpc** |
+| ratio | **+14.3 %** (the order quotes `+14.6`) |
+
+**Invariant under `LEAFREC` to four decimals**, so it survives `r7095`'s default change — the one
+switch that could have made the quoted figure pre-date the rule's own configuration. *What `LEAFREC`
+moves is where the visibility sits (`$\eta_{\rm LS}$` by `1.8` Mpc), not how wide it is.*
+
+⚠ **This removes one candidate explanation for the contrast; it does not explain it.** *The sector's
+disagreement stands exactly where `r7183` leaves it.*
