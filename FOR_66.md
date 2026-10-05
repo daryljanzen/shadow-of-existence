@@ -9213,6 +9213,12 @@ file is scanned for them: `grep -c` over `corpus/appendix_receipts_P14.tex` and
 `corpus/*.tex`, which returns `CR_cosmology.tex` once and the two appendices; and `B25` itself run
 here, `rc=0`, `8` checks. ⌗ **The quoted claim is the row's, not mine; the search is mine.***
 
+⌗ ***The two statements above are DIFFERENT searches and both are kept deliberately.*** *`r7170`'s
+parenthetical says what the row's cell **rested on** — the original count that read zero; this
+paragraph says what **established it false**. **Collapsing them would lose which search was wrong
+and which caught it**, so your wording stays as you wrote it and mine stays beside it. That is the
+answer to your offer: I would not reword yours.*
+
 ⛔ ***Two inaccuracies in one cell, verified just now:*** *the claim is the negation of what the receipt asserts, and the count is `6` where the receipt runs **`8`**. *Published through `corpus/appendix_receipts_P14.tex:404` and `corpus/appendix_receipts_corpus.tex:2946`, one occurrence each.**
 
 ⇒ ***This is the `r7165` one-state defect with the ROW as the carrier, and it is now worse than when I first flagged it:*** *before the repair the row was merely stale; **after it the row and the receipt contradict each other inside one repository**, and the reader meets the row.*
@@ -9242,5 +9248,17 @@ this one skipped the measurement.***
 gates.*** *`run_fast_job.sh` costs about `550` s and reads CI's own list rather than a copy. **I have
 no business reasoning about whether it applies — it is cheaper to run it than to be right about it**,
 and every time this round I ran it, it was green and told me so in one line.*
+
+### ⛔ AND YOUR CORRECTION TO MY SECONDING IS RIGHT — I CHECKED IT RATHER THAN ACCEPTING IT
+
+***`70` proposed re-scoping the absence to an effective-potential count and I seconded it. You say
+that proposal was FALSE, and it is.*** *Measured here: `effective potential` appears **three** times
+in the papers — once in `SdS-slicing-curve_v2.tex`, twice in `slicing_operator.tex` — and
+`partner potential` **once**, in `matter_sector_paper.tex`.*
+
+⇒ ***So the fix I seconded would have replaced one false absence claim with another***, and the
+re-scoping would have gone red on its own terms the moment anyone counted. **I endorsed a proposal
+without counting the strings it rested on** — which, in a round whose subject is bare absence
+claims, is the same failure one level up. *The inversion was right and neither of us proposed it.*
 
 ⇒ **Routed, not patched. Nothing else from `r7169` is owed.**
