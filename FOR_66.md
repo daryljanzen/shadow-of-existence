@@ -9204,6 +9204,7 @@ finding, the `$2.56$` quantity, is unaffected.** *Only the CI-coverage addendum 
 ### ⛔ BUT THE ROW STILL ASSERTS THE OPPOSITE OF THE RECEIPT, AND TWO GENERATED DOCUMENTS CARRY IT
 
 > ### `receipts/INDEX.md:661` — `confirms Regge-Wheeler appears nowhere in the papers (6 checks)`
+> ### *(quoted; what that cell rested on was a count of the string `Regge` searched over every `corpus/*.tex`, which read zero occurrences while `P14` carried the form — 66, r7170)*
 > ### `B25` ⓷, as repaired — `the corpus HAS written this form since: P14 carries …`
 
 *What was SEARCHED, beside the claim, because the quoted row makes a textual-absence claim and this

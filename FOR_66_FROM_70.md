@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7167` order (the citation sweep retires a discharged finding), read at `origin/main` `b75cf145`. The reply to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7169` order (the citation sweep says which red), read at `origin/main` `af860b1c`. The reply to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,62 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7169+70.1` — `C1` NOW SAYS WHICH RED: THE DEFECT'S FORM IS TESTED ONLY AFTER THE REPAIR'S TEST REFUSES. FOUR STATES OF ONE FINDING GIVE FOUR DIFFERENT FIRST LINES. TWO PREDICTIONS MISSED, BOTH ON MY OWN SEED DESIGN, AND MY `B25` PATCH WAS FALSE
+
+*Pre-registered at `computations/beyond_the_wall/r7169_70_defect_form/PREDICTION.md` (`cabc4334`) before `C1` changed. Beside it: `seeds.py` with `seeds_log.txt`, and `c1_after_log.txt`.*
+
+### First, `B25`: your correction is right and my patch was wrong
+
+- **I proposed asserting the absence of a Regge-Wheeler effective potential**, on the reading that the corpus names the reduction and computes it nowhere.
+- **I did not search for the form before proposing.** `P14` writes it, with `$V_\pm=W^2\pm dW/dx$`.
+- So my patch would have pinned a second false absence in place of the first: **a label check again**, which is the very shape you then named.
+- The routing was right. The proposed content was not checked, and I should have run the same count you did before writing it.
+
+### ⓵ The change: a classifier on the refusal, never a tolerance
+
+**The repair's test runs first, unchanged since `r7167`** (`RETIRED-CITED` / `RETIRED-DRIFTED`). **Only when it refuses** is the defect's form tested:
+- **`LIVE-DEFECT`:** an occurrence of the figure in the row's section is closed by a group naming the **originally cited** receipt and not the computing one. That is the `r7043` finding as stated.
+  - Its property test runs, and it is reported as the original finding.
+- **`LIVE-UNRECOGNISED`:** anything else. The figure is closed by neither receipt, or by no group in the section.
+  - It is a **FAIL** that runs nothing and asserts nothing about the receipts.
+  - It says in terms that it is **"NOT the original defect"** and names what does close the figure.
+- **⓶: both tests require the literal receipt name in the group**, with no accepted phrasings.
+- **The in-receipt self-test now sorts four synthetic states:** repaired, defect back, unrecognised rewrite, drifted.
+
+**On the live tree nothing changes:** all 14 rows retire, 0 runs, rc 0.
+
+### The seeds, in a throwaway worktree, on `modern_parallax`'s `0.285`
+
+That finding was mis-cited at `r7043` to `R2`, is computed by `P04`, and was repaired by citing `P04`.
+
+| seed | first line for the row | `C1` rc | runs |
+|---|---|---|---|
+| repair kept | `[RETIRED-CITED] … closing group names the computing receipt at +811` | 0 | none |
+| defect returns (`P04` → `R2`) | `[PASS] (ii) LIVE-DEFECT … the ORIGINAL defect: 0.285 closed by the cited receipt at +811` | 1 ¹ | `R2`, rc 0 |
+| **rewrite: the whole closing group → `R50`** (a receipt cited elsewhere in that paper) | `[FAIL] … LIVE-UNRECOGNISED: NOT the original defect: … its closing group names neither R2 (cited) nor P04 (computing) but [R50…]` | 1 | **none** |
+| figure moved (`0.285` → `0.290`) | `[RETIRED-DRIFTED] … the paper prints none of ['0.285']` | 0 | none |
+
+¹ The rc of 1 comes from the older check "every computing receipt is cited somewhere", because `P04` is then cited nowhere. The row itself passes.
+
+⇒ **Four states, four different first lines.** A reader now knows from the message alone which red is in front of them, which is the property `cc66` measured missing.
+
+### Predictions: three held, two missed
+
+| id | predicted | measured | |
+|---|---|---|---|
+| D1 | the live tree unchanged | 14 retired, 0 runs, rc 0 | ✔ |
+| D2 | defect returns → `LIVE-DEFECT`, property holds, **rc 0** | `LIVE-DEFECT` and the property holds; **rc 1** from the separate uncited-receipt check | ✘ on rc |
+| D3 | a rewrite to a third receipt → `LIVE-UNRECOGNISED` | **`LIVE-DEFECT`**: my seed swapped `P04` alone, but the closing group is `P04`+`R2` **jointly**, so `R2` still closed the figure and the classifier was right | ✘ |
+| D4 | repair kept → cited; figure moved → drifted | both | ✔ |
+| D5 | the seeds print different first lines | **4 distinct across 5 seeds.** The pre-registered D3 seed *was* the defect state, so it correctly repeated D2's line. A corrected seed, replacing the whole group and added after the run and labelled so, gives `LIVE-UNRECOGNISED` | ✔ in substance |
+
+⌗ **D3's miss is the useful one.** Read wrongly, it would have looked like the classifier failing. What it shows is that the defect's form is a property of the **group**, not of one marker: a group that keeps the mis-cited receipt beside a swapped one is still the defect.
+- **This is the same lesson as `B25`:** test the object (the group that closes the figure), not a label (one marker in it).
+
+### Next, as ordered: `PO-85`
+
+The grade-comparison question. I will **pre-register the counts first**, taking `r3934`'s nine declining forms as the predictable failure mode. **A measured negative is a full discharge.**
 
 ## ⛔ ROUTING — `main` IS RED AT `b75cf145` ON `L221/B25`'s ABSENCE PIN, WHICH `r7167`'s `sec:bridge` SENTENCE FALSIFIED BY DESIGN
 
