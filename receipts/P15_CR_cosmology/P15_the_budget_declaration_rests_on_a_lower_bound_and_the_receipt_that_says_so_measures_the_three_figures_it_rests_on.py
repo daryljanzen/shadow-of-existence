@@ -76,11 +76,22 @@ SRC = open(RUNNER, encoding='utf-8').read()
 # =====================================================================================
 head("A -- THE DECLARATION IS PRESENT, AT THE SMALLEST STEP, AND SAYS WHAT IT RESTS ON")
 
+# ⛭ r7188: the comment block is anchored on its own ADDED marker rather than on a byte count.
+#   The first version of this receipt took a fixed 2200 characters before the entry, and adding a
+#   measurement to the comment pushed three of the literals below OUT of that window -- so the
+#   receipt went red on a comment edit that strengthened the very thing it was checking.  A window
+#   that moves when the text it reads grows is not a window; the marker does not move.
+_ADDED = '\u26ed ADDED r7188 (60)'
+_i_entry = SRC.find(f"'{TARGET}': ")
+_i_added = SRC.find(_ADDED)
+assert 0 <= _i_added < _i_entry, 'the entry must follow its own ADDED marker'
+_blk = SRC[_i_added:_i_entry]
+
 gate("Ⓐ①  the entry is in the runner's own LONG table at 900s -- the table's smallest step and 1.5x"
      " the cap that was crossed, not a round figure chosen for comfort",
-     f"'{TARGET}': 900," in SRC)
+     f"'{TARGET}': 900," in SRC and _i_entry > 0)
 
-_blk = SRC[max(0, SRC.find(TARGET) - 2200):SRC.find(TARGET)]
+
 gate("Ⓐ②  and its comment states the weakness in the table's own terms: that it has NO upper"
      " measurement, that 600s is a LOWER BOUND, and that the gap is not explained -- so a later"
      " reader is not left to discover that this entry is unlike the ten above it",
@@ -95,6 +106,19 @@ gate("Ⓐ③  and it records the re-declaration duty and the stop condition: re-
 gate("Ⓐ④  and it says the declaration is the SYMPTOM's fix and not the cause's, on the pattern the"
      " entry above it already set, with the probable cure named and deliberately not applied",
      "SYMPTOM'S FIX, NOT THE CAUSE'S" in _blk and 'not made under a red' in _blk)
+
+gate("Ⓐ⑤  AND THE FIRST COMPLETING RUN IS RECORDED IN THE ENTRY, which discharges its own"
+     " re-declaration duty: the scoped job came back `0 over timeout` with this budget in force, and"
+     " the receipt is absent from that run's five slowest -- so one runner reading sits under 243s"
+     " where two earlier ones were over 600s",
+     '0 over timeout' in _blk and '243' in _blk and 'FIRST COMPLETING RUN' in _blk)
+
+gate("Ⓐ⑥  ⇒ and the entry states why the rule's own product is NOT applied: 1.7 times the completing"
+     " reading returns the 600s default this file twice crossed, so lowering it would reinstate the"
+     " red.  ** The budget covers the VARIANCE and not the measurement, which is the one case the"
+     " rule does not describe ** -- and that is in the table rather than in a reply",
+     'would reinstate the red' in _blk and 'THE SPREAD IS THE FINDING' in _blk
+     and 'cover the variance' in _blk)
 
 # =====================================================================================
 head("B -- THE VERSIONS, CHECKED AGAINST THE PINS BEFORE ANY TIMING IS READ")
