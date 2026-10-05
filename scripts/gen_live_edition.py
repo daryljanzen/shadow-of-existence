@@ -436,8 +436,15 @@ def md_to_html(md, matrix_slot=True, stop_at_h2=None):
             out.append('<p>' + inline(' '.join(para)) + '</p>')
             para.clear()
 
+    in_comment = False
     for line in md.split('\n'):
         st = line.strip()
+        # HTML comments are for the source, not the page: EXPLAINER.md's watch markers
+        # (corpus/check_explainer_pins.py) sit on their own lines above the paragraphs they
+        # pin, and inline() escapes '<', so without this skip they would print as text.
+        if in_comment or st.startswith('<!--'):
+            in_comment = '-->' not in st
+            continue
         if st.startswith('<figure>'):
             flush()
             in_fig = True
@@ -645,14 +652,14 @@ this page.</p>
 
 <p class="note">Click any entry to open it. Chapters link to the paper itself.</p>
 <ul class="papers">
+{expl_row}
     <li><details id="introbox"><summary><span class="pn">INTRO</span>
-      <span class="ti"><b>Introduction</b><span class="sub">what the programme is,
-      the eighteen chapters and how they depend on one another, where to come in,
+      <span class="ti"><b>Introduction</b><span class="sub">a map for reading the corpus
+      proper: what the programme is, the eighteen chapters and how they depend on one another, where to come in,
       and at what weight each claim is held</span></span></summary>
       <div class="intro">{intro_excerpt}
       <p class="more"><a href="{PAGES}/introduction.html">Read more →</a></p></div>
     </details><a href="{PAGES}/introduction.html">READ</a></li>
-{expl_row}
 {paper_list}
 </ul>
 
