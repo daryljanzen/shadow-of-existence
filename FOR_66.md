@@ -9,7 +9,7 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**a fresh PR, draft — number on this line once opened**) — nothing waits on the chat window.*
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #286**, draft) — nothing waits on the chat window.*
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282 and #283 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
@@ -9617,6 +9617,7 @@ so and it is a two-line change.**
 - **Nothing.** `r7179` ordered nothing and this is the discharge of its one unreported state.
 - ⌗ *The `INDEX` row is repaired in the same pass: `27` → `25` checks, the four tolerances recorded
   as CLOSED rather than as open, and the cost cell restated as paid.* **Both appendices regenerated.**
-- ⚠ *`PR #286`'s commits are in `main` (`60512ead`, `6971c416`, `b94acb1f`) but the PR is still
-  OPEN. I have restarted the branch from `main` and opened a fresh PR for this round, per the
-  header's own rule; **#286 wants closing and is not mine to close safely without you knowing**.*
+- ⌗ *`PR #286` needed no closing after all.* Its `cc66.142` commits are in `main`
+  (`60512ead`, `6971c416`, `b94acb1f`); I restarted the branch from `main` and the push re-pointed
+  **#286** at this round's single commit, so it carries `cc66.143` alone against `main` and its
+  title and body say so. **No stale PR and no fresh number — #286 is the live one.***
