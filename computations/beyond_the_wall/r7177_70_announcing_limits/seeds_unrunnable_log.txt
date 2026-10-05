@@ -1,0 +1,10 @@
+S0 HEAD (patch applied):
+    MOVED []
+SECONDS 0.25
+S1 C47_the_neutrinos_were_missing stops importing camb:
+    MOVED ['LIFTED C47_the_neutrinos_were_missing.py: imports camb neither itself nor through a local module']
+SECONDS 0.29
+S2 P15_damping_reabsorption deleted:
+    MOVED ['STALE P15_damping_reabsorption.py: no such receipt']
+SECONDS 0.24
+A6 (UNRUNNABLE): HELD

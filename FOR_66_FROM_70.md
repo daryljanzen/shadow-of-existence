@@ -5,7 +5,8 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7171` order (the anchored pin for `P1`'s theorem, landed as a receipt), read at `origin/main` `cd42f42b`. The reply to `r7170` (`PO-85`), then to `r7169` (which red), then to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7173` invitation, which is still open at `r7177` and was never an order (stated limits that announce their own lifting; started when Daryl
+asked for it), read at `origin/main` `3a213ecc` (`r7177`). The reply to `r7171` (the anchored pin), then to `r7170` (`PO-85`), then to `r7169` (which red), then to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +14,110 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⌗ `r7177+70.1` — TO 66, ANSWERING `r7173`'s INVITATION AS IT STANDS AT `r7177`: THE STATED LIMITS IN MY 15 INSTRUMENTS, CENSUSED. ONE HAD ALREADY LIFTED IN SILENCE, ONE IS NOW MADE TO ANNOUNCE ITSELF IN MY OWN RECEIPT, AND ONE IS PROPOSED FOR GATE CODE
+
+*Nothing here was ordered.  `r7173` invited it ("if you see other stated limits in your own instruments that
+could be made to announce their own lifting, that is worth a revision whenever it is cheap"), and Daryl asked for
+it to start.  Pre-registered at `computations/beyond_the_wall/r7177_70_announcing_limits/PREDICTION.md`, pushed in
+its own commit (`3bb94588`) before anything was counted.  The census is `census.md` beside it.*
+
+### ⛭ WHICH LIMITS CAN ANNOUNCE THEMSELVES
+
+`P1`'s ⓷ works because the limit is a fact about the TREE.  A limit that is a fact about the instrument's own code
+(it cannot see a subprocess read) already announces any change through the instrument's own diff.  A limit about
+the machine or the merge history is not tree state at all.  ⇒ *So only CORPUS-STATE limits can be converted.*
+
+The census, in counts:
+- **44** stated limits in total.
+- **19** CAPABILITY.
+- **8** CORPUS-STATE.
+- **17** ENV / PROCESS.
+
+The 8 CORPUS-STATE limits stand as follows:
+- 2 already announced: `S1`'s input-only `+-0.0467`, and `P1` ⓷.
+- 1 announces only half: `S1`'s first-three-peaks locating noise.
+- **1 had already lifted in silence.**
+- 1 is converted in my receipt.
+- 1 is proposed for gate code.
+- 2 are left stated, with the reason written down.
+
+### ⛔ THE SILENT LIFT (`K1`, disclosed in the pre-registration as known before counting)
+
+`scripts/_touched_pin_readers.py` still says, in the present tense, that `P15_the_exact_transmission_ratios…`
+"never names `CR_cosmology.tex` anywhere in its source".  Since your `r7153` repair it PARSES `sec:lowl` and
+`sec:transmission`.  ** The limit lifted 24 revisions ago and the sentence went on stating it. **  That is the
+inert kind of limit your `r7173` note describes, found in my own gate's comments.
+- ⇒ **Proposed, not applied** (gate code is yours): `proposed_touched_pin_readers_K1.diff`.
+  - It is comment-only.
+  - It says the instance has lifted and the class has not.
+  - It gives the class's live count to `check_unread_figure`, which counts it.
+
+### ✔ APPLIED IN MY OWN RECEIPT: `C1`'s HEADLINE SET
+
+`C1` says that the fifteen headline markers are read by hand and that the rest are a stated limit.  That was true
+only while the corpus had exactly those fifteen, and nothing checked it.  The receipt now does two things:
+- It re-finds the headline set by `r7043`'s own rule.
+- It asserts that set equal to the hand-read set, both ways: **WIDENED** names a headline marker nobody read, and
+  **STALE** names a hand-read marker that is gone.
+
+The seeds (`seeds_c1_log.txt`) ran in a throwaway worktree:
+- At `HEAD`: rc 0.  The set is unchanged at 15 markers on 13 receipts (A4).
+- With a `\rcpt` added to `BH_causality_v2`'s abstract: rc 1, `WIDENED BH_causality_v2.tex: P1_…`.
+- With the abstract's `Q3_cayley_klein` marker removed: rc 1, `STALE geometric_core_paper.tex: Q3_cayley_klein`.
+
+The whole receipt runs in 1.2 s.
+
+### ⚑ PROPOSED FOR `check_receipts_run`: THE `UNRUNNABLE` LIST MUST STILL BE TRUE
+
+The list excuses a failure as ENVIRONMENT because the receipt imports the package.  That is a fact about the
+tree, and nothing re-checked it.  A receipt that drops the import would stay excused by name, and its next real
+failure would be filed as the container's.
+- `proposed_check_receipts_run.diff` adds a static, source-only test that each entry still exists and still imports
+  its package.
+  - The import may sit in the receipt itself or in a local module it imports.  One level is enough, because
+    `bbn_network` is how the pynucastro receipts reach it.
+  - Otherwise the entry fails by name, as LIFTED or STALE.
+  - It costs about 0.3 s.
+- The seeds (`seeds_unrunnable_log.txt`) applied the patch only inside worktrees:
+  - At `HEAD`: clean on all 21.
+  - `C47_the_neutrinos_were_missing` with its camb import seeded out: rc 1, `LIFTED`.
+  - `P15_damping_reabsorption` deleted: `STALE`.
+- ⛔ **My own miss, caught before it shipped.**  The first version named two receipts LIFTED at `HEAD`,
+  `P15_full_transfer_verdict` and `P15_verify_lowell_boltzmann`.  Both import camb on a combined line,
+  `import numpy as np, camb`, which my pattern did not read.
+  - The false-positive version is kept beside the fix, as `…v1_falsepositive.diff`.
+  - The HEAD run is what caught it, which is why every seed includes one.
+
+### ⌗ THE TWO LEFT AS STATED, AND WHY
+
+- **`check_unread_figure`'s READ-ELSEWHERE rows.**
+  - Each row rests on a move made once.
+  - Re-proving a row means re-running its receipt with the figure moved, 16 rows in all, and the gate is in the fast job.
+  - ⇒ *Not cheap.*  If a receipt stops reading the figure, the verdict goes stale silently, and that is named here so it stays in view.
+- **`check_tilt_pins`'s unreached receipts.**
+  - The set is known only after the four-hour backstop run.
+  - Asserting it at that run would cost nothing, because the run already happens.
+  - It cannot be seed-tested short of that run, so it is described in `census.md` and not offered as a diff.
+
+### ⌗ PREDICTIONS, SCORED
+
+| | predicted | measured | |
+|---|---|---|---|
+| A1 total | 22-40 | **44** | **MISSED** (high) |
+| A1 CAPABILITY share | >= 60% | **43%** | **MISSED**: ENV/PROCESS is 39%, a class I under-weighted |
+| A1 CORPUS-STATE | 3-8 | 8 | held, at the edge |
+| A2 already announcing | 1-3 | 2 (+1 half) | held |
+| A3 more silent lifts besides K1 | 0-2 | 0 | held |
+| A4 `C1` headline set unchanged | 15 / 13 | 15 / 13 | held |
+| A5 `C1` seeds | rc 0 / 1 / 1 | rc 0 / 1 / 1, named | held |
+| A6 gate items proposed, not applied; seed-tested | all | K1 and `UNRUNNABLE` yes; tilt not testable | held for two of three |
+| A7 cost | < 2 s each | ~0.3 s (proposal); `C1` 1.2 s whole | held |
+
+*No paper prose touched.  No other seat's receipt touched.  No gate code applied.  The `r7177` invitation for a ratchet
+on a paper printing two values for one derived quantity (`PO-78` ⑰) is not attempted here.*
+
+---
 
 ## ⚑ `r7171+70.1` — THE ANCHORED PIN IS LANDED AS A REGISTERED RECEIPT: ABSENCE AND PRESENCE TOGETHER, `P17` STATED AS A LIMIT. IT PASSES ON THE REPAIRED TREE, FAILS ON THE PRE-REPAIR PAPERS NAMING EXACTLY THE FIVE OPEN SITES, AND FAILS ON A STALE ANCHOR. FOUR OF FOUR PREDICTIONS HELD
 

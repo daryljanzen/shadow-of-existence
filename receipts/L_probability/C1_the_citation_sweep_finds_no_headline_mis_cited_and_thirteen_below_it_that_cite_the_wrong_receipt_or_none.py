@@ -47,6 +47,12 @@ disagreement is REPORTED, not adjudicated.  469 markers state no number and are 
 fifteen headline ones are read by hand, the rest are a STATED LIMIT, not a silent pass.  No prose edited -- every
 hit is routed to 66.  No physics, no re-scoring, no other seat's receipt touched.
 
+** r7177+70.1: THE LIMIT ANNOUNCES ITS OWN MOVE. **  "The fifteen headline ones are read by hand" was true only while
+the corpus had exactly those fifteen, and nothing checked it.  The headline set is now re-found by r7043's own rule
+and asserted equal to the hand-read set both ways: a new headline marker fails as WIDENED, a hand-read one that is
+gone fails as STALE.  Seeded in a worktree (`computations/beyond_the_wall/r7177_70_announcing_limits/`): rc 0 at
+HEAD, rc 1 naming each.
+
 ** r7167: A FINDING IS RETIRED BY WHAT ITS REPAIR MUST CHANGE. **  Each finding above is now re-read from the
 paper's SOURCE before anything runs: RETIRED-DRIFTED if the paper prints none of its figures any more,
 RETIRED-CITED if every figure it still prints is closed, in its own section and with no fixed window, by a group
@@ -298,6 +304,50 @@ HEAD = [('P16_recollapse_is_the_nariai_threshold', 'EXACTLY THE NARIAI THRESHOLD
 for name, phrase in HEAD:
     t = open(SRC[name], encoding='utf-8', errors='replace').read()
     check(f"(i) headline: `{name[:62]}` states its result", phrase in ' '.join(t.split()), phrase)
+
+# ⛭ r7177+70.1: THE STATED LIMIT, MADE TO ANNOUNCE ITS OWN MOVE.  The header says the fifteen headline markers are
+#   read by hand and the rest are a stated limit.  That is true only while the corpus HAS exactly these fifteen, and
+#   nothing checked it: a sixteenth \rcpt in an abstract would fall silently into the unread bin while the header
+#   went on saying every headline marker was read.  ⇒ The headline set is re-found by r7043's own rule (the
+#   tracer's `section_of` / `is_conclusion`) and asserted equal to the hand-read set, BOTH ways -- a new one is the
+#   limit WIDENED (a headline marker nobody read), a missing one is the reading STALE (it describes a marker that
+#   is gone).  Either way the receipt fails and names it, instead of passing over the change.
+HEAD_READ = sorted([
+    ('cosmogenesis_paper.tex', 'P16_recollapse_is_the_nariai_threshold'),
+    ('cosmogenesis_paper.tex', 'P16_theory_error_and_likelihood'),
+    ('geometric_core_paper.tex', 'P17_no_second_scale_on_either_face'),
+    ('geometric_core_paper.tex', 'Q3_cayley_klein'),
+    ('geometric_core_paper.tex', 'Q6r_polar_is_the_background'),
+    ('matter_sector_paper.tex', 'C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone'),
+    ('matter_sector_paper.tex', 'P14_dual_norm'),
+    ('matter_sector_paper.tex', 'P14_leaf_compactness'),
+    ('matter_sector_paper.tex', 'P14_leaf_compactness'),
+    ('matter_sector_paper.tex', 'P14_mode_monodromy_at_the_wall'),
+    ('matter_sector_paper.tex', 'P14_quark_lepton_frontier'),
+    ('matter_sector_paper.tex', 'P14_the_count_specified'),
+    ('matter_sector_paper.tex', 'P14_the_twist_conjugates_T_it_does_not_project_it'),
+    ('matter_sector_paper.tex', 'P14_the_twist_conjugates_T_it_does_not_project_it'),
+    ('matter_sector_paper.tex', 'W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_chiral_member_does_not_have')])
+HEAD_NOW = []
+for p in sorted(glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))):
+    f = os.path.basename(p)
+    if f.startswith(('appendix_receipts', 'appendix_')):
+        continue
+    lines = T.strip(open(p, encoding='utf-8').read()).split('\n')
+    for ln, l in enumerate(lines):
+        for m in re.finditer(r'\\rcpt\{([^}]*)\}', l):
+            sec = T.section_of(lines, ln + 1)
+            if sec == 'abstract' or T.is_conclusion(sec):
+                HEAD_NOW.append((f, m.group(1)))
+HEAD_NOW.sort()
+_widened = [r for r in set(HEAD_NOW) if HEAD_NOW.count(r) > HEAD_READ.count(r)]
+_stale = [r for r in set(HEAD_READ) if HEAD_READ.count(r) > HEAD_NOW.count(r)]
+check(f"⛭ STATED LIMIT still holds: the corpus has exactly the {len(HEAD_READ)} headline markers read by hand "
+      f"(found {len(HEAD_NOW)}) -- if this fails, the limit has MOVED: WIDENED names a headline marker nobody "
+      f"read, STALE names a hand-read one that is gone",
+      not _widened and not _stale,
+      '; '.join([f'WIDENED {a}: {b}' for a, b in sorted(_widened)] + [f'STALE {a}: {b}' for a, b in sorted(_stale)])
+      or None)
 
 # ======================================================================================================== PART (ii)
 print('\n' + '=' * 100)
