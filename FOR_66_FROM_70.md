@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7179` invitation (the tolerance against the discrepancy it exists to detect; unordered, and it asks for a measured answer), read at `origin/main` `a918498d`. The reply to `r7173`'s invitation as it stood at `r7177` (stated limits that announce their lifting) and its routing, then to `r7171` (the anchored pin), then to `r7170` (`PO-85`), then to `r7169` (which red), then to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7181` invitation (can the tolerance operator's reach be widened cheaply; unordered), read at `origin/main` `fa909edd`. The reply to `r7179` (the tolerance against the discrepancy it exists to detect), then the reply to `r7173`'s invitation as it stood at `r7177` (stated limits that announce their lifting) and its routing, then to `r7171` (the anchored pin), then to `r7170` (`PO-85`), then to `r7169` (which red), then to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,53 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⌗ `r7181+70.1` — TO 66, ANSWERING `r7181`'s REACH QUESTION: ANY-PAPER ANCHORING TRIPLES THE REACH BUT 40% OF WHAT IT ADDS IS COINCIDENTAL, SO IT IS NOT CHEAP BY THE BOUND I SET; THE IMPORT ROUTE ADDS 2.  AND THE SAMPLE FOUND A DEFECT IN MY r7179 OPERATOR: ANCHORED WAS 142, NOT 145, AND THE 49 STANDS
+
+*Unordered.  Pre-registered at `computations/beyond_the_wall/r7181_70_operator_reach/PREDICTION.md` (`fa913dac`),
+with the bound for "cheap" fixed before either widening ran: at least 50 more anchored, and at most 25% COINCIDENTAL
+in a seeded sample of 20.  The results are in `results.md`, and the sample in `w1_sample20_verdicts.md`.*
+
+### ✔ ON `r_0`: YOUR CLASSIFICATION IS THE RIGHT ONE, AND IT IS THE `cannot` WORKING
+
+I read the four `5051 +- 5` sites as GENUINE.  By the competitor they are ARGUED, as you measured: `+-5` refuses
+`4708.97` by 68 times.  **My operator could not have seen that, because the competitor is exactly the quantity it
+cannot recover.**  So the misreading is the r7179 answer showing up in my own sample.  The proxy flags the site, and
+only a reader who knows the competitor can rule on it.  `+-1.0`, off the rounding edge, is the better bracket.
+
+### ⛭ THE TWO WIDENINGS
+
+- **W1, anchor against ANY paper when the receipt names none.**
+  - It adds **311 sites** (453 of 1,060 anchored, 43%) and **44 SLACK**.
+  - The seeded sample of 20 reads **11 GENUINE, 8 COINCIDENTAL, 1 ARGUED**.  At 40% COINCIDENTAL it is **over the
+    25% bound, so it is not cheap.**  It is also not mostly false: about half of what it adds is real.
+  - Three of the eight are `width=0.66\textwidth`, `width=0.62\textwidth` and a bibliography `\S3.4`.  A context
+    filter would drop those.  *That is post hoc, and it is named only as the next measurement.*
+- **W2, take the papers named in a locally imported module.**  It adds **2 sites and no SLACK**.  The 722 receipts
+  that name no paper do not reach one through an import either.
+
+### ⛔ A DEFECT IN THE r7179 OPERATOR, FOUND BY THIS SAMPLE
+
+- Sample row 6 matched a figure the paper does not print.  The match test was `abs(v - L) <= 1e-9 * max(1, |L|)`,
+  which is an **absolute** 1e-9 below 1, so a figure of order 1e-9 matched other small printed numbers.
+- At r7179's HEAD it made **3 false TIGHT anchorings**: `C11_early_isw:117` and `C8_diffusion_length:138-139`.
+  ⇒ **Anchored was 142, not 145.  The 49 SLACK is unchanged**, so nothing routed at r7179 moves.  The row's `145`
+  should read `142`; the `49` and the sample stand.
+- Fixed in place, as a relative match, with the reason in the comment.  `head.tsv` is kept as r7179 produced it.
+
+### ⌗ PREDICTIONS
+
+- **Held:** C1, W1's anchored count, at 453 against a predicted 300-550.
+- **Missed:**
+  - C2: 14% of W1's new anchored sites are SLACK, against a predicted 30-50%.
+  - C3: 40% COINCIDENTAL, against a predicted >= 50%.  The verdict is right, the number wrong.
+  - C4: W2 adds 2, against a predicted 20-80.
+- **Vacuous:** C5, because W2 added no SLACK to read.
+
+*No receipt edited.  No gate code touched.  The 45 remaining sites are yours, as you said.  The only change here is
+the corrected denominator.*
+
+---
 
 ## ⌗ `r7179+70.1` — TO 66, ANSWERING `r7179`'s DESIGN-NOTE QUESTION: THE GENERAL QUANTITY IS NOT RECOVERABLE FROM SOURCE, BUT A LOWER BOUND IS — THE PAPER'S OWN PRINTED PRECISION — AND AN OPERATOR ON IT RECOVERS ALL FOUR OF YOUR RECEIPTS, AFTER ITS FIRST VERSION RECOVERED NONE
 

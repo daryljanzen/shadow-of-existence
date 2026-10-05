@@ -1,4 +1,6 @@
-"""r7179+70.1 -- a tolerance against the precision of the paper figure it pins.
+"""r7181+70.1 widening of r7179's operator.  --mode named|w1|w2 (default named = r7179 exactly).
+
+r7179+70.1 -- a tolerance against the precision of the paper figure it pins.
 
 For every `abs(E - L) < T` (or `abs(L - E)`, `<=`) in a receipt, where L and T are numeric literals: find L PRINTED
 in a corpus paper the receipt names (`<name>.tex` in its source), take the printed precision from the paper's own
@@ -42,6 +44,11 @@ def printings(tex):
 PAPERS = {os.path.basename(p): p for p in glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
           if not os.path.basename(p).startswith('appendix_')}
 _PR = {}
+MODE = sys.argv[sys.argv.index('--mode') + 1] if '--mode' in sys.argv else 'named'
+MODFILES = {}
+for _g in glob.glob(os.path.join(ROOT, '**', '*.py'), recursive=True):
+    if '/.git/' not in _g:
+        MODFILES.setdefault(os.path.splitext(os.path.basename(_g))[0], []).append(_g)
 
 
 def pr(name):
@@ -58,6 +65,20 @@ for f in sorted(glob.glob(os.path.join(ROOT, 'receipts', '**', '*.py'), recursiv
     except SyntaxError:
         continue
     named = sorted(n for n in PAPERS if n in src)
+    via = 'named'
+    if not named and MODE == 'w1':
+        named, via = sorted(PAPERS), 'w1-any-paper'
+    elif not named and MODE == 'w2':
+        mods = set(re.findall(r'^\s*from\s+(\w+)', src, re.M)) | {
+            m for ln in re.findall(r'^\s*import\s+([^\n#]+)', src, re.M)
+            for m in re.findall(r'(?:^|,)\s*(\w+)', ln)}
+        got = set()
+        for m in mods:
+            for g in MODFILES.get(m, []):
+                ms = open(g, encoding='utf-8', errors='replace').read()
+                got |= {n for n in PAPERS if n in ms}
+        if got:
+            named, via = sorted(got), 'w2-import'
     for node in ast.walk(tree):
         if not (isinstance(node, ast.Compare) and len(node.ops) == 1 and isinstance(node.ops[0], (ast.Lt, ast.LtE))):
             continue
@@ -76,17 +97,14 @@ for f in sorted(glob.glob(os.path.join(ROOT, 'receipts', '**', '*.py'), recursiv
         hit = []
         for p in named:
             for v, ulps in pr(p).items():
-                # r7181+70.1: RELATIVE.  The r7179 form, `1e-9 * max(1.0, abs(L))`, was an absolute 1e-9 below 1, so a
-                #   figure of order 1e-9 matched other small printed numbers: 3 false TIGHT anchorings at r7179's HEAD
-                #   (145 -> 142 anchored), the 49 SLACK unchanged.  head.tsv is kept as r7179 produced it.
-                if abs(v - abs(L)) <= 1e-9 * abs(L):
+                if abs(v - abs(L)) <= 1e-9 * abs(L):   # r7181: RELATIVE -- the absolute 1e-9 floor matched any small printed number
                     hit += [(u, p) for u in ulps]
         if not hit:
-            rows.append((rel, node.lineno, L, T, '', '', 'UNANCHORED' if named else 'NO-PAPER-NAMED'))
+            rows.append((rel, node.lineno, L, T, '', '', 'UNANCHORED' if named else 'NO-PAPER-NAMED', via))
             continue
         u, p = max(hit)
         ratio = T / (u / 2)
-        rows.append((rel, node.lineno, L, T, p, u, 'SLACK' if ratio > 1 + 1e-9 else 'TIGHT'))
+        rows.append((rel, node.lineno, L, T, p, u, 'SLACK' if ratio > 1 + 1e-9 else 'TIGHT', via))
 
 from collections import Counter
 c = Counter(r[6] for r in rows)
@@ -97,6 +115,6 @@ print(f'anchored {anch} ({100 * anch / max(1, len(rows)):.0f}%); slack {c["SLACK
       f'{len(set(r[0] for r in rows if r[6] == "SLACK"))}')
 if OUT:
     with open(OUT, 'w') as o:
-        o.write('receipt\tline\tL\tT\tpaper\tprinted_ulp\tverdict\tT_over_half_ulp\n')
+        o.write('receipt\tline\tL\tT\tpaper\tprinted_ulp\tverdict\tvia\tT_over_half_ulp\n')
         for r in rows:
             o.write('\t'.join(map(str, r)) + '\t' + (f'{r[3] / (r[5] / 2):.3g}' if r[5] else '') + '\n')

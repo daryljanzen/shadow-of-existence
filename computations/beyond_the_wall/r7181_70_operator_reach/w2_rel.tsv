@@ -1,0 +1,1061 @@
+receipt	line	L	T	paper	printed_ulp	verdict	via	T_over_half_ulp
+receipts/L147_two_arm/B3_a_dichotomy_stated_is_not_a_dichotomy_proved.py	104	0.5703	0.0005			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B3_a_dichotomy_stated_is_not_a_dichotomy_proved.py	113	0.79	0.02			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py	172	0.62	0.02			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py	161	0.9761	0.005			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py	161	0.878	0.005			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py	163	1.0034	0.005			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py	163	0.263	0.005			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py	181	0.975	0.01			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B4_the_intercept_is_a_phase_and_the_control_proves_it.py	181	1.002	0.01			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B5_the_scan_cannot_test_the_asymptotic_phase.py	163	0.615	0.02			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B7_the_seam_phase_moves_the_asymptotic_intercept.py	103	0.878	0.005			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B7_the_seam_phase_moves_the_asymptotic_intercept.py	119	0.066	0.02			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py	133	0.878	0.005			NO-PAPER-NAMED	named	
+receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py	135	0.671	0.005			NO-PAPER-NAMED	named	
+receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py	118	1.0	0.01	canonical_time.tex	1.0	TIGHT	named	0.02
+receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py	125	1.0	0.01	canonical_time.tex	1.0	TIGHT	named	0.02
+receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py	113	1.0	0.25	canonical_time.tex	1.0	TIGHT	named	0.5
+receipts/L171_two_routes/J1_the_disagreement_no_longer_has_two_sides.py	117	0.78	0.03			NO-PAPER-NAMED	named	
+receipts/L221_the_bridge/B16_the_coupling_cannot_come_from_this_bundle.py	110	1.0	1e-09	matter_sector_paper.tex	1.0	TIGHT	named	2e-09
+receipts/L221_the_bridge/B20_centre_and_weyl_are_opposite_ends.py	102	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/L221_the_bridge/B30_the_parameter_has_the_wrong_signature.py	124	1.0	1e-09	matter_sector_paper.tex	1.0	TIGHT	named	2e-09
+receipts/L221_the_bridge/B31_the_wall_reason_is_too_narrow.py	92	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	96	1.0	1e-09	matter_sector_paper.tex	1.0	TIGHT	named	2e-09
+receipts/L221_the_bridge/B53_gating_l829_and_l830.py	94	0.855	1e-09			UNANCHORED	named	
+receipts/L221_the_bridge/B54_the_retraction_supports_the_verdict.py	98	1.0	1e-09	matter_sector_paper.tex	1.0	TIGHT	named	2e-09
+receipts/L221_the_bridge/B54_the_retraction_supports_the_verdict.py	101	1.0	1e-09	matter_sector_paper.tex	1.0	TIGHT	named	2e-09
+receipts/L221_the_bridge/B55_right_kind_right_place_numerical_declined.py	110	0.5773502691896258	1e-12			UNANCHORED	named	
+receipts/L221_the_bridge/B56_it_is_lambda_8_not_a_coupling.py	95	2.0	1e-12	boundary_paper.tex	1.0	TIGHT	named	2e-12
+receipts/L221_the_bridge/B59_the_routes_are_enumerable_and_one_is_absent.py	159	1.0	1e-06	matter_sector_paper.tex	1.0	TIGHT	named	2e-06
+receipts/L221_the_bridge/B59_the_routes_are_enumerable_and_one_is_absent.py	162	1.0	1e-06	matter_sector_paper.tex	1.0	TIGHT	named	2e-06
+receipts/L239_capability_assumed/K1_a_capability_assumed_from_one_failure.py	112	1.0	0.005			NO-PAPER-NAMED	named	
+receipts/L239_capability_assumed/K1_a_capability_assumed_from_one_failure.py	99	0.878	0.005			NO-PAPER-NAMED	named	
+receipts/L239_capability_assumed/K1_a_capability_assumed_from_one_failure.py	99	0.149	0.005			NO-PAPER-NAMED	named	
+receipts/L239_capability_assumed/K1_a_capability_assumed_from_one_failure.py	101	0.263	0.005			NO-PAPER-NAMED	named	
+receipts/L239_capability_assumed/K1_a_capability_assumed_from_one_failure.py	101	0.135	0.005			NO-PAPER-NAMED	named	
+receipts/L271_the_statistics_bake/S1_the_first_programme_is_a_power_calculation_and_the_design_it_proposes_is_the_expensive_one.py	202	1.0	1e-12	shadow_of_existence.tex	1.0	TIGHT	named	2e-12
+receipts/L271_the_statistics_bake/S1_the_first_programme_is_a_power_calculation_and_the_design_it_proposes_is_the_expensive_one.py	198	1.0	1e-12	shadow_of_existence.tex	1.0	TIGHT	named	2e-12
+receipts/L271_the_statistics_bake/S3_the_exclusion_is_a_bound_against_a_bound.py	85	1173.81	0.05			NO-PAPER-NAMED	named	
+receipts/L271_the_statistics_bake/S3_the_exclusion_is_a_bound_against_a_bound.py	86	0.0027728	1e-06			NO-PAPER-NAMED	named	
+receipts/L274_the_harmonic_bake/H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py	147	1.0	1e-09	CR_cosmology.tex	1.0	TIGHT	named	2e-09
+receipts/L275_the_functional_analysis_bake/U1_the_field_bounces_and_the_corpus_asks_its_self_adjointness_question_at_one_boundary_only.py	253	-0.75	1e-12			UNANCHORED	w2-import	
+receipts/L275_the_functional_analysis_bake/U1_the_field_bounces_and_the_corpus_asks_its_self_adjointness_question_at_one_boundary_only.py	271	2.0	1e-09	slicing_operator.tex	1.0	TIGHT	w2-import	2e-09
+receipts/L275_the_functional_analysis_bake/U1_the_field_bounces_and_the_corpus_asks_its_self_adjointness_question_at_one_boundary_only.py	271	3.0	1e-09	slicing_operator.tex	1.0	TIGHT	w2-import	2e-09
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	276	0.25696832	1e-07			UNANCHORED	named	
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	276	0.84643915	1e-07			UNANCHORED	named	
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	371	0.669566	0.0001			UNANCHORED	named	
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	316	1.0	1e-08	matter_sector_paper.tex	1.0	TIGHT	named	2e-08
+receipts/L552_weyl_and_torus/W1_the_weyl_group_is_a_quotient_not_a_complement_so_the_row_is_two_dimensions_short.py	153	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	188	0.169859	1e-06			UNANCHORED	named	
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	188	0.8438	0.0002			UNANCHORED	named	
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	189	0.6824	0.0002			UNANCHORED	named	
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	189	1294.4	0.1			UNANCHORED	named	
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	217	1.0	0.01	CR_cosmology.tex	1.0	TIGHT	named	0.02
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	218	2.0	1.0	CR_cosmology.tex	1.0	SLACK	named	2
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	218	4.0	1.0	CR_cosmology.tex	1.0	SLACK	named	2
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	221	1.0404	0.01			UNANCHORED	named	
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	221	147.0	2.0	CR_cosmology.tex	1.0	SLACK	named	4
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	111	220.0	6.0	cosmogenesis_paper.tex	1.0	SLACK	named	12
+receipts/L805_freezing_reproduced/S1_every_mode_of_interest_freezes_and_the_inversion_is_closed.py	159	0.2069	0.001			UNANCHORED	named	
+receipts/L805_freezing_reproduced/S1_every_mode_of_interest_freezes_and_the_inversion_is_closed.py	126	1.0	0.02	CR_cosmology.tex	1.0	TIGHT	named	0.04
+receipts/L807_driven_estimator/S1_the_peak_estimator_recovers_a_set_phase_independent_of_the_envelope.py	143	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/L812_seam_phase_derivation/S1_the_seam_phase_derivation_is_blocked_at_turnaround_and_the_machinery_is_validated.py	124	0.9	0.02			NO-PAPER-NAMED	named	
+receipts/L812_seam_phase_derivation/S1_the_seam_phase_derivation_is_blocked_at_turnaround_and_the_machinery_is_validated.py	134	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/L813_po11_dirac_barrier_spectrum/S1_the_radial_dirac_susy_barrier_scatters_unitarily_and_the_partners_are_isospectral.py	135	1.0	0.0001			NO-PAPER-NAMED	named	
+receipts/L813_po11_dirac_barrier_spectrum/S1_the_radial_dirac_susy_barrier_scatters_unitarily_and_the_partners_are_isospectral.py	135	1.0	0.0001			NO-PAPER-NAMED	named	
+receipts/L814_po10_bic_pair/S1_the_bic_pair_is_delivered_and_CR_is_not_preferred_at_either_seam_phase.py	128	21.5	0.2			NO-PAPER-NAMED	named	
+receipts/L820_banked_spectra_sampling/S1_the_banked_spectra_are_nk600_not_nk260_and_pass_the_guard.py	102	2.5	0.1			NO-PAPER-NAMED	named	
+receipts/L820_banked_spectra_sampling/S1_the_banked_spectra_are_nk600_not_nk260_and_pass_the_guard.py	102	5.7	0.1			NO-PAPER-NAMED	named	
+receipts/L823_cr_rs_is_the_onset_horizon/S1_the_stored_cr_rs_is_the_from_onset_acoustic_horizon_and_matches_the_arms_own_integral.py	111	135.46	0.1			NO-PAPER-NAMED	named	
+receipts/L823_cr_rs_is_the_onset_horizon/S1_the_stored_cr_rs_is_the_from_onset_acoustic_horizon_and_matches_the_arms_own_integral.py	111	301.6	0.2			NO-PAPER-NAMED	named	
+receipts/L824_control_converges/S1_the_third_point_shows_the_control_converges_by_L3000_and_the_unlensed_floor_is_the_lensing.py	124	3.4	0.2			NO-PAPER-NAMED	named	
+receipts/L825_pontryagin_point/S1_the_L553_pontryagin_value_reproduces_at_its_own_pinned_point.py	91	4.97731	0.0001			NO-PAPER-NAMED	named	
+receipts/L831_graph_theory/G1_the_six_hinge_ends_carry_an_octahedron_and_the_hinges_are_its_antipodes.py	95	7.0	1e-09	SdS-slicing-curve_v2.tex	1.0	TIGHT	named	2e-09
+receipts/L831_graph_theory/G1_the_six_hinge_ends_carry_an_octahedron_and_the_hinges_are_its_antipodes.py	172	7.0	1e-09	SdS-slicing-curve_v2.tex	1.0	TIGHT	named	2e-09
+receipts/L831_graph_theory/G1_the_six_hinge_ends_carry_an_octahedron_and_the_hinges_are_its_antipodes.py	99	1.0	1e-09	SdS-slicing-curve_v2.tex	1.0	TIGHT	named	2e-09
+receipts/P02_janzen_circle/P02_ring_lambda_limit.py	58	-10.88034	0.0001			NO-PAPER-NAMED	named	
+receipts/P02_janzen_circle/P02_ring_lambda_limit.py	59	2.09149	0.0001			NO-PAPER-NAMED	named	
+receipts/P02_janzen_circle/P02_ring_lambda_limit.py	60	8.78885	0.0001			NO-PAPER-NAMED	named	
+receipts/P02_janzen_circle/P02_ring_lambda_limit.py	65	2.0	0.0001			NO-PAPER-NAMED	named	
+receipts/P02_janzen_circle/P02_ring_lambda_limit.py	35	2.0	0.001			NO-PAPER-NAMED	named	
+receipts/P02_janzen_circle/P02_the_approach_is_mass_free.py	153	3.32	0.02			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/C4_gnomonic_not_conformal.py	45	0.03216488	1e-07			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/C4_gnomonic_not_conformal.py	68	60.7225217	1e-05			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/C4_gnomonic_not_conformal.py	69	77.500284	1e-05			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/C5_sct_already_linear.py	20	10.9955742876	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/C5_sct_already_linear.py	77	1.23869	1e-06			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/C5_sct_already_linear.py	78	0.043025	1e-06			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/C5_sct_already_linear.py	79	2.53684	1e-06			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/C5_sct_already_linear.py	21	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/D2_hexagon_klein.py	118	0.5	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/D2_hexagon_klein.py	118	0.8660254038	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/D2_hexagon_klein.py	120	0.5	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/D2_hexagon_klein.py	30	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/D2_hexagon_klein.py	31	1.7320508076	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/D2_hexagon_klein.py	32	2.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/D2_hexagon_klein.py	53	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/D2_hexagon_klein.py	84	36.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/D2_hexagon_klein.py	117	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/D2_hexagon_klein.py	135	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/O3_charting_distance.py	23	1.1547005384	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/O3_charting_distance.py	25	1.1547005384	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/O3_charting_distance.py	45	1.1547005384	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/O3_charting_distance.py	47	0.3849001795	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/O3_charting_distance.py	49	0.4330127019	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_acceleration_is_slice_curvature.py	49	2.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_batch2_runnable.py	331	2.5980762114	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_batch2_runnable.py	332	2.5980762114	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_batch3_hot_front.py	203	0.3	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_batch3_hot_front.py	201	0.3099	0.0001			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_batch3_hot_front.py	201	1.5562	0.0001			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_charge_obstructs_the_beads_closure_and_not_the_cosmogenesis.py	114	1.0	1e-05			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_charge_parity.py	79	0.03818709	1e-07			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_charge_parity.py	80	0.28985091	1e-07			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_charge_parity.py	81	0.80053368	1e-07			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_charge_parity.py	82	0.33893624	1e-07			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_conjugacy.py	70	0.3949308436	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_conjugacy.py	71	0.742227199	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_conjugacy.py	72	0.742227199	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_conjugacy.py	74	1.1547005384	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_conjugacy.py	75	0.5773502692	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_cubic_factor_ellipse_locus.py	78	1.4142135624	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_cubic_factor_ellipse_locus.py	79	0.8164965809	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_cubic_factor_ellipse_locus.py	80	45.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_cubic_factor_ellipse_locus.py	81	0.5773502692	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_cubic_factor_ellipse_locus.py	61	4.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_cubic_factor_ellipse_locus.py	82	1.1547005384	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_cubic_factor_ellipse_locus.py	82	4.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_curvature_signflip.py	56	0.4641588834	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_curvature_signflip.py	58	0.2091488484	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_curvature_signflip.py	59	0.8788850663	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_curvature_signflip.py	62	0.8526996616	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_dimension_collapse.py	285	1.1547005383792515	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_ellipse_foci.py	86	1.4142135623730951	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_ellipse_foci.py	87	0.816496580927726	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_ellipse_foci.py	88	1.1547005383792515	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_ellipse_foci.py	89	1.1547005383792515	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_hexagon_null_triple.py	379	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_hexagon_null_triple.py	379	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_overcritical.py	67	-0.32	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_overcritical.py	69	0.3849001794597505	1e-13			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_overcritical.py	71	-0.528	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_overcritical.py	70	0.528	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_overcritical.py	41	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_seam_continuation.py	61	1.5430806348152437	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_slate_worked.py	337	0.0018674	5e-08			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_slate_worked.py	340	3.872983346207417	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_slate_worked.py	339	0.3	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_slate_worked.py	339	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_the_hubble_eddington_radius_is_the_slices_flat_locus_and_the_bend_takes_whatever_gravitates.py	185	1.26	0.01			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_the_hubble_eddington_radius_is_the_slices_flat_locus_and_the_bend_takes_whatever_gravitates.py	258	1.85	0.01			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_the_hubble_eddington_radius_is_the_slices_flat_locus_and_the_bend_takes_whatever_gravitates.py	259	6.37	0.01			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_the_interior_mass_function_is_p_equals_one_along_the_shell_and_the_charge_falls_short_of_the_equality_radius.py	310	0.01	0.001			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_the_interior_mass_function_is_p_equals_one_along_the_shell_and_the_charge_falls_short_of_the_equality_radius.py	328	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_the_interior_mass_function_is_p_equals_one_along_the_shell_and_the_charge_falls_short_of_the_equality_radius.py	443	1.0	0.05			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_the_interior_mass_function_is_p_equals_one_along_the_shell_and_the_charge_falls_short_of_the_equality_radius.py	444	1.0	0.05			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_the_third_regime_is_the_boundary_of_admissible_data_and_not_a_behaviour_of_the_lap.py	126	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_the_third_regime_is_the_boundary_of_admissible_data_and_not_a_behaviour_of_the_lap.py	127	1.0	0.1			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_the_third_regime_is_the_boundary_of_admissible_data_and_not_a_behaviour_of_the_lap.py	187	1.0	0.001			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_triple_angle_gnomonic.py	59	0.3849001794597505	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_triple_angle_gnomonic.py	61	0.5773502691896258	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_triple_angle_gnomonic.py	57	1.1547005383792517	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_twelve_null_legs.py	227	60.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_twelve_null_legs.py	265	0.5773502691896258	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_twelve_null_legs.py	214	60.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_two_two_plus_ones.py	92	1.1	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_two_two_plus_ones.py	95	1.1	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_two_two_plus_ones.py	136	0.4	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_two_two_plus_ones.py	136	0.7380831519646859	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_two_two_plus_ones.py	140	0.7380831519646859	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_two_two_plus_ones.py	169	1.1547005383792517	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_two_two_plus_ones.py	172	1.1547005383792517	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/P03_which_mass_sets_the_hubble_eddington_radius.py	83	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/Q5_nariai_on_the_locus.py	47	0.5773502691896258	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/Q5_nariai_on_the_locus.py	57	1.1547005383792517	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/Q5_nariai_on_the_locus.py	85	0.5773502691896258	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/Q5_nariai_on_the_locus.py	85	0.5773502691896258	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/X3r_reality_lines.py	44	0.31416070729921625	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/X3r_reality_lines.py	46	4.71238898038469	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/alpha_alone.py	142	60.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/one_thirty.py	76	1.1547005383792517	1e-12			NO-PAPER-NAMED	named	
+receipts/P03_SdS_slicing/one_thirty.py	77	-0.3849001794597505	1e-12			NO-PAPER-NAMED	named	
+receipts/P04_modern_parallax/P04_redshift_isotropy_floor.py	62	9390.5	1.0			NO-PAPER-NAMED	named	
+receipts/P04_modern_parallax/P04_redshift_isotropy_floor.py	63	1173.81	0.05			NO-PAPER-NAMED	named	
+receipts/P04_modern_parallax/P04_redshift_isotropy_floor.py	65	0.0027728	1e-06			NO-PAPER-NAMED	named	
+receipts/P04_modern_parallax/P04_redshift_isotropy_floor.py	67	924.28	0.5			NO-PAPER-NAMED	named	
+receipts/P04_modern_parallax/P04_redshift_isotropy_floor.py	68	2.9658	0.001			NO-PAPER-NAMED	named	
+receipts/P04_modern_parallax/P04_redshift_isotropy_floor.py	71	0.0077834	1e-06			NO-PAPER-NAMED	named	
+receipts/P04_modern_parallax/P04_redshift_isotropy_floor.py	71	0.0055457	1e-06			NO-PAPER-NAMED	named	
+receipts/P05_groupoid/COVER_dial_loop_is_sigma_squared.py	18	12.5664	0.001			NO-PAPER-NAMED	named	
+receipts/P05_groupoid/COVER_dial_loop_is_sigma_squared.py	19	2.0	0.0001			NO-PAPER-NAMED	named	
+receipts/P05_groupoid/HOLONOMY_complex_loop.py	41	1.0	0.005			NO-PAPER-NAMED	named	
+receipts/P05_groupoid/HOLONOMY_complex_loop.py	44	1.0016	0.005			NO-PAPER-NAMED	named	
+receipts/P05_groupoid/HOLONOMY_complex_loop.py	45	1.0008	0.005			NO-PAPER-NAMED	named	
+receipts/P05_groupoid/K45_span_and_nariai.py	69	0.5773502692	1e-09			NO-PAPER-NAMED	named	
+receipts/P05_groupoid/K45_span_and_nariai.py	70	0.3849001795	1e-09			NO-PAPER-NAMED	named	
+receipts/P05_groupoid/X1rr_sky_angle_is_the_galois_closure.py	24	0.308544	5e-07			NO-PAPER-NAMED	named	
+receipts/P05_groupoid/X1rr_sky_angle_is_the_galois_closure.py	25	-0.026309	5e-07			NO-PAPER-NAMED	named	
+receipts/P06_shadow_of_existence/I54_the_modal_fallacy_is_local_flatness_and_the_separating_invariant_is_global.py	73	1.0	1e-12	shadow_of_existence.tex	1.0	TIGHT	named	2e-12
+receipts/P06_shadow_of_existence/I54_the_modal_fallacy_is_local_flatness_and_the_separating_invariant_is_global.py	133	1.0	1e-09	shadow_of_existence.tex	1.0	TIGHT	named	2e-09
+receipts/P07_CR_framework/D4_fold_scaling.py	74	1e-06	1e-18			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/D4_fold_scaling.py	75	1.519672	1e-05			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/D4_fold_scaling.py	77	2.28151	1e-05			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/EUCNULL_continuous_null_definition.py	43	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/EUCNULL_continuous_null_definition.py	44	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/F_flat.py	109	0.57735027	1e-06			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/F_flat.py	111	2.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/F_flat.py	37	1.0	0.0001			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/L8_the_pencil.py	115	3.0	1e-09	CR_framework.tex	1.0	TIGHT	named	2e-09
+receipts/P07_CR_framework/L8_the_pencil.py	116	3.0	1e-09	CR_framework.tex	1.0	TIGHT	named	2e-09
+receipts/P07_CR_framework/LAP_complete_account.py	41	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/LAP_complete_account.py	42	2.0	0.0001			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/LIFT_euclidean_filter.py	44	16617.0	50.0			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O1_photon_sphere_nariai.py	54	0.1924500897	1e-09			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O1_photon_sphere_nariai.py	54	0.5773502692	1e-09			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O4_deflection_perspectival.py	57	0.84333	1e-05			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O4_deflection_perspectival.py	61	0.93243	1e-05			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O4_deflection_perspectival.py	58	40.1359	0.0001			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O4_deflection_perspectival.py	58	37.7503	0.0001			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O4_deflection_perspectival.py	62	41.0621	0.0001			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O4_deflection_perspectival.py	62	40.0721	0.0001			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O5_kappa_and_lyapunov.py	75	0.896558	1e-05			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O5_kappa_and_lyapunov.py	76	0.75	1e-06			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O5_kappa_and_lyapunov.py	74	0.896558	1e-05			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O6_eikonal_ringdown.py	106	0.014143	1e-06			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O6_eikonal_ringdown.py	102	0.9999	1e-12			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O6_eikonal_ringdown.py	104	0.5	1e-12			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O6_eikonal_ringdown.py	103	0.99461174	1e-07			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/O6_eikonal_ringdown.py	105	0.78986169	1e-07			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/P07_nariai_selection.py	125	0.1924500897	1e-09			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/P07_nariai_selection.py	126	0.5773502692	1e-09			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/P07_nariai_selection.py	128	0.4	1e-12			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/P07_nariai_selection.py	129	0.20051164	1e-06			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/P07_nariai_selection.py	129	0.88455193	1e-06			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/P07_sds_kretschmann.py	100	24.75	1e-12			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/P07_sds_kretschmann.py	101	72.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/P07_sds_kretschmann.py	102	64.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/P07_sds_kretschmann.py	103	24.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py	330	0.896558	1e-05			UNANCHORED	named	
+receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py	331	0.8365	0.001			UNANCHORED	named	
+receipts/P07_CR_framework/order3_bridge.py	279	1.0	1e-12	slicing_operator.tex	1.0	TIGHT	named	2e-12
+receipts/P07_CR_framework/two_realisations.py	31	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P08_slicing_operator/K9_isotropy_obstruction.py	90	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P08_slicing_operator/K9_isotropy_obstruction.py	91	-1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P08_slicing_operator/P08_E1_cosmology.py	105	0.46415888336127786	1e-12			UNANCHORED	named	
+receipts/P08_slicing_operator/P08_E1_cosmology.py	107	0.6463304070095651	1e-12			UNANCHORED	named	
+receipts/P08_slicing_operator/P08_E1_cosmology.py	112	0.7663094323935531	1e-12			UNANCHORED	named	
+receipts/P08_slicing_operator/P08_lapse_split.py	87	-0.12	1e-12			UNANCHORED	named	
+receipts/P08_slicing_operator/P08_lapse_split.py	94	0.04148148148148148	1e-12			UNANCHORED	named	
+receipts/P08_slicing_operator/P08_matter_functional.py	102	-6.0	1e-12	slicing_operator.tex	1.0	TIGHT	named	2e-12
+receipts/P08_slicing_operator/P08_matter_functional.py	105	0.238732414637843	1e-12			UNANCHORED	named	
+receipts/P08_slicing_operator/P08_synchronous_horosphere.py	69	2.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P08_slicing_operator/P08_synchronous_horosphere.py	71	4.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P08_slicing_operator/P08_synchronous_horosphere.py	73	4.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P08_slicing_operator/P08_synchronous_horosphere.py	74	-1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P08_slicing_operator/P08_synchronous_horosphere.py	78	2.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P08_slicing_operator/P08_synchronous_horosphere.py	79	2.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P08_slicing_operator/P08_trichotomy.py	103	1.5	1e-12			UNANCHORED	named	
+receipts/P08_slicing_operator/P08_trichotomy.py	104	6.0	1e-12	slicing_operator.tex	1.0	TIGHT	named	2e-12
+receipts/P08_slicing_operator/P08_trichotomy.py	109	0.75	1e-12			UNANCHORED	named	
+receipts/P08_slicing_operator/P08_trichotomy.py	111	-1.0	1e-12	slicing_operator.tex	1.0	TIGHT	named	2e-12
+receipts/P08_slicing_operator/V34_orthogonal_and_no_cost.py	74	0.1193662073189215	1e-13			NO-PAPER-NAMED	named	
+receipts/P08_slicing_operator/V34_orthogonal_and_no_cost.py	85	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P08_slicing_operator/V34_orthogonal_and_no_cost.py	85	0.25	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/P09_bianchiI_typeI.py	80	12.0	0.0001			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/P09_bianchiI_typeI.py	81	12.0	0.0001			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/P09_bianchiI_typeI.py	92	-0.5	0.0001			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/P09_bianchiI_typeI.py	77	6.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/P09_carter_killing.py	98	0.12	1e-12			UNANCHORED	named	
+receipts/P09_range_paper/P09_kerr_deSitter.py	113	0.12	1e-12			UNANCHORED	named	
+receipts/P09_range_paper/P09_kerr_deSitter.py	115	0.48	0.0001			UNANCHORED	named	
+receipts/P09_range_paper/P09_kerr_deSitter.py	123	4.12	1e-12			UNANCHORED	named	
+receipts/P09_range_paper/P09_kerr_deSitter.py	124	1.01	1e-12			UNANCHORED	named	
+receipts/P09_range_paper/P09_kerr_deSitter.py	125	1.0025	1e-12			UNANCHORED	named	
+receipts/P09_range_paper/P09_ks_vacuum.py	55	0.325	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/P09_ks_vacuum.py	59	-1.1	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/P09_typeD_quartics.py	72	0.12	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/P09_typeD_quartics.py	75	-0.04	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/P09_typeD_quartics.py	76	-0.04	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/P09_typeD_quartics.py	77	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/P09_typeD_quartics.py	78	-1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/P09_typeD_quartics.py	80	0.5	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/V1_carter_chain.py	78	27.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/V1_carter_chain.py	81	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/V1_carter_chain.py	76	3.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/V1_carter_chain.py	76	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P09_range_paper/V1_carter_chain.py	80	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/LIFT_adiabatic_correction.py	33	1.439614	1e-06			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/LIFT_adiabatic_correction.py	34	2.31919	1e-05			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/LIFT_adiabatic_correction.py	35	0.160619	1e-06			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/LIFT_adiabatic_correction.py	32	3.338738	1e-06			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/LIFT_gravitational_action.py	32	0.025799	1e-06			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/LIFT_gravitational_action.py	33	0.025799	1e-06			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/LIFT_gravitational_action.py	34	-0.048113	1e-06			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/LIFT_gravitational_action.py	35	-0.032312	1e-06			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/LIFT_instanton_action.py	28	-0.5	1e-09			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/LIFT_instanton_action.py	30	0.727416	1e-06			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_no_rescaling_discharges_the_log_and_the_one_mass_shift_that_does_is_the_curvature_offset.py	179	3.75	0.01			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_the_field_squared_is_already_in_the_trace_at_quadratic_order_and_the_degenerate_point_is_representational.py	367	-0.5	0.002			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_is_a_convention_and_the_residue_is_the_absorbed_constant.py	263	2.0	0.001	canonical_time.tex	1.0	TIGHT	named	0.002
+receipts/P10_canonical_time/P10_the_frequency_shift_is_the_curvature_term_at_every_level_so_the_log_coefficient_is_fifteen_quarters.py	449	9.75	0.01			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_the_frequency_shift_is_the_curvature_term_at_every_level_so_the_log_coefficient_is_fifteen_quarters.py	452	3.75	0.01			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_the_interacting_state_supplies_the_second_order_datum_and_the_rank_is_an_equality_at_this_level.py	213	4.0	0.5			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_the_operator_is_an_inverted_quartic_so_the_deficiency_is_two_two_and_the_measure_closes_it_anyway.py	452	-1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_the_operator_is_an_inverted_quartic_so_the_deficiency_is_two_two_and_the_measure_closes_it_anyway.py	485	-1.0	0.05			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_the_operator_is_second_order_in_momentum_so_the_weyl_function_is_real_analytic_and_strictly_monotone.py	462	0.25	1e-12			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_the_operator_is_second_order_in_momentum_so_the_weyl_function_is_real_analytic_and_strictly_monotone.py	462	0.125	1e-12			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_the_premise_is_not_load_bearing_because_superselection_forbids_coherence_and_not_the_ensemble.py	355	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity_odd_entry_is_not_owed.py	426	2.0	0.05	canonical_time.tex	1.0	TIGHT	named	0.1
+receipts/P10_canonical_time/P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity_odd_entry_is_not_owed.py	372	6.0	1e-12	canonical_time.tex	1.0	TIGHT	named	2e-12
+receipts/P10_canonical_time/P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity_odd_entry_is_not_owed.py	373	6.0	1e-12	canonical_time.tex	1.0	TIGHT	named	2e-12
+receipts/P10_canonical_time/P10_the_third_order_operator_is_regular_and_its_deficiency_indices_are_equal_so_a_realisation_exists.py	313	-1.0	0.08			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping.py	193	3.75	0.01			UNANCHORED	named	
+receipts/P10_canonical_time/P10_the_weyl_invariant_at_second_order_carries_two_more_derivatives.py	131	1.0	0.001			NO-PAPER-NAMED	named	
+receipts/P10_canonical_time/P10_two_of_the_three_conventions_reach_nothing_observable_and_the_third_is_the_constant_the_row_already_spends.py	207	2.0	0.1			NO-PAPER-NAMED	named	
+receipts/P11_dynamics_paper/C50_the_dirac_sector_propagates_and_its_chirality_is_the_twists_sign.py	426	1.0	0.0001			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_A3_factorization.py	83	0.3849001794597505	1e-15			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_A3_factorization.py	89	0.7274157573144809	1e-12			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_A3_factorization.py	90	1.0760151554392123	1e-12			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_closure_iv_check.py	113	0.7274157573144809	1e-12			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_closure_iv_check.py	115	-0.436815	5e-07			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_closure_iv_check.py	115	-0.776531	5e-07			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_closure_iv_check.py	116	-5.580487	5e-07			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_closure_iv_check.py	116	-5.584603	5e-07			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_closure_iv_check.py	119	0.339716	5e-07			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_closure_iv_check.py	119	0.004117	5e-07			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_qm_S4_vs_S5.py	83	6.283185307179586	1e-12			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_ruling_swaps.py	30	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_sigma_lift.py	93	120.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_sigma_lift.py	94	-1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P13_boundary_paper/P13_sigma_lift.py	94	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/JTOWER_angular_index.py	25	0.5773502691896258	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/JTOWER_angular_index.py	26	2.239428	1e-05			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/JTOWER_angular_index.py	27	0.2301951	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/JTOWER_angular_index.py	28	9.43746e-05	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/JTOWER_angular_index.py	38	3220.78	1.0			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_B2_zeromode_continuation.py	80	0.256968	1e-05			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_B2_zeromode_continuation.py	81	0.846439	1e-05			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_B2_zeromode_continuation.py	90	0.9534	0.001			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_B2_zeromode_continuation.py	92	0.642	0.001			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_B2_zeromode_continuation.py	97	0.38548	0.0001			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_B2_zeromode_continuation.py	98	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_B3_spinor_vielbein.py	88	1.0392305	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_B3_spinor_vielbein.py	96	-2.2181073	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_L8_the_twelve.py	132	-0.707107	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_L8_the_twelve.py	133	0.272166	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_L8_the_twelve.py	133	0.272166	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_L8_the_twelve.py	112	0.3849002	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_L8_the_two.py	99	4.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_L8_the_two.py	109	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_L8_the_two.py	122	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_P14_payoff.py	103	2.220291	1e-06			UNANCHORED	named	
+receipts/P14_matter_sector_paper/P14_P14_payoff.py	113	2.220291	1e-06			UNANCHORED	named	
+receipts/P14_matter_sector_paper/P14_P14_payoff.py	107	1.0	1e-12	matter_sector_paper.tex	1.0	TIGHT	named	2e-12
+receipts/P14_matter_sector_paper/P14_P14_payoff.py	117	1.0	1e-12	matter_sector_paper.tex	1.0	TIGHT	named	2e-12
+receipts/P14_matter_sector_paper/P14_P14_payoff.py	58	1.0	1e-09	matter_sector_paper.tex	1.0	TIGHT	named	2e-09
+receipts/P14_matter_sector_paper/P14_dimension_from_flavour.py	384	1.1547005	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_dual_norm.py	69	2.3561945	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_dual_norm.py	72	0.2569683	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_dual_norm.py	79	0.299999	1e-05			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_dual_norm.py	82	0.73787	0.0001			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_dual_norm.py	84	3.120625	1e-05			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_dual_norm.py	86	3.73783	0.0001			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_dual_norm.py	80	0.792267	1e-05			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_dual_norm.py	80	4.647976	1e-05			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_even_crossing_index.py	95	0.00495747	1e-07			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_even_crossing_index.py	96	0.00495747	1e-07			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_even_crossing_index.py	97	201.71564	0.0001			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_leaf_compactness.py	83	1.7671	0.001			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_leaf_compactness.py	86	0.31623	0.005			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_leaf_compactness.py	88	0.002448	1e-05			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_leaf_compactness.py	91	0.73786	0.0001			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_leaf_compactness.py	94	0.05002	0.0001			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_leaf_compactness.py	95	3.12061	0.0001			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_leaf_compactness.py	81	0.257	0.0005			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_leaf_compactness.py	81	0.8464	0.0005			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_leaf_compactness.py	96	0.73786	0.0001			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_leaf_compactness.py	96	0.002448	1e-05			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_between_horizon_leaf_converges_at_nariai.py	144	0.5773502692	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_binding_radius_is_a_branch_point_of_the_time_map.py	99	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_binding_radius_is_a_branch_point_of_the_time_map.py	111	60.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_coincidence_is_forced_by_the_dimension.py	107	1.0	1e-15			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_compact_faces_four_is_three_plus_one_and_the_singlet_has_nothing_to_carry_it.py	295	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_compact_faces_four_is_three_plus_one_and_the_singlet_has_nothing_to_carry_it.py	314	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_compact_faces_four_is_three_plus_one_and_the_singlet_has_nothing_to_carry_it.py	320	30.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_doublet_pairing_on_c50s_member_is_obstructed_by_lambda_and_by_the_twist.py	292	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_four_spheres_chirality_anticommutes_with_the_physical_one_so_its_su2_is_not_the_weak_one.py	89	0.5	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_hexads_hinge_relative_sign_is_the_mass_sign_and_its_three_is_marks_not_modes.py	152	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_hexads_hinge_relative_sign_is_the_mass_sign_and_its_three_is_marks_not_modes.py	191	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_hexads_hinge_relative_sign_is_the_mass_sign_and_its_three_is_marks_not_modes.py	279	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_lift_fibre_content_is_two_plus_one_and_R_is_the_square_of_the_frame_exchange.py	356	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_lift_triple_occupies_one_character_where_the_wall_sector_occupies_four.py	208	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	136	2.220291	1e-06			UNANCHORED	named	
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	136	2.220291	1e-06			UNANCHORED	named	
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	203	1.0	1e-12	matter_sector_paper.tex	1.0	TIGHT	named	2e-12
+receipts/P14_matter_sector_paper/P14_the_propagating_three_is_inherited_and_the_pairing_fails_only_at_the_bound_energy.py	257	1.0	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_propagating_three_is_inherited_and_the_pairing_fails_only_at_the_bound_energy.py	257	1.0	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_propagating_three_is_inherited_and_the_pairing_fails_only_at_the_bound_energy.py	280	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_propagating_three_is_inherited_and_the_pairing_fails_only_at_the_bound_energy.py	387	2.0	1e-06			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_propagating_three_is_inherited_and_the_pairing_fails_only_at_the_bound_energy.py	341	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_seats_are_a_section_not_a_frame_so_there_is_no_spacetime_connection_to_curve.py	320	2.0	0.15			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_seats_degeneracy_is_exact_and_its_symmetry_is_the_global_group_the_holonomy_sits_in.py	531	3.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_seats_degeneracy_is_exact_and_its_symmetry_is_the_global_group_the_holonomy_sits_in.py	531	2.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_seats_degeneracy_is_exact_and_its_symmetry_is_the_global_group_the_holonomy_sits_in.py	539	3.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_stratifications_two_valued_data_are_one_involution_and_it_is_R.py	221	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_stratifications_two_valued_data_are_one_involution_and_it_is_R.py	359	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_three_and_both_eigenvalues_are_obstructed_by_the_binding_itself.py	97	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_twist_conjugates_T_it_does_not_project_it.py	207	0.9534	0.005			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_two_threes_are_not_related_as_covers.py	172	0.5773502691896258	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_wall_holonomy_acts_on_the_seat_index_and_the_compact_face_has_no_loops.py	200	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_walls_modes_are_algebraic_not_exponential_so_the_disjointness_obstruction_does_not_hold.py	385	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_walls_modes_are_algebraic_not_exponential_so_the_disjointness_obstruction_does_not_hold.py	385	2.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_walls_modes_are_algebraic_not_exponential_so_the_disjointness_obstruction_does_not_hold.py	385	3.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_walls_modes_are_algebraic_not_exponential_so_the_disjointness_obstruction_does_not_hold.py	397	2.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_walls_modes_are_algebraic_not_exponential_so_the_disjointness_obstruction_does_not_hold.py	403	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P14_matter_sector_paper/P14_the_walls_modes_are_algebraic_not_exponential_so_the_disjointness_obstruction_does_not_hold.py	413	2.0	1e-06			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C10_highl_ratio.py	87	14079.9	0.1			UNANCHORED	named	
+receipts/P15_CR_cosmology/C10_highl_ratio.py	88	14010.2	0.1			UNANCHORED	named	
+receipts/P15_CR_cosmology/C10_highl_ratio.py	89	1.004976	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C10_highl_ratio.py	92	302.2	0.05	CR_cosmology.tex	0.1	TIGHT	named	1
+receipts/P15_CR_cosmology/C10_highl_ratio.py	94	302.8	0.05			UNANCHORED	named	
+receipts/P15_CR_cosmology/C10_highl_ratio.py	95	301.0	2.0	CR_cosmology.tex	1.0	SLACK	named	4
+receipts/P15_CR_cosmology/C10_highl_ratio.py	97	146.36	0.01			UNANCHORED	named	
+receipts/P15_CR_cosmology/C10_highl_ratio.py	98	145.38	0.01			UNANCHORED	named	
+receipts/P15_CR_cosmology/C10_highl_ratio.py	100	1.082	0.001	CR_cosmology.tex	0.001	SLACK	named	2
+receipts/P15_CR_cosmology/C10_highl_ratio.py	103	0.169859	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C10_highl_ratio.py	105	1294.38	0.01			UNANCHORED	named	
+receipts/P15_CR_cosmology/C10_highl_ratio.py	107	0.8438	0.0001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C10_highl_ratio.py	109	0.6824	0.0001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11TEST_radiation_zeroed.py	197	6760.98	0.05			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11TEST_radiation_zeroed.py	198	135.461	0.005			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11TEST_radiation_zeroed.py	199	13004.6	0.5			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11TEST_radiation_zeroed.py	200	449.106	0.005			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11TEST_radiation_zeroed.py	201	180.387	0.005			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11TEST_radiation_zeroed.py	202	301.6	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11TEST_radiation_zeroed.py	204	10.88	0.005			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11TEST_radiation_zeroed.py	205	1195.3	0.5			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11TEST_radiation_zeroed.py	207	1.0043	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11TEST_radiation_zeroed.py	208	2.6891	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11TEST_radiation_zeroed.py	224	0.592	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11TEST_radiation_zeroed.py	225	0.3919	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11_early_isw.py	117	1.6913e-09	1e-13			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11_early_isw.py	122	0.86647	1e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11_early_isw.py	123	0.84261	1e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11_early_isw.py	124	0.81174	1e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11_early_isw.py	126	3.111	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C11_early_isw.py	127	3.8	0.01	CR_cosmology.tex	0.01	SLACK	named	2
+receipts/P15_CR_cosmology/C14_po12_gates_po10.py	126	4.0	1e-09	CR_cosmology.tex	1.0	TIGHT	named	2e-09
+receipts/P15_CR_cosmology/C16_the_transfer_is_six_eighths_built.py	147	1.016	0.002	CR_cosmology.tex	0.0001	SLACK	named	40
+receipts/P15_CR_cosmology/C16_the_transfer_is_six_eighths_built.py	147	0.844	0.002			UNANCHORED	named	
+receipts/P15_CR_cosmology/C1_closure_of_the_driving.py	113	0.967061	1e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/C1_closure_of_the_driving.py	115	0.483531	1e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	128	0.925	0.002			UNANCHORED	named	
+receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	135	0.843	0.002			UNANCHORED	named	
+receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	135	0.505	0.002			UNANCHORED	named	
+receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	151	1.016	0.002	CR_cosmology.tex	0.0001	SLACK	named	40
+receipts/P15_CR_cosmology/C23_the_gap_estimated.py	132	1.149	0.002			UNANCHORED	named	
+receipts/P15_CR_cosmology/C23_the_gap_estimated.py	137	0.813	0.004			UNANCHORED	named	
+receipts/P15_CR_cosmology/C23_the_gap_estimated.py	156	0.01	0.002	CR_cosmology.tex	0.001	SLACK	named	4
+receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	144	1.14	0.003			UNANCHORED	named	
+receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	144	1.068	0.003			UNANCHORED	named	
+receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	171	6.8	0.3			UNANCHORED	named	
+receipts/P15_CR_cosmology/C28_length_against_angle.py	152	10.8	0.1	CR_cosmology.tex	0.1	SLACK	named	2
+receipts/P15_CR_cosmology/C2_horizon_limits.py	120	0.5773503	1e-07			UNANCHORED	named	
+receipts/P15_CR_cosmology/C2_horizon_limits.py	121	0.1924501	1e-07			UNANCHORED	named	
+receipts/P15_CR_cosmology/C2_horizon_limits.py	125	1.1222504	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C2_horizon_limits.py	126	1.0398574	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C2_horizon_limits.py	127	4.1924501	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C30_the_odd_even_half_is_shared.py	144	2.2	0.0772	CR_framework.tex	0.1	SLACK	named	1.54
+receipts/P15_CR_cosmology/C30_the_odd_even_half_is_shared.py	144	2.2564	0.0772	CR_cosmology.tex	0.0001	SLACK	named	1.54e+03
+receipts/P15_CR_cosmology/C30_the_odd_even_half_is_shared.py	166	2.8	0.01			UNANCHORED	named	
+receipts/P15_CR_cosmology/C30_the_odd_even_half_is_shared.py	166	3.5	0.01	CR_cosmology.tex	0.1	TIGHT	named	0.2
+receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	125	10.0	1e-09	CR_cosmology.tex	1.0	TIGHT	named	2e-09
+receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	125	26.9	0.1			UNANCHORED	named	
+receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	133	21.5	0.1			UNANCHORED	named	
+receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	138	5.4	0.1			UNANCHORED	named	
+receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	148	21.5	0.1			UNANCHORED	named	
+receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	148	16.1	0.1			UNANCHORED	named	
+receipts/P15_CR_cosmology/C3_conformal_map.py	117	1.5275252	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C3_conformal_map.py	119	24.4071	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C3_conformal_map.py	126	1.8724	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C3_conformal_map.py	128	0.628	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C3_conformal_map.py	133	0.063	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C3_conformal_map.py	29	0.8855	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C40_the_pair_was_quoted_against_a_rounding.py	98	1.2	0.01	CR_cosmology.tex	0.1	TIGHT	named	0.2
+receipts/P15_CR_cosmology/C40_the_pair_was_quoted_against_a_rounding.py	101	0.44	0.01	CR_cosmology.tex	0.01	SLACK	named	2
+receipts/P15_CR_cosmology/C42_the_cancellation_needs_xe_identical.py	106	1.106768	1e-05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C44_the_gap_is_truncation.py	121	10.83	1.5			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C45_xe_does_not_cancel_from_a_ratio_of_integrals.py	100	9.94	0.3			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	162	9.41	0.05			UNANCHORED	named	
+receipts/P15_CR_cosmology/C47_the_neutrinos_were_missing.py	113	0.6918	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C47_the_neutrinos_were_missing.py	115	5.63	0.3			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C47_the_neutrinos_were_missing.py	118	1.0897	0.001			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C47_the_neutrinos_were_missing.py	123	1.0	0.06			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C47_the_neutrinos_were_missing.py	123	1.0897	0.001			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C4_driving_envelope.py	177	0.5777141	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C4_driving_envelope.py	178	0.5883668	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C4_driving_envelope.py	179	0.7637626	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C4_driving_envelope.py	180	1.0	0.001	CR_cosmology.tex	1.0	TIGHT	named	0.002
+receipts/P15_CR_cosmology/C4_driving_envelope.py	181	1.0	0.02	CR_cosmology.tex	1.0	TIGHT	named	0.04
+receipts/P15_CR_cosmology/C4_driving_envelope.py	185	32.288	0.01			UNANCHORED	named	
+receipts/P15_CR_cosmology/C4_driving_envelope.py	188	0.483531	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C4_driving_envelope.py	193	0.5559	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C4_driving_envelope.py	195	7.3634	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C4_driving_envelope.py	200	0.0583	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C57_the_cr_peaks_are_not_at_its_own_la.py	89	1.0	0.03			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py	212	2.721	0.01			UNANCHORED	named	
+receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py	213	4.497	0.02			UNANCHORED	named	
+receipts/P15_CR_cosmology/C5b_baryon_term.py	75	0.097176	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C5b_baryon_term.py	79	0.000245	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C5b_baryon_term.py	83	6.1744	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/C61_the_undriven_premise_is_false_on_the_rate_the_framework_assigns_the_perturbations.py	247	0.92	0.02	CR_cosmology.tex	0.01	SLACK	named	4
+receipts/P15_CR_cosmology/C61_the_undriven_premise_is_false_on_the_rate_the_framework_assigns_the_perturbations.py	240	1.0	1e-12	CR_framework.tex	1.0	TIGHT	named	2e-12
+receipts/P15_CR_cosmology/C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on.py	223	1.174306	0.0005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on.py	226	1.156766	0.0005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C7_equality_and_deficit.py	67	3398.0	0.05			UNANCHORED	named	
+receipts/P15_CR_cosmology/C7_equality_and_deficit.py	68	3399.0	0.05			UNANCHORED	named	
+receipts/P15_CR_cosmology/C7_equality_and_deficit.py	70	0.9994	0.0001	CR_cosmology.tex	1e-05	SLACK	named	20
+receipts/P15_CR_cosmology/C7_equality_and_deficit.py	72	1.0	0.001	CR_cosmology.tex	1.0	TIGHT	named	0.002
+receipts/P15_CR_cosmology/C7_equality_and_deficit.py	75	0.041222	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C7_equality_and_deficit.py	76	0.022628	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C7_equality_and_deficit.py	77	0.548917	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C8_diffusion_length.py	125	0.323919	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C8_diffusion_length.py	127	9.032068e-05	1e-10			UNANCHORED	named	
+receipts/P15_CR_cosmology/C8_diffusion_length.py	128	1.106768	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C8_diffusion_length.py	130	1.108305	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/C8_diffusion_length.py	132	10.83	0.01			UNANCHORED	named	
+receipts/P15_CR_cosmology/C8_diffusion_length.py	134	10.8	0.1	CR_cosmology.tex	0.1	SLACK	named	2
+receipts/P15_CR_cosmology/C8_diffusion_length.py	138	2.15007e-09	1e-15			UNANCHORED	named	
+receipts/P15_CR_cosmology/C8_diffusion_length.py	139	1.750386e-09	1e-15			UNANCHORED	named	
+receipts/P15_CR_cosmology/C9_sound_horizon_and_ratio.py	52	146.36	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C9_sound_horizon_and_ratio.py	53	145.38	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C9_sound_horizon_and_ratio.py	54	0.67	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C9_sound_horizon_and_ratio.py	55	1.1015	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/C9_sound_horizon_and_ratio.py	56	1.0941	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/H0_acoustic_angle_and_seam.py	38	301.6	0.3			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/H0_acoustic_angle_and_seam.py	39	145.93	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/H0_acoustic_angle_and_seam.py	58	6783.0	3.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/H0_acoustic_angle_and_seam.py	81	6783.0	3.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/H0_acoustic_angle_and_seam.py	119	43.54	0.3			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/H0_acoustic_angle_and_seam.py	125	301.6	0.3			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/H0_acoustic_angle_and_seam.py	126	14.15	0.3			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/ISW_line_of_sight.py	31	4.02	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/ISW_line_of_sight.py	32	14008.3	2.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/M2_reabsorption_minimization.py	72	6873.0	5.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/M2_reabsorption_minimization.py	73	0.1954	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/M2_reabsorption_minimization.py	75	301.0	0.2			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/M2_reabsorption_minimization.py	107	8.41	0.15			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/M2_reabsorption_minimization.py	109	7.54	0.15			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py	292	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py	292	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all.py	217	2.54	0.6			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all.py	217	7.304	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_both_datum_freedoms_opened_and_the_spacing_still_holds.py	180	1.2599	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_camb_reference.py	48	5734.1	5.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_camb_reference.py	49	2.211	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_camb_reference.py	50	0.452	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_camb_reference.py	51	0.443	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_cr_collapse_driving.py	49	0.5	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_cr_collapse_driving.py	50	0.999	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_cr_collapse_driving.py	51	2.0	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_cr_collapse_driving.py	52	1.6	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_cr_collapse_driving.py	53	1.1	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_ratio_clean.py	174	144.01	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_ratio_clean.py	175	144.44	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_ratio_clean.py	176	145.1	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_ratio_clean.py	177	1.0897	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_ratio_clean.py	178	1.0816	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_ratio_clean.py	180	1.041	0.001			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_ratio_clean.py	181	245.2	0.5			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_ratio_clean.py	198	1.0411	0.001			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_reabsorption.py	108	6.5623	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_reabsorption.py	109	7.1465	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_reabsorption.py	110	8.9	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_reabsorption.py	113	29.2	0.5			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_reabsorption.py	114	30.2	0.5			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_damping_reabsorption.py	123	8.15	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_desi_dr2_confrontation.py	101	0.3066	0.0015			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_desi_dr2_confrontation.py	102	12.01	0.15			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_desi_dr2_confrontation.py	103	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_desi_dr2_confrontation.py	104	6764.0	8.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_desi_dr2_confrontation.py	105	2.0	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_desi_dr2_confrontation.py	113	13.287	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_desi_dr2_confrontation.py	128	28.56	0.3			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_desi_dr2_confrontation.py	130	178.16	1.5			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_desi_dr2_confrontation.py	131	13.7	0.15			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_desi_dr2_confrontation.py	132	14.85	0.15			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_full_transfer_verdict.py	68	6.562	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_full_transfer_verdict.py	69	7.146	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_full_transfer_verdict.py	70	8.9	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_full_transfer_verdict.py	71	2114.0	5.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_full_transfer_verdict.py	72	0.979	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_full_transfer_verdict.py	73	0.92	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_full_transfer_verdict.py	74	0.829	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_full_transfer_verdict.py	75	0.717	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_full_transfer_verdict.py	76	0.594	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_full_transfer_verdict.py	77	1.0412	0.001			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_hubble_expansion_confrontation_v2.py	128	10.294	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_hubble_expansion_confrontation_v2.py	129	8.564	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_hubble_expansion_confrontation_v2.py	132	1.71	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_hubble_expansion_confrontation_v2.py	133	4.37	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_hubble_expansion_confrontation_v2.py	134	49.45	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_hubble_expansion_confrontation_v2.py	137	6774.0	2.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_hubble_expansion_confrontation_v2.py	138	4.01	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control.py	245	1.0	0.15			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_po84_the_charge_is_carried_and_the_corpus_already_named_where_because_the_eigenvalue_divergence_is_the_traded_momentums_blueshift.py	221	0.3162	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_po84_the_charge_is_carried_and_the_corpus_already_named_where_because_the_eigenvalue_divergence_is_the_traded_momentums_blueshift.py	221	0.05793	0.0001			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_po84_the_charge_is_carried_and_the_corpus_already_named_where_because_the_eigenvalue_divergence_is_the_traded_momentums_blueshift.py	222	0.005774	1e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_accounting_closes_but_cannot_attribute_because_the_share_is_the_cosine_of_a_phase_offset.py	200	0.27	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_accounting_closes_but_cannot_attribute_because_the_share_is_the_cosine_of_a_phase_offset.py	200	0.264	0.001			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_accounting_closes_but_cannot_attribute_because_the_share_is_the_cosine_of_a_phase_offset.py	200	1.646	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py	398	1.0	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py	426	1.0	0.004			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py	422	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py	422	1.04	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py	422	1.2	0.045			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_acoustics_work_and_the_phase_is_the_whole_disagreement.py	204	0.615	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_admissible_band_is_a_third_and_the_two_entries_differ_against_the_potential.py	333	0.2069	0.002			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_admissible_band_is_a_third_and_the_two_entries_differ_against_the_potential.py	334	0.6152	0.002			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_admissible_band_is_a_third_and_the_two_entries_differ_against_the_potential.py	340	0.408	0.003			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_angular_label_crosses_the_lift_untouched_and_the_amplitude_does_not_because_the_lift_is_purely_imaginary_conformal_time_so_what_it_adds_is_an_envelope_with_exactly_no_phase.py	366	1.0	1e-15	CR_framework.tex	1.0	TIGHT	named	2e-15
+receipts/P15_CR_cosmology/P15_the_angular_label_crosses_the_lift_untouched_and_the_amplitude_does_not_because_the_lift_is_purely_imaginary_conformal_time_so_what_it_adds_is_an_envelope_with_exactly_no_phase.py	464	2.7737	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py	342	1.0	1e-05	CR_cosmology.tex	1.0	TIGHT	named	2e-05
+receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py	409	2.762424	1e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py	305	13004.5552	0.05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py	306	4708.97	0.5			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py	309	13864.6627	0.05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py	310	13941.629	0.05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py	375	5051.0	0.01	CR_cosmology.tex	1.0	TIGHT	named	0.02
+receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py	376	5051.0	0.01	CR_cosmology.tex	1.0	TIGHT	named	0.02
+receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py	399	13954.3535	0.05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py	436	14011.4567	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	478	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	298	0.396733	5e-07			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	298	0.396957	5e-07			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	368	1.9	0.2			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	418	1.085	0.0005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	418	1.0695	0.0005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	419	0.02424	5e-05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	419	0.01332	5e-05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	270	1.0	1e-11	CR_cosmology.tex	1.0	TIGHT	named	2e-11
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	275	0.2591014627	1e-08			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	276	0.8650719	1e-06	CR_cosmology.tex	1e-07	SLACK	named	20
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	283	4.868603	1e-05	CR_cosmology.tex	1e-06	SLACK	named	20
+receipts/P15_CR_cosmology/P15_the_conjecture_reduces_to_umbilicity_because_a_conformal_carrying_preserves_the_invariants_modulus_across_the_lift_and_the_foliation_is_umbilic_only_at_the_seam.py	194	43.8232327	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	533	1.0	1e-12	CR_cosmology.tex	1.0	TIGHT	named	2e-12
+receipts/P15_CR_cosmology/P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha.py	193	5051.0	1.0	CR_cosmology.tex	1.0	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha.py	196	2.774	0.0005	CR_cosmology.tex	0.001	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha.py	372	7.845	0.02			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha.py	372	7.602	0.02			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_continuation_is_diagonal.py	106	1.0	0.001			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_control_entered_the_regime_and_the_arm_did_not_move.py	333	1.18	0.12			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_control_entered_the_regime_and_the_arm_did_not_move.py	340	0.5703	0.0005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py	202	1320.5	0.5			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py	203	51817.0	1.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py	245	1.0	0.001			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py	367	1114.1	1.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py	411	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py	415	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py	417	1.0	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py	456	1.0	0.03			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py	457	1.0	0.03			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py	239	1.0	0.015			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py	340	1.0	0.015			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_damping_to_comb_ratio_picks_the_crossing_and_the_leaf_clock_out_of_four.py	208	1.0	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_driving_is_bought_by_decay_during_oscillation.py	170	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_driving_is_bought_by_decay_during_oscillation.py	152	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_driving_is_bought_by_decay_during_oscillation.py	152	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_envelope_turnover_is_stated_on_a_third_equality_and_the_leaf_background_moves_it.py	145	1.0	0.02	CR_cosmology.tex	1.0	TIGHT	named	0.04
+receipts/P15_CR_cosmology/P15_the_exact_transmission_ratios_are_recomputed_and_the_offset_saturates.py	208	0.0005	1e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_excess_decelerates_and_nothing_measured_in_this_arm_carries_its_wavenumber_dependence.py	342	1.0	0.5			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_expansion_in_the_de_sitter_presentation_is_not_bounded_either_because_the_sphere_lives_at_zero_mass_and_the_observer_at_the_nariai_one_and_both_closed_kernels_are_excluded_by_the_comb.py	176	5051.0	1.0	CR_cosmology.tex	1.0	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_expansion_in_the_de_sitter_presentation_is_not_bounded_either_because_the_sphere_lives_at_zero_mass_and_the_observer_at_the_nariai_one_and_both_closed_kernels_are_excluded_by_the_comb.py	176	2.774	0.0005	CR_cosmology.tex	0.001	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_expansion_in_the_de_sitter_presentation_is_not_bounded_either_because_the_sphere_lives_at_zero_mass_and_the_observer_at_the_nariai_one_and_both_closed_kernels_are_excluded_by_the_comb.py	239	49.4	1.0	CR_cosmology.tex	0.1	SLACK	named	20
+receipts/P15_CR_cosmology/P15_the_filter_is_a_sound_speed_filter.py	84	3.32	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_first_peak_figure_is_not_stable.py	192	1.447	0.003			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_first_peak_figure_is_not_stable.py	194	2.017	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_first_peak_is_the_seam_datum_and_the_spacing_is_not.py	188	0.5703	0.0005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_first_peak_is_the_seam_datum_and_the_spacing_is_not.py	190	1.2599	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has.py	282	0.04	0.0015			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has.py	283	0.036	0.0015			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has.py	288	186.0	1.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has.py	290	278.8	1.5			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has.py	292	5.2	0.2			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has.py	296	56.4	1.5			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has.py	300	0.0085	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has.py	313	88.0	4.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	601	292.4	1.5			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	602	172.8	1.5			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	603	1.286	0.005			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	340	292.4	1.5			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	342	172.8	1.5			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	370	0.5	0.02	CR_cosmology.tex	0.1	TIGHT	named	0.4
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	373	1.0	0.02	CR_framework.tex	1.0	TIGHT	named	0.04
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	585	1.0	0.02	CR_framework.tex	1.0	TIGHT	named	0.04
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	605	0.5	0.02	CR_cosmology.tex	0.1	TIGHT	named	0.4
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	605	1.0	0.02	CR_framework.tex	1.0	TIGHT	named	0.04
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	351	135.46	0.5			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	351	105.36	0.5			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	352	1.286	0.005			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	384	0.5	0.02	CR_cosmology.tex	0.1	TIGHT	named	0.4
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	384	1.0	0.02	CR_framework.tex	1.0	TIGHT	named	0.04
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	559	0.789	0.03	CR_cosmology.tex	0.001	SLACK	named	60
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	559	0.913	0.03	CR_cosmology.tex	0.001	SLACK	named	60
+receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py	1039	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py	1299	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	125	1.0	1e-12	CR_cosmology.tex	1.0	TIGHT	named	2e-12
+receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	157	1.96	0.01	CR_cosmology.tex	0.01	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	157	19.6	0.1	CR_cosmology.tex	0.1	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	165	1.0	1e-05	CR_cosmology.tex	1.0	TIGHT	named	2e-05
+receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	188	0.13	0.01			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	188	0.13	0.01			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_geometry_transmits_no_parameters.py	63	3.32	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_growth_normalisation_root_has_no_feature_at_the_physical_point.py	102	0.315162	1e-05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_growth_root_is_a_moment_balance_pivoting_on_the_nariai_radius.py	189	0.6	1e-05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_growth_root_is_a_moment_balance_pivoting_on_the_nariai_radius.py	191	0.4	1e-05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_growth_root_is_a_moment_balance_pivoting_on_the_nariai_radius.py	213	0.315162	1e-06			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_growth_root_is_a_moment_balance_pivoting_on_the_nariai_radius.py	229	2.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_growth_root_is_a_moment_balance_pivoting_on_the_nariai_radius.py	240	2.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_growth_root_is_a_moment_balance_pivoting_on_the_nariai_radius.py	261	1.0	1e-05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_growth_root_on_the_leaf_rate_is_not_a_moment_balance_and_the_gap_stands.py	213	1.180309372	1e-08			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_growth_root_on_the_leaf_rate_is_not_a_moment_balance_and_the_gap_stands.py	278	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_growth_root_on_the_leaf_rate_is_not_a_moment_balance_and_the_gap_stands.py	234	0.99934	5e-06			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_growth_root_on_the_leaf_rate_is_not_a_moment_balance_and_the_gap_stands.py	234	0.9994	5e-06			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	197	5051.0	1.0	CR_cosmology.tex	1.0	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	204	14011.0	0.5	CR_cosmology.tex	1.0	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	208	2.774	0.0005	CR_cosmology.tex	0.001	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	212	7.8	0.15	CR_cosmology.tex	0.1	SLACK	named	3
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	340	1.0	0.002	CR_cosmology.tex	1.0	TIGHT	named	0.004
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	453	1.0	1e-12	CR_cosmology.tex	1.0	TIGHT	named	2e-12
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	552	5051.0	1.0	CR_cosmology.tex	1.0	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	571	2.774	0.0005	CR_cosmology.tex	0.001	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_height_target_was_below_the_resolution_of_its_own_statistic.py	294	1.03	0.05	CR_cosmology.tex	0.001	SLACK	named	100
+receipts/P15_CR_cosmology/P15_the_height_target_was_below_the_resolution_of_its_own_statistic.py	296	0.865	0.005			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_height_target_was_below_the_resolution_of_its_own_statistic.py	297	0.859	0.002			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_height_target_was_below_the_resolution_of_its_own_statistic.py	298	1122.9	5.0			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_height_target_was_below_the_resolution_of_its_own_statistic.py	287	2.2564	0.0005	CR_cosmology.tex	0.0001	SLACK	named	10
+receipts/P15_CR_cosmology/P15_the_height_target_was_below_the_resolution_of_its_own_statistic.py	287	0.0772	0.0005	CR_cosmology.tex	0.0001	SLACK	named	10
+receipts/P15_CR_cosmology/P15_the_height_target_was_below_the_resolution_of_its_own_statistic.py	289	2.28	0.0005			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_height_target_was_below_the_resolution_of_its_own_statistic.py	289	0.0737	0.0005			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_held_period_estimator_reaches_below_the_floor_and_the_tooth_that_would_decide_cannot_be_applied.py	222	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_held_period_estimator_reaches_below_the_floor_and_the_tooth_that_would_decide_cannot_be_applied.py	348	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_held_period_estimator_reaches_below_the_floor_and_the_tooth_that_would_decide_cannot_be_applied.py	387	1.0	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_held_period_estimator_reaches_below_the_floor_and_the_tooth_that_would_decide_cannot_be_applied.py	405	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_interiors_transfer_imprints_its_own_running_so_the_channel_hunt_answered_the_wrong_question.py	282	1.0	0.001			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_interiors_vacuum_is_blue_everywhere_and_a_running_so_the_substrates_mass_template_does_not_apply.py	243	2.0	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma.py	228	630.46	0.5			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_kernel_carries_no_sound_speed_so_the_fork_had_no_subject_and_r7108s_equation_is_the_c_s_equals_one_member_which_is_exactly_the_tensor_equation.py	201	3.24	0.05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	326	5051.0	1.0	CR_cosmology.tex	1.0	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	327	14011.0	0.5	CR_cosmology.tex	1.0	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	328	2.774	0.0005	CR_cosmology.tex	0.001	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	329	7.8	0.15	CR_cosmology.tex	0.1	SLACK	named	3
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	196	2.774	0.0005	CR_cosmology.tex	0.001	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	292	1.0	0.001	CR_framework.tex	1.0	TIGHT	named	0.002
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	296	1.0	1e-09	CR_framework.tex	1.0	TIGHT	named	2e-09
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	162	5051.0	1.0	CR_cosmology.tex	1.0	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	169	14011.0	0.5	CR_cosmology.tex	1.0	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	172	2.774	0.0005	CR_cosmology.tex	0.001	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	177	7.8	0.15	CR_cosmology.tex	0.1	SLACK	named	3
+receipts/P15_CR_cosmology/P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold.py	155	6.7	0.05	CR_cosmology.tex	0.1	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py	306	43.8232327	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py	408	7.8717	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py	410	0.058267	1e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_leg_contributes_no_tilt_because_a_fixed_phase_handover_is_scale_free_and_a_fixed_time_one_is_a_running.py	112	0.48353	1e-05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_leg_contributes_no_tilt_because_a_fixed_phase_handover_is_scale_free_and_a_fixed_time_one_is_a_running.py	113	0.41896	1e-05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_leg_contributes_no_tilt_because_a_fixed_phase_handover_is_scale_free_and_a_fixed_time_one_is_a_running.py	146	0.7638	1e-09			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py	217	0.8	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py	218	0.52	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py	282	-0.0636	0.0005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py	282	-0.0075	0.0005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor.py	110	278.8	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor.py	111	186.0	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	172	206.4	0.1			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	174	0.96	0.005			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	243	1114.0	1.0			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	248	206.4	0.1			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	287	397.1255	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	294	397.1255	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too.py	262	815.4	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too.py	268	6.6	0.2			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_locus_is_wrong_in_six_places_and_the_lint_cannot_see_the_worst.py	485	1.5338	0.002			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	251	1.8	0.15	CR_cosmology.tex	0.1	SLACK	named	3
+receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	264	1.6	0.1	CR_cosmology.tex	0.1	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py	416	1.0	0.01	CR_cosmology.tex	1.0	TIGHT	named	0.02
+receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py	416	1.0	0.01	CR_cosmology.tex	1.0	TIGHT	named	0.02
+receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py	339	1.0	0.01	CR_cosmology.tex	1.0	TIGHT	named	0.02
+receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py	342	1.0	0.01	CR_cosmology.tex	1.0	TIGHT	named	0.02
+receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py	114	5064.0	1.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py	120	1.0	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py	331	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py	194	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py	296	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py	331	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py	425	1.0401	0.0005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py	425	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py	96	7.304	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py	138	0.983	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py	160	1.06	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py	173	0.264	0.001			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py	173	0.27	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py	187	1.0	0.15			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py	187	1.0	0.15			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py	182	1.0	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py	182	1.0	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	399	1089.0	12.0			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	357	1.0	0.02	CR_framework.tex	1.0	TIGHT	named	0.04
+receipts/P15_CR_cosmology/P15_the_phase_is_the_driving_and_the_undriven_arms_agree.py	187	5.7	1.5			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_phase_is_the_driving_and_the_undriven_arms_agree.py	189	0.615	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_phase_moves_with_the_datum_and_only_the_spacing_does_not.py	210	0.891	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py	130	0.0215	5e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py	130	0.333	0.0005			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py	191	0.01359	5e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py	191	0.00202	5e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_photon_hierarchy_in_the_transfer.py	252	7.14	0.05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_photon_hierarchy_in_the_transfer.py	253	4.17	0.05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_photon_hierarchy_in_the_transfer.py	255	701.9	5.0			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_photon_hierarchy_in_the_transfer.py	256	0.5703	5e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_potential_at_the_handover_is_not_free.py	132	1.111	0.001			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_the_horizon_scale_on_both_lorentzian_legs_is_the_same_pure_number.py	301	1.0	2e-05	CR_cosmology.tex	1.0	TIGHT	named	4e-05
+receipts/P15_CR_cosmology/P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_the_horizon_scale_on_both_lorentzian_legs_is_the_same_pure_number.py	302	1.0	0.002	CR_cosmology.tex	1.0	TIGHT	named	0.004
+receipts/P15_CR_cosmology/P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_the_horizon_scale_on_both_lorentzian_legs_is_the_same_pure_number.py	331	2.7737	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_the_horizon_scale_on_both_lorentzian_legs_is_the_same_pure_number.py	319	78.5382	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	180	4.8	0.01			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	180	7.85	0.01	CR_cosmology.tex	0.01	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	181	10.74	0.01			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	181	13.59	0.01			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	203	1.199	0.0005			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	204	2.7739	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	204	2.774	1e-09	CR_cosmology.tex	0.001	TIGHT	named	2e-06
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	253	9.443377	1e-05	CR_cosmology.tex	1e-06	SLACK	named	20
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	254	3.338738	1e-06	CR_cosmology.tex	1e-07	SLACK	named	20
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	259	4.868603	1e-05	CR_cosmology.tex	1e-06	SLACK	named	20
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	268	4.574774	0.0001			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	285	1.0	1e-11	CR_cosmology.tex	1.0	TIGHT	named	2e-11
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	169	1.0	1e-12	CR_cosmology.tex	1.0	TIGHT	named	2e-12
+receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	145	2.7739	0.001			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	163	2.611994	1e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	173	2.741706	1e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	174	2.747427	1e-05			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	207	3.252	0.0005			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	208	3.2686	0.0005			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	138	1.0	1e-12	CR_cosmology.tex	1.0	TIGHT	named	2e-12
+receipts/P15_CR_cosmology/P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent.py	124	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent.py	130	485.5	0.2			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent.py	130	282.4	0.2			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent.py	141	14017.0	1.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent.py	141	13947.1	1.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_ratio_is_the_onset_in_imported_units.py	169	1.72	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase.py	241	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_residual_is_contrast_and_the_lensing_potential_is_derived.py	206	0.131	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_residual_is_contrast_and_the_lensing_potential_is_derived.py	207	0.53	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_residual_is_contrast_and_the_lensing_potential_is_derived.py	209	2.692	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks.py	109	0.5	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks.py	127	1.4	1e-09			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks.py	157	36.37	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks.py	157	0.055	0.001			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_and_the_law_has_no_fitted_coefficient.py	215	12.8	5.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py	306	23.254	0.002			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py	185	1.5338	0.0005			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py	189	0.7669	0.0005			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py	260	1.0	1e-12	CR_framework.tex	1.0	TIGHT	named	2e-12
+receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py	260	1.0	1e-12	CR_framework.tex	1.0	TIGHT	named	2e-12
+receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py	271	0.8779719	1e-07			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py	315	23.254	0.002			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed.py	202	1.96	0.01	CR_cosmology.tex	0.01	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed.py	202	19.6	0.1	CR_cosmology.tex	0.1	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone.py	204	1.0	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone.py	245	1.34	0.03			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone.py	261	0.66	0.06			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_shear_coefficient_derived_not_remembered.py	208	0.8852	0.009	CR_cosmology.tex	0.0001	SLACK	named	180
+receipts/P15_CR_cosmology/P15_the_shear_coefficient_derived_not_remembered.py	209	1.0618	0.011	CR_cosmology.tex	0.0001	SLACK	named	220
+receipts/P15_CR_cosmology/P15_the_shear_coefficient_derived_not_remembered.py	210	1.1996	0.0012	CR_cosmology.tex	0.0001	SLACK	named	24
+receipts/P15_CR_cosmology/P15_the_shear_coefficient_derived_not_remembered.py	223	1122.9	5.0			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_shear_coefficient_derived_not_remembered.py	224	10.87	0.02			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_sheared_layers_invariant_is_obtained_in_closed_form_and_the_squashing_runs_to_zero_approaching_the_seam_so_the_shape_is_not_carried.py	256	0.86066297	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_sheared_layers_invariant_is_obtained_in_closed_form_and_the_squashing_runs_to_zero_approaching_the_seam_so_the_shape_is_not_carried.py	256	0.70710678	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_sheared_layers_invariant_is_obtained_in_closed_form_and_the_squashing_runs_to_zero_approaching_the_seam_so_the_shape_is_not_carried.py	257	0.1526131	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_sheared_layers_invariant_is_obtained_in_closed_form_and_the_squashing_runs_to_zero_approaching_the_seam_so_the_shape_is_not_carried.py	258	2.23606798	1e-06			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py	312	1.0	0.15			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py	373	1.0	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py	346	1.0	0.03			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py	348	1.0	0.08			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py	405	1.0	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py	405	1.0	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_sky_phase_fit_and_its_uncertainty.py	62	-0.2404	0.002	CR_cosmology.tex	0.0001	SLACK	named	40
+receipts/P15_CR_cosmology/P15_the_sky_phase_fit_and_its_uncertainty.py	67	0.007	0.001	CR_cosmology.tex	0.001	SLACK	named	2
+receipts/P15_CR_cosmology/P15_the_sky_phase_fit_and_its_uncertainty.py	94	-0.2404	5e-05	CR_cosmology.tex	0.0001	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_sky_phase_fit_and_its_uncertainty.py	94	-0.2361	5e-05	CR_cosmology.tex	0.0001	TIGHT	named	1
+receipts/P15_CR_cosmology/P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control.py	250	1.0	0.12			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control.py	272	1.0	0.25			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control.py	272	1.0	0.25			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_spacing_deficit_survives_the_one_fitted_parameter.py	191	1.31	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong.py	224	0.975	0.03			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong.py	225	1.002	0.03			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong.py	229	0.615	0.08			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_and_none_of_the_four_produces_it.py	209	1.0	0.015			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_and_none_of_the_four_produces_it.py	252	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py	324	1.0	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_surviving_step_is_amplitude_and_not_phase_and_the_candidate_shares_do_not_survive_the_change_of_denominator.py	220	1.0	0.25			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_term_mix_does_not_carry_the_modulation_and_it_survives_in_the_part_no_channel_explains.py	222	7.3	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py	288	1.0	0.15			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py	356	1.0	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_term_mix_is_the_first_channel_to_produce_cost_where_the_arm_is_rejected_and_the_excess_there_is_combed_at_the_acoustic_period.py	244	1.0	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_third_possibility_cannot_be_because_C21s_limit_is_taken_on_exactly_the_segment_the_lift_occupies_so_the_two_transfers_overlap_rather_than_compose.py	247	23.25	0.02			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_third_possibility_cannot_be_because_C21s_limit_is_taken_on_exactly_the_segment_the_lift_occupies_so_the_two_transfers_overlap_rather_than_compose.py	254	23.25	0.02			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_third_possibility_cannot_be_because_C21s_limit_is_taken_on_exactly_the_segment_the_lift_occupies_so_the_two_transfers_overlap_rather_than_compose.py	304	23.25	0.02			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_three_grid_comparison_is_like_for_like_and_not_a_ceiling_artefact_because_the_projection_reach_is_fixed_on_every_arm.py	165	5.5	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_three_grid_comparison_is_like_for_like_and_not_a_ceiling_artefact_because_the_projection_reach_is_fixed_on_every_arm.py	139	14011.5	0.6			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_three_grid_comparison_is_like_for_like_and_not_a_ceiling_artefact_because_the_projection_reach_is_fixed_on_every_arm.py	139	13941.6	0.6			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear.py	147	1.0	0.005	CR_cosmology.tex	1.0	TIGHT	named	0.01
+receipts/P15_CR_cosmology/P15_the_transfer_is_the_same_object_as_the_vacuum_spectrum_and_the_crossing_carries_no_wavenumber.py	184	2.0	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_transfers_running_is_a_function_of_one_variable_so_the_requirement_is_the_radiation_fractions.py	235	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_transfers_running_is_a_function_of_one_variable_so_the_requirement_is_the_radiation_fractions.py	289	1.0	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_transmission_figure_is_deliverable_after_all_because_the_descending_sectors_eigenvalue_carries_no_squashing_so_constant_k_is_exact_exactly_where_the_sector_descends.py	164	1.0	1e-14			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_transmission_figure_is_deliverable_after_all_because_the_descending_sectors_eigenvalue_carries_no_squashing_so_constant_k_is_exact_exactly_where_the_sector_descends.py	196	0.0041579	1e-06			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_transmission_figure_is_deliverable_after_all_because_the_descending_sectors_eigenvalue_carries_no_squashing_so_constant_k_is_exact_exactly_where_the_sector_descends.py	197	1.1163e-05	1e-08			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_transmission_figure_is_deliverable_after_all_because_the_descending_sectors_eigenvalue_carries_no_squashing_so_constant_k_is_exact_exactly_where_the_sector_descends.py	198	2.4382e-08	1e-11			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_transmission_figure_is_deliverable_after_all_because_the_descending_sectors_eigenvalue_carries_no_squashing_so_constant_k_is_exact_exactly_where_the_sector_descends.py	199	4.7297e-11	1e-13			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_transmission_figure_is_deliverable_after_all_because_the_descending_sectors_eigenvalue_carries_no_squashing_so_constant_k_is_exact_exactly_where_the_sector_descends.py	206	1.302	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py	292	1.0	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py	326	1.1035	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py	352	1.0	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py	216	0.0001100877765	1e-12			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py	217	0.8794	1e-09			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py	359	1.0	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_two_data_are_one.py	78	2.0	0.1	CR_framework.tex	1.0	TIGHT	named	0.2
+receipts/P15_CR_cosmology/P15_the_two_projection_widths_differ_by_the_jacobian_alone_and_the_channel_that_opens_is_a_quarter_of_the_excess.py	203	1.0	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_two_projection_widths_differ_by_the_jacobian_alone_and_the_channel_that_opens_is_a_quarter_of_the_excess.py	211	1.0	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_two_projection_widths_differ_by_the_jacobian_alone_and_the_channel_that_opens_is_a_quarter_of_the_excess.py	220	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_two_projection_widths_differ_by_the_jacobian_alone_and_the_channel_that_opens_is_a_quarter_of_the_excess.py	234	1.0	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_two_readings_are_different_quantities_and_the_projection_width_is_the_unmeasured_one.py	236	1.0	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_vector_sectors_pointwise_bound_fails_while_its_exponent_exceeds_the_scalars_and_the_tensor_sector_has_no_transverse_traceless_spectrum_off_the_round_point.py	551	1.374729637	1e-09			UNANCHORED	named	
+receipts/P15_CR_cosmology/P15_the_warped_throat_keeps_every_mode_above_the_monopole_decaying.py	178	1.0	1e-14			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_warped_throat_keeps_every_mode_above_the_monopole_decaying.py	178	0.39331989	1e-07			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows.py	316	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope.py	264	3.4	0.4			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude.py	150	186.51	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude.py	150	292.42	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_time_reversal_driving.py	63	0.037049	5e-06			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_time_reversal_driving.py	64	1.411379	5e-06			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_coherence_comb.py	58	296.29	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_coherence_comb.py	59	296.0	1.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_coherence_comb.py	64	398572.0	500.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_coherence_comb.py	67	0.936	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_coherence_comb.py	71	420477.0	500.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_coherence_comb.py	72	2.13	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_doppler_lowell.py	90	0.943	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_doppler_lowell.py	76	0.273	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_doppler_lowell.py	77	0.215	0.012			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_doppler_lowell.py	85	0.2719	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_doppler_lowell.py	85	0.207	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_doppler_lowell.py	86	0.2243	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_doppler_lowell.py	86	0.2154	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_doppler_lowell.py	89	1.208	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_doppler_lowell.py	89	1.289	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_lowell_boltzmann.py	168	67.4	1e-09			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_lowell_boltzmann.py	168	5064.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_lowell_likelihood_v2.py	61	-2.6291	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_lowell_likelihood_v2.py	62	1.3137	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_lowell_likelihood_v2.py	63	2.1012	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_lowell_likelihood_v2.py	64	1.8043	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_lowell_likelihood_v2.py	71	0.2933	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_lowell_likelihood_v2.py	72	3.8189	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_lowell_likelihood_v2.py	75	0.473	1e-09			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_lowell_likelihood_v2.py	75	0.41	1e-09			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_lowell_likelihood_v2.py	76	0.356	1e-09			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_verify_lowell_likelihood_v2.py	76	0.676	1e-09			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_what_is_left_is_lensing_and_not_reionisation.py	168	920.6	15.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_what_is_left_is_lensing_and_not_reionisation.py	169	1095.8	15.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_zonset_determinations.py	50	6797.0	1.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_zonset_determinations.py	51	301.76	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_zonset_determinations.py	58	6844.0	1.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_zonset_determinations.py	59	300.9	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_zonset_determinations.py	66	1.694	0.002			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_zonset_determinations.py	39	6797.0	2.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_zonset_determinations.py	54	1.04109	1e-05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_zonset_determinations.py	63	6840.0	1.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_zonset_determinations.py	63	7378.0	1.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/P15_zonset_determinations.py	63	8024.0	1.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/PEEB_peebles_on_the_set_rate.py	76	1091.08	0.3			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/PEEB_peebles_on_the_set_rate.py	77	1089.92	0.3			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/PEEB_peebles_on_the_set_rate.py	82	-0.107	0.005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/ROBUST_p1p2_scan.py	263	1.447	0.003			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/ROBUST_p1p2_scan.py	264	1.45	0.01			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/ROBUST_p1p2_scan.py	265	1.715	0.003			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/ROBUST_p1p2_scan.py	270	0.5	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/ROBUST_p1p2_scan.py	273	6761.0	2.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/ROBUST_p1p2_scan.py	274	301.6	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/ROBUST_p1p2_scan.py	275	135.46	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/ROBUST_p1p2_scan.py	276	13005.0	5.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/ROBUST_p1p2_scan.py	277	10.88	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/UNC_error_budget.py	59	13.96	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/UNC_error_budget.py	60	0.89	0.02			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/UNC_error_budget.py	61	1.1396	0.0005			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/UNC_error_budget.py	62	6761.0	2.0			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/UNC_error_budget.py	64	135.46	0.05			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/UNC_error_budget.py	66	15.67	0.1			NO-PAPER-NAMED	named	
+receipts/P15_CR_cosmology/UNC_error_budget.py	71	0.00781	0.0002			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/CROSSING_no_made_asymmetry.py	35	-0.048113	5e-06			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/CROSSING_no_made_asymmetry.py	36	0.0481	5e-05			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_Yp_freezeout.py	67	0.22144	0.0005			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_Yp_freezeout.py	68	0.12531	0.0005			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_Yp_freezeout.py	69	0.25062	0.0005			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_Yp_freezeout.py	72	1.0007	0.005			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_Yp_freezeout.py	79	0.5324	0.002			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_Yp_freezeout.py	79	0.1631	0.002			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_Yp_freezeout.py	80	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_Yp_freezeout.py	80	1.0	0.04			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_every_mode_is_frozen_at_the_crossing.py	153	204.6	0.5			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_freezeout_trev_toy.py	52	0.0119732	1e-06			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_freezeout_trev_toy.py	53	6.2078	0.005			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_freezeout_trev_toy.py	65	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_freezeout_trev_toy.py	66	0.14835	0.0001			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_peak_temperature.py	57	469.45	0.01			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_peak_temperature.py	59	173.87	0.01			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_peak_temperature.py	62	2483.86	0.5			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_peak_temperature.py	63	3.3951	0.001			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_peak_temperature.py	65	3.8265	0.001			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_the_interior_to_observed_mode_map.py	54	7.8	0.3			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_the_interior_to_observed_mode_map.py	46	1.18	0.02			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_the_interior_to_observed_mode_map.py	46	2.75	0.05			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_theory_error_and_likelihood.py	113	0.5	0.15			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_validate_bbn.py	30	1.0	0.0001			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_validate_bbn.py	97	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_validate_bbn.py	98	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_validate_bbn.py	99	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_validate_bbn.py	100	1.0	0.005			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_validate_bbn.py	102	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_validate_bbn.py	103	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/P16_what_the_sky_permits.py	78	1.0	0.25			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/bbn_network.py	349	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/bbn_network.py	350	1.0	0.02			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/bbn_network.py	351	1.0	0.01			NO-PAPER-NAMED	named	
+receipts/P16_cosmogenesis_paper/bbn_network.py	352	1.0	0.005			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/C3_inversion_extends.py	59	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/C3_inversion_extends.py	69	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/C3_inversion_extends.py	79	6.25	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/D1_hinge_duality.py	108	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/D1_hinge_duality.py	111	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/D1_hinge_duality.py	96	0.5	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/D1_hinge_duality.py	103	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/D1_hinge_duality.py	104	0.5	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/D1_hinge_duality.py	104	0.5	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/D1_hinge_duality.py	98	1.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/O2_sightline_null_on_lift.py	64	0.75	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/O2_sightline_null_on_lift.py	65	49.1066	0.0001			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/O2_sightline_null_on_lift.py	66	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/O2_sightline_null_on_lift.py	78	0.75	1e-05			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/O2_sightline_null_on_lift.py	63	0.8660254	1e-07			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/O2_sightline_null_on_lift.py	63	0.8660254	1e-07			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/P17_power_is_null.py	134	1.7320508	1e-06			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/P17_power_is_null.py	134	1.7320508	1e-06			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/P17_power_of_a_point.py	104	3.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/P17_power_of_a_point.py	135	8.0	1e-09			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/Q1_quadric_polarity.py	50	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/Q1_quadric_polarity.py	51	1.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/Q1_quadric_polarity.py	52	4.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/Q1_quadric_polarity.py	54	3.0	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/Q1_quadric_polarity.py	54	1.732051	1e-06			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/Q6r_polar_is_the_background.py	59	2.5	1e-12			NO-PAPER-NAMED	named	
+receipts/P17_geometric_core_paper/Q6r_polar_is_the_background.py	64	6.25	1e-09			NO-PAPER-NAMED	named	
