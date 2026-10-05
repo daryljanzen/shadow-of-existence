@@ -9621,3 +9621,93 @@ so and it is a two-line change.**
   (`60512ead`, `6971c416`, `b94acb1f`); I restarted the branch from `main` and the push re-pointed
   **#286** at this round's single commit, so it carries `cc66.143` alone against `main` and its
   title and body say so. **No stale PR and no fresh number — #286 is the live one.***
+
+---
+
+## ⚑⚑ `r7181+cc66.144` — **THE `1.57` HAS NO PARAMETER ADDRESS. THE ARM'S TT MINIMUM SITS `0.046σ` FROM ITS OWN BAO MINIMUM AND PAYS `+0.010` IN `χ²` AT IT — AND THE CALIBRATION INVERTS, BECAUSE `0.3150` IS NOT A BAO+`θ*` VALUE**
+
+*Answering `r7181`. Receipt:
+`receipts/P15_CR_cosmology/P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck.py`
+— 13 checks, `rc=0`, ~6 s. Full tables in `PO13_WORKING_STATE` `r7181+cc66.144`. **No new grid: the
+banked minima were there, as you said they might be.***
+
+### ⓵ THE THREE NUMBERS
+
+| | `$H_0$` | `$\Omega_m$` | `$\omega_m$` | `$\omega_b$` | `$n_s$` |
+|---|---|---|---|---|---|
+| control, TT minimum | 67.4103 | 0.309826 | 0.140790 | 0.021966 | 0.954248 |
+| arm, TT minimum | 68.5811 | 0.297209 | 0.139788 | 0.021524 | 0.997952 |
+
+| | `$d(\omega_m)$` | `$d(\Omega_m)$` | `$\Delta\chi^2_{\rm BAO}$` |
+|---|---|---|---|
+| control, start (Planck) | `+0.736σ` | `+2.105σ` | **+18.05** |
+| control, TT minimum | **`+0.227σ`** | `+1.498σ` | **+15.06** |
+| **arm, TT minimum** | **`−0.046σ`** | `−0.016σ` | **+0.010** |
+
+*`$\sigma(\omega_m) = 0.00454$`, `$\sigma(\Omega_m) = 0.00852$`, profiled `$\Delta\chi^2=1$` on each
+arm's own ruler and agreeing between them to a per cent.*
+
+### ⓶ ⛭⛭⛭ THE ANSWER IS THE ONE YOU NAMED AS THE MORE INTERESTING
+
+***The arm's TT-preferred `$\omega_m$` is admissible to its own distance data*** — inside a
+twentieth of the constraint's width, at a `$\chi^2$` cost of one part in a hundred. ⇒ **There is no
+direction in which the sky is pulling this arm's matter density.** *The fit has the rate, both
+densities and the tilt free; it lands where the distances already put the background and leaves it
+there.* **So the `$1.57\times$` is what remains after the parameters have been given away** — which
+is what `sec:refit-bound`'s own account implies, now measured rather than implied.
+
+⌈ *And the arm's START is already its own BAO minimum (`$-0.020σ$`), so the refit had nowhere to be
+pulled to.* ⌗ **That is also a result about the background pair itself**: fitting DESI DR2 on the
+arm's own ruler — distances on its radiation-free rate, `$r_s$` on the leaf clock — returns
+`$(68.6169, 0.29735)$` at `0.958` per dof. **`$(68.60, 0.2973)$` is recoverable from the distance
+data with no spectrum involved**, which is what makes it the right thing to measure against.
+
+### ⓷ ⛔⛔ BUT THE CALIBRATION PREMISE IS FALSE, AND THAT IS THE SECOND RESULT
+
+*You read the control's displacement as the floor — "it fits everything, so its pull should be
+small".* ***It is the larger of the two by `$5\times$` in `$\omega_m$` and `$1700\times$` in
+`$\chi^2$`.***
+
+⇒ **The reason is that `$0.3150$` is not a BAO`$+\theta_*$` value.** *It is Planck's CMB-fitted
+`$\Omega_m$`; DESI DR2 on the control's own ruler prefers `$0.2971 \pm 0.0085$` — which this receipt
+recovers independently against DESI's published `$0.2975 \pm 0.0086$`, as its external check.*
+⌈ **So the control's pull is the known DESI–Planck `$\Omega_m$` tension, carried into the comparison
+by the premise rather than by the construction.** *Its TT refit moves it `$3$` in `$\chi^2$` TOWARD
+DESI and leaves it `$15$` away.*
+
+⌗ *The two arms' starting points are not the same kind of number: the arm starts at a BAO fit, the
+control at a CMB fit. **That is what makes the control unusable as a floor here** — and it does not
+weaken the arm's result, which is measured against the arm's own constraint either way.*
+
+### ⓸ ⌗ AND `$\omega_m$` IS THE VARIABLE THAT FLATTERS THE CONTROL
+
+**In `$\Omega_m$` the two displacements are `+1.498σ` against `−0.016σ` — a factor `94`. In
+`$\omega_m$` it is `+0.227` against `−0.046` — a factor `5`.** *The control's TT `$H_0$` sits below
+its BAO `$H_0$` while its `$\Omega_m$` sits above, so the offsets partly cancel in
+`$\Omega_m h^2$`.* ⇒ *The ordering and the sign are identical either way, so nothing turns on the
+choice; **both are reported rather than the one that happens to favour the arm's story less.***
+
+### ⓹ ⚠ ONE THING ABOUT `BAO+θ*` I HAVE NOT DONE AS THE WORDS COULD BE READ, AND WHY
+
+***The corpus imposes `$\theta_*$` EXACTLY, through `$z_{\rm onset}$`, so it constrains the onset
+and not `$(H_0, \Omega_m)$`.*** *Its independent force is `r6760+cc66.3` PART 4 — `$\theta_*$` alone
+gives `$H_0 = 68.55$` against BAO's `$68.50$`.* **So the width I report is BAO's, with `$\theta_*$`
+as the confirmation the corpus uses it as.**
+
+⌈ ⛔ *Scored instead as a Gaussian term at Planck's `$100\theta_* = 1.04109 \pm 0.00030$`, the arm's
+background sits `$-15.8\sigma$` and `$\sigma(\omega_m)$` tightens from `0.0045` to `0.0008`.* **That
+is the comb disagreement already in print — `$\ell_A = 302.9$` against the sky's `$298.0$` — and not
+a new finding**, so I have not dressed it as one. ⇒ ***It is recorded because "in units of the
+BAO`+θ*` constraint's own width" has two readings and they differ by a factor of six. If you want
+the tighter one, the numbers are in `PO13_WORKING_STATE` and it is a one-line switch — but then the
+`σ` counts are dominated by a disagreement the paper already reports elsewhere, which is why I did
+not make it the headline.***
+
+### ⇒ WHAT IS YOURS
+
+- **The result is `⓶`**, and it is reportable as it stands: *the residual is not a parameter*.
+- ⛔ **`⓷` needs your call before anything is written from it**: the control cannot serve as the
+  calibration you wanted, so a sentence in print should not say the arm's pull is small *compared
+  with the control's* — it should say the arm's pull is small *compared with its own constraint's
+  width*, which is the statement that survives.
+- ⌗ *Nothing in `P15` is touched. No new grid, no `LEAFGEOM`, no `$\Delta N_{\rm eff}$`.*

@@ -8768,3 +8768,75 @@ value sets `{1.395, 1.4011}` and `{2.76, 2.774}`, so a *third* legitimate config
 refit moving the stretch again — refuses as a drift. *That is the right default for a receipt whose
 subject is these two configurations, and a third would be new work rather than a relapse; it is
 noted so that the refusal is read as a scope boundary and not as a defect.*
+
+---
+
+## `r7181+cc66.144` — **THE `1.57` HAS NO PARAMETER ADDRESS, AND THE CALIBRATION INVERTS**
+
+### ⓵ THE TWO REFIT MINIMA, READ OFF THE BANKED ARTEFACTS
+
+Parameters captured from `refit_grid185/verify.sh` and required to reproduce what
+`verify_{lcdm,cr}.npz` themselves store — they do, to a part in `$10^7$` in `$D_M$`.
+
+| | `$H_0$` | `$\Omega_m$` | `$\omega_m$` | `$\omega_b$` | `$n_s$` | `$\chi^2$`/bin† |
+|---|---|---|---|---|---|---|
+| control, start (Planck) | 67.4000 | 0.3150 | 0.143097 | 0.02240 | 0.9650 | 1.15 |
+| **control, TT minimum** | **67.4103** | **0.309826** | **0.140790** | **0.021966** | **0.954248** | **1.008** |
+| arm, start (DESI BAO) | 68.6000 | 0.2973 | 0.139908 | 0.02240 | 0.9650 | 2.95 |
+| **arm, TT minimum** | **68.5811** | **0.297209** | **0.139788** | **0.021524** | **0.997952** | **1.581** |
+
+† the 185-bin refit receipt's own column (`r6825+cc66.25`, verified there by real runs at `186.5`
+and `292.4` on `185` bins); not re-scored here and not asserted.
+
+### ⓶ THE CONSTRAINT, CHECKED TWICE BEFORE IT IS USED
+
+| check | expected | got |
+|---|---|---|
+| the corpus's stacking anchor at `$H_0=73$` | `$\Omega_m=0.3066$`, `$\chi^2=12.01$`, `$z_{\rm onset}=6764$` | `0.3066`, `12.01`, `6764` |
+| **DESI DR2's published `$\Lambda$CDM**` | `$\Omega_m = 0.2975 \pm 0.0086$` | **`0.2971 ± 0.00852`** |
+| the arm's own ruler (`D` radiation-free, `$r_s$` leaf) | `$(68.60, 0.2973)$` — the pair in print | **`(68.6169, 0.29735)`**, `0.958`/dof |
+
+⇒ **So the pair `sec:refit-bound` starts from is recoverable from the distance data with no spectrum
+involved**, which is what makes it the constraint this comparison is measured against. Profiled
+`$\Delta\chi^2=1$`: `$\sigma(\Omega_m) = 0.00852$`, `$\sigma(\omega_m) = 0.004541$` — the two rulers
+agree to a per cent, so the arms are compared in the same units.
+
+### ⓷ THE DISPLACEMENT AND THE PENALTY — THE ANSWER
+
+| | `$\omega_m$` | `$d(\omega_m)$` | `$d(\Omega_m)$` | `$\chi^2_{\rm BAO}$` | `$\Delta\chi^2$` |
+|---|---|---|---|---|---|
+| control, start | 0.143097 | `+0.736σ` | `+2.105σ` | 28.601 | **+18.05** |
+| control, TT minimum | 0.140790 | **`+0.227σ`** | `+1.498σ` | 25.609 | **+15.06** |
+| arm, start | 0.139908 | `−0.020σ` | `−0.005σ` | 10.541 | +0.00 |
+| **arm, TT minimum** | 0.139788 | **`−0.046σ`** | `−0.016σ` | 10.548 | **+0.010** |
+
+⇒ ***The arm's TT-preferred `$\omega_m$` is admissible to its own distance data*** — inside a
+twentieth of the constraint's width, at a `$\chi^2$` cost of one part in a hundred. **There is no
+direction in which the sky is pulling this arm's matter density**, so the `$1.57\times$` is what
+remains after the parameters have been given away.
+
+### ⓸ ⛔ AND THE ORDER'S CALIBRATION PREMISE IS FALSE
+
+`r7181` reads the control's displacement as the floor. **It is the larger by `$5\times$` in
+`$\omega_m$` and `$1700\times$` in `$\chi^2$`**, because `$0.3150$` is Planck's CMB-fitted
+`$\Omega_m$` and not a BAO`$+\theta_*$` value: DESI DR2 on the control's own ruler prefers
+`$0.2971$`. *The control's TT refit moves it `$3$` in `$\chi^2$` TOWARD DESI (`18.05 → 15.06`) and
+leaves it `15` away — a tension between its two datasets, not something the refit introduced.*
+
+⌗ **`$\omega_m$` is the variable that flatters the control.** In `$\Omega_m$` the displacements are
+`+1.498σ` against `−0.016σ`, a factor `94`; in `$\omega_m$` `+0.227` against `−0.046`, a factor `5`.
+The control's TT `$H_0$` sits below its BAO `$H_0$` while its `$\Omega_m$` sits above, so the two
+offsets partly cancel in `$\Omega_m h^2$`. *Ordering identical either way; both reported.*
+
+### ⚠ `$\theta_*$` IS A CONFIRMATION HERE, NOT A TERM — AND THAT IS THE CORPUS'S CHOICE
+
+The corpus imposes `$\theta_*$` **exactly**, by solving `$z_{\rm onset}$` from it, so it constrains
+the onset and not `$(H_0, \Omega_m)$`; its independent force is `r6760+cc66.3` PART 4, where
+`$\theta_*$` alone gives `$H_0=68.55$` against BAO's `68.50`. ⌗ *Scored instead as a Gaussian at
+Planck's `$100\theta_* = 1.04109 \pm 0.00030$`, the arm's background sits `$-15.8\sigma$` and the
+`$\omega_m$` width tightens to `0.0008`.* **That is the comb disagreement already in print
+(`$\ell_A = 302.9$` against the sky's `$298.0$`) and not a new finding** — recorded so that
+`BAO$+\theta_*$` is read as the corpus means it rather than as this seat would have built it.
+
+⌗ **No new grid.** The order said read the banked minima if they are there; they were, in
+`refit_grid185/` with its launcher beside them.
