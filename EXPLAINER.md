@@ -49,12 +49,13 @@ Between the parent's collapse and our universe's expansion, the two maps have to
 
 ## The lap: where a collapse stops and a universe begins
 
-Earlier I said that, by the outside universe's reckoning, the horizon never forms. That is still true. But the outside's last moment is where the new universe's own cosmic clock begins, and that clock has a story to tell: the passage, seam to seam, from the parent's collapse to the beginning of ours.
+<!-- watch: two-clocks | in corpus/CR_framework.tex: "is a different clock" -->
+Earlier I said that, by the outside universe's reckoning, the horizon never forms. That is still true, and nothing here takes it back. But the outside's clock is not the only one the geometry keeps. The new universe's layer has a cosmic clock of its own, and on that clock the collapse reaches the horizon at a definite reading — the way a clock falling with the star reaches it in a finite time of its own. That clock has a story to tell: the passage, seam to seam, from the parent's collapse to the beginning of ours.
 
 Picture a single strand of that passage, and trace what its size does. Since it is always the same family of slices, we can track the whole journey by one number: the radius of the sphere that strand belongs to.
 
-<!-- watch: turnaround-radius | in corpus/CR_cosmology.tex: "(2M\alpha^{2})^{1/3}\simeq3792" -->
-It comes in from far away, shrinking. Out at about twenty billion light-years it passes the first of two special radii — I'll call them seams. From there it keeps falling inward for nearly fifteen billion years of cosmic time, and the matter caught in it compresses and heats as it goes. Then, at a radius of about twelve billion light-years, the collapse stops. On the cosmic clock the shrinking simply halts. This is the turnaround.
+<!-- watch: turnaround-radius | in corpus/CR_cosmology.tex: "(2M\alpha^{2})^{1/3}\simeq3792" | in corpus/CR_framework.tex: "the back seam (timelike to spacelike)" | in corpus/CR_framework.tex: "For an ordinary bead that region is a previous universe's late" | in corpus/SdS-slicing-curve_v2.tex: "the merged-horizon value re-entered" -->
+It comes in from far away, shrinking — out of the parent universe at large, in its late and thinning age, which on this clock stretches back without limit. At about twenty billion light-years it passes the first of two special radii — I'll call them seams. The first seam is the parent's horizon, and crossing it the radius changes character the way it does at any horizon: outside, it keeps the time; inside, it marks a place. From there it keeps falling inward for nearly fifteen billion years of cosmic time, and the matter caught in it compresses and heats as it goes. Then, at a radius of about twelve billion light-years, the collapse stops. On the cosmic clock the shrinking simply halts. This is the turnaround.
 
 What happens next — call it the lift — is the strangest stretch of the whole story, and the most beautiful. From the turnaround the radius keeps going — down past twelve billion light-years, through everything smaller, all the way to zero — and cosmic time does not advance at all while it happens. Not a second passes on the real clock. What runs instead is imaginary time: the path stretches across about eighteen billion years of it.
 
@@ -62,7 +63,7 @@ That sounds like a magic trick, so it's worth saying what it is and isn't. Imagi
 
 There's a neat way to see that it belongs. Along this part of the journey the motion has three characters, all from the one geometry: real at the seams, momentarily zero at the turnaround, and imaginary across this last stretch. They aren't three different laws of motion. They are one family of paths, read at three of its natural turning points.
 
-Two cautions keep this honest. First, the eighteen billion years is a length of *path*, not of *history*. Nothing ages through it, and it doesn't make anything repeat. Second, it doesn't contradict what was said about the horizon. On the outside's reckoning the collapse never completes; the lap is read on the cosmic clock of the new universe's own layer, which begins exactly where the outside's ends.
+Two cautions keep this honest. First, the eighteen billion years is a length of *path*, not of *history*. Nothing ages through it, and it doesn't make anything repeat. Second, it doesn't contradict what was said about the horizon. The two reckonings are two different clocks. On the outside's, the collapse never completes, and the horizon happens only at the end of all its time; on the cosmic clock of the new universe's own layer, the same horizon is crossed at a definite reading, and the lap is told on that clock.
 
 At the bottom of the lift the radius reaches zero, and there the universe begins. This point is where every worldline turns from collapsing to expanding — a branch point, not a wall. The curve passes straight through it.
 
@@ -70,7 +71,7 @@ Something else turns over there too. In the geometry's own terms, the radius on 
 
 Neither side is favoured. The two branches carry equal and opposite amounts of action, which sum to exactly zero. The geometry tips no scale between matter and antimatter: whatever imbalance of matter over antimatter our universe has, it brought with it.
 
-From zero the radius grows. This is our universe's expansion, on the same cosmic clock, starting from the branch point. It grows fast at first, then ever more slowly, for about seven and a half billion years, until at about ten billion light-years it reaches the second seam, where it is growing slowest of all. There it stops slowing and starts speeding up, and has been accelerating ever since, for about the last six billion years.
+From zero the radius grows. This is our universe's expansion, on the same cosmic clock, starting from the branch point. It grows fast at first, then ever more slowly, for about seven and a half billion years, until at about ten billion light-years it reaches the second seam, where it is growing slowest of all. Nothing about the radius's character changes here, as it did at the first seam: it only touches the horizon's value and carries on. There it stops slowing and starts speeding up, and has been accelerating ever since, for about the last six billion years.
 
 Two numbers frame all of this, and they are not a coincidence. From the first seam to the turnaround is about fifteen billion years of cosmic time; from the branch point to the second seam, about seven and a half: two to one. Draw the whole lap as one closed circuit of the underlying geometry, and the branch point divides it into a third and two thirds, 120 degrees and 240 degrees: the same two to one.
 
