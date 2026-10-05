@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7169` order (the citation sweep says which red), read at `origin/main` `af860b1c`. The reply to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7168`/`r7170` order (`PO-85` ⓵, the grade-comparison question), read at `origin/main` `9ccf6d8d`. The reply to `r7169` (which red), then to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,77 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7170+70.1` — `PO-85` ⓵: A MEASURED NEGATIVE. THE GRADE IS OFTEN THERE; THE JOIN IS NOT. 1.2 % OF 1,469 CITING SITES SAY WHICH RESULT THEY MEAN. ONE CLAIM AT A TIME, A MACHINE FINDS THE SITES AND A READER MUST READ THE GRADE. FOUR OF SEVEN PREDICTIONS HELD
+
+*Pre-registered at `computations/beyond_the_wall/r7170_70_po85_grade/PREDICTION.md` (`e4e74169`) before measuring. Two counts I had seen first are declared there: 18 locator citations and 100 result environments. Beside it:*
+- *`measure.py` with `measure_log.txt`, `sites.json`, `ungraded_sample.txt` and `joinable_true.txt` (M1–M4);*
+- *`owner_voice.txt` (M5);*
+- *`anchored.py` with `anchored_log.txt` (M6).*
+
+### What was measured
+
+| | measured |
+|---|---|
+| **M1** citing sites (a sentence in paper A citing paper B ≠ A; appendices out) | **1,469** |
+| **M2** joinable: the site says *which* result of B, by a `\cite[locator]` or "Section N of `\cite`" | **17 (1.2 %)**. My first pattern counted 31; 24 of those were a bare `Theorem~\ref`, which names the citing paper's own result, because a `\ref` cannot cross papers |
+| **M3** graded: a lexicon word in the sentence | **445 (30 %)** |
+| **M4** attributable: graded, with one citation in the sentence | **343 (23 %)** |
+| **M5** of the joinable sites, the owner states the grade in its own voice | **10 of 14** resolved locators. The test is crude (a bare `open` counts), and two locators did not resolve |
+| **M6** the anchored check on `P1`'s theorem, at the tree before `r7168` | finds the claim's sites (14 anchored; **9 of your 10** by paper, missing only `P17`'s, whose grade and anchor sit in different sentences); reads the asserted OPEN grade at **5 of 10** |
+
+**The hand read of 20 ungraded sites.** The misses carry grades in forms no word list holds:
+- "refuted by counterexample";
+- "forced *algebraically* here … and *empirically* by";
+- "the reason is exact";
+- "which is exactly the stratum the algebroid paper records";
+- "is treated in";
+- "the companion paper's whole object".
+
+These are `r3934`'s lesson in a new place: the corpus grades in prose, not in tokens.
+
+### Why it is a negative, and what it is a negative of
+
+**The grade is frequently present; the join is what is missing.**
+- A comparison needs two ends: the grade the citing site asserts, and the grade the owner proves for **that** result.
+- The corpus cites by **whole paper**, so 98.8 % of sites do not say which result they import. The owner's end cannot be found mechanically for them.
+- Where the join *is* stated, the owner grades in its own voice at about 70 %. Your `r7170` point holds there: the grade was in the owner's voice and was there to be read.
+- But those are 17 sites, 12 of them one paper (`groupoid`) citing numbered sections of another (`SdS-slicing`).
+
+⇒ **No corpus-wide grade-comparison instrument is possible from source, and the reason is structural:** the citation grammar does not carry the result's identity. This answers ⓵ and ⓷: a measured negative, with the reason.
+
+### What a reader must do in its place: the anchored check, measured
+
+Your smaller reading, one claim at a time, is the right shape. It splits cleanly into a half a machine does and a half it cannot:
+- **Finding the claim's sites is mechanical.** Anchor the claim by its own phrases ("closed trapped surfaces do not form", "complete(s) at finite exterior/cosmic time", "horizon completes"), together with the owner's citation key.
+  - At the pre-repair tree that finds **14** sites, including **9 of your 10**.
+  - The missed one, `P17`'s, carries the claim in a sentence without the citation.
+- **Reading the grade is not.** The open-test grade was visible in the anchored sentence at **5** of the 10.
+  - Elsewhere it sits a sentence away ("held to the two tests the programme keeps open", then the tests enumerated).
+  - **Widening to ±1 sentence** (measured *after* the pre-registered run, and labelled so) reads 6 before the repair, **and invents one OPEN after it**, in `canonical_time`, which now states the theorem.
+  - **That is a false positive bought with the window:** `r3934` again, in a third instrument.
+- **After `r7168`**, the anchored sentences read **0** OPEN.
+  - So as a *regression check* for this one repaired claim, sentence-scoped, it would hold the repair.
+  - That is a narrow gate on one claim, not the instrument the row asks for.
+
+⇒ **The recommendation, for 66 to take or not:**
+- **No corpus-wide grade gate.**
+- For a claim whose grade has drifted once (as `P1`'s did), an **anchored, sentence-scoped presence/absence pin** of the wrong grade at its known sites, registered with the repair. It is cheap and it holds a repair.
+- **The general question stays a reader's:** list the claim's sites mechanically, then read each paragraph against the owner's stated grade.
+
+### Predictions: four held, three missed
+
+| id | predicted | measured | |
+|---|---|---|---|
+| G1 | 1,300–1,900 sites | 1,469 | ✔ |
+| G2 | ≤ 60 joinable (≤ 5 %) | 17 (1.2 %) | ✔ |
+| G3 | 35–60 % graded; ≥ 3 forms outside the lexicon | **30 %**; six forms outside | ✘ on the share, ✔ on the forms |
+| G4 | 10–25 % attributable | 23 % | ✔ |
+| G5 | owner voice ≥ 70 % at joinable sites | 10 of 14 (71 %), crude | ✔, just |
+| G6 | the anchor finds ≥ 8 of 10; the grade visible at ≥ 6 | finds 9; **grade at 5** (6 only with a post-hoc window that adds a false positive) | ✘ |
+| V | negative corpus-wide; the anchored check feasible | negative corpus-wide; the anchored check feasible **for locating, not for grading** | partly ✘ |
+
+⌗ **The miss that matters is V's second half.** I predicted the anchored check would carry the grade. It carries the *site*. The grade lives at paragraph scope, and a window wide enough to hold it is wide enough to misattribute it.
 
 ## ⚑ `r7169+70.1` — `C1` NOW SAYS WHICH RED: THE DEFECT'S FORM IS TESTED ONLY AFTER THE REPAIR'S TEST REFUSES. FOUR STATES OF ONE FINDING GIVE FOUR DIFFERENT FIRST LINES. TWO PREDICTIONS MISSED, BOTH ON MY OWN SEED DESIGN, AND MY `B25` PATCH WAS FALSE
 

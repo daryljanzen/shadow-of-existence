@@ -1,0 +1,8 @@
+  M1 citing sites (cross-paper, appendices excluded): 1469
+  M2 joinable (a locator or a numbered result of the cited paper): 31  (2.1 %)
+  M3 graded (a lexicon word in the sentence): 445  (30.3 %)
+       THEOREM     265
+       MEASURED    153
+       CONJECTURE  22
+       OPEN        62
+  M4 attributable (graded, one citation in the sentence): 343  (23.3 %)
