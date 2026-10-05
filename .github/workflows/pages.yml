@@ -22,6 +22,7 @@ on:
     # Any of these can change what the pages say.
     paths:
       - 'INTRODUCTION.md'
+      - 'EXPLAINER.md'
       - 'THE_FRONTIER.md'
       - 'THE_REGISTER.md'
       - 'corpus/ledgers_registry.md'
@@ -31,6 +32,7 @@ on:
       - 'BOOK_INTRO_cosmiCave/assets/**'
       - 'scripts/gen_live_edition.py'
       - 'scripts/gen_paper_html.py'
+      - 'scripts/gen_explainer_pdf.sh'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -83,14 +85,22 @@ jobs:
           ANALYTICS_ID: ${{ vars.ANALYTICS_ID }}
         run: python3 scripts/gen_live_edition.py
 
+      - name: Print the explainer's PDF
+        # Printed from the page just generated, so the PDF and the page cannot
+        # disagree.  The runner carries Chrome; if printing ever fails, the copy
+        # committed with the source is published instead of a broken link.
+        run: |
+          bash scripts/gen_explainer_pdf.sh \
+            || echo "::warning::explainer PDF not printed; publishing the committed copy"
+
       - name: Check the build produced what it claims
         # A publish step that cannot fail is a publish step that will one day
         # ship an empty page.  These are the three assertions worth making.
         run: |
           set -e
           cd BOOK_INTRO_cosmiCave
-          for f in live_edition.html introduction.html frontier.html \
-                   ledgers.html receipts.html; do
+          for f in live_edition.html introduction.html explainer.html \
+                   frontier.html ledgers.html receipts.html; do
             test -s "$f" || { echo "::error::$f missing or empty"; exit 1; }
           done
           grep -q 'The Shadow of Existence' live_edition.html \
@@ -106,6 +116,7 @@ jobs:
           cp BOOK_INTRO_cosmiCave/live_edition.html _site/index.html
           cp BOOK_INTRO_cosmiCave/live_edition.html _site/
           cp BOOK_INTRO_cosmiCave/introduction.html _site/
+          cp BOOK_INTRO_cosmiCave/explainer.html _site/
           cp BOOK_INTRO_cosmiCave/frontier.html _site/
           cp BOOK_INTRO_cosmiCave/ledgers.html _site/
           cp BOOK_INTRO_cosmiCave/receipts.html _site/
@@ -120,6 +131,7 @@ jobs:
           echo 'shadow.cosmicave.org' > _site/CNAME
           mkdir -p _site/pdf _site/fig _site/fig/figs _site/fig/figures _site/assets
           cp corpus/*.pdf _site/pdf/ 2>/dev/null || true
+          cp BOOK_INTRO_cosmiCave/explainer.pdf _site/pdf/ 2>/dev/null || true
           cp corpus/*.png _site/fig/ 2>/dev/null || true
           cp corpus/figs/*.png _site/fig/figs/ 2>/dev/null || true
           cp corpus/figures/*.png _site/fig/figures/ 2>/dev/null || true
