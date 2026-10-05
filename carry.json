@@ -1,13 +1,9 @@
 {
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
-   "receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37261047155",
-    "since": "9d8cdbe122a8eb307b77d72be6b517f735dc3d71"
-   },
-   "receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37261047155",
-    "since": "9d8cdbe122a8eb307b77d72be6b517f735dc3d71"
+   "receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37263104833",
+    "since": "98d11b2d6bb088322c5f2ab2101c700b0b960eb8"
    }
   },
   "tolerance": {
