@@ -5,16 +5,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37264429463",
     "since": "32074137951d96cd77344802dc53a8349cddb2c5"
    }
-  },
-  "tolerance": {
-   "receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37261047155",
-    "since": "9d8cdbe122a8eb307b77d72be6b517f735dc3d71"
-   },
-   "receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37261047155",
-    "since": "9d8cdbe122a8eb307b77d72be6b517f735dc3d71"
-   }
   }
  }
 }
