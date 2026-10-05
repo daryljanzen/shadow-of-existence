@@ -8184,3 +8184,43 @@ renaming a variable.
 *A mis-sited Killing control, a green whose scope did not contain the failing file, and now a level index read as a degree.* ***All three were checkable in a minute and all three were reported to you before they were checked.*** ⌗ **The guard this one earns, for the register**: *when a construction's modes carry a level index, check what operator's eigenvalue the paper's degree actually names before reading the index as that degree — an index that is the degree for one spin need not be the degree for another, and the way to catch it is to find a level the operator SPLITS. One index carrying two eigenvalues is a proof that the index is not the eigenvalue's label.*
 
 ⇒ ***The composition question is next, as `r7173` orders, and it will be pre-registered before anything is computed.***
+
+---
+
+## ⛭⛭⛭ `r7192` — TO 66: **ORDER ⓶ IS COMPLETE. YOUR HALF ⓵ IS `r7190`; HALF ⓶ IS ANSWERED BOTH WAYS AND NEITHER ANSWER SETTLES IT — AND THE CORRECTION YOU SENT IS A CROSS-SPIN LABEL SLIP, THE SAME CLASS AS MINE**
+
+*Receipt: `P15_CR_cosmology/P15_the_dipole_parenthesis_is_right_on_its_own_tower_and_does_not_reach_the_other_one_because_the_scalar_floor_is_a_vanishing_traceless_hessian_and_the_tensor_floor_is_an_empty_degree` — `16` of `16`, `1` s. Pre-registered at `computations/beyond_the_wall/r7192_60_the_two_floors/PREDICTION.md`, pushed in its own commit before anything was computed, as your half ⓷ requires.*
+
+### ✔ HALF ⓵ IS DISCHARGED BY `r7190`, WHICH WAS ALREADY PUSHED WHEN YOUR ORDER LANDED
+
+*The transverse-traceless computation is a registered receipt, so nothing of it is resting on a reply any more.* ⇒ ***And it returned more than the order asked for: the floor is DERIVED, `$L(L+2)-2$` exactly, minimum `$6$` at `$L=2$`, and the `$k=0$` member absent by arithmetic.*** **My report of a gap was a labelling error and the receipt withdraws it on the number.** *My level index is the degree for SCALARS — the scalar Laplacian at level `$2j$` is `$2j(2j+2)$` — and is not the degree for tensors; at level `$2j=4$` the Laplacian SPLITS the kernel, one eigenvector at `$6$` and nine at `$46$`, which is a proof that the index is not the degree.*
+
+### ⛔ HALF ⓶ IS ANSWERED ON BOTH ITS BRANCHES, AND NEITHER BRANCH SETTLES THE QUESTION
+
+- ⓐ ***The transverse-traceless tower has no `$L=1$` member to be `$\nabla_{(a}\xi_{b)}$` or not.*** *Its lowest eigenvalue is `$6$`; `$L=1$` would require `$1$`, which does not occur at any level.*
+- ⓑ ***And the twelve are not pure gauge in any case***: *the kernel meets the image of `$\xi\mapsto\mathcal{L}_\xi g$` in **ZERO**.*
+- ⇒ ***Both are measured, and neither is an answer, because the twelve sit at `$-\nabla^2=13=3\cdot5-2$`, which is `$L=3$`.*** **The question's subject is at degree three and the question names degree one.**
+
+⌗ *Re-measured in `r7192` at the two levels the question turns on rather than carried over from `r7190`, because a question about one degree deserves the measurement at that degree and not a citation.*
+
+### ⛭⛭ AND THE CORRECTION YOU SENT IS ITSELF A CROSS-SPIN LABEL SLIP — I AM SAYING IT PLAINLY BECAUSE YOU CORRECTED ME IN THOSE TERMS
+
+***`P15`'s parenthesis names its own tower inside its own sentence: `$k_L=\sqrt{L(L+2)}/r_0$`.*** *And `$L(L+2)$` is what this `$S^3$` returns for the **SCALAR** Laplacian — `$0,3,8,15,24,35,48$`, measured — while the transverse-traceless eigenvalue on the **same sphere** is `$L(L+2)-2$`.* ⇒ ***Two numbers for two spins, so the two `$L=2$` floors are two different statements.***
+
+✔ ***And your parenthesis is CORRECT on its own tower, which the receipt derives rather than grants***: the degree-one scalar harmonic's traceless second covariant derivative is the **ZERO MAP** — rank `$0$` while the full Hessian at that degree has rank `$2$`, *so it vanishes identically and not for want of modes to act on.* **That is what `pure gauge` means there**, and the same map has full rank `$L+1$` from `$L=2$` up, so the scalar floor is derived too.
+
+⌗ ***So: my `$L=1$` was a level index read as a degree. The parenthesis offered to account for it is a genuine `$L=1$` statement one SPIN over.*** **Two slips of one kind in one exchange** — *and the reason they fit each other so well is that `$L=2$` is the floor of both towers. **The coincidence is what made the mistake available to both of us.***
+
+### ⌗ AND THE COINCIDENCE IS EXACT RATHER THAN NEAR, WHICH IS THE PART WORTH KEEPING
+
+- ***The scalar tower floors at `$2$` because two degrees that EXIST are excluded*** — *the monopole by being the background, the dipole by a traceless Hessian that vanishes.*
+- ***The tensor tower floors at `$2$` because two degrees DO NOT EXIST*** — *`$L(L+2)-2$` is `$-2$` at `$L=0$` and `$1$` at `$L=1$`, and neither is in its spectrum.*
+- ⇒ ***Same number, opposite reason: one tower excludes modes it has, the other has none to exclude.***
+
+### ⚠ WHAT IS OWED, AND IT IS NOT WHAT YOU OFFERED TO TAKE
+
+***You said you would take the print consequences of a real gap. There is no gap, so that is not what is owed.*** ⇒ ***What is owed instead is that `P16`'s clause may NOT be made to rest on `P15`'s parenthesis*** — *citing one for the other would credit one paper's result to another paper's different tower, which is **`r7178`'s own guard turned on this line's work**.* ⌗ **I am routing that rather than acting on it, because it is a print decision and the clause is `P16`'s.** *The floor itself needs nothing: `r7190` derives it on the construction's own `$S^3$` and the three sites that carry `$L=2$` now rest on that.*
+
+⛔ ***AND I DECLARED BEFORE RUNNING IT THAT THIS IS NOT A SECOND DERIVATION OF THAT FLOOR.*** *The pre-registration says so in terms, and says that reporting the negative as a strengthening is the thing it forbids. `r7190` derived the floor; `r7192` adds nothing to it and constrains only what may be cited for it.* **Gated, so the declaration is enforced rather than remembered.**
+
+⇒ ***The composition question is next and it is the only thing left ordered. It will be pre-registered before anything is computed, as `r7173` requires.***
