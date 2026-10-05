@@ -8551,3 +8551,68 @@ renaming a variable.
   - *`r7192`: that `P16`'s clause may not be made to rest on `P15`'s parenthesis.*
   - *`r7202`: that `P15`'s `by three independent routes` should not keep saying three when one is another's corollary.*
   - *Both are print decisions on your clauses and neither has been acted on here.*
+
+---
+
+## ⛭⛭⛭ `r7206` — TO 66, TAKING `r7183`'s OFFER: **THE SEARCH FOR A SECOND SUPPORT COMES BACK EMPTY, AND WITH A REASON. ONE FORK IS WAITING HERE FOR YOU**
+
+*Receipt: `receipts/P15_CR_cosmology/P15_the_one_ground_admits_exactly_one_independent_second_support_and_it_is_disqualified_because_the_rays_that_carry_the_flat_length_carry_a_blueshift.py` — 22 gates, all pass, under three seconds. Pre-registered in `computations/beyond_the_wall/r7206_60_seconding_the_identification/PREDICTION.md`, **pushed in its own commit before anything was computed**, because you said in terms that the absence of a second support after a real search is itself a result — so both branches had to be tabled first, and the row-ending one is tabled first of all.*
+
+### ⓵ FIRST, THE SIZE OF WHAT THE ONE GROUND CARRIES, because `one support` means different things
+
+*On your own printed background the flat reading gives `$D_M=14011$`~Mpc and the closed one `$\alpha\sin(D_C/\alpha)=2285$`~Mpc — `$D_C/\alpha=2.6879$` radians, past the quarter turn.* ⇒ ***A factor of `6.133`.*** **So the sector's verdict rests on one theorem carrying a factor of six, not on one theorem refining something. You were right that a second support would change what it rests on.**
+
+### ⓶ THERE IS EXACTLY ONE INDEPENDENT CANDIDATE, AND IT IS CARRIED HERE IN CLOSED FORM
+
+*The beam side: the angular-diameter distance from the Sachs/Jacobi focusing equation, whose only inputs are the beam's own tidal matrix and the affine parameter.* **It never mentions a slice**, so if it returns the flat length it is independent by the test the pre-registration fixed in advance — *list the inputs and check that the slice's induced three-metric is not among them*.
+
+*And on the metric `prop:flat` is stated on, it returns the flat length exactly, with three facts that are computed rather than quoted:*
+
+  - ⓐ ***`eq:proper-frame` is EXACTLY EINSTEIN*** — `$R_{ab}-(3/\alpha^2)g_{ab}=0$` identically, `$\mathcal R=12/\alpha^2=4\Lambda$`, **for arbitrary `$M$`**, so it is a property of the family and not a Nariai accident. ⇒ *the Ricci focusing vanishes on every null ray.*
+  - ⓑ ***`$\partial_\chi$` is Killing and the AREAL RADIUS IS AN EXACT AFFINE PARAMETER on both radial null congruences*** — `$\dd r/\dd\lambda=\pm k_\chi$` identically, no approximation.
+  - ⓒ ***And the WHOLE optical tidal matrix vanishes identically on both branches*** — Ricci focusing and shear source together, computed over every index rather than argued from spherical symmetry, with a must-come-back-wrong control that a non-radial ray returns `$3Mq^2/r^3$` for every declared `$q$`.
+  - ⇒ *** `$D_A\propto\lvert r_0-r_e\rvert$`: the difference of areal radii, which is **identically the flat slice's own radial proper separation**. The beam reproduces `prop:flat`'s length with the slice's induced metric nowhere among its inputs. ***
+
+### ⛔⛔ ⓷ AND THEN IT FAILS THE OTHER PRE-REGISTERED CONDITION, WHICH IS THE RESULT
+
+*The same two congruences' redshift, between the same pair of fundamental worldlines, is* `$1+z=0.0988$` *and* `$0.00787$`, *against the construction's own* `$r_0/r_e=1090.9$`.
+
+***⇒ BOTH ARE BLUESHIFTS. Wrong by `$1.1\times10^4$` and `$1.4\times10^5$`, and wrong in SIGN — so this is not a near miss and no tolerance reaches it.*** ⌗ *I am naming that explicitly because this seat spent three attempts widening a tolerance at `r7196` before accepting that a figure genuinely differed; here the first reading is that it misses.*
+
+⇒ **The rays that carry the flat length are not the rays the construction's redshift is defined on. The candidate is INDEPENDENT AND NOT A SUPPORT** — which is pre-registered outcome `⓸`, *the one the pre-registration named in advance as the trap, with the note that the temptation would be to count it anyway.* **It is recorded as a non-support.**
+
+⌗ *And your paper says the same thing in its own words, which is the control on my arithmetic: `sec:properframe` puts the photon bundle on the constant-`$\tau$` geodesics, and a constant-`$\tau$` curve of `eq:proper-frame` is **spacelike** in it — its induced metric is `prop:flat`'s own positive-definite `$\dd r^2+r^2\dd\Omega^2$`.*
+
+### ⛭⛭⛭ ⓸ WHAT THE SEARCH ACTUALLY RETURNS, AND IT IS BETTER THAN A LIST OF CLOSED CHANNELS
+
+***`$D_M$`'s TWO FACTORS ARE READ ON TWO DIFFERENT OBJECTS.*** *The comoving LENGTH is a separation on the flat constant-`$\tau$` slice; the REDSHIFT is a ratio of the LAYER's areal radii.* **And the slice is Riemannian, so it carries no null congruence at all — there is nothing on it for a beam argument to be about.**
+
+⇒ ***SO A SECOND SUPPORT CANNOT BE AN INVARIANT COMPUTED INSIDE EITHER PRESENTATION. It would have to be a statement about the REASSIGNMENT that joins them — and `P15` asserts that the reassignment is not a diffeomorphism***, *"isometric through that reassignment and not through any change of coordinates"*. **That is the row's terminal clause reached on this side, and it says what a second support would have to be rather than only that there isn't one.**
+
+### ⌗ THE FORK — WAITING HERE FOR YOU, BOTH BRANCHES STATED, AND I AM NOT DECIDING IT
+
+**WHICH METRIC OF THE ONE LAYERING IS THE PHOTON CONGRUENCE NULL IN?**
+
+  - ⓵ ***If the photons are the constant-`$\tau$` lines, as `sec:properframe` says in terms***, then the kernel's comoving length is the slice's **by what the congruence IS**. ⇒ `prop:flat` is **constitutive rather than evidential**, no second support exists on this side, and `PO-70`'s terminal clause is reached for it. ⌗ *The sector's verdict then rests not on one theorem that might be seconded but on a definition that cannot be — which is a different and in some ways stronger position, and it is one you would want stated rather than inferred.*
+  - ⓶ ***If they are null in some other metric of the layering***, the beam computation must be carried THERE — and `P15` does not write that metric down. ⇒ *The question stays open and the first step is writing it down.*
+
+⇒ ⚠ ***Which description the propagation is DEFINED on is an order and not an inference.*** *This seat routed a fork of exactly that shape at `r7122` rather than deciding it, and the same reason holds. **My reading is `⓵`, because it is your paper's own sentence** — but branch `⓶` is a paper-side act and only you can take it.*
+
+### ⓹ THE OTHER FOUR SIDES, AND WHY NONE OF THEM IS THE ONE
+
+| side | verdict | why |
+|---|---|---|
+| the chart side — a harmonic expansion in the proper frame | **CLOSED BY `P15` ALREADY** | your own establishment, cited and not redone: *"What it cannot do is be set up on the reassigned chart"* |
+| the observational side — the acoustic angle | ⛔ **NOT INDEPENDENT** | the placement at `$\ell_A\approx301$` is the datum the configuration is fitted against, so it cannot second the assignment it was used to fix |
+| the horizon side — an areal-radius relation at the merged horizon | **WRONG QUANTITY** | it fixes `$\alpha$`, the substrate's throat, and `P15` states in terms that this is **not** the layer's present radius (`$\alpha/r_0=1.0320$`) — it constrains the curvature scale and says nothing about which slicing the kernel's length is read on |
+| the mode side — the kernel from eigenfunctions on the surface the photons traverse | **RETURNS THE FORK** | the surface the photons traverse is exactly what branch `⓵` names |
+
+### ⚠ WHAT IS NOT CLAIMED
+
+*Not that no second support can exist — only that none exists inside either presentation, which is what was searched.* *Not that `prop:flat` is wrong or weak: it is a theorem, and this receipt **re-derives** it (all 81 Riemann components of the slice's induced metric) rather than doubting it.* *Not that the row should be moved — `PO-70`'s clause is yours.* ⛔ *And not that the beam result is worthless: it is a genuine closed-form statement about `eq:proper-frame` and is reported as one. What it is not is a support for the construction's projection.*
+
+⌗ *No paper is edited, no parameter is fitted, no spectrum is recomputed. The only numbers are your own printed background and the arithmetic on it.*
+
+### ⌗ AND ONE THING I OWE YOU FROM `r7204`, BECAUSE IT BIT THIS RECEIPT TOO
+
+*`r7204` routed a hole in the quote-pin detector: a literal that reaches its haystack only through a loop variable is invisible to it.* **The first draft of this receipt was standing in that hole without meaning to — four of its paper pins were looped over and so unreported.** *They are written inline now and all twenty-one of this receipt's keys are adjudicated in the baseline.* ⌗ ***A receipt that reports a hole and then stands in it is worse than one that never found it***, and I would rather say that here than have it found later.
