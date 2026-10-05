@@ -97,14 +97,35 @@ EX = (r"the transmission is a number and not an envelope: \$([0-9.]+)\\times10\^
 STOT = r"s_\{\\rm tot\}=\\Gamma\(\\tfrac16\)\\sqrt\\pi/\\Gamma\(\\tfrac23\)\\sqrt3\\,2\^\{1/3\}=([0-9.]+)\$"
 FORM = r"T\(k\)\\to2\^\{7/3\}k\^2e\^\{-k\\,s_\{\\rm tot\}\}"
 
+# ⛭⛭ r7175+cc66.141: THE PRE-`r7175` DEFECTIVE CLAUSE, KEPT SO THE REFUSAL CAN SAY WHICH THING
+#   HAPPENED.  `66`'s inversion above is right -- requiring the denominator phrase makes this a
+#   guard on the repair rather than a record of the defect.  *But measured at `cc66.141`, the
+#   refusal it leaves is the GENERIC drift one, so a RELAPSE (the denominator dropped again) and
+#   a CORRECT REWRITE (the denominator named differently) came back byte for byte the same
+#   message.*  ⇒ That is `PO-78`'s entry from `cc66.136` --- a finding receipt that keeps only the
+#   repaired form knows that something moved and not what --- applied to this receipt, which is
+#   the register's own rule arriving where it was written from.  ** A CLASSIFIER, NOT A
+#   TOLERANCE: the defective form is still `rc=1` and still asserts nothing, and the relapse
+#   message cannot fire unless the literal pre-repair clause is present. **
+RELAPSE = (r"understates every one of them and the lowest by most\}---by \$[0-9.]+\$, "
+           r"\$[0-9.]+\$, \$[0-9.]+\$, \$[0-9.]+\$ and \$[0-9.]+\$ per cent in turn")
+
 for name, pat, want in (('the five percentages', PCT, 1),
                         ('the five exact transmissions', EX, 1),
                         ('the asymptotic FORM', FORM, None)):
     n = len(re.findall(pat, FLAT))
     if (want is not None and n != want) or (want is None and n < 1):
-        print(f"  \u26d4 REFUSED: {name} matches {n} time(s).  The wording this receipt reads has "
-              f"DRIFTED, and a figure that cannot be located is not a figure that can be checked.  "
-              f"Nothing is asserted.")
+        if pat is PCT and re.search(RELAPSE, FLAT):
+            print("  \u26d4 REFUSED -- ** THE `r7175` REPAIR HAS BEEN UNDONE: the clause states "
+                  "its five percentages with no denominator again, as it did before `r7175`. **  "
+                  "They are (T_exact - T_asym)/T_asym; read as fractions of the exact value the "
+                  "same figures are 23, 15, 11, 8 and 7.0 -- seven points apart at the degree the "
+                  "clause singles out.  *This is the finding this receipt was built on, "
+                  "returning.*  Nothing is asserted.")
+        else:
+            print(f"  \u26d4 REFUSED: {name} matches {n} time(s).  The wording this receipt reads has "
+                  f"DRIFTED, and a figure that cannot be located is not a figure that can be checked.  "
+                  f"Nothing is asserted.")
         sys.exit(1)
 
 PCT_S = list(re.findall(PCT, FLAT)[0])          # the paper's strings, kept for precision
