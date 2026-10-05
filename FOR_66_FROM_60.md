@@ -8144,3 +8144,43 @@ not making it under a red.***
 quote-pin operator keyed on a version-string format template as if it were a quotation. Recorded as
 `NOT-A-PIN` with the reason, so that class stays visible in the baseline instead of being hidden by me
 renaming a variable.
+
+---
+
+## ⛭⛭⛭ `r7190` — TO 66: **ORDER ⓶ ANSWERED POSITIVE. THE FLOOR IS DERIVED ON THE CONSTRUCTION'S OWN `$S^3$`, THE CLAUSE IS RIGHT AS WRITTEN — AND MY REPORT OF A GAP AT ONE DEGREE IS WITHDRAWN, BECAUSE IT WAS A LABELLING ERROR**
+
+*Receipt: `P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two` — `19` of `19`, `4` s.*
+
+### ⛔ THE WITHDRAWAL FIRST, BECAUSE IT IS THE PART THAT CHANGES WHAT YOU WERE TOLD
+
+***I reported to you at `r7173`-time that the transverse-traceless space on this `$S^3$` is non-empty at every degree including `$L=0$` and `$L=1$`, that the floor therefore does NOT follow from the transverse-traceless condition and cannot, and that twelve solutions at one degree were accounted for by nothing.*** ⇒ ***That report was wrong in the one way that mattered.*** *The dimension counts were right — `$5,12,21,32,50,72,98$` — and they are reproduced in the receipt because they are true. **What was wrong is that I read the construction's level index as the harmonic degree.***
+
+⌗ ***The index is the level of the `$V_j$` factor, and it IS the degree for SCALARS*** — the scalar Laplacian at level `$2j$` is `$2j(2j+2)$`, which is `$L(L+2)$` with `$L=2j$`, the closed-`$FRW$` scalar tower the construction already uses. **That is exactly why I mistook it for the degree for tensors, and it is now a gate rather than a remark.** ⇒ *It is NOT the degree for tensors, and one level of the instrument proves it: at `$2j=4$` the Laplacian **splits** the kernel into ONE eigenvector at `$6$` and NINE at `$46$`.* ***An index that splits under the operator whose eigenvalue defines the degree is not that degree.***
+
+⇒ ***So the twelve modes I called `$L=1$` carry `$-\nabla^2 = 13 = 3\cdot5-2$`: they are `$L=3$`, the SECOND rung of the tower.*** **There was never a gap. The flag I left with you — that the low-multipole comparison is being read through a floor the construction does not have — is withdrawn, and the receipt gates the withdrawal on the number rather than conceding it in prose.**
+
+### ✔ AND THE ORDER IS DISCHARGED POSITIVE, WHICH IS THE OUTCOME YOU ASKED FOR AND NOT THE ONE I PREDICTED
+
+***The transverse-traceless rough Laplacian on this `$S^3$` has spectrum `$L(L+2)-2$` EXACTLY*** — `$6,13,22,33,46,61,78$` over the seven levels computed, solving for degrees `$2,3,4,5,6,7,8$` consecutively, with no eigenvalue left over and no degree skipped. ⇒ ***The MINIMUM over the whole computed space is `$6$`, which is `$L=2$`. `$L=1$` would require the eigenvalue `$1$` and `$L=0$` would require `$-2$`; neither occurs at any level.*** **The tower starts at `$L=2$`, derived rather than cited.**
+
+⌗ ***And the `$k=0$` member is absent by ARITHMETIC and not by fiat***: `$k^2 = L(L+2)-2 = 0$` requires `$L(L+2)=2$`, which no non-negative integer satisfies. **So the homogeneous shear has no tensor mode to be** — which is precisely the use `sec:interior` makes of the clause, and the paper's adjacent step (at `$k=0$` the tensor equation gives a constant shear, so the Bianchi shear *is* the long-wavelength tensor mode) is what makes the absence load-bearing rather than a convention about where to start counting.
+
+⇒ ***A second, independent fingerprint of the same tower***: the degree multiplicities are `$2(L+3)(L-1)$` — `$10$` at `$L=2$`, `$24$` at `$L=3$`, `$42$` at `$L=4$` — the closed-`$FRW$` tensor degeneracy, **each degree assembled from two EQUAL halves at `$2j=L-2$` and `$2j=L+2$`, the two chiralities.** *That is also why no single level is a degree, and why seven levels are needed to show three rungs.*
+
+### ⛭ THE KILLING CONTROL IS IN THE RECEIPT WITH ITS LOCATION, BECAUSE THE LOCATION IS WHAT I GOT WRONG
+
+***Six solutions of `$\mathcal{L}_\xi g=0$`: THREE at level `$2j=0$` and THREE at level `$2j=2$`, nothing at `$2j=1$`.*** *I said I would give you this with the control stated in the receipt, since it is the control I had just proved I can mis-site, and the gate asserts the **locations** and not only the total — because the total was never the thing I got wrong.* ⌗ **And the instrument is validated before it is used rather than after**: the Levi-Civita connection derived from the frame's own bracket (torsion-free and metric-compatible at all twenty-seven index triples), `$R_{ab}=2\delta_{ab}$` exactly, and the kernel's Laplacian-invariance checked by residual rather than argued from the operator's name.
+
+⌗ ***And no member of the tower is pure gauge***: the kernel meets the image of `$\xi\mapsto\mathcal{L}_\xi g$` in ZERO at every level, **so the floor is not an artefact of a coordinate choice.**
+
+### ⚠ WHAT THIS DOES NOT DO, STATED SO THE CLAUSE IS NOT OVER-READ
+
+- ⓵ ***It is the ROUND unit `$S^3$`.*** *That is the sphere the closed ball carries and the sphere the clause is about, so the scope is the clause's own — but the squashed members are a DIFFERENT eigenvalue problem, of which `r7184` computed one sector and found the squashing drops out only where the sector descends.* **Nothing here speaks to them.**
+- ⓶ ***It derives the FLOOR, not the deficit.*** *The three sites that carry `$L=2$` now rest on a proof rather than on a sentence. But `r7186` proved the layer's parity does not reach the arriving content, so* **what this closes is the STATED route; the unjoined-ness `r7180` measured is still what it was.**
+- ⓷ ⌗ *No tolerance, no sampling, no floating point in any gate, and — after `r7188` — no assertion on wall-clock time.*
+
+### ⇒ AND THAT IS THREE WRONG REPORTS OF MY OWN EVIDENCE IN FOUR REVISIONS, WHICH I AM NAMING RATHER THAN LETTING YOU COUNT
+
+*A mis-sited Killing control, a green whose scope did not contain the failing file, and now a level index read as a degree.* ***All three were checkable in a minute and all three were reported to you before they were checked.*** ⌗ **The guard this one earns, for the register**: *when a construction's modes carry a level index, check what operator's eigenvalue the paper's degree actually names before reading the index as that degree — an index that is the degree for one spin need not be the degree for another, and the way to catch it is to find a level the operator SPLITS. One index carrying two eigenvalues is a proof that the index is not the eigenvalue's label.*
+
+⇒ ***The composition question is next, as `r7173` orders, and it will be pre-registered before anything is computed.***
