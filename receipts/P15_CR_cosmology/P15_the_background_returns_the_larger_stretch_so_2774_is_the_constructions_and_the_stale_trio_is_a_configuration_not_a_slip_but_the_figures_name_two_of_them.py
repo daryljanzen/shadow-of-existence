@@ -136,12 +136,19 @@ print(BAR)
 #   and its printed precision taken from the paper's own STRING, so a comparison is made at the
 #   precision the paper claims and not at a float's repr (`cc66.140`'s over-claim, which this
 #   seat's own instrument caught).  ** Nothing below types one of these values. **
+# ⛭⛭ THE KEYS ARE NAMED FOR THE FORM EACH PATTERN MATCHES AND NOT FOR THE CONFIGURATION IT HELD
+#   WHEN THIS WAS WRITTEN.  *As first written they were `stale_DC`, `stale_r0`, `stale_st`,
+#   `live_st`, `live_DC` -- names that described WHICH VALUE was expected there.  After `r7179`'s
+#   repair `stale_DC` holds `1.4011`, so every one of those names stated the opposite of its
+#   contents while the code was correct.*  ⇒ ** It is the same shape as the defect `r7179` fixed one
+#   level in: a name keyed on a configuration, over a pattern keyed on a sentence's form.  A name
+#   that cannot go stale is the only kind that cannot be read wrong either. **
 PAT = {
-    'stale_DC': (r"\$D_C\\approx([0-9.]+)\\times10\^\{4\}", 2),
-    'stale_r0': (r"\$r_0\\approx([0-9]+)", 2),
-    'stale_st': (r"the stretch \$D_C/r_0\\approx([0-9.]+)\$", 1),
-    'live_st': (r"the stretch \$([0-9.]+)\$", 2),
-    'live_DC': (r"\$D_C=([0-9.]+)\\times10\^\{4\}\$", 1),
+    'DC_approx': (r"\$D_C\\approx([0-9.]+)\\times10\^\{4\}", 2),
+    'r0_approx': (r"\$r_0\\approx([0-9]+)", 2),
+    'st_as_ratio': (r"the stretch \$D_C/r_0\\approx([0-9.]+)\$", 1),
+    'st_as_bare': (r"the stretch \$([0-9.]+)\$", 2),
+    'DC_as_eq': (r"\$D_C=([0-9.]+)\\times10\^\{4\}\$", 1),
 }
 GOT = {k: re.findall(p, FLAT) for k, (p, _) in PAT.items()}
 for k, (p, want) in PAT.items():
@@ -178,14 +185,15 @@ def one(k):
 COUNTS_OK = all(len(GOT[k]) == w for k, (_, w) in PAT.items())
 # ** r7179 (node 66, whose repair moved this): the two branches are classified on the VALUES the
 #   paper prints and no longer on whether a sentence SHAPE is present.  As first written,
-#   `DISCHARGED` required `GOT['stale_DC']` to be empty -- but that key's pattern is keyed on the
+#   `DISCHARGED` required `GOT['DC_approx']` to be empty (the key `DC_approx` was then named
+#   `stale_DC`) -- but that key's pattern is keyed on the
 #   sentence's FORM (`$D_C\approx...$`), which the repair leaves in place while changing the number
 #   inside it.  So the branch built to report the discharge could not fire on the repair it was
 #   built for, and the receipt refused as a drift instead.  That is this family's absence-keyed-on-a
 #   -label member one level in, inside a classifier written to avoid exactly it. **
-_DCS = set(GOT['stale_DC']) | set(GOT['live_DC'])
-_STS = set(GOT['stale_st']) | set(GOT['live_st'])
-_R0S = set(GOT['stale_r0'])
+_DCS = set(GOT['DC_approx']) | set(GOT['DC_as_eq'])
+_STS = set(GOT['st_as_ratio']) | set(GOT['st_as_bare'])
+_R0S = set(GOT['r0_approx'])
 DEFECT = (COUNTS_OK and _DCS == {'1.395', '1.4011'} and _STS == {'2.76', '2.774'}
           and _R0S == {'5051'})
 DISCHARGED = (COUNTS_OK and _DCS == {'1.4011'} and _STS == {'2.774'} and _R0S == {'5051'})
@@ -198,7 +206,7 @@ if DEFECT:
           "stretches and two background lengths. **")
     PAPER_DC_STALE = float(sorted(_DCS)[0]) * 1e4
     PAPER_DC_LIVE = float(sorted(_DCS)[1]) * 1e4
-    PAPER_R0 = float(one('stale_r0'))
+    PAPER_R0 = float(one('r0_approx'))
     PAPER_ST_STALE, PAPER_ST_LIVE = sorted(_STS)[0], sorted(_STS)[1]
 elif DISCHARGED:
     print("  ✔ DISCHARGED -- ** `r7177`'s ORDER HAS BEEN ANSWERED IN PRINT: the stale pair "
@@ -209,7 +217,7 @@ elif DISCHARGED:
           "facts about the background rather than about the prose, and still assert.")
     PAPER_DC_STALE, PAPER_ST_STALE = None, None
     PAPER_DC_LIVE = float(sorted(_DCS)[0]) * 1e4
-    PAPER_R0 = float(one('stale_r0')) if one('stale_r0') else 5051.0
+    PAPER_R0 = float(one('r0_approx')) if one('r0_approx') else 5051.0
     PAPER_ST_LIVE = sorted(_STS)[0]
 else:
     print("  ⛔ REFUSED -- ** THE WORDING THIS RECEIPT READS HAS DRIFTED INTO NEITHER STATE: "
@@ -288,8 +296,8 @@ check(f"⛭⛭ at THIS ARM'S OWN refit parameters the background returns `D_M = 
       f"which rounds to the LARGER of the paper's two captured lengths -- "
       f"`{PAPER_DC_LIVE / 1e4:.4f}e4`, not the stale `{(PAPER_DC_STALE or 0) / 1e4:.4f}e4` -- at "
       f"the paper's own printed precision",
-      round(cr['DM'] / 1e4, dps(one('live_DC')))
-      == round(PAPER_DC_LIVE / 1e4, dps(one('live_DC'))))
+      round(cr['DM'] / 1e4, dps(one('DC_as_eq')))
+      == round(PAPER_DC_LIVE / 1e4, dps(one('DC_as_eq'))))
 check(f"⛭ with `r_0 = {cr['r0']:.2f}` Mpc from Lambda parameter-free, which rounds to the captured "
       f"`{PAPER_R0:.0f}`", round(cr['r0']) == round(PAPER_R0))
 check(f"⛭⛭ so the construction's stretch is `{cr['DM'] / cr['r0']:.6f}`, which prints the paper's "
@@ -449,7 +457,7 @@ check("⛭⛭ and every banked value that prints `1.395e4` is on the `lcdm` CONT
 # =================================================================================================
 print()
 print(BAR)
-print("  PART 5 -- ** WHAT MOVES IN PRINT IF THE STALE TRIPLE IS REPAIRED **")
+print("  PART 5 -- ** WHAT THE TWO CONFIGURATIONS COST IN PRINT, EITHER WAY ROUND **")
 print(BAR)
 
 NMAX = 220
@@ -586,18 +594,42 @@ if fail:
         print(f"      - {f}")
     print(BAR)
     sys.exit(1)
-print("  ✔ THE BACKGROUND RETURNS $1.4011\\times10^{4}$ Mpc AT THIS ARM'S OWN PARAMETERS, ON THIS")
-print("    ARM'S OWN RATE, SO ** $2.774$ IS THE CONSTRUCTION'S STRETCH ** -- which is what the")
-print("    order asked, settled by a run and not by a division.")
-print("  ⛔ `sec:largescale`'s `1.395e4 / 2.76` is a self-consistent configuration and not an")
-print("    arithmetic slip, but WHICH one the figures do not say: the arm at a pre-refit $\\Omega_m$")
-print("    returns 13949.1 and the CONTROL at its own 185-bin refit returns 13954.35 -- 5.2 Mpc")
-print("    apart, below the paper's own printed precision, and both printing `1.395e4` and `2.76`.")
-print("    *The second reading is the worse one: under it the printed stretch is THIS arm's $r_0$")
-print("    over the CONTROL's comoving distance.*")
-print("  ⌗ *The stretch is a function of $\\Omega_m$ alone, and $r_0$ -- the one number the sentence")
-print("    calls fixed parameter-free -- is 5051 in every candidate, which is why nothing saw it.*")
-print("  ⛔ And the repair crosses the printed displacement ceiling `2.93`, turning `r7164`'s Ⓑ⑤")
-print("    red unless that clause moves in the same pass.")
+# ⛭⛭⛭ THE VERDICT IS TWO-STATE, BECAUSE `r7179` REPAIRED THE BRANCH'S TEST AND NOT THIS BLOCK.
+#   *The classifier above was keyed on the sentence's FORM, so `DISCHARGED` could not fire on the
+#   repair it was written for; `r7179` re-keyed it on the VALUES and the two cost checks with it.*
+#   ⛔ ** But this block was never branched at all: it was written when only one state existed, so
+#   the receipt exited 0 printing `the repair crosses the printed displacement ceiling 2.93, turning
+#   r7164's Ⓑ⑤ red unless that clause moves` -- on a tree where the clause HAD moved and the
+#   bracket with it. **  *A reader of the verdict, which is what the terminal and the `INDEX` row
+#   carry, got the pre-repair world under a PASS.*
+#   ⇒ *** That is `cc66.138`'s member in this receipt's own voice: there the `INDEX` row contradicted
+#   the repaired receipt, here the receipt's verdict contradicts its own classifier.  A state that
+#   only the branch knows is a state the reader does not get. ***  ⌗ The classifier's own verdict is
+#   printed here, so the two cannot part again.
+if DEFECT:
+    print("  ✔ THE BACKGROUND RETURNS $1.4011\\times10^{4}$ Mpc AT THIS ARM'S OWN PARAMETERS, ON")
+    print("    THIS ARM'S OWN RATE, SO ** $2.774$ IS THE CONSTRUCTION'S STRETCH ** -- which is what")
+    print("    `r7177` asked, settled by a run and not by a division.")
+    print("  ⛔ AND THE COLLISION IS STILL IN PRINT.  `sec:largescale`'s `1.395e4 / 2.76` is a")
+    print("    self-consistent configuration and not an arithmetic slip, but WHICH one the figures")
+    print("    do not say: the arm at a pre-refit $\\Omega_m$ returns 13949.1 and the CONTROL at its")
+    print("    own 185-bin refit returns 13954.35 -- 5.2 Mpc apart, below the paper's own printed")
+    print("    precision, and both printing `1.395e4` and `2.76`.  *The second reading is the worse")
+    print("    one: under it the printed stretch is THIS arm's $r_0$ over the CONTROL's distance.*")
+    print("  ⛔ And repairing it crosses the printed displacement ceiling, so that clause and")
+    print("    `r7164`'s Ⓑ⑤ bracket have to move in the same pass.")
+else:
+    print("  ✔ DISCHARGED AT `r7179`, AND THE BACKGROUND HALF STILL ASSERTS.")
+    print("    ** The paper now prints ONE background length and ONE stretch, and they are the")
+    print("    construction's: $1.4011\\times10^{4}$ Mpc and $2.774$, which is what the instrument")
+    print("    returns at this arm's own parameters on this arm's own rate. **")
+    print("  ⛭ And the repair's cost was paid in the same pass rather than deferred: the printed")
+    print("    displacement clause and `r7164`'s Ⓑ⑤ bracket -- read from its source, not quoted --")
+    print("    both admit the construction's range and both REFUSE the other configuration's, and")
+    print("    the four slack tolerances that could not fail on the quantity they named are closed.")
+    print("  ⌗ *What this receipt still measures is the background, not the prose: the stretch is a")
+    print("    function of $\\Omega_m$ alone, and $r_0$ is 5051 in every candidate -- which is why")
+    print("    nothing saw the collision while it was in print, and why a return to the other")
+    print("    configuration would be caught by VALUE here rather than by the shape of a sentence.*")
 print(BAR)
 print("  ALL CHECKS PASS")

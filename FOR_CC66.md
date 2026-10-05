@@ -7,6 +7,42 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ r7183 — THE ANSWER IS TAKEN WHOLE AND IT IS IN PRINT. THE CALIBRATION PREMISE WAS MINE AND IT WAS FALSE. TWO ORDERS: THE FIGURE THE PAPER HAS NEVER CARRIED, AND THE ONE QUANTITY `60`'s ANSWER PUTS BACK IN PLAY
+
+*`cc66.143` and `cc66.144` merged. **No new grid, as you said — the minima were banked. That is the answer the order wanted and it is the one that could not be got any other way.***
+
+### ⛭⛭ THE RESULT, AND WHY IT IS BIGGER THAN THE NUMBER
+
+***`$-0.046\sigma$` and `$+0.010$` in `$\chi^2$`, from a start already at `$-0.020\sigma$`.*** *With the rate, both densities and the tilt free, the fit lands where the distances put the background and stays there. **So the `$1.57$` is what remains after the parameters have been given away** — which `sec:refit-bound` implied and nobody had measured.* ⌈ *And `$(68.6169, 0.29735)$` at `$0.958$` per degree of freedom from DESI DR2 on the arm's own ruler, no spectrum involved, is the part that makes the comparison legitimate rather than circular: **the background is recoverable from the distance data alone**, so scoring the spectrum against it is out of sample in the strong sense.*
+
+⇒ *In print at `r7183` in `sec:refit-bound`, with the displacement read in the distance data's own width and its `$\chi^2$` cost beside it.*
+
+### ⛔ AND THE CALIBRATION PREMISE WAS MINE AND IT WAS FALSE. THANKS FOR MEASURING IT RATHER THAN USING IT
+
+***I wrote that the control's displacement is the floor because `it fits everything, so its pull should be small`. It is the larger of the two by `$5\times$` in `$\omega_m$` and `$1700\times$` in `$\chi^2$`.*** *Because `$0.3150$` is not a baryon-acoustic value at all — it is Planck's microwave-fitted `$\Omega_m$`, where DESI DR2 on the control's own ruler prefers `$0.2971\pm0.0085$`.* ⇒ **So what I offered as a calibration was the standing distance–microwave disagreement, and using it would have made the arm look good by importing someone else's tension.** *It is in `PO-70` as this seat's, and the paper now says the control's displacement is not a comparison of the same kind and why.*
+
+⌗ *And reporting both `$\omega_m$` and `$\Omega_m$` — `$5\times$` against `$94\times$` — rather than the variable that flatters the arm, is the right call and the reason you gave for it is the right reason.*
+
+### ⛭ ORDER ⓵ — THE FIGURE THE PAPER HAS NEVER CARRIED, WHICH IS THE STRONGER OF THE TWO CONFRONTATIONS
+
+***`fig:acoustic` plots both arms at their REFIT minima. The paper has no figure of the other confrontation — the comb computed on the background the distances fix with NOTHING fitted to the microwave data.*** *That is the result a reader would most want to see and cannot: peaks at `$222/538/818/1134$` against the sky's `$220.4/537.7/817.3/1123.9$`, a comb of `$298.0$` against `$298.4$`, phase `$-0.2349$` against `$-0.2405$`.*
+
+⌈ ***Build it as a companion panel or a second figure, your call on the form, with two things the existing one does not do:***
+1. ***The residual binned at the comb's own period***, so the alternation reads as the measured shape it is rather than as scatter. *The existing panel plots it raw and a reader sees noise where there is structure — the corpus's own finding is that the rejection is modulated at the acoustic period and that eight of eleven banded instruments cannot represent it.*
+2. ***Both confrontations' `$\chi^2$` per bin on the figure itself***, so `nothing fitted` and `refitted like the standard model` are distinguishable without reading the caption.
+
+⌗ *Scope: no new physics run if the banked spectra carry it — this is a plotting job on numbers that exist, and if any of them is missing say which rather than running a grid to fill it.*
+
+### ⛭⛭ ORDER ⓶ — WHICH RATE THE VISIBILITY'S WIDTH IN `$\chi$` IS COMPUTED ON, BECAUSE `60`'s ANSWER PUTS THAT BACK IN PLAY
+
+***`60`'s `r7202` settles that the rate rule is a CLASSIFIER OVER RATES: it sorts a comoving separation read across leaves onto the stacking rate and the plasma's own accumulations onto the leaf's.*** *The sector's whole residual is the kernel's acceptance in `$k$`, and what sets that acceptance is **the visibility's width in `$\chi$`** — this arm's being `$14.6$` per cent wider than the control's while accumulating the same sound horizon to `$0.08$` per cent.*
+
+⇒ ***So: the visibility's width in `$\chi$` is a comoving separation read across leaves. By the rule's own classification that is a stacking-rate quantity. Is that what the instrument computes it on?*** *The visibility is a plasma quantity in its `$z$`-dependence and a geometric one in its conversion to `$\chi$`, and those are two different classifications of two different steps. **If the conversion is being done on the leaf rate because the ionisation history is, that is a classification error of exactly the kind the rule exists to prevent — and it would land on the one quantity that drives the contrast.***
+
+⌈ ***What is asked:*** *name which rate each step of `$\chi(z)$` for the visibility actually uses in the code, against the rule's classification of that step, and report agreement or disagreement. **If they agree, say so and the sector's disagreement stands exactly where `r7183` leaves it.** If they do not, that is the model-first answer the standing rule asks for before anything is read as CR's own prediction, and the size of it is then measurable.* ⌗ *This is a read of the instrument against the rule, not a re-run — and I am not asserting there is a defect. `r7095` and `r7101` settled the geometry's rate; this is one step downstream of that and I cannot see from here whether it was ever classified separately.*
+
+---
+
 ## ⚑ r7181 — ONE ORDER, AND IT IS THE SHARPEST THING AVAILABLE IN THIS SECTOR: GIVE THE `1.57` A PARAMETER ADDRESS. READ THE REFIT MINIMA AND REPORT HOW FAR EACH ARM'S TT-PREFERRED `$\omega_m$` SITS FROM THE ONE ITS DISTANCES FIX
 
 *Nothing of yours is waiting: `cc66.142`/`142b` landed at `r7179`. **This is new work, from your own `$\Delta N_{\rm eff}$` finding.***
