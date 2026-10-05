@@ -81,7 +81,12 @@ JOIN = doc_of(os.path.join(
 LMAX = 400
 _L = np.arange(0, LMAX + 1)
 LO, HI = 2.60, 2.95                      # this receipt's own band, stated in the docstring
-S_RATIO, S_PRINTED = 1.395e4 / 5051.0, 2.774
+# ** r7179: the decision this receipt priced has landed and the paper prints one pair, so
+#   S_RATIO is now the ratio of THAT pair and the two agree.  The band and the thresholds below
+#   are unchanged -- they were never a claim about which value the paper printed. **
+S_RATIO, S_PRINTED = 1.4011e4 / 5051.0, 2.774
+S_OTHER = 1.395e4 / 5051.0      # the configuration the decision ruled out, kept as the band's
+                                # other anchor so the sensitivity is still measured across both
 
 
 def weights(Lv, st):
@@ -133,13 +138,14 @@ gate("Ⓐ①  the weight is a distribution and closes to one at every degree ove
      all(abs(weights(Lv, st).sum() - 1.0) < 1e-12
          for Lv in range(1, 9) for st in (LO, HI, S_RATIO, S_PRINTED)))
 
-gate("Ⓐ②  and both stretches are read from the paper rather than carried: the ratio of its own two"
-     " lengths is `$2.7618$` and it separately prints `the stretch $2.774$`, which is the pair"
-     " `cc66` has been asked to decide between",
-     abs(S_RATIO - 2.7618) < 1e-3
-     and 'D_C\\approx1.395\\times10^{4}' in PAPER and 'r_0\\approx5051' in PAPER
+gate("Ⓐ②  and the stretch is read from the paper rather than carried, and the paper now states ONE:"
+     " the ratio of its own two lengths is `$2.7739$` and it separately prints `the stretch $2.774$`,"
+     " the two agreeing to half the printed ulp -- the pair `cc66` was asked to decide between is"
+     " decided, and the band below still spans both candidates",
+     abs(S_RATIO - 2.7739) < 1e-3 and abs(S_RATIO - S_PRINTED) < 5e-4
+     and 'D_C\\approx1.4011\\times10^{4}' in PAPER and 'r_0\\approx5051' in PAPER
      and 'stretch $2.774$' in PAPER
-     and LO < S_RATIO < S_PRINTED < HI)
+     and LO < S_OTHER < S_RATIO < HI)
 
 # =====================================================================================
 head("B -- THE TWO LOAD-BEARING MULTIPOLES HAVE NO THRESHOLD ON THE BAND")
@@ -155,17 +161,18 @@ gate("Ⓑ②  and the second degree has EXACTLY ONE, at `$2.611994$`, which is B
      " -- so on the band the paper could plausibly admit its modal multipole is `$6$` and the"
      " three-multipole separation from the first degree holds at both",
      len(T[2]) == 1 and abs(T[2][0][0] - 2.611994) < 1e-5
-     and T[2][0][0] < S_RATIO and T[2][0][0] < S_PRINTED
-     and modal(2, S_RATIO) == 6 and modal(2, S_PRINTED) == 6
+     and T[2][0][0] < S_OTHER and T[2][0][0] < S_RATIO
+     and modal(2, S_OTHER) == 6 and modal(2, S_RATIO) == 6
      and modal(2, S_RATIO) - modal(1, S_RATIO) == 3)
 
 gate("Ⓑ③  ⛔ AND THE TWO DEGREES `r7196` FLAGGED AS MOVING ARE EXACTLY THE TWO WHOSE THRESHOLDS"
-     " STRADDLE THE PRINTED PAIR: the third flips at `$2.741706$` and the sixth at `$2.747427$`,"
-     " both between `$2.74$` and `$2.7618$`.  ** That receipt's report was right and this one"
-     " supplies the thresholds it did not have **",
+     " SIT JUST BELOW BOTH CANDIDATES: the third flips at `$2.741706$` and the sixth at `$2.747427$`,"
+     " both between `$2.74$` and `$2.7618$` -- so BOTH candidate values lay above them and the"
+     " decision could not have moved either figure.  ** That receipt's report was right and this"
+     " one supplies the thresholds it did not have **",
      abs(T[3][0][0] - 2.741706) < 1e-5 and T[3][0][1:] == (8, 9)
      and abs(T[6][0][0] - 2.747427) < 1e-5 and T[6][0][1:] == (16, 17)
-     and all(2.74 < T[k][0][0] < S_RATIO for k in (3, 6))
+     and all(2.74 < T[k][0][0] < S_OTHER < S_RATIO for k in (3, 6))
      and 'two of the higher modal values are NOT stable' in JOIN)
 
 # =====================================================================================
@@ -194,13 +201,13 @@ gate("Ⓒ③  and every threshold found is a single-step change in the mode, `$n
 head("D -- AND THE LIMIT: THIS IS THE MODE, NOT THE DISTRIBUTION")
 
 gate("Ⓓ①  ⚠ the MEAN moves continuously with the stretch and has no thresholds at all -- `$3.2520$`"
-     " against `$3.2686$` at the first degree across the printed pair.  ** So `no threshold` means"
-     " `the mode does not move`, and a claim that needed the mean rather than the mode would not"
-     " inherit this stability **",
-     abs(mean(1, S_RATIO) - 3.2520) < 5e-4
-     and abs(mean(1, S_PRINTED) - 3.2686) < 5e-4
-     and mean(1, S_RATIO) != mean(1, S_PRINTED)
-     and all(mean(Lv, S_RATIO) < mean(Lv, S_PRINTED) for Lv in range(1, 9)))
+     " against `$3.2686$` at the first degree across the two candidate values.  ** So `no threshold`"
+     " means `the mode does not move`, and a claim that needed the mean rather than the mode would"
+     " not inherit this stability **",
+     abs(mean(1, S_OTHER) - 3.2520) < 5e-4
+     and abs(mean(1, S_RATIO) - 3.2686) < 5e-4
+     and mean(1, S_OTHER) != mean(1, S_RATIO)
+     and all(mean(Lv, S_OTHER) < mean(Lv, S_RATIO) for Lv in range(1, 9)))
 
 gate("Ⓓ②  and the mode is a discrete statistic of a distribution whose width `r7164` measured, which"
      " is why it has thresholds at all: the mode can only sit on an integer, so it holds until the"

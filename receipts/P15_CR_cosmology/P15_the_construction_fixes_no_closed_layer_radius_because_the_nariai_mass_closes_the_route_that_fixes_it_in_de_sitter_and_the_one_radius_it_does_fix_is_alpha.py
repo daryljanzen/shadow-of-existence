@@ -183,8 +183,11 @@ for lab, b in B.items():
     print(f"      {lab}:  x_0 = {b['x0']:.4f}  alpha = {b['alpha']:8.2f}  r_N = {b['rN']:8.2f}  "
           f"r_0 = {b['r0']:8.2f}  r_s = {b['rsch']:8.2f}  D_C = {b['DC']:9.2f} Mpc")
 gate("⛭ the layer's areal radius comes out at `r_0 = 5051` Mpc, `P15`'s own figure, and the stretch "
-     "at 2.76", abs(ref['r0'] - 5051.0) < 5.0 and abs(ref['DC'] / ref['r0'] - 2.76) < 0.03
-     and "r_0\\approx5051" in body15 and "D_C/r_0\\approx2.76" in body15)
+     "at 2.774", abs(ref['r0'] - 5051.0) < 5.0
+     # ** r7179: half the paper's printed ulp, not 0.03 -- at 0.03 this could not fail on the
+     #   quantity it names, the two printed configurations being 0.0137 apart. **
+     and abs(ref['DC'] / ref['r0'] - 2.774) < 5e-4
+     and "r_0\\approx5051" in body15 and "D_C/r_0\\approx2.774" in body15)
 gate("⛭ and `r_s` is the NARIAI value `2 alpha/(3 sqrt 3)` on both backgrounds -- the quantity the "
      "obstruction below turns on", all(abs(b['rsch'] - 2 * b['alpha'] / (3 * np.sqrt(3))) < 1e-9
                                        for b in B.values()))

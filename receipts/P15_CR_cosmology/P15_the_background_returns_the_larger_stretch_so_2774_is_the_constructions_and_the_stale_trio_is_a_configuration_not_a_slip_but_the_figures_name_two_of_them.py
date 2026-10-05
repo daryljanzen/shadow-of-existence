@@ -59,10 +59,11 @@ prose and calls them `four of the paper's parameter-free figures`.*
 - The third degree's modal multipole is `9` at both printed stretches and flips to `8` only below
   $2.741706$ -- so it is **not** at risk between them, with $0.032$ of margin at the construction's
   value.
-- ⛔ *But the paper's printed displacement range `$1.70$ and $2.93$` becomes $1.7426$ to $3.0158$,
-  so the printed ceiling is CROSSED* -- and `r7164`'s gate Ⓑ⑤ (`1.69 < e < 2.93` at every degree)
-  **fails at the construction's stretch while passing at the stale one.**  ** So the repair has a
-  consequence in print and a receipt that has to move with it. **
+- ⛔ *The repair carried a consequence in print and a receipt that had to move with it*: the
+  displacement range becomes $1.7426$ to $3.0158$, crossing the ceiling the other configuration's
+  range sat under, and `r7164`'s gate Ⓑ⑤ brackets that range.  ⛭ **Both moved in the same pass at
+  `r7179`**, and this receipt now reads that bracket OUT OF `r7164`'s source rather than quoting
+  it, so the two cannot part again without one of them saying so.
 
 Built r7177+cc66.142 (node 66, code seat), answering the chat seat's `r7177` order -- *"establish
 which $D_C$ this cosmology's background actually returns, and therefore which stretch is the
@@ -175,9 +176,19 @@ def one(k):
 #   ⌗ The branch is the test (`r7141`: a scope statement is PRINTED, not asserted); what is
 #     CHECKED below is arithmetic on the captured values, which can fail in either state.
 COUNTS_OK = all(len(GOT[k]) == w for k, (_, w) in PAT.items())
-DEFECT = COUNTS_OK and one('stale_DC') == '1.395' and one('stale_st') == '2.76' \
-    and one('live_st') == '2.774' and one('live_DC') == '1.4011' and one('stale_r0') == '5051'
-DISCHARGED = (not GOT['stale_DC']) and (not GOT['stale_st']) and len(GOT['live_st']) >= 1
+# ** r7179 (node 66, whose repair moved this): the two branches are classified on the VALUES the
+#   paper prints and no longer on whether a sentence SHAPE is present.  As first written,
+#   `DISCHARGED` required `GOT['stale_DC']` to be empty -- but that key's pattern is keyed on the
+#   sentence's FORM (`$D_C\approx...$`), which the repair leaves in place while changing the number
+#   inside it.  So the branch built to report the discharge could not fire on the repair it was
+#   built for, and the receipt refused as a drift instead.  That is this family's absence-keyed-on-a
+#   -label member one level in, inside a classifier written to avoid exactly it. **
+_DCS = set(GOT['stale_DC']) | set(GOT['live_DC'])
+_STS = set(GOT['stale_st']) | set(GOT['live_st'])
+_R0S = set(GOT['stale_r0'])
+DEFECT = (COUNTS_OK and _DCS == {'1.395', '1.4011'} and _STS == {'2.76', '2.774'}
+          and _R0S == {'5051'})
+DISCHARGED = (COUNTS_OK and _DCS == {'1.4011'} and _STS == {'2.774'} and _R0S == {'5051'})
 
 if DEFECT:
     print("  ⛔ THE COLLISION IS IN PRINT: `sec:largescale` prints "
@@ -185,10 +196,10 @@ if DEFECT:
           "`the stretch $D_C/r_0\\approx2.76$` once, while `sec:intro` prints "
           "`the stretch $2.774$` twice and `$D_C=1.4011\\times10^{4}$` once.  ** One paper, two "
           "stretches and two background lengths. **")
-    PAPER_DC_STALE = float(one('stale_DC')) * 1e4
-    PAPER_DC_LIVE = float(one('live_DC')) * 1e4
+    PAPER_DC_STALE = float(sorted(_DCS)[0]) * 1e4
+    PAPER_DC_LIVE = float(sorted(_DCS)[1]) * 1e4
     PAPER_R0 = float(one('stale_r0'))
-    PAPER_ST_STALE, PAPER_ST_LIVE = one('stale_st'), one('live_st')
+    PAPER_ST_STALE, PAPER_ST_LIVE = sorted(_STS)[0], sorted(_STS)[1]
 elif DISCHARGED:
     print("  ✔ DISCHARGED -- ** `r7177`'s ORDER HAS BEEN ANSWERED IN PRINT: the stale pair "
           "`1.395e4 / 2.76` is gone from the paper and the stretch this receipt establishes as the "
@@ -197,9 +208,9 @@ elif DISCHARGED:
           "which are two different measurements and are reported as two.*  The parts below are "
           "facts about the background rather than about the prose, and still assert.")
     PAPER_DC_STALE, PAPER_ST_STALE = None, None
-    PAPER_DC_LIVE = float(one('live_DC')) * 1e4 if one('live_DC') else 1.4011e4
+    PAPER_DC_LIVE = float(sorted(_DCS)[0]) * 1e4
     PAPER_R0 = float(one('stale_r0')) if one('stale_r0') else 5051.0
-    PAPER_ST_LIVE = one('live_st')
+    PAPER_ST_LIVE = sorted(_STS)[0]
 else:
     print("  ⛔ REFUSED -- ** THE WORDING THIS RECEIPT READS HAS DRIFTED INTO NEITHER STATE: "
           "the collision is not in print as this receipt located it, and the stale figures have "
@@ -369,8 +380,8 @@ check(f"⛭⛭ and at the pre-refit Omega_m with `r_0` pinned at the paper's cap
       "SELF-CONSISTENT CONFIGURATION, the arm at an Omega_m the refit has moved, and not an "
       "arithmetic slip",
       PAPER_DC_STALE is None
-      or round(dc_a / 1e4, dps(one('stale_DC')))
-      == round(PAPER_DC_STALE / 1e4, dps(one('stale_DC'))))
+      or round(dc_a / 1e4, dps(sorted(_DCS)[0]))
+      == round(PAPER_DC_STALE / 1e4, dps(sorted(_DCS)[0])))
 
 # ⛔⛔ AND THE PROVENANCE IS NOT UNIQUE, WHICH IS THE PART I WOULD HAVE MISSED BY STOPPING AT THE
 #   FIRST ACCOUNT THAT WORKED.  The CONTROL at its own 185-bin refit minimum returns 13954.3535,
@@ -482,15 +493,40 @@ check(f"⌗ the third degree's modal multipole is 9 at BOTH printed stretches an
       dist(3, S_STALE)[1] == 9 and dist(3, S_LIVE)[1] == 9 and flip < S_STALE < S_LIVE)
 _slo, _shi = GOT_DISP[0]
 _dlo, _dhi = float(_slo), float(_shi)
-check(f"⛔⛔ but the paper's CAPTURED displacement range `{_slo}` to `{_shi}` becomes "
-      f"{min(e_live):.4f} to {max(e_live):.4f}, so the printed CEILING IS CROSSED and that clause "
-      "moves with the stretch -- while it accommodates the stale stretch, whose range is "
-      f"{min(e_stale):.4f} to {max(e_stale):.4f}",
-      max(e_stale) < _dhi < max(e_live) and min(e_stale) < _dlo < min(e_live))
-check("⛔⛔ and `r7164`'s own gate Ⓑ⑤ -- `1.69 < e < 2.93` at EVERY degree -- passes on the stale "
-      "stretch and FAILS on the construction's, so repairing the prose turns that receipt red "
-      "unless its ceiling moves in the same pass",
-      all(1.69 < e < 2.93 for e in e_stale) and not all(1.69 < e < 2.93 for e in e_live))
+# ⛭ r7179: both of the next two were written while the collision was in print, where what they
+#   measured was the COST of the repair.  The repair has landed, so under `DISCHARGED` each asserts
+#   the other side of the same measurement -- that the printed clause and `r7164`'s bracket now
+#   admit the construction's range and refuse the other configuration's.  The arithmetic is the
+#   same arithmetic; only which side of it is the claim has changed.
+_B5 = re.search(r"mp\.mpf\('([0-9.]+)'\) < e < mp\.mpf\('([0-9.]+)'\)", io.open(
+    os.path.join(ROOT, 'receipts', 'P15_CR_cosmology',
+                 'P15_no_paper_fixes_the_primordial_normalisation_because_three_sentences_inherit_'
+                 'it_and_the_L_to_ell_map_is_a_projection_whose_width_passes_the_mode_spacing.py'),
+    encoding='utf-8').read())
+_b5lo, _b5hi = float(_B5.group(1)), float(_B5.group(2))
+print(f"      r7164's gate Ⓑ⑤ bracket, read from its source: {_b5lo} < e < {_b5hi}")
+if DEFECT:
+    check(f"⛔⛔ but the paper's CAPTURED displacement range `{_slo}` to `{_shi}` becomes "
+          f"{min(e_live):.4f} to {max(e_live):.4f}, so the printed CEILING IS CROSSED and that "
+          "clause moves with the stretch -- while it accommodates the stale stretch, whose range is "
+          f"{min(e_stale):.4f} to {max(e_stale):.4f}",
+          max(e_stale) < _dhi < max(e_live) and min(e_stale) < _dlo < min(e_live))
+    check("⛔⛔ and `r7164`'s own gate Ⓑ⑤ passes on the stale stretch and FAILS on the "
+          "construction's, so repairing the prose turns that receipt red unless its bracket moves "
+          "in the same pass",
+          all(_b5lo < e < _b5hi for e in e_stale)
+          and not all(_b5lo < e < _b5hi for e in e_live))
+else:
+    check(f"⛭⛭ and the printed displacement range `{_slo}` to `{_shi}` is the CONSTRUCTION's: it "
+          f"accommodates {min(e_live):.4f} to {max(e_live):.4f} and would not accommodate the other "
+          f"configuration's {min(e_stale):.4f} to {max(e_stale):.4f}, so the clause moved with the "
+          "two lengths rather than being left behind by them",
+          _dlo <= min(e_live) and max(e_live) <= _dhi and min(e_stale) < _dlo)
+    check("⛭⛭ and `r7164`'s own gate Ⓑ⑤ moved in the same pass -- its bracket, read from its "
+          "source rather than quoted, admits the construction's displacements at every degree and "
+          "refuses the other configuration's",
+          all(_b5lo < e < _b5hi for e in e_live)
+          and not all(_b5lo < e < _b5hi for e in e_stale))
 
 # ⌗ `r7164` ALSO takes the paper's printed pair as its own inputs, so its whole width table is on
 #   the stale configuration.  *That is a reading of another seat's source and is recorded in the
@@ -527,8 +563,14 @@ for s in sorted(slack):
 check("⛔⛔ the two tolerances are 1.63x and 2.19x the discrepancy they would have to catch, so "
       "neither gate CAN fail on the quantity it names",
       1.0e2 / GAP_DC > 1.6 and 0.03 / GAP_ST > 2.1)
-check("⛔ and FOUR receipts rest on those two tolerances, so this is a gate-design class and not "
-      f"one loose number -- {len(slack)} found by walking `receipts/`", len(slack) == 4)
+# ⛭ r7179: three of the four were tightened to half the paper's printed ulp in the pass that
+#   repaired the prose, so what this counts now is the REMAINDER rather than the class size.
+#   The count is read by walking `receipts/` and is never typed: it is the measurement, and a
+#   rise in it is a regression this check reports.
+check("⛔ and the slack tolerances are a gate-design class rather than one loose number: FOUR "
+      "receipts rested on them when this receipt was built, and what remains after `r7179`'s "
+      "repair is counted here rather than asserted from memory -- "
+      f"{len(slack)} found by walking `receipts/`", len(slack) <= 1)
 # ⛔⛔ AND ONE OF THE FOUR PRINTS BOTH VALUES IN ITS OWN VERDICT PROSE AND CALLS THEM `four of the
 #   paper's parameter-free figures`, so the disagreement has been published inside a PASS -- in the
 #   appendix, through that receipt's `INDEX` row.  *That is a reading of another seat's wording and

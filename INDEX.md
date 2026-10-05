@@ -146,7 +146,7 @@ reading the compound form until r2550.***
 | `THE_PLAN.md` | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance |
 | `THE_STAGED_REVISIONS.md` | (declared in frontmatter) |
 
-### METHOD (39)
+### METHOD (40)
 
 | document | job |
 |---|---|
@@ -154,6 +154,7 @@ reading the compound form until r2550.***
 | `CLAUDE.md` | rules / guards / canon |
 | `COMPANION_SPEC.md` | what the companion may assert, what it must refuse, and how the difference is checked |
 | `DISPATCHING_COWORK.md` | rules / guards / canon |
+| `EXPLAINER.md` | rules / guards / canon |
 | `FOUNDATIONAL_DEPENDENCY_MAP.md` | rules / guards / canon |
 | `GEOMETRY_PHYSICS_TAXONOMY.md` | rules / guards / canon |
 | `INGESTION.md` | (declared in frontmatter) |

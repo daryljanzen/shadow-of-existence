@@ -30,9 +30,9 @@ tower and `r7192` showed is a different tower's statement from `P16`'s floor.*
 receipt gates the two that carry the result and reports the two that do not, rather than asserting a
 table of eight.*
 
-⌗ ** AND ONE SMALL CORRECTION FALLS OUT, REPORTED RATHER THAN ABSORBED INTO A TOLERANCE: THE PAPER
-   PRINTS TWO STRETCHES AND THEY ARE NOT THE SAME NUMBER. ** *The ratio of its own two lengths is
-`$2.7618$`; it also prints `the stretch $2.774$`.*  ⇒ *Seven of `r7164`'s eight widths reproduce on
+⌗ ** AND ONE SMALL CORRECTION FELL OUT, REPORTED RATHER THAN ABSORBED INTO A TOLERANCE: THE PAPER
+   PRINTED TWO STRETCHES AND THEY WERE NOT THE SAME NUMBER -- AND AT `r7179` IT PRINTS ONE. ** *The
+ratio of its own two lengths is now `$2.7739$` against the printed `the stretch $2.774$`.*  ⇒ *Seven of `r7164`'s eight widths reproduce on
 either, but the first comes out `$1.195$` on the lengths against that receipt's printed `$1.20$`,
 which is what `$2.774$` returns.* **So `r7164` read the printed stretch and this receipt read the
 lengths.** ⌈ *Below the printed precision for the widths --- and NOT below a multipole, since a stretch
@@ -104,8 +104,8 @@ PROJ = doc_of(os.path.join(_R, 'P15_no_paper_fixes_the_primordial_normalisation_
                                'width_passes_the_mode_spacing.py'))
 
 # the paper's own two lengths, read from the paper rather than remembered
-DC, R0 = 1.395e4, 5051.0
-STRETCH = DC / R0            # 2.7618, the ratio of the paper's own two lengths
+DC, R0 = 1.4011e4, 5051.0
+STRETCH = DC / R0            # 2.7739, the ratio of the paper's own two lengths (r7179)
 STRETCH_P = 2.774            # and the value the paper prints as `the stretch`, which differ
 LMAX = 400
 _L = np.arange(0, LMAX + 1)
@@ -175,34 +175,34 @@ gate("Ⓐ②  and `eq:lowell` returns the ARGUMENT and not a multipole: it sits 
      all(0.94 < D[L]['pct'] < 0.97 for L in range(1, 9))
      and 'the printed value sits near the ninetieth percentile' in PAPER)
 
-gate("Ⓐ③  and the four printed arguments return: `$4.78$`, `$7.81$`, `$10.70$`, `$13.53$` at the"
+gate("Ⓐ③  and the four printed arguments return: `$4.80$`, `$7.85$`, `$10.74$`, `$13.59$` at the"
      " first four degrees, on the paper's own two lengths read from the paper rather than recalled",
-     abs(D[1]['x'] - 4.78) < 0.01 and abs(D[2]['x'] - 7.81) < 0.01
-     and abs(D[3]['x'] - 10.70) < 0.01 and abs(D[4]['x'] - 13.53) < 0.01
-     and 'D_C\\approx1.395\\times10^{4}' in PAPER and 'r_0\\approx5051' in PAPER)
+     abs(D[1]['x'] - 4.80) < 0.01 and abs(D[2]['x'] - 7.85) < 0.01
+     and abs(D[3]['x'] - 10.74) < 0.01 and abs(D[4]['x'] - 13.59) < 0.01
+     and 'D_C\\approx1.4011\\times10^{4}' in PAPER and 'r_0\\approx5051' in PAPER)
 
-R7164_SD = [1.20, 1.82, 2.44, 3.06, 3.68, 4.30, 4.92, 5.54]
-MEASURED_SD = [1.195, 1.820, 2.442, 3.062, 3.680, 4.299, 4.917, 5.536]
+R7164_SD = [1.20, 1.83, 2.45, 3.07, 3.70, 4.32, 4.94, 5.56]      # r7179, on one pair
+MEASURED_SD = [1.1992, 1.8277, 2.4524, 3.0748, 3.6964, 4.3175, 4.9386, 5.5596]
 DP = {L: dist(L, STRETCH_P) for L in range(1, 9)}
-gate("Ⓐ④  and SEVEN OF THE EIGHT WIDTHS return `r7164`'s printed figures exactly, on the ratio of the"
-     " paper's own two lengths: measured `$1.195,1.820,2.442,3.062,3.680,4.299,4.917,5.536$` against"
-     " its `$1.20,1.82,2.44,3.06,3.68,4.30,4.92,5.54$`, with degrees two through eight rounding to"
-     " its value outright.  ** That is the sequence putting the crossing of the mode spacing at the"
-     " third degree, so the window this receipt works inside is that receipt's measurement **",
+gate("Ⓐ④  and ALL EIGHT WIDTHS return `r7164`'s printed figures, on the ratio of the paper's own"
+     " two lengths: measured `$1.1992,1.8277,2.4524,3.0748,3.6964,4.3175,4.9386,5.5596$` against"
+     " its `$1.20,1.83,2.45,3.07,3.70,4.32,4.94,5.56$`, every degree rounding to its value"
+     " outright.  ** That is the sequence putting the crossing of the mode spacing at the third"
+     " degree, so the window this receipt works inside is that receipt's measurement **",
      all(abs(D[L + 1]['sd'] - t) < 5e-4 for L, t in enumerate(MEASURED_SD))
-     and all(round(D[L + 1]['sd'], 2) == t for L, t in enumerate(R7164_SD) if L >= 1)
+     and all(round(D[L + 1]['sd'], 2) == t for L, t in enumerate(R7164_SD))
      and 'THE WIDTH CROSSES THE SPACING AT `$L=3$`' in PROJ)
 
-gate("Ⓐ⑤  ⌗ AND THE EIGHTH DOES NOT, which is reported rather than absorbed into a tolerance: the"
-     " first width comes out `$1.195$` here against `$r7164$`'s printed `$1.20$`.  ** THE CAUSE IS"
-     " THAT THE PAPER PRINTS TWO STRETCHES AND THEY ARE NOT THE SAME NUMBER ** -- the ratio of its"
-     " own two lengths is `$2.7618$` while it also prints `the stretch $2.774$`, and on the latter"
-     " the width is `$1.199$`, which does round to `$1.20$`.  ⇒ *So `r7164` read the printed stretch"
-     " and this receipt read the lengths, and the two differ in the second decimal of one figure*",
-     abs(D[1]['sd'] - 1.195) < 5e-4 and round(D[1]['sd'], 2) != 1.20
-     and abs(DP[1]['sd'] - 1.199) < 5e-4 and round(DP[1]['sd'], 2) == 1.20
-     and abs(STRETCH - 2.7618) < 1e-3 and abs(STRETCH_P - 2.774) < 1e-9
-     and 'stretch $2.774$' in PAPER)
+gate("Ⓐ⑤  ⛭ AND THE EIGHTH NOW DOES TOO, which is the discharge of this receipt's own small"
+     " correction: it reported that the paper printed TWO stretches and that the first width came"
+     " out `$1.195$` on the lengths against `$r7164$`'s printed `$1.20$`, which is what the other"
+     " printed value returns.  ** The paper now prints one, and it is the one the width was"
+     " computed on ** -- the lengths and the printed stretch agree, and the first width is"
+     " `$1.199$`, which rounds to the `$1.20$` that receipt carries.  ⇒ *Both receipts now read the"
+     " same number because the paper states one (`r7179`), and the agreement is the measurement*",
+     abs(D[1]['sd'] - 1.199) < 5e-4 and round(D[1]['sd'], 2) == 1.20
+     and abs(STRETCH - 2.7739) < 1e-3 and abs(STRETCH_P - 2.774) < 1e-9
+     and abs(STRETCH - STRETCH_P) < 5e-4 and 'stretch $2.774$' in PAPER)
 
 gate("Ⓐ⑥  ⛔ AND THAT CHOICE IS NOT ALWAYS BELOW THE PRINTED PRECISION: a stretch of `$2.74$` puts the"
      " third degree's modal multipole at `$8$` where both of the paper's own values put it at `$9$`."
@@ -337,12 +337,12 @@ print("""
   modal values are not stable over that range, which is reported rather
   than asserted.
 
-  AND ONE SMALL CORRECTION FALLS OUT.  The paper prints two stretches and
-  they are not the same number: the ratio of its own two lengths is 2.7618
-  and it also prints the stretch 2.774.  Seven of the eight widths
-  reproduce on either, but the first comes out 1.195 on the lengths
-  against the printed 1.20, which is what 2.774 returns -- below the
-  printed precision for the widths, and not below a multipole, since a
+  AND ONE SMALL CORRECTION FELL OUT AND IS NOW DISCHARGED.  The paper
+  printed two stretches that were not the same number; at r7179 it prints
+  one, 2.774, and the ratio of its own two lengths is 2.7739.  Seven of
+  the eight widths reproduced on either value and the first did not --
+  1.195 on the old lengths against the printed 1.20 -- below the printed
+  precision for the widths, and not below a multipole, since a
   stretch of 2.74 moves one modal value by one.
 
   *** SO THE JOIN: the odd degree lands three multipoles lower than the

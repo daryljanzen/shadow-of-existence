@@ -18,11 +18,10 @@ sources: [chat]
 | **SOURCE** | 1 |
 | **VIEW** | 3 |
 | **STATE** | 15 |
-| **METHOD** | 39 |
+| **METHOD** | 40 |
 | **REFERENCE** | 26 |
 | **FORWARD** | 24 |
 | **RECORD** | 96 |
-| **UNCLASSIFIED** | 1 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -65,6 +64,7 @@ sources: [chat]
 | `CLAUDE.md` | METHOD | rules / guards / canon | — | — |  |
 | `COMPANION_SPEC.md` | METHOD | what the companion may assert, what it must refuse, and how the difference is checked | — | c54.206 |  |
 | `DISPATCHING_COWORK.md` | METHOD | rules / guards / canon | — | — |  |
+| `EXPLAINER.md` | METHOD | rules / guards / canon | — | — |  |
 | `FOUNDATIONAL_DEPENDENCY_MAP.md` | METHOD | rules / guards / canon | — | — |  |
 | `GEOMETRY_PHYSICS_TAXONOMY.md` | METHOD | rules / guards / canon | — | c54.84 |  |
 | `INGESTION.md` | METHOD | (declared in frontmatter) | — | c54.229 |  |
@@ -271,7 +271,6 @@ sources: [chat]
 | `gate_session_notes_r896_spinup.md` | RECORD | frozen record | — | — |  |
 | `gate_session_notes_session.md` | RECORD | frozen record | — | — |  |
 | `lapse_shift_synchrony_reconciliation.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
-| `EXPLAINER.md` | UNCLASSIFIED |  | — | — |  |
 | `THE_CLOSURE_PLAN.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_DISPATCH.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_FIELD_BAKE_PLAN.md` | PLAN | The plan for OWED 622's field bakes — the measured standard a bake must meet, the queue in order, the per-bake protocol, and the condition under which 622 may be struck. Written after r3437 threw a bake thinner than the corpus's own standard. | — | c54.226 |  |

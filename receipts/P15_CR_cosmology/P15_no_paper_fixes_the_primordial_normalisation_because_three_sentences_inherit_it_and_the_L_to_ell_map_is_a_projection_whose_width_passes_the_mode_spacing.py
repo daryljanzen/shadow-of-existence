@@ -26,10 +26,10 @@ the same narrowed row:
       ⓐ `$\\sum_\\ell(2\\ell+1)j_\\ell(x)^2=1$` EXACTLY, so `$w_\\ell(L)=(2\\ell+1)j_\\ell(k_LD_C)^2$` is a
          distribution over `$\\ell$` and the question is well posed rather than rhetorical.
       ⓑ `eq:lowell` returns the ARGUMENT `$k_LD_C$`, which sits near that distribution's **ninetieth
-         percentile**, not its centre: `$4.78$` against a mode at `$\\ell=3$`, `$7.81$` against `$6$`,
-         `$10.70$` against `$8$`, `$13.53$` against `$11$`.
-      ⓒ THE WIDTH CROSSES THE SPACING AT `$L=3$`: standard deviations `$1.20$`, `$1.82$`, `$2.44$`,
-         `$3.06$`, `$3.68$`, `$4.30$`, `$4.92$`, `$5.54$` against a mean spacing of `$2.2$`--`$2.4$`.
+         percentile**, not its centre: `$4.80$` against a mode at `$\\ell=3$`, `$7.85$` against `$6$`,
+         `$10.74$` against `$9$`, `$13.59$` against `$11$`.
+      ⓒ THE WIDTH CROSSES THE SPACING AT `$L=3$`: standard deviations `$1.20$`, `$1.83$`, `$2.45$`,
+         `$3.07$`, `$3.70$`, `$4.32$`, `$4.94$`, `$5.56$` against a mean spacing of `$2.2$`--`$2.4$`.
       ⓓ So below it the map is quasi-injective and above it each `$\\ell$` draws on several degrees,
          the overlap growing linearly without bound.
     ⇒ *** AN ENVELOPE EXPONENTIAL IN `$L$` IS THEREFORE NOT AN ENVELOPE EXPONENTIAL IN `$\\ell$` ABOVE
@@ -61,12 +61,12 @@ if the map turns out to be a different object from what either of us assumed, th
 goes above the evaluation.  It is.*  ⇒ *** `eq:lowell` is the PEAK ARGUMENT of a projection and not the
 projection's centre.  Because `$\\sum_\\ell(2\\ell+1)j_\\ell^2=1$`, each source degree carries a genuine
 distribution over `$\\ell$`, and `$k_LD_C$` sits near its ninetieth percentile: the probability below
-`$\\ell_L$` measures `$0.879$`, `$0.890$`, `$0.911$`, `$0.930$` for `$L=1..4$`. ***  ⌗ *The paper's
+`$\\ell_L$` measures `$0.875$`, `$0.885$`, `$0.907$`, `$0.925$` for `$L=1..4$`. ***  ⌗ *The paper's
 `$\\simeq$` is therefore carrying an offset of order the mode spacing itself at the degrees that matter,
 which is a fact about the sign of a correction rather than about its size.*
 
 ⌗ ** AND THE LOW-`$\\ell$` LEAK IS SMALL WHERE THE FLOOR ARGUMENT NEEDS IT TO BE. **  *The quadrupole
-source puts `$P(\\ell\\le3)=0.150$` of its weight below `$\\ell=3$`, the `$L=3$` mode `$0.058$` and the
+source puts `$P(\\ell\\le3)=0.151$` of its weight below `$\\ell=3$`, the `$L=3$` mode `$0.059$` and the
 `$L=4$` mode `$0.033$`.*  ⇒ *So the deficit below `$\\ell_2$` is not a hard edge, and it is not undone
 either: the leak is a sixth of one mode's weight and falls fast with degree.*
 
@@ -193,19 +193,23 @@ gate("Ⓐ⑩  and the paper supplies its own precedent for an inherited measured
 head("Ⓑ  ORDER ⓶ -- sec:largescale's L→ℓ MAP, EVALUATED ON THE LIFT'S OWN DEGREES")
 
 _LOWELL = r"\ell_L\simeq\sqrt{L(L+2)}\;\frac{D_C}{r_0}"
-_STRETCH = "The stretch factor $D_C/r_0\\approx2.76$"
+_STRETCH = "The stretch factor $D_C/r_0\\approx2.774$"
 _FLOOR = "carries the lowest mode to $\\ell_2\\approx7.8$, with no source below it"
 gate("Ⓑ①  eq:lowell is in print in the form this receipt evaluates", P15.count(_LOWELL) == 1)
 gate("Ⓑ②  and so are the two printed numbers it is evaluated with",
      P15.count(_STRETCH) == 1 and P15.count(_FLOOR) == 2)
 
 mp.mp.dps = 25
-DC = mp.mpf('1.395e4')          # the paper's printed comoving distance to last scattering, Mpc
+DC = mp.mpf('1.4011e4')         # the paper's printed comoving distance to last scattering, Mpc
 R0 = mp.mpf(5051)               # the paper's printed present S^3 areal radius, Mpc
 STRETCH = DC / R0
-print(f"\n    stretch D_C/r_0 = {mp.nstr(STRETCH, 8)}   against the paper's printed 2.76")
-gate("Ⓑ③  the stretch factor from the paper's own two lengths reproduces its printed 2.76",
-     abs(STRETCH - mp.mpf('2.76')) < mp.mpf('0.01'))
+print(f"\n    stretch D_C/r_0 = {mp.nstr(STRETCH, 8)}   against the paper's printed 2.774")
+# ** the tolerance is HALF THE PAPER'S PRINTED ULP and not a round number. **  At 0.01 this check
+# could not fail on the quantity it names: the two background configurations the corpus has printed
+# are 0.0121 apart, so the wider tolerance admitted both and asserted neither (r7179).
+gate("Ⓑ③  the stretch factor from the paper's own two lengths reproduces its printed 2.774, to"
+     " half the printed ulp -- a tolerance the other configuration's 2.7618 fails",
+     abs(STRETCH - mp.mpf('2.774')) < mp.mpf('5e-4'))
 
 ell_of = lambda L: mp.sqrt(L * (L + 2)) * STRETCH
 jl = lambda l, x: mp.sqrt(mp.pi / (2 * x)) * mp.besselj(l + mp.mpf('0.5'), x)
@@ -241,9 +245,9 @@ for L in range(1, 9):
 exc = [r[1] - r[2] for r in rows]
 print("\n    eq:lowell minus the mode, by degree: "
       + "  ".join(mp.nstr(e, 4) for e in exc))
-gate("Ⓑ⑤  eq:lowell's value is ABOVE the distribution's mode at every degree, by 1.70 to 2.93 "
+gate("Ⓑ⑤  eq:lowell's value is ABOVE the distribution's mode at every degree, by 1.74 to 3.02 "
      "-- a displacement of order one whole mode, bounded both ways and not growing with degree",
-     all(mp.mpf('1.69') < e < mp.mpf('2.93') for e in exc)
+     all(mp.mpf('1.73') < e < mp.mpf('3.03') for e in exc)
      and max(exc) - min(exc) < mp.mpf('1.3'))
 gate("Ⓑ⑥  it sits near the NINETIETH PERCENTILE rather than the centre: P(ℓ≤ℓ_L) is 0.88 to 0.96",
      all(mp.mpf('0.87') < pL < mp.mpf('0.97') for (L, x, mode, med, m1, sd, p3, pL) in rows))
@@ -261,7 +265,7 @@ gate("Ⓑ⑦  the spacing is 2.2 to 2.4 while the width runs 1.20 to 5.54, so th
 gate("Ⓑ⑧  so the map is quasi-injective for the first two degrees and smears from the third up --"
      " a projection and not a relabelling",
      sds[0] / spac[0] < mp.mpf('0.6') and sds[2] / spac[2] > 1)
-gate("Ⓑ⑨  and the low-ℓ leak falls fast with degree: P(ℓ≤3) = 0.60, 0.15, 0.058, 0.033 for L = 1..4,"
+gate("Ⓑ⑨  and the low-ℓ leak falls fast with degree: P(ℓ≤3) = 0.59, 0.15, 0.059, 0.032 for L = 1..4,"
      " so the floor below ℓ_2 is softened by a sixth of one mode and not erased",
      abs(rows[1][6] - mp.mpf('0.150')) < mp.mpf('0.01')
      and rows[3][6] < mp.mpf('0.04') and rows[0][6] > mp.mpf('0.55'))
@@ -315,7 +319,7 @@ print("""
   VERDICT, ORDER (2): the map is a PROJECTION and not a relabelling.
   eq:lowell returns the kernel's peak ARGUMENT, which sits near the
   distribution's ninetieth percentile rather than its centre -- above the
-  mode by 1.70 to 2.93 at the degrees that matter.  The width crosses the mode
+  mode by 1.74 to 3.02 at the degrees that matter.  The width crosses the mode
   spacing at L = 3 and grows past it without bound, so the map is
   quasi-injective for the first two degrees and smears above them.
   *** An envelope exponential in L is therefore not an envelope exponential

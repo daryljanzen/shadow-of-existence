@@ -153,12 +153,17 @@ for lab, b in B.items():
 ref = B['the refit background `P15` fits']
 gate("⛭ the layer's areal radius comes out at `r_0 = 5051` Mpc, which is `P15`'s own parameter-free "
      "figure", abs(ref['r0'] - 5051.0) < 5.0 and "r_0\\approx5051" in body15)
-gate("⛭ and the projection distance at `D_C = 1.395e4` Mpc, the paper's own",
-     abs(ref['DC'] - 1.395e4) < 1.0e2 and "D_C\\approx1.395\\times10^{4}" in body15)
+# ** r7179 (node 66): the pair is the construction's and the tolerances are the paper's own
+#   printed precision.  At +-100 Mpc and +-0.03 these could not fail on the quantities they
+#   name: the two background configurations the corpus has printed are 61.5 Mpc and 0.0137
+#   apart, so the old brackets admitted both and asserted neither (`PO-78` at the tolerance). **
+gate("⛭ and the projection distance at `D_C = 1.4011e4` Mpc, the paper's own, to half its"
+     " printed ulp -- a bracket the other configuration's 1.395e4 fails by 123 times",
+     abs(ref['DC'] - 1.4011e4) < 0.5 and "D_C\\approx1.4011\\times10^{4}" in body15)
 _stretch = ref['DC'] / ref['r0']
-gate(f"⛭ so the STRETCH is {_stretch:.3f} against the paper's 2.76 -- the ratio of the two objects the "
-     "order asked whether to distinguish", abs(_stretch - 2.76) < 0.03
-     and "D_C/r_0\\approx2.76" in body15)
+gate(f"⛭ so the STRETCH is {_stretch:.3f} against the paper's 2.774 -- the ratio of the two objects the "
+     "order asked whether to distinguish", abs(_stretch - 2.774) < 5e-4
+     and "D_C/r_0\\approx2.774" in body15)
 _l2 = np.sqrt(2 * 4) / ref['r0'] * ref['DC']
 gate(f"⛭ and the lowest closed-$S^3$ mode lands at ell_2 = {_l2:.2f} against the paper's 7.8 -- four "
      "figures calibrated before the unknown is touched",
@@ -181,7 +186,7 @@ gate("⛭ AND THE DISTINCT OBJECT EXISTS AND IS ALREADY SPENT: $r_0$ sets the SO
      "needed is occupied", "k_L=\\sqrt{L(L+2)}/r_0" in body15)
 gate("⇒ so (3) does not dissolve the conflict: it would have to break an identification the "
      "construction already made, and the two-object structure it reached for is in use for a "
-     "different job", abs(_stretch - 2.76) < 0.03)
+     "different job", abs(_stretch - 2.774) < 5e-4)
 
 # ============================================== C. reading (2)
 head("C.  ⛭⛭ READING (2) IS TRUE OF THE LINE ELEMENT -- AND THE EXACT STATEMENT IS r/rdot = c/H")
@@ -312,8 +317,8 @@ gate("⚠ SCOPE: no transfer is run and no spectrum computed -- every import in 
 
 # --- the pinned assertions: the figures the paper prints -------------------------------------------
 assert abs(ref['r0'] - 5051.0) < 5.0, f"r_0 must be the paper's 5051 Mpc, got {ref['r0']:.1f}"
-assert abs(ref['DC'] - 1.395e4) < 1.0e2, f"D_C must be the paper's 1.395e4, got {ref['DC']:.1f}"
-assert abs(_stretch - 2.76) < 0.03, f"the stretch must be the paper's 2.76, got {_stretch:.3f}"
+assert abs(ref['DC'] - 1.4011e4) < 0.5, f"D_C must be the paper's 1.4011e4, got {ref['DC']:.1f}"
+assert abs(_stretch - 2.774) < 5e-4, f"the stretch must be the paper's 2.774, got {_stretch:.4f}"
 assert abs(_l2 - 7.8) < 0.15, f"the lowest mode must land at the paper's 7.8, got {_l2:.2f}"
 assert worst < 1e-12, f"r/rdot = c/H must be exact, worst departure {worst:.2e}"
 
