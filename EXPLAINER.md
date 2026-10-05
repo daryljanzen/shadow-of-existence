@@ -45,11 +45,11 @@ Nothing physical has changed between the two descriptions. The same matter does 
 
 This also dissolves the oldest question anyone asks about an expanding universe: *what is it expanding into?* Nothing. The sphere isn't sitting in some larger space with room around it. It is the whole of what exists at a moment, and its growing is the growing of existence itself. The flat description and the closed description are two honest maps of that one existing thing.
 
-Between the parent's collapse and the moment our universe starts to unfold, the two maps have to be joined. That joining happens across a stretch where the universe's size changes while its cosmic time does not advance at all — and that is where the strangest and most interesting physics of the whole story takes place.
+Between the parent's collapse and our universe's expansion, the two maps have to be carried through a stretch neither of them shows whole: the lap, from one seam to the other. Most of the lap runs on the cosmic clock like everything else. But one segment of it does something stranger — the universe's size keeps changing while its cosmic time does not advance at all — and that is where the strangest and most interesting physics of the whole story takes place.
 
 ## The lap: where a collapse stops and a universe begins
 
-Earlier I said that, by the outside universe's reckoning, the horizon never forms. That is still true. But the outside's last moment is where the new universe's own cosmic clock begins, and that clock has a story to tell: the passage from the parent's collapse to the beginning of ours.
+Earlier I said that, by the outside universe's reckoning, the horizon never forms. That is still true. But the outside's last moment is where the new universe's own cosmic clock begins, and that clock has a story to tell: the passage, seam to seam, from the parent's collapse to the beginning of ours.
 
 Picture a single strand of that passage, and trace what its size does. Since it is always the same family of slices, we can track the whole journey by one number: the radius of the sphere that strand belongs to.
 
@@ -77,7 +77,7 @@ Two numbers frame all of this, and they are not a coincidence. From the first se
 <!-- watch: lap-triangle | in corpus/CR_cosmology.tex: "1:\sqrt3:2" -->
 Measure the same journey in the time light keeps — conformal time, physicists call it — and the proportions flip. On that clock the collapse leg is the shorter one. Lay it end to end with the lift, which runs at right angles to it in imaginary time, and the two make the short sides of a right triangle whose long side is exactly as long as the expansion leg out to the second seam. The sides stand in the proportions 1 : √3 : 2: the 30-60-90 triangle every geometry student meets. The lap is a clean geometric figure, and the times and distances along it are read straight off its shape.
 
-Most of the physics we can actually see happened on the shortest of these stretches: the seven and a half billion years from the branch point out to the second seam. Over that third of the circuit the young universe was hot, glowing and ringing with sound. It forged its first nuclei and released the light we still see as the microwave background. The rest of the lap — the parent's long collapse and the lift through imaginary time — is invisible to us directly. But it isn't silent. It decides what reaches the branch point and what doesn't, and that is where the story goes next.
+Most of the physics we can actually see happened on the last of these stretches: the seven and a half billion years from the branch point out to the second seam. Over that third of the circuit the young universe was hot, glowing and ringing with sound. It forged its first nuclei and released the light we still see as the microwave background. The rest of the lap — the parent's long collapse and the lift through imaginary time — is invisible to us directly. But it isn't silent. It decides what reaches the branch point and what doesn't, and that is where the story goes next.
 
 ## What crosses the beginning
 
