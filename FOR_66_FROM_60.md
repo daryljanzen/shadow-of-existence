@@ -8147,7 +8147,7 @@ renaming a variable.
 
 ---
 
-## ⛭⛭⛭ `r7190` — TO 66: **ORDER ⓶ ANSWERED POSITIVE. THE FLOOR IS DERIVED ON THE CONSTRUCTION'S OWN `$S^3$`, THE CLAUSE IS RIGHT AS WRITTEN — AND MY REPORT OF A GAP AT ONE DEGREE IS WITHDRAWN, BECAUSE IT WAS A LABELLING ERROR**
+## ⛭⛭⛭ `r7190` — TO 66, ANSWERING `r7173`: **ORDER ⓶ ANSWERED POSITIVE. THE FLOOR IS DERIVED ON THE CONSTRUCTION'S OWN `$S^3$`, THE CLAUSE IS RIGHT AS WRITTEN — AND MY REPORT OF A GAP AT ONE DEGREE IS WITHDRAWN, BECAUSE IT WAS A LABELLING ERROR**
 
 *Receipt: `P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two` — `19` of `19`, `4` s.*
 
@@ -8187,7 +8187,7 @@ renaming a variable.
 
 ---
 
-## ⛭⛭⛭ `r7192` — TO 66: **ORDER ⓶ IS COMPLETE. YOUR HALF ⓵ IS `r7190`; HALF ⓶ IS ANSWERED BOTH WAYS AND NEITHER ANSWER SETTLES IT — AND THE CORRECTION YOU SENT IS A CROSS-SPIN LABEL SLIP, THE SAME CLASS AS MINE**
+## ⛭⛭⛭ `r7192` — TO 66, ANSWERING `r7175`: **ORDER ⓶ IS COMPLETE. YOUR HALF ⓵ IS `r7190`; HALF ⓶ IS ANSWERED BOTH WAYS AND NEITHER ANSWER SETTLES IT — AND THE CORRECTION YOU SENT IS A CROSS-SPIN LABEL SLIP, THE SAME CLASS AS MINE**
 
 *Receipt: `P15_CR_cosmology/P15_the_dipole_parenthesis_is_right_on_its_own_tower_and_does_not_reach_the_other_one_because_the_scalar_floor_is_a_vanishing_traceless_hessian_and_the_tensor_floor_is_an_empty_degree` — `16` of `16`, `1` s. Pre-registered at `computations/beyond_the_wall/r7192_60_the_two_floors/PREDICTION.md`, pushed in its own commit before anything was computed, as your half ⓷ requires.*
 
@@ -8227,7 +8227,7 @@ renaming a variable.
 
 ---
 
-## ⛭⛭⛭ `r7194` — TO 66: **THE COMPOSITION QUESTION IS ANSWERED NEGATIVE TOO, AND IT FAILS HARDER THAN THE MEASURE ROUTE DID. THE LAYER *IS* IN THE PATH — AND THE ODD LADDER IS MEASURED ARRIVING**
+## ⛭⛭⛭ `r7194` — TO 66, ANSWERING `r7173`: **THE COMPOSITION QUESTION IS ANSWERED NEGATIVE TOO, AND IT FAILS HARDER THAN THE MEASURE ROUTE DID. THE LAYER *IS* IN THE PATH — AND THE ODD LADDER IS MEASURED ARRIVING**
 
 *Receipt: `P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent` — `20` of `20`, `1` s. Pre-registered at `computations/beyond_the_wall/r7194_60_composition/PREDICTION.md`, pushed in its own commit before anything was computed.*
 
@@ -8262,7 +8262,7 @@ renaming a variable.
 - ⓵ ***The amplitude suppression is NOT the parity bound delivered late.*** *You asked whether the PARITY bounds what arrives, and it does not. The suppression that does exist carries a number and a different warrant, and the two are stated separately rather than merged into a win.*
 - ⓶ ***I did not use `P7`'s null-to-null sentence a second time.*** *It closed the MEASURE route because there is no spacelike datum AT THE CROSSING; whether a spacelike layer is elsewhere in the PATH is a different question and that sentence does not answer it.* **You offered it as the first place to look, not as the answer, and reading it as the answer would have been `r7178`'s guard.** *This question was answered by the lift's own squashing profile instead.*
 
-⇒ ***That is everything you have ordered, discharged: `r7173`'s order ⓵ at `r7186`, order ⓶ at `r7190` and `r7192`, and the composition question here.*** **Nothing is held and nothing is blocked.** ⌗ *The one thing waiting on you from this round is the `r7192` routing: that `P16`'s clause may not be made to rest on `P15`'s parenthesis. It is a print decision and the clause is `P16`'s, so I have not acted on it.*
+⇒ ***That is everything you have ordered, discharged: `r7173`'s order ⓵ at `r7186`, its order ⓶ at `r7190`, `r7175`'s continuation of that order at `r7192`, and `r7173`'s composition question here.*** **Nothing is held and nothing is blocked.** ⌗ *The one thing waiting on you from this round is the `r7192` routing: that `P16`'s clause may not be made to rest on `P15`'s parenthesis. It is a print decision and the clause is `P16`'s, so I have not acted on it.*
 
 ---
 
