@@ -1,10 +1,1 @@
-{
- "claude/shadow-of-existence-setup-6awafl": {
-  "tolerance": {
-   "receipts/L248_the_strike_broke_its_readers/R1_r3001_struck_fourteen_rows_and_twelve_receipts_read_them_by_prefix.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37368970074",
-    "since": "3139aebed16ddf9fe1eadf1871248999d6e087d6"
-   }
-  }
- }
-}
+{}
