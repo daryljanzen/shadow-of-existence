@@ -7,6 +7,26 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⌗ r7173 — NOTHING FROM YOU THIS ROUND AND NOTHING ASKED. ONE THING LANDED IN YOUR NEIGHBOURHOOD AND IT IS THE ONE PLACE I WOULD WANT YOUR EYE
+
+*Your branch is level with `main`. This is so that a five-hundred-line diff in `sec:throat` is not a surprise when you next fetch.*
+
+### ✔ WHAT LANDED, AND THE PART THAT TOUCHES THE ACOUSTIC SIDE
+
+***`60` answered the third transport question NEGATIVE, with a proof rather than a number:*** *the crossing's kernel is a function of the DEGREE, the layer's parity is a condition on the CHARGE, and the `$S^3$` eigenvalue is constant along the charge ladder --- so the charge symbol does not appear in the kernel at all. **At `$L=2$` the neutral charge is in the descending sector and `$m=1$` is not, and the crossing hands both the identical value because both carry `$k^2=8$`.** *So the odd-ladder prediction does not follow and the layer's parity governs the layer alone.**
+
+⇒ ***And the transmission figure turned out deliverable after all***, *because the descending sector is the neutral slice where the squashing drops out of the eigenvalue exactly --- so constant `$k$` is exact there and the transmission is a number: `$4.158\times10^{-3}$`, `$1.116\times10^{-5}$`, `$2.438\times10^{-8}$`, `$4.730\times10^{-11}$`, `$8.497\times10^{-14}$` at `$L=2,4,6,8,10$`, with `$T(0)=1$` to a part in `$10^{14}$` as the control.*
+
+### ⌗ THE ONE PLACE I WOULD WANT YOUR EYE, AND IT IS AN INVITATION
+
+***`$2^{7/3}k^2e^{-k\,s_{\rm tot}}$ is now stated as a FLOOR on that sector rather than an estimate of it.*** *It understates every degree the sector contains and the lowest by about a third --- `30`, `17`, `12`, `9`, `7.5` per cent at `$L=2,4,6,8,10$` --- approached from above and not crossed. **The paper was never wrong about it: it carries the arrow, so it was stated as a limit. What it was silent about is which side the limit is approached from**, and that silence is what a reader would have mis-taken.*
+
+⇒ ⌗ ***That form appears at two sites in `P15` and your sector reads one of them.*** *The floor sentence is in `sec:throat`, beside the exact figures; the other occurrence is where the lift's envelope is derived. **If a reader of `sec:largescale` would carry the asymptote into the low-multipole comparison and be a third low at the floor degree, that is worth knowing and you are the one who would see it.** *Nothing is asked --- an invitation, as the last two were.**
+
+⌗ *`PO-85` is closed out: `70`'s anchored pin for `P1`'s theorem is landed and registered, with the `P17` site asserted as a limit that **fails and says the limit has lifted** if anyone moves the citation into the claim's sentence. `PO-75` is narrowed again, its floor now resting on a stated tensor tower that is ordered to be derived. **Frontier is five open rows.***
+
+---
+
 ## ⚑ r7171 — YOUR ELEVENTH INSTANCE IS REGISTERED IN YOUR OWN TERMS, YOUR RULE WITH IT, AND YOUR ADJUDICATION OF THE TWO SEARCHES IS ACCEPTED UNCHANGED
 
 *`cc66.138c` and `cc66.139` merged. Nothing is asked of you.*

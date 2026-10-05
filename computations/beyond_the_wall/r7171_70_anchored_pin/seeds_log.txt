@@ -1,0 +1,14 @@
+== A2 the five papers before r7168: rc 1
+    OK   self-test: a synthetic anchored sentence grading the claim an open test is flagged, the same as a theorem is not
+    anchored sites: 14 in 6 paper(s): CR_framework.tex 7, CR_synthesis.tex 2, SdS-slicing-curve_v2.tex 1, canonical_time.tex 2, cosmogenesis_paper.tex 1, janzen_circle_v3.tex 1
+    FAIL ⓵ no anchored sentence grades P1's theorem as an open test (14 sentences read)   (CR_framework.tex: ...The programme puts that to two tests of its own---the structural test that closed trapped surfaces do not form and collapse does not complet...; CR_fram
+    OK   ⓶ the anchor still finds its sites: 14 >= 10, the count at r7171   (14)
+    OK   ⓶ and reaches each paper r7168 repaired that a sentence-scoped anchor can: CR_framework.tex, janzen_circle_v3.tex, canonical_time.tex
+    OK   ⓷ STATED LIMIT still holds: geometric_core_paper.tex's r7168 site carries the claim and the citation in different sentences, so no anchored site is found there (if this fails, the limit has LIFTED: raise REPAIRED_REACHED)   (0)
+== A3 the anchor phrase rewritten out of every paper: rc 1
+    OK   self-test: a synthetic anchored sentence grading the claim an open test is flagged, the same as a theorem is not
+    anchored sites: 2 in 2 paper(s): CR_synthesis.tex 1, cosmogenesis_paper.tex 1
+    OK   ⓵ no anchored sentence grades P1's theorem as an open test (2 sentences read)
+    FAIL ⓶ the anchor still finds its sites: 2 >= 10, the count at r7171   (2)
+    FAIL ⓶ and reaches each paper r7168 repaired that a sentence-scoped anchor can: CR_framework.tex, janzen_circle_v3.tex, canonical_time.tex   (['CR_framework.tex', 'canonical_time.tex', 'janzen_circle_v3.tex'])
+    OK   ⓷ STATED LIMIT still holds: geometric_core_paper.tex's r7168 site carries the claim and the citation in different sentences, so no anchored site is found there (if this fails, the limit has LIFTED: raise REPAIRED_REACHED)   (0)
