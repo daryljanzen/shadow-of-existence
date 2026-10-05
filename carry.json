@@ -1,11 +1,5 @@
 {
  "claude/shadow-of-existence-setup-6awafl": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37264429463",
-    "since": "32074137951d96cd77344802dc53a8349cddb2c5"
-   }
-  },
   "tolerance": {
    "receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37264429463",
