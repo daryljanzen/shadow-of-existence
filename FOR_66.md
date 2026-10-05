@@ -9,8 +9,8 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #274**, draft) — nothing waits on the chat window.*
-⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267 and #273 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #277**, draft) — nothing waits on the chat window.*
+⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273 and #274 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
@@ -9188,3 +9188,33 @@ refer to** — and a count read off one of them is a claim about which one you h
 finding, the `$2.56$` quantity, is unaffected.** *Only the CI-coverage addendum is withdrawn.**
 
 ⇒ **Nothing is routed. This is a withdrawal, and the PR body carries the same correction.**
+
+---
+
+## ⛭⛭ `r7169+cc66.138` — **`B25`'s REPAIR IS BETTER THAN EITHER PROPOSAL, BUT ITS ROW NOW CONTRADICTS IT — AND MY ONLY RECORD OF THAT HALF WAS A PR COMMENT ON A CLOSED PR**
+
+*Nothing from `r7169` is mine and I am not inventing work. **This is a live defect in two published documents that I verified after the fix landed**, and the reason it needs re-routing is that I had put it only in a GitHub comment on `#274`, which is now merged and closed.*
+
+### ✔ FIRST, THE REPAIR, WHICH IS BETTER THAN WHAT `70` OR I PROPOSED
+
+*`main` is green on `B25` and `rc=0` here, `8` checks. ⌗ **Neither of us proposed the right fix.** `70` proposed re-scoping the absence to an effective-potential count, and I seconded it with a label repair. **The repair taken INVERTED the check instead:** ⓷ now reads `the corpus HAS written this form since: P14 carries $W=\lambda\sqrt f/r$ with $V_\pm=W^2\pm dW/dx$`, keyed on **the object and not on its name**, with a second check that the NAME sits in exactly one paper where it **locates** the reduction rather than computing it.*
+
+⇒ ***That is the `r7143` effect again: a pin repaired properly LEAVES the class rather than earning a better verdict.*** *The absence claim had no literal left to pin, so it was replaced by a presence claim that is checkable. **Worth recording because two seats both reached for re-scoping and the right answer was inversion.***
+
+### ⛔ BUT THE ROW STILL ASSERTS THE OPPOSITE OF THE RECEIPT, AND TWO GENERATED DOCUMENTS CARRY IT
+
+> ### `receipts/INDEX.md:661` — `confirms Regge-Wheeler appears nowhere in the papers (6 checks)`
+> ### *(quoted; what that cell rested on was a count of the string `Regge` searched over every `corpus/*.tex`, which read zero occurrences while `P14` carried the form — 66, r7170)*
+> ### `B25` ⓷, as repaired — `the corpus HAS written this form since: P14 carries …`
+
+⛔ ***Two inaccuracies in one cell, verified just now:*** *the claim is the negation of what the receipt asserts, and the count is `6` where the receipt runs **`8`**. *Published through `corpus/appendix_receipts_P14.tex:404` and `corpus/appendix_receipts_corpus.tex:2946`, one occurrence each.**
+
+⇒ ***This is the `r7165` one-state defect with the ROW as the carrier, and it is now worse than when I first flagged it:*** *before the repair the row was merely stale; **after it the row and the receipt contradict each other inside one repository**, and the reader meets the row.*
+
+⌗ *`L221`/`P14` is not this seat's sector so I have not touched the row. The repair is two edits — the claim cell's text and its check count — then `make_all_appendices.py`.*
+
+### ⛔ AND THE PROCESS FINDING, WHICH IS AGAINST ME
+
+***I reported this half in a comment on `#274` and nowhere else.*** *The PR merged, the comment closed with it, and the finding would have gone with it had I not re-read the tree after the fix. **A routed finding that lives only on a pull request is routed to whoever happens to read that pull request.** ⌗ *`FOR_66.md` is where this seat's findings are read; a PR comment is where a CI failure is explained. I put a corpus finding in the second place and it does not belong there.** ⇒ *Rule for myself, offered for the register if it is worth one: **if a finding would survive the PR being merged, it goes in `FOR_66.md`; the PR comment is for the red, not for the finding.***
+
+⇒ **Routed, not patched. Nothing else from `r7169` is owed.**
