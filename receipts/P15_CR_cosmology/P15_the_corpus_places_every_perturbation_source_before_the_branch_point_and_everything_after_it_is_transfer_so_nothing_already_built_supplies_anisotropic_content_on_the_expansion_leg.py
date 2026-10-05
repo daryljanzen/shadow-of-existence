@@ -295,11 +295,19 @@ _p15_then = flat(''.join(
     if not ln.lstrip().startswith('%')))
 _REG = open(os.path.join(ROOT, 'THE_REGISTER.md'), encoding='utf-8', errors='replace').read()
 _owed_then = all(_p15_then.count(ph) == 1 for ph in OWED)
-_po75_open = bool(re.search(r'(?m)^\|\s*\*\*PO-75\*\*', _REG))
+# ** ⛭ The row is looked up in a form that admits BOTH the open and the struck spelling, and the
+#   openness is read off the MATCHED row -- `check_row_matchers`' rule, and it is the right shape for
+#   a two-state cover anyway: an open-form-only search would read a struck row and a DUPLICATED row
+#   alike as `closed`.  Finding exactly one row is part of the test, so an ambiguous register is a
+#   FAILURE here and not a silent reading. **
+_PO75ROW = re.compile(r'(?m)^\|\s*(~~)?\*\*PO-75\*\*(~~)?')
+_po75_rows = _PO75ROW.findall(_REG)
+_po75_found = len(_po75_rows) == 1
+_po75_open = _po75_found and not _po75_rows[0][0]
 _owed_live = all(B['P15'].count(ph) == 1 for ph in OWED)
-_owed_ok = _owed_then and (_owed_live or not _po75_open)
+_owed_ok = _owed_then and (_owed_live or (_po75_found and not _po75_open))
 print(f"      at {PIN}: both sentences 1x each -> {_owed_then};  live now -> {_owed_live};  "
-      f"PO-75 still open -> {_po75_open}")
+      f"PO-75 rows found -> {len(_po75_rows)}, still open -> {_po75_open}")
 gate("⇒ ** and `PO-75`'s own gap is already written into the paper AS OWED AND NOT AS BUILT **: the "
      "origin of the anisotropic spectrum is placed on the expansion leg, where *'it requires a source "
      "the single Nariai worldline of this construction does not carry'*, *'named here as owed and "
@@ -383,7 +391,7 @@ gate("⇒ *** ** SO THEY ARE COMPUTED ON TWO DIFFERENT PATHS BETWEEN THE SAME TW
      "DEFINED on, which is an order and not an inference ***",
      _c21_real and _owed_then
      and ('named here as owed and developed in neither this paper nor the bead' in B['P15']
-          or not _po75_open))
+          or (_po75_found and not _po75_open)))
 
 gate("✔ THE AFFIRMATIVE CONTROL: the read's own instrument is shown able to return a POSITIVE on the "
      "order's question, not only negatives -- it located five source-side statements in `P16`, two "

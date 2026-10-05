@@ -478,8 +478,14 @@ def owed_old(p15, reg):
 
 
 def owed_new(p15, reg, then=True):
-    """after the repair: frozen history, and a two-state live cover."""
-    return then and (_OWEDLIT in p15 or not re.search(r'(?m)^\|\s*\*\*PO-75\*\*', reg))
+    """after the repair: frozen history, and a two-state live cover.
+
+    ** The row is matched in a form that admits BOTH spellings and the openness is read off the
+    matched row, as `check_row_matchers` requires -- an open-form-only search would read a struck
+    row and a DUPLICATED row alike as `closed`.  Finding exactly one row is part of the test. **
+    """
+    found = re.compile(r'(?m)^\|\s*(~~)?\*\*PO-75\*\*(~~)?').findall(reg)
+    return then and (_OWEDLIT in p15 or (len(found) == 1 and bool(found[0][0])))
 
 
 _REG_OPEN = "| **PO-75** | the anisotropic spectrum's source |"
