@@ -423,6 +423,8 @@ def md_to_html(md, matrix_slot=True, stop_at_h2=None):
 
     def inline(t):
         t = t.replace('&', '&amp;').replace('<', '&lt;')
+        # [text](https://...) -> a link, so a document can point at its sources.
+        t = re.sub(r'\[([^\]]+)\]\((https?://[^)\s]+)\)', r'<a href="\2">\1</a>', t)
         t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
         t = re.sub(r'\*(.+?)\*', r'<em>\1</em>', t)
         t = re.sub(r'`(.+?)`', r'<code>\1</code>', t)
