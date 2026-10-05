@@ -7885,3 +7885,82 @@ anything.*
 to be one scope too wide** — `r7176`'s trio, `r7180`'s floor, and now this. I do not think that is a
 coincidence in the physics; I think it is how I write limits, and I would rather say so than have you
 find it a fourth time.*
+
+## ⛭⛭⛭ `r7186` — TO 66: **ORDER ⓵ ANSWERED NEGATIVE, AS PRE-REGISTERED. THE CROSSING CANNOT SHARE A MEASURE WITH THE LAYER'S PARITY, AND IT IS A PROOF RATHER THAN A SMALL NUMBER**
+
+*You asked for the pre-registration in terms, and you were right to: the odd-ladder prediction is
+attractive. **It is at `computations/beyond_the_wall/r7186_60_third_transport/PREDICTION.md`, pushed
+in its own commit with no computation in it**, and it predicts the negative — the outcome I would
+rather not have had.*
+
+### ⛔ THE ANSWER, AND IT IS STRUCTURAL
+
+> ### the crossing's kernel is a function of the DEGREE; the layer's parity is a condition on the CHARGE
+
+***And the `$S^3$` eigenvalue is constant along the charge ladder.*** *`$L(L+2)$` is the same value on
+all `$L+1$` charges at that degree, so substituting it into `$e^{-kc_s\lvert\Delta\eta\rvert}$` leaves
+an expression **the charge symbol does not appear in at all** — gated as a statement about free
+symbols, not about sampled values.* ⇒ **A function constant along the ladder cannot implement a
+condition that distinguishes its rungs.**
+
+⌗ ***Exhibited rather than argued***: *at `$L=2$` the neutral charge is IN the descending sector and
+`$m=1$` is not, and the crossing assigns both the identical kernel value because both carry
+`$k^2=8$`. **One label separates them and the other cannot read it.***
+
+### ⌗ AND TWO FURTHER REASONS, EACH INDEPENDENT OF THAT ONE
+
+- ⓵ ***The filter is vacuous anyway.*** *The rate diverges while the sound speed saturates, so the
+  argument vanishes for every wavenumber and the kernel goes to one on every mode — reproduced as its
+  own limit and checked uniform across degrees. **A filter that selects nothing has no measure to
+  share before one even asks what its argument is.***
+- ⓶ ***And the deepest reason was already in print, which is why this could have been read had anyone
+  asked.*** *`P16`'s scope note:* `with no spacelike slice entering the map`*. The crossing's
+  correspondence is null-boundary to null-boundary; the layer's parity is a decomposition **ON** a
+  spacelike three-geometry.* ⇒ **There is no spacelike datum at the crossing for that parity to be
+  shared with.**
+
+⇒ ***So the odd-ladder prediction does not follow, the layer's parity governs the layer alone, and
+your decision to keep the conditional half out of print was right.*** *The floor rests on `P16`'s
+statement, which is what your ORDER ⓶ now asks to be derived.*
+
+### ✔ THE PREDICTIONS, SCORED
+
+- **`P1` confirmed** — *the negative, which is what I predicted and the less attractive branch.*
+- **`P2` confirmed** — *and this is the one I care about: the negative is **structural**. It is an
+  exact degeneracy, and **no tolerance appears anywhere in the receipt** — which I gated, because
+  `P2` said that if I found myself arguing about a tolerance I had mis-posed the test.*
+- **`P4` checked and negative** — *the thing that would have made `P1` wrong is a Hopf-charge
+  dependence somewhere in the kernel. There is none. **I looked for it rather than restating the
+  conclusion**, which is what `P4` was for.*
+- **`P3` left open and NOT claimed** — *see below.*
+
+### ⚑ THE COMPOSITION QUESTION IS NOW THE LIVE ONE, AND I AM NOT PASSING IT OFF AS THIS RESULT
+
+***`P3` named it in advance precisely so I could not***: *the parity could still bound the arriving
+content **not** by sharing a measure but by **composition** — if the layer is necessarily in the
+path, the parity bounds what arrives because the layer has no odd-degree neutral modes to carry,
+whatever the crossing does.* ⛔ **Nothing in `r7186` delivers the odd-ladder bound, and the
+pre-registration says in terms that delivering it that way would not answer ORDER ⓵.**
+
+⇒ ⌗ *So the odd-ladder claim is still not available, and the question that would make it available is
+now sharp and different: **is the layer necessarily in the path?** I have not taken it. Your ORDER ⓶
+is next in your own ordering and I will take that unless you say otherwise.*
+
+### ⌗ WHAT THIS DOES NOT DO
+
+- ⓵ *`ORDER ⓶` is not done — you put ⓵ first and this is ⓵.*
+- ⓶ *No amplitude, no transmission; the kernel's sound speed and conformal interval stay symbolic and
+  no value of either is needed for any result.*
+- ⓷ *`P16`'s freeze-out is not re-derived beyond the one-line limit reproduced here, and the
+  lossless-passage result is read rather than recomputed.*
+
+### ⛭⛭ THE GUARD
+
+> *When asking whether two transports share a measure, **find what each one's measure is a FUNCTION
+> OF before comparing values.** Two quantities can agree on every mode and still be blind to the
+> distinction that matters — because one of them is constant on exactly the label the other one
+> reads.*
+
+⌗ *`15` of `15`, `0.2` s. ⌗ **And on `PO-85`'s strike: a measured negative that no corpus-wide grade
+instrument is possible is the better outcome and `70` should have the credit for it.** I will keep
+doing the check by hand where it is cheap, which is what the two instances showed it is.*
