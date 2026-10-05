@@ -8553,3 +8553,52 @@ one happened to be read.
 
 ⌗ `cc66.136` is untouched — its three-way refusal measurement and classifier were each measured
 directly — and so is `cc66.135`'s `$2.56$` finding. Only the coverage addendum is withdrawn.
+
+---
+
+### ⛭⛭ `cc66.140` — the `r7173` floor sentence's denominator, measured both ways
+
+**`sec:largescale` carries no occurrence of the asymptotic form**: `2^{7/3}`, `$T(k)$`, `$T(0)$` and
+`$s_{\rm tot}$` are each **zero** times in it (against 2, 1, 1, 4 in `sec:throat`). It composes exact
+constant-`$\omega$` transfer matrices over `$\lvert\Delta\eta\rvert=3.33874$` — the same segment as
+`$s_{\rm tot}=3.3387380$` — and reports exact/WKB ratios. *So `r7173`'s named worry cannot arise
+through that section; it is the section that already treats an exponential form there as an
+approximation.*
+
+**The five percentages, against both candidate denominators**, with the floor rebuilt from the
+paper's own located form `2^{7/3}k^2e^{-k s_tot}`, `k^2=L(L+2)`:
+
+| L | floor | exact | `(e−a)/a` | `(e−a)/e` | paper prints |
+|---|---|---|---|---|---|
+| 2 | 3.1936e−3 | 4.1580e−3 | **30.2** | 23.2 | **30** |
+| 4 | 9.5305e−6 | 1.1160e−5 | **17.1** | 14.6 | **17** |
+| 6 | 2.1766e−8 | 2.4380e−8 | **12.0** | 10.7 | **12** |
+| 8 | 4.3285e−11 | 4.7300e−11 | **9.3** | 8.5 | **9** |
+| 10 | 7.9010e−14 | 8.4970e−14 | **7.5** | 7.0 | **7.5** |
+
+⇒ **All five are floor-relative at the paper's own printed precision and none is the exact-relative
+reading.** The clause says *"understates … by 30 per cent"* and does not say per cent of what; at
+`L=2` the two readings are `30.0` and `23.0`. `PO-78`'s label rule, in the clause whose previous
+silence `r7173` repaired in the same revision. **The figures are right either way**, which is what
+makes it the label class rather than an arithmetic one.
+
+⌗ **`floor` now names two unrelated bounds one cross-reference apart**: `sec:throat`'s transmission
+floor (new at `r7173`, `d8062768`) and `sec:largescale`'s `low-multipole floor` (its section title
+and a `\paragraph` head, in the corpus since `r2419`, built on `$r_0$`, 19 uses).
+
+⌗ **Two over-claims of this seat's own, caught by the receipt failing before it landed** — a
+precision read off `str(30.0)` instead of the paper's printed `30`, demanding a tenth the paper never
+claimed; and a paraphrase of the `$r_0$` clause asserted as a quote. Both were asserting against a
+reformatting of the text rather than the text; both now read it, with the error left as a comment
+beside each check. *Third time this round that shape has appeared in this seat's own instrument.*
+
+⌗ Seeded papers written outside the tracked tree: reworded sentence → `rc=1` refusal; percentages
+swapped to the exact-relative reading → `rc=1`, 10 failing checks; unseeded → `rc=0`.
+
+⌗ **A third over-claim, caught by `check_prose_pins` on the full change set before it landed:**
+`n_ls_floor >= 5` — a pin on a count of matches, the class that ratchet exists for, and a proxy for
+what the adjacent check establishes by name (`\paragraph{The low-multipole floor.}` and the `$r_0$`
+clause). **Removed rather than adjudicated**: a count of a word is not the naming of a quantity, the
+name was available, so the count earned nothing and cost an adjudication. Checks 22 → 21; the count
+is still printed, not asserted on. *`check_prose_pins` returns to its 147-site baseline with 0
+unadjudicated.*

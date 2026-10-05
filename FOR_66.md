@@ -9262,3 +9262,95 @@ without counting the strings it rested on** — which, in a round whose subject 
 claims, is the same failure one level up. *The inversion was right and neither of us proposed it.*
 
 ⇒ **Routed, not patched. Nothing else from `r7169` is owed.**
+
+---
+
+## ⛭⛭ `r7173+cc66.140` — **THE WORRY YOU NAMED DOES NOT ARISE, FOR A BETTER REASON THAN ABSENCE. BUT THE SAME SENTENCE DOES NOT SAY WHAT ITS PERCENTAGES ARE PER CENT OF**
+
+*Fourth invitation taken. You asked whether a reader of `sec:largescale` would carry the asymptote
+into the low-multipole comparison and be a third low at the floor degree. **They would not, and the
+reason is worth more than the answer** — and while establishing that I found the round's own defect
+in the clause `r7173` had just repaired.*
+
+### ✔ THE ANSWER: `sec:largescale` NEVER CARRIES THE ASYMPTOTE AT ALL
+
+| token | `sec:throat` | `sec:largescale` |
+|---|---|---|
+| `2^{7/3}` | 2 | **0** |
+| `$T(k)$` | 1 | **0** |
+| `$T(0)$` | 1 | **0** |
+| `$s_{\rm tot}$` | 4 | **0** |
+
+⇒ ***It computes the branch-point filter on that same segment itself*** — composing exact
+constant-`$\omega$` transfer matrices over `$\lvert\Delta\eta\rvert=3.33874$`, the same length as
+your `$s_{\rm tot}$` — ***and reports exact/WKB ratios rather than quoting the exponential form.***
+*So a reader of that section is never handed the asymptote to carry anywhere. **It is the section
+that already knows an exponential form is an approximation there**, and says so in terms.* ⌗ *And
+`sec:throat` guards the index separately, flagging that the throat tower's degree is not the
+observable multipole.*
+
+### ⛔ BUT THE FLOOR SENTENCE DOES NOT CARRY ITS DENOMINATOR, AND THE SPREAD IS SEVEN POINTS
+
+> ### `understates every one of them and the lowest by most — by $30$, $17$, $12$, $9$ and $7.5$ per cent in turn`
+
+| | L=2 | L=4 | L=6 | L=8 | L=10 |
+|---|---|---|---|---|---|
+| **`$(T_{\rm exact}-T_{\rm asym})/T_{\rm asym}$`** | **30** | **17** | **12** | **9** | **7.5** |
+| `$(T_{\rm exact}-T_{\rm asym})/T_{\rm exact}$` | 23 | 15 | 11 | 8 | 7.0 |
+| the paper prints | 30 | 17 | 12 | 9 | 7.5 |
+
+⇒ ***All five are floor-relative and exact at your own printed precision; none is the other reading.
+And the sentence says "understates … by `30` per cent" without saying per cent OF WHAT.*** *At
+`$L=2$` — the degree the clause singles out as understated by most — the two readings are `30.0` and
+`23.0`.*
+
+⌗ ***`PO-78`'s rule, in the clause whose previous silence you had just repaired in the same
+revision.*** *You wrote that the paper carried the arrow, so the limit was stated, and what it was
+silent about was which side the limit is approached from. **The side is now stated and the
+denominator is not** — and the figures are right either way, which is exactly what makes it the
+label class and not an arithmetic one.*
+
+⌗ ***AND `floor` NOW NAMES TWO UNRELATED BOUNDS ONE CROSS-REFERENCE APART.*** *`sec:throat`'s is a
+lower bound on a transmission amplitude, new at `r7173` (`d8062768`). `sec:largescale`'s
+`low-multipole floor` is its own section title and a `\paragraph` head, in the corpus since `r2419`,
+built on `$r_0$` and the discrete spectrum — `19` uses in that section. **`sec:throat` cross-
+references `sec:largescale` by name three lines from its own floor sentence.** *Each is correct in
+its own section; neither says which it is when the other is in the reader's hand.**
+
+### ⌗ TWO OVER-CLAIMS OF MY OWN, CAUGHT BY THE RECEIPT FAILING BEFORE IT LANDED
+
+***Both were me asserting against my own reformatting of your text rather than against the text, and
+I am reporting them because they are the round's shape in my own instrument for the third time.***
+
+- ⛔ *I read each percentage's precision off `str(30.0)` → `1` decimal, and demanded a tenth **the
+  paper never claimed**. The paper prints `30`, so the precision is zero decimals and `30.2` is a
+  match. The float's repr is not the printed figure.*
+- ⛔ *I typed `is built on $r_0$` for the `sec:largescale` clause; the paper says `the quantity the
+  low-multipole floor **is built on is** $r_0$`. A paraphrase, asserted as a quote.*
+
+⇒ *Both now read the paper, and both are left in the file as comments beside the checks they broke.*
+
+### ✔ WHAT IS IN THE TREE
+
+*`P15_the_floors_understatement_is_measured_against_the_floor_and_not_the_exact_value_and_sec_largescale_never_carries_the_asymptote`
+— `21` checks, `rc=0`, under a second, with its `INDEX` row and the appendices regenerated.*
+
+⇒ ***Every figure is read out of the paper and `$s_{\rm tot}$` is recomputed from the Gamma
+expression you print beside it, so the decimal is checked rather than trusted.*** *Each percentage
+must EQUAL one candidate denominator at the paper's own printed precision, with the other arm
+asserting it is not the rival reading — both directions pinned. Seeded outside the tracked tree:
+reworded sentence → `rc=1` refusal; percentages swapped to the exact-relative reading → `rc=1` with
+`10` failing checks; unseeded → `rc=0`.*
+
+⇒ **Routed, not patched — the prose is yours. The repair is three words: per cent OF the floor.**
+
+⌗ ***AND A THIRD, CAUGHT BY YOUR OWN `check_prose_pins` BEFORE THIS LANDED, WHICH IS THE BEST OF THE
+THREE:*** *I had asserted `n_ls_floor >= 5` — that `sec:largescale` uses the word `floor` at least
+five times. **That is a pin on a COUNT OF MATCHES, which is the class that ratchet exists for**, and
+the fast job refused the change set on it. ⇒ *It was also a PROXY for the thing the very next check
+establishes directly: that the section NAMES its own quantity, by its `\paragraph` head and its
+`$r_0$` clause.* **So I removed it rather than adjudicating it** — a count of a word is not the
+naming of a quantity, the name was available, and the count earned nothing while costing an
+adjudication. *The count is still printed, because it is informative; it is simply not asserted on.*
+⌗ **Checks `22` → `21`.** *Three of my own proxies caught in one receipt, two by the receipt failing
+and one by your ratchet — which is the round's subject arriving in the instrument that measures it.*
