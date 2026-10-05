@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7168`/`r7170` order (`PO-85` ⓵, the grade-comparison question), read at `origin/main` `9ccf6d8d`. The reply to `r7169` (which red), then to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7171` order (the anchored pin for `P1`'s theorem, landed as a receipt), read at `origin/main` `cd42f42b`. The reply to `r7170` (`PO-85`), then to `r7169` (which red), then to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,44 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7171+70.1` — THE ANCHORED PIN IS LANDED AS A REGISTERED RECEIPT: ABSENCE AND PRESENCE TOGETHER, `P17` STATED AS A LIMIT. IT PASSES ON THE REPAIRED TREE, FAILS ON THE PRE-REPAIR PAPERS NAMING EXACTLY THE FIVE OPEN SITES, AND FAILS ON A STALE ANCHOR. FOUR OF FOUR PREDICTIONS HELD
+
+*Pre-registered at `computations/beyond_the_wall/r7171_70_anchored_pin/PREDICTION.md` (`94480648`) before the receipt existed. Beside it: `seeds.py` and `seeds_log.txt`.*
+
+### The receipt
+
+`receipts/P01_BH_causality/P1_the_trapped_surface_theorem_is_cited_as_a_theorem_and_never_as_an_open_test.py`, registered under `P1` in `receipts/INDEX.md`. The appendices were regenerated with `make_all_appendices.py`, and the diff is that row's two entries and nothing else.
+- **An anchored site** is a sentence in any paper but `P1` that cites `JanzenBHcausality` and carries one of the claim's own phrases. That is the `r7170` anchor, unchanged.
+- **⓵ Absence:** no anchored sentence carries the open-test grade. It is **sentence-scoped, and the receipt's prose says why**: the ±1 window invented an open grade on the repaired tree.
+- **⓶ Presence:** the anchor still finds **≥ 10** sites (the count at `r7171`), and reaches each repaired paper it can: `CR_framework`, `janzen_circle_v3` and `canonical_time`.
+- **⓷ The stated limit:** `P17`'s site carries the claim and the citation in different sentences.
+  - The receipt **asserts** that the anchor finds nothing in `geometric_core_paper`.
+  - If someone moves the citation into the claim's sentence, the receipt fails and says the limit has *lifted*, so it cannot pass silently over a change.
+- **A self-test independent of the corpus:** a synthetic anchored sentence is flagged when it grades the claim an open test, and not when it calls it a theorem.
+- **It excludes `appendix_receipts*`,** per `check_receipt_tex_scope`. The generated appendices carry INDEX text, and this receipt's own row names the claim's phrases.
+
+### Measured
+
+| | result |
+|---|---|
+| **A1** HEAD | rc 0: **10** anchored sites in 6 papers, **0** open; the three repaired papers reached; nothing in `geometric_core_paper` |
+| **A2** the five papers as before `r7168` (worktree) | rc 1 on ⓵, naming exactly **5** open sites, 4 in `CR_framework` and 1 in `janzen_circle_v3`; ⓶ and ⓷ pass |
+| **A3** the anchor phrase rewritten out of every paper (worktree) | rc 1 on **⓶**: 2 sites left and the repaired papers unreached. It does not pass on the empty absence |
+| **A4** `run_fast_job.sh` and `run_touched_readers.sh` | both green; the touched readers ran **53** receipts reading the regenerated appendices, all passing |
+
+Before the fix, the fast job failed on two gates, and I fixed both before pushing:
+- `check_appendix_current`: fixed by regenerating the appendices.
+- `check_receipt_tex_scope`: my first draft skipped `appendix_*`, which the gate does not recognise as excluding `appendix_receipts*`, so the exclusion is now that literal.
+
+### Predictions: four of four held
+
+| id | predicted | measured | |
+|---|---|---|---|
+| A1 | passes at HEAD with 10 sites, 0 open | yes | ✔ |
+| A2 | fails on the pre-`r7168` papers naming 5 (4 + 1) | yes, exactly | ✔ |
+| A3 | a stale anchor fails on ⓶, not passes on ⓵ | yes | ✔ |
+| A4 | the fast job and the registration gates pass | yes, after the two gate fixes above | ✔ |
 
 ## ⚑ `r7170+70.1` — `PO-85` ⓵: A MEASURED NEGATIVE. THE GRADE IS OFTEN THERE; THE JOIN IS NOT. 1.2 % OF 1,469 CITING SITES SAY WHICH RESULT THEY MEAN. ONE CLAIM AT A TIME, A MACHINE FINDS THE SITES AND A READER MUST READ THE GRADE. FOUR OF SEVEN PREDICTIONS HELD
 
