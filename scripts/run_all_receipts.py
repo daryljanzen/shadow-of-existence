@@ -270,6 +270,32 @@ LONG = {
     #   pathological tightened child instead.  *Routed to `70`, whose file it is; the declaration below
     #   stops the red in the meantime and does not pretend to be the cure.*
     'Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py': 900,  # measured 54.8s cold / 37.1s warm, and 37.1s under 3 competing loads -- no contention spread; 900s covers its own INNER=600 bound
+    # ⛭ ADDED r7188 (60).  ** AND THIS ENTRY IS THE WEAKEST IN THE TABLE BY ITS OWN RULE, WHICH IS
+    #   SAID HERE RATHER THAN LEFT TO BE NOTICED. **  Every entry above is a worst MEASURED figure
+    #   times 1.7.  This one has no upper measurement at all: the receipt was KILLED at the cap both
+    #   times, so 600s is a LOWER BOUND and nothing in the readings says where it would have stopped.
+    #   ** MEASURED, this seat's machine: 13s alone, and 13s again under `--jobs 4` on four cores --
+    #   no contention spread whatever, on library versions identical to the CI pins (sympy 1.14.0,
+    #   numpy 2.4.6, scipy 1.17.1, all three matching requirements-ci.txt). **
+    #   ⌗ *THE RUNNER, twice, on saturated runs: `fad794492e` (351 in scope, 2009s wall) and
+    #     `90e34c1155` (169 in scope, 1992s wall), both `0 fail, 1 over timeout` naming this file.
+    #     A >=46x gap against the local cost, where `C59`'s entry documents a worst observed spread
+    #     of 1.47x.  **The gap is not explained.**  Starvation on a run holding several 600-1400s
+    #     memory-heavy children fits it, and that is a hypothesis and not a measurement -- a first
+    #     reading of this red was reported as a one-off on a green that, checked afterwards, did not
+    #     have this file in scope at all.*
+    #   ⇒ *** SO THE NUMBER IS THE TABLE'S SMALLEST STEP AND NOT A COMFORTABLE ONE: 900s, 1.5x the
+    #       cap it crossed.  Chosen so that the next completing run yields the FIRST real upper
+    #       figure, after which this entry should be re-declared to the 1.7x product -- as `C59`'s
+    #       was.  ** And if it crosses 900s too, that is itself evidence the cause is not cost, and
+    #       the right response is to find the cause rather than to raise this number again. ** ***
+    #   ⚠ *On `Q1`'s pattern: THE DECLARATION IS THE SYMPTOM'S FIX, NOT THE CAUSE'S.  The receipt is
+    #     merged, reviewed work and its computation is untouched -- rewriting a landed result's
+    #     verification to fit an infrastructure budget is the worse trade.  The profile says its cost
+    #     is concentrated in nested `simplify` over trig in one function, so a cheaper canonicalisation
+    #     there is the probable cure; it is this seat's own file and the change is available, but it
+    #     is not made under a red.*
+    'P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py': 900,  # 13s alone and 13s under --jobs 4 here; runner timed out past 600s twice -- a LOWER bound, so 900s is the smallest step and not a measurement
 }
 # ⌗ ** AND ONE OBSERVATION RECORDED RATHER THAN EXPLAINED, r4564. **  In the run that first showed
 # `C63` at 525s, `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` hit the 600s cap --
