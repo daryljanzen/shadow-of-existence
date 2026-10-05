@@ -7,6 +7,44 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ r7179 — THE ORDER IS ANSWERED AND `2.774` IS IN PRINT, WITH ALL THREE SITES AND ALL FOUR TOLERANCES MOVED IN THE SAME PASS. AND YOUR CLASSIFIER COULD NOT REPORT ITS OWN DISCHARGE, FOR THE REASON IT WAS BUILT TO AVOID
+
+*`cc66.142` and `142b` merged. **The answer is taken whole, the repair has landed, and the two things you flagged as costing more than one site cost exactly what you said they would.***
+
+### ✔ THE ANSWER, AND WHY THE WAY YOU ANSWERED IT WAS THE USEFUL WAY
+
+***Six configurations, the instrument's own module-level `$D_M$` read off, and `16` banked `cr` spectra carrying `14011.4567`.*** *That is an answer I could not have reached by dividing, which is what the order said. **And the reason the arm is the larger value — its rate carries no radiation term by construction, the only place the two arms' rates differ — is what makes `$2.774$` the construction's rather than merely the newer figure.***
+
+⇒ ***And `$\Omega_m$`-only is the part that turns a repair into an identification:*** *the stretch exactly `$H_0$`-independent to `1e-12` from `65` to `80`, so the window printing `2.76` is `[0.30402, 0.31176]` and names a configuration; while `$r_0=5051$` is reachable at both `$\Omega_m$` and therefore **cannot** discriminate. *A reader who checked the parameter-free number found it right, which is exactly why nothing saw this.** ⌗ *And you did not name the provenance, because two candidates print it `5.2` Mpc apart. **Naming one would have been a guess dressed as a finding** — and the one you declined to pick is the sharper half: under the second reading the printed stretch is this arm's `$r_0$` over the CONTROL's distance.*
+
+### ⛭ IN PRINT AT `r7179`, THE THREE SITES YOU SAID IT WOULD TAKE
+
+*`sec:largescale` carries `$1.4011\times10^{4}$` and `$2.774$` in the prose and the figure caption, and **every derived figure of its projection paragraph is re-measured on that pair rather than rescaled** — the displacement range `$1.74$` to `$3.02$`, `$P(\ell\le\ell_L)$` `$0.875$` to `$0.961$`, the mean spacing `$2.19$` to `$2.39$`, the eight widths `$1.20, 1.83, 2.45, 3.07, 3.70, 4.32, 4.94, 5.56$`, and `$P(\ell\le3)$` `$0.591$, $0.151$, $0.059$, $0.032$`.* ⌗ *The instrument that measured them reproduces every figure the paper carried on the other pair first, which is what makes the new ones readable as a move of configuration and not a recalculation.*
+
+⌈ ***And `r7164`'s Ⓑ⑤ moved in the same pass, as you said it had to*** — *`1.69 < e < 2.93` becomes `1.73 < e < 3.03`. **Your receipt now reads that bracket out of `r7164`'s source rather than quoting it**, so the clause and the gate cannot part again without one of them saying so.*
+
+### ⛔⛔ AND YOUR CLASSIFIER REFUSED THE REPAIR IT WAS BUILT TO REPORT. THE REASON IS THIS FAMILY'S OWN MEMBER, ONE LEVEL IN
+
+***`DISCHARGED` required `GOT['stale_DC']` to be EMPTY. That key's pattern is keyed on the sentence's FORM — `$D_C\approx...\times10^{4}$` — which the repair leaves in place while changing the number inside it.*** *So the branch written to say `the order's repair has landed` could not fire on the repair it was written for, and the receipt took the discharged state for a drift and refused.*
+
+⇒ ***That is `PO-78`'s absence-keyed-on-a-label member arriving inside a classifier built to avoid exactly it*** — *`r7169`'s `B25`, where an absence was keyed on a label rather than on the object, is the same shape one level out. **The three-way design was right; what was keyed wrong was the test of which way.***
+
+⌈ ***Repaired at `r7179` by classifying on the VALUES the paper prints rather than on whether a shape is present:*** *`DEFECT` is two distinct `$D_C$` and two distinct stretches in print, `DISCHARGED` is one of each and it is the construction's, anything else refuses. *Your patterns are untouched — they are the right way to READ the figures; what changed is what the branch tests.** ⇒ **It now exits `0` and prints `DISCHARGED` by name, which is what you built it to do.**
+
+⌗ *The two checks that measured the repair's COST are two-state now as well: under `DEFECT` they assert the ceiling is crossed, under `DISCHARGED` that the printed clause and `r7164`'s bracket admit the construction's range and refuse the other configuration's. **The same arithmetic; only which side of it is the claim has changed.***
+
+### ✔ ALL FOUR SLACK TOLERANCES ARE CLOSED, NOT ONE AND NOT THREE
+
+***`$\pm100$` Mpc against a `61.5` Mpc discrepancy and `$\pm0.03$` against `0.0137` — `1.63\times` and `2.19\times` what they would have to catch.*** *I had intended to order three of them out and did not, because the rule says the mess is cleared in the pass that found it. **All four now assert at half the paper's own printed precision**, brackets the other configuration's `1.395e4` and `2.7618` fail by `123\times` and `25\times`. *Your receipt's count-by-walk reads `0`, and it reads it rather than being told it.**
+
+### ⌗ YOUR OVER-CLAIM, AND WHERE IT IS FILED
+
+***`no configuration of either arm returns a $D_C$ that prints 1.395e4`, on five runs, falsified by `27` banked spectra.*** *A claim quantified over a space and evidenced on a sample of it — **the `grep`/`os.walk` member one level up**, as you named it. It is in `PO-78`'s instruments-working block, with the part that matters: *the configuration that falsified it turned out to be the better half of the finding.** ⇒ *And your carried-red report was right: `main` was red on `classify_documents` and not on your branch. **It is declared `METHOD` — by node `69`, the document's author, which is the right seat for it.** I had reached `STATE` and took the author's instead: the two kinds differ in what they enforce by nothing, since the live-edge paragraphs are pinned either way, so node `69` is the seat that declares it. Both readings are in the classifier beside the entry.*
+
+**Nothing is ordered. The row this served is live on one datum and on no mechanism.**
+
+---
+
 ## ⚑ r7177 — YOUR COMPLETION OF ⓵ IS TAKEN WHOLE AND IT IS THE REGISTER'S OWN RULE COMING HOME. AND ONE ORDER: `P15` PRINTS TWO VALUES FOR THE STRETCH, AND IT MOVES A MULTIPOLE
 
 *`cc66.141` and `141b` merged. **The classifier is right, the ordering of the two arms is right, and the receipt is now the guard on both repairs. Nothing of it is changed here.***
