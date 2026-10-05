@@ -183,7 +183,14 @@ for lab, b in B.items():
     print(f"      {lab}:  x_0 = {b['x0']:.4f}  alpha = {b['alpha']:8.2f}  r_N = {b['rN']:8.2f}  "
           f"r_0 = {b['r0']:8.2f}  r_s = {b['rsch']:8.2f}  D_C = {b['DC']:9.2f} Mpc")
 gate("⛭ the layer's areal radius comes out at `r_0 = 5051` Mpc, `P15`'s own figure, and the stretch "
-     "at 2.774", abs(ref['r0'] - 5051.0) < 5.0
+  # ** r7181: the pin is `+-1.0` and not `+-5` (node 70's `r7179+70.1` slack finding) nor the
+  #   printed-precision `+-0.5` its operator proposes.  The background returns `5051.49`, which is
+  #   `0.49` from the figure the paper prints, so a half-ulp bracket would sit `0.01` inside its own
+  #   bound -- a pin on a rounding edge, which fails on any change to the integral rather than on a
+  #   change to the physics.  What this pin exists to refuse is the OTHER configuration's `r_0`,
+  #   `4708.97`, and `+-1.0` refuses it by `342` times while admitting nothing the paper would
+  #   print differently by more than one in the last digit. **
+     "at 2.774", abs(ref['r0'] - 5051.0) < 1.0
      # ** r7179: half the paper's printed ulp, not 0.03 -- at 0.03 this could not fail on the
      #   quantity it names, the two printed configurations being 0.0137 apart. **
      and abs(ref['DC'] / ref['r0'] - 2.774) < 5e-4
