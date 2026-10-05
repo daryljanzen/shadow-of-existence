@@ -8635,3 +8635,91 @@ that the locator had been repaired in the same pass, so the file's pattern was t
 not this seat's — the file compared against a memory of the file. Resolved in one step by reading it.
 *A receipt that passes when its anchor moved is the one outcome not to accept on trust, and that
 instinct was right even though the alarm was not.*
+
+---
+
+## `r7177+cc66.142` — **WHICH `$D_C$` THE BACKGROUND RETURNS, RUN AT SIX CONFIGURATIONS**
+
+`ACOUSTIC_two_arm` imported, its own module-level `D_M` read off. `$r_0$` is the Nariai amplitude
+`$2^{1/3}/\sqrt\Lambda$` formed from the instrument's own `alpha` and `$x_0$`.
+
+| configuration | `$H_0$` | `$\Omega_m$` | rate | `$D_M$` (Mpc) | `$r_0$` (Mpc) | stretch | prints |
+|---|---|---|---|---|---|---|---|
+| **`cr`, the arm's own refit** | **68.60** | **0.2973** | geometric (no radiation) | **14011.4567** | **5051.49** | **2.773728** | **`1.4011e4` / `2.774`** |
+| `cr`, instrument default | 73.00 | 0.3066 | geometric | 13004.5552 | 4708.97 | 2.761656 | `1.3005e4` / `2.76` |
+| `cr`, refit, `LEAFGEOM=1` | 68.60 | 0.2973 | leaf (radiation in) | 13941.6290 | 5051.49 | 2.759905 | `1.3942e4` / `2.76` |
+| `lcdm`, control default | 67.40 | 0.3150 | radiation-included | 13864.6627 | — | — | `1.3865e4` |
+| `lcdm`, control refitted | 68.60 | 0.2973 | radiation-included | 13941.6290 | — | — | `1.3942e4` |
+| `lcdm`, control's 185-bin minimum | 67.410309 | 0.309826 | radiation-included | **13954.3535** | — | — | **`1.3954e4`** |
+
+⇒ **The arm's own background returns `1.4011e4`, so `2.774` is the construction's stretch.** The arm
+is the larger value because its rate carries no radiation term by construction — `RAD_IN_RATE` is
+`False` on `cr` and `True` on `lcdm`, the one place the two arms' rates differ.
+
+### ⛭⛭ THE STRETCH READS `$\Omega_m$` AND NOTHING ELSE
+
+| `$\Omega_m$` | stretch at `$H_0=65$` | `68.6` | `73` | `80` |
+|---|---|---|---|---|
+| 0.2973 | 2.773728739 | 2.773728739 | 2.773728739 | 2.773728739 |
+| 0.3066 | 2.761656596 | 2.761656596 | 2.761656596 | 2.761656596 |
+| 0.3150 | 2.750837421 | 2.750837421 | 2.750837421 | 2.750837421 |
+
+**Identical to `1e-12` across a 15 km/s/Mpc span**, because `$r_0$` and `$D_C$` both scale as
+`$c/H_0$`. So the `$\Omega_m$` window that prints `2.76` is a hard statement: **`[0.30402,
+0.31176]`** — containing the arm's pre-refit `0.3066`, excluding the refit's `0.2973` and the
+control's `0.3150`.
+
+### ⛭⛭⛭ AND `$r_0=5051$` CANNOT SEE THE DIFFERENCE
+
+| pinning `$r_0=5051$` at | needs `$H_0$` | gives `$D_C$` | prints |
+|---|---|---|---|
+| `$\Omega_m=0.3066$` | 68.0568 | 13949.13 | **`1.3949e4` → `1.395e4`** |
+| `$\Omega_m=0.2973$` | 68.6066 | 14010.10 | `1.4010e4` |
+
+⇒ **The one number the sentence calls `fixed parameter-free by $\Lambda$` is `5051` in both.** Only
+the stretch discriminates, and the paper prints two of those.
+
+### ⛔ TWO CANDIDATES FOR THE STALE PAIR, AND THE FIGURES DO NOT SEPARATE THEM
+
+| candidate | `$D_C$` | against `$r_0=5051$` | prints |
+|---|---|---|---|
+| the arm at a pre-refit `$\Omega_m$` | 13949.13 | 2.762690 | `1.395e4` / `2.76` |
+| the CONTROL at its own 185-bin minimum | 13954.3535 | 2.762690† | `1.395e4` / `2.76` |
+
+† 2.762424 against `5051.4882`. **`5.2` Mpc apart — below the paper's own four printed figures.**
+⇒ *Not named, because naming it would be a guess. The second reading is the worse one: under it the
+printed stretch is this arm's `$r_0$` over the CONTROL's comoving distance.*
+
+### ⌗ THE BANKS
+
+`185` banked `.npz` carry a stored `D_M`. **`16` `cr` spectra record `14011.4567`**; `27` record
+`13954.3535`, and **every banked value that prints `1.395e4` is on the `lcdm` arm.**
+
+### ⛔⛔ WHAT THE REPAIR COSTS, AND IT IS NOT NOTHING
+
+| quantity | stale `2.761829` | the arm's `2.773728` | paper prints |
+|---|---|---|---|
+| `$\ell_2$` | 7.8116 | 7.8453 | `7.8` — unchanged |
+| `$L=3$` modal multipole | 9 | 9 | 9 — flips to `8` only below `2.741706` |
+| displacement range | 1.6965 … **2.9213** | 1.7426 … **3.0158** | **`$1.70$ and `$2.93$`** — **crossed** |
+
+⇒ **`r7164`'s gate Ⓑ⑤ (`1.69 < e < 2.93` at every degree) passes on the stale stretch and fails on
+the construction's.** So the prose repair and that receipt's ceiling have to move in one pass.
+
+### ⛔⛔ AND WHY NO GATE SAW IT
+
+| the gate reads | discrepancy | tolerance | ratio |
+|---|---|---|---|
+| `abs(DC - 1.395e4) < 1.0e2` | 61.457 Mpc | 100 Mpc | **1.627×** |
+| `abs(STRETCH - 2.76) < 0.03` | 0.013729 | 0.03 | **2.185×** |
+
+**Four receipts rest on those two tolerances and all four are green.** Two more take the printed pair
+as their own input. ⌗ *And one of the four prints `$1.401\times10^{4}$` and `$1.395\times10^{4}$`
+side by side in its own verdict prose and calls them `four of the paper's parameter-free figures` —
+so the disagreement was already published, inside a PASS.*
+
+⌗ **One over-claim of this seat's, caught before it shipped.** The first draft asserted *no
+configuration of either arm returns a `$D_C$` that prints `1.395e4`* on the strength of five runs.
+The banks then showed `27` spectra at `13954.3535`, which prints it — the control at its own refit.
+*Five configurations is not "either arm", and the quantifier was the whole error.* Restated to what
+was measured, and the configuration that does return it is now named and run.
