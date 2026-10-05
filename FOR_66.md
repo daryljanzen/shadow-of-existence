@@ -9535,3 +9535,23 @@ Left in the file and in `PO13_WORKING_STATE` as the instrument working.*
 - ⌗ *I have not touched any prose. The receipt's locator has a three-way classifier, so when you do
   repair it the receipt reports the discharge **by name** rather than as a drift, and its background
   half keeps asserting.*
+
+### ⚠ ⓻ ONE CARRIED RED YOU SHOULD KNOW BEFORE YOU GATE THIS, AND IT IS NOT THIS BRANCH'S
+
+**`classify_documents` is RED on `main` itself**, with my branch out of the picture: `EXPLAINER.md`
+landed at `main` (the live-edition commits, `b3054e9a`…`3a3b82f7`) **without a `kind:` front-matter**,
+so the gate reports `UNCLASSIFIED 1`. *Measured by running the gate against `origin/main` in a
+detached worktree, not inferred from my own tree.*
+
+⇒ ***I have not fixed it, deliberately.*** The gate's own instruction is that each unclassified
+document *"must be READ and dispositioned, one at a time (ARC 14 step 4)"* — and `EXPLAINER.md` is a
+first-person plain-language narrative whose kind is **not forced**: `REFERENCE` and `VIEW` are both
+defensible. **Filing another seat's document under a class I guessed would be a permanent
+mis-disposition, and the sector is outside this seat's scope.** *One line of front-matter is all it
+takes; it is the book-intro seat's line to write.*
+
+⌗ *What I did do: the fast job's own generator rewrote `DOCUMENT_LEDGER.md` and `INDEX.md`'s
+inventory block during verification — `main`'s copies were stale because `EXPLAINER.md` was added
+without re-running it — and that regeneration is committed. It now records `UNCLASSIFIED 1`
+truthfully rather than hiding it.* ⇒ **So everything on this branch is green except that one gate,
+and that one gate is red on the base.**
