@@ -36,6 +36,7 @@ import glob
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'live_edition.html')
 OUT_INTRO = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'introduction.html')
+OUT_EXPL = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'explainer.html')
 OUT_FRONT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'frontier.html')
 OUT_LEDG = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'ledgers.html')
 OUT_RCPT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'receipts.html')
@@ -435,8 +436,15 @@ def md_to_html(md, matrix_slot=True, stop_at_h2=None):
             out.append('<p>' + inline(' '.join(para)) + '</p>')
             para.clear()
 
+    in_comment = False
     for line in md.split('\n'):
         st = line.strip()
+        # HTML comments are for the source, not the page: EXPLAINER.md's watch markers
+        # (corpus/check_explainer_pins.py) sit on their own lines above the paragraphs they
+        # pin, and inline() escapes '<', so without this skip they would print as text.
+        if in_comment or st.startswith('<!--'):
+            in_comment = '-->' not in st
+            continue
         if st.startswith('<figure>'):
             flush()
             in_fig = True
@@ -502,6 +510,23 @@ def main():
     print(f'  introduction: {len(md) if intro_full else 0} source chars -> '
           f'{len(intro_full)} full, {len(intro_excerpt)} excerpt')
 
+    # The plain-language explainer: the same story the eighteen papers tell,
+    # told without the formalism.  Generated from EXPLAINER.md by this same run,
+    # like the introduction, so it is a live page of the book and is edited in
+    # one place.  Its title is the source's own first heading, and the index and
+    # the page both append the one subtitle that says what it is.
+    src_e = os.path.join(ROOT, 'EXPLAINER.md')
+    expl_full, expl_title, expl_excerpt = '', '', ''
+    if os.path.exists(src_e):
+        md_e = open(src_e, encoding='utf-8', errors='replace').read()
+        mt = re.search(r'(?m)^# (.+)$', md_e)
+        expl_title = mt.group(1).strip() if mt else 'The explainer'
+        expl_full = md_to_html(md_e, matrix_slot=False)
+        # The index shows the opening, everything before the first section.
+        expl_excerpt = md_to_html(md_e.split('\n## ', 1)[0], matrix_slot=False)
+    EXPL_SUB = 'A Plain Language Explainer of This Cosmology'
+    print(f'  explainer: {len(expl_full)} chars of HTML from EXPLAINER.md')
+
     rows, n_abs = [], 0
     for num, t, url, stem in papers:
         head, _, tail = t.partition(':')
@@ -525,6 +550,21 @@ def main():
                 f'    <li><span class="pn">{num}</span>'
                 f'<span class="ti"><b>{head.strip()}</b>{sub}</span>{link}</li>')
     paper_list = '\n'.join(rows)
+
+    expl_row = ''
+    if expl_full:
+        expl_row = (
+            '    <li><details><summary><span class="pn">PLAIN</span>'
+            '<span class="ti"><b>' + expl_title + ': ' + EXPL_SUB + '</b>'
+            '<span class="sub">the whole picture told without the formalism: '
+            'where the universe comes from, what crosses its beginning, why it '
+            'speeds up when it does, and what it says about matter</span></span>'
+            '</summary><div class="abs">' + expl_excerpt +
+            '<p class="more"><a href="' + PAGES.rstrip('/') +
+            '/explainer.html">Read more \u2192</a></p></div></details>'
+            '<span class="two"><a href="' + PAGES.rstrip('/') +
+            '/explainer.html">READ</a><a href="' + PDF_BASE +
+            '/explainer.pdf">PDF</a></span></li>')
 
     html = rf"""<!DOCTYPE html>
 <html lang="en">
@@ -612,9 +652,10 @@ this page.</p>
 
 <p class="note">Click any entry to open it. Chapters link to the paper itself.</p>
 <ul class="papers">
+{expl_row}
     <li><details id="introbox"><summary><span class="pn">INTRO</span>
-      <span class="ti"><b>Introduction</b><span class="sub">what the programme is,
-      the eighteen chapters and how they depend on one another, where to come in,
+      <span class="ti"><b>Introduction</b><span class="sub">a map for reading the corpus
+      proper: what the programme is, the eighteen chapters and how they depend on one another, where to come in,
       and at what weight each claim is held</span></span></summary>
       <div class="intro">{intro_excerpt}
       <p class="more"><a href="{PAGES}/introduction.html">Read more →</a></p></div>
@@ -726,6 +767,35 @@ const PAGES_URL = '{PAGES}';
     with open(OUT_INTRO, 'w', encoding='utf-8') as fh:
         fh.write(intro_page)
 
+    if expl_full:
+        print_css = (
+            '.expl { padding-left:0; font-size:1.04rem; line-height:1.7 } '
+            '.expl h3 { font-size:1.3rem; margin:2.6rem 0 .7rem; font-weight:600 } '
+            '.expl p { margin:0 0 1.05rem } '
+            '@media print { .noprint { display:none } body { background:#fff } '
+            '.wrap { max-width:none; padding:0 } '
+            'h2 { break-after:avoid } p { orphans:3; widows:3 } '
+            '@page { margin:22mm 20mm } }')
+        expl_page = (
+            '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">' + _TAG + '\n'
+            '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+            '<title>' + expl_title + ': ' + EXPL_SUB + '</title>\n'
+            '<style>' + css + print_css + '</style>\n</head>\n<body>\n<div class="wrap">\n'
+            '<p class="note noprint"><a href="' + PAGES.rstrip('/') + '/live_edition.html">\u2190 The '
+            'Shadow of Existence</a> \u00b7 <a href="' + PDF_BASE + '/explainer.pdf">PDF</a></p>\n'
+            '<h1>' + expl_title + '</h1>\n'
+            '<p class="lede">' + EXPL_SUB + '</p>\n'
+            '<p class="note">Daryl Janzen</p>\n'
+            '<div class="intro expl">\n' + expl_full + '\n</div>\n'
+            '<footer>A live page of <i>The Shadow of Existence</i>, revised as the '
+            'work is. The eighteen papers it draws on are at '
+            '<a href="https://shadow.cosmicave.org">shadow.cosmicave.org</a>; '
+            '<a href="https://github.com/daryljanzen/shadow-of-existence">source</a>.'
+            '</footer>\n</div>\n</body>\n</html>\n')
+        with open(OUT_EXPL, 'w', encoding='utf-8') as fh:
+            fh.write(expl_page)
+        print(f'  explainer.html written: {len(expl_page)} bytes.')
+
     # The frontier gets a page too, for the same reason: a reader following
     # "Read more" should land on a page of the book, never on a markdown file.
     fr = frontier_rows()
@@ -829,8 +899,8 @@ const PAGES_URL = '{PAGES}';
     # book and missing from the sitemap.
     import datetime
     today = datetime.date.today().isoformat()
-    pages = ['', 'introduction.html', 'frontier.html', 'ledgers.html',
-             'receipts.html']
+    pages = ['', 'introduction.html', 'explainer.html', 'frontier.html',
+             'ledgers.html', 'receipts.html']
     pages += ['paper_%s.html' % num for num, _t, _u, _s in papers]
     urls = []
     for rel in pages:
