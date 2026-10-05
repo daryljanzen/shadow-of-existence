@@ -270,6 +270,63 @@ LONG = {
     #   pathological tightened child instead.  *Routed to `70`, whose file it is; the declaration below
     #   stops the red in the meantime and does not pretend to be the cure.*
     'Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py': 900,  # measured 54.8s cold / 37.1s warm, and 37.1s under 3 competing loads -- no contention spread; 900s covers its own INNER=600 bound
+    # ⛭ ADDED r7188 (60).  ** AND THIS ENTRY IS THE WEAKEST IN THE TABLE BY ITS OWN RULE, WHICH IS
+    #   SAID HERE RATHER THAN LEFT TO BE NOTICED. **  Every entry above is a worst MEASURED figure
+    #   times 1.7.  This one has no upper measurement at all: the receipt was KILLED at the cap both
+    #   times, so 600s is a LOWER BOUND and nothing in the readings says where it would have stopped.
+    #   ** MEASURED, this seat's machine: 13s alone, and 13s again under `--jobs 4` on four cores --
+    #   no contention spread whatever, on library versions identical to the CI pins (sympy 1.14.0,
+    #   numpy 2.4.6, scipy 1.17.1, all three matching requirements-ci.txt). **
+    #   ⌗ *THE RUNNER, twice, on saturated runs: `fad794492e` (351 in scope, 2009s wall) and
+    #     `90e34c1155` (169 in scope, 1992s wall), both `0 fail, 1 over timeout` naming this file.
+    #     A >=46x gap against the local cost, where `C59`'s entry documents a worst observed spread
+    #     of 1.47x.  **At the time this entry was written the gap was UNEXPLAINED** and starvation on
+    #     a run holding several 600-1400s memory-heavy children was offered as a hypothesis and not a
+    #     measurement -- a first reading of this red having been reported as a one-off on a green
+    #     that, checked afterwards, did not have this file in scope at all.  *The block below
+    #     supersedes that: it is explained now, and by a measurement rather than by the hypothesis.*
+    #   ⇒ *** SO THE NUMBER IS THE TABLE'S SMALLEST STEP AND NOT A COMFORTABLE ONE: 900s, 1.5x the
+    #       cap it crossed.  Chosen so that the next completing run yields the FIRST real upper
+    #       figure, after which this entry should be re-declared to the 1.7x product -- as `C59`'s
+    #       was.  ** And if it crosses 900s too, that is itself evidence the cause is not cost, and
+    #       the right response is to find the cause rather than to raise this number again. ** ***
+    #   ⛭ ** FIRST COMPLETING RUN, r7188+60, AND IT DISCHARGES THIS ENTRY'S OWN RE-DECLARATION
+    #     DUTY WITH A RESULT THE DUTY DID NOT ANTICIPATE. **  At `9d8cdbe122` the scoped job came
+    #     back `0 over timeout` with this budget in force -- so the receipt DOES finish -- and it is
+    #     absent from the run's five slowest, the fifth of which is `243`s.  ** So one runner reading
+    #     is under 243s where two earlier ones were over 600s, on the same runner class and the same
+    #     pinned versions. **
+    #     ⇒ *THE SPREAD IS THE FINDING, NOT THE MEAN: <243s against >600s is at least 2.5x on the
+    #       runner alone, where this machine shows 1.0x across four concurrent copies.  The rule's
+    #       1.7x product on the completing reading would give 600s -- the default this file twice
+    #       crossed -- so ** lowering it to the product would reinstate the red **.  The budget has to
+    #       cover the variance and not the measurement, which is the one case the 1.7x rule does not
+    #       describe.*
+    #     ⌗ ** 900s THEREFORE STANDS, now on an upper measurement rather than a lower bound, and the
+    #       stop condition below is UNSPENT: it has not been crossed. **  *A later seat wanting to
+    #       tighten this needs the distribution and not another single reading.*
+    #   ⛭⛭ ** AND THE GAP IS NOW EXPLAINED, BY A MEASUREMENT THE INSTRUMENTS FORCED OUT OF THIS
+    #     RECEIPT. **  *The first version of the accompanying receipt asserted wall-clock ratios.  That
+    #     was a design error -- a timing moves between builds, so the tolerance sweep flagged it, and
+    #     the subprocess runs die under the read trace -- and the gates were removed.  **But on the
+    #     one runner that ran them before removal, at `98d11b2d6b`, they measured it: `15`s alone
+    #     against `112`s for four concurrent copies of the same file.** *
+    #     ⇒ *** A `7.5x` CONTENTION SPREAD ON THE RUNNER, where this machine shows `1.0x` across the
+    #         same four copies.  That is the missing factor: against a `~13`s base, four-way
+    #         contention of that size on a run also holding several 600-1400s memory-heavy children
+    #         makes the >600s excursions ordinary rather than anomalous. ***
+    #     ⌗ *So `C59`'s `1.47x` is the spread of ONE heavy receipt measured alone-to-runner; it is not
+    #       the spread a light receipt sees under four-way contention, and this entry is the first in
+    #       the table to have that figure.  **The `46x` first reported as unexplained was the
+    #       composition of a `7.5x` scheduler effect with a short base -- recorded here because the
+    #       earlier claim that it was unexplained is now false.***
+    #   ⚠ *On `Q1`'s pattern: THE DECLARATION IS THE SYMPTOM'S FIX, NOT THE CAUSE'S.  The receipt is
+    #     merged, reviewed work and its computation is untouched -- rewriting a landed result's
+    #     verification to fit an infrastructure budget is the worse trade.  The profile says its cost
+    #     is concentrated in nested `simplify` over trig in one function, so a cheaper canonicalisation
+    #     there is the probable cure; it is this seat's own file and the change is available, but it
+    #     is not made under a red.*
+    'P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py': 900,  # 13s alone and 13s under --jobs 4 here; runner timed out past 600s twice -- a LOWER bound, so 900s is the smallest step and not a measurement
 }
 # ⌗ ** AND ONE OBSERVATION RECORDED RATHER THAN EXPLAINED, r4564. **  In the run that first showed
 # `C63` at 525s, `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` hit the 600s cap --

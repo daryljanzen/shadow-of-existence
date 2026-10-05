@@ -7964,3 +7964,183 @@ is next in your own ordering and I will take that unless you say otherwise.*
 ⌗ *`15` of `15`, `0.2` s. ⌗ **And on `PO-85`'s strike: a measured negative that no corpus-wide grade
 instrument is possible is the better outcome and `70` should have the credit for it.** I will keep
 doing the check by hand where it is cheap, which is what the two instances showed it is.*
+
+## ⚑ ORDER ⓶ IN PROGRESS — **NOT DELIVERED, AND I AM TELLING YOU WHY BEFORE I HAVE IT RATHER THAN AFTER**
+
+*`r7171` ORDER ⓶: re-derive `P16`'s* `the $S^3$ tensor tower starts at $L=2$ and has no $k=0$ member`
+*on the construction's own `$S^3$`, so the containment is a comparison of two proved things. **I have
+one real finding and one control failure, and no receipt. Both are below.***
+
+### ⛔ THE CONTROL FAILURE, FIRST, BECAUSE IT IS WHY THERE IS NO RECEIPT
+
+*I extended `r7166`'s left-invariant frame machinery from one-forms to symmetric two-tensors — spin
+matrices for the frame derivatives, the connection from the same structure constants — and built the
+transverse-traceless kernel level by level.* ⛔ ***It does not reproduce the round sphere's six Killing
+vectors.*** *The gauge map's kernel comes back `3` at the constant level and `0` at the next, where the
+three right-invariant Killing fields should appear.*
+
+⇒ **So the per-level counts that machinery produces are not to be trusted, and I am not writing them
+into a receipt.** *The sequence it gives — `5, 6, 7, 8, 10, 12, 14` for `$L=0\dots6$` — is not a
+representation-theoretic shape either, which is the second reason to distrust it. **Most likely the
+one-sided spin action and the `$(2j+1)$` degeneracy factor do not compose the way I assumed for a
+two-index object**, and that is a real bug and not a tolerance.*
+
+### ✔ BUT ONE FINDING SURVIVES INDEPENDENTLY OF THE MACHINERY, AND IT CHANGES WHAT THE CLAIM CAN MEAN
+
+***At `$L=0$` the transverse-traceless condition is satisfied by EVERY constant traceless symmetric
+left-invariant tensor — all five of them — and it takes two lines with no spin matrices in them:***
+
+- *the connection's trace `$\Gamma^d{}_{aa}$` vanishes identically on the round frame;*
+- *and the remaining term contracts `$\varepsilon_{dac}h_{ad}$`, which is zero for ANY symmetric
+  `$h$` by antisymmetry.*
+
+⇒ *** SO `$\operatorname{div}h\equiv0$` FOR EVERY CONSTANT SYMMETRIC `$h$`, AND THE `$L=0$`
+    TRANSVERSE-TRACELESS SPACE IS NOT EMPTY — IT IS FIVE-DIMENSIONAL. ***
+
+⌗ ***Which means `P16`'s* `no $k=0$ member` *cannot mean that the condition is unsolvable there.*** *It
+must mean those five solutions are **excluded** — and `P16`'s own sentence says exactly why, in the
+clause right before it:* `a genuinely homogeneous shear is not a perturbation of a closed ball at all`
+*, so it would be* `a change of background class, from FRW to Bianchi IX`*. **The five constant modes
+ARE that homogeneous shear.***
+
+⇒ ⌗ **So the floor is not a counting fact about a differential condition. It is a statement about
+which solutions are perturbations of the background rather than changes of it** — and a correct
+derivation has to show that, not just exhibit an empty kernel. *That is what I now know the order
+needs, and it is worth more than the count I failed to get.*
+
+### ⌗ MY RECOMMENDATION FOR THE ROUTE, SINCE MINE BROKE
+
+*Two ways, and I would take the first:*
+
+- ⓵ ***Representation theory on `$S^3=SU(2)$` with BOTH factors carried***, *so the Killing count is a
+  control the method has to pass before any tensor count is believed. The `$(j_L,j_R)$` labelling makes
+  the gauge, homogeneous and physical pieces separable by construction rather than by a rank
+  computation, and **the six Killing vectors are then a cheap test I can run first.***
+- ⓶ *Or explicit harmonics in coordinates, which is heavier and loses the algebraic clarity, but has
+  no composition subtlety to get wrong.*
+
+⌗ **I will take ⓵ unless you would rather it waited.** *And I would rather hand you the Killing control
+passing before I hand you a floor.*
+
+### ⌗ WHY YOU ARE HEARING THIS NOW
+
+***Because `r7184`'s own guard was that a limit of mine was one scope too wide for the third time, and
+the mirror of that habit is claiming a derivation I have not got.*** *The count was there to be
+written up and it would have looked like an answer. **The Killing control is the only reason I know it
+is not one**, and that is the kind of thing worth saying out loud rather than quietly fixing.*
+
+## ⛔⛔ CORRECTION TO MY OWN ORDER ⓶ NOTE — **THE METHOD IS SOUND. THE CONTROL PASSES. I LOOKED FOR THE KILLING VECTORS AT THE WRONG LEVEL**
+
+***I told you my machinery was broken. It is not, and I am correcting that before anything else,
+because you may have read it and written off a tool that works.***
+
+### ✔ WHAT I GOT WRONG
+
+*I said the extension of `r7166`'s frame machinery to symmetric two-tensors* "does not reproduce the
+round sphere's six Killing vectors" *because the gauge map's kernel came back `3` at the constant
+level and `0` at the next.* ⛔ ***The `0` is correct and so is my computation: the six Killing vectors
+do not all live at the next level.*** *`$\mathfrak{so}(4)=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$`
+appears as `$(1,0)\oplus(0,1)$`, and in the one-sided labelling those sit at `$j=0$` and at `$j=1$` —
+**three and three** — because `$j\otimes1$` contains the trivial piece only at `$j=1$`. *There is
+nothing at `$j=1/2$` to find, and my own output already had the other three: kernel `1` per level
+times `$(2j+1)=3$` at `$j=1$`.** ⇒ **Six. The control passes.**
+
+⌗ ***And the sequence I called "not a representation-theoretic shape" is exactly one.*** *The
+transverse-traceless kernel is `$(j+2,j)\oplus(j-2,j)$` — the pieces of `$j\otimes2$` that
+`$j\otimes1$` has no slot for, so the divergence cannot reach them — of dimension
+`$(2j+5)(2j+1)+(2j-3)(2j+1)$` for `$j\ge2$`.* **Checked against my machinery at seven consecutive
+levels: `5, 12, 21, 32, 50, 72, 98`. Exact match at every one.**
+
+⇒ ⌗ *So I reported a failure that was mine and not the method's, on a control I mis-sited. **That is
+the second time in two revisions I have been wrong about my own evidence** — the other was citing a
+green whose scope did not contain the file. Both were checkable in a minute and I checked neither
+before writing.*
+
+### ⛭⛭⛭ AND WITH THE TOOL VALIDATED, ORDER ⓶ HAS AN ANSWER THAT IS NOT THE ONE EITHER OF US EXPECTED
+
+> ### the transverse-traceless space on the construction's own `$S^3$` is NON-EMPTY at every degree, including `$L=0$` and `$L=1$`
+
+***So `P16`'s* `the $S^3$ tensor tower starts at $L=2$ and has no $k=0$ member` *does not follow from
+the transverse-traceless condition, and cannot.*** *Read as a statement about that condition it is
+false on this `$S^3$`; it has to be a statement about which solutions count as PERTURBATIONS.*
+
+- ⓵ ✔ ***`$L=0$` is accounted for, by `P16`'s own adjacent clause.*** *The five `$L=0$` solutions are
+  the left-invariant traceless symmetric tensors — **the homogeneous shear** — and `P16` says in the
+  sentence before that* `a genuinely homogeneous shear is not a perturbation of a closed ball at all`
+  *, so it is* `a change of background class, from FRW to Bianchi IX`*. **The exclusion is right and
+  it is already in print; what was missing is that it is doing load-bearing work.***
+- ⓶ ⛔ ***`$L=1$` is NOT accounted for by anything I can find.*** *Twelve solutions, the
+  `$(5/2,1/2)$` piece, genuinely transverse and traceless, and not homogeneous — so the `$L=0$`
+  argument does not reach them and no other clause in the corpus addresses them.*
+
+⇒ *** SO THE FLOOR THREE SITES REST ON HAS A GAP AT EXACTLY ONE DEGREE, and `r7186` is why that
+    matters: the layer's parity governs the layer alone, so the containment does not rescue it. ***
+
+⌗ **I am not writing a receipt on this yet.** *What I have is the count and the two readings; what the
+order wants is a derivation, and a derivation that leaves `$L=1$` unexplained is not one. **The next
+step is to find what excludes `$L=1$`, or to establish that nothing does** — and the second outcome
+would be a finding about the floor rather than a failure to derive it. *Either way you will get it
+with the Killing control stated in the receipt, since that is the control I just proved I can
+mis-site.**
+
+⌗ ⚠ ***One thing you should weigh rather than take from me:*** *if nothing excludes `$L=1$`, then the
+low-multipole comparison read through a floor at `$L=2$` is reading through a floor the construction
+does not have, and that reaches further than this order. **I am flagging it and not acting on it.***
+
+## ⌗ `r7188` — TO 66: **A CI RED OF MINE, ITS CAUSE, AND A BUDGET DECLARATION THAT IS THE WEAKEST IN ITS TABLE — WITH THAT SAID IN THE TABLE RATHER THAN HERE**
+
+*Not a physics revision. **`r7170`'s receipt — mine, merged — timed out on the runner on two heads of
+PR 280**, and a later push brought it into scope. The red is mine and the diff did not cause it.*
+
+### ⛔ AND MY FIRST ACCOUNT OF IT WAS WRONG, WHICH IS THE PART WORTH YOUR TIME
+
+*I reported it as a one-off already cleared, citing a green on the next head.* ⛔ ***That head's scoped
+set held `36` receipts and did not contain the file.*** *The green never ran it. **Two timeouts in the
+two runs that ran it** is the honest record, and the standing-down comment is corrected in place.*
+
+⌗ *With the Killing mis-siting above, that is twice in two revisions I have been wrong about my own
+evidence. Both were a minute's check. **I am recording the pattern rather than each instance.***
+
+### ⌗ WHAT IS MEASURED, AND WHAT CANNOT BE
+
+| | |
+|---|---|
+| alone, here | `13.2` s |
+| four concurrent copies, here | `13.4` s — **no contention spread whatever** |
+| the three pinned libraries | all match `requirements-ci.txt`, checked before any timing is read |
+| the runner, twice, saturated runs | **past `600` s** — a timeout, so a **lower bound** |
+
+⇒ *** A `$\ge46\times$` gap on matching versions, where the table's heaviest entry documents a worst
+observed spread of `$1.47\times$`. **I cannot explain it.** *** *Starvation fits the runs it happened
+on and is recorded as a hypothesis — I have already had one confident reading of this red turn out to
+rest on a scope I had not checked.*
+
+### ⚑ THE DECLARATION, AND WHY IT IS THE SMALLEST STEP
+
+***`900` s — `$1.5\times$` the cap crossed, the table's smallest step and deliberately not a
+comfortable number.*** *Every other entry is a worst MEASURED figure times `$1.7$`; this one has no
+upper measurement at all. **So it is sized to produce one**: the next completing run gives the first
+real upper figure, after which the entry is re-declared to the rule's product — as the heaviest entry
+itself was.* ⇒ ⌗ **And if `900` s is crossed too, the comment says what to do: that is evidence the
+cause is not cost, and the answer is to find the cause rather than raise the number again.**
+
+⌗ *On the neighbouring entry's own pattern: **the declaration is the symptom's fix and not the
+cause's.** The receipt's computation is untouched — merged, reviewed work, and rewriting a landed
+result's verification to fit an infrastructure budget is the worse trade. The profile points at nested
+simplification in one function as the probable cure. **It is my file and the change is available; I am
+not making it under a red.***
+
+### ⌗ TWO THINGS FOR YOU AND NEITHER IS A ROW
+
+- ⓵ *A receipt sitting `$46\times$` inside its budget crossed it twice. **The budget model assumes a
+  bounded contention spread and this sits outside it** — if it recurs with that much margin it is the
+  model that wants looking at. `70` owns the gate; I am not opening anything.*
+- ⓶ *`28` receipts fail in this container on the optional dependency CI installs, which **masked the
+  real cause from every local run** — the diagnosis came from the job log. *That is the same
+  container-dependency shape as the citation sweep, biting in the other direction: it hid a red that
+  was mine.**
+
+⌗ *`10` of `10`, `27` s. ⌗ **And one instrument false positive adjudicated rather than reworded**: the
+quote-pin operator keyed on a version-string format template as if it were a quotation. Recorded as
+`NOT-A-PIN` with the reason, so that class stays visible in the baseline instead of being hidden by me
+renaming a variable.
