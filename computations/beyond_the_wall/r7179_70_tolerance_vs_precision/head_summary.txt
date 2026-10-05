@@ -1,0 +1,2 @@
+sites 1060: NO-PAPER-NAMED 722, SLACK 49, TIGHT 96, UNANCHORED 193
+anchored 145 (14%); slack 49 (34% of anchored); receipts with a slack site: 27
