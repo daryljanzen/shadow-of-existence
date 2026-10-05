@@ -80,8 +80,16 @@ print(BAR)
 print("  PART 1 -- ** THE FIGURES, READ OUT OF `sec:throat` **")
 print(BAR)
 
-PCT = (r"understates every one of them and the lowest by most\}---by \$([0-9.]+)\$, \$([0-9.]+)\$, "
-       r"\$([0-9.]+)\$, \$([0-9.]+)\$ and \$([0-9.]+)\$ per cent in turn")
+# ⛭ r7175: the sentence this locates was REPAIRED on this receipt's own finding, so the locator
+#   moves with it.  The repair is the three words this receipt asked for -- the denominator, now
+#   named as the asymptotic value -- and `floor` is gone from the clause, because `low-multipole
+#   floor` is `sec:largescale`'s own term and this bound is a different object.  ** The locator
+#   REQUIRES the denominator phrase, so it is a guard on the repair and not a record of the
+#   defect: drop those words again and this refuses. **  (66, under the one exception a seat has
+#   on another seat's receipt -- the edit that broke it.)
+PCT = (r"understates every one of them and the lowest by most\}---exceeding it by \$([0-9.]+)\$, "
+       r"\$([0-9.]+)\$, \$([0-9.]+)\$, \$([0-9.]+)\$ and \$([0-9.]+)\$ per cent \\emph\{of the "
+       r"asymptotic value\} in turn")
 EX = (r"the transmission is a number and not an envelope: \$([0-9.]+)\\times10\^\{-([0-9]+)\}\$, "
       r"\$([0-9.]+)\\times10\^\{-([0-9]+)\}\$, \$([0-9.]+)\\times10\^\{-([0-9]+)\}\$, "
       r"\$([0-9.]+)\\times10\^\{-([0-9]+)\}\$ and \$([0-9.]+)\\times10\^\{-([0-9]+)\}\$ "
@@ -210,7 +218,17 @@ print(f"\n  {'floor':>10}:  sec:throat {n_th_floor:>2}   sec:largescale {n_ls_fl
 check("and names it as a MULTIPOLE floor built on r_0, not a transmission bound",
       'low-multipole floor is built on is $r_0$' in LS
       and r'\paragraph{The low-multipole floor.}' in LS)
-check("while sec:throat's floor is the transmission form", 'floor on this sector' in TH)
+# ⛭ r7175: this asserted sec:throat called the transmission bound a `floor`, one cross-reference
+#   from sec:largescale's own `low-multipole floor`.  ** The collision is REPAIRED: sec:throat
+#   now says `a lower bound on this sector's transmission`, and `floor on this sector` is gone. **
+#   So the assertion is inverted to guard the repair -- the old phrase must be ABSENT, and the
+#   new one present -- which is this receipt's own finding arriving in the paper.  (66, under the
+#   exception for the edit that broke it.)
+check("and sec:throat no longer calls the transmission bound a floor: `floor on this sector` is "
+      "GONE and `lower bound on this sector's transmission` is in its place, so the two senses "
+      "no longer collide",
+      'floor on this sector' not in TH
+      and "lower bound on this sector's transmission" in TH)
 check("and sec:throat cross-references sec:largescale by name, so the two sit one reference apart",
       r'\S\ref{sec:largescale}' in TH or r'\ref{sec:largescale}' in TH)
 check("sec:largescale computes the filter on that segment itself rather than quoting the form",
@@ -227,14 +245,22 @@ print(f"""
   segment and reports exact/WKB ratios.  *A reader of that section is never handed the asymptote to
   carry, and `sec:throat` guards the index separately.*
 
-  ⛔ ** WHAT THE SAME SENTENCE DOES LEAVE OPEN IS ITS OWN DENOMINATOR. **  The five percentages are
-  floor-relative, exactly; read as fractions of the exact value they are {', '.join('%.1f' % r[5] for r in ROWS)}.
-  *`PO-78`'s rule, in the clause whose previous silence `r7173` had just repaired: the side the limit
-  is approached from is now stated and the quantity the percentage is of is not.*
+  ⛔ ** WHAT THE SAME SENTENCE LEFT OPEN WAS ITS OWN DENOMINATOR, AND IT IS NAMED IN PRINT AT
+  `r7175`. **  The five percentages are floor-relative, exactly; read as fractions of the exact value
+  they would be {', '.join('%.1f' % r[5] for r in ROWS)}, and at the degree the clause singles out the two
+  readings are seven points apart.  *`PO-78`'s rule, in the clause whose previous silence `r7173` had
+  just repaired: the side the limit was approached from was stated and the quantity the percentage was
+  of was not.*  ⇒ ** The clause now reads `exceeding it by ... per cent OF THE ASYMPTOTIC VALUE`, and
+  the locator above REQUIRES those words, so this receipt is a guard on the repair rather than a
+  record of the defect. **
 
-  ⌗ ** AND `floor` NOW NAMES TWO UNRELATED BOUNDS ONE CROSS-REFERENCE APART **, the transmission one
-  new at `r7173` and the multipole one in the corpus since `r2419`.  *Both are correct in their own
-  section; neither says which it is when the other is in the reader's hand.*""")
+  ⌗ ** AND `floor` HAD NAMED TWO UNRELATED BOUNDS ONE CROSS-REFERENCE APART **, the transmission one
+  new at `r7173` and the multipole one in the corpus since `r2419`.  *Both were correct in their own
+  section; neither said which it was when the other was in the reader's hand.*  ⇒ ** Repaired the
+  same way, by giving the newer object its own words: `sec:throat` now says `a lower bound on this
+  sector's transmission`, `floor on this sector` is gone, and the check above asserts both halves --
+  the old phrase ABSENT and the new one PRESENT. **  *So `floor` in `P15` means the multipole floor
+  again, which is `sec:largescale`'s own term and the older one.*""")
 
 print(BAR)
 if fail:
