@@ -152,7 +152,14 @@ for lab, b in B.items():
           f"r_0 = {b['r0']:7.1f}  D_C = {b['DC']:8.1f} Mpc")
 ref = B['the refit background `P15` fits']
 gate("⛭ the layer's areal radius comes out at `r_0 = 5051` Mpc, which is `P15`'s own parameter-free "
-     "figure", abs(ref['r0'] - 5051.0) < 5.0 and "r_0\\approx5051" in body15)
+  # ** r7181: the pin is `+-1.0` and not `+-5` (node 70's `r7179+70.1` slack finding) nor the
+  #   printed-precision `+-0.5` its operator proposes.  The background returns `5051.49`, which is
+  #   `0.49` from the figure the paper prints, so a half-ulp bracket would sit `0.01` inside its own
+  #   bound -- a pin on a rounding edge, which fails on any change to the integral rather than on a
+  #   change to the physics.  What this pin exists to refuse is the OTHER configuration's `r_0`,
+  #   `4708.97`, and `+-1.0` refuses it by `342` times while admitting nothing the paper would
+  #   print differently by more than one in the last digit. **
+     "figure", abs(ref['r0'] - 5051.0) < 1.0 and "r_0\\approx5051" in body15)
 # ** r7179 (node 66): the pair is the construction's and the tolerances are the paper's own
 #   printed precision.  At +-100 Mpc and +-0.03 these could not fail on the quantities they
 #   name: the two background configurations the corpus has printed are 61.5 Mpc and 0.0137
@@ -316,7 +323,7 @@ gate("⚠ SCOPE: no transfer is run and no spectrum computed -- every import in 
              ("os", "re", "time", "glob", "numpy", "scipy")) for ln in _imports))
 
 # --- the pinned assertions: the figures the paper prints -------------------------------------------
-assert abs(ref['r0'] - 5051.0) < 5.0, f"r_0 must be the paper's 5051 Mpc, got {ref['r0']:.1f}"
+assert abs(ref['r0'] - 5051.0) < 1.0, f"r_0 must be the paper's 5051 Mpc, got {ref['r0']:.1f}"
 assert abs(ref['DC'] - 1.4011e4) < 0.5, f"D_C must be the paper's 1.4011e4, got {ref['DC']:.1f}"
 assert abs(_stretch - 2.774) < 5e-4, f"the stretch must be the paper's 2.774, got {_stretch:.4f}"
 assert abs(_l2 - 7.8) < 0.15, f"the lowest mode must land at the paper's 7.8, got {_l2:.2f}"

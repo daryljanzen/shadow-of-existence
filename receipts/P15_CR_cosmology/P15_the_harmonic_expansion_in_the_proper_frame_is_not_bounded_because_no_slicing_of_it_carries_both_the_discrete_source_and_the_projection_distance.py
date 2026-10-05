@@ -187,7 +187,14 @@ for lab, b in B.items():
     print(f"      {lab}:  x_0 = {b['x0']:.4f}  alpha = {b['alpha']:7.1f}  r_N = {b['rN']:7.1f}  "
           f"r_0 = {b['r0']:7.1f}  r_s = {b['rsch']:7.1f}  D_C = {b['DC']:8.1f} Mpc")
 gate("⛭ the layer's areal radius comes out at `r_0 = 5051` Mpc, `P15`'s own parameter-free figure",
-     abs(ref['r0'] - 5051.0) < 5.0 and "r_0\\approx5051" in body15)
+  # ** r7181: the pin is `+-1.0` and not `+-5` (node 70's `r7179+70.1` slack finding) nor the
+  #   printed-precision `+-0.5` its operator proposes.  The background returns `5051.49`, which is
+  #   `0.49` from the figure the paper prints, so a half-ulp bracket would sit `0.01` inside its own
+  #   bound -- a pin on a rounding edge, which fails on any change to the integral rather than on a
+  #   change to the physics.  What this pin exists to refuse is the OTHER configuration's `r_0`,
+  #   `4708.97`, and `+-1.0` refuses it by `342` times while admitting nothing the paper would
+  #   print differently by more than one in the last digit. **
+     abs(ref['r0'] - 5051.0) < 1.0 and "r_0\\approx5051" in body15)
 # ** r7179 (node 66): the pair is the construction's and the tolerances are the paper's own
 #   printed precision.  At +-100 Mpc and +-0.03 these could not fail on the quantities they
 #   name: the two background configurations the corpus has printed are 61.5 Mpc and 0.0137
@@ -542,7 +549,7 @@ gate("⚠ AND THE CHARITABLE READING IS NAMED RATHER THAN SUPPRESSED: if the clo
      "FRIEDMANN READOUT's spatial section rather than `eq:proper-frame`'s layer, the physics is "
      "untouched and the citation is what needs repair -- so this receipt claims the geometry and "
      "NOT that `r_0`, `D_C`, the stretch or the comb moves",
-     abs(ref['DC'] / ref['r0'] - STRETCH) < 1e-12 and abs(ref['r0'] - 5051.0) < 5.0)
+     abs(ref['DC'] / ref['r0'] - STRETCH) < 1e-12 and abs(ref['r0'] - 5051.0) < 1.0)
 
 # ================================================== G. the verdict and the stop
 head("G.  ⇒ THE VERDICT: NOT BOUNDED ON THIS CONSTRUCTION -- SAID, AND STOPPED")
