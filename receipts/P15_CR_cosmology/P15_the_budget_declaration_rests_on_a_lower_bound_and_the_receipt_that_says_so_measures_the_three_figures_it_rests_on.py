@@ -48,6 +48,7 @@ loosely and the RATIO of the two is what carries the claim of no contention spre
 """
 import os
 import re
+import importlib.util
 import subprocess
 import sys
 import time
@@ -125,26 +126,27 @@ gate(f"Ⓒ①  the declared receipt PASSES on this machine and takes {t_alone:.0
      " doing",
      r_alone.returncode == 0 and t_alone < 200)
 
-lst = os.path.join(ROOT, '.budget_probe_list.txt')
-with open(lst, 'w', encoding='utf-8') as fh:
-    fh.write(f"receipts/P15_CR_cosmology/{TARGET}\n")
-try:
-    t1 = time.time()
-    r_j4 = subprocess.run([sys.executable, RUNNER, '--from', lst, '--jobs', '4',
-                           '--timeout', '900'], cwd=ROOT, capture_output=True, text=True,
-                          timeout=1500)
-    t_j4 = time.time() - t1
-finally:
-    os.remove(lst)
-m = re.search(r'(\d+) pass, (\d+) fail, (\d+) over timeout', r_j4.stdout)
-print(f"    under --jobs 4: {m.group(0) if m else 'no verdict'}, {t_j4:.1f}s wall")
-gate("Ⓒ②  and it passes under the runner at `--jobs 4` as well, with zero over timeout -- the"
-     " declaration is picked up and the receipt finishes inside it",
-     m is not None and m.group(2) == '0' and m.group(3) == '0')
+# four concurrent copies of the SAME receipt -- contention isolated from runner overhead,
+# which is what the claim is about.  The runner's own tree digest is not timed here on purpose:
+# it is a fixed cost of the harness and not of the receipt.
+import concurrent.futures as _cf
 
-gate("Ⓒ③  AND THE TWO FIGURES ARE THE SAME TO WITHIN A FACTOR OF THREE, which is the claim of NO"
-     " CONTENTION SPREAD on this machine -- the ratio and not the absolute seconds, because wall"
-     f" clock is machine-dependent: {t_alone:.0f}s alone against {t_j4:.0f}s through the runner",
+t1 = time.time()
+with _cf.ThreadPoolExecutor(max_workers=4) as ex:
+    def _one():
+        return subprocess.run([sys.executable, tgt], cwd=os.path.dirname(tgt),
+                              capture_output=True, text=True, timeout=900)
+    futs = [ex.submit(_one) for _ in range(4)]
+    outs = [f.result() for f in futs]
+t_j4 = time.time() - t1
+print(f"    4 concurrent:   exits {[o.returncode for o in outs]}, {t_j4:.1f}s wall for all four")
+gate("Ⓒ②  and four concurrent copies all PASS, so the receipt is not order-dependent or"
+     " resource-fragile in a way a single run would hide",
+     all(o.returncode == 0 for o in outs) and len(outs) == 4)
+
+gate("Ⓒ③  AND THE WALL TIME FOR FOUR AT ONCE IS WITHIN A FACTOR OF THREE OF ONE ALONE, which is the"
+     " claim of NO CONTENTION SPREAD on this machine -- the ratio and not the absolute seconds,"
+     f" because wall clock is machine-dependent: {t_alone:.0f}s alone against {t_j4:.0f}s for four",
      t_j4 < 3 * max(t_alone, 5.0))
 
 gate("Ⓒ④  ⇒ so the figure this machine can measure is tens of seconds and the runner's readings were"
@@ -152,9 +154,15 @@ gate("Ⓒ④  ⇒ so the figure this machine can measure is tens of seconds and 
      " receipt records and does NOT explain",
      t_alone < 200 and 600 / max(t_alone, 1.0) > 3)
 
-gate("Ⓒ⑤  and the declaration is visible in the runner's own output, so the budget a later run uses"
-     " is the one documented here rather than an inherited default",
-     'DECLARED LONG' in r_j4.stdout and TARGET in r_j4.stdout and '900s' in r_j4.stdout)
+_spec = importlib.util.spec_from_file_location('_runner', RUNNER)
+_mod = importlib.util.module_from_spec(_spec)
+sys.modules['_runner'] = _mod
+_spec.loader.exec_module(_mod)
+gate("Ⓒ⑤  and the budget in force is read from the runner's own LONG table by IMPORT rather than from"
+     " this receipt's text -- 900s, against a 600s default -- so what is gated here is the number a"
+     " later run will actually use",
+     _mod.LONG.get(TARGET) == 900 and 900 > 600
+     and len([k for k, v in _mod.LONG.items() if v == 900]) >= 2)
 
 # ------------------------------------------------------------- verdict
 head("VERDICT")

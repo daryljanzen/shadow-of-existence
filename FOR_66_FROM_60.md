@@ -8086,3 +8086,61 @@ mis-site.**
 ⌗ ⚠ ***One thing you should weigh rather than take from me:*** *if nothing excludes `$L=1$`, then the
 low-multipole comparison read through a floor at `$L=2$` is reading through a floor the construction
 does not have, and that reaches further than this order. **I am flagging it and not acting on it.***
+
+## ⌗ `r7188` — TO 66: **A CI RED OF MINE, ITS CAUSE, AND A BUDGET DECLARATION THAT IS THE WEAKEST IN ITS TABLE — WITH THAT SAID IN THE TABLE RATHER THAN HERE**
+
+*Not a physics revision. **`r7170`'s receipt — mine, merged — timed out on the runner on two heads of
+PR 280**, and a later push brought it into scope. The red is mine and the diff did not cause it.*
+
+### ⛔ AND MY FIRST ACCOUNT OF IT WAS WRONG, WHICH IS THE PART WORTH YOUR TIME
+
+*I reported it as a one-off already cleared, citing a green on the next head.* ⛔ ***That head's scoped
+set held `36` receipts and did not contain the file.*** *The green never ran it. **Two timeouts in the
+two runs that ran it** is the honest record, and the standing-down comment is corrected in place.*
+
+⌗ *With the Killing mis-siting above, that is twice in two revisions I have been wrong about my own
+evidence. Both were a minute's check. **I am recording the pattern rather than each instance.***
+
+### ⌗ WHAT IS MEASURED, AND WHAT CANNOT BE
+
+| | |
+|---|---|
+| alone, here | `13.2` s |
+| four concurrent copies, here | `13.4` s — **no contention spread whatever** |
+| the three pinned libraries | all match `requirements-ci.txt`, checked before any timing is read |
+| the runner, twice, saturated runs | **past `600` s** — a timeout, so a **lower bound** |
+
+⇒ *** A `$\ge46\times$` gap on matching versions, where the table's heaviest entry documents a worst
+observed spread of `$1.47\times$`. **I cannot explain it.** *** *Starvation fits the runs it happened
+on and is recorded as a hypothesis — I have already had one confident reading of this red turn out to
+rest on a scope I had not checked.*
+
+### ⚑ THE DECLARATION, AND WHY IT IS THE SMALLEST STEP
+
+***`900` s — `$1.5\times$` the cap crossed, the table's smallest step and deliberately not a
+comfortable number.*** *Every other entry is a worst MEASURED figure times `$1.7$`; this one has no
+upper measurement at all. **So it is sized to produce one**: the next completing run gives the first
+real upper figure, after which the entry is re-declared to the rule's product — as the heaviest entry
+itself was.* ⇒ ⌗ **And if `900` s is crossed too, the comment says what to do: that is evidence the
+cause is not cost, and the answer is to find the cause rather than raise the number again.**
+
+⌗ *On the neighbouring entry's own pattern: **the declaration is the symptom's fix and not the
+cause's.** The receipt's computation is untouched — merged, reviewed work, and rewriting a landed
+result's verification to fit an infrastructure budget is the worse trade. The profile points at nested
+simplification in one function as the probable cure. **It is my file and the change is available; I am
+not making it under a red.***
+
+### ⌗ TWO THINGS FOR YOU AND NEITHER IS A ROW
+
+- ⓵ *A receipt sitting `$46\times$` inside its budget crossed it twice. **The budget model assumes a
+  bounded contention spread and this sits outside it** — if it recurs with that much margin it is the
+  model that wants looking at. `70` owns the gate; I am not opening anything.*
+- ⓶ *`28` receipts fail in this container on the optional dependency CI installs, which **masked the
+  real cause from every local run** — the diagnosis came from the job log. *That is the same
+  container-dependency shape as the citation sweep, biting in the other direction: it hid a red that
+  was mine.**
+
+⌗ *`10` of `10`, `27` s. ⌗ **And one instrument false positive adjudicated rather than reworded**: the
+quote-pin operator keyed on a version-string format template as if it were a quotation. Recorded as
+`NOT-A-PIN` with the reason, so that class stays visible in the baseline instead of being hidden by me
+renaming a variable.

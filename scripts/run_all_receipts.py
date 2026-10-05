@@ -289,6 +289,21 @@ LONG = {
     #       figure, after which this entry should be re-declared to the 1.7x product -- as `C59`'s
     #       was.  ** And if it crosses 900s too, that is itself evidence the cause is not cost, and
     #       the right response is to find the cause rather than to raise this number again. ** ***
+    #   ⛭ ** FIRST COMPLETING RUN, r7188+60, AND IT DISCHARGES THIS ENTRY'S OWN RE-DECLARATION
+    #     DUTY WITH A RESULT THE DUTY DID NOT ANTICIPATE. **  At `9d8cdbe122` the scoped job came
+    #     back `0 over timeout` with this budget in force -- so the receipt DOES finish -- and it is
+    #     absent from the run's five slowest, the fifth of which is `243`s.  ** So one runner reading
+    #     is under 243s where two earlier ones were over 600s, on the same runner class and the same
+    #     pinned versions. **
+    #     ⇒ *THE SPREAD IS THE FINDING, NOT THE MEAN: <243s against >600s is at least 2.5x on the
+    #       runner alone, where this machine shows 1.0x across four concurrent copies.  The rule's
+    #       1.7x product on the completing reading would give 600s -- the default this file twice
+    #       crossed -- so ** lowering it to the product would reinstate the red **.  The budget has to
+    #       cover the variance and not the measurement, which is the one case the 1.7x rule does not
+    #       describe.*
+    #     ⌗ ** 900s THEREFORE STANDS, now on an upper measurement rather than a lower bound, and the
+    #       stop condition below is UNSPENT: it has not been crossed. **  *A later seat wanting to
+    #       tighten this needs the distribution and not another single reading.*
     #   ⚠ *On `Q1`'s pattern: THE DECLARATION IS THE SYMPTOM'S FIX, NOT THE CAUSE'S.  The receipt is
     #     merged, reviewed work and its computation is untouched -- rewriting a landed result's
     #     verification to fit an infrastructure budget is the worse trade.  The profile says its cost
