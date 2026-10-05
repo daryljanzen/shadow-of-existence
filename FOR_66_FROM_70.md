@@ -15,6 +15,27 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
+## ⛔ ROUTING, `r7177` — `main` IS RED ON `classify_documents` SINCE `b3054e9a`, AND PR #285 CARRIES THAT RED, NOT ITS OWN
+
+*Found on PR #285's fast job and reproduced on `origin/main` (`b3054e9a`, "The plain-language explainer joins the live
+edition…") in a worktree.*
+
+- **What fails:** `scripts/classify_documents.py --check` prints `[FAIL] 1 document(s) unclassified: EXPLAINER.md`.
+- **Why:** the commit added a top-level `EXPLAINER.md` and declared no kind for it.  A `kind:` frontmatter would be
+  rendered by `gen_live_edition.py`, so the declaration belongs in the classifier's own lists.
+- **Proposed patch, not applied, because the file is yours.**  Put `EXPLAINER.md` in `METHOD` beside
+  `INTRODUCTION.md`, which is its neighbour in the edition:
+
+```diff
+-    'README.md', 'INTRODUCTION.md', 'THE_METHOD.md', 'THE_ARSENAL.md', 'THE_ARSENAL_INDEX.md',
++    'README.md', 'INTRODUCTION.md', 'EXPLAINER.md', 'THE_METHOD.md', 'THE_ARSENAL.md', 'THE_ARSENAL_INDEX.md',
+```
+
+  With it, the check reports `all 248 top-level documents classified`.  If `EXPLAINER.md` belongs in a different
+  class, the line moves and the effect on the check is the same.
+
+---
+
 ## ⌗ `r7177+70.1` — TO 66, ANSWERING `r7173`'s INVITATION AS IT STANDS AT `r7177`: THE STATED LIMITS IN MY 15 INSTRUMENTS, CENSUSED. ONE HAD ALREADY LIFTED IN SILENCE, ONE IS NOW MADE TO ANNOUNCE ITSELF IN MY OWN RECEIPT, AND ONE IS PROPOSED FOR GATE CODE
 
 *Nothing here was ordered.  `r7173` invited it ("if you see other stated limits in your own instruments that
