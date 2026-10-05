@@ -18,7 +18,7 @@ sources: [chat]
 | **SOURCE** | 1 |
 | **VIEW** | 3 |
 | **STATE** | 15 |
-| **METHOD** | 39 |
+| **METHOD** | 40 |
 | **REFERENCE** | 26 |
 | **FORWARD** | 24 |
 | **RECORD** | 96 |
@@ -41,7 +41,7 @@ sources: [chat]
 
 | document | kind | job | declared current | newest c54 in body | lag |
 |---|---|---|---|---|---|
-| `THE_REGISTER.md` | SOURCE | the lead register — the one live source of what is open | — | c54.182 | 51 |
+| `THE_REGISTER.md` | SOURCE | the lead register — the one live source of what is open | — | c54.205 | 28 |
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.233 | c54.233 | 0 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.233 | 0 |
 | `THE_FRONTIER.md` | VIEW | the open problems in dependency order — generated from THE_REGISTER, the one source | — | c54.178 | 55 |
@@ -52,7 +52,7 @@ sources: [chat]
 | `HORIZON_TRANSIT_WORKING_STATE.md` | STATE | where the horizon-to-branch-point transit stands -- worked state, held outside the corpus | — | — | never |
 | `OWED.md` | STATE | (declared in frontmatter) | — | c54.232 | 1 |
 | `PO13_RUN_SPEC_FOR_CC54.md` | STATE | what PO-13 needs run, specified for a node with compute | — | — | never |
-| `PO13_WORKING_STATE.md` | STATE | PO-13's worked state, held outside the corpus | — | c54.186 | 47 |
+| `PO13_WORKING_STATE.md` | STATE | PO-13's worked state, held outside the corpus | — | c54.205 | 28 |
 | `PO38_WORKING_NOTE.md` | STATE | PO-38's computation as run -- worked state, held outside the corpus | — | — | never |
 | `STATE_programme.md` | STATE | where the programme stands | — | c54.211 | 22 |
 | `THE_FERMION_SECTOR_GEOMETRY.md` | STATE | the fermion sector read in the geometry | — | c54.211 | 22 |
@@ -64,6 +64,7 @@ sources: [chat]
 | `CLAUDE.md` | METHOD | rules / guards / canon | — | — |  |
 | `COMPANION_SPEC.md` | METHOD | what the companion may assert, what it must refuse, and how the difference is checked | — | c54.206 |  |
 | `DISPATCHING_COWORK.md` | METHOD | rules / guards / canon | — | — |  |
+| `EXPLAINER.md` | METHOD | rules / guards / canon | — | — |  |
 | `FOUNDATIONAL_DEPENDENCY_MAP.md` | METHOD | rules / guards / canon | — | — |  |
 | `GEOMETRY_PHYSICS_TAXONOMY.md` | METHOD | rules / guards / canon | — | c54.84 |  |
 | `INGESTION.md` | METHOD | (declared in frontmatter) | — | c54.229 |  |
@@ -137,11 +138,11 @@ sources: [chat]
 | `FOR_62.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FOR_63.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FOR_64.md` | FORWARD | (declared in frontmatter) | — | — |  |
-| `FOR_66.md` | FORWARD | (declared in frontmatter) | — | c54.178 |  |
+| `FOR_66.md` | FORWARD | (declared in frontmatter) | — | c54.205 |  |
 | `FOR_66_FROM_60.md` | FORWARD | (declared in frontmatter) | — | c54.186 |  |
-| `FOR_66_FROM_70.md` | FORWARD | (declared in frontmatter) | — | c54.223 |  |
+| `FOR_66_FROM_70.md` | FORWARD | (declared in frontmatter) | — | c54.226 |  |
 | `FOR_70.md` | FORWARD | (declared in frontmatter) | — | c54.170 |  |
-| `FOR_CC66.md` | FORWARD | (declared in frontmatter) | — | c54.182 |  |
+| `FOR_CC66.md` | FORWARD | (declared in frontmatter) | — | c54.202 |  |
 | `FUNCTIONAL_ANALYSIS_LEDGER.md` | FORWARD | The functional-analysis / unitarity field-bake ledger — the field that bounced, and the one routing fact it returned. Third of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
 | `HARMONIC_ANALYSIS_LEDGER.md` | FORWARD | The harmonic-analysis field-bake ledger — what bit, what bounced, and the boundary. Second of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
 | `INVOLUTION_REAL_FORMS_LEDGER.md` | FORWARD | The involution / real-forms field-bake ledger — what bit, what bounced, and the boundary. The field `L-277`'s unclaimed-surface probe named, and the first bake not drawn from a pre-existing list. `OWED` 622. | — | — |  |

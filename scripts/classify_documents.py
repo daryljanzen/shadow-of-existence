@@ -53,6 +53,12 @@ METHOD = {
     #   the rule being that the sweep runs on the new version FIRST and the pin and the fingerprint move
     #   together.  ⚠ *Not a VIEW: nothing generates it, and its versions are measurements a seat made.*
     'requirements-ci.txt',
+    # ** EXPLAINER.md: the plain-language account, read last in the spin-up and published beside
+    #   INTRODUCTION.md.  METHOD with INTRODUCTION, since it says what the picture is rather than
+    #   what is open -- and the few paragraphs that do touch the open edge carry watch markers, held
+    #   current by corpus/check_explainer_pins.py against the register rows and paper text they
+    #   were written from.  Not a VIEW: nothing generates it. **
+    'EXPLAINER.md',
 }
 
 # ④ RECORD -- frozen by kind.  Matched by prefix/suffix as well as by name.
