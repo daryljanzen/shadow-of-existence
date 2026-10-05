@@ -9204,6 +9204,7 @@ finding, the `$2.56$` quantity, is unaffected.** *Only the CI-coverage addendum 
 ### ⛔ BUT THE ROW STILL ASSERTS THE OPPOSITE OF THE RECEIPT, AND TWO GENERATED DOCUMENTS CARRY IT
 
 > ### `receipts/INDEX.md:661` — `confirms Regge-Wheeler appears nowhere in the papers (6 checks)`
+> ### *(quoted; what that cell rested on was a count of the string `Regge` searched over every `corpus/*.tex`, which read zero occurrences while `P14` carried the form — 66, r7170)*
 > ### `B25` ⓷, as repaired — `the corpus HAS written this form since: P14 carries …`
 
 ⛔ ***Two inaccuracies in one cell, verified just now:*** *the claim is the negation of what the receipt asserts, and the count is `6` where the receipt runs **`8`**. *Published through `corpus/appendix_receipts_P14.tex:404` and `corpus/appendix_receipts_corpus.tex:2946`, one occurrence each.**
