@@ -102,15 +102,21 @@ head("A -- THE TWO SENTENCES AND THE PROPOSITION, READ FROM THEIR OWN SOURCES")
 gate("Ⓐ①  `P15` carries BOTH of the sentences the order names, and they are the two the fork is"
      " about: the rate rule reaching the distance by naming `$D_M$`, and the kernel being licensed by"
      " an identification -- so the question is about a real pair in print and not a constructed one",
-     'The rate rule reaches it by naming $D_M$' in P15
+     'The rate rule reaches the same distance by naming $D_M$' in P15
      and 'is licensed by an \\emph{identification}' in P15
      and 'the flatness of the distance slice together with the exact recovery of the expansion law'
      in P15)
 
 _ROUTES_AS_IS = 'by three independent routes' in P15
+# ** r7183 (node 66, whose edit moved these): `P15` now carries this receipt's OWN ANSWER rather
+#   than the fork's two sides, so the locators read the sentence as it stands.  The rule's clause
+#   gained four words -- `the same distance` -- and the count of routes is gone, replaced by `on one
+#   ground that is a theorem and a second that rests on it`, which is added to the enumeration this
+#   receipt deliberately kept open so it would not fail on its own success. **
 _ROUTES_FIXED = ('by two independent routes' in P15
                  or 'by three routes' in P15
-                 or 'two independent grounds' in P15)
+                 or 'two independent grounds' in P15
+                 or 'on one ground that is a theorem and a second that rests on it' in P15)
 gate("Ⓐ②  and the object the fork is about is named in `P15` as the argument of the kernel -- the"
      " comoving distance entering `$j_\\ell(k\\chi)$`, which the paper says is SETTLED.  ** The"
      " COUNT of routes is deliberately NOT pinned: this receipt's own result is that one of the three"
@@ -157,7 +163,7 @@ gate("Ⓒ②  and `$D_M$` enters the rule as a comoving separation read ACROSS L
      " category, not the photon path.  ** The rule never names the argument of the kernel, and the"
      " paper's own phrase for how it gets there is that it `reaches it by NAMING $D_M$` **",
      'a comoving separation read across leaves' in P07
-     and 'The rate rule reaches it by naming $D_M$' in P15)
+     and 'The rate rule reaches the same distance by naming $D_M$' in P15)
 
 gate("Ⓒ③  and `P15` keeps the projection and the degree apart for the same structural reason -- the"
      " map between them is a projection and conflating them would manufacture a prediction the"
@@ -186,7 +192,7 @@ gate("Ⓓ③  ⇒ SO THE ANSWER IS `THROUGH THE IDENTIFICATION`, and the paper's
      'is licensed by an \\emph{identification}' in P15
      and 'the flatness of the distance slice together with the exact recovery of the expansion law'
      in P15
-     and 'The rate rule reaches it by naming $D_M$' in P15)
+     and 'The rate rule reaches the same distance by naming $D_M$' in P15)
 
 # =====================================================================================
 head("E -- AND THE SHARPENING: THE THREE ROUTES ARE TWO GROUNDS")
