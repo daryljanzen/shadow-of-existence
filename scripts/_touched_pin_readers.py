@@ -284,6 +284,12 @@ def main():
 #   scope on. **  ⇒ *The repair is not in this gate but in the receipt -- a label quoting a paper's
 #   figure should READ that paper -- and the class `a receipt asserting a paper figure it never reads`
 #   is measurable and routed as such.*
+#   ⛭ r7177+70.1 (70, PROPOSED): ** THE INSTANCE ABOVE HAS LIFTED; THE CLASS HAS NOT. **  Since `r7153` (66)
+#   that receipt PARSES the figures from `CR_cosmology.tex`'s `sec:lowl` and `sec:transmission`, so it now
+#   names the paper and this gate scopes it like any other.  The sentence above stayed in the present tense
+#   for 24 revisions after it stopped being true -- an inert limit, the kind `P1`'s ⓷ was built not to be.
+#   ⇒ *What remains is the CLASS -- a receipt asserting a paper figure it never reads cannot be file-scoped --
+#   and its live membership is `check_unread_figure`'s to count, not this comment's to name.*
     #   ⇒ So a changed line's NUMERIC literals are matched against receipt source as well.  A number
     #   that appears coincidentally pulls in a receipt that does not depend on it, which costs runtime
     #   and not correctness -- the affordable error of the two.

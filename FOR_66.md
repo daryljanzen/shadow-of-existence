@@ -9,8 +9,8 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #283**, draft) — nothing waits on the chat window.*
-⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277 and #282 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #286**, draft) — nothing waits on the chat window.*
+⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282 and #283 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
@@ -9413,3 +9413,145 @@ outcome not to accept on trust.**
 
 ⇒ **Nothing routed. The receipt is the guard on both your repairs, and all three readings are now
 distinguishable.**
+
+---
+
+## ⛭⛭⛭ `r7177+cc66.142` — **`2.774` IS THE CONSTRUCTION'S. THE BACKGROUND RETURNS `1.4011e4` AT THIS ARM'S OWN PARAMETERS, ON THIS ARM'S OWN RATE — AND THE STALE PAIR IS A WHOLE CONFIGURATION, NOT A SLIP. BUT TWO CONFIGURATIONS PRINT IT AND THE FIGURES DO NOT SEPARATE THEM**
+
+*Answering `r7177`'s order. Receipt:
+`receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py`
+— 27 checks, `rc=0`, ~5 s. Measurements in `PO13_WORKING_STATE` `r7177+cc66.142`.*
+
+### ⓵ THE ANSWER, FROM THE INSTRUMENT AND NOT FROM A DIVISION
+
+`ACOUSTIC_two_arm` imported at six configurations, its own module-level `D_M` read off:
+
+| configuration | `$D_M$` | `$r_0$` | stretch |
+|---|---|---|---|
+| **`cr` at the arm's refit `(68.60, 0.2973)`** | **14011.4567** | **5051.49** | **2.773728** |
+| `cr` at the instrument default `(73.00, 0.3066)` | 13004.5552 | 4708.97 | 2.761656 |
+| `lcdm` control, default / refitted | 13864.6627 / 13941.6290 | — | — |
+
+⇒ ***The background returns `$1.4011\times10^{4}$`, so `$2.774$` is the construction's stretch.***
+The arm is the larger value **because its rate carries no radiation term by construction** —
+`RAD_IN_RATE` is `False` on `cr` and `True` on `lcdm`, which the instrument calls *the ONLY place the
+two arms' rates differ*. ⌗ *And the transfer's own record agrees: **16 banked `cr` spectra carry
+`D_M = 14011.4567`**, and `sec:refit-bound` reports on that pair.*
+
+### ⓶ ⛭⛭ AND THE STALE PAIR IS NOT AN ARITHMETIC SLIP — IT IS A CONFIGURATION, AND HERE IS WHY NOTHING SAW IT
+
+**The stretch is EXACTLY `$H_0$`-independent** — measured identical to `1e-12` across `$H_0 = 65$`
+to `80` at fixed `$\Omega_m$`, because `$r_0$` and `$D_C$` both scale as `$c/H_0$`. *So it reads
+`$\Omega_m$` and nothing else*, and the window that prints `2.76` is **`[0.30402, 0.31176]`** —
+containing the arm's pre-refit `0.3066`, excluding the refit's `0.2973` **and** the control's
+`0.3150`.
+
+⌈ ***And `$r_0=5051$` is reachable at BOTH `$\Omega_m$`*** — `$H_0=68.0568$` at `0.3066` and
+`$H_0=68.6066$` at `0.2973`. **So the one number `sec:largescale` calls `fixed parameter-free by
+$\Lambda$` is `5051` in both configurations and cannot discriminate them.** *Only the stretch can,
+and the paper prints two of those.* ⇒ **That is the answer to why a trio that is wrong in one entry
+reads right: a reader who checks the parameter-free number finds it right.**
+
+### ⓷ ⛔ WHERE I STOP SHORT OF YOUR QUESTION, AND IT IS DELIBERATE
+
+*You asked: "if one of them is stale, say which and from where."* ⇒ ***I can say which is stale. I
+cannot say from where, and the reason is a measurement rather than a limit of effort.***
+
+| candidate for `1.395e4` | `$D_C$` | against `5051` | prints |
+|---|---|---|---|
+| the arm at a pre-refit `$\Omega_m$` | 13949.13 | 2.7627 | `1.395e4` / `2.76` |
+| the **CONTROL** at its own 185-bin minimum (`LH0=67.410309 LOM=0.309826`) | **13954.3535** | 2.7624 | `1.395e4` / `2.76` |
+
+**`5.2` Mpc apart — below the paper's own four printed figures — and both give `2.76` against the
+arm's `5051`.** *`$\ell_2$` is `7.81` on both and the printed displacement range accommodates both,
+so no other printed figure separates them either.* ⇒ **Naming one would be a guess dressed as a
+finding, so the receipt names both and says the figures do not decide.**
+
+⌈ ***But the two readings are not equally bad, and this is the part worth your attention:*** under
+the second, the printed stretch is **this arm's `$r_0$` over the CONTROL's comoving distance** — one
+arm's discrete source projected through the other arm's distance. *`27` banked spectra carry
+`13954.3535`, and **every** banked value that prints `1.395e4` is on the `lcdm` arm.*
+
+### ⓸ ⛔⛔ THE REPAIR HAS A COST IN PRINT, AND IT IS NOT IN `sec:largescale`
+
+*You said you would not touch either site until this landed. Before you do:*
+
+| quantity | stale `2.761829` | the arm's `2.773728` | the paper prints |
+|---|---|---|---|
+| `$\ell_2$` | 7.8116 | 7.8453 | `7.8` — **unchanged** |
+| `$L=3$` modal multipole | 9 | 9 | 9 — **unchanged**, flips to `8` only below `2.741706` |
+| the displacement range | 1.6965 … **2.9213** | 1.7426 … **3.0158** | **`$1.70$ and `$2.93$`** |
+
+⇒ ***`r7164`'s gate Ⓑ⑤ — `1.69 < e < 2.93` at every degree — PASSES on the stale stretch and FAILS
+on the construction's.*** **So moving `sec:largescale` to `2.774` turns that receipt red unless its
+ceiling and the sentence that prints `$1.70$ and $2.93$` move in the same pass.** *The new range is
+`1.74` to `3.02`; the clause's own claim — a displacement of order one mode, bounded both ways and
+not growing — survives it.* ⌗ *And `r7164` takes the paper's printed `1.395e4` and `5051` as its own
+inputs, so its whole width table is on the stale configuration; the widths themselves move only in
+the fourth figure.*
+
+### ⓹ ⛔⛔ AND THE GATE-DESIGN HALF, WHICH IS WHY THIS WENT `4,758` REVISIONS
+
+| the gate reads | the discrepancy | its tolerance | ratio |
+|---|---|---|---|
+| `abs(DC - 1.395e4) < 1.0e2` | 61.457 Mpc | 100 Mpc | **1.627×** |
+| `abs(STRETCH - 2.76) < 0.03` | 0.013729 | 0.03 | **2.185×** |
+
+***Four receipts assert the computed value against the paper's printed literal at those tolerances,
+and all four are green — because neither tolerance CAN fail on the quantity it names.*** *Two more
+take the printed pair as their own input, which is a different class.*
+
+⌈ ***And the sharpest part: one of the four prints both values in its own verdict prose.***
+`P15_the_kernels_distance_...` says it reproduces *"`$r_0 = 5051$` Mpc and `$D_C =
+1.401\times10^{4}$` Mpc at `P15`'s own refit background, with the stretch `$D_C/r_0 = 2.77$` ...
+**which are four of the paper's parameter-free figures**"* — and its `INDEX` row, published through
+both appendices, reads *"`$r_0=5051$`, `$D_C=1.401\times10^{4}$`, the stretch `$2.774$` and
+`$\ell_2=7.85$` **against** `$5051$`, `$1.395\times10^{4}$`, `$2.76$` and `$7.8$`"*. ⇒ ***The two
+values have been in print side by side, in the appendix, inside a PASS, called a reproduction.***
+*The word doing the work is `reproduces`: two of the four pairs disagree beyond the paper's printed
+precision and the sentence counts all four as agreements.* ⌗ **That is `PO-78`'s shape at the
+tolerance rather than at the label — a pin whose tolerance is wider than the thing it would catch is
+a pin on nothing — and I would put it in the register in those words if you want it there.**
+
+### ⓺ ⌗ ONE OVER-CLAIM OF MINE, CAUGHT BEFORE IT SHIPPED
+
+**My first draft asserted *no configuration of either arm returns a `$D_C$` that prints
+`1.395e4`*, on the strength of five runs.** *Then the banks returned `27` spectra at `13954.3535`,
+which prints it.* ⇒ **Five configurations is not `either arm`, and the quantifier was the whole
+error** — the same shape as the `grep`/`os.walk` member, one level up: *a claim quantified over a
+space, evidenced on a sample of it.* ⌗ *Restated to what was measured, the configuration that does
+return it is now named and run as the sixth, and it turned out to be the better half of the finding.
+Left in the file and in `PO13_WORKING_STATE` as the instrument working.*
+
+### ⇒ WHAT IS YOURS NOW
+
+- **`2.774` is the construction's**, so `sec:largescale`'s `$D_C\approx1.395\times10^{4}$` (twice)
+  and `the stretch $D_C/r_0\approx2.76$` are the stale entries. *`$r_0\approx5051$` is right and
+  stays.*
+- **`$1.4011\times10^{4}$` and `2.774` are already what `sec:intro` prints**, so that site needs
+  nothing.
+- ⛔ **But `$1.70$ and $2.93$` and `r7164`'s Ⓑ⑤ move with it**, and `r7164`'s inputs are the stale
+  pair. *That is three sites in one pass, not one.*
+- ⌗ *I have not touched any prose. The receipt's locator has a three-way classifier, so when you do
+  repair it the receipt reports the discharge **by name** rather than as a drift, and its background
+  half keeps asserting.*
+
+### ⚠ ⓻ ONE CARRIED RED YOU SHOULD KNOW BEFORE YOU GATE THIS, AND IT IS NOT THIS BRANCH'S
+
+**`classify_documents` is RED on `main` itself**, with my branch out of the picture: `EXPLAINER.md`
+landed at `main` (the live-edition commits, `b3054e9a`…`3a3b82f7`) **without a `kind:` front-matter**,
+so the gate reports `UNCLASSIFIED 1`. *Measured by running the gate against `origin/main` in a
+detached worktree, not inferred from my own tree.*
+
+⇒ ***I have not fixed it, deliberately.*** The gate's own instruction is that each unclassified
+document *"must be READ and dispositioned, one at a time (ARC 14 step 4)"* — and `EXPLAINER.md` is a
+first-person plain-language narrative whose kind is **not forced**: `REFERENCE` and `VIEW` are both
+defensible. **Filing another seat's document under a class I guessed would be a permanent
+mis-disposition, and the sector is outside this seat's scope.** *One line of front-matter is all it
+takes; it is the book-intro seat's line to write.*
+
+⌗ *What I did do: the fast job's own generator rewrote `DOCUMENT_LEDGER.md` and `INDEX.md`'s
+inventory block during verification — `main`'s copies were stale because `EXPLAINER.md` was added
+without re-running it — and that regeneration is committed. It now records `UNCLASSIFIED 1`
+truthfully rather than hiding it.* ⇒ **So everything on this branch is green except that one gate,
+and that one gate is red on the base.**

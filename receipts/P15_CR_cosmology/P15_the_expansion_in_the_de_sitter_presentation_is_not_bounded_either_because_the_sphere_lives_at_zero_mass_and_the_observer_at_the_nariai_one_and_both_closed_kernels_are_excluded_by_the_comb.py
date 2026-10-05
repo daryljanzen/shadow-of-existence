@@ -161,8 +161,12 @@ for lab, bb in B.items():
     print(f"      {lab}:  alpha = {bb['alpha']:8.3f}  r_N = {bb['rN']:8.3f}  r_0 = {bb['r0']:8.3f}  "
           f"r_s(Nariai) = {bb['rsch']:8.3f}  D_C = {bb['DC']:9.2f} Mpc")
 print(f"      and the sound horizon the grid's measured comb {COMB} implies: r_s = {R_S:.3f} Mpc")
-gate("⛭ the calibration stands: `r_0 = 5051` Mpc and the stretch 2.76, the paper's own figures",
-     abs(ref['r0'] - 5051.0) < 5.0 and abs(ref['DC'] / ref['r0'] - 2.76) < 0.03
+gate("⛭ the calibration stands: `r_0 = 5051` Mpc and the stretch 2.774, the paper's own figures,"
+     " the stretch to half the precision the paper prints it at",
+     # ** r7179: 0.03 could not fail on the stretch -- the two background configurations the
+     #   corpus has printed are 0.0137 apart, so the bracket admitted both and asserted
+     #   neither.  This is the fourth and last of that set. **
+     abs(ref['r0'] - 5051.0) < 5.0 and abs(ref['DC'] / ref['r0'] - 2.774) < 5e-4
      and "r_0\\approx5051" in b15)
 gate("`sec:properframe` now states the presentation this receipt computes in, and states that the "
      "matter geodesics are the NULL bundle while the at-rest geodesics are the photons",

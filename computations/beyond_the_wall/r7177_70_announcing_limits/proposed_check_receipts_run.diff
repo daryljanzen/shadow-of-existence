@@ -1,0 +1,58 @@
+diff --git a/corpus/check_receipts_run.py b/corpus/check_receipts_run.py
+index 31006cd2..c3ad8d63 100644
+--- a/corpus/check_receipts_run.py
++++ b/corpus/check_receipts_run.py
+@@ -108,6 +108,39 @@ LAUNCH = ("cd <tree> && (setsid nohup python3 scripts/run_all_receipts.py --jobs
+           "> receipts/RUN_RESULT.txt 2>&1 < /dev/null &)")
+ 
+ 
++def unrunnable_still_needs():
++    """⛭ r7177+70.1 (70, PROPOSED): THE DECLARED LIST, MADE TO ANNOUNCE ITS OWN LIFTING.
++
++    `UNRUNNABLE` excuses a failure as ENVIRONMENT on a fact about the TREE -- that the receipt imports the
++    package -- and nothing re-checked the fact.  A receipt that drops the import stays excused by name, and
++    its next real failure is filed as the container's.  ⇒ Each entry must still exist and still import its
++    package: in its own source, or in a local module it imports (one level -- `bbn_network` is how the
++    pynucastro receipts reach it).  An entry that does neither has LIFTED and is named, with the remedy:
++    remove it from the list.  Static and source-only: no receipt is run."""
++    out = []
++    # `from camb import x`, `import camb`, and the combined form `import numpy as np, camb` -- the last is how two
++    #   of the declared receipts import it, and a pattern without it named both LIFTED at HEAD (r7177+70.1 S0).
++    imp = lambda pkg: re.compile(r'^\s*(?:from\s+' + re.escape(pkg) + r'\b|import\s+[^\n#]*?\b'
++                                 + re.escape(pkg) + r'\b)', re.M)
++    for name, pkg in sorted(UNRUNNABLE.items()):
++        hits = [f for f in glob.glob(os.path.join(ROOT, 'receipts', '**', name), recursive=True)]
++        if not hits:
++            out.append(f'STALE {name}: no such receipt')
++            continue
++        src = open(hits[0], encoding='utf-8', errors='replace').read()
++        if imp(pkg).search(src):
++            continue
++        mods = set(re.findall(r'^\s*from\s+(\w+)', src, re.M)) | {
++            m for ln in re.findall(r'^\s*import\s+([^\n#]+)', src, re.M)
++            for m in re.findall(r'(?:^|,)\s*(\w+)', ln)}
++        via = [m for m in sorted(mods)
++               for g in glob.glob(os.path.join(ROOT, '**', m + '.py'), recursive=True)
++               if '/.git/' not in g and imp(pkg).search(open(g, encoding='utf-8', errors='replace').read())]
++        if not via:
++            out.append(f'LIFTED {name}: imports {pkg} neither itself nor through a local module')
++    return out
++
++
+ def main():
+     if '--how' in sys.argv:
+         print()
+@@ -123,6 +156,13 @@ def main():
+     print()
+ 
+     rc = 0
++    moved = unrunnable_still_needs()
++    print(f'  [{"FAIL" if moved else "PASS"}] the {len(UNRUNNABLE)} receipts declared UNRUNNABLE still import what they '
++          'are declared to need -- if this fails, the declaration has LIFTED and would excuse a real failure')
++    for m_ in moved:
++        print(f'         {m_}')
++    if moved:
++        rc = 1
+     lint = os.path.join(ROOT, 'scripts', 'lint_assertions.py')
+     if not os.path.exists(lint):
+         print('  [FAIL] scripts/lint_assertions.py is absent -- it arrived with the c54.163 bundle')

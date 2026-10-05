@@ -416,13 +416,57 @@ def receipt_rows():
     return by, seen
 
 
+# ---------------------------------------------------------------- withdrawals, read not remembered
+def _withdrawn_registry():
+    """(assert-pattern, correction) from `corpus/check_withdrawn.py` -- imported, never copied"""
+    try:
+        import importlib.util
+        p = os.path.join(ROOT, 'corpus', 'check_withdrawn.py')
+        spec = importlib.util.spec_from_file_location('_cw', p)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return [(re.compile(e[1]), e[3]) for e in mod.REGISTRY if len(e) >= 4]
+    except Exception:
+        return []
+
+
+_WD = None
+
+
+def withdrawn_note(stem):
+    """for a receipt whose NAME states a withdrawn claim, the correction to print beside it.
+
+    ** The test is the REGISTRY's OWN assertion pattern, run against the title as the page prints
+    it -- the same pattern `check_withdrawn` runs against the page -- and not a similarity between
+    the slug and the filename.  A fuzzy name match would be a second, weaker registry maintained
+    here by accident; this way a site the gate would flag is a site this function annotates, and
+    the two cannot drift apart. **
+    """
+    global _WD
+    if _WD is None:
+        _WD = _withdrawn_registry()
+    title = stem.replace('_', ' ')
+    for pat, correction in _WD:
+        if pat.search(title):
+            return '\u2317 ' + correction
+    return ''
+
+
 def md_to_html(md, matrix_slot=True, stop_at_h2=None):
     """INTRODUCTION.md -> HTML. The introduction is mostly headings, paragraphs
     and one raw <figure> for the matrix; nothing else is used, checked at build."""
+    # ** r7179: YAML frontmatter is TREE metadata and never page content. **  A published source
+    #   is also a document of the tree -- it carries `kind:` for `classify_documents` and
+    #   `current:` for `check_currency` -- and without this the first thing a reader of the page
+    #   would see is those two lines.  Stripped here rather than at each call site, so a source
+    #   that gains frontmatter later does not publish it.
+    md = re.sub(r'\A---\n.*?\n---\n', '', md, count=1, flags=re.S)
     out, para, in_fig, seen_h2 = [], [], False, 0
 
     def inline(t):
         t = t.replace('&', '&amp;').replace('<', '&lt;')
+        # [text](https://...) -> a link, so a document can point at its sources.
+        t = re.sub(r'\[([^\]]+)\]\((https?://[^)\s]+)\)', r'<a href="\2">\1</a>', t)
         t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
         t = re.sub(r'\*(.+?)\*', r'<em>\1</em>', t)
         t = re.sub(r'`(.+?)`', r'<code>\1</code>', t)
@@ -879,10 +923,19 @@ const PAGES_URL = '{PAGES}';
         body += (f'<h2>{home} \u2014 {titles.get(home, "")}</h2>\n'
                  f'<p class="note">{len(rows)} receipts.</p>\n<ul class="papers">\n')
         for r in rows:
+            # ** r7179: THIS PAGE PRINTS EVERY RECEIPT'S FILENAME AS A BOLD ASSERTION. **  A receipt
+            #   whose headline claim was later withdrawn keeps its name -- the name is the record of
+            #   what was tried -- so without the correction beside it the page ASSERTS on a public
+            #   page what the corpus withdrew.  The correction is taken from the one registry that
+            #   holds withdrawals (`corpus/check_withdrawn.py`), never written here, so a withdrawal
+            #   recorded there reaches this page without anyone remembering to come back.
+            sub = r['claim'][:180] if r['claim'] else ''
+            wd = withdrawn_note(r['stem'])
+            if wd:
+                sub = (sub + ' \u2014 ' if sub else '') + wd
             body += ('<li><span class="pn">' + r['num'] + '</span>'
                      '<span class="ti"><b>' + r['stem'].replace('_', ' ') + '</b>'
-                     + ('<span class="sub">' + r['claim'][:180] + '</span>'
-                        if r['claim'] else '') + '</span>'
+                     + ('<span class="sub">' + sub + '</span>' if sub else '') + '</span>'
                      '<a href="' + GH + '/receipts/' + r['path'] + '">PY</a></li>\n')
         body += '</ul>\n'
     with open(OUT_RCPT, 'w', encoding='utf-8') as fh:

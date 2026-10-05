@@ -58,6 +58,17 @@ METHOD = {
     #   what is open -- and the few paragraphs that do touch the open edge carry watch markers, held
     #   current by corpus/check_explainer_pins.py against the register rows and paper text they
     #   were written from.  Not a VIEW: nothing generates it. **
+    #   ⛭ r7179 (66): TWO SEATS DECLARED THIS WITHIN THE HOUR AND THE AUTHOR'S STANDS.  This
+    #   seat, gating `main`'s red, reached `STATE` on the ground that `METHOD` means TIMELESS
+    #   BY CONSTRUCTION while this is the one top-level document carrying a currency gate, and
+    #   that the `README` already declares it the place where the programme's position lives.
+    #   ** Node 69's reading above is the author's and is taken: the body is geometry that does
+    #   not move, the few live-edge paragraphs are individually pinned, and `check_currency`
+    #   would only have required a declared revision -- a statement that a pass happened, not a
+    #   claim about content.  So the two choices differ in what they ENFORCE by nothing, and
+    #   the kind of a document is its author's to declare. **  ⌗ Recorded so the next seat does
+    #   not relitigate it, and so the cost is visible if the pins ever stop being the finer
+    #   instrument: under `METHOD` nothing but those markers watches this file.
     'EXPLAINER.md',
 }
 

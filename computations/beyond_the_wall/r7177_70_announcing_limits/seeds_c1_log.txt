@@ -1,0 +1,10 @@
+S0 HEAD: rc 0
+    [PASS] ⛭ STATED LIMIT still holds: the corpus has exactly the 15 headline markers read by hand (found 15) -- if this fails, the limit has MOVED: WIDENED names a headline marker nobody read, STALE names a hand-read one that is gone
+S1 a \rcpt added to BH_causality_v2's abstract: rc 1
+    [FAIL] ⛭ STATED LIMIT still holds: the corpus has exactly the 15 headline markers read by hand (found 16) -- if this fails, the limit has MOVED: WIDENED names a headline marker nobody read, STALE names a hand-read one that is gone   (got WIDENED BH_causality_v2.tex: P1_the_trapped_surface_theorem_is_cited_as_a_theorem_and_never_as_an_open_test)
+    - ⛭ STATED LIMIT still holds: the corpus has exactly the 15 headline markers read by hand (found 16) -- if this fails, the limit has MOVED: WIDENED names a headline marker nobody read, STALE names a hand-read one that is gone
+    (Q3_cayley_klein markers in the paper before the seed: 2; the first removed)
+S2 the first Q3_cayley_klein marker removed from geometric_core_paper: rc 1
+    [FAIL] ⛭ STATED LIMIT still holds: the corpus has exactly the 15 headline markers read by hand (found 14) -- if this fails, the limit has MOVED: WIDENED names a headline marker nobody read, STALE names a hand-read one that is gone   (got STALE geometric_core_paper.tex: Q3_cayley_klein)
+    - ⛭ STATED LIMIT still holds: the corpus has exactly the 15 headline markers read by hand (found 14) -- if this fails, the limit has MOVED: WIDENED names a headline marker nobody read, STALE names a hand-read one that is gone
+A5: HELD
