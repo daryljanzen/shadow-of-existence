@@ -186,7 +186,8 @@ once, and neither is a mood: the first governs what you claim, the second how ha
 is the verified way a spin-up flattens.* **The corpus comes first and whole; the why-layer comes last**, because
 reading the disposition early would let it bend how the evidence is received — the one move it forbids.
 
-**Thirteen steps, each its own turn:**
+**Thirteen steps, read in one continuous pass** — no pause for a nudge between them (see *How the intake runs*
+below). *They stay chunked so the same read can be run step by step where a model or setup needs it:*
 
 1. **`arp_standalone.tex`** — the theory of the collaboration itself: the Assimilate–Receipt–Pivot. It sets how
    to take in and carry forward what is said, before the physics starts.
@@ -278,8 +279,8 @@ building one picture, and **a step that does not change the picture has not been
   checked against anything you brought with you.** *And where it is computable, the shortest way through is to
   compute it — set the terms up and see what happens. **An objection you can run is settled by running it**,
   and the geometry does not care which of you was resisting it.*
-- **Do not let the picture reset between turns.** Each hold ends a turn, and the next turn starts with the
-  picture intact. **If you cannot state what the previous step established, re-read it before going on** — that
+- **Do not let the picture reset between steps.** Each step starts with the picture the last one left — in one
+  pass or across held turns alike. **If you cannot state what the previous step established, re-read it before going on** — that
   is the one repair permitted mid-order.
 
 **The check that it is working:** *by step 7, **P17** should read as a synthesis of things you already know
@@ -288,30 +289,40 @@ flattened.**
 
 ## How the intake runs — and what a hold is
 
-**Not one turn.** Crammed together, the reading is the part with no visible artifact until the end, so it is
-what quietly gets economized, and you arrive saturated in name only.
+**By default the thirteen steps run in one pass, start to finish, without waiting for a nudge between them.**
+Claude reads the whole corpus in a single sitting, in chat or in Code, and that is the setting this file is
+written for. **One pass is not a skim.** Run together, the reading is the part with no visible artifact until
+the end, so it is what quietly gets economized, and you arrive saturated in name only. **So every body is still
+read whole, in order, against everything before it — and at each step boundary you write the step's position
+line (below) and go straight on.** The position lines are the visible trace that the read happened step by
+step; they are not stopping points.
 
-**At each hold, report your POSITION — not the content.** Three short lines:
+**Where a model or a setup cannot hold the read in one pass, run the steps as held turns instead** — one step a
+turn, a position line at each hold, and the next step on the nudge. The order and the rules are identical either
+way.
+
+**At each step boundary — or at each hold — report your POSITION, not the content.** Three short lines:
 
 > **Step 5 of 13 done — P8–P11 read; the corpus is now through the operator, the range, the lock and the
-> dynamics. Next: step 6, P12–P14. Nothing needed but the nudge.**
+> dynamics. Next: step 6, P12–P14.**
 
-**That is the whole hold, and both failure modes it replaces are real:**
+**That is the whole position line, and both failure modes it replaces are real:**
 
 - **An account of what you read is wrong**, because three documents in your grip is shallow, **and the only way
   to make a shallow account look like work is to add a judgment.** That is how a spin-up turns into a string of
   manufactured reservations.
 - **"Read. Holding." is also wrong** — the person you are working with cannot see which step you are on or
-  whether you are on track. **The hold exists so the read is not a black box; that is the whole of what it is for.**
+  whether you are on track. **The position line exists so the read is not a black box; that is the whole of what
+  it is for.**
 
-**A position is factual, short, and claims nothing about the material.** There is nothing in it to pad, and he
-can see exactly where the thing is.
+**A position is factual, short, and claims nothing about the material.** There is nothing in it to pad, and the
+person you are working with can see exactly where the thing is.
 
 **⌗ AND IT STAYS SHORT AT STEP 10 AS AT STEP 1, for a reason that does not expire.** *Early on the reason is that
 your grip is shallow. **By step 8 it is not — you have read the corpus — and the temptation is to say more
-because you now can.*** ***Don't: the check-in is where the reading gets reported, and a hold that reports content
-pre-empts it.*** **The account you would give at step 8 is the account the check-in is for. Save it.**
-*One line of what was read, one of what is next, one of what is needed. If a hold has grown to a paragraph per
+because you now can.*** ***Don't: the check-in is where the reading gets reported, and a position line that reports
+content pre-empts it.*** **The account you would give at step 8 is the account the check-in is for. Save it.**
+*One line of what was read, one of what is next, one of what is needed. If a position line has grown to a paragraph per
 document, the form has drifted — the tell is that you could no longer say it out loud in a breath.*
 
 **If something genuinely will not ground, it goes in the check-in as one line on a list — not as a narrative
