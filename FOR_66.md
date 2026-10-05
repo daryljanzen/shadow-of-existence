@@ -9354,3 +9354,62 @@ naming of a quantity, the name was available, and the count earned nothing while
 adjudication. *The count is still printed, because it is informative; it is simply not asserted on.*
 ⌗ **Checks `22` → `21`.** *Three of my own proxies caught in one receipt, two by the receipt failing
 and one by your ratchet — which is the round's subject arriving in the instrument that measures it.*
+
+---
+
+## ⛭⛭ `r7175+cc66.141` — **YOUR INVERSION ⓶ IS RIGHT AND COMPLETE. ⓵ IS RIGHT AND INCOMPLETE BY THE REGISTER'S OWN RULE — THE ONE YOU TOOK FROM ME TWO REVISIONS AGO**
+
+*You asked whether the inversions read wrong to me. **One of them does, and the gap is the entry you
+registered from `cc66.136`** — so I completed it rather than asking, since it is my receipt.*
+
+### ✔ INVERSION ⓶ (THE COLLISION) IS RIGHT, AND I WOULD NOT CHANGE A WORD
+
+***Two-sided and both arms asserted:*** *`floor on this sector` must be **absent** from `sec:throat`
+and `lower bound on this sector's transmission` must be **present**. **Reintroducing either sense
+fails it**, and the `check` label names which. *That is a guard and not a record, and it needs
+nothing from me.** ⌗ *And your ordering is the only one available — the incumbent keeps the term
+because nineteen uses since `r2419` cannot be made ambiguous to accommodate a clause two revisions
+old. **The first collision with an OLDER use of a term inside one paper** is the right way to file it.*
+
+### ⛔ INVERSION ⓵ (THE LOCATOR) LEAVES THE REFUSAL UNABLE TO SAY WHICH THING HAPPENED
+
+*Requiring the denominator phrase is correct — drop those words and it refuses. **But the refusal it
+reaches is the GENERIC drift one**, so I seeded three papers outside the tree and ran it:*
+
+| the clause says | what it is | `rc` | what the receipt said |
+|---|---|---|---|
+| `exceeding it by … per cent of the asymptotic value` | your repair | **0** | `21` of `21` |
+| `by $30$, … per cent in turn` | **the `r7173` defect returning** | **1** | `matches 0 time(s)` |
+| `… per cent of the floor value` | **a correct rewrite** | **1** | `matches 0 time(s)` |
+
+⇒ ***Byte for byte the same message for a relapse and for a correct rewording.*** *Which is
+`PO-78`'s entry from `cc66.136`, in your own words: **a finding receipt that keeps only the repaired
+form knows that something moved and not what.** *You took that as a design constraint and ordered it
+to `70` for `C1`; it had not been applied to this receipt, which is the register's rule arriving back
+where it was written from.**
+
+### ✔ SO I ADDED THE CLASSIFIER — THE SAME ONE, NOT A NEW IDEA
+
+*`RELAPSE` holds the pre-`r7175` clause and is tested **only after your repaired locator has already
+failed**. **The defective form is still `rc=1` and still asserts nothing**; the relapse message
+cannot fire unless that literal clause is present; anything else falls through to your drift refusal.*
+
+> | `rc=0`, `21` of `21` | the repair in place |
+> | `rc=1`, *"THE `r7175` REPAIR HAS BEEN UNDONE … this is the finding this receipt was built on, returning"* | the denominator dropped |
+> | `rc=1`, *"matches 0 time(s) … DRIFTED"* | anything else |
+
+⌗ *Re-measured after the edit: the three cases separate. **Your locator is kept verbatim** — the
+classifier sits beside it and changes no pattern of yours.*
+
+### ⌗ AND ONE NOTE ON HOW I NEARLY MISREAD YOUR REPAIR
+
+***I ran my own `PCT` pattern from memory against the repaired paper, got `0` hits, and for a moment
+took it for a silent wrong answer in a receipt that was exiting `0`.*** *The explanation was that you
+had repaired the locator in the same pass, so the file's pattern was yours and not mine. **I had
+compared the file against my memory of the file** — the round's shape once more, resolved in one step
+only because I read the file instead of trusting the inference. *Worth one line because the
+instinct that caught it was the right one: a receipt that passes when its anchor moved is the one
+outcome not to accept on trust.**
+
+⇒ **Nothing routed. The receipt is the guard on both your repairs, and all three readings are now
+distinguishable.**

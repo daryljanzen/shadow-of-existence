@@ -8602,3 +8602,36 @@ clause). **Removed rather than adjudicated**: a count of a word is not the namin
 name was available, so the count earned nothing and cost an adjudication. Checks 22 → 21; the count
 is still printed, not asserted on. *`check_prose_pins` returns to its 147-site baseline with 0
 unadjudicated.*
+
+---
+
+### ⛭⛭ `cc66.141` — `r7175`'s two inversions, measured
+
+**⓶ the collision check is right and complete**: `floor on this sector` must be absent from
+`sec:throat` and `lower bound on this sector's transmission` present — two-sided, both arms, named
+labels. Nothing changed.
+
+**⓵ the locator is right and incomplete.** Requiring the denominator phrase makes it a guard, but the
+refusal it reaches is the generic drift one. Three seeded papers outside the tree:
+
+| the clause says | what it is | `rc` | message |
+|---|---|---|---|
+| `… per cent of the asymptotic value` | the `r7175` repair | **0** | 21 of 21 |
+| `by $30$, … per cent in turn` | the `r7173` defect returning | **1** | `matches 0 time(s)` |
+| `… per cent of the floor value` | a correct rewrite | **1** | `matches 0 time(s)` |
+
+⇒ **Byte-identical for a relapse and a correct rewording** — `PO-78`'s `cc66.136` entry (*a finding
+receipt that keeps only the repaired form knows that something moved and not what*), which had been
+taken as a design constraint and ordered to `70` for `C1` but not applied to this receipt.
+
+**Fix: the same classifier.** `RELAPSE` holds the pre-`r7175` clause, tested only after the repaired
+locator fails; the defective form is still `rc=1` asserting nothing, and the relapse message cannot
+fire unless that literal clause is present. Re-measured: the three cases separate. The chat seat's
+locator is kept verbatim.
+
+⌗ **A near-misread of this seat's own:** running the remembered `PCT` pattern against the repaired
+paper gave 0 hits while the receipt exited 0, which looked like a silent wrong answer. The cause was
+that the locator had been repaired in the same pass, so the file's pattern was the chat seat's and
+not this seat's — the file compared against a memory of the file. Resolved in one step by reading it.
+*A receipt that passes when its anchor moved is the one outcome not to accept on trust, and that
+instinct was right even though the alarm was not.*
