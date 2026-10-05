@@ -282,11 +282,24 @@ for b in range(4):
 _einstein = sp.simplify(Ric - (3 / al**2) * g) == sp.zeros(4)
 _rscal = sp.simplify(sum(gi[i, j] * Ric[i, j] for i in range(4) for j in range(4)))
 print(f"      Einstein residual zero: {_einstein};   Ricci scalar = {_rscal}")
+# ** ⌗ AND THIS GATE READS THE PAPER IN ITS OWN VERDICT, because its label carries a figure.
+#   `P15` states `$\mathcal R=4\Lambda$` of the SEAM-LIMIT metric; the symbolic result here is that
+#   the WHOLE of `eq:proper-frame` carries it.  ** The two are not the same object and the gate does
+#   not treat them as one **: the paper's value is the limit's and this is the global one, so what the
+#   conjunction asserts is that the limit value IS the global value -- a sharpening, and the gate goes
+#   red if the paper's curvature statement moves. **
+_paper_4lam = ('The limit metric is Einstein with $R_{ab}=\\Lambda g_{ab}$, has $\\mathcal R=4\\Lambda$'
+               in PAPER)
+print(f"      the paper's own seam-limit curvature statement present: {_paper_4lam}")
 gate("Ⓒ① `eq:proper-frame` is EXACTLY EINSTEIN on this chart -- `$R_{ab}-(3/\\alpha^2)g_{ab}=0$` "
      "identically with `$\\mathcal R=12/\\alpha^2=4\\Lambda$` -- and it holds for ARBITRARY `$M$`, so "
-     "it is a property of the family and not a Nariai accident.  \u21d2 *the Ricci focusing vanishes on "
-     "every null ray, which is the first of the beam's two inputs*",
-     _einstein and sp.simplify(_rscal - 12 / al**2) == 0)
+     "it is a property of the family and not a Nariai accident.  ⌗ *And `P15` states `$\\mathcal "
+     "R=4\\Lambda$` of its SEAM-LIMIT metric, a different object: so the limit's value is the GLOBAL "
+     "value, which this gate asserts and which the paper's own sentence is read for.*  \u21d2 *the "
+     "Ricci focusing vanishes on every null ray, the first of the beam's two inputs*",
+     _einstein and sp.simplify(_rscal - 12 / al**2) == 0
+     and 'The limit metric is Einstein with $R_{ab}=\\Lambda g_{ab}$, has $\\mathcal R=4\\Lambda$'
+         in PAPER)
 
 _killing = all(sp.simplify(sp.diff(g[i, j], chi)) == 0 for i in range(4) for j in range(4))
 C = sp.Symbol('C')
