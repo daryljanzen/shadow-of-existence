@@ -1,0 +1,40 @@
+[CR_synthesis -> JanzenCRframework] The cluster below is presented \emph{graded}, because the tiers differ in what an objector must dispute, and a flat list would hand a reader the whole set to reject at once~\cite{JanzenCRframework}.
+
+[algebroid_paper -> JanzenCanonicalTime,JanzenModernParallax] The normal generator $\Hc_\perp\leftrightarrow\fm$ is smeared by the \emph{lapse}---the metrical rate of the layer's advance, the existent's own foliation stacking rate---and the tangential $\Hc_a\leftrightarrow\fh$ by the \emph{shift}, the synchronization convention through which that advance is coordinated and observed~\cite{JanzenModernParallax, JanzenCanonicalTime}.
+
+[SdS-slicing-curve_v2 -> JanzenMatter] \emph{The contrast with the hinge triple is total.} That three indexes the within-state label, carries the full Weyl $S_{3}$, lives in the equatorial section, and consists of \emph{roots} of the horizon cubic at radius $2\alpha$; this one indexes the family~\cite{JanzenMatter}, carries only the cyclic $\mathbb{Z}_{3}$ of the deck group, lives in complex cosmic time, and consists of \emph{sheets}.
+
+[CR_synthesis -> JanzenBoundary] \subsection{Colour is not a geometric isometry, and the obstruction is complete} The substrate's continuous symmetry cannot carry the strong force, and the reason is exact: $\mathfrak{su}(3)$ is not a subalgebra of $\mathfrak{so}(5,1)$, \emph{precisely because the isometry is exhausted}~\cite{JanzenBoundary}.
+
+[algebroid_paper -> JanzenGroupoid] The same partition falls out of the substrate's null structure, and by a route that mentions neither spinors nor $\mathfrak{su}(3)$: the sky-angle periodicity $\tau$ is two steps along a null ruling of the substrate---so it is a closed path of light, and $\tau^{3}=\mathrm{id}$ is that path closing---whereas the Weyl reflection $\sigma$ is a loop in the complex $2M$-plane about the Nariai point~\cite{JanzenGroupoid}, and $2M$ labels the family rather than pointing along the manifold.
+
+[CR_synthesis -> JanzenCRframework] \emph{So the block reading does not dispense with the lapse; it re-imports it one level up, informally}~\cite{JanzenCRframework}, and the frozen constraint of \S\ref{sec:dissolved} is the canonical symptom of exactly that: a formalism correctly reporting that on the block's own premise there is nothing for a generator to do.
+
+[CR_framework -> JanzenCircle] In the Schwarzschild reading all of it is unproblematic---spatial infinity and a global timelike Killing vector are both available and the ADM mass returns the parameter~\cite{JanzenCircle}---which locates the difficulty exactly where the substrate replaces the background.
+
+[cosmogenesis_paper -> JanzenCircle,JanzenSlicing] The standard inference from the curvature divergence at $r=0$ to an inextendible boundary is then refuted by counterexample: the very analytic continuation universally accepted as removing the coordinate horizon carries the curve smoothly through $r=0$ (the circle paper, P2~\cite{JanzenCircle}), and on the Schwarzschild--de~Sitter slicing that same continuation runs on through the throat onto the conjugate branch (the slicing-curve paper, P3~\cite{JanzenSlicing}).
+
+[slicing_operator -> JanzenCanonicalTime,JanzenDynamics] \emph{Why} a given leaf bends as it does is the dynamics, and is treated in~\cite{JanzenDynamics, JanzenCanonicalTime}.
+
+[groupoid_paper -> JanzenModernParallax] It is the unique consistent reading of the groupoid action on the SdS family, combined with the null-tilt condition for the cosmological reassignment---and it converges with the foundation from the other side: the cosmological configuration is forced \emph{algebraically} here, as the unique fixed point of the within-geometry involution, and \emph{empirically} by the redshift-isotropy floor that forces a cosmic time~\cite{JanzenModernParallax}, two independent routes selecting one configuration.
+
+[CR_synthesis -> JanzenCircle] \emph{Which member one is on, and therefore where the lap's loci fall, is that one number's to say.} \emph{The classical member makes that visible, and it is the companion paper's whole object.} There the two loci sit at $z=0$ and $z=\pi$ --- \emph{antipodal on one circle}, the horizon and the curvature singularity as its two poles, with the areal radius executing simple harmonic motion about the midpoint~\cite{JanzenCircle}.
+
+[slicing_operator -> JanzenGeometricCore] That the mass \emph{is} the cut's offset is the geometric content of Newton's constant in the substrate's constant ledger: $G$ enters only as the offset-length $GM/c^2$, so it is not a coupling of independent matter to geometry but the identification of the mass-label with the cut's offset---the geometrisation of matter's being the bend, and the perspectival counterpart to the invariant null-ruling reading of $c$~\cite{JanzenGeometricCore}.
+
+[geometric_core_paper -> JanzenModernParallax] \item \textbf{P4, the modern parallax~\cite{JanzenModernParallax}} --- Forward: P4's exclusion section points here, reading the augmentation it forces as the empirical rung of the substrate's maximal symmetry (carrying its own Copernican scope).
+
+[CR_framework -> JanzenCircle] The contour is not free-standing: it runs on the ring the companion circle paper exhibits, whose two poles are the horizon and the conjugate critical point at $r=0$, and whose smoothness there is what permits the passage this section reads~\cite{JanzenCircle}.
+
+[CR_synthesis -> JanzenCanonicalTime] The multiple-choice objection --- many candidate internal times, inequivalent quantizations, no principle preferring one --- \emph{has force precisely when the choice of clock is a matter of formal convenience internal to the theory}, and loses it when the clock is fixed from outside by ontology and observation~\cite{JanzenCanonicalTime}.
+
+[algebroid_paper -> JanzenRange] \section{The isotropy stratification and the metric-singular seams}\label{sec:strata} As the cut moves off the symmetric vacuum, the cut-fixing isotropy drops, and its strata are the range/Petrov classes of the construction~\cite{JanzenRange}: Type O (de Sitter, isotropy $\so(4,1)$, dimension ten), Type D (Schwarzschild--de Sitter $\mathbb{R}_t\times SO(3)$, dimension four; Kerr--de Sitter, dimension two), Type I (Bianchi, dimension three; Zipoy--Voorhees, dimension two), and the wall (Type N, isotropy zero).
+
+[groupoid_paper -> JanzenAlgebroid] The isotropy jump is what that condition \emph{is}, read on the near-horizon geometry: a double root makes that geometry $\mathrm{dS}_{2}\times S^{2}$, whose isometry $\mathrm{SO}(2,1)\times\mathrm{SO}(3)$ is six-dimensional against a generic four, which is exactly the stratum the algebroid paper records~\cite{JanzenAlgebroid}.
+
+[CR_cosmology -> JanzenCRframework] (ii)~The fundamental congruence is the worldlines whose motion in $r$ is produced purely by the field---those at rest exactly where $V_{\mathrm{eff}}\equiv1$ and the metric reduces to Minkowski---which is $E=1$; this fixes the rest frame by the field rather than by stipulation, \emph{and it is worth saying where that locus is}: $V_{\mathrm{eff}}=1$ is $r^{3}=-2GM\alpha^{2}/c^{2}$, so the rest frame is defined at $r=-(6GM/c^{2}\Lambda)^{1/3}$---a \emph{negative} areal radius, on the conjugate branch of the lap, between the progenitor's horizon and the branch point~\cite{JanzenCRframework}.
+
+[CR_synthesis -> JanzenOperator] \emph{So the account above is a statement about the cosmological face and does not extend to the collapse face}, and the two are separated by the horizon cubic's discriminant rather than by a modelling choice~\cite{JanzenOperator}.
+
+[groupoid_paper -> JanzenSlicing] The slicing paper articulated the sweep mechanism geometrically (Section~8.3 of~\cite{JanzenSlicing}, ``The horizon--singularity asymmetry is a sweep-pivot artefact''); the present section gives its algebraic content within the groupoid, and connects it to the pivoting/non-pivoting structure of Section~\ref{sec:single-reassignment}.
+

@@ -1,0 +1,17 @@
+  JanzenSlicing      prop:flip    resolved=True  owner-voice grade=True  \begin{proposition}
+  JanzenGroupoid     galois       resolved=False owner-voice grade=False 
+  JanzenBoundary     decoupling   resolved=True  owner-voice grade=False 
+  JanzenBoundary     face-status  resolved=True  owner-voice grade=False 
+  JanzenCRframework  662-region   resolved=False owner-voice grade=False 
+  JanzenSlicing      5.1          resolved=True  owner-voice grade=True  \begin{proposition}
+  JanzenSlicing      8.4          resolved=True  owner-voice grade=True  established here
+  JanzenSlicing      8.4          resolved=True  owner-voice grade=True  established here
+  JanzenSlicing      8.4          resolved=True  owner-voice grade=True  established here
+  JanzenSlicing      8.4          resolved=True  owner-voice grade=True  established here
+  JanzenSlicing      7            resolved=True  owner-voice grade=False 
+  JanzenSlicing      7.4          resolved=True  owner-voice grade=False 
+  JanzenSlicing      8.3          resolved=True  owner-voice grade=True  open
+  JanzenSlicing      8.3          resolved=True  owner-voice grade=True  open
+  JanzenSlicing      8.3          resolved=True  owner-voice grade=True  open
+  JanzenSlicing      4.4          resolved=True  owner-voice grade=True  \begin{proposition}
+resolved 14/16; owner states a grade in its own voice at 10/14
