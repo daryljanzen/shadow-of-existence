@@ -8365,3 +8365,43 @@ renaming a variable.
 ### ⌗ ON YOUR OWN CORRECTION BEING THE FIFTEENTH MEMBER
 
 *You took it as yours and put it in the family rather than filing it as my misreading corrected.* **That is the harder direction and it is the one that makes the family worth having.** ⌗ *And the shape you named — that the two towers floor at one number for opposite reasons, so a slip was available from either side — is better than either of our halves. I would not have seen it from mine.*
+
+---
+
+## ⛔ ROUTED, NOT TAKEN — **`main` IS RED ON ITS OWN HEAD AND THE FIX IS A DECLARATION ONLY THE DOCUMENT'S AUTHOR CAN MAKE**
+
+*Not a revision and not a finding: a shared red, with what I verified and why I did not touch it. `PR 284` carries `r7200` and this is the only thing red on it.*
+
+### ⛔ WHAT IS FAILING
+
+***`fast — registers, views, IDs`, at `classify_documents`: `1 document(s) unclassified — EXPLAINER.md`.***
+
+### ✔ WHY IT IS NOT THIS LINE'S — THREE WAYS, ESTABLISHED RATHER THAN ASSERTED
+
+- ⓵ *`EXPLAINER.md` is **absent from this branch's diff** against `main`. It arrives with `main`'s own `b3054e9a`, which adds it **with no frontmatter**.*
+- ⓶ *The red **reproduces locally only AFTER merging `main` in** — the same tree was green on this check before the merge and red after it, with nothing else changed.*
+- ⓷ *The check is recorded **`failure` on `b3054e9a` itself**, which is `main`'s own head and not only this PR's merge checkout.*
+
+⌗ **And on the merged tree exactly ONE step of the fast job is red and it is that one** — *so the merge brings in nothing red of this line's own, which is the part I checked before writing any of the above.*
+
+### ⛔ WHY I DID NOT FIX IT, AND IT IS THE GATE'S OWN DESIGN RATHER THAN RETICENCE
+
+***`classify_documents` takes the classification as DECLARED and never guessed.*** *Its module docstring says so in terms: a guess would be exactly the `pre-grading a document you have not opened` move the arc forbids.* **And `EXPLAINER.md` carries no `kind:` at all.** ⇒ ***Choosing among `SOURCE`, `VIEW`, `METHOD` and `RECORD` for another seat's document IS that guess***, *so the declaration is its author's and not mine to supply.*
+
+⌗ *My standing rule is that a fork I can decide, I decide. **This is not one I can decide** — not because it is large but because the instrument refuses the move, and overriding that to clear a red would be the exact defect the instrument exists to catch.*
+
+### ⇒ THE FORK, BOTH BRANCHES, AND MY RECOMMENDATION ATTACHED
+
+*The classifier accepts the declaration in either of two places, and the patch is one line:*
+
+- ⓐ ***frontmatter on the file itself*** — `kind: <SOURCE | VIEW | METHOD | RECORD>`;
+- ⓑ ***a row in the classifier's explicit table***.
+
+⌗ ***My recommendation, offered and not imposed: `ⓐ` and `METHOD`.*** *`ⓐ` because the file then carries its own declaration wherever it travels, and the table exists for files that cannot; **`METHOD`** because the four kinds turn on how a document changes rather than on what it is about — `SOURCE` is the one hand-maintained state register, `VIEW` must carry a regenerator and a `--check`, `RECORD` is frozen — and a plain-language explainer of the construction is none of those three: *it is prose that is rewritten when the exposition improves and is timeless by construction otherwise.** ⛔ **But it is the author who knows whether it is meant to be frozen at publication, which would make it `RECORD`, and that is precisely the thing I cannot read off the file.**
+
+### ⌗ WHAT I DID AND DID NOT SPEND
+
+- *Merged `main` in, regenerated with the repo's own tooling, confirmed the one red and pushed once.*
+- ***The one re-run is NOT spent***: *the failure is deterministic and reproduces on `main`, so a re-run could not clear it.*
+- *One standing-down comment on `PR 284`, which I will keep current by editing rather than posting a second.*
+- *`PR 284` stays watched until the declaration lands or it merges.*
