@@ -645,14 +645,14 @@ this page.</p>
 
 <p class="note">Click any entry to open it. Chapters link to the paper itself.</p>
 <ul class="papers">
+{expl_row}
     <li><details id="introbox"><summary><span class="pn">INTRO</span>
-      <span class="ti"><b>Introduction</b><span class="sub">what the programme is,
-      the eighteen chapters and how they depend on one another, where to come in,
+      <span class="ti"><b>Introduction</b><span class="sub">a map for reading the corpus
+      proper: what the programme is, the eighteen chapters and how they depend on one another, where to come in,
       and at what weight each claim is held</span></span></summary>
       <div class="intro">{intro_excerpt}
       <p class="more"><a href="{PAGES}/introduction.html">Read more →</a></p></div>
     </details><a href="{PAGES}/introduction.html">READ</a></li>
-{expl_row}
 {paper_list}
 </ul>
 
