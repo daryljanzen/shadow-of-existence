@@ -332,10 +332,16 @@ masthead concedes Sbierski before you can raise him.
 
 ## Guards for the read
 
-- **⚠ The expansion rate is fixed, not open — and the Hubble tension is not dissolved.** With the plasma handed
-  over at the branch point there is no early-universe parameter, so the acoustic angle and the baryon-acoustic
-  distances fix H₀ together; **the discrepancy with the local distance ladder stands where the standard model
-  leaves it.** *Do not reopen the fit, and do not describe the tension as resolved.*
+*These four are reading conventions and not results — they stop a first reader misreading the corpus while
+reading it. **Where the work stands is not here**: `P15` carries it at full weight and the explainer carries it
+in plain language, and a guard in this file states no result, because this file carries no state to check one
+against.*
+
+- **⚠ The expansion rate is fixed by the fit, not open for a node to reopen.** With the plasma handed over at
+  the branch point there is no early-universe parameter left to carry the acoustic angle, so the angle and the
+  baryon-acoustic distances fix the rate together. **What that does and does not do to the discrepancy with the
+  local distance ladder is `P15` §`sec:tensions`' own statement — read it there and carry nothing about it from
+  here.**
 - **α is never sent to a limit.** α → ∞ would dismantle the throat the construction lives on. **Schwarzschild is
   a *reading*, not a limit.**
 - **`X` versus `r`.** The throat's *size* is **X = α** (an embedding quantity). **`r` is the signed areal

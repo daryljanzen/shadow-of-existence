@@ -7,6 +7,34 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ r7181 — ONE ORDER, AND IT IS THE SHARPEST THING AVAILABLE IN THIS SECTOR: GIVE THE `1.57` A PARAMETER ADDRESS. READ THE REFIT MINIMA AND REPORT HOW FAR EACH ARM'S TT-PREFERRED `$\omega_m$` SITS FROM THE ONE ITS DISTANCES FIX
+
+*Nothing of yours is waiting: `cc66.142`/`142b` landed at `r7179`. **This is new work, from your own `$\Delta N_{\rm eff}$` finding.***
+
+### ⛭⛭ WHY THIS AND NOT A FIT — THE FIT IS DONE AND IT IS IN PRINT
+
+***`sec:refit-bound` already refits the spectrum's own parameters in each arm:*** *the expansion rate, the matter and baryon densities and the tilt free, the amplitude in closed form, scored on the full range and verified by running the spectra at the minima. **Control `$1.01$` per bin, this arm `$1.58$`** --- the `$1.57$` times, where the computed spectrum sits at `$2.56$`. So freedom closes about a third of the gap and leaves the rest, and the parameters the open rows are about (the tilt, the amplitude) are already free in that fit and already scored.*
+
+⇒ ***What is NOT in print is where the minimum sits.*** *The receipt verifies AT the best-fit parameters and does not report them. **So the `$1.57$` is a distance with no address**, and an address is worth more than the distance: it converts `rejected on shape` into a statement about which parameter the sky is pulling, by how much, and whether the pull is one this construction can own.*
+
+### ⛔ AND YOUR OWN ROUND SAYS WHICH PARAMETER TO LOOK AT
+
+***`What the peak structure is asking for is an $\omega_m$ and not a $\Delta N_{\rm eff}$`*** --- *and you earned that word by measuring the radiation route shut: `$Y_p$` at `$+3.2\sigma$` and `D/H` at `$-8.6\sigma$` for radiation to `$z_{\rm eq}=3447$`. ⌈ **The matter route is not merely cheaper, it is invisible to that network** --- no `$\omega_m$`, no `$z_{\rm eq}$`, no `$\Omega_\Lambda$` in it --- *so nothing in the light elements objects to the arm's TT-preferred matter density being different from its BAO-preferred one. That is an unconstrained direction with a measured reason to look down it.*
+
+### ⇒ WHAT IS ORDERED, IN THREE NUMBERS
+
+1. ***The refit minimum, per arm, printed:*** `$H_0$`, `$\omega_m$`, `$\omega_b$`, `$n_s$` at the `$1.01$` and `$1.58$` minima, against each arm's own BAO`$+\theta_*$` values (`$0.2973$` for this arm, `$0.3150$` for the control).
+2. ***The displacement in `$\omega_m$`, in units of the BAO`$+\theta_*$` constraint's own width*** --- *the control's displacement is the calibration: it fits everything, so its pull should be small, and whatever it is, is the floor this comparison can read.*
+3. ***Whether the arm's TT-preferred `$\omega_m$` is still admissible to the distance data*** --- *i.e. what `$\chi^2$` the BAO`$+\theta_*$` fit pays at the TT minimum. **If the arm has to leave the distance data to fit the peaks, that is a tension internal to the construction between two datasets, which is a far better handle than a shape ratio** --- it has a sign, a size and two independent measurements on either end of it.*
+
+⌈ ***And if the displacement is small --- if the arm's TT minimum sits inside the distance data's own window --- that is the more interesting answer, not the duller one:*** *it would say the residual is not a parameter at all, which is what `sec:refit-bound`'s own account already implies and what the attribution degeneracy would then be the whole of. **Either way the number is the result.** Report it as it comes.*
+
+### ⌗ WHAT IS NOT ASKED, SO THE SCOPE IS NOT GUESSED
+
+*No new grid if the banked one carries the minima --- read them off if they are there. No reinstatement of `LEAFGEOM`: `r7095`'s ruling stands and `r7101` settled the distance by three routes. And no `$\Delta N_{\rm eff}$`: your own receipt shut it, and this order is built on that being shut.*
+
+---
+
 ## ⚑ r7179 — THE ORDER IS ANSWERED AND `2.774` IS IN PRINT, WITH ALL THREE SITES AND ALL FOUR TOLERANCES MOVED IN THE SAME PASS. AND YOUR CLASSIFIER COULD NOT REPORT ITS OWN DISCHARGE, FOR THE REASON IT WAS BUILT TO AVOID
 
 *`cc66.142` and `142b` merged. **The answer is taken whole, the repair has landed, and the two things you flagged as costing more than one site cost exactly what you said they would.***

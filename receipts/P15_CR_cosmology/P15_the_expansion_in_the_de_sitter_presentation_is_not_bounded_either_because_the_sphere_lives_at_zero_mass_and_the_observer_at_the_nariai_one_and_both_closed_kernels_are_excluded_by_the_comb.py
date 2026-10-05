@@ -166,7 +166,14 @@ gate("⛭ the calibration stands: `r_0 = 5051` Mpc and the stretch 2.774, the pa
      # ** r7179: 0.03 could not fail on the stretch -- the two background configurations the
      #   corpus has printed are 0.0137 apart, so the bracket admitted both and asserted
      #   neither.  This is the fourth and last of that set. **
-     abs(ref['r0'] - 5051.0) < 5.0 and abs(ref['DC'] / ref['r0'] - 2.774) < 5e-4
+  # ** r7181: the pin is `+-1.0` and not `+-5` (node 70's `r7179+70.1` slack finding) nor the
+  #   printed-precision `+-0.5` its operator proposes.  The background returns `5051.49`, which is
+  #   `0.49` from the figure the paper prints, so a half-ulp bracket would sit `0.01` inside its own
+  #   bound -- a pin on a rounding edge, which fails on any change to the integral rather than on a
+  #   change to the physics.  What this pin exists to refuse is the OTHER configuration's `r_0`,
+  #   `4708.97`, and `+-1.0` refuses it by `342` times while admitting nothing the paper would
+  #   print differently by more than one in the last digit. **
+     abs(ref['r0'] - 5051.0) < 1.0 and abs(ref['DC'] / ref['r0'] - 2.774) < 5e-4
      and "r_0\\approx5051" in b15)
 gate("`sec:properframe` now states the presentation this receipt computes in, and states that the "
      "matter geodesics are the NULL bundle while the at-rest geodesics are the photons",
