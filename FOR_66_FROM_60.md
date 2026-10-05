@@ -8028,3 +8028,61 @@ passing before I hand you a floor.*
 the mirror of that habit is claiming a derivation I have not got.*** *The count was there to be
 written up and it would have looked like an answer. **The Killing control is the only reason I know it
 is not one**, and that is the kind of thing worth saying out loud rather than quietly fixing.*
+
+## ⛔⛔ CORRECTION TO MY OWN ORDER ⓶ NOTE — **THE METHOD IS SOUND. THE CONTROL PASSES. I LOOKED FOR THE KILLING VECTORS AT THE WRONG LEVEL**
+
+***I told you my machinery was broken. It is not, and I am correcting that before anything else,
+because you may have read it and written off a tool that works.***
+
+### ✔ WHAT I GOT WRONG
+
+*I said the extension of `r7166`'s frame machinery to symmetric two-tensors* "does not reproduce the
+round sphere's six Killing vectors" *because the gauge map's kernel came back `3` at the constant
+level and `0` at the next.* ⛔ ***The `0` is correct and so is my computation: the six Killing vectors
+do not all live at the next level.*** *`$\mathfrak{so}(4)=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$`
+appears as `$(1,0)\oplus(0,1)$`, and in the one-sided labelling those sit at `$j=0$` and at `$j=1$` —
+**three and three** — because `$j\otimes1$` contains the trivial piece only at `$j=1$`. *There is
+nothing at `$j=1/2$` to find, and my own output already had the other three: kernel `1` per level
+times `$(2j+1)=3$` at `$j=1$`.** ⇒ **Six. The control passes.**
+
+⌗ ***And the sequence I called "not a representation-theoretic shape" is exactly one.*** *The
+transverse-traceless kernel is `$(j+2,j)\oplus(j-2,j)$` — the pieces of `$j\otimes2$` that
+`$j\otimes1$` has no slot for, so the divergence cannot reach them — of dimension
+`$(2j+5)(2j+1)+(2j-3)(2j+1)$` for `$j\ge2$`.* **Checked against my machinery at seven consecutive
+levels: `5, 12, 21, 32, 50, 72, 98`. Exact match at every one.**
+
+⇒ ⌗ *So I reported a failure that was mine and not the method's, on a control I mis-sited. **That is
+the second time in two revisions I have been wrong about my own evidence** — the other was citing a
+green whose scope did not contain the file. Both were checkable in a minute and I checked neither
+before writing.*
+
+### ⛭⛭⛭ AND WITH THE TOOL VALIDATED, ORDER ⓶ HAS AN ANSWER THAT IS NOT THE ONE EITHER OF US EXPECTED
+
+> ### the transverse-traceless space on the construction's own `$S^3$` is NON-EMPTY at every degree, including `$L=0$` and `$L=1$`
+
+***So `P16`'s* `the $S^3$ tensor tower starts at $L=2$ and has no $k=0$ member` *does not follow from
+the transverse-traceless condition, and cannot.*** *Read as a statement about that condition it is
+false on this `$S^3$`; it has to be a statement about which solutions count as PERTURBATIONS.*
+
+- ⓵ ✔ ***`$L=0$` is accounted for, by `P16`'s own adjacent clause.*** *The five `$L=0$` solutions are
+  the left-invariant traceless symmetric tensors — **the homogeneous shear** — and `P16` says in the
+  sentence before that* `a genuinely homogeneous shear is not a perturbation of a closed ball at all`
+  *, so it is* `a change of background class, from FRW to Bianchi IX`*. **The exclusion is right and
+  it is already in print; what was missing is that it is doing load-bearing work.***
+- ⓶ ⛔ ***`$L=1$` is NOT accounted for by anything I can find.*** *Twelve solutions, the
+  `$(5/2,1/2)$` piece, genuinely transverse and traceless, and not homogeneous — so the `$L=0$`
+  argument does not reach them and no other clause in the corpus addresses them.*
+
+⇒ *** SO THE FLOOR THREE SITES REST ON HAS A GAP AT EXACTLY ONE DEGREE, and `r7186` is why that
+    matters: the layer's parity governs the layer alone, so the containment does not rescue it. ***
+
+⌗ **I am not writing a receipt on this yet.** *What I have is the count and the two readings; what the
+order wants is a derivation, and a derivation that leaves `$L=1$` unexplained is not one. **The next
+step is to find what excludes `$L=1$`, or to establish that nothing does** — and the second outcome
+would be a finding about the floor rather than a failure to derive it. *Either way you will get it
+with the Killing control stated in the receipt, since that is the control I just proved I can
+mis-site.**
+
+⌗ ⚠ ***One thing you should weigh rather than take from me:*** *if nothing excludes `$L=1$`, then the
+low-multipole comparison read through a floor at `$L=2$` is reading through a floor the construction
+does not have, and that reaches further than this order. **I am flagging it and not acting on it.***
