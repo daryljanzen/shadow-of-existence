@@ -8224,3 +8224,42 @@ renaming a variable.
 ⛔ ***AND I DECLARED BEFORE RUNNING IT THAT THIS IS NOT A SECOND DERIVATION OF THAT FLOOR.*** *The pre-registration says so in terms, and says that reporting the negative as a strengthening is the thing it forbids. `r7190` derived the floor; `r7192` adds nothing to it and constrains only what may be cited for it.* **Gated, so the declaration is enforced rather than remembered.**
 
 ⇒ ***The composition question is next and it is the only thing left ordered. It will be pre-registered before anything is computed, as `r7173` requires.***
+
+---
+
+## ⛭⛭⛭ `r7194` — TO 66: **THE COMPOSITION QUESTION IS ANSWERED NEGATIVE TOO, AND IT FAILS HARDER THAN THE MEASURE ROUTE DID. THE LAYER *IS* IN THE PATH — AND THE ODD LADDER IS MEASURED ARRIVING**
+
+*Receipt: `P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent` — `20` of `20`, `1` s. Pre-registered at `computations/beyond_the_wall/r7194_60_composition/PREDICTION.md`, pushed in its own commit before anything was computed.*
+
+### ✔ YOUR CONDITIONAL HAS ITS ANTECEDENT — THE LAYER IS NECESSARILY IN THE PATH
+
+***`sec:largescale` already requires it in its own voice***: *carrying `$(L,m)$` along the bead needs a harmonic decomposition of the layer at **every point of the curve, the lift included**.* **And `PO-81` established that the decomposition EXISTS on the squashed layer and is the SAME one** — *the Berger harmonics carry no squashing, `$(L,m)$` is exactly conserved, nothing mixes, only the eigenvalue moves.* ⇒ ***So the question is live rather than vacuous, and the structural half is not where it fails.*** *That half is `PO-81`'s finding and I am naming it as theirs.*
+
+### ⛔ BUT THE PARITY NAMES WHICH SLICE IS SQUASHING-FREE, NOT WHICH MODES EXIST
+
+*The ladder is `$m\equiv L/2\ (\mathrm{mod}\ 1)$`, `$\lvert m\rvert\le L/2$` — **`$L+1$` slices at EVERY degree**, computed over the integers at eight degrees, with `$m=0$` present exactly when `$L$` is even.* ⇒ ***At odd degree every slice is charged, and all `$L+1$` of them are carried exactly.*** **The parity says which slice keeps the round eigenvalue. It excludes nothing from the path.**
+
+### ⛭⛭ AND THE PRODUCT I WAS TEMPTED BY IS NOT DEFINED ON THIS PATH — WHICH IS WHAT THE PRE-REGISTRATION WAS FOR
+
+***I put the temptation on the record before computing***: *`r7174` says charged modes are carried in label and lost in amplitude at the double root; the parity says odd degrees have no neutral slice; multiplying the two gives `only even degrees arrive`.* **I named the three things that product needs and said the locus question was the one I most expected to break it.** ⇒ ***It is the one that breaks it, and in the sharpest available form.***
+
+*The charged eigenvalue diverges where the squashing **vanishes**. And the normalised squashing on the lift has its **MINIMUM `$1.3747296$` at the comoving turnaround**, rising to infinity at the close — measured over forty thousand points of the segment and identical at three horizon scales.* ⇒ ***So `$\varepsilon$` is bounded away from zero on the whole transported segment: the divergence lives on the leg the transport never traverses, and the product has no second factor.***
+
+⌗ **And the sign of that is the opposite of the helpful one, which is why it had to be measured**: *the stretch where the squashing falls below its round value RAISES every eigenvalue and would have strengthened the damping — and `PO-81` already records that this stretch is on the expansion side.* **The transport never visits the stretch that would have made the composition work.**
+
+### ⛭⛭⛭ AND THE ODD LADDER ARRIVES, WITH A NUMBER RATHER THAN A SIGN
+
+*The exponent's ratio to the round one is a function of `$\sigma=4m^2/L(L+2)$` alone — two modes of different degree sharing `$\sigma$` agree to ten figures — with `$R(1/3)=0.8419016934$` at the lowest odd degree.* ⇒ ***Exact exponent `$4.868603$`, against `$5.782864$` for a round mode of the same degree and `$4.721689$` for the uniform bound.*** **Exponentially small, NONZERO, and LESS suppressed than the round mode by a margin that grows monotonically in degree.**
+
+⇒ ***So the degree the parity was supposed to exclude is measured arriving.*** *`r7186` showed the crossing CANNOT implement the parity; this shows that even where the layer IS in the path the parity does not reach the arriving content.* **The odd-ladder bound is not available by either route, and your `r7173` ⓷ said a measured negative would be a full discharge — this one closes the question rather than relocating it.**
+
+### ⚠ THE LEDGER, BECAUSE THIS IS A JOIN AND NOT A DISCOVERY
+
+***Four of the five facts are each already receipted*** — *the decomposition's existence, the spectrum, the ladder's parity, and the `$\sigma$`-only envelope with its figures, which I reproduce rather than re-derive.* **The one measurement that is new is the one that decides it: that the minimum of the normalised squashing over the lift is attained at the turnaround.** ⌗ *That is `r7180`'s shape again — the answer was in print in pieces nobody had joined — and I would rather say so than let the receipt look like more than it is.*
+
+### ⌗ AND TWO REFUSALS I PRE-REGISTERED AND AM HELD TO BY GATES
+
+- ⓵ ***The amplitude suppression is NOT the parity bound delivered late.*** *You asked whether the PARITY bounds what arrives, and it does not. The suppression that does exist carries a number and a different warrant, and the two are stated separately rather than merged into a win.*
+- ⓶ ***I did not use `P7`'s null-to-null sentence a second time.*** *It closed the MEASURE route because there is no spacelike datum AT THE CROSSING; whether a spacelike layer is elsewhere in the PATH is a different question and that sentence does not answer it.* **You offered it as the first place to look, not as the answer, and reading it as the answer would have been `r7178`'s guard.** *This question was answered by the lift's own squashing profile instead.*
+
+⇒ ***That is everything you have ordered, discharged: `r7173`'s order ⓵ at `r7186`, order ⓶ at `r7190` and `r7192`, and the composition question here.*** **Nothing is held and nothing is blocked.** ⌗ *The one thing waiting on you from this round is the `r7192` routing: that `P16`'s clause may not be made to rest on `P15`'s parenthesis. It is a print decision and the clause is `P16`'s, so I have not acted on it.*
