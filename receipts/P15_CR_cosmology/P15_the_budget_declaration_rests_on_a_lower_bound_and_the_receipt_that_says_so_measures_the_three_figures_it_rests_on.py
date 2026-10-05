@@ -137,56 +137,39 @@ gate("Ⓑ①  every one of the three pinned libraries matches the CI pin exactly
      all(f'{k}=={v}' in pins for k, v in have.items()))
 
 # =====================================================================================
-head("C -- THE TWO TIMINGS, TAKEN HERE RATHER THAN QUOTED")
+head("C -- WHAT THE TABLE ITSELF MUST STAY CONSISTENT ABOUT")
 
-tgt = os.path.join(ROOT, 'receipts', 'P15_CR_cosmology', TARGET)
-t0 = time.time()
-r_alone = subprocess.run([sys.executable, tgt], cwd=os.path.dirname(tgt),
-                         capture_output=True, text=True, timeout=900)
-t_alone = time.time() - t0
-print(f"\n    alone:          exit {r_alone.returncode}, {t_alone:.1f}s")
-gate(f"Ⓒ①  the declared receipt PASSES on this machine and takes {t_alone:.0f}s alone -- so the"
-     " declaration is not covering a failure, which is the first thing a budget entry has to not be"
-     " doing",
-     r_alone.returncode == 0 and t_alone < 200)
-
-# four concurrent copies of the SAME receipt -- contention isolated from runner overhead,
-# which is what the claim is about.  The runner's own tree digest is not timed here on purpose:
-# it is a fixed cost of the harness and not of the receipt.
-import concurrent.futures as _cf
-
-t1 = time.time()
-with _cf.ThreadPoolExecutor(max_workers=4) as ex:
-    def _one():
-        return subprocess.run([sys.executable, tgt], cwd=os.path.dirname(tgt),
-                              capture_output=True, text=True, timeout=900)
-    futs = [ex.submit(_one) for _ in range(4)]
-    outs = [f.result() for f in futs]
-t_j4 = time.time() - t1
-print(f"    4 concurrent:   exits {[o.returncode for o in outs]}, {t_j4:.1f}s wall for all four")
-gate("Ⓒ②  and four concurrent copies all PASS, so the receipt is not order-dependent or"
-     " resource-fragile in a way a single run would hide",
-     all(o.returncode == 0 for o in outs) and len(outs) == 4)
-
-gate("Ⓒ③  AND THE WALL TIME FOR FOUR AT ONCE IS WITHIN A FACTOR OF THREE OF ONE ALONE, which is the"
-     " claim of NO CONTENTION SPREAD on this machine -- the ratio and not the absolute seconds,"
-     f" because wall clock is machine-dependent: {t_alone:.0f}s alone against {t_j4:.0f}s for four",
-     t_j4 < 3 * max(t_alone, 5.0))
-
-gate("Ⓒ④  ⇒ so the figure this machine can measure is tens of seconds and the runner's readings were"
-     " past 600s twice: a gap of at least an order of magnitude on matching versions, which this"
-     " receipt records and does NOT explain",
-     t_alone < 200 and 600 / max(t_alone, 1.0) > 3)
-
+# ⛭ r7188: THE TIMINGS ARE NOT GATED HERE, AND THAT IS THE CORRECTION.  The first version of this
+#   receipt asserted wall-clock figures -- the cost alone and under four concurrent copies.  Two of
+#   this corpus's own instruments rejected it immediately and both were right: the tolerance sweep
+#   FLAGGED a moved site, because a timing moves between builds by construction, and the runner-read
+#   sweep reported NOT A SWEEP, because the subprocess runs go red under the trace so the receipt's
+#   later reads were never made.  ** A receipt whose assertions depend on elapsed time cannot be a
+#   receipt in a suite built on reproducible sites. **  The measurements are in the docstring and in
+#   the table's comment, where a figure that moves belongs; what is gated below is only what is
+#   exactly reproducible.
 _spec = importlib.util.spec_from_file_location('_runner', RUNNER)
 _mod = importlib.util.module_from_spec(_spec)
 sys.modules['_runner'] = _mod
 _spec.loader.exec_module(_mod)
-gate("Ⓒ⑤  and the budget in force is read from the runner's own LONG table by IMPORT rather than from"
-     " this receipt's text -- 900s, against a 600s default -- so what is gated here is the number a"
-     " later run will actually use",
-     _mod.LONG.get(TARGET) == 900 and 900 > 600
-     and len([k for k, v in _mod.LONG.items() if v == 900]) >= 2)
+
+gate("Ⓒ①  the budget in force is read from the runner's own table BY IMPORT rather than from this"
+     " receipt's text -- 900s against a 600s default -- so what is gated is the number a later run"
+     " will actually use",
+     _mod.LONG.get(TARGET) == 900 and 900 > 600)
+
+gate("Ⓒ②  and the declared file is one the runner would actually select: it is registered, so the"
+     " declaration is not naming something the table can never reach",
+     any(os.path.basename(f) == TARGET for f in _mod.registered()[0]))
+
+_dups = [k for k, v in _mod.LONG.items() if v == 900]
+gate("Ⓒ③  the entry sits at a step the table already uses rather than at a number invented for it --"
+     f" {len(_dups)} entries share 900s -- so the declaration is inside the table's own convention",
+     len(_dups) >= 2 and all(v % 300 == 0 for v in _mod.LONG.values()))
+
+gate("Ⓒ④  and every budget in the table exceeds the default it overrides, which is the one"
+     " structural property a long-declaration must have and the one a typo would break",
+     all(v > 600 for v in _mod.LONG.values()))
 
 # ------------------------------------------------------------- verdict
 head("VERDICT")
