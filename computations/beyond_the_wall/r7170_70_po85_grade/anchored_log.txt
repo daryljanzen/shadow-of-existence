@@ -1,0 +1,18 @@
+
+== BEFORE r7168 (09161f5c^): 14 anchored site(s); grades {'OPEN': 5, 'UNGRADED': 8, 'THEOREM': 1}
+   per paper: {'CR_framework': 7, 'CR_synthesis': 2, 'SdS-slicing-curve_v2': 1, 'canonical_time': 2, 'cosmogenesis_paper': 1, 'janzen_circle_v3': 1}
+     [OPEN] CR_framework: The programme puts that to two tests of its own---the structural test that closed trapped surfaces do not form and collapse does not complete in finite cosmic time~\cite{
+     [OPEN] CR_framework: What is \emph{not} settled is whether the world realizes the full construction that ontology grounds, and that is left, as everywhere in the programme, to the two open te
+     [OPEN] CR_framework: What is \emph{not} claimed is that the observed cosmos matches that cosmology in every measured detail; that soundness is held to the two tests the programme keeps open--
+     [OPEN] CR_framework: Second, the structural reach is tested in two places the programme holds open to the world: the structural test of the metric-singularity result---that closed trapped sur
+     [OPEN] janzen_circle_v3: Condition (b) is the standing structural test the sequence keeps open, that no event horizon completes at finite exterior time~\cite{JanzenBHcausality}.
+
+== AFTER r7168 (09161f5c): 10 anchored site(s); grades {'THEOREM': 3, 'UNGRADED': 7}
+   per paper: {'CR_framework': 4, 'CR_synthesis': 2, 'SdS-slicing-curve_v2': 1, 'canonical_time': 1, 'cosmogenesis_paper': 1, 'janzen_circle_v3': 1}
+
+== NOW (HEAD): 10 anchored site(s); grades {'THEOREM': 3, 'UNGRADED': 7}
+   per paper: {'CR_framework': 4, 'CR_synthesis': 2, 'SdS-slicing-curve_v2': 1, 'canonical_time': 1, 'cosmogenesis_paper': 1, 'janzen_circle_v3': 1}
+
+== BEFORE r7168, window +-1: 6 of 14 anchored sites read OPEN (per paper: {'CR_framework': 4, 'canonical_time': 1, 'janzen_circle_v3': 1})
+
+== AFTER r7168, window +-1: 1 of 10 anchored sites read OPEN (per paper: {'canonical_time': 1})
