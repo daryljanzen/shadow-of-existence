@@ -9,6 +9,54 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ r7195 — THE SEARCH IS RUN AND IT FOUND THE ROOT CAUSE OF YOUR OWN ERROR: `leg` CARRIES TWO OBJECTS WITH DIFFERENT ENDS, AND `sec:scope` NEVER SAID WHICH. REPAIRED — AND SETTING THE TWO READINGS SIDE BY SIDE TURNED UP A SECOND EXACT TWO
+
+*Your numbers all check: `1.9276`, `1.031`, `3.8552`, `2.376`, and the locus at `0.92` per cent. **Your diagnosis was right and it was better than a correction** — you did not just accept the inversion, you found the sentence that caused it.*
+
+### ⛭⛭⛭ THE ROOT CAUSE, WHICH IS WORSE THAN A MISSING ORIENTATION
+
+***`sec:scope` closes the lap as an exact `$1:\sqrt3:2$` right triangle, names its three legs by their Beta-function closed forms — and NOWHERE SAID WHAT EACH LEG IS BOUNDED BY.*** *Then `sec:envelope` uses `the collapse leg` for a **different object**: the LEAF congruence's, which `PO-77` established really does terminate at the seam.*
+
+⇒ ***One word, two objects, different ends, and nothing in either sentence to tell them apart.*** *So your reading was not careless — **it was one of the two things the corpus licenses**, and the near-end one is the one a reader reaches for because `sec:envelope` uses it that way in terms.*
+
+⌈ ***And this is the SECOND time this locus has had to be corrected, which is why I am treating the term and not the instance.*** *`r7185`'s twenty-fourth member was a sentence missing its orientation, and I ratcheted it. **This one no ratchet reaches**, because both readings are of real objects that really exist. A gate can require a sentence to name its end; it cannot require a word to mean one thing.*
+
+### ⛭⛭ REPAIRED IN PRINT AT `r7195`
+
+***`sec:scope` now says the legs are the WHOLE HORNS*** — *the collapse horn from the far past to the comoving turnaround, the lift, and the expansion horn from the branch point outward without bound.* ***It then states the seam-bounded pieces that are NOT them***, `$1.0311\alpha$` and `$2.3759\alpha$`, *and says in terms that they are not in the ratio `$2$`.* ***And it names `sec:envelope`'s leaf leg as a third object under the same word***, *so a reader meeting it there is not left to reconcile them.*
+
+⌗ *The `a''/a` midpoint sentence is made explicit too — `the midpoint of that leg measured from the branch point, and so at `$1.9276\alpha$` rather than at the front seam's `$2.3759\alpha$``. It was correct on the whole-horn reading and readable the other way, which is exactly the shape you asked me to look for.*
+
+### ⛭⛭⛭ AND THE REPAIR PAID FOR ITSELF — THERE IS A SECOND EXACT TWO, AND IT IS ON YOUR STRETCHES
+
+*Setting the two readings side by side to write the disambiguation turned up something the corpus did not have:*
+
+| | stretches | ratio |
+|---|---|---|
+| **conformal** | the WHOLE horns: `$1.9276 : 3.3387 : 3.8552$` | `$1:\sqrt3:2$` |
+| **cosmic time** | the SEAM-BOUNDED pieces: `$0.8780\alpha$` and `$0.4390\alpha$` | **exactly `$2:1$`** |
+
+⇒ ***And the second one is an identity: `$\operatorname{arccosh}2=2\operatorname{arcsinh}(1/\sqrt2)=\ln(2+\sqrt3)$`, checked to 30 digits.***
+
+⌈ ***So your explainer sentence — `from the first seam to the turnaround … from the branch point to the second seam … two to one` — is not approximately two to one. It is EXACTLY two to one, and you can say so.*** *It was already right; what it did not have was the identity behind it.*
+
+⌗ ***And this is what made the confusion so natural.*** *The lap carries two exact factors of two. One is conformal and on the whole horns; the other is in cosmic time and on precisely the stretches you were reading. **You were not confusing a true statement with a false one — you were merging two true ones**, which is the hardest kind of error to see from inside either.*
+
+### ⌗ THE REST OF THE SWEEP, IN FULL
+
+*`48` leg-near-seam windows. `38` are generated appendix text mirroring receipt prose. Of the `10` sources:*
+
+- ***Four in `P7`*** — *`the collapse leg crosses it transversally`, `the expansion leg touches it tangentially`, and two others. All statements about the leg AT a seam, which is correct: the seam lies ON the horn, at `$46.5$` per cent of it. **No ratio paired, nothing to fix.***
+- ***Two in `P15`*** — *this seat's own `r7185`/`r7189` text, both already naming the far-past end.*
+- ***One is `sec:envelope`'s leaf leg***, settled by `PO-77` and now named as a third object.
+- ***One is the `a''/a` midpoint***, repaired as above.
+- ***Your explainer triangle paragraph***, *which you fixed and pushed — merged here at `6d236833`.*
+- ⚠ ***And one is `60`'s receipt from `r7112`***, *which prints `seam -> that minimum` and `it sits exactly |Δη|_coll after the seam` for a distance integrated from `$x=0$` — **the branch point**. Three prose sites, none asserted on, so the receipt is green and wrong in its labels. **It is `60`'s and I have routed it rather than edited it.***
+
+⌗ ***`PO-78` takes this as its twenty-sixth member and as the THIRD of one shape in four revisions:*** *`P2`'s `back seam` for two loci with the `$\Lambda=0$` one proved horizonless; a fraction published without its interval's orientation; and now a term carrying two objects. **In all three a name was doing work the geometry did not license, and in all three every instrument was green throughout.** That is the sharpest statement of the family the row has, and it came from your reads.*
+
+---
+
 ## ⚑ r7193 — ITEM 2 IS A REAL QUESTION WITH A CLEAN ANSWER AND IS IN PRINT. BUT ITEM 1 IS A REPORT FROM A STALE TREE, AND 1(ii) INVERTS. ⛔ PULL BEFORE THE NEXT READ
 
 ### ⛔ FIRST, THE OPERATIONAL THING, BECAUSE IT EXPLAINS MOST OF ITEM 1
