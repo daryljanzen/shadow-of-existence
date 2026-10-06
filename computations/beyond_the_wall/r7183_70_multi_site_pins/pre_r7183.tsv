@@ -1,0 +1,1064 @@
+kind	file	line	paper	occurrences	literal
+receipt	receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	125	CR_cosmology.tex	0	is now decomposed rather than
+receipt	receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	127	CR_cosmology.tex	1	was decomposed alongside it
+receipt	receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	141	CR_cosmology.tex	0	two consecutive stages of one argument
+receipt	receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	148	CR_cosmology.tex	0	leaves no conflict marker to notice
+receipt	receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	130	CR_cosmology.tex	0	is now decomposed rather than
+receipt	receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	95	CR_cosmology.tex	1	label{sec:what-crosses}
+receipt	receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	101	CR_cosmology.tex	1	A frozen mode has no oscillation for the kernel to damp
+receipt	receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	103	CR_cosmology.tex	0	theta_g = (3/4) D k c_s sin(phi)
+receipt	receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	98	CR_cosmology.tex	1	every} mode exits it and freezes before the crossing
+receipt	receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	99	CR_cosmology.tex	1	mode exits it and freezes before the crossing
+receipt	receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	111	CR_cosmology.tex	1	A frozen mode has no oscillation for the kernel to damp
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	93	canonical_time.tex	1	The substrate's scale is $\alpha$ and is fixed---not chosen, but required
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	95	canonical_time.tex	1	so there is no conformal mode to integrate over
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	97	canonical_time.tex	1	so there is no conformal mode to integrate over
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	101	canonical_time.tex	0	whether it is bounded below
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	104	canonical_time.tex	1	a harmonic oscillator, whose Hamiltonian is bounded below
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	110	canonical_time.tex	3	harmonic oscillator
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	89	canonical_time.tex	1	conformal-factor problem arises when the path integral ranges over the conformal factor
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	90	canonical_time.tex	1	Here it does not
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	107	canonical_time.tex	4	the transverse-traceless shear
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	108	canonical_time.tex	1	precisely the sector the conformal mode is absent from
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	116	canonical_time.tex	1	is likewise confined
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	116	canonical_time.tex	1	on an interval fixed by the progenitor mass
+receipt	receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	117	canonical_time.tex	1	finite throughout
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	119	canonical_time.tex	0	whether it is bounded below
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	124	canonical_time.tex	1	the operator is a sum of squares
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	127	canonical_time.tex	1	bounded below by $\gamma$ and unbounded above
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	73	canonical_time.tex	2	uses only that both sides of the threshold are occupied
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	74	canonical_time.tex	1	not that the spectrum has a floor
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	83	canonical_time.tex	1	is not assumed here
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	83	canonical_time.tex	1	though it does in fact follow
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	103	canonical_time.tex	1	straddle itself is a computed fact\rcpt{P10_the_straddle_is_computed}
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	104	canonical_time.tex	1	does occupy both sides
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	108	canonical_time.tex	1	does not bear on the closure below
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	109	canonical_time.tex	2	fibre by fibre
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	133	canonical_time.tex	1	commutes with the radial part
+receipt	receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	133	canonical_time.tex	1	decomposes as a direct integral
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	94	canonical_time.tex	0	A node may write a bounded negative
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	99	canonical_time.tex	1	decomposes as a direct integral over its spectrum
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	104	canonical_time.tex	1	supplies the condition fibre by fibre
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	142	canonical_time.tex	0	not need a lower bound
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	101	canonical_time.tex	1	essentially self-adjoint where $\hat\Gamma\ge\tfrac34$
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	102	canonical_time.tex	1	limit-circle where $\hat\Gamma<\tfrac34$
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	115	canonical_time.tex	2	a different thing from a residual freedom in the quantization
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	116	canonical_time.tex	1	does not settle it
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	146	canonical_time.tex	0	the first of the leading-order
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	146	canonical_time.tex	0	the second of the complete one
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	151	canonical_time.tex	0	TRUNCATION ARTEFACT
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	151	canonical_time.tex	1	1+\lambda\phi
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	153	canonical_time.tex	0	not need a lower bound
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	153	canonical_time.tex	0	TRUNCATION ARTEFACT
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	156	canonical_time.tex	2	ultraviolet definition of the tower sums
+receipt	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	157	canonical_time.tex	0	closed-form nonlinear
+receipt	receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py	83	canonical_time.tex	0	A node may write a bounded negative
+receipt	receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py	95	canonical_time.tex	1	$n(n+2)-2$, $n\ge 2$
+receipt	receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py	97	canonical_time.tex	1	the tower's frequencies are $\mu_n^2=n(n+2)$
+receipt	receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py	99	canonical_time.tex	1	time-dependent mass $a^3$ and frequency $\mu_n/a$
+receipt	receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py	100	canonical_time.tex	1	\pi_n=a^3\dot\phi_n
+receipt	receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py	123	canonical_time.tex	1	$n\ge 2$
+receipt	receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py	138	canonical_time.tex	1	the divergence is measured here rather than characterised
+receipt	receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py	125	canonical_time.tex	1	$n\ge 2$
+receipt	receipts/L165_interacting_tower/D3_the_floor_does_not_survive_the_cubic.py	116	canonical_time.tex	1	At leading order $\hat\Gamma=\gamma+c\sum_n\hat\pi_n^2$
+receipt	receipts/L165_interacting_tower/D3_the_floor_does_not_survive_the_cubic.py	114	canonical_time.tex	1	is not assumed here
+receipt	receipts/L165_interacting_tower/D3_the_floor_does_not_survive_the_cubic.py	114	canonical_time.tex	1	though it does in fact follow
+receipt	receipts/L165_interacting_tower/D3_the_floor_does_not_survive_the_cubic.py	119	canonical_time.tex	1	the cubic and higher self-interactions enter at the same inverse-square order at the origin
+receipt	receipts/L165_interacting_tower/D3_the_floor_does_not_survive_the_cubic.py	120	canonical_time.tex	1	\pi_n^2\phi_m/a^3$ in kind
+receipt	receipts/L165_interacting_tower/D3_the_floor_does_not_survive_the_cubic.py	142	canonical_time.tex	2	uses only that both sides of the threshold are occupied
+receipt	receipts/L165_interacting_tower/D3_the_floor_does_not_survive_the_cubic.py	143	canonical_time.tex	1	not that the spectrum has a floor
+receipt	receipts/L165_interacting_tower/D4_the_state_fixer_has_its_own_threshold.py	83	canonical_time.tex	1	Thermal (Hartle--Hawking) regularity is Euclidean smoothness at the horizon mode by mode
+receipt	receipts/L165_interacting_tower/D4_the_state_fixer_has_its_own_threshold.py	89	canonical_time.tex	1	and so is common to every fibre
+receipt	receipts/L165_interacting_tower/D4_the_state_fixer_has_its_own_threshold.py	86	canonical_time.tex	1	on each sub-threshold fibre
+receipt	receipts/L165_interacting_tower/D4_the_state_fixer_has_its_own_threshold.py	86	canonical_time.tex	1	limit-point fibres
+receipt	receipts/L165_interacting_tower/D50_the_floor_does_survive_and_the_paper_said_so_232_revisions_earlier.py	194	canonical_time.tex	3	artefact
+receipt	receipts/L165_interacting_tower/D50_the_floor_does_survive_and_the_paper_said_so_232_revisions_earlier.py	210	canonical_time.tex	0	truncated min
+receipt	receipts/L165_interacting_tower/S10_the_halves_meet_at_the_shear.py	108	canonical_time.tex	0	transverse-traceless graviton modes form a discrete tower
+receipt	receipts/L165_interacting_tower/S10_the_halves_meet_at_the_shear.py	111	canonical_time.tex	1	transverse-traceless graviton tower
+receipt	receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	80	canonical_time.tex	1	independently of operator ordering
+receipt	receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	88	canonical_time.tex	1	ordering ambiguity cannot render the quantization unique
+receipt	receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	97	canonical_time.tex	1	thermal regularity supplies the condition fibre by fibre
+receipt	receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	83	canonical_time.tex	2	across the natural ordering family
+receipt	receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	84	canonical_time.tex	2	strictly below the essential-self-adjointness threshold
+receipt	receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	92	canonical_time.tex	1	selects the Friedrichs extension
+receipt	receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	93	canonical_time.tex	2	closed without a free parameter
+receipt	receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	109	canonical_time.tex	1	what remains open is not the boundary
+receipt	receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	110	canonical_time.tex	2	a different thing from a residual freedom in the quantization
+receipt	receipts/L165_interacting_tower/S12_the_boundaries_coincide.py	103	canonical_time.tex	1	transverse-traceless graviton tower
+receipt	receipts/L165_interacting_tower/S12_the_boundaries_coincide.py	114	canonical_time.tex	2	a different thing from a residual freedom in the quantization
+receipt	receipts/L165_interacting_tower/S13_the_ledger_does_not_reach_second_order.py	129	geometric_core_paper.tex	1	is a pure power of
+receipt	receipts/L165_interacting_tower/S13_the_ledger_does_not_reach_second_order.py	129	geometric_core_paper.tex	1	one-constant theory
+receipt	receipts/L165_interacting_tower/S8_the_floor_follows.py	105	canonical_time.tex	0	IT DOES NOT NEED A LOWER BOUND
+receipt	receipts/L165_interacting_tower/S8_the_floor_follows.py	108	canonical_time.tex	0	correct of DIFFERENT operators
+receipt	receipts/L165_interacting_tower/S8_the_floor_follows.py	94	canonical_time.tex	1	promoted from the c-number
+receipt	receipts/L165_interacting_tower/S8_the_floor_follows.py	94	canonical_time.tex	1	straddles the
+receipt	receipts/L165_interacting_tower/S8_the_floor_follows.py	97	canonical_time.tex	1	the inverse-square operator
+receipt	receipts/L165_interacting_tower/S8_the_floor_follows.py	97	canonical_time.tex	9	at the origin
+receipt	receipts/L165_interacting_tower/S8_the_floor_follows.py	100	canonical_time.tex	1	limit-circle where
+receipt	receipts/L165_interacting_tower/S8_the_floor_follows.py	100	canonical_time.tex	1	essentially self-adjoint where
+receipt	receipts/L165_interacting_tower/S8_the_floor_follows.py	118	canonical_time.tex	1	is an artefact of truncation
+receipt	receipts/L165_interacting_tower/S8_the_floor_follows.py	119	canonical_time.tex	1	positive wherever the metric is non-degenerate
+receipt	receipts/L165_interacting_tower/S9_the_ordering_decides_it.py	127	canonical_time.tex	2	both sides of the threshold are occupied
+receipt	receipts/L165_interacting_tower/S9_the_ordering_decides_it.py	123	canonical_time.tex	1	is $\tfrac14$ under normal ordering
+receipt	receipts/L165_interacting_tower/S9_the_ordering_decides_it.py	124	canonical_time.tex	1	exactly the zero-point quantum
+receipt	receipts/L174_general_matter_dynamics/I10_the_constraint_propagation_is_symmetry_free.py	131	dynamics_paper.tex	1	Two exact structures sharpen this beyond the Bianchi count
+receipt	receipts/L174_general_matter_dynamics/I10_the_constraint_propagation_is_symmetry_free.py	134	dynamics_paper.tex	1	Two exact structures sharpen this beyond the Bianchi count
+receipt	receipts/L174_general_matter_dynamics/I10_the_constraint_propagation_is_symmetry_free.py	127	dynamics_paper.tex	1	evolves consistently to all orders by the contracted Bianchi identity
+receipt	receipts/L174_general_matter_dynamics/I10_the_constraint_propagation_is_symmetry_free.py	128	dynamics_paper.tex	1	no classical dynamical obstruction at any order
+receipt	receipts/L174_general_matter_dynamics/I10_the_constraint_propagation_is_symmetry_free.py	151	dynamics_paper.tex	5	Friedrich
+receipt	receipts/L174_general_matter_dynamics/I10_the_constraint_propagation_is_symmetry_free.py	155	dynamics_paper.tex	5	Friedrich
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	106	range_paper.tex	1	generation-by-symmetry hands off to evolution-by-dynamics
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	116	range_paper.tex	0	exact for arbitrary
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	121	range_paper.tex	0	not the discovery of a generative law
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	94	range_paper.tex	0	unregistered since r565
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	94	range_paper.tex	0	UNREGISTERED SINCE r565
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	99	range_paper.tex	1	The wall is inhomogeneity
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	99	range_paper.tex	1	no continuous isometry admits no sweep-subgroup
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	114	range_paper.tex	0	one equation per comoving shell
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	114	range_paper.tex	0	ONE equation per comoving shell
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	131	range_paper.tex	0	SOURCE COMMENT
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	134	range_paper.tex	0	corrected at c54.179
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	134	range_paper.tex	0	is corrected at c54.179
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	125	range_paper.tex	0	one equation per comoving shell
+receipt	receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	126	range_paper.tex	0	ONE equation per comoving shell
+receipt	receipts/L174_general_matter_dynamics/I3_the_identification_is_general_and_the_shear_count_is_the_gap.py	94	dynamics_paper.tex	1	exactly two Killing vectors
+receipt	receipts/L174_general_matter_dynamics/I3_the_identification_is_general_and_the_shear_count_is_the_gap.py	94	dynamics_paper.tex	1	the last confined stratum before the wall
+receipt	receipts/L174_general_matter_dynamics/I3_the_identification_is_general_and_the_shear_count_is_the_gap.py	161	dynamics_paper.tex	1	The two polarizations are a wave map into the hyperbolic plane
+receipt	receipts/L174_general_matter_dynamics/I3_the_identification_is_general_and_the_shear_count_is_the_gap.py	162	dynamics_paper.tex	1	polarized case being a geodesic
+receipt	receipts/L174_general_matter_dynamics/I3_the_identification_is_general_and_the_shear_count_is_the_gap.py	163	dynamics_paper.tex	1	second polarization lives
+receipt	receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	80	range_paper.tex	0	nothing in the identity says which of them a bend can be
+receipt	receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	114	range_paper.tex	1	shear forbids a repeated principal null direction
+receipt	receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	121	range_paper.tex	1	a Type-D vacuum admits a Killing tensor
+receipt	receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	123	range_paper.tex	21	vacuum kernel
+receipt	receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	128	range_paper.tex	1	such a geometry is one whose matter is genuinely inhomogeneous
+receipt	receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	140	range_paper.tex	21	vacuum kernel
+receipt	receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	107	range_paper.tex	1	the substrate's null rulings are shear-free
+receipt	receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	107	range_paper.tex	1	this is the Type-D corner
+receipt	receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	110	range_paper.tex	1	shear forbids a repeated principal null direction
+receipt	receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	132	range_paper.tex	1	such a geometry is one whose matter is genuinely inhomogeneous
+receipt	receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	137	range_paper.tex	0	nothing in the identity says which of them a bend can be
+receipt	receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	90	range_paper.tex	1	The graviton's two propagating polarizations are exactly the transverse degrees of freedom a sweep cannot carry
+receipt	receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	94	range_paper.tex	1	a swept geometry depends only on its orbit-space coordinates
+receipt	receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	101	range_paper.tex	0	D_j sigma^ij
+receipt	receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	113	range_paper.tex	0	K^2 - K_ij K^ij
+receipt	receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	97	range_paper.tex	1	The graviton's two propagating polarizations
+receipt	receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	105	range_paper.tex	0	five-dimensional space of configurations at fixed rho and theta
+receipt	receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	106	range_paper.tex	0	nothing in the identity says which
+receipt	receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	108	range_paper.tex	0	D_j sigma^ij
+receipt	receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	109	range_paper.tex	0	five-dimensional space of configurations at fixed rho and theta
+receipt	receipts/L174_general_matter_dynamics/I9_the_stratum_evolves_by_ordinary_GR_at_linear_order.py	116	range_paper.tex	1	The graviton's two propagating polarizations
+receipt	receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	91	canonical_time.tex	0	the field with no footprint at all
+receipt	receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	93	canonical_time.tex	0	available and unthrown
+receipt	receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	188	canonical_time.tex	1	the Einstein--Hilbert action is recast in Hamiltonian form
+receipt	receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	191	canonical_time.tex	1	conformal factor entering the Einstein--Hilbert action with the opposite sign
+receipt	receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	193	canonical_time.tex	1	reduced from the Einstein--Hilbert action
+receipt	receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	196	canonical_time.tex	1	The second-order Einstein--Hilbert action in the transverse-traceless sector reduces, mode by mode, to that of a harmonic oscillator
+receipt	receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	176	canonical_time.tex	0	Varying an action returns a field \emph{equality}, and an equality has no direction
+receipt	receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	177	canonical_time.tex	0	is not a question the variation asks
+receipt	receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	178	canonical_time.tex	0	the two are orthogonal, not in competition
+receipt	receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	179	canonical_time.tex	0	The reading has no quarrel with a variational route
+receipt	receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	225	canonical_time.tex	0	the two are orthogonal, not in competition
+receipt	receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	226	canonical_time.tex	0	The reading has no quarrel with a variational route
+receipt	receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	112	CR_framework.tex	1	second, antilinear face of the same object
+receipt	receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	107	CR_framework.tex	5	mass-reflection
+receipt	receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	107	CR_framework.tex	2	antimatter at the weight the fundamental branch is matter
+receipt	receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	110	CR_framework.tex	3	reality involution
+receipt	receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	110	CR_framework.tex	2	complexified cosmic time
+receipt	receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	117	CR_framework.tex	0	not claimed BOTH WAYS
+receipt	receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	117	CR_framework.tex	0	not claimed both ways
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	76	CR_framework.tex	1	reality involution $K:\tilde\tau\mapsto\bar{\tilde\tau}$
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	78	CR_framework.tex	1	swaps the two conjugate wings of the lap
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	80	CR_framework.tex	1	two conjugate wings
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	82	CR_framework.tex	1	the two axis-symmetries of one analytic object
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	84	CR_framework.tex	1	carrying $K$ with the cosmogenetic lap and its two wings
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	91	CR_framework.tex	1	C=(Q\mapsto-Q)_{\mathrm{field}}\circ(R\circ K)_{\mathrm{geometric}}
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	93	CR_framework.tex	1	complex-analytic and geometric
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	97	CR_framework.tex	1	the self-conjugate photon congruence
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	99	CR_framework.tex	1	fixes the neutral real axis, the self-conjugate photon congruence
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	104	CR_framework.tex	0	not claimed BOTH WAYS
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	107	CR_framework.tex	0	off-real
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	88	CR_framework.tex	1	reproducing $C$'s action on species
+receipt	receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	89	CR_framework.tex	1	Feynman--St\"uckelberg particle$\leftrightarrow$antiparticle wing structure
+receipt	receipts/L202_the_seam/T1_the_transfer_is_half_built.py	117	CR_cosmology.tex	1	carried on this cosmology's own background with the perturbations on the leaf congruence the framework assigns them
+receipt	receipts/L202_the_seam/T1_the_transfer_is_half_built.py	132	CR_cosmology.tex	1	also governs the high-$\ell$ driving envelope
+receipt	receipts/L202_the_seam/T1_the_transfer_is_half_built.py	137	CR_cosmology.tex	1	on a genuine Boltzmann transfer a dip whose
+receipt	receipts/L202_the_seam/T1_the_transfer_is_half_built.py	142	CR_cosmology.tex	1	carried by a structural argument rather than a bespoke transfer
+receipt	receipts/L202_the_seam/T1_the_transfer_is_half_built.py	150	CR_cosmology.tex	1	located by the joint fit as a Gaussian residual in $\ell$ that no tilt removes
+receipt	receipts/L202_the_seam/T1_the_transfer_is_half_built.py	113	CR_cosmology.tex	1	The end-to-end branch-point-to-recombination transfer is run} (\S\ref{sec:refit-bound})
+receipt	receipts/L202_the_seam/T1_the_transfer_is_half_built.py	114	CR_cosmology.tex	1	Of the four, three are run and one is a frontier
+receipt	receipts/L202_the_seam/T1_the_transfer_is_half_built.py	121	CR_cosmology.tex	2	validated on its control to
+receipt	receipts/L202_the_seam/T1_the_transfer_is_half_built.py	122	CR_cosmology.tex	3	C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation
+receipt	receipts/L202_the_seam/T1_the_transfer_is_half_built.py	128	CR_cosmology.tex	1	That driving is computed below
+receipt	receipts/L202_the_seam/T1_the_transfer_is_half_built.py	129	CR_cosmology.tex	1	the envelope is derived on the collapse leg rather than imported
+receipt	receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	86	groupoid_paper.tex	0	cross-ratio is the **equianharmonic** $e^{i\pi/3}$
+receipt	receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	129	groupoid_paper.tex	1	monodromy group of a branched cover is the Galois group
+receipt	receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	132	groupoid_paper.tex	1	worn three ways
+receipt	receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	143	groupoid_paper.tex	6	equianharmonic
+receipt	receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	81	groupoid_paper.tex	0	complex analysis / monodromy
+receipt	receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	81	groupoid_paper.tex	0	quadric bake
+receipt	receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	121	groupoid_paper.tex	1	which is equally the Galois group of that cubic
+receipt	receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	122	groupoid_paper.tex	1	one $S_{3}$ worn as monod
+receipt	receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	126	groupoid_paper.tex	1	trivial deck group
+receipt	receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	134	groupoid_paper.tex	1	worn three ways
+receipt	receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	141	groupoid_paper.tex	3	deck group
+receipt	receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	141	groupoid_paper.tex	5	three-sheeted
+receipt	receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	90	matter_sector_paper.tex	1	marks the Atiyah--Singer statement on the branched bead as traced rather than computed
+receipt	receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	94	matter_sector_paper.tex	1	stated here at traced weight
+receipt	receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	112	matter_sector_paper.tex	1	the three zero-modes are permuted by the full $S_3$ generated by the three hinges
+receipt	receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	114	matter_sector_paper.tex	2	the Weyl $S_3$ \emph{is} the relation among the three hinges
+receipt	receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	117	matter_sector_paper.tex	0	order-six-adjacent objects
+receipt	receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	123	matter_sector_paper.tex	0	The handoff outranks the list order
+receipt	receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	83	matter_sector_paper.tex	5	graded index
+receipt	receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	83	matter_sector_paper.tex	0	K-theory
+receipt	receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	87	matter_sector_paper.tex	3	\dim\ker_+=3
+receipt	receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	87	matter_sector_paper.tex	3	\dim\ker_-=0
+receipt	receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	120	matter_sector_paper.tex	0	order-six-adjacent objects
+receipt	receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	121	matter_sector_paper.tex	1	the three zero-modes are permuted by the full $S_3$
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	90	algebroid_paper.tex	0	Lie algebroids
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	164	algebroid_paper.tex	1	Cartan--Weyl skeleton
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	179	algebroid_paper.tex	0	covering map carries a canonical flat connection
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	181	algebroid_paper.tex	0	covering map
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	185	algebroid_paper.tex	0	order-six-adjacent objects
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	148	algebroid_paper.tex	1	the Atiyah algebroid of the principal bundle
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	149	algebroid_paper.tex	1	\label{eq:atiyah}
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	150	algebroid_paper.tex	1	naming it costs nothing and buys
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	159	algebroid_paper.tex	0	constraint algebra of general relativity is the Atiyah algebroid of the substrate
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	187	algebroid_paper.tex	0	PREREQUISITE
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	187	algebroid_paper.tex	0	prerequisite
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	201	algebroid_paper.tex	0	order-six-adjacent objects
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	202	algebroid_paper.tex	1	\label{eq:atiyah}
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	203	algebroid_paper.tex	1	the kernel of the anchor---the adjoint bundle
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	204	algebroid_paper.tex	1	10+5=15=\dim\so(5,1)
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	160	algebroid_paper.tex	2	the anchor is the slicing operator's cut-to-stress-energy map
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	161	algebroid_paper.tex	1	the Atiyah algebroid of the principal bundle
+receipt	receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	162	algebroid_paper.tex	1	The claim is a recognition rather than
+receipt	receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	96	cosmogenesis_paper.tex	0	BBN, recombination, the acoustic scale
+receipt	receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	155	cosmogenesis_paper.tex	3	right-handed
+receipt	receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	166	cosmogenesis_paper.tex	3	right-handed
+receipt	receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	139	cosmogenesis_paper.tex	0	(4.0/11.0)**(1.0/3.0)
+receipt	receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	141	cosmogenesis_paper.tex	1	three neutrino
+receipt	receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	155	cosmogenesis_paper.tex	7	neutrino
+receipt	receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	150	cosmogenesis_paper.tex	0	(4.0/11.0)**(1.0/3.0)
+receipt	receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	80	cosmogenesis_paper.tex	1	a nearly scale-invariant adiabatic spectrum processed by ordinary structure formation
+receipt	receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	84	cosmogenesis_paper.tex	1	a fully specified input, available from standard cosmology, and not an idealisation to be chosen
+receipt	receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	88	cosmogenesis_paper.tex	1	available from standard cosmology
+receipt	receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	126	cosmogenesis_paper.tex	1	available from standard cosmology
+receipt	receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	102	cosmogenesis_paper.tex	1	the data demand it
+receipt	receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	102	cosmogenesis_paper.tex	1	two independent supports
+receipt	receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	121	cosmogenesis_paper.tex	1	available from standard cosmology
+receipt	receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	116	cosmogenesis_paper.tex	1	wrong place
+receipt	receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	162	BH_causality_v2.tex	0	never leaves the unitary, globally hyperbolic setting
+receipt	receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	188	BH_causality_v2.tex	1	it does not arise, because the spacetime it requires is never physically instantiated
+receipt	receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	99	BH_causality_v2.tex	0	quantum information
+receipt	receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	99	BH_causality_v2.tex	4	information paradox
+receipt	receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	152	BH_causality_v2.tex	0	does not end as a thermal remnant whose purity must be explained
+receipt	receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	153	BH_causality_v2.tex	0	it becomes a universe
+receipt	receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	156	BH_causality_v2.tex	0	it becomes a universe
+receipt	receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	165	BH_causality_v2.tex	0	never leaves the unitary, globally hyperbolic setting
+receipt	receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	202	BH_causality_v2.tex	1	crossing such a boundary
+receipt	receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	203	BH_causality_v2.tex	2	is not settled here
+receipt	receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	204	BH_causality_v2.tex	3	JanzenDynamics
+receipt	receipts/L207_the_bend/W2_the_general_inhomogeneous_leaf_exhibited.py	150	janzen_circle_v3.tex	0	EXHIBITION, not a DISCOVERY
+receipt	receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	66	SdS-slicing-curve_v2.tex	3	r(z)=M(1+\cos z)$
+receipt	receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	81	SdS-slicing-curve_v2.tex	1	non-degenerate critical points of identical analytic character
+receipt	receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	87	SdS-slicing-curve_v2.tex	0	FRW/Kerr/RN analogous removal
+receipt	receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	100	SdS-slicing-curve_v2.tex	0	FRW/Kerr/RN analogous removal
+receipt	receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	94	SdS-slicing-curve_v2.tex	0	a CONSTANT
+receipt	receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	94	SdS-slicing-curve_v2.tex	0	bound-LTB form
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	98	CR_cosmology.tex	1	fixed by the progenitor collapse---the same handover that fixes $\rho_r/\rho_m$
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	110	CR_cosmology.tex	2	10^{113}
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	114	CR_cosmology.tex	1	the branch point carries the progenitor tilt
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	117	CR_cosmology.tex	1	does not drive $n_s\to1$ by any \emph{inflationary} attractor
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	125	CR_cosmology.tex	1	dimensionless magnitude
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	94	CR_cosmology.tex	1	as against the measurement---of $A_s$ and $n_s$
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	104	CR_cosmology.tex	0	\rho_{r}/\rho_{m}
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	104	CR_cosmology.tex	4	\rho_r/\rho_m
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	108	CR_cosmology.tex	4	10^{-122}
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	108	CR_cosmology.tex	1	A_s\approx2\times10^{-9}
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	123	CR_cosmology.tex	1	dimensionless magnitude
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	123	CR_cosmology.tex	0	two invariants
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	142	CR_cosmology.tex	0	7.4\times10^
+receipt	receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	150	CR_cosmology.tex	0	4.17\times10^{52}
+receipt	receipts/L211_closure_adjacency/A4_the_composition_rests_on_adiabaticity_not_uniformity.py	102	CR_cosmology.tex	1	adiabaticity parameter $C/\mu_{n}$
+receipt	receipts/L211_closure_adjacency/A4_the_composition_rests_on_adiabaticity_not_uniformity.py	107	CR_cosmology.tex	1	the branch point carries the progenitor tilt
+receipt	receipts/L211_closure_adjacency/A4_the_composition_rests_on_adiabaticity_not_uniformity.py	110	CR_cosmology.tex	1	Classical, non-vacuum primordial statistics
+receipt	receipts/L211_closure_adjacency/A4_the_composition_rests_on_adiabaticity_not_uniformity.py	73	CR_cosmology.tex	0	a small perturbation shares its
+receipt	receipts/L211_closure_adjacency/A4_the_composition_rests_on_adiabaticity_not_uniformity.py	73	CR_cosmology.tex	0	background's composition
+receipt	receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	93	boundary_paper.tex	0	TWO arguments wearing one sentence
+receipt	receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	95	boundary_paper.tex	0	stated so the argument cannot be made without it
+receipt	receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	111	boundary_paper.tex	1	a thing exists only insofar as it endures
+receipt	receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	113	boundary_paper.tex	1	no timelike direction, no clock, no duration
+receipt	receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	115	boundary_paper.tex	3	real-by-construction
+receipt	receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	117	boundary_paper.tex	1	no timelike direction, no clock, no duration
+receipt	receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	91	boundary_paper.tex	0	REMOVE AN EXCEPTION
+receipt	receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	91	boundary_paper.tex	0	ADD MACHINERY
+receipt	receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	121	boundary_paper.tex	0	These are not the same frontier
+receipt	receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	121	boundary_paper.tex	0	would have to supply BOTH
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	113	matter_sector_paper.tex	0	A node may write a bounded negative
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	115	matter_sector_paper.tex	0	a closure on a protected item is Daryl
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	140	matter_sector_paper.tex	0	`lepton` ×1 (inside a bibliography title), `quark` ×0
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	148	matter_sector_paper.tex	2	baryon $1$, diquark $0$, meson $1$
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	150	matter_sector_paper.tex	1	selected} rather than chosen
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	159	matter_sector_paper.tex	1	total dimension four
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	170	matter_sector_paper.tex	1	acts trivially on $\nu_L$, $e_L$, $e_R$ and $\nu_R$ alike
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	179	matter_sector_paper.tex	1	draws nothing from it
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	119	matter_sector_paper.tex	0	a closure on a protected item is made in the register with a kill receipt
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	145	matter_sector_paper.tex	1	places a three-fermion state in the exterior cube
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	146	matter_sector_paper.tex	1	generated by $\varepsilon$
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	155	matter_sector_paper.tex	1	trivial on the deck $\mathbb{Z}_{3}$
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	156	matter_sector_paper.tex	1	which is what carrying no colour would mean
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	157	matter_sector_paper.tex	1	four one-dimensional ones
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	162	matter_sector_paper.tex	1	one generation splits $12$ coloured against $3$ colourless
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	163	matter_sector_paper.tex	3	with a right-handed neutrino
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	165	matter_sector_paper.tex	1	total dimension four
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	175	matter_sector_paper.tex	1	a count of gradings and not of fields
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	176	matter_sector_paper.tex	1	this paper draws nothing from it
+receipt	receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	194	matter_sector_paper.tex	0	made in the register with a kill receipt
+receipt	receipts/L221_quark_lepton/Q2_the_kernel_route_is_unavailable_off_the_R_even_sector.py	138	matter_sector_paper.tex	1	external to the geometry
+receipt	receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	96	janzen_circle_v3.tex	1	the excursion's three critical loci sit at three equally spaced values of $f$
+receipt	receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	92	janzen_circle_v3.tex	1	Whether the two triples are one structure
+receipt	receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	93	janzen_circle_v3.tex	1	no derivation producing $\{0,1,2\}$ from a single condition has been exhibited
+receipt	receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	108	janzen_circle_v3.tex	0	1/\sqrt3$ and the one distinguished by the merger is $-2/\sqrt3$
+receipt	receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	109	janzen_circle_v3.tex	0	1/\sqrt3
+receipt	receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	109	janzen_circle_v3.tex	0	-2/\sqrt3
+receipt	receipts/L221_the_bridge/B13_po2_identification_is_stated.py	80	matter_sector_paper.tex	1	each hinge designates one of the three roots of the horizon cubic as its own black-hole horizon
+receipt	receipts/L221_the_bridge/B13_po2_identification_is_stated.py	83	matter_sector_paper.tex	1	places a slicing plane on each: three throat walls
+receipt	receipts/L221_the_bridge/B13_po2_identification_is_stated.py	84	matter_sector_paper.tex	1	hence three chiral zero-modes
+receipt	receipts/L221_the_bridge/B13_po2_identification_is_stated.py	87	matter_sector_paper.tex	1	is not a second group resembling the substrate's own
+receipt	receipts/L221_the_bridge/B13_po2_identification_is_stated.py	89	matter_sector_paper.tex	2	a transposition of roots is a hop to a neighbouring hinge
+receipt	receipts/L221_the_bridge/B13_po2_identification_is_stated.py	91	matter_sector_paper.tex	2	the Weyl $S_3$ \emph{is} the relation among the three hinges
+receipt	receipts/L221_the_bridge/B13_po2_identification_is_stated.py	95	matter_sector_paper.tex	0	1/\sqrt3
+receipt	receipts/L221_the_bridge/B13_po2_identification_is_stated.py	95	matter_sector_paper.tex	1	each hinge designates
+receipt	receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	87	matter_sector_paper.tex	1	Every root, designated the slicing parameter, returns the \emph{same} $2M=r_0-r_0^3$
+receipt	receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	101	matter_sector_paper.tex	2	the generations' own threeness being the turnaround's deck
+receipt	receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	116	matter_sector_paper.tex	2	with the wall structure fixing the \emph{number} at either seat
+receipt	receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	118	matter_sector_paper.tex	1	a count and a chirality rather than a seat
+receipt	receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	91	matter_sector_paper.tex	1	the three carry one mass parameter and are identical in content
+receipt	receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	92	matter_sector_paper.tex	1	distinguished only by which root each takes as its hole
+receipt	receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	97	matter_sector_paper.tex	1	within-state} index and not a family symmetry
+receipt	receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	98	matter_sector_paper.tex	0	within-state index and not a family symmetry
+receipt	receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	122	matter_sector_paper.tex	11	within-state
+receipt	receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	122	matter_sector_paper.tex	2	identical in content
+receipt	receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	97	matter_sector_paper.tex	0	parity doubling, and does that reason bridge to $\su(3)$
+receipt	receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	102	matter_sector_paper.tex	1	The mass function is odd in the signed offset exactly when $D$ is even
+receipt	receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	103	matter_sector_paper.tex	2	odd in the signed offset
+receipt	receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	137	matter_sector_paper.tex	1	three wall monodromies and the hinge
+receipt	receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	137	matter_sector_paper.tex	2	three wall monodromies with the hinge
+receipt	receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	117	matter_sector_paper.tex	1	the three wall monodromies and the hinge $3$-cycle generate a finite group of order $81$ in $U(3)$
+receipt	receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	118	matter_sector_paper.tex	1	whose determinant-one part is $\Delta(27)$ and lies in $SU(3)$
+receipt	receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	119	matter_sector_paper.tex	1	the smallest connected group containing the ratios together with the hinge three-cycle is $SU(3)$ itself
+receipt	receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	123	matter_sector_paper.tex	2	wall monodromies with the hinge
+receipt	receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	124	matter_sector_paper.tex	1	three wall monodromies and the hinge
+receipt	receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	140	matter_sector_paper.tex	0	The bridge was BUILT
+receipt	receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	142	matter_sector_paper.tex	2	odd in the signed offset
+receipt	receipts/L221_the_bridge/B16_the_coupling_cannot_come_from_this_bundle.py	82	matter_sector_paper.tex	1	Flat holonomy supplies exact selection rules and no curvature
+receipt	receipts/L221_the_bridge/B16_the_coupling_cannot_come_from_this_bundle.py	84	matter_sector_paper.tex	1	the geometry quantises and does not couple
+receipt	receipts/L221_the_bridge/B16_the_coupling_cannot_come_from_this_bundle.py	87	matter_sector_paper.tex	2	has a holonomy about the Nariai points
+receipt	receipts/L221_the_bridge/B16_the_coupling_cannot_come_from_this_bundle.py	100	matter_sector_paper.tex	1	closes the Weyl group of the substrate's own complexified isometry algebra
+receipt	receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	87	matter_sector_paper.tex	1	changes which flat bundle one has and not whether there is a field strength
+receipt	receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	92	matter_sector_paper.tex	1	carries a dimensionless coupling that a single length cannot build
+receipt	receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	108	matter_sector_paper.tex	1	not that the coupling is unbuilt but that a coupling is not the kind of thing a holonomy supplies
+receipt	receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	83	matter_sector_paper.tex	1	no holonomy datum can take one off it
+receipt	receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	84	matter_sector_paper.tex	1	holonomy is precisely the complete invariant a flat connection has
+receipt	receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	95	matter_sector_paper.tex	1	decades below the strong scale
+receipt	receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	96	matter_sector_paper.tex	1	in the infrared rather than the ultraviolet direction from it
+receipt	receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	126	matter_sector_paper.tex	1	the isometry route is excluded separately
+receipt	receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	127	matter_sector_paper.tex	1	no third mechanism has been named
+receipt	receipts/L221_the_bridge/B18_the_obstruction_is_horizon_located.py	79	matter_sector_paper.tex	1	in that induced proper measure the horizons sit at finite distance and the modes are bound
+receipt	receipts/L221_the_bridge/B18_the_obstruction_is_horizon_located.py	83	matter_sector_paper.tex	1	whereas in the conserved spacetime Dirac norm the horizons are infinitely distant and the static mode does not normalize
+receipt	receipts/L221_the_bridge/B18_the_obstruction_is_horizon_located.py	86	matter_sector_paper.tex	1	CR reads the fermion on the leaf, where it is a bound state
+receipt	receipts/L221_the_bridge/B18_the_obstruction_is_horizon_located.py	88	matter_sector_paper.tex	1	the fermion is a mode of the existent spatial leaf
+receipt	receipts/L221_the_bridge/B19_the_swap_is_the_weyl_z2_not_the_centre.py	74	matter_sector_paper.tex	1	a discrete horn swap and delivers a species label
+receipt	receipts/L221_the_bridge/B19_the_swap_is_the_weyl_z2_not_the_centre.py	76	matter_sector_paper.tex	1	the two occupations differing on the right-handed pair
+receipt	receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py	108	CR_framework.tex	1	carried continuously from \emph{zero} at the turnaround
+receipt	receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py	97	CR_framework.tex	1	is \emph{purely imaginary}
+receipt	receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py	98	CR_framework.tex	1	the lift is the Euclidean segment of the bead
+receipt	receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py	105	CR_framework.tex	1	while the areal radius climbs from the comoving turnaround
+receipt	receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py	106	CR_framework.tex	4	to the branch point
+receipt	receipts/L221_the_bridge/B24_the_triality_test_run.py	87	matter_sector_paper.tex	1	the triality class \emph{is} the fractional part of the charge
+receipt	receipts/L221_the_bridge/B24_the_triality_test_run.py	100	matter_sector_paper.tex	2	baryon $1$, diquark $0$, meson $1$
+receipt	receipts/L221_the_bridge/B24_the_triality_test_run.py	83	matter_sector_paper.tex	1	A genuine test computes the triality from the colour content independently of the charge
+receipt	receipts/L221_the_bridge/B24_the_triality_test_run.py	84	matter_sector_paper.tex	1	B24_the_triality_test_run
+receipt	receipts/L221_the_bridge/B29_the_two_walls_are_one.py	97	matter_sector_paper.tex	1	the bundle above is flat
+receipt	receipts/L221_the_bridge/B29_the_two_walls_are_one.py	88	matter_sector_paper.tex	1	the bundle above is flat
+receipt	receipts/L221_the_bridge/B29_the_two_walls_are_one.py	88	matter_sector_paper.tex	1	it quantises and does not couple
+receipt	receipts/L221_the_bridge/B29_the_two_walls_are_one.py	91	matter_sector_paper.tex	1	dimensionless coupling that a single length cannot build
+receipt	receipts/L221_the_bridge/B29_the_two_walls_are_one.py	92	matter_sector_paper.tex	1	a single length cannot build
+receipt	receipts/L221_the_bridge/B29_the_two_walls_are_one.py	106	matter_sector_paper.tex	17	triality
+receipt	receipts/L221_the_bridge/B29_the_two_walls_are_one.py	106	matter_sector_paper.tex	1	the bundle above is flat
+receipt	receipts/L221_the_bridge/B29_the_two_walls_are_one.py	122	matter_sector_paper.tex	0	UNBOUNDED = set()
+receipt	receipts/L221_the_bridge/B29_the_two_walls_are_one.py	122	matter_sector_paper.tex	0	REMOVES THE WORD
+receipt	receipts/L221_the_bridge/B30_the_parameter_has_the_wrong_signature.py	109	matter_sector_paper.tex	1	two ends of one hinge are timelike separated
+receipt	receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	95	matter_sector_paper.tex	1	vanishes at the horizons
+receipt	receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	95	matter_sector_paper.tex	1	odd in the signed radius
+receipt	receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	98	matter_sector_paper.tex	1	changes sign at
+receipt	receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	98	matter_sector_paper.tex	1	a domain wall
+receipt	receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	114	matter_sector_paper.tex	1	remain the undertaking the corpus names
+receipt	receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	115	matter_sector_paper.tex	26	JanzenBoundary
+receipt	receipts/L221_the_bridge/B38_the_ledger_is_discrete.py	90	matter_sector_paper.tex	1	a fixed pure number rather than a free parameter
+receipt	receipts/L221_the_bridge/B38_the_ledger_is_discrete.py	96	matter_sector_paper.tex	1	a fixed pure number rather than a free parameter
+receipt	receipts/L221_the_bridge/B38_the_ledger_is_discrete.py	101	matter_sector_paper.tex	2	is a discrete horn swap
+receipt	receipts/L221_the_bridge/B38_the_ledger_is_discrete.py	93	matter_sector_paper.tex	0	rapidity
+receipt	receipts/L221_the_bridge/B38_the_ledger_is_discrete.py	106	matter_sector_paper.tex	17	triality
+receipt	receipts/L221_the_bridge/B38_the_ledger_is_discrete.py	106	matter_sector_paper.tex	84	generation
+receipt	receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	83	matter_sector_paper.tex	1	the leaf is compact and its Dirac operator carries a well-defined
+receipt	receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	88	matter_sector_paper.tex	1	three throat walls, hence three chiral zero-modes
+receipt	receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	90	matter_sector_paper.tex	1	two ends of one hinge are timelike separated
+receipt	receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	99	matter_sector_paper.tex	17	triality
+receipt	receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	93	matter_sector_paper.tex	1	three throat walls, hence three chiral zero-modes
+receipt	receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	94	matter_sector_paper.tex	1	two ends of one hinge are timelike separated
+receipt	receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	104	matter_sector_paper.tex	1	colour's exact selection rules
+receipt	receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	105	matter_sector_paper.tex	1	delivers a species label
+receipt	receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	97	matter_sector_paper.tex	1	has total dimension four
+receipt	receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	88	matter_sector_paper.tex	1	that are trivial on the deck
+receipt	receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	88	matter_sector_paper.tex	1	four one-dimensional ones
+receipt	receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	107	matter_sector_paper.tex	2	is a discrete horn swap
+receipt	receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	107	matter_sector_paper.tex	1	delivers a species label
+receipt	receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	110	matter_sector_paper.tex	0	not SU(2)_L's chiral action
+receipt	receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	110	matter_sector_paper.tex	2	chiral action
+receipt	receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py	102	geometric_core_paper.tex	0	NARROWED c54.84
+receipt	receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py	105	geometric_core_paper.tex	0	not claimed for three separated levels
+receipt	receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py	120	geometric_core_paper.tex	0	measurement discrepancy, not a framework verdict
+receipt	receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py	133	geometric_core_paper.tex	1	a property of a one-constant theory rather than a gap awaiting work
+receipt	receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py	123	geometric_core_paper.tex	0	measurement discrepancy, not a framework verdict
+receipt	receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py	124	geometric_core_paper.tex	0	measurement discrepancy, not a framework verdict
+receipt	receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py	130	geometric_core_paper.tex	1	quantises without measuring
+receipt	receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py	130	geometric_core_paper.tex	1	selects without coupling
+receipt	receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py	131	geometric_core_paper.tex	1	filters without supplying
+receipt	receipts/L221_the_bridge/B46_one_matching_not_two.py	123	matter_sector_paper.tex	1	the horizons standing infinitely far
+receipt	receipts/L221_the_bridge/B47_the_wall_is_exactly_critical.py	113	canonical_time.tex	5	inverse-square
+receipt	receipts/L221_the_bridge/B47_the_wall_is_exactly_critical.py	113	canonical_time.tex	2	essential-self-adjointness threshold
+receipt	receipts/L221_the_bridge/B4_the_radial_operator_carries_a_real_structure.py	106	matter_sector_paper.tex	1	H=-i\sigma_x\partial_x+m(x)\sigma_z
+receipt	receipts/L221_the_bridge/B4_the_radial_operator_carries_a_real_structure.py	111	matter_sector_paper.tex	1	W(r)=\frac{\lambda\sqrt{f}}{r}
+receipt	receipts/L221_the_bridge/B4_the_radial_operator_carries_a_real_structure.py	108	matter_sector_paper.tex	0	\chi_{+}$ the $\sigma_y=+1$ eigenspinor
+receipt	receipts/L221_the_bridge/B4_the_radial_operator_carries_a_real_structure.py	109	matter_sector_paper.tex	2	\sigma_y=+1$ eigenspinor
+receipt	receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	81	matter_sector_paper.tex	1	colour structure acts on is the branching rather than any bundle
+receipt	receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	84	matter_sector_paper.tex	2	three wall monodromies with the hinge
+receipt	receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	105	matter_sector_paper.tex	1	colour's exact selection rules
+receipt	receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	87	matter_sector_paper.tex	1	the bundle above is flat
+receipt	receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	87	matter_sector_paper.tex	2	and no force
+receipt	receipts/L221_the_bridge/B53_gating_l829_and_l830.py	115	matter_sector_paper.tex	1	does not normalize
+receipt	receipts/L221_the_bridge/B53_gating_l829_and_l830.py	115	matter_sector_paper.tex	1	the horizons standing infinitely far
+receipt	receipts/L221_the_bridge/B53_gating_l829_and_l830.py	128	matter_sector_paper.tex	1	transmission
+receipt	receipts/L221_the_bridge/B54_the_retraction_supports_the_verdict.py	108	matter_sector_paper.tex	0	propagating Dirac sector
+receipt	receipts/L221_the_bridge/B54_the_retraction_supports_the_verdict.py	85	matter_sector_paper.tex	1	labels partial
+receipt	receipts/L221_the_bridge/B54_the_retraction_supports_the_verdict.py	85	matter_sector_paper.tex	1	each contributes exactly one bound mode
+receipt	receipts/L221_the_bridge/B55_right_kind_right_place_numerical_declined.py	95	matter_sector_paper.tex	1	a fixed pure number rather than a free parameter
+receipt	receipts/L221_the_bridge/B55_right_kind_right_place_numerical_declined.py	101	matter_sector_paper.tex	1	a length and the substrate has exactly one
+receipt	receipts/L221_the_bridge/B55_right_kind_right_place_numerical_declined.py	102	matter_sector_paper.tex	1	obstruction appearing only after the descent
+receipt	receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py	98	matter_sector_paper.tex	0	baryon 1, diquark 0, meson 1
+receipt	receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py	118	matter_sector_paper.tex	1	colour's exact selection rules
+receipt	receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py	118	matter_sector_paper.tex	2	and no force
+receipt	receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	107	matter_sector_paper.tex	1	the dimension is a bonus and not the argument
+receipt	receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	104	matter_sector_paper.tex	1	consists of flat connections
+receipt	receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	104	matter_sector_paper.tex	1	not whether there is a field strength
+receipt	receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	112	matter_sector_paper.tex	1	subregular
+receipt	receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	112	matter_sector_paper.tex	1	disjointness of the vantages
+receipt	receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	117	matter_sector_paper.tex	1	a branch structure has finitely many sheets
+receipt	receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	118	matter_sector_paper.tex	1	vanishing first cohomology
+receipt	receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	104	matter_sector_paper.tex	1	changing their signs only in \emph{pairs}
+receipt	receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	106	matter_sector_paper.tex	2	three and zero lying in different parity classes
+receipt	receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	108	matter_sector_paper.tex	1	which are the $\sigma_{y}$ eigenvalues of Proposition
+receipt	receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	101	matter_sector_paper.tex	3	\dim\ker_+=3
+receipt	receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	102	matter_sector_paper.tex	3	\dim\ker_-=0
+receipt	receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	126	matter_sector_paper.tex	1	traced weight
+receipt	receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	126	matter_sector_paper.tex	2	traced rather than computed
+receipt	receipts/L221_the_bridge/B65_the_gluon_is_the_octet_and_p14_counts_the_singlet.py	99	matter_sector_paper.tex	2	baryon $1$, diquark $0$, meson $1$
+receipt	receipts/L221_the_bridge/B65_the_gluon_is_the_octet_and_p14_counts_the_singlet.py	103	matter_sector_paper.tex	1	every channel the Standard Model has
+receipt	receipts/L221_the_bridge/B65_the_gluon_is_the_octet_and_p14_counts_the_singlet.py	78	matter_sector_paper.tex	1	labels partial
+receipt	receipts/L221_the_bridge/B65_the_gluon_is_the_octet_and_p14_counts_the_singlet.py	78	matter_sector_paper.tex	1	each contributes exactly one bound mode
+receipt	receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	101	matter_sector_paper.tex	0	The quark/lepton split, and what a baryon
+receipt	receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	103	matter_sector_paper.tex	0	the five multiplets, and which carries the colour
+receipt	receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	108	matter_sector_paper.tex	1	the discrete content of \textbf{colour}
+receipt	receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	111	matter_sector_paper.tex	1	the module the operator's colour structure acts on is the branch
+receipt	receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	125	matter_sector_paper.tex	2	baryon $1$, diquark $0$, meson $1$
+receipt	receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	142	matter_sector_paper.tex	0	branching returns a **character**
+receipt	receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	145	matter_sector_paper.tex	6	wall monodromies
+receipt	receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	150	matter_sector_paper.tex	1	supplies colour's exact selection rules and no force
+receipt	receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	153	matter_sector_paper.tex	1	a discrete horn swap and delivers a species label
+receipt	receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	119	matter_sector_paper.tex	1	the three wall monodromies with the hinge $3$-cycle generate a finite flat holonomy whose determinant-one part, $\Delta(27)$, lies in $SU(3)$
+receipt	receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	129	matter_sector_paper.tex	1	the three wall monodromies and the hinge $3$-cycle generate a finite group of order $81$ in $U(3)$
+receipt	receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	131	matter_sector_paper.tex	1	whose determinant-one part is $\Delta(27)$ and lies in $SU(3)$, with the lap as its centre
+receipt	receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	97	matter_sector_paper.tex	0	\su(3)$ and $\su(2)_L$ as structures on the cut
+receipt	receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	99	matter_sector_paper.tex	0	what reduces $\so(6)\to\su(3)$
+receipt	receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	121	matter_sector_paper.tex	1	the module the operator's colour structure acts on is the branch
+receipt	receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	129	matter_sector_paper.tex	1	the two occupations differing on the right-handed pair
+receipt	receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	113	matter_sector_paper.tex	1	the three wall monodromies and the hinge $3$-cycle generate a finite group of order $81$ in $U(3)$
+receipt	receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	114	matter_sector_paper.tex	1	whose determinant-one part is $\Delta(27)$ and lies in $SU(3)$, with the lap as its centre
+receipt	receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	115	matter_sector_paper.tex	1	the smallest connected group containing the ratios together with the hinge three-cycle is $SU(3)$ itself
+receipt	receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	126	matter_sector_paper.tex	1	Weak isospin as a \emph{gauging}
+receipt	receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	126	matter_sector_paper.tex	1	a discrete horn swap and delivers a species label
+receipt	receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	134	matter_sector_paper.tex	1	the undelivered content is two items and not three
+receipt	receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	135	matter_sector_paper.tex	1	What remains genuinely outstanding is the gauge group and the multiplet structure
+receipt	receipts/L233_colour_curvature/F1_what_a_curvature_source_would_have_to_be.py	85	matter_sector_paper.tex	1	the bundle is \emph{flat}
+receipt	receipts/L233_colour_curvature/F1_what_a_curvature_source_would_have_to_be.py	90	matter_sector_paper.tex	1	The module is the \emph{branching} itself
+receipt	receipts/L233_colour_curvature/F1_what_a_curvature_source_would_have_to_be.py	123	matter_sector_paper.tex	0	covering map carries a canonical flat connection
+receipt	receipts/L233_colour_curvature/F1_what_a_curvature_source_would_have_to_be.py	88	matter_sector_paper.tex	2	supplies no force
+receipt	receipts/L233_colour_curvature/F1_what_a_curvature_source_would_have_to_be.py	88	matter_sector_paper.tex	1	the geometry quantises and does not couple
+receipt	receipts/L233_colour_curvature/F1_what_a_curvature_source_would_have_to_be.py	113	matter_sector_paper.tex	0	one equation per comoving shell
+receipt	receipts/L233_colour_curvature/F1_what_a_curvature_source_would_have_to_be.py	113	matter_sector_paper.tex	0	ONE equation per comoving shell
+receipt	receipts/L233_colour_curvature/F1_what_a_curvature_source_would_have_to_be.py	115	matter_sector_paper.tex	0	EXACT for arbitrary $m(r)$
+receipt	receipts/L233_colour_curvature/F1_what_a_curvature_source_would_have_to_be.py	115	matter_sector_paper.tex	0	exact for arbitrary
+receipt	receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	86	matter_sector_paper.tex	1	each hinge designates one of the three roots of the horizon cubic
+receipt	receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	114	matter_sector_paper.tex	1	The module is the \emph{branching} itself
+receipt	receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	130	matter_sector_paper.tex	1	the geometry quantises and does not couple
+receipt	receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	89	matter_sector_paper.tex	2	returns the \emph{same} $2M=r_0-r_0^3$
+receipt	receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	90	matter_sector_paper.tex	2	the three carry one mass parameter
+receipt	receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	106	matter_sector_paper.tex	0	root cover
+receipt	receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	106	matter_sector_paper.tex	21	monodromy
+receipt	receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	119	matter_sector_paper.tex	0	FORCED by the homogeneity of the leaf
+receipt	receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	119	matter_sector_paper.tex	0	homogeneity of the leaf
+receipt	receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	133	matter_sector_paper.tex	1	The module is the \emph{branching} itself
+receipt	receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	134	matter_sector_paper.tex	2	supplies no force
+receipt	receipts/L237_gates_check_declarations/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry.py	289	cosmogenesis_paper.tex	0	scripts/queue.py
+receipt	receipts/L237_gates_check_declarations/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry.py	137	cosmogenesis_paper.tex	1	appendix_receipts
+receipt	receipts/L237_gates_check_declarations/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry.py	322	cosmogenesis_paper.tex	0	Traceback
+receipt	receipts/L248_the_strike_broke_its_readers/R1_r3001_struck_fourteen_rows_and_twelve_receipts_read_them_by_prefix.py	186	canonical_time.tex	1	though it does in fact
+receipt	receipts/L248_the_strike_broke_its_readers/R1_r3001_struck_fourteen_rows_and_twelve_receipts_read_them_by_prefix.py	153	canonical_time.tex	0	L248_the_strike
+receipt	receipts/L249_a_pin_on_a_live_register/P1_a_check_that_pins_a_live_register_punishes_the_finding_it_defends.py	183	CR_framework.tex	0	s.find('. ', m.end())
+receipt	receipts/L249_a_pin_on_a_live_register/P1_a_check_that_pins_a_live_register_punishes_the_finding_it_defends.py	188	CR_framework.tex	0	s.find('. ', m.end())
+receipt	receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	226	CR_framework.tex	0	massless radial Dirac problem separates into a first-order pair
+receipt	receipts/L271_the_statistics_bake/S1_the_first_programme_is_a_power_calculation_and_the_design_it_proposes_is_the_expensive_one.py	256	shadow_of_existence.tex	4	survivorship
+receipt	receipts/L271_the_statistics_bake/S1_the_first_programme_is_a_power_calculation_and_the_design_it_proposes_is_the_expensive_one.py	256	shadow_of_existence.tex	2	not measurement
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	220	CR_cosmology.tex	0	seven parts in a thousand of the disagreement it is used to measure
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	265	CR_cosmology.tex	0	missing NAME, not a missing sector
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	267	CR_cosmology.tex	0	never named
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	168	CR_cosmology.tex	0	should not be read as the disagreement itself
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	171	CR_cosmology.tex	0	185 bins
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	180	CR_cosmology.tex	0	seventy standard deviations
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	199	CR_cosmology.tex	1	identical procedure
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	214	CR_cosmology.tex	1	matched-procedure differencing
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	215	CR_cosmology.tex	1	appears in both arms and cancels
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	216	CR_cosmology.tex	1	to within seven parts in a thousand
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	227	CR_cosmology.tex	0	should not be read as the disagreement itself
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	228	CR_cosmology.tex	0	the phase was never carrying it
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	232	CR_cosmology.tex	0	is not a $p$-value
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	232	CR_cosmology.tex	0	cannot arbitrate here
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	262	CR_cosmology.tex	0	Atiyah sequence is not missing
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	270	CR_cosmology.tex	0	missing NAME, not a missing sector
+receipt	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	271	CR_cosmology.tex	0	never named
+receipt	receipts/L274_the_harmonic_bake/H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py	177	CR_cosmology.tex	1	not the hyperspherical transfer of a literal closed universe
+receipt	receipts/L274_the_harmonic_bake/H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py	222	CR_cosmology.tex	1	the shape and the depth are both cross-validated
+receipt	receipts/L274_the_harmonic_bake/H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py	223	CR_cosmology.tex	3	three per cent at every multipole
+receipt	receipts/L274_the_harmonic_bake/H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py	262	CR_cosmology.tex	0	waives itself on the claim that the ladder is physical
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	119	matter_sector_paper.tex	0	names and not its gauging
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	133	matter_sector_paper.tex	0	no character count on a finite group can produce three
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	152	matter_sector_paper.tex	1	triality class is what separates the two
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	158	matter_sector_paper.tex	1	a coloured constituent carrying a non-zero class
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	168	matter_sector_paper.tex	0	no character count on a finite group can produce three
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	103	matter_sector_paper.tex	0	STRUCK r3148
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	103	matter_sector_paper.tex	1	real forms
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	106	matter_sector_paper.tex	0	partly discharged
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	114	matter_sector_paper.tex	1	is a function to
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	155	matter_sector_paper.tex	17	triality
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	188	matter_sector_paper.tex	0	no two-valued character count can produce three
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	193	matter_sector_paper.tex	1	The restriction is the premise and not a general fact
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	194	matter_sector_paper.tex	0	$Z_3$ character takes three values
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	198	matter_sector_paper.tex	0	a receipt's prose is not its result
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	198	matter_sector_paper.tex	0	prose is not its result
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	214	matter_sector_paper.tex	2	parallel conjugation
+receipt	receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	214	matter_sector_paper.tex	2	lands in the real form
+receipt	receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py	144	CR_framework.tex	1	is something unworked that a definite computation would close
+receipt	receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py	145	CR_framework.tex	1	boundary} is a result rather than a gap
+receipt	receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py	146	CR_framework.tex	1	has not failed to empty; it has finished
+receipt	receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py	144	canonical_time.tex	0	**A counterterm basis is a statement about a class of FIXED backgrounds, and in the coupled sector there is no such class to state it on** — which is a statement about what the question can MEAN, not a calculation waiting to be run
+receipt	receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py	152	canonical_time.tex	0	THE INVARIANT BASIS ON A MAXIMALLY SYMMETRIC BACKGROUND
+receipt	receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py	301	canonical_time.tex	1	The propagating degree of freedom is the transverse-traceless shear of the evolving layer
+receipt	receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py	307	canonical_time.tex	1	no scale factor breaks it, because no scale factor can make an FRW geometry anything but conformally flat
+receipt	receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py	208	canonical_time.tex	0	144/36/24
+receipt	receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py	210	canonical_time.tex	0	three numbers read DOWN the table instead of ACROSS one row
+receipt	receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py	318	canonical_time.tex	1	the tower's own shear is a calculation and not a question about meaning
+receipt	receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py	319	canonical_time.tex	1	That calculation is run, and its answer is smaller
+receipt	receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	112	canonical_time.tex	1	a degeneracy growing as $n^2$, the shell contribution goes as $n^3$ and the sum \emph{diverges quartically}
+receipt	receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	128	canonical_time.tex	0	CORRECTED c54.220 (`L-554`)
+receipt	receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	230	canonical_time.tex	1	the degeneracy is $2(n-1)(n+3)$
+receipt	receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	233	canonical_time.tex	1	the constant is the propagating-component count rather than a universal
+receipt	receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	123	canonical_time.tex	0	Degeneracy of $S^3$ harmonics at level $n$ grows like ** $n^2$ ** (any tensor rank)
+receipt	receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	174	canonical_time.tex	1	there are no modes below $n=2$ on $S^{3}$
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	183	CR_cosmology.tex	0	larger by $8.2\%$
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	260	CR_cosmology.tex	0	cannot drift apart
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	147	CR_cosmology.tex	0	larger by $9.4\%$
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	147	CR_cosmology.tex	0	larger by $8.2\%$
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	149	CR_cosmology.tex	1	$\theta_{D}/\theta_{*}$ moved by under a per cent, its size fixed by the handover and its sign by the common endpoint both lengths are carried to
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	163	CR_cosmology.tex	0	theta_D/theta_* is
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	164	CR_cosmology.tex	0	sec:envelope-consequence prints r
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	168	CR_cosmology.tex	0	larger by $8.2\%$
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	192	CR_cosmology.tex	0	r=\theta_{D}/\theta_{*}=1.082
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	192	CR_cosmology.tex	0	$0.84$ at $\ell_{D}$
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	193	CR_cosmology.tex	0	$0.68$ at
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	213	CR_cosmology.tex	1	with $r=\theta_{D}/\theta_{*}$---the same ratio the preceding paragraph derives
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	214	CR_cosmology.tex	1	$r=0.992$, it is a rise of about two per cent at $\ell_{D}$ and four at
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	215	CR_cosmology.tex	1	$r=1.023$, turns it into a fall of four and ten
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	216	CR_cosmology.tex	0	$1.0231$
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	216	CR_cosmology.tex	0	$0.9918$
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	265	CR_cosmology.tex	0	larger by $8.2\%$
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	269	CR_cosmology.tex	0	recorded and not re-litigated here
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	270	CR_cosmology.tex	0	recorded r2376+c54.160 and NOW RESOLVED
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	281	CR_cosmology.tex	0	CONTESTED
+receipt	receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	287	CR_cosmology.tex	0	larger by $8.2\%$
+receipt	receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	130	cosmogenesis_paper.tex	1	(1+\delta_{r})/(1+\delta_{m})=1+(\delta_{r}-\delta_{m})+O(2)
+receipt	receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	131	cosmogenesis_paper.tex	1	an isocurvature mode \emph{is} $\delta_{r}\neq\delta_{m}$
+receipt	receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	135	cosmogenesis_paper.tex	1	nearly scale-invariant adiabatic spectrum processed by ordinary structure formation
+receipt	receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	136	cosmogenesis_paper.tex	1	available from standard cosmology
+receipt	receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	140	cosmogenesis_paper.tex	1	Adiabatic primordial perturbations are strongly favoured observationally
+receipt	receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	141	cosmogenesis_paper.tex	1	named here rather than assumed silently
+receipt	receipts/L805_freezing_reproduced/S1_every_mode_of_interest_freezes_and_the_inversion_is_closed.py	169	CR_cosmology.tex	1	exits it and freezes
+receipt	receipts/L805_freezing_reproduced/S1_every_mode_of_interest_freezes_and_the_inversion_is_closed.py	169	CR_cosmology.tex	3	before the crossing
+receipt	receipts/L805_freezing_reproduced/S1_every_mode_of_interest_freezes_and_the_inversion_is_closed.py	184	CR_cosmology.tex	0	IS AN ARGUMENT, NOT A COMPUTATION
+receipt	receipts/L805_freezing_reproduced/S1_every_mode_of_interest_freezes_and_the_inversion_is_closed.py	184	CR_cosmology.tex	0	reproduced nowhere
+receipt	receipts/L805_freezing_reproduced/S1_every_mode_of_interest_freezes_and_the_inversion_is_closed.py	187	CR_cosmology.tex	0	unclosed inversion
+receipt	receipts/L809_one_loop_quartic/S1_the_quartic_is_a_constant_vacuum_energy_and_the_geometry_absorbs_it.py	116	geometric_core_paper.tex	1	is absorbed into that one observed curvature
+receipt	receipts/L809_one_loop_quartic/S1_the_quartic_is_a_constant_vacuum_energy_and_the_geometry_absorbs_it.py	117	geometric_core_paper.tex	1	not as a $2m/r$ bend
+receipt	receipts/L809_one_loop_quartic/S1_the_quartic_is_a_constant_vacuum_energy_and_the_geometry_absorbs_it.py	120	geometric_core_paper.tex	2	there is no bare-$\Lambda$-versus-vacuum-energy split
+receipt	receipts/L809_one_loop_quartic/S1_the_quartic_is_a_constant_vacuum_energy_and_the_geometry_absorbs_it.py	121	geometric_core_paper.tex	1	the substrate carries only the total
+receipt	receipts/L809_one_loop_quartic/S1_the_quartic_is_a_constant_vacuum_energy_and_the_geometry_absorbs_it.py	124	geometric_core_paper.tex	1	The one physical length is $\alpha$, not $\ell_P$
+receipt	receipts/L809_one_loop_quartic/S1_the_quartic_is_a_constant_vacuum_energy_and_the_geometry_absorbs_it.py	125	geometric_core_paper.tex	3	gauge-combination
+receipt	receipts/L809_one_loop_quartic/S1_the_quartic_is_a_constant_vacuum_energy_and_the_geometry_absorbs_it.py	132	geometric_core_paper.tex	1	is absorbed into that one observed curvature
+receipt	receipts/L815_seam_phase_derived/S1_the_seam_phase_is_derived_compression_correlated_on_the_observable_leg.py	159	CR_cosmology.tex	8	pressureless
+receipt	receipts/L815_seam_phase_derived/S1_the_seam_phase_is_derived_compression_correlated_on_the_observable_leg.py	159	CR_cosmology.tex	18	scale-free
+receipt	receipts/L815_seam_phase_derived/S1_the_seam_phase_is_derived_compression_correlated_on_the_observable_leg.py	159	CR_cosmology.tex	2	imprints nothing
+receipt	receipts/L815_seam_phase_derived/S1_the_seam_phase_is_derived_compression_correlated_on_the_observable_leg.py	165	CR_cosmology.tex	0	compression correlated with the well
+receipt	receipts/L815_seam_phase_derived/S1_the_seam_phase_is_derived_compression_correlated_on_the_observable_leg.py	166	CR_cosmology.tex	0	rarefaction against it
+receipt	receipts/L818_po6_running_layer/S1_the_one_constant_ledger_survives_on_the_running_layer_not_only_fixed_de_sitter.py	193	canonical_time.tex	0	curvature runs
+receipt	receipts/L818_po6_running_layer/S1_the_one_constant_ledger_survives_on_the_running_layer_not_only_fixed_de_sitter.py	193	canonical_time.tex	0	counterterm basis survive
+receipt	receipts/L818_po6_running_layer/S1_the_one_constant_ledger_survives_on_the_running_layer_not_only_fixed_de_sitter.py	194	canonical_time.tex	3	definition of the interacting tower
+receipt	receipts/L829_po11_continuum_continues/S3_the_wall_index_is_real_because_sqrt_f_factors_out_of_the_operator_not_the_norm.py	151	matter_sector_paper.tex	0	NOT the omega != 0 continuum
+receipt	receipts/L829_po11_continuum_continues/S3_the_wall_index_is_real_because_sqrt_f_factors_out_of_the_operator_not_the_norm.py	151	matter_sector_paper.tex	0	the observer line's, not cc54's
+receipt	receipts/P03_SdS_slicing/P03_the_symbol_T_carries_four_structural_referents.py	144	groupoid_paper.tex	1	T$ is the time reflection
+receipt	receipts/P03_SdS_slicing/P03_the_symbol_T_carries_four_structural_referents.py	161	groupoid_paper.tex	0	resonance
+receipt	receipts/P03_SdS_slicing/P03_the_symbol_T_carries_four_structural_referents.py	162	groupoid_paper.tex	9	coordinate
+receipt	receipts/P03_SdS_slicing/P03_the_symbol_w_carried_two_circles.py	89	SdS-slicing-curve_v2.tex	1	sky angle $w$ is the swing read on the observer
+receipt	receipts/P03_SdS_slicing/P03_the_symbol_w_carried_two_circles.py	93	SdS-slicing-curve_v2.tex	1	\tilde{w}=3c\tilde\tau/2\alpha
+receipt	receipts/P03_SdS_slicing/P03_the_symbol_w_carried_two_circles.py	91	SdS-slicing-curve_v2.tex	3	\sin u=\tfrac{2}{\sqrt3}\sin w
+receipt	receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py	103	CR_framework.tex	1	\lambda^{2}/\Omega_{c}^{2}=D-3
+receipt	receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py	178	CR_framework.tex	1	2f-r^{2}f''
+receipt	receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py	179	CR_framework.tex	1	\lambda^{2}/\Omega_{c}^{2}=D-3
+receipt	receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py	344	CR_framework.tex	0	does not identify the photon sphere with the seam
+receipt	receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py	345	CR_framework.tex	0	merged horizon's areal radius
+receipt	receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py	119	CR_framework.tex	1	umbilic locus of that foliation
+receipt	receipts/P08_slicing_operator/P08_the_boundary_is_whether_the_breaking_is_itself_symmetric.py	111	matter_sector_paper.tex	1	does not say that a geometric route to the representation content is impossible
+receipt	receipts/P08_slicing_operator/P08_the_boundary_is_whether_the_breaking_is_itself_symmetric.py	113	matter_sector_paper.tex	1	We claim no construction here.
+receipt	receipts/P10_canonical_time/P10_gamma_is_one_quarter_and_is_the_maximum.py	64	canonical_time.tex	1	\frac{2\pi}{3}\,\frac{p_a^2}{a}
+receipt	receipts/P10_canonical_time/P10_gamma_is_one_quarter_and_is_the_maximum.py	66	canonical_time.tex	1	attaining $\gamma=\tfrac14$ across the natural ordering family
+receipt	receipts/P10_canonical_time/P10_gamma_is_one_quarter_and_is_the_maximum.py	67	canonical_time.tex	12	\tfrac34
+receipt	receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py	127	canonical_time.tex	1	the coupling's own growth is of the seventh
+receipt	receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py	132	canonical_time.tex	1	$18V=36\pi^{2}$
+receipt	receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py	132	canonical_time.tex	1	positive on the whole tower
+receipt	receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	123	canonical_time.tex	1	it returns the exact rational
+receipt	receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	123	canonical_time.tex	1	Both return the same sign
+receipt	receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	134	canonical_time.tex	0	What is not claimed is the renormalised value, and no invariant is named for the third subtraction
+receipt	receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	135	canonical_time.tex	0	the count is three against two, and which geometric invariant carries the third is left open rather than guessed
+receipt	receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	136	canonical_time.tex	1	counted rather than asserted
+receipt	receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	152	canonical_time.tex	5	\tfrac{15}{4}
+receipt	receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	142	canonical_time.tex	1	the interacting sum is defined
+receipt	receipts/P12_algebroid/A4_the_ledger_seven_swept.py	175	matter_sector_paper.tex	0	We state what that is and is not
+receipt	receipts/P12_algebroid/A4_the_ledger_seven_swept.py	192	matter_sector_paper.tex	0	half a result, marked as half
+receipt	receipts/P12_algebroid/A4_the_ledger_seven_swept.py	206	matter_sector_paper.tex	1	A genuine test computes the triality from the colour content
+receipt	receipts/P12_algebroid/A4_the_ledger_seven_swept.py	207	matter_sector_paper.tex	1	B24_the_triality_test_run
+receipt	receipts/P12_algebroid/A4_the_ledger_seven_swept.py	209	matter_sector_paper.tex	1	triality from the colour content
+receipt	receipts/P12_algebroid/A7_the_frontier_has_two_kinds.py	97	CR_cosmology.tex	1	the whole difference is carried by
+receipt	receipts/P12_algebroid/A7_the_frontier_has_two_kinds.py	117	CR_cosmology.tex	0	12/\alpha^2
+receipt	receipts/P12_algebroid/A7_the_frontier_has_two_kinds.py	117	CR_cosmology.tex	1	12/\alpha^{2}
+receipt	receipts/P12_algebroid/A7_the_frontier_has_two_kinds.py	120	CR_cosmology.tex	12	tortoise
+receipt	receipts/P12_algebroid/A8_the_self_protecting_falsehood.py	91	matter_sector_paper.tex	0	ADVERTISED AS OWED AFTER THE WORK THAT CLOSED IT WAS DONE
+receipt	receipts/P12_algebroid/A8_the_self_protecting_falsehood.py	88	matter_sector_paper.tex	0	the fork owns the papers
+receipt	receipts/P12_algebroid/A8_the_self_protecting_falsehood.py	88	matter_sector_paper.tex	0	routes rather than edits
+receipt	receipts/P12_algebroid/A8_the_self_protecting_falsehood.py	98	matter_sector_paper.tex	1	the two routes agree on is the
+receipt	receipts/P12_algebroid/A8_the_self_protecting_falsehood.py	98	matter_sector_paper.tex	1	B24_the_triality_test_run
+receipt	receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	269	matter_sector_paper.tex	1	exchanged by the antipodal map, which is $R$.
+receipt	receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	270	matter_sector_paper.tex	0	R = r_0->-r_0 (2M->-2M) carries 3 -> 3bar
+receipt	receipts/P15_CR_cosmology/C12_the_odd_even_half_has_its_parameter.py	83	CR_cosmology.tex	0	imprinted by the baryon loading on the expansion leg
+receipt	receipts/P15_CR_cosmology/C12_the_odd_even_half_has_its_parameter.py	84	CR_cosmology.tex	0	the odd/even height pattern
+receipt	receipts/P15_CR_cosmology/C12_the_odd_even_half_has_its_parameter.py	90	CR_cosmology.tex	0	THE ASYMMETRY IS IMPRINTED AFTERWA
+receipt	receipts/P15_CR_cosmology/C12_the_odd_even_half_has_its_parameter.py	94	CR_cosmology.tex	1	ordinary content physics on the observable leg
+receipt	receipts/P15_CR_cosmology/C12_the_odd_even_half_has_its_parameter.py	100	CR_cosmology.tex	1	the odd/even asymmetry is imprinted afterwards
+receipt	receipts/P15_CR_cosmology/C12_the_odd_even_half_has_its_parameter.py	101	CR_cosmology.tex	1	ordinary content physics on the observable leg
+receipt	receipts/P15_CR_cosmology/C14_po12_gates_po10.py	85	CR_cosmology.tex	0	is not the same as producing the odd/even heights
+receipt	receipts/P15_CR_cosmology/C14_po12_gates_po10.py	87	CR_cosmology.tex	3	full-spectrum likelihood
+receipt	receipts/P15_CR_cosmology/C14_po12_gates_po10.py	109	CR_cosmology.tex	1	\emph{The end-to-end branch-point-to-recombination transfer is run}
+receipt	receipts/P15_CR_cosmology/C14_po12_gates_po10.py	110	CR_cosmology.tex	1	a two-arm line-of-sight Boltzmann integral, $\Delta_\ell(k)=\int S\,j_\ell
+receipt	receipts/P15_CR_cosmology/C14_po12_gates_po10.py	111	CR_cosmology.tex	1	carried on this cosmology's own background with the perturbations on the leaf congruence the framework assigns them
+receipt	receipts/P15_CR_cosmology/C14_po12_gates_po10.py	116	CR_cosmology.tex	1	\emph{The full-spectrum likelihood is run on the computed spectrum}
+receipt	receipts/P15_CR_cosmology/C14_po12_gates_po10.py	117	CR_cosmology.tex	1	what this construction returns for the same quantity is $2.264$ on the polarisation path, on the transfer of \S\ref{sec:refit-bound}
+receipt	receipts/P15_CR_cosmology/C14_po12_gates_po10.py	130	CR_cosmology.tex	11	sec:envelope
+receipt	receipts/P15_CR_cosmology/C14_po12_gates_po10.py	130	CR_cosmology.tex	1	the envelope is derived on the collapse leg
+receipt	receipts/P15_CR_cosmology/C15_the_cancellation_does_not_reach_the_ratio.py	82	CR_cosmology.tex	1	the Thomson physics and the ionisation history cancel identically
+receipt	receipts/P15_CR_cosmology/C15_the_cancellation_does_not_reach_the_ratio.py	83	CR_cosmology.tex	1	carried by $H(a)$
+receipt	receipts/P15_CR_cosmology/C15_the_cancellation_does_not_reach_the_ratio.py	88	CR_cosmology.tex	1	the geometric rate gives a diffusion length
+receipt	receipts/P15_CR_cosmology/C16_the_transfer_is_six_eighths_built.py	119	CR_cosmology.tex	1	removes the source exactly
+receipt	receipts/P15_CR_cosmology/C16_the_transfer_is_six_eighths_built.py	106	CR_cosmology.tex	1	\emph{The end-to-end branch-point-to-recombination transfer is run}
+receipt	receipts/P15_CR_cosmology/C16_the_transfer_is_six_eighths_built.py	107	CR_cosmology.tex	1	a two-arm line-of-sight Boltzmann integral, $\Delta_\ell(k)=\int S\,j_\ell(k(\eta_0-\eta))\,d\eta$
+receipt	receipts/P15_CR_cosmology/C16_the_transfer_is_six_eighths_built.py	108	CR_cosmology.tex	1	visibility is \emph{wider}, $43.6$ against $38.0$~Mpc
+receipt	receipts/P15_CR_cosmology/C16_the_transfer_is_six_eighths_built.py	142	CR_cosmology.tex	1	The high-$\ell$ consequence follows with no free parameter
+receipt	receipts/P15_CR_cosmology/C16_the_transfer_is_six_eighths_built.py	143	CR_cosmology.tex	1	with $r=\theta_{D}/\theta_{*}$
+receipt	receipts/P15_CR_cosmology/C16_the_transfer_is_six_eighths_built.py	144	CR_cosmology.tex	1	visibility function, $r=0.992$, it is a rise of about two per cent at $\ell_{D}$
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	85	CR_cosmology.tex	1	carried by a Boltzmann transfer built for this programme
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	88	CR_cosmology.tex	1	and a Peebles recombination history
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	98	CR_cosmology.tex	1	an independent Boltzmann code run at identical parameters
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	101	CR_cosmology.tex	1	through the visibility peak
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	108	CR_cosmology.tex	1	The full flat-projection transfer confirms the estimate
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	134	CR_cosmology.tex	1	the whole difference is carried by $H(a)$
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	92	CR_cosmology.tex	1	the line-of-sight source carries the monopole with the potential
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	93	CR_cosmology.tex	1	its own projection kernel
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	103	CR_cosmology.tex	1	trough positions to $\le0.5\%$
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	103	CR_cosmology.tex	1	across $P_1$--$P_4$
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	127	CR_cosmology.tex	1	carried on this cosmology's own background with the perturbations on the leaf congruence the framework assigns them
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	129	CR_cosmology.tex	1	Both arms run on one set of equations, so no comparison between them is a difference of machinery
+receipt	receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	131	CR_cosmology.tex	1	the change is an exact chain rule between two monotone conformal times, so every spline and grid is untouched
+receipt	receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	96	CR_cosmology.tex	1	(4/\eta)
+receipt	receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	99	CR_cosmology.tex	1	On the radiation-dominated collapse leg the potential obeys
+receipt	receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	127	CR_cosmology.tex	1	one may not take the rate geometric for the peak spacing and radiation-included for the diffusion
+receipt	receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	149	CR_cosmology.tex	2	The full flat-projection transfer
+receipt	receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	117	CR_cosmology.tex	1	there the self-gravitating excursion sets the leaf rate radiation is included in, and here the plasma accumulating its own scales takes that same rate
+receipt	receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	119	CR_cosmology.tex	1	the two windows fall on the \emph{same} side of it rather than on opposite sides
+receipt	receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	141	CR_cosmology.tex	1	This is forced by consistency: one may not take the rate geometric for the peak spacing and radiation-included for the diffusion
+receipt	receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	143	CR_cosmology.tex	1	\emph{the peak spacing this construction computes is the leaf accumulation}
+receipt	receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	144	CR_cosmology.tex	1	\emph{So this construction does not dissolve the discrepancy with the local distance ladder}
+receipt	receipts/P15_CR_cosmology/C19_the_branch_point_join.py	99	CR_cosmology.tex	0	a computed transfer function across the branch point is not yet in hand
+receipt	receipts/P15_CR_cosmology/C19_the_branch_point_join.py	107	CR_cosmology.tex	1	\tfrac{9}{10}\Phi_i$ scale-invariantly
+receipt	receipts/P15_CR_cosmology/C19_the_branch_point_join.py	110	CR_cosmology.tex	1	the branch point transmits that content rather than imprinting one of its own
+receipt	receipts/P15_CR_cosmology/C19_the_branch_point_join.py	127	CR_cosmology.tex	1	matter-dominated to nine orders
+receipt	receipts/P15_CR_cosmology/C19_the_branch_point_join.py	103	CR_cosmology.tex	1	the super-horizon transfer across the branch point is itself computed
+receipt	receipts/P15_CR_cosmology/C19_the_branch_point_join.py	149	CR_cosmology.tex	0	has no early integrated Sachs--Wolfe term where flat
+receipt	receipts/P15_CR_cosmology/C19_the_branch_point_join.py	150	CR_cosmology.tex	0	four per cent above its asymptote at recombination
+receipt	receipts/P15_CR_cosmology/C19_the_branch_point_join.py	151	CR_cosmology.tex	0	that residual decay is what the line-of-sight integral picks up
+receipt	receipts/P15_CR_cosmology/C19_the_branch_point_join.py	157	CR_cosmology.tex	1	The early integrated Sachs--Wolfe contribution is present here
+receipt	receipts/P15_CR_cosmology/C19_the_branch_point_join.py	158	CR_cosmology.tex	1	the denial was an inference and not a measurement
+receipt	receipts/P15_CR_cosmology/C19_the_branch_point_join.py	159	CR_cosmology.tex	1	Non-zero on both
+receipt	receipts/P15_CR_cosmology/C20_the_caveat_named_an_empty_set.py	79	CR_cosmology.tex	1	the comoving horizon to zero, so there \emph{every} mode is outside it
+receipt	receipts/P15_CR_cosmology/C20_the_caveat_named_an_empty_set.py	82	CR_cosmology.tex	1	the acoustic modes are already within the comoving horizon there
+receipt	receipts/P15_CR_cosmology/C20_the_caveat_named_an_empty_set.py	87	CR_cosmology.tex	1	The comoving Hubble radius is built from the slicing
+receipt	receipts/P15_CR_cosmology/C20_the_caveat_named_an_empty_set.py	114	CR_cosmology.tex	0	previously ran together, corrected at
+receipt	receipts/P15_CR_cosmology/C21_the_superhorizon_transfer_closes.py	97	CR_cosmology.tex	1	transmits that content rather than imprinting one of its own
+receipt	receipts/P15_CR_cosmology/C21_the_superhorizon_transfer_closes.py	76	CR_cosmology.tex	1	whose regular solution is elementary
+receipt	receipts/P15_CR_cosmology/C21_the_superhorizon_transfer_closes.py	76	CR_cosmology.tex	2	x=k\eta/\sqrt
+receipt	receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	85	CR_cosmology.tex	1	One scope qualification is owed here, and it narrows the claim without touching the conclusion
+receipt	receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	89	CR_cosmology.tex	1	which is the \emph{super-horizon} equation: it drops the $k^{2}\Phi$ term
+receipt	receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	92	CR_cosmology.tex	1	the potential does decay on the observable leg, by a factor of order two across the first few peaks
+receipt	receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	96	CR_cosmology.tex	1	The decay is not a radiation effect: zeroing the radiation fractions in the constraint makes it \emph{larger}
+receipt	receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	117	CR_cosmology.tex	0	four per cent above its asymptote at recombination
+receipt	receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	122	CR_cosmology.tex	1	The early integrated Sachs--Wolfe contribution is present here
+receipt	receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	123	CR_cosmology.tex	1	Non-zero on both
+receipt	receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	149	CR_cosmology.tex	1	The high-$\ell$ consequence follows with no free parameter
+receipt	receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	150	CR_cosmology.tex	1	visibility function, $r=0.992$, it is a rise of about two per cent at $\ell_{D}$
+receipt	receipts/P15_CR_cosmology/C23_the_gap_estimated.py	105	CR_cosmology.tex	1	the geometric one is ${\sim}13\%$ below the radiation-included one at recombination
+receipt	receipts/P15_CR_cosmology/C23_the_gap_estimated.py	125	CR_cosmology.tex	1	by a factor of order two across the first few peaks
+receipt	receipts/P15_CR_cosmology/C23_the_gap_estimated.py	87	CR_cosmology.tex	1	the rate responsible is
+receipt	receipts/P15_CR_cosmology/C23_the_gap_estimated.py	87	CR_cosmology.tex	3	3\mathcal{H}
+receipt	receipts/P15_CR_cosmology/C23_the_gap_estimated.py	119	CR_cosmology.tex	1	The perturbation sector runs on the leaf congruence, which is what the framework assigns it
+receipt	receipts/P15_CR_cosmology/C23_the_gap_estimated.py	121	CR_cosmology.tex	1	Run on this arm the same subtraction gives $0.1717$
+receipt	receipts/P15_CR_cosmology/C23_the_gap_estimated.py	122	CR_cosmology.tex	1	\emph{the potential's grip within four per cent of the control's, and slightly weaker rather than stronger}
+receipt	receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	126	CR_cosmology.tex	1	the geometric one is ${\sim}13\%$ below the radiation-included one at recombination
+receipt	receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	137	CR_cosmology.tex	1	every microphysical constant sits outside
+receipt	receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	135	CR_cosmology.tex	1	k_{D}^{2}
+receipt	receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	160	CR_cosmology.tex	1	Both lengths are accumulated by the plasma on the leaf rate
+receipt	receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	161	CR_cosmology.tex	2	where the plasma is handed over, and how far the diffusion integral is carried
+receipt	receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	162	CR_cosmology.tex	1	So the rate gap is not what the signature is made of
+receipt	receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	172	CR_cosmology.tex	0	That figure and the $8.2\%$ of
+receipt	receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	173	CR_cosmology.tex	1	a common endpoint at the visibility peak gives $-0.9\%$
+receipt	receipts/P15_CR_cosmology/C25_the_gap_closed_by_integration.py	122	CR_cosmology.tex	1	must be taken \emph{from the branch point}: there is no observable expansion below it
+receipt	receipts/P15_CR_cosmology/C25_the_gap_closed_by_integration.py	135	CR_cosmology.tex	0	That figure and the $8.2\%$ of
+receipt	receipts/P15_CR_cosmology/C25_the_gap_closed_by_integration.py	159	CR_cosmology.tex	0	so a single datum cannot absorb both observables
+receipt	receipts/P15_CR_cosmology/C25_the_gap_closed_by_integration.py	161	CR_cosmology.tex	2	where the plasma is handed over, and how far the diffusion integral is carried
+receipt	receipts/P15_CR_cosmology/C25_the_gap_closed_by_integration.py	162	CR_cosmology.tex	1	\emph{Neither is a free parameter, and the first is the larger.}
+receipt	receipts/P15_CR_cosmology/C25_the_gap_closed_by_integration.py	163	CR_cosmology.tex	1	a start placed later on the expanding leg raises it steeply
+receipt	receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	135	CR_cosmology.tex	2	the plasma is handed over at the branch point
+receipt	receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	136	CR_cosmology.tex	1	which therefore carries no finite redshift at all
+receipt	receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	141	CR_cosmology.tex	1	\emph{It is a limit rather than a parameter}: carried back over two decades in starting redshift the peaks hold to the grid step
+receipt	receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	143	CR_cosmology.tex	1	the angle is an output of the rate rather than a calibration of it
+receipt	receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	147	CR_cosmology.tex	1	\emph{Where the plasma starts moves the scale and not the peak, which is why the start is not free.}
+receipt	receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	149	CR_cosmology.tex	1	there is no early-universe parameter left to carry the acoustic angle
+receipt	receipts/P15_CR_cosmology/C27_the_number_bracketed.py	130	CR_cosmology.tex	1	the Thomson physics and the ionisation history cancel identically
+receipt	receipts/P15_CR_cosmology/C27_the_number_bracketed.py	132	CR_cosmology.tex	1	every microphysical constant sits outside
+receipt	receipts/P15_CR_cosmology/C27_the_number_bracketed.py	149	CR_cosmology.tex	1	and a Peebles recombination history
+receipt	receipts/P15_CR_cosmology/C27_the_number_bracketed.py	164	CR_cosmology.tex	0	larger by $8.2\%$
+receipt	receipts/P15_CR_cosmology/C27_the_number_bracketed.py	167	CR_cosmology.tex	1	visibility function, $r=0.992$, it is a rise of about two per cent at $\ell_{D}$
+receipt	receipts/P15_CR_cosmology/C28_length_against_angle.py	122	CR_cosmology.tex	1	Doing so returns $r_{s}=146.4$~Mpc against $145.4$ on the radiation-included rate---within $0.7\%$ of each other
+receipt	receipts/P15_CR_cosmology/C28_length_against_angle.py	105	CR_cosmology.tex	1	a diffusion length
+receipt	receipts/P15_CR_cosmology/C28_length_against_angle.py	108	CR_cosmology.tex	1	in which the common distance cancels
+receipt	receipts/P15_CR_cosmology/C28_length_against_angle.py	112	CR_cosmology.tex	0	That figure and the $8.2\%$ of
+receipt	receipts/P15_CR_cosmology/C28_length_against_angle.py	143	CR_cosmology.tex	0	theta_D/theta_* is
+receipt	receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	101	CR_cosmology.tex	1	\emph{contains no $k$ at all once $w=0$}, so on a radiation-free rate the problem is scale-free
+receipt	receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	107	CR_cosmology.tex	1	That is the stacking rate's answer, and the perturbations do not take it: they take the leaf's, which carries the radiation term and therefore the driving
+receipt	receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	132	CR_cosmology.tex	1	so each re-enters on the expanding leg at its own time
+receipt	receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	149	CR_cosmology.tex	1	everything above $\ell_{\mathrm{eq}}\simeq144$ at the epoch the distance data fix---are driven
+receipt	receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	171	CR_cosmology.tex	1	What does not cross is the oscillatory content itself
+receipt	receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	172	CR_cosmology.tex	1	the kernel annihilates it
+receipt	receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	173	CR_cosmology.tex	1	it is what leaves the comb to be set on the expansion side
+receipt	receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	107	CR_cosmology.tex	1	likelihood-level model selection
+receipt	receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	143	CR_cosmology.tex	1	It is fitted from the distance data here rather than taken from the microwave background
+receipt	receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	144	CR_cosmology.tex	1	The two arms fit the same four parameters, so no information criterion separates them
+receipt	receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	145	CR_cosmology.tex	1	penalties of about two per fitted parameter
+receipt	receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	91	CR_cosmology.tex	1	the first peak is where the amplitude is anchored
+receipt	receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	102	CR_cosmology.tex	1	That factor is computed rather than fitted: the inherited quantity is $P_{\Psi}$
+receipt	receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	103	CR_cosmology.tex	1	what the construction takes from the progenitor here is the potential power and nothing about the map
+receipt	receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	120	CR_cosmology.tex	1	the first peak is where the amplitude is anchored
+receipt	receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	121	CR_cosmology.tex	1	With the expansion rate, the matter and baryon densities and the tilt free in each arm and the amplitude in closed form
+receipt	receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	123	CR_cosmology.tex	1	The two arms fit the same four parameters, so no information criterion separates them
+receipt	receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	124	CR_cosmology.tex	1	\emph{the arm at $1.57$ times the control's distance
+receipt	receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	93	CR_cosmology.tex	0	The first acoustic peak, and the propagated comb
+receipt	receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	115	CR_cosmology.tex	0	own phase freedom is a real lever on it and spans a third of it
+receipt	receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	116	CR_cosmology.tex	0	thirty-four per cent, and no further
+receipt	receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	117	CR_cosmology.tex	0	cannot close the discrepancy
+receipt	receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	135	CR_cosmology.tex	1	leaves two things to be fixed, and the handover fixes both
+receipt	receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	136	CR_cosmology.tex	1	\emph{The single-locus reading is not inside that trade}: it returns the first peak at $222$
+receipt	receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	138	CR_cosmology.tex	1	Across the seventeen readings admitted by a four-peak criterion fixed before the numbers, the first peak spans $148$ to $228$
+receipt	receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	140	CR_cosmology.tex	1	\emph{the arm sits at $2.57$ times the control's distance from the data}
+receipt	receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	141	CR_cosmology.tex	1	\emph{the arm at $1.57$ times the control's distance
+receipt	receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	81	CR_cosmology.tex	1	with no free parameter
+receipt	receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	101	CR_cosmology.tex	1	visibility function, $r=0.992$, it is a rise of about two per cent at $\ell_{D}$
+receipt	receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	134	CR_cosmology.tex	0	plik_lite TT only
+receipt	receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	96	CR_cosmology.tex	0	with $r=\theta_{D}/\theta_{*}=1.082$
+receipt	receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	97	CR_cosmology.tex	0	so the ratio is $0.84$ at $\ell_{D}$
+receipt	receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	126	CR_cosmology.tex	0	does not soften the negative
+receipt	receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	109	CR_cosmology.tex	1	with no free parameter
+receipt	receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	93	CR_cosmology.tex	8	against the measured
+receipt	receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	106	CR_cosmology.tex	1	Matter--radiation equality is then fixed by the same epoch
+receipt	receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	107	CR_cosmology.tex	2	is a test of the background rather than a further fit to it
+receipt	receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	124	CR_cosmology.tex	1	The quantities this cosmology actually uses are the epoch $x_{0}$ (equivalently $\Omega_m=2/(x_{0}^{3}+2)$
+receipt	receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	126	CR_cosmology.tex	1	which the rate carries and the baryon-acoustic data fix
+receipt	receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	129	CR_cosmology.tex	1	the first peak is where the amplitude is anchored
+receipt	receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	130	CR_cosmology.tex	1	inherits rather than predicts
+receipt	receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	136	CR_cosmology.tex	0	invented by this line
+receipt	receipts/P15_CR_cosmology/C39_the_derived_list_read.py	143	CR_cosmology.tex	1	inherits rather than predicts
+receipt	receipts/P15_CR_cosmology/C39_the_derived_list_read.py	148	CR_cosmology.tex	1	consequence follows with no free parameter
+receipt	receipts/P15_CR_cosmology/C39_the_derived_list_read.py	98	CR_cosmology.tex	8	against the measured
+receipt	receipts/P15_CR_cosmology/C39_the_derived_list_read.py	100	CR_cosmology.tex	1	within $0.7\%$ of each other
+receipt	receipts/P15_CR_cosmology/C39_the_derived_list_read.py	112	CR_cosmology.tex	1	Matter--radiation equality is then fixed by the same epoch
+receipt	receipts/P15_CR_cosmology/C39_the_derived_list_read.py	113	CR_cosmology.tex	1	equality falls within a couple of per cent of flat $\Lambda$CDM's with nothing fitted to a spectrum
+receipt	receipts/P15_CR_cosmology/C39_the_derived_list_read.py	127	CR_cosmology.tex	1	is not a feature of this construction either
+receipt	receipts/P15_CR_cosmology/C39_the_derived_list_read.py	128	CR_cosmology.tex	1	it follows from standard thermodynamics alone
+receipt	receipts/P15_CR_cosmology/C39_the_derived_list_read.py	129	CR_cosmology.tex	1	there is no such start and no such amplitude
+receipt	receipts/P15_CR_cosmology/C39_the_derived_list_read.py	139	CR_cosmology.tex	1	The quantities this cosmology actually uses are the epoch $x_{0}$ (equivalently $\Omega_m=2/(x_{0}^{3}+2)$
+receipt	receipts/P15_CR_cosmology/C39_the_derived_list_read.py	141	CR_cosmology.tex	1	which the rate carries and the baryon-acoustic data fix
+receipt	receipts/P15_CR_cosmology/C40_the_pair_was_quoted_against_a_rounding.py	108	CR_cosmology.tex	0	MEAS_L - 301.76
+receipt	receipts/P15_CR_cosmology/C40_the_pair_was_quoted_against_a_rounding.py	90	CR_cosmology.tex	8	against the measured
+receipt	receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	108	CR_cosmology.tex	0	MEAS_L - 301.76
+receipt	receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	105	CR_cosmology.tex	1	measured $301.76$
+receipt	receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	150	CR_cosmology.tex	0	WITH THE BARYON TERMS
+receipt	receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	150	CR_cosmology.tex	0	100*(rat-1)
+receipt	receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	153	CR_cosmology.tex	0	damping_ratio_clean.py reports
+receipt	receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	153	CR_cosmology.tex	0	This derivation gives
+receipt	receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	160	CR_cosmology.tex	0	{\sim}8\%
+receipt	receipts/P15_CR_cosmology/C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py	88	CR_cosmology.tex	0	MEAS_L - 301.76
+receipt	receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	156	CR_cosmology.tex	0	theta_D/theta_* ratio
+receipt	receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	121	CR_cosmology.tex	0	larger by $9.4\%$
+receipt	receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	121	CR_cosmology.tex	1	C10_highl_ratio
+receipt	receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	142	CR_cosmology.tex	0	larger by $8.2\%$
+receipt	receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	142	CR_cosmology.tex	0	r=\theta_{D}/\theta_{*}=1.082
+receipt	receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	147	CR_cosmology.tex	1	is then $\theta_{D}/\theta_{*}$ moved by under a per cent
+receipt	receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	148	CR_cosmology.tex	1	visibility function, $r=0.992$
+receipt	receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	151	CR_cosmology.tex	0	DERIVED, C9
+receipt	receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	152	CR_cosmology.tex	0	DERIVED in C9
+receipt	receipts/P15_CR_cosmology/C54_the_281_is_the_prediction_being_measured.py	102	CR_cosmology.tex	1	The high-$\ell$ consequence follows with no free parameter
+receipt	receipts/P15_CR_cosmology/C54_the_281_is_the_prediction_being_measured.py	118	CR_cosmology.tex	0	measurement discrepancy, not a framework verdict
+receipt	receipts/P15_CR_cosmology/C56_la_is_computed_and_its_residual_is_too_small.py	108	CR_cosmology.tex	1	met from the other end and to that accuracy rather than exactly
+receipt	receipts/P15_CR_cosmology/P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_free_potential_amplitude_while_on_the_segments_own_branch_a_sound_speed_costs_a_tilt_equal_to_its_whole_exponent.py	161	CR_cosmology.tex	0	P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_free_potential_amplitude
+receipt	receipts/P15_CR_cosmology/P15_po75_the_supplier_is_already_in_print_and_the_floor_is_two_derivations_not_one_so_the_odd_ladder_is_the_test_that_separates_them.py	121	cosmogenesis_paper.tex	0	no source below it
+receipt	receipts/P15_CR_cosmology/P15_po84_the_charge_is_carried_and_the_corpus_already_named_where_because_the_eigenvalue_divergence_is_the_traded_momentums_blueshift.py	238	CR_cosmology.tex	1	blueshift
+receipt	receipts/P15_CR_cosmology/P15_po84_the_charge_is_carried_and_the_corpus_already_named_where_because_the_eigenvalue_divergence_is_the_traded_momentums_blueshift.py	238	CR_cosmology.tex	0	carried in label
+receipt	receipts/P15_CR_cosmology/P15_the_bead_routes_damping_survives_on_the_squashed_layer_because_the_berger_harmonics_carry_no_squashing_and_the_spectrum_is_bounded_below_uniformly.py	424	CR_cosmology.tex	1	P15_the_bead_routes_damping_survives_on_the_squashed_layer
+receipt	receipts/P15_CR_cosmology/P15_the_bridge_is_exact_on_the_spectrum_and_the_transport_is_not_shared_because_the_four_route_carries_a_weyl_coupling_the_layer_has_no_counterpart_for.py	248	CR_cosmology.tex	1	not shared
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	233	CR_cosmology.tex	1	\lambda(L,m)=L(L+2)+4(\varepsilon^{-2}-1)m^2
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	154	CR_cosmology.tex	0	I do not trust that product
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	155	CR_cosmology.tex	0	the odd-ladder bound, by composition, exactly as `r7173` conjectured
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	160	CR_cosmology.tex	0	The two loci must be the SAME locus
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	161	CR_cosmology.tex	0	This is the one I most expect to be the real obstruction
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	162	CR_cosmology.tex	0	must mean ZERO and not SUPPRESSED
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	167	CR_cosmology.tex	0	the product is not defined on this path
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	168	CR_cosmology.tex	0	A bound by a mechanism the order did not name is a finding
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	169	CR_cosmology.tex	0	I will not use `r7186`'s null-to-null sentence twice
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	177	CR_cosmology.tex	1	needs a harmonic decomposition of the layer at every point of the curve
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	178	CR_cosmology.tex	1	the lift included
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	179	CR_cosmology.tex	1	the layer there is squashed rather than round
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	185	CR_cosmology.tex	0	The Berger harmonics carry NO squashing
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	186	CR_cosmology.tex	0	is exactly conserved along the bead and no mode mixes into another
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	187	CR_cosmology.tex	0	Only the EIGENVALUE moves
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	227	CR_cosmology.tex	2	s_{\rm tot}=\Gamma(\tfrac16)\sqrt\pi/\Gamma(\tfrac23)\sqrt3\,2^{1/3}=3.3387380
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	250	CR_cosmology.tex	0	\varepsilon\to0$` at the seam RAISES every eigenvalue
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	251	CR_cosmology.tex	0	RAISES every eigenvalue
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	277	CR_cosmology.tex	0	0.2591014627
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	310	CR_cosmology.tex	0	NOT ATTAINED
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	310	CR_cosmology.tex	0	0.2591014627
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	311	CR_cosmology.tex	0	The Berger harmonics carry NO squashing
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	317	CR_cosmology.tex	0	A bound by a mechanism the order did not name is a finding
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	318	CR_cosmology.tex	0	it is not an answer to the question asked
+receipt	receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	324	CR_cosmology.tex	0	I will not use `r7186`'s null-to-null sentence twice
+receipt	receipts/P15_CR_cosmology/P15_the_conjecture_reduces_to_umbilicity_because_a_conformal_carrying_preserves_the_invariants_modulus_across_the_lift_and_the_foliation_is_umbilic_only_at_the_seam.py	142	CR_cosmology.tex	1	the round shape is not carried to the seam
+receipt	receipts/P15_CR_cosmology/P15_the_conjecture_reduces_to_umbilicity_because_a_conformal_carrying_preserves_the_invariants_modulus_across_the_lift_and_the_foliation_is_umbilic_only_at_the_seam.py	143	CR_cosmology.tex	1	P15_the_sheared_layers_invariant_is_obtained_in_closed_form
+receipt	receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	382	CR_cosmology.tex	0	as a conjecture and do not claim it as a theorem
+receipt	receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	383	CR_cosmology.tex	0	work this paper does not carry
+receipt	receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	384	CR_cosmology.tex	5	eq:shape-invariant
+receipt	receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	385	CR_cosmology.tex	0	P15_the_constant_r_foliation_carries_the_sphere_across_the_lap
+receipt	receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	395	CR_cosmology.tex	1	the round shape is not carried to the seam
+receipt	receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	396	CR_cosmology.tex	1	P15_the_sheared_layers_invariant_is_obtained_in_closed_form
+receipt	receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	570	CR_cosmology.tex	1	not a diffeomorphism
+receipt	receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	379	CR_cosmology.tex	3	areal coordinate degenerating
+receipt	receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	489	CR_cosmology.tex	1	r(\tau,\chi)=r(\tau+\chi)
+receipt	receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	490	CR_cosmology.tex	5	45^\circ
+receipt	receipts/P15_CR_cosmology/P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha.py	401	CR_cosmology.tex	1	The constant-$\tau$ slice is exactly flat $\mathbb{R}^3$.
+receipt	receipts/P15_CR_cosmology/P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha.py	197	CR_cosmology.tex	2	r_0\approx5051
+receipt	receipts/P15_CR_cosmology/P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha.py	197	CR_cosmology.tex	2	D_C/r_0\approx2.774
+receipt	receipts/P15_CR_cosmology/P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha.py	362	CR_cosmology.tex	1	The constant-$\tau$ slice is exactly flat $\mathbb{R}^3$.
+receipt	receipts/P15_CR_cosmology/P15_the_floors_understatement_is_measured_against_the_floor_and_not_the_exact_value_and_sec_largescale_never_carries_the_asymptote.py	240	CR_cosmology.tex	1	low-multipole floor is built on is $r_0$
+receipt	receipts/P15_CR_cosmology/P15_the_floors_understatement_is_measured_against_the_floor_and_not_the_exact_value_and_sec_largescale_never_carries_the_asymptote.py	241	CR_cosmology.tex	1	\paragraph{The low-multipole floor.}
+receipt	receipts/P15_CR_cosmology/P15_the_floors_understatement_is_measured_against_the_floor_and_not_the_exact_value_and_sec_largescale_never_carries_the_asymptote.py	252	CR_cosmology.tex	1	lower bound on this sector's transmission
+receipt	receipts/P15_CR_cosmology/P15_the_floors_understatement_is_measured_against_the_floor_and_not_the_exact_value_and_sec_largescale_never_carries_the_asymptote.py	254	CR_cosmology.tex	11	\S\ref{sec:largescale}
+receipt	receipts/P15_CR_cosmology/P15_the_floors_understatement_is_measured_against_the_floor_and_not_the_exact_value_and_sec_largescale_never_carries_the_asymptote.py	254	CR_cosmology.tex	12	\ref{sec:largescale}
+receipt	receipts/P15_CR_cosmology/P15_the_floors_understatement_is_measured_against_the_floor_and_not_the_exact_value_and_sec_largescale_never_carries_the_asymptote.py	256	CR_cosmology.tex	1	transfer matrices
+receipt	receipts/P15_CR_cosmology/P15_the_floors_understatement_is_measured_against_the_floor_and_not_the_exact_value_and_sec_largescale_never_carries_the_asymptote.py	256	CR_cosmology.tex	1	exact/WKB
+receipt	receipts/P15_CR_cosmology/P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py	274	CR_cosmology.tex	1	four-dimensional
+receipt	receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	116	CR_cosmology.tex	0	A_RAD = 4.0 * MASS * R_SEAM
+receipt	receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	117	CR_cosmology.tex	0	aH = np.sqrt(rH2(r)) / _ref
+receipt	receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	154	CR_cosmology.tex	1	$1.96$ at $\lvert r\rvert=0.1\,\alpha$
+receipt	receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	110	CR_cosmology.tex	0	Take the vacuum case A=0 first, which is the pure bead
+receipt	receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	114	CR_cosmology.tex	0	def rH2(rr, A=0.0)
+receipt	receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	114	CR_cosmology.tex	0	def rH2(r, A=0.0)
+receipt	receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	217	CR_cosmology.tex	0	Take the vacuum case A=0 first, which is the pure bead
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	221	CR_cosmology.tex	2	selects the Nariai member
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	256	CR_cosmology.tex	1	The constant-$\tau$ slice is exactly flat $\mathbb{R}^3$.
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	365	CR_cosmology.tex	1	redshift $1+z=r(\tilde\tau_0)/r(\tilde\tau_e)$
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	197	CR_cosmology.tex	2	r_0\approx5051
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	204	CR_cosmology.tex	2	D_C\approx1.4011\times10^{4}
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	208	CR_cosmology.tex	2	D_C/r_0\approx2.774
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	212	CR_cosmology.tex	2	\ell_2\approx7.8
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	218	CR_cosmology.tex	1	ds^2=-d\tau^2+(\partial_\chi r)^2\,d\chi^2+r^2 d\Omega^2
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	219	CR_cosmology.tex	1	r(\tau,\chi)=r(\tau+\chi)
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	341	CR_cosmology.tex	1	the comoving angular-diameter distance is $D_M=D_C$
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	506	CR_cosmology.tex	1	layers are the closed $S^3$
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	507	CR_cosmology.tex	1	read as a sphere in the de~Sitter presentation
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	508	CR_cosmology.tex	1	with $r_0$ the present $S^3$ areal radius
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	509	CR_cosmology.tex	1	the ratio of the flat projection distance to the curvature radius
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	570	CR_cosmology.tex	1	flat distances and a closed $S^3$ of comoving worldlines coexist
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	589	CR_cosmology.tex	0	def Hleaf
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	589	CR_cosmology.tex	0	OR / a ** 4
+receipt	receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	589	CR_cosmology.tex	0	if RAD_IN_RATE
+receipt	receipts/P15_CR_cosmology/P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold.py	162	CR_cosmology.tex	0	abs(r[2] - 1) < 0.05
+receipt	receipts/P15_CR_cosmology/P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold.py	162	CR_cosmology.tex	0	accuracy on a known input
+receipt	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	263	CR_cosmology.tex	1	registers that the reassignment is not a diffeomorphism
+receipt	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	268	CR_cosmology.tex	1	is what keeps that reassignment well defined across the lap
+receipt	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	282	CR_cosmology.tex	0	as a conjecture and do not claim it as a theorem
+receipt	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	283	CR_cosmology.tex	0	work this paper does not carry
+receipt	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	284	CR_cosmology.tex	5	eq:shape-invariant
+receipt	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	285	CR_cosmology.tex	0	P15_the_constant_r_foliation_carries_the_sphere_across_the_lap
+receipt	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	294	CR_cosmology.tex	1	the round shape is not carried to the seam
+receipt	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	295	CR_cosmology.tex	1	P15_the_sheared_layers_invariant_is_obtained_in_closed_form
+receipt	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	253	CR_cosmology.tex	1	they are \emph{not} two coordinate presentations of a single metric
+receipt	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	254	CR_cosmology.tex	1	reached from one another by the reassignment of the null condition
+receipt	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	255	CR_cosmology.tex	1	two metrics carried on one ontological layering
+receipt	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	256	CR_cosmology.tex	1	the cosmic layers are the surfaces of constant areal radius
+receipt	receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py	236	CR_cosmology.tex	1	P15_the_layers_three_metric_obtained_by_restriction_is_timelike
+receipt	receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py	223	CR_cosmology.tex	1	the round shape is not carried to the seam
+receipt	receipts/P15_CR_cosmology/P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it.py	224	CR_cosmology.tex	1	P15_the_sheared_layers_invariant_is_obtained_in_closed_form
+receipt	receipts/P15_CR_cosmology/P15_the_lifts_exact_envelope_on_the_carried_layer_is_a_one_parameter_deformation_indexed_by_the_hopf_charge_and_the_uniform_bound_is_not_attained.py	359	CR_cosmology.tex	1	P15_the_lifts_exact_envelope_on_the_carried_layer
+receipt	receipts/P15_CR_cosmology/P15_the_lifts_exact_envelope_on_the_carried_layer_is_a_one_parameter_deformation_indexed_by_the_hopf_charge_and_the_uniform_bound_is_not_attained.py	361	CR_cosmology.tex	1	Hopf charge
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	292	CR_cosmology.tex	0	np.exp(-(ell/lD)**2*(r**2-1))
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	289	CR_cosmology.tex	0	Dltt=d[2:lmax+1,0].copy()
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	290	CR_cosmology.tex	0	Dltt=Dltt*s
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	324	CR_cosmology.tex	0	os.environ.get('CRH0'
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	324	CR_cosmology.tex	0	os.environ.get('CROM'
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	325	CR_cosmology.tex	0	os.environ.get('WBH2'
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	329	CR_cosmology.tex	0	H0 = float(os.environ.get('CRH0', H0))
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	330	CR_cosmology.tex	0	OMBH2 = float(os.environ.get('WBH2', OMBH2))
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	331	CR_cosmology.tex	0	_crom = os.environ.get('CROM')
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	332	CR_cosmology.tex	0	if _crom and ARM != 'lcdm':     OM = float(_crom)
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	368	CR_cosmology.tex	0	LEAFSCALES = os.environ.get('LEAFSCALES', '0') == '1'
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	372	CR_cosmology.tex	0	H = Hleaf if LEAFSCALES else Hgeom
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	373	CR_cosmology.tex	0	which is what the adjudication asks for
+receipt	receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	374	CR_cosmology.tex	1	the scales the plasma itself accumulates---$\rs$ and $r_D$---take the leaf's
+receipt	receipts/P15_CR_cosmology/P15_the_locus_is_wrong_in_six_places_and_the_lint_cannot_see_the_worst.py	490	CR_cosmology.tex	1	branch point is far below their decoupling
+receipt	receipts/P15_CR_cosmology/P15_the_locus_is_wrong_in_six_places_and_the_lint_cannot_see_the_worst.py	411	CR_cosmology.tex	7	\label{prop:
+receipt	receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	214	CR_cosmology.tex	1	The two independent Boltzmann treatments cross-validate the depth as well as the shape
+receipt	receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	216	CR_cosmology.tex	1	the hierarchy agrees to three per cent at every multipole
+receipt	receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	217	CR_cosmology.tex	1	Those figures are read through the exact transfer, and the photon hierarchy built for this programme
+receipt	receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	257	CR_cosmology.tex	1	$0.487$, $0.435$, $0.359$, $0.666$, $0.911$, $0.983$ and $0.998$
+receipt	receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	210	CR_cosmology.tex	0	TWO DEFECTS IN THE SECOND ARM
+receipt	receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	210	CR_cosmology.tex	0	THE LOW-MULTIPOLE DEPTH GAP CLOSES
+receipt	receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	264	CR_cosmology.tex	1	$\Delta(-2\ln L)=+1.6$ over $2\le\ell\le10$
+receipt	receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	209	CR_cosmology.tex	0	TWO DEFECTS IN THE SECOND ARM
+receipt	receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py	115	CR_cosmology.tex	0	taup_of = CubicSpline(_ea, _tpa)
+receipt	receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py	113	CR_cosmology.tex	0	_ea = np.linspace(eg[1], eta_end, _NTAU)
+receipt	receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	224	CR_cosmology.tex	0	--cutoff
+receipt	receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	235	CR_cosmology.tex	0	brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg
+receipt	receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	238	CR_cosmology.tex	0	an artefact of where the pin was put?
+receipt	receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	365	CR_cosmology.tex	0	R_S = rs_from(Z_START) if _rsfrom
+receipt	receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	254	CR_cosmology.tex	1	Where the plasma starts moves the scale and not the peak, which is why the start is not free
+receipt	receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	256	CR_cosmology.tex	1	runs $\ell_{A}$ from $360.6$ down to $239.3$ while the first peak sits between $204$ and $208$ throughout\rcpt{P15_the_one_fitted_number_moves_the_scale_and_not_the_peak}
+receipt	receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	259	CR_cosmology.tex	1	There is no early-universe parameter among them
+receipt	receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	344	CR_cosmology.tex	0	_rsfrom = os.environ.get('LRSFROM', 'zero')
+receipt	receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	345	CR_cosmology.tex	0	rs_from(Z_START) if _rsfrom == 'start' else rs_from(1e8)
+receipt	receipts/P15_CR_cosmology/P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_the_horizon_scale_on_both_lorentzian_legs_is_the_same_pure_number.py	398	CR_cosmology.tex	0	a fragility
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	170	CR_cosmology.tex	1	\sum_\ell(2\ell+1)j_\ell(x)^2=1
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	176	CR_cosmology.tex	1	the printed value sits near the ninetieth percentile
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	182	CR_cosmology.tex	2	D_C\approx1.4011\times10^{4}
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	182	CR_cosmology.tex	2	r_0\approx5051
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	194	CR_cosmology.tex	0	THE WIDTH CROSSES THE SPACING AT `$L=3$`
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	205	CR_cosmology.tex	2	stretch $2.774$
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	215	CR_cosmology.tex	2	stretch $2.774$
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	215	CR_cosmology.tex	2	r_0\approx5051
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	297	CR_cosmology.tex	0	NO PAPER FIXES IT
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	298	CR_cosmology.tex	0	inherits rather than derives
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	303	CR_cosmology.tex	1	For scalars the deformation reaches the spectrum and not the basis
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	304	CR_cosmology.tex	1	the vector sector below is where that premise fails
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	310	CR_cosmology.tex	0	IS THEREFORE NOT AN ENVELOPE EXPONENTIAL IN
+receipt	receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	311	CR_cosmology.tex	0	is dominated by the LOWEST contributing degree
+receipt	receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	146	CR_cosmology.tex	2	D_C\approx1.4011\times10^{4}
+receipt	receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	146	CR_cosmology.tex	2	r_0\approx5051
+receipt	receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	147	CR_cosmology.tex	2	stretch $2.774$
+receipt	receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	176	CR_cosmology.tex	0	two of the higher modal values are NOT stable
+receipt	receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	193	CR_cosmology.tex	0	THE PROJECTION COSTS LEAST ONE DEGREE LOWER
+receipt	receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	216	CR_cosmology.tex	0	THE WIDTH CROSSES THE SPACING AT `$L=3$`
+receipt	receipts/P15_CR_cosmology/P15_the_seam_limit_of_the_carried_layer_with_its_chi_block_is_prop_throats_ds2_times_s2_obtained_with_both_radii_read_off_the_flow.py	365	CR_cosmology.tex	1	P15_the_seam_limit_of_the_carried_layer_with_its_chi_block
+receipt	receipts/P15_CR_cosmology/P15_the_seam_limit_of_the_carried_layer_with_its_chi_block_is_prop_throats_ds2_times_s2_obtained_with_both_radii_read_off_the_flow.py	367	CR_cosmology.tex	1	limit of the carried layer
+receipt	receipts/P15_CR_cosmology/P15_the_seam_limit_of_the_carried_layer_with_its_chi_block_is_prop_throats_ds2_times_s2_obtained_with_both_radii_read_off_the_flow.py	367	CR_cosmology.tex	0	obtained as the limit
+receipt	receipts/P15_CR_cosmology/P15_the_sheared_layers_invariant_is_obtained_in_closed_form_and_the_squashing_runs_to_zero_approaching_the_seam_so_the_shape_is_not_carried.py	329	CR_cosmology.tex	1	the round shape is not carried to the seam
+receipt	receipts/P15_CR_cosmology/P15_the_sheared_layers_invariant_is_obtained_in_closed_form_and_the_squashing_runs_to_zero_approaching_the_seam_so_the_shape_is_not_carried.py	330	CR_cosmology.tex	1	P15_the_sheared_layers_invariant_is_obtained_in_closed_form
+receipt	receipts/P15_CR_cosmology/P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py	117	CR_cosmology.tex	0	os.environ.get('LZSTART'
+receipt	receipts/P15_CR_cosmology/P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py	120	CR_cosmology.tex	0	os.environ.get('LRSFROM'
+receipt	receipts/P15_CR_cosmology/P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear.py	226	CR_cosmology.tex	0	bounded its contrast effect at $2$
+receipt	receipts/P15_CR_cosmology/P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear.py	228	CR_cosmology.tex	0	twice what it would need
+receipt	receipts/P15_CR_cosmology/P15_the_vector_sectors_pointwise_bound_fails_while_its_exponent_exceeds_the_scalars_and_the_tensor_sector_has_no_transverse_traceless_spectrum_off_the_round_point.py	560	CR_cosmology.tex	0	tensor eigenvalue on the squashed layer
+receipt	receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	101	cosmogenesis_paper.tex	1	its exact regulated value is open and downstream-irrelevant
+receipt	receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	103	cosmogenesis_paper.tex	1	The peak is drawn at its $M$-independent infall-scale lower bound
+receipt	receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	108	cosmogenesis_paper.tex	1	What remains open is not the computation but its last-percent precision
+receipt	receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	129	cosmogenesis_paper.tex	1	The data-confrontation is \emph{done}: the network meets the measured deuterium and helium-4 within $1\sigma$
+receipt	receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	86	cosmogenesis_paper.tex	0	RETIRED r2639
+receipt	receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	86	cosmogenesis_paper.tex	0	SCOPE-BY-DESIGN
+receipt	receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	91	cosmogenesis_paper.tex	1	remains open, and is downstream-irrelevant here
+receipt	receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	92	cosmogenesis_paper.tex	1	once dissociation is total, the memory of the peak is erased
+receipt	receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	95	cosmogenesis_paper.tex	1	the abundances are fixed by the conditions in the window on the cooling leg
+receipt	receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	96	cosmogenesis_paper.tex	1	not by the peak's value
+receipt	receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	124	cosmogenesis_paper.tex	1	a precision frontier the title does not stake itself on
+receipt	receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	125	cosmogenesis_paper.tex	1	not a debt
+receipt	receipts/P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two.py	398	cosmogenesis_paper.tex	1	the $S^3$ tensor tower starts at $L=2$ and has no $k=0$ member
+receipt	receipts/P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two.py	391	cosmogenesis_paper.tex	1	has no $k=0$ member
+receipt	receipts/P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two.py	403	cosmogenesis_paper.tex	1	a genuinely homogeneous shear is not a perturbation of a closed ball at all
+receipt	receipts/P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two.py	404	cosmogenesis_paper.tex	1	change of background class
+receipt	receipts/P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two.py	405	cosmogenesis_paper.tex	1	Bianchi~IX
+receipt	receipts/P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two.py	411	cosmogenesis_paper.tex	0	the Bianchi shear \emph{is} the long-wavelength growing tensor mode
+receipt	receipts/P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two.py	412	cosmogenesis_paper.tex	1	is the long-wavelength growing tensor mode
+receipt	receipts/P17_geometric_core_paper/P17_the_ledgers_entropy_is_the_de_sitter_readings_and_the_other_reading_has_a_number_but_not_an_entropy.py	295	geometric_core_paper.tex	1	de~Sitter horizon whose
+receipt	receipts/P17_geometric_core_paper/P17_the_ledgers_entropy_is_the_de_sitter_readings_and_the_other_reading_has_a_number_but_not_an_entropy.py	297	geometric_core_paper.tex	1	differ by $3/8$
+receipt	receipts/RP_34_gr/G3_the_axis_names_two_orderings.py	85	range_paper.tex	1	the horizon cubic's double root $\Lambda M^{2}=1/9$ where two horizon null surfaces merge
+receipt	receipts/RP_34_gr/G3_the_axis_names_two_orderings.py	104	range_paper.tex	1	out to the wall, the two its endpoints
+receipt	receipts/RP_34_gr/G3_the_axis_names_two_orderings.py	106	range_paper.tex	1	this range places at the inner end of the null-degeneracy axis
+receipt	receipts/RP_34_gr/G3_the_axis_names_two_orderings.py	130	range_paper.tex	1	The wall is the complement
+receipt	receipts/RP_34_gr/G3_the_axis_names_two_orderings.py	100	range_paper.tex	1	where the last symmetry able to anchor a sweep is lost the operator can no longer generate the leaf
+receipt	receipts/RP_34_gr/G3_the_axis_names_two_orderings.py	128	range_paper.tex	5	plane wave
+explainer	EXPLAINER.md	15	corpus/BH_causality_v2.tex	1	has physical preconditions the astrophysical domain never meets
+explainer	EXPLAINER.md	15	corpus/BH_causality_v2.tex	1	The event horizon is a metric singularity
+explainer	EXPLAINER.md	56	corpus/CR_cosmology.tex	1	(2M\alpha^{2})^{1/3}\simeq3792
+explainer	EXPLAINER.md	77	corpus/CR_cosmology.tex	3	1:\sqrt3:2
+explainer	EXPLAINER.md	88	corpus/CR_cosmology.tex	1	8.97\times10^{-2}
+explainer	EXPLAINER.md	88	corpus/CR_cosmology.tex	1	4.158\times10^{-3}
+explainer	EXPLAINER.md	88	corpus/CR_cosmology.tex	3	2^{7/3}k^2e^{-k\,s_{\rm tot}}
+explainer	EXPLAINER.md	88	corpus/CR_cosmology.tex	2	3.3387380
+explainer	EXPLAINER.md	100	corpus/CR_cosmology.tex	2	10^{113}
+explainer	EXPLAINER.md	100	corpus/CR_cosmology.tex	1	are fixed nowhere in this construction
+explainer	EXPLAINER.md	142	corpus/matter_sector_paper.tex	1	four dimensions being the only one
+explainer	EXPLAINER.md	175	corpus/CR_cosmology.tex	4	H_0\simeq68.6
+explainer	EXPLAINER.md	175	corpus/CR_cosmology.tex	6	a part in six hundred
+explainer	EXPLAINER.md	175	corpus/CR_cosmology.tex	4	$2.57$ times the control
+explainer	EXPLAINER.md	175	corpus/CR_cosmology.tex	1	lithium-7 carries the standard threefold
+explainer	EXPLAINER.md	175	corpus/CR_cosmology.tex	1	removes the contrast anomaly entirely
+explainer	EXPLAINER.md	175	corpus/CR_cosmology.tex	2	by three independent routes
