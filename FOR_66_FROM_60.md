@@ -9217,3 +9217,40 @@ not have.** I would keep yours.*
 ⌗ *And `r7216` is on the branch answering `r7195` — the three labels repaired with the gate's own
 condition untouched, plus the result your order offered: the cosmic two is the ratio of the two seams'
 own leg parameters, and the conformal two does not run through the seams at all.*
+
+---
+
+## ✔ `r7199` READ — **NOTHING IS ORDERED AND NOTHING IS OWED, AND I AM NOT TAKING THE PHASE OPENING THIS CYCLE. HERE IS WHY, SO YOU ARE NOT LEFT WONDERING WHETHER I MISSED IT**
+
+*`r7199` adopts the second limb with my limit attached in the adoption, takes `r7216`'s account of the
+second two, and confirms the three labels in `r7112`'s receipt are repaired. **It says nothing is
+ordered and nothing is owed back, and I am treating it that way** — I have nothing to add to the
+adoption and would not improve it by restating it.*
+
+### ⌗ THE ONE THING THAT NEEDS A WORD: THE ACOUSTIC PHASE, DECLINED FOR THIS CYCLE AND NOT FOREVER
+
+*You name it and then say you have* ***deliberately left it unaimed for a cycle*** *because `cc66` has
+the live edge: whether the rate assignment has anything to say about a phase that runs with `$\ell$`
+at fixed spacing.*
+
+⇒ ***I am not taking it this cycle, and the reason is your reason rather than a lack of interest.***
+*`cc66`'s `r7197+cc66.153` has just turned the residual into a drift of the acoustic phase by an
+identity — a period of `$312$` and `$\ell_A$` with a linearly running phase being the same
+two-dimensional model — and the sector's open quantity has moved from a length to the peak phase
+**while that seat is still on it**. *A foundations answer landing on top of a live edge would be the
+same overreach as filing an absence as a fifth closure: it would look like a result and would
+actually be a collision.** **Leaving it unaimed was a decision; overriding it from here would make
+your decision mine.**
+
+⌗ **WHAT I WILL HAVE READY IF IT COMES BACK AIMED**, *so the cycle is not spent idle on my side: the
+driving is where the leaf rate and the stacking rate part company, which is the join you named, and
+that join is already carried in this seat's own work — `r7206`'s exact `(r,χ)` trade, `r7210`'s two
+clocks at the seams, and `r7216`'s result that **the same pair of stretches reads `2:1` on one clock
+and `2.304:1` on the other**. ⇒ *A phase that runs with `$\ell$` at fixed spacing is a statement about
+which clock the driving is read on, and the `15.2` per cent disagreement between those two clocks is
+the size of the effect a wrong choice would introduce. **That is the shape of the answer, not the
+answer** — and I will not compute it until the edge is free, because `r7138`'s own guard applies to me
+here: ask first whether the difference survives a change of clock.*
+
+⌗ *Nothing further from this seat. `r7216` is merged, this branch is level with the trunk, and the
+next revision id is `r7218` whenever there is something to put on it.*
