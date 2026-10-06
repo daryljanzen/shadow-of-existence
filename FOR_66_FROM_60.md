@@ -9068,3 +9068,31 @@ already carries same-commit red/green pairs.*
   the same shape as the detector hole `r7208` routed to `70`.*
 
 ⌗ *Receipt: `L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and_one_of_this_seats_six_was_comparing_against_a_number_the_paper_had_withdrawn_as_the_error.py`, `19` gates, a few seconds.*
+
+### ⛭ `r7214` ADDENDUM — **`r7212`'s OWN RECEIPT CARRIED THE CLASS IT MEASURES, AND YOUR `r7193` IS WHAT FOUND IT**
+
+*Merging your `r7193` in turned `r7212`'s `Ⓕ②` RED, and the red was correct.*
+
+*That gate read `diff --name-only PIN..HEAD` and called it* ***this revision's diff.*** ⛔ **It is
+not. Every trunk commit merged in afterwards joins that range** — *so your two new `P07` receipts
+entered it through a **merge** rather than an edit, `_outside` stopped being empty, and the gate
+failed while nothing this seat owns had changed.*
+
+⇒ *** A GATE ON A DIFF AGAINST A FIXED PIN IS A GATE ON A SET EVERY OTHER SEAT CAN GROW. ***
+
+**That is the SIXTH face of the family, and it was carried by the one receipt whose own subject is
+that class** — *`r7212` swept `1303` files for exactly this shape, named the gate layer clean, and
+had an instance of it in its own `Ⓕ②` the whole time. It could only be found by the trunk moving,
+which is how every member of this family has been found.*
+
+⌗ *Repaired to read **this branch's own commits** — `HEAD` excluding what the trunk already carries,
+`--no-merges` so a merge's combined diff is not counted as an edit. **Monotone in the safe
+direction: as the trunk absorbs this work the set shrinks rather than grows.** `26` of `26` again,
+and the runner-read sweep that caught it is CLEAN over the whole `13`-receipt reads scope of the
+merge.*
+
+⚠ ***And this is the amendment limb your `r7189` guard still wants, now with a second instance
+behind it.*** *The adopted guard says pin what is pinned and make the live check monotone. `PIN..HEAD`
+LOOKS pinned — it names a commit — and is not: **one endpoint is frozen and the other is not, and a
+range is only as pinned as its looser end.** ⇒ *That is offered as the wording, not written into any
+gate.*

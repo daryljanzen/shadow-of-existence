@@ -51,6 +51,17 @@ corpus's OWN generated appendix layer, `40` occurrences, and the zero survives o
 haystack drops files by a filename prefix. **  ⇒ *The absence is a property of the PAPER layer and is
 already false of the corpus.  Nothing is red; the content is at distance one.*
 
+*** ⛭⛭⛭ AND AT `r7214` THIS RECEIPT WAS CAUGHT BY ITS OWN CLASS, BY THE TRUNK MOVING. ***  *`Ⓕ②`
+    read `diff --name-only PIN..HEAD` and called it this revision's diff.* ⛔ ** It is not: every
+    trunk commit merged in afterwards joins that range. **  *`r7193` landed two receipts of another
+    seat's, they entered `PIN..HEAD` through a MERGE rather than an edit, and the gate went RED
+    while nothing this seat owns had changed.*
+    ⇒ *** A GATE ON A DIFF AGAINST A FIXED PIN IS A GATE ON A SET EVERY OTHER SEAT CAN GROW ***
+    --- *the sixth face, and the only one found in the receipt whose own subject is the class.*
+    ⌗ *Repaired to read THIS BRANCH'S OWN COMMITS, `HEAD` excluding what the trunk already carries,
+    with `--no-merges` so a merge's combined diff is not counted as an edit. **Monotone in the safe
+    direction: as the trunk absorbs this work the set shrinks rather than grows.***
+
 ⌗ ** AND THE AUTHORSHIP BOUND IS KEPT, WHICH IS WHY THIS RUN WAS AVAILABLE AT ALL. **  *`r7208`
 bounded its sweep to the `284` receipts this seat owns and offered the tree-wide run to the gate.*
 ** That bound was never a bound on MEASURING -- it is a bound on REPAIRING. **  ⇒ *`16` of the `19`
@@ -589,15 +600,27 @@ gate("Ⓕ① all `14` receipts carrying an EXPOSED site are RUN here, not read: 
      "rather than implying a live red it has not got",
      len(_rc) == 14 and all(v == 0 for v in _rc.values()))
 
-_touched = [l for l in _git('diff', '--name-only', f'{PIN}..HEAD').split('\n') if l]
+# ⛭⛭⛭ r7214 REPAIR, AND IT IS THIS RECEIPT'S OWN CLASS CAUGHT BY THE TRUNK MOVING.
+#   This read was `diff --name-only PIN..HEAD`, and `PIN..HEAD` is NOT this revision's diff: every
+#   trunk commit merged in afterwards joins it.  `r7193` landed two receipts of another seat's and
+#   the gate below went RED -- on a merge, not on an edit, which is exactly the shape this receipt
+#   measures.  ** A gate on a DIFF AGAINST A FIXED PIN is a gate on a set every other seat can grow. **
+#   ⇒ The object the claim is about is THIS BRANCH'S OWN COMMITS, which is `HEAD` excluding whatever
+#   the trunk already carries -- `--no-merges` so a merge commit's combined diff is not counted as an
+#   edit.  Monotone in the safe direction: as the trunk absorbs this work the set SHRINKS.
+_touched = [l for l in _git('log', '--no-merges', '--name-only', '--format=',
+                            'HEAD', '--not', 'origin/main').split('\n') if l]
 _outside = [p for p in _touched
             if p.startswith('receipts/') and p.endswith('.py') and not mine(p)]
-print(f"      this revision's diff against the pin: {len(_touched)} path(s), "
+print(f"      this branch's OWN commits touch: {len(_touched)} path(s), "
       f"{len(_outside)} of them receipts this seat does not own")
 
 gate("Ⓕ② and the authorship bound is kept where it actually binds: `16` exposed sites sit in `12` "
-     "receipts this seat does not own, and this revision's own diff against the pin touches NONE "
-     "of them --- they are reported with their grounds and routed as patches, never edited",
+     "receipts this seat does not own, and THIS BRANCH'S OWN COMMITS touch NONE of them --- they are "
+     "reported with their grounds and routed as patches, never edited.  ⛭ *Read against this "
+     "branch's own commits rather than against a diff from a fixed pin, because `r7193` merged in "
+     "and turned the pinned form RED on a MERGE instead of an edit --- this receipt's own class, "
+     "found in it the way the family keeps being found*",
      len(_outside) == 0 and len(_exp_other) == 16
      and not any(e[0] in _touched for e in _exp_other))
 
