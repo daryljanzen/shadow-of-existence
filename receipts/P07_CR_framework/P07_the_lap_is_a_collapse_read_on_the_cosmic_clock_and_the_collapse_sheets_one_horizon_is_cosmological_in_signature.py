@@ -308,6 +308,23 @@ check("Ⓗ③  ** which is `P7`'s own stratification, read from its source: the 
       and 'the branch point (spacelike to timelike and imaginary to real together, through infinity '
           'rather than through zero)' in P07)
 
+head("J -- AND WHAT THE CAUSAL REASSIGNMENT ACTS ON, WHICH IS NOT ON THIS SHEET AT ALL")
+check("Ⓙ①  `P7`'s trichotomy classifies by how the reassigned null congruence meets the horizon, and "
+      "the case it selects is TANGENCY AT A MERGED DOUBLE ROOT -- read from its own source",
+      'tangency at a merged double root' in P07
+      and 'the limiting orientation the horizon selects is \\emph{tangent} rather than transverse'
+      in P07)
+check("Ⓙ②  and the merged double root is where the two POSITIVE horizons merge, which is the front "
+      "seam at +alpha/sqrt3 -- so the locus the reassignment acts on lies on the r > 0 sheet",
+      'the two positive horizons merge' in P07
+      and abs(fp_(RF, MN, A1)) < 1e-12 and RF > 0)
+check("Ⓙ③  ** which `P7` already names: the reassignment acts on a finite-curvature locus at "
+      "alpha/sqrt3 ** -- so the collapse sheet's having no black-hole root is not a gap in the "
+      "account.  The reassignment's locus is not on that sheet, and the back seam is that same "
+      "substrate point met a lap earlier",
+      'a finite-curvature locus at $\\alpha/\\sqrt3$' in P07
+      and all(g[2] == 1 for g in grid))     # one root on r<0, from group A, at every (M, alpha)
+
 print()
 if fails:
     print(f"  ⛔ {len(fails)} CHECK(S) FAILED:")
