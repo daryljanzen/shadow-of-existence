@@ -1,16 +1,4 @@
 {
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37408967868",
-    "since": "d31c39f4a372a9eb888c4cadc6d331a4c9b1ffc9"
-   },
-   "receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37408967868",
-    "since": "d31c39f4a372a9eb888c4cadc6d331a4c9b1ffc9"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "suite": {
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
