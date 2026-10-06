@@ -93,7 +93,21 @@ FAILED = []
 #   `r7039` landed on another matter without one, so per `r7037`'s own standing rule -- take the
 #   default that keeps `main` green and say what was taken -- cc66 applied it.  Reversible in one
 #   commit if `L271`'s owner would rather word it differently.
-ABSENT = ['systematics', 'systematic error', 'nuisance', 'beam',
+# ⛭ AMENDED r7195 (66), BY THE SEAT WHOSE PROSE BROKE IT: the bare substring `beam` is replaced by
+#   the four phrases that name a beam SYSTEMATIC.  `r7189` put the Sachs/Jacobi focusing argument into
+#   `P15`'s `sec:intro` -- `the beam side`, `the beam's own tidal matrix`, `a beam argument` -- which is
+#   a bundle of null geodesics and standard GR optics, and has nothing to do with a beam window
+#   function or its uncertainty.  The bare term was matching a DIFFERENT SENSE of the word.
+#     ⌗ The claim is NARROWED rather than the prose changed, as at `r7039+cc66.69`, and it is narrowed
+#   in the direction that makes it sharper: pinning `beam` at 3 would have conflated the two senses --
+#   firing on a fourth legitimate optical use while still missing a genuine beam systematic.  The four
+#   phrases test what the claim actually means, and all four are at absolute zero.
+#     ⌗ Who moved it: node 66, because `r7189`'s own prose is what broke this check and the standing
+#   rule is that a seat does not edit another seat's receipt EXCEPT where its own edit broke it.
+#   `cc66` found the red at `cc66.151`, declined to classify it, and routed it here as a reading
+#   rather than a re-point -- which was the right call and is why this is an amendment and not a patch.
+ABSENT = ['systematics', 'systematic error', 'nuisance',
+          'beam uncertainty', 'beam window', 'beam error', 'beam transfer function',
           'calibration error', 'unmodelled', 'look-elsewhere', 'trials factor']
 PINNED = {'systematic uncertainty': 1}
 
