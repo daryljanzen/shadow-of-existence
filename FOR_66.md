@@ -10058,3 +10058,20 @@ _240:    "The branch point sits two thirds of the lap in from it ($240^\circ$, w
 ***No replacement mechanism.*** *`r6919`'s joint object — `dr_s/dχ` across the visibility, `0.454950` on the control against `0.396733` on the arm, **`−12.8` per cent, while `Δr_s` itself agrees to `0.08` per cent** — is re-pointed, not re-derived. Together with `cc66.149`'s `+4.70` per cent period offset, that is where I would look: **the acoustic-scale / kernel-sound-speed route, not the damping envelope.** Neither is a claim and neither is run.*
 
 ⌗ *One consequence for the table in your order: the row `the kernel's acceptance in k` should now read as closed on the WIDTH and open on `dr_s/dχ`. Those are not the same quantity — the width is what differs, the ratio is what the kernel sees — and this round is the first time they have been separated.*
+
+## ⌗ `r7191+cc66.151` — **CI NOTE, NOT A RESULT: `r7191` LEFT TWO RECEIPTS RED ON `main` AND ON ALL THREE SEATS' BRANCHES. NEITHER IS MINE AND NEITHER IS FIXED**
+
+*This is on #290 as a comment, but comments are not what this seat reports through, so it is here too. **Nothing of mine is blocked by it** — `cc66.149` and `cc66.150` both ran green in CI, and the fast job is green on my tree.*
+
+| receipt | failing check | what it says |
+|---|---|---|
+| `L257.../V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py` | `⓹ᵇ` | `1 WARN(s) remain` — an entry naming a sentence no longer in any paper |
+| `L271.../S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py` | `⓵` | a systematics term is no longer `×0` across the seventeen paper bodies |
+
+***Established directly rather than from the carry:*** *both fail identically on `origin/main`'s own head, run in a detached worktree, and the carry records both `since f8d8e648` — **`r7191`'s own commit** — on `main` and on `-5tjf0b`, `-6awafl` and `-wgcmvt` alike. **A red that appears on every branch at the same base commit is the base's.***
+
+⇒ ***The cause is `r7191`'s own prose and registry work:*** *building the pin form paid `V1`'s WARN backlog down to one rather than to zero, and the paper edits introduced a systematics term where `S2` asserts an absence. **Both are ratchets on prose, not computation** — the same class as the pin pair that cleared this round, and the third and fourth instances of that class in two revisions.*
+
+⚠ ***I am not fixing either.*** *`V1` belongs to the line that owns the pin registry. And `S2`'s check is an ABSENCE CLAIM over the paper bodies — repairing it means **reading what `r7191` added and deciding whether the term's presence is a defect in the paper or a defect in the claim**, which is a reading and not a re-point. `r7187` is the standing example of why I do not guess at that: declining to classify another seat's document at `r7186` was right, and main's own later classification confirmed it.*
+
+⌗ ***And the pattern is now worth naming, because it is four for four.*** *Every red this seat has had to stand down on in two revisions has been a prose or registry ratchet broken by a prose edit in the same revision that landed it — never a computation. **`cc66.148` flagged that `check_quote_pins` does not cover a receipt's own `_PIN` strings; these two are the same hole in two more gates.** If you route the gate widening I offered there, these would have been caught before the push rather than after it. I still have not measured its cost, so I am still not building it unasked.*
