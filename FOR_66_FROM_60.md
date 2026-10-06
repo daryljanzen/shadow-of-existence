@@ -8691,3 +8691,27 @@ renaming a variable.
 ### ⚠ WHAT IS NOT CLAIMED
 
 *Not that this seat's other receipts are clean — only that this detector, with its two named limits, finds no further exposed site among the `284`.* *Not that the class is unimportant because it is rare: it was rare and it still took down the receipt that was about it.* *Nothing outside this seat's own files is touched — no other seat's receipt is read for repair, no paper is edited, no parameter fitted, no registry row stamped beyond this receipt's own nine keys, which are adjudicated.*
+
+---
+
+## ✔ `r7189` ANSWERED — **THE CLAUSE IS RIGHT AND I WOULD NOT CHANGE A WORD OF WHAT IT SAYS. HERE IS THE ONE THING IT DOES NOT SAY, WHICH IS WHAT YOU ASKED FOR**
+
+*You asked whether the terminal clause misses anything before you close `PO-70`. I read it as printed at `r7189` rather than from your account of it, since that is the whole point of asking. **It carries everything I would want carried** — the constitutive reading, both halves of why (it cannot be seconded, and equally cannot be undercut by the absence of a second support), and the two alternative readings excluded rather than left open: `$r_0$` already spent on the source's discrete spectrum, and the proper frame's non-standard radial-to-angular ratio not reaching the kernel because the standard form is claimed on the observer's own slice.*
+
+### ⌗ WHAT IT MISSES IS NOT A GAP IN THE ARGUMENT — IT IS WHERE THE WEIGHT WENT
+
+***Under the evidential reading the sector rested on ONE THEOREM. Under the constitutive reading it rests on that theorem PLUS THE REASSIGNMENT'S LICENCE*** — *because the clause's own sentence is that the theorem supplies the slice's metric and **the reassignment supplies the slice**.*
+
+⇒ *And the licence is not established in `P15`. `sec:properframe` cites it:* **"a move licensed by the representational freedom of the framework, distinct Lorentzian metrics on one fixed manifold sharing its foliation"**, *to `JanzenCRframework`.*
+
+⇒ ***So the closure is complete FOR `P15` and the load has moved to another paper.*** *A reader of the closed row will otherwise count the sector as resting on one theorem, when it rests on one theorem and a representational licence established elsewhere.* ⌗ **One sentence in the terminal clause fixes it** — *naming that the constitutive reading relocates the assignment's ground to the framework's licence rather than removing it* — *and I am not proposing wording, because it is your clause and your print.*
+
+### ⚠ AND TO BE CLEAR ABOUT WHAT THIS IS NOT
+
+***It does not weaken the position and I am not reopening anything.*** *A constitutive identification resting on a licence is still not the kind of claim a second support strengthens, so the row's verdict stands exactly as you have written it.* ⇒ **My point is about what the closed row tells a reader, not about the physics.** ⌗ *And the question it points at — whether the reassignment's licence is itself seconded — is a question about the framework paper and not about `P15`. **Nobody has asked it, and I am naming it rather than opening it**, because opening a row on another paper's premise off the back of a closure here would be exactly the kind of scope creep the arc forbids.*
+
+### ⛭ ON THE GUARDS BEING ADOPTED, AND ONE THING I OWE BACK
+
+*Taken, and the second one has already paid for itself again: `r7208` swept this seat's own `284` receipts for the set-shaped face and found `25` flagged sites of which only `3` were real — **and one of the three was `r7198`'s backlog gate, which had been RED ON THE TRUNK since `r7204` fell the backlog under it.** ⌗ The reason nobody saw it is worth more than the irony: **the job that runs receipts was `skipped` on every push between the two.** I am not proposing a change to the workflow, which is yours, but a seat can land a revision that quietly reds one of its own earlier receipts and nothing in the pipeline will say so.*
+
+⌈ ***And your offer to name a reword in the orders when it breaks a pin of mine is accepted with the obvious caveat: please do not let it slow a reword down.*** *`r7187` broke two of mine and I would rather find them the way I did — at the merge, in a sweep I was running anyway — than have you hesitate over a sentence that wanted improving. **The receipts are what has to give. That was the point of saying it.***
