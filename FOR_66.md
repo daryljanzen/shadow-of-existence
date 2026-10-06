@@ -9914,3 +9914,45 @@ into it anyway; what caught it was rendering the figure and looking at it.** *Re
 ⌈ *Which is also why the result should have been expected rather than surprising, and I did not see that until your correction: at a cosmological horizon `$\kappa/2\pi$` is what the observer in the bounded region measures. **`rem:phase-open`'s static-versus-trajectory distinction is not a distinction between two descriptions of one observer at this locus — it is a distinction between two observers, only one of whom can exist on each side.***
 
 ⌗ *Count corrected while I was in the file: the receipt carries **29** checks, not the `22` I wrote in the entry above and in the INDEX row. Both now read `29`. Part I is three of them; the other four were miscounted when I wrote the entry.*
+
+## ⛔ `r7185+cc66.148` — **`scoped` IS RED ON #290 AND IT IS NOT MINE: `r7185`'s PROSE REWRITE MOVED TWO SENTENCES THAT TWO OF ANOTHER SEAT'S RECEIPTS PIN VERBATIM. THE CONTENT SURVIVED; THE PINS DID NOT. THREE LINES FIX IT AND THEY ARE NOT MINE TO EDIT**
+
+*Established before anything else, because a red on my own PR is mine until proved otherwise. **It is proved otherwise, by two independent lines**, and the standing-down note is on #290 as well as here.*
+
+### ⛔ WHAT IS FAILING
+
+| receipt | check | pins that no longer match |
+|---|---|---|
+| `P15_the_seam_sec_envelope_means_is_the_front_chart_value_...` (`r7132`) | `Ⓐ②` | `_ONEPT`, `_240` |
+| `P15_the_laps_own_closure_is_a_translation_by_sqrt3_alpha_...` (`r7134`) | `Ⓐ①` | `_ONEPT` |
+
+### ⛭⛭ WHY IT IS NOT #290's, TWO WAYS
+
+1. *Both fail **identically on `origin/main`'s own head** (`3535b8ac`), run in a detached worktree — same receipts, same checks, `rc=1`.*
+2. *`red_carry.py --show` records both red **on `main`** since `32fa47ec`, from main's own run `37393236339`. They reach my PR only through `red_carry.py --union suite`, which carries main's reds forward into every scoped run — so my branch inherits them and cannot clear them.*
+
+### ⛔ THE CAUSE IS `r7185`'s OWN PROSE REWRITE, AND IT IS A REWORDING AND NOT A RETRACTION
+
+***Between `fe07f3eb` (both strings present) and `d7b1dd03` (both gone), `CR_cosmology.tex` reworded two sentences these receipts pin verbatim.*** *I traced the boundary commit by commit. **The content survives entirely** — `sec:transmission` still says both things, in the same place. Only the referring phrase moved:*
+
+```
+_ONEPT:  "one point of the substrate, which the bead meets on the way in and again one full lap later"
+      →  "one point of the substrate with the back seam the bead meets on the way in"
+
+_240:    "The branch point sits two thirds of the lap in from it ($240^\circ$, with $120^\circ$ remaining)"
+      →  "The branch point sits two thirds of the lap in from the front seam ($240^\circ$, with $120^\circ$ remaining)"
+```
+
+⇒ ***Each replacement string occurs exactly once in the current file — verified — so the patch is three lines*** *(`_ONEPT` and `_240` in the seam receipt, `_ONEPT` in the closure one) and it restores exactly what the two checks were testing.*
+
+### ⚠ AND I AM NOT APPLYING IT, FOR THE REASON THE RECEIPT ITSELF GIVES
+
+*The seam receipt's own commit body records **"no edit to `sec:envelope` or to any file but this seat's own"** — it is another seat's receipt in another seat's sector, built to a scope that forbade exactly this kind of reach. `cc66.147` touches neither file. **So: proposed, not applied.** If you want it applied by this seat, say so and it is one commit.*
+
+⌗ *No fix exists to port: no PR carries one, there is no revert, and I have opened no fix PR. And I did not spend the one re-run — a prose pin is deterministic, it fails on main's head too, and that is established directly rather than inferred, so a re-run would confirm nothing.*
+
+### ⛭⛭ ONE THING WORTH MORE THAN THE PATCH: THE GATE BUILT FOR THIS CLASS DOES NOT WATCH THIS ROUTE
+
+***`corpus/check_quote_pins.py` passes on this tree (`rc=0`) while both receipts are red.*** *So the quote-pin gate does not cover a receipt's own `_PIN = "..."` strings — only the baselined ones. **That is the `L560_pins_into_moving_prose` class arriving through the one route the gate built for it does not watch**, which is why `r7185`'s rewrite could land green on the fast job and leave the suite red on main for three revisions.*
+
+⌈ *Flagged, not acted on — a gate is a shared instrument and widening `check_quote_pins` to every receipt's own pin strings is a decision with a cost I have not measured. **But it is the same shape as `L270`'s "a translation table validated only against what it was asked to render", and it is now the second time that shape has cost a round.*** *I will build it if you route it.*
