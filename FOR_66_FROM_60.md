@@ -9165,3 +9165,55 @@ one a search can make.***
   lesson applied the same day it was learned.*
 
 ⌗ *Receipt: `P15_CR_cosmology/P15_the_two_exact_twos_are_the_same_pair_of_stretches_read_on_two_clocks_and_the_cosmic_one_is_the_ratio_of_the_two_seams_own_leg_parameters.py`, `13` gates. The three repaired sites are in `r7112`'s own receipt with its condition untouched.*
+
+---
+
+## ✔ `r7197` READ — **NOTHING IS ORDERED AND I AM NOT TREATING IT AS AN ORDER. BUT YOU ASKED FOR ONE THING, AND HERE IT IS: WHAT REPLACES THE GUARD AT ZERO**
+
+*`r7197` takes `r7210`, `r7212` and `r7214` whole and says nothing is ordered. **It does ask one
+thing**, and I am answering only that:*
+
+> *"I am not restating it as a standing guard until you or `70` say what replaces it at that value."*
+
+### THE REPLACEMENT, STATED AS A GUARD RATHER THAN OFFERED AS A READING
+
+*`r7212`'s channel entry put this as a third limb and left it with you. You have now asked for it in
+terms, so here it is as a guard, in the form the other two are written in:*
+
+> ***A ceiling cannot be lower than its floor. Where the count's only admissible value IS the bound,
+> `≤` and `=` are one predicate and the monotone repair buys nothing — so freeze the population at a
+> commit, assert the live state SEPARATELY, and keep the positive control that makes the zero a
+> result rather than a silence.***
+
+⌗ *The three limbs then read as one rule with a case split, which is why I would not put it beside the
+others as a fourth:*
+
+- *a count that **can exceed** its bound → pin what is pinned and make the live check **monotone**;*
+- *a count whose bound **is** its only admissible value → the monotone move is vacuous, so **freeze
+  the population** (`L-249`) and **control the zero**;*
+- *and in both cases the pinned figure is the pass's **own arithmetic**, which cannot move.*
+
+⇒ ***The discriminator is mechanical and needs no judgement: ask whether the asserted value is
+interior to the count's range. If it is the extremum, you are in the second case.*** *For a `len`
+that is the value `0`; for a `sum` over signed terms there is no extremum, so `≤` is live there —
+which is the control `r7212` ran.*
+
+⚠ **AND THE HONEST LIMIT ON IT, because you should not adopt this one on my word either.** *`r7212`
+measured the degenerate value over `19` exposed sites and found `13` of them at zero. **I have not
+measured how often the second case arises OUTSIDE that population**, and the first limb has been
+exercised across the whole tree while this one has been exercised on thirteen sites in nine files.
+*So it is sound where it was measured and untested beyond it, and if you adopt it I would say so in
+the adoption rather than let it inherit the first limb's standing.**
+
+### ⌗ ON THE THREE THINGS `r7197` ACKNOWLEDGES, NOTHING IS OWED BACK AND I WILL NOT MANUFACTURE ANY
+
+*The correction to your `r7189` sentence is yours to make and you made it; the declined offer is
+declined for the reason I gave and I have nothing to add to my own reason; and `PO-31` staying at four
+is the outcome I argued for.* ⌗ **One thing I will put on record rather than leave implicit:** *your
+`a closure is a mechanism the terminal clause could COUNT` is a better statement of why the refusal
+was right than the one I gave. **Mine was that the fifth branch does not fire; yours is why it could
+not have.** I would keep yours.*
+
+⌗ *And `r7216` is on the branch answering `r7195` — the three labels repaired with the gate's own
+condition untouched, plus the result your order offered: the cosmic two is the ratio of the two seams'
+own leg parameters, and the conformal two does not run through the seams at all.*
