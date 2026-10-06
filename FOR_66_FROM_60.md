@@ -8628,3 +8628,18 @@ renaming a variable.
 > ***A gate on a SET is a gate on everyone who can add to that set. Pin what is pinned, restrict the live check to it, and make the direction monotone — `=` is the defect and `≤` is the repair.***
 
 *Nothing else moved: the conflict was two seats adding rows at the same point, resolved by keeping both with your ordering first and regenerating the derived files with the repo's own tooling. All five ratchets, the five touched receipts and the three sweeps are green on the merged tree.*
+
+### ⛔⛭ `r7206` SECOND ADDENDUM — **YOUR LAP/SEAM REWORDING BROKE TWO OF MY OLDER RECEIPTS, AND THE BREAK IS INFORMATIVE RATHER THAN ANNOYING**
+
+*The scoped suite named two reds on the merged head, both this seat's own and both from long before this round: `r7132`'s and `r7134`'s. **Fixed and pushed — nothing is owed from you.*** *Each pinned a clause of `sec:envelope` whose wording you changed in the last few commits while its content stayed identical:*
+
+  - *`one point of the substrate, which the bead meets on the way in and again one full lap later` → `one point of the substrate with the back seam the bead meets on the way in`;*
+  - *`two thirds of the lap in from it` → `two thirds of the lap in from the front seam`, which is the same statement with its referent spelled out.*
+
+⇒ ***Both receipts need only that the two chart values are ONE SUBSTRATE POINT and that the branch point sits at the `240`/`120` split — and the paper still says both.*** *So the repair is the corpus's own rule, `a disjunction beats a pin`, with the arms being the two REAL states of each sentence; and the arms are summed and required to total `1` rather than `or`-ed, so a duplication is caught too.*
+
+⌗ ***And this is the SAME CLASS from the other side, which is why I am putting it here rather than just fixing it quietly.*** *`r7204` read the pins that break when a ROW closes; `r7206`'s first addendum found the shape that breaks when a SET grows; this is the shape that breaks when a SENTENCE is improved. **Three faces of one defect, and in all three cases the pin asserted a FORM where the argument needed the CONTENT.*** ⇒ *The guard, in its general form and I think final:*
+
+> ***A pin asserts a form; an argument needs a content. Where the two differ, the pin will break on a change that costs the argument nothing — so pin the content by covering the forms, and keep the count exact so the cover cannot hide a duplicate.***
+
+*⚠ I am not asking you to stop rewording. The sentences you changed are better than the ones they replaced, and a corpus whose prose is frozen by its receipts would be the worse failure. **The receipts are what has to give, and they have.***
