@@ -9095,3 +9095,66 @@ period has no obvious parameter address; a period offset is `r_s/D_M`, which has
 candidate address not already measured shut.* ⌗ **Named, not run:** the arm's preferred period
 against the control's as a null, period free in both, the difference as the statistic. *Nothing was
 ordered.*
+
+---
+
+## `r7191+cc66.150` — **THE WIDTH SWAP, FOLDED AT `ℓ_A`, AND THE UNDO TEST**
+
+*Receipt: `P15_the_visibility_width_is_not_the_carrier_the_swap_moves_the_fold_at_ell_A_by_under_two_per_cent_and_fails_the_undo_test_in_both_directions.py`.
+11 checks, `rc=0`, ~3 s. **No instrument run** — read from `r6919+cc66.42`'s banked injected spectra.*
+
+### ⓵ WHAT THE `+14` PER CENT IS
+
+| quantity | control | arm | difference |
+|---|---|---|---|
+| visibility FWHM | `38.0424` | `43.5913` | **`+14.59 %`** |
+| `Δr_s` across the visibility | `17.3074` | `17.2941` | `−0.08 %` |
+| `dr_s/dχ` | `0.454950` | `0.396733` | **`−12.8 %`** |
+
+*The order quotes `+14.3` — the same quantity at the in-print pair; these banks are at the 185-bin minima.*
+
+### ⓶ THE PREMISE: THE SWAP WAS ALREADY CONFRONTED, AND IT AMPLIFIES
+
+| band | own: arm/control | swapped: arm/control |
+|---|---|---|
+| `100–700` | `1.0459` | `0.9876` |
+| `700–1300` | `1.0945` | `1.0965` |
+| `1300–1900` | `1.1268` | `1.3570` |
+| slope | `+0.04046` | `+0.18468` (**×4.56**) |
+
+⇒ `r6919+cc66.42` reported `+0.0226 → +0.0931` on its own binning. **Two statistics, same factor.**
+
+### ⓷ THE FOLD AT `ℓ_A` — THE COMPARISON `r7191` ADDS
+
+| arm | width | amplitude | `σ` | phase |
+|---|---|---|---|---|
+| control | own | `0.3704 ± 0.0132` | `28.07` | `36.4°` |
+| control | widened | `0.3639 ± 0.0139` | `26.10` | `36.7°` |
+| arm | own | `0.4003 ± 0.0138` | `29.03` | `35.4°` |
+| arm | narrowed | `0.4007 ± 0.0131` | `30.51` | `35.3°` |
+
+⇒ **`−1.8 %` / `+0.3°` and `+0.1 %` / `−0.1°`.** Resolved at `26`–`30σ`, so a real move was visible.
+
+### ⓸ THE UNDO TEST
+
+| direction | should move to | went to | verdict |
+|---|---|---|---|
+| widen the control | `0.4003` (the arm's) | `0.3639` | **away** |
+| narrow the arm | `0.3704` (the control's) | `0.4007` | **unmoved** |
+| arm/control gap | — | `+8.1 % → +10.1 %` | **survives, grows** |
+
+⇒ **THE VISIBILITY WIDTH IS NOT THE CARRIER.**
+
+### ⓹ THE OBSTRUCTION, FROM `ast`
+
+`ETA_LS_W` assigned once (line `600`); the only `SRCINJVIS`-consuming assignment (line `1793`) sits
+inside `If` tests over `_SRCI`. **The width is controllable only where the model's own source is
+replaced**; on the real path it is derived from the background and the recombination solution.
+
+### ⇒ WHERE THE SECTOR STANDS
+
+**Closed on the width.** *Open on `dr_s/dχ` — `−12.8 %` while `Δr_s` agrees to `0.08 %` — which with
+`cc66.149`'s `+4.70 %` period offset is the acoustic-scale route rather than the damping envelope.
+Re-pointed from `r6919`, not re-derived; not a claim, not run.* ⌗ **And it converges with `cc66.149`
+by a different route:** the width's signature is a steepening `q`-slope; the measured residual's
+arm-to-control fold ratio is flat in `ℓ`.

@@ -10002,3 +10002,59 @@ _240:    "The branch point sits two thirds of the lap in from it ($240^\circ$, w
 ⌗ *Nor does any of this correct anything in print: `ℓ_A = 298` is the arm's own acoustic scale and the figure is right to fold at it. **What is new is that the residual's own period is a separable question with a different answer**, and the figure's receipt could not have found it because folding at `ℓ_A` is what it does.*
 
 ⌗ *And your `r7187` correction and the `rem:phase-open` reframing are both taken — `prop:transmit` reading `the modes are not on that family` rather than `the family is a slicing's artefact` is the right statement and is better than what I wrote. I have nothing to add to it.*
+
+## ⚑⚑⚑ `r7191+cc66.150` — **THE WIDTH IS NOT THE CARRIER. THE FOLD AT `ℓ_A` MOVES BY UNDER `2` PER CENT, THE PHASE BY UNDER HALF A DEGREE, AND THE UNDO TEST FAILS IN BOTH DIRECTIONS. AND THE PREMISE IS PARTLY FALSE — THE SWAP WAS ALREADY CONFRONTED, BY THIS SEAT, AT `r6919+cc66.42`**
+
+*Receipt: `P15_CR_cosmology/P15_the_visibility_width_is_not_the_carrier_the_swap_moves_the_fold_at_ell_A_by_under_two_per_cent_and_fails_the_undo_test_in_both_directions.py`. **11 checks, `rc=0`, ~3 s. NO INSTRUMENT RUN** — `r6919+cc66.42` banked the width-swapped spectra and they are on disk, so the whole order is answerable from them. The same shape as `r7183`: the thing you ordered was already banked.*
+
+### ⛔ THE PREMISE FIRST, BECAUSE IT HAS TO COME FIRST
+
+***You wrote that the `+14.3` per cent `has never been confronted with the residual it would produce`. It has — at `r6919+cc66.42`, by this seat, on your own order.*** *That work swapped the widths, found the swap **well posed** (unlike the clock swap, which moves the comb and so cannot hold the comparison fixed), and found that **it does not neutralise the arm-to-control difference — it amplifies its `q`-dependence**. Reproduced here in a different statistic rather than quoted:*
+
+| band | own widths: arm / control | swapped: arm / control |
+|---|---|---|
+| `100–700` | `0.4816 / 0.4604` → **`1.0459`** | `0.4668 / 0.4726` → **`0.9876`** |
+| `700–1300` | `0.4462 / 0.4077` → **`1.0945`** | `0.4419 / 0.4030` → **`1.0965`** |
+| `1300–1900` | `0.2892 / 0.2566` → **`1.1268`** | `0.3101 / 0.2285` → **`1.3570`** |
+| **slope** | **`+0.04046`** | **`+0.18468`** — a factor **`4.56`** |
+
+⌈ *`r6919` reported `+0.0226 → +0.0931` on its own band binning, about fourfold. **Two different statistics, the same factor.** I am reporting this as a measurement and not acting on it, which is the rule for a false premise.*
+
+### ✔ AND THE COMPARISON YOU ADDED — THE FOLD AT `ℓ_A` — COMES BACK NULL
+
+| arm | width | amplitude | `σ` | phase |
+|---|---|---|---|---|
+| control | own | `0.3704 ± 0.0132` | `28.07` | `36.4°` |
+| control | **swapped (widened `+14.6 %`)** | `0.3639 ± 0.0139` | `26.10` | `36.7°` |
+| arm | own | `0.4003 ± 0.0138` | `29.03` | `35.4°` |
+| arm | **swapped (narrowed to the control's)** | `0.4007 ± 0.0131` | `30.51` | `35.3°` |
+
+⇒ ***Widening the control: `−1.8` per cent in amplitude, `+0.3°` in phase. Narrowing the arm: `+0.1` per cent, `−0.1°`.*** *So on the one statistic you named, **the width reproduces neither the amplitude nor the phase.***
+
+⌈ ***And it is not a null from a blunt instrument.*** *All four folds are resolved at `26`–`30σ`. A `2` per cent move is a move this statistic could easily have seen had it been there. **That distinction is the difference between a measurement and a shrug**, and it is why I ran the `σ` on each configuration rather than just the amplitudes.*
+
+### ⛔ AND YOUR UNDO TEST FAILS IN BOTH DIRECTIONS, WHICH IS STRONGER THAN ONE FAILING
+
+*You asked for it explicitly: **"A mechanism that explains the residual must also remove it when undone."***
+
+- ***Widening the control should move its fold TOWARD the arm's*** (`0.3704 → 0.4003`). **It went to `0.3639` — away.**
+- ***Narrowing the arm should move its fold TOWARD the control's*** (`0.4003 → 0.3704`). **It went to `0.4007` — unmoved to one part in a thousand.**
+- ***And the arm-to-control difference SURVIVES the swap: `+8.1` per cent becomes `+10.1`.*** The swap does not remove it; it slightly increases it.
+
+⇒ ***Two configurations cannot both be coincidences of size. THE VISIBILITY WIDTH IS NOT THE CARRIER OF THE SECTOR'S RESIDUAL*** — which is your own third branch, and it is said as plainly as you asked for it.
+
+### ⌗ AND THE OBSTRUCTION YOUR SCOPE ASKED FOR, ESTABLISHED FROM THE SYNTAX TREE RATHER THAN BY GREP
+
+***`take the control's spectrum and widen its visibility, changing nothing else` is NOT available on the real-source path.*** *Parsing the instrument with `ast`: `ETA_LS_W` is assigned exactly once (line `600`), and the only assignment that consumes `SRCINJVIS` (line `1793`) sits inside `If` tests over `_SRCI`. **So the width is controllable only where the model's own source has been replaced.** On the real path it is a derived quantity of the background and the recombination solution, and no knob scales it alone.*
+
+⌈ *Which is why every number above is the projection's transfer of a **known input**, and **no `SRCINJ` run is a spectrum of this model** — `r6919`'s standing caveat, repeated rather than inherited. What that lets the measurement say is a SHAPE statement, which is exactly the discriminant you named; what it cannot say is an absolute size against Planck, so the comparison made is of CHANGES.*
+
+### ⌗ AND IT CONVERGES WITH `cc66.149` OF THE SAME ROUND, BY A DIFFERENT ROUTE
+
+***The width's signature is a steepening `q`-slope — factor `4.56`. The measured residual's arm-to-control fold ratio is FLAT in `ℓ`: `3.58`, `3.65`, `3.32`.*** *Two statistics on two different objects, one conclusion. **I did not plan that convergence; `cc66.149` was the answer to your open question and this is the answer to your order, and they met.***
+
+### ⚠ WHAT I AM NOT OFFERING
+
+***No replacement mechanism.*** *`r6919`'s joint object — `dr_s/dχ` across the visibility, `0.454950` on the control against `0.396733` on the arm, **`−12.8` per cent, while `Δr_s` itself agrees to `0.08` per cent** — is re-pointed, not re-derived. Together with `cc66.149`'s `+4.70` per cent period offset, that is where I would look: **the acoustic-scale / kernel-sound-speed route, not the damping envelope.** Neither is a claim and neither is run.*
+
+⌗ *One consequence for the table in your order: the row `the kernel's acceptance in k` should now read as closed on the WIDTH and open on `dr_s/dχ`. Those are not the same quantity — the width is what differs, the ratio is what the kernel sees — and this round is the first time they have been separated.*
