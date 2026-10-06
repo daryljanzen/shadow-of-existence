@@ -8727,3 +8727,22 @@ renaming a variable.
 > ***A gate on an environment is a gate on everybody's environment.***
 
 ⌈ ***And this one is worth more to me than the other three, because I did not find it.*** *The first three I found at a merge, at a reword, and in a sweep I was running anyway — all of them by being in the right place. **This one CI found, on the one job whose scope is exactly `a receipt that reads nothing where it ran`, and it found it within minutes of the push.*** ⌗ *So the honest reading of `r7208` is that a seat sweeping its own work for a defect class put a fresh instance of that class into the sweep itself, and the pipeline caught it. I would rather record that than have the receipt read as though the sweep were complete.*
+
+### ⌗ ROUTED, NOT TAKEN — **TWO RECEIPTS ARE RED ON `main` ITSELF, AND ONE OF THEM IS A FIFTH INSTANCE OF THE CLASS `r7208` SWEEPS FOR**
+
+*The scoped suite names two reds on `r7208`'s head. **Neither is this line's and I verified that rather than inferring it**: I put `origin/main` in a detached worktree and ran both there, where they fail identically. So they are the trunk's, not the branch's, and I have stood down on the PR with one comment saying so.*
+
+  - *`receipts/L257.../V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py` — on this seat's do-not-edit list. Its remaining `WARN` is `entries naming sentences no longer in any paper`, which the file itself says it **recorded and routed rather than rebuilding**. No fix exists for me to port.*
+  - ⛭⛭ *`receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py` — **and this one is the interesting one.***
+
+### ⛭⛭⛭ `L271/S2`'s FAILING CHECK IS THE CLASS, IN ANOTHER SEAT'S HANDS
+
+*Its red check is:* **`⓵ every systematics term is ×0 across the seventeen paper bodies, de-macroed, so this is an absence and not a spelling`**.
+
+⇒ ***That is an exact count — zero — over THE SEVENTEEN PAPER BODIES, a set every seat writes into.*** *The receipt's content is that the systematics budget is absent by name; what it asserts is that a term list comes back `×0` across a corpus other seats are editing. **Any seat adding one of those words to any paper for any reason turns it red, and that is what has happened.** The label even says `the seventeen`, which is the same stale-count shape `S1`'s `len(PAPERS) == 18` had and which `r7208` repaired here.*
+
+⌈ ***So this is the fifth instance in two days and the first in a seat other than this one*** — *which answers a question `r7208` could not: whether the class is a habit of mine or a habit of the corpus. **On this evidence it is the corpus's**, and `r7208`'s sweep was bounded to this seat's `284` receipts by authorship, so it could not have found this one.*
+
+⇒ ⌗ **I am not touching it: it is another seat's receipt and the verdict on what its gate is FOR is theirs.** *But the repair shape is the one now standing: the absence that revision established is a fact about the corpus AT THAT COMMIT, so pin it there, and make the live check directional — `no NEW systematics term has appeared since` rather than `there are none`. That distinguishes `a budget was never written` from `somebody used the word`, which is the distinction the receipt actually cares about.*
+
+⌈ ***And if you want the sweep run across the whole receipt tree rather than this seat's quarter of it, say so and I will take it as a revision.*** *I stopped at authorship on purpose — `r7198` set that bound and `r7204` kept it — but the detector itself is seat-neutral and the measurement would be too. **What is not seat-neutral is the verdict on each flagged site, which is why the output would be a routed table and not a set of repairs.***
