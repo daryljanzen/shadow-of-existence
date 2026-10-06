@@ -30,7 +30,9 @@ measure, and the control's period is measured to `$\\pm11$` per cent.*
   PART A  ** THE FORWARD MODEL, VERIFIED EXACTLY, WHICH IS WHAT LICENSES THE REST. **  The figure
           whitens with the inverse Cholesky of the FULL bandpower covariance, not the diagonal;
           `$L^{-1}(\\text{model}-\\text{data})$` reproduces all four banked whitened residuals to
-          `$0$`.  And then the Monte Carlo is exact in one line: perturbing the data by its own
+          one part in `$10^{-12}$` of their own scale -- one ulp, and *not* bit-exact, because the
+          blocked `cholesky`/`inv` sum in an order that depends on the thread count.  And then the
+          Monte Carlo is exact in one line: perturbing the data by its own
           covariance perturbs the whitened residual by `$-z$` with `$z\\sim N(0,I)$`, the SAME draw
           in both arms, so their correlation is preserved rather than assumed away.
   PART B  ** THE ORDERED STATISTIC. **  `$\\Delta=-35.25$`, `$0.97\\sigma$`, `$p=0.56$`.
@@ -125,12 +127,25 @@ _fw = {t: LINV @ (F[f'{t}_model'] - F['data']) for t in
 for t, w in _fw.items():
     print(f"      {t:11s} max|L^-1(model-data) - banked whitened| = "
           f"{float(np.max(np.abs(w - F[f'{t}_whitened']))):.2e}")
+_worst = max(float(np.max(np.abs(w - F[f'{t}_whitened']))) for t, w in _fw.items())
+_scale = max(float(np.max(np.abs(F[f'{t}_whitened']))) for t in _fw)
+_TOL = 1e-12 * _scale
+print(f"      worst {_worst:.2e} against a residual scale of {_scale:.3f} -- "
+      f"{_worst / _scale:.1e} of it, and the bound asked is {_TOL:.1e}")
 check("Ⓐ①  the figure's whitening is the inverse Cholesky of the FULL bandpower covariance and not "
       "the diagonal, and reproducing it from the Planck data and covariance returns all four banked "
-      "residuals EXACTLY.  ** A Monte Carlo on a forward model that did not reproduce the bank "
-      "would be a measurement of the reconstruction **",
-      max(float(np.max(np.abs(w - F[f'{t}_whitened']))) for t, w in _fw.items()) == 0.0
-      and float(np.max(np.abs(_dat - F['data']))) == 0.0)
+      "residuals to the arithmetic's own precision -- one part in `1e-12` of the residual scale, where "
+      "the margin measured is one ulp.  ** A Monte Carlo on a forward model that did not reproduce the "
+      "bank would be a measurement of the reconstruction **",
+      _worst <= _TOL and float(np.max(np.abs(_dat - F['data']))) == 0.0)
+#   ⛔ THE BOUND IS RELATIVE AND NOT EXACT, AND THAT IS A MEASUREMENT RATHER THAN A CONCESSION.
+#   Written `== 0.0` this check passed here and could never have passed under the runner.  Measured
+#   across thread counts on one machine, this reconstruction is bit-identical to the bank at
+#   OMP_NUM_THREADS 2, 4 and 8 and misses by 3.55e-15 at 1 -- and 1 is exactly what the suite and the
+#   runner-read sweep set.  `cholesky` and `inv` are blocked LAPACK routines whose summation order
+#   depends on the blocking, so bit-equality here was never a property of the reconstruction; it was a
+#   property of this machine's default thread count.  The data array stays `== 0.0` because it is a
+#   bit-copy of `X_DATA[KEEP]` and no arithmetic touches it -- exact at every thread count above.
 print("      and the perturbation is exact in one line: L^-1(model - (data + L z)) = w_obs - z,")
 print("      so a draw z ~ N(0, I) shared by BOTH arms carries their correlation rather than")
 print("      assuming it away -- which a diagonal-sigma Monte Carlo would have done silently.")

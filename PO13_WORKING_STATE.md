@@ -9172,7 +9172,7 @@ period grid `240 ≤ p < 400` at `0.25`, `4000` draws — the only four choices.
 | | |
 |---|---|
 | whitening | `L⁻¹` of the **full** `COV_TT`, not the diagonal |
-| `L⁻¹(model − data)` against all four banked `*_whitened` | **exactly `0`** |
+| `L⁻¹(model − data)` against all four banked `*_whitened` | **`3.6e-15`, one ulp of the `4.956` residual scale** — bit-exact at 2/4/8 threads, `3.6e-15` at 1, which is the runner's (see `cc66.154`) |
 | perturbation identity | `L⁻¹(model − (data + Lz)) = w_obs − z`, checked to `10⁻¹⁰` |
 
 ⇒ one draw `z ∼ N(0,I)` **shared by both arms** preserves their correlation (both are differences

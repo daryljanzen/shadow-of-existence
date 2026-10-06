@@ -10130,7 +10130,7 @@ _240:    "The branch point sits two thirds of the lap in from it ($240^\circ$, w
 
 ### ⌗ THE FORWARD MODEL, BECAUSE THE MONTE CARLO IS ONLY WORTH ITS FORWARD MODEL
 
-*The figure whitens with the inverse Cholesky of the **full** bandpower covariance, not the diagonal — I found that out by trying the diagonal first and getting a residual that missed the bank by `4.6`. Rebuilt from `chi2_of_spectrum`'s own `X_DATA` and `COV_TT`, `L⁻¹(model − data)` returns **all four** banked whitened residuals to **exactly `0`**.*
+*The figure whitens with the inverse Cholesky of the **full** bandpower covariance, not the diagonal — I found that out by trying the diagonal first and getting a residual that missed the bank by `4.6`. Rebuilt from `chi2_of_spectrum`'s own `X_DATA` and `COV_TT`, `L⁻¹(model − data)` returns **all four** banked whitened residuals to **one ulp** of their own scale — `3.6e-15` against `4.956`. **It returned exactly `0` here and I wrote the check that way, which was wrong; see `cc66.154`.**
 
 ⌈ ***And then the perturbation reduces to an identity:*** `$L^{-1}(\mathrm{model}-(\mathrm{data}+Lz)) = w_{\rm obs} - z$`. *So one draw `z ∼ N(0,I)` **shared by both arms** carries their correlation rather than assuming it away — which a diagonal-`σ` Monte Carlo would have done silently, and which matters because both residuals are differences against the same data. Checked numerically to `10⁻¹⁰` rather than taken.*
 
@@ -10139,3 +10139,59 @@ _240:    "The branch point sits two thirds of the lap in from it ($240^\circ$, w
 ***The four banked spectra are point predictions with no parameter covariance banked beside them.*** *So this null propagates **Planck's noise and nothing else**. That is the right error for what you ordered — `is the arm's period separably different from the control's` — and it is **not** an error bar on how far the period would move under refitting. **The refitted row is the measured stand-in for that, not a substitute for it.***
 
 ⌗ *And your three acknowledgements are taken without comment needed: the premise was yours and recorded, the two reds were yours and both diagnoses held, and the gate widening going to `70` is right — it is an operator question and I have measured enough of it unasked.*
+
+---
+
+## ⛭⛭⛭ `r7197+cc66.154` — **CI NOTE, AND IT IS A DEFECT OF MINE RATHER THAN MAIN'S: I PINNED A FLOATING-POINT RECONSTRUCTION AT `$=0$` AND IT CANNOT BE `$0$` UNDER THE RUNNER.**
+
+*`scoped — the runner-read sweep, on what this push deleted or renamed` went red on `ec55b9d3` — a
+check name that had been green on every prior head this session, which is why I did not treat it as
+a carried red. The carry names the receipt and it is mine: `cc66.153`, the period-difference null.*
+
+⛭⛭ **WHAT THE SWEEP DOES, AND WHY ONLY IT COULD SEE THIS.** *`PO-60` ⓶ᵇ runs each scoped receipt
+the way `run_all_receipts` does — from its own family directory, `NODE=ci`, and **one thread**
+(`OMP_NUM_THREADS=1`). My `PART A` rebuilds the figure's whitening from `chi2_of_spectrum`'s
+`X_DATA`/`COV_TT` and asserted the four banked residuals came back at **exactly `0.0`**. They do
+here. They do not there.*
+
+⛭⛭⛭ **MEASURED ACROSS THREAD COUNTS, ONE MACHINE, EVERYTHING ELSE FIXED:**
+
+| `OMP_NUM_THREADS` | worst abs. deviation from the banked whitened residual |
+|---|---|
+| 1 | **`3.553e-15`** |
+| 2 | `0.000e+00` |
+| 4 | `0.000e+00` |
+| 8 | `0.000e+00` |
+
+⇒ ***So the `$=0$` was never a property of the reconstruction. It was a property of this machine's
+default thread count, and `1` is exactly what the suite and the sweep set.*** *`cholesky` and `inv`
+are blocked LAPACK routines; the blocking sets the summation order and the summation order is not
+associative. A `179×179` inverse-Cholesky product reproducing a bank to the last bit was luck I
+read as a result.*
+
+⛭ **THE REPAIR.** *The bound is now relative and stated: `worst ≤ 1e-12 × scale`, which is
+`5.0e-12` against a residual scale of `4.956` — `1400×` the one-thread margin and four orders below
+anything this receipt measures. The margin and the scale are **printed**, so the number is on the
+record rather than behind a boolean. The data array keeps its exact `== 0.0`: it is a bit-copy of
+`X_DATA[KEEP]` and no arithmetic touches it, exact at every thread count above.*
+
+✔ **NOTHING MEASURED MOVED.** *`rc=0`, 10 of 10, under the sweep's own conditions — from the
+receipt's directory at one thread, which is the configuration that was failing. Every number in
+`cc66.153` stands: `$0.97\sigma$`, `$-35.25\pm36.29$`, the `$35.5$`-of-`$36.3$` decomposition,
+`$+14.00$` at `$4.69\sigma$`, the `$-96.6^\circ$` drift and the identical `$337.905977741$`.*
+
+⛔ **AND THE LESSON IS NARROWER THAN "USE A TOLERANCE", WHICH IS WHY IT IS WORTH YOUR TIME.** *This
+sector has a genuine bit-for-bit claim on the record — `P15_the_source_decomposition_is_reachable_on_the_reporting_path`
+reproduces the banked spectra exactly, and that one is **sound**, because the repair multiplies
+inside the bracket and `$x\times1.0$` is exact. The distinction is whether the arithmetic's
+**order** can change. A factor placed inside a bracket cannot reassociate; a blocked LAPACK
+factorisation reassociates by design, and threading is one of the things that sets the blocking.*
+⇒ ***So: exactness is assertable when nothing can reorder the sum, and is a thread-count
+observation otherwise.*** ⌗ *I had the `1e-10` tolerance sitting in `Ⓐ②`, the very next check,
+through the same covariance. That it did not make me look at `Ⓐ①` is the part I would do
+differently.*
+
+⚠ **THREE CLAIMS OF MINE CORRECTED IN PLACE, not left to be found later:** *this receipt's `PART A`
+docstring, its `INDEX` `Computes` column, the `PO13_WORKING_STATE` row, and the `cc66.145` paragraph
+above where I first wrote "exactly `0`". None of them is a measurement this changes; all four said
+`$0$` where the honest figure is one ulp.*
