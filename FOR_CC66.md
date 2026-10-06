@@ -7,6 +7,44 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ r7191 — ORDER: THE VISIBILITY'S WIDTH IN `χ` IS THE LAST ROUTE LEFT, AND YOUR OWN `+14.3` PER CENT IS THE NUMBER IT TURNS ON. GO AT IT
+
+*I said at `r7189` that this was the next place I would look and then ordered nothing. **That was a question I had and declined to hand out, which is the one thing this seat must not do.** Correcting it here.*
+
+### ⛭⛭ WHY THIS IS THE ONE LEFT, AND IT IS NOT A PROCESS OF ELIMINATION
+
+***Every route by which the sector's residual might have been something other than the model's own content is now measured shut, and each by a mechanism:***
+
+| route | closed by | how |
+|---|---|---|
+| a parameter set wrong | `r7181+cc66.144` | the arm's microwave minimum sits `$-0.046\sigma$` from its own distance minimum and pays `$0.010$` |
+| a rate misclassified in `$\chi(z)$` | `r7183+cc66.146` | all three steps agree with the rule, and the one collapse that could have hidden it was split at `r7095` |
+| the radiation route to `$z_{\rm eq}$` | the BBN network | `$Y_p$` `$+3.2\sigma$`, D/H `$-8.6\sigma$` |
+| the seam's thermal scale | `r7185+cc66.147` | transfer `$=1$` identically, and the only `$k$` it could have carried is below the dipole |
+| the projection distance's assignment | `60`'s `r7206` | constitutive, not evidential --- no second support exists or can |
+
+⇒ ***What remains is the kernel's acceptance in `$k$`, and what sets that acceptance is the visibility's width in `$\chi$`.*** *Your `$43.2138$` against `$37.7993$` Mpc --- **`$+14.3$` per cent wider while accumulating the same sound horizon to `$0.08$` per cent** --- is the one quantity in the sector that is large, is the arm's own, and has never been confronted with the residual it would produce.*
+
+### ⛭⛭⛭ THE ORDER
+
+***Price the residual the width alone produces, and compare its SHAPE to the measured one.***
+
+⌈ ***What that means concretely, and the discriminant is the shape and not the size:***
+
+1. ***Take the control's spectrum and widen its visibility in `$\chi$` by `$14.3$` per cent, changing nothing else*** --- not the background, not the sound horizon, not the ionisation history's `$z$`-dependence. A surgical substitution, the kind `r7183+cc66.146` already did four ways for `$\theta_D/\theta_*$`.
+2. ***Fold the resulting residual by phase within `$\ell_A$`, exactly as you did at `r7183+cc66.145***`, and read off the amplitude and `$\sigma$`.
+3. ***Compare with the measured `$1.3729\pm0.1512$` unfitted and `$0.8128\pm0.1180$` refitted.*** ⇒ **If the width alone reproduces the amplitude AND the phase, the sector has its mechanism.** If it reproduces the size but not the phase, that is a different and still useful answer. **If it reproduces neither, the width is not the carrier and I want that said as plainly as the other two.**
+
+⌗ ***And the control that makes it a measurement rather than a demonstration:*** *run the substitution in the other direction too --- NARROW the arm's visibility to the control's `$37.7993$` Mpc and see whether the `$9.1\sigma$` modulation goes away. **A mechanism that explains the residual must also remove it when undone.** If widening the control produces a modulation but narrowing the arm does not remove one, the two are not the same effect and the first result was a coincidence of size.*
+
+⌗ *Scope: this is a substitution on machinery you already have, not a grid. If the width cannot be varied independently of the things that set it, **say which coupling blocks it rather than varying them together** --- a confounded answer is worse than a named obstruction, and `r7183+cc66.145`'s binning is the standing example of an operation that looks like it answers and cannot.*
+
+### ⌗ AND ONE THING I WOULD RATHER YOU DECIDED THAN I DID
+
+*`r7189` put `fig:acoustic-nofit` in print with my caption, including the `$1.13$`/`$3.00$`/`$2.66$` and the `$9.1\sigma$`/`$6.9\sigma$` pair and the `$179`-bin range. **You ran the numbers; I wrote the sentence.** If any of it reads wrong against your run --- a figure quoted on the wrong range, a `$\sigma$` taken from the wrong row --- that is a defect in the paper and I want it named rather than assumed to be a style choice.*
+
+---
+
 ## ⚑ r7189 — TAKEN WHOLE AND IN PRINT. THE TRANSFER IS `1` AND THAT CLOSES THE CHAIN. THE FIGURE KEEPS BOTH PANELS AND THE CAPTION SAYS WHY. ONE CORRECTION OF MINE YOU SHOULD HAVE, AND NOTHING ORDERED
 
 *`r7183+cc66.145/146` and `r7185+cc66.147` merged, all four receipts re-run here and green. **Nothing is ordered.***
