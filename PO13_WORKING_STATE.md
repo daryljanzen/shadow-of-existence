@@ -8922,7 +8922,7 @@ disagreement stands exactly where `r7183` leaves it.*
 ## `r7185+cc66.147` — **THE MODE EQUATION ACROSS THE BACK SEAM, IN THE CHART THE BEAD CROSSES IN**
 
 *Receipt: `P07_CR_framework/P07_the_crossing_rides_the_characteristic_that_crosses_and_the_thermal_factor_rides_the_one_that_does_not_so_two_kappa_cannot_enter_and_the_only_k_it_could_have_carried_is_three_halves.py`.
-22 checks, `rc=0`, ~2 s, `$\alpha=1$`, `$M=\alpha/3\sqrt3$`. Closed form and quadrature; no grid, no fit, no banked artefact.*
+29 checks, `rc=0`, ~2 s, `$\alpha=1$`, `$M=\alpha/3\sqrt3$`. Closed form and quadrature; no grid, no fit, no banked artefact.*
 
 ### ⓪ THE CHART IS THE TRAJECTORY
 
@@ -9011,3 +9011,29 @@ not fitted, and not needed, because `$1$` carries no scale and the ratio to the 
 `$\alpha$`-free. ⚠ **Not computed: the flux the seam radiates**, which does need the progenitor
 interior `PO-75` is live on. ⌗ **Cited, not measured:** that smooth Cauchy data on a PG slice stays
 smooth — standard hyperbolic theory; everything else above is a number in the receipt.
+
+### ⓺ THE SIGNATURE, AFTER `r7187` — READ OFF THE CHARACTERISTICS
+
+| | `$f$` | `$v+1$` | `$v-1$` | reading |
+|---|---|---|---|---|
+| outside the seam, `$r=-1.3547\alpha$` | `$-0.55109158$` | `$+2.245428273$` | `$+0.245428273$` | both speeds positive ⇒ **nothing holds `$r$` fixed; the radius is timelike** |
+| inside, `$r=-0.95470054\alpha$` | `$+0.49171014$` | `$+1.7129445$` | `$-0.2870555$` | speeds straddle zero ⇒ **static** |
+
+⇒ **the cosmological pattern, the exact reverse of a black hole's** — `r7187`'s correction on this
+member, in the chart the mode equation lives in. *Not a re-derivation of its three-member comparison.*
+
+| `$f'$` on `$r<0$`, at the seam | value |
+|---|---|
+| `$2M/r_h^2$` | `$+0.288675134595$` |
+| `$-2r_h$` | `$+2.30940107676$` |
+| sum `$=f'(r_h)=2\kappa$` | `$2.59807621135332$` — **the same `$2\kappa$` the indicial equation returns** |
+
+⇒ **so the root's simplicity, the surface gravity and the index `$-i\omega/\kappa$` are one fact**,
+forced by the sign of `$f'$` on the sheet rather than by the Nariai value.
+
+⌗ **And the unoccupied branch acquires an owner.** Inside the seam `$v<1$`, so the skimming family
+runs `$\dd r/\dd\tau=v-1<0$` — back out toward the seam at rate `$\kappa$`. On a cosmological horizon
+the static region is the bounded one, **inside**. *So the index `$-i\omega/\kappa$` branch is a static
+inside observer's; the bead arrives from outside, where nothing can hold `$r$` fixed, and crosses
+inward at speed `$2$`.* ⇒ **`r7187` does not weaken the verdict — it names whose branch the thermal
+one is.**

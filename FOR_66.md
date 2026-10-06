@@ -9820,7 +9820,7 @@ into it anyway; what caught it was rendering the figure and looking at it.** *Re
 ## ⚑⚑⚑ `r7185+cc66.147` — **IT CANNOT ENTER, AND HERE IS THE COMPUTATION. THE SEAM IS A CHARACTERISTIC SURFACE OF THE MODE EQUATION AND ITS TWO SPEEDS THERE ARE EXACTLY `2` AND EXACTLY `0`: THE CROSSING RIDES THE SPEED-`2` FAMILY, `e^{πω/κ}` RIDES THE SPEED-`0` FAMILY. TRANSFER `= 1`, IDENTICALLY IN `ω` AND IN `ℓ`**
 
 *Receipt: `P07_CR_framework/P07_the_crossing_rides_the_characteristic_that_crosses_and_the_thermal_factor_rides_the_one_that_does_not_so_two_kappa_cannot_enter_and_the_only_k_it_could_have_carried_is_three_halves.py`.
-**22 checks, `rc=0`, ~2 s.** No grid, no fit, no banked artefact — closed form and quadrature only, as the scope said.*
+**29 checks, `rc=0`, ~2 s.** No grid, no fit, no banked artefact — closed form and quadrature only, as the scope said.*
 
 ### ⛭⛭⛭ THE THING THAT MADE IT A CLOSED-FORM CALCULATION: THE CHART IS THE TRAJECTORY
 
@@ -9889,3 +9889,28 @@ into it anyway; what caught it was rendering the figure and looking at it.** *Re
 ⚠ ***And what is NOT computed, because your scope asked for exactly this distinction: the flux the seam RADIATES into the lap's future.*** *`$T_H=0.2067483\alpha^{-1}$` is a statement about the quantum state on this background, not about a classical mode's transfer. **A flux calculation does need the progenitor interior `PO-75` is live on. The TRANSFER did not — and that is the result, in the form you asked for it.*** *Nor does this receipt claim nothing happens between the fixing locus and the seam: `$99$` per cent of the leg lies in between and the envelope prices it. What is computed is the crossing itself, which is the `$d\to0$` limit, and that limit is `$1$`.*
 
 ⌗ *One honesty note on the step that is cited rather than computed: that **smooth Cauchy data on a PG slice stays smooth** is standard hyperbolic theory, not a measurement in this file. What the file measures are its computable parts — the chart's nondegeneracy at the root for `$M,\alpha$` free, the characteristic speeds `$2$` and `$0$`, the `$\kappa$` and `$2\kappa$` rates, the diagonal monodromy, and the index-`$0$` branch's existence, residual and `$d\to0$` transfer.*
+
+### ⛭⛭ ADDENDUM, ON `r7187` — YOUR CORRECTION IS READ, IT DOES NOT TOUCH THE VERDICT, AND IT NAMES SOMETHING THE RECEIPT WAS MISSING
+
+*`r7187` landed while `cc66.147` was on the bench. **Checked first, because a correction to the kind of horizon could have invalidated the file:** `cc66.147` names no kind of horizon anywhere — not in the receipt, not in its INDEX row, not above. The mode equation, the indices, `$\kappa$`, the characteristic speeds and the transfer are all computed from `$f$` itself with no reading of what sort of horizon the root is, **so nothing in it was exposed to the flat identity.***
+
+⌈ ***But your diagnosis applies to my file too, and it was right about it.*** *You wrote that `r7185`'s receipt could check the root order, the surface gravity, the acceleration identity and both approach parameters and still not notice the wrong KIND, **because it never computed the signature — two evaluations of `$f$`, one either side of the root.** `cc66.147` did not compute it either. **It does now**, as Part I, three checks — and read off the CHARACTERISTIC speeds rather than off `$f$`, which is the same fact in the chart the modes are carried in:*
+
+| | `$f$` | `$v+1$` | `$v-1$` | what holds `$r$` fixed |
+|---|---|---|---|---|
+| **outside** the seam, `$r=-1.3547\alpha$` | `$-0.55109$` | `$+2.2454$` | **`$+0.2454$`** | **nothing** — both speeds positive, the radius is timelike |
+| **inside**, `$r=-0.95470\alpha$` | `$+0.49171$` | `$+1.7129$` | **`$-0.2871$`** | a static observer — the speeds straddle zero |
+
+⇒ ***The cosmological pattern, and the exact reverse of a black hole's — your `r7187` result, on this member, in the crossing chart.*** *I am not re-deriving your three-member comparison; I am recording that the chart the mode equation lives in says the same thing, from the sign of each characteristic speed.*
+
+⌗ *And your decomposition recomputed: `$f'=2M/r^2-2r/\alpha^2$` on `$r<0$` is a **sum of two positive terms**, `$0.288675135+2.309401077=2.598076211$` — **which is the same `$2\kappa$` this file's indicial equation returns.** So the root's SIMPLICITY, the surface gravity, and the index `$-i\omega/\kappa$` are one fact, and it is forced by the sign of `$f'$` on the sheet rather than being a Nariai accident.*
+
+### ⛭⛭⛭ AND THE CORRECTION ADDS SOMETHING THE VERDICT DID NOT HAVE: WHOSE BRANCH THE THERMAL ONE IS
+
+*Once the kind is named, the unoccupied branch acquires an owner. Inside the seam `$v<1$`, so the skimming family runs `$\dd r/\dd\tau=v-1<0$` — back **out** toward the seam, asymptotically, at rate `$\kappa$`. A static observer is one who holds `$r$` fixed, and **on a cosmological horizon the static region is the BOUNDED one, inside.***
+
+⇒ ***So the index `$-i\omega/\kappa$` branch belongs to a static observer INSIDE the seam — and the bead is not one.*** *It arrives from outside, **where no observer can hold `$r$` fixed at all**, and crosses inward at speed `$2$`. **Your correction therefore does not weaken the verdict; it tells you whose branch the thermal one is**, and it is not the one carrying the sky's modes.*
+
+⌈ *Which is also why the result should have been expected rather than surprising, and I did not see that until your correction: at a cosmological horizon `$\kappa/2\pi$` is what the observer in the bounded region measures. **`rem:phase-open`'s static-versus-trajectory distinction is not a distinction between two descriptions of one observer at this locus — it is a distinction between two observers, only one of whom can exist on each side.***
+
+⌗ *Count corrected while I was in the file: the receipt carries **29** checks, not the `22` I wrote in the entry above and in the INDEX row. Both now read `29`. Part I is three of them; the other four were miscounted when I wrote the entry.*

@@ -56,6 +56,9 @@ trajectory.
           non-trivial branch is `$e^{-2i\\omega r_*}$`; whether that is a MODULUS or a PHASE is
           decided by whether `$r_*$` acquires an imaginary part on continuation, which happens at a
           logarithmic (simple) root and not at a pole (double) root.
+  PART I  ** THE SIGNATURE, WHICH `r7187` NAMES AS THE OMISSION THAT LICENSED A WRONG SENTENCE --
+          read here off the CHARACTERISTIC structure instead of off `$f$`, and it says which
+          observer the unoccupied branch belongs to. **
   PART H  ** AT WHICH `$k$`. **  The only scale at the crossing is `$\\kappa$`, so the only comoving
           wavenumber it could have carried is `$k=a_h\\kappa=3/2$` EXACTLY, `$\\alpha$`-free.  That is
           `$L=0.8028$`, BELOW the dipole, and `$\\ell=4.16$` against the first acoustic peak's
@@ -84,7 +87,8 @@ non-degenerate horizon. ***
    `$\\alpha$` free; one second-order ODE's coefficients, indices
    and Frobenius recursion at two roots of the same cubic; two characteristic families by quadrature;
    and the index-0 branch's transfer over four decades of `$\\omega/\\kappa$`, three `$\\ell$` and four
-   window widths.  *** The construction has one scale, `$\\alpha$`, and every number below is a pure
+   window widths; and the seam's signature from two evaluations of `$f$` and the sign of each
+   characteristic speed either side of it.  *** The construction has one scale, `$\\alpha$`, and every number below is a pure
    number in `$\\alpha=1$` units; the `$(\\omega,\\ell)$` ladder is the only input and it is stated. ***
    No grid, no fit, no banked artefact. **
 
@@ -557,6 +561,55 @@ check("Ⓗ③  so the answer to `at which k` is complete in both directions: the
       abs(_k_th - mp.mpf('1.5')) < mp.mpf('1e-30') and all(s[-1] < 200 for s in _slopes))
 
 
+# ============================================================ I. the signature
+head("I.  THE SIGNATURE, AND WHICH OBSERVER THE UNOCCUPIED BRANCH BELONGS TO")
+
+# `r7187` named the omission exactly: a receipt can check the root order, the surface gravity, the
+# acceleration identity and both approach parameters and still not notice that a sentence names the
+# wrong KIND of horizon, because none of those computes the signature.  This file had the same hole.
+# Read here off the CHARACTERISTIC speeds rather than off f, which is the same fact in the chart the
+# modes are actually carried in -- and the reading is `r7187`'s, on this member, not a re-derivation
+# of its three-member comparison.
+_out, _in = R_BACK - mp.mpf('0.2'), R_BACK + mp.mpf('0.2')
+print(f"      two evaluations of f, one either side of the seam:")
+print(f"         f({mp.nstr(_out, 8)}) = {mp.nstr(f(_out), 8)}   (|r| > 2 alpha/sqrt3)")
+print(f"         f({mp.nstr(_in, 8)}) = {mp.nstr(f(_in), 8)}   (|r| < 2 alpha/sqrt3, toward the "
+      f"branch point)")
+print(f"      and the two characteristic speeds v+-1 there:")
+for r_, lab in ((_out, 'outside'), (_in, 'inside ')):
+    print(f"         {lab}  v = {mp.nstr(v(r_), 10)}   v+1 = {mp.nstr(v(r_) + 1, 10)}   "
+          f"v-1 = {mp.nstr(v(r_) - 1, 10)}")
+check("Ⓘ①  OUTSIDE the seam f < 0 and BOTH characteristic speeds are positive, so no curve holds r "
+      "fixed there -- the radius is timelike; INSIDE, f > 0 and the speeds straddle zero, so the "
+      "region is static.  ** That is the COSMOLOGICAL horizon's signature and the exact reverse of "
+      "a black hole's, which is `r7187`'s correction read off the characteristics instead of off "
+      "`f` -- the same fact in the chart the modes are carried in. **",
+      f(_out) < 0 and f(_in) > 0
+      and v(_out) - 1 > 0 and v(_out) + 1 > 0
+      and v(_in) - 1 < 0 and v(_in) + 1 > 0)
+
+_t1 = 2 * M / R_BACK ** 2
+_t2 = -2 * R_BACK
+print(f"      and on r < 0, f' = 2M/r^2 - 2r/alpha^2 is a SUM OF TWO POSITIVE TERMS:")
+print(f"         2M/r_h^2 = {mp.nstr(_t1, 12)}   -2 r_h = {mp.nstr(_t2, 12)}   sum = "
+      f"{mp.nstr(_t1 + _t2, 15)} = 2 kappa = {mp.nstr(2 * KAP, 15)}")
+check("Ⓘ②  so f is strictly monotone on the sheet and its ONE root there is simple by that alone -- "
+      "`r7187`'s decomposition, recomputed, and it is the same 2 kappa = 2.598076211 this file's "
+      "indicial equation returns.  ** The simplicity of the root is not a coincidence of the Nariai "
+      "value: it is forced by both terms of f' having the same sign on r < 0. **",
+      _t1 > 0 and _t2 > 0 and abs(_t1 + _t2 - 2 * KAP) < mp.mpf('1e-30'))
+
+print("\n      WHICH OBSERVER THE UNOCCUPIED BRANCH BELONGS TO, now that the kind is named:")
+print("      inside the seam v < 1, so the skimming family runs dr/dtau = v-1 < 0 -- back OUT")
+print("      toward the seam, asymptotically, at rate kappa.  A STATIC observer is one who holds r")
+print("      fixed, and on a COSMOLOGICAL horizon the static region is the BOUNDED one, inside.")
+check("Ⓘ③  ** so the index -i omega/kappa branch belongs to a static observer INSIDE the seam, and "
+      "the bead is not one: it arrives from outside, where no observer can hold r fixed at all, and "
+      "crosses inward at speed 2. **  `r7187`'s correction therefore does not weaken this file's "
+      "verdict -- it names the observer the thermal branch is for, and it is not the one carrying "
+      "the sky's modes",
+      v(_in) - 1 < 0 and v(_out) - 1 > 0 and _t_cross[1][1] < mp.mpf('1e-2'))
+
 # ============================================================ verdict
 print()
 print(BAR)
@@ -585,6 +638,12 @@ print("    eq:lowell that is ell = 4.16 against the first peak's 220.60, a facto
 print("    independently reproduces the loci's 50.6.")
 print("  ⇒ ** THE SECTOR'S 1.57 ACQUIRES NO PARAMETER ADDRESS FROM THE LAP'S ONE NON-DEGENERATE")
 print("    HORIZON.  `r7181+cc66.144`'s finding survives the one test that could have overturned it. **")
+print("  ⌈ And `r7187`'s correction, read off the characteristics: f < 0 with BOTH speeds")
+print("    positive outside, f > 0 with the speeds straddling zero inside -- the COSMOLOGICAL")
+print("    signature.  Which names the observer the unoccupied branch is for: a STATIC one INSIDE")
+print("    the seam.  The bead arrives from outside, where nothing can hold r fixed at all, and")
+print("    crosses inward at speed 2.  ** So the correction does not weaken the verdict -- it")
+print("    tells you whose branch the thermal one is. **")
 print("  ⚠ What is NOT computed: the flux the seam radiates into the lap's future.  That is a")
 print("    question about the quantum state and it does need the progenitor interior `PO-75` is")
 print("    live on.  The TRANSFER did not, and the missing physical alpha is not needed either:")
