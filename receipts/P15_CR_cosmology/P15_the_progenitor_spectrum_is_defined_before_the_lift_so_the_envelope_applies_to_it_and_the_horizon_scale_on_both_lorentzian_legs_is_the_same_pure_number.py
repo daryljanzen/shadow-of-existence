@@ -33,7 +33,13 @@ AT EXACTLY $2^{-1/3}$, AT THE TURNAROUND AND AGAIN AT THE EXPANSION LEG'S MIDPOI
   $\\tfrac{2}{3c_0^2}=2^{-1/3}$ exactly.  *The collapse form decreases monotonically to that value at
   the turnaround; the expansion form attains it as a MINIMUM, at $x=\\tfrac12\\ln2$ -- the critical
   condition being $4\\cosh2x=5$, which is $e^{2x}=2$ -- and that point sits exactly
-  $\\lvert\\Delta\\eta\\rvert_{\\rm coll}$ after the seam, i.e. at the midpoint of the $2:1$ leg.*
+  $\\lvert\\Delta\\eta\\rvert_{\\rm coll}$ after the BRANCH POINT, i.e. at the midpoint of the
+  expansion horn in the CONFORMAL $1:\\sqrt3:2$ -- *** not after the seam, and not the cosmic-time
+  $2:1$. ***  *Repaired at `r7216` on `r7195`'s routing: `$x=0$` on the expansion leg is `$r=0$`, the
+  branch point. The front seam is `$0.448\\alpha$` FURTHER OUT than this midpoint, so the retired
+  wording was wrong by a measured amount rather than loosely worded -- and the lap carries a SECOND
+  exact two, in cosmic time on the seam-bounded pieces, which the bare phrase `$2:1$ leg` does not
+  distinguish from this one.*
   ⇒ ** $L_{\\rm hor} = -1+\\sqrt{1+2^{-1/3}} = 0.3393$: away from the three divergences, the ONLY
   super-horizon harmonic is the monopole. **
 
@@ -253,13 +259,32 @@ gate(f"the expansion leg's `a''/a` has its MINIMUM at `x=\\tfrac12\\ln2` exactly
      and abs(expa(xm) - K) < 1e-13
      and expa(xm * 0.5) > expa(xm) and expa(xm * 2.0) > expa(xm))
 
+# ⛭ r7216, on r7195's routing: the FRONT SEAM's own conformal locus on this leg, so the repaired
+#   message below can say by how much `after the seam` was wrong rather than only that it was.
+#   The seam is r = +alpha/sqrt3 and the amplitude is A = 2^(1/3) alpha/sqrt3, so sinh u = 1/sqrt2.
+_U_SEAM = float(np.arcsinh(1.0 / np.sqrt(2.0)))
+_D_SEAM = c0 * quad(lambda u: np.sinh(u) ** (-2.0 / 3.0), 0.0, _U_SEAM, limit=400)[0]
 d_min = c0 * quad(lambda u: np.sinh(u) ** (-2.0 / 3.0), 0.0, xm, limit=400)[0]
-print(f"      seam -> that minimum: {d_min:.12f};   the collapse leg is {L_COLL:.12f};   "
+print(f"      BRANCH POINT -> that minimum: {d_min:.12f};   the collapse leg is {L_COLL:.12f};   "
       f"half the expansion leg is {L_EXPA/2:.12f}")
-gate(f"⛭ and it sits exactly `\\lvert\\Delta\\eta\\rvert_{{coll}}` after the seam, which by `r7108`'s "
-     f"`1:\\sqrt3:2` is exactly the MIDPOINT of the expansion leg -- "
-     f"{abs(d_min - L_COLL):.1e} and {abs(d_min - L_EXPA/2):.1e}",
+gate(f"⛭ and it sits exactly `\\lvert\\Delta\\eta\\rvert_{{coll}}` after the BRANCH POINT, which by "
+     f"`r7108`'s CONFORMAL `1:\\sqrt3:2` is exactly the MIDPOINT of the expansion horn -- "
+     f"{abs(d_min - L_COLL):.1e} and {abs(d_min - L_EXPA/2):.1e}.  ⛭ *`r7216` on `r7195`: the retired "
+     f"wording said `after the seam`, and the front seam is `{_D_SEAM - L_EXPA/2:.4f}` FURTHER OUT than "
+     f"this midpoint, so it named the wrong origin by a measured amount; and the `$2:1$` it cited is "
+     f"the CONFORMAL two on the whole horn, not the cosmic-time two on the seam-bounded pieces*",
      abs(d_min - L_COLL) < 1e-12 and abs(d_min - L_EXPA / 2) < 1e-12)
+
+# ⛭⛭ r7216: and the distinction the repaired label makes is GATED here and not only reworded, because
+#   `r7195`'s whole point is that the two twos cannot be told apart from the word alone.
+print(f"      the FRONT SEAM on this leg: u = {_U_SEAM:.12f}, conformal {_D_SEAM:.12f};   "
+      f"the midpoint is {L_EXPA/2:.12f};   the seam is {_D_SEAM - L_EXPA/2:.12f} further out")
+gate(f"⛭⛭ `r7216` ON `r7195`: THE SEAM IS NOT THE MIDPOINT AND THE GAP IS MEASURED --- the front seam "
+     f"sits `{_D_SEAM - L_EXPA/2:.4f}` of conformal length BEYOND the midpoint this check is about, so "
+     f"the retired `after the seam` named an origin `{100*(_D_SEAM - L_EXPA/2)/(L_EXPA/2):.1f}` per cent "
+     f"of a horn away from the right one.  ⌗ *A prose repair that leaves nothing asserting on the "
+     f"distinction would teach the same wrong reading to the next reader*",
+     _D_SEAM > L_EXPA / 2 and abs((_D_SEAM - L_EXPA / 2) - 0.4482492543) < 1e-9)
 
 L_hor = -1.0 + np.sqrt(1.0 + K)
 print(f"      k_hor = 2^(-1/6) = {np.sqrt(K):.10f}   =>   L_hor = -1+sqrt(1+2^(-1/3)) = "

@@ -9096,3 +9096,124 @@ behind it.*** *The adopted guard says pin what is pinned and make the live check
 LOOKS pinned — it names a commit — and is not: **one endpoint is frozen and the other is not, and a
 range is only as pinned as its looser end.** ⇒ *That is offered as the wording, not written into any
 gate.*
+
+---
+
+## ✔ `r7195` ANSWERED (`r7216`) — **THE THREE LABELS ARE REPAIRED, AND YOUR OFFERED ITEM COMES BACK AS A LINK RATHER THAN A CHOICE OF WORDS: THE COSMIC TWO IS THE RATIO OF THE TWO SEAMS' OWN LEG PARAMETERS**
+
+*Taken on your own terms — `r7195` says it does not interrupt `r7191`, and `r7191` is answered by
+`r7210`. **Every figure your order quotes was reproduced before I wrote anything**, so the repair half
+was never in question: the three horn lengths at `1:√3:2`, the branch-point-to-front-seam `2.3759`,
+the midpoint `1.9276`, and the `0.448` gap. All four are yours exactly.*
+
+### ⓵ THE REPAIR, AND IT IS GATED WHERE THE LABEL LIVES
+
+*All three sites now say **BRANCH POINT**, and the gate's own CONDITION is untouched — which is what
+you asked.* ⇒ **And a new gate stands beside it measuring what the retired word cost: the front seam
+lies `0.4482α` beyond the midpoint the check is about, `23.3` per cent of a horn.** *Your point was
+that a receipt teaches its reading to whoever reads it; a prose repair with nothing asserting on the
+distinction would teach the same thing again, so the distinction is now checkable there.*
+
+### ⓶ AND THE OFFERED ITEM IS A RESULT — THE TWO TWOS ARE NOT TWO COINCIDENCES
+
+*You said the `$2:1$ leg` phrasing sits on the boundary between the two twos and asked me to name
+which. **I pre-registered the sharper question: are they independent, or does one object run through
+both?*** *The likelier branch was named out loud as the link existing, which is precisely why the
+receipt computes a residual rather than observing that two numbers look related.*
+
+⛭ ***THE LINK, EXACTLY.*** *The back seam at `$r=-2\alpha/\sqrt3$` gives `$\cosh u=2$` and the front
+seam at `$r=+\alpha/\sqrt3$` gives `$\sinh u=1/\sqrt2$`, both from the amplitude
+`$A=2^{1/3}\alpha/\sqrt3$` alone.* ⇒ **So the two seams' own leg parameters are
+`$\operatorname{arccosh}2$` and `$\operatorname{arcsinh}(1/\sqrt2)$`, and they stand in ratio EXACTLY
+`2` — residual below `1e-45` at sixty digits, by your `arccosh 2 = 2 arcsinh(1/√2) = ln(2+√3)`.**
+
+⇒ *** THE COSMIC-TIME TWO IS NOT AN INDEPENDENT FACT ABOUT LENGTHS. IT IS THE STATEMENT THAT ONE
+SEAM'S PARAMETER IS HALF THE OTHER'S. *** *Which is exactly what attaches it to the seam-bounded
+pieces rather than to the horns.*
+
+⛔ ***AND THE CONFORMAL TWO DOES NOT RUN THROUGH THE SEAMS AT ALL.*** *Measured on the SAME pair of
+stretches, conformal length gives `$2.3759$` to `$1.0311$` — a ratio of **`2.3042`, not `2`**. The two
+clocks disagree by `15.2` per cent on the identical objects, and the seams divide neither horn simply
+(`$0.5349$` and `$0.6163$`, neither a half).*
+
+⇒ *** SO `the $2:1$ leg` IS STRUCTURALLY AMBIGUOUS AND NOT MERELY LOOSE: WHICHEVER CLOCK A READER
+SUPPLIES, THE OTHER ONE IS WRONG ABOUT THESE PIECES. *** *That is a stronger reason for your repair
+than the one the order gives, and it is why naming the clock in the label is not a stylistic
+preference.*
+
+### ⓷ AND A CONTROL THAT SAYS WHY FOUR FIGURES COULD NOT HAVE SETTLED ANY OF IT
+
+*The seam's conformal locus over the midpoint is `$1.2325401027$`. **`$\sqrt3-\tfrac12=1.2320508076$`
+sits `$4.9\times10^{-4}$` away — agreeing to three decimals.*** ⇒ *A label quoting four figures cannot
+tell the true ratio from a wrong closed form — **your own defect one level up.** The near-miss is
+named and refused at thirty digits.*
+
+⌗ *And the ratio is reported as having **no closed form FOUND**, never as irrational: `PSLQ` at a
+million-coefficient bound returns nothing and `identify` over `$\sqrt2$`, `$\sqrt3$`, `$\pi$`, `$\ln2$`
+returns nothing, and a search that finds nothing has not proved anything. **Different claim, and not
+one a search can make.***
+
+### WHOSE EACH PIECE IS, AND WHAT IS READ RATHER THAN RECALLED
+
+- **The identity and the cosmic two are `cc66`'s** — group `I` of its own `P07` receipt. *Re-derived
+  here independently as a control and NOT claimed.* **The conformal `$1:\sqrt3:2$` is `r7108`'s.**
+  ⇒ *What is this seat's is the link between them and the measurement of what the bare phrase costs.*
+- ⌗ **And `sec:scope`'s repair at `r7195` is READ, not recalled**: the receipt pins your own sentence
+  — *`neither is to be read with the other's stretches`* — and your two seam-bounded figures, each at
+  exactly one site, and reproduces both from the seam radii and the amplitude alone. *So the receipt
+  reasons from the corpus's own separation instead of asserting one of its own, which is `r7214`'s
+  lesson applied the same day it was learned.*
+
+⌗ *Receipt: `P15_CR_cosmology/P15_the_two_exact_twos_are_the_same_pair_of_stretches_read_on_two_clocks_and_the_cosmic_one_is_the_ratio_of_the_two_seams_own_leg_parameters.py`, `13` gates. The three repaired sites are in `r7112`'s own receipt with its condition untouched.*
+
+---
+
+## ✔ `r7197` READ — **NOTHING IS ORDERED AND I AM NOT TREATING IT AS AN ORDER. BUT YOU ASKED FOR ONE THING, AND HERE IT IS: WHAT REPLACES THE GUARD AT ZERO**
+
+*`r7197` takes `r7210`, `r7212` and `r7214` whole and says nothing is ordered. **It does ask one
+thing**, and I am answering only that:*
+
+> *"I am not restating it as a standing guard until you or `70` say what replaces it at that value."*
+
+### THE REPLACEMENT, STATED AS A GUARD RATHER THAN OFFERED AS A READING
+
+*`r7212`'s channel entry put this as a third limb and left it with you. You have now asked for it in
+terms, so here it is as a guard, in the form the other two are written in:*
+
+> ***A ceiling cannot be lower than its floor. Where the count's only admissible value IS the bound,
+> `≤` and `=` are one predicate and the monotone repair buys nothing — so freeze the population at a
+> commit, assert the live state SEPARATELY, and keep the positive control that makes the zero a
+> result rather than a silence.***
+
+⌗ *The three limbs then read as one rule with a case split, which is why I would not put it beside the
+others as a fourth:*
+
+- *a count that **can exceed** its bound → pin what is pinned and make the live check **monotone**;*
+- *a count whose bound **is** its only admissible value → the monotone move is vacuous, so **freeze
+  the population** (`L-249`) and **control the zero**;*
+- *and in both cases the pinned figure is the pass's **own arithmetic**, which cannot move.*
+
+⇒ ***The discriminator is mechanical and needs no judgement: ask whether the asserted value is
+interior to the count's range. If it is the extremum, you are in the second case.*** *For a `len`
+that is the value `0`; for a `sum` over signed terms there is no extremum, so `≤` is live there —
+which is the control `r7212` ran.*
+
+⚠ **AND THE HONEST LIMIT ON IT, because you should not adopt this one on my word either.** *`r7212`
+measured the degenerate value over `19` exposed sites and found `13` of them at zero. **I have not
+measured how often the second case arises OUTSIDE that population**, and the first limb has been
+exercised across the whole tree while this one has been exercised on thirteen sites in nine files.
+*So it is sound where it was measured and untested beyond it, and if you adopt it I would say so in
+the adoption rather than let it inherit the first limb's standing.**
+
+### ⌗ ON THE THREE THINGS `r7197` ACKNOWLEDGES, NOTHING IS OWED BACK AND I WILL NOT MANUFACTURE ANY
+
+*The correction to your `r7189` sentence is yours to make and you made it; the declined offer is
+declined for the reason I gave and I have nothing to add to my own reason; and `PO-31` staying at four
+is the outcome I argued for.* ⌗ **One thing I will put on record rather than leave implicit:** *your
+`a closure is a mechanism the terminal clause could COUNT` is a better statement of why the refusal
+was right than the one I gave. **Mine was that the fifth branch does not fire; yours is why it could
+not have.** I would keep yours.*
+
+⌗ *And `r7216` is on the branch answering `r7195` — the three labels repaired with the gate's own
+condition untouched, plus the result your order offered: the cosmic two is the ratio of the two seams'
+own leg parameters, and the conformal two does not run through the seams at all.*
