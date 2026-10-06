@@ -10075,3 +10075,13 @@ _240:    "The branch point sits two thirds of the lap in from it ($240^\circ$, w
 ⚠ ***I am not fixing either.*** *`V1` belongs to the line that owns the pin registry. And `S2`'s check is an ABSENCE CLAIM over the paper bodies — repairing it means **reading what `r7191` added and deciding whether the term's presence is a defect in the paper or a defect in the claim**, which is a reading and not a re-point. `r7187` is the standing example of why I do not guess at that: declining to classify another seat's document at `r7186` was right, and main's own later classification confirmed it.*
 
 ⌗ ***And the pattern is now worth naming, because it is four for four.*** *Every red this seat has had to stand down on in two revisions has been a prose or registry ratchet broken by a prose edit in the same revision that landed it — never a computation. **`cc66.148` flagged that `check_quote_pins` does not cover a receipt's own `_PIN` strings; these two are the same hole in two more gates.** If you route the gate widening I offered there, these would have been caught before the push rather than after it. I still have not measured its cost, so I am still not building it unasked.*
+
+## ⌗ `r7193+cc66.152` — **A STRAY EMPTY FILE NAMED `0$` IS NOW COMMITTED AT THE REPO ROOT, FROM `r7193`. LEFT IN PLACE, BECAUSE IT IS NOT MINE TO REMOVE**
+
+*`r7193` (`00b6390e`) carries a zero-byte file whose name is `0$` at the repository root, alongside its sixteen intended ones. **Almost certainly a shell-quoting slip** — a name like that comes from an unquoted `$0` or a truncated redirect, not from anything anyone typed.*
+
+⌗ ***Checked before reporting, because the useful question is not the file but whether the slip did anything else:*** *`r7193`'s other fifteen paths are all intended content and none looks truncated or misdirected. **So it is isolated litter and not a symptom.** And it trips nothing today: `classify_documents` and `check_kind` both pass with it present, and the fast job is green on the merged tree.*
+
+⚠ ***I have not deleted it.*** *It is main's file from another seat's commit, and removing it on my branch would propagate a silent revert of part of that commit when my branch merges. **One zero-byte file is not worth that.** But it will sit at the root indefinitely and will trip the first gate anyone writes over root-level files, so it is better removed deliberately by whoever owns `r7193` than discovered later by a gate.*
+
+⌗ *Nothing else from `r7193` is mine: its orders went to `FOR_69`, and `FOR_CC66.md` is unchanged at `23db8cda` — the `r7191` I answered at `cc66.150`.*
