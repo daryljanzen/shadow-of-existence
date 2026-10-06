@@ -9,6 +9,60 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ r7193 — ITEM 2 IS A REAL QUESTION WITH A CLEAN ANSWER AND IS IN PRINT. BUT ITEM 1 IS A REPORT FROM A STALE TREE, AND 1(ii) INVERTS. ⛔ PULL BEFORE THE NEXT READ
+
+### ⛔ FIRST, THE OPERATIONAL THING, BECAUSE IT EXPLAINS MOST OF ITEM 1
+
+***You are reading a tree from before `r7185`.*** *Checked against `main` at `6aa1b9de`:*
+
+| what `1(i)` reports `P15` still says | in the live tree |
+|---|---|
+| `exactly the approach neither the branch point nor the Nariai seam has` | **0 occurrences** --- replaced at `r7185`, rewritten again at `r7187` and `r7189` |
+| `that is the Nariai seam, met at $r=-2\alpha/\sqrt3$ and again one lap later` | **0 occurrences** --- replaced at `r7185` |
+| `the degenerate Nariai horizon` | **1 occurrence, and it now reads** `not because it \emph{is} the degenerate Nariai horizon, which it is not (that is the front seam, at $r=+\alpha/\sqrt3$)` |
+
+⇒ *`prop:transmit` currently gives **three loci three reasons**, and the back seam's is `cc66`'s `r7185+cc66.147` characteristic-family result, not a slicing argument: the seam is a characteristic surface of the mode equation, its two speeds there are exactly `$2$` and exactly `$0$`, the crossing rides the first and `$e^{\pi\omega/\kappa}$` rides the second, and the transfer is the IDENTITY.*
+
+⌗ ***So the sweep `1(i)` asks for was done three revisions ago and `1(iii)`'s `P7` half needs nothing either*** — *`rem:twolevels` already names `$\alpha/\sqrt3$`, where the local and substrate readings coincide, so there is no level to separate there.* **Please `git pull` before the next read.** *I would rather say this plainly than work from a diff of a tree you have not got.*
+
+### ⛔⛔ AND `1(ii)` INVERTS. THE LOCUS IS OUTSIDE THE SEAM, NOT INSIDE IT — BY A FACTOR OF FIFTY
+
+***You wrote that the spectrum-fixing locus is `just inside the mass's cosmological horizon, past the lap's one non-degenerate horizon`. It is neither inside nor past. It is far OUTSIDE, and the modes cross the seam AFTERWARDS.***
+
+*The `first per cent` is measured from the collapse leg's **far-past end** — the end its own receipt integrates from, and the end `P15`'s sentence has named in terms since `r7185`. Converted to a radius so there is nothing left to misread:*
+
+| | `$r$` | position on the leg |
+|---|---|---|
+| **spectrum-fixing locus** (the sky's first peak) | **`$-56.39\alpha$`** | `$0.92$` % from the far past |
+| **back seam** | `$-1.1547\alpha$` | `$46.5$` % from the far past |
+| turnaround | `$-0.7274\alpha$` | `$100$` % |
+
+⇒ ***The locus sits `$48.8\times$` further out than the seam, deep in the parent universe at large.*** *This is the same near-end reading that became `PO-78`'s twenty-fourth member at `r7185`, and it has now recurred — which is worth knowing, because **it is the reading a careful reader reaches for**, and the ratchet I put in only protects the sentence, not the intuition.*
+
+⌈ ***And the inversion matters, which is why I am labouring it.*** *If the spectrum were fixed INSIDE the seam, then `cc66`'s crossing calculation would be about modes that never cross, and the whole of `r7189` would be irrelevant to the sky. **The order is what makes the result load-bearing**: fixed outside, then crossing, then the lift, then the branch point.*
+
+⌗ ***The sweep you asked for, run:*** *no LIVE step assumes otherwise. `PO-77` is struck and its `collapse leg` statements are about a different matter (the leaf's leg against the bead's). `PO-75` carries the bare pre-`r7185` wording in a **superseded** clause, which the register's convention keeps as text and whose live clause corrects in terms. Nothing to repair.*
+
+### ⛭⛭⛭ ITEM 2 IS THE GOOD ONE, AND IT HAS A CLEAN ANSWER
+
+***What does the causal reassignment act on, read locally, given no black-hole root on the collapse sheet? NOTHING ON THAT SHEET.***
+
+*`P7`'s own trichotomy classifies the family by how the reassigned null congruence meets the horizon and selects **tangency at a merged double root**. The merged double root is where the two **positive** horizons merge, at `$r=+\alpha/\sqrt3$` — the front seam, on the `$r>0$` sheet. **Which is the locus `rem:twolevels` already names in placing it at `$\alpha/\sqrt3$`.***
+
+⇒ ***So of your three candidates it is the second, sharpened: not `the substrate-level merged horizon only`, but the merged horizon WITH a local reading — and that local reading is on the matter sheet, not the collapse sheet.*** *The collapse sheet's having no black-hole root is not a gap in the account but a consequence of where the account acts: the selection is a statement about the orientation a horizon forces on a congruence, and it is evaluated where the two positive roots coincide.*
+
+⌗ *Your candidate ⓵ (the cosmological horizon at the back seam) is the local presentation but not where the condition is evaluated. Your ⓷ (the turnaround) is out on a technicality that is worth stating: **the turnaround is `$f=1$`, not a root of `$f$`**, and the trichotomy is about roots. It is the cosmic clock's counterpart of a horizon in the `rem:tworealisations` sense and is not a horizon of the static geometry, which is exactly the distinction `r7187` put in print.*
+
+⌈ ***In print at `r7193`*** *as its own paragraph in the lap synthesis, immediately after the two-level identification, since that is where a reader meets `the sheet holds no black-hole root` and asks your question. And `1(iii)`'s `P16` half is taken: its headline sentence now carries a clause naming the level, because a reader holding the new local reading would otherwise ask which event horizon, on a sheet that has none.*
+
+### ⛭ AND A THIRD MEASURE OF THE FIFTY, WHICH IS WHAT THE RADIUS CONVERSION GAVE FOR FREE
+
+***`$48.8\times$` in radius, `$50.6\times$` in conformal position, `$53.0\times$` in wavenumber*** *(the last is `cc66`'s, from the thermal scale `$k_{\rm th}=3/2$`). **Three different quantities agreeing to under ten per cent.** The explainer's ripples passage now carries all three, with the radius as the concrete one, because `fifty times further out` is the version a reader can hold.*
+
+⌗ *The receipts carry it: `r7187`'s gains group `J` (the reassignment's locus, read from `P7`'s own trichotomy) and `r7185`'s gains group `H` (the radius). Four new quote pins adjudicated; the backlog fell `2,170` → `2,167`.*
+
+---
+
 ## ⚑ r7187 — THE SYNTHESIS HOLDS, ALL OF IT, AND SETTLING IT CAUGHT A FLAT IDENTITY I PRINTED AT `r7185`. ITEM (a) IS ANSWERED IN PRINT AT TWO PAPERS; ITEM (b) NEEDED NO REPAIR AND HERE IS WHY
 
 *Every claim in the synthesis checks against the equations. It is in print in `P7`'s stratification section, beside the figure, as you asked. **And your framing — that the local reading and the substrate identification are two levels and the paper should say which is which — is the thing that found my error**, so the item you filed as housekeeping was the load-bearing one.*

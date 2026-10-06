@@ -16,7 +16,21 @@ none: it is the picture the reader leaves with.
           row's line in THE_REGISTER.md (whitespace-collapsed) AS IT STOOD WHEN THE PASSAGE WAS LAST READ
           AGAINST IT.  Struck or open, the line is digested as it stands.
   in:     literals that must still be present in the named file -- the number or phrase the passage
-          paraphrases.  Repeatable, one per `in` clause, double-quoted.
+          paraphrases.  Repeatable, one per `in` clause, double-quoted.  A literal may name a SECTION
+          as well as a file, which restricts both the search and the uniqueness requirement to it:
+
+              in corpus/CR_cosmology.tex#sec:transmission: "the crossing accumulates no divergent phase"
+
+** AND A PIN MUST NAME ONE SITE, WHICH IS WHAT `r7183+70.1` MEASURED AND `r7189` ENFORCES. **  A literal
+that occurs more than once in its scope is a pin on the FILE and not on the CLAIM: the sentence it was
+written for can be deleted and the pin stays green on an unrelated copy.  That is not hypothetical --
+`r7183` removed `P15`'s projection-distance claim and the explainer's pin on `by three independent
+routes` stayed green, because another section carried the same four words about a different quantity.
+Node 70 then counted the class: 139 of 722 receipt pins and 8 of 18 of this file's pins were multi-site,
+and a section scope alone would single-site only 47 per cent of them, the rest repeating inside one
+section.  So the scope and the uniqueness requirement are both needed and both are enforced here: a
+literal occurring twice is a FAILURE, whether or not a section is named, and the remedy is to name a
+section or to lengthen the literal until it names one site.
 
   The marker is an HTML comment, so the page generator skips it (`md_to_html`, which escapes `<` in prose,
   drops comment lines instead of printing them).
@@ -25,6 +39,9 @@ none: it is the picture the reader leaves with.
   MOVED      a pinned row's line no longer digests to its stamp -- the row was edited, narrowed or struck.
   GONE       a pinned row is no longer in the register, or a pinned file is gone.
   DROPPED    a pinned literal is no longer in its file -- the number or wording the passage rests on changed.
+  MULTISITE  a pinned literal occurs more than once in its scope, so the pin is on the file and not on the
+             claim.  Remedy: name a section, or lengthen the literal until it names one site.
+  NOSECTION  a pinned literal names a section label that does not resolve to exactly one `\\label{...}`.
   MALFORMED  a marker that does not parse, carries an unstamped row, or does not sit directly above a
              paragraph; or a `<!--` anywhere but at the start of its own line (the generator would print it).
 
@@ -48,7 +65,23 @@ REG = os.path.join(ROOT, 'THE_REGISTER.md')
 
 MARK = re.compile(r'^<!--\s*watch:\s*(.*?)\s*-->\s*$')
 ROWPIN = re.compile(r'^(PO-\d+)@([0-9a-f]{8}|-{8})$')
-INCL = re.compile(r'^in\s+(\S+?):\s*"([^"]+)"$')
+INCL = re.compile(r'^in\s+([^\s#:]+?)(?:#([A-Za-z0-9:_\-]+))?:\s*"([^"]+)"$')
+SECCMD = re.compile(r'\\(?:sub)*section\*?\s*\{')
+
+
+def section_body(text, label):
+    """The named section's own text, or (None, why) if the label does not resolve to exactly one site.
+
+    Scope runs from the \\label{...} to the next sectioning command of any depth, which is the
+    conservative reading: a subsection's scope ends at the next subsection, and a section's ends at
+    its first subsection.  A pin that needs to reach across a subsection boundary should name the
+    subsection it is actually in."""
+    hits = [m for m in re.finditer(r'\\label\{' + re.escape(label) + r'\}', text)]
+    if len(hits) != 1:
+        return None, f'resolves to {len(hits)} \\label{{{label}}} sites, not 1'
+    start = hits[0].end()
+    nxt = SECCMD.search(text, start)
+    return text[start:nxt.start() if nxt else len(text)], None
 
 
 def norm(s):
@@ -106,7 +139,7 @@ def parse(lines):
                 if not im:
                     errors.append(f'MALFORMED  [{wid}] {p!r}: write in <path>: "<literal>"')
                 else:
-                    w['lits'].append((im.group(1), im.group(2)))
+                    w['lits'].append((im.group(1), im.group(2), im.group(3)))
             else:
                 errors.append(f'MALFORMED  [{wid}] unknown clause {p!r}')
         if not w['rows'] and not w['lits']:
@@ -139,14 +172,28 @@ def evaluate(w, rows, cache):
             struck = cur[0].lstrip('| ').startswith('~~')
             probs.append(f'MOVED    {po} has changed since the passage was read against it'
                          + (' (it is now STRUCK)' if struck else ''))
-    for path, lit in w['lits']:
+    for path, sec, lit in w['lits']:
         full = os.path.join(ROOT, path)
         if path not in cache:
             cache[path] = open(full, encoding='utf-8').read() if os.path.isfile(full) else None
         if cache[path] is None:
             probs.append(f'GONE     {path} does not exist')
-        elif lit not in cache[path]:
-            probs.append(f'DROPPED  "{lit}" is no longer in {path}')
+            continue
+        where = path + (('#' + sec) if sec else '')
+        hay = cache[path]
+        if sec:
+            hay, why = section_body(cache[path], sec)
+            if hay is None:
+                probs.append(f'NOSECTION {where}: {why}')
+                continue
+        n = hay.count(lit)
+        if n == 0:
+            probs.append(f'DROPPED  "{lit}" is no longer in {where}')
+        elif n > 1:
+            probs.append(f'MULTISITE "{lit}" occurs {n} times in {where} -- the pin is on the '
+                         f'{"section" if sec else "file"} and not on the claim.  '
+                         + ('Lengthen the literal until it names one site.' if sec
+                            else 'Name a section with #sec:label, or lengthen the literal.'))
     return probs
 
 
