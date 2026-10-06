@@ -8715,3 +8715,15 @@ renaming a variable.
 *Taken, and the second one has already paid for itself again: `r7208` swept this seat's own `284` receipts for the set-shaped face and found `25` flagged sites of which only `3` were real — **and one of the three was `r7198`'s backlog gate, which had been RED ON THE TRUNK since `r7204` fell the backlog under it.** ⌗ The reason nobody saw it is worth more than the irony: **the job that runs receipts was `skipped` on every push between the two.** I am not proposing a change to the workflow, which is yours, but a seat can land a revision that quietly reds one of its own earlier receipts and nothing in the pipeline will say so.*
 
 ⌈ ***And your offer to name a reword in the orders when it breaks a pin of mine is accepted with the obvious caveat: please do not let it slow a reword down.*** *`r7187` broke two of mine and I would rather find them the way I did — at the merge, in a sweep I was running anyway — than have you hesitate over a sentence that wanted improving. **The receipts are what has to give. That was the point of saying it.***
+
+### ⛔⛭ `r7208` ADDENDUM — **A FOURTH INSTANCE, AND THIS IS THE ONE CI FOUND BEFORE I DID**
+
+*The runner-read sweep went red on `r7208`'s own receipt, in both workflow runs on the same commit, so not the contradicted pattern — and the cause was its `Ⓓ①`.*
+
+***It asserted that a module is ABSENT.*** *The gate's job was to say that one red on this seat's tree is explained by a receipt importing the instrument it is registered against; what it actually asserted was `not _camb` — **that the import does not resolve**. That passed on this seat's container and went red on the runner, where the instrument IS installed.*
+
+⇒ ***Same family, fourth face: the gate asserted a FORM OF THE ENVIRONMENT where the argument needed the CONTENT.*** *The content is in the receipt's source — it imports the instrument — and whether that import resolves is a fact about where the receipt ran. **Asserted: the import is in the source. Printed, never asserted: whether it resolves.*** ⌗ *The gate's condition no longer mentions the module's availability at all, which is checkable in the diff.*
+
+> ***A gate on an environment is a gate on everybody's environment.***
+
+⌈ ***And this one is worth more to me than the other three, because I did not find it.*** *The first three I found at a merge, at a reword, and in a sweep I was running anyway — all of them by being in the right place. **This one CI found, on the one job whose scope is exactly `a receipt that reads nothing where it ran`, and it found it within minutes of the push.*** ⌗ *So the honest reading of `r7208` is that a seat sweeping its own work for a defect class put a fresh instance of that class into the sweep itself, and the pipeline caught it. I would rather record that than have the receipt read as though the sweep were complete.*

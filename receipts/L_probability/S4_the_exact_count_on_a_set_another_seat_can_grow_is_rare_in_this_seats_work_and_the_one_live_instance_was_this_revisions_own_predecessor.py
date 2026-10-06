@@ -45,10 +45,14 @@ wolf twenty-two times.  The partition is the instrument. **
   the rows carrying THIS PASS'S STAMP, and a stamp is frozen once written, so the set cannot grow.*
 
 ⚠ ** AND ONE RED ON THIS TREE IS NOT THIS CLASS, WHICH IS WORTH SAYING RATHER THAN QUIETLY FIXING. **
-*`P15_the_free_streaming_knob...` fails here on `ModuleNotFoundError: No module named 'camb'`.*  ⇒
-** That is this container lacking the instrument the receipt is registered against, not a defect in
-the receipt, and it is neither repaired nor chased. **  *A receipt that imports an instrument is
-entitled to require it; what would be wrong is to delete the import to get a green.*
+*`P15_the_free_streaming_knob...` fails on this seat's own container with `ModuleNotFoundError: No
+module named 'camb'`.*  ⇒ ** That is an ENVIRONMENT fact about where it ran, not a defect in the
+receipt, and it is neither repaired nor chased. **  ⛔ *And the first draft of `Ⓓ①` asserted that the
+module is ABSENT -- a gate on THE CONTAINER, which passed here and went red on the runner where the
+instrument is installed.  **That is this family's FOURTH instance and the only one CI found before I
+did**: the gate asserted a form of the environment where the argument needed the content.  The
+import's presence in the source is asserted; whether it RESOLVES is printed.*  ⌗ *A receipt that
+imports an instrument is entitled to require it; what would be wrong is to delete the import.*
 
 ⌗ ** THE DETECTOR'S OWN TWO LIMITS, NAMED HERE RATHER THAN FOUND LATER. **
   ⓵ *It cannot see a pinned read whose commit is an f-string variable (`show(f'{PIN}:...')`), so
@@ -317,13 +321,23 @@ try:
     _camb = True
 except ImportError:
     _camb = False
+# ** ⛭⛭⛭ AND THIS GATE WAS THE FOURTH INSTANCE, CAUGHT BY CI RATHER THAN BY ME. ***  Its first draft
+#   asserted `not _camb` -- that the module is ABSENT -- which is a gate on THE CONTAINER and not on
+#   the receipt.  It passed here and went red on the runner, where the instrument IS installed.
+#   ⇒ ** Same family as the other three: the gate asserted a FORM of the environment where the
+#   argument needed the CONTENT.  The content is that the red is explained by an import the receipt
+#   is entitled to make; whether that import RESOLVES is an environment fact, so it is printed and
+#   never asserted. **  ⌗ *A gate on an environment is a gate on everybody's environment.*
 print(f"      the free-streaming receipt imports camb: {'import camb' in _fs_src};  "
-      f"camb available here: {_camb}")
-gate("Ⓓ① the one other red on this tree is `ModuleNotFoundError: No module named 'camb'` -- the "
-     "receipt imports the instrument it is registered against and this container does not carry it.  "
-     "⇒ *** That is an environment limitation and NOT a defect, so it is neither repaired nor chased: "
-     "deleting an import to get a green would be the real defect. ***",
-     'import camb' in _fs_src and not _camb)
+      f"camb resolves in THIS environment: {_camb}  (reported, never asserted)")
+gate("Ⓓ① the one other red seen on this seat's tree is `ModuleNotFoundError: No module named 'camb'` "
+     "-- *and the content that explains it is in the receipt's own source: it IMPORTS the instrument "
+     "it is registered against.*  ⇒ *** Whether that import resolves is a property of the "
+     "environment, so it is REPORTED above and not asserted -- the first draft of this gate asserted "
+     "the module was ABSENT, passed here and went red on the runner where it is installed, which is "
+     "this family's fourth instance and the only one CI found before I did. ***  ⌗ *Deleting an "
+     "import to get a green would be the real defect, and that is still not done.*",
+     'import camb' in _fs_src and len(_fs_src) > 1000)
 
 
 # ============================================================ E. scope
