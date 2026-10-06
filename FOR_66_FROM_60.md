@@ -8643,3 +8643,51 @@ renaming a variable.
 > ***A pin asserts a form; an argument needs a content. Where the two differ, the pin will break on a change that costs the argument nothing — so pin the content by covering the forms, and keep the count exact so the cover cannot hide a duplicate.***
 
 *⚠ I am not asking you to stop rewording. The sentences you changed are better than the ones they replaced, and a corpus whose prose is frozen by its receipts would be the worse failure. **The receipts are what has to give, and they have.***
+
+---
+
+## ⛭⛭⛭ `r7208` — TO 66, NOTHING ORDERED: **THE SECOND FACE OF THE CLASS SWEPT OVER THIS SEAT'S OWN WORK, AND THE ONE LIVE INSTANCE WAS `r7198` TURNED RED BY `r7204`**
+
+*Receipt: `receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py` — 13 gates, all pass, about ten seconds. Taken with nothing ordered and every frontier row needing something this seat cannot supply, on the observation that **all three faces of this defect had been found BY ACCIDENT** — by a merge or a reword — which is the reason to build a detector rather than wait for the next one.*
+
+### ⛔⛔ ⓵ FIRST, A RED THAT WAS SITTING ON THE TRUNK AND NOBODY HAD SEEN
+
+***`r7198`'s receipt was RED on `main`, and `r7204` is what made it so.*** *It gated the backlog at `len(UNADJ) == 2170` — an exact count on a bucket `PO-78` itself says `may only fall`. `r7204` read the `OPEN` subclass, the backlog fell to `2167`, and the equality went false.*
+
+⇒ **A receipt whose whole subject is pins that fail on the success of their own work, failing on the success of its own work.** ⌗ *And the reason it went unseen is worth your attention more than the irony: **the job that runs receipts was `skipped` on every push between the two**, so nothing in CI evaluated it. It is fixed now, and the figure the pass MADE is pinned as that pass's own arithmetic — it fell by `66` from `2236`, which can never move — while the live check is `≤`, monotone in the direction the row allows.*
+
+### ⛭ ⓶ AND THE SWEEP SAYS THE CLASS IS RARE, WHICH IS WORTH KNOWING EITHER WAY
+
+*An `ast` taint analysis over the **`284`** receipts this seat owned at the pinned commit — which names carry a value traced to a shared registry or a directory enumeration, and which equality sites compare an integer literal against a count of one — flags **`25` sites in `9` receipts**.*
+
+***Reading all twenty-five, only `3` are genuinely exposed.*** *The other twenty-two partition with a computed ground each:*
+
+| class | n | why it is not the defect |
+|---|---|---|
+| **FROZEN** | 4 | the counted set is read at a PINNED COMMIT, so its size cannot move |
+| **SELF** | 14 | the counted set is one the receipt itself writes, so no other seat can reach it |
+| **ROW-SCOPED** | 4 | `$=1$` on the rows matching ONE named row, where the equality is the point — a duplicate must fail, which is `check_row_matchers`' own lesson |
+| ⛔ **EXPOSED** | 3 | a live count over a set whose membership another seat controls |
+
+⇒ **So the detector's raw flag is not the defect, and a sweep that reported `25` would be crying wolf twenty-two times. The PARTITION is the instrument.** ⌗ *Two of the three exposed sat in `r7198` — the one receipt whose own subject this is. **Rare is not harmless, and where it landed is the point.***
+
+### ✔ ⓷ THE THREE, AND WHAT WAS DONE WITH EACH
+
+  - *`r7198`'s backlog gate* — **repaired**, monotone, as above.
+  - *`r7198`'s `zero unadjudicated keys on the two cleared receipts`* — **repaired**: that was a property of two FILES any seat may add a pin to, *and you have since edited one of them*. The claim now sits on **this pass's own sixty-six stamped rows**, where it belongs; what the two files carry today is reported beside it.
+  - *`S1`'s `len(PAPERS) == 18`* — **repaired**: that asserted **the size of the corpus**, and its label's `the other seventeen` was going stale with it. Replaced by the content the check needed — class (ii) is three, in one paper, and zero in EVERY other paper swept.
+  - ⌗ *And the third flag on `r7198`, `len(TARGETS) == 2`, is **read and left**, with its ground stated: `TARGETS` derives from the rows carrying that pass's STAMP, and a stamp is frozen once written, so the set cannot grow. **Repairing it anyway would be treating the detector's flag as the finding.***
+
+### ⚠ ⓸ AND ONE RED ON THIS TREE IS NOT THIS CLASS — SAID RATHER THAN QUIETLY FIXED
+
+*`P15_the_free_streaming_knob...` fails in this container on a missing instrument module.* ⇒ **That is the container lacking what the receipt is registered against, not a defect, and it is neither repaired nor chased.** *A receipt that imports an instrument is entitled to require it; **deleting the import to get a green would be the real defect**, and I am naming the temptation rather than acting on it.*
+
+### ⌗ THE DETECTOR'S OWN TWO LIMITS, NAMED NOW RATHER THAN FOUND LATER
+
+  - *It cannot see a pinned read whose commit is an f-string variable, so the FROZEN class is computed in a second pass over the assignments that bind such a name.*
+  - *It over-reports `$=1$`: a row-scoped match is flagged like an exposed count, and only reading the site separates them.*
+  - ⇒ ***It narrows `284` receipts to `9`. It does not adjudicate, and it is not offered as a gate.*** ⌗ *If you want it registered as one, the shape would be the partition rather than the flag — and that is your call, not mine.*
+
+### ⚠ WHAT IS NOT CLAIMED
+
+*Not that this seat's other receipts are clean — only that this detector, with its two named limits, finds no further exposed site among the `284`.* *Not that the class is unimportant because it is rare: it was rare and it still took down the receipt that was about it.* *Nothing outside this seat's own files is touched — no other seat's receipt is read for repair, no paper is edited, no parameter fitted, no registry row stamped beyond this receipt's own nine keys, which are adjudicated.*
