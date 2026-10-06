@@ -9956,3 +9956,49 @@ _240:    "The branch point sits two thirds of the lap in from it ($240^\circ$, w
 ***`corpus/check_quote_pins.py` passes on this tree (`rc=0`) while both receipts are red.*** *So the quote-pin gate does not cover a receipt's own `_PIN = "..."` strings — only the baselined ones. **That is the `L560_pins_into_moving_prose` class arriving through the one route the gate built for it does not watch**, which is why `r7185`'s rewrite could land green on the fast job and leave the suite red on main for three revisions.*
 
 ⌈ *Flagged, not acted on — a gate is a shared instrument and widening `check_quote_pins` to every receipt's own pin strings is a decision with a cost I have not measured. **But it is the same shape as `L270`'s "a translation table validated only against what it was asked to render", and it is now the second time that shape has cost a round.*** *I will build it if you route it.*
+
+## ⚑⚑ `r7189+cc66.149` — **THE CAPTION HAS NO DEFECT, AND THE ANSWER TO YOUR OPEN QUESTION IS: THE PERIOD, NOT THE AMPLITUDE. THE RESIDUAL DOES NOT SIT AT `ℓ_A` — IT SITS AT `312.0`, EXCLUDING `298` AT `Δχ² = 15.0`. AND YOUR VISIBILITY-WIDTH CANDIDATE PREDICTS AN `ℓ`-DEPENDENCE THE RATIO DOES NOT HAVE**
+
+*Receipt: `P15_CR_cosmology/P15_the_residual_does_not_sit_at_ell_A_it_sits_four_per_cent_off_and_the_visibility_width_candidate_predicts_an_ell_dependence_the_ratio_does_not_have.py`. **11 checks, `rc=0`, ~2 s.** Arithmetic on the residual this sector already banked at `cc66.145` — no spectrum reloaded, nothing fitted to data, no grid. **Nothing was ordered and nothing beyond the two things you asked was done.***
+
+### ✔ FIRST, THE CAPTION: NO DEFECT. ALL OF IT.
+
+*You said name any number that reads wrong against my run. **None does.*** *`1.13`/`3.00`/`2.66` and `0.99`/`1.58` over `179` bins agree to the digits printed; so do the fold's `1.37±0.15` at `9.1σ`, `0.81±0.12` at `6.9σ`, and the control's `0.20±0.11`. And the four layout claims hold against the generator: `Above` is `gs[0,:]`, `Below left` is `gs[1,0]`, `Below right` is `gs[1,1]`, and the refit minima really are the dashed curves. `fig:acoustic-nofit` does sit immediately after `fig:acoustic`.*
+
+⌈ ***One near-miss I am recording as a control rather than a finding, because it nearly became a false defect report.*** *`$0.81/0.12 = 6.75$`, not `$6.9$`. I had the discrepancy on screen before noticing that the significance is computed from the unrounded `$0.8128/0.1180 = 6.888$`. **A check built on a printed number's own ROUNDED inputs reports a defect where there is none** — the mirror image of this round's other lesson, and now a MUST-COME-BACK-WRONG check in the receipt so it cannot be re-found as a defect later.*
+
+### ⛭⛭⛭ AND THE ANSWER TO `say if you see a sharper one`: YES, AND IT IS ONE LAYER UNDER WHERE YOU POINTED
+
+***The figure's receipt fits the harmonic AT `ℓ_A` by construction. Nobody had asked whether `ℓ_A` is where the residual actually sits. It is not.*** *Fitted as a free parameter over `240 ≤ p < 380`:*
+
+| | best period | `1σ` | `Δχ²` at `ℓ_A = 298` | offset |
+|---|---|---|---|---|
+| **arm, nothing fitted** | **`312.00`** | `[308.5, 315.2]` | **`14.98`** | **`+4.70 %`** |
+| arm, refitted | `307.25` | `[302.2, 312.2]` | `3.38` | `+3.10 %` |
+| control, nothing fitted | `347.25` | `[336.0, 360.0]` | `8.62` | `+16.5 %` |
+
+⇒ ***Why this is the sharper place and not just another number:*** *the amplitude of a modulation at a **fixed** period has no obvious parameter address — which is exactly why the sector's `1.57` has resisted one. **A PERIOD offset is a statement about `r_s/D_M`, and that does have one.** So this is the first candidate address I have seen that is not already measured shut. ⌗ And the refit's behaviour is the same pattern the amplitude shows, in the one quantity the figure does not report: four parameters pull the period back toward `ℓ_A` without reaching it.*
+
+### ⛔ AND THIS IS A REPLY TO YOUR CANDIDATE, NOT A CHANGE OF SUBJECT
+
+*A `+14.3` per cent wider visibility is Silk damping. **It acts monotonically and strongly at high `ℓ` and barely at all at low — so it predicts an arm-to-control ratio that CLIMBS with `ℓ`.** Measured:*
+
+| band | arm amp | control amp | **arm/control** |
+|---|---|---|---|
+| `100–700` | `0.7267` (`3.20σ`) | `0.2029` (`1.17σ`) | **`3.58`** |
+| `700–1300` | `1.4848` (`6.47σ`) | `0.4068` (`2.22σ`) | **`3.65`** |
+| `1300–1900` | `2.3790` (`8.11σ`) | `0.7173` (`3.24σ`) | **`3.32`** |
+
+⌈ ***The absolute growth is real — `3.27×` across the range — and it is NOT the arm's: the control grows `3.53×` over the same bands.*** *So the growth is in the whitening, and **an amplitude read without its control would have been read as an `ℓ`-dependence.** The ratio is flat to `9.5` per cent of its mean, against the `230` per cent the absolute amplitude moves.*
+
+⇒ ***So the candidate predicts an `ℓ`-dependence the residual does not have.*** *That does not kill it — the width also moves `ℓ_A` itself, which is precisely the period question above — but it moves it from **"the next place to look"** to **"the place that has to explain a flat ratio."** If the width is the cause, it has to act through the period and not through the damping envelope.*
+
+### ⚠ AND I AM NOT CLAIMING THE OFFSET AS THE ARM'S, FOR A REASON THAT IS IN THE RECEIPT
+
+***The control prefers a longer period too — `347`, at `Δχ² = 8.62`. So a preference for a period longer than `ℓ_A` is NOT by itself the arm's.*** *What IS the arm's is the **determination**: its interval is `3.6×` tighter, because its amplitude is `6.8×` larger. The arm's period is measured where the control's is barely constrained — **which is a reason to make the measurement, not a substitute for having made it.***
+
+⇒ ***The measurement that would settle it, named and not run: the arm's preferred period against the control's as a null, with the period free in both and the difference as the statistic.*** *Cheap — it is the same banked residual. **I have not run it because nothing was ordered and because it is the kind of thing that should be a decision and not a seat's momentum.** Route it and it lands next cycle.*
+
+⌗ *Nor does any of this correct anything in print: `ℓ_A = 298` is the arm's own acoustic scale and the figure is right to fold at it. **What is new is that the residual's own period is a separable question with a different answer**, and the figure's receipt could not have found it because folding at `ℓ_A` is what it does.*
+
+⌗ *And your `r7187` correction and the `rem:phase-open` reframing are both taken — `prop:transmit` reading `the modes are not on that family` rather than `the family is a slicing's artefact` is the right statement and is better than what I wrote. I have nothing to add to it.*

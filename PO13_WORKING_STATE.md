@@ -9037,3 +9037,61 @@ the static region is the bounded one, **inside**. *So the index `$-i\omega/\kapp
 inside observer's; the bead arrives from outside, where nothing can hold `$r$` fixed, and crosses
 inward at speed `$2$`.* ⇒ **`r7187` does not weaken the verdict — it names whose branch the thermal
 one is.**
+
+---
+
+## `r7189+cc66.149` — **THE RESIDUAL'S OWN PERIOD, AND THE `ℓ`-DEPENDENCE THE WIDTH CANDIDATE NEEDS**
+
+*Receipt: `P15_CR_cosmology/P15_the_residual_does_not_sit_at_ell_A_it_sits_four_per_cent_off_and_the_visibility_width_candidate_predicts_an_ell_dependence_the_ratio_does_not_have.py`.
+11 checks, `rc=0`, ~2 s. All arithmetic on `r7183+cc66.145`'s banked whitened residual; no spectrum reloaded, no grid, no fit to data.*
+
+### ⓵ THE CAPTION OF `fig:acoustic-nofit`, CHECKED
+
+| quantity | caption | banked |
+|---|---|---|
+| control per bin | `1.13` | `1.1286` |
+| arm per bin | `3.00` | `3.0021` |
+| ratio | `2.66` | `2.6600` |
+| refitted pair | `0.99` / `1.58` | `0.9937` / `1.5808` |
+| bins | `179` | `179` |
+| arm fold | `1.37 ± 0.15`, `9.1σ` | `1.3729 ± 0.1512`, `9.08` |
+| refit fold | `0.81 ± 0.12`, `6.9σ` | `0.8128 ± 0.1180`, `6.89` |
+| control fold | `0.20 ± 0.11` | `0.2028 ± 0.1126` |
+
+⇒ **no defect.** ⌗ *Control recorded: `$0.81/0.12=6.75$` against the unrounded `$0.8128/0.1180=6.888$`
+— a check on a printed number's own rounded inputs reports a defect where there is none.*
+
+### ⓶ THE MODULATION BY `ℓ` SUB-BAND, AT `ℓ_A`
+
+| band | n | arm amp | arm σ | control amp | control σ | **arm/control** |
+|---|---|---|---|---|---|---|
+| `100–700` | `67` | `0.7267` | `3.20` | `0.2029` | `1.17` | **`3.58`** |
+| `700–1300` | `66` | `1.4848` | `6.47` | `0.4068` | `2.22` | **`3.65`** |
+| `1300–1900` | `46` | `2.3790` | `8.11` | `0.7173` | `3.24` | **`3.32`** |
+
+⇒ arm grows `3.27×`, **control grows `3.53×`** ⇒ the growth is the whitening's. Ratio flat to `9.5 %`
+of its mean against the `230 %` the absolute amplitude moves. ⛔ **Silk damping from a `+14.3 %`
+wider visibility acts at high `ℓ` and would make that ratio climb. It does not.**
+
+### ⓷ THE PERIOD, FITTED FREE OVER `240 ≤ p < 380` AT `0.25`
+
+| | best | `1σ` | `Δχ²` at `ℓ_A` | best`/ℓ_A` | interval width |
+|---|---|---|---|---|---|
+| arm, nothing fitted | **`312.00`** | `[308.5, 315.2]` | **`14.98`** | `1.0470` | `6.8` |
+| arm, refitted | `307.25` | `[302.2, 312.2]` | `3.38` | `1.0310` | `10.0` |
+| control, nothing fitted | `347.25` | `[336.0, 360.0]` | `8.62` | `1.1653` | `24.0` |
+
+*Errors rescaled so the best fit has `χ²/dof = 1` — conservative: it widens the interval by exactly
+the factor by which the arm is rejected.*
+
+⇒ **`ℓ_A = 298` is excluded for the unfitted arm at `Δχ² = 15.0`, a `+4.70 %` offset.** ⚠ **But the
+control prefers a longer period too, so the DIRECTION is not the arm's.** What is the arm's is the
+DETERMINATION: `3.6×` tighter, because its amplitude is `6.8×` larger.
+
+### ⇒ WHERE THIS LEAVES THE SECTOR
+
+**The sharper place is the period, not the amplitude.** *The amplitude of a modulation at a fixed
+period has no obvious parameter address; a period offset is `r_s/D_M`, which has one — the first
+candidate address not already measured shut.* ⌗ **Named, not run:** the arm's preferred period
+against the control's as a null, period free in both, the difference as the statistic. *Nothing was
+ordered.*
