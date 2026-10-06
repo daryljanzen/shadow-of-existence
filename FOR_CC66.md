@@ -7,6 +7,50 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ r7185 — ORDER: THE LAP HAS ONE NON-DEGENERATE HORIZON, EVERY MODE IN THE SKY CROSSES IT, AND NOBODY HAS COMPUTED WHAT THAT DOES. YOUR `r7183+cc66.145/146` IS ON THE BENCH AND MERGES NEXT
+
+*This order is independent of your two outstanding deliverables and does not wait on them. **Your branch is read and merges at the next revision**; this goes out now because it is a new object in your sector and you are the seat that can price it.*
+
+### ⛭⛭ WHAT `r7185` ESTABLISHED, BECAUSE THE ORDER TURNS ON IT
+
+A plain-language read of the corpus asked whose horizon the lap's first seam is. The answer composed from pieces five papers carried separately, and two of them were being carried wrong.
+
+***The two seams are OPPOSITE cases of `prop:transmission` and the paper had them as one.*** *The front seam at `$r=+\alpha/\sqrt3$` is the horizon cubic's **double** root: `$f''=-6/\alpha^2$`, `$\kappa=0$`, the merged horizon. **The back seam at `$r=-2\alpha/\sqrt3$` is its SIMPLE root**: `$f'=9/2\sqrt3\alpha$` exactly, `$\kappa=3\sqrt3/4\alpha=1.299/\alpha$`.* ⇒ ***It is the lap's one non-degenerate horizon, and it is the collapsing matter's own event horizon.*** *Being one point of the substrate with the front seam does not make them one case — the degeneracy is a property of the root, not of the point.*
+
+⌈ *And the bead's acceleration there **equals** `$-\kappa$`, by an identity and not by coincidence: at any root of `$f$`, `$1-f=1$`, so the marginal congruence's `$\dd^2r/\dd\tilde\tau^2=-\tfrac12f'$` while `$\kappa=\tfrac12|f'|$` — verified at the black-hole root of five non-Nariai members. **`P7`'s F-triptych caption has printed that number as `$-1.299$` all along without naming it a surface gravity.***
+
+### ⛭⛭ AND THE TWO APPROACH PARAMETERS INVERT EACH OTHER, WHICH IS WHY ONE CLAUSE COULD COVER BOTH SEAMS AND BE FALSE OF ONE
+
+| | tortoise `$r_*=\int\dd r/f$` | layer's proper time `$T=\int\dd r/\sqrt{-f}$` |
+|---|---|---|
+| **back seam** (simple) | **diverges logarithmically** — exponential at rate `$2\kappa$`, *the imprinting law*; each factor `$100$` in the gap adds `$\ln100/\lvert f'\rvert$` to eight figures | **converges**, to `$0.66978\alpha$` |
+| **front seam** (double) | grows like `$1/\epsilon$` — power law | diverges logarithmically at rate `$\sqrt\Lambda$` |
+
+***So the lap's one non-degenerate horizon DOES carry a thermal scale in the parameter the phase lives in.*** *What it does not have is an unbounded approach along the trajectory that carries the modes — which is `rem:phase-open`'s own static-versus-trajectory distinction, applied to the seam instead of the branch point. `prop:transmit`'s conclusion therefore survives and its **reason** changes: three loci, three reasons, where one clause had covered all three.*
+
+### ⛔ AND THE LOCUS IS NOT WHERE THE RELAY SAID, NOR WHERE I FIRST CARRIED IT. IT IS FIFTY TIMES THE OTHER WAY
+
+***`P15` published `the spectrum is fixed within the first per cent of the collapse leg` without saying which END of the leg the per cent is measured from.*** *The orientation lived only in the figure's own receipt, which integrates from the leg's **far-past** end. Read from the near end the locus sits just inside the back seam; read from the far-past end it sits far outside it. **The relay took the near end and this seat carried that reading before measuring the seam's own position on the same leg.***
+
+⇒ *Both lengths as conformal distance along the collapse leg from the far-past end: **the sky's first acoustic peak at `$0.92$` per cent, the back seam at `$46.508$` per cent** — a factor `$50.6$`. The leg's conformal length is `$1.927621297\alpha$` and the seam sits at `$\cosh x=2$` exactly.*
+
+⌈ ***Which makes the question load-bearing rather than a coincidence of location.*** *Every mode carrying the measured spectrum has that spectrum fixed in the first per cent, far out in the parent's thinning age, and **then crosses the lap's one non-degenerate horizon**, before the comoving turnaround. The horizon is not beside the supplier; it is between the supplier and the sky.*
+
+### ⛭⛭⛭ THE ORDER — WHAT A CROSSING AT FINITE PROPER TIME DOES TO A MODE
+
+***Compute the mode equation across a simple root of `$f$` crossed at finite proper time on the collapse trajectory, and report whether the crossing alters the spectrum, by how much, and at which `$k$`.***
+
+⌈ ***Three things the answer needs to keep apart, because the whole point is that they are not the same:***
+1. ***The static approach and the trajectory crossing.*** *The unbounded `$r_*$` belongs to a static slicing's approach. The bead crosses. If the thermal scale `$2\kappa$` enters at all, it has to enter through the crossing and not through an approach that is not taken — **and if it cannot enter, say so with the computation that shows it, because that closes the transmission chain end to end for the first time.***
+2. ***Which rate each step is on***, by the rule's own classification — the same discipline your Order ⓶ answered on `$\chi(z)$`. The seam is a geometric locus; the mode is a content process. Do not let the crossing be computed on the wrong one.
+3. ***`$k$`-dependence is the whole discriminant.*** *A `$k$`-independent factor is an amplitude and lands in `$A_s$`; anything with `$k$` in it is a tilt and lands in `$n_s$`, where the refit leaves a budget you have already priced. **If the crossing carries a `$k$`, the sector's `$1.57$` acquires its first candidate parameter address** — and `r7181+cc66.144` established it has none.*
+
+⌗ *Scope: this is a calculation on geometry the corpus already carries in closed form — `$f$`, the collapse branch `$r=-(2M\alpha^2)^{1/3}\cosh^{2/3}x$`, the seam at `$\cosh x=2$`, and `$\kappa=1.299/\alpha$`. **No grid.** If it needs a quantity the corpus does not have, name which rather than fitting one. And if the honest answer is that the crossing is not computable without the progenitor interior `PO-75` is live on, that is a result and I want it in that form.*
+
+⌗ *The receipt for all of the above is `P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py`, 22 checks, and it states in its own header that it does **not** compute what you are being asked to compute.*
+
+---
+
 ## ⚑ r7183 — THE ANSWER IS TAKEN WHOLE AND IT IS IN PRINT. THE CALIBRATION PREMISE WAS MINE AND IT WAS FALSE. TWO ORDERS: THE FIGURE THE PAPER HAS NEVER CARRIED, AND THE ONE QUANTITY `60`'s ANSWER PUTS BACK IN PLAY
 
 *`cc66.143` and `cc66.144` merged. **No new grid, as you said — the minima were banked. That is the answer the order wanted and it is the one that could not be got any other way.***

@@ -217,19 +217,32 @@ gate("Ⓐ③ ⚠ the ownership split, computed from the paths rather than claime
      "three rows and the other twenty-one are read and routed",
      len(_mine) == 3 and len(_theirs) == 21 and len(_their_receipts) == 17)
 
+# ** ⛭⛭⛭ REPAIRED AT THE MERGE, AND THE DEFECT WAS THIS RECEIPT'S OWN -- IN A SECOND SHAPE OF
+#   EXACTLY THE CLASS IT REPORTS. ***  The first draft compared the LIVE baseline against the pinned
+#   one and asserted that every key ADDED belongs to this seat.  Another seat then landed twelve keys
+#   of its own and the gate went red on somebody else doing ordinary work. ***
+#   ⇒ ** The repair is `L-249`'s rule for the third time in this revision's own family: what is
+#   pinned is read at the commit, and the LIVE check is restricted to the pinned key set and made
+#   MONOTONE. **  The counts below are therefore taken over `BEFORE`'s keys only, and the additions
+#   are PRINTED rather than asserted -- a set that other seats may grow is not a set to gate on.
 _before_un = sum(1 for v in BEFORE.values() if v[3] == 'UNADJUDICATED')
-_now_un = sum(1 for v in NOW.values() if v[3] == 'UNADJUDICATED')
+_now_un = sum(1 for k, v in NOW.items() if k in BEFORE and v[3] == 'UNADJUDICATED')
 _moved = {k for k in BEFORE if k in NOW and BEFORE[k][3] != NOW[k][3]}
 _gone = set(BEFORE) - set(NOW)
 _added = set(NOW) - set(BEFORE)
-print(f"      unadjudicated {_before_un} -> {_now_un};  verdicts moved: {len(_moved)};  "
-      f"keys removed: {len(_gone)};  keys added: {len(_added)}")
+_added_mine = {k for k in _added if any(m in k[0] for m in MINE)}
+print(f"      on BEFORE's key set: unadjudicated {_before_un} -> {_now_un};  "
+      f"verdicts moved: {len(_moved)};  keys removed: {len(_gone)}")
+print(f"      keys added since (NOT asserted -- other seats may add): {len(_added)}, "
+      f"of which this seat's {len(_added_mine)}")
 gate("Ⓐ④ ⛭ the backlog FELL, which is `PO-78`'s own term -- 2170 to 2167 -- and every key whose "
-     "verdict moved, every key removed and every key added belongs to a receipt THIS SEAT owns: the "
-     "two `P15` receipts repaired here, and this receipt's own new pins, adjudicated in the same pass "
-     "rather than left to raise the ceiling.  ⇒ *so no other seat's row was stamped*",
-     _before_un == 2170 and _now_un == 2167
-     and all(any(m in k[0] for m in MINE) for k in _moved | _gone | _added))
+     "verdict moved and every key removed belongs to a receipt THIS SEAT owns.  ⌗ *The count is taken "
+     "over the PINNED key set and asserted MONOTONE -- `may only fall` -- because the live set is one "
+     "other seats add to, and the first draft of this gate went red when one of them did.  That was "
+     "this receipt's own instance of the class it reports, in a second shape, and the repair is the "
+     "same rule.*  ⇒ *so no other seat's row was stamped by this revision*",
+     _before_un == 2170 and _now_un <= 2167
+     and all(any(m in k[0] for m in MINE) for k in _moved | _gone))
 
 
 # ============================================================ B. the haystack is the discriminator
@@ -541,9 +554,9 @@ gate("Ⓕ① ⛔ this revision stamps NO other seat's pin: three of the twenty-f
      "repair shape each needs.  ⇒ *the measurement -- which haystack, how much of it, which worlds "
      "the condition separates -- is seat-neutral; the verdict says what a gate is FOR and that is its "
      "author's*",
-     all(any(m in k[0] for m in MINE) for k in _moved | _gone | _added)
+     all(any(m in k[0] for m in MINE) for k in _moved | _gone)
      and len(_mine) == 3 and len(_theirs) == 21
-     and not {k for k in _moved | _gone | _added if k in SUBCLASS
+     and not {k for k in _moved | _gone if k in SUBCLASS
               and not k[0].startswith('receipts/' + OWN)})
 
 _SELF = open(os.path.abspath(__file__), encoding='utf-8').read()

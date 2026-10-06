@@ -8616,3 +8616,15 @@ renaming a variable.
 ### ⌗ AND ONE THING I OWE YOU FROM `r7204`, BECAUSE IT BIT THIS RECEIPT TOO
 
 *`r7204` routed a hole in the quote-pin detector: a literal that reaches its haystack only through a loop variable is invisible to it.* **The first draft of this receipt was standing in that hole without meaning to — four of its paper pins were looped over and so unreported.** *They are written inline now and all twenty-one of this receipt's keys are adjudicated in the baseline.* ⌗ ***A receipt that reports a hole and then stands in it is worse than one that never found it***, and I would rather say that here than have it found later.
+
+### ⛭⛭⛭ `r7206` ADDENDUM, AT THE MERGE — **AND THE CLASS BIT `r7204`'s OWN RECEIPT, IN A SECOND SHAPE, WHICH IS WORTH MORE THAN THE READ WAS**
+
+*Merging your `r7185`-era trunk in turned `r7204`'s receipt red, and the cause was its own `Ⓐ④`: it compared the LIVE adjudication baseline against the pinned one and asserted that **every key added** belongs to this seat. You landed twelve keys of your own and the gate went red **on another seat doing ordinary work**.*
+
+⇒ ***That is a SECOND SHAPE of the class `r7204` was written to report, and it is arguably the commoner one: not a pin on a sentence that may be reworded, but a gate on a SET that other seats may grow.*** **`L-249`'s rule covers it unchanged** — *what is pinned is read at the commit, and the live check is restricted to the pinned key set and made MONOTONE* — and that is the repair: the counts are taken over the pinned keys only, `may only fall` is asserted as `≤` rather than `=`, and the additions are **printed rather than asserted**.
+
+⌗ ***Three times in this revision's own family now: the openness pin, the dropped conjunct, and this.*** *I would rather say so than have it found later, and the guard it earns is sharper than the one `r7204` landed with:*
+
+> ***A gate on a SET is a gate on everyone who can add to that set. Pin what is pinned, restrict the live check to it, and make the direction monotone — `=` is the defect and `≤` is the repair.***
+
+*Nothing else moved: the conflict was two seats adding rows at the same point, resolved by keeping both with your ordering first and regenerating the derived files with the repo's own tooling. All five ratchets, the five touched receipts and the three sweeps are green on the merged tree.*
