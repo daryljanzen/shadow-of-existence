@@ -336,6 +336,50 @@ check("Ⓗ②  and that is a THIRD measure of the same factor of fifty: 48.8 in 
       40 < abs(R_SKY) / abs(R_SEAM) < 60 and 40 < PCT_SEAM / PCT_SKY < 60)
 
 
+head("I -- AND WHAT A `LEG` IS BOUNDED BY, BECAUSE THE LAP CARRIES TWO DIFFERENT RATIOS OF TWO")
+# The closure of `sec:scope` is on the WHOLE HORNS.  A second exact 2 lives on the seam-bounded
+# stretches and on a different clock.  Reading either pairing with the other's stretches is the
+# error this group exists to make impossible.
+_Lc = _leg                                                    # collapse horn, r = -inf -> turnaround
+_Ll = _c0 * mp.quad(lambda u: mp.sin(u) ** (-mp.mpf(2) / 3), [0, mp.pi / 2])
+_Le = _c0 * mp.quad(lambda u: mp.sinh(u) ** (-mp.mpf(2) / 3), [0, mp.inf])
+print("  (i) CONFORMAL, on the WHOLE HORNS -- the `sec:scope` closure:")
+print(f"        collapse  (r=-inf -> turnaround) = {float(_Lc):.9f} alpha")
+print(f"        lift                             = {float(_Ll):.9f} alpha   / collapse = "
+      f"{float(_Ll/_Lc):.9f}")
+print(f"        expansion (r=0 -> +inf)          = {float(_Le):.9f} alpha   / collapse = "
+      f"{float(_Le/_Lc):.9f}")
+check("Ⓘ①  the 1 : sqrt3 : 2 closure is on the WHOLE HORNS -- collapse from the far past to the "
+      "turnaround, the lift, and expansion from the branch point out to infinity",
+      abs(float(_Ll / _Lc) - math.sqrt(3)) < 1e-9 and abs(float(_Le / _Lc) - 2.0) < 1e-9)
+_d_front = _c0 * mp.quad(lambda u: mp.sinh(u) ** (-mp.mpf(2) / 3), [0, mp.asinh(1 / mp.sqrt(2))])
+_d_bs = _Lc - _d_seam
+print("  (ii) and the SEAM-BOUNDED sub-stretches of those same horns are NOT the closure's legs:")
+print(f"        back seam -> turnaround     = {float(_d_bs):.9f} alpha   (the horn is "
+      f"{float(_Lc):.6f})")
+print(f"        branch point -> front seam  = {float(_d_front):.9f} alpha   (the horn is "
+      f"{float(_Le):.6f})")
+check("Ⓘ②  ** the seam-bounded stretches are 1.0311 and 2.3759, neither of which is its horn's "
+      "length, and their ratio is not 2 ** -- so a `leg` read as seam-to-turnaround or "
+      "branch-point-to-seam does not satisfy the closure and the two readings cannot be merged",
+      abs(float(_d_bs) - 1.031122788) < 1e-8 and abs(float(_d_front) - 2.375870551) < 1e-8
+      and abs(float(_d_front / _d_bs) - 2.0) > 0.1)
+_a, _b = mp.acosh(2), mp.asinh(1 / mp.sqrt(2))
+print("  (iii) THE OTHER 2, which is exact and is on COSMIC TIME and the seam-bounded stretches:")
+print(f"        back seam -> turnaround    = (2a/3) arccosh 2      = {float(2*_a/3):.9f} alpha")
+print(f"        branch point -> front seam = (2a/3) arcsinh(1/r2)  = {float(2*_b/3):.9f} alpha")
+print(f"        arccosh 2 - 2 arcsinh(1/sqrt2) = {float(_a - 2*_b):.3e}   (both = ln(2+sqrt3))")
+check("Ⓘ③  ** and that ratio is EXACTLY 2, by the identity arccosh 2 = 2 arcsinh(1/sqrt2) = "
+      "ln(2+sqrt3), to 30 digits ** -- a second exact two, on a different clock and different "
+      "stretches from the closure's",
+      abs(_a - 2 * _b) < mp.mpf('1e-30') and abs(_a - mp.log(2 + mp.sqrt(3))) < mp.mpf('1e-30'))
+check("Ⓘ④  ⇒ so the lap carries TWO exact ratios of two and they pair different objects: 1:sqrt3:2 "
+      "in conformal length on the whole horns, and 2:1 in cosmic time on the seam-bounded "
+      "stretches.  ** Reading either with the other's stretches is the error, and it is the one a "
+      "careful reader reaches for **",
+      abs(float(_Le / _Lc) - 2.0) < 1e-9 and abs(float(_a / _b) - 2.0) < 1e-12
+      and abs(float(_d_front / _d_bs) - 2.0) > 0.1)
+
 print()
 if fails:
     print(f"  ⛔ {len(fails)} CHECK(S) FAILED:")
