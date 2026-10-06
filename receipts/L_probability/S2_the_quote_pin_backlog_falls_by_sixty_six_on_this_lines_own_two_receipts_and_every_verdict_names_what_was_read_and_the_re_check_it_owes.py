@@ -109,16 +109,37 @@ gate("Ⓐ①  sixty-six rows carry this revision's stamp and EVERY ONE of them i
      " was moved to a verdict that exempts it from the ratchet, and none is left half-written",
      len(MINE) == 66 and {r[5] for r in MINE} == {'DELIBERATE'})
 
-gate("Ⓐ②  and the backlog now stands at `2170` against the baseline's recorded ceiling of `2287` --"
-     " so it fell by `66` from `2236` and the ceiling is untouched, which is `PO-78`'s own condition"
-     " on this class",
-     len(UNADJ) == 2170 and len(UNADJ) + len(MINE) == 2236 and len(UNADJ) < 2287)
+# ** ⛭⛭⛭ REPAIRED r7208, AND THE DEFECT WAS THIS RECEIPT'S OWN -- ON ITS OWN SUBJECT. ***
+#   This gate asserted `len(UNADJ) == 2170`, an EXACT count on a bucket `PO-78` says MAY ONLY FALL.
+#   `r7204` then read the `OPEN` subclass and the backlog fell to `2167`, so THIS RECEIPT WENT RED
+#   BECAUSE THE WORK IT REPORTS WAS CONTINUED. ***  A receipt about pins that fail on the success of
+#   their own work, failing on the success of its own work.
+#   ⇒ ** The repair is the rule its own subject prescribes: the figure this revision MADE is pinned
+#   as history -- it fell by `66` from `2236`, which is arithmetic about this pass and can never move
+#   -- and the LIVE check is MONOTONE, `<=`, in the direction `PO-78` allows. **
+_FELL_BY, _FROM = 66, 2236
+gate("Ⓐ②  and the backlog FELL BY `66` FROM `2236` at this revision, which is this pass's own"
+     " arithmetic and cannot move; it stands at or below that today and under the baseline's recorded"
+     " ceiling of `2287` -- `PO-78`'s own condition on this class.  ⌗ *The live check is monotone"
+     " because the bucket may only fall, and an `==` here went red when `r7204` fell it further*",
+     len(MINE) == _FELL_BY and _FROM - _FELL_BY == 2170
+     and len(UNADJ) <= 2170 and len(UNADJ) < 2287)
 
+# ** ⛭ REPAIRED r7208: the third conjunct asserted that those two receipts carry ZERO unadjudicated
+#   keys TODAY -- a property of two files any seat may add a pin to, and `66` has since edited one of
+#   them.  ⇒ The claim that belongs to this pass is about THIS PASS'S OWN ROWS: none of the sixty-six
+#   it stamped is unadjudicated.  That cannot move except by someone un-adjudicating them, which is a
+#   regression worth catching.  The live count on the two receipts is REPORTED beside it. **
+_live_on_targets = sum(1 for r in UNADJ if r[0] in set(TARGETS))
+print(f"    unadjudicated keys on the two cleared receipts today: {_live_on_targets} "
+      f"(reported -- any seat may add a pin to them)")
 gate("Ⓐ③  the pass is bounded by AUTHORSHIP: exactly two receipts were cleared, both of them this"
-     " line's own, and between them they now carry ZERO unadjudicated keys",
+     " line's own, and NONE OF THE SIXTY-SIX ROWS THIS PASS STAMPED is unadjudicated.  ⌗ *That is a"
+     " fact about this pass's own rows; what those two FILES carry today is reported, because any seat"
+     " may add a pin to them*",
      len(TARGETS) == 2
      and all(t.startswith('receipts/P15_CR_cosmology/') for t in TARGETS)
-     and sum(1 for r in UNADJ if r[0] in set(TARGETS)) == 0)
+     and not [r for r in MINE if r[5] == 'UNADJUDICATED'])
 
 # =====================================================================================
 head("B -- AND NONE OF THE SIXTY-SIX IS AN EXEMPTION, WHICH IS WHAT THE GATES ARE ABOUT")
@@ -186,9 +207,10 @@ gate("Ⓒ④  and the RULE rows carry the reading that fits them: each note says
 # =====================================================================================
 head("D -- AND WHAT IS LEFT IS NOT A QUEUE THIS SEAT CAN WORK DOWN")
 
-gate("Ⓓ①  ⚠ `2170` keys remain across more than three hundred receipts, and the two cleared here are"
-     " two of them -- so this pass is a dent and is reported as one",
-     len(UNADJ) == 2170 and len({r[0] for r in UNADJ}) > 300)
+gate("Ⓓ①  ⚠ `2170` keys remained at this revision, across more than three hundred receipts, and the"
+     " two cleared here are two of them -- so this pass is a dent and is reported as one.  ⌗ *`2170`"
+     " is this pass's own figure and the live check is monotone: what remains is at or below it*",
+     len(UNADJ) <= 2170 and len({r[0] for r in UNADJ}) > 300)
 
 gate("Ⓓ②  and almost all of what remains is another seat's: fewer than a third of the receipts"
      " carrying unadjudicated keys sit under this line's own paper directory, and this seat does not"

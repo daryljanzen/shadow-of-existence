@@ -184,11 +184,20 @@ EQ = (sp.diff(Phi(eta), eta, 2) + 3 * Hc * (1 + w) * sp.diff(Phi(eta), eta)
 dk0 = sp.simplify(sp.diff(EQ, k).subs(w, 0))
 dk3 = sp.simplify(sp.diff(EQ, k).subs(w, sp.Rational(1, 3)))
 print(f"      d/dk at `$w=0$`: {dk0}      d/dk at `$w=1/3$`: {dk3}")
+# ⛭⛭ r7214 -- `PO-78`'s UNREAD-FIGURE BACKLOG.  `EQ` above was hard-coded and the label called
+#   it "THE PAPER'S OWN", with nothing in this file reading the paper for it -- so `P15` could
+#   restate the equation and `∂_k` would still be computed on this receipt's copy of it.
+#   ⌗ The paper's own spelling is pinned here, at EXACTLY ONE site so the cover cannot hide a
+#   duplicate, and `EQ` is term-for-term that equation.
+_POTEQ = ('$\\Phi\'\'+3\\mathcal{H}(1+w)\\Phi\'+[2\\mathcal{H}\'+(1+3w)\\mathcal{H}^{2}]'
+          '\\Phi+wk^{2}\\Phi=0$')
+print(f"      the paper's own potential equation, pinned at one site: {b15.count(_POTEQ)}x")
 gate("Ⓑ① `$\\partial_k$` OF THE PAPER'S OWN POTENTIAL EQUATION IS **IDENTICALLY ZERO** AT `$w=0$` AND "
      "`$2k\\Phi/3$` AT `$w=1/3$`.  ⇒ *So the pressureless potential's transfer is flat in `$k$` with no "
      "approximation, which is WHY `$0.4835\\,\\Psi_i$` can be one number* -- ** and carrying radiation on "
      "the segment is exactly what would give that figure a `$k$` **",
-     dk0 == 0 and sp.simplify(dk3 - 2 * k * Phi(eta) / 3) == 0)
+     dk0 == 0 and sp.simplify(dk3 - 2 * k * Phi(eta) / 3) == 0
+     and b15.count(_POTEQ) == 1)
 
 RAT = sp.simplify((_M2 / r) / (r ** 2 / al ** 2))
 print(f"      pressureless term / substrate term on the vacuum curve: {RAT} = `$A^3/r^3$`: "

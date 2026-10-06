@@ -226,10 +226,22 @@ print(f"      the excess over de Sitter's 24/alpha^4 is: {excess}")
 has_rs = rs in excess.free_symbols
 late = sp.limit(excess.subs({chi: 0, al: 1}), tau, sp.oo)
 print(f"      does it contain r_s? {has_rs};   its late-time limit is {late}")
+# ⛭⛭ r7214 -- `PO-78`'s UNREAD-FIGURE BACKLOG.  This gate carried the Kretschmann scalar as a
+#   hard-coded target with `eq:proper-frame` named in the label and NO read of the paper for it, so
+#   the paper could restate the invariant and the gate would still pass on its own arithmetic.
+#   ⌗ The paper's spelling is `$48M^2/r^6+24/\alpha^4$` and this receipt's is
+#   `$24/\alpha^4+12r_s^2/r^6$` -- the SAME object in two spellings, since `$r_s=2M$` gives
+#   `$12r_s^2=48M^2$`, and that identity is asserted here rather than assumed so the two
+#   presentations cannot drift apart unnoticed.
+body15 = io.open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read()
+_KRET_SENT = 'the Kretschmann scalar is $48M^2/r^6+24/\\alpha^4$'
+_M = sp.Symbol('M', positive=True)
+_SPELLINGS_AGREE = sp.simplify((12 * (2 * _M) ** 2 - 48 * _M ** 2)) == 0
 gate(f"⓷ `eq:proper-frame`'s Kretschmann scalar is `$24/\\alpha^4+12r_s^2/r^6$`, computed from the full "
      f"four-metric and agreeing to {worst:.1e} relative (bound 1e-12) at six points in "
-     "`$(\\tau,r_s,\\alpha)$` at 40 digits",
-     worst < 1e-12)
+     "`$(\\tau,r_s,\\alpha)$` at 40 digits --- and `P15`'s OWN SENTENCE is READ here, not recalled, "
+     "with its different spelling reconciled: `$r_s=2M$` makes `$12r_s^2=48M^2$`",
+     worst < 1e-12 and _KRET_SENT in body15 and _SPELLINGS_AGREE)
 gate("⛭ AND THE EXCESS CARRIES NO `$r_s$` ON THE `$E=1$` WORLDLINE, because `$A=(r_s\\alpha^2)^{1/3}$` makes "
      "`$r^6=r_s^2\\alpha^4\\sinh^4$` and the mass cancels: the excess is "
      "`$12/\\alpha^4\\sinh^4(3\\tilde\\tau/2\\alpha)$`, so the departure from de~Sitter is set by the EPOCH "
@@ -240,7 +252,6 @@ gate("⛭ AND THE EXCESS CARRIES NO `$r_s$` ON THE `$E=1$` WORLDLINE, because `$
 head("D.  THE RELATION IS THE CONSTRUCTION'S OWN AND THE PAPER NOW STATES IT -- PINNED SO IT IS NOT "
      "RE-DERIVED AS A FINDING")
 
-body15 = io.open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read()
 for frag in ("they are \\emph{not} two coordinate presentations of a single metric",
              "reached from one another by the reassignment of the null condition",
              "two metrics carried on one ontological layering",
