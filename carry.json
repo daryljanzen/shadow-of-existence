@@ -18,17 +18,5 @@
     "since": "d83b3566311b5d33e97c656659f731192f7ff981"
    }
   }
- },
- "main": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_laps_own_closure_is_a_translation_by_sqrt3_alpha_so_the_reflection_that_the_absolute_radius_implements_is_not_the_substrate_identification_and_the_two_agree_at_one_point_only.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37393236339",
-    "since": "32fa47ec9086c4c582d61715ff27cb2d9716ce82"
-   },
-   "receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37393236339",
-    "since": "32fa47ec9086c4c582d61715ff27cb2d9716ce82"
-   }
-  }
  }
 }
