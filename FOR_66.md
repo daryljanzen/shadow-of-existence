@@ -9,8 +9,8 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #286**, draft) — nothing waits on the chat window.*
-⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282 and #283 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #290**, draft) — nothing waits on the chat window.*
+⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283 and #286 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
@@ -9711,3 +9711,181 @@ not make it the headline.***
   with the control's* — it should say the arm's pull is small *compared with its own constraint's
   width*, which is the statement that survives.
 - ⌗ *Nothing in `P15` is touched. No new grid, no `LEAFGEOM`, no `$\Delta N_{\rm eff}$`.*
+
+---
+
+## ⚑⚑ `r7183+cc66.145/146` — **BOTH ORDERS. THE NO-FIT CONFRONTATION IS `3.00` PER BIN AND ITS RESIDUAL CARRIES A `9.1σ` MODULATION AT `ℓ_A` — WHICH THE OPERATION YOU ORDERED CANCELS. AND ALL THREE RATES AGREE, BECAUSE THE COLLAPSE YOU FEARED WAS FOUND AND SPLIT AT `r7095`**
+
+*Answering `r7183` ⓵ and ⓶. Receipts: `P15_the_no_fit_confrontation_...` (12 checks) and
+`P15_all_three_steps_of_chi_...` (10 checks), both `rc=0`. Figure
+`corpus/fig_acoustic_nofit.pdf`, generator `corpus/make_fig_acoustic_nofit.py`. Tables in
+`PO13_WORKING_STATE` `r7183+cc66.145/146`. **No new physics run — every spectrum was banked.***
+
+### ⓵ THE FIGURE, AND THE NUMBER ON IT
+
+| | `$\chi^2$`/bin | |
+|---|---|---|
+| control, nothing fitted | **1.129** | |
+| **CR arm, nothing fitted** | **3.002** | **`2.660×`** |
+| control, refitted | 0.994 | |
+| CR arm, refitted | 1.581 | `1.591×` |
+
+*179 bins, `$100\le\ell\le1900$` — `fig:acoustic`'s own range, so the two figures are comparable.
+⚠ Not the refit receipt's 185-bin range; both are stated wherever they appear.*
+
+### ⓶ ⛔⛔ AND THE OPERATION YOU ORDERED IS THE ONE THAT CANCELS WHAT IT WAS ORDERED TO SHOW
+
+***A bin one period wide averages a full cycle of any modulation at that period, so its mean is that
+modulation's own mean.*** **Binning AT `$\ell_A$` is the one operation guaranteed to remove a signal
+at `$\ell_A$`.** *Measured: the arm's band means change sign twice across six bands — `+1.273` to
+`−0.808`, a slow swing, not a per-period alternation. Robust to the anchoring (edges on `100`, on
+the first peak `222`, on `220.4`, on the troughs — all give 2–3).*
+
+⇒ ***Folded by phase WITHIN the period instead, anchored on the arm's own first peak:***
+
+| one harmonic at `$\ell_A$` | amplitude | |
+|---|---|---|
+| **CR arm, nothing fitted** | **`1.3729 ± 0.1512`** | **`9.08σ`** |
+| CR arm, refitted | `0.8128 ± 0.1180` | `6.89σ` |
+| control, nothing fitted | `0.2028 ± 0.1126` | `1.80σ` |
+| control, refitted | `0.1051 ± 0.1049` | `1.00σ` |
+
+**The modulation you believed was there is there, at `9.1σ`, and it is the arm's — the control is
+consistent with none. Four free parameters halve the amplitude and leave `6.9σ`.** ⌈ *So the
+rejection is shaped at the acoustic period, the shape survives the refit, and the parameters absorb
+part of it rather than its cause.*
+
+⌗ ***Both panels are drawn.*** *The period bins because they are what you asked for and what a
+reader will look for, and because what they DO show — a slow swing — is a true and separate
+statement. The fold beside them, labelled as the one that answers.* **If you would rather the figure
+carried only the fold, say so; I have kept your operation because being shown why it fails is worth
+more than its absence.**
+
+### ⓷ ORDER ⓶ — THREE STEPS, THREE AGREEMENTS
+
+| step | the code uses | the rule assigns | |
+|---|---|---|---|
+| the conversion `$z\to\chi$` | `$\chi=\eta_0-\eta$` **identically**; grid on `Hgeom` = radiation-free | comoving separation across leaves → stacking | **AGREE** |
+| the ionisation history | `Hrec = Hleaf`, `LEAFREC=1` by default | a process running IN the content → leaf | **AGREE** |
+| the optical depth's measure | `$d\tau$` unweighted, `VISLEAF=0` | a photon-path observable → stacking | **AGREE** |
+
+***Step (1) cannot be misclassified, which is stronger than its being right: `$d\chi/d\eta = 1$`, so
+there is no conversion step with a rate in it.*** *The two clocks sit between `$r_s$` and `$\eta$`,
+not between `$\chi$` and `$\eta$` — `r6929+cc66.44` already says so in those words.* ⌗ *And step (3)
+agrees by a RULING rather than a default: `r7095` derived it and withdrew `r7092`'s `VISLEAF=1`.*
+
+### ⓸ ⛭⛭⛭ AND THE COLLAPSE YOU FEARED IS EXACTLY WHAT `LEAFGEOM` WAS
+
+*You wrote: "if the conversion is being done on the leaf rate because the ionisation history is,
+that is a classification error of exactly the kind the rule exists to prevent."* ⇒ ***That is
+`LEAFGEOM`: ONE switch over the conformal-time grid AND the ionisation history, which the rule
+assigns OPPOSITELY — so no setting satisfied both and the rule's own configuration was unreachable
+from the file.*** **Found, named and split at `r7095`**, which pulled `LEAFREC` out and defaulted it
+**ON** — the only clock switch in that file whose default has ever moved.
+
+⌗ *Measured here rather than read off the comment: the grid on `Hphys` and recombination on `Hleaf`
+in one and the same default run.* **So the question you could not see the answer to from the chat
+seat was answered two revisions before you asked it, and the answer is that it was classified
+separately because someone noticed the knob could not express the distinction.**
+
+### ⓹ ⌗ AND YOUR `+14.6` PER CENT IS CONFIRMED, NOT CORRECTED
+
+**`43.2138` against `37.7993` Mpc at the pair the paper carries → `+14.3` per cent.** *Invariant
+under `LEAFREC` to four decimals, so it survives `r7095`'s default change — the one switch that
+could have made the figure you quote pre-date the rule's own configuration.* ⌗ *What `LEAFREC` moves
+is where the visibility sits, not how wide it is.*
+
+⚠ ***What ⓶ removes is one candidate explanation for the contrast. It does not explain it.*** *The
+sector's disagreement stands exactly where `r7183` leaves it, and the receipt says so rather than
+letting an agreement read as a result.*
+
+### ⓺ ⌗ ONE TRAP OF MINE, RECORDED BECAUSE THE WARNING WAS ALREADY IN THE FILE I COPIED
+
+**The figure's first draft plotted raw `X_DATA`, which is binned `$C_\ell$` — so the peaks vanished
+under the falling plateau and the top panel showed a featureless curve.** *`make_fig_acoustic_two_arm.py`
+carries that exact warning in its own source, naming it as "the same trap the locator hit at
+`cc66.28`, here in the figure".* ⇒ **The warning was in the file I modelled this on, and I walked
+into it anyway; what caught it was rendering the figure and looking at it.** *Recorded in
+`PO13_WORKING_STATE` with the `$\mathcal{D}_\ell$` factor now applied at every plot call.*
+
+### ⇒ WHAT IS YOURS
+
+- **The figure is built and checkable** — the receipt recomputes its numbers from the spectra and
+  requires the figure's own banked `.npz` to agree, so a drift in the generator fails there.
+- ⛔ ***I have not touched `P15`.*** *The `\includegraphics` and the caption are yours. If you want a
+  caption from me, say so and I will draft one against the numbers rather than you re-reading them.*
+- ⛔ **One decision is yours**: whether the figure keeps the period-binned panel. *I kept it, for the
+  reason in ⓶ — but it shows a null by construction and you may not want a null panel in print.*
+
+## ⚑⚑⚑ `r7185+cc66.147` — **IT CANNOT ENTER, AND HERE IS THE COMPUTATION. THE SEAM IS A CHARACTERISTIC SURFACE OF THE MODE EQUATION AND ITS TWO SPEEDS THERE ARE EXACTLY `2` AND EXACTLY `0`: THE CROSSING RIDES THE SPEED-`2` FAMILY, `e^{πω/κ}` RIDES THE SPEED-`0` FAMILY. TRANSFER `= 1`, IDENTICALLY IN `ω` AND IN `ℓ`**
+
+*Receipt: `P07_CR_framework/P07_the_crossing_rides_the_characteristic_that_crosses_and_the_thermal_factor_rides_the_one_that_does_not_so_two_kappa_cannot_enter_and_the_only_k_it_could_have_carried_is_three_halves.py`.
+**22 checks, `rc=0`, ~2 s.** No grid, no fit, no banked artefact — closed form and quadrature only, as the scope said.*
+
+### ⛭⛭⛭ THE THING THAT MADE IT A CLOSED-FORM CALCULATION: THE CHART IS THE TRAJECTORY
+
+***The Painlevé–Gullstrand chart built on this `$f$` IS the corpus's own collapse branch.*** *Not a chart picked for convenience and then reconciled with the bead — the same object. PG's shift is `$v^2=1-f=2M/r+r^2/\alpha^2$`, so its congruence is the `$E=1$` radial geodesic family. Three consequences, each checked:*
+- *`$v$` is real exactly where `$|r|\ge(2M\alpha^2)^{1/3}$` and **vanishes exactly at the turnaround** — so the chart covers the collapse leg and nothing else.*
+- *On `$r=-(2M\alpha^2)^{1/3}\cosh^{2/3}x$`, **`$\dd\tau=-(2\alpha/3)\dd x$` EXACTLY** — your `$x$` is proper time, affinely.*
+- *`$\dd\eta=\dd\tau/a$` with `$a=|r|/\alpha$` returns the prefactor `$2/(\sqrt3\,2^{1/3})$` and **your leg length `$1.927621297\alpha$`**, from the PG construction alone.*
+
+⇒ ***So the chart in which the mode equation is REGULAR at the seam is the chart whose time coordinate is the bead's own clock.*** *That is your item 2 answered structurally rather than by a convention call: the mode is carried on the comoving congruence's proper time, and the static chart's `$t$` is **not any clock on the trajectory** — it is not a slower clock, it is not the bead's clock at all.*
+
+### ⛭⛭⛭ AND THE ANSWER TO ITEM 1 IS NOT ABOUT SLICINGS. IT IS ABOUT CHARACTERISTICS
+
+*The equation, derived with `$M$` and `$\alpha$` FREE (so it is not a Nariai accident):*
+
+> `$(r^2fR')'+2i\omega r^2vR'+\big[\omega^2r^2+i\omega(r^2v)'-\ell(\ell+1)\big]R=0$`
+
+*`$\det g=-r^4\sin^2\theta$` with **no `$f$` in it**; `$g^{rr}=f$` vanishes at the root while `$g^{\tau r}=-v=-1$` does not. Every coefficient is finite at the seam and only the `$R''$` coefficient vanishes — and the reason is exact: **the principal symbol restricted to `$\dd r$` is `$f$`, so every root of `$f$` is a CHARACTERISTIC SURFACE of this equation.** The null curves are `$\dd r/\dd\tau=v\pm1$`, so at `$v=1$`:*
+
+| | speed at the seam | proper time to reach it | what it carries |
+|---|---|---|---|
+| **crossing family** | **exactly `$2$`** | `$1.000000219\times10^{-3}\alpha$` across a `$\pm10^{-3}\alpha$` window; `$2.011\alpha$` from `$r=-10\alpha$` to the turnaround | the index-`$0$` branch — **analytic at the seam** |
+| **skimming family** | **exactly `$0$`** | `$\ln100/\kappa=3.545062\alpha$` per factor `$100$`, **forever** | the index-`$-i\omega/\kappa$` branch — **`$e^{\pi\omega/\kappa}$`** |
+
+⇒ ***The unbounded approach is not "a slicing's artefact". It is a real family of rays — and the modes the sky carries are not on it.*** *`$\dd v/\dd r=-f'/2=-\kappa$` at the seam by **the same identity you used for the bead's acceleration**, so `$\kappa$` is the rate at which the skimming family fails to arrive, read straight off the shift with no tortoise coordinate anywhere in the derivation.*
+
+### ⛭⛭ `2κ` IS IN THE EQUATION — EXACTLY ONCE, AS THE INDEX OF THE BRANCH THAT IS NOT SMOOTH THERE
+
+*The indicial equation `$s[(s-1)a_1+b_0]=0$` with `$a_1=(r^2f)'(r_h)=2\sqrt3$` and `$b_0=2\sqrt3+\tfrac{8i}3\omega$` gives **`$s=0$` and `$s=-i\omega/\kappa$`, with `$\kappa=3\sqrt3/4\alpha$` to 18 figures RECOVERED from the ODE and not inserted into it.** The two indices differ by a non-integer for every real `$\omega>0$`, so the monodromy about the seam is **exactly diagonal** — no logarithm, no mixing: `$1$` on the regular branch, `$e^{-2\pi\omega/\kappa}$` on the other, which is the Boltzmann factor at `$T_H=\kappa/2\pi=0.2067483\alpha^{-1}$`.*
+
+⌈ ***So your "the back seam DOES carry a thermal scale in the parameter the phase lives in" is confirmed inside the mode equation itself.*** *The question was never whether `$2\kappa$` is there. It is which branch carries it — and that is now measured: on the skimming ray `$\tau+\ln|x|/\kappa$` converges to a constant (moving `$2.75\times10^{-8}$` over the last two decades of approach), so `$e^{-i\omega\tau}|x|^{-i\omega/\kappa}$` **stops accumulating phase**: it holds within `$0.0036$` rad while `$e^{-i\omega\tau}$` alone turns through `$138$` rad. **A factor `$38000$`. The thermal branch is the skimming family's own accumulated phase, with the sign that cancels it.***
+
+### ⛭⛭ THE TRANSFER, MEASURED: `1`, AND IT IS THE `d → 0` LIMIT THAT MAKES IT A NUMBER
+
+*The index-`$0$` series exists and is unique for **every** `$(\omega,\ell)$` — its recursion's denominator `$(j+1)[(j+1)2\sqrt3+\tfrac{8i}3\omega]$` cannot vanish for real `$\omega$` and `$j\ge0$` — and it solves the equation to `$10^{-36}$` on **both** sides of the seam. Its transfer `$T(d)=[rR]_{+d}/[rR]_{-d}$` has modulus going to `$1$` **like `$d$`**, over four decades of `$d$`, four decades of `$\omega/\kappa$` and `$\ell=0,2,10$`.*
+
+⌈ ***That is the discriminant, and it is not a precision question.*** *`$e^{\pi\omega/\kappa}$` is `$d$`-INDEPENDENT and is `$2.7\times10^{136}$` at `$\omega=100\kappa$`. The two candidates differ by `$136$` orders of magnitude **and** by their `$d\to0$` behaviour. ⇒ **The crossing's own factor is the identity. Everything at finite `$d$` is ordinary propagation over a finite window, which the envelope already prices.***
+
+### ⛭⛭ AND YOUR INVERSION IS REPRODUCED INSIDE THE EQUATION, WITH ONE LINE COVERING BOTH SEAMS
+
+*At the front seam `$A=r^2f$` has a **double** zero (`$A''/2=-1$`) and `$B(r_F)=2i\omega/3$` is purely imaginary: an **irregular** singular point of rank `$1$`, whose branch is `$\exp(-2i\omega r_*)$` with `$r_*=1/3x$`.*
+
+⇒ ***Both seams' non-trivial branch is the SAME object, `$e^{-2i\omega r_*}$`. The discriminant is not the size of `$r_*$` but its CHARACTER:*** *continuing `$x$` through a **logarithm** adds `$i\pi/f'=i\pi/2\kappa$` to `$r_*$`, and continuing it through a **pole** adds nothing. So the modulus factor `$e^{\pm\pi\omega/\kappa}$` exists at the back seam and is identically `$1$` at the front, where `$\kappa=0$`. **One clause could not have been true of both, and now there is a formula that says which.***
+
+⌗ *And the rates settle cleanly: your `$\ln100/|f'|$` for `$r_*$` is **exactly half** this file's `$\ln100/\kappa$` for `$\tau$` on the skimming ray — `$1.772531$` against `$3.545062$`. `$r_*$` runs at `$2\kappa$`, `$\tau$` on the skimming ray at `$\kappa$`, **and the trajectory runs on neither**: it crosses at speed `$2$`, in `$(2\alpha/3)\operatorname{arccosh}2=0.877971931\alpha$` of its own proper time from the seam to the turnaround.*
+
+⌗ ⚠ *One precision about your table, not a correction: the `$0.66978\alpha$` your receipt extrapolates is `$\int\dd r/\sqrt{-f}$` **over a fixed `$0.3\alpha$` window** — a convergence demonstration at the root, which is what it is for. It is not the seam-to-turnaround time, which is the `$0.877971931\alpha$` above. Both are finite; they are different integrals and the receipt says so.*
+
+### ⛭⛭⛭ AT WHICH `k` — NAMED, EVEN THOUGH THE FACTOR IS `1`
+
+*The only scale **at** the crossing is `$\kappa$`, so the only comoving wavenumber a thermal factor could have carried is `$k=a_h\kappa$` with `$a_h=|r_h|/\alpha=2/\sqrt3$`:*
+
+> ***`$k_{\rm th}=(2/\sqrt3)(3\sqrt3/4)=3/2$` EXACTLY, and `$\alpha$`-free.***
+
+*In the corpus's own harmonic convention `$k^2=L(L+2)$` that is **`$L=0.8027756$` — BELOW THE DIPOLE.** The smallest harmonic the sky has, `$L=1$` at `$k=\sqrt3$`, already sits a factor `$\sqrt3/2$` above it. Through `eq:lowell`'s `$2.7737$` in `$k$`: **`$\ell_{\rm th}=4.16$` against the first acoustic peak's `$220.60$` at `$k=79.53$` — a factor `$53.0$`.***
+
+⌈ ***Which independently reproduces your `$50.6$`.*** *Yours is a ratio of two LOCI on the leg; this is a ratio of two WAVENUMBERS. **Two different measurements, agreeing to three per cent — so "fifty times downstream" is a statement about scales and not only about positions.***
+
+### ⇒ THE VERDICT, AND THE ONE QUANTITY THE CORPUS DOES NOT HAVE
+
+⇒ ***THE CROSSING DOES NOT ALTER THE SPECTRUM. The factor is `1` — not small, not `k`-independent-and-nonzero, but the IDENTITY — so it is neither an amplitude in `$A_s$` nor a tilt in `$n_s$`. `$2\kappa$` cannot enter through the crossing. The transmission chain closes end to end, and the sector's `$1.57$` acquires NO parameter address from the lap's one non-degenerate horizon.***
+
+⌈ ***`prop:transmit`'s conclusion survives at this locus, and its reason is now a third distinct one:*** *not "`$r_*$` is finite" (the branch point) and not "the length is imaginary" (the lift), but **"the unbounded approach belongs to a characteristic family the modes are not on."** Three loci, three reasons — and this is the one that had no computation behind it.*
+
+⌗ ***THE MISSING QUANTITY, NAMED RATHER THAN FITTED: the physical `$\alpha$`.*** *Without it `$k=3/(2\alpha)$` is not a number in `$\mathrm{Mpc}^{-1}$`. **It is not needed**: the verdict is `$1$`, which carries no scale, and the ratio to the first peak is `$\alpha$`-free. So the answer does not depend on a quantity the corpus lacks.*
+
+⚠ ***And what is NOT computed, because your scope asked for exactly this distinction: the flux the seam RADIATES into the lap's future.*** *`$T_H=0.2067483\alpha^{-1}$` is a statement about the quantum state on this background, not about a classical mode's transfer. **A flux calculation does need the progenitor interior `PO-75` is live on. The TRANSFER did not — and that is the result, in the form you asked for it.*** *Nor does this receipt claim nothing happens between the fixing locus and the seam: `$99$` per cent of the leg lies in between and the envelope prices it. What is computed is the crossing itself, which is the `$d\to0$` limit, and that limit is `$1$`.*
+
+⌗ *One honesty note on the step that is cited rather than computed: that **smooth Cauchy data on a PG slice stays smooth** is standard hyperbolic theory, not a measurement in this file. What the file measures are its computable parts — the chart's nondegeneracy at the root for `$M,\alpha$` free, the characteristic speeds `$2$` and `$0$`, the `$\kappa$` and `$2\kappa$` rates, the diagonal monodromy, and the index-`$0$` branch's existence, residual and `$d\to0$` transfer.*

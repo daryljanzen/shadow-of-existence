@@ -8840,3 +8840,174 @@ Planck's `$100\theta_* = 1.04109 \pm 0.00030$`, the arm's background sits `$-15.
 
 ⌗ **No new grid.** The order said read the banked minima if they are there; they were, in
 `refit_grid185/` with its launcher beside them.
+
+---
+
+## `r7183+cc66.145/146` — **THE NO-FIT CONFRONTATION, AND THE THREE RATES OF `$\chi(z)$`**
+
+### ⓵ THE CONFRONTATION THE PAPER HAS NEVER CARRIED
+
+Four banked spectra, each identified by its own stored `$D_M$`. Scored on `fig:acoustic`'s own bins
+and lensing operator, 179 bins, `$100\le\ell\le1900$`.
+
+| | `$\chi^2$` | per bin | `$D_M$` |
+|---|---|---|---|
+| control, nothing fitted | 202.02 | **1.129** | 13864.6627 |
+| **CR arm, nothing fitted** | **537.38** | **3.002** | **14011.4567** |
+| control, refitted | 177.88 | 0.994 | 13954.3535 |
+| CR arm, refitted | 282.96 | 1.581 | 14017.0386 |
+
+arm/control: **`2.660×` with nothing fitted, `1.591×` refitted.**
+
+### ⛭⛭ THE RESIDUAL, TWO WAYS — AND THE ORDERED ONE CANCELS THE RESULT
+
+| | binned AT `$\ell_A$` (6 bands) | folded by phase within `$\ell_A$` |
+|---|---|---|
+| CR arm, nothing fitted | `+1.273 +0.022 −0.000 −0.808 +0.192 +1.066`, 2 sign changes | **`1.3729 ± 0.1512` → `9.08σ`** |
+| CR arm, refitted | — | `0.8128 ± 0.1180` → `6.89σ` |
+| control, nothing fitted | — | `0.2028 ± 0.1126` → `1.80σ` |
+| control, refitted | — | `0.1051 ± 0.1049` → `1.00σ` |
+
+⇒ **A bin one period wide averages a full cycle of any modulation at that period, so its mean is
+that modulation's own mean.** *Binning AT `$\ell_A$` is the one operation guaranteed to remove a
+signal at `$\ell_A$`.* The fold, anchored on the arm's own first peak at `$\ell=222$`, is what shows
+it. **Both are drawn.** ⌗ *Robust to the anchoring: edges on `100`, on `222`, on `220.4` and on the
+troughs all give 2–3 sign changes in the bins and the same harmonic in the fold.*
+
+⌗ **One trap of this seat's, walked into on the first draft and recorded.** The top panel was plotted
+as raw `X_DATA`, which is binned `$C_\ell$` — so the peaks vanished under the falling plateau and the
+figure showed a featureless curve. `make_fig_acoustic_two_arm.py` carries that exact warning in its
+own source, naming it as *"the same trap the locator hit at `cc66.28`, here in the figure"*. **The
+warning was in the file this figure was modelled on, and reading it was what caught it.** *The
+`$\mathcal{D}_\ell$` factor is now applied at every plot call with the reason beside it.*
+
+### ⓶ THE THREE STEPS OF `$\chi(z)$` FOR THE VISIBILITY
+
+| step | the code uses | the rule assigns | verdict |
+|---|---|---|---|
+| the conversion `$z\to\chi$` | `$\chi=\eta_0-\eta$` **identically**; grid on `Hgeom` = `Hphys` (radiation-free) | a comoving separation read across leaves → stacking | **AGREE** |
+| the ionisation history `$x_e$` | `Hrec = Hleaf`, `LEAFREC=1` **by default since `r7095`** | a process running IN the content → leaf | **AGREE** |
+| the optical depth's measure | `$d\tau$` unweighted, `VISLEAF=0` | a photon-path observable → stacking | **AGREE** |
+
+⇒ ***Step (1) cannot be misclassified: `$d\chi/d\eta=1$`, so there is no conversion step with a rate
+in it.*** The two clocks sit between `$r_s$` and `$\eta$`, **not** between `$\chi$` and `$\eta$`.
+⌗ *Step (3) agrees by a RULING — `r7095` derived it and withdrew `r7092`'s `VISLEAF=1`: weighting
+`$d\tau$` by `Jac` counts the scatterings of a photon crossing the same proper length in less time.*
+
+### ⛭⛭⛭ AND THE COLLAPSE THE ORDER FEARED WAS FOUND AND SPLIT AT `r7095`
+
+`LEAFGEOM` was **one switch over two objects the rule assigns oppositely** — the conformal-time grid
+and the ionisation history — so no setting satisfied both and *the rule's own configuration was
+unreachable from the file*. `r7095` split `LEAFREC` out and defaulted it **ON**, the only clock
+switch in that file whose default has moved. **Measured here: the grid on `Hphys` and recombination
+on `Hleaf` in one and the same default run.**
+
+### ⌗ THE WIDTH THE ORDER QUOTES — CONFIRMED
+
+| | FWHM in `$\chi$` |
+|---|---|
+| arm, at `(68.60, 0.2973)` | **43.2138 Mpc** |
+| control, at `(67.40, 0.3150)` | **37.7993 Mpc** |
+| ratio | **+14.3 %** (the order quotes `+14.6`) |
+
+**Invariant under `LEAFREC` to four decimals**, so it survives `r7095`'s default change — the one
+switch that could have made the quoted figure pre-date the rule's own configuration. *What `LEAFREC`
+moves is where the visibility sits (`$\eta_{\rm LS}$` by `1.8` Mpc), not how wide it is.*
+
+⚠ **This removes one candidate explanation for the contrast; it does not explain it.** *The sector's
+disagreement stands exactly where `r7183` leaves it.*
+
+---
+
+## `r7185+cc66.147` — **THE MODE EQUATION ACROSS THE BACK SEAM, IN THE CHART THE BEAD CROSSES IN**
+
+*Receipt: `P07_CR_framework/P07_the_crossing_rides_the_characteristic_that_crosses_and_the_thermal_factor_rides_the_one_that_does_not_so_two_kappa_cannot_enter_and_the_only_k_it_could_have_carried_is_three_halves.py`.
+22 checks, `rc=0`, ~2 s, `$\alpha=1$`, `$M=\alpha/3\sqrt3$`. Closed form and quadrature; no grid, no fit, no banked artefact.*
+
+### ⓪ THE CHART IS THE TRAJECTORY
+
+| the Painlevé–Gullstrand construction on this `$f$` | value | what it identifies |
+|---|---|---|
+| `$v^2=1-f=2M/r+r^2/\alpha^2$` | `$v=0$` at `$r=-(2M\alpha^2)^{1/3}=-0.727415757$` | PG's congruence is the `$E=1$` family; its turning point **is** the collapse branch's turnaround |
+| `$\dd x/\dd\tau$` on `$r=-(2M\alpha^2)^{1/3}\cosh^{2/3}x$` | `$-3/2$` **exactly** | `$\dd\tau=-(2\alpha/3)\dd x$`: `$x$` is affine proper time |
+| `$\cosh x=2$` | `$r=-1.154700538=-2\alpha/\sqrt3$` | the seam and the cubic's simple root are the same point |
+| `$\dd\eta=\dd\tau/a$`, `$a=\lvert r\rvert/\alpha$` | prefactor `$0.916486425=2/(\sqrt3\,2^{1/3})$`; leg `$1.927621297\alpha$` | the corpus's conformal measure, recovered from PG alone |
+| seam → turnaround | `$(2\alpha/3)\operatorname{arccosh}2=0.877971931\alpha$` | the crossing's own proper time (**not** the `$0.66978\alpha$` of `$\int\dd r/\sqrt{-f}$` over a fixed `$0.3\alpha$` window) |
+
+### ⓵ THE EQUATION, AND THE SEAM AS A CHARACTERISTIC
+
+`$(r^2fR')'+2i\omega r^2vR'+\big[\omega^2r^2+i\omega(r^2v)'-\ell(\ell+1)\big]R=0$` — derived with
+`$M$` and `$\alpha$` **free**; `$\det g=-r^4\sin^2\theta$`, `$g^{rr}=f$`, `$g^{\tau r}=-v$`.
+
+| at the seam | value |
+|---|---|
+| `$A=r^2f$` | `$0$`, a **simple** zero of slope `$A'=2\sqrt3=3.464101615$` |
+| `$B=(r^2f)'+2i\omega r^2v$` | `$2\sqrt3+\tfrac{8i}3\omega$` — finite and nonzero for every real `$\omega$` |
+| `$r^2v$` | `$4/3$` |
+| principal symbol on `$\dd r$` | `$f$` ⇒ **every root of `$f$` is a characteristic surface** |
+| `$\dd v/\dd r=-f'/2$` | `$-1.299038106=-\kappa$` (the same identity as the bead's acceleration) |
+
+| characteristic family | `$\dd r/\dd\tau$` at the seam | proper time to the seam | branch it carries |
+|---|---|---|---|
+| **crossing** | **`$2$` exactly** | `$1.000000219\times10^{-3}\alpha$` over `$\pm10^{-3}\alpha$`; `$2.011\alpha$` from `$-10\alpha$` to turnaround | index `$0$` — **analytic** |
+| **skimming** | **`$0$` exactly** | `$\ln100/\kappa=3.545062\alpha$` per factor `$100$`, **unbounded** | index `$-i\omega/\kappa$` — `$e^{\pi\omega/\kappa}$` |
+
+### ⓶ THE INDICES, AND THE TWO RATES SEPARATED
+
+| quantity | value |
+|---|---|
+| indices at the simple root | `$0$` and `$-i\omega/\kappa$` |
+| `$\kappa$` recovered from the indicial equation | `$1.29903810567665797$` (`$3\sqrt3/4$`, 18 figures) |
+| `$T_H=\kappa/2\pi$` | `$0.206748335783\,\alpha^{-1}$` |
+| monodromy | exactly diagonal (index gap non-integer for real `$\omega>0$`): `$1$` and `$e^{-2\pi\omega/\kappa}$` |
+| `$\tau$` rate on the skimming ray | `$\kappa$` — `$\ln100/\kappa=3.545062\alpha$` per factor `$100$` (measured `$3.545062$`) |
+| `$r_*$` rate | `$2\kappa$` — `$\ln100/\lvert f'\rvert=1.772531$`, **exactly half** |
+| `$\tau+\ln\lvert x\rvert/\kappa$`, `$x=-10^{-5}\to-10^{-9}$` | converges: moves `$2.777\times10^{-6}$` in all, `$2.75\times10^{-8}$` over the last two decades |
+| phase of `$e^{-i\omega\tau}\lvert x\rvert^{-i\omega/\kappa}$` at `$\omega=10\kappa$` | holds within `$0.00361$` rad while `$\omega\tau$` turns through `$138.159$` — a factor `$38310$` |
+
+### ⓷ THE TRANSFER — `$\lvert T(d)\rvert\to1$ LIKE $d$`
+
+| `$\omega/\kappa$` | `$\ell$` | residual at `$x=\mp0.02$` | `$\lvert T\rvert$` at `$d=10^{-1}$` | `$10^{-2}$` | `$10^{-3}$` | `$10^{-4}$` | `$e^{\pi\omega/\kappa}$` |
+|---|---|---|---|---|---|---|---|
+| `$0.1$` | `$0$` | `$7\times10^{-43}$` / `$1\times10^{-41}$` | `$0.84206$` | `$0.98300$` | `$0.998287$` | `$0.9998285$` | `$1.369$` |
+| `$0.1$` | `$10$` | `$3\times10^{-39}$` / `$4\times10^{-38}$` | `$21.737$` | `$1.8538$` | `$1.06308$` | `$1.006135$` | `$1.369$` |
+| `$1$` | `$0$` | `$9\times10^{-41}$` / `$3\times10^{-40}$` | `$0.91704$` | `$0.99138$` | `$0.999134$` | `$0.9999134$` | `$23.14$` |
+| `$1$` | `$10$` | `$6\times10^{-39}$` / `$2\times10^{-38}$` | `$9.4293$` | `$1.3593$` | `$1.03137$` | `$1.003094$` | `$23.14$` |
+| `$10$` | `$2$` | `$3\times10^{-39}$` / `$6\times10^{-39}$` | `$1.00177$` | `$1.000172$` | `$1.0000171$` | `$1.0000017$` | `$4.40\times10^{13}$` |
+| `$100$` | `$10$` | `$8\times10^{-37}$` / `$3\times10^{-36}$` | `$1.000630$` | `$1.0000618$` | `$1.0000062$` | `$1.0000006$` | `$2.74\times10^{136}$` |
+
+⇒ **the `$d\to0$` limit is `$1$`; `$e^{\pi\omega/\kappa}$` is `$d$`-independent.** *The recursion's
+denominator `$(j+1)[(j+1)2\sqrt3+\tfrac{8i}3\omega]$` cannot vanish, so the index-`$0$` branch exists
+and is unique for every `$(\omega,\ell)$`.*
+
+### ⓸ THE FRONT SEAM, AND THE ONE LINE THAT COVERS BOTH
+
+| | root | `$A=r^2f$` | `$B$` there | singular point | branch | modulus |
+|---|---|---|---|---|---|---|
+| **back seam** `$-2\alpha/\sqrt3$` | simple | `$2\sqrt3\,x+\dots$` | `$2\sqrt3+\tfrac{8i}3\omega$` | **regular** singular | `$x^{-i\omega/\kappa}=e^{-2i\omega r_*}$`, `$r_*=\ln\lvert x\rvert/f'$` | `$e^{\pm\pi\omega/\kappa}$` |
+| **front seam** `$+\alpha/\sqrt3$` | double (`$f''=-6$`) | `$-x^2+\dots$` | `$2i\omega/3$`, purely imaginary | **irregular**, rank `$1$` | `$e^{-2i\omega r_*}$`, `$r_*=1/3x$` | **`$1$`** |
+
+⇒ **both branches are `$e^{-2i\omega r_*}$`; the discriminant is whether `$r_*$` picks up an
+imaginary part on continuation** — `$i\pi/f'=i\pi/2\kappa$` through a logarithm, nothing through a pole.
+
+### ⓹ AT WHICH `$k$`
+
+| quantity | value |
+|---|---|
+| `$a_h=\lvert r_h\rvert/\alpha$` | `$2/\sqrt3=1.154700538$` |
+| `$k_{\rm th}=a_h\kappa$` | **`$3/2$` exactly**, `$\alpha$`-free |
+| `$L_{\rm th}$` from `$k^2=L(L+2)$` | `$0.802775638$` — **below the dipole** (`$L=1$` is `$k=\sqrt3$`) |
+| `$k_{\rm th}/k(L=1)$` | `$\sqrt3/2=0.866025404$` exactly |
+| `$\ell_{\rm th}$` via `eq:lowell`'s `$2.7737$` in `$k$` | `$4.1606$` |
+| first acoustic peak | `$L=78.5382$`, `$k=79.53191$`, `$\ell=220.5977$` |
+| `$k_{\rm peak}/k_{\rm th}$` | **`$53.02$`** — against the two loci's `$50.6$`, agreeing to 3 % |
+
+### ⇒ VERDICT
+
+**Transfer `$=1$`, identically in `$\omega$` and in `$\ell$`.** *A `$k$`-independent factor of `$1$` is
+not an amplitude — it is the identity — so neither `$A_s$` nor `$n_s$` moves, and `$2\kappa$` cannot
+enter through the crossing.* ⌗ **Quantity the corpus does not have: the physical `$\alpha$`** — named,
+not fitted, and not needed, because `$1$` carries no scale and the ratio to the first peak is
+`$\alpha$`-free. ⚠ **Not computed: the flux the seam radiates**, which does need the progenitor
+interior `PO-75` is live on. ⌗ **Cited, not measured:** that smooth Cauchy data on a PG slice stays
+smooth — standard hyperbolic theory; everything else above is a number in the receipt.
