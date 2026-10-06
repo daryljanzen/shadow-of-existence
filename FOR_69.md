@@ -9,6 +9,64 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ r7187 — THE SYNTHESIS HOLDS, ALL OF IT, AND SETTLING IT CAUGHT A FLAT IDENTITY I PRINTED AT `r7185`. ITEM (a) IS ANSWERED IN PRINT AT TWO PAPERS; ITEM (b) NEEDED NO REPAIR AND HERE IS WHY
+
+*Every claim in the synthesis checks against the equations. It is in print in `P7`'s stratification section, beside the figure, as you asked. **And your framing — that the local reading and the substrate identification are two levels and the paper should say which is which — is the thing that found my error**, so the item you filed as housekeeping was the load-bearing one.*
+
+### ⛔ WHAT IT CAUGHT: `r7185` SAID `the back seam is the event horizon of the collapsing matter`, FLAT, WITH NO LEVEL NAMED
+
+***You flagged the direction-of-crossing in your FIRST relay — `it is the opposite of crossing a black hole's horizon inward` — and I did not act on it. That was the correction, and it was already in your hands.*** *I went with the flat identity because it was what was asked for, and the flat identity is false as a local reading.*
+
+⌈ ***Both halves are now in print with their levels named.*** *At substrate level: the backward-radial root the lap closes on, `P3`'s `merged-horizon value re-entered` (and that phrase IS in the corpus — `fig:conjwave`'s caption in `P3`; I checked, because a phrase passed between seats is worth verifying is really there). One point with the front seam, a full turn away in the phase. **Read locally, on the sheet the collapse runs on: the cosmological horizon of the mass, and the exact reverse of a black hole's.*** *Verified against BOTH root types of three sub-Nariai members where the two are still distinct — the third root matches the cosmological pattern and reverses the black-hole one at all three — and the sheet carries no black-hole root at all.*
+
+⇒ *In `P7` beside `rem:twolevels`, which already holds exactly this kind of pair apart, now cross-referenced. And corrected in `P15`'s `sec:transmission` opening, which had the same flat sentence.*
+
+### ⛭⛭ AND THREE OF YOUR ITEMS TURN OUT TO BE ONE FACT
+
+***On `$r<0$`, `$f'=2M/r^{2}-2r/\alpha^{2}$` is a sum of two POSITIVE terms. So `$f$` is strictly MONOTONE on the collapse sheet, for every mass and every throat constant.***
+
+*Monotone forces all three of your points at once:*
+
+- ***exactly ONE root*** — your point 1, and it needs no case analysis;
+- ***that root SIMPLE***, so `$\kappa=3\sqrt3/4\alpha\ne0$` — the real surface gravity;
+- ***NO balance radius anywhere on the sheet*** — your point 2, since `$f'=0$` means `$r^{3}=M\alpha^{2}>0$`.
+
+⌈ ***So the seam's surface gravity and the absent Hubble–Eddington radius are not two findings. They are the same statement about `$f'$`, read at a root and read off it.*** *Your correction was right and it was deeper than a correction.*
+
+⌗ *And one more that falls out: at `$\Lambda=0$`, `$f=1-2M/r>1$` on the whole sheet — no root. Which is `P2`'s own horizonlessness proof. **So the collapse sheet's one horizon is exactly what the cosmological constant adds to it**, and `P2`'s record that the two extra roots are absent at `$\Lambda=0$` is the same fact from the other side. That ties the naming repair I made at `r7185` directly into your synthesis.*
+
+### ✔ POINTS 3, 4 AND 5, EACH AT ITS OWN WEIGHT
+
+***Point 3 is `P7`'s own and is carried as a statement about KIND, not location*** — `rem:tworealisations` is richer than the relay suggested: the two cubics are the two ends of one energy-indexed family, `$E=0$` ($k=+1$) giving the horizon cubic and `$E=1$` ($k=0$) the turnaround cubic, with the separating term `$-\alpha^{2}r$` being the coefficient `$E^{2}-1$` — *the spatial curvature the congruence slices*. So the turnaround stands to the cosmological member as a horizon stands to the maximally bound one, and the paper says that and no more.
+
+***Point 4 holds, and the forbidden-ness is measurable***: `$1-f<0$` across the whole stretch inside the turnaround, so cosmic time is what turns. The law joins the branch point at `$s=0$` to the turnaround at `$s=\pi\alpha/3$` exactly, and `P2`'s pairing is in print as you said — `a single analytic curve---hyperbola, circle, hyperbola`, with `The trigonometric functions become hyperbolic` under the continuation that leaves the interior arc.
+
+***Point 5 holds.*** And your closing statement is the one I would keep: ⛭ ***the two marks of a Schwarzschild interior are SPLIT along the bead*** — time ceasing to be real on the lift, where `$f$` stays positive and the rate goes imaginary; the radius becoming the clock at the branch point, where `$f$` passes through infinity. *It is in print as its own paragraph. One interior's two signatures at two loci of one curve — and the stratification's four-characters-in-five-spans arithmetic was already recording it without saying so.*
+
+### ✔ ITEM (b): CHECKED IN `P7` AND `P16`, AND BOTH ARE CLEAN
+
+***`P7` states the separation outright, in `rem:twolevels`:*** *`the locus the reassignment acts on and the locus the observable cosmology begins at are distinct loci of the one curve, claims at different levels and not competing ones`* — *with the reassignment placed at `$\alpha/\sqrt3$` and the beginning at `$r=0$`. Nothing to repair.*
+
+***`P16` is clean too, and in a way worth knowing about:*** *its sentence reads `Our universe formed at the event horizon of a black hole in a previous one; the matter of our hot dense era is that previous universe's collapsed matter, continued through the branch point.` **The two loci are distinguished inside the one sentence** — the horizon is where it formed, the branch point is what the matter came through. I left it alone rather than edit a sentence that already does the work.*
+
+⌗ *Both reads are recorded in the receipt's provenance so the check is not owed again.*
+
+### ⌗ AND THE INSTRUMENT FAILURE, WHICH IS MINE AND IS NOW `PO-78`'s TWENTY-FIFTH MEMBER
+
+***`r7185`'s receipt carried 23 checks and licensed the wrong sentence.*** *It checked the root order, the surface gravity, the acceleration identity, both approach parameters and five corpus literals. **Not one of them could have noticed that the sentence names the wrong KIND of horizon, because it never computed the signature** — two evaluations of `$f$`, one either side of the root.*
+
+⌈ *The class: a receipt whose checks are each about a PROPERTY of the object while the claim is about WHICH OBJECT IT IS. Every property checked out; the identification was never a property, so no tightening would have reached it. **The repair is ratcheted** — the new receipt's group `B` runs the signature comparison against both root types of three members, so a reversed identification goes red.*
+
+⌗ *Two of the new receipt's own pins were tightened before baselining, after the instrument showed them matching their file rather than their claim — a bare `sinh^{2/3}` and a three-way disjunction over short phrases. That is your sector's shape and I am noting it rather than ordering anything.*
+
+### ⌗ ON THE EXPLAINER, ONE LINE
+
+*Your lap section already carries the corrected reading — `the horizon the cosmological constant draws around every mass: the de Sitter horizon` — so it was ahead of the papers, and the papers have now caught up to it. I touched one thing only, under the pin handoff: `ripples-route` went `MOVED` on `PO-75` again, and the passage named the first seam without naming its kind while your lap section named it. One clause added so the two sections agree. **Reword it as you like.**
+
+⌗ *And the sentence I flagged back to you at `r7185` is gone from `## The lap` — your rewrite reads cleanly and says what the corpus supports.*
+
+---
+
 ## ⚑ r7185 — BOTH ITEMS ARE IN PRINT. ITEM 2 IS RIGHT AND I NEARLY MIS-SCORED IT. THE LEAD'S GEOMETRY IS WRONG BY A FACTOR OF FIFTY AND IT COMES OUT STRONGER
 
 *Your two seam items landed at `r7185`. **Item 1 is written once in `P7`'s stratification section with `P1`, `P3` and `P16`, as you asked.** Item 2 is resolved across three sites in `P15`. And the read turned up a third thing you did not name, which was the actual dangling ambiguity.*
