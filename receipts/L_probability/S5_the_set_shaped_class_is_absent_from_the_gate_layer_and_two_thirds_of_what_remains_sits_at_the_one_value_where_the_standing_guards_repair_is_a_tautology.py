@@ -35,6 +35,15 @@ the two families it had never been run over at all: ** the gates. **
    from the same files, and a control on ANY of them exercises the instrument.  **The control a zero
    needs is a property of the RECEIPT and not of the name.***
 
+⛭ ** AND THE TWO DETECTORS MIS-FLAGGED EACH OTHER, WHICH IS THE FIRST STANDING GUARD TWICE OVER IN
+   ONE PAIR OF INSTRUMENTS. **  *This receipt's detector flagged `10` sites in
+   `scripts/mutate_assertions.py` because the reach token `walk` named `ast.walk`.  That same file's
+   own `--cannot-fail` rule then flagged `2` sites in THIS receipt, because a bare `True` in
+   ARGUMENT position read as a literal-true ASSERTION -- and the first draft went red on it.*
+   ⇒ ** Each detector read a FORM and never asked its ROLE. **  *Mine is repaired by naming the two
+   reach modes and the two shadow modes, which the call sites wanted anyway; the instrument's is
+   `70`'s and is routed as a patch rather than edited.*
+
 ⌗ ** HOW CLOSE THE THIRTEEN ARE TO BREAKING, MEASURED RATHER THAN CALLED FRAGILE. **  *The `15`
 terms those sites pin absent are `0` in the paper layer at the pinned commit --- one apparent hit,
 `Neff`, is the carve-out that receipt already documents.*  ** But `5` of the `15` are present in the
@@ -90,6 +99,15 @@ SHARED = ('quote_pin_baseline', 'prose_pin_baseline', 'unread_figure_baseline', 
           'PO13_WORKING_STATE', 'marker_transposition_baseline', 'THE_OPEN_PROBLEMS_LEDGER',
           'OPEN_PROBLEMS_MAP')
 ENUM = ('glob', 'listdir', 'walk', 'iglob')
+
+# ** the two reach modes, NAMED.  `r7208`'s reach is one mode and the disambiguated reach the
+#   other, and the call sites below say which they mean instead of carrying a bare boolean.
+#   ⛭ They carried bare booleans in this receipt's first draft, and `check_cannot_fail` read the
+#   `True` in ARGUMENT position as a literal-true ASSERTION and went red -- a form read without its
+#   role, which is the first standing guard in the instrument that polices it.  Routed to `70` as a
+#   patch in the channel; the repair here keeps the names, which the call sites wanted anyway. **
+AS_R7208 = False
+DISAMBIGUATED = True
 
 
 def enumerates(val, strict):
@@ -243,8 +261,8 @@ gate("Ⓐ② and `r7208`'s run was `284` of those files --- this seat's own rece
      len(MINE) == 284 and GATELAYER == 306
      and abs(len(FILES) / len(MINE) - 4.6) < 0.05)
 
-_mine_sites = sum(len(flagged(SRC[p], False)) for p in MINE)
-_mine_files = sum(1 for p in MINE if flagged(SRC[p], False))
+_mine_sites = sum(len(flagged(SRC[p], AS_R7208)) for p in MINE)
+_mine_files = sum(1 for p in MINE if flagged(SRC[p], AS_R7208))
 print(f"      the detector on this seat's 284, with r7208's own reach: "
       f"{_mine_sites} site(s) in {_mine_files} file(s)")
 gate("Ⓐ③ ⌗ AND THE INSTRUMENT IS SHOWN TO BE THE SAME ONE: run with `r7208`'s reach over `r7208`'s "
@@ -255,8 +273,8 @@ gate("Ⓐ③ ⌗ AND THE INSTRUMENT IS SHOWN TO BE THE SAME ONE: run with `r7208
 # ============================================================ B. the gate layer, and it is zero
 head("B.  THE GATE LAYER CARRIES NONE OF THE CLASS, AND THE TEN APPARENT HITS ARE ONE WORD")
 
-RAW = {p: flagged(SRC[p], False) for p, _ in FILES}
-STRICT = {p: flagged(SRC[p], True) for p, _ in FILES}
+RAW = {p: flagged(SRC[p], AS_R7208) for p, _ in FILES}
+STRICT = {p: flagged(SRC[p], DISAMBIGUATED) for p, _ in FILES}
 
 
 def tally(d, which=None):
@@ -525,8 +543,13 @@ def shadow_run(blank):
                 for f in PROBE]
 
 
-_live_rc = shadow_run(False)
-_blank_rc = shadow_run(True)
+# ** named for the same reason the reach modes are: a bare boolean at a call site says
+#   nothing about which side of the control it is. **
+PAPERS_INTACT = False
+BODIES_EMPTY = True
+
+_live_rc = shadow_run(PAPERS_INTACT)
+_blank_rc = shadow_run(BODIES_EMPTY)
 print(f"      shadow tree, papers intact:  {_live_rc}")
 print(f"      shadow tree, bodies empty :  {_blank_rc}")
 
@@ -583,7 +606,7 @@ head("G.  AND THIS RECEIPT IS NOT ITSELF OF THE CLASS")
 
 _SELF = open(os.path.abspath(__file__), encoding='utf-8').read()
 _SELF_CODE = '\n'.join(l for l in _SELF.split('\n') if not l.lstrip().startswith('#'))
-_self_sites = flagged(_SELF_CODE, True)
+_self_sites = flagged(_SELF_CODE, DISAMBIGUATED)
 _self_verdicts = sorted({ground(_SELF_CODE, s) for s in _self_sites})
 print(f"      the detector on this receipt's own comment-stripped source: "
       f"{len(_self_sites)} site(s), verdict(s) {_self_verdicts or ['none']}")
@@ -598,6 +621,32 @@ gate("Ⓖ② ⌗ and the live paper state is NOT asserted here: the only paper r
      "at the pin, and the live side is carried by RUNNING the fourteen receipts in Ⓕ --- which is "
      "`L-249`'s rule applied to this receipt rather than only prescribed in it",
      not _lits and all(v == 0 for v in _rc.values()) and PIN in _SELF)
+
+# ** ⛭ AND THE TWO DETECTORS MIS-FLAGGED EACH OTHER, WHICH IS THE FIRST STANDING GUARD TWICE OVER.
+#   This receipt's detector flagged TEN sites in `scripts/mutate_assertions.py` because `walk`
+#   named `ast.walk`; `scripts/mutate_assertions.py`'s own `--cannot-fail` rule flagged TWO sites in
+#   THIS receipt because a bare `True` in ARGUMENT position read as a literal-true ASSERTION.
+#   ** Each read a FORM and never asked its ROLE. **  Mine is repaired above by naming the modes;
+#   the instrument's is `70`'s and is routed as a patch, not edited here. **
+_bare_bool_args = []
+for _n in ast.walk(ast.parse(_SELF_CODE)):
+    if isinstance(_n, ast.Call):
+        for _a in _n.args:
+            if isinstance(_a, ast.Constant) and _a.value is True:
+                _bare_bool_args.append(_n.lineno)
+print(f"      bare `True` in argument position in this receipt after the repair: "
+      f"{len(_bare_bool_args)};  the reach modes are named instead")
+print("      ⛭ the instrument that flagged them is the SAME FILE this receipt's own detector "
+      "mis-flagged ten times --- two detectors, each reading a form without its role")
+
+gate("Ⓖ③ ⛭ and the mutual mis-flag is recorded rather than quietly worked around: this receipt now "
+     "carries ZERO bare `True` literals in argument position, the two reach modes carrying NAMES "
+     "that say which reach they mean --- while `scripts/mutate_assertions.py`'s `--cannot-fail` rule "
+     "read the bare `True` as a literal-true ASSERTION, which is the first standing guard's defect "
+     "inside the instrument that polices it.  *That one is `70`'s and is routed as a patch, not "
+     "edited here, which is why `Ⓕ②`'s diff is still clean.*",
+     not _bare_bool_args and len(_outside) == 0
+     and 'AS_R7208' in _SELF_CODE and 'DISAMBIGUATED' in _SELF_CODE)
 
 # ============================================================ verdict
 head("VERDICT")

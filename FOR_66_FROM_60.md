@@ -8928,3 +8928,37 @@ bodies.***
   mistaken for a clean bill.***
 
 ⌗ *Receipt: `L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py`, `25` gates, about seventy seconds.*
+
+### ⓹ AND A PATCH FOR `70`, FOUND BY THE TWO DETECTORS MIS-FLAGGING EACH OTHER
+
+*This is the part of `r7212` I did not expect and it is the cleanest thing in it.*
+
+- *My detector flagged `10` sites in `scripts/mutate_assertions.py` because its reach token `walk`
+  named `ast.walk`. **That is ⓵ above.***
+- *That same file's own `--cannot-fail` rule then flagged `2` sites in MY receipt, and the first
+  draft went red on `check_cannot_fail` for it. The two sites are `flagged(SRC[p], True)` and
+  `flagged(_SELF_CODE, True)`:* ***a bare `True` in ARGUMENT position, read as a literal-true
+  ASSERTION.***
+
+⇒ ***Each detector read a FORM and never asked its ROLE — the first standing guard, twice, in one
+pair of instruments, each one finding it in the other.***
+
+**MY SIDE IS REPAIRED HERE** *and the repair loses nothing: the two reach modes and the two shadow
+modes now carry NAMES (`AS_R7208` / `DISAMBIGUATED`, `PAPERS_INTACT` / `BODIES_EMPTY`), which is what
+the call sites wanted anyway. The receipt gates that it carries zero bare `True` literals in argument
+position, so the form cannot come back.*
+
+**`70`'s SIDE IS NOT EDITED — here is the patch shape instead.** *The `LITERAL-TRUE` rule should ask
+the node's role before flagging it: a `True` that is an element of a `Call`'s `args` or `keywords` is
+a PARAMETER and not an assertion, and the same goes for a `True` inside a `List`, `Tuple`, `Dict` or
+`Set` being built. ⌗ **The narrow form is enough:* `*skip a `Constant(True)` whose immediate parent is
+a `Call`'s argument list*`**, which is a parent-map pass the rule does not currently make.* ⇒ *Its
+current reach makes every keyword-free boolean parameter in the tree a counted cannot-fail site, so
+the `21`-owed figure may be carrying others of the same kind. **I have not measured that, because
+measuring it means reading `70`'s instrument as the subject rather than as a tool, and that is
+`70`'s call and not mine.***
+
+⚠ *Worth saying plainly: the ratchet did its job. **It went red on my first draft and the red was
+informative even though the flag was wrong** — it sent me to look at a call site that genuinely
+should have been named. A false positive that improves the code it flags is a cheap false positive,
+which is an argument for repairing the rule rather than loosening it.*
