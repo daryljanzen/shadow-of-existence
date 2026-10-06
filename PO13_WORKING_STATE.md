@@ -8922,7 +8922,7 @@ disagreement stands exactly where `r7183` leaves it.*
 ## `r7185+cc66.147` — **THE MODE EQUATION ACROSS THE BACK SEAM, IN THE CHART THE BEAD CROSSES IN**
 
 *Receipt: `P07_CR_framework/P07_the_crossing_rides_the_characteristic_that_crosses_and_the_thermal_factor_rides_the_one_that_does_not_so_two_kappa_cannot_enter_and_the_only_k_it_could_have_carried_is_three_halves.py`.
-22 checks, `rc=0`, ~2 s, `$\alpha=1$`, `$M=\alpha/3\sqrt3$`. Closed form and quadrature; no grid, no fit, no banked artefact.*
+29 checks, `rc=0`, ~2 s, `$\alpha=1$`, `$M=\alpha/3\sqrt3$`. Closed form and quadrature; no grid, no fit, no banked artefact.*
 
 ### ⓪ THE CHART IS THE TRAJECTORY
 
@@ -9011,3 +9011,150 @@ not fitted, and not needed, because `$1$` carries no scale and the ratio to the 
 `$\alpha$`-free. ⚠ **Not computed: the flux the seam radiates**, which does need the progenitor
 interior `PO-75` is live on. ⌗ **Cited, not measured:** that smooth Cauchy data on a PG slice stays
 smooth — standard hyperbolic theory; everything else above is a number in the receipt.
+
+### ⓺ THE SIGNATURE, AFTER `r7187` — READ OFF THE CHARACTERISTICS
+
+| | `$f$` | `$v+1$` | `$v-1$` | reading |
+|---|---|---|---|---|
+| outside the seam, `$r=-1.3547\alpha$` | `$-0.55109158$` | `$+2.245428273$` | `$+0.245428273$` | both speeds positive ⇒ **nothing holds `$r$` fixed; the radius is timelike** |
+| inside, `$r=-0.95470054\alpha$` | `$+0.49171014$` | `$+1.7129445$` | `$-0.2870555$` | speeds straddle zero ⇒ **static** |
+
+⇒ **the cosmological pattern, the exact reverse of a black hole's** — `r7187`'s correction on this
+member, in the chart the mode equation lives in. *Not a re-derivation of its three-member comparison.*
+
+| `$f'$` on `$r<0$`, at the seam | value |
+|---|---|
+| `$2M/r_h^2$` | `$+0.288675134595$` |
+| `$-2r_h$` | `$+2.30940107676$` |
+| sum `$=f'(r_h)=2\kappa$` | `$2.59807621135332$` — **the same `$2\kappa$` the indicial equation returns** |
+
+⇒ **so the root's simplicity, the surface gravity and the index `$-i\omega/\kappa$` are one fact**,
+forced by the sign of `$f'$` on the sheet rather than by the Nariai value.
+
+⌗ **And the unoccupied branch acquires an owner.** Inside the seam `$v<1$`, so the skimming family
+runs `$\dd r/\dd\tau=v-1<0$` — back out toward the seam at rate `$\kappa$`. On a cosmological horizon
+the static region is the bounded one, **inside**. *So the index `$-i\omega/\kappa$` branch is a static
+inside observer's; the bead arrives from outside, where nothing can hold `$r$` fixed, and crosses
+inward at speed `$2$`.* ⇒ **`r7187` does not weaken the verdict — it names whose branch the thermal
+one is.**
+
+---
+
+## `r7189+cc66.149` — **THE RESIDUAL'S OWN PERIOD, AND THE `ℓ`-DEPENDENCE THE WIDTH CANDIDATE NEEDS**
+
+*Receipt: `P15_CR_cosmology/P15_the_residual_does_not_sit_at_ell_A_it_sits_four_per_cent_off_and_the_visibility_width_candidate_predicts_an_ell_dependence_the_ratio_does_not_have.py`.
+11 checks, `rc=0`, ~2 s. All arithmetic on `r7183+cc66.145`'s banked whitened residual; no spectrum reloaded, no grid, no fit to data.*
+
+### ⓵ THE CAPTION OF `fig:acoustic-nofit`, CHECKED
+
+| quantity | caption | banked |
+|---|---|---|
+| control per bin | `1.13` | `1.1286` |
+| arm per bin | `3.00` | `3.0021` |
+| ratio | `2.66` | `2.6600` |
+| refitted pair | `0.99` / `1.58` | `0.9937` / `1.5808` |
+| bins | `179` | `179` |
+| arm fold | `1.37 ± 0.15`, `9.1σ` | `1.3729 ± 0.1512`, `9.08` |
+| refit fold | `0.81 ± 0.12`, `6.9σ` | `0.8128 ± 0.1180`, `6.89` |
+| control fold | `0.20 ± 0.11` | `0.2028 ± 0.1126` |
+
+⇒ **no defect.** ⌗ *Control recorded: `$0.81/0.12=6.75$` against the unrounded `$0.8128/0.1180=6.888$`
+— a check on a printed number's own rounded inputs reports a defect where there is none.*
+
+### ⓶ THE MODULATION BY `ℓ` SUB-BAND, AT `ℓ_A`
+
+| band | n | arm amp | arm σ | control amp | control σ | **arm/control** |
+|---|---|---|---|---|---|---|
+| `100–700` | `67` | `0.7267` | `3.20` | `0.2029` | `1.17` | **`3.58`** |
+| `700–1300` | `66` | `1.4848` | `6.47` | `0.4068` | `2.22` | **`3.65`** |
+| `1300–1900` | `46` | `2.3790` | `8.11` | `0.7173` | `3.24` | **`3.32`** |
+
+⇒ arm grows `3.27×`, **control grows `3.53×`** ⇒ the growth is the whitening's. Ratio flat to `9.5 %`
+of its mean against the `230 %` the absolute amplitude moves. ⛔ **Silk damping from a `+14.3 %`
+wider visibility acts at high `ℓ` and would make that ratio climb. It does not.**
+
+### ⓷ THE PERIOD, FITTED FREE OVER `240 ≤ p < 380` AT `0.25`
+
+| | best | `1σ` | `Δχ²` at `ℓ_A` | best`/ℓ_A` | interval width |
+|---|---|---|---|---|---|
+| arm, nothing fitted | **`312.00`** | `[308.5, 315.2]` | **`14.98`** | `1.0470` | `6.8` |
+| arm, refitted | `307.25` | `[302.2, 312.2]` | `3.38` | `1.0310` | `10.0` |
+| control, nothing fitted | `347.25` | `[336.0, 360.0]` | `8.62` | `1.1653` | `24.0` |
+
+*Errors rescaled so the best fit has `χ²/dof = 1` — conservative: it widens the interval by exactly
+the factor by which the arm is rejected.*
+
+⇒ **`ℓ_A = 298` is excluded for the unfitted arm at `Δχ² = 15.0`, a `+4.70 %` offset.** ⚠ **But the
+control prefers a longer period too, so the DIRECTION is not the arm's.** What is the arm's is the
+DETERMINATION: `3.6×` tighter, because its amplitude is `6.8×` larger.
+
+### ⇒ WHERE THIS LEAVES THE SECTOR
+
+**The sharper place is the period, not the amplitude.** *The amplitude of a modulation at a fixed
+period has no obvious parameter address; a period offset is `r_s/D_M`, which has one — the first
+candidate address not already measured shut.* ⌗ **Named, not run:** the arm's preferred period
+against the control's as a null, period free in both, the difference as the statistic. *Nothing was
+ordered.*
+
+---
+
+## `r7191+cc66.150` — **THE WIDTH SWAP, FOLDED AT `ℓ_A`, AND THE UNDO TEST**
+
+*Receipt: `P15_the_visibility_width_is_not_the_carrier_the_swap_moves_the_fold_at_ell_A_by_under_two_per_cent_and_fails_the_undo_test_in_both_directions.py`.
+11 checks, `rc=0`, ~3 s. **No instrument run** — read from `r6919+cc66.42`'s banked injected spectra.*
+
+### ⓵ WHAT THE `+14` PER CENT IS
+
+| quantity | control | arm | difference |
+|---|---|---|---|
+| visibility FWHM | `38.0424` | `43.5913` | **`+14.59 %`** |
+| `Δr_s` across the visibility | `17.3074` | `17.2941` | `−0.08 %` |
+| `dr_s/dχ` | `0.454950` | `0.396733` | **`−12.8 %`** |
+
+*The order quotes `+14.3` — the same quantity at the in-print pair; these banks are at the 185-bin minima.*
+
+### ⓶ THE PREMISE: THE SWAP WAS ALREADY CONFRONTED, AND IT AMPLIFIES
+
+| band | own: arm/control | swapped: arm/control |
+|---|---|---|
+| `100–700` | `1.0459` | `0.9876` |
+| `700–1300` | `1.0945` | `1.0965` |
+| `1300–1900` | `1.1268` | `1.3570` |
+| slope | `+0.04046` | `+0.18468` (**×4.56**) |
+
+⇒ `r6919+cc66.42` reported `+0.0226 → +0.0931` on its own binning. **Two statistics, same factor.**
+
+### ⓷ THE FOLD AT `ℓ_A` — THE COMPARISON `r7191` ADDS
+
+| arm | width | amplitude | `σ` | phase |
+|---|---|---|---|---|
+| control | own | `0.3704 ± 0.0132` | `28.07` | `36.4°` |
+| control | widened | `0.3639 ± 0.0139` | `26.10` | `36.7°` |
+| arm | own | `0.4003 ± 0.0138` | `29.03` | `35.4°` |
+| arm | narrowed | `0.4007 ± 0.0131` | `30.51` | `35.3°` |
+
+⇒ **`−1.8 %` / `+0.3°` and `+0.1 %` / `−0.1°`.** Resolved at `26`–`30σ`, so a real move was visible.
+
+### ⓸ THE UNDO TEST
+
+| direction | should move to | went to | verdict |
+|---|---|---|---|
+| widen the control | `0.4003` (the arm's) | `0.3639` | **away** |
+| narrow the arm | `0.3704` (the control's) | `0.4007` | **unmoved** |
+| arm/control gap | — | `+8.1 % → +10.1 %` | **survives, grows** |
+
+⇒ **THE VISIBILITY WIDTH IS NOT THE CARRIER.**
+
+### ⓹ THE OBSTRUCTION, FROM `ast`
+
+`ETA_LS_W` assigned once (line `600`); the only `SRCINJVIS`-consuming assignment (line `1793`) sits
+inside `If` tests over `_SRCI`. **The width is controllable only where the model's own source is
+replaced**; on the real path it is derived from the background and the recombination solution.
+
+### ⇒ WHERE THE SECTOR STANDS
+
+**Closed on the width.** *Open on `dr_s/dχ` — `−12.8 %` while `Δr_s` agrees to `0.08 %` — which with
+`cc66.149`'s `+4.70 %` period offset is the acoustic-scale route rather than the damping envelope.
+Re-pointed from `r6919`, not re-derived; not a claim, not run.* ⌗ **And it converges with `cc66.149`
+by a different route:** the width's signature is a steepening `q`-slope; the measured residual's
+arm-to-control fold ratio is flat in `ℓ`.

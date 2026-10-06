@@ -9820,7 +9820,7 @@ into it anyway; what caught it was rendering the figure and looking at it.** *Re
 ## ⚑⚑⚑ `r7185+cc66.147` — **IT CANNOT ENTER, AND HERE IS THE COMPUTATION. THE SEAM IS A CHARACTERISTIC SURFACE OF THE MODE EQUATION AND ITS TWO SPEEDS THERE ARE EXACTLY `2` AND EXACTLY `0`: THE CROSSING RIDES THE SPEED-`2` FAMILY, `e^{πω/κ}` RIDES THE SPEED-`0` FAMILY. TRANSFER `= 1`, IDENTICALLY IN `ω` AND IN `ℓ`**
 
 *Receipt: `P07_CR_framework/P07_the_crossing_rides_the_characteristic_that_crosses_and_the_thermal_factor_rides_the_one_that_does_not_so_two_kappa_cannot_enter_and_the_only_k_it_could_have_carried_is_three_halves.py`.
-**22 checks, `rc=0`, ~2 s.** No grid, no fit, no banked artefact — closed form and quadrature only, as the scope said.*
+**29 checks, `rc=0`, ~2 s.** No grid, no fit, no banked artefact — closed form and quadrature only, as the scope said.*
 
 ### ⛭⛭⛭ THE THING THAT MADE IT A CLOSED-FORM CALCULATION: THE CHART IS THE TRAJECTORY
 
@@ -9889,3 +9889,199 @@ into it anyway; what caught it was rendering the figure and looking at it.** *Re
 ⚠ ***And what is NOT computed, because your scope asked for exactly this distinction: the flux the seam RADIATES into the lap's future.*** *`$T_H=0.2067483\alpha^{-1}$` is a statement about the quantum state on this background, not about a classical mode's transfer. **A flux calculation does need the progenitor interior `PO-75` is live on. The TRANSFER did not — and that is the result, in the form you asked for it.*** *Nor does this receipt claim nothing happens between the fixing locus and the seam: `$99$` per cent of the leg lies in between and the envelope prices it. What is computed is the crossing itself, which is the `$d\to0$` limit, and that limit is `$1$`.*
 
 ⌗ *One honesty note on the step that is cited rather than computed: that **smooth Cauchy data on a PG slice stays smooth** is standard hyperbolic theory, not a measurement in this file. What the file measures are its computable parts — the chart's nondegeneracy at the root for `$M,\alpha$` free, the characteristic speeds `$2$` and `$0$`, the `$\kappa$` and `$2\kappa$` rates, the diagonal monodromy, and the index-`$0$` branch's existence, residual and `$d\to0$` transfer.*
+
+### ⛭⛭ ADDENDUM, ON `r7187` — YOUR CORRECTION IS READ, IT DOES NOT TOUCH THE VERDICT, AND IT NAMES SOMETHING THE RECEIPT WAS MISSING
+
+*`r7187` landed while `cc66.147` was on the bench. **Checked first, because a correction to the kind of horizon could have invalidated the file:** `cc66.147` names no kind of horizon anywhere — not in the receipt, not in its INDEX row, not above. The mode equation, the indices, `$\kappa$`, the characteristic speeds and the transfer are all computed from `$f$` itself with no reading of what sort of horizon the root is, **so nothing in it was exposed to the flat identity.***
+
+⌈ ***But your diagnosis applies to my file too, and it was right about it.*** *You wrote that `r7185`'s receipt could check the root order, the surface gravity, the acceleration identity and both approach parameters and still not notice the wrong KIND, **because it never computed the signature — two evaluations of `$f$`, one either side of the root.** `cc66.147` did not compute it either. **It does now**, as Part I, three checks — and read off the CHARACTERISTIC speeds rather than off `$f$`, which is the same fact in the chart the modes are carried in:*
+
+| | `$f$` | `$v+1$` | `$v-1$` | what holds `$r$` fixed |
+|---|---|---|---|---|
+| **outside** the seam, `$r=-1.3547\alpha$` | `$-0.55109$` | `$+2.2454$` | **`$+0.2454$`** | **nothing** — both speeds positive, the radius is timelike |
+| **inside**, `$r=-0.95470\alpha$` | `$+0.49171$` | `$+1.7129$` | **`$-0.2871$`** | a static observer — the speeds straddle zero |
+
+⇒ ***The cosmological pattern, and the exact reverse of a black hole's — your `r7187` result, on this member, in the crossing chart.*** *I am not re-deriving your three-member comparison; I am recording that the chart the mode equation lives in says the same thing, from the sign of each characteristic speed.*
+
+⌗ *And your decomposition recomputed: `$f'=2M/r^2-2r/\alpha^2$` on `$r<0$` is a **sum of two positive terms**, `$0.288675135+2.309401077=2.598076211$` — **which is the same `$2\kappa$` this file's indicial equation returns.** So the root's SIMPLICITY, the surface gravity, and the index `$-i\omega/\kappa$` are one fact, and it is forced by the sign of `$f'$` on the sheet rather than being a Nariai accident.*
+
+### ⛭⛭⛭ AND THE CORRECTION ADDS SOMETHING THE VERDICT DID NOT HAVE: WHOSE BRANCH THE THERMAL ONE IS
+
+*Once the kind is named, the unoccupied branch acquires an owner. Inside the seam `$v<1$`, so the skimming family runs `$\dd r/\dd\tau=v-1<0$` — back **out** toward the seam, asymptotically, at rate `$\kappa$`. A static observer is one who holds `$r$` fixed, and **on a cosmological horizon the static region is the BOUNDED one, inside.***
+
+⇒ ***So the index `$-i\omega/\kappa$` branch belongs to a static observer INSIDE the seam — and the bead is not one.*** *It arrives from outside, **where no observer can hold `$r$` fixed at all**, and crosses inward at speed `$2$`. **Your correction therefore does not weaken the verdict; it tells you whose branch the thermal one is**, and it is not the one carrying the sky's modes.*
+
+⌈ *Which is also why the result should have been expected rather than surprising, and I did not see that until your correction: at a cosmological horizon `$\kappa/2\pi$` is what the observer in the bounded region measures. **`rem:phase-open`'s static-versus-trajectory distinction is not a distinction between two descriptions of one observer at this locus — it is a distinction between two observers, only one of whom can exist on each side.***
+
+⌗ *Count corrected while I was in the file: the receipt carries **29** checks, not the `22` I wrote in the entry above and in the INDEX row. Both now read `29`. Part I is three of them; the other four were miscounted when I wrote the entry.*
+
+## ⛔ `r7185+cc66.148` — **`scoped` IS RED ON #290 AND IT IS NOT MINE: `r7185`'s PROSE REWRITE MOVED TWO SENTENCES THAT TWO OF ANOTHER SEAT'S RECEIPTS PIN VERBATIM. THE CONTENT SURVIVED; THE PINS DID NOT. THREE LINES FIX IT AND THEY ARE NOT MINE TO EDIT**
+
+*Established before anything else, because a red on my own PR is mine until proved otherwise. **It is proved otherwise, by two independent lines**, and the standing-down note is on #290 as well as here.*
+
+### ⛔ WHAT IS FAILING
+
+| receipt | check | pins that no longer match |
+|---|---|---|
+| `P15_the_seam_sec_envelope_means_is_the_front_chart_value_...` (`r7132`) | `Ⓐ②` | `_ONEPT`, `_240` |
+| `P15_the_laps_own_closure_is_a_translation_by_sqrt3_alpha_...` (`r7134`) | `Ⓐ①` | `_ONEPT` |
+
+### ⛭⛭ WHY IT IS NOT #290's, TWO WAYS
+
+1. *Both fail **identically on `origin/main`'s own head** (`3535b8ac`), run in a detached worktree — same receipts, same checks, `rc=1`.*
+2. *`red_carry.py --show` records both red **on `main`** since `32fa47ec`, from main's own run `37393236339`. They reach my PR only through `red_carry.py --union suite`, which carries main's reds forward into every scoped run — so my branch inherits them and cannot clear them.*
+
+### ⛔ THE CAUSE IS `r7185`'s OWN PROSE REWRITE, AND IT IS A REWORDING AND NOT A RETRACTION
+
+***Between `fe07f3eb` (both strings present) and `d7b1dd03` (both gone), `CR_cosmology.tex` reworded two sentences these receipts pin verbatim.*** *I traced the boundary commit by commit. **The content survives entirely** — `sec:transmission` still says both things, in the same place. Only the referring phrase moved:*
+
+```
+_ONEPT:  "one point of the substrate, which the bead meets on the way in and again one full lap later"
+      →  "one point of the substrate with the back seam the bead meets on the way in"
+
+_240:    "The branch point sits two thirds of the lap in from it ($240^\circ$, with $120^\circ$ remaining)"
+      →  "The branch point sits two thirds of the lap in from the front seam ($240^\circ$, with $120^\circ$ remaining)"
+```
+
+⇒ ***Each replacement string occurs exactly once in the current file — verified — so the patch is three lines*** *(`_ONEPT` and `_240` in the seam receipt, `_ONEPT` in the closure one) and it restores exactly what the two checks were testing.*
+
+### ⚠ AND I AM NOT APPLYING IT, FOR THE REASON THE RECEIPT ITSELF GIVES
+
+*The seam receipt's own commit body records **"no edit to `sec:envelope` or to any file but this seat's own"** — it is another seat's receipt in another seat's sector, built to a scope that forbade exactly this kind of reach. `cc66.147` touches neither file. **So: proposed, not applied.** If you want it applied by this seat, say so and it is one commit.*
+
+⌗ *No fix exists to port: no PR carries one, there is no revert, and I have opened no fix PR. And I did not spend the one re-run — a prose pin is deterministic, it fails on main's head too, and that is established directly rather than inferred, so a re-run would confirm nothing.*
+
+### ⛭⛭ ONE THING WORTH MORE THAN THE PATCH: THE GATE BUILT FOR THIS CLASS DOES NOT WATCH THIS ROUTE
+
+***`corpus/check_quote_pins.py` passes on this tree (`rc=0`) while both receipts are red.*** *So the quote-pin gate does not cover a receipt's own `_PIN = "..."` strings — only the baselined ones. **That is the `L560_pins_into_moving_prose` class arriving through the one route the gate built for it does not watch**, which is why `r7185`'s rewrite could land green on the fast job and leave the suite red on main for three revisions.*
+
+⌈ *Flagged, not acted on — a gate is a shared instrument and widening `check_quote_pins` to every receipt's own pin strings is a decision with a cost I have not measured. **But it is the same shape as `L270`'s "a translation table validated only against what it was asked to render", and it is now the second time that shape has cost a round.*** *I will build it if you route it.*
+
+## ⚑⚑ `r7189+cc66.149` — **THE CAPTION HAS NO DEFECT, AND THE ANSWER TO YOUR OPEN QUESTION IS: THE PERIOD, NOT THE AMPLITUDE. THE RESIDUAL DOES NOT SIT AT `ℓ_A` — IT SITS AT `312.0`, EXCLUDING `298` AT `Δχ² = 15.0`. AND YOUR VISIBILITY-WIDTH CANDIDATE PREDICTS AN `ℓ`-DEPENDENCE THE RATIO DOES NOT HAVE**
+
+*Receipt: `P15_CR_cosmology/P15_the_residual_does_not_sit_at_ell_A_it_sits_four_per_cent_off_and_the_visibility_width_candidate_predicts_an_ell_dependence_the_ratio_does_not_have.py`. **11 checks, `rc=0`, ~2 s.** Arithmetic on the residual this sector already banked at `cc66.145` — no spectrum reloaded, nothing fitted to data, no grid. **Nothing was ordered and nothing beyond the two things you asked was done.***
+
+### ✔ FIRST, THE CAPTION: NO DEFECT. ALL OF IT.
+
+*You said name any number that reads wrong against my run. **None does.*** *`1.13`/`3.00`/`2.66` and `0.99`/`1.58` over `179` bins agree to the digits printed; so do the fold's `1.37±0.15` at `9.1σ`, `0.81±0.12` at `6.9σ`, and the control's `0.20±0.11`. And the four layout claims hold against the generator: `Above` is `gs[0,:]`, `Below left` is `gs[1,0]`, `Below right` is `gs[1,1]`, and the refit minima really are the dashed curves. `fig:acoustic-nofit` does sit immediately after `fig:acoustic`.*
+
+⌈ ***One near-miss I am recording as a control rather than a finding, because it nearly became a false defect report.*** *`$0.81/0.12 = 6.75$`, not `$6.9$`. I had the discrepancy on screen before noticing that the significance is computed from the unrounded `$0.8128/0.1180 = 6.888$`. **A check built on a printed number's own ROUNDED inputs reports a defect where there is none** — the mirror image of this round's other lesson, and now a MUST-COME-BACK-WRONG check in the receipt so it cannot be re-found as a defect later.*
+
+### ⛭⛭⛭ AND THE ANSWER TO `say if you see a sharper one`: YES, AND IT IS ONE LAYER UNDER WHERE YOU POINTED
+
+***The figure's receipt fits the harmonic AT `ℓ_A` by construction. Nobody had asked whether `ℓ_A` is where the residual actually sits. It is not.*** *Fitted as a free parameter over `240 ≤ p < 380`:*
+
+| | best period | `1σ` | `Δχ²` at `ℓ_A = 298` | offset |
+|---|---|---|---|---|
+| **arm, nothing fitted** | **`312.00`** | `[308.5, 315.2]` | **`14.98`** | **`+4.70 %`** |
+| arm, refitted | `307.25` | `[302.2, 312.2]` | `3.38` | `+3.10 %` |
+| control, nothing fitted | `347.25` | `[336.0, 360.0]` | `8.62` | `+16.5 %` |
+
+⇒ ***Why this is the sharper place and not just another number:*** *the amplitude of a modulation at a **fixed** period has no obvious parameter address — which is exactly why the sector's `1.57` has resisted one. **A PERIOD offset is a statement about `r_s/D_M`, and that does have one.** So this is the first candidate address I have seen that is not already measured shut. ⌗ And the refit's behaviour is the same pattern the amplitude shows, in the one quantity the figure does not report: four parameters pull the period back toward `ℓ_A` without reaching it.*
+
+### ⛔ AND THIS IS A REPLY TO YOUR CANDIDATE, NOT A CHANGE OF SUBJECT
+
+*A `+14.3` per cent wider visibility is Silk damping. **It acts monotonically and strongly at high `ℓ` and barely at all at low — so it predicts an arm-to-control ratio that CLIMBS with `ℓ`.** Measured:*
+
+| band | arm amp | control amp | **arm/control** |
+|---|---|---|---|
+| `100–700` | `0.7267` (`3.20σ`) | `0.2029` (`1.17σ`) | **`3.58`** |
+| `700–1300` | `1.4848` (`6.47σ`) | `0.4068` (`2.22σ`) | **`3.65`** |
+| `1300–1900` | `2.3790` (`8.11σ`) | `0.7173` (`3.24σ`) | **`3.32`** |
+
+⌈ ***The absolute growth is real — `3.27×` across the range — and it is NOT the arm's: the control grows `3.53×` over the same bands.*** *So the growth is in the whitening, and **an amplitude read without its control would have been read as an `ℓ`-dependence.** The ratio is flat to `9.5` per cent of its mean, against the `230` per cent the absolute amplitude moves.*
+
+⇒ ***So the candidate predicts an `ℓ`-dependence the residual does not have.*** *That does not kill it — the width also moves `ℓ_A` itself, which is precisely the period question above — but it moves it from **"the next place to look"** to **"the place that has to explain a flat ratio."** If the width is the cause, it has to act through the period and not through the damping envelope.*
+
+### ⚠ AND I AM NOT CLAIMING THE OFFSET AS THE ARM'S, FOR A REASON THAT IS IN THE RECEIPT
+
+***The control prefers a longer period too — `347`, at `Δχ² = 8.62`. So a preference for a period longer than `ℓ_A` is NOT by itself the arm's.*** *What IS the arm's is the **determination**: its interval is `3.6×` tighter, because its amplitude is `6.8×` larger. The arm's period is measured where the control's is barely constrained — **which is a reason to make the measurement, not a substitute for having made it.***
+
+⇒ ***The measurement that would settle it, named and not run: the arm's preferred period against the control's as a null, with the period free in both and the difference as the statistic.*** *Cheap — it is the same banked residual. **I have not run it because nothing was ordered and because it is the kind of thing that should be a decision and not a seat's momentum.** Route it and it lands next cycle.*
+
+⌗ *Nor does any of this correct anything in print: `ℓ_A = 298` is the arm's own acoustic scale and the figure is right to fold at it. **What is new is that the residual's own period is a separable question with a different answer**, and the figure's receipt could not have found it because folding at `ℓ_A` is what it does.*
+
+⌗ *And your `r7187` correction and the `rem:phase-open` reframing are both taken — `prop:transmit` reading `the modes are not on that family` rather than `the family is a slicing's artefact` is the right statement and is better than what I wrote. I have nothing to add to it.*
+
+## ⚑⚑⚑ `r7191+cc66.150` — **THE WIDTH IS NOT THE CARRIER. THE FOLD AT `ℓ_A` MOVES BY UNDER `2` PER CENT, THE PHASE BY UNDER HALF A DEGREE, AND THE UNDO TEST FAILS IN BOTH DIRECTIONS. AND THE PREMISE IS PARTLY FALSE — THE SWAP WAS ALREADY CONFRONTED, BY THIS SEAT, AT `r6919+cc66.42`**
+
+*Receipt: `P15_CR_cosmology/P15_the_visibility_width_is_not_the_carrier_the_swap_moves_the_fold_at_ell_A_by_under_two_per_cent_and_fails_the_undo_test_in_both_directions.py`. **11 checks, `rc=0`, ~3 s. NO INSTRUMENT RUN** — `r6919+cc66.42` banked the width-swapped spectra and they are on disk, so the whole order is answerable from them. The same shape as `r7183`: the thing you ordered was already banked.*
+
+### ⛔ THE PREMISE FIRST, BECAUSE IT HAS TO COME FIRST
+
+***You wrote that the `+14.3` per cent `has never been confronted with the residual it would produce`. It has — at `r6919+cc66.42`, by this seat, on your own order.*** *That work swapped the widths, found the swap **well posed** (unlike the clock swap, which moves the comb and so cannot hold the comparison fixed), and found that **it does not neutralise the arm-to-control difference — it amplifies its `q`-dependence**. Reproduced here in a different statistic rather than quoted:*
+
+| band | own widths: arm / control | swapped: arm / control |
+|---|---|---|
+| `100–700` | `0.4816 / 0.4604` → **`1.0459`** | `0.4668 / 0.4726` → **`0.9876`** |
+| `700–1300` | `0.4462 / 0.4077` → **`1.0945`** | `0.4419 / 0.4030` → **`1.0965`** |
+| `1300–1900` | `0.2892 / 0.2566` → **`1.1268`** | `0.3101 / 0.2285` → **`1.3570`** |
+| **slope** | **`+0.04046`** | **`+0.18468`** — a factor **`4.56`** |
+
+⌈ *`r6919` reported `+0.0226 → +0.0931` on its own band binning, about fourfold. **Two different statistics, the same factor.** I am reporting this as a measurement and not acting on it, which is the rule for a false premise.*
+
+### ✔ AND THE COMPARISON YOU ADDED — THE FOLD AT `ℓ_A` — COMES BACK NULL
+
+| arm | width | amplitude | `σ` | phase |
+|---|---|---|---|---|
+| control | own | `0.3704 ± 0.0132` | `28.07` | `36.4°` |
+| control | **swapped (widened `+14.6 %`)** | `0.3639 ± 0.0139` | `26.10` | `36.7°` |
+| arm | own | `0.4003 ± 0.0138` | `29.03` | `35.4°` |
+| arm | **swapped (narrowed to the control's)** | `0.4007 ± 0.0131` | `30.51` | `35.3°` |
+
+⇒ ***Widening the control: `−1.8` per cent in amplitude, `+0.3°` in phase. Narrowing the arm: `+0.1` per cent, `−0.1°`.*** *So on the one statistic you named, **the width reproduces neither the amplitude nor the phase.***
+
+⌈ ***And it is not a null from a blunt instrument.*** *All four folds are resolved at `26`–`30σ`. A `2` per cent move is a move this statistic could easily have seen had it been there. **That distinction is the difference between a measurement and a shrug**, and it is why I ran the `σ` on each configuration rather than just the amplitudes.*
+
+### ⛔ AND YOUR UNDO TEST FAILS IN BOTH DIRECTIONS, WHICH IS STRONGER THAN ONE FAILING
+
+*You asked for it explicitly: **"A mechanism that explains the residual must also remove it when undone."***
+
+- ***Widening the control should move its fold TOWARD the arm's*** (`0.3704 → 0.4003`). **It went to `0.3639` — away.**
+- ***Narrowing the arm should move its fold TOWARD the control's*** (`0.4003 → 0.3704`). **It went to `0.4007` — unmoved to one part in a thousand.**
+- ***And the arm-to-control difference SURVIVES the swap: `+8.1` per cent becomes `+10.1`.*** The swap does not remove it; it slightly increases it.
+
+⇒ ***Two configurations cannot both be coincidences of size. THE VISIBILITY WIDTH IS NOT THE CARRIER OF THE SECTOR'S RESIDUAL*** — which is your own third branch, and it is said as plainly as you asked for it.
+
+### ⌗ AND THE OBSTRUCTION YOUR SCOPE ASKED FOR, ESTABLISHED FROM THE SYNTAX TREE RATHER THAN BY GREP
+
+***`take the control's spectrum and widen its visibility, changing nothing else` is NOT available on the real-source path.*** *Parsing the instrument with `ast`: `ETA_LS_W` is assigned exactly once (line `600`), and the only assignment that consumes `SRCINJVIS` (line `1793`) sits inside `If` tests over `_SRCI`. **So the width is controllable only where the model's own source has been replaced.** On the real path it is a derived quantity of the background and the recombination solution, and no knob scales it alone.*
+
+⌈ *Which is why every number above is the projection's transfer of a **known input**, and **no `SRCINJ` run is a spectrum of this model** — `r6919`'s standing caveat, repeated rather than inherited. What that lets the measurement say is a SHAPE statement, which is exactly the discriminant you named; what it cannot say is an absolute size against Planck, so the comparison made is of CHANGES.*
+
+### ⌗ AND IT CONVERGES WITH `cc66.149` OF THE SAME ROUND, BY A DIFFERENT ROUTE
+
+***The width's signature is a steepening `q`-slope — factor `4.56`. The measured residual's arm-to-control fold ratio is FLAT in `ℓ`: `3.58`, `3.65`, `3.32`.*** *Two statistics on two different objects, one conclusion. **I did not plan that convergence; `cc66.149` was the answer to your open question and this is the answer to your order, and they met.***
+
+### ⚠ WHAT I AM NOT OFFERING
+
+***No replacement mechanism.*** *`r6919`'s joint object — `dr_s/dχ` across the visibility, `0.454950` on the control against `0.396733` on the arm, **`−12.8` per cent, while `Δr_s` itself agrees to `0.08` per cent** — is re-pointed, not re-derived. Together with `cc66.149`'s `+4.70` per cent period offset, that is where I would look: **the acoustic-scale / kernel-sound-speed route, not the damping envelope.** Neither is a claim and neither is run.*
+
+⌗ *One consequence for the table in your order: the row `the kernel's acceptance in k` should now read as closed on the WIDTH and open on `dr_s/dχ`. Those are not the same quantity — the width is what differs, the ratio is what the kernel sees — and this round is the first time they have been separated.*
+
+## ⌗ `r7191+cc66.151` — **CI NOTE, NOT A RESULT: `r7191` LEFT TWO RECEIPTS RED ON `main` AND ON ALL THREE SEATS' BRANCHES. NEITHER IS MINE AND NEITHER IS FIXED**
+
+*This is on #290 as a comment, but comments are not what this seat reports through, so it is here too. **Nothing of mine is blocked by it** — `cc66.149` and `cc66.150` both ran green in CI, and the fast job is green on my tree.*
+
+| receipt | failing check | what it says |
+|---|---|---|
+| `L257.../V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py` | `⓹ᵇ` | `1 WARN(s) remain` — an entry naming a sentence no longer in any paper |
+| `L271.../S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py` | `⓵` | a systematics term is no longer `×0` across the seventeen paper bodies |
+
+***Established directly rather than from the carry:*** *both fail identically on `origin/main`'s own head, run in a detached worktree, and the carry records both `since f8d8e648` — **`r7191`'s own commit** — on `main` and on `-5tjf0b`, `-6awafl` and `-wgcmvt` alike. **A red that appears on every branch at the same base commit is the base's.***
+
+⇒ ***The cause is `r7191`'s own prose and registry work:*** *building the pin form paid `V1`'s WARN backlog down to one rather than to zero, and the paper edits introduced a systematics term where `S2` asserts an absence. **Both are ratchets on prose, not computation** — the same class as the pin pair that cleared this round, and the third and fourth instances of that class in two revisions.*
+
+⚠ ***I am not fixing either.*** *`V1` belongs to the line that owns the pin registry. And `S2`'s check is an ABSENCE CLAIM over the paper bodies — repairing it means **reading what `r7191` added and deciding whether the term's presence is a defect in the paper or a defect in the claim**, which is a reading and not a re-point. `r7187` is the standing example of why I do not guess at that: declining to classify another seat's document at `r7186` was right, and main's own later classification confirmed it.*
+
+⌗ ***And the pattern is now worth naming, because it is four for four.*** *Every red this seat has had to stand down on in two revisions has been a prose or registry ratchet broken by a prose edit in the same revision that landed it — never a computation. **`cc66.148` flagged that `check_quote_pins` does not cover a receipt's own `_PIN` strings; these two are the same hole in two more gates.** If you route the gate widening I offered there, these would have been caught before the push rather than after it. I still have not measured its cost, so I am still not building it unasked.*
+
+## ⌗ `r7193+cc66.152` — **A STRAY EMPTY FILE NAMED `0$` IS NOW COMMITTED AT THE REPO ROOT, FROM `r7193`. LEFT IN PLACE, BECAUSE IT IS NOT MINE TO REMOVE**
+
+*`r7193` (`00b6390e`) carries a zero-byte file whose name is `0$` at the repository root, alongside its sixteen intended ones. **Almost certainly a shell-quoting slip** — a name like that comes from an unquoted `$0` or a truncated redirect, not from anything anyone typed.*
+
+⌗ ***Checked before reporting, because the useful question is not the file but whether the slip did anything else:*** *`r7193`'s other fifteen paths are all intended content and none looks truncated or misdirected. **So it is isolated litter and not a symptom.** And it trips nothing today: `classify_documents` and `check_kind` both pass with it present, and the fast job is green on the merged tree.*
+
+⚠ ***I have not deleted it.*** *It is main's file from another seat's commit, and removing it on my branch would propagate a silent revert of part of that commit when my branch merges. **One zero-byte file is not worth that.** But it will sit at the root indefinitely and will trip the first gate anyone writes over root-level files, so it is better removed deliberately by whoever owns `r7193` than discovered later by a gate.*
+
+⌗ *Nothing else from `r7193` is mine: its orders went to `FOR_69`, and `FOR_CC66.md` is unchanged at `23db8cda` — the `r7191` I answered at `cc66.150`.*
