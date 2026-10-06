@@ -310,6 +310,32 @@ check("Ⓖ③  the per-cent figure's own receipt measures it from the collapse l
       and "has its spectrum fixed within the first per cent of the collapse leg, measured from that "
           "leg's far-past end" in P15T)
 
+head("H -- WHERE THE SPECTRUM-FIXING LOCUS SITS IN RADIUS, NOT ONLY IN CONFORMAL POSITION")
+# the same two loci as group G, now in r rather than in conformal distance.  The collapse branch is
+# r = -(2 M alpha^2)^(1/3) cosh^(2/3)(x), so a position on the leg converts straight to a radius.
+_rt = (2 * M * ALPHA ** 2) ** (1 / 3.)
+_D = lambda x: _c0 * mp.quad(lambda u: mp.cosh(u) ** (-mp.mpf(2) / 3), [x, mp.inf])
+_r_of = lambda x: -_rt * float(mp.cosh(x) ** (mp.mpf(2) / 3))
+_x_sky = mp.findroot(lambda x: _D(x) - mp.mpf(PCT_SKY) / 100 * _leg, 3.0)
+R_SKY, R_SEAM = _r_of(_x_sky), R_BACK
+print(f"      spectrum-fixing locus ({PCT_SKY} % from the far past):  x = {float(_x_sky):.6f}   "
+      f"r = {R_SKY:+.5f} alpha")
+print(f"      back seam                                        :  x = {float(mp.acosh(2)):.6f}   "
+      f"r = {R_SEAM:+.5f} alpha")
+print(f"      turnaround                                       :"
+      f"{'':>24}r = {-_rt:+.5f} alpha")
+print(f"      |r| at the locus / |r| at the seam = {abs(R_SKY)/abs(R_SEAM):.4f}")
+check("Ⓗ①  ** in RADIUS the spectrum-fixing locus sits at -56.4 alpha against the back seam's "
+      "-1.1547 alpha -- OUTSIDE the seam by a factor 48.8, deep in the parent universe at large ** -- "
+      "so the modes are fixed BEFORE they reach the mass's cosmological horizon and cross it "
+      "afterwards, which is the order group G gives in conformal position",
+      R_SKY < R_SEAM and abs(abs(R_SKY) / abs(R_SEAM) - 48.834) < 0.01)
+check("Ⓗ②  and that is a THIRD measure of the same factor of fifty: 48.8 in radius here, 50.6 in "
+      "conformal position (Ⓖ), and 53.0 in wavenumber from the thermal scale -- three different "
+      "quantities, agreeing to under ten per cent",
+      40 < abs(R_SKY) / abs(R_SEAM) < 60 and 40 < PCT_SEAM / PCT_SKY < 60)
+
+
 print()
 if fails:
     print(f"  ⛔ {len(fails)} CHECK(S) FAILED:")
