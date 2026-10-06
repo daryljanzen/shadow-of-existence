@@ -97,17 +97,25 @@ LAP = sp.sqrt(3) * al                               # one lap in the chart
 # ============================================ A. the clause the whole argument turns on
 head("A.  THE CLAUSE THE ARGUMENT TURNS ON -- LOCATED IN `P15`, NOT RECALLED")
 
-_ONEPT = ("one point of the substrate, which the bead meets on the way in and again one full lap "
-          "later")
+# ** ⛭⛭ REPAIRED r7206: `66` REWORDED THIS CLAUSE AND THE PIN WENT RED ON A REWORDING THAT CHANGED
+#   NOTHING THIS RECEIPT USES. ***  The content the argument needs is that the two chart values are ONE
+#   SUBSTRATE POINT, and the paper still says exactly that.  ⇒ ** So the repair is the corpus's own
+#   rule -- a disjunction beats a pin -- and the arms are the two REAL states of the sentence: the
+#   `r7132`-era wording and the current one.  `sum(... ) == 1` rather than `or`, so a duplication is
+#   caught too. **
+_ONEPT_ARMS = ("one point of the substrate, which the bead meets on the way in and again one full lap "
+               "later",
+               "one point of the substrate with the back seam the bead meets on the way in")
+_ONEPT_N = sum(b15.count(a) for a in _ONEPT_ARMS)
 _PHI = r"the same $\varphi$ modulo $2\pi$ in the phase $\varphi=2\pi r/\sqrt3\alpha$"
 _SEAMS = (r"The lap's seams lie elsewhere, at the two unit-speed loci "
           r"$r=-2\alpha/\sqrt3$ and $r=+\alpha/\sqrt3$")
-print(f"      one substrate point: {b15.count(_ONEPT)}x;  the phase: {b15.count(_PHI)}x;  "
+print(f"      one substrate point: {_ONEPT_N}x;  the phase: {b15.count(_PHI)}x;  "
       f"the seams: {b15.count(_SEAMS)}x")
 gate("Ⓐ① `P15` SAYS THE TWO CHART VALUES ARE **ONE SUBSTRATE POINT**, `$\\varphi$` MODULO `$2\\pi$` IN "
      "`$\\varphi=2\\pi r/\\sqrt3\\alpha$` -- *the identification is in the corpus already; what this "
      "receipt does is read off which map it is*",
-     b15.count(_ONEPT) == 1 and b15.count(_PHI) == 1 and b15.count(_SEAMS) == 1)
+     _ONEPT_N == 1 and b15.count(_PHI) == 1 and b15.count(_SEAMS) == 1)
 
 print(f"      phi(r + sqrt3 alpha) - phi(r) = {sp.simplify(PHI(r + LAP) - PHI(r))}")
 gate("Ⓐ② SO ONE LAP IS `$\\Delta\\varphi=2\\pi$`, WHICH IN THE CHART IS `$\\Delta "
