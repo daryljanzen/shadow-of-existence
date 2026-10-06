@@ -238,8 +238,15 @@ TABLE = [('ii', 'CR_cosmology.tex', 'sec:refit-bound', 'standard deviation from 
          ('iii', 'CR_cosmology.tex', 'sec:discussion', '0.6648 \\pm 0.0467')]
 per = {p: sum(1 for c, f, _, _ in TABLE if c == 'ii' and f == p) for p in PAPERS}
 print(f"    class (ii) per paper: {{{', '.join(f'{k}: {v}' for k, v in per.items() if v)}}}; every other paper 0")
-check("⇒ class (ii) is three, in ONE paper, and zero in the other seventeen",
-      per.get('CR_cosmology.tex') == 3 and sum(per.values()) == 3 and len(PAPERS) == 18, per)
+# ** ⛭ REPAIRED r7208: `len(PAPERS) == 18` asserted the SIZE OF THE CORPUS, a set any seat may add a
+#   paper to, and the label's `seventeen` went stale with it.  The content this check needs is that
+#   class (ii) is three and that every OTHER paper carries zero -- which is what is asserted now, with
+#   the paper count REPORTED instead. **
+print(f"    papers swept: {len(PAPERS)} (reported, not asserted -- the corpus may gain one)")
+check("⇒ class (ii) is three, in ONE paper, and zero in EVERY other paper swept",
+      per.get('CR_cosmology.tex') == 3 and sum(per.values()) == 3
+      and all(v == 0 for p, v in per.items() if p != 'CR_cosmology.tex')
+      and len(PAPERS) >= 18, per)
 check("⇒ *** AND NONE OF THEM, NOR EITHER HONEST BLANK, SITS UNDER AN ABSTRACT OR A CONCLUSION ***",
       all(s not in ('abstract', 'sec:conclusion') for _, _, s, _ in TABLE))
 L = BODY['CR_cosmology.tex']

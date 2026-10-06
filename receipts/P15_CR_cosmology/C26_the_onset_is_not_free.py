@@ -158,10 +158,35 @@ def main():
     unw = theta_D(lambda a: 1.0)
     w3 = theta_D(lambda a: a**3)
     w6 = theta_D(lambda a: a**6)
-    check(f'⚠ ⓷ unweighted at the true onset gives {unw:+.1f}%, above P15\'s $+9.4\\%$', unw > 9.4)
-    check(f'and weighting toward recombination brings it down: $a^3\\to{w3:+.1f}\\%$, '
-          f'$a^6\\to{w6:+.1f}\\%$ -- P15\'s $+9.4\\%$ lies between them',
-          w6 < 9.4 < unw and w3 < 9.4)
+    # ⛭⛭⛭ r7214 -- `PO-78`'s UNREAD-FIGURE BACKLOG, THIS SEAT'S OWN.  These two checks named
+    #   `P15`'s `+9.4%` in the present tense and NOTHING in this file read the paper for it, so
+    #   neither the figure's fate nor the betweenness the label asserted was ever tested.
+    #   ⛔ Three things were true and invisible.  (i) `9.4\%` was removed from THIS paper at
+    #   `r2755` (`b4f19310`) as THE ERROR and replaced by `8.2\%`, which has since gone too; it is
+    #   absent from every paper body now.  (ii) The label said `+9.4%` "lies between" the two
+    #   weightings while the CONDITION tested something else -- `w3 < 9.4` puts it ABOVE both, and
+    #   `9.4` does not lie between `8.7` and `7.8`.  (iii) The figure was the OBSERVABLE's, which
+    #   the paper now states as "moved by under a per cent", while these three numbers are
+    #   RATE-GAP scale -- two different objects, and the paper keeps them apart in its own voice.
+    #   ⇒ Re-pointed at the paper's own RATE-GAP sentence, read here and not recalled, so the
+    #   comparison is now within one object; the retired figure is asserted GONE; and the
+    #   observable is asserted SEPARATELY as the object these checks are not about.
+    _RATE_GAP = 'puts $10.8\\%$ of that gap into the diffusion length by itself'
+    _OBSERVABLE = 'moved by under a per cent'
+    _APART = 'the rate gap is not what the signature is made of'
+    _RETIRED = '9.4\\%'
+    check(f'⚠ ⓷ unweighted at the true onset gives {unw:+.1f}%, above the paper\'s OWN rate-gap '
+          f'figure of $10.8\\%$ --- READ from `P15` here and not recalled',
+          _RATE_GAP in p15 and unw > 10.8)
+    check(f'and weighting toward recombination brings it down BELOW it: $a^3\\to{w3:+.1f}\\%$, '
+          f'$a^6\\to{w6:+.1f}\\%$, both under the paper\'s $10.8\\%$ and ordered $a^6<a^3$ --- '
+          f'so the weight closes the gap FROM ABOVE, which is the direction the claim needs',
+          _RATE_GAP in p15 and w3 < 10.8 and w6 < w3)
+    check('⛭ and the figure these two checks were WRITTEN against is RETIRED, which is why neither '
+          'could notice: `$9.4\\%$` left this paper at `r2755` as the error and is absent from the '
+          'live body, while the OBSERVABLE `P15` now states is `moved by under a per cent` --- two '
+          'orders off the rate gap, and the paper separates them in its own voice',
+          _RETIRED not in p15 and _OBSERVABLE in p15 and _APART in p15)
     check('which is what a collapsing $x_e$ does, since P15\'s integrand carries $g(R)/(H x_e)$',
           'x_{e}' in p15 or 'x_e' in p15)
 

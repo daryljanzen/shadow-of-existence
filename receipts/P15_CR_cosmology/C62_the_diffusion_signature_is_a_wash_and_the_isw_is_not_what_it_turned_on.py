@@ -117,6 +117,7 @@ ORIGIN: built r4494 (node 60) discharging PO-24's narrowed question.
 """
 import math
 import os
+import re
 import sys
 
 import numpy as np
@@ -348,8 +349,19 @@ for lo, hi, lab in ((30, 1760, "P15 ceiling 1760"), (30, 2508, "all bins 2508"),
           f"{dn_:>10.4f}{sdn_:>9.5f}{abs(dn_)/sdn_:>9.1f}s")
 
 n1, c11, c21, dn1, sdn1 = res3["P15 ceiling 1760"]
-check("the 185-bin ceiling is P15's, and here the bin set IS the full one (data starts at l=30)",
-      n1 == 185)
+# ⛭⛭ r7214 -- `PO-78`'s UNREAD-FIGURE BACKLOG.  This check attributed the `185`-bin ceiling to
+#   `P15` and tested only this receipt's OWN `n1`, in a file that opened no `.tex` at all -- so the
+#   paper could have moved its ceiling and nothing here would have noticed.  ⌗ The figure is read
+#   from the paper's OWN SENTENCE and not as a bare `185`, which is the vacuous-green mode
+#   `PIN_DEBT` names: a bare number matches unrelated sentences and proves nothing.
+_P15_TEX = os.path.join(_ROOT, 'corpus', 'CR_cosmology.tex')
+_P15_BODY = re.sub(r'\s+', ' ', '\n'.join(
+    l for l in open(_P15_TEX, encoding='utf-8', errors='replace').read().split('\n')
+    if not l.lstrip().startswith('%')))
+_CEIL_SENT = 'on $185$ bins, is the better-converged'
+check("the 185-bin ceiling is P15's --- READ from the paper's own sentence here rather than "
+      "hard-coded, and it is the FULL set because the data start at l=30",
+      _CEIL_SENT in _P15_BODY and n1 == 185)
 check("** the TT SHAPE residual is a wash: under 0.6 sigma per bin after the refit **",
       math.sqrt(c21 / n1) < 0.6)
 check("** and MORE completely absorbed the higher you look — a Gaussian looks like a power law "
