@@ -18,5 +18,17 @@
     "since": "cc2226e86d8cc8f9a5377144854597ecdebb2a25"
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37404402947",
+    "since": "f8d8e648d4749de677f159596648f8d6d6062999"
+   },
+   "receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37404402947",
+    "since": "f8d8e648d4749de677f159596648f8d6d6062999"
+   }
+  }
  }
 }
