@@ -20,7 +20,7 @@ sources: [chat]
 | **STATE** | 15 |
 | **METHOD** | 40 |
 | **REFERENCE** | 26 |
-| **FORWARD** | 24 |
+| **FORWARD** | 25 |
 | **RECORD** | 96 |
 
 ## ⌗ DECLARED CLASSES
@@ -141,6 +141,7 @@ sources: [chat]
 | `FOR_66.md` | FORWARD | (declared in frontmatter) | — | c54.205 |  |
 | `FOR_66_FROM_60.md` | FORWARD | (declared in frontmatter) | — | c54.186 |  |
 | `FOR_66_FROM_70.md` | FORWARD | (declared in frontmatter) | — | c54.226 |  |
+| `FOR_69.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FOR_70.md` | FORWARD | (declared in frontmatter) | — | c54.170 |  |
 | `FOR_CC66.md` | FORWARD | (declared in frontmatter) | — | c54.202 |  |
 | `FUNCTIONAL_ANALYSIS_LEDGER.md` | FORWARD | The functional-analysis / unitarity field-bake ledger — the field that bounced, and the one routing fact it returned. Third of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
