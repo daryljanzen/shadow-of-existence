@@ -9158,3 +9158,64 @@ replaced**; on the real path it is derived from the background and the recombina
 Re-pointed from `r6919`, not re-derived; not a claim, not run.* ⌗ **And it converges with `cc66.149`
 by a different route:** the width's signature is a steepening `q`-slope; the measured residual's
 arm-to-control fold ratio is flat in `ℓ`.
+
+---
+
+## `r7197+cc66.153` — **THE PERIOD-DIFFERENCE NULL, AND WHAT THE OFFSET ACTUALLY IS**
+
+*Receipt: `P15_the_period_difference_null_is_not_significant_because_the_control_has_no_measurable_period_and_the_offset_is_exactly_a_phase_drift_at_fixed_ell_A.py`.
+10 checks, `rc=0`, ~40 s. No new spectrum, no grid. Window `100 ≤ ℓ ≤ 1900`, anchor `ℓ₁ = 222`,
+period grid `240 ≤ p < 400` at `0.25`, `4000` draws — the only four choices.*
+
+### ⓵ THE FORWARD MODEL
+
+| | |
+|---|---|
+| whitening | `L⁻¹` of the **full** `COV_TT`, not the diagonal |
+| `L⁻¹(model − data)` against all four banked `*_whitened` | **exactly `0`** |
+| perturbation identity | `L⁻¹(model − (data + Lz)) = w_obs − z`, checked to `10⁻¹⁰` |
+
+⇒ one draw `z ∼ N(0,I)` **shared by both arms** preserves their correlation (both are differences
+against the same data); a diagonal-`σ` draw would have discarded it silently.
+
+### ⓶ THE ORDERED STATISTIC
+
+| | value |
+|---|---|
+| observed `Δ = p_arm − p_control` | `−35.25` |
+| MC | `−22.86 ± 36.29` |
+| significance | **`0.97σ`** |
+| fraction of draws `≥ |Δ|` | `0.56` |
+
+### ⓷ THE DECOMPOSITION — THE RESULT
+
+| | observed | MC | determination |
+|---|---|---|---|
+| arm, nothing fitted | `312.00` | `311.79 ± 2.99` | `1.0 %` |
+| control, nothing fitted | `347.25` | `334.65 ± 35.52` | `10.6 %` |
+| arm, refitted | `307.25` | `308.24 ± 8.82` | `2.9 %` |
+
+⇒ **control `35.5` of the `36.3` error; `11.9×` the arm.** The control has no measurable period, so
+it cannot serve as a null.
+
+### ⓸ AGAINST `ℓ_A = 298`, WHICH IS REPRODUCED TO `0.15 %`
+
+| | offset | significance |
+|---|---|---|
+| arm, nothing fitted | `+14.00` (`+4.70 %`) | **`4.69σ`**, `P(p ≤ ℓ_A) = 0.0003` |
+| arm, refitted | `+9.25` | `1.05σ` |
+| two-harmonic control | `+14.25` | `4.90σ` (fundamental moves `+0.25`) |
+
+### ⓹ AND THE IDENTITY
+
+`RSS` at free period `312.0` `= 337.905977741`; `RSS` at `ℓ_A` with a linearly running phase
+`= 337.905977741`. **Identical to `0`.**
+
+⇒ **the offset IS a phase drift of `−96.6°` across `104 ≤ ℓ ≤ 1886`** — `0.268` of a period over the
+`5.98` the range spans. `ℓ_A` sets the *spacing* and the offset is `31×` its own error, so the
+carrier is the acoustic *phase*'s run with `ℓ` — the loading and the driving — **not `r_s/D_M`.**
+*Named, not measured.*
+
+⚠ **Assumption named, not supplied:** the banked spectra are point predictions with no parameter
+covariance, so this null propagates Planck's noise only. Right error for the order; not an error bar
+on refitting (the refitted row is the measured stand-in).

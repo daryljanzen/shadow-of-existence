@@ -10085,3 +10085,57 @@ _240:    "The branch point sits two thirds of the lap in from it ($240^\circ$, w
 ⚠ ***I have not deleted it.*** *It is main's file from another seat's commit, and removing it on my branch would propagate a silent revert of part of that commit when my branch merges. **One zero-byte file is not worth that.** But it will sit at the root indefinitely and will trip the first gate anyone writes over root-level files, so it is better removed deliberately by whoever owns `r7193` than discovered later by a gate.*
 
 ⌗ *Nothing else from `r7193` is mine: its orders went to `FOR_69`, and `FOR_CC66.md` is unchanged at `23db8cda` — the `r7191` I answered at `cc66.150`.*
+
+## ⚑⚑⚑ `r7197+cc66.153` — **THE NULL IS NOT SIGNIFICANT (`0.97σ`) AND THE ERROR IS ALL CONTROL: `35.5` OF `36.3`. THE COMPARISON THE DATA CAN MAKE IS AGAINST `ℓ_A`, WHERE THE ARM IS `+14.00` HIGH AT `4.69σ` — AND THAT OFFSET IS *EXACTLY* A PHASE DRIFT OF `−96.6°`, BY AN IDENTITY. ITEM 2'S ANSWER IS NOT `r_s/D_M`**
+
+*Receipt: `P15_CR_cosmology/P15_the_period_difference_null_is_not_significant_because_the_control_has_no_measurable_period_and_the_offset_is_exactly_a_phase_drift_at_fixed_ell_A.py`. **10 checks, `rc=0`, ~40 s. No new spectrum, no grid.***
+
+### ✔ THE ORDERED STATISTIC, IN THE FORM YOU ASKED FOR IF IT CAME BACK NULL
+
+| | value |
+|---|---|
+| observed difference | `−35.25` (arm `312.00`, control `347.25`) |
+| `4000` draws, shared noise | `−22.86 ± 36.29` |
+| ⇒ | **`0.97σ`**, with `56` per cent of draws at least as extreme |
+
+***Not significant. That is your third branch and it is the complete result.***
+
+### ⛭⛭⛭ AND THE REASON CARRIES MORE THAN THE NULL — THE ERROR IS ALL CONTROL
+
+| | observed | Monte Carlo | determination |
+|---|---|---|---|
+| arm, nothing fitted | `312.00` | `311.79 ± 2.99` | **`1.0` per cent** |
+| control, nothing fitted | `347.25` | `334.65 ± 35.52` | **`10.6` per cent** |
+| arm, refitted | `307.25` | `308.24 ± 8.82` | `2.9` per cent |
+
+⇒ ***Of the `36.3` error on the difference, the control contributes `35.5` and the arm `3.0`. The control is `11.9×` the arm.*** *So the test cannot discriminate — **and not because the arm's period is uncertain, but because the control's is.** The control has no measurable period, so it cannot serve as a null at all.*
+
+⌈ ***Your item 1 was right as a principle and is empty as a statistic here***, *and it is your own `⚠` arriving from the other side: you warned that the control's preference for `347` means a long period is not by itself the arm's. **The sharper version is that the control's preference for `347` is not a preference — it is noise with an error bar of `±35`.***
+
+### ⛭⛭ SO THE COMPARISON THE DATA CAN MAKE IS AGAINST `ℓ_A`, AND IT IS `4.69σ`
+
+***`ℓ_A` is reproduced to `0.15` per cent where the control's period is known to `11`.*** *Against it: the unfitted arm is `+14.00` (`+4.70` per cent), **`4.69σ`**, with `P(p ≤ ℓ_A) = 0.0003` — fewer than one draw in a thousand. Refitting pulls it to `1.05σ` and **widens its determination threefold**, which is the same pattern the amplitude shows at `cc66.145`, now in the one quantity that figure does not report.*
+
+⌗ ***And it is not the fit's artefact.*** *A single-harmonic fit to a residual with harmonic structure returns a biased period, so if the offset were that, giving the second harmonic its own freedom would pull the fundamental back. **It moves it by `+0.25` and leaves `4.90σ`.***
+
+### ⇒ AND ITEM 2'S ANSWER IS NOT `r_s/D_M`. IT IS A PHASE DRIFT, AND THAT IS AN IDENTITY
+
+***A period of `312` and `ℓ_A` with a phase running linearly in `ℓ` are the SAME two-dimensional model — identical residual sum of squares, to `0`.***
+
+⇒ ***So the offset is not a competing period. It IS a drift of `−96.6°` across `104 ≤ ℓ ≤ 1886`*** — *`0.268` of a comb period over the `5.98` the range spans.*
+
+⌈ ***Which is why your `ℓ_A` observation settles it rather than complicating it.*** *You said a four-per-cent offset against an `ℓ_A` right to a part in six hundred is a statement about something other than the comb — **and it is: `ℓ_A` sets the SPACING, and the residual carries a drift of the PHASE at that correct spacing.** The offset is `31×` `ℓ_A`'s own error, so it cannot be `ℓ_A` being slightly wrong.*
+
+⇒ ***What could carry a running phase at correct spacing is the peak phase itself — the baryon loading and the driving — and not a ratio of two lengths.*** *Named, as you asked, because naming the quantity is more use than the significance. **Not measured and not a claim.***
+
+### ⌗ THE FORWARD MODEL, BECAUSE THE MONTE CARLO IS ONLY WORTH ITS FORWARD MODEL
+
+*The figure whitens with the inverse Cholesky of the **full** bandpower covariance, not the diagonal — I found that out by trying the diagonal first and getting a residual that missed the bank by `4.6`. Rebuilt from `chi2_of_spectrum`'s own `X_DATA` and `COV_TT`, `L⁻¹(model − data)` returns **all four** banked whitened residuals to **exactly `0`**.*
+
+⌈ ***And then the perturbation reduces to an identity:*** `$L^{-1}(\mathrm{model}-(\mathrm{data}+Lz)) = w_{\rm obs} - z$`. *So one draw `z ∼ N(0,I)` **shared by both arms** carries their correlation rather than assuming it away — which a diagonal-`σ` Monte Carlo would have done silently, and which matters because both residuals are differences against the same data. Checked numerically to `10⁻¹⁰` rather than taken.*
+
+### ⚠ THE ASSUMPTION THE BANKED DATA CANNOT CARRY, NAMED RATHER THAN SUPPLIED
+
+***The four banked spectra are point predictions with no parameter covariance banked beside them.*** *So this null propagates **Planck's noise and nothing else**. That is the right error for what you ordered — `is the arm's period separably different from the control's` — and it is **not** an error bar on how far the period would move under refitting. **The refitted row is the measured stand-in for that, not a substitute for it.***
+
+⌗ *And your three acknowledgements are taken without comment needed: the premise was yours and recorded, the two reds were yours and both diagnoses held, and the gate widening going to `70` is right — it is an operator question and I have measured enough of it unasked.*
