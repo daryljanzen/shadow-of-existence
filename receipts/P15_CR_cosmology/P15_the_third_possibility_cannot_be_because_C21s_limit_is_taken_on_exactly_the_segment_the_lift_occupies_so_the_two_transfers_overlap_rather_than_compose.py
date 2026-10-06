@@ -221,12 +221,19 @@ print(f"      A / r_N = {_ratio}   (residual against 2^(1/3): "
       f"{sp.simplify(_A/_rN - 2**sp.Rational(1,3))})")
 print(f"      ⇒ the bead's COLLAPSE leg is |r| = A cosh^(2/3) >= A = 2^(1/3) r_N > r_N,")
 print(f"        so it NEVER REACHES r_N at all -- 'where the collapse leg ends' names a LEAF point")
+# ⛭⛭ r7214 -- `PO-78`'s UNREAD-FIGURE BACKLOG.  The ratio was hard-coded here and attributed to
+#   the paper in the label while this file pinned `$\Psi$` and the LCDM sentence and NOT the ratio,
+#   so `P15` could restate it and the gate would still pass on its own symbolic arithmetic.
+#   ⌗ Read from the paper's OWN SENTENCE, which states the ratio AND its `for every $M$` --- the
+#   part that makes it a ratio rather than a coincidence at one mass.
+_RATIO_SENT = 'The two therefore stand in the fixed ratio $2^{1/3}$ for every $M$'
 gate("⛭⛭⛭ `$A/r_N=2^{1/3}$` SYMBOLICALLY, so the bead's collapse leg `$\\lvert r\\rvert=A\\cosh^{2/3}"
      "\\ge A=2^{1/3}r_N>r_N$` ** NEVER REACHES `$r_N$` AT ALL **.  ⇒ *So `sec:envelope`'s \"the seam "
      "--- where the collapse leg ends\" names a point on the **LEAF's** leg and not on the bead's, "
      "which is why `r7126` was right that the two were being made to share an interval: the "
      "settlement replaced one unlabelled identification with another*",
-     sp.simplify(_A / _rN - 2 ** sp.Rational(1, 3)) == 0)
+     sp.simplify(_A / _rN - 2 ** sp.Rational(1, 3)) == 0
+     and _RATIO_SENT in b15)
 
 # the lift in its own conformal time: |r| = A |sin w|^(2/3), d(eta) ~ dw / |sin w|^(2/3)
 _f = lambda w: mp.sin(w) ** (-mp.mpf(2) / 3)
