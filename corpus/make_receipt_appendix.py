@@ -72,6 +72,14 @@ _UNI={'§':r'\S{}','°':r'\ensuremath{^\circ}','¹':r'\textsuperscript{1}','²':
 # the generator emitted them verbatim and LaTeX failed three hundred lines into a log with 'Unicode
 # character not set up for use with LaTeX' -- a failure whose cause is nowhere near its report.
 '⌗':'', '⚠':'', '⛭':'', '⛔':'', '⚑':'', '⌘':'', '⟐':'',
+# ⛭ EXTENDED r7185+cc66.147: ** `⌈` IS A REGISTER MARKER TOO -- 406 USES CORPUS-WIDE AND THE FIRST
+# ** ONE EVER TO REACH AN INDEX ROW, WHICH REFUSED `appendix_receipts_corpus.tex` AT ALL.
+# *It is the aside/indent marker in every forwarding file and in `PO13_WORKING_STATE`; it carries no
+# content a paper needs, so it degrades to nothing exactly as `⌗` does.  And by this table's own
+# lesson -- cover the FAMILY, not the glyph that was used -- the other three corners go in with it,
+# unused today and certain to be used the moment someone needs a closing marker.  A floor or ceiling
+# meant as MATHEMATICS arrives inside `$...$` and never reaches this map.*
+'⌈':'', '⌉':'', '⌊':'', '⌋':'',
 '⓵':'(1)', '⓶':'(2)', '⓷':'(3)', '⓸':'(4)', '⓹':'(5)',
 '①':'(1)', '②':'(2)', '③':'(3)', '④':'(4)', '⑤':'(5)',
 '⛯':'', '❓':'', '⇑':'', '⇓':'', '⇐':r'\ensuremath{\Leftarrow}',
