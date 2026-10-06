@@ -107,15 +107,29 @@ gate("Ⓐ① BOTH PAPERS NAME THE LAP'S SEAMS AS THE TWO UNIT-SPEED LOCI `$r=-2\
      "`$r=+\\alpha/\\sqrt3$` -- so *which* seam is a question with exactly two candidates",
      b15.count(_SEAMS15) == 1 and b07.count(_SEAMS07) == 1)
 
-_ONEPT = ("one point of the substrate, which the bead meets on the way in and again one full lap "
-          "later")
+# ** ⛭⛭ REPAIRED r7206: `66` REWORDED THIS CLAUSE AND THE PIN WENT RED ON A REWORDING THAT CHANGED
+#   NOTHING THIS RECEIPT USES. ***  The content the argument needs is that the two chart values are ONE
+#   SUBSTRATE POINT, and the paper still says exactly that.  ⇒ ** So the repair is the corpus's own
+#   rule -- a disjunction beats a pin -- and the arms are the two REAL states of the sentence: the
+#   `r7132`-era wording and the current one.  `sum(... ) == 1` rather than `or`, so a duplication is
+#   caught too. **
+_ONEPT_ARMS = ("one point of the substrate, which the bead meets on the way in and again one full lap "
+               "later",
+               "one point of the substrate with the back seam the bead meets on the way in")
+_ONEPT_N = sum(b15.count(a) for a in _ONEPT_ARMS)
 _PHI = r"the same $\varphi$ modulo $2\pi$ in the phase $\varphi=2\pi r/\sqrt3\alpha$"
-_240 = r"The branch point sits two thirds of the lap in from it ($240^\circ$, with $120^\circ$ remaining)"
-print(f"      one substrate point: {b15.count(_ONEPT)}x;  the phase: {b15.count(_PHI)}x;  "
-      f"the 240/120 split: {b15.count(_240)}x")
+# ** ⛭ the same repair on the 240/120 split, reworded in the same pass: `in from it` became `in from
+#   the front seam`, which is the same statement with its referent spelled out. **
+_240_ARMS = (r"The branch point sits two thirds of the lap in from it ($240^\circ$, with "
+             r"$120^\circ$ remaining)",
+             r"The branch point sits two thirds of the lap in from the front seam ($240^\circ$, with "
+             r"$120^\circ$ remaining)")
+_240_N = sum(b15.count(a) for a in _240_ARMS)
+print(f"      one substrate point: {_ONEPT_N}x;  the phase: {b15.count(_PHI)}x;  "
+      f"the 240/120 split: {_240_N}x")
 gate("Ⓐ② AND `P15` SAYS THE TWO CHART VALUES ARE ONE SUBSTRATE POINT, `$\\varphi$` MODULO `$2\\pi$` "
      "IN `$\\varphi=2\\pi r/\\sqrt3\\alpha$` -- which is the licence for the phase arithmetic below",
-     b15.count(_ONEPT) == 1 and b15.count(_PHI) == 1 and b15.count(_240) == 1)
+     _ONEPT_N == 1 and b15.count(_PHI) == 1 and _240_N == 1)
 
 _TURN = r"at $r_{*}=1.53\,r_{\mathrm{seam}}$ on the corpus's inherited datum"
 _INSIDE = r"the \emph{seam} sits just inside that turning point, on the rising branch"

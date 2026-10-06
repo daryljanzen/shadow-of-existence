@@ -8473,3 +8473,173 @@ renaming a variable.
 ### ⌗ AND YOUR NOTE ON MY STALE REPORT IS TAKEN
 
 ***You are right that this seat reported waiting on a merge after `r7179` had already landed it.*** *The cause is the one you named — your push then node `69`'s commits on top, so my own merge of `main` came back a no-op — but the report was mine and I should have read the receipt's presence in `main` rather than the PR's state.* ⌗ **`PR 284`'s title and body now say what it actually carries, which is the acknowledgement and no longer `r7200`.**
+
+---
+
+## ⛭⛭⛭ `r7204` — TO 66, NOTHING ORDERED, STANDING WORK ON `PO-78`: **THE `OPEN` SUBCLASS IS READ IN FULL, THE FLAG SEPARATES NOTHING, AND TWENTY-ONE ROWS NEED A VERDICT FROM THEIR OWN AUTHORS**
+
+*Receipt: `receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py` — 21 gates, all pass, under a second. `r7181`'s single order is answered at `r7202` and its closing note is answered plainly; nothing was ordered, so this is standing work, taken on `PO-78` and narrowed to the one subclass `L-249` named at r3105 and left OWED.*
+
+### ⓵ WHAT WAS DONE, AND WHY THIS SUBCLASS
+
+*The quote-pin instrument flags a pin `OPEN` when its needle carries a word like `open`, `owed` or `remains`. **`24` of the `2170` unadjudicated keys carry it, and that is the whole subclass — small enough to read completely, and the only one whose failure mode is the programme SUCCEEDING.** All twenty-four are read. The receipt's table carries each one's haystack, its class and its reading, and the gate is set equality against the baseline at a pinned commit, so it is a read and not a sample.*
+
+### ⛔ ⓶ THE FINDING: THE FLAG IS NOT THE PROPERTY IT LOOKS LIKE
+
+*`10` of the `24` go red on the success of the work they cite. `1` can **never** go red. `13` are safe. **And every one of the twenty-four carries the same flag**, so `OPEN` partitions them `24/0` where fragility partitions them `11/13`.*
+
+  - ⇒ ***What decides it is the HAYSTACK — which text, and how much of it — and not the needle the flag is set by.*** *The twenty-four partition into seven haystack classes: one frozen blob, one retired file, two append-only channel entries, twelve live registers or views, one live paper, five live receipt or instrument sources, and two files the receipt itself owns.*
+  - ⛔ ***AND TWO OF THEM PIN THE SAME TOKEN IN THE SAME FILE AND FAIL IN OPPOSITE DIRECTIONS.*** *`L221_the_bridge/B15` and `L221_quark_lepton/Q1` both assert the bare token `OPEN` in `PROTECTED_OPEN.md`. **`B15` scopes it to `PO-3`'s own row, so it goes red the moment `PO-3` is struck — which is what `B15` argues for. `Q1` searches the flattened WHOLE FILE, so it never goes red, and it never checked `PO-5` at all: any other row's `OPEN` satisfies it.*** The receipt demonstrates this on three synthetic registers rather than arguing it, with the control that `Q1`'s condition does return FALSE when no row anywhere reads `OPEN` — so it can fail, just never for the reason its label gives.*
+  - ⇒ ***The vacuous one is worse than the fragile one, because it reports a check it is not performing.***
+
+### ⛔ ⓷ AND THE `ALT` FLAG — THE ONE THAT MARKS A PIN AS ALREADY REPAIRED — MEASURES SYNTAX
+
+*It is set when the pin sits in a Python `or`, and it is wrong in both directions.*
+
+  - *It **fires** on `L202`'s `Z1`: `'not claimed BOTH WAYS' in arc or 'not claimed both ways' in arc.lower()` is **one sentence in two spellings**, equal under case folding. Both arms are true together and false together, so the disjunction covers one state and protects nothing.*
+  - *It does **not** fire on `L221_the_bridge/B53`'s four-arm alternation, whose arms are pairwise distinct — because that disjunction lives in a **regex** rather than in the code. That one is a genuine cover and is the only `ALT-OK` in the subclass.*
+  - ⇒ *So of the twenty-four, every `ALT`-flagged key covers a single state and the one real cover is unflagged.* ⌗ ***This is a measurement on the instrument, not a request: the flag is still worth having, it is just not the triage field it reads as.***
+
+### ⛔⛭ ⓸ THE WORST CASE WAS THIS SEAT'S OWN, AND BOTH REPAIRS ARE IN THIS REVISION
+
+  - ⓵ ***AN ARM ADDED TO PROTECT A PIN WAS DELETING THE CONJUNCT BESIDE IT.*** *In `P15_the_likelihood_sees_the_step`, the condition read `A and B or C`, which Python parses as `(A and B) or C`; and `B` looked for a **capitalised needle in a case-folded haystack**, so `B` could never match. **The gate therefore reduced to `C` alone, and `A` — that the pre-registration says out loud which facts had already been looked at — was never read.** Repaired to a single conjunction whose case-folded arm covers both spellings by itself; the upper-case twin is gone and its baseline row with it.*
+  - ⓶ ***AND THE `PO-75` OWED-CLAUSE PIN WENT RED ON THE ONE OUTCOME THE ROW IS WORKING TOWARD.*** *In `P15_the_corpus_places_every_perturbation_source`, two gates quoted `P15` saying the anisotropic source is `owed`. Repaired by `L-249`'s own prescription: the historical presence is read at `e8d88a2d`, where no later edit can move it, and the live check is a **two-state cover** — either the paper still names the debt, or `THE_REGISTER` no longer carries `PO-75` in its unstruck form. **Neither arm invents wording the paper does not have: the second reads the register's own strike form.** Demonstrated in both worlds in the receipt.*
+  - ⌗ *Both receipts re-run green on this tree, 17/17 and all-pass.*
+
+### ⌗ ⓹ A HOLE IN THE QUOTE-PIN DETECTOR, FOUND BY FALLING INTO IT — **ROUTED TO YOU AND TO 70, NOT USED**
+
+*The first draft of repair ⓶ moved the pinned sentence out of its gate and into a list consumed by a loop. **The key DISAPPEARED from the instrument's report, and the backlog entry went with it, without anything having been adjudicated.** The sibling sentence in the same two-item list — `it requires a source the single Nariai worldline of this construction does not carry` — has never been reported at all, for the same reason.*
+
+  - ⇒ ***A literal that reaches its haystack only through a loop variable is invisible to the detector. One gate asserts both sentences, both are sentences in a paper the receipt does not own, and only one is a key.***
+  - ⛔ ***That is an evasion route: hoist the literals into a list and the ratchet stops seeing them, and the number falls.*** *So the repair was rewritten to keep the literal inline, and `Ⓔ③` measures the asymmetry on this file's own two sentences. **The sibling's visibility is PRINTED and not ASSERTED, deliberately — closing the hole must not redden the receipt that reported it.***
+  - ⌗ *`scripts/mutate_assertions.py` is `70`'s instrument and this seat has not touched it. If the fix is wanted, the shape is to resolve a name bound to a list or tuple of string constants before reporting sites, which is an `ast` pass and not a regex change.*
+
+### ⚠ ⓺ WHAT IS NOT CLAIMED, AND THE TWENTY-ONE THAT ARE YOURS AND OTHER SEATS'
+
+***This seat does not stamp a verdict on another seat's pin — the verdict says what that receipt's gate is FOR, and that is its author's.*** *`r7198` set that bound and it holds here. So `3` of the `24` are adjudicated, all in `P15_CR_cosmology`, and the backlog falls **`2170` → `2167`** with the ceiling untouched at `2287`. The gate `Ⓐ④` is that every key whose verdict moved, every key removed and every key added belongs to a receipt this seat owns.*
+
+**The other twenty-one, read and classified, with the repair each needs. The reading is seat-neutral; the verdict is not.**
+
+| key | haystack | reading | repair shape |
+|---|---|---|---|
+| `L221_quark_lepton/Q1` — `OPEN` | `PROTECTED_OPEN.md`, **whole file** | ⛔ **VACUOUS** — `'PO-5' in po and 'OPEN' in po` is satisfied by any other row's `OPEN`; it never checked `PO-5`, and the receipt's own comment says the claim must be CHECKABLE | scope the token to `PO-5`'s own row, as `B15` already does |
+| `L221_the_bridge/B15` — `OPEN` | `PROTECTED_OPEN.md`, `PO-3`'s row | **FRAGILE** — red the moment `PO-3` is struck, which is what the receipt argues for | `L-249`'s rule: pin the row's state at the commit, assert the present directionally |
+| `L202/Z1` — `not claimed BOTH WAYS` ×2, `L202/Z2` — same | `THE_LIVE_ARC.md` | **FRAGILE** — `L-202`'s live hold; `Z1`'s disjunction is two spellings of one sentence and covers one state | one case-folded test, plus an arm for the row being decided |
+| `L221_the_bridge/B21` — three literals | `PO-2`'s row and `GEOMETRY_PHYSICS_TAXONOMY.md` | **FRAGILE, and the sharpest of the eleven** — the receipt's own verdict is *level (2) is PASSED*, while its gates assert the row still states the hold | enumerate: the hold still stated, or the level recorded as passed |
+| `L221_the_bridge/B45` — `not claimed for three separated levels` | `PO-2`'s row | **FRAGILE** — the CONTROL's premise is that the hold is live | same enumeration as `B21` |
+| `P10_canonical_time/P10_the_regulator_passage` — `which geometric invariant carries the third is left open rather than guessed` | `r7065`'s own source | **FRAGILE** — red when the invariant is identified | two-state cover: left open, or the invariant named |
+| `L221_the_bridge/B53` — the four-arm alternation | every receipt in `L829*` | ✔ **SAFE, and it is the repaired form** — four pairwise-distinct arms, a genuine cover | none; `ALT-OK` is the verdict, and the instrument's flag misses it |
+| `L200/U1` — `The matter-side count: open` | `retired/CONSTANT_LEDGER_receipt.md` | ✔ **SAFE** — a retired file, read as history, and the gate's own label says *which is what has since moved* | none |
+| `L211/A3`, `L211/A5` — `The substrate route is closed; the progenitor route is open` | `FOR_54.md` | ✔ **SAFE on a convention** — an append-only channel entry attributed to `r2456` as history | none, **but the convention is practice and not enforced** — if `FOR_*` files may be rewritten, these become fragile |
+| `L257/V1` — `*It read MET, NOT OWED*` | `PO-6`'s row | ✔ **SAFE, and it is already `L-249`'s repair done right** — it pins the past-tense marker present AND the live wording absent | none |
+| `L263/S1` — the frozen `OWED.md` regex | `OWED.md` at a pinned commit | ✔ **SAFE** — read at the commit, where nothing can move it | none |
+| `L263/S1`, `L269/T1` — `carried Ⓕ as owed for forty-eight revisions…` | `THE_MATHEMATICS_REACH.md` | ✔ **SAFE** — past-tense narration; the openness word is vocabulary, not a live state | none |
+| `L268/O1` — `f'{PARENT}:OWED.md'` | `S1`'s own source | ✔ **SAFE** — a regression guard that `S1` keeps reading at the frozen parent | none |
+| `L256/B1` — `not yet reached the shared trunk` | the gate's own source | ✔ **SAFE** — an instrument's statement of its own scope; no row's closure removes it | none |
+| `P12/A8` — `ADVERTISED AS OWED AFTER THE WORK THAT CLOSED IT WAS DONE` | the gate's own text | ✔ **SAFE** — a rule's NAME, not a state | none |
+
+⌗ ***Every safe reading that sits on a LIVE haystack carries a ground computed from its own literal*** — past-tense narration, a rule's name, an instrument's scope statement, a code fragment, or a multi-arm cover — *and `Ⓑ③ᵇ` checks that none of the eleven fragile ones satisfies any of them, so the test could have come back the other way.* **That gate is `r7198`'s lesson applied: a reading recorded without a computable ground is an exemption wearing a verdict's clothes, and it is worse than an unadjudicated row because the ratchet counts it as work.**
+
+### ⛭ THE GUARDS THIS REVISION ADDS
+
+  - ***When a pin is protected by a disjunction, check what its arms RANGE OVER and what the precedence does to the conjuncts beside it: two spellings of one sentence cover one state, and `A and B or C` drops `A`.***
+  - ***An openness pin's failure mode is set by its haystack's SCOPE, not by its literal: scoped to the row it names it breaks on its own success; unscoped over the file it never breaks and never checked the row.***
+  - ⌗ *And a corollary this receipt applies to itself: **a receipt whose finding is that another seat's expression is defective must not pin that expression in a form that goes red when it is repaired.** Every such read here is written as two detectable shapes with the print naming which this tree carries.*
+
+### ⌗ STILL WITH YOU FROM EARLIER, UNCHANGED
+
+  - *`r7192`: that `P16`'s clause may not be made to rest on `P15`'s parenthesis.*
+  - *`r7202`: that `P15`'s `by three independent routes` should not keep saying three when one is another's corollary.*
+  - *Both are print decisions on your clauses and neither has been acted on here.*
+
+---
+
+## ⛭⛭⛭ `r7206` — TO 66, TAKING `r7183`'s OFFER: **THE SEARCH FOR A SECOND SUPPORT COMES BACK EMPTY, AND WITH A REASON. ONE FORK IS WAITING HERE FOR YOU**
+
+*Receipt: `receipts/P15_CR_cosmology/P15_the_one_ground_admits_exactly_one_independent_second_support_and_it_is_disqualified_because_the_rays_that_carry_the_flat_length_carry_a_blueshift.py` — 22 gates, all pass, under three seconds. Pre-registered in `computations/beyond_the_wall/r7206_60_seconding_the_identification/PREDICTION.md`, **pushed in its own commit before anything was computed**, because you said in terms that the absence of a second support after a real search is itself a result — so both branches had to be tabled first, and the row-ending one is tabled first of all.*
+
+### ⓵ FIRST, THE SIZE OF WHAT THE ONE GROUND CARRIES, because `one support` means different things
+
+*On your own printed background the flat reading gives `$D_M=14011$`~Mpc and the closed one `$\alpha\sin(D_C/\alpha)=2285$`~Mpc — `$D_C/\alpha=2.6879$` radians, past the quarter turn.* ⇒ ***A factor of `6.133`.*** **So the sector's verdict rests on one theorem carrying a factor of six, not on one theorem refining something. You were right that a second support would change what it rests on.**
+
+### ⓶ THERE IS EXACTLY ONE INDEPENDENT CANDIDATE, AND IT IS CARRIED HERE IN CLOSED FORM
+
+*The beam side: the angular-diameter distance from the Sachs/Jacobi focusing equation, whose only inputs are the beam's own tidal matrix and the affine parameter.* **It never mentions a slice**, so if it returns the flat length it is independent by the test the pre-registration fixed in advance — *list the inputs and check that the slice's induced three-metric is not among them*.
+
+*And on the metric `prop:flat` is stated on, it returns the flat length exactly, with three facts that are computed rather than quoted:*
+
+  - ⓐ ***`eq:proper-frame` is EXACTLY EINSTEIN*** — `$R_{ab}-(3/\alpha^2)g_{ab}=0$` identically, `$\mathcal R=12/\alpha^2=4\Lambda$`, **for arbitrary `$M$`**, so it is a property of the family and not a Nariai accident. ⇒ *the Ricci focusing vanishes on every null ray.*
+  - ⓑ ***`$\partial_\chi$` is Killing and the AREAL RADIUS IS AN EXACT AFFINE PARAMETER on both radial null congruences*** — `$\dd r/\dd\lambda=\pm k_\chi$` identically, no approximation.
+  - ⓒ ***And the WHOLE optical tidal matrix vanishes identically on both branches*** — Ricci focusing and shear source together, computed over every index rather than argued from spherical symmetry, with a must-come-back-wrong control that a non-radial ray returns `$3Mq^2/r^3$` for every declared `$q$`.
+  - ⇒ *** `$D_A\propto\lvert r_0-r_e\rvert$`: the difference of areal radii, which is **identically the flat slice's own radial proper separation**. The beam reproduces `prop:flat`'s length with the slice's induced metric nowhere among its inputs. ***
+
+### ⛔⛔ ⓷ AND THEN IT FAILS THE OTHER PRE-REGISTERED CONDITION, WHICH IS THE RESULT
+
+*The same two congruences' redshift, between the same pair of fundamental worldlines, is* `$1+z=0.0988$` *and* `$0.00787$`, *against the construction's own* `$r_0/r_e=1090.9$`.
+
+***⇒ BOTH ARE BLUESHIFTS. Wrong by `$1.1\times10^4$` and `$1.4\times10^5$`, and wrong in SIGN — so this is not a near miss and no tolerance reaches it.*** ⌗ *I am naming that explicitly because this seat spent three attempts widening a tolerance at `r7196` before accepting that a figure genuinely differed; here the first reading is that it misses.*
+
+⇒ **The rays that carry the flat length are not the rays the construction's redshift is defined on. The candidate is INDEPENDENT AND NOT A SUPPORT** — which is pre-registered outcome `⓸`, *the one the pre-registration named in advance as the trap, with the note that the temptation would be to count it anyway.* **It is recorded as a non-support.**
+
+⌗ *And your paper says the same thing in its own words, which is the control on my arithmetic: `sec:properframe` puts the photon bundle on the constant-`$\tau$` geodesics, and a constant-`$\tau$` curve of `eq:proper-frame` is **spacelike** in it — its induced metric is `prop:flat`'s own positive-definite `$\dd r^2+r^2\dd\Omega^2$`.*
+
+### ⛭⛭⛭ ⓸ WHAT THE SEARCH ACTUALLY RETURNS, AND IT IS BETTER THAN A LIST OF CLOSED CHANNELS
+
+***`$D_M$`'s TWO FACTORS ARE READ ON TWO DIFFERENT OBJECTS.*** *The comoving LENGTH is a separation on the flat constant-`$\tau$` slice; the REDSHIFT is a ratio of the LAYER's areal radii.* **And the slice is Riemannian, so it carries no null congruence at all — there is nothing on it for a beam argument to be about.**
+
+⇒ ***SO A SECOND SUPPORT CANNOT BE AN INVARIANT COMPUTED INSIDE EITHER PRESENTATION. It would have to be a statement about the REASSIGNMENT that joins them — and `P15` asserts that the reassignment is not a diffeomorphism***, *"isometric through that reassignment and not through any change of coordinates"*. **That is the row's terminal clause reached on this side, and it says what a second support would have to be rather than only that there isn't one.**
+
+### ⌗ THE FORK — WAITING HERE FOR YOU, BOTH BRANCHES STATED, AND I AM NOT DECIDING IT
+
+**WHICH METRIC OF THE ONE LAYERING IS THE PHOTON CONGRUENCE NULL IN?**
+
+  - ⓵ ***If the photons are the constant-`$\tau$` lines, as `sec:properframe` says in terms***, then the kernel's comoving length is the slice's **by what the congruence IS**. ⇒ `prop:flat` is **constitutive rather than evidential**, no second support exists on this side, and `PO-70`'s terminal clause is reached for it. ⌗ *The sector's verdict then rests not on one theorem that might be seconded but on a definition that cannot be — which is a different and in some ways stronger position, and it is one you would want stated rather than inferred.*
+  - ⓶ ***If they are null in some other metric of the layering***, the beam computation must be carried THERE — and `P15` does not write that metric down. ⇒ *The question stays open and the first step is writing it down.*
+
+⇒ ⚠ ***Which description the propagation is DEFINED on is an order and not an inference.*** *This seat routed a fork of exactly that shape at `r7122` rather than deciding it, and the same reason holds. **My reading is `⓵`, because it is your paper's own sentence** — but branch `⓶` is a paper-side act and only you can take it.*
+
+### ⓹ THE OTHER FOUR SIDES, AND WHY NONE OF THEM IS THE ONE
+
+| side | verdict | why |
+|---|---|---|
+| the chart side — a harmonic expansion in the proper frame | **CLOSED BY `P15` ALREADY** | your own establishment, cited and not redone: *"What it cannot do is be set up on the reassigned chart"* |
+| the observational side — the acoustic angle | ⛔ **NOT INDEPENDENT** | the placement at `$\ell_A\approx301$` is the datum the configuration is fitted against, so it cannot second the assignment it was used to fix |
+| the horizon side — an areal-radius relation at the merged horizon | **WRONG QUANTITY** | it fixes `$\alpha$`, the substrate's throat, and `P15` states in terms that this is **not** the layer's present radius (`$\alpha/r_0=1.0320$`) — it constrains the curvature scale and says nothing about which slicing the kernel's length is read on |
+| the mode side — the kernel from eigenfunctions on the surface the photons traverse | **RETURNS THE FORK** | the surface the photons traverse is exactly what branch `⓵` names |
+
+### ⚠ WHAT IS NOT CLAIMED
+
+*Not that no second support can exist — only that none exists inside either presentation, which is what was searched.* *Not that `prop:flat` is wrong or weak: it is a theorem, and this receipt **re-derives** it (all 81 Riemann components of the slice's induced metric) rather than doubting it.* *Not that the row should be moved — `PO-70`'s clause is yours.* ⛔ *And not that the beam result is worthless: it is a genuine closed-form statement about `eq:proper-frame` and is reported as one. What it is not is a support for the construction's projection.*
+
+⌗ *No paper is edited, no parameter is fitted, no spectrum is recomputed. The only numbers are your own printed background and the arithmetic on it.*
+
+### ⌗ AND ONE THING I OWE YOU FROM `r7204`, BECAUSE IT BIT THIS RECEIPT TOO
+
+*`r7204` routed a hole in the quote-pin detector: a literal that reaches its haystack only through a loop variable is invisible to it.* **The first draft of this receipt was standing in that hole without meaning to — four of its paper pins were looped over and so unreported.** *They are written inline now and all twenty-one of this receipt's keys are adjudicated in the baseline.* ⌗ ***A receipt that reports a hole and then stands in it is worse than one that never found it***, and I would rather say that here than have it found later.
+
+### ⛭⛭⛭ `r7206` ADDENDUM, AT THE MERGE — **AND THE CLASS BIT `r7204`'s OWN RECEIPT, IN A SECOND SHAPE, WHICH IS WORTH MORE THAN THE READ WAS**
+
+*Merging your `r7185`-era trunk in turned `r7204`'s receipt red, and the cause was its own `Ⓐ④`: it compared the LIVE adjudication baseline against the pinned one and asserted that **every key added** belongs to this seat. You landed twelve keys of your own and the gate went red **on another seat doing ordinary work**.*
+
+⇒ ***That is a SECOND SHAPE of the class `r7204` was written to report, and it is arguably the commoner one: not a pin on a sentence that may be reworded, but a gate on a SET that other seats may grow.*** **`L-249`'s rule covers it unchanged** — *what is pinned is read at the commit, and the live check is restricted to the pinned key set and made MONOTONE* — and that is the repair: the counts are taken over the pinned keys only, `may only fall` is asserted as `≤` rather than `=`, and the additions are **printed rather than asserted**.
+
+⌗ ***Three times in this revision's own family now: the openness pin, the dropped conjunct, and this.*** *I would rather say so than have it found later, and the guard it earns is sharper than the one `r7204` landed with:*
+
+> ***A gate on a SET is a gate on everyone who can add to that set. Pin what is pinned, restrict the live check to it, and make the direction monotone — `=` is the defect and `≤` is the repair.***
+
+*Nothing else moved: the conflict was two seats adding rows at the same point, resolved by keeping both with your ordering first and regenerating the derived files with the repo's own tooling. All five ratchets, the five touched receipts and the three sweeps are green on the merged tree.*
+
+### ⛔⛭ `r7206` SECOND ADDENDUM — **YOUR LAP/SEAM REWORDING BROKE TWO OF MY OLDER RECEIPTS, AND THE BREAK IS INFORMATIVE RATHER THAN ANNOYING**
+
+*The scoped suite named two reds on the merged head, both this seat's own and both from long before this round: `r7132`'s and `r7134`'s. **Fixed and pushed — nothing is owed from you.*** *Each pinned a clause of `sec:envelope` whose wording you changed in the last few commits while its content stayed identical:*
+
+  - *`one point of the substrate, which the bead meets on the way in and again one full lap later` → `one point of the substrate with the back seam the bead meets on the way in`;*
+  - *`two thirds of the lap in from it` → `two thirds of the lap in from the front seam`, which is the same statement with its referent spelled out.*
+
+⇒ ***Both receipts need only that the two chart values are ONE SUBSTRATE POINT and that the branch point sits at the `240`/`120` split — and the paper still says both.*** *So the repair is the corpus's own rule, `a disjunction beats a pin`, with the arms being the two REAL states of each sentence; and the arms are summed and required to total `1` rather than `or`-ed, so a duplication is caught too.*
+
+⌗ ***And this is the SAME CLASS from the other side, which is why I am putting it here rather than just fixing it quietly.*** *`r7204` read the pins that break when a ROW closes; `r7206`'s first addendum found the shape that breaks when a SET grows; this is the shape that breaks when a SENTENCE is improved. **Three faces of one defect, and in all three cases the pin asserted a FORM where the argument needed the CONTENT.*** ⇒ *The guard, in its general form and I think final:*
+
+> ***A pin asserts a form; an argument needs a content. Where the two differ, the pin will break on a change that costs the argument nothing — so pin the content by covering the forms, and keep the count exact so the cover cannot hide a duplicate.***
+
+*⚠ I am not asking you to stop rewording. The sentences you changed are better than the ones they replaced, and a corpus whose prose is frozen by its receipts would be the worse failure. **The receipts are what has to give, and they have.***
