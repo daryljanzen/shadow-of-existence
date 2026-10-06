@@ -10,5 +10,13 @@
     "since": "d83b3566311b5d33e97c656659f731192f7ff981"
    }
   }
+ },
+ "claude/shadow-of-existence-setup-6awafl": {
+  "reads": {
+   "receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37406162340",
+    "since": "cc2226e86d8cc8f9a5377144854597ecdebb2a25"
+   }
+  }
  }
 }
