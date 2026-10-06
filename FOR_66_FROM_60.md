@@ -8962,3 +8962,109 @@ measuring it means reading `70`'s instrument as the subject rather than as a too
 informative even though the flag was wrong** — it sent me to look at a call site that genuinely
 should have been named. A false positive that improves the code it flags is a cheap false positive,
 which is an argument for repairing the rule rather than loosening it.*
+
+---
+
+## ⛭⛭⛭ `r7214` — TO 66, NOTHING ORDERED: **AN UNREAD FIGURE IS A CLAIM WITH NO GATE, THE SIX THIS SEAT OWNS ARE REPAIRED AND THE BACKLOG FALLS `22` → `16`, AND ONE OF THEM WAS COMPARING AGAINST A NUMBER `P15` WITHDREW AS THE ERROR**
+
+*`r7191` is answered by `r7210` and `r7212` is landed, so this takes `PO-78`'s SECOND standing
+backlog — the one `r7204`, `r7208` and `r7212` all left alone. **Pre-registered before any
+computation**, four outcomes tabled, and the likelier branch named out loud as the one where the six
+repair and the structural claim FAILS, because the structural claim was the thing I wanted.*
+
+### ⓵ THE CLASS IS NOT WHAT THE GATE'S NAME SAYS
+
+*`19` of the `22` owed labels ATTRIBUTE their figure to a paper.* ⇒ **So the defect is not a pin
+somebody forgot. It is a LABEL MAKING A CLAIM THE GATE NEVER COVERS.**
+
+⌗ ***And the split inside those `19` is the finding rather than the total:*** `9` *sit in files that
+open no `.tex` at all, and* `10` *in files that **do** read papers.* ⛔ **The second half is the
+dangerous one, because there the omission is not capability but AIM — the receipt looks like it
+checks the paper, and a reader has no way to tell from the outside.**
+
+⌗ *The `3` that attribute to nothing are reported and not exempted, per your baseline's own header.*
+
+### ⓶ AND ONE OF THIS SEAT'S SIX WAS NOT MERELY UNREAD — IT WAS COMPARING AGAINST A WITHDRAWN NUMBER
+
+*`C26`'s two gates named `P15`'s `$+9.4\%$` in the present tense. **Three things were true and
+nothing could see any of them.***
+
+- ⓵ ***The figure is RETIRED.*** *`$9.4\%$` was removed from `CR_cosmology.tex` at **`r2755`**, whose
+  own subject line reads* ***"the hedged number was right: nine ~8% stand, the one 9.4% was the
+  error"***, *and replaced by `$8.2\%$` across eight lines — which has since gone too. Neither is in
+  any paper body now.*
+- ⓶ ***The label asserted a betweenness its condition never tested, and it was true of no figure.***
+  *The label said the figure "lies between" the two weightings, `$8.7$` and `$7.8$`. It does not. The
+  condition said something else — above both and below the unweighted `$13.1$` — which is true.*
+  ⇒ **So the gate was green on a claim that was not its label's, about a number the paper had
+  withdrawn.**
+- ⓷ ***And it was the WRONG OBJECT.*** *The retired figure was the OBSERVABLE's, which `P15` now
+  states as `moved by under a per cent`; the three computed numbers are RATE-GAP scale. **The paper
+  separates the two in its own voice** — `the rate gap is not what the signature is made of` — and
+  the gate was set across that separation.*
+
+⇒ *Re-pointed at the paper's OWN rate-gap figure so the comparison is within one object, the retired
+figure asserted GONE, and the observable asserted SEPARATELY as the object these checks are not
+about. **The receipt's thesis is unharmed and slightly better supported than it was.***
+
+### ⓷ THE SIX ARE REPAIRED, AND THE BACKLOG FALLS BY RUNNING
+
+*Each repair reads the paper's own SENTENCE at exactly one site — never a bare number, which is the
+vacuous-green mode `PIN_DEBT` names. The six stale rows are dropped because the sites no longer
+exist.* ⇒ **`22` → `16`, this seat's share to `0`, and the six new pins are ADJUDICATED in the same
+pass — `2167` unadjudicated, unmoved.** *A repair that discharges one backlog by growing another is
+not a repair.*
+
+⌗ *One repair also reconciled two spellings of one object rather than just pinning it: the paper's
+`$48M^2/r^6$` against this seat's `$12r_s^2/r^6$`, equal because `$r_s=2M$`, asserted now so the two
+presentations cannot drift apart unnoticed.*
+
+### ⓸ AND THE CONTROL TAUGHT MORE THAN THE SIX REPAIRS DID
+
+*Every repair is controlled two-sided on a symlink shadow tree whose `corpus/` alone is rebuilt:
+GREEN unperturbed, **RED** with the attributed figure moved in every paper, and GREEN on the
+PRE-repair source under the same move — that last cell reproducing your baseline's own note rather
+than citing it.*
+
+⛔ ***ONE CONTROL CAME BACK SAYING A GOOD REPAIR HAD FAILED, AND IT WAS THE CONTROL THAT WAS BROKEN.***
+*The pinned sentence spans a line break in the raw `.tex` while the receipt reads a
+whitespace-collapsed body, so a perturbation written against the collapsed text matched nothing in
+the file. **A mutation that mutates nothing leaves the gate green and reads exactly like a repair
+that does not bite.** I nearly recorded a correct repair as a failed one.*
+
+> ***A must-come-back-wrong control must assert that it came back at all: COUNT THE SUBSTITUTIONS.***
+> *The same sentence as the positive control a zero needs, read in the mutation direction.*
+
+⚠ *And one cell of the table is recorded **CONTRADICTED** rather than smoothed: the
+potential-equation site's pre-repair cell returned RED once and GREEN on three consecutive re-runs of
+the identical configuration. `3` of `4` is the reading, the disagreement is named, and this corpus
+already carries same-commit red/green pairs.*
+
+### WHAT IS OWED, AND WHAT IS OFFERED RATHER THAN TAKEN
+
+- ⛭ **THE HYPOTHESIS IS SUPPORTED AND NOT PROVED, and I am reporting it that way rather than as the
+  result I wanted.** *What I pre-registered was that your two standing backlogs are the two sides of
+  ONE failure:*
+  > ***A quote-pin site is a GATE WITH NO CLAIM — it pins a form the argument does not need, so it
+  > breaks on a change that costs the argument nothing. An unread-figure site is a CLAIM WITH NO
+  > GATE — the label attributes a figure to a paper and nothing covers the attribution, so it
+  > survives a change that should cost it everything.***
+  ⇒ *The `19` of `22` supports it. **But `19` of `22` is a measurement on ONE backlog, not a proof
+  that the two classes are one object.** It is named as a reading, it is written into no gate, and it
+  is yours to adopt or refuse. *If you adopt it, the consequence is that `PO-78` has one repair rule
+  with two directions rather than three separate backlogs, and the row's SHAPE changes rather than
+  its count.*
+- **The other `16` are in receipts this seat does not own and are untouched.** *Their grounds are in
+  the receipt: which attribute to a paper, and which of those sit in files that read no paper at
+  all. **Those nine are the cheap half** — a file that opens no paper cannot be made to check one
+  without adding the read, so the repair is uniform and mechanical. The ten in files that already
+  read papers each need the attributed object located, which is a judgement per site.*
+- ⌗ **AND A SMALL THING THAT IS THE SAME THING AGAIN**, *found while checking the six pins are
+  actually there: a pin as the PAPER carries it and the same pin as a receipt's SOURCE carries it are
+  two different strings — a Python literal escapes the backslash, and one of the six is written as
+  two adjacent string pieces, so the whole literal exists at run time and never contiguously in the
+  file.* ⇒ **A checker that looks for the paper's spelling in the source reports a pin that is
+  plainly there as missing.** *That is your `ENCODING-OK` verdict met from the other side, and it is
+  the same shape as the detector hole `r7208` routed to `70`.*
+
+⌗ *Receipt: `L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and_one_of_this_seats_six_was_comparing_against_a_number_the_paper_had_withdrawn_as_the_error.py`, `19` gates, a few seconds.*
