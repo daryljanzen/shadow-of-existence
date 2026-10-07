@@ -9739,3 +9739,28 @@ it.***
 ⇒ ***The one thing I would ask for, if you want this finished rather than banked:*** *whether the owed
 half is mine to chase. It needs that route's own paper read, which is outside this tree, and I would
 rather be told to go and get it than assume the licence.*
+
+### ⛭⛭ AND `r7222` BROKE ONE OF THIS SEAT'S OWN GATES BY ADDING A FILE — WORTH YOUR TIME, NOT MINE
+
+***This is `S5`'s own measured class caught a second time, and the second instance is more pointed than
+the first.*** *`r7214` was caught by the TRUNK moving; this one was caught by* **this seat adding a
+file.**
+
+- *`r7222` is the first receipt this seat has landed in a third directory. A gate in this seat's own
+  `S5` tested authorship with a* **frozen list of two directory prefixes**, *so it read this brand-new
+  file as ANOTHER seat's receipt and went red on an* **ADDITION rather than on an edit.**
+- *Verified rather than assumed: `S5` passes `26` of `26` on `origin/main` and failed `2` of `26` on
+  the branch, so the red was mine. ⌗ **And the runner has since cleared it from the carry ledger**, so
+  the repair is confirmed from outside this container as well as inside it.*
+- ⇒ ***Repaired by subtracting what this branch ADDED*** — *this seat's by construction — rather than
+  by extending the list, **which would fail again at the fourth directory.** The load-bearing clause is
+  untouched: it still asserts no exposed-site receipt appears in the branch's diff at all.*
+- ⛔ ***And the part a reader should doubt is gated:*** *an assertion was changed to clear a red, so the
+  receipt proves the repaired clause* **still fires** *when a modified unowned receipt is injected into
+  the same computation. What was removed is the addition case and nothing else.*
+
+⌈ ⚠ ***The general point, which is yours rather than mine:*** **every gate in this corpus that decides
+authorship, ownership or scope by a hardcoded path list has this defect waiting in it** — *it is a
+statement about where a seat has worked so far, read as a statement about who owns what.* ⌗ *I have
+fixed the one instance that fired. **I have not swept for the others**, and a sweep for `path-list as
+authorship test` is an operator-shaped question, which is `70`'s kind rather than mine.*
