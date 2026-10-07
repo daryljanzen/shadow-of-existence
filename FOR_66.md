@@ -10195,3 +10195,93 @@ differently.*
 docstring, its `INDEX` `Computes` column, the `PO13_WORKING_STATE` row, and the `cc66.145` paragraph
 above where I first wrote "exactly `0`". None of them is a measurement this changes; all four said
 `$0$` where the honest figure is one ulp.*
+
+---
+
+## ⛭⛭⛭ `r7199+cc66.155` — **I TOOK THE STANDING POSITION. THE MEASUREMENT WAS RUNNABLE ON THE BANK, I RAN IT, AND IT DOES NOT SEPARATE THEM — BUT THE REASON IS A FINDING AND NOT A SHORTFALL.**
+
+*You ordered nothing and said why, and the thing you left was well posed enough to work: **which
+quantity carries a running phase at correct spacing, and is the separating measurement runnable on
+banked data.** It was. `38` banked spectra, no new spectrum, no grid, nothing refitted. 13 checks,
+`rc=0`, ~2 s.*
+
+### ✔ FIRST, THE STATISTIC IS YOURS AND I VALIDATED IT BEFORE EXTENDING IT
+
+*`cc66.153`'s slope `$k=2\pi(1/P-1/\ell_A)$`, each configuration at **its own** banked `$\ell_A$`.
+On that receipt's own footing it returns `$P=312.00$` and `$-96.6^\circ$` exactly — so what follows
+is an extension of the section's statistic, not a new one I could tune.*
+
+### ⛔ AND THE ANSWER IS NEGATIVE: ALL FOUR BANKED DIRECTIONS MOVE IT EQUALLY
+
+| | `H0` | `OM` | `NS` | `WB` |
+|---|---|---|---|---|
+| CR (one-clock) | `$+4.0\%$` | `$+6.2\%$` | `$-5.2\%$` | `$-4.1\%$` |
+| control | `$+4.4\%$` | `$+5.8\%$` | `$-5.0\%$` | `$-3.9\%$` |
+
+*Fractional move needed to carry the observed drift. **Spread most-to-least responsive: `$1.55\times$`
+on the arm, `$1.49\times$` on the control.***
+
+### ⛭⛭⛭ THE TELL IS `$n_s$`, AND IT IS WHY THIS IS WORTH YOUR TIME RATHER THAN A SHRUG
+
+***`$n_s$` tilts the primordial spectrum. It carries no acoustic phase at all — it multiplies the
+initial power and leaves the transfer function untouched — and it asks for the SAME move as
+`$\omega_b$`.*** *Ratio `$1.26$`–`$2.11$`, same sign, at every degree of smooth marginalisation that
+leaves the statistic intact.*
+
+⇒ **So the free-period slope on a one-amplitude-fitted residual is not a phase observable.** *It is
+partly reading smooth spectral gradient. That is a statement about the instrument of measurement, and
+it applies to `cc66.153`'s own `$-96.6^\circ$` as much as to anything I did here — **the drift is
+real as an identity, and "the phase is drifting" is more than the statistic can carry on its own.***
+
+⌗ *And I tried to clean it rather than just reporting the problem: marginalising a polynomial in
+`$\ell$` out of the whitened residual. It never opens the directions apart. Through degree 3 each
+keeps its sign and its 2–6 per cent size; at degree 4 all four fall under 2.5 per cent and `$n_s$`
+**changes sign through zero**. The spread is widest exactly there, and **read as discrimination that
+would be exactly backwards** — it is the harmonic pair going degenerate with the smooth basis. I had
+written that sweep up as "marginalising collapses them together" and the check caught me: the spread
+widens, for a reason that is still degeneracy.*
+
+### ⌗ TWO FURTHER REASONS NOT TO NAME A CARRIER ON THIS STATISTIC
+
+- **The driving-off limit goes the wrong way.** *`c54.193`'s two spectra give `$+1.46$` and
+  `$+3.43\times10^{-4}$` against an observed `$-9.30\times10^{-4}$` — opposite sign, `$0.37$` of the
+  magnitude. A limit and not a derivative: `NODRIVE` is total removal and a different vintage.*
+- **The arm's response is convention-dependent.** *The licensed grid asks
+  `$14$`/`$294$`/`$11$`/`$24$` per cent where the one-clock grid asks `$4$`–`$6$`. On this statistic
+  even the SIZE of the arm's response is a statement about `LEAFGEOM` versus `LEAFREC`.*
+
+### ⛔ AND THE CLEAN LEVER IS NOT IN THE BANK, WHICH IS A FACT ABOUT THE BANK
+
+***Of `$257$` banked `.npz`, only `$18$` record their `switches` at all, and `RBFAC` appears in
+none.*** *`RBFAC` scales the **loading alone** — sound speed and baryon Euler inertia — by the
+instrument's own documentation. What IS banked is `WBH2`, and `$\omega_b$` also sets the free-electron
+density. **So the `WB` direction moves loading and recombination together, and even a discriminating
+`WB` result would have been two effects.** I captured that from the bank's own switch lines rather
+than assuming it.*
+
+### ⇒ SO: IT NEEDS A GRID, AND IT ALSO NEEDS A DIFFERENT STATISTIC. BOTH COSTED, AS YOU OFFERED
+
+*The two signatures are orthogonal on the **peak set** and degenerate in one global period:*
+
+1. ***the driving*** *shifts every peak the same way against the sound horizon — a **common** offset
+   in `$\ell_n/\ell_A$`;*
+2. ***the loading*** *acts on the **odd–even alternation** — and that is **this sector's own measured
+   mechanism**, already banked in `PO13`: the control at `$R=0$` gives `$1.065$` against `$0.897$` at
+   the physical loading.*
+
+⛭ **THE COST, in the only unit this sector has measured:**
+- **the statistic: zero runs.** *Peak positions and their odd–even decomposition on the whitened
+  residual is a **re-read of what is already banked.** I can do that on the next cycle without
+  asking you for anything.*
+- **the lever: eight runs.** *`RBFAC` at a few values on both arms, at the grids' own configuration
+  (`HIER=1 LMAXL=2000 LSTEP=8 ZSTART=3e7`, `KFAC` at the corpus default `2.0`, `NK` not reduced),
+  idempotent and resumable on output existence. **Comparable to ONE of the two nine-run arm grids
+  already in tree** — not a new class of job.*
+
+⌗ *If you want it, the order I would find useful is just the eight `RBFAC` runs; the statistic half I
+should do first anyway, because if the peak set does not separate them either then the runs are not
+worth your compute. **I will take that half on the next cycle unless you route something else.***
+
+⚠ **WHAT THIS DOES NOT CLAIM:** *no carrier is named and no null is claimed on the physics. Neither
+the loading nor the driving is excluded — what is established is that this statistic cannot tell them
+apart. `PO-79` and the sector's open question are exactly where `r7199` left them.*

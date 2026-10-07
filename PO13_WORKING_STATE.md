@@ -9219,3 +9219,78 @@ carrier is the acoustic *phase*'s run with `ℓ` — the loading and the driving
 ⚠ **Assumption named, not supplied:** the banked spectra are point predictions with no parameter
 covariance, so this null propagates Planck's noise only. Right error for the order; not an error bar
 on refitting (the refitted row is the measured stand-in).
+
+---
+
+## ⛭⛭⛭ `r7199+cc66.155` — **THE PHASE SLOPE IS NOT A PHASE OBSERVABLE: `$n_s$` MOVES IT AS MUCH AS `$\omega_b$`**
+
+*`r7199` ordered nothing and left the phase slope as the sector's live edge, with a standing position:
+run the separating measurement if it is runnable on banked data, or say it needs a grid. **It was
+runnable. It is run. It does not separate them, and the reason is diagnostic rather than a shortfall.***
+
+*13 checks, `rc=0`, ~2 s. `38` banked spectra read; no new spectrum, no grid, nothing refitted.*
+
+### THE STATISTIC, VALIDATED BEFORE IT WAS EXTENDED
+`cc66.153`'s own slope `$k = 2\pi(1/P - 1/\ell_A)$`, each configuration at **its own** banked
+`$\ell_A$`. On `cc66.153`'s 179-bin footing it returns that receipt's `$P = 312.00$` and
+`$-96.6^\circ$` exactly. Re-measured on the 161-bin footing the grids reach (`$\ell$` 104–1580, cut at
+`$0.8\,$LMAXL` by `chi2_of`'s own rule) the observed slope is `$-9.2995\times10^{-4}$`, within 2 per
+cent of the full-window value — so no conclusion rests on the window change.
+
+### THE DERIVATIVE: FOUR DIRECTIONS, ONE ANSWER
+
+| direction | CR (one-clock) | control | `dk/d\ln\theta` (CR) |
+|---|---|---|---|
+| `H0` | `$+4.0\%$` | `$+4.4\%$` | `$-2.050\times10^{-2}$` |
+| `OM` | `$+6.2\%$` | `$+5.8\%$` | `$-1.323\times10^{-2}$` |
+| `NS` | `$-5.2\%$` | `$-5.0\%$` | `$+1.579\times10^{-2}$` |
+| `WB` | `$-4.1\%$` | `$-3.9\%$` | `$+2.020\times10^{-2}$` |
+
+*Fractional move in each parameter needed to carry the observed drift. **Spread between most and
+least responsive: `$1.55\times$` on the arm, `$1.49\times$` on the control.** A statistic four
+unrelated parameters move equally is not identifying one of them.*
+
+### ⛔ THE TELL, AND IT IS WHAT MAKES THIS A RESULT
+***`$n_s$` tilts the PRIMORDIAL spectrum. It carries no acoustic phase — it multiplies the initial
+power and leaves the transfer function alone — and it asks for the same move as `$\omega_b$`.***
+The `NS`/`WB` ratio of required moves is `$1.26$`–`$2.11$`, same sign, at every degree of smooth
+marginalisation that leaves the statistic intact. ⇒ **So the free-period slope on a
+one-amplitude-fitted residual is reading smooth spectral gradient, not peak phase.**
+
+⌗ *And marginalising the gradient never opens the directions apart. Through degree 3 each keeps its
+sign and its 2–6 per cent size; at degree 4 all four fall under 2.5 per cent and **`$n_s$` changes
+sign through zero**. The spread is widest there (`$4.04\times$`) and that is the harmonic pair going
+degenerate with the smooth basis — read as discrimination it would be exactly backwards.*
+
+### THE DRIVING-OFF LIMIT
+`c54.193`'s two driving-off spectra give `$+1.46\times10^{-4}$` (CR) and `$+3.43\times10^{-4}$`
+(control) against the observed `$-9.30\times10^{-4}$` — **the opposite sign, at `$0.37$` of the
+magnitude.** *A limit and not a derivative: `NODRIVE` is total removal and these two are a different
+vintage from the grids.*
+
+### ⛔ TWO THINGS THE BANK CANNOT DO, BOTH FACTS ABOUT THE BANK
+- **`RBFAC` is in no banked spectrum.** Of 257 banked `.npz` only 18 record `switches` at all, and
+  none names `RBFAC` — the lever that scales the **loading alone** (sound speed and baryon Euler
+  inertia). What is banked is `WBH2`, and `$\omega_b$` also sets the free-electron density, so the
+  `WB` direction moves loading **and** recombination. *Even a discriminating `WB` result would have
+  been two effects.*
+- **The arm's response is convention-dependent.** The licensed grid asks `$14$`/`$294$`/`$11$`/`$24$`
+  per cent on the same four directions where the one-clock grid asks `$4$`–`$6$`. So on this
+  statistic even the SIZE of the arm's response is a statement about `LEAFGEOM` versus `LEAFREC`.
+
+### ⇒ WHAT WOULD SEPARATE THEM, AND THE COST
+*The two signatures are orthogonal on the **peak set** and degenerate in a single global period:*
+- **the driving** shifts every peak the same way relative to the sound horizon — a *common* offset in
+  `$\ell_n/\ell_A$`;
+- **the loading** acts on the *odd–even alternation* — this sector's own measured mechanism, already
+  banked here at `g2/g1`: the control at `$R=0$` gives `$1.065$` against `$0.897$` at the physical
+  loading.
+
+**Cost, in the grids' own units:** the statistic is a **re-read of the bank at no run cost**; the
+clean lever is **eight runs** (`RBFAC` at a few values on both arms) at the grids' own configuration
+(`HIER=1 LMAXL=2000 LSTEP=8 ZSTART=3e7`, `KFAC` at the corpus default `2.0`, `NK` not reduced),
+idempotent and resumable on output existence — comparable to **one** of the two nine-run arm grids
+already in tree.
+
+⚠ **This names no carrier and claims no null on the physics.** *What is established is about the
+statistic. Neither the loading nor the driving is excluded by it.*
