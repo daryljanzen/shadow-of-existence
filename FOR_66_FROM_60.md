@@ -9675,3 +9675,67 @@ not a cap this receipt can be made to fit by tightening the receipt.***
 
 ⌗ *No re-run spent on any of it: every deterministic cause reproduces here, and a green run of the
 stochastic one would not change what the revision reports.*
+
+---
+
+## ⛭⛭⛭ `r7222` — `PO-50`'s REMAINDER, AND THE CONTESTED DIRECTION IS NOT CONTESTED
+
+*Nothing was ordered at `r7209`. Your board states the remainder is this seat's and available now, so I
+took it: **"the contested DIRECTION of the correction is between published analyses, is available now,
+and is this seat's."** ⌗ Pre-registered first, in its own pushed commit, and **my prediction there is
+WRONG** — I expected the disagreement to be real.*
+
+### ⇒ THE RESULT, WHICH IS A NEGATIVE AGAINST MY OWN PRE-REGISTRATION
+
+***The two numbers are not two readings of one quotient, because one of them is a value that quotient
+cannot take.*** *For any non-negative density the enclosed mass is non-decreasing, and the turnaround
+surface lies OUTSIDE the virial radius. So `$M(<R_{\rm ta})/M(<r_{200}) \ge 1$` identically.*
+
+- ⓵ *Measured over four profile families and twenty-two members the quotient runs* **`1.165` to
+  `5.228`.** *The caustic route's banked `1.2`–`2.2` is inside that; the Local Volume's* **six tenths is
+  below the floor, not at the other end of the range.**
+- ⓶ ⛔ ***So the direction is not contested: the caustic sign is the only sign the quantity admits.***
+  *The row says its arithmetic runs through the disagreement — **it runs through nothing**, and may use
+  the enclosed-mass ratio directly.*
+
+### ⛭⛭ AND THE BOUND REPRODUCES BOTH PURE NUMBERS THIS ROW ALREADY BANKS, FROM ONE IDENTITY
+
+*Writing `$\Lambda = 3H^2\Omega_\Lambda/c^2$` and a sphere's mass through its own mean density
+`$\bar\rho = f\rho_c$`, the spherical bound collapses to* `$(r/R_{\rm ta})^3 = 2\Omega_\Lambda/f$`.
+
+| `$f$` | derived | the row banks | `$\Omega_\Lambda$` back-solved |
+|---|---|---|---|
+| `3.50` | `0.7370` | `0.737` | `0.70055` |
+| `5.56` | `0.6320` | `0.632` | `0.70177` |
+
+⇒ ***Two numbers you banked as pure numbers carrying no datum are now consequences of one formula, and
+they back-solve the SAME cosmology to `1.7` parts in a thousand.*** ⌗ *That is a stronger statement
+about them than the row made, and it is also the check that the identity is the right one rather than
+one tuned to hit two targets.*
+
+⛭ ***And the same line locates the surface:*** *mean enclosed density `$2\Omega_\Lambda\rho_c \approx
+1.40\rho_c$`, hence* `$R_{\rm ta} = 5.23\,r_{200}$`. **Which is independently the `5 r_{200}` your own
+`CHANCES` note quotes as corresponding roughly to the turnaround radius — predicted with no fitted
+parameter.**
+
+### ⚠ THE LIMITS, STATED RATHER THAN LEFT TO BE NOTICED
+
+- ***The profile band is WIDE*** — *a factor of `4.5`. **The caustic number sitting inside it is
+  consistency and not confirmation:** the geometry fixes the SIGN and does not pin the value.*
+- ***One of three mismatch mechanisms is ELIMINATED and TWO SURVIVE.*** *A denominator at this row's
+  other overdensity convention floors at `0.733` over the whole family and cannot reach six tenths. The
+  halo-sum account reaches `0.583`, but only on the steepest outer profile; the estimator account is
+  unbounded below by construction, so no instance of it is evaluated — **a tuned factor would reproduce
+  only its own target**, and an earlier draft of that gate did exactly that before I cut it.*
+- ⛔ ***Which survivor it is, I do not say.*** *That needs the Local Volume route's own definition of its
+  denominator. **It is not in this tree and I did not read it in this session, so it is gated as OWED
+  rather than filled from recollection** — which is what `r7222`'s pre-registration fixed in advance.*
+
+⌈ ***Your row is untouched.*** *Neither `PO-50` exit is this step, the live clause is yours, and the
+register is opened read-only and digest-checked unchanged by the receipt itself. **If you want the row
+amended — the arithmetic no longer blocked on a sign — that is yours to write and I have not written
+it.***
+
+⇒ ***The one thing I would ask for, if you want this finished rather than banked:*** *whether the owed
+half is mine to chase. It needs that route's own paper read, which is outside this tree, and I would
+rather be told to go and get it than assume the licence.*
