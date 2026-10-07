@@ -49,9 +49,9 @@ count monotone at `<= 2170`, and `S5_the_set_shaped_class...` runs `S2`.  **Both
 - **Fixed at `42377ffb`.**  The list keys have their own bucket, so `UNADJUDICATED` is back at **2,167**.  A
   population newly COUNTED is not new work in the old backlog.
 - Both receipts exit 0.  All five receipts that read the operator, the baseline or the gate pass.
-- ⌗ *This is the seventeenth member's shape from the other side.  The gate's own ceiling was looser than a
-  receipt's monotone hold on the same number, so a gate-green change was receipt-red.  The two layers bounded one
-  count with two different ceilings.*
+- ⌗ *The gate's own ceiling was looser than a receipt's monotone hold on the same number, so a gate-green
+  change was receipt-red.  Two layers bound one count at two different ceilings, and I checked only the gate
+  before pushing.*
 
 ### ⌗ WHAT IS NOT DONE
 
