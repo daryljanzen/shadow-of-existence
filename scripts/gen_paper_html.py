@@ -74,13 +74,32 @@ def marker_numbers(paper):
     return nums
 
 
+def _unamp(t):
+    """Drop an alignment mark from a display line, in whatever escaping it arrives in.
+
+    r7209: this was `x.replace('&', '')`, which is correct only on unescaped text.  By
+    the time a display equation reaches here its ampersands are already `&amp;`, so
+    removing the bare `&` left a literal `amp;` in the line -- thirty-three of them
+    across the pages, reading `d\\tau^2 amp;= ...`.  Collapse the escaping first, then
+    drop the mark.
+    """
+    while '&amp;' in t:
+        t = t.replace('&amp;', '&')
+    return t.replace('&', '')
+
+
 def inline(t, nums, labels):
     """Inline markup -> HTML.  Math first, so a formula is never split by a
     later rule operating on its innards."""
     t = re.sub(r'(?m)(?<!\\)%.*$', '', t)
     t = t.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-    t = re.sub(r'\$\\?([a-zA-Z]+)\$',
-               lambda m: '<span class="m">' + mathspan('\\' + m.group(1))
+    # r7207: the backslash used to be prepended UNCONDITIONALLY, so `$\alpha$` came
+    # out right and `$M$` was handed to the converter as `\M` -- an unknown command,
+    # which renders as nothing.  Every bare alphabetic variable in inline math was
+    # therefore dropped: 1,378 sites across the eighteen papers, reading as
+    # "whose Kretschmann ... is -free".  Capture the backslash instead of assuming it.
+    t = re.sub(r'\$(\\?)([a-zA-Z]+)\$',
+               lambda m: '<span class="m">' + mathspan(m.group(1) + m.group(2))
                + '</span>', t)
     # A display equation can sit INSIDE a theorem or a proof, and those blocks
     # are handed here whole.  Without this, thirteen of P3's twenty-eight
@@ -91,7 +110,7 @@ def inline(t, nums, labels):
         inner = re.sub(r'\\label\{[^}]*\}', '', inner)
         parts = [x for x in re.split(r'\\\\\\\\', inner) if x.strip()]
         return ('<div class="eq">' + '<br>'.join(
-            mathspan(x.replace('&', '')) for x in parts) + '</div>')
+            mathspan(_unamp(x)) for x in parts) + '</div>')
     t = re.sub(r'\\begin\{(equation|align|gather)\*?\}(.*?)\\end\{\1\*?\}',
                lambda m: _disp(m.group(2)), t, flags=re.S)
     t = re.sub(r'\$\$(.+?)\$\$|\\\[(.+?)\\\]',
@@ -154,8 +173,17 @@ def inline(t, nums, labels):
                r'\\end\{\1\}', r'\2', t, flags=re.S)
     # A tabular becomes a table; its rules and column spec are LaTeX-only.
     def _tab(m):
-        rows = [r for r in re.split(r'\\\\\\\\', m.group(2)) if r.strip()]
-        cells = [[c.strip() for c in re.split(r'(?<!\\\\)&', r)] for r in rows]
+        # r7209: TWO defects here, and both were one level of escaping.
+        #  - The row split was `r'\\\\\\\\'`, a regex matching FOUR literal
+        #    backslashes, where a LaTeX row separator is two.  No row ever split, so
+        #    a whole tabular came out as a single <tr> with stray `\` between entries.
+        #  - The cell separator reaches here ALREADY ESCAPED as `&amp;`, because
+        #    `inline()` escapes ampersands first, so splitting on a bare `&` consumed
+        #    the `&` and left `amp;` at the head of every cell after the first.
+        # Both were live on P10 and P18, which read `amp; <value>` down the page.
+        body = m.group(2).replace('&amp;', '&')
+        rows = [r for r in re.split(r'\\\\', body) if r.strip()]
+        cells = [[c.strip() for c in re.split(r'(?<!\\)&', r)] for r in rows]
         return ('<table>' + ''.join('<tr>' + ''.join(
             '<td>' + c + '</td>' for c in row) + '</tr>' for row in cells)
             + '</table>')
@@ -267,6 +295,7 @@ def convert(paper):
             labels[m.group(3)] = str(secn)
 
     out, eqn, counts, fign_out = [], 0, {}, [0]
+    tabn_out = [0]
 
     def flush(buf):
         txt = ' '.join(buf).strip()
@@ -343,14 +372,79 @@ def convert(paper):
             txt = re.sub(r'\\label\{[^}]*\}', '', txt)
             parts = [x for x in re.split(r'\\\\\\\\', txt) if x.strip()]
             out.append(f'<div class="eqwrap"{aid}><div class="eq">'
-                       + '<br>'.join(mathspan(x.replace('&', '')) for x in parts)
+                       + '<br>'.join(mathspan(_unamp(x)) for x in parts)
                        + f'</div><span class="eqno">({eqn})</span></div>')
             continue
 
-        if st.startswith(r'\begin{figure}'):
+        # r7209: THE GENERATOR HAD NO TABLE HANDLER AT ALL.  Four tables across the
+        # corpus -- P7's dependency matrix and ledger block, two more in P18 -- were
+        # dropped from their pages entirely, caption and all, while rendering correctly
+        # in the PDF.  The matrix is the figure the framework paper's own prose sends a
+        # reader to, so the page sent them to nothing.
+        if st.startswith(r'\begin{table}') or st.startswith(r'\begin{table*}'):
             flush(buf)
+            star = st.startswith(r'\begin{table*}')
+            endtag = r'\end{table*}' if star else r'\end{table}'
             blk, i = [], i + 1
-            while i < len(lines) and r'\end{figure}' not in lines[i]:
+            while i < len(lines) and endtag not in lines[i]:
+                blk.append(lines[i])
+                i += 1
+            i += 1
+            txt = '\n'.join(blk)
+            lb = re.search(r'\\label\{([^}]*)\}', txt)
+            cap = re.search(r'\\caption\{(.*?)\}\s*(?:\\label|\\end|$)', txt, re.S)
+            tab = re.search(r'\\begin\{tabular\}\{[^}]*\}(.*?)\\end\{tabular\}',
+                            txt, re.S)
+            tabn_out[0] += 1
+            aid = f' id="{lb.group(1)}"' if lb else ''
+            rows_html = ''
+            if tab:
+                body = tab.group(1)
+                # Row separator is `\\`, optionally carrying a spacing argument.
+                raw = re.split(r'\\\\(?:\[[^\]]*\])?', body)
+                header_done = False
+                for r in raw:
+                    had_rule = '\\hline' in r or '\\toprule' in r or '\\midrule' in r
+                    r = re.sub(r'\\(?:hline|toprule|midrule|bottomrule)', '', r)
+                    if not r.strip():
+                        if had_rule and not header_done and rows_html:
+                            header_done = True
+                        continue
+                    cells, cs = [], []
+                    for c in r.split('&'):
+                        mc = re.match(r'\s*\\multicolumn\{(\d+)\}\{[^}]*\}\{(.*)\}\s*$',
+                                      c.strip(), re.S)
+                        if mc:
+                            cs.append(int(mc.group(1)))
+                            cells.append(mc.group(2))
+                        else:
+                            cs.append(1)
+                            cells.append(c)
+                    tag = 'th' if not header_done else 'td'
+                    tds = []
+                    for c, n in zip(cells, cs):
+                        span = f' colspan="{n}"' if n > 1 else ''
+                        tds.append(f'<{tag}{span}>' + inline(c.strip(), nums, labels)
+                                   + f'</{tag}>')
+                    rows_html += '<tr>' + ''.join(tds) + '</tr>'
+                    if had_rule:
+                        header_done = True
+            capn = (f'<caption><b>Table {tabn_out[0]}.</b> '
+                    + inline(cap.group(1), nums, labels) + '</caption>') if cap else ''
+            out.append(f'<div class="tablewrap"><table{aid}>' + capn + rows_html
+                       + '</table></div>')
+            continue
+
+        # r7209: `\begin{figure*}` was not matched here, so P7's six-panel synthesis
+        # figure -- the paper's hallmark -- was dropped from the page ENTIRELY, caption
+        # and all.  A figure that is never emitted is invisible to a check that counts
+        # the figures a page HAS, which is why check_figures_shown passed over it.
+        if st.startswith(r'\begin{figure}') or st.startswith(r'\begin{figure*}'):
+            flush(buf)
+            star = st.startswith(r'\begin{figure*}')
+            endtag = r'\end{figure*}' if star else r'\end{figure}'
+            blk, i = [], i + 1
+            while i < len(lines) and endtag not in lines[i]:
                 blk.append(lines[i])
                 i += 1
             i += 1
@@ -368,6 +462,17 @@ def convert(paper):
                 png = src_f[:-4] + '.png'
                 if os.path.exists(os.path.join(ROOT, 'corpus', png)):
                     src_f = png
+            # r7207: a figure drawn in TikZ has no \includegraphics at all, so the
+            # page used to carry the caption with NOTHING above it -- four figures
+            # across P7 and P15 describing diagrams that were not there.
+            # `scripts/render_tikz.py` compiles each one from the same source the
+            # paper typesets and writes an SVG named after its label.
+            if not src_f and lb and '\\begin{tikzpicture}' in txt:
+                cand = 'tikz_' + re.sub(r'[^A-Za-z0-9]+', '_',
+                                        lb.group(1)).strip('_') + '.svg'
+                if os.path.exists(os.path.join(ROOT, 'BOOK_INTRO_cosmiCave',
+                                               'fig', cand)):
+                    src_f = cand
             if src_f.lower().endswith('.pdf'):
                 media = (f'<p class="figalt"><a href="{FIG_BASE}/{src_f}">'
                          'Open this figure (PDF)</a></p>')
@@ -391,8 +496,15 @@ def convert(paper):
                 blk.append(lines[i])
                 i += 1
             i += 1
+            # r7207: LaTeX comments between `\begin{enumerate}` and the first
+            # `\item` used to survive this split as a non-empty leading chunk, and
+            # `inline()` then stripped them to nothing -- an EMPTY first <li>.  That is
+            # not cosmetic: item labels are numbered from the SOURCE below, so every
+            # `\ref` to an item pointed one place short of the item it names.  Strip
+            # comments BEFORE splitting, which is where the split can still see them.
+            _blk = re.sub(r'(?m)(?<!\\)%.*$', '', '\n'.join(blk))
             items = [x.strip() for x in
-                     re.split(r'\\item\s*', '\n'.join(blk)) if x.strip()]
+                     re.split(r'\\item\s*', _blk) if x.strip()]
             out.append(f'<{tag}>' + ''.join(
                 '<li>' + inline(x, nums, labels) + '</li>' for x in items)
                 + f'</{tag}>')
@@ -460,6 +572,19 @@ def main():
   figcaption {{ color:var(--faint); font-size:.86rem; margin-top:.5rem;
                 text-align:left; line-height:1.5; }}
   .figalt a {{ font-size:.9rem; }}
+  /* r7209: the dependency matrix is nineteen columns wide, so on a phone it must
+     SCROLL rather than overflow or reflow into unreadable wrapped cells. */
+  .tablewrap {{ margin:1.6rem 0; overflow-x:auto; -webkit-overflow-scrolling:touch; }}
+  .tablewrap table {{ border-collapse:collapse; font-size:.74rem; margin:0 auto;
+                      font-variant-numeric:tabular-nums; }}
+  .tablewrap caption {{ caption-side:bottom; color:var(--faint); font-size:.86rem;
+                        margin-top:.6rem; text-align:left; line-height:1.5; }}
+  .tablewrap th, .tablewrap td {{ padding:.18rem .42rem; text-align:center;
+                                  white-space:nowrap; }}
+  .tablewrap th {{ font-weight:600; border-bottom:1px solid var(--line); }}
+  .tablewrap tr > *:first-child {{ text-align:right; white-space:nowrap;
+                                   border-right:1px solid var(--line);
+                                   padding-right:.6rem; }}
   sup.mk {{ font-size:.62rem; font-family:'Iowan Old Style',Georgia,serif;
             letter-spacing:.02em; padding-left:.1em; }}
   sup.mk.r {{ color:var(--pole); }}
