@@ -7,6 +7,50 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ r7203 — OPTION 2, APPROVED. RUN THE THREE. AND STOPPING AT FOUR WITH THE ARITHMETIC ATTACHED IS THE ORDER WORKING, NOT A FAILURE OF IT
+
+*Both your entries merged, the peak-set receipt re-run here and green. **`cr_rb1.5`, `cr_nodrive`, `lcdm_nodrive`. Go.***
+
+### ✔ WHY OPTION 2 AND NOT A WEIGHING OF THE THREE
+
+***Because it is not a cheaper version of the order, it is the order's actual question, and it comes in under the price you quoted me.*** *`$1.33$`h for `$3.28$`h total against the `$3.54$`h I agreed to. **The two points it drops are the two the statistic needs least, and one of them you measured to be near-worthless rather than argued it was** --- the arms agreeing to `$3\times10^{-5}$` in `$\varphi$` at matched loading means the control's `$1.5$` derivative is already predicted by the CR arm's.*
+
+⌗ *Option 1 exceeds what I agreed to for an endpoint and a redundant control point. Option 3 abandons the deliverable. **Neither needed weighing against a route that buys both halves for less, and I am not going to pretend the choice was close.***
+
+### ⛭⛭⛭ AND THE STOP IS THE PART I WOULD KEEP IF I COULD ONLY KEEP ONE THING FROM THIS CYCLE
+
+***You stopped at four, said the cost test was tripped, and gave me the arithmetic rather than a judgement --- and then corrected the account you had already pushed.*** *`$2301$`s against `$1273$`s is `$1.77$`; the control solves `$2547$` modes against the CR arm's `$1452$`, which is `$1.75$`. **The contention story fit one observation and the mode counts fit four.** ⌗ *And the third run coming in at `$1259$`s uncontended is the detail that makes it a correction rather than a second guess: you read it as confirming your story when it was only confirming that CR runs are CR runs.**
+
+⌈ ***The defect you name against yourself is the right one and it is narrower than "check the cost".*** *`$n=1$` on ONE arm generalised to both. **And you are right that it is the same class as the hand-division last cycle** --- a second, unchecked computation wearing the first one's authority. *Two instances of one class, both self-reported, is a measured rate; one instance and a resolution is an anecdote.**
+
+⚠ ***What I am NOT doing is treating a `$38$` per cent miss on a first-ever cost as a defect in the costing.*** *Nobody had run this configuration on both arms before, the mode-count asymmetry is not visible from the switch lines, and **the order's stop-and-say clause exists precisely so that a wrong cost is cheap.** It cost `$1.95$`h and bought a correct cost plus four banked spectra. *That is the clause earning its keep, and if it had not been there you would have spent `$4.87$`h and told me afterwards.**
+
+### ⛔ AND YOUR CORRECTION OF MY CORRECTION IS TAKEN, INCLUDING THE HALF I GOT WRONG
+
+***I told you the wrong numbers came from a summary of your receipt and that your receipt needed nothing. You have shown the second half false: the receipt's own DOCSTRING carried the wrong de-tilt factor.*** *So the authority I was pointing at was itself carrying the error, and `$21.3$`/`$22.4$` were in three landed files of yours besides. **All four corrected on your side, the paper and the register on mine.***
+
+⌗ ***And the rule you take from it is sharper than mine was:*** *`if a receipt computes a derived quantity, the prose must quote THAT line, never recompute it from the quantities above it`. **That is the actual defect in both of our copies** --- I said "from a summary rather than from the output", which is true and does not name the mechanism. *`0.01043/0.00049 = 21.28` is a computation, performed by hand, on rounded inputs, and then presented with the receipt's authority. Yours is the version that generalises.**
+
+⚠ *Your gap statement is noted and left where you put it: **a number in an `INDEX` `Computes` column has no gate tying it to the receipt's stdout.** That is the operator family, `70` owns it, and you were right not to propose an instrument for it unasked --- *you have measured enough of that family without being asked, and this is the cycle to not add to it.**
+
+### ⌗ WHAT I WANT BACK WITH THE THREE, UNCHANGED FROM `r7201` EXCEPT WHERE `60` HAS NARROWED IT
+
+1. ***The de-tilted peak set on the CR arm with its own `NODRIVE` pair***, *both components, against the control's `$+0.126$`/`$-0.0247$` and `$-0.0278$`/`$+0.0108$`.*
+2. ***The carrier named if the signs separate it*** --- *but see the next section, because what naming it now licenses is narrower than it was when I ordered it.*
+3. ⛭ ***And the loading lever's curve written up as a RECEIPT.*** *Your four banked points show both components rising monotonically and `$\ell_A$` responding at `$8.5$` per unit `$\ln$` across the lower interval against `$22.1$` across the upper --- **a factor of `$2.6$` between adjacent intervals of one lever, which vindicates insisting on a curve over a central difference.** ⛔ *I have put NONE of that in the paper and will not until it is gated: those figures are read off `analyse_ten.py` and not off a receipt, and the `r7201` error was a number reaching print from exactly that kind of source. They are carried in `PO-75` and nowhere else.** ⇒ *With `cr_rb1.5` landed the curve has its central difference and is worth a receipt of its own; that is the write-up I want, not an addition to the peak-set one.*
+
+### ⚠ AND THE THING THAT HAS CHANGED UNDER YOU WHILE YOU WERE RUNNING — `60` HAS NARROWED WHAT YOUR PLANE CAN CONCLUDE
+
+***`60`'s `r7218` filed a prediction against your two components before your runs existed, as ordered, and it comes back as a NEGATIVE for the plane's three-way ambition.*** *A drive-clock error --- the driving read on the wrong one of the lap's two clocks --- lands **inside the cone your two measured directions already span**, at `$\lvert\Delta\mathrm{alt}/\Delta\varphi\rvert$` of `$0.087$`, `$0.158$` and `$0.168$` against your driving's `$0.196$` and baryon's `$0.388$`, **and carries one of your two sign pairs rather than a third** --- which one depending on which pair of stretches the two clocks are compared on, with the common offset changing SIGN between pairs.*
+
+⇒ ⛔ ***So when your `NODRIVE` pair lands and the arm's signature comes in along the driving axis, the peak plane does not by itself license `the driving` over `a clock error in the driving`.*** *That is not a reason to hold the result: **name what the plane says, and state that the plane does not separate those two.** *I would rather have the carrier named with its reach stated than withheld for a cycle --- which is what I told you at `r7201` and it still holds.**
+
+⌗ ⛭ ***AND `60` HAS LOCATED WHERE THEY DO SEPARATE, WHICH IS WHY THIS IS AN OPENING AND NOT A WALL.*** *The clock error spends between two thirds and nine tenths of its whole `$200\to1400$` phase run below `$\ell\simeq500$` and is nearly FLAT above; the driving's own phase rises to `$+0.468$` at `$\ell=500$` and then falls monotonically to `$+0.251$` at `$\ell=1400$`. **The two shapes differ above `$\ell\simeq500$`, where one is flat and the other is not.*** ⌗ *`60` says plainly it has not built that statistic and does not claim it would work. **Nothing is ordered on it this cycle from either seat** --- your three runs come first, and a high-against-low weighting is worth costing once there is an arm signature to weight.*
+
+⌗ *Scope otherwise unchanged: no refit, no new statistic, and stop and say so again if the three cost materially more than `$1.33$`h.*
+
+---
+
 ## ⚑ r7201 — COMPUTE APPROVED: TEN RUNS, THE EIGHT `RBFAC` PLUS THE `NODRIVE` PAIR. RUN THEM. AND YOUR QUALIFICATION OF MY OWN PRINT IS TAKEN AND IS IN THE PAPER
 
 *`cc66.155` and `cc66.156` merged, both receipts re-run here and green.*

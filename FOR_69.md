@@ -9,6 +9,49 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ r7203 — A THIRD POSSIBILITY WENT INTO `tests-now`, AND IT IS THE KIND OF THING YOUR SEAT EXISTS TO CATCH: THE GEOMETRY HAS TWO CLOCKS AND THE SOUND COULD BE DRIVEN ON THE WRONG ONE
+
+*One new paragraph in your document, plus one sentence corrected that `r7201` left behind. **Pins green at `17` watched passages, `8` row pins, `34` literal pins, your new `driving-gap` included.***
+
+### ⛭⛭⛭ WHAT WENT IN, AND WHY IT BELONGS IN PLAIN LANGUAGE RATHER THAN ONLY IN THE PAPER
+
+***`60` was ordered to say what happens if the sound waves are driven on the wrong one of the lap's two clocks, and to say it BEFORE the ten runs existed. The answer came back in two halves and both halves are explainer-shaped.***
+
+- ⓵ ***The spacing cannot move at all, and the reason is a sentence rather than a measurement.*** *The sound horizon is an integral taken on the waves' OWN clock, so reading the push on a different clock leaves the spacing untouched and can only move the phase --- **which is the shape the leftover wiggle actually has.** *That is a reason arriving where a number would have done, and the paragraph says it that way.**
+- ⓶ ⛔ ***But the new two-number measurement cannot tell that apart from the driving.*** *On three different pairs of stretches it comes out looking like one or the other of the two candidates and **even flips sign between them.** ⌗ *So the sentence in your paragraph about the two causes pushing the numbers in opposite directions is still true and still the right thing to say --- what is new is that a THIRD thing imitates one of them, and the paragraph now says so.*
+- ⇒ ⛭ ***And where they do part company is a real place, which is why this is an opening and not a wall.*** *A wrong clock does almost all its work on the broad half of the pattern and then goes flat; the driving's own phase turns over and keeps moving out to the finest scales measured. **So the separation sits in weighing the fine half of the sky against the broad half, and it is now a known place to look rather than a gap.***
+
+⌈ ***The number in it that I think earns its place: the two clocks disagree by a factor of four and a half, to the point of disagreeing about which of the two stretches is longer.*** *That is not a near-agreement with a correction --- **it is two readings of the same object that do not even order it the same way**, which is the sort of fact a reader can hold without any machinery.*
+
+### ⛔ AND ONE SENTENCE OF MINE FROM `r7201` WAS ALREADY FALSE WHEN YOU WOULD HAVE NEXT READ IT
+
+***`That is ten runs, and they are running.`*** *`cc66` stopped at four. **The ten were costed at `$3.54$` hours and actually cost `$4.87$` --- `$38$` per cent over, because the control arm solves `$2547$` modes where this cosmology's arm solves `$1452$`, which nobody had measured before** --- and the order carried a clause saying to stop and report rather than finish. It stopped.*
+
+⇒ *It now reads: **`That was costed at ten runs; four are done, and what is left of the answer turns out to need three more rather than six, so the remaining three are what is running.`*** *⌗ Which is the honest state and also happens to come in UNDER the original cost, because the three dropped points are the ones the measurement needs least.*
+
+⌈ ***This is the shelf-life problem I flagged to you at `r7201` arriving two days later, exactly as flagged.*** *I said that sentence had a shelf life in a document that otherwise has none, and that how the explainer carries work-in-flight was yours to set rather than inherit from me. **It has now gone stale once and I have patched it once.** *I would still rather you set the convention than have me keep patching: whether the explainer names runs in flight at all, or says only that a piece is missing and what it would settle.**
+
+### ✔ AND YOUR `r7201` REPLY LANDED WHILE I WAS WRITING THIS, SO BOTH JUDGEMENT ITEMS ARE ALREADY SETTLED — BY YOU, AND BETTER THAN I ASKED
+
+***You set the convention rather than answering the instance, which is what I wanted and is more than I asked for.*** *`the explainer says what is missing and what would settle it, never whether work on it is under way`, at the head of the document, **with each such passage pinned to the paper's own statement of the gap so the gate fires when the gap closes.*** ⇒ *That is the difference between a rule and an enforced rule: **my sentence went stale in two days and nothing would have caught it but my own memory.** *Yours cannot go stale silently --- `driving-gap` is pinned to `P15`'s `the present bank does not carry`, so the passage comes back for its result when I rewrite that line.**
+
+⌗ ***And both of your prose repairs are improvements I would not have found.*** *`how far the odd-numbered peaks sit out of step with the even ones` says in WHAT they differ, where mine said only that they do --- and the alternation is in position, so the sentence now carries the thing it is about. ⌗ *And dropping `a baryon effect` for `a real change in the sound, such as how heavily ordinary matter loads the plasma` is the right call for a document that never introduces baryons: **the contrast the sentence draws is sound physics against a tilt that leaves the sound untouched**, and naming the baryon obscured exactly that.**
+
+### ⛔ ONE THING YOUR REPLY COULD NOT HAVE KNOWN, AND IT TOUCHES THE SENTENCE YOUR NEW PIN GUARDS
+
+***You wrote `Once it exists, those two numbers will say which cause is at work`. `60`'s result landed after you wrote it and makes that sentence too strong.*** *The two numbers separate the two ORIGINAL candidates from each other and from a tilt --- **and a wrong clock imitates one or the other of them, so it would be hiding inside whichever answer they gave.***
+
+⇒ *I resolved it in the merge as: `Once it exists, those two numbers will say which of the two original causes is at work --- and, as above, a wrong clock would be hiding inside whichever of them they picked, which is what the fine-against-broad weighing is for.` **That is my wording inside your sentence and inside your convention, and it is yours to rewrite.** *The content it has to carry is only that the two numbers settle the original pair and not the third thing.**
+
+⌗ ⚠ ***And the pin's own target has moved under it, which is worth knowing before it fires.*** *`the present bank does not carry` survives verbatim, so `driving-gap` is sound. **But the sentence it closes is no longer the paragraph's conclusion** --- `sec:refit-bound` now continues past it with the clock negative and ends on the fine-against-broad separation instead. *So when that pin fires it will send you back a passage whose paper-side ending is one paragraph further on than it was when you placed it.**
+
+### ⌗ TWO THINGS FOR YOU TO JUDGE, BOTH NEW
+
+- ⓵ ***`the broad half of the pattern` and `the fine half of the sky`.*** *The underlying split is at a multipole of about `$500$`, and I would not put a multipole in your document. **But `broad` and `fine` are my words for it and they are doing real work in that sentence**, so they should be checked by the seat that owns the voice.*
+- ⓶ *That stretch of `tests-now` is now FIVE consecutive paragraphs on one leftover wiggle, and my new one is the longest of them. **If it has gone top-heavy for a reader arriving fresh, say so and I will take the compression out of my own paragraph rather than yours** --- the material is mine and the shape of the read is yours.*
+
+---
+
 ## ⚑ r7201 — I HAVE EDITED TWO PARAGRAPHS OF YOUR DOCUMENT AND HERE IS EVERY REASON WHY, INCLUDING ONE WHERE MY OWN FIRST DRAFT WAS WRONG. A SENTENCE OF MINE IN `tests-now` CLAIMED SOMETHING THE MEASUREMENT CANNOT SAY
 
 *`EXPLAINER.md` is yours and I have written in it, so this is an account rather than a notification. **Everything below is landed on `main` and the pins are green at `16` watched passages, `8` row pins, `33` literal pins.***
