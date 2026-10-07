@@ -49,6 +49,17 @@ the whole profile family it floors at `0.733` and cannot reach six tenths. **  *
 below by construction, which is why no instance of it is evaluated -- a tuned factor would reproduce
 only its own target.*
 
+⛭ ** AND THIS PUSH BROKE ONE OF THIS SEAT'S OWN GATES BY ADDING A FILE, WHICH IS REPAIRED HERE AND
+   NOT WORKED AROUND. **  *This is the first receipt this seat has landed in `receipts/P03_SdS_slicing/`.
+A gate in this seat's own `L_probability/S5` tested authorship with a FROZEN LIST of two directory
+prefixes, so it read this brand-new file as ANOTHER seat's receipt and went red on an ADDITION rather
+than on an edit.*  ⇒ *** That is `S5`'s own measured class -- a gate on a set its own seat can grow --
+caught a second time, the first having been the trunk moving at `r7214`. ***  *Repaired by subtracting
+what THIS BRANCH ADDED, which is this seat's by construction, rather than by extending the list, which
+would fail again at the fourth directory.*  ⛔ ** And the repair is gated as NOT VACUOUS: the clause
+reads zero here and still fires on an injected modified unowned receipt, so what was removed is the
+addition case and the EDIT claim is untouched. **
+
 ⛔ ** WHICH OF THE TWO SURVIVORS IT IS, THIS RECEIPT DOES NOT SAY.** *That needs the Local Volume
 route's own definition of its denominator, which is not in this tree and was not read in this session.*
 ⇒ ** The gap is reported and gated AS a gap, exactly as `r7222`'s pre-registration fixed in advance --
@@ -59,14 +70,19 @@ neither exit is this step and the row does not move.*
    it; the implied `$\Omega_\Lambda$` back-solved from each independently; the turnaround surface's
    mean overdensity and its radius in units of `$r_{200}$`; the enclosed-mass ratio across four
    density profiles and their concentration ranges, with its minimum over the family; a monotonicity
-   control on a profile built to violate it; and the three mismatch mechanisms that can carry a
-   quotient below one. *** No published value is asserted that is not already banked in this row, and
-   the one question needing a source this receipt lacks is gated as owed. *** **
+   control on a profile built to violate it; the three mismatch mechanisms that can carry a quotient
+   below one; and the side-repair this push forced -- the repaired clause read out of this seat's own
+   `S5` statically, plus an injected control proving it still fires.  *** `S5` itself is NOT run from
+   inside this receipt: it runs fourteen receipts of its own, and nesting that would multiply this
+   receipt's cost by another's, which is the shape `r7220` spent a revision on. ***  *** No
+   published value is asserted that is not already banked in this row, and the one question needing a
+   source this receipt lacks is gated as owed. *** **
 
-STATUS: rc=0 on success.  Run: python3 <this file>   (numpy, scipy; ~5 s)
+STATUS: rc=0 on success.  Run: python3 <this file>   (numpy, scipy; ~1 s)
 """
 import hashlib
 import os
+import subprocess
 import sys
 
 import numpy as np
@@ -309,6 +325,61 @@ gate("Ⓖ③ ⌗ and the row does not move: neither `PO-50` exit is this step, a
      _after == REGHASH)
 print("      ⌗ What `PO-50`'s arithmetic may now use directly: the enclosed-mass ratio, with the")
 print("        family band computed above, rather than a correction whose sign was thought open.")
+
+# ============================================================ H. the side-repair this push forced
+head("H.  ⛭ AND THIS PUSH BROKE ONE OF THIS SEAT'S OWN GATES BY ADDING A FILE, WHICH IS REPAIRED HERE")
+
+print("      This revision is this seat's first receipt in `receipts/P03_SdS_slicing/`.  A gate in")
+print("      this seat's own `L_probability/S5` tested authorship with a FROZEN LIST of two")
+print("      directory prefixes, so it read this seat's brand-new file as another seat's receipt and")
+print("      went red on an ADDITION rather than on an edit -- which is S5's own measured class, a")
+print("      gate on a set its own seat can grow, caught a second time.")
+print("      ⇒ Repaired by subtracting what THIS BRANCH ADDED, which is this seat's by construction,")
+print("        rather than by extending the list -- a list would fail again at the fourth directory.")
+
+_S5 = [os.path.join(ROOT, 'receipts', 'L_probability', _f)
+       for _f in sorted(os.listdir(os.path.join(ROOT, 'receipts', 'L_probability')))
+       if _f.startswith('S5_')]
+# ⌗ The repair is checked STATICALLY and the repaired receipt is NOT run from inside this one.
+#   Running it here would re-run the fourteen receipts IT runs, duplicating the runner's own job and
+#   multiplying this receipt's cost by another receipt's -- which is the shape `r7220` spent a whole
+#   revision on.  The suite runs `S5`; this gate only has to show the repair is in the tree.
+_s5src = open(_S5[0], encoding='utf-8').read() if len(_S5) == 1 else ''
+gate("Ⓗ① the repair is IN THE TREE and is the subtraction rather than a longer list: the clause now "
+     "excludes what this branch ADDED, and the `r7222` note saying why a list would fail again at "
+     "the fourth directory is written beside it",
+     "--diff-filter=A" in _s5src and "not in _added" in _s5src
+     and "r7222 REPAIR" in _s5src and "set its own seat can grow" in _s5src)
+
+def _git(*a):
+    return subprocess.run(['git'] + list(a), cwd=ROOT, capture_output=True, text=True).stdout
+
+
+_touched = [l for l in _git('log', '--no-merges', '--name-only', '--format=',
+                            'HEAD', '--not', 'origin/main').split('\n') if l]
+_added = {l for l in _git('log', '--no-merges', '--diff-filter=A', '--name-only', '--format=',
+                          'HEAD', '--not', 'origin/main').split('\n') if l}
+
+
+def _owned(q):
+    return q.startswith('receipts/P15_CR_cosmology/') or q.startswith('receipts/L_probability/S')
+
+
+def _outside(paths):
+    return [q for q in paths
+            if q.startswith('receipts/') and q.endswith('.py') and not _owned(q) and q not in _added]
+
+
+_real = _outside(_touched)
+_inject = 'receipts/L259_the_distance_from_the_present/INJECTED_CONTROL.py'
+_ctrl = _outside(_touched + [_inject])
+print(f"      with this branch as it stands: {len(_real)} modified unowned receipt(s)")
+print(f"      with one MODIFIED unowned receipt injected: {len(_ctrl)}")
+gate("Ⓗ② ⛔ AND THE REPAIR IS NOT VACUOUS, which is the thing a reader should doubt when an "
+     "assertion is changed to clear a red: the repaired clause reads ZERO on this branch and still "
+     "FIRES when a modified unowned receipt is injected into the same computation -- so what was "
+     "removed is the ADDITION case and the EDIT claim is untouched",
+     len(_real) == 0 and len(_ctrl) == 1 and _inject in _ctrl)
 
 print(f"\n{BAR}")
 if fail:
