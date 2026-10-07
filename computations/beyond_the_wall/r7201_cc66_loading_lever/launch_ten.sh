@@ -47,8 +47,19 @@ PY
 }
 
 # ---- the eight RBFAC runs: four values per arm, bracketing the banked default RBFAC=1.0 and
-#      reaching the no-loading limit, which PO13 already has a g2/g1 gate at (1.065 vs 0.897).
-for v in 0.0 0.5 1.5 2.0; do
+#      APPROACHING the no-loading limit without reaching it.
+# ⛔ ** RBFAC=0 IS NOT RUNNABLE ON THIS PATH AND IT DOES NOT FAIL FAST -- IT HANGS. **  Measured, both
+#   at LMAXL=300 so the contrast is cheap and exact:
+#       RBFAC=0.0 -> killed at 1758s, NO OUTPUT WRITTEN, one `invalid value encountered in divide`
+#       RBFAC=0.1 -> rc=0 in 22s, 25 multipoles, ZERO non-finite, no warnings
+#   An 80x difference in wall, and the zero produced nothing.  The chain: line 214 makes
+#   `RB_REC = float(RBFAC) * RB_REC` zero, line 397 makes `Rb_of` identically zero, and line 1532's
+#   `tp * (tg - tb) / Rb` is then 0/0 -- which poisons the derivative, collapses the stiff
+#   integrator's step control, and grinds.  ⚠ *Idempotence does not protect against this: a hung run
+#   never writes the output a resume would skip, so unattended it would spend the whole grant on one
+#   of ten slots and bank nothing.*  ⌗ `PO13` gates a no-loading `g2/g1` of 1.065 against 0.897;
+#   whatever path that was measured on, it is not `HIER=1`.
+for v in 0.1 0.5 1.5 2.0; do
   run "cr_rb${v}"   $CR RBFAC=$v
   run "lcdm_rb${v}" $LC RBFAC=$v
 done
