@@ -257,7 +257,14 @@ def mathspan(t):
     # A line break and an alignment mark inside a math span: the span is one
     # line here, so they become a space rather than reaching the page as source.
     t = re.sub(r'\\\\\\\\', ' ', t)
-    t = re.sub(r'(?<!\\)&(?:amp;)?', ' ', t)
+    # r7209: an alignment mark can arrive DOUBLY escaped -- `&amp;amp;` -- when the
+    # caller escapes a block that is then handed on and escaped again, which is what
+    # happens to a display equation carried inside a theorem.  The single-layer form
+    # stripped one `&amp;` and left a literal `amp;` on the page: three such on P9,
+    # reading `8\pi p_\chi amp;= ...`.  Collapse every layer before stripping.
+    while '&amp;' in t:
+        t = t.replace('&amp;', '&')
+    t = re.sub(r'(?<!\\)&', ' ', t)
     t = re.sub(r'\\[,;:!>]|\\ ', ' ', t)
     t = re.sub(r'\\(?:qquad|quad|thinspace|;|,)\b', ' ', t)
     t = _prep(t)
