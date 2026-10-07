@@ -23,6 +23,7 @@ again -- which is the point: the rewording is exactly the event this class fails
 
   python3 check_quote_pins.py
   python3 check_quote_pins.py --list        # the unadjudicated backlog, complete and unfiltered
+  python3 check_quote_pins.py --multi       # the MULTI-SITE backlog (r7201+70.1), with its section split
 
 Drafted r7125+70.1.  Stated for reversal.
 """
@@ -43,6 +44,13 @@ LINE = re.compile(r'\s*\[QUOTE-PIN\]\[(PAPER|SOURCE)\]\[(SENTENCE|TOKEN)\]\[([A-
 UNREAD = 'UNADJUDICATED'
 # ⓷ the ratchet.  Seeded at r7125+70.1 as the count of distinct (receipt, literal) keys; lowering it is the point.
 CEILING = 2287
+# ⓸ r7201+70.1 (66's r7191 order): THE MULTI-SITE BACKLOG.  A PAPER key whose literal occurs twice or more in the file
+#   its read trace names is a pin on the FILE and not on the claim -- it survives the removal of its sentence while
+#   any copy stands.  The operator flags it `MULTI` (and `SECSHARED` when two copies share a section, so a section
+#   scope cannot single-site it).  Counted over the PINNED key set -- keys in the baseline -- so a new receipt's key
+#   fails as NEW and not twice, and the direction is `<=` (r7191 item 4): the count is a backlog interior to its
+#   range, so the monotone form is live (r7199's discriminator).  Measured at r7201+70.1: 249 keys, 127 SECSHARED.
+MULTI_CEILING = 249
 
 
 def read_baseline():
@@ -69,9 +77,13 @@ def measure():
             target, tier, flags, path, _l, _c, lit = m.groups()
             key = (path, json.loads(lit))
             prev = out.get(key)
-            # one key, several sites: ALT only if every site is ALT (the stricter reading wins)
+            # one key, several sites: ALT only if every site is ALT (the stricter reading wins); MULTI and SECSHARED
+            #   are properties of the literal in its file, so any site carrying them carries them for the key
+            keep = {f for f in ((prev[2] if prev else '') + ',' + flags).split(',') if f in ('MULTI', 'SECSHARED')}
             if prev is None or ('ALT' in prev[2] and 'ALT' not in flags):
                 out[key] = (target, tier, flags)
+            t_, ti_, f_ = out[key]
+            out[key] = (t_, ti_, ','.join([x for x in f_.split(',') if x and x not in keep] + sorted(keep)))
     return out
 
 
@@ -137,6 +149,26 @@ def main():
         bad += 1
     else:
         print('    no stale entry: every adjudication still describes a live key.')
+
+    multi = sorted(k for k, (_t, _ti, fl) in live.items() if k in base and 'MULTI' in fl.split(','))
+    shared = sum(1 for k in multi if 'SECSHARED' in live[k][2].split(','))
+    if '--multi' in sys.argv:
+        print()
+        print(f'  THE MULTI-SITE BACKLOG, COMPLETE AND UNFILTERED -- {len(multi)} key(s), {shared} SECSHARED:')
+        for p, lit in multi:
+            print(f'    [{"SECSHARED" if "SECSHARED" in live[(p, lit)][2] else "SECTION-UNIQUE"}] {p}')
+            print(f'               {json.dumps(lit, ensure_ascii=False)}')
+        return 0
+    print(f'    MULTI-SITE: {len(multi)} pinned key(s) -- {len(multi) - shared} a section scope would single-site, '
+          f'{shared} that need a neighbourhood or a longer literal')
+    if len(multi) > MULTI_CEILING:
+        print()
+        print(f'  ⛔ THE MULTI-SITE COUNT ROSE: {len(multi)} against the declared ceiling {MULTI_CEILING}.')
+        print('     ⌗ A pinned literal now occurs more than once in its file: name the section it is about, or')
+        print('       lengthen it until it names one site (`python3 check_quote_pins.py --multi` lists them).')
+        bad += 1
+    else:
+        print(f'    the multi-site ratchet holds: {len(multi)} against a ceiling of {MULTI_CEILING}')
 
     if unread > CEILING:
         print()

@@ -43,7 +43,10 @@ it is MADE and lets the receipt carry the displacement to its checks:
                     not own -- not its own `__file__`, not json/npz/csv data.  Reported per site with
                     target PAPER (`*.tex`) or SOURCE, tier SENTENCE (>= 3 words) or TOKEN, and flags ALT
                     (one arm of a disjunction of states), XOR (an exclusive one, the form that broke at
-                    r7125) and OPEN (an openness marker in the literal).  Absence claims are exempt.  This
+                    r7125) and OPEN (an openness marker in the literal).  r7201+70.1 adds LIST (a string of a
+                    receipt's own module-level collection reaching a site form through a loop variable), SURVEY
+                    (a collection passed to `reach_baseline.survey()`), and MULTI / SECSHARED on PAPER keys whose
+                    literal occurs twice or more in the traced file (in one section).  Absence claims are exempt.  This
                     is `L-249`'s class (r3105), which was left ungated because a pin is not mechanically
                     separable from a check; the ratchet answers that the way PROSE-PIN does, by counting
                     and adjudicating rather than separating.
@@ -707,6 +710,144 @@ def _quote_site(n, neg, asg, fns, src):
 _ALT_RANK = {False: 0, 'XOR': 1, True: 2}
 
 
+def _str_collections(tree):
+    """module-level NAME -> list of strings, for a list/tuple/set of string constants (or of tuples led by one), or a
+    dict with string keys (values too when they are strings)"""
+    out = {}
+    for n in tree.body:
+        if isinstance(n, (ast.Assign, ast.AnnAssign)):
+            tg = n.targets[0] if isinstance(n, ast.Assign) else n.target
+            v = n.value
+            if not isinstance(tg, ast.Name) or v is None:
+                continue
+            s = None
+            if isinstance(v, (ast.List, ast.Tuple, ast.Set)) and v.elts:
+                s = []
+                for e in v.elts:
+                    if isinstance(e, ast.Constant) and isinstance(e.value, str):
+                        s.append(e.value)
+                    elif (isinstance(e, (ast.Tuple, ast.List)) and e.elts and isinstance(e.elts[0], ast.Constant)
+                          and isinstance(e.elts[0].value, str)):
+                        s.append(e.elts[0].value)
+                    else:
+                        s = None
+                        break
+            elif isinstance(v, ast.Dict) and v.keys and all(isinstance(k, ast.Constant) and isinstance(k.value, str)
+                                                            for k in v.keys):
+                s = [k.value for k in v.keys]
+            if s and all(len(x.strip()) >= 3 for x in s):
+                out[tg.id] = s
+    return out
+
+
+def _list_sites(tree, asg, fns, src):
+    """(site node, string, container, 'LOOP'|'SURVEY') for every string of a module-level collection that reaches a
+    presence site form through a loop variable inside an asserting context, or is passed to `survey()`"""
+    coll = _str_collections(tree)
+    if not coll:
+        return []
+    inroot = set()
+    for r in _assert_roots(tree, fns, src):
+        inroot.update(id(x) for x in ast.walk(r))
+    out = []
+
+    def slot(n, names):
+        """the container of a site form whose literal slot is one of `names`, else None"""
+        isn = lambda x: isinstance(x, ast.Name) and x.id in names
+        if isinstance(n, ast.Compare) and len(n.ops) == 1:
+            op, rhs = n.ops[0], n.comparators[0]
+            if isinstance(op, ast.In) and isn(n.left):
+                return rhs
+            c = n.left
+            if (isinstance(c, ast.Call) and isinstance(c.func, ast.Attribute) and c.args and isn(c.args[0])
+                    and c.func.attr in ('find', 'count')):
+                return c.func.value
+        if (isinstance(n, ast.Call) and isinstance(n.func, ast.Attribute) and n.func.attr in ('search', 'match')
+                and isinstance(n.func.value, ast.Name) and n.func.value.id == 're' and len(n.args) >= 2
+                and isn(n.args[0])):
+            return n.args[1]
+        return None
+
+    for node in ast.walk(tree):
+        gens = []
+        if isinstance(node, ast.For):
+            gens = [(node.target, node.iter, node.body)]
+        elif isinstance(node, (ast.ListComp, ast.SetComp, ast.GeneratorExp, ast.DictComp)):
+            gens = [(g.target, g.iter, [node]) for g in node.generators]
+        for tgt, it, body in gens:
+            meth = it.func.attr if (isinstance(it, ast.Call) and isinstance(it.func, ast.Attribute)
+                                    and it.func.attr in ('items', 'keys', 'values')) else None
+            base = it.func.value if meth else it
+            if not (isinstance(base, ast.Name) and base.id in coll) or meth == 'values':
+                continue
+            # the loop variable that carries the string: the target itself, or a tuple target's first name
+            first = tgt.elts[0] if isinstance(tgt, ast.Tuple) and tgt.elts else tgt
+            if not isinstance(first, ast.Name):
+                continue
+            for b in body:
+                for x in ast.walk(b):
+                    cont = slot(x, {first.id})
+                    # a dict built from the reads is KEY membership (`b in sites`), not a quotation -- the false
+                    #   positive the first run returned, in node 70's own P1 receipt
+                    if isinstance(cont, ast.Name) and any(isinstance(v, (ast.Dict, ast.DictComp))
+                                                          for v in asg.get(cont.id, [])):
+                        continue
+                    if cont is not None and id(x) in inroot:
+                        out.extend((x, s, cont, 'LOOP') for s in coll[base.id])
+    for node in ast.walk(tree):
+        if (isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute) and node.func.attr == 'survey'):
+            for a in node.args:
+                for x in ast.walk(a):
+                    if isinstance(x, ast.Name) and x.id in coll:
+                        out.extend((node, s, None, 'SURVEY') for s in coll[x.id])
+    seen, uniq = set(), []
+    for x, s, c, k in out:
+        if (id(x), s) not in seen:
+            seen.add((id(x), s))
+            uniq.append((x, s, c, k))
+    return uniq
+
+
+_TEX_CACHE = {}
+
+
+def _multi_flags(root, rows):
+    """add MULTI (and SECSHARED) to every PAPER row whose literal occurs twice or more in a .tex its trace names"""
+    def text(name):
+        p = os.path.join(root, 'corpus', name)
+        if p not in _TEX_CACHE:
+            _TEX_CACHE[p] = open(p, encoding='utf-8', errors='replace').read() if os.path.exists(p) else None
+        return _TEX_CACHE[p]
+    for r in rows:
+        tr = r.pop('_trace', None)
+        if r['target'] != 'PAPER' or not tr:
+            continue
+        lit = r['lit']
+        best = None
+        for name in sorted(set(re.findall(r'([\w\-]+\.tex)\b', tr))):
+            t = text(name)
+            if t is None:
+                continue
+            c = ' '.join(t.split())
+            n = max(t.count(lit), c.count(lit))
+            if best is None or n > best[0]:
+                best = (n, c)
+        if best is None or best[0] < 2:
+            continue
+        n, c = best
+        heads = [(m.start(), m.group(0)) for m in re.finditer(r'\\(?:sub)*section\*?\{[^}]*\}|\\begin\{abstract\}', c)]
+        secs, pos = [], 0
+        while True:
+            j = c.find(lit, pos)
+            if j < 0:
+                break
+            h = [s for q, s in heads if q < j]
+            secs.append(h[-1] if h else 'preamble')
+            pos = j + len(lit)
+        add = ['MULTI'] + (['SECSHARED'] if len(set(secs)) < len(secs) else [])
+        r['flags'] = ','.join([x for x in r['flags'].split(',') if x] + add)
+
+
 def quote(root, files=None):
     out = []
     files = files or sorted(glob.glob(os.path.join(root, 'receipts', '**', '*.py'), recursive=True))
@@ -770,7 +911,34 @@ def quote(root, files=None):
             flags = ','.join(x for x, on in (('ALT', alt), ('XOR', alt == 'XOR'),
                                              ('OPEN', bool(_OPEN_WORDS.search(lit)))) if on)
             out.append(dict(receipt=os.path.relpath(f, root), site=f'{n.lineno}:{n.col_offset}', kind='QUOTE-PIN',
-                            target=target, tier=tier, flags=flags, lit=' '.join(lit.split())))
+                            target=target, tier=tier, flags=flags, lit=' '.join(lit.split()), _trace=trace))
+        # ⛭ r7201+70.1 (r7197's addition): A RECEIPT'S OWN PIN LISTS.  A module-level collection of strings whose
+        #   loop variable reaches one of the site forms above (or `.count`) is a pin by BEHAVIOUR, and each string is
+        #   keyed `(receipt, string)` like an inline literal.  So is a collection handed whole to
+        #   `reach_baseline.survey()`, which counts every term across the paper bodies -- `S2`'s `ABSENT`, the list
+        #   the order names, reaches a paper only that way.  Flag `LIST`; `SURVEY` for the second route.
+        #   ⌗ Measured first (computations/beyond_the_wall/r7201_70_multisite_verdict/): the pre-registered
+        #   `in`-only definition missed S2, and a pass-to-any-call rule was 35% precise, so this keys only the
+        #   operator's own site forms reached through a loop variable, plus `survey`.
+        for site, lit, cont, flags in _list_sites(tree, asg, fns, src):
+            if any(id(site) == id(b[0]) for b in best.values()):
+                continue
+            trace = 'reach_baseline corpus *.tex' if cont is None else _reads(cont, asg, fns, src)
+            if trace is None or _SELF.search(trace) or _STRUCT.search(trace):
+                continue
+            target = 'PAPER' if re.search(r'\.tex\b', trace) else 'SOURCE'
+            tier = 'SENTENCE' if len(lit.split()) >= 3 else 'TOKEN'
+            fl = ','.join(x for x, on in (('LIST', True), ('SURVEY', flags == 'SURVEY'),
+                                          ('OPEN', bool(_OPEN_WORDS.search(lit)))) if on)
+            out.append(dict(receipt=os.path.relpath(f, root), site=f'{site.lineno}:{site.col_offset}',
+                            kind='QUOTE-PIN', target=target, tier=tier, flags=fl, lit=' '.join(lit.split()),
+                            _trace=trace))
+    # ⛭⛭ r7201+70.1 (r7191's order): THE MULTI-SITE VERDICT.  A PAPER pin whose literal occurs more than once in the
+    #   file its own read trace names is a pin on the FILE and not on the claim: it survives the removal of the
+    #   sentence it was written for while any other copy stands (`by three independent routes`, r7183).  Flag
+    #   `MULTI`, and `SECSHARED` beside it when two copies share a section, so a section scope alone cannot
+    #   single-site it and only a neighbourhood or a longer literal can (the r7183 47/53 split).
+    _multi_flags(root, out)
     # `re.search(...) is not None` reaches the same site as its Compare and as its Call: one site, ALT only if
     #   every route to it is ALT
     uniq = {}
@@ -1410,6 +1578,29 @@ assert "planted pin" in SRC.lower()                                  # its own s
 '''
 
 
+# ⛭ r7201+70.1: the list-pin, survey and MULTI-SITE seed.  The seed corpus is `a 8.2\% b likelihood c likelihood`.
+_SEED_LIST = r'''
+import os, re
+P15 = os.path.join("corpus", "CR_cosmology.tex")
+b15 = open(P15, encoding="utf-8").read()
+PHRASES = ["a 8.2", "likelihood c"]
+OWED = ("b likelihood",)
+LABELS = ["row one", "row two"]
+ABSENT = ["withdrawn phrase x"]
+def gate(name, ok):
+    print("PASS" if ok else "FAIL", name)
+gate("phrases", all(p in b15 for p in PHRASES))
+for ph in OWED:
+    assert b15.count(ph) == 1
+for lab in LABELS:
+    print(lab)
+rows = RB.survey(ABSENT)
+assert "likelihood" in b15
+'''
+_SEED_LIST_WANT = {('a 8.2', 'LIST'), ('likelihood c', 'LIST'), ('b likelihood', 'LIST'),
+                   ('withdrawn phrase x', 'LIST,SURVEY'), ('likelihood', 'MULTI,SECSHARED')}   # one section: SHARED
+
+
 def seed():
     tmp = tempfile.mkdtemp(prefix='mut_seed_')
     ok = True
@@ -1455,6 +1646,11 @@ def seed():
         print(f'  QUOTE   flagged QUOTE-PIN at lines {got}; planted {want}; ALT at {alt}   '
               f'{"OK" if got == want and alt == want_alt else "MISS"}')
         ok &= got == want and alt == want_alt
+        open(os.path.join(d, 'Q2_list.py'), 'w').write(_SEED_LIST)
+        rows = quote(d, [os.path.join(d, 'Q2_list.py')])
+        got = {(r['lit'], r['flags']) for r in rows}
+        print(f'  LIST    keys {sorted(got)}   {"OK" if got == _SEED_LIST_WANT else "MISS, want " + str(sorted(_SEED_LIST_WANT))}')
+        ok &= got == _SEED_LIST_WANT
         rows = prose(tmp, [os.path.join(d, 'P1_prose.py')])
         got, want = lines_of(rows, 'PROSE-PIN'), planted(_SEED_PROSE, 'pin')
         print(f'  PROSE   flagged PROSE-PIN at lines {got}; planted {want}   {"OK" if got == want else "MISS"}')

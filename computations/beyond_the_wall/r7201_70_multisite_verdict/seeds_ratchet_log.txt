@@ -1,0 +1,6 @@
+single-site key used: C12_the_odd_even_half_has_its_parameter.py "the odd/even asymmetry is imprinted afterwards"
+multi-site key used:  C15_the_cancellation_does_not_reach_the_ratio.py "10.8"
+S0 HEAD: rc 0, MULTI 249 []
+S1 a single-site literal duplicated: rc 1, MULTI 250 ['⛔ THE MULTI-SITE COUNT ROSE: 250 against the declared ceiling 249.']
+S2 one copy of a two-copy MULTI literal removed: rc 0, MULTI 247 []
+RATCHET SEEDS: HELD
