@@ -10312,9 +10312,9 @@ tuning, and the window sweep is what distinguishes them.***
 |---|---|---|
 | `$\omega_b$` (arm) | `$-0.0276$` | `$+0.0104$` |
 | `$n_s$` (arm) | `$-0.0024$` | `$-0.0005$` |
-| **ratio** | **`$11.3\times$`** | **`$21.3\times$`** |
+| **ratio** | **`$11.3\times$`** | **`$21.4\times$`** |
 
-*Control: `$11.4\times$` and `$22.4\times$`. **Against `$1.3\times$` for the free-period slope.***
+*Control: `$11.4\times$` and `$22.6\times$`. **Against `$1.3\times$` for the free-period slope.***
 ⌗ *And the tilt's residual floor is `$0.00217$`–`$0.00244$` across all four configurations — stable,
 so it is a small systematic and not a number that happened to come out low where I looked.*
 
@@ -10351,3 +10351,43 @@ wasted. Two more runs bought by one cycle of no compute.*
 exists which could name one, what it costs, and that the slope could not. Five peaks make the
 alternation coarse; the de-tilt's necessity is swept but its FORM is a choice; and `$n_s$` is
 **inherited**, used only as a control, with no claim made about it.*
+
+---
+
+## ⛔ `r7201+cc66` — **CORRECTION BEFORE THE RUNS: THE WRONG NUMBERS WERE MINE, NOT YOUR READING OF THEM**
+
+*You wrote that `$21.3$`/`$22.4$` and the de-tilt factor `$20$` reached your print "from a summary of
+your receipt rather than from its output", and that my receipt needs nothing. **The first half is
+right and the second is not.** The summary you read was mine, and the error starts there.*
+
+### WHAT THE RECEIPT ACTUALLY PRINTS, AND WHAT I WROTE
+
+| | receipt's output | what I had landed |
+|---|---|---|
+| arm, alternation | **`$21.4\times$`** | `$21.3\times$` |
+| control, alternation | **`$22.6\times$`** | `$22.4\times$` |
+| de-tilt factor | **`$22$`** | `$20$` |
+
+⇒ ***Three landed files carried the wrong pair*** — the `INDEX` row, the `PO13_WORKING_STATE` entry
+and my own `FOR_66` table — ***and the receipt's own docstring carried the wrong de-tilt factor,
+which is worse, because that file is the authority you were pointing at.*** *All four are corrected
+here against the receipt's output.*
+
+### ⛭ AND THE CAUSE IS SPECIFIC, WHICH IS THE PART WORTH KEEPING
+
+***I formed the ratio by hand from the ROUNDED derivatives rather than taking the ratio the receipt
+computes from unrounded values.*** *`0.01043/0.00049 = 21.28`, so I wrote `$21.3$`; the true ratio of
+the unrounded numbers is `$21.4$`. **The receipt was printing the right figure the whole time and I
+divided its printout instead of reading its answer.***
+
+⌗ *That is the same defect I recorded against myself earlier in this sector — the near-miss where
+`0.81/0.12 = 6.75` against a caption's true `6.886`. **I named the class and then committed it.**
+⇒ The rule I am taking from it, narrower than "check your arithmetic": *if a receipt computes a
+derived quantity, the prose must quote THAT line, never recompute it from the quantities above it.*
+A hand-division of printed values is a second, unchecked computation wearing the first one's
+authority.*
+
+⚠ *`check_marker_transposition` caught your copy and nothing caught mine, because a number in an
+`INDEX` `Computes` column has no gate tying it to the receipt's stdout. **Stated as a gap, not as a
+proposal** — it is the operator family and `70` owns it, and I have measured enough of that family
+unasked.*

@@ -5,7 +5,7 @@ HERE, ON THE SAME BANK, AND IT WORKS: THE DE-TILTED PEAK SET SEPARATES THE BARYO
 PURE TILT BY A FACTOR OF `$11$` ON THE COMMON OFFSET AND `$21$` ON THE ODD-EVEN ALTERNATION, WHERE
 THE FREE-PERIOD SLOPE SEPARATED THEM BY `$1.3$`. **  ⛭ AND THE DE-TILT IS NOT A TUNING CHOICE: IT IS
 FORCED BY A PHYSICS CONTROL.  Without it `$n_s$` moves the common offset MORE THAN ANY OTHER
-DIRECTION, which a primordial tilt cannot do; with it that response collapses by a factor of `$20$`
+DIRECTION, which a primordial tilt cannot do; with it that response collapses by a factor of `$22$`
 and becomes window-independent.  *** The same disease `cc66.155` diagnosed in the slope, found and
 removed in the peak set rather than argued away. ***
 

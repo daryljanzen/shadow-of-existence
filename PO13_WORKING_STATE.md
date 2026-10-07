@@ -9327,7 +9327,7 @@ do.** De-tilting removes it by `$20\times$` and stops the window dependence.
 | `$\omega_b$`, control | `$-0.02779$` | `$+0.01075$` |
 | `$n_s$`, control | `$-0.00243$` | `$-0.00048$` |
 
-**`$11.3\times$`/`$21.3\times$` on the arm, `$11.4\times$`/`$22.4\times$` on the control — against
+**`$11.3\times$`/`$21.4\times$` on the arm, `$11.4\times$`/`$22.6\times$` on the control — against
 `$1.3\times$` for the free-period slope at `cc66.155`.**
 
 ### CONVENTION ROBUSTNESS, WHICH THE SLOPE DID NOT HAVE
