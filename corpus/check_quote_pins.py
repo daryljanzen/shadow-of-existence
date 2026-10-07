@@ -51,6 +51,12 @@ CEILING = 2287
 #   fails as NEW and not twice, and the direction is `<=` (r7191 item 4): the count is a backlog interior to its
 #   range, so the monotone form is live (r7199's discriminator).  Measured at r7201+70.1: 249 keys, 127 SECSHARED.
 MULTI_CEILING = 249
+# ⓹ r7201+70.1 (66's r7197 addition): the LIST keys -- a receipt's own pin collections, keyed for the first time -- carry
+#   their own bucket, `UNADJUDICATED-LIST`, and their own ceiling.  ⛔ Not folded into `UNADJUDICATED`: that count is
+#   held monotone by other receipts (`S2_the_quote_pin_backlog...` at <= 2170), and a population newly COUNTED is not
+#   new work in the old backlog -- folding it in turned that receipt and `S5` red on the first CI run of this build.
+UNREAD_LIST = 'UNADJUDICATED-LIST'
+LIST_CEILING = 60
 
 
 def read_baseline():
@@ -169,6 +175,14 @@ def main():
         bad += 1
     else:
         print(f'    the multi-site ratchet holds: {len(multi)} against a ceiling of {MULTI_CEILING}')
+
+    unread_list = verdicts.get(UNREAD_LIST, 0)
+    if unread_list > LIST_CEILING:
+        print()
+        print(f'  ⛔ THE UNADJUDICATED LIST-PIN COUNT ROSE: {unread_list} against the declared ceiling {LIST_CEILING}.')
+        bad += 1
+    else:
+        print(f'    the list-pin ratchet holds: {unread_list} unadjudicated list key(s) against a ceiling of {LIST_CEILING}')
 
     if unread > CEILING:
         print()
