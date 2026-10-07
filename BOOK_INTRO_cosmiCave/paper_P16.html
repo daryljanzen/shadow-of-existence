@@ -93,6 +93,19 @@
   figcaption { color:var(--faint); font-size:.86rem; margin-top:.5rem;
                 text-align:left; line-height:1.5; }
   .figalt a { font-size:.9rem; }
+  /* r7209: the dependency matrix is nineteen columns wide, so on a phone it must
+     SCROLL rather than overflow or reflow into unreadable wrapped cells. */
+  .tablewrap { margin:1.6rem 0; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  .tablewrap table { border-collapse:collapse; font-size:.74rem; margin:0 auto;
+                      font-variant-numeric:tabular-nums; }
+  .tablewrap caption { caption-side:bottom; color:var(--faint); font-size:.86rem;
+                        margin-top:.6rem; text-align:left; line-height:1.5; }
+  .tablewrap th, .tablewrap td { padding:.18rem .42rem; text-align:center;
+                                  white-space:nowrap; }
+  .tablewrap th { font-weight:600; border-bottom:1px solid var(--line); }
+  .tablewrap tr > *:first-child { text-align:right; white-space:nowrap;
+                                   border-right:1px solid var(--line);
+                                   padding-right:.6rem; }
   sup.mk { font-size:.62rem; font-family:'Iowan Old Style',Georgia,serif;
             letter-spacing:.02em; padding-left:.1em; }
   sup.mk.r { color:var(--pole); }

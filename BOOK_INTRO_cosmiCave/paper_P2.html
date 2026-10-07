@@ -93,6 +93,19 @@
   figcaption { color:var(--faint); font-size:.86rem; margin-top:.5rem;
                 text-align:left; line-height:1.5; }
   .figalt a { font-size:.9rem; }
+  /* r7209: the dependency matrix is nineteen columns wide, so on a phone it must
+     SCROLL rather than overflow or reflow into unreadable wrapped cells. */
+  .tablewrap { margin:1.6rem 0; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  .tablewrap table { border-collapse:collapse; font-size:.74rem; margin:0 auto;
+                      font-variant-numeric:tabular-nums; }
+  .tablewrap caption { caption-side:bottom; color:var(--faint); font-size:.86rem;
+                        margin-top:.6rem; text-align:left; line-height:1.5; }
+  .tablewrap th, .tablewrap td { padding:.18rem .42rem; text-align:center;
+                                  white-space:nowrap; }
+  .tablewrap th { font-weight:600; border-bottom:1px solid var(--line); }
+  .tablewrap tr > *:first-child { text-align:right; white-space:nowrap;
+                                   border-right:1px solid var(--line);
+                                   padding-right:.6rem; }
   sup.mk { font-size:.62rem; font-family:'Iowan Old Style',Georgia,serif;
             letter-spacing:.02em; padding-left:.1em; }
   sup.mk.r { color:var(--pole); }
@@ -132,7 +145,7 @@ for <span class="m">η∈[0,π]</span>, with <span class="m">η= 0</span> corres
 <div class="proof"><span class="thmhead">Proof.</span> Along a radially infalling timelike geodesic in the Schwarzschild interior with vanishing angular momentum, the proper-time element satisfies
 <div class="eq">dτ<sup>2</sup> = dr<sup>2</sup>/2M/r - 1 = r/2M - r dr<sup>2</sup>.</div>
 Substituting <span class="m">r = M(1+ cos η)</span>, so that <span class="m">2M - r = M(1 - cos η) = 2M sin<sup>2</sup>(η/2)</span> and <span class="m">r = 2M cos<sup>2</sup>(η/2)</span>, and <span class="m">dr = -M sin ηdη</span>:
-<div class="eq">dτ<sup>2</sup> amp;= 2M cos<sup>2</sup>(η/2)/2M sin<sup>2</sup>(η/2) ·M<sup>2</sup> sin<sup>2</sup>ηdη<sup>2</sup> \ amp;=<sup>2</sup>(η/2) ·M<sup>2</sup> ·4 sin<sup>2</sup>(η/2) cos<sup>2</sup>(η/2) dη<sup>2</sup> \ amp;= 4M<sup>2</sup> cos<sup>4</sup>(η/2) dη<sup>2</sup>.</div>
+<div class="eq">dτ<sup>2</sup> = 2M cos<sup>2</sup>(η/2)/2M sin<sup>2</sup>(η/2) ·M<sup>2</sup> sin<sup>2</sup>ηdη<sup>2</sup> \ =<sup>2</sup>(η/2) ·M<sup>2</sup> ·4 sin<sup>2</sup>(η/2) cos<sup>2</sup>(η/2) dη<sup>2</sup> \ = 4M<sup>2</sup> cos<sup>4</sup>(η/2) dη<sup>2</sup>.</div>
 Taking the positive square root,
 <div class="eq">dτ= 2M cos<sup>2</sup>(η/2) dη= M(1 + cos η) dη,</div>
 which integrates to <span class="m">τ(η) = M(η+ sin η)</span> with <span class="m">τ(0) = 0</span>. The total proper time is <span class="m">τ(π) = Mπ</span>. <span class="qed">□</span></div>
@@ -145,7 +158,7 @@ In coordinates <span class="m">(η,t,θ,φ)</span>, the Schwarzschild interior m
 where <span class="m">τ= M(η+ sin η)</span>, and equivalently
 <div class="eq">ds<sup>2</sup><sub>int</sub> = -4M<sup>2</sup> cos<sup>4</sup>(η/2) dη<sup>2</sup> + tan<sup>2</sup>(η/2) dt<sup>2</sup> + M<sup>2</sup>(1+ cos η)<sup>2</sup> dΩ<sup>2</sup>.</div></div>
 <div class="proof"><span class="thmhead">Proof.</span> In the interior, the Schwarzschild metric components are
-<div class="eq">g<sub>tt</sub> amp;= -(1 - 2M/r) = 2M/r - 1 = 2M - r/r = 2M sin<sup>2</sup>(η/2)/2M cos<sup>2</sup>(η/2) = tan<sup>2</sup>(η/2),\ g<sub>rr</sub> amp;= (1 - 2M/r)<sup>-1</sup> = -r/2M - r = -<sup>2</sup>(η/2).</div>
+<div class="eq">g<sub>tt</sub> = -(1 - 2M/r) = 2M/r - 1 = 2M - r/r = 2M sin<sup>2</sup>(η/2)/2M cos<sup>2</sup>(η/2) = tan<sup>2</sup>(η/2),\ g<sub>rr</sub> = (1 - 2M/r)<sup>-1</sup> = -r/2M - r = -<sup>2</sup>(η/2).</div>
 The radial coefficient gives, after substituting <span class="m">dr = -M sin ηdη</span>,
 <div class="eq">g<sub>rr</sub> dr<sup>2</sup> = -<sup>2</sup>(η/2) ·M<sup>2</sup> sin<sup>2</sup>ηdη<sup>2</sup> = -4M<sup>2</sup> cos<sup>4</sup>(η/2) dη<sup>2</sup> = -dτ<sup>2</sup>,</div>
 by the calculation in Proposition <a class="xr" href="#prop:cycloid">1</a>. The angular coefficient is <span class="m">r<sup>2</sup> = M<sup>2</sup>(1+ cos η)<sup>2</sup></span>. Assembling,
@@ -174,9 +187,9 @@ Under the analytic continuation <span class="m">z = iρ</span>, the metric (<a c
 <div class="eq">ds<sup>2</sup><sub>I</sub> = - tanh<sup>2</sup>(ρ/2) dt<sup>2</sup> + 4M<sup>2</sup> cosh<sup>4</sup>(ρ/2) dρ<sup>2</sup> + M<sup>2</sup>(1 + cosh ρ)<sup>2</sup> dΩ<sup>2</sup>,</div>
 which agrees with the Schwarzschild exterior metric for <span class="m">r ∈(2M,∞)</span> under the identification <span class="m">r = M(1+ cosh ρ)</span>.</div>
 <div class="proof"><span class="thmhead">Proof.</span> Under <span class="m">z = iρ</span>, <span class="m">dz = i dρ</span> and <span class="m">dz<sup>2</sup> = -dρ<sup>2</sup></span>. The trigonometric functions become hyperbolic:
-<div class="eq">cos z amp;↦ cosh ρ,\ sin z amp;↦i sinh ρ,\ tan (z/2) amp;↦i tanh (ρ/2),\ cos (z/2) amp;↦ cosh (ρ/2).</div>
+<div class="eq">cos z ↦ cosh ρ,\ sin z ↦i sinh ρ,\ tan (z/2) ↦i tanh (ρ/2),\ cos (z/2) ↦ cosh (ρ/2).</div>
 The interior metric (<a class="xr" href="#eq:interior_metric_eta">(8)</a>) transforms component by component:
-<div class="eq">-4M<sup>2</sup> cos<sup>4</sup>(η/2) dη<sup>2</sup> amp;↦-4M<sup>2</sup> cosh<sup>4</sup>(ρ/2) ·(-dρ<sup>2</sup>) = +4M<sup>2</sup> cosh<sup>4</sup>(ρ/2) dρ<sup>2</sup>,\ tan<sup>2</sup>(η/2) dt<sup>2</sup> amp;↦(i tanh (ρ/2))<sup>2</sup> dt<sup>2</sup> = - tanh<sup>2</sup>(ρ/2) dt<sup>2</sup>,\ M<sup>2</sup>(1+ cos η)<sup>2</sup> dΩ<sup>2</sup> amp;↦M<sup>2</sup>(1+ cosh ρ)<sup>2</sup> dΩ<sup>2</sup>.</div>
+<div class="eq">-4M<sup>2</sup> cos<sup>4</sup>(η/2) dη<sup>2</sup> ↦-4M<sup>2</sup> cosh<sup>4</sup>(ρ/2) ·(-dρ<sup>2</sup>) = +4M<sup>2</sup> cosh<sup>4</sup>(ρ/2) dρ<sup>2</sup>,\ tan<sup>2</sup>(η/2) dt<sup>2</sup> ↦(i tanh (ρ/2))<sup>2</sup> dt<sup>2</sup> = - tanh<sup>2</sup>(ρ/2) dt<sup>2</sup>,\ M<sup>2</sup>(1+ cos η)<sup>2</sup> dΩ<sup>2</sup> ↦M<sup>2</sup>(1+ cosh ρ)<sup>2</sup> dΩ<sup>2</sup>.</div>
 Assembling,
 <div class="eq">ds<sup>2</sup><sub>I</sub> = +4M<sup>2</sup> cosh<sup>4</sup>(ρ/2) dρ<sup>2</sup> - tanh<sup>2</sup>(ρ/2) dt<sup>2</sup> + M<sup>2</sup>(1+ cosh ρ)<sup>2</sup> dΩ<sup>2</sup>,</div>
 which is (<a class="xr" href="#eq:Region_I_metric">(14)</a>). The signature has flipped: <span class="m">dt<sup>2</sup></span> now enters with a negative coefficient (timelike) and the radial coefficient is positive (spacelike), as required for the exterior.
@@ -196,9 +209,9 @@ Under the analytic continuation <span class="m">z = π+ iρ'</span>, the metric 
 <div class="eq">ds<sup>2</sup><sub>back</sub> = -<sup>2</sup>(ρ'/2) dt<sup>2</sup> + 4M<sup>2</sup> sinh<sup>4</sup>(ρ'/2) dρ'<sup>2</sup> + M<sup>2</sup>(1 - cosh ρ')<sup>2</sup> dΩ<sup>2</sup>,</div>
 which agrees with the Schwarzschild form for <span class="m">r ∈(-∞,0)</span> under the identification <span class="m">r = M(1- cosh ρ')</span>.</div>
 <div class="proof"><span class="thmhead">Proof.</span> Under <span class="m">z = π+ iρ'</span>, <span class="m">dz = i dρ'</span> and <span class="m">dz<sup>2</sup> = -dρ'<sup>2</sup></span>. The trigonometric functions transform as
-<div class="eq">cos (π+ iρ') amp;= - cos (iρ') = - cosh ρ',\ sin (π+ iρ') amp;= - sin (iρ') = -i sinh ρ',\ tan ((π+ iρ')/2) amp;= tan (π/2 + iρ'/2) = - (iρ'/2) = i (ρ'/2),\ cos ((π+ iρ')/2) amp;= cos (π/2 + iρ'/2) = - sin (iρ'/2) = -i sinh (ρ'/2).</div>
+<div class="eq">cos (π+ iρ') = - cos (iρ') = - cosh ρ',\ sin (π+ iρ') = - sin (iρ') = -i sinh ρ',\ tan ((π+ iρ')/2) = tan (π/2 + iρ'/2) = - (iρ'/2) = i (ρ'/2),\ cos ((π+ iρ')/2) = cos (π/2 + iρ'/2) = - sin (iρ'/2) = -i sinh (ρ'/2).</div>
 Substituting into (<a class="xr" href="#eq:interior_metric_eta">(8)</a>):
-<div class="eq">-4M<sup>2</sup> cos<sup>4</sup>(η/2) dη<sup>2</sup> amp;↦-4M<sup>2</sup> ·(-i sinh (ρ'/2))<sup>4</sup> ·(-dρ'<sup>2</sup>) = +4M<sup>2</sup> sinh<sup>4</sup>(ρ'/2) dρ'<sup>2</sup>,\ tan<sup>2</sup>(η/2) dt<sup>2</sup> amp;↦(i (ρ'/2))<sup>2</sup> dt<sup>2</sup> = -<sup>2</sup>(ρ'/2) dt<sup>2</sup>,\ M<sup>2</sup>(1+ cos η)<sup>2</sup> dΩ<sup>2</sup> amp;↦M<sup>2</sup>(1- cosh ρ')<sup>2</sup> dΩ<sup>2</sup>.</div>
+<div class="eq">-4M<sup>2</sup> cos<sup>4</sup>(η/2) dη<sup>2</sup> ↦-4M<sup>2</sup> ·(-i sinh (ρ'/2))<sup>4</sup> ·(-dρ'<sup>2</sup>) = +4M<sup>2</sup> sinh<sup>4</sup>(ρ'/2) dρ'<sup>2</sup>,\ tan<sup>2</sup>(η/2) dt<sup>2</sup> ↦(i (ρ'/2))<sup>2</sup> dt<sup>2</sup> = -<sup>2</sup>(ρ'/2) dt<sup>2</sup>,\ M<sup>2</sup>(1+ cos η)<sup>2</sup> dΩ<sup>2</sup> ↦M<sup>2</sup>(1- cosh ρ')<sup>2</sup> dΩ<sup>2</sup>.</div>
 Assembling gives (<a class="xr" href="#eq:back_seam_metric">(21)</a>).
 
 For the identification with Schwarzschild in the <span class="m">r lt; 0</span> branch: with <span class="m">r = M(1- cosh ρ')</span>, <span class="m">r lt; 0</span> for <span class="m">ρ' gt; 0</span>, and
