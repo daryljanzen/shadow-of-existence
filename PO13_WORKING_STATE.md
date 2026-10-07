@@ -9274,6 +9274,54 @@ vintage from the grids.*
   inertia). What is banked is `WBH2`, and `$\omega_b$` also sets the free-electron density, so the
   `WB` direction moves loading **and** recombination. *Even a discriminating `WB` result would have
   been two effects.*
+### ⛭⛭⛭ `r7203+cc66.157` — THE LOADING LEVER'S CURVE, AND `$\omega_b$` WAS NEVER A *CONTAMINATED* LOADING LEVER BUT AN **OPPOSING** ONE
+
+*The lever this sector asked for since `cc66.155` is run. Four points on the CR arm,
+`$\mathrm{RBFAC}\in\{0.1,0.5,1.0,1.5\}$`, `$1.0$` being the banked grid base at the same `HIER`,
+`LSTEP`, `LMAXL`, `ZSTART` so the curve's centre cost no run.*
+
+| `RBFAC` | `$\ell_A$` | `$\varphi$` | alternation |
+|---|---|---|---|
+| `$0.1$` | `$272.419$` | `$-0.21732$` | `$-0.00782$` |
+| `$0.5$` | `$286.060$` | `$-0.20935$` | `$+0.00444$` |
+| `$1.0$` | `$301.380$` | `$-0.20124$` | `$+0.01511$` |
+| `$1.5$` | `$315.272$` | `$-0.19131$` | `$+0.02318$` |
+
+- **IT IS A CURVE AND NOT A SLOPE.** `$\ell_A$` responds at `$8.48$` / `$22.10$` / `$34.26$` per
+  unit `$\ln\mathrm{RBFAC}$` across the three adjacent intervals — **a factor of `$4.04$` between
+  the extremes.** *The lever was first costed as a central difference across `$0.1\to2.0$`; that
+  would have reported one number for a quantity varying by that much inside its own span.*
+- ⛭⛭⛭ **THE FINDING: `$\mathrm{d}\varphi/\mathrm{d}\ln R_b = +0.01642$` AGAINST
+  `$\mathrm{d}\varphi/\mathrm{d}\ln\omega_b = -0.02760$`.** *Opposite signs on the common
+  offset. Decomposed, the non-loading part of the `WB` response is `$-0.04402$` — `$2.7\times$` the
+  loading part and of the opposite sign.* ⇒ **`cc66.155`'s "even a discriminating `WB` result would
+  have been two effects" is too weak: the two effects OPPOSE on this observable, and the one that is
+  not the loading is the larger.** *So `$\omega_b$`'s offset response is not a weakened reading of
+  the loading's — it points the other way, and no sharpening of the measurement recovers the
+  loading's sign from the `WB` direction alone.*
+- **The comparison is legitimate rather than nominal**, which is the only reason it can be made: the
+  instrument's line `214` is `RB_REC = RBFAC * RB_REC` and line `397` feeds that straight into
+  `Rb_of`, so `$R_b\propto\mathrm{RBFAC}$` linearly, exactly as `$R_b\propto\omega_b$`. *Both
+  lines are quoted from the instrument by the receipt, not paraphrased.*
+- ⚠ **ON THE ALTERNATION THEY DO NOT OPPOSE** — both positive, within a factor of two. *That bounds
+  the finding to the common offset: a statistic reading only the odd–even alternation would have seen
+  the clean lever and the full baryon direction agree.*
+- ⚠ **AND THE CONTROL LEAVES A MEASURED FLOOR ON THE OFFSET.** *The tilt's residual response is
+  `$15\%$` of the loading's on the common offset and `$2.9\%$` on the alternation. **I first wrote
+  that check as "an order of magnitude below" on both components and it FAILED on the offset.** The
+  de-tilt collapses the leakage by `$22\times$` but does not abolish it, so the alternation is the
+  cleaner component and the floor is recorded at its measured size rather than the one I expected.*
+- **The arms agree** at matched loading to parts in `$10^{4}$` on both components — which licenses
+  reading the lever as acoustic physics rather than as `LEAFGEOM`, and is why `r7203` could drop the
+  control's own `$1.5$` point as near-worthless.
+- **The comb survives the lever at both ends**: detected spacing `$0.869$`–`$1.049$` of `$\ell_A$`
+  at `$\mathrm{RBFAC}=1.5$` against the base's `$0.895$`–`$1.036$`, and `$0.74$`–`$0.96$` is what
+  disqualified the CR arm's banked driving-ON spectrum from this statistic.
+
+⛔ *Names no carrier. One candidate only — the loading. `NS` is **inherited**, used solely as the
+direction known a priori to carry no acoustic phase, and every conclusion stands if its value moves.
+Four points on one arm: a sign and an order of magnitude, not a functional form.*
+
   ⌗ ***SUPERSEDED AS A STANDING FACT AT `r7203+cc66`, BY THE RUNS THIS ENTRY ASKED FOR.*** *`r7201`
   granted the lever and `r7203` settled it, so `RBFAC` is now banked under
   `r7201_cc66_loading_lever/` and nowhere else. **What remains exact, and is what the argument above
