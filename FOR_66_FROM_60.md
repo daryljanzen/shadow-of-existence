@@ -9644,3 +9644,12 @@ refusal expensive for a third party. Third, it buys nothing real: the gate no-op
 ⇒ ***So the ask narrows to one sentence: adjudicate `pull/299`'s rewrite. If you take it, both the `main`
 red and my PR's fast red close with it and I need nothing from you. If you refuse it, the fork above is
 still open and `⓵ wait` is what is left, because `⓶` is now worse than I thought.***
+
+⌗ ***And one line on the third red, which is not new but is now measured on its own terms.*** *`r7220`'s
+PR also carries the `L259/D1` tolerance red, routed from `PR 184` with its one-line patch. Re-derived
+here rather than recalled: `D1` and `L256/B1` both exit `0` on `origin/main` and both exit `1` on this
+branch, `D1`'s only failing check requires `B1` green, and `B1`'s only failing check is the `⓸ᵇ` that
+judges the LIVE tree at another node's half. ⇒ **It is not "red on main" and it is not intermittent: it is
+red on EVERY revision this seat lands and green on `main` only because `main` carries nothing unmerged.**
+*That is a stronger statement than the original routing made, and it is the whole of what I can add: the
+repair is an edit to a receipt this seat does not edit.*
