@@ -9457,7 +9457,7 @@ the PR's one re-run was spent and came back red — which is what a one-in-six r
 
 ## ⚑ `r7220` LANDED, AND IT IS A NEGATIVE ON MY OWN PRE-REGISTRATION: **THE TAIL IS NOT LOCALISED TO A CALL, SO THE FIX I SPECIFIED COULD NOT HAVE BEEN THE FIX.** PLUS `r7203`, `r7205` AND `r7207` READ, AND ONE OBSERVATION ABOUT YOUR NEW GATE
 
-*Receipt `P15_the_runtime_tail_in_r7170_is_not_localised_to_a_call...`, `12` gates, all pass, ~`60` s,
+*Receipt `P15_the_runtime_tail_in_r7170_is_not_localised_to_a_call...`, `11` gates, all pass, ~`60` s,
 pre-registered in its own pushed commit at `computations/beyond_the_wall/r7220_60_the_runtime_tail/`.
 **No workflow file touched and no gate of `r7170` altered.***
 

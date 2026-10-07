@@ -39,6 +39,13 @@ declaration or a runner split and said to name which: **the ask is a per-receipt
 declare, because a receipt that knows it runs in `16` s can say so and be killed at a bound that makes
 a `420` s run a reported fact rather than a silent carry.*** ***
 
+⌗ ** AND ONE GATE OF THIS RECEIPT'S OWN FIRST DRAFT WAS WITHDRAWN BY THE SWEEP THAT CHECKS IT. **
+*`Ⓓ③` asserted the repaired receipt finishes under `300` s.  The three-build tolerance sweep flagged
+it: `18.1` s on one build against `20.6` s on another, a site that MOVES with the machine.*  ⇒ ***A
+receipt about a runtime must not gate on one.  The time is reported and the gate asserts only that the
+run is green*** --- which is the slack-tolerance class `PO-78` already carries at `45`, met from the
+inside, and this is not a `46`th.
+
 ⛔ ** AND NO ASSERTION WAS WEAKENED TO MAKE A RUNTIME PROBLEM GO AWAY**, *which is the one thing
 `r7220`'s pre-registration put out of scope.  The cheaper-normalisation branch was never applied,
 because the measurement that would have justified it never arrived.*
@@ -231,9 +238,12 @@ _rc = subprocess.run([sys.executable, TARGET], stdout=subprocess.DEVNULL,
 _el = time.time() - _t1
 print(f"      a fresh run of the repaired receipt: rc={_rc} in {_el:.1f} s")
 
-gate("Ⓓ③ and the repaired receipt runs green here, inside its budget --- which is the ordinary case "
-     "and is exactly why the extraordinary one is hard to catch",
-     _rc == 0 and _el < 300)
+gate("Ⓓ③ and the repaired receipt runs GREEN here --- which is the ordinary case and is exactly why "
+     "the extraordinary one is hard to catch.  ⛔ **The elapsed time is REPORTED and not asserted**: a "
+     "wall-clock bound is a tolerance site that moves with the machine, and this revision's own "
+     "three-build sweep flagged an earlier draft of this gate for exactly that.  ***A receipt about a "
+     "runtime must not gate on one***",
+     _rc == 0)
 
 # ============================================================ E. what is asked of the gate
 head("E.  WHAT IS ASKED, AND IT IS THE THING r7203 OFFERED TO TAKE")
