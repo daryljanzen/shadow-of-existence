@@ -9,6 +9,43 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛔ r7209 — THE GATE I BUILT LAST REVISION TO CATCH THIS WAS GREEN OVER A PAGE MISSING `P7`'s HALLMARK FIGURE. A COUNT OF WHAT IS PRESENT CANNOT SEE AN ABSENCE
+
+*Daryl read the `P7` PDF an hour after `r7207` shipped. **Three separate defects, in the PDF and the page, none of which `r7207`'s gate could see.***
+
+### ⛔ THE SELF-INDICTMENT FIRST, BECAUSE IT IS THE PART WORTH CARRYING
+
+***`r7207` built `check_figures_shown` --- every `<figure>` carries an `<img>` whose `src` is on disk --- seeded it on four real failures, and shipped it green. One revision later the six-panel synthesis figure was reported missing from `P7`, and that gate was GREEN on that page.***
+
+⇒ ***Because the figure was not on the page to be checked.*** *`P7`'s hallmark float is written `\begin{figure*}`, the starred full-width form; the generator matched `\begin{figure}` and nothing else, so the **whole float --- picture, caption, label --- was dropped silently.** *The page did not show a caption with nothing above it. It had no Figure 1 at all.**
+
+⌈ ***SO THE LESSON IS ABOUT THE INSTRUMENT AND NOT THE BUG.*** *A gate that enumerates what a page HAS can verify every one of them and never notice what is missing --- **the defect is outside its domain of quantification.** *`r7207`'s gate was correctly built, correctly seeded, and structurally incapable of the one thing still wrong.* **That is a different failure from a gap in coverage: it is a gate whose seeding PROVED IT WORKED while leaving its blind half unmeasured.** ⌗ *Which is worth every seat's attention, because seeding a gate on the defect that motivated it is this tree's standard and it is exactly what gave the false assurance here.*
+
+### ⛔ AND THE SAME SHAPE HID FOUR TABLES, AND THE PDF WAS WRONG FOR A THIRD REASON
+
+- ⓵ ***NO TABLE HANDLER AT ALL.*** *`P7`'s dependency matrix and ledger block, and two more in `P18`, were absent from their pages while rendering correctly in the PDF. **`P7`'s own prose sends a reader to that matrix**, so on the page it sent them to nothing. *Both now render, the matrix verified cell by cell against the source row.**
+- ⓶ ***AND EVERY ONE OF `P7`'s FIVE FIGURES WAS DEFERRED TO THE BACK MATTER*** --- *captions on pages `69`--`72` of `86`, for text citing them from page `22` onward. **`figure*` is a DOUBLE-COLUMN float and the paper is a single-column `article`, so LaTeX could never place it --- and floats emit in order, so the four later figures queued behind the one that could not be placed and all five fell out at the end.** ⇒ *One starred environment starved the paper's entire float queue.* *Repaired: ordinary `figure`, the full `[htbp]` set on every float, and a float budget whose defaults assume a short paper relaxed. **The six panels now sit on page `22` instead of `69`; the five land at `22`, `41`, `48`, `53`, `54`.***
+- ⓷ ***Two further silent rendering defects, found by reading the pages:*** *a `tabular`'s row separator was matched as **four** backslashes where LaTeX writes two, so no row ever split --- a whole table came out as one row with stray `\` between entries; and alignment marks arrived already escaped, so stripping a bare `&` left a literal `amp;` on the page. **`33` of those, reading `d\tau^2 amp;= `.***
+
+### ⛭ GATED BY A COUNT, WHICH IS THE ONLY THING THAT SEES AN ABSENCE
+
+***`corpus/check_floats_carried.py`***: *per paper, `figure`/`figure*` and `table`/`table*` in the SOURCE against the floats on the PAGE. **Seeded on the shipped state, where it reported exactly the three: `P7` short one figure, `P7` short two tables, `P18` short two tables.***
+
+⌗ ⚠ ***And its own first draft repeated the mistake this row is about.*** *I copied the generator's paper-to-source map into the gate. **It had `P1` wrong within the hour, so the gate silently checked seventeen papers and reported success on eighteen.** *It now reads the map FROM the generator: a second copy of a mapping is a second thing to keep right, which is `PO-78`'s own subject.**
+
+⚠ ***What none of this measures, stated rather than left to be assumed:*** *float PLACEMENT. A figure forty pages from the text that cites it is a typographic judgement and not a predicate, **so the PDF half of this is repaired and ungated**, and the next one will be found the way this one was.*
+
+### ⌗ THE BOARD — NOTHING ORDERED, AND NOTHING FROM ANY SEAT IS WAITING ON ME
+
+- ***`cc66`*** --- *the three approved runs in flight. Owed back: the de-tilted peak set on the CR arm with its own `NODRIVE` pair, the carrier named with its reach stated, and the loading lever as a receipt.*
+- ***`60`*** --- *`r7220`, its own `r7170` receipt. The high-against-low multipole weighting stays unordered until there is an arm signature to weight.*
+- ***`70`*** --- *`r7191` discharged; owed a clear cycle and getting one. **The float gate is the third instrument built in your kind this week and the third built on the gate's own channel without routing** --- `check_order_acknowledged`, `check_pages_render`, `check_floats_carried`. *If any of the three is wrongly designed, the rewrite is yours and I will take it.**
+- ***`69`*** --- *nothing owed. The explainer is untouched this revision.*
+
+⌗ ***`PO-78` now carries THIRTY-ONE members.*** *Standing state otherwise unchanged: `2,167` quote-pin keys against `2,287`; `60` list strings against `60`; `249` multi-site paper pins, `122`/`127`; `16` unread-figure sites; `45` slack-tolerance sites in `27` receipts; `0` of `33` explainer pins; `r7189`'s COMPOSED question unmeasured.*
+
+---
+
 ## ⛔ r7207 — EVERY PAPER'S PUBLIC PAGE HAS BEEN DROPPING CONTENT SILENTLY, AND ALL 117 GATES WERE GREEN THROUGH IT. FIXED, SEEDED AND GATED. NOTHING IS ORDERED
 
 *Daryl found it reading `P7` on a phone. **It is not `P7` and it is not figures: it is `1,378` empty math spans across all eighteen papers, plus a list that shifted its own cross-references, plus four captions with no picture.***
