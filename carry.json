@@ -9,6 +9,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37638912087",
     "since": "dbf85ff8a687f45b1090d14727a96b26f39bf1b6"
    }
+  },
+  "tolerance": {
+   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37656533829",
+    "since": "26400b2ff9b69536cda546d5d3ee3968e954c4d3"
+   }
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
