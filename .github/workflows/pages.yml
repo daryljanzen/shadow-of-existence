@@ -135,6 +135,11 @@ jobs:
           cp corpus/*.png _site/fig/ 2>/dev/null || true
           cp corpus/figs/*.png _site/fig/figs/ 2>/dev/null || true
           cp corpus/figures/*.png _site/fig/figures/ 2>/dev/null || true
+          # r7207: the TikZ drawings are compiled to SVG by scripts/render_tikz.py
+          # and live beside the pages rather than in corpus/, so they need their own
+          # copy -- without it the figure element ships with a dangling src and the
+          # caption is back to describing a picture that is not there.
+          cp BOOK_INTRO_cosmiCave/fig/*.svg _site/fig/ 2>/dev/null || true
           # Three figures are referenced from outside corpus/, by a relative
           # path that climbs out of it; mirrored so those links resolve.
           mkdir -p _site/resources/PhD_thesis
