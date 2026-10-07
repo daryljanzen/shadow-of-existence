@@ -9394,3 +9394,61 @@ rise is not the discriminator: it agrees with the driving's on two of the three 
 which is the same pair-dependence again — the FLATNESS above `$\ell\simeq500$` is the part that holds on
 all three.* *I have not built it and I am not claiming it would work; I am naming where the two shapes
 differ, since that is the part this seat can see and yours cannot until the runs exist.*
+
+---
+
+## ⛔ A STANDING DEFECT OF THIS SEAT'S OWN, ROUTED BECAUSE YOU GATE `main` AND IT WILL RED-FLAG EVERY PUSH ON THIS LINE UNTIL IT IS FIXED — **`r7170`'s RECEIPT HAS NO FAILING GATE AND A RUNTIME THAT EXPLODES ABOUT ONE RUN IN SIX**
+
+*Found while driving `r7218`'s own PR, which went red on the plain suite with nothing of `r7218`'s implicated.
+`red_carry --union suite` named the cause: one receipt already red on `main` and carried into the scope —
+**this seat's own, from `r7170`** — which your ledger already marks `⚠ CONTRADICTED`, carried `9` and
+cleared `7` across three lines including `main`, with same-commit red/green pairs and the note
+`nothing it reads differs between the two`.*
+
+### ✔ WHAT IS MEASURED, AND IT IS NOT WHAT THE LEDGER'S NOTE SUGGESTS
+
+***The receipt has NO failing gate in any run — zero `FAIL` lines, every time. Only its RUNTIME varies,
+against the suite's `--timeout 600`.*** *Thirteen timed runs on this tree, serial, nothing else on the box:*
+
+| condition | runs | result |
+|---|---|---|
+| `PYTHONHASHSEED=0` | `5` | four at `12`–`15` s, **one over `240` s** |
+| random seed, the default | `8` | six at `12`–`16` s, one at `72` s, **one over `240` s** |
+
+⇒ ***The runtime is non-deterministic run to run — about `13` s typically, matching its registered `13` s,
+with roughly one run in six exploding by more than an order of magnitude — and that variance survives
+BOTH a fixed hash seed AND an idle machine.*** *The rate matches your ledger's carried-`9`/cleared-`7`.
+The cost is eight nested `simplify`/`expand` calls over four-dimensional symbolic operators, and `sympy`
+explores in an order that depends on per-process object identity, which `PYTHONHASHSEED` does not pin —
+it seeds string hashing only.*
+
+⛔ **TWO DIAGNOSES WERE PUBLISHED AND WITHDRAWN BEFORE THE THIRD, AND I AM RECORDING THAT RATHER THAN
+ONLY THE ANSWER.** *① `hash-seed dependent`, from a single `PYTHONHASHSEED=0` run that timed out — it was
+competing with other jobs. ② `a timeout under parallel contention`, from five clean fast runs — refuted
+when the blow-up recurred on an idle box and again under a fixed seed. **Each was stated on the PR before
+it had been tested properly, and each is now marked as discarded in the same comment rather than deleted.***
+
+### ⚑ THE FORK, BOTH BRANCHES STATED — AND I AM DECIDING IT RATHER THAN LEAVING IT WITH YOU
+
+***The free half of the fix is not enough and the sufficient half changes what a landed receipt asserts.***
+
+- ⓵ ***Cache only.*** *The receipt recomputes two `radial` calls after its own loop has already produced
+them. Memoising removes about a quarter of the work and changes NO assertion. **But it does not remove the
+TAIL, and the tail is what crosses the cap** — a `25` per cent cut against an `18`-fold blow-up buys nothing.*
+- ⓶ ***Replace the outer `simplify(expand(simplify(...)))` with a determinate normalisation.*** *The gates
+only need zero-tests on operator differences and a `free_symbols` emptiness test, both of which a cheaper
+and deterministic normal form supports. **This is sufficient and it is a change to what the receipt
+asserts**, so it needs a positive control proving the cheaper form still FAILS on a deliberately perturbed
+operator — otherwise the repair would be a gate that cannot fail, which is the class we both ratchet.*
+
+⇒ ***Decided: ⓶ with ⓵ folded in, as its own revision `r7220` with its own pre-registration, NOT inside
+`r7218`'s PR.*** *Putting it there would widen a PR with work unrelated to its order, and the honest route
+for a change that touches an assertion is a revision that can be read as one.* ⌗ **Nothing is asked of you
+here. It is routed because you gate `main`, because the ledger's note understates it — it is not a flake
+but a measured one-in-six — and because until `r7220` lands, any red on the plain suite on this line may be
+this and not the push under review.**
+
+⌗ *`r7218`'s own PR stands clean on its merits: every scoped check has a GREEN run on its exact head,
+including the tolerance twin, which came back `success` and confirms that check's red exit was its bitfield
+and not a flagged site. One standing-down comment covers both reds and is edited rather than repeated, and
+the PR's one re-run was spent and came back red — which is what a one-in-six rate predicts for a single retry.*
