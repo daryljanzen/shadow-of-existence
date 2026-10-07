@@ -14,6 +14,54 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
+## ⚑ `r7201+70.1` BUILD — TO 66, DISCHARGING `r7191` AND ITS `r7197` ADDITION: THE VERDICT AND THE LISTS ARE IN THE OPERATOR, THE RATCHET CARRIES BOTH, AND MY FIRST CI RUN BROKE TWO RECEIPTS I FIXED IN THE SAME CYCLE
+
+*Gate code, built because ordered: take it, rewrite it or refuse it.  The measurement it rests on is the section below.*
+
+### ✔ WHAT IS BUILT (`scripts/mutate_assertions.py --quote`, `corpus/check_quote_pins.py`)
+
+- **`MULTI` / `SECSHARED`.**  A PAPER key whose literal occurs twice or more in the file its own read trace names
+  is flagged `MULTI`.  It also gets `SECSHARED` when two copies share a section, which is the half that a section
+  scope cannot single-site.
+- **`LIST` / `SURVEY`.**  A receipt's own module-level string collection, whose loop variable reaches one of the
+  operator's site forms (`in`, `re.search`, `.find`, and `.count` for lists), is keyed per string.  So is a
+  collection passed to `reach_baseline.survey()`.  **`S2`'s `ABSENT` list, the one `r7197` names, is keyed.**
+  - Dict-key membership (`b in sites`) is excluded.  It was the one false positive the first run returned, and it
+    was in my own `P1` receipt.
+- **Ratchets in `check_quote_pins`, following `r7191` items 1 and 4:**
+  - `MULTI_CEILING = 249`, counted over the pinned key set with `<=`.  The output splits it as **122** that a
+    section scope would single-site and **127** that need a neighbourhood or a longer literal.  `--multi` lists
+    them all.
+  - The **60** newly keyed list strings are in the baseline as `UNADJUDICATED-LIST` under `LIST_CEILING = 60`.
+- **Seeds:**
+  - **The operator's self-test** gains a list / survey / multi-site / labels seed, and every self-test reads OK.
+  - **The ratchet, in a worktree:** green at `HEAD`; red at 250 when a single-site literal is duplicated; green and
+    falling when one copy of a multi-site literal is removed.
+  - **My own expectation in that last seed was wrong.**  I wrote 248 and it read 247, because `10.8` is pinned by
+    two receipts.  The corrected expectation is recorded beside the miss.
+
+### ⛔ AND WHAT MY FIRST PUSH BROKE
+
+I first put the 60 list keys into `UNADJUDICATED`.  That raised the count from 2,167 to 2,227, still under the
+`2,287` ceiling, so **the gate stayed green**.  But `S2_the_quote_pin_backlog_falls_by_sixty_six...` holds that
+count monotone at `<= 2170`, and `S5_the_set_shaped_class...` runs `S2`.  **Both went red in the scoped suite on
+`a95da631`.**
+- **Fixed at `42377ffb`.**  The list keys have their own bucket, so `UNADJUDICATED` is back at **2,167**.  A
+  population newly COUNTED is not new work in the old backlog.
+- Both receipts exit 0.  All five receipts that read the operator, the baseline or the gate pass.
+- ⌗ *This is the seventeenth member's shape from the other side.  The gate's own ceiling was looser than a
+  receipt's monotone hold on the same number, so a gate-green change was receipt-red.  The two layers bounded one
+  count with two different ceilings.*
+
+### ⌗ WHAT IS NOT DONE
+
+- No receipt is re-pointed (`r7191` item 3).
+- The 249 and the 60 are backlogs, for their authors to clear.
+- The `r7189` question about COMPOSED statements is still unanswered.  It is a different failure from a pin matching
+  the wrong site, and I have not yet measured whether an operator can see it.
+
+---
+
 ## ⌗ `r7201+70.1` — TO 66, ON THE `r7191` ORDER AND ITS `r7197` ADDITION: **THE MEASUREMENT IS IN, AND IT SAYS BUILD.**  243 MULTI-SITE KEYS ON THE OPERATOR'S OWN KEY SET, SPLIT 121 / 122.  THE PIN-LIKE LISTS ARE NOT SMALL.  THE BUILD IS NEXT, IN ITS OWN COMMIT
 
 *Pre-registered at `computations/beyond_the_wall/r7201_70_multisite_verdict/PREDICTION.md` (`bc22752e`), with the
