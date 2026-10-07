@@ -9294,3 +9294,57 @@ already in tree.
 
 ⚠ **This names no carrier and claims no null on the physics.** *What is established is about the
 statistic. Neither the loading nor the driving is excluded by it.*
+
+---
+
+## ⛭⛭⛭ `r7199+cc66.156` — **THE DE-TILTED PEAK SET IS THE PHASE OBSERVABLE; THE SLOPE WAS NOT**
+
+*`cc66.155`'s zero-run half, delivered at zero runs. 10 checks, `rc=0`, ~10 s.*
+
+### THE STATISTIC
+Peak positions by parabola vertex on the instrument's own samples, after dividing out one global
+power law fitted in log-log over `$150\le\ell\le1600$`. Two components per configuration:
+`$\varphi=\langle\ell_n/\ell_A-n\rangle$` (the common offset — the driving's signature) and
+`$\langle r_n(-1)^n\rangle$` (the alternation — the loading's). Five peaks; each configuration at
+its OWN banked `$\ell_A$`.
+
+### THE DE-TILT IS FORCED, AND THE CONTROL IS WHAT FORCES IT
+
+| treatment | `dφ/dln n_s` | window dependence |
+|---|---|---|
+| raw | `$+0.049$` … `$+0.060$` | drifts |
+| de-tilted | `$-0.00231$` … `$-0.00247$` | flat over halfwin `$25$`–`$75$` |
+
+⇒ **Raw, `$n_s$` moves the common offset more than `$\omega_b$` does — which a primordial tilt cannot
+do.** De-tilting removes it by `$20\times$` and stops the window dependence.
+
+### THE SEPARATION
+
+| | `dφ/dln θ` | `d alt/dln θ` |
+|---|---|---|
+| `$\omega_b$`, arm | `$-0.02760$` | `$+0.01043$` |
+| `$n_s$`, arm | `$-0.00244$` | `$-0.00049$` |
+| `$\omega_b$`, control | `$-0.02779$` | `$+0.01075$` |
+| `$n_s$`, control | `$-0.00243$` | `$-0.00048$` |
+
+**`$11.3\times$`/`$21.3\times$` on the arm, `$11.4\times$`/`$22.4\times$` on the control — against
+`$1.3\times$` for the free-period slope at `cc66.155`.**
+
+### CONVENTION ROBUSTNESS, WHICH THE SLOPE DID NOT HAVE
+Arm `LEAFGEOM` vs `LEAFREC`: worst disagreement a factor of `$2$` here, against up to `$49\times$` on
+the slope.
+
+### THE DRIVING, ON THE CONTROL ONLY
+Same-vintage pair (`c54.186` ON, `c54.193` OFF, both `LMAXL=3000`): `$\Delta\varphi=+0.126$`,
+`$\Delta\mathrm{alt}=-0.0247$` — **opposite in sign to the baryon direction on both components.**
+
+⛔ **The CR arm's driving-ON spectrum is unreadable by this statistic**: peak gaps miss `$1$` by
+`$0.258$` against the grid's `$0.085$`, and `$\varphi$` returned `$-0.750$`, arithmetically
+impossible for five peaks above `$\ell=150$`. No CR driving number is claimed.
+
+### ⇒ THE ASK, REVISED BY MEASUREMENT
+**Ten runs, not eight**: the eight `RBFAC` runs plus a `NODRIVE` pair, all at the grids' own
+configuration. *The two extra are the return on having run the zero-cost half first.*
+
+⚠ Five peaks make the alternation coarse; the de-tilt's necessity is swept, its form is a choice;
+`$n_s$` is inherited and used only as a control.

@@ -10285,3 +10285,69 @@ worth your compute. **I will take that half on the next cycle unless you route s
 ⚠ **WHAT THIS DOES NOT CLAIM:** *no carrier is named and no null is claimed on the physics. Neither
 the loading nor the driving is excluded — what is established is that this statistic cannot tell them
 apart. `PO-79` and the sector's open question are exactly where `r7199` left them.*
+
+---
+
+## ⛭⛭⛭ `r7199+cc66.156` — **I TOOK THE ZERO-RUN HALF ON THIS CYCLE AS I SAID I WOULD, AND THE STATISTIC WORKS. SO THE RUNS ARE WORTH YOUR COMPUTE — BUT THE ASK IS TEN, NOT EIGHT.**
+
+*`cc66.155` said the free-period slope cannot separate the loading from the driving, costed the better
+statistic at zero runs, and said I would do that half first because if the peak set failed too the
+runs were not worth your compute. **It does not fail.** 10 checks, `rc=0`, ~10 s, `38` banked spectra
+plus the driving pairs. No new spectrum, no grid.*
+
+### ⛭⛭ FIRST, THE DE-TILT IS FORCED BY A PHYSICS CONTROL — WHICH IS WHY I TRUST IT
+
+***My first peak statistic failed the same control the slope failed, and I nearly reported it as a
+success.*** *Raw, `$n_s$` moved the common offset by `$+0.049$`–`$+0.060$` — **more than the baryon
+direction did** — and a primordial tilt cannot move a peak position at all. That is the parabola's
+vertex being dragged by the slope under the peak.*
+
+⇒ *Dividing out one global power law collapses it to `$-0.0024$` — **a factor of `$20$`** — and makes
+it flat across fitting half-windows `$25$`–`$75$` where the raw one drifts. **A repair and not a
+tuning, and the window sweep is what distinguishes them.***
+
+### ✔ AND THEN IT SEPARATES, BY AN ORDER OF MAGNITUDE
+
+| | `dφ/dln θ` | `d alt/dln θ` |
+|---|---|---|
+| `$\omega_b$` (arm) | `$-0.0276$` | `$+0.0104$` |
+| `$n_s$` (arm) | `$-0.0024$` | `$-0.0005$` |
+| **ratio** | **`$11.3\times$`** | **`$21.3\times$`** |
+
+*Control: `$11.4\times$` and `$22.4\times$`. **Against `$1.3\times$` for the free-period slope.***
+⌗ *And the tilt's residual floor is `$0.00217$`–`$0.00244$` across all four configurations — stable,
+so it is a small systematic and not a number that happened to come out low where I looked.*
+
+### ⌗ A THIRD GAIN I DID NOT PREDICT: IT REPAIRS THE CONVENTION-DEPENDENCE
+
+*`cc66.155` found the arm's response differing by up to `$49\times$` between `LEAFGEOM` and
+`LEAFREC`. **On the peak set the worst disagreement is a factor of `$2$`.** So this statistic measures
+the arm rather than the convention it was computed under.*
+
+### ⛭⛭⛭ AND THE ORTHOGONALITY THE ASK RESTED ON IS MEASURED, ON THE CONTROL
+
+***The driving and the baryon direction move the peak set in OPPOSITE directions on BOTH
+components:*** *driving `$\Delta\varphi=+0.126$`, `$\Delta\mathrm{alt}=-0.0247$`; baryon
+`$-0.0278$`, `$+0.0108$`. *That is not separable-in-magnitude, it is a sign difference on two
+independent components.**
+
+### ⛔ BUT THE CR ARM'S DRIVING SIGNATURE IS NOT ESTABLISHED, AND THAT IS WHY I RAN THIS FIRST
+
+***The CR arm's banked driving-ON spectrum has no integer-spaced peak series.*** *Its gaps miss `$1$`
+by `$0.258$` against the grid's `$0.085$` — I caught this because the statistic returned
+`$\varphi=-0.750$`, which is **arithmetically impossible** for five peaks above `$\ell=150$`. The
+common offset is defined as a mean against integer index, so any CR driving number from that file
+would be a statement about my detector. **I am not claiming one.***
+
+⇒ ⛭ **SO THE ASK IS TEN RUNS AND NOT EIGHT.** *The eight `RBFAC` runs `cc66.155` named, **plus a
+`NODRIVE` pair at the grids' own configuration** (`HIER=1 LMAXL=2000 LSTEP=8 ZSTART=3e7`, `KFAC` at
+the corpus default `2.0`, `NK` not reduced), idempotent and resumable on output existence.*
+
+⌗ ***That revision is the whole return on running the zero-cost half first:*** *had I asked for eight
+and got them, the driving half would still have been unreadable and the grid would have been half
+wasted. Two more runs bought by one cycle of no compute.*
+
+⚠ **WHAT I AM STILL NOT CLAIMING:** *no carrier is named. What is established is that a statistic
+exists which could name one, what it costs, and that the slope could not. Five peaks make the
+alternation coarse; the de-tilt's necessity is swept but its FORM is a choice; and `$n_s$` is
+**inherited**, used only as a control, with no claim made about it.*
