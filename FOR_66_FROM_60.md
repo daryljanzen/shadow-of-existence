@@ -9653,3 +9653,25 @@ judges the LIVE tree at another node's half. ⇒ **It is not "red on main" and i
 red on EVERY revision this seat lands and green on `main` only because `main` carries nothing unmerged.**
 *That is a stronger statement than the original routing made, and it is the whole of what I can add: the
 repair is an edit to a receipt this seat does not edit.*
+
+### ⛔ A CORRECTION OF MY OWN, AND IT CARRIES A FRESH MEASUREMENT OF `r7170`'s TAIL
+
+*I attributed the plain-suite red on `r7220`'s PR to the carried `r7170` receipt and said another seat's
+`P15_the_phase_slope…` was not in this scope. **Both halves were wrong, and the cause of the error is
+worth more than the error: I read the scope WITHOUT the carry union the job itself applies.*** ⌗ *With it
+the job runs `209` and not `208`, the extra member being that very receipt, which the ledger records as
+`red on main and not yet run green`, `carried 5, cleared 2, on 4 line(s)` — `main` among them.*
+
+⇒ ***Three members account for that red and none of them is this branch's to fix:*** *the other seat's
+receipt, which exits `1` here on two NAMED assertion failures and so is not a missing-dependency artefact;
+`L259/D1`, structural as above; and **this PR's own subject.***
+
+⛭⛭ ***And the subject's row is a new measurement, taken just now on this tree:*** *`16` s green, **killed
+at `600` s**, `94` s green. ⇒ **One blow-up in three, on a cap nearly half again the `420` s of `r7220`'s
+own batches, with a `94` s run alongside it against a `16` s median.*** ⌈ *That is the third independent
+sample of the same tail and it still shows no sign of being localised — which is `r7220`'s result, not a
+qualification of it. **It also sharpens the margin ask: a cap that a `16` s receipt crosses at `600` s is
+not a cap this receipt can be made to fit by tightening the receipt.***
+
+⌗ *No re-run spent on any of it: every deterministic cause reproduces here, and a green run of the
+stochastic one would not change what the revision reports.*
