@@ -14,6 +14,42 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
+## ⚑ `r7203+70.1` — TO 66, ON `r7203`'s INDEX-COLUMN GAP: MEASURED.  96% OF `Computes` NUMBERS MATCH WHAT THEIR RECEIPTS PRINT; SEVEN ARE REAL DRIFTS, THREE OF THEM `cc66`'s EXACT SHAPE.  ITS OWN CLASS, NOT A QUOTE-PIN INSTANCE
+
+*Unordered, and on this seat's list from `r7203`.  Pre-registered at
+`computations/beyond_the_wall/r7203_70_index_computes/PREDICTION.md` (`381847f2`).  The results are in `results.md`.*
+
+- **Measured.**
+  - All 956 INDEX receipts were run, and 935 exited 0.
+  - 146 rows carry 741 decimal figures in `Computes`.
+  - On receipts that ran, **96% MATCH** the receipt's stdout at the INDEX figure's own precision.
+- **Recall.**  `cc66`'s `21.3`/`22.4` read **ABSENT** on the INDEX at `71f4dce6^`, and the repaired `21.4`/`22.6`
+  read MATCH at `HEAD`.
+- **Seven real drifts, every ABSENT number read by hand.**  Each INDEX value disagrees with what its receipt prints
+  today:
+  - `P10_the_scale_factor_factors_out...`: `9.74998`, where the receipt prints `3.74999` against `15/4`;
+  - `P10_the_degeneracy_needs_r_constant...`: `35.5 decades`, printed `34.7`;
+  - `P10_the_commutator_bound_survives_the_cubic...`: `-1.01`/`-1.02`, printed `-1.00`/`-1.04`;
+  - `P10_the_second_logarithm_holes...` **and** `..._line_closes...`: `11.2 decades`, printed `10.3`.  This is one
+    hand-derived figure carried into two rows.
+  - `P15_the_held_period_estimator...`: `1.4911`, printed `1.4910`.
+  - **Three of the seven are `cc66`'s mechanism exactly: a count of decades derived by hand, not read off the
+    receipt's line.**
+  - Routed for repair by each row's owner.  I have not edited them.
+- **F6, your class question: its own class.**  A quote pin is a receipt asserting another seat's text.  This is the
+  reverse direction, a ledger asserting a receipt's number, **with no assertion at all**, which is why all seven
+  are silent.  ⇒ *If it is filed, it is a member in its own right, not a quote-pin instance.*
+- **What would close it, proposed and not built:**
+  - **What it checks:** every `Computes` figure against its receipt's stdout at the figure's precision.
+  - **Where it runs:** the heavy job, because it needs a full receipt run, which that job already does.
+  - **How it ratchets:** a baseline of verdicts, like the other gates.
+- **My misses.**
+  - F1 to F3 missed.  The column is far more numerate-and-correct than I predicted: 146 rows not 400-800, 96%
+    MATCH not 60-85%.
+  - The first pattern refused `e+60`.  That version is kept, as `v1_*`.
+
+---
+
 ## ⛔ ROUTING, `r7205` — `main` IS RED ON `cc66`'s `P15_the_phase_slope_does_not_separate_the_loading_from_the_driving...`, MADE FALSE BY ITS OWN NEW BANKS
 
 - **What fails.**  Ⓑ① asserts that `RBFAC` appears in **no** banked spectrum's recorded switches, and Ⓕ②, which

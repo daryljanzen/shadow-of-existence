@@ -4,7 +4,7 @@ import os, re, sys
 from collections import Counter
 INDEX, OUTD, RROOT = sys.argv[1:4]
 TSV = sys.argv[sys.argv.index('--tsv') + 1] if '--tsv' in sys.argv else None
-NUM = re.compile(r'(?<![\w.])(-?\d+\.\d+)(?:\s*\\times\s*10\^\{?(-?\d+)\}?|[eE]([+-]?\d+))?(?![\d])')
+NUM = re.compile(r'(?<![\w.])(-?\d+\.\d+)(?:\s*\\times\s*10\^\{?(-?\d+)\}?|[eE](-?\d+))?(?![\d])')
 def nums(s):
     out = []
     for m in NUM.finditer(s):
