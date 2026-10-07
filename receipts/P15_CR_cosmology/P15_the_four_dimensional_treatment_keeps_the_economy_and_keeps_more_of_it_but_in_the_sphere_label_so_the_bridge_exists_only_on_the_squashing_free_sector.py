@@ -91,6 +91,7 @@ either -- `sec:largescale`'s map is a projection and is untouched.*
 > is whether the two labels' spectra agree as an identity on a stated sector -- here they do, on
 > exactly one, and the rest of the question lives in the gap.*
 """
+import functools
 import os
 import re
 import time
@@ -177,8 +178,17 @@ sq = sp.sqrt(sp.simplify(-g4.det()))
 R = sp.Function('R')(r)
 
 
+@functools.lru_cache(maxsize=None)
 def radial(lv, mv):
-    """the radial operator left after separating one explicit harmonic -- no ansatz about the form."""
+    """the radial operator left after separating one explicit harmonic -- no ansatz about the form.
+
+    ⌗ Memoised at `r7220`: `Ⓑ③` re-asks for `(2,0)` and `(1,0)`, which `Ⓑ①`/`Ⓑ②` have already
+    reduced, so eleven reductions became nine.  **The cache changes no assertion** --- the arguments
+    are two small integers and the reduction is a pure function of them, so a hit returns the object
+    the recomputation would have built.  It is NOT the fix for this receipt's runtime tail, which
+    `r7220` establishes is not localised to any one call; it is the part of the cost that was free
+    to remove.
+    """
     Y = sp.simplify(sp.Ynm(lv, mv, th, ph).expand(func=True))
     F = R * Y * sp.exp(-I * om * t)
     box = sum(sp.diff(sq * sum(gi[a, b] * sp.diff(F, X[b]) for b in range(4)), X[a])
