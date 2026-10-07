@@ -9,8 +9,8 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #290**, draft) — nothing waits on the chat window.*
-⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283 and #286 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #294**, draft) — nothing waits on the chat window.*
+⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290 and #293 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
@@ -10391,3 +10391,96 @@ authority.*
 `INDEX` `Computes` column has no gate tying it to the receipt's stdout. **Stated as a gap, not as a
 proposal** — it is the operator family and `70` owns it, and I have measured enough of that family
 unasked.*
+
+---
+
+## ⛔⛔ `r7201+cc66` — **STOPPED AT 4 OF 10. THE COST TEST YOU SET IS TRIPPED, AND MY FIRST ACCOUNT OF IT WAS WRONG**
+
+*You wrote: **"if the ten runs turn out to cost materially more than you costed them, stop and say so
+rather than finishing."** They do. The launcher is stopped, four runs are banked and pushed, and the
+decision is yours. **Before the arithmetic, a correction, because I already told you the opposite.***
+
+### ⓵ ⛔ THE CORRECTION — I BLAMED MY OWN CONTENTION AND THAT WAS NOT THE CAUSE
+
+*Run two came in at `$2301$`s against run one's `$1273$`s. I had been running the $116$-gate fast job
+on the same container while it solved, so I attributed the `$1.8\times$` to that, reported the cost
+question **settled**, and changed my policy instead of the order. **That account is in the commit
+message of `87f5e78d`, pushed, and it is false.***
+
+*What it actually is: **the control arm solves `$2547$` modes and the CR arm `$1452$`.** Four runs now,
+and they separate cleanly by arm and not by what else was running:*
+
+| arm | modes | runs | seconds |
+|---|---|---|---|
+| CR | `$1452$` | `cr_rb0.1`, `cr_rb0.5` | `$1273$`, `$1259$` |
+| control | `$2547$` | `lcdm_rb0.1`, `lcdm_rb0.5` | `$2301$`, `$2183$` |
+
+⇒ *Runtime ratio `$1.77$` against mode ratio `$1.75$`. **The long runs are the control arm's mode
+count. Contention was never the explanation** — and the third run came in at `$1259$`s uncontended,
+which I read as confirming my story when it was only confirming that CR runs are CR runs.*
+
+⌗ ***The defect is specific and it is the same one as last cycle.*** *I measured ONE run, on ONE arm,
+and generalised it to both. `$21$` min became "`$21$` min per run" with no check that the other arm
+solves the same problem size. **Last cycle I divided printed numbers instead of reading the computed
+one; this cycle I extrapolated from `$n=1$` and called it a cost.** Both are a second, unchecked
+computation wearing the first one's authority.*
+
+### ⓶ THE REAL COST
+
+| | hours |
+|---|---|
+| what I costed you | `$3.54$` (`$10\times1273$`s) |
+| what the ten actually cost | **`$4.87$`** (`$5\times1266$`s CR `$+\;5\times2242$`s control) |
+| over by | **`$38\%$`** |
+| spent so far, 4 runs | `$1.95$` |
+| remaining 6 runs | `$2.92$` |
+
+### ⓷ WHAT IS BANKED, AND WHAT IT ALREADY SHOWS
+
+*Four outputs, all `$238$` multipoles, zero non-finite, each stamped with its own `__SWITCHES__`
+line. `RBFAC=1` needs no run — **the grids' own base IS that point**, same `HIER`, `LSTEP`, `LMAXL`,
+`ZSTART`.*
+
+| `RBFAC` | `$\ell_A$` | `$\varphi$` | alternation |
+|---|---|---|---|
+| `$0.1$` | `$272.419$` | `$-0.21732$` | `$-0.00782$` |
+| `$0.5$` | `$286.060$` | `$-0.20935$` | `$+0.00444$` |
+| `$1.0$` (banked base) | `$301.380$` | `$-0.20124$` | `$+0.01511$` |
+
+**Both components rise monotonically with the loading.** *Against the control's banked driving pair,
+`$\Delta\varphi=+0.126$` and `$\Delta\mathrm{alt}=-0.0247$`: the loading and the driving agree in sign
+on the common offset and **oppose on the alternation**. That is a one-component separation and I am
+**not** calling it the answer — it rests on the CONTROL's driving pair, and the whole point of the
+`NODRIVE` order was that the CR arm needs its own.*
+
+⌗ *And the curve was worth insisting on over a slope: `$\ell_A$` per unit `$\ln(\mathrm{RBFAC})$` is
+`$8.5$` across `$0.1\to0.5$` and `$22.1$` across `$0.5\to1.0$`. **A factor of `$2.6$` between adjacent
+intervals of the same lever** — one central difference across `$0.1\to2.0$` would have reported a
+single number for that and called it a response.*
+
+⌗ *The lever does not break the statistic's one assumption: detected gaps run `$0.904$`–`$0.993$` of
+`$\ell_A$` at `$RBFAC=0.1$` against `$0.895$`–`$1.037$` for the bases. **The banked CR driving-ON
+spectrum I had to disqualify ran `$0.74$`–`$0.96$`.** So the comb survives the lever.*
+
+### ⓸ ⇒ WHAT I RECOMMEND, AND IT COSTS LESS THAN WHAT I ORIGINALLY QUOTED YOU
+
+*Three ways forward. **The middle one is the one I would take.***
+
+1. ***Finish all six.*** `$2.92$`h more, `$4.87$`h total, `$38\%$` over quote. Gives the full
+   `$\{0.1,0.5,1.0,1.5,2.0\}$` curve on both arms plus the pair.
+2. ⇒ ***Run three: `cr_rb1.5`, `cr_nodrive`, `lcdm_nodrive`.*** **`$1.33$`h more, `$3.28$`h total —
+   UNDER the `$3.54$`h I quoted you.** *It buys **both** deliverables: the `NODRIVE` pair, which is
+   the only thing that can name the carrier, and a true central difference `$0.5\to1.5$` about
+   `$RBFAC=1$` on the CR arm, which is the arm the question is about. **What it gives up:** the
+   `$2.0$` endpoint, and the control's own `$1.5$` point — and the control's is near-worthless here,
+   because the two arms agree to `$3\times10^{-5}$` in `$\varphi$` at matched loading, so its
+   derivative is already predicted by the CR arm's.*
+3. ***Stop at four.*** `$0$` more. **No carrier answer at all** — the `RBFAC` curve alone cannot give
+   one, because the driving half has no CR pair to read.
+
+⚠ ***Option 3 is not a cheaper version of the order, it is abandoning it,*** *and option 1 is the only
+one that exceeds what you agreed to. **Option 2 is the order's actual question for less than the
+order's quoted price**, and the saving is real rather than a trim: it drops the two points the
+statistic needs least.*
+
+⌗ *I have not started option 2. Nothing is running. Say the word and it is `$1.33$`h to the answer.*
