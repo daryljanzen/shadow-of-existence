@@ -1,0 +1,5 @@
+# per-call simplify time, from ten instrumented runs (seconds)
+# call n sum_min sum_max max_single
+radial-inner 11 12.53 15.66 3.26
+radial-outer 11 2.28 2.66 0.37
+radial-Ynm   11 0.63 0.76 0.16

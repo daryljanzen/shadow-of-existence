@@ -1,0 +1,5 @@
+# variant runs: any instrumentation added, invoked the same way. none blew up.
+# variant runs blown cap_s
+runpy-dump      12 0 140
+simplify-timed  10 0 420
+stderr-marked   15 0 300
