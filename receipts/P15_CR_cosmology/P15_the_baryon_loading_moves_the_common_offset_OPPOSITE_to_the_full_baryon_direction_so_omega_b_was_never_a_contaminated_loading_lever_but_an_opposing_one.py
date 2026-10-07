@@ -123,12 +123,21 @@ _l214 = next((l.strip() for l in SRC if l.strip().startswith('RB_REC =') and 'RB
 _l397 = next((l.strip() for l in SRC if l.strip().startswith('Rb_of =')), '')
 print(f"      the scaling:   {_l214}")
 print(f"      its only use:  {_l397}")
+# ⌗ The claim is that the assignment RESCALES the existing loading -- its right-hand side multiplies
+#   the env-var read by the RB_REC already in hand -- which is what makes the response linear and so
+#   makes a logarithmic RBFAC derivative comparable with a logarithmic omega_b one.  Expressed as the
+#   STRUCTURE of the right-hand side rather than as a count of operator characters: a count is a pin
+#   on another file's punctuation, and `check_prose_pins` is right that it is not the claim.
+_rhs214 = _l214.split('=', 1)[1] if '=' in _l214 else ''
+_rescales = ('*' in _rhs214) and ('RB_REC' in _rhs214) and ('RBFAC' in _rhs214)
+_rhs397 = _l397.split('=', 1)[1] if '=' in _l397 else ''
+print(f"      the right-hand side rescales the loading already in hand: {_rescales}")
 check("Ⓐ①  ** `RBFAC` enters as a LINEAR multiplicative scaling of the recombination-epoch loading "
       "and nowhere else, so `$R_b\\propto\\mathrm{RBFAC}$` exactly as `$R_b\\propto\\omega_b$`. **  "
       "That is what makes a logarithmic `RBFAC` derivative comparable with a logarithmic "
       "`$\\omega_b$` derivative instead of merely similarly named -- and the two lines are quoted "
       "from the instrument, not paraphrased",
-      'RBFAC' in _l214 and _l214.count('*') >= 1 and 'RB_REC' in _l397)
+      _rescales and 'RB_REC' in _rhs397)
 
 CURVE = {}
 print()
