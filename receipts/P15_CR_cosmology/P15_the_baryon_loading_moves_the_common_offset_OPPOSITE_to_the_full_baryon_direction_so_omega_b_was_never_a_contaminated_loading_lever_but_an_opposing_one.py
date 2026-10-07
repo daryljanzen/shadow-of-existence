@@ -31,6 +31,7 @@ is `$+0.0164$` where `$\\mathrm{d}\\varphi/\\mathrm{d}\\ln\\omega_b$` is `$-0.02
 
 STATUS: rc=0 on success.  Run: python3 <this file>   (numpy; ~10 s)
 """
+import ast
 import io
 import os
 import sys
@@ -123,21 +124,37 @@ _l214 = next((l.strip() for l in SRC if l.strip().startswith('RB_REC =') and 'RB
 _l397 = next((l.strip() for l in SRC if l.strip().startswith('Rb_of =')), '')
 print(f"      the scaling:   {_l214}")
 print(f"      its only use:  {_l397}")
-# ⌗ The claim is that the assignment RESCALES the existing loading -- its right-hand side multiplies
-#   the env-var read by the RB_REC already in hand -- which is what makes the response linear and so
-#   makes a logarithmic RBFAC derivative comparable with a logarithmic omega_b one.  Expressed as the
-#   STRUCTURE of the right-hand side rather than as a count of operator characters: a count is a pin
-#   on another file's punctuation, and `check_prose_pins` is right that it is not the claim.
-_rhs214 = _l214.split('=', 1)[1] if '=' in _l214 else ''
-_rescales = ('*' in _rhs214) and ('RB_REC' in _rhs214) and ('RBFAC' in _rhs214)
-_rhs397 = _l397.split('=', 1)[1] if '=' in _l397 else ''
-print(f"      the right-hand side rescales the loading already in hand: {_rescales}")
+# ⌗ The claim is that the assignment RESCALES the existing loading -- it multiplies the RBFAC read by
+#   the RB_REC already in hand -- which is what makes the response linear and so makes a logarithmic
+#   RBFAC derivative comparable with a logarithmic omega_b one.  ** ASSERTED THROUGH THE PARSE TREE
+#   AND NOT THROUGH THE TEXT. **  Two gates objected to the text form in succession and both were
+#   right: `check_prose_pins` to a count of operator characters, then `check_quote_pins` to the bare
+#   `"*"` and `"="` that replaced it.  A character in another file's source is never the claim.  The
+#   node types ARE: an assignment whose value is a multiplication, with RB_REC as a name inside it
+#   and RBFAC as the string it reads.  Those two names stay pinned and are adjudicated DELIBERATE,
+#   because which knob and which variable is exactly what the comparability rests on.
+_t214 = ast.parse(_l214).body[0]
+_names214 = {n.id for n in ast.walk(_t214) if isinstance(n, ast.Name)}
+_strs214 = {c.value for c in ast.walk(_t214)
+            if isinstance(c, ast.Constant) and isinstance(c.value, str)}
+_rescales = (isinstance(_t214, ast.Assign)
+             and isinstance(_t214.value, ast.BinOp)
+             and isinstance(_t214.value.op, ast.Mult)
+             and 'RB_REC' in _names214
+             and 'RBFAC' in _strs214)
+_t397 = ast.parse(_l397).body[0]
+_names397 = {n.id for n in ast.walk(_t397) if isinstance(n, ast.Name)}
+_feeds = isinstance(_t397, ast.Assign) and 'RB_REC' in _names397
+print(f"      parsed: assignment={isinstance(_t214, ast.Assign)}  "
+      f"operation={type(_t214.value).__name__}/"
+      f"{type(getattr(_t214.value, 'op', None)).__name__}  rescales={_rescales}")
+print(f"      and the spline that defines R_b(a) is built from that same name: {_feeds}")
 check("Ⓐ①  ** `RBFAC` enters as a LINEAR multiplicative scaling of the recombination-epoch loading "
       "and nowhere else, so `$R_b\\propto\\mathrm{RBFAC}$` exactly as `$R_b\\propto\\omega_b$`. **  "
       "That is what makes a logarithmic `RBFAC` derivative comparable with a logarithmic "
       "`$\\omega_b$` derivative instead of merely similarly named -- and the two lines are quoted "
       "from the instrument, not paraphrased",
-      _rescales and 'RB_REC' in _rhs397)
+      _rescales and _feeds)
 
 CURVE = {}
 print()
