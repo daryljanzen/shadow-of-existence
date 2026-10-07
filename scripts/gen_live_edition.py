@@ -144,6 +144,15 @@ _SYM = {
     'gamma': '\u03b3', 'delta': '\u03b4', 'epsilon': '\u03b5',
     'varepsilon': '\u03b5', 'zeta': '\u03b6', 'eta': '\u03b7',
     'theta': '\u03b8', 'kappa': '\u03ba', 'lambda': '\u03bb', 'mu': '\u03bc',
+    # r7207: the ten symbols a census of every `$\token$` in the corpus found
+    # rendering as NOTHING.  Six are ordinary LaTeX and four are the corpus's own
+    # macros, expanded here to what their \newcommand says rather than guessed:
+    # `\Hphys` and `\Tpk` from canonical_time / cosmogenesis, `\C` and `\St` from
+    # algebroid / canonical_time.
+    'Theta': '\u0398', 'varrho': '\u03f1', 'varphi': '\u03c6',
+    'cdots': '\u22ef', 'lozenge': '\u25ca', 'Diamond': '\u25c7',
+    'Hphys': 'H<sub>phys</sub>', 'Tpk': 'T<sub>peak</sub>',
+    'C': '\U0001d49e', 'St': '\U0001d4ae<sub>t</sub>',
     'nu': '\u03bd', 'xi': '\u03be', 'pi': '\u03c0', 'rho': '\u03c1',
     'sigma': '\u03c3', 'tau': '\u03c4', 'phi': '\u03c6', 'chi': '\u03c7',
     'psi': '\u03c8', 'omega': '\u03c9', 'Phi': '\u03a6', 'Psi': '\u03a8',

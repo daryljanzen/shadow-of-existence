@@ -79,8 +79,13 @@ def inline(t, nums, labels):
     later rule operating on its innards."""
     t = re.sub(r'(?m)(?<!\\)%.*$', '', t)
     t = t.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-    t = re.sub(r'\$\\?([a-zA-Z]+)\$',
-               lambda m: '<span class="m">' + mathspan('\\' + m.group(1))
+    # r7207: the backslash used to be prepended UNCONDITIONALLY, so `$\alpha$` came
+    # out right and `$M$` was handed to the converter as `\M` -- an unknown command,
+    # which renders as nothing.  Every bare alphabetic variable in inline math was
+    # therefore dropped: 1,378 sites across the eighteen papers, reading as
+    # "whose Kretschmann ... is -free".  Capture the backslash instead of assuming it.
+    t = re.sub(r'\$(\\?)([a-zA-Z]+)\$',
+               lambda m: '<span class="m">' + mathspan(m.group(1) + m.group(2))
                + '</span>', t)
     # A display equation can sit INSIDE a theorem or a proof, and those blocks
     # are handed here whole.  Without this, thirteen of P3's twenty-eight
@@ -368,6 +373,17 @@ def convert(paper):
                 png = src_f[:-4] + '.png'
                 if os.path.exists(os.path.join(ROOT, 'corpus', png)):
                     src_f = png
+            # r7207: a figure drawn in TikZ has no \includegraphics at all, so the
+            # page used to carry the caption with NOTHING above it -- four figures
+            # across P7 and P15 describing diagrams that were not there.
+            # `scripts/render_tikz.py` compiles each one from the same source the
+            # paper typesets and writes an SVG named after its label.
+            if not src_f and lb and '\\begin{tikzpicture}' in txt:
+                cand = 'tikz_' + re.sub(r'[^A-Za-z0-9]+', '_',
+                                        lb.group(1)).strip('_') + '.svg'
+                if os.path.exists(os.path.join(ROOT, 'BOOK_INTRO_cosmiCave',
+                                               'fig', cand)):
+                    src_f = cand
             if src_f.lower().endswith('.pdf'):
                 media = (f'<p class="figalt"><a href="{FIG_BASE}/{src_f}">'
                          'Open this figure (PDF)</a></p>')
@@ -391,8 +407,15 @@ def convert(paper):
                 blk.append(lines[i])
                 i += 1
             i += 1
+            # r7207: LaTeX comments between `\begin{enumerate}` and the first
+            # `\item` used to survive this split as a non-empty leading chunk, and
+            # `inline()` then stripped them to nothing -- an EMPTY first <li>.  That is
+            # not cosmetic: item labels are numbered from the SOURCE below, so every
+            # `\ref` to an item pointed one place short of the item it names.  Strip
+            # comments BEFORE splitting, which is where the split can still see them.
+            _blk = re.sub(r'(?m)(?<!\\)%.*$', '', '\n'.join(blk))
             items = [x.strip() for x in
-                     re.split(r'\\item\s*', '\n'.join(blk)) if x.strip()]
+                     re.split(r'\\item\s*', _blk) if x.strip()]
             out.append(f'<{tag}>' + ''.join(
                 '<li>' + inline(x, nums, labels) + '</li>' for x in items)
                 + f'</{tag}>')
