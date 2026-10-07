@@ -9274,6 +9274,14 @@ vintage from the grids.*
   inertia). What is banked is `WBH2`, and `$\omega_b$` also sets the free-electron density, so the
   `WB` direction moves loading **and** recombination. *Even a discriminating `WB` result would have
   been two effects.*
+  ⌗ ***SUPERSEDED AS A STANDING FACT AT `r7203+cc66`, BY THE RUNS THIS ENTRY ASKED FOR.*** *`r7201`
+  granted the lever and `r7203` settled it, so `RBFAC` is now banked under
+  `r7201_cc66_loading_lever/` and nowhere else. **What remains exact, and is what the argument above
+  actually rests on, is that NEITHER NINE-RUN GRID carries it — `$0$` of `$36$`.** The tree-scoped
+  version of this sentence had to become false the moment the ask succeeded, and `cc66.155`'s own
+  `Ⓑ①` went red on exactly that: it asserted the absence over the whole tree and the fifth banked
+  `RBFAC` spectrum falsified it. Re-scoped to the grids at `r7203+cc66`, with a positive pin that
+  every `RBFAC` spectrum in tree is one of the ask's own runs.*
 - **The arm's response is convention-dependent.** The licensed grid asks `$14$`/`$294$`/`$11$`/`$24$`
   per cent on the same four directions where the one-clock grid asks `$4$`–`$6$`. So on this
   statistic even the SIZE of the arm's response is a statement about `LEAFGEOM` versus `LEAFREC`.
@@ -9287,7 +9295,8 @@ vintage from the grids.*
   loading.
 
 **Cost, in the grids' own units:** the statistic is a **re-read of the bank at no run cost**; the
-clean lever is **eight runs** (`RBFAC` at a few values on both arms) at the grids' own configuration
+clean lever is **eight runs** (`RBFAC` at a few values on both arms) — *revised to ten at
+`cc66.156` and settled at four plus three at `r7203`* — at the grids' own configuration
 (`HIER=1 LMAXL=2000 LSTEP=8 ZSTART=3e7`, `KFAC` at the corpus default `2.0`, `NK` not reduced),
 idempotent and resumable on output existence — comparable to **one** of the two nine-run arm grids
 already in tree.

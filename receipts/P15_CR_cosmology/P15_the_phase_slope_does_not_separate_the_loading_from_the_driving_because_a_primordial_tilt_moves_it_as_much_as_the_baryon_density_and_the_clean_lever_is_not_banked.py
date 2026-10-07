@@ -23,7 +23,9 @@ ZERO AT DEGREE `$4$`. **
 
   ⚠ ** THE CLEAN LEVER IS NOT IN THE BANK, AND THAT IS A FACT ABOUT THE BANK RATHER THAN A CHOICE
   HERE. **  *The instrument has `RBFAC`, which scales the baryon loading ONLY -- sound speed and
-  baryon Euler inertia -- by its own documentation.  No banked spectrum records it.  What IS banked
+  baryon Euler inertia -- by its own documentation.  Neither nine-run grid records it, and at this
+  revision no banked spectrum anywhere did; the ones that now do are the runs this receipt asked
+  for, granted at `r7201` and settled at `r7203`.  What IS banked
   is `WBH2`, and `omega_b` also sets the free-electron density, so the `WB` direction moves the
   loading AND recombination together.  Even a discriminating `WB` result would have been two
   effects, and this one does not discriminate.*
@@ -213,12 +215,39 @@ for _f in _allnpz:
         _ncfg += 1
 print(f"      {len(_allnpz)} banked .npz under computations/;  {_nsw} carry a `switches` line, "
       f"{_ncfg} a `config`")
+_rbfiles = []
+for _f in _allnpz:
+    try:
+        _z = np.load(_f, allow_pickle=True)
+    except Exception:
+        continue
+    if 'switches' in set(_z.files) and 'RBFAC' in str(_z['switches']):
+        _rbfiles.append(_f)
+_gridnpz = sorted(glob.glob(os.path.join(GO, '*.npz'))) + sorted(glob.glob(os.path.join(GL, '*.npz')))
+_nrb_grid = 0
+for _f in _gridnpz:
+    _z = np.load(_f, allow_pickle=True)
+    if 'switches' in set(_z.files) and 'RBFAC' in str(_z['switches']):
+        _nrb_grid += 1
+_ASKDIR = os.path.join(BW, 'r7201_cc66_loading_lever')
+_rb_outside = [f for f in _rbfiles if not os.path.abspath(f).startswith(os.path.abspath(_ASKDIR))]
 print(f"      of the {_nsw} that record their switches, {_nrb} name `RBFAC` and {_nnd} name "
       f"`NODRIVE`")
-check("Ⓑ①  ** `RBFAC` -- the lever that scales the baryon LOADING alone -- appears in NO banked "
-      "spectrum's recorded switches. **  So the loading cannot be moved on banked data without "
-      "also moving recombination, and that is a property of the bank rather than a choice here",
-      _nrb == 0 and _nsw >= 18)
+print(f"      of the {len(_gridnpz)} spectra in the two nine-run grids, {_nrb_grid} name `RBFAC`")
+print(f"      and of the {_nrb} that do, {_nrb - len(_rb_outside)} sit under "
+      f"`{os.path.basename(_ASKDIR)}/` -- the runs THIS receipt's ask produced")
+print("      ⌗ At `cc66.155`, when this was first run, that last number was 0 of 0: the lever was")
+print("        nowhere in tree.  `r7201` granted the runs and `r7203` settled them, so the count")
+print("        rising is this receipt's ask being MET and not its premise failing.  What the")
+print("        argument below needs is that the GRIDS carry no `RBFAC`, which is still exact.")
+check("Ⓑ①  ** `RBFAC` -- the lever that scales the baryon LOADING alone -- appears in NEITHER "
+      "NINE-RUN GRID's recorded switches, so no derivative along the loading was available from "
+      "the banked grids and that is a property of the bank rather than a choice here. **  ⌗ The "
+      "claim is grid-scoped rather than tree-scoped BECAUSE THIS RECEIPT'S OWN ASK HAS SINCE BEEN "
+      "GRANTED AND RUN: every `RBFAC` spectrum now in tree is one of those runs, which is the ask "
+      "discharged and not a counterexample to it.  Tree-scoped it would have to fail the moment it "
+      "succeeded",
+      _nrb_grid == 0 and _nsw >= 18 and _rb_outside == [])
 
 _sw = {}
 for _f in sorted(glob.glob(os.path.join(GO, '*.npz'))) + sorted(glob.glob(os.path.join(GL, '*.npz'))):
@@ -409,10 +438,13 @@ check("Ⓕ①  ** the separating measurement was runnable on banked data and it 
       "first -- and it still does not separate them",
       int(KEEP.sum()) > 150 and len(RES) == 20 and abs(_Pf - 312.00) < 1e-9)
 check("Ⓕ②  and what is asked for is bounded rather than open: one re-read of the bank for the "
-      "statistic, and eight instrument runs for the lever the bank does not carry -- named "
-      "against the nine-run grids already in tree, which is the only cost unit this sector has "
-      "measured",
-      _nrb == 0 and _wbvals == ['0.0216', '0.0232'])
+      "statistic, and -- AS COSTED AT THIS REVISION -- eight instrument runs for the lever the "
+      "grids do not carry, named against the nine-run grids already in tree, which is the only "
+      "cost unit this sector has measured.  ⌗ That eight was REVISED UPWARD to ten by `cc66.156`, "
+      "which found the banked driving-ON spectrum unreadable by the peak statistic, and settled at "
+      "four plus three when the ten tripped their own cost test.  The bound held in kind; the "
+      "number did not, and the revision is recorded rather than back-fitted here",
+      _nrb_grid == 0 and _rb_outside == [] and _wbvals == ['0.0216', '0.0232'])
 
 print()
 print(BAR)
@@ -439,7 +471,7 @@ print("    the magnitude.")
 print("  ⇒ ** SO: IT NEEDS A GRID, AND IT ALSO NEEDS A DIFFERENT STATISTIC. **  The peak set with")
 print("    its odd-even decomposition separates the two signatures that one global period makes")
 print("    degenerate, and that half is a re-read of the bank at no run cost. The lever half is")
-print("    eight runs, because `RBFAC` moves the loading alone and appears in NO banked spectrum,")
+print("    eight runs, because `RBFAC` moves the loading alone and appears in NEITHER GRID,")
 print("    while `WBH2` moves the loading and recombination together.")
 print("  ⚠ Named and not supplied: `NODRIVE` is a total removal rather than a derivative and its")
 print("    two spectra are a different vintage from the grids, so `PART E` is a limit and not a")
