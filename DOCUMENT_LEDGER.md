@@ -20,7 +20,7 @@ sources: [chat]
 | **STATE** | 15 |
 | **METHOD** | 40 |
 | **REFERENCE** | 26 |
-| **FORWARD** | 25 |
+| **FORWARD** | 26 |
 | **RECORD** | 96 |
 
 ## ⌗ DECLARED CLASSES
@@ -44,7 +44,7 @@ sources: [chat]
 | `THE_REGISTER.md` | SOURCE | the lead register — the one live source of what is open | — | c54.205 | 28 |
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.233 | c54.233 | 0 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.233 | 0 |
-| `THE_FRONTIER.md` | VIEW | the open problems in dependency order — generated from THE_REGISTER, the one source | — | c54.178 | 55 |
+| `THE_FRONTIER.md` | VIEW | the open problems in dependency order — generated from THE_REGISTER, the one source | — | — | never |
 | `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` | STATE | Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state. | — | c54.207 | 26 |
 | `FIGURE_SWEEP.md` | STATE | The figure programme's state — every figure against what it must carry. | — | c54.94 | 139 |
 | `HANDOFF_to_60_PO24_transfer.txt` | STATE | the plain-text build request for PO-24, the bespoke transfer | — | — | never |
@@ -140,6 +140,7 @@ sources: [chat]
 | `FOR_64.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FOR_66.md` | FORWARD | (declared in frontmatter) | — | c54.205 |  |
 | `FOR_66_FROM_60.md` | FORWARD | (declared in frontmatter) | — | c54.186 |  |
+| `FOR_66_FROM_69.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FOR_66_FROM_70.md` | FORWARD | (declared in frontmatter) | — | c54.226 |  |
 | `FOR_69.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FOR_70.md` | FORWARD | (declared in frontmatter) | — | c54.170 |  |
