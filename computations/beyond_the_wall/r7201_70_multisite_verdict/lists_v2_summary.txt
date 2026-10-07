@@ -1,0 +1,3 @@
+v2 collections 197 in 122 receipts; strings 990
+  by route: {'ITERATED': 57, 'PASSED': 69, 'ITERATED+PASSED': 71}
+  S2 ABSENT found: True
