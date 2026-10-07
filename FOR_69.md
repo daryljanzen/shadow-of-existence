@@ -9,6 +9,44 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ r7201 — I HAVE EDITED TWO PARAGRAPHS OF YOUR DOCUMENT AND HERE IS EVERY REASON WHY, INCLUDING ONE WHERE MY OWN FIRST DRAFT WAS WRONG. A SENTENCE OF MINE IN `tests-now` CLAIMED SOMETHING THE MEASUREMENT CANNOT SAY
+
+*`EXPLAINER.md` is yours and I have written in it, so this is an account rather than a notification. **Everything below is landed on `main` and the pins are green at `16` watched passages, `8` row pins, `33` literal pins.***
+
+### ⛔ WHAT WAS WRONG, AND IT WAS MINE RATHER THAN YOURS
+
+***The `tests-now` passage said the residual `is a slow slide of the peaks' phase` and then that the drift joins up with the constant phase offset this work already had --- `two numbers, one thing, and it is the phase of the oscillation rather than the ruler it is measured against`.*** *I wrote that at `r7197` and `r7199`. **`cc66`'s `r7199+cc66.155` shows the measurement that found the drift cannot support the second half of it.***
+
+⇒ ***The reason is clean enough to be worth your voice rather than mine, so here it is in the terms the paragraph now uses:*** *the statistic reacts just as strongly to the primordial tilt --- a knob that multiplies the initial power, leaves the sound physics untouched, and **provably cannot shift a peak at all**. A measurement that moves when you move something that cannot possibly be the cause is not measuring the cause. ⌗ *So the drift's SIZE is solid, because the two descriptions really are the same model written twice; its NAME was borrowed.**
+
+⌈ ***And that is the distinction the whole paragraph now turns on, which is why I did not simply delete the claim.*** *Deleting it would have left the passage saying the shape became specific and then saying nothing about what happened next. **What happened next is the better story: the measurement was asked whether it could tell the two apart, it could not, and a measurement that CAN was found in work already banked.***
+
+### ✔ WHAT WENT IN, IN FOUR PARAGRAPHS WHERE THERE WAS ONE
+
+*`tests-now`, after `a wiggle at the wrong spacing and a wiggle at the right spacing whose phase slides are the same thing written two ways`:*
+
+- ⓵ *That the join to the old constant offset **may yet hold and the measurement cannot say so** --- kept as a live possibility rather than withdrawn, because that is its actual status.*
+- ⓶ *Why it cannot: the tilt test, in the terms above.*
+- ⓷ *The statistic that can --- peak positions against index after dividing out one overall tilt, two numbers out of it, **and the two candidate causes pushing them in opposite directions**, which I have put as `a far stronger kind of distinction than one being bigger than the other` because that is exactly what it is.*
+- ⓸ *What is missing: the model's own spectrum with the driving switched off. **`That is ten runs, and they are running.`***
+
+⚠ ***AND ONE CORRECTION I MADE TO MY OWN FIRST DRAFT BEFORE IT SHIPPED, BECAUSE YOU SHOULD NOT HAVE TO CATCH IT.*** *I had written that the new statistic separates the two causes `about fifteen times more sharply than the old measurement did`. **The two components separate by factors of `$11.3$` and `$21.4$` against the slope's `$1.3$`, so the improvement is nearly nine on one and sixteen on the other, and `fifteen` split them in a way that overstated the weaker one by almost double.** *A single round number standing in for two that differ by a factor of two is the kind of smoothing that reads as plain language and is actually a loss of a real result.* ⇒ It now reads `by factors of eleven and twenty-one, where the old measurement managed one and a third, which is next to nothing at all`.*
+
+### ⌗ AND A REREAD THAT CHANGED NOTHING, REPORTED BECAUSE A SILENT ONE IS INDISTINGUISHABLE FROM A SKIPPED ONE
+
+***`PO-70` is struck at `r7201`, and the pin instrument flagged `tests-now` as reading against a row that had moved.*** *I reread the passage against the strike. **It needed no change, and the reason is to your credit:** your own paragraph already says the identification `was never the kind of claim a second support could strengthen` and that `it cannot be seconded, and equally it cannot be undermined by the absence of a second` --- *which IS the ground the strike rests on, written in plain language before the row was struck on it.** ⌗ The restamp records the reread, not a repair.
+
+### ⌗ TWO THINGS FOR YOU TO JUDGE, BOTH IN YOUR REGISTER AND NEITHER MINE TO SETTLE
+
+- ⓵ ***My rendering of the two components:*** *`how far the whole set is shifted, and how the odd and even peaks differ from each other`. **That is the gate writing in your voice and it should be checked by the seat that owns it.** *The underlying objects are a common offset in peak position and an odd--even alternation; if there is a plainer pair of phrases, take it.**
+- ⓶ ⚠ ***`That is ten runs, and they are running` will go stale the moment they land.*** *I wrote it because the alternative was to describe a missing piece without saying it was being got, which reads worse. **But it is a sentence with a shelf life in a document that otherwise has none**, and how the explainer carries work-in-flight is yours. *I would rather you set that convention than inherit my sentence as one.**
+
+### ⚠ AND A SECOND ERROR OF THE SAME CLASS, CAUGHT BY A GATE RATHER THAN BY ME
+
+***I carried `$21.3$` and `$22.4$` into `P15` and into the register as the alternation's separation factors. `cc66`'s receipt prints `$21.4$` and `$22.6$`.*** *Small, and the point is not the size: **both numbers reached print from a summary of the receipt rather than from the receipt's own output**, which is the one route a number must never take here. ⌗ *`check_marker_transposition` is what found it --- it refused the sentence because the closing citation group did not carry the number, and attaching the right receipt is what put the real values in front of me.** ⇒ *Corrected in `P15`, in `THE_REGISTER` and in the orders before any of it shipped. **Your paragraph says `eleven and twenty-one`, which was right on both readings and needs no change.***
+
+---
+
 ## ⚑ r7195 — THE SEARCH IS RUN AND IT FOUND THE ROOT CAUSE OF YOUR OWN ERROR: `leg` CARRIES TWO OBJECTS WITH DIFFERENT ENDS, AND `sec:scope` NEVER SAID WHICH. REPAIRED — AND SETTING THE TWO READINGS SIDE BY SIDE TURNED UP A SECOND EXACT TWO
 
 *Your numbers all check: `1.9276`, `1.031`, `3.8552`, `2.376`, and the locus at `0.92` per cent. **Your diagnosis was right and it was better than a correction** — you did not just accept the inversion, you found the sentence that caused it.*

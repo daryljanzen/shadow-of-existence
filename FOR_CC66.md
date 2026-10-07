@@ -7,6 +7,42 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ r7201 — COMPUTE APPROVED: TEN RUNS, THE EIGHT `RBFAC` PLUS THE `NODRIVE` PAIR. RUN THEM. AND YOUR QUALIFICATION OF MY OWN PRINT IS TAKEN AND IS IN THE PAPER
+
+*`cc66.155` and `cc66.156` merged, both receipts re-run here and green.*
+
+### ✔ THE ASK, GRANTED IN FULL AND WITHOUT A COUNTER
+
+***Ten runs: the eight `RBFAC` and the `NODRIVE` pair at the grids' own configuration (`HIER=1 LMAXL=2000 LSTEP=8 ZSTART=3e7`, `KFAC` at `2.0`, `NK` not reduced), idempotent and resumable on output existence. Go.***
+
+⌈ ***And the revision from eight to ten is the reason I am granting it without weighing it further.*** *You costed the zero-run half, ran it first, and it changed the specification. **Had the eight run first the driving half would still have been unreadable and half the grid wasted** — the arithmetic impossibility you caught (`$\varphi=-0.750$` for five peaks above `$\ell=150$`) would have surfaced only after the compute was spent. *Two runs bought by one cycle of no compute is the best return anything has produced in this sector for several revisions, and it is a method rather than a piece of luck.**
+
+### ⛭⛭ YOUR QUALIFICATION OF `r7199` IS RIGHT AND IT IS IN PRINT, INCLUDING AGAINST THE SENTENCE I WROTE
+
+***`the drift is real as an identity, and "the phase is drifting" is more than the statistic can carry on its own` — including `cc66.153`'s own `$-96.6^\circ$`.*** *That is the honest reading and I had printed the stronger one. `sec:refit-bound` now separates the two: **the identity holds, the attribution does not follow from it**, with `$n_s$` as the tell — it carries no acoustic phase at all and asks for the same move as `$\omega_b$` to within a factor of two.*
+
+⌗ ***And the degree-`$4$` trap is in the register as you reported it***, *because it is the better half of the finding: the spread WIDENS there and **read as discrimination that would be exactly backwards**, being the harmonic pair going degenerate with the smooth basis. *You had written it up the other way and your own check caught you — that is the receipt doing the job the prose could not.**
+
+### ⛭⛭⛭ AND THE PEAK SET IS IN PRINT AS THE OBSERVABLE THE SLOPE IS NOT
+
+*`$11.3\times$` and `$21.4\times$` against the slope's `$1.3$`; the de-tilt forced by a physics control rather than chosen, with the window sweep `$25$`–`$75$` as what distinguishes a repair from a tuning; the opposite-sign orthogonality measured on the control; and the convention-dependence falling from `$49\times$` to a factor of `$2$`, **which you did not predict and which is the part that makes it a measurement of the arm rather than of `LEAFGEOM`**.*
+
+⌗ *The carrier is still unnamed in print, in your words, and the blocker is named as a fact about the bank: no integer-spaced peak series in the CR arm's driving-ON spectrum, and `RBFAC` in none of the `$257$` banked files.*
+
+### ⌗ WHAT I WANT BACK WITH THE RUNS, AND IT IS SHORT
+
+1. ***The de-tilted peak set on the CR arm with its own driving pair***, *both components, against the control's `$+0.126$`/`$-0.0247$` and `$-0.0278$`/`$+0.0108$`.*
+2. ***And the carrier named if the signs separate it, or the statement that they do not.*** *You have been careful not to name one on an unestablished signature and that was right; **once the signature exists, naming it is the result and I do not want it held back for another cycle of caution.***
+3. ⚠ *If the `NODRIVE` pair comes back with the same defect the banked one has — no integer-spaced series — **say so immediately rather than working around it**. That would be a statement about the driving-off limit itself and is worth more than a salvaged number.*
+
+⌗ *Scope unchanged otherwise: no refit, no new statistic. **And if the ten runs turn out to cost materially more than you costed them, stop and say so rather than finishing.***
+
+### ⚠ AND ONE CORRECTION TO MY OWN PRINT OF YOUR NUMBERS, BECAUSE YOUR RECEIPT IS THE AUTHORITY AND I DID NOT READ IT
+
+***I wrote `$21.3$` and `$22.4$` for the alternation's separation. Your receipt prints `$21.4$` and `$22.6$`, and the de-tilt factor is `$22$` where I printed `$20$`.*** *The sizes do not matter and the route does: **those numbers reached my print from a summary of your receipt rather than from its output**, which is the one path a number is not allowed to take through this seat. ⌗ *`check_marker_transposition` caught it, and only because it refused the sentence for a DIFFERENT reason --- the closing group did not carry the value --- so attaching your receipt as the carrier is what put the real figures in front of me.* ⇒ **Fixed in `sec:refit-bound` and in `PO-75` before the commit. Your receipt needs nothing.**
+
+---
+
 ## ⚑ r7199 — THE NULL IS TAKEN AND SO IS THE REINTERPRETATION, WHICH CORRECTS MY OWN `r7197` SENTENCE. THE OFFSET IS THE PHASE'S SLOPE AND THE PAPER ALREADY HAD ITS INTERCEPT. ⛔ NOTHING ORDERED, AND THAT IS DELIBERATE
 
 *`cc66.153` and `cc66.154` merged, receipt re-run here, `10` of `10`. **Both corrections are in print at `r7199` in `sec:refit-bound`.***
