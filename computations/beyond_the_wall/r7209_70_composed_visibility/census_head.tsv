@@ -1,0 +1,318 @@
+  f853845e: 748 \rcpt sites in 37 files, 0 with no receipt file
+  FLAGGED (site, pair) rows: 314
+  by pair/side: {('H1', 'A'): 4, ('H1', 'B'): 17, ('H2', 'A'): 13, ('H2', 'B'): 71, ('H3', 'A'): 49, ('H3', 'B'): 56, ('H4', 'A'): 18, ('H4', 'B'): 86}
+  distinct receipts flagged: 177
+corpus/BH_causality_v2.tex	I53_the_two_horizons_are_a_repeller_attractor_pair_and_the_alternation_is_forced	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/BH_causality_v2.tex	P01_metric_singularity_algebra	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/BH_causality_v2.tex	P01_metric_singularity_algebra	H3	A	timelike
+corpus/BH_causality_v2.tex	P01_metric_singularity_algebra	H3	B	spacelike|\bstatic\b
+corpus/BH_causality_v2.tex	P1_the_unruh_case_is_what_makes_the_criterion_completion_and_not_perspective	H1	B	cosmological horizon
+corpus/CR_cosmology.tex	P15_the_rate_has_one_parameter_and_one_epoch	H2	B	double root
+corpus/CR_cosmology.tex	P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_laps_own_closure_is_a_translation_by_sqrt3_alpha_so_the_reflection_that_the_absolute_radius_implements_is_not_the_substrate_identification_and_the_two_agree_at_one_point_only	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_term_the_leaf_adds_dominates_the_matter_term_everywhere_inside_the_lap_with_equality_forced_onto_the_back_chart_value_so_the_vacuum_reading_commits_to_its_strong_form	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn	H4	B	proper time
+corpus/CR_cosmology.tex	P15_verify_throat_tower	H2	B	double root
+corpus/CR_cosmology.tex	P15_verify_throat_tower	H3	A	timelike
+corpus/CR_cosmology.tex	P15_the_bead_routes_damping_survives_on_the_squashed_layer_because_the_berger_harmonics_carry_no_squashing_and_the_spectrum_is_bounded_below_uniformly	H2	B	double root
+corpus/CR_cosmology.tex	P15_the_bead_routes_damping_survives_on_the_squashed_layer_because_the_berger_harmonics_carry_no_squashing_and_the_spectrum_is_bounded_below_uniformly	H3	A	timelike
+corpus/CR_cosmology.tex	P15_the_transmission_figure_is_deliverable_after_all_because_the_descending_sectors_eigenvalue_carries_no_squashing_so_constant_k_is_exact_exactly_where_the_sector_descends	H2	B	double root
+corpus/CR_cosmology.tex	P15_the_transmission_figure_is_deliverable_after_all_because_the_descending_sectors_eigenvalue_carries_no_squashing_so_constant_k_is_exact_exactly_where_the_sector_descends	H3	A	timelike
+corpus/CR_cosmology.tex	P15_the_floors_understatement_is_measured_against_the_floor_and_not_the_exact_value_and_sec_largescale_never_carries_the_asymptote	H2	B	double root
+corpus/CR_cosmology.tex	P15_the_floors_understatement_is_measured_against_the_floor_and_not_the_exact_value_and_sec_largescale_never_carries_the_asymptote	H3	A	timelike
+corpus/CR_cosmology.tex	P15_the_lifts_exact_envelope_on_the_carried_layer_is_a_one_parameter_deformation_indexed_by_the_hopf_charge_and_the_uniform_bound_is_not_attained	H2	B	double root
+corpus/CR_cosmology.tex	P15_the_lifts_exact_envelope_on_the_carried_layer_is_a_one_parameter_deformation_indexed_by_the_hopf_charge_and_the_uniform_bound_is_not_attained	H3	A	timelike
+corpus/CR_cosmology.tex	P15_the_angular_label_crosses_the_lift_untouched_and_the_amplitude_does_not_because_the_lift_is_purely_imaginary_conformal_time_so_what_it_adds_is_an_envelope_with_exactly_no_phase	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/CR_cosmology.tex	P15_the_angular_label_crosses_the_lift_untouched_and_the_amplitude_does_not_because_the_lift_is_purely_imaginary_conformal_time_so_what_it_adds_is_an_envelope_with_exactly_no_phase	H3	B	\bstatic\b
+corpus/CR_cosmology.tex	P15_the_angular_momentum_sector_is_not_a_propagating_mode	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/CR_cosmology.tex	P15_the_angular_momentum_sector_is_not_a_propagating_mode	H3	B	\bstatic\b
+corpus/CR_cosmology.tex	P15_the_tower_is_robust_to_the_throat_being_squashed	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/CR_cosmology.tex	P15_the_tower_is_robust_to_the_throat_being_squashed	H3	B	\bstatic\b
+corpus/CR_cosmology.tex	P15_rotation_moves_the_throat_away_from_the_damping_threshold	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/CR_cosmology.tex	P15_rotation_moves_the_throat_away_from_the_damping_threshold	H3	B	\bstatic\b
+corpus/CR_cosmology.tex	P15_the_warped_throat_keeps_every_mode_above_the_monopole_decaying	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/CR_cosmology.tex	P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/CR_cosmology.tex	P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment	H3	A	timelike
+corpus/CR_cosmology.tex	P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment	H3	B	spacelike|\bstatic\b
+corpus/CR_cosmology.tex	P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment	H4	B	cosmic time|proper time
+corpus/CR_cosmology.tex	P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/CR_cosmology.tex	P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment	H3	A	timelike
+corpus/CR_cosmology.tex	P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment	H3	B	spacelike|\bstatic\b
+corpus/CR_cosmology.tex	P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment	H4	B	cosmic time|proper time
+corpus/CR_cosmology.tex	P15_the_sheared_layers_invariant_is_obtained_in_closed_form_and_the_squashing_runs_to_zero_approaching_the_seam_so_the_shape_is_not_carried	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/CR_cosmology.tex	P15_the_sheared_layers_invariant_is_obtained_in_closed_form_and_the_squashing_runs_to_zero_approaching_the_seam_so_the_shape_is_not_carried	H3	B	spacelike|\bstatic\b
+corpus/CR_cosmology.tex	P15_the_sheared_layers_invariant_is_obtained_in_closed_form_and_the_squashing_runs_to_zero_approaching_the_seam_so_the_shape_is_not_carried	H4	B	cosmic time|proper time
+corpus/CR_cosmology.tex	P15_the_seam_limit_of_the_carried_layer_with_its_chi_block_is_prop_throats_ds2_times_s2_obtained_with_both_radii_read_off_the_flow	H3	B	spacelike|\bstatic\b
+corpus/CR_cosmology.tex	P15_the_seam_limit_of_the_carried_layer_with_its_chi_block_is_prop_throats_ds2_times_s2_obtained_with_both_radii_read_off_the_flow	H4	B	cosmic time|proper time
+corpus/CR_cosmology.tex	P15_the_conjecture_reduces_to_umbilicity_because_a_conformal_carrying_preserves_the_invariants_modulus_across_the_lift_and_the_foliation_is_umbilic_only_at_the_seam	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/CR_cosmology.tex	P15_the_conjecture_reduces_to_umbilicity_because_a_conformal_carrying_preserves_the_invariants_modulus_across_the_lift_and_the_foliation_is_umbilic_only_at_the_seam	H3	B	spacelike|\bstatic\b
+corpus/CR_cosmology.tex	P15_the_conjecture_reduces_to_umbilicity_because_a_conformal_carrying_preserves_the_invariants_modulus_across_the_lift_and_the_foliation_is_umbilic_only_at_the_seam	H4	B	cosmic time|proper time
+corpus/CR_cosmology.tex	P15_the_layers_three_metric_obtained_by_restriction_is_timelike_through_the_whole_interior_of_the_lap_so_the_continuation_does_not_go_through_and_the_invariant_cannot_adjudicate_it	H4	B	cosmic time|proper time
+corpus/CR_cosmology.tex	P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/CR_cosmology.tex	P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha	H3	A	timelike
+corpus/CR_cosmology.tex	P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha	H3	B	spacelike|\bstatic\b
+corpus/CR_cosmology.tex	P15_the_construction_fixes_no_closed_layer_radius_because_the_nariai_mass_closes_the_route_that_fixes_it_in_de_sitter_and_the_one_radius_it_does_fix_is_alpha	H4	B	cosmic time|proper time
+corpus/CR_cosmology.tex	P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_the_horizon_scale_on_both_lorentzian_legs_is_the_same_pure_number	H2	A	non-degenerate
+corpus/CR_cosmology.tex	P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_the_horizon_scale_on_both_lorentzian_legs_is_the_same_pure_number	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/CR_cosmology.tex	P15_the_seam_flux_is_not_computable_here_because_the_closure_makes_one_locus_carry_two_surface_gravities_and_the_euclidean_section_closes_in_a_clock_whose_conversion_vanishes_at_both_seams	H4	B	proper time
+corpus/CR_cosmology.tex	P15_hbar_survives_in_As_and_cancels_in_ns	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_hbar_survives_in_As_and_cancels_in_ns	H4	B	proper time
+corpus/CR_cosmology.tex	P15_the_geometry_transmits_no_parameters	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_geometry_transmits_no_parameters	H4	B	proper time
+corpus/CR_cosmology.tex	P15_the_exact_transmission_ratios_are_recomputed_and_the_offset_saturates	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_route_from_the_handover_amplitude_to_the_spectral_parameters_is_already_in_print_as_the_hbar_sentence_so_the_tilt_passes_exactly_and_horn_two_cannot_carry_it_at_all	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_continuation_is_diagonal	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/CR_cosmology.tex	P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real	H4	B	cosmic time
+corpus/CR_cosmology.tex	P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real	H4	B	cosmic time
+corpus/CR_cosmology.tex	P15_the_angular_label_crosses_the_lift_untouched_and_the_amplitude_does_not_because_the_lift_is_purely_imaginary_conformal_time_so_what_it_adds_is_an_envelope_with_exactly_no_phase	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance	H4	B	cosmic time
+corpus/CR_cosmology.tex	P15_the_expansion_in_the_de_sitter_presentation_is_not_bounded_either_because_the_sphere_lives_at_zero_mass_and_the_observer_at_the_nariai_one_and_both_closed_kernels_are_excluded_by_the_comb	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_expansion_in_the_de_sitter_presentation_is_not_bounded_either_because_the_sphere_lives_at_zero_mass_and_the_observer_at_the_nariai_one_and_both_closed_kernels_are_excluded_by_the_comb	H4	B	cosmic time
+corpus/CR_cosmology.tex	P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges	H4	B	cosmic time
+corpus/CR_cosmology.tex	P15_the_phase_is_already_carried_into_the_projections_variable_and_the_two_statements_of_the_sound_horizon_agree_identically	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_the_phase_is_already_carried_into_the_projections_variable_and_the_two_statements_of_the_sound_horizon_agree_identically	H4	B	cosmic time
+corpus/CR_cosmology.tex	P15_verify_lowell_boltzmann	H4	A	conformal length
+corpus/CR_cosmology.tex	P15_verify_lowell_boltzmann	H4	B	cosmic time
+corpus/CR_framework.tex	O4_deflection_perspectival	H1	B	cosmological horizon
+corpus/CR_framework.tex	P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda	H3	B	\bstatic\b
+corpus/CR_framework.tex	F_flat	H3	A	timelike
+corpus/CR_framework.tex	F_flat	H4	B	cosmic time
+corpus/CR_framework.tex	P07_nariai_selection	H1	B	cosmological horizon
+corpus/CR_framework.tex	P07_sds_kretschmann	H3	B	\bstatic\b
+corpus/CR_framework.tex	X4r_no_essential_singularity	H2	A	non-degenerate
+corpus/CR_framework.tex	bead_contour	H4	B	cosmic time
+corpus/CR_framework.tex	order3_bridge	H4	B	cosmic time
+corpus/CR_framework.tex	two_realisations	H2	B	double root
+corpus/CR_framework.tex	P07_lap_timeline	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/CR_framework.tex	P07_lap_timeline	H3	B	\bstatic\b
+corpus/CR_framework.tex	P07_lap_timeline	H4	B	cosmic time
+corpus/CR_framework.tex	P03_acceleration_is_slice_curvature	H3	B	\bstatic\b
+corpus/CR_framework.tex	P03_acceleration_is_slice_curvature	H4	B	cosmic time
+corpus/CR_framework.tex	P07_sds_kretschmann	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/CR_framework.tex	P07_cube_root_two_is_the_2M_over_M	H2	B	double root
+corpus/CR_framework.tex	P07_cube_root_two_is_the_2M_over_M	H3	B	\bstatic\b
+corpus/CR_framework.tex	P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature	H2	B	double root
+corpus/CR_framework.tex	P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature	H4	B	cosmic time
+corpus/CR_framework.tex	EUCNULL_continuous_null_definition	H4	B	cosmic time
+corpus/CR_framework.tex	P10_the_straddle_is_computed	H2	A	non-degenerate
+corpus/CR_framework.tex	P10_the_straddle_is_computed	H4	B	cosmic time
+corpus/CR_framework.tex	P16_every_mode_is_frozen_at_the_crossing	H4	A	conformal length
+corpus/CR_framework.tex	P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed	H4	A	conformal length
+corpus/CR_framework.tex	LAP_complete_account	H1	B	cosmological horizon
+corpus/CR_framework.tex	LAP_complete_account	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	P03_two_two_plus_ones	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	Q5_nariai_on_the_locus	H2	B	double root
+corpus/SdS-slicing-curve_v2.tex	O1_photon_sphere_nariai	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	O1_photon_sphere_nariai	H3	A	timelike
+corpus/SdS-slicing-curve_v2.tex	P03_dimension_collapse	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	P03_reach_probe_deepening	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	P03_step3_sweep	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	P03_step3_refused	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	P03_operator_at_general_D	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	P03_the_third_regime_is_the_boundary_of_admissible_data_and_not_a_behaviour_of_the_lap	H3	A	timelike
+corpus/SdS-slicing-curve_v2.tex	P03_the_turnaround_figure	H4	B	cosmic time
+corpus/SdS-slicing-curve_v2.tex	P03_turnaround_temporal_threeness	H4	B	cosmic time
+corpus/SdS-slicing-curve_v2.tex	X2r_single_periodicity	H4	B	cosmic time
+corpus/SdS-slicing-curve_v2.tex	P07_lap_timeline	H3	B	\bstatic\b
+corpus/SdS-slicing-curve_v2.tex	P07_lap_timeline	H4	B	proper time
+corpus/SdS-slicing-curve_v2.tex	P03_cubic_spacing	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	P03_sheet_index_and_factors	H4	B	cosmic time
+corpus/SdS-slicing-curve_v2.tex	P03_curvature_signflip	H3	B	\bstatic\b
+corpus/SdS-slicing-curve_v2.tex	P03_which_mass_sets_the_hubble_eddington_radius	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	P03_which_mass_sets_the_hubble_eddington_radius	H3	B	\bstatic\b
+corpus/SdS-slicing-curve_v2.tex	P03_kg_is_fprime	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	P03_kg_is_fprime	H3	B	\bstatic\b
+corpus/SdS-slicing-curve_v2.tex	P03_acceleration_is_slice_curvature	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	P03_acceleration_is_slice_curvature	H3	B	\bstatic\b
+corpus/SdS-slicing-curve_v2.tex	P03_rstar_merged_horizon	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/SdS-slicing-curve_v2.tex	P03_rstar_merged_horizon	H3	B	\bstatic\b
+corpus/SdS-slicing-curve_v2.tex	P03_the_charged_collapse_does_not_form_the_eternal_inner_horizon	H1	B	cosmological horizon
+corpus/SdS-slicing-curve_v2.tex	P03_the_sign_switch_is_conditional_on_the_interior_mass_function	H3	B	spacelike
+corpus/SdS-slicing-curve_v2.tex	P03_the_interior_mass_function_is_p_equals_one_along_the_shell_and_the_charge_falls_short_of_the_equality_radius	H3	B	spacelike
+corpus/SdS-slicing-curve_v2.tex	P03_charge_obstructs_the_beads_closure_and_not_the_cosmogenesis	H1	A	event horizon
+corpus/algebroid_paper.tex	E1_static_gauge	H2	A	non-degenerate
+corpus/algebroid_paper.tex	E1_static_gauge	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/algebroid_paper.tex	E1_static_gauge	H3	B	\bstatic\b
+corpus/algebroid_paper.tex	P12_polar_dimension	H3	B	spacelike
+corpus/algebroid_paper.tex	E1_static_gauge	H3	B	\bstatic\b
+corpus/algebroid_paper.tex	K8_orbit_type_filtration	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/algebroid_paper.tex	K8_orbit_type_filtration	H3	B	spacelike
+corpus/algebroid_paper.tex	K8b_dim_seven_empty	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/boundary_paper.tex	P13_sigma_lift	H3	A	timelike
+corpus/boundary_paper.tex	I1_so6C_has_five_real_forms_and_the_omitted_one_admits_su3	H3	A	timelike
+corpus/boundary_paper.tex	I1_so6C_has_five_real_forms_and_the_omitted_one_admits_su3	H4	B	cosmic time
+corpus/boundary_paper.tex	S1_so42_is_not_another_real_form_it_is_the_substrates_own_dual	H4	B	cosmic time
+corpus/boundary_paper.tex	P13_A3_spinor_lift	H4	B	cosmic time
+corpus/boundary_paper.tex	P13_kretschmann_bead	H4	B	cosmic time
+corpus/canonical_time.tex	P10_minisuperspace_friedmann	H4	B	cosmic time
+corpus/canonical_time.tex	P10_the_frequency_shift_is_the_curvature_term_at_every_level_so_the_log_coefficient_is_fifteen_quarters	H4	B	cosmic time
+corpus/canonical_time.tex	P10_the_second_anchor_confirms_the_shift_at_a_level_with_gradients_and_the_criterion_needs_a_weyl_function	H4	B	cosmic time
+corpus/canonical_time.tex	P10_graviton_lift	H4	B	cosmic time
+corpus/canonical_time.tex	P10_the_remainder_is_the_last_of_three_and_is_not_reachable_by_refining_the_method	H1	B	cosmological horizon
+corpus/canonical_time.tex	P10_the_remainder_is_the_last_of_three_and_is_not_reachable_by_refining_the_method	H2	A	non-degenerate
+corpus/canonical_time.tex	P10_the_remainder_is_the_last_of_three_and_is_not_reachable_by_refining_the_method	H4	B	cosmic time
+corpus/canonical_time.tex	P10_the_straddle_does_not_need_a_floor	H1	B	cosmological horizon
+corpus/canonical_time.tex	P10_the_straddle_does_not_need_a_floor	H2	A	non-degenerate
+corpus/canonical_time.tex	P10_the_straddle_does_not_need_a_floor	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/canonical_time.tex	P10_the_straddle_does_not_need_a_floor	H4	B	cosmic time
+corpus/canonical_time.tex	P10_the_straddle_is_computed	H1	B	cosmological horizon
+corpus/canonical_time.tex	P10_the_straddle_is_computed	H2	A	non-degenerate
+corpus/canonical_time.tex	P10_the_straddle_is_computed	H4	B	cosmic time
+corpus/canonical_time.tex	D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres	H1	B	cosmological horizon
+corpus/canonical_time.tex	D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres	H2	A	non-degenerate
+corpus/canonical_time.tex	D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/canonical_time.tex	D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres	H4	B	cosmic time
+corpus/canonical_time.tex	P10_ordering_selection_is_external	H1	B	cosmological horizon
+corpus/canonical_time.tex	P10_ordering_selection_is_external	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/canonical_time.tex	P10_ordering_selection_is_external	H4	B	cosmic time
+corpus/canonical_time.tex	P10_gamma_hat_is_bounded_below	H1	B	cosmological horizon
+corpus/canonical_time.tex	P10_gamma_hat_is_bounded_below	H4	B	cosmic time
+corpus/canonical_time.tex	D50_the_floor_does_survive_and_the_paper_said_so_232_revisions_earlier	H1	B	cosmological horizon
+corpus/canonical_time.tex	D50_the_floor_does_survive_and_the_paper_said_so_232_revisions_earlier	H4	B	cosmic time
+corpus/canonical_time.tex	P10_no_rescaling_discharges_the_log_and_the_one_mass_shift_that_does_is_the_curvature_offset	H1	B	cosmological horizon
+corpus/canonical_time.tex	P10_no_rescaling_discharges_the_log_and_the_one_mass_shift_that_does_is_the_curvature_offset	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/canonical_time.tex	P10_no_rescaling_discharges_the_log_and_the_one_mass_shift_that_does_is_the_curvature_offset	H4	B	cosmic time
+corpus/canonical_time.tex	S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is	H1	B	cosmological horizon
+corpus/canonical_time.tex	S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is	H2	A	non-degenerate
+corpus/canonical_time.tex	S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/canonical_time.tex	S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is	H4	B	cosmic time
+corpus/canonical_time.tex	D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count	H1	B	cosmological horizon
+corpus/canonical_time.tex	D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count	H2	A	non-degenerate
+corpus/canonical_time.tex	D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/canonical_time.tex	D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count	H4	B	cosmic time
+corpus/canonical_time.tex	P10_the_chain_does_not_reach_the_planck_length_and_the_second_order_term_is_bounded_at_the_bounce	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/canonical_time.tex	P10_the_subtraction_is_at_operator_dimension_six_pinned_three_ways_and_it_is_not_degenerate_so_the_ledger_cost_is_real	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/canonical_time.tex	P10_the_assembly_has_two_invariants_and_the_cubic_is_traceless_but_the_invariant_cannot_be_named_on_this_background	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/canonical_time.tex	P10_the_lowest_tt_harmonics_are_frame_constant_so_the_overlap_is_a_determinant_times_the_volume	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/canonical_time.tex	P10_the_payoff_count_of_one_is_right_because_P1_reaches_the_existence_occurrence_distinction_from_general_relativity_alone_and_answers_the_extension_move_with_a_theorem	H4	B	cosmic time
+corpus/cosmogenesis_paper.tex	P16_recollapse_is_the_nariai_threshold	H2	B	double root
+corpus/cosmogenesis_paper.tex	P16_nariai_welds	H2	B	double root
+corpus/cosmogenesis_paper.tex	P16_nariai_welds	H3	B	\bstatic\b
+corpus/cosmogenesis_paper.tex	P16_nariai_welds	H4	B	cosmic time|proper time
+corpus/cosmogenesis_paper.tex	P03_acceleration_is_slice_curvature	H2	B	double root
+corpus/cosmogenesis_paper.tex	P03_acceleration_is_slice_curvature	H3	A	timelike
+corpus/cosmogenesis_paper.tex	P03_acceleration_is_slice_curvature	H3	B	\bstatic\b
+corpus/cosmogenesis_paper.tex	P03_acceleration_is_slice_curvature	H4	B	cosmic time|proper time
+corpus/cosmogenesis_paper.tex	CROSSING_no_made_asymmetry	H1	A	event horizon
+corpus/cosmogenesis_paper.tex	CROSSING_no_made_asymmetry	H1	B	cosmological horizon
+corpus/cosmogenesis_paper.tex	P16_recollapse_is_the_nariai_threshold	H2	B	double root
+corpus/cosmogenesis_paper.tex	P16_recollapse_is_the_nariai_threshold	H4	B	proper time
+corpus/dynamics_paper.tex	P11_unpolarized_gowdy_cut	H3	B	spacelike
+corpus/dynamics_paper.tex	P11_deSitter_attractor	H4	B	cosmic time
+corpus/dynamics_paper.tex	P11_mukhanov	H4	B	cosmic time
+corpus/dynamics_paper.tex	F50_the_a_minus_two_belongs_to_W_and_Q_is_bounded_by_going_constant	H4	B	cosmic time
+corpus/dynamics_paper.tex	P11_wall_ppwave	H2	A	non-degenerate
+corpus/geometric_core_paper.tex	P17_no_second_scale_on_either_face	H3	A	timelike
+corpus/geometric_core_paper.tex	O2_sightline_null_on_lift	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/geometric_core_paper.tex	Q1_quadric_polarity	H3	A	timelike
+corpus/geometric_core_paper.tex	Q1_quadric_polarity	H3	B	spacelike
+corpus/geometric_core_paper.tex	P0_the_order_parameter_is_the_offset_and_it_is_bounded_by_the_nariai_member	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/geometric_core_paper.tex	P0_the_order_parameter_is_the_offset_and_it_is_bounded_by_the_nariai_member	H3	A	timelike
+corpus/geometric_core_paper.tex	P0_the_order_parameter_is_the_offset_and_it_is_bounded_by_the_nariai_member	H3	B	spacelike
+corpus/geometric_core_paper.tex	P0_the_order_parameter_is_the_offset_and_it_is_bounded_by_the_nariai_member	H4	B	cosmic time
+corpus/geometric_core_paper.tex	P17_the_ds_entropy_is_the_gauge_count_squared_and_is_the_cc_number	H2	B	double root
+corpus/geometric_core_paper.tex	I50_the_carter_constant_is_the_substrates_symmetry_and_kerrs_is_not	H1	A	event horizon
+corpus/geometric_core_paper.tex	I50_the_carter_constant_is_the_substrates_symmetry_and_kerrs_is_not	H3	B	\bstatic\b
+corpus/geometric_core_paper.tex	I50_the_carter_constant_is_the_substrates_symmetry_and_kerrs_is_not	H4	B	cosmic time
+corpus/groupoid_paper.tex	Q51_the_monodromy_continuation_is_stable_and_it_has_two_preconditions_neither_stated	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/groupoid_paper.tex	K1_action_groupoid	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/groupoid_paper.tex	K45_span_and_nariai	H2	B	double root|(?<!non-)(?<!non)\bdegenerate
+corpus/janzen_circle_v3.tex	P02_cycloid_and_critical_points	H3	A	timelike
+corpus/janzen_circle_v3.tex	P02_kretschmann_chain_rule	H2	A	non-degenerate
+corpus/janzen_circle_v3.tex	P02_the_approach_is_mass_free	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/janzen_circle_v3.tex	P02_the_approach_is_mass_free	H3	A	timelike
+corpus/janzen_circle_v3.tex	P02_the_approach_is_mass_free	H3	B	spacelike
+corpus/janzen_circle_v3.tex	P02_the_third_axis_is_two_poles	H1	A	event horizon
+corpus/janzen_circle_v3.tex	P02_ring_lambda_limit	H1	B	cosmological horizon
+corpus/janzen_circle_v3.tex	P02_ring_lambda_limit	H2	B	double root
+corpus/matter_sector_paper.tex	P14_B3_spinor_vielbein	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/matter_sector_paper.tex	W2_the_wall_zero_mode_on_the_operator_b60_fixes	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/matter_sector_paper.tex	C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it	H3	B	\bstatic\b
+corpus/matter_sector_paper.tex	W2_the_wall_zero_mode_on_the_operator_b60_fixes	H3	B	\bstatic\b
+corpus/matter_sector_paper.tex	JTOWER_angular_index	H3	B	\bstatic\b
+corpus/matter_sector_paper.tex	P14_the_wall_is_a_wall_of_a_hinge	H3	B	\bstatic\b
+corpus/matter_sector_paper.tex	P14_p3_already_said_it	H3	B	\bstatic\b
+corpus/matter_sector_paper.tex	P14_the_centre_is_the_weight_origin	H3	B	\bstatic\b
+corpus/matter_sector_paper.tex	P14_leaf_compactness	H3	B	\bstatic\b
+corpus/matter_sector_paper.tex	W2_the_wall_zero_mode_on_the_operator_b60_fixes	H3	B	\bstatic\b
+corpus/matter_sector_paper.tex	P14_mode_monodromy_at_the_wall	H3	B	\bstatic\b
+corpus/matter_sector_paper.tex	P14_even_crossing_index	H3	B	\bstatic\b
+corpus/matter_sector_paper.tex	D1_the_traced_half_is_the_theorem_and_the_computed_half_is_not	H3	B	\bstatic\b
+corpus/matter_sector_paper.tex	P14_odd_D_is_pair_symmetric	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/matter_sector_paper.tex	P14_naming_a_derived_object	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_two_threes_are_not_related_as_covers	H3	B	\bstatic\b
+corpus/matter_sector_paper.tex	P14_the_two_threes_are_not_related_as_covers	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_S3_against_the_wall_content	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_S3_against_the_wall_content	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_lift_fibre_content_is_two_plus_one_and_R_is_the_square_of_the_frame_exchange	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_lift_fibre_content_is_two_plus_one_and_R_is_the_square_of_the_frame_exchange	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_two_plus_one_is_on_the_wrong_three	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_two_plus_one_is_on_the_wrong_three	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_threes_are_exhausted	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_named_reopening_is_walked_and_closes	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_named_reopening_is_walked_and_closes	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_lift_fibre_content_is_two_plus_one_and_R_is_the_square_of_the_frame_exchange	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_lift_fibre_content_is_two_plus_one_and_R_is_the_square_of_the_frame_exchange	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_lifts_own_measure_returns_the_same_three_quarters_so_the_removed_derivation_was_not_the_only_one	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_lifts_own_measure_returns_the_same_three_quarters_so_the_removed_derivation_was_not_the_only_one	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_lift_triple_occupies_one_character_where_the_wall_sector_occupies_four	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_lift_triple_occupies_one_character_where_the_wall_sector_occupies_four	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_lift_triple_is_colourless_by_indexing	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_lift_triple_is_colourless_by_indexing	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_stratifications_two_valued_data_are_one_involution_and_it_is_R	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_stratifications_two_valued_data_are_one_involution_and_it_is_R	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_hexads_hinge_relative_sign_is_the_mass_sign_and_its_three_is_marks_not_modes	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_hexads_hinge_relative_sign_is_the_mass_sign_and_its_three_is_marks_not_modes	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_propagating_three_is_inherited_and_the_pairing_fails_only_at_the_bound_energy	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_propagating_three_is_inherited_and_the_pairing_fails_only_at_the_bound_energy	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_doublet_pairing_on_c50s_member_is_obstructed_by_lambda_and_by_the_twist	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_doublet_pairing_on_c50s_member_is_obstructed_by_lambda_and_by_the_twist	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_compact_faces_four_is_three_plus_one_and_the_singlet_has_nothing_to_carry_it	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_compact_faces_four_is_three_plus_one_and_the_singlet_has_nothing_to_carry_it	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_wall_holonomy_acts_on_the_seat_index_and_the_compact_face_has_no_loops	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_wall_holonomy_acts_on_the_seat_index_and_the_compact_face_has_no_loops	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_shared_four_sphere_twists_itself_and_its_zero_mode_is_a_singlet	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_shared_four_sphere_twists_itself_and_its_zero_mode_is_a_singlet	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_reassignment_three	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_reassignment_three	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_reassignment_three_at_the_hinge	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_reassignment_three_at_the_hinge	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_fixed_axis_is_not_in_the_substrate	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_fixed_axis_is_not_in_the_substrate	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_axis_vantage_is_imaginary_not_absent	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_axis_vantage_is_imaginary_not_absent	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_axis_vantage_is_a_pair	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_axis_vantage_is_a_pair	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_is_there_a_singlet_for_the_axis_pair	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_is_there_a_singlet_for_the_axis_pair	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_the_coincidence_is_forced_by_the_dimension	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_the_coincidence_is_forced_by_the_dimension	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_a_labelling_not_a_gauging	H3	A	timelike
+corpus/matter_sector_paper.tex	P14_a_labelling_not_a_gauging	H4	B	cosmic time
+corpus/matter_sector_paper.tex	P14_dual_norm	H3	B	\bstatic\b
+corpus/range_paper.tex	P09_ks_vacuum	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/range_paper.tex	P09_bianchiI_typeI	H3	B	\bstatic\b
+corpus/range_paper.tex	I6_two_objects_one_word_the_optical_shear_is_not_the_ADM_shear	H3	B	\bstatic\b
+corpus/range_paper.tex	P09_ppwave_typeN	H3	B	\bstatic\b
+corpus/range_paper.tex	P09_the_wall_is_not_the_loss_of_symmetry	H3	B	spacelike
+corpus/shadow_of_existence.tex	A53_two_moves	H3	A	timelike
+corpus/slicing_operator.tex	K9_isotropy_obstruction	H3	B	\bstatic\b
+corpus/slicing_operator.tex	P08_E1_cosmology	H3	A	timelike
+corpus/slicing_operator.tex	P08_synchronous_horosphere	H3	A	timelike
+corpus/slicing_operator.tex	P08_the_second_ruling_reading_does_not_extend_to_the_collapse_face	H2	B	double root
+corpus/slicing_operator.tex	P08_the_second_ruling_reading_does_not_extend_to_the_collapse_face	H3	B	spacelike
+corpus/slicing_operator.tex	P08_trichotomy	H3	A	timelike
+corpus/slicing_operator.tex	P08_trichotomy	H3	B	spacelike
+corpus/slicing_operator.tex	P08_trichotomy	H2	A	non-degenerate
+corpus/slicing_operator.tex	P08_trichotomy	H3	A	timelike
+corpus/slicing_operator.tex	order3_bridge	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/slicing_operator.tex	P08_nariai_signed_roots	H2	B	(?<!non-)(?<!non)\bdegenerate
+corpus/slicing_operator.tex	P08_nariai_signed_roots	H3	B	\bstatic\b
+corpus/slicing_operator.tex	P08_nariai_signed_roots	H4	B	cosmic time

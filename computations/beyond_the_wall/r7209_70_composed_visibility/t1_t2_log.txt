@@ -1,0 +1,9 @@
+== T1
+  d7b1dd03 corpus/CR_framework.tex  receipt=receipts/P07_CR_framework/P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py
+    site paragraph (3329 chars) mentions 'event horizon': False; flags: []
+    site paragraph (1974 chars) mentions 'event horizon': True; flags: []
+  d7b1dd03 corpus/CR_cosmology.tex  receipt=receipts/P07_CR_framework/P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py
+    site paragraph (4669 chars) mentions 'event horizon': False; flags: []
+== T2
+  6fd00881 corpus/CR_framework.tex  receipt=receipts/P07_CR_framework/P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature.py
+    site paragraph (2572 chars) mentions 'event horizon': False; flags: [('H4', 'B', ['cosmic time'])]

@@ -1,0 +1,4 @@
+  seed PASS: event horizon, receipt silent: got [('H1', 'A')] want [('H1', 'A')]
+  seed PASS: event horizon, receipt names alternative: got [] want []
+  seed PASS: non-degenerate is not degenerate: got [('H2', 'A')] want [('H2', 'A')]
+  seed PASS: no lexicon term: got [] want []
