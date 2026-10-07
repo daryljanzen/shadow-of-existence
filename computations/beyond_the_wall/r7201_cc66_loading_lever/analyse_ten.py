@@ -100,13 +100,21 @@ for arm in ('cr', 'lcdm'):
         print(f"      {arm:5s} {v:>6s} {lA:10.3f} {ph:+10.5f} {al:+10.5f}")
     CURVE[arm] = rows
 
-print("\n  ==== the driving lever: base MINUS nodrive, same configuration ====")
-print(f"      {'arm':5s} {'d_phi':>10s} {'d_alt':>10s}   (control's banked pair: +0.126 / -0.0247)")
+# ⛔ CONVENTION, STATED BECAUSE GETTING IT WRONG INVERTS THE CONCLUSION.  cc66.156 formed the
+#    control's driving difference as OFF MINUS ON (`_dphi = _lc_off[0] - _lc_on[0]`), and its
+#    +0.126 / -0.0247 are in THAT convention: the change on REMOVING the driving.  This script
+#    originally computed base MINUS nodrive -- ON minus OFF, the opposite -- and printed the
+#    control's numbers beside it as though comparable.  Same physics, inverted sign, and the two
+#    arms would have read as opposing when they agree.  Matched to the receipt's convention here.
+print("\n  ==== the driving lever: NODRIVE MINUS base (cc66.156's convention: the change on")
+print("       REMOVING the driving), same configuration ====")
+print(f"      {'arm':5s} {'d_phi':>10s} {'d_alt':>10s}   (control's banked pair, same convention: "
+      f"+0.126 / -0.0247)")
 DRV = {}
 for arm in ('cr', 'lcdm'):
     if f'{arm}_base' in SER and f'{arm}_nodrive' in SER:
-        dp = SER[f'{arm}_base'][0] - SER[f'{arm}_nodrive'][0]
-        da = SER[f'{arm}_base'][1] - SER[f'{arm}_nodrive'][1]
+        dp = SER[f'{arm}_nodrive'][0] - SER[f'{arm}_base'][0]
+        da = SER[f'{arm}_nodrive'][1] - SER[f'{arm}_base'][1]
         DRV[arm] = (dp, da)
         print(f"      {arm:5s} {dp:+10.5f} {da:+10.5f}")
 
@@ -123,10 +131,14 @@ for arm in ('cr', 'lcdm'):
 
 print("\n  ==== do the signs separate the two carriers on the CR arm? ====")
 if 'cr' in DRV and 'cr' in LOAD:
-    dp, da = DRV['cr']
+    # ⌗ DRV is the change on REMOVING the driving; LOAD is the change on INCREASING the loading.
+    #    Comparing them as printed would compare "less driving" against "more loading".  Negate
+    #    DRV so both read as MORE of the thing, which is the only comparison that means anything.
+    dp, da = (-DRV['cr'][0], -DRV['cr'][1])
     lp, la = LOAD['cr']
-    print(f"      driving   d_phi {dp:+.5f}   d_alt {da:+.5f}")
-    print(f"      loading   d_phi {lp:+.5f}   d_alt {la:+.5f}")
+    print("      both rendered as MORE of the carrier (driving negated from its removal sense)")
+    print(f"      more driving   d_phi {dp:+.5f}   d_alt {da:+.5f}")
+    print(f"      more loading   d_phi {lp:+.5f}   d_alt {la:+.5f}")
     sep = (np.sign(dp) != np.sign(lp)) or (np.sign(da) != np.sign(la))
     both = (np.sign(dp) != np.sign(lp)) and (np.sign(da) != np.sign(la))
     print(f"      => opposite on at least one component: {sep};  on BOTH: {both}")
