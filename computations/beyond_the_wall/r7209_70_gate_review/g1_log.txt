@@ -1,0 +1,6 @@
+(a) worst lag over 400 first-parent commits of main: {'cc66': (24, '97636d38'), '60': (8, '034f1d79'), '70': (20, '3a946076'), '69': (8, '1c86bf72')}
+(b) at HEAD -- newest revision in a reply HEADING vs ANYWHERE in the reply file:
+   cc66: order 7209; reply heading 7201; anywhere 7201
+   60: order 7220; reply heading 7218; anywhere 7220   <- closed by a MENTION, not a reply
+   70: order 7209; reply heading 7209; anywhere 7209
+   69: order 7209; reply heading 7201; anywhere 7201

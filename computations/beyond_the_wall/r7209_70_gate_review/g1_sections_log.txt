@@ -1,0 +1,14 @@
+worst over 400 commits -- (revision lag, at), (unanswered sections, at):
+   cc66: (24, '97636d38')  (5, '97636d38')
+   60: (8, '034f1d79')  (3, '02239b84')
+   70: (20, '3a946076')  (6, '3a946076')
+   69: (8, '1c86bf72')  (4, '1c86bf72')
+the seeded defect, 14ba3b93 (node 70 silent three cycles):
+   cc66: revision lag 0, unanswered sections 0
+   60: revision lag -4, unanswered sections 0
+   70: revision lag 18, unanswered sections 5
+HEAD:
+   cc66: revision lag 8, unanswered sections 4
+   60: revision lag 0, unanswered sections 0
+   70: revision lag 0, unanswered sections 0
+   69: revision lag 8, unanswered sections 4

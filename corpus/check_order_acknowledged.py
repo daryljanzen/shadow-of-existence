@@ -65,6 +65,23 @@ PAIRS = {
 
 #: r7203: the observed worst lag of a seat that was reading its orders.  See the docstring.
 LAG_CEILING = 6
+# ⛭ r7209+70.1 (node 70, taking r7209's offer of a rewrite): THE FAIL IS NOW ON THIS SEAT'S OWN UNANSWERED SECTIONS,
+#   NOT ON A REVISION DIFFERENCE.  At r7209 this gate was RED on `main` over 69 and cc66, two seats r7209's own
+#   board calls working, because the order file's newest revision moves with EVERY section 66 writes, and r7207/r7209
+#   are one BROADCAST, written word for word into all four order files.  A seat with nothing to answer fell 8
+#   behind by 66 writing the board twice.
+#   ⇒ A section whose heading occurs verbatim in ANOTHER seat's order file is a broadcast, not an order to this
+#     seat, and is not counted.  The lag is the number of this seat's OWN sections newer than the newest revision
+#     its reply file names.
+#   ⛭ The ceiling is MEASURED (computations/beyond_the_wall/r7209_70_gate_review/), over main's last 400
+#     first-parent commits:
+#     - since the `fdd0a26f` convention that replies name the revision they answer, reading seats reach at most 1;
+#     - node 70's real silence (seed 14ba3b93) reads 5, and 6 at its worst (3a946076);
+#     - the only other values above 1 (cc66 5, 60 3) predate that convention.
+#     So 3 separates them with margin on both sides.
+#   ⚠ The revision lag is still printed, because it is what a reader sees, but it no longer fails.  It is not a
+#     measure of reading while broadcasts exist.
+SECTION_CEILING = 3
 
 REV = re.compile(r'\br(\d{4,5})\b')
 
@@ -88,6 +105,17 @@ def newest_order(text):
     return best
 
 
+def own_unanswered(text, others, ack):
+    """this seat's own dated sections -- headings not occurring verbatim in another seat's order file -- newer than ack"""
+    n = 0
+    for line in text.split('\n'):
+        if line.startswith('## ') and line.strip() not in others:
+            revs = [int(m.group(1)) for m in REV.finditer(line)]
+            if revs and max(revs) > ack:
+                n += 1
+    return n
+
+
 def newest_ack(text):
     ns = [int(m.group(1)) for m in REV.finditer(text)]
     return max(ns) if ns else None
@@ -96,10 +124,11 @@ def newest_ack(text):
 def main():
     print()
     print('  ORDER ACKNOWLEDGEMENT -- is any order sitting unread?')
-    print(f'    ceiling: {LAG_CEILING} revisions, the observed worst of a seat that was reading')
+    print(f'    ceiling: {SECTION_CEILING} of a seat\'s OWN order sections unanswered (broadcasts excluded), measured r7209+70.1')
     print()
 
     absent, over, rows = [], [], []
+    texts = {s: read(of) for s, (of, _rf) in PAIRS.items()}
     for seat, (of, rf) in sorted(PAIRS.items()):
         o, r = read(of), read(rf)
         if o is None:
@@ -116,13 +145,15 @@ def main():
             absent.append(f'{seat}: {rf} names no revision at all')
             continue
         gap = no - na
-        rows.append((seat, no, na, gap))
-        if gap > LAG_CEILING:
-            over.append((seat, no, na, gap))
+        others = {l.strip() for s2, x in texts.items() if s2 != seat and x for l in x.split('\n') if l.startswith('## ')}
+        own = own_unanswered(o, others, na)
+        rows.append((seat, no, na, gap, own))
+        if own > SECTION_CEILING:
+            over.append((seat, no, na, own))
 
-    for seat, no, na, gap in rows:
-        mark = '⛔' if gap > LAG_CEILING else '  '
-        print(f'    {mark} {seat:5} order r{no}  acknowledged r{na}  lag {gap}')
+    for seat, no, na, gap, own in rows:
+        mark = '⛔' if own > SECTION_CEILING else '  '
+        print(f'    {mark} {seat:5} order r{no}  acknowledged r{na}  revision lag {gap}  own unanswered section(s) {own}')
     print()
 
     if absent:
@@ -136,8 +167,8 @@ def main():
     if over:
         print(f'  ⛔ {len(over)} ORDER(S) SITTING UNREAD:')
         for seat, no, na, gap in over:
-            print(f'    [FAIL] {seat} is {gap} revisions behind -- order at r{no}, '
-                  f'last acknowledged r{na}')
+            print(f'    [FAIL] {seat} has {gap} of its own order section(s) unanswered -- newest order r{no}, '
+                  f'last acknowledged r{na} (ceiling {SECTION_CEILING}; broadcasts are not counted)')
         print('     ⌗ THE REMEDY IS NOT A REMINDER.  Three were written to node 70 and none was')
         print('       read, because a seat that is not reading its orders is not reading the')
         print('       reminder either.  Either the seat is woken by something other than its own')

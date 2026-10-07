@@ -1,0 +1,22 @@
+G2 leaked control sequences / entity residue in page text: 2 in 2 page(s)
+   paper_P17.html: 1   e.g. ...throat protocol already runs on, read one dimension up. \section{The Λ -completed vacuum as the universa...
+   paper_P5.html: 1   e.g. ...y the radius at which the areal acceleration changes sign. \end{quote} The two statements are of differ...
+G3 P1   source display envs    8   page .eq    8  .eqwrap    1
+G3 P2   source display envs   27   page .eq   27  .eqwrap    6
+G3 P3   source display envs   41   page .eq   41  .eqwrap   15
+G3 P4   source display envs    4   page .eq    4  .eqwrap    4
+G3 P5   source display envs   14   page .eq   14  .eqwrap    5
+G3 P6   source display envs    1   page .eq    1  .eqwrap    0
+G3 P7   source display envs   26   page .eq   22  .eqwrap    8   <- page carries fewer
+G3 P8   source display envs   23   page .eq   23  .eqwrap   11
+G3 P9   source display envs    8   page .eq    8  .eqwrap    2
+G3 P10  source display envs   16   page .eq   16  .eqwrap   16
+G3 P11  source display envs   14   page .eq   14  .eqwrap   12
+G3 P12  source display envs    5   page .eq    5  .eqwrap    2
+G3 P13  source display envs    2   page .eq    2  .eqwrap    0
+G3 P14  source display envs    7   page .eq    7  .eqwrap    5
+G3 P15  source display envs   19   page .eq   19  .eqwrap   19
+G3 P16  source display envs    3   page .eq    3  .eqwrap    2
+G3 P17  source display envs    6   page .eq    6  .eqwrap    6
+G3 P18  source display envs    4   page .eq    4  .eqwrap    4
+G3 papers whose page carries fewer display blocks than the source: ['P7']

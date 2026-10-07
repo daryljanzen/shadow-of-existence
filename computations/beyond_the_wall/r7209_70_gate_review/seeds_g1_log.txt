@@ -1,0 +1,5 @@
+S1 the real defect, 14ba3b93: rc 1 ['⛔ 70    order r7201  acknowledged r7183  revision lag 18  own unanswered section(s) 5', '⛔ 69: FOR_66_FROM_69.md is not in the tree']
+S0 HEAD: rc 0 []
+S2 four own sections to 69: rc 1 ['⛔ 69    order r7217  acknowledged r7201  revision lag 16  own unanswered section(s) 5', '[FAIL] 69 has 5 of its own order section(s) unanswered -- newest order r7217, last acknowledged r7201 (ceiling 3; broadcasts are not counted)']
+S3 four broadcasts to all four: rc 0 []
+SEEDS: HELD
