@@ -11,10 +11,21 @@ SPACING DRIFTS, WHICH IS A FOURTH DEGREE OF FREEDOM THE THREE PARAMETERS CANNOT 
   `$10^{-5}$` grid at three values of `$a$`.  *So a comb with position, spacing and alternation is
   exactly what is being fitted, and a failure below is the model's and not the algebra's.*
 
-  ⓶ ⛔ ** IT FITS THE DRIVING-OFF SPECTRA AND MISSES EVERY DRIVING-ON ONE. **  *Both `NODRIVE`
-  spectra recover `$\\ell_A$` to `$0.3$` per cent.  Every driving-ON spectrum comes back
-  `$19$`--`$23$` per cent HIGH with `$\\chi^{2}$` twenty times the `NODRIVE` case.  **So it does not
-  reproduce the directions `cc66.158` measured, and by `r7213`'s own terms that ends it.***
+  ⓶ ⛔ ** IT RECOVERS THREE SPECTRA OF SIX AND MISSES THREE, AND IN EACH DRIVING PAIR IT MISSES
+  EXACTLY ONE MEMBER. **  *Both `NODRIVE` spectra come back inside `$0.11$` per cent, and so does
+  the driving-ON `cr_rb0.5` at `$0.27$`.  `cr_base`, `lcdm_base` and `cr_rb1.5` come back
+  `$18$`--`$19$` per cent HIGH.  **Since `$\\phi$` is referred to the FITTED `$\\ell_A$`, a pair
+  whose two members disagree about the spacing by `$18$` per cent cannot be differenced at all** --
+  so `cc66.158`'s directions are not reproduced badly, they are not constructible, and by `r7213`'s
+  own terms that ends it.*
+
+  ⛔⛭ ** AND THE FIRST VERSION OF THIS RECEIPT GOT THAT SPLIT WRONG, BECAUSE THE SEARCH WAS WRONG. **
+  *It used a `$3\\times3$` grid of starts offset from the banked `$\\ell_A$` and reported that every
+  driving-ON spectrum failed.  That grid returns a worse `$\\chi^{2}$` on five of the six spectra --
+  by `$57$` per cent on the driving-off pair -- and on `cr_rb0.5` it lands `$65$` multipoles from the
+  minimum.  **A start grid centred on the answer I expected could not tell me the answer was
+  somewhere else.**  *The starts now span the whole feasible box and every optimum is checked to be
+  interior to it; `fit_narrow` is kept in the file so the defect is visible beside its repair.**
 
   ⓷ ⛭⛭ ** THE REASON IS SPECIFIC: THE GAPS DRIFT. **  *A comb's gaps are
   `$\\ell_A(1\\mp2a)$` -- the high gaps equal each other and the low gaps equal each other.  On
@@ -35,19 +46,20 @@ SPACING DRIFTS, WHICH IS A FOURTH DEGREE OF FREEDOM THE THREE PARAMETERS CANNOT 
   adding it is widening the order, which is `66`'s to do and not this seat's.*
 
   ⚠ ** ONE PITFALL REPORTED BECAUSE I WALKED INTO IT. **  *Given a generic basis -- each harmonic
-  with its own polynomial envelope -- `$\\chi^{2}$` falls to `$5\\times10^{-4}$` and `$\\ell_A$` runs
-  to the search boundary at `$430.000$`.  The comb parameters become UNIDENTIFIED while the fit looks
-  perfect.  **A good `$\\chi^{2}$` from a comb fit is not evidence the comb was found**, and the
-  disciplined basis below -- one envelope, scalar harmonic ratios -- is what makes the numbers above
-  mean anything.*
+  with its own polynomial envelope -- `$\\chi^{2}$` falls by nearly three orders of magnitude and
+  `$\\ell_A$` runs to the edge of the search box at `$430.000$`.  The comb parameters become
+  UNIDENTIFIED while the fit looks perfect.  **A good `$\\chi^{2}$` from a comb fit is not evidence
+  the comb was found**, and the disciplined basis -- one envelope, scalar harmonic ratios -- is what
+  makes the numbers above mean anything.*
 
 ** COMPUTES: the ordered three-parameter comb, profiled over a smooth baseline and one shared
-   envelope with scalar harmonic ratios, multi-start Nelder-Mead, on six likelihood-binned model
-   spectra; the template's maxima verified numerically; the gap pattern decomposed into
+   envelope with scalar harmonic ratios, a coarse multi-start over the whole feasible box
+   refined at its best few, on six likelihood-binned model spectra; the template's maxima
+   verified numerically; the gap pattern decomposed into
    spacing+alternation against spacing+alternation+drift; and the unidentifiability of the generic
    basis exhibited.  *** No new spectra, no refit, and the data is deliberately NOT touched. *** **
 
-STATUS: rc=0 on success.  Run: python3 <this file>   (numpy, scipy; ~3 min)
+STATUS: rc=0 on success.  Run: python3 <this file>   (numpy, scipy; ~6 min)
 """
 import os
 import sys
@@ -58,9 +70,13 @@ from scipy.optimize import minimize
 print(__doc__.split("STATUS:")[0])
 BAR = "=" * 104
 fail = []
+# ⌗ COUNTED, NOT REMEMBERED.  The footer below said `6 of 6` while this file ran eight checks: a
+#   hard-coded count is the same defect as a hard-coded start grid, one revision later.
+ran = []
 
 
 def check(label, ok):
+    ran.append(label)
     print(f"    {'OK  ' if ok else 'FAIL'}  {label}")
     if not ok:
         fail.append(label)
@@ -157,25 +173,60 @@ def chi2(ls, Y, p, generic=False):
     return float(r @ r)
 
 
-# ⛔ THE MULTI-START TIE-BREAK IS NOT A TOLERANCE AND MUST NOT BE DECIDED AT THE LAST BIT.  Caught by
-#    the tolerance perturbation, not by me: on BOTH driving-off spectra all nine starts converge to the
-#    same minimum to `1e-13`, so a bare `r.fun < best.fun` picks the winner on round-off and its truth
-#    value flips between linear-algebra builds.  Requiring a MATERIAL improvement makes the loop order
-#    the tie-break -- deterministic on any build -- and the compared quantities then sit a relative
-#    `1e-9` apart instead of `1e-16`.  *The choice is immaterial to every number here: the two
-#    contending optima differ by `2e-7` in `$\ell_A$` and `1e-8` in the comb parameters.*
+# ⛔⛔ THE SEARCH IS PART OF THE INSTRUMENT, AND MY FIRST VERSION OF IT WAS NOT ADEQUATE.  This receipt
+#    first used a 3x3 grid of starts offset from the banked `l_A`, and every number in `PART B` was
+#    wrong because of it -- not by round-off but by basins: on `cr_rb0.5` that grid returned
+#    `351.961` where the minimum is at `286.841`.  **A start grid centred on the answer you expect
+#    cannot tell you the answer is somewhere else.**  So the starts now span the WHOLE feasible box
+#    in `l_A` and a full period in `$\phi$`, coarsely, and only the best few are refined -- which
+#    makes `the optimum is interior to the box` a property this file CHECKS rather than hopes.
+LBOX = (200.0, 430.0)                       # the box `chi2` enforces; the starts must span it
+L0S = (210., 240., 265., 290., 315., 340., 370., 400., 425.)
+P0S = (-0.45, -0.30, -0.15, 0.0, 0.15, 0.30)                       # a full period in phi
+NREF = 5
+LOOSE = dict(xatol=1e-3, fatol=1e-4, maxiter=4000, maxfev=4000)
+TIGHT = dict(xatol=1e-8, fatol=1e-12, maxiter=60000, maxfev=60000)
+
+# ⛔ AND THE TIE-BREAK IS NOT A TOLERANCE AND MUST NOT BE DECIDED AT THE LAST BIT.  Caught by the
+#    tolerance perturbation, not by me: where several starts converge to the SAME minimum to
+#    `1e-13`, a bare `r.fun < best.fun` picks the winner on round-off and its truth value flips
+#    between linear-algebra builds.  Requiring a MATERIAL improvement makes order the tie-break --
+#    deterministic on any build.  *The choice is immaterial to every number here: the contending
+#    optima differ by `2e-7` in `$\ell_A$`.*
 KEEP = 1e-9
 
 
+def better(old, new):
+    return new if (old is None or new.fun < old.fun - KEEP * max(1.0, abs(old.fun))) else old
+
+
 def fit(ls, Y, lA0, generic=False):
+    """coarse over the whole box, then refine the best NREF.  Returns (result, winning l_A start)."""
+    f = (lambda p: chi2(ls, Y, p, generic))
+    coarse = []
+    for l0 in L0S:
+        for p0 in P0S:
+            r = minimize(f, [l0, p0, 0.015, 0.3, 0.1], method='Nelder-Mead', options=LOOSE)
+            coarse.append((float(r.fun), l0, r.x.copy()))
+    coarse.sort(key=lambda t: t[0])
+    best, bl0 = None, None
+    for _fun, l0, x in coarse[:NREF]:
+        r = minimize(f, x, method='Nelder-Mead', options=TIGHT)
+        if better(best, r) is r:
+            best, bl0 = r, l0
+    return best, bl0
+
+
+def fit_narrow(ls, Y, lA0, generic=False):
+    """EXACTLY the inadequate search this receipt first used, kept so the file carries its own
+       correction: a reader sees that the narrow grid, and not the model, produced the dichotomy
+       the first version of `PART B` reported."""
+    f = (lambda p: chi2(ls, Y, p, generic))
     best = None
     for dl in (-8.0, 0.0, 8.0):
         for dp in (-0.1, 0.0, 0.1):
-            r = minimize(lambda p: chi2(ls, Y, p, generic),
-                         [lA0 + dl, -0.2 + dp, 0.015, 0.3, 0.1], method='Nelder-Mead',
-                         options=dict(xatol=1e-8, fatol=1e-12, maxiter=60000, maxfev=60000))
-            if best is None or r.fun < best.fun - KEEP * max(1.0, abs(best.fun)):
-                best = r
+            best = better(best, minimize(f, [lA0 + dl, -0.2 + dp, 0.015, 0.3, 0.1],
+                                         method='Nelder-Mead', options=TIGHT))
     return best
 
 
@@ -212,31 +263,62 @@ check("Ⓐ①  the template's maxima sit at `$n+a(-1)^{n}$` ** TO SECOND ORDER I
 
 
 # ============================================================ B. the fit
-head("B.  ⓶ ⛔ THE ORDERED THREE-PARAMETER COMB: IT FITS DRIVING-OFF AND MISSES DRIVING-ON")
+head("B.  ⓶ ⛔ THE ORDERED COMB RECOVERS THREE SPECTRA OF SIX AND MISSES THREE -- AND THE SPLIT IS "
+     "NOT THE ONE I FIRST REPORTED")
 
 print(f"      {'spectrum':13s} {'l_A fit':>9s} {'banked':>9s} {'error %':>8s} {'phi':>9s} "
-      f"{'a':>9s} {'chi2':>10s}")
-FIT = {}
+      f"{'a':>9s} {'chi2':>10s} | {'3x3 l_A':>9s} {'3x3 chi2':>10s} {'3x3 worse':>9s}")
+FIT, NAR, INSIDE = {}, {}, {}
 for tag, p in SPECTRA:
     lb, db, lA = binned(p)
     ls, Y = detilt(lb, db)
-    r = fit(ls, Y, lA)
+    r, _l0 = fit(ls, Y, lA)
+    n = fit_narrow(ls, Y, lA)
     FIT[tag] = (r.x[0], r.x[1], r.x[2], r.fun, lA)
+    NAR[tag] = (n.x[0], n.fun)
+    INSIDE[tag] = bool(LBOX[0] + 1.0 < r.x[0] < LBOX[1] - 1.0)
     print(f"      {tag:13s} {r.x[0]:9.3f} {lA:9.3f} {100 * (r.x[0] / lA - 1):+8.2f} {r.x[1]:+9.5f} "
-          f"{r.x[2]:+9.5f} {r.fun:10.4g}")
-_off = [abs(FIT[t][0] / FIT[t][4] - 1) for t in DRIVING_OFF]
-_on = [abs(FIT[t][0] / FIT[t][4] - 1) for t, _ in SPECTRA if t not in DRIVING_OFF]
-_c_off = max(FIT[t][3] for t in DRIVING_OFF)
-_c_on = min(FIT[t][3] for t, _ in SPECTRA if t not in DRIVING_OFF)
-print(f"      ⇒ |l_A error|: driving-off {100 * max(_off):.2f}% at worst, driving-on "
-      f"{100 * min(_on):.1f}% at BEST")
-print(f"      ⇒ chi2: driving-off at worst {_c_off:.1f}, driving-on at best {_c_on:.1f} "
-      f"({_c_on / _c_off:.0f}x)")
-check("Ⓑ①  ** THE FIT RECOVERS `$\\ell_A$` TO UNDER ONE PER CENT ON BOTH DRIVING-OFF SPECTRA AND IS "
-      "WRONG BY MORE THAN TEN PER CENT ON EVERY DRIVING-ON ONE, with `$\\chi^{2}$` an order of "
-      "magnitude worse. **  *`r7213` made recovering `cc66.158`'s model directions the condition for "
-      "going on to the data.  It is not met, so the data is not touched in this receipt*",
-      max(_off) < 0.01 and min(_on) > 0.10 and _c_on > 5 * _c_off)
+          f"{r.x[2]:+9.5f} {r.fun:10.4g} | {n.x[0]:9.3f} {n.fun:10.4g} "
+          f"{100 * (n.fun / r.fun - 1):8.1f}%")
+ERR = {t: abs(FIT[t][0] / FIT[t][4] - 1) for t, _ in SPECTRA}
+REC = [t for t, _ in SPECTRA if ERR[t] < 0.01]
+MISS = [t for t, _ in SPECTRA if ERR[t] > 0.15]
+_nworse = sum(1 for t, _ in SPECTRA if NAR[t][1] > FIT[t][3] * 1.01)
+
+print(f"      ⇒ the 3x3 grid this receipt first used is worse on {_nworse} of 6, by up to "
+      f"{100 * max(NAR[t][1] / FIT[t][3] - 1 for t, _ in SPECTRA):.0f} per cent, and on `cr_rb0.5` "
+      f"it lands {abs(NAR['cr_rb0.5'][0] - FIT['cr_rb0.5'][0]):.0f} multipoles away")
+check("Ⓑ①  ⛔⛭ ** THE DICHOTOMY THE FIRST VERSION OF THIS RECEIPT REPORTED WAS THE SEARCH AND NOT "
+      "THE MODEL. **  *A `$3\\times3$` grid of starts offset from the banked `$\\ell_A$` returns a "
+      "worse `$\\chi^{2}$` on five of the six spectra -- by `$57$` per cent on the driving-off pair "
+      "-- and on `cr_rb0.5` it reports `$351.961$` where the minimum is `$286.841$`.*  ⇒ *The box "
+      "is spanned now and every optimum below is INTERIOR to it, so `the search was adequate` is "
+      "measured here rather than assumed. **This is the defect, and it is mine: a start grid "
+      "centred on the answer I expected could not tell me the answer was elsewhere.**",
+      _nworse >= 5 and all(INSIDE.values()))
+
+print(f"      ⇒ recovered to under 1%: {', '.join(REC)}")
+print(f"      ⇒ missed by over 15%:    {', '.join(MISS)}")
+check("Ⓑ②  ** THE COMB RECOVERS `$\\ell_A$` ON THREE SPECTRA OF SIX -- BOTH DRIVING-OFF ONES AND THE "
+      "DRIVING-ON `cr_rb0.5` -- AND MISSES THE OTHER THREE BY `$18$`--`$20$` PER CENT. **  *So the "
+      "instrument is not blind to a spectrum merely because it carries a driving: it recovers "
+      "`cr_rb0.5` to `$0.27$` per cent at a `$\\chi^{2}$` the inadequate search missed by a quarter.*  "
+      "⇒ *What separates the three it fails is PART C's drift and not the driving, which is where "
+      "this receipt's diagnosis was right and its bound was wrong*",
+      set(REC) == {'cr_nodrive', 'lcdm_nodrive', 'cr_rb0.5'} and len(MISS) == 3)
+
+for _b, _o in (('cr_base', 'cr_nodrive'), ('lcdm_base', 'lcdm_nodrive')):
+    print(f"      ⇒ the {_b.split('_')[0]} driving pair: {_b} off by {100 * ERR[_b]:+.1f}% and {_o} by "
+          f"{100 * ERR[_o]:+.2f}% -- a difference between them is not a driving difference")
+check("Ⓑ③  ⛔ ** AND `r7213`'s VALIDATION BURDEN IS STILL NOT MET, FOR A SHARPER REASON THAN I FIRST "
+      "GAVE. **  *In EACH driving pair the comb misses one member's spacing by `$18$` per cent and "
+      "recovers the other's to `$0.1$`, and `$\\phi$` is defined against the fitted `$\\ell_A$`.  "
+      "**So the two members' phases are not referred to the same comb and no driving difference can "
+      "be formed at all** -- `cc66.158`'s `$0.1929$`/`$1.0390$` separation is not merely "
+      "reproduced badly, it is not constructible from this instrument.*  ⇒ *`r7213` made that "
+      "recovery the condition for going on to the data, so the data is not touched here*",
+      all(ERR[_b] > 0.15 and ERR[_o] < 0.01
+          for _b, _o in (('cr_base', 'cr_nodrive'), ('lcdm_base', 'lcdm_nodrive'))))
 
 
 # ============================================================ C. why: the gaps drift
@@ -279,23 +361,27 @@ head("D.  ⚠ THE PITFALL: A GENERIC BASIS MAKES THE COMB UNIDENTIFIED WHILE LOO
 
 _lb, _db, _lA = binned(os.path.join(GO, 'cr_base.npz'))
 _ls, _Y = detilt(_lb, _db)
-_rg = fit(_ls, _Y, _lA, generic=True)
+_rg, _ = fit(_ls, _Y, _lA, generic=True)
 _d_chi, _d_lA = FIT['cr_base'][3], abs(FIT['cr_base'][0] / _lA - 1)
 _g_lA = abs(_rg.x[0] / _lA - 1)
 print(f"      cr_base, each harmonic given its own polynomial envelope (18 oscillatory columns):")
 print(f"         disciplined basis: l_A {FIT['cr_base'][0]:7.3f} ({100 * _d_lA:+.1f}%), "
       f"chi2 {_d_chi:10.4g}")
-print(f"         generic basis:     l_A {_rg.x[0]:7.3f} ({100 * _g_lA:+.1f}%), chi2 {_rg.fun:10.4g}")
+print(f"         generic basis:     l_A {_rg.x[0]:7.3f} ({100 * _g_lA:+.1f}%), chi2 {_rg.fun:10.4g}"
+      f"{'   -- AT THE BOX EDGE' if _rg.x[0] > LBOX[1] - 1.0 else ''}")
 print(f"         ⇒ chi2 improves {_d_chi / _rg.fun:.0f}x while the answer gets "
       f"{'WORSE' if _g_lA > _d_lA else 'better'} by {100 * (_g_lA - _d_lA):+.1f} points")
-check("Ⓓ①  ** THE GENERIC BASIS IMPROVES `$\\chi^{2}$` BY TWO ORDERS OF MAGNITUDE WHILE MOVING "
-      "`$\\ell_A$` FURTHER FROM ITS BANKED VALUE. **  *So a good `$\\chi^{2}$` from a comb fit is not "
+check("Ⓓ①  ** THE GENERIC BASIS IMPROVES `$\\chi^{2}$` BY NEARLY THREE ORDERS OF MAGNITUDE AND RUNS "
+      "`$\\ell_A$` TO THE EDGE OF THE SEARCH BOX. **  *So a good `$\\chi^{2}$` from a comb fit is not "
       "evidence the comb was found: the extra oscillatory freedom absorbs the spectrum rather than "
       "locating its comb, and every number in `PART B` depends on the basis being disciplined "
-      "instead.*  ⚠ *I first wrote this check as `l_A runs to the search boundary and chi2 goes "
-      "essentially exact`, which is what a LOOSER basis did in my prototype -- not what the basis "
-      "this receipt actually builds does.  The claim is now the one this file measures*",
-      _rg.fun < _d_chi / 50.0 and _g_lA > _d_lA)
+      "instead.*  ⚠ *I have now had this check wrong in BOTH directions, from one cause.  I first "
+      "wrote `runs to the boundary with chi2 essentially exact`, then walked it back to a measured "
+      "`$122\\times$` because that is what the file returned.  **Both readings came from the "
+      "inadequate search: with the box spanned, the boundary behaviour I first described is what "
+      "the receipt's own basis does.**  The lesson is not that I over-claimed and then "
+      "under-claimed -- it is that neither number meant anything while the search was wrong*",
+      _rg.fun < _d_chi / 50.0 and _g_lA > _d_lA and _rg.x[0] > LBOX[1] - 1.0)
 
 
 # ============================================================ E. what follows
@@ -314,10 +400,28 @@ print("     r7211, and both times 66 sustained it.")
 print("  ✔ AND NOTHING IS WITHDRAWN.  cc66.157 and cc66.158 use located peaks with l_A FIXED at its")
 print("     banked value, so the drift never enters their difference statistics as a free")
 print("     parameter -- it is common to both sides of every difference they take.")
-check("Ⓔ①  the driving-off spectra fit the three-parameter comb and the driving-on ones do not, so "
-      "the inadequacy is specific to spectra carrying a driving rather than general.  *That bounds "
-      "the finding and says where a four-parameter comb would first have to be tested*",
-      max(_off) < 0.01 and min(_on) > 0.10)
+_rc = max(GAP[t][0] for t in REC)
+_mc = min(GAP[t][0] for t in MISS)
+print(f"  ⛭ AND WHAT SEPARATES THEM IS PART C's DRIFT, NOT THE DRIVING.  The three spectra the comb")
+print(f"     recovers are the three with the SMALLEST driftless gap residual "
+      f"({', '.join(f'{GAP[t][0]:.2f}' for t in REC)}) and the three it misses are the three")
+print(f"     largest ({', '.join(f'{GAP[t][0]:.2f}' for t in MISS)}) -- a perfect ordering, at "
+      f"{_rc:.2f} against {_mc:.2f}.")
+print(f"  ⚠ AND THAT IS AN ORDERING ON SIX SPECTRA AND NOT A THRESHOLD.  A 3/3 split falling in")
+print(f"     perfect order arises by luck once in twenty times, and the margin is {_mc - _rc:.2f} of")
+_spread = max(GAP[t][0] for t, _ in SPECTRA) - min(GAP[t][0] for t, _ in SPECTRA)
+print(f"     a multipole against a spread of {_spread:.2f}.")
+print("     So it is consistent with the diagnosis and it does not establish where the boundary is.")
+check("Ⓔ①  ⛭ ** THE INADEQUACY IS NOT SPECIFIC TO SPECTRA CARRYING A DRIVING -- IT TRACKS THE DRIFT. "
+      "**  *Every spectrum the comb recovers has a smaller driftless gap residual than every "
+      "spectrum it misses.  **I first bounded this finding by the driving, and that bound was an "
+      "artefact of the narrow search: `cr_rb0.5` carries a driving and is recovered to `$0.27$` "
+      "per cent.**  What the comb cannot do is fit a spectrum whose gaps drift too far for three "
+      "parameters, which is PART C's diagnosis and not a second one.*  ⇒ *Stated as the ordering it "
+      "is: six spectra, a `$3/3$` split, a margin under one multipole -- so it says a "
+      "four-parameter comb should first be tested where the drift is largest, and it does not say "
+      "where the boundary lies*",
+      _rc < _mc)
 
 print()
 print(BAR)
@@ -327,7 +431,8 @@ if fail:
         print(f"      - {q}")
     print(BAR)
     sys.exit(1)
-print("  ✔ 6 of 6 checks pass -- and what they establish is that the ORDERED instrument fails its")
+print(f"  ✔ {len(ran) - len(fail)} of {len(ran)} checks pass -- and what they establish is that the "
+      "ORDERED instrument fails its")
 print("    own validation, for a named reason, with the missing parameter identified.")
 print(BAR)
 sys.exit(0)

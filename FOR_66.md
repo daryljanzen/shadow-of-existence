@@ -10847,3 +10847,94 @@ claim is wrong with it, and that is what I will report.**
 is already in `sec:refit-bound` and you are entitled to know a claim of mine is under test while it is
 under test.*** *The repair above is landed on its own and is complete on its own terms; the globality
 answer follows as its own reply. **Cost: minutes of fitting, no spectra, no refit.***
+
+## ⛔⛔⛔ `r7213+cc66.160` — **CORRECTED BEFORE IT REACHED YOU: `Ⓑ①` AND `Ⓔ①` WERE WRONG, THE SEARCH PRODUCED THEM, AND THE CONCLUSION SURVIVES FOR A SHARPER REASON**
+
+***Read this before you gate `cc66.160`. The reply two sections up reported a tie-break repair and
+said one claim was under test. It failed the test.*** *`cc66.160` has never been on `main` — it
+exists only in `#304` — so this is a correction in place and nothing in the corpus is retracted.*
+
+### ⛔ WHAT WAS WRONG, AND IT WAS THE HEADLINE
+
+*I fitted the comb from a `$3\times3$` grid of starts offset from the banked `$\ell_A$`. That grid
+is **not a search**, and the numbers it returned were basin artefacts:*
+
+| spectrum | banked | what I reported | the actual minimum | the `$3\times3$` penalty |
+|---|---|---|---|---|
+| `cr_base` | `$301.380$` | `$359.481$` `$\chi^{2}\,3715$` | `$357.087$` `$\chi^{2}\,3463$` | `$+7.3\%$` |
+| `lcdm_base` | `$301.375$` | `$359.633$` `$\chi^{2}\,3193$` | `$357.129$` `$\chi^{2}\,3016$` | `$+5.9\%$` |
+| `cr_nodrive` | `$301.380$` | `$300.439$` `$\chi^{2}\,166.6$` | `$301.658$` `$\chi^{2}\,106.0$` | `$+57.1\%$` |
+| `lcdm_nodrive` | `$301.375$` | `$300.479$` `$\chi^{2}\,147.6$` | `$301.706$` `$\chi^{2}\,93.8$` | `$+57.3\%$` |
+| ⛔ `cr_rb0.5` | `$286.060$` | `$351.961$` `$\chi^{2}\,1885$` | `$286.841$` `$\chi^{2}\,1515$` | `$+24.4\%$` |
+| `cr_rb1.5` | `$315.272$` | `$375.956$` `$\chi^{2}\,23569$` | `$375.956$` `$\chi^{2}\,23569$` | `$0.0\%$` |
+
+⇒ ***`cr_rb0.5` carries a driving and the comb recovers its spacing to `$0.27$` per cent.*** *So
+**`Ⓑ①`'s `wrong by more than ten per cent on EVERY driving-on one` was false**, and `Ⓔ①`'s `the
+inadequacy is specific to spectra carrying a driving` was false with it. *I reported a dichotomy that
+my own start grid had manufactured.**
+
+### ✔ WHAT SURVIVES, AND IT IS SHARPER THAN WHAT I FIRST WROTE
+
+- ⓵ ⛔ ***`r7213`'s validation burden still fails, and for a better reason.*** *In **each** driving
+  pair the comb misses one member's spacing by `$18$` per cent and recovers the other's to `$0.1$`.
+  `$\phi$` is referred to the FITTED `$\ell_A$`, so the two members' phases are not referred to the
+  same comb. **`cc66.158`'s `$0.1929$`/`$1.0390$` separation is not reproduced badly — it is not
+  constructible from this instrument at all.** *That is a stronger statement than the one the
+  artefact supported, and it is the one that holds.**
+- ⓶ ⛭ ***`Ⓐ①`, `Ⓒ①` and `Ⓒ②` are untouched.*** *They use located peaks with `$\ell_A$` held at its
+  banked value and never call the fit. The gaps, the drift, the `$33$`--`$87$` per cent alternation
+  bias, the `$-96.6^{\circ}$` identification: all unchanged.*
+- ⓷ ⛭ ***And the replacement for the withdrawn bound is better physics.*** *Every spectrum the comb
+  recovers has a smaller driftless gap residual (`$8.31$`--`$8.62$`) than every spectrum it misses
+  (`$9.58$`--`$11.81$`). **The failure tracks `PART C`'s drift, which was always the diagnosis — I
+  had keyed it to the driving, which was never the mechanism.*** ⚠ *Stated with its limits in the
+  file: six spectra, a `$3/3$` split, margin `$0.96$` of a multipole, one-in-twenty by luck. **An
+  ordering consistent with the diagnosis, not a demonstrated threshold.***
+
+### ⛭⛭⛭ THE CLASS, AND WHY IT IS WORTH MORE TO YOU THAN THE CORRECTION
+
+***Eight checks interrogated the ANSWER. Not one interrogated the SEARCH that produced it.*** *Every
+guard I have built — quote the line that computes it, write the check against the measurement — tests
+whether the conclusion follows from the number. **None of them asks whether the number came from
+looking in the right place.** *And the grid came from my prototype, where I had chosen it to be fast,
+and I carried it into the receipt without ever asking what it was for.**
+
+⌈ ⚠ ***Two consequences I want on the record because they cut against my own habits:***
+
+1. ***The tolerance perturbation found this, and it does not read my claims at all.*** *It re-runs the
+   arithmetic on a different linear-algebra build and asks which comparisons changed their mind. **A
+   gate that ignores what I assert outperformed eight checks that I wrote.** *The tie-break it flagged
+   was immaterial to the physics; diagnosing it is what made me print all nine starts, which is the
+   only reason I saw the basins.**
+2. ⛔ ***And my earlier `self-caught correction` of `Ⓓ①` was worthless.*** *I had claimed the generic
+   basis `runs `$\ell_A$` to the boundary with `$\chi^{2}$` essentially exact`, then walked it back to
+   a measured `$122\times$` and logged that as discipline. **With the box actually spanned it runs to
+   the edge at `$430.000$` with `$\chi^{2}$` improving `$542\times$` — my original claim was right and
+   my correction of it was the artefact.** *So `I checked it and the measurement disagreed` is not a
+   safeguard when the measurement is downstream of a broken search. **That is the first time one of my
+   corrections has been worse than what it replaced, and I would rather you heard it from me.***
+
+### ⌗ WHAT IS IN `#304` NOW
+
+*The search spans the whole feasible `$\ell_A$` box and a full `$\phi$` period, coarsely, refining
+its best five; **`Ⓑ①` asserts every optimum is INTERIOR to the box**, so `the search was adequate` is
+now a checked property. The inadequate grid stays in the file as `fit_narrow` so the defect is
+visible beside its repair. `8` checks (was `6`), all pass, `~6` min — ⌗ *and the footer that said
+`6 of 6` now counts, because a hard-coded count is the same defect as a hard-coded grid one revision
+later.* `INDEX` row rewritten, appendices regenerated, and **your `sec:refit-bound` prose needs no
+change** — it says a parametric comb is what would reach the observed point, which is still true.
+
+⌈ ⛔ ***What I have NOT done: added the fourth parameter.*** *That refusal stands and is now better
+motivated — the drift is what separates the spectra the comb can fit from the ones it cannot.
+**Yours to order.*** *Cost of this correction: no spectra, no refit, about forty minutes of fitting.*
+
+### ⌗ AND ONE THING ON `#304` THAT IS NOT MINE, RECORDED BECAUSE IT WILL REDDEN OTHER SEATS TOO
+
+*`scoped — the plain suite` split on `ea2e71f2`: **green on one twin, red on the other, same SHA.**
+`328 pass, 0 fail, 1 over timeout` — and the receipt that exceeded its `$900$`s budget is
+`P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector`,
+which is not in my diff and passed on the identical commit in the twin. **A wall-clock budget under
+contention, so whoever owns that receipt owns the decision** — it is the `check_order_acknowledged`
+shape again: one slow reader reddening every open PR. *I spent no re-run on it; my own push re-runs
+CI anyway. ⌗ For the record my corrected receipt runs `~6` min against a `$900$`s budget, so it is
+not the one at risk.*
