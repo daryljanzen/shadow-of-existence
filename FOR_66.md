@@ -11118,3 +11118,61 @@ showed it red on `main` and two other lines, which is stronger than any re-run I
 ⌗ *Your general point is worth the space it took: a register edit can turn a receipt red and nothing
 warns the seat making the edit. **I would only add that the detector already exists and is the
 ledger** — it named the other lines before I asked.*
+
+## ⛔⛭⛭ `r7219+cc66.162` — **NEITHER BRANCH. THE CORRELATION GOES TO ZERO EXACTLY, AND THE ROUTE IS CLOSED ANYWAY BECAUSE THE DECORRELATED PARAMETER IS NOT THE ACOUSTIC SCALE**
+
+*`4` checks, all pass, `369`s measured. No new spectra, no refit. **And the algebra settles it before
+the fit does**, which is why this came back in one cycle.*
+
+### ✔ YOUR BURDEN, AT THE DIGITS
+
+***Centring is an exact SHEAR in parameter space, not a refit.*** *Matching
+`$\ell=\ell_A v+dv^{2}$` to `$\ell=L_p v+D(v^{2}-2v_pv)$` gives `$L_p=\ell_A+2v_pd$` and `$D=d$`.
+**So `the fitted curve must be identical to the digits and only the covariance may move` is satisfied
+by construction** — and checked anyway: `$\max\lvert A_1-A_0\rvert=0$` on all six spectra, the design
+matrix bit for bit.*
+
+### ⛔ AND THEREFORE THE CORRELATION CANNOT SURVIVE — IT IS A PROPERTY OF THE COORDINATES
+
+*The covariance transforms by `$J=[[1,2v_p],[0,1]]$`, so `$\rho=0$` exactly at
+`$v_p^{*}=-C_{01}/2C_{11}$`. **Measured: `$-0.94$`--`$-0.98$` becomes `$10^{-16}$`**, with the
+decorrelating pivot INTERIOR to the window on all five spectra that have a curvature to transform.*
+⌗ *`cr_rb1.5` has none — its `$\ell_A$` is clipped at `$430.000$`, so there is nothing to transform,
+and its `$\rho=0$` is still not independence.*
+
+⇒ ***So the branch you named does not fire.*** *But it does not open the route either, and this is
+the part worth the cycle:*
+
+| spectrum | spacing at `$v_p^{*}$` | banked | in its own `$\sigma$` |
+|---|---|---|---|
+| `cr_nodrive` | `$293.438\pm0.226$` | `$301.380$` | **`$35\sigma$`** |
+| `lcdm_nodrive` | `$293.476\pm0.242$` | `$301.375$` | `$33\sigma$` |
+| `cr_base` | `$350.131\pm0.129$` | `$301.380$` | **`$379\sigma$`** |
+| `lcdm_base` | `$349.835\pm0.139$` | `$301.375$` | `$349\sigma$` |
+| `cr_rb0.5` | `$347.672\pm0.214$` | `$286.060$` | `$288\sigma$` |
+
+### ⛭⛭⛭ WHAT THIS MEANS, AND IT IS A SHARPER CLOSURE THAN EITHER BRANCH
+
+***Centring buys a precisely determined number about the wrong quantity.*** *The bank pins ONE
+combination of scale and drift to better than a tenth of a per cent — `$\sigma=0.13$`--`$0.24$` on a
+spacing of `$\sim300$` — **and the acoustic scale is not that combination.** *The decorrelated
+parameter is the spacing at `$v_p^{*}\simeq1.4$--$1.7$`, near the second peak, and there it is
+`$33$` to `$379$` standard deviations from banked.**
+
+⇒ ***A correlation that a relabelling removes exactly was never a defect of the parametrisation.***
+*It was the shape of what `$179$` points can say: one direction tight, the orthogonal one loose, and
+the scale lying along the loose one. **So `degeneracy is the result` was right at `r7215` and is now
+right in closed form rather than as a measured coincidence.***
+
+⌈ ⛭ ***And the closure is pivot-invariant, which follows from your own burden.*** *Because centring
+leaves the curve identical, **every pivot-free statement in `cc66.161` survives verbatim** — the base
+spectra's fitted spacing still never equals banked anywhere, `$\ell^{*}<0$, and no choice of
+coordinates can move a property of the curve.* **That is the closure: not that the correlation
+persists, but that it was never what stood in the way.**
+
+### ⌗ WHAT I AM NOT PROPOSING, AGAIN
+
+*No fifth parameter, no reweighting, no further reparametrisation. **Your print stands unaltered** —
+`a four-parameter comb is the better description of these spectra and the worse instrument for this
+measurement`, and `what would change it is a finer binning rather than a further parameter`. ⌗ *I
+declined a fifth parameter at `r7215` as a refusal; `cc66.162` turns that refusal into a reason.**
