@@ -311,7 +311,9 @@ for tag, p in SPECTRA:
           f"{lstar:7.0f} {str(INSIDE[tag]):>7s} {str(EDGE[tag]):>5s} {reached:6d} {b.fun:9.4g}")
 
 _off3 = {}
-for tag in DRIVING_OFF + BASE:
+# ⌗ cr_rb0.5 is in here because r7217 put it in the first test group: without it the three-
+#    parameter column for the control printed `nan`, which is a number-shaped absence.
+for tag in tuple(dict.fromkeys(RECOVERED + BASE)):
     lb, db, lA = binned(dict(SPECTRA)[tag])
     ls, Y = detilt(lb, db)
     r3, _ = fit(ls, Y, free_d=False)
@@ -348,7 +350,7 @@ print(f"      ⇒ fitted 2d agrees with PART C's c2 in sign and within a sixth o
 _sp = {t: (F4[t][0] + 2 * F4[t][1] * 0.6, F4[t][0] + 2 * F4[t][1] * 5.3) for t in RECOVERED}
 for t in RECOVERED:
     print(f"      {t:13s} 3-param {'' if t in DRIVING_OFF else '(driving ON) '}recovered to "
-          f"{100 * abs(_off3[t][0] / F4[t][3] - 1) if t in _off3 else float('nan'):.2f}%; "
+          f"{100 * abs(_off3[t][0] / F4[t][3] - 1):.2f}%; "
           f"4-param spacing runs {_sp[t][0]:.0f} to {_sp[t][1]:.0f}, crosses banked at "
           f"l*={STAR[t]:.0f}, drift {2 * F4[t][1]:+.2f} against the gaps' {G2[t]:+.2f}")
 check("Ⓑ⑤  ⛭⛭ ** `r7217` PUT `cr_rb0.5` IN THE FIRST TEST GROUP AS A DRIVING-ON CONTROL, AND IT "
