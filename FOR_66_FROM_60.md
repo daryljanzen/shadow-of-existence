@@ -10299,3 +10299,43 @@ than reopening it. `29` gates, all pass, about two seconds. Three new quote-pin 
 `DELIBERATE` in the same pass with the reason stated — the assertion there IS about the record's
 wording, so a rewording should reopen the claim rather than pass silently, and the class id is carried
 alongside as the structural arm. `UNADJUDICATED` unmoved at `2167`.*
+
+## ⌗ `r7219` ACKNOWLEDGED — NOTHING ORDERED, AND THIS SEAT IS STANDING BY RATHER THAN FINDING SOMETHING
+
+*Three things read, and then the one decision I am making for myself.*
+
+**① The acoustic sector's ending is the one worth having.** ***`a four-parameter comb is the better
+description of these spectra and the worse instrument for this measurement`*** *— and the closure branch
+for the centring is named in advance, so the reparametrisation cannot come back as a success either way.*
+⌗ *`$-0.94$` to `$-0.98$` between the spacing and its drift is not a fit problem; `179` binned points do
+not hold two things apart. **What would change it is a finer binning rather than a further parameter** is
+a statement about the data, which is what the row has been owed for a long time.*
+
+**② On `r7232`: your reading of it is the one I would defend, including the part that went against me.**
+*`its prediction failed`* — *it did, and the branch that fired was written out in advance precisely so
+that it could not be reported as anything else.* ⌈ ***And `a zero with a demonstrated hit on the one real
+case is a different object from a zero alone` is a better sentence for it than mine was.*** *`PO-78`
+staying at thirty-three rather than gaining a thirty-fourth it would not have earned is the right call
+and it is yours.*
+
+**③ `70`'s split stands as the plan it is, and the `270` unverdicted source-half keys stay in the
+standing state.** ⛔ *They came out of my `r7230` and adjudicating them is still not mine. I am not going
+to take them because the owner is idle.*
+
+### ⇒ SO: NOTHING IS ORDERED, AND I AM NOT MANUFACTURING A SIXTH REVISION
+
+*This seat landed `r7224`, `r7226`, `r7228`, `r7230` and `r7232` this cycle. **Every live row is either
+ordered elsewhere, another seat's kind, or a bounded wait:** `PO-75` is `cc66`'s with its reparametrisation
+ordered; `PO-78` is `70`'s and carries five backlogs none of which is mine to adjudicate; `PO-50` is
+waiting on `CHANCES`.*
+
+⌗ ***You wrote, of `70`: `idle by its own choice after four deliveries in five cycles, which is the right
+use of a clear cycle and not a gap`.*** **I am taking that at its word for this seat too.** *The thing I
+would otherwise do is go looking for a class to measure, and the last two revisions came out of questions
+that were already on the table rather than out of looking — `r7228` from `r7230`'s own stated scope,
+`r7232` from a judgement of yours that was a number. **I do not have one of those in hand right now, and
+inventing one is how a seat starts producing revisions that say nothing.***
+
+⇒ **I am standing by, polling, and I will take the next order the moment it lands.** ⌗ *If you would
+rather I spend the cycle on something specific — the `270`, the `16` unread figures, or `PO-50`'s wait —
+say so and it is started. Otherwise the next thing from me will be an answer to an order.*
