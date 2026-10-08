@@ -1,0 +1,12 @@
+  seed PASS: S7's own seed, NEG+ after 'is': D=2 want 2
+  seed PASS: a numeral at the far end: D=20 want 20
+  seed PASS: an already-discriminating literal: D=0 want 0
+
+  442 REVERSAL keys
+  EXTEND-SHORT    80 (18.1%)   single  72  multi   8
+  EXTEND-LONG    176 (39.8%)   single 145  multi  31
+  CLAUSE         186 (42.1%)   single  78  multi 108
+  editable: {'CONSTRUCTED': 283, 'EDITABLE': 159}  (36.0% EDITABLE)
+  median D single 54.0 (n=290), multi 105 (n=83)
+  D > 300: 69
+  D histogram: [('>300', 69), (45, 24), (5, 21), (65, 20), (10, 17), (30, 16), (0, 16), (35, 13), (15, 13), (20, 13), (40, 13), (50, 13)]

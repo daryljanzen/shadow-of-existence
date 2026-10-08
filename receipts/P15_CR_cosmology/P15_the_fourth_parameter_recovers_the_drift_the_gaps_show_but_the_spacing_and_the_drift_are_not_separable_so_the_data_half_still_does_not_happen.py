@@ -104,6 +104,10 @@ SPECTRA = (('cr_base', os.path.join(GO, 'cr_base.npz')),
            ('cr_rb1.5', os.path.join(LEV, 'cr_rb1.5.npz')))
 DRIVING_OFF = ('cr_nodrive', 'lcdm_nodrive')
 BASE = ('cr_base', 'lcdm_base')
+# ⛭ r7217: `cr_rb0.5 is a RECOVERED spectrum and belongs in the first test group -- a driving-on
+#    case where a fourth parameter could only do harm, which makes it the better control`.  It is
+#    in that group here, and it earns the description: see Ⓑ⑤.
+RECOVERED = DRIVING_OFF + ('cr_rb0.5',)
 
 # ⛔ THE SEARCH IS PART OF THE INSTRUMENT -- cc66.160 learned that the hard way, so the starts span
 #    the whole feasible box here too, and `the optimum is interior` is CHECKED and not hoped.  The
@@ -341,6 +345,26 @@ _agree = [t for t, _ in SPECTRA if G2[t] * 2 * F4[t][1] > 0
           and 0.4 < abs(2 * F4[t][1] / G2[t]) < 2.5]
 print(f"      ⇒ fitted 2d agrees with PART C's c2 in sign and within a sixth on: "
       f"{', '.join(_agree)}")
+_sp = {t: (F4[t][0] + 2 * F4[t][1] * 0.6, F4[t][0] + 2 * F4[t][1] * 5.3) for t in RECOVERED}
+for t in RECOVERED:
+    print(f"      {t:13s} 3-param {'' if t in DRIVING_OFF else '(driving ON) '}recovered to "
+          f"{100 * abs(_off3[t][0] / F4[t][3] - 1) if t in _off3 else float('nan'):.2f}%; "
+          f"4-param spacing runs {_sp[t][0]:.0f} to {_sp[t][1]:.0f}, crosses banked at "
+          f"l*={STAR[t]:.0f}, drift {2 * F4[t][1]:+.2f} against the gaps' {G2[t]:+.2f}")
+check("Ⓑ⑤  ⛭⛭ ** `r7217` PUT `cr_rb0.5` IN THE FIRST TEST GROUP AS A DRIVING-ON CONTROL, AND IT "
+      "EARNS THAT: THE HARM THE GROUP EXISTS TO DETECT APPEARS THERE AND IN A QUANTITY THE "
+      "`$\ell_A$` TEST CANNOT SEE. **  *All three recovered spectra keep their spacing crossing "
+      "inside the window, `cr_rb0.5` included -- so on the `$\ell_A$` criterion alone the fourth "
+      "parameter looks harmless on every one of them.  **But `cr_rb0.5`'s fitted drift is "
+      "WRONG-SIGNED and four times too large** (`$-35.20$` against the gaps\' `$+8.29$`), and its "
+      "spacing swings `$380\to222$` across the window where its gaps barely move.*  ⇒ *`66`\'s "
+      "control is the better control precisely because it separates the two tests: a spectrum can "
+      "pass `does the scale survive` and fail `is this the drift the gaps show`*",
+      all(INSIDE[t] for t in RECOVERED)
+      and G2['cr_rb0.5'] * F4['cr_rb0.5'][1] < 0
+      and abs(2 * F4['cr_rb0.5'][1] / G2['cr_rb0.5']) > 2.5)
+
+
 check("Ⓑ③  ⛭⛭ ** THE FITTED DRIFT REPRODUCES PART C's INDEPENDENTLY MEASURED PER-INDEX GAP "
       "GROWTH ON FOUR SPECTRA OF SIX. **  *`$c_2$` comes from located peaks with `$\\ell_A$` held "
       "at its banked value and is in no way an input to this fit, so the agreement is a real check "

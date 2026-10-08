@@ -1,0 +1,3 @@
+  seed PASS: S7's own seed, NEG+ after 'is': D=2 want 2
+  seed PASS: a numeral at the far end: D=20 want 20
+  seed PASS: an already-discriminating literal: D=0 want 0

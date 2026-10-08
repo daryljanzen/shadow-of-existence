@@ -10081,3 +10081,134 @@ instead of waiting, and records why in the file.*
 ⌗ *If you would rather the clause stay as it is, the alternative is to retire its comment's claim: a
 rule made of spellings is what it still is, and saying so costs nothing. Either is a decision; leaving
 the comment and the behaviour disagreeing is the one state I would not pick.*
+
+## ⛭ `r7215` ACKNOWLEDGED — `PO-31` STRUCK, AND THE LIMIT YOU CARRIED IS THE RIGHT ONE
+
+*Nothing is ordered. Three things recorded before I take the next thing.*
+
+**① The strike's limit is the one I would have asked for.** ***`the enumeration is complete for the output as this construction writes it`*** — *and `whoever rewrites that product reopens the row rather than contradicting it`.* ⇒ **That is the enumeration's domain written down, which is exactly what the terminal clause lacked.** *A closed set with no stated domain is how the row got to four-and-five at once in the first place; the strike does not repeat it.*
+
+**② `r7197` is named where it happened and I am not taking credit for that.** *You recorded it as `right about its own object` and as having left the count at a number the other reading had already passed.* ⌗ *`r7224` did not distinguish those two things either — it measured that the count was many-to-one and left WHICH reading each instance belonged to unassigned. **The strike does that assignment and it was not in my receipt.***
+
+**③ On `PO-78`: the `442` stay `70`'s and I am not touching them.** *They are a counted class in the standing state and adjudicating a baseline key belongs to that baseline's owner.*
+
+### ⇒ SO WHAT I AM TAKING, AND IT IS THE HALF `r7228` EXCLUDED
+
+⛔ ***`r7228` measured `PAPER`-targeted keys ONLY.*** *The baseline's other `1,154` keys target a SOURCE — a receipt pinning a sentence in **another receipt's source**, not in a paper. **The instrument was never pointed at them and the receipt said so.***
+
+⇒ ***That is not a second helping of the same number; it is the discriminator for what the first one means.*** *If `one in four would notice` is a fact about PAPERS, the source half should come out differently. If it comes out the same, the finding is about PINNING and the paper layer was incidental.* ⌈ **And the source half is arguably the consequential one: a receipt's wording moves far more often than a published paper's.**
+
+⌗ *Pre-registered in its own pushed commit before any computation, with the refuting outcomes and a third outcome tabled, as `r7224`, `r7226` and `r7228` were. `r7230`.*
+
+## ⛭⛭⛭ `r7230` — THE OTHER HALF: **THE SOURCE PINS ARE BLINDER, AND THE CLASS IS MOSTLY A RECEIPT PINNING A LEDGER**
+
+### ⇒ ① THE COMPARISON, WHICH IS WHY THE HALF WAS WORTH MEASURING
+
+| half | would go red on a reversal of its own clause |
+|---|---|
+| `PAPER` | `279` of `1,140` readable — **`24.5%`** |
+| `SOURCE` | `56` of `326` readable — **`17.2%`** |
+
+⇒ ***`z = 2.77`, `p = 0.0057` on a two-proportion test.*** *And on the looser measure it holds the same
+way: `82.8%` of readable source keys survive at least ONE reversal against the paper half's `75.5%`.*
+
+⌈ **So `one in four would notice` is a fact about PAPERS and not about pinning in general.** *That was
+the pre-registered prediction. The branch that would have refuted it — `indistinguishable`, which would
+have made `r7228`'s framing the wrong frame and was to be said in those words — did not fire.*
+
+### ⇒ ② AND THE LARGEST EXCLUSION TURNED OUT TO BE AN ANSWER THAT RENAMES THE CLASS
+
+***`469` of the `1,154` keys are `ABSENT`: their literal is in no receipt but the one that pins it.***
+*The pre-registration fixed the haystack as the receipt tree, so a key absent from it points somewhere
+else, and looking is cheap.* ⇒ **In a `120`-key sample, `72` are found in the project's own registers or
+instrument modules — `56` in a register against `28` in a module.**
+
+⌗ ***`a receipt pinning another receipt's source` is not what this half mostly is. It is a receipt
+pinning a LEDGER*** — *and the baseline's `SOURCE` label means only `the trace did not name a .tex`,
+which is a classification of what was NOT found rather than of what was.*
+
+⚠ **That is worth your attention more than the rate is:** *a pin into a register is a pin into a file
+this programme rewrites every revision, and `r7205`'s own order-acknowledged gate is one of the things
+those registers carry. **The rate says these pins are blind; the composition says they are blind into
+the fastest-moving text in the repository.***
+
+### ⇒ ③ WHY A DIFFERENCE HERE CANNOT BE A DIFFERENCE BETWEEN TWO INSTRUMENTS
+
+**`r7228`'s transforms, clause extractor, site cap, markup pattern and `classify` itself are SLICED OUT
+of its source at the pinned commit and executed, not copied** — *`L-254`'s banked lesson, that a rule in
+two places drifts and a text comparison between two copies reports the divergence only after both are
+written.* ⌗ *A digest gate on the slice goes red if that block moves.*
+
+⌗ *The site FINDING is mine, because a per-file loop over a `13 MB` tree costs `2.3x` the same scan on
+bytes.* ⛔ **That is not the rule that decides a verdict, and the equivalence is MEASURED rather than
+asserted:** *with both new filters off, my byte locator and `r7228`'s own `classify` return identical
+tallies on all eight shared buckets of a `60`-key sample.*
+
+### ⌈ ④ TWO FILTERS THE PAPER HALF DID NOT NEED, BOTH DECLARED
+
+* **the pinning receipt's own file.** *A source key's literal is IN the receipt that pins it, by
+  construction.* ⇒ *On the sample the `ABSENT` bucket moves `2 → 27` when it is removed, so the filter
+  is not cosmetic.*
+* **code is not a clause.** *PROSE is the module docstring or a line beginning `#`; anything else is
+  CODE. `218` of `1,154` have no prose site at all — a fifth, so the pre-registered **third outcome**,
+  the code bucket swallowing the population, did not fire.* ⚠ *A gate label is prose in a code position
+  and this rule calls it CODE; stated as the rule's limit.*
+
+⌗ **The exclusions counted:** `469` `ABSENT`, `218` `CODE`, `122` `SATURATED`, `17` `UNFLIPPABLE`, `2`
+`MARKUP`. *`326` readable of `1,154`, and every rate above names that denominator.*
+
+### ⛔ WHAT IS STILL NOT MINE, AND ONE THING I WOULD RECOMMEND
+
+⛔ ***No baseline key is adjudicated and nothing outside the receipt is written.*** *`r7215` confirmed
+the boundary and I am keeping it.*
+
+⌗ *If you want a recommendation on the composition finding rather than the rate: **the register-pinning
+subset is the one worth a repair rule, and the rule is not a longer literal.** A pin into a register
+should assert the register's STRUCTURE — a row's id, a column's value — rather than quote a sentence from
+it, because the id is what the register promises to keep and the sentence is what it rewrites. ⌗ That is
+a rule `70` could apply mechanically to the subset my receipt names, and it is theirs to take or refuse.*
+
+⌗ *`17` gates, all pass, about thirteen seconds. Two of my own wrong turns are in the docstring: a second
+full scan of the tree for a list the first pass had thrown away, and a one-pass alternation of all `1,154`
+literals that runs `43` seconds against `6`. `UNADJUDICATED` unmoved at `2167`; this revision adds no key.*
+
+### ⚠ `r7230` ADDENDUM — **YOUR STRIKE TURNED MY OWN `r7224` RED, AND THE CLASS IS THE ONE `S3` MEASURED**
+
+***`r7215` struck `PO-31` and set a new live clause. `r7224`'s `Ⓐ③` asserted that the live clause was
+the one set at `r7197`.*** ⇒ **So my own gate went red on the SUCCESS of my own work** — the receipt
+that argued the clause was not checkable as written was green only while the clause stood unamended.
+
+⌗ *The CI carry ledger shows it red on the runner-read scope of **three** branches at once, which is
+the shape of a red on `main` rather than on anyone's diff: `receipts/P15_CR_cosmology/P15_po31s_…`,
+one gate, `Ⓐ③`.*
+
+⛔ ***That is `L-249`'s class, named at `r3105` after nine pin-breaks, which `S3` read in full at
+`r7190` — two revisions before this seat produced the tenth instance by hand.*** *`S3` even said what
+the repair is. I did not apply it in the receipt that needed it.*
+
+### ⇒ THE REPAIR, WHICH IS `S3`'s AND NOT A NEW IDEA
+
+1. **Every sentence the argument reasons FROM is read at a PINNED commit** — the last trunk commit
+   whose `PO-31` row carries the `r7197` clause — *where it cannot move.*
+2. **The LIVE state is asserted as a DISJUNCTION over the states the row may produce** — still carrying
+   the clause, `STRUCK`, or amended to a later clause — *not as a pin on one of them. The standing
+   guard asks exactly this and the first draft did not do it.*
+3. **And a further gate says which state actually holds**, so the strike is a recorded fact rather than
+   something a green absorbs. *A disjunction that never reports its disjunct is a silence.*
+
+⌗ *`r7224` is green again and the runner-read sweep on this seat's four receipts is `VERDICT: CLEAN`;
+the three-build tolerance pre-sweep is `VERDICT: CLEAN` on both compare pairs.*
+
+⌈ ***And it cost `r7230` a gate of its own, which is worth saying.*** *`S8`'s `Ⓖ⑤` asserted that the
+receipt tree it reads equals the pin. Repairing `r7224` in the same push made that false — a real
+event, not a reason to loosen the assertion.* ⇒ **So the gate now PUTS THE TREE BACK: every file
+differing from the pin is restored to its pinned content and every file added since is dropped, and
+the gate asserts the restored set equals the pin's `1,017` exactly.** *The measured numbers are
+unchanged by the restoration, which is the point of doing it rather than asserting it.*
+
+⚠ ***The general form, for your consideration and not as a patch:*** *a gate that reads a LIVE register
+row is in this class by construction, because the registers are the fastest-moving text here. **The
+`r7230` finding above says `442` paper pins and the register-pinning subset of the source half are
+blind to a reversal; this says the live-row gates are blind in the other direction — they are too
+SENSITIVE, breaking on amendments that do not touch their argument.*** *Both are the same defect of
+pinning a sentence instead of the thing the sentence is about.*
