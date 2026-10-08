@@ -10484,3 +10484,124 @@ order's quoted price**, and the saving is real rather than a trim: it drops the 
 statistic needs least.*
 
 ⌗ *I have not started option 2. Nothing is running. Say the word and it is `$1.33$`h to the answer.*
+
+---
+
+## ✔✔✔ `r7203+cc66.157`/`cc66.158` — **THE THREE RUNS ARE IN, ON COST, AND ALL THREE ITEMS ARE ANSWERED. THE DEFECT DOES NOT RECUR**
+
+*`cr_rb1.5`, `cr_nodrive`, `lcdm_nodrive`: `$1269+1273+2165 = 4707$`s `$= 1.31$`h against the
+`$1.33$`h I costed. **No second stop-and-say is owed.** The mode counts came in at
+`$1452$`/`$1452$`/`$2547$` exactly as the CR/control split predicted — which is the quantity whose
+asymmetry made the FIRST cost wrong, so it is the one I watched.*
+
+### ⓵ ✔ THE DEFECT DOES NOT RECUR — TAKING YOUR ITEM 3 FIRST BECAUSE YOU ASKED FOR IT FIRST
+
+***Both `NODRIVE` spectra carry an integer-spaced series, and a TIGHTER one than the grid bases
+themselves:*** *detected spacing `$0.925$`–`$0.999$` of `$\ell_A$` against the bases' own
+`$0.895$`–`$1.036$`, and the `$0.74$`–`$0.96$` that disqualified the banked driving-ON spectrum.
+Five peaks each.*
+
+⛭ ***And `NODRIVE` leaves `$\ell_A$` BIT-IDENTICAL to the base's*** — `$301.3795962668349$` both —
+*so the pair differs in the driving and in nothing else. That is what a phase comparison needs and
+what the banked pair, being a different vintage, could not promise.*
+
+### ⓶ ⛭⛭ THE NEW CONTROL PAIR REPRODUCES THE BANKED ONE, WHICH RETIRES A CAVEAT RATHER THAN ADDING A RESULT
+
+| | `$\Delta\varphi$` | `$\Delta\mathrm{alt}$` |
+|---|---|---|
+| control, same vintage (new) | `$+0.12651$` | `$-0.02469$` |
+| control, banked (`cc66.156`) | `$+0.126$` | `$-0.0247$` |
+| **CR arm, its own pair** | **`$+0.12589$`** | **`$-0.02428$`** |
+
+***The different-vintage caveat was the reason the ask went from eight runs to ten, and the answer is
+that it cost nothing.*** *The worry was legitimate — it could not have been settled without running
+it — and the CR arm's own signature matches the control's to `$0.5\%$` on the offset. **So the
+driving acts on this statistic as acoustic physics and not as a property of the arm.***
+
+### ⓷ ⇒ WHAT THE PLANE SAYS, AND ITS REACH — YOUR NARROWING CARRIED THROUGH RATHER THAN ARGUED WITH
+
+*On the plane's own discriminant `$\lvert\Delta\mathrm{alt}/\Delta\varphi\rvert$`, all four
+directions, both carriers rendered as MORE of the thing:*
+
+| direction | `$\Delta\varphi$` | `$\Delta\mathrm{alt}$` | `$\lvert\Delta\mathrm{alt}/\Delta\varphi\rvert$` |
+|---|---|---|---|
+| driving (more of it) | `$-0.12589$` | `$+0.02428$` | `$0.1929$` |
+| **loading (more of it)** | **`$+0.01642$`** | **`$+0.01706$`** | **`$1.0390$`** |
+| `WB`, the banked baryon direction | `$-0.02760$` | `$+0.01043$` | `$0.3780$` |
+| `60`'s `r7218` clock error | — | — | `$0.086$`–`$0.173$` |
+
+- ✔ **THE TWO CANDIDATE CARRIERS ARE SEPARATED, BY SIGN AND BY A FACTOR OF FIVE.** *More driving
+  lowers the common offset, more loading raises it, and the discriminant is `$0.19$` against
+  `$1.04$` — `$5.39\times$`.*
+- ⛔ **AND THE DRIVING IS NOT SEPARATED FROM A CLOCK ERROR.** *`$1.11\times$` the clock error's top,
+  inside the spread of `60`'s own three readings. **Exactly as you said it would be, and stated as
+  the limit it is.***
+- ⛭ **SO THE NEGATIVE IS SPECIFIC RATHER THAN GENERAL:** *what the plane separates decisively is the
+  LOADING from both the driving and a clock error — `$6.01\times$` the clock error's top. It fails
+  only to distinguish the driving from a mis-read clock in the driving.*
+
+### ⛭ AND ONE THING `60` COULD NOT HAVE SEEN, WHICH IS WHAT THE THREE RUNS BOUGHT
+
+***`60`'s stand-in for the loading was the banked `WB` direction at `$0.3780$`. The clean lever is at
+`$1.0390$` — `$2.75\times$` further out — and `cc66.157` measures their common-offset responses to
+have OPPOSITE SIGN.*** *So a conclusion drawn on the proxy would have placed the loading nearer the
+clock error than it is **and on the wrong side of zero**. ⌗ That is not a defect in `r7218`: the
+clean lever did not exist when it was filed. It is the return on the runs.*
+
+⌈ ***`cc66.157` is the loading curve you ordered as its own receipt, and it carries a finding the
+curve was not run to get.*** *`$\mathrm{d}\varphi/\mathrm{d}\ln R_b = +0.01642$` against
+`$\mathrm{d}\varphi/\mathrm{d}\ln\omega_b = -0.02760$`. Decomposed, the non-loading part of the `WB`
+response is `$-0.04402$`, **`$2.7\times$` the loading part and of opposite sign.** ⇒ `cc66.155` called
+`$\omega_b$` a contaminated loading lever — "even a discriminating `WB` result would have been two
+effects". **That is too weak: the two effects OPPOSE on this observable, and the one that is not the
+loading is the larger.** *And the curve vindicates insisting on a curve: `$\ell_A$` responds at
+`$8.48$`/`$22.10$`/`$34.26$` per unit `$\ln\mathrm{RBFAC}$` across the three adjacent intervals, a
+factor of `$4.04$` end to end.*
+
+### ⛔ WHAT I AM NOT CLAIMING, AND IT IS ONE STEP
+
+***No carrier is named for the OBSERVED drift, and the reason has changed.*** *Before these runs the
+blocker was that the arm had no readable driving signature. **That is gone.** What is missing is the
+observed residual's own position on this plane, and **nothing in tree measures it.** The statistic
+has been run on model spectra only — `$238$`-point curves with no noise; putting the data on the
+same plane means `$179$` binned points with a covariance, which is a measurement with its own
+validation burden and is not what `r7203` ordered (`no refit, no new statistic`).
+
+⇒ ***So I report what the plane says and do not assert the naming.*** *If you want that last step,
+the ask is: run the de-tilted peak statistic on `nofit_figure_numbers.npz`'s `data` with its
+`sigma`, and place the observed point on this plane with an error bar. **Zero new spectra — it is a
+re-read of a bank that is already in tree.** I have not costed it beyond that because you said no
+new statistic and I am not going to widen the order on my own.*
+
+### ⚠ THREE THINGS I CAUGHT AGAINST MYSELF THIS CYCLE, ALL BEFORE THEY REACHED PROSE
+
+1. ⛔ ***A SIGN-CONVENTION TRAP IN MY OWN SCRIPT THAT WOULD HAVE INVERTED THIS RESULT.***
+   *`analyse_ten.py` formed the driving difference as ON minus OFF while `cc66.156` publishes OFF
+   minus ON, and printed the control's `$+0.126$` beside it as comparable. **The CR arm's
+   `$-0.12589$` sat next to the control's `$+0.126$` and the two arms would have read as OPPOSING
+   when they agree to three figures.** The tell was magnitudes matching while both signs flipped —
+   that is always a convention difference and never a physical one. Fixed, named at the point of
+   subtraction, and the separation test now renders both carriers as MORE of the thing rather than
+   comparing "less driving" against "more loading".*
+2. *I drafted `cc66.157`'s INDEX figures as `$8.47$`/`$22.09$`/`$29.45$` and a ratio of `$3.48$`
+   from memory of the earlier two-point reading. **The receipt computes `$8.48$`/`$22.10$`/`$34.26$`
+   and `$4.04$`.** Checked before writing rather than after.*
+3. *`cc66.157`'s `Ⓔ①` FAILED on my own overstatement: I asserted the tilt's residual sits "an order
+   of magnitude below" the loading's on both components. **It is `$15\%$` on the offset and
+   `$2.9\%$` on the alternation** — not a factor of ten on the offset. The floor is recorded at its
+   measured size, and it means the alternation is the cleaner of the two components.*
+
+⌗ *Those three plus the two from last cycle are five instances of ONE class, all self-reported: **a
+second computation wearing the first one's authority.** Hand-division of rounded values, an `$n=1$`
+extrapolation, a convention mismatch, a figure from memory, and an expected bound asserted instead
+of measured. ⇒ The rule that catches all five is the one I took at `r7201` and it generalises
+further than I first wrote it: **quote the line that computes it — and if nothing computes it, that
+is the work, not a licence to estimate.***
+
+⌗ *Also landed: `cc66.155` went red in the plain suite because running the work it asked for
+falsified its own premise — it asserted `RBFAC` appears in no banked spectrum anywhere, and the five
+spectra that now carry it are the ask's own output. **A check asserting an absence tree-wide has to
+fail the moment the ask it justified succeeds.** Re-scoped to the two nine-run grids, where it is
+still exact at `$0$` of `$36$`, PLUS a new positive pin that every `RBFAC` spectrum in tree sits
+under the ask's own directory — so it now catches that lever being banked anywhere else, which the
+original could not. The same stale claim was in three landed files and all three are corrected.*
