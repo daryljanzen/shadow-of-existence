@@ -14,6 +14,12 @@
     "since": "5d4060b2fa63c3a35bf23add4eddd650e0b85895"
    }
   },
+  "suite": {
+   "receipts/P15_CR_cosmology/P15_po31s_terminal_clause_counts_closures_and_the_label_is_many_to_one_so_the_count_is_four_and_five_at_once_and_the_quantifier_has_no_set.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37781915030",
+    "since": "0a343e411919c9e0270d7e734bbbab2b41168ac1"
+   }
+  },
   "tolerance": {
    "receipts/P15_CR_cosmology/P15_the_runtime_tail_in_r7170_is_not_localised_to_a_call_so_the_free_reduction_lands_and_the_pre_registered_fix_does_not_and_the_margin_to_the_cap_is_the_gates_to_set.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37727486733",
