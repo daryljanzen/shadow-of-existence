@@ -159,24 +159,39 @@ gate(f"Ⓖ④ the two halves are 1489 and 1154 keys of the pinned baseline, whic
      f"({len(PAPER_ROWS)} + {len(SOURCE_ROWS)})",
      len(PAPER_ROWS) == 1489 and len(SOURCE_ROWS) == 1154)
 
-# ⛭ THE HAYSTACK IS THE RECEIPT TREE, read from the working tree rather than through 1,017 `git show`
-#   calls -- and the equality with the pin is ASSERTED rather than assumed.
-# ⌗ scoped to the `.py` sources, which ARE the haystack: this revision's own INDEX row edits
-#   `receipts/INDEX.md`, and an index row is not a source this measurement reads.
+# ⛭⛭ THE HAYSTACK IS THE RECEIPT TREE, read from the working tree rather than through a thousand
+#    `git show` calls -- and then PUT BACK to the pin's state for any file that differs, so the
+#    population is the pin's as a FACT and not as a hope.
+#    ⌗ The first draft only ASSERTED that the tree matched the pin and went red the moment this push
+#      also repaired another receipt -- which is a real event, not a reason to widen the assertion.
 _diff = [l for l in _run('git', 'diff', '--name-only', PIN, '--', 'receipts/').split('\n')
          if l.endswith('.py')]
 SELF = os.path.relpath(os.path.abspath(__file__), ROOT)
-print(f"    receipts differing from the pin: {_diff or 'none'}")
-gate(f"Ⓖ⑤ the receipt tree this reads differs from the pin by THIS FILE ALONE -- and it is untracked "
-     f"until this lands, so the tracked diff is empty -- which makes the population the pin's "
-     f"({len(_diff)} tracked source(s) differ)", set(_diff) <= {SELF})
-
 SRC = {}
 for dirpath, _dirs, names in os.walk(os.path.join(ROOT, 'receipts')):
     for n in sorted(names):
         if n.endswith('.py'):
-            p = os.path.relpath(os.path.join(dirpath, n), ROOT)
-            SRC[p] = open(os.path.join(ROOT, p), encoding='utf-8', errors='replace').read()
+            q = os.path.relpath(os.path.join(dirpath, n), ROOT)
+            SRC[q] = open(os.path.join(ROOT, q), encoding='utf-8', errors='replace').read()
+_PINNED = {l for l in _run('git', 'ls-tree', '-r', PIN, '--name-only', '--', 'receipts/').split('\n')
+           if l.endswith('.py')}
+_restored, _dropped = [], []
+for q in sorted(set(_diff) | (set(SRC) - _PINNED)):
+    if q in _PINNED:
+        SRC[q] = _at(PIN, q)
+        _restored.append(q)
+    else:
+        SRC.pop(q, None)
+        _dropped.append(q)
+print(f"    tracked sources differing from the pin: {_diff or 'none'}")
+print(f"    restored to the pin's content: {len(_restored)}   dropped as added since: {len(_dropped)}")
+gate(f"Ⓖ⑤ the haystack IS the pin's receipt tree, not merely asserted to be -- {len(_restored)} "
+     f"differing file(s) put back to their pinned content and {len(_dropped)} added since the pin "
+     f"dropped, leaving {len(SRC)} sources against the pin's {len(_PINNED)}",
+     set(SRC) == _PINNED and all(SRC[q] == _at(PIN, q) for q in _restored))
+gate(f"Ⓖ⑤ᵇ and this receipt is one of the dropped, because a receipt has no business inside the "
+     f"population it measures ({SELF in _dropped})", SELF in _dropped)
+
 TEX = {p: _at(PIN, f'corpus/{p}.tex') for p in PAPERS}
 print(f"    receipt sources       {len(SRC)}  ({sum(len(v) for v in SRC.values()):,} characters)")
 print(f"    paper bodies          {len(TEX)}  ({sum(len(v) for v in TEX.values()):,} characters)")

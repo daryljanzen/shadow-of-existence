@@ -60,10 +60,22 @@ the gating seat's.*
    row is offered. *** **
 
 STATUS: rc=0 on success.  Run: python3 <this file>   (stdlib only; ~1 s)
+
+⚠ ** REPAIRED AFTER `r7215` STRUCK THE ROW, AND THE REPAIR IS THE FINDING'S OWN CLASS COMING HOME. **
+*`Ⓐ③` pinned the LIVE clause marker to `r7197` --- the status of a sentence the row was asking to
+change --- and `r7215` struck `PO-31` on `r7226`'s enumeration and set a new clause.* ⇒ ***So this
+receipt's own gate went RED on the SUCCESS OF ITS OWN WORK: the class `L-249` named at `r3105`, which
+`S3` read in full two revisions before this, instanced by this seat's own hand.*** **The repair is
+`L-249`'s: every sentence the argument reasons FROM is now read at a PINNED commit where it cannot
+move, and the LIVE state is asserted as a DISJUNCTION over the states the row may be in --- still
+carrying the clause, struck, or amended to a later one --- rather than as a pin on one of them.**
+⌗ *`Ⓐ⑤` then asserts which of those states actually holds, so the strike is recorded as a fact
+rather than absorbed into a green.*
 """
 import hashlib
 import os
 import re
+import subprocess
 import sys
 
 print(__doc__.split("** COMPUTES:")[0].rstrip())
@@ -88,13 +100,35 @@ if not os.path.exists(REG):
     sys.exit(1)
 REGBYTES = open(REG, 'rb').read()
 REGHASH = hashlib.sha256(REGBYTES).hexdigest()
-RAW = REGBYTES.decode('utf-8')
+LIVE_RAW = REGBYTES.decode('utf-8')
 
-# the row is ONE line of the register; it is located by its id and not by a line number, because a
-# line number is a fact about today's file and the id is a fact about the row.
-ROWS = [l for l in RAW.split('\n') if '**PO-31**' in l or re.search(r'\|\s*`?PO-31`?\s*\|', l)]
-ROW = max(ROWS, key=len) if ROWS else ''
+# ⛭⛭⛭ REPAIRED AFTER `r7215` STRUCK THE ROW, AND THE REPAIR IS `L-249`'s.
+#    *** This receipt's `Ⓐ③` pinned the LIVE clause marker to `r7197` --- the status of a sentence the
+#    row was asking to change --- and `r7215` struck `PO-31` on `r7226`'s enumeration and set a new
+#    clause.  So the gate went RED on the SUCCESS OF ITS OWN WORK: the ninth instance of the class
+#    `L-249` named at `r3105`, produced by this seat's own hand TWO REVISIONS AFTER `S3` measured that
+#    class in full. ***
+#    ⇒ The repair, which is the one `S3` and `S5` both recorded: ** every sentence the argument reasons
+#      FROM is read at a PINNED commit, where it cannot move; and the LIVE state is asserted separately
+#      as a DISJUNCTION over the states the row may be in, not as a pin on one of them. **
+#    ⌗ The pin is the last trunk commit whose `PO-31` row carries the `r7197` clause --- the trunk this
+#      receipt was derived against, immediately before the strike.
+PIN = 'd6ff1b549ac29aacccc63db87b8f29e8df0c0e6f'
+RAW = subprocess.run(['git', 'show', f'{PIN}:THE_REGISTER.md'], cwd=ROOT, capture_output=True,
+                     text=True, check=True).stdout
+
+
+def row_of(raw):
+    """the row is ONE line of the register, located by its id and not by a line number, because a
+    line number is a fact about today's file and the id is a fact about the row."""
+    rows = [l for l in raw.split('\n')
+            if '**PO-31**' in l or re.search(r'\|\s*`?PO-31`?\s*\|', l)]
+    return max(rows, key=len) if rows else ''
+
+
+ROW = row_of(RAW)
 FLAT = ' '.join(ROW.split())
+LIVE_FLAT = ' '.join(row_of(LIVE_RAW).split())
 
 
 def present(s):
@@ -117,8 +151,29 @@ TURN = ("The row stops being a channel hunt and becomes a statement about the in
 for _lab, _s in (("the terminal condition", TERMINAL), ("its count", FOUR),
                  ("the five-channel sentence", FIVE), ("the turn", TURN)):
     gate(f"Ⓐ② {_lab} is present verbatim", present(_s))
-gate("Ⓐ③ and the live clause is the one set at `r7197`, which is the clause this receipt reads",
+gate("Ⓐ③ and the clause this receipt reasons from is the one set at `r7197`, read AT THE PIN where "
+     "it cannot move",
      "THE LIVE CLAUSE (SET `r7197`)" in FLAT or "THE LIVE CLAUSE (SET r7197)" in FLAT)
+
+# ⛭⛭ AND THE LIVE STATE AS A DISJUNCTION OVER THE STATES THE ROW MAY PRODUCE, which is what the
+#    standing guard asks for and what the first draft of this gate did not do.
+_m = re.search(r'THE LIVE CLAUSE \(SET `?r(\d+)', LIVE_FLAT)
+_LIVE = {
+    'still carries the r7197 clause': bool(re.search(r'THE LIVE CLAUSE \(SET `?r7197', LIVE_FLAT)),
+    'STRUCK': LIVE_FLAT.lstrip().startswith('| ~~') or '~~**PO-31**~~' in LIVE_FLAT,
+    'amended to a later clause': bool(_m) and int(_m.group(1)) > 7197,
+}
+for _k, _v in _LIVE.items():
+    print(f"      live row: {_k:32s} {_v}")
+gate("Ⓐ④ ⛭⛭ and the LIVE row is in one of the states this receipt enumerates rather than pinned to "
+     f"one of them -- {', '.join(k for k, v in _LIVE.items() if v) or 'NONE OF THEM'} -- so the "
+     "strike this receipt's own work led to cannot turn this receipt red",
+     any(_LIVE.values()))
+gate("Ⓐ⑤ ⛔ and the finding is recorded rather than smoothed over: the row IS struck and its clause "
+     "IS a later one, so this receipt's first `Ⓐ③` went red on the success of its own work -- the "
+     "class `L-249` named and `S3` measured, instanced by this seat two revisions later",
+     _LIVE['STRUCK'] and _LIVE['amended to a later clause']
+     and not _LIVE['still carries the r7197 clause'])
 
 # ============================================================ B. the count, by a rule
 head("B.  ⛔ THE COUNT THE TERMINAL CLAUSE RESTS ON IS FOUR AND FIVE AT ONCE")

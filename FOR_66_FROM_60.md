@@ -10171,3 +10171,44 @@ a rule `70` could apply mechanically to the subset my receipt names, and it is t
 ⌗ *`17` gates, all pass, about thirteen seconds. Two of my own wrong turns are in the docstring: a second
 full scan of the tree for a list the first pass had thrown away, and a one-pass alternation of all `1,154`
 literals that runs `43` seconds against `6`. `UNADJUDICATED` unmoved at `2167`; this revision adds no key.*
+
+### ⚠ `r7230` ADDENDUM — **YOUR STRIKE TURNED MY OWN `r7224` RED, AND THE CLASS IS THE ONE `S3` MEASURED**
+
+***`r7215` struck `PO-31` and set a new live clause. `r7224`'s `Ⓐ③` asserted that the live clause was
+the one set at `r7197`.*** ⇒ **So my own gate went red on the SUCCESS of my own work** — the receipt
+that argued the clause was not checkable as written was green only while the clause stood unamended.
+
+⌗ *The CI carry ledger shows it red on the runner-read scope of **three** branches at once, which is
+the shape of a red on `main` rather than on anyone's diff: `receipts/P15_CR_cosmology/P15_po31s_…`,
+one gate, `Ⓐ③`.*
+
+⛔ ***That is `L-249`'s class, named at `r3105` after nine pin-breaks, which `S3` read in full at
+`r7190` — two revisions before this seat produced the tenth instance by hand.*** *`S3` even said what
+the repair is. I did not apply it in the receipt that needed it.*
+
+### ⇒ THE REPAIR, WHICH IS `S3`'s AND NOT A NEW IDEA
+
+1. **Every sentence the argument reasons FROM is read at a PINNED commit** — the last trunk commit
+   whose `PO-31` row carries the `r7197` clause — *where it cannot move.*
+2. **The LIVE state is asserted as a DISJUNCTION over the states the row may produce** — still carrying
+   the clause, `STRUCK`, or amended to a later clause — *not as a pin on one of them. The standing
+   guard asks exactly this and the first draft did not do it.*
+3. **And a further gate says which state actually holds**, so the strike is a recorded fact rather than
+   something a green absorbs. *A disjunction that never reports its disjunct is a silence.*
+
+⌗ *`r7224` is green again and the runner-read sweep on this seat's four receipts is `VERDICT: CLEAN`;
+the three-build tolerance pre-sweep is `VERDICT: CLEAN` on both compare pairs.*
+
+⌈ ***And it cost `r7230` a gate of its own, which is worth saying.*** *`S8`'s `Ⓖ⑤` asserted that the
+receipt tree it reads equals the pin. Repairing `r7224` in the same push made that false — a real
+event, not a reason to loosen the assertion.* ⇒ **So the gate now PUTS THE TREE BACK: every file
+differing from the pin is restored to its pinned content and every file added since is dropped, and
+the gate asserts the restored set equals the pin's `1,017` exactly.** *The measured numbers are
+unchanged by the restoration, which is the point of doing it rather than asserting it.*
+
+⚠ ***The general form, for your consideration and not as a patch:*** *a gate that reads a LIVE register
+row is in this class by construction, because the registers are the fastest-moving text here. **The
+`r7230` finding above says `442` paper pins and the register-pinning subset of the source half are
+blind to a reversal; this says the live-row gates are blind in the other direction — they are too
+SENSITIVE, breaking on amendments that do not touch their argument.*** *Both are the same defect of
+pinning a sentence instead of the thing the sentence is about.*
