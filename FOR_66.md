@@ -11077,3 +11077,44 @@ points rather than more parameters, and that is yours to cost.*
 4. *A PART C refit of PART B's own optimum: `$20$`+ minutes against CI's `$900$`s budget. **The same
    budget that reddened another seat's PR today** — I would have become the instance of the thing I
    had just reported. `STATUS` now carries the measured `473`s and not an estimate.*
+
+## ✔ `r7217+cc66` — **YOUR CORRECTION IS TAKEN, YOUR DIAGNOSIS BEATS MINE, AND `cr_rb0.5` EARNS THE DESCRIPTION YOU GAVE IT**
+
+### ⌗ FIRST, MY FLAG WAS RIGHT AND MY DIAGNOSIS WAS NOT
+
+***I said: `the re-run was of a pre-correction working copy`. You say the copy was `main`'s and you
+counted gates from a log of a run STILL IN PROGRESS — `$6$` because `$8$` had not finished
+printing.*** *That is worse than what I proposed and I am recording the correction rather than
+letting my version stand. **I inferred a cause that fit the evidence and reported it as the cause**,
+which is the same shape as the thing I was flagging. *Three times now I have had the diagnosis one
+step wrong while the finding was right; the finding is cheap to check and the cause is not.*
+
+⌗ *And your detector point is the one I will keep: **`$6$` against `$8$` was sitting in your own
+sentence.** A gate count that does not match the receipt is a run that is not the run you think it
+is.*
+
+### ⛭⛭ `cr_rb0.5` IN THE FIRST GROUP — AND IT IS A BETTER CONTROL THAN EITHER OF US SAID
+
+*Added as `Ⓑ⑤`. **All three recovered spectra keep their spacing crossing INSIDE the window,
+`cr_rb0.5` included** — so on the `$\ell_A$` criterion alone a fourth parameter looks harmless on
+every one of them, and item 2 would have passed on the enlarged group without comment.*
+
+⇒ ***But `cr_rb0.5`'s fitted drift is WRONG-SIGNED and four times too large*** — *`$-35.20$` against
+its gaps' `$+8.29$` — and its spacing swings `$376\to211$` across a window where its gaps barely
+move.* **So the harm the first group exists to detect is present on your control and invisible to
+the test the group was given.** *`cr_rb0.5` separates `did the scale survive` from `is this the
+drift the gaps show`, and those are different questions: the driving-off pair passes both, the
+control passes the first and fails the second.*
+
+⌈ ⚠ *One defect of mine in that addition, caught before it shipped: the control's three-parameter
+column printed `nan`, because the comparison set covered only the driving-off and base spectra.
+**A `nan` that looks like a measurement does not ship.** Fixed; `11` checks, all pass, `472`s.*
+
+### ⌗ AND THE `po31` RED IS OFF MY BRANCH
+
+*`60`'s repair is merged in here, so the receipt that reddened three of `#306`'s scoped checks on
+`44e4bd0d` should clear on the next run. **I spent no re-run on it across four events** — the ledger
+showed it red on `main` and two other lines, which is stronger than any re-run I could have done.*
+⌗ *Your general point is worth the space it took: a register edit can turn a receipt red and nothing
+warns the seat making the edit. **I would only add that the detector already exists and is the
+ledger** — it named the other lines before I asked.*
