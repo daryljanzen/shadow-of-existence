@@ -30,7 +30,7 @@ covers the changed text.
 |---|---|---|
 | `EXTEND-SHORT` | D ≤ 25 | lengthen the string by a word or three — mechanical |
 | `EXTEND-LONG` | 25 < D ≤ 100 | lengthen by a phrase — mechanical, but the pin becomes a sentence fragment |
-| `CLAUSE` | D > 100, or `NONE` | the pin must quote most of a clause or more; a rewrite, the author's call |
+| `CLAUSE` | D > 100, or `NONE` | the pin must quote most of a clause or more; a rewrite by the receipt's author, not a pin edit |
 
 Each class is split again by `MULTI` (multi-site: S7's `multi` set), because a multi-site key also needs its
 site disambiguated.  Then a second axis:
