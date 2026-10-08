@@ -9870,3 +9870,70 @@ from what the row happens to mention**, which is the material `r7224` actually r
 - *`PO-50` a bounded wait with this seat's `$R_{\rm ta}=5.23\,r_{200}$` beside the survey's reach:
   nothing owed, and the owed half I asked about at `r7222` — the Local Volume route's own denominator
   definition — I now read as not worth chasing unless you say otherwise, since the row is a wait.*
+
+---
+
+## ⛭⛭⛭ `r7226` — THE ENUMERATION, DERIVED: **TWO MEMBERS, AND YOUR OWN `r6913` IDENTITY IS ONE OF THEM**
+
+*The half `r7224` owed, done as you asked it: **derived from the construction's own structure rather
+than from the history of what has been tried.** Pre-registered first in its own pushed commit.*
+
+### ⇒ THE RULE, WHICH IS NOT A LIST ANYONE CHOSE
+
+*A tilt is `$d\ln P/d\ln k$`. **Write the output as the construction writes it, take the log-derivative,
+and the product becomes a sum: the channels are the TERMS.*** *A term constant in `$k$` is not a
+channel, and a mechanism that modifies one factor is a sub-candidate of that term rather than a term.*
+
+### ⇒ AND IT RETURNS TWO, WITH YOUR OWN IDENTITY AS THE ONE-TERM CASE
+
+*The output is a product of exactly three factors: the measure, the interior's multiplier, the
+progenitor's amplitude.*
+
+| case | `$k$`-dependent terms |
+|---|---|
+| the measure alone | `0` — its log-derivative is the **constant** `3` |
+| `r6913`'s case, amplitude held constant | **`1`** — the transfer's |
+| the construction in full | **`2`** — the transfer's and the amplitude's |
+
+⇒ ***Your `r6913` identity is this decomposition with one factor held constant***, which is exactly
+why it reads as `the whole k-dependence is the transfer's and the constant is the normalisation's`.
+*The split is verified an identity, residue `0`, not an approximation.*
+
+### ⇒ `TWO, AND HERE IS WHY THERE IS NO THIRD` — IN THE CURRENCY YOU ASKED FOR
+
+***It is a definition, not an absence of imagination.*** *The multiplier is defined as what this
+interior multiplies an incoming amplitude BY — your own* `Measured on unit incoming amplitude, so that
+what comes out is the multiplier itself` *— so every action of the interior is inside it. The amplitude
+is the progenitor's data, so everything the progenitor supplies is inside it. The measure is a pure
+power and cannot tilt.* ⛔ **A third term would have to be an action that is neither the interior's nor
+the progenitor's and is not the measure.**
+
+⌗ *And the controls say the rule would SEE one: a `$k$`-dependent measure returns three, a planted
+fourth factor returns three, a product of constants returns none.*
+
+### ⇒ SO ALL FOUR CLOSED CHANNELS ARE SUB-CANDIDATES, AND THE FIFTH THING YOUR LIST NAMES IS A TERM
+
+*Assigned by which object each modifies:* **substrate**, **collapse leg**, **finite duration** *inside
+the multiplier; the* **interior vacuum** *inside the amplitude, being the state the interior acts ON.*
+⇒ ***So the row has been counting sub-candidates of two terms while asking when the count of TERMS is
+complete.*** *`r7224` measured that the count was four and five at once; this says why the count was
+never the question — **the transfer is not a sub-candidate, it IS one of the two terms.***
+
+### ⚠ MY OWN RULE GOT IT WRONG FIRST, IN THE FLATTERING DIRECTION
+
+***The first draft dropped terms equal to ZERO instead of terms CONSTANT in `$k$`, counted the measure's
+`3` as a channel, and returned THREE.*** *Which is precisely the fifth channel this seat went looking
+for at `r7224` — **manufactured out of its own arithmetic.*** *One line, fixed, and recorded in the
+function's own docstring because a near-miss of that shape is worth more in the open than buried.*
+
+### ⌈ AND THE THIRD OUTCOME FIRED WITH THE PREDICTION, WHICH `r7226` WROTE DOWN IN ADVANCE
+
+*On the derived enumeration* ***your row's terminal condition is already decided by what the row
+carries:*** *the transfer's term is measured and runs; the amplitude's term is free, because a classical
+input's slope is the progenitor's.* ⇒ **That is `r6913`'s `requirement on the progenitor`, reached from
+the other side.**
+
+⛔ ***And I am not filing it as a termination.*** *`r7213` restates the row as open, no closure is filed,
+no fifth channel is named, the register is digest-checked unchanged, and the terminal state is yours to
+declare. **If you want it, what I would say is: the row terminates on the enumeration and what remains
+is not a channel hunt but the requirement, which is where `r6913` already put it.***
