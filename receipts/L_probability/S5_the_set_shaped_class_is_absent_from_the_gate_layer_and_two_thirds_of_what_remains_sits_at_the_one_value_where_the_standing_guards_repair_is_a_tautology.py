@@ -610,10 +610,29 @@ gate("Ⓕ① all `14` receipts carrying an EXPOSED site are RUN here, not read: 
 #   edit.  Monotone in the safe direction: as the trunk absorbs this work the set SHRINKS.
 _touched = [l for l in _git('log', '--no-merges', '--name-only', '--format=',
                             'HEAD', '--not', 'origin/main').split('\n') if l]
+# ⛭⛭⛭ r7222 REPAIR, AND IT IS THIS RECEIPT'S OWN CLASS CAUGHT A SECOND TIME -- the first was the
+#   trunk moving at `r7214`, this one is THIS SEAT adding a file.  `mine()` is a frozen list of two
+#   directory prefixes, which is a statement about where this seat has worked SO FAR and not about
+#   authorship.  `r7222` landed this seat's own receipt in `receipts/P03_SdS_slicing/`, a third
+#   directory, and the clause below read this seat's OWN NEW FILE as another seat's receipt -- so
+#   `Ⓕ②` and `Ⓖ③` went red on an ADDITION, not on an edit.
+#   ** A gate whose authorship test is a path list is a gate on a set its own seat can grow. **
+#   ⇒ The repair is NOT to extend the list, which would fail again at the fourth directory.  A path
+#   THIS BRANCH ADDED is this seat's by construction, because the branch is this seat's, so the
+#   addition is subtracted here and only MODIFICATIONS of unowned receipts can trip the clause.
+#   ⌗ The load-bearing claim is untouched: the third clause of `Ⓕ②` still asserts that no
+#   exposed-site receipt appears in this branch's diff at all, added or modified.
+#   Monotone in the safe direction, like the `r7214` repair: as the trunk absorbs the work both sets
+#   shrink.
+_added = {l for l in _git('log', '--no-merges', '--diff-filter=A', '--name-only', '--format=',
+                          'HEAD', '--not', 'origin/main').split('\n') if l}
 _outside = [p for p in _touched
-            if p.startswith('receipts/') and p.endswith('.py') and not mine(p)]
+            if p.startswith('receipts/') and p.endswith('.py') and not mine(p)
+            and p not in _added]
 print(f"      this branch's OWN commits touch: {len(_touched)} path(s), "
-      f"{len(_outside)} of them receipts this seat does not own")
+      f"{len(_outside)} of them MODIFIED receipts this seat does not own; "
+      f"{len([p for p in _added if p.startswith('receipts/')])} receipt(s) ADDED by this branch, "
+      "which are this seat's by construction and are not counted as another seat's")
 
 gate("Ⓕ② and the authorship bound is kept where it actually binds: `16` exposed sites sit in `12` "
      "receipts this seat does not own, and THIS BRANCH'S OWN COMMITS touch NONE of them --- they are "
