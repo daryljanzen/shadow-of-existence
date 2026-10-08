@@ -10024,3 +10024,60 @@ baseline's owner.** What I would say if you want it:
 a seat adds a file; the live state is asserted separately as a disjunction rather than as a value; and
 the pinned baseline is digest-checked byte-identical after the run. `26` gates, all pass, about three
 seconds. `UNADJUDICATED` is unmoved at `2167` — this revision adds no quote-pin key.*
+
+### ⚠ `r7228` ADDENDUM — ROUTED, NOT EDITED: **THE ASSERTION CENSUS'S THIRD CLAUSE NEVER FIRES, AND I TRIPPED IT**
+
+*`r7228`'s first draft ended* `raise SystemExit(1 if _bad else 0)` *— which acts on the outcome — and
+the fast job went RED on the assertion census: the receipt read as carrying* ***NO check at all.***
+
+⌗ **The cause is exactly the thing that gate's own comment warns about.** *`corpus/acting_check.py`'s
+third clause was added because `a rule made of spellings misses the next spelling`, and it asks the
+right question — does a non-zero exit depend on the outcome of a comparison? — but it answers it by
+walking for an `ast.Compare` node.* ⛔ **A truth value written with `not` is not a `Compare`, and a name
+bound by a COMPREHENSION target is not in the assignment table the clause walks.** So:
+
+| form | the rule says |
+|---|---|
+| `_bad = [n for n, ok in CHECKS if not ok]` then `SystemExit(1 if _bad else 0)` | **no check at all** |
+| the same, with `if ok == False` | carries a check |
+
+⇒ ***The verdict turns on the spelling of the truth test and not on whether the exit depends on an
+outcome, which is the clause's own stated question.***
+
+⛔ **AND THE CLAUSE FIRES ON NOTHING IN THIS SEAT'S FAMILY.** *Run it alone over `S1`–`S7`:*
+`acting_exit` *is* `False` **for all seven.** *Every one of them passes the census on the literal
+`raise SystemExit(1)` spelling — the FIRST clause — so the third has been carrying no load here at all.*
+
+### ⇒ THE PATCH, WITH THE RULE'S OWN TWO CONTROLS RUN AGAINST IT
+
+⛔ *Not applied: the rule is shared by `check_receipts` and `lint_assertions`, so a change to it moves
+the census for the whole corpus and that is yours.* ⌗ *`r7228` conforms to the recognised spelling
+instead of waiting, and records why in the file.*
+
+```python
+# in comparison_derived, track names bound by a comprehension target too
+    assigns = []
+    for n in ast.walk(tree):
+        if isinstance(n, (ast.ListComp, ast.SetComp, ast.GeneratorExp, ast.DictComp)):
+            for g in n.generators:
+                for t in ast.walk(g.target):
+                    if isinstance(t, ast.Name):
+                        assigns.append((t.id, g.iter))
+# ... and count a truth value, not only a comparison operator
+                if isinstance(sub, (ast.Compare, ast.BoolOp)) \
+                        or (isinstance(sub, ast.UnaryOp) and isinstance(sub.op, ast.Not)) \
+                        or (isinstance(sub, ast.Name) and sub.id in derived):
+```
+
+**Measured, not proposed on faith:**
+
+* the missed form above is **accepted**;
+* `CONTROL_REAL` is still **accepted** and `CONTROL_HOLLOW` is still **REFUSED** — *the pair the file
+  carries precisely so a future edit runs them, and a rule that takes both is the hole and not the fix*;
+* and over every `receipts/**/*.py`, the count carrying no check is **`0` before and `0` after** ⇒
+  ***the patch cannot lower the census by widening it. It closes the hole for the next spelling and
+  moves nothing that stands today.***
+
+⌗ *If you would rather the clause stay as it is, the alternative is to retire its comment's claim: a
+rule made of spellings is what it still is, and saying so costs nothing. Either is a decision; leaving
+the comment and the behaviour disagreeing is the one state I would not pick.*

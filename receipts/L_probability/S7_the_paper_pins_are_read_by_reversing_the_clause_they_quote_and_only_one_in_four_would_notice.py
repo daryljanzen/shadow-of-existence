@@ -474,4 +474,12 @@ print("""
   one.  No verdict is filed on any receipt and nothing outside this file is written: the reversal
   set is a repair list, routed in the channel, and adjudicating it belongs to the baseline's
   owner.""")
-raise SystemExit(1 if _bad else 0)
+# ⛭⛭ THE EXIT, WRITTEN IN THE IDIOM THE CENSUS'S RULE RECOGNISES -- AND THE FIRST DRAFT WAS NOT.
+#    *It ended `raise SystemExit(1 if _bad else 0)`, which acts on the outcome exactly as the form
+#    below does, and `corpus/acting_check.py` read the file as carrying NO CHECK AT ALL.*  ⇒ ** That
+#    gate's own recorded lesson is that a rule made of SPELLINGS misses the next spelling, and a
+#    conditional expression inside `SystemExit` is the next spelling. **  ⌗ *The rule is shared by
+#    two gates and is not this seat's to change: the blind spot is routed in the channel with its
+#    one-line patch, and this file conforms rather than waiting.*
+if _bad:
+    raise SystemExit(1)
