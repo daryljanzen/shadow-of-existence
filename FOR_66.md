@@ -10780,3 +10780,70 @@ not against the expectation.*
 
 ⌗ *Cost: no spectra, no refit. Compute is a few minutes of fitting. **Nothing to stop and say so
 about on that count.***
+
+## ⛔ `r7213+cc66.160` — **CI CAUGHT A DEFECT SIX OF MY OWN CHECKS COULD NOT SEE: THE FIT'S TIE-BREAK WAS DECIDED AT THE LAST BIT. NO PUBLISHED NUMBER MOVES**
+
+*The receipt went in green on `120` gates. The **tolerance perturbation** — three linear-algebra builds
+of the same tree, compared site by site — then failed it, and it was right to.*
+
+### ⛔ WHAT IT FLAGGED, AND WHY THERE IS NO READING OF IT, ONLY A REPAIR
+
+```
+site 167:31  kind FLIP   err_a 18595.6701718561   err_b 18595.67017185611
+                         tol   18595.670171856116  headroom 1.0  moved 1.0
+```
+
+*That site is `fit()`'s multi-start selector, `r.fun < best.fun`. **A `FLIP` is a comparison that
+PASSES on one build and FAILS on the other**, and the gate's own rule is that `TOLERANCE_JUDGED.json`
+can excuse a `FLAG` and **never** a `FLIP` — so there was nothing to adjudicate here and I did not try.*
+
+⇒ ***The mechanism, measured rather than guessed:*** *on **both** driving-off spectra all nine starts
+converge to the same minimum to `$10^{-13}$`, so `r.fun < best.fun` picks the winner on round-off; and
+on `cr_base` **eight of the nine** land together on one secondary basin at exactly
+`$18595.6701718561$` — the flagged number to every digit. Which of those eight holds `best` changes
+with the build.*
+
+⌗ ***The repair:*** *displacing the incumbent now requires a MATERIAL improvement (relative
+`$10^{-9}$`), which makes loop order the tie-break — deterministic on any build — and puts the
+compared quantities `$10^{-9}$` apart instead of `$10^{-16}$`. **The choice was always immaterial to
+the physics**: the two contending optima differ by `$2\times10^{-7}$` in `$\ell_A$`.*
+
+### ✔ VERIFIED TWICE, AND NOTHING IN PRINT CHANGES
+
+- ⓵ *The receipt re-runs `rc=0`, `6` of `6`, and **the whole table is bit-identical**:
+  `cr_base` `$359.481/-0.17881/3715$`, `cr_nodrive` `$300.439/-0.06051/166.6$`, the gap rows, the
+  `$122\times$`. **So the `INDEX` row, the appendices and your `sec:refit-bound` prose are untouched.***
+- ⓶ *I reproduced CI's own check locally — three builds (`1` thread; `4` threads; `2` threads on
+  `Prescott`), both comparisons — and it is **`CLEAN -- no site flagged`** on the patched tree, where
+  the mechanism above reproduces the flagged value on the unpatched one.*
+
+### ⛭ THE CLASS IS NEW AND WORTH THE SPACE
+
+***All six of my checks interrogate the ANSWER. Not one interrogated the SEARCH that produced it.***
+*A receipt can be right in every number it prints and still contain a decision taken on round-off, and
+no amount of checking the output finds that. **The gate that found it does not read my claims at all —
+it re-runs the arithmetic on a different build and asks which comparisons changed their mind.** *That
+is a different kind of instrument from a check, and it caught something a check structurally cannot.**
+
+### ⚠ AND IT EXPOSED SOMETHING I AM MEASURING NOW AND HAVE NOT YET CONCLUDED — REPORTED BEFORE THE ANSWER BECAUSE IT BEARS ON A CLAIM ALREADY IN PRINT
+
+*Looking at all nine starts showed me the basin structure, and it is not what `Ⓑ①` assumes:*
+
+| spectrum | banked `$\ell_A$` | the fit reports | the OTHER basin eight starts find | its `$\chi^{2}$` |
+|---|---|---|---|---|
+| `cr_base` | `$301.380$` | `$359.481$` | `$293.85$` (`$-2.5\%$`) | `$5.0\times$` worse |
+| `lcdm_base` | `$301.375$` | `$359.633$` | `$293.64$` (`$-2.6\%$`) | `$5.1\times$` worse |
+| `cr_rb0.5` | `$286.060$` | `$351.961$` | `$284.32$` (`$-0.6\%$`) | `$1.30\times$` worse |
+| `cr_rb1.5` | `$315.272$` | `$375.956$` | `$302.97$` (`$-3.9\%$`) | `$7.0\times$` worse |
+
+⇒ ***On every driving-on spectrum exactly ONE of nine starts finds the reported minimum, and it is the
+CORNER of the `$3\times3$` start grid.*** *So `Ⓑ①`'s `$+19$`--`$23$` per cent **rests on a search I have
+not shown to be global**, and on `cr_rb0.5` a basin within `$0.6$` per cent of the banked spacing is
+only `$1.3\times$` worse. **A `$10\times6$` grid covering a full `$\phi$` period is running as I write
+this.** *If it finds anything better near the banked spacing, `Ⓑ①` is wrong, the receipt's headline
+claim is wrong with it, and that is what I will report.**
+
+⌈ ⌗ ***I am telling you this with the question open rather than after settling it, because `cc66.160`
+is already in `sec:refit-bound` and you are entitled to know a claim of mine is under test while it is
+under test.*** *The repair above is landed on its own and is complete on its own terms; the globality
+answer follows as its own reply. **Cost: minutes of fitting, no spectra, no refit.***

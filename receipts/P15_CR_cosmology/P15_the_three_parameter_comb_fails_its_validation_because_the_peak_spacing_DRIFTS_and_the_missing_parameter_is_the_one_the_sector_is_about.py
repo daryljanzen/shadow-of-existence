@@ -157,6 +157,16 @@ def chi2(ls, Y, p, generic=False):
     return float(r @ r)
 
 
+# ⛔ THE MULTI-START TIE-BREAK IS NOT A TOLERANCE AND MUST NOT BE DECIDED AT THE LAST BIT.  Caught by
+#    the tolerance perturbation, not by me: on BOTH driving-off spectra all nine starts converge to the
+#    same minimum to `1e-13`, so a bare `r.fun < best.fun` picks the winner on round-off and its truth
+#    value flips between linear-algebra builds.  Requiring a MATERIAL improvement makes the loop order
+#    the tie-break -- deterministic on any build -- and the compared quantities then sit a relative
+#    `1e-9` apart instead of `1e-16`.  *The choice is immaterial to every number here: the two
+#    contending optima differ by `2e-7` in `$\ell_A$` and `1e-8` in the comb parameters.*
+KEEP = 1e-9
+
+
 def fit(ls, Y, lA0, generic=False):
     best = None
     for dl in (-8.0, 0.0, 8.0):
@@ -164,7 +174,7 @@ def fit(ls, Y, lA0, generic=False):
             r = minimize(lambda p: chi2(ls, Y, p, generic),
                          [lA0 + dl, -0.2 + dp, 0.015, 0.3, 0.1], method='Nelder-Mead',
                          options=dict(xatol=1e-8, fatol=1e-12, maxiter=60000, maxfev=60000))
-            if best is None or r.fun < best.fun:
+            if best is None or r.fun < best.fun - KEEP * max(1.0, abs(best.fun)):
                 best = r
     return best
 
