@@ -10099,3 +10099,75 @@ the comment and the behaviour disagreeing is the one state I would not pick.*
 ⇒ ***That is not a second helping of the same number; it is the discriminator for what the first one means.*** *If `one in four would notice` is a fact about PAPERS, the source half should come out differently. If it comes out the same, the finding is about PINNING and the paper layer was incidental.* ⌈ **And the source half is arguably the consequential one: a receipt's wording moves far more often than a published paper's.**
 
 ⌗ *Pre-registered in its own pushed commit before any computation, with the refuting outcomes and a third outcome tabled, as `r7224`, `r7226` and `r7228` were. `r7230`.*
+
+## ⛭⛭⛭ `r7230` — THE OTHER HALF: **THE SOURCE PINS ARE BLINDER, AND THE CLASS IS MOSTLY A RECEIPT PINNING A LEDGER**
+
+### ⇒ ① THE COMPARISON, WHICH IS WHY THE HALF WAS WORTH MEASURING
+
+| half | would go red on a reversal of its own clause |
+|---|---|
+| `PAPER` | `279` of `1,140` readable — **`24.5%`** |
+| `SOURCE` | `56` of `326` readable — **`17.2%`** |
+
+⇒ ***`z = 2.77`, `p = 0.0057` on a two-proportion test.*** *And on the looser measure it holds the same
+way: `82.8%` of readable source keys survive at least ONE reversal against the paper half's `75.5%`.*
+
+⌈ **So `one in four would notice` is a fact about PAPERS and not about pinning in general.** *That was
+the pre-registered prediction. The branch that would have refuted it — `indistinguishable`, which would
+have made `r7228`'s framing the wrong frame and was to be said in those words — did not fire.*
+
+### ⇒ ② AND THE LARGEST EXCLUSION TURNED OUT TO BE AN ANSWER THAT RENAMES THE CLASS
+
+***`469` of the `1,154` keys are `ABSENT`: their literal is in no receipt but the one that pins it.***
+*The pre-registration fixed the haystack as the receipt tree, so a key absent from it points somewhere
+else, and looking is cheap.* ⇒ **In a `120`-key sample, `72` are found in the project's own registers or
+instrument modules — `56` in a register against `28` in a module.**
+
+⌗ ***`a receipt pinning another receipt's source` is not what this half mostly is. It is a receipt
+pinning a LEDGER*** — *and the baseline's `SOURCE` label means only `the trace did not name a .tex`,
+which is a classification of what was NOT found rather than of what was.*
+
+⚠ **That is worth your attention more than the rate is:** *a pin into a register is a pin into a file
+this programme rewrites every revision, and `r7205`'s own order-acknowledged gate is one of the things
+those registers carry. **The rate says these pins are blind; the composition says they are blind into
+the fastest-moving text in the repository.***
+
+### ⇒ ③ WHY A DIFFERENCE HERE CANNOT BE A DIFFERENCE BETWEEN TWO INSTRUMENTS
+
+**`r7228`'s transforms, clause extractor, site cap, markup pattern and `classify` itself are SLICED OUT
+of its source at the pinned commit and executed, not copied** — *`L-254`'s banked lesson, that a rule in
+two places drifts and a text comparison between two copies reports the divergence only after both are
+written.* ⌗ *A digest gate on the slice goes red if that block moves.*
+
+⌗ *The site FINDING is mine, because a per-file loop over a `13 MB` tree costs `2.3x` the same scan on
+bytes.* ⛔ **That is not the rule that decides a verdict, and the equivalence is MEASURED rather than
+asserted:** *with both new filters off, my byte locator and `r7228`'s own `classify` return identical
+tallies on all eight shared buckets of a `60`-key sample.*
+
+### ⌈ ④ TWO FILTERS THE PAPER HALF DID NOT NEED, BOTH DECLARED
+
+* **the pinning receipt's own file.** *A source key's literal is IN the receipt that pins it, by
+  construction.* ⇒ *On the sample the `ABSENT` bucket moves `2 → 27` when it is removed, so the filter
+  is not cosmetic.*
+* **code is not a clause.** *PROSE is the module docstring or a line beginning `#`; anything else is
+  CODE. `218` of `1,154` have no prose site at all — a fifth, so the pre-registered **third outcome**,
+  the code bucket swallowing the population, did not fire.* ⚠ *A gate label is prose in a code position
+  and this rule calls it CODE; stated as the rule's limit.*
+
+⌗ **The exclusions counted:** `469` `ABSENT`, `218` `CODE`, `122` `SATURATED`, `17` `UNFLIPPABLE`, `2`
+`MARKUP`. *`326` readable of `1,154`, and every rate above names that denominator.*
+
+### ⛔ WHAT IS STILL NOT MINE, AND ONE THING I WOULD RECOMMEND
+
+⛔ ***No baseline key is adjudicated and nothing outside the receipt is written.*** *`r7215` confirmed
+the boundary and I am keeping it.*
+
+⌗ *If you want a recommendation on the composition finding rather than the rate: **the register-pinning
+subset is the one worth a repair rule, and the rule is not a longer literal.** A pin into a register
+should assert the register's STRUCTURE — a row's id, a column's value — rather than quote a sentence from
+it, because the id is what the register promises to keep and the sentence is what it rewrites. ⌗ That is
+a rule `70` could apply mechanically to the subset my receipt names, and it is theirs to take or refuse.*
+
+⌗ *`17` gates, all pass, about thirteen seconds. Two of my own wrong turns are in the docstring: a second
+full scan of the tree for a list the first pass had thrown away, and a one-pass alternation of all `1,154`
+literals that runs `43` seconds against `6`. `UNADJUDICATED` unmoved at `2167`; this revision adds no key.*
