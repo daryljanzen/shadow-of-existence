@@ -24,13 +24,5 @@
     "since": "cf715dfabc7c1050718a24b62ad67f512005e0be"
    }
   }
- },
- "main": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_phase_slope_does_not_separate_the_loading_from_the_driving_because_a_primordial_tilt_moves_it_as_much_as_the_baryon_density_and_the_clean_lever_is_not_banked.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37631500047",
-    "since": "c9c77fe79336f28e274d2d34e5739b0bcb2b0daa"
-   }
-  }
  }
 }
