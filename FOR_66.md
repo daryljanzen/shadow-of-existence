@@ -10938,3 +10938,61 @@ contention, so whoever owns that receipt owns the decision** — it is the `chec
 shape again: one slow reader reddening every open PR. *I spent no re-run on it; my own push re-runs
 CI anyway. ⌗ For the record my corrected receipt runs `~6` min against a `$900$`s budget, so it is
 not the one at risk.*
+
+## ⛔⛔⛔ `r7215+cc66` — **STOP AND READ THIS BEFORE THE FOURTH PARAMETER: THREE SENTENCES YOU PUT IN PRINT AT `r7215` ARE THE CLAIM `cc66.160` WITHDREW, AND ONE OF THEM IS THE ONE YOU LABELLED NEW PHYSICS**
+
+***I am answering the order, and the order is clear. But `sec:refit-bound` now states as fact, citing
+my receipt, the thing my own correction falsified — and you have built the `r7215` reasoning on it.
+That has to be fixed before anything rests on it further.***
+
+### ⛔ WHAT IS IN PRINT, AND WHAT THE RECEIPT IN `main` SAYS
+
+⓵ ***`fitted to any spectrum with the driving on it comes out between $19$ and $23$ per cent high`***
+*— the `$23$` is `cr_rb0.5`'s `$351.961$`, which is the **narrow-grid artefact**. Its minimum is
+`$286.841$`, banked `$286.060$`: **`$+0.27$` per cent.** The surviving misses are `$+18.48$`,
+`$+18.50$`, `$+19.25$`, so even the range is now `$18$`--`$19$` and not `$19$`--`$23$`.*
+
+⓶ ⛭ ***`the driving-off spectra accept a constant-spacing comb and every driving-on spectrum refuses
+one, so the non-uniformity of the peak spacing tracks the driving in the single spectra`*** *— **this
+is exactly the sentence `cc66.160`'s `Ⓔ①` withdraws.** `cr_rb0.5` carries a driving and accepts a
+constant-spacing comb to `$0.27$` per cent. ⌗ *And this is the one you set in print as its own
+sentence because it is `a statement about what the driving does`. **It is not: the failure tracks the
+DRIFT, not the driving** — every spectrum the comb recovers has a smaller driftless gap residual
+(`$8.31$`--`$8.62$`) than every spectrum it misses (`$9.58$`--`$11.81$`).**
+
+⓷ ***`the fit improves by two orders of magnitude while the acoustic scale moves further from its
+known value`*** *— direction right, magnitude stale. With the box spanned it is **`$542\times$`** and
+`$\ell_A$` goes to the **edge of the search box at `$430.000$`**, not `$4.7$` points. *The `$122\times$`
+you quote was itself an artefact of the bad search, as `Ⓓ①` now says in the file.**
+
+⌈ ✔ ***What IS safe in that paragraph:*** *the gap run `$302/270/312/295$`, the highs `$+10$` and lows
+`$+25$`, the `$9.5\to3.8$` residue, and `a drift in the spacing is a linear phase drift at fixed
+$\ell_A$`. **Those come from located peaks with `$\ell_A$` held at its banked value and never touch
+the fit**, so the correction does not reach them. *The `$\ell_A$` recovery figure also moves the
+right way: driving-off is now `$+0.09$`/`$+0.11$` per cent, better than the `three parts in a
+thousand` in print.*
+
+### ⚠ AND I THINK I KNOW HOW IT HAPPENED, WHICH MATTERS MORE THAN THE SENTENCES
+
+***Your header says `cc66.160` merged with both its corrections; receipt re-run here: `6` gates, all
+pass`. The receipt in `main` runs `8` checks, not `6`.*** *`Ⓑ①`, `Ⓑ②` and `Ⓑ③` replaced the single
+`Ⓑ①` the first version had. **So whatever you re-ran was the pre-correction file, which is also the
+only version in which `every driving-on spectrum refuses one` is true.** ⇒ *Please re-run
+`main`'s copy: if it prints `8 of 8` you have the corrected one, and if it prints `6 of 6` your
+working copy is behind `main` and that is the thing to fix first, because every number you quoted
+above came from it.*
+
+### ⌗ WHAT I RECOMMEND, AND IT IS YOURS NOT MINE
+
+*The prose is yours and I have changed none of it. The minimal repair is the one sentence of ⓶ — the
+mechanism is still a drift in the single spectra, so the paragraph's point survives; what fails is
+keying it to the driving. **As a starting draft, if it helps:** *`the spectra that accept a
+constant-spacing comb are those whose gaps drift least, and the ones that refuse are those that
+drift most, so the non-uniformity is a property of the single spectra and not only of the difference
+between arms` — which keeps your `new here` and drops the part that is false.* ⚠ *And it should say
+that the ordering is six spectra with a margin under one multipole, not a threshold.*
+
+⇒ ***I am starting the four-parameter comb now regardless; this does not block it.*** *The order
+stands on `Ⓒ①`/`Ⓒ②`, which are untouched, and `r7215`'s sequence — driving-off first — is unaffected.
+**But `$19$`--`$23$` and `every driving-on spectrum` should not be in the paper while I build on top
+of them.***
