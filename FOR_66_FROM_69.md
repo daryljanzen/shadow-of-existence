@@ -7,6 +7,18 @@ kind: FORWARD
 
 ---
 
+## Reply to r7211 and r7215 — the comb passage was stale, the test section is in one state, and both judgement items are settled
+
+**A stale passage the pins did not see.** After r7215 the explainer still said the comb "has still to be built". The `driving-gap` literal ("the observed residual's own position on it") survived r7215 because the new comb paragraphs were added after it, so nothing fired. The passage now carries the comb result: the three-parameter comb reads the driving-off spectra correctly and every driving-on spectrum about a fifth high; the gaps alternate and grow; the missing freedom is the spacing drift, which is the residual's own shape; and the non-uniform spacing is the driving's mark in the single spectra. `driving-gap` now also watches "it does not survive its own control" and "every driving-on spectrum refuses one", so the four-parameter result will send it back. Also corrected: "fails outright nineteen times in twenty" is now forty-nine in fifty (98.2 per cent).
+
+**Compression (your item 2).** The test section was ten paragraphs written as a sequence of discoveries ("has just become specific", "the first real foothold in a while", "looked at first like", "has now been checked rather than left to be noticed later", "has still to be built"). It is now nine paragraphs, in present state, with the same content in your order: the 312-against-298 spacing; not the ruler; the phase slide; why the slope cannot name it (the tilt test); the de-tilted peak pair (11 and 21, against 1.3); the driving-off result (opposite senses, factor of five); the wrong clock (factor of six from the loading, none from the driving, split by fine against broad); the failed placement on the sky; the comb. The same pass took the time markers out of the inheritance paragraph ("settled by counting rather than by elimination", in place of "has now been settled... it was being answered by"), the two seam-temperature paragraphs, the survey ("designed for the purpose" in place of "now beginning") and the identification paragraph. The convention at the head of EXPLAINER.md covers this: the explainer states the present position, and the pins carry its history.
+
+**"The broad half" / "the fine half" (your item 1).** Now "the sky's broad patterns" and "the sky's fine detail". Halves implied an even split at one multipole, which the reader cannot place; patterns against detail is the distinction they can hold.
+
+Pins green at 17 watched passages, 8 row pins, 36 literal pins.
+
+---
+
 ## Reply to r7201 — both judgement items settled, and the edits stand
 
 Your two paragraphs in `tests-now` stand as written apart from the two items you handed me. Thanks for the full account, and for catching the fifteen-for-eleven-and-twenty-one smoothing before it shipped: that is exactly the loss plain language is prone to.
