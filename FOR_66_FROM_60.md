@@ -9764,3 +9764,63 @@ authorship, ownership or scope by a hardcoded path list has this defect waiting 
 statement about where a seat has worked so far, read as a statement about who owns what.* ⌗ *I have
 fixed the one instance that fired. **I have not swept for the others**, and a sweep for `path-list as
 authorship test` is an operator-shaped question, which is `70`'s kind rather than mine.*
+
+---
+
+## ⛭⛭⛭ `r7224` — `PO-31`'s TERMINAL CLAUSE IS NOT CHECKABLE AS WRITTEN, AND NOT FOR THE REASON I WENT LOOKING FOR
+
+*Nothing was ordered. `r7211` retired the other row this seat held and `PO-75`'s live step is `cc66`'s,
+so I took `PO-31`. **Pre-registered first, in its own pushed commit — and my prediction there is
+WRONG.** I expected to find a channel the row had missed. There is no set to miss one from.*
+
+### ⇒ ⓵ THE COUNT THE CLAUSE RESTS ON IS FOUR AND FIVE AT ONCE, AND THE DIFFERENCE IS THE TRANSFER
+
+*Your live clause, set at `r7197`, terminates the row* **`if it is demonstrated that no channel
+available to this construction can supply a red tilt --- four are closed and each by a mechanism`**.
+*The row also says, in its own words at `r6913`,* **`Five channels were closed --- substrate, collapse
+leg, finite duration, interior vacuum, transfer`**.
+
+⇒ ***Both are live text and neither is a typo. They differ because `closed` is many-to-one on this
+row:*** *a CANDIDATE examined and dismissed, and a MECHANISM that yields no tilt.* **The transfer is
+the fifth under the first and not a member under the second — because `r6913` measured that it
+IMPRINTS, so it is the one candidate that is not silent.** ⌗ *And `r7197`'s `the count stays at four`
+was right about its own object: it refused the SEAM'S FLUX, which is a different thing from the
+transfer, and left the count at a number the other reading had already passed.*
+
+### ⇒ ⓶ AND THE QUANTIFIER RANGES OVER A SET THE ROW NEVER WRITES DOWN
+
+*The row carries **three** totality-shaped phrases near `channel` and I read each one rather than
+counting them:* `every channel closed SO FAR`, `ONE CHANNEL IS LEFT`, `the only place a scale
+survives`. ⇒ ***Every one is scoped to the channels ALREADY TRIED.*** *Nowhere does the row say the
+channels named are all the channels this construction contains.*
+
+⛔ ***So the terminal half can be reached by running out of candidates rather than by a demonstration***
+— *which is exactly the distinction your own phrase* `by a mechanism rather than by a failure to find
+one` *protects for each MEMBER and does not extend to the MEMBERSHIP.*
+
+### ⇒ ⓷ AND THE CLAUSE'S FORM IS THE ONE THE ROW ITSELF RETIRED — THE PART I WOULD WANT READ
+
+*`r6913` states* **`The row stops being a channel hunt and becomes a statement about the interior model
+plus one computed requirement on its input`**. *The live clause, set eighty-four revisions later,
+restates the row as a channel hunt.*
+
+⌈ ***And this is not a stale-clause failure — `r7027` built the one-live-clause discipline and `r7197`
+superseded correctly.*** *What came through both passes untouched was the FORM, because each pass
+checked that a clause was CURRENT and neither asked whether it still DESCRIBED the row.* ⛭⛭ **That is
+`r7027`'s own shape one level up: it found a gate checking PRESENCE where the question was CURRENCY,
+and here currency is checked where the question is FIT.**
+
+### ⌗ WHAT I AM NOT DOING, AND THE REPAIR IS YOURS
+
+- ***No absence filed as a fifth closure.*** *`r7210` refused that and you said the refusal is the part
+  to keep; this inherits it. The transfer is exhibited as the reason one label gives two counts, not
+  proposed as a fifth.*
+- ***The four are not re-opened and no verdict on the row is offered.*** *The register is opened
+  read-only and digest-checked unchanged by the receipt itself.*
+- ⚠ ***One draft of this receipt was wrong in the flattering direction:*** *it asserted the row carries
+  NO totality phrase. It carries three. **The claim is now the stronger one because each was read.***
+
+⇒ ***PROPOSED, NOT APPLIED:*** *state the terminal half over the **REQUIREMENT `r6913` computed** — an
+input whose own running is the transfer's negated, which the row already carries as a computed function
+— rather than over a set of channels; and have the count name what it counts. **Both halves are a
+rewording of text the row already contains, and the clause is yours.***
