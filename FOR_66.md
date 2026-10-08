@@ -10605,3 +10605,87 @@ fail the moment the ask it justified succeeds.** Re-scoped to the two nine-run g
 still exact at `$0$` of `$36$`, PLUS a new positive pin that every `RBFAC` spectrum in tree sits
 under the ask's own directory — so it now catches that lever being banked anywhere else, which the
 original could not. The same stale claim was in three landed files and all three are corrected.*
+
+---
+
+## ⛔⛔ `r7211+cc66.159` — **THE OBSERVED POINT CANNOT BE PLACED. THIS IS THE CASE YOU NAMED, AND IT IS NOT THE COVARIANCE**
+
+*You wrote: **"if the covariance makes the placement unreliable rather than merely imprecise, stop and
+say so: that is a statement about the bank and worth more than a salvaged point."** It is unreliable.
+Stopping and saying so. **And the cause is not the covariance — it is the peak locator.***
+
+### ⓵ ✔ FIRST, THE RISK THAT TURNED OUT NOT TO BE THE PROBLEM — THE BINNING IS FINE
+
+*Run fine and then through the likelihood's own `bin_spectrum`, on four models:*
+
+| spectrum | `$\Delta\varphi$` from binning | `$\Delta\mathrm{alt}$` |
+|---|---|---|
+| `cr_base` | `$-0.00133$` | `$-0.00025$` |
+| `lcdm_base` | `$-0.00135$` | `$-0.00026$` |
+| `cr_nodrive` | `$-0.00056$` | `$+0.00012$` |
+| `cr_rb0.5` | `$-0.00208$` | `$-0.00023$` |
+
+***A small bias, consistent in sign, and applied to data and models alike. So `$179$` binned points
+DO carry this statistic.*** *⌗ And `X_data` is binned `$C_\ell$` and not `$D_\ell$` —
+`bin_center_and_fac`'s own docstring records that peak-finding on it directly loses the first peak
+entirely. Everything here is converted with the same `fac`, both sides.*
+
+### ⓶ ⛔ WHAT ACTUALLY FAILS: THE LOCATOR READS `$21$` MAXIMA WHERE THE MODEL HAS `$5$`
+
+| | local maxima | the five the statistic takes |
+|---|---|---|
+| **observed spectrum** | **`$21$`** | `$239$` / `$464$` / `$527$` / `$617$` / `$815$` |
+| CR model, same bins | `$5$` | `$257$` / `$554$` / `$824$` / `$1139$` / `$1436$` |
+
+***Three of the five — `$464$`, `$527$`, `$617$` — lie inside the SECOND acoustic peak's own
+neighbourhood.*** *The locator keeps the first five separated by `$60$`, and the data supplies more
+than five before the comb is exhausted. So the parabola refines noise wiggles, and one of the five is
+not even concave, leaving the alternation taken over four peaks with spurious members.*
+
+### ⓷ ⛔ AND THE ERROR BAR CONFIRMS IT RATHER THAN RESCUING IT — WHICH YOU SAID WAS THE RESULT
+
+*`$2000$` Cholesky draws of the full `$179\times179$` `plik_lite` TT covariance — the same object
+`cc66.153`'s whitening used, not the npz's diagonal `sigma`:*
+
+- ⛔ ***`$98.2$` per cent of draws fail to yield five finite peaks at all.*** *`$35$` of `$2000$`
+  survive.*
+- ⛔ *The survivors give `$\sigma_\varphi = 1.25$` — **`$10\times$` the driving's entire signal and
+  `$69\times$` the loading's.***
+- ⛔ *And they come back correlated at `$-0.955$`: **collapsed onto ONE direction rather than spanning
+  the plane.** The plane's whole value in `cc66.156` was that the offset and the alternation are
+  independent components; on the data they are not, so even a wide interval would not be an interval
+  *in this plane*.*
+
+⇒ ***You asked for it in those words if the uncertainty covered both candidates. It is worse than
+that and I am not going to soften it: the honest statement is not "the uncertainty covers both
+candidates" — it is that the quantity being measured is not the one the statistic reads.*** *A
+statistic that fails on nineteen of twenty realisations of its own data is not returning a wide
+interval; it is not returning a measurement.*
+
+### ✔ AND IT WITHDRAWS NOTHING FROM `cc66.157`/`cc66.158`
+
+***Both compare MODEL to MODEL on noiseless `$238$`-point spectra — the regime `Ⓐ` above shows the
+statistic sound in.*** *The `$5.39\times$` separation, the opposite senses on the common offset, and
+the `$\omega_b$` opposition all stand. **What fails is one step, and it fails for a reason specific to
+data: noise creates maxima, and a maximum-finder cannot tell them from acoustic peaks.** ⌗ The two
+regimes are separated by exactly one property — whether the spectrum carries noise at the scale of
+its own curvature — which is why this is a bounded negative and not a retraction.*
+
+### ⌈ WHAT A REPAIR WOULD BE, STATED WITHOUT BUILDING IT
+
+***A locator that finds maxima and then refines them cannot work on a spectrum whose noise creates
+maxima. It would have to fit a parametric comb to the whole binned residual under the covariance —
+position, spacing and alternation as fitted parameters rather than located features.***
+
+⛔ *That is a **different statistic.** `r7211` ordered the one that exists pointed at the data, and
+said `no new statistic`. **So I have not built it and I am not costing it**, which is the same line I
+held at `r7203` — and this time the scope note is not spent, because a comb fit is not the statistic
+I built pointed at a new target, it is a new target requiring a new instrument.* ⌗ *If you want it,
+it is yours to cost. What I can say for free: it needs no new spectra either.*
+
+⌗ *Cost: one re-read, as you scoped it. **Nothing to stop and say so about on that count.***
+
+⌗ ⚠ *And one consequence for the board: the fine-against-broad weighting you left unordered was
+conditioned on where the residual landed — **"if the residual lands on the loading, the clock question
+does not arise at all."** The residual has not landed anywhere, so that condition is not resolved
+either way, and the clock question is neither raised nor retired by this.*
