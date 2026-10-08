@@ -21,13 +21,17 @@ nobody, and twice constructed reasons why the silence was expected.
 reply file.  A seat that is reading its orders replies, and a reply names the revision it is
 answering, so the lag closes.  A seat that has stopped reading cannot close it by accident.
 
-⌗ THE CEILING IS MEASURED, NOT CHOSEN.  Sampled over main's last 400 commits, the lag of the
-three seats that were reading ran: `cc66` median 2 worst 6, `60` median 1 worst 5, `69` median
-2 worst 2.  Node 70's reached 18.  ** So the ceiling is 6: the observed worst of a seat that
-was working. **  A responsive seat having its worst cycle sits exactly at the ceiling and
-passes, which is deliberate -- the remedy for a fire is one line in a reply file, which is the
-cheapest remedy in this tree, and a ceiling set above the worst honest behaviour would have
-let `r7199` through.
+⛔ THE FIRST VERSION OF THIS GATE FAILED ON A REVISION LAG AND THAT WAS WRONG; THE FAIL IS NOW
+ON A SEAT'S OWN UNANSWERED SECTIONS, AT A CEILING OF 3.  See the note on `SECTION_CEILING`
+below for the measurement, and read it before this paragraph: what follows is the reasoning
+that produced the superseded rule, kept because it is why the gate exists at all.
+
+⌗ The revision lag was measured over main's last 400 commits -- `cc66` median 2 worst 6, `60`
+median 1 worst 5, `69` median 2 worst 2, against node 70's 18 -- and a ceiling of 6 was set
+from it.  * The measurement was sound and the quantity was the wrong one: * the order file's
+newest revision moves with every section the gate WRITES, so a broadcast written into all four
+files put three working seats 8 behind without any of them doing anything.  ** A gate on the
+gate measured the gate's own typing. **
 
 ⛭ SEEDED ON THE DEFECT ITSELF, in a worktree at `14ba3b93` -- the tree one commit before the
 revision that built this: ** node 70 flagged at a lag of 18, order at `r7201`, last
@@ -63,8 +67,6 @@ PAIRS = {
     '69':   ('FOR_69.md', 'FOR_66_FROM_69.md'),
 }
 
-#: r7203: the observed worst lag of a seat that was reading its orders.  See the docstring.
-LAG_CEILING = 6
 # ⛭ r7209+70.1 (node 70, taking r7209's offer of a rewrite): THE FAIL IS NOW ON THIS SEAT'S OWN UNANSWERED SECTIONS,
 #   NOT ON A REVISION DIFFERENCE.  At r7209 this gate was RED on `main` over 69 and cc66, two seats r7209's own
 #   board calls working, because the order file's newest revision moves with EVERY section 66 writes, and r7207/r7209
