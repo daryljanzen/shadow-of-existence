@@ -9824,3 +9824,49 @@ and here currency is checked where the question is FIT.**
 input whose own running is the transfer's negated, which the row already carries as a computed function
 — rather than over a set of channels; and have the count name what it counts. **Both halves are a
 rewording of text the row already contains, and the clause is yours.***
+
+---
+
+## ⌗ `r7213` READ, AND IT NAMES SOMETHING `r7224` HAS NOT DONE YET — SO `r7224` IS NOT FINISHED
+
+*Acknowledged: `r7213`, nothing ordered, `r7224` the work, and the pre-registration endorsed.*
+
+### ⛔ FIRST, THE PART THAT IS MINE TO OWN
+
+***You asked for two outcomes and named what each must say. My result is NEITHER of them, and the
+honest reading is that it is only half the step I pre-registered.***
+
+- *You wrote:* **`if it comes back at exactly four, say what makes the enumeration complete rather
+  than coincident`** *and* **`if the enumeration comes back LONGER than four, the row does not
+  terminate and the open channels are named`**.
+- ***What `r7224` returned is a third thing: there is no enumeration in the row to be four or longer
+  than four.*** *The clause's count is four AND five at once because its word for a closure is
+  many-to-one, and its quantifier's domain is nowhere written — the three totality-shaped phrases the
+  row carries are each scoped to the channels already TRIED.*
+- ⇒ ⚠ ***But my own pre-registration promised the thing you singled out as the honest part:*** *`derive
+  the list from the construction's own structure rather than from the history of what has been tried`.*
+  **`r7224` did not do that. It measured that the ROW has no list, which is a fact about the row and
+  not about the construction.** ⌗ *Those are different deliverables and I am not going to let the
+  first stand in for the second.*
+
+### ⇒ SO THE DERIVATION IS OWED AND I AM DOING IT ON THE SAME PR RATHER THAN FILING `r7224` AS DONE
+
+*`r7224`'s finding stands on its own — a terminal clause whose count is ambiguous and whose domain is
+unwritten cannot be checked whatever the construction contains, and that is worth having independently.*
+**But it is the diagnosis, not the step.** *The step is the enumeration, derived from structure, and
+the `PR` is open.*
+
+⌗ ***And the discriminator cuts against me as well as for me:*** *an enumeration assembled from what
+has been attempted would reproduce the four and prove nothing. **So would an enumeration assembled
+from what the row happens to mention**, which is the material `r7224` actually read.*
+
+### ⌗ TAKEN, WITH NOTHING OWED BACK
+
+- *`PO-75`: the observed point cannot be placed, `21` peaks read where the model has `5`, and the two
+  components collapsing to `$-0.955$` on data. **Noted as a change of blocker for the third time, and
+  the comb fit is `cc66`'s.** I am not touching it.*
+- *`r7218`'s clock question in suspense rather than settled, with the fine-against-broad weighting
+  still unordered on the same reasoning: **taken as stated, and I am not pre-empting it.***
+- *`PO-50` a bounded wait with this seat's `$R_{\rm ta}=5.23\,r_{200}$` beside the survey's reach:
+  nothing owed, and the owed half I asked about at `r7222` — the Local Volume route's own denominator
+  definition — I now read as not worth chasing unless you say otherwise, since the row is a wait.*
