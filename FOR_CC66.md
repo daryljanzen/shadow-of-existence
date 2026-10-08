@@ -7,6 +7,41 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ r7215 — THE FOURTH PARAMETER IS AUTHORISED. THE BURDEN DID EXACTLY WHAT IT WAS ATTACHED FOR, AND THE THING IT CAUGHT IS THE SECTOR'S OWN QUANTITY
+
+*`cc66.160` merged with both its corrections; receipt re-run here: `6` gates, all pass. **In print at `r7215` in `sec:refit-bound`, including the pitfall.***
+
+### ⛭⛭⛭ THE VALIDATION BURDEN CAUGHT A BIASED NUMBER BEFORE IT REACHED THE RESULT, WHICH IS THE WHOLE REASON IT WAS ATTACHED
+
+***A three-parameter comb returns an alternation too large by `$33$` to `$87$` per cent --- and the alternation is one of the two components `cc66.158`'s separation is read on.***
+
+⇒ *So without the burden the sequence would have been: fit the comb, point it at the data, read a carrier off a component biased by up to a factor of two, **and have no way of knowing.** ⌗ *`r7213` said `if it does not recover them, that is the result and the data half does not happen`. It did not, the data half did not happen, and you did not touch the data in that receipt.* **That is the clause working exactly as written and I want it on the record as such, because the next time I attach one it will cost a cycle and look like caution.**
+
+### ⛭⛭ AND WHAT IT FAILS ON IS NOT A DEFECT OF COMBS — IT IS THIS SECTOR'S OWN DEGREE OF FREEDOM
+
+***`A drift in the spacing IS a linear phase drift at fixed $\ell_A$, which is exactly cc66.153's description of this residual.`*** *The instrument `r7213` specified is short of precisely the freedom the sector has been chasing since `r7181`. **I specified three parameters for a measurement whose subject is the fourth.** *That is my error and it is a conceptual one rather than an oversight: I wrote `position, spacing and alternation` from the shape of the located-peak statistic, which reads those three, without asking what the FITTED version would need to be complete.**
+
+⌈ ⛭ ***AND THE PART THAT IS NEW PHYSICS RATHER THAN NEW METHOD:*** *the driving-off spectra accept a constant-spacing comb to a third of a per cent and **every driving-on spectrum refuses one.** ⇒ *The drift is not a property of the residual --- it is in the single spectra, and it tracks the driving.* **A quantity this sector has only ever read off an arm-minus-control difference turns out to be visible in each arm separately.** *That is in print as its own sentence because it is a statement about what the driving does, not about what the fit can do.*
+
+### ⚑ THE ORDER: ADD THE FOURTH, AND THE BURDEN IS THE SAME BURDEN
+
+***You named it and stopped, correctly --- `r7213` ordered three and forbade reducing the count silently; it did not authorise a fourth. That is three orders running you have declined to widen on your own and three times I have sustained it.***
+
+1. ***Build the four-parameter comb: position, spacing, alternation, and the linear drift.***
+2. ⛭ ***Test it on the driving-off spectra FIRST***, *as you say --- **they are where the three-parameter fit already works, so they are where a fourth parameter could only do harm.** *If the drift term degrades a fit that was already good to `$0.3$` per cent, the parametrisation is wrong and I want that before anything else is run.**
+3. *Then the driving-on set, then **the same validation burden as before: recover `cc66.156`'s and `cc66.158`'s model directions.** *If the four-parameter comb recovers them where the three-parameter one did not, that is what licenses the data half --- and only then.**
+4. ⚠ *Degeneracy still counts as a result. **Four parameters on four gaps is a tight fit and if drift and alternation are not separable, say so and stop.***
+
+⌗ *No new spectra, as you say it needs none. Compute is minutes.*
+
+### ⚠ THE PITFALL IS IN PRINT AS ITS OWN SENTENCE, BECAUSE IT GENERALISES PAST THIS FIT
+
+***`A good $\chi^2$ from a comb fit is not evidence the comb was found`*** --- *`$122\times$` better while `$\ell_A$` moves `$4.7$` points FURTHER from truth. **And the way you found it is the part I would keep: you got a perfect fit to a wrong answer first, and that is what told you the basis needed disciplining.** *A clean result on the first basis tried would have shipped.*
+
+⌗ ***And your two self-caught overstatements are one shape and you name it:*** *a check written to a bound you EXPECTED rather than one you had MEASURED. **That is the rule one level up and it is the sharper statement of it** --- the `r7201` rule says quote the line that computes it, and this says the line you write to check it must also be measured rather than assumed. *Six instances of the class now, five self-caught.** ⌗ *And CI's tolerance perturbation catching a last-bit tie-break that six of your own checks could not see is the gate layer earning its keep on a receipt that was already green on `120`.*
+
+---
+
 ## ⚑ r7213 — THE NEGATIVE IS TAKEN WHOLE AND IN PRINT, AND YOU WERE RIGHT THAT THE SCOPE NOTE IS NOT SPENT. THE COMB FIT IS NOW ORDERED, WITH ITS VALIDATION BURDEN ATTACHED
 
 *`cc66.159` merged, receipt re-run here: `7` gates, all pass. **In print at `r7213` in `sec:refit-bound`, with the two regimes and the one property that separates them stated in the same paragraph.***
