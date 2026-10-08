@@ -10996,3 +10996,84 @@ that the ordering is six spectra with a margin under one multipole, not a thresh
 stands on `Ⓒ①`/`Ⓒ②`, which are untouched, and `r7215`'s sequence — driving-off first — is unaffected.
 **But `$19$`--`$23$` and `every driving-on spectrum` should not be in the paper while I build on top
 of them.***
+
+## ⛭⛭ `r7215+cc66.161` — **THE FOURTH PARAMETER IS THE RIGHT ONE AND THE BANK CANNOT SUPPORT IT. ITEM 2 PASSES, YOUR NAMED DEGENERACY IS SEPARABLE, AND THE ONE THAT BITES IS A PAIR YOU DID NOT NAME**
+
+*`10` checks, all pass, `473`s measured. No new spectra, no refit, data not touched. **The drift is
+tied to `cc66.160`'s PART C by construction and its peak finder is spliced in BYTE FOR BYTE**, pinned
+to the published gaps `$302/270/312/295$`, so the agreement below is between two genuinely
+independent numbers.*
+
+### ✔ ITEM 2 PASSES — AND MY FIRST READING OF IT WAS WRONG, WHICH IS THE INTERESTING PART
+
+***You asked for the driving-off spectra first, `where a fourth parameter could only do harm`. Read
+naively they look RUINED: `$\ell_A$` goes from `$+0.09\%$` to `$-6.58\%$`.*** *I nearly reported the
+parametrisation wrong on the strength of it.*
+
+⇒ ***It is a reference-point error.*** *In `$\ell=\ell_A v+dv^{2}$` the parameter `$\ell_A$` is the
+spacing extrapolated to `$v=0$`, and **with a drifting comb that is not the acoustic scale at all.**
+The pivot-free statement: the comb's drifting spacing **passes through the banked value at
+`$\ell\simeq815$` and `$813$`, interior to the fitted window**, while `$\chi^{2}$` goes
+`$106\to59$` and `$94\to53$`. *So the parametrisation is sound and the order proceeded.*
+
+### ⛭⛭ AND IT IS THE RIGHT PARAMETER — CHECKED AGAINST A NUMBER IT WAS NOT FITTED TO
+
+| spectrum | fitted `$2d$` | PART C's `$c_2$` | verdict |
+|---|---|---|---|
+| `cr_base` | `$+8.85$` | `$+8.77$` | agrees |
+| `lcdm_base` | `$+9.22$` | `$+8.85$` | agrees |
+| `cr_nodrive` | `$+7.10$` | `$+8.15$` | agrees |
+| `lcdm_nodrive` | `$+7.10$` | `$+8.15$` | agrees |
+| ⛔ `cr_rb0.5` | `$-35.20$` | `$+8.29$` | **wrong sign** |
+| ⛔ `cr_rb1.5` | `$-30.75$` | `$+9.70$` | **wrong sign**, and `$\ell_A$` pinned at `$430.000$` |
+
+*`$c_2$` comes from located peaks with `$\ell_A$` held at its banked value and is in no way an input
+to the fit. **Four of six agree in sign and within a sixth — so `cc66.153`'s quantity is what the
+fourth parameter is picking up, and that is now measured rather than argued.*** ⚠ *The other two buy
+a large `$\chi^{2}$` gain with a drift their own gaps contradict: `cc66.160`'s `Ⓓ①` pitfall wearing
+the fourth parameter's clothes.*
+
+### ⛔⛭⛭⛭ YOUR ITEM 4 ASKED ABOUT THE WRONG PAIR, AND I AM REPORTING BOTH ANSWERS IN THAT ORDER
+
+- ⓵ ***`if drift and alternation are not separable, say so and stop` — THEY ARE SEPARABLE.***
+  *`$\lvert\rho(a,d)\rvert\le0.47$` on all six. **The stop condition you named does not fire**, and
+  saying so before reporting the one that does is the right order to put them in.*
+- ⓶ ⛔ ***What is not separable is the SPACING and the drift: `$\rho(\ell_A,d)$` from `$-0.94$` to
+  `$-0.98$`.*** *Four parameters on `$179$` binned points cannot hold the scale and its drift apart.*
+  ⚠ *`cr_rb1.5` reports `$\rho=0$` and **that is not independence** — its `$\ell_A$` sits on the box
+  edge, so the curvature there is clipped and means nothing.*
+- ⓷ ⛭ ***And the two unidentifiability tests agree on which spectrum to distrust.*** *`cr_rb1.5` is
+  the only optimum reached from a single coarse start where the others are reached from four, and it
+  is the only one on the box edge. **A grid wide enough to `fix` the corroboration check would only
+  have hidden that**, so `Ⓑ②` asserts `every INTERIOR optimum` and names the exception.*
+
+### ⛔ AND THE VALIDATION BURDEN FAILS AGAIN, FOR A NEW REASON
+
+***On `cr_base` and `lcdm_base` the fitted comb's spacing runs `$344\to385$` and `$343\to386$` across
+the window and never equals the banked value ANYWHERE*** — *the crossing is at `$\ell^{*}=-1330$` and
+`$-1251$`, negative and far outside.* **So each driving pair still has one member whose phase is not
+referred to the same comb, `cc66.158`'s `$0.1929$`/`$1.0390$` separation is still not constructible,
+and by the same burden you re-attached, the data half still does not happen.**
+
+⌈ ⇒ ***WHAT THIS LEAVES, SAID PLAINLY: a four-parameter comb is a better description of these spectra
+and a worse instrument for this measurement.*** *You identified the missing parameter correctly and
+it was correctly added; what defeats it is the bank. **That is a statement about what `$179$` binned
+points can support, which `r7213` said is worth as much as a fit** — so I am not proposing a fifth
+parameter, a reweighting, or more spectra. *If you want a route, the one this points at is more
+points rather than more parameters, and that is yours to cost.*
+
+### ⌗ FOUR DEFECTS OF MINE, ALL CAUGHT BY THIS FILE'S OWN CHECKS ACROSS FOUR RUNS
+
+1. *A rebuilt `OptimizeResult` that silently lost `fun` — `OptimizeResult` keeps its values as dict
+   ITEMS, not attributes. Crashed on the first run.*
+2. ⛔ ***PART C's peak finder RETYPED FROM MEMORY with four differences*** *(the concavity
+   requirement, the two-neighbour maximum test, the de-tilt guard, the grid span). **It would have
+   made `Ⓑ③` compare the fit against my own variant of PART C while the check text claimed it was
+   PART C's.** Now spliced byte for byte, with `Ⓐ③` pinning it to the published gaps. *This is the
+   `second computation wearing the first one's authority` class again, and this time inside a check
+   whose entire value was the independence of the two numbers.**
+3. *`Ⓑ②` written as `every optimum` when the measurement says `every INTERIOR optimum` — it failed,
+   and the failure was the finding.*
+4. *A PART C refit of PART B's own optimum: `$20$`+ minutes against CI's `$900$`s budget. **The same
+   budget that reddened another seat's PR today** — I would have become the instance of the thing I
+   had just reported. `STATUS` now carries the measured `473`s and not an estimate.*
