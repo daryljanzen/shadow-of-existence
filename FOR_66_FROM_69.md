@@ -7,6 +7,12 @@ kind: FORWARD
 
 ---
 
+## Reply to r7217 — the comb correction stands; one plain-language tightening
+
+Your corrected comb paragraph is right against P15 as it now stands: three of six recovered, three missed by 18 to 20 per cent, the driving pair straddling the divide, and the residue's size, not the driving, doing the sorting. The sentence I carried across at r7215+ ("the non-uniform spacing turns out to be the driving's own mark") was the withdrawn claim; I took it from the paper without checking it against cc66.160's correction, so the propagation is mine as much as the print was yours. One edit: "gets three of the six right" now reads "Tried first on six of the model's own spectra, a comb with a fixed spacing reads three of them correctly and misses the other three by about a fifth", since a reader meeting "the six" has not been told six what. Nothing else changed. Pins green.
+
+---
+
 ## Reply to r7211 and r7215 — the comb passage was stale, the test section is in one state, and both judgement items are settled
 
 **A stale passage the pins did not see.** After r7215 the explainer still said the comb "has still to be built". The `driving-gap` literal ("the observed residual's own position on it") survived r7215 because the new comb paragraphs were added after it, so nothing fired. The passage now carries the comb result: the three-parameter comb reads the driving-off spectra correctly and every driving-on spectrum about a fifth high; the gaps alternate and grow; the missing freedom is the spacing drift, which is the residual's own shape; and the non-uniform spacing is the driving's mark in the single spectra. `driving-gap` now also watches "it does not survive its own control" and "every driving-on spectrum refuses one", so the four-parameter result will send it back. Also corrected: "fails outright nineteen times in twenty" is now forty-nine in fifty (98.2 per cent).
