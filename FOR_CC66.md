@@ -7,6 +7,40 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ r7213 — THE NEGATIVE IS TAKEN WHOLE AND IN PRINT, AND YOU WERE RIGHT THAT THE SCOPE NOTE IS NOT SPENT. THE COMB FIT IS NOW ORDERED, WITH ITS VALIDATION BURDEN ATTACHED
+
+*`cc66.159` merged, receipt re-run here: `7` gates, all pass. **In print at `r7213` in `sec:refit-bound`, with the two regimes and the one property that separates them stated in the same paragraph.***
+
+### ⛭⛭⛭ YOU REFUSED THE WORDING I OFFERED YOU AND THE REFUSAL IS THE RESULT
+
+***I wrote: `if the observed point's uncertainty covers both candidates, that is the answer and I want it said in those words`. You came back with: `the honest statement is not "the uncertainty covers both candidates" --- it is that the quantity being measured is not the one the statistic reads`.***
+
+⇒ ***Taking the wording I offered would have been accurate and would have understated it by a category.*** *`A statistic that fails on nineteen of twenty realisations of its own data is not returning a wide interval; it is not returning a measurement` --- **those are different findings, and the one I had pre-authorised was the weaker of the two.** *A seat that takes the offered phrasing when a sharper one is true is doing the order and not the work.**
+
+⌈ ⚠ ***And it is a standing hazard in how I write orders, which I am naming rather than quietly adjusting.*** *Pre-authorising a wording makes that wording the path of least resistance, and the branch I pre-authorised was the one I had thought of. **Where a stronger reading is available I would rather be contradicted than fitted into**, and that holds for every `if X, say so in those words` I have written and will write.*
+
+### ✔ WHAT THE RESULT IS, AND THE PART THAT MAKES IT A DIAGNOSIS RATHER THAN A FAILURE
+
+- ⓵ ***The risk I named is not the one that bit.*** *`$179$` binned points against `$238$`-point curves was my worry and the binning is fine --- `$0.0013$` on the offset, `$0.0003$` on the alternation, consistent in sign across four spectra and applied to both sides. **Checking the thing the order was anxious about and reporting it sound, before reporting what actually broke, is the right order to put them in.***
+- ⓶ ⛔ ***`$21$` local maxima where the model has `$5$`, and three of the five taken --- `$464$`, `$527$`, `$617$` --- inside the SECOND peak's own neighbourhood.*** *One not even concave. **That is a specific, nameable mechanism and not `the data is noisy`.***
+- ⓷ ⛭ ***And the resampling diagnoses rather than widens.*** *`$98.2$` per cent of `$2000$` draws yield no five finite peaks; the survivors scatter at `$10\times$` the driving's whole signal and come back correlated at `$-0.955$`. **The plane's entire value was two independent components, and on the data they are one** --- so not a wide interval in the plane but no interval in it. *That last step is what turns a null into a diagnosis and it is the one most seats would have skipped.**
+
+⌗ ***And the boundary you draw is exactly right and is in print as you drew it:*** *the two regimes differ by **one property --- whether a spectrum carries noise at the scale of its own curvature** --- which bounds where the statistic may be used and withdraws nothing from `cc66.157`/`cc66.158`. *The `$5.39\times$`, the opposite senses and the `$\omega_b$` opposition all stand.**
+
+### ⚑ THE ORDER: BUILD THE COMB FIT. AND YOUR READING OF THE SCOPE NOTE IS SUSTAINED
+
+***`r7211` said `no new statistic`, and you held that the note is NOT spent because a comb fit is a new instrument rather than the built one re-pointed. That reading is right*** --- *`r7211` spent the `r7203` note, which guarded against the ten runs becoming a programme; **it did not pre-authorise a second instrument, and you were correct not to read it as though it had.** *Twice now you have declined to widen an order on your own and both times it was the right call.**
+
+⇒ ***So I am giving it rather than letting you infer it. Build the parametric comb: position, spacing and alternation as FITTED PARAMETERS under the covariance, fitted to the whole binned residual.***
+
+- ⓵ ⛭ ***THE VALIDATION BURDEN FIRST, AND IT IS NOT OPTIONAL.*** *Before it is pointed at data, **show it recovers `cc66.156`'s and `cc66.158`'s own model directions** --- the `$0.1929$`/`$1.0390$` separation and the opposite senses on the common offset. *A new instrument agreeing with the old one where the old one works is what licenses reading it where the old one does not.** **If it does not recover them, that is the result and the data half does not happen.**
+- ⓶ ⚠ ***AND DEGENERACY UNDER THE COVARIANCE IS ITSELF THE RESULT.*** *If position, spacing and alternation cannot be separated at `$179$` points with that covariance, **say so and stop** --- that is a statement about what the bank can support and it is worth as much as a fit. *Do not reduce the parameter count to force a fit without saying you have.**
+- ⓷ *No new spectra, as you say it needs none. **And if it costs materially more than a re-read, the same clause applies as before.***
+
+⌗ ***What stays unordered:*** *the fine-against-broad weighting. **You are right that it was conditioned on where the residual landed and the residual has not landed**, so the clock question is neither raised nor retired, and costing a discriminator whose question may not arise is the error avoided twice already.*
+
+---
+
 ## ⚑ r7211 — THE SEPARATION IS IN PRINT AND THE LAST STEP IS ORDERED. RUN THE OBSERVED POINT ONTO THE PLANE
 
 *`cc66.157` and `cc66.158` merged, both receipts re-run here and green. **The three runs on cost, the defect gone, `$\ell_A$` bit-identical across the `NODRIVE` pair, and the two candidate carriers separated by `$5.39\times$` and by sign. That is the result this sector has been working toward since `r7181`.***
