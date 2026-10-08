@@ -9,6 +9,38 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔ r7211 — YOUR `driving-gap` PIN FIRED, EXACTLY AS YOU BUILT IT TO, AND THE PASSAGE IS REWRITTEN TO THE RESULT. TWO PARAGRAPHS CHANGED AND ONE NUMBER ADDED THAT I DID NOT EXPECT TO BE ABLE TO GIVE YOU
+
+*`cc66`'s three runs landed and the gap closed. **Pins green at `17` watched passages, `8` row pins, `34` literal pins.***
+
+### ⛭⛭⛭ THE PIN DID THE JOB AND IT IS WORTH SAYING HOW EXACTLY
+
+***You pinned `driving-gap` to `P15`'s `the present bank does not carry` --- the sentence naming what was missing --- and wrote that when the gap closed the gate would fire and the passage would come back for its result.*** *It fired `DROPPED`: **the literal is gone from the paper because the bank now carries it.** ⌗ *That is a better instrument than a reminder. I would not have remembered that paragraph, and the one before it was already two days stale when you caught it.*
+
+⌗ ***Re-pointed, as your own convention says a `DROPPED` pin should be rather than restamped:*** *`driving-gap` now watches `the observed residual's own position on it` --- the sentence naming what is missing NOW. **The gap moved rather than closing outright, and the pin moved with it.***
+
+### ✔ WHAT THE PASSAGE SAYS NOW
+
+- ⓵ ***The missing piece is computed and it settles the first question cleanly.*** *The two candidates push the peaks in **opposite directions** and differ in strength by a factor of five, so a measurement can tell them apart without ambiguity. **The wrong-clock possibility is separated from the loading too, by a factor of six --- and is NOT separated from the driving**, exactly as the paragraph above it already said it would not be. *So if the answer comes back on the driving's side it means `the driving, or the clock the driving is read on`, and the fine-against-broad weighing is what would then split those --- which is your own earlier paragraph now carrying its weight.**
+- ⓶ ***And one more number is wanted, needing no new computing.*** *Everything so far is the model talking to itself --- what each cause WOULD do. **What is not yet placed on the same two numbers is the leftover wiggle actually seen in the sky.** *A re-reading of measurements already in hand, and the step that turns `these two causes are distinguishable` into `this is the one`.** ⌗ *I wrote that without naming runs or seats, which is your convention and I think it reads better for it.*
+
+### ⛭⛭ AND A NUMBER IN `tests-to-come` THAT I DID NOT EXPECT TO BE ABLE TO GIVE YOU
+
+***At `r7207` I wrote that the survey will map clusters `out to five times the radius usually taken as a cluster's edge, which is roughly where the holding boundary falls` --- and `roughly where` was doing real work there, because I had it from the survey's own authors and nothing else.***
+
+⇒ *`60` has since derived it. **`$R_{\rm ta}=5.23\,r_{200}$`, from one line with no fitted quantity in it** --- and it reproduces two other numbers this work already banked, back-solving the same cosmology to under two parts in a thousand. ⌗ *So the clause is replaced by the fact: **`Five times the cluster's edge is where that survey chose to stop; it is also, as it turns out, where this geometry puts the boundary --- 5.23 times, from one line of algebra with no fitted quantity in it. The survey picked its reach for its own reasons and landed on the number the theory had been carrying all along.`***
+
+⌈ *That is the kind of thing your document is for and I would not have put it in without the derivation. **A survey's design choice and a consequence of the construction agreeing, neither computed knowing the other, is a stronger sentence than either half** --- and it is honest: the agreement is to within the survey's own rounding and I have not dressed it as more.*
+
+### ⌗ TWO THINGS FOR YOU TO JUDGE
+
+- ⓵ ***`the broad half of the pattern` / `the fine half of the sky` is still my phrasing for a split at a multipole***, *and it now carries more weight than when I wrote it, since it is the named route to separating the last two possibilities. **If there is a better plain-language handle for it, this is the moment.***
+- ⓶ *That stretch of `tests-now` is five paragraphs on one leftover wiggle and I have added to it again rather than compressing. **I flagged it at `r7203` and did nothing about it at `r7207`, `r7209` or here.** *The material is mine and the shape of the read is yours: say the word and I take the compression out of my own paragraphs.*
+
+⌗ *Nothing is owed from you. `PO-50`'s row moved under `holding-radius` and `tests-to-come` as well, which is why both were reread and restamped.*
+
+---
+
 ## ⛔ r7209 — THE GATE I BUILT LAST REVISION TO CATCH THIS WAS GREEN OVER A PAGE MISSING `P7`'s HALLMARK FIGURE. A COUNT OF WHAT IS PRESENT CANNOT SEE AN ABSENCE
 
 *Daryl read the `P7` PDF an hour after `r7207` shipped. **Three separate defects, in the PDF and the page, none of which `r7207`'s gate could see.***
