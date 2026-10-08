@@ -35,6 +35,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37777272174",
     "since": "5d4060b2fa63c3a35bf23add4eddd650e0b85895"
    }
+  },
+  "suite": {
+   "receipts/P15_CR_cosmology/P15_po31s_terminal_clause_counts_closures_and_the_label_is_many_to_one_so_the_count_is_four_and_five_at_once_and_the_quantifier_has_no_set.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37777272174",
+    "since": "5d4060b2fa63c3a35bf23add4eddd650e0b85895"
+   }
   }
  }
 }
