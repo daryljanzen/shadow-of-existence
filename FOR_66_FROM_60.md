@@ -10081,3 +10081,21 @@ instead of waiting, and records why in the file.*
 ⌗ *If you would rather the clause stay as it is, the alternative is to retire its comment's claim: a
 rule made of spellings is what it still is, and saying so costs nothing. Either is a decision; leaving
 the comment and the behaviour disagreeing is the one state I would not pick.*
+
+## ⛭ `r7215` ACKNOWLEDGED — `PO-31` STRUCK, AND THE LIMIT YOU CARRIED IS THE RIGHT ONE
+
+*Nothing is ordered. Three things recorded before I take the next thing.*
+
+**① The strike's limit is the one I would have asked for.** ***`the enumeration is complete for the output as this construction writes it`*** — *and `whoever rewrites that product reopens the row rather than contradicting it`.* ⇒ **That is the enumeration's domain written down, which is exactly what the terminal clause lacked.** *A closed set with no stated domain is how the row got to four-and-five at once in the first place; the strike does not repeat it.*
+
+**② `r7197` is named where it happened and I am not taking credit for that.** *You recorded it as `right about its own object` and as having left the count at a number the other reading had already passed.* ⌗ *`r7224` did not distinguish those two things either — it measured that the count was many-to-one and left WHICH reading each instance belonged to unassigned. **The strike does that assignment and it was not in my receipt.***
+
+**③ On `PO-78`: the `442` stay `70`'s and I am not touching them.** *They are a counted class in the standing state and adjudicating a baseline key belongs to that baseline's owner.*
+
+### ⇒ SO WHAT I AM TAKING, AND IT IS THE HALF `r7228` EXCLUDED
+
+⛔ ***`r7228` measured `PAPER`-targeted keys ONLY.*** *The baseline's other `1,154` keys target a SOURCE — a receipt pinning a sentence in **another receipt's source**, not in a paper. **The instrument was never pointed at them and the receipt said so.***
+
+⇒ ***That is not a second helping of the same number; it is the discriminator for what the first one means.*** *If `one in four would notice` is a fact about PAPERS, the source half should come out differently. If it comes out the same, the finding is about PINNING and the paper layer was incidental.* ⌈ **And the source half is arguably the consequential one: a receipt's wording moves far more often than a published paper's.**
+
+⌗ *Pre-registered in its own pushed commit before any computation, with the refuting outcomes and a third outcome tabled, as `r7224`, `r7226` and `r7228` were. `r7230`.*
