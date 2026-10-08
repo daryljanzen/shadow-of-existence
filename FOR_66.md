@@ -10689,3 +10689,94 @@ it is yours to cost. What I can say for free: it needs no new spectra either.*
 conditioned on where the residual landed — **"if the residual lands on the loading, the clock question
 does not arise at all."** The residual has not landed anywhere, so that condition is not resolved
 either way, and the clock question is neither raised nor retired by this.*
+
+---
+
+## ⛔⛔ `r7213+cc66.160` — **THE COMB IS BUILT AND IT FAILS YOUR VALIDATION BURDEN. THE SPACING DRIFTS, AND THE MISSING PARAMETER IS THE ONE THIS SECTOR IS ABOUT**
+
+*You wrote: **"show it recovers `cc66.156`'s and `cc66.158`'s own model directions ... If it does not
+recover them, that is the result and the data half does not happen."** It does not recover them. The
+data half does not happen, and I have not touched the data in this receipt.*
+
+### ⓵ ✔ THE TEMPLATE IS RIGHT, AND TO SECOND ORDER RATHER THAN EXACTLY
+
+*`$\cos(2\pi[u-a\cos\pi u])$` has its maxima at `$n+a(-1)^{n}$` — verified on a `$10^{-5}$` grid,
+deviation under `$a^{2}/4$` at every `$a$` tried. **So position, spacing and alternation are genuinely
+what is being fitted and a failure below is the model's, not the algebra's.***
+
+### ⓶ ⛔ IT FITS DRIVING-OFF AND MISSES EVERY DRIVING-ON SPECTRUM
+
+| spectrum | `$\ell_A$` fit | banked | error | `$\chi^{2}$` |
+|---|---|---|---|---|
+| `cr_nodrive` | `$300.44$` | `$301.38$` | **`$-0.31\%$`** | `$167$` |
+| `lcdm_nodrive` | `$300.48$` | `$301.38$` | **`$-0.30\%$`** | `$148$` |
+| `cr_base` | `$359.48$` | `$301.38$` | `$+19.28\%$` | `$3715$` |
+| `lcdm_base` | `$359.63$` | `$301.38$` | `$+19.33\%$` | `$3193$` |
+| `cr_rb0.5` | `$351.96$` | `$286.06$` | `$+23.04\%$` | `$1885$` |
+| `cr_rb1.5` | `$375.96$` | `$315.27$` | `$+19.25\%$` | `$23570$` |
+
+***Driving-off to a third of a per cent; driving-on `$19$`–`$23$` per cent high with `$\chi^{2}$` an
+order of magnitude worse. The split is by driving and it is total.***
+
+### ⓷ ⛭⛭ WHY — A COMB'S HIGH GAPS REPEAT AND THESE RISE
+
+*A comb's gaps are `$\ell_A(1\mp2a)$`: the highs equal each other, the lows equal each other.
+`cr_base`'s are `$302/270/312/295$` — **alternating, yes, but the highs rise by `$+10$` and the lows
+by `$+25$`.** Fitting the four gaps with spacing and alternation alone leaves an rms of `$9.5$`
+multipoles; one linear drift term cuts it to `$3.8$`, and on `cr_rb0.5` from `$8.5$` to `$0.5$`.
+**Every spectrum tried wants the drift.***
+
+⇒ ⛭⛭⛭ ***AND OMITTING IT DOES NOT MERELY FIT WORSE — IT RETURNS A WRONG ALTERNATION, by `$33$` to
+`$87$` per cent.*** *`cr_base` goes `$0.0208\to0.0295$`, `cr_rb0.5` `$0.0090\to0.0174$`. **The
+alternation is one of the two components `cc66.158`'s separation rests on, so a three-parameter comb
+would have carried a biased value into the number the sector is using.***
+
+### ⌈ AND THE MISSING PARAMETER IS NOT ARBITRARY — IT IS `cc66.153`'s OWN DRIFT
+
+***A drift in the spacing IS a linear phase drift at fixed `$\ell_A$`, which is exactly `cc66.153`'s
+description of this residual: the `$-96.6^{\circ}$` at the correct spacing.*** *So the instrument
+`r7213` specified is missing precisely the degree of freedom this sector has been chasing since
+`r7181`. **The comb does not fail because combs are the wrong idea; it fails because a comb with
+three parameters is a comb without the drift.***
+
+⛔ ***And adding the fourth is widening the order, which is not mine to do.*** *`r7213` ordered three
+and told me not to reduce the count without saying so; it did not authorise a fourth. **Naming it and
+stopping is the same discipline as `r7203` and `r7211`, and you sustained both.** ⌗ What I can say for
+free: it needs no new spectra, the three-parameter fit already runs, and the driving-off spectra are
+where a four-parameter version would first have to be tested — because they are where the three-
+parameter one already works.*
+
+### ⚠ ONE PITFALL, REPORTED BECAUSE I WALKED INTO IT
+
+***Given a generic basis — each harmonic its own polynomial envelope — `$\chi^{2}$` improves by
+`$122\times$` while `$\ell_A$` moves `$4.7$` points FURTHER from its banked value.*** *So **a good
+`$\chi^{2}$` from a comb fit is not evidence the comb was found**: the extra oscillatory freedom
+absorbs the spectrum rather than locating its comb. Every number above depends on the basis being
+disciplined — one envelope, scalar harmonic ratios — and I would not have known to discipline it if I
+had not first got a perfect fit to a wrong answer.*
+
+### ✔ AND NOTHING IS WITHDRAWN
+
+*`cc66.157` and `cc66.158` use **located peaks with `$\ell_A$` fixed at its banked value**, so the
+drift is common to both sides of every difference they take and never enters as a free parameter. The
+`$5.39\times$`, the opposite senses and the `$\omega_b$` opposition all stand.*
+
+### ⚠ AND TWO OF MY OWN CHECKS CAUGHT TWO OF MY OWN OVERSTATEMENTS
+
+1. *I asserted the template's maxima sit at `$n+a(-1)^{n}$` **to better than `$2\times10^{-4}$`**. It
+   FAILED at `$a=-0.04$`: the displacement `$a\cos\pi u$` is evaluated at the SHIFTED maximum, so the
+   relation carries an `$O(a^{2})$` term I had treated as exact. Re-bounded at `$a^{2}/4$`, and the
+   consequence is stated: the fitted `$a$` is the comb's alternation only to that order.*
+2. *I asserted the generic basis **runs `$\ell_A$` to the search boundary with `$\chi^{2}$`
+   essentially exact**. That is what a LOOSER basis did in my prototype — not what the basis this
+   receipt builds does. The claim is now the one the file measures.*
+
+⌗ *That is six instances of one class now, five of them self-caught before landing: **a second
+computation wearing the first one's authority.** The rule holds and keeps earning: quote the line that
+computes it, and if nothing computes it, that is the work. ⇒ **Twice in this receipt the line that
+computes it was a check I had written to a bound I expected rather than one I had measured** — which
+is the same defect one level up, and the remedy is the same: write the check against the measurement,
+not against the expectation.*
+
+⌗ *Cost: no spectra, no refit. Compute is a few minutes of fitting. **Nothing to stop and say so
+about on that count.***
