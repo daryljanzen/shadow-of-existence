@@ -9764,3 +9764,320 @@ authorship, ownership or scope by a hardcoded path list has this defect waiting 
 statement about where a seat has worked so far, read as a statement about who owns what.* ⌗ *I have
 fixed the one instance that fired. **I have not swept for the others**, and a sweep for `path-list as
 authorship test` is an operator-shaped question, which is `70`'s kind rather than mine.*
+
+---
+
+## ⛭⛭⛭ `r7224` — `PO-31`'s TERMINAL CLAUSE IS NOT CHECKABLE AS WRITTEN, AND NOT FOR THE REASON I WENT LOOKING FOR
+
+*Nothing was ordered. `r7211` retired the other row this seat held and `PO-75`'s live step is `cc66`'s,
+so I took `PO-31`. **Pre-registered first, in its own pushed commit — and my prediction there is
+WRONG.** I expected to find a channel the row had missed. There is no set to miss one from.*
+
+### ⇒ ⓵ THE COUNT THE CLAUSE RESTS ON IS FOUR AND FIVE AT ONCE, AND THE DIFFERENCE IS THE TRANSFER
+
+*Your live clause, set at `r7197`, terminates the row* **`if it is demonstrated that no channel
+available to this construction can supply a red tilt --- four are closed and each by a mechanism`**.
+*The row also says, in its own words at `r6913`,* **`Five channels were closed --- substrate, collapse
+leg, finite duration, interior vacuum, transfer`**.
+
+⇒ ***Both are live text and neither is a typo. They differ because `closed` is many-to-one on this
+row:*** *a CANDIDATE examined and dismissed, and a MECHANISM that yields no tilt.* **The transfer is
+the fifth under the first and not a member under the second — because `r6913` measured that it
+IMPRINTS, so it is the one candidate that is not silent.** ⌗ *And `r7197`'s `the count stays at four`
+was right about its own object: it refused the SEAM'S FLUX, which is a different thing from the
+transfer, and left the count at a number the other reading had already passed.*
+
+### ⇒ ⓶ AND THE QUANTIFIER RANGES OVER A SET THE ROW NEVER WRITES DOWN
+
+*The row carries **three** totality-shaped phrases near `channel` and I read each one rather than
+counting them:* `every channel closed SO FAR`, `ONE CHANNEL IS LEFT`, `the only place a scale
+survives`. ⇒ ***Every one is scoped to the channels ALREADY TRIED.*** *Nowhere does the row say the
+channels named are all the channels this construction contains.*
+
+⛔ ***So the terminal half can be reached by running out of candidates rather than by a demonstration***
+— *which is exactly the distinction your own phrase* `by a mechanism rather than by a failure to find
+one` *protects for each MEMBER and does not extend to the MEMBERSHIP.*
+
+### ⇒ ⓷ AND THE CLAUSE'S FORM IS THE ONE THE ROW ITSELF RETIRED — THE PART I WOULD WANT READ
+
+*`r6913` states* **`The row stops being a channel hunt and becomes a statement about the interior model
+plus one computed requirement on its input`**. *The live clause, set eighty-four revisions later,
+restates the row as a channel hunt.*
+
+⌈ ***And this is not a stale-clause failure — `r7027` built the one-live-clause discipline and `r7197`
+superseded correctly.*** *What came through both passes untouched was the FORM, because each pass
+checked that a clause was CURRENT and neither asked whether it still DESCRIBED the row.* ⛭⛭ **That is
+`r7027`'s own shape one level up: it found a gate checking PRESENCE where the question was CURRENCY,
+and here currency is checked where the question is FIT.**
+
+### ⌗ WHAT I AM NOT DOING, AND THE REPAIR IS YOURS
+
+- ***No absence filed as a fifth closure.*** *`r7210` refused that and you said the refusal is the part
+  to keep; this inherits it. The transfer is exhibited as the reason one label gives two counts, not
+  proposed as a fifth.*
+- ***The four are not re-opened and no verdict on the row is offered.*** *The register is opened
+  read-only and digest-checked unchanged by the receipt itself.*
+- ⚠ ***One draft of this receipt was wrong in the flattering direction:*** *it asserted the row carries
+  NO totality phrase. It carries three. **The claim is now the stronger one because each was read.***
+
+⇒ ***PROPOSED, NOT APPLIED:*** *state the terminal half over the **REQUIREMENT `r6913` computed** — an
+input whose own running is the transfer's negated, which the row already carries as a computed function
+— rather than over a set of channels; and have the count name what it counts. **Both halves are a
+rewording of text the row already contains, and the clause is yours.***
+
+---
+
+## ⌗ `r7213` READ, AND IT NAMES SOMETHING `r7224` HAS NOT DONE YET — SO `r7224` IS NOT FINISHED
+
+*Acknowledged: `r7213`, nothing ordered, `r7224` the work, and the pre-registration endorsed.*
+
+### ⛔ FIRST, THE PART THAT IS MINE TO OWN
+
+***You asked for two outcomes and named what each must say. My result is NEITHER of them, and the
+honest reading is that it is only half the step I pre-registered.***
+
+- *You wrote:* **`if it comes back at exactly four, say what makes the enumeration complete rather
+  than coincident`** *and* **`if the enumeration comes back LONGER than four, the row does not
+  terminate and the open channels are named`**.
+- ***What `r7224` returned is a third thing: there is no enumeration in the row to be four or longer
+  than four.*** *The clause's count is four AND five at once because its word for a closure is
+  many-to-one, and its quantifier's domain is nowhere written — the three totality-shaped phrases the
+  row carries are each scoped to the channels already TRIED.*
+- ⇒ ⚠ ***But my own pre-registration promised the thing you singled out as the honest part:*** *`derive
+  the list from the construction's own structure rather than from the history of what has been tried`.*
+  **`r7224` did not do that. It measured that the ROW has no list, which is a fact about the row and
+  not about the construction.** ⌗ *Those are different deliverables and I am not going to let the
+  first stand in for the second.*
+
+### ⇒ SO THE DERIVATION IS OWED AND I AM DOING IT ON THE SAME PR RATHER THAN FILING `r7224` AS DONE
+
+*`r7224`'s finding stands on its own — a terminal clause whose count is ambiguous and whose domain is
+unwritten cannot be checked whatever the construction contains, and that is worth having independently.*
+**But it is the diagnosis, not the step.** *The step is the enumeration, derived from structure, and
+the `PR` is open.*
+
+⌗ ***And the discriminator cuts against me as well as for me:*** *an enumeration assembled from what
+has been attempted would reproduce the four and prove nothing. **So would an enumeration assembled
+from what the row happens to mention**, which is the material `r7224` actually read.*
+
+### ⌗ TAKEN, WITH NOTHING OWED BACK
+
+- *`PO-75`: the observed point cannot be placed, `21` peaks read where the model has `5`, and the two
+  components collapsing to `$-0.955$` on data. **Noted as a change of blocker for the third time, and
+  the comb fit is `cc66`'s.** I am not touching it.*
+- *`r7218`'s clock question in suspense rather than settled, with the fine-against-broad weighting
+  still unordered on the same reasoning: **taken as stated, and I am not pre-empting it.***
+- *`PO-50` a bounded wait with this seat's `$R_{\rm ta}=5.23\,r_{200}$` beside the survey's reach:
+  nothing owed, and the owed half I asked about at `r7222` — the Local Volume route's own denominator
+  definition — I now read as not worth chasing unless you say otherwise, since the row is a wait.*
+
+---
+
+## ⛭⛭⛭ `r7226` — THE ENUMERATION, DERIVED: **TWO MEMBERS, AND YOUR OWN `r6913` IDENTITY IS ONE OF THEM**
+
+*The half `r7224` owed, done as you asked it: **derived from the construction's own structure rather
+than from the history of what has been tried.** Pre-registered first in its own pushed commit.*
+
+### ⇒ THE RULE, WHICH IS NOT A LIST ANYONE CHOSE
+
+*A tilt is `$d\ln P/d\ln k$`. **Write the output as the construction writes it, take the log-derivative,
+and the product becomes a sum: the channels are the TERMS.*** *A term constant in `$k$` is not a
+channel, and a mechanism that modifies one factor is a sub-candidate of that term rather than a term.*
+
+### ⇒ AND IT RETURNS TWO, WITH YOUR OWN IDENTITY AS THE ONE-TERM CASE
+
+*The output is a product of exactly three factors: the measure, the interior's multiplier, the
+progenitor's amplitude.*
+
+| case | `$k$`-dependent terms |
+|---|---|
+| the measure alone | `0` — its log-derivative is the **constant** `3` |
+| `r6913`'s case, amplitude held constant | **`1`** — the transfer's |
+| the construction in full | **`2`** — the transfer's and the amplitude's |
+
+⇒ ***Your `r6913` identity is this decomposition with one factor held constant***, which is exactly
+why it reads as `the whole k-dependence is the transfer's and the constant is the normalisation's`.
+*The split is verified an identity, residue `0`, not an approximation.*
+
+### ⇒ `TWO, AND HERE IS WHY THERE IS NO THIRD` — IN THE CURRENCY YOU ASKED FOR
+
+***It is a definition, not an absence of imagination.*** *The multiplier is defined as what this
+interior multiplies an incoming amplitude BY — your own* `Measured on unit incoming amplitude, so that
+what comes out is the multiplier itself` *— so every action of the interior is inside it. The amplitude
+is the progenitor's data, so everything the progenitor supplies is inside it. The measure is a pure
+power and cannot tilt.* ⛔ **A third term would have to be an action that is neither the interior's nor
+the progenitor's and is not the measure.**
+
+⌗ *And the controls say the rule would SEE one: a `$k$`-dependent measure returns three, a planted
+fourth factor returns three, a product of constants returns none.*
+
+### ⇒ SO ALL FOUR CLOSED CHANNELS ARE SUB-CANDIDATES, AND THE FIFTH THING YOUR LIST NAMES IS A TERM
+
+*Assigned by which object each modifies:* **substrate**, **collapse leg**, **finite duration** *inside
+the multiplier; the* **interior vacuum** *inside the amplitude, being the state the interior acts ON.*
+⇒ ***So the row has been counting sub-candidates of two terms while asking when the count of TERMS is
+complete.*** *`r7224` measured that the count was four and five at once; this says why the count was
+never the question — **the transfer is not a sub-candidate, it IS one of the two terms.***
+
+### ⚠ MY OWN RULE GOT IT WRONG FIRST, IN THE FLATTERING DIRECTION
+
+***The first draft dropped terms equal to ZERO instead of terms CONSTANT in `$k$`, counted the measure's
+`3` as a channel, and returned THREE.*** *Which is precisely the fifth channel this seat went looking
+for at `r7224` — **manufactured out of its own arithmetic.*** *One line, fixed, and recorded in the
+function's own docstring because a near-miss of that shape is worth more in the open than buried.*
+
+### ⌈ AND THE THIRD OUTCOME FIRED WITH THE PREDICTION, WHICH `r7226` WROTE DOWN IN ADVANCE
+
+*On the derived enumeration* ***your row's terminal condition is already decided by what the row
+carries:*** *the transfer's term is measured and runs; the amplitude's term is free, because a classical
+input's slope is the progenitor's.* ⇒ **That is `r6913`'s `requirement on the progenitor`, reached from
+the other side.**
+
+⛔ ***And I am not filing it as a termination.*** *`r7213` restates the row as open, no closure is filed,
+no fifth channel is named, the register is digest-checked unchanged, and the terminal state is yours to
+declare. **If you want it, what I would say is: the row terminates on the enumeration and what remains
+is not a channel hunt but the requirement, which is where `r6913` already put it.***
+
+## ⛭⛭⛭ `r7228` — `PO-78` READ BY REVERSAL: **ONE IN FOUR OF THE PAPER PINS WOULD NOTICE**
+
+*Nothing was ordered of this seat at `r7213`, and `r7224`/`r7226` are landed and waiting on you. So
+this is `PO-78`'s third subclass, pre-registered in its own pushed commit before any computation.*
+
+### ⇒ THE QUESTION, WHICH IS THE OPPOSITE OF THE TWO ALREADY ASKED
+
+*`r7201+70.1`'s `MULTI` asks whether the sentence can be **taken away** without the pin noticing —
+`249` keys where it can. `S3`'s `OPEN` asks whether the sentence can **succeed** and break the pin —
+`24`.* ⇒ ***Both are blindnesses of the pin's SITE.*** **This asks whether the sentence can be
+TURNED ROUND without the pin noticing** — a blindness of the pin's CONTENT.
+
+⌗ *It is `r7207`'s lesson one layer down. A gate that enumerates what a page HAS can verify every one
+of them and never see what is MISSING; a pin that asserts a string is PRESENT can pass on every push
+and never see the clause around it change sides.*
+
+### ⇒ THE TEST ASSERTS NOTHING ABOUT THE LITERAL, WHICH IS WHAT MAKES IT A MEASUREMENT
+
+⛔ **No word-list is applied to the quoted string and no intent is guessed.** The four transform
+families — negation at a declared auxiliary, a closed antonym table, a closed quantifier table, every
+numeral — act on **the CLAUSE in the shipped paper**, the span the literal's own assertion occupies,
+cut at the marks that separate one assertion from the next. *Whether the literal survives is then a
+pure substring question.* **A transform that leaves the clause unchanged is DISCARDED, and a clause no
+transform can move is `UNFLIPPABLE` and is NOT counted blind** — an instrument that cannot move a
+sentence has not shown that a pin survives anything.
+
+### ⇒ AND THE SPLIT, OVER THE `1,140` READABLE OF `1,489` PAPER-TARGETED KEYS
+
+| verdict | keys | what it means |
+|---|---|---|
+| `DISCRIMINATING` | **`279`** | every reversal destroys the literal — the pin quotes the polarity, the quantity or the number and **would go red** |
+| `REVERSAL` | **`442`** | survives **all four** — the clause can be turned round four independent ways and the pin sees none |
+| `REVERSAL-PARTIAL` | `419` | survives at least one, not all |
+
+⇒ ***`861` of `1,140` survive at least one reversal of their own clause, and the pins actually doing
+the job are ONE IN FOUR.*** *Each of the `442` **exhibits** the reversed clause it stays green on —
+the verdict is a demonstration, not an inference from the literal's shape.*
+
+⌗ **It is a new class and not a renaming, measured rather than asserted:** `33%` multi-site against
+your `MULTI`, `0` overlap with `OPEN`, `442 > 249`, and it runs across `189` of the `256` receipts
+holding a paper-targeted key.
+
+### ⚠ THE TIER THIS RECEIPT WANTED TO LEAD WITH DOES NOT HOLD, AND IS REPORTED AS A LIMIT
+
+***`341` keys sit in a clause carrying exactly ONE declared auxiliary, and the first draft called that
+`the clause's only assertion` — so that negating it would reverse the very proposition the literal
+belongs to.*** ⛔ **It does not follow, and your own paper says so:**
+
+> *`the near-horizon geometry of the degenerate member is $\mathrm{dS}_{2}\times S^{2}$, which carries
+> a scale of its own`*
+
+**One declared auxiliary. Two finite verbs.** `carries` is invisible to a list of auxiliaries, so the
+negation lands on `is`, and the pinned clause `carries a scale of its own` was never reversed at all.
+⇒ ***An auxiliary list is not a parser and `one auxiliary` is not `one assertion`.*** *The tier is kept
+as `LONE-AUX`, a count of landing sites, with no claim about which proposition got negated.* ⌗ **The
+headline never needed it:** `one in four would go red` is a count of what the pins QUOTE.
+
+### ⌈ THE LIMITS, COUNTED AND EXCLUDED — `349` OF THE `1,489`
+
+`218` `ABSENT` *(the needle is built at run time, is a regex, or names an appendix rather than a
+paper — not asserted broken, just not readable by substring)*; `60` `UNFLIPPABLE`; `18` quoting a
+reference key or a label rather than a claim; `53` `SATURATED` *(more than twenty sites, which your
+`MULTI` already settled as a pin on the FILE — reading twenty of five hundred would be a verdict on a
+sample dressed as a verdict on a key)*. ⛔ **None of the four is counted blind and none is counted
+clean: an unmeasured key is not a clean one.**
+
+### ⛭ WHAT IS YOURS TO DECIDE, AND IT IS NOT A FORK I CAN SETTLE
+
+⛔ ***No verdict is filed on any receipt, no baseline row is adjudicated, and nothing outside the
+receipt is written.*** **The `442` are a REPAIR LIST and adjudicating a baseline key belongs to that
+baseline's owner.** What I would say if you want it:
+
+1. **`DISCRIMINATING` is a floor, not a certificate** — it means the pin would notice one of four
+   declared reversals. It is not a verdict that the pin is sound.
+2. **The repair that fits the class is not a longer literal** — lengthening a quote makes it break on
+   rewording, which is the defect `MULTI` and this class both sit downstream of. *The repair that
+   discriminates is to pin the clause's POLARITY along with its content: quote the negation, the
+   quantifier or the number, or compute the claim instead of quoting it.*
+3. **And `r7211`'s adopted contract already covers the new-work half** — a receipt that rules out a
+   composition declares the alternative, computes it, and carries a check that fails on it. *This
+   class is what the retrofit half would cost, measured: `442` keys over `189` receipts.*
+
+⌗ *The population and all eighteen paper bodies are read at a pinned commit so no count can move when
+a seat adds a file; the live state is asserted separately as a disjunction rather than as a value; and
+the pinned baseline is digest-checked byte-identical after the run. `26` gates, all pass, about three
+seconds. `UNADJUDICATED` is unmoved at `2167` — this revision adds no quote-pin key.*
+
+### ⚠ `r7228` ADDENDUM — ROUTED, NOT EDITED: **THE ASSERTION CENSUS'S THIRD CLAUSE NEVER FIRES, AND I TRIPPED IT**
+
+*`r7228`'s first draft ended* `raise SystemExit(1 if _bad else 0)` *— which acts on the outcome — and
+the fast job went RED on the assertion census: the receipt read as carrying* ***NO check at all.***
+
+⌗ **The cause is exactly the thing that gate's own comment warns about.** *`corpus/acting_check.py`'s
+third clause was added because `a rule made of spellings misses the next spelling`, and it asks the
+right question — does a non-zero exit depend on the outcome of a comparison? — but it answers it by
+walking for an `ast.Compare` node.* ⛔ **A truth value written with `not` is not a `Compare`, and a name
+bound by a COMPREHENSION target is not in the assignment table the clause walks.** So:
+
+| form | the rule says |
+|---|---|
+| `_bad = [n for n, ok in CHECKS if not ok]` then `SystemExit(1 if _bad else 0)` | **no check at all** |
+| the same, with `if ok == False` | carries a check |
+
+⇒ ***The verdict turns on the spelling of the truth test and not on whether the exit depends on an
+outcome, which is the clause's own stated question.***
+
+⛔ **AND THE CLAUSE FIRES ON NOTHING IN THIS SEAT'S FAMILY.** *Run it alone over `S1`–`S7`:*
+`acting_exit` *is* `False` **for all seven.** *Every one of them passes the census on the literal
+`raise SystemExit(1)` spelling — the FIRST clause — so the third has been carrying no load here at all.*
+
+### ⇒ THE PATCH, WITH THE RULE'S OWN TWO CONTROLS RUN AGAINST IT
+
+⛔ *Not applied: the rule is shared by `check_receipts` and `lint_assertions`, so a change to it moves
+the census for the whole corpus and that is yours.* ⌗ *`r7228` conforms to the recognised spelling
+instead of waiting, and records why in the file.*
+
+```python
+# in comparison_derived, track names bound by a comprehension target too
+    assigns = []
+    for n in ast.walk(tree):
+        if isinstance(n, (ast.ListComp, ast.SetComp, ast.GeneratorExp, ast.DictComp)):
+            for g in n.generators:
+                for t in ast.walk(g.target):
+                    if isinstance(t, ast.Name):
+                        assigns.append((t.id, g.iter))
+# ... and count a truth value, not only a comparison operator
+                if isinstance(sub, (ast.Compare, ast.BoolOp)) \
+                        or (isinstance(sub, ast.UnaryOp) and isinstance(sub.op, ast.Not)) \
+                        or (isinstance(sub, ast.Name) and sub.id in derived):
+```
+
+**Measured, not proposed on faith:**
+
+* the missed form above is **accepted**;
+* `CONTROL_REAL` is still **accepted** and `CONTROL_HOLLOW` is still **REFUSED** — *the pair the file
+  carries precisely so a future edit runs them, and a rule that takes both is the hole and not the fix*;
+* and over every `receipts/**/*.py`, the count carrying no check is **`0` before and `0` after** ⇒
+  ***the patch cannot lower the census by widening it. It closes the hole for the next spelling and
+  moves nothing that stands today.***
+
+⌗ *If you would rather the clause stay as it is, the alternative is to retire its comment's claim: a
+rule made of spellings is what it still is, and saying so costs nothing. Either is a decision; leaving
+the comment and the behaviour disagreeing is the one state I would not pick.*
