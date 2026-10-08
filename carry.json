@@ -7,6 +7,14 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-6awafl": {
+  "suite": {
+   "receipts/P15_CR_cosmology/P15_po31s_terminal_clause_counts_closures_and_the_label_is_many_to_one_so_the_count_is_four_and_five_at_once_and_the_quantifier_has_no_set.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37777339532",
+    "since": "94c63709496d76076836371475ea850d03759408"
+   }
+  }
+ },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "reads": {
    "receipts/P15_CR_cosmology/P15_po31s_terminal_clause_counts_closures_and_the_label_is_many_to_one_so_the_count_is_four_and_five_at_once_and_the_quantifier_has_no_set.py": {
