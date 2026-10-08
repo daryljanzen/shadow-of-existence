@@ -9937,3 +9937,90 @@ the other side.**
 no fifth channel is named, the register is digest-checked unchanged, and the terminal state is yours to
 declare. **If you want it, what I would say is: the row terminates on the enumeration and what remains
 is not a channel hunt but the requirement, which is where `r6913` already put it.***
+
+## ⛭⛭⛭ `r7228` — `PO-78` READ BY REVERSAL: **ONE IN FOUR OF THE PAPER PINS WOULD NOTICE**
+
+*Nothing was ordered of this seat at `r7213`, and `r7224`/`r7226` are landed and waiting on you. So
+this is `PO-78`'s third subclass, pre-registered in its own pushed commit before any computation.*
+
+### ⇒ THE QUESTION, WHICH IS THE OPPOSITE OF THE TWO ALREADY ASKED
+
+*`r7201+70.1`'s `MULTI` asks whether the sentence can be **taken away** without the pin noticing —
+`249` keys where it can. `S3`'s `OPEN` asks whether the sentence can **succeed** and break the pin —
+`24`.* ⇒ ***Both are blindnesses of the pin's SITE.*** **This asks whether the sentence can be
+TURNED ROUND without the pin noticing** — a blindness of the pin's CONTENT.
+
+⌗ *It is `r7207`'s lesson one layer down. A gate that enumerates what a page HAS can verify every one
+of them and never see what is MISSING; a pin that asserts a string is PRESENT can pass on every push
+and never see the clause around it change sides.*
+
+### ⇒ THE TEST ASSERTS NOTHING ABOUT THE LITERAL, WHICH IS WHAT MAKES IT A MEASUREMENT
+
+⛔ **No word-list is applied to the quoted string and no intent is guessed.** The four transform
+families — negation at a declared auxiliary, a closed antonym table, a closed quantifier table, every
+numeral — act on **the CLAUSE in the shipped paper**, the span the literal's own assertion occupies,
+cut at the marks that separate one assertion from the next. *Whether the literal survives is then a
+pure substring question.* **A transform that leaves the clause unchanged is DISCARDED, and a clause no
+transform can move is `UNFLIPPABLE` and is NOT counted blind** — an instrument that cannot move a
+sentence has not shown that a pin survives anything.
+
+### ⇒ AND THE SPLIT, OVER THE `1,140` READABLE OF `1,489` PAPER-TARGETED KEYS
+
+| verdict | keys | what it means |
+|---|---|---|
+| `DISCRIMINATING` | **`279`** | every reversal destroys the literal — the pin quotes the polarity, the quantity or the number and **would go red** |
+| `REVERSAL` | **`442`** | survives **all four** — the clause can be turned round four independent ways and the pin sees none |
+| `REVERSAL-PARTIAL` | `419` | survives at least one, not all |
+
+⇒ ***`861` of `1,140` survive at least one reversal of their own clause, and the pins actually doing
+the job are ONE IN FOUR.*** *Each of the `442` **exhibits** the reversed clause it stays green on —
+the verdict is a demonstration, not an inference from the literal's shape.*
+
+⌗ **It is a new class and not a renaming, measured rather than asserted:** `33%` multi-site against
+your `MULTI`, `0` overlap with `OPEN`, `442 > 249`, and it runs across `189` of the `256` receipts
+holding a paper-targeted key.
+
+### ⚠ THE TIER THIS RECEIPT WANTED TO LEAD WITH DOES NOT HOLD, AND IS REPORTED AS A LIMIT
+
+***`341` keys sit in a clause carrying exactly ONE declared auxiliary, and the first draft called that
+`the clause's only assertion` — so that negating it would reverse the very proposition the literal
+belongs to.*** ⛔ **It does not follow, and your own paper says so:**
+
+> *`the near-horizon geometry of the degenerate member is $\mathrm{dS}_{2}\times S^{2}$, which carries
+> a scale of its own`*
+
+**One declared auxiliary. Two finite verbs.** `carries` is invisible to a list of auxiliaries, so the
+negation lands on `is`, and the pinned clause `carries a scale of its own` was never reversed at all.
+⇒ ***An auxiliary list is not a parser and `one auxiliary` is not `one assertion`.*** *The tier is kept
+as `LONE-AUX`, a count of landing sites, with no claim about which proposition got negated.* ⌗ **The
+headline never needed it:** `one in four would go red` is a count of what the pins QUOTE.
+
+### ⌈ THE LIMITS, COUNTED AND EXCLUDED — `349` OF THE `1,489`
+
+`218` `ABSENT` *(the needle is built at run time, is a regex, or names an appendix rather than a
+paper — not asserted broken, just not readable by substring)*; `60` `UNFLIPPABLE`; `18` quoting a
+reference key or a label rather than a claim; `53` `SATURATED` *(more than twenty sites, which your
+`MULTI` already settled as a pin on the FILE — reading twenty of five hundred would be a verdict on a
+sample dressed as a verdict on a key)*. ⛔ **None of the four is counted blind and none is counted
+clean: an unmeasured key is not a clean one.**
+
+### ⛭ WHAT IS YOURS TO DECIDE, AND IT IS NOT A FORK I CAN SETTLE
+
+⛔ ***No verdict is filed on any receipt, no baseline row is adjudicated, and nothing outside the
+receipt is written.*** **The `442` are a REPAIR LIST and adjudicating a baseline key belongs to that
+baseline's owner.** What I would say if you want it:
+
+1. **`DISCRIMINATING` is a floor, not a certificate** — it means the pin would notice one of four
+   declared reversals. It is not a verdict that the pin is sound.
+2. **The repair that fits the class is not a longer literal** — lengthening a quote makes it break on
+   rewording, which is the defect `MULTI` and this class both sit downstream of. *The repair that
+   discriminates is to pin the clause's POLARITY along with its content: quote the negation, the
+   quantifier or the number, or compute the claim instead of quoting it.*
+3. **And `r7211`'s adopted contract already covers the new-work half** — a receipt that rules out a
+   composition declares the alternative, computes it, and carries a check that fails on it. *This
+   class is what the retrofit half would cost, measured: `442` keys over `189` receipts.*
+
+⌗ *The population and all eighteen paper bodies are read at a pinned commit so no count can move when
+a seat adds a file; the live state is asserted separately as a disjunction rather than as a value; and
+the pinned baseline is digest-checked byte-identical after the run. `26` gates, all pass, about three
+seconds. `UNADJUDICATED` is unmoved at `2167` — this revision adds no quote-pin key.*
