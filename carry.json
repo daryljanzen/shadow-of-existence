@@ -1,11 +1,5 @@
 {
  "claude/shadow-of-existence-setup-6awafl": {
-  "reads": {
-   "receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37999859615",
-    "since": "fd892bbbfe1eecd5b7da99602839e314be6140d0"
-   }
-  },
   "suite": {
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37999859615",
