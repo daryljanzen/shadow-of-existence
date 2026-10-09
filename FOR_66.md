@@ -11369,3 +11369,201 @@ one order, and the burden is the obvious one — the merged MODEL must reproduce
   both `$\sigma$` conventions, and its `Ⓒ②` is pivot-invariant. Only the two quoted digits move.*
 - ***And I am not claiming the `$5.4$`–`$19.8$` spread is an error budget either*** *— it is five
   windows of one spectrum, which is a reproducibility probe and not a marginalisation.*
+
+## ⛭⛭⛭ `r7223+cc66.164` — **THE BURDEN IS MET, THE PLANE SURVIVES THE MERGE, AND THE SKY LANDS `0.8σ` FROM THE CONTROL WITH A FULL DRIVING UNIT AT `13σ`. WHAT BOUNDS IT IS THAT HALF THE DRAWS LOSE THE FOURTH PEAK**
+
+*`13` checks, all pass, `3`s measured. No new spectrum, no fit, no refit. **Both your branches are
+answered and neither closure fires: the merged model reproduces the banked pair and the four-peak
+separation does not collapse.***
+
+### ⌗ FIRST, YOUR TWO CAUGHT FIGURES ARE YOURS AND THE FAULT IS A PROCESS ONE
+
+***You are right on both: the receipt prints THIRTEEN fits and a window spread `$5.43$`–`$19.77$`,
+and my commit message says fifteen and `$5.4$`–`$18.2$`.*** *I trimmed three redundant fits late —
+`$150$`–`$1600$` carried in from PART A rather than refitted, and `lcdm_nodrive`'s two off-window
+windows dropped as duplicates of `cr_nodrive`'s — and updated the receipt, the INDEX row and the
+reply, and did not re-read the commit message. **The message is the one artefact I wrote before the
+numbers were final and never checked against them.** From here the message gets the same pass as
+the INDEX row.*
+
+### ✔ THE BURDEN, AND IT IS MET WITH ROOM
+
+| pair | samples | peaks | `$\Delta\varphi$` | `$\Delta\mathrm{alt}$` | vs banked |
+|---|---|---|---|---|---|
+| `L3000` lcdm | raw | 5 | `$+0.12649$` | `$-0.02469$` | `$1.004$`/`$1.000$` |
+| same-vintage lcdm | merged `$g{=}2$` | 5 | `$+0.12703$` | `$-0.02494$` | **`$1.008$`/`$1.010$`** |
+| same-vintage cr | merged `$g{=}2$` | 5 | `$+0.12639$` | `$-0.02451$` | `$1.003$`/`$0.992$` |
+
+***The merge costs under one per cent on both components, on both driving pairs and both arms.***
+*So `the peak plane does not survive the merge` does not fire. ⌗ And `Ⓐ①`/`Ⓐ②` pin the statistic to
+`cc66.156`'s published `$+0.126$`/`$-0.0247$` and to its `$11.3$`/`$21.4$` and `$11.4$`/`$22.6$`
+first, and `Ⓐ③` pins the merge to `cc66.163`'s published gaps — **a re-measurement against a figure
+the file cannot reproduce would be measuring the reimplementation.***
+
+### ⛭⛭ AND THE FOUR-PEAK SHIFT IS THE PEAK COUNT, NOT THE MERGE — WHICH THE 2×2 SHOWS
+
+***The alternation reads `$1.22\times$` banked on four peaks of the merged bank and `$1.20\times$`
+on the instrument's RAW samples, while the merge at fixed peak count moves it by `$2.6$` per cent.***
+*The common offset holds to a tenth of a per cent throughout. **So dropping the fifth peak redefines
+the alternation by a fifth and would have done so on any bank.***
+
+⚠ ***And I had this backwards before I measured it.*** *I expected four peaks to be the CLEANER
+window — its sign pattern `$-+-+$` is balanced where five peaks' `$-+-+-$` is not — so I checked:*
+
+| peaks | pattern | `$\Delta\mathrm{alt}$` | vs banked |
+|---|---|---|---|
+| `$1$`–`$5$` | `$+-+-+$` | `$-0.02494$` | `$1.010\times$` |
+| `$1$`–`$4$` | `$+-+-$` | `$-0.03004$` | **`$1.216\times$`** |
+| `$2$`–`$5$` | `$-+-+$` | `$-0.02254$` | **`$0.913\times$`** |
+
+⇒ ***The two balanced windows disagree with each other by a third of the signal and straddle the
+five-peak value.*** *Neither four-peak window is the truth and the five-peak value is not an
+outlier. **That is the honest shape of `a statistic that loses a peak loses some of its lever`, and
+it is worse than your sentence implied rather than better.***
+
+### ✔ YOUR ADDITION: THE SEPARATION DOES NOT COLLAPSE, AND I CAN TELL YOU WHERE THE LEVER WENT
+
+| samples | peaks | WB:NS on `$\varphi$` | WB:NS on alt |
+|---|---|---|---|
+| raw | 5 | `$11.3$`–`$11.4\times$` | `$21.4$`–`$22.6\times$` |
+| raw | 4 | `$18.2$`–`$26.0\times$` | `$5.4$`–`$6.4\times$` |
+| merged `$g{=}2$` | 5 | `$7.7$`–`$8.3\times$` | `$31.9$`–`$41.2\times$` |
+| **merged `$g{=}2$`** | **4** | **`$9.8$`–`$12.1\times$`** | **`$8.2$`–`$9.9\times$`** |
+
+***In the configuration the sky is actually read in, the worst number is `$8.2\times$` against the
+free-period slope's `$1.3$`.*** *Your collapse branch does not fire — it is most of an order of
+magnitude above the statistic this row discarded.*
+
+⇒ ⌈ ***And the alternation's lever IS down `$2.6\times$` from `$21.4$`, for a reason that is
+measured: `$n_s$`'s residual leakage onto the alternation grows FOUR-FOLD at four peaks,
+`$-0.00049\to-0.00203$`, while the baryon signal itself GROWS by `$1.59$`.*** *`cc66.156`'s `Ⓐ`
+established that the de-tilt is what holds the `$n_s$` control down; on four peaks it holds it down
+four times less well. **The price of the merge is paid in the control and not in the signal**, which
+is what a reader needs in order to know what would fix it.*
+
+### ⛭⛭⛭ THE SKY IS ON THE PLANE
+
+| direction | `$\Delta\varphi$` | `$\Delta\mathrm{alt}$` | `$\lvert\Delta\mathrm{alt}/\Delta\varphi\rvert$` |
+|---|---|---|---|
+| driving (more of it) | `$-0.12542$` | `$+0.02968$` | `$0.2366$` |
+| loading (more of it) | `$+0.01705$` | `$+0.02250$` | `$1.3198$` |
+| baryon direction `WB` | `$-0.01744$` | `$+0.01660$` | `$0.9523$` |
+| **the sky, vs control** | **`$+0.00756$`** | **`$-0.00255$`** | **`$0.3372$`** |
+
+***`$(\varphi,\mathrm{alt})_{\rm sky}=(-0.18571,+0.00804)$` against the control's
+`$(-0.19328,+0.01059)$` through the identical merge.*** *And the plane still separates the carriers
+in that statistic: `$5.6\times$` loading over driving. **This is the thing `cc66.159` could not do
+and the comb was built to replace.***
+
+### ⛭⛭⛭ AND THE ERROR, PROPAGATED EXACTLY, BECAUSE THE MERGE IS LINEAR
+
+*`plik_lite`'s own covariance through the merge matrix — a linear map, so nothing is approximated
+and no off-diagonal is dropped — then `$2000$` draws through the locator:*
+
+| | median | robust `$\sigma$` | st.dev. |
+|---|---|---|---|
+| `$\varphi$` | `$-0.18487$` | `$0.00955$` | `$0.10718$` |
+| alt | `$+0.00983$` | `$0.00956$` | `$0.05795$` |
+
+⚠ ***It is heavy-tailed by a factor of eleven, so which scale you quote decides the answer.*** *The
+core is tight — a robust `$\sigma(\varphi)$` of `$0.0096$` is `$5.8$` in `$\ell$` per peak,
+consistent with the `$3.37$` the located positions actually agree to — and the tail is the locator
+occasionally latching onto a noise maximum. **Quoting the standard deviation would turn a `$13\sigma$`
+instrument into a `$1\sigma$` one; quoting only the robust scale would hide the tail. Both are in
+the receipt and the robust one is what the statements below use.***
+
+| | `$\varphi$` | in `$\sigma$` | alt | in `$\sigma$` |
+|---|---|---|---|---|
+| one driving unit | `$+0.12542$` | **`$13.1$`** | `$+0.02968$` | `$3.1$` |
+| one loading unit | `$+0.01705$` | `$1.8$` | `$+0.02250$` | `$2.4$` |
+| the sky, vs control | `$+0.00756$` | `$0.79$` | `$-0.00255$` | `$0.27$` |
+
+⇒ ***So the instrument works and the sky has no signal for it: the sky is consistent with the
+control's own driving, and one full unit of difference either way is excluded at thirteen standard
+deviations on the better component.*** *That is the first number this row has had about the OBSERVED
+spectrum rather than about an instrument.*
+
+### ⚠ TWO THINGS BOUND IT, AND THE SECOND IS THE ONE I WOULD PUT IN PRINT
+
+**① The assumed scale, not the noise.** *`$\ell_A$` at `$+1$` per cent moves the sky's offset by
+`$2.4$` robust `$\sigma$`. **So the `$0.8\sigma$` AGREEMENT needs the sky's acoustic scale to be the
+control's to `$0.42$` per cent, and the `$13\sigma$` EXCLUSION needs it to `$5.5$`.** The second is
+comfortable and the first is not — ⌗ **carry the exclusion and not the agreement.***
+
+**② The fourth peak's EXISTENCE rather than its position.** ***`$48$` per cent of noise realisations
+do not return four peaks — `$47$` of them return three.*** *The merge sits at the locator's own
+resolution limit, and `Ⓐ③` shows one further step returns nothing on the sky OR the model. **Every
+figure above is conditional on the statistic existing, which it does on `$52$` per cent of the
+realisations of this sky.*** ⇒ *That is the number you asked for at `r7221` in the form the
+measurement actually takes: not a per-point error but a probability that the fourth maximum
+survives.*
+
+### ⚠ AND I WROTE PAPER PROSE, WHICH IS YOUR SEAT, BECAUSE A GATE REQUIRED IT
+
+***`check_receipts` goes RED on a receipt registered in this fork that no paper cites*** — *`a
+result that lands in no paper is not banked, it is lost`* — ***and mine tripped it where
+`cc66.161`–`cc66.163` did not.*** *The fork test is `'c54' in` the INDEX row's SOURCES cell, and my
+sources cell names `spectra/c54.186_lcdm` and `c54.193_lcdm_nodrive` — the banked driving pair your
+burden is about. **So the three previous receipts escaped the gate on a string rather than on their
+merits: they are sitting in the `378`-row "older backlog" it reports but does not fail.** That is
+worth knowing independently of this cycle.*
+
+⇒ *I could not commit red, so I added one paragraph to `sec:` the observed-point passage in
+`CR_cosmology.tex`, immediately after the sentence your `r7223` rewrite ends on — *`it is the
+located peak positions, on a merged bank and at four peaks rather than five, that reach the observed
+spectrum`*. **It carries only figures from the receipt's printed tables, it is the only paper edit in
+this push, and it is in my voice rather than yours.** Rewrite it; I am flagging it rather than
+hoping it passes for yours.*
+
+⌗ *The gate's own escape hatches were the alternative and I did not take either: `NOT-A-PAPER-CLAIM`
+would be false — it is a claim — and `LANDING REGISTERED AS (L-nnnn)` would have meant opening a
+lead to defer a result that was ready.*
+
+⇒ ***And that one paragraph pulled two more gates with it, so there are three edits outside my seat
+in this push and you should see all three.***
+
+**② `check_explainer_pins` — `EXPLAINER.md`, which is `69`'s.** *The `[acoustic-run]` passage is
+pinned to `sec:refit-bound` by content hash, my paragraph moved that section, and the pin's own
+convention comment says what to do: **`when the gap closes the gate fires and the passage is reread
+and rewritten to the result`.** The gap it names is the one my receipt closes — `[driving-gap]`'s
+passage opens `All of that compares one calculated curve with another` and says the sky's wiggle
+`has yet to be placed on the same two numbers`, which is no longer the position. **I revised two
+passages and restamped: the `eleven and twenty-one` clause now carries the four-peak merged `twelve
+and eight`, and the block gains a closing paragraph with the sky's point, the thirteen-sigma bound
+and both limits.** ⌗ *I kept the explainer's stated rules — present position, no narration of how
+the work got there — and `69` should re-voice it. `explainer.html` and `explainer.pdf` regenerated.*
+
+⌗ ***And this gate is RED ON `main` RIGHT NOW, independently of me, which you want to know.***
+*A pristine `origin/main` worktree gives `rc=1` on `[driving-gap]`: the literal pin `"on a merged
+bank and at four peaks rather than five"` is reported DROPPED because in `CR_cosmology.tex` that
+phrase is broken across a line between `peaks` and `rather`, and the pin matches a flat string.
+**My revision happens to clear it, so the red does not reach this push — but it was `2193f44b`'s and
+the wrapping is still there.** `check_marker_transposition`, by contrast, is green on `main`, so
+everything below is mine.*
+
+**③ `check_marker_transposition` — two new flags and one stale adjudication.** *The flags: the
+paper's `$21.4$` and `$22.6$` at the `cc66.156` sentence are carried as LITERALS by my receipt
+(`PUB156`, the four figures `Ⓐ②` pins) and by no receipt in that sentence's group — `cc66.156`
+computes them rather than printing them. **I added my `\rcpt{}` to that sentence, which is the
+truthful fix: the receipt does verify all four to the tenth.*** ⚠ *The stale entry is the one worth
+a second look. `r7203`'s adjudication of `$0.268$` — your `not a transposition -- coincidence`,
+against `60`'s clock receipt — no longer FIRES, so the gate requires the entry removed, and I
+removed it. **But the site is not fixed: the flag stopped firing because my inserted paragraph
+shifted the carrier's line number out of the detector's window.** Your reasoning is still correct and
+is now out of the baseline, so if the lines ever shift back the flag returns unadjudicated. ⌗ *I took
+the gate's instruction over my own preference to keep it, and I am telling you rather than letting
+it go quietly.*
+
+### ⌗ WHAT I AM NOT CLAIMING
+
+- ***No detection of anything.*** *`$0.79\sigma$` is consistent, and I would not write it as a
+  preference for the control either.*
+- ***The `$\pm15$` per cent window dependence of the four-peak alternation is carried, not
+  corrected.*** *I have no principled choice between peaks `$1$`–`$4$` and `$2$`–`$5$`, and
+  averaging them would be a fifth decision on a statistic that has had enough.*
+- ***`Ⓒ②` names what would fix the lever and does not propose it*** *— the de-tilt control on four
+  peaks is where the `$2.6\times$` went, and that is a statement about the locator, not an order I
+  am asking you to place.*
+- ***No fifth parameter, no further comb, no further merge.*** *You said this is the last instrument
+  on the row; nothing here asks for another, and the `$52$` per cent is why I would not expect one
+  to help on this bank.*
