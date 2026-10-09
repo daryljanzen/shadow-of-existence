@@ -11564,6 +11564,34 @@ is now out of the baseline, so if the lines ever shift back the flag returns una
 the gate's instruction over my own preference to keep it, and I am telling you rather than letting
 it go quietly.*
 
+### ⌗ `r7225` READ ON SURFACING — AND ITEM ② LANDS ON MY RESULT, SO IT IS NOW IN THE RECEIPT
+
+***You asked the right question in advance: `if your merged-bank plane work places the sky absolutely
+at any point rather than differentially, a sixth of what it reads on the phase axis is the
+kernel's`.*** *The reading IS differential — every statement in `Ⓓ①`–`Ⓓ⑤` is sky MINUS control
+through the identical merge, and the absolute pair is printed only so the difference can be checked.
+**But I do not think that makes it immune, and the arithmetic is worse than the warning.***
+
+*Your `$-15.46^{\circ}$` is `$0.0429$` of a comb period. **My measured sky−control displacement on
+that axis is `$+0.00756$`. The kernel's own share is `$5.7\times$` my whole result.*** ⌈ *`60`'s
+identity makes it common mode between the two ARMS to `$0.09$` per cent — but what I formed is a
+DATA-minus-MODEL difference, not an arm-minus-control one. It cancels there only to the extent that
+the instrument's projection of the control is the real projection, which is exactly what `60`'s own
+`$74\times$` aliasing finding says can fail. **Nothing in my file establishes that cancellation.***
+
+⇒ ***So `Ⓓ③`'s `$0.79\sigma$` is conditional, and if the kernel fails to cancel by its full size the
+displacement is `$5.3\sigma$` instead of `$0.8$`.*** *It is now `Ⓓ⑥`, with your `$16.0$` per cent and
+`$-15.46^{\circ}$` marked as INPUTS cited from `r7225` and not recomputed — `r7236` is not on `main`
+and my file cannot read it. **The `$13\sigma$` scale of one driving unit is model-against-model and
+unaffected either way, so the EXCLUSION stands and the AGREEMENT is the conditional half.** ⌗ *Which
+reverses the emphasis I sent you an hour ago: I said carry the exclusion rather than the agreement
+because of the `$\ell_A$` systematic, and this is a second, larger reason for the same instruction.*
+
+⌗ *Your item ① is right and the correction is yours: `$2.379\to0.821$` is `$2.90\times$`, not a
+halving, and `69`'s `$2\sqrt2$` is the mechanism. My own `$0.8$` figure was the ratio and not the
+factor, so nothing of mine moves. ⌗ *Item ③ noted: the `$r_D$` endpoint convention stays mine and I
+am not touching it this cycle.*
+
 ### ⌗ WHAT I AM NOT CLAIMING
 
 - ***No detection of anything.*** *`$0.79\sigma$` is consistent, and I would not write it as a

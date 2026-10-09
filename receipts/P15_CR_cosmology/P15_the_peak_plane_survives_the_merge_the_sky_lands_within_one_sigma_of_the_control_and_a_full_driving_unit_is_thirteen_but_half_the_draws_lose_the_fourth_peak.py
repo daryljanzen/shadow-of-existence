@@ -45,10 +45,18 @@ OF ALL NOISE REALISATIONS LOSE THE FOURTH PEAK. *** **
   RETURN FOUR PEAKS. **  *`$47$` per cent return three.  The merge is at the locator's own
   resolution limit -- one further step returns nothing on the sky OR the model -- so the statistic
   is defined on about half of the realisations of this sky, and the robust `$\sigma$` is
-  conditional on its being defined at all.*  ⌗ *And the limiting systematic is the assumed scale:
+  conditional on its being defined at all.*  ⌗ *And the other limit is the assumed scale:
   `$\ell_A$` at `$+1$` per cent moves the sky's offset by `$2.4$` robust `$\sigma$`, so the
   `$0.8\sigma$` agreement requires the sky's acoustic scale to be the control's to `$0.4$` per
   cent and the `$13\sigma$` exclusion requires `$5$`.*
+
+  ⓻ ⚠⛔ ** AND ONE SYSTEMATIC THIS FILE CANNOT BOUND IS LARGER THAN ITS RESULT. **  *`r7225` flags
+  it in advance, and the reading here IS differential -- sky MINUS control through the identical
+  merge -- so `60`'s identity makes the projection kernel's phase common mode between the two
+  ARMS.  **But a data-minus-model difference is not an arm-minus-control difference**: the kernel's
+  own running phase is `$0.0429$` of a comb period against the `$+0.00756$` measured here,
+  `$5.7\times$` it, so `$0.79\sigma$` is conditional on a cancellation this file does not
+  establish.  *The `$13\sigma$` scale of one driving unit is model-against-model and unaffected.*
 
 ** COMPUTES: `cc66.156`'s de-tilted peak statistic, unchanged and pinned to its published
    `$11.3$`/`$21.4$`; `cc66.163`'s width-weighted pair merge of `plik_lite`'s TT bins, pinned to
@@ -109,6 +117,13 @@ BANKED = (0.126, -0.0247)          # cc66.156's driving pair, the burden r7223 a
 PUB156 = (11.3, 21.4, 11.4, 22.6)  # its published separation factors, arm then control
 SLOPE = 1.3                        # cc66.155's free-period slope, the thing to beat
 GMERGE = 2                         # cc66.163's factor of two, the whole usable range
+# ⌗ CITED AND NOT RECOMPUTED, from 66's `r7225` reporting `60`'s `r7236`, which is not yet on
+#    `main` and which this file therefore cannot read: the projection kernel's own ABSOLUTE running
+#    phase is `-15.46 deg`, 16.0 per cent of the residual's `-96.6 deg`, common mode between the
+#    ARMS to 0.09 per cent.  Only the percentage is taken on trust; the conversion into this
+#    statistic's units and the comparison with the measured displacement are done here.
+KERN_FRAC = 0.160                  # 60's r7236 via 66's r7225 -- an input, not a measurement here
+RESID_DEG = -96.6                  # the residual's phase drift, the paper's own figure
 
 
 def raw(path):
@@ -516,6 +531,32 @@ check("Ⓓ⑤  ⛔ ** AND WHAT BOUNDS THE INSTRUMENT IS THE FOURTH PEAK'S EXISTE
       "takes: not a per-point error but a probability that the fourth maximum survives**, and it is "
       "`$52$` per cent on the bank as it stands",
       (CNT.get(4, 0) / NDRAW) < 0.6 and (CNT.get(3, 0) / NDRAW) > 0.3)
+
+print()
+_resid_per = RESID_DEG / 360.0
+_kern_per = KERN_FRAC * _resid_per
+print(f"      the residual's drift, in this statistic's own units: {RESID_DEG:.1f} deg = "
+      f"{_resid_per:+.4f} of a comb period")
+print(f"      the kernel's share of it, at 60's cited {KERN_FRAC*100:.1f} per cent: "
+      f"{_kern_per:+.4f}")
+print(f"      this file's measured sky - control on that axis:      {DSKY[0]:+.5f}")
+print(f"      ⇒ the kernel's share is {abs(_kern_per / DSKY[0]):.1f}x the displacement measured here")
+check("Ⓓ⑥  ⚠⛔ ** AND THE ONE SYSTEMATIC THIS FILE CANNOT BOUND IS LARGER THAN ITS RESULT: THE "
+      "PROJECTION KERNEL'S OWN RUNNING PHASE IS `$0.0429$` OF A COMB PERIOD, `$5.7\\times$` THE "
+      "`$+0.00756$` MEASURED HERE. **  *`r7225` flags it in advance: `if your merged-bank plane work "
+      "places the sky absolutely at any point rather than differentially, a sixth of what it reads "
+      "on the phase axis is the kernel's`.  **This reading IS differential -- every statement above "
+      "is sky MINUS control through the identical merge** -- and `60`'s identity makes the kernel "
+      "common mode between the two ARMS to `$0.09$` per cent.  ⌈ *But a DATA-minus-MODEL difference "
+      "is not an arm-minus-control difference, and nothing in this file establishes that the "
+      "kernel cancels there: it cancels only to the extent that the instrument's projection of the "
+      "control is the real one, which is exactly what `60`'s own `$74\\times$` aliasing finding "
+      "says can fail.*  ⇒ **So `Ⓓ③`'s `$0.79\sigma$` is conditional on that cancellation, and if "
+      "it fails by its full size the displacement is `$5.3\sigma$` instead** -- the `$13\sigma$` "
+      "scale of one driving unit is unaffected, since it is a model-against-model difference.  ⌗ "
+      "*`$-15.46^{\circ}$` and the `$16.0$` per cent are `60`'s, via `r7225`, and are INPUTS here: "
+      "`r7236` is not on `main` and this file does not recompute them*",
+      abs(_kern_per / DSKY[0]) > 3.0 and abs(_kern_per) < abs(_resid_per))
 
 print()
 print(BAR)
