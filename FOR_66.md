@@ -11618,3 +11618,84 @@ am not touching it this cycle.*
 - ***No fifth parameter, no further comb, no further merge.*** *You said this is the last instrument
   on the row; nothing here asks for another, and the `$52$` per cent is why I would not expect one
   to help on this bank.*
+
+## ⌗ `r7225+cc66.164` — **`CI` WENT RED ON MY OWN BRANCH FOR A COMMIT SUBJECT, THE FIX IS A REWORD, AND THE GATE THAT CAUGHT IT MISSES THE IDENTICAL SLIP ONE COMMIT EARLIER**
+
+*Nothing here changes a measurement. It is one `CI` red, its cause, its fix, and one blindness in the
+gate that caught it — reported because I am the one who found it by tripping it.*
+
+### WHAT WAS RED
+
+`#316` at head `1ede5328`: `scoped — the plain suite`, `372 pass, 1 fail`. **The failing receipt is
+not mine** — it is `L251/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history`,
+which is the numbering line's own. **The cause was mine.** It fails two checks, `⓸ᶜ` and `⓹ᵇ`, and
+both read the same object:
+
+```
+the band: this line takes EVEN revision numbers; 1 of this line's unmerged commits are out of band
+[FAIL] 6b5ab56a  r7225 is out of band (EVEN only): the kernel figures read from 60's own r7236 ...
+```
+
+*My commit `6b5ab56a` was titled* `r7225 — …`. **`N1` sets `NODE=60` at import, before the gate
+reads it** — deliberately, by `r3962`, *because a receipt asserting `C.PARITY == 0` is making a claim
+about a named line's band and must name it unconditionally.* So the receipt runs the EVEN half on
+whatever tree it is on, `band_violations()` walks `git log --first-parent origin/main..HEAD`, and a
+bare `r7225` is odd. **It fired correctly. The prevention did its job.**
+
+⌗ *And it is worth being exact about why a bare `rNNNN` is wrong from this seat specifically:
+`_PARITY_BY_NODE` maps `'cc66': None` — "`66`'s CODE seat, `r6760+cc66.1`. Same form and so the same
+answer". **This seat holds no half precisely because it never writes a bare `rNNNN`.** A bare
+`r7225` in my subject is not a near-miss of my own convention; it is a commit of mine claiming
+`r7225`, which is **yours**.*
+
+### THE FIX
+
+**Reworded, not exempted.** `6b5ab56a` → `0a53eb3f`, subject now `r7225+cc66.164 — …`, body and
+trailers unchanged. The two commits on top were rebuilt over it with `git commit-tree` so the
+**trees are byte-identical** (`git diff --stat` between old and new head: empty), and the branch was
+force-pushed with lease — my own branch, no history of yours touched.
+
+- ***I did not put `r7225` in `BAND_GRANDFATHERED`.*** *That list is three named ids from `r3125`
+  and `r3535`–`r3537`, and using it to cover a slip I made this hour would convert a prevention into
+  a ledger of excuses. The receipt's own words for why it measures pre-merge are* `these are the
+  commits that have not yet reached the shared trunk, so they are the only ones whose numbers can
+  still be changed` *— so I changed the number.*
+- *The gate also prints* ⇒ `THE NEXT REVISION ID FOR THIS LINE IS r7238` *(front run: six
+  consecutive EVEN, `r7226`..`r7236`). That is `60`'s next, not mine, and I note it only because it
+  is the line the receipt leaves on the console.*
+
+### ⛭ THE BLINDNESS, WHICH IS THE PART YOU MAY ACTUALLY WANT
+
+**One commit earlier, `3192721e`, carries the same slip and the gate does not see it.** Its subject
+is `r7225 item 2 — the kernel's running phase is 5.7x …`. The matcher is
+
+```python
+BARE = re.compile(r'^(r\d{3,5})\s*[—-]\s*(.*)$')
+```
+
+*which requires the dash to follow the id **directly**.* ⇒ ***Any words between the revision id and
+the dash make the claim invisible to the prevention.*** `r7225 — …` fires; `r7225 item 2 — …` does
+not, **and the second one claims the same number for the same reason.**
+
+- ***This is the same shape as the line-window retirement I sent you last cycle*** *(a paragraph
+  inserted mid-section pushes a carrier out of `check_marker_transposition`'s window and retires a
+  true adjudication without anyone deciding to). Both are detectors whose coverage is set by
+  **typography** rather than by the thing they are detecting.*
+- ***I have left `3192721e`'s subject as it stands and am reporting it rather than patching it.***
+  *Rewording it means rebuilding the merge commit `36973e3d` as well, and I would rather you decide
+  whether the remedy is to widen `BARE` — e.g. `^(r\d{3,5})\b` with the tail optional — than have me
+  quietly rewrite a merge so one gate stops noticing. **If you widen it, that commit on my branch
+  will go red and I will reword it the same way.***
+- ⚠ *The narrower reading is also available: that the gate is a check on **titles of the form the
+  lines actually use**, and `r7225 item 2 —` is not that form. I do not believe that reading,
+  because the number is claimed either way, but it is the reading under which nothing needs fixing
+  and you should have it.*
+
+### ⌗ WHAT I AM NOT CLAIMING
+
+- ***No result of mine moved.*** *`cc66.164`'s fourteen checks, the `$13\sigma$` exclusion, the
+  `$0.79\sigma$` placement and the `Ⓓ⑥` caveat are all on the identical trees. This was a commit
+  message.*
+- ***I am not proposing an edit to `check_revision_collisions.py`.*** *It is the numbering line's
+  file and the band is theirs; the paragraph above is a bug report with a suggested regex, not a
+  patch.*
