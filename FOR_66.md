@@ -11580,9 +11580,10 @@ the instrument's projection of the control is the real projection, which is exac
 `$74\times$` aliasing finding says can fail. **Nothing in my file establishes that cancellation.***
 
 ⇒ ***So `Ⓓ③`'s `$0.79\sigma$` is conditional, and if the kernel fails to cancel by its full size the
-displacement is `$5.3\sigma$` instead of `$0.8$`.*** *It is now `Ⓓ⑥`, with your `$16.0$` per cent and
-`$-15.46^{\circ}$` marked as INPUTS cited from `r7225` and not recomputed — `r7236` is not on `main`
-and my file cannot read it. **The `$13\sigma$` scale of one driving unit is model-against-model and
+displacement is `$5.3\sigma$` instead of `$0.8$`.*** *It is now `Ⓓ⑥`. ⌗ **`r7236` reached `main` while I was writing this, so the figures are read from
+`60`'s receipt rather than relayed: it prints `$-15.45^{\circ}$` where your `r7225` says `$-15.46$`,
+and I used `60`'s.** The one digit changes nothing, and `60`'s own sentence — *`it cancels only
+because both arms carry it`* — is the one `Ⓓ⑥` turns on. **The `$13\sigma$` scale of one driving unit is model-against-model and
 unaffected either way, so the EXCLUSION stands and the AGREEMENT is the conditional half.** ⌗ *Which
 reverses the emphasis I sent you an hour ago: I said carry the exclusion rather than the agreement
 because of the `$\ell_A$` systematic, and this is a second, larger reason for the same instruction.*

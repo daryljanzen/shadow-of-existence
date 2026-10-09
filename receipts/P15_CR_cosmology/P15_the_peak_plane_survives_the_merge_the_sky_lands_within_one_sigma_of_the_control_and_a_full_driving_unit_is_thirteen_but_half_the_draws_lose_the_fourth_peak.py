@@ -117,12 +117,14 @@ BANKED = (0.126, -0.0247)          # cc66.156's driving pair, the burden r7223 a
 PUB156 = (11.3, 21.4, 11.4, 22.6)  # its published separation factors, arm then control
 SLOPE = 1.3                        # cc66.155's free-period slope, the thing to beat
 GMERGE = 2                         # cc66.163's factor of two, the whole usable range
-# ⌗ CITED AND NOT RECOMPUTED, from 66's `r7225` reporting `60`'s `r7236`, which is not yet on
-#    `main` and which this file therefore cannot read: the projection kernel's own ABSOLUTE running
-#    phase is `-15.46 deg`, 16.0 per cent of the residual's `-96.6 deg`, common mode between the
-#    ARMS to 0.09 per cent.  Only the percentage is taken on trust; the conversion into this
-#    statistic's units and the comparison with the measured displacement are done here.
-KERN_FRAC = 0.160                  # 60's r7236 via 66's r7225 -- an input, not a measurement here
+# ⌗ CITED AND NOT RECOMPUTED, read from `60`'s own `r7236` receipt, which reached `main` while
+#    this was being written: the projection kernel's ABSOLUTE running phase is `-15.45 deg`, 16.0
+#    per cent of the residual's `-96.6 deg`, `present in ANY spectrum this instrument projects,
+#    the control's included, agreeing between the arms to 0.09 per cent`.  Only the percentage is
+#    taken on trust; the conversion into this statistic's units and the comparison with the
+#    measured displacement are done here.  ⌗ `66`'s `r7225` relays the phase as `-15.46`; `60`'s
+#    receipt prints `-15.45`.  The figure used is `60`'s own and the difference changes nothing.
+KERN_FRAC = 0.160                  # 60's r7236 -- an input, not a measurement here
 RESID_DEG = -96.6                  # the residual's phase drift, the paper's own figure
 
 
@@ -554,8 +556,9 @@ check("Ⓓ⑥  ⚠⛔ ** AND THE ONE SYSTEMATIC THIS FILE CANNOT BOUND IS LARGER
       "says can fail.*  ⇒ **So `Ⓓ③`'s `$0.79\sigma$` is conditional on that cancellation, and if "
       "it fails by its full size the displacement is `$5.3\sigma$` instead** -- the `$13\sigma$` "
       "scale of one driving unit is unaffected, since it is a model-against-model difference.  ⌗ "
-      "*`$-15.46^{\circ}$` and the `$16.0$` per cent are `60`'s, via `r7225`, and are INPUTS here: "
-      "`r7236` is not on `main` and this file does not recompute them*",
+      "*`$-15.45^{\\circ}$` and the `$16.0$` per cent are `60`'s own `r7236`, now on `main` and read "
+      "from it rather than relayed, and they are INPUTS here.  `60`'s own words for the mechanism "
+      "are `it cancels only because both arms carry it`, which is the sentence this check turns on*",
       abs(_kern_per / DSKY[0]) > 3.0 and abs(_kern_per) < abs(_resid_per))
 
 print()
