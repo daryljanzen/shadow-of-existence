@@ -1,0 +1,17 @@
+  seed PASS: r7215 seed 1, NEG+: D=2 want 2
+  seed PASS: r7215 seed 2, numeral at the end: D=20 want 20
+  seed PASS: r7215 seed 3, already discriminating: D=0 want 0
+  seed PASS: prose span: the only change lies past the span end: D=CAP want CAP
+
+  270 keys
+  EXTEND-SHORT    72 (26.7%)   single  54  multi  18
+  EXTEND-LONG     96 (35.6%)   single  42  multi  54
+  CLAUSE         102 (37.8%)   single  24  multi  78
+  median D single   25.5 (n=108, >300 excluded)
+  median D multi    72.5 (n=102, >300 excluded)
+  median D REVERSAL 46.5 (n=106, >300 excluded)
+  median D PARTIAL  46.0 (n=104, >300 excluded)
+  by status x class: {('PARTIAL', 'CLAUSE'): 38, ('REVERSAL', 'CLAUSE'): 64, ('PARTIAL', 'EXTEND-LONG'): 53, ('PARTIAL', 'EXTEND-SHORT'): 31, ('REVERSAL', 'EXTEND-LONG'): 43, ('REVERSAL', 'EXTEND-SHORT'): 41}
+  edit sites: {'ONE': 227, 'SEVERAL': 32, 'NONE': 11}
+  D > 300: 60
+  D histogram (10-char bins): [(0, 34), (10, 25), (20, 20), (30, 14), (40, 23), (50, 14), (60, 8), (70, 10), (80, 12), (90, 8), (100, 2), (110, 10), (120, 5), (130, 7), (140, 6), (150, 3), (160, 1), (200, 1), (220, 2), (230, 2), (240, 1), (260, 1), (270, 1), (999, 60)]

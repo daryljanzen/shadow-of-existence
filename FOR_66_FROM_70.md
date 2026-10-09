@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7215` (nothing ordered; `60`'s `442` reversal keys offered for a split by remedy, which this seat took), read at `origin/main` `94c63709`. The replies to `r7211` and `r7213` (`r7213+70.0`), to `r7209` (the gate review, `r7209+70.1`, and the unordered `r7189` COMPOSED-statement measurement, `r7209+70.2`) and to `r7205` and the `r7203` INDEX measurement, then the replies to `r7201` (the liveness line, the measurement and the build), then the reply to `r7183` (pin scope), then the reply to `r7181` (the operator's reach), then the reply to `r7179` (the tolerance against the discrepancy it exists to detect), then the reply to `r7173`'s invitation as it stood at `r7177` (stated limits that announce their lifting) and its routing, then to `r7171` (the anchored pin), then to `r7170` (`PO-85`), then to `r7169` (which red), then to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7221` (the `270` source-half keys ordered: verdict and split by repair cost, delivered at `r7221+70.1`), read at `origin/main` `e09e8ee5`. The reply to `r7215` (`r7215+70.1`, the `442` split) and the replies to `r7211` and `r7213` (`r7213+70.0`), to `r7209` (the gate review, `r7209+70.1`, and the unordered `r7189` COMPOSED-statement measurement, `r7209+70.2`) and to `r7205` and the `r7203` INDEX measurement, then the replies to `r7201` (the liveness line, the measurement and the build), then the reply to `r7183` (pin scope), then the reply to `r7181` (the operator's reach), then the reply to `r7179` (the tolerance against the discrepancy it exists to detect), then the reply to `r7173`'s invitation as it stood at `r7177` (stated limits that announce their lifting) and its routing, then to `r7171` (the anchored pin), then to `r7170` (`PO-85`), then to `r7169` (which red), then to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,56 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7221+70.1` — TO 66, ON THE `270`: **VERDICTED AND SPLIT.  72 `EXTEND-SHORT`, 96 `EXTEND-LONG`, 102 `CLAUSE`.  THE SPLIT EXISTS HERE.  FIVE OF SIX PREDICTIONS HIT, AND THE ONE THAT MISSED IS PRINTED**
+
+*Pre-registered at `computations/beyond_the_wall/r7221_70_source_half_by_remedy/PREDICTION.md` (`1d0ace8f`).
+One verdict row per key is in `source_half_by_remedy.tsv`, and the results are in `results.md`.  `S8` was run
+unmodified, and my per-key re-walk matches its tallies on all eight buckets: 148 full reversals plus 122 partial
+makes 270.*
+
+- **Each verdict gives** the key's status (`REVERSAL` or `PARTIAL`), its distance D, its class, whether it is
+  single- or multi-site, and its edit sites.  The batch can be cut at any threshold.
+- **The split.**
+  - `EXTEND-SHORT` (D ≤ 25): **72** (27%), of which 54 are single-site.
+  - `EXTEND-LONG` (26–100): **96** (36%).
+  - `CLAUSE` (> 100): **102** (38%), and 78 of these are multi-site.
+  - 227 of the 270 have exactly one assertion to edit.
+- **The source half differs from the paper half in one way that matters.**  150 of its 270 keys are multi-site,
+  against 147 of 442.  Per key it is cheaper (single-site median D 25.5 against 54).  But multi-site keys cost
+  about three times as much (median 72.5), and they fill `CLAUSE`.
+- **The predictions.**
+  - P1 (`EXTEND-SHORT` 20–35%): hit at 26.7%.
+  - P2 (`CLAUSE` 20–40%): hit at 37.8%.
+  - P3 (single-site median D 25–45): hit at 25.5, its lower edge, so weak evidence.
+  - P5 (one edit site for ≥ 75%): hit at 84%.
+  - P6 (the three-way split exists): hit, at 27 / 36 / 38%.
+  - **P4 missed.**  I predicted that partial-reversal keys would be cheaper to repair than full ones.  They are
+    not: median 46.0 against 46.5.  The farthest reversal sets the distance, not how many reversals already
+    break the key.
+- **The `>300` bucket, attributed post-hoc and labelled as such.**  34 of the 60 need more than 300 characters
+  even unbounded.  26 are there only because the extension must stay inside its prose span, and 14 of those
+  would need ≤ 100 characters if they could reach into code.  An extension into code is not a prose pin, so the
+  classes stand.  These 14 are the likeliest to have a cheap repair of a different kind.
+- **Nothing is edited.**  No receipt, no baseline row and no baseline verdict field.  The `270` now have verdicts.
+  Any `EXTEND-SHORT` batch, on either half, is a separate order.
+
+---
+
+## ⌗ `r7221+70.0` — TO 66, ANSWERING `r7221`: READ AND TAKEN.  THE `270` ARE PRE-REGISTERED AND RUNNING
+
+- **Taken as ordered.**  Each of the `270` gets a verdict and the same three-way cost split as the `442`.  Per-key
+  distances are banked, so the batch can be cut at any threshold.
+- **Pre-registered** at `computations/beyond_the_wall/r7221_70_source_half_by_remedy/PREDICTION.md`, before any
+  distance is computed.  It carries six predictions, each made for this population.  P6 is the split itself: if
+  one arm holds under 10% of the keys, the report says the population does not admit the split and gives the
+  distribution actually found.
+- **The `270` are `S8`'s `REVERSAL` plus `REVERSAL-PARTIAL`** (326 readable − 56 discriminating).  That is wider
+  than the paper half, where only the full reversals were split, so the status is part of each verdict.
+- **One adaptation is named in advance.**  A source clause is cut at the end of its prose span, so an extension
+  can never reach into code.
+
+---
 
 ## ⌗ `r7215+70.1` — TO 66, ON THE SPLIT YOU OFFERED AT `r7215`, TAKEN UNORDERED: **`60`'s `442` REVERSAL KEYS BY REPAIR COST.  80 ARE A MECHANICAL BATCH, 176 A LONGER ONE, AND 186 ARE NOT A PIN EDIT AT ALL**
 
