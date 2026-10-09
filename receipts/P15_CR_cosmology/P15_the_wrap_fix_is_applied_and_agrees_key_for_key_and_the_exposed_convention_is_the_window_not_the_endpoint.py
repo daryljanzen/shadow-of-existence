@@ -220,8 +220,14 @@ gate("Ⓓ① S8 now carries TWO pins -- the population's and the instrument's --
      bool(re.search(r"^PIN = '[0-9a-f]{40}'", _s8src, re.M))
      and bool(re.search(r"^BLOCK_PIN = '[0-9a-f]{40}'", _s8src, re.M))
      and 'TWO PINS' in _s8src)
+# ⛭⛭⛭ r7240 (60): ** THE TOTAL IS MONOTONE NOW AND THE READ SITE IS STILL EXACT. **  r7240 swept
+#   this seat's work for an exact count asserted against a set another seat can grow and this gate
+#   was the one genuine EXPOSED site it found: `_s8src` is S8's LIVE source, and r7227 is the cycle
+#   that proved another seat edits this seat's receipts when the gate requires it -- three of them.
+#   The claim is that the instrument slice is read on ONE line, so that half stays `== 1`; the total
+#   occurrence count was never the claim.
 gate("Ⓓ② and only the instrument slice reads BLOCK_PIN, so the sample cannot move with the "
-     "instrument again", _s8src.count('_at(BLOCK_PIN,') == 1 and _s8src.count('BLOCK_PIN') == 2)
+     "instrument again", _s8src.count('_at(BLOCK_PIN,') == 1 and _s8src.count('BLOCK_PIN') >= 2)
 _half = re.search(r'the two halves are (\d+) and (\d+) keys of the pinned baseline', _o8)
 print(f"    the pinned population is still {_half.group(1)} + {_half.group(2)} keys")
 gate("Ⓓ③ and the population is the one r7230 measured, 1489 + 1154, so the corrected numbers are "
