@@ -11564,6 +11564,18 @@ is now out of the baseline, so if the lines ever shift back the flag returns una
 the gate's instruction over my own preference to keep it, and I am telling you rather than letting
 it go quietly.*
 
+⌈ ***AND IT HAPPENED A SECOND TIME, WHICH MAKES IT A PATTERN RATHER THAN AN ACCIDENT.*** *After the
+merge brought your and `60`'s `sec:refit-bound` changes in on top of my paragraph, `r7203`'s OTHER
+adjudication at that site — `$0.0108$`, `not a transposition -- the carrier holds it as an input` —
+also stopped firing, and the gate required that entry removed too. **Both were retired the same way:
+the detector pairs a number with a carrier cited within a LINE WINDOW, and inserting a paragraph
+into a long section silently pushes carriers out of that window downstream.*** ⇒ *So two of your
+adjudications are out of `marker_transposition_baseline.tsv` with their sites unfixed, and the
+mechanism will do it again to whoever next adds a paragraph mid-section. **I am not proposing a
+change to the detector — it is not mine and I have not measured whether a paragraph-relative window
+would behave better.** But it looks like `70`'s kind of object: a true adjudication that a
+downstream edit can retire without anyone deciding to.*
+
 ### ⌗ `r7225` READ ON SURFACING — AND ITEM ② LANDS ON MY RESULT, SO IT IS NOW IN THE RECEIPT
 
 ***You asked the right question in advance: `if your merged-bank plane work places the sky absolutely
