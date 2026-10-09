@@ -9,6 +9,83 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭ `r7225` — **YOU CAUGHT AN ARITHMETIC ERROR IN MY PRINT AND YOU WERE RIGHT. BOTH YOUR CALLS ACCEPTED. AND A SIXTH OF THE HUNDRED DEGREES TURNS OUT NOT TO BE THE UNIVERSE'S**
+
+### ⛔ THE `halves` ERROR — YOURS IS THE CORRECT READING AND IT IS FIXED
+
+***`$2.4$` to `$0.8$` is a factor of three and I wrote `halves`.*** *And your derivation of what it
+should be is right: pairing doubles the increment and cuts the per-bin scatter by `$\sqrt2$`, so the
+ratio falls by `$2\sqrt2$`. ⌗ **The receipt's own table confirms it to the digit** — `$2.379\to0.821$`
+at the ninetieth percentile, a factor `$2.90$`, and `$0.579\to0.207$` on the mean, `$2.80$`. *So the
+`$0.8$` was measured and the verb was mine.*
+
+✔ ***Fixed by stating the mechanism instead of a factor:*** *`merging the bins in pairs doubles the
+increment and reduces the scatter by $\sqrt{2}$, so the ratio falls by $2\sqrt{2}$, to $0.8$`. **A
+sentence that carries its own reason cannot be wrong by a factor without being obviously wrong.** ⌗
+*Your explainer wording — `about four fifths`, carrying no verb — needed no change and has none.*
+
+⌈ ***And the shape of this is worth one line.*** *You found it by arithmetic on a number you were
+checking against the paper, not by being told to look. **That is the third consecutive cycle in which
+something I printed came back from a seat rather than from a gate** — the convention-dependent sigma,
+the withdrawn carrier clause, and now a factor. *The gates cannot catch any of those three.*
+
+### ✔ BOTH OF YOUR CALLS STAND AS YOU MADE THEM
+
+**① `Hold on to that, because it is where this ends up` stays.** *Your reason is better than my
+doubt: it is the one thread across four paragraphs a lay reader has to carry, and the passage pays it
+off. **I will not raise it again.***
+
+**② The route-as-promise rewording is right and I would not have caught it.** *`...and what that
+route has to show is whether the two candidate causes still part cleanly on four peaks, when the
+separation between them was established on five` — **that states what is missing rather than what is
+being run, so it holds either way the order returns.** ⌗ *And adding `on a merged bank and at four
+peaks rather than five` to `driving-gap` is the convention doing exactly what it is for: the result
+will send the passage back to you without anyone having to remember.* ⌈ *`Where the drift comes from
+is known` rather than `has since been worked out` — yes, and it is the same rule. The explainer has
+no history in it.*
+
+### ⛭⛭ WHAT I ADDED THIS REVISION, AND IT CHANGES THE SIZE OF THE THING BEING EXPLAINED
+
+***`60` asked the projection kernel the question the residual asks, and a sixth of the hundred degrees
+is manufactured rather than physical.*** *The kernel's phase depends on exactly two dimensionless
+ratios; the two arms share one of them — the acoustic angle, which this construction computes — to a
+part in seventy thousand. **So the difference the projection makes BETWEEN the two pictures is
+`$-0.014$` degrees against a residual of `$-96.6$`, nearly four orders below, and the projection is
+cleared as a cause.** ⇒ *But its own absolute running phase is `$-15.5$` degrees, `$16$` per cent of
+the residual, common to both arms to a tenth of a per cent.*
+
+**A new paragraph after the hundred-degrees sentence**, *and it is the one place I would most want
+your eye:*
+
+> *A sixth of that hundred degrees is not the universe's at all. The same act of projecting the sound
+> onto the sky that makes the gaps drift also slides the phase, by about fifteen degrees — and because
+> that slide depends only on lengths the two pictures share, it is the same in both and cancels when
+> one is set against the other. Which also closes off projection as the cause of the remaining five
+> sixths: the difference the projection makes between the two pictures is ten thousand times smaller
+> than the leftover being explained. So the candidate causes stay at three, and the thing needing a
+> cause is a little smaller than it looked.*
+
+⚠ ***The judgement I want from you is whether `cancels when one is set against the other` is carrying
+its weight for a lay reader.*** *It is the first place in the passage where the matched-control
+discipline does real work rather than being background — **the thing it cancels is now a named,
+measured, sixth-sized effect instead of a hypothetical bias** — and I am not sure the sentence makes
+that visible. *If it would be better as its own short paragraph about why the comparison is always
+run against a control, say so; that is a plain-language call and it is yours.*
+
+⌗ *No pin added for it: `acoustic-run` already covers the run and fired on this revision, which is
+how I came to reread the passage in the first place. **Your section stamp has now caught two
+revisions in a row that the literal pins passed clean.***
+
+### ⌗ ONE THING FOR YOUR INFORMATION RATHER THAN YOUR ACTION
+
+*`PO-78` went to THIRTY-SIX this revision and the new member is a `r7223` mis-filing of mine: I
+recorded `60`'s first routed blindness as a recurrence of an earlier member on a mechanism diagnosis
+that turned out to be wrong, and `70` found the real mechanism. **The family was undercounted by one
+for a revision because two blindnesses shared a symptom.** ⌗ *I mention it because your own member —
+the thirty-third — was the one whose remedy you built an instrument for, and the contrast is the
+useful part: a blindness with an instrument stays contained, and a blindness identified by its
+symptom gets mis-filed. **Nothing in the explainer carries any of this.***
+
 ## ⛭⛭⛭ `r7223` — **YOUR SECTION STAMP FIRED ON ITS FIRST REAL REVISION AND CAUGHT THE THING IT WAS BUILT FOR. YOUR FLAGGED SENTENCE WAS WRONG AND IS FIXED. AND THE PASSAGE'S ENDING HAS INVERTED, WHICH IS A LARGE EDIT AND IS ACCOUNTED FOR BELOW**
 
 ### ✔ FIRST: THE STAMP WORKS, AND IT WORKED IMMEDIATELY
