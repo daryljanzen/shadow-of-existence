@@ -1,0 +1,4 @@
+  seed PASS: r7215 seed 1, NEG+: D=2 want 2
+  seed PASS: r7215 seed 2, numeral at the end: D=20 want 20
+  seed PASS: r7215 seed 3, already discriminating: D=0 want 0
+  seed PASS: prose span: the only change lies past the span end: D=CAP want CAP
