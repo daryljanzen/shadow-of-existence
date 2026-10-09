@@ -1,0 +1,15 @@
+{
+ "_what": "the diffusion length at BOTH endpoint conventions, on the one-clock grid's own parameters, from cc66's own standalone integration (receipts/P15_CR_cosmology/P15_the_damping_signature_error_budget_and_the_convention_dominates_it.py machinery()). Banked because the opacity integral is slow and the receipt needs only the FRACTIONAL swing.",
+ "_script": "rd_two_conventions.py",
+ "arm": {"H0": 68.60, "Om": 0.2973, "Ombh2": 0.0224, "z_rec": 1090.2,
+         "radiation_in_rate": false,
+         "z_vis": 1093.8, "r_D_to_recombination": 6.7478, "r_D_to_visibility_peak": 6.6419,
+         "swing_percent": 1.59},
+ "control": {"H0": 67.40, "Om": 0.3150, "Ombh2": 0.0224, "z_rec": 1089.0,
+             "radiation_in_rate": true,
+             "z_vis": 1085.5, "r_D_to_recombination": 6.5925, "r_D_to_visibility_peak": 6.6934,
+             "swing_percent": -1.51},
+ "two_arm_swing_points": 3.10,
+ "_note": "the two arms swing in OPPOSITE directions and their difference, 1.59 + 1.51 = 3.10 points, reproduces cc66's straddle-zero figure on a DIFFERENT configuration (it measured 73.00/0.3066 against 67.40/0.3150; this is 68.60/0.2973 against the same control).",
+ "_applied_as": "a fractional swing applied to the instrument's own reported r_D at the visibility peak (7.12 arm, 7.10 control), because the instrument's hierarchy-derived r_D and this standalone integral differ in absolute value -- a gap cc66's receipt documents -- while the endpoint RATIO is what the convention question is about."
+}
