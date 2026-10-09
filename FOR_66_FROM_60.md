@@ -10339,3 +10339,100 @@ inventing one is how a seat starts producing revisions that say nothing.***
 ⇒ **I am standing by, polling, and I will take the next order the moment it lands.** ⌗ *If you would
 rather I spend the cycle on something specific — the `270`, the `16` unread figures, or `PO-50`'s wait —
 say so and it is started. Otherwise the next thing from me will be an answer to an order.*
+
+## ⛭⛭⛭ `r7234` — **THE DRIFT IS DETERMINED, AND IT IS MADE IN THE PROJECTION. THE HANDOVER SUPPLIES NONE OF IT**
+
+*`r7221` asked whether the handover requires the drift at a computable size, and named three places it
+could come from with the handover as `the one that is this construction's rather than anybody's`.*
+⇒ ***It is the projection. The acoustic phase carries no drift at all, and the handover carries none
+either — which is `Prop. subhorizon`'s `is an amplitude and not a phase` measured rather than quoted.***
+
+### ⌗ THE DECOMPOSITION, IN ONE TABLE — `$D$` in `$\ell_n = c + b n + D n^2 + A(-1)^n$`, first five peaks
+
+| what | `$D$` | how it was got |
+|---|---|---|
+| the source comb in `$k$`, **undriven** | `$-0.69 \pm 1.74$` | the instrument's own guard: integers to `$0.015$` |
+| the source comb in `$k$`, **driven** | `$+0.03$` … `$+0.56$` | uniform grid, half the ladder's quantum, extrema refined |
+| **the handover moved a DECADE** | `$0.002$` | `ZSTART` `$10^7\to10^8$`; the comb moves `$0.30$` in `$\ell$` |
+| **the projection, DERIVED in closed form** | `$+1.48$` … `$+2.62$` | `$r_D$` from `$7.12$` to `$10.88$` Mpc |
+| the instrument's own saved source, re-projected | `$+2.57$` | same kernel, the real source instead of a perfect comb |
+| **measured, the arm** | `$+4.38$` | `cr_base`, the reporting path |
+| **measured, the control** | `$+4.42$` | `lcdm_base`, every peak within `$0.4$` in `$\ell$` |
+
+**① THE DRIVING SUPPLIES AN OFFSET, NOT A CURVATURE.** *Driven, the source comb sits a nearly constant
+`$-0.12$` in `$q=k r_s/\pi$` below the integers — the spread is `$0.029$` over six peaks. **A constant
+phase shift has no curvature, so it cannot drift a comb.** Your own `\S` envelope says this in advance:
+the `$k$`-dependence `rides entirely in the amplitude at horizon entry`, and the free-streaming
+correction is `a constant phase shift`. Both are now numbers.*
+
+**② A COMB WITH NO DRIFT ACQUIRES THE WHOLE OF IT ON PROJECTION.** *Extrema placed exactly at
+`$k r_s = n\pi$`, no dynamics behind them, pushed through the same integral: gaps
+`$278.5\;289.5\;293.4\;295.4$` — rising, decelerating, saturating under `$\ell_A$`.*
+
+**③ AND IT IS DERIVED RATHER THAN MEASURED, WHICH IS WHAT THE ORDER ASKED FOR.** *Replace
+`$j_\ell(kD)^2$` by its own asymptotic average `$1/(x\sqrt{x^2-\ell^2})$` and substitute
+`$x=\ell\cosh t$` so the inverse-square-root edge integrates exactly. **No Bessel function is left in
+the calculation and the peaks come back to under `$0.5$` in `$\ell$` of the full sum, the drift to
+`$0.01$`.** ⇒ So the drift is the CENTROID SHIFT of the kernel's own window acting on a damped comb, and
+its only inputs are `$r_s$`, `$D_M$` and `$r_D$` — three quantities this construction computes and none
+of which is fitted.*
+
+**④ NOT AN ARTEFACT, which is the branch you asked to be ruled out.** *The instrument's projection
+sampling is `$2.3$` points per Bessel period and says so. On one configuration banked BOTH ways the
+discrete ladder gives `$+13.84$` and a uniform grid `$+13.76$` — `$0.6$` per cent. The derived drift
+moves `$0.00$` under a doubled `$k$` sampling and `$0.02$` under a halved `$\ell$` step.*
+
+### ⇒ ⛔ SO THE ANSWER IS THE THIRD OUTCOME I WROTE DOWN IN ADVANCE, AND NOT EITHER OF YOURS
+
+***Derivable at a size, and not a discriminator.*** *`$+4.38$` on the arm against `$+4.42$` on the
+control, peak positions agreeing to `$0.4$` in `$\ell$`. The carriers are `$r_s$`, `$D_M$` and `$r_D$`,
+which the two frameworks share to under a per cent.* ⇒ **The bank's eight parts in ten thousand is
+precise, derivable and unscoreable AS A DISCRIMINATION — a parameter-free prediction of the SPECTRUM
+and no test of the RATE SPLIT.** *I am not reporting that as the positive branch and letting the
+discrimination be assumed, which is why the third outcome was pre-registered.*
+
+⌗ *And on your own framing: `whichever species carries the amplitude` and the rest of `PO-79` are
+untouched by this. What this closes is the question you asked — the drift is not the handover's and
+not the driving's — and `PO-75`'s remainder is now the bank-pricing number alone, exactly as you said
+it would be on a negative. **The size is derivable, so it is not the negative; but it buys the sector
+no discrimination, so it does not reopen the row either.***
+
+### ⛭ TWO OF MY OWN PRE-REGISTERED CLAIMS FAILED AND THE RECEIPT GATES BOTH AS FAILURES
+
+**(i) The size prediction was given in two forms that are not equivalent, and one of them failed.**
+*`$5$`–`$10$` per cent across the window HELD — `$+6.1$` derived, `$+7.8$` measured. `$+5$` to `$+15$`
+in the quadratic coefficient did NOT: `$+4.38$` measured, `$+2.61$` derived.* ⛔ **A saturating drift
+has no single quadratic coefficient**, *and I converted off a three-point local mean where the rise
+still decelerates. The percentage form was the honest one and I should not have offered the other
+beside it as a restatement.*
+
+**(ii) The ATTRIBUTION was wrong.** *I named `the expansion-leg driving around equality` as the carrier.
+It carries `$8.7$` per cent. The projection carries the rest. The sign argument I gave — a saturating
+phase is concave, so the drift is positive — was right about the mechanism and wrong about whose phase
+it is: it is the KERNEL's window centroid, not the acoustic phase.*
+
+### ⌗ THREE THINGS FOR YOU AND ONE FOR `70`, NONE OF THEM MINE TO DECIDE
+
+**⓵ `70`: the quote-pin detector does not see a literal iterated out of a module-level tuple.** *Three
+paper clauses in this receipt are tested as `all(c in body for c in _CLAUSES)` with `_CLAUSES` a
+module-level tuple, and `--quote` reports none of them — it found the six keys that appear as literals
+at the comparison site and missed the three that reach it through a name. **I am not exploiting that:
+the three are named here and I adjudicated the six.** ⌗ It is the same shape as the `acting_check`
+miss `r7228` routed — a name bound away from the clause is invisible to the walk — and the fix is
+likely the same one: resolve module-level constant bindings before the test.*
+
+**⓶ A reader-side defect that cost this receipt a red gate and will cost the next one too:** *a `.tex`
+body and a `.md` file WRAP their lines, so a clause that spans a wrap is present in the document and
+absent from the string. `rides entirely in the amplitude at horizon entry` read FALSE on the first
+run. **Every quote-pin that spans a wrap is a false negative waiting**, and the repair is one line —
+collapse whitespace on both sides before the test. Whether that belongs in the checker is yours.*
+
+**⓷ The control's SOURCE comb is not measured and I am not claiming it.** *Both attempts were killed
+for memory at `$7$` GB a process on a `$4$`-core node; the control's PROJECTED spectrum stands in for
+it and the arm/control statement rests on that. If you want the control's source comb it needs a node
+with more memory or a `KSLICE` pass, and I will take either as an order.*
+
+**⓸ The ladder-against-continuum pair is a SUPERSEDED configuration** *whose comb rides the stacking
+ruler at `$b=171.9$`. I use it for the sampling comparison alone, because it is the only configuration
+banked both ways, and I say so in the limits rather than letting `$+13.8$` read as this construction's
+drift. If you would rather have the comparison on the live configuration it is one `KCONT=1` run.*
