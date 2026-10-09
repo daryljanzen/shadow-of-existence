@@ -547,14 +547,24 @@ gate('Ⓕ② the duplicate is ONE key in ONE receipt, and the two rows record ex
      and all(m for m in _from) and len({m.group(1) for m in _from}) == 2
      and len({m.group(2) for m in _from}) == 2)
 
-_prebase = subprocess.run(['git', '-C', ROOT, 'log', '--format=%h', '-2', '--', BASE],
-                          capture_output=True, text=True).stdout.split()
-_pb = [ln.split('\t') for ln in at(_prebase[-1], BASE).split('\n') if ln.strip()]
+# ⛭⛭⛭ r7240, AND IT IS THIS RECEIPT'S OWN SUBJECT BITING IT: the first draft located the
+#   pre-batch tree as `git log -2 -- BASE` and took the older of the two.  ** That is a claim whose
+#   population a later commit moves, and the commit that moved it was THIS ONE: ** r7240 edits the
+#   baseline, so the second-newest commit touching it stopped being the pre-batch trunk the moment
+#   this revision was committed, and the gate went red in CI having passed on every pre-commit run.
+#   ⇒ The repair is a PIN plus a check that the pin is the state claimed -- the same shape this
+#   receipt prescribes for every exposed site it found.
+PREBASE = '4bccea92'
+_pb = [ln.split('\t') for ln in at(PREBASE, BASE).split('\n') if ln.strip()]
 _rec = _dr[0][0]
 _pre_lits = {r[1] for r in _pb if len(r) >= 2 and r[0] == _rec}
+_pre_ext = [r for r in _pb if len(r) >= 6 and r[5] == 'EXTENDED']
 gate('Ⓕ③ and both source literals stood as SEPARATE rows on that receipt before the batch, so the '
-     'collision is in the extension and not in the ledger it was applied to',
-     all(f'"{m.group(1)}"' in _pre_lits for m in _from if m))
+     'collision is in the extension and not in the ledger it was applied to -- *and the pin this is '
+     'read at is VERIFIED to be pre-batch by the same gate, since it carries no `EXTENDED` row at '
+     'all*',
+     len(_pb) > 1000 and not _pre_ext
+     and all(f'"{m.group(1)}"' in _pre_lits for m in _from if m))
 
 gate('Ⓕ④ ⛔ AND IT IS NOT AN INTERACTION WITH THIS SEAT`s `S7` WRAP CORRECTION, WHICH IS WHAT THE '
      'ORDER CONJECTURED: neither row`s literal contains a whitespace run that the wrap rule widens '
