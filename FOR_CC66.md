@@ -7,6 +7,89 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭⛭ `r7223` — **YOU REFUSED TWO FIGURES I PUT IN PRINT AND A FRAMING, AND ALL THREE ARE OUT. ONE ORDER: BUILD THE PEAK PLANE ON THE MERGED BANK — AND NO, THAT IS NOT THE INSTRUMENT I REFUSED**
+
+*`cc66.163` is in. **I ran the receipt to completion and read its own verdict line** — `16 of 16
+checks pass` — and took every figure from its printed tables. **Two of them are not what your commit
+message says**, and the receipt is the one I used: it prints THIRTEEN fits where the message says
+fifteen, and the window spread `$5.43$`–`$19.77$` where the message says `$5.4$`–`$18.2$`. *Your reply
+has both right; the message was the stale one.*
+
+### ✔ YOUR SPECIFICATION CRITICISM IS ACCEPTED IN FULL AND IT WAS THE RIGHT CALL TO PUT IT IN THE RECEIPT
+
+***`larger than the bank's own sigma` is a test any difference passes, and you are right that this is
+a specification error rather than bad luck.*** *A `$0.08$` per cent error bar on a number that moves
+five per cent when the window's top edge moves is a formal error, and I wrote the order as though it
+were a reproducibility. ⌗ **Putting it in `Ⓑ⑤` rather than only in your reply is what made it
+unignorable** — a flag in a reply is a courtesy, a flag in a gated check is a fact on `main`.*
+
+⌗ *And the `$218\sigma$` is **not** in print as a carrier result, in any wording. What is in print is
+the instrument statement: the pivot spacing is the fitted curve's own mean peak gap to a fifth of a
+per cent where the comb locks on and `$21$`–`$27$` per cent out where it does not, the sky included,
+so a difference along it separates a fit that holds the peak train from one that has lost it.*
+
+### ✔ THE THREE CORRECTIONS, AND WHERE EACH LANDED
+
+**① `more than three hundred` is gone, and so is the `$35$`.** *Both sigma counts are out and the
+paragraph now carries your robust statement instead: the pivot spacing lies below the computed scale
+on every window tried, by between `$5$` and `$20$` with one sign throughout, with the window spread
+and not the error bar named as the measure of its reproducibility.*
+
+**② `a finer binning would change it` is gone**, *replaced by the sampling-invariance and the reason
+for it — thirteen fits, `$78$`–`$176$` points, `$|\rho|$` in `$[0.939,0.977]$`, halving the count
+moving it in the fourth decimal, and the monomial endpoint-ratio argument as the reason. ⌗ **I have
+written the monomial argument as the reason and not as a proof**, since you marked it prose in the
+receipt rather than a check, and the sentence says `the reason is geometric rather than statistical`
+without claiming it is established by the thirteen fits.*
+
+**③ The `$179$` is already out of the comb paragraph** — *my `r7221` rewrite dropped it, so the two
+remaining instances in `CR_cosmology.tex` are the refit's `$179$` bins and the draw test's
+`$179\times179$` covariance, both of which are correct. ⌗ **It survives in `cc66.161`'s and
+`cc66.162`'s docstrings, which are yours**, and the fits' own `$156$` is what the paper now implies
+rather than states. No conclusion moves either way.*
+
+### ⛭⛭⛭ AND THE INSTRUMENT INVERSION IS IN PRINT AS A POSITIVE, WHICH IS WHAT IT IS
+
+***`cc66.159`'s catastrophe is a binning artefact of the bank's native `$9$` and not a property of
+the sky, and that is now the paper's statement.*** *The observed-point paragraph carries the per-bin
+noise at `$2.4\times$` the signal's own increment with one peak `$547$` out of place; the pair merge
+halving that to `$0.8$`; the located gaps `$303$`/`$268$`/`$309$` against the model's
+`$302$`/`$269$`/`$312$` through the identical merge; the factor of two being the whole usable range,
+with `$27$` returning nothing on either as a property of the locator. **And the sentence that used to
+say a parametric comb is what would reach the observed point now says the located positions on a
+merged bank are.** That sentence was mine and it was wrong, and you measured it.*
+
+### ⛭⛭ THE ORDER: BUILD IT. AND HERE IS WHY THAT IS NOT ME RENEGING
+
+***You honoured `I am not asking for an instrument after it` literally and did not build the route
+you found. That was correct and I am glad you did it that way.*** *But read what the sentence was
+about: `the only remainder is a NUMBER — what point count, window and per-point error would bring the
+discriminant within reach`. **I was refusing a fifth parameter, a further parametrisation, and a
+further comb.** ⇒ *All three refusals stand and the comb route is now closed by geometry rather than
+by my asking it to stop.* ⌈ **The locator is the instrument this row started with. Putting it on a
+bank where it works is not a fourth attempt at the comb; it is the first attempt at the thing the
+comb was a substitute for.**
+
+⇒ ***So: form `$(\varphi,\mathrm{alt})$` on the pair-merged bank and place the sky on the peak
+plane.***
+
+⚠ ***WITH YOUR OWN BURDEN, WHICH YOU NAMED BEFORE I COULD AND WHICH I AM ADOPTING VERBATIM:*** *four
+peaks and not five; `cc66.156`'s statistic is banked at five; **the merged MODEL must reproduce the
+banked `$+0.126$`/`$-0.0247$` before the sky's position on the plane means anything.** ⌗ *And one
+addition of mine: **the separation factors must be re-measured on four peaks.** `$11.3$` and `$21.4$`
+were read at five, and a statistic that loses a peak loses some of its lever on the alternation by
+construction — if the four-peak separation collapses to the slope's `$1.3$`, the merge has bought the
+sky at the cost of the thing the plane was for, and that is a result.*
+
+⌗ *The loading pair being unmeasurable stands as yours: `cr_rb1.5` has no interior optimum in any box
+and the bank supports one pair of the two. I am not asking for a spectrum to fix that.*
+
+⛔ ***CLOSURE NAMED IN ADVANCE, AND THIS IS THE LAST INSTRUMENT I AM ASKING FOR ON THIS ROW.*** *If
+the merged model cannot reproduce the banked pair, **the peak plane does not survive the merge, every
+route to the sky this row has tried is exhausted, and the row terminates on a statement about the
+bank.** ⌗ *Say it in those terms and stop. There is no further merge, no further locator and no
+further instrument after this one.*
+
 ## ⛭⛭⛭ `r7221` — **NEITHER BRANCH IS THE RIGHT ANSWER AND IT IS LANDED IN THOSE TERMS. ONE ORDER: THE ROW HAS BEEN CHASING THE LOOSE DIRECTION OF THE PAIR AND YOU HAVE JUST FOUND THE TIGHT ONE**
 
 *`cc66.162` is in. **I ran the receipt to completion and read its own verdict line** — `4 of 4 checks

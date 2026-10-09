@@ -9,6 +9,86 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭⛭⛭ `r7223` — **YOUR SECTION STAMP FIRED ON ITS FIRST REAL REVISION AND CAUGHT THE THING IT WAS BUILT FOR. YOUR FLAGGED SENTENCE WAS WRONG AND IS FIXED. AND THE PASSAGE'S ENDING HAS INVERTED, WHICH IS A LARGE EDIT AND IS ACCOUNTED FOR BELOW**
+
+### ✔ FIRST: THE STAMP WORKS, AND IT WORKED IMMEDIATELY
+
+***`acoustic-run` fired `MOVED` on `r7223`, and the passage it sent back was genuinely stale.*** *Not
+one literal of `driving-gap` had changed — five pins, all green — and the paragraphs below them had
+been overtaken anyway. **That is the thirty-third member caught by an instrument instead of by
+whoever happened to notice, one revision after you built the instrument.** ⌗ *Your own sentence for
+it — `a literal pin can only be extended by whoever notices that claims were added, so the remedy is
+a habit and not an instrument` — is in `PO-78` as the reason the build was right, and the member is
+recorded as the thirty-third contained rather than as a thirty-fifth.*
+
+⌗ *And your warning that it is coarse by design and will fire on most revisions touching the acoustic
+comparison is accepted as the price. **I would rather reread a run I did not need to than ship a
+stale one.** It stays as you placed it.*
+
+### ✔ YOUR P15 FLAG WAS RIGHT AND IT IS REPAIRED
+
+***`the phase being the driving` asserted the carrier `r7201` withdrew, and it did it two sentences
+before the paper says the carrier is `named rather than measured`.*** *So the paragraph contradicted
+itself across three lines. **It now reads `which is where this section's own finding already points:
+the disagreement is in the phase and not in the scale`** — which is what the clause was for and
+names no carrier. *You were right that it might have been meant as the constant-offset finding only;
+it does not matter, because as written it was the withdrawn claim.*
+
+### ⛔⛭⛭ AND NOW THE LARGE ONE: THE `driving-gap` ENDING HAS INVERTED, AND I HAVE REWRITTEN IT
+
+***The ending you and I had both settled on — `what would settle it is not a cleverer method but a
+finer one, the same sky read at more points` — is measurably wrong.*** *`cc66.163` ran the comb at
+`$78$`, `$156$` and `$176$` points across five windows and six spectra: **the blurring does not move.
+Halving the point count changes it in the fourth decimal.** The reason is geometric — a level and a
+slow slide in the same quantity are a pair whose overlap is fixed by the ratio of the two ends of the
+stretch you look across, not by how many points sit inside it. ⇒ *More points would not help, and the
+sentence promised the reader a resolution that does not exist.*
+
+⌈ ***And what does work is the opposite of more points, which is why this is a rewrite and not a
+patch.*** *Group the sky's bins in pairs and the plain peak-finder — the tool paragraph one says is
+not measuring what it is pointed at — reads the real sky's first four peaks to within three or four
+units of where it reads them on a calculated curve treated identically: gaps `303`, `268`, `309`
+against `302`, `269`, `312`. **The instrument that was supposed to be beyond rescue is the one that
+reaches the sky, and the comb that was built to replace it is the one that cannot.***
+
+**What I changed, so you can reverse any of it:**
+
+- **Paragraph one** keeps its `forty-nine times in fifty` and gains the diagnosis, because it is now
+  known: the sky is reported in bins just narrow enough that the scatter in one bin is a little over
+  twice the real change from bin to bin, which is the condition a bump-finder fails under. *It ends
+  `Hold on to that, because it is where this ends up` — a signpost, and if you find it too knowing a
+  device, cut it; the paragraph stands without it.*
+- **Paragraph two**: `What can reach the sky is an instrument that fits a whole regular comb` became
+  `The other way to go about it is to stop hunting for peaks one at a time and fit a whole regular
+  comb of them at once`. *The old opening is a promise the end of the passage now breaks.*
+- **Paragraph two** also gains the drift's cause, which `60` derived this cycle: the sound's own peaks
+  sit on an exactly even ladder and the drift is manufactured by projecting that ladder onto the sky,
+  a perfect comb with no physics behind it acquiring the whole effect on the way out — *and therefore
+  something the standard account predicts identically, since the three lengths it depends on are
+  shared.* ⌗ **That last clause matters for the reader: it is a prediction with nothing fitted and it
+  is not a test between the two pictures.**
+- **Paragraph three** loses `better than a thousandth` and the two sigma figures you had just put on
+  their correct arms. *Not because your fix was wrong — it was right about yesterday's paper — but
+  because `cc66.163` showed the number those figures describe moves five per cent when you change
+  where the window stops, while its quoted error is a hundredth of that. **A precision that is not
+  reproducible is not a precision, and quoting it to a reader is worse than quoting nothing.***
+- **Paragraph three** gains the lock-on finding, which is the real content of the tight direction: on
+  the two curves where the comb has a grip on the peak train the number is just that train's average
+  gap, and on the four where it has lost its grip — the real sky among them — it is a fifth to a
+  quarter away from any gap the curve has. *So it measures whether the comb is holding on, which is
+  not a question about the universe.*
+- **Two new paragraphs** carry the geometry of the blurring and the pair-merge result.
+
+⚠ ***One thing I want your eye on rather than your agreement.*** *The passage now ends on a route
+rather than on a closure — `the route to the sky is the peak positions on the coarser grouping, at
+four peaks rather than five`. **That route is ordered to `cc66` this revision with its closure named,
+and it may come back negative**: four peaks is one fewer than the statistic was banked at, and if the
+separation collapses on four the merge will have bought the sky and lost the thing the plane was for.
+⌗ *Your head-of-file convention says the explainer states the present position and never whether work
+is under way, so the passage says what the route IS and not that it is being run. **If you think
+ending on a route reads as a promise — the failure mode of the sentence I just removed — say so and I
+will word it as a conditional instead.*** That is a judgement about plain language and it is yours.*
+
 ## ⛭⛭ `r7221` — **YOUR THIRTY-THIRD MEMBER RECURRED THIS REVISION, YOUR CONVENTION ABSORBED IT, AND I HAVE EDITED `driving-gap` WITH A FULL ACCOUNT BELOW**
 
 *The pins came back `17` watched passages, `8` row pins, `36` literal pins, **all current** — and the
