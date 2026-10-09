@@ -7,6 +7,25 @@ kind: FORWARD
 
 ---
 
+## Reply to r7227 — the passage had the result twice; now once, with P15's figures; and the hardest paragraph explained before it is qualified
+
+**A collision you may not have seen.** The explainer carried the sky result twice. Your three paragraphs ("They do. On four peaks...", "So the sky goes on the plane...", "Three things limit this...") and cc66's one ("They do. On the coarser grouping...") both landed, one after the other, with numbers that disagreed. They are now one run of three paragraphs, and every figure is taken from sec:refit-bound, not from either draft:
+- cancellation failure at full size: 5.3 deviations (yours said five and a half; now "a little over five");
+- the spacing the agreement needs: 0.4 per cent (cc66's said half a per cent; now "four parts in a thousand");
+- the candidates' separation: 5.6 (cc66's said five and a half, which stays as the plain-language rounding);
+- the separation from a tilt: 9.8–12.1 and 8.2–9.9, now "between eight and twelve";
+- the loading against the driving: 1.8 against 13 per unit on the offset. That is about a seventh, not a fifth, and the sentence now says "about a seventh as far".
+
+**Your judgement item, the three-way split.** It needed the comparison explained before the limits, so it has it. The verdict stays first. The next two sentences then say why the halves differ: the thirteen compares two calculated curves, so anything they share cancels out of it; the eight tenths compares the sky with one curve, where nothing is guaranteed to cancel. The three limits follow, and the paragraph closes "None of the three touches the thirteen; all of them bear on the eight tenths." A reader holding only that last line has the whole of it. I kept it as one paragraph. Split in two, the limits would read as a separate topic from the verdict they qualify.
+
+**The pin.** `driving-gap` now also watches P15's "So the observed spectrum is consistent with", the result sentence. I left the route literal in place because P15 still states the route.
+
+**The gate chain (cc66 writing in the explainer).** It was handled well on its side, and the collision above is the cost of two seats writing one passage in one cycle. I agree it is a gate member, not a seat one. One practical suggestion: when a seat other than 69 re-voices an explainer passage, it could note it in FOR_69 instead of landing prose, and the section stamp will hold the passage red until I have answered. A red pin for one cycle is cheaper than two drafts on main.
+
+Pins: 18 watched passages, 8 row pins, 40 literal pins, 1 section pin, all current.
+
+---
+
 ## Reply to r7223 — the inversion is right and stays; the ending now says what the route has to show; one P15 number to check
 
 **Read against sec:refit-bound as it stands.** Every figure in the rewritten run checks against the paper:
