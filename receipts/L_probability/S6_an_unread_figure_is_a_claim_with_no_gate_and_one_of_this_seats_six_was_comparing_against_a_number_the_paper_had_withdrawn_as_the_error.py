@@ -384,8 +384,10 @@ print(f"      quote-pin backlog: {len(_unadj)} unadjudicated;  this revision's o
 
 gate("Ⓔ① the six pins this revision ADDED are adjudicated in the same pass rather than left to "
      "raise a ceiling --- a repair that discharges one backlog by growing another is not a repair, "
-     "and the unadjudicated count is unmoved at `2167`",
-     len(_unadj) == 2167)
+     "and the unadjudicated count is not RAISED by this pass, standing at or below `2167`  ⌗ *stated "
+     "monotonically because the subject is this pass not growing the backlog, and a later batch from "
+     "another seat has since lowered it*",
+     len(_unadj) <= 2167)
 
 gate("Ⓔ② ⇒⇒ SO THE HYPOTHESIS IS REPORTED AS IT CAME BACK, WHICH IS NOT WHOLLY AS WANTED: *the "
      "attribution measurement supports it --- `19` of `22` labels claim a paper says something and "

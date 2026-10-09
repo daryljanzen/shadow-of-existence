@@ -193,11 +193,13 @@ _base = [ln.split('\t') for ln in open(os.path.join(ROOT, 'corpus', 'quote_pin_b
 _unadj = sum(1 for r in _base if len(r) >= 6 and r[5] == 'UNADJUDICATED')
 _r7204_stamped = sum(1 for r in _base if len(r) >= 7 and 'r7204+60' in r[6])
 print(f"      unadjudicated on this tree: {_unadj};   rows carrying r7204's stamp: {_r7204_stamped}")
-gate("Ⓐ② and the live count is `2167`, so that equality was FALSE on the trunk -- *** the receipt was "
-     "RED, and `r7204` is what made it so: its own stamp is in the baseline and the backlog fell "
-     "under it. ***  ⌗ *Nobody had seen it, because the job that runs receipts was skipped on every "
-     "push in between*",
-     _unadj == 2167 and _unadj < 2170 and _r7204_stamped > 0)
+gate("Ⓐ② and the live count is at or below `2167`, so that equality was FALSE on the trunk -- *** the "
+     "receipt was RED, and `r7204` is what made it so: its own stamp is in the baseline and the "
+     "backlog fell under it. ***  ⌗ *Nobody had seen it, because the job that runs receipts was "
+     "skipped on every push in between*  ⌗ *And this gate is MONOTONE for its own subject's reason: "
+     "an exact count on a set another seat can lower is the very defect this receipt reports, and a "
+     "later batch lowered it again*",
+     _unadj <= 2167 and _unadj < 2170 and _r7204_stamped > 0)
 
 gate("Ⓐ③ and the repaired form is MONOTONE: the figure the pass MADE is pinned as that pass's own "
      "arithmetic -- it fell by `66` from `2236` -- and the live check is `<=` in the direction the row "
