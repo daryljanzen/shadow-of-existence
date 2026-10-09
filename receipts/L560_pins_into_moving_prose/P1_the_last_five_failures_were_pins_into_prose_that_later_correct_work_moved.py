@@ -150,7 +150,7 @@ def main():
           '"The test has two sides, and each has been run", the datum side closed at X1',
           'Reach: stated as a target, not a result' in p0_then
           and 'item has two sides and they now stand differently' in p0_split
-          and '\\emph{The test has two sides, and each has been run.}' in _p0_live
+          and 'e one fact.\'\' \\emph{The test has two sides, and each has been run.}' in _p0_live
           and '\\emph{On the constant side}' in _p0_live
           and '\\emph{On the datum side}' in _p0_live
           and 'for want of work}\\rcpt{X1_the_ratio_is_a_clock_reading_not_a_carried_datum}' in _p0_live

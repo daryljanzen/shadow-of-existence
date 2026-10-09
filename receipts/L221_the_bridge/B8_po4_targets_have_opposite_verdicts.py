@@ -132,7 +132,7 @@ def main():
     check('⓸ and the sector\'s own count is reduced: "So the undelivered content is two items and not '
           'three. What remains genuinely outstanding is the gauge group and the multiplet structure"',
           'the undelivered content is two items and not three' in p14
-          and 'What remains genuinely outstanding is the gauge group and the multiplet structure' in p14)
+          and 't three.} What remains genuinely outstanding is the gauge group and the multiplet structure' in p14)
 
     print()
     if FAILED:

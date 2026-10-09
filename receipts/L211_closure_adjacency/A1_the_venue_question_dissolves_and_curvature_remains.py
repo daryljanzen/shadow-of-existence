@@ -154,7 +154,7 @@ def main():
           'exactly one real form' in arc or 'embeds in **exactly one**' in arc
           or 'EXACTLY ONE' in arc)
     check("L-211's procedure is what joined three papers no single reading would have",
-          'closure-adjacency' in arc.lower() or 'CLOSURE-ADJACENCY' in arc)
+          'closure-adjacency' in arc.lower() or 'CLOSURE-ADJACENCY (L-211' in arc)
 
     print()
     if FAILED:

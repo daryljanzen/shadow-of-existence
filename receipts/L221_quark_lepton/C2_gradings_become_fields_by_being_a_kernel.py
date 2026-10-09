@@ -96,21 +96,21 @@ def main():
           'its Dirac operator carries a well-defined analytical index' in p14)
     check('⇒ so the coloured three cross to fields BECAUSE they are a kernel: '
           'kernel -> identical particles -> second quantisation -> fields',
-          "one operator's kernel" in p14 and 'Second quantisation' in p14)
+          "e one operator's kernel" in p14 and 'Second quantisation' in p14)
     check('and the crossing delivers baryon 1, diquark 0, meson 1',
           'baryon $1$, diquark $0$, meson $1$' in p14)
 
     # ** and what the colourless four ARE **
     check('the colourless four are the one-dimensional representations of $D_6$ trivial on the '
           'deck $\\mathbb{Z}_3$',
-          'trivial on the deck $\\mathbb{Z}_{3}$' in p14 and 'four one-dimensional ones' in p14)
+          'trivial on the deck $\\mathbb{Z}_{3}$' in p14 and 'e its four one-dimensional ones' in p14)
     check('⛔ and P14 declines to draw on them, for a reason now stated: "that is a count of '
           'gradings and not of fields, and this paper draws nothing from it"',
           'a count of gradings and not of fields' in p14
-          and 'this paper draws nothing from it' in p14)
+          and 't of fields}, and this paper draws nothing from it' in p14)
     check('⇒⇒ THE DISTINCTION: the three are the KERNEL of something; the four are a '
           'representation-theoretic fact about a GROUP',
-          "one operator's kernel" in p14 and 'four one-dimensional ones' in p14)
+          "e one operator's kernel" in p14 and 'e its four one-dimensional ones' in p14)
 
     # ** and what P13's "unbuilt" means **
     # ** r6931+70.1: class (b), DISCHARGED.  These three checks pinned P13's "The compact-face fermion
@@ -135,7 +135,7 @@ def main():
           and 'the round face carries no Dirac zero modes, so there is no massless content for it to act on' in p13)
     check('⇒ SO THE UNBUILT THING WAS AN OPERATOR\'S KERNEL, NOT A SECTOR -- and P13 discharged it by '
           'exhibiting the operator and finding the kernel empty: "the emptiness of a definite object"',
-          "one operator's kernel" in p14
+          "e one operator's kernel" in p14
           and 'what is definite is the emptiness of a definite object' in p13)
 
     # ** and nothing is built here **

@@ -138,7 +138,7 @@ check("and it tabled FIRST the outcome that costs this seat most -- no channel a
       'tabled first: the outcome that costs this seat most' in FLAT
       and 'no channel accounts for the cost' in FLAT, 'the expensive outcome is tabled first')
 check("and it fixed the estimator check as a GATE before any result was built on it",
-      'reported before' in FLAT and 'block-inverted' in FLAT,
+      's reported before' in FLAT and 'block-inverted' in FLAT,
       'a disagreement was pre-committed as a finding against the file')
 check("and it fixed the wrong-period null BEFORE the comb was projected",
       'neighbouring, wrong periods' in FLAT, 'the null was pre-registered')

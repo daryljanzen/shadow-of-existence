@@ -115,7 +115,7 @@ def main():
           #   `L-204`'s `C3` broke on it too, in the same sentence of the same paper.*
           re.search(r"\\mathrm\{SO\}\(4,1\)\$ at Type[~ ]?O", p9) is not None
           and 'at Nariai' in p9
-          and 'at the generic Schwarzschild--de~Sitter class' in p9)
+          and '3)$ at the generic Schwarzschild--de~Sitter class' in p9)
     strata = sorted({dim_so(5), dim_so(3) + dim_so(3), 1 + dim_so(3)})
     check(f'whose dimensions are {strata} -- a DIFFERENT set', strata == [4, 6, 10])
     check("⛔ and $6,7,10$ appears nowhere in P9", '6,7,10' not in p9)

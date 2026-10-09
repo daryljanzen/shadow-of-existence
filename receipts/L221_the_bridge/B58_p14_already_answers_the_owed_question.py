@@ -109,12 +109,12 @@ def main():
     check('⓶ while the count is there with its reason: the class is "subregular, of dimension four '
           'rather than the regular six", and "the disjointness of the vantages\' supports is exactly '
           'what removes it"',
-          'subregular' in p14 and "disjointness of the vantages" in p14)
+          's subregular' in p14 and "disjointness of the vantages" in p14)
 
     check('⛭⛭ ⓷ and the finiteness has the reason r2806 lacked: "necessarily so, since the holonomy '
           'is branching and a branch structure has finitely many sheets --- and a finite group in '
           'characteristic zero has vanishing first cohomology"',
-          'a branch structure has finitely many sheets' in p14
+          's branching and a branch structure has finitely many sheets' in p14
           and 'vanishing first cohomology' in p14)
 
     # ⓸ the order

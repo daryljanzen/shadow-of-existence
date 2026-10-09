@@ -90,7 +90,7 @@ def main():
           'the Doppler term, the integrated Sachs--Wolfe term, and the quadrupole with its own '
           'projection kernel"',
           'the line-of-sight source carries the monopole with the potential' in p15
-          and 'its own projection kernel' in p15)
+          and 'h its own projection kernel $(j_\\ell+3' in p15)
 
     # ⓶ validated
     check('⓶ and it is validated against "an independent Boltzmann code run at identical parameters, '
@@ -98,7 +98,7 @@ def main():
           'an independent Boltzmann code run at identical parameters' in p15)
     check('reproducing the ionisation history "and its derivative to $\\pm1\\%$ through the visibility '
           'peak"',
-          'through the visibility peak' in p15)
+          '1\\%$} through the visibility peak' in p15)
     check('and peak positions "to $\\le0.5\\%$ across $P_1$--$P_4$"',
           'trough positions to $\\le0.5\\%$' in p15 and 'across $P_1$--$P_4$' in p15)
 

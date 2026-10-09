@@ -254,7 +254,7 @@ check("Ⓕ③  ** against the real legs' HYPERBOLIC law, cosh^(2/3) on the colla
 check("Ⓕ④  and that pairing is `P2`'s own for the black hole itself -- one analytic curve, hyperbola "
       "then circle then hyperbola, the trigonometric functions becoming hyperbolic under the "
       "continuation that leaves the interior arc",
-      'a single analytic curve---hyperbola, circle, hyperbola' in P02
+      's a single analytic curve---hyperbola, circle, hyperbola' in P02
       and 'The trigonometric functions become hyperbolic' in P02)
 
 # ---------------------------------------------------------------- G

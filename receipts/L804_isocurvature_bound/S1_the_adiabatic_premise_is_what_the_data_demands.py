@@ -133,12 +133,12 @@ def main():
           '"a nearly scale-invariant adiabatic spectrum processed by ordinary structure formation -- a '
           'fully specified input, available from standard cosmology"',
           'nearly scale-invariant adiabatic spectrum processed by ordinary structure formation' in cosmo
-          and 'available from standard cosmology' in cosmo)
+          and 'available from standard cosmology, and n' in cosmo)
     check('SOURCE: the corpus itself flags adiabatic as the observed standard, named not assumed -- '
           '"Adiabatic primordial perturbations are strongly favoured observationally and are the '
           'standard case; the condition is named here rather than assumed silently"',
           'Adiabatic primordial perturbations are strongly favoured observationally' in cosmo
-          and 'named here rather than assumed silently' in cosmo)
+          and 's named here rather than assumed silently' in cosmo)
 
     print()
     if FAILED:

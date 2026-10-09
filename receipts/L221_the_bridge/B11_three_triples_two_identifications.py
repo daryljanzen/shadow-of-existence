@@ -89,7 +89,7 @@ def main():
     # ⓶ two open identifications, two registers
     check('⓶ P4 asks whether TWO of them coincide: "Whether the two triples are one structure in the '
           "sense the programme's number audit certifies is not claimed here\"",
-          'Whether the two triples are one structure' in p4)
+          'Whether the two triples are one structure is n' in p4)
     check('and states what a derivation would have to produce: "no derivation producing $\\{0,1,2\\}$ '
           'from a single condition has been exhibited"',
           'no derivation producing $\\{0,1,2\\}$ from a single condition has been exhibited' in p4)

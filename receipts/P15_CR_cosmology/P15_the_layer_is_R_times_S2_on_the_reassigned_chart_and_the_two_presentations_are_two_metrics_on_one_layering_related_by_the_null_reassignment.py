@@ -253,7 +253,7 @@ head("D.  THE RELATION IS THE CONSTRUCTION'S OWN AND THE PAPER NOW STATES IT -- 
      "RE-DERIVED AS A FINDING")
 
 for frag in ("they are \\emph{not} two coordinate presentations of a single metric",
-             "reached from one another by the reassignment of the null condition",
+             "e reached from one another by the reassignment of the null condition",
              "two metrics carried on one ontological layering",
              "the cosmic layers are the surfaces of constant areal radius",
              "is what keeps that reassignment well defined across the lap"):
@@ -262,7 +262,7 @@ gate("⓵⓶ the paper states the relation outright -- NOT two coordinate presen
      "but two metrics on one ontological layering reached by the reassignment of the null condition, with "
      "the constant-areal-radius foliation as what makes the layering one object",
      "they are \\emph{not} two coordinate presentations of a single metric" in body15
-     and "reached from one another by the reassignment of the null condition" in body15
+     and "e reached from one another by the reassignment of the null condition" in body15
      and "two metrics carried on one ontological layering" in body15
      and "the cosmic layers are the surfaces of constant areal radius" in body15)
 

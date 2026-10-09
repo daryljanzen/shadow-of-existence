@@ -73,7 +73,7 @@ def main():
     check('✔ ⓵ the F4 prose is FIXED (r2760): it now says the control "was at chi^2/dof ~ 100 '
           'WHEN THIS NOTE WAS WRITTEN (c54.172)" and directs the reader to READ THE TABLE AND '
           'NOT THIS LINE',
-          'WHEN THIS NOTE WAS WRITTEN' in d and 'READ THE' in d)
+          's at chi^2/dof ~ 100 WHEN THIS NOTE WAS WRITTEN' in d and 'READ THE' in d)
     check('while F6 prints the live table from a recomputation -- it formats chi^2, bins and '
           'chi^2/dof for CAMB, this LambdaCDM arm and this CR arm',
           "'this LCDM arm'" in d and "'this CR arm'" in d and 'dof_l' in d)

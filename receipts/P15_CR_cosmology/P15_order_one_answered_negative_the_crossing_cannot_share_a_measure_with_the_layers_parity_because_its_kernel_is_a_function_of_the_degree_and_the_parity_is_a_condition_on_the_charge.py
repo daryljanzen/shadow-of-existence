@@ -112,7 +112,7 @@ gate("Ⓐ③  AND ITS SCOPE NOTE CARRIES THE DEEPEST REASON: the correspondence 
 
 gate("Ⓐ④  and the index map is the IDENTITY on the degree, acting on the radial factor at fixed"
      " degree -- so the crossing moves amplitudes and not labels",
-     'the map on the index is the identity' in MAPR or 'L -> L' in MAPR)
+     'the map on the index is the identity' in MAPR or '2 OmegaL -> L' in MAPR)
 
 # =====================================================================================
 head("B -- THE PROOF: THE KERNEL'S ARGUMENT IS CONSTANT ALONG THE CHARGE LADDER")

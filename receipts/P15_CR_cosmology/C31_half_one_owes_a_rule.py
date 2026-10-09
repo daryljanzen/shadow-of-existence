@@ -109,9 +109,9 @@ def main():
           and '397.13' in _then and '206.44' in _then)
     check('while L-147 holds parameters FIXED, using CAMB only as a reference: "THE PIPELINE IS WIRED '
           'IFF the CAMB flat-LambdaCDM best fit reproduces chi^2 = 206.4 over 215 TT bins"',
-          'the CAMB flat-LambdaCDM best fit reproduces' in l147)
+          'S WIRED IFF the CAMB flat-LambdaCDM best fit reproduces chi^2' in l147)
     check('and L-147 is the discharge of a different lead: "discharging `L-147`"',
-          'discharging `L-147`' in l147)
+          'discharging `L-147`, which has b' in l147)
 
     # ⓶ the arms are asymmetric
     # ** r6931+70.1 (PO-59): ⓶ CLASS (a), BOTH PINS -- THE ASYMMETRY THEY CARRIED IS WHAT THE CORPUS

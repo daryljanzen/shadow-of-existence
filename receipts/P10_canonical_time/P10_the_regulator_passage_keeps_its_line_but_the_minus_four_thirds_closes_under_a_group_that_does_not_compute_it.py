@@ -129,7 +129,7 @@ print("  ① Q2 -- does the prose keep the line where the receipt keeps it")
 print("  " + "=" * 96)
 check("the receipt counts subtractions as the summand's non-negative powers and withholds the renormalised "
       "value and the invariant", "No value is claimed for the renormalised interacting sum" in SRC['r7065']
-      and 'which geometric invariant carries the third is left open rather than guessed' in SRC['r7065'])
+      and 's three against two, and\nwhich geometric invariant carries the third is left open rather than guessed' in SRC['r7065'])
 report("     ...and the prose says the same in the same sentence as the count",
       'What is not claimed is the renormalised value, and no invariant is named for the third subtraction'
       in flat and 'the count is three against two, and which geometric invariant carries the third is left '

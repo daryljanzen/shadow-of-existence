@@ -104,7 +104,7 @@ def main():
           'not claimed BOTH WAYS' in arc)
     check("Z1's location -- 'does the off-real contour carry anything a trajectory can be said to "
           "HAVE?' -- is what this narrows, not what it answers",
-          'off-real' in arc)
+          's the off-real' in arc)
 
     print()
     if FAILED:

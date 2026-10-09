@@ -100,7 +100,7 @@ def main():
     check('and the result computed: "returns baryon $1$, diquark $0$, meson $1$: every channel the '
           'Standard Model has, with the configuration group selected rather than chosen"',
           'baryon $1$, diquark $0$, meson $1$' in p14
-          and 'the configuration group selected rather than chosen' in p14)
+          and '1$, the configuration group selected rather than chosen' in p14)
 
     # ⓸ the root side
     check('⓷ and P13 ties the ROOT side to the same skeleton: the cubic\'s "three zero-sum roots are the '

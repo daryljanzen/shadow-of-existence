@@ -95,7 +95,7 @@ def main():
     # ⓸ and the walls f<0
     check('⚠ ⓸ while `B3` records the two features the wall rests on: "W=0 at every horizon (f=0) '
           'and is ODD in signed r"',
-          'W=0 at every horizon' in b3 and 'ODD in signed r' in b3)
+          'W=0 at every horizon' in b3 and 'y horizon (f=0) and is ODD in signed r' in b3)
 
     print()
     if FAILED:

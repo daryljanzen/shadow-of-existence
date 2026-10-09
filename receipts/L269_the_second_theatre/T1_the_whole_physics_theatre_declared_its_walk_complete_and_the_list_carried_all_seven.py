@@ -153,7 +153,7 @@ def main():
           len(rm_stale) + len(stale) == 10)
     check('⓸ᵇ and BOTH theatres had written the notice at the site: the mathematics frontmatter on '
           'Ⓕ, and the physics theatre on ①②',
-          'carried Ⓕ as owed for forty-eight revisions' in
+          'carried Ⓕ as owed for forty-eight revisions a' in
           open(os.path.join(ROOT, 'THE_MATHEMATICS_REACH.md'), encoding='utf-8').read()
           and 'the delay is the finding' in phys)
 

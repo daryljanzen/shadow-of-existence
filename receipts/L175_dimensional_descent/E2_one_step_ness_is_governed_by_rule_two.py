@@ -92,7 +92,7 @@ def main():
     # the principle, at source in p0
     check("p0 names it: least-arbitrariness is \"the programme's own criterion of necessity "
           '(Rule~2 ...)"',
-          "least-arbitrariness being the programme's own criterion of necessity" in p0)
+          "least-arbitrariness being the programme's own criterion of necessity (Rule~2" in p0)
     check('⛭ and states what it rejects: "a symmetry-breaking modulus is the ADJUSTABLE PARAMETER '
           'that criterion rejects"',
           'a symmetry-breaking modulus is the adjustable parameter that criterion rejects' in p0)
@@ -114,7 +114,7 @@ def main():
     check('⇒ so a SECOND slicing step would need its own selection, and an unfixed selection is '
           'exactly what Rule 2 rejects',
           'excluded not as disfavoured but as carrying an unfixed arbitrary modulus' in p14
-          and 'the adjustable parameter that criterion rejects' in p0)
+          and 's the adjustable parameter that criterion rejects' in p0)
     check('⇒⇒ ONE-STEP-NESS IS THEREFORE GOVERNED BY THE SAME ARGUMENT THAT FIXES THE HINGE COUNT, '
           'not by taste or simplicity',
           'places a slicing plane on each' in p14)
@@ -124,7 +124,7 @@ def main():
           'bounded BELOW and never above' in arc)
     check('⛔ AND NOTHING HERE USES THE CUT\'S DIMENSION -- the argument runs on Rule 2 and a count '
           'of MODULI, which is a different quantity',
-          'adjustable parameter that criterion rejects' in p0)
+          's the adjustable parameter that criterion rejects' in p0)
     check('⛔ AND THE CONCLUSION IS DECLINED: a second step\'s selection might be FORCED BY THE '
           'FIRST, carrying no free modulus, and nothing in the corpus examines that case',
           'forced by the first' not in p0.lower() and 'forced by the first' not in p14.lower())

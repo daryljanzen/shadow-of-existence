@@ -120,7 +120,7 @@ def main():
     # ---- source anchors: P11 routes the question out by name --------------------------------------
     check('P11 routes the stability question OUT by name -- Friedrich (vacuum small-data) and '
           'Andreasson-Ringstrom (all-data T^3-Gowdy), Nariai the non-generic exception',
-          'Friedrich proved the nonlinear stability of de Sitter in vacuum' in p11
+          'Friedrich proved the nonlinear stability of de Sitter in vacuum with $\\Lambda>0' in p11
           and 'extend cosmic no-hair and future stability to \\emph{all} data in the $T^3$-Gowdy class' in p11
           and 'the one non-generic exception, the Nariai branch' in p11)
     check('P11 names the CELL CR needs and its covering result: "Friedrich is a small-data result, '

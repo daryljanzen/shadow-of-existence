@@ -199,7 +199,7 @@ def main():
     #       dynamics", and it cannot be reworded without changing what the paper does.
     check('and P1 still names the crossing as not settled there and routes its development to the '
           'companion dynamics by citation',
-          'crossing such a boundary' in p1
+          'crossing such a boundary is n' in p1
           and 'is not settled here' in p1
           and 'JanzenDynamics' in p1)
 

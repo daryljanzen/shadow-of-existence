@@ -104,7 +104,7 @@ def main():
     # ⓷ and what it returns is the row's remainder
     check('⓷ while the same paper accounts what that returns for the gauge sector: colour\'s "exact '
           'selection rules" and isospin "a species label, not $SU(2)_L$\'s chiral action"',
-          "colour's exact selection rules" in p14 and 'delivers a species label' in p14)
+          "colour's exact selection rules" in p14 and 'delivers a species label, not $SU(2' in p14)
 
     print()
     if FAILED:

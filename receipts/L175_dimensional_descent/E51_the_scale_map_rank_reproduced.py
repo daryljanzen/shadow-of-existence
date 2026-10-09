@@ -72,7 +72,7 @@ def main():
           "the scale map's rank being 1" in kill
           and 'the plane-section' in kill)
     check('and says they are reproduced nowhere else',
-          'reproduced NOWHERE ELSE' in kill or 'reproduced nowhere else' in kill.lower())
+          'reproduced NOWHERE ELSE" than `L-533' in kill or 'reproduced nowhere else' in kill.lower())
 
     # ⓶ route 1 -- symbolic
     a, c = sp.symbols('alpha_top c_2', positive=True)

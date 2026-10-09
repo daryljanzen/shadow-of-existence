@@ -95,7 +95,7 @@ def main():
           'vanishes at the horizons' in p14 and 'odd in the signed radius' in p14)
     check('and locates the wall at the second: "Because $r$ is signed, $W$ changes sign at $r=0$: a '
           'domain wall"',
-          'changes sign at' in p14 and 'a domain wall' in p14)
+          's signed, $W$ changes sign at $r=0' in p14 and 'a domain wall' in p14)
 
     # ⓶ r=0 is inside the inner horizon
     check(f'⛭⛭ ⓶ the static region is $f>0$: $f({RB+0.05:.3f})={f(RB+0.05):+.4f}$ inside, and '

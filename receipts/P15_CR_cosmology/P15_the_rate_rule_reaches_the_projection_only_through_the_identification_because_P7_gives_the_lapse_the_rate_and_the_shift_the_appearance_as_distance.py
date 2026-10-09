@@ -114,7 +114,7 @@ _ROUTES_AS_IS = 'by three independent routes' in P15
 #   ground that is a theorem and a second that rests on it`, which is added to the enumeration this
 #   receipt deliberately kept open so it would not fail on its own success. **
 _ROUTES_FIXED = ('by two independent routes' in P15
-                 or 'by three routes' in P15
+                 or 'by three routes sharing n' in P15
                  or 'two independent grounds' in P15
                  or 'on one ground that is a theorem and a second that rests on it' in P15)
 gate("Ⓐ②  and the object the fork is about is named in `P15` as the argument of the kernel -- the"
@@ -207,7 +207,7 @@ gate("Ⓔ①  the third route's own receipt states the premise it needs, and tha
 gate("Ⓔ②  and that receipt reaches its ruling BY PRECEDENT from the rule's existing assignments"
      " rather than from the slice's geometry -- it names `P7`'s own list as the side it argues from,"
      " which is why it is independent of FLATNESS and not of the RULE",
-     'PRECEDENT ARGUMENT INSIDE THE CONSTRUCTION' in TAU
+     'S A PRECEDENT ARGUMENT INSIDE THE CONSTRUCTION' in TAU
      and 'Every other property of the photons we observe' in TAU)
 
 gate("Ⓔ③  ⛔ SO TWO GROUNDS AND NOT THREE: the rule, and the identification.  ** And since the rule"

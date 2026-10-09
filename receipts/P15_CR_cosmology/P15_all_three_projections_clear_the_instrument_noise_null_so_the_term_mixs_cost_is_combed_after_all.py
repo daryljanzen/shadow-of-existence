@@ -287,7 +287,7 @@ C17 = ' '.join(open(os.path.join(ROOT, 'receipts', 'P15_CR_cosmology',
                     encoding='utf-8').read().split())
 check("⛔ and the peak-only reading would have been a DODGE, because the corpus's own characterisation of "
       "this instrument carries BOTH -- `C17` says \"acoustic peak and trough positions\"",
-      'trough positions' in C17, 'the instrument carries troughs too')
+      'trough positions to 0' in C17, 'the instrument carries troughs too')
 LOC = ' '.join(open(os.path.join(
     ROOT, 'receipts', 'P15_CR_cosmology',
     'P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too.py'),

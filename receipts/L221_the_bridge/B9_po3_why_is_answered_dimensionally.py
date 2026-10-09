@@ -99,7 +99,7 @@ def main():
     check('and what is then absent: "there is no mass-reflection $\\mathbb{Z}_{2}$, hence no '
           '$\\mathbf3\\oplus\\bar{\\mathbf3}$ Nariai hexad, no outer factor of '
           '$\\mathrm{Aut}(A_{2})=S_{3}\\rtimes\\mathbb{Z}_{2}$, and no $\\gamma^{5}$"',
-          'there is no mass-reflection' in p14 and 'Nariai hexad' in p14
+          'there is no mass-reflection' in p14 and '3}$ Nariai hexad, n' in p14
           and 'no outer factor of' in p14)
 
     # ⓷ it is a D-selection condition

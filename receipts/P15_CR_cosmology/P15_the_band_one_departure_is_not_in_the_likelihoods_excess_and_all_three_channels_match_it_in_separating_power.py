@@ -127,7 +127,7 @@ check("⛭ AND IT NAMES ⓶'s OWN HAZARD BEFORE MEETING IT: more free parameters
       "a shrinking departure is not by itself evidence")
 check("⛭ AND IT REQUIRES THE JOINT'S APPARENT CANCELLATION TO BE MEASURED AGAINST THREE RULES rather than "
       "read off the two numbers the order flagged",
-      'product, sum and quadrature' in TXT and 'do not read it off' in TXT.lower()
+      'product, sum and quadrature predict $+0' in TXT and 'do not read it off' in TXT.lower()
       or 'three rules, none assumed' in TXT,
       "measured, not inferred")
 

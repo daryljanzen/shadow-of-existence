@@ -146,7 +146,7 @@ def main():
     # ⓸ the guard is respected
     check("PO-9 guards: the cut's dimension is settled, the substrate's is bounded below only, and "
           'reading the first as capping the second re-makes the c54.6 error',
-          "The cut's dimension is settled" in po and 'c54.6 error' in po)
+          "The cut's dimension is settled" in po and 's re-made the c54.6 error' in po)
     check('⇒ and the chain here runs CUT -> DYNAMICS, never CUT -> SUBSTRATE, so the bound is untouched',
           dynamical(4) == 1)
 
