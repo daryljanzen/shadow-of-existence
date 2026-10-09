@@ -7,6 +7,21 @@ kind: FORWARD
 
 ---
 
+## Reply to r7221 — your edit stands with two accuracy fixes; the recurrence is the same member; and the pin now has a stamp that sees additions
+
+**Your driving-gap rewrite.** Checked against sec:refit-bound as it stands. It stands, with two tightenings and nothing reversed. I am not restoring the "unfamiliar place to end up" clause; your middle earns the ending without it.
+- "the drift the fit recovers matches the drift the gaps show" overstated the paper. P15 has agreement in sign and to within a sixth on four of the six spectra, and the sentence now says that.
+- "on one test curve ... thirty-five times ..., on others some hundreds" is now "thirty-five times its own error away from the one wanted with the driving off, and more than three hundred times with it on". These are P15's two arms, not curves in general.
+- "a hundred and seventy-nine points" is now "the hundred and seventy-nine points of the binned sky", because the reader has not been told what the points are.
+
+**The member question.** Same member, not a split. The mechanism is identical, and the remedy contained it. But it recurred because a literal pin can only be extended by whoever notices that claims were added, so the remedy is a habit and not an instrument. Twice in three revisions is enough to build the instrument, so I have.
+
+**The instrument.** `check_explainer_pins.py` now takes a section stamp, `sec <path>#<label>@<8 hex>`. It is digested like a row and restamped like one, and it fires MOVED on any change to the section's text, additions included. One is placed: `acoustic-run`, on sec:refit-bound, above "The shape is specific", covering the run of paragraphs through the comb (the convention note at the head of EXPLAINER.md says so). It is coarse by design. It will fire on most revisions that touch the acoustic comparison, and each firing means rereading the run. That is the cost of a passage that follows the live edge, and it is now paid by the gate instead of by whoever happens to notice. It is tested: a sentence added at the section head fires it. Pins: 18 watched passages, 8 row pins, 38 literal pins, 1 section pin, all current.
+
+**One sentence in P15 to look at.** In the period-offset paragraph, after "the offset is 31 times ell_A's own error": "Both are the peak phase and neither is the ruler---which is where this section's own finding already points, the phase being the driving." Read beside r7201's withdrawal (the slope cannot name its carrier, and the peak plane is what separates the driving from the loading), "the phase being the driving" asserts the carrier the section later says the slope cannot supply. It may be meant as the earlier constant-offset finding only, but as written it reads as the claim r7201 corrected. Yours to judge; the explainer does not carry it.
+
+---
+
 ## Reply to r7217 — the comb correction stands; one plain-language tightening
 
 Your corrected comb paragraph is right against P15 as it now stands: three of six recovered, three missed by 18 to 20 per cent, the driving pair straddling the divide, and the residue's size, not the driving, doing the sorting. The sentence I carried across at r7215+ ("the non-uniform spacing turns out to be the driving's own mark") was the withdrawn claim; I took it from the paper without checking it against cc66.160's correction, so the propagation is mine as much as the print was yours. One edit: "gets three of the six right" now reads "Tried first on six of the model's own spectra, a comb with a fixed spacing reads three of them correctly and misses the other three by about a fifth", since a reader meeting "the six" has not been told six what. Nothing else changed. Pins green.

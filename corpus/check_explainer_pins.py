@@ -32,11 +32,21 @@ section.  So the scope and the uniqueness requirement are both needed and both a
 literal occurring twice is a FAILURE, whether or not a section is named, and the remedy is to name a
 section or to lengthen the literal until it names one site.
 
+  sec:    a whole SECTION of a paper, stamped like a row:
+
+              sec corpus/CR_cosmology.tex#sec:refit-bound@1a2b3c4d
+
+          For a passage that tracks a paper's live edge.  A literal sees only the sentence it was hung on:
+          claims ADDED beside it leave it green (r7217, and again r7221 -- the same blindness twice).
+          A section stamp fires on any change to the section's text, so additions are seen too.  It is
+          deliberately coarse: use it only where the passage follows work that moves every revision,
+          and expect a reread each time it does.
+
   The marker is an HTML comment, so the page generator skips it (`md_to_html`, which escapes `<` in prose,
   drops comment lines instead of printing them).
 
 ** WHAT FAILS. **
-  MOVED      a pinned row's line no longer digests to its stamp -- the row was edited, narrowed or struck.
+  MOVED      a pinned row's line, or a pinned section's text, no longer digests to its stamp.
   GONE       a pinned row is no longer in the register, or a pinned file is gone.
   DROPPED    a pinned literal is no longer in its file -- the number or wording the passage rests on changed.
   MULTISITE  a pinned literal occurs more than once in its scope, so the pin is on the file and not on the
@@ -65,6 +75,7 @@ REG = os.path.join(ROOT, 'THE_REGISTER.md')
 
 MARK = re.compile(r'^<!--\s*watch:\s*(.*?)\s*-->\s*$')
 ROWPIN = re.compile(r'^(PO-\d+)@([0-9a-f]{8}|-{8})$')
+SECPIN = re.compile(r'^sec\s+([^\s#]+)#([A-Za-z0-9:_\-]+)@([0-9a-f]{8}|-{8})$')
 INCL = re.compile(r'^in\s+([^\s#:]+?)(?:#([A-Za-z0-9:_\-]+))?:\s*"([^"]+)"$')
 SECCMD = re.compile(r'\\(?:sub)*section\*?\s*\{')
 
@@ -120,7 +131,7 @@ def parse(lines):
             continue  # an ordinary comment: skipped by the generator, not a pin
         parts = [p.strip() for p in m.group(1).split('|')]
         wid = parts[0]
-        w = dict(id=wid, line=i + 1, rows=[], lits=[], passage='')
+        w = dict(id=wid, line=i + 1, rows=[], lits=[], secs=[], passage='')
         if not re.fullmatch(r'[a-z0-9][a-z0-9-]*', wid):
             errors.append(f'MALFORMED  line {i+1}: watch id {wid!r} must be lower-case words joined by hyphens')
         if wid in seen:
@@ -134,6 +145,12 @@ def parse(lines):
                         errors.append(f'MALFORMED  [{wid}] row pin {tok!r}: write PO-n@<8 hex>')
                     else:
                         w['rows'].append((rm.group(1), rm.group(2)))
+            elif p.startswith('sec '):
+                sm = SECPIN.match(p)
+                if not sm:
+                    errors.append(f'MALFORMED  [{wid}] {p!r}: write sec <path>#<label>@<8 hex>')
+                else:
+                    w['secs'].append((sm.group(1), sm.group(2), sm.group(3)))
             elif p.startswith('in '):
                 im = INCL.match(p)
                 if not im:
@@ -142,7 +159,7 @@ def parse(lines):
                     w['lits'].append((im.group(1), im.group(2), im.group(3)))
             else:
                 errors.append(f'MALFORMED  [{wid}] unknown clause {p!r}')
-        if not w['rows'] and not w['lits']:
+        if not w['rows'] and not w['lits'] and not w['secs']:
             errors.append(f'MALFORMED  [{wid}] pins nothing')
         nxt = lines[i + 1].strip() if i + 1 < len(lines) else ''
         if not nxt or nxt.startswith('#') or nxt.startswith('<!--'):
@@ -172,6 +189,20 @@ def evaluate(w, rows, cache):
             struck = cur[0].lstrip('| ').startswith('~~')
             probs.append(f'MOVED    {po} has changed since the passage was read against it'
                          + (' (it is now STRUCK)' if struck else ''))
+    for path, sec, stamp in w.get('secs', []):
+        full = os.path.join(ROOT, path)
+        if path not in cache:
+            cache[path] = open(full, encoding='utf-8').read() if os.path.isfile(full) else None
+        if cache[path] is None:
+            probs.append(f'GONE     {path} does not exist')
+            continue
+        body, why = section_body(cache[path], sec)
+        if body is None:
+            probs.append(f'NOSECTION {path}#{sec}: {why}')
+        elif stamp == '-' * 8:
+            probs.append(f'UNSTAMPED {path}#{sec}: read it against the passage, then --restamp {w["id"]}')
+        elif digest(body) != stamp:
+            probs.append(f'MOVED    {path}#{sec} has changed since the passage was read against it')
     for path, sec, lit in w['lits']:
         full = os.path.join(ROOT, path)
         if path not in cache:
@@ -210,12 +241,23 @@ def restamp(ids, lines, watches, rows):
             if not cur or len(cur) != 1:
                 sys.exit(f'⛔ [{w["id"]}] {po} cannot be stamped: it is not exactly one row of the register')
             new.append(f'{po}@{digest(cur[0])}')
+        newsec = {}
+        for path, sec, _ in w.get('secs', []):
+            txt = open(os.path.join(ROOT, path), encoding='utf-8').read()
+            body, why = section_body(txt, sec)
+            if body is None:
+                sys.exit(f'⛔ [{w["id"]}] {path}#{sec} cannot be stamped: {why}')
+            newsec[(path, sec)] = f'sec {path}#{sec}@{digest(body)}'
         old = lines[w['line'] - 1]
         body = MARK.match(old.strip()).group(1)
         parts = [p.strip() for p in body.split('|')]
         parts = [('rows: ' + ' '.join(new)) if p.startswith('rows:') else p for p in parts]
+        def _sec(p):
+            sm = SECPIN.match(p)
+            return newsec[(sm.group(1), sm.group(2))] if sm else p
+        parts = [_sec(p) for p in parts]
         lines[w['line'] - 1] = '<!-- watch: ' + ' | '.join(parts) + ' -->'
-        print(f'restamped [{w["id"]}]: ' + ' '.join(new))
+        print(f'restamped [{w["id"]}]: ' + ' '.join(new + list(newsec.values())))
     missing = want - hit
     if missing:
         sys.exit('⛔ no such watch: ' + ', '.join(sorted(missing)))
@@ -263,7 +305,8 @@ def main(argv):
               '(A DROPPED literal is re-pointed, not restamped.  The restamp records the reread; never run it without one.)')
         return 1
     print(f'✓ explainer pins: {len(watches)} watched passages, '
-          f'{sum(len(w["rows"]) for w in watches)} row pins, {sum(len(w["lits"]) for w in watches)} literal pins -- all current')
+          f'{sum(len(w["rows"]) for w in watches)} row pins, {sum(len(w["lits"]) for w in watches)} literal pins, '
+          f'{sum(len(w.get("secs", [])) for w in watches)} section pins -- all current')
     return 0
 
 
