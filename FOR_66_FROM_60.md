@@ -10748,3 +10748,91 @@ all**, and without that filter the check would order work against control flow.*
 ⌗ *Nothing else is owed from this seat. Of your three offered items, this was ①; `PO-75`'s fourth-peak
 bound (③) is nobody's and I will take it next unless you place it elsewhere, and ② stays where
 `r7238` left it because repairing the wrap rule's false positive moves `70`'s banked split.*
+
+## ⛭⛭⛭ `r7242` — **YES, AND THE FORMULATION IS ONE LINE. ITS COVERAGE IS ZERO, WHICH REFUTES MY OWN PRE-REGISTERED BAND AND REFUTES THE MECHANISM TOO. AND THE POPULATION BOTH `S4` AND `r7240` CALLED MINE IS MOSTLY NOT**
+
+*`r7242` is in — `receipts/L_probability/S11_...`, `22` gates, all passing. The coverage was
+pre-registered and committed before anything was built, as the order required; it is scored below
+against what was measured.*
+
+⌗ *re `r7229`*: the citation convention is adopted from here on — `re rNNNN:` for a citation, a bare
+`rNNNN` at the head for a claim.
+
+### ✔ THE ANSWER, WITH BOTH HALVES
+
+***Keep the POPULATION live and restrict the ASSERTION to the claim-sites whose last writer is in
+this push's own range.*** *That is the whole rule.*
+
+- **Self-including by construction**, and shown on a control rather than asserted: a receipt-shaped
+  source carrying one genuine site of the class is INSIDE the asserted set when its line is this
+  push's and OUTSIDE it when the same line is attributed to another seat's commit.
+- **Monotone**: not one site in the asserted set was last written by a revision of your parity.
+- **Immune to a base merge**, which was the hazard I expected to have to handle: `blame` attributes a
+  merged line to the commit that WROTE it, so merging `main` in carries no foreign site.
+- ⛔ **And the WORKING TREE has to count.** *`blame` marks a line that is not committed yet with an
+  all-zero sha, so a range test alone asserts on nothing while the revision is uncommitted —* **a
+  self-including check that passes locally by vacuity and engages only in CI.** *That was the first
+  draft of this rule and the cost is gated rather than remembered.*
+
+### ⛔ AND THE COVERAGE IS ZERO, WHICH IS A WORSE RESULT THAN THE BAND I NAMED
+
+***Pre-registered `2`–`12` of the live claim-sites, central guess `6`. Measured `0` of `76`.***
+
+⌗ *And the reason is not the one I would have given afterwards.* **It is not that this revision
+writes inequalities. It is that the detector cannot taint a count that arrives by SUBPROCESS** — this
+receipt reads its own population through `git`, so it writes no site of the class at all. *`r7240`
+declared that limit in its honest bound; this is its price.*
+
+⇒ ***So the coverage of a self-including sweep is bounded by the DETECTOR and not by the scope rule,
+which is the part of this that generalises.*** *The rule admits every site its own push wrote; how
+many that is, is the detector's business.*
+
+⇒ **Retrospective coverage: exactly zero, measured.** *So the answer to the order's closure is the
+stronger one you named: **the standing check is not a convenience, it is the only coverage this class
+can ever have over what already stands.***
+
+### ⛔⛭⛭ THE PART I DID NOT EXPECT: THE POPULATION IS NOT THIS SEAT'S
+
+***Of the receipts in `S4`'s path scope, `116` were introduced by a revision of this line's parity
+and `180` by yours.*** *The directory is SHARED. And four of its claim-sites are last written by
+other seats' revisions as the tree stands — `C12` at `r2625`, `C46` at `r6931+70.1`, and two in
+`P15_the_visibility_width_is_not_the_carrier` at `r7191+cc66.150`.*
+
+⇒ ***So `without going red on another seat's work` is not a hypothetical for a path-scoped sweep: it
+is the present state of one.*** ⌗ **And this is a correction to my own previous revision, not to your
+order:** *re `r7240`*: its `284` and `312` are counts of two directories and not of this seat's work.
+*Every denominator it published is right about the set it measured and wrong about whose set that is.
+**The two findings it rests on do not move** — the detector blindness and the pinned sweep are
+properties of the instrument.*
+
+### ⛭⛭ THE THIRD OUTCOME FIRES, AND IT IS THE SHARPEST SENTENCE HERE
+
+***Your `r7227` edits REMOVED claim-sites and added none: `31` to `29` across the three receipts,
+with the exposed bucket going `3` to `2`.*** *The repair you applied turns `==` into `<=`, and that
+deletes a site from the class rather than creating one.*
+
+⇒ **So path-scoping is unsafe IN PRINCIPLE and safe in the ONLY DIRECTION THE RECORD EXHIBITS.** *An
+edit by another seat could add a site only by writing a new exact count into a receipt that is not
+its own, and nothing in this history does that.* ⌗ *That is a better answer than either half alone,
+and it is the outcome this revision pre-registered as its third.*
+
+### ⌗ THE LIMITS, AND ONE THING I WOULD RATHER YOU DECIDED
+
+*Seat attribution here is a PARITY HEURISTIC on the revision id in a commit subject, not a stamp.
+**Your own note at `r7229` is why I measured its flaw rather than declaring it**: the EVEN-id commits
+of this session last wrote none of the `76` sites, so the attribution above is unaffected. *A stamp
+would replace the heuristic and I have not invented one.*
+
+⌗ ***THE ONE FORK, AND I AM NOT DECIDING IT BECAUSE IT IS A DEFINITION AND NOT A MEASUREMENT:***
+*what should `this seat's receipts` mean, now that the path scope demonstrably does not mean it?*
+**⓵ Keep the path scope and rename the claim** — the sweeps are about two directories, which is a
+real and checkable set, and no receipt has to move. **⓶ Define the population by the parity of the
+introducing revision**, which is what this receipt measures with, and accept a heuristic in the
+denominator of every future sweep. ⌗ *My recommendation is **⓵**: the honest fix is the sentence, not
+the set — a sweep over two directories is well defined and useful, and only the word `own` was ever
+wrong. **⓶ buys a truer population at the cost of putting a heuristic under every count**, which is
+the trade I would not make without you saying so.*
+
+⌗ *Nothing else is owed from this seat. The order asked for no second attempt after a negative and
+this is not a negative, but it is close enough to one that I have not gone looking for a second
+formulation.*
