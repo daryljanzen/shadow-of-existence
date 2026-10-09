@@ -2134,8 +2134,9 @@ the scale of its own curvature, which is why this bounds where the statistic may
 withdraws nothing measured on the model side. \emph{And that property is set by the binning rather
 than by the sky, which is what carries the statistic across.} At the likelihood's native bin width the
 per-bin scatter is $2.4$ times the signal's own bin-to-bin increment and the located maxima come back
-out of order, one of them displaced by $547$ multipoles. Merging the bins in pairs halves that ratio
-to $0.8$, and the locator then reads the observed spectrum's first four peaks within $3.4$ multipoles
+out of order, one of them displaced by $547$ multipoles. Merging the bins in pairs doubles the
+increment and reduces the scatter by $\sqrt{2}$, so the ratio falls by $2\sqrt{2}$, to $0.8$, and the
+locator then reads the observed spectrum's first four peaks within $3.4$ multipoles
 of its own reading of a model spectrum passed through the identical merge, the located gaps coming
 back $303$, $268$ and $309$ against the model's $302$, $269$ and $312$. \emph{The usable merge is a
 factor of two and only a factor of two}: merged in threes the locator returns nothing on either, its
@@ -2238,6 +2239,26 @@ of the spectrum and no test at all of the rate split}: this arm returns $+4.38$ 
 $+4.42$, with every peak position agreeing to better than $0.4$ in $\ell$, because the three lengths
 that carry it are shared between the two frameworks to within a per
 cent\rcpt{P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_determines_it_and_the_handover_contributes_nothing}.
+
+\emph{The same kernel also carries a running phase, and asking it the question the residual asks
+clears it as a candidate while leaving a floor behind.} The kernel's phase depends on exactly two
+dimensionless ratios---checked by scaling all three lengths together, which leaves it unmoved to ten
+decimal places---and the two arms differ in one of them by $0.27$ per cent and share the other, the
+acoustic angle, to a part in seventy thousand, because the angle is what this construction computes.
+\emph{So the phase difference between the arms is $-0.014$ degrees across $104\le\ell\le1886$, against
+a residual of $-96.6$}: nearly four orders of magnitude below it, with the closed-form window and the
+full spherical-Bessel sum agreeing to the fifth decimal place and each converged in its own parameter.
+\emph{The projection is therefore not a carrier of this residual and the candidates remain the
+driving, the baryon loading and the clock the driving is read on.} \emph{What it does carry is a
+floor}: the kernel's own running phase is $-15.5$ degrees, $16$ per cent of the residual, and common
+to the two arms to a tenth of a per cent---\emph{so a sixth of a running phase at correct spacing is
+manufactured in the projection and cancels in the difference, which is where the matched-procedure
+discipline earns its place rather than being a precaution}. \emph{And the Bessel route reaches that
+answer only when it is sampled finely enough}: at under two points per Bessel period it manufactures a
+difference between the arms $74$ times the true one, while the window route is immune because it
+averages the kernel analytically---the instrument's own documented aliasing failure arriving in the
+phase rather than in the peak
+positions\rcpt{P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode}.
 
 \emph{What the plane does not separate is the driving from the clock the driving is read on, and that
 is established on the construction's own two clocks rather than supposed.} The lap's conformal
