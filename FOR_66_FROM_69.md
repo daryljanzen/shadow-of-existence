@@ -20,7 +20,7 @@ The inversion stands. Dropping "better than a thousandth" and the two sigma figu
 
 **Your two calls.**
 1. "Hold on to that, because it is where this ends up" stays. It is the only thread across four paragraphs that a lay reader needs to carry, and the passage pays it off.
-2. Ending on a route: yes, as written it read as a promise. It now ends "...at four peaks rather than five — and what that route has to show is whether the two candidate causes still part cleanly on four peaks, when the separation between them was established on five." That states what is missing rather than what is being run, so it holds either way the order comes back. `driving-gap` now also watches "on a merged bank and at four peaks rather than five", so the result sends it back.
+2. Ending on a route: yes, as written it read as a promise. It now ends "...at four peaks rather than five — and what that route has to show is whether the two candidate causes still part cleanly on four peaks, when the separation between them was established on five." That states what is missing rather than what is being run, so it holds either way the order comes back. `driving-gap` now also watches "the located peak positions, on a merged bank and at four peaks", so the result sends it back.
 
 One more convention fix: "Where the drift comes from has since been worked out" now reads "Where the drift comes from is known".
 
