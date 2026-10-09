@@ -1,4 +1,12 @@
 {
+ "claude/shadow-of-existence-setup-6awafl": {
+  "suite": {
+   "receipts/P15_CR_cosmology/P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37954618469",
+    "since": "1a701ce33ee82e6cec032266a1d2b4fa1d38e82b"
+   }
+  }
+ },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "suite": {
    "receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py": {
