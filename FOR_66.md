@@ -11176,3 +11176,196 @@ persists, but that it was never what stood in the way.**
 `a four-parameter comb is the better description of these spectra and the worse instrument for this
 measurement`, and `what would change it is a finer binning rather than a further parameter`. ⌗ *I
 declined a fifth parameter at `r7215` as a refusal; `cc66.162` turns that refusal into a reason.**
+
+## ⛔⛭⛭⛭ `r7221+cc66.163` — **ITEM ① HAS A YES AND THE YES IS THE COMB'S OWN PEAK COUNT. THE SKY READS LIKE THE DRIVING AND THE READING IS VOID. AND YOUR CLOSURE NUMBER DOES NOT EXIST**
+
+*`16` checks, all pass, `223`s measured. Both items run. **And my pre-registered number is wrong,
+which is the burden working rather than the burden failing.***
+
+### ⛔ THE BURDEN FIRST, BECAUSE YOU SAID IT WAS THIS CYCLE'S LESSON
+
+***I pre-registered `$|\Delta L_p|\le10$` and it is `$56.693$` — `$5.7\times$` the bound I wrote and
+`$11.2\times$` the terms that produced it.*** *The mechanism: both carriers act on `cc66.158`'s plane
+in `$(\Delta\varphi,\Delta\mathrm{alt})$` — a common offset and an alternation — and the comb carries
+its OWN `$\varphi$` and `$a$`, so a carrier acting purely there is absorbed exactly and the only
+route left to `$L_p$` is PART C's gap sequence: `$L_p=c_0+v_pc_2$`, hence
+`$\Delta L_p=\Delta c_0+v_p\Delta c_2+c_2\Delta v_p$`, which the measured gaps sum to `$5.05$`.*
+
+⌗ ***AND IT WAS NOT A BLIND PREDICTION, AND I am not letting that pass as one.*** *`cc66.162`
+printed `$L_p=350.131$` and `$293.438$`; that difference was already in print and I knew the bound
+was wrong before the run began. **The blind ones were the loading pair, the sky's `$L_p$` and the
+arm–control differencing. The sky's held (`$350\pm10$` predicted, `$351.807$` measured), the
+arm–control one held, and the loading one turned out to be unresolvable.** The pre-registration is in
+the receipt's PART B comment with the blind items marked as blind.*
+
+⇒ ***The premise was right and the conclusion was wrong, which localises the failure exactly.***
+*PART C's gap LEVEL is the same to `$1.32$` across the driving switch, where the banked scale is
+bit-identical, and moves `$+29.11$` across the loading switch against a banked `$+29.21$` — three
+parts in a thousand. **The gaps do what I said they would. `$L_p$` does not follow them.***
+
+### ⛭⛭⛭ ITEM ①: THEY SEPARATE BY `218` SIGMA, AND THE `218` SIGMA IS LOCK-ON
+
+| pair | `$\Delta L_p$` | `$\sigma$`(bank) | in `$\sigma$` | `$\sigma$`(scale-free) | in `$\sigma$` |
+|---|---|---|---|---|---|
+| driving, `cr` | `$+56.693$` | `$0.260$` | **`$218$`** | `$0.611$` | `$93$` |
+| driving, `lcdm` control | `$+56.359$` | `$0.279$` | `$202$` | `$0.613$` | `$92$` |
+| loading, `cr` | — | — | — | — | **NOT A MEASUREMENT** |
+| arm − control, bases | `$+0.295$` | `$0.189$` | `$1.6$` | `$0.840$` | `$0.35$` |
+
+⇒ ***So `whether the carrier difference is larger than that` is YES, by two orders. Here is what it
+is.*** *PART C's own locator pointed at the FITTED CURVE rather than at the data:*
+
+| | `$L_p$` | the fitted curve's own mean gap | out by | its maxima vs the data's |
+|---|---|---|---|---|
+| `cr_nodrive` | `$293.438$` | `$292.98$` | `$0.2\%$` | `$1.60$` |
+| `lcdm_nodrive` | `$293.476$` | `$293.04$` | `$0.1\%$` | `$1.61$` |
+| `cr_base` | `$350.131$` | `$290.17$` | **`$20.7\%$`** | `$23.89$` |
+| `lcdm_base` | `$349.835$` | `$290.17$` | **`$20.6\%$`** | `$24.28$` |
+| `cr_rb0.5` | `$347.672$` | `$273.42$` | **`$27.2\%$`** | `$20.85$` |
+| sky | `$351.807$` | `$289.52$` | **`$21.5\%$`** | — |
+
+***`$L_p$` is the fitted curve's peak spacing on the two driving-OFF spectra and on nothing else.***
+*Where the comb locks on, its maxima sit `$1.6$` from the data's; where it does not, `$21$`–`$24$`.
+**So the `$218\sigma$` is the difference between a fit that locks and a fit that does not — and the
+carrier's part in it is that the driving is what breaks the lock.***
+
+### ⛔ AND THE LOADING HALF OF ITEM ① HAS NO MEASUREMENT TO MAKE
+
+***`cr_rb1.5` has no interior optimum in ANY box.*** *`$430.000$` at the `$430$` box; widen it to
+`$900$` and it sits at `$900.000$` with `$\chi^2$` falling `$1.94\times10^4\to1.39\times10^3$`.
+**The direction is unbounded — `cc66.160`'s `$542\times$` pitfall, arriving exactly where your order
+needed it not to** — and the covariance there is degenerate, so its `$\sigma$` is
+`$7\times10^{-7}$`.* ⌗ *Item ① asked for two pairs differenced. The bank supports one of them.*
+
+### ⛔⛭⛭ AND ONE PLACE I THINK THE SPECIFICATION IS WRONG RATHER THAN UNLUCKY
+
+***`the orthogonal direction it carries to `$0.08$` per cent` is a formal error, not a
+reproducibility.*** *Same spectrum, same statistic, only the fitting window's top edge moved:*
+
+| window | `$N$` | `$L_p$` | formal `$\sigma$` |
+|---|---|---|---|
+| `$150$`–`$1000$` | `$94$` | `$283.175$` | `$4.276$` |
+| `$150$`–`$1300$` | `$127$` | `$281.614$` | `$0.815$` |
+| `$150$`–`$1600$` | `$156$` | `$293.438$` | `$0.226$` |
+| `$150$`–`$1950$` | `$176$` | `$295.595$` | `$0.066$` |
+| `$250$`–`$1950$` | `$165$` | `$295.951$` | `$0.012$` |
+
+⇒ ***`$L_p$` moves `$14.3$` — five per cent — while its formal `$\sigma$` falls to `$0.012$`.***
+*So `larger than the bank's own sigma` is a test that any difference passes, because that `$\sigma$`
+is not an error bar on `$L_p$`.* ⌗ **And that `$\sigma$` also depends on the models' ARBITRARY
+amplitudes** — *`$Y$` rms `$35$` against `$88$` across the driving pair alone — which is why every
+table above carries `$\sigma\sqrt{\chi^2/\mathrm{dof}}$` beside it. That one is scale-free.*
+
+### ⛔ AND THAT PUTS TWO FIGURES IN `sec:refit-bound` UNDER STRAIN — THIS IS THE PART TO READ
+
+***On the scale-free convention `cc66.162`'s `$35\sigma$` reads `$54\sigma$` and its `$379\sigma$`
+reads `$82\sigma$`.*** *Same conclusion, same ordering, and **`more than three hundred` does not
+survive the change of convention** — it becomes `more than eighty`. Neither convention is an error
+bar in the ordinary sense: these are NOISELESS model spectra, so the residual being inverted is model
+misfit and not noise.*
+
+⇒ ⌈ ***And the window test is harder on the `$35$` than the convention is.*** *`cr_nodrive`'s offset
+from banked is `$7.94$`, and the window alone moves `$L_p$` by `$14.3$`. **The robust statement the
+five windows support is that `$L_p$` lies BELOW banked on every one of them, by `$5.4$`–`$19.8$`,
+with one sign throughout.** That is a real result and it is weaker than `$35\sigma$`.*
+
+⌗ ***What I would put in print, and it is yours to word:*** *the spacing at the decorrelating pivot
+lies below the banked scale on every fitting window tested, by `$5$`–`$20$`, and the formal error on
+it — `$0.07$`–`$4.3$` depending on the window — is not a measure of that spread.* **The sentence that
+needs no change is the conclusion: centring buys a precisely determined number about the wrong
+quantity.** *Only the sigma counts attached to it do.* ⌗ *`cc66.162`'s own `Ⓒ①` asserts
+`$>10\sigma$`, which holds on both conventions, so the receipt is not wrong — the two digits quoted
+out of it are the exposed part.*
+
+### ⌗ AND ONE DIGIT IN PRINT, SMALL AND WORTH ONE LINE
+
+***The degeneracy sentence says `$179$` binned points; the fits that produce `$\rho$` use `$156$`.***
+*`$185$` of `plik_lite`'s TT bins are covered by the instrument and `$156$` survive the
+`$150$`–`$1600$` de-tilt window. The `$179$` is the refit covariance's count from earlier in the
+section (`$179\times179$` at `sec:` the draw test), not the comb's. **It appears in `cc66.161`'s and
+`cc66.162`'s docstrings and twice in `CR_cosmology.tex`.** No conclusion moves; the receipt prints
+its own `$N$` in every table so this one cannot propagate further.*
+
+### ⛭⛭ ITEM ②: THE SKY LANDS ON THE DRIVING, AND I AM WITHDRAWING THE READING
+
+***`$L_p$`(sky) `$=351.807$` by the identical extraction — within `$1.68$` and `$1.97$` of the two
+driving-ON bases and `$58.4$` from the driving-OFF pair.*** *Stated first in the terms it would be
+stated in if it held: on the row's tight direction, the sky chooses the driving over its absence by
+two orders of the bank's `$\sigma$`.*
+
+⛔ ***It is void on two counts and both are measured.*** *The curve that extraction returns is
+**rejected by `plik_lite` at `$\chi^2/\mathrm{dof}=11.83$` on the FULL covariance** — the de-tilt is
+a diagonal rescaling, so the covariance transforms exactly and nothing is dropped — and its `$L_p$`
+misses its own curve's peak spacing by `$62$`, which is the unlocked signature exactly. **The sky
+agrees with the driving-ON bases about the failure mode they share, not about the driving.***
+
+⇒ ***And the matched differencing is blind to the arm:***
+`$(\mathrm{arm}-\mathrm{sky})-(\mathrm{control}-\mathrm{sky})=0.295$`, `$1.6\sigma$` on your
+convention and `$0.35\sigma$` on the scale-free one, **against the carrier's `$218$`.** *A statistic
+that separates the carrier by two orders and the arm by one sigma is not an instrument for this
+measurement — which is `cc66.161`'s conclusion arrived at from the other end.*
+
+⌗ ***And `$L_p$` carries only `$16$` per cent of a real change in the acoustic scale:*** *`cr_rb0.5`'s
+banked scale is `$15.32$` below `cr_base`'s and its `$L_p$` is `$2.46$` below. With `$\sigma=0.21$`
+quoted, that under-response reports as a `$12\sigma$` determination of a number six times too small.*
+⚠ *`cr_rb0.5` moves `$R_b$` as well as the scale, so `$16\%$` is a response along a mixed direction
+and not `$\partial L_p/\partial\ell_A$` — and the bank has no spectrum that moves the scale alone,
+which is itself the answer to whether it could be calibrated out.*
+
+### ⛔⛭⛭⛭ YOUR CLOSURE NUMBER DOES NOT EXIST, AND THAT IS STRONGER THAN A NUMBER
+
+***You named the remainder as `what point count, window and per-point error would bring `$0.1929$`
+against `$1.0390$` within reach`. There is none: `$\lvert\rho(\ell_A,d)\rvert$` stays in
+`$[0.9385,0.9773]$` across THIRTEEN fits — `$78$`–`$176$` points, five windows, six spectra.***
+*And the decisive one: **halving the point count leaves `$\rho$` at `$-0.9549$` against `$-0.9548$`**,
+inflating `$\sigma$` by `$\sqrt2$` and doing nothing else.*
+
+⇒ ⌈ ***So `r7219`'s `what would change it is a finer binning rather than a further parameter` — now
+in print — is measurably wrong.*** *`$(v,v^2)$` are monomials, and their correlation over an interval
+is set by the interval's endpoint RATIO rather than by its width or its sampling. **That is why your
+centring removes it exactly and why no amount of data touches it.** The route is closed by a
+geometric fact and not by a data limit, which is why there is no number at the end of it.* ⚠ *It is
+MEASURED on thirteen fits and not proved; the monomial-ratio argument is prose in the receipt, not a
+check.*
+
+### ⛭⛭⛭ AND THE ONE THING I WOULD ACT ON: THE INSTRUMENT CHOICE IS THE WRONG WAY ROUND
+
+***You wrote `the four-parameter comb can be pointed at the sky and the peak locator of cc66.159
+could not, which is the whole reason the comb was built`. Measured, it is the reverse.***
+
+| merge | bins | width | noise/increment, p90 | sky peaks | model peaks | matched `$\max\lvert\Delta\rvert$` |
+|---|---|---|---|---|---|---|
+| native | `$156$` | `$9$` | `$2.38$` | `$4$`, **OUT OF ORDER** | `$5$` | `$547$` |
+| pairs | `$78$` | `$18$` | `$0.82$` | **`$4$`** | `$5$` | **`$3.37$`** |
+| threes | `$52$` | `$27$` | `$0.39$` | `$0$` | `$0$` | — |
+
+*At `$18$` per bin the sky's located gaps come back `$303$`/`$268$`/`$309$` against the MODEL's
+`$302$`/`$269$`/`$312$` through the identical merge. **`cc66.159`'s catastrophe is a binning artefact
+of the bank's native `$9$`, not a property of the sky** — at `$9$` the per-bin noise is `$2.4$` times
+the signal's own bin-to-bin increment and one located peak comes back `$547$` out of place.* ⌗ *At
+`$27$` the locator returns nothing on the sky OR the model — that is its own `$\pm40$` window holding
+fewer than four points, a property of the locator — so the usable merge is a factor of two and only a
+factor of two.*
+
+⇒ ***The comb needs points it cannot use and the locator needs the bank merged, which costs exactly
+the points the comb is short of. The two halves of this row want opposite binnings, and the reachable
+half is the peak plane.***
+
+⚠ ***AND ITS BURDEN IS NAMED AND NOT DISCHARGED.*** *Four peaks, not five. `cc66.156`'s statistic is
+banked at five. Forming `$(\varphi,\mathrm{alt})$` on four peaks of a merged bank is a NEW
+measurement with its own validation. **I have not made it: you said `I am not asking for an
+instrument after it`, and this is a route offered, not an instrument built.** If you want it, it is
+one order, and the burden is the obvious one — the merged MODEL must reproduce `cc66.156`'s banked
+`$+0.126$`/`$-0.0247$` before the sky's position on the plane means anything.*
+
+### ⌗ WHAT I AM NOT CLAIMING
+
+- ***No fifth parameter, and no sixth.*** *Both your refusals stand and nothing here wants one.*
+- ***The `$218\sigma$` is not a detection of the driving*** *— it is lock-on, and I would not put it
+  in print as a carrier result in any wording.*
+- ***The sky's `$L_p$` is not a measurement of anything*** *— `$\chi^2/\mathrm{dof}=11.83$` is a
+  rejection, and the number is reported only so that the void reading is on the record as void.*
+- ***`cc66.162`'s conclusion is unaffected*** *— its `Ⓒ①` asserts `$>10\sigma$` and that holds on
+  both `$\sigma$` conventions, and its `Ⓒ②` is pivot-invariant. Only the two quoted digits move.*
+- ***And I am not claiming the `$5.4$`–`$19.8$` spread is an error budget either*** *— it is five
+  windows of one spectrum, which is a reproducibility probe and not a marginalisation.*
