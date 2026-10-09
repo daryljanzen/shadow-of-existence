@@ -1,0 +1,476 @@
+# receipt	literal	D	class
+receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py	exponential near-horizon approach	157	CLAUSE
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	a dimensionless magnitude needs two	106	CLAUSE
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	the one quantity the handover supplies	>300	CLAUSE
+receipts/L165_defining_the_sum/S1_seven_necessary_conditions_on_the_measure.py	Brown and Kucha	>300	CLAUSE
+receipts/L165_defining_the_sum/S1_seven_necessary_conditions_on_the_measure.py	path integral ranges over the conformal factor of the metric	126	CLAUSE
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	finite throughout	>300	CLAUSE
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	the transverse-traceless shear	>300	CLAUSE
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	decomposes as a direct integral	191	CLAUSE
+receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	decomposes as a direct integral over its spectrum	191	CLAUSE
+receipts/L165_interacting_tower/D4_the_state_fixer_has_its_own_threshold.py	limit-point fibres	108	CLAUSE
+receipts/L165_interacting_tower/D4_the_state_fixer_has_its_own_threshold.py	on each sub-threshold fibre	170	CLAUSE
+receipts/L165_interacting_tower/S10_the_halves_meet_at_the_shear.py	transverse-traceless graviton tower	>300	CLAUSE
+receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	selects the Friedrichs extension	>300	CLAUSE
+receipts/L165_interacting_tower/S12_the_boundaries_coincide.py	transverse-traceless graviton tower	>300	CLAUSE
+receipts/L165_interacting_tower/S8_the_floor_follows.py	at the origin	>300	CLAUSE
+receipts/L165_interacting_tower/S8_the_floor_follows.py	essentially self-adjoint where	127	CLAUSE
+receipts/L165_interacting_tower/S8_the_floor_follows.py	promoted from the c-number	120	CLAUSE
+receipts/L165_interacting_tower/S8_the_floor_follows.py	straddles the	248	CLAUSE
+receipts/L174_general_matter_dynamics/I10_the_constraint_propagation_is_symmetry_free.py	Friedrich	>300	CLAUSE
+receipts/L174_general_matter_dynamics/I10_the_constraint_propagation_is_symmetry_free.py	Ringstr	105	CLAUSE
+receipts/L174_general_matter_dynamics/I2_the_stratification_three_of_four_are_worked.py	Why the cut bends	>300	CLAUSE
+receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	shear forbids a repeated principal null direction	>300	CLAUSE
+receipts/L174_general_matter_dynamics/I6_two_objects_one_word_the_optical_shear_is_not_the_ADM_shear.py	shear-free null geodesic congruence	201	CLAUSE
+receipts/L174_general_matter_dynamics/I7_the_free_shear_is_two_not_five_and_the_corpus_already_names_the_two.py	onset of free gravitational radiation	>300	CLAUSE
+receipts/L174_general_matter_dynamics/I8_no_sweep_reaches_the_stratum_and_the_theorem_says_so.py	a sweep generates a deformation of \emph{fixed} orientation	145	CLAUSE
+receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	the single arc of that swing	104	CLAUSE
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	the single arc of that swing	104	CLAUSE
+receipts/L175_dimensional_descent/E53_link_c_was_never_L533s.py	silent on the dimension itself	163	CLAUSE
+receipts/L175_dimensional_descent/N3_the_criterion_is_the_programmes_own_and_it_is_stated.py	forced rather than chosen	169	CLAUSE
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	reduced from the Einstein--Hilbert action	>300	CLAUSE
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	a dimensionless magnitude needs two	106	CLAUSE
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	deficiency indices	239	CLAUSE
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	no_second_scale_on_either_face	142	CLAUSE
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	single constant of int	>300	CLAUSE
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	the sole remaining scale	101	CLAUSE
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	a dimensionless magnitude needs two	106	CLAUSE
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	the comoving turnaround's deck carries it	135	CLAUSE
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	the existence of the Yukawa couplings	>300	CLAUSE
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	a single dimensionful input and nothing for a dimensionless tuning to hide in	134	CLAUSE
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	that extra generator is the dilation carrying $\alpha\mapsto\lambda\alpha$	103	CLAUSE
+receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	complexified cosmic time	>300	CLAUSE
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	C=(Q\mapsto-Q)_{\mathrm{field}}\circ(R\circ K)_{\mathrm{geometric}}	252	CLAUSE
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	Feynman--St\"uckelberg particle$\leftrightarrow$antiparticle wing structure	123	CLAUSE
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	reality involution $K:\tilde\tau\mapsto\bar{\tilde\tau}$	>300	CLAUSE
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	the self-conjugate photon congruence	>300	CLAUSE
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	two conjugate wings	>300	CLAUSE
+receipts/L202_the_seam/T1_the_transfer_is_half_built.py	validated on its control to	278	CLAUSE
+receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	equianharmonic	103	CLAUSE
+receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	monodromy group of a branched cover is the Galois group	111	CLAUSE
+receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	trivial deck group	106	CLAUSE
+receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	worn three ways	>300	CLAUSE
+receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	Cartan--Weyl skeleton	>300	CLAUSE
+receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	naming it costs nothing and buys	190	CLAUSE
+receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	the Atiyah algebroid of the principal bundle	178	CLAUSE
+receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	the kernel of the anchor---the adjoint bundle	>300	CLAUSE
+receipts/L203_reach_stations/M4_four_objects_one_word.py	equianharmonic	103	CLAUSE
+receipts/L203_reach_stations/M4_four_objects_one_word.py	trivial deck group	106	CLAUSE
+receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	D/H	>300	CLAUSE
+receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	Y_p	>300	CLAUSE
+receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	Yp	101	CLAUSE
+receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	right-handed	>300	CLAUSE
+receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	a nearly scale-invariant adiabatic spectrum processed by ordinary structure formation	176	CLAUSE
+receipts/L204_physics_reach/P13_the_entropy_is_the_corpuss_own_number.py	what unit-counting yields when it has only gauges to count	124	CLAUSE
+receipts/L204_physics_reach/P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled.py	Killing tensor	166	CLAUSE
+receipts/L204_physics_reach/P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled.py	doubly ruled by straight null lines	126	CLAUSE
+receipts/L204_physics_reach/P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled.py	shear forbids a repeated principal null direction	>300	CLAUSE
+receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	what the field equations trade for the stress tensor	165	CLAUSE
+receipts/L204_physics_reach/P4_the_corpus_identifies_the_higgs_mechanism_it_does_not_decline_it.py	is the $R$-odd \emph{departure} from it	188	CLAUSE
+receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	it becomes a universe	120	CLAUSE
+receipts/L207_the_bend/W2_the_general_inhomogeneous_leaf_exhibited.py	Tolman	>300	CLAUSE
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	parallel conjugation	>300	CLAUSE
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	\rho_r/\rho_m	>300	CLAUSE
+receipts/L211_closure_adjacency/A4_the_composition_rests_on_adiabaticity_not_uniformity.py	adiabaticity parameter $C/\mu_{n}$	234	CLAUSE
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	external to the geometry	>300	CLAUSE
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	is the $R$-odd \emph{departure} from it	188	CLAUSE
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	massless radial Dirac problem	113	CLAUSE
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	radial first-order pair	108	CLAUSE
+receipts/L221_quark_lepton/Q2_the_kernel_route_is_unavailable_off_the_R_even_sector.py	external to the geometry	>300	CLAUSE
+receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	distinguished only by which root each takes as its hole	150	CLAUSE
+receipts/L221_the_bridge/B16_the_coupling_cannot_come_from_this_bundle.py	closes the Weyl group of the substrate's own complexified isometry algebra	209	CLAUSE
+receipts/L221_the_bridge/B18_the_obstruction_is_horizon_located.py	the fermion is a mode of the existent spatial leaf	252	CLAUSE
+receipts/L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_index_begins.py	Higgs	>300	CLAUSE
+receipts/L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_index_begins.py	a circle whose action is what forces the equivariant Dirac index to vanish	173	CLAUSE
+receipts/L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_index_begins.py	per-wall anomaly conditions	>300	CLAUSE
+receipts/L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_index_begins.py	the index theorem is a statement about a compact	281	CLAUSE
+receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py	carried continuously from \emph{zero} at the turnaround	216	CLAUSE
+receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py	to the branch point	>300	CLAUSE
+receipts/L221_the_bridge/B25_the_scattering_object_exists.py	Regge	167	CLAUSE
+receipts/L221_the_bridge/B29_the_two_walls_are_one.py	triality	>300	CLAUSE
+receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py	acts on the actual zero-modes as charge conjugation	153	CLAUSE
+receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py	complex conjugation of the pair	>300	CLAUSE
+receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py	only the order-two subgroup	>300	CLAUSE
+receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py	realised on the built fermion sector	>300	CLAUSE
+receipts/L221_the_bridge/B32_the_two_bounds_compose.py	a fixed pure number rather than a free parameter	145	CLAUSE
+receipts/L221_the_bridge/B32_the_two_bounds_compose.py	rather than searched for in an unbounded space	147	CLAUSE
+receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	odd in the signed radius	145	CLAUSE
+receipts/L221_the_bridge/B35_the_continuation_is_cited_wrong.py	odd in the signed radius	145	CLAUSE
+receipts/L221_the_bridge/B36_two_of_three_crossings_are_supplied.py	odd in the signed radius	145	CLAUSE
+receipts/L221_the_bridge/B38_the_ledger_is_discrete.py	a fixed pure number rather than a free parameter	145	CLAUSE
+receipts/L221_the_bridge/B38_the_ledger_is_discrete.py	triality	>300	CLAUSE
+receipts/L221_the_bridge/B39_the_substrate_does_carry_compact_su2.py	a fixed pure number rather than a free parameter	145	CLAUSE
+receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	triality	>300	CLAUSE
+receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	a fixed pure number rather than a free parameter	145	CLAUSE
+receipts/L221_the_bridge/B47_the_wall_is_exactly_critical.py	inverse-square	208	CLAUSE
+receipts/L221_the_bridge/B51_p0s_inference_is_sound_and_scoped.py	a dimensionless magnitude needs two	106	CLAUSE
+receipts/L221_the_bridge/B51_p0s_inference_is_sound_and_scoped.py	rather than only in the limit	141	CLAUSE
+receipts/L221_the_bridge/B51_p0s_inference_is_sound_and_scoped.py	the unique fixed point of the root-exchange involution	122	CLAUSE
+receipts/L221_the_bridge/B55_right_kind_right_place_numerical_declined.py	a fixed pure number rather than a free parameter	145	CLAUSE
+receipts/L221_the_bridge/B56_it_is_lambda_8_not_a_coupling.py	furnish a Cartan element	199	CLAUSE
+receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py	diquark	233	CLAUSE
+receipts/L221_the_bridge/B59_the_routes_are_enumerable_and_one_is_absent.py	geometric-isometry	>300	CLAUSE
+receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	traced rather than computed	>300	CLAUSE
+receipts/L221_the_bridge/B63_the_spectral_route_closes_for_r2806s_reason.py	the gauge and mass content external	114	CLAUSE
+receipts/L221_the_bridge/B64_the_composite_route_does_not_close.py	deSitter	212	CLAUSE
+receipts/L221_the_bridge/B64_the_composite_route_does_not_close.py	diquark	233	CLAUSE
+receipts/L221_the_bridge/B64_the_composite_route_does_not_close.py	meson	>300	CLAUSE
+receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py	bound-state zero-modes of the existent leaf	135	CLAUSE
+receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py	the descent onto a full \emph{propagating} spinor field sector is built---on the static slicing structure, and again on this framework's own chiral member	128	CLAUSE
+receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py	the descent onto a \emph{propagating} spinor sector is built on the chiral member, which is the unpolarised one, a Dirac field there propagating on the light cone	120	CLAUSE
+receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	each hinge designates one of the three roots of the horizon cubic	110	CLAUSE
+receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	the three carry one mass parameter	153	CLAUSE
+receipts/L246_the_achirality_is_the_obstruction/W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_chiral_member_does_not_have.py	c\mapsto-c	>300	CLAUSE
+receipts/L247_the_build_already_stands/B1_the_geometry_po14_asks_for_was_built_at_r2419.py	c\mapsto-c	>300	CLAUSE
+receipts/L247_the_build_already_stands/B1_the_geometry_po14_asks_for_was_built_at_r2419.py	restoring the second polarization	212	CLAUSE
+receipts/L247_the_build_already_stands/B1_the_geometry_po14_asks_for_was_built_at_r2419.py	wave map into the hyperbolic plane	>300	CLAUSE
+receipts/L263_the_station_audit/S1_three_of_eight_stations_are_already_held_and_one_was_noticed_and_not_propagated.py	the Atiyah algebroid of the principal bundle	178	CLAUSE
+receipts/L271_the_statistics_bake/S1_the_first_programme_is_a_power_calculation_and_the_design_it_proposes_is_the_expensive_one.py	survivorship	174	CLAUSE
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	the descent onto a \emph{propagating} spinor sector is built on the chiral member, which is the unpolarised one, a Dirac field there propagating on the light cone	120	CLAUSE
+receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	\emph{On the datum side}	110	CLAUSE
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	admits rather than forces a quantum structure	130	CLAUSE
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	the one non-generic exception, the Nariai branch	123	CLAUSE
+receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py	the one non-generic exception, the Nariai branch	123	CLAUSE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	adopted	165	CLAUSE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	right-handed	>300	CLAUSE
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	nearly scale-invariant adiabatic spectrum processed by ordinary structure formation	178	CLAUSE
+receipts/L809_one_loop_quartic/S1_the_quartic_is_a_constant_vacuum_energy_and_the_geometry_absorbs_it.py	gauge-combination	>300	CLAUSE
+receipts/L815_seam_phase_derived/S1_the_seam_phase_is_derived_compression_correlated_on_the_observable_leg.py	imprints nothing	>300	CLAUSE
+receipts/L815_seam_phase_derived/S1_the_seam_phase_is_derived_compression_correlated_on_the_observable_leg.py	pressureless	>300	CLAUSE
+receipts/L818_po6_running_layer/S1_the_one_constant_ledger_survives_on_the_running_layer_not_only_fixed_de_sitter.py	definition of the interacting tower	164	CLAUSE
+receipts/L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and_one_of_this_seats_six_was_comparing_against_a_number_the_paper_had_withdrawn_as_the_error.py	moved by under a per cent	192	CLAUSE
+receipts/P03_SdS_slicing/P03_the_symbol_T_carries_four_structural_referents.py	\hat{g}	>300	CLAUSE
+receipts/P03_SdS_slicing/P03_the_symbol_w_carried_two_circles.py	sin u	120	CLAUSE
+receipts/P07_CR_framework/P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py	a black hole in a previous universe	108	CLAUSE
+receipts/P07_CR_framework/P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py	back seam (timelike to spacelike)	>300	CLAUSE
+receipts/P07_CR_framework/P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py	one point of the underlying geometry	210	CLAUSE
+receipts/P07_CR_framework/P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py	the outer two differ by a full turn	216	CLAUSE
+receipts/P07_CR_framework/P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature.py	back seam (timelike to spacelike)	>300	CLAUSE
+receipts/P07_CR_framework/P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature.py	one point of the underlying geometry	210	CLAUSE
+receipts/P07_CR_framework/P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature.py	the outer two differ by a full turn	216	CLAUSE
+receipts/P07_CR_framework/P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature.py	tangency at a merged double root	>300	CLAUSE
+receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py	umbilic	>300	CLAUSE
+receipts/P10_canonical_time/P10_the_payoff_count_of_one_is_right_because_P1_reaches_the_existence_occurrence_distinction_from_general_relativity_alone_and_answers_the_extension_move_with_a_theorem.py	In maximal extensions	217	CLAUSE
+receipts/P10_canonical_time/P10_the_payoff_count_of_one_is_right_because_P1_reaches_the_existence_occurrence_distinction_from_general_relativity_alone_and_answers_the_extension_move_with_a_theorem.py	existence/occurrence	>300	CLAUSE
+receipts/P10_canonical_time/P10_the_payoff_count_of_one_is_right_because_P1_reaches_the_existence_occurrence_distinction_from_general_relativity_alone_and_answers_the_extension_move_with_a_theorem.py	metrically coincident	>300	CLAUSE
+receipts/P10_canonical_time/P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping.py	one per tensor harmonic	>300	CLAUSE
+receipts/P10_canonical_time/P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping.py	quadratic and logarithmic successors	126	CLAUSE
+receipts/P10_canonical_time/P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping.py	ten at the floor	>300	CLAUSE
+receipts/P10_canonical_time/P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping.py	the mode sums spend one dimensionless constant	>300	CLAUSE
+receipts/P10_canonical_time/P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping.py	tower of time-dependent oscillators	>300	CLAUSE
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	Grassmannian at six	170	CLAUSE
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	at ten	>300	CLAUSE
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	exchanged by the antipodal map, which is $R$.	108	CLAUSE
+receipts/P15_CR_cosmology/C14_po12_gates_po10.py	a two-arm line-of-sight Boltzmann integral, $\Delta_\ell(k)=\int S\,j_\ell	268	CLAUSE
+receipts/P15_CR_cosmology/C15_the_cancellation_does_not_reach_the_ratio.py	carried by $H(a)$	201	CLAUSE
+receipts/P15_CR_cosmology/C15_the_cancellation_does_not_reach_the_ratio.py	the Thomson physics and the ionisation history cancel identically	137	CLAUSE
+receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	carried by a Boltzmann transfer built for this programme	135	CLAUSE
+receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	On the radiation-dominated collapse leg the potential obeys	123	CLAUSE
+receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	The full flat-projection transfer	>300	CLAUSE
+receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	\emph{the peak spacing this construction computes is the leaf accumulation}	113	CLAUSE
+receipts/P15_CR_cosmology/C19_the_branch_point_join.py	matter-dominated to nine orders	215	CLAUSE
+receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	the plasma is handed over at the branch point	131	CLAUSE
+receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	x_{e}	197	CLAUSE
+receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	moved by under a per cent	192	CLAUSE
+receipts/P15_CR_cosmology/C27_the_number_bracketed.py	the Thomson physics and the ionisation history cancel identically	137	CLAUSE
+receipts/P15_CR_cosmology/C28_length_against_angle.py	in which the common distance cancels	220	CLAUSE
+receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	it is what leaves the comb to be set on the expansion side	176	CLAUSE
+receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	so each re-enters on the expanding leg at its own time	140	CLAUSE
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	free in each arm	284	CLAUSE
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	penalties of about two per fitted parameter	144	CLAUSE
+receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	penalties of about two per fitted parameter	144	CLAUSE
+receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	against the measured	221	CLAUSE
+receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	is a test of the background rather than a further fit to it	203	CLAUSE
+receipts/P15_CR_cosmology/C39_the_derived_list_read.py	against the measured	221	CLAUSE
+receipts/P15_CR_cosmology/C40_the_pair_was_quoted_against_a_rounding.py	against the measured	221	CLAUSE
+receipts/P15_CR_cosmology/P15_po83_does_not_move_because_the_companion_avoids_the_obstruction_by_symmetry_not_by_einstein_while_the_four_metric_the_layer_sits_in_is_einstein_identically.py	dynamics paper	>300	CLAUSE
+receipts/P15_CR_cosmology/P15_po84_the_charge_is_carried_and_the_corpus_already_named_where_because_the_eigenvalue_divergence_is_the_traded_momentums_blueshift.py	blueshift	>300	CLAUSE
+receipts/P15_CR_cosmology/P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py	Hopf	243	CLAUSE
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	selects the Nariai member	>300	CLAUSE
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	prop:flat	230	CLAUSE
+receipts/P15_CR_cosmology/P15_the_lifts_exact_envelope_on_the_carried_layer_is_a_one_parameter_deformation_indexed_by_the_hopf_charge_and_the_uniform_bound_is_not_attained.py	Hopf charge	237	CLAUSE
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	a comoving separation read across leaves	>300	CLAUSE
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	a comoving separation read across leaves	>300	CLAUSE
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	by three independent routes	127	CLAUSE
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	is licensed by an \emph{identification}	112	CLAUSE
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	takes the leaf's	>300	CLAUSE
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	takes the stacking rate	>300	CLAUSE
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	the comoving distance entering $j_\ell(k\chi)$ is settled	260	CLAUSE
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	two independent grounds	>300	CLAUSE
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	on one ground that is a theorem and a second that rests on it	>300	CLAUSE
+receipts/P15_CR_cosmology/P15_the_seam_limit_of_the_carried_layer_with_its_chi_block_is_prop_throats_ds2_times_s2_obtained_with_both_radii_read_off_the_flow.py	limit of the carried layer	>300	CLAUSE
+receipts/P15_CR_cosmology/P15_the_vector_sectors_pointwise_bound_fails_while_its_exponent_exceeds_the_scalars_and_the_tensor_sector_has_no_transverse_traceless_spectrum_off_the_round_point.py	scalar sector	>300	CLAUSE
+receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	once dissociation is total, the memory of the peak is erased	125	CLAUSE
+receipts/P16_cosmogenesis_paper/P16_the_adiabatic_premise_is_demanded_by_the_data_and_inherited_by_the_construction.py	nearly scale-invariant adiabatic spectrum processed by ordinary structure formation	178	CLAUSE
+receipts/P17_geometric_core_paper/P17_the_ledgers_entropy_is_the_de_sitter_readings_and_the_other_reading_has_a_number_but_not_an_entropy.py	de~Sitter horizon whose	143	CLAUSE
+receipts/RP_34_gr/G3_the_axis_names_two_orderings.py	plane wave	>300	CLAUSE
+receipts/RP_34_gr/G3_the_axis_names_two_orderings.py	this range places at the inner end of the null-degeneracy axis	144	CLAUSE
+receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py	a third case	55	EXTEND-LONG
+receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py	carries a scale of its own	39	EXTEND-LONG
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	the angle is an output of the rate rather than a calibration of it	98	EXTEND-LONG
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	conformal-factor problem arises when the path integral ranges over the conformal factor	85	EXTEND-LONG
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	on an interval fixed by the progenitor mass	89	EXTEND-LONG
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	fibre by fibre	70	EXTEND-LONG
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	though it does in fact follow	69	EXTEND-LONG
+receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	supplies the condition fibre by fibre	32	EXTEND-LONG
+receipts/L165_interacting_tower/D3_the_floor_does_not_survive_the_cubic.py	though it does in fact follow	69	EXTEND-LONG
+receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	across the natural ordering family	36	EXTEND-LONG
+receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	thermal regularity supplies the condition fibre by fibre	32	EXTEND-LONG
+receipts/L165_interacting_tower/S13_the_ledger_does_not_reach_second_order.py	one-constant theory	72	EXTEND-LONG
+receipts/L165_interacting_tower/S8_the_floor_follows.py	the inverse-square operator	35	EXTEND-LONG
+receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	The wall is inhomogeneity	35	EXTEND-LONG
+receipts/L174_general_matter_dynamics/I3_the_identification_is_general_and_the_shear_count_is_the_gap.py	polarized case being a geodesic	62	EXTEND-LONG
+receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	The graviton's two propagating polarizations	59	EXTEND-LONG
+receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	a swept geometry depends only on its orbit-space coordinates	64	EXTEND-LONG
+receipts/L174_general_matter_dynamics/I8_no_sweep_reaches_the_stratum_and_the_theorem_says_so.py	a swept geometry depends only on its orbit-space coordinates while a free wave depends on the transverse coordinates	64	EXTEND-LONG
+receipts/L174_general_matter_dynamics/I8_no_sweep_reaches_the_stratum_and_the_theorem_says_so.py	three such hinges	87	EXTEND-LONG
+receipts/L174_general_matter_dynamics/I9_the_stratum_evolves_by_ordinary_GR_at_linear_order.py	The graviton's two propagating polarizations	59	EXTEND-LONG
+receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	swings about one fixed line in the substrate, the hinge	35	EXTEND-LONG
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	places a slicing plane on each	47	EXTEND-LONG
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	the construction leaves the dynamics of general relativity unchanged	86	EXTEND-LONG
+receipts/L175_dimensional_descent/N2_four_is_the_largest_dimension_that_forces_the_dynamics.py	carrying an unfixed arbitrary modulus, which the principle forbids	34	EXTEND-LONG
+receipts/L175_dimensional_descent/N2_four_is_the_largest_dimension_that_forces_the_dynamics.py	symmetry-breaking modulus	55	EXTEND-LONG
+receipts/L175_dimensional_descent/N2_four_is_the_largest_dimension_that_forces_the_dynamics.py	the construction leaves the dynamics of general relativity unchanged	86	EXTEND-LONG
+receipts/L175_dimensional_descent/N3_the_criterion_is_the_programmes_own_and_it_is_stated.py	requires} a phenomenon and one that merely \emph{permits} it through adjustable parameters	45	EXTEND-LONG
+receipts/L175_dimensional_descent/N3_the_criterion_is_the_programmes_own_and_it_is_stated.py	the construction leaves the dynamics of general relativity unchanged	86	EXTEND-LONG
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	The second-order Einstein--Hilbert action in the transverse-traceless sector reduces, mode by mode, to that of a harmonic oscillator	30	EXTEND-LONG
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	the Einstein--Hilbert action is recast in Hamiltonian form	55	EXTEND-LONG
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	a hidden geometric freedom in the cosmology, or a genuinely free constant where the reading says it should lock	37	EXTEND-LONG
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	it is a clock reading rather than a datum a handover transmits	39	EXTEND-LONG
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	the fundamental constants enter as unit gauges over the single scale	66	EXTEND-LONG
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	so three is the maximally-symmetric matter construction's own index	38	EXTEND-LONG
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	carries the scale as its \emph{only} free constant	48	EXTEND-LONG
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	one generator larger than the substrate's isometry group	41	EXTEND-LONG
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	reproducing $C$'s action on species	35	EXTEND-LONG
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	the two axis-symmetries of one analytic object	82	EXTEND-LONG
+receipts/L202_the_seam/T1_the_transfer_is_half_built.py	also governs the high-$\ell$ driving envelope	28	EXTEND-LONG
+receipts/L202_the_seam/T1_the_transfer_is_half_built.py	on a genuine Boltzmann transfer a dip whose	31	EXTEND-LONG
+receipts/L203_reach_stations/M2_station_H_is_a_declared_gap_and_C_is_its_prerequisite.py	stated here at traced weight	48	EXTEND-LONG
+receipts/L204_physics_reach/C3_the_isotropy_citation_runs_in_a_loop.py	the companion algebroid paper tabulates an isotropy	100	EXTEND-LONG
+receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	\nu_R	69	EXTEND-LONG
+receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	nu_R	69	EXTEND-LONG
+receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	two independent supports	39	EXTEND-LONG
+receipts/L204_physics_reach/P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled.py	the construction leaves the dynamics of general relativity unchanged	86	EXTEND-LONG
+receipts/L204_physics_reach/P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled.py	the operator's whole range---Petrov type~O, D, and I	57	EXTEND-LONG
+receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py	The electroweak breaking that supplies the fermion mass is, in this reading, the breaking of the substrate's orientation parity	31	EXTEND-LONG
+receipts/L204_physics_reach/P4_the_corpus_identifies_the_higgs_mechanism_it_does_not_decline_it.py	the breaking of the substrate's orientation parity	31	EXTEND-LONG
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	general spatial leaf the bend-density identity	60	EXTEND-LONG
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	\emph{selected} rather than chosen	63	EXTEND-LONG
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	finds it obstructed twice	29	EXTEND-LONG
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	selected} rather than chosen	69	EXTEND-LONG
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	what is definite is the emptiness of a definite object	47	EXTEND-LONG
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	the branch point carries the progenitor tilt	28	EXTEND-LONG
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	only a subsequent	44	EXTEND-LONG
+receipts/L211_closure_adjacency/A4_the_composition_rests_on_adiabaticity_not_uniformity.py	the branch point carries the progenitor tilt	28	EXTEND-LONG
+receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	real-by-construction	39	EXTEND-LONG
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	acts trivially on $\nu_L$, $e_L$, $e_R$ and $\nu_R$ alike	62	EXTEND-LONG
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	draws nothing from it	29	EXTEND-LONG
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	places a three-fermion state in the exterior cube	71	EXTEND-LONG
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	selected} rather than chosen	69	EXTEND-LONG
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	total dimension four	78	EXTEND-LONG
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	its Dirac operator carries a well-defined analytical index	84	EXTEND-LONG
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	what is definite is the emptiness of a definite object	47	EXTEND-LONG
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	massless radial Dirac problem separates into a first-order pair	79	EXTEND-LONG
+receipts/L221_the_bridge/B13_po2_identification_is_stated.py	each hinge designates one of the three roots of the horizon cubic as its own black-hole horizon	80	EXTEND-LONG
+receipts/L221_the_bridge/B13_po2_identification_is_stated.py	places a slicing plane on each: three throat walls	47	EXTEND-LONG
+receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	the generations' own threeness being the turnaround's deck	53	EXTEND-LONG
+receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	holonomy is precisely the complete invariant a flat connection has	46	EXTEND-LONG
+receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	in the infrared rather than the ultraviolet direction from it	99	EXTEND-LONG
+receipts/L221_the_bridge/B19_the_swap_is_the_weyl_z2_not_the_centre.py	the two occupations differing on the right-handed pair	29	EXTEND-LONG
+receipts/L221_the_bridge/B32_the_two_bounds_compose.py	the size of the universe in gauge-units	33	EXTEND-LONG
+receipts/L221_the_bridge/B33_the_ledger_branch_is_settled.py	Planck scale	69	EXTEND-LONG
+receipts/L221_the_bridge/B33_the_ledger_branch_is_settled.py	the size of the universe in gauge-units	33	EXTEND-LONG
+receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	a domain wall	53	EXTEND-LONG
+receipts/L221_the_bridge/B35_the_continuation_is_cited_wrong.py	across the locus the chart labels	91	EXTEND-LONG
+receipts/L221_the_bridge/B35_the_continuation_is_cited_wrong.py	horizon-regular	69	EXTEND-LONG
+receipts/L221_the_bridge/B36_two_of_three_crossings_are_supplied.py	a domain wall	53	EXTEND-LONG
+receipts/L221_the_bridge/B36_two_of_three_crossings_are_supplied.py	across the locus the chart labels	91	EXTEND-LONG
+receipts/L221_the_bridge/B36_two_of_three_crossings_are_supplied.py	establishes that closure as a theorem	54	EXTEND-LONG
+receipts/L221_the_bridge/B36_two_of_three_crossings_are_supplied.py	the sign of the signed-radius flip	51	EXTEND-LONG
+receipts/L221_the_bridge/B37_po4_and_po5_share_a_root.py	is a discrete horn swap	40	EXTEND-LONG
+receipts/L221_the_bridge/B37_po4_and_po5_share_a_root.py	the common root of three verdicts reached separately	34	EXTEND-LONG
+receipts/L221_the_bridge/B38_the_ledger_is_discrete.py	is a discrete horn swap	40	EXTEND-LONG
+receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	colour's exact selection rules	46	EXTEND-LONG
+receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	the leaf is compact and its Dirac operator carries a well-defined	60	EXTEND-LONG
+receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	chiral action	40	EXTEND-LONG
+receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	has total dimension four	74	EXTEND-LONG
+receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	is a discrete horn swap	40	EXTEND-LONG
+receipts/L221_the_bridge/B42_the_route_was_taken_and_p14_is_the_work.py	colour's exact selection rules	46	EXTEND-LONG
+receipts/L221_the_bridge/B42_the_route_was_taken_and_p14_is_the_work.py	non-geometric but	28	EXTEND-LONG
+receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	colour's exact selection rules	46	EXTEND-LONG
+receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	the common root of three verdicts reached separately	34	EXTEND-LONG
+receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py	a property of a one-constant theory rather than a gap awaiting work	56	EXTEND-LONG
+receipts/L221_the_bridge/B46_one_matching_not_two.py	the horizons standing infinitely far	41	EXTEND-LONG
+receipts/L221_the_bridge/B47_the_wall_is_exactly_critical.py	essential-self-adjointness threshold	52	EXTEND-LONG
+receipts/L221_the_bridge/B4_the_radial_operator_carries_a_real_structure.py	W(r)=\frac{\lambda\sqrt{f}}{r}	45	EXTEND-LONG
+receipts/L221_the_bridge/B51_p0s_inference_is_sound_and_scoped.py	in which the mass cancels	96	EXTEND-LONG
+receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	colour's exact selection rules	46	EXTEND-LONG
+receipts/L221_the_bridge/B53_gating_l829_and_l830.py	the horizons standing infinitely far	41	EXTEND-LONG
+receipts/L221_the_bridge/B54_the_retraction_supports_the_verdict.py	labels partial	79	EXTEND-LONG
+receipts/L221_the_bridge/B56_it_is_lambda_8_not_a_coupling.py	diagonal traceless matrices	79	EXTEND-LONG
+receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py	colour's exact selection rules	46	EXTEND-LONG
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	consists of flat connections	54	EXTEND-LONG
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	disjointness of the vantages	59	EXTEND-LONG
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	vanishing first cohomology	52	EXTEND-LONG
+receipts/L221_the_bridge/B59_the_routes_are_enumerable_and_one_is_absent.py	consists of flat connections	54	EXTEND-LONG
+receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	changing their signs only in \emph{pairs}	63	EXTEND-LONG
+receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	traced weight	63	EXTEND-LONG
+receipts/L221_the_bridge/B65_the_gluon_is_the_octet_and_p14_counts_the_singlet.py	labels partial	79	EXTEND-LONG
+receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py	stays unbuilt is the other one	98	EXTEND-LONG
+receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py	the wall-bound zero-modes are linearly independent and span a three-dimensional space	27	EXTEND-LONG
+receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py	leaf-bound modes and the propagating field	36	EXTEND-LONG
+receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py	the leaf-bound modes and the propagating field being two sectors	32	EXTEND-LONG
+receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py	what is definite is the emptiness of a definite object	47	EXTEND-LONG
+receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	the two occupations differing on the right-handed pair	29	EXTEND-LONG
+receipts/L221_the_bridge/B9_po3_why_is_answered_dimensionally.py	returns a four-fold	27	EXTEND-LONG
+receipts/L248_the_strike_broke_its_readers/R1_r3001_struck_fourteen_rows_and_twelve_receipts_read_them_by_prefix.py	though it does in fact	69	EXTEND-LONG
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	\operatorname{spec}\hat\Gamma=[\gamma,\infty)	96	EXTEND-LONG
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	massless radial Dirac problem separates into a first-order pair	79	EXTEND-LONG
+receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	systematic uncertainty	40	EXTEND-LONG
+receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py	is something unworked that a definite computation would close	67	EXTEND-LONG
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	the leaf-bound modes and the propagating field being two sectors	32	EXTEND-LONG
+receipts/L550_third_mechanism/M1_the_third_mechanism_is_bounded_and_the_bound_is_two_sentences_earlier.py	in the infrared rather than the ultraviolet direction	99	EXTEND-LONG
+receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	\emph{On the constant side}	95	EXTEND-LONG
+receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py	fixed-background (transverse-traceless) truncation	30	EXTEND-LONG
+receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py	rather than a single theorem covering the exact vacuum polarized	65	EXTEND-LONG
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	Bunch--Davies quantization	82	EXTEND-LONG
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	The graviton's two propagating polarizations	59	EXTEND-LONG
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	\nu_R	69	EXTEND-LONG
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	nu_R	69	EXTEND-LONG
+receipts/L805_freezing_reproduced/S1_every_mode_of_interest_freezes_and_the_inversion_is_closed.py	exits it and freezes	75	EXTEND-LONG
+receipts/L809_one_loop_quartic/S1_the_quartic_is_a_constant_vacuum_energy_and_the_geometry_absorbs_it.py	is absorbed into that one observed curvature	45	EXTEND-LONG
+receipts/P03_SdS_slicing/A6_item_58_resolves_split.py	null pair among the thirty-six	47	EXTEND-LONG
+receipts/P07_CR_framework/P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature.py	The two turning cubics are two energies of one congruence	82	EXTEND-LONG
+receipts/P10_canonical_time/P10_the_clause_66_wrote_on_this_seats_offer_says_exactly_what_its_receipt_supports_and_no_more_so_the_loop_the_grade_class_opened_is_closed_on_itself.py	hold instead	39	EXTEND-LONG
+receipts/P10_canonical_time/P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping.py	the counterterm a constant vacuum energy requires is a cosmological-constant term	38	EXTEND-LONG
+receipts/P12_algebroid/A4_the_ledger_seven_swept.py	A genuine test computes the triality from the colour content	48	EXTEND-LONG
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	unfixed arbitrary modulus	46	EXTEND-LONG
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	wall-bound zero-modes are linearly independent and span a three-dimensional space	31	EXTEND-LONG
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	would read the three hinges differently	89	EXTEND-LONG
+receipts/P15_CR_cosmology/C15_the_cancellation_does_not_reach_the_ratio.py	146.4	40	EXTEND-LONG
+receipts/P15_CR_cosmology/C15_the_cancellation_does_not_reach_the_ratio.py	the geometric rate gives a diffusion length	69	EXTEND-LONG
+receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	and a Peebles recombination history	94	EXTEND-LONG
+receipts/P15_CR_cosmology/C21_the_superhorizon_transfer_closes.py	x=k\eta/\sqrt	59	EXTEND-LONG
+receipts/P15_CR_cosmology/C23_the_gap_estimated.py	by a factor of order two across the first few peaks	71	EXTEND-LONG
+receipts/P15_CR_cosmology/C23_the_gap_estimated.py	the rate responsible is	75	EXTEND-LONG
+receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	\emph{It is a limit rather than a parameter}: carried back over two decades in starting redshift the peaks hold to the grid step	90	EXTEND-LONG
+receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	the angle is an output of the rate rather than a calibration of it	98	EXTEND-LONG
+receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	x_e	34	EXTEND-LONG
+receipts/P15_CR_cosmology/C27_the_number_bracketed.py	and a Peebles recombination history	94	EXTEND-LONG
+receipts/P15_CR_cosmology/C28_length_against_angle.py	a diffusion length	94	EXTEND-LONG
+receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	the kernel annihilates it	50	EXTEND-LONG
+receipts/P15_CR_cosmology/C30_the_odd_even_half_is_shared.py	which is ordinary content physics on the observable leg	64	EXTEND-LONG
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	It is fitted from the distance data here rather than taken from the microwave background	72	EXTEND-LONG
+receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	It is fitted from the distance data here rather than taken from the microwave background	72	EXTEND-LONG
+receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	what the construction takes from the progenitor here is the potential power and nothing about the map	59	EXTEND-LONG
+receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	inherits rather than predicts	65	EXTEND-LONG
+receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	which the rate carries and the baryon-acoustic data fix	76	EXTEND-LONG
+receipts/P15_CR_cosmology/C39_the_derived_list_read.py	146.4	40	EXTEND-LONG
+receipts/P15_CR_cosmology/C39_the_derived_list_read.py	inherits rather than predicts	65	EXTEND-LONG
+receipts/P15_CR_cosmology/C39_the_derived_list_read.py	it follows from standard thermodynamics alone	53	EXTEND-LONG
+receipts/P15_CR_cosmology/C39_the_derived_list_read.py	which the rate carries and the baryon-acoustic data fix	76	EXTEND-LONG
+receipts/P15_CR_cosmology/C61_the_undriven_premise_is_false_on_the_rate_the_framework_assigns_the_perturbations.py	The driving is therefore on the expanding leg	87	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_angular_label_crosses_the_lift_untouched_and_the_amplitude_does_not_because_the_lift_is_purely_imaginary_conformal_time_so_what_it_adds_is_an_envelope_with_exactly_no_phase.py	single vertical segment	45	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	r(\tau,\chi)=r(\tau+\chi)	100	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_expansion_in_the_de_sitter_presentation_is_not_bounded_either_because_the_sphere_lives_at_zero_mass_and_the_observer_at_the_nariai_one_and_both_closed_kernels_are_excluded_by_the_comb.py	null bundles on the cosmological horn carries the late-time matter geodesics	88	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_expansion_in_the_de_sitter_presentation_is_not_bounded_either_because_the_sphere_lives_at_zero_mass_and_the_observer_at_the_nariai_one_and_both_closed_kernels_are_excluded_by_the_comb.py	the Hopf direction having been traded into $\chi$	54	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	r(\tau,\chi)=r(\tau+\chi)	100	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	read as a sphere in the de~Sitter presentation	68	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_history_is_spherically_symmetric_throughout_so_the_chern_simons_number_never_moves.py	whatever excludes it does so through	32	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	projected through the flat spherical Bessel $j_\ell(k_L D_C)$	26	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	r(\tau,\chi)=r(\tau+\chi)	100	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	two metrics carried on one ontological layering	43	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	the scales the plasma itself accumulates---$\rs$ and $r_D$---take the leaf's	86	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	The two independent Boltzmann treatments cross-validate the depth as well as the shape	66	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_one_ground_admits_exactly_one_independent_second_support_and_it_is_disqualified_because_the_rays_that_carry_the_flat_length_carry_a_blueshift.py	the photons are projected through the \emph{flat} geometry	72	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_one_ground_admits_exactly_one_independent_second_support_and_it_is_disqualified_because_the_rays_that_carry_the_flat_length_carry_a_blueshift.py	what $|\Omega_k|=\Omega_\Lambda$ fixes is the substrate's throat	34	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed.py	e^{-k c_s\lvert\Delta\eta\rvert}	71	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed.py	mode exits it and freezes	70	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed.py	the lift's imaginary conformal-time interval	27	EXTEND-LONG
+receipts/P15_CR_cosmology/P15_the_two_data_are_one.py	so it is the start restated rather than an inheritance	54	EXTEND-LONG
+receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	the abundances are fixed by the conditions in the window on the cooling leg	44	EXTEND-LONG
+receipts/P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two.py	Bianchi~IX	47	EXTEND-LONG
+receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py	peak SPACING is computed from the rate	91	EXTEND-LONG
+receipts/RP_34_gr/G2_the_blind_run.py	Goldberg	49	EXTEND-LONG
+receipts/L165_interacting_tower/S10_the_halves_meet_at_the_shear.py	transverse-traceless graviton modes form a discrete tower	16	EXTEND-SHORT
+receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	independently of operator ordering	4	EXTEND-SHORT
+receipts/L165_interacting_tower/S8_the_floor_follows.py	limit-circle where	21	EXTEND-SHORT
+receipts/L174_general_matter_dynamics/I3_the_identification_is_general_and_the_shear_count_is_the_gap.py	single transverse-traceless polariz	20	EXTEND-SHORT
+receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	a Type-D vacuum admits a Killing tensor	24	EXTEND-SHORT
+receipts/L174_general_matter_dynamics/I4_the_shear_selection_exists_and_is_vacuum_bound.py	such a geometry is one whose matter is genuinely inhomogeneous	23	EXTEND-SHORT
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	adjustable parameter that criterion rejects	6	EXTEND-SHORT
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	least-arbitrariness being the programme's own criterion of necessity	8	EXTEND-SHORT
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	the adjustable parameter that criterion rejects	2	EXTEND-SHORT
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	the inverse spatial metric, a field rather than a constant	2	EXTEND-SHORT
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	the structure \emph{function} that makes the algebra an algebroid	9	EXTEND-SHORT
+receipts/L175_dimensional_descent/N3_the_criterion_is_the_programmes_own_and_it_is_stated.py	least-arbitrariness being the programme's own criterion of necessity	8	EXTEND-SHORT
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	The test has two sides, and each has been run	20	EXTEND-SHORT
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	The test has two sides, and each has been run	20	EXTEND-SHORT
+receipts/L202_the_seam/T1_the_transfer_is_half_built.py	carried by a structural argument rather than a bespoke transfer	7	EXTEND-SHORT
+receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py	geometric origin for the gauge content	4	EXTEND-SHORT
+receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	available from standard cosmology	7	EXTEND-SHORT
+receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	the data demand it	18	EXTEND-SHORT
+receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	crossing such a boundary	5	EXTEND-SHORT
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	the leaf's transverse-traceless mode evolves by a wave equation	7	EXTEND-SHORT
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	non-degenerate critical points of identical analytic character	14	EXTEND-SHORT
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	only a subsequent \emph{cooling} pass through the window can	1	EXTEND-SHORT
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	four one-dimensional ones	6	EXTEND-SHORT
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	generated by $\varepsilon$	23	EXTEND-SHORT
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	this paper draws nothing from it	18	EXTEND-SHORT
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	four one-dimensional ones	6	EXTEND-SHORT
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	one operator's kernel	2	EXTEND-SHORT
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	this paper draws nothing from it	18	EXTEND-SHORT
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	kernel and therefore identical particles	17	EXTEND-SHORT
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	one operator's kernel	2	EXTEND-SHORT
+receipts/L221_the_bridge/B10_po2_resemblance_is_now_a_construction.py	places a three-fermion state in the exterior cube, one-dimensional and generated by $\varepsilon$	23	EXTEND-SHORT
+receipts/L221_the_bridge/B10_po2_resemblance_is_now_a_construction.py	the configuration group selected rather than chosen	4	EXTEND-SHORT
+receipts/L221_the_bridge/B11_three_triples_two_identifications.py	Whether the two triples are one structure	5	EXTEND-SHORT
+receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	Whether the two triples are one structure	5	EXTEND-SHORT
+receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	the excursion's three critical loci sit at three equally spaced values of $f$	10	EXTEND-SHORT
+receipts/L221_the_bridge/B18_the_obstruction_is_horizon_located.py	CR reads the fermion on the leaf, where it is a bound state	23	EXTEND-SHORT
+receipts/L221_the_bridge/B19_the_swap_is_the_weyl_z2_not_the_centre.py	a discrete horn swap and delivers a species label	11	EXTEND-SHORT
+receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py	while the areal radius climbs from the comoving turnaround	18	EXTEND-SHORT
+receipts/L221_the_bridge/B24_the_triality_test_run.py	A genuine test computes the triality from the colour content independently of the charge	20	EXTEND-SHORT
+receipts/L221_the_bridge/B33_the_ledger_branch_is_settled.py	is a gauge-combination rather than a second physical length	17	EXTEND-SHORT
+receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	changes sign at	19	EXTEND-SHORT
+receipts/L221_the_bridge/B37_po4_and_po5_share_a_root.py	gauge-combination rather than a second physical	24	EXTEND-SHORT
+receipts/L221_the_bridge/B3_the_involution_is_quaternionic_not_real.py	reality-involution lift	13	EXTEND-SHORT
+receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	delivers a species label	11	EXTEND-SHORT
+receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	delivers a species label	11	EXTEND-SHORT
+receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	four one-dimensional ones	6	EXTEND-SHORT
+receipts/L221_the_bridge/B42_the_route_was_taken_and_p14_is_the_work.py	delivers a species label	11	EXTEND-SHORT
+receipts/L221_the_bridge/B4_the_radial_operator_carries_a_real_structure.py	H=-i\sigma_x\partial_x+m(x)\sigma_z	16	EXTEND-SHORT
+receipts/L221_the_bridge/B56_it_is_lambda_8_not_a_coupling.py	Cartan subalgebra of	23	EXTEND-SHORT
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	a branch structure has finitely many sheets	16	EXTEND-SHORT
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	subregular	2	EXTEND-SHORT
+receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	a discrete horn swap and delivers a species label	11	EXTEND-SHORT
+receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	the discrete content of \textbf{colour}	8	EXTEND-SHORT
+receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	What remains genuinely outstanding is the gauge group and the multiplet structure	10	EXTEND-SHORT
+receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	a discrete horn swap and delivers a species label	11	EXTEND-SHORT
+receipts/L221_the_bridge/B9_po3_why_is_answered_dimensionally.py	Nariai hexad	7	EXTEND-SHORT
+receipts/L246_the_achirality_is_the_obstruction/W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_chiral_member_does_not_have.py	four one-dimensional	6	EXTEND-SHORT
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	definition is the construction's own	11	EXTEND-SHORT
+receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	\emph{The test has two sides, and each has been run.}	14	EXTEND-SHORT
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	Friedrich proved the nonlinear stability of de Sitter in vacuum	16	EXTEND-SHORT
+receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py	Friedrich proved the nonlinear stability of de Sitter in vacuum	16	EXTEND-SHORT
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	available from standard cosmology	7	EXTEND-SHORT
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	named here rather than assumed silently	2	EXTEND-SHORT
+receipts/P03_SdS_slicing/A6_item_58_resolves_split.py	differs from the other five in \emph{kind} rather than in content	10	EXTEND-SHORT
+receipts/P03_SdS_slicing/A6_item_58_resolves_split.py	separated triple of lines at transverse radius	19	EXTEND-SHORT
+receipts/P07_CR_framework/P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature.py	a single analytic curve---hyperbola, circle, hyperbola	2	EXTEND-SHORT
+receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py	umbilic locus of that foliation	6	EXTEND-SHORT
+receipts/P10_canonical_time/P10_the_clause_66_wrote_on_this_seats_offer_says_exactly_what_its_receipt_supports_and_no_more_so_the_loop_the_grade_class_opened_is_closed_on_itself.py	a defender of the completed horizon	20	EXTEND-SHORT
+receipts/P10_canonical_time/P10_the_clause_66_wrote_on_this_seats_offer_says_exactly_what_its_receipt_supports_and_no_more_so_the_loop_the_grade_class_opened_is_closed_on_itself.py	may grant	10	EXTEND-SHORT
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	at the generic Schwarzschild--de~Sitter class	4	EXTEND-SHORT
+receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	an independent Boltzmann code run at identical parameters	20	EXTEND-SHORT
+receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	its own projection kernel	13	EXTEND-SHORT
+receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	through the visibility peak	6	EXTEND-SHORT
+receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	the potential does decay on the observable leg, by a factor of order two across the first few peaks	23	EXTEND-SHORT
+receipts/P15_CR_cosmology/C23_the_gap_estimated.py	\emph{the potential's grip within four per cent of the control's, and slightly weaker rather than stronger}	9	EXTEND-SHORT
+receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	areal coordinate degenerating	6	EXTEND-SHORT
+receipts/P15_CR_cosmology/P15_the_history_is_spherically_symmetric_throughout_so_the_chern_simons_number_never_moves.py	permits the chirality-asymmetric action	11	EXTEND-SHORT
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	verify\_geometry.py	11	EXTEND-SHORT
+receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	reached from one another by the reassignment of the null condition	2	EXTEND-SHORT
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	the printed value sits near the ninetieth percentile	9	EXTEND-SHORT
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	by three routes	10	EXTEND-SHORT
+receipts/P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two.py	change of background class	7	EXTEND-SHORT

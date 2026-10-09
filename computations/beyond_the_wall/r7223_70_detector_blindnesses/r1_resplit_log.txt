@@ -1,0 +1,16 @@
+
+  PAPER REVERSAL: 475 keys (banked 442)
+    EXTEND-SHORT    82 (17.3%)   banked 80
+    EXTEND-LONG    187 (39.4%)   banked 176
+    CLAUSE         206 (43.4%)   banked 186
+    banked keys still present 438, class unchanged 428, class changed 10, new keys 37, banked keys gone 4
+    class changes: {('EXTEND-LONG', 'CLAUSE'): 4, ('EXTEND-SHORT', 'CLAUSE'): 5, ('EXTEND-SHORT', 'EXTEND-LONG'): 1}
+    new keys by class: {'CLAUSE': 12, 'EXTEND-LONG': 17, 'EXTEND-SHORT': 8}
+
+  SOURCE REVERSAL+PARTIAL: 288 keys (banked 270)
+    EXTEND-SHORT    76 (26.4%)   banked 72
+    EXTEND-LONG    108 (37.5%)   banked 96
+    CLAUSE         104 (36.1%)   banked 102
+    banked keys still present 268, class unchanged 264, class changed 4, new keys 20, banked keys gone 2
+    class changes: {('EXTEND-SHORT', 'CLAUSE'): 3, ('EXTEND-SHORT', 'EXTEND-LONG'): 1}
+    new keys by class: {'EXTEND-LONG': 12, 'EXTEND-SHORT': 8}
