@@ -10436,3 +10436,101 @@ with more memory or a `KSLICE` pass, and I will take either as an order.*
 ruler at `$b=171.9$`. I use it for the sampling comparison alone, because it is the only configuration
 banked both ways, and I say so in the limits rather than letting `$+13.8$` read as this construction's
 drift. If you would rather have the comparison on the live configuration it is one `KCONT=1` run.*
+
+## ⛭⛭⛭ `r7236` — **THE KERNEL IS NOT A CARRIER: `$-0.0141^{\circ}$` AGAINST `$-96.6^{\circ}$`, FOUR ORDERS DOWN. AND A SIXTH OF THE SCALE IS COMMON MODE**
+
+*`r7223` asked whether any of the residual phase is the projection kernel's, in one form: the phase
+difference between the arms in degrees across `$104\le\ell\le1886$`.*
+⇒ ***It is `$-0.0141^{\circ}$`. The residual is `$-96.6^{\circ}$`. That is `$3.84$` orders of
+magnitude, so your negative branch fires in your own words: the kernel is not a carrier, the candidate
+list stays at the driving, the loading and the clock, and the projection is cleared.***
+
+### ⌗ THE IDENTITY FIRST, BECAUSE IT IS WHY THE ANSWER IS SMALL RATHER THAN HALF A PER CENT
+
+*Writing `$x=kD_M$`, the window is `$W\propto x^{n_s-2}e^{-2(xr_D/D_M)^2}/(x\sqrt{x^2-\ell^2})$` and
+the oscillation it weights is `$\cos(2xr_s/D_M)$`.* ⇒ **So the kernel's phase is a function of exactly
+TWO dimensionless numbers and nothing dimensional** *— checked by scaling all three lengths together
+and getting the same phase to `$10^{-10}$` degrees.*
+
+| | `$r_s/D_M$` `$=\theta_*/\pi$` | `$r_D/D_M$` | its share of the difference |
+|---|---|---|---|
+| arm | `$0.01042404$` | `$5.1070\times10^{-4}$` | — |
+| control | `$0.01042420$` | `$5.1210\times10^{-4}$` | — |
+| they differ by | `$1.5\times10^{-5}$` | `$0.27$` per cent | `$-0.0001^{\circ}$` / `$-0.0139^{\circ}$` |
+
+***You said the residual is itself under a per cent and that a per-cent-level difference in the
+kernel's three inputs is the right order to worry about. The reason it is not is that the three
+inputs enter as two ratios, and the arms share one of them to fifteen parts in a million — because it
+is `$\theta_*$`, which is what the construction computes.*** *`$r_s$` and `$D_M$` do differ by half a
+per cent each, and it cancels out of the only combination that converts a centroid shift into a phase.*
+
+### ⛭⛭ TWO ROUTES, BECAUSE ONE OF THEM LIES AT THE SAMPLING THE INSTRUMENT ACTUALLY USES
+
+*The closed form gives `$-0.01406^{\circ}$` and the FULL Bessel sum `$-0.01407^{\circ}$`.*
+⌈ ⛔ ***But the Bessel sum only gives that above a threshold, and below it the error is a factor of
+`$74$`:*** *at `$1.8$` points per Bessel period it reads `$-1.05^{\circ}$` — which would have read as
+a per-cent-of-the-residual effect and a fourth candidate — and at `$4.6$` and above it reads
+`$-0.01407^{\circ}$` and does not move through a sixfold further refinement.* ⇒ **The window route is
+immune, because it averages the kernel analytically instead of sampling it.** ⌗ *This is your own
+instrument's documented failure — `the projected peaks would be aliasing while the source comb stayed
+correct` — arriving in the PHASE rather than in the peaks. **`ACOUSTIC_two_arm`'s live configuration
+runs the projection at `$2.3$` points per period and says so in its own output.** I am not claiming
+that invalidates anything: the alias gate exempts the CR ladder deliberately and `r6794` checked it.
+But the number I was asked for would have been wrong by `$74$` on that sampling, so the pair of routes
+is the finding and not decoration.*
+
+### ⛭ AND THE PRE-REGISTERED THIRD OUTCOME HOLDS ALONGSIDE `cleared`, WHICH IS A DIFFERENT STATEMENT
+
+***The kernel's own ABSOLUTE running phase is `$-15.46^{\circ}$` — `$16.0$` per cent of the residual,
+a sixth — and the two arms carry it to within `$0.09$` per cent of itself.***
+⇒ **So `a running phase at correct spacing` is not a phase-clean observable: a sixth of the scale the
+row reads its candidates against is manufactured by the projection, and it cancels from the comparison
+only because both arms carry it.** *That is not a correction to anything — `sec:refit-bound` reads the
+residual as a difference and the difference is clean. It is a statement about what the observable is
+made of, and it was written down in advance precisely so it could not be reported as a discovery after
+the fact.* ⌗ *If you want it in the paper, the sentence I would defend is that the running phase is
+measured against a projection floor of a sixth of its own size, common to both arms.*
+
+### ⛔ THE SIGN OF MY PREDICTION FAILED, AND THE ROOT CAUSE IS A CONFLATION I HAVE NOW MADE TWICE
+
+*Predicted `$+0.06^{\circ}$`, band `$0.01$`–`$0.3$`, POSITIVE. Measured `$-0.0141^{\circ}$`.*
+**The magnitude is inside the band and `three orders below` holds; the SIGN is wrong and the receipt
+gates it as a failure.**
+
+⇒ ***The measured reason: the kernel's PHASE magnitude FALLS with `$r_D$` — `$16.77^{\circ}$` at
+`$5.0$` Mpc to `$8.54^{\circ}$` at `$14.0$` — while the kernel's PEAK-POSITION drift RISES with it.***
+*I read the sensitivity off `r7234`'s peak-offset table for a question about phase. **That is the same
+conflation as last revision, pointing the other way:** `r7234`'s useful sentence was that my sign
+argument was right about the mechanism and wrong about whose phase it was, and here I was right about
+the mechanism and wrong about which OBSERVABLE the mechanism moves.*
+
+⌈ *And the pre-registration's absolute figure was wrong twice in a way that cancelled: `$-17^{\circ}$`
+was a peak-offset running drift converted at `$180^{\circ}$` per peak step where your comb period is
+`$360^{\circ}$`. **The right number by the wrong route and the wrong units at once, and it landed
+within ten per cent of the truth, which is the most dangerous kind of agreement.*** *The true phase is
+`$-15.46^{\circ}$` and the peak-offset drift at the live `$r_D$` is `$-33.9^{\circ}$`; they are
+different objects and I had been treating them as one.*
+
+### ⌗ ONE THING FOR YOU, AND IT IS A FORK I AM NOT DECIDING
+
+***`r7234` reported the kernel's DRIFT as `$+2.61$` derived against `$+4.38$` measured and attributed
+the shortfall to the hierarchy's damping. This revision says the kernel's PEAK drift and its PHASE
+have opposite `$r_D$` dependence.*** ⇒ *So the `$60$` per cent figure in `r7234`'s limits may be a
+statement about the peak estimator rather than about the hierarchy, and I cannot tell which from here.*
+
+**THE FORK.** *⓵ Re-read `r7234`'s shortfall as an estimator effect — recompute its derived drift from
+the phase rather than from peak positions and see whether the `$+2.61$` moves toward `$+4.38$`. ⓶ Leave
+it: `r7234`'s claim was about the comb `cc66.161` and `cc66.162` actually fit, which IS peak positions,
+so the number is correctly scoped as it stands and the opposite dependence is a separate fact.*
+
+⇒ ***MY RECOMMENDATION IS ⓶, and it is not the lazy one.*** *The drift `cc66.162` measures to eight
+parts in ten thousand is a parameter of a comb fitted to a SPECTRUM, so peak positions are the right
+object and `r7234`'s scoping is right. **What ⓵ would buy is a cleaner attribution of a limit I
+already stated as a limit** — and it would reopen a landed revision to sharpen a caveat, which is the
+trade I would not make unasked. ⌗ *But the opposite-dependence fact belongs in `sec:refit-bound`
+wherever the drift and the phase are discussed together, because a reader who has both numbers will
+otherwise assume they move the same way. That is a sentence rather than a revision, and it is yours.*
+
+⌗ *Nothing else is owed from this seat. `PO-75`'s candidate list is now `the driving, the loading and
+the clock` with the projection struck off it by measurement rather than by assumption, which is what
+you asked for and all of what you asked for.*
