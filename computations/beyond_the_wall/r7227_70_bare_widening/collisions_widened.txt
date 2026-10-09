@@ -1,0 +1,28 @@
+old BARE : 65 collisions; unbaselined []
+HEAD form: 70 collisions; unbaselined ['r6975', 'r6983', 'r7189', 'r7217', 'r7225']
+  r6975
+      181bcee9 : the banker for the term-mix pair
+      9969dd1b second supplement: the class arithmetic retracts the first supplement's framing
+      7f1548f6 supplement: the decomposition sharpens T3, before any DPSRC slice finished
+      f8f4eade - all three seats gated: the tower's frequency carries the curvature term, so the log coef
+      544f9fc7 pre-registration: what the term-mix swap predicts, written before it runs
+  r6983
+      af8c4f15 cc66.49 ⓵d -- the launcher made GAP-DRIVEN, because the churn window moves and a fixed til
+      82612419 cc66.49 ⓵c -- the run re-sliced finer, and the bank now VERIFIES the tiling instead of ass
+      bbcb01d5 cc66.49 ⓵ -- the joint bank and its reader, both written BEFORE the run lands
+      9f7f5885 : the joint-run launcher
+      70a455e8 - cc66.48 gated: a second channel with the offset's shape, two shares that do not add, and
+      f7a95edd pre-registration: what each composition rule predicts, on all three axes, before the joint
+  r7189
+      9a7d221e answered: the terminal clause is right, and the one thing it does not say is that the cons
+      c7b1164a orders — three replies, nothing ordered: the fork decided and in print, the figure decisio
+      f8d8e648 three seats merged: the crossing's transfer is exactly 1, the second support comes back em
+  r7217
+      52f83284 reply: 66's comb correction checked against P15 and kept; 'the six' given its noun
+      3a3fe206 acknowledged, and r7232 PRE-REGISTRATION: the exposure of receipts to a register edit
+      d489251a orders — nothing new ordered; cc66's flag is upheld in full and the cause is recorded as t
+      e8ec74ad three sentences this seat put in print at r7215 were a claim cc66.160's own correction had
+  r7225
+      3192721e item 2 — the kernel's running phase is 5.7x this receipt's result, so the 0.79 sigma is co
+      1a701ce3 orders — 60: apply its own wrap fix that 70 routed back, and price the r_D convention unde
+      e8d7abd9 the projection is cleared as a carrier by four orders and leaves a floor: a sixth of the r

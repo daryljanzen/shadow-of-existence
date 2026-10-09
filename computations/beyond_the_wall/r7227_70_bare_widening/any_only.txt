@@ -1,0 +1,6 @@
+ANY-only subjects: 341
+   133  other head
+    83  head is a suffixed id (r<base>+seat.k): the mid id is a mention
+    58  merge/revert subject
+    36  head is a suffix-letter id (r3100a): the mid id is a mention
+    31  head is another identifier (c54.x, L-, P, PO-)

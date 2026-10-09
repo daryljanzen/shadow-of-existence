@@ -1,0 +1,48 @@
+old BARE, post-band: {'NOT-A-REFERENCE': 1198, 'REFERENCE': 76} reference share 6.0%
+   cc66 d83b3566 r7185 — the crossing rides the characteristic that crosses, and the thermal factor rides t
+   None e3245dd5 r6657 — item 10 CLOSED: the index's twenty-one cards checked against what today settled, a
+   None b639afd1 r6655 — item 9 CLOSED: the masthead logs sorted, the findings kept and the narration gone.
+   None 904cf641 r6653 — item 1's carried piece closed, and the index's placeholders cleared. Item 10's rem
+   None 34a5ee6f r6651 — item 10, second pass: THE_PLAN's header and three defects, and the wisdom ledger's
+   None 59638929 r6649 — item 10, first pass: the index's stale declarations and the retired rate term it s
+   None f0ad9bbb r6647 — item 9, receipt filenames: five first-person error confessions renamed, and every 
+   None 3ded6776 r6645 — item 9, body narration: six passages across three papers now state the worked clai
+   None e63cdd08 r6643 — item 7 CLOSED: P13's three, the alpha-limit wordings, and the four smaller mismatc
+   None b6ef6a11 r6641 — item 7, second pass: P14's anomaly claim, P7's paper count, P6's idiom count; and 
+   None cc537c96 r6639 — item 7 of the spin-up report, first pass: P18's three self-contradictions.
+   None 07bb8316 r6637 — item 5 of the spin-up report: whether the propagating spinor sector is built. It i
+   None c5963578 r6635 — item 4 of the spin-up report CLOSED: P13's attribution corrected, and the welding 
+   None 02d07ffe r6633 — item 4 of the spin-up report: where the generations sit. P14 settled it in one sec
+   None ccaa3c02 r6631 — item 3 of the spin-up report: where r=0 and the beginning are. Two real defects fi
+   None c5302093 r6629 — item 2 of the spin-up report CLOSED: the standing's propagation, and the report's 
+   None 3f3e01a0 r6627 — item 2, eighth and ninth sub-items: P15's low-l caption and its nested remarks. On
+   None 174202ab r6625 — item 2, sixth and seventh sub-items: P15's A_s and Omega_m. Both were contradictio
+   None 475521b0 r6623 — item 2, fifth sub-item: which rate governs r_s and r_D. P15's rule sentence contra
+   None 94d9e35d r6621 — item 2, fourth sub-item: P15's horizon at onset. The proposition gives both rates'
+   None 6afe6227 r6619 — item 2, second and third sub-items: P15's likelihood and its standing. The paper r
+   None cd7eac4d r6617 — item 2 of the spin-up report, first sub-item: P15's peak heights. The withdrawn co
+   None 1f9a6dc9 r6615 — item 12 of the spin-up report: the README's generic caveat removed, and a factual 
+   None 91952111 r6613 — item 8 of the spin-up report: three of its nine entries were real and are fixed; s
+   None 9298b1f7 r6611 — item 11 of the spin-up report: the three instrument defects fixed.
+   None 3706a414 r6609 — item 1 of the spin-up report: the r2826 sweep damage repaired, 68 lines restored f
+   60 965542d5 r3986 — CI caught me writing a deferral to Daryl into a file, which the corpus has a gate 
+   60 38fb4868 r3936 — item 49: the last two rows, and EVERY ROW IN THE LEDGER IS NOW READ — 96 of 96, ze
+   60 23a53735 r3934 — item 48: the last class read whole, and I broke the rule I wrote one commit earlie
+   60 2ccf9dac r3932 — item 47: the DO-NOT-ASSERT class read whole, and my filter for "rows missing their
+   60 e15282b3 r3930 — item 46: the last REGISTERED row confirmed, and I have been feeding a counter wron
+   60 531f948f r3928 — item 45: the PO-25 cluster read whole, and a closure that was made WHOLE and later
+   60 84582206 r3926 — item 44: the METHOD-PROSE class read whole, and half of it exists because the grep
+   60 3b20a304 r3924 — item 43: the row I expected to overturn overturned my own note instead, and the we
+   60 684f0bf1 r3922 — item 42: the truncation defect swept systematically, and my first sweep measured t
+   60 89bc74f7 r3920 — item 41: the 180-character store cuts off exactly where the holding lives, four it
+   60 99cfcecd r3918 — item 40: the row is right, and following its pointer found the paper calling a LIV
+   60 39ef9b0c r3916 — item 39: four rows on one closure, three state it and one states its price — and t
+   60 2a1ce918 r3914 — item 38: a closure that is real but narrower than its words, and the ledger was qu
+   60 f7f23f8a r3912 — item 37: two rows in one class, matched on different phrases, doing different thin
+   60 ed1465dd r3910 — item 36: two sentences of the same shape sitting in two different classes, and a w
+   60 e310b61c r3908 — item 35: a whole ledger row was swallowed inside another row's note at r3827, and 
+   60 f8492300 r3904 — item 34: a paper claiming "remains genuinely open" while citing a paper that says 
+   60 4c597fe4 r3902 — item 33: the named-no-home queue CLEARED, and the closing sweep found a third clas
+   60 420c2517 r3900 — item 32: a paper whose "What is open" section omits an open question it states els
+   60 572d3f8b r3898 — item 31: two more rows in the same two paragraphs I read at r3894, and the sweep t
+   60
