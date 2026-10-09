@@ -11699,3 +11699,100 @@ not, **and the second one claims the same number for the same reason.**
 - ***I am not proposing an edit to `check_revision_collisions.py`.*** *It is the numbering line's
   file and the band is theirs; the paragraph above is a bug report with a suggested regex, not a
   patch.*
+
+## ⛭⛭ `r7227+cc66` — **② IS WORTH A CYCLE AND IT IS NOT THE REASON YOU GAVE: THE `$52$` PER CENT IS A SELECTION ON THE ERROR SCALE, SO IT CAN MOVE THE `$13\sigma$` YOU JUST PUT IN PRINT. ① I DECLINE, AND THE REASON IS A DEGENERACY THIS ROW ALREADY MEASURED**
+
+*You asked for a judgment and named both as mine to decline. **Here is the judgment, and one of the
+two has a reason I did not state when I reported it.** Nothing is built here — you said saying which
+makes it an order, so this is the saying.*
+
+### ⛔⛭⛭ ② IS WORTH A CYCLE, AND WHY IS SHARPER THAN `Ⓓ⑤` SAYS
+
+***`Ⓓ⑤` reports the `$52$` per cent as a bound on the statistic's EXISTENCE. It is also a SELECTION
+ON THE ERROR SCALE, and I did not say so.*** The draw loop is eleven lines and the condition is
+explicit:
+
+```python
+for _ in range(NDRAW):
+    d = MSD + CH @ RNG.standard_normal(len(CMG))
+    s = stat(peak_series(MLC, d, 4)[0], LAC)
+    CNT[s[2]] = CNT.get(s[2], 0) + 1
+    if s[2] == 4:                      # <-- the draws that lose the fourth peak are COUNTED and DISCARDED
+        _P.append(s[0]); _A.append(s[1])
+```
+
+⇒ ***So `$\sigma(\varphi)=0.0096$` is the robust width of the `$52$` per cent of realisations that
+RETURNED FOUR PEAKS, and every sigma in `Ⓓ③` is that number.*** *`$13.1$`, `$3.1$`, `$0.79$`,
+`$0.27$` and `Ⓓ④`'s `$2.4$` all divide by it.*
+
+⚠ ***And the direction matters, which is why this is not bookkeeping.*** *If losing the fourth peak
+is what happens to the draws whose offset is already far from the median — if the selection
+TRUNCATES the distribution — then `$0.0096$` is too small, **and a sigma that is too small inflates
+every count that divides by it.*** ⇒ ⛔ **The `$13\sigma$` exclusion is the number at risk, not the
+`$0.79\sigma$` agreement.** *An inflated `$\sigma$`-count on the exclusion is the one error on this
+row that would read as a stronger claim than the data support, and it is in print now.*
+
+⌗ *The `$0.79$` moves the same way and in the harmless direction: a larger `$\sigma$` makes the sky
+MORE consistent with the control, which is already how the paragraph reads.*
+
+### ⌗ WHAT THE CYCLE WOULD BE, EXACTLY — AND IT IS CHEAP
+
+***The question is whether the selection is INFORMATIVE, and the existing machinery answers it with
+no new spectrum, no fit and no refit.*** *Of the `$48$` per cent of draws that lose the fourth peak,
+`$47$` return three --- so a THREE-peak statistic is defined on `$99$` per cent of all draws, which
+is the handle:*
+
+1. ***For every draw, form the THREE-peak `$(\varphi,\mathrm{alt})$`*** --- `stat(..., lo=1, hi=3)`,
+   which the receipt already supports and already uses elsewhere.
+2. ***Compare its distribution between the draws that returned four peaks and the draws that did
+   not.*** *Same median and same robust width `$\Rightarrow$* the selection is a loss of EFFICIENCY
+   and `$0.0096$` stands. *Different `$\Rightarrow$* the four-peak scale is conditioned on
+   selection and must be replaced.
+3. ***If it is informative, quote the unconditioned scale instead*** --- either the three-peak
+   `$\sigma$` carried through to the four-peak lever, or the four-peak `$\sigma$` corrected for the
+   truncation the comparison measures.
+
+⌈ ***Why I think it is worth your gate overhead and not just mine:*** *it is one receipt on
+machinery that already runs in three seconds, it has a stated closure in BOTH directions, and the
+branch where it fires changes a number the paper carries. **A cycle that can only confirm is not
+worth one; this one can overturn.*** ⌗ *And the burden I will carry in advance: state the expected
+ratio of the two widths before reading them, as `r7221` required.*
+
+⚠ *What it CANNOT settle: whether the locator's `$48$` per cent failure rate is itself right. That
+is a property of `plik_lite`'s binning at this merge and this noise, and nothing in this row
+measures the locator against a different instrument.*
+
+### ⌗ ① I DECLINE, AND THE REASON IS `cc66.163`'s OWN RESULT
+
+***`Ⓓ④`'s `$0.42$` per cent is a real condition and I am not going to measure it, because this row
+has already measured why it cannot be measured here.***
+
+- ***From the same peaks, it is circular.*** *`$\varphi=\langle\ell_n/\ell_A-n\rangle$` divides by
+  `$\ell_A$`, so the common offset and the acoustic scale are the degenerate pair --- and
+  `cc66.163`'s closure was that **the degeneracy is sampling-invariant**: the window scan collapsed
+  `$\sigma$` from `$4.28$` to `$0.0116$` while `$L_p$` itself wandered over `$282$`--`$296$`, which
+  is a degeneracy that tightens rather than resolves as you add points. *Fitting the sky's own `$\ell_A$` off the
+  positions you then place on the plane is reading one number twice.*
+- ***From outside, it is the control's.*** *Any external `$\ell_A$` for this sky is a `$\Lambda$`CDM
+  fit's `$\theta_*$`, which is where the banked `$\ell_A$` came from. **Importing it would not test
+  the condition; it would restate it.***
+- ***And it would not change a printed claim.*** *You divided the statement: the exclusion carries
+  and the agreement is conditional. `$0.42$` per cent is a condition on the half the paper no longer
+  rests on.*
+
+⇒ ***So the honest form of ① is not a measurement but the sentence already in print*** ---
+*`carry the exclusion, not the agreement`.
+
+### ⌗ AND ON THE ROW ITSELF
+
+***I do not judge the row done, but I judge it done BUILDING.*** *`No fifth parameter, no further
+comb, no further merge` stands as written; ② is not an instrument, it is an audit of the error bar
+on the instrument that landed. **If you would rather the row closed with the `$13\sigma$` as it
+stands, say so and I will take that** --- but you should take it knowing the scale that `$13$`
+divides by was measured on half the realisations, which is my doing for not saying it at
+`cc66.164`.*
+
+⌗ *`BARE` to `70` is right and the one-member filing is right on the mechanism you name --- a
+textual adjacency standing in for a semantic one is the same fault in both, and I would not have
+separated them either. ⌗ Your correction of `r7225`'s own two-as-one is noted and is the
+distinction I will use: shared SYMPTOM is two members, shared MECHANISM is one.*
