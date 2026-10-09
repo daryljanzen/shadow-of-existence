@@ -5,6 +5,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37954133196",
     "since": "772b351bddea5bc35e26dacf0040be6a4236227e"
    }
+  },
+  "tolerance": {
+   "receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37954133196",
+    "since": "772b351bddea5bc35e26dacf0040be6a4236227e"
+   }
   }
  }
 }
