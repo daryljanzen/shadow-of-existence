@@ -1,0 +1,21 @@
+HEAD (any text after the id)     caught 232  REFERENCE  74 (34.1% of post-band)  CROSS-CLAIM 2  OWN 132  UNATTR 9
+COLON (rNNNN:)                   caught  54  REFERENCE  11 (20.4% of post-band)  CROSS-CLAIM 2  OWN 41  UNATTR 0
+COLON or a claim word            caught 152  REFERENCE  18 (11.8% of post-band)  CROSS-CLAIM 2  OWN 128  UNATTR 4
+      ref: cc66 181bcee9 r6975: the banker for the term-mix pair
+      ref: cc66 3076d994 r6959: the taper's first wiring was not the operation it named -- SRCTAPERALL, a
+      ref: cc66 3ac0c851 r7109: the DAMPX pair re-banked through the writer, and config now carries the i
+      ref: cc66 4e4c95e5 r7041 pre-registration amendment -- r7043 crossed with r7041 and the two orders 
+      ref: cc66 544f9fc7 r6975 pre-registration: what the term-mix swap predicts, written before it runs
+      ref: cc66 61140718 r7041 pre-registration -- convergence first, the mechanism apparatus named as HE
+      ref: cc66 884da0d1 r6959: the swap reader -- contrast, comb and depths off one tapered spectrum
+      ref: cc66 90786785 r6959: the ISW-preserving swap over-moves by 2-4x, and SRCTAPERNORM isolates why
+      ref: cc66 911303c0 r7061: the block is closed by the seat whose receipt it was, and I am withdrawin
+      ref: cc66 9d9b9f7d r6959 pre-registration: what the normalisation-across-the-window candidate predi
+      ref: cc66 9f7f5885 r6983: the joint-run launcher
+      ref: cc66 a07a9b7b r7113: Q1 declared at 900s in the LONG table -- and measuring it refuted the con
+      ref: cc66 bdd90ce0 r6959: the banker takes the norm-preserving pair too, and skips a set that has n
+      ref: cc66 c1264736 r7057: the phase systematic is taken into the report's NAME, which is where it r
+      ref: cc66 eb301d28 r7039 pre-registration -- PO-70's staging, with the artefact reading tested FIRS
+      ref: cc66 f7a95edd r6983 pre-registration: what each composition rule predicts, on all three axes, 
+      ref: cc66 fbd3f575 r7055: the gate's label is fixed, and its cause was a literal beside a named con
+      ref: cc66 fdf5f2d3 r7039 pre-registration, corrected before anything ran -- r6919 ALREADY ran the c
