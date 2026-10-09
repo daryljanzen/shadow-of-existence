@@ -102,7 +102,7 @@ def main():
     check('⓸ and P14 states the asymmetry this explains: colour gets "exact selection rules" while '
           'weak isospin "delivers a species label, not $SU(2)_L$\'s chiral action"',
           "colour's exact selection rules" in p14
-          and 'delivers a species label' in p14)
+          and 'delivers a species label, not $SU(2' in p14)
 
     print()
     if FAILED:

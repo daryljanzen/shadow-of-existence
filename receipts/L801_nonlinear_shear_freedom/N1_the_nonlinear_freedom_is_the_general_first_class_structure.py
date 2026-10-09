@@ -266,7 +266,7 @@ def main():
     check('P11 routes the STABILITY question OUT to external theorems, not to its Gowdy structures: '
           'Friedrich (vacuum small-data) and Andreasson-Ringstrom (all-data T^3-Gowdy), Nariai the '
           'non-generic exception',
-          'Friedrich proved the nonlinear stability of de Sitter in vacuum' in p11
+          'Friedrich proved the nonlinear stability of de Sitter in vacuum with $\\Lambda>0' in p11
           and 'the one non-generic exception, the Nariai branch' in p11)
     check('P11 does NOT claim a closed-form nonlinear solution (so neither does this receipt): '
           '"a closed-form nonlinear solution"',

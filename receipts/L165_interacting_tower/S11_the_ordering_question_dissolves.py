@@ -77,7 +77,7 @@ def main():
 
     check('⛔ ⓵ P10: the Hamiltonian carries deficiency indices (1,1) "independently of operator '
           'ordering"',
-          'independently of operator ordering' in p10)
+          '1)$ independently of operator ordering' in p10)
     check('with the coefficient bounded across the whole family: "attaining $\\le1/4$ across the '
           'natural ordering family, strictly below the essential-self-adjointness threshold $3/4$"',
           'across the natural ordering family' in p10

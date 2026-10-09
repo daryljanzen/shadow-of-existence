@@ -106,11 +106,11 @@ def main():
     #   EXCLUDES IT, which the retired word never did, so the pin is now sharper than before.
     check('and P0 states the non-claim: "a geometric origin for the gauge content or the masses … '
           'walled and electroweak"',
-          'geometric origin for the gauge content' in allp
+          's a geometric origin for the gauge content' in allp
           and 'excluded from the isometry, and electroweak' in allp)
     check('⇒ SO THE CONSTRUCTION ASSIGNS THE nu_R A PLACE IN A GRADING AND NO INTERACTIONS, and says '
           'explicitly that it cannot supply them',
-          n_wall > 1 and 'geometric origin for the gauge content' in allp)
+          n_wall > 1 and 's a geometric origin for the gauge content' in allp)
 
     # the nu_R's status in the corpus
     check("the nu_R appears as an OPTION in the count: one generation splits 12 coloured against 3 "

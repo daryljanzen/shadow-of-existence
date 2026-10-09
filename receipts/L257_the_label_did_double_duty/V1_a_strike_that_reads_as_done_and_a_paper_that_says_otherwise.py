@@ -244,7 +244,7 @@ def main():
     _p7f = re.sub(r'\s+', ' ', p7)
     _shared = 'the shared character of the wall' in _p7f
     _settled = ('all three are settled' in _p7f
-                and 'definition is the construction\'s own' in _p7f)
+                and 's, and the definition is the construction\'s own' in _p7f)
     print(f'    ⌗ REPORTED, never required: P07 still argues from the shared wall: {_shared}; '
           f'P07 states the item settled on the construction\'s own regulator: {_settled}')
     check('⓶ ⛭ P07 states the UV definition\'s standing IN ITS OWN VOICE rather than resting it on '

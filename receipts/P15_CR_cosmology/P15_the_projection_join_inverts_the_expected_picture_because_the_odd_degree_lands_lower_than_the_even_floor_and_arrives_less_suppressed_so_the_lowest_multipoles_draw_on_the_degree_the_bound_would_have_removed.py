@@ -173,7 +173,7 @@ gate("Ⓐ②  and `eq:lowell` returns the ARGUMENT and not a multipole: it sits 
      " percentile of its own distribution at every degree, reproducing `r7164`'s `ninetieth"
      " percentile, not its centre` rather than taking it on trust",
      all(0.94 < D[L]['pct'] < 0.97 for L in range(1, 9))
-     and 'the printed value sits near the ninetieth percentile' in PAPER)
+     and 'e, \\emph{the printed value sits near the ninetieth percentile' in PAPER)
 
 gate("Ⓐ③  and the four printed arguments return: `$4.80$`, `$7.85$`, `$10.74$`, `$13.59$` at the"
      " first four degrees, on the paper's own two lengths read from the paper rather than recalled",

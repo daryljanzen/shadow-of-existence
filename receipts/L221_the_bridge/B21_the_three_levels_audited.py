@@ -68,7 +68,7 @@ def main():
           'not claimed for three separated levels' in po2)
     check('and the taxonomy names them: "(1) skeleton grounded, (2) resemblance not claimed, '
           '(3) identification walled"',
-          'skeleton grounded' in tax and 'resemblance not claimed' in tax
+          'skeleton grounded' in tax and '2) resemblance not claimed' in tax
           and 'identification walled' in tax)
     # ** ⛭ AMENDED c54.230, CROSS-BAND AND ROUTED: this quoted a sentence r2803 CORRECTED, and the
     # ** correction is this receipt's own finding landing. **  `B21`'s ⓵ is that four revisions answered
@@ -99,8 +99,8 @@ def main():
         # REGRESSION GUARD on the FILLING, naming the revision that did it. ***
     check('✔ FILLED r2683 -- the row now names the three levels, and the guard is that it keeps '
           'doing so',
-          '(1) skeleton grounded' in po2 and '(2) resemblance not claimed' in po2
-          and '(3) identification walled' in po2
+          '(1) skeleton grounded, (2) resemblance n' in po2 and '(2) resemblance not claimed' in po2
+          and 't claimed, (3) identification walled' in po2
           and 'THE STATE NOW' in po2.upper())
 
     print()

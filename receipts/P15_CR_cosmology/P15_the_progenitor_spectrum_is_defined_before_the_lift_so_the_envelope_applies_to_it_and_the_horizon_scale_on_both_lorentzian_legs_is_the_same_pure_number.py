@@ -420,7 +420,7 @@ gate(f"`70`'s probe flags `404:5` at tolerance `1e-10` and `404:75` at `1e-8` --
      f"beside it -- so there is nothing to re-fix and the probe ran on an older tree",
      len(_off) == 2
      and all(now >= floor * 10.0 for now, floor in _off.values())
-     and 'a fragility' in flat(r02))
+     and 's a fragility' in flat(r02))
 
 
 # ============================================================ G. scope

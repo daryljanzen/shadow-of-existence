@@ -89,7 +89,7 @@ def main():
     #   surviving forms; the receipt's thesis -- that P3 already carries the sixth -- stands.
     check('⛔ ⓵ P3 already carries the sixth equivalence: "A sixth is available and differs from those '
           'five in kind rather than in content"',
-          'differs from the other five in \\emph{kind} rather than in content' in allp)
+          'differs from the other five in \\emph{kind} rather than in content, and is w' in allp)
     check('with the substrate-language clause the receipt claimed as new: "the same placement read in '
           "the substrate's own causal language rather than in the plane's\"",
           "the same placement in the substrate's own causal language" in allp)
@@ -107,7 +107,7 @@ def main():
     check('⛭⛭ ⓶ while "excentre" appears ZERO times -- P3 states it as "a $120^{\\circ}$-separated '
           'triple of lines at transverse radius $\\rho$"',
           'excentre' not in allp.lower()
-          and 'separated triple of lines at transverse radius' in allp)
+          and 'separated triple of lines at transverse radius $R$, one has $s^{2' in allp)
 
     # ⓷ the second result is genuinely absent
     # ** r2722, cc54's c54.213: *** the half this receipt found REAL was banked into P3 at

@@ -112,7 +112,7 @@ def main():
     # ⓸ and PO-5's bound is the same currency
     check('⛭⛭⛭ ⓸ while `PO-5`\'s settled bound is that the ledger holds no free dimensionless '
           'parameter -- the row records the three papers committing that $\\ell_P$ is a gauge',
-          'gauge-combination rather than a second physical' in
+          'gauge-combination rather than a second physical length, the cutoff is n' in
           re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'canonical_time.tex'))))
 
     # ⓹ and p0 names the root

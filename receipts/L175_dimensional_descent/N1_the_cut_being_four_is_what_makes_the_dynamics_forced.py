@@ -140,8 +140,8 @@ def main():
           'metric, "a field rather than a constant" -- and $h^{ab}$ named as "the structure '
           '\\emph{function} that makes the algebra an algebroid".  *Same content, rewritten*',
           'is not a Lie algebra' in p12
-          and 'the inverse spatial metric, a field rather than a constant' in p12
-          and 'the structure \\emph{function} that makes the algebra an algebroid' in p12)
+          and 's the inverse spatial metric, a field rather than a constant' in p12
+          and 'the structure \\emph{function} that makes the algebra an algebroid and is t' in p12)
     check('and P12 cites Teitelboim1973 for the brackets', 'Teitelboim1973' in p12)
 
     # ** THE PAPERS, NOT THE GENERATED APPENDICES.  The first version counted every .tex, and the

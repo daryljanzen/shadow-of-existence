@@ -83,7 +83,7 @@ def main():
           'whereas in the conserved spacetime Dirac norm the horizons are infinitely distant and '
           'the static mode does not normalize' in p14)
     check('with the choice stated: "CR reads the fermion on the leaf, where it is a bound state"',
-          'CR reads the fermion on the leaf, where it is a bound state' in p14)
+          't interchangeable, and CR reads the fermion on the leaf, where it is a bound state' in p14)
     check('and the localisation grounded: "the fermion is a mode of the existent spatial leaf"',
           'the fermion is a mode of the existent spatial leaf' in p14)
 

@@ -343,7 +343,7 @@ with open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8') as
     P15 = fh.read()
 
 check("P16 states the spherically symmetric class as a PREMISE, in those words",
-      'a premise of the construction rather than a gap in it' in P16)
+      's a premise of the construction rather than a gap in it' in P16)
 check("P16 forbids dropping the symmetry while keeping the branch-point locus",
       'one may not drop the symmetry and keep the locus' in P16)
 check("and P16 never mentions a twist or a Gowdy member at all",
@@ -389,7 +389,7 @@ check("P10 locates the remaining question in the STATE, not the geometry",
       'whatever excludes it does so through' in
       open(os.path.join(ROOT, 'corpus', 'canonical_time.tex'), encoding='utf-8').read())
 check("and P14 has the geometry PERMITTING the chirality-asymmetric action without selecting it",
-      'permits the chirality-asymmetric action' in
+      'permits the chirality-asymmetric action and does n' in
       open(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'), encoding='utf-8').read()
       or 'does not \\emph{select} it' in
       open(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'), encoding='utf-8').read())

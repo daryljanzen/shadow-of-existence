@@ -118,18 +118,18 @@ def main():
           'vacuum geometry has ..." -- matched without case, since it now opens a sentence',
           _VAC.search(p9) is not None)
     check('and again at the second: "a Type-D vacuum admits a Killing tensor"',
-          'a Type-D vacuum admits a Killing tensor' in p9)
+          'a Type-D vacuum admits a Killing tensor~\\cite{WalkerPenrose1970' in p9)
     check("and the paper's own title names the object the Kerr--NUT--(A)dS VACUUM KERNEL",
           'vacuum kernel' in p9)
 
     # and the stratum it cannot reach
     check('while the wall is where matter is genuinely inhomogeneous -- "such a geometry is one whose '
           'matter is genuinely inhomogeneous"',
-          'such a geometry is one whose matter is genuinely inhomogeneous' in p9)
+          's nothing to grip, and such a geometry is one whose matter is genuinely inhomogeneous' in p9)
     check('⇒⇒ SO THE ONE SHEAR-SELECTION PRINCIPLE THE CORPUS HAS IS HYPOTHESIS-BOUND TO THE SECTOR '
           'THE WALL EXCLUDES',
           _VAC.search(p9) is not None
-          and 'such a geometry is one whose matter is genuinely inhomogeneous' in p9)
+          and 's nothing to grip, and such a geometry is one whose matter is genuinely inhomogeneous' in p9)
 
     # the corrected statement
     check('⌗ so r2504\'s dark region is SHARPENED, not removed: not "no principle exists" but "the '

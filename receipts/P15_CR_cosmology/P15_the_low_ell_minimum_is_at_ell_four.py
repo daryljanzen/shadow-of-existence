@@ -207,7 +207,7 @@ _DISCH = os.path.join(HERE, 'P15_the_low_multipole_depth_gap_closes_and_two_defe
 _dsrc = open(_DISCH, encoding='utf-8').read() if os.path.exists(_DISCH) else ''
 print(f"  ** the discharging receipt exists and names the two defects: "
       f"{'TWO DEFECTS IN THE SECOND ARM' in _dsrc} **")
-assert 'TWO DEFECTS IN THE SECOND ARM' in _dsrc and 'THE LOW-MULTIPOLE DEPTH GAP CLOSES' in _dsrc
+assert 'S TWO DEFECTS IN THE SECOND ARM' in _dsrc and 'THE LOW-MULTIPOLE DEPTH GAP CLOSES' in _dsrc
 # ⛔ and NOT asserted any longer: "the depth is not" cross-validated.  The paper now says the
 #   opposite, on a computation this file did not run, and it is checked as a discharge:
 assert 'The shape is cross-validated between the two; the depth is not' not in _TEXn

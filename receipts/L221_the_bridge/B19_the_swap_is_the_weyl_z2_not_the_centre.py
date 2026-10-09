@@ -71,7 +71,7 @@ def main():
 
     check('⓵ P14 states the gap: "$T$ is a discrete horn swap and delivers a species label, not '
           "$SU(2)_L$'s chiral action\"",
-          'a discrete horn swap and delivers a species label' in p14)
+          'a discrete horn swap and delivers a species label, not $SU(2' in p14)
     check('and locates the difference: "the two occupations differing on the right-handed pair"',
           'the two occupations differing on the right-handed pair' in p14)
 

@@ -89,11 +89,11 @@ def main():
     # the question
     check('⓵ P4 asks it: "Whether the two triples are one structure ... no derivation producing '
           '$\\{0,1,2\\}$ from a single condition has been exhibited"',
-          'Whether the two triples are one structure' in p4
+          'Whether the two triples are one structure is n' in p4
           and 'no derivation producing $\\{0,1,2\\}$ from a single condition has been exhibited' in p4)
     check('and states the causal triple as three VALUES: "the excursion\'s three critical loci sit at '
           'three equally spaced values of $f$"',
-          "the excursion's three critical loci sit at three equally spaced values of $f$" in p4)
+          "1-f$, and the excursion's three critical loci sit at three equally spaced values of $f$" in p4)
 
     # ⓵ the cubic at Nariai
     MN = 1.0 / (3 * np.sqrt(3))

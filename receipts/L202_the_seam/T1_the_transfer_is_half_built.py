@@ -139,7 +139,7 @@ def main():
     # ⓸ the heights do not need it
     check('⓸ and the heights do NOT need it: "The peak heights are then carried by a structural argument '
           'rather than a bespoke transfer."',
-          'carried by a structural argument rather than a bespoke transfer' in p15)
+          'e then carried by a structural argument rather than a bespoke transfer' in p15)
     # ** r6931+70.1: CLASS (b) -- DISCHARGED.  "with the tilt-irreducible residual the part the
     #   transfer would isolate" went at 440623b6 (r6719) because the transfer isolated it: P15 now
     #   says the joint fit "locates [it] as a Gaussian residual in ell that no tilt removes".  Same

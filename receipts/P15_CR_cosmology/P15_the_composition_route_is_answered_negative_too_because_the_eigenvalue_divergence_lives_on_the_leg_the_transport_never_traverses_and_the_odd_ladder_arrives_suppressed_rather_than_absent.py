@@ -248,7 +248,7 @@ gate("Ⓓ④  and the sign of that is the opposite of the helpful one, which is 
      " this stretch is on the expansion side, so the transport never visits the stretch that would"
      " have made the composition work",
      '\\varepsilon\\to0$` at the seam RAISES every eigenvalue' in PO81
-     or 'RAISES every eigenvalue' in PO81)
+     or '0$` at the seam RAISES every eigenvalue' in PO81)
 
 # =====================================================================================
 head("E -- AND THE ODD LADDER ARRIVES, WITH A NUMBER RATHER THAN A SIGN")

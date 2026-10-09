@@ -71,7 +71,7 @@ def main():
           'survive on a background whose curvature runs' in po6)
     check('and r2691 already withdrew the object it was built on: the row records P10\'s slicing as '
           'exactly de Sitter',
-          '12/\\alpha^2' in po6 or 'cosh(T/\\alpha)' in po6 or 'de Sitter' in po6)
+          's ** $R=12/\\alpha^2' in po6 or 'cosh(T/\\alpha)' in po6 or 'de Sitter' in po6)
 
     # ⓶ both backgrounds
     T, al, t, H = sp.symbols('T alpha t H', positive=True)

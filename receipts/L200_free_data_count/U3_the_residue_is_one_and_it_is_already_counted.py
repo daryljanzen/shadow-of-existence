@@ -153,7 +153,7 @@ def main():
           'datum side by L150/X1, the constant side joined to this receipt in p0',
           'item has two sides and they now stand differently, so it is split rather than carried '
           'whole' in _p0_pre6683
-          and 'The test has two sides, and each has been run' in p0
+          and 'e one fact.\'\' \\emph{The test has two sides, and each has been run' in p0
           and 'X1_the_ratio_is_a_clock_reading_not_a_carried_datum' in p0
           and 'U3_the_residue_is_one_and_it_is_already_counted' in p0)
     _p0_at_179 = _at('2af0b0b', 'corpus/geometric_core_paper.tex')

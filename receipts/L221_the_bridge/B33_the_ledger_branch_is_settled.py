@@ -87,7 +87,7 @@ def main():
     check('P10, reached from a different direction entirely: "since $\\ell_{P}$ is a '
           'gauge-combination rather than a second physical length, the cutoff is not smuggling a '
           'scale in either"',
-          'is a gauge-combination rather than a second physical length' in P['canonical_time'])
+          'is a gauge-combination rather than a second physical length, the cutoff is n' in P['canonical_time'])
     check('P14: "the one physical length being $\\alpha$ and not $\\ell_{P}$, whose ratio ... is a '
           'number in gauge-units and not a tuning"',
           'is a number in gauge-units and not a tuning' in P['matter_sector_paper'])

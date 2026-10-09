@@ -105,7 +105,7 @@ def main():
     # ⓶ what P14 delivers
     check('⓶ P14 lists colour\'s discrete content as DELIVERED: "the discrete content of '
           '\\textbf{colour}"',
-          'the discrete content of \\textbf{colour}' in p14)
+          'r them, the discrete content of \\textbf{colour}' in p14)
     check('with the module named: "the module the operator\'s colour structure acts on is the branching '
           'rather than any bundle of the substrate"',
           "the module the operator's colour structure acts on is the branch" in re.sub(r'\s+', ' ', p14))
@@ -150,7 +150,7 @@ def main():
           "supplies colour's exact selection rules and no force" in re.sub(r'\s+', ' ', p14))
     check('and weak isospin as a gauging: "$T$ is a discrete horn swap and delivers a species label, not '
           '$SU(2)_L$\'s chiral action"',
-          'a discrete horn swap and delivers a species label' in re.sub(r'\s+', ' ', p14))
+          'a discrete horn swap and delivers a species label, not $SU(2' in re.sub(r'\s+', ' ', p14))
 
     print()
     if FAILED:

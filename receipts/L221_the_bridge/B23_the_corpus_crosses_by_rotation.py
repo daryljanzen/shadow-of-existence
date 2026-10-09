@@ -102,7 +102,7 @@ def main():
           #   crossed -- "from the comoving turnaround $|r|=(2M\\alpha^{2})^{1/3}$ to the branch
           #   point".  *The claim is unchanged and better stated; the pin spanned a gap the paper
           #   then filled.*  Pinned to the two ends separately.
-          'while the areal radius climbs from the comoving turnaround' in p7
+          't advance while the areal radius climbs from the comoving turnaround $|r|=(2' in p7
           and 'to the branch point' in p7)
     check('with the rate continuous across it: "carried continuously from zero at the turnaround"',
           'carried continuously from \\emph{zero} at the turnaround' in p7)

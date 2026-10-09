@@ -97,7 +97,7 @@ def main():
           'the inverse-square operator' in p10 and 'at the origin' in p10)
     check('and $3/4$ is the Weyl alternative -- P10 states both sides: "essentially self-adjoint where" '
           'the coefficient is above, "and limit-circle where" below',
-          'limit-circle where' in p10 and 'essentially self-adjoint where' in p10)
+          'limit-circle where $\\hat\\Gamma<\\tfrac34' in p10 and 'essentially self-adjoint where' in p10)
 
     # ⓶ what is left open, exactly
     check('⓶ and the receipt states what is open: the decomposition "needs only that the spectrum of '
@@ -105,7 +105,7 @@ def main():
           'IT DOES NOT NEED A LOWER BOUND' in straddle.upper())
     check('the two paragraph statements being "correct of DIFFERENT operators" -- leading-order versus '
           'complete',
-          'correct of DIFFERENT operators' in straddle)
+          'h statements are correct of DIFFERENT operators' in straddle)
 
     # ⓷ the floor follows from the non-degeneracy
     trunc = [1 - v for v in (0.0, 0.5, 0.9, 2.0, 10.0)]

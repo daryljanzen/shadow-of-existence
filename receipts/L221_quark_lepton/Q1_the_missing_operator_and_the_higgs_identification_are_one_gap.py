@@ -128,7 +128,7 @@ def main():
     # ⓷ and that is why the four have no operator
     check("r2476's asymmetry: second quantisation is available because the three wall modes are ONE "
           "OPERATOR'S KERNEL",
-          "one operator's kernel" in p14.lower() or 'kernel and therefore identical particles' in p14
+          "e one operator's kernel" in p14.lower() or 'e one operator\'s kernel and therefore identical particles' in p14
           or 'are one operator' in p14.lower())
     check('and the count is a well-defined INDEX because the leaf is compact and carries a Dirac '
           'operator', 'index' in p14.lower() and 'Dirac' in p14)

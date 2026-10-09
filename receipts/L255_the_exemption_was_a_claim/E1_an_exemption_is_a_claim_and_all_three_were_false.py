@@ -257,7 +257,7 @@ def main():
           and 'header(t)' in gate_now)
     check('⓺ᵇ and each of the three carries the falsification IN PLACE, so a reader who finds the '
           'convention documented at r2902 can see how its instances ended',
-          all('THE `RERUNNABLE: NO — POINT-IN-TIME` MARK WAS REMOVED HERE'
+          all('THE `RERUNNABLE: NO — POINT-IN-TIME` MARK WAS REMOVED HERE AT r3126'
               in open(os.path.join(ROOT, p), encoding='utf-8').read() for p in THREE))
     check('⓺ᶜ ⌗ and the CONVENTION is kept, not deleted: the gate still requires a reason beside '
           'any future mark',

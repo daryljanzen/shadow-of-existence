@@ -116,7 +116,7 @@ def main():
     # F1's error, named
     check("F1 (r2467) claimed the flatness is 'FORCED by the homogeneity of the leaf' -- and that "
           'is the claim this receipt withdraws',
-          'FORCED by the homogeneity of the leaf' in arc or 'homogeneity of the leaf' in arc)
+          'FORCED by the homogeneity of the leaf' in arc or 's forced by the homogeneity of the leaf' in arc)
     check("but F1's computation stands: the roots DO move with M",
           sp.simplify(sp.diff(sp.solve(sp.Eq(r0 - r0**3, 2*M), M)[0], r0)) != 0)
 

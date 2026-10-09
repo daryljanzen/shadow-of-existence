@@ -116,7 +116,7 @@ gate("Ⓐ④  AND THE READING THIS RESULT IS NEW AGAINST IS ENUMERATED RATHER TH
      " present only as the clause this revision supplies.  The receipt reasons from the two"
      f" conditions in either state: shear {len(_sh)}, all elsewhere; umbilic {n_umb}",
      len(_sh) > 0 and all(_sh_ok)
-     and (n_umb == 0 or 'umbilic locus of that foliation' in P07))
+     and (n_umb == 0 or 's the umbilic locus of that foliation' in P07))
 
 # =====================================================================================
 head("B -- THE GENERAL IDENTITY: ONE EQUATION, ON AN ARBITRARY STATIC SPHERICALLY SYMMETRIC f")

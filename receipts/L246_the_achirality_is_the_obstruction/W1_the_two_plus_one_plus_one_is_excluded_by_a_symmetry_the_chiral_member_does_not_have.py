@@ -265,7 +265,7 @@ hsrc = open(hyp, encoding='utf-8', errors='replace').read()
 check('⓬ the hypercharge receipt takes the five-multiplet structure as its stated input',
       "MULTIPLET STRUCTURE (Q,u^c,d^c,L,e^c)" in hsrc)
 check('⓬ᵇ and treats Q as an isodoublet with u^c, d^c as SINGLETS -- the 2+1+1 shape',
-      'Q is an isodoublet' in hsrc and 'singlets' in hsrc)
+      '0      (Q is an isodoublet' in hsrc and 'singlets' in hsrc)
 
 print()
 print('  *** THE CONTROL: run the anomaly conditions on the structure the ACHIRAL member PERMITS')
@@ -470,7 +470,7 @@ check('⓭ the wall-mode kernel is a count of GENERATIONS, not of states within 
       'index counts generations, not the states within them' in p14.replace('\n', ' '))
 check('⓭ᵇ while the four states PART 2 acts on are the COLOURLESS four of one generation, both '
       'chiralities present -- P14 names them as the lepton content',
-      'colourless' in p14 and 'four one-dimensional' in p14.replace('\n', ' '))
+      'colourless' in p14 and 'e its four one-dimensional' in p14.replace('\n', ' '))
 print('    the wall kernel : one Weyl mode per wall, three walls, ALL ONE CHIRALITY  -> 3 and 0')
 print('    the four states : nu_L, e_L, e_R, nu_R of ONE generation -> both chiralities present')
 check('⓭ᶜ so no map is being asked to exchange the wall kernel with an empty space; Phel acts on '

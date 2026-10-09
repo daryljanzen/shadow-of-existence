@@ -88,7 +88,7 @@ def main():
     # ⓵ the criterion, named
     check('⛭ the corpus names it: "least-arbitrariness being the programme\'s own criterion of '
           'necessity (Rule~2 ...)"',
-          "least-arbitrariness being the programme's own criterion of necessity" in allp)
+          "least-arbitrariness being the programme's own criterion of necessity (Rule~2" in allp)
     check('and states what it rejects: "a symmetry-breaking modulus is the adjustable parameter that '
           'criterion rejects"',
           'a symmetry-breaking modulus is the adjustable parameter that criterion rejects' in allp)
@@ -106,7 +106,7 @@ def main():
           'forced rather than chosen' in allp)
     check('⇒⇒ SO REQUIRES-OVER-PERMITS IS NOT A PREFERENCE THE PROGRAMME MIGHT HOLD -- it is the '
           'distinction it says it draws, in the register where it draws it',
-          "least-arbitrariness being the programme's own criterion of necessity" in allp
+          "least-arbitrariness being the programme's own criterion of necessity (Rule~2" in allp
           and 'forced rather than chosen' in allp)
 
     # ⓷ the conclusion
@@ -128,7 +128,7 @@ def main():
           'general relativity unchanged"',
           'the construction leaves the dynamics of general relativity unchanged' in allp)
     check('⌗ and the row itself posed this at r2518 as the decision it turns on',
-          'desideratum' in arc)
+          's a desideratum' in arc)
 
     print()
     if FAILED:

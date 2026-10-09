@@ -116,7 +116,7 @@ def main():
     # ⓵ the corpus gives the lift and never the square
     check('⓵ the corpus states the lift: "the reality-involution lift $S=\\gamma^0\\gamma^1\\gamma^3$ '
           'gives $\\gamma^5S=-i\\gamma^2$"',
-          'reality-involution lift' in allp
+          'reality-involution lift $S=\\gamma^{0' in allp
           and '$S=\\gamma^{0}\\gamma^{1}\\gamma^{3}$' in allp
           and '\\gamma^{5}S=-\\mathrm{i}\\gamma^{2}' in allp)
     n_k2 = len(re.findall(r'K\^\{?2\}?', allp))

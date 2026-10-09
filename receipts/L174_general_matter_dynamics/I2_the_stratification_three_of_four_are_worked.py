@@ -116,7 +116,7 @@ def main():
     # stratum 2: LTB, exhibited by this line
     check('the spherically symmetric general case was exhibited at r2450 -- LTB with Lambda, one '
           'equation per comoving shell',
-          'one equation per comoving shell' in arc or 'ONE equation per comoving shell' in arc)
+          'one equation per comoving shell' in arc or 'ONE equation per comoving shell, and the shells do n' in arc)
 
     # stratum 3: Gowdy, worked in P11
     check('⛭ P11 works the FIRST inhomogeneous time-dependent bend explicitly: a polarized '

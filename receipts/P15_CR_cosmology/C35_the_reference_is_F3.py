@@ -76,7 +76,7 @@ def main():
           "chi^2(this instrument's LambdaCDM arm) - chi^2(CAMB)" in l147)
     check('and wires the pipeline against CAMB as a REFERENCE: "THE PIPELINE IS WIRED IFF the CAMB '
           'flat-LambdaCDM best fit reproduces chi^2 = 206.4 over 215 TT bins"',
-          'the CAMB flat-LambdaCDM best fit reproduces' in l147 and '206.4' in l147)
+          'S WIRED IFF the CAMB flat-LambdaCDM best fit reproduces chi^2' in l147 and '206.4' in l147)
 
     # ⓶ BIC uses only differences
     dbic = (2 - 6)*np.log(N)

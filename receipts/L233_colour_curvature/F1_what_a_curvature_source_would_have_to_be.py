@@ -110,7 +110,7 @@ def main():
     # the corpus has the object
     check('and the corpus exhibited exactly that at r2450: the general inhomogeneous LTB leaf, '
           'm(r) and E(r) free, one equation per comoving shell',
-          'one equation per comoving shell' in arc or 'ONE equation per comoving shell' in arc)
+          'one equation per comoving shell' in arc or 'ONE equation per comoving shell, and the shells do n' in arc)
     check('with the bend-density identity EXACT for arbitrary m(r)',
           'EXACT for arbitrary $m(r)$' in arc or 'exact for arbitrary' in arc.lower())
 

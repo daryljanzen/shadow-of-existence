@@ -85,7 +85,7 @@ def main():
     check('with level (2) recorded as PASSED: "a \\"resemblance not claimed\\" guards against reading '
           'a similarity as a fact, and when the similarity becomes a construction the hold has '
           'nothing left to guard"',
-          'nothing left to guard' in tax)
+          's nothing left to guard' in tax)
 
     # ⓷ the zero sum is arithmetic
     sums = []

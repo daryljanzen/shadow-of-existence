@@ -153,7 +153,7 @@ check("no member imports another or reads a bank -- so the dependence is by COPI
       "file graph cannot show", all(not re.search(r'np\.load|json\.load|pickle\.load', SRC[k]) for k in G2))
 check("⛭ r7058 contributes the threshold alone: it says the ratios are r7056's 'USED exactly as filed and not "
       "recomputed', and carries them as a literal table", 'not recomputed here' in SRC['r7058']
-      and 'only the threshold' in SRC['r7058'])
+      and 'only the threshold\nthey are c' in SRC['r7058'])
 g2nums = {k: [n for n in ('175', '126', '444', '1441', '81', '120575', '19775', '131', '36') if carries(k, rf'\b{n}\b')]
           for k in G2}
 check("⛭ r7050 supports no number in the passage, and its own headline -- a crossing at m = 136 -- is superseded",

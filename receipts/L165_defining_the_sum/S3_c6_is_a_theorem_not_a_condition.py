@@ -87,11 +87,11 @@ def main():
 
     # ⓶ what S1 listed it as
     check('⓶ and S1 lists C6 as a CONDITION: "IT MUST RESPECT THE PER-FIBRE CLOSURE"',
-          'IT MUST RESPECT THE PER-FIBRE CLOSURE' in s1)
+          '6 · IT MUST RESPECT THE PER-FIBRE CLOSURE' in s1)
     check('⇒ SO C6 IS MISCLASSIFIED: a direct-integral decomposition forced by a commutation relation is '
           'not something a measure can fail -- it is a property of the operator',
           'since it commutes with the radial part' in d1
-          and 'IT MUST RESPECT THE PER-FIBRE CLOSURE' in s1)
+          and '6 · IT MUST RESPECT THE PER-FIBRE CLOSURE' in s1)
 
     # ⓷ why the separation is structural
     check("⓷ and D1 says why it is structural rather than lucky: the sub-threshold set's size is "

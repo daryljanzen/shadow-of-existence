@@ -111,7 +111,7 @@ def main():
     # ⓶ L-207 exhibited it in one class
     check('and L-207 (1) exhibited exactly that at r2450, computed from the metric: LTB with '
           'Lambda, one equation per comoving shell',
-          'one equation per comoving shell' in arc or 'ONE equation per comoving shell' in arc)
+          'one equation per comoving shell' in arc or 'ONE equation per comoving shell, and the shells do n' in arc)
     check('with the bend-density identity exact for arbitrary m(r)',
           'exact for arbitrary' in arc.lower())
 
@@ -123,7 +123,7 @@ def main():
           'it only in the spherically symmetric class',
           _HANDOFF.search(p9) is not None
           and ('one equation per comoving shell' in arc
-               or 'ONE equation per comoving shell' in arc))
+               or 'ONE equation per comoving shell, and the shells do n' in arc))
 
     # why it sat
     check('and the row records why it was carried at the wrong weight: the quotation was P8\'s '

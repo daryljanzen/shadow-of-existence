@@ -114,7 +114,7 @@ def main():
     # the register's constraint
     arc = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()
     check('L-202 is stated without being claimed BOTH WAYS, and this receipt decides neither',
-          'not claimed BOTH WAYS' in arc or 'not claimed both ways' in arc.lower())
+          '1`\'s `\'not claimed BOTH WAYS' in arc or 'not claimed both ways' in arc.lower())
 
     print()
     if FAILED:

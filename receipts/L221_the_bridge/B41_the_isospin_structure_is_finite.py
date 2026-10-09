@@ -85,7 +85,7 @@ def main():
     # ⓵ P14 works in D_6
     check('⛭⛭ ⓵ P14 works in $D_6$: "the representations of $D_6$ that are trivial on the deck '
           '$\\mathbb{Z}_3$ ... are its four one-dimensional ones"',
-          'that are trivial on the deck' in p14 and 'four one-dimensional ones' in p14)
+          'that are trivial on the deck' in p14 and 'e its four one-dimensional ones' in p14)
 
     # and D_6 has 2-dim irreps
     dims = [1, 1, 1, 1, 2, 2]
@@ -104,7 +104,7 @@ def main():
     # ⓸ and P14 stated the consequence
     check('⓸ while P14 stated the consequence before the mechanism: "$T$ is a discrete horn swap and '
           'delivers a species label, not $SU(2)_L$\'s chiral action"',
-          'is a discrete horn swap' in p14 and 'delivers a species label' in p14)
+          'is a discrete horn swap' in p14 and 'delivers a species label, not $SU(2' in p14)
     check('⇒ ** a species label is exactly what a finite two-dimensional irrep delivers: it '
           'distinguishes two states and does not rotate between them **',
           "not SU(2)_L's chiral action" in p14 or 'chiral action' in p14)

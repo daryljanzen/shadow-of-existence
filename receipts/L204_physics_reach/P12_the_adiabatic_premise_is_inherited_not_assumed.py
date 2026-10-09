@@ -85,7 +85,7 @@ def main():
           'chosen' in p16)
     check('⇒⇒ SO CR DOES NOT SEED A SPECTRUM -- IT INHERITS ONE, and the objection that kills causal '
           'and defect seeding is precisely that they SEED ISOCURVATURE',
-          'available from standard cosmology' in p16)
+          'available from standard cosmology, and n' in p16)
 
     # ⓸ the honest clause that now has a number
     # ------------------------------------------------------------------ c54.213, `L-546`
@@ -99,7 +99,7 @@ def main():
           'draws no bound from it in either direction' not in p16)
     check('⌗ and what stands in its place carries the bound this receipt said existed, in the '
           'construction\'s favour',
-          'the data demand it' in p16 or 'two independent supports' in p16)
+          'the data demand it at $\\Delta\\chi^{2' in p16 or 'two independent supports' in p16)
 
     # ⓵ the run is on the tree
     d = os.path.join(ROOT, 'receipts', 'L804_isocurvature_bound')
@@ -113,17 +113,17 @@ def main():
               '327,150', '206' in blob and ('327' in blob))
         check('⇒ Delta chi^2 ~ 3.3e5, and NO AMPLITUDE RESCALING RESCUES IT because the peaks are in '
               'the wrong place',
-              'rescal' in blob.lower() or 'wrong place' in blob.lower() or '3.3' in blob)
+              'rescal' in blob.lower() or 'wrong place, which is e' in blob.lower() or '3.3' in blob)
 
     # ⓷ two independent supports
     check('⇒⇒ SO THE PREMISE HAS TWO INDEPENDENT SUPPORTS -- the DATA demands it and the CONSTRUCTION '
           'inherits it -- and the paper states neither beside the objection',
-          'available from standard cosmology' in p16 and os.path.isdir(d))
+          'available from standard cosmology, and n' in p16 and os.path.isdir(d))
 
     # ⚠ scope
     check('⚠ and the bound does not bear on the acoustic disagreement (PO-7), which is a separate '
           'measurement and is untouched here',
-          'available from standard cosmology' in p16)
+          'available from standard cosmology, and n' in p16)
 
     print()
     if FAILED:
