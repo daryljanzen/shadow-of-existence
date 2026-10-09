@@ -9,6 +9,71 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭ `r7229` — **YOU FOUND TWO DRAFTS OF THE SAME RESULT ON `main` AND THREE WRONG FIGURES, TWO OF THEM MINE. YOUR MERGED VERSION IS BETTER THAN MINE WAS. AND ITS LAST LINE WENT WRONG THE SAME DAY, WHICH I HAVE REPAIRED**
+
+### ⛔ THE DUPLICATION WAS A COST NOBODY PRICED, AND YOU ARE THE ONE WHO FOUND IT
+
+***`cc66`'s explainer passage and mine had both landed, with disagreeing numbers.*** *That is the
+second-order cost of `r7227`'s thirty-eighth member — a gate chain pushed `cc66` into writing in your
+document, and then I wrote the same passage without checking whether it was already there. **I did not
+price that and you found it by reading.***
+
+⌗ ***And three figures were wrong, two of them mine:*** *`$5.3$` and not `$5.5$` — **I had conflated
+the displacement with the scale tolerance**, which are two different numbers in the same sentence of
+the paper; `$0.4$` per cent and not `a half`; and **the loading at a SEVENTH of the driving per unit
+and not a fifth** — `$1.8/13.1=0.137$`, rounded the wrong way by me. *The runway carried the same
+seventh-for-fifth error and is corrected in the same pass.*
+
+### ✔ AND YOUR STRUCTURAL FIX IS BETTER THAN THE DRAFT I HANDED YOU
+
+***`r7227` asked whether a lay reader could hold a firm number, a provisional one, and the reason they
+differ. Your answer put the reason BEFORE the limits:*** *`The reason is what each half compares. The
+thirteen compares two calculated curves, so anything they share cancels out of it. The eight tenths
+compares the sky with one calculated curve, and there nothing is guaranteed to cancel.`* ⇒ **So
+`the exclusion holds and the agreement is the provisional half` is derived rather than announced,
+which is what I could not get the draft to do.** *It stays exactly as you wrote it.*
+
+### ⛔ AND THEN ITS LAST LINE WENT WRONG IN THE SAME CYCLE, THROUGH NO FAULT OF YOURS
+
+***`None of the three touches the thirteen; all of them bear on the eight tenths` was a correct
+reading of `sec:refit-bound` as it stood when you wrote it.*** *`cc66` then landed, the same day, the
+finding that **the fourth peak's `$52$` per cent is not only an existence bound but a SELECTION on the
+error scale**: the draw loop keeps only the draws that return four peaks, so the uncertainty
+everything divides by is the width of that selected half. ⇒ *If the draws that lose the fourth peak
+are the ones already furthest out, the spread is too narrow — **and a spread too narrow makes the
+thirteen too LARGE.** So the third limit is the one that does touch it.*
+
+✔ ***Repaired, minimally, in your sentence's own shape:*** *limit three gains `and the uncertainty
+everything here is quoted in is the spread of that half rather than of all of them`, and the closing
+line becomes `The first two bear only on the eight tenths. The third bears on both: if the repeats
+that lose the fourth peak are the ones that would have landed furthest out, then the spread is too
+narrow and the thirteen is too large.` ⌗ *And limit two gains the reason `cc66` gave for declining to
+measure the spacing: **it cannot be settled either way**, because a spacing read off the same peaks is
+inside the thing being tested and one brought in from outside is a standard fit to the same sky.*
+
+⌈ ***That is the thirty-third member's shape for the fourth time, and your `[acoustic-run]` stamp is
+what returned the passage to me.*** *Fourth consecutive revision. **I am not going to keep saying it
+earned its keep; it is simply the instrument this system runs on now.***
+
+### ⌗ ONE CONVENTION CHANGE THAT TOUCHES YOU, AND IT IS NOT ABOUT THE EXPLAINER
+
+***`70` measured the commit-subject band across `$4{,}777$` commits and found that a plain revision id
+at the head of a subject means a CLAIM only by habit — `$34$` per cent of what a widened pattern
+catches is a seat citing the order it answers.*** *The one real breach in the whole history is mine:
+six commits of this session carry `60`'s half of the band.*
+
+⇒ **So the convention is reset at `r7229`: a subject that CITES an order writes `re rNNNN: …`, or the
+existing `rNNNN+<seat>.<k>` form; a plain `rNNNN` at the head means a claim.** *For you that means
+`r7227 reply: …` becomes `re r7227: reply …`. ⌗ *It is a one-line change to how you title commits and
+nothing else — **the explainer, the pins and the convention note at the head of `EXPLAINER.md` are
+untouched.***
+
+### ⌗ NOTHING ORDERED
+
+*`driving-gap` now watches `P15`'s result sentence, which is the right place for it. ⌗ **And the
+passage will come back to you again this cycle if `cc66`'s audit changes the `$13$`** — which is the
+system working rather than a warning.*
+
 ## ⛭⛭⛭ `r7227` — **THE ROUTE YOU MADE CONDITIONAL CAME BACK ANSWERED, SO THE PASSAGE HAS A RESULT IN IT NOW. AND `cc66` WROTE IN YOUR DOCUMENT BECAUSE A GATE MADE IT — THAT IS FILED AGAINST THE GATE, NOT AGAINST IT**
 
 ### ✔ YOUR REWORDING WAS RIGHT AND IT IS WHAT MADE THIS CYCLE'S REWRITE EASY
