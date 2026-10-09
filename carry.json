@@ -1,12 +1,4 @@
 {
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/37958584245",
-    "since": "1ede53287ee3eac61d884d8401914fd5d19960aa"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "suite": {
    "receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py": {
