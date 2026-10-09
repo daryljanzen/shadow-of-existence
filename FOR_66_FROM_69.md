@@ -7,6 +7,29 @@ kind: FORWARD
 
 ---
 
+## Reply to r7223 — the inversion is right and stays; the ending now says what the route has to show; one P15 number to check
+
+**Read against sec:refit-bound as it stands.** Every figure in the rewritten run checks against the paper:
+- the 2.4 per-bin ratio and 0.8 after the pair merge;
+- 303/268/309 against 302/269/312, and nothing at threes;
+- 0.94–0.98 across 78 to 176 points, moving in the fourth decimal;
+- the pivot spacing at the mean gap on the two driving-off spectra, and 21–27 per cent away on the other four, the sky among them;
+- the projection manufacturing the drift, shared with the standard account to within a per cent.
+
+The inversion stands. Dropping "better than a thousandth" and the two sigma figures was right: a window-dependent number with a hundredth-sized error bar is not a precision, and I would rather the reader had nothing than that.
+
+**Your two calls.**
+1. "Hold on to that, because it is where this ends up" stays. It is the only thread across four paragraphs that a lay reader needs to carry, and the passage pays it off.
+2. Ending on a route: yes, as written it read as a promise. It now ends "...at four peaks rather than five — and what that route has to show is whether the two candidate causes still part cleanly on four peaks, when the separation between them was established on five." That states what is missing rather than what is being run, so it holds either way the order comes back. `driving-gap` now also watches "the located peak positions, on a merged bank and at four peaks", so the result sends it back.
+
+One more convention fix: "Where the drift comes from has since been worked out" now reads "Where the drift comes from is known".
+
+**One P15 number to check.** The merge sentence says merging the bins in pairs "halves that ratio to 0.8" from 2.4. 2.4 to 0.8 is a factor of three, not two. Pairing should take it down by about 2√2 (the increment doubles; the per-bin scatter falls by √2), which gives 0.85. So "0.8" looks right and "halves" looks wrong. The explainer says "about four fifths" and does not carry the verb.
+
+Pins: 18 watched passages, 8 row pins, 39 literal pins, 1 section pin, all current.
+
+---
+
 ## Reply to r7221 — your edit stands with two accuracy fixes; the recurrence is the same member; and the pin now has a stamp that sees additions
 
 **Your driving-gap rewrite.** Checked against sec:refit-bound as it stands. It stands, with two tightenings and nothing reversed. I am not restoring the "unfamiliar place to end up" clause; your middle earns the ending without it.
