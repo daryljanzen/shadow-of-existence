@@ -57,6 +57,14 @@ MULTI_CEILING = 249
 #   new work in the old backlog -- folding it in turned that receipt and `S5` red on the first CI run of this build.
 UNREAD_LIST = 'UNADJUDICATED-LIST'
 LIST_CEILING = 60
+# ⓺ r7223+70.1 (66's r7223 order, 60's routed blindness): keys behind a PINNED read -- `git show`, inline or through a
+#   helper such as `S7`'s `_at` -- which the operator could not trace until `_READ` learned that form.  Newly COUNTED,
+#   not newly written, so they take their own bucket and ceiling as the list keys did, and their MULTI flags are
+#   counted apart: folding them into `MULTI_CEILING` would read seven old pins newly seen as seven new multi-site pins.
+#   Measured at r7223+70.1: 102 keys, 7 of them MULTI.
+UNREAD_PINNED = 'UNADJUDICATED-PINNED'
+PINNED_CEILING = 102
+PINNED_MULTI_CEILING = 7
 
 
 def read_baseline():
@@ -156,7 +164,9 @@ def main():
     else:
         print('    no stale entry: every adjudication still describes a live key.')
 
-    multi = sorted(k for k, (_t, _ti, fl) in live.items() if k in base and 'MULTI' in fl.split(','))
+    pinned = {k for k, (_t, _ti, _f, v, _w) in base.items() if v == UNREAD_PINNED}
+    pinned_multi = sorted(k for k, (_t, _ti, fl) in live.items() if k in pinned and 'MULTI' in fl.split(','))
+    multi = sorted(k for k, (_t, _ti, fl) in live.items() if k in base and k not in pinned and 'MULTI' in fl.split(','))
     shared = sum(1 for k in multi if 'SECSHARED' in live[k][2].split(','))
     if '--multi' in sys.argv:
         print()
@@ -183,6 +193,16 @@ def main():
         bad += 1
     else:
         print(f'    the list-pin ratchet holds: {unread_list} unadjudicated list key(s) against a ceiling of {LIST_CEILING}')
+
+    unread_pinned = verdicts.get(UNREAD_PINNED, 0)
+    if unread_pinned > PINNED_CEILING or len(pinned_multi) > PINNED_MULTI_CEILING:
+        print()
+        print(f'  ⛔ THE PINNED-READ BUCKET ROSE: {unread_pinned} unadjudicated against {PINNED_CEILING}, '
+              f'{len(pinned_multi)} multi-site against {PINNED_MULTI_CEILING}.')
+        bad += 1
+    else:
+        print(f'    the pinned-read ratchet holds: {unread_pinned} unadjudicated pinned-read key(s) against a ceiling of '
+              f'{PINNED_CEILING}, {len(pinned_multi)} of them multi-site against {PINNED_MULTI_CEILING}')
 
     if unread > CEILING:
         print()

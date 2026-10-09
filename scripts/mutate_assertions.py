@@ -572,8 +572,12 @@ def prose(root, files=None):
 #   text the receipt READS from a file it does not own.  Seven instances were repaired by hand (00b81f9c,
 #   555cd9f8, 0ecde732, 78f20759, 323f2522), each a gate that failed on another seat's rewording -- and twice on
 #   the SUCCESS of the work it watched, when a sentence saying something was open was retired.
+# ⛭ r7223+70.1: a PINNED read -- `subprocess.run(['git', 'show', f'{PIN}:corpus/X.tex'])`, inline or inside a helper
+#   such as `S7`/`S8`'s `_at` -- is a file read.  Without it the walk found `r7234`'s `_CLAUSES` at their site and then
+#   dropped them for want of a trace, and every receipt reading the tree at a pin was invisible the same way.
 _READ = re.compile(r'\b(io\.)?open\s*\(|\.read_text\s*\(|\.read\s*\(\s*\)|\bbody_of\s*\(|\bread_\w*\s*\(|'
-                   r'\bslurp\w*\s*\(|\bload_tex\w*\s*\(')
+                   r'\bslurp\w*\s*\(|\bload_tex\w*\s*\(|'
+                   r'[\'"]git[\'"]\s*,\s*[\'"]show[\'"]|\bgit\s+show\b')
 _OPEN_WORDS = re.compile(r'(?i)\b(conjectur\w*|open|owed|does not carry|not yet|remains?|unresolved|pending|'
                          r'not claim\w*|not shown|outstanding)\b')
 _SELF = re.compile(r'open\(\s*(os\.path\.(abspath|realpath)\()?\s*__file__\s*\)?\s*[,)]')
@@ -1600,6 +1604,27 @@ assert "likelihood" in b15
 _SEED_LIST_WANT = {('a 8.2', 'LIST'), ('likelihood c', 'LIST'), ('b likelihood', 'LIST'),
                    ('withdrawn phrase x', 'LIST,SURVEY'), ('likelihood', 'MULTI,SECSHARED')}   # one section: SHARED
 
+# ⛭ r7223+70.1: a PINNED read is a read.  An inline `git show` and a helper wrapping one (`S7`'s `_at`) must both be
+#   keyed, and an `open()` read must still be keyed exactly as before.  The list pin reproduces r7234's own form.
+_SEED_PINNED = r'''
+import subprocess
+PIN = "abc123"
+def _at(rev, path):
+    return subprocess.run(["git", "show", f"{rev}:{path}"], capture_output=True, text=True).stdout
+inline = subprocess.run(["git", "show", f"{PIN}:corpus/CR_cosmology.tex"], capture_output=True, text=True).stdout
+helped = _at(PIN, "corpus/CR_framework.tex")
+plain = open("corpus/janzen_circle_v3.tex").read()
+CLAUSES = ("is an amplitude and not a phase", "a constant phase shift")
+def gate(name, ok):
+    print("PASS" if ok else "FAIL", name)
+gate("inline pinned", "rides in the amplitude" in inline)
+gate("helper pinned", "the back seam is simple" in helped)
+gate("plain open", "the circle closes" in plain)
+gate("list through a pinned read", all(c in inline for c in CLAUSES))
+'''
+_SEED_PINNED_WANT = {"rides in the amplitude", "the back seam is simple", "the circle closes",
+                     "is an amplitude and not a phase", "a constant phase shift"}
+
 
 def seed():
     tmp = tempfile.mkdtemp(prefix='mut_seed_')
@@ -1651,6 +1676,11 @@ def seed():
         got = {(r['lit'], r['flags']) for r in rows}
         print(f'  LIST    keys {sorted(got)}   {"OK" if got == _SEED_LIST_WANT else "MISS, want " + str(sorted(_SEED_LIST_WANT))}')
         ok &= got == _SEED_LIST_WANT
+        open(os.path.join(d, 'Q3_pinned.py'), 'w').write(_SEED_PINNED)
+        rows = quote(d, [os.path.join(d, 'Q3_pinned.py')])
+        got = {r['lit'] for r in rows}
+        print(f'  PINNED  keys {sorted(got)}   {"OK" if got == _SEED_PINNED_WANT else "MISS, want " + str(sorted(_SEED_PINNED_WANT))}')
+        ok &= got == _SEED_PINNED_WANT
         rows = prose(tmp, [os.path.join(d, 'P1_prose.py')])
         got, want = lines_of(rows, 'PROSE-PIN'), planted(_SEED_PROSE, 'pin')
         print(f'  PROSE   flagged PROSE-PIN at lines {got}; planted {want}   {"OK" if got == want else "MISS"}')

@@ -1,0 +1,33 @@
+
+  PAPER (S7)
+    ABSENT             shipped   218   wrap-tolerant    98   -120
+    DISCRIMINATING     shipped   279   wrap-tolerant   324   +45
+    MARKUP             shipped    18   wrap-tolerant    18   +0
+    REVERSAL           shipped   442   wrap-tolerant   475   +33
+    REVERSAL-PARTIAL   shipped   419   wrap-tolerant   460   +41
+    SATURATED          shipped    53   wrap-tolerant    54   +1
+    UNFLIPPABLE        shipped    60   wrap-tolerant    60   +0
+    moves: {('ABSENT', 'DISCRIMINATING'): 46, ('ABSENT', 'REVERSAL-PARTIAL'): 40, ('UNFLIPPABLE', 'REVERSAL'): 2, ('ABSENT', 'REVERSAL'): 32, ('ABSENT', 'UNFLIPPABLE'): 2, ('DISCRIMINATING', 'REVERSAL-PARTIAL'): 1, ('REVERSAL', 'SATURATED'): 1}
+     e.g. B10_the_thermal_mechanism_needs_an_exponential_approach.py 'the two readings are not reconciled here' ABSENT -> DISCRIMINATING
+     e.g. B9_the_admissible_pair_is_forced_not_merely_distinguished.py 'every} mode exits it and freezes before the crossing' ABSENT -> REVERSAL-PARTIAL
+     e.g. B9_the_admissible_pair_is_forced_not_merely_distinguished.py 'mode exits it and freezes before the crossing' ABSENT -> REVERSAL-PARTIAL
+     e.g. X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py 'the one quantity the handover supplies' UNFLIPPABLE -> REVERSAL
+     e.g. X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py 'the same standard datum that fixes both the light-element ab' ABSENT -> DISCRIMINATING
+     e.g. S1_seven_necessary_conditions_on_the_measure.py "substrate's scale is $\\alpha$ and is fixed---not chosen, but" ABSENT -> DISCRIMINATING
+
+  SOURCE (S8)
+    ABSENT             shipped   469   wrap-tolerant   454   -15
+    CODE               shipped   218   wrap-tolerant   202   -16
+    DISCRIMINATING     shipped    56   wrap-tolerant    65   +9
+    MARKUP             shipped     2   wrap-tolerant     2   +0
+    REVERSAL           shipped   148   wrap-tolerant   160   +12
+    REVERSAL-PARTIAL   shipped   122   wrap-tolerant   128   +6
+    SATURATED          shipped   122   wrap-tolerant   124   +2
+    UNFLIPPABLE        shipped    17   wrap-tolerant    19   +2
+    moves: {('CODE', 'DISCRIMINATING'): 8, ('CODE', 'REVERSAL'): 8, ('ABSENT', 'REVERSAL-PARTIAL'): 3, ('ABSENT', 'REVERSAL'): 5, ('DISCRIMINATING', 'REVERSAL-PARTIAL'): 3, ('ABSENT', 'UNFLIPPABLE'): 2, ('REVERSAL-PARTIAL', 'SATURATED'): 1, ('CODE', 'REVERSAL-PARTIAL'): 1, ('ABSENT', 'CODE'): 1, ('ABSENT', 'DISCRIMINATING'): 4, ('REVERSAL', 'SATURATED'): 1}
+     e.g. B8_the_zero_velocity_band_is_a_third_of_the_gap.py 'phi = 0 is a density extremum with theta = 0' CODE -> DISCRIMINATING
+     e.g. S3_c6_is_a_theorem_not_a_condition.py 'irrelevant to whether each of its fibres receives a conditio' CODE -> REVERSAL
+     e.g. S3_c6_is_a_theorem_not_a_condition.py 'since it commutes with the radial part' ABSENT -> REVERSAL-PARTIAL
+     e.g. D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py 'A node may write a bounded negative' CODE -> DISCRIMINATING
+     e.g. D2_the_UV_degree_is_quartic_and_the_IR_is_free.py 'A node may write a bounded negative' CODE -> DISCRIMINATING
+     e.g. S6_the_two_halves_restated.py 'irrelevant to whether each of its fibres receives a conditio' CODE -> REVERSAL
