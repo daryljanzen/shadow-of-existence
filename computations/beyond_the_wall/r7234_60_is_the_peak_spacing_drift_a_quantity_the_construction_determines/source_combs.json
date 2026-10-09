@@ -1,0 +1,92 @@
+{
+ "comb_cr_driven": {
+  "guard": null,
+  "l_A_print": 301.4,
+  "modes": 1452,
+  "r_s_print": 145.33,
+  "sw": [
+   0.8942,
+   1.8705,
+   2.8651,
+   3.878,
+   4.8817,
+   5.8854
+  ],
+  "switches": "__SWITCHES__ ARM=cr CRH0=68.60 CROM=0.2973 LEAFGEOM=1 LEAFSCALES=1 LMAXL=2000 LOS=0 NOPROJ=1 ZSTART=3e7",
+  "th": [
+   0.8303,
+   1.8888,
+   2.8651,
+   3.8871,
+   4.8817,
+   5.8946
+  ]
+ },
+ "comb_cr_nodrive": {
+  "guard": 0.0128,
+  "l_A_print": 301.4,
+  "modes": 1452,
+  "r_s_print": 145.33,
+  "sw": [
+   0.9854,
+   2.0074,
+   3.002,
+   4.0057,
+   5.0003
+  ],
+  "switches": "__SWITCHES__ ARM=cr CRH0=68.60 CROM=0.2973 LEAFGEOM=1 LEAFSCALES=1 LMAXL=2000 LOS=0 NODRIVE=1 NOPROJ=1 ZSTART=3e7",
+  "th": [
+   1.0128,
+   2.0074,
+   3.002,
+   4.0057,
+   5.0003
+  ]
+ },
+ "comb_cr_z1e7": {
+  "guard": null,
+  "l_A_print": 301.4,
+  "modes": 1452,
+  "r_s_print": 145.31,
+  "sw": [
+   0.8941,
+   1.8703,
+   2.8648,
+   3.8775,
+   4.8811,
+   5.8847
+  ],
+  "switches": "__SWITCHES__ ARM=cr CRH0=68.60 CROM=0.2973 LEAFGEOM=1 LEAFSCALES=1 LMAXL=2000 LOS=0 NOPROJ=1 ZSTART=1e7",
+  "th": [
+   0.8302,
+   1.8886,
+   2.8648,
+   3.8866,
+   4.8811,
+   5.8938
+  ]
+ },
+ "comb_cr_z1e8": {
+  "guard": null,
+  "l_A_print": 301.4,
+  "modes": 1452,
+  "r_s_print": 145.33,
+  "sw": [
+   0.8942,
+   1.8706,
+   2.8653,
+   3.8782,
+   4.8819,
+   5.8857
+  ],
+  "switches": "__SWITCHES__ ARM=cr CRH0=68.60 CROM=0.2973 LEAFGEOM=1 LEAFSCALES=1 LMAXL=2000 LOS=0 NOPROJ=1 ZSTART=1e8",
+  "th": [
+   0.8303,
+   1.8889,
+   2.8653,
+   3.8873,
+   4.8819,
+   5.8948
+  ]
+ }
+}

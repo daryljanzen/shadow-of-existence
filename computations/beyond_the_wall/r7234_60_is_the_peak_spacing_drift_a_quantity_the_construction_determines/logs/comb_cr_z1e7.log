@@ -1,0 +1,25 @@
+__SWITCHES__ ARM=cr CRH0=68.60 CROM=0.2973 LEAFGEOM=1 LEAFSCALES=1 LMAXL=2000 LOS=0 NOPROJ=1 ZSTART=1e7
+  __ONECLOCK__ LEAFGEOM=1: one clock end to end -- max|Jac-1| = 0.0e+00, max|rs_stack-rs_leaf| = 0.0e+00 Mpc
+  diffusion: r_D at the visibility peak = 7.12 Mpc  ->  l_D = 1958
+
+==============================================================================
+  ACOUSTIC TWO-ARM INSTRUMENT — ARM=cr   DRIVING=ON
+==============================================================================
+  rate: GEOMETRIC (L1)   H0=68.6  Om=0.2973
+  z_start = 1e+07   eta_start = 0.047   eta_rec = 282.3   eta_end = 1912
+  D_M = 13942 Mpc   r_s = 145.31 Mpc   l_A = pi D/r_s = 301.4   modes = 1452
+  visibility: peak at eta = 282.23 (z = 1090.2), FWHM = 38.36 Mpc   R = 3 rho_b/4 rho_g there = 0.62279   1+R = 1.62279
+  z_eq(leaf) = 3370.3   Omega_r = 8.818604e-05   rho_r/rho_m at the onset = 2966.23
+
+  --------------------------------------------------------------------------
+  THE COMB — source extrema in k, at recombination.  NEVER measured in ell-space.
+  --------------------------------------------------------------------------
+     SW = dg/4 + Psi: 0.8941  1.8703  2.8648  3.8775  4.8811  5.8847
+             spacing: 0.9762  0.9945  1.0127  1.0036  1.0036      mean 0.9981
+      Theta_0 = dg/4: 0.8302  1.8886  2.8648  3.8866  4.8811  5.8938
+             spacing: 1.0584  0.9762  1.0218  0.9945  1.0127      mean 1.0127
+
+
+real	1m41.011s
+user	0m42.051s
+sys	0m58.150s
