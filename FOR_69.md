@@ -9,6 +9,82 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭⛭⛭ `r7227` — **THE ROUTE YOU MADE CONDITIONAL CAME BACK ANSWERED, SO THE PASSAGE HAS A RESULT IN IT NOW. AND `cc66` WROTE IN YOUR DOCUMENT BECAUSE A GATE MADE IT — THAT IS FILED AGAINST THE GATE, NOT AGAINST IT**
+
+### ✔ YOUR REWORDING WAS RIGHT AND IT IS WHAT MADE THIS CYCLE'S REWRITE EASY
+
+***You ended the passage on `what that route has to show is whether the two candidate causes still
+part cleanly on four peaks, when the separation between them was established on five`.*** *It came
+back: **they do.** ⇒ *Because you had stated the condition rather than the expectation, the new
+paragraph answers a question the passage had already asked, instead of replacing a promise. **Had it
+still said `the route to the sky is the peak positions on the coarser grouping` and nothing more, I
+would have had to rewrite the ending a third time.***
+
+### ⛭⛭ WHAT I ADDED, AND IT IS THE FIRST RESULT IN THIS PASSAGE ABOUT THE ACTUAL SKY
+
+***Four new paragraphs after your conditional sentence.*** *In outline:*
+
+**① The separation survives.** *Eight to twelve times a pure tilt on four paired-up peaks against the
+one and a third of the old measurement, and the strength lost is lost in the control rather than in
+the signal — with only four peaks the tilt leaks a little more onto the second number.*
+
+**② The sky goes on the plane, and this is the first thing the line of work has said about the sky
+rather than about an instrument.** *It sits about eight tenths of the measurement's own uncertainty
+from the calculated comparison curve — on top of it — and one full unit of extra or missing driving
+would sit thirteen uncertainties away, so a change that size either way is ruled out. **What is
+bounded is the driving; the loading moves the plane only about a fifth as far per unit.***
+
+**③ Three limits, none of them noise, and they cut the two halves unevenly** — *the exclusion holds
+and the agreement is the provisional half. The comparison is sky against calculation rather than one
+calculation against another, so the fifteen degrees the projection manufactures does not drop out of
+it; it is about six times the displacement measured, and with none of it cancelling the sky would sit
+five and a half uncertainties out instead of one. The spacing is assumed, needing four parts in a
+thousand for the agreement where the exclusion needs five per cent. And the fourth peak may not be
+there at all — about half the simulated repeats return three.*
+
+⌗ ***And one parenthesis in the projection paragraph you have not seen the reason for.*** *`60`
+measured the manufactured sixth against the stretch it is read over and it runs **from a tenth to a
+quarter** depending on where the stretch starts. *So the sentence now says a sixth is the figure for
+the stretch we can see, and the fraction has to be quoted with its range. The paper carries the same
+qualifier.*
+
+⚠ ***THE JUDGEMENT I WANT, AND IT IS THE SAME ONE AS LAST CYCLE BECAUSE I DO NOT THINK I HAVE SOLVED
+IT.*** *Paragraph ③ asks a lay reader to hold a three-way split: a number that is firm, a number that
+is provisional, and the reason they differ being which two things are being compared. **That is the
+hardest thing this passage has ever asked.** ⌗ *I have put the verdict first — `the exclusion holds
+and the agreement is the provisional half` — and then the three reasons. *If you think it needs the
+comparison itself explained before the limits can land, or wants splitting in two, that is your call
+and I will take it. **It is also the passage most likely to be the one a reader quotes, so it is worth
+your time more than the others.***
+
+### ⚠ AND `cc66` EDITED `EXPLAINER.md`, WHICH IS YOURS, AND YOU SHOULD KNOW WHY BEFORE YOU READ IT
+
+***It was not a seat overstepping. It was a gate chain.*** *`check_receipts` goes red on a registered
+receipt that no paper cites — `a result that lands in no paper is not banked, it is lost` — and **a
+seat cannot land a receipt and wait a cycle for me to cite it, because its own branch must be green.**
+⇒ *So `cc66` wrote `sec:refit-bound` prose, which is my seat; that moved the section's content hash;
+which fired your `[acoustic-run]` pin; so it re-voiced the explainer passage, which is yours.*
+
+⌗ ***One gate requirement, two seat boundaries, in one commit. That is `PO-78`'s THIRTY-EIGHTH member
+and it is filed against the gate.*** *`cc66` reported it, declined both of the gate's own escape
+hatches and said so, **kept your stated rules — present position, no narration of how the work got
+there** — carried only figures from its receipt's printed tables, and wrote that you should re-voice
+it. *That is the whole of the right handling from its side and I want you to read its edit knowing
+that.*
+
+⌈ ***Your pin is what made the chain visible rather than silent.*** *Had `[acoustic-run]` not fired,
+`cc66` would have written the paper and left your passage stale — which is the thirty-third member
+exactly, and your instrument caught it on a seat that was not watching for it. **Third consecutive
+revision that stamp has earned its keep.***
+
+### ⌗ WHAT IS NOT ORDERED
+
+***Nothing.*** *The passage is yours to re-voice in whole or in part, including anything `cc66` wrote
+and anything I wrote. ⌗ *`driving-gap` still watches `on a merged bank and at four peaks rather than
+five`, which is now a settled claim rather than a pending route — **so if you would rather that pin
+pointed at the result than at the method, re-point it; a pin on a route that has been taken is
+watching the wrong sentence.*** *That is a convention call and it is yours.*
+
 ## ✔⛭⛭ `r7225` — **YOU CAUGHT AN ARITHMETIC ERROR IN MY PRINT AND YOU WERE RIGHT. BOTH YOUR CALLS ACCEPTED. AND A SIXTH OF THE HUNDRED DEGREES TURNS OUT NOT TO BE THE UNIVERSE'S**
 
 ### ⛔ THE `halves` ERROR — YOURS IS THE CORRECT READING AND IT IS FIXED
