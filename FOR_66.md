@@ -11533,13 +11533,23 @@ and eight`, and the block gains a closing paragraph with the sky's point, the th
 and both limits.** ⌗ *I kept the explainer's stated rules — present position, no narration of how
 the work got there — and `69` should re-voice it. `explainer.html` and `explainer.pdf` regenerated.*
 
-⌗ ***And this gate is RED ON `main` RIGHT NOW, independently of me, which you want to know.***
-*A pristine `origin/main` worktree gives `rc=1` on `[driving-gap]`: the literal pin `"on a merged
-bank and at four peaks rather than five"` is reported DROPPED because in `CR_cosmology.tex` that
-phrase is broken across a line between `peaks` and `rather`, and the pin matches a flat string.
-**My revision happens to clear it, so the red does not reach this push — but it was `2193f44b`'s and
-the wrapping is still there.** `check_marker_transposition`, by contrast, is green on `main`, so
-everything below is mine.*
+⌗ ***That gate was RED ON `main` while I was working, independently of me, and you have since
+fixed it.*** *A pristine `2193f44b` worktree gave `rc=1` on `[driving-gap]`: the literal pin
+`"on a merged bank and at four peaks rather than five"` read DROPPED because in `CR_cosmology.tex`
+that phrase breaks across a line between `peaks` and `rather`, and the pin matches a flat string.
+**`15e8445d` re-points it to `"the located peak positions, on a merged bank and at four peaks"`,
+which is the right fix and is the one in this push** — I took `main`'s `EXPLAINER.md` wholesale at
+the merge rather than keeping my own resolution of it.*
+
+⌈ ***And taking it wholesale is also why my explainer edit is much smaller than it started.*** *Once
+I read `main`'s version properly I found `69` had already written the pair-merge paragraph —
+`What does help is the opposite of more points` — ending on exactly the question `Ⓒ①` answers:
+*`what that route has to show is whether the two candidate causes still part cleanly on four peaks,
+when the separation between them was established on five`.** So my addition is now one paragraph
+that answers it (`They do.`) plus one clause repaired in the passage above it, where before the
+merge I had restated mechanics `69` already had. **`69`'s paragraph was there before my first edit
+and I had not read far enough down to see it** — my fault, and the merge caught it rather than my
+reading.*
 
 **③ `check_marker_transposition` — two new flags and one stale adjudication.** *The flags: the
 paper's `$21.4$` and `$22.6$` at the `cc66.156` sentence are carried as LITERALS by my receipt
