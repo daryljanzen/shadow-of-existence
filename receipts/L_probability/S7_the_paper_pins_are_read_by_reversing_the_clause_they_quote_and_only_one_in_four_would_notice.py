@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """L_probability receipt -- `PO-78`, the quote-pin backlog READ BY REVERSAL rather than by eye:
-** of the `1,140` paper-targeted pins this instrument can read, only `279` -- ONE IN FOUR -- would go
+** of the `1,259` paper-targeted pins this instrument can read, only `324` -- ONE IN FOUR -- would go
 red if the clause they quote from were turned round. **
 
 *** ⛭⛭⛭ THE CLASS, AND WHY IT IS NEITHER OF THE TWO ALREADY READ. ***
@@ -24,24 +24,24 @@ transform that leaves the clause unchanged is DISCARDED, and a clause no transfo
 `UNFLIPPABLE` and ** NOT counted blind **: an instrument that cannot move a sentence has not shown that
 a pin survives anything.
 
-** ⓶ THE READABLE POPULATION IS `1,140` OF THE `1,489`, AND IT SPLITS THREE WAYS. **
+** ⓶ THE READABLE POPULATION IS `1,259` OF THE `1,489`, AND IT SPLITS THREE WAYS. **
 
-  `DISCRIMINATING` `279` -- every available reversal of the clause destroys the literal.  ** The pin
+  `DISCRIMINATING` `324` -- every available reversal of the clause destroys the literal.  ** The pin
                quotes the polarity, the quantity or the number.  It would go red.  These are the pins
                doing the job the class is named for, and they are ONE IN FOUR. **
-  `REVERSAL`   `442` -- survives EVERY available reversal: negation, antonym, quantifier and numeral
+  `REVERSAL`   `475` -- survives EVERY available reversal: negation, antonym, quantifier and numeral
                alike.  ** The clause can be turned round four independent ways and the pin sees none
-               of them. **  *This is the class the pre-registration named, and `442 > 249` makes it
+               of them. **  *This is the class the pre-registration named, and `475 > 249` makes it
                the larger blindness, as predicted.*
-  `REVERSAL-PARTIAL` `419` -- survives at least one reversal but not all.
-  ⇒ ** `861` of `1,140` survive at least one reversal of their own clause. **
+  `REVERSAL-PARTIAL` `460` -- survives at least one reversal but not all.
+  ⇒ ** `935` of `1,259` survive at least one reversal of their own clause. **
 
-** ⓷ AND IT IS A NEW CLASS, MEASURED AND NOT ASSUMED. **  *`33%` of the reversal class is multi-site
+** ⓷ AND IT IS A NEW CLASS, MEASURED AND NOT ASSUMED. **  *`34%` of the reversal class is multi-site
 and `67%` is not, so this is not `MULTI` renamed; the overlap with the `OPEN` flag is `0`, so it is not
-`S3`'s class either.  It runs across `189` of the `256` receipts holding a paper-targeted key.*
+`S3`'s class either.  It runs across `196` of the `256` receipts holding a paper-targeted key.*
 
 ⚠ ** AND THE TIER THIS RECEIPT WANTED TO LEAD WITH DOES NOT HOLD, SO IT IS REPORTED AS A LIMIT
-   INSTEAD. **  *`341` of the readable keys sit in a clause carrying exactly ONE of the declared
+   INSTEAD. **  *`362` of the readable keys sit in a clause carrying exactly ONE of the declared
    auxiliaries, and the first draft called that `the clause's only assertion` -- so that negating it
    would reverse the very proposition the literal belongs to, with nothing else for the negation to
    land on.*  ⛔ ** It does not follow, and the data says so: `the near-horizon geometry of the
@@ -53,9 +53,9 @@ and `67%` is not, so this is not `MULTI` renamed; the overlap with the `OPEN` fl
    pins quote, and needs no parse at all. **
 
 ⚠ ** THE RECALL LIMITS, COUNTED AND EXCLUDED RATHER THAN ESTIMATED -- `349` OF THE `1,489`. **
-`218` keys are `ABSENT`: the literal is not an exact substring of any of the eighteen paper BODIES,
+`98` keys are `ABSENT`: the literal is not an exact substring of any of the eighteen paper BODIES,
 because the needle is assembled at run time, is a regex, or names an appendix rather than a paper.
-`60` are `UNFLIPPABLE`.  `18` quote a cross-reference key or a label rather than a claim.  `53` are
+`60` are `UNFLIPPABLE`.  `18` quote a cross-reference key or a label rather than a claim.  `54` are
 `SATURATED` -- more than twenty sites across the bodies, which `r7201+70.1` already settled as a pin on
 the FILE, and reading twenty of five hundred sites would be a verdict on a sample dressed as a verdict
 on a key.  ⛔ ** None of the four is counted blind, and none is counted discriminating either: an
@@ -184,6 +184,47 @@ def reversals(c):
     return {k: v for k, v in out.items() if v != c}
 
 
+# ⛭⛭ r7238 (60), ordered at `r7225` on this seat's own report: ** A WRAPPED QUOTATION IS NOT AN
+#    ABSENCE. **  A `.tex` body and a `.py` source WRAP their lines, so `find(lit)` misses a literal
+#    whose words a line break separates.  `70` re-ran this code with wraps tolerated and found that
+#    was the COMMONEST reason a pin read `ABSENT` -- 120 of this file's 218.
+#    ⛔ ** THE HAYSTACK IS NOT COLLAPSED, AND THAT IS THE WHOLE DESIGN. **  `CLAUSE_DELIM` above reads
+#    `\n\s*\n` as a clause break, so collapsing the body would destroy every paragraph boundary and
+#    silently lengthen every clause.  Instead the NEEDLE's whitespace runs become `\s+`, the body is
+#    searched as it stands so offsets and segmentation are untouched, and SURVIVAL is compared on
+#    collapsed strings.  *Leading and trailing whitespace in a literal is dropped by `split()`, which
+#    is stated because it is a choice: a pin is a quotation of words, not of the space around them.*
+def flat(s):
+    """whitespace collapsed -- for comparing a needle with a span that may wrap"""
+    return ' '.join(s.split())
+
+
+def wrap_pat(lit):
+    """the literal with every whitespace run widened to `\s+`, and nothing else widened"""
+    toks = lit.split()
+    if not toks:
+        return re.compile(re.escape(lit))
+    return re.compile(r'\s+'.join(re.escape(w) for w in toks))
+
+
+def anchor(lit):
+    """the longest whitespace-free token.  EVERY wrap-tolerant match contains it, so a byte prefilter
+    on this token has no false negatives -- which is what lets a 13 MB scan stay a byte scan.
+
+    ⛔ ** NO LENGTH FLOOR, AND THAT IS A CORRECTION TO THIS FUNCTION'S OWN FIRST DRAFT. **  *It
+    returned `''` for a literal whose longest token was under four characters, and the caller then
+    fell back to the RAW literal as the needle -- which reintroduced exactly the blindness this
+    revision exists to remove, silently, for short-token keys.  `70`'s banked split caught it: two
+    `'3 nu'` keys disagreed, and the cause was this floor and not a rule.*  ⇒ A short anchor costs
+    candidate files, which are confirmed with the pattern anyway; a floor costs correctness."""
+    toks = sorted(lit.split(), key=len, reverse=True)
+    return toks[0] if toks else ''
+
+
+def sites_of(lit, text, pat=None):
+    return [(m.start(), m.end()) for m in (pat or wrap_pat(lit)).finditer(text)]
+
+
 def read_baseline(text):
     rows = []
     for ln in text.split('\n'):
@@ -206,11 +247,10 @@ def classify(rows, bodies):
             t['MARKUP'] += 1
             continue
         sites = []
+        _pt = wrap_pat(lit)
         for p, x in bodies.items():
-            k = x.find(lit)
-            while k >= 0:
-                sites.append((p, k, k + len(lit)))
-                k = x.find(lit, k + 1)
+            for a, b in sites_of(lit, x, _pt):
+                sites.append((p, a, b))
         if not sites:
             t['ABSENT'] += 1
             continue
@@ -225,14 +265,14 @@ def classify(rows, bodies):
         w = nw = sw = None
         for p, i, j in sites:
             c = clause_at(bodies[p], i, j)
-            if lit not in c:
+            if flat(lit) not in flat(c):
                 t['NO-CLAUSE'] += 1
                 moved = -1
                 break
             lone = len(AUX.findall(c)) == 1
             for name, fl in reversals(c).items():
                 moved += 1
-                held = lit in fl
+                held = flat(lit) in flat(fl)
                 if name.startswith('NEG'):
                     nmoved += 1
                     if held:
@@ -286,12 +326,12 @@ SEEDS = (
 
 
 def seed_bucket(clause, lit):
-    if lit not in clause:
+    if flat(lit) not in flat(clause):
         return 'NOT-PLANTED'
     fl = reversals(clause)
     if not fl:
         return 'UNFLIPPABLE'
-    if any(lit not in v for v in fl.values()):
+    if any(flat(lit) not in flat(v) for v in fl.values()):
         return 'DISCRIMINATING'
     return 'REVERSAL'
 
@@ -337,19 +377,19 @@ _limits = TALLY['ABSENT'] + TALLY['UNFLIPPABLE'] + TALLY['MARKUP'] + TALLY['SATU
 _readable = TALLY['REVERSAL'] + TALLY['REVERSAL-PARTIAL'] + TALLY['DISCRIMINATING']
 gate(f"Ⓖ⑦ the three verdicts PARTITION the readable population and the four limit buckets account "
      f"for the rest -- {_readable} + {_limits} = {len(ROWS)}, so no count below rests on a key "
-     f"counted twice or dropped", _readable + _limits == len(ROWS) and _readable == 1140)
+     f"counted twice or dropped", _readable + _limits == len(ROWS) and _readable == 1259)
 
 # ──────────────────────────────────────────────────────────────────────────────────────────────────
 head("C. ONE IN FOUR WOULD GO RED, AND THAT IS THE WHOLE FINDING")
 
 gate(f"Ⓖ⑧ DISCRIMINATING -- every available reversal of the clause destroys the literal, so the pin "
-     f"quotes the polarity, the quantity or the number and WOULD go red: 279 of 1140, one in four "
-     f"({TALLY['DISCRIMINATING']})", TALLY['DISCRIMINATING'] == 279)
-gate(f"Ⓖ⑨ REVERSAL -- survives EVERY available reversal: 442 keys ({TALLY['REVERSAL']})",
-     TALLY['REVERSAL'] == 442)
-gate(f"Ⓖ⑩ and 861 of the 1140 survive AT LEAST ONE reversal of their own clause "
+     f"quotes the polarity, the quantity or the number and WOULD go red: 324 of 1259, one in four "
+     f"({TALLY['DISCRIMINATING']})", TALLY['DISCRIMINATING'] == 324)
+gate(f"Ⓖ⑨ REVERSAL -- survives EVERY available reversal: 475 keys ({TALLY['REVERSAL']})",
+     TALLY['REVERSAL'] == 475)
+gate(f"Ⓖ⑩ and 935 of the 1259 survive AT LEAST ONE reversal of their own clause "
      f"({TALLY['REVERSAL'] + TALLY['REVERSAL-PARTIAL']})",
-     TALLY['REVERSAL'] + TALLY['REVERSAL-PARTIAL'] == 861)
+     TALLY['REVERSAL'] + TALLY['REVERSAL-PARTIAL'] == 935)
 gate("Ⓖ⑪ so the instrument SEPARATES the population rather than flagging it -- all three verdicts "
      "are populated and none is the whole",
      0 < TALLY['DISCRIMINATING'] < _readable and 0 < TALLY['REVERSAL'] < _readable
@@ -365,14 +405,14 @@ gate(f"Ⓖ⑫ LONE-AUX is reported as a landing-site count and NOT as `the claus
 gate(f"Ⓖ⑬ and the headline does not rest on it -- `one in four would go red` is a count of what the "
      f"pins QUOTE and needs no parse: {TALLY['DISCRIMINATING']} of {_readable} is measured with the "
      f"auxiliary list used only to MOVE a clause, never to parse one",
-     TALLY['LONE-AUX'] == 341 and TALLY['DISCRIMINATING'] == 279)
+     TALLY['LONE-AUX'] == 362 and TALLY['DISCRIMINATING'] == 324)
 
 # ──────────────────────────────────────────────────────────────────────────────────────────────────
 head("D. EVERY REVERSAL VERDICT CARRIES THE REVERSED CLAUSE IT SURVIVES")
 
 gate(f"Ⓖ⑭ every one of the {len(REV)} reversal verdicts exhibits a reversed clause that CHANGED and "
      f"still contains the literal -- the verdict is a demonstration, not an inference",
-     all(w and lit in w[3] and w[2] != w[3] for _, lit, w, _ in REV))
+     all(w and flat(lit) in flat(w[3]) and w[2] != w[3] for _, lit, w, _ in REV))
 
 
 def window(a, b, lit, span=58):
@@ -406,12 +446,18 @@ print(f"    receipts holding one         {len({r for r, l, w, f in REV})} of "
       f"{len({r for r, *_ in ROWS})}")
 gate(f"Ⓖ⑮ REVERSAL is not MULTI renamed -- {100 * _ov / len(_r):.0f}% of it is multi-site, far under "
      f"the 90% the pre-registration set as the refuting overlap", _ov < 0.90 * len(_r))
-gate(f"Ⓖ⑯ REVERSAL is not S3's class either -- 0 of it carries the OPEN flag ({_open})", _open == 0)
-gate(f"Ⓖ⑰ and it is the LARGER blindness, as pre-registered: 442 against MULTI's 249 "
+# ⛭ r7238: with wraps tolerated ONE reversal key now carries the OPEN flag, where the shipped
+#   measurement had none.  *The disjointness claim weakens from `none` to `one of 475` and is stated
+#   that way rather than rounded to zero* -- the class is still not S3's, and now it is not disjoint
+#   from it either, which is a smaller claim than the one r7228 published.
+gate(f"Ⓖ⑯ REVERSAL is not S3's class either -- 1 of 475 carries the OPEN flag ({_open} of "
+     f"{len(_r)}), so the two classes meet in a single key rather than not at all",
+     _open == 1 and _open < 0.01 * len(_r))
+gate(f"Ⓖ⑰ and it is the LARGER blindness, as pre-registered: 475 against MULTI's 249 "
      f"({TALLY['REVERSAL']} > 249)", TALLY['REVERSAL'] > 249)
-gate(f"Ⓖ⑱ and it is not one receipt's habit -- it runs across 189 of the 256 receipts holding a "
+gate(f"Ⓖ⑱ and it is not one receipt's habit -- it runs across 196 of the 256 receipts holding a "
      f"paper-targeted key ({len({r for r, l, w, f in REV})})",
-     len({r for r, l, w, f in REV}) == 189)
+     len({r for r, l, w, f in REV}) == 196)
 
 # ──────────────────────────────────────────────────────────────────────────────────────────────────
 head("F. THE LIMITS, COUNTED AND EXCLUDED RATHER THAN ESTIMATED")
@@ -423,8 +469,8 @@ print(f"    MARKUP       {TALLY['MARKUP']:4d}  the literal quotes a reference ke
 print(f"    SATURATED    {TALLY['SATURATED']:4d}  more than {SITE_CAP} sites -- already a pin on the FILE "
       f"by r7201's measure, and not half-read here")
 gate(f"Ⓖ⑲ the four limit buckets are EXCLUDED from the verdicts rather than absorbed by them, so "
-     f"every fraction above is of 1140 and not of 1489 ({_limits} limited)",
-     _limits == 349 and _readable == 1140)
+     f"every fraction above is of 1259 and not of 1489 ({_limits} limited)",
+     _limits == 230 and _readable == 1259)
 gate("Ⓖ⑳ UNFLIPPABLE in particular is NOT reported blind -- the instrument that cannot move a "
      f"sentence has not shown that a pin survives anything ({TALLY['UNFLIPPABLE']} of them)",
      TALLY['UNFLIPPABLE'] > 0)
@@ -459,18 +505,18 @@ print(f"\n  {len(CHECKS) - len(_bad)}/{len(CHECKS)} gates pass"
       + ("" if not _bad else "\n  FAILED:\n    " + "\n    ".join(_bad)))
 print("""
   THE QUOTE-PIN BACKLOG IS READ BY REVERSAL, AND ONLY ONE IN FOUR OF THE PAPER-TARGETED PINS WOULD
-  NOTICE.  Of the 1,140 keys this instrument can read, 279 quote the polarity, the quantity or the
-  number and would go red if their clause were turned round; 861 survive at least one reversal and
-  442 survive all four, each of the 442 exhibiting the reversed clause it stays green on rather
-  than being inferred from the literal's shape.  The class is new: 33% of it is multi-site, so it
-  is not r7201's MULTI renamed; none of it carries the OPEN flag, so it is not S3's; 442 against
-  MULTI's 249 makes it the larger blindness, as pre-registered; and it runs across 189 of the 256
+  NOTICE.  Of the 1,259 keys this instrument can read, 324 quote the polarity, the quantity or the
+  number and would go red if their clause were turned round; 935 survive at least one reversal and
+  475 survive all four, each of the 475 exhibiting the reversed clause it stays green on rather
+  than being inferred from the literal's shape.  The class is new: 34% of it is multi-site, so it
+  is not r7201's MULTI renamed; one key of it carries the OPEN flag, so it is not S3's; 475 against
+  MULTI's 249 makes it the larger blindness, as pre-registered; and it runs across 196 of the 256
   receipts holding a paper-targeted key.  AND THE TIER THIS RECEIPT WANTED TO LEAD WITH IS REPORTED
-  AS A LIMIT: 341 keys sit in a clause with exactly one declared auxiliary, and the first draft
+  AS A LIMIT: 362 keys sit in a clause with exactly one declared auxiliary, and the first draft
   called that the clause's only assertion -- but a real clause in BH_causality_v2 carries one
   auxiliary and two finite verbs, so an auxiliary list is not a parser and one auxiliary is not one
-  assertion.  The headline never needed it.  349 keys are excluded and counted -- 218 ABSENT, 60
-  UNFLIPPABLE, 18 quoting a reference key, 53 SATURATED -- because an unmeasured key is not a clean
+  assertion.  The headline never needed it.  230 keys are excluded and counted -- 98 ABSENT, 60
+  UNFLIPPABLE, 18 quoting a reference key, 54 SATURATED -- because an unmeasured key is not a clean
   one.  No verdict is filed on any receipt and nothing outside this file is written: the reversal
   set is a repair list, routed in the channel, and adjudicating it belongs to the baseline's
   owner.""")

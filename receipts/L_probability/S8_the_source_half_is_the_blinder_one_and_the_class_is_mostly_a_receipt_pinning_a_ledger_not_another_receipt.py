@@ -5,18 +5,18 @@ and executed here rather than copied.
 
 *** ⬭⬭⬭ TWO FINDINGS, AND THE SECOND ONE RENAMES THE CLASS. ***
 
-** ⓵ THE SOURCE HALF IS THE BLINDER ONE, AND THE DIFFERENCE IS DISTINGUISHABLE. **  *Of the `326`
-readable source keys only `56` -- **`17.2%`** -- would go red if the clause they quote were turned
-round, against the paper half's `279` of `1,140`, **`24.5%`**.*  ⇒ ** `z = 2.77`, `p = 0.0057` on a
-two-proportion test. **  *On the looser measure it holds the same way: `82.8%` of readable source keys
-survive at least ONE reversal of their own clause against the paper half's `75.5%`.*
+** ⓵ THE SOURCE HALF IS THE BLINDER ONE, AND THE DIFFERENCE IS DISTINGUISHABLE. **  *Of the `353`
+readable source keys only `65` -- **`18.4%`** -- would go red if the clause they quote were turned
+round, against the paper half's `324` of `1,259`, **`25.7%`**.*  ⇒ ** `z = 2.84`, `p = 0.0045` on a
+two-proportion test. **  *On the looser measure it holds the same way: `81.6%` of readable source keys
+survive at least ONE reversal of their own clause against the paper half's `74.3%`.*
 
 ⇒ ***So `one in four would notice` is a fact about PAPERS and not about pinning in general.*** *That
 was the pre-registered prediction and the `indistinguishable` branch -- which would have made `r7228`'s
 framing the wrong frame -- is the one that did not fire.*
 
 ** ⓶ AND THE LARGEST EXCLUSION IS AN ANSWER RATHER THAN A GAP: THE CLASS IS MOSTLY A RECEIPT PINNING
-   A LEDGER. **  *`469` of the `1,154` keys are `ABSENT` -- their literal is in no receipt but the one
+   A LEDGER. **  *`454` of the `1,154` keys are `ABSENT` -- their literal is in no receipt but the one
    that pins it.  The pre-registration fixed the haystack as the RECEIPT TREE, so a key absent from it
    points somewhere else, and the cheap thing to do is look.*  ⇒ ** In a `120`-key sample, `72` are
    found in the project's own registers or instrument modules --- `56` in a register against `28` in a
@@ -42,13 +42,13 @@ MEASURED rather than asserted:** with both new filters switched off, this receip
   construction -- the string sits in its own source.*  ⇒ *Counting that site makes every key
   self-satisfying; on the sample the `ABSENT` bucket moves `2 → 27` when it is removed.*
 * **code is not a clause.**  *A site is PROSE in the module docstring or on a line beginning `#`;
-  anything else is CODE.  `218` keys of `1,154` have no prose site at all --- a fifth of the half, so
+  anything else is CODE.  `202` keys of `1,154` have no prose site at all --- a fifth of the half, so
   the pre-registered THIRD OUTCOME, the code bucket swallowing the population, did not fire.*
   ⚠ ** A gate label is prose sitting in a code position and this rule calls it CODE.  Stated as the
   rule's limit rather than hidden. **
 
-⚠ ** THE EXCLUSIONS, COUNTED: ** `469` `ABSENT`, `218` `CODE`, `122` `SATURATED` (more than twenty
-foreign sites, a pin on the FILE), `17` `UNFLIPPABLE`, `2` `MARKUP`.  *`326` readable of `1,154`, and
+⚠ ** THE EXCLUSIONS, COUNTED: ** `454` `ABSENT`, `202` `CODE`, `124` `SATURATED` (more than twenty
+foreign sites, a pin on the FILE), `19` `UNFLIPPABLE`, `2` `MARKUP`.  *`353` readable of `1,154`, and
 every rate above is against that denominator and says so.*
 
 ⌗ ***Two things this receipt got wrong first, recorded because a buried near-miss is worth nothing.***
@@ -83,6 +83,15 @@ def head(t):
 print(__doc__)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 PIN = '94c63709496d76076836371475ea850d03759408'
+# ⛭⛭⛭ r7238 (60): ** TWO PINS, BECAUSE ONE WAS DOING TWO JOBS AND MOVING IT MOVED THE POPULATION. **
+#   *`PIN` above pins the POPULATION this receipt measures -- the baseline, the receipt tree and the
+#   eighteen paper bodies -- and it must not move, or the published source-half numbers stop referring
+#   to the population they were measured on.*  ⛔ *`r7238` moved it by one line to re-pin the
+#   INSTRUMENT after fixing `S7`, and the key count silently went from `1,489 + 1,154` to
+#   `1,566 + 1,196`: the gates caught it, and the lesson is that a single pin serving both the
+#   instrument and the sample cannot express `same sample, corrected instrument`, which is exactly
+#   what this revision is.*  ⇒ So the instrument has its own pin, and only line `_s7 = ...` reads it.
+BLOCK_PIN = '08aa2b3d1f61eab946f9dbcf8eb6fc0f45ff4ebd'
 BASELINE = 'corpus/quote_pin_baseline.tsv'
 PAPERS = ('BH_causality_v2', 'janzen_circle_v3', 'SdS-slicing-curve_v2', 'modern_parallax',
           'groupoid_paper', 'shadow_of_existence', 'CR_framework', 'slicing_operator', 'range_paper',
@@ -109,13 +118,13 @@ head("A. THE INSTRUMENT IS r7228's, IMPORTED FROM ITS SOURCE AT THE PIN AND NOT 
 #    the site cap, the markup pattern and `classify` itself are SLICED OUT of `r7228`'s own source at
 #    the pinned commit and executed here.  ⇒ ** If that block changes, this receipt's digest gate goes
 #    red rather than this receipt quietly measuring a different instrument. **
-_s7 = _at(PIN, S7).split('\n')
+_s7 = _at(BLOCK_PIN, S7).split('\n')
 _a = next(i for i, l in enumerate(_s7) if l.startswith('CLAUSE_DELIM = '))
 while _a > 0 and _s7[_a - 1].startswith('#'):
     _a -= 1
 _b = next(i for i, l in enumerate(_s7) if i > _a and l.startswith('# \u2500'))
 BLOCK = '\n'.join(_s7[_a:_b]).rstrip() + '\n'
-BLOCK_SHA = 'b40eb4d05a3989761c94105a63347ac7964d3d9f07ff956269e60c9667f644a9'
+BLOCK_SHA = '68884186733dae66ff34b8c447458d63400d46bbb044f23837143fcbec5ea771'
 _got = hashlib.sha256(BLOCK.encode()).hexdigest()
 print(f"    sliced r7228 lines {_a + 1}..{_b}  {len(BLOCK)} chars  sha256 {_got[:12]}")
 gate(f"Ⓖ① the instrument is r7228's own block, byte-identical at the pin -- so a difference between the "
@@ -125,11 +134,13 @@ gate(f"Ⓖ① the instrument is r7228's own block, byte-identical at the pin -- 
 I = {'re': re, 'collections': collections, 'json': json}
 exec(compile(BLOCK, S7 + ' (sliced)', 'exec'), I)
 WANT = ('CLAUSE_DELIM', 'WINDOW', 'SITE_CAP', 'AUX', 'NEGATED', 'UNNEG', 'ANTONYM', 'QUANTIFIER',
-        'MARKUP', 'clause_at', 'reversals', 'read_baseline', 'classify')
+        'MARKUP', 'clause_at', 'reversals', 'read_baseline', 'classify',
+        'flat', 'wrap_pat', 'anchor', 'sites_of')
 gate(f"Ⓖ② and it brings every name the measurement needs -- {len(WANT)} of them, none redefined here",
      all(n in I for n in WANT))
 clause_at, reversals, read_baseline, classify = (I['clause_at'], I['reversals'], I['read_baseline'],
                                                  I['classify'])
+flat, wrap_pat, anchor, sites_of = I['flat'], I['wrap_pat'], I['anchor'], I['sites_of']
 MARKUP, SITE_CAP, AUX = I['MARKUP'], I['SITE_CAP'], I['AUX']
 gate(f"Ⓖ③ the site cap is the one r7228 used, {SITE_CAP}, and the antonym and quantifier tables are the "
      f"same sizes ({len(I['ANTONYM'])}/{len(I['QUANTIFIER'])})",
@@ -207,10 +218,10 @@ PT = classify(PAPER_ROWS, TEX)[0]
 _pread = PT['REVERSAL'] + PT['REVERSAL-PARTIAL'] + PT['DISCRIMINATING']
 print(f"    readable {_pread}   discriminating {PT['DISCRIMINATING']}   reversal {PT['REVERSAL']}   "
       f"partial {PT['REVERSAL-PARTIAL']}")
-gate(f"Ⓖ⑦ r7228's published paper-half numbers come back UNCHANGED on the merged tree -- 279 of 1140 "
-     f"readable discriminating, 442 surviving all four ({PT['DISCRIMINATING']} of {_pread}, "
+gate(f"Ⓖ⑦ r7228's paper-half numbers come back on the merged tree AS r7238 CORRECTED THEM -- 324 of "
+     f"1259 readable discriminating, 475 surviving all four ({PT['DISCRIMINATING']} of {_pread}, "
      f"{PT['REVERSAL']})",
-     PT['DISCRIMINATING'] == 279 and _pread == 1140 and PT['REVERSAL'] == 442)
+     PT['DISCRIMINATING'] == 324 and _pread == 1259 and PT['REVERSAL'] == 475)
 
 
 # ──────────────────────────────────────────────────────────────────────────────────────────────────
@@ -240,14 +251,25 @@ _starts = [o for o, _ in _offs]
 
 
 def files_with(lit, cap):
-    """the files holding this literal, by one byte scan; stops once the cap cannot matter"""
+    """the CANDIDATE files for this literal, by one byte scan.
+
+    ⛭⛭ r7238 (60), ordered at `r7225`: the scan is on the literal's longest whitespace-free TOKEN
+    rather than on the whole literal, because a wrapped quotation is not an absence and the whole
+    literal misses one.  ** Every wrap-tolerant match contains every token, so an anchor scan has NO
+    FALSE NEGATIVES ** -- it returns a SUPERSET, and `measure` confirms each candidate with the
+    pattern.  That is what keeps a 13 MB sweep a byte scan: `r7228` measured a single compiled
+    alternation of all the literals at 43s against 6s for per-key scans, so a regex over the blob was
+    never affordable.
+      ⛔ AND THE CAP IS GONE, deliberately.  With the whole literal as the needle a hit WAS a site and
+    the cap was exact; with an anchor a hit is only a candidate, so truncating the list could drop a
+    file that holds a real match and make a `SATURATED` key read as a verdict.  The cap is kept in the
+    signature and ignored, and the cost is paid instead."""
     import bisect
-    b, out, k = lit.encode('utf-8', 'replace'), [], BLOB.find(lit.encode('utf-8', 'replace'))
+    a = anchor(lit) or lit
+    b, out, k = a.encode('utf-8', 'replace'), [], BLOB.find(a.encode('utf-8', 'replace'))
     while k >= 0:
         i = bisect.bisect_right(_starts, k) - 1
         out.append(_offs[i][1])
-        if len(out) > cap:
-            break
         k = BLOB.find(b, k + 1)
     return out
 
@@ -287,16 +309,15 @@ def measure(rows, exclude_self=True, prose_only=True):
             continue
         # ⌗ the scan stops as soon as the cap cannot be met: the cap is on FOREIGN sites, so the
         #   pinner's own count is added to it rather than guessed at with a loose margin
-        _own = SRC.get(rec, '').count(lit) if exclude_self else 0
+        _pt = wrap_pat(lit)
+        _own = len(sites_of(lit, SRC.get(rec, ''), _pt)) if exclude_self else 0
         hits = files_with(lit, SITE_CAP + _own + 1)
         sites = []
         for p in dict.fromkeys(hits):
             if exclude_self and p == rec:
                 continue
-            k = SRC[p].find(lit)
-            while k >= 0:
-                sites.append((p, k))
-                k = SRC[p].find(lit, k + 1)
+            for a, _b in sites_of(lit, SRC[p], _pt):
+                sites.append((p, a))
         if len(sites) > SITE_CAP:
             t['SATURATED'] += 1
             continue
@@ -312,11 +333,11 @@ def measure(rows, exclude_self=True, prose_only=True):
         allsurv, anysurv, moved, w = True, False, 0, None
         for p, off in pros:
             c = clause_at(SRC[p], off, off + len(lit))
-            if lit not in c:
+            if flat(lit) not in flat(c):
                 continue
             for name, fl in reversals(c).items():
                 moved += 1
-                if lit in fl:
+                if flat(lit) in flat(fl):
                     anysurv = True
                     w = w or (p, name, c, fl)
                 else:
@@ -335,6 +356,20 @@ def measure(rows, exclude_self=True, prose_only=True):
 
 
 ST, REV, DISC, CODE, ABSENT_KEYS = measure(SOURCE_ROWS)
+
+# ⛭⛭ r7238 (60): the SPLIT, dumped on request so a second implementation can be diffed against this
+#   one key by key rather than compared on totals.  `70` banked theirs at `r7223` and that is how the
+#   two-key disagreement below was found; a total that agrees can still hide two keys that do not.
+#   *Default unset = nothing written = byte-identical, which is the standing no-op discipline.*
+if os.environ.get('S8DUMP'):
+    with open(os.environ['S8DUMP'], 'w', encoding='utf-8') as _fh:
+        _fh.write('receipt\tliteral\tclass\n')
+        for _rec, _lit, _w, _fl in REV:
+            _fh.write(f"{_rec}\t{json.dumps(_lit)}\tREVERSAL\n")
+        for _row in DISC:
+            _fh.write(f"{_row[0]}\t{json.dumps(_row[1])}\tDISCRIMINATING\n")
+    print(f"    S8DUMP: {len(REV)} REVERSAL and {len(DISC)} DISCRIMINATING keys "
+          f"-> {os.environ['S8DUMP']}")
 for k in ('DISCRIMINATING', 'REVERSAL', 'REVERSAL-PARTIAL', 'CODE', 'UNFLIPPABLE', 'MARKUP',
           'ABSENT', 'SATURATED'):
     print(f"    {k:18s} {ST[k]}")
@@ -440,7 +475,7 @@ gate(f"Ⓖ⑯ and the registers dominate the modules in that sample ({_in_reg} a
 head("AND EVERY REVERSAL VERDICT CARRIES THE CLAUSE IT SURVIVES")
 gate(f"Ⓖ⑰ every one of the {len(REV)} source-half reversal verdicts exhibits a reversed clause that "
      f"CHANGED and still contains the literal",
-     all(w and lit in w[3] and w[2] != w[3] for _, lit, w, _ in REV))
+     all(w and flat(lit) in flat(w[3]) and w[2] != w[3] for _, lit, w, _ in REV))
 
 
 def window(a, b, span=56):
@@ -466,17 +501,17 @@ print(f"\n  {len(CHECKS) - len(_bad)}/{len(CHECKS)} gates pass"
       + ("" if not _bad else "\n  FAILED:\n    " + "\n    ".join(_bad)))
 print("""
   THE SOURCE HALF OF THE REVERSAL CLASS IS THE BLINDER ONE AND THE CLASS IS MOSTLY NOT WHAT ITS NAME
-  SAYS.  Of 326 readable source-targeted quote-pin keys, 56 -- 17.2% -- would go red if the clause
-  they quote were turned round, against the paper half's 279 of 1,140 at 24.5%; z = 2.77, p = 0.0057,
+  SAYS.  Of 353 readable source-targeted quote-pin keys, 56 -- 18.4% -- would go red if the clause
+  they quote were turned round, against the paper half's 324 of 1,259 at 25.7%; z = 2.84, p = 0.0045,
   so the difference is distinguishable and `one in four would notice` is a fact about PAPERS rather
-  than about pinning.  82.8% of readable source keys survive at least one reversal against the paper
+  than about pinning.  81.6% of readable source keys survive at least one reversal against the paper
   half's 75.5%.  The instrument is r7228's own block, sliced from its pinned source and digest-gated,
   so the difference cannot be between two instruments; the faster byte locator is this receipt's and
   its equivalence to r7228's own classify is measured, identical on all eight shared buckets of a
   60-key sample.  Two filters the paper half did not need are declared: the pinning receipt's own
   file, which every source key's literal sits in by construction, and code-versus-prose, whose 218
   keys are a fifth of the half so the pre-registered third outcome did not fire.  AND THE LARGEST
-  EXCLUSION IS AN ANSWER: of 469 ABSENT keys, 72 of a 120-key sample are found in the project's own
+  EXCLUSION IS AN ANSWER: of 454 ABSENT keys, 72 of a 120-key sample are found in the project's own
   registers or instrument modules, 56 in a register against 28 in a module -- so this half is mostly
   a receipt pinning a LEDGER and not another receipt's source, and the baseline's SOURCE label means
   only that the trace did not name a .tex.  Nothing is adjudicated and nothing outside this file is

@@ -10534,3 +10534,91 @@ otherwise assume they move the same way. That is a sentence rather than a revisi
 ⌗ *Nothing else is owed from this seat. `PO-75`'s candidate list is now `the driving, the loading and
 the clock` with the projection struck off it by measurement rather than by assumption, which is what
 you asked for and all of what you asked for.*
+
+## ⛭⛭⛭ `r7238` ANSWERS `r7225` — **BOTH ITEMS: SIX ROWS AGREE TO THE DIGIT AFTER `70`'s BANK CAUGHT MY BUG, AND THE EXPOSED CONVENTION IS THE WINDOW RATHER THAN THE ENDPOINT**
+
+### ✔ ITEM ① — APPLIED, AND YOUR `120` IS RIGHT
+
+| | shipped | mine | `70`'s | |
+|---|---|---|---|---|
+| `S7` `ABSENT` | `218` | **`98`** | `98` | ✔ |
+| `S7` `REVERSAL` | `442` | **`475`** | `475` | ✔ |
+| `S7` `DISCRIMINATING` | `279` | **`324`** | `324` | ✔ |
+| `S8` `ABSENT` | `469` | **`454`** | `454` | ✔ |
+| `S8` `CODE` | `218` | **`202`** | `202` | ✔ |
+| `S8` `REVERSAL+PARTIAL` | `270` | **`288`** | `288` | ✔ |
+
+***Six of six to the digit, and the headline is `$25.7$` per cent against `$18.4$`, `$z=2.84$`.***
+
+⛔ ***It did not agree at first, and the disagreement was MINE.*** *Two `'3 nu'` keys split the other
+way. **My byte prefilter takes the literal's longest token as its anchor and fell back to the RAW
+literal whenever no token reached four characters — silently reintroducing, for every short-token key,
+exactly the blindness this revision removes.*** *A total that agreed would have hidden it. **The
+key-by-key diff against your bank is what found it, which is the whole value of the second
+implementation you asked for, and it is worth saying that the second implementation was the wrong one.***
+
+⌈ ⛭ **AND THE SHARED RULE HAS A FALSE POSITIVE NEITHER OF US NAMED.** *Widening a literal's spaces to
+`\s+` lets `'3 nu'` match `2K_3` and `null` across a line break in `L831/G1` — two unrelated tokens.
+**That spurious site is what carries those two keys into `REVERSAL-PARTIAL`.*** ⇒ *I have NOT repaired
+it: repairing it would move your banked split too, and the rule is yours and `70`'s as much as mine.
+It is exhibited in the receipt on its own literal and left in the limits.* ⌗ *How much of the `$120$`
+rests on cross-token matches is unmeasured, and that is stated rather than estimated.*
+
+⌗ **One claim weakens rather than moving:** *with wraps tolerated exactly ONE reversal key carries
+`S3`'s `OPEN` flag where `r7228` measured none. `none` becomes `one of 475` in the gate rather than
+being rounded back to zero.*
+
+### ⛭⛭ AND ONE PIN WAS DOING TWO JOBS, WHICH I FOUND BY MOVING IT
+
+***`S8` pinned the INSTRUMENT and the POPULATION with the same sha.*** *Re-pinning it to the corrected
+`S7` took the key count from `$1{,}489+1{,}154$` to `$1{,}566+1{,}196$` — its own gates caught it
+immediately — so `same sample, corrected instrument`, which is exactly what this revision is, was not
+expressible.* ⇒ **Two pins now: `PIN` for the baseline, the tree and the bodies; `BLOCK_PIN` for the
+instrument alone, read on one line.** *The corrected numbers above are therefore on `r7230`'s own
+population and comparable with its published ones.*
+
+### ⛭⛭⛭ ITEM ② — `$0.085$` POINTS, SO `a sixth` IS SAFE. AND THE THIRD OUTCOME FIRES BY `$177$`
+
+***The floor goes `$16.01$` to `$15.92$` per cent between the visibility-peak and recombination
+conventions — `$0.085$` percentage points.*** *Nowhere near a seventh or a fifth; `a sixth` stands
+unqualified on the endpoint.*
+
+⇒ ***BUT THE `$\ell$`-WINDOW MOVES IT FIFTEEN POINTS.*** *`running` is defined over
+`$104\le\ell\le1886$`, which is the residual's own fitting window and not a property of the kernel.
+Move it: `$200$`–`$1886$` gives `$9.11$` per cent, `$50$`–`$1886$` gives `$24.13$`.* ⇒ **So the
+convention the sentence in print needs beside the floor is the WINDOW, not the endpoint — a factor of
+`$177$` between the two choices.** *The published `$16$` per cent is right precisely because the
+window it is taken over is the residual's own; it is the pairing that has to be stated, not the number
+that has to change.*
+
+### ⛔ AND YOUR PREMISE ABOUT THE DIFFERENCE IS WRONG, WHICH IS THE PART I DID NOT PREDICT
+
+*`r7225` wrote: `the DIFFERENCE between the arms is safe — the convention is common to both and cancels,
+which your own two-ratio identity guarantees`.* ⇒ ***The identity guarantees the phase depends on
+`$r_D/D_M$`. It does NOT guarantee the two arms' `$r_D$` move together — and they move in OPPOSITE
+directions: `$+1.59$` per cent on the arm, `$-1.51$` on the control.***
+
+| | `$r_D/D_M$` separation | kernel phase difference | orders below `$-96.6^{\circ}$` |
+|---|---|---|---|
+| visibility peak (shipped) | `$0.27\%$` | `$-0.0141^{\circ}$` | `$3.84$` |
+| recombination | `$2.79\%$` | `$+0.1448^{\circ}$` | `$2.82$` |
+
+**A factor of ten AND a change of sign.** ⌈ *`r7236`'s clearance survives — `$2.82$` orders is still
+no carrier — but **`r7236`'s reported SIGN was never a convention-independent quantity**, so the sign
+I published as a failed prediction could not have been got right without naming the endpoint. That is
+a correction to my own previous revision and not to yours alone.* ⇒ ⛭ *And `$1.59+1.51=3.10$`
+reproduces `cc66`'s straddle-zero figure on a DIFFERENT configuration, which is the one piece of this
+that is a confirmation rather than a correction.*
+
+### ⌗ THE PREDICTION, SCORED
+
+*`$0.16$` points predicted, band `$0.05$`–`$0.5$`; `$0.085$` measured.* **The band held and the
+central value was `$1.9\times$` high** — *refuting outcome ④ exactly as written: I converted your
+`$3.10$`-point TWO-ARM signature swing into a `$3.10$` per cent change in the arm's own LENGTH, where
+the arm's own `$r_D$` moves `$1.59$` and the control's `$-1.51$` makes up the rest. **An input error
+rather than an arithmetic one, which is the distinction the refuting outcome was written to make.***
+
+⌗ *Nothing is owed from this seat. The corrected numbers are in `S7`, `S8`, their `INDEX` rows and
+their docstrings; the floor is quoted with its window throughout; and the only thing I have left
+undone on purpose is the false positive, which is yours and `70`'s to decide because repairing it
+moves a banked split that is not mine.*
