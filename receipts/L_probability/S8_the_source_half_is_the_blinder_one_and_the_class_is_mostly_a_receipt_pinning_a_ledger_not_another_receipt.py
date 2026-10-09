@@ -115,7 +115,7 @@ while _a > 0 and _s7[_a - 1].startswith('#'):
     _a -= 1
 _b = next(i for i, l in enumerate(_s7) if i > _a and l.startswith('# \u2500'))
 BLOCK = '\n'.join(_s7[_a:_b]).rstrip() + '\n'
-BLOCK_SHA = 'b40eb4d05a3989761c94105a63347ac7964d3d9f07ff956269e60c9667f644a9'
+BLOCK_SHA = 'ab295cfd11edc17c49869aa0e99baa32f739e017354f09f39de00e8bd735ef5d'
 _got = hashlib.sha256(BLOCK.encode()).hexdigest()
 print(f"    sliced r7228 lines {_a + 1}..{_b}  {len(BLOCK)} chars  sha256 {_got[:12]}")
 gate(f"Ⓖ① the instrument is r7228's own block, byte-identical at the pin -- so a difference between the "
@@ -125,11 +125,13 @@ gate(f"Ⓖ① the instrument is r7228's own block, byte-identical at the pin -- 
 I = {'re': re, 'collections': collections, 'json': json}
 exec(compile(BLOCK, S7 + ' (sliced)', 'exec'), I)
 WANT = ('CLAUSE_DELIM', 'WINDOW', 'SITE_CAP', 'AUX', 'NEGATED', 'UNNEG', 'ANTONYM', 'QUANTIFIER',
-        'MARKUP', 'clause_at', 'reversals', 'read_baseline', 'classify')
+        'MARKUP', 'clause_at', 'reversals', 'read_baseline', 'classify',
+        'flat', 'wrap_pat', 'anchor', 'sites_of')
 gate(f"Ⓖ② and it brings every name the measurement needs -- {len(WANT)} of them, none redefined here",
      all(n in I for n in WANT))
 clause_at, reversals, read_baseline, classify = (I['clause_at'], I['reversals'], I['read_baseline'],
                                                  I['classify'])
+flat, wrap_pat, anchor, sites_of = I['flat'], I['wrap_pat'], I['anchor'], I['sites_of']
 MARKUP, SITE_CAP, AUX = I['MARKUP'], I['SITE_CAP'], I['AUX']
 gate(f"Ⓖ③ the site cap is the one r7228 used, {SITE_CAP}, and the antonym and quantifier tables are the "
      f"same sizes ({len(I['ANTONYM'])}/{len(I['QUANTIFIER'])})",
@@ -240,14 +242,25 @@ _starts = [o for o, _ in _offs]
 
 
 def files_with(lit, cap):
-    """the files holding this literal, by one byte scan; stops once the cap cannot matter"""
+    """the CANDIDATE files for this literal, by one byte scan.
+
+    ⛭⛭ r7238 (60), ordered at `r7225`: the scan is on the literal's longest whitespace-free TOKEN
+    rather than on the whole literal, because a wrapped quotation is not an absence and the whole
+    literal misses one.  ** Every wrap-tolerant match contains every token, so an anchor scan has NO
+    FALSE NEGATIVES ** -- it returns a SUPERSET, and `measure` confirms each candidate with the
+    pattern.  That is what keeps a 13 MB sweep a byte scan: `r7228` measured a single compiled
+    alternation of all the literals at 43s against 6s for per-key scans, so a regex over the blob was
+    never affordable.
+      ⛔ AND THE CAP IS GONE, deliberately.  With the whole literal as the needle a hit WAS a site and
+    the cap was exact; with an anchor a hit is only a candidate, so truncating the list could drop a
+    file that holds a real match and make a `SATURATED` key read as a verdict.  The cap is kept in the
+    signature and ignored, and the cost is paid instead."""
     import bisect
-    b, out, k = lit.encode('utf-8', 'replace'), [], BLOB.find(lit.encode('utf-8', 'replace'))
+    a = anchor(lit) or lit
+    b, out, k = a.encode('utf-8', 'replace'), [], BLOB.find(a.encode('utf-8', 'replace'))
     while k >= 0:
         i = bisect.bisect_right(_starts, k) - 1
         out.append(_offs[i][1])
-        if len(out) > cap:
-            break
         k = BLOB.find(b, k + 1)
     return out
 
@@ -287,16 +300,15 @@ def measure(rows, exclude_self=True, prose_only=True):
             continue
         # ⌗ the scan stops as soon as the cap cannot be met: the cap is on FOREIGN sites, so the
         #   pinner's own count is added to it rather than guessed at with a loose margin
-        _own = SRC.get(rec, '').count(lit) if exclude_self else 0
+        _pt = wrap_pat(lit)
+        _own = len(sites_of(lit, SRC.get(rec, ''), _pt)) if exclude_self else 0
         hits = files_with(lit, SITE_CAP + _own + 1)
         sites = []
         for p in dict.fromkeys(hits):
             if exclude_self and p == rec:
                 continue
-            k = SRC[p].find(lit)
-            while k >= 0:
-                sites.append((p, k))
-                k = SRC[p].find(lit, k + 1)
+            for a, _b in sites_of(lit, SRC[p], _pt):
+                sites.append((p, a))
         if len(sites) > SITE_CAP:
             t['SATURATED'] += 1
             continue
@@ -312,11 +324,11 @@ def measure(rows, exclude_self=True, prose_only=True):
         allsurv, anysurv, moved, w = True, False, 0, None
         for p, off in pros:
             c = clause_at(SRC[p], off, off + len(lit))
-            if lit not in c:
+            if flat(lit) not in flat(c):
                 continue
             for name, fl in reversals(c).items():
                 moved += 1
-                if lit in fl:
+                if flat(lit) in flat(fl):
                     anysurv = True
                     w = w or (p, name, c, fl)
                 else:
