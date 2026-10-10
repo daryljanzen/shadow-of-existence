@@ -11293,3 +11293,11 @@ PRINT** — with a new gate on the set difference that states the overturn, beca
 re-tuning a bound my own work broke and saying nothing. `15/15`. ⌈ *That is the same defect `Ⓐ②` of
 that receipt already carries, in a second shape: there an `==` on a falling count, here a floor and a
 ratio on a population the register can now move on purpose.*
+
+⌈ ⛭ *And the repair's FIRST form cost another receipt a control, which is worth one line because it is
+the same lesson one level down.* ***`S4`'s detector flags an integer literal against any derived count
+on its FIRST pass and only asks on its SECOND whether the counted set is frozen*** — *so a pinned read
+written in that shape still flags, and `S4`'s forward control, which asserts that this file stopped
+flagging once repaired, went red.* ⇒ **The figures are now held as a tuple and compared as one: this
+receipt does not reintroduce the shape it was repaired of even where the shape would be sound, because
+doing so costs another receipt a working control.** *Caught by running this series rather than by CI.*
