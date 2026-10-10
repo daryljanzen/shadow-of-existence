@@ -1,0 +1,19 @@
+{
+ "keys": 289,
+ "receipts_opened": 60,
+ "verdicts": {
+  "REPAIR-OWED": 171,
+  "DELIBERATE": 84,
+  "ENCODING-OK": 12,
+  "ALT-OK": 17,
+  "NOT-A-PIN": 5
+ },
+ "repair_owed_share": 59.2,
+ "paper_keys": 212,
+ "source_keys": 77,
+ "paper_repair_owed": 171,
+ "source_deliberate": 61,
+ "keys_under_shared_reading": 133,
+ "shared_readings": 63,
+ "keys_read_alone": 151
+}
