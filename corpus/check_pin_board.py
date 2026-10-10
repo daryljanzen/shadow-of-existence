@@ -89,31 +89,39 @@ def read_claims(text):
 
 
 def progress_history(root=ROOT):
-    """[(rev, {prefix: unverdicted})] for every commit touching the baseline, oldest first"""
+    """[(rev, before, after)] for every NON-MERGE commit touching the baseline: the per-prefix unverdicted counts
+    at its parent and at itself.  r7251+70.3: progress was first read by comparing each commit with the PREVIOUS
+    one in `git log` order, which after a merge can belong to ANOTHER branch -- so the same files gave a different
+    board at a different HEAD, and a merge of main made the committed board stale with no input changed.  A
+    commit against its own parent is a property of that commit alone."""
     out = []
-    log = subprocess.run(['git', '-C', root, 'log', '--reverse', '--format=%H%x09%s', '--',
+    log = subprocess.run(['git', '-C', root, 'log', '--no-merges', '--reverse', '--format=%H%x09%P%x09%s', '--',
                           'corpus/quote_pin_baseline.tsv'], capture_output=True, text=True).stdout
+
+    def at(h):
+        return by_prefix(counts(subprocess.run(['git', '-C', root, 'show', f'{h}:corpus/quote_pin_baseline.tsv'],
+                                               capture_output=True, text=True).stdout))
     for ln in log.split('\n'):
-        if '\t' not in ln:
+        if ln.count('\t') < 2:
             continue
-        h, s = ln.split('\t', 1)
+        h, parents, s = ln.split('\t', 2)
         m = re.search(r'r(\d{4})', s)
         if not m:
             continue
-        body = subprocess.run(['git', '-C', root, 'show', f'{h}:corpus/quote_pin_baseline.tsv'],
-                              capture_output=True, text=True).stdout
-        out.append((int(m.group(1)), by_prefix(counts(body))))
+        before = at(parents.split()[0]) if parents.strip() else {}
+        # dated by the TRUNK revision the commit was made on, not the base its subject names: a seat numbers its
+        # commits from the trunk it last read (`r7247+cc66.166`), so its own subject would never advance the window
+        out.append((max(int(m.group(1)), current_revision(root, h)), before, at(h)))
     return out
 
 
 def last_progress(prefix, since, history):
-    """the last revision at or after `since` whose commit LOWERED the prefix's unverdicted count, or `since`"""
-    last, prev = since, None
-    for rev, pc in history:
-        n = pc.get(prefix, 0)
-        if prev is not None and n < prev and rev >= since:
+    """the last revision at or after `since` whose commit LOWERED the prefix's unverdicted count against its OWN
+    parent, or `since`"""
+    last = since
+    for rev, before, after in history:
+        if after.get(prefix, 0) < before.get(prefix, 0) and rev >= since:
             last = max(last, rev)
-        prev = n
     return last
 
 
@@ -150,8 +158,8 @@ def generate(baseline_text, claims_text, history):
     return '\n'.join(lines) + '\n'
 
 
-def current_revision(root=ROOT):
-    s = subprocess.run(['git', '-C', root, 'log', '-300', '--format=%s', 'HEAD'], capture_output=True,
+def current_revision(root=ROOT, ref='HEAD'):
+    s = subprocess.run(['git', '-C', root, 'log', '-300', '--format=%s', ref], capture_output=True,
                        text=True).stdout
     ids = [int(m.group(1)) for m in (re.match(r'\s*r(\d{4})', x) for x in s.split('\n')) if m]
     return max(ids) if ids else 0
@@ -162,8 +170,11 @@ def _seeds():
     bl = ('receipts/A/x.py\tl\tT\tt\tf\tUNADJUDICATED\tw\n'
           'receipts/A/y.py\tl\tT\tt\tf\tDELIBERATE\tw\n'
           'receipts/B/z.py\tl\tT\tt\tf\tUNADJUDICATED-LIST\tw\n')
-    hist_flat = [(7200, {'A': 1, 'B': 1}), (7210, {'A': 1, 'B': 1})]
-    hist_prog = [(7200, {'A': 2, 'B': 1}), (7210, {'A': 1, 'B': 1})]
+    hist_flat = [(7200, {'A': 1, 'B': 1}, {'A': 1, 'B': 1}), (7210, {'A': 1, 'B': 1}, {'A': 1, 'B': 1})]
+    hist_prog = [(7200, {'A': 2, 'B': 1}, {'A': 2, 'B': 1}), (7210, {'A': 2, 'B': 1}, {'A': 1, 'B': 1})]
+    # r7251+70.3: two branches interleaved in log order -- 7212 is lower than 7211's AFTER but not than its OWN
+    # parent, so it is NOT progress on A; the old reading counted it
+    hist_interleaved = [(7200, {'A': 2}, {'A': 2}), (7211, {'A': 2}, {'A': 3}), (7212, {'A': 2}, {'A': 2})]
     bad = []
     _, void = live_claims(read_claims('A\t60\tCLAIM\tr7200\n' + 'A\t70\tCLAIM\tr7202\n'), hist_flat)
     if len(void) != 1:
@@ -177,6 +188,9 @@ def _seeds():
     live, _ = live_claims(read_claims('A\t60\tCLAIM\tr7200\n'), hist_prog)
     if live['A']['expires_after'] != 7210 + RELEASE_AFTER_CYCLES * REVS_PER_CYCLE:
         bad.append('progress must reset the window')
+    live, _ = live_claims(read_claims('A\t60\tCLAIM\tr7200\n'), hist_interleaved)
+    if live['A']['expires_after'] != 7200 + RELEASE_AFTER_CYCLES * REVS_PER_CYCLE:
+        bad.append('a commit lower than another branch\'s commit but not than its own parent is not progress')
     g = generate(bl, 'A\t60\tCLAIM\tr7200\n', hist_flat)
     if sum(int(x.split('\t')[2]) for x in g.split('\n') if x and not x.startswith('#')) != 2:
         bad.append('the board total must equal the unverdicted keys (2 here; DELIBERATE excluded)')
@@ -195,7 +209,7 @@ def main(argv):
         for b in bad:
             print(f'      {b}')
         return 1
-    print('    seeds hold: double claim void, expiry stands, stall expires, progress resets, totals and staleness')
+    print('    seeds hold: double claim void, expiry stands, stall expires, progress resets, interleaving is not progress, totals and staleness')
     baseline = open(BASELINE, encoding='utf-8').read()
     claims_text = open(CLAIMS, encoding='utf-8').read() if os.path.exists(CLAIMS) else ''
     history = progress_history()
