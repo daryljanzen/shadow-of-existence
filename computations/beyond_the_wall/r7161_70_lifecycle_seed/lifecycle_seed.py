@@ -90,8 +90,11 @@ def measure(register, patched=False):
     os.rmdir(wt)
     sh(ROOT, 'git', 'worktree', 'add', '--detach', wt, 'HEAD')
     try:
-        sh(wt, 'git', 'config', 'user.email', 'seed@local')
-        sh(wt, 'git', 'config', 'user.name', 'lifecycle seed')
+        # ⛔ r7247+70.1: these were `git config user.email/user.name` in a linked WORKTREE, which shares the main
+        #   repository's `.git/config` -- so they rewrote the identity of every later commit in the real checkout.
+        #   Passed through the environment instead, which ends with the process.
+        os.environ.update(GIT_AUTHOR_NAME='lifecycle seed', GIT_AUTHOR_EMAIL='seed@local',
+                          GIT_COMMITTER_NAME='lifecycle seed', GIT_COMMITTER_EMAIL='seed@local')
         plant(wt, register)
         if patched:
             tp = os.path.join(wt, 'scripts', '_touched_pin_readers.py')

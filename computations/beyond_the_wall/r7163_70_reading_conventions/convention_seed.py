@@ -94,8 +94,12 @@ def main():
     os.rmdir(wt)
     sh(ROOT, 'git', 'worktree', 'add', '--detach', wt, 'HEAD')
     try:
-        sh(wt, 'git', 'config', 'user.email', 'seed@local')
-        sh(wt, 'git', 'config', 'user.name', 'convention seed')
+        # ⛔ r7247+70.1: these two lines were `git config user.email/user.name` run in the WORKTREE -- and a linked
+        #   worktree SHARES the main repository's `.git/config`, so they rewrote the identity of every later commit
+        #   in the real checkout (this seat's own from r7245+70.0, and plausibly every seat that ran this script).
+        #   The identity is now passed per command through the environment, which cannot outlive the process.
+        os.environ.update(GIT_AUTHOR_NAME='convention seed', GIT_AUTHOR_EMAIL='seed@local',
+                          GIT_COMMITTER_NAME='convention seed', GIT_COMMITTER_EMAIL='seed@local')
         plant(wt)
         # the source-literal audit: which seeds' OWN source names the paper (only the NAME control may)
         own = {n: 'CR_cosmology.tex' in open(os.path.join(wt, DIR, n + '.py')).read() for n in SEEDS}

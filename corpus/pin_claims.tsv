@@ -1,0 +1,5 @@
+# PIN CLAIMS LEDGER -- HAND-KEPT (r7247+70.1).  The board (pin_adjudication_board.tsv) is GENERATED and merges this in.
+# ** To claim: APPEND a row and PUSH it before reading the prefix's receipts.  First push wins: a CLAIM on a prefix
+# ** another seat still holds is VOID (check_pin_board (a)).  To give a prefix up early, append a RELEASE row.
+# A claim with no progress (no commit lowering the prefix's unverdicted count) for 4 order cycles is RELEASED.
+#   prefix (the receipts/<dir> name) <TAB> seat <TAB> CLAIM|RELEASE <TAB> rNNNN (the trunk revision) <TAB> note

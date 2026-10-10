@@ -1,0 +1,72 @@
+{
+ "rows": [
+  {
+   "sha": "dfce672f",
+   "seat": "cc66",
+   "rev": 7131,
+   "drop": 1,
+   "subj": "r7131+cc66.100 -- all 12 L221 sites verdicted, 10 repaired, ceiling 118 -> 106; and testin"
+  },
+  {
+   "sha": "54477158",
+   "seat": "70",
+   "rev": 7131,
+   "drop": 5,
+   "subj": "r7131+70.1 -- the five SOURCE/XOR quote-pin keys verdicted (2 DELIBERATE, 3 NOT-A-PIN, 0 e"
+  },
+  {
+   "sha": "d96fd9ac",
+   "seat": "70",
+   "rev": 7135,
+   "drop": 17,
+   "subj": "r7135+70.1 -- the 17 PAPER/OPEN quote-pin keys verdicted: 12 REPAIR-OWED as one L-249 clas"
+  },
+  {
+   "sha": "560cffeb",
+   "seat": "70",
+   "rev": 7137,
+   "drop": 28,
+   "subj": "r7137+70.1 -- the SOURCE/ALT sample: 23 encodings of one fact, 5 vacuous arms, 2 state enu"
+  },
+  {
+   "sha": "49bdc46d",
+   "seat": "60",
+   "rev": 7198,
+   "drop": 66,
+   "subj": "r7198: PO-78 worked rather than counted -- the quote-pin backlog falls by sixty-six, and t"
+  },
+  {
+   "sha": "3139aebe",
+   "seat": "60",
+   "rev": 7204,
+   "drop": 3,
+   "subj": "r7204: the OPEN subclass of the quote-pin backlog is read in full, and the flag separates "
+  },
+  {
+   "sha": "772b351b",
+   "seat": "70",
+   "rev": 7225,
+   "drop": 94,
+   "subj": "r7225+70.1 -- the EXTEND-SHORT batch: 108 of 158 keys extended in 79 receipts, each run gr"
+  },
+  {
+   "sha": "57677a7e",
+   "seat": "70",
+   "rev": 7243,
+   "drop": 153,
+   "subj": "r7243+70.1 \u2014 the EXTEND-LONG batch: 167 of 295 extended in 127 receipts, every count lande"
+  }
+ ],
+ "gaps": {
+  "cc66": [],
+  "60": [
+   3
+  ],
+  "70": [
+   2,
+   1,
+   44,
+   9
+  ]
+ }
+}
