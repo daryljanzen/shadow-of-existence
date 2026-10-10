@@ -12412,3 +12412,117 @@ pinned literal. If `70` wants one more line in the instrument, that is the line 
 ⌗ *Verified: `C64` `23`/`23`, `C65` `20`/`20`, `check_quote_pins` reports no new key, `check_exact_counts`
 holds at its ceiling, and **the failing check itself reproduced and then passed** — `sweep_runner_reads`
 scoped to the two receipts reads `VERDICT: CLEAN` where it read `NOT A SWEEP OF 1 RECEIPT(S)` before.*
+
+## ⛭⛭ `r7251+cc66` PRE-REGISTRATION — **THE BLIND CROSS-READ, DRAWN AND PINNED BEFORE A SINGLE VERDICT. PREDICTED AGREEMENT WITH `60`: `80` PER CENT, BAND `60`–`95`. ⚠ AND I HAVE TO TELL YOU THE BLIND IS ALREADY PARTLY BROKEN, BY A NUMBER IN YOUR OWN ORDER**
+
+*This section is its own commit and it is ahead of every verdict. The draw below is fixed here so it
+cannot be chosen after the answers are seen, and `r7252_60_L221_the_bridge_adjudicated/READING.tsv` has
+not been opened. The `L221` verdict column of the baseline has not been read: **the keys below come from
+`scripts/mutate_assertions.py --quote`, which enumerates them from the receipts, not from the ledger.***
+
+### ✔ THE SETTLEMENT, AS I UNDERSTAND IT AND WILL APPLY IT
+
+1. ***The counterfactual is applied to the PAPER.*** *Reword the paper so the claim is unchanged; if the
+   gate reds and the finding stands, the pin is `REPAIR-OWED`.*
+2. ***A receipt's DECLARED PURPOSE is not admissible as the ground for `DELIBERATE`*** — *because every
+   receipt that writes a pin thereby declares that purpose, so purpose-as-ground is self-certifying.*
+3. ***`DELIBERATE` survives where the receipt's FINDING is itself about the wording*** — *a
+   citation-fidelity read, an overstatement audit, a quoted definition whose exact words are the object
+   of study, a pre-registration whose immutability is the point.*
+
+⌗ *And I take your `r7169`/`B25` ruling as standing and not revoked by this, because it is not a purpose
+ground: **a pin on a FORMULA cannot fail on a rewording that preserves the claim, because the claim IS
+the symbols.*** *If you meant the settlement to overturn that too, say so and my `③` answer changes a
+great deal — I will flag every row where it is the hinge.*
+
+### ⚠⚠ THE DISCLOSURE I OWE YOU BEFORE ANYTHING ELSE
+
+***Your order states that `60` gave `REPAIR-OWED` to `164` of the `235` `PAPER`/`SENTENCE` keys. I
+split those same `235` by whether the literal carries any math or macro, and the pure-prose class is
+`164`.*** ⇒ ***So the aggregate in your own order is enough to reconstruct `60`'s discriminator, and the
+read is no longer fully blind to me.***
+
+⛔ ***I am not going to use it as my criterion, and the reason is that doing so would void the
+experiment:*** *it would measure whether I can guess `60` rather than whether one stated rule produces
+one answer. **Every verdict I record will come from reading the key under the rule above, and where my
+reading lands on the other side of that split I will say so explicitly rather than quietly conform.***
+⌗ *You should weigh my agreement rate knowing this. If you want the experiment re-run clean, it has to
+be a seat that has not read this order.*
+
+### THE DRAW, STATED AND PINNED
+
+***`40` keys of `receipts/L221_the_bridge`, of which `32` are `PAPER`/`SENTENCE` — above your `30`
+floor, since that is the contested cell.*** *Method: the `361` distinct keys the instrument reports,
+sorted by `(receipt stem, sha1(literal)[:8])`; `random.Random(7251).sample` takes `32` of the `235`
+`PAPER`/`SENTENCE` and `8` of the other `126`. **The seed is the revision id.***
+
+⌗ *Spread: `31` of the prefix's receipts, `19` of the `32` pure prose and `13` carrying math or a macro,
+`8` keys outside the contested cell as a control on the rule's behaviour there.*
+
+| key | cell | receipt |
+|---|---|---|
+| `04a568a2` | `PS` | `B10_po2_resemblance_is_now_a_construction` |
+| `455601d1` | `PS` | `B10_po2_resemblance_is_now_a_construction` |
+| `6eda4c9c` | `PS` | `B10_po2_resemblance_is_now_a_construction` |
+| `6311c0c4` | `PS` | `B12_the_two_triples_are_typed_differently` |
+| `95740dbc` | `PS` | `B14_identical_in_content_is_po2s_reason` |
+| `623b4d47` | `PS` | `B15_po3_both_clauses_answered` |
+| `ecfc8a0d` | `PS` | `B17_the_paper_already_walls_two_routes` |
+| `0246e4c3` | `SS` | `B20_centre_and_weyl_are_opposite_ends` |
+| `185fcc8d` | `ST` | `B21_the_three_levels_audited` |
+| `44a157a8` | `PS` | `B23_the_corpus_crosses_by_rotation` |
+| `e0ba7efd` | `PS` | `B23_the_corpus_crosses_by_rotation` |
+| `f1a9ef2a` | `PS` | `B23_the_corpus_crosses_by_rotation` |
+| `b1bd5897` | `PS` | `B25_the_scattering_object_exists` |
+| `2b6f3cc1` | `ST` | `B31_the_wall_reason_is_too_narrow` |
+| `7f8e651b` | `PS` | `B32_the_two_bounds_compose` |
+| `28c50748` | `PS` | `B34_the_join_crosses_the_inner_horizon` |
+| `d9d71704` | `PS` | `B35_the_continuation_is_cited_wrong` |
+| `fe2405ba` | `PS` | `B37_po4_and_po5_share_a_root` |
+| `dd265b2b` | `PS` | `B38_the_ledger_is_discrete` |
+| `fd7a5cf9` | `PS` | `B40_the_isometry_reaches_colour_not_isospin` |
+| `d3f23420` | `PS` | `B41_the_isospin_structure_is_finite` |
+| `2ab80ca6` | `PS` | `B44_po5s_two_walls_are_one` |
+| `d13e0036` | `PS` | `B44_po5s_two_walls_are_one` |
+| `6d3070f5` | `SS` | `B45_the_object_exists_and_the_action_is_absent` |
+| `540f9bea` | `PS` | `B52_the_missing_f2_is_entailed_by_the_delivery` |
+| `2c78cdd0` | `SS` | `B53_gating_l829_and_l830` |
+| `2f82dafe` | `PS` | `B54_the_retraction_supports_the_verdict` |
+| `646e8ed2` | `PS` | `B55_right_kind_right_place_numerical_declined` |
+| `478cc17d` | `PS` | `B58_p14_already_answers_the_owed_question` |
+| `85decb1c` | `PT` | `B58_p14_already_answers_the_owed_question` |
+| `c6878012` | `PS` | `B5_the_mod_two_index_is_one_and_the_corpus_computed_it` |
+| `b1bdd381` | `ST` | `B60_one_operator_the_fork_does_not_exist` |
+| `2f9e2864` | `PS` | `B61_the_walls_do_not_cover_the_spectral_route` |
+| `16c42118` | `PS` | `B63_the_spectral_route_closes_for_r2806s_reason` |
+| `9ade8c32` | `PS` | `B7_two_unbuilt_sectors_not_one` |
+| `fc61f405` | `PS` | `B7_two_unbuilt_sectors_not_one` |
+| `861ab8ad` | `SS` | `B8_po4_targets_have_opposite_verdicts` |
+| `cccce7c0` | `PS` | `B8_po4_targets_have_opposite_verdicts` |
+| `03482642` | `PS` | `B9_po3_why_is_answered_dimensionally` |
+| `a7c287e1` | `PS` | `B9_po3_why_is_answered_dimensionally` |
+
+### ⚠ Ⓐ THE PREDICTION, PINNED BEFORE THE FIRST READING
+
+***Agreement with `60` on the `40`: `80` per cent. Band `60`–`95`.***
+
+*The reason, and it is a count rather than a feeling: under the settlement both of us now apply the same
+counterfactual direction and the same inadmissibility of purpose, so the only room left to differ is the
+judgement **"is this receipt's FINDING about the wording?"** — which is a real judgement and not a
+lookup. I expect to part from `60` on about one key in five: the citation-fidelity receipts of this
+prefix (`B34`, `B35`, `B54`) and `B25`, where your own `r7169` already ruled the wording IS the content.*
+
+⌗ ***The band's lower edge is `60` on purpose: it admits your reachable negative.*** *If we disagree on
+a third or more under one stated rule, the verdict column is not a measurement, the `1,061` verdicts
+already recorded are a mixture of two instruments, and **the ratchet has to be retired rather than
+carried.** I would rather report that than defend my own `4.4` per cent, and the band says so in advance.*
+
+### ⌗ WHAT ELSE THIS CYCLE OWES, SO THE SCOPE IS ON RECORD
+
+*`②` is this section. `①` is the `40` verdicts, each with its reason, committed and pushed **before**
+`60`'s reading is opened. `③` is the re-statement of my `116` `PAPER`/`SENTENCE` `DELIBERATE` rows
+against the settled rule, reported as a count that moves, with the overlap against my own
+third-column exposure table — my `9` prose rows and my `4` formatting rows — named.*
+
+⛔ *Not in scope and not done: no new `P15` batch this cycle, no corpus edit, and no reading of `60`'s
+answers until `①` is pushed.*
