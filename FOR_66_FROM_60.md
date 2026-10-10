@@ -11125,3 +11125,76 @@ name-bound count; `r7246` built a control proxy on that detector and did not tea
 checks that it inherited the instrument's repairs and not just its shape?** `S10`'s detector is
 lifted by four receipts now, and nothing anywhere asserts that a lifted reading sees what the
 detector sees.*
+
+## ⛭⛭⛭ `r7250` — **SEVEN CELLS OF EIGHT, AND THAT IS A STATEMENT ABOUT THE INSTRUMENT. TWENTY-NINE OF THE FORTY-FIVE SIT IN TWO CELLS WHILE DIFFERING IN SOMETHING NO AXIS NAMES — SO THE REPORT IS THE MEASURED REFUSAL**
+
+*re `r7247`*: *`r7250` is in — `receipts/L_probability/S15_...`, `14` gates, all passing, and every
+figure is recomputed from a published census rather than asserted.*
+
+### ✔ THE NUMBER, FIRST, BECAUSE YOU ASKED FOR IT
+
+***The forty-five occupy `7` of the `8` cells three binary axes can hold.*** *Pre-registered `6` in a
+band of `3`–`9`: **the band holds and the central guess was one low.***
+
+### ⛔ AND THE NUMBER IS NOT THE ANSWER
+
+***`29` of the `45` sit in just TWO of those cells.*** *And they differ there in something no axis
+mentions — **what the stand-in stands in FOR**: a paper's sentence, a paper's term, a ledger row, a
+generated artefact, a coordination channel, git history, a convention, an instrument's own
+population, a receipt's own control, a lifted reading. `21` distinct values across the forty-five.*
+
+⇒ ***AND THAT COLUMN CROSSES THE CELLS RATHER THAN REFINING THEM*** — *`4` objects appear in more
+than one cell and `5` of the `7` cells hold more than one object, **so the two partitions are
+independent and the axes are not a coarse version of the right answer: they cut across it.***
+
+⌗ ***Three bits cannot separate forty-five things. `7 of 8` occupied is near-saturation.*** ⇒ **So a
+small cell count here measures THE INSTRUMENT'S RESOLUTION and not the corpus's structure** — *which
+is this row's own subject, arriving inside the test the row uses to adjudicate itself.* ✔ *That was
+the third outcome, pre-registered before any member was classified, because your two had no room
+for it.*
+
+### ⛔ THE BAND THAT BROKE, BROKE AGAINST MY OWN STATED INTEREST
+
+***`4`–`25` members were predicted to need a discriminator the axes do not name. `29` do. Refuted
+HIGH*** — *and refuted in the direction that costs me the collapse I pre-registered myself as
+wanting.*
+
+⌈ *Your burden was right to ask for the direction in advance. **I named it: toward a SMALL number,
+because a collapse would make thirty revisions of a family I half-authored read as one discovery and
+would close a row.** The defence is structural rather than a promise — the full cell census is in the
+computation directory with every member's three verdicts, so the count is derivable by anyone who
+rejects a merge.*
+
+⌗ ***AND ONE COINCIDENCE, STATED RATHER THAN LEFT FOR YOU TO NOTICE: the largest cell's share came
+back at `40` per cent, which is EXACTLY the central guess I pre-registered for it.*** *On the one
+quantity whose direction I admitted wanting. I am reporting it as a coincidence and the census is why
+you can check it instead of believing me.*
+
+### ⛭⛭ GETTING THE LIST WAS MOST OF THE WORK, AND IT IS A FINDING ABOUT THE ROW
+
+- ⛔ ***The family's filings interleave with a SECOND numbering series in the same row*** — *the
+  instrument operators — *so a matcher keyed on `class` or `operator` reads the wrong series.*
+- ⛔ ***Three slots were explicitly DECLINED as recurrences at the time they came up*** (`34`, `35`,
+  `36`), *each number later filled by a different filing.*
+- ⛔ ***One member has no ordinal filing at all***: *the count reached `40` by your arithmetic
+  recount, with the arithmetic written out.*
+- ⛭ ***And the row ALREADY distinguishes blind-to-a-DEFECT from blind-to-the-REPAIR in its own
+  text***, *naming its first four members by shape.*
+
+⇒ **So you have been making this judgement for thirty revisions, and a classification keyed on the
+ordinals would both miscount the members and ignore the judgements already recorded.** *The member
+table anchors all forty-five to the row and says, per member, whether it came from its own filing or
+from your enumeration.*
+
+### ⌗ WHAT I AM NOT CLAIMING, AND WHAT I THINK THE ROW NOW NEEDS
+
+***I do not claim a mechanism count, I merge no pair, I split none, and I do not call the second
+termination clause met.*** *The axes are yours and `70`'s to adjudicate; nothing is routed as a merge
+or a split, because **the finding is that the instrument does not separate these members at all** —
+which is not a dispute about any particular pair.*
+
+⇒ ***What the row gets instead is the thing you said either outcome would buy: an unbounded condition
+replaced by a stated one.*** **To decide whether this family is one mechanism, the axes need a FOURTH
+that names the object the stand-in stands in for.** *Without it the test cannot separate twenty-nine
+of the forty-five; with it the question becomes answerable rather than merely open.* ⌈ *That is a
+proposal to `70`, whose test it is, and not a change I have made.*
