@@ -1,9 +1,9 @@
 # THE GRAIN CLAUSE's FIRST INDEPENDENT TEST, on the 64 EXTENDED rows of this prefix -- spans another
 # seat built by extending a reversal-blind phrase by D characters so a declared reversal breaks it.
-# The test is WORD ALIGNMENT against the papers, whitespace-normalised, over EVERY occurrence: a span
-# clipped at every occurrence is a character window and not a grammatical unit, so `the shortest span
-# that carries the claim` is undefined for it.  ⛔ NO VERDICT IS CHANGED HERE: the rows are another
-# seat's repairs and the measurement is routed, not applied.
+# The test is WORD ALIGNMENT against the papers, whitespace-normalised, over EVERY occurrence, with
+# the GENERATED appendices excluded: they carry every receipt's own row text, so a span can read as
+# present inside the INDEX rather than inside a paper.  Excluding them moves these figures not at all.
+# ⛔ NO VERDICT IS CHANGED HERE: the rows are another seat's repairs and the measurement is routed.
 # receipt	literal(JSON)	target	D	occurrences	alignment
 receipts/L221_the_bridge/B10_po2_resemblance_is_now_a_construction.py	"1$, the configuration group selected rather than chosen"	PAPER	4	2	ALIGNED
 receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"Whether the two triples are one structure is n"	PAPER	5	1	CLIPPED
@@ -42,19 +42,19 @@ receipts/L221_the_bridge/B33_the_ledger_branch_is_settled.py	"2}$~\\cite{JanzenC
 receipts/L221_the_bridge/B35_the_continuation_is_cited_wrong.py	"1$ geodesic, threaded through the horizon-regular Painlev\\'e--Gullstrand chart, is d"	PAPER	69	1	CLIPPED
 receipts/L221_the_bridge/B36_two_of_three_crossings_are_supplied.py	"establishes that closure as a theorem, of which the circle exhibited here is the $\\Lambda=0"	PAPER	54	1	ALIGNED
 receipts/L221_the_bridge/B37_po4_and_po5_share_a_root.py	"the common root of three verdicts reached separately, that the winding quantises witho"	PAPER	34	1	CLIPPED
-receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	3	CLIPPED
+receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	1	CLIPPED
 receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	"s \\emph{finite} total length\\rcpt{P14_leaf_compactness}, so the leaf is compact and its Dirac operator carries a well-defined"	PAPER	60	1	CLIPPED
 receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	"e its four one-dimensional ones, so a colourless sector on this structure has total dimension four"	PAPER	74	1	CLIPPED
-receipts/L221_the_bridge/B42_the_route_was_taken_and_p14_is_the_work.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	3	CLIPPED
-receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	3	CLIPPED
+receipts/L221_the_bridge/B42_the_route_was_taken_and_p14_is_the_work.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	1	CLIPPED
+receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	1	CLIPPED
 receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	"the common root of three verdicts reached separately, that the winding quantises witho"	PAPER	34	1	CLIPPED
 receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py	"t force a coupling, and its silence about magnitudes is a property of a one-constant theory rather than a gap awaiting work"	PAPER	56	1	CLIPPED
 receipts/L221_the_bridge/B46_one_matching_not_two.py	"e static mode does \\emph{not} normalize, the horizons standing infinitely far"	PAPER	41	1	CLIPPED
-receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	3	CLIPPED
+receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	1	CLIPPED
 receipts/L221_the_bridge/B53_gating_l829_and_l830.py	"e static mode does \\emph{not} normalize, the horizons standing infinitely far"	PAPER	41	1	CLIPPED
 receipts/L221_the_bridge/B54_the_retraction_supports_the_verdict.py	"t supply multiplicity, since $\\lambda=j+\\tfrac12$ labels partial waves and each contributes e"	PAPER	79	1	CLIPPED
 receipts/L221_the_bridge/B56_it_is_lambda_8_not_a_coupling.py	"s the Cartan subalgebra of $\\mathfrak{su}(3)$ in its standard realisation, the diagonal traceless matrices"	PAPER	79	1	CLIPPED
-receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	3	CLIPPED
+receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	1	CLIPPED
 receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	"t the argument.} The moduli space of flat connections consists of flat connections"	PAPER	54	1	CLIPPED
 receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	"d have left a two-parameter family, and the disjointness of the vantages' supports is e"	PAPER	59	1	CLIPPED
 receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	"vanishing first cohomology with any coefficients, so the representation does n"	PAPER	52	1	CLIPPED

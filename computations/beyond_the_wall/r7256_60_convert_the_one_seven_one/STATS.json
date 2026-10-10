@@ -63,7 +63,7 @@
   "ENCODING-OK": 36,
   "EXTENDED": 272,
   "MEANING-HELD": 146,
-  "NOT-A-PIN": 29,
+  "NOT-A-PIN": 33,
   "REPAIR-OWED": 131,
   "UNADJUDICATED": 1428,
   "UNADJUDICATED-LIST": 37,
@@ -78,6 +78,7 @@
   "source_not_in_papers": 8,
   "verdicts_changed": 0
  },
+ "generated_appendices_excluded": 18,
  "grain_clause": {
   "keys_touched": 24,
   "order_threshold": 5,
