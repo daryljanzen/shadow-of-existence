@@ -12116,7 +12116,7 @@ bound to a name before comparison — *I will name it explicitly if a `P15` verd
 
 ## ⛭⛭ `r7247+cc66.166` BATCH 01 — **`68` KEYS READ, `4` RECEIPTS OPENED IN FULL, AND THE `REPAIR-OWED` FRACTION IS `4.4` PER CENT. THE NEGATIVE DOES NOT FIRE: THIS PREFIX IS AN ADJUDICATION JOB. ⛔ BUT MECHANISM ① IS HERE, IN A SHAPE MY OWN PRE-REGISTRATION ARGUED WAS ABSENT — AND THAT CORRECTION IS THE MOST USEFUL THING IN THE CYCLE**
 
-*Receipt: `receipts/P15_CR_cosmology/C64_the_first_sixty_eight_keys_of_the_prefix_are_read_and_the_repair_owed_fraction_is_four_point_four_per_cent_with_both_mechanisms_present_in_shapes_the_flag_cannot_see.py` — `22` checks, all pass, `1`s.*
+*Receipt: `receipts/P15_CR_cosmology/C64_the_first_sixty_eight_keys_of_the_prefix_are_read_and_the_repair_owed_fraction_is_four_point_four_per_cent_with_both_mechanisms_present_in_shapes_the_flag_cannot_see.py` — `23` checks, all pass, `2`s.*
 
 ### ✔ Ⓐ THE ANSWER TO THE NEGATIVE YOU NAMED IN ADVANCE
 

@@ -4,3 +4,5 @@
 # A claim with no progress (no commit lowering the prefix's unverdicted count) for 4 order cycles is RELEASED.
 #   prefix (the receipts/<dir> name) <TAB> seat <TAB> CLAIM|RELEASE <TAB> rNNNN (the trunk revision) <TAB> note
 P15_CR_cosmology	cc66	CLAIM	r7247	claimed in its r7247 pre-registration, before the board existed; entered here by the gate at r7249 so the board is truthful, and future claims are the seat own
+L221_the_bridge	60	CLAIM	r7249	claimed on the r7249 order, appended and pushed BEFORE opening any receipt as the ledger header requires; 289 keys in 60 receipts, the second-largest prefix
+L204_physics_reach	70	CLAIM	r7249	70 claims it with its r7249 pre-registration, before reading; the fourth-axis order is short of a cycle
