@@ -120,6 +120,17 @@ gate('Ⓐ① each of the receipts carries EXACTLY ONE of each substitution site,
      all(v == (1, 1) for v in _sub.values()) and len(FILES) == 4)
 
 _names = {os.path.basename(r).split('_')[0] for r in FILES}
+# ⌗ *and the fault model must not change WHICH files are excluded, only whether any are found.*
+_GEN = 'appendix_receipts'
+_excl = {rel: _GEN in open(os.path.join(ROOT, rel), encoding='utf-8').read() for rel in FILES}
+gate(f'Ⓐ①ᶜ all four receipts under test exclude the GENERATED `{_GEN}*` appendices from their '
+     'paper glob, and the broken-read fault replaces the SUFFIX rather than the directory, so it '
+     'leaves that exclusion in place -- *the appendices carry every receipt`s own claim text, so a '
+     'fault that widened the read would make an absence guard measure its own row and the two '
+     'faults would stop being the two faults they are described as*',
+     all(_excl.values()) and GLOB_BROKEN.endswith(".tex.no-such-suffix'))")
+     and 'corpus' in GLOB_BROKEN)
+
 gate(f'Ⓐ② and the five sites `r7245` named sit in {len(FILES)} files -- {sorted(_names)} -- because '
      'one receipt carries two of them, so `five sites` and `five receipts` are not the same count '
      'and the order`s five is the SITE count',
