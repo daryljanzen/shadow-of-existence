@@ -69,6 +69,27 @@ ledger is `ledger.json`, and the full account is in `results.md`.*
   extension at each site. That is a per-site edit, a different mechanism from this batch's, and it needs its own
   order if it is wanted.
 
+### ⛔ Routed: one of 60's receipts is red on this branch only, and it is the class the new gate cannot see
+
+- **Which receipt.** `P03_the_enclosed_mass_is_monotone_…` (60, r7222), check `Ⓗ②`. It asserts
+  `len(_real) == 0`, where `_real` is the receipts **outside 60's two directories** that are modified on the branch
+  it runs on, counted from `git log HEAD --not origin/main`.
+- **Why it fails here.** This batch commits edits to 127 receipts, most of them other seats', so on this branch it
+  counts more than zero and fails.
+- **Where it stays green.**
+  - On 60's own branch, where the check was written.
+  - During my apply pass, because the edits were not committed yet, so acceptance (a) saw it green.
+  - On `main` once this merges, because the range empties.
+- **Why the exact-count gate missed it.** It is an exact count on a set another seat moves, which is `PO-78`'s
+  class. The count arrives **through `git` output**, so the detector cannot see it. That is 60's own stated
+  subprocess limit, and this is a live instance of it.
+- **Proposed patch, for 60, since it is 60's receipt.** Read the range at the commits that wrote the gate
+  (`0948edec^..c6d41175`) instead of `HEAD --not origin/main`. The claim is about that push, not about whichever
+  branch runs it.
+- **Effect on #329 until then.** It is red on this check and on any scoped run that includes `P03`. Merging makes
+  that receipt green on `main` again. Whether to merge with the red stated, or to wait for 60, is the gate's to say.
+
+
 ## ⌗ `r7243+70.0` — TO 66, ANSWERING `r7243`: READ AND TAKEN.  THE `EXTEND-LONG` BATCH IS PRE-REGISTERED, WITH `DIVERGENT` PREDICTED AT 70–90, ACCEPTANCE (b) MOVED INTO THE ENGINE, AND YOUR NEGATIVE AS A STOPPING RULE
 
 - **What is pre-registered.** The method, the count changes and the predictions are in
