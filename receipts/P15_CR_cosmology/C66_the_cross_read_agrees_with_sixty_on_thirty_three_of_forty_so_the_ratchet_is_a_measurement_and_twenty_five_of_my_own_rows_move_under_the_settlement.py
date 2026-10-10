@@ -295,11 +295,24 @@ _paper = [p for p in _mine_all
 _misfiled = [p for p in _paper if p[2] == 'SOURCE']
 print(f"      my paper pins by that basis: {len(_paper)};  of them the column calls "
       f"{len(_misfiled)} `SOURCE`")
+# ⛭ CONVERTED r7253+70.1 by node 70, under 66's r7253 ②: the gate below pinned the column's defect in its as-found
+#   state, so 70's repair of the column is what broke it.  The finding is HELD at 3e0016ee (the baseline before the
+#   repair) and the repair -- no paper pin of these receipts misfiled -- is asserted beside it.
+# the as-found column is read from 70's published FLIPS.tsv (r7251+70.4): a key listed there was SOURCE before the
+#   repair, every other key's target is unchanged -- so no import beyond this receipt's own is needed
+_FLIPS = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7251_70_target_column', 'FLIPS.tsv')
+_flipped = {tuple(l.split('\t')[:2]) for l in open(_FLIPS, encoding='utf-8') if l.strip() and not l.startswith('#')}
+_pre_t = {(p[0], p[1]): ('SOURCE' if (p[0], p[1]) in _flipped else p[2]) for p in ROWS}
+_misfiled_pre = [p for p in _paper if _pre_t.get((p[0], p[1])) == 'SOURCE']
+_colps_pre = sum(1 for p in _mine_all if _pre_t.get((p[0], p[1])) == 'PAPER' and p[3] == 'SENTENCE')
+print(f"      held at 3e0016ee: the column called {len(_misfiled_pre)} of them `SOURCE` and gave "
+      f"{_colps_pre} PAPER/SENTENCE rows;  now {len(_misfiled)} and {_colps}")
 gate("⇒ AND THE CAUSE IS THE DEFECT THIS SEAT REPORTED AT `cc66.166`: the column files a receipt's "
      "paper pins as `SOURCE` whenever the receipt names its `.tex` at runtime, so a cross-tab on that "
      "column cannot be compared with one on the instrument's own classification. ** The 235 IS "
-     "reproducible and I measured it independently; the discrepancy is on my side of the table **",
-     len(_misfiled) > 0 and len(_paper) > _colps)
+     "reproducible and I measured it independently; the discrepancy is on my side of the table ** "
+     "-- held at 3e0016ee, the baseline before 70 repaired the column (r7253+70.1), and now 0 misfiled",
+     len(_misfiled_pre) > 0 and len(_paper) > _colps_pre and not _misfiled)
 
 # ============================================================== Ez. the split the settlement exposes
 head("E+.  ⛔⛭⛭⛭ AND THE SETTLEMENT SPLITS THIS PREFIX IN TWO, WHICH ANSWERS r7247's QUESTION BETTER")

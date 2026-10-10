@@ -76,6 +76,105 @@ KNOWN_DUPLICATE_KEYS = {}
 DUPLICATE_KEYS = {}
 
 
+# ⛭⛭⛭ r7253+70.1 (66's r7253 ①): THE VERDICT VOCABULARY IS CLOSED, AND `MEANING-HELD` IS GATED.
+#   *Until this revision the verdict column was never checked: ANY string counted as adjudicated, so a new verdict --
+#   or a typo -- was already an exemption.*  `MEANING-HELD` (r7251+70.2, adopted r7253): a pin on what a paper MEANS,
+#   which no string form can repair; the finding is HELD at a commit (L-249's historical half) and the live assertion
+#   is a READ TRIGGER, not a guard.  Counted, not owed -- and never a discharge of UNADJUDICATED by another route,
+#   because a held row must prove it was READ: it names the commit its finding is held at, and that commit must
+#   (H1) resolve, (H2) be an ancestor of HEAD, (H3) carry the literal in what the key reads, (H4) be a SENTENCE, and
+#   (H5) be a commit that CHANGED the receipt.  ⇒ ** H5 is what separates held from unread: measured at r7253+70.1,
+#   H1-H4 alone pass a key stamped with HEAD that nobody read, because a green receipt's sentence is present at
+#   HEAD by construction. **  See computations/beyond_the_wall/r7253_70_meaning_held/.
+MEANING_HELD = 'MEANING-HELD'
+VOCABULARY = {UNREAD, UNREAD_LIST, UNREAD_PINNED, 'DELIBERATE', 'ALT-OK', 'REPAIR-OWED', 'NOT-A-PIN', 'ENCODING-OK',
+              'EXTENDED', MEANING_HELD}
+_HELD_AT = re.compile(r'held at ([0-9a-f]{8,40})\b')
+_SHOW_CACHE = {}
+
+
+def _git(*a):
+    return subprocess.run(['git', '-C', ROOT, *a], capture_output=True, text=True, errors='replace')
+
+
+def _flat(t):
+    return re.sub(r'\s+', ' ', t)
+
+
+def _present_at(sha, lit, target, receipt):
+    """H3: is the literal in what the key reads, at `sha`?  Whitespace-normalised, because a paper sentence wraps
+    across lines and a line-based grep would miss it; a literal that is a regex is matched as one."""
+    def hit(text):
+        if lit in text:
+            return True
+        if '\\' in lit:
+            try:
+                return re.search(lit, text) is not None
+            except re.error:
+                return False
+        return False
+    if target == 'PAPER':
+        names = [n for n in _git('ls-tree', '--name-only', sha, 'corpus/').stdout.split()
+                 if n.endswith('.tex') and not os.path.basename(n).startswith('appendix_receipts')]
+    else:
+        words = ' '.join(lit.split()[:3]).replace('\\', '')
+        names = [n.split(':', 1)[1] for n in _git('grep', '-l', '-F', '-e', words.split()[0] if words else lit, sha,
+                                                  '--').stdout.split('\n') if ':' in n]
+        names = [n for n in names if n != receipt]
+    for n in names:
+        key = (sha, n)
+        if key not in _SHOW_CACHE:
+            _SHOW_CACHE[key] = _flat(_git('show', f'{sha}:{n}').stdout)
+        if hit(_SHOW_CACHE[key]):
+            return True
+    return False
+
+
+def held_check(receipt, lit, target, tier, why, provenance=True):
+    """'' if the MEANING-HELD row is held, else the first condition it fails"""
+    m = _HELD_AT.search(why or '')
+    if not m:
+        return 'H1 names no `held at <sha>`'
+    sha = m.group(1)
+    r = _git('rev-parse', '--verify', '--quiet', f'{sha}^{{commit}}')
+    if r.returncode != 0:
+        return f'H1 {sha} does not resolve to a commit'
+    full = r.stdout.strip()
+    if _git('merge-base', '--is-ancestor', full, 'HEAD').returncode != 0:
+        return f'H2 {sha} is not an ancestor of HEAD'
+    if tier != 'SENTENCE':
+        return 'H4 a TOKEN is not a meaning pin'
+    if provenance and full not in set(_git('log', '--format=%H', '--', receipt).stdout.split()):
+        return f'H5 {sha} never changed {os.path.basename(receipt)}'
+    if not _present_at(full, lit, target, receipt):
+        return f'H3 the literal is not in what the key reads at {sha}'
+    return ''
+
+
+def _held_seeds():
+    """each seeded row must come out as stated, or the gate has lost a direction"""
+    rc = 'receipts/L204_physics_reach/P13_the_entropy_is_the_corpuss_own_number.py'
+    lit = 'The one physical length is $\\alpha$, not $\\ell_P$'
+    sha = _git('log', '-1', '--format=%H', '--', rc).stdout.strip()
+    head = _git('rev-parse', 'HEAD').stdout.strip()
+    bad = []
+    for why, l, tier, want in [
+            (f'held at {sha[:12]}', lit, 'SENTENCE', ''),
+            ('read and held', lit, 'SENTENCE', 'H1'),
+            ('held at deadbeefdeadbeef', lit, 'SENTENCE', 'H1'),
+            (f'held at {sha[:12]}', 'a horizon that is a perfectly ordinary Tuesday', 'SENTENCE', 'H3'),
+            (f'held at {sha[:12]}', lit, 'TOKEN', 'H4')]:
+        got = held_check(rc, l, 'PAPER', tier, why)
+        if (got[:2] if got else '') != want:
+            bad.append(f'{why!r} / {l[:30]!r} / {tier}: expected {want or "held"}, got {got or "held"}')
+    if head not in set(_git('log', '--format=%H', '--', rc).stdout.split()):
+        if not held_check(rc, lit, 'PAPER', 'SENTENCE', f'held at {head[:12]}').startswith('H5'):
+            bad.append('a row stamped with HEAD, a commit that never changed its receipt, must fail H5')
+    if 'TYPO-OK' in VOCABULARY:
+        bad.append('the vocabulary must not admit an unknown verdict')
+    return bad
+
+
 def read_baseline():
     rows = {}
     if not os.path.exists(BASELINE):
@@ -141,6 +240,28 @@ def main():
     for _t, _ti, _f, v, _w in base.values():
         verdicts[v] = verdicts.get(v, 0) + 1
     print(f'    by verdict: {verdicts}')
+    _seed_bad = _held_seeds()
+    if _seed_bad:
+        print('  ⛔ a MEANING-HELD seed lost its direction:')
+        for b in _seed_bad:
+            print(f'      {b}')
+        return 1
+    print('    MEANING-HELD seeds hold: a valid row is held; no sha, a bad sha, an absent literal, a TOKEN, and a '
+          'HEAD stamp each fail')
+    _unknown = sorted({v for *_x, v, _w in base.values()} - VOCABULARY)
+    if _unknown:
+        print(f'  ⛔ VERDICT(S) OUTSIDE THE VOCABULARY: {_unknown} -- an unknown verdict counts as adjudicated and is an '
+              f'exemption by typo.  Use one of {sorted(VOCABULARY)}.')
+        return 1
+    _held = [(k, v) for k, v in base.items() if v[3] == MEANING_HELD]
+    _held_bad = [(k, r) for k, v in _held for r in [held_check(k[0], k[1], v[0], v[1], v[4])] if r]
+    print(f'    {MEANING_HELD}: {len(_held)} key(s) HELD, not owed -- each at a commit that changed its receipt and '
+          f'carries its literal; {len(_held_bad)} fail')
+    if _held_bad:
+        for (p, lit), r in _held_bad[:20]:
+            print(f'      [NOT HELD] {p}  {json.dumps(lit, ensure_ascii=False)[:60]}  -- {r}')
+        print('  ⛔ A MEANING-HELD ROW THAT CANNOT SHOW IT WAS READ IS AN EXEMPTION WITH A NICER NAME.')
+        return 1
     unread = verdicts.get(UNREAD, 0)
     print(f'    {UNREAD}: {unread}   ** the only bucket that means work, and it may only fall **')
 

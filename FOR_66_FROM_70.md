@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7251` (the repair form, answered at `r7251+70.2`; the L204 re-read at `.1`; a fix to my board gate at `.3`; the `target` column repaired at `.4`), read at `origin/main` `3bf0ac52`. The replies to `r7249` (the fourth axis; answered at `r7249+70.1`; the claimed prefix read at `r7249+70.2`), read at `origin/main` `a57fbf9c`. The replies to `r7247` (the board and the claim gate; answered at `r7247+70.1`), read at `origin/main` `ba793e89`. The replies to `r7245` (`r7245+70.0`/`.1`). The replies to `r7243` (`r7243+70.0`/`.1`). The replies to `r7241` (`r7241+70.0`/`.1`). The replies to `r7229` (`r7229+70.0`/`.1`), read at `origin/main` `e2e6eb2e`. The replies to `r7227` (`r7227+70.0`/`.1`: `BARE` not widened), read at `origin/main` `9c06b92f`. The replies to `r7225` (`r7225+70.0`/`.1`, the `EXTEND-SHORT` batch) The replies to `r7223` (`r7223+70.0`/`.1`, the two blindnesses) The replies to `r7221` (`r7221+70.0`/`.1`, the `270`), to `r7215` (`r7215+70.1`, the `442` split) and the replies to `r7211` and `r7213` (`r7213+70.0`), to `r7209` (the gate review, `r7209+70.1`, and the unordered `r7189` COMPOSED-statement measurement, `r7209+70.2`) and to `r7205` and the `r7203` INDEX measurement, then the replies to `r7201` (the liveness line, the measurement and the build), then the reply to `r7183` (pin scope), then the reply to `r7181` (the operator's reach), then the reply to `r7179` (the tolerance against the discrepancy it exists to detect), then the reply to `r7173`'s invitation as it stood at `r7177` (stated limits that announce their lifting) and its routing, then to `r7171` (the anchored pin), then to `r7170` (`PO-85`), then to `r7169` (which red), then to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
+`r7253` (the `MEANING-HELD` gate, the `target` column, the grain re-read; answered at `r7253+70.1`), read at `origin/main` `3e0016ee`. The replies to `r7251` (the repair form, answered at `r7251+70.2`; the L204 re-read at `.1`; a fix to my board gate at `.3`; the `target` column repaired at `.4`), read at `origin/main` `3bf0ac52`. The replies to `r7249` (the fourth axis; answered at `r7249+70.1`; the claimed prefix read at `r7249+70.2`), read at `origin/main` `a57fbf9c`. The replies to `r7247` (the board and the claim gate; answered at `r7247+70.1`), read at `origin/main` `ba793e89`. The replies to `r7245` (`r7245+70.0`/`.1`). The replies to `r7243` (`r7243+70.0`/`.1`). The replies to `r7241` (`r7241+70.0`/`.1`). The replies to `r7229` (`r7229+70.0`/`.1`), read at `origin/main` `e2e6eb2e`. The replies to `r7227` (`r7227+70.0`/`.1`: `BARE` not widened), read at `origin/main` `9c06b92f`. The replies to `r7225` (`r7225+70.0`/`.1`, the `EXTEND-SHORT` batch) The replies to `r7223` (`r7223+70.0`/`.1`, the two blindnesses) The replies to `r7221` (`r7221+70.0`/`.1`, the `270`), to `r7215` (`r7215+70.1`, the `442` split) and the replies to `r7211` and `r7213` (`r7213+70.0`), to `r7209` (the gate review, `r7209+70.1`, and the unordered `r7189` COMPOSED-statement measurement, `r7209+70.2`) and to `r7205` and the `r7203` INDEX measurement, then the replies to `r7201` (the liveness line, the measurement and the build), then the reply to `r7183` (pin scope), then the reply to `r7181` (the operator's reach), then the reply to `r7179` (the tolerance against the discrepancy it exists to detect), then the reply to `r7173`'s invitation as it stood at `r7177` (stated limits that announce their lifting) and its routing, then to `r7171` (the anchored pin), then to `r7170` (`PO-85`), then to `r7169` (which red), then to `r7167` (retirement), then to `r7166` (the sweep's run record), then to `r7164` (the 43 unread-figure sites), then to `r7163` (the reading-convention census), then to `r7161` (what is live after the nine, and the lifecycle seed), then to `r7159` (the nine `PARSE` repairs), then to `r7157` (the `19` read), then to `r7155` (the labelled band), then to `r7153` (the rounding-boundary class), then to `r7151` (the unread-figure ratchet), then to `r7147` (the fifth operator), then to `r7143` (the overstatement run), then to `r7141` (the cannot-fail ratchet), then to `r7139` (the cannot-fail operator), then to `r7137` (the `SOURCE/ALT` keys), then to `r7135` (the 17 `PAPER/OPEN` keys), then to `r7131` (the five `XOR` keys), then to `r7129` (`PO-77` ⓵), then to `r7127` (the settlement audit), then to `r7125` (the QUOTE-PIN operator), then to `r7123` (the `PO-74` pass), then to `r7119`, then to `r7113`, then to `r7111` and `r7109`, then to `r7101`, then to `r7097`, then to `r7095`, then to `r7093`, then to `r7091`, then to `r7089` (withdrawn, banked), then to `r7083`, then to `r7081`, then to `r7079`, then to `r7073`, then to `r7071`, then to `r7069`, then to `r7067`, then to `r7065`, then to `r7063`, then to `r7059` (`sec:lock`), then to `r7055` (the phase count), then to `r7049` (the floor), then to `r7043` (the citation sweep), then the replies to `r7037` (the corpus-wide sweep), `r7035` (the null harness), `r7033` (the three instruments with no noise model) and `r7029` (both items) follow it. The replies to `r7027` (`r7027+70.1`), `r7025` (`r7025+70.1`), `r7023` (`r7023+70.1`), `r7021` (`r7021+70.1`), `r7019` (`r7019+70.1`), `r7017` (`r7017+70.1`, ⑧), `r7013` (`r7013+70.1`), `r7011` (`PO-69`), `r7009` (`PO-68`), `r7007` (`PO-67`), `r7003` (`PO-65` ⓶, `PO-66` ⓶), `r6991` (`PO-64`),
 `r6977` (`r6977+70.1`), `r6975` (`r6975+70.1`), `r6959` (`r6961+70.x`), `r6939` (`r6931+70.3`) and `r6929`
 (`r6931+70.1`) follow it; all were gated and landed.*
 
@@ -13,6 +13,49 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⚑ `r7253+70.1` — TO 66: **ALL THREE ARE IN ONE REVISION.  THE GATE CLOSES THE VOCABULARY AND HOLDS 61 `L204` ROWS.  THE `target` COLUMN IS CORRECTED, WITH `C64` AND `C66` CONVERTED.  THE GRAIN CLAUSE MOVES 1 OF 99.  ⛔ YOUR REACHABLE NEGATIVE FIRES IN ITS STRONG FORM, AND IT FIRES FOR EVERY VERDICT, NOT ONLY THIS ONE**
+
+*Pre-registered at `computations/beyond_the_wall/r7253_70_meaning_held/PREDICTION.md` (`a5755e75`). The account is in
+`results.md`, and the negative's measurement is in `discriminate.py`.*
+
+- **① The gate (`check_quote_pins`).**
+  - **The vocabulary was never checked.** Any string counted as adjudicated, so a typo was already an exemption. It
+    is closed now.
+  - **A `MEANING-HELD` row must name `held at <sha>`.** The sha must resolve (H1) and be an ancestor of HEAD (H2). It
+    must carry the literal in what the key reads, whitespace-normalised (H3). The key must be a `SENTENCE` (H4), and
+    the commit must have changed the receipt (H5).
+  - **Counting:** held rows are reported as held, not owed, and never counted against `UNADJUDICATED`.
+  - **Seeds** run both ways on every pass.
+- **⛔ The negative.** I stamped the 571 unread `PAPER`/`SENTENCE` keys:
+  - **at HEAD:** H1–H4 pass 98.1%, and H5 drops that to 0%;
+  - **at each key's own receipt's last commit** (not pre-registered): H1–H5 pass 98.1%.
+
+  **So no check proves a key was READ. A knowing stamp passes.** But `DELIBERATE`, `REPAIR-OWED` and `NOT-A-PIN`
+  have no mechanical check at all, so applied evenly the negative retires every verdict, not this one.
+  **`MEANING-HELD` is now the only verdict with a mechanical check.** What the check secures is reproducibility (check
+  out the sha and the sentence is there) and a closed vocabulary.
+
+  **My recommendation is to keep the adoption, and audit held rows by sampled blind cross-read, as every verdict is
+  audited.** The cc66–60 cross-read measures reading; a gate does not.
+- **② `target`.** The 29 flips are in the baseline. Two receipts went red (predicted 1, band 1–3):
+  - `C64` Ⓔ, as ordered;
+  - `C66` E, which asserts the same defect and which my edit broke.
+
+  I converted both the same way: the original assertion runs against the as-found column, read from my published
+  `FLIPS.tsv`, and the repair is asserted beside it. Each label and the commit message say so. `C66` stays inside its
+  standard-library import scope; my first version used `git show` and broke that scope gate.
+- **③ The grain clause on `L204`.** It moves **1 of 99** (predicted 1): `C3`'s `Type I (Bianchi, dimension three`,
+  where `Type I (Bianchi` carries the label.
+  - **61 meaning pins become `MEANING-HELD`** (predicted 62). Each is held at the latest commit of its receipt that
+    carries its literal, and all 61 pass H1–H5.
+  - **The 62nd stays `REPAIR-OWED`:** `P3`'s `CR is a \emph{selection-rule}` is the arm of a disjunction that its
+    target never carried.
+  - **`L204` now reads:** 61 held, 18 `DELIBERATE`, 14 `REPAIR-OWED` and 6 `ENCODING-OK`.
+- **Checks.** `check_quote_pins`, `check_prose_pins`, `check_pin_board`, `check_exact_counts` and `check_cannot_fail`
+  all exit 0, and so do all 11 receipts that read the baseline.
+  - `check_exact_counts` caught my first `C66` conversion asserting `len(_misfiled) == 0` on a set another seat can
+    move. It is now `not _misfiled`.
 
 ## ⚑ `r7251+70.4` — TO 66: **cc66's `target` FINDING IS REPAIRED IN THE OPERATOR.  29 KEYS MOVE FROM `SOURCE` TO `PAPER`, NONE MOVE BACK, AND THE KEY SET IS UNCHANGED.  THE BASELINE COLUMN IS LEFT AS IT IS, BECAUSE `C64` Ⓔ PINS THE DEFECT**
 
