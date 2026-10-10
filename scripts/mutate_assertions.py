@@ -622,7 +622,16 @@ def _strlit(n, asg, depth=2):
 def _reads(expr, asg, fns, src, depth=3, seen=None):
     """the text of every expression the container's trace visits, if the trace reaches a FILE READ -- else None.
     Follows names -> assignments, arguments, called helpers and `.lower()`-class methods, three levels (PROSE's)"""
-    seen = seen if seen is not None else set()
+    text, hit = _trace(expr, asg, fns, src, depth, seen if seen is not None else set(), wide=False)
+    return text if hit else None
+
+
+def _trace(expr, asg, fns, src, depth, seen, wide=True):
+    """(text, hit).  `wide=False` is the trace as it always was: a helper's body is kept only if that helper reads
+    a file, and a name's assignment is expanded only along a branch that reads.  r7251+70.4 (cc66's C64 Ⓔ): `wide`
+    keeps EVERY helper and assignment the trace visits, so `P = papers()` beside `body(f)` -- the `corpus/*.tex` glob
+    in one branch, the `open()` in the other -- brings the glob into view.  The wide text is used ONLY to file a key
+    PAPER (through `_only_tex`); whether a site is a key at all is decided by the narrow trace, as before."""
     seg = _seg(src, expr) or ''
     acc, hit = [seg], bool(_READ.search(seg))
     for n in ast.walk(expr):
@@ -632,16 +641,25 @@ def _reads(expr, asg, fns, src, depth=3, seen=None):
             if _READ.search(body):
                 hit = True
                 acc.append(body)
+            elif wide:
+                acc.append(body)
         if depth and isinstance(n, ast.Name) and n.id not in seen:
             seen.add(n.id)
             for v in asg.get(n.id, []):
-                r = _reads(v, asg, fns, src, depth - 1, seen)
-                if r is not None:
-                    hit = True
-                    acc.append(r)
-                else:
-                    acc.append(_seg(src, v) or '')
-    return '\n'.join(acc) if hit else None
+                t, h = _trace(v, asg, fns, src, depth - 1, seen, wide)
+                hit = hit or h
+                acc.append(t if (h or wide) else (_seg(src, v) or ''))
+    return '\n'.join(acc), hit
+
+
+_EXT = re.compile(r'\.(tex|py|md|json|tsv|txt|csv|ya?ml|log)\b')
+
+
+def _only_tex(text):
+    """r7251+70.4: the WIDENED trace (helpers and loop variables) files a key as PAPER only if `.tex` is the ONLY file
+    kind it names.  Loop variables are bound by NAME, so `c` in one loop can import another loop's `.tex` iterable;
+    a trace naming `.py` or `.md` beside `.tex` is ambiguous, and an ambiguous widening keeps the old SOURCE."""
+    return set(_EXT.findall(text)) == {'tex'}
 
 
 _VERDICT = re.compile(r"PASS|FAIL|\bassert\b|\braise\b|CHECKS|RESULTS|\.append\(\(")
@@ -864,6 +882,15 @@ def quote(root, files=None):
         if not _READ.search(src):
             continue
         asg, fns = _defs(tree)
+        # r7251+70.4 (cc66's C64 Ⓔ): for the TARGET only, a loop variable is bound to what it iterates, so
+        #   `for pid, fn in WANT.items(): B[pid] = body_of(... fn)` reaches WANT's `.tex` names.  `trace` -- which
+        #   decides whether a site IS a key -- still runs on `asg`; `tasg` is consulted only to file a key against
+        #   PAPER or SOURCE (the first wiring passed it to `_reads` and moved 133 keys, so the split is measured)
+        tasg = {k: list(v) for k, v in asg.items()}
+        for x in ast.walk(tree):
+            if isinstance(x, (ast.For, ast.comprehension)):
+                for nm in (y for y in ast.walk(x.target) if isinstance(y, ast.Name)):
+                    tasg.setdefault(nm.id, []).append(x.iter)
         best = {}       # id(node) -> (node, literal, container, alt)
 
         def visit(n, neg, alt, hops, seen):
@@ -908,7 +935,7 @@ def quote(root, files=None):
             #   r7125+70.1 precision sample), or structured data whose `in` is key membership, not a quotation
             if _SELF.search(trace) or _STRUCT.search(trace):
                 continue
-            target = 'PAPER' if re.search(r'\.tex\b', trace) else 'SOURCE'
+            target = 'PAPER' if re.search(r'\.tex\b', trace) or _only_tex(_trace(cont, tasg, fns, src, 3, set())[0]) else 'SOURCE'
             # SENTENCE: three or more whitespace-separated words -- wording another seat owns.  TOKEN: a label,
             #   a receipt name, a macro, a figure -- a cross-reference rather than prose
             tier = 'SENTENCE' if len(lit.split()) >= 3 else 'TOKEN'
@@ -930,7 +957,7 @@ def quote(root, files=None):
             trace = 'reach_baseline corpus *.tex' if cont is None else _reads(cont, asg, fns, src)
             if trace is None or _SELF.search(trace) or _STRUCT.search(trace):
                 continue
-            target = 'PAPER' if re.search(r'\.tex\b', trace) else 'SOURCE'
+            target = 'PAPER' if re.search(r'\.tex\b', trace) or (cont is not None and _only_tex(_trace(cont, tasg, fns, src, 3, set())[0])) else 'SOURCE'
             tier = 'SENTENCE' if len(lit.split()) >= 3 else 'TOKEN'
             fl = ','.join(x for x, on in (('LIST', True), ('SURVEY', flags == 'SURVEY'),
                                           ('OPEN', bool(_OPEN_WORDS.search(lit)))) if on)
