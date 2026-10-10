@@ -1,0 +1,42 @@
+
+  ** THE REGISTERED FORM: sentence scope, unordered **
+  member                                     (a)  (b) green  (c) red  
+  B2 / complex conjugation of the pair       G    5/5        2/4       FAILS   (other stating sentences removed for (c): 0)
+        (c) GREEN on a content-breaking edit: regimes exchanged
+        (c) GREEN on a content-breaking edit: restriction inverted
+  B8 / the module ... is the branching       G    4/4        2/3       FAILS   (other stating sentences removed for (c): 1)
+        (c) GREEN on a content-breaking edit: converse
+  B37 / quantises without measuring          G    4/4        0/3       FAILS   (other stating sentences removed for (c): 0)
+        (c) GREEN on a content-breaking edit: converse
+        (c) GREEN on a content-breaking edit: polarity flipped
+        (c) GREEN on a content-breaking edit: object swapped
+  members passing: 0 of 3;  (b) green 13/13;  (c) red 4/10
+
+  ** VARIANT 1, not registered: clause scope, unordered **
+  member                                     (a)  (b) green  (c) red  
+  B2 / complex conjugation of the pair       R    0/5        4/4       FAILS   (other stating sentences removed for (c): 0)
+        (b) RED on a content-intact rewording: markup
+        (b) RED on a content-intact rewording: synonym
+        (b) RED on a content-intact rewording: dash->comma
+        (b) RED on a content-intact rewording: reorder
+        (b) RED on a content-intact rewording: split
+  B8 / the module ... is the branching       G    2/4        2/3       FAILS   (other stating sentences removed for (c): 0)
+        (b) RED on a content-intact rewording: reorder
+        (b) RED on a content-intact rewording: not-X-but-Y
+        (c) GREEN on a content-breaking edit: converse
+  B37 / quantises without measuring          G    3/4        2/3       FAILS   (other stating sentences removed for (c): 0)
+        (b) RED on a content-intact rewording: reorder
+        (c) GREEN on a content-breaking edit: converse
+  members passing: 0 of 3;  (b) green 5/13;  (c) red 8/10
+
+  ** VARIANT 2, not registered: sentence scope, ordered **
+  member                                     (a)  (b) green  (c) red  
+  B2 / complex conjugation of the pair       G    4/5        2/4       FAILS   (other stating sentences removed for (c): 0)
+        (b) RED on a content-intact rewording: reorder
+        (c) GREEN on a content-breaking edit: regimes exchanged
+        (c) GREEN on a content-breaking edit: restriction inverted
+  B8 / the module ... is the branching       G    4/4        3/3       PASSES   (other stating sentences removed for (c): 1)
+  B37 / quantises without measuring          G    3/4        2/3       FAILS   (other stating sentences removed for (c): 0)
+        (b) RED on a content-intact rewording: reorder
+        (c) GREEN on a content-breaking edit: polarity flipped
+  members passing: 1 of 3;  (b) green 11/13;  (c) red 7/10

@@ -1,0 +1,5 @@
+population 162
+  polarity/contrast         63  (39%)
+  copular identification    42  (26%)
+  neither                   57  (35%)
+  RELATIONAL (either)      105
