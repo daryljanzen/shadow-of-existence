@@ -5,3 +5,4 @@
 #   prefix (the receipts/<dir> name) <TAB> seat <TAB> CLAIM|RELEASE <TAB> rNNNN (the trunk revision) <TAB> note
 P15_CR_cosmology	cc66	CLAIM	r7247	claimed in its r7247 pre-registration, before the board existed; entered here by the gate at r7249 so the board is truthful, and future claims are the seat own
 L204_physics_reach	70	CLAIM	r7249	70 claims it with its r7249 pre-registration, before reading; the fourth-axis order is short of a cycle
+L204_physics_reach	70	RELEASE	r7249	done: all 99 unverdicted keys read at r7249+70.2, the prefix is off the board
