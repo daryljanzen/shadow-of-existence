@@ -1,0 +1,38 @@
+# BASELINE of EXPOSED EXACT-COUNT sites -- r7241+70.1 (node 70), on 60's detector (S10, r7240/r7242).  Data, not code.
+# ** A RECORD OF ADJUDICATIONS, NOT A LIST OF EXEMPTIONS ** -- the same rule as the pin baselines.
+#   One line per key:  receipt <TAB> comparison (source text, whitespace collapsed) <TAB> verdict <TAB> what was read
+# Verdicts: DELIBERATE (the exact count is the claim, and its control is in the receipt), FALSE-POSITIVE (the
+# detector's taint reaches a set nobody else moves), SCOPED (the counted set is already this seat's own),
+# UNADJUDICATED (counted, not yet read -- the ceiling in check_exact_counts.py may only fall).
+# The 24 UNADJUDICATED at r7241+70.1 are all in receipts outside 60's two directories, which no sweep had reached.
+# Seventeen of them are `== 0` over paper prose or a document -- an ABSENCE asserted as an exact count, which any
+# seat's legitimate use of the word turns red; noted per row so the reading can start there.
+receipts/L147_two_arm/B3_a_dichotomy_stated_is_not_a_dichotomy_proved.py	len(r) == 9	UNADJUDICATED	(counted r7241+70.1, not read) an exact count of a live set
+receipts/L147_two_arm/B5_the_scan_cannot_test_the_asymptotic_phase.py	len(scan) == 23	UNADJUDICATED	(counted r7241+70.1, not read) an exact count of a live set
+receipts/L165_defining_the_sum/S1_seven_necessary_conditions_on_the_measure.py	len(re.findall('inner product', allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L171_two_routes/J1_the_disagreement_no_longer_has_two_sides.py	len(p) == 18	UNADJUDICATED	(counted r7241+70.1, not read) an exact count of a live set
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	n == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L204_physics_reach/C3_the_isotropy_citation_runs_in_a_loop.py	len(re.findall(re.escape(k), allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py	len(re.findall('Neff', _prose)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py	len(re.findall('sterile', allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L204_physics_reach/P13_the_entropy_is_the_corpuss_own_number.py	len(re.findall('de Sitter entropy', allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L204_physics_reach/P6_the_nariai_frame_does_not_exist_and_the_transplanckian_scope.py	_tmn == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L204_physics_reach/P7_the_temperature_is_taken_and_the_entropy_never_is.py	len(re.findall('de Sitter entropy', allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L204_physics_reach/P7_the_temperature_is_taken_and_the_entropy_never_is.py	n == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	n == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	_tags == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	len(n123) == 5	UNADJUDICATED	(counted r7241+70.1, not read) an exact count of a live set
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	len(n23) == 19	UNADJUDICATED	(counted r7241+70.1, not read) an exact count of a live set
+receipts/L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_index_begins.py	len(re.findall('mod 2', allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_index_begins.py	len(re.findall(re.escape(k), allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py	len(re.findall(k, allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py	len(re.findall(re.escape(k), allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L221_the_bridge/B48_the_field_is_dirac_so_the_matching_is_determined.py	len(re.findall('scalar', _outside, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	len(re.findall(re.escape(k), allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py	_live_reads == 2	UNADJUDICATED	(counted r7241+70.1, not read) an exact count of a live set
+receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py	len(live) == 14	UNADJUDICATED	(counted r7241+70.1, not read) an exact count of a live set
+receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py	len(TARGETS) == 2	SCOPED	60's r7240 reading: TARGETS is scoped by this seat's own r7204 stamp, which is r7204's prescribed repair -- no ceiling owed
+receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py	len(_blank_rc) == 6	FALSE-POSITIVE	60's r7240 reading: the count is over PROBE, a list the receipt declares itself, reached through shadow_run -- the function repair taints it
+receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py	len(_live_rc) == 6	FALSE-POSITIVE	60's r7240 reading, as its pair above
+receipts/L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and_one_of_this_seats_six_was_comparing_against_a_number_the_paper_had_withdrawn_as_the_error.py	_all_bodies.count(REPLACED) == 0	DELIBERATE	60's r7240 reading: a zero carrying the positive control S5's ruling requires -- the next gate reads the retiring commit and the same counter finds 1 removed line and 8 added
+receipts/L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and_one_of_this_seats_six_was_comparing_against_a_number_the_paper_had_withdrawn_as_the_error.py	_all_bodies.count(RETIRED) == 0	DELIBERATE	60's r7240 reading, as its pair above

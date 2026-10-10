@@ -1,0 +1,33 @@
+receipts 1029  claim-sites by partition {'EXPOSED': 30, 'FROZEN': 61, 'ROW-SCOPED': 18, 'SELF': 51}  total 160
+distinct EXPOSED keys 29
+EXPOSED in 60's two directories 5  outside 24
+S3/S4/S6 claim-sites 29 {'FROZEN': 16, 'SELF': 11, 'EXPOSED': 2}
+  L147_two_arm/B3_a_dichotomy_stated_is_not_a_dichotomy_proved.  L100   len(r) == 9
+  L147_two_arm/B5_the_scan_cannot_test_the_asymptotic_phase.py   L114   len(scan) == 23
+  L165_defining_the_sum/S1_seven_necessary_conditions_on_the_me  L124   len(re.findall('inner product', allp, re.I)) == 0
+  L171_two_routes/J1_the_disagreement_no_longer_has_two_sides.p  L96    len(p) == 18
+  L175_dimensional_descent/V1_the_variational_ledgers_premise_i  L111   n == 0
+  L204_physics_reach/C3_the_isotropy_citation_runs_in_a_loop.py  L95    len(re.findall(re.escape(k), allp, re.I)) == 0
+  L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.p  L158   len(re.findall('Neff', _prose)) == 0
+  L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.p  L120   len(re.findall('sterile', allp, re.I)) == 0
+  L204_physics_reach/P13_the_entropy_is_the_corpuss_own_number.  L95    len(re.findall('de Sitter entropy', allp, re.I)) == 0
+  L204_physics_reach/P6_the_nariai_frame_does_not_exist_and_the  L139   _tmn == 0
+  L204_physics_reach/P7_the_temperature_is_taken_and_the_entrop  L219   len(re.findall('de Sitter entropy', allp, re.I)) == 0
+  L204_physics_reach/P7_the_temperature_is_taken_and_the_entrop  L152   n == 0
+  L204_physics_reach/P9_the_resolution_is_the_baby_universe_one  L140   n == 0
+  L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py     L202   _tags == 0
+  L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py     L159   len(n123) == 5
+  L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py     L136   len(n23) == 19
+  L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_i  L135   len(re.findall('mod 2', allp, re.I)) == 0
+  L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_i  L129   len(re.findall(re.escape(k), allp, re.I)) == 0
+  L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.  L112   len(re.findall(k, allp, re.I)) == 0
+  L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.  L134   len(re.findall(re.escape(k), allp, re.I)) == 0
+  L221_the_bridge/B48_the_field_is_dirac_so_the_matching_is_det  L98    len(re.findall('scalar', _outside, re.I)) == 0
+  L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_co  L134   len(re.findall(re.escape(k), allp, re.I)) == 0
+  L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_const  L302   _live_reads == 2
+  L558_the_second_duplication/D1_the_same_four_rows_the_second_  L197   len(live) == 14
+  L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_  L140   len(TARGETS) == 2
+  L_probability/S5_the_set_shaped_class_is_absent_from_the_gate  L570   len(_blank_rc) == 6
+  L_probability/S5_the_set_shaped_class_is_absent_from_the_gate  L571   len(_live_rc) == 6
+  L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and  L194   _all_bodies.count(REPLACED) == 0
+  L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and  L194   _all_bodies.count(RETIRED) == 0
