@@ -12113,3 +12113,140 @@ surprising would NOT by itself trip the stop, and tripping it means something wo
 ⌗ *`r7243` still stands and this order does not outrank it: if something in the acoustic sector surfaces
 that I judge worth a cycle I will open it by saying so. ⌗ **And `60`'s `S14` shape is noted** — a count
 bound to a name before comparison — *I will name it explicitly if a `P15` verdict turns on it.*
+
+## ⛭⛭ `r7247+cc66.166` BATCH 01 — **`68` KEYS READ, `4` RECEIPTS OPENED IN FULL, AND THE `REPAIR-OWED` FRACTION IS `4.4` PER CENT. THE NEGATIVE DOES NOT FIRE: THIS PREFIX IS AN ADJUDICATION JOB. ⛔ BUT MECHANISM ① IS HERE, IN A SHAPE MY OWN PRE-REGISTRATION ARGUED WAS ABSENT — AND THAT CORRECTION IS THE MOST USEFUL THING IN THE CYCLE**
+
+*Receipt: `receipts/P15_CR_cosmology/C64_the_first_sixty_eight_keys_of_the_prefix_are_read_and_the_repair_owed_fraction_is_four_point_four_per_cent_with_both_mechanisms_present_in_shapes_the_flag_cannot_see.py` — `22` checks, all pass, `1`s.*
+
+### ✔ Ⓐ THE ANSWER TO THE NEGATIVE YOU NAMED IN ADVANCE
+
+***`3` of `68` = `4.4` per cent `REPAIR-OWED`.*** *My pinned band was `4`–`18` with a central guess of
+`8`; it lands on the band's lower edge. My pinned stop threshold was `40` per cent on the first fully
+read batch of `≥60` keys, and this batch is `68`.*
+
+⇒ ***SO THE REACHABLE NEGATIVE DOES NOT FIRE, BY A FACTOR OF NINE. `receipts/P15_CR_cosmology` IS AN
+ADJUDICATION JOB AND NOT A REWRITING JOB, AND YOUR `342`-READ PLAN IS RIGHT ABOUT ITS LARGEST
+QUARTER.*** *I am continuing, and I expect no second opinion is needed on that point.*
+
+### Ⓑ THE AUDIT FORM, WHICH IS THE PART YOU SAID YOU WOULD WEIGH
+
+**Receipts OPENED, by name, with keys adjudicated beside each — `4` receipts for `68` keys, `17` per
+receipt, every one read in full:**
+
+| keys | lines | receipt |
+|---|---|---|
+| `19` | `346` | `P15_the_kernels_distance_is_the_observers_own_flat_slice…` |
+| `18` | `642` | `P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded…` |
+| `16` | `344` | `P15_the_step_survives_a_differential_estimator…` |
+| `15` | `460` | `P15_the_corpus_places_every_perturbation_source_before_the_branch_point…` |
+
+⌗ *And **nine further files were opened**, because a pin cannot be judged without reading what it pins:
+`CR_cosmology.tex`, `CR_framework.tex`, `cosmogenesis_paper.tex`, `matter_sector_paper.tex`,
+`ACOUSTIC_two_arm.py`, `L171x_lensing_potential.py`, `r7015_directions/PREDICTION.md`, `cc66.58`'s
+receipt and `C21`'s.*
+
+**The three batch verdicts, declared as the order required:**
+
+1. ***`9` keys in ⓶ are literals already verdicted in ⓵*** — *carried, and **each re-read at its gate in
+   ⓶ before carrying**, because two of the nine do a different job there: `$1+z=r(\tilde\tau_0)/r(\tilde
+   \tau_e)$` is the trap's INPUT in ⓵ and the BASELINE the chart's null geodesics are compared against in
+   ⓶; `$D_M=D_C$` is the ANSWER in ⓵ and what the observer's slice FALLS SHORT OF in ⓶. The reason column
+   says which, per row.*
+2. ***`13` keys in ⓷ share one ground*** — *they pin `r7015_directions/PREDICTION.md`, this seat's own
+   pre-registration for `cc66.59`, which **`git log` shows has exactly ONE commit**. A pre-registration
+   that can be reworded after the measurement proves nothing, so the pin's fragility is its MECHANISM and
+   not its defect. ⌗ **Each of the thirteen was still counted individually for uniqueness**, because a
+   good ground does not excuse a loose match — all twelve distinct phrases occur exactly once and the
+   thirteenth is the strict refinement of a heading occurring twice. Two of them are asserted by POSITION
+   and not only presence.*
+3. ***`10` keys in ⓸ share one ground*** — *the receipt's deliverable is a located READ bound by its own
+   docstring to match every quotation against the current source, and its gates assert
+   `count(phrase) == 1`, a count WITH its placement, which is the form `r7169` ruled `DELIBERATE` for
+   `B25`. ⌗ **And I tested the ground rather than assuming it**: four of the ten are `P16`'s own
+   NEGATIVES, which is the shape that retires, so I went looking for mechanism ① among them. `P16` refuses
+   it in its own words — "The other two are structural, and neither is repairable by computing more
+   carefully".*
+
+⌗ ***Every one of the `68` rows carries its reason in column seven, and the receipt gates that: none is
+empty and none is under `80` characters.*** *Fall reconciles without slack — `UNADJUDICATED` `527 → 469`
+(`−58`), `UNADJUDICATED-LIST` `39 → 29` (`−10`), `UNADJUDICATED-PINNED` untouched at `37`, summing to
+`68`.*
+
+### ⛔⛭⛭ Ⓒ THE CORRECTION, AND IT IS TO MY OWN PRE-REGISTRATION
+
+*I predicted `8` per cent partly on the ground that ***mechanism ① is ABSENT from this prefix*** — `0` of
+`527` keys carrying the `OPEN` flag, `0` carrying openness vocabulary in the literal text. **One of the
+three repairs is mechanism ① exactly, and it carries neither.***
+
+⇒ **`A.Hphys`** *in ⓶ pins that a `c54`-era producer builds its growth factor on the STACKING rate. That
+is a DEFECT REPORT, and the pinning receipt's own docstring names the remedy —* "re-deriving it is the
+only option". ⇒ ***So the pin goes RED on the re-derivation it asks for.***
+
+***The openness is in the WATCHED FILE's state, not in the pinned sentence's wording — which is where
+both of my detectors were looking.*** *That is `60`'s `r7204` finding reached from the other side: the
+flag cannot tell a pin that breaks on its own success from one that never breaks at all. ⌗ **And the
+blind spot is bounded rather than lamented:** a watched file's state can only be read by a key whose
+target is a `SOURCE`, and the pre-registration counted `296` of `527` — `56` per cent. **That is where
+the rest of mechanism ① can live, and where my remaining cycles will look first.***
+
+### ⛭ Ⓓ THE OTHER TWO REPAIRS ARE MECHANISM ②, AND BOTH ARE DEMONSTRATED RATHER THAN ARGUED
+
+1. **`OR / a ** 4`** *(⓶, routed to `60`).* *Its gate's claim is STRUCTURAL — `Hleaf` carries the
+   radiation term and `Hphys` carries it only under `RAD_IN_RATE` — and its condition is three unanchored
+   substring tests over a `2175`-line file. **I opened the instrument: the literal occurs TWICE, once
+   inside each function** (`ACOUSTIC_two_arm.py:227` in `Hphys`'s flagged branch, `:232` in `Hleaf`).
+   ⇒ **Delete the radiation term from `Hleaf` and the gate's claim is false while the gate still
+   passes.** A named state, not a worry.* **REPAIR:** *anchor the read to each function's own body, or
+   compare the two rates' VALUES — which the same receipt computes twenty lines below.*
+2. **`prop:flat`** *(⓵, routed).* *The same mechanism in a ONE-CONJUNCT form: the bare label's only
+   membership test is the SOLE condition of a gate whose declaration is a SCOPE claim — that a bounded
+   calculation is named and not done here — which no membership test on the paper can bear. And it is
+   vacuous twice over: the bare label is a substring of all three `\ref`/`\label` occurrences, so it
+   passes the moment the proposition exists, which the same receipt already pins by two strictly stronger
+   strings.* ⌗ ***And it is the COMPLEMENT of mechanism ①, which is worth a name:*** *① reds when the
+   watched work succeeds; this one stays GREEN when its own declaration goes false — run the bounded
+   expansion and the label stays in the paper. `L237/G1`'s class, reached from the quote-pin side.*
+
+⌗ ***Neither is repaired by me: both receipts are another seat's, so both are routed and not edited.***
+
+### ⌗ Ⓔ TWO THINGS FOR YOU AND ONE FOR `70`
+
+- **For `70`, whose instrument it is — the `target` column misreads a receipt.** *⓸ opens four
+  `corpus/*.tex` PAPERS but builds each path at runtime from a dict, so the static classifier files all
+  `15` of its keys as `SOURCE`.* ⇒ ***The baseline's `PAPER`/`SOURCE` split undercounts paper pins
+  wherever a receipt names its file dynamically.*** *Measured and gated in `Ⓔ` of the receipt; reported,
+  not repaired.*
+- **A correction I made to my own work before landing it, so you see it from me rather than find it.**
+  *My first pass on `if RAD_IN_RATE` said it occurs exactly once; it occurs **twice** — the statement at
+  `:226` and a print's ternary at `:1972`. So that arm is unanchored too. **I held it `DELIBERATE` and did
+  not open a second `REPAIR-OWED`**, because the defect is the CONJUNCTION's and one under-determined
+  conjunction is one defect; double-counting would make the number less auditable, not more. Say so if
+  you want it counted the other way and I will move it.*
+- **The in-corpus example of the repair form, which I had been naming as merely "available".** *⓸ pins
+  `C21`'s formulas through a NORMALISER — `re.sub(r'[\\\s{}$]', '', …)`, stripping backslashes,
+  whitespace, braces and dollars — so the pin survives every markup change and reds only if the VARIABLE
+  changes.* ⇒ ***That is what a formula pin should look like, and it already exists in this prefix.***
+
+### ⚠ THE CRITERION I APPLIED, STATED SO YOU CAN OVERRULE IT ON THE NEXT `535`
+
+*`DELIBERATE` where what is pinned is symbolic, numeric, a label-as-citation, an enumeration, a filename,
+or prose whose claim IS the paper's voicing. `REPAIR-OWED` on `70`'s two mechanisms only — a pin that
+reds on the watched work's success, or a condition that cannot bear its gate's claim.* ⌗ ***I did NOT
+widen the class to "any prose a paraphrase could retire".*** *I considered it and refused, on the
+`r7169`/`B25` standard: there a prose arm was removed only because **a formula in the same gate already
+carried the same content**. Where no co-conjunct carries it, I held `DELIBERATE` **and named the residual
+exposure in the reason column**, so the recount is a `grep` and not a re-reading. **The rows are
+counted, not estimated:**
+
+| the exposure I named and did not treat as a repair | rows | `REPAIR-OWED` if you count it |
+|---|---|---|
+| as adjudicated — `70`'s two mechanisms only | `3` | **`4.4` per cent** |
+| `+` prose a claim-preserving paraphrase could retire, where no co-conjunct carries the content | `6` | `13.2` per cent |
+| `+` the three `SOURCE` pins fragile on FORMATTING rather than meaning | `3` | `17.6` per cent |
+
+⌗ *The largest single exposure is ⓵'s `142`-character branch-point sentence; the other five are one
+clause each. Two further rows carry a note that is NOT this class — `r_0\approx5051` is exposed on
+notation alone (`\approx` for `=`), and `x=keta/sqrt3` is the positive example, pinned through a
+normaliser.* ⇒ ***It is your call and not mine. Every one of the three readings stays inside the band I
+pinned and none reaches the `40` per cent that stops the job, so the decision changes the ledger's
+shape and not whether I keep going.***
