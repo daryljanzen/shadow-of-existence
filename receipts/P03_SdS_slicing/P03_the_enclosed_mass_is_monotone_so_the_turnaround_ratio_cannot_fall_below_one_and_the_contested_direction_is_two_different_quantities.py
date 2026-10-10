@@ -355,10 +355,39 @@ def _git(*a):
     return subprocess.run(['git'] + list(a), cwd=ROOT, capture_output=True, text=True).stdout
 
 
-_touched = [l for l in _git('log', '--no-merges', '--name-only', '--format=',
-                            'HEAD', '--not', 'origin/main').split('\n') if l]
-_added = {l for l in _git('log', '--no-merges', '--diff-filter=A', '--name-only', '--format=',
-                          'HEAD', '--not', 'origin/main').split('\n') if l}
+# ⛭⛭⛭ r7245 REPAIR -- the face `S5` was caught by three times, arriving here
+#   through the range's other end.  `HEAD --not origin/main` is THIS BRANCH'S commits only
+#   while the branch is this seat's alone; on a trunk that has just absorbed another seat's
+#   push it is every seat's, and `r7243+70.1` modified 95 unowned receipts by its own order,
+#   which the clause below read as THIS seat editing them.
+#   ** A gate on a push range is a gate on a set every other seat can grow. **
+#   ⇒ The claim's subject is what THIS SEAT'S commits touched, so the range is filtered to
+#   the commits carrying the session that last wrote this receipt -- `r7229+70.1`'s own seat
+#   marker put to the use it was measured for.  Monotone in the safe direction: as the trunk
+#   absorbs the work, the set shrinks.
+import re as _re_r7245
+_SESS = _re_r7245.compile(r'^Claude-Session:\s*(\S+)', _re_r7245.M)
+# ⚠ The anchor is the commit that INTRODUCED this receipt and not the one that last wrote
+#   it: another seat's pin batch touched this file, so `last writer` resolves to THAT seat and
+#   the filter would keep exactly the commits the claim is about excluding.  `r7244` measured
+#   last-writer parity migrating on 14.8 per cent of site-lines, so the adding commit is the
+#   only stable marker of whose receipt this is.
+_own_sess = _SESS.search(_git('log', '--diff-filter=A', '--format=%B', '--', __file__))
+_own_sess = _own_sess.group(1) if _own_sess else None
+_MINE_C = []
+for _blk in _git('log', '--no-merges', '--format=%H%x00%B%x01',
+                 'HEAD', '--not', 'origin/main').split('\x01'):
+    if '\x00' in _blk:
+        _sha, _body = _blk.split('\x00', 1)
+        _m = _SESS.search(_body)
+        if _own_sess is None or (_m and _m.group(1) == _own_sess):
+            _MINE_C.append(_sha.strip())
+_touched = [l for c in _MINE_C
+            for l in _git('show', '--no-merges', '--name-only', '--format=',
+                          c).split('\n') if l]
+_added = {l for c in _MINE_C
+          for l in _git('show', '--no-merges', '--diff-filter=A', '--name-only',
+                        '--format=', c).split('\n') if l}
 
 
 def _owned(q):

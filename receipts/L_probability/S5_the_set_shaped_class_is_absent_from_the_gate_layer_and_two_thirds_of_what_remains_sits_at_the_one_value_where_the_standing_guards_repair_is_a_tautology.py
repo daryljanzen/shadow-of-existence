@@ -608,8 +608,44 @@ gate("Ⓕ① all `14` receipts carrying an EXPOSED site are RUN here, not read: 
 #   ⇒ The object the claim is about is THIS BRANCH'S OWN COMMITS, which is `HEAD` excluding whatever
 #   the trunk already carries -- `--no-merges` so a merge commit's combined diff is not counted as an
 #   edit.  Monotone in the safe direction: as the trunk absorbs this work the set SHRINKS.
-_touched = [l for l in _git('log', '--no-merges', '--name-only', '--format=',
-                            'HEAD', '--not', 'origin/main').split('\n') if l]
+# ⛭⛭⛭ r7245 REPAIR, AND IT IS THIS RECEIPT'S OWN CLASS CAUGHT A THIRD TIME -- the first was the
+#   trunk moving at `r7214`, the second this seat adding a file at `r7222`, and this one is ANOTHER
+#   SEAT'S WORK ENTERING THE RANGE.  `HEAD --not origin/main` is this branch's commits only while
+#   the branch is this seat's alone; on a trunk that has just absorbed another seat's push it is
+#   every seat's.  `r7243+70.1` modified 95 unowned receipts by its own order, and the clause below
+#   read that as THIS seat editing them.
+#   ** A gate on a push range is a gate on a set every other seat can grow -- the same face as the
+#   fixed pin, arriving through the range's other end. **
+#   ⇒ The claim's subject is what THIS SEAT'S commits touched, so the range is filtered to the
+#   commits carrying the session that last wrote this receipt, which is `r7229+70.1`'s own seat
+#   marker put to the use it was measured for.  Monotone in the safe direction as before: as the
+#   trunk absorbs the work the set shrinks.
+_SESS = re.compile(r'^Claude-Session:\s*(\S+)', re.M)
+# ⚠ The anchor is the commit that INTRODUCED this receipt and not the one that last wrote
+#   it: another seat's pin batch touched this file, so `last writer` resolves to THAT seat and
+#   the filter would keep exactly the commits the claim is about excluding.  `r7244` measured
+#   last-writer parity migrating on 14.8 per cent of site-lines, so the adding commit is the
+#   only stable marker of whose receipt this is.
+_own_sess = _SESS.search(_git('log', '--diff-filter=A', '--format=%B', '--', __file__))
+_own_sess = _own_sess.group(1) if _own_sess else None
+
+
+def _mine_commits():
+    out = []
+    for blk in _git('log', '--no-merges', '--format=%H%x00%B%x01',
+                    'HEAD', '--not', 'origin/main').split('\x01'):
+        if '\x00' not in blk:
+            continue
+        sha, body = blk.split('\x00', 1)
+        m = _SESS.search(body)
+        if _own_sess is None or (m and m.group(1) == _own_sess):
+            out.append(sha.strip())
+    return out
+
+
+_MINE_C = _mine_commits()
+_touched = [l for c in _MINE_C
+            for l in _git('show', '--no-merges', '--name-only', '--format=', c).split('\n') if l]
 # ⛭⛭⛭ r7222 REPAIR, AND IT IS THIS RECEIPT'S OWN CLASS CAUGHT A SECOND TIME -- the first was the
 #   trunk moving at `r7214`, this one is THIS SEAT adding a file.  `mine()` is a frozen list of two
 #   directory prefixes, which is a statement about where this seat has worked SO FAR and not about
@@ -624,8 +660,9 @@ _touched = [l for l in _git('log', '--no-merges', '--name-only', '--format=',
 #   exposed-site receipt appears in this branch's diff at all, added or modified.
 #   Monotone in the safe direction, like the `r7214` repair: as the trunk absorbs the work both sets
 #   shrink.
-_added = {l for l in _git('log', '--no-merges', '--diff-filter=A', '--name-only', '--format=',
-                          'HEAD', '--not', 'origin/main').split('\n') if l}
+_added = {l for c in _MINE_C
+          for l in _git('show', '--no-merges', '--diff-filter=A', '--name-only',
+                        '--format=', c).split('\n') if l}
 _outside = [p for p in _touched
             if p.startswith('receipts/') and p.endswith('.py') and not mine(p)
             and p not in _added]
