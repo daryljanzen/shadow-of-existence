@@ -1,4 +1,12 @@
 {
+ "claude/shadow-of-existence-setup-5tjf0b": {
+  "suite": {
+   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38081762595",
+    "since": "50a4c8dc073a8381f2092a97c4fd00802b0cfd97"
+   }
+  }
+ },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
