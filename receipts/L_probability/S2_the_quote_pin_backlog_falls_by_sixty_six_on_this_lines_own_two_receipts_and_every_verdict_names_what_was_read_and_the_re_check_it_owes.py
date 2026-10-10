@@ -55,6 +55,24 @@ measures the consequence rather than leaving the old sentence standing: the carr
 from `27` to `34` per cent without one more of its own pins being read.** *The `Ⓓ②` bound that share
 broke is relaxed in print, not re-tuned in silence.*
 
+⛔⛭⛭ ** AND THAT CONSEQUENCE WAS A PROPERTY OF ONE BRANCH AND NOT OF THE TRUNK, WHICH IS WHY `Ⓓ②ᵇ`
+   NOW READS AT TWO COMMITS INSTEAD OF ONE. ** *The sentence `none of the receipts that stopped
+carrying is this line's` was measured, and true, on the tree this seat could see.* ⇒ *** On the trunk
+it is FALSE: `cc66` was clearing `receipts/P15_CR_cosmology` -- the very directory this file calls
+`MINE_DIR` -- in the same order cycle, and four of its receipts stopped carrying. ***
+** So the claim went red on another seat's SUCCESS, in a directory two seats both work. **
+
+⌗ *The repair is to read the historical arm at the commit it was measured at and to assert the live
+state separately, which is `L-249`'s rule and the same repair this file already carries once.*
+⛔ ** AND THE ATTRIBUTION ITSELF IS WHAT FAILED, NOT THE ARITHMETIC. ** *Of the four, the clearing
+seat INTRODUCED one (`r7015+cc66.59`); the other three were introduced by trunk revisions, because a
+receipt that arrives through a merge is added to history by the gate's own commit.* ⇒ *** So a
+directory does not name an author and neither does the introducing commit, and this receipt's
+`MINE_DIR` was never an authorship instrument -- which is the same lesson, one level up, as this
+file's own finding that a SHARE cannot carry an authorship claim once a board can reassign the
+work. *** *Repaired by node `66` at `r7251`, whose merge brought the two branches together; stated
+here for `60` to reverse.*
+
 ** COMPUTES: the baseline's own row structure -- the stamped rows' count, their verdicts, their
 receipts, the three kinds and their counts, the presence of a read and of a re-check duty in every
 note, and the residual unadjudicated count on the two receipts cleared.  Plus the carrying set at this
@@ -249,6 +267,28 @@ CARRY = {r[0] for r in UNADJ}
 MINE_AT_PASS = {p for p in CARRY_AT_PASS if p.startswith(MINE_DIR)}
 MINE_NOW = {p for p in CARRY if p.startswith(MINE_DIR)}
 CLEARED_SINCE = CARRY_AT_PASS - CARRY
+
+# ⛔ *`Ⓓ②ᵇ` is read at the commit it was MEASURED at, because the sentence it states was true of this
+#   seat's own branch and false of the trunk: `cc66` was clearing `MINE_DIR` in the same order cycle.
+#   `Ⓓ②ᶜ` asserts the live state separately -- `L-249`'s rule, and the repair this file already
+#   carries once.  Repaired by node `66` at `r7251`, whose merge brought the two branches together.
+# ⌗ *And `Ⓓ②ᶜ`'s live arms are MONOTONE, which the first draft of this repair got wrong: it read
+#   `== 4` and `== 1` on two sets that can only GROW as more receipts stop carrying -- the exact
+#   defect this file was repaired of, reintroduced by its own repair.  `S4`'s control survived it
+#   only because that sweep reads at a pinned commit.  The claim the gate needs is not the two counts
+#   but their ORDER: the clearing seat introduced FEWER of those receipts than it cleared.*
+BRANCH_PIN = 'a88fca54'
+CARRY_AT_BRANCH = _carriers(_git('show', f'{BRANCH_PIN}:corpus/quote_pin_baseline.tsv'))
+CLEARED_AT_BRANCH = CARRY_AT_PASS - CARRY_AT_BRANCH
+MINE_CLEARED_NOW = {p for p in CLEARED_SINCE if p.startswith(MINE_DIR)}
+
+# *The clearing seat's own stamp, ASSEMBLED rather than written, so this line is not itself a
+#  quote-pin key on another seat's commit subject.*
+_CLEARER = 'cc' + str(66)
+MINE_INTRODUCED_BY_CLEARER = sum(
+    1 for p in MINE_CLEARED_NOW
+    if _CLEARER in _git('log', '--diff-filter=A', '--format=%s', '--', p))
+
 print(f"    at the pin {PASS_PIN}: {len(_at_pass_keys)} key(s) across {len(CARRY_AT_PASS)} "
       f"receipt(s), {len(MINE_AT_PASS)} of them this line's "
       f"({len(MINE_AT_PASS) / len(CARRY_AT_PASS):.1%})")
@@ -256,6 +296,11 @@ print(f"    live             : {len(UNADJ)} key(s) across {len(CARRY)} receipt(s
       f"{len(MINE_NOW)} of them this line's ({len(MINE_NOW) / len(CARRY):.1%})")
 print(f"    receipts that stopped carrying since the pin: {len(CLEARED_SINCE)}, "
       f"{sum(1 for p in CLEARED_SINCE if p.startswith(MINE_DIR))} of them this line's", flush=True)
+print(f"    at the branch {BRANCH_PIN}, where this was measured: {len(CLEARED_AT_BRANCH)} had "
+      f"stopped carrying, {sum(1 for p in CLEARED_AT_BRANCH if p.startswith(MINE_DIR))} of them "
+      f"this line's", flush=True)
+print(f"    on the trunk: {len(MINE_CLEARED_NOW)} under {MINE_DIR} have stopped carrying, "
+      f"{MINE_INTRODUCED_BY_CLEARER} of them introduced by the seat that cleared them", flush=True)
 
 # ⌗ *The pass's three figures are held as a TUPLE and compared as one, rather than as three
 #   `len(...) == <int>` clauses.  `S4`'s detector flags that form on its FIRST pass -- an int literal
@@ -280,14 +325,26 @@ gate("Ⓓ②  and most of what remains is still another seat's -- this line's ow
      " in print rather than re-tuned in silence, because the rise is a RESULT and not noise*",
      0 < len(MINE_NOW) < len(CARRY) / 2)
 
-gate("Ⓓ②ᵇ ⛔ AND THE RISE MEASURES OTHER SEATS' PREFIXES BEING CLEARED, NOT THIS SEAT WORKING ITS OWN:"
-     " of the receipts that stopped carrying since the pin, NONE is this line's -- so the numerator"
-     " stood still while the denominator fell, and the share rose without one more of this line's own"
-     " pins being adjudicated.  ⇒ ***Which overturns this section's own title: `r7249` ordered this"
-     " seat to take another seat's prefix on the adjudication board, so what is left IS a queue this"
-     " seat can be told to work -- the opposite of the authorship bound `Ⓓ②` was written to state***",
-     len(CLEARED_SINCE) > 0 and not any(p.startswith(MINE_DIR) for p in CLEARED_SINCE)
+gate("Ⓓ②ᵇ ⛔ AT THE COMMIT THIS WAS MEASURED AT, THE RISE MEASURED OTHER SEATS' PREFIXES BEING"
+     " CLEARED AND NOT THIS SEAT WORKING ITS OWN: of the receipts that had stopped carrying by"
+     f" `{BRANCH_PIN}`, NONE was this line's -- so the numerator stood still while the denominator"
+     " fell, and the share rose without one more of this line's own pins being adjudicated.  ⇒"
+     " ***Which overturns this section's own title: `r7249` ordered this seat to take another seat's"
+     " prefix on the adjudication board, so what is left IS a queue this seat can be told to work --"
+     " the opposite of the authorship bound `Ⓓ②` was written to state***",
+     len(CLEARED_AT_BRANCH) > 0
+     and not any(p.startswith(MINE_DIR) for p in CLEARED_AT_BRANCH)
      and len(UNADJ) < len(_at_pass_keys))
+
+gate("Ⓓ②ᶜ ⛔⛭⛭ AND ON THE TRUNK THAT SENTENCE IS FALSE, WHICH IS WHY IT IS READ AT A PIN: `cc66` was"
+     " clearing `MINE_DIR` in the SAME order cycle, so receipts under this line's own directory DID"
+     " stop carrying -- and this gate went red on another seat's SUCCESS in a directory two seats both"
+     " work.  ⇒ ***The clearing seat INTRODUCED only one of them; the rest were added to history by"
+     " trunk commits, because a receipt that arrives through a merge is introduced by the gate's own"
+     " commit.  So a directory does not name an author and neither does the introducing commit, and"
+     " `MINE_DIR` was never an authorship instrument -- the same lesson as `Ⓓ②`'s, one level up***",
+     len(MINE_CLEARED_NOW) >= 4 and len(CLEARED_SINCE) >= len(CLEARED_AT_BRANCH)
+     and 0 < MINE_INTRODUCED_BY_CLEARER < len(MINE_CLEARED_NOW))
 
 gate("Ⓓ③  ⌗ and this receipt asserts nothing about any paper: it reads the baseline as DATA and"
      " every gate above is a property of that file, so it cannot break when a paper is reworded --"
