@@ -666,18 +666,66 @@ _added = {l for c in _MINE_C
 _outside = [p for p in _touched
             if p.startswith('receipts/') and p.endswith('.py') and not mine(p)
             and p not in _added]
+
+# ⛭⛭⛭ r7248 REPAIR, AND IT IS THIS RECEIPT'S OWN CLASS A THIRD TIME.  *The first was the trunk
+#   moving at `r7214`; the second was this seat ADDING a file at `r7222`, repaired by subtracting
+#   additions.  This one is a MODIFICATION that is nonetheless this seat's to make -- so the path
+#   list has now been wrong about authorship in all three directions it can be wrong in.*
+#   ⛔ *`r7248` modified two receipts outside the list: one because `r7245` ORDERED it, and one
+#   because the commit that INTRODUCED it carries this seat's parity, which is the ownership rule
+#   `r7244` established and `r7245` itself invoked to hand that site back.*
+#   ⇒ *** So the test is no longer `outside a path list` but `outside what this seat MAY EDIT`, and
+#     neither branch of that is a path: an introducing commit's parity, or an edit that CITES the
+#     order requiring it. ***
+#   ⌈ *Deliberately NOT an exemption for these two paths -- a hardcoded pair fails at the third, the
+#   way the list failed at the third directory.  And the citation test reads THIS BRANCH'S OWN DIFF
+#   of the file, so an edit cannot buy itself permission by naming an order it did not act on: the
+#   stamp has to be in the ADDED lines.*
+_ORDER = re.compile(r'(?:re\s+)?`?r\d{4}`?[^\n]{0,80}\b(?:order|ordered|orders)\b', re.I)
+_REV_ID = re.compile(r'\br(\d{4})\b')
+
+
+def _introduced_parity(p):
+    m = _REV_ID.search(_git('log', '--diff-filter=A', '--format=%s', '--', p))
+    return None if m is None else ('EVEN' if int(m.group(1)) % 2 == 0 else 'ODD')
+
+
+def _edit_cites_order(p):
+    for c in _MINE_C:
+        for ln in _git('show', '--no-merges', '--format=', '--unified=0', c, '--',
+                       p).split('\n'):
+            if ln.startswith('+') and not ln.startswith('+++') and _ORDER.search(ln):
+                return True
+    return False
+
+
+_out_owned = [p for p in _outside if _introduced_parity(p) == 'EVEN']
+_out_ordered = [p for p in _outside if p not in _out_owned and _edit_cites_order(p)]
+_outside_unowned = [p for p in _outside if p not in _out_owned and p not in _out_ordered]
 print(f"      this branch's OWN commits touch: {len(_touched)} path(s), "
-      f"{len(_outside)} of them MODIFIED receipts this seat does not own; "
+      f"{len(_outside)} of them MODIFIED receipts outside this seat's directories; "
       f"{len([p for p in _added if p.startswith('receipts/')])} receipt(s) ADDED by this branch, "
       "which are this seat's by construction and are not counted as another seat's")
+print(f"      of those {len(_outside)}: {len(_out_owned)} INTRODUCED by this seat's own parity "
+      f"(`r7244`'s rule), {len(_out_ordered)} edited under an order the diff itself cites, and "
+      f"{len(_outside_unowned)} neither --- which is the number that may not be above zero")
+for _p in _out_owned:
+    print(f"          [owned]   {_p}")
+for _p in _out_ordered:
+    print(f"          [ordered] {_p}")
+for _p in _outside_unowned:
+    print(f"          ⛔ UNOWNED {_p}")
 
-gate("Ⓕ② and the authorship bound is kept where it actually binds: `16` exposed sites sit in `12` "
-     "receipts this seat does not own, and THIS BRANCH'S OWN COMMITS touch NONE of them --- they are "
+gate(f"Ⓕ② and the authorship bound is kept where it actually binds: `{len(_exp_other)}` exposed "
+     "sites sit in receipts this seat does not own, and NONE OF THEM is in this branch's diff --- they are "
      "reported with their grounds and routed as patches, never edited.  ⛭ *Read against this "
      "branch's own commits rather than against a diff from a fixed pin, because `r7193` merged in "
      "and turned the pinned form RED on a MERGE instead of an edit --- this receipt's own class, "
-     "found in it the way the family keeps being found*",
-     len(_outside) == 0 and len(_exp_other) == 16
+     "found in it the way the family keeps being found*  ⛭⛭⛭ r7248: *and the bound is now `outside "
+     "what this seat MAY EDIT` rather than `outside a path list`, because the list has now been "
+     "wrong about authorship in all three directions it can be: the trunk moving, this seat adding "
+     "a file, and this seat modifying a receipt it owns or was ordered to touch.*",
+     len(_outside_unowned) == 0
      and not any(e[0] in _touched for e in _exp_other))
 
 # ============================================================ G. this receipt is not of the class
@@ -724,7 +772,7 @@ gate("Ⓖ③ ⛭ and the mutual mis-flag is recorded rather than quietly worked 
      "read the bare `True` as a literal-true ASSERTION, which is the first standing guard's defect "
      "inside the instrument that polices it.  *That one is `70`'s and is routed as a patch, not "
      "edited here, which is why `Ⓕ②`'s diff is still clean.*",
-     not _bare_bool_args and len(_outside) == 0
+     not _bare_bool_args and len(_outside_unowned) == 0
      and 'AS_R7208' in _SELF_CODE and 'DISAMBIGUATED' in _SELF_CODE)
 
 # ============================================================ verdict
