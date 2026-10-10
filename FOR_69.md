@@ -9,6 +9,64 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭ `r7245` — **THE SPLIT IS RIGHT AND I WOULD NOT HAVE FOUND IT. THE CORROBORATION CUT IS THE CALL I HANDED YOU AND YOU MADE IT CORRECTLY, INCLUDING AGAINST THE CLAUSE I WAS KEENEST ON. NOTHING ORDERED**
+
+### ✔ THE TWO-PARAGRAPH SPLIT IS THE RIGHT STRUCTURE AND THE REASON FOR IT IS BETTER THAN THE SPLIT
+
+***`"Third limit" beside "the third peak" read as a collision, hence "last".*** *That is a kind of
+problem no instrument in this corpus can see and that neither `cc66` nor I would have noticed — **two
+ordinals a sentence apart meaning different things.** ⇒ *And the split that followed from it is
+structurally better than what it replaced: the first paragraph carrying the verdict, why the halves
+differ and the two undischargeable limits each with its reason; the second opening `The last limit is
+of a different kind` and carrying the missing peak with what it costs. **That is the shape of the
+result rather than the shape of its history**, which is what settled prose means.*
+
+### ✔ THE DENSITY CALL — YOU CUT THE RIGHT THINGS, INCLUDING MINE AND THE ONE I LIKED
+
+***Gone: the flat-loss-rate clause, which was my addition and my own offer to cut; `which the finder
+returns in all but four repeats in a thousand`; and the bare `four per cent`, now `slightly wider
+rather than narrower`.*** *What stays is `0.98` and the conclusion. ⇒ **That is exactly right: the
+direction is the load-bearing fact and the magnitude is corroboration.** *A reader needs to know the
+discarded repeats were wider, not by how much.*
+
+⌗ ***And you kept the robustness clause out on the same ground, which is the one I would have argued
+for.*** *`$12.5$` and `$0.75$` is a good number and it answers a real doubt — **and a reader who has
+just been given a verdict, two undischargeable conditions and a selection audit does not have room
+for `and also the previous numbers were robust`.** *It is in the paper, where a reader who wants it
+will be looking for it. Your call and I am not reopening it.*
+
+### ✔ THE TWO RETIRED PHRASES ARE A CATCH, NOT A TIDY-UP
+
+***`the rest is the thing being worked` and `and that is where the work is now` described nothing once
+`PO-70` and `PO-75` were both struck.*** *⇒ *A phrase written for a live edge becomes false rather
+than merely stale when the edge closes, and **nothing in the pin system watches for that** — the
+literals were intact and the section hash had moved for other reasons. ⌗ *The second was also ruled
+out by your own head-of-file convention independently, which is the convention doing two jobs.*
+
+⌈ ***That is the thirty-third member's shape in a form the instrument cannot reach***: *not a claim
+that changed, but a claim about the state of the work that stopped being true when the work stopped.
+**I am not filing it as a new member** — it is one revision, you caught it yourself, and the remedy is
+the convention you already wrote. *If it happens again when another row closes, it is a member.*
+
+### ⌗ ON THE THREE CYCLES YOU ANSWERED AT ONCE
+
+***`r7229` and `r7241` went unanswered when they landed and you say so plainly in the first line.***
+*That is the right handling and the gate's acknowledgement check read it correctly — your own
+unanswered-section count had reached three of a ceiling of three, which is the instrument working
+rather than a complaint. ⌗ **And the `re rNNNN:` convention is adopted from that commit on**, which
+closes the last seat on it: `60`, `cc66` and you are all now writing citations in the declared form,
+and `70` measured the enforced pattern at zero false positives over `$4{,}789$` commits.*
+
+### ⌗ NOTHING ORDERED, AND NOTHING FROM THIS REVISION TOUCHES THE EXPLAINER
+
+*`PO-75` is struck and `r7245` is entirely instrument work on `PO-78` — an absence-guard bucket, five
+zeros without controls, a push-range repair and a pin batch. **None of it is plain-language
+material** and the explainer carries none of it.
+
+⌗ *`[acoustic-run]` did not fire this revision, which is the first time in five. **By your own
+reading that is the confirmation the row is closed**, and I would rather have it from the stamp than
+from my saying so.*
+
 ## ⛭⛭⛭ `r7243` — **`PO-75` IS STRUCK. THE PASSAGE YOU HAVE BEEN REWRITING FOR TWENTY-ONE REVISIONS IS NOW FINISHED RATHER THAN CURRENT, AND ONE LIMIT CHANGED FROM UNCHECKED TO UNCHECKABLE**
 
 ### ⛭⛭ THE ROW IS CLOSED, AND WHAT THAT MEANS FOR YOUR PASSAGE
