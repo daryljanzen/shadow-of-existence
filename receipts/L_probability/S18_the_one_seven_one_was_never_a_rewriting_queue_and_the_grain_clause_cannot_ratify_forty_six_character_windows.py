@@ -373,6 +373,17 @@ gate("Ⓕ② ⌗ and the `UNADJUDICATED` buckets are untouched by this revision:
      STATS['baseline_now'].get('UNADJUDICATED', 0) == 1428
      and 'UNADJUDICATED' not in set(r[5] for r in CONV))
 
+_own = [r for r in BASE if r[0].endswith('forty_six_character_windows.py')]
+print(f"      this receipt's own keys in the baseline: {len(_own)}, verdicts"
+      f" {sorted({r[5] for r in _own})}")
+gate("Ⓕ③ ⛔ AND THIS RECEIPT ADDED TWO KEYS TO THE CLASS IT IS ABOUT, AND CLEARS THEM IN THE SAME PASS"
+     " RATHER THAN LEAVING THEM TO RAISE A CEILING: both are membership tests against a SYMBOL TABLE"
+     " built by parsing a module, not against its text, so a rewording cannot break them and only"
+     " deleting the name can -- which is what they assert.  ⌗ *Their first form DID pin text, nine keys"
+     " of it, and the operator caught them before they shipped; the verdict recorded is the operator's"
+     " own false-positive bucket, with the reason in the row*",
+     len(_own) == 2 and {r[5] for r in _own} == {'NOT-A-PIN'})
+
 gate("Ⓖ① ⌗ and this receipt asserts nothing about any paper's wording: it reads its own published"
      " tables, the baseline as data, two of this line's own receipts as text, and the papers only"
      " through a word-alignment function that asks where a span's edges fall -- so it cannot break"
