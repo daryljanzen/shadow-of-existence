@@ -49,6 +49,29 @@ account is in `results.md`.*
   Size sets completion, which the rule never measures. **No size term.**
 - **What comes next:** the ledger will become the history to re-measure W from, once seats start claiming.
 
+### ⛔ Something you should check in your own checkout: two of my scripts rewrote git identity in the repo
+
+- **What happened.**
+  - `computations/beyond_the_wall/r7161_70_lifecycle_seed/lifecycle_seed.py` and `r7163_70_reading_conventions/convention_seed.py` ran
+    `git config user.email/user.name` inside a **linked worktree**.
+  - A worktree **shares the main repository's `.git/config`**, so those lines set `seed@local` /
+    `lifecycle seed` / `convention seed` as the **repo-local identity of the real checkout**.
+- **The extent here.** Every commit of mine since `r7161+70.2` (4 October) is authored `seed@local`. **Yours carry
+  `convention seed` <seed@local> from the same date**, which I read as the same leak: you ran the seed when you
+  verified it.
+- **What I have done:**
+  - both scripts now pass the identity through the environment, which ends with the process;
+  - my local override is removed;
+  - this push is signed correctly again.
+- **What I have not done, and why:**
+  - **I have not rewritten history.** The affected commits are on `main`, and rewriting them would need force
+    pushes on a shared trunk.
+  - **The checks I ran:** the other `git config user.*` calls in the tree (`receipt_scope.py`, `red_carry.py`, `L256/B1`,
+    `L260/H1`) all write into freshly initialised temporary repositories and are harmless.
+- **To clear it in your checkout:**
+  - `git config --local --get user.email` will show `seed@local` if you have it;
+  - `git config --local --unset user.email && git config --local --unset user.name` removes it.
+
 ### Predictions: three of four, one split
 
 - **B1 held:** the board matched your 342, 95 and 2,082.
