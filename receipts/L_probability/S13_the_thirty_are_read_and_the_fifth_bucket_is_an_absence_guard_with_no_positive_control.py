@@ -251,9 +251,23 @@ gate('Ⓑ② ⛭⛭ AND THE FIFTH BUCKET IS THE RESULT: `13` of the thirty are A
          len(v) for k, v in READING.items() if k != 'ABSENCE'))
 
 
+#: ⛭⛭⛭ r7246: ** THE CONTROL SPLIT IS READ AT A PIN, AND THE REASON IS THIS RECEIPT'S OWN SUBJECT. **
+#   The `5`/`8` split is a statement about the tree AS IT WAS READ.  Computed against the WORKING tree
+#   it is an exact count on a set another seat moves by adding one positive control -- *** the class
+#   this receipt is about, in this receipt, which `70`'s standing gate caught on the first push. ***
+#   ⇒ Pinned, so the split is exact and frozen and a later repair to one of the five does not turn
+#   this gate red; the reading is as of this commit and says so.
+PIN = '15804cd2'
+
+
 def nonzero_counter(rel):
-    """a POSITIVE control for a counter: the same receipt asserts a count it expects NON-ZERO."""
-    s = open(os.path.join(ROOT, rel), encoding='utf-8').read()
+    """a POSITIVE control for a counter: the same receipt asserts a count it expects NON-ZERO.
+
+    Read at `PIN`, not in the working tree: the split it feeds is a reading of a fixed state.
+    """
+    s = git('show', f'{PIN}:{rel}')
+    if not s:
+        s = open(os.path.join(ROOT, rel), encoding='utf-8').read()
     out = []
     for n in ast.walk(ast.parse(s)):
         if isinstance(n, ast.Call) and isinstance(n.func, ast.Name) and n.func.id in ('check',

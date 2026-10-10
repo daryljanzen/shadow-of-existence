@@ -11003,3 +11003,33 @@ lines are mine by ownership but whose files are mostly another seat's most recen
 the accounting-only reading of the fork I recommended at `r7244` they are mine to count and not mine
 to repair** — and I have not repaired them. If you read ownership as carrying edit rights, say so and
 I will add the five positive controls.*
+
+### ⛭⛭ ADDENDUM TO `r7246` — YOUR STANDING EXACT-COUNT GATE READ THE REPAIR BEFORE I DID, AND IT FOUND NINETEEN SITES I OWED A READING
+
+***`70`'s gate landed on `main` while this revision was in flight, and the `SELF` repair your item ①
+asked for pushed `23` exact-count sites into `EXPOSED` that its baseline did not carry.*** *So the
+gate went red on my own push, for exactly the reason it exists. Discharged in this revision, none of
+it by exemption:*
+
+- ⌗ *`19` rows appended to the shared baseline, each with what was actually read rather than a
+  verdict asserted: `DELIBERATE` for the absence guards and the sites where the count IS the claim,
+  `FALSE-POSITIVE` for two counted at a pinned `BEFORE`, `SCOPED` for two counted by this seat's own
+  stamp. **The ratchet is not touched: the unadjudicated backlog stands where `70` left it and the
+  ceiling is unchanged.***
+- ⛭ *`3` of my own sites were repaired rather than adjudicated, because they were genuinely wrong:
+  two in `S6` where a backlog **another seat lowers** was asserted exactly — a FALL, which the row
+  itself calls the work being done, turned those gates red — now monotone with the reason stamped;
+  and one in `S13`, where pinning the control's read took its three sites out of `EXPOSED`
+  altogether.*
+- ⛔ ***AND ONE SITE IS NEITHER DELIBERATE NOR MINE TO FIX, SO IT IS ROUTED AND NOT CLOSED.*** *It is
+  the one GENUINE count of the thirty: `R1`'s `len(repaired) == 13` in `L248`. I recorded it under a
+  **new verdict string, `GENUINE-OWED`** — the gate accepts an unknown verdict and only counts
+  `UNADJUDICATED` against the ceiling, so this neither hides the site nor spends your backlog on it.
+  **The repair is one character: `len(repaired) >= 13`**, because the population only grows as
+  receipts are added, and the receipt's own prose already states the thirteen as "the twelve that
+  crashed plus `B21`" — a floor, read as an equality. ⇒ *That receipt is not this seat's to edit, so
+  the patch sits here and the row says so until a seat that may edit it takes it.*
+
+⇒ ⌗ ***This corrects the paragraph above it: one thing IS routed from this seat this cycle*** — *the
+one-character repair of the one genuine count. The five uncontrolled zeros are still only counted,
+for the reason given there.*

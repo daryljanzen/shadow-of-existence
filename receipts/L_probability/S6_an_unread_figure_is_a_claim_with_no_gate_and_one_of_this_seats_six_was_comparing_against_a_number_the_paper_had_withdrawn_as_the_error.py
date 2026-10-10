@@ -271,7 +271,10 @@ print(f"      the gate's baseline now carries {len(_live_owed)} owed site(s), "
 gate("Ⓒ② the backlog falls `22` → `16` and this seat's share of it falls to `0` --- and it falls "
      "because the SITES ARE GONE: each now reads the paper, so the gate reported them stale and the "
      "rows were dropped, which is a fall by running and never by reclassification",
-     len(_live_owed) == 16 and len(_live_mine) == 0 and len(_live_owed) < len(OWED))
+     # ⛭ r7246 (60): `== 16` was an exact count on a backlog ANOTHER SEAT LOWERS -- so a fall, which
+     #   the row calls the work being done, turned this gate red.  Monotone now; the `0` stays exact
+     #   because it is an absence guard and firing on this seat's share RETURNING is its purpose.
+     len(_live_owed) <= 16 and len(_live_mine) == 0 and len(_live_owed) < len(OWED))
 
 _M_OK = (12 * (2 * 1.0) ** 2) == (48 * 1.0 ** 2)
 gate("Ⓒ③ ⌗ and one repair reconciled two SPELLINGS of one object rather than just pinning it: the "
@@ -395,7 +398,10 @@ gate("Ⓔ② ⇒⇒ SO THE HYPOTHESIS IS REPORTED AS IT CAME BACK, WHICH IS NOT 
      "--- but `19` of `22` is a MEASUREMENT ON THIS BACKLOG and not a proof that the two classes are "
      "one object.* ⛔ **The unification is named as a reading, the count is named as a count, and the "
      "reading is NOT written into any gate**",
-     sum(_attr) == 19 and len(OWED) == 22 and len(_live_owed) == 16)
+     # ⛭ r7246 (60): the same fall that turned `Ⓒ②` red reaches here -- the `16` is the LIVE
+     #   backlog, which another seat lowers, and it is incidental to this gate's subject.  Monotone;
+     #   `19` and `22` stay exact because both are read at a PIN and cannot move.
+     sum(_attr) == 19 and len(OWED) == 22 and len(_live_owed) <= 16)
 
 # ============================================================ F. self
 head("F.  THIS RECEIPT'S OWN EXPOSURE")
