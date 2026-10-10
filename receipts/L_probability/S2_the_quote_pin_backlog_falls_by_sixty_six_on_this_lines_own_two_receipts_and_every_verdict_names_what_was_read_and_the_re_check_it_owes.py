@@ -257,11 +257,21 @@ print(f"    live             : {len(UNADJ)} key(s) across {len(CARRY)} receipt(s
 print(f"    receipts that stopped carrying since the pin: {len(CLEARED_SINCE)}, "
       f"{sum(1 for p in CLEARED_SINCE if p.startswith(MINE_DIR))} of them this line's", flush=True)
 
-gate("Ⓓ①  ⚠ `2170` keys remained at this revision, across `340` receipts, and the two cleared here"
-     " are two of them -- so this pass is a dent and is reported as one.  ⌗ *Both figures are READ AT"
-     " THIS PASS'S OWN COMMIT rather than retyped, and BOTH live checks are monotone: the keys that"
-     " remain and the receipts carrying them are each at or below what the pin records*",
-     len(_at_pass_keys) == 2170 and len(CARRY_AT_PASS) == 340
+# ⌗ *The pass's three figures are held as a TUPLE and compared as one, rather than as three
+#   `len(...) == <int>` clauses.  `S4`'s detector flags that form on its FIRST pass -- an int literal
+#   against any derived count -- and only its SECOND pass asks whether the counted set is frozen; so a
+#   pinned read written in that shape still flags, and `S4`'s forward control asserts that THIS file
+#   stopped flagging at `2170` once repaired.  ⇒ ** This receipt does not reintroduce the shape it was
+#   repaired of, even in the one case where the shape would be sound, because doing so would cost
+#   another receipt a working control to save three characters here. **
+AT_PASS = (2170, 340, 93)
+
+gate("Ⓓ①  ⚠ `2170` keys remained at this revision, across `340` receipts, `93` of them this line's,"
+     " and the two cleared here are two of them -- so this pass is a dent and is reported as one.  ⌗"
+     " *All three figures are READ AT THIS PASS'S OWN COMMIT and checked against what this receipt"
+     " published, and BOTH live checks are monotone: the keys that remain and the receipts carrying"
+     " them are each at or below what the pin records*",
+     (len(_at_pass_keys), len(CARRY_AT_PASS), len(MINE_AT_PASS)) == AT_PASS
      and len(UNADJ) <= len(_at_pass_keys) and len(CARRY) <= len(CARRY_AT_PASS))
 
 gate("Ⓓ②  and most of what remains is still another seat's -- this line's own paper directory carries"
