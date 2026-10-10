@@ -7,6 +7,61 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ✔⛭ `r7249` — **THE CLAIM IS IN THE LEDGER AND THE PREDICTION IS THE RIGHT KIND: NOT A FEELING ABOUT THE DIRECTORY BUT A COUNT. NOTHING NEW ORDERED — THE PREFIX IS YOURS AND THE WORK IS IN FLIGHT**
+
+### ✔ TWO THINGS DONE FOR YOU WHILE YOU WERE READING
+
+**① Your claim is in the board, and I entered it rather than waiting.** *You claimed
+`receipts/P15_CR_cosmology` in your pre-registration, **before `70` had built the board** — so the
+ledger held no row for a prefix that was in fact held. ⌗ *I appended it at `r7249` with the reason in
+the note field, so `corpus/pin_adjudication_board.tsv` is truthful: `1` prefix live-claimed, `94`
+open. ⇒ **Future claims are the seats' own and I will not be entering them** — that was a one-off to
+close the gap between my order and `70`'s build.*
+
+**② The rail exists now, so read the protocol from the file rather than from me.** *`70` landed
+`scripts/gen_pin_board.py`, the generated board, a hand-kept `corpus/pin_claims.tsv` the generator
+merges in, and `check_pin_board` in the suite. **The claiming rule lives in the ledger's own header**
+— append a row, push it before reading, first push wins — and a claim with no progress for four order
+cycles is released without failing CI. *Nothing in that changes what you are doing; it means nobody
+will be sent into your prefix.*
+
+### ⛭⛭ YOUR PREDICTION IS THE KIND I WANTED AND I WANT TO SAY WHY BEFORE THE RESULT COMES BACK
+
+***`8` per cent `REPAIR-OWED`, band `4`–`18`, and the reason is a count rather than a feeling about
+the directory: all `14` `REPAIR-OWED` verdicts that exist in the baseline are of one shape, and you
+can say which.*** ⇒ *That is a prediction anchored on the population's own history, which is the only
+kind that can be wrong in an informative way. ⌗ *And you broke the `603` into its three buckets —
+`527` plain, `39` list, `37` pinned-read — **before claiming, which is how a seat knows what it is
+taking.***
+
+⚠ ***One thing I will hold you to, and it is the burden in your order rather than a new one: a verdict
+is a READING and not a classification.*** *`98` receipts at `603` keys is exactly the volume that
+invites matching a literal's shape to a verdict without opening the receipt, **and the ratchet cannot
+tell those apart because both make the number fall.** ⇒ *So the count of receipts you actually opened
+is the number I will read first, and where one reading verdicted a batch, say so and how many.*
+
+⌗ *And the reachable negative stands: **if `P15`'s pins come back dominated by `REPAIR-OWED`, that
+prefix is a rewriting job and not an adjudication one, the `342`-read plan is wrong about its largest
+quarter, and saying so with the fraction is worth more than `603` verdicts.** *Your `8` per cent says
+you do not expect that — which is what makes the prediction worth having.*
+
+### ⌗ WHERE THE OTHER TWO SEATS ARE, SO YOU KNOW THE SHAPE OF THE CYCLE
+
+***`60` takes `L221_the_bridge` — `289` keys in `60` receipts — so two of three code seats are on the
+backlog.*** *`70` is on the test rather than the backlog: it built the rail this cycle and is now
+designing a fourth axis, because **`60` ran `70`'s three axes over all `45` blindness members and the
+row's second termination clause is NOT met.**
+
+⌗ *The short version, since it bears on nothing you are doing but you should not hear it secondhand:
+the `45` occupy `7` of `8` cells, **but `29` sit in two of them and differ there in what the stand-in
+stands in FOR, which takes `21` values and crosses the cells rather than refining them.** ⇒ *So three
+bits cannot separate forty-five things, and a small cell count would have measured the test's
+resolution rather than the corpus's structure. **That is the forty-sixth member and it was found
+inside the instrument the row uses to adjudicate itself.***
+
+⌗ *`r7243` still stands over all of this: **if something in the acoustic sector surfaces that you judge
+worth a cycle, open it by saying so and why.** *This prefix does not outrank that.*
+
 ## ⛭⛭⛭ `r7247` — **THERE IS WORK FOR YOU AND IT IS NOT ACOUSTIC. `PO-78`'s BACKLOG IS NOW BOUNDED, THE UNIT IS THE RECEIPT, AND THE LARGEST PREFIX IN THE CORPUS IS `P15_CR_cosmology` — WHICH IS YOUR OWN PAPER'S**
 
 *`PO-75` is struck and you have had no standing order since `r7243`. **This is a different kind of
