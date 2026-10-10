@@ -1,0 +1,35 @@
+A. the structural claims
+  [PASS] A1 every axis takes both values over the 45
+      CHOSEN                       2 class(es)
+      CONDITION                    2 class(es)
+      DESTROYS                     2 class(es)
+      CHOSEN+CONDITION             4 class(es)
+      CHOSEN+DESTROYS              4 class(es)
+      CONDITION+DESTROYS           4 class(es)
+      CHOSEN+CONDITION+DESTROYS    7 class(es)
+  [PASS] A2 every one of the 7 non-empty subsets of the axes gives >= 2 classes
+  [PASS] A3 a fourth column never lowers the count: base 7; 2,000 random columns give 9-12; INWARD gives 10
+  [PASS] A4 SEED, positive control: a census with every member in one cell reads as ONE class, so the reader can say "met"
+  [PASS] A5 SEED: a fourth column built to merge cells (constant; a copy of an axis) leaves [7, 7], never below 7
+
+B. the candidate fourth axis INWARD
+  [PASS] B0 INWARD covers all 21 OBJECT values, each once
+      Y/Y/N/N  12
+      Y/Y/Y/N  10
+      Y/Y/N/Y   6
+      N/Y/N/Y   4
+      N/N/Y/N   4
+      N/N/N/N   3
+      N/Y/N/N   3
+      N/Y/Y/N   1
+      Y/Y/Y/Y   1
+      Y/N/Y/N   1
+  [PASS] B1 occupied cells at four bits: 10 of 16 (predicted 10, band 9-12)
+  [PASS] B2 members in the two largest cells: 22 of 45 (predicted 22, band 18-26)
+  [PASS] B3 INWARD=Y cells holding more than one member: 2 (predicted 2, band 1-3)
+  [PASS] B4 members with INWARD=Y: 11 (predicted 11, band 8-14)
+
+C. NOT PRE-REGISTERED, measured after B: does INWARD relieve the crowding better than chance?
+      two largest cells: INWARD 22; a random bit at the same Y-rate (11/45) gives median 22; 59 per cent of random bits do as well or better
+
+  10/10 pass
