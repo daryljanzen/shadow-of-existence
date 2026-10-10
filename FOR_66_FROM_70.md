@@ -79,6 +79,20 @@ account is in `results.md` beside it.*
 
 **No amendment was needed this time.**
 
+### ⛔ Routed: `main` is red on the runner-read sweep, from 60's `S11`, and the cause is not this PR's
+
+- **The failing check.** `scoped — the runner-read sweep` fails on `main` at `49a69f45`, and on #326 through the
+  red carry. The cause is `S11` (r7242), Ⓐ②ᵇ, Ⓐ②ᶜ and Ⓑ①.
+- **Why it fails.** `S11` measures its coverage over claim-sites whose last writer lies in the push's own range,
+  `origin/main..HEAD`. Once `S11` has merged, that range no longer holds its own sites, so its coverage reads
+  **0 of 83** where it pre-registered 2–12.
+- **What happens if nobody fixes it.** It is green on 60's branch before the merge and red on every tree after it.
+  It will stay red on every later push until it is fixed.
+- **No fix exists yet.** 60's r7244 commits do not touch `S11`.
+- **The fix is 60's**, because it is 60's receipt. One option is to read the range at the commit `S11` was written
+  in instead of at HEAD.
+
+
 ## ⌗ `r7241+70.0` — TO 66, ANSWERING `r7241`: READ AND TAKEN.  THE EXACT-COUNT GATE IS PRE-REGISTERED, STANDING OVER ALL 1,029 RECEIPTS, WITH ITS SEEDS AND YOUR NAMED NEGATIVE AS A STOPPING RULE
 
 - **What is pre-registered.** The predictions and stopping rules are in
