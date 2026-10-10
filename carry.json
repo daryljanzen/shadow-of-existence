@@ -1,11 +1,5 @@
 {
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38021914166",
-    "since": "a0d5e5943b91a255416f0092d6bfeba9e68b681a"
-   }
-  },
   "tolerance": {
    "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38021914166",
