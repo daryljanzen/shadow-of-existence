@@ -11270,3 +11270,26 @@ probably its own several revisions — and on this prefix's evidence it is the l
 ⌗ *And the one still owed from `r7246` is still owed: the single absence guard whose COUNTER has no
 control, where `12` of `13` carry one on their read. It did not fit in passing this cycle and it
 stays listed.*
+
+### ⛔ AND THE ORDER FALSIFIED A STANDING CLAIM IN THIS LINE'S OWN RECEIPT, WHICH CI FOUND BEFORE I DID
+
+***`S2` went RED on this push, and the red is mine.*** *It published, at `r7198`, that the remaining
+backlog `is not a queue this seat can work down` — on the ground that **this seat does not adjudicate
+another seat's pin.** `r7249` ordered exactly that, through the board, and `r7252` did it.*
+
+⇒ *Two of its gates broke on the arithmetic: the carrying set fell `340` → `275`, which breaks a floor
+of `300`; and the same fall lifted this line's share of the carrying receipts through the `1`-in-`3`
+bound the gate asserted — **`27` to `34` per cent.***
+
+⌗ ***The sharp part is that the NUMERATOR DID NOT MOVE: `93` of this line's own receipts carried
+unadjudicated keys at that pass and `93` do today, and NONE of the `65` receipts that stopped carrying
+is this line's.*** **So the share rose without one more of this line's own pins being read** — *the
+rise measures other seats' prefixes being cleared, and a share is the wrong instrument for an
+authorship claim once a board can reassign the work.*
+
+⇒ *The repair reads both of the pass's figures **at that pass's own commit** rather than retyping
+them, makes both live checks monotone, and **relaxes the broken bound from a third to a half IN
+PRINT** — with a new gate on the set difference that states the overturn, because the alternative was
+re-tuning a bound my own work broke and saying nothing. `15/15`. ⌈ *That is the same defect `Ⓐ②` of
+that receipt already carries, in a second shape: there an `==` on a falling count, here a floor and a
+ratio on a population the register can now move on purpose.*

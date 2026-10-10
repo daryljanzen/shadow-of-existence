@@ -42,20 +42,30 @@ the two gates that check each row's note against the KIND of literal it sits on,
 those gates are the reason the errors did not ship.** *Which is also the honest report on this pass:
 the bulk adjudication was `96` per cent right and the checks found the rest.*
 
-⚠ ** WHAT THIS IS NOT. ** *`2170` keys remain, across `340` receipts, and almost all of them are other
-seats'.* ***This seat does not adjudicate another seat's pin: the verdict is a judgement about what
-that receipt's gate is FOR, and that is theirs to state.*** *So this pass is bounded by authorship and
-not by effort, and the remaining backlog is not a queue this seat can work down alone.* ⌗ *The ceiling
-is untouched at `2287`, as the ratchet requires.*
+⚠ ** WHAT THIS IS NOT. ** *`2170` keys remain at this pass, across `340` receipts, and almost all of
+them are other seats'.* *So this pass is bounded by authorship and not by effort.* ⌗ *The ceiling is
+untouched at `2287`, as the ratchet requires.*
+
+⛭⛭⛭ ** AND THE AUTHORSHIP BOUND IN THAT PARAGRAPH HAS SINCE BEEN OVERTURNED, BY AN ORDER. ** *It read
+`this seat does not adjudicate another seat's pin`.*  ⇒ ***`r7249` put `L221_the_bridge` -- another
+seat's prefix -- on this seat through the adjudication board, and `r7252` cleared `288` keys across
+`60` of its receipts.*** **So `what is left` IS a queue this seat can be told to work, and `Ⓓ②ᵇ`
+measures the consequence rather than leaving the old sentence standing: the carrying set fell `340` ->
+`275` with the `93` receipts under this line's own directory UNCHANGED, which lifted this line's share
+from `27` to `34` per cent without one more of its own pins being read.** *The `Ⓓ②` bound that share
+broke is relaxed in print, not re-tuned in silence.*
 
 ** COMPUTES: the baseline's own row structure -- the stamped rows' count, their verdicts, their
 receipts, the three kinds and their counts, the presence of a read and of a re-check duty in every
-note, and the residual unadjudicated count on the two receipts cleared.  Reads the baseline as DATA
-and asserts nothing about any paper.  No assertion on wall-clock time. **
+note, and the residual unadjudicated count on the two receipts cleared.  Plus the carrying set at this
+pass's own commit, read with `git show` at a pin rather than retyped, and the set difference against
+the live baseline that says which receipts stopped carrying since.  Reads the baseline as DATA and
+asserts nothing about any paper.  No assertion on wall-clock time. **
 """
 import json
 import os
 import re
+import subprocess
 import time
 
 t_all = time.time()
@@ -207,17 +217,67 @@ gate("Ⓒ④  and the RULE rows carry the reading that fits them: each note says
 # =====================================================================================
 head("D -- AND WHAT IS LEFT IS NOT A QUEUE THIS SEAT CAN WORK DOWN")
 
-gate("Ⓓ①  ⚠ `2170` keys remained at this revision, across more than three hundred receipts, and the"
-     " two cleared here are two of them -- so this pass is a dent and is reported as one.  ⌗ *`2170`"
-     " is this pass's own figure and the live check is monotone: what remains is at or below it*",
-     len(UNADJ) <= 2170 and len({r[0] for r in UNADJ}) > 300)
+# ** ⛭⛭⛭ REPAIRED r7252, AND THE DEFECT IS THE ONE `Ⓐ②` ALREADY CARRIES, IN A SECOND SHAPE. ***
+#   `Ⓓ①` gated `> 300` carrying receipts and `Ⓓ②` gated a share below a third.  BOTH WENT RED AT
+#   `r7252`, when the order of `r7249` had this seat clear `288` keys across `60` receipts of ANOTHER
+#   seat's prefix: the carrying set fell `340` -> `275`, which breaks a `> 300` floor, and the SAME
+#   fall lifted this line's SHARE through a third without this seat adjudicating one more of its own.
+#   ⇒ ** So the pass's own figures are READ AT A PIN, both live checks are MONOTONE in the direction
+#   `PO-78` allows, and `Ⓓ②`'s bound is RELAXED IN PRINT from a third to a half -- because the share
+#   really did rise through one, and a receipt may not quietly re-tune a bound its own work broke. **
+PASS_PIN = '49bdc46d'
 
-gate("Ⓓ②  and almost all of what remains is another seat's: fewer than a third of the receipts"
-     " carrying unadjudicated keys sit under this line's own paper directory, and this seat does not"
-     " adjudicate another seat's pin -- the verdict is a judgement about what that receipt's gate is"
-     " FOR, which is theirs to state",
-     sum(1 for p in {r[0] for r in UNADJ} if p.startswith('receipts/P15_CR_cosmology/'))
-     < len({r[0] for r in UNADJ}) / 3)
+
+def _git(*a):
+    return subprocess.run(('git',) + a, cwd=ROOT, capture_output=True, text=True,
+                          errors='replace').stdout
+
+
+def _carriers(text):
+    rs = [ln.split('\t') for ln in text.split('\n') if ln.strip() and not ln.startswith('#')]
+    return {r[0] for r in rs if len(r) >= 7 and r[5] == 'UNADJUDICATED'}
+
+
+MINE_DIR = 'receipts/P15_CR_cosmology/'
+_at_pass_raw = _git('show', f'{PASS_PIN}:corpus/quote_pin_baseline.tsv')
+_at_pass_keys = [r for r in
+                 (ln.split('\t') for ln in _at_pass_raw.split('\n')
+                  if ln.strip() and not ln.startswith('#'))
+                 if len(r) >= 7 and r[5] == 'UNADJUDICATED']
+CARRY_AT_PASS = _carriers(_at_pass_raw)
+CARRY = {r[0] for r in UNADJ}
+MINE_AT_PASS = {p for p in CARRY_AT_PASS if p.startswith(MINE_DIR)}
+MINE_NOW = {p for p in CARRY if p.startswith(MINE_DIR)}
+CLEARED_SINCE = CARRY_AT_PASS - CARRY
+print(f"    at the pin {PASS_PIN}: {len(_at_pass_keys)} key(s) across {len(CARRY_AT_PASS)} "
+      f"receipt(s), {len(MINE_AT_PASS)} of them this line's "
+      f"({len(MINE_AT_PASS) / len(CARRY_AT_PASS):.1%})")
+print(f"    live             : {len(UNADJ)} key(s) across {len(CARRY)} receipt(s), "
+      f"{len(MINE_NOW)} of them this line's ({len(MINE_NOW) / len(CARRY):.1%})")
+print(f"    receipts that stopped carrying since the pin: {len(CLEARED_SINCE)}, "
+      f"{sum(1 for p in CLEARED_SINCE if p.startswith(MINE_DIR))} of them this line's", flush=True)
+
+gate("Ⓓ①  ⚠ `2170` keys remained at this revision, across `340` receipts, and the two cleared here"
+     " are two of them -- so this pass is a dent and is reported as one.  ⌗ *Both figures are READ AT"
+     " THIS PASS'S OWN COMMIT rather than retyped, and BOTH live checks are monotone: the keys that"
+     " remain and the receipts carrying them are each at or below what the pin records*",
+     len(_at_pass_keys) == 2170 and len(CARRY_AT_PASS) == 340
+     and len(UNADJ) <= len(_at_pass_keys) and len(CARRY) <= len(CARRY_AT_PASS))
+
+gate("Ⓓ②  and most of what remains is still another seat's -- this line's own paper directory carries"
+     " a MINORITY of the receipts holding unadjudicated keys -- while THE BOUND THIS GATE PUBLISHED"
+     " HAS BROKEN: it read `fewer than a third` and the live share is above one.  ⌗ *Relaxed to a half"
+     " in print rather than re-tuned in silence, because the rise is a RESULT and not noise*",
+     0 < len(MINE_NOW) < len(CARRY) / 2)
+
+gate("Ⓓ②ᵇ ⛔ AND THE RISE MEASURES OTHER SEATS' PREFIXES BEING CLEARED, NOT THIS SEAT WORKING ITS OWN:"
+     " of the receipts that stopped carrying since the pin, NONE is this line's -- so the numerator"
+     " stood still while the denominator fell, and the share rose without one more of this line's own"
+     " pins being adjudicated.  ⇒ ***Which overturns this section's own title: `r7249` ordered this"
+     " seat to take another seat's prefix on the adjudication board, so what is left IS a queue this"
+     " seat can be told to work -- the opposite of the authorship bound `Ⓓ②` was written to state***",
+     len(CLEARED_SINCE) > 0 and not any(p.startswith(MINE_DIR) for p in CLEARED_SINCE)
+     and len(UNADJ) < len(_at_pass_keys))
 
 gate("Ⓓ③  ⌗ and this receipt asserts nothing about any paper: it reads the baseline as DATA and"
      " every gate above is a property of that file, so it cannot break when a paper is reworded --"
@@ -267,11 +327,18 @@ print("""
       as work done -- and the two gates that check each note against the
       kind of literal it sits on are the reason neither error shipped. ***
 
-  WHAT IS LEFT IS NOT A QUEUE THIS SEAT CAN WORK DOWN: 2170 keys remain
-  across more than three hundred receipts, and almost all are other seats'.
-  This seat does not adjudicate another seat's pin -- the verdict is a
-  judgement about what that receipt's gate is FOR, and that is theirs to
-  state.  So the pass is bounded by authorship rather than by effort.
+  WHAT IS LEFT WAS CALLED A QUEUE THIS SEAT COULD NOT WORK DOWN: 2170 keys
+  remained at this pass across 340 receipts, almost all other seats', on the
+  ground that the verdict is a judgement about what that receipt's gate is
+  FOR and that is theirs to state.
+
+  *** AND r7249 OVERTURNED THAT BY PUTTING ANOTHER SEAT'S PREFIX ON THIS
+      SEAT THROUGH THE ADJUDICATION BOARD.  r7252 cleared 288 keys across
+      60 of its receipts, the carrying set fell 340 -> 275, and the 93
+      receipts under this line's own directory DID NOT MOVE -- so this
+      line's share rose from 27 to 34 per cent without one more of its own
+      pins being read.  The share bound this gate published broke, and it
+      is relaxed in print rather than re-tuned in silence. ***
 
   THE GUARD: when a backlog may only fall, the thing to gate is not that
   it fell but that each item it fell by was read.  A count that can only
