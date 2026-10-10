@@ -209,16 +209,26 @@ head('B.  THE FOUR NUMBERS THE ORDER NAMED, EACH RECOUNTED OVER OWNERSHIP')
 _pe = [s for s in PATHS if s[4] == 'EXPOSED']
 _me = [s for s in MINE if s[4] == 'EXPOSED']
 print(f"      EXPOSED: path scope {len(_pe)}  ->  ownership {len(_me)}")
-# ⛭⛭ r7246 (60): ** THE BAND WAS PRE-REGISTERED AGAINST A PARTITION THAT HAS SINCE BEEN REPAIRED,
-#   AND THE REPAIRED FIGURE IS ABOVE IT. **  *re `r7246`*: `70` reported the `SELF` test filing every
-#   comprehension as self-declared; the repair moves twenty-five sites into `EXPOSED`, so this
-#   revision's own `5`-`30` band is overshot.  ⇒ *** The band is recorded as REFUTED HIGH rather than
-#   re-centred, and the relation the order asked for -- ownership larger than the path -- is what the
-#   gate asserts. ***
-gate(f'Ⓑ① the EXPOSED bucket goes from `{len(_pe)}` over the path to `{len(_me)}` over ownership, '
-     f'and the `5`-`30` band this revision pre-registered is REFUTED HIGH once `r7246` repairs the '
-     f'partition it was measured under -- *the direction holds and the magnitude was understated*',
-     len(_me) > len(_pe) and len(_me) > 30)
+# ⛭⛭ r7246 (60): ** THE BAND WAS PRE-REGISTERED AGAINST A PARTITION THAT HAS SINCE BEEN REPAIRED. **
+#   *re `r7246`*: `70` reported the `SELF` test filing every comprehension as self-declared; that
+#   repair moved twenty-five sites into `EXPOSED` and the figure read `32`, over the band.
+# ⛭⛭⛭ r7246 (60), SECOND PASS: ** AND THEN IT MOVED AGAIN, INSIDE THE SAME REVISION. **  Discharging
+#   `70`'s standing exact-count gate repaired five more sites of this seat's own -- three by pinning a
+#   control's read, two by making a falling backlog monotone -- and each repair REMOVES a site from
+#   `EXPOSED`.  The figure fell `32` → `30`, which is the band's upper edge rather than above it.
+#   ⇒ *** So this receipt's own finding recurred inside one revision: an exact bucket size cannot be
+#   gated at all while the partition is still being repaired, and `> 30` was the same defect in a
+#   softer spelling.  The band's verdict is REPORTED here and gated nowhere; what the gate asserts is
+#   the relation the order actually asked for -- ownership larger than the path -- which is
+#   scale-free and moves with neither a repair nor a new receipt. ***
+print(f"      the pre-registered `5`-`30` band: read {len(_me)} -- "
+      f"{'AT its upper edge' if len(_me) == 30 else ('INSIDE it' if len(_me) < 30 else 'ABOVE it')}, "
+      f"reported and not asserted, because every repair of a site lowers it and every new receipt "
+      f"raises it")
+gate(f'Ⓑ① the EXPOSED bucket goes from `{len(_pe)}` over the path to `{len(_me)}` over ownership '
+     f'-- *the direction the order asked for, and the only part of this measurement that survives the '
+     f'next repair of the partition it is counted under*',
+     len(_me) > len(_pe))
 
 R7227 = '9ce054ba'
 _edited = [p for p in git('show', '--name-only', '--format=', R7227).split('\n')
@@ -358,7 +368,7 @@ gate('Ⓔ② ⌗ and the test is PARTLY CIRCULAR, which is stated rather than le
 head('F.  THE ANSWER TO r7241')
 
 gate('Ⓕ① *** LARGER, AND NOT BY A LITTLE: the class goes from the path`s count to a bigger one over '
-     'ownership, the exposed bucket triples, and the `6` sites this seat was carrying that are not '
+     'ownership, the exposed bucket nearly doubles, and the `6` sites this seat was carrying that are not '
      'its own are named. ***  ⇒ *But the rule as ordered has three costs this revision measures '
      'rather than asserts: a few of the sites it hands over sit in receipts this seat may not edit, '
      'it leaves a no-revision-id bucket unowned, and it migrates*',
@@ -375,7 +385,7 @@ print("""
   the direction that does not shrink the seat's obligations.  The gain is sites this seat last wrote
   in other seats' directories; the loss is six sites in its own, two of which leave to commits
   carrying no revision id at all, so a parity rule has an unowned third bucket it does not name.
-  The exposed bucket triples.  And the reason the class grows is not the one this receipt's own
+  The exposed bucket nearly doubles.  And the reason the class grows is not the one this receipt's own
   first draft expected: almost every owned site outside the two directories is in a receipt this seat
   itself introduced, so the path scope was too NARROW rather than merely impure.  The conflict with
   the editing rule is real and small -- a handful of owned sites on the do-not-edit list, none of
