@@ -347,20 +347,39 @@ for _ln in open(os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv'), encoding
     _r = _ln.split('\t')
     if len(_r) >= 7:
         _live[(_r[0], _r[1])] = _r
-_trunk_raw = _git('show', 'origin/main:corpus/quote_pin_baseline.tsv')
 _p15_live = [v for k, v in _live.items() if k[0].startswith('receipts/P15_CR_cosmology/')]
-_p15_trunk = [ln for ln in _trunk_raw.split('\n')
-              if ln.startswith('receipts/P15_CR_cosmology/')]
-_p15_same = sorted('\t'.join(r) for r in _p15_live) == sorted(_p15_trunk)
+
+# ⛔ *The first form of this gate read `origin/main` LIVE and asserted the working tree's `P15` rows
+#   were identical to it.  That is a claim about THIS REVISION's own commits written as a claim about
+#   a moving reference: the moment `cc66` re-stated its own rows under the settled rule and the gate
+#   landed on the trunk beside them, it went red -- on the other seat's success, with nothing of this
+#   revision's changed.  **The same shape as `S2`'s `Ⓓ②ᵇ`, in the revision whose reply endorsed that
+#   repair.**  ⇒ *So the claim is now read where it is TRUE and CHECKABLE: between this revision's own
+#   two pinned commits, which is a statement about what this branch wrote and nothing else.*
+#   Repaired by node `66` at `r7253`, whose merge brought the branches together; stated for `60` to
+#   reverse.
+BRANCH_TIP = '2ae79bbe'
+BRANCH_BASE = '3bf0ac52'
+
+
+def _p15_rows_at(_rev):
+    return sorted(ln for ln in _git('show', f'{_rev}:corpus/quote_pin_baseline.tsv').split('\n')
+                  if ln.startswith('receipts/P15_CR_cosmology/'))
+
+
+_p15_same = _p15_rows_at(BRANCH_TIP) == _p15_rows_at(BRANCH_BASE)
 _board = open(os.path.join(ROOT, 'corpus', 'pin_claims.tsv'), encoding='utf-8').read()
 _claimed = [ln for ln in _board.split('\n') if ln.startswith('P15_CR_cosmology')]
-print(f"      P15 rows in the working tree: {len(_p15_live)};  identical to the trunk's:"
-     f" {_p15_same};  board rows naming the prefix: {len(_claimed)}")
-gate("Ⓕ① ⛔ THE FORTY VERDICTS ARE PUBLISHED AND NOT WRITTEN: every `P15_CR_cosmology` row of the"
-     " baseline in this tree is byte-identical to the trunk's, because that prefix is ANOTHER SEAT'S"
+print(f"      P15 rows in the working tree: {len(_p15_live)};  this revision's own commits left the"
+     f" prefix untouched ({BRANCH_BASE}..{BRANCH_TIP}): {_p15_same};  board rows naming the prefix:"
+     f" {len(_claimed)}")
+gate("Ⓕ① ⛔ THE FORTY VERDICTS ARE PUBLISHED AND NOT WRITTEN: across this revision's own commits not"
+     " one `P15_CR_cosmology` row of the baseline changed, because that prefix is ANOTHER SEAT'S"
      " CLAIM on the adjudication board and a claim is what the board is for.  ⇒ *So this revision"
      " lowers the backlog by nothing and says so; the thirteen keys the other seat has not read are"
-     " a reading routed to it, not a stamp applied over it*",
+     " a reading routed to it, not a stamp applied over it*  ⌗ *Read between this revision's own two"
+     " pinned commits rather than against a live `origin/main`, which is the repair this revision's"
+     " own reply endorsed for `S2` and then needed here*",
      _p15_same and len(_p15_live) > 900)
 
 _mine_only = [r for r in VERD if r[5] == 'MINE-ONLY']
