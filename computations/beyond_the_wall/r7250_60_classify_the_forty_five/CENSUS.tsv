@@ -1,0 +1,56 @@
+# THE FULL CELL CENSUS — every member's verdict on each of 70's three axes, published so the
+# mechanism count is DERIVABLE by anyone who rejects a merge, as r7250's pre-registration promised.
+#
+# CHOSEN   : does a seat CHOOSE the stand-in at the moment of writing?  (Y = author-chosen,
+#            N = moved later by a third party, or by typography, arithmetic or coincidence)
+# CONDITION: is it repairable by a better CONDITION?  (Y / N = only by naming, declaring or removing)
+# DESTROYS : does it destroy a TRUE VERDICT (Y) or only a DETECTION (N)?
+# OBJECT   : what the stand-in stands in FOR.  NOT an axis — recorded because the axes do not
+#            name it, and the result below is that this column separates what they cannot.
+#
+# n	CHOSEN	CONDITION	DESTROYS	OBJECT	the member in one line
+1	Y	Y	Y	paper sentence	a receipt reads a paper the gate then edits
+2	Y	Y	N	instrument input	a scope keyed on an adjudicated baseline
+3	N	N	N	git history	an index reading only unmerged commits
+4	Y	Y	N	instrument input	a selector keyed on a filename
+5	Y	Y	N	instrument input	a lifecycle convention the gate cannot see
+6	N	Y	N	instrument's own output	the sweep cannot detect its own findings being fixed
+7	Y	Y	N	instrument input	the gate read a truncated stump of what it checks
+8	Y	Y	N	instrument input	the selector cannot select an ABSENCE
+9	Y	Y	Y	paper sentence	a ratio standing where a per-bin figure is read
+10	N	Y	Y	ledger row	a row asserting the negation of its own repaired receipt
+11	Y	Y	N	instrument input	a filename grep as a proxy for file coverage
+12	Y	Y	N	instrument input	the line window, in a third instrument
+13	Y	Y	Y	paper sentence	percentages that never said what they were per cent OF
+14	N	N	Y	paper term	one term naming two unrelated bounds in one paper
+15	N	N	Y	paper term	a cross-spin label slip made available by a coincidence
+16	Y	Y	N	instrument input	a locator keeping only the repaired form knows that something moved, not what
+17	Y	Y	Y	paper figure	a paper printing two values for one quantity
+18	Y	Y	Y	prose guard	a physics claim wearing a prohibition, in an exempt document
+19	Y	Y	Y	ledger row	`reproduces` counting two disagreements as agreements
+20	Y	Y	Y	explainer figure	an unsourced figure whose exponent collides with an unrelated one
+21	Y	Y	N	instrument tolerance	a pin whose tolerance exceeds the discrepancy it exists to catch
+22	Y	Y	N	paper sentence	a literal pin that matches anywhere in the file is a pin on the file
+23	Y	Y	Y	receipt's own verdict	a verdict never branched, so the receipt exits zero contradicting itself
+24	Y	N	Y	paper sentence	a locator published without the end it is measured from
+25	N	N	Y	paper sentence	every piece established and the composition names the wrong object
+26	N	N	Y	paper term	one term carrying two objects with different ends
+27	Y	Y	N	receipt stem	a receipt whose own name makes it uncitable
+28	Y	Y	N	coordination channel	an unread order is indistinguishable from one being worked
+29	Y	Y	N	instrument's own count	a backlog that grew by being measured properly
+30	N	Y	N	generated artefact	the generated page is downstream of every instrument and read by none
+31	Y	Y	N	generated artefact	a count of what is PRESENT cannot see an absence
+32	Y	Y	N	coordination channel	the gate measured the gate's own typing
+33	Y	Y	Y	paper sentence	a pin placed above the paragraphs that carried the claim
+34	Y	Y	N	receipt's own control	a burden the algebra makes automatic cannot discriminate
+35	N	Y	N	instrument input	a clause spanning a line wrap reads as absent
+36	Y	Y	Y	register row	a recurrence filed on a mechanism diagnosis that was wrong
+37	N	Y	N	instrument input	a detector whose coverage is set by typography
+38	Y	Y	N	gate policy	a gate forcing a code seat across two seat boundaries in one commit
+39	N	N	N	convention	a gate whose coverage rests on a habit
+40	N	N	N	git history	a number taken twice across a merge, invisible to an ancestry test
+41	N	Y	N	instrument's own population	a self-including check cannot see itself
+42	Y	Y	Y	paper sentence	a count of how many is not a statement about WHICH
+43	N	Y	N	instrument's own population	a gate on a push range is a gate on a set every seat can grow
+44	Y	Y	N	receipt's own control	an absence guard with no positive control
+45	N	Y	N	lifted reading	an instrument repaired in one of its readings is not repaired in the others

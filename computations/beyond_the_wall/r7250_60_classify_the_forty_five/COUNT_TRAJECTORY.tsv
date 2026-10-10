@@ -1,0 +1,38 @@
+# the row's OWN running total of the family, in the order the row states it
+# extracted from the register row rather than assumed; the gaps are BATCHED filings
+# and the repeats are clauses that restated the standing state without filing.
+
+ 0	17	first stated
+ 1	20	+3 filed
+ 2	21	+1 filed
+ 3	23	+2 filed
+ 4	24	+1 filed
+ 5	25	+1 filed
+ 6	25	no new member in this clause
+ 7	26	+1 filed
+ 8	27	+1 filed
+ 9	29	+2 filed
+10	30	+1 filed
+11	31	+1 filed
+12	32	+1 filed
+13	32	no new member in this clause
+14	33	+1 filed
+15	33	no new member in this clause
+16	34	+1 filed
+17	35	+1 filed
+18	36	+1 filed
+19	38	+2 filed
+20	40	+2 filed
+21	42	+2 filed
+22	43	+1 filed
+23	44	+1 filed
+24	45	+1 filed
+
+# jumps of more than one are batched filings, which is why an ordinal-by-ordinal
+# extraction cannot recover the list: 17->20, 21->23, 27->29, 36->38, 38->40, 40->42.
+
+# and THREE slots the row explicitly DECLINED at the time, each later filled by a
+# different filing -- so the row has already been making merge judgements:
+#   34th: declined, the register-edit exposure "measured at zero rather than added"
+#   35th: declined, "the same one, recurring, with the convention absorbing it"
+#   36th: declined, "a RECURRENCE AND NOT A THIRTY-SIXTH"
