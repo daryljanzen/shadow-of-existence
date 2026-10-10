@@ -1,0 +1,51 @@
+{
+ "classes": {
+  "AGREE": 6,
+  "CONCEDED": 5,
+  "OPEN": 6,
+  "RULE-DISPOSED": 10
+ },
+ "comparable": 27,
+ "contested_cell": {
+  "agree": 2,
+  "n": 17
+ },
+ "my_forty": {
+  "contested_n": 30,
+  "contested_repair_owed": 27,
+  "verdicts": {
+   "DELIBERATE": 6,
+   "REPAIR-OWED": 34
+  }
+ },
+ "non_contested": {
+  "agree": 4,
+  "n": 10
+ },
+ "not_explained_by_rule": 11,
+ "not_explained_by_rule_pct": 40.7,
+ "raw_agreement": 6,
+ "raw_agreement_pct": 22.2,
+ "retirement_threshold_pct": 33.3,
+ "rule_uncorrected_disagreement_pct": 77.8,
+ "shape_by_class": {
+  "AGREE|IDENTITY": 5,
+  "AGREE|PROPOSITION": 1,
+  "CONCEDED|IDENTITY": 4,
+  "CONCEDED|PROPOSITION": 1,
+  "OPEN|IDENTITY": 6,
+  "RULE-DISPOSED|PROPOSITION": 10
+ },
+ "shapes_in_the_contested_cell": [
+  "IDENTITY",
+  "PROPOSITION"
+ ],
+ "still_open_pct": 22.2,
+ "the_171": {
+  "identity_pins_the_granularity_question_reopens": 6,
+  "propositions_turning_on_the_rule": 162,
+  "repair_owed_under_any_reading": 3,
+  "total": 171,
+  "turns_on_the_rule_pct": 94.7
+ }
+}

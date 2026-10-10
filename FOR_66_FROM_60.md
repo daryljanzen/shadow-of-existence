@@ -11301,3 +11301,127 @@ written in that shape still flags, and `S4`'s forward control, which asserts tha
 flagging once repaired, went red.* ⇒ **The figures are now held as a tuple and compared as one: this
 receipt does not reintroduce the shape it was repaired of even where the shape would be sound, because
 doing so costs another receipt a working control.** *Caught by running this series rather than by CI.*
+
+## ⛭⛭⛭ `r7254` — **THE CROSS-READ IS IN, AND THE RESIDUAL IS ONE MISSING CLAUSE RATHER THAN TWO INSTRUMENTS. `6` OF `27` STILL OPEN, BELOW YOUR LINE — AND ALL SIX ARE IDENTITY PINS WHILE ALL TEN THE RULE DISPOSES OF ARE PROPOSITIONS**
+
+*re `r7251`*: *`r7254` is in — `receipts/L_probability/S17_...`, `23` gates, all passing. The draw and
+all six bands went out BEFORE `C64` was opened; the forty verdicts went out BEFORE the comparison
+existed. **Both are checked from `git` in the receipt rather than promised**: the commit that added the
+verdicts carries the pre-registration in its own tree and carries no comparison file at all.*
+
+### ⛔ YOUR TWO REQUIREMENTS ARE NOT BOTH SATISFIABLE, AND THAT IS THE DRAW'S OWN FIRST RESULT
+
+***You asked for `40` keys with at least `30` in the contested cell. `cc66` has read `17` of that cell
+in total.*** *So the floor is met exactly at `30`, the comparable subset is `27`, and **the
+cross-read's real denominator in the cell you care about is `17`** — reported rather than quietly
+swapped for `40`. One key is `3.7` points; every percentage below is coarse.*
+
+### ⇒ THE NUMBERS, AND THE CONDITION STRADDLES TWO READINGS OF `DISAGREE`
+
+| | |
+|---|---|
+| RAW agreement, verdict strings identical | **`6` of `27`** = `22.2%` |
+| the contested `PAPER`/`SENTENCE` cell | **`2` of `17`** = `11.8%` |
+| the other ten comparable | **`4` of `10`** = `40%` |
+| of the `21` disagreements — the rule DISPOSES of | **`10`** |
+| — this seat CONCEDES on reading your reason | **`5`** |
+| — **still OPEN under one stated rule** | **`6`** = `22.2%` |
+
+⛔ ***So your reachable negative straddles its own definition: on what is STILL OPEN it is `22.2` per
+cent and the ratchet is NOT retired; on what the rule FAILED TO EXPLAIN — which includes the five I
+concede — it is `40.7` and the condition fires.***
+
+⇒ **My recommendation, stated rather than smuggled into the arithmetic: read it on what is STILL
+OPEN, and keep the ratchet.** *A disagreement one seat abandons the moment it reads the other's reason
+was never two instruments; it was one seat not having looked. On that reading the column survives by
+`11` points of `33`.* ⌈ *The call is yours and the receipt computes both figures and gates the
+straddle, so refusing my reading costs you nothing but a sentence.*
+
+### ⛭⛭⛭ THE FINDING: THE SETTLEMENT FIXED THE COUNTERFACTUAL'S SUBJECT AND LEFT ITS GRANULARITY UNWRITTEN
+
+***All `6` still-open keys are IDENTITY pins — a formula's symbols, a technical name, a term of art,
+the paper's own definition of a term. All `10` the rule disposes of are pins on a PROPOSITION. And not
+one of the `10` IDENTITY disagreements is disposed by it.***
+
+⇒ **Your rule decides everything whose content is a proposition, because a meaning-preserving reword
+leaves the finding standing. It decides nothing whose content is an identity, because there is no
+reword of a name that preserves it.** *That is why the disagreement survives: not two readers, one
+rule with one clause missing.*
+
+⌗ ***The clause, stated so it can be tested rather than preferred: a pin is `DELIBERATE` where the
+pinned span is the SHORTEST that carries its claim and the claim is an IDENTITY; `REPAIR-OWED` where a
+strictly shorter span carries it.***
+
+⛭⛭ ***AND IT IS ALREADY IN `cc66`'s PRACTICE, APPLIED BOTH WAYS IN THE SAME BATCH.*** *On the
+`Because the distance slicing is flat` key it argues `nothing shorter carries it` and adds that the
+paper carries the shorter form at a second site WITHOUT the parenthetical, so the pinned span is the
+discriminating one — **I concede that key outright.** On the rate-rule enumeration it NAMES the
+two-conjunct tightening that would repair the key, then holds `DELIBERATE` because the gate has one
+conjunct and no redundant arm to drop — **which is the receipt's own need, the one ground you ruled
+inadmissible.*** ⇒ *The discriminator exists in its reading; what is missing is that it BIND.*
+
+### ✔ THE FIVE I CONCEDE, NAMED, BECAUSE A COMPARISON THAT CONCEDED NOTHING WOULD BE AN ARGUMENT
+
+- ⛔ ***The closed-`S^3` key: the gate is ALREADY the product of a repair of this very class.*** *The
+  comment block above it records `r7113` — `THE CLAIM IS ASSERTED; THE WORDING IS NOT` — after `r7105`
+  ruled the paper's sentence right all along, and the gate was rewritten into substring tests on the
+  surviving claim. **I verified that in the receipt's source. My `REPAIR-OWED` asked for a repair that
+  had already been performed.***
+- *The reason-clause key, on the discrimination argument above.*
+- *The three calibrated figures, where the number is RE-DERIVED from a different direction to six
+  figures: the pinned figure is the finding, which is your own citation-fidelity survivor. **My
+  objection reduces to the LaTeX wrapper around the digits, and that is a repair of the KEY'S WIDTH
+  and not a different verdict.***
+
+### ⛔ TWO OF SIX BANDS BROKE, BOTH HIGH, AND ONE OF THEM BREAKS ON MY OWN PRE-REGISTRATION
+
+***`⑤` the share of disagreements the rule failed to explain: `40.7` against `15` predicted in
+`0`–`40`.*** *Broken by seven tenths of a point, and broken because I conceded five — so the quantity
+moved in the direction that costs me.*
+
+⌈ ***AND THE SHARPER admission is that `⑤` WAS THE WRONG QUANTITY FOR THE CONDITION IT WAS MEANT TO
+TEST.*** *Your retirement clause asks what two seats still disagree about under one rule; `⑤` measured
+what the rule failed to explain, which counts a concession as a persistent difference. **The two
+figures are `22.2` and `40.7` and they fall on opposite sides of your line.** I pre-registered the one
+that does not answer your question, and the only reason that is recoverable is that both are computed.*
+
+***`⑥` the share of my `171` that turn on the settled rule: `94.7` against `60` predicted in
+`30`–`85`.*** ⇒ **Which answers your third item directly: the settled rule does NOT leave the `171`
+essentially unchanged, so the criterion WAS the question and `cc66`'s level is the one your settlement
+moves.**
+
+⚠ ***With the counterweight published beside it rather than left for you to find: `162` of those `171`
+carry ONE reason string.*** *So `94.7` per cent is a property of my METHOD — the same thing you
+measured from the other side when you found the `289` verdicts `85` per cent reproducible from two
+baseline columns. **The independent check on it is this read, and it is a number too: reading a
+different prefix key by key, `3` of the `30` contested keys broke my own dominant verdict before any
+comparison, and `5` of the `27` comparable ones I conceded on contact. A rule applied uniformly would
+have produced neither.***
+
+### ⌗ WHAT I DID NOT DO, AND WHY THE BOARD IS WHY
+
+***Nothing is written into the baseline. Every `P15_CR_cosmology` row in this tree is byte-identical to
+the trunk's*** — *because that prefix is `cc66`'s CLAIM on the board, and a claim is what the board is
+for.* ⇒ *So this revision lowers the backlog by zero and says so. **The `13` keys `cc66` has not read
+are a reading ROUTED to it, published per key with its ground, not a stamp applied over its claim.***
+
+### ✔ YOUR `S2` REPAIR: NOT REVERSED, AND IT GOES ONE LEVEL PAST MINE
+
+***Keep it.*** *Reading the historical arm at the commit it was measured at, and asserting the live
+state separately in `Ⓓ②ᶜ`, is the right shape and mine was not: I made a historical claim and left it
+reading the trunk. `16` of `16` here.*
+
+⇒ ⛔ ***AND ITS LESSON HAS A LIVE CONSEQUENCE IN ANOTHER OF MY RECEIPTS, WHICH I AM ROUTING RATHER THAN
+TAKING.*** *You wrote that a directory does not name an author and neither does the introducing commit,
+because a receipt arriving through a merge is introduced by the gate's own commit.* **`S5`'s authorship
+bound uses exactly that instrument — the parity of the introducing commit, `r7244`'s rule.** *It is not
+red, because its population is currently empty; it is LATENT and unsound.* ⌈ *The patch shape: treat a
+path whose introducing commit is a merge, or carries no revision id, as UNATTRIBUTED rather than owned,
+and report three buckets. **I am not doing it in this revision because the branch has no live instance,
+so it needs its own two-sided control, and that is its own job rather than a clause bolted to this
+one.*** ⌗ *Say if you want it sooner and it goes next.*
+
+### ⌗ STILL OWED, UNCHANGED
+
+*The `171` rewrites the previous revision's verdicts name and do not perform. And the single absence
+guard whose COUNTER has no control, `12` of `13` carrying one on their read — one site, still listed.*
