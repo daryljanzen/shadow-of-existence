@@ -7,10 +7,19 @@
 
 ⛭⛭ ** THE ABSENCE GUARD: `13` OF THE THIRTY ARE AN EXACT ZERO OVER THE LIVE PAPER CORPUS WHOSE WHOLE
    PURPOSE IS TO FIRE WHEN SOMEBODY WRITES THE NAME. **  *That is deliberate by construction and no
-   ceiling can replace it.* ⇒ ⛔ *** AND `5` OF THE `13` CARRY NO POSITIVE CONTROL: nothing in their
-   receipt shows the counter finding anything at all, so the zero is unfalsifiable from inside the
-   file. ***  *`8` do carry one.  That split is the finding, and `deliberate WITHOUT a control` is
-   the bucket `r7240`'s classification had no room for.*
+   ceiling can replace it.* ⇒ ⛔ *** AND `5` OF THE `13` CARRY NO POSITIVE CONTROL -- READ BY A
+   PROXY, SAID TO BE A CEILING, AND THE CEILING WAS MOSTLY THE PROXY. ***
+
+⛭⛭⛭ ** CORRECTED AT `r7248` (60), WHICH IS WHY THE FIGURE ABOVE IS LEFT STANDING AND STAMPED RATHER
+   THAN QUIETLY LOWERED: `FOUR OF THE FIVE WERE NEVER UNCONTROLLED`. **  *They assert a non-zero
+   count over the very object their absence is counted in, and the proxy below could not see it
+   because the count is BOUND TO A NAME before it is compared -- the shape `r7240` taught the claim
+   detector and this proxy never learned.* ⇒ *** So the figure is `1`, not `5`; `12` of the `13`
+   carry a control; and the one real site turned out to have the READ controlled and the COUNTER
+   not, which is a sharper finding than a bare zero. ***  ⌈ *`S14` carries it, measured by running
+   each receipt under two injected faults rather than by reading its source.  The gates below are
+   MONOTONE in this quantity and so they still hold at `1`; it is the PROSE that was wrong, and
+   prose is a claim.*
 
 ⛔ ** AND `70`'s ROUTED REPORT WAS A REPAIR AND NOT A PRECAUTION, BY A FACTOR THIS REVISION
    UNDERSTATED. **  *A comprehension that FILTERS a tainted population was being filed `SELF`.
@@ -126,7 +135,66 @@ ALL = listed('receipts/')
 SITES = claim_sites(ALL)
 W = last_writers(SITES)
 MINE = [s for s in SITES if parity(W[(s[0], s[1])][1]) == 'EVEN']
-THIRTY = sorted(s for s in MINE if not s[0].startswith(PATH_SCOPE))
+
+# ⛭⛭⛭ r7248 (60): ** THE ENUMERATION OF THE THIRTY IS NOW READ AT THE PIN TOO, AND IT HAD TO BE
+#   FOR THE SAME REASON THE CONTROL SPLIT BELOW ALREADY WAS. **
+#   *`r7246` pinned the `5`/`8` split and left the SITE LIST on the working tree.  The list is keyed
+#   by `(directory/stem, line)`, so the very next revision of this seat's own -- adding a control to
+#   one of the five and making the one genuine count monotone -- moved a line and removed a site, and
+#   this receipt went red on a population its own author had shifted.*
+#   ⇒ *** A reading is a reading OF A STATE, and half-pinning it is not pinning it: the figures and
+#     the population they are figures OF have to be read at the same commit. ***  ⌈ *Section `A`
+#     stays on the WORKING tree on purpose -- its subject is what the repaired partition does to the
+#     tree as it stands -- so the two readings are now explicitly different objects rather than
+#     accidentally the same one.*
+PIN = '15804cd2'
+
+
+def listed_at(pre):
+    return sorted({x for x in git('ls-tree', '-r', '--name-only', PIN, pre).split('\n')
+                   if x.endswith('.py')})
+
+
+def claim_sites_at(rels):
+    out = []
+    for rel in rels:
+        s = git('show', f'{PIN}:{rel}')
+        if not s:
+            continue
+        h = detect(s)
+        if not h:
+            continue
+        t = ast.parse(s)
+        cl, pre = in_claim(t), grounds_of(s, t)
+        for st in h:
+            if st[0] in cl:
+                out.append((rel, st[0], st[2], st[4], ground(st, pre)))
+    return out
+
+
+def last_writers_at(sites):
+    byfile = collections.defaultdict(set)
+    for rel, l, *_ in sites:
+        byfile[rel].add(l)
+    out = {}
+    for rel, lines in byfile.items():
+        sha = ln = None
+        info = {}
+        for row in git('blame', '--line-porcelain', PIN, '--', rel).split('\n'):
+            p = row.split()
+            if len(p) >= 3 and len(p[0]) == 40 and all(c in '0123456789abcdef' for c in p[0]):
+                sha, ln = p[0], int(p[2])
+            elif row.startswith('summary ') and ln is not None:
+                info[ln] = (sha, row[8:])
+        for l in lines:
+            out[(rel, l)] = info.get(l, ('?', '?'))
+    return out
+
+
+SITES_AT = claim_sites_at(listed_at('receipts/'))
+W_AT = last_writers_at(SITES_AT)
+MINE_AT = [s for s in SITES_AT if parity(W_AT[(s[0], s[1])][1]) == 'EVEN']
+THIRTY = sorted(s for s in MINE_AT if not s[0].startswith(PATH_SCOPE))
 
 # ============================================================ A. 70's routed SELF defect
 head('A.  `70`s ROUTED ITEM ①: A COMPREHENSION THAT FILTERS A LIVE POPULATION IS NOT SELF-DECLARED')
@@ -257,7 +325,7 @@ gate('Ⓑ② ⛭⛭ AND THE FIFTH BUCKET IS THE RESULT: `13` of the thirty are A
 #   this receipt is about, in this receipt, which `70`'s standing gate caught on the first push. ***
 #   ⇒ Pinned, so the split is exact and frozen and a later repair to one of the five does not turn
 #   this gate red; the reading is as of this commit and says so.
-PIN = '15804cd2'
+#   ⛭ r7248 (60): *`PIN` is now set once, above, where the site list is read at it as well.*
 
 
 def nonzero_counter(rel):
@@ -299,7 +367,10 @@ gate('Ⓑ③ ⛔ *** AND THE SPLIT INSIDE THAT BUCKET IS THE THING WORTH HAVING:
      len(_no) == 5 and len(_ctl) - len(_no) == 8)
 
 _gen = READING['GENUINE'][0]
-_gsrc = open(os.path.join(ROOT, _bykey[_gen]), encoding='utf-8').read().split('\n')[_gen[1] - 1]
+# ⛭ r7248 (60): *read at `PIN` like everything else in this section.  This line was the LAST
+#   working-tree read left in a pinned reading, and the repair this revision made to that very site
+#   -- the exact count becoming monotone, which is what the reading asked for -- moved it.*
+_gsrc = git('show', f'{PIN}:{_bykey[_gen]}').split('\n')[_gen[1] - 1]
 print(f"      the one genuine site: {_gen[0]} L{_gen[1]}  ->{_gsrc.strip()[:90]}")
 gate('Ⓑ④ *** ONE SITE OF THE THIRTY IS GENUINE: an exact NON-ZERO count of the receipts carrying a '
      'repaired lookup, over a population any seat grows by adding a receipt. ***  *It is the only '
@@ -342,9 +413,11 @@ gate('Ⓒ① ⛔ THE MIGRATION PREDICTION IS REFUTED HIGH: `4` was predicted ins
      'first in line to leave it again the next time anybody touches those files. ***',
      len(_leaving) > 6 and len(_leaving) > len(THIRTY) // 2)
 
-gate('Ⓒ② and the five uncontrolled zeros are not safe from that either: most of them sit in files '
-     'another seat last wrote, so the sites this reading says are weakest are also the ones most '
-     'likely to stop being this seat`s',
+gate('Ⓒ② and the zeros this revision reads as uncontrolled are not safe from that either: most '
+     'of them sit in files another seat last wrote, so the sites this reading says are weakest are '
+     'also the ones most likely to stop being this seat`s.  ⛭⛭ `r7248` (60): *four of those five '
+     'were a FALSE NEGATIVE of this revision`s own proxy -- the count stands monotone and the '
+     'figure is `1`*',
      sum(1 for k in _no if _filew[_bykey[k]] != 'EVEN') >= 3)
 
 # ============================================================ D. the closure
@@ -352,8 +425,10 @@ head('D.  THE CLOSURE r7243 OFFERED, AND IT DOES NOT FIRE')
 
 gate('Ⓓ① *** THE CLOSURE DOES NOT FIRE: `r7243` offered that if all thirty came back deliberate, '
      'scoped or false then the path scope`s narrowness cost nothing.  It cost ONE genuine exact count '
-     'on a live population and FIVE uncontrolled zeros. ***  ⌗ *Small, and said to be small -- but '
-     'not nothing, and the five are the part worth carrying forward*',
+     'on a live population and at least one uncontrolled zero. ***  ⌗ *Small, and said to be small '
+     '-- but not nothing.* ⛭⛭ `r7248` (60): *this read `FIVE` and the figure is `1`; the assertion '
+     'was already monotone, so what the correction changes is the size of the cost and not whether '
+     'the closure fires*',
      len(READING['GENUINE']) >= 1 and len(_no) >= 1)
 
 gate('Ⓓ② and the proportion is stated so the result cannot be read as alarming: twenty-four of the '
@@ -375,10 +450,12 @@ print("""
   at a time, and the tally is not the result: one is genuine, inside the pre-registered band with the
   central guess one high, and the reading turns up a FIFTH bucket r7240's four did not cover -- the
   absence guard, an exact zero over a live corpus whose purpose is to fire on reintroduction, which no
-  ceiling can replace.  Thirteen of the thirty are that, and five of the thirteen carry no positive
-  control at all, so their zero is unfalsifiable from inside the file.  Sixteen of the thirty sit in
+  ceiling can replace.  Thirteen of the thirty are that, and this revision read five of the thirteen
+  as carrying no positive control, by a proxy it said was a ceiling.  (CORRECTED at r7248: four of
+  those five were the proxy's own blind spot -- their control is bound to a name before it is
+  compared -- so the figure is one, and that one had its read controlled and its counter not.)  Sixteen of the thirty sit in
   receipts another seat last wrote, refuting the migration prediction high and putting more than half
   of this scope first in line to leave it.  And the closure does not fire: the narrowness cost one
-  genuine count and five uncontrolled zeros -- small, said to be small, and not nothing.""")
+  genuine count and one uncontrolled zero -- small, said to be small, and not nothing.""")
 if _bad:
     raise SystemExit(1)

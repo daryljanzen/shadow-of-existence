@@ -97,9 +97,20 @@ repaired = [os.path.relpath(f, ROOT) for f in allrec
 print(f'    receipts still USING the open-form-only lookup : {len(brittle)}')
 print(f'    receipts carrying the strike-tolerant lookup   : {len(repaired)}')
 check('⓶ no receipt still uses the open-form-only lookup', len(brittle) == 0)
-check('⓶ᵇ and thirteen OTHER receipts carry the tolerant form -- the twelve that crashed plus `B21`, which was '
+# ⛭⛭ r7248 (60): ** THE ONE GENUINE EXACT COUNT OF THE THIRTY `r7246` READ, AND IT IS THIS SEAT`S
+#   BY THIS SEAT`S OWN RULE. **  *`r7246` recorded it `GENUINE-OWED` for the reason `not this seat`s
+#   to edit`, which was the WRONG REASON: `r7244` settled ownership as the commit that INTRODUCED
+#   the receipt, and that commit carries an EVEN id.  *re `r7245`*: flagged rather than ordered, and
+#   the flag is correct.*
+#   ⇒ *** Monotone, because the population only GROWS -- any seat adding a receipt that carries the
+#     tolerant lookup raises it -- and because the receipt`s own prose already states the thirteen as
+#     a FLOOR: `the twelve that crashed plus B21`.  An equality was never what the sentence said. ***
+#   ⌈ *The population`s growth being another seat`s doing is also true, and it is a reason for
+#   making the claim monotone rather than a reason for leaving it exact.  Both reasons point the
+#   same way, so the verdict column loses its row instead of changing its wording.*
+check('⓶ᵇ and at least thirteen OTHER receipts carry the tolerant form -- the twelve that crashed plus `B21`, which was '
       'already failing for an older reason and carried the same brittleness',
-      len(repaired) == 13)
+      len(repaired) >= 13)
 # ** the tolerant matcher must match BOTH forms, or it has traded one brittleness for another **
 TOLM = re.compile(r'\|\s*~?~?\*\*PO-6\*\*')
 check('⓶ᶜ the tolerant matcher matches the STRUCK form', bool(TOLM.match('| ~~**PO-6**~~ | x |')))

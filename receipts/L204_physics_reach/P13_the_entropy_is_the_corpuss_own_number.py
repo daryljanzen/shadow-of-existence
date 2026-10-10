@@ -90,6 +90,29 @@ def main():
         l for l in open(f, encoding='utf-8', errors='replace').read().split('\n')
         if not l.lstrip().startswith('%'))) for f in papers)
 
+    # ⛭⛭ r7248 (60): ** THIS ABSENCE GUARD HAD NO POSITIVE CONTROL ON ITS COUNTER. **
+    #   *re `r7245`*: ordered, and measured two-sidedly before it was written.  This receipt's
+    #   other reads of `allp` are `in` tests, which DO fail when the glob breaks -- so the READ was
+    #   controlled already.  ** But nothing here exercised `re.findall`, and with that one call
+    #   stubbed to return nothing the whole receipt still passed, green, absence and all. **
+    #   ⇒ *** So an absence guard has TWO ways to be vacuous -- it read nothing, or it counted
+    #     with a broken counter -- and a control over the read covers only the first.  Both halves
+    #     are asserted below, and the companion terms are the two HALVES OF THE ABSENT PHRASE
+    #     ITSELF, counted by the same call with the same flags, so this control cannot be live while
+    #     the absence beside it is vacuous. ***
+    #   ⌈ *Counts printed, none pinned: the claim is PRESENCE, as `L204/P7` and `r7131`'s repairs
+    #   of `B1`/`B2` already have it.  And the control strengthens the finding rather than merely
+    #   guarding it -- the corpus has de Sitter in quantity and entropy in quantity and never the two
+    #   together.*
+    _live = {k: len(re.findall(re.escape(k), allp, re.I)) for k in ('de Sitter', 'entropy')}
+    check(f'⌗⛭ the search reached live text and THE COUNTER IS LIVE, both derived rather than '
+          f'declared: {len(papers)} paper file(s) and {len(allp):,} characters off the filesystem, '
+          f'and the same call finds "de Sitter" {_live["de Sitter"]} time(s) and "entropy" '
+          f'{_live["entropy"]} -- both halves of the absent phrase PRESENT, so a counter that found '
+          f'nothing cannot read as a pass',
+          len(papers) > 0 and len(allp) > 0
+          and _live['de Sitter'] > 0 and _live['entropy'] > 0)
+
     # r2536's measurement stands
     check('⌗ r2536\'s measurement stands: "de Sitter entropy" appears ZERO times',
           len(re.findall('de Sitter entropy', allp, re.I)) == 0)
