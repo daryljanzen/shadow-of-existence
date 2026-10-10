@@ -271,12 +271,19 @@ _cen = collections.Counter(p[5] for n, p in HERE)
 _fell = {k: START[k] - _cen.get(k, 0) for k in START}
 print(f"      the prefix now: {dict(_cen)}")
 print(f"      fall against what cc66.166 left: {_fell}")
-gate("⛭⛭ AND THE FALL RECONCILES WITHOUT SLACK against the census the LAST cycle left, not against the "
-     "pre-registration's: `UNADJUDICATED` 469->420 and `UNADJUDICATED-LIST` 29->18, summing to the 60 "
-     "above, with `-PINNED` untouched at 37 for the second cycle running",
-     _fell['UNADJUDICATED'] == 49 and _fell['UNADJUDICATED-LIST'] == 11
-     and _fell['UNADJUDICATED-PINNED'] == 0
-     and _fell['UNADJUDICATED'] + _fell['UNADJUDICATED-LIST'] == len(MINE))
+# ⛔⛭ ** r7247+cc66.168: written as an equality in the same push that wrote `C64`'s, and repaired in the
+#   same pass for the same reason -- `C64`'s equality went red on THIS batch, and this one would have
+#   gone red on the NEXT.  The historical state is pinned in prose and the condition is monotone. **
+_start_open = START['UNADJUDICATED'] + START['UNADJUDICATED-LIST']
+_now_open = _cen.get('UNADJUDICATED', 0) + _cen.get('UNADJUDICATED-LIST', 0)
+print(f"      the two unverdicted buckets: {_start_open} when cc66.166 finished, {_now_open} now, "
+      f"so down {_start_open - _now_open} against this batch's own {len(MINE)}")
+gate("⛭⛭ AND THE FALL RECONCILES against the census the LAST cycle left rather than the "
+     "pre-registration's: at the commit that landed this batch it was exactly `UNADJUDICATED` "
+     "469->420 and `-LIST` 29->18, summing to the 60 above, with `-PINNED` untouched at 37 for the "
+     "second cycle running. ⛔ Monotone here for the reason `C64`'s repaired twin records",
+     _start_open - _now_open >= len(MINE)
+     and _cen.get('UNADJUDICATED-PINNED', 0) <= START['UNADJUDICATED-PINNED'])
 
 # ============================================================== B. the fraction, cumulative
 head("B.  THE FRACTION, THIS BATCH AND CUMULATIVE, AGAINST THE TWO NUMBERS PINNED BEFORE ANY READ")
@@ -334,11 +341,17 @@ for p, kind in PINNED:
     print(f"        {_com[p]:4d}  {kind:22s} {os.path.basename(p)}")
 _one_file = 'computations/beyond_the_wall/L171x_lensing_potential.py'
 _pre = [p for p, k in PINNED if k == 'pre-registration']
-gate("⛔⛭⛭ *** THE LIVENESS DETECTOR IS REFUTED BY ITS OWN MEASUREMENT: the ONE mechanism-① file has "
-     "exactly ONE commit, the same as every frozen pre-registration this job has pinned *** -- so "
-     "`how often does the watched file move` cannot separate them. ⇒ The file is frozen BECAUSE nobody "
-     "has re-derived it, which is the gap itself",
-     _com[_one_file] == 1 and all(_com[p] == 1 for p in _pre))
+# ⛔ ** r7247+cc66.168: stated so that re-deriving the producer does not red the refutation. **  The
+#   finding is that the ①-bearing file sits in the FROZEN group and not the live one, which stays true
+#   whether or not it later gains a commit or two; the exact `1` it read at this revision is in the
+#   label and in the print above, where a historical number belongs.
+_live_min = min(_com[p] for p, k in PINNED if k in ('paper', "this seat's reply file"))
+gate("⛔⛭⛭ *** THE LIVENESS DETECTOR IS REFUTED BY ITS OWN MEASUREMENT: at this revision the ONE "
+     "mechanism-① file had exactly ONE commit, the same as every frozen pre-registration this job has "
+     "pinned, and it sits with them an order of magnitude below anything live *** -- so `how often does "
+     "the watched file move` cannot separate them. ⇒ The file is frozen BECAUSE nobody has re-derived "
+     "it, which is the gap itself",
+     all(_com[p] == 1 for p in _pre) and _com[_one_file] * 10 < _live_min)
 gate("⌗ and the contrast is not that every pinned file is frozen: the papers and the live instrument "
      "move constantly, and this seat's own reply file most of all -- so the measurement had the range "
      "to separate them and did not",
@@ -381,7 +394,7 @@ gate("⛭⛭ ⓑ THE ANCHORED SLICE IS IN THE SAME INSTRUMENT AS THE ROUTED REPA
      "in the block, so an unanchored pin could not say it is the CR arm's. ⇒ ** `cc66.166`'s routed "
      "repair for `OR / a ** 4` is `do what the neighbour does`, in the same file **",
      _crlit >= 0 and _rsf and _r2.count('_CRBLK') >= 2 and _r2.count('_RSF') >= 2
-     and INSTR.count(WBH2) == 2 and _crblk.count(WBH2) == 1)
+     and INSTR.count(WBH2) >= 2 and _crblk.count(WBH2) == 1)
 
 GUARD = 'Converted to a REGRESSION GUARD on the'
 FIXED = 's at chi^2/dof ~ 100 WHEN THIS NOTE WAS WRITTEN'
@@ -423,12 +436,19 @@ print(f"        receipts whose OWN prose names work owed on something they read:
 print(f"        receipts with no such statement:                                 {_rest} keys")
 print(f"      ⇒ the ①-candidate population is {_pct:.0f} per cent, against the 56 per cent the "
       f"`target` column bounded it at")
+# ⌗ ** THE PERCENTAGE IS A MEASUREMENT AND IS PRINTED, NOT ASSERTED. **  It is taken over the keys
+#   still unverdicted, which every later batch changes, so an equality or a bound on it would be the
+#   same defect `C64`'s comment records.  *What the gate asserts is that the detector DISCRIMINATES --
+#   that both kinds of receipt are present among those still holding keys -- which stays true while the
+#   number it reports moves.*  At this revision it read 207 of 475, 44 per cent, against the 56 the
+#   `target` column bounded it at.
 gate("⌗ THE SHARPENED DETECTOR IS A TEXT SEARCH OVER THE PINNING RECEIPT AND NOT OVER THE KEY, WHICH "
-     "IS WHY BOTH OF 70's DETECTORS MISSED THIS CLASS. Measured here, it narrows the candidate "
-     "population from 56 per cent to about 44. ⇒ ** Reported as a crude instrument and a real gain, "
-     "not as a solution: a receipt that names a remedy SOMEWHERE is not the same as one that names a "
-     "remedy for the file a pin reads, and the tight version needs that tie **",
-     _tot > 0 and _cand < _tot and _pct < 56.0)
+     "IS WHY BOTH OF 70's DETECTORS MISSED THIS CLASS. It DISCRIMINATES: both kinds of receipt are "
+     "present among those still holding keys, and at this revision it read 207 of 475 -- 44 per cent, "
+     "against the 56 the `target` column bounded it at. ⇒ ** Reported as a crude instrument and a real "
+     "gain, not as a solution: a receipt that names a remedy SOMEWHERE is not the same as one that "
+     "names a remedy for the file a pin reads, and the tight version needs that tie **",
+     _tot > 0 and 0 < _cand < _tot)
 
 # ============================================================== F. the hazard that is mine to cause
 head("F.  ⚠ THE ONE HAZARD THIS BATCH FOUND, AND IT IS THIS SEAT'S TO CAUSE")

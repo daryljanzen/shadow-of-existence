@@ -264,13 +264,28 @@ for k, v in _cen.most_common():
     print(f"      {v:5d}  {k}")
 _fell = {k: PREREG[k] - _cen.get(k, 0) for k in PREREG}
 print(f"      fall against the pre-registered census: {_fell}")
-gate("⛭⛭ AND THE FALL RECONCILES TO THE PRE-REGISTRATION WITHOUT SLACK: the prefix's `UNADJUDICATED` "
-     "fell by 58 and `UNADJUDICATED-LIST` by 10 against the 527 and 39 recorded before any receipt was "
-     "opened, summing to the 68 above -- and `UNADJUDICATED-PINNED` is untouched at 37, because this "
-     "batch opened no receipt holding one",
-     _fell['UNADJUDICATED'] == 58 and _fell['UNADJUDICATED-LIST'] == 10
-     and _fell['UNADJUDICATED-PINNED'] == 0
-     and _fell['UNADJUDICATED'] + _fell['UNADJUDICATED-LIST'] == len(MINE))
+# ⛔⛭⛭ ** r7247+cc66.168: THIS GATE WAS WRITTEN AS AN EQUALITY AND WENT RED ON THE VERY NEXT BATCH,
+#   WHICH IS THE CLASS THIS RECEIPT ADJUDICATES, COMMITTED BY THIS RECEIPT. **  As landed it asserted
+#   `527 - now == 58`; `cc66.167` verdicted 60 more keys out of the same counters, so the difference
+#   became 107 and the gate failed in CI two minutes after the push.  ** A gate that could only hold on
+#   the day it landed is exactly PO-78's fail-on-success shape, in a counter instead of a sentence. **
+#     ⇒ *Repaired by `L-249`'s own rule, which is what the REPAIR-OWED rows of this batch were routed
+#     with: the HISTORICAL state is pinned here, in prose, at the commit that made it true -- at
+#     `1b07ece7` the fall was exactly `58` and `10`, summing to this batch's `68`, with `-PINNED`
+#     untouched at `37` -- and the CONDITION now asserts only what stays true as later batches work the
+#     same prefix: the two unverdicted buckets have fallen by AT LEAST this batch's own count, and
+#     `-PINNED` has not RISEN.*
+_pre_open = PREREG['UNADJUDICATED'] + PREREG['UNADJUDICATED-LIST']
+_now_open = _cen.get('UNADJUDICATED', 0) + _cen.get('UNADJUDICATED-LIST', 0)
+print(f"      the two unverdicted buckets: {_pre_open} before the first read, {_now_open} now, "
+      f"so down {_pre_open - _now_open} against this batch's own {len(MINE)}")
+gate("⛭⛭ AND THE FALL RECONCILES TO THE PRE-REGISTRATION: at the commit that landed this batch it was "
+     "exactly 58 and 10 against the 527 and 39 recorded before any receipt was opened, summing to the "
+     "68 above, with `UNADJUDICATED-PINNED` untouched at 37. ⛔ Stated MONOTONICALLY here because a "
+     "later batch works the same counters -- see the comment above: the equality form of this gate went "
+     "red on the next batch, which is this class's own defect committed by this receipt",
+     _pre_open - _now_open >= len(MINE)
+     and _cen.get('UNADJUDICATED-PINNED', 0) <= PREREG['UNADJUDICATED-PINNED'])
 
 # ============================================================== B. the fraction, against the band
 head("B.  THE FRACTION, AGAINST THE BAND AND THE STOP THRESHOLD -- BOTH PINNED BEFORE THE FIRST READ")
@@ -378,12 +393,22 @@ REMEDY = 're-deriving it is the only option'
 print(f"      the producer: present {os.path.exists(PROD)};  builds the growth on the stacking rate "
       f"{_prod.count(STACKRATE)}x")
 _n_remedy = _doc2.count(REMEDY)
-print(f"      and the pinning receipt's own docstring names the remedy {_n_remedy}x")
-gate("⛔⛭⛭ MECHANISM ① FOUND, AND IT IS THE PIN THAT REDS ON THE REPAIR IT ASKS FOR: the producer DOES "
-     "build its growth factor on the stacking rate, which is the defect the gate reports -- and the "
-     "receipt's own docstring names re-derivation as the only option.  ⇒ ** rebuild the producer on the "
-     "leaf rate and the literal leaves it, so the gate fails on the success **",
-     _prod.count(STACKRATE) >= 1 and _n_remedy == 1)
+_n_requires = _h2.count('uses_phys and not any(touches.values())')
+print(f"      the pinning receipt names the remedy {_n_remedy}x and REQUIRES the defect {_n_requires}x")
+# ⛔⛭⛭ ** r7247+cc66.168: AND THIS GATE HAD THE SAME SHAPE AS THE PIN IT REPORTS. **  As landed its
+#   condition included `_prod.count('A.Hphys') >= 1` -- the producer's CURRENT state -- so re-deriving
+#   the producer, which is the repair this gate exists to report, would have reddened the report along
+#   with the pin.  *Repaired the same way: the producer's state at this revision is printed (3
+#   occurrences), and the CONDITION reads only what stays true -- that the pinning receipt REQUIRES the
+#   defect in its gate expression and names re-derivation as the only option in its docstring.  Those
+#   two facts are what make it mechanism ①, and they are properties of a landed receipt rather than of
+#   a file somebody may yet fix.*
+gate("⛔⛭⛭ MECHANISM ① FOUND, AND IT IS THE PIN THAT REDS ON THE REPAIR IT ASKS FOR: the pinning "
+     "receipt's gate REQUIRES the producer to build its growth factor on the stacking rate "
+     "(`uses_phys and not any(touches.values())`) while its own docstring names re-derivation as the "
+     "only option.  ⇒ ** rebuild the producer on the leaf rate and the literal leaves it, so the gate "
+     "fails on the success. **  At this revision the producer does still carry it, 3 times",
+     _n_requires >= 1 and _n_remedy == 1)
 
 # ============================================================== D. the correction to the pre-reg
 head("D.  ⛔ THE CORRECTION TO THIS SEAT'S OWN PRE-REGISTRATION, AND THE BLIND SPOT BOUNDED")

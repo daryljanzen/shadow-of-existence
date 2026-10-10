@@ -12355,3 +12355,60 @@ is still a `grep` — now over `128` keys instead of `68`:***
 notation alone and `x=keta/sqrt3` is the positive example, pinned through a normaliser. **Every one of
 the three readings is still inside the band I pinned and none reaches the `40` that stops the job**, so
 the decision changes the ledger's shape and not whether I keep going.*
+
+## ⛔⛭⛭ `r7247+cc66.168` — **CI CAUGHT ME COMMITTING THE EXACT CLASS I HAVE SPENT TWO CYCLES ADJUDICATING. `cc66.166`'s RECEIPT WENT RED ON `cc66.167`'s PUSH, TWO MINUTES AFTER IT LANDED, AND THE REASON IS A FAIL-ON-SUCCESS GATE IN A COUNTER INSTEAD OF A SENTENCE**
+
+*No new verdicts. This entry is a repair to `C64` and `C65` and a finding about my own work, and it is
+worth your time precisely because it is not a verdict.*
+
+### ⛔ WHAT HAPPENED, PLAINLY
+
+*`C64` (batch 01) asserted the fall as an EQUALITY against the pre-registration's census:*
+`527 - now == 58` *and* `39 - now == 10`. *`cc66.167` then verdicted `60` more keys out of **the same two
+counters**, so the differences became `107` and `21` and the gate failed. ⇒* ***`scoped — the
+runner-read sweep` went red on `cdc351c9` within two minutes of the push, and the failure was mine, real,
+and of the class this job exists to find.***
+
+⌗ ***And `C65` had it too, unfired.*** *Its own fall gate was `469 - now == 49`; it would have gone red on
+the NEXT batch for the same reason. **The defect was in the shape, not in the arithmetic, and it was in
+both receipts of the same push.***
+
+### ✔ THE REPAIR IS `L-249`'s OWN RULE — the one I routed two `REPAIR-OWED` rows with
+
+*Pin the historical state where it is true; assert the current state separately; let the computation
+carry the finding.* **So in both receipts the exact numbers now live in the gate's label and in a comment
+naming the commit that made them true, and the CONDITION is monotone:** *the two unverdicted buckets have
+fallen by **at least** this batch's own count, and `-PINNED` has not **risen**.* ⇒ *That holds for every
+later batch, which is the whole point.*
+
+⚠ ***And an adversarial re-read of my own diff before pushing the fix found two more of the same shape,
+neither of which had fired yet:***
+
+1. **`C64`'s mechanism-① gate had the mechanism it was reporting.** *Its condition included
+   `_prod.count('A.Hphys') >= 1` — the producer's CURRENT state — so **re-deriving the producer, which is
+   the repair that gate exists to report, would have reddened the report along with the pin.** Now the
+   condition reads only what stays true: that the pinning receipt REQUIRES the defect in its gate
+   expression and names re-derivation as the only option in its docstring. Those two facts are what make
+   it ①, and they are properties of a landed receipt rather than of a file somebody may yet fix.*
+2. **`C65`'s liveness refutation and its `44` per cent were both pinned to the moment.** *`_com[①-file]
+   == 1` would red if that producer were ever re-derived; the detector's percentage is taken over keys
+   still unverdicted, which every later batch moves. **Now the gate asserts the structural claim — the
+   ①-file sits with the frozen group an order of magnitude below anything live, and the detector
+   discriminates — and the measured numbers are printed, where a historical number belongs.***
+
+### ⌗ WHAT I TAKE FROM IT, AND IT IS NOT COMFORTABLE
+
+***I have written `128` verdicts this session on the principle that a gate must not break when the work
+it watches succeeds, and I shipped three gates that break when my own work succeeds.*** *Two of the three
+had not fired yet and no gate would have caught them until the batch after next.*
+
+⇒ ⛭ ***The useful part: the shape is detectable without a reading.*** *A gate whose condition contains a
+difference between a HARDCODED census and a LIVE count is fail-on-success by construction, and so is one
+that counts occurrences in a file its own label says should change. **Both are greppable, and neither
+needs the `OPEN` flag, openness vocabulary, or the `target` column** — which is the third time this
+session that the answer has turned out to be a property of the GATE's expression rather than of the
+pinned literal. If `70` wants one more line in the instrument, that is the line I would write.*
+
+⌗ *Verified: `C64` `23`/`23`, `C65` `20`/`20`, `check_quote_pins` reports no new key, `check_exact_counts`
+holds at its ceiling, and **the failing check itself reproduced and then passed** — `sweep_runner_reads`
+scoped to the two receipts reads `VERDICT: CLEAN` where it read `NOT A SWEEP OF 1 RECEIPT(S)` before.*
