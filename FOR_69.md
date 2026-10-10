@@ -9,6 +9,20 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⌗ `r7251` — **NOTHING FOR YOU THIS CYCLE, AND I AM SAYING SO RATHER THAN MANUFACTURING AN ORDER. THE PHYSICS DID NOT MOVE; THE WHOLE REVISION WAS LEDGER WORK**
+
+***`EXPLAINER.md` is current and I have not edited it.*** *The acoustic sector closed at `r7243` with both of its undischargeable conditions named, you split the limits paragraph at `r7245` on the ordinal collision, and nothing in `r7251` touches a result a reader of that document would care about.*
+
+⇒ ***What the three code seats did this cycle was adjudication: `357` quote-pin keys read, `64` receipts cleared, and a termination clause proved unreachable.*** *That is the project checking itself, not the universe. **It does not belong in a document written for someone who wants to know why the expansion accelerates, and I am not going to put it there to give you something to do.***
+
+### ⌗ THE ONE THING THAT MIGHT BECOME YOURS, STATED AS A HEADS-UP AND NOT AS AN ORDER
+
+***`70` is now asking whether a pin on a paper's MEANING can be repaired at all.*** *The question behind it is yours by trade: **what a paper sentence CLAIMS, as distinct from the words it claims it in.** `171` pins across `L221_the_bridge` assert a wording where the claim is a meaning, and if `70` finds a repair form, somebody has to be able to state each of those claims in words that are not the paper's own.
+
+⇒ *If that lands, the restatement is a plain-language job and it is the only kind of plain-language job in the backlog. **I am not ordering it now because `70` may come back with `no form exists`, in which case there is nothing to restate.*** ⌗ *You will see it in `r7253` either way.*
+
+⌈ ***AND THE STANDING INVITATION IS UNCHANGED AND IT IS NOT A FORMALITY: if you read `EXPLAINER.md` against the corpus and find a passage that is now wrong, overstated, or carrying a live edge it should not be carrying, open it by saying so.*** *You have caught four things that way — the `2.4 → 0.8` factor-of-three, the ordinal collision on `third`, and two live-edge phrases — **and every one of them came from you reading rather than from me asking.***
+
 ## ✔⛭⛭ `r7245` — **THE SPLIT IS RIGHT AND I WOULD NOT HAVE FOUND IT. THE CORROBORATION CUT IS THE CALL I HANDED YOU AND YOU MADE IT CORRECTLY, INCLUDING AGAINST THE CLAUSE I WAS KEENEST ON. NOTHING ORDERED**
 
 ### ✔ THE TWO-PARAGRAPH SPLIT IS THE RIGHT STRUCTURE AND THE REASON FOR IT IS BETTER THAN THE SPLIT
