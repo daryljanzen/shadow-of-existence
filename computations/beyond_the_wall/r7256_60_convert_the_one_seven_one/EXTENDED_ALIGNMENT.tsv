@@ -1,0 +1,71 @@
+# THE GRAIN CLAUSE's FIRST INDEPENDENT TEST, on the 64 EXTENDED rows of this prefix -- spans another
+# seat built by extending a reversal-blind phrase by D characters so a declared reversal breaks it.
+# The test is WORD ALIGNMENT against the papers, whitespace-normalised, over EVERY occurrence: a span
+# clipped at every occurrence is a character window and not a grammatical unit, so `the shortest span
+# that carries the claim` is undefined for it.  ⛔ NO VERDICT IS CHANGED HERE: the rows are another
+# seat's repairs and the measurement is routed, not applied.
+# receipt	literal(JSON)	target	D	occurrences	alignment
+receipts/L221_the_bridge/B10_po2_resemblance_is_now_a_construction.py	"1$, the configuration group selected rather than chosen"	PAPER	4	2	ALIGNED
+receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"Whether the two triples are one structure is n"	PAPER	5	1	CLIPPED
+receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	"Whether the two triples are one structure is n"	PAPER	5	1	CLIPPED
+receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	"1-f$, and the excursion's three critical loci sit at three equally spaced values of $f$"	PAPER	10	1	ALIGNED
+receipts/L221_the_bridge/B18_the_obstruction_is_horizon_located.py	"t interchangeable, and CR reads the fermion on the leaf, where it is a bound state"	PAPER	23	1	CLIPPED
+receipts/L221_the_bridge/B19_the_swap_is_the_weyl_z2_not_the_centre.py	"a discrete horn swap and delivers a species label, not $SU(2"	PAPER	11	1	ALIGNED
+receipts/L221_the_bridge/B21_the_three_levels_audited.py	"(1) skeleton grounded, (2) resemblance n"	SOURCE	19	0	NOT-IN-PAPERS
+receipts/L221_the_bridge/B21_the_three_levels_audited.py	"t claimed, (3) identification walled"	SOURCE	21	0	NOT-IN-PAPERS
+receipts/L221_the_bridge/B21_the_three_levels_audited.py	"2) resemblance not claimed"	SOURCE	3	0	NOT-IN-PAPERS
+receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py	"t advance while the areal radius climbs from the comoving turnaround $|r|=(2"	PAPER	18	1	CLIPPED
+receipts/L221_the_bridge/B33_the_ledger_branch_is_settled.py	"is a gauge-combination rather than a second physical length, the cutoff is n"	PAPER	17	1	CLIPPED
+receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	"s signed, $W$ changes sign at $r=0"	PAPER	19	1	CLIPPED
+receipts/L221_the_bridge/B37_po4_and_po5_share_a_root.py	"gauge-combination rather than a second physical length, the cutoff is n"	PAPER	24	1	CLIPPED
+receipts/L221_the_bridge/B3_the_involution_is_quaternionic_not_real.py	"reality-involution lift $S=\\gamma^{0"	PAPER	13	1	ALIGNED
+receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	"delivers a species label, not $SU(2"	PAPER	11	1	ALIGNED
+receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	"delivers a species label, not $SU(2"	PAPER	11	1	ALIGNED
+receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	"e its four one-dimensional ones"	PAPER	6	1	CLIPPED
+receipts/L221_the_bridge/B42_the_route_was_taken_and_p14_is_the_work.py	"delivers a species label, not $SU(2"	PAPER	11	1	ALIGNED
+receipts/L221_the_bridge/B49_the_taxonomy_was_the_stale_gate.py	"s nothing left to guard"	SOURCE	2	0	NOT-IN-PAPERS
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	"s branching and a branch structure has finitely many sheets"	PAPER	16	1	CLIPPED
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	"s subregular"	PAPER	2	1	CLIPPED
+receipts/L221_the_bridge/B60_one_operator_the_fork_does_not_exist.py	"y horizon (f=0) and is ODD in signed r"	SOURCE	23	0	NOT-IN-PAPERS
+receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	"a discrete horn swap and delivers a species label, not $SU(2"	PAPER	11	1	ALIGNED
+receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	"r them, the discrete content of \\textbf{colour}"	PAPER	8	1	CLIPPED
+receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	"t three.} What remains genuinely outstanding is the gauge group and the multiplet structure"	PAPER	10	1	CLIPPED
+receipts/L221_the_bridge/B9_po3_why_is_answered_dimensionally.py	"3}$ Nariai hexad, n"	PAPER	7	1	CLIPPED
+receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"T established is that they are the same $A_2$"	SOURCE	35	0	NOT-IN-PAPERS
+receipts/L221_the_bridge/B13_po2_identification_is_stated.py	"s the one CR's own founding principle selects, places a slicing plane on each: three throat walls"	PAPER	47	1	CLIPPED
+receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	"o holonomy datum can take one off it, because holonomy is precisely the complete invariant a flat connection has"	PAPER	46	1	CLIPPED
+receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	"3/\\Lambda}$, whose energy $\\hbar c/\\alpha$ sits some forty-one decades below the strong scale, and in the infrared rather than the ultraviolet direction from it"	PAPER	99	1	ALIGNED
+receipts/L221_the_bridge/B19_the_swap_is_the_weyl_z2_not_the_centre.py	"t $SU(2)_L$'s chiral action, the two occupations differing on the right-handed pair"	PAPER	29	1	CLIPPED
+receipts/L221_the_bridge/B25_the_scattering_object_exists.py	"1=(sqrt f/r)e), and shows the massless radial Dirac operator carries superpotential W=lambda sqrt(f)/r"	SOURCE	71	0	NOT-IN-PAPERS
+receipts/L221_the_bridge/B32_the_two_bounds_compose.py	"2}$~\\cite{JanzenCRcosmology}) is the size of the universe in gauge-units"	PAPER	33	1	CLIPPED
+receipts/L221_the_bridge/B33_the_ledger_branch_is_settled.py	"2}$~\\cite{JanzenCRcosmology}) is the size of the universe in gauge-units"	PAPER	33	1	CLIPPED
+receipts/L221_the_bridge/B35_the_continuation_is_cited_wrong.py	"1$ geodesic, threaded through the horizon-regular Painlev\\'e--Gullstrand chart, is d"	PAPER	69	1	CLIPPED
+receipts/L221_the_bridge/B36_two_of_three_crossings_are_supplied.py	"establishes that closure as a theorem, of which the circle exhibited here is the $\\Lambda=0"	PAPER	54	1	ALIGNED
+receipts/L221_the_bridge/B37_po4_and_po5_share_a_root.py	"the common root of three verdicts reached separately, that the winding quantises witho"	PAPER	34	1	CLIPPED
+receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	3	CLIPPED
+receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	"s \\emph{finite} total length\\rcpt{P14_leaf_compactness}, so the leaf is compact and its Dirac operator carries a well-defined"	PAPER	60	1	CLIPPED
+receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	"e its four one-dimensional ones, so a colourless sector on this structure has total dimension four"	PAPER	74	1	CLIPPED
+receipts/L221_the_bridge/B42_the_route_was_taken_and_p14_is_the_work.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	3	CLIPPED
+receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	3	CLIPPED
+receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	"the common root of three verdicts reached separately, that the winding quantises witho"	PAPER	34	1	CLIPPED
+receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py	"t force a coupling, and its silence about magnitudes is a property of a one-constant theory rather than a gap awaiting work"	PAPER	56	1	CLIPPED
+receipts/L221_the_bridge/B46_one_matching_not_two.py	"e static mode does \\emph{not} normalize, the horizons standing infinitely far"	PAPER	41	1	CLIPPED
+receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	3	CLIPPED
+receipts/L221_the_bridge/B53_gating_l829_and_l830.py	"e static mode does \\emph{not} normalize, the horizons standing infinitely far"	PAPER	41	1	CLIPPED
+receipts/L221_the_bridge/B54_the_retraction_supports_the_verdict.py	"t supply multiplicity, since $\\lambda=j+\\tfrac12$ labels partial waves and each contributes e"	PAPER	79	1	CLIPPED
+receipts/L221_the_bridge/B56_it_is_lambda_8_not_a_coupling.py	"s the Cartan subalgebra of $\\mathfrak{su}(3)$ in its standard realisation, the diagonal traceless matrices"	PAPER	79	1	CLIPPED
+receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py	"e is flat, so the construction supplies colour's exact selection rules and n"	PAPER	46	3	CLIPPED
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	"t the argument.} The moduli space of flat connections consists of flat connections"	PAPER	54	1	CLIPPED
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	"d have left a two-parameter family, and the disjointness of the vantages' supports is e"	PAPER	59	1	CLIPPED
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	"vanishing first cohomology with any coefficients, so the representation does n"	PAPER	52	1	CLIPPED
+receipts/L221_the_bridge/B59_the_routes_are_enumerable_and_one_is_absent.py	"t the argument.} The moduli space of flat connections consists of flat connections"	PAPER	54	1	CLIPPED
+receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	"e the $\\sigma_{y}$ eigenvalues of Proposition~\\ref{prop:wall}, changing their signs only in \\emph{pairs}"	PAPER	63	1	CLIPPED
+receipts/L221_the_bridge/B65_the_gluon_is_the_octet_and_p14_counts_the_singlet.py	"t supply multiplicity, since $\\lambda=j+\\tfrac12$ labels partial waves and each contributes e"	PAPER	79	1	CLIPPED
+receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py	"e fixed in the matter sector rather than by this grading~\\cite{JanzenMatter}, and the sector that stays unbuilt is the other one"	PAPER	98	1	CLIPPED
+receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py	"e \\emph{distinct} loci, so the wall-bound zero-modes are linearly independent and span a three-dimensional space"	PAPER	27	1	CLIPPED
+receipts/L221_the_bridge/B67_verdict_the_analytic_sqrt_f_operator.py	"sqrt(f) is a COMMON FACTOR of the operator equation in r, n"	SOURCE	47	0	NOT-IN-PAPERS
+receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py	"t selected~\\cite{JanzenMatter}, the leaf-bound modes and the propagating field"	PAPER	36	1	CLIPPED
+receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py	"t selected~\\cite{JanzenMatter}, the leaf-bound modes and the propagating field being two sectors"	PAPER	32	1	CLIPPED
+receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py	"t evade the positive-curvature obstruction, so what is definite is the emptiness of a definite object"	PAPER	47	1	CLIPPED
+receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py	"t $SU(2)_L$'s chiral action, the two occupations differing on the right-handed pair"	PAPER	29	1	CLIPPED
+receipts/L221_the_bridge/B9_po3_why_is_answered_dimensionally.py	"s occur, at scale $1$, and returns a four-fold"	PAPER	27	1	CLIPPED

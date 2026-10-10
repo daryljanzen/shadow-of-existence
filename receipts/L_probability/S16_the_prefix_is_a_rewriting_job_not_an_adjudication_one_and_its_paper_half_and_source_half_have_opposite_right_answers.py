@@ -32,6 +32,7 @@ quote-pin backlog against its own published per-key table; no physical parameter
 import collections
 import json
 import os
+import subprocess
 
 CHECKS = []
 
@@ -71,11 +72,44 @@ gate(f'Ⓐ② ⇒ AND THE PREFIX IS CLEARED IN THE BASELINE: {len(_mine)} keys c
      f'opened, as the ledger`s header requires*',
      len(_unv) == 0 and len(_mine) >= 289)
 
+# ** ⛭⛭⛭ REPAIRED r7256, AND IT IS THIS LINE'S OWN CLASS FOR THE FOURTH TIME IN TWO CYCLES. ***
+#   This gate asserted that the published table's verdicts are the ones the baseline carries NOW.  That
+#   is a claim about a file every later revision may rewrite -- and `r7253` ordered this very prefix
+#   converted, so `r7256` moved `141` of these rows to `MEANING-HELD` and `10` to `DELIBERATE` and the
+#   gate went red on the success of the work its own receipt reported.
+#   ⇒ ** The repair is `L-249`'s, the same one `66` applied to `S2` and `S17`: the agreement is asserted
+#   AT THE COMMIT THE TABLE WAS WRITTEN AT, which cannot move, and the LIVE state is reported and
+#   checked separately -- that every key is still adjudicated, which is the property `PO-78` actually
+#   cares about and the only one that is monotone. **
+TABLE_PIN = '60e84a18'
+
+
+def _at_pin(path):
+    return subprocess.run(('git', 'show', f'{TABLE_PIN}:{path}'), cwd=ROOT,
+                          capture_output=True, text=True, errors='replace').stdout
+
+
+_pin_base = [l.split('\t') for l in _at_pin('corpus/quote_pin_baseline.tsv').split('\n')
+             if l.strip() and not l.startswith('#')]
+_pin_base = [r for r in _pin_base if len(r) >= 7]
 _vmap = {(r[0], r[4]) for r in READ}
-_bmap = {(r[0], r[5]) for r in BASE if r[0].startswith(PREFIX) and 'EXTENDED' not in r[5]}
-gate('Ⓐ③ and every verdict in the published reading is the verdict the BASELINE now carries -- *the '
-     'table is the evidence for the ledger and not a separate story about it*',
-     _vmap <= _bmap)
+_bmap = {(r[0], r[5]) for r in _pin_base if r[0].startswith(PREFIX) and 'EXTENDED' not in r[5]}
+_live = {r[5] for r in BASE if r[0].startswith(PREFIX)}
+print(f"      at the pin {TABLE_PIN}: {len(_pin_base)} baseline row(s); the prefix's verdicts there "
+      f"agree with the table: {_vmap <= _bmap}")
+print(f"      live verdicts on the prefix today: {sorted(_live)}", flush=True)
+gate(f'Ⓐ③ and every verdict in the published reading is the verdict the baseline carried AT THE COMMIT '
+     f'THIS TABLE WAS WRITTEN AT, `{TABLE_PIN}` -- *the table is the evidence for that pass of the '
+     f'ledger and not a separate story about it*.  ⌗ *Read at the pin because the live file is one a '
+     f'later revision may convert, and `r7253` ordered exactly that: a gate on `now` would go red on '
+     f'the success of the work this receipt reports*',
+     len(_pin_base) > 1000 and _vmap <= _bmap)
+
+gate('Ⓐ③ᵇ ⇒ and the LIVE state is asserted separately and monotonically: every key of the prefix is '
+     'still ADJUDICATED today, whatever the vocabulary has become -- which is the property `PO-78` '
+     'actually ratchets, and the only one of the two that cannot be broken by a later seat doing the '
+     'work right',
+     len(_live) > 0 and not any('UNADJUDICATED' in v for v in _live))
 
 # a POSITIVE control on this receipt's own read, the lesson of the last three revisions
 gate(f'Ⓐ④ ⌗ the control: the reading read NON-EMPTY and NON-UNIFORM -- '

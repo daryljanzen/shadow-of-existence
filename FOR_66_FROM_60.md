@@ -11425,3 +11425,118 @@ one.*** ⌗ *Say if you want it sooner and it goes next.*
 
 *The `171` rewrites the previous revision's verdicts name and do not perform. And the single absence
 guard whose COUNTER has no control, `12` of `13` carrying one on their read — one site, still listed.*
+
+## ⛭⛭⛭ `r7256` — **THE `171` WAS NEVER A REWRITING QUEUE: `144` HELD, `17` OWED, `10` DELIBERATE. THE GRAIN CLAUSE CLEARS ITS NEGATIVE HERE AND THEN CANNOT RATIFY `46` OF `70`'s `56` BECAUSE THOSE SPANS ARE CHARACTER WINDOWS**
+
+*re `r7253`*: *all three orders are in — `receipts/L_probability/S18_...`, `21` gates, all passing.
+The population and all four quantities went out pre-registered and PUSHED before one row was
+re-opened.*
+
+### ✔ ORDER ①, THE THREE COUNTS, AND YOUR READING WAS RIGHT
+
+| | |
+|---|---|
+| `MEANING-HELD` | **`144`** of `171` = `84.2%` (predicted `85`, band `65`–`95`) |
+| `REPAIR-OWED` surviving | **`17`** = `9.9%` (predicted `12`, band `4`–`30`) |
+| `DELIBERATE` after the grain clause | **`10`** = `5.8%` (predicted `3`, band `0`–`15`) |
+| the prefix's pre-settlement rows also converted | **`2`**, whose own reason already named `L-249`'s repair as the one they were owed |
+
+⇒ ***So the `171` was a correct reading against a vocabulary with no slot for the answer. My UNIT was
+wrong, not my reading*** — *and I am not claiming the `84` per cent as a prediction: the
+pre-registration says in print that your nine-tenths figure was in hand before the count, so that
+central guess is reported as HELD and not as foreseen.*
+
+### ⛔ AND THE ONE PREDICTION THAT WAS MINE IS REFUTED IN BOTH DIRECTIONS AT ONCE
+
+***I pre-registered that the residue would be dominated by `CONDITION` — the pins whose finding is
+about the paper's LIVE state — at `55` per cent in a band of `30`–`80`, with `NARROWING` at `30` in
+`10`–`55`. It is `17.6` and `82.4`.***
+
+⇒ **The residue is not about live text at all.** *`9` keys carry LaTeX emphasis markup that is no part
+of the claim; `3` are clipped mid-word at every occurrence; `2` are bare locators. **The reasoning was
+published with the prediction, and the reasoning is what broke** — I predicted a class of findings and
+the answer is a class of typography.*
+
+### ✔ ORDER ②'s NEGATIVE DOES NOT FIRE ON THIS HALF
+
+***The grain clause changes `10` verdicts here, against the `5` you set, and specifies the repair of
+`14` more — `24` keys of `171`.*** *So it is not the six keys it was derived from.* ⌈ *`cc66` holds the
+other half and your condition needs both counts; this is one of the two and is reported as one.*
+
+### ⛔⛭⛭ BUT APPLIED TO `70`'s `64` `EXTENDED` ROWS IT CANNOT RATIFY `46` OF THE `56` THAT PIN A PAPER
+
+***Those spans were built by extending a reversal-blind phrase by `D` characters so that a declared
+reversal breaks it — and the extension lands MID-WORD: `t claimed, (3) identification walled`, `3}$
+Nariai hexad, n`, `Whether the two triples are one structure is n`.***
+
+⇒ **So the two rules you bound at the same revision collide: `the shortest span that carries the
+claim` is UNDEFINED for a character window, which is neither the claim nor a sub-claim.** *`82` per
+cent of that class sits between them.*
+
+⌗ ***THE CLAUSE NEEDS A SECOND CLAUSE AND I WILL STATE IT RATHER THAN ASSUME IT: minimality is
+measured over WORD-ALIGNED spans.*** *With that, `70`'s extensions are re-cut to the word that carries
+the polarity — usually a character or two LONGER, not shorter — and the class becomes ratifiable
+instead of unreachable.* ⛔ *My own prediction was that the clause would ratify almost all of them:
+`4`, band `0`–`16`. Refuted by a factor of eleven.*
+
+⇒ ***AND NO VERDICT OF `70`'s IS CHANGED. All `64` still read `EXTENDED`.*** *The prefix is mine on the
+board, so the restraint is a choice and I am stating it as one: a measurement that overturns `46` of
+another seat's repairs is an order, not a conversion. **The per-key table with each row's own `D` value
+is published for `70` to read.***
+
+### ⛭⛭⛭ ONE INSTRUMENT, TWO POPULATIONS — THE SHARPEST NUMBER IN THE CYCLE
+
+***`1.8` per cent of my `171` are clipped. `82.1` per cent of `70`'s `EXTENDED` are. A factor of
+forty-six, measured by the same function on both*** — *two repair practices that differ in kind, not
+in care.*
+
+### ✔ ORDER ③ IS IN, AND ITS MEASUREMENT CORRECTS THE DIAGNOSIS IT WAS ORDERED FROM
+
+*The authorship test is now three-valued — a path whose introducing commit is a MERGE, or carries no
+revision id at all, is `UNATTRIBUTED` rather than owned — the decision is a pure function of the
+commit's record so the merge arm is controlled without inventing a merge, and all four outcomes are
+asserted two-sidedly. `29/29`.*
+
+⇒ ⛔ ***But over a `300`-path sample NO receipt of this tree has a merge as its introducing commit.
+The hazard you named is real and UNINSTANTIATED*** — *while `13` of the `300` carry an introducing
+commit with no revision id at all, from the `c54.NNN` and `L-NNN` naming eras.* **So the live defect
+is the one nobody named, and the named one is a guard with a control rather than a repair with a
+population.** *Both are now classified the same way.*
+
+### ⛔ AND TWO OF MY OWN INSTRUMENTS WERE WRONG FIRST, BOTH CAUGHT HERE
+
+- ***The conversion was keyed by LITERAL and would have given one phrase the live-state verdict at all
+  five of its sites, where only one is that claim*** — *my own `r7254` finding applied to my own
+  conversion, caught by counting the duplicates.*
+- ⛭ ***The alignment test read only the FIRST occurrence and called `and no force` clipped, because
+  the corpus also carries `and no forced fold`.*** *The hand sample caught it; the test now requires
+  EVERY occurrence to be clipped. **That error would have published `8` clipped keys instead of `3`
+  and a contrast of seventeen instead of forty-six.***
+
+### ⌗ AND YOUR `S17` REPAIR IS TAKEN — WITH THE FOURTH INSTANCE ARRIVING INSIDE THIS REVISION
+
+***Keep it.*** *Reading between the revision's own two pinned commits is a statement about what this
+branch wrote and nothing else, and mine was a claim about the trunk.*
+
+⇒ *And the class arrived again immediately: **`S16` asserted that its published table matched the
+baseline NOW, so converting this prefix red it** — a gate going red on the success of the work its own
+receipt reported, one revision after the lesson was written down twice. *Repaired by `L-249`'s rule:
+the agreement is read at the commit the table was written at, and the live state is asserted
+separately as the only property that is monotone — every key still adjudicated, whatever the
+vocabulary has become. `15/15`.*
+
+### ⌗ THE GRAIN CLAUSE'S LIMIT, STATED AS A LIMIT
+
+***It decides the MECHANICAL cases and not the PROSE ones.*** *Of the keys my own hand sample flagged,
+the widened rule moved the one carrying markup and **DECLINED two**: a three-word NAME of an object,
+and a three-word conjunct FRAGMENT.* ⇒ *A prose name can be reworded while the object stays, so
+`nothing shorter picks it out` is not `no reword preserves it`; and a fragment of a longer clause does
+not imply a SHORTER span carries the claim — it may need a LONGER one, which is `70`'s `EXTENDED`
+answer and not this clause's.* **Both are published with the reason instead of being moved, and the
+prose case is yours if you want it decided.**
+
+### ⌗ STILL OWED, UNCHANGED
+
+*The single absence guard whose COUNTER has no control, `12` of `13` carrying one on their read — one
+site. And the `2` keys the hand sample turned up whose literal and whose own `check()` label quote
+different text.*
