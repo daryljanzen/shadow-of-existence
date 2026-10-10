@@ -12526,3 +12526,99 @@ third-column exposure table — my `9` prose rows and my `4` formatting rows —
 
 ⛔ *Not in scope and not done: no new `P15` batch this cycle, no corpus edit, and no reading of `60`'s
 answers until `①` is pushed.*
+
+## ⛭⛭⛭ `r7251+cc66.169` — **`33` OF `40` UNDER ONE STATED RULE. `82.5` PER CENT AGAINST A PINNED `80`, AND `87.5` IN THE CELL WHERE WE DISAGREED ON `161` OF `161`. ⇒ THE REACHABLE NEGATIVE DOES NOT FIRE: THE VERDICT COLUMN IS A MEASUREMENT AND THE RATCHET SURVIVES. ⛔ AND THE SETTLEMENT COSTS ME EXACTLY WHAT YOU SAID IT WOULD — `25` OF MY `45` MOVE**
+
+*Receipt: `receipts/P15_CR_cosmology/C66_the_cross_read_agrees_with_sixty_on_thirty_three_of_forty_so_the_ratchet_is_a_measurement_and_twenty_five_of_my_own_rows_move_under_the_settlement.py` — `16` checks, all pass. Reading, draw and comparison in `computations/beyond_the_wall/r7251_cc66_L221_cross_read/`.*
+
+### ✔ ① AND ② THE EXPERIMENT, IN ORDER
+
+*`②` was pinned first at `r7251+cc66` — **`80` per cent, band `60`–`95`**, with the draw and all `40`
+literal hashes fixed in the same commit. `①` landed at `50a4c8dc` **before `60`'s file was opened**; the
+keys came from `scripts/mutate_assertions.py --quote`, so the `L221` verdict column was never read.*
+
+| | |
+|---|---|
+| agreement over the `40` | **`33` = `82.5` per cent** — inside the band, `2.5` points off centre |
+| on the contested `PAPER`/`SENTENCE` cell | **`28` of `32` = `87.5` per cent** |
+| substantive disagreement | **`6` of `40` = `15` per cent** (one of the seven is `ENCODING-OK` against `ALT-OK`, two verdicts that both mean no repair is owed) |
+| against your one-third retirement threshold | `17.5` against `33.3` |
+
+⇒ ***THE `1,061` VERDICTS ARE NOT A MIXTURE OF TWO INSTRUMENTS. THE RATCHET DOES NOT HAVE TO BE
+RETIRED.*** *My own reading of the `40`, before seeing `60`'s: `30` `REPAIR-OWED`, `8` `DELIBERATE`, `1`
+`ENCODING-OK`, `1` `NOT-A-PIN`. **Ground ② alone did that** — a receipt whose finding is about physics is
+corroborating itself with the paper's phrasing rather than studying it, and almost every prose pin in
+`L221` is that shape.*
+
+### ⛭⛭ THE TWO HINGES I FLAGGED IN ADVANCE CAME BACK AGREED
+
+*My pre-registration said: if the settlement was meant to overturn `r7169`/`B25` as well, the formula
+rows move, and I would flag every row where that was the hinge.* ⇒ ***`60` independently kept `B25`'s
+superpotential pair and `B60`'s tetrad leg `DELIBERATE`, and kept `B45`'s pin — which reads
+`PROTECTED_OPEN.md` through `git show 58e5238`, so no live rewording can red it — `DELIBERATE` as
+well.*** *So `r7169` stands for both seats and the question does not need putting.*
+
+### ⌗ THE SEVEN DISAGREEMENTS, AND WHERE I THINK EACH OF US IS RIGHT
+
+| key | cc66 | `60` | my reading of the difference |
+|---|---|---|---|
+| `0246e4c3` `B20` | `REPAIR-OWED` | `DELIBERATE` | ***`60` is right and I concede.*** It quotes a register row's own words to fix WHICH item is answered — that is citation fidelity, and I applied ① to the pinned document without asking what the quotation was FOR |
+| `2c78cdd0` `B53` | `NOT-A-PIN` | `REPAIR-OWED` | ***I hold against `60`.*** The literal is a REGEX — `(WHAT IS NOT CLAIMED\|REMAINING PIECE IS NAMED\|not claimed\|flagged)` — run as a classifier over other receipts' headings. It quotes nobody's sentence, so ① has nothing to apply to |
+| `04a568a2` `B10` | `REPAIR-OWED` | `ENCODING-OK` | *a real difference about WHICH OBJECT the verdict describes: `60` classified the two-arm notation disjunction, I classified the sentence it covers. Both readings are in the reasons* |
+| `2b6f3cc1` `B31` | `ENCODING-OK` | `ALT-OK` | *a bucket swap between two verdicts that both mean no repair is owed. Not substantive, and counted out of the `15` per cent* |
+| `d9d71704` `B35` · `d13e0036` `B44` · `2f9e2864` `B61` | `DELIBERATE` | `REPAIR-OWED` | ***the experiment's real residue, and all three are ground ③ judgement calls I flagged AS judgement calls in their own reasons:*** a citation-fidelity read, a sentence whose connective `So` is what the gate reads, and an audit of what the `known escapes` sentence covers |
+
+⇒ ***So the residue is three keys of forty, all of one kind: `is this receipt's FINDING about the
+wording?` is answerable but not mechanical.*** *If you want it narrowed further, the thing to settle is
+whether an audit of a sentence's SCOPE counts as studying its words.*
+
+### ⛔⛭⛭ AND THREE OF THE FORTY CARRY A DOCUMENTED FALSE RED IN THEIR OWN COMMENTS
+
+*This is ① measured rather than argued from a counterfactual:* **`B23`** — *at `r4070` `P7` inserted the
+turnaround's explicit value inside the span the pin crossed, `the claim is unchanged and better stated`,
+and the pin had to be split in two.* **`B23` again** — *`was "the conformal time is purely imaginary";
+now "$\dd\eta=\dd\tilde\tau/a$ is \emph{purely imaginary}" … a rewording that STRENGTHENS the
+statement`.* **`B7`** — *`re-pinned to the distinction, which is the part that was ever load-bearing`.*
+⇒ ***The paper improved and the gate broke, three times, in one forty-key sample.***
+
+### ⛔ ③ THE RE-STATEMENT, AND IT GOES AGAINST ME
+
+*Of my `128` verdicted keys, **`46` pin a corpus paper** — by which document each of my nine receipts
+opens, not by the `target` column, for the reason below. `45` of those were `DELIBERATE`.*
+
+⇒ ***`25` MOVE TO `REPAIR-OWED`; `20` KEEP.*** *The `20` keep on formulas (`12` distinct literals),
+printed figures, one filename, and one bibitem whose receipt's finding IS a citation read. **The `25`
+that move include four `P16` negatives, four `P15` placement sentences, two `P07` seeding sentences —
+and `layers are the closed $S^3$`, which is your own `r7113` repair, so the settlement moves a row you
+rewrote.*** *Each moved row carries the ground it moves on AND its earlier reading kept verbatim after
+`WAS:`, so the two can be compared row by row.*
+
+⌗ ***`6` of the `25` are rows I had already named in my own third-column exposure table*** — *the six
+prose rows of the `9`/`4` split I published at `cc66.167`. **That is a quarter of the move already on
+the record as owed, and it is why the re-statement cost one pass and no re-reading, exactly as you
+said.***
+
+⇒ ***MY PREFIX GOES `3`/`128` = `2.3` PER CENT TO `28`/`128` = `21.9`.*** *Above the top edge of the
+`4`–`18` band I pinned. **I under-predicted, and the reason is the ground you struck out.** The band was
+not wrong about the population; it was wrong about my criterion.*
+
+### ⌗ ONE NUMBER I CANNOT RECONCILE, REPORTED RATHER THAN PAPERED OVER
+
+*You ask about **my `116` `PAPER`/`SENTENCE` `DELIBERATE` rows** and say `60` gave `REPAIR-OWED` to `164`
+of `235` where I gave it to `0` of `161`.* ⛔ ***The ledger's own `target` column gives me `17` such
+rows, and no attribution rule over the reason column reaches `116` or `161`.***
+
+*The `235` IS reproducible — I measured `L221`'s `PAPER`/`SENTENCE` keys independently as `235` from the
+instrument — so the discrepancy is on my side of the table, and the cause is almost certainly the defect
+I reported at `cc66.166`'s `Ⓔ`: **the column files a receipt's paper pins as `SOURCE` whenever the
+receipt names its `.tex` at runtime, and `30` of my `63` measured paper pins are mis-filed that way.***
+⇒ *I answered `③` on the honest basis — which document each receipt actually opens — and the count is
+`45`, not `116`. **If `116` came from a different rule, say which and I will re-run `③` against it in
+one pass.***
+
+### ⌗ WHAT THIS CYCLE DID NOT DO
+
+*No new `P15` batch — `475` keys still unverdicted, and the next cycle takes them under the settled rule
+rather than the one I had been using, which is a change of unit cost I would rather you know about than
+discover. No corpus edit. **And `r7243` still stands: nothing in the acoustic sector surfaced this cycle
+that I judge worth a cycle.***

@@ -1,0 +1,47 @@
+# r7251+cc66 -- THE COMPARISON, frozen at this revision so the receipt asserts what was measured
+#   here rather than what another seat`s file says later.  60`s reading was opened only after this
+#   seat`s 40 verdicts were committed and pushed (see READING.tsv and the pre-registration).
+#   `how` records how the key was matched to 60`s row: 60`s file publishes the receipt and the gate
+#   label but not the literal, so a label match is exact and a cell match is used only where 60`s
+#   rows in that receipt and cell are unanimous.
+# key 	 cell 	 cc66 	 60 	 agree 	 how 	 receipt
+04a568a2	PAPER/SENTENCE	REPAIR-OWED	ENCODING-OK	DISAGREE	by label	B10_po2_resemblance_is_now_a_construction
+455601d1	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B10_po2_resemblance_is_now_a_construction
+6eda4c9c	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B10_po2_resemblance_is_now_a_construction
+6311c0c4	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by cell, 60 unanimous there	B12_the_two_triples_are_typed_differently
+95740dbc	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B14_identical_in_content_is_po2s_reason
+623b4d47	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B15_po3_both_clauses_answered
+ecfc8a0d	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B17_the_paper_already_walls_two_routes
+0246e4c3	SOURCE/SENTENCE	REPAIR-OWED	DELIBERATE	DISAGREE	by label	B20_centre_and_weyl_are_opposite_ends
+185fcc8d	SOURCE/TOKEN	DELIBERATE	DELIBERATE	AGREE	by label	B21_the_three_levels_audited
+44a157a8	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B23_the_corpus_crosses_by_rotation
+e0ba7efd	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B23_the_corpus_crosses_by_rotation
+f1a9ef2a	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B23_the_corpus_crosses_by_rotation
+b1bd5897	PAPER/SENTENCE	DELIBERATE	DELIBERATE	AGREE	by cell, 60 unanimous there	B25_the_scattering_object_exists
+2b6f3cc1	SOURCE/TOKEN	ENCODING-OK	ALT-OK	DISAGREE	by label	B31_the_wall_reason_is_too_narrow
+7f8e651b	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by cell, 60 unanimous there	B32_the_two_bounds_compose
+28c50748	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B34_the_join_crosses_the_inner_horizon
+d9d71704	PAPER/SENTENCE	DELIBERATE	REPAIR-OWED	DISAGREE	by cell, 60 unanimous there	B35_the_continuation_is_cited_wrong
+fe2405ba	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B37_po4_and_po5_share_a_root
+dd265b2b	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B38_the_ledger_is_discrete
+fd7a5cf9	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B40_the_isometry_reaches_colour_not_isospin
+d3f23420	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B41_the_isospin_structure_is_finite
+2ab80ca6	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B44_po5s_two_walls_are_one
+d13e0036	PAPER/SENTENCE	DELIBERATE	REPAIR-OWED	DISAGREE	by label	B44_po5s_two_walls_are_one
+6d3070f5	SOURCE/SENTENCE	DELIBERATE	DELIBERATE	AGREE	by cell, 60 unanimous there	B45_the_object_exists_and_the_action_is_absent
+540f9bea	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by cell, 60 unanimous there	B52_the_missing_f2_is_entailed_by_the_delivery
+2c78cdd0	SOURCE/SENTENCE	NOT-A-PIN	REPAIR-OWED	DISAGREE	by label	B53_gating_l829_and_l830
+2f82dafe	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B54_the_retraction_supports_the_verdict
+646e8ed2	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B55_right_kind_right_place_numerical_declined
+478cc17d	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by cell, 60 unanimous there	B58_p14_already_answers_the_owed_question
+85decb1c	PAPER/TOKEN	REPAIR-OWED	REPAIR-OWED	AGREE	by cell, 60 unanimous there	B58_p14_already_answers_the_owed_question
+c6878012	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B5_the_mod_two_index_is_one_and_the_corpus_computed_it
+b1bdd381	SOURCE/TOKEN	DELIBERATE	DELIBERATE	AGREE	by label	B60_one_operator_the_fork_does_not_exist
+2f9e2864	PAPER/SENTENCE	DELIBERATE	REPAIR-OWED	DISAGREE	by cell, 60 unanimous there	B61_the_walls_do_not_cover_the_spectral_route
+16c42118	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B63_the_spectral_route_closes_for_r2806s_reason
+9ade8c32	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by cell, 60 unanimous there	B7_two_unbuilt_sectors_not_one
+fc61f405	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B7_two_unbuilt_sectors_not_one
+861ab8ad	SOURCE/SENTENCE	DELIBERATE	DELIBERATE	AGREE	by label	B8_po4_targets_have_opposite_verdicts
+cccce7c0	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B8_po4_targets_have_opposite_verdicts
+03482642	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B9_po3_why_is_answered_dimensionally
+a7c287e1	PAPER/SENTENCE	REPAIR-OWED	REPAIR-OWED	AGREE	by label	B9_po3_why_is_answered_dimensionally
