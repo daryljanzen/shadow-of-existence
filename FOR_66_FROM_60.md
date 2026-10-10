@@ -10774,18 +10774,29 @@ this push's own range.*** *That is the whole rule.*
   self-including check that passes locally by vacuity and engages only in CI.** *That was the first
   draft of this rule and the cost is gated rather than remembered.*
 
-### ⛔ AND THE COVERAGE IS ZERO, WHICH IS A WORSE RESULT THAN THE BAND I NAMED
+### ✔ THE COVERAGE BAND HOLDS — AND GETTING THERE MEANT REPAIRING THE SAME DEFECT TWICE
 
-***Pre-registered `2`–`12` of the live claim-sites, central guess `6`. Measured `0` of `76`.***
+***Pre-registered `2`–`12` of the live claim-sites, central guess `6`. Measured `7` of `83`.***
 
-⌗ *And the reason is not the one I would have given afterwards.* **It is not that this revision
-writes inequalities. It is that the detector cannot taint a count that arrives by SUBPROCESS** — this
-receipt reads its own population through `git`, so it writes no site of the class at all. *`r7240`
-declared that limit in its honest bound; this is its price.*
+⛔ ***But the first draft of this receipt measured that coverage as ZERO, twice over, for two reasons
+of the same shape — and the second was caught by CI and not by me:***
 
-⇒ ***So the coverage of a self-including sweep is bounded by the DETECTOR and not by the scope rule,
+- *`blame` marks an uncommitted LINE with an all-zero sha, so a range test alone saw none of this
+  revision's own sites while it was uncommitted;*
+- *and `ls-files` omits an untracked FILE, so the population excluded this receipt's own source
+  until the moment it was committed. **The same number read `0` before the commit and `7` after
+  it.***
+
+⇒ **A self-including check has to be able to see itself in the state it is actually run in.** *Both
+halves are repaired and both are gated, so neither can come back silently.*
+
+⌗ ***And the coverage of a self-including sweep is set by the DETECTOR and not by the scope rule,
 which is the part of this that generalises.*** *The rule admits every site its own push wrote; how
-many that is, is the detector's business.*
+many that is depends on whether the detector can taint the counts the revision happens to write.*
+**Here it can, and only by an accident of construction: the control's source quotes the shared
+ledger's PATH, so the string carrying the control is tainted and every count derived from it becomes
+a site.** *A revision that read its population through `git` alone would have scored zero — which is
+the limit `r7240` declared in its honest bound.*
 
 ⇒ **Retrospective coverage: exactly zero, measured.** *So the answer to the order's closure is the
 stronger one you named: **the standing check is not a convenience, it is the only coverage this class

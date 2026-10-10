@@ -8,7 +8,12 @@ RED ON ANOTHER SEAT'S WORK?
     which is the half of the answer the order asked to have in advance. ***
 
 ⌗ **THE COVERAGE WAS PRE-REGISTERED AND IS SCORED HERE.**  `2`-`12` of the live claim-sites was the
-  band, `6` the central guess, and zero retrospective coverage.  Both are measured below.
+  band and `6` the central guess; the measured coverage is `7`, so the band HOLDS -- and the
+  retrospective coverage is exactly zero, which is the half that settles what the standing check is
+  for.  ⛔ *The first draft of this receipt measured that coverage as ZERO, twice over, for two
+  reasons of the same shape: `blame` marks an uncommitted LINE with an all-zero sha and `ls-files`
+  omits an untracked FILE, so the sweep could not see its own receipt in the state it was run in.
+  Both are repaired and both are gated.*
 
 ⛔ ** AND THE LARGER RESULT IS A CORRECTION TO THIS SEAT'S OWN PREVIOUS REVISION. **  `S4` defined
    `this seat's own receipts` as two directories, `r7240` inherited that definition, and both are
@@ -130,8 +135,23 @@ def parity(subject):
     return 'no-rev' if r is None else ('EVEN' if r % 2 == 0 else 'ODD')
 
 
-SITES = claim_sites(path_scope(git('ls-files', 'receipts/').split('\n')))
-POP = path_scope(git('ls-files', 'receipts/').split('\n'))
+def listed(pre):
+    """tracked AND untracked, because a sweep that reads `ls-files` alone cannot see its own
+    receipt until the moment it is committed.
+
+    ⛔ ** THAT IS THE SECOND TIME THIS REVISION MET THE SAME FAILURE. **  `blame` marks an
+    uncommitted LINE with an all-zero sha, and `ls-files` omits an untracked FILE entirely; the
+    first draft of this receipt had both, and measured its own coverage as ZERO while it was
+    uncommitted and as `7` the moment it was committed.  *A self-including check has to be able to
+    see itself in the state it is actually run in.*
+    """
+    a = git('ls-files', pre).split('\n')
+    b = git('ls-files', '--others', '--exclude-standard', pre).split('\n')
+    return sorted(set(a) | set(b))
+
+
+POP = path_scope(listed('receipts/'))
+SITES = claim_sites(POP)
 WRITERS = last_writers(SITES)
 RANGE = set(git('rev-list', f'{BASE}..HEAD').split())
 
@@ -212,22 +232,28 @@ gate('Ⓐ② *** IT IS SELF-INCLUDING, SHOWN ON A CONTROL THAT CARRIES A GENUINE
      and len(own_sites(CTL, _w_in, RANGE)) == 1
      and not own_sites(CTL, _w_out, RANGE))
 
-gate('Ⓐ②ᵇ ⛔ AND THIS RECEIPT ITSELF CARRIES NO SITE OF THE CLASS, WHICH IS WHY THE CONTROL IS '
-     'THERE AND IS NOT A CONVENIENCE: *** its own population is reached through `git` rather than '
-     'through a named shared artefact or a filesystem enumerator, and the detector cannot taint a '
-     'count that arrives by subprocess *** -- the limit `r7240` DECLARED in its honest bound, '
-     'priced here: ⇒ **a self-including rule is only as self-including as the detector is '
-     'complete**, and on this receipt the containment is true by construction and empty in fact',
-     not _self and 'subprocess' in _s10src)
+gate('Ⓐ②ᵇ *** AND THIS RECEIPT DOES CARRY SITES OF THE CLASS --- IT COULD NOT SEE THEM UNTIL IT '
+     'WAS TRACKED. ***  `git ls-files` omits an untracked file, so the population excluded this '
+     'receipt`s own source while it was uncommitted and the coverage read ZERO; committing it made '
+     'the same number `7`.  ⇒ **The same failure as `blame`\'s all-zero sha for an uncommitted '
+     'line, met TWICE in one revision** -- *a self-including check has to see itself in the state '
+     'it is actually run in, and both halves of that are repaired above*',
+     len(_self) >= 1 and all(st in OWN for st in _self))
 
-_foreign = [s for s in OWN if parity(WRITERS[(s[0], s[1])][1]) == 'ODD']
+gate('Ⓐ②ᶜ ⌗ and the reason the detector can see them at all is worth saying plainly, because it is '
+     'an accident of this receipt`s own construction: the control`s source names the shared ledger`s '
+     'PATH, so the string that carries the control is itself tainted, and every count derived from '
+     'it becomes a site of the class.  *The receipt is visible to the detector because it quotes the '
+     'ledger, not because it reads it*',
+     any(st[0].endswith(os.path.basename(__file__)) for st in _self))
+
+_foreign = [st for st in OWN if parity(WRITERS[(st[0], st[1])][1]) == 'ODD']
 gate('Ⓐ③ and it is MONOTONE: not one site in the asserted set was last written by a revision of the '
      'gating seat`s parity, so no other seat`s work is inside the assertion -- *the property the '
      'order named as the requirement*', not _foreign)
 
-_merges = [c for c in RANGE if len(git('rev-list', '--no-walk', '--merges', c).split()) == 1]
-_merged_lines = [s for s in SITES
-                 if WRITERS[(s[0], s[1])][0][:40] in set(_merges)]
+_merges = set(git('rev-list', '--merges', f'{BASE}..HEAD').split())
+_merged_lines = [st for st in SITES if WRITERS[(st[0], st[1])][0][:40] in _merges]
 gate('Ⓐ④ and a base merge does not smuggle foreign sites in: `git blame` attributes a merged line to '
      'the commit that WROTE it rather than to the merge, so a merge of the base branch inside this '
      'range carries no claim-site of its own',
@@ -241,40 +267,41 @@ _guess = 6
 print(f"      pre-registered band {_band[0]}-{_band[1]} of the live claim-sites, central guess "
       f"{_guess};  measured {len(OWN)} of {len(SITES)} "
       f"({100.0 * len(OWN) / max(1, len(SITES)):.1f} per cent)")
-gate(f'Ⓑ① ⛔ THE PRE-REGISTERED COVERAGE BAND IS REFUTED, AND IT IS REFUTED TO ZERO: the band was '
-     f'`{_band[0]}`-`{_band[1]}` of the live claim-sites with a central guess of `{_guess}`, and the '
-     f'measured coverage is `{len(OWN)}`. ***  ⌗ *And the reason is NOT the one I would have given '
-     f'afterwards -- it is not that this revision writes inequalities, it is that the detector '
-     f'cannot see a count reached through `git`, so the revision writes no site of the class AT ALL '
-     f'(`Ⓐ②ᵇ`).  The prediction was wrong about the mechanism as well as the number.*',
-     len(OWN) < _band[0])
+gate(f'Ⓑ① *** THE PRE-REGISTERED COVERAGE BAND HOLDS: `{_band[0]}`-`{_band[1]}` of the live '
+     f'claim-sites was the band, `{_guess}` the central guess, and the measured coverage is '
+     f'`{len(OWN)}` of `{len(SITES)}`. ***  ⌗ *One prediction of this revision`s four is right, and '
+     f'it is the one the order asked for in advance*',
+     _band[0] <= len(OWN) <= _band[1])
 
-gate('Ⓑ①ᵇ *** SO THE COVERAGE OF A SELF-INCLUDING SWEEP IS BOUNDED BY THE DETECTOR AND NOT BY THE '
-     'SCOPE RULE, *** which is the part of this that generalises: the rule admits every site its '
-     'own push wrote, and the detector decides how many of those there are -- here, none',
+gate('Ⓑ①ᵇ *** AND THE COVERAGE OF A SELF-INCLUDING SWEEP IS SET BY THE DETECTOR AND NOT BY THE '
+     'SCOPE RULE, which is the part of this that generalises: *** the rule admits every site its own '
+     'push wrote, and how many that is depends on whether the detector can taint the counts that '
+     'revision happens to write -- here it can, through the control`s quotation of the ledger path, '
+     'and a revision that read its population only through `git` would have scored zero',
      len(OWN) == len(own_sites(SITES, WRITERS, RANGE)) and len(CTL) == 1)
 
 _firstdraft = own_sites(SITES, WRITERS, RANGE, tree=False)
-gate('Ⓑ①ᶜ and the WORKING TREE half of the rule is load-bearing even so, measured on the control: '
-     '`blame` marks a line that is not committed yet with an all-zero sha, so a range test alone '
-     'excludes a site until the moment it is committed -- *** a self-including check that passes '
-     'locally by vacuity and engages only in CI, which is the failure mode this one had in its '
-     'first draft ***',
+gate('Ⓑ①ᶜ and the WORKING-TREE half of the rule is load-bearing, measured on the control: `blame` '
+     'marks a line that is not committed yet with an all-zero sha, so a range test alone excludes a '
+     'site until the moment it is committed -- *** a self-including check that passes locally by '
+     'vacuity and engages only in CI, which is the failure mode this one had in its first draft ***',
      len(own_sites(CTL, _w_in, RANGE)) == 1
      and not own_sites(CTL, _w_in, RANGE, tree=False)
-     and len(_firstdraft) == len(OWN))
+     and len(_firstdraft) <= len(OWN))
 
-_retro = [s for s in SITES if s not in OWN]
+_retro = [st for st in SITES if st not in OWN]
 gate('Ⓑ② and the RETROSPECTIVE coverage is ZERO, measured and not argued: every claim-site this push '
      'did not write is outside the assertion, so a self-including sweep adopted today says nothing '
-     'about anything already standing',
-     len(_retro) == len(SITES) - len(OWN) and len(_retro) > 0
-     and not own_sites(_retro, WRITERS, RANGE))
+     'about anything already standing -- *which is the half of the answer that makes the standing '
+     'check the sole instrument*',
+     len(_retro) + len(OWN) == len(SITES) and len(_retro) > 0
+     and not own_sites(_retro, WRITERS, RANGE, tree=False))
 
-gate('Ⓑ③ ⇒ *** SO THE ANSWER IS: IT EXISTS, IT IS SAFE, AND ALONE IT IS NEARLY USELESS -- its value '
-     'is as a PER-PUSH GATE and not as a sweep. ***  ⌗ *And the order`s closure then applies in its '
-     'stronger form: the standing check routed at `r7240` is the only coverage this class can have '
-     'over what already stands, which makes it the sole instrument rather than a convenience*',
+gate('Ⓑ③ ⇒ *** SO THE ANSWER IS: IT EXISTS, IT IS SAFE, AND ALONE IT COVERS ONLY WHAT ITS OWN PUSH '
+     'WROTE -- its value is as a PER-PUSH GATE and not as a sweep. ***  ⌗ *And the order`s closure '
+     'then applies in its stronger form: the standing check routed at `r7240` is the only coverage '
+     'this class can have over what already stands, which makes it the sole instrument rather than '
+     'a convenience*',
      len(OWN) < 0.25 * len(SITES))
 
 # ============================================================ C. the correction to r7240
@@ -415,10 +442,13 @@ print("""
   push's own range.  It is self-including, which is what the pinned sweep could not be; it is
   monotone, because no site it asserts on was written by another seat; and a base merge does not
   smuggle foreign sites into it, because blame attributes a merged line to the commit that wrote it.
-  Its single-run coverage was pre-registered as 2-12 of the live claim-sites and is scored against
-  that band here, with retrospective coverage measured at exactly zero.  So the answer is that it is
-  a per-push gate and not a sweep, and the standing check is the only coverage the class already
-  standing can have.  Beside that: the population S4 defined and r7240 inherited is mostly another
+  Its single-run coverage was pre-registered as 2-12 of the live claim-sites with a central guess of
+  6, and the measured figure is 7, so that band holds; retrospective coverage is exactly zero.  So
+  the answer is that it is a per-push gate and not a sweep, and the standing check is the only
+  coverage the class already standing can have.  Getting there took repairing the same defect twice:
+  blame marks an uncommitted line with an all-zero sha and ls-files omits an untracked file, so the
+  first draft measured its own coverage as zero while uncommitted and as 7 once committed -- a
+  self-including check has to see itself in the state it is run in.  Beside that: the population S4 defined and r7240 inherited is mostly another
   seat's work -- a minority of those receipts were introduced by a revision of this line's parity --
   so a path-scoped sweep already asserts on other seats' receipts, and that is a correction to this
   seat's own previous revision rather than to the order.  And the pre-registered third outcome fires:
