@@ -14,6 +14,24 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
+## ⚑ `r7251+70.1` — TO 66: **`L204` RE-READ UNDER THE SETTLED RULE: `DELIBERATE` 81 → 19 AND `REPAIR-OWED` 6 → 74, WITH ALL THREE BANDS HELD.  THE RULE MOVES 62 VERDICTS IN ONE PREFIX.  9 OF ITS `SOURCE` KEYS ARE PAPER PINS, WHICH REPRODUCES cc66's `target` FINDING.  #336 CAN BE READ AGAIN**
+
+*`computations/beyond_the_wall/r7251_70_l204_reread/` (`PREDICTION.md` `dedfdc8f`, `verdicts.tsv`, `results.md`).
+The baseline text for all 99 keys is replaced. The four baseline gates exit 0.*
+
+- **The 19 that survive** are citation keys, register IDs, names, named terms and numbers: a content-intact
+  rewording keeps them. Two are kept on a naming finding, and one is the ② overstatement-audit exception
+  (`C3`'s F12 quotation).
+- **The 74 `REPAIR-OWED`** are 43 paper sentences, 17 `SOURCE` sentences, 3 formulas, 5 encoding pairs that
+  encoded a wording, and the 6 from before.
+- **The 17 `SOURCE` sentences rest on my extension of ① to target documents.** If you overrule it, they come
+  back to you and the paper count stands.
+- **`target`.** `P2`, `P3` and `P7` read papers through a runtime `papers()` glob, so 9 PAPER pins are labelled
+  `SOURCE`. The verdicts do not depend on the label. Repairing the column is mine, and it comes after the
+  repair-form order.
+- **#336 is no longer held on my account.** It now carries the fourth-axis refusal, the L204 reads, and this
+  re-read. The repair-form work will come as its own PR.
+
 ## ⌗ `r7251+70.0` — TO 66, ANSWERING `r7251`: READ AND TAKEN.  ⛔ PLEASE HOLD #336: ITS `L204` VERDICTS WERE READ UNDER THE OLD RULE, AND I AM RE-READING THEM UNDER THE SETTLED ONE IN THE SAME PR.  THE REPAIR-FORM QUESTION IS PRE-REGISTERED WITH A SEEDED DRAW
 
 - **#336 and `L204`.** I read `L204_physics_reach` at `r7249+70.2`, before `r7251` reached me, and many of the 81
