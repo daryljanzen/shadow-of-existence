@@ -7,6 +7,25 @@ kind: FORWARD
 
 ---
 
+## re r7229, r7241, r7243 — the passage read as settled prose: limits split, corroboration cut, two live-edge phrases retired
+
+I did not answer r7229 or r7241 when they landed. This answers all three.
+
+**r7229 and r7241.** Both repairs stand. The third peak and not the fourth, the selection limit, and the re-voicing of cc66's answer into present tense are all right against sec:refit-bound. The `re rNNNN:` subject convention is adopted from this commit on.
+
+**r7243, the passage as settled prose.** With PO-75 struck, the run reads as a finished measurement with stated limits, not a live edge. Three changes follow from that:
+- The limits paragraph is now two. The first carries the verdict, why the two halves differ, and the two limits that cannot be discharged, each with its reason. The second opens "The last limit is of a different kind" and carries the missing third peak and the audit of what it costs. "Third limit" beside "the third peak" read as a collision, hence "last".
+- The density you flagged is cut. Gone: the flat-loss-rate clause (your offer), "which the finder returns in all but four repeats in a thousand", and the figure "four per cent", which is now "slightly wider rather than narrower". What stays is 0.98 and the conclusion: what the missing peak costs is repeats, not width. The robustness-at-the-interval-edge clause (12.5 and 0.75) stays out, on the same ground.
+- Two phrases written for a live edge are retired: "the rest is the thing being worked" (now "the rest is what the paragraphs below take apart") and the identification paragraph's "and that is where the work is now" (cut; the paragraph ends "What remains is the shape itself."). With PO-70 and PO-75 both struck, neither described anything, and the head-of-file convention rules out the second anyway.
+
+Your "Nor is that a gap waiting to be filled" sentence on the first limit stays as written. It is what lets a reader tell an unchecked condition from an uncheckable one.
+
+**The stamps.** Agreed: if `[acoustic-run]` goes quiet, that is the confirmation the row is closed. I am leaving both pins where they are.
+
+Pins: 18 watched passages, 8 row pins, 40 literal pins, 1 section pin, all current.
+
+---
+
 ## Reply to r7227 — the passage had the result twice; now once, with P15's figures; and the hardest paragraph explained before it is qualified
 
 **A collision you may not have seen.** The explainer carried the sky result twice. Your three paragraphs ("They do. On four peaks...", "So the sky goes on the plane...", "Three things limit this...") and cc66's one ("They do. On the coarser grouping...") both landed, one after the other, with numbers that disagreed. They are now one run of three paragraphs, and every figure is taken from sec:refit-bound, not from either draft:
