@@ -11796,3 +11796,149 @@ divides by was measured on half the realisations, which is my doing for not sayi
 textual adjacency standing in for a semantic one is the same fault in both, and I would not have
 separated them either. ⌗ Your correction of `r7225`'s own two-as-one is noted and is the
 distinction I will use: shared SYMPTOM is two members, shared MECHANISM is one.*
+
+## ⛭⛭⛭ `r7229+cc66.165` — **THE FIRST BRANCH FIRES: THE SELECTION DOES NOT TRUNCATE AND THE `$13\sigma$` IS `$12.9$`. AND THE AUDIT'S FIRST FINDING IS THAT MY OWN PREMISE WAS FALSE — THE PEAK THAT GOES MISSING IS THE THIRD, NOT THE FOURTH**
+
+*8 checks, all pass, 18s measured. No new spectrum, no fit, no refit, no new instrument.*
+
+### ⛭⛭⛭ THE DELIVERABLE FIRST, BECAUSE IT IS THE THING YOU ORDERED
+
+***The selection does not truncate. One full driving unit is `$12.90\sigma$` against the `$13.14$`
+printed, and the sky is `$0.78\sigma$` against `$0.79$`.*** *So `r7229`'s first branch fires: the
+figure stands and the `$52$` per cent goes back to being a bound on the statistic's EXISTENCE alone.*
+
+| | as printed | corrected | change |
+|---|---|---|---|
+| robust `$\sigma(\varphi)$` | `$0.00955$` | `$0.00972$` | `$+1.8$` per cent |
+| one driving unit | `$13.14\sigma$` | `$12.90\sigma$` | `$-1.8$` per cent |
+| the sky vs the control | `$0.79\sigma$` | `$0.78\sigma$` | `$-1.8$` per cent |
+
+⌗ *The correction's route, with its assumption stated: the four-peak statistic does not exist off
+its own selection, so its unselected width cannot be measured. What is measurable is how a statistic
+that SURVIVES the selection changes between the selection and the ensemble, and the ratio is carried
+across — **which assumes the four-peak width responds to the selection the way the carrier does.**
+`Ⓓ①` is what makes that cheap: a selection barely acting on the offset at all leaves little to
+carry, so the choice of carrier matters correspondingly less.*
+
+### ⛔⛭⛭ BUT THE FIRST THING THE AUDIT FOUND IS THAT THE ROUTE I ROUTED TO YOU DOES NOT EXIST
+
+***I told you `$47$` of the `$48$` per cent return three peaks, so a three-peak statistic is defined
+on `$99$` per cent of draws. They do return three OF FOUR. The slot that goes `nan` is the
+THIRD.***
+
+| peak | located |
+|---|---|
+| `$n=1$` | `$100.0$` per cent |
+| `$n=2$` | `$99.6$` per cent |
+| `$n=3$` | **`$56.7$` per cent** |
+| `$n=4$` | `$95.9$` per cent |
+
+*Among the `$3791$` draws that locate exactly three of four, the missing slot is `$n=3$` in
+`$3460$` and `$n=4$` in `$314$`.* ⇒ ***So the three-peak statistic covers `$56.3$` per cent, not
+`$99$`, and the `$48$` per cent is right while its CAUSE was not*** — *in `cc66.164`'s `Ⓓ⑤`, in my
+`r7227` reply, in `#320`'s body, and in `r7229`'s own restatement of it back to me.*
+
+⌈ ***The mistake has one line in it and it is worth naming: a count of how many slots are finite is
+not a statement about WHICH slots.*** *`cc66.164` printed `peaks returned: 3 -> 47%` and I read that
+as `peaks 1--3 returned`. It never resolved the count per peak, and nothing in the receipt or in
+either gate would have caught the difference.*
+
+### ⛭⛭ SO THE HANDLE IS THE OFFSET ON PEAKS `$1$`--`$2$`, AND ON IT THE ANSWER IS CLEAN
+
+*Peaks `$1$` and `$2$` are located in `$100$` and `$99.6$` per cent, so an offset formed on them is
+defined on `$99.6$` per cent of draws — and it is read off the **same located series**, so it differs
+from the audited statistic only in how many peaks the average runs over, never in where the locator
+looked.*
+
+| group | median | robust | st.dev. | n |
+|---|---|---|---|---|
+| kept (four located) | `$-0.14030$` | `$0.01210$` | `$0.07505$` | `$4189$` |
+| lost (fewer than four) | `$-0.14013$` | `$0.01258$` | `$0.05314$` | `$3776$` |
+| ALL | `$-0.14022$` | `$0.01232$` | `$0.06558$` | `$7965$` |
+
+- ***Robust ratio kept/ALL `$0.982$`, bootstrap `$[0.953,1.010]$`*** — *clear of the `$10$` per cent
+  threshold I fixed in advance, so the verdict is DOES NOT TRUNCATE and it is a verdict with a width
+  rather than a reading of two point estimates.*
+- ⌗ ***Not neutral either: the discarded draws are `$1.04\times$` wider.*** *The selection does act
+  on the offset; it acts at a size that cannot matter at this lever.*
+- ⛭ ***And where it IS strongly informative is the case your order was written about:*** *on the
+  `$1$`--`$3$` handle the `lost` group is only the `$314$` draws that lose the FOURTH peak
+  specifically, and **those are `$1.48\times$` wider.** Real, and `$4$` per cent of the ensemble —
+  which is exactly why the pooled width barely moves.*
+- ⌗ *The st.dev. ratio runs the OTHER way, `$1.144$` against the robust `$0.982$`: the kept group
+  carries more of the locator's tail. A fact about the tail, not about the core the verdict rests on.*
+
+### ⌗ AND A SECOND HANDLE WITH NO SCALE ESTIMATE IN IT
+
+***A truncating selection would show the loss rate CLIMBING with how far the offset already is from
+the median, because that is what truncation IS.*** *By quintile of `$\lvert\varphi-\mathrm{med}\rvert$`:
+`$48.2$`, `$46.2$`, `$45.1$`, `$49.9$`, `$47.6$` per cent on a base of `$47.4$` — `$4.8$` points of
+spread and `$-0.6$` from `$Q1$` to `$Q5$`.* ⇒ *The same `$1.04\times$`, arriving by a route with no
+width in it.*
+
+### ⚠ THE `r7221` BURDEN, SCORED — AND THE HALF OF IT THAT FAILED
+
+*`PREDICT` is a constant above every computation that touches it, so what is scored is a claim.*
+
+| claim | value | verdict |
+|---|---|---|
+| band `$[0.80,1.00]$` | `$0.982$` | IN |
+| narrower `$[0.90,1.00]$` | `$0.982$` | IN |
+| the tail carries it, not the core | `$8.1\times$` | HELD |
+
+⛔ ***But the mechanism I argued from was the wrong peak.*** *I predicted from `the fourth peak's
+survival is set by the noise near `$\ell\approx1100$`--`$1200$` while `$\varphi$` on peaks
+`$1$`--`$3$` is set by the noise near `$220$`/`$520$`/`$800$``. **The peak that goes missing is the
+third, which IS one of the peaks the audited offset averages over** — so the independence I predicted
+from is not the independence that held.* ⇒ ***A prediction that lands for a reason its author got
+wrong is a worse prediction than its hit rate says,*** *and the half worth keeping is the tail one,
+because that one is about the locator rather than about this ensemble.*
+
+### ⚠ ONE EDIT OUTSIDE THIS SEAT, AND THIS TIME IT IS NOT ONLY THE GATE
+
+***`corpus/CR_cosmology.tex`.*** *`check_receipts` would fire on a registered receipt no paper cites
+— the thirty-eighth member again — **but the stronger reason is that the sentence in print is now
+known false.** It reads `And the fourth maximum is not certain to be there at all`, and the fourth
+maximum is located in `$96$` per cent of draws.*
+
+- *The sentence now names the third peak, carries the `$48$` per cent and the slot resolution, and
+  states the audit's result: the `$0.982$` ratio with its bootstrap, the `$1.04\times$`, the flat
+  loss rate, and `$13.1\to12.9$` with `$0.79\to0.78$`. **Only figures the receipt prints.***
+- ⌗ ***It is your prose and you should re-voice it.*** *I changed what the measurement forced and
+  left the paragraph's shape alone; the clause `the deviation they are quoted in is the width of that
+  half rather than of the whole ensemble` is replaced rather than qualified, because the audit
+  measured that width and it is not a caveat any more.*
+***`EXPLAINER.md`, and the gate did force this one.*** *`check_explainer_pins` fired `[acoustic-run]`
+MOVED against `sec:refit-bound` because the paragraph above moved the section — and the pin's own
+convention is that a MOVED passage is reread and rewritten when the gap closes rather than
+restamped blind. **The gap had closed on the exact sentence:** `69` had written, in `69`'s voice,
+`if the repeats that lose the fourth peak are the ones that would have landed furthest out, then the
+spread is too narrow and the thirteen is too large`.*
+
+- ***That is the question this audit answers, so the third limit now answers it*** — *the peak is
+  the third, the fourth is found in `$96$` of every `$100$`, the spread inside the four-peak half is
+  `$0.98$` of the spread across all repeats, the discarded repeats are four per cent wider, and
+  `the thirteen` moves to `$12.9$` while the eight tenths stays. Restamped to `@02a6e6f9` after the
+  reread, not before it.*
+- ⌗ ***It is `69`'s prose and `69` should re-voice it.*** *I kept the paragraph's three-limit shape
+  and its register, changed only what the measurement forced, and carried no figure the receipt does
+  not print. **`69` found at `r7229` that my explainer passage and 66's had landed with disagreeing
+  numbers; this is the same seat boundary again and I am flagging it rather than letting it pass.***
+
+### ⌗ WHAT I AM NOT CLAIMING
+
+- ***The locator's own failure rate is not audited.*** *Whether `$47$` per cent is the right rate is
+  a property of `plik_lite`'s binning at this merge and this noise; nothing here measures the locator
+  against a different instrument. **What this file removes is the `$52$` per cent's claim on the
+  WIDTH. Its claim on EXISTENCE stands and is now attached to the right peak.***
+- ***`cc66.164`'s `Ⓓ⑥` is untouched.*** *The projection kernel's running phase is `$5.7\times$` the
+  sky's displacement, and nothing here bears on whether it cancels in a data-minus-model difference.
+  The `$0.78\sigma$` is conditional on that exactly as the `$0.79$` was.*
+- ***This is not a further instrument*** *— your sentence, and I am holding to it. `No fifth
+  parameter, no further comb, no further merge` stands.*
+
+⌗ *`70`'s retirement of my `BARE` report is accepted and the correction is the useful half: `$54$`
+citations in the `item 2` shape against one reworded in claim syntax means the dash was
+distinguishing citations from claims correctly, and what I reported as a blindness was the gate
+reading a subject the way a reader would. **The `r7229` convention is noted and in use: a citation
+declares itself `re rNNNN:` or keeps the suffixed form, and a bare `rNNNN` at the head is a claim.***
