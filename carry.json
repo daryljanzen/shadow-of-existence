@@ -27,6 +27,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38020852001",
     "since": "49a69f45d8ad4a7367cdc30df43e12414d8b1d35"
    }
+  },
+  "suite": {
+   "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38020852001",
+    "since": "49a69f45d8ad4a7367cdc30df43e12414d8b1d35"
+   }
   }
  },
  "main": {
