@@ -1,0 +1,84 @@
+# PRE-CONVENTION CITATIONS -- r7229+70.1 (node 70), from r7227+70.1's classification (computations/beyond_the_wall/r7227_70_bare_widening/newly_caught.tsv, bucket REFERENCE).  Data, not code.
+# Each is a subject that opens with a bare revision id it CITES (the order it answers) rather than claims, written
+# before 66's r7229 convention asked citations to declare themselves (`re rNNNN: ...`).  check_revision_collisions
+# reads these with the old dash rule; every other head-form subject is a claim.  Keyed on the FULL subject, which
+# survives a rebase where a SHA would not.  It may only shrink: a new citation writes `re rNNNN:`.
+#   id <TAB> sha-when-classified <TAB> seat <TAB> subject
+r6959	3076d994	cc66	r6959: the taper's first wiring was not the operation it named -- SRCTAPERALL, and the fix
+r6959	60a91374	cc66	r6959 (b): the predictor, the banker, and the two tapers the swap runs
+r6959	66f8f9f7	cc66	r6959 (a): SRCETA -- the source's conformal-time dependence across the window, as a function
+r6959	884da0d1	cc66	r6959: the swap reader -- contrast, comb and depths off one tapered spectrum
+r6959	90786785	cc66	r6959: the ISW-preserving swap over-moves by 2-4x, and SRCTAPERNORM isolates why
+r6959	9d9b9f7d	cc66	r6959 pre-registration: what the normalisation-across-the-window candidate predicts, and what would refute it
+r6959	bdd90ce0	cc66	r6959: the banker takes the norm-preserving pair too, and skips a set that has not run
+r6959	fcdbbf69	cc66	r6959 banks (a): the two eta-profiles, the instrument's SRCETA output unaltered
+r6975	181bcee9	cc66	r6975: the banker for the term-mix pair
+r6975	544f9fc7	cc66	r6975 pre-registration: what the term-mix swap predicts, written before it runs
+r6975	7f1548f6	cc66	r6975 supplement: the decomposition sharpens T3, before any DPSRC slice finished
+r6975	9969dd1b	cc66	r6975 second supplement: the class arithmetic retracts the first supplement's framing
+r6983	82612419	cc66	r6983 cc66.49 ⓵c -- the run re-sliced finer, and the bank now VERIFIES the tiling instead of assuming a step
+r6983	9f7f5885	cc66	r6983: the joint-run launcher
+r6983	af8c4f15	cc66	r6983 cc66.49 ⓵d -- the launcher made GAP-DRIVEN, because the churn window moves and a fixed tiling cannot
+r6983	bbcb01d5	cc66	r6983 cc66.49 ⓵ -- the joint bank and its reader, both written BEFORE the run lands
+r6983	f7a95edd	cc66	r6983 pre-registration: what each composition rule predicts, on all three axes, before the joint run
+r6993	cfbb76ed	cc66	r6993 cc66.50 ⓷ -- the filter controlled BEFORE the thing it filters on, and the median envelope excluded with its reason
+r6997	8153a6e5	cc66	r6997 cc66.51 ⓵⓶ -- the reconciliation: two different quantities, and correcting it REVERSES cc66.50's dismissal of the candidate
+r7033	afb72f8b	70	r7033 item a (working) -- the contrast statistic's noise construction: as defined it never sees the data (amplitude cancels to 2e-16); its sky counterpart under COV_TT has a 2-sigma floor of 0.018 whole-range and 0.043-0.086 per band
+r7035	0fd3ca9a	70	r7035 (70) pre-registration -- the null harness's one assumption tested (the drawing covariance varied, estimator fixed) and whether it can floor a ratio and a phase; committed before the script
+r7037	6abbfbb8	70	r7037 (70) pre-registration -- the corpus sweep: instrument (five evidence classes, drawless necessary not sufficient), three-way verdict rules, gates on source content not paper state; committed before the receipt
+r7039	311a0d56	cc66	r7039 instrument -- three names where there were literals, and Delta_l(k) itself saved for the first time
+r7039	71b74035	cc66	r7039 instrument fix -- DLKSAVE read the clock inside _project and broke C60's standing claim on a reporting line
+r7039	7d766961	cc66	r7039 re-pin -- the switch count 75 -> 78, moved here rather than routed, with the three names and the reason
+r7039	c779c077	cc66	r7039 bank -- the Dl slices add over k and the transfer slices concatenate, and the difference is gated rather than assumed
+r7039	eb301d28	cc66	r7039 pre-registration -- PO-70's staging, with the artefact reading tested FIRST and the reading I expect flagged as fatal if its own objection stands
+r7039	fdf5f2d3	cc66	r7039 pre-registration, corrected before anything ran -- r6919 ALREADY ran the clock swap the first draft proposed, and subtracting it leaves a sharper row
+r7041	17dcc556	cc66	r7041 the acceptance law -- exhibited on the integral with no fitted coefficient, and the measuring instrument's first two attempts kept in the source because the gate that caught them is the point
+r7041	47b93e6a	cc66	r7041 stage-c report -- the sequence read as a sequence, with "has not turned over" a separate verdict from "last step small"
+r7041	4e4c95e5	cc66	r7041 pre-registration amendment -- r7043 crossed with r7041 and the two orders compose, so the hold on the law is lifted
+r7041	5774f667	cc66	r7041 stage-a launcher -- the real arms with the solver on, carrying SRCSAVE because the quantity to converge is the retention and not the heights
+r7041	61140718	cc66	r7041 pre-registration -- convergence first, the mechanism apparatus named as HELD, and one scoping correction found before any run
+r7041	7efd7ff5	cc66	r7041 thin bank -- a registered receipt cannot read an untracked bank, so the bank is thinned rather than the receipt weakened
+r7041	84948de5	cc66	r7041 thin bank -- A is banked once per arm, not once per injection, because it does not depend on the injection
+r7041	d8986630	cc66	r7041 stage-c launcher -- the injection convergence sequence, unsliced, twelve settings on two injections and both arms
+r7041	f887f4d5	cc66	r7041 stage-c reorder -- settings outermost, so a partial read is a partial SEQUENCE and never a partial pair
+r7043	6d276841	70	r7043 (70) working -- trace refreshed on all cited receipts' outputs
+r7043	a8b7e79e	70	r7043 (70) working -- the citation tracer (claim window widened to the marker's whole passage, declared) and a partial trace; verdicts to follow after all 500 cited receipts have run
+r7043	dab1409d	70	r7043 (70) pre-registration -- the citation sweep: 606 markers / 500 receipts, numbers matched against each cited receipt's source AND run output, tracer (ii)/(iii) are candidates hand-read before scoring; committed before the first verdict
+r7049	a705c961	cc66	r7049 re-pin -- the switch count 78 -> 79 for GRIDSAVE, moved here rather than routed
+r7051	386a7524	cc66	r7051 answered, and a figure of mine corrected where it had already reached the register
+r7053	c6c6592b	cc66	r7053 answered: the schedule figures it quotes are mine and they are now wrong
+r7055	fbd3f575	cc66	r7055: the gate's label is fixed, and its cause was a literal beside a named constant
+r7057	c1264736	cc66	r7057: the phase systematic is taken into the report's NAME, which is where it reaches this seat
+r7061	911303c0	cc66	r7061: the block is closed by the seat whose receipt it was, and I am withdrawing the progress figure I gave 66
+r7083	72ac1cee	60	r7083's question back answered -- nothing in the quantum sector is nearer than the four stated limits, and the one candidate r7082's count suggested has no object
+r7095	175306de	cc66	r7095 Q3: the licensed configuration moves neither statistic, and the earlier null was read above the ceiling where the statistic converges
+r7097	bc7f649d	cc66	r7097 Q3 and Q4: the licensed rebuild leaves all three rigidity numbers where they were, the forbidden one reaches the control's floor, and both locator validations are re-pointed
+r7099	5cf67290	cc66	r7099 Q2: the DAMPX pair re-measured at LEAFREC=1, all three pins lifted, and two of them were tolerance defects
+r7099	690f65c3	cc66	r7099 Q1 and Q3: the two run logs are tracked by a declared exception, and Q3 was already delivered
+r7109	3ac0c851	cc66	r7109: the DAMPX pair re-banked through the writer, and config now carries the instrument's source hash
+r7109	567b768d	cc66	r7109 ⓶: the control's base log banked beside the grids, and the peak-height cell is a concordant sign
+r7109	a313b7ed	cc66	r7109 ⓷: cc66_lowell_sweep is closed -- a producer in the repository, all eight configurations re-derived, and the bank is that producer's output rounded
+r7109	d236b3ce	cc66	r7109 ⓷: c54.182_clpp is placed too -- it re-derives bit-identically, and the era question is answered by measurement
+r7113	a07a9b7b	cc66	r7113: Q1 declared at 900s in the LONG table -- and measuring it refuted the contention diagnosis outright
+r7131	4202c658	cc66	r7131 CI -- a red on a superseded ancestor, and the find is in the carry layer: a red from an ancestor outlived the green that cleared it
+r7139	7da1b9c9	cc66	r7139 accepted and started -- the carry measurement it calls still-open is already delivered, and the reading aid gets its third data point: P15 is 1982 keys to 34 reads
+r7143	bfafd3dd	cc66	r7143 CLOSED -- the 46 PAPER prose-pin sites are read, the class measures 0, ceiling 70 -> 24. A pin repaired properly leaves the class rather than earning a better verdict: 8 of 14 repairs retired their own key
+r7151	37517f6e	cc66	r7151 CLOSED -- the prose-pin backlog is DISCHARGED. UNADJUDICATED 0, ceiling 24 -> 0, 137 keys verdicted. The prediction holds at 36 per cent against 7, and the mechanism is pinning to a SHA rather than the text being a register
+r7176	2b1a4c64	60	r7176 routing: B25's novelty arm is red on main on r7167's own paragraph, routed with a patch rather than edited
+r7177	4d8872d2	70	r7177 routing -- main is red on classify_documents since b3054e9a (EXPLAINER.md unclassified); reproduced on origin/main, one-line patch proposed to 66, not applied
+r7189	9a7d221e	60	r7189 answered: the terminal clause is right, and the one thing it does not say is that the constitutive reading relocates the assignment's ground to the framework's licence
+r7199	bd9e7a1c	60	r7199 read: nothing ordered, nothing owed, and the phase opening is declined for this cycle with the reason on record
+r7201	490a1f4c	bare-session(parity 1)	r7201 reply: the explainer's two components in plainer terms, and its convention for work in flight
+r7205	ecede66e	70	r7205 routing -- main is red on cc66's phase-slope receipt, whose 'RBFAC is not banked' premise its own r7201 loading-lever banks made false; routed, not repaired
+r7208	045839bb	60	r7208 routing: two receipts are red on main itself, and one is a fifth instance of the class in another seat's hands
+r7215	c2a08735	60	r7215 acknowledged, and r7230 PRE-REGISTRATION: the source half of the reversal class
+r7217	3a3fe206	60	r7217 acknowledged, and r7232 PRE-REGISTRATION: the exposure of receipts to a register edit
+r7217	52f83284	bare-session(parity 1)	r7217 reply: 66's comb correction checked against P15 and kept; 'the six' given its noun
+r7219	a9dd473a	60	r7219 acknowledged: nothing ordered, and this seat is standing by
+r7221	7131f36f	bare-session(parity 1)	r7221 reply: driving-gap tightened to P15's figures, and a section stamp that sees additions
+r7223	2193f44b	bare-session(parity 1)	r7223 reply: 66's inverted comb ending kept; the route's open condition stated; P15 'halves' flagged
+r7225	3192721e	cc66	r7225 item 2 — the kernel's running phase is 5.7x this receipt's result, so the 0.79 sigma is conditional
+r6894	cf0eae58	unattributed (merge record)	r6894 merged -- PO-55 closes by dissolving; PO-52 keeps its second half; the two rows are not one fact
+r6898	bddddf89	unattributed (merge record)	r6898 merged -- PO-52 closes on an algebraic identity rather than the offered route; PO-31's named candidate eliminated
+r6912	f4ffe710	unattributed (merge record)	r6912 merged -- the interior's transfer imprints its own running; PO-49's third regime is the boundary of admissible data
+r7227	8a48f6cd	69	r7227 reply: the sky result de-duplicated into one run with P15's figures, the three-way split explained before it is qualified

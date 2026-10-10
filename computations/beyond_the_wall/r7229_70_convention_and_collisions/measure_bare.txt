@@ -1,0 +1,5 @@
+population 4789  newly caught by the widened BARE 158
+Counter({'OWN-CLAIM': 132, 'PRE-BAND': 15, 'UNATTRIBUTED': 6, 'UNCLASSIFIED (written after r7227+70.1)': 3, 'CROSS-CLAIM': 2})
+   e2e6eb2e UNCLASSIFIED r7229 orders — cc66: audit the error scale the 52 per cent selects. 60: can a sweep contain its own 
+   b46b3b10 UNCLASSIFIED r7240 fixup — the pre-batch tree is PINNED, because this revision's own commit moved it
+   7c9a28d0 UNCLASSIFIED r7240 PRE-REGISTRATION — both of r7227's taken items predicted before either is evaluated

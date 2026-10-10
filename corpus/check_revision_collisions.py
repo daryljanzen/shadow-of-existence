@@ -81,7 +81,45 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 #: a BARE revision id at the head of a subject -- `r3100a` is a different identifier and is excluded
-BARE = re.compile(r'^(r\d{3,5})\s*[—-]\s*(.*)$')
+BARE_DASH = re.compile(r'^(r\d{3,5})\s*[—-]\s*(.*)$')
+#: ⛭⛭ r7229+70.1 (66's r7229 convention, node 70's r7227+70.1 measurement): ** A PLAIN `rNNNN` AT THE HEAD IS
+#: A CLAIM, AND A CITATION DECLARES ITSELF -- `re rNNNN: …`, or the suffixed `rNNNN+<seat>.<k>`. **
+#:   *Before the convention the dash after the id carried the claim/citation split by habit: 34.1 per cent of the
+#:   dash-less head forms were a seat citing the order it answered (`r7219 acknowledged: …`), against at most 6.0
+#:   per cent of the dash forms -- and 66's own `r7168:`/`r7170:` claims in 60's half were invisible behind it.*
+#:   ⇒ *** `CLAIM` reads every head form as a claim.  The 74 head-form CITATIONS written before the convention are
+#:       NAMED in `pre_convention_citations.tsv` (r7227+70.1's measured REFERENCE bucket) and keep the old reading;
+#:       a citation written since declares itself and cannot match `^r\d` at all. ***
+#:   ⌗ *A revision boundary was pre-registered first and MISSED its own seeds: both sides of `r7168` and `r7170`
+#:     predate it, and 60's side is the colon form too.  A boundary can only date the rule; the names say which
+#:     subjects were citations, which is the thing the rule has to know.*
+#:   ⌗ `(?![\w+.])` keeps `r3100a` and `r7225+70.1` out, as the dash form `BARE_DASH` always did.
+CLAIM = re.compile(r'^(r\d{3,5})(?![\w+.])\s*(?:[—:-]\s*)?(.*)$')
+_CITATIONS_TSV = os.path.join(HERE, 'pre_convention_citations.tsv')
+PRE_CONVENTION_CITATIONS = frozenset(
+    ln.rstrip('\n').split('\t', 3)[3] for ln in open(_CITATIONS_TSV, encoding='utf-8')
+    if ln.strip() and not ln.startswith('#')) if os.path.exists(_CITATIONS_TSV) else frozenset()
+
+
+def claim_of(subj):
+    """the revision id a subject CLAIMS, as a match whose groups are (id, rest), or None"""
+    if subj in PRE_CONVENTION_CITATIONS:
+        return BARE_DASH.match(subj)
+    return CLAIM.match(subj)
+
+
+class _Claimed:
+    """`BARE` WIDENED, as r7229 orders: the old name now reads what the gate reads as a claim, so every reader of
+    `BARE.match` -- this file's and the receipts' -- sees the same claims `collisions()` and the band act on."""
+    pattern = CLAIM.pattern
+
+    @staticmethod
+    def match(subj):
+        return claim_of(subj)
+
+
+BARE = _Claimed()
+
 
 #: ** NAMED, not counted. **  Known at r3112; a collision not on this list is a FAILURE.
 #: ⛔⛭⛭ ** r3622 IS THE FIRST COLLISION WHOSE TWO SIDES ARE BOTH CITED IN PROSE IN ONE CHECKOUT --
@@ -96,7 +134,20 @@ BARE = re.compile(r'^(r\d{3,5})\s*[—-]\s*(.*)$')
 #:     trade now costs, because it is larger than it was: the disambiguator r3563 relied on -- "cite
 #:     the SHA beside the revision" -- is a rule for NEW citations and does nothing for the nine
 #:     already written.  ⇒ The repair is upstream of the citation, in how the number is CHOSEN. **
-BASELINE = {'r6853',      # ⛭ r6855 (66), ATTRIBUTION CORRECTED r6857 on 60's report: the other
+BASELINE = {
+            #: ⛔⛭ r7229+70.1 (node 70, on 66's r7229 order): ** SIX COLLISIONS THE ANCESTRY TEST HID, NOW SEEN, AND
+            #: NAMED RATHER THAN RENUMBERED for r3563's reason -- cite by SHA. **
+            #:   * `r7164` `r7166` `r7168` `r7170`: 66 (session 01XXeapZ) numbered four revisions in 60's EVEN half,
+            #:     each one 60 (session 019ueTys) had already used for different work, after merging 60's commit --
+            #:     so one side is an ancestor of the other and the old test read a span.  `r7168` and `r7170` are the
+            #:     seeds r7229 named; `r7164` and `r7166` came in once 66's `orders rNNNN` / `rNNNN -` forms and 60's
+            #:     colon forms were read as claims.
+            #:   * `r7185`: cc66's `r7185 — the crossing rides …` (d83b3566) against 66's own `r7185` -- a citation of
+            #:     66's order written in CLAIM syntax, the `r7225` shape cc66 reworded at r7225+cc66.164.
+            #:   * `r4011`: the framework node's merge record `r4011 — 60's r4011-r4035 merged` (606ce176) against
+            #:     61's `r4011 — node 61 takes the odd half` (dc3007fc) -- the same shape, a record in claim syntax.
+            'r7164', 'r7166', 'r7168', 'r7170', 'r7185', 'r4011',
+            'r6853',      # ⛭ r6855 (66), ATTRIBUTION CORRECTED r6857 on 60's report: the other
                           #   r6853 is NODE 64's (aafa3939), not node 60's -- 66 named 60 twice and
                           #   both namings were wrong.  64 took it while 66 was mid-write on the
                           #   corpus-wide scan pass (4cf9ee43) and both landed.  Baselined rather
@@ -372,7 +423,7 @@ def horizon(root=None):
     def _n(args):
         r = subprocess.run(['git', 'log'] + args + ['--format=%s'], cwd=root or ROOT,
                            capture_output=True, text=True)
-        return sum(1 for ln in r.stdout.split('\n') if BARE.match(ln.strip()))
+        return sum(1 for ln in r.stdout.split('\n') if claim_of(ln.strip()))
     return shallow, _n([]), _n(['--all'])
 
 
@@ -401,14 +452,15 @@ def collisions(root=None):
     #   ⇒ *** `--all` is not the repair either: it walks refs this line does not own, and a
     #       collision on someone's unmerged branch is not this trunk's to report.  What is owed is
     #       that the gate STATE ITS HORIZON, which `report_horizon` below does. ***
-    out = subprocess.run(['git', 'log', '--format=%h%x09%s'], cwd=root or ROOT,
-                         capture_output=True, text=True).stdout
+    out = subprocess.run(['git', 'log', '--format=%h%x09%(trailers:key=Claude-Session,valueonly,separator=%x20)'
+                          '%x09%s'], cwd=root or ROOT, capture_output=True, text=True).stdout
     by_rev = {}
     for line in out.split('\n'):
-        if '\t' not in line:
+        if line.count('\t') < 2:
             continue
-        sha, _, subj = line.partition('\t')
-        m = BARE.match(subj.strip())
+        sha, sess, subj = line.split('\t', 2)
+        _SESSION[(root or ROOT, sha)] = sess.strip()
+        m = claim_of(subj.strip())
         if m:
             by_rev.setdefault(m.group(1), []).append((sha, m.group(2).strip()))
     bad = {}
@@ -417,10 +469,55 @@ def collisions(root=None):
             continue
         shas = [e[0] for e in entries]
         divergent = [(a, b) for i, a in enumerate(shas) for b in shas[i + 1:]
-                     if not _anc(a, b, root) and not _anc(b, a, root)]
+                     if not _same_line(a, b, root)]
         if divergent:
             bad[rev] = entries
     return bad
+
+
+#: ⛔⛭ r7229+70.1 (66's r7229 order, PO-78's fortieth member): ** AN ANCESTRY TEST CANNOT SEE A NUMBER TAKEN
+#: TWICE ACROSS A MERGE. **  *60's `r7168` (`60dc8766`) is an ancestor of 66's `r7168` (`09161f5c`): 66 merged 60's
+#: branch and then took the same number for different work, and "one is an ancestor of the other" read that as one
+#: line's SPAN.  Same for `r7170`.*
+#:   ⇒ *** A span is one line making its commits IN ORDER, so the earlier lies on the later one's FIRST-PARENT
+#:       chain.  An ancestor reachable only through a merge's second parent arrived from ANOTHER line, and a later
+#:       commit taking its number is a reuse -- a collision. ***
+#:   ⚠ *Blind, as stated: a FAST-FORWARD merge lays the other line's commits on the first-parent chain, so a reuse
+#:     after a fast-forward still reads as a span -- the same merge shape r6511 met in the band.*
+_FP_CACHE = {}
+
+
+def _first_parent_chain(sha, root=None):
+    key = (root or ROOT, sha)
+    if key not in _FP_CACHE:
+        r = subprocess.run(['git', 'rev-list', '--first-parent', sha], cwd=root or ROOT,
+                           capture_output=True, text=True)
+        _FP_CACHE[key] = {x[:len(sha)] for x in r.stdout.split()} if r.returncode == 0 else set()
+    return _FP_CACHE[key]
+
+
+#: ⛔ ** AND THE FIRST-PARENT TEST ALONE MISSED BOTH SEEDS, which is the stated fast-forward limit arriving on the
+#: very instances it was built for: 60's `r7168` (`60dc8766`) reached `main` by fast-forward, so it IS on the
+#: first-parent chain of 66's `r7168`. **  *So the line is also read from the commit itself: two commits whose
+#: `Claude-Session` trailers both exist and differ were made by two sessions, and one id taken by two sessions is a
+#: reuse.  A commit without the trailer says nothing about whose it is, and falls back to ancestry alone.*
+#:   ⌗ *Measured r7229+70.1: see computations/beyond_the_wall/r7229_70_convention_and_collisions/.*
+_SESSION = {}
+
+
+def _same_line(a, b, root=None):
+    """True when `a` and `b` are one line's span: one is on the other's FIRST-PARENT chain, made in one session"""
+    sa, sb = _SESSION.get((root or ROOT, a), ''), _SESSION.get((root or ROOT, b), '')
+    if sa and sb:
+        # ⌗ *and one session is one line, whatever the merge shape: `r7091` (66) and `r7224` (60) are each one
+        #   session's span that reached the other commit through a merge, and the first-parent test alone read them
+        #   as reuse.*
+        return sa == sb and (_anc(a, b, root) or _anc(b, a, root))
+    if _anc(a, b, root):
+        return a in _first_parent_chain(b, root)
+    if _anc(b, a, root):
+        return b in _first_parent_chain(a, root)
+    return False
 
 
 def report_testimony(bad):
@@ -481,7 +578,7 @@ def band_violations(root=None):
         if '\t' not in line:
             continue
         sha, _, subj = line.partition('\t')
-        m = BARE.match(subj.strip())
+        m = claim_of(subj.strip())
         # ** ⛭ r6511: --first-parent IS NOT ENOUGH WHEN THE MERGE WAS A FAST-FORWARD. **
         #   *r3203 added `--first-parent` so that merging the other line's bundle would not
         #   flag its commits here -- and it works, for a MERGE COMMIT.  A fast-forward makes no
@@ -659,7 +756,7 @@ def next_id_for_parity(runs, parity):
     r = subprocess.run(['git', 'log', '--first-parent', '--format=%s', 'HEAD'],
                        cwd=ROOT, capture_output=True, text=True)
     mine = [int(m.group(1)[1:]) for m in            # `BARE` captures the id WITH its `r`
-            (BARE.match(ln.strip()) for ln in r.stdout.split('\n')) if m] if r.returncode == 0 else []
+            (claim_of(ln.strip()) for ln in r.stdout.split('\n')) if m] if r.returncode == 0 else []
     n = max([front] + [x for x in mine if x % 2 == parity]) + 1
     while n % 2 != parity:
         n += 1
@@ -690,7 +787,7 @@ def next_id_for_this_line(runs):
     r = subprocess.run(['git', 'log', '--first-parent', '--format=%s', 'HEAD'],
                        cwd=ROOT, capture_output=True, text=True)
     mine = [int(m.group(1)[1:]) for m in            # `BARE` captures the id WITH its `r`
-            (BARE.match(ln.strip()) for ln in r.stdout.split('\n')) if m] if r.returncode == 0 else []
+            (claim_of(ln.strip()) for ln in r.stdout.split('\n')) if m] if r.returncode == 0 else []
     n = max([front] + [x for x in mine if x % 2 == PARITY]) + 1
     while n % 2 != PARITY:
         n += 1
@@ -793,11 +890,40 @@ def check_band():
     return 1
 
 
+#: ⛭ r7229+70.1: the widened `BARE` SEEDED BOTH WAYS, as r7229's burden asks -- a subject that must be read as a claim
+#: and one that must not.  Checked every run, so a later edit to `CLAIM` that loses either direction fails here.
+_SEED_CLAIMS = {'r7225 item 2 — the kernel\'s running phase': 'r7225',          # the r7225+cc66.164 report
+                'r7231 orders — nothing new': 'r7231',                          # 66's form from r7229 on
+                'r7168: the metric-singularity result stands as a theorem': 'r7168',
+                'r7240 PRE-REGISTRATION — both items': 'r7240',
+                'r7227 — the sky is on the peak plane': 'r7227'}                # the dash form, unchanged
+_SEED_NOT_CLAIMS = ['re r7225: item 2 answered',                               # the declared citation
+                    'r7225+cc66.164 — the band red was my own commit subject',  # the suffixed seat form
+                    'r3100a — a deliberate follow-up',                          # the letter suffix
+                    'r7219 acknowledged: nothing ordered, and this seat is standing by',   # a NAMED citation
+                    'merge origin/main (r3111) into work']
+
+
+def seeds_hold():
+    bad = [x for x, r in _SEED_CLAIMS.items() if not (claim_of(x) and claim_of(x).group(1) == r)]
+    bad += [x for x in _SEED_NOT_CLAIMS if claim_of(x)]
+    return bad
+
+
 def main():
     print()
     print('  check_revision_collisions -- do two commits claim the same revision number for')
     print('  different work?  (the `L-` id bands exist for this; revision numbers have none)')
     print()
+    _seed_bad = seeds_hold()
+    if _seed_bad:
+        print('    [FAIL] the claim reading lost a seeded direction -- a subject read wrongly:')
+        for x in _seed_bad:
+            print(f'           {x!r}')
+        print()
+        return 1
+    print(f'    the claim reading holds its seeds: {len(_SEED_CLAIMS)} read as claims, '
+          f'{len(_SEED_NOT_CLAIMS)} not; {len(PRE_CONVENTION_CITATIONS)} pre-convention citations named')
     bad = collisions()
     new = {r: e for r, e in bad.items() if r not in BASELINE | TESTIMONY}
     known = {r: e for r, e in bad.items() if r in BASELINE}

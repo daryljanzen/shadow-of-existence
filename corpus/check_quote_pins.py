@@ -67,17 +67,30 @@ PINNED_CEILING = 102
 PINNED_MULTI_CEILING = 7
 
 
+#: ⛭ r7229+70.1 (66's r7229 order, 60's routed ⓶): ** THE LEDGER'S KEYS ARE UNIQUE, AND NOTHING SAID SO. **  *Two rows
+#: on one key read as ONE in the dictionary below, so the second row's verdict silently replaces the first and every
+#: count taken from the ledger is short by one -- `L175/E2`'s two extended literals landed on one string at r7225+70.1
+#: and read as `EXTENDED 107` against 108 rows.*  ⇒ ** A duplicate is REPORTED as a class with both rows' line numbers,
+#: and fails unless it is named here with its reason. **
+KNOWN_DUPLICATE_KEYS = {}
+DUPLICATE_KEYS = {}
+
+
 def read_baseline():
     rows = {}
     if not os.path.exists(BASELINE):
         return rows
-    for ln in open(BASELINE, encoding='utf-8'):
+    DUPLICATE_KEYS.clear()
+    for _n, ln in enumerate(open(BASELINE, encoding='utf-8'), 1):
         ln = ln.rstrip('\n')
         if not ln.strip() or ln.startswith('#'):
             continue
         p = ln.split('\t')
         if len(p) >= 6:
-            rows[(p[0], json.loads(p[1]))] = (p[2], p[3], p[4], p[5], p[6] if len(p) > 6 else '')
+            _k = (p[0], json.loads(p[1]))
+            if _k in rows:
+                DUPLICATE_KEYS.setdefault(_k, []).append(_n)
+            rows[_k] = (p[2], p[3], p[4], p[5], p[6] if len(p) > 6 else '')
     return rows
 
 
@@ -108,6 +121,14 @@ def main():
     base = read_baseline()
     if not base:
         print(f'  ⛔ no baseline at {os.path.relpath(BASELINE, ROOT)} -- this gate has no record to ratchet.')
+        return 1
+    _dups = {k: v for k, v in DUPLICATE_KEYS.items() if k not in KNOWN_DUPLICATE_KEYS}
+    print(f'    ledger keys unique: {len(DUPLICATE_KEYS)} duplicate key(s), {len(KNOWN_DUPLICATE_KEYS)} named as known')
+    if _dups:
+        print(f'  ⛔ {len(_dups)} KEY(S) CARRY MORE THAN ONE ROW -- the ledger counts each once, so a verdict is lost:')
+        for (rc, lit), lines in sorted(_dups.items()):
+            print(f'      {rc}  {str(lit)[:60]!r}  -- rows at lines {lines} and an earlier one')
+        print('    ⇒ merge the rows into one that records both, or name the key in KNOWN_DUPLICATE_KEYS with why.')
         return 1
     live = measure()
     print(f'    the instrument reports {len(live)} distinct (receipt, literal) key(s); the baseline carries {len(base)}')
