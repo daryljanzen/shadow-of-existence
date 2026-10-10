@@ -48,7 +48,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 BASELINE = os.path.join(HERE, 'exact_count_baseline.tsv')
 UNREAD = 'UNADJUDICATED'
-UNREAD_CEILING = 24          # r7241+70.1: 24 counted and not read, all outside 60's two directories -- only falls
+UNREAD_CEILING = 21          # r7245+70.1: 24 counted at r7241+70.1, three read at r7245+70.1 (two DELIBERATE, one GENUINE-OWED) -- only falls
 
 
 def _lift():
