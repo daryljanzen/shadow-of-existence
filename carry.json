@@ -5,6 +5,16 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38060607718",
     "since": "34a9bc81e3fbbb17997acbbf1a30c097b150a9d1"
    }
+  },
+  "tolerance": {
+   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38062240794",
+    "since": "5c6d2e1f3eb74c03d05c57a9571b92171bec042a"
+   },
+   "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38062240794",
+    "since": "5c6d2e1f3eb74c03d05c57a9571b92171bec042a"
+   }
   }
  },
  "main": {
