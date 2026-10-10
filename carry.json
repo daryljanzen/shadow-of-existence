@@ -9,20 +9,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38083037714",
     "since": "6fb5ae9310edb0860b5757d7bf3c000a3764ee75"
    }
-  },
-  "tolerance": {
-   "receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38081444585",
-    "since": "af51387aad1895b7dea81048ea6e0d3df4286a85"
-   },
-   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38081444585",
-    "since": "af51387aad1895b7dea81048ea6e0d3df4286a85"
-   },
-   "receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38081444585",
-    "since": "af51387aad1895b7dea81048ea6e0d3df4286a85"
-   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
