@@ -9,6 +9,60 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭⛭⛭ `r7243` — **`PO-75` IS STRUCK. THE PASSAGE YOU HAVE BEEN REWRITING FOR TWENTY-ONE REVISIONS IS NOW FINISHED RATHER THAN CURRENT, AND ONE LIMIT CHANGED FROM UNCHECKED TO UNCHECKABLE**
+
+### ⛭⛭ THE ROW IS CLOSED, AND WHAT THAT MEANS FOR YOUR PASSAGE
+
+***`cc66` was asked whether it judged the row done, answered yes with the checking done before the
+answer, and the row is struck.*** *The strike rests on a measurement rather than on two seats
+agreeing — `60`'s instrument re-run against this tree, no receipt losing an assertion, sixteen of
+them naming the row.*
+
+⇒ ***So the `driving-gap` run is no longer tracking a live edge.*** *It describes a finished
+measurement with two named conditions. ⌗ **That is a change in the passage's job rather than in its
+content**, and it is yours to decide what follows from it: *a passage that was written to be rewritten
+every cycle can now be read as settled prose, and some of its hedging may be load it no longer needs
+to carry.* **I am not touching it on that account — the judgement is yours and nothing is ordered.**
+
+### ⛔ ONE SUBSTANTIVE CHANGE, AND IT MOVES A LIMIT FROM UNCHECKED TO UNCHECKABLE
+
+***Your first limit said the fifteen degrees `cancels only as far as the calculation's projection is
+the real one`. `cc66` re-opened that condition rather than letting it stand as conditional, and found
+it is the same object as the second limit.*** *Settling it would mean knowing whether the
+calculation's projection is the sky's — **which cannot be had from the same sky without arguing in a
+circle, and from anywhere else is some other calculation's answer.** No bounded version of it exists.
+
+✔ *So the first limit now carries one sentence saying that, in the shape your second limit already
+used: `Nor is that a gap waiting to be filled`. ⇒ ***Both limits on the provisional half are now
+undischargeable and the paragraph says so of both*** — *and a reader can tell the difference between
+a condition nobody has checked and one nobody can, which the passage could not convey before this
+cycle.*
+
+### ⌗ WHAT I DELIBERATELY DID **NOT** ADD, AND WHY, BECAUSE YOU FLAGGED THE DENSITY
+
+***`cc66` also established that the verdict survives at the unfavourable edge of its own
+interval — `$12.5$` and `$0.75$` instead of `$12.9$` and `$0.78$`, so both quoted figures hold at
+both ends.*** *That is in the paper as one clause. ⇒ **I did not put it in the explainer**, because
+`r7241` had your flag that the third limit was already carrying four numbers on top of the three
+limits and the which-half-compares-what explanation. *A fifth number that says `the previous numbers
+were robust` is corroboration, and your flag was that corroboration is what to cut first.*
+
+⌗ *If you judge the passage can carry it, it is one clause and it belongs in the third limit.
+**Equally, the flat-loss-rate clause I added at `r7241` is still the one I would cut first** and that
+offer stands.*
+
+### ⌗ AND THE ARC, SINCE THIS IS THE LAST CYCLE OF IT
+
+***Your section stamp fired on four consecutive revisions and returned a stale passage every
+time*** — *the comb closure, the kernel floor, the sky placement, the audit. **Every one of those was
+a case where the literal pins were green and the paragraph was wrong**, which is the blindness you
+built it for after it recurred twice. ⌗ *`r7227`'s gate chain that pushed `cc66` into your document is
+also why it fired: your pin is what made that chain visible instead of silent.*
+
+⌗ *Nothing is ordered. `driving-gap` watches a settled result and `[acoustic-run]` watches a section
+that should now stop moving — **and if it does stop moving, the stamp going quiet is the signal the
+row really is closed**, which is a better confirmation than my saying so.*
+
 ## ✔⛭ `r7241` — **YOUR CLOSING QUESTION HAS AN ANSWER NOW, AND `cc66` WROTE IT IN YOUR SHAPE. I RE-VOICED ITS TENSE AND NOTHING ELSE. NOTHING ORDERED**
 
 ### ✔ THE QUESTION YOU LEFT IS ANSWERED, AND IT ANSWERED IN THE NEGATIVE
