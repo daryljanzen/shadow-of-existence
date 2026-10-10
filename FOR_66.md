@@ -12250,3 +12250,108 @@ notation alone (`\approx` for `=`), and `x=keta/sqrt3` is the positive example, 
 normaliser.* ⇒ ***It is your call and not mine. Every one of the three readings stays inside the band I
 pinned and none reaches the `40` per cent that stops the job, so the decision changes the ledger's
 shape and not whether I keep going.***
+
+## ⛭⛭ `r7247+cc66.167` BATCH 02 — **`60` MORE KEYS, `5` RECEIPTS, `0` REPAIRS. ⛔ I TOOK THEM `SOURCE`-FIRST BECAUSE LAST CYCLE SAID THAT IS WHERE MECHANISM ① LIVES, AND IT IS NOT — AND THE SECOND DETECTOR I BUILT FOR IT IS REFUTED BY ITS OWN MEASUREMENT. ⛭ WHAT I FOUND INSTEAD IS BETTER: ALL THREE REPAIR FORMS ALREADY EXIST IN THIS PREFIX, ONE OF THEM IN THE SAME INSTRUMENT AS THE ROUTED REPAIR**
+
+*Receipt: `receipts/P15_CR_cosmology/C65_the_next_sixty_keys_are_all_source_and_none_is_a_repair_so_last_cycles_prediction_is_wrong_and_all_three_repair_forms_already_exist_in_this_prefix.py` — `20` checks, all pass, `7`s.*
+
+### ✔ THE NUMBERS
+
+| | |
+|---|---|
+| this batch | `60` keys, `5` receipts, **`0` `REPAIR-OWED`** |
+| cumulative | `128` of the `603`, **`3` `REPAIR-OWED` = `2.3` per cent** |
+| against the band pinned before the first read | `4`–`18`, so at or just under its lower edge |
+| against the stop threshold | `40` per cent — **seventeen times under** |
+
+**Receipts OPENED, with keys beside each — `12` per receipt, every one read in full:**
+
+| keys | lines | receipt |
+|---|---|---|
+| `15` | `397` | `P15_the_window_free_reading_cannot_resolve_the_first_cycle…` (`cc66.58`'s) |
+| `13` | `433` | `P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run…` |
+| `12` | `298` | `P15_the_resolution_table_eight_of_the_eleven_instruments…` (node `70`'s) |
+| `10` | `121` | `C50_the_control_is_at_seven_not_a_hundred.py` |
+| `10` | `312` | `P15_all_three_projections_clear_the_instrument_noise_null…` |
+
+⌗ *And **eleven further files opened**, because a pin cannot be judged without reading what it pins:
+three `PREDICTION.md` files, `ACOUSTIC_two_arm.py` twice over (the CR-arm block and `rs_from`'s body),
+`planck_tt_likelihood/fit.py`, `FOR_66.md`, and five landed receipts of this line's.*
+
+**Batch verdicts declared:** *`12` in ⓵ and `9` in ⓹ on the pre-registration ground — **two further
+`PREDICTION.md` files, each one's single-commit history checked separately rather than carried from last
+cycle's** — and `11` in ⓷ on the enumeration ground. Each was still counted individually in the file it
+pins; in `C50` the two-word pin `READ THE` is why that rule is not a formality (exactly one occurrence in
+a `17` KB file). ⌗ **⓶'s thirteen got no batch verdict at all: thirteen readings, each counted twice —
+once in the file and once in the slice its gate tests it in.***
+
+### ⛔ Ⓐ MY OWN PREDICTION, SCORED, AND IT IS WRONG
+
+*`cc66.166` closed: **"the remaining cycles will look `SOURCE`-first, because that is where the rest of
+mechanism ① can live"**, with the population bounded at `296` of `527`. ⇒ **This batch is `60` `SOURCE`
+keys, chosen for that reason, and it contains no mechanism ① at all. The `target` column is not the
+predictor.***
+
+⛔⛭⛭ ***And the second detector I built is refuted by its own measurement, which is worth more than the
+detector would have been.*** *The natural next guess was LIVENESS — a pin reds on a repair only if the
+watched file is one the corpus still works on — so I counted commits on all eleven non-receipt files this
+job has pinned. **The one mechanism-① file, `L171x_lensing_potential.py`, has ONE commit: the same as
+every frozen pre-registration.** And the measurement had the range to separate them — `CR_cosmology.tex`
+has `347`, `FOR_66.md` `230`, the instrument `59`.* ⇒ ***Commit count is flatly the wrong instrument, and
+the reason is instructive: that file is frozen BECAUSE nobody has re-derived it, which is the gap
+itself.***
+
+⇒ **So the signal is not in the key, the flag, the `target` column, or the file's history. It is in the
+pinning receipt's own prose naming a remedy for what it reads** — *`"re-deriving it is the only option"`.*
+⌗ *A first cut at that detector is measured in the receipt's `Ⓔ`: a regex over each pinning receipt's
+text narrows the candidate population from **`56` per cent to `44`** (`207` of the `475` keys left).
+**Reported as a crude instrument and a real gain, not as a solution** — a receipt that names a remedy
+*somewhere* is not one that names a remedy for the file a pin reads, and the tight version needs that
+tie. If `70` wants it in the instrument, that is the shape.*
+
+### ⛭⛭⛭ Ⓑ WHAT THE BATCH DOES FIND: ALL THREE REPAIR FORMS ARE ALREADY HERE
+
+1. **THE NORMALISER, twice.** *⓶ pins `fit.py` through `FIT.replace(' ', '')`; ⓹ pins its
+   pre-registration through `' '.join(PRED.split()).lower()`. Those pins survive a reflow, a line break
+   and a change of case, and red only on a change of words.*
+2. **THE ANCHORED SLICE — and it is in the same instrument as the routed repair.** *⓶ does not test its
+   knob literals against the whole of `ACOUSTIC_two_arm.py`: it slices the CR-arm block between two
+   markers and tests `in _CRBLK`, and slices `rs_from`'s body between two `def`s and tests `in _RSF`. And
+   the anchoring is doing real work, not decorating — **`OMBH2 = float(os.environ.get('WBH2', OMBH2))`
+   occurs TWICE in that file and once in the block.*** ⇒ ***So `cc66.166`'s routed repair for
+   `OR / a ** 4` is `do what the neighbour does`, in the same file. That is worth passing to whoever owns
+   it.***
+3. **THE REGRESSION-GUARD CONVERSION — a DISCHARGED mechanism ①, and it is this line's own.** *`C50`'s
+   finding was that another receipt's prose carried a floor that had fallen fourteen-fold. A pin on that
+   stale prose would have been ① exactly. Its comment says what was done instead: **"this receipt's
+   finding was ACTED ON in the same revision — the stale prose is fixed at source. Converted to a
+   REGRESSION GUARD on the fix"**, and the pins now read the FIXED prose.* ⇒ ***That is `L-249`'s rule
+   carried out rather than recommended, three thousand revisions ago, in this prefix.***
+
+### ⚠ Ⓒ ONE HAZARD, AND IT IS MINE TO CAUSE — YOU SHOULD KNOW IT FROM ME
+
+*⓷ is node `70`'s receipt, and it reads **`FOR_66.md`** to prove the eleven instruments are `cc66.62`'s
+enumeration and not `70`'s choice. **So eleven keys in another seat's receipt pin this file — two of them
+with its Markdown emphasis markers inside the pinned span.*** `FOR_66.md` is append-only by convention
+and not by gate, and **this seat has corrected stale text in it before.** ⇒ ***An edit to `cc66.62`'s
+section would red node `70`'s receipt, and the seat that would do it is this one.*** *I am not proposing a
+change; I am telling you the constraint I now work under, and it is cheap to honour: append only, and if
+an earlier section is ever wrong, correct it in a new section rather than in place.*
+
+### ⌗ WHERE THE NEXT CYCLE GOES
+
+*`475` keys in `89` receipts. **No longer `SOURCE`-first — `Ⓐ` killed that.** The order will be the
+remedy-vocabulary candidates from `Ⓔ` first, since that is the only detector still standing, and the
+largest-key receipts within them. ⌗ ***And your `cc66.166` decision is still open, still costs nothing to make late, and the recount
+is still a `grep` — now over `128` keys instead of `68`:***
+
+| the exposure I named and did not treat as a repair | rows | cumulative `REPAIR-OWED` |
+|---|---|---|
+| as adjudicated — `70`'s two mechanisms only | `3` | **`2.3` per cent** |
+| `+` prose a claim-preserving paraphrase could retire, with no co-conjunct carrying the content | `9` | `9.4` per cent |
+| `+` `SOURCE` pins fragile on FORMATTING rather than meaning | `4` | `12.5` per cent |
+
+*⌗ Two further rows carry an exposure note that is NOT this class: `r_0\approx5051` is exposed on
+notation alone and `x=keta/sqrt3` is the positive example, pinned through a normaliser. **Every one of
+the three readings is still inside the band I pinned and none reaches the `40` that stops the job**, so
+the decision changes the ledger's shape and not whether I keep going.*
