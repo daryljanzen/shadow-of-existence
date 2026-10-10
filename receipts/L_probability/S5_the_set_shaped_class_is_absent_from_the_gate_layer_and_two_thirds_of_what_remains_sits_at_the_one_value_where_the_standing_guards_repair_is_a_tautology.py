@@ -724,9 +724,30 @@ gate(f"Ⓕ② and the authorship bound is kept where it actually binds: `{len(_e
      "found in it the way the family keeps being found*  ⛭⛭⛭ r7248: *and the bound is now `outside "
      "what this seat MAY EDIT` rather than `outside a path list`, because the list has now been "
      "wrong about authorship in all three directions it can be: the trunk moving, this seat adding "
-     "a file, and this seat modifying a receipt it owns or was ordered to touch.*",
+     "a file, and this seat modifying a receipt it owns or was ordered to touch.  ⚠ And the "
+     "second clause had to move with the first, or the sentence would use ONE notion of `does not "
+     "own` for its census and ANOTHER for its bound: the census stays on the PATH scope, which is "
+     "what it is a census of, and the bound asks whether a receipt in this branch's diff is one "
+     "this seat may not edit.*",
      len(_outside_unowned) == 0
-     and not any(e[0] in _touched for e in _exp_other))
+     and not any(e[0] in _touched and e[0] not in _out_owned and e[0] not in _out_ordered
+                 for e in _exp_other))
+
+# ⛭⛭ r7248: ** AND THE `ordered` BRANCH ABOVE IS UNEXERCISED, SO IT IS CONTROLLED RATHER THAN
+#   TRUSTED. **  *Both receipts this branch modified outside the path scope came back owned by the
+#   introducing-commit rule, so the citation branch has NO live instance -- and a branch of an
+#   authorship test that never fires is this revision's own subject arriving in the test itself: a
+#   guard with no positive control.*
+#   ⇒ *** Two-sided, on strings rather than on history, so the control cannot be vacuous: a line
+#     that cites an order must match, and a line that merely carries a revision id must not. ***
+_ORD_YES = "#   *re `r7245`*: ordered, and measured two-sidedly before it was written."
+_ORD_NO = "# ⛭⛭ r7248 (60): the figure fell `32` -> `30` under this revision's own repairs."
+gate("Ⓕ②ᵇ ⛭ and the `ordered` branch of that bound is CONTROLLED although nothing exercises it: a "
+     "line citing an order matches and a line carrying only a revision id does not --- *an "
+     "unexercised branch of an authorship test is an absence guard with no positive control, which "
+     "is the defect this revision was ordered to repair elsewhere, so it is not left standing here*",
+     bool(_ORDER.search(_ORD_YES)) and not _ORDER.search(_ORD_NO)
+     and not _out_ordered)
 
 # ============================================================ G. this receipt is not of the class
 head("G.  AND THIS RECEIPT IS NOT ITSELF OF THE CLASS")
