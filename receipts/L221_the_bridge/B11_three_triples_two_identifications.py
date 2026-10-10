@@ -100,7 +100,7 @@ def main():
           'DISCHARGED r2631' in led and 'janzen_circle_v3' in led)
     check('⓷ while PO-2 asks a DIFFERENT pair -- the roots against the wall modes -- and is carried in '
           'PROTECTED_OPEN',
-          'A_2' in po2 or 'same $A_2$' in po2)
+          'A_2' in po2 or 'T established is that they are the same $A_2$' in po2)
 
     # ⓸ neither references the other
     check('⛭ and neither register mentions the other: PO-2 does not cite the $\\{0,1,2\\}$ derivation',

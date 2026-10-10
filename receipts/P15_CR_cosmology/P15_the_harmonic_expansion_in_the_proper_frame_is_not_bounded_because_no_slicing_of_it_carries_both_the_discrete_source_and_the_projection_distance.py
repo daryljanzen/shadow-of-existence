@@ -504,7 +504,7 @@ gate("the paper still makes the closed-$S^3$ claim for the cosmological layers a
      "it twice -- once as the areal radius, once as the curvature radius -- with the sphere's "
      "presentation now named rather than left to the constant-$\\tilde\\tau$ label",
      "layers are the closed $S^3$" in body15
-     and "read as a sphere in the de~Sitter presentation" in body15
+     and "e the closed $S^3$, labelled by constant $\\tilde\\tau=\\tau+\\chi$ and read as a sphere in the de~Sitter presentation" in body15
      and "with $r_0$ the present $S^3$ areal radius" in body15
      and "the ratio of the flat projection distance to the curvature radius" in body15)
 _vv, _rc = sp.symbols('v r_c', positive=True)

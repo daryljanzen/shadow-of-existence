@@ -100,7 +100,7 @@ def main():
           'no bulk gauge field for anomaly inflow' in bnd)
     check('while the HOLONOMY route is closed at r2813: "the moduli space of flat connections consists '
           'of flat connections"',
-          'consists of flat connections' in p14)
+          't the argument.} The moduli space of flat connections consists of flat connections' in p14)
 
     # ⓶ the spectral route is absent
     absent = []

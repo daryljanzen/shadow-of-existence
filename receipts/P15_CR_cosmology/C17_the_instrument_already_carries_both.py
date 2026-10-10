@@ -85,7 +85,7 @@ def main():
           'carried by a Boltzmann transfer built for this programme' in p15)
     check('with the VISIBILITY piece: "a full photon hierarchy with polarisation, second-order tight '
           'coupling, massless neutrinos, and a Peebles recombination history"',
-          'and a Peebles recombination history' in p15)
+          's a full photon hierarchy with polarisation, second-order tight coupling, massless neutrinos, and a Peebles recombination history' in p15)
     check('and the PROJECTION piece: "the line-of-sight source carries the monopole with the potential, '
           'the Doppler term, the integrated Sachs--Wolfe term, and the quadrupole with its own '
           'projection kernel"',

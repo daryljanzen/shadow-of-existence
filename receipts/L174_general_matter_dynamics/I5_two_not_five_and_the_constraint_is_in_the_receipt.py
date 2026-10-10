@@ -91,10 +91,10 @@ def main():
           'a sweep cannot carry' in p9)
     check('with the reason: a swept geometry depends only on its orbit-space coordinates while a free '
           'wave depends on the transverse directions',
-          'a swept geometry depends only on its orbit-space coordinates' in p9)
+          'y the transverse degrees of freedom a sweep cannot carry, since a swept geometry depends only on its orbit-space coordinates' in p9)
     check('⇒ so the free data is TWO functions, they are the graviton polarizations, and P9 already '
           'says a sweep cannot carry them',
-          tt == 2 and "The graviton's two propagating polarizations" in p9)
+          tt == 2 and "The graviton's two propagating polarizations are exactly the transverse degrees of freedom a sweep cann" in p9)
 
     # ⓷ the failure, in this line's own artefact
     check('⛔ I3 printed the trace-free momentum constraint D_j sigma^ij itself',

@@ -102,7 +102,7 @@ def main():
 
     # ⓵ both quantities are stated
     check('⛭⛭ ⓵ the LENGTH: "the geometric stacking rate gives a diffusion length $10.8\\%$ longer"',
-          'a diffusion length' in p15 and '10.8' in p15)
+          'h integrals close in elementary form, and on the inherited datum the geometric rate gives a diffusion length $10' in p15 and '10.8' in p15)
     check('the ANGLE: "The observable, in which the common distance cancels, is then '
           '$\\theta_{D}/\\theta_{*}$ larger by $9.4\\%$"',
           'in which the common distance cancels' in p15 and '9.4' in _p15_at(_BEFORE_R2755)

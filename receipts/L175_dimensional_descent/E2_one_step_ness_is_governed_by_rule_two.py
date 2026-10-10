@@ -100,7 +100,7 @@ def main():
     # applied to a COUNT in P14
     check('P14 applies it to a COUNT: the least-arbitrary construction places a slicing plane on '
           'each of the three hinges',
-          'places a slicing plane on each' in p14)
+          's the one CR\'s own founding principle selects, places a slicing plane on each' in p14)
     check('⛭⛭ and excludes a truncation ON THE GROUND THAT ITS SELECTION IS UNFIXED: "a one-hinge '
           'truncation is excluded not as disfavoured but as carrying an unfixed arbitrary modulus, '
           'which the principle forbids"',
@@ -117,7 +117,7 @@ def main():
           and 's the adjustable parameter that criterion rejects' in p0)
     check('⇒⇒ ONE-STEP-NESS IS THEREFORE GOVERNED BY THE SAME ARGUMENT THAT FIXES THE HINGE COUNT, '
           'not by taste or simplicity',
-          'places a slicing plane on each' in p14)
+          's the one CR\'s own founding principle selects, places a slicing plane on each' in p14)
 
     # ** the guard **
     check("the row's guard: the substrate is bounded BELOW and never above",

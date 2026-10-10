@@ -263,7 +263,7 @@ print('     takes (Q, u^c, d^c, L, e^c) as INPUT.*  ⇒ ** That input is the 2+1
 hyp = os.path.join(ROOT, 'receipts', 'P14_matter_sector_paper', 'HYPERCHARGE_from_anomalies.py')
 hsrc = open(hyp, encoding='utf-8', errors='replace').read()
 check('⓬ the hypercharge receipt takes the five-multiplet structure as its stated input',
-      "MULTIPLET STRUCTURE (Q,u^c,d^c,L,e^c)" in hsrc)
+      "1) and one generation's MULTIPLET STRUCTURE (Q,u^c,d^c,L,e^c),\ndo t" in hsrc)
 check('⓬ᵇ and treats Q as an isodoublet with u^c, d^c as SINGLETS -- the 2+1+1 shape',
       '0      (Q is an isodoublet' in hsrc and 'singlets' in hsrc)
 

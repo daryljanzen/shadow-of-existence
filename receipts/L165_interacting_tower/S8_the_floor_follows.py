@@ -94,7 +94,7 @@ def main():
           'promoted from the c-number' in p10 and 'straddles the' in p10)
     check('acting at the origin as an inverse-square operator: "in the geodesic coordinate, the '
           'inverse-square operator ... at the origin"',
-          'the inverse-square operator' in p10 and 'at the origin' in p10)
+          '3$ is, in the geodesic coordinate, the inverse-square operator' in p10 and 'at the origin' in p10)
     check('and $3/4$ is the Weyl alternative -- P10 states both sides: "essentially self-adjoint where" '
           'the coefficient is above, "and limit-circle where" below',
           'limit-circle where $\\hat\\Gamma<\\tfrac34' in p10 and 'essentially self-adjoint where' in p10)

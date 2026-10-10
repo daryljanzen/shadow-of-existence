@@ -349,7 +349,7 @@ gate("Ⓗ① the repair is IN THE TREE and is the subtraction rather than a long
      "excludes what this branch ADDED, and the `r7222` note saying why a list would fail again at "
      "the fourth directory is written beside it",
      "--diff-filter=A" in _s5src and "not in _added" in _s5src
-     and "r7222 REPAIR" in _s5src and "set its own seat can grow" in _s5src)
+     and "r7222 REPAIR" in _s5src and "s a path list is a gate on a set its own seat can grow" in _s5src)
 
 def _git(*a):
     return subprocess.run(['git'] + list(a), cwd=ROOT, capture_output=True, text=True).stdout

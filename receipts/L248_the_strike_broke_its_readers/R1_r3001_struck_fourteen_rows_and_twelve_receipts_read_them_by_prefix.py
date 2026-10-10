@@ -183,7 +183,7 @@ print(f'    what P10 now says      : "...{NEW}... though it does in fact"')
 check('⓸ the pinned wording is GONE from P10', OLD not in re.sub(r'\s+', ' ', p10))
 check('⓸ᵇ and the sentence that replaced it is present, and is STRONGER -- the openness the receipt '
       'pinned has been resolved', NEW in re.sub(r'\s+', ' ', p10)
-      and 'though it does in fact' in re.sub(r'\s+', ' ', p10))
+      and 'w is not assumed here~\\rcpt{P10_the_straddle_does_not_need_a_floor}, though it does in fact' in re.sub(r'\s+', ' ', p10))
 print('  ⇒ ** THE PIN BROKE BECAUSE THE ARGUMENT WON. **  *`S4`\'s finding may well survive, but')
 print('     deciding what it now asserts is a reading of P10 and belongs to whoever owns P10.*')
 print('  ⌷ ** Repairing it by weakening the assertion to match the new sentence would be fitting the')

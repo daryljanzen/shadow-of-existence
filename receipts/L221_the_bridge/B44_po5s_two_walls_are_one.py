@@ -83,12 +83,12 @@ def main():
     check('and lists the flat bundle among three verdicts sharing that root: "the flat bundle selects '
           'without coupling"',
           'the flat bundle selects without coupling' in p0
-          and 'the common root of three verdicts reached separately' in p0)
+          and 'the common root of three verdicts reached separately, that the winding quantises witho' in p0)
 
     # ⓶ and P14 states the wall itself
     check('⓶ while P14 states wall ⓵ in its own voice: "the bundle above is flat, so the construction '
           'supplies colour\'s exact selection rules and no force"',
-          'the bundle above is flat' in p14 and "colour's exact selection rules" in p14)
+          'the bundle above is flat' in p14 and "e is flat, so the construction supplies colour's exact selection rules and n" in p14)
 
     # ⓷ the r2769 split is untouched
     check('⓷ and the r2769 split from `PO-4` is untouched: P14 still states this row\'s residue as "a '

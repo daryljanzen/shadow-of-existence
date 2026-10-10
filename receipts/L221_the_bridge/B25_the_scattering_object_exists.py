@@ -106,7 +106,7 @@ def main():
 
     check('⛭⛭ ⓵ the corpus derives the superpotential: "the massless radial Dirac operator carries '
           'superpotential W=lambda sqrt(f)/r -- exactly P13\'s deferred eq"',
-          'superpotential W=lambda sqrt(f)/r' in b3)
+          '1=(sqrt f/r)e), and shows\n  the massless radial Dirac operator carries superpotential W=lambda sqrt(f)/r' in b3)
     check('and notes it vanishes at every horizon: "W=0 at every horizon (f=0) and is ODD in signed r"',
           'W=0 at every horizon' in b3)
 

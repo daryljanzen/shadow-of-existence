@@ -386,7 +386,7 @@ check("a travelling wave contributes nothing, at any polarisation", plane_flat =
 check("and the only nonzero case needs BOTH channels, which is what unpolarised means",
       kill_om == 0 and sp.simplify(kill_ps) == 0 and sp.simplify(plane_exp) != 0)
 check("P10 locates the remaining question in the STATE, not the geometry",
-      'whatever excludes it does so through' in
+      't excluded by the geometry, and whatever excludes it does so through' in
       open(os.path.join(ROOT, 'corpus', 'canonical_time.tex'), encoding='utf-8').read())
 check("and P14 has the geometry PERMITTING the chirality-asymmetric action without selecting it",
       'permits the chirality-asymmetric action and does n' in

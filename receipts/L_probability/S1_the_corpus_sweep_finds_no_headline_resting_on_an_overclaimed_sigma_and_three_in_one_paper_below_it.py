@@ -184,10 +184,10 @@ FP = 'P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displaceme
 t_np = ' '.join(src(NP).split())
 check("(ii)1 \"one standard deviation from the sky\": the intercept's +-0.0099 is the locator's move across seven "
       "parabola windows -- a procedure spread -- in a source that draws no noise and reads no covariance",
-      not evidence(NP) and 'seven parabola windows' in t_np and '0.0099' in t_np, f"evidence {evidence(NP)}")
+      not evidence(NP) and 'seven parabola windows the sky\'s $\\varphi/\\pi$ moves by $\\pm0' in t_np and '0.0099' in t_np, f"evidence {evidence(NP)}")
 check("    and the receipt that DID propagate the covariance through the locator says it does not re-open the "
       "intercept, and names the window spread as a procedure spread and not the sky's uncertainty",
-      'NOT a re-opening of the phase intercept' in src(FP) and 'PROCEDURE' in src(FP)
+      'NOT a re-opening of the phase intercept, the damping envelope, the driving or the refit, a' in src(FP) and 'PROCEDURE' in src(FP)
       and "It is not the sky's uncertainty" in ' '.join(src(FP).split()))
 NS = 'P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control'
 t_ns = src(NS)

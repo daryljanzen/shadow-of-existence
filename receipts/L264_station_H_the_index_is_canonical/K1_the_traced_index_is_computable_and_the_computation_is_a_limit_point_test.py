@@ -317,7 +317,7 @@ def main():
     check('⓺ᵉ ⇒ *** a PARTIAL GENERALISATION MANUFACTURED THIS THEATRE\'S OWN SUCCESS SIGNAL: '
           '"a reach list that CONVERGES is more informative than one that scatters, because '
           'convergence is evidence the object is real" ***',
-          'convergence is evidence the object is real'
+          's more informative than one that scatters, because convergence is evidence the object is real'
           in open(os.path.join(ROOT, 'THE_MATHEMATICS_REACH.md'), encoding='utf-8').read())
 
     # ============================================================ (6) the loop control

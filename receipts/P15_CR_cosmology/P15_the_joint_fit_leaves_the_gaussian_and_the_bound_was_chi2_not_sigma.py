@@ -190,7 +190,7 @@ def main():
           'math.sqrt(c2_ / n_) < 1.1' in c62)
     check('⓵ᶜ ⛔ while r6409 restates it as "0.26 sigma per bin" -- the looser bound quoted as the '
           f'tighter one, since 0.26 chi^2/bin is {np.sqrt(C62_DATA_SHAPE):.3f} sigma/bin',
-          '0.26 sigma per bin' in ' '.join(r6409.split()))
+          'l weigh is that residual, which r4505 already bounds from above at 0.26 sigma per bin' in ' '.join(r6409.split()))
     # ⌗ The sentence spans a commented continuation, so joining whitespace leaves a '#' inside
     #   it.  Strip comment markers before matching rather than matching a shorter fragment that
     #   could sit anywhere in the file.

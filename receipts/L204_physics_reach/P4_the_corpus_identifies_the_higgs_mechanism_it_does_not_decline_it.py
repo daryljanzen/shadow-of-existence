@@ -121,7 +121,7 @@ def main():
           'constrain that breaking' in p6)
     check('⇒ SO CR IDENTIFIES ELECTROWEAK SYMMETRY BREAKING WITH THE BREAKING OF $R$ -- a claim about '
           'what the mechanism IS, not a decline of it',
-          "the breaking of the substrate's orientation parity" in p6)
+          "the breaking of the substrate's orientation parity, and CR's $R$-structure does n" in p6)
 
     # what IS declined, and it is narrow
     check('and what the same sentence declines is narrow and explicit: the substrate "sets no scale, '
@@ -144,7 +144,7 @@ def main():
           'fixed on the ordinary route' in p6)
     check('⇒ THE ONE-CONSTANT THEOREM FORBIDS THE STRENGTHS.  IT SAYS NOTHING ABOUT THE MECHANISM',
           'the substrate sets no scale, chirality, or epoch' in p6
-          and "the breaking of the substrate's orientation parity" in p6)
+          and "the breaking of the substrate's orientation parity, and CR's $R$-structure does n" in p6)
 
     # ⓶ the corpus's own symmetry breaking
     check("⌗ and the corpus has its OWN symmetry-breaking mechanism: P3 -- \"This is the symmetry "
@@ -158,7 +158,7 @@ def main():
     check('⇒⇒ SO TWO SYMMETRY-BREAKING MECHANISMS ARE IN PLAY, the second identified with a substrate '
           'structure -- at r2524 in a SUBORDINATE CLAUSE and never developed; since developed in p0',
           'This is the symmetry breaking, located precisely' in p3
-          and "the breaking of the substrate's orientation parity" in p6)
+          and "the breaking of the substrate's orientation parity, and CR's $R$-structure does n" in p6)
 
     # ⓸ the sector is already built
     check("⌗ and the neighbouring structure is built: $\\gamma^5$ fixes the massless fermions",

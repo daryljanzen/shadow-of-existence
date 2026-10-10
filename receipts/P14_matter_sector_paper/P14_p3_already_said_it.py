@@ -218,7 +218,7 @@ _m14 = open(_p14, encoding="utf-8", errors="replace").read()
 assert ("at distinct points of the throat circle, and each vantage's signed areal radius vanishes "
         "at its own and at neither of the others") in _m14, \
     "P14 must still carry the three-walls clause -- if this fires the premise is lost from the corpus"
-assert "wall-bound zero-modes are linearly independent and span a three-dimensional space" in _m14, \
+assert "e \\emph{distinct} loci, so the wall-bound zero-modes are linearly independent and span a three-dimensional space" in _m14, \
     "P14 must carry the three-dimensional span on the TRUE reason, linear independence"
 assert "disjoint support" not in _m14, \
     "P14 has regained 'disjoint support', which r6748 refuted -- route it, do not re-pin to it"
@@ -247,7 +247,7 @@ assert "one-hinge" not in _tex, \
 _DOORS = "the distinction is between one door swung through a family and three doors standing at once"
 assert _DOORS in _tex, \
     "P3 must still contain the doors distinction -- if this goes too, P3 retains nothing of the reading"
-_CONDITIONAL = "would read the three hinges differently"
+_CONDITIONAL = "st \\emph{place} its slicing planes at loci, rather than chart a family with one of them, would read the three hinges differently"
 assert _CONDITIONAL in _tex, \
     ("P3's surviving statement must be the CONDITIONAL one.  If this fires, P3 has either "
      "re-asserted the reading or dropped it entirely -- both change this receipt's verdict.")

@@ -126,7 +126,7 @@ def main():
           'Weak isospin as a \\emph{gauging}' in p14 or 'a discrete horn swap and delivers a species '
           'label' in p14)
     check('with the difference located: "the two occupations differing on the right-handed pair"',
-          'the two occupations differing on the right-handed pair' in p14)
+          't $SU(2)_L$\'s chiral action, the two occupations differing on the right-handed pair' in p14)
 
     # ⓷ the scope reduction
     check('⓸ and the sector\'s own count is reduced: "So the undelivered content is two items and not '

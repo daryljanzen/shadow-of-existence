@@ -102,7 +102,7 @@ def main():
            'isometry-realized, on the compact face---and that sector can be specified, and is '
            'obstructed twice') in bp
           and 'The specification does not build the sector' in bp
-          and 'what is definite is the emptiness of a definite object' in bp)
+          and 't evade the positive-curvature obstruction, so what is definite is the emptiness of a definite object' in bp)
     check('and why it matters: the built sector "supplies no equivariant index for the obstruction to '
           'act on"',
           'supplies no equivariant index for the obstruction to act on' in bp)
@@ -130,7 +130,7 @@ def main():
     #   member").  Same two facts -- two sectors, and the propagating one built -- in current words. **
     check("⓶ and the two sectors are DISTINCT, which is this receipt's title and the paper's own "
           'words: "the leaf-bound modes and the propagating field being two sectors"',
-          'the leaf-bound modes and the propagating field being two sectors' in p0)
+          't selected~\\cite{JanzenMatter}, the leaf-bound modes and the propagating field being two sectors' in p0)
     check('⛭ and the propagating one is NO LONGER UNBUILT -- the corpus overtook this receipt: '
           '"the descent onto a propagating spinor sector is built on the chiral member, which is the '
           'unpolarised one, a Dirac field there propagating on the light cone"',
@@ -148,7 +148,7 @@ def main():
     #   now exists.  Re-pinned to the distinction, which is the part that was ever load-bearing.
     check('while the two remain distinct for the reason this receipt gave -- the leaf-bound modes are '
           'not the propagating field, which is why they were never one sector',
-          'leaf-bound modes and the propagating field' in p0)
+          't selected~\\cite{JanzenMatter}, the leaf-bound modes and the propagating field' in p0)
 
     # the ledger records it again
     led = open(os.path.join(ROOT, 'corpus', 'open_ledger.txt'), encoding='utf-8').read()

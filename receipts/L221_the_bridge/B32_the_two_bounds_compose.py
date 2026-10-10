@@ -90,7 +90,7 @@ def main():
     check('⛭⛭ ⓶ and the premise is p0\'s ledger position: "The one physical length is $\\alpha$, not '
           '$\\ell_{P}$; their ratio ... is the size of the universe in gauge-units---a number, not a '
           'tuning"',
-          'the size of the universe in gauge-units' in p0 and 'a number, not a tuning' in p0)
+          '2}$~\\cite{JanzenCRcosmology}) is the size of the universe in gauge-units' in p0 and 'a number, not a tuning' in p0)
     check('with the source number behind it -- p0 cites the cosmology paper for '
           '$\\Lambda\\ell_P^2\\sim3\\times10^{-122}$',
           'JanzenCRcosmology' in p0)

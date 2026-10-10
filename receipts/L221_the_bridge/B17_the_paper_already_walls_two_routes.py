@@ -81,7 +81,7 @@ def main():
     check('⛔ ⓵ P14 states r2666\'s result directly: "no holonomy datum can take one off it, because '
           'holonomy is precisely the complete invariant a flat connection has"',
           'no holonomy datum can take one off it' in p14
-          and 'holonomy is precisely the complete invariant a flat connection has' in p14)
+          and 'o holonomy datum can take one off it, because holonomy is precisely the complete invariant a flat connection has' in p14)
     check('with the moduli-space reason: "a deformation within it changes which flat bundle one has and '
           'not whether there is a field strength"',
           'changes which flat bundle one has and not whether there is a field strength' in p14)
@@ -93,7 +93,7 @@ def main():
     check('with the scale: "sits some forty-one decades below the strong scale, and in the infrared '
           'rather than the ultraviolet direction from it"',
           'decades below the strong scale' in p14
-          and 'in the infrared rather than the ultraviolet direction from it' in p14)
+          and '3/\\Lambda}$, whose energy $\\hbar c/\\alpha$ sits some forty-one decades below the strong scale, and in the infrared rather than the ultraviolet direction from it' in p14)
 
     hbar_c = 197.327e-15 * 1e6
     alpha = 1.5e26

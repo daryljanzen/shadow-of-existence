@@ -108,7 +108,7 @@ def main():
           'The second condition is the parity, and it separates those two' in p14)
     check('against the first, which alone would admit $D=5$: "At $D=5$ the collapse does occur, at scale '
           '$1$, and returns a four-fold"',
-          'the collapse does occur, at scale' in p14 and 'returns a four-fold' in p14)
+          'the collapse does occur, at scale' in p14 and 's occur, at scale $1$, and returns a four-fold' in p14)
 
     print()
     if FAILED:

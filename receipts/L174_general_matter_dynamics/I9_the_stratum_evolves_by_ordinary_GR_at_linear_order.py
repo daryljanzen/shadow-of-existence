@@ -113,7 +113,7 @@ def main():
     check('⇒ TWO polarisation tensors ⇒ TWO free functions, arrived at from the EVOLUTION rather '
           'than from the York counting', len([e_plus, e_cross]) == 2)
     check("and that is cor:radiation's \"the graviton's two propagating polarizations\"",
-          "The graviton's two propagating polarizations" in p9)
+          "The graviton's two propagating polarizations are exactly the transverse degrees of freedom a sweep cann" in p9)
     # ⛔⛭ AMENDED r4514, with `I8`: P9's `cor:wall` was rewritten ("The wall is inhomogeneity", with
     #    the type-N plane wave as the converse's witness) and these two verbatim sentences went with
     #    it, while the CONTENT stayed.  *`W1`'s rule -- a longer string is still a string -- so the

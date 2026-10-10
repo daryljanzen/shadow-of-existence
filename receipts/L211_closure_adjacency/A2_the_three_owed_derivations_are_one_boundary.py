@@ -111,7 +111,7 @@ def main():
 
     # n_s is inherited, in P15's own words
     check('sec:predictions: "the branch point carries the progenitor tilt"',
-          'the branch point carries the progenitor tilt' in p15)
+          'the branch point carries the progenitor tilt and does not drive $n_s\\to1' in p15)
     check('and does not drive $n_s\\to1$ by any INFLATIONARY attractor -- so inherited, '
           'not generated',
           'does not drive $n_s\\to1$ by any \\emph{inflationary} attractor' in p15)

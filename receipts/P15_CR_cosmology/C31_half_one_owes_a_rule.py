@@ -137,7 +137,7 @@ def main():
           'fitted from the distance data here rather than taken from the microwave background", DESI at '
           '"$\\chi^2/\\text{dof}\\simeq1$ at $\\Omega_m\\simeq0.30$"',
           'single CMB-calibrated' not in p15
-          and 'It is fitted from the distance data here rather than taken from the microwave background' in p15
+          and 'y.} It is fitted from the distance data here rather than taken from the microwave background, and the invariant is the offset $x_{0}$, read as $\\Omega_m$, and n' in p15
           and 'returns $\\chi^2/\\text{dof}\\simeq1$ at $\\Omega_m\\simeq0.30$' in p15)
     check('and the high-$\\ell$ ratio "follows with no free parameter"',
           'with no free parameter' in p15)

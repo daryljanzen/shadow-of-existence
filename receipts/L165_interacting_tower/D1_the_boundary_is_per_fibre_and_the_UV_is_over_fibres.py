@@ -101,7 +101,7 @@ def main():
           'essentially self-adjoint where $\\hat\\Gamma\\ge\\tfrac34$' in p10
           and 'limit-circle where $\\hat\\Gamma<\\tfrac34$' in p10)
     check('and thermal regularity supplies the condition FIBRE BY FIBRE',
-          'supplies the condition fibre by fibre' in p10)
+          'supplies the condition fibre by fibre, so that what remains open is n' in p10)
     # ⛭ RE-PINNED r3938.  `the standard problem of the interacting theory` was REMOVED from P10 at
     #   r3871 -- deliberately, because that phrase's shared-character reading is what got PO-6
     #   WRONGLY STRUCK.  The distinction it carried SURVIVES and is stated more strongly:

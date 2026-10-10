@@ -203,7 +203,7 @@ def main():
     check('⓸ while 3ebe33bce1 was a real unrun test when this swept -- RUN at r2705 and banked '
           'into P14 at r2706, so the guard is now on the FILLING: the paper states the test '
           'and cites its receipt',
-          'A genuine test computes the triality from the colour content' in p14
+          'A genuine test computes the triality from the colour content independently of the charge, and that test is a' in p14
           and 'B24_the_triality_test_run' in p14)
     check('and it is NOT a duplicate -- the phrase appears in no PO row',
           not any('triality from the colour content' in v.lower() for v in po.values()))

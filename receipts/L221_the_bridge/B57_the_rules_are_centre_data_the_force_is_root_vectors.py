@@ -115,7 +115,7 @@ def main():
     # ⓸ and P14 states the two halves
     check('⓸ while P14 states both halves in one clause: "the construction supplies colour\'s exact '
           'selection rules and no force"',
-          "colour's exact selection rules" in p14 and 'and no force' in p14)
+          "e is flat, so the construction supplies colour's exact selection rules and n" in p14 and 'and no force' in p14)
 
     print()
     if FAILED:

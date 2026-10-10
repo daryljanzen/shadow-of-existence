@@ -121,7 +121,7 @@ def main():
           'and each has been run", the datum side answered as a clock reading by L150/X1',
           'item has two sides and they now stand differently' in p0_c54_179_text
           and 'e one fact.\'\' \\emph{The test has two sides, and each has been run' in p0
-          and 'it is a clock reading rather than a datum a handover transmits' in p0
+          and 't in the geometric residue at all, and it is a clock reading rather than a datum a handover transmits' in p0
           and 'X1_the_ratio_is_a_clock_reading_not_a_carried_datum' in p0
           and 'Reach: stated as a target, not a result' not in p0)
     p0_at_179 = _at('2af0b0b', 'corpus/geometric_core_paper.tex')

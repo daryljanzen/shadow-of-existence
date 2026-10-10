@@ -99,7 +99,7 @@ def main():
           'draws no bound from it in either direction' not in p16)
     check('⌗ and what stands in its place carries the bound this receipt said existed, in the '
           'construction\'s favour',
-          'the data demand it at $\\Delta\\chi^{2' in p16 or 'two independent supports' in p16)
+          'the data demand it at $\\Delta\\chi^{2' in p16 or 'e rests on therefore has two independent supports rather than n' in p16)
 
     # ⓵ the run is on the tree
     d = os.path.join(ROOT, 'receipts', 'L804_isocurvature_bound')

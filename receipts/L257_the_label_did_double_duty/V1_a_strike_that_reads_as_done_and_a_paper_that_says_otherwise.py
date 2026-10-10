@@ -366,7 +366,7 @@ def main():
           'gamma <= 1/4 < 3/4 -- so the item PART 4 carried as owed-but-not-load-bearing is paid',
           'The straddle itself is a computed fact\\rcpt{P10_the_straddle_is_computed}' in _p10
           and os.path.exists(_straddle_rcpt)
-          and '\\operatorname{spec}\\hat\\Gamma=[\\gamma,\\infty)' in _p10
+          and 's occupy both sides of $\\tfrac34$, since $\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$ with $c>0$ has $\\operatorname{spec}\\hat\\Gamma=[\\gamma,\\infty)' in _p10
           and '$\\gamma\\le\\tfrac14<\\tfrac34$ places spectrum strictly below the threshold' in _p10
           and 'not the floor but the straddle itself as a computed fact' not in _p10)
     check('⓸ᵃ ⌗ and the half this section turns on is untouched: the closure "is supplied fibre by '

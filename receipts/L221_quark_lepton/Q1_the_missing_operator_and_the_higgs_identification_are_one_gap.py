@@ -109,7 +109,7 @@ def main():
     check("on the MASSLESS Dirac operator's radial first-order pair -- P14: \"The massless radial "
           "Dirac problem separates into a first-order pair\", and \"the radial first-order pair\" "
           "where the spin connection is given",
-          'massless radial Dirac problem separates into a first-order pair' in p14
+          'massless radial Dirac problem separates into a first-order pair with superpotential \\begin{equation} W(r)=\\frac{\\lambda\\sqrt{f}}{r},\\qquad f=1' in p14
           and 'radial first-order pair' in p14)
     check('and states its own boundary: "the zero-modes are massless, and their splitting is '
           'electroweak physics, external to the geometry"',

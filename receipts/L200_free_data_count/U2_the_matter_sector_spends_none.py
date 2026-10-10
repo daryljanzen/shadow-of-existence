@@ -96,7 +96,7 @@ def main():
           'the one polynomial f", three walls counting it and the turnaround\'s deck carrying it',
           'no free count but the fold of the one polynomial $f$' in p14
           and "the comoving turnaround's deck carries it" in p14
-          and "so three is the maximally-symmetric matter construction's own index" in p14)
+          and "h being $D-1$ for the same reason, so three is the maximally-symmetric matter construction's own index, n" in p14)
     check('(1) and explicitly "not a datum to be fit"', 'not a datum to be fit' in p14)
 
     # (2) the hypercharges are not fitted

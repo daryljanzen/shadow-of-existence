@@ -487,7 +487,7 @@ head("F.  THE OTHER FOUR SIDES, AND WHY NONE OF THEM IS THE ONE")
 
 _chart_closed = 'What it cannot do is be set up on the reassigned chart'
 _ell_a = 'the same flat-$\\Lambda$CDM observable that places the acoustic scale at $\\ell_A\\approx301$'
-_throat_not_layer = 'what $|\\Omega_k|=\\Omega_\\Lambda$ fixes is the substrate\'s throat'
+_throat_not_layer = 'what $|\\Omega_k|=\\Omega_\\Lambda$ fixes is the substrate\'s throat.} \\emph{That is not the layer\'s p'
 for nm, ph in (('chart side closed by P15', _chart_closed),
                ('the acoustic placement', _ell_a),
                ('throat is not the layer', _throat_not_layer)):
@@ -500,7 +500,7 @@ gate("Ⓕ① the chart side is CLOSED BY `P15` and cited rather than redone, the
      'What it cannot do is be set up on the reassigned chart' in PAPER
      and 'the same flat-$\\Lambda$CDM observable that places the acoustic scale at '
          '$\\ell_A\\approx301$' in PAPER
-     and "what $|\\Omega_k|=\\Omega_\\Lambda$ fixes is the substrate's throat" in PAPER)
+     and "what $|\\Omega_k|=\\Omega_\\Lambda$ fixes is the substrate's throat.} \\emph{That is not the layer's p" in PAPER)
 
 gate("Ⓕ② and the mode side returns the fork rather than a second ground, because the surface the "
      "photons traverse is exactly what branch `⓵` names.  ⇒ *four sides closed, one carried to a "

@@ -106,7 +106,7 @@ def main():
           '\\{6,7,10\\}' in p12)
     check('while P9 points BACK: "at every stratum for which the companion algebroid paper tabulates an '
           'isotropy ... it is in fact an equality~\\cite{JanzenAlgebroid}"',
-          'the companion algebroid paper tabulates an isotropy' in p9
+          's stated as an inclusion, and at some strata it is in fact an equality.} At every stratum for which the companion algebroid paper tabulates an isotropy' in p9
           and 'JanzenAlgebroid' in p9)
     check('⇒⇒ SO EACH CITES THE OTHER FOR THE SAME FACT',
           'JanzenRange' in p12 and 'JanzenAlgebroid' in p9)

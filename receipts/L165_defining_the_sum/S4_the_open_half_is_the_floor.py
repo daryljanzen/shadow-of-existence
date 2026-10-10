@@ -80,7 +80,7 @@ def main():
     #    leaves open is now the STRADDLE, a different threshold deciding a different property. **
     check('and does not ASSUME the floor, while now deriving it: "is not assumed here ... '
           'though it does in fact follow"',
-          'is not assumed here' in p10 and 'though it does in fact follow' in p10)
+          'is not assumed here' in p10 and 'w is not assumed here~\\rcpt{P10_the_straddle_does_not_need_a_floor}, though it does in fact follow' in p10)
     # ⛔⛭⛭ RE-PINNED r3938, AND NOT BY MOVING THE PIN.  The check that stood here asserted that
     #    "what the paragraph leaves open is the STRADDLE", pinned on 'not the floor but the straddle
     #    itself'.  That phrase is gone from P10 -- and the CLAIM is gone with it, not merely reworded:

@@ -140,7 +140,7 @@ def main():
           'fitted to the acoustic angle at the \\emph{directly} measured $H_0$' not in p15
           and '\\emph{It is a limit rather than a parameter}: carried back over two decades in starting '
               'redshift the peaks hold to the grid step' in p15
-          and 'the angle is an output of the rate rather than a calibration of it' in p15)
+          and 'h the plasma handed over at the branch point the sound horizon has no lower endpoint to place, so the angle is an output of the rate rather than a calibration of it' in p15)
     check('and that it is not a knob: "Where the plasma starts moves the scale and not the peak, which is '
           'why the start is not free", with "no early-universe parameter left to carry the acoustic angle"',
           'meets the scale at every' not in p15
@@ -188,7 +188,7 @@ def main():
           'orders off the rate gap, and the paper separates them in its own voice',
           _RETIRED not in p15 and _OBSERVABLE in p15 and _APART in p15)
     check('which is what a collapsing $x_e$ does, since P15\'s integrand carries $g(R)/(H x_e)$',
-          'x_{e}' in p15 or 'x_e' in p15)
+          'x_{e}' in p15 or '4$, the \\emph{ionisation history $x_e' in p15)
 
     print()
     if FAILED:

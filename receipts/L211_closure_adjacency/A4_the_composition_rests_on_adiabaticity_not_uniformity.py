@@ -104,7 +104,7 @@ def main():
     # and the sharper point: the premise comes from the inherited sector
     check('P15 treats the primordial statistics as INHERITED: "the branch point carries the '
           'progenitor tilt"',
-          'the branch point carries the progenitor tilt' in p15)
+          'the branch point carries the progenitor tilt and does not drive $n_s\\to1' in p15)
     check('⇒ so an adiabatic-mode premise is drawn from the very sector the construction '
           'treats as inherited data',
           'Classical, non-vacuum primordial statistics' in p15)

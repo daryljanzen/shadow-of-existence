@@ -92,7 +92,7 @@ def main():
           and 'once dissociation is total, the memory of the peak is erased' in p16)
     check('with what fixes the abundances instead: "the abundances are fixed by the conditions in the '
           "window on the cooling leg ... not by the peak's value\"",
-          'the abundances are fixed by the conditions in the window on the cooling leg' in p16
+          'the abundances are fixed by the conditions in the window on the cooling leg (Secs~\\ref{sec:rate}, \\ref{sec:network}), n' in p16
           and "not by the peak's value" in p16)
 
     # ⓶ the duplicate

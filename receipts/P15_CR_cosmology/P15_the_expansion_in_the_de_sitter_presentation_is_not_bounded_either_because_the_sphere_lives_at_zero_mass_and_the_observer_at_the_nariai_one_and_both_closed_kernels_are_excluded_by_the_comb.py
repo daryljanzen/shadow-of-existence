@@ -183,7 +183,7 @@ gate("`sec:properframe` now states the presentation this receipt computes in, an
          "Hopf fibration" in b15)
 gate("and it states what the reassignment does to the Hopf direction, which is the order's second "
      "question read from the paper rather than guessed",
-     "the Hopf direction having been traded into $\\chi$" in b15)
+     "s that line together with an $S^2$ of directionality, the Hopf direction having been traded into $\\chi$" in b15)
 
 # ================================================== B. the layer's radius
 head("B.  ⛭⛭⛭ THE LAYER'S RADIUS IS FIXED IN THIS PRESENTATION -- AT `alpha`, AND ONLY AT ZERO MASS")
@@ -271,7 +271,7 @@ gate(f"⇒ *** SO THE HOPF STRUCTURE DOES NOT ENTER THE PROJECTION: if it did, `
      "rather than 303.  Its role is the one the paper gives it -- traded into `chi` by the "
      "reassignment ***",
      ok_hopf and _l2_flat > 7.0
-     and "the Hopf direction having been traded into $\\chi$" in b15)
+     and "s that line together with an $S^2$ of directionality, the Hopf direction having been traded into $\\chi$" in b15)
 
 # ================================================== E. the obstruction
 head("E.  ⛔ THE OBSTRUCTION, SAID OF *THIS* PRESENTATION, WHICH IS WHAT THE ORDER ASKED FOR")
@@ -279,11 +279,11 @@ gate("in the presentation where the layer IS the sphere, the MATTER congruence i
      "says the at-rest geodesics are the photon bundle and the matter geodesics one of the two null "
      "bundles -- so there is no matter observer at a point of that layer to expand about",
      "the at-rest geodesics are the photon bundle" in b15
-     and "null bundles on the cosmological horn carries the late-time matter geodesics" in b15)
+     and "e the photon bundle, one of the two null bundles on the cosmological horn carries the late-time matter geodesics, and the universe is an $S^3$ in which all matter f" in b15)
 gate("and `CR_framework` names what supplies one: `The reassignment promotes one bundle to the "
      "fundamental timelike congruence` -- the same operation that trades the Hopf direction into "
      "`chi`", "The reassignment promotes one bundle to the fundamental timelike congruence" in b07
-     and "the Hopf direction having been traded into $\\chi$" in b15)
+     and "s that line together with an $S^2$ of directionality, the Hopf direction having been traded into $\\chi$" in b15)
 gate("⇒ *** NOT BOUNDED HERE EITHER, AND THE REASON IS ONE OPERATION READ TWICE: the reassignment "
      "supplies the observer and removes the sphere, and in the other variable the mass identity says "
      "the same -- the sphere at `r_s = 0`, the observer at the Nariai mass.  An expansion needs a "

@@ -203,7 +203,7 @@ _P16_AT = _sp.run(['git', 'show', '0fcafd6c:corpus/cosmogenesis_paper.tex'], cwd
 _hdr = re.search(r'eta fixes the abundances and the CMB peak HEIGHTS, rho_r/rho_m\s*\n%\s*the peak SPACING',
                  _P16_AT)
 _hdr_now_corrected = (re.search(r'rho_r/rho_m\s*\n?%?\s*the peak SPACING', P16) is None
-                      and re.search(r'peak SPACING is computed from the rate', P16) is not None)
+                      and re.search('peak SPACING is computed from the rate, the plasma being handed over at the branch\n%   point so that the acoustic angle carries n', P16) is not None)
 print(f"     {'FOUND  ' if _hdr else 'ABSENT '} P16's header comment carried the draft's sentence almost verbatim "
       f"(at 0fcafd6c, r2566)")
 print(f"     {'OK     ' if _hdr_now_corrected else 'STALE  '} and it has since been corrected: the spacing is "

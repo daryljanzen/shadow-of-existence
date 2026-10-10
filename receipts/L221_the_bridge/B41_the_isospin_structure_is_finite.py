@@ -94,7 +94,7 @@ def main():
           sum(d*d for d in dims) == 12 and dims.count(2) == 2)
     check('⇒ and P14 counts the one-dimensional ones precisely because the two-dimensional ones are '
           'there to exclude -- "a colourless sector on this structure has total dimension four"',
-          'has total dimension four' in p14)
+          'e its four one-dimensional ones, so a colourless sector on this structure has total dimension four' in p14)
 
     # ⓶ but it is finite
     check('⛔⛭⛭ ⓶ and the group is FINITE: a gauge field is a connection valued in a LIE ALGEBRA, '

@@ -86,7 +86,7 @@ def main():
     # ⓵ one sentence, not two conditions
     check('⓵ P10 states C1: "The conformal-factor problem arises when the path integral ranges over the '
           'conformal factor of the metric. Here it does not."',
-          'conformal-factor problem arises when the path integral ranges over the conformal factor'
+          't reach this construction, and the reason is structural rather than fortunate.}} The conformal-factor problem arises when the path integral ranges over the conformal factor'
           in p10 and 'Here it does not' in p10)
     check('and states C2 in the SAME passage, as the reason: "The substrate\'s scale is $\\alpha$ and is '
           'fixed---not chosen, but required"',

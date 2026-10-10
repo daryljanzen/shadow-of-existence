@@ -185,7 +185,7 @@ def main():
     #   absence means something. Presence asserted, count printed (6).
     check(f'⛭⛭ BUT "Einstein--Hilbert" appears {n_eh} times', n_eh > 0)
     check("P12 opens on it: \"the Einstein--Hilbert action is recast in Hamiltonian form\"",
-          'the Einstein--Hilbert action is recast in Hamiltonian form' in allp)
+          '2}, spacetime is foliated by spatial hypersurfaces and the Einstein--Hilbert action is recast in Hamiltonian form' in allp)
     check('an objection is answered ON it: "the conformal factor entering the Einstein--Hilbert '
           'action with the opposite sign"',
           'conformal factor entering the Einstein--Hilbert action with the opposite sign' in allp)

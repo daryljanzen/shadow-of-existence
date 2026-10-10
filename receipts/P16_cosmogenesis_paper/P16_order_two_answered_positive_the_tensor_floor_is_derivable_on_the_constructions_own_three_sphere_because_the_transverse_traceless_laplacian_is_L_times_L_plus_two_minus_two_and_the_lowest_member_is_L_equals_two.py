@@ -402,7 +402,7 @@ gate("Ⓔ②  and the paper uses it for exactly what the derivation supports -- 
      " -- so the floor is load-bearing for a scope statement and the receipt reaches it",
      'a genuinely homogeneous shear is not a perturbation of a closed ball at all' in PAPER
      and 'd be a change of background class' in PAPER
-     and 'Bianchi~IX' in PAPER)
+     and 'd be a change of background class, from FRW to Bianchi~IX' in PAPER)
 
 gate("Ⓔ③  and the paper's adjacent step is the one that makes the floor matter: at `$k=0$` the"
      " tensor equation gives a CONSTANT shear, so the Bianchi shear IS the long-wavelength tensor"

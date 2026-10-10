@@ -97,7 +97,7 @@ def main():
           f'passing -- and slicing_operator names "horizon-regular".  ** The count is printed; only '
           f'"more than once" is asserted **',
           _n_kr > 1
-          and 'horizon-regular' in P['slicing_operator'])
+          and '1$ geodesic, threaded through the horizon-regular Painlev\\\'e--Gullstrand chart, is d' in P['slicing_operator'])
 
     # ⓷ and the circle paper names the wall's own locus with a continuation across it
     check('⛭⛭⛭ ⓷ and the circle paper states it: the slicing paper "carries the continuation ... the '

@@ -201,7 +201,7 @@ def main():
 
     check('⚠ CR does NOT derive the dynamics: "the construction leaves the dynamics of general '
           'relativity unchanged"',
-          'the construction leaves the dynamics of general relativity unchanged' in p9)
+          'the construction leaves the dynamics of general relativity unchanged, the radiative sector beyond the wall is reached by ordinary evolution of the leaf, n' in p9)
     check('and P12 calls its own claim "a recognition rather than an addition"',
           'is a recognition rather than an addition' in p12)
 

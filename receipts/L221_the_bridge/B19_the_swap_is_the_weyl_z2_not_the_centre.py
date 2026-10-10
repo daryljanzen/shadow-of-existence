@@ -73,7 +73,7 @@ def main():
           "$SU(2)_L$'s chiral action\"",
           'a discrete horn swap and delivers a species label, not $SU(2' in p14)
     check('and locates the difference: "the two occupations differing on the right-handed pair"',
-          'the two occupations differing on the right-handed pair' in p14)
+          't $SU(2)_L$\'s chiral action, the two occupations differing on the right-handed pair' in p14)
 
     sx = np.array([[0, 1], [1, 0]], dtype=complex)
     sz = np.diag([1, -1]).astype(complex)

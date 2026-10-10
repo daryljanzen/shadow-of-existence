@@ -91,7 +91,7 @@ def main():
           'the quoted value to one per cent, from standard' in two)
     check('and the same receipt says why: "Given $\\eta$ and the measured matter-to-baryon ratio, '
           'both inherited for the composition regardless, the ratio at onset IS the onset"',
-          'ratio at onset IS the' in two)
+          'h inherited for the composition regardless, the ratio at onset IS the' in two)
 
     # ⓷ C39 warned against exactly this
     # ** and C39's own framing was that the list's SIZE is the thing at risk: it says the size
@@ -99,7 +99,7 @@ def main():
     # this receipt had to redo, because C39 read the marker and not the receipt behind it. **
     check('⓷ while C39 itself framed the risk: the exclusion list "decides the comparison\'s '
           'size, and it is decided by reading rather than by choosing"',
-          "decides the comparison's size, and it is decided by reading rather than by"
+          "s the\n      test r2746 said decides the comparison's size, and it is decided by reading rather than by"
           in rcpt('C39_the_derived_list_read.py'))
 
     # ⚠ the near-miss

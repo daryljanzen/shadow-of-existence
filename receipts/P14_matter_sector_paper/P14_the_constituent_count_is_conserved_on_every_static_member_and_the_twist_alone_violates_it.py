@@ -654,7 +654,7 @@ with open(prior, encoding='utf-8') as fh:
 check("r6752's receipt is on disk and does rule out a spacetime connection, in its own words",
       os.path.exists(prior)
       and 'THERE IS NO SUCH BUNDLE' in prior_body
-      and 'nothing for a curvature to be the curvature of' in prior_body
+      and 'o seat\nbundle at all, and so nothing for a curvature to be the curvature of' in prior_body
       and prior_body.count('no spacetime bundle') >= 1)
 
 # =========================================================================================

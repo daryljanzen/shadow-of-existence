@@ -103,7 +103,7 @@ def main():
 
     # the construction is single-step and says so
     check('P3: "one slicing plane---a door---swings about one fixed line in the substrate, the hinge"',
-          'swings about one fixed line in the substrate, the hinge' in p3)
+          'swings about one fixed line in the substrate, the hinge, and the whole family of cuts is t' in p3)
     check('and "the whole family of cuts is the single arc of that swing"',
           'the single arc of that swing' in p3)
     check('⇒⇒ SO A DESCENT FROM D>5 MUST BE MULTI-STEP, AND THE CORPUS HAS NO SECOND DOOR',

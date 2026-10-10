@@ -101,7 +101,7 @@ def main():
           '\\dim\\ker_+=3' in p14.replace(' ', '')
           and '\\dim\\ker_-=0' in p14.replace(' ', ''))
     check('and the holonomy action: it acts on the walls\' chiralities, "changing their signs only in '
-          'pairs"', 'changing their signs only in \\emph{pairs}' in p14)
+          'pairs"', 'e the $\\sigma_{y}$ eigenvalues of Proposition~\\ref{prop:wall}, changing their signs only in \\emph{pairs}' in p14)
     check('and the conclusion: "three and zero lying in different parity classes"',
           'three and zero lying in different parity classes' in p14)
     check("and that the chiralities are prop:wall's $\\sigma_{y}$ eigenvalues",

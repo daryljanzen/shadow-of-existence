@@ -223,7 +223,7 @@ def main():
     check('⓶ᵈ¹ and the CONTENT of both moved phrases is present under new words -- "The massless '
           'radial Dirac problem separates into a first-order pair", and "a characteristic crossing '
           'with no obstruction from the substrate\'s curvature" -- so these are re-pins, not repairs',
-          'massless radial Dirac problem separates into a first-order pair' in body
+          'massless radial Dirac problem separates into a first-order pair with superpotential \\begin{equation} W(r)=\\frac{\\lambda\\sqrt{f}}{r},\\qquad f=1' in body
           and re.search(r"characteristic crossing with no [^.]{0,60}?obstruction[^.]{0,40}?curvature",
                         body) is not None)
 

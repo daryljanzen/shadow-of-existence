@@ -91,7 +91,7 @@ def main():
           in p14)
     check('⇒ so Ⓗ is a DECLARED traced-weight item, not an unknown -- the corpus named it before '
           'the reach reached it',
-          'stated here at traced weight' in p14)
+          's the expected behaviour of such a count and is stated here at traced weight' in p14)
 
     # ⓶ why it can only be traced
     # ⛭ r7135+cc66.102: the label's claim is that P14 USES THE PHRASE, and `>= 2` asserted a count the

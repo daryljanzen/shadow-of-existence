@@ -96,7 +96,7 @@ def main():
     # ⓵ P9 states the general case
     check("P9's cor:wall: \"The wall is inhomogeneity\" -- a geometry with no continuous isometry "
           'admits no sweep-subgroup to anchor the construction',
-          'The wall is inhomogeneity' in p9 and 'no continuous isometry admits no sweep-subgroup' in p9)
+          'The wall is inhomogeneity]\\label{cor:wall} A geometry with n' in p9 and 'no continuous isometry admits no sweep-subgroup' in p9)
     check('⛭ and immediately after: "since the construction leaves the dynamics of general '
           'relativity unchanged, the radiative sector beyond it is reached by ORDINARY EVOLUTION '
           'OF THE LEAF"',
@@ -131,7 +131,7 @@ def main():
           'SOURCE COMMENT' in arc and 'c54.179' in arc)
     check('⇒ a correction to a row\'s EVIDENCE is not a correction to its WEIGHT, and the second '
           'does not follow automatically',
-          'corrected at c54.179' in arc or 'is corrected at c54.179' in arc)
+          'n DISCOVERY (P8\'s % source comment, corrected at c54.179' in arc or 'is corrected at c54.179' in arc)
 
     # and what stays open
     # ** SUPERSEDED r2516: this check asserted (1) was unbuilt.  r2514 EXHIBITED it at linear order.

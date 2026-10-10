@@ -120,7 +120,7 @@ def main():
     check('⓹ and p0 names that root for three verdicts: "the common root of three verdicts reached '
           'separately, that the winding quantises without measuring, the flat bundle selects without '
           'coupling, and the branch point filters without supplying"',
-          'the common root of three verdicts reached separately' in p0
+          'the common root of three verdicts reached separately, that the winding quantises witho' in p0
           and 'quantises without measuring' in p0)
 
     print()

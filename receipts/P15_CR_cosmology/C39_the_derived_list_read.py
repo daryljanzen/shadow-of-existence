@@ -97,7 +97,7 @@ def main():
     check('⛭⛭ ⓵ $\\theta_*$: "$\\theta_{*}=D_{M}/r_{s}=302.2$ against the measured $301$"',
           '302.2' in p15 and 'against the measured' in p15)
     check('$r_s$: "returns $r_{s}=146.4$Mpc against $145.4$ ... within $0.7\\%$ of each other"',
-          '146.4' in p15 and 'within $0.7\\%$ of each other' in p15)
+          '146.4$~Mpc against $145.4$ on the radiation-i' in p15 and 'within $0.7\\%$ of each other' in p15)
     # ** r6931+70.1: STALE (c).  Pinned "a consequence and a check, not an input---$1+z_{\\rm
     #   eq}=3399$, exactly half the onset", removed by `caaf3481` (r6772+66.3) when P15 dropped the
     #   fitted onset for the branch-point handover.  z_eq is still marked derived and still carries
@@ -125,7 +125,7 @@ def main():
           '"follows from standard thermodynamics alone", "not a feature of this construction", and '
           'that with the branch-point handover "there is no such start and no such amplitude"',
           'is not a feature of this construction either' in p15
-          and 'it follows from standard thermodynamics alone' in p15
+          and 'h of which the composition inherits regardless, it follows from standard thermodynamics alone, $[1' in p15
           and 'there is no such start and no such amplitude' in p15)
 
     # ⓶ the exclusions are the paper's own
@@ -138,9 +138,9 @@ def main():
           'carries and the baryon-acoustic data fix" -- fitted, to the distances',
           'The quantities this cosmology actually uses are the epoch $x_{0}$ (equivalently '
           '$\\Omega_m=2/(x_{0}^{3}+2)$' in p15
-          and 'which the rate carries and the baryon-acoustic data fix' in p15)
+          and 't the offset itself, which the Nariai condition fixes at $\\alpha/\\sqrt3$}), which the rate carries and the baryon-acoustic data fix' in p15)
     check('and $A_s$ is anchored "by an $A_{s}$ this construction inherits rather than predicts"',
-          'inherits rather than predicts' in p15)
+          's where the amplitude is anchored, by an $A_s$ this construction inherits rather than predicts' in p15)
 
     # ⓷ the shape test
     check('⛭ ⓷ while the high-$\\ell$ ratio is derived without a measured partner: "the high-$\\ell$ '

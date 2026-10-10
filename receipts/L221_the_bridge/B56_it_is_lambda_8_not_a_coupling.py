@@ -106,7 +106,7 @@ def main():
     check('⛭⛭ ⓶ and the corpus already names it: "the root triple lies in the plane ... which is the '
           'Cartan subalgebra of $\\mathfrak{su}(3)$ in its standard realisation, the diagonal '
           'traceless matrices"',
-          'Cartan subalgebra of' in sds and 'diagonal traceless matrices' in sds)
+          'Cartan subalgebra of' in sds and 's the Cartan subalgebra of $\\mathfrak{su}(3)$ in its standard realisation, the diagonal traceless matrices' in sds)
     check('and calls it what it is: "The three roots summing to zero furnish a Cartan element of '
           '$\\mathfrak{su}(3)$ and the $S_3$ its Weyl group --- the Cartan--Weyl skeleton, a necessary '
           'ingredient"',

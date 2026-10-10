@@ -80,7 +80,7 @@ def main():
           'each hinge designates one of the three roots of the horizon cubic as its own black-hole '
           'horizon' in p14)
     check('HINGES ↔ WALLS: "places a slicing plane on each: three throat walls"',
-          'places a slicing plane on each: three throat walls' in p14)
+          's the one CR\'s own founding principle selects, places a slicing plane on each: three throat walls' in p14)
     check('WALLS ↔ MODES: "hence three chiral zero-modes"', 'hence three chiral zero-modes' in p14)
     check('and the $S_3$ is the SAME one: "that $S_{3}$ is not a second group resembling the '
           "substrate's own\"",

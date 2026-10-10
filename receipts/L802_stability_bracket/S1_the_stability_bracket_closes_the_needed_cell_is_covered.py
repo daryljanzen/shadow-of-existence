@@ -131,7 +131,7 @@ def main():
     check('and P11 itself calls this a BRACKET, not a single-theorem closure: "convergence across '
           'results ... rather than a single theorem covering the exact vacuum polarized Gowdy" case',
           'This is convergence across results' in p11
-          and 'rather than a single theorem covering the exact vacuum polarized' in p11)
+          and 'rather than a single theorem covering the exact vacuum polarized Gowdy--$\\Lambda$ case, and the in-model computations above are t' in p11)
     # ⛔⛭ AMENDED r4534: P11 states it in more detail now and with the citation -- "This is a massive
     #    scalar on de Sitter and admits a clean, unitary Bunch--Davies
     #    quantization~\cite{BunchDavies1978}", after naming the mode's own equation (Hubble friction
@@ -146,7 +146,7 @@ def main():
           'clean, unitary Bunch--Davies quantization", in a "fixed-background '
           '(transverse-traceless) truncation" -- so the regime is small departures from the substrate',
           _BD.search(p11) is not None
-          and 'fixed-background (transverse-traceless) truncation' in p11)
+          and '2$ (principal series) in this fixed-background (transverse-traceless) truncation' in p11)
 
     # ---- the grid: exactly one (symmetry x data) cell is uncovered, and it is (general, all) -------
     # ** general data SUBSUMES symmetric: a result at (general, d) covers (symmetric, d) too. **

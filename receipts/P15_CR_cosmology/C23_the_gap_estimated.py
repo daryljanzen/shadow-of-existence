@@ -84,7 +84,7 @@ def main():
     # ⓵ the paper's two inputs
     check('⓵ the rate is the paper\'s: "the rate responsible is $k^{2}/(3\\mathcal{H})$, which grows with '
           '$k$"',
-          'the rate responsible is' in p15 and '3\\mathcal{H}' in p15)
+          'the rate responsible is $k^{2}/(3\\mathcal{H})$, which grows with $k$ and refers to no content at a' in p15 and '3\\mathcal{H}' in p15)
     # ⛔⛭⛭ RE-PINNED r3950.  This pin read `the geometric stacking rate near recombination is`.
     #   ** THE PAPER NEVER SAID THAT. **  r3841 swept receipts/ replacing the retired phrase
     #   `radiation-free` with `geometric stacking` -- 114 instances across 37 files -- while the
@@ -122,7 +122,7 @@ def main():
           and '\\emph{the potential\'s grip within four per cent of the control\'s, and slightly weaker '
               'rather than stronger}' in p15)
     check('and the decay size is the paper\'s: "by a factor of order two across the first few peaks"',
-          'by a factor of order two across the first few peaks' in p15)
+          't vanish, and the potential does decay on the observable leg, by a factor of order two across the first few peaks\\rcpt{C11' in p15)
 
     # ⓶ the estimate
     h = 0.87

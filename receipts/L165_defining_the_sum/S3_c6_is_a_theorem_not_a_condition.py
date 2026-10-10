@@ -79,7 +79,7 @@ def main():
     # ⓵ the derivation
     check('⓵ D1 states the commutation: the boundary coefficient is an operator "and since it commutes '
           'with the radial part"',
-          'since it commutes with the radial part' in d1)
+          's an operator $\\\\hat\\\\Gamma = \\\\gamma + c\\\\sum_n\\\\hat\\\\pi_n^2$ (at leading order), and since it commutes with the radial part' in d1)
     check('and the consequence: it "decomposes as a DIRECT INTEGRAL over its spectrum"',
           'decomposes as a DIRECT INTEGRAL over its spectrum' in d1)
     check('and that thermal regularity then supplies the condition "FIBRE BY FIBRE"',
@@ -90,7 +90,7 @@ def main():
           '6 · IT MUST RESPECT THE PER-FIBRE CLOSURE' in s1)
     check('⇒ SO C6 IS MISCLASSIFIED: a direct-integral decomposition forced by a commutation relation is '
           'not something a measure can fail -- it is a property of the operator',
-          'since it commutes with the radial part' in d1
+          's an operator $\\\\hat\\\\Gamma = \\\\gamma + c\\\\sum_n\\\\hat\\\\pi_n^2$ (at leading order), and since it commutes with the radial part' in d1
           and '6 · IT MUST RESPECT THE PER-FIBRE CLOSURE' in s1)
 
     # ⓷ why the separation is structural

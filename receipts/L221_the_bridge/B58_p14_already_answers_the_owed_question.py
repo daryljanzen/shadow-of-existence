@@ -101,7 +101,7 @@ def main():
     check('⛭⛭⛭ ⓵ P14 answers a STRONGER version: "the moduli space of flat connections consists of '
           'flat connections, so a deformation within it changes which flat bundle one has and not '
           'whether there is a field strength"',
-          'consists of flat connections' in p14 and 'not whether there is a field strength' in p14)
+          't the argument.} The moduli space of flat connections consists of flat connections' in p14 and 'not whether there is a field strength' in p14)
     check('and says the dimension is not load-bearing: "But the dimension is a bonus and not the '
           'argument"',
           'the dimension is a bonus and not the argument' in p14)
@@ -109,13 +109,13 @@ def main():
     check('⓶ while the count is there with its reason: the class is "subregular, of dimension four '
           'rather than the regular six", and "the disjointness of the vantages\' supports is exactly '
           'what removes it"',
-          's subregular' in p14 and "disjointness of the vantages" in p14)
+          's subregular' in p14 and "d have left a two-parameter family, and the disjointness of the vantages' supports is e" in p14)
 
     check('⛭⛭ ⓷ and the finiteness has the reason r2806 lacked: "necessarily so, since the holonomy '
           'is branching and a branch structure has finitely many sheets --- and a finite group in '
           'characteristic zero has vanishing first cohomology"',
           's branching and a branch structure has finitely many sheets' in p14
-          and 'vanishing first cohomology' in p14)
+          and 'vanishing first cohomology with any coefficients, so the representation does n' in p14)
 
     # ⓸ the order
     w = np.exp(2j*np.pi/3)

@@ -92,7 +92,7 @@ def main():
     check('⓷ and P10 states the real limit itself: the free tower evolves on $a(T)$ as a "fixed '
           'classical background" and the question is what happens once the scale factor "is itself '
           'quantized and back-reacts"',
-          'fixed classical' in po6.lower().replace('**', '')
+          '0\'s deeper caveat is that the coupled sector where Gamma-hat lives has NO fixed classical' in po6.lower().replace('**', '')
           or 'back-react' in po6.lower())
 
     print()
