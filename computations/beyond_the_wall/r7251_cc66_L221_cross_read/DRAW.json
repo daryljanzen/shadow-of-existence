@@ -1,0 +1,402 @@
+[
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "ALT",
+"path": "receipts/L221_the_bridge/B10_po2_resemblance_is_now_a_construction.py",
+"line": 108,
+"lit": "three zero-sum roots are the $A_{2}$ weights that $S_{3}$ permutes",
+"sha": "04a568a2",
+"stem": "B10_po2_resemblance_is_now_a_construction.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B10_po2_resemblance_is_now_a_construction.py",
+"line": 114,
+"lit": "Flat holonomy supplies exact selection rules and no curvature",
+"sha": "455601d1",
+"stem": "B10_po2_resemblance_is_now_a_construction.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B10_po2_resemblance_is_now_a_construction.py",
+"line": 98,
+"lit": "available because the three wall modes are one operator's kernel and therefore identical particles",
+"sha": "6eda4c9c",
+"stem": "B10_po2_resemblance_is_now_a_construction.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py",
+"line": 96,
+"lit": "1-f$, and the excursion's three critical loci sit at three equally spaced values of $f$",
+"sha": "6311c0c4",
+"stem": "B12_the_two_triples_are_typed_differently.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py",
+"line": 87,
+"lit": "Every root, designated the slicing parameter, returns the \\\\emph{same} $2M=r_0-r_0^3$",
+"sha": "95740dbc",
+"stem": "B14_identical_in_content_is_po2s_reason.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B15_po3_both_clauses_answered.py",
+"line": 102,
+"lit": "The mass function is odd in the signed offset exactly when $D$ is even",
+"sha": "623b4d47",
+"stem": "B15_po3_both_clauses_answered.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py",
+"line": 95,
+"lit": "decades below the strong scale",
+"sha": "ecfc8a0d",
+"stem": "B17_the_paper_already_walls_two_routes.py"
+},
+{
+"target": "SOURCE",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B20_centre_and_weyl_are_opposite_ends.py",
+"line": 83,
+"lit": "reached three independent ways",
+"sha": "0246e4c3",
+"stem": "B20_centre_and_weyl_are_opposite_ends.py"
+},
+{
+"target": "SOURCE",
+"tier": "TOKEN",
+"flags": "",
+"path": "receipts/L221_the_bridge/B21_the_three_levels_audited.py",
+"line": 72,
+"lit": "identification walled",
+"sha": "185fcc8d",
+"stem": "B21_the_three_levels_audited.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "MULTI,SECSHARED",
+"path": "receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py",
+"line": 106,
+"lit": "to the branch point",
+"sha": "44a157a8",
+"stem": "B23_the_corpus_crosses_by_rotation.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py",
+"line": 108,
+"lit": "carried continuously from \\\\emph{zero} at the turnaround",
+"sha": "e0ba7efd",
+"stem": "B23_the_corpus_crosses_by_rotation.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py",
+"line": 97,
+"lit": "is \\\\emph{purely imaginary}",
+"sha": "f1a9ef2a",
+"stem": "B23_the_corpus_crosses_by_rotation.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B25_the_scattering_object_exists.py",
+"line": 143,
+"lit": "W=\\\\lambda\\\\sqrt f/r$ and $V_{\\\\pm}=W^{2}\\\\pm\\\\dd W/\\\\dd x$",
+"sha": "b1bd5897",
+"stem": "B25_the_scattering_object_exists.py"
+},
+{
+"target": "SOURCE",
+"tier": "TOKEN",
+"flags": "ALT",
+"path": "receipts/L221_the_bridge/B31_the_wall_reason_is_too_narrow.py",
+"line": 102,
+"lit": "F=0",
+"sha": "2b6f3cc1",
+"stem": "B31_the_wall_reason_is_too_narrow.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B32_the_two_bounds_compose.py",
+"line": 93,
+"lit": "2}$~\\\\cite{JanzenCRcosmology}) is the size of the universe in gauge-units",
+"sha": "7f8e651b",
+"stem": "B32_the_two_bounds_compose.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py",
+"line": 98,
+"lit": "a domain wall",
+"sha": "28c50748",
+"stem": "B34_the_join_crosses_the_inner_horizon.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B35_the_continuation_is_cited_wrong.py",
+"line": 114,
+"lit": "across the locus the chart labels",
+"sha": "d9d71704",
+"stem": "B35_the_continuation_is_cited_wrong.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B37_po4_and_po5_share_a_root.py",
+"line": 123,
+"lit": "the common root of three verdicts reached separately, that the winding quantises witho",
+"sha": "fe2405ba",
+"stem": "B37_po4_and_po5_share_a_root.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "MULTI",
+"path": "receipts/L221_the_bridge/B38_the_ledger_is_discrete.py",
+"line": 101,
+"lit": "is a discrete horn swap",
+"sha": "dd265b2b",
+"stem": "B38_the_ledger_is_discrete.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py",
+"line": 88,
+"lit": "three throat walls, hence three chiral zero-modes",
+"sha": "fd7a5cf9",
+"stem": "B40_the_isometry_reaches_colour_not_isospin.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py",
+"line": 88,
+"lit": "e its four one-dimensional ones",
+"sha": "d3f23420",
+"stem": "B41_the_isospin_structure_is_finite.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py",
+"line": 91,
+"lit": "the bundle above is flat",
+"sha": "2ab80ca6",
+"stem": "B44_po5s_two_walls_are_one.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py",
+"line": 82,
+"lit": "So the construction cannot force a coupling",
+"sha": "d13e0036",
+"stem": "B44_po5s_two_walls_are_one.py"
+},
+{
+"target": "SOURCE",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py",
+"line": 120,
+"lit": "measurement discrepancy, not a framework verdict",
+"sha": "6d3070f5",
+"stem": "B45_the_object_exists_and_the_action_is_absent.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py",
+"line": 105,
+"lit": "e is flat, so the construction supplies colour's exact selection rules and n",
+"sha": "540f9bea",
+"stem": "B52_the_missing_f2_is_entailed_by_the_delivery.py"
+},
+{
+"target": "SOURCE",
+"tier": "SENTENCE",
+"flags": "OPEN",
+"path": "receipts/L221_the_bridge/B53_gating_l829_and_l830.py",
+"line": 131,
+"lit": "(WHAT IS NOT CLAIMED|REMAINING PIECE IS NAMED|not claimed|flagged)",
+"sha": "2c78cdd0",
+"stem": "B53_gating_l829_and_l830.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B54_the_retraction_supports_the_verdict.py",
+"line": 85,
+"lit": "t supply multiplicity, since $\\\\lambda=j+\\\\tfrac12$ labels partial waves and each contributes e",
+"sha": "2f82dafe",
+"stem": "B54_the_retraction_supports_the_verdict.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B55_right_kind_right_place_numerical_declined.py",
+"line": 95,
+"lit": "a fixed pure number rather than a free parameter",
+"sha": "646e8ed2",
+"stem": "B55_right_kind_right_place_numerical_declined.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py",
+"line": 117,
+"lit": "s branching and a branch structure has finitely many sheets",
+"sha": "478cc17d",
+"stem": "B58_p14_already_answers_the_owed_question.py"
+},
+{
+"target": "PAPER",
+"tier": "TOKEN",
+"flags": "",
+"path": "receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py",
+"line": 112,
+"lit": "s subregular",
+"sha": "85decb1c",
+"stem": "B58_p14_already_answers_the_owed_question.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py",
+"line": 108,
+"lit": "which are the $\\\\sigma_{y}$ eigenvalues of Proposition",
+"sha": "c6878012",
+"stem": "B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py"
+},
+{
+"target": "SOURCE",
+"tier": "TOKEN",
+"flags": "",
+"path": "receipts/L221_the_bridge/B60_one_operator_the_fork_does_not_exist.py",
+"line": 79,
+"lit": "e1=dr/sqrt f",
+"sha": "b1bdd381",
+"stem": "B60_one_operator_the_fork_does_not_exist.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py",
+"line": 138,
+"lit": "the known escapes all abandoning the geometric premise",
+"sha": "2f9e2864",
+"stem": "B61_the_walls_do_not_cover_the_spectral_route.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B63_the_spectral_route_closes_for_r2806s_reason.py",
+"line": 111,
+"lit": "the gauge and mass content external",
+"sha": "16c42118",
+"stem": "B63_the_spectral_route_closes_for_r2806s_reason.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py",
+"line": 151,
+"lit": "t selected~\\\\cite{JanzenMatter}, the leaf-bound modes and the propagating field",
+"sha": "9ade8c32",
+"stem": "B7_two_unbuilt_sectors_not_one.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py",
+"line": 144,
+"lit": "being no isometry of the non-compact substrate to begin with",
+"sha": "fc61f405",
+"stem": "B7_two_unbuilt_sectors_not_one.py"
+},
+{
+"target": "SOURCE",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py",
+"line": 99,
+"lit": "what reduces $\\\\so(6)\\\\to\\\\su(3)$",
+"sha": "861ab8ad",
+"stem": "B8_po4_targets_have_opposite_verdicts.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py",
+"line": 113,
+"lit": "the three wall monodromies and the hinge $3$-cycle generate a finite group of order $81$ in $U(3)$",
+"sha": "cccce7c0",
+"stem": "B8_po4_targets_have_opposite_verdicts.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B9_po3_why_is_answered_dimensionally.py",
+"line": 98,
+"lit": "\\\\emph{fixes} each geometry rather than exchanging it with its conjugate",
+"sha": "03482642",
+"stem": "B9_po3_why_is_answered_dimensionally.py"
+},
+{
+"target": "PAPER",
+"tier": "SENTENCE",
+"flags": "",
+"path": "receipts/L221_the_bridge/B9_po3_why_is_answered_dimensionally.py",
+"line": 103,
+"lit": "no outer factor of",
+"sha": "a7c287e1",
+"stem": "B9_po3_why_is_answered_dimensionally.py"
+}
+]
