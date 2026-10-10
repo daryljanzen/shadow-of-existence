@@ -1,0 +1,24 @@
+# r7253+cc66.171 -- SUMMARY of the re-statement.  Counts only; the readings are in READING.tsv.
+
+the 148, by NEW verdict:        {'MEANING-HELD': 48, 'EXTENDED': 38, 'DELIBERATE': 32, 'REPAIR-OWED': 21, 'ALT-OK': 7, 'ENCODING-OK': 2}
+moved off their old verdict:    {'NO': 77, 'YES': 71}
+by deciding ground:             {'NOT-DELIBERATE': 45, 'SUBJECT+HOLE': 44, 'SUBJECT+REGRESSION': 16, 'GRAIN-HOLD+TARGET': 13, 'FINDING-HOLD': 7, 'GRAIN-HOLD+B25': 7, 'GRAIN-MOVE': 5, 'GRAIN-HOLD': 5, 'SUBJECT+TARGET': 4, 'ENCODING': 2}
+what the pin actually reads:    {'PAPER': 124, 'SOURCE/ACOUSTIC_two_arm.py': 24}
+
+GRAIN-CLAUSE DECISIVE COUNT (r7253's reachable negative, threshold 5):
+  all rows the clause touches:                 30
+  minus GRAIN-HOLD+B25, which r7169/B25 already held without the clause:  -7
+  => the clause DECIDES:                       23   (of which 13 need the target correction)
+
+THE HOLE -- (shortest span) AND (claim is a PROPOSITION), where the clause returns nothing:
+  SUBJECT+HOLE                                 44
+  ⌗ and limb two needs a CONTIGUOUS shorter span: a redundant span MID-SENTENCE falls in here too.
+
+TARGET MISLABEL: rows whose target column says PAPER and whose literal is in NO corpus/*.tex:
+  pinning computations/beyond_the_wall/ACOUSTIC_two_arm.py   24 of 148 = 16.2 per cent
+
+of the 79 pre-settlement DELIBERATE rows reading a corpus PAPER:
+   DELIBERATE held 19 = 24.1%   REPAIR-OWED (owed work) 14 = 17.7%   MEANING-HELD 44 = 55.7%
+
+of the 24 pre-settlement DELIBERATE rows reading the instrument ACOUSTIC_two_arm.py:
+   DELIBERATE held 13 = 54.2%   REPAIR-OWED (owed work) 7 = 29.2%   MEANING-HELD 4 = 16.7%

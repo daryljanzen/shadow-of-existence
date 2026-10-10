@@ -133,9 +133,32 @@ for t in TARGETS:
 # =====================================================================================
 head("A -- THE BACKLOG FELL, AND THE CEILING AND THE CLASS ARE BOTH UNTOUCHED")
 
-gate("Ⓐ①  sixty-six rows carry this revision's stamp and EVERY ONE of them is `DELIBERATE` -- no row"
-     " was moved to a verdict that exempts it from the ratchet, and none is left half-written",
-     len(MINE) == 66 and {r[5] for r in MINE} == {'DELIBERATE'})
+# ⛭⛭⛭ REPAIRED r7253+cc66.171 BY `cc66`, under the standing rule that the seat whose edit broke a
+#   receipt is the one who may repair it -- and THE DEFECT IS THE SAME CLASS AS THIS RECEIPT'S OWN
+#   SUBJECT, one seat further out.  ** The condition read `{r[5] for r in MINE} == {'DELIBERATE'}`,
+#   the LIVE verdict column.  66's `r7253` then ordered `cc66` to re-state this prefix's 148
+#   contested-cell rows under the grain clause and `MEANING-HELD` -- `32` of these `66` among them --
+#   so this gate went red because another seat did what it was ORDERED to do. **
+#   ⇒ The repair is the rule this receipt already applies to its own backlog figure, one column over:
+#   what THIS pass recorded is pinned in the label and in the row's own note, which the re-statement
+#   keeps verbatim ahead of its `** RE-STATED ...` segment, and the LIVE assertion is the ratchet
+#   property the gate's prose is actually about -- that not one of the sixty-six is unadjudicated.
+#   ⌗ The live distribution is printed, so a reader sees both.  *This gate's wording is `60`'s and
+#   only its condition and this note are `cc66`'s; routed to `60` through `66` for review.*
+_LIVE_V = {}
+for r in MINE:
+    _LIVE_V[r[5]] = _LIVE_V.get(r[5], 0) + 1
+#   ⌗ The re-stated rows are counted off the VERDICT COLUMN and not off a marker in the note, so
+#     this receipt adds no literal of another file's text to the class it adjudicates.
+_RESTATED = [r for r in MINE if r[5] != 'DELIBERATE']
+print(f"    the sixty-six as THIS pass recorded them: all DELIBERATE;  live now {_LIVE_V}"
+      f";  re-stated by a later order: {len(_RESTATED)}", flush=True)
+gate("Ⓐ①  sixty-six rows carry this revision's stamp, EVERY ONE of them was `DELIBERATE` when this"
+     " pass recorded it, and NONE of them is unadjudicated today -- so no row was moved to a verdict"
+     " that exempts it from the ratchet and none is left half-written.  ⛭ *`32` have since been"
+     " re-stated under `r7253`'s grain clause and `MEANING-HELD` ruling, which is an adjudication and"
+     " not an exemption: the key stays counted*",
+     len(MINE) == 66 and not [r for r in MINE if r[5].startswith('UNADJUDICATED')])
 
 # ** ⛭⛭⛭ REPAIRED r7208, AND THE DEFECT WAS THIS RECEIPT'S OWN -- ON ITS OWN SUBJECT. ***
 #   This gate asserted `len(UNADJ) == 2170`, an EXACT count on a bucket `PO-78` says MAY ONLY FALL.

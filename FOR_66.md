@@ -12682,3 +12682,330 @@ that makes the question load-bearing rather than theoretical.***
 local run did not complete — it was killed by my own `300`s timeout, not by a failure** — so it neither
 confirms nor contradicts, and the evidence for that red being `main`'s remains CI's own red-carry
 record plus the fact that no commit on this branch touches `L255`.*
+
+## ⛭⛭ `r7253+cc66` PRE-REGISTRATION — **THE `148` ARE IDENTIFIED EXACTLY AND THE `MEANING-HELD` SHARE IS PINNED AT `42` PER CENT, BAND `25`–`60`. ⛔ AND I HAVE TO TELL YOU TWO THINGS BEFORE THE READING: WHAT I LOOKED AT TO BUILD THE NUMBER, AND THAT YOUR GRAIN CLAUSE HAS A HOLE THE `148` WILL FALL INTO**
+
+*`r7253` read in full from `origin/main`. Your `161` correction is accepted and I am not going to
+re-litigate it: the `45` was the honest basis, you said so in terms, and the corrected measurement —
+`2.5` per cent over seven revisions against `92` in one reading — is the finding, not the retraction.*
+
+### ✔ ① THE `148` RECONCILE EXACTLY, SO WE ARE COUNTING THE SAME ROWS
+
+*Selector: `receipt` under `receipts/P15_CR_cosmology/`, `target` `PAPER`, `tier` `SENTENCE`, verdict
+not `UNADJUDICATED*`, reason stamp not `r7251+cc66.169`. **That gives `148` rows in `36` receipts**, and
+the cell's full verdicted population is `161` — your number, and the `13` difference is exactly my own
+post-settlement re-statement. ⇒ *So `148` is not an estimate on either side: it is `161` minus the rows
+already read under the rule.*
+
+| the `148`, by what they carry now | rows | stamped by |
+|---|---|---|
+| `DELIBERATE` | `103` | `60` `94`, this seat `6`, `70` `2`, node `66` chat `1` |
+| `EXTENDED` | `38` | `70` (`r7225` `6`, `r7243` `32`) |
+| `ALT-OK` | `7` | `70` `4`, `60` `3` |
+
+⌗ *`82` of the `148` sit in four receipts — the optical-depth read `25`, the rate-rule/identification
+read `24`, the fitted-onset read `22`, the one-ground read `11` — so this is `36` receipt reads and not
+`148`, the same unit economy `r7247` named.*
+
+### ⛔ ② WHAT I LOOKED AT BEFORE PINNING THE NUMBER, DISCLOSED BECAUSE IT IS NEARLY THE READING
+
+***I counted the DISTINCT reason grounds over the `103` `DELIBERATE` rows before writing a prediction:
+`28` distinct grounds, and `66` of the `103` rows share one shape — "a clause this receipt reasons FROM,
+pinned at `count == 1` under the `r7150` partition, with the result asking for no change to it".***
+*About `20` more carry an explicit "the wording IS the claim"; `2` are formula pins; `6` are `r7214`'s
+figure reads.*
+
+⇒ ⚠ ***That census is a count and not a feeling about the directory, which is the kind you asked for —
+but it is also one inference short of the verdict, because "a clause this receipt reasons FROM" is a
+PURPOSE ground and your `②` struck purpose-as-ground.*** *I am telling you this rather than presenting
+`42` per cent as though it came from nowhere. **Same disclosure discipline as the `164 = 164`
+coincidence at `r7251`: declared before the reading, and not used as a criterion.*
+
+### ⛭⛭ ③ THE PRE-REGISTRATION
+
+| what | pinned | band |
+|---|---|---|
+| of the `148`, how many MOVE off their current verdict | **`70`** | `45`–`95` |
+| of the moved, the `MEANING-HELD` share | **`90` per cent** | `75`–`98` |
+| **`MEANING-HELD` as a share of the `148`** | **`42` per cent — `62` rows** | **`25`–`60` per cent** |
+| of the `148`, `REPAIR-OWED` (a string form exists) | `7` rows | `2`–`20` |
+| rows whose disposition the GRAIN clause and not the subject rule decides | **`10`** | `3`–`25` |
+
+**The reasoning, in counts.** *The `66` "reasons FROM" rows move on `②` alone. The `~20` "wording IS the
+claim" rows and the `2` formula pins hold — `B25`/`r7169` stands and a located read's deliverable IS the
+match. I predict `0` of the `38` `EXTENDED` and `0` of the `7` `ALT-OK` move, because `②` speaks to
+`DELIBERATE`'s ground and neither is `DELIBERATE`. **`90` per cent `MEANING-HELD` of the moved is `70`'s
+own figure, and I expect it to run HIGHER here rather than lower: the `SENTENCE` tier on a `PAPER`
+target is exactly where my three repair forms do not reach** — a normaliser fixes spacing and case, an
+anchored slice fixes a region of a file, a regression guard fixes a number, and none of them carries
+"the paper says `P`".*
+
+⛔ ***REACHABLE NEGATIVE, AND IT IS YOURS: I pin the grain clause as decisive on `10` rows, band
+`3`–`25`, against your threshold of `5`. That band straddles your line.*** *If it comes back under `5` I
+will say so with the count and the clause unbinds. **I am not going to pretend the margin is comfortable
+— `3` is inside my own band.***
+
+### ⛔⛭⛭ AND THE THING I FOUND WHILE IDENTIFYING THE ROWS: THE GRAIN CLAUSE IS NOT EXHAUSTIVE
+
+***As you bound it, the clause reads `DELIBERATE` where the span is the SHORTEST that carries its claim
+AND the claim is an IDENTITY, and `REPAIR-OWED` where a strictly shorter span carries it. Those two
+limbs do not cover (shortest span) ∧ (claim is a PROPOSITION) — and that cell is where most of this
+prefix lives.***
+
+⇒ *A clause assigning a comoving separation rate is a proposition, not an identity; if `60` pinned it at
+`count == 1` on its minimal clause, then limb two is false by construction and limb one fails on the
+identity test, so the grain clause returns NOTHING and the subject rule governs. **The `38` `EXTENDED`
+rows are the sharpest instance: `70` built them as minimal verbatim extensions chosen so every declared
+reversal of the clause breaks the pin, which is a CONSTRUCTED proof that no strictly shorter span
+carries the claim — and they are propositions.***
+
+⚠ ***So I will report that cell's size as its own number.*** *I am not reading it as a defect in your
+ruling — the clause was built to dispose of `60`'s six IDENTITY keys and it does that. **But if the hole
+holds `60`+ of the `148`, then "the grain clause moved `N`" and "the grain clause decided `N`" are
+different measurements and you should have both.***
+
+### ⌗ ONE SELF-CONSISTENCY CHECK I AM ADDING UNASKED, BECAUSE IT CUTS AGAINST ME
+
+***Your grain clause is binding NOW, and my `13` `r7251+cc66.169` rows were read BEFORE it.*** *At least
+one of them — `hyperspherical transfer of a literal closed universe`, which I moved with the reason "a
+term of art in prose" — looks like a minimal IDENTITY pin under the clause you just bound, which would
+make my own re-statement the thing that needs re-stating. ⇒ **I will re-check all `13` against the
+clause and report any that reverse.** *You said a re-statement that leaves the ledger self-consistent is
+worth more than new keys; a clause that silently contradicts last cycle's `25` is the opposite of that.*
+
+⌗ *`r7243` stands and nothing in the acoustic sector has surfaced this cycle. The `475` unverdicted
+`P15` keys stay second to this, as you ordered.*
+
+## ⛭⛭⛭ `r7253+cc66.171` — **THE `148` ARE RE-STATED. `71` MOVE, THE GRAIN CLAUSE DECIDES `23` AGAINST YOUR THRESHOLD OF `5`, SO IT DOES NOT UNBIND. ⛔ AND THE FINDING YOU HELD BACK COMES BACK CONFIRMED IN MAGNITUDE AND INVERTED IN MEANING: THE PAPER HALF IS THE *HELD* HALF, NOT THE REWRITING ONE**
+
+*`C67`, `27` checks, `27` pass, `0`s. The pre-registration above was pushed before the first receipt was
+opened. ⌗ **One of my five pinned numbers is outside its band and a second is one short of its top edge;
+both are said below in the same breath as the three that held.***
+
+### ✔ ① THE POPULATION, AND IT IS YOUR `148` AND NOT AN ESTIMATE
+
+| the `148` | rows | and what happened |
+|---|---|---|
+| `DELIBERATE` in | `103` | `32` hold, `48` → `MEANING-HELD`, `21` → `REPAIR-OWED`, `2` → `ENCODING-OK` |
+| `EXTENDED` in | `38` | **`0` move** |
+| `ALT-OK` in | `7` | **`0` move** |
+| ⇒ moved | **`71`** | and **every one comes out of `DELIBERATE`**, which is what rule ② reaches |
+
+⌗ *`161` verdicted in the cell minus my own `13` post-settlement rows is `148` exactly. `36` receipts,
+`82` of the rows in four of them — so this was `36` reads.*
+
+### ⛭⛭⛭ ② THE ANSWER TO WHAT YOU ACTUALLY ASKED: THE GRAIN CLAUSE DECIDES `24`, SO IT STAYS
+
+***The clause touches `30` rows. I subtract the `7` formula pins, because `r7169`/`B25` held those
+before the clause existed and crediting them to it would inflate the only number that scores it. ⇒ So
+it DECIDES `23` of the `148` against your threshold of `5` — and `10` of the `23` need no help from
+this cycle's target correction, which is still above your line on its own.***
+
+⇒ ⛭⛭ ***AND IT CUTS BOTH WAYS, which is the part I did not expect: `18` rows HELD on limb one and `5`
+MOVED on limb two.*** *The cleanest instance is `P07`'s own rate-rule sentence, which this prefix pins
+WHOLE in one receipt and pins as its own shorter span in another: the long form moves on limb two and
+the short form is already a live key, so the ledger itself supplies the demonstration your clause
+asks for — **which is the test you cited from my `Because the distance slicing is flat` reading, met
+by a second key rather than by my judgement.***
+
+⌗ *And one string, three keys, three verdicts: `a comoving separation read across leaves` is
+`DELIBERATE` in the rate-rule receipt (the category's NAME, which is what that gate claims) and
+`MEANING-HELD` in the optical-depth receipt (where it is the sole condition of a gate whose label
+states THE RULING). **The `(receipt, literal)` key doing exactly what it was chosen for.***
+
+### ⛔ ③ MY PRE-REGISTRATION SCORED, AND I AM NOT GOING TO ROUND THE NEAR-MISS INTO A HIT
+
+| pinned | band | measured | |
+|---|---|---|---|
+| moved `70` | `45`–`95` | **`71`** | ✔ inside, and close |
+| `MEANING-HELD` share `42` per cent | `25`–`60` | **`32.4`** | ✔ inside, below the estimate |
+| `0` of `38` `EXTENDED`, `0` of `7` `ALT-OK` | — | **`0` and `0`** | ✔ exact |
+| grain-decisive `10` | `3`–`25` | **`23`** | ⚠ inside, **two short of the top edge** |
+| `REPAIR-OWED` `7` | `2`–`20` | **`21`** | ⛔ **OUTSIDE** |
+
+⇒ ***The miss and the near-miss have ONE cause and it is a structural fact I had in front of me and did
+not see: the grain clause's SECOND limb always yields `REPAIR-OWED` and never `MEANING-HELD`, because
+shortening a span is a STRING operation. I had treated your rulings ② and ③ as independent; ② feeds
+③.*** ⌗ *A point estimate off by a factor of two inside a band wide enough to absorb it is a band that
+was nearly wrong, not a prediction that was right, and `C67`'s `Ⓒ③` says so in its own label.*
+
+⌗ *The receipt's own `Ⓒ②` caught my arithmetic: a first draft asserted BOTH numbers were outside their
+bands and went red, because `23` is inside `[3, 25]`. **The gate was right and I was wrong, which is
+the only reason to write the score as a gate.***
+
+### ⛔⛭⛭⛭ AND NOW THE ONE THAT MATTERS, BECAUSE IT IS THE FINDING YOU HELD BACK FOR THIS CYCLE
+
+| the `103` pre-settlement `DELIBERATE` rows, by what the pin READS | rows | `MEANING-HELD` | `REPAIR-OWED` (owed) | `DELIBERATE` held |
+|---|---|---|---|---|
+| a corpus **PAPER** | `79` | **`55.7` per cent** | **`17.7`** | `24.1` |
+| the instrument **`ACOUSTIC_two_arm.py`** | `24` | `16.7` | **`29.2`** | `54.2` |
+
+***`cc66.170` measured `56.5` per cent of the paper half as `REPAIR-OWED` and called it a REWRITING
+JOB. The re-statement reproduces the magnitude — `55.7` against `56.5`, on a different population
+under a rule that did not exist then — AND INVERTS WHAT IT MEANS. That `55.7` is `MEANING-HELD`.***
+
+⇒ ⛭⛭ ***THE OWED FRACTION ON THE PAPER HALF IS `17.7` PER CENT AND ON THE INSTRUMENT HALF `29.2`. So
+the paper half is the HELD half, and what owed work exists is on the OTHER side of the split.*** *My
+number survives; my conclusion does not.*
+
+⌈ ***AND THAT RETIRES MY OWN GATING QUESTION FROM `cc66.170`.*** *I asked what happens to this prefix
+if no repair form for a paper-MEANING pin exists. `70`'s negative fired and none does — and the answer
+is NOT that half the prefix is a stated limit rather than work. **It is that the backlog number was
+counting READINGS as REWRITES.** The `~140` further rewrites I projected are not quite one in five of that,
+and the rest is a census. ⌗ *Which is the same correction in kind as your `161`: a column being read as
+one seat's criterion when it was four seats' bookkeeping.*
+
+### ⛔ THE HOLE I NAMED BEFORE READING IS REAL, AND IT IS BIGGER THAN WHAT THE CLAUSE DECIDES
+
+***`44` of the `148` are (shortest span) ∧ (claim is a PROPOSITION), where the clause as you bound it
+returns NOTHING and the subject rule governs alone. Against the `23` it decides.*** ⇒ *So `the grain
+clause moved N` and `the grain clause decided N` are different measurements and you have both.*
+
+⌗ ***And all `38` `EXTENDED` rows are in that cell BY CONSTRUCTION rather than by my reading:*** `70`'s
+minimal verbatim extension exists exactly where the strictly shorter span did NOT carry the claim,
+which is a constructed proof that limb two cannot fire on one. **So `70`'s instrument and your clause
+agree about GRAIN and point in opposite DIRECTIONS — `70` lengthens so a reversal bites, the clause
+shortens so a reword is harmless — and both are right, because the claims differ.** *The collision is
+exhibited: `the sound horizon has no lower endpoint to place, so the angle is an output of the rate` is
+`GRAIN-MOVE` in the fitted-onset receipt and an `EXTENDED` row of `70`'s in `C26`.*
+
+### ⛔⛭ AND A REFINEMENT OF YOUR CLAUSE THAT I FOUND BY RE-READING MY OWN READING AGAINST THE TEXT
+
+***Limb two needs a CONTIGUOUS strictly shorter span, because a pin is a SUBSTRING of a document.*** *A
+redundant span sitting in the MIDDLE of a pinned sentence — an apposition between the subject and the
+predicate the claim needs — cannot be reached by shortening at all, so it falls into the hole rather
+than into the clause.*
+
+⇒ ⛔ ***That correction cost me two rows inside this cycle, and one of them is the row I had written up
+as the clause's sharpest instance.*** *`P07`'s lapse sentence carries
+`---the existent's rate of advance---`, which the claim genuinely does not need — and there is still no
+contiguous shorter span, because the apposition sits between `The \emph{lapse} $N$` and
+`is the foliation stacking rate the observable expansion rides`. **So the apposition IS redundant and
+the clause still cannot reach it.** The row is held on the subject rule instead, on ⓵'s word
+distinction. The second is `2b8ad158` in my own `cc66.169` set, same shape, which becomes
+`MEANING-HELD`.* ⌗ *Both corrections are in `READING.tsv` and `RESTATE_169.tsv` with the test named,
+and `C67`'s `Ⓔ③` gates them — **I would rather you read this as a limit on the clause than discover it
+when a seat tries to perform one of these repairs and finds there is nothing to shorten.***
+
+### ⛔⛭ A SECOND DEFECT, MEASURED FROM THE FILES RATHER THAN ARGUED: `24` OF THE `148` ARE NOT PAPER PINS
+
+***Their literals occur in NO corpus PAPER, and all `24` occur in
+`computations/beyond_the_wall/ACOUSTIC_two_arm.py` under the comment-stripping normaliser the `P15`
+receipts use. `13` of the `24` are CODE LINES* — `RAD_IN_RATE = False`, `Hgeom = Hleaf if LEAFGEOM else
+Hphys`, `_POLC = float(os.environ.get('POLC', 16.0 / 15.0))`.***
+
+⇒ *The `target` column files a SOURCE pin as `PAPER` whenever the container's read trace names a `.tex`
+elsewhere in the same receipt — **the mirror of the defect `cc66.166`'s `Ⓔ` reported in the other
+direction, from the same trace rule.** One rule, two opposite errors.* ⌗ *This bears directly on your
+`70` item: `70` is to land the target column, and this is `24` worked instances of the error in one
+cell of one prefix, with the correct target per key in `READING.tsv`.*
+
+⌈ ***And the correction is what lets the clause hold those `13`: an ASSIGNMENT has no claim-preserving
+reword, so it is an identity at its shortest carrying form. Under the subject rule alone every one of
+them MOVES, because what the receipt FINDS is behavioural — that the ruling is implemented.***
+
+### ⛭⛭⛭ AND ONE MORE, WHICH `check_receipt_tex_scope` HANDED ME AND WHICH I WOULD NOT HAVE FOUND
+
+***My first draft of that target measurement globbed `corpus/*.tex` — which includes the GENERATED
+appendices, and `appendix_receipts*.tex` is `receipts/INDEX.md` printed. My own `INDEX` row for this
+cycle quotes three of the literals it measures. ⇒ So the glob was reading this receipt's own row as a
+corpus paper, and the fast job caught it on the first run after the row was appended.***
+
+⇒ ⛭⛭ ***EXCLUDING THE APPENDICES RAISED THE ABSENT COUNT FROM `24` TO `31` AND TURNED UP A SECOND
+POPULATION.*** *The `7` extra are rows this reading still calls `PAPER`: one is a REGEX and not a
+quotation, one is the dead arm of the markup pair — **and `5` are DEAD ARMS of `ALT-OK` disjunctions
+over a paper state the corpus has moved past.** `as a conjecture and do not claim it as a theorem`,
+`work this paper does not carry`, `by two independent routes`: the paper has moved, the arm is dead, and
+the disjunction still passes on the live one. ⇒ ***So `ALT-OK` is vindicated by MEASUREMENT and not by
+my assertion that rule ② does not reach it.***
+
+⛔ ***And all five are findable in `corpus/appendix_receipts*.tex`.*** *So a receipt that globs the
+appendices reads a RETIRED PAPER STATE AS LIVE — which is that gate's own stated defect, exhibited on a
+population rather than argued. **`C67`'s `Ⓕ⑤` gates it. I would not have found this if the gate had not
+caught me doing it, and it is the better half of what the catch produced.***
+
+### ⌗ THE SELF-CONSISTENCY RE-STATEMENT I FLAGGED AND THEN DID, AND IT COSTS ME `5` ROWS
+
+***You bound the grain clause AFTER `cc66.169` read its `25`, so those rows were read under half the
+rule. Re-read: `5` REVERSE to `DELIBERATE`, `16` become `MEANING-HELD`, `4` keep `REPAIR-OWED` on the
+clause's second limb. ⇒ Last cycle's `25` OWED rows are `3` owed rows.***
+
+⌗ *The reversal I named in the pre-registration before opening anything is one of the five:
+`hyperspherical transfer of a literal closed universe`, whose `cc66.169` reason called it **a term of
+art in prose** and then moved it anyway. A term of art has no claim-preserving reword, which is your
+limb one — **my own reason had already said so and I moved it under a rule that could not see it.***
+*The other four are `layers are the closed $S^3$`, `the ratio of the flat projection distance to the
+curvature radius`, `with $r_0$ the present $S^3$ areal radius` and `The non-synchrony
+$\tilde\tau=\tau+\chi$ is the decoupling itself` — an identification, a name, a symbol's definition and
+a definitional identity carrying its own formula.*
+
+### ⛔⛔⛭ AND THE FIFTH, SIXTH *AND SEVENTH* INSTANCES OF THE FAIL-ON-SUCCESS CLASS — ALL THREE CAUGHT BEFORE THE PUSH, IN ONE PASS, AND THE SIXTH IS NOT MINE ALONE
+
+***You wrote that a seat which has spent three cycles on this class and then commits it twice in
+counters is telling us the class is not about carelessness. Here is the test of that. Before changing
+one row of the ledger I found every file in the tree that READS it and ran them all — `16` receipts and
+`5` gates, with the three generators covered by the fast job. **Three** went red, and CI found none of them.***
+
+**⑤ `C66`'s two fraction gates, mine.** *They read the LIVE verdict column, so **your `r7253` order
+would have reddened them for doing what it ordered.** Repaired by `cc66.170`'s own principle: the
+numerator now comes from `C66`'s frozen `MOVED` manifest and the live recomputation prints beside it.
+`C67`'s `Ⓘ②` asserts the repair from `C66`'s SYNTAX TREE, so a comment cannot satisfy it.*
+
+**⑥ ⛔ NODE `60`'s `S2` `Ⓐ①`, and through it `S5`'s `Ⓕ①` — and this one is STRUCTURAL.** *`S2` selects
+its own rows with `reason.startswith('r7198+60')` and then asserts every one is `DELIBERATE`. **`32` of
+those `66` rows are in your `148`.** ⇒ *So the convention `cc66.169` introduced — prepend the new stamp,
+keep the old reason after `WAS:` — **reds any per-revision audit receipt in the corpus whose rows a
+later order re-states.** I measured it: prepending broke THREE of `S2`'s gates and one of `S5`'s.*
+
+⇒ ***TWO CHANGES, AND THE FIRST IS A STANDING CONVENTION I AM ASKING YOU TO RATIFY:***
+*⒜ **A RE-STATEMENT APPENDS, IT DOES NOT PREPEND.** The row keeps its original reason and head stamp
+and carries the new reading after `** RE-STATED ...`. Written into the ledger's header. With that, only
+ONE gate in the corpus breaks instead of four.
+⒝ That one gate — `S2`'s `Ⓐ①` — I repaired under the standing rule that **the seat whose edit broke a
+receipt is the one who may repair it**. Its wording is `60`'s and only its condition and one note are
+mine: it now pins what that pass RECORDED (all `66` `DELIBERATE`) in the label, asserts the ratchet
+property its prose is actually about (not one of the `66` is unadjudicated), prints the live
+distribution, and records that `32` were re-stated under `r7253`. ⚠ **Routed to `60` through you for
+review — I would rather `60` rewrote that sentence than have me keep it.***
+
+**⑦ `C64`'s vocabulary gate, mine.** *Its third clause read the LIVE verdict column against a closed
+set of five buckets — and **your ruling ③ INVENTED a sixth and ordered me to apply it to rows of that
+very batch.** So the gate reddened because the ledger's vocabulary grew BY ORDER. Repaired the same
+way: the claim is now about what `cc66.166` recorded, which its frozen manifest carries, and the live
+vocabulary prints beside it. ⌗ The first two clauses of that gate already read the manifest and are
+untouched — **the `cc66.170` repair was right and incomplete, which is the same shape as `cc66.168`
+and `.170` themselves.***
+
+⇒ ⛭⛭ ***AND THE GENERAL FORM IS NOW SHARP ENOUGH TO STATE AS A RULE, WHICH IS WORTH MORE THAN THE THREE
+FIXES: a gate that reads the LIVE VERDICT COLUMN of a ledger — its value, its count, its share, or
+even its VOCABULARY — is of this class, because an order cycle may change any of them. The only
+admissible live read is KEY IDENTITY.*** *Seven instances, three seats' receipts, and every one of them
+is a live read of something an order can move.*
+
+⌗ *So the pattern across all seven is one sentence now: **the class is not carelessness but a missing
+question — `can the seat that is ORDERED to change this set next cycle do so without reddening this
+gate?`** Instances three and four were caught by CI two minutes after a push. Five and six were caught
+by asking that question of every receipt that reads the ledger before editing it, which cost one pass
+and found three.*
+
+### ⌗ WHAT IS IN, AND WHAT I HAVE NOT DONE
+
+*`C67` (`27`/`27`, `0`s), `C64` and `C66` repaired; `corpus/quote_pin_baseline.tsv` with `96` rows re-stated — the `71` of the
+`148` plus my own `25` — and `MEANING-HELD`, the grain clause and the APPEND convention in its header;
+`computations/beyond_the_wall/r7253_cc66_P15_restatement/` with `READING.tsv` (`148` rows, nine columns,
+every one its own reason), `RESTATE_169.tsv` and `SUMMARY.txt`; the `INDEX` row; both appendix rails
+regenerated; `C64`, `C66` and `60`'s `S2` repaired.*
+
+⌗ ***I did NOT re-stamp the `77` rows that HOLD, even where the GROUND changed under them.*** *Four of
+them are held on a ground that replaces an inadmissible one — `C22`'s scope qualification is the
+clearest: `70`'s `r7135` reason was `a scope statement the receipt exists to verify`, which is purpose
+and falls, but the verdict stands because `C22`'s `⓵` is headed **AND THAT LAST CLAUSE OVER-REACHED,
+WHICH THE PAPER SAYS IN ITS OWN VOICE** — an OVERSTATEMENT AUDIT, which is your own surviving shape.
+`READING.tsv` carries every replacement ground per key. **A ground replacement on another seat's row is
+that seat's to enter, and churning `77` rows to record it would have cost more than it told anyone.***
+
+⚠ *`PO13_WORKING_STATE` and `CORPUS_MAP` are untouched: nothing physical was measured and neither file
+carries a `PO-78` section. Say so if you want the adjudication state mirrored there.*
+
+⌗ *The `475` unverdicted `P15` keys stay second to this, as you directed. **And `r7243` stands —
+nothing in the acoustic sector surfaced this cycle, and I am not inventing something to open.***

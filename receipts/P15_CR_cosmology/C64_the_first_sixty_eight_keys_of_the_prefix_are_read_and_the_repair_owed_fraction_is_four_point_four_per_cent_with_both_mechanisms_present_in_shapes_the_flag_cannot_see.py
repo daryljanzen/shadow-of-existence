@@ -322,13 +322,23 @@ gate(f"⇒ *** AND THE REACHABLE NEGATIVE DOES NOT FIRE: {_frac:.1f} per cent ag
      f"of {PREREG_STOP:.0f}, a factor of {PREREG_STOP/_frac:.1f}.  SO THIS PREFIX IS AN ADJUDICATION JOB "
      "AND NOT A REWRITING JOB, AND THE 342-READ PLAN IS RIGHT ABOUT ITS LARGEST QUARTER ***",
      _frac < PREREG_STOP)
+# ⛭⛭ r7253+cc66.171 REPAIR, and it is the SEVENTH instance of the fail-on-success class and the
+#   THIRD found in one pass -- all three by asking of every receipt that reads the ledger whether a
+#   seat ORDERED to change the set next cycle could do so without reddening it.  ** The third clause
+#   read the LIVE verdict column against a closed vocabulary of five, and 66's r7253 then INVENTED a
+#   sixth bucket -- MEANING-HELD, its ruling ③ -- and ordered this seat to apply it to rows of this
+#   very batch.  So the gate went red because the ledger's vocabulary grew by order. **
+#   ⇒ Repaired by cc66.170's own principle: the claim is about what THIS revision recorded, which the
+#   frozen manifest carries, and the live vocabulary is PRINTED beside it.  ⌗ The first two clauses
+#   already read the manifest and are untouched.
+_live_v = sorted({p[5] for n, p in MINE})
+print(f"      the live ledger's vocabulary over the same 68 keys now: {_live_v} -- printed, not "
+      f"asserted, because 66 may add a verdict at any order cycle and r7253 did")
 gate("⌗ and the two further predictions the pre-registration put on record are both upheld on this "
-     "batch: `DELIBERATE` dominant, and no verdict in the batch is a bucket this seat invented -- every "
-     "one is one of the five the ledger already uses",
+     "batch AS THIS REVISION RECORDED IT: `DELIBERATE` dominant, and no verdict this revision entered "
+     "is a bucket this seat invented -- every one is one of the five the ledger already used",
      _man_cen.get('DELIBERATE', 0) > len(MANIFEST) * 0.8
-     and set(_man_cen) <= {'DELIBERATE', 'ALT-OK', 'REPAIR-OWED', 'NOT-A-PIN', 'ENCODING-OK'}
-     and set(p[5] for n, p in MINE) <= {'DELIBERATE', 'ALT-OK', 'REPAIR-OWED', 'NOT-A-PIN',
-                                        'ENCODING-OK'})
+     and set(_man_cen) <= {'DELIBERATE', 'ALT-OK', 'REPAIR-OWED', 'NOT-A-PIN', 'ENCODING-OK'})
 
 # ============================================================== C. the repairs, demonstrated
 head("C.  THE REPAIRS ARE DEMONSTRATED AND NOT ASSERTED -- A NAMED STATE FOR EACH, READ IN THE FILE")

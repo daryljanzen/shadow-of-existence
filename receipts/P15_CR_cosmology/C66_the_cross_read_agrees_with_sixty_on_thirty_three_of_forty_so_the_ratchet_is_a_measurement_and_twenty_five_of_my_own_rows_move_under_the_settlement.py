@@ -260,9 +260,21 @@ gate("⛔⛭ THE SETTLEMENT IS APPLIED AND NOT MERELY REPORTED: 25 rows move fro
      "verdict, kept verbatim after `WAS:` so the two can be compared row by row",
      {sha8(json.loads(p[1])) for p in _moved} == {h for h, _, _ in MOVED}
      and all('WAS: r7247+cc66.16' in p[6] for p in _moved))
-_frac0, _frac1 = 100.0 * 3 / len(_mine_all), 100.0 * len(_ro) / len(_mine_all)
-print(f"      my prefix's REPAIR-OWED: 3/{len(_mine_all)} = {_frac0:.1f} per cent  ->  "
-      f"{len(_ro)}/{len(_mine_all)} = {_frac1:.1f} per cent")
+# ⛭⛭ r7253+cc66.171 REPAIR, AND IT IS THE FIFTH INSTANCE OF THE FAIL-ON-SUCCESS CLASS -- caught
+#   BEFORE the push this time, by re-reading every receipt that reads the ledger before changing it.
+#   ** The fraction below was computed from the LIVE verdict column, so r7253's re-statement of these
+#   same 25 rows -- which 66 ordered -- would have turned this gate red for doing what it was ordered
+#   to do. **  ⇒ Repaired by cc66.170's own principle: the subject is what THIS revision recorded, so
+#   the numerator comes from the frozen MOVED manifest and the live recomputation is printed beside it.
+RO_STANDING = 3                       # REPAIR-OWED on this seat's keys BEFORE r7251's settlement
+_ro_at_commit = RO_STANDING + len(MOVED)
+_frac0 = 100.0 * RO_STANDING / len(_mine_all)
+_frac1 = 100.0 * _ro_at_commit / len(_mine_all)
+print(f"      my prefix's REPAIR-OWED: {RO_STANDING}/{len(_mine_all)} = {_frac0:.1f} per cent  ->  "
+      f"{_ro_at_commit}/{len(_mine_all)} = {_frac1:.1f} per cent   [as THIS revision recorded it]")
+print(f"      live now, recomputed from the ledger's current column: {len(_ro)}/{len(_mine_all)} = "
+      f"{100.0 * len(_ro) / len(_mine_all):.1f} per cent -- r7253's MEANING-HELD moves most of the "
+      f"25 out of the owed class, which is a later cycle's result and not this one's")
 gate(f"⇒ MY OWN FRACTION GOES FROM {_frac0:.1f} TO {_frac1:.1f} PER CENT, above the top edge of the "
      "4-18 band I pinned before the first read. ** I under-predicted, and the reason is exactly the "
      "ground r7251 struck out: `prose whose claim IS the paper's voicing` is a purpose ground **",
@@ -307,12 +319,23 @@ head("E+.  ⛔⛭⛭⛭ AND THE SETTLEMENT SPLITS THIS PREFIX IN TWO, WHICH ANSW
 _paper = [p for p in _mine_all
           if any(k in p[0] for k in STEMS) and sha8(json.loads(p[1])) not in NOT_PAPER]
 _rest = [p for p in _mine_all if p not in _paper]
-_rop = sum(1 for p in _paper if p[5] == 'REPAIR-OWED')
-_ror = sum(1 for p in _rest if p[5] == 'REPAIR-OWED')
+# ⛭⛭ r7253+cc66.171 REPAIR, same class and same remedy as in D: this split was read off the LIVE
+#   column, so the re-statement 66 ordered at r7253 would have reddened it.  The subject is the split
+#   THIS revision measured, so the two numerators come from the frozen manifest -- one standing
+#   REPAIR-OWED row on the paper side, two on the other, plus the 25 this revision moved -- and the
+#   live recomputation is printed beside it.  ⌗ r7253+cc66.171 measures the same quantity properly on
+#   the 148 and finds the magnitude confirmed and its MEANING inverted: the paper half is HELD.
+RO_PAPER_STANDING, RO_REST_STANDING = 1, 2
+_rop = RO_PAPER_STANDING + len([m for m in MOVED if m[0] not in NOT_PAPER])
+_ror = RO_REST_STANDING
 _fp = 100.0 * _rop / len(_paper)
 _fr = 100.0 * _ror / len(_rest)
-print(f"      PAPER pins       {len(_paper):4d}   REPAIR-OWED {_rop}/{len(_paper)} = {_fp:.1f} per cent")
-print(f"      everything else  {len(_rest):4d}   REPAIR-OWED {_ror}/{len(_rest)} = {_fr:.1f} per cent")
+_rop_live = sum(1 for p in _paper if p[5] == 'REPAIR-OWED')
+_ror_live = sum(1 for p in _rest if p[5] == 'REPAIR-OWED')
+print(f"      PAPER pins       {len(_paper):4d}   REPAIR-OWED {_rop}/{len(_paper)} = {_fp:.1f} per cent"
+      f"   [live now {_rop_live}]")
+print(f"      everything else  {len(_rest):4d}   REPAIR-OWED {_ror}/{len(_rest)} = {_fr:.1f} per cent"
+      f"   [live now {_ror_live}]")
 print(f"      ratio {_fp / max(_fr, 1e-9):.0f}x;  cumulative {_rop + _ror}/{len(_mine_all)} = "
       f"{100.0 * (_rop + _ror) / len(_mine_all):.1f} per cent")
 gate("⛔⛭⛭⛭ *** THE PREFIX IS NOT ONE JOB BUT TWO, AND THE SPLIT IS BY WHAT THE PIN READS: a pin on a "
