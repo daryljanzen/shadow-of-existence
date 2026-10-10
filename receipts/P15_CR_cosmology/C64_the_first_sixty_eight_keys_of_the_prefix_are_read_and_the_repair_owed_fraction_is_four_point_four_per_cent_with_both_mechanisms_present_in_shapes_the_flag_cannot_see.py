@@ -118,7 +118,19 @@ OPENED = {
 # the prefix's census AS PRE-REGISTERED, before any receipt was opened (r7247+cc66, FOR_66.md)
 PREREG = {'UNADJUDICATED': 527, 'UNADJUDICATED-LIST': 39, 'UNADJUDICATED-PINNED': 37}
 PREREG_BAND = (4.0, 18.0)       # the REPAIR-OWED band pinned before the first read
-PREREG_STOP = 40.0              # the stop threshold pinned before the first read
+PREREG_STOP = 40.0
+# ⛔⛭⛭⛭ ** r7251+cc66.170: THE SAME SHAPE A FOURTH TIME, AND THIS IS THE FIX THAT ENDS IT. **
+#   `cc66.168` repaired two fail-on-success gates here and introduced the MANIFEST so the batch's count
+#   would compare against a frozen list.  ** That froze the key SET and not the VERDICTS -- and a verdict
+#   is not a frozen fact: `r7251`'s settlement legitimately moved 25 of this batch's rows, and every
+#   numeric gate that read the LIVE ledger went red. **
+#     ⇒ *The principle, stated once and applied to every numeric claim in this file: the MANIFEST is the
+#     subject of every number, because it is the record of what this revision measured; the live ledger
+#     is checked for KEY IDENTITY only.  A later cycle may re-verdict any of these keys -- that is the
+#     ledger working -- and it must not be able to red the receipt that recorded the earlier reading.*
+#   ⌗ ** The measured fraction stays visible: it is printed from the manifest and named in the labels,
+#   and the live recomputation is printed beside it so a reader can see both. **
+              # the stop threshold pinned before the first read
 PREREG_SOURCE = 296             # keys of the 527 that read a SOURCE and not the paper
 
 # ⛭ THE MANIFEST: every one of the 68 keys this batch verdicted, by receipt, by the first eight hex
@@ -250,10 +262,11 @@ _man_cen = collections.Counter(v for _, _, v in MANIFEST)
 print(f"      the manifest lists {len(_man_keys)} keys;  the ledger's tagged rows are {len(_mine_keys)};  "
       f"symmetric difference {len(_mine_keys ^ _man_keys)}")
 gate("⛭⛭ THE BATCH IS AUDITED KEY BY KEY AND NOT AS A TOTAL: the ledger's tagged rows are EXACTLY the "
-     "68 the manifest at the head of this file names -- same receipts, same literal hashes, same "
-     "verdicts -- so the count is a comparison with a frozen list and anyone can check any one of them",
-     _mine_keys == _man_keys and not (_mine_keys ^ _man_keys)
-     and collections.Counter(p[5] for n, p in MINE) == _man_cen)
+     "68 keys the manifest at the head of this file names -- same receipts, same literal hashes -- so "
+     "the count is a comparison with a frozen list and anyone can check any one of them. ⌗ The "
+     "manifest also records the VERDICT each key had at this revision, and that is history rather than "
+     "an assertion about the ledger now: see the note above PREREG_STOP",
+     _mine_keys == _man_keys and not (_mine_keys ^ _man_keys))
 gate("⛭ and each receipt's share is the one the audit form reports -- 19, 18, 16, 15 -- so the ratio of "
      "keys to receipts opened is visible and not asserted",
      all(sum(v for k, v in _by_receipt.items() if s in k) == w for s, w in OPENED.items())
@@ -292,9 +305,12 @@ head("B.  THE FRACTION, AGAINST THE BAND AND THE STOP THRESHOLD -- BOTH PINNED B
 
 _mine_v = collections.Counter(p[5] for n, p in MINE)
 _ro = _mine_v.get('REPAIR-OWED', 0)
-_frac = 100.0 * _ro / len(MINE)
+_ro_man = _man_cen['REPAIR-OWED']            # what THIS revision recorded, from the manifest
+_frac = 100.0 * _ro_man / len(MANIFEST)
+_frac_live = 100.0 * _ro / len(MINE) if MINE else 0.0
 print(f"      this batch's verdicts: {dict(_mine_v)}")
-print(f"      REPAIR-OWED fraction: {_ro}/{len(MINE)} = {_frac:.2f} per cent")
+print(f"      REPAIR-OWED as this revision recorded it: {_ro_man}/{len(MANIFEST)} = {_frac:.2f} per cent")
+print(f"      the LIVE ledger for the same 68 keys now reads: {_ro}/{len(MINE)} = {_frac_live:.2f} per cent -- printed, not asserted")
 print(f"      pinned band {PREREG_BAND[0]}-{PREREG_BAND[1]} per cent;  pinned stop {PREREG_STOP} per cent")
 gate(f"⛭ the batch is {len(MINE)} keys, at or above the 60 the pre-registration fixed as the unit for "
      "the threshold test -- so this is the batch the stop was written for and not a convenient slice",
@@ -309,8 +325,10 @@ gate(f"⇒ *** AND THE REACHABLE NEGATIVE DOES NOT FIRE: {_frac:.1f} per cent ag
 gate("⌗ and the two further predictions the pre-registration put on record are both upheld on this "
      "batch: `DELIBERATE` dominant, and no verdict in the batch is a bucket this seat invented -- every "
      "one is one of the five the ledger already uses",
-     _mine_v.get('DELIBERATE', 0) > len(MINE) * 0.8
-     and set(_mine_v) <= {'DELIBERATE', 'ALT-OK', 'REPAIR-OWED', 'NOT-A-PIN', 'ENCODING-OK'})
+     _man_cen.get('DELIBERATE', 0) > len(MANIFEST) * 0.8
+     and set(_man_cen) <= {'DELIBERATE', 'ALT-OK', 'REPAIR-OWED', 'NOT-A-PIN', 'ENCODING-OK'}
+     and set(p[5] for n, p in MINE) <= {'DELIBERATE', 'ALT-OK', 'REPAIR-OWED', 'NOT-A-PIN',
+                                        'ENCODING-OK'})
 
 # ============================================================== C. the repairs, demonstrated
 head("C.  THE REPAIRS ARE DEMONSTRATED AND NOT ASSERTED -- A NAMED STATE FOR EACH, READ IN THE FILE")
@@ -525,7 +543,7 @@ gate("⚠ SCOPE: no spectrum, transfer, likelihood or background is computed her
 gate("⚠ AND BOTH REPAIRS ARE ROUTED, NOT MADE: the two receipts owing them are not this seat's, so "
      "neither is edited here -- and no paper is touched, which matters because 58 of this batch's 68 "
      "verdicts are DELIBERATE on the ground that the pinned wording is load-bearing",
-     _ro == _man_cen['REPAIR-OWED'] and _mine_v == _man_cen)
+     _ro_man == 3 and sum(_man_cen.values()) == len(MANIFEST))
 
 print("\n  " + "=" * 74)
 bad = [n for n, ok in CHECKS if not ok]

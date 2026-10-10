@@ -301,6 +301,33 @@ gate("⇒ AND THE CAUSE IS THE DEFECT THIS SEAT REPORTED AT `cc66.166`: the colu
      "reproducible and I measured it independently; the discrepancy is on my side of the table **",
      len(_misfiled) > 0 and len(_paper) > _colps)
 
+# ============================================================== Ez. the split the settlement exposes
+head("E+.  ⛔⛭⛭⛭ AND THE SETTLEMENT SPLITS THIS PREFIX IN TWO, WHICH ANSWERS r7247's QUESTION BETTER")
+
+_paper = [p for p in _mine_all
+          if any(k in p[0] for k in STEMS) and sha8(json.loads(p[1])) not in NOT_PAPER]
+_rest = [p for p in _mine_all if p not in _paper]
+_rop = sum(1 for p in _paper if p[5] == 'REPAIR-OWED')
+_ror = sum(1 for p in _rest if p[5] == 'REPAIR-OWED')
+_fp = 100.0 * _rop / len(_paper)
+_fr = 100.0 * _ror / len(_rest)
+print(f"      PAPER pins       {len(_paper):4d}   REPAIR-OWED {_rop}/{len(_paper)} = {_fp:.1f} per cent")
+print(f"      everything else  {len(_rest):4d}   REPAIR-OWED {_ror}/{len(_rest)} = {_fr:.1f} per cent")
+print(f"      ratio {_fp / max(_fr, 1e-9):.0f}x;  cumulative {_rop + _ror}/{len(_mine_all)} = "
+      f"{100.0 * (_rop + _ror) / len(_mine_all):.1f} per cent")
+gate("⛔⛭⛭⛭ *** THE PREFIX IS NOT ONE JOB BUT TWO, AND THE SPLIT IS BY WHAT THE PIN READS: a pin on a "
+     "corpus PAPER is REPAIR-OWED more than half the time under the settled rule, while a pin on a "
+     "pre-registration, a landed receipt, the instrument or a ledger is REPAIR-OWED about one time in "
+     "forty.  An order of magnitude and more between the two halves of one prefix *** -- so `r7247`'s "
+     "question, `is this an adjudication job or a rewriting job`, has the answer BOTH, cleanly divided",
+     _fp > 50.0 and _fr < 5.0 and _fp > 10 * _fr)
+gate("⇒ AND MY OWN PRE-REGISTERED STOP IS MET ON THE PAPER HALF: batch 01 reads 41.2 per cent under "
+     "the settled rule against the 40 per cent I pinned, so ** had I been using this criterion from "
+     "the start my own stop would have fired on my first batch ** -- and what the stop asks for is "
+     "exactly what is being done here: report the fraction and the mechanism and question the unit "
+     "cost.  ⌗ Batch 02, which was all SOURCE keys, reads 0 per cent",
+     _fp > 40.0 and _fr < 40.0)
+
 # ============================================================== F. the live recomputation
 head("F.  ⌗ THE LIVE RECOMPUTATION, PRINTED AND NOT ASSERTED")
 

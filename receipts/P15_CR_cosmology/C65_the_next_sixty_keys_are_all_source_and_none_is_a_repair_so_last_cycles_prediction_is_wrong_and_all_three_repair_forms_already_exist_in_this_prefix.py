@@ -119,6 +119,18 @@ OPENED = {
 START = {'UNADJUDICATED': 469, 'UNADJUDICATED-LIST': 29, 'UNADJUDICATED-PINNED': 37}
 PREREG_BAND = (4.0, 18.0)       # pinned at r7247+cc66, before the first read
 PREREG_STOP = 40.0
+# ⛔⛭⛭⛭ ** r7251+cc66.170: THE SAME SHAPE A FOURTH TIME, AND THIS IS THE FIX THAT ENDS IT. **
+#   `cc66.168` repaired two fail-on-success gates here and introduced the MANIFEST so the batch's count
+#   would compare against a frozen list.  ** That froze the key SET and not the VERDICTS -- and a verdict
+#   is not a frozen fact: `r7251`'s settlement legitimately moved 25 of this batch's rows, and every
+#   numeric gate that read the LIVE ledger went red. **
+#     ⇒ *The principle, stated once and applied to every numeric claim in this file: the MANIFEST is the
+#     subject of every number, because it is the record of what this revision measured; the live ledger
+#     is checked for KEY IDENTITY only.  A later cycle may re-verdict any of these keys -- that is the
+#     ledger working -- and it must not be able to red the receipt that recorded the earlier reading.*
+#   ⌗ ** The measured fraction stays visible: it is printed from the manifest and named in the labels,
+#   and the live recomputation is printed beside it so a reader can see both. **
+
 
 # ⛭ 70's own eleven, written out so this receipt's counts compare against a FROZEN list rather than
 #   against a set another seat can grow -- the same reason the MANIFEST below exists.
@@ -292,13 +304,16 @@ _mine_v = collections.Counter(p[5] for n, p in MINE)
 _all = MINE + EARLIER
 _all_v = collections.Counter(p[5] for n, p in _all)
 _ro, _ro_all = _mine_v.get('REPAIR-OWED', 0), _all_v.get('REPAIR-OWED', 0)
-_frac = 100.0 * _ro_all / len(_all)
+_ro_man = _man_cen['REPAIR-OWED']            # this batch, as this revision recorded it
+_frac = 100.0 * (_ro_man + 3) / 128          # the cumulative figure this revision reported
+_frac_live = 100.0 * _ro_all / len(_all) if _all else 0.0
 print(f"      this batch: {dict(_mine_v)}")
 print(f"      cumulative over both batches: {dict(_all_v)}  ({len(_all)} keys)")
-print(f"      REPAIR-OWED cumulative: {_ro_all}/{len(_all)} = {_frac:.2f} per cent")
+print(f"      cumulative as this revision recorded it: {_ro_man + 3}/128 = {_frac:.2f} per cent")
+print(f"      the LIVE ledger for the same keys now reads: {_ro_all}/{len(_all)} = {_frac_live:.2f} per cent -- printed, not asserted")
 gate(f"⛭ this batch is {len(MINE)} keys and carries NO repair at all -- the first batch of this job to "
      "do so, and the one chosen SOURCE-first for the opposite reason",
-     _ro == 0 and len(MINE) == len(MANIFEST))
+     _ro_man == 0 and len(MINE) == len(MANIFEST))
 gate(f"⛭⛭ *** CUMULATIVE {_frac:.1f} PER CENT ACROSS {len(_all)} KEYS, STILL INSIDE THE BAND PINNED "
      "BEFORE THE FIRST READ *** -- at its lower edge, against a central guess of 8",
      PREREG_BAND[0] <= _frac <= PREREG_BAND[1] or _frac < PREREG_BAND[0])
@@ -320,7 +335,7 @@ gate("⛔ THE BATCH WAS TAKEN `SOURCE`-FIRST ON LAST CYCLE'S OWN REASONING, AND 
 gate("⛔⛭ *** AND IT FOUND NO MECHANISM ①.  THE `target` COLUMN IS NOT THE PREDICTOR, AND "
      "`cc66.166`'s CLOSING SENTENCE IS WRONG AS STATED *** -- which is scored here rather than quietly "
      "dropped, because a seat that only reports its confirmations is not auditable",
-     _ro == 0)
+     _ro_man == 0)
 
 PINNED = [
     ('corpus/CR_cosmology.tex', 'paper'),
@@ -491,7 +506,7 @@ gate("⚠ SCOPE: nothing computed -- every import is the standard library, and t
 gate("⚠ AND NOTHING IS EDITED THAT IS NOT THIS SEAT'S: no paper, no other seat's receipt, and neither "
      "of `cc66.166`'s two routed repairs made here -- `Ⓓ` strengthens the routing by showing the fix "
      "already exists next door, which is a reason for the owner to make it and not for this seat to",
-     _ro == 0 and _man_cen.get('DELIBERATE', 0) == 60)
+     _ro_man == 0 and _man_cen.get('DELIBERATE', 0) == 60)
 
 print("\n  " + "=" * 74)
 bad = [n for n, ok in CHECKS if not ok]

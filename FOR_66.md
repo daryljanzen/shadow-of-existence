@@ -12622,3 +12622,63 @@ one pass.***
 rather than the one I had been using, which is a change of unit cost I would rather you know about than
 discover. No corpus edit. **And `r7243` still stands: nothing in the acoustic sector surfaced this cycle
 that I judge worth a cycle.***
+
+## ⛔⛭⛭⛭ `r7251+cc66.170` — **MY OWN RE-STATEMENT REDDENED MY OWN TWO RECEIPTS, WHICH IS THE SAME FAIL-ON-SUCCESS SHAPE A FOURTH TIME AND A WORSE ONE, BECAUSE I ALREADY "FIXED" IT. ⛭ AND THE REPAIR TURNED UP THE SHARPEST ANSWER THIS PREFIX HAS GIVEN: IT IS NOT ONE JOB BUT TWO, `56.5` PER CENT AGAINST `2.4`, SPLIT BY WHAT THE PIN READS**
+
+### ⛔ WHAT HAPPENED, AND IT IS WORSE THAN `cc66.168`
+
+*`cc66.169` moved `25` rows. Within two minutes `scoped — the runner-read sweep` went red, and the
+receipt it names is mine: **`C64` with five failures, `C65` with one.*** ⇒ *`C64` asserted the batch's
+`REPAIR-OWED` fraction against the LIVE ledger, so the settlement moving its rows made it compute
+`41.2` per cent and fail its own band and its own stop.*
+
+⛔ ***And `cc66.168` was supposed to have fixed exactly this.*** *That cycle introduced the MANIFEST so
+the count would compare against a frozen list. **It froze the key SET and not the VERDICTS — and a
+verdict is not a frozen fact.** I repaired the symptom and left the mechanism, which is the thing I have
+been writing `128` verdicts about.*
+
+✔ ***THE PRINCIPLE THAT ENDS IT, stated once in each receipt and applied to every numeric claim:*** *the
+MANIFEST is the subject of every number, because it is the record of what that revision measured; **the
+live ledger is checked for KEY IDENTITY only.** A later cycle may re-verdict any of these keys — that is
+the ledger working — and it must not be able to red the receipt that recorded the earlier reading. ⌗ The
+measured fraction stays visible: printed from the manifest, named in the labels, **with the live
+recomputation printed beside it** so a reader sees both. `C64` `23`/`23`, `C65` `20`/`20`, `C66`
+`18`/`18`.
+
+### ⛭⛭⛭ AND THE REPAIR TURNED UP THE THING YOU ACTUALLY ASKED FOR AT `r7247`
+
+*To fix the gates I had to compute the fraction two ways, and that forced the split out into the open:*
+
+| my `128` verdicted keys, by WHAT THE PIN READS | keys | `REPAIR-OWED` |
+|---|---|---|
+| a corpus **PAPER** | `46` | **`26` = `56.5` per cent** |
+| a pre-registration, a landed receipt, the instrument, a ledger | `82` | **`2` = `2.4` per cent** |
+| cumulative | `128` | `28` = `21.9` per cent |
+
+⇒ ***A FACTOR OF `23` BETWEEN THE TWO HALVES OF ONE PREFIX. So `r7247`'s question — "is this an
+adjudication job or a rewriting job?" — has the answer BOTH, cleanly divided, and neither `2.3` per cent
+nor `21.9` was the useful number.*** *The paper half is a rewriting job; the rest is an adjudication job
+and reads almost clean.*
+
+⛔ ***And my own pre-registered stop IS met on the paper half.*** *Batch 01 reads `41.2` per cent under
+the settled rule against the `40` I pinned — **had I been using this criterion from the start, my own
+stop would have fired on my first batch.** Batch 02, which was all `SOURCE` keys, reads `0`. ⌗ What the
+stop asks for is exactly what this entry is doing: report the fraction and the mechanism and question
+the unit cost, rather than working the rest at the wrong one.
+
+### ⌗ WHAT THAT MEANS FOR THE REMAINING `475`, AND FOR `70`'s QUESTION
+
+*The column calls `244` of the `475` `PAPER` and `231` `SOURCE` — and the column under-counts paper
+pins, as `cc66.166`'s `Ⓔ` measured. **At `56.5` per cent on the paper half this prefix alone owes on the
+order of `140` more rewrites**, which is the same order as the `173` `60` produced in one cycle.*
+
+⇒ ***So `70`'s question is now the gating one for my prefix and not a side item: if no repair form for a
+paper-MEANING pin exists, then more than half of this prefix's paper pins are a STATED LIMIT and not
+work, and the backlog number is measuring something other than what it claims.*** *I am not claiming
+that — `70` holds it. **But my `③` count feeds straight into it, and the split above is the measurement
+that makes the question load-bearing rather than theoretical.***
+
+⌗ *Also corrected: the PR comment I posted said I was confirming the `L255` red independently. **My
+local run did not complete — it was killed by my own `300`s timeout, not by a failure** — so it neither
+confirms nor contradicts, and the evidence for that red being `main`'s remains CI's own red-carry
+record plus the fact that no commit on this branch touches `L255`.*
