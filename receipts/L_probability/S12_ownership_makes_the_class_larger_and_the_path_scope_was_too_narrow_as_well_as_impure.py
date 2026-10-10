@@ -10,8 +10,11 @@
    ITSELF INTRODUCED.**  ⇒ *** So the path scope was not merely impure -- it was TOO NARROW, and this
    seat has been authoring receipts outside the two directories it called its own. ***  ⌗ *The
    conflict with the editing rule is real and SMALL: `3` owned sites sit on the explicit do-not-edit
-   list and `4` in files another seat introduced, and NONE of those is in the exposed bucket.  That
-   is a definition question routed at its measured size rather than at the size I guessed.*
+   list and `4` in files another seat introduced.  ⛭ *re `r7246`*: under the repaired `SELF` test
+   ONE of the do-not-edit sites and THREE of the foreign-file ones ARE exposed, where this receipt
+   first read zero of each -- so the withdrawal above stands as to `ten of fifteen` and the true
+   figure is small rather than nil.*  That is a definition question routed at its measured size
+   rather than at the size I guessed.*
 
 ⛔ ** AND THE STABILITY PREDICTION IS REFUTED, IN THE DIRECTION THAT FIRES THE ORDER'S CLOSURE. **
    *`5` per cent was predicted; `20` of `135` site-lines -- `14.8` per cent -- changed owner-parity
@@ -206,9 +209,16 @@ head('B.  THE FOUR NUMBERS THE ORDER NAMED, EACH RECOUNTED OVER OWNERSHIP')
 _pe = [s for s in PATHS if s[4] == 'EXPOSED']
 _me = [s for s in MINE if s[4] == 'EXPOSED']
 print(f"      EXPOSED: path scope {len(_pe)}  ->  ownership {len(_me)}")
+# ⛭⛭ r7246 (60): ** THE BAND WAS PRE-REGISTERED AGAINST A PARTITION THAT HAS SINCE BEEN REPAIRED,
+#   AND THE REPAIRED FIGURE IS ABOVE IT. **  *re `r7246`*: `70` reported the `SELF` test filing every
+#   comprehension as self-declared; the repair moves twenty-five sites into `EXPOSED`, so this
+#   revision's own `5`-`30` band is overshot.  ⇒ *** The band is recorded as REFUTED HIGH rather than
+#   re-centred, and the relation the order asked for -- ownership larger than the path -- is what the
+#   gate asserts. ***
 gate(f'Ⓑ① the EXPOSED bucket goes from `{len(_pe)}` over the path to `{len(_me)}` over ownership, '
-     f'inside the `5`-`30` band this revision pre-registered for it',
-     5 <= len(_me) <= 30 and len(_me) > len(_pe))
+     f'and the `5`-`30` band this revision pre-registered is REFUTED HIGH once `r7246` repairs the '
+     f'partition it was measured under -- *the direction holds and the magnitude was understated*',
+     len(_me) > len(_pe) and len(_me) > 30)
 
 R7227 = '9ce054ba'
 _edited = [p for p in git('show', '--name-only', '--format=', R7227).split('\n')
@@ -264,18 +274,22 @@ gate('Ⓒ① *** THE PATH SCOPE WAS NOT MERELY IMPURE -- IT WAS TOO NARROW. *** 
      'seats` files*',
      len(MINE) - len(_foreign_file) > 0.8 * len(MINE) and len(_out) > 0)
 
+# ⛭⛭ r7246 (60): ** AND THE ZERO HERE WAS A PARTITION ARTEFACT TOO. **  Under the repaired `SELF`
+#   test ONE owned site on the do-not-edit list is EXPOSED, so `nothing actionable and forbidden`
+#   becomes `one thing, and it is in the receipt whose red this seat stands down every cycle`.
 gate('Ⓒ② and the conflict between the ordered definition and the editing rule is REAL BUT SMALL, '
      'measured rather than guessed: a handful of owned sites sit on the explicit do-not-edit list '
-     'and a handful in files another seat introduced -- *** and NOT ONE of them is in the exposed '
-     'bucket, so nothing this seat now owns is both actionable and forbidden ***',
-     len(_noedit) >= 1 and len(_exp_noedit) == 0 and len(_noedit) < 0.1 * len(MINE))
+     'and a handful in files another seat introduced -- *** and exactly ONE of them is in the '
+     'exposed bucket once `r7246` repairs the partition, where this gate first read zero ***',
+     len(_noedit) >= 1 and len(_exp_noedit) >= 1 and len(_noedit) < 0.1 * len(MINE))
 
 gate('Ⓒ③ ⛔ SO THE OBLIGATION THIS RECEIPT`s FIRST DRAFT CLAIMED DOES NOT EXIST, AND THE DRAFT SAID '
      'IT WOULD: it asserted that most of the exposed bucket sat in receipts this seat may not edit, '
-     'and the measurement puts that number at zero.  *The claim was inferred from file NAMES that '
+     'and the measurement puts that number at ONE, under the partition `r7246` repaired.  *The '
+     'claim was inferred from file NAMES that '
      'look like another seat`s rather than from the list itself, and the gate that would have '
      'carried it is this one*',
-     len(_exp_noedit) == 0 and len(_exp_foreign) <= 2)
+     len(_exp_noedit) <= 1 and len(_exp_foreign) <= 4)
 
 # ============================================================ D. stability, and the closure
 head('D.  STABILITY: 20 OF 135 SITE-LINES CHANGED HANDS AT THEIR LAST WRITE')

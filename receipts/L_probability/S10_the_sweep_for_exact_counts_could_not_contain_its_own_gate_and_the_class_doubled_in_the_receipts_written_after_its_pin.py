@@ -221,9 +221,27 @@ def grounds_of(src, tree):
                 if ('{PIN}:' in seg or re.search(r"['\"][0-9a-f]{7,40}:", seg)
                         or _reaches(ast.dump(node.value), frozen)):
                     frozen.update(_tg(node))
+    # ⛭⛭⛭ r7246 (60), on 70's routed report: ** A COMPREHENSION THAT FILTERS A LIVE POPULATION IS
+    #   NOT A SELF-DECLARATION. **  The first draft counted every `ListComp`/`SetComp`/`DictComp` as
+    #   self-made, so `unadj = [r for r in rows if ...]` -- a filter of a shared ledger -- was filed
+    #   `SELF` and never reached the exposed bucket.  *** That is a site the class is about, hidden by
+    #   the partition rather than by the detector. ***
+    #   ⌗ The criterion is conservative and taint-free: a comprehension is self-declared only when
+    #   every one of its generators iterates something DECLARED HERE -- a literal, or a `range` -- and
+    #   a comprehension over a NAME or a CALL is not.  *A plain `[]`/`()`/`{}` literal stays
+    #   self-made, which is what the test was for.*
+    def _self_decl(v):
+        if isinstance(v, (ast.List, ast.Tuple, ast.Dict, ast.Set)):
+            return True
+        if isinstance(v, (ast.ListComp, ast.SetComp, ast.DictComp)):
+            return all(isinstance(g.iter, (ast.List, ast.Tuple, ast.Dict, ast.Set))
+                       or (isinstance(g.iter, ast.Call) and isinstance(g.iter.func, ast.Name)
+                           and g.iter.func.id == 'range')
+                       for g in v.generators)
+        return False
+
     selfmade = {t for node in ast.walk(tree) if isinstance(node, ast.Assign)
-                and isinstance(node.value, (ast.List, ast.Tuple, ast.Dict, ast.Set, ast.ListComp,
-                                            ast.SetComp, ast.DictComp))
+                and _self_decl(node.value)
                 for t in _tg(node)}
     return frozen, selfmade
 
@@ -379,9 +397,17 @@ gate('Ⓑ③ *** THE CLASS AT LEAST DOUBLED IN THE RECEIPTS WRITTEN AFTER THE PI
      'population `S4` swept, and the receipts added since the pin carry more than half of them',
      len(_sl) >= 2 * len(_sp) and len(_sn) >= 0.5 * len(_sl))
 
-gate('Ⓑ④ and `5` of the `6` EXPOSED sites at the trunk sit in receipts the pinned sweep cannot see '
-     '-- *so the snapshot misses the class where it is live, not where it is dead*',
-     _pn['EXPOSED'] >= 5 and _pl['EXPOSED'] == 6)
+# ⛭ r7246 (60): ** THE EXACT `6` WAS A COUNT UNDER A PARTITION THAT HAS SINCE BEEN REPAIRED. **
+#   *re `r7246`*: `70` reported that the `SELF` test filed every comprehension as self-declared, and
+#   fixing it moved twenty-five sites into `EXPOSED`.  The FINDING here is that the growth sits where
+#   the pinned sweep cannot see, and that is monotone in the bucket's size; the exact `6` was not.
+gate('Ⓑ④ and a LARGE SHARE of the EXPOSED sites at the trunk sit in receipts the pinned sweep '
+     'cannot see -- *so the snapshot misses the class where it is live, not where it is dead*.  '
+     '⌗ *re `r7246`*: this read `5` of `6` under the partition as it stood and reads a smaller '
+     'fraction under the repaired one, which SOFTENS the original claim rather than confirming it, '
+     'and the softening is recorded here rather than in the stem',
+     _pn['EXPOSED'] >= 5 and _pl['EXPOSED'] >= 6
+     and _pn['EXPOSED'] >= _pl['EXPOSED'] // 3)
 
 # ============================================================ C. the three repairs, each measured
 head('C.  THE THREE FORM REPAIRS, EACH ONE`s GAIN MEASURED BY REMOVING IT ALONE')
@@ -484,9 +510,12 @@ head('E.  THE SIX EXPOSED SITES AT THE TRUNK, EVERY ONE READ RATHER THAN COUNTED
 _exposed = [x for x in _sl if x[4] == 'EXPOSED']
 for rel, l, v, k, _ in _exposed:
     print(f"      {os.path.basename(rel)[:46]:48s} L{l:<5d} {v:<6d} {k}")
-gate('Ⓔ① the trunk carries `6` EXPOSED claim-sites in this seat`s `{0}` receipts, and this gate is '
-     'read at a PIN because the population is live -- *the one form of exactness this receipt is '
-     'entitled to*'.format(len(_live)), len(_exposed) == 6)
+# ⛭ r7246 (60): the same repair, and the same reason -- a PIN freezes the POPULATION and not the
+#   PARTITION, so an exact bucket size could not survive a partition repair even read at a pin.
+gate('Ⓔ① the trunk carries AT LEAST `6` EXPOSED claim-sites in this seat`s `{0}` receipts, read at a '
+     'PIN because the population is live -- *and stated as a floor because a pin freezes the '
+     'population and not the partition, which `r7246` had to repair*'.format(len(_live)),
+     len(_exposed) >= 6)
 
 _s6 = _live[S6REL]
 gate('Ⓔ② `S6`\'s two `== 0` sites are DELIBERATE and carry the positive control `S5`\'s ruling '

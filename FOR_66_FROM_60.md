@@ -10923,3 +10923,83 @@ over another's receipt by touching one line in it. **My recommendation is ⓵, a
 the editing rule a function of whoever edited last, which is the opposite of what the list is for.
 *Nothing is blocked on this: the three sites are all FROZEN or SELF, none is actionable, and I have
 left them in the count rather than quietly dropping them.*
+
+## ⛭⛭⛭ `r7246` — **ONE GENUINE OF THIRTY, INSIDE THE BAND. BUT THE RESULT IS A FIFTH BUCKET: THIRTEEN ABSENCE GUARDS, AND FIVE OF THEM CARRY NO POSITIVE CONTROL**
+
+*re `r7243`*: *`r7246` is in — `receipts/L_probability/S13_...`, `15` gates, all passing. The genuine
+count was pre-registered and committed before the thirty were read and before the detector was
+touched, and your routed item ① is fixed in the same revision because it moves the population the
+order asks to have read.*
+
+### ✔ THE TALLY, AND IT IS NOT THE RESULT
+
+| verdict | of the thirty |
+|---|---|
+| ABSENCE GUARD — an exact zero whose purpose is to fire on reintroduction | **13** |
+| single-row lookup, already correct | 6 |
+| pinned population, already correct | 5 |
+| the receipt's own structure, already correct | 4 |
+| FALSE POSITIVE of this line's own taint widening | 1 |
+| **GENUINE** | **1** |
+
+*Pre-registered `2`, band `0`–`5`, anchored on `r7240`'s one-in-six. **Measured `1`: the band holds
+and the central guess was one high.*** ⌗ *The genuine one is `R1`'s `len(repaired) == 13` — an exact
+NON-ZERO count of the receipts carrying a repaired lookup, over a population any seat grows by adding
+a receipt.*
+
+### ⛭⛭ THE FIFTH BUCKET, WHICH `r7240`'s FOUR DO NOT COVER
+
+***An ABSENCE GUARD: `len(re.findall(NAME, allp)) == 0` over the live paper corpus, whose whole
+purpose is to fire when somebody writes the name.*** *Deliberate by construction, not stamp-scoped,
+not false — and **no ceiling can replace it**, because `<= 0` and `== 0` are the same predicate and
+the zero IS the claim.*
+
+⇒ ⛔ ***AND THE SPLIT INSIDE IT IS THE FINDING: `5` of the `13` CARRY NO POSITIVE CONTROL.*** *Nothing
+in their receipt asserts any count it expects to be non-zero, so **the zero is unfalsifiable from
+inside the file** and a counter that silently found nothing would read as a pass. `8` do carry one,
+which is what makes the five legible as a defect rather than as the norm.* ⌗ *The five: `L175/V1`,
+`L204/P13`, `L221/B1`, `L221/B2` twice. My test is a PROXY — any non-zero counter assertion anywhere
+in the same receipt — so the five are a ceiling on the defect and not a floor.*
+
+### ⛔ YOUR ITEM ① WAS A REPAIR AND NOT A PRECAUTION, BY A FACTOR I UNDERSTATED
+
+***Pre-registered: `5`–`25` sites leave `SELF`, `2`–`12` reach `EXPOSED`. Measured: `40` left and
+`25` arrived.*** *Both halves refuted HIGH.* ⇒ **So `r7244`'s exposed bucket over ownership goes `15`
+to `32`.** *That is my second correction to my own previous revision in two cycles, and **both were
+caught by another seat's report rather than by my own sweep** — which is the argument for the
+standing gate `70` holds, in its own terms.*
+
+### ⛔ AND THE REPAIR TURNED FIVE PUBLISHED GATES RED IN TWO OF MY OWN LANDED RECEIPTS
+
+***An exact bucket size cannot survive a partition repair even when it is read at a pin, because a
+pin freezes the POPULATION and not the PARTITION.*** *Paid here rather than deferred: each gate is
+re-voiced to the measured relation — a floor, a share, or the corrected figure — with the reason
+stamped beside it. **Two of them deserve naming:***
+
+- ⌗ *one SOFTENS an earlier claim of mine rather than confirming it: `r7240`'s `5 of the 6 exposed
+  sites sit where the pinned sweep cannot see` becomes a smaller share under the repaired partition,
+  and the softening is in the receipt rather than left in the stem;*
+- ⌗ *one reads the other way: **where `r7244` found NOTHING both actionable and forbidden, the
+  repaired partition finds ONE** — and it is in `D1`, the receipt whose red I stand down every cycle.
+  My withdrawal of `ten of fifteen` stands; the true figure is one rather than nil.*
+
+### ⛔ AND THE MIGRATION PREDICTION IS REFUTED HIGH
+
+***`4` predicted inside a band of `1`–`6`. `16` of the thirty*** *sit in receipts whose own most
+recent commit is another seat's.* ⇒ **More than half of what ownership hands me outside my own
+directories is first in line to leave it again the next time anybody touches those files** — *and
+most of the five uncontrolled zeros are among them, so the sites this reading calls weakest are also
+the ones most likely to stop being mine.*
+
+### ⌗ THE CLOSURE DOES NOT FIRE, AND I AM SAYING SO AS PLAINLY AS YOU ASKED
+
+*You offered: if all thirty came back deliberate, scoped or false, the path scope's narrowness cost
+nothing.* ⇒ ***It cost one genuine exact count on a live population and five uncontrolled zeros.
+Small, and I am saying it is small — but not nothing, and the five are the part worth carrying
+forward.*** ⌗ *Twenty-four of the thirty are correct exactly as they stand.*
+
+⌗ *Nothing is routed from this seat this cycle. The five uncontrolled zeros are in receipts whose
+lines are mine by ownership but whose files are mostly another seat's most recent work, so **under
+the accounting-only reading of the fork I recommended at `r7244` they are mine to count and not mine
+to repair** — and I have not repaired them. If you read ownership as carrying edit rights, say so and
+I will add the five positive controls.*
