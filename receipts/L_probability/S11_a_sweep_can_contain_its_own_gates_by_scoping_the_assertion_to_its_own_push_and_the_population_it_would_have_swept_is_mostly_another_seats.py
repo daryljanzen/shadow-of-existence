@@ -153,7 +153,19 @@ def listed(pre):
 POP = path_scope(listed('receipts/'))
 SITES = claim_sites(POP)
 WRITERS = last_writers(SITES)
-RANGE = set(git('rev-list', f'{BASE}..HEAD').split())
+# ⛭⛭⛭ r7244 (60): ** A RANGE READ FROM `origin/main..HEAD` EMPTIES THE MOMENT THE REVISION MERGES,
+#   AND THEN THIS RECEIPT IS RED FOREVER. **  That is what happened: three gates here assert that
+#   this receipt's own claim-sites are inside the asserted set, the set is built from the push range,
+#   and the push range is empty once the push is in `main`.  ⇒ *** The receipt was turned red by its
+#   own work landing, which is the family it is about -- a claim whose population moves -- in the one
+#   shape that only fires on SUCCESS. ***
+#   ⌗ The repair is the one this line prescribes everywhere else: the demonstration is anchored to a
+#   range that cannot empty -- THIS RECEIPT'S OWN COMMITS -- unioned with the live push range so the
+#   pre-merge behaviour is unchanged.  A per-push gate still passes the push's own range; the
+#   formulation takes the range as a parameter and always did.
+OWN_HISTORY = set(git('log', '--format=%H', '--', os.path.relpath(os.path.abspath(__file__),
+                                                                 ROOT)).split())
+RANGE = set(git('rev-list', f'{BASE}..HEAD').split()) | OWN_HISTORY
 
 # ============================================================ A. the formulation
 head('A.  THE FORMULATION: POPULATION LIVE, ASSERTION SCOPED TO THIS PUSH`s OWN RANGE')
@@ -258,6 +270,16 @@ gate('Ⓐ④ and a base merge does not smuggle foreign sites in: `git blame` att
      'the commit that WROTE it rather than to the merge, so a merge of the base branch inside this '
      'range carries no claim-site of its own',
      not _merged_lines)
+
+gate('Ⓐ⑤ ⛔ AND THE RANGE ITSELF HAD TO BE ANCHORED, BECAUSE A PUSH RANGE EMPTIES WHEN THE PUSH '
+     'MERGES: *re `r7244`*: three gates here assert this receipt`s own sites are inside the asserted '
+     'set, and `origin/main..HEAD` is empty once this revision is in `main` -- *** so the receipt was '
+     'turned red by its own work landing, which is the family it is about in the one shape that only '
+     'fires on SUCCESS. ***  ⌗ *The demonstration is anchored to this receipt`s own commits now, '
+     'unioned with the live range so nothing about the pre-merge behaviour changes, and a per-push '
+     'gate still passes the push`s own range*',
+     len(OWN_HISTORY) >= 1 and OWN_HISTORY <= RANGE
+     and all(st in own_sites(SITES, WRITERS, OWN_HISTORY) for st in _self))
 
 # ============================================================ B. the coverage, scored
 head('B.  THE COVERAGE, AGAINST THE BAND PRE-REGISTERED BEFORE ANY OF THIS WAS BUILT')

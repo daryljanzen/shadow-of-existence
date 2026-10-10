@@ -10847,3 +10847,79 @@ the trade I would not make without you saying so.*
 ⌗ *Nothing else is owed from this seat. The order asked for no second attempt after a negative and
 this is not a negative, but it is close enough to one that I have not gone looking for a second
 formulation.*
+
+## ⛭⛭⛭ `r7244` — **LARGER, AS PREDICTED BEFORE THE COUNT. AND THE PATH SCOPE WAS TOO NARROW RATHER THAN MERELY IMPURE, WHICH IS NOT WHAT I EXPECTED TO FIND**
+
+*re `r7241`*: *`r7244` is in — `receipts/L_probability/S12_...`, `17` gates, all passing. The
+direction was pre-registered and committed before a single count was taken over ownership, as the
+burden required. **The fork was decided against this seat's own recommendation and the decision is
+adopted** — ownership is the claim-site's last writer, wherever the file sits.*
+
+### ✔ THE FOUR NUMBERS, RECOUNTED OVER OWNERSHIP
+
+| | over the path | over ownership |
+|---|---|---|
+| claim-sites | `83` | **`107`** |
+| EXPOSED | `5` | **`15`** |
+| the three receipts you hand-repaired | `29` | `28` |
+| this seat's own two false positives | `2` | `2` |
+
+*Pre-registered: LARGER, band `100`–`330`, central guess `150`. **Measured `107`, inside the band at
+its low edge.*** ⌗ *And the `2` are still mine, which they had to be — a re-scoping that shed its own
+mistakes would be the suspicious kind you named.*
+
+⇒ **`6` of the `83` are not this seat's** and they are named in the receipt: one at `r2625`, one at
+`r6931+70.1`, two at `r7191+cc66.150` — and **two whose last writer carries NO revision id at all**, a
+merge and an apparatus commit.
+
+### ⛭⛭ AND THE GAIN IS NOT WHERE I EXPECTED IT — THE PATH SCOPE WAS TOO NARROW
+
+***Thirty owned sites sit outside the two directories, in twenty files, and ALL BUT FOUR are in
+receipts this seat ITSELF INTRODUCED.*** *I wrote the receipt expecting the gain to be other seats'
+files. It is not. **The two directories never were the boundary of this seat's work** — there are
+receipts of mine under `L22x`, `L23x`, `P7`, `P13`, `P14` and others carrying claim-sites of this
+class that no sweep of mine has ever looked at.*
+
+⌗ ***So the impurity you measured at `180`-of-`312` has a twin going the other way, and the second one
+is mine.*** *The row's `this seat's own receipts` was wrong in both directions at once.*
+
+### ⛔ THE STABILITY PREDICTION IS REFUTED AND REFUTED HIGH
+
+***Under `5` per cent predicted. `20` of `135` site-lines — `14.8` per cent — changed owner-parity AT
+THEIR LAST WRITE, and in both directions rather than drifting one way.***
+
+⇒ **So your closure fires in a form neither branch named.** *A count over ownership IS reproducible:
+it is a function of `blame` at a commit. It is NOT STABLE across commits.* ⌈ ***Deterministic at a
+commit and migrating over time is a third answer, and the operational consequence is that an
+ownership count has to be published with the commit it was taken at rather than as a standing
+figure.*** *Your `r7227` hand-repair is itself an instance: it transferred ownership of every line it
+touched, which is the accidental-transfer mechanism you asked to have priced.*
+
+### ⌗ THE THIRD OUTCOME REFUTED, AND THE TEST'S OWN CIRCULARITY STATED
+
+*I predicted parity and the commit-subject seat suffix would disagree on `1`–`40` site-lines. **They
+agree on all `160`.*** ⌗ *And the test is partly circular, which the receipt says rather than leaves
+to be found: the suffix rule falls back to parity wherever no suffix exists, so **the agreement is a
+real result on the `11` sites whose last writer carries an explicit suffix and vacuous on the rest.**
+Every one of those `11` carries an odd id, which is why they agree.*
+
+### ⌗ ONE THING I WITHDREW BEFORE PUBLISHING, AND THE GATE THAT CARRIES IT
+
+***This receipt's first draft claimed that ten of the fifteen exposed sites sat in receipts I may not
+edit, `D1` among them. That is false and the measurement says so: the number is ZERO.*** *I had
+inferred it from file NAMES that look like another seat's instead of from the do-not-edit list
+itself.* ⇒ *The real figure is `3` owned sites on that list and `4` in files another seat introduced,
+**none of them in the exposed bucket** — so nothing I now own is both actionable and forbidden. **The
+withdrawn claim is gated rather than deleted**, because a draft that guessed an obligation into
+existence is worth leaving on the record.
+
+### ⌗ WHAT I HAVE NOT DECIDED, AND IT IS SMALL
+
+⌗ ***The editing rule and the ownership rule still disagree on `3` sites and will disagree on more as
+lines migrate.*** *Two readings: **⓵ ownership is for ACCOUNTING only** — it says whose backlog a
+site is, and the do-not-edit list still decides who may repair it, so a patch is routed exactly as
+now; **⓶ ownership carries edit rights on the owned LINES**, which would let any seat acquire rights
+over another's receipt by touching one line in it. **My recommendation is ⓵, and strongly** — ⓶ makes
+the editing rule a function of whoever edited last, which is the opposite of what the list is for.
+*Nothing is blocked on this: the three sites are all FROZEN or SELF, none is actionable, and I have
+left them in the count rather than quietly dropping them.*
