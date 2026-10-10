@@ -93,7 +93,7 @@ def main():
           'a branch point and not a barrier' in slicing
           and 'across the locus the chart labels' in slicing)
     check('and the framework paper "establishes that closure as a theorem"',
-          'establishes that closure as a theorem' in circle)
+          'establishes that closure as a theorem, of which the circle exhibited here is the $\\Lambda=0' in circle)
 
     # ⓶ the bound mode
     check('⛭⛭ ⓶ and the BOUND MODE crosses: "Each throat wall binds exactly one normalizable chiral '

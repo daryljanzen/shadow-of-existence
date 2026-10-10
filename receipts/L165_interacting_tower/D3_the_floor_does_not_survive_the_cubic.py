@@ -111,7 +111,7 @@ def main():
     #    the quadratic tower, so what the cubic does to it is exactly what this receipt tests. **
     check('⓵ P10 does not ASSUME the floor and now derives it: "is not assumed here ... though it '
           'does in fact follow"',
-          'is not assumed here' in p10 and 'though it does in fact follow' in p10)
+          'is not assumed here' in p10 and 'w is not assumed here~\\rcpt{P10_the_straddle_does_not_need_a_floor}, though it does in fact follow' in p10)
     check('and gives the leading order: "At leading order $\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$"',
           'At leading order $\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$' in p10)
     check('⛭⛭ and names what enters beyond it: "the cubic and higher self-interactions enter at the same '

@@ -75,7 +75,7 @@ def main():
 
     check('⓵ the kernel carries spin-$\\tfrac12$ modes: "$\\lambda=j+\\tfrac12$ labels partial waves and '
           'each contributes exactly one bound mode"',
-          'labels partial' in p14 and 'each contributes exactly one bound mode' in p14)
+          't supply multiplicity, since $\\lambda=j+\\tfrac12$ labels partial waves and each contributes e' in p14 and 'each contributes exactly one bound mode' in p14)
     # ** compute the Clebsch decomposition rather than assert its dimensions **
     _spins = [abs(0.5-0.5) + k for k in range(int(0.5+0.5-abs(0.5-0.5))+1)]
     _dims = [int(2*j+1) for j in _spins]

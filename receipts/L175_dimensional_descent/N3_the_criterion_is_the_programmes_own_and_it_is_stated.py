@@ -100,7 +100,7 @@ def main():
     check('⛭⛭ AND IN EXACTLY THE FORM THE QUESTION ASKS: "the distinction between a world that '
           '\\emph{requires} a phenomenon and one that merely \\emph{permits} it through adjustable '
           'parameters"',
-          'requires} a phenomenon and one that merely \\emph{permits} it through adjustable parameters'
+          's the distinction between a world that \\emph{requires} a phenomenon and one that merely \\emph{permits} it through adjustable parameters'
           in allp)
     check('applied to the foliation itself: "forced rather than chosen"',
           'forced rather than chosen' in allp)
@@ -126,7 +126,7 @@ def main():
               os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()))
     check('and CR does NOT derive the field equations: "the construction leaves the dynamics of '
           'general relativity unchanged"',
-          'the construction leaves the dynamics of general relativity unchanged' in allp)
+          'the construction leaves the dynamics of general relativity unchanged, the radiative sector beyond the wall is reached by ordinary evolution of the leaf, n' in allp)
     check('⌗ and the row itself posed this at r2518 as the decision it turns on',
           's a desideratum' in arc)
 

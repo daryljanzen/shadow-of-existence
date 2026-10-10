@@ -167,7 +167,7 @@ gate("`CR_framework`'s bead figure writes the INWARD leg with a leading MINUS an
      "the single vertical segment at `\\operatorname{Re}\\tilde\\tau=0` -- so the branch is the "
      "paper's and not a choice of mine",
      '-(2M\\alpha^2)^{1/3}\\cosh^{2/3}' in b07.replace(' ', '')
-     or ('\\cosh^{2/3}' in b07 and 'single vertical segment' in b07))
+     or ('\\cosh^{2/3}' in b07 and 'single vertical segment at $\\operatorname{Re}\\tilde\\tau=0$, and is d' in b07))
 
 # sinh(X - i pi/2) = -i cosh X , so the inward leg is r = A (-i cosh)^{2/3}; the figure's minus sign
 # forces (-i)^{2/3} = -1 (phase pi), NOT the principal e^{-i pi/3}.

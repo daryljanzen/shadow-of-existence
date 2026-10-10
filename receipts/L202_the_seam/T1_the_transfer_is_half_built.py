@@ -129,12 +129,12 @@ def main():
           and 'the envelope is derived on the collapse leg rather than imported' in p15)
     check('with the same object named: "the same geometric stacking rate that enlarges $r_{D}$ also governs '
           'the high-$\\ell$ driving envelope"',
-          'also governs the high-$\\ell$ driving envelope' in p15)
+          'e handover that fixes $r_D$ also governs the high-$\\ell$ driving envelope' in p15)
 
     # ⓷ the machinery exists too
     check('⓷ and a genuine Boltzmann transfer is already in use at large angles: "on a genuine '
           'Boltzmann transfer a dip whose \\emph{minimum falls at $\\ell=4$}"',
-          'on a genuine Boltzmann transfer a dip whose' in p15)
+          'on a genuine Boltzmann transfer a dip whose \\emph{minimum falls at $\\ell=4' in p15)
 
     # ⓸ the heights do not need it
     check('⓸ and the heights do NOT need it: "The peak heights are then carried by a structural argument '

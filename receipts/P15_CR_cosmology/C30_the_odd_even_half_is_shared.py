@@ -149,7 +149,7 @@ def main():
           'on the expansion side at $R\\simeq0.6$, which is ordinary content physics on the observable '
           'leg"',
           'the odd/even asymmetry is imprinted afterwards, on the expansion side at' in p15
-          and 'which is ordinary content physics on the observable leg' in p15)
+          and 's imprinted afterwards, on the expansion side at $R\\approx0.6$, which is ordinary content physics on the observable leg' in p15)
     # ** r6931+70.1 (PO-59): CLASS (c), STALE.  `de97f96e` (r6772+66.11, "the last of the fitted-onset
     #    reading cleared from P15's prose") rewrote "$R\\simeq0.1$ at the onset" as "$R\\lesssim0.1$ where
     #    the driving happens" -- same bound, same "orders below that at entry"; only the retired onset's

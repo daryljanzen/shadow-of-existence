@@ -160,7 +160,7 @@ gate(f"⌗ ** WHAT SURVIVES, AND IT IS WORTH THE PAPER CARRYING: ** the closed f
 # ===========================================================================
 head('C.  ⛔ THE TWO DAMPING RATES ON ONE SEGMENT DIFFER BY THE SOUND SPEED')
 # ===========================================================================
-_OMEGA = 'e^{-k c_s\\lvert\\Delta\\eta\\rvert}' in b15
+_OMEGA = 's two factors, and the argument above varies only one of them.} It is\n$e^{-k c_s\\lvert\\Delta\\eta\\rvert}' in b15
 gate("⓹ the kernel the papers apply damps by `$e^{-kc_s\\lvert\\Delta\\eta\\rvert}$` -- `$\\omega=kc_s$`, "
      "located in `P15`'s own two-factor sentence",
      _OMEGA)

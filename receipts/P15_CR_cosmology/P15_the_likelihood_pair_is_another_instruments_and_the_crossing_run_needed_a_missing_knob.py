@@ -371,7 +371,7 @@ check("and the instrument's two sound horizons are now a DECLARED choice the pap
       #   so the ruler follows the grid -- and the DECLARED choice this gate is about is unchanged.*
       and 'H = Hleaf if LEAFSCALES else Hgeom' in _RSF
       and 'which is what the adjudication asks for' in _RSF
-      and "the scales the plasma itself accumulates---$\\rs$ and $r_D$---take the leaf's" in _P15
+      and "the scales the plasma itself accumulates---$\\rs$ and $r_D$---take the leaf's, together with recombination's microphysics and the perturbations, because they are a" in _P15
       and os.path.exists(os.path.join(HERE, 'P15_the_crossing_spectrum_reproduces_on_a_second_'
                                              'instrument_and_the_172_is_the_radiation_free_ruler.py')))
 print("""

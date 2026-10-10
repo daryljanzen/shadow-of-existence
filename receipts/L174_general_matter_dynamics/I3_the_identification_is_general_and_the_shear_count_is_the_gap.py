@@ -159,7 +159,7 @@ def main():
           #      that is what is asserted.  The old clause is not re-pinned to a phrase it no
           #      longer has, and it is not quietly dropped either: it is named here as replaced.*
           'The two polarizations are a wave map into the hyperbolic plane' in p11
-          and 'polarized case being a geodesic' in p11
+          and 'e then shown to be a wave map into the hyperbolic plane}, the polarized case being a geodesic' in p11
           and 'second polarization lives' in p11
           and free >= 5)
 

@@ -211,7 +211,7 @@ assert 'S TWO DEFECTS IN THE SECOND ARM' in _dsrc and 'THE LOW-MULTIPOLE DEPTH G
 # ⛔ and NOT asserted any longer: "the depth is not" cross-validated.  The paper now says the
 #   opposite, on a computation this file did not run, and it is checked as a discharge:
 assert 'The shape is cross-validated between the two; the depth is not' not in _TEXn
-assert 'The two independent Boltzmann treatments cross-validate the depth as well as the shape' \
+assert 'The two independent Boltzmann treatments cross-validate the depth as well as the shape} once each carries the late integrated Sachs--Wolfe term to the p' \
     in _TEXn
 assert 'the hierarchy agrees to three per cent at every multipole' in _TEXn
 assert ('Those figures are read through the exact transfer, and the photon hierarchy built for this '

@@ -151,7 +151,7 @@ def main():
           'Reach: stated as a target, not a result' in p0_then
           and 'item has two sides and they now stand differently' in p0_split
           and 'e one fact.\'\' \\emph{The test has two sides, and each has been run.}' in _p0_live
-          and '\\emph{On the constant side}' in _p0_live
+          and '\\emph{On the constant side}, \\S\\ref{sec:ledger} states that the gravitational--cosmological--quantum sector spends \\emph{n' in _p0_live
           and '\\emph{On the datum side}' in _p0_live
           and 'for want of work}\\rcpt{X1_the_ratio_is_a_clock_reading_not_a_carried_datum}' in _p0_live
           and 'Reach: stated as a target, not a result' not in live)
@@ -220,7 +220,7 @@ def main():
     check('⛭ AND c54.228 (`L-561`) ANSWERED IT -- against this fork: the probe compared STRINGS where '
           'the question was about CLAIMS, all eight claims survive in body text, and W1 now carries the '
           'corrected measurement with the old verbatim count beside it',
-          'CORRECTED c54.228' in w1 and 'ARITHMETIC OF THE OLD PROBE' in w1)
+          'CORRECTED c54.228 (`L-561`), AND THE CORRECTION IS A' in w1 and 'ARITHMETIC OF THE OLD PROBE' in w1)
 
     print()
     if FAILED:

@@ -208,7 +208,7 @@ gate("Ⓔ②  and that receipt reaches its ruling BY PRECEDENT from the rule's e
      " rather than from the slice's geometry -- it names `P7`'s own list as the side it argues from,"
      " which is why it is independent of FLATNESS and not of the RULE",
      'S A PRECEDENT ARGUMENT INSIDE THE CONSTRUCTION' in TAU
-     and 'Every other property of the photons we observe' in TAU)
+     and 'Every other property of the photons we observe, accumulated along their path to us, is a' in TAU)
 
 gate("Ⓔ③  ⛔ SO TWO GROUNDS AND NOT THREE: the rule, and the identification.  ** And since the rule"
      " reaches the projection only through the identification, the identification is the only"

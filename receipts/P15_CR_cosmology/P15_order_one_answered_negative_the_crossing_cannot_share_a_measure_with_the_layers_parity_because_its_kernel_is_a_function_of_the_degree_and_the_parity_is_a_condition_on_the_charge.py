@@ -100,14 +100,14 @@ gate("Ⓐ①  the pre-registration is in the tree and names the negative as the 
 gate("Ⓐ②  `P16` already states the crossing's filter is VACUOUS -- the species criterion has nothing"
      " to act on because every mode is frozen first, and what the corpus advertised as a selection"
      " rule is not one",
-     'the species criterion is vacuous at the crossing' in FROZEN
+     'the species criterion is vacuous at the crossing, and what the corpus advertised as a selection rule is n' in FROZEN
      and 'what the corpus advertised as a selection rule is not one' in FROZEN)
 
 gate("Ⓐ③  AND ITS SCOPE NOTE CARRIES THE DEEPEST REASON: the correspondence is null-boundary to"
      " null-boundary with NO SPACELIKE SLICE entering the map -- while the layer's parity is a"
      " decomposition ON a spacelike three-geometry, so there is no spacelike datum at the crossing"
      " for that parity to be shared with",
-     'with no spacelike slice entering the map' in FROZEN
+     '7\'s correspondence is null-boundary to null-boundary "with no spacelike slice entering the map' in FROZEN
      and 'harmonic-basis question' in FROZEN)
 
 gate("Ⓐ④  and the index map is the IDENTITY on the degree, acting on the radial factor at fixed"

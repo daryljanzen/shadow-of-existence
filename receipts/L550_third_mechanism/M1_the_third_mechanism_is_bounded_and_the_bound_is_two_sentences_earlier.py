@@ -174,7 +174,7 @@ def main():
     check('   ⇒ P14\'s "some forty-one decades below the strong scale, and in the infrared rather '
           'than the ultraviolet direction" is reproduced, and is stable across the observed range',
           'forty-one decades below the strong scale' in p14
-          and 'in the infrared rather than the ultraviolet direction' in p14)
+          and '3/\\Lambda}$, whose energy $\\hbar c/\\alpha$ sits some forty-one decades below the strong scale, and in the infrared rather than the ultraviolet direction' in p14)
     Lam = 1.1056e-52
     # ** ⛔⛔ REPAIRED r3962, AND THE PIN WAS THE SMALLER HALF OF IT. **  This check read
     # **     `numeric and 'Lambda \ell_P^2...' in p0  or  numeric`

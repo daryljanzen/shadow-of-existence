@@ -85,10 +85,10 @@ def main():
     #   length $10.8\\%$" -- the term only; the number and the comparison were already right.
     check('and it is between two RATES: "on the inherited datum the geometric stacking rate gives a '
           'diffusion length $10.8\\%$ longer"',
-          'the geometric rate gives a diffusion length' in p15 and '10.8' in p15)
+          'h integrals close in elementary form, and on the inherited datum the geometric rate gives a diffusion length $10' in p15 and '10.8' in p15)
     check('with the sound horizon computed the same way: "$r_{s}=146.4$~Mpc against $145.4$ on the '
           'radiation-included"',
-          '146.4' in p15 and '145.4' in p15)
+          '146.4$~Mpc against $145.4$ on the radiation-i' in p15 and '145.4' in p15)
 
     # ⓶ the residue in an adjacent-peak ratio
     l = np.array([220., 540., 810., 1120.])

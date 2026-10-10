@@ -126,7 +126,7 @@ def main():
     check('⓷ while the corpus\'s one-constant claim is about the FACES: "every curvature invariant on '
           'either face is a pure power of $1/\\alpha^{2}$ ... a property of a one-constant theory '
           'rather than a gap awaiting work"',
-          'is a pure power of' in p0 and 'one-constant theory' in p0)
+          'is a pure power of' in p0 and 't force a coupling, and its silence about magnitudes is a property of a one-constant theory' in p0)
 
     print()
     if FAILED:

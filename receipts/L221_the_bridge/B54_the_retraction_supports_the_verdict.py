@@ -82,7 +82,7 @@ def main():
 
     check('⓵ P14 defines $\\lambda$ as an angular label: "$\\lambda=j+\\tfrac12$ labels partial waves ... '
           'each contributes exactly one bound mode" -- ** real by construction **',
-          'labels partial' in p14 and 'each contributes exactly one bound mode' in p14)
+          't supply multiplicity, since $\\lambda=j+\\tfrac12$ labels partial waves and each contributes e' in p14 and 'each contributes exactly one bound mode' in p14)
 
     # ⓶ real indices: one decays, one grows
     rs = np.array([0.5, 0.1, 0.01])

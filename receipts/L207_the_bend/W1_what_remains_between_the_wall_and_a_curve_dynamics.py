@@ -128,7 +128,7 @@ def main():
     check('⛭ and r2581\'s rehoming REWORDED it without changing it: P8 now reads "general spatial '
           'leaf the bend-density identity ... is the Hamiltonian constraint '
           '$16\\pi\\rho={}^{3}R+K^{2}-K_{ij}K^{ij}-2\\Lambda$"',
-          'general spatial leaf the bend-density identity' in p8
+          'general spatial leaf the bend-density identity of Section~\\ref{sec:bend} is the Hamiltonian constraint $16' in p8
           and 'is the Hamiltonian constraint' in p8)
     check('and it IS the Hamiltonian constraint, with rho = m\'/4 pi r^2 its spherical instance -- '
           'still stated, in r2581\'s wording',

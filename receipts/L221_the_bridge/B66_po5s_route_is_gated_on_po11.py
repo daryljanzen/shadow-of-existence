@@ -105,7 +105,7 @@ def main():
     check('⓵ the wall kernel\'s modes are BOUND: "the three throat walls are distinct loci, so the '
           'wall-bound zero-modes are linearly independent and span a three-dimensional space" '
           '(was "have disjoint support"; corrected r6756 after r6748)',
-          'the wall-bound zero-modes are linearly independent and span a three-dimensional space' in p14
+          'e \\emph{distinct} loci, so the wall-bound zero-modes are linearly independent and span a three-dimensional space' in p14
           and 'wall-bound zero-modes have disjoint support' not in p14)
     check('⇒ and they are static BOUND STATES OF THE LEAF, not propagating fields -- "CR reads the '
           'fermion as a mode of the existent leaf, not a propagating spacetime field carrying the '
@@ -140,7 +140,7 @@ def main():
           'bound-state zero-modes of the existent leaf' in grp
           and ('the descent onto a full \\emph{propagating} spinor field sector is built---on the '
                'static slicing structure, and again on this framework\'s own chiral member') in grp
-          and 'stays unbuilt is the other one' in grp)
+          and 'e fixed in the matter sector rather than by this grading~\\cite{JanzenMatter}, and the sector that stays unbuilt is the other one' in grp)
 
     # ⓷ the chain terminates
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()

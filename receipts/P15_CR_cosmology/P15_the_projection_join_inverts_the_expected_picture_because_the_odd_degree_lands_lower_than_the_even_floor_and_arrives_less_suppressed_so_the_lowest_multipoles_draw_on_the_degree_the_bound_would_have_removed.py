@@ -307,8 +307,8 @@ gate("Ⓔ①  and `r7164`'s own limit is carried forward rather than quietly dro
      " exponential in the degree is not one in the multipole above the third, because there the sum"
      " at fixed multipole is dominated by the lowest contributing degree -- which is why this receipt"
      " makes its claim inside the quasi-injective window and not across the tower",
-     'IS THEREFORE NOT AN ENVELOPE EXPONENTIAL IN' in PROJ
-     and 'is dominated by the LOWEST contributing degree' in PROJ
+     'IS THEREFORE NOT AN ENVELOPE EXPONENTIAL IN `$\\\\ell$` ABOVE `$L=3' in PROJ
+     and 'is dominated by the LOWEST contributing degree, because the envelope f' in PROJ
      and all(D[L]['sd'] > max(SPACING) for L in range(3, 9)))
 
 # =====================================================================================

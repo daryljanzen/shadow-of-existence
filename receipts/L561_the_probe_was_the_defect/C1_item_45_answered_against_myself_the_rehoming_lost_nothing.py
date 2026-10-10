@@ -292,7 +292,7 @@ def main():
               encoding='utf-8', errors='replace').read()
     check('⓹ W1 carries the corrected claim-level measurement AND the old verbatim count beside it, so '
           'the error is legible rather than erased',
-          'CORRECTED c54.228' in w1 and 'ARITHMETIC OF THE OLD PROBE' in w1
+          'CORRECTED c54.228 (`L-561`), AND THE CORRECTION IS A' in w1 and 'ARITHMETIC OF THE OLD PROBE' in w1
           and '_CLAIMS' in w1 and '_verbatim' in w1)
 
     print()

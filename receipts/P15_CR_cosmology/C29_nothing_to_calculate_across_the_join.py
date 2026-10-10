@@ -169,7 +169,7 @@ def main():
           'imprinted there"',
           'nothing is imprinted there' not in p15
           and 'What does not cross is the oscillatory content itself' in p15
-          and 'the kernel annihilates it' in p15
+          and 's sub-horizon earlier carries an oscillation, and the kernel annihilates it' in p15
           and 'it is what leaves the comb to be set on the expansion side' in p15)
     # ⌗ THE SECOND HALF NEEDED ITS OWN SEARCH.  The old tail -- "so whatever sets it must act on
     #   modes already inside the sound horizon when the plasma begins" -- runs ZERO times now, and

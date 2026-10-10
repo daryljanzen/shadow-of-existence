@@ -80,7 +80,7 @@ def main():
     # ⓵ the leaf is compact with a Dirac index
     check('⛭⛭ ⓵ P14: "the leaf is compact and its Dirac operator carries a well-defined analytical '
           'index" -- so an isometry acts on the spinor bundle and hence on the kernel',
-          'the leaf is compact and its Dirac operator carries a well-defined' in p14)
+          's \\emph{finite} total length\\rcpt{P14_leaf_compactness}, so the leaf is compact and its Dirac operator carries a well-defined' in p14)
 
     # ⓶ two candidate doublets, different dimensions
     check('⛔ ⓶ and there are TWO candidate spaces: P14 gives "three throat walls, hence three chiral '
@@ -101,7 +101,7 @@ def main():
     # ⓸ and the asymmetry is P14's own
     check('⓸ and P14 states the asymmetry this explains: colour gets "exact selection rules" while '
           'weak isospin "delivers a species label, not $SU(2)_L$\'s chiral action"',
-          "colour's exact selection rules" in p14
+          "e is flat, so the construction supplies colour's exact selection rules and n" in p14
           and 'delivers a species label, not $SU(2' in p14)
 
     print()

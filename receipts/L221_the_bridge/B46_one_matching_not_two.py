@@ -120,7 +120,7 @@ def main():
     p14 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex')))
     check('⓷ and P14 says so in its own voice: the static mode "does not normalize" in the tortoise '
           'measure, "the horizons standing infinitely far"',
-          'the horizons standing infinitely far' in p14)
+          'e static mode does \\emph{not} normalize, the horizons standing infinitely far' in p14)
 
     print()
     if FAILED:

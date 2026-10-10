@@ -242,7 +242,7 @@ def main():
           'divergence having been the normalisation and not the obstruction',
           ('the descent onto a \\emph{propagating} spinor sector is built on the chiral member, which '
            'is the unpolarised one, a Dirac field there propagating on the light cone') in p0
-          and 'the leaf-bound modes and the propagating field being two sectors' in p0
+          and 't selected~\\cite{JanzenMatter}, the leaf-bound modes and the propagating field being two sectors' in p0
           and _SENT not in p0)
 
     # AND THE RESULT IS BANKED IN P14, not only in this file -- an unbanked result is lost
@@ -265,7 +265,7 @@ def main():
     check('⓶ B22 states what the row owes: "a scattering state with a continuum normalisation" that '
           '"a bound tower cannot become by relabelling"',
           'a scattering state with a continuum normalisation' in b22
-          and 'bound tower cannot become by relabelling' in b22)
+          and 'nfinite tortoise interval demands and what a bound tower cannot become by relabelling' in b22)
     check('   and it reports the leaf column as the contrast: "the leaf norm is FINITE and CUT-OFF '
           'INDEPENDENT"',
           'leaf norm is FINITE and CUT-OFF INDEPENDENT' in b22)

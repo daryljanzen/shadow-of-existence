@@ -115,7 +115,7 @@ def main():
     # so this converts to a REGRESSION GUARD on the filling. ***
     check('✔ ⓷ and the half that WAS real is now FILLED (r2706): P3 carries the null connectivity '
           '-- "no null pair among the thirty-six" -- and cites its receipt',
-          'no' in allp and 'null pair among the thirty-six' in allp
+          'no' in allp and 'h the six hinge-ends returns \\emph{no} null pair among the thirty-six\\rcpt{P0' in allp
           and 'P03_slate_worked' in allp)
 
     print()

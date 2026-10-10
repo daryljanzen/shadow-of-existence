@@ -173,7 +173,7 @@ gate("Ⓑ③  ⛔ AND THE TWO DEGREES `r7196` FLAGGED AS MOVING ARE EXACTLY THE 
      abs(T[3][0][0] - 2.741706) < 1e-5 and T[3][0][1:] == (8, 9)
      and abs(T[6][0][0] - 2.747427) < 1e-5 and T[6][0][1:] == (16, 17)
      and all(2.74 < T[k][0][0] < S_OTHER < S_RATIO for k in (3, 6))
-     and 'two of the higher modal values are NOT stable' in JOIN)
+     and 'h STABLE across the whole range of the stretch the paper allows (`$2.74$`--`$2.80$`).* ⌗ **And two of the higher modal values are NOT stable' in JOIN)
 
 # =====================================================================================
 head("C -- AND THE PATTERN IS STRUCTURAL: THE THRESHOLDS FALL AS THE DEGREE FALLS")

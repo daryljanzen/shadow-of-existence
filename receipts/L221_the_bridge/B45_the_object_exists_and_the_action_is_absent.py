@@ -130,7 +130,7 @@ def main():
           'quantises without measuring' in p0 and 'selects without coupling' in p0
           and 'filters without supplying' in p0)
     check('calling it "a property of a one-constant theory rather than a gap awaiting work"',
-          'a property of a one-constant theory rather than a gap awaiting work' in p0)
+          't force a coupling, and its silence about magnitudes is a property of a one-constant theory rather than a gap awaiting work' in p0)
 
     print()
     if FAILED:

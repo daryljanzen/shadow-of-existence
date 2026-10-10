@@ -175,7 +175,7 @@ def main():
     check("⌗ c54.202's footing: the near-horizon geometry of the degenerate member is dS_2 x S^2, "
           'which carries a scale of its own',
           '$\\mathrm{dS}_{2}\\times S^{2}$' in p1
-          and 'carries a scale of its own' in p1)
+          and 's $\\mathrm{dS}_{2}\\times S^{2}$, which carries a scale of its own' in p1)
     check('and it says the two readings are not reconciled there, and claims the coincidence rather '
           'than a value',
           'What is claimed is the coincidence and not a value' in allp

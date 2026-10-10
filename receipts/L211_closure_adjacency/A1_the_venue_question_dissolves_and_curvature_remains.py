@@ -107,11 +107,11 @@ def main():
     #   specification, the two obstructions, the stated emptiness, and the receipt that carries them. **
     check('P13 names the adjacent gap and has since answered it: the compact-face sector "can be '
           'specified, and is obstructed twice" (discharged r6683)',
-          'finds it obstructed twice' in p13
+          'n} specifies that sector and finds it obstructed twice' in p13
           and 'that sector can be specified, and is obstructed twice' in p13)
     check('and what the specification returns is "the emptiness of a definite object", carried by '
           "P13's own receipt of the specification",
-          'what is definite is the emptiness of a definite object' in p13
+          't evade the positive-curvature obstruction, so what is definite is the emptiness of a definite object' in p13
           and 'P13_the_construction_is_specifiable_and_colour_sits_in_the_spin_group' in p13
           and os.path.exists(os.path.join(ROOT, 'receipts', 'P13_boundary_paper',
               'P13_the_construction_is_specifiable_and_colour_sits_in_the_spin_group.py')))
@@ -137,8 +137,8 @@ def main():
           'generate a finite group of order $81$ in $U(3)$' in p14
           and 'whose determinant-one part is $\\Delta(27)$ and lies in $SU(3)$, with the lap as its centre' in p14)
     check('with the configuration group SELECTED rather than chosen',
-          'selected} rather than chosen' in p14 or 'selected\\/} rather than chosen' in p14
-          or '\\emph{selected} rather than chosen' in p14)
+          'y channel the Standard Model has, with the configuration group \\emph{selected} rather than chosen' in p14 or 'selected\\/} rather than chosen' in p14
+          or 'y channel the Standard Model has, with the configuration group \\emph{selected} rather than chosen' in p14)
 
     # and the negative half, which is where the gap moves to
     check('⛭ AND THE BUNDLE IS FLAT: "Flat holonomy supplies exact selection rules and no curvature"',

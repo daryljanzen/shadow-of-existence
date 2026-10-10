@@ -169,7 +169,7 @@ check("⛔ THE KERNEL GETS NO NOISE MODEL: it is a ratio of theory projection in
       "likelihood data, no covariance, no draw", not re.search(NOISE, KER) and 'X_DATA' not in KER
       and 'COV_TT' not in KER, kn[:60])
 check("and its ONLY uncertainty in the repository is systematic -- the two anchorings -- which at the top band "
-      "read +0.0196 and +0.0016", '+0.0196' in KER and '+0.0016' in KER, "mean- and peak-anchored, top band")
+      "read +0.0196 and +0.0016", '+0.0196' in KER and '+0.0016$ and crosses zero, where $G$ is n' in KER, "mean- and peak-anchored, top band")
 TOP_NEED = 0.0762
 check("the top band's need, 0.0762, is the kernel receipt's own figure (+7.62 per cent), not a number chosen here",
       '7.62' in KER, "quoted from the kernel's receipt")

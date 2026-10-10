@@ -262,7 +262,7 @@ def main():
     check('⓺ᵈ P10 sec:lock disposes of the LEADING quartic term itself: it is field-independent, so '
           'it is a constant vacuum energy whose counterterm is a cosmological-constant term -- "the '
           'framework\'s single dimensionful constant, absorbed into the one observed curvature"',
-          'the counterterm a constant vacuum energy requires is a cosmological-constant term' in p10)
+          's a constant vacuum energy, and \\emph{the counterterm a constant vacuum energy requires is a cosmological-constant term' in p10)
     check('⓺ᵉ *** but it says the SUCCESSORS are different in kind: "only the quadratic and '
           'logarithmic successors carry the mass", the logarithmic one going "with curvature-squared '
           'invariants, and a curvature-squared coupling is NOT AN ENTRY IN THIS FRAMEWORK\'S '

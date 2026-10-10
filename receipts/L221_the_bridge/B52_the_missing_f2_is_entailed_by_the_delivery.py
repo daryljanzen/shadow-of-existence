@@ -102,7 +102,7 @@ def main():
     # ⓷ and the exactness and the absence are one fact
     check("⓷ which is why the selection rules are EXACT: they come from a discrete monodromy group, "
           "not from a small coupling -- P14 calls them \"colour's exact selection rules\"",
-          "colour's exact selection rules" in p14)
+          "e is flat, so the construction supplies colour's exact selection rules and n" in p14)
 
     print()
     if FAILED:

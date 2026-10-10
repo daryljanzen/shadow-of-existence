@@ -85,7 +85,7 @@ def main():
 
     check('⛭⛭ and the composite CLOSES charge conjugation: R o K reproduces C\'s action on species, '
           'on |2M|, on the mass-sign and on the Feynman-Stueckelberg wing structure',
-          "reproducing $C$'s action on species" in p7
+          "s an antilinear involution reproducing $C$'s action on species, on $|2" in p7
           and 'Feynman--St\\"uckelberg particle$\\leftrightarrow$antiparticle wing structure' in p7)
     check('with C factorising as (Q -> -Q)_field o (R o K)_geometric',
           'C=(Q\\mapsto-Q)_{\\mathrm{field}}\\circ(R\\circ K)_{\\mathrm{geometric}}' in p7)

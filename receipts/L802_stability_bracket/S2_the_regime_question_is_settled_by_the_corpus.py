@@ -90,7 +90,7 @@ def main():
           'exactly the perturbative regime of the propagating graviton' in p11
           and 'settles the in-regime all-orders stability directly' in p11)
     check('and P11 places the linearized graviton as a de Sitter wave admitting Bunch--Davies '
-          'quantization', 'Bunch--Davies quantization' in p11)
+          'quantization', 's a massive scalar on de Sitter and admits a clean, unitary Bunch--Davies quantization~\\cite{BunchDavies1978' in p11)
 
     # ⓶ the stratum's free data IS that graviton
     check("P9's cor:radiation: \"the graviton's two propagating polarizations are exactly the "
@@ -100,7 +100,7 @@ def main():
     check('⇒⇒ SO THE STRATUM\'S FREE DATA IS THE OBJECT P11 ALREADY PLACES IN THE PERTURBATIVE REGIME '
           '-- two statements about the same thing, never set side by side',
           'exactly the perturbative regime of the propagating graviton' in p11
-          and "The graviton's two propagating polarizations" in p9)
+          and "The graviton's two propagating polarizations are exactly the transverse degrees of freedom a sweep cann" in p9)
 
     # ⓷ the entry condition fixes the size
     check('and the wall is "the loss of all confining symmetry" that FREES those polarizations',

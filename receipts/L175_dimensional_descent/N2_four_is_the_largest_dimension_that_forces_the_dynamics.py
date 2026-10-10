@@ -126,7 +126,7 @@ def main():
           'rejects', 'symmetry-breaking modulus' in p0)
     check('and P14 already applies it to a COUNT: "a one-hinge truncation is excluded not as '
           'disfavoured but as carrying an unfixed arbitrary modulus, which the principle forbids"',
-          'carrying an unfixed arbitrary modulus, which the principle forbids' in p14)
+          'xcluded not as disfavoured but as carrying an unfixed arbitrary modulus, which the principle forbids' in p14)
     check('⇒ so a second Lovelock coefficient is the same kind of object, and NO criterion is added here',
           'symmetry-breaking modulus' in p0 and dynamical(5) == 2)
 
@@ -153,9 +153,9 @@ def main():
     # ⚠ the counter
     check('⚠ AND THE COUNTER: CR takes GR\'s dynamics as GIVEN -- "the construction leaves the dynamics '
           'of general relativity unchanged"',
-          'the construction leaves the dynamics of general relativity unchanged' in p9)
+          'the construction leaves the dynamics of general relativity unchanged, the radiative sector beyond the wall is reached by ordinary evolution of the leaf, n' in p9)
     check('⇒ so the forcing is a PROPERTY the arrangement has, not by itself a REASON for it',
-          'the construction leaves the dynamics of general relativity unchanged' in p9)
+          'the construction leaves the dynamics of general relativity unchanged, the radiative sector beyond the wall is reached by ordinary evolution of the leaf, n' in p9)
 
     print()
     if FAILED:

@@ -140,7 +140,7 @@ def main():
           'applies the criterion at EQUAL count: "The two arms fit the same four parameters, so no '
           'information criterion separates them---penalties of about two per fitted parameter"',
           'single CMB-calibrated' not in re.sub(r'\s+', ' ', papers)
-          and 'It is fitted from the distance data here rather than taken from the microwave background' in p15
+          and 'y.} It is fitted from the distance data here rather than taken from the microwave background, and the invariant is the offset $x_{0}$, read as $\\Omega_m$, and n' in p15
           and 'The two arms fit the same four parameters, so no information criterion separates them' in p15
           and 'penalties of about two per fitted parameter' in p15)
 

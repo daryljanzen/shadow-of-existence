@@ -106,7 +106,7 @@ def main():
     check('p0 states the group preserving the absolute is O(5,1) x R^+',
           'the group preserving the absolute is $\\mathrm{O}(5,1)\\times\\mathbb{R}^{+}$' in p0)
     check('and that it is ONE GENERATOR LARGER than the isometry group',
-          'one generator larger than the substrate\'s isometry group' in p0)
+          's $\\mathrm{O}(5,1)\\times\\mathbb{R}^{+}$, one generator larger than the substrate\'s isometry group' in p0)
     check('and that the extra generator is the dilation alpha -> lambda.alpha',
           'that extra generator is the dilation carrying $\\alpha\\mapsto\\lambda\\alpha$' in p0)
     check('and draws the conclusion the frontier item asks for',
@@ -120,7 +120,7 @@ def main():
 
     # ---- the Cayley-Klein mechanism -------------------------------------------
     check('and a Cayley-Klein geometry carries the scale as its ONLY free constant',
-          'carries the scale as its \\emph{only} free constant' in p0)
+          'carries the scale as its \\emph{only} free constant, signature, null structure and isometry group a' in p0)
     check('so the one-scale reading has a MECHANISM, not just an audit',
           'has a classical mechanism and is not only the outcome of an exhaustive audit' in p0)
 

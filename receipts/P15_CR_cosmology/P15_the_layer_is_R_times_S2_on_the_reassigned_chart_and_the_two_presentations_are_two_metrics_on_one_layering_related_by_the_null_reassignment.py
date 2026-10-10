@@ -254,7 +254,7 @@ head("D.  THE RELATION IS THE CONSTRUCTION'S OWN AND THE PAPER NOW STATES IT -- 
 
 for frag in ("they are \\emph{not} two coordinate presentations of a single metric",
              "e reached from one another by the reassignment of the null condition",
-             "two metrics carried on one ontological layering",
+             "two metrics carried on one ontological layering, isometric through that reassignment and n",
              "the cosmic layers are the surfaces of constant areal radius",
              "is what keeps that reassignment well defined across the lap"):
     print(f"      paper carries: {frag[:62]!r} -> {frag in body15}")
@@ -263,7 +263,7 @@ gate("⓵⓶ the paper states the relation outright -- NOT two coordinate presen
      "the constant-areal-radius foliation as what makes the layering one object",
      "they are \\emph{not} two coordinate presentations of a single metric" in body15
      and "e reached from one another by the reassignment of the null condition" in body15
-     and "two metrics carried on one ontological layering" in body15
+     and "two metrics carried on one ontological layering, isometric through that reassignment and n" in body15
      and "the cosmic layers are the surfaces of constant areal radius" in body15)
 
 gate("⓷ ⛔ AND THE PAPER STATES THE CONSEQUENCE, WHICH IS WHAT THIS GATE EXISTS FOR: a curvature "

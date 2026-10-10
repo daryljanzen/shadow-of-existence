@@ -109,7 +109,7 @@ FAILED = []
 ABSENT = ['systematics', 'systematic error', 'nuisance',
           'beam uncertainty', 'beam window', 'beam error', 'beam transfer function',
           'calibration error', 'unmodelled', 'look-elsewhere', 'trials factor']
-PINNED = {'systematic uncertainty': 1}
+PINNED = {'h a systematic uncertainty and \\emph{no statistical floor at a': 1}
 
 
 def check(label, cond):

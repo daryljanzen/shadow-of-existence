@@ -143,7 +143,7 @@ def main():
              encoding='utf-8', errors='replace').read() if b67 else ''
     check('⓷ S3 (r2819, joint with 56) names FOUR wrong reductions and the substitution they '
           'share: "the NORM measure put where the operator\'s own 1/sqrt f belongs"',
-          'Four reductions returned four wrong answers' in s3
+          'Four reductions returned four wrong answers for the\nwall index (index 2' in s3
           and 'NORM measure put where the operator\'s own\n1' in s3)
     check('⓷ᵇ and one of the four is the imaginary-phase form: "ln P ~ sqrt r"',
           'ln P ~ sqrt r' in s3)

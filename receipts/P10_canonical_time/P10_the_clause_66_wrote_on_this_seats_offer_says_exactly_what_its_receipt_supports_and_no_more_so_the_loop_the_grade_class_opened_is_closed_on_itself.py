@@ -113,7 +113,7 @@ _MOVE = P10[P10.find(_C2):P10.find(_C2) + 320]
 gate("Ⓑ②  CLAIM TWO ATTRIBUTES RATHER THAN CONCEDES, and it is checked as GRAMMAR: the defender"
      " `may grant` and `hold instead`, so the objection is reported with its hedges attached and"
      " not adopted as a premise of the paragraph",
-     'may grant that no f' in _MOVE and 'hold instead' in _MOVE
+     'may grant that no f' in _MOVE and 'o finite exterior time contains it and hold instead' in _MOVE
      and 'a defender of the completed horizon may grant that no f' in _MOVE)
 
 gate("Ⓑ③  and `no metric separation` is `P1`'s OWN phrase for this object, so the clause's strongest"

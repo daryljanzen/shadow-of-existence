@@ -221,7 +221,7 @@ check("Ⓔ③  ** and the family is `P7`'s own result, read from its source: one
       "energy, the two ends being the horizon cubic and the turnaround cubic ** -- so the turnaround "
       "stands to the cosmological member as a horizon does to the maximally bound one, which is a "
       "statement about KIND and not about location",
-      'The two turning cubics are two energies of one congruence' in P07
+      'The two turning cubics are two energies of one congruence]\\label{rem:tworealisations} The inequivalence of Lemma~\\ref{lem:twoturnings} is n' in P07
       and 'the marginally bound member $E=1$' in P07
       and 'gives $r^{3}-\\alpha^{2}r+2M\\alpha^{2}=0$, the horizon cubic $f=0$' in P07)
 

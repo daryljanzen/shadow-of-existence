@@ -141,7 +141,7 @@ _P15n = re.sub(r'\s+', ' ', open(os.path.join(_ROOT, 'corpus', 'CR_cosmology.tex
 check('the perturbations run on the leaf congruence, whose matter--radiation equality is fixed by '
       'the epoch the distance data fix, so the plasma\'s early history is radiation-dominated and '
       'the modes carrying the first peak enter the horizon while it is' in _P15n
-      and 'The driving is therefore on the expanding leg' in _P15n
+      and 'The driving is therefore on the expanding leg}, and the collapse leg\'s contribution to the state that meets it is an amplitude and n' in _P15n
       and 'The driving is measured on both arms by subtraction and this one\'s is the control\'s to '
           'four per cent' in _P07n,
       "⛭ and THE CORRECTED STATEMENT stands now: P15 says the modes carrying the first peak \"enter "

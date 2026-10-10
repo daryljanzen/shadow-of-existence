@@ -141,7 +141,7 @@ def main():
     check('and the list states what each item STANDS AT rather than what was removed from it -- '
           'r3119 sharpens this into two kinds: "Work is something unworked that a definite '
           'computation would close" against "A boundary is a result rather than a gap"',
-          'is something unworked that a definite computation would close' in p7f
+          'e of two kinds, and a reader is owed the difference.} \\emph{Work} is something unworked that a definite computation would close' in p7f
           and 'boundary} is a result rather than a gap' in p7f
           and 'has not failed to empty; it has finished' in p7f)
 

@@ -112,7 +112,7 @@ def main():
         if not l.lstrip().startswith('%')))
     check('⓷ and P14 binds its zero-mode in the LEAF measure, noting the same mode "does not '
           'normalize" against the tortoise -- ** so the leaf measure governs the Dirac problem **',
-          'does not normalize' in p14 and 'the horizons standing infinitely far' in p14)
+          'does not normalize' in p14 and 'e static mode does \\emph{not} normalize, the horizons standing infinitely far' in p14)
 
     # ⓸ L-829 names its remainder
     # ⛔⛭⛭ AMENDED r3132 (`L-258`).  ** THIS CHECK COUNTED THE FILES IN A DIRECTORY: `len(l829) == 1`. **

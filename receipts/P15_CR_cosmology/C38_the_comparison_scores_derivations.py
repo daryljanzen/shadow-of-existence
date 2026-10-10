@@ -123,11 +123,11 @@ def main():
           'fitted and not a test',
           'The quantities this cosmology actually uses are the epoch $x_{0}$ (equivalently '
           '$\\Omega_m=2/(x_{0}^{3}+2)$' in p15
-          and 'which the rate carries and the baryon-acoustic data fix' in p15)
+          and 't the offset itself, which the Nariai condition fixes at $\\alpha/\\sqrt3$}), which the rate carries and the baryon-acoustic data fix' in p15)
     check('and $A_s$ is "anchored" at the first peak by a value the construction "inherits rather '
           'than predicts" -- also not a test',
           'the first peak is where the amplitude is anchored' in p15
-          and 'inherits rather than predicts' in p15)
+          and 's where the amplitude is anchored, by an $A_s$ this construction inherits rather than predicts' in p15)
 
     # ⓷ and this receipt reports no score
     src = open(os.path.abspath(__file__), encoding='utf-8', errors='replace').read()

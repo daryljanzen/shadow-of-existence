@@ -156,7 +156,7 @@ def main():
     check('and P15 carries NO early-universe parameter for it to be: the angle is "an output of the '
           'rate rather than a calibration of it"',
           'There is no early-universe parameter among them' in p15
-          and 'the angle is an output of the rate rather than a calibration of it' in p15)
+          and 'h the plasma handed over at the branch point the sound horizon has no lower endpoint to place, so the angle is an output of the rate rather than a calibration of it' in p15)
     # ** r6931+70.1: P16 IS READ WITHOUT ITS COMMENTS.  The pin this replaces was satisfied by
     #   P16's MASTHEAD, a `%` comment the paper never printed -- the instance L237/G50 records from
     #   r2656's tree.  A claim about what the paper says is tested on what it prints.

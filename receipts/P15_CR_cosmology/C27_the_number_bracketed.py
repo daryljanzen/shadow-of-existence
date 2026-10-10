@@ -146,7 +146,7 @@ def main():
     # ⓷ the bracket
     check('⓷ P15 uses a Peebles history: "a full photon hierarchy with polarisation, second-order tight '
           'coupling, massless neutrinos, and a Peebles recombination history"',
-          'and a Peebles recombination history' in p15)
+          's a full photon hierarchy with polarisation, second-order tight coupling, massless neutrinos, and a Peebles recombination history' in p15)
     # ** r6931+70.3 (PO-60, the vacuous green): THE `'8.2' in p15` CONJUNCT WAS HELD UP BY A BARE
     #    NUMBER.  Class (a).  It stood for r2755's corrected sentence, "$\\theta_{D}/\\theta_{*}$
     #    larger by $8.2\\%$", which the retirement of the fitted onset (r6770+66.3) and the common

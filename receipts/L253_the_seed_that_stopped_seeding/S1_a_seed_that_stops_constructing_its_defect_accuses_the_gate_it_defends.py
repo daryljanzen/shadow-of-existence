@@ -322,7 +322,7 @@ def main():
           f'{d[2]} -- so 524 is the BEFORE count printed beside the AFTER total',
           b == (546, 525, 21) and d == (547, 524, 23))
     check('⓻ᵇ and the head is corrected in place and says why, rather than being quietly restated',
-          'CORRECTED r3125' in m1_new and '524 is the PRE-repair parsed count' in m1_new)
+          'e this revision collapsed the two duplicate rows.)*\n  ⚠ ** CORRECTED r3125' in m1_new and '524 is the PRE-repair parsed count' in m1_new)
 
     print()
     if FAILED:

@@ -93,7 +93,7 @@ def main():
           "the three wall modes are one operator's kernel and therefore identical particles" in p14)
     check('and that is what makes the count an INDEX: the leaf is compact and its Dirac operator '
           'carries a well-defined analytical index',
-          'its Dirac operator carries a well-defined analytical index' in p14)
+          's \\emph{finite} total length\\rcpt{P14_leaf_compactness}, so the leaf is compact and its Dirac operator carries a well-defined analytical index' in p14)
     check('⇒ so the coloured three cross to fields BECAUSE they are a kernel: '
           'kernel -> identical particles -> second quantisation -> fields',
           "e one operator's kernel" in p14 and 'Second quantisation' in p14)
@@ -136,7 +136,7 @@ def main():
     check('⇒ SO THE UNBUILT THING WAS AN OPERATOR\'S KERNEL, NOT A SECTOR -- and P13 discharged it by '
           'exhibiting the operator and finding the kernel empty: "the emptiness of a definite object"',
           "e one operator's kernel" in p14
-          and 'what is definite is the emptiness of a definite object' in p13)
+          and 't evade the positive-curvature obstruction, so what is definite is the emptiness of a definite object' in p13)
 
     # ** and nothing is built here **
     check('⛔ and nothing here exhibits such an operator or argues one exists -- PO-5 stays open',

@@ -78,7 +78,7 @@ def main():
     check('⛭⛭ ⓵ `S3` is present and shows $\\sqrt f$ is an OVERALL FACTOR of the zero-mode equation, so '
           'it cancels and the index is real regardless of $f$\'s sign',
           # ** match the receipt's own body, not its filename **
-          len(s3) == 1 and 'sqrt(f) is a' in
+          len(s3) == 1 and 'sqrt(f) is a COMMON FACTOR of the operator equation in r, n' in
           open(s3[0], encoding='utf-8', errors='replace').read())
 
     # ⓶ where is r spatial?

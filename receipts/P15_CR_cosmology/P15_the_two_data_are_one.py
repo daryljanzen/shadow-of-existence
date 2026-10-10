@@ -114,7 +114,7 @@ gone = 'These are\ndistinct data of the same handover'
 #   where P7 now states it; read whitespace-flattened because the paragraph is hard-wrapped. **
 _p7n = ' '.join(p7.split())
 here = ('One quantity the handover does not supply is a second datum beside $\\eta$',
-        'so it is the start restated rather than an inheritance')
+        'so it is the start restated rather than an inheritance, and with the handover at the branch point there is n')
 print(f"  P7's superseded sentence ('distinct data of the same handover') is GONE: ** {gone not in p7} **")
 print(f"  P7 now carries the corrected accounting:                              ** "
       f"{all(h in _p7n for h in here)} **")

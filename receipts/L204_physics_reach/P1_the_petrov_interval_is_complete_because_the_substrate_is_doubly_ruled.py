@@ -101,7 +101,7 @@ def main():
     check('P9 claims the operator fills the sector "across every algebraic (Petrov) type"',
           'across every algebraic (Petrov) type' in p9)
     check("and in the same passage names the range as Petrov type O, D and I",
-          "the operator's whole range---Petrov type~O, D, and I" in p9)
+          "s the count of coincident principal null directions, and the operator's whole range---Petrov type~O, D, and I" in p9)
     for t in ('Type~II', 'Type~III'):
         check(f'⛔ and {t} appears ZERO times in P9', len(re.findall(re.escape(t), p9)) == 0)
     check('⇒ so a reader counting six types finds four named',
@@ -152,11 +152,11 @@ def main():
           'unreachable by construction',
           types['II'] == 1 and types['III'] == 1 and 'II' not in reachable and 'III' not in reachable)
     check('⇒⇒ SO THE INTERVAL O--D--I IS COMPLETE AND P9\'s CLAIM IS CORRECT',
-          reachable == {'O', 'I', 'D'} and "the operator's whole range---Petrov type~O, D, and I" in p9)
+          reachable == {'O', 'I', 'D'} and "s the count of coincident principal null directions, and the operator's whole range---Petrov type~O, D, and I" in p9)
 
     # ⓸ the station's other three items
     check("the field equations: P9 leaves GR's dynamics unchanged",
-          'the construction leaves the dynamics of general relativity unchanged' in p9)
+          'the construction leaves the dynamics of general relativity unchanged, the radiative sector beyond the wall is reached by ordinary evolution of the leaf, n' in p9)
     check('the catalogue is held richly -- Kerr, Zipoy--Voorhees, Gowdy, Einstein--Rosen, C-metric',
           all(k in p9 for k in ('Kerr', 'Zipoy', 'Gowdy')))
     check('and the Carter constant is held, via the Type-D Killing tensor',

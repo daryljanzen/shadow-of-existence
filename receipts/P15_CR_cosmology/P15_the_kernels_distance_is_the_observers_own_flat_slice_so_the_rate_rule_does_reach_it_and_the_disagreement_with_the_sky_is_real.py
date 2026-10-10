@@ -301,7 +301,7 @@ head("F.  ⌗ THE ONE REMAINDER, AND THE SCOPE")
 gate("the licensing step is an IDENTIFICATION and not a derivation: the paper reaches "
      "$j_\\ell(k_L D_C)$ from the flatness of the slice plus the exact recovery, and the harmonic "
      "expansion is never carried out in the proper frame itself",
-     "projected through the flat spherical Bessel $j_\\ell(k_L D_C)$" in body15
+     "d-$S^3$ spectrum projected through the flat spherical Bessel $j_\\ell(k_L D_C)$, \\emph{n" in body15
      and "hyperspherical transfer of a literal closed universe" in body15)
 gate("⇒ so the bounded calculation that would settle it is named and NOT done here: expand on the "
      "constant-$\\tau$ slice with the observer at a general point of it and show the $\\ell$-space "
