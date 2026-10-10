@@ -1,0 +1,2 @@
+ancestor-related pairs on one id: 464
+ids with an ancestor-related pair from two different sessions: 1  of which not already collisions: 0

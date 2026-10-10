@@ -1,0 +1,26 @@
+HEAD: ancestry rule 65  first-parent rule 71  new 6  unbaselined ['r4011', 'r7164', 'r7166', 'r7168', 'r7170', 'r7185']
+   r4011
+       606ce176 Claude (framework node)| | 60's r4011-r4035 merged and the dependency grains re-derived from the 
+       dc3007fc claude| | node 61 takes the odd half, and the band table says so before anything
+   r7164
+       f0fdf6fa ai/code/session_01XXeapZm1snJuJTXbjf7Wtv | - the L-to-ell map is a projection and not a relabelling, the vector s
+       bfbb75cd ai/code/session_019ueTyssVbFDSERkfHfUeP9 | both r7163 orders answered -- no paper fixes the primordial normalisat
+   r7166
+       05695815 ai/code/session_01XXeapZm1snJuJTXbjf7Wtv | - the four-dimensional treatment keeps the economy and keeps more of i
+       ced76bf0 ai/code/session_019ueTyssVbFDSERkfHfUeP9 | the vector and tensor sectors on the squashed layer, both taken -- the
+   r7168
+       09161f5c ai/code/session_01XXeapZm1snJuJTXbjf7Wtv | the metric-singularity result stands as a theorem of general relativit
+       60dc8766 ai/code/session_019ueTyssVbFDSERkfHfUeP9 | PO-83 taken -- the row does not move, because the companion avoids the
+   r7170
+       b5d8d879 ai/code/session_01XXeapZm1snJuJTXbjf7Wtv | the INDEX row asserted the negation of its own repaired receipt -- PO-
+       3716906b ai/code/session_019ueTyssVbFDSERkfHfUeP9 | the four-dimensional step -- the economy is kept, and more of it than 
+   r7185
+       d83b3566 ai/code/session_016UGsAoKQqfy7NtXf7hss6E | the crossing rides the characteristic that crosses, and the thermal fa
+       32fa47ec ai/code/session_01XXeapZm1snJuJTXbjf7Wtv | orders — one to cc66 (what a crossing at finite proper time does to a 
+       d7b1dd03 ai/code/session_01XXeapZm1snJuJTXbjf7Wtv | the back seam is the collapsing matter's event horizon, the lap's only
+AT 5af2a1da54: ancestry rule 12  first-parent rule 12  new []
+citation r6975 does not fire
+citation r6983 does not fire
+citation r7189 does not fire
+citation r7217 does not fire
+citation r7225 does not fire
