@@ -45,6 +45,7 @@ COMPUTES: nothing the papers quote.  This receipt converts one prefix of the quo
 vocabulary and a clause another seat bound, against its own published per-key tables and the baseline
 read as data; no physical parameter is pinned here.
 """
+import ast
 import collections
 import json
 import os
@@ -278,37 +279,80 @@ def _git(*a):
                           errors='replace').stdout
 
 
+# ⛔ ** AND THESE THREE GATES WERE QUOTE PINS ON THEIR FIRST FORM, WHICH THE OPERATOR CAUGHT BEFORE
+#   THEY SHIPPED. **  *They asserted that strings like `TABLE_PIN` and `UNINSTANTIATED` were PRESENT in
+#   two other files -- `9` new keys in the very class this receipt is about, and of exactly the shape
+#   it verdicts `CONDITION`: a claim about another file's live text.*
+#   ⇒ ** Replaced by STRUCTURE and by MEASUREMENT, which is the repair this receipt prescribes applied
+#   to itself: the two repaired receipts are parsed and their code shape asserted, and the claim about
+#   this tree's history is measured HERE rather than quoted from the receipt that first made it. **
+def _shape(rel):
+    """the code facts, by parsing: module-level names, function arities, gate count"""
+    tree = ast.parse(open(os.path.join(ROOT, rel), encoding='utf-8').read())
+    names, funcs = set(), {}
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Assign):
+            for t in n.targets:
+                if isinstance(t, ast.Name):
+                    names.add(t.id)
+        if isinstance(n, ast.FunctionDef):
+            funcs[n.name] = len(n.args.args)
+    gates = sum(1 for n in ast.walk(tree) if isinstance(n, ast.Call)
+                and isinstance(n.func, ast.Name) and n.func.id in ('gate', 'check'))
+    return names, funcs, gates
+
+
 S16 = ('receipts/L_probability/S16_the_prefix_is_a_rewriting_job_not_an_adjudication_one_and_its_'
        'paper_half_and_source_half_have_opposite_right_answers.py')
-_s16 = open(os.path.join(ROOT, S16), encoding='utf-8').read()
-print(f"      S16 now reads its agreement at a pin: {'TABLE_PIN' in _s16};"
-      f"  and asserts the live state separately: {'Ⓐ③ᵇ' in _s16}")
-gate("Ⓔ① ⛔ THE RECEIPT THAT REPORTED THE `171` ASSERTED THAT ITS TABLE MATCHED THE BASELINE *NOW*, so"
-     " converting the prefix red it -- a gate going red on the success of the work its own receipt"
-     " reported, in the same shape `66` repaired twice in the previous cycle.  ✔ *Repaired here by"
-     " `L-249`'s rule: the agreement is asserted AT THE COMMIT THE TABLE WAS WRITTEN AT, and the live"
-     " state is asserted separately as the only property that is monotone -- every key still"
-     " adjudicated, whatever the vocabulary has become*",
-     'TABLE_PIN' in _s16 and 'Ⓐ③ᵇ' in _s16 and 'may convert' in _s16)
-
 S5 = ('receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_'
       'of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py')
-_s5 = open(os.path.join(ROOT, S5), encoding='utf-8').read()
-gate("Ⓔ② ✔ AND THE ORDERED REPAIR IS IN, WITH THE CONTROL THE ORDER ASKED FOR: the authorship test is"
-     " now three-valued -- a path whose introducing commit is a MERGE, or carries no revision id at"
-     " all, is UNATTRIBUTED rather than owned -- the decision is a pure function of the commit's"
-     " record so the merge arm can be controlled without inventing a merge, and all four outcomes are"
-     " asserted two-sidedly",
-     '_classify(parents, subject)' in _s5 and 'UNATTRIBUTED' in _s5
-     and 'Ⓕ②ᶜ' in _s5 and 'Ⓕ②ᵈ' in _s5)
+_n16, _f16, _g16 = _shape(S16)
+_n5, _f5, _g5 = _shape(S5)
+print(f"      S16 by structure: TABLE_PIN defined {('TABLE_PIN' in _n16)}, {_g16} gate call(s)")
+print(f"      S5  by structure: _classify arity {_f5.get('_classify')}, "
+      f"_introduced_record defined {('_introduced_record' in _f5)}, {_g5} gate call(s)", flush=True)
+gate("Ⓔ① ⛔ THE RECEIPT THAT REPORTED THE `171` ASSERTED THAT ITS TABLE MATCHED THE BASELINE *NOW*, so"
+     " converting the prefix red it -- a gate going red on the success of the work its own receipt"
+     " reported, in the same shape repaired twice in the previous cycle.  ✔ *Repaired by `L-249`'s"
+     " rule, and checked HERE BY PARSING rather than by quoting its text: it now defines a commit pin"
+     " at module level and carries one more gate than it did, the live state having been split off"
+     " into its own*",
+     'TABLE_PIN' in _n16 and _g16 >= 15)
 
-gate("Ⓔ③ ⛔ AND THE MEASUREMENT THAT CAME WITH IT CORRECTS THE DIAGNOSIS IT WAS ORDERED FROM: over a"
-     " `300`-path sample NO receipt of this tree has a merge as its introducing commit, so the hazard"
-     " `66` named is real and UNINSTANTIATED -- while `13` carry an introducing commit with no revision"
-     " id, from the naming eras before them.  ⇒ *The live defect is the one nobody named, and it is"
-     " now classified the same way; the named one is a guard with a control rather than a repair with a"
-     " population*",
-     'UNINSTANTIATED' in _s5 and 'c54.NNN' in _s5)
+gate("Ⓔ② ✔ AND THE ORDERED REPAIR IS IN, ALSO CHECKED BY PARSING: the authorship decision is now a"
+     " FUNCTION of the introducing commit's record -- two parameters, the parents and the subject --"
+     " beside a reader that returns that record, so a path whose introducing commit is a merge or"
+     " carries no revision id can be classified UNATTRIBUTED rather than owned.  ⌗ *The arity is the"
+     " point: factoring the decision out is what let the merge arm be controlled without inventing a"
+     " merge in history*",
+     _f5.get('_classify') == 2 and '_introduced_record' in _f5 and _g5 >= 29)
+
+_SAMPLE = 120
+_paths = sorted(f for f in _git('ls-tree', '-r', '--name-only', 'HEAD', 'receipts/').split('\n')
+                if f.endswith('.py'))
+_step = max(1, len(_paths) // _SAMPLE)
+_cls = collections.Counter()
+_REV = re.compile(r'\br(\d{4})\b')
+for _p in _paths[::_step][:_SAMPLE]:
+    _o = [l for l in _git('log', '--diff-filter=A', '--format=%H|%P|%s', '--', _p).strip().split('\n')
+          if l.strip()]
+    if not _o:
+        continue
+    _h, _P, _subj = _o[-1].split('|', 2)
+    if len(_P.split()) > 1:
+        _cls['MERGE'] += 1
+    elif _REV.search(_subj) is None:
+        _cls['NO-REVISION-ID'] += 1
+    else:
+        _cls['EVEN' if int(_REV.search(_subj).group(1)) % 2 == 0 else 'ODD'] += 1
+print(f"      this receipt's OWN measurement over {sum(_cls.values())} receipt paths: {dict(_cls)}")
+gate(f"Ⓔ③ ⛔ AND THE MEASUREMENT CORRECTS THE DIAGNOSIS THE REPAIR WAS ORDERED FROM, MEASURED HERE AND"
+     f" NOT QUOTED: over {sum(_cls.values())} paths of this tree NOT ONE receipt has a MERGE as its"
+     f" introducing commit --- so the hazard the order named is real and UNINSTANTIATED --- while"
+     f" {_cls['NO-REVISION-ID']} carry an introducing commit with no revision id at all, from the"
+     f" naming eras before them.  ⇒ ***So the live defect is the one nobody named, and the named one is"
+     f" a guard with a control rather than a repair with a population***",
+     _cls['MERGE'] == 0 and _cls['NO-REVISION-ID'] > 0 and sum(_cls.values()) >= 100)
 
 # =====================================================================================
 head("F -- WHAT THE LEDGER LOOKS LIKE AFTER IT, AND WHAT THIS RECEIPT DOES NOT TOUCH")
