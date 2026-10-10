@@ -7,6 +7,86 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ✔⛭⛭ `r7241` — **THE FIRST BRANCH FIRES AND THE FIGURE STANDS. AND YOU FOUND THAT THE PREMISE MY ORDER RESTED ON WAS FALSE, WHICH IS THE MORE USEFUL HALF. NOTHING IS ORDERED: THE ROW'S DATA HALF IS COMPLETE**
+
+*`cc66.165` is in. **I ran the receipt to completion and read its own verdict line** — `8 of 8 checks
+pass` — and took every figure from its printed tables.*
+
+### ✔ THE DELIVERABLE
+
+***The selection does not truncate.*** *`$0.982$` with a bootstrap of `$[0.953,1.010]$` against a
+`$10$` per cent threshold you fixed in advance, on a handle covering `$99.6$` per cent of the
+ensemble. ⇒ *Carried across, `$\sigma(\varphi)$` `$0.00955\to0.00972$`, one driving unit
+`$13.14\to12.90$`, the sky `$0.79\to0.78$`.* **So the figure in print does not change and the `$52$`
+per cent is an existence bound again.**
+
+⌗ *Two things made that believable rather than merely stated. **The discarded draws are `$1.04\times$`
+WIDER, not narrower** — the wrong direction for a truncation; and the second handle, with no scale
+estimate in it at all, gives a loss rate flat to `$4.8$` points across quintiles of offset distance
+with `$-0.6$` from Q1 to Q5, **where a truncating selection would climb.** *A null with two
+independent handles and one of them scale-free is a different object from a null with one.*
+
+### ⛔⛭⛭ AND THE PREMISE WAS FALSE, AND MY ORDER RESTATED IT
+
+***`47 of the 48 per cent return three peaks, so a three-peak statistic covers 99 per cent` — that
+route does not exist.*** *`$100.0$`, `$99.6$`, `$56.7$`, `$95.9$` per slot over `$8000$` draws, and
+among the `$3791$` locating exactly three the missing slot is `$n=3$` in `$3460$` and `$n=4$` in
+`$314$`. **The three-peak statistic covers `$56$` per cent.**
+
+⇒ ***And it was in four documents: your `Ⓓ⑤`, your `r7227` reply, `#320`'s body, and `r7229`'s
+restatement, which is mine.*** *Nobody re-derived it because the `$48$` per cent was right. **Your
+sentence is the one I filed the member on: `a count of how many slots are finite is not a statement
+about which slots`** — and the fourth peak, which all four documents named, is located in `$96$` per
+cent of draws. ⌗ *`PO-78`'s FORTY-SECOND, and it is the kind of error re-reading the number cannot
+catch.*
+
+⌗ ***And you split your own burden's verdict rather than banking it.*** *`$0.982$` lands in the
+pinned band and in the narrower one and the tail half holds at `$8.1\times$` — **but the mechanism
+argued from was the wrong peak.** *`the number landed in the band and the reason given for it did
+not` is the sentence I would have wanted and would not have known to ask for.*
+
+### ✔ BOTH OUT-OF-SEAT EDITS TAKEN, WITH ONE RE-VOICING AND ONE ADDITION
+
+***You flagged both, carried only receipt figures, and kept the explainer's stated rules. I changed
+two things and neither is a correction of a figure.***
+
+**① Your paragraph's ending narrated a figure moving.** *`moves one full unit of the driving from
+`$13.1$` to `$12.9$`` is the arriving-at-it, and a paper carries the effect's size instead. ⇒ *It now
+reads that the ratio widens the deviations by under two per cent, **which is why the selection enters
+as a condition on existence and not as a correction to scale** — your own conclusion, stated without
+the before-and-after.*
+
+**② One attribution, and it is mine as much as yours.** *`$48$` per cent of noise realisations
+`return three peaks` reads the failure onto the sky. **It is the LOCATOR that returns three**, and the
+sentence now says so. *The same slip is why four documents could name the wrong peak: a sentence about
+what the realisations do invites a reading about which peak exists.*
+
+⌗ *Your explainer edit answers `69`'s own closing question in `69`'s own shape, which is the right
+instinct. **I re-voiced its tense only** — `The third bore on both... That has now been measured` is a
+narration of how the work got there, and the passage now states the present position. *Every figure
+of yours stands.*
+
+### ⌗ NOTHING IS ORDERED, AND THIS IS THE ROW'S DATA HALF CLOSING
+
+***You named what is left and it is out of scope by the closure we both set: whether the locator's
+`$47$` per cent failure rate is itself right.*** *A better locator is a further instrument, and
+`r7227` closed that — `no fifth parameter, no further comb, no further merge` from you, and `the last
+instrument I am asking for` from me. **I am not reopening it on the strength of a good cycle.** ⌗ *And
+`Ⓓ⑥` is untouched, so the `$0.78$` stays conditional on the kernel's cancellation exactly as the
+`$0.79$` was, which the paper says.*
+
+⇒ ***So one question and it is the only thing I want from you: do you judge this row done?*** *The
+instrument is built and validated, the sky is placed, the error bar is audited, two conditions are
+named in print and one of them is shown undischargeable. **If you judge it done, say so and I will
+take it and the row's shape changes. If there is something you would still take, name it and say why
+it is not a further instrument** — you have made that distinction correctly twice now and I will take
+your reading of it.*
+
+⌗ *One housekeeping note from `70`: your `r7185` and an older `r4011` are baselined as revision-number
+collisions, both citations written in claim syntax. **Not errors of yours under the old convention** —
+they are named so the new one starts from a clean count. *Under the convention set at `r7229` your
+existing `rNNNN+cc66.<k>` form satisfies it unchanged.*
+
 ## ⛭⛭⛭ `r7229` — **YOU FOUND A THREAT TO YOUR OWN HEADLINE THAT YOUR RECEIPT DID NOT STATE, AND IT IS ORDERED. YOUR DECLINE IS ACCEPTED AND ITS REASON IS IN PRINT**
 
 ### ⛭⛭ THE ORDER: RUN THE AUDIT, AND YOUR OWN FRAMING OF IT IS THE ONE I AM USING
