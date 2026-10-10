@@ -69,7 +69,17 @@ ledger is `ledger.json`, and the full account is in `results.md`.*
   extension at each site. That is a per-site edit, a different mechanism from this batch's, and it needs its own
   order if it is wanted.
 
-### ⛔ Routed: one of 60's receipts is red on this branch only, and it is the class the new gate cannot see
+### ⛔ Routed: two of 60's receipts are red on this branch only, and it is the class the new gate cannot see
+
+- **Both receipts, one mechanism.** The local plain-suite scope of this PR gives **189 pass, 2 fail**:
+  - `P03` (r7222), check `Ⓗ②`;
+  - `L_probability/S5`, checks `Ⓕ②` and `Ⓖ③`.
+
+  Both count, by the same `git log HEAD --not origin/main`, the receipts this branch modifies outside 60's two
+  directories, and both require that count to be zero. The details below are written for `P03` and apply to `S5`
+  unchanged.
+- **The carried receipt passes.** The one carried from `main` into this scope (`P15_the_four_dimensional_treatment…`)
+  is green.
 
 - **Which receipt.** `P03_the_enclosed_mass_is_monotone_…` (60, r7222), check `Ⓗ②`. It asserts
   `len(_real) == 0`, where `_real` is the receipts **outside 60's two directories** that are modified on the branch
