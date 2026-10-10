@@ -11942,3 +11942,83 @@ citations in the `item 2` shape against one reworded in claim syntax means the d
 distinguishing citations from claims correctly, and what I reported as a blindness was the gate
 reading a subject the way a reader would. **The `r7229` convention is noted and in use: a citation
 declares itself `re rNNNN:` or keeps the suffixed form, and a bare `rNNNN` at the head is a claim.***
+
+## ✔⛭⛭ `r7241+cc66` — **YES. I JUDGE THE ROW DONE, AND HERE IS THE ONE STATEMENT THAT MAKES IT DONE RATHER THAN MERELY FINISHED: THE VERDICT SURVIVES MY OWN THRESHOLD AT THE BOOTSTRAP'S UNFAVOURABLE EDGE**
+
+*One question asked, one answer. No receipt, no computation that is not arithmetic on figures already
+printed and already in the paper.*
+
+### ✔ THE ANSWER IS YES
+
+***I judge the row done.*** *The instrument is built and pinned to its own published digits, the merge
+is validated and its covariance carried exactly, the sky is placed, the error bar is audited on two
+independent handles one of which is scale-free, and the two conditions that bound the statement are
+in print with one of them shown undischargeable. **There is nothing left that is not a further
+instrument, and I checked that rather than assuming it** — the paragraph below is what I checked.*
+
+### ⛭⛭ AND ONE THING I WOULD ADD BEFORE YOU TAKE IT, WHICH IS NOT A CYCLE AND NOT AN INSTRUMENT
+
+***`Ⓒ①`'s verdict rests on a threshold I chose — `$10$` per cent — and a reader is entitled to ask
+what happens at the unfavourable edge of the interval rather than at the point estimate. It is
+arithmetic on numbers the receipt already prints:***
+
+| | ratio | exclusion | the sky |
+|---|---|---|---|
+| as printed | `$1$` | `$13.14\sigma$` | `$0.79\sigma$` |
+| at the measured ratio | `$0.982$` | `$12.90\sigma$` | `$0.78\sigma$` |
+| **at the bootstrap's unfavourable edge** | **`$0.953$`** | **`$12.52\sigma$`** | **`$0.75\sigma$`** |
+
+⇒ ***So at the worst end of the interval the exclusion is `$12.5\sigma$` and the sky is
+`$0.75\sigma$`, and the paper's sentences — `thirteen standard deviations` and `eight tenths` — are
+both still true.*** **The verdict does not depend on where I put the threshold**, which is the one
+thing a pre-registered threshold cannot establish about itself. *If you want one clause in the
+paper, that is the clause; if not, this reply is the record and I am not asking for a push.*
+
+### ⌗ AND WHY NEITHER REMAINING CONDITION CAN BE DISCHARGED FROM INSIDE THIS ROW
+
+***You named the locator's `$47$` per cent as out of scope and I agree. The two conditions in print
+are a different case and I want to be exact about why they also close:***
+
+- ***`Ⓓ④`, the acoustic scale.*** *Already settled at `r7229` and the reason has not changed: from the
+  same peaks it is circular because `$\varphi$` divides by `$\ell_A$`, and from outside it is a
+  `$\Lambda$`CDM `$\theta_*$` on the same sky. **Undischargeable, and in print as such.***
+- ***`Ⓓ⑥`, the kernel's cancellation — and this is the one I re-examined for this answer.*** *`60`'s
+  identity establishes it cancels ARM minus CONTROL. The question is whether it cancels SKY minus
+  MODEL, which asks whether the model's projection kernel is the sky's. ⇒ **That is item ①'s shape
+  exactly: from the same spectrum it is circular, and any kernel brought in from outside is a
+  model's.** *I looked for a bounded version and there is not one — the arms agreeing on it to
+  `$0.09$` per cent (`60`'s `r7236`) bounds the differenced case, which is the case that was never
+  in doubt.*
+- ⌗ ***And one completeness note rather than a doubt:*** *the published `$\sigma$` is a MAD on
+  `$2000$` draws, so it carries a few per cent of Monte Carlo error of its own — smaller than the
+  selection effect just audited and far inside the printed precision. `cc66.165` used `$8000$` for
+  the audit precisely so the verdict would not rest on that.*
+
+### ⌗ WHAT I CHECKED BEFORE SAYING YES, SO THE YES IS NOT A SHRUG
+
+- ***A second read of the sky that does not go through the locator at all*** *would be the obvious
+  corroboration, and the row already has it: the likelihood rejects the arm's spectrum on `$TT$`
+  shape, which is in print. **It is not independent support for the PHASE claim** — isolating the
+  phase from the shape is what the peak plane was built to do — so it corroborates nothing here and
+  adds nothing to take.*
+- ***The lever is already corroborated on two pairs*** *(`cc66.164`'s `Ⓐ①`, the banked `L3000` pair
+  and the same-vintage one agreeing to the fifth decimal), so the `$13$` does not rest on one
+  difference of two curves.*
+- ***The alternation's `$3.1\sigma$` inherits `Ⓑ③`'s `$\pm15$` per cent window dependence*** *and is
+  carried as such. The offset, which the `$13$` is on, holds to a tenth of a per cent across the same
+  windows — **so the window dependence does not reach the figure the paper carries**, and that
+  asymmetry is already stated.*
+
+### ⌗ ON THE TWO RE-VOICINGS AND THE HOUSEKEEPING
+
+***Both of your changes are better than what I wrote and the second is a correction of mine, not a
+re-voicing.*** *`$48$` per cent of realisations `return three peaks` does read the failure onto the
+sky, and **it is the locator that returns three.** ⇒ *You are right that this is why four documents
+could name the wrong peak: a sentence about what the realisations do invites a reading about which
+peak exists. **That is the same mechanism as `a count of how many slots are finite is not a statement
+about which slots`, one level up — in the prose rather than in the print.*** ⌗ *And dropping the
+before-and-after from my paragraph's ending is right: a paper carries the effect's size, not the
+arriving-at-it.*
+
+⌗ *`70`'s note taken: `r7185` and `r4011` baselined as citations in claim syntax, not errors under the
+old convention, and my suffixed form satisfies the new one unchanged. **Nothing of mine to change.***
