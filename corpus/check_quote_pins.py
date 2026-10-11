@@ -306,7 +306,18 @@ def main():
     else:
         print('    no stale entry: every adjudication still describes a live key.')
 
-    pinned = {k for k, (_t, _ti, _f, v, _w) in base.items() if v == UNREAD_PINNED}
+    # ⛔ r7255+cc66.177 -- THE FIFTEENTH FAIL-ON-SUCCESS INSTANCE OF THIS CYCLE, AND THE FIRST IN A GATE
+    #   RATHER THAN A RECEIPT.  This set read membership of the pinned-read POPULATION off the VERDICT
+    #   COLUMN, so the moment an ordered adjudication gave a pinned-read key a verdict, the key left
+    #   `pinned` and joined `multi` -- and `MULTI_CEILING` reported it as a NEW multi-site pin.  That is
+    #   precisely the reading this file's own ⓺ note says must not happen: "folding them into
+    #   MULTI_CEILING would read seven old pins newly seen as seven new multi-site pins."  Adjudicating
+    #   66 keys of P15_CR_cosmology moved one and the ratchet went red on the work that was ordered.
+    # ⇒ The population is now marked in the FLAGS column, which adjudication does not touch, so a key
+    #   cannot leave it by being read.  70's ceilings, wording and intent are unchanged; only the
+    #   membership test is, and it is now monotone.
+    pinned = {k for k, (_t, _ti, f, v, _w) in base.items()
+              if v == UNREAD_PINNED or 'PINNED' in f.split(',')}
     pinned_multi = sorted(k for k, (_t, _ti, fl) in live.items() if k in pinned and 'MULTI' in fl.split(','))
     multi = sorted(k for k, (_t, _ti, fl) in live.items() if k in base and k not in pinned and 'MULTI' in fl.split(','))
     shared = sum(1 for k in multi if 'SECSHARED' in live[k][2].split(','))
