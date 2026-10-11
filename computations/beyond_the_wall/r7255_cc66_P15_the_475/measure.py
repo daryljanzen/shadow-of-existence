@@ -22,6 +22,11 @@ Per key:
                    on the clause's own exemplar by a shorter span that occurred TWICE, so a
                    shortening that multiplies the sites turns a claim pin into a file pin.
   shorter_span     the longest such span, or '-'
+  clause_uniq      ** the sharper probe. ** TRUE iff some strictly shorter span formed by dropping
+                   WHOLE CLAUSES off one end or the other satisfies the same condition.  Every one
+                   of order ①'s eight limb-two shortenings was of this shape and none cut
+                   mid-clause, so this is the candidate set and `shorter_uniq` is only the ceiling.
+  clause_span      the longest such span, or '-'
 """
 import glob
 import json
@@ -48,6 +53,35 @@ def ledger():
             open(os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv'), encoding='utf-8')
             if l.strip() and not l.startswith('#')]
     return [r for r in rows if len(r) >= 7]
+
+
+CLAUSE = re.compile(r'(?:,|;|:|---|--|\s+so\s+|\s+which\s+|\s+and\s+|\s+because\s+'
+                    r'|\s+rather than\s+|\s+but\s+|\s+while\s+|\s+where\s+)')
+
+
+def clause_spans(s):
+    """every strictly shorter span you get by dropping WHOLE CLAUSES off one end or the other.
+
+    ** This is the sharper probe and the reason for it is r7255+cc66.172 ①. **  Every one of that
+    order's eight limb-two shortenings dropped a LEADING FRAME or a TRAILING CLAUSE at a clause
+    boundary -- an attribution, a bundled antecedent, the spelling of a conclusion -- and none of
+    them cut mid-clause, because cutting mid-clause removes the predicate and the shortened span
+    stops carrying the claim.  So the word-aligned probe below is a CEILING and this one is the
+    candidate set: a span that drops only whole clauses is the only kind limb two has ever
+    licensed in practice.
+    """
+    parts = [q for q in CLAUSE.split(s) if q and q.strip()]
+    if len(parts) < 2:
+        return []
+    out = []
+    for i in range(len(parts)):
+        for j in range(len(parts), i, -1):
+            if i == 0 and j == len(parts):
+                continue
+            cand = ' '.join(q.strip() for q in parts[i:j]).strip()
+            if cand and len(cand) < len(s) and len(cand.split()) >= 3:
+                out.append(cand)
+    return sorted(set(out), key=len, reverse=True)
 
 
 def word_spans(s):
@@ -107,6 +141,7 @@ def main():
         container = TEX if real == 'PAPER' else (INSTR if oi else RECPT)
         base = max(op, opf) if real == 'PAPER' else max(oi, orc)
         span, uniq = '-', '0'
+        cspan, cuniq = '-', '0'
         if tier == 'SENTENCE' and ' ' in raw and base:
             probe = flat(raw) if (real == 'PAPER' and opf and not op) else raw
             cont = flat(container) if probe != raw else container
@@ -114,15 +149,20 @@ def main():
                 if cand and cont.count(cand) and cont.count(cand) <= base:
                     span, uniq = cand, '1'
                     break
+            for cand in clause_spans(probe):
+                if cand and cont.count(cand) and cont.count(cand) <= base:
+                    cspan, cuniq = cand, '1'
+                    break
         out.append([stem, tgt, tier, flags, str(line), lit, real, str(op), str(opf), str(oi),
-                    str(orc), uniq, json.dumps(span)])
+                    str(orc), uniq, json.dumps(span), cuniq, json.dumps(cspan)])
 
     dest = os.path.join(HERE, 'MEASURED.tsv')
     with open(dest, 'w', encoding='utf-8') as fh:
         fh.write('# r7255 order ② -- the 475 unverdicted keys of receipts/P15_CR_cosmology, MEASURED.\n')
         fh.write('# counts and booleans only; no judgement in any column.\n')
         fh.write('# stem\tledger_target\ttier\tflags\tline\tliteral\treal_target\t'
-                 'occ_paper\tocc_paper_flat\tocc_instr\tocc_recpt\tshorter_uniq\tshorter_span\n')
+                 'occ_paper\tocc_paper_flat\tocc_instr\tocc_recpt\tshorter_uniq\tshorter_span\t'
+                 'clause_uniq\tclause_span\n')
         for r in out:
             fh.write('\t'.join(r) + '\n')
     print(f'{len(out)} rows -> {dest}')
