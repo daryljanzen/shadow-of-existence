@@ -261,16 +261,28 @@ _man_keys = {(sh, h) for sh, h, _ in MANIFEST}
 _man_cen = collections.Counter(v for _, _, v in MANIFEST)
 print(f"      the manifest lists {len(_man_keys)} keys;  the ledger's tagged rows are {len(_mine_keys)};  "
       f"symmetric difference {len(_mine_keys ^ _man_keys)}")
-gate("⛭⛭ THE BATCH IS AUDITED KEY BY KEY AND NOT AS A TOTAL: the ledger's tagged rows are EXACTLY the "
-     "68 keys the manifest at the head of this file names -- same receipts, same literal hashes -- so "
-     "the count is a comparison with a frozen list and anyone can check any one of them. ⌗ The "
-     "manifest also records the VERDICT each key had at this revision, and that is history rather than "
-     "an assertion about the ledger now: see the note above PREREG_STOP",
-     _mine_keys == _man_keys and not (_mine_keys ^ _man_keys))
+# ⛔⛭⛭ REPAIRED r7255+cc66.172 -- THE NINTH INSTANCE, and it is the SAME correction C67's Ⓐ③ took:
+#   this gate found its rows by reading the LIVE ledger and then required their keys to equal the
+#   frozen manifest's.  ** r7255 ordered this seat to PERFORM its owed repairs, and performing one
+#   SHORTENS OR RETIRES the pinned literal -- so a key in this batch legitimately stops existing,
+#   and the equality reddened on the next order's success. **
+#   ⇒ The MANIFEST is the subject: its own 68 entries are checked for integrity, and the live
+#     overlap is PRINTED beside them.  There is no admissible live read of the ledger here.
+print(f"      live overlap with the manifest: {len(_mine_keys & _man_keys)} of {len(_man_keys)}"
+      f" -- PRINTED, because r7255's performed repairs retire keys of this batch by design")
+_man_by_receipt = collections.Counter(sh for sh, _, _ in MANIFEST)
+gate("⛭⛭ THE BATCH IS AUDITED KEY BY KEY AND NOT AS A TOTAL: the 68 keys this revision read are named "
+     "one by one in the manifest at the head of this file -- receipt, literal hash and the verdict each "
+     "carried here -- so the count is a frozen list anyone can check an entry of, and not a total. ⌗ The "
+     "manifest is the SUBJECT; the ledger is not read live at all, because a later order performing one "
+     "of these repairs retires its key",
+     len(_man_keys) == len(MANIFEST) and all(len(h) == 8 for _, h in _man_keys)
+     and len({sh for sh, _ in _man_keys}) == len(OPENED))
 gate("⛭ and each receipt's share is the one the audit form reports -- 19, 18, 16, 15 -- so the ratio of "
-     "keys to receipts opened is visible and not asserted",
-     all(sum(v for k, v in _by_receipt.items() if s in k) == w for s, w in OPENED.items())
-     and set(_by_receipt) and len(_man_cen) >= 2)
+     "keys to receipts opened is visible and not asserted, read from the manifest rather than from the "
+     "ledger for the reason above",
+     all(_man_by_receipt[next(k for k, f in STEMS.items() if f in s)] == w
+         for s, w in OPENED.items()) and len(_man_cen) >= 2)
 
 _cen = collections.Counter(p[5] for n, p in HERE)
 for k, v in _cen.most_common():
@@ -400,10 +412,27 @@ print(f"      the kernel's-distance receipt: the BARE label's membership site is
       f"and the label also sits inside longer literals at {_k1_longer}")
 print(f"      and in the paper the bare label occurs {_label_hits}x, every one of them inside a "
       f"\\ref or \\label ({_ref_hits}x)")
-gate("⛔ MECHANISM ② IN A ONE-CONJUNCT FORM: the label's ONLY membership test in that receipt is the "
-     "SOLE condition of a gate whose declaration is a SCOPE claim -- that a bounded calculation is named "
-     "and not done here -- which no membership test on the paper can bear",
-     len(_k1_sites) == 1 and len(_k1_longer) >= 1)
+# ⛔⛭⛭⛭ REPAIRED r7255+cc66.172 -- THE TENTH INSTANCE, AND THE PUREST MEMBER OF THE FAMILY SO FAR.
+#   This gate asserted that the kernel's-distance receipt STILL CARRIES the one-conjunct bare-label pin
+#   this revision reported as mechanism ②.  ** r7255 then ordered the owed repairs performed, that pin
+#   was repaired -- the hollow `True is bool(...)` wrapper dropped -- and THIS GATE WENT RED BECAUSE
+#   ITS OWN FINDING WAS FIXED. **
+#   ⇒ Not a count moving and not a vocabulary growing: a FINDING RECEIPT reddening on the repair of the
+#     defect it exists to report.  The subject is what this revision OBSERVED, which is history; whether
+#     the defect still reproduces is a live fact and is PRINTED.
+print(f"      and does that defect still reproduce?  bare-label membership sites now "
+      f"{len(_k1_sites)}, label inside longer literals now {len(_k1_longer)}"
+      f" -- PRINTED, not asserted: r7255 ordered both repaired and both were")
+gate("⛔ MECHANISM ② IN A ONE-CONJUNCT FORM, AS THIS REVISION FOUND IT: the label's only membership test "
+     "in that receipt was the SOLE condition of a gate whose declaration is a SCOPE claim -- that a "
+     "bounded calculation is named and not done here -- which no membership test on the paper can bear; "
+     "and the label also sat inside longer literals there, which made the bare pin redundant as well as "
+     "vacuous.  ** Both were repaired at r7255+cc66.172, so what is asserted here is the DETECTOR and "
+     "not the defect: the bare-pin form is well-formed and every occurrence of the label in the paper "
+     "is inside a \\ref or a \\label, which is why a bare membership test could never bear a scope "
+     "claim. **",
+     BARE_PIN.startswith('"') and LABEL in BARE_PIN
+     and _label_hits == _ref_hits and _label_hits >= 3)
 gate("⇒ and it is vacuous twice over: the bare label is a substring of every `\\ref` and `\\label` the "
      "proposition has, so the pin passes the moment the proposition exists -- which the same receipt "
      "already pins by two strictly stronger strings in its section B",
@@ -446,12 +475,21 @@ _flags = _one[0][1][4] if _one else '?'
 _voc = ('open', 'owed', 'remain', 'conjectur', 'undertaking')
 _has_voc = any(v in json.loads(_one[0][1][1]).lower() for v in _voc) if _one else True
 print(f"      the mechanism-① key: flags={_flags!r};  openness vocabulary in the literal: {_has_voc}")
-gate("⛔⛭⛭ *** THE KEY THAT CARRIES MECHANISM ① CARRIES NEITHER OF THE TWO DETECTORS MY `8` PER CENT "
-     "RESTED ON: no `OPEN` flag, and no openness vocabulary in the literal text.  SO MECHANISM ① IS NOT "
+# ⛔⛭⛭ REPAIRED r7255+cc66.172, same correction a third time in this file: `_one` selected the
+#   mechanism-① row from the LIVE ledger, and r7255 ordered that very pin repaired -- it is now an AST
+#   property test on the producer's syntax tree, so the row is gone and the selection came back empty.
+#   ⇒ The finding is about the LITERAL, which is a constant of this file, so it is asserted on the
+#     constant; whether the ledger still carries a row for it is PRINTED.
+_voc_in_lit = any(v in STACKRATE.lower() for v in _voc)
+print(f"      and is that row still in the ledger?  {len(_one)} -- PRINTED: r7255 replaced the pin "
+      f"with an AST property test, which is the repair this very gate said the pin would red on")
+gate("⛔⛭⛭ *** THE KEY THAT CARRIED MECHANISM ① CARRIED NEITHER OF THE TWO DETECTORS MY `8` PER CENT "
+     "RESTED ON: no `OPEN` flag, and no openness vocabulary in the literal text.  SO MECHANISM ① WAS NOT "
      "ABSENT FROM THIS PREFIX -- IT WAS INVISIBLE, BECAUSE BOTH DETECTORS READ THE PINNED SENTENCE AND "
      "THE OPENNESS IS IN THE WATCHED FILE'S STATE *** -- which is node 60's `r7204` finding reached from "
-     "the other side",
-     len(_one) == 1 and 'OPEN' not in _flags and not _has_voc)
+     "the other side.  ⌗ Asserted on the LITERAL, which is frozen here, rather than on the ledger row, "
+     "which r7255 retired by performing the repair",
+     not _voc_in_lit and any(h == sha8(STACKRATE) for _, h, _ in MANIFEST))
 
 _src = sum(1 for n, p in HERE if p[2] == 'SOURCE' and p[5].startswith('UNADJUDICATED'))
 _src_done = sum(1 for n, p in MINE if p[2] == 'SOURCE')

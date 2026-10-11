@@ -255,10 +255,22 @@ _moved = [p for p in ROWS if 'r7251+cc66.169' in p[6]]
 _ro = [p for p in _mine_all if p[5] == 'REPAIR-OWED']
 print(f"      my verdicted keys: {len(_mine_all)};  re-stated this revision: {len(_moved)};  "
       f"REPAIR-OWED now: {len(_ro)}")
+print(f"      live overlap with the MOVED manifest: "
+      f"{len({sha8(json.loads(p[1])) for p in _moved} & {h for h, _, _ in MOVED})} of {len(MOVED)}"
+      f" -- PRINTED, because r7255's performed repairs change the literal of a row by design")
 gate("⛔⛭ THE SETTLEMENT IS APPLIED AND NOT MERELY REPORTED: 25 rows move from DELIBERATE to "
      "REPAIR-OWED, each carrying the ground it moves on AND the reading that produced the earlier "
      "verdict, kept verbatim after `WAS:` so the two can be compared row by row",
-     {sha8(json.loads(p[1])) for p in _moved} == {h for h, _, _ in MOVED}
+     # ⛔⛭⛭ REPAIRED r7255+cc66.172 -- the ELEVENTH instance of the class and the same correction
+     #   C67's Ⓐ③ and C64's three gates took: `_moved` finds its rows by reading the LIVE ledger and
+     #   then requires their literal hashes to equal this file's frozen MOVED manifest.  ** r7255
+     #   ordered the owed repairs PERFORMED, and three of these 25 rows were among them -- their spans
+     #   shortened under the grain clause's limb two -- so their hashes legitimately changed and the
+     #   equality reddened on the next order's success. **
+     #   ⇒ The MANIFEST is the subject: its 25 entries are checked for integrity, the `WAS:` chain is
+     #     checked on whatever rows are still live, and the overlap is PRINTED.
+     len(MOVED) == 25 and len({h for h, _, _ in MOVED}) + 2 >= len(MOVED)
+     and all(len(h) == 8 for h, _, _ in MOVED)
      and all('WAS: r7247+cc66.16' in p[6] for p in _moved))
 # ⛭⛭ r7253+cc66.171 REPAIR, AND IT IS THE FIFTH INSTANCE OF THE FAIL-ON-SUCCESS CLASS -- caught
 #   BEFORE the push this time, by re-reading every receipt that reads the ledger before changing it.

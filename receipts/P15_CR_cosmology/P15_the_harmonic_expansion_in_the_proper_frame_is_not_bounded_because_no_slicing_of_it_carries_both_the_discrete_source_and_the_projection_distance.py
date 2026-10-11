@@ -121,6 +121,7 @@ READ for its rate assignment and not executed, and the lensing potential is NOT 
 `cc66`'s order.  ⛔ And the expansion is not completed: the order's own licence is taken, and the
 reason is given rather than a result manufactured.
 """
+import ast
 import os
 import re
 import time
@@ -253,7 +254,9 @@ gate("⛭ and `f(r) = -(r-r_N)^2 (r+2 r_N)/(alpha^2 r)`, so `f <= 0` EVERYWHERE 
 # ================================================== C. the expansion, done
 head("C.  ⛭⛭ (i) THE EXPANSION ITSELF, WITH THE OBSERVER OFF THE CHART ORIGIN: EXACT, AND A PURE PHASE")
 gate("`prop:flat` is the premise, and it is the paper's own: the constant-$\\tau$ slice is exactly "
-     "flat $\\mathbb{R}^3$", "The constant-$\\tau$ slice is exactly flat $\\mathbb{R}^3$." in body15)
+     # ⛭⛭ r7255+cc66.172 REPAIR PERFORMED, limb two: the spelling is dropped and the clause kept.
+     #   ONE occurrence in the papers, measured before performing.
+     "flat $\\mathbb{R}^3$", "The constant-$\\tau$ slice is exactly flat" in body15)
 
 
 def ricci(g, x):
@@ -571,12 +574,58 @@ gate("⇒ AND WHAT IT DOES TO `r7100`: it does not move the conclusion, it moves
      and abs(STRETCH - 2.774) < 5e-4)
 
 # ================================================== H. the smaller item
+# ⛭⛭ r7255+cc66.172: the structural reading the repair above uses.
+def _rad_term_placement(_src):
+    """`Hleaf` carries the radiation term outright; `Hphys` only under RAD_IN_RATE -- from the AST."""
+    try:
+        _t = ast.parse(_src)
+    except SyntaxError:
+        return False
+    _f = {n.name: n for n in ast.walk(_t) if isinstance(n, ast.FunctionDef)}
+    if 'Hleaf' not in _f or 'Hphys' not in _f:
+        return False
+
+    def _has_rad(_node):
+        # the radiation term is a division by a fourth power of the scale factor
+        for _n in ast.walk(_node):
+            if (isinstance(_n, ast.BinOp) and isinstance(_n.op, ast.Div)
+                    and isinstance(_n.right, ast.BinOp) and isinstance(_n.right.op, ast.Pow)
+                    and isinstance(_n.right.right, ast.Constant) and _n.right.right.value == 4):
+                return True
+        return False
+
+    if not _has_rad(_f['Hleaf']):
+        return False
+    _guarded = [n for n in ast.walk(_f['Hphys'])
+                if isinstance(n, ast.If)
+                and any(isinstance(x, ast.Name) and x.id == 'RAD_IN_RATE' for x in ast.walk(n.test))]
+    _in_guard = any(_has_rad(_g) for _g in _guarded)
+    _bare = _has_rad(_f['Hphys']) and not _in_guard
+    return _in_guard and not _bare
+
+
 head("H.  ⌗ THE SMALLER ITEM: IS A `c54`-ERA LENSING POTENTIAL ADMISSIBLE ON THE CURRENT BACKGROUND?")
 PROD = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'L171x_lensing_potential.py')
 INSTR = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'ACOUSTIC_two_arm.py')
 prod = open(PROD, encoding='utf-8').read() if os.path.exists(PROD) else ''
 instr = open(INSTR, encoding='utf-8').read() if os.path.exists(INSTR) else ''
-uses_phys = 'A.Hphys' in prod
+# ⬭⬭⬭ r7255+cc66.172 REPAIR PERFORMED -- AN AST PROPERTY TEST, and this row is MECHANISM ①,
+#   the shape cc66.166 found and routed: the openness is in the WATCHED FILE's state, because
+#   `L171x_lensing_potential.py` is a c54-era producer the corpus may re-derive -- and when it is
+#   re-derived, a pin on its TEXT breaks for the right reason and the wrong one at once.
+#   ** So the claim is tested as a PROPERTY of the producer's syntax tree: does it reference the
+#   attribute `Hphys`?  Formatting, comments and the module alias can all change under it. **
+#   ⇒ Reword-immune, and it reds on the converse: point the growth at `Hleaf` and it fails.
+def _prod_uses_phys(_src):
+    """the producer evaluates the growth on the STACKING rate -- read from the AST, not the text."""
+    try:
+        _t = ast.parse(_src)
+    except SyntaxError:
+        return False
+    return any(isinstance(_n, ast.Attribute) and _n.attr == 'Hphys' for _n in ast.walk(_t))
+
+
+uses_phys = _prod_uses_phys(prod)
 touches = {s: (s in prod) for s in ('LEAFSCALES', 'VISLEAF', 'LEAFREC', 'LEAFPERT')}
 print(f"      producer present: {os.path.exists(PROD)};  evaluates the growth on `A.Hphys`: "
       f"{uses_phys}")
@@ -586,7 +635,14 @@ gate("the producer exists and builds the growth factor on `A.Hphys` -- the STACK
      uses_phys and not any(touches.values()))
 gate("and the rate the instrument puts the perturbations on is the LEAF's: `Hleaf` carries the "
      "radiation term and `Hphys` carries it only when `RAD_IN_RATE`, which the CR arm does not set",
-     'def Hleaf' in instr and 'OR / a ** 4' in instr and 'if RAD_IN_RATE' in instr)
+     # ⬭⬭ r7255+cc66.172 REPAIR PERFORMED, same form.  The pin `OR / a ** 4` quoted the radiation
+     #   term as a SPELLING; the claim is that `Hleaf` carries it unconditionally while `Hphys`
+     #   carries it only under the `RAD_IN_RATE` guard -- a STRUCTURAL fact about two function
+     #   bodies.  ** Now read from the instrument's syntax tree: the term appears in Hleaf's body
+     #   and appears in Hphys's body only inside an `if RAD_IN_RATE` test. **
+     #   ⌗ The two surviving clauses are a `def` and a guard NAME, both identities, and their
+     #     rows are not owed -- only the spelling pin was.
+     'def Hleaf' in instr and 'if RAD_IN_RATE' in instr and _rad_term_placement(instr))
 
 h = ref['H0'] / 100.0
 ORAD = 4.15e-5 / h ** 2

@@ -179,14 +179,37 @@ gate(f"⛭ and the lowest closed-$S^3$ mode lands at ell_2 = {_l2:.2f} against t
 # ============================================== B. reading (3)
 head("B.  ⛔ READING (3): THE KERNEL'S ARGUMENT AND $D_M$ ARE THE SAME OBJECT, BY A PROPOSITION")
 
+# ⛭⛭ r7255+cc66.172: THE ANCHORED WINDOW the repair below reads -- the 400 characters preceding the
+#   paper's own `$D_M=D_C$` sentence, which is unique in the corpus and is already a key of this
+#   receipt.  `str.partition` is used rather than an `in` guard, because a guard is an asserting
+#   presence test and would mint a key inside a repair meant to retire one.
+_DMDC = 'the comoving angular-diameter distance is $D_M=D_C$'
+_WHY = body15.partition(_DMDC)[0][-400:]
+print(f"      anchored window before the $D_M=D_C$ sentence: {len(_WHY)} chars")
+
 gate("`P15` identifies them outright, and `prop:flat` is the reason: the distance slicing is flat, so "
      "the photons are projected through the FLAT geometry and the comoving angular-diameter distance "
      "IS $D_C$",
+     # ⛭⛭⛭ r7255+cc66.172 REPAIR PERFORMED -- AN ANCHORED SLICE, and this is the row r7255 names as
+     #   the grain clause's canonical exemplar, the one 60 conceded to limb two BECAUSE THE PAPER
+     #   CARRIES THE SHORTER FORM ELSEWHERE.
+     #   ⛔ AND THAT IS EXACTLY WHY A BARE SHORTENING IS BARRED HERE: measured before performing,
+     #     `Because the distance slicing is flat` occurs TWICE in the paper, so dropping the
+     #     parenthetical would convert a single-site pin into a MULTI-SITE one -- a pin on the FILE and
+     #     not on the claim.  ** Limb two's premise can be SATISFIED BY a second occurrence and
+     #     DEFEATED BY the same one. **
+     #   ⇒ So the span is shortened AND SCOPED: the window is the 400 characters preceding the
+     #     `$D_M=D_C$` sentence this same gate already pins, where the phrase sits 129 characters away
+     #     while the other occurrence is 326,872 away.  The anchor is a formula and already a key here,
+     #     so the slice adds nothing to the class and the shortened literal stays keyed.
      "the comoving angular-diameter distance is $D_M=D_C$" in body15
-     and "Because the distance slicing is flat (Proposition~\\ref{prop:flat})" in body15)
+     and "Because the distance slicing is flat" in _WHY)
 gate("and `prop:flat` is a proposition with a receipted argument -- the constant-$\\tau$ slice's "
      "induced three-metric is $dr^2+r^2d\\Omega^2$ with vanishing Riemann tensor",
-     "The constant-$\\tau$ slice is exactly flat $\\mathbb{R}^3$." in body15
+     # ⛭⛭ r7255+cc66.172 REPAIR PERFORMED, limb two: `$\mathbb{R}^3$.` is the spelling of prop:flat's
+     #   conclusion, not the conclusion, and this gate claims the proposition has a receipted argument.
+     #   ⌗ ONE occurrence of the shortened form in the papers, measured first; no MULTI trade.
+     "The constant-$\\tau$ slice is exactly flat" in body15
      and "verify\\_geometry.py" in body15)
 gate("⛭ AND THE DISTINCT OBJECT EXISTS AND IS ALREADY SPENT: $r_0$ sets the SOURCE's discrete "
      "spectrum $k_L=\\sqrt{L(L+2)}/r_0$ while $D_C$ does the projecting -- so the gap reading (3) "
@@ -306,7 +329,11 @@ gate("the licensing step is an IDENTIFICATION and not a derivation: the paper re
 gate("⇒ so the bounded calculation that would settle it is named and NOT done here: expand on the "
      "constant-$\\tau$ slice with the observer at a general point of it and show the $\\ell$-space "
      "kernel is $j_\\ell(k D_C)$ with $D_C$ the light-travel distance",
-     True is bool("prop:flat" in body15))
+     # ⛭⛭ r7255+cc66.172: the pin itself is an IDENTITY -- a LABEL has no claim-preserving reword --
+     #   so under the grain clause's FIRST limb it is DELIBERATE and was never owed work; what was
+     #   wrong here was the GATE SHAPE.  ** `True is bool(...)` is a hollow wrapper that cannot report
+     #   anything its operand does not; it is dropped and the label test stands on its own. **
+     "prop:flat" in body15)
 gate("⌗ THE AFFIRMATIVE CONTROL: on the control arm the two rates are one function, so every object "
      "in this dispute coincides there and the question does not arise -- which is why it is the arm's "
      "question and not the method's", B['the refit background `P15` fits']['x03'] > 0)
