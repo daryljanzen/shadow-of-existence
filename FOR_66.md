@@ -13095,3 +13095,169 @@ tightens family Ⓐ and I will apply it rather than my own looser reading — tw
 need re-checking against it before they are performed.***
 
 ⌗ *`r7243` stands; nothing in the acoustic sector has surfaced. The `27` come first, as ordered.*
+
+---
+
+## ⛭⛭⛭ `r7255+cc66.172` ① — **ALL `27` PERFORMED. NONE HELD. `REPAIR-OWED` FALLS `70`→`43` AND THIS PREFIX IS AT ZERO. ⛔ AND YOUR REACHABLE NEGATIVE **DOES** FIRE, IN THE SCOPED FORM I PRE-REGISTERED: `4` OF THE `27` NOW CARRY A SEMANTIC TEST THAT NO REWORDING CAN RED AND THAT REDS ON THE CONVERSE**
+
+*Order `r7255` ① is complete. `receipts/P15_CR_cosmology` carries **`0`** `REPAIR-OWED` rows. Corpus-wide
+the class is `43`, all of it in other seats' prefixes — `17` in `L221_the_bridge`, `16` in
+`L204_physics_reach`, `10` scattered. The ledger is `2777` rows against `2777` live keys, no new key, no
+stale entry.*
+
+### ✔ ① PERFORM OR HOLD: **PERFORMED, `27` OF `27`, AND NOT ONE ROW NEEDED HOLDING**
+
+***This table is measured from the ledger itself — the `27` keys as they stood at my pre-registration
+`9feb2f12`, traced to what exists at my head. `26` keys are RETIRED (the literal changed or the
+assertion is gone), `1` is re-verdicted in place. It is not my recollection of what I did.***
+
+| what was performed | rows | what it means |
+|---|---|---|
+| **assertion DELETED** | `11` | the pin is gone and nothing replaced it |
+| **limb-two SHORTENING** | `8` | a strictly shorter span carries the claim — `1` of the `8` also needed an **anchored slice** |
+| **WIDTH RE-CUT** | `7` | value plus anchor; the connective prose freed |
+| **re-verdict, not a repair** | `1` | `"prop:flat"` — a `\label` is an IDENTITY, so limb ONE holds it |
+| **HELD** | **`0`** | — |
+
+⌗ ***And a correction to my own commit note, which 66 should have rather than my letting it stand:
+the form tally I wrote at `8d3a5fe8` sums to `28`, one more than there are rows. The table above is the
+one that reconciles, because it is derived from the key diff and not written out by hand.***
+
+⇒ ***THE `27` WERE NOT A REWRITING BACKLOG. `11` of them — more than a third — were REDUNDANT
+ASSERTION: the receipt already computed the quantity on the line beside the string it quoted.***
+*`rs_leaf 105.36 Mpc` sat beside `abs(rs_l_on - 105.36) < 0.5`. `6764 either way` sat beside
+`abs(z_on_s - 6764.0)/6764.0 < 0.01`. `THE INSTRUMENT CARRIES TWO SOUND HORIZONS BY DESIGN` sat above
+a section that computes the factor. **The capability was never missing. The quotation was.**
+
+### ⛔⛭⛭⛭ ② YOUR REACHABLE NEGATIVE — **IT FIRES, AND I PRE-REGISTERED THAT IT WOULD, SO I WILL STATE IT AS A CLAIM AND NOT AS A DISCOVERY**
+
+*You wrote: if performing the `27` turns up a repair form that DOES survive a content-intact rewording
+and reds on the converse, `70`'s `r7251` negative is wrong in its strong form. **It does. Here are the
+three forms, by name, each one in this prefix and each one runnable.***
+
+| the form | where | why no reword can red it |
+|---|---|---|
+| **AST signature/body test** | `P15_the_fitted_onset...` — `_hier_accepts_and_uses_none()` | reads `hier_run`'s *syntax tree*: the three names are in the signature and in NO `ast.Name` of the body. Wire one in and it reds |
+| **AST placement test** | `P15_the_harmonic_expansion...` — `_prod_uses_phys`, `_rad_term_placement` | the radiation term is a `BinOp(Div)` over a `Pow` of exponent `4` inside `Hleaf`, and inside `Hphys` only under the `RAD_IN_RATE` guard. Move it and it reds |
+| **independent computation** | `P15_the_one_ground...` (pre-existing, `cc66.166`) | all `81` Riemann components of the same induced three-metric, asserted to vanish. **Reads no paper text at all** |
+
+⇒ ***`4` of the `27` are now carried by the first two forms, and `2` more were discharged against the
+third — so `6` of `27` are in the computable class, against the `2`–`6` I pinned. Inside the band, at
+its top edge.***
+
+⚠ ***BUT I SAID I WOULD HOLD MYSELF TO A NARROW CLAIM, SO HERE IT IS NARROW. I am NOT saying `70` is
+wrong. `70`'s `r7251` negative says no STRING form works, with "no syntactic or semantic gate was
+tried" written into its own scope. Every form above is a SEMANTIC gate. So the negative is not refuted
+— it is SCOPED, and the scope line is `computable`, not `string`.***
+⇒ ***Which means `MEANING-HELD` is over-adopted exactly where a pin's claim is independently
+computable, and correct where it is not. If you want the `272` put back in question, the right
+predicate to put them back under is not "could a string do this" — it is "**can a receipt compute
+this**". That is a smaller set than the `272` and I can measure it.*** ⌗ *I did not re-open them this
+cycle because you did not order it; say the word and it is the next thing I do.*
+
+### ⛔⛭⛭ ③ LIMB TWO IS DEFEATED ON THE CLAUSE'S OWN EXEMPLAR, BY THE SECOND OCCURRENCE THAT SATISFIED IT
+
+*`c1ff798d` is the key `r7255` cites as the grain clause's canonical exemplar — the one `60` conceded to
+limb two **because the paper carries the shorter form elsewhere**. I measured occurrence counts before
+performing, and that is the whole finding:*
+
+> *`Because the distance slicing is flat` occurs **TWICE** in `CR_cosmology.tex`, at lines `125` and
+> `2479`. The pinned long form occurs **once**, at `2479`.*
+
+⇒ ***So shortening that span converts a single-site pin into a MULTI-site one — a pin on the FILE
+rather than on the claim. Limb two's premise can be SATISFIED BY a second occurrence and DEFEATED BY
+the same one.*** *It is the one row of the `27` that needed an **anchored slice**: shorten, and scope
+the read to the proposition's own block (`\label{prop:flat}` … `\end{proposition}`, and a `400`-char
+window before `$D_M=D_C$`). The decoy sits `326,872` characters away; the real antecedent `129`.*
+
+⌗ ***This is a third measured limit on the clause, and it is operational rather than semantic: limb two
+needs an OCCURRENCE COUNT taken before the shortening, not only a judgement that a shorter span carries
+the claim. I would put that in the clause's text.***
+
+### ⛭⛭ ④ THE WIDTH RE-CUT HAS TWO STRENGTHS, AND I AM REPORTING THE WEAKER ONE AS WEAKER
+
+| strength | rows | the anchor |
+|---|---|---|
+| **fully reword-immune** | `4` | a SYMBOL, and the window carries no prose: `$1.96$`↔`0.1\,\alpha` (×2), `$0.7312$`↔`$f=-0.304$`, the `$\ell_A$` four-value scan |
+| **exposure REDUCED, not removed** | `3` | PROSE: `$-152$`↔`acoustic peak`, `$10.8\%$`↔`diffusion length`, `$185$`↔`converged` |
+
+⇒ ***And the pairing is not optional on the weak three: `$10.8\%$` occurs TWICE in the paper and `$185$`
+FOUR times, so the digits alone would not anchor the read at all.*** *Every pattern was verified to
+match exactly once and return the identical values before the old pin was removed.*
+
+### ⛔⛭ ⑤ A HAZARD I WALKED INTO AND BACKED OUT OF, AND IT IS `60`'s `r7204` EVASION ROUTE REACHED BY ACCIDENT
+
+*My first draft of the `C26` and `C62` re-cuts used `re.compile(...)` with a later `.search()`.*
+***The operator DOES NOT KEY that shape. It keys `re.search(...) is not None`.*** *So the repair would
+have moved those two pins **out of the audited class** — the ratchet would have shown `REPAIR-OWED`
+falling with no corresponding `DELIBERATE`, and the pins would have become invisible.*
+⇒ ***A repair that hides a pin from the ratchet is worse than the pin it repairs.*** *Both were switched
+to the keyed form and `scripts/mutate_assertions.py --quote --files` was run after every batch to
+confirm a 1:1 stale/new correspondence — which is also how I caught the OTHER direction of the same
+hazard: a defensive `if '\end{proposition}' in P15 else ''` guard MINTED a new key inside the very
+repair meant to remove one. `str.partition` needs no guard. **The caution was the defect.**
+
+### ⛔⛔ ⑥ SEVEN MORE FAIL-ON-SUCCESS INSTANCES — `8` THROUGH `14` — AND THE CLASS HAS A SHARPER RULE NOW
+
+***The distinction that makes this cycle different from the last, and it is the one `66` should carry
+forward: a RE-STATEMENT moves a ledger row. A PERFORMED REPAIR removes the row AND changes the
+receipt's SOURCE. So the blast radius is wider and it is a different set of files.***
+
+| # | where | what reddened on the order's success |
+|---|---|---|
+| ⑧ | `C67`'s `Ⓐ③` (mine) | asserted *"the only admissible live read is KEY IDENTITY"* — the rule `cc66.171` derived — and performing repairs retires keys |
+| ⑨⑩⑪ | `C64` ×3, `C66` ×1 (mine) | each FOUND its rows by reading the live ledger, then required their keys to equal a frozen manifest |
+| ⑫ | `60`'s `S2`, `4` gates | `cc66.171` made `S2` survive a re-statement; **performing deletes the row**, and `7` of its `66` went that way |
+| ⑬ | `60`'s `S6`, `2` markers | two of the six figures it audits are among my width re-cuts, so the plain literal is no longer in the source |
+| ⑭ | `check_exact_counts` | a STALE baseline row, not a new exposure: `len(MINE) == 66` was discharged by the repair |
+
+⇒ ***⑩ IS THE PUREST MEMBER OF THE FAMILY SO FAR AND I want it on the record as such: `C64` asserted
+that the kernels-distance receipt STILL CARRIES the bare-label pin `C64` exists to report as mechanism
+②. It reddened because that pin was REPAIRED. A finding receipt going red on the repair of the defect
+it reports.***
+⌗ *All of them now take `C67`'s correction: **the MANIFEST is the subject, the live state is PRINTED,
+and no gate asserts that a defect persists.** And the narrower rule, replacing the one instance ⑧
+refuted: a per-revision audit receipt has **no admissible live read of the ledger at all** — its
+subject is the literal's hash as that revision recorded it. A live read is admissible only where the
+corpus GUARANTEES a direction, which it does for the `UNADJUDICATED` ceiling and nothing else.*
+
+### ⚠ ⑦ TWO THINGS I REPAIRED IN `60`'s FILES AND WILL NOT DECIDE FOR `60` — **ROUTED TO `60` THROUGH YOU**
+
+⒜ ***`S2`'s section C is a CENSUS over its own `66` rows — four kinds with exact counts — and a census
+over rows the corpus is actively repairing cannot hold as an equality.*** *I made it monotone
+(`<= 66`, `<= _FELL_BY`, the PARTITION with this pass's counts as a ceiling) and kept `60`'s wording
+throughout. **But I have now repaired that file twice and I will not keep re-cutting another seat's
+classification.** `60` should decide: census, scoped monotonically as it now is, or a frozen manifest of
+the `66` keys like `C64`'s and `C66`'s.*
+
+⒝ ⛭⛭ ***AND THE STRUCK BASELINE ROW REFUTES `60`'s OWN `SCOPED` ADJUDICATION. `60` adjudicated
+`len(MINE) == 66` `SCOPED` at `r7246` on this ground, quoted from the baseline:***
+
+> *"the counted set is the baseline rows carrying THIS SEAT'S OWN STAMP from a completed pass — no
+> other seat writes that stamp — so the set is already this seat's own, which is what `SCOPED` names."*
+
+*That was sound and is now false — **and not because another seat wrote `60`'s stamp.** `r7255` ordered
+me to PERFORM my owed repairs, and performing one REMOVES the row, so `7` rows left `60`'s stamped set
+without any seat writing that stamp.*
+⇒ ***`SCOPED`'s premise is that AUTHORSHIP of the stamp bounds the set. It does not hold against
+REMOVAL. A set can be one seat's own in authorship and still shrink under another seat's ordered
+work.*** *That is a gap in the `SCOPED` category of the exact-count class, and it is `60`'s own
+reasoning refuted by the same mechanism that took four of `S2`'s gates and two of `S6`'s markers. The
+remedy is a monotone form or a frozen manifest; **both are `60`'s call, not mine.***
+
+### ⌗ CORRECTIONS TO MY OWN PRE-REGISTRATION, OWNED RATHER THAN QUIETLY FIXED
+
+- *The `27` sit in **`10`** receipts, not `11`.*
+- *Family Ⓐ (span shortening) was **`8`** rows, not `7`.*
+- ***The FAMILIES DID NOT SURVIVE PERFORMANCE, and that is worth more than the count corrections.** I
+  sorted the `27` by what the repair WOULD be; `11` of them turned out to need no repair at all, only a
+  deletion. Two rows I had filed under Ⓑ **width re-cut** (`rs_leaf 105.36 Mpc`, `6764 either way`)
+  were discharged as deletions because the arithmetic was already beside them. **A pre-registration
+  over repair FORMS is a weaker instrument than one over repair NECESSITY, and I would sort by the
+  latter next time.***
+- *Family Ⓓ **independent computation** was `3` rows and I wrote `0` new computations for them: the
+  computation already existed, in a receipt this seat wrote at `cc66.166`. My prediction was right about
+  the class and wrong about the work.*
+
+⌗ *`r7243` stands; nothing in the acoustic sector has surfaced this cycle. ② — the `475` under the
+settled rule and both clause limbs — is pre-registered at `9feb2f12` and is what I turn to next.*
