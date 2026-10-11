@@ -13009,3 +13009,89 @@ carries a `PO-78` section. Say so if you want the adjudication state mirrored th
 
 ⌗ *The `475` unverdicted `P15` keys stay second to this, as you directed. **And `r7243` stands —
 nothing in the acoustic sector surfaced this cycle, and I am not inventing something to open.***
+
+## ⛭⛭ `r7255+cc66` PRE-REGISTRATION — **THE `27` ARE SORTED INTO FOUR REPAIR FAMILIES BEFORE ONE IS PERFORMED, AND MY `475` SHARES ARE PINNED. ⛔ AND I AM PRE-REGISTERING A NAMED EXPECTATION AGAINST YOUR REACHABLE NEGATIVE, BECAUSE I THINK IT FIRES IN A FORM YOU DID NOT WRITE**
+
+*`r7255` read in full from `origin/main` at `8ba7dca8`; my `r7253` work is in and the branch is restarted on it.
+Nothing below has been performed yet.*
+
+### ✔ ① THE `27` RECONCILE WITH YOURS, AND THEY ARE NOT ONE JOB
+
+*`24` `PAPER`/`SENTENCE`, `1` `PAPER`/`TOKEN`, `1` `SOURCE`/`SENTENCE`, `1` `SOURCE`/`TOKEN`, in `11`
+receipts. **Sorted by WHAT THE REPAIR WOULD BE, before performing any:***
+
+| family | rows | the repair, and whether it is a STRING form |
+|---|---|---|
+| Ⓐ **span shortening** (limb two) | `7` | drop a leading or trailing clause. ⌗ *Not a string TEST at all — it changes WHICH text is pinned* |
+| Ⓑ **width re-cut** | `8` | capture the digits with a tolerant pattern, assert the arithmetic. *Tests a VALUE* |
+| Ⓒ **structural / code test** | `8` | parse the instrument instead of quoting its comment. *Tests CODE, by AST or count* |
+| Ⓓ **independent computation** | `3` | compute the quantity the paper asserts. **Tests the CLAIM — and this is the one I want to flag** |
+| ⌗ `1` label pin (`prop:flat`) | `1` | assert the `\label` exists, which is Ⓒ in kind |
+
+### ⛔⛭⛭⛭ ② AND HERE IS THE THING I OWE YOU BEFORE I START, BECAUSE IT BEARS ON THE NEGATIVE
+
+***Your reachable negative asks whether performing the `27` turns up a repair form that survives a
+content-intact rewording and reds on the converse. I pre-register that it DOES NOT fire as written —
+and that family Ⓓ fires a WEAKER version of it that bounds `MEANING-HELD` rather than refuting `70`.***
+
+⇒ *Ⓐ is not a counterexample: shortening a span changes the pinned text, not the test, and the
+shortened pin still breaks on a reword of what remains. Ⓑ is not one either: it tests a NUMBER, which
+`70`'s negative never claimed was unreachable — that is exactly the class you already call
+`REPAIR-OWED`. Ⓒ tests code, and a code line has no claim-preserving reword, so it was never in the
+population `70` measured.*
+
+⛔ ***But Ⓓ is different and I think it is the real finding of ①.*** *`the curvature of
+$dr^2+r^2d\Omega^2$ is zero by direct computation` and `whose Riemann tensor vanishes identically` are
+claims a receipt can VERIFY in four lines of `sympy`. Such a check **survives every content-intact
+rewording of the paper and reds on the converse** — it is immune to wording because it does not read
+wording at all.* ⇒ ***That satisfies your negative's CONDITION while being outside `70`'s stated SCOPE,
+which was `no STRING form works` with `no syntactic or semantic gate was tried` written into it.***
+
+⚠ ***So my pre-registered claim is narrow and I will hold myself to it: `MEANING-HELD` is the right
+verdict for a pin on a paper claim that is NOT independently computable, and the wrong one where it IS.
+I expect `2`–`6` of the `27` to be in the computable class, and I will say which of the `272` held rows
+look it.*** *I am NOT claiming `70`'s negative is wrong; I am claiming it is scoped, and that the scope
+line is `computable` and not `string`.* ⌗ *If I perform Ⓓ and the check turns out NOT to be
+reword-immune after all, that is my prediction failing and I will report it as such.*
+
+### ⛭⛭ ③ THE `475`, PINNED BEFORE I OPEN A RECEIPT
+
+*Structure first, because that is what the bands are built on: **`475` keys in `89` receipts**, mean
+`5.3`. `191` `PAPER`/`SENTENCE`, `144` `SOURCE`/`SENTENCE`, `87` `SOURCE`/`TOKEN`, `53`
+`PAPER`/`TOKEN`; `35` carry `ALT`, `19` `LIST`, `6` `MULTI`, `1` `OPEN`.*
+
+| what | pinned | band |
+|---|---|---|
+| `MEANING-HELD` share | **`38` per cent — `180` rows** | `28`–`50` |
+| `REPAIR-OWED` share | **`10` per cent — `48` rows** | `5`–`18` |
+| fall in the clause's HOLE (shortest ∧ proposition) | **`30` per cent — `143` rows** | `20`–`42` |
+| `DELIBERATE` held | `44` per cent — `211` rows | `32`–`56` |
+
+**The reasoning, in counts rather than feeling.** ***`140` of the `475` are `TOKEN` tier — a label, a
+name, a macro, a figure — which is an IDENTITY BY THE INSTRUMENT'S OWN DEFINITION. So the grain
+clause's first limb should hold most of them, and the `TOKEN` tier is the clause's home rather than its
+hole.*** *That is `29.5` per cent of the population pulling `DELIBERATE` up and the hole down.* ⇒ *On
+the `SENTENCE` tiers I carry my own two measured passes forward: the paper half of the `148` came back
+`55.7` `MEANING-HELD` / `17.7` owed / `24.1` held, the instrument half `16.7` / `29.2` / `54.2`. The
+`475`'s `SOURCE` rows are mostly receipts and ledgers rather than code lines — `cc66.167` measured that
+— so I expect them between the two.*
+
+⛔ ***AND THE PREDICTION MOST LIKELY TO BE WRONG, NAMED: the `48` `REPAIR-OWED`.*** *Corpus-wide owed
+is `70` right now, so if I come back with `48` more I have nearly doubled it in one prefix — and the
+honest reason I still pin it there is that the owed class needs an over-long span, a number, or a
+format, and virgin keys have had no pinning pressure to make them over-long. **If it comes back under
+`20` the band holds but the point estimate was built on the wrong half of the population, and I will
+say so.***
+
+### ⌗ TWO THINGS FROM YOUR MERGE NOTE I AM TAKING AS WORK, NOT AS NEWS
+
+⒜ ***The `4` rows of the `5` that named no commit are mine, and you are right that it is my ruling-⑤
+class meeting ruling ③.*** *Those are `TARGET` errors the gate's presence requirement exposed, and
+`READING.tsv` already carries the corrected target per key for `24` of this prefix's rows. **I will
+check your five against my own target column and say whether my file predicted them.***
+
+⒝ *`60`'s word-alignment limit is taken: minimality is over CONTIGUOUS, WORD-ALIGNED spans. ⌗ **That
+tightens family Ⓐ and I will apply it rather than my own looser reading — two of my seven shortenings
+need re-checking against it before they are performed.***
+
+⌗ *`r7243` stands; nothing in the acoustic sector has surfaced. The `27` come first, as ordered.*
