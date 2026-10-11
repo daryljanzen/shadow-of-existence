@@ -153,12 +153,22 @@ for r in MINE:
 _RESTATED = [r for r in MINE if r[5] != 'DELIBERATE']
 print(f"    the sixty-six as THIS pass recorded them: all DELIBERATE;  live now {_LIVE_V}"
       f";  re-stated by a later order: {len(_RESTATED)}", flush=True)
-gate("Ⓐ①  sixty-six rows carry this revision's stamp, EVERY ONE of them was `DELIBERATE` when this"
+gate("Ⓐ①  sixty-six rows carried this revision's stamp, EVERY ONE of them was `DELIBERATE` when this"
      " pass recorded it, and NONE of them is unadjudicated today -- so no row was moved to a verdict"
      " that exempts it from the ratchet and none is left half-written.  ⛭ *`32` have since been"
      " re-stated under `r7253`'s grain clause and `MEANING-HELD` ruling, which is an adjudication and"
-     " not an exemption: the key stays counted*",
-     len(MINE) == 66 and not [r for r in MINE if r[5].startswith('UNADJUDICATED')])
+     " not an exemption: the key stays counted; and `7` more have since been REPAIRED AWAY under"
+     " `r7255`, which retires the row because the pin it describes stops existing*",
+     #   ⛔⛭ AND A SECOND REPAIR r7255+cc66.172, by the same seat and the same rule, because the
+     #     FIRST one was not enough.  cc66.171 made this gate survive a RE-STATEMENT of these rows
+     #     by matching the stamp anywhere in the reason chain.  ** r7255 then ordered cc66 to
+     #     PERFORM its owed repairs -- and performing one DELETES the row, because the pin it
+     #     describes stops existing.  Seven of these sixty-six went that way, so `== 66` reddened
+     #     on the next order's success. **
+     #   ⇒ The count is now MONOTONE in the only direction the corpus allows: a row can LEAVE this
+     #     stamp-set, by being repaired away or re-keyed, and cannot be ADDED, because the stamp is
+     #     historical and no seat writes another revision's stamp.  The live count is printed.
+     len(MINE) <= 66 and not [r for r in MINE if r[5].startswith('UNADJUDICATED')])
 
 # ** ⛭⛭⛭ REPAIRED r7208, AND THE DEFECT WAS THIS RECEIPT'S OWN -- ON ITS OWN SUBJECT. ***
 #   This gate asserted `len(UNADJ) == 2170`, an EXACT count on a bucket `PO-78` says MAY ONLY FALL.
@@ -173,7 +183,10 @@ gate("Ⓐ②  and the backlog FELL BY `66` FROM `2236` at this revision, which i
      " arithmetic and cannot move; it stands at or below that today and under the baseline's recorded"
      " ceiling of `2287` -- `PO-78`'s own condition on this class.  ⌗ *The live check is monotone"
      " because the bucket may only fall, and an `==` here went red when `r7204` fell it further*",
-     len(MINE) == _FELL_BY and _FROM - _FELL_BY == 2170
+     #   ⛔ r7255+cc66.172, same cause as Ⓐ①'s second repair: PERFORMING an owed repair DELETES the
+     #     row, so a census over these sixty-six cannot be an equality.  `66` is this pass's own
+     #     arithmetic and stays in the label; the live form is monotone.
+     len(MINE) <= _FELL_BY and _FROM - _FELL_BY == 2170
      and len(UNADJ) <= 2170 and len(UNADJ) < 2287)
 
 # ** ⛭ REPAIRED r7208: the third conjunct asserted that those two receipts carry ZERO unadjudicated
@@ -211,12 +224,18 @@ gate("Ⓑ③  and no note is a stub: every one is over four hundred characters a
      and all('r7150' in r[6] or 'ruling' in r[6] or 'figure' in r[6] for r in MINE))
 
 # =====================================================================================
+PASS_KINDS = {'CODE': 30, 'RULE': 33, 'FIG': 2, 'NOTE': 1}   # what THIS pass recorded
+
 head("C -- AND EACH ROW'S READING MATCHES THE KIND OF LITERAL IT SITS ON")
 
 gate("Ⓒ①  the FOUR kinds are present with the counts the pass claims -- `30` code, `33` rule, `2`"
      " figure and `1` instrument-diagnosis -- and they partition the sixty-six with nothing over",
-     {k: len(v) for k, v in KINDS.items()}
-     == {'CODE': 30, 'RULE': 33, 'FIG': 2, 'NOTE': 1}
+     # ⛔ r7255+cc66.172: the four counts are this pass's own and stay in the label; what the live
+     #   form asserts is the PARTITION -- every surviving row takes one of the four kinds, none takes
+     #   more than this pass recorded, and together they sum to the rows that remain -- because
+     #   r7255's performed repairs RETIRE rows of this set and a census over them cannot be an equality.
+     set(KINDS) <= set(PASS_KINDS)
+     and all(len(v) <= PASS_KINDS[k] for k, v in KINDS.items())
      and sum(len(v) for v in KINDS.values()) == len(MINE))
 
 _code_lit = [json.loads(r[1]) for r in KINDS['CODE']]
@@ -246,9 +265,11 @@ gate("Ⓒ③  ⛔ AND THE CHECK THAT CAUGHT THE ONE MIS-CLASSIFICATION: both FIG
      " unadjudicated row, because the ratchet then counts it as work done **",
      len(_FIG) == 2
      and all(re.search(r'\d', lit) for lit in _FIG)
-     and any('0.7312' in lit for lit in _FIG)
+     # ⌗ r7255+cc66.172: the sky-value row's literal is now a width-re-cut PATTERN, so its digits
+     #   carry regex escaping -- the test reads them with the backslashes stripped.
+     and any('0.7312' in lit.replace('\\', '') for lit in _FIG)
      and any('221.93' in lit for lit in _FIG)
-     and not any('0.7312' in lit for lit in _rule_lit))
+     and not any('0.7312' in lit.replace('\\', '') for lit in _rule_lit))
 
 gate("Ⓒ④  and the RULE rows carry the reading that fits them: each note says the receipt's result"
      " asks for NO change to the clause and cites the `r7150` partition, which is the only ground on"
