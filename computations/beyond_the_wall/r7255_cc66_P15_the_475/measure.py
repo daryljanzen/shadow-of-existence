@@ -36,6 +36,7 @@ import glob
 import json
 import os
 import re
+import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
@@ -52,9 +53,24 @@ def flat(t):
     return re.sub(r'\s+', ' ', re.sub(r'(?m)^\s*#\s?', '', t))
 
 
+PREREG_REV = '9feb2f12'          # this cycle's pre-registration, where the 475 were counted
+
+
 def ledger():
-    rows = [l.rstrip('\n').split('\t') for l in
-            open(os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv'), encoding='utf-8')
+    """the ledger AS IT STOOD AT THE PRE-REGISTRATION, not as it stands now.
+
+    ⛔ r7255+cc66.181.  The first draft read the LIVE ledger and selected `verdict.startswith
+    ('UNADJUDICATED')`, so the population shrank from 475 to 227 as this order's own batches
+    adjudicated it -- the measurement file stopped describing the population it was built for.
+    ** That is the same shape as the fail-on-success instance in 70's gate at cc66.177: a set
+    defined by the VERDICT COLUMN cannot survive adjudication, because adjudication is the one
+    operation that changes a verdict. **  Fifteen instances were in receipts and gates; this one
+    is in this seat's own measurement tooling, which is the place it is easiest not to notice.
+    ⇒ The subject is the ledger at a pinned revision, as order ①'s manifest already does.
+    """
+    out = subprocess.run(['git', 'show', f'{PREREG_REV}:corpus/quote_pin_baseline.tsv'],
+                         cwd=ROOT, capture_output=True, text=True, check=True).stdout
+    rows = [l.rstrip('\n').split('\t') for l in out.splitlines()
             if l.strip() and not l.startswith('#')]
     return [r for r in rows if len(r) >= 7]
 
@@ -87,9 +103,22 @@ def clause_spans(s):
             if i == 0 and j == len(parts):
                 continue
             cand = ' '.join(q.strip() for q in parts[i:j]).strip()
-            if cand and len(cand) < len(s) and len(cand.split()) >= 3:
+            if cand and len(cand) < len(s) and len(cand.split()) >= 3 and _balanced(cand):
                 out.append(cand)
     return sorted(set(out), key=len, reverse=True)
+
+
+def _balanced(s):
+    """a candidate that leaves a LaTeX group or a math span OPEN is not a span at all.
+
+    ⛔ r7255+cc66.181, the FOURTH probe correction of this cycle and found the same way as the
+    other three -- by reading the candidates the probe proposed.  Splitting at the comma inside
+    `\\emph{It is a limit rather than a parameter}` produced `\\emph{It is a limit` as a limb-two
+    candidate: an unclosed brace group, which no pin could carry and which 60's word-alignment
+    limit excludes anyway.  Three of batch 03's rows had such a candidate and one of them was the
+    only candidate the probe found for that row.
+    """
+    return s.count('{') == s.count('}') and s.count('$') % 2 == 0
 
 
 def word_spans(s):
