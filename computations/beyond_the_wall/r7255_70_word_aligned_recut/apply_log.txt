@@ -1,0 +1,1 @@
+Counter({'APPLIED': 46})  pre-red receipts: []

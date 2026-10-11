@@ -1,0 +1,8 @@
+clipped keys: 46
+  located at every site:                         46
+  the CURRENT clipped span still breaks today:   46
+  R1 a word-aligned re-cut exists that breaks every declared reversal: 46
+     the plain expansion breaks too:            46
+  R2 minimal re-cut differs from plain expansion: 0
+  R3 characters added over the clipped span: median 2.0, range 1..10
+  divergent across sites: 0;  no site found: 0

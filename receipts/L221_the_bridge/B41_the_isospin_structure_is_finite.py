@@ -85,7 +85,7 @@ def main():
     # ⓵ P14 works in D_6
     check('⛭⛭ ⓵ P14 works in $D_6$: "the representations of $D_6$ that are trivial on the deck '
           '$\\mathbb{Z}_3$ ... are its four one-dimensional ones"',
-          'that are trivial on the deck' in p14 and 'e its four one-dimensional ones' in p14)
+          'that are trivial on the deck' in p14 and 'are its four one-dimensional ones' in p14)
 
     # and D_6 has 2-dim irreps
     dims = [1, 1, 1, 1, 2, 2]
@@ -94,7 +94,7 @@ def main():
           sum(d*d for d in dims) == 12 and dims.count(2) == 2)
     check('⇒ and P14 counts the one-dimensional ones precisely because the two-dimensional ones are '
           'there to exclude -- "a colourless sector on this structure has total dimension four"',
-          'e its four one-dimensional ones, so a colourless sector on this structure has total dimension four' in p14)
+          'are its four one-dimensional ones, so a colourless sector on this structure has total dimension four' in p14)
 
     # ⓶ but it is finite
     check('⛔⛭⛭ ⓶ and the group is FINITE: a gauge field is a connection valued in a LIE ALGEBRA, '

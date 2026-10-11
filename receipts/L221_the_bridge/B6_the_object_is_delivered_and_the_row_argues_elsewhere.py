@@ -105,7 +105,7 @@ def main():
     # ⓶ what P14 delivers
     check('⓶ P14 lists colour\'s discrete content as DELIVERED: "the discrete content of '
           '\\textbf{colour}"',
-          'r them, the discrete content of \\textbf{colour}' in p14)
+          'after them, the discrete content of \\textbf{colour}' in p14)
     check('with the module named: "the module the operator\'s colour structure acts on is the branching '
           'rather than any bundle of the substrate"',
           "the module the operator's colour structure acts on is the branch" in re.sub(r'\s+', ' ', p14))
