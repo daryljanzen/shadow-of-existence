@@ -55,8 +55,12 @@ def ledger():
     return [r for r in rows if len(r) >= 7]
 
 
-CLAUSE = re.compile(r'(?:,|;|:|---|--|\s+so\s+|\s+which\s+|\s+and\s+|\s+because\s+'
-                    r'|\s+rather than\s+|\s+but\s+|\s+while\s+|\s+where\s+)')
+# ⌗ `--` is NOT a boundary when it sits between word characters: in this corpus that is a LaTeX
+#   en dash inside a compound name, and splitting on it cut `Sachs--Wolfe` in half and produced
+#   `has no early integrated Sachs` as a limb-two candidate.  Found by reading the candidates the
+#   first draft proposed, not by reasoning about the regex.
+CLAUSE = re.compile(r'(?:,|;|:|---|(?<=\s)--(?=\s)|\s+so\s+|\s+which\s+|\s+and\s+'
+                    r'|\s+because\s+|\s+rather than\s+|\s+but\s+|\s+while\s+|\s+where\s+)')
 
 
 def clause_spans(s):

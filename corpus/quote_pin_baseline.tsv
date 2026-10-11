@@ -29,6 +29,14 @@
 #        (claim is a PROPOSITION) -- 44 of the 148 -- where the subject rule governs.  ② Limb two needs a CONTIGUOUS strictly
 #        shorter span, because a pin is a SUBSTRING of a document: a redundant span in the MIDDLE of a pinned sentence (an
 #        apposition between the subject and the predicate the claim needs) is NOT reachable by the clause and falls into ①. **
+#      ⌗ A THIRD LIMIT, 60's, bound in the SAME revision (r7255 ruling ②) and missing from this header until
+#        r7255+cc66.175: minimality is measured over WORD-ALIGNED spans, because 70's EXTENDED spans are character
+#        windows landing mid-word.  ** SO THE CLAUSE AS BOUND READS: DELIBERATE where the pinned span is the shortest
+#        CONTIGUOUS, WORD-ALIGNED span that carries its claim and the claim is an IDENTITY; REPAIR-OWED where a
+#        strictly shorter such span carries it. **  A seat reading only limits ① and ② applies an unamended clause.
+#      ⌗ AND AN OPERATIONAL LIMIT, r7255+cc66.172 ①, from performing the 27: limb two needs the shorter span's
+#        OCCURRENCE COUNT taken BEFORE the shortening.  On the clause's own cited exemplar the shorter span occurs
+#        TWICE where the pinned form occurs once, so shortening converted a pin on the CLAIM into a pin on the FILE.
 #
 # ** A RE-STATEMENT APPENDS, IT DOES NOT PREPEND (r7253+cc66.171, after the sixth instance of the fail-on-success class).
 #    A re-stated row keeps its ORIGINAL reason and head stamp and carries the new reading after `** RE-STATED ...`, because
