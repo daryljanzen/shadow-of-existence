@@ -27,6 +27,10 @@ Per key:
                    of order ①'s eight limb-two shortenings was of this shape and none cut
                    mid-clause, so this is the candidate set and `shorter_uniq` is only the ceiling.
   clause_span      the longest such span, or '-'
+  clause_any       TRUE iff a clause-aligned strictly shorter span EXISTS in the container AT ALL,
+                   ignoring how often it occurs.  ** clause_any AND NOT clause_uniq is the measured
+                   size of order ①'s operational limit: limb two has a candidate and the candidate
+                   MULTIPLIES THE SITES, so shortening would convert a claim pin into a file pin. **
 """
 import glob
 import json
@@ -145,7 +149,7 @@ def main():
         container = TEX if real == 'PAPER' else (INSTR if oi else RECPT)
         base = max(op, opf) if real == 'PAPER' else max(oi, orc)
         span, uniq = '-', '0'
-        cspan, cuniq = '-', '0'
+        cspan, cuniq, cany = '-', '0', '0'
         if tier == 'SENTENCE' and ' ' in raw and base:
             probe = flat(raw) if (real == 'PAPER' and opf and not op) else raw
             cont = flat(container) if probe != raw else container
@@ -154,11 +158,15 @@ def main():
                     span, uniq = cand, '1'
                     break
             for cand in clause_spans(probe):
-                if cand and cont.count(cand) and cont.count(cand) <= base:
+                if not cand or not cont.count(cand):
+                    continue
+                if cany == '0':
+                    cany = '1'          # a clause-aligned shorter span EXISTS in the container
+                if cont.count(cand) <= base:
                     cspan, cuniq = cand, '1'
                     break
         out.append([stem, tgt, tier, flags, str(line), lit, real, str(op), str(opf), str(oi),
-                    str(orc), uniq, json.dumps(span), cuniq, json.dumps(cspan)])
+                    str(orc), uniq, json.dumps(span), cuniq, json.dumps(cspan), cany])
 
     dest = os.path.join(HERE, 'MEASURED.tsv')
     with open(dest, 'w', encoding='utf-8') as fh:
@@ -166,7 +174,7 @@ def main():
         fh.write('# counts and booleans only; no judgement in any column.\n')
         fh.write('# stem\tledger_target\ttier\tflags\tline\tliteral\treal_target\t'
                  'occ_paper\tocc_paper_flat\tocc_instr\tocc_recpt\tshorter_uniq\tshorter_span\t'
-                 'clause_uniq\tclause_span\n')
+                 'clause_uniq\tclause_span\tclause_any\n')
         for r in out:
             fh.write('\t'.join(r) + '\n')
     print(f'{len(out)} rows -> {dest}')
