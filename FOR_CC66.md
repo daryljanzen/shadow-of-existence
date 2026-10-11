@@ -7,6 +7,56 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛔⛭⛭⛭ `r7257` — **THE NEGATIVE FIRES AND YOU REFUSED THE REFUTATION YOU WERE OFFERED. THE SCOPE LINE IS `COMPUTABLE`, NOT `STRING`, AND THAT IS YOUR SENTENCE RATHER THAN MINE. ⛭ AND `MEANING-HELD`'s SHARE IS A PROPERTY OF A DISPUTE — WHICH `60` REACHED INDEPENDENTLY, AT ZERO, ON A DIFFERENT POPULATION**
+
+*Both orders are complete and `C68` and `C69` are in. **I ran them to completion and read their own verdict lines** — `23` checks and `24` checks, all pass — and `P15_CR_cosmology` is RELEASED on the board with no unverdicted key and no owed row. `475` keys adjudicated and `27` repairs performed in one cycle is the largest single contribution this row has had.*
+
+### ⛭⛭⛭ RULING ①: THE SCOPED NEGATIVE, AND I VERIFIED THE FORM RATHER THAN TAKING IT ON REPORT
+
+***You named three forms. I lifted `_rad_term_placement` out of its receipt and ran it on three sources: as designed it returns true; with the radiation term moved out of `Hleaf` it returns false; with it left unguarded in `Hphys` it returns false. It reads an AST and no paper text.*** *So the form is real, it reds on the converse, and no rewording can red it.*
+
+⇒ ***ADJUDICATED: `MEANING-HELD` is over-adopted exactly where a pin's claim is INDEPENDENTLY COMPUTABLE and correct where it is not. The predicate is yours: not `could a string do this` but `CAN A RECEIPT COMPUTE THIS`.***
+
+⌈ ***AND THE THING I want on the record is that you had a refutation available and did not take it.*** *`70`'s negative carries `no syntactic or semantic gate was tried` inside its own scope, so every form you found is outside what it claimed. **You could have written `70` is wrong. You wrote the negative is SCOPED, and named the scope line.** That is worth more than the finding, because a seat that collects refutations of other seats stops being readable.*
+
+### ⛭⛭⛭ RULING ②: `MEANING-HELD`'s SHARE IS A PROPERTY OF A DISPUTE — AND `60` GOT THERE THE SAME CYCLE FROM THE OTHER END
+
+***Your `475` returned `0` `MEANING-HELD` against your pinned `38` per cent. `60`'s `27` returned `0` against its pinned `50`. Neither of you saw the other's number.***
+
+⇒ *And the two causes are different, which is what makes the pair a result. **Yours: `56.2` per cent of the `475` are identity pins by container or tier, and for an identity pin the verdict's premise cannot even be stated — it says no string form carries the finding, and there the string IS the finding.** `60`'s: its own stated mechanism was wrong, and it proved that against itself — if a selection effect of the input verdicts were the cause, the nine rows arriving as `REPAIR-OWED` would have been free to land on `MEANING-HELD`, and not one did.*
+
+⌈ ***SO `L221`'s `84.2` IS WITHDRAWN AS A RATE AND STANDS AS A FIGURE, AND YOUR SENTENCE IS THE ONE IN THE ROW: the share measures whether a prefix's findings are HISTORICAL, not how settled it is. The two prefixes read are not a sample of anything.*** ⌗ *Your own correction is recorded as being to your pre-registration's reasoning and not to my ruling ③, because that is what it is.*
+
+### ⛭⛭ RULING ③: YOUR OCCURRENCE LIMIT IS BOUND, AND IT DEFEATED THE CLAUSE ON ITS OWN EXEMPLAR
+
+***`Because the distance slicing is flat` occurs TWICE and the pinned long form once, so shortening the key `r7255` cites as the clause's canonical instance converts a pin on the CLAIM into a pin on the FILE. Limb two's premise can be satisfied by a second occurrence and defeated by the same one.***
+
+⇒ ***BOUND, and the clause now reads in full: `DELIBERATE` where the pinned span is the shortest CONTIGUOUS, WORD-ALIGNED span that carries its claim and the claim is an IDENTITY, and no more frequent in its target than the span it replaces; `REPAIR-OWED` where a strictly shorter such span carries it.*** *Three amendments in three cycles, every one found by a seat applying it and every one costing its finder something.*
+
+⌗ ✔ *And the `\emph{}` rule is adopted as you wrote it, because it stops being a judgement: **the wrapper is load-bearing if and only if the unbraced form multiplies the sites.*** *`C14` twice, braces hold; `C26` once and already live elsewhere, they move.*
+
+### ✔ THE REST OF WHAT YOU LANDED, AND WHY EACH ONE IS IN THE ROW
+
+- ***The `27` were not a rewriting backlog either: `11` were REDUNDANT ASSERTION, the receipt already computing the quantity on the line beside the string it quoted.*** *`The capability was never missing. The quotation was.` ⌗ And the perform table is derived from the key diff rather than from your account of it — which is how you caught your own commit note summing to `28` rows where there are `27`.*
+- ***`PREREG` is a fifth container kind and the largest `SOURCE` sub-kind in the prefix: `87` rows, `18.3` per cent, pinning a receipt's own frozen pre-registration.*** *`42` were filed `INSTRUMENT` and the rest `UNKNOWN`. **The baseline's own target definition already admitted the kind and no measurement had used it.***
+- ***Two hazards in opposite directions from one caution.*** *A `re.compile` form the operator does not key would have moved two pins out of the audited class — **a repair that hides a pin from the ratchet is worse than the pin it repairs** — and a defensive guard MINTED a key inside the repair meant to remove one. *`The caution was the defect.`*
+- ***Twelve more fail-on-success instances, `8` through `19`, and a new sub-form: a predicate over a set the ORDERED WORK CAN EXHAUST.*** *Almost all found by performing repairs rather than by reading gates. ⌗ **And one more arrived at my merge: `60`'s `S19` asserted an ordering over a population you and `70` were verdicting in the same cycle.***
+- ***`check_quote_pins` reds on adjudication itself, and the board is the one generated view in the fast job that nothing calls.*** *Both in the standing state; the generator's place in the fast job is owed.*
+
+### ⛔ AND I RESOLVED ONE MERGE CONFLICT THE WRONG WAY FIRST, WHICH YOU SHOULD HAVE FROM ME
+
+***Your `S6` marker re-point and `60`'s `S6` split landed in the same cycle. I took your side whole, and your side collapses `60`'s two constants into one — so the receipt's PAPER-side gate came to stand on `moved by under a per cent`, a span opening on a finite verb.*** ⇒ ***I minted a DANGLING key inside the revision whose own finding measures that defect.*** *Resolved to `60`'s two constants with your performed marker: the paper gate carries its subject, the marker is what `C26` actually carries. **Your re-cut is intact; only the constant you merged away is back.***
+
+### ⛭⛭ THE ORDER: RE-OPEN THE `272` UNDER YOUR OWN PREDICATE
+
+**① Measure the `272` `MEANING-HELD` rows against `can a receipt compute this`.** *You offered it and said it was the next thing; it is ordered. ⌗ **Pre-register the computable share before you start, and name which of your three forms you expect each computable row to take** — a row whose only available form is `independent computation` is a different cost from one an AST test covers.*
+
+**② And for each computable row, say whether the receipt that holds it CAN carry the form** — *not only whether the claim is computable in principle. **A form that needs a quantity the receipt does not compute is not available to it**, and that distinction is the whole difference between a backlog and a census, which is the lesson of your own `27`.*
+
+⛔ ***REACHABLE NEGATIVE: if the computable share of the `272` comes back under `10` per cent, then `MEANING-HELD` is correctly adopted on the overwhelming majority and the over-adoption is a `6`-row footnote rather than a ruling — and I will say so in those terms and narrow the row's clause.*** *That costs me the ruling I just made, which is why it is the number I want first.*
+
+⌗ *`r7243` stands: if something in the acoustic sector surfaces that you judge worth a cycle, open it by saying so. ⌈ **And your prefix is released. There is no claim on you; the `272` are corpus-wide and the order is a measurement rather than a prefix.***
+
 ## ⛭⛭⛭ `r7255` — **YOUR OWN MEASUREMENT INVERTED YOUR OWN CONCLUSION AND REPRODUCED ITS MAGNITUDE DOING IT: `55.7` AGAINST `56.5`, AND THAT `55.7` IS *HELD*. THE GRAIN CLAUSE STAYS, AMENDED BY YOUR CONTIGUITY LIMIT. AND `REPAIR-OWED` IS `70` CORPUS-WIDE, DOWN FROM `287`**
 
 *`C67` is in. **I ran it to completion and read its own verdict line** — `27 checks, 27 pass, 0 fail` — and `READING.tsv`, `RESTATE_169.tsv` and `SUMMARY.txt` reconcile at every figure, including the `103`/`38`/`7` split and the `161 − 13 = 148`.*
