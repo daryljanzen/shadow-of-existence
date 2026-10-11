@@ -140,9 +140,19 @@ PRED = open(os.path.join(ROOT, 'computations', 'beyond_the_wall',
 head("A.  THE ONE GROUND, LOCATED IN THE CURRENT SOURCE -- AND HOW MUCH IT CARRIES")
 
 _flat_proj = 'the photons are projected through the \\emph{flat} geometry'
-_dm_dc = 'the comoving angular-diameter distance is $D_M=D_C$'
+# ⛭⛭ r7255+cc66.172 REPAIR PERFORMED, grain clause limb two: the span was
+#   `the comoving angular-diameter distance is $D_M=D_C$` and the prose frame merely restates the
+#   symbols it carries.  ** Shortened to the FORMULA, which is the shortest contiguous word-aligned
+#   span that carries the equality this receipt is about -- and a formula pin cannot fail on a
+#   claim-preserving rewording (r7169/B25), so the shortened pin is reword-immune where the long one
+#   was not. **  ⌗ Measured before performing: the shortened form occurs ONCE in the papers, so the
+#   repair does not trade a reword exposure for a MULTI-site one.
+_dm_dc = '$D_M=D_C$'
 _not_hyper = 'not} the hyperspherical transfer of a literal closed universe'
-_slice = 'The constant-$\\tau$ slice is exactly flat $\\mathbb{R}^3$'
+# ⛭⛭ r7255+cc66.172 REPAIR PERFORMED, same limb: `$\mathbb{R}^3$` is the spelling of the
+#   conclusion and not the conclusion, and this gate's claim is that prop:flat's conclusion is
+#   present.  Shortened to the clause.  ⌗ One occurrence in the papers, so no MULTI trade.
+_slice = 'The constant-$\\tau$ slice is exactly flat'
 for nm, ph in (('flat projection', _flat_proj), ('D_M=D_C', _dm_dc),
                ('not hyperspherical', _not_hyper), ('prop:flat', _slice)):
     print(f"      {PAPER.count(ph)}x  {nm}")
@@ -154,9 +164,9 @@ gate("Ⓐ① the equality is read from the paper on this tree and not recalled: 
      "`$D_M=D_C$`, the explicit refusal of the hyperspherical transfer, and `prop:flat`'s own "
      "conclusion are all present",
      'the photons are projected through the \\emph{flat} geometry' in PAPER
-     and 'the comoving angular-diameter distance is $D_M=D_C$' in PAPER
+     and '$D_M=D_C$' in PAPER
      and 'not} the hyperspherical transfer of a literal closed universe' in PAPER
-     and 'The constant-$\\tau$ slice is exactly flat $\\mathbb{R}^3$' in PAPER)
+     and 'The constant-$\\tau$ slice is exactly flat' in PAPER)
 
 # prop:flat re-derived rather than quoted: the slice's Riemann
 rr, tth, pph = sp.symbols('r_s theta_s phi_s', positive=True)
