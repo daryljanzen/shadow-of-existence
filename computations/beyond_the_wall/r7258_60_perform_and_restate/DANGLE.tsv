@@ -1,0 +1,12 @@
+# the DANGLING-PREDICATE test over the ADJUDICATED PAPER/SENTENCE cell, r7258+60.
+# A span that begins with a finite verb, a participle or a bare conjunction names no subject of
+# its own, so it matches any sentence carrying that predicate.  Instrument: dangling_predicate.py
+verdict	rows	dangling	share_pct
+ALT-OK	14	5	35.7
+DELIBERATE	66	14	21.2
+ENCODING-OK	10	2	20.0
+EXTENDED	203	11	5.4
+MEANING-HELD	259	58	22.4
+NOT-A-PIN	1	0	0.0
+REPAIR-OWED	42	14	33.3
+ALL	595	104	17.5

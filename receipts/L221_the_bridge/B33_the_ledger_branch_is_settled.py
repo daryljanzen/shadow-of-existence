@@ -111,10 +111,37 @@ def main():
           f'struck out, {len(_outside)} bare use(s) remain.  ** The "ALL" is now ASSERTED and not '
           f'merely stated **',
           n_uses > 0 and not _outside)
-    check('⚠ while the one apparent exception is not one: BH_causality\'s Planck-scale mention '
-          'describes HAWKING\'s derivation and its trans-Planckian problem, not a corpus commitment',
-          'Planck scale' in P['BH_causality_v2']
-          and 'the derivation' in P['BH_causality_v2'])
+    # ⛔⛭ REPAIRED r7258+60, on r7255's order ① -- row owed at r7256 with repair form CONDITION, the
+    #   pinned key being the bare token `the derivation`.  *`'Planck scale' in P and 'the derivation'
+    #   in P` is two locators in a paper of ninety thousand characters: it would pass a paper that DID
+    #   commit to a second scale, as long as the word `derivation` appeared anywhere in it.  And the
+    #   claim is about the LIVE text -- what the paper does and does not assert today -- so it cannot
+    #   be held at a commit under `MEANING-HELD` either.*
+    #   ⇒ *** The condition has two arms and the FIRST one settles it: the instrument gate ⓶ runs
+    #       measures `\ell_P`, and BH_causality carries NONE.  So the `apparent exception` is not an
+    #       exception to the measurement at all -- it is a different word. ***
+    _bh = P['BH_causality_v2']
+    _n_ell = len(bare.findall(_bh))
+    # the second arm: every `Planck` in the paper sits inside the Hawking/Unruh construction or the
+    # trans-Planckian objection, which is what makes it a REPORT and not a commitment
+    _ATTR = re.compile(r'Planck spectrum|trans-Planckian|derivation|Jacobson|Unruh|Hawking|Bogoliubov')
+    _planck = [m.start() for m in re.finditer(r'Planck', _bh)]
+    _unattributed = [i for i in _planck
+                     if not _ATTR.search(_bh[max(0, i - 400):i + 400])]
+    check(f'⚠ while the one apparent exception is not one, and by CONDITION rather than by two bare '
+          f'locators: BH_causality carries {_n_ell} uses of $\\ell_{{P}}$ -- the quantity gate ⓶ '
+          f'measures -- so it makes no commitment in it; and all {len(_planck)} of its `Planck` '
+          f'mentions sit inside the Hawking/Unruh construction or the trans-Planckian objection, '
+          f'leaving {len(_unattributed)} unattributed',
+          # ⌗ the `\ell_P` arm is written as an upper BOUND and not an equality: the claim is that the
+          # paper carries NONE and must go on carrying none, which is monotone in the only direction it
+          # can move (`check_exact_counts`, and the same remedy r7256 took for `len(_own)`).
+          _n_ell <= 0 and _planck and not _unattributed)
+    check('⇒ and the classifier carries its COUNTER: a sentence that DOES assert a Planck length as the '
+          'theory\'s physical scale is NOT matched by it, so the zero above is a measurement and not a '
+          'rule that passes everything.  ** The control is run, not asserted **',
+          not _ATTR.search('The one physical length of the theory is the Planck length, '
+                           'set to unity throughout.'))
 
     print()
     if FAILED:

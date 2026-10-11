@@ -65,6 +65,24 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+# ⛔⛭ ADDED r7258+60, on r7255's order ① -- the markup-carrier repair for this receipt's one owed row.
+#   *`\emph{...}` inside a pinned span is not part of the claim: the pin breaks on any re-typesetting
+#   that preserves the meaning (`\emph`→`\textit`, or the emphasis simply dropped).  Normalising the
+#   emphasis out of the HAYSTACK leaves the span whole -- one contiguous word-aligned read -- instead of
+#   cutting it into pieces that no longer carry the verb.*
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+
+
+def unemph(t, rounds=4):
+    """the paper with inline emphasis commands unwrapped, contents kept, nesting handled by iteration"""
+    for _ in range(rounds):
+        t2 = _EMPH.sub(r'\1', t)
+        if t2 == t:
+            break
+        t = t2
+    return t
+
+
 def main():
     print()
     print("  B13 -- is PO-2's identification stated anywhere?")
@@ -87,8 +105,49 @@ def main():
           "is not a second group resembling the substrate's own" in p14)
     check('with the map exhibited: "a transposition of roots is a hop to a neighbouring hinge"',
           'a transposition of roots is a hop to a neighbouring hinge' in p14)
-    check('and named: "the Weyl $S_{3}$ is the relation among the three hinges"',
-          'the Weyl $S_3$ \\emph{is} the relation among the three hinges' in p14)
+    # ⛔⛭ REPAIRED r7258+60, on r7255's order ① -- row owed as a MARKUP CARRIER at r7256.
+    #   *The pin read the span with `\emph{is}` sitting inside it, so a re-typesetting that preserves
+    #   the claim breaks the pin.  The emphasis is the paper's own cue and not part of what is claimed.*
+    # ⌗ ** AND THE REPAIR SHAPE THIS REVISION PRE-REGISTERED FOR THE NINE MARKUP CARRIERS WAS WRONG.
+    #   That is reported here rather than quietly replaced. **  *`PREDICTION.md` said: split the span at
+    #   the emphasis into two contiguous word-aligned conjuncts bracketing it, on the ground that the
+    #   markup-stripped span is ABSENT from the paper as written.*  ⇒ *** The split shape ADMITS THE
+    #   NEGATION: *** with `the Weyl $S_3$` and `the relation among the three hinges` pinned separately,
+    #   a paper reading `$S_3$ \emph{is not} the relation among the three hinges` satisfies both
+    #   conjuncts -- and this row's claim is an IDENTITY, so a test that cannot tell the claim from its
+    #   denial does not carry it.  ** The counter-example is RUN below as a control, not argued. **
+    #   ⇒⇒ *** The repair is to normalise the emphasis out of the HAYSTACK and keep the span whole: one
+    #       contiguous, word-aligned span, markup-independent, and still sensitive to the verb. ***
+    _u14 = unemph(p14)
+    _KEY = 'the Weyl $S_3$ is the relation among the three hinges'
+    _i = _u14.find(_KEY)
+    _W = re.compile(r'\w')
+    _aligned = _i >= 0 and not (_W.match(_u14[_i - 1] if _i else ' ')
+                                or _W.match(_u14[_i + len(_KEY)] if _i + len(_KEY) < len(_u14) else ' '))
+    check(f'and named: "the Weyl $S_3$ is the relation among the three hinges" -- read with the inline '
+          f'emphasis NORMALISED OUT of the paper, so the pin survives a re-typesetting; the span is '
+          f'contiguous, WORD-ALIGNED on both sides, and occurs {_u14.count(_KEY)} time(s)',
+          _KEY in _u14 and _aligned)
+    # ⌗ THE CONTROL IS RUN ON TWO SENTENCES WRITTEN HERE, not on the paper, and that is deliberate:
+    #   reading the two conjuncts against text traced to `p14` would have ADDED TWO PAPER KEYS -- in
+    #   exactly the class this row is being repaired out of -- to demonstrate that they are the wrong
+    #   shape.  *The same trap r7256 fell into and reported.*  Local strings are the receipt's own text,
+    #   so the truth table below is a fact about the two SHAPES and adds nothing to the backlog.
+    _AFF = 'the Weyl $S_3$ is the relation among the three hinges'
+    _DEN = 'the Weyl $S_3$ is not the relation among the three hinges'
+
+    def _split_shape(t):      # the shape PREDICTION.md pre-registered: two bracketing conjuncts
+        return 'the Weyl $S_3$' in t and 'the relation among the three hinges' in t
+
+    def _whole_shape(t):      # the shape adopted: the span kept whole over an un-emphasised haystack
+        return _KEY in t
+
+    check('⛔ with the DISCARDED shape refuted by its own truth table: over the affirmative sentence and '
+          'its DENIAL, written here, the two-conjunct shape passes BOTH and the whole-span shape passes '
+          'only the affirmative.  ** This row\'s claim is an IDENTITY, so a test that cannot tell it '
+          'from its denial does not carry it -- the repair form is chosen by this control **',
+          (_split_shape(_AFF), _split_shape(_DEN), _whole_shape(_AFF), _whole_shape(_DEN))
+          == (True, True, True, False))
 
     # ⓶ the row does not carry it
     check('⛔ ⓶ and the PO-2 row names the two distinguished roots but never says they are the hinges\'',

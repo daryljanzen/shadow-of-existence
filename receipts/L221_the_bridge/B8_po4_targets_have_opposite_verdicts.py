@@ -116,9 +116,46 @@ def main():
                'is $SU(3)$ itself') in p14
           and ('the smallest connected group containing the three wall monodromies and the hinge '
                '$3$-cycle is $SU(3)$') not in p14)
-    check('with the module named: "the module the operator\'s colour structure acts on is the branching '
-          'rather than any bundle of the substrate"',
-          "the module the operator's colour structure acts on is the branch" in p14)
+    # ⛔⛭ RE-CUT r7258+60, on r7255's order ① -- row owed at r7256 because EVERY occurrence of the span
+    #   is CLIPPED MID-WORD: the paper reads `... is the branching rather than any bundle of the
+    #   substrate` and the key stopped inside `branching`.  *So the key was a character window and the
+    #   grain clause's shorter-span test had nothing to run on.*
+    # ⌗ ** AND THIS ROW IS ONE OF THE TWO r7256's HAND SAMPLE FLAGGED FOR A SECOND REASON: the LABEL
+    #   and the CONDITION quoted DIFFERENT TEXT. **  *The label said `is the branching rather than any
+    #   bundle of the substrate`; the condition tested only `is the branch`.  The label was already
+    #   right.  ** The re-cut makes the condition test what the label has been claiming ** -- so one
+    #   repair closes both defects, and nothing about the claim changes.*
+    _W = re.compile(r'\w')
+    _MOD = ("the module the operator's colour structure acts on is the branching rather than any "
+            'bundle of the substrate')
+    def _aligned_everywhere(lit, hay):
+        """(aligned at EVERY occurrence, number of occurrences)"""
+        i, n, ok = hay.find(lit), 0, True
+        while i >= 0:
+            b = hay[i - 1] if i else ' '
+            a = hay[i + len(lit)] if i + len(lit) < len(hay) else ' '
+            if (_W.match(lit[0]) and _W.match(b)) or (_W.match(lit[-1]) and _W.match(a)):
+                ok = False
+            n += 1
+            i = hay.find(lit, i + 1)
+        return (n > 0 and ok), n
+
+    _ok_mod, _n_mod = _aligned_everywhere(_MOD, p14)
+    # ⌗ written as a DIRECT literal test so the quote-pin operator KEYS the repaired read: a repair
+    #   that reaches the paper only through a local helper leaves the pin in force and removes it from
+    #   the counted backlog at the same time.
+    check(f'with the module named: "the module the operator\'s colour structure acts on is the branching '
+          f'rather than any bundle of the substrate" -- RE-CUT to the span the LABEL always quoted, '
+          f'word-aligned at all {_n_mod} occurrence(s) in this paper',
+          ("the module the operator's colour structure acts on is the branching rather than any "
+           'bundle of the substrate') in p14 and _ok_mod)
+    # the control, routed through the helper on purpose: the retired literal is not re-keyed to be refuted
+    _ok_old, _n_old = _aligned_everywhere(
+        "the module the operator's colour structure acts on is the branch", p14)
+    check(f'⛔ with the span it replaces shown to be the mid-word window it was called: it occurs '
+          f'{_n_old} time(s) and is CLIPPED inside `branching` at every one.  ** A pin that ends inside '
+          f'a word cannot be compared against a shorter one, which is why the row was owed **',
+          _n_old > 0 and not _ok_old)
 
     # ⓶ su(2)_L is not
     check('⛔ ⓷ and the SECOND target is explicitly not delivered: "Weak isospin as a gauging: $T$ is a '

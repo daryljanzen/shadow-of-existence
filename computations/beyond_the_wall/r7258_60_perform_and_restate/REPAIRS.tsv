@@ -1,0 +1,19 @@
+# item ① of the r7255 order: the 17 REPAIR-OWED rows of L221_the_bridge, r7258+60.
+# Ownership by INTRODUCING-COMMIT PARITY (r7244s rule as repaired at r7256).  All 15 receipts
+# have single-parent introducing commits carrying a revision id, so none reads UNATTRIBUTED.
+receipt	introducing_revision	parity	defect	repair_form	disposition	note
+B13_po2_identification_is_stated.py	r2632	EVEN	MARKUP CARRIER	NORMALISE the markup out of the haystack, span kept whole	PERFORMED	the pre-registered SPLIT shape was REFUTED by its own truth table: two bracketing conjuncts pass a paper that DENIES the identity
+B1_the_index_argument_stops_where_a_mod_two_index_begins.py	r2568	EVEN	CLIPPED MID-WORD	RE-CUT to the shortest word-aligned span	PERFORMED	the grain clause does NOT reach the replacement: its claim is a DETERMINATION, not an identity
+B33_the_ledger_branch_is_settled.py	r2742	EVEN	BARE LOCATOR / live-state claim	CONDITION, and the key RETIRES entirely	PERFORMED	the apparent exception is not one: the paper carries ZERO uses of the quantity the gate measures
+B61_the_walls_do_not_cover_the_spectral_route.py	r2818	EVEN	live-state ABSENCE claim	CONDITION with a COUNTER CONTROL	PERFORMED	the route is unclassified because its whole vocabulary is absent from every paper; counter over the escapes the paper DOES enumerate
+B63_the_spectral_route_closes_for_r2806s_reason.py	r2820	EVEN	BARE LOCATOR (two tokens)	CONDITION: one exhibiting span + an absence with its counter	PERFORMED	two tokens (8 and 19 occurrences) replaced by one span that states the decomposition
+B8_po4_targets_have_opposite_verdicts.py	r2626	EVEN	CLIPPED MID-WORD	RE-CUT to the span the LABEL always quoted	PERFORMED	also closes one of the two rows r7256 flagged where the LABEL and the CONDITION quoted different text
+B14_identical_in_content_is_po2s_reason.py	r2633	ODD	MARKUP CARRIER x2	NORMALISE the markup out of the haystack	ROUTED, patch attached	
+B23_the_corpus_crosses_by_rotation.py	r2693	ODD	MARKUP CARRIER x2	NORMALISE the markup out of the haystack	ROUTED, patch attached	
+B24_the_triality_test_run.py	r2705	ODD	MARKUP CARRIER	NORMALISE the markup out of the haystack	ROUTED, patch attached	
+B32_the_two_bounds_compose.py	r2741	ODD	MARKUP CARRIER	NORMALISE the markup out of the haystack	ROUTED, patch attached	
+B42_the_route_was_taken_and_p14_is_the_work.py	r2777	ODD	BARE LOCATOR	pin the claim, or CONDITION	ROUTED, patch attached	
+B44_po5s_two_walls_are_one.py	r2791	ODD	live-state claim	CONDITION	ROUTED, patch attached	
+B66_po5s_route_is_gated_on_po11.py	r2823	ODD	MARKUP CARRIER	NORMALISE the markup out of the haystack	ROUTED, patch attached	
+B6_the_object_is_delivered_and_the_row_argues_elsewhere.py	r2609	ODD	CLIPPED MID-WORD	RE-CUT to the span the LABEL always quoted	ROUTED, patch attached -- the TWIN of B8, same defect, same fix	
+B9_po3_why_is_answered_dimensionally.py	r2627	ODD	MARKUP CARRIER	NORMALISE the markup out of the haystack	ROUTED, patch attached	

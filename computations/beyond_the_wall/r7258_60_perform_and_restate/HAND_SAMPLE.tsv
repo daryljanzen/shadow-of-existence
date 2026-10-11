@@ -1,0 +1,14 @@
+# every call this revision rests on, checked BY HAND against the live papers, r7258+60.
+# `as_written` searches the papers as they stand; `unemphasised` searches them with inline
+# emphasis commands unwrapped.  appendix_receipts* EXCLUDED from both.
+literal	what_it_is	sites_as_written	sites_unemphasised	dangles	read_by_hand
+the Weyl $S_3$ is the relation among the three hinges	item ① B13 replacement	0	3	no	present in the UN-EMPHASISED corpus; absent as written because the paper carries \emph{is}
+determine the hypercharges completely	item ① B1 re-cut	1	1	YES	the paper reads `---determine the hypercharges completely,` : word-aligned both sides
+determine the hypercha	item ① B1 retired window	1	1	YES	present and clipped inside `hypercharges` -- a character window
+radial--angular spin connection	item ① B63 replacement	1	1	no	one span stating the decomposition, replacing the tokens `radial` and `Dirac`
+the module the operator's colour structure acts on is the branching rather than any bundle of the substrate	item ① B8 re-cut	2	2	no	the span the gate LABEL always quoted; one site in P14, one in CR_framework
+the Bianchi shear \emph{is} the long-wavelength growing tensor mode	item ② P16 ALT arm ONE	0	0	no	DEAD: the paper wraps the WHOLE sentence and carries the word `simply` inside it
+is the long-wavelength growing tensor mode	item ② P16 ALT arm TWO	1	1	YES	live, and DANGLES -- it was holding the gate up alone
+the Bianchi shear simply is the long-wavelength growing tensor mode	item ② P16 replacement	1	1	no	present in the UN-EMPHASISED corpus, subject attached
+$\theta_{D}/\theta_{*}$ moved by under a per cent	item ② S6 re-cut	1	1	no	subject attached; exactly one site
+moved by under a per cent	item ② S6 retired span	1	1	YES	live and DANGLING -- matches a sentence about anything moving by under a per cent
