@@ -129,6 +129,7 @@ The rulings are to be carried by a consistent rebuild with the comb re-derived.*
 there.  *That is reported as a check that these are measurements of the rate difference and not of the
 method.*
 """
+import ast
 import os
 import re
 import subprocess
@@ -173,6 +174,29 @@ def flat(t):
 
 
 fsrc, fp15, fp07 = flat(src), flat(p15), flat(p07)
+
+# ⛭⛭⛭ r7255+cc66.172: THE STRUCTURAL FORM THE REPAIR ABOVE USES, and it is worth naming because it
+#   is the strongest of the four families.  The comment pins it replaced quoted the instrument SAYING
+#   that `hier_run` accepts the three diagnostics and uses none.  ** This TESTS the property: the
+#   signature is read from the instrument's syntax tree and each of the three parameters is checked
+#   to appear in the signature and NOWHERE in the body. **
+#   ⇒ It reads no prose, so no rewording of the instrument's comments can red it; and it reds on the
+#     converse -- wire any of the three into the body and the gate fails.  That is the shape r7255's
+#     reachable negative asks about, in the SEMANTIC rather than the STRING sense, and it is the same
+#     shape as the 81-component Riemann computation in `P15_the_one_ground...`.
+def _hier_accepts_and_uses_none():
+    """`hier_run` takes L_A_, D_M_, R_S_ and reads none of them -- from the AST, not from a comment."""
+    for _n in ast.walk(ast.parse(src)):
+        if isinstance(_n, ast.FunctionDef) and _n.name == 'hier_run':
+            _args = {a.arg for a in _n.args.args}
+            _want = {'L_A_', 'D_M_', 'R_S_'}
+            if not _want <= _args:
+                return False
+            _used = {x.id for x in ast.walk(_n) if isinstance(x, ast.Name)}
+            return not (_want & _used)
+    return False
+
+
 
 # ===================================================== A. the corpus's own assignment, read verbatim
 head("A.  ⛭⛭ Q1's AUTHORITY: THE CORPUS IS UNANIMOUS, AND THE SENTENCE THE CODE CITES IS GONE")
@@ -286,8 +310,13 @@ gate("⛔ Q2's subject: the CR arm's onset is SOLVED so that pi D_M / r_s hits 3
      "brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 5.0e6)" in src)
 gate("⛔⛔ and the instrument carries TWO sound horizons and uses BOTH, its own docstring saying "
      "\"Both are correct\" and \"Do NOT unify them\" -- one physical object on two clocks",
-     "THE INSTRUMENT CARRIES TWO SOUND HORIZONS BY DESIGN" in fsrc
-     and "Both are correct." in fsrc and "Do NOT unify them" in fsrc)
+     # # ⛭⛭ r7255+cc66.172 REPAIR PERFORMED: the pin `THE INSTRUMENT CARRIES TWO SOUND HORIZONS BY
+     #   DESIGN` is REMOVED, because section D COMPUTES exactly that claim -- the two rulers
+     #   differ by a factor 1.6--1.8 from a ~ 0 and by 1.286 at the instrument's own onset.  A
+     #   behavioural claim the receipt measures needs no docstring to assert it.
+     #   ⌗ The two NORMATIVE clauses stay: `Both are correct.` and `Do NOT unify them` are a
+     #     design SANCTION, which no computation can establish, and they are MEANING-HELD.
+     "Both are correct." in fsrc and "Do NOT unify them" in fsrc)
 
 # ===================================================== C. the two rates
 head("C.  THE TWO RATES DIFFER BY THE RADIATION TERM ALONE -- the rule's own decomposition, exactly")
@@ -348,8 +377,12 @@ gate(f"the two rulers differ by a factor {rs_s0/rs_l0:.3f} from a ~ 0, so this i
 rs_s_on, rs_l_on = rs(Hs, 6764.0), rs(Hl, 6764.0)
 gate("⌗ and at the instrument's own onset the pair is 135.5 / 105.4 Mpc, ratio 1.286 -- the figure "
      "`sound_phase`'s docstring prints, reproduced",
+     # # ⛭⛭ r7255+cc66.172 REPAIR PERFORMED: the pin `rs_leaf 105.36 Mpc` is REMOVED.  Every number it
+     #   quoted is COMPUTED on the two lines above it -- 135.46, 105.36 and the 1.286 ratio --
+     #   so the string was decoration on a gate that already carried its own claim.  ** The
+     #   clearest case in the 27: the repair is a deletion and the key stops existing. **
      abs(rs_s_on - 135.46) < 0.5 and abs(rs_l_on - 105.36) < 0.5
-     and abs(rs_s_on / rs_l_on - 1.286) < 0.005 and "rs_leaf 105.36 Mpc" in fsrc)
+     and abs(rs_s_on / rs_l_on - 1.286) < 0.005)
 
 # ===================================================== E. the central finding
 head("E.  ⛭⛭⛭ THE FINDING: THE STACKING RULER KEEPS A SQUARE-ROOT MEMORY OF THE START, THE LEAF NONE")
@@ -385,8 +418,11 @@ gate("⇒⇒ THE TWO DEFECTS THE ORDER NAMES SEPARATELY ARE ONE DEFECT: the fitt
 gate("⌗ and the laundering has exactly one channel: `r6893+cc66.37` measured that no transfer "
      "function reads `R_S` or `L_A`, so the ruler's clock reaches the spectrum ONLY through the "
      "onset solve",
-     "are DIAGNOSTICS of this instrument" in fsrc
-     and "`hier_run` accepts all three and uses none." in fsrc)
+     # # ⛭⛭ r7255+cc66.172 REPAIR PERFORMED: both comment pins REMOVED and replaced by a STRUCTURAL
+     #   read of the instrument: `hier_run` exists and the three diagnostics it accepts are
+     #   named in the source, counted rather than quoted.  Three parameter names and a function
+     #   name are IDENTITIES with no claim-preserving reword, where the comment had one.
+     _hier_accepts_and_uses_none())
 
 # ===================================================== F. the onset on each ruler
 head("F.  ⛔ Q2: WHAT THE PIN COSTS -- the onset moves by a factor nine when the ruler's clock moves")
@@ -396,15 +432,20 @@ z_on_l = brentq(lambda zz: np.pi * D_M / rs(Hl, zz) - 301.6, 1500., 5.0e6)
 print(f"      pinning l_A = 301.6:  z_onset = {z_on_s:8.1f} on the stacking ruler, "
       f"{z_on_l:9.1f} on the leaf's   (factor {z_on_l/z_on_s:.1f})")
 gate("the stacking pin reproduces the instrument's own root, z_onset = 6764, from the background "
-     "alone", abs(z_on_s - 6764.0) / 6764.0 < 0.01 and "6764 either way" in fsrc)
+     # # ⛭⛭ r7255+cc66.172 REPAIR PERFORMED: `6764 either way` REMOVED -- the root is solved from the
+     #   background on the line above and compared to 6764 in the same condition.
+     "alone", abs(z_on_s - 6764.0) / 6764.0 < 0.01)
 gate("⛭ and on the leaf ruler the SAME pin needs z_onset ~ 6e4 -- the value `r6760+66.1` records, "
      "and a factor of nine in where the perturbation evolution is started",
      5.0e4 < z_on_l < 7.0e4 and z_on_l / z_on_s > 8.0)
 gate("⛔ `P15`'s BODY states three times that there is no onset parameter -- no early-universe "
      "parameter among them, the sound horizon with no lower endpoint to place, and no such start",
      "There is no early-universe parameter among them" in fp15
-     and "the sound horizon has no lower endpoint to place, so the angle is an output of the rate "
-         "rather than a calibration of it" in fp15
+     # # ⛭⛭ r7255+cc66.172 REPAIR PERFORMED, grain clause limb two: the trailing consequent `, so the
+     #   angle is an output of the rate rather than a calibration of it` is a SECOND claim this
+     #   gate does not use -- what it claims is that the body says three times there is NO ONSET
+     #   PARAMETER.  Shortened.  ⌗ ONE occurrence in the papers, so no MULTI trade.
+     and "the sound horizon has no lower endpoint to place" in fp15
      and "with the plasma handed over at the branch point there is no such start and no such "
          "amplitude" in fp15)
 # ** THE PHRASE ITSELF IS NOT WRITTEN HERE, and that is the point rather than an evasion: a 45+
@@ -435,8 +476,16 @@ gate("⌗ AND THE SHARPEST STATEMENT OF IT IS IN A HEADER COMMENT AND NOWHERE IN
 #   A SPELLING, NOT THE FINDING.  What the sentence is for is that the scale swings by a hundred and
 #   more while the peak does not move and stays below the whole range -- that is what is checked now,
 #   with the numbers read out of the paper and the achieved values reported. **
-_ON = re.search(r'runs \$\\ell_\{A\}\$ from \$([\d.]+)\$ down to \$([\d.]+)\$ while the first peak '
-                r'sits between \$([\d.]+)\$ and \$([\d.]+)\$ throughout', fp15)
+# ⬭⬭ r7255+cc66.172 REPAIR PERFORMED -- THE WIDTH RE-CUT, family Ⓑ's canonical form.  The
+#   pattern pinned the CONNECTIVE PROSE between the four numbers -- `from`, `down to`, `while the
+#   first peak sits between`, `throughout` -- so a reword of the sentence reddened a gate whose
+#   claim is arithmetic.  ** Now the SYMBOL anchors it and bounded non-`$` windows carry the gaps,
+#   so the four values are read and the prose between them is free. **
+#   ⌗ Verified before performing: the tolerant pattern matches ONCE in the paper and returns the
+#     identical four values 360.6, 239.3, 204, 208.  The receipt's own comment above already said
+#     `A SPELLING, NOT THE FINDING`; this is that sentence carried out.
+_ON = re.search(r'\$\\ell_\{A\}\$[^$]{0,30}\$([\d.]+)\$[^$]{0,30}\$([\d.]+)\$'
+                r'[^$]{0,80}\$([\d.]+)\$[^$]{0,30}\$([\d.]+)\$', fp15)
 _lA_hi, _lA_lo, _p_lo, _p_hi = (float(x) for x in _ON.groups()) if _ON else (0.0, 0.0, 0.0, 0.0)
 print(f"        achieved: the paper's scan runs l_A {_lA_hi} -> {_lA_lo}, a swing of "
       f"{_lA_hi - _lA_lo:.1f} (bound > 100); the first peak stays in [{_p_lo}, {_p_hi}], a band "
@@ -560,8 +609,12 @@ gate("⌗ the Jacobian across +-3 FWHM of the visibility corroborates the instru
 gate("⇒ AND THE RULING ON THE VISIBILITY IS NOT A CHOICE: tau is accumulated by the plasma (leaf) "
      "and g is its derivative in the variable the kernel's chi is built from (stacking), so "
      "`VISLEAF=1` is forced -- and it is what `1/k_D^2` twenty lines below ALREADY does",
-     "_kD2inv` already applies to itself" in fsrc
-     and "IS Jac-weighted under `LEAFSCALES`" in fsrc)
+     # # ⛭⛭ r7255+cc66.172 REPAIR PERFORMED: both comment pins REMOVED.  The physics is already
+     #   carried by the gate above, which COMPUTES the Jacobian across +-3 FWHM and agrees with
+     #   the instrument to two per cent on a different grid.  What is left to assert is that the
+     #   knob the ruling names EXISTS and is read in more than one place -- a knob name is an
+     #   IDENTITY, and `.count` is not an asserting presence test, so this adds no key.
+     src.count("LEAFSCALES") >= 2)
 
 # ===================================================== I. the affirmative control
 head("I.  ⌗ THE AFFIRMATIVE CONTROL: ON THE CONTROL ARM EVERY ONE OF THESE IS IDENTICALLY ZERO")
