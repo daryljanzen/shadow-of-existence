@@ -1,0 +1,114 @@
+{
+ "alignment_contrast": {
+  "other_seats_extended_clipped": 46,
+  "other_seats_extended_paper": 56,
+  "other_seats_pct": 82.1,
+  "this_seats_171": 171,
+  "this_seats_171_clipped": 3,
+  "this_seats_pct": 1.8
+ },
+ "bands": {
+  "DELIBERATE_pct": {
+   "central": 3,
+   "got": 5.8,
+   "hi": 15,
+   "lo": 0
+  },
+  "MEANING-HELD_pct": {
+   "central": 85,
+   "got": 84.2,
+   "hi": 95,
+   "lo": 65
+  },
+  "REPAIR-OWED_pct": {
+   "central": 12,
+   "got": 9.9,
+   "hi": 30,
+   "lo": 4
+  },
+  "extended_cannot_ratify": {
+   "central": 4,
+   "got": 46,
+   "hi": 16,
+   "lo": 0
+  },
+  "grain_moves_of_171": {
+   "central": 14,
+   "got": 10,
+   "hi": 45,
+   "lo": 3
+  },
+  "residue_CONDITION_pct": {
+   "central": 55,
+   "got": 17.6,
+   "hi": 80,
+   "lo": 30
+  },
+  "residue_DISJUNCTION_pct": {
+   "central": 10,
+   "got": 0.0,
+   "hi": 25,
+   "lo": 0
+  },
+  "residue_NARROWING_pct": {
+   "central": 30,
+   "got": 82.4,
+   "hi": 55,
+   "lo": 10
+  }
+ },
+ "baseline_now": {
+  "ALT-OK": 74,
+  "DELIBERATE": 532,
+  "ENCODING-OK": 36,
+  "EXTENDED": 272,
+  "MEANING-HELD": 146,
+  "NOT-A-PIN": 33,
+  "REPAIR-OWED": 131,
+  "UNADJUDICATED": 1428,
+  "UNADJUDICATED-LIST": 37,
+  "UNADJUDICATED-PINNED": 101
+ },
+ "extended": {
+  "aligned": 10,
+  "clipped": 46,
+  "clipped_pct": 82.1,
+  "paper_target": 56,
+  "rows": 64,
+  "source_not_in_papers": 8,
+  "verdicts_changed": 0
+ },
+ "generated_appendices_excluded": 18,
+ "grain_clause": {
+  "keys_touched": 24,
+  "order_threshold": 5,
+  "repairs_specified": 14,
+  "verdicts_changed": 10
+ },
+ "narrowing_breakdown": {
+  "bare_locator": 2,
+  "clipped_every_occurrence": 3,
+  "latex_markup": 9
+ },
+ "pre_settlement_converted": 2,
+ "prefix_now": {
+  "ALT-OK": 17,
+  "DELIBERATE": 97,
+  "ENCODING-OK": 14,
+  "EXTENDED": 64,
+  "MEANING-HELD": 146,
+  "NOT-A-PIN": 6,
+  "REPAIR-OWED": 17
+ },
+ "residue_forms": {
+  "CONDITION": 3,
+  "DISJUNCTION": 0,
+  "NARROWING": 14
+ },
+ "the_171": {
+  "DELIBERATE": 10,
+  "MEANING-HELD": 144,
+  "REPAIR-OWED": 17,
+  "total": 171
+ }
+}

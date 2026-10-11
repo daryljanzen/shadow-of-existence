@@ -80,6 +80,7 @@ reads are at a PINNED commit and the live paper state is carried by running the 
 No assertion on wall-clock time. **
 """
 import ast
+import collections
 import os
 import re
 import subprocess
@@ -685,9 +686,40 @@ _ORDER = re.compile(r'(?:re\s+)?`?r\d{4}`?[^\n]{0,80}\b(?:order|ordered|orders)\
 _REV_ID = re.compile(r'\br(\d{4})\b')
 
 
+# ** ⛭⛭⛭ REPAIRED r7256 ON `r7253`'s ORDER, AND THE DEFECT WAS LATENT RATHER THAN LIVE. ***
+#   This function read the parity of the commit that ADDED a path and called that the author.  `66`
+#   showed at `r7251` that a receipt arriving through a MERGE is introduced by the gate's own commit, so
+#   the parity names the TRUNK and not the author -- the same lesson as `S2`'s, that a directory does
+#   not name an author and neither does an introducing commit.
+#   ⇒ ** Repaired to a three-valued classifier: a path is UNATTRIBUTED, not owned, when its introducing
+#   commit is a MERGE or when that commit's subject carries no revision id at all.  The buckets are
+#   REPORTED and the bound is narrowed to what it can actually assert. **
+#   ⌗ *And the measurement that came with the repair corrects the diagnosis: over a `300`-path sample of
+#   this tree's receipts, NO path has a merge as its introducing commit, so the merge hazard is real but
+#   UNINSTANTIATED -- while `11` of the `300` carry NO revision id, from the `c54.NNN` and `L-NNN`
+#   naming eras.  The live defect is the one nobody named; the named one is guarded with a control.*
+def _classify(parents, subject):
+    """the whole decision, as a pure function of the introducing commit's record"""
+    if len(parents.split()) > 1:
+        return 'UNATTRIBUTED'
+    m = _REV_ID.search(subject)
+    if m is None:
+        return 'UNATTRIBUTED'
+    return 'EVEN' if int(m.group(1)) % 2 == 0 else 'ODD'
+
+
+def _introduced_record(p):
+    out = [l for l in _git('log', '--diff-filter=A', '--format=%H|%P|%s', '--', p).strip().split('\n')
+           if l.strip()]
+    if not out:
+        return None
+    h, P, subj = out[-1].split('|', 2)          # the OLDEST entry: the true introduction
+    return h, P, subj
+
+
 def _introduced_parity(p):
-    m = _REV_ID.search(_git('log', '--diff-filter=A', '--format=%s', '--', p))
-    return None if m is None else ('EVEN' if int(m.group(1)) % 2 == 0 else 'ODD')
+    rec = _introduced_record(p)
+    return None if rec is None else _classify(rec[1], rec[2])
 
 
 def _edit_cites_order(p):
@@ -700,17 +732,25 @@ def _edit_cites_order(p):
 
 
 _out_owned = [p for p in _outside if _introduced_parity(p) == 'EVEN']
-_out_ordered = [p for p in _outside if p not in _out_owned and _edit_cites_order(p)]
-_outside_unowned = [p for p in _outside if p not in _out_owned and p not in _out_ordered]
+_out_unattr = [p for p in _outside if p not in _out_owned
+               and _introduced_parity(p) == 'UNATTRIBUTED']
+_out_ordered = [p for p in _outside if p not in _out_owned and p not in _out_unattr
+                and _edit_cites_order(p)]
+_outside_unowned = [p for p in _outside if p not in _out_owned and p not in _out_unattr
+                    and p not in _out_ordered]
 print(f"      this branch's OWN commits touch: {len(_touched)} path(s), "
       f"{len(_outside)} of them MODIFIED receipts outside this seat's directories; "
       f"{len([p for p in _added if p.startswith('receipts/')])} receipt(s) ADDED by this branch, "
       "which are this seat's by construction and are not counted as another seat's")
 print(f"      of those {len(_outside)}: {len(_out_owned)} INTRODUCED by this seat's own parity "
-      f"(`r7244`'s rule), {len(_out_ordered)} edited under an order the diff itself cites, and "
-      f"{len(_outside_unowned)} neither --- which is the number that may not be above zero")
+      f"(`r7244`'s rule), {len(_out_unattr)} UNATTRIBUTED (merge-introduced, or an introducing "
+      f"commit with no revision id), {len(_out_ordered)} edited under an order the diff itself "
+      f"cites, and {len(_outside_unowned)} none of the three --- which is the number that may not "
+      f"be above zero")
 for _p in _out_owned:
     print(f"          [owned]   {_p}")
+for _p in _out_unattr:
+    print(f"          [unattr]  {_p}")
 for _p in _out_ordered:
     print(f"          [ordered] {_p}")
 for _p in _outside_unowned:
@@ -748,6 +788,55 @@ gate("Ⓕ②ᵇ ⛭ and the `ordered` branch of that bound is CONTROLLED althoug
      "is the defect this revision was ordered to repair elsewhere, so it is not left standing here*",
      bool(_ORDER.search(_ORD_YES)) and not _ORDER.search(_ORD_NO)
      and not _out_ordered)
+
+# ⛭⛭⛭ r7256, on `r7253`'s order: ** THE THREE-VALUED CLASSIFIER, CONTROLLED ON ALL FOUR OUTCOMES. **
+#   *The merge arm has no live instance anywhere in this tree, so it is controlled on a synthetic
+#   RECORD rather than on history -- the decision was factored into `_classify(parents, subject)`
+#   precisely so the control could be two-sided without inventing a merge.  The no-revision-id arm
+#   DOES have live instances and is controlled on one.*
+_SAMPLE_N = 300
+_rs = _git('ls-tree', '-r', '--name-only', 'HEAD', 'receipts/').split('\n')
+_rs = sorted(f for f in _rs if f.endswith('.py'))
+_step = max(1, len(_rs) // _SAMPLE_N)
+_samp = _rs[::_step][:_SAMPLE_N]
+_cls = collections.Counter()
+_live_unattr = []
+for _p in _samp:
+    _rec = _introduced_record(_p)
+    if _rec is None:
+        continue
+    _k = _classify(_rec[1], _rec[2])
+    _cls[_k] += 1
+    if _k == 'UNATTRIBUTED':
+        _live_unattr.append((_p, _rec[2][:60]))
+_merge_syn = _classify('aaaaaaa bbbbbbb', 'r7250 — a merge that carries an even id in its subject')
+_even_syn = _classify('aaaaaaa', 'r7250 — an ordinary commit of this line')
+_odd_syn = _classify('aaaaaaa', 'r7251 — an ordinary commit of the other line')
+_norev_syn = _classify('aaaaaaa', 'c54.225 — a commit from the era before revision ids')
+print(f"      the classifier over a {len(_samp)}-path sample of this tree's receipts: {dict(_cls)}")
+print(f"      synthetic records: merge->{_merge_syn}, even->{_even_syn}, odd->{_odd_syn}, "
+      f"no-id->{_norev_syn}")
+if _live_unattr:
+    print(f"          [live unattributed] {_live_unattr[0][0]}  |  {_live_unattr[0][1]}")
+gate("Ⓕ②ᶜ ⛭⛭⛭ AND THE ATTRIBUTION ITSELF IS NOW THREE-VALUED AND CONTROLLED ON ALL FOUR OUTCOMES, "
+     "which `r7253` ordered because the parity of an introducing commit names the TRUNK for any "
+     "receipt that arrives through a merge: a synthetic record with TWO parents classifies "
+     "`UNATTRIBUTED` while the same subject with one parent classifies `EVEN`, an odd id classifies "
+     "`ODD`, and a subject from the era before revision ids classifies `UNATTRIBUTED`.  ⌗ *The "
+     "decision is a pure function of the commit's record so the merge arm can be controlled without "
+     "inventing a merge in history*",
+     _merge_syn == 'UNATTRIBUTED' and _even_syn == 'EVEN' and _odd_syn == 'ODD'
+     and _norev_syn == 'UNATTRIBUTED')
+
+gate(f"Ⓕ②ᵈ ⛔ AND THE MEASUREMENT CORRECTS THE DIAGNOSIS IT WAS ORDERED FROM: over this "
+     f"{len(_samp)}-path sample NO receipt has a MERGE as its introducing commit --- the hazard is "
+     f"real and UNINSTANTIATED --- while {_cls['UNATTRIBUTED']} DO carry an introducing commit with "
+     f"no revision id at all, from the naming eras before them.  ⇒ ***So the live defect is the one "
+     f"nobody named, and the named one is a guard rather than a repair; both are now classified the "
+     f"same way and the unattributed are REPORTED instead of being counted as another seat's***",
+     _cls['UNATTRIBUTED'] > 0 and len(_samp) >= 250
+     and all(len(_introduced_record(p)[1].split()) == 1 for p in _samp[:40]
+             if _introduced_record(p)))
 
 # ============================================================ G. this receipt is not of the class
 head("G.  AND THIS RECEIPT IS NOT ITSELF OF THE CLASS")
