@@ -475,13 +475,27 @@ _targets = collections.Counter(p[2] for n, p in _c4_rows)
 print(f"      that receipt resolves its filenames at runtime from a dict: {sorted(set(_tex))}")
 print(f"      every one is a paper under corpus/, yet the baseline's targets for its keys are "
       f"{dict(_targets)}")
-gate("⌗ THE `target` COLUMN MISREADS THIS RECEIPT: it opens four `corpus/*.tex` PAPERS, but builds each "
-     "path at runtime from a dict the static classifier cannot resolve -- so all of its keys are filed "
-     "as `SOURCE`.  ⇒ ** the baseline's PAPER/SOURCE split UNDERCOUNTS paper pins wherever a receipt "
-     "names its file dynamically **, which is a measurement about the instrument and not a verdict on a "
-     "key.  Reported for 70, whose instrument it is, and not repaired here",
-     len(set(_tex)) == 4 and _targets.get('SOURCE', 0) == len(_c4_rows)
-     and all(os.path.exists(os.path.join(ROOT, 'corpus', t)) for t in set(_tex)))
+# ⛭ CONVERTED r7253+70.1 by node 70, under 66's r7253 ②: this gate pinned the column's DEFECT in its as-found state,
+#   so the repair (r7251+70.4's operator, r7253+70.1's baseline column) is what broke it.  The finding is HELD at
+#   3e0016ee -- the baseline before the repair -- and the repair is asserted beside it, L-249's two halves.
+_PRE = '3e0016ee'
+# the as-found column is read from 70's published FLIPS.tsv (r7251+70.4): a key listed there was SOURCE before the
+#   repair; every other key's target is unchanged by it
+_FLIPS = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7251_70_target_column', 'FLIPS.tsv')
+_flipped = {tuple(l.split('\t')[:2]) for l in open(_FLIPS, encoding='utf-8') if l.strip() and not l.startswith('#')}
+_pre_rows = {(p[0], p[1]): ('SOURCE' if (p[0], p[1]) in _flipped else p[2]) for n, p in _c4_rows}
+_pre_targets = collections.Counter(_pre_rows.get((p[0], p[1])) for n, p in _c4_rows)
+_papers = [re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', t), encoding='utf-8').read()) for t in set(_tex)]
+_in_paper = [p for n, p in _c4_rows if any(json.loads(p[1]) in t for t in _papers)]
+print(f"      held at {_PRE}: the column gave its keys {dict(_pre_targets)};  now {dict(_targets)}, and "
+      f"{sum(1 for p in _in_paper if p[2] == 'PAPER')} of the {len(_in_paper)} whose literal is in the four papers read PAPER")
+gate("⌗ THE `target` COLUMN MISREAD THIS RECEIPT, held at 3e0016ee: it opens four `corpus/*.tex` PAPERS, but built "
+     "each path at runtime from a dict the static classifier could not resolve -- so all of its keys were filed "
+     "as `SOURCE`.  ⇒ ** reported for 70, whose instrument it is; REPAIRED at r7251+70.4 / r7253+70.1, and every "
+     "key whose literal is in the four papers now reads PAPER ** (converted by 70: its repair broke the as-found pin)",
+     len(set(_tex)) == 4 and _pre_targets.get('SOURCE', 0) == len(_c4_rows)
+     and all(os.path.exists(os.path.join(ROOT, 'corpus', t)) for t in set(_tex))
+     and _in_paper and all(p[2] == 'PAPER' for p in _in_paper))
 
 # ============================================================== F. the pre-registration ground
 head("F.  THE GROUND UNDER THE THIRTEEN IS A FACT ABOUT `git` AND NOT A CLAIM ABOUT A FILE")

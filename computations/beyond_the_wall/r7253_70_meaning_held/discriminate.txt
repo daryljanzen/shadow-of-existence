@@ -1,0 +1,3 @@
+  H1-H4: 560 of 571 unread keys stamped at HEAD pass (98.1%)   {'PASS': 560, 'H3': 11}
+  H1-H5: 0 of 571 unread keys stamped at HEAD pass (0.0%)   {'H5': 571}
+  ADVERSARIAL (each stamped at its receipt's last commit), H1-H5: 560 of 571 pass (98.1%)   {'PASS': 560, 'H3': 11}
