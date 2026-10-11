@@ -29,8 +29,19 @@ REGISTRY_HINT = re.compile(r'INDEX\.md|FOR_\w+\.md|_MAP\.md|WORKING_STATE|HANDOF
                            r'frontier|registry|baseline\.tsv|\bPO-|\bL-\d|open_items|ledger')
 
 
+# ⛭ r7255+cc66.178 -- A FIFTH KIND, FOUND BY READING BATCH 02's SITES.  `TXT = open(DIR/'PREDICTION.md')`
+#   resolved as INSTRUMENT because the file sits under computations/, and the receipts reading it are
+#   asserting that THEIR OWN PRE-REGISTRATION named a thing BEFORE it was measured.  That is neither a
+#   paper nor an instrument: it is a frozen document this seat wrote and cannot edit without falsifying
+#   the pre-registration itself.  The baseline's own header already admits the kind -- "target SOURCE =
+#   any other file (a receipt's code, a ledger, a PREDICTION)" -- and nothing was counting it.
+PREREG_HINT = re.compile(r'PREDICTION\.md|PREREG|PRE_REG|pre_registration')
+
+
 def kind_of_path(p):
     q = p.replace('\\', '/')
+    if PREREG_HINT.search(q):
+        return 'PREREG'
     if REGISTRY_HINT.search(q):
         return 'REGISTRY'
     if '/corpus/' in q or q.startswith('corpus/'):
