@@ -183,7 +183,19 @@ _all_bodies = ' '.join(body(f) for f in _papers)
 RETIRED = r'9.4\%'
 REPLACED = r'8.2\%'
 RATE_GAP = 'puts $10.8\\%$ of that gap into the diffusion length by itself'
-OBSERVABLE = 'moved by under a per cent'
+# ⛔⛭ RE-CUT r7258+60, on r7255's order ② -- this seat's own row, moved by this seat's own
+#   instrument.  *The span was `moved by under a per cent`: it begins with a finite verb and names
+#   NO SUBJECT, so it would match a sentence about anything moving by under a per cent.  The gate's
+#   claim is specifically about THE OBSERVABLE, and the subject was being supplied by the two spans
+#   conjoined beside it in the condition rather than by the span itself.*
+#   ⇒ *** Re-cut to the span that carries its own subject -- the paper names the ratio -- which is
+#       SHORTER in nothing and stronger in the one way that matters. ***
+#   ⌗ Found by the DANGLING-PREDICATE test built at r7258 and run over the whole contested cell.  It
+#     flagged three two-arm disjunctions standing on arms that all dangle, two of them other seats';
+#     this row is the same defect in a conjunction, in a receipt of this seat's own, and it is
+#     repaired in the same pass rather than reported about other people.
+OBSERVABLE = '$\\theta_{D}/\\theta_{*}$ moved by under a per cent'
+OBSERVABLE_IN_C26 = 'moved by under a per cent'   # what `C26` carries today, unchanged
 APART = 'the rate gap is not what the signature is made of'
 print(f"      live paper bodies ({len(_papers)} files): {RETIRED!r} x{_all_bodies.count(RETIRED)}, "
       f"{REPLACED!r} x{_all_bodies.count(REPLACED)}")
@@ -236,7 +248,13 @@ head("C.  THE SIX ARE REPAIRED BY READING THE PAPER, AND THE BACKLOG FALLS BY RU
 #   so the whole literal exists at run time and never contiguously in the file. **
 PINS = (
     (C26, RATE_GAP, 'of that gap into the diffusion length by itself'),
-    (C26, OBSERVABLE, OBSERVABLE),
+    # ⌗ frag and marker DIVERGE for this row at r7258, and the reason is the finding: the PAPER-side
+    #   span is re-cut to carry its subject, while the marker stays the span `C26` actually carries.
+    #   *`C26` sits in `receipts/P15_CR_cosmology/`, a prefix `cc66` holds on the board, so the paired
+    #   re-cut THERE is not this seat's to make -- it is routed with its patch in FOR_66_FROM_60.md.*
+    #   ** A repair whose unit spans two prefixes cannot be performed by one seat, and the audit must
+    #   go on reporting what the audited file carries rather than what this seat wishes it carried. **
+    (C26, OBSERVABLE, OBSERVABLE_IN_C26),
     (C26, APART, APART),
     (C62, 'on $185$ bins, is the better-converged', 'bins, is the better-converged'),
     (KRE, 'the Kretschmann scalar is $48M^2/r^6+24/\\alpha^4$', 'the Kretschmann scalar is $48M^2/r^6'),

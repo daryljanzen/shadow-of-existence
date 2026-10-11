@@ -91,9 +91,46 @@ def main():
         if not l.lstrip().startswith('%'))) for f in papers)
 
     # ⓵ the anomaly bridge is already used
-    check('⓵ the anomaly bridge is ALREADY USED: "the per-wall anomaly conditions together with the '
-          'existence of the Yukawa couplings ... determine the hypercharge"',
-          'per-wall anomaly conditions' in allp and 'determine the hypercha' in allp)
+    # ⛔⛭ RE-CUT r7258+60, on r7255's order ① -- row owed at r7256 because EVERY occurrence of the
+    #   span `determine the hypercha` in the papers is CLIPPED MID-WORD.  *It was a character window,
+    #   not a grammatical unit: the paper reads `determine the hypercharges completely`, and a window
+    #   ending inside `hypercharges` has no shortest-span-that-carries-the-claim to be measured
+    #   against -- the grain clause is undefined for it.*
+    #   ⇒ *** Re-cut to the WORD-ALIGNED minimal span that carries the claim, and the alignment is
+    #       ASSERTED here rather than assumed, over every occurrence. ***
+    _W = re.compile(r'\w')
+    _HC = 'determine the hypercharges completely'
+
+    def _aligned_everywhere(lit, hay):
+        """(aligned at EVERY occurrence, number of occurrences) -- the count is taken over all of
+        them and not abandoned at the first clipped one, so the figure printed is the true one."""
+        i, n, ok = hay.find(lit), 0, True
+        while i >= 0:
+            b = hay[i - 1] if i else ' '
+            a = hay[i + len(lit)] if i + len(lit) < len(hay) else ' '
+            if (_W.match(lit[0]) and _W.match(b)) or (_W.match(lit[-1]) and _W.match(a)):
+                ok = False
+            n += 1
+            i = hay.find(lit, i + 1)
+        return (n > 0 and ok), n
+
+    _ok_hc, _n_hc = _aligned_everywhere(_HC, allp)
+    # ⌗ the repaired read is written as a DIRECT literal test so the quote-pin operator KEYS it.  *A
+    #   repair that reaches the paper only through a local helper leaves the pin in force and takes it
+    #   out of the counted backlog -- `routed blindness`, the class r7223 opened a bucket for.  The
+    #   word-alignment is asserted beside it; the alignment is the part a helper may carry.*
+    check(f'⓵ the anomaly bridge is ALREADY USED: "the per-wall anomaly conditions together with the '
+          f'existence of the Yukawa couplings ... determine the hypercharges completely" -- RE-CUT from '
+          f'a span that ended inside `hypercharges`, and word-aligned at all {_n_hc} occurrence(s)',
+          'per-wall anomaly conditions' in allp
+          and 'determine the hypercharges completely' in allp and _ok_hc)
+    # the control: the span this replaces, shown to be the mid-word window it was called.  Routed
+    # through the helper ON PURPOSE -- the retired literal must not be re-keyed to be refuted.
+    _ok_old, _n_old = _aligned_everywhere('determine the hypercha', allp)
+    check(f'⛔ with the span it replaces shown to be a CHARACTER WINDOW and not a unit: it occurs '
+          f'{_n_old} time(s) and is CLIPPED mid-word at every one, so the shorter-span test the grain '
+          f'clause runs has nothing to run on.  ** The re-cut is forced, not stylistic **',
+          _n_old > 0 and not _ok_old)
     n_anom = len(re.findall('anomal', allp, re.I))
     # ⛔⛭ r7131+cc66.100: was `n_anom > 10`, a ROUND NUMBER standing in for "the vocabulary is here"
     # (PO-76 class ⓵).  *The label's claim is "not a foreign notion", which is PRESENCE; the count is

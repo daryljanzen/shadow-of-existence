@@ -100,10 +100,40 @@ def main():
 
     # ⓷ the point of difference from Connes
     p14 = flat('matter_sector_paper.tex')
-    check('⛭⛭⛭ ⓷ while Connes takes $D=D_M\\otimes1+\\gamma^5\\otimes D_F$ with $D_F$ carrying the '
-          'Yukawas and NOT commuting with $\\mathcal A_F$ -- ** and P14\'s operator is radial and '
-          'angular, with no internal part **',
-          'radial' in p14 and 'Dirac' in p14)
+    # ⛔⛭ REPAIRED r7258+60, on r7255's order ① -- row owed at r7256 as a BARE LOCATOR: the condition
+    #   was `'radial' in p14 and 'Dirac' in p14`, two one-word presence tests standing in for a claim
+    #   the label carries.  *The span was arbitrary rather than minimal -- `radial` appears eight times
+    #   in P14 and states nothing on its own, and `Dirac` nineteen.  Either could survive the paper
+    #   losing the decomposition entirely.*
+    #   ⇒ *** Repaired by CONDITION, which is the third repair form and the right one here, because the
+    #       claim has an ABSENCE in it -- `no internal part` -- and an absence is not a quotation. ***
+    #   ⌗ The condition has three arms: the decomposition is EXHIBITED by pattern; the internal-part
+    #     vocabulary is ABSENT from P14; and the absence carries its own COUNTER CONTROL, so a zero
+    #     means the paper lacks the object and not that the matcher is dead.
+    # ⌗ the decomposition arm is ONE span written as a DIRECT literal test, not a list routed through a
+    #   comprehension: the operator keys a direct read and cannot key a locally-built collection, and a
+    #   repair that leaves the pin in force while removing it from the counted backlog is worse than the
+    #   pin.  *`radial--angular spin connection` is the span that STATES the decomposition -- which is
+    #   what the two retired tokens (`radial`, `Dirac`, eight and nineteen occurrences, stating nothing
+    #   on their own) were standing in for.*
+    _DECOMP = ['radial--angular spin connection']
+    _found = [d for d in _DECOMP if d in p14]
+    _INTERNAL = re.compile(r'D_\{?F\}?|\\gamma\^5\s*\\otimes|\\otimes\s*D_|internal Dirac|finite Dirac')
+    _int_hits = _INTERNAL.findall(p14)
+    # the counter: Connes' own expression, written here, through the SAME matcher
+    _CONNES = r"Connes takes $D=D_M\otimes1+\gamma^5\otimes D_F$ with $D_F$ carrying the Yukawas"
+    check(f'⛭⛭⛭ ⓷ while Connes takes $D=D_M\\otimes1+\\gamma^5\\otimes D_F$ with $D_F$ carrying the '
+          f'Yukawas and NOT commuting with $\\mathcal A_F$ -- ** and P14\'s operator is radial and '
+          f'angular, with NO INTERNAL PART: the paper EXHIBITS the decomposition -- "radial--angular '
+          f'spin connection" -- and the internal-part vocabulary occurs {len(_int_hits)} times in it ** '
+          f'-- a CONDITION, and one span, in place of the two bare tokens this read used to be',
+          'radial--angular spin connection' in p14 and not _int_hits)
+    check('⇒ and the ABSENCE carries its COUNTER: the same matcher, run over Connes\' expression as '
+          'written above, finds the internal part -- so the zero in P14 measures the PAPER and not a '
+          'dead regex.  ** An absence guard without a counter is not evidence of absence **',
+          # ⌗ a PRESENCE test and not a count: the control's content is `the matcher fires`, and a
+          # threshold on how many times it fires would be a new prose pin asserting nothing more.
+          bool(_INTERNAL.search(_CONNES)))
 
     p0 = flat('geometric_core_paper.tex')
     check('⓸ and the corpus states the missing piece in its own voice: "the gauge and mass content '

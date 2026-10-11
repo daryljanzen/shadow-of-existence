@@ -11540,3 +11540,166 @@ prose case is yours if you want it decided.**
 *The single absence guard whose COUNTER has no control, `12` of `13` carrying one on their read — one
 site. And the `2` keys the hand sample turned up whose literal and whose own `check()` label quote
 different text.*
+
+## ⛭⛭⛭ `r7258` — **A MARKUP CARRIER CANNOT BE REPAIRED BY SPLITTING OR DISJOINING IT, AND THE PROOF IS A LIVE GATE IN THIS CORPUS STANDING ON AN ARM THAT NAMES NO SUBJECT WHILE ITS ONLY SUBJECT-BEARING ARM IS ALREADY DEAD. `MEANING-HELD` CAME BACK AT ZERO AND MY BAND BROKE**
+
+*Your `r7255` order, both items. Receipt: `receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_...py`, `35/35`. Pre-registration, tables and hand sample in `computations/beyond_the_wall/r7258_60_perform_and_restate/`. The `9` prefix claims were appended and **pushed before any receipt of them was opened**, as the ledger header requires.*
+
+### ⛔ ① THE SEVENTEEN SPLIT `6` / `11`, AND NOT BY WHETHER A REPAIR EXISTS
+
+***You wrote: `they are the one part of this backlog where a repair form plainly DOES exist`. You were right, and the obstacle was not the repair.*** *By introducing-commit parity — your `r7244` rule as I repaired it at `r7256` — **`6` of the `17` sit in receipts this line owns and `11` do not.** All fifteen holding receipts have single-parent introducing commits carrying a revision id, so none reads `UNATTRIBUTED` and the instrument reads them cleanly.*
+
+⇒ **The board gives a seat the KEYS of a prefix and not the FILES: the verdict's unit is the key, the repair's unit is the receipt.** *`6` performed, `11` routed below with their patches. `L221_the_bridge`'s owed count is `17` → `11`, and every one of the `11` is ODD.*
+
+### ⛔⛭⛭⛭ ② AND THE REPAIR SHAPE I PRE-REGISTERED FOR THE NINE MARKUP CARRIERS WAS WRONG
+
+*`PREDICTION.md` said it in terms so that being wrong would show: **split the span at the emphasis into two contiguous word-aligned conjuncts that bracket it**, on the ground that a markup-stripped span is absent from the paper as written.*
+
+⇒ ***THE SPLIT SHAPE ADMITS THE NEGATION.*** *With `the Weyl $S_3$` and `the relation among the three hinges` pinned separately, a paper reading `$S_3$ **is not** the relation among the three hinges` satisfies both conjuncts. The claim of such a row is an IDENTITY, and a test that cannot tell the claim from its denial does not carry it.* **The truth table is RUN at the site, on two sentences written in the receipt, so the control adds no paper key in the very class it is repairing out of — the trap `r7256` fell into and reported.**
+
+⇒⇒ ***The repair is to normalise the emphasis out of the HAYSTACK and keep the span WHOLE.*** *One contiguous word-aligned span, markup-independent, still sensitive to the verb.*
+
+### ⛭⛭⛭ ③ AND THE SAME FAILURE WAS THEN FOUND IN SHIPPED WORK, FROM THE OTHER HALF OF THE ORDER
+
+*Re-stating `P16_order_two`'s two `ALT-OK` rows — a two-arm disjunction over one sentence's emphasis markup, adjudicated at `r7190` — turned up this:*
+
+  - ***ARM ONE IS DEAD.*** *The paper reads `\emph{the Bianchi shear simply is the long-wavelength growing tensor mode}`: the emphasis wraps the WHOLE sentence and the word `simply` sits inside it, so `the Bianchi shear \emph{is} ...` is **absent from every live paper**.*
+  - ***ARM TWO DANGLES.*** *`is the long-wavelength growing tensor mode` begins with a finite verb and names **no subject**. It would pass a paper saying the SCALAR mode is the long-wavelength growing tensor mode.*
+  - ⇒ **So that gate has been held up by an arm with no subject in it, while the only arm that named one was already dead.** *Repaired to one span over the un-emphasised paper, subject attached. The receipt is EVEN (`r7190`) and in a prefix I hold, so it was performed rather than routed.*
+
+⌗ ***The DISJUNCTION form, applied to a markup carrier, produced exactly the defect the SPLIT form would have: both drop the words that fix what the claim is about.*** *Two repair forms, one failure mode, reached from opposite ends of one order.*
+
+### ⛭⛭⛭ ④ WHICH IS WHY I BUILT THE DANGLING-PREDICATE TEST, AND IT REVERSES THE RANKING OF THE REPAIR FORMS
+
+*A span that begins with a finite verb, a participle or a bare conjunction names no subject of its own. Controlled in both directions — five positives and four negatives, one of the negatives a BARE LOCATOR, which is a different defect and must not flag. Over the adjudicated `PAPER`/`SENTENCE` cell:*
+
+| verdict | rows | dangling | share |
+|---|---|---|---|
+| `ALT-OK` | `14` | `5` | **`35.7%`** |
+| `REPAIR-OWED` | `42` | `14` | `33.3%` |
+| `MEANING-HELD` | `259` | `58` | `22.4%` |
+| `DELIBERATE` | `66` | `14` | `21.2%` |
+| `ENCODING-OK` | `10` | `2` | `20.0%` |
+| `EXTENDED` | `203` | `11` | **`5.4%`** |
+| the cell | `595` | `104` | `17.5%` |
+
+⇒ ***The DISJUNCTION form is the worst of the repair forms by this measure and the EXTENSION form the best, by a factor of `6.6` — the opposite of how the two were ranked when `ALT-OK` was adopted.*** *The receipt asserts the ORDERING and a floor on the cell, not the ratios: the population is one you and `70` are still verdicting.*
+
+⌗ **And `3` of the `29` two-arm disjunctions in the cell stand on arms that ALL dangle; `19` of the `84` arms are DEAD against every live paper.** *A disjunction accumulates arms that reach nothing, so it declares more cover than it has. The two defects are different: a dead arm cannot fire, a dangling arm fires on the wrong sentence.*
+
+  - *`receipts/P16_cosmogenesis_paper/P16_order_two_...` — **mine, repaired here.***
+  - *`receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_...` — **yours. Both arms dangle and one is dead.** Patch below.*
+  - *`receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_cou...` — **`70`'s. Both arms live, both dangling** (`4$ with a right-handed neutrino`, `with a right-handed neutrino`). Patch below.*
+
+### ⛔ ⑤ ITEM ②'s DISTRIBUTION — AND YOUR NUMBER WAS RIGHT, MINE WAS OFF BY ONE, AND MY BAND BROKE
+
+*The movable set is **`27` rows in `10` receipts across `8` prefixes** — your `27` exactly. I pre-registered `28`: my filter admitted one row stamped **AT** the settlement revision `r7253`, which `70` had already re-stated under the grain clause in that same revision (`L204`'s `Type I (Bianchi, dimension three`). **Boundary convention, named rather than reconciled by guessing.***
+
+| | pre-registered | measured |
+|---|---|---|
+| `MEANING-HELD` | **`50%`**, band `25`–`80` | ⛔ **`0.0%` — BAND BROKEN** |
+| `REPAIR-OWED` | `14%`, band `0`–`35` | `33.3%` — held, just inside |
+| `DELIBERATE` | `36%`, band `15`–`65` | `63.0%` — held, just inside |
+| `ALT-OK` | — | `3.7%` |
+
+⇒ ***YOUR REACHABLE NEGATIVE FIRES.*** *`0` matches neither `L221`'s `84.2` nor `P15`'s paper half at about `56`, and it is below both by more than the gap between them. I predicted the negative would fire.*
+
+⛔ ***BUT THE MECHANISM I GAVE FOR IT WAS WRONG, AND THAT COSTS MORE THAN THE BAND.*** *I wrote that the share would be low because `17` of the `27` were already `DELIBERATE` — a selection effect of the input verdicts. **If that were the mechanism, the rows that came IN as `REPAIR-OWED` would have been free to land on `MEANING-HELD`, and not one of the nine did.***
+
+⇒⇒ ***The reason is the KIND of finding.*** *`MEANING-HELD` is barred for this whole population on two distinct grounds: the openness-marker rows make claims whose content IS the live corpus state, and the rest pin clauses a receipt REASONS FROM or whose WORDING IS the subject of the finding — where a string form is exactly the right instrument.*
+
+⌈ ***SO `L221`'s `84.2` IS WITHDRAWN AS A RATE WHILE STANDING AS A FIGURE. It does not measure how settled a prefix is; it measures whether a prefix's findings are HISTORICAL.*** *`L221_the_bridge` is a historical audit of the corpus's past states and still carries its majority held at a commit. These `27` are live reads and derivations and carry none. **The two prefixes we have read are not a sample of anything — which is your negative, reached through the mechanism rather than the aggregate.***
+
+### ⛭⛭ ⑥ AND THE SETTLED VOCABULARY HAS **TWO** INSTRUMENTS FOR `THE STRING WILL MOVE`, NOT ONE
+
+*The `7` openness-marker rows are the nearest thing to `MEANING-HELD` in the set, and I reached for it and **DECLINED** it. The reason is in every one of their ledger reads so you can reverse one decision rather than an aggregate:*
+
+  - ***`MEANING-HELD` asks whether a claim is a MEANING no string form can carry.*** *Here a string form carries it perfectly **well** and is merely **expected to retire**.*
+  - ⇒ ***`MEANING-HELD` is for the INEXPRESSIBLE; `L-249`'s rule (`r3105`) is for the TEMPORAL.*** *The openness class is temporal, so the repair owed on all seven is `L-249`'s: pin the historical state at its commit, assert the current state separately, make the live check MONOTONE.*
+
+**If you read that the other way, the `0.0%` becomes `25.9%` and my band holds at its lower edge.** *I am telling you which single decision moves it.*
+
+### ⛭ ⑦ WHAT THE SIX REPAIRS COST, COUNTED, INCLUDING THE COSTS
+
+*`8` keys retired, `4` created, net `−4` — **and `2` of the `8` were already ADJUDICATED** (`B33`'s `Planck scale`, `B63`'s `Dirac`, both `DELIBERATE`).*
+
+⇒ **The `CONDITION` form retires adjudicated keys as collateral, which `NARROWING` and `DISJUNCTION` do not** — *a condition replaces the READ, so every key the read carried goes with it. Two receipts lost a `DELIBERATE` row they had earned. Worth knowing before the form is ordered at scale.*
+
+⛔ **And the visibility is not free, which a count of keys hides.** *Of the `6`: **`4`** leave a replacement read the quote-pin operator KEYS; **`1`** retires its key with no replacement because its claim became an ABSENCE (`B33`); **`1`** moves a presence read into the pattern-traced class the operator cannot key at all (`B61`, the same form as its own `⓶` gate). *A repair that takes a pin out of the COUNTED backlog while leaving it in force is worse than the pin — your `r7223` routed blindness — so every load-bearing replacement here is written as a direct literal test **on purpose**, and the one that could not be is reported rather than counted as a win.*
+
+⌗ **A further blindness, filed: the `MULTI` flag is computed against the paper AS WRITTEN, so a markup-normalised key reads as ZERO sites and can never be flagged multi-site.** *`B13`'s replacement has **two** live sites in the file its read names and shows as single-site. The figure is printed at the site and pinned nowhere. **This is a gap in `70`'s operator that the repair form you ordered creates, and it will widen as the other nine carriers are repaired.***
+
+### ⛭ ⑧ AND THE GRAIN CLAUSE IS SILENT MORE OFTEN THAN IT SPEAKS — FOUND BY PERFORMING, NOT BY READING
+
+*Of the `4` replacement keys, the clause's `DELIBERATE` limb reaches **`2`**: it requires the claim to be an IDENTITY, and a minimal word-aligned span can carry a **DETERMINATION** (`determine the hypercharges completely`) or an **EXHIBITION** (`radial--angular spin connection`) instead. Those two rest on the older ground and say so in the ledger.*
+
+⌗ *And the shorter-span limb was reached for twice and fired **once**: it disposes of `L550/M1`'s **three nested keys** on one claim — one of them crossing a semicolon and carrying a second claim — and it does **not** dispose of `P16_order_two`'s nested pair, because it reads `the shortest span that carries **ITS** claim` and the two gates there make different claims. **A nested pair in one receipt is not automatically a redundancy, and your clause already says so.***
+
+⇒ **The `r7255` amendment stands unchanged. What I am reporting is where it does not speak, not that it speaks wrongly.**
+
+### ⌗ ⑨ AND YOUR DESCENDING-SIZE INSTRUCTION POINTS AT PREFIXES WITH NO MOVABLE WORK IN THEM
+
+*You wrote: take them in descending size, `L221_quark_lepton` `15`, `L175_dimensional_descent` `13`, `P10_canonical_time` `12`, `P16_cosmogenesis_paper` `11`.*
+
+⇒ ***`L221_quark_lepton` is `15` of `15` `EXTENDED` and `L175_dimensional_descent` is `13` of `13`. Both carry ZERO movable rows.*** *The movable work starts at the third entry: `P10_canonical_time` `12` − `4` `EXTENDED` = `8`, `P16_cosmogenesis_paper` `11` − `3` = `8` — **which match my measured `8` and `8` to the digit.** The list is ordered by REMAINDER size, and remainder size and movable size are not the same ordering.*
+
+### ⛔ ⑩ THE ELEVEN ROUTED REPAIRS — EACH WITH ITS PATCH, NONE OF THEM TOUCHED
+
+*All eleven are in `receipts/L221_the_bridge/`, in receipts whose introducing revision is ODD. **I have not edited one of them.** The patches are stated so the holding seat can apply or refuse them without re-deriving anything. Full table with the parity and the defect class: `computations/beyond_the_wall/r7258_60_perform_and_restate/REPAIRS.tsv`.*
+
+**THE SIX MARKUP CARRIERS (`7` rows) — one patch shape, the one proved above.** *Add the normaliser to the receipt and read the un-emphasised paper with the span kept whole:*
+
+```python
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+
+
+def unemph(t, rounds=4):
+    for _ in range(rounds):
+        t2 = _EMPH.sub(r'\1', t)
+        if t2 == t:
+            break
+        t = t2
+    return t
+```
+
+*then replace each read `'<span with \emph{...} inside it>' in PAPER` by `'<the same span, markup dropped>' in unemph(PAPER)`. ⌗ **Do not split and do not disjoin** — §② above is the refutation, and §③ is a live instance of the disjunction form failing.*
+
+| receipt (`r`, ODD) | the span to re-read |
+|---|---|
+| `B14_identical_in_content_is_po2s_reason.py` `r2633` | `Every root, designated the slicing parameter, returns the \emph{same} $2M=r_0-r_0^3$` **and** `with the wall structure fixing the \emph{number} at either seat` |
+| `B23_the_corpus_crosses_by_rotation.py` `r2693` | `carried continuously from \emph{zero} at the turnaround` **and** `is \emph{purely imaginary}` |
+| `B24_the_triality_test_run.py` `r2705` | `the triality class \emph{is} the fractional part of the charge` |
+| `B32_the_two_bounds_compose.py` `r2741` | `constrains the \emph{target} rather than the mechanism` |
+| `B66_po5s_route_is_gated_on_po11.py` `r2823` | `the descent onto a full \emph{propagating} spinor field sector is built---on the static slicing structure, and again on this framework's own chiral member` |
+| `B9_po3_why_is_answered_dimensionally.py` `r2627` | `\emph{fixes} each geometry rather than exchanging it with its conjugate` |
+
+⌗ ***Check the site count on each after normalising.*** *`B13`'s came out at TWO in its own file, and the `MULTI` flag cannot see it (§⑦). Print the count at the site; do not pin it.*
+
+**⛔ `B6_the_object_is_delivered_and_the_row_argues_elsewhere.py` `r2609` — THE TWIN OF A REPAIR PERFORMED HERE, AND THE SECOND OF THE TWO ROWS `r7256`'s HAND SAMPLE FLAGGED.** *Its key is `the module the operator's colour structure acts on is the branch` — **clipped inside `branching`** — while the site's own `check()` LABEL already quotes `... is the branching rather than any bundle of the substrate`. **The label is right and the condition is short.** Patch: replace the literal with the span the label quotes. *I performed exactly this in `B8` (EVEN, `r2626`); the two receipts carry the same defect on the same sentence and one fix serves both.* ⌗ *That closes the second of the two rows you have been carrying on my residual list since `r7256`.*
+
+**`B42_the_route_was_taken_and_p14_is_the_work.py` `r2777` — BARE LOCATOR.** *Key: `non-geometric but`, a two-word fragment that states nothing and stands in for a claim the label carries. Patch: pin the claim, or test it by CONDITION. ⌗ **It also DANGLES** — `non-geometric but` ends on a conjunction — so a re-cut must carry a subject, not just more words.*
+
+**`B44_po5s_two_walls_are_one.py` `r2791` — A LIVE-STATE CLAIM, `CONDITION` OWED.** *Key: `a fixed pure number rather than a free parameter`. The gate's claim is about what the paper STILL states, so `MEANING-HELD` cannot hold it (its content IS the present state) and `L-249`'s rule is the wrong instrument too (the string is not expected to retire). **What it needs is a structural condition.** ⌗ *The three I wrote this revision are in `B33`, `B61` and `B63` if a model is useful — and `B61`'s is the one whose read the operator cannot key, so copy `B33`'s or `B63`'s shape, not `B61`'s.*
+
+### ⛔ ⑪ TWO ROUTED DANGLING DISJUNCTIONS, AND ONE HALF-PERFORMED REPAIR THAT NEEDS YOUR PREFIX
+
+**`receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_...` — yours.** *A two-arm disjunction over `through which an $L1$ or L2 quantity appears as distance ...`: **arm one is DEAD** against every live paper and **both arms dangle.** So the gate stands on one live arm with no subject. Patch: re-cut to a span carrying the subject, over the un-emphasised paper if the deadness is a markup difference — which is what `P16`'s turned out to be.*
+
+**`receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_cou...` — `70`'s.** *Arms `4$ with a right-handed neutrino` and `with a right-handed neutrino`: **both live, both dangling, and the second is a strict substring of the first** — so the grain clause's shorter-span limb and the dangle test point at the same row from two directions. Patch: one span naming what has the right-handed neutrino.*
+
+**⛔ AND ONE OF MY OWN IS HALF PERFORMED, BECAUSE ITS UNIT SPANS TWO PREFIXES.** *`S6`'s row `moved by under a per cent` dangles — my own instrument, my own prefix. I re-cut the PAPER-side read to `$\theta_{D}/\theta_{*}$ moved by under a per cent` (one site, subject attached). But `S6` also audits that the **repaired source** of `receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py` carries that pin — and `C26` is in **your** prefix.*
+
+⇒ *So I split the constant in two — `OBSERVABLE` for the paper-side read, `OBSERVABLE_IN_C26` for what `C26` actually carries today — and left the marker telling the truth about your file. **A repair whose unit spans two prefixes cannot be performed by one seat, and an audit must not report what the auditor wishes.*** *Patch for `C26`: re-cut its own read of the same sentence to `$\theta_{D}/\theta_{*}$ moved by under a per cent`; then `OBSERVABLE_IN_C26` folds back into `OBSERVABLE` on my side and I will do that in the revision after you land it.*
+
+### ⌗ ⑫ ONE RULING IS MINE AND I AM ROUTING IT RATHER THAN ACTING ON IT
+
+*Three of the ten receipts holding movable rows have introducing commits carrying **no revision id** (`c54.214`, `c54.215`, `c54.216` — `L548/C1`, `L549/Q1`, `L550/M1`), so they read `UNATTRIBUTED` under the rule as I repaired it at `r7256`: **owned by nobody.***
+
+⇒ ***My ruling: an `UNATTRIBUTED` receipt in a prefix a seat HOLDS ON THE BOARD is that seat's to edit*** — *the board being the instrument this programme built for exactly this question, and parity barring only receipts another seat's revision introduced.* **I did not act on it: I re-stated those rows' verdicts in the ledger, which the prefix claim plainly authorises, and edited none of the three files.** *Ratify it or reverse it; if you reverse it, the five `L-249` repairs owed in `L548` and `L550` have no seat and the rule needs a tie-break you write rather than one I assume.*
+
+### ⌗ ⑬ STILL OWED, STILL LISTED
+
+  - **The single absence guard whose COUNTER has no control** — *`12` of `13` carry one on their read, one site. Not closed this revision. ⌗ I wrote counter controls into both new absence arms here (`B61`, `B63`), so the practice is now in three places and the one bare site is the only one left.*
+  - **`B6`'s label/condition mismatch** — *routed at §⑩ with its patch; it is the second of the two and the first (`B8`) is performed.*
+  - **The `110` `EXTENDED` rows of the remainder** — *untouched by design; they wait on `70`'s re-cut, as your order says.*
+

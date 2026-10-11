@@ -84,6 +84,25 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 PAPER = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'),
                                  encoding='utf-8').read())
 
+# ⛔⛭ ADDED r7258+60, on r7255's order ② -- the markup-carrier repair, reached by RE-STATING this
+#   receipt's own two `ALT-OK` rows under the settled rule.  *Inline emphasis is not part of a claim:
+#   normalising it out of the HAYSTACK lets a span be read WHOLE, which is what a disjunction over the
+#   marked-up and markup-free forms of one sentence was standing in for.*
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+
+
+def unemph(t, rounds=4):
+    """the paper with inline emphasis commands unwrapped, contents kept, nesting handled by iteration"""
+    for _ in range(rounds):
+        t2 = _EMPH.sub(r'\1', t)
+        if t2 == t:
+            break
+        t = t2
+    return t
+
+
+UNEMPH_PAPER = unemph(PAPER)
+
 
 # ======================================================================================
 # THE INSTRUMENT.  The left-invariant frame on SU(2) = S^3: E_a = -2i J_a on the level-j
@@ -408,8 +427,20 @@ gate("Ⓔ③  and the paper's adjacent step is the one that makes the floor matt
      " tensor equation gives a CONSTANT shear, so the Bianchi shear IS the long-wavelength tensor"
      " mode -- which is why the absence of a `$k=0$` member is a statement about what the"
      " perturbation class contains and not a convention about where to start counting",
-     'the Bianchi shear \\emph{is} the long-wavelength growing tensor mode' in PAPER
-     or 'is the long-wavelength growing tensor mode' in PAPER)
+     # ⛔⛭ REPAIRED r7258+60, on r7255's order ② -- the two rows this site carried were adjudicated
+     #   `ALT-OK` at r7190 as a two-arm disjunction over one sentence's EMPHASIS MARKUP.  Re-stated
+     #   under the settled rule they are `REPAIR-OWED`, and the measurement that moved them is new:
+     #   *** ARM ONE IS DEAD AND ARM TWO DANGLES. ***  *The paper reads `\emph{the Bianchi shear
+     #   simply is the long-wavelength growing tensor mode}` -- the emphasis wraps the WHOLE sentence
+     #   and the word `simply` sits inside it -- so the marked-up arm `the Bianchi shear \emph{is}
+     #   ...` is ABSENT from every live paper.  What was holding this gate up was arm two alone, and
+     #   arm two begins with a finite verb: it names NO SUBJECT, and would pass a paper saying the
+     #   SCALAR mode is the long-wavelength growing tensor mode.*
+     #   ⇒ *** Repaired to ONE span, read over the un-emphasised paper, carrying its own subject. ***
+     #   ⌗ This is the same finding `B13` reached at this revision from the other direction: a markup
+     #     carrier must be repaired by NORMALISING the markup, not by disjoining or splitting around
+     #     it, because both of those drop the words that fix what the claim is about.
+     'the Bianchi shear simply is the long-wavelength growing tensor mode' in UNEMPH_PAPER)
 
 # =====================================================================================
 npass = sum(1 for _, ok in CHECKS if ok)

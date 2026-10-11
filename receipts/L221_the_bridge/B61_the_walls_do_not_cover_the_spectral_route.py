@@ -132,10 +132,40 @@ def main():
               or re.search(r"Atiyah--Hirzebruch[^.]{0,160}?isometry", t)
               for t in _CORPUS.values()))
 
-    check('⓷ while the paper\'s escape clause does not classify it: "with the known escapes all '
-          'abandoning the geometric premise" -- ** and the corpus never considered this route, so it '
-          'does not say which side it falls on **',
-          'the known escapes all abandoning the geometric premise' in bnd)
+    # ⛔⛭ REPAIRED r7258+60, on r7255's order ① -- row owed at r7256 with repair form CONDITION.  *The
+    #   pin was a verbatim read of the escape clause, and the CLAIM is not that the clause is worded
+    #   that way: it is that the clause does NOT CLASSIFY this route.  A verbatim read of the clause
+    #   cannot carry a claim about what the clause omits, and the omission is a fact about the LIVE
+    #   corpus, so `MEANING-HELD` cannot hold it at a commit either.*
+    #   ⇒ *** The condition has three arms: the enumeration is PRESENT, found by PATTERN so a
+    #       re-wording does not read as a loss; the spectral route's own vocabulary is ABSENT from
+    #       every paper, which is what `never considered` means; and the absence carries a COUNTER
+    #       CONTROL over the escapes the paper DOES enumerate. ***
+    #   ⌗ The `appendix_receipts*` exclusion is load-bearing HERE above all: the generated appendices
+    #     carry this receipt's own docstring, which names Connes and the spectral triple on every
+    #     line.  A glob that included them would find the vocabulary it is testing for the absence of,
+    #     and the absence arm would read as a corpus commitment.
+    _ESC = re.compile(r'known escapes[^.]{0,80}?geometric premise')
+    _esc_home = next((_n for _n, _t in sorted(_CORPUS.items()) if _ESC.search(_t)), None)
+    _SPECTRAL = ['inner fluctuation', 'spectral triple', 'Connes', 'almost-commutative',
+                 'spectral action']
+    _spec_hits = {_k: sorted(_n for _n, _t in _CORPUS.items() if _k.lower() in _t.lower())
+                  for _k in _SPECTRAL}
+    _ENUMERATED = ['index route', 'Lichnerowicz', 'positive-scalar-curvature']
+    _enum_hits = {_k: sorted(_n for _n, _t in _CORPUS.items() if _k in _t)
+                  for _k in _ENUMERATED}
+    check(f'⓷ while the paper\'s escape clause does not classify it -- ** and that is a CONDITION, not '
+          f'a quotation: ** the enumeration is present in `{_esc_home}` by PATTERN, and NONE of the '
+          f'{len(_SPECTRAL)} terms this route is built from occurs in ANY paper '
+          f'({sum(len(_v) for _v in _spec_hits.values())} hits across '
+          f'{len(_CORPUS)} files, appendices excluded).  ** The corpus never considered the route, so '
+          f'the clause cannot say which side it falls on **',
+          _esc_home is not None and not any(_spec_hits.values()))
+    check(f'⇒ and the ABSENCE carries its COUNTER: the same search over the escapes the paper DOES '
+          f'enumerate finds all {len(_ENUMERATED)} of them -- '
+          + ', '.join(f'`{_k}` in {len(_v)}' for _k, _v in sorted(_enum_hits.items()))
+          + ' file(s).  ** So the zero above measures the CORPUS and not a search that finds nothing **',
+          all(_enum_hits.values()))
 
     print()
     if FAILED:
