@@ -235,10 +235,18 @@ head("C.  THE SIX ARE REPAIRED BY READING THE PAPER, AND THE BACKLOG FALLS BY RU
 #   a Python literal escapes the backslash, and one pin is written as two adjacent string pieces,
 #   so the whole literal exists at run time and never contiguously in the file. **
 PINS = (
-    (C26, RATE_GAP, 'of that gap into the diffusion length by itself'),
+    # ⛔⛭ r7255+cc66.172, by cc66 under the standing rule that the seat whose edit broke a receipt
+    #   is the one who may repair it.  ** r7255 ordered cc66 to PERFORM its owed repairs, and two of
+    #   the six figure repairs this receipt audits were WIDTH RE-CUT: the pinned sentence became a
+    #   tolerant pattern that reads the value and requires its anchor within a bounded window, so
+    #   the old plain-literal MARKER is no longer in the repaired source. **
+    #   ⇒ The CLAIM is untouched -- the pin is still carried in the source and the figure is still
+    #     read from P15 at exactly one site -- so only the marker is re-pointed at the form the
+    #     source now carries.  60's reading and this gate's wording are unchanged.
+    (C26, RATE_GAP, '.{0,60}?diffusion length'),
     (C26, OBSERVABLE, OBSERVABLE),
     (C26, APART, APART),
-    (C62, 'on $185$ bins, is the better-converged', 'bins, is the better-converged'),
+    (C62, 'on $185$ bins, is the better-converged', '.{0,40}?converged'),   # re-cut, as above
     (KRE, 'the Kretschmann scalar is $48M^2/r^6+24/\\alpha^4$', 'the Kretschmann scalar is $48M^2/r^6'),
     (RAT, 'The two therefore stand in the fixed ratio $2^{1/3}$ for every $M$',
      'stand in the fixed ratio $2^{1/3}$ for every $M$'),
