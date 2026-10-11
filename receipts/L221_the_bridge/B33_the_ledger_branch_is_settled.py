@@ -83,11 +83,11 @@ def main():
     # ⓵ the three commitments
     check('⛭⛭ ⓵ p0: "The one physical length is $\\alpha$, not $\\ell_{P}$" with the ratio "the size '
           'of the universe in gauge-units---a number, not a tuning"',
-          '2}$~\\cite{JanzenCRcosmology}) is the size of the universe in gauge-units' in P['geometric_core_paper'])
+          '122}$~\\cite{JanzenCRcosmology}) is the size of the universe in gauge-units' in P['geometric_core_paper'])
     check('P10, reached from a different direction entirely: "since $\\ell_{P}$ is a '
           'gauge-combination rather than a second physical length, the cutoff is not smuggling a '
           'scale in either"',
-          'is a gauge-combination rather than a second physical length, the cutoff is n' in P['canonical_time'])
+          'is a gauge-combination rather than a second physical length, the cutoff is not' in P['canonical_time'])
     check('P14: "the one physical length being $\\alpha$ and not $\\ell_{P}$, whose ratio ... is a '
           'number in gauge-units and not a tuning"',
           'is a number in gauge-units and not a tuning' in P['matter_sector_paper'])

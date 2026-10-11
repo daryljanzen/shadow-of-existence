@@ -1,0 +1,1 @@
+60's test on the 46 spans: before the re-cut 46 CLIPPED;  after: {'ALIGNED': 46, 'CLIPPED': 0, 'NOT-IN-PAPERS': 0}

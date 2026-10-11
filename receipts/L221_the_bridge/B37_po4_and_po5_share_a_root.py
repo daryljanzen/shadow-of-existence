@@ -112,7 +112,7 @@ def main():
     # ⓸ and PO-5's bound is the same currency
     check('⛭⛭⛭ ⓸ while `PO-5`\'s settled bound is that the ledger holds no free dimensionless '
           'parameter -- the row records the three papers committing that $\\ell_P$ is a gauge',
-          'gauge-combination rather than a second physical length, the cutoff is n' in
+          'gauge-combination rather than a second physical length, the cutoff is not' in
           re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'canonical_time.tex'))))
 
     # ⓹ and p0 names the root
@@ -120,7 +120,7 @@ def main():
     check('⓹ and p0 names that root for three verdicts: "the common root of three verdicts reached '
           'separately, that the winding quantises without measuring, the flat bundle selects without '
           'coupling, and the branch point filters without supplying"',
-          'the common root of three verdicts reached separately, that the winding quantises witho' in p0
+          'the common root of three verdicts reached separately, that the winding quantises without' in p0
           and 'quantises without measuring' in p0)
 
     print()

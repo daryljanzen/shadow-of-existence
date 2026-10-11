@@ -281,11 +281,18 @@ gate(f"Ⓒ③ ⛔⛭⛭ AND THE CLAUSE CANNOT RATIFY `{E['clipped']}` OF THE `{E
      E['clipped'] + E['aligned'] == E['paper_target']
      and E['clipped'] > B['extended_cannot_ratify']['hi'] and E['verdicts_changed'] == 0)
 
+# ⛭ CONVERTED r7255+70.1 by node 70, under 66's r7255 ①: 70 re-cut the 46 clipped spans WORD-ALIGNED and re-keyed
+#   their rows, so the old (receipt, literal) keys this gate looked up no longer exist -- 70's edit is what broke it.
+#   The claim is unchanged and still checked: every one of the 64 still reads EXTENDED, looked up under its re-cut
+#   literal where 70's published ledger records one.
+_RL = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7255_70_word_aligned_recut', 'ledger.json')
+_RECUT = {(x['receipt'], json.dumps(x['lit'], ensure_ascii=False)): json.dumps(x['recut'], ensure_ascii=False)
+          for x in (json.load(open(_RL, encoding='utf-8')) if os.path.exists(_RL) else []) if x['outcome'] == 'APPLIED'}
 gate(f"Ⓒ④ ⛔ AND NO VERDICT OF THEIRS IS CHANGED: all `{len(EXT)}` rows still read `EXTENDED` in the"
      f" baseline, because they are another seat's repairs and a measurement that overturns `46` of them"
      f" is an order and not a conversion.  ⌗ *The prefix is this seat's on the board, so the restraint"
      f" is a choice and it is stated as one*",
-     all(_bmap.get((r[0], r[1])) == 'EXTENDED' for r in EXT))
+     all(_bmap.get((r[0], _RECUT.get((r[0], r[1]), r[1]))) == 'EXTENDED' for r in EXT))
 
 A = STATS['alignment_contrast']
 gate(f"Ⓒ⑤ ⛭⛭⛭ ONE INSTRUMENT, TWO POPULATIONS: `{A['this_seats_171_clipped']}` of this line's"

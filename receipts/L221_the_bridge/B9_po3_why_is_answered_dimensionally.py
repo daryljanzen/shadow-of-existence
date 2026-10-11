@@ -99,7 +99,7 @@ def main():
     check('and what is then absent: "there is no mass-reflection $\\mathbb{Z}_{2}$, hence no '
           '$\\mathbf3\\oplus\\bar{\\mathbf3}$ Nariai hexad, no outer factor of '
           '$\\mathrm{Aut}(A_{2})=S_{3}\\rtimes\\mathbb{Z}_{2}$, and no $\\gamma^{5}$"',
-          'there is no mass-reflection' in p14 and '3}$ Nariai hexad, n' in p14
+          'there is no mass-reflection' in p14 and '3}$ Nariai hexad, no' in p14
           and 'no outer factor of' in p14)
 
     # ⓷ it is a D-selection condition
@@ -108,7 +108,7 @@ def main():
           'The second condition is the parity, and it separates those two' in p14)
     check('against the first, which alone would admit $D=5$: "At $D=5$ the collapse does occur, at scale '
           '$1$, and returns a four-fold"',
-          'the collapse does occur, at scale' in p14 and 's occur, at scale $1$, and returns a four-fold' in p14)
+          'the collapse does occur, at scale' in p14 and 'does occur, at scale $1$, and returns a four-fold' in p14)
 
     print()
     if FAILED:

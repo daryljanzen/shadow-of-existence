@@ -81,7 +81,7 @@ def main():
     check('⛔ ⓵ P14 states r2666\'s result directly: "no holonomy datum can take one off it, because '
           'holonomy is precisely the complete invariant a flat connection has"',
           'no holonomy datum can take one off it' in p14
-          and 'o holonomy datum can take one off it, because holonomy is precisely the complete invariant a flat connection has' in p14)
+          and 'no holonomy datum can take one off it, because holonomy is precisely the complete invariant a flat connection has' in p14)
     check('with the moduli-space reason: "a deformation within it changes which flat bundle one has and '
           'not whether there is a field strength"',
           'changes which flat bundle one has and not whether there is a field strength' in p14)
