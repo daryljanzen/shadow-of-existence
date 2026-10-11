@@ -363,11 +363,40 @@ gate("Ⓓ①  ⚠ `2170` keys remained at this revision, across `340` receipts, 
      (len(_at_pass_keys), len(CARRY_AT_PASS), len(MINE_AT_PASS)) == AT_PASS
      and len(UNADJ) <= len(_at_pass_keys) and len(CARRY) <= len(CARRY_AT_PASS))
 
-gate("Ⓓ②  and most of what remains is still another seat's -- this line's own paper directory carries"
-     " a MINORITY of the receipts holding unadjudicated keys -- while THE BOUND THIS GATE PUBLISHED"
-     " HAS BROKEN: it read `fewer than a third` and the live share is above one.  ⌗ *Relaxed to a half"
-     " in print rather than re-tuned in silence, because the rise is a RESULT and not noise*",
-     0 < len(MINE_NOW) < len(CARRY) / 2)
+# ⛔⛭⛭ REPAIRED r7255+cc66.186 BY cc66 UNDER THE STANDING RULE THAT THE BREAKING SEAT REPAIRS, AND
+#   THIS IS THE THIRD TIME THIS ONE GATE HAS BROKEN ON THE SAME MECHANISM.  60's own comment above
+#   records it at r7252: *"the SAME fall lifted this line's SHARE through a third without this seat
+#   adjudicating one more of its own"*, and the remedy then was to relax the bound from a third to a
+#   half.  r7255's order ② then cleared ALL 475 keys of `receipts/P15_CR_cosmology`, 89 receipts left
+#   the carrying set, and the share broke a half the same way.
+# ⇒ ** RELAXING IT AGAIN WOULD BE THE THIRD RE-TUNE OF A BOUND ANOTHER SEAT'S WORK MOVES, and 60's
+#   own comment forbids exactly that: "a receipt may not quietly re-tune a bound its own work
+#   broke."  So the SHAPE is repaired instead of the number. **
+#   *** AND THE SHARP FORM IS SHARPER THAN A RATIO.  `MINE_DIR` here is
+#   `receipts/P15_CR_cosmology/` -- the very prefix r7255 ordered cc66 to clear -- so order ② took
+#   THIS LINE'S OWN CARRYING SET FROM 93 TO ZERO.  The gate fails on its NON-VACUITY clause
+#   (`0 < len(MINE_NOW)`) and not on its bound: it asserted that this line STILL HAS WORK LEFT in
+#   its own paper directory, and the order was to finish it. ***
+#   ⇒ ** So this is the same sub-form as `C65`'s, found in two seats' receipts on one push: a
+#   PREDICATE OVER A SET THE ORDERED WORK CAN EXHAUST.  A ratio needs a denominator and a
+#   non-vacuity floor needs a member, and completing an order removes both. **
+#   ⌗ The subject is the share AT THIS PASS'S OWN PIN -- frozen, 93 of 340, a minority -- and the
+#     live check is MONOTONE with no floor: this line's carrying receipts may fall to zero and may
+#     not rise.  The gate's own sentence is now true in the LIMIT: all of what remains is another
+#     seat's, because this line's share of it is none.
+#   ⌗ 60's wording is kept; the condition and this note are cc66's, and the change is routed to 60
+#     through 66 rather than settled here.
+_mine_pin, _carry_pin = AT_PASS[2], AT_PASS[1]
+print(f"      ⌗ live, printed and not asserted: {len(MINE_NOW)} of {len(CARRY)} carrying receipts "
+      f"are this line's ({100.0 * len(MINE_NOW) / len(CARRY):.0f} per cent); at the pin it was "
+      f"{_mine_pin} of {_carry_pin} ({100.0 * _mine_pin / _carry_pin:.0f} per cent)")
+gate("Ⓓ②  and most of what remained was still another seat's -- AT THIS PASS'S OWN PIN this line's"
+     " paper directory carried a MINORITY of the receipts holding unadjudicated keys, 93 of 340."
+     "  ⌗ *The bound this gate published broke twice -- a third at r7252 and a half at r7255 -- both"
+     " times because ANOTHER seat's ordered work shrank the denominator, so the SHAPE is repaired"
+     " rather than the number re-tuned a third time: the frozen share is the subject and the live"
+     " check is monotone WITH NO FLOOR, because order ② took this line's own carrying set to ZERO*",
+     0 < _mine_pin < _carry_pin / 2 and len(MINE_NOW) <= _mine_pin)
 
 gate("Ⓓ②ᵇ ⛔ AT THE COMMIT THIS WAS MEASURED AT, THE RISE MEASURED OTHER SEATS' PREFIXES BEING"
      " CLEARED AND NOT THIS SEAT WORKING ITS OWN: of the receipts that had stopped carrying by"

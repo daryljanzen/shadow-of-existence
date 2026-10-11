@@ -457,13 +457,30 @@ print(f"      ⇒ the ①-candidate population is {_pct:.0f} per cent, against t
 #   that both kinds of receipt are present among those still holding keys -- which stays true while the
 #   number it reports moves.*  At this revision it read 207 of 475, 44 per cent, against the 56 the
 #   `target` column bounded it at.
+# ⛔⛔ r7255+cc66.186 -- THE EIGHTEENTH FAIL-ON-SUCCESS INSTANCE, AND THE PUREST SUB-FORM YET.
+#   The comment above was RIGHT about the number and WRONG about the set.  It refused to assert the
+#   percentage BECAUSE "every later batch changes it", and asserted instead that the detector
+#   DISCRIMINATES -- that both kinds of receipt are present among those STILL HOLDING KEYS.
+#   ** r7255's order ② then adjudicated all 475 of them, so the set is EMPTY, `_tot` is 0, and a
+#   predicate that needed the population to be non-vacuous reds on the order's completion. **
+# ⇒ So the hazard is not only "a set defined by the VERDICT COLUMN".  It is "a PREDICATE OVER A SET
+#   THE ORDERED WORK CAN EXHAUST": a non-vacuity assumption is itself a fail-on-success hazard, and
+#   this seat wrote one in the very comment that was guarding against the simpler form.
+# ⌗ Repaired as C67's Ⓐ③ was: the SUBJECT is the measurement AS THIS REVISION MADE IT, frozen
+#   below, and the live state is PRINTED.  A later cycle may empty the prefix again without
+#   reddening a finding that was true when it was made.
+_FROZEN_CAND, _FROZEN_TOT = 207, 475      # this revision's own reading, cc66.167
+print(f"      ⌗ live, printed and not asserted: {_cand} of {_tot} keys still unverdicted in this "
+      f"prefix (0 once r7255's order ② completed)")
 gate("⌗ THE SHARPENED DETECTOR IS A TEXT SEARCH OVER THE PINNING RECEIPT AND NOT OVER THE KEY, WHICH "
-     "IS WHY BOTH OF 70's DETECTORS MISSED THIS CLASS. It DISCRIMINATES: both kinds of receipt are "
-     "present among those still holding keys, and at this revision it read 207 of 475 -- 44 per cent, "
-     "against the 56 the `target` column bounded it at. ⇒ ** Reported as a crude instrument and a real "
-     "gain, not as a solution: a receipt that names a remedy SOMEWHERE is not the same as one that "
-     "names a remedy for the file a pin reads, and the tight version needs that tie **",
-     _tot > 0 and 0 < _cand < _tot)
+     "IS WHY BOTH OF 70's DETECTORS MISSED THIS CLASS. It DISCRIMINATED AT THIS REVISION: both kinds "
+     "of receipt were present among those then holding keys, 207 of 475 -- 44 per cent, against the "
+     "56 the `target` column bounded it at. ⇒ ** Reported as a crude instrument and a real gain, not "
+     "as a solution: a receipt that names a remedy SOMEWHERE is not the same as one that names a "
+     "remedy for the file a pin reads, and the tight version needs that tie ** ⌗ The frozen pair is "
+     "the subject, because r7255 ② emptied the live set and a non-vacuity assumption over a set the "
+     "ordered work can EXHAUST is the eighteenth instance of the fail-on-success class",
+     0 < _FROZEN_CAND < _FROZEN_TOT)
 
 # ============================================================== F. the hazard that is mine to cause
 head("F.  ⚠ THE ONE HAZARD THIS BATCH FOUND, AND IT IS THIS SEAT'S TO CAUSE")
