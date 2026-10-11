@@ -51,6 +51,7 @@ circular, so the parameters are gone from this file along with the claim they su
 
 Written r7129 by node 66 (the gate), replacing its own r7127 receipt on node 70's audit.  Stated for reversal.
 """
+import re
 import io
 import os
 import sys
@@ -165,7 +166,14 @@ gate("⓹ the kernel the papers apply damps by `$e^{-kc_s\\lvert\\Delta\\eta\\rv
      "located in `P15`'s own two-factor sentence",
      _OMEGA)
 
-_152 = '$-152$ at the first acoustic peak' in b15
+# ⬭⬭ r7255+cc66.172 WIDTH RE-CUT PERFORMED, family Ⓑ.  The pin asserted a whole SENTENCE to
+#   carry a claim that is a VALUE paired with its anchor.  ** The pattern now reads the value and
+#   requires its anchor within a bounded window, so the connective prose between them is free. **
+#   ⚠ AND THIS ONE IS ONLY PARTLY REPAIRED, which is said rather than glossed: its anchor
+#     `acoustic peak` is PROSE, so a reword of the anchor itself still reds it.  ** A width re-cut
+#     removes the connective prose and keeps the anchor; it is fully reword-immune only where the
+#     anchor is a SYMBOL. **  `$-152$` is unique in the corpus, so the anchor is belt-and-braces.
+_152 = re.search(r'\$-152\$.{0,40}?acoustic peak', b15) is not None
 gate("⇒ and `sec:what-crosses` carries `$-152$` at the first acoustic peak, integrated across the segment's "
      "own sound-speed profile -- located, and this is the figure the comparison is about",
      _152)
@@ -195,7 +203,11 @@ v2 = float(aH.subs({r: sp.Rational(1, 1000) * al}).subs(al, 1))
 #: the figure WITH its radius, not the bare number: a bare `1.96` would match anywhere in a paper
 #: this long, and the claim is that the paper evaluates aH AT 0.1 alpha -- the radius is the
 #: load-bearing half.  The weak or-arm is dropped rather than baselined.
-_FREEZE = '$1.96$ at $\\lvert r\\rvert=0.1\\,\\alpha$' in b15
+# ⬭⬭ r7255+cc66.172 WIDTH RE-CUT PERFORMED, family Ⓑ.  The pin asserted a whole SENTENCE to
+#   carry a claim that is a VALUE paired with its anchor.  ** The pattern now reads the value and
+#   requires its anchor within a bounded window, so the connective prose between them is free. **
+#   ⌗ Symbol-anchored, so fully reword-immune; one match in the papers.
+_FREEZE = re.search(r'\$1\.96\$.{0,40}?0\.1\\,\\alpha', b15) is not None
 gate(f"⓼ and the paper's own freezing numbers REPRODUCE from the bead's `$E=1$` law with no radiation term: "
      f"`$aH=\\sqrt{{\\lvert1-f\\rvert}}$` gives `{v1:.3f}` at `$0.1\\alpha$` and `{v2:.2f}` at "
      f"`$10^{{-3}}\\alpha$`, against the paper's `1.96` and `19.6`",

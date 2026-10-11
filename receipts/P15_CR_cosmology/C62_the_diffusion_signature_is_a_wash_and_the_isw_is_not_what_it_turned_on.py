@@ -358,10 +358,21 @@ _P15_TEX = os.path.join(_ROOT, 'corpus', 'CR_cosmology.tex')
 _P15_BODY = re.sub(r'\s+', ' ', '\n'.join(
     l for l in open(_P15_TEX, encoding='utf-8', errors='replace').read().split('\n')
     if not l.lstrip().startswith('%')))
-_CEIL_SENT = 'on $185$ bins, is the better-converged'
+# ⬭⬭ r7255+cc66.172 WIDTH RE-CUT PERFORMED, family Ⓑ.  The pin asserted a whole SENTENCE to
+#   carry a claim that is a VALUE paired with its anchor.  ** The pattern now reads the value and
+#   requires its anchor within a bounded window, so the connective prose between them is free. **
+#   ⚠ `$185$` occurs FOUR times in the paper -- the sharpest case for the pairing: the digits
+#     are useless as an anchor here and the window to `converged` carries the identification.
+#   ⛔ AND THE FORM MATTERS, MEASURED WITH THE INSTRUMENT RATHER THAN ASSUMED: a first draft of
+#     this re-cut used `re.compile(...)` with a later `.search()`, and the operator DOES NOT KEY
+#     that shape -- it keys `re.search(...) is not None`.  ** So the repair would have moved this
+#     pin OUT of the audited class, which is 60's r7204 evasion route reached by accident. **
+#     A repair that hides a pin from the instrument is worse than the pin, so the KEYED form is
+#     used and the key stays in the ledger under its new literal.
+_CEIL_SENT = re.search(r'\$185\$.{0,40}?converged', _P15_BODY) is not None
 check("the 185-bin ceiling is P15's --- READ from the paper's own sentence here rather than "
       "hard-coded, and it is the FULL set because the data start at l=30",
-      _CEIL_SENT in _P15_BODY and n1 == 185)
+      _CEIL_SENT and n1 == 185)
 check("** the TT SHAPE residual is a wash: under 0.6 sigma per bin after the refit **",
       math.sqrt(c21 / n1) < 0.6)
 check("** and MORE completely absorbed the higher you look — a Gaussian looks like a power law "

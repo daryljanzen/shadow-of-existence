@@ -171,17 +171,30 @@ def main():
     #   ⇒ Re-pointed at the paper's own RATE-GAP sentence, read here and not recalled, so the
     #   comparison is now within one object; the retired figure is asserted GONE; and the
     #   observable is asserted SEPARATELY as the object these checks are not about.
-    _RATE_GAP = 'puts $10.8\\%$ of that gap into the diffusion length by itself'
+# ⬭⬭ r7255+cc66.172 WIDTH RE-CUT PERFORMED, family Ⓑ.  The pin asserted a whole SENTENCE to
+#   carry a claim that is a VALUE paired with its anchor.  ** The pattern now reads the value and
+#   requires its anchor within a bounded window, so the connective prose between them is free. **
+#   ⚠ `$10.8\%$` occurs TWICE in the paper, so the digits alone would NOT anchor this read and
+#     the window to `diffusion length` is what makes it unique -- which is the measured case for
+#     the pairing the receipts' own comments kept calling load-bearing.  Anchor is prose, so the
+#     exposure is reduced and not removed.
+#   ⛔ AND THE FORM MATTERS, MEASURED WITH THE INSTRUMENT RATHER THAN ASSUMED: a first draft of
+#     this re-cut used `re.compile(...)` with a later `.search()`, and the operator DOES NOT KEY
+#     that shape -- it keys `re.search(...) is not None`.  ** So the repair would have moved this
+#     pin OUT of the audited class, which is 60's r7204 evasion route reached by accident. **
+#     A repair that hides a pin from the instrument is worse than the pin, so the KEYED form is
+#     used and the key stays in the ledger under its new literal.
+    _RATE_GAP = re.search(r'\$10\.8\\%\$.{0,60}?diffusion length', p15) is not None
     _OBSERVABLE = 'moved by under a per cent'
     _APART = 'the rate gap is not what the signature is made of'
     _RETIRED = '9.4\\%'
     check(f'⚠ ⓷ unweighted at the true onset gives {unw:+.1f}%, above the paper\'s OWN rate-gap '
           f'figure of $10.8\\%$ --- READ from `P15` here and not recalled',
-          _RATE_GAP in p15 and unw > 10.8)
+          _RATE_GAP and unw > 10.8)
     check(f'and weighting toward recombination brings it down BELOW it: $a^3\\to{w3:+.1f}\\%$, '
           f'$a^6\\to{w6:+.1f}\\%$, both under the paper\'s $10.8\\%$ and ordered $a^6<a^3$ --- '
           f'so the weight closes the gap FROM ABOVE, which is the direction the claim needs',
-          _RATE_GAP in p15 and w3 < 10.8 and w6 < w3)
+          _RATE_GAP and w3 < 10.8 and w6 < w3)
     check('⛭ and the figure these two checks were WRITTEN against is RETIRED, which is why neither '
           'could notice: `$9.4\\%$` left this paper at `r2755` as the error and is absent from the '
           'live body, while the OBSERVABLE `P15` now states is `moved by under a per cent` --- two '

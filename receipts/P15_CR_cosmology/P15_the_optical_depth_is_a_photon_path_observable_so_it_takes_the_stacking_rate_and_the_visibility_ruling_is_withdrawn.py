@@ -190,8 +190,13 @@ gate("⌗ and `P15` reports the one-parameter family and its external referent, 
      in body15)
 gate("⌗ and that the sky's own value lies OUTSIDE that family, at `f = -0.304`, on the far side of the "
      "clock the transfer uses -- so the family was never going to settle it",
-     "The sky's $0.7312$ lies at $f=-0.304$ on that same straight line---outside the family, on the "
-     "far side of the clock the transfer already uses" in body15)
+# ⬭⬭ r7255+cc66.172 WIDTH RE-CUT PERFORMED, family Ⓑ.  The pin asserted a whole SENTENCE to
+#   carry a claim that is a VALUE paired with its anchor.  ** The pattern now reads the value and
+#   requires its anchor within a bounded window, so the connective prose between them is free. **
+#   ⌗ Here BOTH halves are values, so the window carries no prose at all: `$0.7312$` and
+#     `$f=-0.304$` are each unique in the corpus and the claim is their PAIRING.  Fully
+#     reword-immune.  One match, verified before performing.
+     re.search(r'\$0\.7312\$.{0,60}?\$f=-0\.304\$', body15) is not None)
 
 # ===================================================== B. the narrowing
 head("B.  ⛭⛭ THE NARROWING: `tau'` IS THE SAME EXPRESSION IN BOTH CLOCKS, SO ONLY `t(a)` IS AT ISSUE")

@@ -54,6 +54,7 @@ import io
 import os
 import sys
 
+import re
 import numpy as np
 import sympy as sp
 
@@ -151,7 +152,14 @@ head('C.  THE PAPER\'S THREE FIGURES SIT ON TWO BRANCHES, AND THE FIRST CANNOT O
 v1, v2 = np.sqrt(rH2(0.1)) / ref, np.sqrt(rH2(1e-3)) / ref
 #: the first figure WITH its radius is the clause; `'$19.6$ at'` was a truncated second arm that
 #: would survive its own radius being reworded, so it is dropped rather than baselined.
-_F = '$1.96$ at $\\lvert r\\rvert=0.1\\,\\alpha$' in b15
+# ⬭⬭ r7255+cc66.172 WIDTH RE-CUT PERFORMED, family Ⓑ.  The pin asserted a whole SENTENCE to
+#   carry a claim that is a VALUE paired with its anchor.  ** The pattern now reads the value and
+#   requires its anchor within a bounded window, so the connective prose between them is free. **
+#   ⌗ AND THIS ONE IS FULLY REWORD-IMMUNE, because its anchor is a SYMBOL: `0.1\,\alpha`.  The
+#     receipt's own comment beside it said the radius is `the load-bearing half`, and that is
+#     exactly why -- a value paired with a SYMBOL has no prose left to reword.
+#   ⌗ Verified before performing: one match in the papers; `$1.96$` is unique in the corpus.
+_F = re.search(r'\$1\.96\$.{0,40}?0\.1\\,\\alpha', b15) is not None
 gate(f"⓹ the paper's `1.96` and `19.6` reproduce on the POSITIVE branch as {v1:.4f} and {v2:.4f}, "
      f"normalised at the seam -- located in the current source",
      abs(v1 - 1.96) < 0.01 and abs(v2 - 19.6) < 0.1 and _F)
