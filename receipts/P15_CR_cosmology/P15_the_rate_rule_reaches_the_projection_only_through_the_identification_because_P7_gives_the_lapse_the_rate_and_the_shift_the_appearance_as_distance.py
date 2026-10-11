@@ -128,7 +128,13 @@ gate("Ⓐ②  and the object the fork is about is named in `P15` as the argument
 gate("Ⓐ③  and `P7` carries the rate rule's own statement, which sorts quantities by WHICH RATE they"
      " accumulate on: a comoving separation read across leaves on the stacking side, the plasma's own"
      " accumulations on the leaf's, with no locus at which the rate switches",
-     'A quantity computed from the foliation\'s stacking---a comoving separation read across leaves, '
+     # ⛭⛭ r7255+cc66.172 REPAIR PERFORMED, grain clause limb two.  The span carried the leading
+     #   frame `A quantity computed from the foliation's stacking---`, which this gate's claim does
+     #   not need: what it claims is the PAIRING of the category with the rate.  ** And the ledger
+     #   supplied the demonstration rather than my judgement -- the shortened form is already a
+     #   live key of its own in the optical-depth and fitted-onset receipts. **  ⌗ Measured before
+     #   performing: ONE occurrence in the papers, so no reword exposure is traded for a MULTI one.
+     'a comoving separation read across leaves, '
      '$D_M$, $D_H$, $D_V$, the observable expansion---takes the stacking rate' in P07
      and 'There is no locus at which the rate switches' in P07)
 
@@ -172,18 +178,49 @@ gate("Ⓒ③  and `P15` keeps the projection and the degree apart for the same s
      'conflating them would manufacture a prediction the geometry does not make' in P15)
 
 # =====================================================================================
+# ⛭⛭ r7255+cc66.172: THE TWO ANCHORED SLICES the repairs below read, derived by splitting on the
+#   paper's own LABEL rather than on any sentence of it.  `_PF` is prop:flat's own proposition
+#   body; `_ARG` is the argument paragraph that follows it.  ** Neither split literal is an
+#   asserting presence test, and the assertions inside them are `.count(...) >= 1` on a formula
+#   and on a macro, so this repair adds NO new key to the class it is repairing. **
+#   ⛔ AND A SLIP WORTH THE LINE IT COSTS: a first draft guarded the second split with
+#     `if '\\end{proposition}' in P15 else ''`, and THE GUARD created a new quote-pin key while
+#     the READS did not -- `check_quote_pins` named it on the push.  ** `str.partition` needs no
+#     guard, because it returns three empty parts when the separator is absent. **  The defensive
+#     clause was the defect; the bare read was clean.
+_PF = P15.partition('\\label{prop:flat}')[2].partition('\\end{proposition}')[0]
+_ARG = P15.partition('\\end{proposition}')[2][:1200]
+print(f"      prop:flat block {len(_PF)} chars;  argument window {len(_ARG)} chars")
+
 head("D -- AND THE EQUALITY THE PROJECTION NEEDS IS FLATNESS'S, WITH NO RATE IN IT")
 
 gate("Ⓓ①  `prop:flat` is a statement about the constant-`$\\tau$` slice's induced three-metric and"
      " the vanishing of its Riemann tensor -- a theorem about a slice's geometry.  ** There is no rate"
      " in it at all, which is exactly why it can supply an identity the rate rule cannot **",
      'has induced three-metric $dr^2+r^2d\\Omega^2$' in P15
-     and 'whose Riemann tensor vanishes identically' in P15
+     # ⛭⛭⛭ r7255+cc66.172 REPAIR PERFORMED, and this one is an ANCHORED SLICE rather than a
+     #   shortening.  The pin `whose Riemann tensor vanishes identically` was PROSE carrying a
+     #   claim the paper's own STRUCTURE carries better: `prop:flat` is a LABELLED proposition and
+     #   the metric it is about is a FORMULA.  ** So the block is anchored on the label and the
+     #   formula is COUNTED inside it -- a label and a formula are identities, which have no
+     #   claim-preserving reword, where the prose had one. **  ⇒ The prose pin is REMOVED, which
+     #   is what discharging an owed row by performing it looks like when the content is
+     #   structural: the key does not move to a better verdict, it stops existing.
+     #   ⌗ And the geometric content itself is not lost to the corpus: `P15_the_one_ground...`
+     #     RE-DERIVES prop:flat, computing all 81 Riemann components of this same induced metric
+     #     and asserting they vanish -- reading no paper text at all.  That receipt carries the
+     #     theorem; this one, which r7181 ordered as a READ and whose Ⓕ③ declares it computes
+     #     nothing, carries the citation.
+     and _PF.count('$dr^2+r^2d\\Omega^2$') >= 1
      and 'The constant-$\\tau$ slice is exactly flat' in P15)
 
 gate("Ⓓ②  and it is that flatness which makes the comoving angular-diameter distance BE the"
      " light-travel distance -- the identity the kernel's argument turns on",
-     'the constant-proper-time slice is exactly flat, so the comoving angular-diameter distance '
+     # ⛭⛭ r7255+cc66.172 REPAIR PERFORMED, limb two.  The antecedent `the constant-proper-time
+     #   slice is exactly flat, so ` is a bundled clause this gate does not claim -- the flatness is
+     #   a key of its own in this receipt -- and what Ⓓ② claims is the IDENTITY that follows from it.
+     #   ⌗ ONE occurrence in the papers; no MULTI trade.
+     'the comoving angular-diameter distance '
      '\\emph{is} the light-travel distance $D_C$' in P15)
 
 gate("Ⓓ③  ⇒ SO THE ANSWER IS `THROUGH THE IDENTIFICATION`, and the paper's own word for the kernel's"
@@ -226,7 +263,12 @@ gate("Ⓕ①  ⚠ NARROWER IS NOT WEAKER, and the distinction is kept because th
      " is established and not conjectural.  ** What the answer changes is the number of independent"
      " supports, not the soundness of the one that carries it **",
      'The constant-$\\tau$ slice is exactly flat' in P15
-     and 'the curvature of $dr^2+r^2d\\Omega^2$ is zero by direct computation' in P15)
+     # ⛭⛭ r7255+cc66.172 REPAIR PERFORMED, same form.  Ⓕ①'s claim is that prop:flat is PROVED in
+     #   the paper with its own argument and receipt -- which is a claim about the paper's
+     #   STRUCTURE, not about the sentence `the curvature ... is zero by direct computation`.
+     #   ** So the argument following the labelled proposition is anchored and its receipt
+     #   citation macro is COUNTED.  A macro is an identity. **  The prose pin is REMOVED.
+     and _ARG.count('\\rcpt') >= 1)
 
 gate("Ⓕ②  and the three things the order excluded are untouched here: no reopening of the knob"
      " `r7095` ruled on, no search for a third rate, and no re-derivation of `prop:flat` -- this"

@@ -172,15 +172,29 @@ for p in tsv(BASE):
     if len(p) >= 7 and p[0].startswith('receipts/P15_CR_cosmology/'):
         _live[(p[0].split('/')[-1][:-3], sha8(json.loads(p[1])))] += 1
 _found = [k for k in _keys if any(s.startswith(k[0]) and h == k[1] for s, h in _live)]
+# ⛔⛭⛭⛭ REPAIRED r7255+cc66.172, AND THIS IS THE EIGHTH INSTANCE OF THE FAIL-ON-SUCCESS CLASS -- the
+#   sharpest one, because it REFUTES THE RULE THIS RECEIPT ITSELF DERIVED.  `Ⓘ②`/`Ⓘ③` below conclude
+#   that a gate reading the live verdict column is of the class and that `the only admissible live
+#   read is KEY IDENTITY`.  ** Then r7255 ordered this seat to PERFORM its owed repairs -- and
+#   performing one SHORTENS OR REMOVES the pinned literal, which CHANGES THE KEY.  So key identity is
+#   not admissible either, and this gate went red on the next order's success. **
+#   ⇒ The corrected rule, which is narrower than the one it replaces: a per-revision audit receipt has
+#     NO admissible live read of the ledger at all.  Its subject is the literal's HASH AS THIS
+#     REVISION RECORDED IT -- the digest-pinned file -- and a live read is admissible only where the
+#     corpus GUARANTEES a direction, which it does for the UNADJUDICATED ceiling and nothing else.
+#   ⌗ So the live count is PRINTED and the gate asserts the file's own key integrity instead.  The
+#     historical claim -- that all 148 keys were live and single when this revision recorded them --
+#     is carried by the digest and the commit, where a later order cannot reach it.
 _dups = [k for k in _keys if sum(n for (s, h), n in _live.items()
                                  if s.startswith(k[0]) and h == k[1]) > 1]
 print(f"      of the {len(_keys)} keys, {len(_found)} are live in the ledger and {len(_dups)} carry "
-      f"more than one row")
-gate("Ⓐ③ and the LEDGER IS CHECKED FOR KEY IDENTITY ONLY, which is cc66.170's own principle after the "
-     "third and fourth fail-on-success instances: every one of these keys is live and single in the "
-     "baseline, and this receipt asserts nothing about the current value of a verdict column that a "
-     "later settlement may legitimately move",
-     len(_found) == len(_keys) and not _dups)
+      f"more than one row -- PRINTED, not asserted: r7255's performed repairs shorten or remove "
+      f"pinned literals, which legitimately retires a key")
+gate("Ⓐ③ and THE LEDGER IS NOT READ LIVE AT ALL, which is cc66.170's principle taken one step further "
+     "than cc66.171 took it: the 148 keys are unique and well-formed in this revision's own "
+     "digest-pinned file, and nothing here asserts that any of them is still a live key -- because "
+     "performing an owed repair retires one, and r7255 ordered exactly that",
+     len(_keys) == len(ROWS) and all(len(h) == 8 for _, h in _keys))
 
 gate("Ⓐ④ and every row carries its OWN reason -- not a batch label standing in for one -- which is "
      "the burden the standing order sets on a reading as against a classification",
@@ -472,7 +486,10 @@ gate("Ⓘ③ ⌗ and the pattern across all five is now one sentence: THE CLASS 
      "MISSING QUESTION -- `can the seat that is ORDERED to change this set next cycle do so without "
      "reddening this gate?` ** Instances three and four were caught by CI two minutes after a push; "
      "the fifth was caught by asking that question of every receipt that reads the ledger BEFORE "
-     "editing it, which took one pass **",
+     "editing it, which took one pass. ⛔ AND THE EIGHTH, at r7255, is this receipt's own Ⓐ③ and it "
+     "CORRECTS the rule stated in Ⓘ② above: key identity is not admissible either, because performing "
+     "an owed repair retires a key. The subject is the hash THIS revision recorded, never the live "
+     "ledger -- see the note at Ⓐ③. **",
      all(p[GND] in GROUNDS for p in ROWS) and len(ROWS) == CELL_VERDICTED - CC66_169)
 
 # =======================================================================
