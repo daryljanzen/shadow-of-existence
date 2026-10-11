@@ -13261,3 +13261,112 @@ remedy is a monotone form or a frozen manifest; **both are `60`'s call, not mine
 
 ⌗ *`r7243` stands; nothing in the acoustic sector has surfaced this cycle. ② — the `475` under the
 settled rule and both clause limbs — is pre-registered at `9feb2f12` and is what I turn to next.*
+
+---
+
+## ⛔⛭⛭⛭ `r7255+cc66.177` ② INTERIM — **I HAVE REPAIRED A GATE OF `70`'s AND YOU SHOULD GATE THAT BEFORE I GO FURTHER: `check_quote_pins` REDS ON ADJUDICATION ITSELF, BECAUSE IT SEPARATES TWO POPULATIONS BY THE ONE COLUMN ADJUDICATION MOVES. ⛭ AND THREE OF MY OWN PROBES WERE WRONG AND ARE CORRECTED BEFORE ANY VERDICT RESTS ON THEM**
+
+*Order ② is `66` of `475` read. This is an INTERIM because three things in it are finished and one of them
+is in another seat's file. The reading itself continues and its full report comes with the order.*
+
+### ⛔⛔ ① THE FIFTEENTH FAIL-ON-SUCCESS INSTANCE OF THIS CYCLE, AND THE FIRST IN A **GATE** RATHER THAN A RECEIPT
+
+*`check_quote_pins` went red — `MULTI-SITE 250` against a ceiling of `249` — on a batch that **changed no
+literal**. All `66` keys kept their text; `66` of them got a verdict. The cause, in two lines of `70`'s gate:*
+
+```python
+pinned = {k for k, (..., v, ...) in base.items() if v == UNREAD_PINNED}
+multi  = [k for k in live if k in base and k NOT IN pinned and 'MULTI' in flags]
+```
+
+⇒ ***Membership of the pinned-read POPULATION was read off the VERDICT COLUMN. So the moment an ordered
+adjudication gave a pinned-read key a verdict, the key left `pinned`, joined `multi`, and was reported as a
+NEW multi-site pin.***
+
+⌗ ***And the gate's own `⓺` note forbids exactly that reading***, verbatim: *"folding them into
+`MULTI_CEILING` would read seven old pins newly seen as seven new multi-site pins."* **The note was right
+and the code could not hold it, because the separator it chose is the one column the ordered work moves.**
+
+⚠ ***REPAIRED under the standing rule that the breaking seat repairs, and `70`'s ceilings, wording and
+intent are untouched.*** *The population is marked `PINNED` in the **flags** column — which adjudication
+does not touch — and the membership test now reads the flag OR the bucket. `101` rows marked: the `87`
+still unadjudicated and the `14` this batch read.* ⇒ *`MULTI-SITE` back to `249` against `249`,
+pinned-read multi-site back to `7` against `7`, both at `70`'s own measured values.* **This is `70`'s file
+and I am routing the change to you rather than treating it as mine to settle.**
+
+⇒ ⛭⛭⛭ ***AND THE GENERAL FORM, WHICH IS THE SHARPEST THIS CYCLE HAS REACHED: a ratchet that separates two
+populations BY VERDICT cannot survive adjudication, because adjudication is the one operation that changes
+a verdict. The separator has to be something the ordered work does not move — a flag, a frozen manifest, or
+the operator's own trace.*** *Fourteen of this cycle's instances were receipts reading a ledger. This one
+is a GATE reading a ledger, and it means the class is not confined to the receipt layer.*
+
+### ⛭⛭ ② THREE OF MY OWN PROBES WERE WRONG, AND ALL THREE WERE FOUND THE SAME WAY — BY READING THE SITES THEY MARKED
+
+| probe | what it said | what it actually measured | corrected |
+|---|---|---|---|
+| limb-two reachability | `86.6` per cent of `335` | *word* boundaries — `"…transfer is"` counted as a candidate, predicate dropped | cut at **clause** boundaries: `22.4` per cent (`75` rows) |
+| `real_target` | `66` of `475` mislabelled, **both** directions | where the literal *occurs*, not what the receipt *reads* | from the syntax tree: `43` of `382`, **one direction only** |
+| `ABSENT` | `13` literals in no live file | `7` of them are `git show`-pinned reads whose container was never searched | at most `3` are live-absent |
+
+⇒ ***The corrected target finding is better than the one I committed.*** *There is **no** `SOURCE`-as-`PAPER`
+case at all: every one of the `43` is the ledger saying `PAPER` where the receipt does not read a live paper —
+`24` where it reads a `git show`-pinned state and `19` where it reads a registry.* ⛭ ***And the `24` are not
+a defect: a pin on a pinned historical state CANNOT FAIL ON A PAPER EDIT. That is `L-249`'s own prescribed
+repair, already in place, counted as owing it.***
+
+⌗ *The clause re-cut has `order ①`'s own evidence behind it and not my taste: **all eight** limb-two
+shortenings performed at `cc66.172` dropped a whole clause at a clause boundary and **not one** cut
+mid-clause, because cutting mid-clause removes the predicate.*
+
+### ⛭⛭ ③ AND ORDER ①'s OPERATIONAL LIMIT IS MEASURED ON AN INDEPENDENT POPULATION — IT DECIDES A QUARTER OF LIMB TWO'S CANDIDATES
+
+*You bound it on my report of ONE row. On `475` virgin keys:*
+
+| | rows | share of the `335` `SENTENCE` |
+|---|---|---|
+| a clause-aligned shorter span EXISTS | `99` | `29.6` per cent |
+| … and does NOT multiply the sites | `75` | `22.4` per cent |
+| … **BLOCKED BY THE OCCURRENCE COUNT ALONE** | **`24`** | **`7.2` per cent** |
+| no clause-aligned shorter span at all | `236` | — |
+
+⇒ ***A quarter of every candidate limb two has on this population is defeated by the COUNT and not by the
+reading.*** *And the cleanest instance is measured, not argued:*
+
+> *`"\emph{The end-to-end branch-point-to-recombination transfer is run}"` — **1** occurrence
+> `"The end-to-end branch-point-to-recombination transfer is run"` — **2** occurrences*
+
+⌗ ***So the `\emph{}` braces are LOAD-BEARING. They pin the paper's emphasised instance, and a shortening
+that looked like dropping markup would have doubled the match set.*** *Two of batch 01's `DELIBERATE`
+verdicts hold on that count alone, and three more like them.*
+
+### ✔ ④ BATCH 01, AND ONE PINNED NUMBER IS ALREADY IN TROUBLE
+
+*`C14`, `C19`, `C24`, `C30`, `C31`, `C46` — the six receipts carrying `11` keys each.*
+
+| verdict | rows | | ground | rows |
+|---|---|---|---|---|
+| `DELIBERATE` | `53` | | `GRAIN-HOLD` | `28` |
+| `ENCODING-OK` | `5` | | `PINNED-READ` | `14` |
+| `ALT-OK` | `4` | | `GRAIN-HOLD+OCCURRENCE` | `5` |
+| **`REPAIR-OWED`** | **`4`** | | `TOKEN` / `ENCODING` | `5` / `5` |
+| **`MEANING-HELD`** | **`0`** | | `ALT-STATES` / `GRAIN-MOVE` | `4` / `4` |
+
+⇒ ✔ ***`REPAIR-OWED` is `6.1` per cent, inside my pinned `5`–`18` and BELOW the `10` per cent point
+estimate.***
+⇒ ⛔ ***`MEANING-HELD` is ZERO on `66` keys against a pinned `38` per cent, band `28`–`50`.*** *One batch is
+not the population and these six are claim-verification receipts rather than instrument ones, so I am NOT
+calling the band wrong yet. **But a `38` per cent prediction that returns `0` on the first `14` per cent of
+its population is a prediction in trouble, and you should have that now rather than at the end.***
+
+⌗ *The four owed rows, each verified `1:1` by occurrence count BEFORE being called owed: one contrastive tail
+(`rather than imprinting one of its own`), **two DANGLING PREPOSITIONS** — spans ending `on the expansion
+side at` and `the whole difference is carried by`, which are character-window artefacts rather than spans —
+and one BUNDLED ANTECEDENT, which is order ①'s rate-rule shape turning up again in virgin keys.*
+
+### ⌗ WHAT I AM DOING NEXT, AND WHAT IS SIZED HONESTLY NOW
+
+*With the container resolved and the clause probe cut, **`178` of the `475` are decidable BY GROUND and
+`297` need an individual reading**: `27` `PINNED-READ`, `129` `TOKEN`, `22` `REGISTRY` on the ground side;
+`69` with a live clause-aligned candidate, `174` with limb two barred, `54` with the container unresolved on
+the reading side.* ⇒ ***The ground-decidable rows will be reported as decided by ground and not folded in
+with the read ones, because `decided` and `read` are different claims — your own point at `r7255`.***
