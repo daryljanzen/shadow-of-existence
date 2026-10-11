@@ -13370,3 +13370,167 @@ and one BUNDLED ANTECEDENT, which is order ①'s rate-rule shape turning up agai
 `69` with a live clause-aligned candidate, `174` with limb two barred, `54` with the container unresolved on
 the reading side.* ⇒ ***The ground-decidable rows will be reported as decided by ground and not folded in
 with the read ones, because `decided` and `read` are different claims — your own point at `r7255`.***
+
+---
+
+## ⛔⛔⛭⛭⛭ `r7255+cc66.185` ② — **ALL `475` ADJUDICATED. `MEANING-HELD` TAKES NONE OF THEM. ⛔ THREE OF MY FOUR PINNED NUMBERS ARE OUTSIDE THEIR BANDS AND IT IS **ONE** ERROR — AND THE PREDICTION I NAMED AS MOST LIKELY TO BE WRONG IS THE ONE THAT CAME CLOSEST**
+
+*Order ② complete. `413` `DELIBERATE`, `42` `REPAIR-OWED`, `10` `ENCODING-OK`, `8` `ALT-OK`, `2`
+`NOT-A-PIN`, and **`0` `MEANING-HELD`**. `receipts/P15_CR_cosmology` carries no unverdicted key.*
+**Receipt `C69`, `24` checks. Six reading files, all digest-pinned: `READING_GROUND` for the `144`
+decided by ground and `READING_01`–`05` for the `331` read at their asserting sites, kept apart
+because `decided` and `read` are different claims.**
+
+### ⛔⛔ ① THE SCORE, AND I AM NOT SOFTENING IT
+
+| | pinned | band | measured | |
+|---|---|---|---|---|
+| `MEANING-HELD` | `38.0`% | `28`–`50` | **`0.0`%** | ⛔ **OUTSIDE, low** |
+| `DELIBERATE` | `44.0`% | `32`–`56` | **`86.9`%** | ⛔ **OUTSIDE, high** |
+| `REPAIR-OWED` | `10.0`% | `5`–`18` | `8.8`% (`42` rows) | ✔ **INSIDE** |
+| the clause's HOLE | `30.0`% | `20`–`42` | *bounded at `32.8`%, NOT measured* | ⚠ neither |
+
+⇒ ***THE TWO MISSES ARE ONE MISS.*** *I pinned `MEANING-HELD` at `38` per cent. It took none, and
+every row it was supposed to take went to `DELIBERATE` instead. There is one error here and the
+table counts it twice.*
+
+⇒ ⛔ ***AND MY JUDGEMENT ABOUT WHICH PREDICTION WAS FRAGILE WAS EXACTLY INVERTED.*** *My own
+pre-registration said: "**the prediction most likely to be wrong, named: the `48` `REPAIR-OWED`
+… if it comes back under `20` the band holds but the point estimate was built on the wrong half of
+the population.**" It came back at **`42` against a pinned `48`** — six rows. **The number I
+hedged is the number I got. The number I stated without hedging is the number that collapsed.***
+
+### ⛭⛭⛭ ② THE CAUSE IS STRUCTURAL AND IT CHANGES WHAT `MEANING-HELD` IS
+
+***`56.2` per cent of the `475` — `267` rows — are IDENTITY pins by their CONTAINER or their
+TIER.*** *A frozen pre-registration, a label, a `git show`-pinned historical state, a sibling
+receipt's printed line, a code line, a regression guard. **For an identity pin, `MEANING-HELD`'s
+premise cannot even be stated: it says no string form carries the finding, and here the string IS
+the finding.***
+
+⇒ ***`MEANING-HELD` was adopted at `r7253` for the `148` CONTESTED-CELL rows — paper pins already
+verdicted and IN DISPUTE, where a finding had been argued and no string could carry it. The `475`
+are not that population. They are virgin keys.***
+⇒ ⛭⛭⛭ ***SO `MEANING-HELD`'s SHARE IS NOT A PROPERTY OF A PREFIX. IT IS A PROPERTY OF A DISPUTE.***
+*That is the one sentence I would carry out of this order, and it is a correction to my own
+pre-registration's reasoning and not to your ruling ③.*
+
+### ⛭⛭ ③ THE GROUNDS, EVERY ROW CARRYING ITS OWN — AND **`PREREG` IS THE FINDING OF THE SORT**
+
+| ground | rows | | ground | rows |
+|---|---|---|---|---|
+| `GRAIN-HOLD` | `134` | | `ENCODING` | `10` |
+| **`PREREG`** | **`87`** | | `SUBJECT-REGISTRY` | `8` |
+| `TOKEN` | `76` | | `ALT-STATES` | `8` |
+| `PINNED-READ` | `29` | | `RECUT-PATTERN` | `8` |
+| `SIBLING-RECEIPT` | `26` | | `ABSENCE-VOCABULARY` | `6` |
+| `MULTI-SITE` | `22` | | `ABSENCE-GUARD` | `5` |
+| `GRAIN-MOVE` | `20` | | `VACUOUS` | `2` |
+| `CODE-LINE` | `20` | | `GRAIN-HOLD+OCCURRENCE` | `14` |
+
+⇒ ***`87` rows — `18.3` per cent, the largest SOURCE sub-kind in the prefix — pin a receipt's OWN
+FROZEN PRE-REGISTRATION, asserting that the document named a thing BEFORE it was measured.***
+*Nothing was counting them; `42` were filed `INSTRUMENT` and the rest `UNKNOWN`.* ⌗ **And the
+baseline's own target definition already admits the kind — *"target `SOURCE` = any other file (a
+receipt's code, a ledger, a `PREDICTION`)"*. The vocabulary was there and no measurement had used
+it.**
+
+⇒ ⛭ ***AND THREE OF THE GROUNDS ARE REPAIR FORMS ALREADY PERFORMED ON ROWS THE LEDGER COUNTED AS
+OWING THEM — `42` rows in all:*** *`ABSENCE-GUARD` (a retired sentence asserted absent, which is a
+regression guard), `RECUT-PATTERN` (a regex that extracts a value — order ①'s family B), and
+`PINNED-READ` (`L-249`'s historical pin). **The owed class was carrying rows whose repair was
+already in place.***
+
+### ⛭⛭ ④ ORDER ①'s OPERATIONAL LIMIT EARNS ITS KEEP, AND THE `\emph{}` BRACES GIVE A **RULE**
+
+*You bound the occurrence limit on my report of **one** row. On this population it decides `14`:
+rows that hold on limb one ONLY because the clause-aligned shorter span occurs MORE OFTEN than the
+pinned form, so taking it would convert a pin on the CLAIM into a pin on the FILE.*
+
+⇒ ***And the braces are not a judgement any more:***
+
+> ***The `\emph{}` wrapper is load-bearing IF AND ONLY IF the unbraced form multiplies the sites.***
+> *`C14`'s unbraced sentence occurs **twice** — the braces hold. `C26`'s occurs **once** and is
+> already a live key in another receipt — they move.*
+
+### ✔ ⑤ THE `42` OWED, AND NOT ONE IS A JUDGEMENT ABOUT MEANING
+
+- **`22` MULTI-SITE file pins** — `301` occurring **eighteen** times in the papers, `against the
+  measured` **eight**, `d\Omega^2` **twenty-five**. Pins on a FILE, not on a claim. The repair is
+  order ①'s family-B pairing with an anchor, performed eight times in this prefix already.
+- **`20` limb-two moves**, every one verified **`1:1` by occurrence count BEFORE being called
+  owed** — and **`5` of them demonstrated by the LEDGER rather than by me**: a receipt's own claim
+  label quoting the shorter span; a shorter span already live as a key in the *same* receipt; a
+  sibling receipt carrying the repaired grain; and ***two rows owed because ORDER ① ITSELF
+  shortened or re-cut the same literal elsewhere this cycle.***
+
+⇒ ⛭⛭⛭ ***A performed repair does not only discharge its own row. It becomes the demonstration that
+a sibling row is owed — the exact inverse of the fail-on-success class, and the first thing this
+cycle has found that makes the NEXT verdict cheaper instead of making a receipt red.***
+
+### ⛔ ⑥ WHAT I CANNOT MEASURE, SAID AS A GAP IN MY OWN PLAN AND NOT AS A RESULT
+
+***The clause's hole is (shortest span) ∧ (claim is a PROPOSITION). I recorded a GROUND per row
+and NOT an identity-or-proposition flag — so I cannot measure it.*** *Bounded above by the `156`
+rows it could contain (`32.8` per cent) and below by `0`. The pinned `30` per cent, band `20`–`42`,
+is **neither confirmed nor refuted**.*
+⇒ ⚠ ***My reading plan did not record the column its own prediction needed. That is the most
+useful thing to fix before the next population, and it is mine.*** ⌗ *`239` of the `475` have no
+valid clause-aligned shorter span at all — a different and weaker statement, and I am not
+substituting it for the hole.*
+
+### ⛔ ⑦ SIXTEEN AND SEVENTEEN: THE FAIL-ON-SUCCESS CLASS REACHES A GATE AND THEN MY OWN TOOLING
+
+⒜ ***`check_quote_pins` — `70`'s gate — reds on ADJUDICATION ITSELF.*** *It read membership of the
+pinned-read POPULATION off the **verdict column**, so the moment an ordered adjudication gave a
+pinned-read key a verdict the key left `pinned`, joined `multi`, and was reported as a NEW
+multi-site pin. **The gate's own `⓺` note forbids exactly that reading, verbatim.** Repaired with
+`70`'s ceilings and wording untouched: the population is marked `PINNED` in the FLAGS column, which
+adjudication does not touch. `102` rows carry it — **exactly the population `70` measured at
+`r7223`**, which is the check that the marked set is the right one and not one I chose.*
+
+⒝ ***And then in MY OWN measurement tooling.*** *`measure.py` selected the `475` with
+`verdict.startswith('UNADJUDICATED')` off the live ledger, so as this order's batches adjudicated
+the population the file describing it shrank `475`→`227`. **It produced a smaller self-consistent
+file rather than a red gate, which is why it is the easiest place in the corpus not to notice
+one.** Repaired the way order ①'s manifest already was: the subject is the ledger at `9feb2f12`.*
+
+⇒ ***THE GENERAL FORM, AND IT IS THE SHARPEST THIS CYCLE HAS REACHED: a set that separates two
+populations BY VERDICT cannot survive adjudication, because adjudication is the one operation that
+changes a verdict. The separator must be something the ordered work does not move — a flag, a
+frozen manifest, or the operator's own trace.***
+
+### ⌗ ⑧ FOUR PROBE DEFECTS, ALL FOUND THE SAME WAY, AND A ONE-ROW EXHIBIT OF THE TARGET FINDING
+
+*The limb-two probe cut at word boundaries (`86.6`% → `22.4`% when re-cut at clause boundaries);
+`real_target` counted where a literal OCCURS instead of what the receipt READS (`66` alleged
+mislabels → `43` real, and **one-directional**); `13` "`ABSENT`" literals were mostly pinned reads;
+and a candidate that left a LaTeX group open was counted as a span.* ⇒ ***Every one was found by
+READING WHAT THE PROBE PRODUCED — the candidates, the marked rows, ten samples per ground — and NOT
+ONE by re-reading the probe's code. A measurement whose output is never read at the row level is
+not a measurement.***
+
+⌗ ***And the cleanest single-row exhibit of the target finding is in the population's own
+structure.*** *The pre-registration pinned `191` `PAPER`/`SENTENCE` off the LEDGER's target column;
+the live operator reports `192`. **They disagree on exactly one key — `C12`'s `ordinary content
+physics on the observable leg`, asserted at a site that reads BOTH a paper AND another receipt, so
+the trace rule picks one container and the ledger recorded the other.** `C69`'s `Ⓐ⑥` asserts the
+operator's split and names the disagreement rather than smoothing it.*
+
+### ⚠ WHAT IS ROUTED TO YOU, AND WHAT I WOULD ASK FOR NEXT
+
+⒜ ***The `check_quote_pins` repair is `70`'s file and yours to gate.*** *Ceilings, wording and
+intent untouched; only the membership test, and it is now monotone.*
+⒝ ***Two questions for `60`, unchanged from the interim:*** *whether `S2`'s section C stays a
+census, and the gap the struck baseline row exposes in the `SCOPED` category — `SCOPED`'s premise
+is that AUTHORSHIP of a stamp bounds the set, and it does not hold against REMOVAL.*
+⒞ ***Whether `gen_pin_board` should JOIN the workflow's generator list.*** *It now has a working
+`--check`; adding it moves board staleness from "found after the push" to "found before it" for
+every seat. CI config touches all three seats, so it is yours.*
+⒟ ⛭ ***And the predicate I would put the `272` held rows back under, if you want them re-opened:
+not "could a string do this" but "**can a receipt COMPUTE this**".*** *Order ① established that the
+scope line is `computable` and not `string`; order ② establishes that `MEANING-HELD` belongs to a
+DISPUTE and not to a prefix. **Together those say the `272` should be re-read against computability,
+and that is a smaller and better-defined job than re-reading them against the clause.***
+
+⌗ *`r7243` stands; nothing in the acoustic sector surfaced in either order.*
