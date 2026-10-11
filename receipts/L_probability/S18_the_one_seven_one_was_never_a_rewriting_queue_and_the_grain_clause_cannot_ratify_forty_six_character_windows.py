@@ -77,6 +77,11 @@ def tsv(n):
             if l.strip() and not l.startswith('#')]
 
 
+def _git(*a):
+    return subprocess.run(('git',) + a, cwd=ROOT, capture_output=True, text=True,
+                          errors='replace').stdout
+
+
 CONV, EXT, HAND = tsv('CONVERSION.tsv'), tsv('EXTENDED_ALIGNMENT.tsv'), tsv('HAND_SAMPLE.tsv')
 STATS = json.load(open(os.path.join(D, 'STATS.json'), encoding='utf-8'))
 BASE = [r for r in (l.split('\t') for l in
@@ -104,11 +109,50 @@ gate(f"Ⓐ① the three published tables are read as DATA and their form is chec
 _bmap = {(r[0], r[1]): r[5] for r in BASE}
 _agree = sum(1 for r in CONV if _bmap.get((r[0], r[1])) == r[5])
 print(f"      conversion rows whose verdict the baseline now carries: {_agree} of {len(CONV)}")
-gate("Ⓐ② ⇒ AND THE LEDGER CARRIES WHAT THE TABLE SAYS: every one of the `171` rows has the verdict this"
-     " table gives it, and the prefix carries no unverdicted key.  ⌗ *Asserted LIVE here and not at a"
-     " pin, because this revision is the one that wrote them -- which is the distinction `r7253` made"
-     " when it repaired the same gate in the previous receipt*",
-     _agree == len(CONV) and not any('UNADJUDICATED' in r[5] for r in MINE))
+# ⛔⛭⛭⛭ REPAIRED r7258+60 BY `L-249`'s RULE, AND THE REASON IS THIS RECEIPT'S OWN SUBJECT ARRIVING
+#   AT ITS OWN GATE FOR THE SECOND TIME.  *The form above read `_agree == len(CONV)` LIVE, with a
+#   comment saying a live read was right `because this revision is the one that wrote them`.*
+#   ⇒ *** THAT REASON EXPIRED THE MOMENT A LATER REVISION PERFORMED THE REPAIRS THIS TABLE SAID WERE
+#       OWED. ***  `r7258` performed `6` of the `17` `REPAIR-OWED` rows, which RETIRES their keys --
+#       and a gate asserting that all `171` keys still carry their verdict is a gate that goes red on
+#       the work it asked for.  ** The same trap as `r7252`, in the same lane, third time written
+#       down: a receipt that reports a conversion must not pin the conversion's own liveness. **
+#   ⌗ So: the agreement is PINNED at the commit this table was written at, and the live state is
+#     asserted SEPARATELY and MONOTONELY -- and the monotone property is sharper than `L-249`'s
+#     generic one, because it says exactly what a repair may and may not do:
+#       ⓵ no row of the `171` may change VERDICT IN PLACE;
+#       ⓶ a row may only LEAVE, by having its pin repaired and its key retired;
+#       ⓷ and the prefix's owed count may only FALL.
+#     ** A silent re-verdict still turns this red.  Performing the repairs no longer does. **
+TABLE_PIN = '490ab69b'
+_pin_base = _git('show', f'{TABLE_PIN}:corpus/quote_pin_baseline.tsv')
+_pin_map = {(r[0], r[1]): r[5] for r in
+            (l.split('\t') for l in _pin_base.split('\n') if l.strip() and not l.startswith('#'))
+            if len(r) >= 7}
+_pin_agree = sum(1 for r in CONV if _pin_map.get((r[0], r[1])) == r[5])
+_live = {(r[0], r[1]): r[5] for r in BASE}
+_in_place = [r for r in CONV if (r[0], r[1]) in _live and _live[(r[0], r[1])] != r[5]]
+_retired = [r for r in CONV if (r[0], r[1]) not in _live]
+_owed_tbl = sum(1 for r in CONV if r[5] == 'REPAIR-OWED')
+_owed_now = sum(1 for r in MINE if r[5] == 'REPAIR-OWED')
+print(f"      at the pin {TABLE_PIN}: {_pin_agree} of {len(CONV)} agree;  live now: "
+      f"{len(_in_place)} changed IN PLACE, {len(_retired)} retired by repair;  "
+      f"owed {_owed_tbl} -> {_owed_now}")
+gate(f"Ⓐ② ⇒ AND THE LEDGER CARRIED WHAT THE TABLE SAYS AT THE COMMIT THE TABLE WAS WRITTEN AT, "
+     f"`{TABLE_PIN}`: every one of the `171` rows had the verdict this table gives it.  ⌗ *Pinned "
+     f"rather than read live, because a later revision performing the repairs this table calls owed "
+     f"must not redden the receipt that called them owed -- `L-249`'s rule, third time in this lane*",
+     _pin_agree == len(CONV))
+gate(f"Ⓐ②ᵇ ⇒ and the LIVE state is asserted separately and MONOTONELY, in the sharpest form the claim "
+     f"allows: ** NOT ONE of the `171` has changed verdict IN PLACE ** ({len(_in_place)}); every "
+     f"departure is a key RETIRED by a repair being performed ({len(_retired)}, all of them rows this "
+     f"table called `REPAIR-OWED`); the prefix's owed count only FALLS (`{_owed_tbl}` to "
+     f"`{_owed_now}`); and no key of the prefix is unverdicted.  ** A silent re-verdict still turns "
+     f"this red; performing the repairs no longer does **",
+     not _in_place
+     and all(r[5] == 'REPAIR-OWED' for r in _retired)
+     and _owed_now <= _owed_tbl - len(_retired)
+     and not any('UNADJUDICATED' in r[5] for r in MINE))
 
 _bylit = collections.defaultdict(set)
 for r in CONV:
@@ -278,11 +322,6 @@ gate("Ⓓ② ⛔ AND THE CLAUSE DECIDES THE MECHANICAL CASES AND NOT THE PROSE O
 
 # =====================================================================================
 head("E -- AND THIS CONVERSION RED A GATE OF THIS LINE'S OWN, FOR THE FOURTH TIME IN TWO CYCLES")
-
-
-def _git(*a):
-    return subprocess.run(('git',) + a, cwd=ROOT, capture_output=True, text=True,
-                          errors='replace').stdout
 
 
 # ⛔ ** AND THESE THREE GATES WERE QUOTE PINS ON THEIR FIRST FORM, WHICH THE OPERATOR CAUGHT BEFORE
