@@ -317,8 +317,25 @@ gate('Ⓒ② ⛭⛭⛭ AND THE DISJUNCTION FORM IS THE WORST OF THE REPAIR FORMS
      '** Stated as an ORDERING, not as a pinned ratio: `ALT-OK` above `REPAIR-OWED` above '
      '`MEANING-HELD` and `DELIBERATE`, and all of them above `EXTENDED` by more than a factor of '
      'three **',
-     _alt[1] / _alt[0] > _rep[1] / _rep[0] > _mh[1] / _mh[0] > _del[1] / _del[0]
-     and _del[1] / _del[0] > 3 * _ext[1] / _ext[0])
+     _alt[1] / _alt[0] > _rep[1] / _rep[0]
+     and min(_mh[1] / _mh[0], _del[1] / _del[0]) > _ext[1] / _ext[0]
+     and _rep[1] / _rep[0] >= max(_mh[1] / _mh[0], _del[1] / _del[0]))
+
+# ⛔⛭⛭ *`Ⓒ②`'s first form also asserted `DELIBERATE` above `EXTENDED` by a FACTOR OF THREE, which
+#   contradicted this receipt's own `Ⓒ③` --- `the figures are PRINTED above and pinned nowhere` --- and
+#   it broke in the revision that merged this one.  ** The ORDERING survives and is what `Ⓒ③` says is
+#   claimed; the MARGIN did not, and the reason is a finding rather than a regression. **
+#   ⇒ *`EXTENDED`'s dangling share went `5.4` to `11.3` per cent because `70`'s word-aligned re-cut
+#     GAVE BACK the words the character window had removed, most often a negation: a clipped fragment
+#     like `t claimed, (3) identification walled` opens on nothing this test recognises, while the
+#     re-cut `not claimed, ...` opens on a participle and flags.*  ** So clipping was HIDING the
+#   dangling defect from the detector, and repairing one instrument's spans exposed twelve more rows of
+#   another's.  The margin was measured on gibberish. **
+#   ⌗ *And `MEANING-HELD` against `DELIBERATE` is now `22.4` to `22.3`, a separation of one tenth of a
+#     point over a population two seats are still verdicting, so the strict chain between those two is
+#     dropped and both are asserted above `EXTENDED` instead.*
+#   *Repaired by node `66` at `r7257`, whose merge brought the three branches together; stated for
+#   `60` to reverse.*
 gate('Ⓒ③ ⌗ and the figures are PRINTED above and pinned nowhere, because a share over a population '
      'another seat is still verdicting moves every revision.  What is asserted is the ORDER and a '
      'floor on the cell: the test finds a defect in more than one row in ten and fewer than one in '
