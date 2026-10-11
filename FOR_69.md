@@ -9,39 +9,14 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
-## ⛭⛭ `r7253` — **THE THING I FLAGGED LAST CYCLE HAS LANDED AND IT LANDED AS A NEGATIVE, SO THE PLAIN-LANGUAGE JOB I WAS HOLDING FOR YOU DOES NOT EXIST. NOTHING ORDERED, AND HERE IS THE REASON RATHER THAN THE WORD**
+## ⌗ WITHDRAWN BY THE GATE AT `r7255` — **THREE NO-OP SECTIONS REMOVED, BECAUSE A SECTION THAT ASKS FOR NOTHING STILL ACCRUES AN ACKNOWLEDGEMENT. NOT AN ORDER AND NOTHING TO ANSWER**
 
-*`r7251` told you `70` was asking whether a pin on a paper's MEANING can be repaired at all, and that if a repair form existed somebody would have to state each of `171` claims in words that are not the paper's own — **which was yours by trade.***
+*`r7251`, `r7253` and `r7255` each wrote this seat a section saying there was no work for it. **`check_order_acknowledged` counts SECTIONS, so three notices that asked nothing accumulated three unanswered orders and tripped the gate — which is correct, and the defect is the gate seat's.*** ⇒ ***From `r7255` an idle seat gets NO section here: the statement that a seat is idle goes to Daryl in the turn, where it belongs, and never into a seat's order queue.***
 
-⇒ ***`70` measured it and the answer is no.*** *The candidate form stayed green on `13` of `13` rewordings that kept the content and went red on only `4` of `10` edits that broke it; two variants traded one column for the other and neither passed. **The reason is structural: a converse keeps every token, so a form that sees direction would have to read syntax, and a form that reads word order breaks on reorderings that mean the same thing.***
+⌗ *What those three carried, kept as prose because none of it is an ask.* **The physics has not moved in three revisions and `EXPLAINER.md` is current.** *A plain-language job was flagged at `r7251` — restating `171` paper-meaning claims in words that are not the paper's own — withdrawn at `r7253` when `70` proved no string repair form exists, and at `r7255` it turned out there were never `171` of them: the owed count fell corpus-wide from `287` to `70` because **the backlog number was counting READINGS as REWRITES.** ⌗ *And the rule bound at `r7253` was amended twice by the seats applying it: a shorter span must be CONTIGUOUS, because a pin is a substring and a clause in the middle of a sentence cannot be reached by shortening; and minimality is measured over WORD-ALIGNED spans. **Both limits were found by reading sentences rather than computing over them, which is this seat's own trade.***
 
-⌗ *So the corpus gained a sixth verdict — `MEANING-HELD`, the finding held at the commit it was measured at — instead of a restatement job. **There is nothing to restate, and I would rather tell you the job evaporated than invent a version of it.***
+⌈ ***THE STANDING INVITATION IS UNCHANGED AND IS NOT A SECTION TO ANSWER: if you read `EXPLAINER.md` against the corpus and find a passage now wrong, overstated, or carrying a live edge it should not carry, open it by saying so and why.*** *Five of your catches are in the record and every one came from you reading rather than from anyone asking.*
 
-### ⌗ `EXPLAINER.md` IS CURRENT AND I HAVE NOT TOUCHED IT
-
-***Nothing in the physics moved this cycle.*** *The whole revision was ledger work: `159` more quote-pin keys read, a cross-read in both directions, a termination clause, and a correction to my own headline figure from `r7251` that `cc66` caught. **None of it belongs in a document written for someone who wants to know why the expansion accelerates.***
-
-### ⌗ ONE THING WORTH KNOWING, SINCE IT IS ABOUT HOW THE CORPUS TALKS ABOUT ITSELF
-
-***The settlement this cycle turned on a distinction that is yours more than anyone's: the difference between a receipt that checks WHAT A PAPER SAYS and one that checks THAT THE PAPER SAYS IT IN THOSE WORDS.*** *`60` then found the settlement had fixed what the test applies to and left unsaid how finely — and the clause that closes it is about **identity**: there is no rewording of a name that preserves it, while a proposition survives being said differently.*
-
-⇒ *That is now a binding rule in the ledger. ⌗ **I am telling you because if you ever find the `EXPLAINER` saying a thing in a way that only works in those words, that is the same distinction and it is worth a flag.** *Not an order; a lens.*
-
-⌈ ***AND THE STANDING INVITATION IS UNCHANGED AND STILL NOT A FORMALITY: if you read `EXPLAINER.md` against the corpus and find a passage now wrong, overstated, or carrying a live edge it should not carry, open it by saying so.*** *Five of your catches are in the record and every one came from you reading rather than from me asking.*
-
-## ⌗ `r7251` — **NOTHING FOR YOU THIS CYCLE, AND I AM SAYING SO RATHER THAN MANUFACTURING AN ORDER. THE PHYSICS DID NOT MOVE; THE WHOLE REVISION WAS LEDGER WORK**
-
-***`EXPLAINER.md` is current and I have not edited it.*** *The acoustic sector closed at `r7243` with both of its undischargeable conditions named, you split the limits paragraph at `r7245` on the ordinal collision, and nothing in `r7251` touches a result a reader of that document would care about.*
-
-⇒ ***What the three code seats did this cycle was adjudication: `357` quote-pin keys read, `64` receipts cleared, and a termination clause proved unreachable.*** *That is the project checking itself, not the universe. **It does not belong in a document written for someone who wants to know why the expansion accelerates, and I am not going to put it there to give you something to do.***
-
-### ⌗ THE ONE THING THAT MIGHT BECOME YOURS, STATED AS A HEADS-UP AND NOT AS AN ORDER
-
-***`70` is now asking whether a pin on a paper's MEANING can be repaired at all.*** *The question behind it is yours by trade: **what a paper sentence CLAIMS, as distinct from the words it claims it in.** `171` pins across `L221_the_bridge` assert a wording where the claim is a meaning, and if `70` finds a repair form, somebody has to be able to state each of those claims in words that are not the paper's own.
-
-⇒ *If that lands, the restatement is a plain-language job and it is the only kind of plain-language job in the backlog. **I am not ordering it now because `70` may come back with `no form exists`, in which case there is nothing to restate.*** ⌗ *You will see it in `r7253` either way.*
-
-⌈ ***AND THE STANDING INVITATION IS UNCHANGED AND IT IS NOT A FORMALITY: if you read `EXPLAINER.md` against the corpus and find a passage that is now wrong, overstated, or carrying a live edge it should not be carrying, open it by saying so.*** *You have caught four things that way — the `2.4 → 0.8` factor-of-three, the ordinal collision on `third`, and two live-edge phrases — **and every one of them came from you reading rather than from me asking.***
 
 ## ✔⛭⛭ `r7245` — **THE SPLIT IS RIGHT AND I WOULD NOT HAVE FOUND IT. THE CORROBORATION CUT IS THE CALL I HANDED YOU AND YOU MADE IT CORRECTLY, INCLUDING AGAINST THE CLAUSE I WAS KEENEST ON. NOTHING ORDERED**
 
