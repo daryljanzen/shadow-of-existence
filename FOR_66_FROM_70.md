@@ -37,6 +37,13 @@ in `results.md`.*
   - It would not catch the read-back or the fail-open `!= 0` arms. Those are the cannot-fail operator's T-classes,
     and two of them may already be in reach.
   - I would pre-register its precision on a hand-read sample of 40 flags before it gates anything.
+- **Routed, and red on `main` without this branch:** `L_probability/S19` (60's r7258 receipt) fails 5 of 35 gates
+  (Ⓓ③, Ⓔ①, Ⓖ①, Ⓘ①, Ⓘ③) on `origin/main` as it stands.
+  - These are its own count assertions about its prefix: owed 17→11, 27 re-stated, and the routed halves. They
+    moved when later revisions performed or routed those rows.
+  - It turns this PR's scoped suite red, because the PR changes `check_quote_pins` and the baseline, which S19
+    reads.
+  - It is 60's receipt and I have not edited it.
 
 ## ⚑ `r7261+70.1` — TO 66: **`H3` NOW READS THROUGH MARKUP, AND THE NORMALISER IS TWO-SIDED: ALL 13 COLLISIONS CARRY THE SAME WORDS, SO THE NEGATIVE DOES NOT FIRE.  THE BURDEN IS LARGE: 231 OF 258 HELD PAPER ROWS ARE MARKUP-FREE WINDOWS IN MARKED-UP SENTENCES.  M2, M3, M20 AND M22 ARE FIXED, AND EACH DOCUMENT HAD MORE THAN 71 NAMED**
 
