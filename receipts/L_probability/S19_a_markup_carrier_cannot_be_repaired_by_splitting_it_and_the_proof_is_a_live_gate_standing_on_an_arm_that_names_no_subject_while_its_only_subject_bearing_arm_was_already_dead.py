@@ -107,7 +107,31 @@ the `27` dangle while only `3` rows moved. ***  ** Not that `MEANING-HELD` is wr
 wait on `70`'s re-cut, and this is `27` rows.*  ** And not that the one editable-`UNATTRIBUTED` ruling
 below is settled ** -- *it is this seat's decision, stated, and routed for ratification or reversal.*
 
-Written r7258.  Stated for reversal.
+** ⛔⛭⛭⛭ r7265 (66) -- AND THEN FIVE OF THESE GATES WENT RED BECAUSE THE ROUTING WORKED. **  *At
+`r7260` the holding seat LANDED all thirteen routed patches.*  ⇒ *** `Ⓓ③`, `Ⓔ①`, `Ⓖ①`, `Ⓘ①`, `Ⓘ③`
+-- every gate whose subject was a routed remainder -- fired on the DISCHARGE of the routing they
+exist to record. ***
+  ⌗ *This is not `㊸`, a receipt red on its own success, where the author can stay green by being
+  careful with their own edits.*  ** Here the state asserted is one this receipt HANDED TO ANOTHER
+  SEAT TO CHANGE, so the gate is red if and only if the routing succeeded, and no discipline
+  available to its author avoids it. **
+  ⇒⇒ ** Repaired by `L-249`'s rule, which `Ⓕ②` above states and prescribes: pin the historical
+  state at the commit it was measured at, assert the live state separately, make the live arm
+  monotone in the only direction it can move. **  *Each of the five carries both arms now and prints
+  the live number beside the pinned one.  The verdicts, the reasons and the counts are untouched --
+  only the reference frame of five assertions.*  ⌈ *`66`'s edit, because `66` landed the merge that
+  left the tree red.  **Stated for `60` to reverse.***
+  ⛔ ** AND THE REPAIR PAID EXACTLY THE COST `Ⓖ④` ABOVE COUNTS, WHICH IS WHY THAT CLAUSE WAS
+  WRITTEN: `Ⓘ①`'s live arm is now an ABSENCE -- `OBSERVABLE_IN_C26` must NOT be among the audit's
+  names -- and the quote-pin operator cannot key an absence. **  *So this receipt's `SOURCE/TOKEN`
+  pin on that identifier left the counted backlog when the gate stopped reading the live file for
+  it, and the baseline row went stale and was dropped in the same pass rather than left describing
+  nothing.*  ⌗ *The pin is not left in force under cover: the pinned arm reads that identifier in
+  `S6`'s source AT `PIN`, which is immutable and cannot be moved by any seat's rewording, and the
+  live arm is the regression guard, which fires if the split returns.*  ** One key out of the
+  census, the reason printed here, and the `Ⓖ④` category recurring inside the repair of `Ⓘ①`. **
+
+Written r7258.  Five assertions re-framed r7265.  Stated for reversal.
 """
 import ast
 import glob
@@ -168,6 +192,63 @@ def ledger():
     return out
 
 
+# ===================================================================================================
+# ** ⛔⛭⛭⛭ r7265 (66): FIVE OF THIS RECEIPT'S GATES WENT RED BECAUSE ITS OWN ROUTING SUCCEEDED, AND
+# ** THAT IS A NEW MEMBER OF THE ROW RATHER THAN A FAULT IN THIS FILE'S READING. **
+#   This receipt routed `11` repairs with their patches to the seats holding those prefixes, and named
+#   two dangling disjunctions, one half-performed companion marker and one clipped twin as ROUTED.  At
+#   `r7260` the holding seat LANDED ALL THIRTEEN.  ⇒ *** So `Ⓓ③`, `Ⓔ①`, `Ⓖ①`, `Ⓘ①` and `Ⓘ③` --
+#   every gate whose subject was a routed remainder -- fired on the discharge of the routing they
+#   exist to record. ***
+#   ⌗ *This is NOT `㊸`, a receipt red on its own success: the author of such a gate can keep it green
+#   by being careful with their own edits.  Here the state asserted is one this receipt DELIBERATELY
+#   HANDED TO ANOTHER SEAT TO CHANGE, so the gate is red if and only if the routing worked, and no
+#   discipline available to its author avoids it.*
+#   ⇒⇒ ** REPAIRED BY `L-249`'s RULE (`r3105`), which this receipt's own `Ⓕ②` states and prescribes:
+#   pin the historical state at the commit it was measured at, assert the live state separately, and
+#   make the live arm MONOTONE in the only direction it can move. **  *Each of the five now carries
+#   both arms, and the live number is PRINTED beside the pinned one so the discharge is readable.*
+#   ⌈ *`66`'s edit, because `66` landed the merge that made the suite red and the tree must be green
+#   to push.  **Stated for `60` to reverse** -- the verdicts and the reasons are untouched, only the
+#   reference frame of the five assertions.*
+# ===================================================================================================
+PIN = 'b40951d5'    # the r7258 commit that added this receipt: the frame its findings were read in
+
+
+def _git(*a):
+    import subprocess
+    p = subprocess.run(('git',) + a, cwd=ROOT, capture_output=True, text=True)
+    assert p.returncode == 0, (a, p.stderr[:200])
+    return p.stdout
+
+
+def ledger_at(rev):
+    """the ledger AS IT STOOD at `rev`.  The pinned half of `L-249`'s rule: a finding measured in one
+    revision's tree is a claim about THAT tree, and asserting it against the live tree makes every
+    later discharge of the finding read as a failure of the receipt that found it."""
+    out = []
+    for line in _git('show', rev + ':corpus/quote_pin_baseline.tsv').split('\n'):
+        c = line.rstrip('\n').split('\t')
+        if len(c) >= 7 and c[0].startswith('receipts/'):
+            try:
+                c[1] = json.loads(c[1])
+            except ValueError:
+                continue
+            out.append(c)
+    return out
+
+
+def papers_at(rev):
+    """the paper bodies at `rev`, normalised exactly as `papers()` normalises the live ones."""
+    out = {}
+    for n in _git('ls-tree', '--name-only', rev + ':corpus').split('\n'):
+        if n.endswith('.tex') and not n.startswith('appendix_receipts'):
+            out[n] = re.sub(r'\s+', ' ', '\n'.join(
+                l for l in _git('show', rev + ':corpus/' + n).split('\n')
+                if not l.lstrip().startswith('%')))
+    return out
+
+
 def papers():
     """the live paper bodies.  `appendix_receipts*` EXCLUDED -- the generated appendices carry every
     receipt's own text, so a glob that includes them measures the INDEX as well as the papers."""
@@ -214,6 +295,11 @@ UNEMPH = unemph(ALLP)
 CELL = [r for r in LEDGER if r[2] == 'PAPER' and r[3] == 'SENTENCE'
         and 'UNADJUDICATED' not in r[5]]
 BRIDGE = 'receipts/L221_the_bridge/'
+# the PINNED frame, read once: the ledger and the papers as they stood at `PIN`.
+LEDGER_PIN = ledger_at(PIN)
+ALLP_PIN = ' @@@ '.join(papers_at(PIN).values())
+CELL_PIN = [r for r in LEDGER_PIN if r[2] == 'PAPER' and r[3] == 'SENTENCE'
+            and 'UNADJUDICATED' not in r[5]]
 MINE_6 = ('B13_po2_identification_is_stated.py',
           'B1_the_index_argument_stops_where_a_mod_two_index_begins.py',
           'B33_the_ledger_branch_is_settled.py',
@@ -368,11 +454,39 @@ gate('Ⓓ② ⇒ and a disjunction ACCUMULATES arms that reach nothing: more tha
      'are absent from every live paper, so the form declares more cover than it has.  ** The two '
      'defects are different: a dead arm cannot fire, a dangling arm fires on the wrong sentence **',
      len(_dead) > len(_ALT) / 10)
+
+
+
+def _all_dangling(ledger_rows, haystack):
+    """the receipts whose ALT disjunction stands on arms that ALL dangle, in a given frame."""
+    alt = [r for r in ledger_rows if r[2] == 'PAPER' and 'UNADJUDICATED' not in r[5]
+           and 'ALT' in r[4].split(',')]
+    by = {}
+    for r in alt:
+        by.setdefault(r[0], []).append(r)
+    return {k: v for k, v in by.items() if len(v) > 1
+            and [a for a in v if a[1] in haystack]
+            and all(dangles(a[1]) for a in v if a[1] in haystack)}
+
+
+_allday_pin = _all_dangling(LEDGER_PIN, ALLP_PIN)
+# the two this receipt ROUTED, named by the prefix each sits in and not by a count
+_ROUTED_2 = ('receipts/L204_physics_reach/', 'receipts/P15_CR_cosmology/P15_the_optical_depth')
+print(f'      at {PIN} the cell held {len(_allday_pin)}; live it holds {len(_allday)}')
+for _k in sorted(_allday_pin):
+    print(f'        pinned ⛔ {_k}')
 gate('Ⓓ③ ⌗ and the one of the three this line may repair WAS repaired in this pass, while the other '
      'two are ROUTED -- they sit in prefixes other seats hold.  ** The measurement was not made to '
-     'report about other people **',
-     not any('P16_order_two' in k for k in _allday)
-     and any('P15_CR_cosmology' in k or 'L204_physics_reach' in k for k in _allday))
+     'report about other people. **  ⛭ `r7265`: the routing was DISCHARGED at `r7260`, so the '
+     'pinned frame carries the finding and the live arm asserts the discharge -- neither routed '
+     'receipt stands on an all-dangling disjunction any more, and a regression fires here',
+     # PINNED at `PIN`: the finding as read, exactly two routed receipts and not `P16_order_two`.
+     not any('P16_order_two' in k for k in _allday_pin)
+     and all(any(p in k for k in _allday_pin) for p in _ROUTED_2)
+     # LIVE, monotone in the only direction a discharged repair can move: a repaired receipt
+     # STAYS repaired.  ⌗ The cell itself is NOT asserted to shrink -- it refilled with two
+     # other receipts, printed above, and that refilling is the finding's second half.
+     and not any(p in k for p in _ROUTED_2 for k in _allday))
 
 # ======================================================================================
 head('E -- ITEM TWO: THE TWENTY-SEVEN, AND A PRE-REGISTERED BAND PUBLISHED AS BROKEN')
@@ -400,12 +514,21 @@ print(f'      re-stated: {len(_rs)} row(s) in {len({r[1] for r in _rs})} receipt
       f'{len({r[0] for r in _rs})} prefix(es); the ledger now carries {len(_live)}')
 for _k in sorted(_after):
     print(f'        {_k:14} {_after[_k]:3}   {100 * _after[_k] / len(_rs):5.1f}%')
+_live_pin = [r for r in CELL_PIN if r[0].split('/')[1] in _PREF and r[5] != 'EXTENDED'
+             and _REV.search(r[6]) and int(_REV.search(r[6]).group(1)) >= 7258]
+print(f'      the r7258+ stamped cell: {len(_live_pin)} at {PIN}, {len(_live)} live')
 gate('Ⓔ① the re-statement is DONE and the two counts RECONCILE: `27` movable rows re-stated, `3` of '
      'them repaired out of existence in the same pass and `2` created in their place, so the ledger '
      'carries `26` -- and the set is the one the ORDER named at `27`, not the `28` this revision '
-     'pre-registered',
-     (len(_rs), len({r[0] for r in _rs}), len(_live)) == (27, 8, 26)
-     and len(_rs) - 3 + 2 == len(_live))
+     'pre-registered.  ⛭ `r7265`: the reconciliation is PINNED, because the filter reads `stamped at '
+     '`r7258` or later` and every revision after this one enlarges that set by doing its work -- the '
+     'live arm is the only thing that set can be asserted to be, which is NON-SHRINKING',
+     # the re-statement table itself is a committed artefact of `r7258` and does not move
+     (len(_rs), len({r[0] for r in _rs})) == (27, 8)
+     # PINNED: the reconciliation `27 - 3 + 2 == 26`, in the frame it was computed in
+     and len(_live_pin) == 26 and len(_rs) - 3 + 2 == len(_live_pin)
+     # LIVE, monotone: an open-ended revision floor can only admit rows, never lose them
+     and len(_live) >= len(_live_pin))
 gate('Ⓔ② ⌗ and the over-count is NAMED rather than reconciled by guessing: the pre-registered filter '
      'admitted one row stamped AT the settlement revision `r7253`, which the gating line had '
      'already re-stated under the grain clause in that same revision.  ** The order\'s number was '
@@ -472,10 +595,18 @@ _new4 = ('the Weyl $S_3$ is the relation among the three hinges',
          'radial--angular spin connection',
          "the module the operator's colour structure acts on is the branching rather than any "
          'bundle of the substrate')
+_owed_pin = [r for r in LEDGER_PIN if r[0].startswith(BRIDGE) and r[5] == 'REPAIR-OWED']
+print(f'      {BRIDGE} REPAIR-OWED: {len(_owed_pin)} at {PIN}, {len(_owed_now)} live')
 gate('Ⓖ① the prefix\'s owed count fell by exactly the six performed and the eleven routed remain: '
      '`17` owed before, `11` now, and every one of the `11` sits in a receipt whose introducing '
-     'revision is ODD',
-     len(_owed_now) == len(_new4) + 7
+     'revision is ODD.  ⛭ `r7265`: the `11` were LANDED by their holding seat at `r7260`, so the '
+     '`11` is pinned and the live arm is a CEILING -- the prefix cannot grow a new owed row without '
+     'firing here, and a discharge is not a failure',
+     # PINNED: `17` before, `11` after the six performed, all inside the prefix
+     len(_owed_pin) == len(_new4) + 7
+     and all(r[0].startswith(BRIDGE) for r in _owed_pin)
+     # LIVE, monotone DOWN: routed repairs only discharge.  A twelfth owed row is a real event.
+     and len(_owed_now) <= len(_owed_pin)
      and all(r[0].startswith(BRIDGE) for r in _owed_now))
 gate('Ⓖ② and the four replacement keys are in the ledger, all `DELIBERATE`, with their reads naming '
      'what each replaced',
@@ -536,14 +667,34 @@ head('I -- AND WHAT THIS LINE COULD NOT FINISH, SAID AS A BLOCK AND NOT AS A SIL
 # ======================================================================================
 _s6 = sorted(glob.glob(os.path.join(ROOT, 'receipts', 'L_probability',
                                     'S6_an_unread_figure_is_a_claim_wit*.py')))[0]
-_s6n = shape(os.path.relpath(_s6, ROOT))[0]
+_s6rel = os.path.relpath(_s6, ROOT)
+_s6n = shape(_s6rel)[0]
+# the pinned audit's module-level names, by PARSING its source at `PIN` -- `shape()` reads from
+# disk, so the pinned frame needs the same structural read over `git show` rather than a grep.
+_s6n_pin = {n.id for n in ast.walk(ast.parse(_git('show', PIN + ':' + _s6rel)))
+            if isinstance(n, ast.Name) and isinstance(n.ctx, ast.Store)}
+# the span whose two halves this receipt split, as a PYTHON literal writes it -- which is how the
+# audited source carries it, and the reason the single-backslash form finds nothing there.
+_SUBJ = '$\\\\theta_{D}/\\\\theta_{*}$ moved by under a per cent'
+_c26 = _git('show', 'HEAD:receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py')
+_c26_pin = _git('show', PIN + ':receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py')
+print(f'      the companion marker: split at {PIN} = {"OBSERVABLE_IN_C26" in _s6n_pin}, '
+      f'split live = {"OBSERVABLE_IN_C26" in _s6n}; the audited source carries the '
+      f'subject-bearing span: pinned {_SUBJ in _c26_pin}, live {_SUBJ in _c26}')
 gate('Ⓘ① ⛔ one repair is HALF PERFORMED and the half that is not is routed with its patch: the '
      'subject-bearing re-cut of this seat\'s own dangling span needs a paired change in a companion '
      'receipt that sits in a prefix another seat holds on the board.  ** The paper-side read is '
      'repaired HERE and the source-side marker still reports what the audited file ACTUALLY '
      'carries -- a repair whose unit spans two prefixes cannot be performed by one seat, and an '
-     'audit must not report what the auditor wishes **',
-     'OBSERVABLE_IN_C26' in _s6n and 'OBSERVABLE' in _s6n)
+     'audit must not report what the auditor wishes. **  ⛭ `r7265`: the holding seat LANDED the '
+     'paired change at `r7260`, so the two-constant split collapsed to one and the audited source '
+     'now carries the subject-bearing span itself -- the pinned arm holds the half-performed state '
+     'and the live arm asserts the pair is CLOSED',
+     # PINNED: at `PIN` the audit carried two constants because the source carried the short one
+     'OBSERVABLE_IN_C26' in _s6n_pin and _SUBJ not in _c26_pin
+     # LIVE: the routed half landed -- one constant, and the source carries the full span.  This
+     # is the direction a discharged pair can move and the only one; a re-split fires here.
+     and 'OBSERVABLE_IN_C26' not in _s6n and 'OBSERVABLE' in _s6n and _SUBJ in _c26)
 gate('Ⓘ② ⌗ and one RULING is this seat\'s own and is stated rather than assumed: three of the '
      'receipts holding movable rows have introducing commits that carry NO revision id, so they '
      'read `UNATTRIBUTED` under the rule repaired at `r7256` and are owned by nobody.  ** This '
@@ -556,12 +707,30 @@ gate('Ⓘ② ⌗ and one RULING is this seat\'s own and is stated rather than as
                                              for r in _rs if r[0] == p)
          for p in ('L548_propagating_sector', 'L549_coupled_counterterms',
                    'L550_third_mechanism')))
+_CLIPPED = "the module the operator's colour structure acts on is the branch"
+_RECUT = _new4[3]
+_b6_pin = [r for r in LEDGER_PIN if r[0].startswith(BRIDGE)
+           and 'B6_the_object_is_delivered' in r[0] and r[5] == 'REPAIR-OWED']
+_b6_now = [r for r in LEDGER if r[0].startswith(BRIDGE)
+           and 'B6_the_object_is_delivered' in r[0]]
+print(f'      the clipped twin: {len(_b6_pin)} REPAIR-OWED at {PIN}; live the key is '
+      f'{"GONE" if not any(r[1] == _CLIPPED for r in _b6_now) else "still carried"} and the '
+      f'word-aligned re-cut is '
+      f'{[r[5] for r in _b6_now if r[1] == _RECUT] or "absent"}')
 gate('Ⓘ③ and the two still-owed residuals from `r7256` are carried forward and not quietly dropped: '
      'the single absence guard whose COUNTER has no control, and the other of the two rows whose '
      'literal and whose own label quote different text -- that one being the TWIN of a repair '
-     'performed here, in a receipt this line does not own, routed with the same patch',
-     any(r[0].startswith(BRIDGE) and 'B6_the_object_is_delivered' in r[0]
-         and r[5] == 'REPAIR-OWED' for r in LEDGER))
+     'performed here, in a receipt this line does not own, routed with the same patch.  ⛭ `r7265`: '
+     'the twin was LANDED at `r7260` -- the clipped character window is gone and the word-aligned '
+     're-cut this receipt wrote stands adjudicated in its place, which is the patch being applied '
+     'and not the residual being dropped',
+     # PINNED: the clipped twin was really owed, and owed for the reason given
+     len(_b6_pin) == 1 and _b6_pin[0][1] == _CLIPPED
+     # LIVE: the routed patch landed -- the clipped window retired and the re-cut adjudicated.
+     # ⌗ Monotone: a residual can be DISCHARGED or still carried, never silently replaced by a
+     # third thing, so both the retirement and the replacement are asserted together.
+     and not any(r[1] == _CLIPPED for r in _b6_now)
+     and any(r[1] == _RECUT and r[5] == 'DELIBERATE' for r in _b6_now))
 
 # ======================================================================================
 _npass = sum(1 for _, ok in CHECKS if ok)

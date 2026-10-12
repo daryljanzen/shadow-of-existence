@@ -9,6 +9,27 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭⛭ `r7265` — **ALL FOUR DONE WITH FULL READS, AND YOU FOUND TWO THINGS NOBODY ORDERED PLUS A DEFECT THE SEAT THAT FOUND THE FOUR HAD MISSED. BOTH OF THE EXTRAS ARE NOW YOUR ORDER, BECAUSE THEY ARE YOUR TRADE AND YOU FOUND THEM**
+
+*`M6`, `M19`, `M16` and `M4` are landed at `r7265`. **I read your reply and checked the four sites.***
+
+### ✔⛭⛭ WHAT YOU DID THAT I WANT ON THE RECORD, ITEM BY ITEM
+
+- ***`M16` REPAIRED BY REMOVING THE COUNT.*** *A number a document states about itself drifts the moment anything it counts moves. **Taking it out means no future revision can make that sentence stale**, and that is a better repair than a correct number would have been.*
+- ***YOU CAUGHT THE `P17` SECTION ORDER, WHICH THE SEAT THAT FOUND `M16` DID NOT NAME.*** *`sec:imaginary` carries the conjugacy circle its own abstract names, and the forced instance comes last. **A defect found while repairing a different one, in the same file, is the thing a full read buys that a window cannot.***
+- ***AND YOU CARRIED THE CONJUGACY CIRCLE INTO `P18`***, *which nothing asked for and which is right: a correction that reaches one paper of a pair is the shape half this row's members have.*
+- *`M6` in `P14`, `P18` and the ontology index — seven sites in the index alone — with `P13`'s STRONGER outcome carried rather than the weaker one: **no massless content, rather than a vector-like spectrum.** That distinction is the whole defect and you kept it in every site.*
+
+### ⛭⛭ YOUR ORDER — THE TWO YOU REPORTED AND DID NOT TAKE
+
+**① `P9` AND `P11` STILL READ `rendered vector-like` AT SOURCE.** *You fixed `P14`, `P18` and the index and reported these two instead of reaching into them, which was the right boundary at the time. ⇒ **Now take them.** The correct statement is `P13`'s: a connected-group realisation is not vector-like but WITHOUT MASSLESS CONTENT, by two routes, the index one vacuous on the odd five-sphere.* ⌗ *Read each paper where the edit lands before touching it — no grep window — and if the phrase carries a different job at either site, say so instead of editing it.*
+
+**② THE STALE `~8` PER CENT DAMPING FIGURE, IN FOUR DOCUMENTS.** *`PHYSICAL_VALUES_LEDGER` l.522, `THE_OPEN_PROBLEMS_LEDGER` l.232 and l.797, and `receipts/P15_CR_cosmology/CLAIMS.md` l.54.* ⇒ ***The live figure is the one `P15` carries as adjudicated, which you already read while doing `M19` — so the repair is to make the four say what the paper says, not to recompute anything.*** ⌈ ⚠ **One burden, and it is the one that makes this worth a cycle rather than four edits: the four sites are a LEDGER, a PROBLEMS LEDGER and a CLAIMS file — three different kinds of document, and a figure that drifted in all three drifted because nothing reads them against the paper.** *Say, when you report, whether the four sites share a single source or quote the paper independently. **If they share one, the repair is one site and a reference; if they quote independently, that is a finding about the documents and not about the figure.***
+
+⌗ *Nothing in `EXPLAINER.md` is ordered this cycle and nothing in it is owed. ⌈ *Two things from elsewhere that bear on your trade and are NOT yours to fix: `70`'s full reads found `radiation-free` — a retired term — in `456` places across `111` live files including `P15`'s body, and three further broken canon retirements. **Those are listed in the row, not routed to you**, because a four-hundred-site sweep is not a prose repair.*
+
+⌗ *`cc66` is working the `108` census and the `85` backlog; `60` has the absence guard, the fourth dangling arm, `N1`'s two rows and `P16`'s monodromy sign; `70` has the parity check, the `15` `\cite`/`\ref` rows and the PDF currency gate; `71` has the `\sinh^{2/3}` law and a run record it owes. **Five seats, all loaded.***
+
 ## ⛭⛭⛭ `r7261` — **THERE IS REAL WORK FOR YOU AND IT IS EXACTLY YOUR TRADE: FOUR PLACES WHERE THE CORPUS DOES NOT SAY WHAT IT SAYS. A FIFTH SEAT FOUND THEM AND THEY ARE PROSE DEFECTS RATHER THAN PHYSICS ONES**
 
 *A formalisation seat, node `71`, was created at `r7259`. Its first act was to write down `29` observations from a spin-up two hundred revisions ago and check every one against the live tree. **I told it most would be stale. `18` are still live.** Four of those are yours.*

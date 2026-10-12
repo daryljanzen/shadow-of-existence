@@ -11868,3 +11868,63 @@ def unemph(t, rounds=4):
 ⇒ **Nothing is ported and nothing is edited: `receipts/L256*/B1_*.py` and `receipts/L259*/D1_*.py` are on this line's do-not-edit list, and the fix is in the impersonation, not in any branch's content.** *The one standing-down comment on `PR #346` is edited to name all three receipts and the single cause rather than a second comment being added.*
 
 ⌊ ***THE PATCH, routed and not applied:*** *`⓸ᵇ` wants to assert that the LIVE tree is in band at its OWN declared parity. It currently asserts that by flipping `C.PARITY` to the other half first, which makes the live read a statement about the wrong half. **Drop the flip for this check and read `band_violations()` at `_saved`** — the seed in PART 4 builds its own repository since `r3996` and no longer needs the live flip, so the flip has no remaining purpose here and its only effect is to red every EVEN branch with unmerged work. ⌗ Keep the `C.PARITY == _saved` conjunct: that one is a real restoration check and it passes.*
+
+## ⛔⛭⛭⛭ `r7262` — **BOTH REPAIRS LANDED. `M23` IS ONE PAPER AND NOT TWO — `P18` AND `P3` AGREE AND `P16` ALONE IS WRONG. `M15` IS WORSE THAN YOUR ORDER SAYS: THE SUMMARY IS STALE IN *BOTH* ARMS. AND MY OWN REACHABLE NEGATIVE FIRES ON ITS LETTER WITHOUT REACHING ITS CLAIM**
+
+*Your `r7261` order, items ① and ②. Receipt: `receipts/L_probability/S21_a_pre_registered_negative_can_fire_without_reaching_the_claim_it_was_written_to_test_and_mine_did_while_the_order_was_wrong_about_both_defects_in_opposite_directions.py`. Pre-registration, the `M23` arithmetic and the reading record in `computations/beyond_the_wall/r7262_60_one_state/`. **`PREDICTION.md` was pushed in its own commit before either paper was read end to end, and `READING_NOTES.md` in its own commit before either paper was edited** — so the reads and the edits are in separate commits as the order requires, and the bands were fixed before the reads.*
+
+*All three papers read end to end — `P16` `890` lines, `P18` `2{,}997`, `P10` `2{,}010`. No grep window stood in for a read.*
+
+### ⛭⛭⛭ ① `M23`: YOUR FRAMING IS WRONG AND THE ARITHMETIC SAYS SO BEFORE ANY READ — TWO PAPERS AGREE AND A THIRD IS OUT OF STEP
+
+*Your words: **"One of the two is wrong about the member and the other about the family, and the footnote shows somebody already knew the distinction."***
+
+⇒ ***`P18` and `P3` AGREE and are BOTH right — `P18` on the member (`the two merging horizons stand infinitely far apart in proper distance`) and its own footnote on the family (`Of the member itself, not of the family approaching it`, with `πα/√3` given there as the family's limit). `P16` ALONE is out of step.*** *So the repair is **one paper**, which is what made three full reads affordable rather than two rewrites.*
+
+⌈ ⛔ ***AND `P16`'s SENTENCE CONTRADICTED ITSELF WITHOUT REFERENCE TO ANY OTHER PAPER.*** *It stated `f≤0` everywhere else on the matter branch and then, two commas later, attributed a proper length to a static region between the two horizons. **Measured: `f(r₀±10⁻³) = −3.0e−6` on both sides, and the member's `∫dr/√|f|` across the double root EXCEEDS the family's entire limit `π/√3 = 1.8137993642` already at a core cut of `10⁻³` — `4.5165` against `1.8138` — growing without bound thereafter.*** *So `its proper length remaining πα/√3` cannot be read charitably as a limit; it is the family's number asserted of the member.*
+
+⌊ *The instrument discriminates in both directions: at a **simple** root the same integral converges, its decade increments falling by `1/√10`, where the double root's hold constant at `(2/√3)·ln 10 = 2.6587962`. **A divergence reported everywhere would be no finding.***
+
+✔ **The repair keeps your argumentative point word for word** — *`what has gone is the separation of the roots and not the throat`, present at the trunk and present after, so it is a survival and not a re-insertion* — **and strengthens it**: what survives the degeneracy is the throat's areal radius `α/√3` and the `dS₂×S²` geometry the next sentence already names, rather than a length read off a chart. ⌗ *No `was formerly stated as` anywhere: `10` narration phrases asserted ABSENT from both repaired papers, the history in the receipt where you said it goes.*
+
+### ⛔⛭⛭⛭ ② `M15` IS WORSE THAN YOUR ORDER SAYS, AND THE SECOND ARM IS WHERE IT GETS WORSE
+
+*Your order names l.638's answer to the first arm. **The SECOND arm is answered too, thirty lines later, and answered the other way from how the summary states it** — l.667–677: `the affirmative branch is a second number owed and not a second length introduced, and the single-scale ledger stands either way, an undetermined dimensionless number not being a scale`, and `this is therefore a single-scale ledger with one number read from the world`.*
+
+⇒ ***So the paper did not merely carry a settled question as open. It carried a REFUTATION CONDITION AGAINST ITSELF WHOSE CONSEQUENT ITS OWN BODY HAD ALREADY REFUSED.*** *A reader who checked the condition, found it met, and took the paper at its word would have read the programme as self-refuted **on the programme's own authority**. That is the heavier of the two faults and the order weighted only the lighter one.*
+
+⌈ *Two further pieces of the body stand against the one clause: l.678–690 bounds what the affirmative branch adds without computing it (`10⁻¹²²` at the turnover, and it is the background's turning over that does it rather than the epochs cooperating), and l.690ff collapses the counterterm it would need on an exactly maximally symmetric substrate.*
+
+✔ **Repaired to what the body settles** — the divergence does reach second order, by an identity; the affirmative branch costs a dimensionless number and not a scale, so the single-scale ledger stands; and the one open thing is the ultraviolet definition of the interacting tower's mode sums. ⌗ ***And that narrowed statement is not mine: the paper already calls it the open item in its own voice earlier in the same section***, so the summary was brought to the body rather than the body to the summary. ⌊ *The clause stood at **exactly one site** — checked at the trunk — so the repair is one passage and not a sweep, and the sentence the paragraph ends on is untouched because it stays true of the narrowed question.*
+
+### ⛔⛭⛭⛭ AND THE REACHABLE NEGATIVE I SET AGAINST MYSELF FIRES ON ITS LETTER WITHOUT REACHING ITS CLAIM
+
+*I pushed this before the reads: **"if the full read of `P18` turns up a site needing a change, then `P18` is not simply the paper that got it right and my `ⓐ` reading above is too clean."***
+
+⇒ ***THE ANTECEDENT IS TRUE — `P18` has two sites needing a change, `N1`'s frontier-table rows — AND THE CONSEQUENT IS FALSE, because neither is about the proper length and `P18`'s treatment of that is the correct one, untouched by this revision.***
+
+⌈ ⛔ ***So the trigger I fixed does not test the claim it was written to test.*** *I wrote `a site needing a change` where the claim was about ONE OBJECT, and a stale table in the same file fires it. **It is scored FIRED and not narrowed** — narrowing it now that I know which site caught it is exactly the move a pre-registration exists to make unavailable. ⌗ *This is `r7260`'s lesson one layer up: three instruments there had a reach shorter than their claim, and the instrument with the wrong reach here is the **pre-registration itself**.*
+
+⌊ *The second negative does **not** fire, and misses in the direction against the order rather than against me: I pre-registered that a body answer NARROWER than the summary's question would make the repair a narrowing. The body's answer is **wider**.*
+
+**THE FOUR BANDS, PARSED OUT OF THE PUSHED FILE RATHER THAN RETYPED:** *further `P16` sites `1` (pre-registered `1`, band `0`–`4`) ✔ dead on; `P18`/`P3` sites needing any change `2` (`0`, band `0`–`2`) ⛔ at the ceiling, central value missed by two, band holds; `P10` sites `1` (`2`, band `1`–`5`) ⌗ below centre and reported as the lower number; new defects `2` (`2`, band `0`–`6`) ✔ dead on.*
+
+⌗ ***AND THE PUSHED PRE-REGISTRATION MISLABELS A UNIT WHERE ITS NUMBER IS RIGHT.*** *It reports the member's divergence at `slope 1.1547005 per decade of core radius`. `2/√3 = 1.1547005` is the slope per **e-fold**; per decade it is `2.6587962`. **The pushed file is left exactly as pushed — a pre-registration that can be edited is not one — and the correction is gated in the receipt.***
+
+### ⌗ ROUTED, LOCATED BY LINE, AND NOT TAKEN
+
+  - ⛔ **`N1` IS TWO ROWS AND NOT THE ONE YOUR LIST NAMES.** *`CR_synthesis.tex` l.2743–2753 says the item is settled (`The ultraviolet definition of the mode sums is settled beyond the free static case` … `the three parts of that item are settled together`), while the frontier table at **l.2837** still carries `the mode sums beyond the free static case` as open — **and l.2838's row, `the Weyl-squared coefficient at second order in the shear`, carries its value (`1/60` in units of `(4π)⁻²`) and reads as discharged too.*** ⇒ *`Nine items stand open` at **l.2704** is consistent with the table as it stands, so **repairing either row moves a number the paper states about itself**: the repair is two edits and a count, not one edit. `P18` is **unchanged** by this revision and the restraint is asserted against the diff rather than declared — the shape `r7260` got wrong when it repaired a defect it was merely standing next to.*
+  - ⌗ **`M14` IS CONFINED TO ONE LINE.** *The weight `2(m²−4)√(m²−3)` stands at `canonical_time.tex` **l.1573 and nowhere else**, while l.486 fixes `μ² = m²−1` with `d = 2(m²−4)` and the l.459 passage reads the logarithmic coefficient off `d(m)μ(m)` on that convention. ⇒ **Which is the computational form of your own reading that the conclusion holds either way and the defect is the value and not the argument.** Not taken — sixth in your queue — and the gate asserts the defect still standing, because a routed item that quietly disappears is not routed.*
+  - ⌗ **`P16`'s MONODROMY SIGN IS WRITTEN TWO WAYS**, which is the one new defect the reads turned up that is on neither `71`'s list nor your order. *l.606 gives the tensor off-diagonal as `−2πi/ρ` and l.608 the scalar as `−4πi/ρ`; l.630 and l.652 write the magnitudes with the sign dropped. **Recorded at loose grain and not inflated** — the later sites are magnitudes rather than contradictions.*
+
+### ⌗ A FOURTH THING THE ADOPTED DANGLING TEST CANNOT SEE, ROUTED RATHER THAN WRITTEN IN A HURRY
+
+*The finite-verb list is **closed**, so a span opening on a finite verb that is not in it does not flag: `diverges logarithmically at the double root` passes the three arms clean. *I nearly minted it as a key and the test did not stop me; the receipt now carries it as a gated observation.** ⇒ **The list stays byte-for-byte**, because `r7257`'s and `r7258`'s figures are reproducible only from it — so this joins the article-tail case (`straddles the`) as routed material for a fourth arm rather than a word added to a bound list. *Your call on whether the fourth arm is a closed-list extension or a part-of-speech test; I would take the second, since a closed list has now been found short three times.*
+
+### ✔ THE TWO ITEMS YOU SAID LEAVE THE OWED LIST
+
+*On your instruction: **`S2`'s section C stays a census** and **`SCOPED`'s gap against removal stays stated**. Both are properties this seat measured rather than defects, neither is owed a repair, and they are off the owed list from here.*
+
+⌗ *Still owed and still listed: the single absence guard whose COUNTER has no control, one site — five cycles old now. **I take it next unless item ③ of your next order displaces it.***
+
+⌗ ***ONE CONVENTION POINT, STATED SO IT IS NOT A SURPRISE AT THE MERGE:*** *`check_revision_collisions.py` prints `r7264` as this line's next id, because it reads my own unmerged commit subjects and `r7262` is already claimed there — by this revision, in the pre-registration commit it requires to come first. **So this lands as `r7262`**: the id is held by nothing but this revision, `7262` is EVEN and unreachable by your half, and the gate asserts no collision. *The printed number is the next one after this, and it is right about that.*
