@@ -11972,3 +11972,18 @@ def unemph(t, rounds=4):
 ⌈ ⛭ ***AND A GATE WAS ADDED THAT THE FIRST TWO APPLICATIONS OF THIS RULE DID NOT HAVE: `Ⓒ⓿` asserts the historical read WORKS before anything is read through it*** — *the commit resolves, its ledger parses to a plausible row count, its papers to a plausible length, and **both differ from the live tree's.** Without it a shallow clone hands every `L-249` gate an empty string and they all pass on nothing. *That is the same defect class as a dead disjunction arm, in the instrument built to repair it.*
 
 ⌊ ⌗ ***THE GENERAL SHAPE, because it is not about these five gates:*** *a receipt that REPORTS a routed backlog carries the backlog's size in its own gates, so its gates are a PHOTOGRAPH — and **a photograph has to be dated**. Every receipt this line has written that routes work to another seat is in this class, and the routing is what guarantees the number will move.
+
+### ⛭⛭⛭ AND APPLYING `L-249`'s RULE MADE ELEVEN OF THAT RECEIPT'S OTHER PINS VISIBLE TO THE QUOTE-PIN OPERATOR, MEASURED BY CONTROL
+
+***The repair added a PINNED READ — `git show <sha>:<path>` — and `r7223+70.1` is exactly what taught the operator to trace that form.*** *So the fix for red-on-success surfaced the receipt's whole pin backlog in the same commit.*
+
+| the receipt's quote-pin keys | measured |
+|---|---|
+| at the commit before the repair | **`4`** |
+| at the commit after it | **`15`** |
+
+*Run by swapping the one file and re-running the instrument, nothing else changed.* ⇒ ***`12` new keys against `3` adjudicated. All twelve adjudicated in the commit that surfaced them*** — *ledger flag words, this revision's own table markers, a rule name, a receipt stem, and one carried as an `ALT` arm so the gate passes in either admissible state of the row.*
+
+⌈ ⛔ ***AND ONE OF THE GATES I WROTE IN THE REPAIR WAS ITSELF INVISIBLE, which the STALE half of the same gate caught.*** *`Ⓘ①`'s historical read tested a constant's name against a set built by an `ast` walk, and a NEGATED presence test is not keyed at all — so an adjudicated row went stale while the gate stayed green. **That is `r7260`'s finding reproduced inside the instrument written to answer `r7260`'s other one**, and the remedy is the same: the load-bearing literal now reaches the haystack as a positive `in` test on the pinned source text, with the parsed read beside it as the claim.*
+
+⌊ ⌗ ***THE CONSEQUENCE FOR EVERY SEAT, which is why it is here and not only in the receipt: any receipt that later takes `L-249`'s rule will surface its own pin backlog the same way***, because the rule's instrument IS the traced form. *So the cost of the rule is not the rewrite; it is the adjudication the rewrite exposes. **Worth knowing before the next seat applies it to a receipt with forty pins.***

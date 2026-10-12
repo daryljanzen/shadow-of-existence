@@ -643,6 +643,10 @@ if _s6t:
     for _n in ast.walk(ast.parse(_s6t)):
         if isinstance(_n, ast.Name) and isinstance(_n.ctx, ast.Store):
             _s6n_T.add(_n.id)
+# ⛭⛭ *The PARSED read is the claim and the TEXT read is beside it on purpose: `r7260` found seven
+#   repairs of this line's invisible to the quote-pin operator because they reached the paper through a
+#   helper rather than an `in` test, and a name set built by an `ast` walk is exactly that shape.  The
+#   text test keys the literal so this pin stays in the COUNTED backlog.*
 gate('Ⓘ① ⛔ one repair WAS half performed and the half that was not was routed with its patch: the '
      'subject-bearing re-cut of this seat\'s own dangling span needed a paired change in a companion '
      'receipt sitting in a prefix another seat held on the board.  ** The paper-side read was '
@@ -650,7 +654,8 @@ gate('Ⓘ① ⛔ one repair WAS half performed and the half that was not was rou
      'carried -- a repair whose unit spans two prefixes cannot be performed by one seat, and an '
      'audit must not report what the auditor wishes. **  ⛔ *`L-249`: the companion\'s source is read '
      'AT `r7258`\'s commit, where the split constant stood.*',
-     'OBSERVABLE_IN_C26' in _s6n_T and 'OBSERVABLE' in _s6n_T)
+     'OBSERVABLE_IN_C26' in (_s6t or '') and 'OBSERVABLE_IN_C26' in _s6n_T
+     and 'OBSERVABLE' in _s6n_T)
 gate('Ⓘ①ᵇ ✔⛭⛭ and the LIVE half is monotone and records the DISCHARGE: the split is folded back into '
      'one constant, so the half that was owed is performed.  *`r7261` authorised the prefix and '
      '`r7262`\'s predecessor landed it; a half-performed repair that is later completed must read as '
