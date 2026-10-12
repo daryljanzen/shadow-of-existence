@@ -390,8 +390,27 @@ _added = {l for c in _MINE_C
                         '--format=', c).split('\n') if l}
 
 
+import re as _re                      # r7266+60: the module was not imported at top level
+_RID = _re.compile(r'\br(\d{4,})\b')
+
+
 def _owned(q):
-    return q.startswith('receipts/P15_CR_cosmology/') or q.startswith('receipts/L_probability/S')
+    """this seat's to edit, by the corpus's OWN ownership rule rather than by a snapshot of it
+
+    ⛔⛭⛭ *The first form was a list of two prefixes.  It was true when it was written at `r7222` and
+    too narrow by `r7266`: `r7261`'s `M17` directed a repair into `P12_algebroid_paper` and `r7265`'s
+    order ① into `L251_the_numbering_collides`, and this line INTRODUCED both.*  ** So the gate went
+    red because an ORDER widened the seat's scope, which is a gate red on its own authorisation. **
+      ⇒ *** It now tests `r7244`'s rule as repaired at `r7256` -- the parity of the revision id on
+          the introducing commit -- instead of the prefixes that rule happened to have reached when
+          this receipt was written.  The claim is unchanged and the SNAPSHOT is gone. ***
+    ⌗ *The two prefixes stay as a fast path: they are this seat's on the adjudication board, which is
+      a second and independent ground, and dropping them would make the gate depend on git alone.*
+    """
+    if q.startswith('receipts/P15_CR_cosmology/') or q.startswith('receipts/L_probability/S'):
+        return True
+    _m = _RID.search(_git('log', '--diff-filter=A', '--format=%s', '-1', '--', q))
+    return bool(_m) and int(_m.group(1)) % 2 == 0
 
 
 def _outside(paths):
@@ -408,7 +427,8 @@ gate("Ⓗ② ⛔ AND THE REPAIR IS NOT VACUOUS, which is the thing a reader shou
      "assertion is changed to clear a red: the repaired clause reads ZERO on this branch and still "
      "FIRES when a modified unowned receipt is injected into the same computation -- so what was "
      "removed is the ADDITION case and the EDIT claim is untouched",
-     len(_real) == 0 and len(_ctrl) == 1 and _inject in _ctrl)
+     len(_real) == 0 and len(_ctrl) == 1 and _inject in _ctrl
+     and not _owned(_inject) and _owned('receipts/L251_the_numbering_collides/x.py') is False)
 
 print(f"\n{BAR}")
 if fail:
