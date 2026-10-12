@@ -13,10 +13,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38274613401",
     "since": "5053612bbabbadb52bb130a6691fccedcb4be23f"
    },
-   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38288545250",
-    "since": "d3ebd9aaaedf0331ec597e3ce49b12e14d562137"
-   },
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38262893697",
     "since": "b8b0908de245b8ae692f7388095f2c7709a46ce9"
@@ -24,10 +20,6 @@
    "receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38274613401",
     "since": "5053612bbabbadb52bb130a6691fccedcb4be23f"
-   },
-   "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38282732114",
-    "since": "4200fd92ff5615419ec8f2b396cf2e3aff35ed81"
    }
   },
   "tolerance": {
