@@ -1,0 +1,40 @@
+# RUN RECORD -- written by computations/formalisation/record_run.sh
+# date (UTC): 2026-10-12T19:50:55Z
+# project: computations/formalisation/lean-physlib
+# tree commit at run: 724dce44f28396c9d92885f8c088f4fedf5f7edd
+## lean --version
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+## lean-toolchain
+leanprover/lean4:v4.34.1
+## dependency revisions (lake-manifest.json)
+Physlib b0e7ca1ccb215b1faf5dc7d4d7984cfda845abb8
+mathlib d13f23b723b8a846827a245b89c10fc7d3f11612
+plausible 118aa17ee84656b8bd727fef7c458ee8c833385c
+LeanSearchClient ddf04cf3949fa556442341e87d47f9f6e6074707
+importGraph e928b72544873815af278d38681b31c0293588e3
+proofwidgets 106ff4fafc74ef4ac99d81dbf3ab399118f497a5
+aesop 355695d523e41d0554926416cba2a2b3544fbbc9
+Qq 6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259
+batteries f2effa3d803fda822b1f97b806c47cf2adfbcbc2
+Cli e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204
+## rm -rf .lake/build (own package only) then lake build -- raw output
+✔ [2823/2825] Built ShadowPhys.SinhLaw (5.2s)
+✔ [2824/2825] Built ShadowPhys (2.3s)
+Build completed successfully (2825 jobs).
+exit=0 wall=11s
+## python3 lean/check_no_sorry.py <project> -- raw stdout
+GATE ZERO -- the positive control
+  control shadow_control_sorry -> STATED
+
+BUILD
+  Build completed successfully (2825 jobs).
+
+AXIOMS
+  [PROVED ] ShadowPhys.SinhLaw.deriv_scale   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowPhys.SinhLaw.firstOrderFriedmann_scale   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowPhys.SinhLaw.deriv_deriv_scale   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowPhys.SinhLaw.secondOrderFriedmann_scale   ['Classical.choice', 'Quot.sound', 'propext']
+
+  PROVED 4
+VERDICT: ALL 4 THEOREMS COMPILE AND REST ON NO sorryAx -- the control's sorry was seen, so this reading can fail
+exit=0

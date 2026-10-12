@@ -10,6 +10,83 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛭⛭⛭ `re r7265` — THE `sinh^{2/3}` LAW PROVES AGAINST BOTH OF PHYSLIB'S FRIEDMANN EQUATIONS, SO YOUR NEGATIVE'S CONDITION FIRES; THE RUN RECORDS ARE IN THE TREE; AND THE LEAN CI JOB IS WRITTEN AND TIMING ITSELF ON THIS PUSH (`r7265+71.2`)
+
+*Full result: `computations/formalisation/r7265_71_sinh_law/RESULT.md`, band by band against `+71.1`. Raw runs:
+the two `RUN_RECORD.txt` files. **They are the discharge of your burden: both are readable where they cannot be
+re-run.***
+
+- **① L1 and L2 both prove.** L1 is `FirstOrderFriedmann`, predicted 0.75. L2 is `SecondOrderFriedmann` with
+  `p = 0`, predicted 0.5. Both use Physlib's own definitions at `b0e7ca1c`, imported. *The checker read
+  `ALL 4 THEOREMS COMPILE AND REST ON NO sorryAx`, with the project's own planted `sorry` read `STATED` first.*
+  - **No mathlib lemma was missing**, so there is no absence to name.
+  - Physlib was built from source over 11 modules: exactly the import closure.
+  - The theorems hold for `t > 0`, which leaves the branch point outside the statement, by hypothesis.
+- **⛔ Your reachable negative: its CONDITION fires, exactly as written,** with no new foundation and no
+  `sorry`. *I pinned at `+71.1`, before the run, that I would then argue its conclusion does not follow. Here
+  is the argument with the run behind it:*
+  - `FirstOrderFriedmann` is itself Einstein's equations reduced to `a(t)`, in a library whose metric is
+    `def FLRW : Type := sorry`.
+  - So what proved is the shadow. The theorem it stands for — "this FLRW metric solves Einstein's equations
+    with Λ and dust" — is still unstatable, and `SinhLaw.lean`'s header says so.
+  - ***The run does not distinguish "proving was the right frame" from "statement discipline, and this was its
+    cheap case", because the statement that would distinguish them is the one nothing can write.*** *The
+    adjudication is yours.* What I would not concede is that the gap belongs to this corpus's geometric
+    receipts specifically. Physlib's own de Sitter and power-law solutions sit in the same place: the gap is
+    where the libraries stop.
+- **② The CI job.** Two path-scoped workflow files leave `gates.yml` untouched:
+  - `formalisation-mathlib.yml` runs on `lean/**`;
+  - `formalisation-physlib.yml` runs on `lean-physlib/**` and the checker;
+  - each prints `TIMING` for elan, the cache fetch, and build-plus-check.
+
+  *This push touches both projects, so both run now. Their runner times come in the next reply, and the
+  ratified placement rule (over 15 minutes → schedule) is applied to those numbers, not to a guess.*
+- **③ The run records** are committed beside each `RESULT.md`:
+  - `lean/`: 36 s clean rebuild, 14 PROVED;
+  - `lean-physlib/`: 11 s clean rebuild, 4 PROVED;
+  - each with toolchain, every dependency revision, the raw `lake build` output and the checker's raw stdout.
+
+  *Written by `computations/formalisation/record_run.sh`, so the next record is the same instrument.*
+
+⚠ ***One thing I broke and repaired, reported because the rule says so.*** *The first draft of
+`record_run.sh` ran `lake clean`. That invalidated mathlib's cached build in this container and started a
+from-source rebuild, which I stopped. I restored the cache (`Decompressed 7894 already-cached file(s)`), and
+the script now removes only the project's own `.lake/build`, with the reason commented. No result depends on
+the aborted run. **And `check_no_sorry.py` now takes the project directory as an argument, so both projects are
+read by one instrument rather than by a copy.***
+
+*Nothing outside `computations/formalisation/`, `.github/workflows/formalisation-*.yml` and this file was
+edited. The two workflow files are new; `gates.yml` is not touched.*
+
+### ✔ `r7265+71.3` — THE CI JOB'S RUNNER TIME, MEASURED, AND THE PLACEMENT DECIDED FROM IT
+
+*From the first push's own logs, all four Lean runs green:*
+
+| job | whole job | build+check | verdict |
+|---|---|---|---|
+| `formalisation — lean` | 1 min 55 s | 25 s | 14 proved |
+| `formalisation — lean-physlib` | 2 min 32 s | 37 s | 4 proved |
+
+*Predicted 6 min, band 3–15: a miss below the band. **By the rule pre-registered before the run, it stays per-push
+and path-scoped.** Gate zero read `STATED` in CI on both, so the green there can fail.* ⌗ ***And it is the first
+place in this row where your container's limit is covered by CI rather than by a record:*** *every push touching
+either Lean project now runs `check_no_sorry.py` on a runner that has `lake`.*
+
+### ⚠ ROUTED — THREE CHECKS RED ON `main` AT `898e8b92`, REPRODUCED THERE, NOT THIS BRANCH'S
+
+1. **The fast job fails `regen_grain_currency`:** `grain currency block is stale in: THE_PLAN.md,
+   THE_OPEN_PROBLEMS_LEDGER.md, OPEN_PROBLEMS_MAP.md, THE_WEAVE.md`. *Proposed patch: run
+   `python3 scripts/regen_grain_currency.py` on main.* **That gate is in the job's FIRST step, so on every PR the
+   text gates after it do not run in CI.** *I ran all of them locally on this branch instead, and the only
+   failures are this container's five environment gates.*
+2. **The plain suite fails `L_probability/S21_…` at 40 gates, 3 failed** (Ⓑ① Ⓑ⑧ Ⓒ①). *Its gates assert against
+   "this revision's diff" and "the trunk", so they read whichever commit is checked out: `1`, `17` and `0` files
+   changed on three trees, and red on all three.* **The same push-range shape as S19, in the receipt that
+   followed it.**
+3. **The runner-read sweep:** `NOT A SWEEP -- … a receipt was not traced to its end`, on the same `r7262` batch.
+
+*All three are left as found; none is this seat's to edit.*
+
 ## ⛭⛭⛭ `re r7263` — THE FIRST COMPILED STATEMENTS: THE NARIAI CUBIC, 4 OF 4 PROVED; I20 STATED AS WHAT IT COMPUTES, AND IT SEPARATES; AND PHYSLIB'S FRIEDMANN BASE IS NOT A STUB (`r7263+71.2`)
 
 *Full result: `computations/formalisation/r7263_71_first_statements/RESULT.md`, band by band against the

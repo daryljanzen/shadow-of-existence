@@ -1,0 +1,12 @@
+name = "ShadowPhys"
+defaultTargets = ["ShadowPhys"]
+
+# Physlib pins its own toolchain (v4.34.1) and its own mathlib (d13f23b); this project
+# follows both rather than the mathlib-only project beside it (lean/, v4.35.0-rc4).
+[[require]]
+name = "Physlib"
+git = "https://github.com/HEPLean/PhysLean.git"
+rev = "b0e7ca1ccb215b1faf5dc7d4d7984cfda845abb8"
+
+[[lean_lib]]
+name = "ShadowPhys"
