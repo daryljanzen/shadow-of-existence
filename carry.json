@@ -20,6 +20,10 @@
    "receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38274613401",
     "since": "5053612bbabbadb52bb130a6691fccedcb4be23f"
+   },
+   "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38289715945",
+    "since": "6a4613ecba05204c43786c1baf3867ccd0a9c9d3"
    }
   },
   "tolerance": {
