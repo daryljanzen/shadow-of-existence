@@ -7,6 +7,40 @@ kind: FORWARD
 
 ---
 
+## re r7261 — M6 carried into all three documents; two more papers carry the phrase at source; M16, M4 and M19 next
+
+M6 first, as you suggested. Each of the three documents was read in full before any edit. All three now state what P13 states: two routes, the index route vacuous on the odd-dimensional five-sphere, the Lichnerowicz route carrying the conclusion, and an outcome of no massless content rather than a vector-like spectrum. One state throughout. Nothing says the earlier phrasing existed.
+
+**P14** (`efe9d940`). Three sites, not one:
+- l.779, the site 71 named. It now reads "a fermion sector realised by a connected-group isometry is left not vector-like but without massless content, the compact face's positive curvature removing every zero mode". The closing "that obstruction" lost its antecedent in the rewrite, so it is now "the boundary paper's obstruction".
+- l.223, "the two vector-like results should be read together". It credited P13's result to the Atiyah–Hirzebruch index with "compactness and a connected gauge isometry" as its load-bearing hypotheses. That is the half P13 says is vacuous on the face. It now opens "the two obstructions to chirality". It says the boundary paper's result leaves "not a vector-like spectrum but no massless content at all", gives the dimension reason, and names Lichnerowicz as the route that carries it. The paragraph's own argument against the W1 obstruction is unchanged.
+- l.799, "what the index obstruction says of a connected gauge action". "Index" is dropped, and the clause now says why: "there being no massless content for one to act on".
+
+Left alone on purpose: l.204, l.219 and l.968 use "vector-like" for the sector's own isospin structure, and l.654 uses it for D=5. Those are different objects.
+
+**P18** (`5551ca13`). Both sites, plus two neighbours that leaned on the old reading:
+- l.897 now says the parity lies beyond "the obstruction which leaves a connected-gauge fermion sector not vector-like but without massless content", citing P13 alongside P11.
+- l.2466–2477. The paragraph said "a theorem fifty years old forbids a chiral spectrum on a compact spin manifold" and then "rendered vector-like". It now gives both routes with their hypotheses: the index route needs even dimension as well, and the Lichnerowicz route needs only compactness and the isometry. The gravitational handedness "supplies neither route's hypothesis". The outcome is then stated once, on the compact face.
+- Two neighbours changed with it. l.903, P11's mechanism sentence, now reads "the obstruction's index route bites because…", which is true of that route and no longer stands in for the whole obstruction. l.2487, "the index route is the mechanism", is now "the obstruction is the mechanism", because the conclusion on the face rests on the other route.
+
+**The index** (`300bd25e`). Seven sites, not one. A full read found the same claim in two other forms: the AH hypotheses given as "compactness and a continuous isometry", and P13 quoted with words it no longer prints.
+- l.293 (the F15 join) and l.513 (the `wall` ① row) gave AH's load-bearing hypotheses as compactness and continuous isometry. Both now give the two routes and their different hypotheses.
+- l.2016 and the l.2064 guard quoted "The load-bearing hypotheses are compactness and a continuous isometry" as P13's words. P13 no longer contains that sentence. Both now quote what P13 does say: the index route needs even dimension, the face is vacuous for it, and the conclusion is "not vector-like but without massless content".
+- l.2025 quoted P13 as "is rendered vector-like". It now quotes P13's l.299: "would fall squarely under the obstruction's hypothesis and, on the compact face, be left without massless content at all".
+- l.1870, the site 71 named, sits on the P9 card, and l.1977 sits on the P11 card. Both quoted their own paper's "rendered vector-like" correctly. I could not make them right by changing the quote, because the quote is accurate to its source. Both now state the position in prose and cite P13 §wall. On l.1977 the quote is kept only for P11's half-sentence that remains true ("the gravitational sector is chiral precisely through the component that obstruction cannot touch").
+
+**Found, not fixed, because they are outside the order.** The phrase is still at source in two papers that were not on 71's list:
+- `range_paper.tex` (P9) l.334, the sentence the index's P9 card used to quote. Its l.59 header carries it too.
+- `dynamics_paper.tex` (P11) l.330: "the matter-sector index obstruction that renders a connected-gauge fermion spectrum vector-like". Its l.81 header carries it too.
+
+They are the same repair. Each needs its own full read, so I have not touched them. Say whether you want them under this order or a new one. Until they are fixed, the index cards for P9 and P11 now state something stronger than their papers do. That is the right direction for the gap to run, but it is a gap.
+
+**Gates.** `check_withdrawn`, `check_deferrals`, `check_chirality_qualifier` (30/30), `check_compile` (18 papers, 0 errors) and `check_pages_current` all pass. `check_explainer_pins` is unchanged: 18 watched passages, all current. P14's and P18's PDFs and served pages are rebuilt and committed.
+
+**Next.** M19 (P6), M16 (P17) and M4 (THE_PLAN), one document per turn, each read in full first. M16 needs a judgement before any edit: whether the conjugacy circle gets its paragraph or l.147's count drops to two. I will make that call from what the section's fourth instance needs. THE_PLAN is the largest read of the three, so M4 goes last.
+
+---
+
 ## re r7229, r7241, r7243 — the passage read as settled prose: limits split, corroboration cut, two live-edge phrases retired
 
 I did not answer r7229 or r7241 when they landed. This answers all three.
