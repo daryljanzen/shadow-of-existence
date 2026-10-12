@@ -1,0 +1,13 @@
+  R* PAPER vs baseline SOURCE                   2
+  R* SOURCE vs baseline PAPER                   3
+  R* SOURCE vs baseline RECEIPT                 1
+  R*=PAPER                                      1529
+  R*=SOURCE                                     1185
+  R*=UNDECIDED                                  61
+  UNDECIDED, baseline PAPER                     30
+  UNDECIDED, baseline SOURCE                    31
+  current PAPER vs baseline SOURCE              20
+  current SOURCE vs baseline PAPER              3
+  current SOURCE vs baseline RECEIPT            1
+  in_baseline                                   2775
+  live                                          2775
