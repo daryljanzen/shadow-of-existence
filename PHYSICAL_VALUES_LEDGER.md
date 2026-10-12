@@ -484,8 +484,7 @@ has a double root: the $\kappa=0$ degeneracy, computed r1634.
 | **BAO, SDSS DR12** (6 points) | $\chi^{2}\simeq1.7$ at any $H_0$ | $\chi^{2}\simeq49$ at the same local $H_0$ | ≈ COMPUTED | P15 |
 | Inherited radiation | $\rho_r/\rho_m\approx2.0$ at the branch point | — (ΛCDM's structural analogue is $\eta$) | ≈ measured | P15 |
 | Rate near recombination | $\sim15\%$ **below** the radiation-included rate ($\rho_r/\rho_m\approx0.3$ there) | — | ≈ COMPUTED | P15, P16 |
-| Diffusion length | $\sim9\%$ longer at matched sound horizon | — | ≈ COMPUTED | P15, `damping_ratio_clean` |
-| **Damping angular scale** | $\theta_D/\theta_*\approx1.08\times$ ΛCDM's — **the ~8% signature** | — | ≈ COMPUTED | P15 §coherence |
+| **Damping angular scale** | $\theta_D/\theta_*=r_D/r_s$ moved by **under a per cent** from ΛCDM's — $r=0.9918$ with both lengths carried to the visibility peak; a sharp recombination cut instead gives $1.0231$, and the endpoint is fixed by consistency, not chosen. Its size is the handover's, its sign the common endpoint's. Not reabsorbable by $\omega_b$ ($r_D\propto\omega_b^{-0.31}$); refitting amplitude and tilt absorbs it in shape at a cost of $1.70$ in $\chi^2$ over 185 bins, a tilt of $+0.0034$ taking seven tenths of it | — | ≈ COMPUTED | P15 `sec:diffusion-scale`; receipts `P15_the_damping_signature_error_budget_and_the_convention_dominates_it`, `P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign`, `P15_damping_reabsorption` |
 | Onset redshift (**the one fitted parameter**) | $z_{\rm onset}=6797$ — fitted to the measured $100\theta_*=1.04109$, $H_0$-independent at $67.4/70/73$ | — | ≈ COMPUTED | P15 |
 | Horizon at the branch point | $k_{\rm hor}\approx0.010\ \mathrm{Mpc}^{-1}$ vs acoustic $k\approx0.022\ \mathrm{Mpc}^{-1}$ | — | ≈ COMPUTED | P15 |
 | Comoving distance / amplitude | $D_C\approx13927$ Mpc, $r_0\approx5064$ Mpc, $D_C/r_0\approx2.75$ | — | ≈ COMPUTED | P15 |
@@ -518,10 +517,6 @@ standard problem, shared with flat ΛCDM, neither dissolved nor worsened.**
 
 # §G · ? NAMED-UNRUN — quantities the corpus names and has not computed
 
-- **The full-spectrum likelihood** — the seam-to-recombination transfer end to end (`THE_PLAN` A2.3).
-- **Whether the ~8% damping-scale signature shows in the observed high-$\ell$ power** — settled that the effect
-  is real and non-reabsorbable; **not** settled what it does to the observable. *~90% degenerate with $n_s$ at
-  fixed $\theta_*$.*
 - **The derivation, as against the measurement, of $\eta$ and $\rho_r/\rho_m$** — open family 3.
 - **$A_s$ and $n_s$** — carried as inherited, not derived.
 - **The progenitor spectrum.**
