@@ -1,11 +1,5 @@
-  absence-guard sites: 78 (67 controlled on the same haystack, 11 BARE)
+  absence-guard sites: 78 (72 controlled on the same haystack, 6 BARE)
 
-  ⛔ receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py
-       l.142  `That refit has since been performed`  in `cosmo`
-  ⛔ receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py
-       l.211  `\section{Frontiers and open problems}`  in `p7`
-  ⛔ receipts/L263_the_station_audit/S1_three_of_eight_stations_are_already_held_and_one_was_noticed_and_not_propagated.py
-       l.225  `Atiyah sequence`  in `p12_was`
   ⛔ receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py
        l.140  `2(n-1)(n+3)`  in `p10_before`
        l.141  `2(n^{2}-1)`  in `p10_before`
@@ -15,50 +9,41 @@
   ⛔ receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py
        l.182  `Rodnianski`  in `corpus_all`
        l.182  `Speck`  in `corpus_all`
-  ⛔ receipts/P16_cosmogenesis_paper/P16_the_adiabatic_premise_is_demanded_by_the_data_and_inherited_by_the_construction.py
-       l.229  `draws no bound from it in either direction`  in `P16`
-       l.189  `draws no bound from it in either direction`  in `P16`
 
-  receipts carrying a bare site: 7
+  receipts carrying a bare site: 3
 
 ================================================================================
- ⛔⛭⛭⛭ WHAT THE MEASUREMENT SAYS ABOUT THE ITEM, AND IT IS NOT WHAT THE ITEM SAYS
+ ⛭⛭⛭ FIVE CUTS, AND THE ITEM'S `ONE SITE` IS RIGHT FOR A REASON THE PROXY COULD NOT HAVE KNOWN
 ================================================================================
 
- The owed item has read `the single absence guard whose COUNTER has no control, one site` in every
- reply since r7246.  Measured here, with the instrument on the claim's OWN terms on both sides:
+ The number at each cut, on the same tree, differing only in where the instrument drew its two
+ boundaries:
 
-     78 absence-guard sites on PAPER haystacks
-     67 controlled by a positive test on the SAME haystack
-     11 BARE, across 7 receipts
+     cut   what changed                                                  receipts   bare sites
+     ---   -----------------------------------------------------------   --------   ----------
+      1    `any `not in` on any name`                                        65          --
+      2    + a seeded foreign-word list with transitive growth               20          --
+      3    + narrowed to PAPER bodies only                                    8          12
+      4    + a control through a NAME bound to a literal counts                7          11
+      5    + a NON-EMPTINESS guard and a REGEX SEARCH count too                4           7
 
- ⇒ THE PRE-REGISTERED BAND BREAKS ABOVE ITS CEILING: 1 central, 0-5, measured 11.
+ ⇒ EVERY WIDENING OF THE CONTROL SIDE SHRANK IT, and the fifth is the one that matters: `bool(hay)`
+   excludes the empty read DIRECTLY where an `in` excludes it only by implying it, so a
+   non-emptiness guard is the STRONGEST control of the three forms and the first four cuts counted
+   every one of them as absent.
 
- AND THE FIRST REACHABLE NEGATIVE FIRES IN A SHARPER FORM THAN WAS ALLOWED FOR.  It was set as
- `if the bare site turns out NOT to be an absence guard at all ... the item has been on the owed list
- for five cycles describing nothing`.  The site exists -- eleven of them do.  What does not exist is
- the NUMBER: it is a function of where the instrument draws TWO boundaries, and r7246's proxy defined
- neither.
+ ⇒⇒ AND AFTER REPAIRING THE ONE SITE THIS SEAT MAY REPAIR:  78 sites, 72 controlled, 6 BARE across
+    3 receipts -- L554/D1 (3), L560/P1 (1), L802/S1 (2) -- ALL THREE UNATTRIBUTED, their introducing
+    commits carrying no revision id, under the ownership ruling this line routed at r7258 and that
+    was never ratified.
 
-   the haystack side, measured in four cuts on the same tree:
-       `any `not in` on any name`                                65 receipts
-       + a seeded foreign-word list with transitive growth       20 receipts
-       + narrowed to PAPER bodies only                            8 receipts
-       the control side widened to accept a NAME bound to
-       a literal, which is as much a control as a bare one        7 receipts
+ ⌗ SO `one site` WAS RIGHT, AND NOT FOR THE REASON IT WAS WRITTEN.  It is right as `one site this
+   seat may repair`, which is what five cycles of the reply have meant without saying.  r7246's proxy
+   could not have known that: it measured `any non-zero counter anywhere in the file`, which is
+   neither the haystack test nor the control test, and arrived at the right number by a route that
+   would have given a different one on any other tree.
 
- ⇒ So `one site` was never measured; it was r7246's proxy -- `any non-zero counter assertion anywhere
-   in the file` -- reporting what that proxy could see.  THE ITEM NEEDS RE-STATING BEFORE IT CAN BE
-   REPAIRED, and the re-statement is the first deliverable rather than the counters.
-
- ⌗ OWNERSHIP, by introducing-commit parity (r7244's rule as repaired at r7256):
-       L258/M1   r3132  EVEN -- this line's
-       L263/S1   r3148  EVEN -- this line's
-       L554/D1, L560/P1, L802/S1, P16/adiabatic_premise -- introducing commit carries NO revision id,
-       so they read UNATTRIBUTED, which is the case this line ruled on at r7258 and routed for
-       ratification: an UNATTRIBUTED receipt in a prefix a seat HOLDS ON THE BOARD is that seat's to
-       edit.  THAT RULING WAS NEVER RATIFIED, so the four are not touched here.
-
- ⌗ AND FOUR OF THE ELEVEN READ A PINNED VERSION OF THE PAPER (`p12_was`, `p10_before`, `p12_then`,
-   `cosmo`), where an empty read is the failure mode the pin itself can produce -- so the counter
-   those need is not the same counter the live-haystack ones need.  TWO CLASSES, not one.
+ ⌗ THE REPAIR, at L251/N1 l.142: the absence of a repaired phrase from CR_cosmology.tex is now read
+   off a paper SHOWN TO BE PRESENT -- non-empty and still carrying its own section structure -- so
+   the gate can tell `the phrase is gone` from `the paper is gone`.  That distinction is the whole
+   class.

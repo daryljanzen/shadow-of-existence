@@ -138,8 +138,18 @@ check(f'⓵ᵈ the drift is {len(undeclared)} phrase(s) across {len(_papers)} pa
 # ** the phrase the observer line repaired must be GONE, or this sweep is measuring a stale tree **
 cosmo = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8',
              errors='replace').read()
-check('⓵ᵉ and r3111\'s own repair has landed -- "That refit has since been performed" is gone',
-      'That refit has since been performed' not in cosmo)
+# ⛔⛭⛭ r7266+60, on r7265's order ①: ** THIS ABSENCE HAD NO POSITIVE CONTROL, AND IT IS THE ONE
+#   SITE OF ITS CLASS THIS SEAT MAY REPAIR. **  *An absence asserted against a file read into a name
+#   holds TRIVIALLY if the read returns the empty string -- a moved file, a wrong root, a `git` call
+#   that failed -- so the gate passed on nothing and could not tell `the phrase is gone` from `the
+#   paper is gone`.*
+#     ⇒ *The counter is the file's own identity: `CR_cosmology.tex` must be non-empty AND must still
+#       carry its own section label, so the absence is read off a paper that is demonstrably there.*
+check('⓵ᵉ and r3111\'s own repair has landed -- "That refit has since been performed" is gone, '
+      'READ OFF A PAPER SHOWN TO BE PRESENT: the file is non-empty and still carries its own '
+      '`\\section` structure, so the absence is a fact about the text and not about the read',
+      'That refit has since been performed' not in cosmo
+      and len(cosmo) > 10000 and '\\section{' in cosmo)
 
 #: ⛔⛭ ** THE SEED WENT STALE AND THE CHECK FAILED SILENTLY FOR IT -- repaired r4121. **
 #: *This seeded on `r3103`, `r3104`, `r3112`, and `C.collisions()` no longer returns any of them:

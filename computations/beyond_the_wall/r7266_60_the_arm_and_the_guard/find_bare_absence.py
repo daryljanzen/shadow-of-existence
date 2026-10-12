@@ -80,6 +80,24 @@ def sites(path):
     src = open(path, encoding='utf-8', errors='replace').read()
     foreign = foreign_haystacks(tree, src)
     absent, present = [], {}
+    # ⛔⛭⛭⛭ FIFTH CUT, AND IT IS THE ONE THAT MATTERS MOST: a NON-EMPTINESS guard and a REGEX SEARCH
+    #   on the same haystack are positive controls too, and they are STRONGER than an `in` -- a
+    #   `bool(hay)` excludes the empty read directly rather than by implying it.
+    #     ⇒ *** Four of the sites the fourth cut called BARE carry one of these two forms.  So the
+    #         number has been a function of the instrument at every single cut, and each widening of
+    #         the CONTROL side shrank it: 65, 20, 8, 7 receipts, and now this. ***
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Call) and isinstance(n.func, ast.Name) and n.func.id == 'bool':
+            for arg in n.args:
+                h = haystack_name(arg)
+                if h:
+                    present.setdefault(h, []).append((n.lineno, '<bool()>'))
+        if isinstance(n, ast.Call) and isinstance(n.func, ast.Attribute) \
+                and n.func.attr in ('search', 'findall', 'finditer', 'match', 'count', 'find'):
+            for arg in n.args:
+                h = haystack_name(arg)
+                if h:
+                    present.setdefault(h, []).append((n.lineno, '<' + n.func.attr + '()>'))
     for n in ast.walk(tree):
         if not isinstance(n, ast.Compare) or len(n.ops) != 1:
             continue
