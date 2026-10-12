@@ -332,6 +332,12 @@ _PARITY_BY_NODE = {'54': 0, '60': 0,          # EVEN half
                                             # FOR_70.md at r6929.  Suffixed form only, never a
                                             # bare rNNNN, so it holds NO half -- the same
                                             # answer as cc66 and for the same reason.
+                   '71': None,                # FORMALISATION seat, spun up as a code seat and
+                                            # reporting at r7051 into its own window; its space
+                                            # in the tree was created at r7259, and nothing of
+                                            # that earlier report reached this repository.
+                                            # Suffixed form only, so it holds NO half -- the
+                                            # same answer as cc66 and 70.
                    'ci': None}                # the runner is not a line and holds no half
 _NODE = _os.environ.get('NODE')
 if _NODE is None:
