@@ -18,6 +18,13 @@ RULE.*
     merges); `S22`'s revision selector (`git log --grep`, which searches the BODY, so a later commit
     MENTIONING this revision pulled its files in); and `P03`'s ownership clause (a list of the two
     prefixes the ownership rule had reached at `r7222`, which an ORDER widened).*
+  ⛔ ** AND A SIXTH, WHICH IS THIS RECEIPT'S OWN GATE AGAINST THE SHAPE. **  *`Ⓕ①` asked whether
+    both repaired receipts carried `BEFORE = '` -- the identifier MY repair happened to choose.  `66`
+    repaired the same defect independently in the same cycle, one turn further, and the trunk's
+    spelling (`BASE_SHA`, `REV_TIP`) came in at the merge: the gate went red ON THE WORK SUCCEEDING,
+    which is the sentence above reaching the instrument that wrote it.*
+  ⇒ *** It is rewritten to the property -- a constant bound to a literal sha that RESOLVES and is an
+      ANCESTOR of `HEAD` -- which both spellings satisfy and no moving ref does. ***
 
 ** ⛭⛭ ① `one site` WAS NEVER MEASURED, AND IT IS RIGHT BY ACCIDENT. **  *Five cuts of the instrument
 on one tree: `65`, `20`, `8`, `7`, `4` receipts.  The number is a function of where the instrument
@@ -54,7 +61,7 @@ imaginary unit and no sign.  The two MAGNITUDES are left exactly as the order ru
 ⛔ *Sources: `r7265`'s four items; `PREDICTION.md`, pushed before any item was worked; the instrument
 and its five cuts in `find_bare_absence.py`; the arm and its calibration in `pos_arm.py`; the hand
 reading in `WIDENING_HAND.tsv`; `P18` and `P16` at a literal reference commit and after; and
-`L-249`'s rule at `r3105`, which is what all five snapshot gates needed.*
+`L-249`'s rule at `r3105`, which is what every one of the snapshot gates needed.*
 """
 
 import hashlib
@@ -118,7 +125,7 @@ p16, p16b = flat(read(P16)), flat(at_before(P16))
 
 print()
 print('=' * 100)
-print('S23 -- the r7265 order, four items, and the five gates that stored a snapshot of a rule')
+print('S23 -- the r7265 order, four items, and the six gates that stored a snapshot of a rule')
 print('=' * 100)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
@@ -295,7 +302,8 @@ gate('Ⓔ③ ✔⛭ and the one form that was always right is untouched: the off
      '$2\\pi ip$' in p16 and '$2\\pi ip$' in p16b)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-print('\n── Ⓕ  THE FIVE SNAPSHOT GATES, EACH WITH ITS SNAPSHOT GONE AND ITS RULE IN PLACE ──\n')
+print('\n── Ⓕ  THE SNAPSHOT GATES, EACH WITH ITS SNAPSHOT GONE AND ITS RULE IN PLACE -- AND THE '
+      'SIXTH IS Ⓕ① ITSELF ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 _S21 = ('receipts/L_probability/S21_a_pre_registered_negative_can_fire_without_reaching_the_claim_it_'
         'was_written_to_test_and_mine_did_while_the_order_was_wrong_about_both_defects_in_opposite_'
@@ -305,11 +313,50 @@ _S22 = ('receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_ci
 _P03 = ('receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_'
         'fall_below_one_and_the_contested_direction_is_two_different_quantities.py')
 _s21, _s22, _p03 = read(_S21), read(_S22), read(_P03)
-gate('Ⓕ① ⛔ the REFERENCE-COMMIT snapshot is gone from both receipts that carried it: neither '
-     'computes `merge-base HEAD origin/main`, and both pin a literal sha and assert it resolves',
-     "'merge-base', 'HEAD', 'origin/main'" not in _s21
-     and "'merge-base', 'HEAD', 'origin/main'" not in _s22
-     and "BEFORE = '" in _s21 and "BEFORE = '" in _s22)
+# ⛔⛭⛭⛭ THE SIXTH INSTANCE OF THIS REVISION'S OWN SHAPE, AND THE GATE THAT CARRIED IT IS THIS
+#   ONE.  *Ⓕ①'s first form asked whether both repaired receipts carried `BEFORE = '` -- THE IDENTIFIER
+#   THIS SEAT'S REPAIR HAPPENED TO CHOOSE.  `66` repaired the same defect independently in the same
+#   cycle and carried it one turn further -- `BASE_SHA..REV_TIP`, a RANGE where mine pinned a point,
+#   because a base-to-working-tree diff on a merged trunk is every file four seats changed since --
+#   and the trunk's spelling came into this branch at the merge.*
+#   ⇒ *** So the gate written to catch a stored snapshot of a rule had stored one itself, and it went
+#       red on the merge.  THE SNAPSHOT WAS THE VARIABLE'S NAME, and the change that broke it was the
+#       work succeeding, which is this revision's result reaching its own instrument. ***
+#   ⌗ *Rewritten to the PROPERTY, which is name-agnostic: a module constant bound to a literal hex
+#     sha that RESOLVES to a commit and is an ANCESTOR of `HEAD`.  Both repairs satisfy it under two
+#     different spellings; a base computed from a moving ref satisfies neither half, and the gate
+#     carries a control for each half rather than trusting the regex.*
+_SHA_PIN = re.compile(r"^([A-Z][A-Z0-9_]*)\s*=\s*'([0-9a-f]{8,40})'", re.M)
+_MOVING = "'merge-base', 'HEAD', 'origin/main'"
+
+
+def sha_pins(src):
+    """every module constant bound to a literal sha that RESOLVES to a commit in this history and is
+    an ancestor of HEAD -- a historical pin read by what it IS and not by what it is called."""
+    out = []
+    for _m in _SHA_PIN.finditer(src):
+        _h = _m.group(2)
+        if subprocess.run(['git', 'cat-file', '-e', _h + '^{commit}'], cwd=ROOT,
+                          capture_output=True).returncode == 0 \
+                and subprocess.run(['git', 'merge-base', '--is-ancestor', _h, 'HEAD'],
+                                   cwd=ROOT, capture_output=True).returncode == 0:
+            out.append(_m.group(1))
+    return out
+
+
+_CTRL_MOVING = "BASE = subprocess.run(['git', 'merge-base', 'HEAD', 'origin/main'])\n"
+_CTRL_GONE = "BEFORE = 'deadbeefdeadbeef'\n"
+_p21, _p22 = sha_pins(_s21), sha_pins(_s22)
+gate(f'Ⓕ① ⛔⛭⛭⛭ the REFERENCE-COMMIT snapshot is gone from both receipts that carried it, and it '
+     f'is tested as the PROPERTY rather than as a spelling: neither computes `merge-base HEAD '
+     f'origin/main`, and each binds a constant to a literal sha that resolves and is an ancestor of '
+     f'`HEAD` --- `{", ".join(_p21) or "none"}` in one and `{", ".join(_p22) or "none"}` in the '
+     f'other, TWO SPELLINGS OF ONE PROPERTY.  ** This gate\'s first form asked for the NAME and went '
+     f'red when `66`\'s own repair of the same defect replaced mine: the sixth instance of this '
+     f'revision\'s shape was this gate **',
+     _MOVING not in _s21 and _MOVING not in _s22 and _p21 and _p22
+     and _MOVING in _CTRL_MOVING and not sha_pins(_CTRL_MOVING)
+     and not sha_pins(_CTRL_GONE))
 
 gate('Ⓕ② ⛔ the REVISION SELECTOR snapshot is gone: neither receipt passes `--grep` to `git log` for '
      'its own commits, because `--grep` searches the BODY and a later commit that merely MENTIONS '
@@ -404,7 +451,7 @@ for l in _fail:
 print('=' * 100)
 print()
 print('  ⛔ ** EVERY ONE OF THE FOUR ITEMS WAS MIS-DESCRIBED, and in each case the instrument that')
-print('     would have caught it stored a SNAPSHOT OF A RULE instead of the rule: ** five instances')
+print('     would have caught it stored a SNAPSHOT OF A RULE instead of the rule: ** six instances')
 print('     in one revision, from a routed backlog to a reference commit to a list of prefixes.')
 print('  ⓵ ** `one site` was never measured ** -- five cuts gave 65, 20, 8, 7, 4 receipts, and it is')
 print('     right only read as `one site this seat may repair`.')

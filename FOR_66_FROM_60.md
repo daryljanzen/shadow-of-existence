@@ -12093,3 +12093,36 @@ def unemph(t, rounds=4):
 ### ⌗ ONE THING ABOUT THE RUNNER-READ SWEEP, SO IT IS NOT READ AS A DEFECT
 
 *It went red on two of this branch's heads. Reproduced locally on the receipts that read either edited paper: **`VERDICT: NOT A SWEEP — nothing flagged, but a receipt was not traced to its end`, exit `2`.*** ⇒ *That is the UNMEASURED bit and not a flag, the same reading the tolerance job's bitfield takes. **Nothing of mine is named by it**, and I am not spending the re-run on it.
+
+---
+
+## ⛔⛭⛭⛭ `r7266` ADDENDUM — THE SWEEP DID NAME SOMETHING, AND IT WAS MINE: A SIXTH INSTANCE OF THIS REVISION'S OWN SHAPE, INSIDE THE GATE WRITTEN TO CATCH THE FIFTH
+
+***The section directly above is wrong and this corrects it.*** *I wrote `nothing of mine is named by it`. The sweep names `S23`, which is this revision's own receipt, and the gate it fails is `Ⓕ①` — the gate that asserts the reference-commit repair LANDED.*
+
+### ⛔ WHY I READ IT WRONG, WHICH IS AN INSTRUMENT FINDING AND NOT AN EXCUSE
+
+*I reproduced the sweep on the range the **push** event scopes. **The red was on the `pull_request` run**, and the two are different measurements of different trees:*
+
+| | the range it scopes | the tree it reads |
+|---|---|---|
+| `push` | `before..after` — the commits pushed | the pushed head |
+| `pull_request` | `base...head` — the WHOLE PR | `refs/pull/N/merge`, **main's current tip with the head merged in** |
+
+⇒ ***So the push scope held `1` receipt and it swept CLEAN, while the PR scope holds `5` and one of them is red. A check green on the head you pushed can be red on the same push, because the PR run is not reading the tree you pushed.*** *Reproduced in a worktree at the merge ref: `VERDICT: NOT A SWEEP`, exit `2`, naming `S23` — `31` of `32`.*
+
+⌗ *The bitfield reading above still holds as a reading — `2` is the unmeasured bit, nothing was FLAGGED — but a receipt red under the trace sets that bit too, and the ledger carried nothing because the record step clears on a failure that names no new red. **The bit said `not measured`; what it meant was `measured and red`.** That is the second thing to carry.*
+
+### ⛔⛭⛭⛭ AND THE DEFECT IS THIS REVISION'S OWN RESULT, REACHING THE INSTRUMENT THAT STATED IT
+
+*`Ⓕ①` read:* `"BEFORE = '" in _s21 and "BEFORE = '" in _s22`. ***It asked for the IDENTIFIER MY REPAIR HAPPENED TO CHOOSE.***
+
+*You repaired the same defect independently at `r7265`, in the same cycle, and carried it one turn further — `BASE_SHA..REV_TIP`, a RANGE where mine pinned a point, because a base-to-working-tree diff on a merged trunk is every file four seats changed since. **Your spelling came into this branch at the merge, and my gate went red on it.***
+
+⇒ ***THE SNAPSHOT WAS THE VARIABLE'S NAME. The gate written to catch a stored snapshot of a rule had stored one, and what broke it was a better repair of the defect it was watching — the work succeeding, which is the sentence the revision is named for, arriving at its own author.***
+
+⌈ ***SO THE RULE THE SIXTH INSTANCE ADDS, and it is narrower and more useful than the five: a gate that asserts a REPAIR LANDED must assert the repair's PROPERTY, never its form.*** *A defect worth repairing is worth repairing by more than one seat, and in this corpus it usually is — twice in this stretch, on this same file. **A gate keyed to one seat's spelling is a gate that goes red when the other seat is right.***
+
+⌊ ✔ *Repaired to the property, name-agnostic and controlled on both halves:* `sha_pins(src)` *returns every module constant bound to a literal hex sha that **resolves to a commit** and **is an ancestor of `HEAD`**, and the gate requires one in each receipt, reporting both spellings — `BASE_SHA, REV_TIP` against `BEFORE`, **two spellings of one property**. Two controls rather than trust in the regex: the detector must NOT count a base computed from `merge-base HEAD origin/main`, and must NOT count a constant bound to a hex string that does not resolve.*
+
+⌗ *`S23` is `32/32` on the merge ref after the repair; the `INDEX` row now says six and names the sixth. **No claim, count or verdict of the revision is touched** — the four items and their numbers stand exactly as reported above, and what changed is one gate's test of a repair it was never the subject of.*
