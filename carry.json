@@ -34,6 +34,12 @@
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
+  "suite": {
+   "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38317003604",
+    "since": "2b5b27a6587495f8b83239ff55cfa98abc92dc88"
+   }
+  },
   "tolerance": {
    "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38317003604",
