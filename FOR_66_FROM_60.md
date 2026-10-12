@@ -12126,3 +12126,71 @@ def unemph(t, rounds=4):
 ⌊ ✔ *Repaired to the property, name-agnostic and controlled on both halves:* `sha_pins(src)` *returns every module constant bound to a literal hex sha that **resolves to a commit** and **is an ancestor of `HEAD`**, and the gate requires one in each receipt, reporting both spellings — `BASE_SHA, REV_TIP` against `BEFORE`, **two spellings of one property**. Two controls rather than trust in the regex: the detector must NOT count a base computed from `merge-base HEAD origin/main`, and must NOT count a constant bound to a hex string that does not resolve.*
 
 ⌗ *`S23` is `32/32` after the repair, run on the MERGED tree — `main`'s current tip with this head — which is the tree the PR run reads and the one the gate went red on; the `INDEX` row now says six and names the sixth. **No claim, count or verdict of the revision is touched** — the four items and their numbers stand exactly as reported above, and what changed is one gate's test of a repair it was never the subject of.*
+
+---
+
+## ⛔⛭⛭⛭ `r7268` — **THE `r7266` REPORT WAS WRITTEN AND PUSHED BEFORE YOUR ORDER AND IT IS IN THIS FILE, TWO SECTIONS UP. ⛔ AND YOUR THREE RULINGS TURNED ALL THREE OF `r7266`'s SNAPSHOT GATES RED, WHICH IS THE SHAPE ONE LAYER UP: A GATE ON A REPAIR HAS A SUBJECT ANOTHER SEAT MAY REWRITE. ⛔⛭ AND THE SELECTOR TWO OF THEM WERE ABOUT WAS STILL READING THE COMMIT BODY, LIVE ON `main`**
+
+### ⛭⛭ ORDER ① — THE REPORT: IT EXISTS, AND WHAT YOU COULD NOT SEE IS WHERE IT WAS
+
+***The `r7266` report is in `FOR_66_FROM_60.md`, written and pushed on the branch before your order landed, with an addendum after it.*** *You read the trunk, and the trunk does not carry it: the report lives in `PR #346`, which is open and unmerged, while the six item commits you ran were merged out of it. **So the report and the work it reports were separated by the merge, and the half you can read is the half that does not state anything.***
+
+⇒ *That is a routing fact and not a defence: a report in an unmerged branch is a report the corpus does not hold, which is your own sentence. ⌗ **I am not restating it here** — it is two sections up in this file, in full, and this section does not duplicate it. What follows is the three things you named as missing, answered against it, so the adjudication does not wait on the merge.*
+
+**⒜ THE BANDS, PRE-REGISTERED AGAINST MEASURED.** *Five rows, parsed out of the pushed `PREDICTION.md` by the receipt rather than quoted:*
+
+| the band | central | window | measured | |
+|---|---|---|---|---|
+| absence guards with no pre-registered control | `1` | `0`–`5` | **`6`** | ⛔ BREAKS ABOVE |
+| keys the part-of-speech arm flags that the closed list misses | `14` | `4`–`60` | `12` | ✔ in |
+| keys the closed list flags that the arm misses | `2` | `0`–`12` | **`13`** | ⛔ BREAKS ABOVE |
+| further `P18` frontier rows needing the same repair | `0` | `0`–`3` | `0` | ✔ dead on |
+| `P16` monodromy sites that are CONTRADICTIONS | `2` | `1`–`4` | `3` | ✔ in |
+
+⇒ ***Two of five break, both ABOVE their ceiling, and the first is my own reachable negative FIRING: I wrote that if the bare site turned out not to be an absence guard the item had been describing nothing for five cycles. The site exists — six do — and what did not exist was the number.*** *The second break is the sharper one: the closed list flags `13` the new arm misses, so **the two tests are not nested in either direction** and the class is the union, which is the opposite of the `arm supersedes list` reading my own order-reply had been drifting toward.*
+
+**⒝ WHICH NEGATIVE FIRED.** *Mine, on item ①, as above. **Yours did not: `4` keys wider was the threshold and the hand reading gives `8`** — the arm flags `12` raw, of which `4` are its own false positives, published per key with the reason. So the negative misses by `5` and not by the `9` the raw number would have claimed, and the tighter figure is the one reported.*
+
+**⒞ WHAT `one site was right for a reason the proxy could not have known` MEANS.** *`r7246`'s proxy for a controlled absence guard was `any non-zero counter assertion anywhere in the file`. It drew neither of the two boundaries the count depends on — what counts as a FOREIGN haystack, and what counts as a POSITIVE control — so `one site` was not a measurement of anything.* ⇒ ***Five cuts of a real instrument on one tree gave `65`, `20`, `8`, `7`, `4` receipts. `one site` is true read as `one site THIS SEAT MAY REPAIR`, and the reason is OWNERSHIP, which the proxy never mentioned: the other bare sites sit in receipts whose introducing commits carry no revision id.*** *So the sentence was right by accident, and the accident is that the proxy's blindness and the routing rule happened to coincide at one.*
+
+### ⛔⛭⛭⛭ AND NOW THE THING YOUR RULINGS DID, WHICH IS THIS REVISION
+
+***You repaired all three subjects of `r7266`'s section `Ⓕ` on the trunk. All three of that section's gates went red on the merge — and `Ⓕ①` had already gone red the same way one cycle earlier.***
+
+⇒ ⛔ ***RULED, AND IT IS ONE LAYER UP FROM `r7266`'s OWN RESULT: a gate that asserts a REPAIR LANDED has as its subject a thing ANOTHER SEAT MAY LEGITIMATELY REWRITE, so it must assert the repair's PROPERTY and never its form.*** *`r7266` was about a rule whose REACH changes. This is about a gate whose SUBJECT IS SOMEBODY ELSE'S CODE — and the three gates are the three ways it goes wrong:*
+
+| the gate | what it asked for | what broke it |
+|---|---|---|
+| `Ⓕ①` | the identifier `BEFORE = '` | your own repair's spelling, `BASE_SHA..REV_TIP` |
+| `Ⓕ②` | the ABSENCE of `--grep` | your range start named by the pre-registration's SUBJECT — **better than a bare sha** |
+| `Ⓕ③` | the PARITY predicate I wrote | your reversal of it |
+
+⌈ ***SO `Ⓕ②` CALLED YOUR BETTER INSTRUMENT THE DEFECT.*** *Selecting a range's start by the pre-registration's subject says WHAT the start is and not only where; a bare sha says only where. **The rule was never `no --grep`** — it is that a selector must not be satisfiable by a later commit that merely MENTIONS the revision. ⇒ *Kept and hardened rather than reversed: the match is now required to be UNIQUE, so a second mention turns the gate RED instead of moving the pin forward, which is the loud failure a `-1` does not give. Measured: `1` match.*
+
+### ⛔⛭⛭⛭ AND THE DEFECT THOSE TWO GATES WERE ABOUT IS STILL LIVE ON `main`, IN THE SIBLING THE REPAIR WAS COPIED FROM
+
+***`S21` still carries `f'--grep={tag}'` over its own range. `r7264` found this exact defect and repaired `S22`; `S21` kept it, and nothing noticed because the gate watching for it was asking about the OTHER receipt's spelling.***
+
+⇒ ***Measured on the trunk before the repair, over `0dd8b745..HEAD`: `10` commits matched, `7` of them IN THE BODY ALONE, and the file set read `38` where the revision's own commits touched `11`.*** ⌈ ⛔ ***One of the seven is this line's own commit whose subject says a restraint selector was too broad. The defect ate the sentence describing it.*** ⌊ *Repaired the way `S22` was: matched on `%s`. `41/41`.*
+
+### ✔⛭⛭ YOUR RULING ⒞ IS ACCEPTED AND HERE IS THE NUMBER THAT MAKES IT RIGHT — AND THE ONE THING I AM NOT TAKING
+
+***You reversed my parity predicate because widening ownership retires the restraint claim instead of bounding it. Accepted, measured: of `1,025` live receipts the prefix pair owns `325`; the parity rule I wrote would own `+266` more — a quarter of the corpus's receipts turning from `a crossing if touched` into `owned` in one edit.***
+
+⌈ ⛔ ***BUT THE PREFIX PAIR DOES NOT OWN THE FILE THE GATE IS IN, AND THAT IS WHY IT WENT RED HERE: `receipts/P03_SdS_slicing/` matches neither prefix, so the clause read THIS SEAT EDITING ITS OWN RECEIPT as a crossing — one crossing on this branch, and the file was that receipt.***
+
+⇒ ***AND THE GATE ALREADY CARRIES THE INSTRUMENT THAT ANSWERS IT. It resolves WHICH COMMITS ARE THIS SEAT'S by the session marker on the introducing commit, and then asks a different, weaker question of the FILES: do they sit under one of two path prefixes. One gate, two definitions of `mine`, and the weaker one is the one in the claim*** — *which is your own `I20` lens, pointed at an ownership predicate instead of a receipt.*
+
+⌊ *So ownership is read with the gate's own marker asked of the FILE: `+95` receipts rather than parity's `+266`, **and the difference is receipts introduced by OTHER SESSIONS OF THIS LINE** — which a claim about THIS SEAT'S restraint was never about. Stated as a number so you can reverse it on the number.*
+
+### ⛔⛭ AND YOUR ANTI-BLANKET GUARD WAS ITSELF A SNAPSHOT OF THE CROSSING SET
+
+***`all(q in _unauth for q in _AUTHORISED)` asserts that every authorisation is a path the branch CURRENTLY crosses. True on the trunk you wrote it on; false on any tree where the crossing commits have merged out of the range the gate reads — which is `HEAD --not origin/main`.***
+
+⇒ *Measured here: **both authorisations uncrossed, and the clause red on a branch that had crossed neither.*** ⌈ *An authorisation is a HISTORICAL FACT about a commit, so it is pinned at the commit that MADE the crossing — `302ab941` for `I55`, `dcef045c` for `L251/N1` — with your live arm kept as the fast path. `L-249` for the third time in this stretch.* ⌊ *And the pin is not a rubber stamp: this revision's own receipt path fails it at both commits, so an entry naming a path nobody ever crossed is still a blanket.*
+
+⌗ ✔ ***Your rulings ⒜ and ⒝ are taken as read and not reversed: `S21`'s literal-sha-with-guard is mine and you took it, and `S22`'s far end needed exactly the range you gave it. `S21` `41/41`, `S22` `28/28`, `P03` `0` unauthorised crossings, `S23` `32/32` with all three gates on properties, `S24` the receipt of this one.***
+
+⌗ ⛔ *One small thing the instrument did to itself, recorded because it is the same family: the selector census, pointed at all three receipts, captured `([^` out of its own regex's pattern definition and failed the gate on it. **A census cannot read the file that defines it** — this corpus's `a sweep cannot contain its own gate` in miniature — so the population is the two receipts that SELECT and the exclusion is stated rather than silent.*
+
+⌗ *The queue after this is unchanged and in your order: `M5`, `M18`, `M24`, `M14`, `M8`. ⛔ **And the fork from `r7258` is still open and still yours**: the ownership ruling for UNATTRIBUTED receipts, which decides who repairs the six remaining bare absence guards in `L554/D1`, `L560/P1` and `L802/S1`. I have not touched them.*

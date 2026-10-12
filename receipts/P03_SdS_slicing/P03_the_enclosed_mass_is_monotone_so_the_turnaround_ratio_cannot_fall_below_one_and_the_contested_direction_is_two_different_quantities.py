@@ -390,8 +390,30 @@ _added = {l for c in _MINE_C
                         '--format=', c).split('\n') if l}
 
 
+# ⛔⛭⛭⛭ r7268 (60): AND THE PREDICATE DID NOT OWN THE FILE THE GATE IS IN.  *`66`'s r7265 note
+#   is right that widening this to a PARITY rule retires the claim rather than bounding it, and that
+#   reversal is accepted below.  But the prefix pair is still a snapshot of where this seat's
+#   receipts HAPPENED to live, and this receipt is the counterexample: `receipts/P03_SdS_slicing/`
+#   matches neither prefix, so the clause read THIS SEAT EDITING ITS OWN RECEIPT as a crossing --
+#   which is what it did on this branch, at one crossing, the file being this one.*
+#   ⇒ *** And the gate already carries the instrument that answers it: the session marker on the
+#       INTRODUCING commit, which this gate trusts to say which COMMITS are this seat's and then does
+#       not ask of the FILES.  One gate, two definitions of `mine`, and the weaker one was the one in
+#       the claim. ***
+#   ⌗ *So ownership is read with the gate's own marker, asked of the file: the prefixes stay as the
+#     fast path, and another seat's receipt is still foreign -- the claim keeps its force and loses
+#     the snapshot.*
+_OWN_PFX = ('receipts/P15_CR_cosmology/', 'receipts/L_probability/S')
+_HERE_REL = os.path.relpath(os.path.abspath(__file__), ROOT).replace(os.sep, '/')
+
+
+def _introduced_by_this_seat(q):
+    _m = _SESS.search(_git('log', '--diff-filter=A', '--format=%B', '-1', '--', q))
+    return _own_sess is not None and bool(_m) and _m.group(1) == _own_sess
+
+
 def _owned(q):
-    return q.startswith('receipts/P15_CR_cosmology/') or q.startswith('receipts/L_probability/S')
+    return q.startswith(_OWN_PFX) or _introduced_by_this_seat(q)
 
 
 def _outside(paths):
@@ -416,23 +438,44 @@ def _outside(paths):
 #   ⌊ *`66`'s order is the cause, so `66` carries the exception.  **Stated for the holding seat to
 #     reverse** -- no claim, count or verdict is touched, only the authorisation this gate had no way
 #     to represent.*
+# ⛔⛭⛭ r7268 (60): AND THE GUARD AGAINST A BLANKET AUTHORISATION WAS A SNAPSHOT OF THE CROSSING
+#   SET.  *It asserted that every authorisation is a path this branch CURRENTLY crosses -- true on
+#   the trunk the exception was written on, false on any tree where those commits have merged out of
+#   `HEAD --not origin/main`, which is the range this gate reads.  Measured here: both were
+#   uncrossed and the clause was red on a branch that had crossed neither.*
+#   ⇒ *** An authorisation is a HISTORICAL FACT about a commit, so it is pinned at the commit that
+#       made the crossing -- `L-249`'s rule, which is what the rest of this cycle was about -- and the
+#       live arm stays as the fast path.  A stale authorisation still cannot widen the claim: the
+#       pinned commit must resolve AND its own diff must contain the path. ***
 _AUTHORISED = {
-    # path                                                  the order that authorised reaching it
+    # path                                       (the order that authorised it, the commit that crossed it)
     'receipts/P12_algebroid_paper/I55_the_atiyah_sequence_is_exact_and_a_characteristic_class_'
-    'is_not_available.py': 'r7261 queue item 3 (M17): the citation over-reached its receipt, and '
-                           'the receipt\'s own locator was stale and repaired with it',
+    'is_not_available.py': ('r7261 queue item 3 (M17): the citation over-reached its receipt, and '
+                            'the receipt\'s own locator was stale and repaired with it', '302ab941'),
     'receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_'
-    'narrating_its_own_history.py': 'r7265 order item 3 (N1): the frontier-table repair moves a '
-                                    'number the receipt states about the same material',
+    'narrating_its_own_history.py': ('r7265 order item 3 (N1): the frontier-table repair moves a '
+                                     'number the receipt states about the same material',
+                                     'dcef045c'),
 }
+
+
+def _crossed_at(q, sha):
+    """the authorisation read at the commit that made the crossing: it resolves, and its own diff
+    carries the path.  So an entry naming a path nobody ever crossed is still a blanket."""
+    if subprocess.run(['git', 'cat-file', '-e', sha + '^{commit}'], cwd=ROOT,
+                      capture_output=True).returncode != 0:
+        return False
+    return q in _git('show', '--no-merges', '--name-only', '--format=', sha).split('\n')
 _real = [q for q in _outside(_touched) if q not in _AUTHORISED]
 _unauth = _outside(_touched)
 _inject = 'receipts/L259_the_distance_from_the_present/INJECTED_CONTROL.py'
 _ctrl = [q for q in _outside(_touched + [_inject]) if q not in _AUTHORISED]
 print(f"      with this branch as it stands: {len(_real)} UNAUTHORISED modified unowned receipt(s) "
       f"({len(_unauth)} crossed in all, {len(_AUTHORISED)} of them ordered)")
-for _q in sorted(q for q in _unauth if q in _AUTHORISED):
-    print(f"        ⌗ ordered: {_q.split('/')[-1][:58]} -- {_AUTHORISED[_q][:60]}")
+for _q, _v in sorted(_AUTHORISED.items()):
+    print(f"        ⌗ ordered: {_q.split('/')[-1][:52]} -- {_v[0][:58]}\n"
+          f"            {'crossed on this branch' if _q in _unauth else 'crossed at ' + _v[1]}"
+          f" ({'pin holds' if _crossed_at(_q, _v[1]) else 'PIN DOES NOT HOLD'})")
 print(f"      with one MODIFIED unowned receipt injected: {len(_ctrl)}")
 gate("Ⓗ② ⛔ AND THE REPAIR IS NOT VACUOUS, which is the thing a reader should doubt when an "
      "assertion is changed to clear a red: the repaired clause reads ZERO UNAUTHORISED crossings on "
@@ -444,7 +487,10 @@ gate("Ⓗ② ⛔ AND THE REPAIR IS NOT VACUOUS, which is the thing a reader shou
      len(_real) == 0 and len(_ctrl) == 1 and _inject in _ctrl
      # the exception list must not be a blanket: every entry has to be a path this branch
      # ACTUALLY crossed, or a stale authorisation would silently widen the claim.
-     and all(q in _unauth for q in _AUTHORISED))
+     and all(q in _unauth or _crossed_at(q, _AUTHORISED[q][1]) for q in _AUTHORISED)
+     # ⌗ and the pin is not a rubber stamp: a path the authorising commit did NOT touch fails it,
+     #   checked here on this receipt's own path against the same two commits.
+     and not any(_crossed_at(_HERE_REL, _v[1]) for _v in _AUTHORISED.values()))
 
 print(f"\n{BAR}")
 if fail:

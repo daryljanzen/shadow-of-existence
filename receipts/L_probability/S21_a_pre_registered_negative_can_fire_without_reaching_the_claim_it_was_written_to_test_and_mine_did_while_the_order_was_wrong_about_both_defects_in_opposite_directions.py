@@ -168,8 +168,17 @@ def files_of_revision(tag):
     where the revision had touched four.  **A restraint gate has to measure the restraint's own
     commits, not the branch's position.***
     """
-    shas = subprocess.run(['git', 'log', '--no-merges', '--format=%H', f'--grep={tag}',
-                           BEFORE + '..HEAD'], cwd=ROOT, capture_output=True, text=True).stdout.split()
+    # ⛔⛭⛭⛭ r7268 (60): AND THIS SELECTOR READ THE COMMIT **BODY**, which is the defect
+    #   `r7264` found in this receipt's SIBLING and repaired there while this one kept it.  *`--grep`
+    #   matches the whole message, so every commit that merely MENTIONS the tag -- a later revision's
+    #   reply, a repair note, this line's own commit about selectors being too broad -- joins the
+    #   revision's own set.*  ⇒ *** Measured before the repair, on this range: `10` matches of which
+    #   `7` matched in the BODY ALONE, and the file set read `38` where the revision's own commits
+    #   touched `11`.  The subject line is the one part of a message that names the revision the
+    #   commit IS, so the match is made there. ***
+    _log = subprocess.run(['git', 'log', '--no-merges', '--format=%H%x09%s', BEFORE + '..HEAD'],
+                          cwd=ROOT, capture_output=True, text=True).stdout.split('\n')
+    shas = [l.split('\t', 1)[0] for l in _log if '\t' in l and tag in l.split('\t', 1)[1]]
     out = set()
     for sh in shas:
         out |= set(subprocess.run(['git', 'diff-tree', '--no-commit-id', '--name-only', '-r', sh],

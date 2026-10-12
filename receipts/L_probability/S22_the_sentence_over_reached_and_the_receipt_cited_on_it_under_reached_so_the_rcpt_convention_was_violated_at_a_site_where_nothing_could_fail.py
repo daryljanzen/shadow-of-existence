@@ -378,8 +378,16 @@ gate(f'Ⓕ② ⛭⛭ the one-state rule, in the only form a gate can check: not 
 #   the edit is worse than none. **  *`66`'s edit, because `66` landed the merge that opened it.
 #   **Stated for `60` to reverse** -- no claim, count or verdict is touched, only the far end of one
 #   range.*
-_START = subprocess.run(['git', 'log', '--format=%H', '--grep=r7264 pre-registration', '-1'],
-                        cwd=ROOT, capture_output=True, text=True).stdout.strip()
+# ⛔⛭⛭ r7268 (60): THE START IS KEPT AND GUARDED, NOT REVERSED.  *Selecting it by the
+#   pre-registration's SUBJECT is better than a bare sha -- it says WHAT the start is and not only
+#   where -- but `--grep` reads the whole commit MESSAGE and `-1` silently takes the NEWEST match, so
+#   one later commit whose BODY quotes this phrase moves the pin FORWARD and the gate cannot tell
+#   that from the unique case.*  ⇒ *** So the match is required to be UNIQUE: a second mention makes
+#   the pin ambiguous and the gate RED, which is the loud failure a moving pin does not give.
+#   Measured on this tree: `1` match. ***
+_START_ALL = subprocess.run(['git', 'log', '--format=%H', '--grep=r7264 pre-registration'],
+                            cwd=ROOT, capture_output=True, text=True).stdout.split()
+_START = _START_ALL[0] if len(_START_ALL) == 1 else ''
 _REV_TIP = '64a24860'   # this revision's last commit: `_START.._REV_TIP` is its own range
 _rng = subprocess.run(['git', 'diff', '--name-only', f'{_START}..{_REV_TIP}'], cwd=ROOT,
                       capture_output=True, text=True)
@@ -388,9 +396,11 @@ if _START and _rng.returncode == 0 and _rng.stdout.split():
 else:
     _changed = subprocess.run(['git', 'diff', '--name-only', _START], cwd=ROOT,
                               capture_output=True, text=True).stdout.split()
-gate(f'Ⓕ③ ⛭ and the repair touched the paper and its own receipt and NOTHING ELSE of the corpus '
-     f'bodies --- asserted against the working-tree diff rather than against intention',
-     bool(_START) and P12 in _changed and I55 in _changed
+gate(f'Ⓕ③ ⛭⛭ and the repair touched the paper and its own receipt and NOTHING ELSE of the corpus '
+     f'bodies --- read over this revision\'s OWN RANGE, whose start is selected by the pre-registration\'s '
+     f'subject and asserted UNIQUE (`{len(_START_ALL)}` match), so a later commit quoting that phrase '
+     f'turns this gate red instead of moving the pin',
+     len(_START_ALL) == 1 and bool(_START) and P12 in _changed and I55 in _changed
      and not [f for f in _changed if f.startswith('corpus/') and f.endswith('.tex')
               and f != P12 and not f.startswith('corpus/appendix_')])
 
