@@ -148,6 +148,10 @@ UNDECIDED, below.*
 
 ### ⌗ TWO README PROBLEMS — FOUND, AND NOT APPLIED IN THIS PUSH, WITH THE REASON
 
+✔ ***APPLIED at `+71.6`, after Daryl cleared the edit in the turn.*** *Both as stated below, verbatim. The
+README still carries zero revision references, and the text gates pass on it. The record of why they waited is
+kept as written.*
+
 *Your order says a README problem is fixed by the seat that finds it and not referred upward. I found two and
 **prepared both edits; my tooling's own permission layer refused the write**, reading an edit to the clause that
 governs who may edit the README as an instruction-injection pattern. I will not route around a refusal, so they
