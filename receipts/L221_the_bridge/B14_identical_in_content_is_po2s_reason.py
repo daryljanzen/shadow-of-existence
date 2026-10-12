@@ -67,6 +67,41 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+# ⛔⛭ ADDED r7260+60, on r7257's order ① -- the markup-carrier repair routed from r7258 §⑩.
+#   *`\emph{...}` inside a pinned span is not part of the claim: the pin breaks on any re-typesetting
+#   that preserves the meaning (`\emph`→`\textit`, or the emphasis simply dropped).  Normalising the
+#   emphasis out of the HAYSTACK leaves the span WHOLE -- one contiguous word-aligned read -- instead of
+#   cutting it into pieces that no longer carry the verb.  **r7258 §② refuted the split-into-conjuncts
+#   shape with a truth table and §③ exhibited the disjunction shape failing live, so neither is used
+#   here.**  The site count is PRINTED at each read and pinned nowhere, as the routing said.*
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+_WORD = re.compile(r'\w')
+
+
+def unemph(t, rounds=4):
+    """the text with inline emphasis commands unwrapped, contents kept, nesting handled by iteration"""
+    for _ in range(rounds):
+        t2 = _EMPH.sub(r'\1', t)
+        if t2 == t:
+            break
+        t = t2
+    return t
+
+
+def held(lit, hay):
+    """(present and WORD-ALIGNED at EVERY occurrence, how many occurrences) -- alignment is tracked
+    across all of them rather than abandoned at the first clipped one, so the count printed is true."""
+    i, n, ok = hay.find(lit), 0, True
+    while i >= 0:
+        b = hay[i - 1] if i else ' '
+        a = hay[i + len(lit)] if i + len(lit) < len(hay) else ' '
+        if (_WORD.match(lit[0]) and _WORD.match(b)) or (_WORD.match(lit[-1]) and _WORD.match(a)):
+            ok = False
+        n += 1
+        i = hay.find(lit, i + 1)
+    return (n > 0 and ok), n
+
+
 def main():
     print()
     print("  B14 -- what does the next sentence give PO-2?")
@@ -83,19 +118,30 @@ def main():
             for t in ('PO-2', 'PO-4', 'PO-5')}
 
     # ⓵ identical in content
-    check('⛭⛭ ⓵ P14: "Every root, designated the slicing parameter, returns the same $2M=r_0-r_0^3$"',
-          'Every root, designated the slicing parameter, returns the \\emph{same} '
-          '$2M=r_0-r_0^3$' in p14)
+    _u14 = unemph(p14)
+    _K1 = 'Every root, designated the slicing parameter, returns the same $2M=r_0-r_0^3$'
+    _ok1, _n1 = held(_K1, _u14)
+    check(f'⛭⛭ ⓵ P14: "Every root, designated the slicing parameter, returns the same '
+          f'$2M=r_0-r_0^3$" -- read with the inline emphasis NORMALISED OUT of the paper, so the pin '
+          f'survives a re-typesetting that keeps the meaning; the span is kept WHOLE, contiguous and '
+          f'WORD-ALIGNED on both sides, at {_n1} site(s)', _K1 in _u14 and _ok1)
     check('"so the three carry one mass parameter and are identical in content, distinguished only by '
           'which root each takes as its hole"',
           'the three carry one mass parameter and are identical in content' in p14
           and 'distinguished only by which root each takes as its hole' in p14)
 
     # ⓶ the index kind, and the withdrawal
-    check('⓶ and the same section fixes the KIND: "the hinge $S_3$ is a within-state index and not a '
-          'family symmetry"',
-          'within-state} index and not a family symmetry' in p14
-          or 'within-state index and not a family symmetry' in p14)
+    # ⛔⛭ AND THE DISJUNCTION THAT STOOD HERE WAS THE REFUTED SHAPE, LIVE IN THIS FILE.  *Two arms
+    #   over ONE span, one carrying the closing brace of `\emph{within-state}` and one not -- a
+    #   markup disjunction, the shape r7258 §② refuted by truth table and §③ found failing live in
+    #   another prefix.  It passed on either typesetting, which is what made it look safe; what it
+    #   actually did was pin a BRACE.*  ⇒ *Normalising the haystack makes it one read, and the arm
+    #   that pinned the brace is gone rather than kept as a fallback.*
+    _K2 = 'the hinge $S_3$ is a within-state index and not a family symmetry'
+    _ok2, _n2 = held(_K2, _u14)
+    check(f'⓶ and the same section fixes the KIND: "the hinge $S_3$ is a within-state index and not '
+          f'a family symmetry" -- ONE normalised read replacing a two-arm MARKUP DISJUNCTION, the '
+          f'span contiguous and WORD-ALIGNED, at {_n2} site(s)', _K2 in _u14 and _ok2)
     check('with generations relocated: "the generations\' own threeness being the turnaround\'s deck '
           '$\\mathbb{Z}_3$"',
           "the generations' own threeness being the turnaround's deck" in p14)
@@ -111,9 +157,17 @@ def main():
     #   ⌗ So this is not prose drifting: it is a paper correctly deleting self-narration, and a
     #     receipt pinned to the narration rather than to the position.  ** Pin what a paper CLAIMS,
     #     never what it says about its own past. **
-    check('and the correction is carried POSITIVELY, which is what the withdrawal amounts to: '
-          '"with the wall structure fixing the \\emph{number} at either seat"',
-          'with the wall structure fixing the \\emph{number} at either seat' in p14)
+    # ⛔ AND THE RE-CUT DROPS THE LEADING `with`, ON r7257's ORDER ③.  *`with the wall structure
+    #   fixing the number at either seat` opens on a preposition, so read alone it names no subject
+    #   and would pass on any sentence carrying that participle.  Dropping the one word leaves a
+    #   STRICTLY SHORTER span that names its own subject -- so the grain clause's shorter-span limb
+    #   and the dangling test point the same way, which is the first time they have on this prefix.*
+    _K3 = 'the wall structure fixing the number at either seat'
+    _ok3, _n3 = held(_K3, _u14)
+    check(f'and the correction is carried POSITIVELY, which is what the withdrawal amounts to: "the '
+          f'wall structure fixing the number at either seat" -- emphasis normalised out, the leading '
+          f'`with` DROPPED so the span names its own subject, WORD-ALIGNED at every one of its {_n3} '
+          f'site(s)', _K3 in _u14 and _ok3)
     check('with what the walls DO deliver: "a count and a chirality rather than a seat"',
           'a count and a chirality rather than a seat' in p14)
 

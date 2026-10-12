@@ -185,7 +185,17 @@ def main():
 #     A repair that hides a pin from the instrument is worse than the pin, so the KEYED form is
 #     used and the key stays in the ledger under its new literal.
     _RATE_GAP = re.search(r'\$10\.8\\%\$.{0,60}?diffusion length', p15) is not None
-    _OBSERVABLE = 'moved by under a per cent'
+    # ⛔⛭ RE-CUT r7260+60 (node 60), the third of the patches r7258 §⑪ routed and the one left half
+    #   performed, because its unit spanned two prefixes.  ** THIS IS ANOTHER SEAT'S RECEIPT AND THE
+    #   EDIT IS STATED IN THE COMMIT. **  *`moved by under a per cent` DANGLES: it opens on a
+    #   participle and names nothing that moved, so it would pass on any sentence carrying that
+    #   predicate.  The paper's own subject is two tokens to the left.*  ⇒ *`r7258` re-cut the
+    #   PAPER-side read of the same sentence in `L_probability/S6` and had to leave a second constant
+    #   there -- `OBSERVABLE_IN_C26` -- telling the truth about THIS file.  Landing this re-cut lets
+    #   that split constant fold back into one, which is why it is performed rather than routed a
+    #   third time: the order's reason for authorising the other `P15` patch (the prefix is released
+    #   on the board, and the finding and the form are this seat's) holds here word for word.*
+    _OBSERVABLE = '$\\theta_{D}/\\theta_{*}$ moved by under a per cent'
     _APART = 'the rate gap is not what the signature is made of'
     _RETIRED = '9.4\\%'
     check(f'⚠ ⓷ unweighted at the true onset gives {unw:+.1f}%, above the paper\'s OWN rate-gap '
@@ -197,8 +207,10 @@ def main():
           _RATE_GAP and w3 < 10.8 and w6 < w3)
     check('⛭ and the figure these two checks were WRITTEN against is RETIRED, which is why neither '
           'could notice: `$9.4\\%$` left this paper at `r2755` as the error and is absent from the '
-          'live body, while the OBSERVABLE `P15` now states is `moved by under a per cent` --- two '
-          'orders off the rate gap, and the paper separates them in its own voice',
+          'live body, while the OBSERVABLE `P15` now states is `$\\theta_{D}/\\theta_{*}$ moved by '
+          'under a per cent` --- two orders off the rate gap, and the paper separates them in its '
+          'own voice.  ⌗ The span carries its own SUBJECT, where the key it replaces opened on a '
+          'participle and named nothing that moved',
           _RETIRED not in p15 and _OBSERVABLE in p15 and _APART in p15)
     check('which is what a collapsing $x_e$ does, since P15\'s integrand carries $g(R)/(H x_e)$',
           'x_{e}' in p15 or '4$, the \\emph{ionisation history $x_e' in p15)

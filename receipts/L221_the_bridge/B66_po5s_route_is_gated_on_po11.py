@@ -86,6 +86,41 @@ def flat(name):
                                          if not l.lstrip().startswith('%')))
 
 
+# ⛔⛭ ADDED r7260+60, on r7257's order ① -- the markup-carrier repair routed from r7258 §⑩.
+#   *`\emph{...}` inside a pinned span is not part of the claim: the pin breaks on any re-typesetting
+#   that preserves the meaning (`\emph`→`\textit`, or the emphasis simply dropped).  Normalising the
+#   emphasis out of the HAYSTACK leaves the span WHOLE -- one contiguous word-aligned read -- instead of
+#   cutting it into pieces that no longer carry the verb.  **r7258 §② refuted the split-into-conjuncts
+#   shape with a truth table and §③ exhibited the disjunction shape failing live, so neither is used
+#   here.**  The site count is PRINTED at each read and pinned nowhere, as the routing said.*
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+_WORD = re.compile(r'\w')
+
+
+def unemph(t, rounds=4):
+    """the text with inline emphasis commands unwrapped, contents kept, nesting handled by iteration"""
+    for _ in range(rounds):
+        t2 = _EMPH.sub(r'\1', t)
+        if t2 == t:
+            break
+        t = t2
+    return t
+
+
+def held(lit, hay):
+    """(present and WORD-ALIGNED at EVERY occurrence, how many occurrences) -- alignment is tracked
+    across all of them rather than abandoned at the first clipped one, so the count printed is true."""
+    i, n, ok = hay.find(lit), 0, True
+    while i >= 0:
+        b = hay[i - 1] if i else ' '
+        a = hay[i + len(lit)] if i + len(lit) < len(hay) else ' '
+        if (_WORD.match(lit[0]) and _WORD.match(b)) or (_WORD.match(lit[-1]) and _WORD.match(a)):
+            ok = False
+        n += 1
+        i = hay.find(lit, i + 1)
+    return (n > 0 and ok), n
+
+
 def main():
     print()
     print("  B66 -- what is PO-5's surviving route made of?")
@@ -105,7 +140,12 @@ def main():
     check('⓵ the wall kernel\'s modes are BOUND: "the three throat walls are distinct loci, so the '
           'wall-bound zero-modes are linearly independent and span a three-dimensional space" '
           '(was "have disjoint support"; corrected r6756 after r6748)',
-          'are \\emph{distinct} loci, so the wall-bound zero-modes are linearly independent and span a three-dimensional space' in p14
+          # ⛔⛭ r7260+60: the same markup-carrier repair as the owed row below, applied here too
+          #   because it is the identical defect in the identical file and leaving it would mean
+          #   routing a patch to myself next cycle.  *Not an owed row; stated so the history shows
+          #   it was a choice.*  The span extended LEFT to its subject, `the three throat walls`.
+          'the three throat walls are distinct loci, so the wall-bound zero-modes are linearly '
+          'independent and span a three-dimensional space' in unemph(p14)
           and 'wall-bound zero-modes have disjoint support' not in p14)
     check('⇒ and they are static BOUND STATES OF THE LEAF, not propagating fields -- "CR reads the '
           'fermion as a mode of the existent leaf, not a propagating spacetime field carrying the '
@@ -138,8 +178,13 @@ def main():
           '... the sector that stays unbuilt is the other one, gauge-acted and isometry-realised on '
           'the compact face"',
           'bound-state zero-modes of the existent leaf' in grp
-          and ('the descent onto a full \\emph{propagating} spinor field sector is built---on the '
-               'static slicing structure, and again on this framework\'s own chiral member') in grp
+          # ⛔⛭ RE-CUT r7260+60 on r7257's order ① -- the routed markup-carrier repair for this
+          #   receipt's one owed row.  *The emphasis is normalised out of the HAYSTACK and the span
+          #   stays WHOLE: it already names its own subject (`the descent`), so order ③ asks nothing
+          #   further of it and no extension is made for its own sake.*
+          and ('the descent onto a full propagating spinor field sector is built---on the '
+               'static slicing structure, and again on this framework\'s own chiral member'
+               ) in unemph(grp)
           and 'are fixed in the matter sector rather than by this grading~\\cite{JanzenMatter}, and the sector that stays unbuilt is the other one' in grp)
 
     # ⓷ the chain terminates

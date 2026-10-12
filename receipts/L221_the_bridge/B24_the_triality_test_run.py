@@ -69,6 +69,41 @@ def triality(p, q):
     return (p - q) % 3
 
 
+# ⛔⛭ ADDED r7260+60, on r7257's order ① -- the markup-carrier repair routed from r7258 §⑩.
+#   *`\emph{...}` inside a pinned span is not part of the claim: the pin breaks on any re-typesetting
+#   that preserves the meaning (`\emph`→`\textit`, or the emphasis simply dropped).  Normalising the
+#   emphasis out of the HAYSTACK leaves the span WHOLE -- one contiguous word-aligned read -- instead of
+#   cutting it into pieces that no longer carry the verb.  **r7258 §② refuted the split-into-conjuncts
+#   shape with a truth table and §③ exhibited the disjunction shape failing live, so neither is used
+#   here.**  The site count is PRINTED at each read and pinned nowhere, as the routing said.*
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+_WORD = re.compile(r'\w')
+
+
+def unemph(t, rounds=4):
+    """the text with inline emphasis commands unwrapped, contents kept, nesting handled by iteration"""
+    for _ in range(rounds):
+        t2 = _EMPH.sub(r'\1', t)
+        if t2 == t:
+            break
+        t = t2
+    return t
+
+
+def held(lit, hay):
+    """(present and WORD-ALIGNED at EVERY occurrence, how many occurrences) -- alignment is tracked
+    across all of them rather than abandoned at the first clipped one, so the count printed is true."""
+    i, n, ok = hay.find(lit), 0, True
+    while i >= 0:
+        b = hay[i - 1] if i else ' '
+        a = hay[i + len(lit)] if i + len(lit) < len(hay) else ' '
+        if (_WORD.match(lit[0]) and _WORD.match(b)) or (_WORD.match(lit[-1]) and _WORD.match(a)):
+            ok = False
+        n += 1
+        i = hay.find(lit, i + 1)
+    return (n > 0 and ok), n
+
+
 def main():
     print()
     print('  B24 -- compute the triality from the colour content alone')
@@ -82,9 +117,17 @@ def main():
           # *** Assert the state the corpus HOLDS: the test is in print with its receipt. ***
           'A genuine test computes the triality from the colour content independently of the '
           'charge' in p14 and 'B24_the_triality_test_run' in p14)
-    check('because the present agreement is circular: "the triality class is the fractional part of the '
-          'charge, so the two predicates are the same predicate"',
-          'the triality class \\emph{is} the fractional part of the charge' in p14)
+    _u14 = unemph(p14)
+    _KEY = 'the triality class is the fractional part of the charge'
+    _ok, _n = held(_KEY, _u14)
+    check(f'because the present agreement is circular: "the triality class is the fractional part of '
+          f'the charge, so the two predicates are the same predicate" -- read with the inline '
+          f'emphasis NORMALISED OUT of the paper so the pin survives a re-typesetting that keeps the '
+          f'meaning; the span stays WHOLE and WORD-ALIGNED at every one of its {_n} site(s)',
+          # ⌗ the second conjunct is cut WITHOUT its leading `so`: with it the span opened on a
+          #   conjunction and named no subject, which is the very defect this revision is repairing
+          #   elsewhere -- a repair that introduces a dangling key would be a net loss.
+          _KEY in _u14 and _ok and 'the two predicates are the same predicate' in _u14)
 
     # ⓶ the centre gives it
     w = np.exp(2j*np.pi/3)

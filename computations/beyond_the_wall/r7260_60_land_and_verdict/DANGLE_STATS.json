@@ -1,0 +1,64 @@
+{
+ "ledger_rows": 2773,
+ "adopted_leading": 338,
+ "leading_det_fixed": 323,
+ "trailing": 69,
+ "negator": 13,
+ "three_arm": 386,
+ "determiner_false_positives": 15,
+ "unseen_by_adopted": 63,
+ "deliberate_dangling": 126,
+ "meaning_held_dangling": 66,
+ "by_verdict": {
+  "DELIBERATE": {
+   "n": 1021,
+   "adopted_pct": 10.87,
+   "three_arm_pct": 12.34
+  },
+  "UNADJUDICATED": {
+   "n": 846,
+   "adopted_pct": 10.4,
+   "three_arm_pct": 11.82
+  },
+  "MEANING-HELD": {
+   "n": 271,
+   "adopted_pct": 21.03,
+   "three_arm_pct": 24.35
+  },
+  "EXTENDED": {
+   "n": 271,
+   "adopted_pct": 11.07,
+   "three_arm_pct": 12.92
+  },
+  "REPAIR-OWED": {
+   "n": 114,
+   "adopted_pct": 21.05,
+   "three_arm_pct": 28.07
+  },
+  "ALT-OK": {
+   "n": 81,
+   "adopted_pct": 13.58,
+   "three_arm_pct": 13.58
+  },
+  "UNADJUDICATED-PINNED": {
+   "n": 63,
+   "adopted_pct": 23.81,
+   "three_arm_pct": 22.22
+  },
+  "ENCODING-OK": {
+   "n": 50,
+   "adopted_pct": 2.0,
+   "three_arm_pct": 2.0
+  },
+  "NOT-A-PIN": {
+   "n": 37,
+   "adopted_pct": 2.7,
+   "three_arm_pct": 2.7
+  },
+  "UNADJUDICATED-LIST": {
+   "n": 19,
+   "adopted_pct": 0.0,
+   "three_arm_pct": 0.0
+  }
+ }
+}

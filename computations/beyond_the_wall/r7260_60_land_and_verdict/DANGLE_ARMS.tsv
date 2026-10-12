@@ -1,0 +1,405 @@
+# THE THREE ARMS over the whole quote-pin ledger, one row per flagged key.
+# arms: L = leading (the adopted test, determiner false positive removed); T = trailing;
+# N = negator-stripped leading.  `adopted` is what the test r7257 adopted says, unchanged.
+# receipt	literal (JSON)	verdict	arms	adopted
+receipts/L147_two_arm/B1_the_control_separates_prediction_from_shared_constant.py	"$1.18$ is not a fit"	UNADJUDICATED	L	YES
+receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	"is now decomposed rather than"	UNADJUDICATED-PINNED	LT	YES
+receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	"leaves no conflict marker to notice"	UNADJUDICATED	L	YES
+receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	"was decomposed alongside it"	UNADJUDICATED-PINNED	L	YES
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"is that start read in units of a density rather than an inheritance"	UNADJUDICATED	L	YES
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"finite throughout"	UNADJUDICATED	T	no
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"is likewise confined"	UNADJUDICATED	L	YES
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"on an interval fixed by the progenitor mass"	UNADJUDICATED	L	YES
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"precisely the sector the conformal mode is absent from"	UNADJUDICATED	T	no
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"so there is no conformal mode to integrate over"	UNADJUDICATED	LT	YES
+receipts/L165_defining_the_sum/S3_c6_is_a_theorem_not_a_condition.py	"at leading order"	UNADJUDICATED	L	YES
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"does not bear on the closure below"	UNADJUDICATED	L	YES
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"does occupy both sides"	UNADJUDICATED	L	YES
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"is not assumed here"	UNADJUDICATED	L	YES
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"not that the spectrum has a floor"	UNADJUDICATED	N	no
+receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	"does not settle it"	REPAIR-OWED	L	YES
+receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	"not need a lower bound"	REPAIR-OWED	N	no
+receipts/L165_interacting_tower/D3_the_floor_does_not_survive_the_cubic.py	"At leading order $\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$"	REPAIR-OWED	L	YES
+receipts/L165_interacting_tower/D3_the_floor_does_not_survive_the_cubic.py	"is not assumed here"	REPAIR-OWED	L	YES
+receipts/L165_interacting_tower/D3_the_floor_does_not_survive_the_cubic.py	"not that the spectrum has a floor"	REPAIR-OWED	N	no
+receipts/L165_interacting_tower/D4_the_state_fixer_has_its_own_threshold.py	"and so is common to every fibre"	REPAIR-OWED	L	YES
+receipts/L165_interacting_tower/D4_the_state_fixer_has_its_own_threshold.py	"on each sub-threshold fibre"	REPAIR-OWED	L	YES
+receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	"across the natural ordering family"	REPAIR-OWED	L	YES
+receipts/L165_interacting_tower/S13_the_ledger_does_not_reach_second_order.py	"is a pure power of"	REPAIR-OWED	LT	YES
+receipts/L165_interacting_tower/S5_the_counterterm_degeneracy_verified.py	"every curvature invariant on either face is a pure power of"	REPAIR-OWED	T	no
+receipts/L165_interacting_tower/S8_the_floor_follows.py	"3$ is, in the geodesic coordinate, the inverse-square operator"	EXTENDED	L	YES
+receipts/L165_interacting_tower/S8_the_floor_follows.py	"at the origin"	REPAIR-OWED	L	YES
+receipts/L165_interacting_tower/S8_the_floor_follows.py	"essentially self-adjoint where"	REPAIR-OWED	T	no
+receipts/L165_interacting_tower/S8_the_floor_follows.py	"is an artefact of truncation"	REPAIR-OWED	L	YES
+receipts/L165_interacting_tower/S9_the_ordering_decides_it.py	"is $\\tfrac14$ under normal ordering"	REPAIR-OWED	L	YES
+receipts/L171_two_routes/J1_the_disagreement_no_longer_has_two_sides.py	"never carried across"	UNADJUDICATED	TN	no
+receipts/L171_two_routes/J1_the_disagreement_no_longer_has_two_sides.py	"which is a verdict question and Daryl"	UNADJUDICATED	L	YES
+receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py	"is corrected at c54.179"	ENCODING-OK	L	YES
+receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	"nothing in the identity says which"	UNADJUDICATED	T	no
+receipts/L174_general_matter_dynamics/I8_no_sweep_reaches_the_stratum_and_the_theorem_says_so.py	"Then the generated geometry is invariant under $H$"	UNADJUDICATED	L	YES
+receipts/L174_general_matter_dynamics/I8_no_sweep_reaches_the_stratum_and_the_theorem_says_so.py	"swept or reassigned by a subgroup $H\\subseteq\\so$"	UNADJUDICATED	T	no
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"excluded not as disfavoured but as carrying an unfixed arbitrary modulus"	UNADJUDICATED	L	YES
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"has a single moving part"	UNADJUDICATED	L	YES
+receipts/L175_dimensional_descent/E53_link_c_was_never_L533s.py	"is not a single world but a family"	UNADJUDICATED	L	YES
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	"SO(5,1)/SO(4,1)"	UNADJUDICATED	L	YES
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	"is a recognition rather than an addition"	UNADJUDICATED	L	YES
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	"is not a Lie algebra"	UNADJUDICATED	L	YES
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	"is not a question the variation asks"	UNADJUDICATED	L	YES
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"Reach: stated as a target, not a result"	UNADJUDICATED-PINNED	L	YES
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"Reach: the item has two sides"	UNADJUDICATED-PINNED	L	YES
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"is that start read in units of a density rather than an inheritance"	UNADJUDICATED	L	YES
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"that gap is now closed"	UNADJUDICATED-PINNED	-	YES
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"without a free parameter"	UNADJUDICATED	L	YES
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"carries a dimensionless coupling that a single length cannot build"	UNADJUDICATED	L	YES
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"with nothing fitted"	UNADJUDICATED	L	YES
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"Reach: the item has two sides"	UNADJUDICATED-PINNED	L	YES
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"a single dimensionful input and nothing for a dimensionless tuning to hide in"	UNADJUDICATED	T	no
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"carries the scale as its \\emph{only} free constant, signature, null structure and isometry group a"	EXTENDED	L	YES
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"has a classical mechanism and is not only the outcome of an exhaustive audit"	UNADJUDICATED	L	YES
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"stated as a target, not a result"	UNADJUDICATED-PINNED	L	YES
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"that extra generator is the dilation carrying $\\alpha\\mapsto\\lambda\\alpha$"	UNADJUDICATED	-	YES
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"fixes the neutral real axis, the self-conjugate photon congruence"	UNADJUDICATED	L	YES
+receipts/L202_the_seam/T1_the_transfer_is_half_built.py	"Of the four, three are run and one is a frontier"	UNADJUDICATED	L	YES
+receipts/L202_the_seam/T1_the_transfer_is_half_built.py	"That driving is computed below"	UNADJUDICATED	-	YES
+receipts/L202_the_seam/T1_the_transfer_is_half_built.py	"carried on this cosmology's own background with the perturbations on the leaf congruence the framework assigns them"	UNADJUDICATED	L	YES
+receipts/L202_the_seam/T1_the_transfer_is_half_built.py	"on a genuine Boltzmann transfer a dip whose \\emph{minimum falls at $\\ell=4"	EXTENDED	L	YES
+receipts/L202_the_seam/T1_the_transfer_is_half_built.py	"validated on its control to"	UNADJUDICATED	T	no
+receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py	"which is equally the Galois group of that cubic"	UNADJUDICATED	L	YES
+receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	"Lie algebroids"	UNADJUDICATED	L	YES
+receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	"The claim is a recognition rather than"	UNADJUDICATED	T	no
+receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	"naming it costs nothing and buys"	UNADJUDICATED	L	YES
+receipts/L203_reach_stations/M4_four_objects_one_word.py	"which is equally the Galois group of that cubic"	UNADJUDICATED	L	YES
+receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py	"excluded from the isometry, and electroweak"	MEANING-HELD	L	YES
+receipts/L204_physics_reach/P13_the_entropy_is_the_corpuss_own_number.py	"rests on the profile structure and on $\\Lambda$ being geometrically primary"	MEANING-HELD	L	YES
+receipts/L204_physics_reach/P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled.py	"across every algebraic (Petrov) type"	MEANING-HELD	L	YES
+receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"chart artefact but because"	MEANING-HELD	T	no
+receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"with no completed horizon there is no background"	MEANING-HELD	L	YES
+receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"with no completed horizon there is no background on which the Bogoliubov mode-mixing yielding an exactly thermal Hawking flux can be computed"	MEANING-HELD	L	YES
+receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py	"excluded from the isometry, and electroweak"	MEANING-HELD	L	YES
+receipts/L204_physics_reach/P4_the_corpus_identifies_the_higgs_mechanism_it_does_not_decline_it.py	"is the $R$-odd \\emph{departure} from it"	MEANING-HELD	L	YES
+receipts/L204_physics_reach/P5_the_two_absences_verified_independently.py	"not that the blueshift is\\s+bounded"	MEANING-HELD	N	no
+receipts/L204_physics_reach/P7_the_temperature_is_taken_and_the_entropy_never_is.py	"area law and entropy alike, has on a finite layer no realised horizon to be defined on"	MEANING-HELD	T	no
+receipts/L204_physics_reach/P7_the_temperature_is_taken_and_the_entropy_never_is.py	"is not settled by the horizon-thermodynamic reading of this subsection"	MEANING-HELD	L	YES
+receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	"does not end as a thermal remnant whose purity must be explained"	MEANING-HELD	L	YES
+receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	"is not settled here"	MEANING-HELD	L	YES
+receipts/L204_physics_reach/P9_the_resolution_is_the_baby_universe_one_and_it_is_never_named.py	"never leaves the unitary, globally hyperbolic setting"	MEANING-HELD	N	no
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"That worldline dynamics is taken up for a concrete matter model"	UNADJUDICATED-PINNED	-	YES
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"for a general spatial leaf the energy density is the leaf's intrinsic-curvature departure from the de~Sitter substrate"	UNADJUDICATED-PINNED	L	YES
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"is the Hamiltonian constraint"	UNADJUDICATED	L	YES
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"is the spherical instance"	UNADJUDICATED	L	YES
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"the deepest question the construction opens onto"	UNADJUDICATED-PINNED	T	no
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"made the argument an ADD"	UNADJUDICATED	L	YES
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"that sector can be specified, and is obstructed twice"	UNADJUDICATED	-	YES
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"as against the measurement---of $A_s$ and $n_s$"	UNADJUDICATED	L	YES
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"does not drive $n_s\\to1$ by any \\emph{inflationary} attractor"	UNADJUDICATED	L	YES
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"fixed by the progenitor collapse---the same handover that fixes $\\rho_r/\\rho_m$"	UNADJUDICATED	L	YES
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	"that class is a premise of the construction rather than a gap in it"	UNADJUDICATED	-	YES
+receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py	"run the transfer chain backwards"	UNADJUDICATED	L	YES
+receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py	"run the transfer chain backwards from the"	UNADJUDICATED	L	YES
+receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	"stated so the argument cannot be made without it"	UNADJUDICATED	L	YES
+receipts/L213_external_constraint/Y1_supplying_the_requirement_made_it_an_ADD.py	"would have to supply BOTH"	UNADJUDICATED	L	YES
+receipts/L218_reader_package/C2_the_rule_is_enforceable_and_enforceable_means_severe.py	"DO-NOT-ASSERT"	UNADJUDICATED	L	YES
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"acts trivially on $\\nu_L$, $e_L$, $e_R$ and $\\nu_R$ alike, and what distinguishes the doublet from the singlet is $SU(2"	EXTENDED	L	YES
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"made in the register with a kill receipt"	UNADJUDICATED	L	YES
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"which is what carrying no colour would mean"	UNADJUDICATED	L	YES
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"with a right-handed neutrino"	UNADJUDICATED	L	YES
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	"that sector can be specified, and is obstructed twice"	UNADJUDICATED	-	YES
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	"the round face carries no Dirac zero modes, so there is no massless content for it to act on"	UNADJUDICATED	T	no
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"are one operator"	UNADJUDICATED	L	YES
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"is the $R$-odd \\emph{departure} from it"	UNADJUDICATED	L	YES
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"takes up that opening concretely"	UNADJUDICATED	L	YES
+receipts/L221_the_bridge/B13_po2_identification_is_stated.py	"is not a second group resembling the substrate's own"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B13_po2_identification_is_stated.py	"is the one CR's own founding principle selects, places a slicing plane on each: three throat walls"	EXTENDED	L	YES
+receipts/L221_the_bridge/B16_the_coupling_cannot_come_from_this_bundle.py	"has a holonomy about the Nariai points"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	"carries a dimensionless coupling that a single length cannot build"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	"not that the coupling is unbuilt but that a coupling is not the kind of thing a holonomy supplies"	MEANING-HELD	N	no
+receipts/L221_the_bridge/B18_the_obstruction_is_horizon_located.py	"in that induced proper measure the horizons sit at finite distance and the modes are bound"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_index_begins.py	"determine the hypercharges completely"	DELIBERATE	L	YES
+receipts/L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_index_begins.py	"per-wall anomaly conditions"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B20_centre_and_weyl_are_opposite_ends.py	"reached three independent ways"	DELIBERATE	L	YES
+receipts/L221_the_bridge/B22_the_tower_is_uniform.py	"needs lambda < 3/4, which never holds"	DELIBERATE	L	YES
+receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py	"to the branch point"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py	"acts on the actual zero-modes as charge conjugation"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py	"does not act uniformly on the real structure"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B32_the_two_bounds_compose.py	"That sentence constrains the target rather than the mechanism"	DELIBERATE	-	YES
+receipts/L221_the_bridge/B32_the_two_bounds_compose.py	"rather than searched for in an unbounded space"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B33_the_ledger_branch_is_settled.py	"is a gauge-combination rather than a second physical length, the cutoff is not"	EXTENDED	L	YES
+receipts/L221_the_bridge/B33_the_ledger_branch_is_settled.py	"is a number in gauge-units and not a tuning"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	"is signed, $W$ changes sign at $r=0"	EXTENDED	L	YES
+receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	"remain the undertaking the corpus names"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B35_the_continuation_is_cited_wrong.py	"across the locus the chart labels"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B35_the_continuation_is_cited_wrong.py	"remain the undertaking the corpus names"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B36_two_of_three_crossings_are_supplied.py	"across the locus the chart labels"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B37_po4_and_po5_share_a_root.py	"is a discrete horn swap"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B37_po4_and_po5_share_a_root.py	"the common root of three verdicts reached separately, that the winding quantises without"	EXTENDED	T	no
+receipts/L221_the_bridge/B38_the_ledger_is_discrete.py	"is a discrete horn swap"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B40_the_isometry_reaches_colour_not_isospin.py	"has \\emph{finite} total length\\rcpt{P14_leaf_compactness}, so the leaf is compact and its Dirac operator carries a well-defined"	EXTENDED	L	YES
+receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	"are its four one-dimensional ones"	EXTENDED	L	YES
+receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	"are its four one-dimensional ones, so a colourless sector on this structure has total dimension four"	EXTENDED	L	YES
+receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	"is a discrete horn swap"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B41_the_isospin_structure_is_finite.py	"that are trivial on the deck"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B42_the_route_was_taken_and_p14_is_the_work.py	"is the single geometric opening the wall leaves"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	"So the construction cannot force a coupling"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	"and no force"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	"is a pure power of"	MEANING-HELD	LT	YES
+receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	"the common root of three verdicts reached separately, that the winding quantises without"	EXTENDED	T	no
+receipts/L221_the_bridge/B48_the_field_is_dirac_so_the_matching_is_determined.py	"as against the bound zero-modes"	DELIBERATE	L	YES
+receipts/L221_the_bridge/B49_the_taxonomy_was_the_stale_gate.py	"gated on"	DELIBERATE	T	no
+receipts/L221_the_bridge/B50_a_forced_number_on_the_wrong_wall.py	"So the construction cannot force a coupling"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B50_a_forced_number_on_the_wrong_wall.py	"and no force"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B50_a_forced_number_on_the_wrong_wall.py	"is a pure power of"	MEANING-HELD	LT	YES
+receipts/L221_the_bridge/B51_p0s_inference_is_sound_and_scoped.py	"So the construction cannot force a coupling"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B51_p0s_inference_is_sound_and_scoped.py	"in which the mass cancels"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B51_p0s_inference_is_sound_and_scoped.py	"is a pure power of"	MEANING-HELD	LT	YES
+receipts/L221_the_bridge/B51_p0s_inference_is_sound_and_scoped.py	"rather than only in the limit"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B52_the_missing_f2_is_entailed_by_the_delivery.py	"and no force"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B53_gating_l829_and_l830.py	"does not normalize"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B56_it_is_lambda_8_not_a_coupling.py	"Cartan subalgebra of"	MEANING-HELD	T	no
+receipts/L221_the_bridge/B56_it_is_lambda_8_not_a_coupling.py	"is the Cartan subalgebra of $\\mathfrak{su}(3)$ in its standard realisation, the diagonal traceless matrices"	EXTENDED	L	YES
+receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py	"and no force"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	"is branching and a branch structure has finitely many sheets"	EXTENDED	L	YES
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	"is subregular"	EXTENDED	L	YES
+receipts/L221_the_bridge/B58_p14_already_answers_the_owed_question.py	"would have left a two-parameter family, and the disjointness of the vantages' supports is exactly"	EXTENDED	L	YES
+receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	"are the $\\sigma_{y}$ eigenvalues of Proposition~\\ref{prop:wall}, changing their signs only in \\emph{pairs}"	EXTENDED	L	YES
+receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	"which are the $\\sigma_{y}$ eigenvalues of Proposition"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py	"are fixed in the matter sector rather than by this grading~\\cite{JanzenMatter}, and the sector that stays unbuilt is the other one"	EXTENDED	L	YES
+receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py	"being no isometry of the non-compact substrate to begin with"	MEANING-HELD	LT	YES
+receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py	"is a spinor on the real Lorentzian slicing structure, not a gauge-acted sector on the compact face"	MEANING-HELD	L	YES
+receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py	"supplies no equivariant index for the obstruction to act on"	MEANING-HELD	T	no
+receipts/L221_the_bridge/B9_po3_why_is_answered_dimensionally.py	"does occur, at scale $1$, and returns a four-fold"	EXTENDED	L	YES
+receipts/L221_the_bridge/B9_po3_why_is_answered_dimensionally.py	"no outer factor of"	MEANING-HELD	T	no
+receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	"returns the \\emph{same} $2M=r_0-r_0^3$"	UNADJUDICATED	L	YES
+receipts/L246_the_achirality_is_the_obstruction/W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_chiral_member_does_not_have.py	"1) and one generation's MULTIPLET STRUCTURE (Q,u^c,d^c,L,e^c), do t"	EXTENDED	L	YES
+receipts/L246_the_achirality_is_the_obstruction/W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_chiral_member_does_not_have.py	"named in the companion development and not"	UNADJUDICATED-PINNED	L	YES
+receipts/L247_the_build_already_stands/B1_the_geometry_po14_asks_for_was_built_at_r2419.py	"named in the companion development and not"	UNADJUDICATED-PINNED	L	YES
+receipts/L248_the_strike_broke_its_readers/R1_r3001_struck_fourteen_rows_and_twelve_receipts_read_them_by_prefix.py	"is not assumed here"	UNADJUDICATED	L	YES
+receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"and it WAS present"	UNADJUDICATED	L	YES
+receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"at"	NOT-A-PIN	LT	YES
+receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"may never have been in this file"	UNADJUDICATED	L	YES
+receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py	"524 is the PRE-repair parsed count"	UNADJUDICATED	L	YES
+receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py	"AND THE DEFECT HAS NOT RECURRED, live"	UNADJUDICATED	L	YES
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"with no reason given"	UNADJUDICATED	L	YES
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"NAMED, not dated"	UNADJUDICATED	L	YES
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"AND IT DOES NOW"	UNADJUDICATED	L	YES
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"needs no similarity score"	UNADJUDICATED	L	YES
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"THAT IS FALSE, AND IT IS FALSE BY ARITHMETIC"	UNADJUDICATED	L	YES
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"must be struck rather than left"	UNADJUDICATED	L	YES
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"on testimony"	UNADJUDICATED	L	YES
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_left = sorted({c for c in s if ord(c) > 0xFF})"	UNADJUDICATED	L	YES
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"for _i in range(10)"	UNADJUDICATED	L	YES
+receipts/L263_the_station_audit/S1_three_of_eight_stations_are_already_held_and_one_was_noticed_and_not_propagated.py	"carried \u24bb as owed for forty-eight revisions after its own \u2460 block recorded the answer"	UNADJUDICATED	L	YES
+receipts/L267_the_sweep_that_did_not_run/G1_a_success_message_printed_by_a_different_command_than_the_one_it_describes.py	"return 'TIMEOUT'"	UNADJUDICATED	L	YES
+receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py	"held in"	UNADJUDICATED	LT	YES
+receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py	"held in {paper}"	UNADJUDICATED	L	YES
+receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py	"which is this receipt landing rather than this receipt"	UNADJUDICATED	L	YES
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"carried \u24bb as owed for forty-eight revisions a"	EXTENDED	L	YES
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"had already been run"	UNADJUDICATED	L	YES
+receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	"is not a $p$-value"	UNADJUDICATED-PINNED	L	YES
+receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	"never named"	UNADJUDICATED	N	no
+receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	"should not be read as the disagreement itself"	UNADJUDICATED-PINNED	L	YES
+receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"is a FOLD"	UNADJUDICATED	L	YES
+receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"return 1"	UNADJUDICATED	L	YES
+receipts/L277_the_unclaimed_surface/U1_a_survey_that_needs_the_list_cannot_find_what_is_missing_from_the_list.py	"return 1"	UNADJUDICATED	L	YES
+receipts/L279_the_symmetric_space_probe/S1_so42_is_not_another_real_form_it_is_the_substrates_own_dual.py	"THIS BAKE DID NOT DETERMINE THAT"	UNADJUDICATED	T	no
+receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py	"has not failed to empty; it has finished"	UNADJUDICATED	L	YES
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	"At a double root the relation is not available at all"	REPAIR-OWED	L	YES
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	"gives $r_{*}\\sim-1/c\\delta$, a power law"	REPAIR-OWED	L	YES
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	"remain the undertaking the corpus names"	REPAIR-OWED	L	YES
+receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py	"That calculation is run, and its answer is smaller"	DELIBERATE	-	YES
+receipts/L550_third_mechanism/M1_the_third_mechanism_is_bounded_and_the_bound_is_two_sentences_earlier.py	"are combinations of these gauges, and \\emph{cross-register} ones"	REPAIR-OWED	L	YES
+receipts/L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm.py	"That calculation is run, and its answer is smaller"	DELIBERATE	-	YES
+receipts/L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm.py	"Which modes give the zero is a question about the configuration and not a general rule"	DELIBERATE	-	YES
+receipts/L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm.py	"which can be non-zero at second order in the metric perturbation and reverses with the handedness---\\emph{so the zero is a property of the mode chosen and not of the geometry}"	REPAIR-OWED	L	YES
+receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py	"HAS NEVER EXITED ZERO"	UNADJUDICATED	L	YES
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"$\\theta_{D}/\\theta_{*}$ moved by under a per cent, its size fixed by the handover and its sign by the common endpoint both lengths are carried to"	UNADJUDICATED	T	no
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"$r=0.992$, it is a rise of about two per cent at $\\ell_{D}$ and four at"	UNADJUDICATED	T	no
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"with $r=\\theta_{D}/\\theta_{*}$---the same ratio the preceding paragraph derives"	UNADJUDICATED	L	YES
+receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"for want of work}\\rcpt{X1_the_ratio_is_a_clock_reading_not_a_carried_datum}"	UNADJUDICATED	L	YES
+receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py	"rather than a single theorem covering the exact vacuum polarized Gowdy--$\\Lambda$ case, and the in-model computations above are t"	EXTENDED	L	YES
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"does not dissolve the discrepancy with the local distance ladder"	UNADJUDICATED	L	YES
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"makes no $N_{\\mathrm{eff}}$ prediction"	UNADJUDICATED	L	YES
+receipts/L805_freezing_reproduced/S1_every_mode_of_interest_freezes_and_the_inversion_is_closed.py	"IS AN ARGUMENT, NOT A COMPUTATION"	UNADJUDICATED-PINNED	L	YES
+receipts/L809_one_loop_quartic/S1_the_quartic_is_a_constant_vacuum_energy_and_the_geometry_absorbs_it.py	"not as a $2m/r$ bend"	UNADJUDICATED	N	no
+receipts/L811_po7_inversions_closed/S1_all_three_po7_inversion_routes_are_closed_by_computation.py	"DOES NOT CLEAR"	UNADJUDICATED-PINNED	L	YES
+receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py	"for f in PROBE"	DELIBERATE	L	YES
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"and 'i am not pre-registering it as open' in TXT.lower()"	DELIBERATE	L	YES
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"in arc or 'not claimed both ways' in arc.lower()"	ALT-OK	L	YES
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"named here as owed and developed in neither this paper nor the bead"	DELIBERATE	L	YES
+receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py	"_FROM - _FELL_BY == 2170"	DELIBERATE	L	YES
+receipts/L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and_one_of_this_seats_six_was_comparing_against_a_number_the_paper_had_withdrawn_as_the_error.py	"puts $10.8\\%$ of that gap into the diffusion length by itself"	DELIBERATE	L	YES
+receipts/L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and_one_of_this_seats_six_was_comparing_against_a_number_the_paper_had_withdrawn_as_the_error.py	"the rate gap is not what the signature is made of"	DELIBERATE	T	no
+receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py	"That disagreement is the first thing to settle"	DELIBERATE	-	YES
+receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py	"not in _added"	DELIBERATE	N	no
+receipts/P07_CR_framework/P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py	"at the back seam's simple zero the same integral converges"	ALT-OK	L	YES
+receipts/P07_CR_framework/P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py	"has its spectrum fixed within the first per cent of the collapse leg, measured from that leg's far-past end"	DELIBERATE	L	YES
+receipts/P07_CR_framework/P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature.py	"gives $r^{3}-\\alpha^{2}r+2M\\alpha^{2}=0$, the horizon cubic $f=0$"	DELIBERATE	L	YES
+receipts/P07_CR_framework/P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature.py	"of path length $\\pi\\alpha/3$"	DELIBERATE	L	YES
+receipts/P08_slicing_operator/P08_the_boundary_is_whether_the_breaking_is_itself_symmetric.py	"does not say that a geometric route to the representation content is impossible"	UNADJUDICATED	L	YES
+receipts/P10_canonical_time/P10_the_clause_66_wrote_on_this_seats_offer_says_exactly_what_its_receipt_supports_and_no_more_so_the_loop_the_grade_class_opened_is_closed_on_itself.py	"at finite exterior time"	ALT-OK	L	YES
+receipts/P10_canonical_time/P10_the_clause_66_wrote_on_this_seats_offer_says_exactly_what_its_receipt_supports_and_no_more_so_the_loop_the_grade_class_opened_is_closed_on_itself.py	"carry no metric separation"	DELIBERATE	L	YES
+receipts/P10_canonical_time/P10_the_clause_66_wrote_on_this_seats_offer_says_exactly_what_its_receipt_supports_and_no_more_so_the_loop_the_grade_class_opened_is_closed_on_itself.py	"may grant that no f"	EXTENDED	L	YES
+receipts/P10_canonical_time/P10_the_clause_66_wrote_on_this_seats_offer_says_exactly_what_its_receipt_supports_and_no_more_so_the_loop_the_grade_class_opened_is_closed_on_itself.py	"names the existence--occurrence distinction as the one it turns on"	DELIBERATE	LT	YES
+receipts/P10_canonical_time/P10_the_clause_66_wrote_on_this_seats_offer_says_exactly_what_its_receipt_supports_and_no_more_so_the_loop_the_grade_class_opened_is_closed_on_itself.py	"reaches that distinction from standard general relativity alone"	DELIBERATE	L	YES
+receipts/P10_canonical_time/P10_the_clause_66_wrote_on_this_seats_offer_says_exactly_what_its_receipt_supports_and_no_more_so_the_loop_the_grade_class_opened_is_closed_on_itself.py	"the metric assigns no separation between"	DELIBERATE	T	no
+receipts/P10_canonical_time/P10_the_payoff_count_of_one_is_right_because_P1_reaches_the_existence_occurrence_distinction_from_general_relativity_alone_and_answers_the_extension_move_with_a_theorem.py	"In maximal extensions"	DELIBERATE	L	YES
+receipts/P10_canonical_time/P10_the_payoff_count_of_one_is_right_because_P1_reaches_the_existence_occurrence_distinction_from_general_relativity_alone_and_answers_the_extension_move_with_a_theorem.py	"at finite exterior time"	ALT-OK	L	YES
+receipts/P10_canonical_time/P10_the_payoff_count_of_one_is_right_because_P1_reaches_the_existence_occurrence_distinction_from_general_relativity_alone_and_answers_the_extension_move_with_a_theorem.py	"existence/occurrence distinction this paper turns on"	DELIBERATE	T	no
+receipts/P10_canonical_time/P10_the_payoff_count_of_one_is_right_because_P1_reaches_the_existence_occurrence_distinction_from_general_relativity_alone_and_answers_the_extension_move_with_a_theorem.py	"reaches it from standard general relativity"	ALT-OK	L	YES
+receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	"NAMES THE LOGARITHMIC COEFFICIENT 39/4"	REPAIR-OWED	L	YES
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	"3)$ at the generic Schwarzschild--de~Sitter class"	EXTENDED	L	YES
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	"at Nariai"	UNADJUDICATED	L	YES
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	"at ten"	UNADJUDICATED	L	YES
+receipts/P12_algebroid/A7_the_frontier_has_two_kinds.py	"the whole difference is carried by"	UNADJUDICATED	T	no
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"at distinct points of the throat circle, and each vantage's signed areal radius vanishes at its own and at neither of the others"	UNADJUDICATED	L	YES
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"o seat bundle at all, and so nothing for a curvature to be the curvature of"	EXTENDED	T	no
+receipts/P15_CR_cosmology/C14_po12_gates_po10.py	"carried on this cosmology's own background with the perturbations on the leaf congruence the framework assigns them"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C14_po12_gates_po10.py	"is not the same as producing the odd/even heights"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C15_the_cancellation_does_not_reach_the_ratio.py	"carried by $H(a)$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C16_the_transfer_is_six_eighths_built.py	"with $r=\\theta_{D}/\\theta_{*}$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	"1\\%$} through the visibility peak"	EXTENDED	L	YES
+receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	"across $P_1$--$P_4$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	"carried by a Boltzmann transfer built for this programme"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C17_the_instrument_already_carries_both.py	"carried on this cosmology's own background with the perturbations on the leaf congruence the framework assigns them"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	"On the radiation-dominated collapse leg the potential obeys"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C19_the_branch_point_join.py	"has no early integrated Sachs--Wolfe term where flat"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C19_the_branch_point_join.py	"that residual decay is what the line-of-sight integral picks up"	DELIBERATE	-	YES
+receipts/P15_CR_cosmology/C20_the_caveat_named_an_empty_set.py	"previously ran together, corrected at"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	"which is the \\emph{super-horizon} equation: it drops the $k^{2}\\Phi$ term"	REPAIR-OWED	L	YES
+receipts/P15_CR_cosmology/C23_the_gap_estimated.py	"Run on this arm the same subtraction gives $0.1717$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	"So the rate gap is not what the signature is made of"	DELIBERATE	LT	YES
+receipts/P15_CR_cosmology/C24_the_substitution_itemised.py	"That figure and the $8.2\\%$ of"	DELIBERATE	LT	YES
+receipts/P15_CR_cosmology/C25_the_gap_closed_by_integration.py	"That figure and the $8.2\\%$ of"	DELIBERATE	LT	YES
+receipts/P15_CR_cosmology/C25_the_gap_closed_by_integration.py	"must be taken \\emph{from the branch point}: there is no observable expansion below it"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C25_the_gap_closed_by_integration.py	"so a single datum cannot absorb both observables"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	"moved by under a per cent"	MEANING-HELD	L	YES
+receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	"the rate gap is not what the signature is made of"	MEANING-HELD	T	no
+receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	"which therefore carries no finite redshift at all"	DELIBERATE	-	YES
+receipts/P15_CR_cosmology/C28_length_against_angle.py	"That figure and the $8.2\\%$ of"	DELIBERATE	LT	YES
+receipts/P15_CR_cosmology/C28_length_against_angle.py	"in which the common distance cancels"	REPAIR-OWED	L	YES
+receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	"That is the stacking rate's answer, and the perturbations do not take it: they take the leaf's, which carries the radiation term and therefore the driving"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	"so each re-enters on the expanding leg at its own time"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C30_the_odd_even_half_is_shared.py	"is $P_1/P_2=2.2564\\pm0.0772$, and flat $\\Lambda$CDM's is $2.200$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C30_the_odd_even_half_is_shared.py	"so every height quoted here is the polarisation path's and is stated as such"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C30_the_odd_even_half_is_shared.py	"the odd/even asymmetry is imprinted afterwards, on the expansion side at"	REPAIR-OWED	T	no
+receipts/P15_CR_cosmology/C30_the_odd_even_half_is_shared.py	"the whole difference is carried by"	REPAIR-OWED	T	no
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	"With the expansion rate, the matter and baryon densities and the tilt free in each arm and the amplitude in closed form"	REPAIR-OWED	L	YES
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	"returns $\\chi^2/\\text{dof}\\simeq1$ at $\\Omega_m\\simeq0.30$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	"with no free parameter"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	"That factor is computed rather than fitted: the inherited quantity is $P_{\\Psi}$"	DELIBERATE	-	YES
+receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	"With the expansion rate, the matter and baryon densities and the tilt free in each arm and the amplitude in closed form"	REPAIR-OWED	L	YES
+receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	"Across the seventeen readings admitted by a four-peak criterion fixed before the numbers, the first peak spans $148$ to $228$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	"leaves two things to be fixed, and the handover fixes both"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	"does not soften the negative"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	"so the ratio is $0.84$ at $\\ell_{D}$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	"with $r=\\theta_{D}/\\theta_{*}=1.082$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	"with no free parameter"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	"is a test of the background rather than a further fit to it"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	"with no free parameter"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C39_the_derived_list_read.py	"is not a feature of this construction either"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	"WITH THE BARYON TERMS"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C42_the_cancellation_needs_xe_identical.py	"which they are: recombination is the same"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	"is then $\\theta_{D}/\\theta_{*}$ moved by under a per cent"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C48_the_pairs_are_three.py	"s the test r2746 said decides the comparison's size, and it is decided by reading rather than by"	EXTENDED	T	no
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"206.4 over"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"4 IS DEFECTIVE AND THE DEFECT IS RECORDED"	EXTENDED	L	YES
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"is a wired pipeline"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"22.5 and 28.6 to {dof_l:.1f}"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"has fallen from"	DELIBERATE	LT	YES
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"outside the regime in"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/C61_the_undriven_premise_is_false_on_the_rate_the_framework_assigns_the_perturbations.py	"with the perturbations on the leaf congruence the framework assigns them to"	DELIBERATE	LT	YES
+receipts/P15_CR_cosmology/P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all.py	"0-of-2,000"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all.py	"arithmetic gate i was pleased with"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all.py	"committed before any of"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all.py	"held at their measured values"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all.py	"was the weak part of"	DELIBERATE	LT	YES
+receipts/P15_CR_cosmology/P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control.py	"NAMED BEFORE USE"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control.py	"This is the candidate I expect most from"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control.py	"candidate I expect most from"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control.py	"must hold on the SAME reading"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_order_one_answered_negative_the_crossing_cannot_share_a_measure_with_the_layers_parity_because_its_kernel_is_a_function_of_the_degree_and_the_parity_is_a_condition_on_the_charge.py	"is a DIFFERENT question"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_order_one_answered_negative_the_crossing_cannot_share_a_measure_with_the_layers_parity_because_its_kernel_is_a_function_of_the_degree_and_the_parity_is_a_condition_on_the_charge.py	"must not be reported as one"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_po84_the_charge_is_carried_and_the_corpus_already_named_where_because_the_eigenvalue_divergence_is_the_traded_momentums_blueshift.py	"carried in label"	ALT-OK	L	YES
+receipts/P15_CR_cosmology/P15_the_accounting_closes_but_cannot_attribute_because_the_share_is_the_cosine_of_a_phase_offset.py	"committed before any of"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_the_band_one_departure_is_not_in_the_likelihoods_excess_and_all_three_channels_match_it_in_separating_power.py	"do not read it off"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_band_one_departure_is_not_in_the_likelihoods_excess_and_all_three_channels_match_it_in_separating_power.py	"never of a separating power to a significance"	DELIBERATE	N	no
+receipts/P15_CR_cosmology/P15_the_bank_already_existed_and_the_doppler_carries_a_growing_minority_of_the_excess.py	"AND THE OUTCOMES"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"is now false"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"not made under a red"	DELIBERATE	N	no
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"would reinstate the red"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	"0$` at the seam RAISES every eigenvalue"	EXTENDED	L	YES
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	"is exactly conserved along the bead and no mode mixes into another"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	"must mean ZERO and not SUPPRESSED"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	"needs a harmonic decomposition of the layer at every point of the curve"	MEANING-HELD	L	YES
+receipts/P15_CR_cosmology/P15_the_constant_r_foliation_carries_the_sphere_across_the_lap_because_the_layers_shape_invariant_is_the_same_pure_number_at_every_point_of_the_bead.py	"as a conjecture and do not claim it as a theorem"	ALT-OK	L	YES
+receipts/P15_CR_cosmology/P15_the_corpus_places_every_perturbation_source_before_the_branch_point_and_everything_after_it_is_transfer_so_nothing_already_built_supplies_anisotropic_content_on_the_expansion_leg.py	"named here as owed and developed in neither this paper nor the bead"	ALT-OK	L	YES
+receipts/P15_CR_cosmology/P15_the_coupling_is_measured_and_negative_and_the_contribution_is_undetermined_because_its_input_is.py	"AND THE OUTCOMES"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_coupling_is_measured_and_negative_and_the_contribution_is_undetermined_because_its_input_is.py	"stated before use"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_dipole_parenthesis_is_right_on_its_own_tower_and_does_not_reach_the_other_one_because_the_scalar_floor_is_a_vanishing_traceless_hessian_and_the_tensor_floor_is_an_empty_degree.py	"NOT a second derivation of"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_the_dipole_parenthesis_is_right_on_its_own_tower_and_does_not_reach_the_other_one_because_the_scalar_floor_is_a_vanishing_traceless_hessian_and_the_tensor_floor_is_an_empty_degree.py	"is non-zero at degree 1"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_dipole_parenthesis_is_right_on_its_own_tower_and_does_not_reach_the_other_one_because_the_scalar_floor_is_a_vanishing_traceless_hessian_and_the_tensor_floor_is_an_empty_degree.py	"must not report that negative as though it strengthened the floor"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_dipole_parenthesis_is_right_on_its_own_tower_and_does_not_reach_the_other_one_because_the_scalar_floor_is_a_vanishing_traceless_hessian_and_the_tensor_floor_is_an_empty_degree.py	"then `r7175` is right"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_dipole_parenthesis_is_right_on_its_own_tower_and_does_not_reach_the_other_one_because_the_scalar_floor_is_a_vanishing_traceless_hessian_and_the_tensor_floor_is_an_empty_degree.py	"two different statements that happen to"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_the_exact_transmission_ratios_are_recomputed_and_the_offset_saturates.py	"gives exact/WKB ratios of ((?:\\$\\d+\\.\\d+\\$[,\\s]+(?:and\\s+)?){4}\\$\\d+\\.\\d+\\$) at \\$\\\\ell=([\\d,]+)\\$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_expansion_in_the_de_sitter_presentation_is_not_bounded_either_because_the_sphere_lives_at_zero_mass_and_the_observer_at_the_nariai_one_and_both_closed_kernels_are_excluded_by_the_comb.py	"In the de~Sitter presentation the layer \\emph{is} the $S^3$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"Do NOT unify them"	MEANING-HELD	L	YES
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"moves the scale and not the peak, which is why the start is not free"	MEANING-HELD	L	YES
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"so $k/(aH)\\to0$ for every $k$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"with the plasma handed over at the branch point there is no such start and no such amplitude"	MEANING-HELD	L	YES
+receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	"Take the vacuum case A=0 first, which is the pure bead"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	"with $r_0$ the present $S^3$ areal radius"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_history_is_spherically_symmetric_throughout_so_the_chern_simons_number_never_moves.py	"does not \\emph{select} it"	REPAIR-OWED	L	YES
+receipts/P15_CR_cosmology/P15_the_history_is_spherically_symmetric_throughout_so_the_chern_simons_number_never_moves.py	"t excluded by the geometry, and whatever excludes it does so through"	EXTENDED	T	no
+receipts/P15_CR_cosmology/P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma.py	"0.92 per bin"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode.py	"+0.06^{\\circ}$` across"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	"as a conjecture and do not claim it as a theorem"	ALT-OK	L	YES
+receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	"is what keeps that reassignment well defined across the lap"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"which is what the adjudication asks for"	DELIBERATE	LT	YES
+receipts/P15_CR_cosmology/P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demonstration_does_not_cover_it.py	"CAN SEPARATE THEM"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demonstration_does_not_cover_it.py	"What has already been looked at"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demonstration_does_not_cover_it.py	"is not comparable with a number from the other"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demonstration_does_not_cover_it.py	"must not be"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	"$0.487$, $0.435$, $0.359$, $0.666$, $0.911$, $0.983$ and $0.998$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	"for l in \\[2,\\s*3,\\s*4,"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	"on the exact transfer the deficit is \\$([\\d.]+)\\$, \\$([\\d.]+)\\$, \\$([\\d.]+)\\$, \\$([\\d.]+)\\$ of the flat expectation at \\$\\\\ell=2\\$ to \\$5\\$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py	"0 of 2,000 draws reach the observed value"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum.py	"covariance the noise is DRAWN from"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	"runs $\\ell_{A}$ from $360.6$ down to $239.3$ while the first peak sits between $204$ and $208$ throughout\\rcpt{P15_the_one_fitted_number_moves_the_scale_and_not_the_peak}"	REPAIR-OWED	L	YES
+receipts/P15_CR_cosmology/P15_the_one_ground_admits_exactly_one_independent_second_support_and_it_is_disqualified_because_the_rays_that_carry_the_flat_length_carry_a_blueshift.py	"that same null bundle becomes the constant-$\\chi$ geodesics and the other becomes the constant-$\\tau$ ones"	MEANING-HELD	L	YES
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"so $k/(aH)\\to0$ for every $k$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"take the leaf's, together with recombination's microphysics and the perturbations"	MEANING-HELD	L	YES
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	"For scalars the deformation reaches the spectrum and not the basis"	MEANING-HELD	L	YES
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	"IS THEREFORE NOT AN ENVELOPE EXPONENTIAL IN `$\\\\ell$` ABOVE `$L=3"	EXTENDED	L	YES
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	"is dominated by the LOWEST contributing degree, because the envelope f"	EXTENDED	L	YES
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"by three independent routes"	ALT-OK	L	YES
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"by three routes sharing n"	EXTENDED	L	YES
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"by two independent routes"	ALT-OK	L	YES
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"fixed by the substrate's $\\alpha$ and the cut's offset $x_0$"	MEANING-HELD	L	YES
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"has induced three-metric $dr^2+r^2d\\Omega^2$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"is a photon-path observable of the same kind as the redshift and the distances"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"is licensed by an \\emph{identification}"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"is the $E{=}1$ projection through which that expansion is \\emph{observed} as distance and redshift"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"on one ground that is a theorem and a second that rests on it"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"takes the leaf's"	MEANING-HELD	L	YES
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"takes the stacking rate"	MEANING-HELD	L	YES
+receipts/P15_CR_cosmology/P15_the_seam_flux_is_not_computable_here_because_the_closure_makes_one_locus_carry_two_surface_gravities_and_the_euclidean_section_closes_in_a_clock_whose_conversion_vanishes_at_both_seams.py	"so the two are one locus of the substrate"	MEANING-HELD	L	YES
+receipts/P15_CR_cosmology/P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_determines_it_and_the_handover_contributes_nothing.py	"$+5$` to `$+15$"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_determines_it_and_the_handover_contributes_nothing.py	"is an amplitude and not a phase"	REPAIR-OWED	L	YES
+receipts/P15_CR_cosmology/P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py	"AND THE ABSCISSA IS NOT CHOSEN"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py	"NAMED BEFORE USE"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py	"reported as part of"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_the_surviving_step_is_amplitude_and_not_phase_and_the_candidate_shares_do_not_survive_the_change_of_denominator.py	"NAMED BEFORE USE"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_term_mix_does_not_carry_the_modulation_and_it_survives_in_the_part_no_channel_explains.py	"committed before any of"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_the_term_mix_does_not_carry_the_modulation_and_it_survives_in_the_part_no_channel_explains.py	"is not an independent measurement"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_term_mix_is_the_first_channel_to_produce_cost_where_the_arm_is_rejected_and_the_excess_there_is_combed_at_the_acoustic_period.py	"committed before any of"	DELIBERATE	T	no
+receipts/P15_CR_cosmology/P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear.py	"+0.0016$ and crosses zero, where $G$ is n"	EXTENDED	L	YES
+receipts/P15_CR_cosmology/P15_the_two_data_are_one.py	"so it is the start restated rather than an inheritance, and with the handover at the branch point there is n"	EXTENDED	L	YES
+receipts/P15_CR_cosmology/P15_the_two_projection_widths_differ_by_the_jacobian_alone_and_the_channel_that_opens_is_a_quarter_of_the_excess.py	"does nothing"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_window_free_reading_cannot_resolve_the_first_cycle_the_flatness_was_a_trend_and_nine_tenths_of_the_step_is_common_to_both_arms.py	"PER-TRANSITION"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_window_free_reading_cannot_resolve_the_first_cycle_the_flatness_was_a_trend_and_nine_tenths_of_the_step_is_common_to_both_arms.py	"That is a TREND statistic"	DELIBERATE	L	YES
+receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py	"return toks[0] if toks else"	DELIBERATE	L	YES
+receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	"a precision frontier the title does not stake itself on"	REPAIR-OWED	T	no
+receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	"not by the peak's value"	REPAIR-OWED	N	no
+receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	"remains open, and is downstream-irrelevant here"	REPAIR-OWED	L	YES
+receipts/P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two.py	"has no $k=0$ member"	DELIBERATE	L	YES
+receipts/P17_geometric_core_paper/P17_the_ledgers_entropy_is_the_de_sitter_readings_and_the_other_reading_has_a_number_but_not_an_entropy.py	"de~Sitter horizon whose"	UNADJUDICATED	T	no
+receipts/RP_34_gr/G2_the_blind_run.py	"does not rest on the separable ansatz"	UNADJUDICATED	L	YES

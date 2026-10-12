@@ -69,6 +69,41 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+# ⛔⛭ ADDED r7260+60, on r7257's order ① -- the markup-carrier repair routed from r7258 §⑩.
+#   *`\emph{...}` inside a pinned span is not part of the claim: the pin breaks on any re-typesetting
+#   that preserves the meaning (`\emph`→`\textit`, or the emphasis simply dropped).  Normalising the
+#   emphasis out of the HAYSTACK leaves the span WHOLE -- one contiguous word-aligned read -- instead of
+#   cutting it into pieces that no longer carry the verb.  **r7258 §② refuted the split-into-conjuncts
+#   shape with a truth table and §③ exhibited the disjunction shape failing live, so neither is used
+#   here.**  The site count is PRINTED at each read and pinned nowhere, as the routing said.*
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+_WORD = re.compile(r'\w')
+
+
+def unemph(t, rounds=4):
+    """the text with inline emphasis commands unwrapped, contents kept, nesting handled by iteration"""
+    for _ in range(rounds):
+        t2 = _EMPH.sub(r'\1', t)
+        if t2 == t:
+            break
+        t = t2
+    return t
+
+
+def held(lit, hay):
+    """(present and WORD-ALIGNED at EVERY occurrence, how many occurrences) -- alignment is tracked
+    across all of them rather than abandoned at the first clipped one, so the count printed is true."""
+    i, n, ok = hay.find(lit), 0, True
+    while i >= 0:
+        b = hay[i - 1] if i else ' '
+        a = hay[i + len(lit)] if i + len(lit) < len(hay) else ' '
+        if (_WORD.match(lit[0]) and _WORD.match(b)) or (_WORD.match(lit[-1]) and _WORD.match(a)):
+            ok = False
+        n += 1
+        i = hay.find(lit, i + 1)
+    return (n > 0 and ok), n
+
+
 def main():
     print()
     print("  B32 -- do PO-5's two bounds compose, and which is tighter?")
@@ -77,9 +112,22 @@ def main():
     p0 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'geometric_core_paper.tex')))
 
     # ⓵ cc54's half, now in the paper
-    check('⓵ P14 carries cc54\'s bound: it "constrains the target rather than the mechanism: whatever '
-          'produces the connection, what it must end in is a four-dimensional Yang--Mills term"',
-          'constrains the \\emph{target} rather than the mechanism' in p14)
+    # ⛔⛭ RE-CUT r7260+60 on r7257's orders ① and ③.  *`constrains the \emph{target} rather than the
+    #   mechanism` was a MARKUP CARRIER and it also DANGLES -- it opens on a finite verb, so read
+    #   alone it names nothing that constrains.  The paper's own subject is two words to the left.*
+    #   ⌗ ** The adopted detector reads this re-cut as STILL dangling and it is WRONG to: `That` here
+    #   ** is a DEMONSTRATIVE DETERMINER before a noun, not a subordinating conjunction.  *That is a
+    #   ** false positive of my own instrument, found by using it, and it is measured and reported
+    #   ** this revision rather than worked around here.*
+    _u14 = unemph(p14)
+    _KEY = 'That sentence constrains the target rather than the mechanism'
+    _ok, _n = held(_KEY, _u14)
+    check(f'⓵ P14 carries cc54\'s bound: "That sentence constrains the target rather than the '
+          f'mechanism: whatever produces the connection, what it must end in is a four-dimensional '
+          f'Yang--Mills term" -- emphasis normalised out and the span extended LEFT to the subject '
+          f'the paper gives it, word-aligned at {_n} site(s)',
+          _KEY in _u14 and _ok
+          and 'what it must end in is a four-dimensional Yang--Mills term' in _u14)
     check('and states the residue as a TEST rather than a search: "a fixed pure number rather than a '
           'free parameter, and a candidate is accordingly falsifiable against one quantity rather '
           'than searched for in an unbounded space"',
