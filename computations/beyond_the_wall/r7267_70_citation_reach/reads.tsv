@@ -1,0 +1,71 @@
+# id	verdict	evidence (condensed from the read-only agents' reads; S16, S20, U15, U16 re-read by this seat and confirmed)
+S01	NOT-A-CLAIM	inside a "!! MARKED" annotation describing a defect
+S02	WITHIN	the flagged clause is cited to \cite{JanzenMatter}, not this receipt; the receipt checks the reality lift on 200 spinors
+S03	NOT-A-CLAIM	describes a defect in L-147's definition
+S04	WITHIN	"in all three directions" checked over all three coordinates
+S05	NOT-A-CLAIM	a past state of the programme
+S06	OVER	"never landed" checked only at the one commit r4549
+S07	WITHIN	all six quoted sentences checked at 9d9f97f
+S08	OVER	"all sent to one wall": four legs hard-coded as n=2*2, never modelled
+S09	NOT-A-CLAIM	a quoted guard from an order
+S10	NOT-A-CLAIM	a past state of the C62 row
+S11	NOT-A-CLAIM	"-only" is part of a noun phrase
+S12	OVER	"all polynomial curvature invariants vanish": no invariant computed
+S13	NOT-A-CLAIM	quotes P7's earlier frontier
+S14	NOT-A-CLAIM	a past state of the codebase
+S15	OVER	"a floor CAMB never pays": only a string test for 'FLOOR'
+S16	OVER	"at every D": sp.div checked for D in range(4,9) only (confirmed)
+S17	OVER	"at every order of the coupling": no coupling order touched
+S18	OVER	"all three remaining stations are one knot": string tests only
+S19	NOT-A-CLAIM	a past defect the receipt then computes
+S20	OVER	"the only antilinear symmetry": four candidate U tested (confirmed)
+S21	OVER	"the whole indicial-exponent argument rests on": indicial exponents never touched
+S22	OVER	"ANY covering-space construction": one deck map tested
+S23	NOT-A-CLAIM	inside a "!! CORRECTED" annotation
+S24	NOT-A-CLAIM	a quoted warning
+S25	OVER	"always equilateral": root geometry at one point
+S26	WITHIN	the flag fell in an adjacent sentence cited to another receipt
+S27	NOT-A-CLAIM	inside a "!! CORRECTED" annotation
+S28	WITHIN	conservation on and off the cone checked symbolically
+S29	OVER	"a reduction question the corpus never used": no corpus search
+S30	WITHIN	all four rank-two Weyl groups built
+N01	OVER	+1.58 printed; gates |Δ|<2 and arm difference <0.5
+N02	WITHIN	2^(1/3) pinned exactly in sympy
+N03	OVER	85.9 printed; gate only NEW ≤ 0.15×X73
+N04	OVER	1.000131 printed; tolerance 1e-3 is 8× looser than the stated departure
+N05	OVER	7.78 printed; gate |l2−7.8|<0.3
+N06	OVER	four of five figures never formed
+N07	WITHIN	Om_root pinned to 1e-6
+N08	OVER	figures from another configuration (132-bin LMAXL=1300 grid)
+N09	OVER	the arm's P1/P2 never computed
+N10	OVER	no refit performed; the refitted figures never computed
+N11	OVER	0.9985 printed; gate |x−1|<0.02
+N12	OVER	per-band χ²/bin printed; only ratio gates
+N13	OVER	207.8 printed; gate < 348
+N14	OVER	1.66/1.79/21.9 printed; only threshold gates
+N15	OVER	WB:NS ratios printed; gates rp>8, ra>15
+N16	NOT-A-CLAIM	"70.1" is a revision tag
+N17	OVER	46.5% never computed here (co-cited receipt)
+N18	WITHIN	279.4 pinned through round(χ²/133,2)==2.10
+N19	OVER	P1/P2 printed with no check on it
+N20	OVER	3.84 and 15.4648 printed; gates ">3 orders", 14<|wA|<17
+U01	OVER	"governed by p=0 alone" across the family: five E values, equilateral set by definition
+U02	OVER	first integral holds by construction of the reduced ODE
+U03	OVER	"one-dimensional" printed; the count is len() of a hard-coded list
+U04	WITHIN	the mass-free K checked symbolically and at three masses
+U05	OVER	the half-period and turnaround are printed, never asserted
+U06	OVER	"bounded below" and M-independence are inputs
+U07	OVER	"the reassignment selects this case", "not a tuning": untested
+U08	WITHIN	same sign at both anchors asserted
+U09	WITHIN	ds²=0 at the hinge, six radii, and 600 points pinned
+U10	WITHIN	both channels non-zero and equal asserted
+U11	WITHIN	*RR=0 and K^μ=0 on the general dynamic class
+U12	OVER	"one object described twice", "not a coincidence": only an algebraic equality
+U13	WITHIN	the de-tilted factors asserted to 0.1
+U14	WITHIN	the law, the parsed rate and the identity asserted
+U15	OVER	"0.065% at ℓ≃2475" is a hard-coded print; six k sampled for "every mode" (confirmed)
+U16	OVER	WICK=3 then WICK==3: the three Wick pairings never inspected (confirmed)
+U17	WITHIN	both tensions asserted (×1.016 hand correction noted)
+U18	OVER	"survives every perturbation": the Λ sweep promised is absent
+U19	WITHIN	TA/r_HE = 2^(1/3) symbolically, generic member checked
+U20	OVER	r=0 as the branch point never computed
