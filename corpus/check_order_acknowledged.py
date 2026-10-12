@@ -65,7 +65,18 @@ PAIRS = {
     '60':   ('FOR_60.md', 'FOR_66_FROM_60.md'),
     '70':   ('FOR_70.md', 'FOR_66_FROM_70.md'),
     '69':   ('FOR_69.md', 'FOR_66_FROM_69.md'),
+    '71':   ('FOR_71.md', 'FOR_66_FROM_71.md'),
 }
+
+# ⛭ r7259 (66): A SEAT THAT HAS BEEN GIVEN ITS FIRST ORDER AND HAS NOT YET ANSWERED IS **NEW**, NOT ABSENT.
+#   *Node `71` was spun up as a code seat and given its space at `r7259`, and this gate could not represent it:
+#   a reply file naming no revision fell to `absent`, whose text reads `a missing pair is this gate not covering
+#   a seat that has orders` -- true of a seat with no FILE and false of a seat with no REPLY.*
+#   ⇒ ** The two states are now distinguished.  A seat with both files whose reply file names no revision is
+#   reported NEW with its first reply owed, and does not fail; one whose reply file is MISSING still does. **
+#   ⌗ *The alternative was to seed the reply file with this revision's number so the gate would read an
+#   acknowledgement that had not happened, which is the defect this whole row exists to catch -- and the one
+#   after that was to leave `71` out of `PAIRS` for a cycle, which is a knowingly uncovered seat.*
 
 # ⛭ r7209+70.1 (node 70, taking r7209's offer of a rewrite): THE FAIL IS NOW ON THIS SEAT'S OWN UNANSWERED SECTIONS,
 #   NOT ON A REVISION DIFFERENCE.  At r7209 this gate was RED on `main` over 69 and cc66, two seats r7209's own
@@ -129,7 +140,7 @@ def main():
     print(f'    ceiling: {SECTION_CEILING} of a seat\'s OWN order sections unanswered (broadcasts excluded), measured r7209+70.1')
     print()
 
-    absent, over, rows = [], [], []
+    absent, over, rows, new_seats = [], [], [], []
     texts = {s: read(of) for s, (of, _rf) in PAIRS.items()}
     for seat, (of, rf) in sorted(PAIRS.items()):
         o, r = read(of), read(rf)
@@ -144,7 +155,8 @@ def main():
             absent.append(f'{seat}: {of} carries no dated order heading')
             continue
         if na is None:
-            absent.append(f'{seat}: {rf} names no revision at all')
+            # *a seat given its first order that has not yet answered: NEW, not absent.*
+            new_seats.append((seat, no, rf))
             continue
         gap = no - na
         others = {l.strip() for s2, x in texts.items() if s2 != seat and x for l in x.split('\n') if l.startswith('## ')}
@@ -157,6 +169,12 @@ def main():
         mark = '⛔' if own > SECTION_CEILING else '  '
         print(f'    {mark} {seat:5} order r{no}  acknowledged r{na}  revision lag {gap}  own unanswered section(s) {own}')
     print()
+
+    for seat, no, rf in new_seats:
+        print(f'    ⚑ {seat:5} order r{no}  acknowledged --        NEW SEAT: {rf} carries no reply yet,')
+        print(f'          so its first reply is owed and nothing is sitting unread.')
+    if new_seats:
+        print()
 
     if absent:
         for a in absent:
