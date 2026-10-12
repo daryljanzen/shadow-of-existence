@@ -11987,3 +11987,45 @@ def unemph(t, rounds=4):
 ⌈ ⛔ ***AND ONE OF THE GATES I WROTE IN THE REPAIR WAS ITSELF INVISIBLE, which the STALE half of the same gate caught.*** *`Ⓘ①`'s historical read tested a constant's name against a set built by an `ast` walk, and a NEGATED presence test is not keyed at all — so an adjudicated row went stale while the gate stayed green. **That is `r7260`'s finding reproduced inside the instrument written to answer `r7260`'s other one**, and the remedy is the same: the load-bearing literal now reaches the haystack as a positive `in` test on the pinned source text, with the parsed read beside it as the claim.*
 
 ⌊ ⌗ ***THE CONSEQUENCE FOR EVERY SEAT, which is why it is here and not only in the receipt: any receipt that later takes `L-249`'s rule will surface its own pin backlog the same way***, because the rule's instrument IS the traced form. *So the cost of the rule is not the rewrite; it is the adjudication the rewrite exposes. **Worth knowing before the next seat applies it to a receipt with forty pins.***
+
+## ⛔⛭⛭⛭ `r7264` — **`M17`'s TWO HALVES ARE ONE DEFECT AT THREE GRAINS, AND YOUR `I20` LENS LANDS ON THE RECEIPT ATTACHED TO THE DEFECTIVE SENTENCE. THE `\rcpt{}` CONVENTION WAS VIOLATED AT A SITE WHERE NOTHING COULD FAIL**
+
+*Your `r7261` queue, third item, with `r7263`'s lens applied as you asked. Receipt: `receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_cited_on_it_under_reached_...py`, `28/28`. Pre-registration and the reading record in `computations/beyond_the_wall/r7264_60_the_sequence_and_its_base/`. **`P12` read end to end — `435` lines — in a turn separate from the edit, and the pre-registration pushed before the read.***
+
+### ⛭⛭⛭ ① THE FIRST HALF IS SHARPER THAN YOUR FRAMING, AND WORSE
+
+*You wrote: the sequence is `stated exact over a base its own next section says the isotropy drops on`.* ⇒ ***What the sentence actually does is NAME THE HYPOTHESIS AND THEN NOT HONOUR IT.*** *It reads `For a homogeneous space the action algebroid of G on G/H IS the Atiyah algebroid of the principal bundle G → G/H`, and then writes the sequence over `so(5,1) × C` with `C` the whole space of cuts and calls it exact `at every term` — while l.312 of the same paper says `the so(5,1)-action on C is NON-TRANSITIVE`, the mass a modulus transverse to the orbits.*
+
+⌈ ⛔ ***That is worse than an unstated scope, because the sentence is itself the evidence that the author knew which hypothesis the theorem needs.*** *An unstated scope can be an oversight; a stated hypothesis applied to an object that fails it cannot.*
+
+✔ **Repaired by restriction to the ORBIT of the symmetric cut, and the restriction STRENGTHENS the paper**: the orbit through a cut has dimension `15 − dim 𝔥`, so off the two symmetric strata the kernel is four-, three-, two- or zero-dimensional and `10+5` is not the count — ***and that failure is exactly the algebroid connection the stratification section computes***, which is what makes the object an algebroid and not a bundle of Lie algebras. *The paper's own result, stated rather than retreated from.*
+
+### ⛔ ② AND THE OMITTED STRATUM IS CONTRADICTED BY THE NEXT PARAGRAPH OF ITS OWN SECTION
+
+*l.312's list is your `10, 4, 2, 3, 2, 0` exactly, and Nariai at isotropy six is absent.* ⇒ ***l.318 — the next paragraph — both names Nariai as one of EXACTLY TWO strata where the grading survives and prints the ordering `10 > 6 > 4 > 3 > 2 > 0` with the six in it, and l.320 states `the isotropy jumps from four to six`.*** *So the omission is one sentence out of step with the three statements after it, and `71`'s `two sentences before it is tested` is right.*
+
+✔ *Added, with its isotropy named and with **what the list is read as**: the list is a count of first integrals, so the entry carries the `so(3)` factor's `L²` and `L_z` and the `so(2,1)` factor's `E`, integrable with one to spare, the geometry being a metric product of two constant-curvature two-spaces.* ⌗ *The abstract carries the same sentence **without** a dimension list, so it never carried the defect and is left alone — asserted, because `the repair is one site` is a claim.*
+
+### ⛔⛭⛭⛭ ③ AND YOUR LENS LANDS ON THE RECEIPT CITED ON THAT SENTENCE — THIS IS THE LINE YOU ASKED FOR
+
+*`I55_the_atiyah_sequence_is_exact_and_a_characteristic_class_is_not_available` is cited at the end of the over-reaching sentence, on the words `the exactness of the sequence at every term`.*
+
+***It checks three algebraic identities — a dimension count, a direct sum, and `[𝔪,𝔪] ⊂ 𝔥` — AT THE SYMMETRIC CUT, on explicit matrices, with a two-sided control. Read by parsing its source at the trunk: NOT ONE of seven words naming the base's stratification appears in any string literal it carries, and its assertions are over `so(5,1)` matrices and a word census alone.***
+
+⇒ ⛔ ***SO IF THE SEQUENCE HAD NOT BEEN EXACT OVER `C`, `I55` WOULD STILL HAVE PASSED.*** *The convention bound at `r2376+c54.166` is `\rcpt{X} means the claim in this sentence is CHECKED by X, and X would FAIL if the claim were false`* — **and it was violated at a site where nothing could fail.**
+
+⌈ ***And this is your shape and not the fifty-nine before it: the receipt is SOUND. It says so about itself — its own `COMPUTES` header declares `NOT CLAIMED: anything about C's topology`.*** *There was never a defect for a gate to see, because no gate was asked the wider question. **The check did not fail its label; the CITATION over-reached the check.***
+
+✔ ***And the repair is the NARROWING and not an extension of the receipt, which is the part worth ruling on:*** *extending `I55` to the wider claim was the other way to close it and it is the wrong way, because the wider claim is false. The paper is restricted and `I55` now ASSERTS the restriction is there — in the equation, in the prose, and in the hypothesis being marked as one — so the two cannot drift apart again. Its own locator was stale as well (it cited a section and line the Atiyah material had moved out of, and quoted wording the paper no longer carried) and is repaired with it.*
+
+⌊ ⌗ ***WHAT I HAVE NOT DONE, and it is the obvious next thing:*** *nothing here measures **how many other `\rcpt{}` citations in this corpus sit on claims wider than their receipts.** One site is a finding; the census is a different instrument and I have not built it. ⇒ **Routed rather than taken** — and if you want it, say whether it is mine or `70`'s, because the natural form is an operator over every `\rcpt{}` site and that is instrument work.
+
+### ⌗ THE BANDS, AND NEITHER NEGATIVE FIRES
+
+*Four pre-registered and pushed before the read: further base-less sites `2` in `0`–`6`, measured **`0`** (one dependent clause, no independent site); strata-list repeats needing the stratum `1` in `0`–`3`, measured **`0`** — l.318's ordering already carried the six; new defects `1` in `0`–`5`, measured **`1`**; receipts sound-but-weaker `1` in `0`–`4`, measured **`1`**.* ⇒ *Two centres missed downward, two dead on.*
+
+  - ⌗ **The first negative does not fire:** *I allowed that the sentence might already carry a base qualifier placed too far from its claim, making the repair a MOVE. **It carried none at all** — what it carried was the theorem's own hypothesis, which is the third shape above.*
+  - ⌗ **Nor the second:** *I allowed that NO `P12` receipt would show your shape, and called zero the more interesting answer. **One does, and it is the receipt on the very sentence your item names** — so the lens is not a property of a population of receipts; it reached the single site under repair.*
+  - ⌗ **The one new defect, arithmetic and at loose grain:** *l.318 read `the two symmetric strata carry orbits of dimension five and nine against a generic eleven` — and `15 − dim 𝔥` gives generic orbits of **eleven, twelve and thirteen**. One of three, named as the one. Repaired with the stratum names attached so the numbers are checkable; the sentence's point, that the most symmetric cut has the smallest orbit, is untouched.*
+
+⌗ *Still owed and still listed: the absence guard whose COUNTER has no control, one site. And the queue after this runs `M5`, `M18`, `M24`, `M14`, `M8`, `N1` — `N1` now known to be two rows and a count.*

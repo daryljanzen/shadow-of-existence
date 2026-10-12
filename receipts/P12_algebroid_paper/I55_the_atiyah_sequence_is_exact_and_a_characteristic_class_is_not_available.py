@@ -1,13 +1,29 @@
 #!/usr/bin/env python3
 r"""I55 -- P12's ATIYAH SEQUENCE, VERIFIED; AND WHY ITS OBSTRUCTION IS HOLONOMY AND NOT A CLASS.
 
-** WHAT THE PAPER ASSERTS.  ** `algebroid_paper.tex` `sec:anchor` L186: *"at the symmetric cut
-$\so(5,1)=\fh\oplus\fm$ with $\fh=\so(4,1)$ the cut-fixing isotropy and $\fm$ the cut-deforming coset,
-and the symmetric-space relation $[\fm,\fm]\subset\fh$ holds; this grading is the Atiyah sequence of
-the principal bundle $SO(5,1)\to\dS_5$"*, exact, *"with $\fh$ the kernel of the anchor -- the adjoint
-bundle, ten-dimensional -- and $\fm$ its image, the five dimensions of the base, closing at
-$10+5=15=\dim\so(5,1)$"*.  ** Three assertions: a dimension count, a direct sum, and
-$[\fm,\fm]\subset\fh$. **  *All three are verified here on explicit matrices.*
+** WHAT THE PAPER ASSERTS.  ** `algebroid_paper.tex` `sec:bracket`: *"For a HOMOGENEOUS space the
+action algebroid of $G$ on $G/H$ IS the Atiyah algebroid of the principal bundle $G\to G/H$"*, and on
+*"the orbit $\mathcal{O}$ of the symmetric cut, where the isotropy is constant"*, the sequence is
+exact *"with $\fh$ the kernel of the anchor -- the adjoint bundle, ten-dimensional -- and $\fm$ its
+image, the five dimensions of that orbit, closing at $10+5=15=\dim\so(5,1)$"*.  ** Three assertions: a
+dimension count, a direct sum, and $[\fm,\fm]\subset\fh$. **  *All three are verified here on explicit
+matrices, at the symmetric cut.*
+
+⛔⛭⛭⛭ ** AND THE SCOPE IN THAT QUOTATION IS NEW AT `r7264`, BECAUSE THIS RECEIPT WAS SOUND AND
+STRICTLY WEAKER THAN THE SENTENCE IT WAS CITED ON. **  *The paper stated the sequence over
+$\so(5,1)\times\C$ -- the WHOLE space of cuts -- and called it exact "at every term", while this
+receipt checks three algebraic identities AT THE SYMMETRIC CUT and says in its own `COMPUTES` header
+that it claims nothing about $\C$.*
+  ⇒ *** So if the sequence had NOT been exact over $\C$, this receipt would still have passed, and the
+      `\rcpt{}` convention bound at `r2376+c54.166` -- "X would FAIL if the claim were false" -- was
+      violated at that site. ***  ** There was no defect for a gate to see, because no gate was asked
+      the wider question. **  *`r7263`'s own lens, found on the receipt attached to the sentence
+      `r7261`'s `M17` names: a check whose reach is shorter than its label.*
+  ⌗ *The repair is the NARROWING and not an extension of this receipt: the paper is restricted to the
+    orbit, which is what its own stratification section already says, and the gate below asserts the
+    restriction is THERE so the two cannot drift apart again.*  ⌊ *The locator in the quotation above
+    was also stale -- `sec:anchor L186`, wording the paper no longer carries -- and is repaired with
+    it.*
 
 ⛭ ** AND THE ROW'S PREDICTION IS CONFIRMED ON THE ABSENCE AND REFUTED ON THE REASON, which is the
 informative half. **  *The locator predicted that "the obstruction to a FLAT connection is a
@@ -168,7 +184,27 @@ if __name__ == '__main__':
     print("      space of cuts C and the paper never fixes C's homotopy type.  The holonomy")
     print('      route is forced, not preferred.')
 
+    print()
+    print('=' * 78)
+    print('(E) THE PAPER IS SCOPED TO AN ORBIT -- asserted, so the two cannot drift apart')
+    print('=' * 78)
+    # ⛔⛭⛭ r7264+60: this gate exists because (A)-(D) are all TRUE and were cited on a WIDER
+    #   sentence.  A receipt that verifies the symmetric cut cannot carry a claim about the whole
+    #   base, so the claim is narrowed in the paper and the narrowing is asserted HERE.
+    _ORBIT = 'the identification is available over an orbit and not over $\\C$'
+    _WIDER = '0\\;\\longrightarrow\\;\\fh\\;\\longrightarrow\\;\\so(5,1)\\times\\C\\;'
+    _HOM = 'For a \\emph{homogeneous} space'
+    _orbit_in = _ORBIT in src
+    _wider_in = _WIDER in src
+    _hom_in = _HOM in src
+    print(f'    the orbit restriction is stated in the paper : {_orbit_in}')
+    print(f'    the hypothesis is marked as a hypothesis     : {_hom_in}')
+    print(f'    the sequence is NO LONGER written over C     : {not _wider_in}')
+    print('    ⇒ the sentence this receipt is cited on now claims exactly what the')
+    print('      receipt checks, which is what the rcpt convention requires of it.')
+
     # ⛔⛭ pinned to measured values -- never `expr == True`
+    assert _orbit_in and _hom_in and not _wider_in, (_orbit_in, _hom_in, _wider_in)
     assert ok_alg
     assert (dh, dm, dg) == (10, 5, 15), (dh, dm, dg)
     assert sym and worst < 1e-9, (sym, worst)
