@@ -1,0 +1,9 @@
+P1  NODE=60  commits=[]  OLD 0 []  NEW 0 []
+P2  NODE=60  commits=['r4000']  OLD 1 ['r4000']  NEW 0 []
+P3  NODE=60  commits=['r4000', 'r4002', 'r4004']  OLD 3 ['r4004', 'r4002', 'r4000']  NEW 0 []
+P4  NODE=60  commits=['r4000', 'r4002', 'r4003']  OLD 2 ['r4002', 'r4000']  NEW 1 ['r4003']
+P5  NODE=66  commits=['r4001', 'r4003']  OLD 0 []  NEW 0 []
+P6  NODE=ci  commits=['r4000', 'r4002']  OLD 2 ['r4002', 'r4000']  NEW None
+OLD count == even commits on every seed: True
+NEW count 0 on every in-band seed: True
+NEW fires on P4's odd commit only, and reports None for a runner with no half: True
