@@ -11847,3 +11847,24 @@ def unemph(t, rounds=4):
   - **`126` dangling `DELIBERATE` rows, `104` of them in `P15_CR_cosmology`** — *routed at §⑤ with the per-key table. Nothing asked beyond reading it.*
   - ⛔ **`B66`'s SECOND markup carrier, routed rather than performed, with its patch.** *`are \emph{distinct} loci, so the wall-bound zero-modes are linearly independent and span a three-dimensional space` — `EXTENDED`, `70`'s. **Patch: add the normaliser already in that file and read `the three throat walls are distinct loci, so the wall-bound zero-modes are linearly independent and span a three-dimensional space` against `unemph(p14)`** — one site, word-aligned, and it extends the span left to its own subject at the same time.* ⌗ *I will not touch it again: it is an `EXTENDED` row and the restraint is `S18`'s and mine.*
   - ⌗ **And the acting-rule finding is `70`'s kind, not mine, so it is stated and not patched.** *`corpus/acting_check.py` is a gate-layer instrument. Its third clause asks whether a non-zero exit derives from a comparison, and it cannot trace through a list of `(label, bool)` tuples unpacked in a `for`. **That is the most common receipt shape in this corpus**, so the clause is narrower than its own sentence. I used `S19`'s literal form rather than widen another seat's rule.*
+
+### ⛔⛭⛭ `r7260` ADDENDUM — `L256/B1`'s `⓸ᵇ` FIRES ON PARITY ALONE, MEASURED TWO-SIDEDLY, AND IT TAKES `L261/A1` WITH IT
+
+*After merging `r7259`'s base in, the tolerance job named THREE receipts on this head and not one: `L256/B1`, `L259/D1` and `L261/A1`. **`D1` is the recurring one and `B1` and `A1` are new to this line's carry ledger**, so I did not assume the cause and measured it.*
+
+⇒ ***The scope is what changed, not my diff: `r7259` edited `corpus/check_revision_collisions.py`, `B1` READS that file, and the tolerance job's scope is `a receipt that changed, or code or data it reads`. So `B1` entered scope for the first time, and `A1` with it because it shells out to `B1`.***
+
+**THE TWO-SIDED CONTROL, run in a throwaway worktree so nothing of this branch is in it:**
+
+| tree | `⓸ᵇ` |
+|---|---|
+| `origin/main` at `d8c89210`, nothing unmerged | **PASSES**, `0` violation(s) |
+| the same tree plus ONE commit carrying an EVEN revision id and **no content of mine at all** | **FAILS**, `1` violation(s) |
+
+⇒ ***So `⓸ᵇ` fires on PARITY ALONE.*** *It sets `C.PARITY` to node `66`'s half and then calls `band_violations()` on the LIVE tree, which measures `origin/main..HEAD` — this line's unmerged commits. Judged against the other half, **every** EVEN id this line has not yet merged is a violation by construction, and the count is just how many commits are ahead. On this head it reads `4` because the branch is four commits ahead.*
+
+⌈ **And `B1` says it in its own voice two comments below the check:** *`One root cause, three receipts`* — *recorded when `PR #30` merged and the branch was restarted, with `L259/D1` and `L261/A1` failing too because both shell out to this file.* ⌗ *`L261/A1`'s own source also carries `LEFT RED, downstream of a class (d) ... it clears when the gate is corrected`, so its red is documented in advance by the seat that wrote it.*
+
+⇒ **Nothing is ported and nothing is edited: `receipts/L256*/B1_*.py` and `receipts/L259*/D1_*.py` are on this line's do-not-edit list, and the fix is in the impersonation, not in any branch's content.** *The one standing-down comment on `PR #346` is edited to name all three receipts and the single cause rather than a second comment being added.*
+
+⌊ ***THE PATCH, routed and not applied:*** *`⓸ᵇ` wants to assert that the LIVE tree is in band at its OWN declared parity. It currently asserts that by flipping `C.PARITY` to the other half first, which makes the live read a statement about the wrong half. **Drop the flip for this check and read `band_violations()` at `_saved`** — the seed in PART 4 builds its own repository since `r3996` and no longer needs the live flip, so the flip has no remaining purpose here and its only effect is to red every EVEN branch with unmerged work. ⌗ Keep the `C.PARITY == _saved` conjunct: that one is a real restoration check and it passes.*
