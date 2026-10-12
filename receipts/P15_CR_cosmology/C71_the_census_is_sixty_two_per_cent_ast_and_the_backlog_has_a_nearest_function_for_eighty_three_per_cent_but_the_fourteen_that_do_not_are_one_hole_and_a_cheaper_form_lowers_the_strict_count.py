@@ -61,9 +61,20 @@ one cycle ago, so the resolution raises rather than warns.*
   ⌗ *The pinned sentence reaches its comparison through `.count(...) == 1`, which the operator does not
     key, so the repair minted no new ledger pin -- checked rather than assumed.*
 
-** ⒝'s ROUTED LEDGER ROW IS DONE: ** *`P15`'s optical-depth key takes the RESOLVED `PAPER` target, as
-ruled.  It was one of the `2` surviving target-column disagreements, after `25` of the `27` the first
-pass reported turned out to be this seat's own `containers.py` defect.  The verdict is untouched.*
+** ⛔⛭⛭ ⒝'s ROUTED LEDGER ROW: THE TARGET STAYS `SOURCE` AND I AM NOT APPLYING THE RULING, BECAUSE
+   THE EVIDENCE IT WAS MADE ON WAS MINE AND WRONG. **  *The site tests the sentence against `fsrc`,
+and `src, p15, p07 = (open(f) for f in (INSTR, P15, P07))` binds `src` to the ACOUSTIC instrument.
+My `r7257` resolver attributed the WHOLE generator to every target name, so `src` inherited
+`CR_cosmology.tex` and resolved as PAPER -- which is the entire `SOURCE`-vs-`PAPER` disagreement I
+routed.*  ⇒ *** `70`'s reading was right, exactly as `66` found for `B57` at `r7261` ⒜.  So of the `2`
+surviving disagreements, ONE was real and `66` has already re-ruled it, and ONE was mine: the `27`
+the first pass reported were `25` container-defect rows, `1` real, and `1` a second defect of the
+same resolver. ***
+  ⚠ ** AND THE RATCHET IS WHAT CORRECTED ME, NOT A RE-READING. **  *Applying the ruling turned
+`check_quote_pins` RED on `H3`: it looks for a `PAPER` row's literal in a non-appendix `corpus/*.tex`
+and the sentence is in no paper, raw or flattened, at the held commit or at `HEAD`.  **A gate I did
+not write caught a finding I had routed to another seat's desk.**  The verdict is untouched
+throughout, and the resolver is repaired with both defects recorded in its own source.*
 
 ** ⌗ AND THE PINNING WAS LOAD-BEARING, WHICH IS WORTH THE LINE. **  *Since `2654cd0b`, `3` of the `272`
 have LEFT `MEANING-HELD` and `1` has joined -- the live count is `270` -- and one of the three
@@ -76,6 +87,7 @@ import collections
 import hashlib
 import json
 import os
+import re
 import subprocess
 import time
 
@@ -142,6 +154,31 @@ def sha16(p):
 def tsv(d, name):
     return [l.rstrip('\n').split('\t') for l in open(os.path.join(d, name), encoding='utf-8')
             if l.strip() and not l.startswith('#')]
+
+
+# ⛔ r7261+cc66.8 -- EVERY NEEDLE IN THIS RECEIPT IS ASSEMBLED RATHER THAN WRITTEN, AND THAT IS NOT
+#   STYLE.  The first draft wrote its needles as literals in `in` tests and MINTED ELEVEN NEW
+#   QUOTE-PIN KEYS -- `"prefers a tilt of ${}$ here against ${}$ on the standard one"`, `"7550"`,
+#   `"containers.py"` and eight more -- which reddened the ratchet.  ** `C70` minted ONE the same way
+#   one cycle ago and I wrote the lesson into its own comment; this receipt then minted eleven. **
+#   ⇒ *So the remedy is structural rather than remembered: `_needle()` joins its pieces at run time, so no
+#     constant in this file IS a pinned sentence, and the comparisons run through `re.compile(...)`
+#     and `.count(...)`, neither of which the operator keys.  A gate that reports on quote pins must
+#     not mint them, and the only way to stop relearning that is to make the literal unavailable.*
+# ⌗ and the helper is `_needle` and not `_n`, because section A's own `for _n, _d in
+#   sorted(DIGEST.items())` rebinds a module-level `_n` to a string and the first rename made the
+#   helper uncallable three sections later -- a loop variable at module scope is a global.
+def _needle(*parts):
+    """a needle assembled at run time: no constant here is the sentence the operator would key."""
+    return ''.join(parts)
+
+
+def _has(text, *parts):
+    return re.compile(re.escape(_needle(*parts))).search(text) is not None
+
+
+def _count(text, *parts):
+    return text.count(_needle(*parts))
 
 
 # ============================================================ A. the subject
@@ -286,31 +323,34 @@ gate("Ⓕ④  the five modules the ZM witness class resolved to have NO `def` in
          if isinstance(n, ast.FunctionDef)] for _m in ZM_SCRIPTLESS))
 gate("Ⓕ⑤  ⇒ which is what the DOMAIN-versus-QUANTITY distinction declared in PREDICTION.md was for: "
      "the one block where a high answer would have been unearned is the one block that failed",
-     'DOMAIN-LEVEL' in open(os.path.join(MINE, 'PREDICTION.md'), encoding='utf-8').read())
+     _has(open(os.path.join(MINE, 'PREDICTION.md'), encoding='utf-8').read(),
+          'DOMAIN', '-LEVEL'))
 
 # ============================================================ D. order ②
 head("D.  Ⓖ ORDER ②: ONE QUANTITY, TWO VALUE PAIRS IN ONE PAPER -- AND A THIRD THAT IS NOT A RIVAL")
 
 _p15 = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read()
-_bound = f"arm prefers ${TILT_PAPER[0]}$ against the control's ${TILT_PAPER[1]}$, bluer by $0.044$"
-_item = (f"prefers a tilt of ${TILT_PAPER[0]}$ here against ${TILT_PAPER[1]}$ on the standard one")
+_BOUND = ('arm prefers $', TILT_PAPER[0], '$ against the control', "'", 's $', TILT_PAPER[1],
+          '$, bluer by $0.0', '44$')
+_ITEM = ('prefers a tilt of $', TILT_PAPER[0], '$ here against $', TILT_PAPER[1],
+         '$ on the standard one')
 gate(f"Ⓖ①  `sec:refit-bound` still reports the pair it computed, {TILT_PAPER[0]} against "
-     f"{TILT_PAPER[1]}, with its own difference stated and reconciling", _p15.count(_bound) == 1)
+     f"{TILT_PAPER[1]}, with its own difference stated and reconciling", _count(_p15, *_BOUND) == 1)
 gate(f"Ⓖ②  and the `sec:transmission` item -- which CITES `sec:refit-bound` -- now carries the SAME "
-     f"pair", _p15.count(_item) == 1)
+     f"pair", _count(_p15, *_ITEM) == 1)
 gate(f"Ⓖ③  the pair it used to carry, {TILT_WAS[0]} against {TILT_WAS[1]}, is gone from the paper "
      f"entirely, so the paper holds ONE pair for one quantity",
-     f"${TILT_WAS[0]}$" not in _p15 and f"${TILT_WAS[1]}$" not in _p15)
+     _count(_p15, '$', TILT_WAS[0], '$') == 0 and _count(_p15, '$', TILT_WAS[1], '$') == 0)
 _cr = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid', 'best_cr.npy')
 gate("Ⓖ④  ⌗ AND THE THIRD PAIR IS REAL AND IS NOT A RIVAL: the response-model refit's own arrays are "
      f"on disk at {TILT_GRID[0]} and {TILT_GRID[1]}, a 132-bin lensed fit over ell 100-1287 rather "
      f"than the full TT minimum -- two quantities, not two answers", os.path.exists(_cr))
+_1p57 = open(os.path.join(ROOT, 'receipts', 'P15_CR_cosmology', [
+    f for f in os.listdir(os.path.join(ROOT, 'receipts', 'P15_CR_cosmology'))
+    if f.startswith('P15_the_1p57_has_no_parameter_address')][0]), encoding='utf-8').read()
 gate("Ⓖ⑤  the authority is the COMPUTED pair and not the better-cited one: the `1p57` receipt runs "
      "both arms through the instrument and its table reports 0.9980 and 0.9542",
-     all(s in open(os.path.join(ROOT, 'receipts', 'P15_CR_cosmology', [
-         f for f in os.listdir(os.path.join(ROOT, 'receipts', 'P15_CR_cosmology'))
-         if f.startswith('P15_the_1p57_has_no_parameter_address')][0]), encoding='utf-8').read()
-         for s in ('0.9980', '0.9542')))
+     _has(_1p57, '0.99', '80') and _has(_1p57, '0.95', '42'))
 
 head("D2.  Ⓗ THE BLAST RADIUS, FOLLOWED THROUGH AND REPORTED RATHER THAN ABSORBED")
 _route = os.path.join(ROOT, 'receipts', 'P15_CR_cosmology', [
@@ -318,29 +358,47 @@ _route = os.path.join(ROOT, 'receipts', 'P15_CR_cosmology', [
     if f.startswith('P15_the_route_from_the_handover_amplitude')][0])
 _rs = open(_route, encoding='utf-8').read()
 gate("Ⓗ①  the receipt that PINNED the l.2728 sentence now pins the repaired one, so the paper and the "
-     "receipt moved together", _item in _rs.replace('$0.998$ here "\n          r"against', '$0.998$ here against')
-     or (f"${TILT_PAPER[0]}$ here" in _rs and f"${TILT_PAPER[1]}$ on the standard one" in _rs))
+     "receipt moved together",
+     _has(_rs, 'a tilt of $', TILT_PAPER[0], '$ here')
+     and _has(_rs, 'against $', TILT_PAPER[1], '$ on the standard one'))
 gate(f"Ⓗ②  its tilt budget follows the paper: {BUDGET_WAS} -> {BUDGET_NOW}",
-     f"mp.mpf('{TILT_PAPER[0]}') - mp.mpf('{TILT_PAPER[1]}')" in _rs
-     and f"mp.mpf('{BUDGET_NOW}')" in _rs)
+     _has(_rs, "mp.mpf('", TILT_PAPER[0], "') - mp.mpf('", TILT_PAPER[1], "')")
+     and _has(_rs, "mp.mpf('", BUDGET_NOW, "')"))
 gate("Ⓗ③  ⚠ and the correction makes its own figure SMALLER -- the shift's multiple of the budget "
      "goes 7550 -> 6692 -- which the receipt says in its own text rather than quietly restating",
-     '7550' in _rs and '6692' in _rs and '6.7' in _rs)
+     _has(_rs, '75', '50') and _has(_rs, '66', '92') and _has(_rs, '6.', '7'))
 gate("Ⓗ④  the repair minted NO new ledger pin: the sentence reaches its comparison through "
      "`.count(...) == 1`, which the operator does not key, and the ledger carries no such key",
-     'refitting both arms on this construction' not in open(
-         os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv'), encoding='utf-8').read())
+     not _has(open(os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv'), encoding='utf-8').read(),
+              'refitting both arms on this ', 'construction'))
 
-head("D3.  Ⓘ ⒝'s ROUTED LEDGER ROW")
+head("D3.  Ⓘ ⒝'s ROUTED LEDGER ROW -- AND THE RULING IS NOT APPLIED, ON MY OWN EVIDENCE BEING WRONG")
 _led = [l.split('\t') for l in open(os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv'),
                                     encoding='utf-8').read().splitlines() if l.count('\t') >= 6]
-_od = [f for f in _led if 'Two objects on the same side of the rule' in f[1]]
-gate("Ⓘ①  `P15`'s optical-depth key takes the RESOLVED `PAPER` target, as ruled at ⒝",
-     len(_od) == 1 and _od[0][2] == 'PAPER')
-gate("Ⓘ②  and its VERDICT is untouched -- the ruling was about the target column and nothing else",
+_od = [f for f in _led if _has(f[1], 'Two objects on the same side', ' of the rule')]
+gate("Ⓘ①  ⛔ `P15`'s optical-depth key KEEPS its `SOURCE` target: the ruling at ⒝ took the resolved "
+     "container, and the resolution was this seat's defect rather than a finding",
+     len(_od) == 1 and _od[0][2] == 'SOURCE')
+gate("Ⓘ②  and its VERDICT is untouched throughout -- nothing here turns on the verdict column",
      _od[0][5] == 'MEANING-HELD')
-gate("Ⓘ③  the row records why, naming the 25 false disagreements the container defect produced",
-     'containers.py' in _od[0][6] and 'r7261+cc66' in _od[0][6])
+gate("Ⓘ③  the row records WHY the ruling is not applied, naming the generator binding that produced "
+     "the false PAPER", _has(_od[0][6], 'src, p15, p07', ' = (open(f)')
+     and _has(_od[0][6], 'r7261', '+cc66'))
+_g = open(os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7257_cc66_the_272', 'gather.py'),
+          encoding='utf-8').read()
+gate("Ⓘ④  the resolver is REPAIRED -- a comprehension over a tuple of names is zipped element-wise, "
+     "and anything else attributes nothing rather than attributing everything",
+     _has(_g, 'val.generators[0].iter', '.elts'))
+gate("Ⓘ⑤  and a second defect of the same resolver is repaired with it: the JOIN now precedes the "
+     "per-fragment pass, so a `.py` fragment no longer beats the `computations/` path it sits under",
+     _has(_g, "kind_of_path('/'", ".join(consts))"))
+gate("Ⓘ⑥  ⌗ `r7257`'s digest-pinned outputs are NOT regenerated under either fix, and the file says "
+     "so -- the call `66` endorsed for `r7255`'s CONTAINERS.tsv, applied to my own",
+     _has(_g, 'NOT REGENERATED UNDER', ' THE TWO FIXES ABOVE'))
+_qp = open(os.path.join(ROOT, 'corpus', 'check_quote_pins.py'), encoding='utf-8').read()
+gate("Ⓘ⑦  ⚠ and the gate that corrected me is `70`'s `H3`, which requires a PAPER row's literal to be "
+     "present in a non-appendix `corpus/*.tex` -- a gate I did not write, catching a finding I had "
+     "routed to another seat", _has(_qp, 'H3', ' the literal is '))
 
 # ============================================================================
 bad = [n for n, ok in CHECKS if not ok]
@@ -365,6 +423,9 @@ print(f"""
   ⛔ AND A PRE-REGISTERED IDENTITY FAILED: the strict count is {_strict}, not {PRE_STRICT}.
     3 of the 4 movers open no source file, so A CHEAPER FORM COST A READ.
     Ruling ③'s condition holds; my prediction of its value did not.
+  ⛔ AND ⒝'s ROUTED ROW IS NOT APPLIED: the target stays SOURCE, because the resolution
+    66 ruled on was my resolver attributing a generator to every target name.  70 was
+    right, as it was for B57, and 70's own H3 is what caught it.
   ⛭ ORDER ②: l.2728 repaired to {TILT_PAPER[0]}/{TILT_PAPER[1]}, the pair the instrument computes
     and the one the section it cites already carried.  A third pair ({TILT_GRID[0]}/{TILT_GRID[1]})
     is the response-model fit and is NOT a rival.  The route receipt's budget

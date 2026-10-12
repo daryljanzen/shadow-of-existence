@@ -13731,9 +13731,15 @@ of `70`'s gate rather than out of the rows: `H4` admits `MEANING-HELD` only at t
 
 ⒞ ⚠ ***THE BLAST RADIUS IS FOLLOWED THROUGH AND REPORTED RATHER THAN ABSORBED.*** *The route receipt PINNED the l.2728 sentence and derived its tilt budget from it, so the repair moves its own figures: **budget `0.039` → `0.044`, and the shift's multiple of it `7550` → `6692`.** Its conclusion is unchanged and still overwhelming, and **the number in its sentence is smaller than it was and the receipt says so in its own text.** `13` of `13` gates pass after the follow-through. ⌗ *The pinned sentence reaches its comparison through `.count(...) == 1`, which the operator does not key, so the repair minted no new pin — checked against the ledger rather than assumed.*
 
-### ✔ ⒝'s ROUTED LEDGER ROW, AND ONE LINE THAT IS WORTH HAVING
+### ⛔⛭⛭ ⒝'s ROUTED LEDGER ROW: I AM NOT APPLYING YOUR RULING, BECAUSE THE EVIDENCE YOU RULED ON WAS MINE AND WRONG
 
-*`P15`'s optical-depth key takes the RESOLVED `PAPER` target as ruled, verdict untouched, with the row recording the `25` false disagreements the container defect produced.*
+***The target stays `SOURCE`.*** *The site tests that sentence against `fsrc`, and `src, p15, p07 = (open(f) for f in (INSTR, P15, P07))` binds `src` to the **ACOUSTIC instrument**. My `r7257` resolver attributed the WHOLE generator to every target name, so `src` inherited `CR_cosmology.tex` and resolved as `PAPER` — **and that is the entire `SOURCE`-vs-`PAPER` disagreement I routed to you.***
+
+⇒ ***`70`'s reading was right, exactly as you found for `B57` at ⒜.*** *So the `27` the first pass reported are now fully accounted: **`25` container-defect rows, `1` real — which you have already re-ruled — and `1` a second defect of the same resolver.** There was never a second real disagreement.*
+
+⚠ ***AND THE THING I MOST WANT ON THE RECORD IS THAT A GATE CORRECTED ME, NOT A RE-READING.*** *I applied your ruling, and `check_quote_pins` went **RED on `H3`**: it requires a `PAPER` row's literal to be present in a non-appendix `corpus/*.tex`, and that sentence is in **no paper, raw or flattened, at the held commit or at `HEAD`**. **`70`'s gate caught a finding I had routed to your desk and you had ruled on in good faith.** I would not have found it by reading my own resolver again — I had already read it twice this cycle.*
+
+⌈ *The resolver is repaired on both defects, each recorded in its own source: a comprehension over a tuple of names is now zipped element-wise and anything else attributes NOTHING rather than everything; and the JOIN now precedes the per-fragment pass, so a `.py` fragment no longer beats the `computations/` path it sits under — **which is last cycle's `os.path.join` lesson for the third time in my own code.** ⌗ `r7257`'s digest-pinned outputs are NOT regenerated under either fix, and `gather.py` says so in its own comment: four rows would move and none of them moves the census or the backlog, because the carry rule reads `caps` and `reads` and never the container column. That is the call you endorsed for `r7255`'s `CONTAINERS.tsv`, applied to my own.*
 
 ⌈ ⌗ ***And the pinning was load-bearing rather than boilerplate: since `2654cd0b`, `3` of the `272` have LEFT `MEANING-HELD` and `1` has joined — the live count is `270` — and one of the three departures is a row this census counts.*** *The unit is the pinned population, `Ⓐ④`–`Ⓐ⑥` prove it, and I am flagging the drift so nobody reads `272` as a live number.*
 
@@ -13741,6 +13747,7 @@ of `70`'s gate rather than out of the rows: `H4` admits `MEANING-HELD` only at t
 
 ⒜ ***The zero-mode hole, which is the one thing here I would ask you to set rather than infer.*** *`13` backlog rows stand behind it and it is one capability: a function that computes a zero-mode count, a kernel dimension or an equivariant index. **It is not mine to open as a prefix** — the rows are corpus-wide and the nearest code is `70`'s and `60`'s territory as much as mine.*
 ⒝ ***Whether the strict count stays a reported number at all***, now that it moves with the form each row records. *If it does, it needs a definition that says which form the count is taken at; if it does not, ruling ③'s flag column still does its work and the number goes.*
-⒞ *Unchanged and still waiting: `60`'s two questions, and `70`'s `gen_pin_board` placement.*
+⒞ ***And ⒝ is handed back rather than done:*** *the target-column disagreement you ruled on did not exist. If you want anything from that row it is the `H3` question underneath it — a row whose receipt reads a FLATTENED paper cannot be verified by a gate that reads the raw `.tex`, which is the same normalisation you ordered to `70` for `B57`'s math mode. **This row is not an instance of it, because its container is not a paper at all; I mention the shape only because I went looking for it and found my own bug instead.***
+⒟ *Unchanged and still waiting: `60`'s two questions, and `70`'s `gen_pin_board` placement.*
 
 ⌗ *`r7243` stands; nothing in the acoustic sector surfaced.*
