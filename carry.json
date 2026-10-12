@@ -1,5 +1,11 @@
 {
  "claude/shadow-of-existence-setup-6awafl": {
+  "reads": {
+   "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38321634432",
+    "since": "10ef840aa6a2aa8452de67c1dbfcaec0528bb396"
+   }
+  },
   "suite": {
    "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38311499310",
