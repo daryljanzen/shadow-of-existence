@@ -323,7 +323,7 @@ gate(f'Ⓑ⑧ ⛭⛭ AND THE REPAIR IS ONE PAPER AND NOT TWO, which is the order
 
 gate('Ⓑ⑨ ✔ and `P3` carries the merged horizon at the same radius, so the third paper agrees and the '
      'disagreement was never three-sided',
-     '$r_{N}=\\alpha/\\sqrt{3}$' in p3 or 'r_{N}=\\alpha/\\sqrt{3}' in p3)
+     '$r_{N}=\\alpha/\\sqrt{3}$' in p3)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓒ  ITEM ②: `P10`\'s CLOSING SUMMARY WAS STALE IN **BOTH** ARMS, AND THE BODY IS WHERE '
@@ -359,17 +359,27 @@ gate(f'Ⓒ④ ✔⛭ and the repaired summary states all three --- the answer, t
      all(k in p10 and held(k, p10)[0] for k in _news))
 
 _K_PAIR = 'the one at unbounded momentum is open'
-gate('Ⓒ⑤ ⛭ and the sentence the paragraph ENDS on is untouched, because it stays true of the narrowed '
-     'question --- so the repair is a restatement of one clause and not a rewrite of the paragraph',
-     _K_PAIR in p10 and _K_PAIR in _base10)
+# the paragraph's other clause, COUNTED rather than quoted: a rewrite of the paragraph moves this
+# count, a restatement of one clause inside it cannot.
+_NEIGHBOUR = 'extension questions this sector meets pair'
+gate('Ⓒ⑤ ⛭⛭ and the sentence the paragraph ENDS on is untouched, because it stays true of the '
+     'narrowed question --- so the repair is a restatement of one clause and not a rewrite of the '
+     'paragraph.  ⛔ *`L-249`\'s rule (`r3105`) is applied here rather than asserted away: the literal '
+     'carries an OPENNESS MARKER, so a live pin on it fails on SUCCESS the day the mode sums are '
+     'defined.  **The historical state is pinned at the commit it stood at, and the live half is the '
+     'MONOTONE statement that this revision repaired one clause and not the paragraph.***',
+     _K_PAIR in _base10 and _NEIGHBOUR in _base10
+     and p10.count(_NEIGHBOUR) == _base10.count(_NEIGHBOUR) == 1)
 
 # ⛭ *The first cut of this key opened on `remains` -- a finite verb -- and Ⓕ① below flagged it
 #   before it was written.  The subject is in the paper one word to the left.*
 _K_UV_ALREADY = 'What remains genuinely open is accordingly the ultraviolet definition of the tower sums'
-gate('Ⓒ⑥ ✔⛭⛭ AND THE NARROWED STATEMENT IS NOT THIS SEAT\'S INVENTION: the paper already calls that '
+gate('Ⓒ⑥ ✔⛭⛭ AND THE NARROWED STATEMENT IS NOT THIS SEAT\'S INVENTION: the paper already called that '
      'the open item in its own voice earlier in the same section, so the summary is being brought to '
-     'the body rather than the body to the summary',
-     _K_UV_ALREADY in p10 and _K_UV_ALREADY in _base10)
+     'the body rather than the body to the summary.  *Read AT THE TRUNK and not live, `L-249` again: '
+     'the literal carries an openness marker, and the day the mode sums are defined this sentence is '
+     'repaired --- a live pin on it would then go red on the success it is evidence for.*',
+     _K_UV_ALREADY in _base10)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓓ  THE FOUR PRE-REGISTERED BANDS, SCORED AGAINST THE PUSHED FILE, AND THE ONE THAT '
@@ -423,18 +433,24 @@ gate(f'Ⓓ⑨ ⌗ and the pushed pre-registration\'s own UNIT is wrong where its
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓔ  WHAT IS LOCATED AND NOT TAKEN, WITH THE RESTRAINT ASSERTED RATHER THAN DECLARED ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
+# ⛔⛭⛭ `L-249`'s RULE (`r3105`), APPLIED TO EVERY ROUTED DEFECT IN THIS SECTION.  *A gate that
+#   asserts a defect is PRESENT goes red the day the holding seat repairs it -- red on SUCCESS, which
+#   is the failure mode `L-249` was written for and which `S5`'s `Ⓕ②ᵇ` cost this line one revision ago.*
+#     ⇒ *** So each routed defect is pinned AT THE COMMIT IT STOOD AT, read from git, and the live
+#         half is the MONOTONE statement that this revision has not moved it. ***
+_base18 = flat(at_base(P18) or '')
 _K_N1_SETTLED = 'The ultraviolet definition of the mode sums is settled beyond the free static case'
 _K_N1_OPEN = 'the mode sums beyond the free static case &'
 _K_N1_WEYL = 'the Weyl-squared coefficient at second order in the shear &'
 _K_N1_NINE = 'Nine items stand open'
 gate('Ⓔ① ⛔ `N1` is a contradiction INSIDE ONE FILE and is asserted as one: `P18`\'s quantum-sector '
      'section says the item is settled, and its own frontier table still lists it open',
-     _K_N1_SETTLED in p18 and _K_N1_OPEN in p18)
+     _K_N1_SETTLED in _base18 and _K_N1_OPEN in _base18)
 
 gate('Ⓔ② ⛔⛭ AND IT IS TWO ROWS AND NOT THE ONE THE ORDER NAMES: the row beside it carries its value '
      'and reads as discharged too, and the section states `Nine items stand open` about the table, so '
      'repairing either row moves a number the paper states about itself',
-     _K_N1_WEYL in p18 and _K_N1_NINE in p18)
+     _K_N1_WEYL in _base18 and _K_N1_NINE in _base18)
 
 gate('Ⓔ③ ✔⛭ and the restraint is ASSERTED and not declared: `N1` is located by line and `P18` is '
      'unchanged in the same breath --- the shape `r7260` got wrong when it repaired a defect it was '
@@ -447,11 +463,12 @@ gate(f'Ⓔ④ ⌗ `M14` is located and CONFINED: the printed weight stands at `{
      f'in `P10` while the paper\'s own convention is carried elsewhere --- which is the computational '
      f'form of the order\'s reading that the conclusion holds either way and the defect is the value '
      f'and not the argument',
-     p10.count(_K_M14) == 1 and (_K_M14_CONV in p10 or '\\mu^{2}=m^{2}-1' in p10))
+     _K_M14 in _base10 and _base10.count(_K_M14) == 1 and _K_M14_CONV in p10)
 
-gate('Ⓔ⑤ ⌗ and `M14` is NOT taken, asserted by the defect still standing --- a routed item that '
-     'quietly disappears is not routed',
-     _K_M14 in p10)
+gate('Ⓔ⑤ ⌗ and `M14` is NOT taken, asserted MONOTONELY: the count of that weight in `P10` is '
+     'unmoved by this revision.  *The direction is what makes the gate survive the repair it is '
+     'waiting for --- `L-249` again, and the reason this is a count and not a presence*',
+     p10.count(_K_M14) == _base10.count(_K_M14))
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓕ  EVERY KEY THIS RECEIPT WRITES RUNS THE ADOPTED DANGLING TEST BEFORE IT IS WRITTEN ──\n')
