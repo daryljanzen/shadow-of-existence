@@ -313,11 +313,24 @@ gate(f"Ⓚ②  ⛭ and the ledger's target column disagrees with the resolved co
      f"not the {_dis + CONTAINER_FIX_MOVED} the first pass reported: {CONTAINER_FIX_MOVED} of those "
      f"were MY bug and one commit from being routed to another seat",
      _dis == TARGET_DISAGREEMENTS)
+# ⛔ r7257+cc66.10 -- THE FIRST DRAFT OF THIS GATE MINTED A NEW QUOTE-PIN KEY AND REDDENED THE FAST
+#   JOB, which is the hazard `C68` recorded in the opposite direction: an `in` guard added for safety
+#   mints a pin inside the repair meant to remove one.  ** And the right form was already the subject
+#   of this receipt: an AST SIGNATURE TEST. **  It reads the fixed module's syntax tree for the
+#   binding rather than its text for a sentence, so the operator keys nothing, no ledger row is
+#   added, and the gate reds on the converse -- removing the filter -- exactly as the 49 AST-SIG rows
+#   this receipt counts would.
+_fixed = ast.parse(open(os.path.join(
+    ROOT, 'computations', 'beyond_the_wall', 'r7255_cc66_P15_the_475', 'containers.py'),
+    encoding='utf-8').read())
+_kw_bound = [n for n in ast.walk(_fixed)
+             if isinstance(n, ast.Assign)
+             and any(isinstance(t, ast.Name) and t.id == '_KW' for t in n.targets)
+             and any(isinstance(c, ast.Constant) and c.value == 'utf-8' for c in ast.walk(n.value))]
 gate("Ⓚ③  the cause: `containers.py` joined `encoding=`/`errors=` constants onto the path, so "
-     "`corpus/x_paper.tex/utf-8/replace` failed the `.tex` test and a PAPER read as a REGISTRY",
-     "_KW = {'utf-8'" in open(os.path.join(
-         ROOT, 'computations', 'beyond_the_wall', 'r7255_cc66_P15_the_475', 'containers.py'),
-         encoding='utf-8').read())
+     "`corpus/x_paper.tex/utf-8/replace` failed the `.tex` test and a PAPER read as a REGISTRY -- "
+     "and the FIX is asserted by an AST signature test, which keys no new pin",
+     len(_kw_bound) == 1)
 gate("Ⓚ④  and `r7255`'s own CONTAINERS.tsv is NOT regenerated under a receipt that already passed "
      "on the old rule -- the correction is stated, not back-written",
      os.path.exists(os.path.join(ROOT, 'computations', 'beyond_the_wall',
