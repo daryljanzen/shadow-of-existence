@@ -7,6 +7,119 @@ kind: FORWARD
 
 ---
 
+## re r7261 (M4) — THE_PLAN's r1602 splice is rejoined; r7261 is complete
+
+THE_PLAN read in full, all 4409 lines, then edited (`717288b5`).
+
+**The splice.** The P3 §sec:mass placement was cut off mid-quote at "rather than the manifold". The tail of that item had been stranded about seventy lines further down, after the r1603–r1607 abstract-scan block. The tail is four lines: "underneath**."* P3 recompiles clean, 40pp. **NOT warranted in P16 or P1** …", then "P7 recompiles clean, 55pp" and "The interpretation remains A2.10 §II.2's". Those four lines are back in their sentence, so the r1602 item ends where it should. The scan block now opens cleanly and closes on its own honest count.
+
+**Mechanical fixes found in the read:**
+- "$\rho$" in the diagnosis paragraph had lost its "\r" to a line break.
+- A stray lone "*" line in the six-grains note is removed.
+- The italic after "a one-pass rubber-stamp" is now closed.
+- The scalar-sector item's stale "~8% damping signature" now reads "the damping-scale signature".
+- Four SA-10 rows (A4–A7) each carried a duplicated trailing cell, which broke the table. The duplicates are removed.
+- "**E2 **" no longer breaks its bold.
+- The garbled duplicate of the SA-8 standing-action line is removed; the intact one stays.
+
+All gates pass, including check_grains.
+
+**r7261 is complete:** M6, M19, M16 and M4 are all fixed. Two items remain outside the order and are already reported above:
+- P9 (`range_paper` l.59, l.334) and P11 (`dynamics_paper` l.81, l.330) still say "rendered vector-like", which goes against P13's no-massless-content outcome.
+- The stale ~8% damping figure still stands in `PHYSICAL_VALUES_LEDGER` l.522, `THE_OPEN_PROBLEMS_LEDGER` l.232 and l.797, and `receipts/P15_CR_cosmology/CLAIMS.md` l.54. THE_PLAN's copy is now fixed.
+
+---
+
+## re r7261 (M16) — P17's section now carries the conjugacy circle it promises, and the forced instance comes last
+
+P17 read in full, edited, then read word for word in its final state (`0af44dd2`).
+
+**What the paper means to carry.** Three places in the paper settle it, and two of them name the conjugacy circle. The abstract lists the imaginary variables used to reach the substrate as "the fifth embedding coordinate, the conjugacy circle, the equatorial seam's analytic continuation". The section's own closing remark lists "substrate, seam, cosmogenesis, and the phase structure at the seam". The landing section calls the P16 lap "a concrete instance of this paper's reached-through-the-imaginary principle", and the P15 entry ends "reached through the conjugacy yet real". So the conjugacy is load-bearing, and the defect was its missing paragraph, not the count at l.147.
+
+The section's order was a second defect, and 71's report did not mention it. After the "fourth instance" (the horizon radii) came a further, unnumbered paragraph on the cosmogenesis reassignment. So the paper said three, gave two, cited bullets that did not exist, counted a fourth, and then ran a fifth.
+
+**What it now says.**
+- The opening no longer gives a number: "Each of the instances below is already in the corpus, and each is the same move."
+- The chosen routes come in order: the embedding coordinate, the equatorial seam, the conjugacy circle (new), and the cosmogenesis reassignment.
+- The horizon radii come last, opening "The paragraphs above are places the corpus chooses an imaginary route … There is one further instance where that answer is unavailable".
+- The remark opens "Each paragraph above".
+
+No count is stated anywhere, so none can drift again.
+
+**The new paragraph, and what it rests on.** It is built only from statements already in the corpus:
+- P2's ring r(z)=M(1+cos z): the step z↦±iρ that opens the horizon into the two exteriors also opens r=0, via z↦π±iρ′, onto two regions at negative areal radius.
+- On the substrate that step is the lap. P3: the conjugate branch is a real branch of the one Lorentzian manifold, not a Euclidean excursion.
+- Along the lift, the bead law's cosmic time leaves the real axis. Its imaginary part is bounded by πα/3 and reaches that bound at the turnaround, while r stays real at every point (P7 `thm:bead`).
+- The reality involution τ̃↦τ̄̃ exchanges the two imaginary readings; its fixed set is the real axis. The paragraph points to §frontiers for the phase structure, which is decided there.
+
+**Carried into P18.** The l.263 list ("the embedding coordinate, the equatorial seam's continuation, and the reassignment at the cosmogenesis") now includes "the conjugate branch reached along the lift in imaginary cosmic time", so P18 agrees with P17. Checked in the PDF.
+
+**Found during the final read and fixed:**
+- Two cross-references pointed at §5 (the rulings) for the Cayley–Klein reading and the polar slices. Both are stated in §2.4, and both now point to §2.
+- The abstract had a dash followed by a comma ("supplying—, the necessity").
+- A pair of straight quotes rendered as ”one scale”.
+- The P11 landing entry said "beyond the index obstruction (P13)". It now says "the chirality obstruction", which is P13's term after M6.
+
+**Gates.** Withdrawn, compile (18 papers, 0 errors), pages current, chirality qualifier, explainer pins (18, all current). PDFs and served pages for P17 and P18 are rebuilt.
+
+**Next.** M4, THE_PLAN. It gets a full read, and l.2335's stale 8 per cent is fixed in the same pass.
+
+---
+
+## re r7261 (M19) — P6 counts six idioms in both places; a stale 8 per cent found and fixed on the way
+
+P6 read in full, edited, then read word for word in its final state (`1c84bd7b`).
+
+**Which count is right.** Six. The body settles it: P7 gathers four readings at the radius and P6's own section gathers four, two of them shared, so "six distinct readings therefore stand across the corpus". The abstract also said six, and it already ruled out seven in its own words: the dynamical reading "is the flat locus … stated in dynamical words rather than a seventh idiom". So the defect was the l.449 "seven idioms", and it now reads six. A third count sat between them, "the fifth idiom" at l.386, for the dynamical reading that the same section had just said is "not a fifth shadow but the same one in dynamical words". It now reads "the dynamical reading", so the paper numbers that reading nowhere. The abstract sentence carrying the count was a run-on with an unattached participle ("…and no single paper of the programme listing them all; read each…"). It is now three sentences, with the same content.
+
+**Found during the read and fixed.** §place gave the damping-scale signature as "${\sim}8\%$". That is the superseded ratio (1.082). P15 §refit-bound has the signature at r=0.9918 with both lengths carried to the visibility peak: 1.70 in χ² over 185 bins, under a hundredth per bin. The sentence now says "under a per cent at the adjudicated endpoint", which is how the index's §1·LEVELS card already states it. A header comment also called the exact involution "P", the inverse of the canon; it now says "R".
+
+**The same stale 8 per cent elsewhere, routed rather than touched because I have not read those documents:**
+- `PHYSICAL_VALUES_LEDGER.md` l.522;
+- `THE_OPEN_PROBLEMS_LEDGER.md` l.232 and l.797, which also call the rate "radiation-free", a phrase the index retires;
+- `THE_PLAN.md` l.2335. I will fix that one under M4, since THE_PLAN gets a full read for M4 anyway;
+- `receipts/P15_CR_cosmology/CLAIMS.md` l.54.
+
+**Gates.** Withdrawn, compile (18 papers, 0 errors), pages current, explainer pins (18, all current). P6's PDF and served page are rebuilt.
+
+**Next.** M16 (P17), then M4 (THE_PLAN).
+
+---
+
+## re r7261 — M6 carried into all three documents; two more papers carry the phrase at source; M16, M4 and M19 next
+
+M6 first, as you suggested. Each of the three documents was read in full before any edit. All three now state what P13 states: two routes, the index route vacuous on the odd-dimensional five-sphere, the Lichnerowicz route carrying the conclusion, and an outcome of no massless content rather than a vector-like spectrum. One state throughout. Nothing says the earlier phrasing existed.
+
+**P14** (`efe9d940`). Three sites, not one:
+- l.779, the site 71 named. It now reads "a fermion sector realised by a connected-group isometry is left not vector-like but without massless content, the compact face's positive curvature removing every zero mode". The closing "that obstruction" lost its antecedent in the rewrite, so it is now "the boundary paper's obstruction".
+- l.223, "the two vector-like results should be read together". It credited P13's result to the Atiyah–Hirzebruch index with "compactness and a connected gauge isometry" as its load-bearing hypotheses. That is the half P13 says is vacuous on the face. It now opens "the two obstructions to chirality". It says the boundary paper's result leaves "not a vector-like spectrum but no massless content at all", gives the dimension reason, and names Lichnerowicz as the route that carries it. The paragraph's own argument against the W1 obstruction is unchanged.
+- l.799, "what the index obstruction says of a connected gauge action". "Index" is dropped, and the clause now says why: "there being no massless content for one to act on".
+
+Left alone on purpose: l.204, l.219 and l.968 use "vector-like" for the sector's own isospin structure, and l.654 uses it for D=5. Those are different objects.
+
+**P18** (`5551ca13`). Both sites, plus two neighbours that leaned on the old reading:
+- l.897 now says the parity lies beyond "the obstruction which leaves a connected-gauge fermion sector not vector-like but without massless content", citing P13 alongside P11.
+- l.2466–2477. The paragraph said "a theorem fifty years old forbids a chiral spectrum on a compact spin manifold" and then "rendered vector-like". It now gives both routes with their hypotheses: the index route needs even dimension as well, and the Lichnerowicz route needs only compactness and the isometry. The gravitational handedness "supplies neither route's hypothesis". The outcome is then stated once, on the compact face.
+- Two neighbours changed with it. l.903, P11's mechanism sentence, now reads "the obstruction's index route bites because…", which is true of that route and no longer stands in for the whole obstruction. l.2487, "the index route is the mechanism", is now "the obstruction is the mechanism", because the conclusion on the face rests on the other route.
+
+**The index** (`300bd25e`). Seven sites, not one. A full read found the same claim in two other forms: the AH hypotheses given as "compactness and a continuous isometry", and P13 quoted with words it no longer prints.
+- l.293 (the F15 join) and l.513 (the `wall` ① row) gave AH's load-bearing hypotheses as compactness and continuous isometry. Both now give the two routes and their different hypotheses.
+- l.2016 and the l.2064 guard quoted "The load-bearing hypotheses are compactness and a continuous isometry" as P13's words. P13 no longer contains that sentence. Both now quote what P13 does say: the index route needs even dimension, the face is vacuous for it, and the conclusion is "not vector-like but without massless content".
+- l.2025 quoted P13 as "is rendered vector-like". It now quotes P13's l.299: "would fall squarely under the obstruction's hypothesis and, on the compact face, be left without massless content at all".
+- l.1870, the site 71 named, sits on the P9 card, and l.1977 sits on the P11 card. Both quoted their own paper's "rendered vector-like" correctly. I could not make them right by changing the quote, because the quote is accurate to its source. Both now state the position in prose and cite P13 §wall. On l.1977 the quote is kept only for P11's half-sentence that remains true ("the gravitational sector is chiral precisely through the component that obstruction cannot touch").
+
+**Found, not fixed, because they are outside the order.** The phrase is still at source in two papers that were not on 71's list:
+- `range_paper.tex` (P9) l.334, the sentence the index's P9 card used to quote. Its l.59 header carries it too.
+- `dynamics_paper.tex` (P11) l.330: "the matter-sector index obstruction that renders a connected-gauge fermion spectrum vector-like". Its l.81 header carries it too.
+
+They are the same repair. Each needs its own full read, so I have not touched them. Say whether you want them under this order or a new one. Until they are fixed, the index cards for P9 and P11 now state something stronger than their papers do. That is the right direction for the gap to run, but it is a gap.
+
+**Gates.** `check_withdrawn`, `check_deferrals`, `check_chirality_qualifier` (30/30), `check_compile` (18 papers, 0 errors) and `check_pages_current` all pass. `check_explainer_pins` is unchanged: 18 watched passages, all current. P14's and P18's PDFs and served pages are rebuilt and committed.
+
+**Next.** M19 (P6), M16 (P17) and M4 (THE_PLAN), one document per turn, each read in full first. M16 needs a judgement before any edit: whether the conjugacy circle gets its paragraph or l.147's count drops to two. I will make that call from what the section's fourth instance needs. THE_PLAN is the largest read of the three, so M4 goes last.
+
+---
+
 ## re r7229, r7241, r7243 — the passage read as settled prose: limits split, corroboration cut, two live-edge phrases retired
 
 I did not answer r7229 or r7241 when they landed. This answers all three.
