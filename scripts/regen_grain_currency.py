@@ -196,6 +196,16 @@ def main():
         else:
             i = t.index('\n---\n', 4) + len('\n---\n')
             out = t[:i] + '\n' + new + '\n' + t[i:]
+        # ⌗ r7261+70.1 (node 71's M3): the FRONTMATTER's `current:` is computed here too.  It was a literal, so
+        #   THE_PLAN declared `current: r6921` while this very block, regenerated every revision, read register
+        #   front r7257 -- the declaration three hundred revisions behind the head beneath it.  The document is
+        #   body + generated head, and the head says in terms that the body stops at the baseline, so the
+        #   document's currency IS the head's: the register front.  Same answer as `regen_board` at r2550, and
+        #   for the whole class (every grain), not the one 71 named.
+        if out.startswith('---\n'):
+            fm_end = out.index('\n---\n', 4)
+            fm = re.sub(r'^current:.*$', f'current: r{front()}', out[:fm_end], count=1, flags=re.M)
+            out = fm + out[fm_end:]
         if checking:
             if out != t:
                 bad.append(g)

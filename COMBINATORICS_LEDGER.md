@@ -735,7 +735,10 @@ cascading way**."* **Split, because the sentence carries two claims:**
 > **p0:** *"Of the residue's full **D₆ = S₃ × ℤ₂**, **only the ℤ₂ is a substrate isometry** (the parity `R`,
 > acting on the cut spinor as `γ⁵`), so **chirality descends gauged**; the **S₃ is the deck (Weyl) symmetry
 > of the solution space and NO isometry** (`su(3) ⊄ so(5,1)`), so a family symmetry is **global** — the
-> Standard Model's own arrangement."*  (P14 §family says the same, in terms.)
+> Standard Model's own arrangement."*  (P14 §family agrees on the kinds, and not on the word.)
+> ⌗ *r7261+70.1: p0's "deck" is the conflation the ontology map records retiring at r3390. The `S₃` is the
+> horizon cover's **monodromy** (Weyl) group and its deck group is trivial (P5 `prop:deck`); P14's only deck
+> group is the turnaround's `ℤ₃`, which carries the generations. The quotation stands as p0 wrote it.*
 
 **`D₆` is not a subgroup chain of `SO(5,1)`.** Only its `ℤ₂` lies in `O(5,1)` at all — and even that in
 `O(5,1)∖SO₀`. **The `S₃` was never a substrate symmetry, so nothing broke it.** ⟹ **the chain is a
@@ -750,7 +753,7 @@ at the level of the lane's name.*
 
 | L8.1's family | P12's factor | p0's kind | ⟹ |
 |---|---|---|---|
-| **the triple-angle map / the sine** — 2M-**fixing**, root-permuting *(the 3 · the 12 · the 30 · the √3 · the ∛2)* | **the Weyl `S₃`** | **no isometry** — the deck/monodromy group of the solution space | **GLOBAL** — flavour |
+| **the triple-angle map / the sine** — 2M-**fixing**, root-permuting *(the 3 · the 12 · the 30 · the √3 · the ∛2)* | **the Weyl `S₃`** | **no isometry** — the monodromy group of the solution space (its deck group is trivial, P5) | **GLOBAL** — flavour |
 | **the matrix `R = diag(1,1,−1,1,1,1)`** — 2M-**flipping**, ruling-swapping *(the 2)* | **the outer `ℤ₂`** | **IS an isometry**, acting on the cut spinor as `γ⁵` | **GAUGED** — chirality |
 
 **⟹ THE NUMBER AUDIT'S TWO FAMILIES *ARE* THE GAUGED/GLOBAL SPLIT.** The numbers **weld within a factor and
@@ -834,7 +837,8 @@ and *tangent* are independent relations.**
 **⊢ AND THE KIND-SORTING FALLS OUT OF THE SAME DISTINCTION.** A **ruling is a line of the substrate**, so
 exchanging the two is a **motion of the substrate** — an isometry, acting on the cut spinor as `γ⁵`:
 **chirality descends gauged**. A **root labels a different cut**, so permuting the three moves through the
-**solution space** and is no motion of the substrate — the deck symmetry: **flavour is global.**
+**solution space** and is no motion of the substrate — the **monodromy** (Weyl) `S₃`, not a deck symmetry, the
+horizon cover's deck group being trivial (P5 `prop:deck`): **flavour is global.**
 
 > **★ THE MARRIAGE, STATED ONCE: the Standard Model's arrangement of a gauged chirality against a global
 > flavour is the difference between being ON the one circle and being TANGENT to it.**
@@ -1042,12 +1046,12 @@ $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2\cong D_6$, so the reach is wide.*
 | `P04` | **CHECKED-NEGATIVE** | `modern_parallax`: `count`=`counterpart`/`accounted`; no group/permutation/partition term |
 | `P05` | WORKED | the horizon-cubic monodromy/deck/Galois combinatorics: $S_3=\mathrm{Sym}$(3-set); dihedral $\langle\sigma,\tau\mid\sigma^2=\tau^3=(\sigma\tau)^2\rangle$; explicit $(0\,2),(1\,2)$ generate $S_3$; equianharmonic 6-element cross-ratio orbit → pair; degree-6 splitting field (`P05_dihedral_generators`, `P05_deck_group_S3`, `X5_monodromy_group`, `Q4_equianharmonic_vantages`) |
 | `P06` | **CHECKED-NEGATIVE** | `shadow_of_existence`: `partition`=ontological/def split & R-parity; `count`=`account`/`discount`/"counts as"; `number of layers`=ontological count |
-| `P07` | WORKED | the $2^{1/3}=(2M)/M$ single-factor-of-two count (`P07_cube_root_two_is_the_2M_over_M`); deck $S_3$ vs $\mathbb{Z}_3$ of the two covers (`order3_bridge`); generation index 3; count-of-passes (3 at 2 loci) |
+| `P07` | WORKED | the $2^{1/3}=(2M)/M$ single-factor-of-two count (`P07_cube_root_two_is_the_2M_over_M`); monodromy $S_3$ (horizon cover, trivial deck group) vs deck $\mathbb{Z}_3$ (turnaround cover) (`order3_bridge`); generation index 3; count-of-passes (3 at 2 loci) |
 | `P08` | **CHECKED-NEGATIVE**→ WORKED | `slicing_operator`: $\mathbb{Z}_3$ branch-point monodromy (`P08_the_branch_point_monodromy_is_Z3`); Nariai signed-roots enumeration $3=2+1$ at scale $2/\sqrt3$ (`P08_nariai_signed_roots`); full monodromy $S_3$ vs $\mathbb{Z}/3$ (`order3_bridge`) |
 | `P09` | **CHECKED-NEGATIVE** | `range_paper`: `multiplicity`=catalogue/solution-moduli count (homonym); `number of functions of k variables`=parametric count; no permutation/partition |
 | `P10` | **CHECKED-NEGATIVE** | `canonical_time`: `count`/`counting`=counterterm/basis-component bookkeeping (linear-algebra dimension, not enumeration); `account`; no $S_n$/partition |
 | `P11` | **CHECKED-NEGATIVE** | `dynamics_paper`: $S_3$/`Weyl group`/$\mathrm{Aut}(A_2)=D_6$ named only as **cited background** ("developed in the algebroid construction rather than here") — bare mention, nothing worked |
-| `P12` | WORKED | $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2=D_6$ order 12, the $A_2$ hexad; $V_4$ holonomy extends deck $S_3$ to order 24 then 48; element/class profile ⇒ $W(A_3)\cong S_4=T_d$ (6 reflections, $V_4$, 8 three-cycles, 6 improper order-4); $A_2\subset A_3$ node deletion (`GROUP_full_order48`, `EMBEDDING_is_Td_equals_WA3`) |
+| `P12` | WORKED | $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2=D_6$ order 12, the $A_2$ hexad; $V_4$ holonomy extends the Weyl (monodromy) $S_3$ to order 24 then 48; element/class profile ⇒ $W(A_3)\cong S_4=T_d$ (6 reflections, $V_4$, 8 three-cycles, 6 improper order-4); $A_2\subset A_3$ node deletion (`GROUP_full_order48`, `EMBEDDING_is_Td_equals_WA3`) |
 | `P13` | WORKED | rank count (SM rank 4 vs $\SO(6)$ rank 3 ⇒ at most $SU(3)\times U(1)$, `P13_cascade_rank`); $\dim\mathfrak{su}(3)=8$, smallest faithful real rep dim 6; $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2$ as $3\times2$ = families×chiralities; cubic factorization (`P13_A3_factorization`); which of $D_6$'s three order-6 subgroups |
 | `P14` | WORKED | $\Lambda^3(\mathbb{C}^3)=1$ ⇒ baryon 1/diquark 0/meson 1; $12=3\times4$ leg count; generations = 3 ($\dim\ker_+=3,\ker_-=0$); $S_3$ from 3 transpositions + 3-cycle; 15/16-fermion census; $12=3\times2\times2$; T-action orbit-partition $2\!+\!1\!+\!1/2\!+\!2/1^4$; order-81 holonomy; $S_4$-centraliser order 8/24; $D_6$ irreps $1,1,2$ twice; 11-of-11 combination enumeration (`P14_the_count_specified` et al.) |
 | `P15` | **CHECKED-NEGATIVE** | `CR_cosmology`: `cycle`="two-cycles of the involution, one fixed point" (a fixed-point statement, no count); $S_3$ "relating the families" a bare mention; `number of`=integrator steps / families asserted; `multiplicity`=catalogue homonym |
