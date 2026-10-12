@@ -10,14 +10,18 @@ a seat claims a PREFIX (a `receipts/<dir>/` directory), reads its receipts, and 
     corpus/pin_claims.tsv               HAND-KEPT.  A seat claims by APPENDING a row and pushing before it reads:
                                             prefix <TAB> seat <TAB> CLAIM|RELEASE <TAB> rNNNN <TAB> note
     corpus/pin_adjudication_board.tsv   GENERATED (`scripts/gen_pin_board.py`) from the baseline with the ledger
-                                        merged in.  Never hand-edited; a claim written into it would be erased.
+                                        merged in, for a seat to READ.  ** r7257+70.1: NOT COMMITTED (git-ignored). **
+                                        A committed copy of a pure function of two committed files goes stale on
+                                        every merge of two branches that both adjudicated -- each regenerated on its
+                                        own base -- and no CI wiring fixes a merge race.  So this gate regenerates the
+                                        board itself, every run, and there is no copy left to be stale.
   *A receipt leaves the board by having every key verdicted, never by being marked done.*
 
 ** THE CHECKS **
   (a) no prefix carries two LIVE claims -- a CLAIM is void if an earlier claim on the prefix is still live when it
       is made, so the first push wins; a seat gives a prefix up early with a RELEASE row.
-  (b) the board's unverdicted total EQUALS the baseline's, and the committed board EQUALS a fresh generation --
-      so the board can neither disagree with the instrument nor go stale.
+  (b) the board's unverdicted total EQUALS the baseline's -- a seeded property of `generate`, checked on the board
+      this gate generates.  (Its staleness half went with the committed copy at r7257+70.1.)
   (c) a claim with no PROGRESS for `RELEASE_AFTER_CYCLES` order cycles is RELEASED, not held: the board prints the
       revision it expires after, this gate reports it RELEASED, and the prefix may be claimed again.  It does NOT
       turn the gate red -- a stalled seat must not redden everyone.
@@ -215,21 +219,14 @@ def main(argv):
     history = progress_history()
     fresh = generate(baseline, claims_text, history)
     rc = 0
-    if not os.path.exists(BOARD):
-        print(f'  ⛔ no board at {os.path.relpath(BOARD, ROOT)} -- run scripts/gen_pin_board.py')
-        return 1
-    committed = open(BOARD, encoding='utf-8').read()
     total_base = sum(counts(baseline).values())
-    total_board = sum(int(x.split('\t')[2]) for x in committed.split('\n') if x and not x.startswith('#'))
-    rows = [x for x in committed.split('\n') if x and not x.startswith('#')]
-    print(f'    board: {len(rows)} receipt(s) in {len({x.split(chr(9))[0] for x in rows})} prefix(es), '
-          f'{total_board} unverdicted; the baseline carries {total_base}')
+    rows = [x for x in fresh.split('\n') if x and not x.startswith('#')]
+    total_board = sum(int(x.split('\t')[2]) for x in rows)
+    print(f'    board (generated this run): {len(rows)} receipt(s) in {len({x.split(chr(9))[0] for x in rows})} '
+          f'prefix(es), {total_board} unverdicted; the baseline carries {total_base}')
     if total_board != total_base:
         rc = 1
-        print(f'  ⛔ (b) the board says {total_board} and the ratchet says {total_base} -- regenerate the board')
-    elif committed != fresh:
-        rc = 1
-        print('  ⛔ (b) the committed board is STALE against the baseline and the claims -- run scripts/gen_pin_board.py')
+        print(f'  ⛔ (b) the board says {total_board} and the ratchet says {total_base}')
     live, void = live_claims(read_claims(claims_text), history)
     for c, why in void:
         rc = 1
@@ -243,7 +240,7 @@ def main(argv):
         print(f"      RELEASED  {p}  ({c['seat']}, claimed r{c['rev']}, expired after r{c['expires_after']}) "
               '-- claimable again')
     if rc == 0:
-        print('  the board agrees with the ratchet and no prefix has two claimants.')
+        print('  the board agrees with the ratchet and no prefix has two claimants.  (`scripts/gen_pin_board.py` writes it to read.)')
     print()
     return rc
 

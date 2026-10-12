@@ -1,0 +1,148 @@
+# r7257+70.1 -- THE HAND-KEPT TARGET of every live quote-pin key that R* cannot decide from its static trace.
+# R* (scripts/mutate_assertions.py `_rstar`): over the file kinds a key's wide traces name, {tex} -> PAPER, kinds
+#   without tex -> SOURCE, tex beside another kind or no kind at all -> UNDECIDED, and an UNDECIDED key reads its
+#   target here.  check_quote_pins fails an UNDECIDED key with no row here, and a row here whose key R* decides.
+# columns: receipt, literal (JSON, as in quote_pin_baseline.tsv), target, kinds the wide trace names, evidence.
+# Seeded at r7257 from the baseline's target column (hand-corrected at r7251 and r7255), NOT re-read row by row;
+#   `evidence` records only whether the literal (or, for a regex, a match) occurs in a corpus/*.tex today, and a
+#   PAPER row with `tex-absent` is the queue to read first (a negative pin is also absent, so absence decides nothing).
+receipts/L221_the_bridge/B28_a_cardinality_gap.py	"not the kind of thing a holonomy supplies"	SOURCE	md,py,tex	tex-present
+receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"and it WAS present"	SOURCE	md,tex	tex-absent
+receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"at"	SOURCE	md,tex	tex-present
+receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"may never have been in this file"	SOURCE	md,tex	tex-absent
+receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"not a verdict"	SOURCE	md,tex	tex-present
+receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py	"the PIN is wrong"	SOURCE	md,tex	tex-absent
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"WITHDRAWN r3128"	SOURCE	-	tex-absent
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"LEDGER VERDICT ON A"	SOURCE	-	tex-absent
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"PO-14"	SOURCE	-	tex-present
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"characteristic crossing with no [^.]{0,60}?obstruction[^.]{0,40}?curvature"	PAPER	py,tex	tex-regex-match
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"massless radial Dirac problem separates into a first-order pair with superpotential \\begin{equation} W(r)=\\frac{\\lambda\\sqrt{f}}{r},\\qquad f=1"	PAPER	py,tex	tex-present
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"F5"	SOURCE	-	tex-present
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"OVERALL FACTOR"	SOURCE	-	tex-absent
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"SPATIAL"	SOURCE	-	tex-present
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"oscillatory"	SOURCE	-	tex-present
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"regardless of the sign"	SOURCE	-	tex-present
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"timelike"	SOURCE	-	tex-present
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	"t selected~\\cite{JanzenMatter}, the leaf-bound modes and the propagating field being two sectors"	PAPER	log,tex	tex-present
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	"the descent onto a \\emph{propagating} spinor sector is built on the chiral member, which is the unpolarised one, a Dirac field there propagating on the light cone"	PAPER	log,tex	tex-present
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	"whereas in the conserved spacetime Dirac norm the same static mode is not"	PAPER	log,tex	tex-present
+receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py	"\\|\\s*~~"	SOURCE	-	tex-absent
+receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py	"nion merge cannot detect a duplicate ID"	SOURCE	-	tex-absent
+receipts/L562_the_pin_test/P1_the_pin_test_run_the_spacing_follows_the_pin_so_the_ratio_does_not.py	"PEAKS \\(line-of-sight\\)\\s+l_A = ([\\d.]+)"	SOURCE	-	tex-absent
+receipts/L562_the_pin_test/P1_the_pin_test_run_the_spacing_follows_the_pin_so_the_ratio_does_not.py	"peaks at l = \\[([\\d,\\s]+)\\]"	SOURCE	-	tex-absent
+receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py	"0.14%"	SOURCE	-	tex-absent
+receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py	"print(\" 7.9e-08 in power."	SOURCE	-	tex-absent
+receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py	"== 13"	SOURCE	-	tex-absent
+receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py	"def scan("	SOURCE	-	tex-absent
+receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py	"r7246"	SOURCE	-	tex-present
+receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py	"unemph"	SOURCE	py,tex	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"0.0099"	SOURCE	-	tex-present
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"0.0467"	SOURCE	py,tex	tex-present
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"2.19 (statistical, from COV_TT)"	SOURCE	-	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"Cooke"	SOURCE	-	tex-present
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"DU = np.array([delta_on("	SOURCE	-	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"INPUT"	SOURCE	py,tex	tex-present
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"It is not the sky's uncertainty"	SOURCE	-	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"NOT a re-opening of the phase intercept, the damping envelope, the driving or the refit, a"	SOURCE	-	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"PROCEDURE"	SOURCE	-	tex-present
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"SIGMA_RATE"	SOURCE	-	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"bank_already_existed"	SOURCE	-	tex-present
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"corpus measured"	SOURCE	py,tex	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"np.std(DU, ddof=1)"	SOURCE	-	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"phase_of(g, OA"	SOURCE	-	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"phase_of(g, OC"	SOURCE	-	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"rng.normal(0, mult, k)"	SOURCE	-	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"seven parabola windows the sky's $\\varphi/\\pi$ moves by $\\pm0"	SOURCE	-	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"x0 = 1.6648"	SOURCE	py,tex	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"x0=1.6648"	SOURCE	py,tex	tex-absent
+receipts/L_probability/S9_the_exposure_is_zero_so_the_count_judgement_was_right_and_the_class_was_already_registered_before_it.py	"L-258"	SOURCE	-	tex-present
+receipts/L_probability/S9_the_exposure_is_zero_so_the_count_judgement_was_right_and_the_class_was_already_registered_before_it.py	"a live register read negatively"	SOURCE	-	tex-present
+receipts/L_probability/S9_the_exposure_is_zero_so_the_count_judgement_was_right_and_the_class_was_already_registered_before_it.py	"pinned to the parent and carries the opposite live assertion"	SOURCE	-	tex-present
+receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py	"--diff-filter=A"	SOURCE	-	tex-absent
+receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py	"not in _added"	SOURCE	-	tex-absent
+receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py	"r7222 REPAIR"	SOURCE	-	tex-absent
+receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py	"s a path list is a gate on a set its own seat can grow"	SOURCE	-	tex-absent
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"A topological term's coefficient is of the third kind"	SOURCE	-	tex-present
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"THERE IS NO SUCH BUNDLE"	SOURCE	-	tex-absent
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"o seat bundle at all, and so nothing for a curvature to be the curvature of"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/C12_the_odd_even_half_has_its_parameter.py	"ordinary content physics on the observable leg"	SOURCE	py,tex	tex-present
+receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	"likelihood-level model selection"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	"over {} TT bins"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/C60_the_hier_composition_defect_names_two_flags_its_own_tree_never_had.py	"'git'\\s*,\\s*'show'"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/C60_the_hier_composition_defect_names_two_flags_its_own_tree_never_had.py	"LEAFPERT"	SOURCE	-	tex-present
+receipts/P15_CR_cosmology/C60_the_hier_composition_defect_names_two_flags_its_own_tree_never_had.py	"fetch-depth: 0"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_po31s_terminal_clause_counts_closures_and_the_label_is_many_to_one_so_the_count_is_four_and_five_at_once_and_the_quantifier_has_no_set.py	"THE LIVE CLAUSE \\(SET `?r(\\d+)"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_po31s_terminal_clause_counts_closures_and_the_label_is_many_to_one_so_the_count_is_four_and_five_at_once_and_the_quantifier_has_no_set.py	"THE LIVE CLAUSE \\(SET `?r7197"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_po31s_terminal_clause_counts_closures_and_the_label_is_many_to_one_so_the_count_is_four_and_five_at_once_and_the_quantifier_has_no_set.py	"~~**PO-31**~~"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	"'^__SWITCHES__ '"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	"grep -m1 '^__SWITCHES__ '"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	"knob shadow"	SOURCE	-	tex-present
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	"nothing launched"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	"r4558"	SOURCE	-	tex-present
+receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py	"switch_smoke.sh"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_exact_transmission_ratios_are_recomputed_and_the_offset_saturates.py	"gives exact/WKB ratios of ((?:\\$\\d+\\.\\d+\\$[,\\s]+(?:and\\s+)?){4}\\$\\d+\\.\\d+\\$) at \\$\\\\ell=([\\d,]+)\\$"	PAPER	-	tex-regex-match
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"Both are correct."	SOURCE	py,tex	tex-regex-match
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"Do NOT unify them"	SOURCE	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"There is no early-universe parameter among them"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"There is no locus at which the rate switches"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"\\$\\\\ell_\\{A\\}\\$[^$]{0,30}\\$([\\d.]+)\\$[^$]{0,30}\\$([\\d.]+)\\$[^$]{0,80}\\$([\\d.]+)\\$[^$]{0,30}\\$([\\d.]+)\\$"	PAPER	py,tex	tex-regex-match
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the observable expansion---takes the stacking rate"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"an artefact of starting inside the horizon and NOT a fact about CR's driving"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"moves the scale and not the peak, which is why the start is not free"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"reading a content process on the stacking rate, or a stacking quantity on the leaf's, is not a modelling choice but the reification the proposition forbids"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"so $k/(aH)\\to0$ for every $k$"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"the sound horizon has no lower endpoint to place"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"with the plasma handed over at the branch point there is no such start and no such amplitude"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_history_is_spherically_symmetric_throughout_so_the_chern_simons_number_never_moves.py	"closed $S^3$"	SOURCE	-	tex-present
+receipts/P15_CR_cosmology/P15_the_history_is_spherically_symmetric_throughout_so_the_chern_simons_number_never_moves.py	"one may not drop the symmetry and keep the locus"	SOURCE	-	tex-present
+receipts/P15_CR_cosmology/P15_the_history_is_spherically_symmetric_throughout_so_the_chern_simons_number_never_moves.py	"s a premise of the construction rather than a gap in it"	SOURCE	-	tex-present
+receipts/P15_CR_cosmology/P15_the_history_is_spherically_symmetric_throughout_so_the_chern_simons_number_never_moves.py	"tensor tower starts at $L=2$"	SOURCE	-	tex-present
+receipts/P15_CR_cosmology/P15_the_history_is_spherically_symmetric_throughout_so_the_chern_simons_number_never_moves.py	"torus block"	SOURCE	-	tex-present
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	"Because the distance slicing is flat"	PAPER	-	tex-present
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"Dltt=Dltt*s"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"Dltt=d[2:lmax+1,0].copy()"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"H = Hleaf if LEAFSCALES else Hgeom"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"H0 = float(os.environ.get('CRH0', H0))"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"LEAFSCALES = os.environ.get('LEAFSCALES', '0') == '1'"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"OMBH2 = float(os.environ.get('WBH2', OMBH2))"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"_crom = os.environ.get('CROM')"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"if _crom and ARM != 'lcdm': OM = float(_crom)"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"np.exp(-(ell/lD)**2*(r**2-1))"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"os.environ.get('CRH0'"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"os.environ.get('CROM'"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"os.environ.get('WBH2'"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"which is what the adjudication asks for"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"$D_M$ and $D_H=c/H$ carry the stacking rate's $1/H_0$, while the sound horizon is accumulated on the leaf rate"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"$\\ell_1=221.93+4.21f$"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"(_Rg ** 2 / (1 + _Rg) + _POLC) / (6.0 * (1 + _Rg) * np.maximum(_tp, 1e-30))"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"1/k_D^2 = INT [...] d(eta), and d(eta_leaf) = Jac d(eta_stack)"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"Hgeom = Hleaf if LEAFGEOM else Hphys"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"Hrec = Hleaf if LEAFREC else Hgeom"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"LEAFPERT = os.environ.get('STACKPERT', '0') != '1'"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"LEAFREC = os.environ.get('LEAFREC', '1') == '1'"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"RAD_IN_RATE = False"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"RAD_IN_RATE = True"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"R^2/(1+R)"	SOURCE	py,tex	tex-absent; read r7257: the site tests `fsrc`, the likelihood instrument's .py, as the baseline's own what-was-read says -> SOURCE
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"Recombination is observable cosmology from the branch point onward"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"The peak positions are the only one of the three readings with an external referent"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"Two objects on the same side of the rule, given opposite clocks, and nothing states the choice."	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"\\$0\\.7312\\$.{0,60}?\\$f=-0\\.304\\$"	PAPER	py,tex	tex-regex-match
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"_POLC"	SOURCE	py,tex	tex-absent; read r7257: the site tests `fsrc`, the likelihood instrument's .py, as the baseline's own what-was-read says -> SOURCE
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"_POLC = float(os.environ.get('POLC', 16.0 / 15.0))"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"_xe(x) * _nH0 / x ** 3 * sigT * x * Mpc_m"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"a comoving separation read across leaves"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the observable expansion---takes the stacking rate"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"cumulative_trapezoid(C / (ag ** 2 * Hgeom(ag)), ag)"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"so $k/(aH)\\to0$ for every $k$"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"take the leaf's, together with recombination's microphysics and the perturbations"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"taup_of"	SOURCE	py,tex	tex-absent; read r7257: the site tests `fsrc`, the likelihood instrument's .py, as the baseline's own what-was-read says -> SOURCE
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"taup_of = CubicSpline(_ea, np.array([_xe(x) * _nH0 / x ** 3 * sigT * x * Mpc_m for x in _aa]))"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"the random walk runs \\emph{in} the content, whose own radiation gravitates in its own expansion, its Thomson microphysics ordinary content physics and its expansion the leaf's"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"through which an $L1$ or L2 quantity appears as distance and redshift"	PAPER	py,tex	tex-absent; read r7257: an ALT arm of the body15 test whose other arm is tex-present -> PAPER
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"through which an L1 or L2 quantity appears as distance and redshift"	PAPER	py,tex	tex-present
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"xe_history(lambda z: Hrec(1 / (1 + z)) * 1e3 / Mpc_m"	SOURCE	py,tex	tex-absent
+receipts/P15_CR_cosmology/P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks.py	"FISH = np.linalg.inv(CS.COV_TT"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear.py	"+0.0016$ and crosses zero, where $G$ is n"	SOURCE	-	tex-absent
+receipts/P15_CR_cosmology/P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear.py	"+0.0196"	SOURCE	-	tex-present
+receipts/P15_CR_cosmology/P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear.py	"7.62"	SOURCE	-	tex-present
+receipts/P15_CR_cosmology/P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear.py	"bounded its contrast effect at $2$"	SOURCE	-	tex-absent
