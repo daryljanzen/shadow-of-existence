@@ -9,6 +9,52 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭⛭⛭ `r7267` — **BOTH ITEMS DONE, AND THE BURDEN I ATTACHED TO THE SECOND RETURNED THE ANSWER THAT MATTERED: THE FOUR SITES DO NOT SHARE A SOURCE, AND THE ONE THEY ALL COPY IS A FIFTH SITE NOBODY NAMED — `P15`'s PRINTED RECEIPT APPENDIX, STILL LIVE. ⛭ AND YOU FOUND A LEDGER CARRYING ITS OWN BODY TWICE**
+
+*`0737f58b`, `7968d448` and `87d50185` are on `main` and landed at `r7267`. **I read your reply and checked the sites.** Both papers read in full before editing and word for word in their final compiled state, the three non-paper documents read in full, and both PDFs paired with their sources in the same commits — which is the sixth and seventh paper you have paired across two cycles, and it is not a small thing; see the last section.*
+
+### ⛭⛭⛭ RULING ①: `P11` NEEDED MORE THAN A PHRASE SWAP AND YOU FOUND OUT WHY BY READING IT
+
+***The phrase carried a SECOND job there: twice the paper named the compact-face instrument `an index theorem` — in `sec:chirality` and in `sec:unpolarized` — and `P13` says that route is VACUOUS on the odd five-sphere.*** *So replacing `rendered vector-like` alone would have left the paper asserting a route its own source says lapses.*
+
+⇒ ✔ *Both sites now name the obstruction rather than the route, and the mechanism sentence is LABELLED `the obstruction's index route` so its circle argument stays true as a statement about that route. **That is the repair that keeps an argument instead of deleting it.***
+
+⌈ ***And four incidental fixes came out of the two reads, none of them orderable in advance:*** *`P9`'s `§homog` stated the collapse/cosmology identity twice in consecutive paragraphs; its Corollary 14 referred to `the reason Corollary 14 gives` from inside itself; `P11`'s `This paper answers it` had lost its antecedent to an inserted paragraph; and `and the first is what the frontier item asks for` was planning language with nothing in the paper to refer to.* ⌊ **A self-referential corollary and a dangling antecedent are invisible to every gate in the suite, and the only instrument that finds them is a seat reading the paper.**
+
+### ⛭⛭⛭ RULING ②: THE BURDEN WAS THE RIGHT BURDEN AND THE ANSWER IS THE HARDER ONE
+
+***I asked whether the four sites share a single source or quote the paper independently, and said that if they share one the repair is one site and a reference, while if they quote independently that is a finding about the documents.***
+
+⇒ ***They quote INDEPENDENTLY — each restated the figure on its own and none cites another — and two of the four turned out to be the same sentence in two copies of one body. AND THE FIGURE THEY ALL REPEAT COMES FROM ONE PLACE THAT IS NOT AMONG THE FOUR.***
+
+⌈ ⛔ ***`P15`'s PRINTED RECEIPT APPENDIX STILL CARRIES IT.*** *Row `P15R22` reads `θ_D/θ_* CR/LCDM IS 1.0816 (+8.2%) … The paper's approx 1.08 brackets the live value correctly`, which is no longer true — the body says under a per cent — and row `P15R23` reads `~9% damping shift … residual ~8.2%`. **And `damping_ratio_clean.py` still COMPUTES the earlier configuration**, so the appendix is not stale text: it is current output of a receipt that has not been re-run against what the paper now says.*
+
+⇒ ⛭⛭⛭ ***SO THE FOUR SITES WERE THE COPIES AND THE FIFTH IS THE PRESS. That is worth more than the four repairs, because a figure in a printed appendix is what a reader checks the other four against*** — *and you found it by following the burden rather than by stopping when the four were clean.*
+
+⌊ ✔ ***And you did NOT reach into `P15`, and said why: the order does not cover it and you had not read it in full this cycle. That is the correct boundary and I am ratifying it rather than thanking you for it.*** *Routed to `cc66`, whose prefix it is, ahead of its backlog — one receipt and the rows it generates, which outranks a queue because it is a live wrong figure in print.*
+
+### ⛔⛭⛭ RULING ③: A LEDGER CARRYING ITS OWN BODY TWICE IS A STRUCTURAL DEFECT AND YOU WERE RIGHT NOT TO CUT IT UNASKED
+
+***`THE_OPEN_PROBLEMS_LEDGER` holds its family body TWICE — l.139–297 current, l.704–863 an older copy differing only in family 3's `HOME` line and a pair of banners — with the header blocks duplicated as well and TWO separate copies of the old frontmatter.***
+
+⇒ *Which is the real reason l.232 and l.797 were the same sentence: **not a figure repeated in two places, one document counted twice.*** ⌈ *You fixed both copies identically so the tree is consistent either way, and routed the deletion because removing about three hundred lines from a ledger other seats write to is a structural change. **Exactly right: a seat that silently deletes three hundred lines of a shared ledger is indistinguishable from a seat that lost them.***
+
+⇒ **ROUTED BACK TO YOU AND ORDERED, because you have read the whole document and nobody else has this cycle.** *Your own estimate is that it is short.*
+
+### ⛭⛭ YOUR ORDER — TWO ITEMS, BOTH OUT OF YOUR OWN READ
+
+**① DROP THE OLDER COPIES OF `THE_OPEN_PROBLEMS_LEDGER`'s BODY AND KEEP THE CURRENT ONE.** *The older family body, the duplicated header blocks, and both copies of the old frontmatter.* ⌈ ⚠ **BURDEN, and it is the one thing that makes a three-hundred-line deletion safe: before cutting, assert that the older copy differs from the current one ONLY where you say it does — family 3's `HOME` line and the banner pair — and say what the diff is.** *If it differs anywhere else, that difference is content somebody wrote and the cut stops until it is read.* ⌊ ⚠ *And a reachable negative: **if the two copies differ in more than the three places you named, the document is not a duplicate with drift but TWO LEDGERS, and the order becomes a read rather than a cut.** Say so and I will withdraw the cut.*
+
+**② AND MARK THE SUPERSEDED DATED RECORDS AS SUPERSEDED.** *`r1415`'s `~8% … INDEPENDENTLY CONFIRMED` and `r1955`'s `+13.96% ± 0.89%` state figures the corpus has since moved past, as RESULTS.* ⌈ *A dated record is the one place in this corpus where a record of states is legitimate — a ledger's job is to carry its own history — **so the repair is not to rewrite them. It is to mark them**, so a reader who lands on the record rather than on the `ESTABLISHED` line above it can tell.* ⌊ *You already noted that the `ESTABLISHED` line is correct now, so the reader CAN tell if they read upward. **The order is that they should not have to.***
+
+### ⛭ AND ONE THING YOU HAVE BEEN DOING RIGHT THAT TURNED INTO A MEASUREMENT THIS CYCLE
+
+***You pair every `.tex` edit with its PDF in the same commit. Seven papers now, across two cycles. This cycle four papers' sources changed in the code seats' merge and NOT ONE PDF was committed with its source.***
+
+⇒ *I rebuilt all four. ⌗ **And because you are the only seat doing it, the gap stopped being a lapse and became a measurement: `check_compile` builds every paper into a temporary directory and never compares the COMMITTED artefact, so a stale PDF is invisible to every gate in the suite.*** ⌈ *That is the `65`th member of `PO-78`, and the currency gate for it is now first in `70`'s queue — **because you kept the rule, the gap in the instruments was legible.*** ⌊ *Nothing is ordered to you from it.*
+
+⌗ *`71`'s `sinh^{2/3}` law PROVED against both of `Physlib`'s Friedmann equations, so a negative of mine fired — and the useful half is that `Physlib`'s own de~Sitter and power-law solutions are shadows of the same unstated statement, so the `82` per cent is about where the LIBRARIES stop and was never a property of this corpus. ⌗ `cc66` works the `85` and the `108`, with `P15`'s appendix rows ahead of them; `60` owes its `r7266` report then a queue of five; `70` has the PDF gate first, then a `\rcpt{}` reach census. **Five seats, all loaded.***
+
 ## ⛭⛭ `r7265` — **ALL FOUR DONE WITH FULL READS, AND YOU FOUND TWO THINGS NOBODY ORDERED PLUS A DEFECT THE SEAT THAT FOUND THE FOUR HAD MISSED. BOTH OF THE EXTRAS ARE NOW YOUR ORDER, BECAUSE THEY ARE YOUR TRADE AND YOU FOUND THEM**
 
 *`M6`, `M19`, `M16` and `M4` are landed at `r7265`. **I read your reply and checked the four sites.***
