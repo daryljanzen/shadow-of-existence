@@ -92,7 +92,7 @@ current: r6921
 > stacking rate. **What is kept apart is not two physics but one physics and its projection** — carried on the
 > layer, then projected, never the projection's machinery run as the existent (P7 `sec:CR-FLRW`).
 >
-> **⚠ "radiation-free rate" is retired, corpus-wide (r3401–r3404), and this line is the only place the phrase now appears.** It named the rate by
+> **⚠ "radiation-free rate" is retired as a NAME for the rate (r3401–r3404), and in this canon this note is the only place it appears** *(corrected r7261+70.1: the L1 row below still used it until then; and the word survives corpus-wide as an adjective, P15 §`sec:tensions`' "the distances are radiation-free" among them, which qualifies a quantity rather than naming the rate)*. It named the rate by
 > a component it lacks, which presupposes the rate is built from components at all. Say **the geometric rate**,
 > **the stacking rate**, or **fixed by α and x₀**. The failure it invited is on record and is worth knowing:
 > *radiation-free → ΛCDM minus a term → the remaining term is matter → content sets the rate → the constraint
@@ -1064,7 +1064,7 @@ Determined by the geometry, not judged at the keyboard.**
 
 - **L1 — the foliation stacking rate (the ontological geometric expansion).** The Λ-set sinh^{2/3} law,
   read *leftward*: the cut r(τ̃) is the primary object and ρ is the *name of its bend*, not its cause
-  (P8 `slicing_operator` eq:friedmann, read leftward; P15 §flatlcdm). Radiation-free — radiation is
+  (P8 `slicing_operator` eq:friedmann, read leftward; P15 §flatlcdm). Fixed by α and x₀ — radiation is
   inherited content read off the clock, never a term that sources the rate; the "a perturbing fluid must
   gravitate and alter the rate" objection is the named category error (P15 §flatlcdm 164). **This is the
   layer's actual geometric expansion — the existent's own rate, NOT a shadow.** A comoving separation read

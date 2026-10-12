@@ -27,6 +27,7 @@ again -- which is the point: the rewording is exactly the event this class fails
 
 Drafted r7125+70.1.  Stated for reversal.
 """
+import functools
 import json
 import os
 import re
@@ -44,13 +45,7 @@ ANN_LINE = re.compile(r'\s*\[TARGET-ANNOTATION\]\[(MISSING|UNUSED)\]\s+(\S+)\s+(
 ANNOTATION_REPORT = []
 # r7257+70.1: a key whose baseline target is allowed to differ from the instrument, NAMED, with why, and routed to 66.
 #   File-scoped and exact; an entry here is a dispute awaiting a ruling, never a standing override.
-TARGET_DISPUTED = {
-    ('receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py',
-     'baryon 1, diquark 0, meson 1'):
-        'the site tests p14, matter_sector_paper.tex, so R* files it PAPER; the paper writes `baryon $1$, diquark $0$, '
-        'meson $1$`, so the plain literal is absent there and the MEANING-HELD row (66 re-filed it SOURCE at r7255 '
-        'so H3 would hold) fails H3 as PAPER.  A verdict question, not a column one: routed in r7257+70.1.',
-}
+TARGET_DISPUTED = {}   # r7261: B57, the one entry, was ruled by 66 -- PAPER is right, and H3 now carries markup
 INSTRUMENT = os.path.join(ROOT, 'scripts', 'mutate_assertions.py')
 
 LINE = re.compile(r'\s*\[QUOTE-PIN\]\[(PAPER|SOURCE|UNDECIDED)\]\[(SENTENCE|TOKEN)\]\[([A-Z,]*)\]\s+(\S+?):(\d+):(\d+)\s+(".*")$')
@@ -114,17 +109,43 @@ def _flat(t):
     return re.sub(r'\s+', ' ', t)
 
 
-def _present_at(sha, lit, target, receipt):
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+
+
+def _unmark(t):
+    """r7261+70.1: the MARKUP NORMALISER `H3` compares through -- applied to BOTH sides, at comparison time, never
+    to the stored literal (a literal rewritten to match is a pin on the normaliser).  It unwraps the emphasis family
+    (`S19`'s `unemph`, the r7258 class), deletes the math-mode delimiter `$` (the `B57` class: `baryon $1$` against
+    `baryon 1`), and reads `~` as a space.  It deletes markup characters only, never content, so a literal with one
+    value changed still fails (seeded).  Measured two-sided before it went in: computations/beyond_the_wall/
+    r7261_70_h3_markup/."""
+    for _ in range(4):
+        t2 = _EMPH.sub(r'\1', t)
+        if t2 == t:
+            break
+        t = t2
+    return _flat(t.replace('$', '').replace('~', ' ')).strip()
+
+
+_unmark_text = functools.lru_cache(maxsize=512)(_unmark)   # a paper body is unmarked once per run, not per key
+
+
+def _present_at(sha, lit, target, receipt, normalise=True):
     """H3: is the literal in what the key reads, at `sha`?  Whitespace-normalised, because a paper sentence wraps
-    across lines and a line-based grep would miss it; a literal that is a regex is matched as one."""
+    across lines and a line-based grep would miss it; a literal that is a regex is matched as one.  r7261+70.1: a
+    literal absent raw is compared again through `_unmark` on both sides, so the arm that fires is visible."""
     def hit(text):
         if lit in text:
             return True
         if '\\' in lit:
             try:
-                return re.search(lit, text) is not None
+                if re.search(lit, text) is not None:
+                    return True
             except re.error:
-                return False
+                pass
+        if normalise:
+            n = _unmark(lit)
+            return bool(n) and n in _unmark_text(text)
         return False
     if target == 'PAPER':
         names = [n for n in _git('ls-tree', '--name-only', sha, 'corpus/').stdout.split()
@@ -185,6 +206,18 @@ def _held_seeds():
             bad.append('a row stamped with HEAD, a commit that never changed its receipt, must fail H5')
     if 'TYPO-OK' in VOCABULARY:
         bad.append('the vocabulary must not admit an unknown verdict')
+    # r7261+70.1: the markup arm, seeded both ways so the arm that fires is visible.  S1: B57's paper writes
+    #   `baryon $1$, diquark $0$, meson $1$` -- absent raw, held through `_unmark`.  S2: P13's literal carries its own
+    #   `$\alpha$` and is present raw, so the raw arm fires.  S3: B57's literal with one VALUE changed still fails --
+    #   the normaliser deletes markup, never content.
+    b57 = 'receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py'
+    b57_sha = _git('rev-parse', '57677a7ecfad').stdout.strip()
+    for l, norm, want in [('baryon 1, diquark 0, meson 1', False, False), ('baryon 1, diquark 0, meson 1', True, True),
+                          ('baryon 2, diquark 0, meson 1', True, False)]:
+        if _present_at(b57_sha, l, 'PAPER', b57, normalise=norm) != want:
+            bad.append(f'markup seed {l!r} (normalise={norm}): expected {"present" if want else "absent"}')
+    if not _present_at(sha, lit, 'PAPER', rc, normalise=False):
+        bad.append('markup seed S2: a literal carrying its own math must still match RAW')
     return bad
 
 
@@ -262,7 +295,7 @@ def main():
             print(f'      {b}')
         return 1
     print('    MEANING-HELD seeds hold: a valid row is held; no sha, a bad sha, an absent literal, a TOKEN, and a '
-          'HEAD stamp each fail')
+          'HEAD stamp each fail; math-mode markup is read through, a changed value is not')
     _unknown = sorted({v for *_x, v, _w in base.values()} - VOCABULARY)
     if _unknown:
         print(f'  ⛔ VERDICT(S) OUTSIDE THE VOCABULARY: {_unknown} -- an unknown verdict counts as adjudicated and is an '
