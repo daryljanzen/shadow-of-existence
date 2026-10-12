@@ -1,0 +1,19 @@
+BH_causality_v2.tex                      rebuild == committed after the full strip: True   stripped sizes 824348 824348
+CR_cosmology.tex                         rebuild == committed after the full strip: False   stripped sizes 2705367 2610569
+CR_framework.tex                         rebuild == committed after the full strip: True   stripped sizes 1143783 1143783
+CR_synthesis.tex                         rebuild == committed after the full strip: True   stripped sizes 587424 587424
+SdS-slicing-curve_v2.tex                 rebuild == committed after the full strip: False   stripped sizes 1561903 1555755
+algebroid_paper.tex                      rebuild == committed after the full strip: True   stripped sizes 318153 318153
+boundary_paper.tex                       rebuild == committed after the full strip: True   stripped sizes 1063317 1063317
+canonical_time.tex                       rebuild == committed after the full strip: True   stripped sizes 1009592 1009592
+cosmogenesis_paper.tex                   rebuild == committed after the full strip: True   stripped sizes 630099 630099
+dynamics_paper.tex                       rebuild == committed after the full strip: True   stripped sizes 349591 349591
+geometric_core_paper.tex                 rebuild == committed after the full strip: True   stripped sizes 962880 962880
+groupoid_paper.tex                       rebuild == committed after the full strip: True   stripped sizes 478286 478286
+janzen_circle_v3.tex                     rebuild == committed after the full strip: True   stripped sizes 389809 389809
+matter_sector_paper.tex                  rebuild == committed after the full strip: True   stripped sizes 954262 954262
+modern_parallax.tex                      rebuild == committed after the full strip: True   stripped sizes 302675 302675
+range_paper.tex                          rebuild == committed after the full strip: True   stripped sizes 338222 338222
+shadow_of_existence.tex                  rebuild == committed after the full strip: True   stripped sizes 350765 350765
+slicing_operator.tex                     rebuild == committed after the full strip: True   stripped sizes 384153 384153
+16 of 18 committed PDFs equal a rebuild of their committed source
