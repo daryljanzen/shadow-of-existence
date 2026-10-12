@@ -56,5 +56,13 @@
     "since": "724dce44f28396c9d92885f8c088f4fedf5f7edd"
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38307316598",
+    "since": "7968d4481f697adbfc27f9b0aed43098142ab081"
+   }
+  }
  }
 }
