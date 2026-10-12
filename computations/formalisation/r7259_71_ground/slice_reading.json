@@ -1,0 +1,1997 @@
+[
+ {
+  "path": "receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Tortoise integral is log (exponential approach) at a simple root and a power law at the Nariai double root; checks f=f'=0 at r_n and corpus text."
+ },
+ {
+  "path": "receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "rho_r/rho_m scales as 1/a and a common crossing factor cancels in it, so the ratio is a clock reading, not a carried datum; corpus text checks."
+ },
+ {
+  "path": "receipts/L165_defining_the_sum/S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Quadratic curvature invariants of maximally symmetric D=4,5,6 are pure alpha^-4 powers and P10's cosh slicing has constant R=12/alpha^2; corpus text checks."
+ },
+ {
+  "path": "receipts/L165_interacting_tower/D2_the_UV_degree_is_quartic_and_the_IR_is_free.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Mode-sum asymptotics: mu_n ~ n and partial sums of n^3 track N^4/4, so the tower diverges quartically; compactness removes the IR."
+ },
+ {
+  "path": "receipts/L165_interacting_tower/S10_the_halves_meet_at_the_shear.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Polynomial C^2 = sigma^2(4+16sigma^2/3) vanishes shear-free and starts at 4sigma^2; trace-free shear; corpus text checks."
+ },
+ {
+  "path": "receipts/L165_interacting_tower/S12_the_boundaries_coincide.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Weyl^2 = Riem^2-2Ric^2+R^2/3 vanishes identically on FRW (k=+1,0,-1) for free a(T) while R runs."
+ },
+ {
+  "path": "receipts/L165_interacting_tower/S13_the_ledger_does_not_reach_second_order.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Rank of GB and C^2 in the (Riem^2,Ric^2,R^2) basis is 2 with one null direction; Weyl^2=0 identically on FRW."
+ },
+ {
+  "path": "receipts/L165_interacting_tower/S5_the_counterterm_degeneracy_verified.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Curvature invariants are alpha^-4 powers for D=4,5,6, and the sinh^(2/3) layer's Ricci scalar runs from infinity to 12H^2."
+ },
+ {
+  "path": "receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "P10's cosh slicing gives constant R=12/alpha^2 while the sinh^(2/3) layer's R runs to 12H^2; PROTECTED_OPEN text checks."
+ },
+ {
+  "path": "receipts/L174_general_matter_dynamics/I10_the_constraint_propagation_is_symmetry_free.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Builds Christoffels and Einstein tensor to O(eps^2) for a two-wave metric with no Killing vector and checks div G = 0."
+ },
+ {
+  "path": "receipts/L174_general_matter_dynamics/I3_the_identification_is_general_and_the_shear_count_is_the_gap.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "ADM identity K^2 - K_ijK^ij = (2/3)theta^2 - sigma^2 for an arbitrary trace-free 3x3 shear; five shear components versus one Gowdy polarisation."
+ },
+ {
+  "path": "receipts/L174_general_matter_dynamics/I9_the_stratum_evolves_by_ordinary_GR_at_linear_order.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "de Sitter TT mode function e^{-ik eta}(1-i/(k eta)) solves the mode ODE exactly; e_+ and e_x are transverse and trace-free."
+ },
+ {
+  "path": "receipts/L175_dimensional_descent/E50_a_second_step_is_emptied_by_rule_two_and_not_forbidden_by_it.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Plane section of the dS_D hyperboloid gives radius sqrt(alpha^2-c^2) for D=5..8; the scale map has rank 1; the slicing cubic has 3 roots; corpus text checks."
+ },
+ {
+  "path": "receipts/L175_dimensional_descent/E52_the_plane_section_reduction_reproduced.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Spacelike, timelike and null plane sections of the dS_D quadric give dS_{D-1}, a sphere, and a non-quadric respectively."
+ },
+ {
+  "path": "receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Im sinh^2(a+ib) = sin(2b)sinh(2a)/2 vanishes only at b=0, pi/2, giving two sign-related real branches on which conjugation acts trivially."
+ },
+ {
+  "path": "receipts/L203_reach_stations/M1_the_equianharmonic_group_is_not_the_monodromy_group.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "j(e^{i pi/3}) = 0, and Z_6 (abelian) and S_3 (non-abelian) have the same order but are not isomorphic."
+ },
+ {
+  "path": "receipts/L203_reach_stations/M4_four_objects_one_word.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Horizon cubic is irreducible with discriminant -4(27M^2-1), Galois/monodromy group S_3; deck-group order must divide 3; Z_3 and Z_6 are distinguished."
+ },
+ {
+  "path": "receipts/L204_physics_reach/P13_the_entropy_is_the_corpuss_own_number.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "de Sitter entropy pi alpha^2/l_P^2 equals 3pi/(Lambda l_P^2) and is about 1e122; corpus text checks."
+ },
+ {
+  "path": "receipts/L204_physics_reach/P5_the_two_absences_verified_independently.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "de Sitter kappa = 1/alpha, the accelerated temperature has the right limits, and at the Nariai mass the double root has kappa = 0."
+ },
+ {
+  "path": "receipts/L204_physics_reach/P6_the_nariai_frame_does_not_exist_and_the_transplanckian_scope.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "At the Nariai mass f has a double root with f''=-6/alpha^2 < 0 (static region pinches off); blueshift ~ delta^{-1/2} is finite but unbounded."
+ },
+ {
+  "path": "receipts/L204_physics_reach/P7_the_temperature_is_taken_and_the_entropy_never_is.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Corpus term counts; T = kappa/2pi = 1/(2pi alpha) and S = A/4 = pi alpha^2, so S depends on alpha/l_P while T does not."
+ },
+ {
+  "path": "receipts/L204_physics_reach/P8_the_higgs_join_is_an_identity.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "2M = r0 - r0^3 is odd under r0 -> -r0 and its extremum |M|max equals the Nariai mass alpha/(3 sqrt3)."
+ },
+ {
+  "path": "receipts/L207_the_bend/W2_the_general_inhomogeneous_leaf_exhibited.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Builds the LTB metric's Christoffels and Einstein tensor: G_tt - Lambda = 2m'/(R^2R') for arbitrary m(r), and Rddot = -m/R^2 + Lambda R/3."
+ },
+ {
+  "path": "receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Closed FRW dust a(eta) equals P2's cycloid M(1+cos z) under z = pi - eta, A = 2M, with both quadratic at the singular end."
+ },
+ {
+  "path": "receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "LTB turnaround R_max = -m/E needs E<0; the cycloid matches bound LTB with constant E = -1/2; a varying E(r) changes R_max(r)."
+ },
+ {
+  "path": "receipts/L211_closure_adjacency/A4_the_composition_rests_on_adiabaticity_not_uniformity.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Patch/background composition ratio is (1+dr)/(1+dm) = 1+(dr-dm)+O(2) and contains no E; corpus text checks."
+ },
+ {
+  "path": "receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "LTB turnaround time pi m/(-2E)^{3/2} depends on E, with d ln t_ta = -(3/2) d ln(-E); corpus text checks."
+ },
+ {
+  "path": "receipts/L221_quark_lepton/P14_the_three_bridges_off_the_grading_all_land_on_the_same_ceiling.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "S_3 irreducible dimensions 1,1,2 from the class equation; the Dirac operator squares to p^2 (not nilpotent); angular gaps are uniform; corpus text checks."
+ },
+ {
+  "path": "receipts/L221_quark_lepton/Q2_the_kernel_route_is_unavailable_off_the_R_even_sector.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Gamma matrices anticommute with gamma^5 but a mass term commutes with it, so D+m loses the grading needed for an index."
+ },
+ {
+  "path": "receipts/L221_the_bridge/B18_the_obstruction_is_horizon_located.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Leaf measure dr/sqrt f is integrable at a horizon while the tortoise measure diverges; both are finite at r=0."
+ },
+ {
+  "path": "receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "On closed dust, H_c vanishes at turnaround so k^2/(3H_c) diverges; eta = pi+is makes H_c purely imaginary."
+ },
+ {
+  "path": "receipts/L221_the_bridge/B47_the_wall_is_exactly_critical.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Wave potential V r^4 -> -4M^2 at r=0, giving V ~ -1/(4x^2) and an indicial double root at s=1/2."
+ },
+ {
+  "path": "receipts/L221_the_bridge/B51_p0s_inference_is_sound_and_scoped.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "The Kretschmann scalar on the Nariai cut is 72/alpha^4 (mass cancels), while r_N/alpha = 1/sqrt3 is a locus ratio."
+ },
+ {
+  "path": "receipts/L221_the_bridge/B62_the_rescaling_cannot_make_an_index_real.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Measure ratio gives a psi = P f^{-1/4} rescaling whose real exponent cannot make the imaginary index r^{+-i lambda} real."
+ },
+ {
+  "path": "receipts/L233_colour_curvature/F1_what_a_curvature_source_would_have_to_be.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "mpmath polyroots of the horizon cubic at several M show the roots move with M (a curvature source would need a varying m(r))."
+ },
+ {
+  "path": "receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "2M = r0 - r0^3 is a cubic cover branched where the discriminant -4(27M^2-1) vanishes, so the connection is a covering's canonical flat one."
+ },
+ {
+  "path": "receipts/L246_the_achirality_is_the_obstruction/W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_chiral_member_does_not_have.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Enumerates involutions on four states: every 2+1+1 T-action fails to commute with an eigenspace exchange; anomaly conditions are vacuous on vector-like content."
+ },
+ {
+  "path": "receipts/L246_the_operator_choice/W2_the_wall_zero_mode_on_the_operator_b60_fixes.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Zero-mode log-derivative pairings: B60 forms give lambda/(r sqrt f), the S3 pairing gives lambda/r; near the throat the exponent is imaginary and bounded."
+ },
+ {
+  "path": "receipts/L265_the_throat_is_limit_circle/L1_the_limit_point_verdict_inverts_on_the_corrected_operator.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Corrected pairing gives a bounded integral of W dl near the throat and an L^2-convergent measure, so the endpoint is limit-circle."
+ },
+ {
+  "path": "receipts/L272_the_misplaced_phase_is_the_radiation_free_rate/D1_the_diagnosis_is_the_driving_and_the_driving_is_the_rate.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Floating-point checks on quoted fit numbers (intercepts, slopes, bands) plus a trivial symbolic check that the impulse is k-independent."
+ },
+ {
+  "path": "receipts/L276_the_branch_point_verdict_reconciled/V1_both_self_consistent_pairings_give_limit_circle.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Withdrawn result: correct pairings give lambda/(r sqrt f), whose integral near the throat is a bounded phase with a convergent norm, so limit-circle."
+ },
+ {
+  "path": "receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "r^lambda solves the zero-mode equation sqrt f psi' = W psi exactly and imaginary candidates do not; prior-art receipt search."
+ },
+ {
+  "path": "receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Computes curvature from FRW metrics: Weyl^2=0 for free a(T), Gauss-Bonnet is a total derivative, de Sitter invariants are reproduced, and an SdS control is nonzero."
+ },
+ {
+  "path": "receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Two-wave TT data satisfy the momentum constraint; the mode ODE is solved; div G = 0 exactly on the inhomogeneous polarized metric."
+ },
+ {
+  "path": "receipts/L808_nariai_extension/S1_the_nariai_closed_form_extends_as_a_series_in_the_horizon_separation.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Nariai double root with f''(r_n) = -6/alpha^2 gives equal dS_2 x S^2 radii, and the horizon separation squared is linear in M_N - M."
+ },
+ {
+  "path": "receipts/L809_one_loop_quartic/S1_the_quartic_is_a_constant_vacuum_energy_and_the_geometry_absorbs_it.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "One-loop vacuum-energy integral has a mass-independent quartic Lambda_c^4/(16pi^2) leading term and an m^2 Lambda_c^2 subleading term."
+ },
+ {
+  "path": "receipts/L816_po6_subleading_survives/S1_the_subleading_log_divergence_is_gauss_bonnet_and_the_ledger_survives.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "de Sitter R^2, Ric^2, Riem^2 = 144, 36, 24/alpha^4, Weyl^2=0, GB=24/alpha^4, R=4Lambda on shell."
+ },
+ {
+  "path": "receipts/L818_po6_running_layer/S1_the_one_constant_ledger_survives_on_the_running_layer_not_only_fixed_de_sitter.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Polynomial identities in H, Hdot: Weyl^2=0 on FRW and a general quadratic counterterm reduces to GB, Lambda terms and EOM terms with zero remainder."
+ },
+ {
+  "path": "receipts/L819_shear_boundary_coupling/S1_the_ledgers_one_irreducible_survivor_is_the_conformal_coupling_that_turns_on_at_the_shear.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Decomposes b_4 into 7/40 Weyl^2 + 149/360 GB + 1/8 R^2; computes Weyl^2 for a sheared Bianchi-I metric (zero at s=0, O(s^2))."
+ },
+ {
+  "path": "receipts/L828_wall_extension_fermion_vs_scalar/S1_the_walls_log_ambiguity_is_the_scalar_operators_the_fermion_continuum_is_power_selected.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Scalar wall potential limit gives an indicial double root (log solution), while the fermion's W dl = lambda dr/r gives distinct powers."
+ },
+ {
+  "path": "receipts/P01_BH_causality/P01_metric_singularity_algebra.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Schwarzschild g^rr, Eddington-Finkelstein g_vv, Painleve-Gullstrand g_TT and the Killing norm are derived by coordinate transformation and vanish at r_h."
+ },
+ {
+  "path": "receipts/P01_BH_causality/P1_the_transplanckian_claim_is_finite_at_each_finite_time_and_it_is_not_bounded.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Near-horizon series and dsolve give delta ~ e^{-2kappa t} and blueshift ~ e^{kappa t} with infinite supremum; numeric Planck-blueshift times."
+ },
+ {
+  "path": "receipts/P01_BH_causality/P1_the_unruh_case_is_what_makes_the_criterion_completion_and_not_perspective.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Completion (not observer-dependence) sorts four horizons; de Sitter kappa = 1/alpha and T(a) limits; Nariai double root has kappa = 0."
+ },
+ {
+  "path": "receipts/P01_BH_causality/P1_thermality_is_the_exponential_and_a_double_root_has_no_exponential.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Tortoise integral is log at a simple root and a power law at a double root; the Nariai expansion has no linear term."
+ },
+ {
+  "path": "receipts/P02_janzen_circle/I8_the_circle_is_a_phase_portrait_and_the_critical_points_are_turning_points.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "r = M(1+cos z) satisfies r'' = -(r-M), and (r-M)^2 + s^2 = M^2 is a conserved oscillator orbit with exactly two turning points."
+ },
+ {
+  "path": "receipts/P02_janzen_circle/P02_analytic_continuations.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Continuing z = i rho reproduces the Schwarzschild exterior metric coefficients, and z = pi + i rho' gives r < 0."
+ },
+ {
+  "path": "receipts/P02_janzen_circle/P02_bead_K_mass_free.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Kretschmann 48M^2/r^6 along the small-s bead is 64/(27 s^4), independent of M and alpha; along the cycloid it scales as M^-4."
+ },
+ {
+  "path": "receipts/P02_janzen_circle/P02_cycloid_and_critical_points.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Cycloid r=M(1+cos eta), tau=M(eta+sin eta) solves the Schwarzschild interior radial equation; critical points at eta=0,pi are the circle's r-poles."
+ },
+ {
+  "path": "receipts/P02_janzen_circle/P02_interior_metric.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Schwarzschild interior metric in cycloid coordinates: g_tt=tan^2(eta/2), g_rr dr^2=-dtau^2, eta timelike, eta->-eta invariance, g_tt limits at horizon and r=0."
+ },
+ {
+  "path": "receipts/P02_janzen_circle/P02_kretschmann_chain_rule.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Kretschmann scalar in cycloid parameter has a 12th-order pole at r=0 (Laurent limits), finite at horizon, and the pole moves under relabelling."
+ },
+ {
+  "path": "receipts/P02_janzen_circle/P02_the_third_axis_is_two_poles.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Complex continuations of the cycloid land on real r only on three axes (Im r=-M sin a sinh b), covering the real r line; the two extra axes are the fixed points of z->-z."
+ },
+ {
+  "path": "receipts/P02_janzen_circle/P02_the_third_axis_reflection_is_a_third_thing.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "The bead's time reversal T is neither R nor K; bead and cycloid parametrisations agree near r=0 to leading coefficient (series); scale-factor prefactor equals A."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_R_reaches_the_turnaround.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Mass reflection R has a real image on the turnaround branch iff D is even, matching the horizon-side parity; with the deck Z_3 it generates Z_6, index 2 in D_6."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_acceleration_is_slice_curvature.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Radial geodesic acceleration d2r/dtau2 equals r times the slice's Gaussian curvature K_G (E cancels), so the flat locus r=(M alpha^2)^(1/3) is the acceleration turnover."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_batch1_cheap_owed.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Six leads: opposite-horn null chords are one station step at every D but exhaustion holds only at D=4; 2/5 criterion score; D_3 x Z_2 acts regularly on 12 legs; walls are T-fixed."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_charge_parity.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "RNdS lapse f splits under 2M->-2M into an even part (de Sitter + Q^2/r^2) and odd part -2M/r; Q->-Q fixes f and the horizon quartic; r->0 limits and numeric roots."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_cubic_spacing.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Discriminant of horizon cubic H vanishes at Nariai (factoring (r-rho)^2(r+2rho)) while the turnaround cubic T's discriminant -108M^2alpha^4 never does; phase positions of loci."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_ellipse_foci.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Horizon-locus ellipse r^2+r r0+r0^2=1 has eigenvalues 1/2,3/2, focal distance 2/sqrt3 equal to the Nariai offset from the discriminant, forced by a/b=sqrt3."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_kg_is_fprime.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Slice Gaussian curvature K_G equals -f'/(2r) identically for SdS f, so its zero coincides with f'=0 at (M alpha^2)^(1/3)."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_locus_sweep.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Inventory of corpus names grouped by locus: the throat point carries 7 names vs the 3 P3 counts; throat has 3 names, hinge=swing axis; criterion scores pinned."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_operator_at_general_D.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Einstein tensor G^t_t of the static gauge computed at D=4,5,6 matches (D-2)/(2r^2)[rf'+(D-3)(f-1)]; the vacuum kernel ODE's general solution is Tangherlini-de Sitter at D=4..8."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_rstar_merged_horizon.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "On K_G=0 the SdS f reduces to 1-3r^2/alpha^2, so f(r_star)=0 iff Nariai mass (discriminant), where r_star is the double root alpha/sqrt3; r_star = A 2^(-1/3)."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_seam_continuation.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Continuation theta->pi/2+i psi turns the spherical slice metric dtheta^2+sin^2 dOmega^2 into -dpsi^2+cosh^2 psi dOmega^2, a C1-not-C2 join at the throat with signature flip."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_sheet_index_and_factors.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Hinge/wall incidences realise 6 of 9 pairs, 12 legs factor as 3x2x2 with the leg pair as chirality, and the cube-root sheet index in Z_3 acts as the wall-crossing count."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_the_adjoint_is_entailed.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "The factorisation ellipse is half the Killing form on the su(3) Cartan; the six differences e_i-e_j satisfy the A_2 root-system axioms, giving dim 8 and det(Cartan)=3."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Numerical ratios from Lee-Kim-Rey (2017) group data: all six turnaround radii exceed the spherical bound, weakening the earlier baryon-only exclusion; convention factor computed."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_the_foci_are_chart_objects.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "The A_2 form's ellipse has focal distance 2/sqrt3, but the Weyl 3-cycle preserves the form and is not chart-orthogonal, so the foci are chart-dependent objects."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_the_hubble_eddington_radius_is_the_slices_flat_locus_and_the_bend_takes_whatever_gravitates.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Geodesic acceleration equals r K_G, so the force-balance radius (M alpha^2)^(1/3) is the slice's flat locus; density-equality radius is 2^(1/3) larger; with m(r) the bend takes the dynamical mass."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_the_measured_turnaround_radius_sits_below_the_flat_locus_by_the_factor_lcdm_predicts_and_excludes_the_baryon_only_mass.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Numerical comparison of the Milky Way's measured turnaround radius with (3GM/Lambda)^(1/3): consistent with the LCDM 0.73 factor at dynamical mass, exceeds the bound at baryon-only mass."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_the_sign_switch_is_conditional_on_the_interior_mass_function.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Charged lapse f -> +oo at r=0 for constant M, but with m ~ k r^-p the sign switch survives iff p<1 (p=1 decided by 2k vs Q^2): limits as r->0."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_the_sixth_equivalence.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Excentre punctures at X_0=+-sqrt15 alpha lie on the hyperboloid; causal characters of hinge/excentre pairs tallied; cross-horn interval s^2=4alpha^2-rho^2 is null exactly at rho=2alpha."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_the_symbol_w_carried_two_circles.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Notation audit: sigma and T-tilde composed on one w would give w+pi/3, but P3's w had two senses; text survey confirms the bead-phase w was renamed tilde-w."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_the_two_splits.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "From the factorisation (r-r0)(r^2+r r0+r0^2-1), the designation and sign splits of the horizon roots agree iff |r0|>1; at Nariai the designated root merges with a pair member."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_the_weld_and_the_two_folds.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Marginally-bound radial geodesic r^(D-1)=2M alpha^2 sinh^2((D-1)tau/2alpha) solves (dr/dtau)^2=1-f at D=4..8; imaginary period gives deck Z_{D-1}; f's numerator has degree D-1."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_thirds_from_closure.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Counting graze-point crossings of equatorial routes, closure constraints force windings x=k/3, giving three triality classes (2/3,-1/3), (1/3,-2/3), (0,-1); T shifts totals by one lap."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_triple_angle_gnomonic.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "With r0=(2/sqrt3) sin w, 2M=r0-r0^3 becomes (2/(3sqrt3)) sin 3w, 2/sqrt3 being the unique scale killing the sin w harmonic; Nariai at w=pi/6."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_turnaround_temporal_threeness.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Bead law r^3=2M alpha^2 sinh^2(3tau/2alpha) is invariant under the imaginary period 2 pi i alpha/3 (Z_3 deck); the half period maps sinh^2 to -cosh^2 and is the turnaround; horizon f has no tau."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_wall_is_the_graze_point.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Azimuth bookkeeping: P14's walls (hinge+180) and the null-leg graze points (hinge+-60) are the same set 60/180/300; each hinge's legs cross the other two walls, never its own."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_widetilde_T_is_a_fourth_discrete_operation.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "2M depends on w alone while r^3 depends on w and tilde-w; sigma fixes 2M, T-tilde fixes r, R flips 2M; only T-tilde moves the bead phase and it commutes with sigma."
+ },
+ {
+  "path": "receipts/P03_SdS_slicing/P03_winding_and_closure.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Exact fractional/integer parts of quark charges; the mod-1 closure (triality) rule agrees with 11 of 11 hadron contents; 3 colours x 2 horns = 6 punctures tally."
+ },
+ {
+  "path": "receipts/P03_slicing_curve/AG1_the_two_discriminants_are_a_resultant_apart.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "For the horizon cubic factored as line x conic, disc(cubic)=disc(conic)*Res(line,conic)^2=(4-3r0^2)(3r0^2-1)^2; all four zeros are Nariai designations."
+ },
+ {
+  "path": "receipts/P03_slicing_curve/I10_I15_the_horizon_is_a_turning_point_and_a_fixed_point_and_Nariai_degenerates_both.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Slicing law is the zero-energy orbit of V=-|f|/2 with -dV/dr reproducing P03's formula; outgoing null flow dr/dv=f/2 has fixed points at horizons with eigenvalue kappa=f'/2; at Nariai kappa=0 and approach integral diverges."
+ },
+ {
+  "path": "receipts/P04_modern_parallax/I20_the_redshift_is_a_conformal_killing_charge_on_the_null_cone.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "On FLRW conformal metric, d/deta has L_xi g=2(a'/a)g (conformal Killing, not Killing); its charge a*omega is constant on null geodesics giving 1+z=a_obs/a_em, but not for massive carriers."
+ },
+ {
+  "path": "receipts/P05_groupoid/Q4_equianharmonic_vantages.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Cross-ratio of horizon roots with 0 varies with r0 (equals 1 at Nariai), but on the sky-angle circle the three 120-degree points with centre give the equianharmonic exp(i pi/3), orbit size 2."
+ },
+ {
+  "path": "receipts/P05_groupoid/T1_the_galois_inference_needs_irreducibility_and_it_holds.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "r^3-r+m has discriminant 4-27m^2, non-square, and is irreducible over C(m), so Gal=S_3; controls: reducible cubic with non-square disc has group of order 2, r^3-3r+1 has Z_3."
+ },
+ {
+  "path": "receipts/P05_groupoid/V5_homothety_charge.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "For a homothety L_xi g=2cg, d(xi.p)/dtau=c p.p, so the charge is conserved on null geodesics only (vanishes for p.p=0, -c m^2 for timelike)."
+ },
+ {
+  "path": "receipts/P06_shadow_of_existence/I21_least_arbitrariness_and_superintegrability_join_at_transitivity.py",
+  "bin": "A",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Dimension counts: unit tangent bundle dim 2D-1 equals the superintegrability bound; dS isometry group dim D(D+1)/2 clears it while SdS (dim 4) fails; integral deficit is not the modulus count."
+ },
+ {
+  "path": "receipts/P07_CR_framework/L8_the_pencil.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "-r alpha^2 (f_SdS - f) = r^3+(f-1)alpha^2 r+2M alpha^2 is a pencil whose f=0,1,2 members are seam, depressed turnaround and lift; discriminants show only f=0 can have three real roots, vanishing at Nariai."
+ },
+ {
+  "path": "receipts/P07_CR_framework/P07_cube_root_two_is_the_2M_over_M.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Turnaround radius (2M alpha^2)^(1/3) from 1-f=0 and static radius (M alpha^2)^(1/3) from f'=0 have exact ratio 2^(1/3); only at Nariai is the static radius a root of f."
+ },
+ {
+  "path": "receipts/P07_CR_framework/P07_eikonal_ratio_is_D_minus_three.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "For D-dimensional SdS, 2f-r^2 f''=2+2M(D-1)(D-4)r^-(D-3), and at the photon sphere the Lyapunov-to-orbital ratio lambda^2/Omega_c^2 equals D-3 exactly (D=4..9)."
+ },
+ {
+  "path": "receipts/P07_CR_framework/P07_lap_timeline.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Bead-lap landmark phases w_back=2w_front=arccosh 2, and intervals in Gyr at H0=73 with Nariai mass consistency and agreement with the flat-LCDM age formula (numerical)."
+ },
+ {
+  "path": "receipts/P07_CR_framework/P07_sds_kretschmann.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Kretschmann scalar of SdS computed from Christoffels/Riemann equals 48M^2/r^6+8Lambda^2/3; divergence at r=0 is the mass term alone; f splits even/odd under r->-r."
+ },
+ {
+  "path": "receipts/P07_CR_framework/P07_the_crossing_rides_the_characteristic_that_crosses_and_the_thermal_factor_rides_the_one_that_does_not_so_two_kappa_cannot_enter_and_the_only_k_it_could_have_carried_is_three_halves.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Scalar mode equation derived in the Painleve-Gullstrand chart; the back seam is a characteristic with speeds 2 and 0, indices 0 and -i omega/kappa, and the index-0 Frobenius branch's transfer across the seam tends to 1 (high-precision numerics)."
+ },
+ {
+  "path": "receipts/P07_CR_framework/P07_the_double_root_removes_the_first_law_and_the_area_mismatch_together_and_the_debt_is_at_the_horizon_that_carries.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "SdS photon sphere sits at r=3M (alpha-free), equal to r_h at Nariai so f, f' and the Lyapunov exponent vanish together; horizon areas/entropies of the two readings differ generically and merge at the seam."
+ },
+ {
+  "path": "receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Shear of the constant-r foliation (from extrinsic curvature) and photon-sphere stationarity are both rf'=2f on any static spherical metric; for SdS it is r=3M at every member; kappa and lambda merge at Nariai (numerical rates)."
+ },
+ {
+  "path": "receipts/P08_slicing_operator/I12_the_marginal_member_is_the_only_non_degenerate_one_that_integrates.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Radial geodesic quadrature in SdS is elementary only at E=1 (sinh^(2/3) solution) and at the degenerate corners Lambda=0 (cycloid) or M=0; k!=0 reduces to a sextic under the root."
+ },
+ {
+  "path": "receipts/P08_slicing_operator/P08_lapse_split.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Einstein tensor of -A dt^2+dr^2/f+r^2 dOmega^2: G^t_t=(rf'+f-1)/r^2 independent of A, and p_r+rho=(f/r)d/dr ln(A/f), vanishing under the lock A=f."
+ },
+ {
+  "path": "receipts/P08_slicing_operator/P08_matter_functional.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Einstein tensor of the construction gauge gives 8pi T^t_t=(rf'+f-1)/r^2+Lambda=8pi T^r_r; vacuum kernel ODE's general solution is SdS; with m(r), rho=m'/(4 pi r^2)."
+ },
+ {
+  "path": "receipts/P08_slicing_operator/P08_synchronous_horosphere.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Flat-slicing embedding lies on the dS hyperboloid with induced metric -dtau^2+e^(2tau/alpha)dx^2, between null directions A,B; eta(X,B)=(alpha^2/2)e^(tau/alpha) labels the slices."
+ },
+ {
+  "path": "receipts/P08_slicing_operator/P08_the_branch_point_monodromy_is_Z3.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "The bead's u^(2/3) factor gives a branch point with monodromy multiplier e^(4 pi i/3) of order 3 (Z_3), two of three sheets carry real r; R=-I is central in the Weyl S_3 so D_6=S_3 x Z_2 is direct."
+ },
+ {
+  "path": "receipts/P08_slicing_operator/P08_the_closure_is_the_constitutive_relation.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Einstein tensor of the two-function static metric gives rho=m'/(4 pi r^2) lapse-free, the contracted Bianchi identity vanishes identically, and with an EoS the system closes to the TOV equations (Schwarzschild limit)."
+ },
+ {
+  "path": "receipts/P08_slicing_operator/P08_the_one_distinguished_cut_carries_no_matter.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "The offset-mass cubic 2M=alpha(x-x^3) has a unique positive maximum at the Nariai member (equal to the horizon double-root condition), and every constant-offset member has rho=m'/(4 pi r^2)=0."
+ },
+ {
+  "path": "receipts/P08_slicing_operator/P08_trichotomy.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Closed and open de Sitter slicings derived as hyperboloid embeddings with induced metrics; unit S^3 and H^3 have Ricci scalar +6 and -6, so 3R=6k/a^2; radial geodesics give -k=E^2-1."
+ },
+ {
+  "path": "receipts/P08_slicing_operator/V34_orthogonal_and_no_cost.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Mostly prose; asserts H^2=coth^2(3tau/2)=1+csch^2 for a=sinh^(2/3), so rho a^3=3/(8pi) is constant dust, and the flat-slice structure function a^-2 is not constant."
+ },
+ {
+  "path": "receipts/P09_range_paper/K7_range_is_essential_image.py",
+  "bin": "A",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Counts vacuum-kernel parameters (1 for SdS, 4 for Type-D) and so(n) dimensions of cut isotropy groups; checks SdS ODE."
+ },
+ {
+  "path": "receipts/P09_range_paper/P09_ks_vacuum.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Kantowski-Sachs stress-energy vanishes identically on the SdS interior (X=sqrt(-f), Y=r)."
+ },
+ {
+  "path": "receipts/P09_range_paper/P09_ppwave_typeN.py",
+  "bin": "D",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "pp-wave Ricci, Riemann and Kretschmann computed from the metric: vacuum iff H harmonic, Weyl!=0, VSI => Petrov type N."
+ },
+ {
+  "path": "receipts/P09_range_paper/P09_the_wall_is_not_the_loss_of_symmetry.py",
+  "bin": "D",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Plane wave has a 5-dim Heisenberg Killing algebra with null orbits; so(5,1) null rotations abelian; Gowdy reflection iff polarized."
+ },
+ {
+  "path": "receipts/P10_canonical_time/I9_the_adiabatic_parameter_diverges_where_the_action_integral_converges.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Adiabaticity parameter ~ s^(-1/3) diverges at branch point while action integral of omega ~ s^(-2/3) converges (limits, integrals)."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_gamma_is_one_quarter_and_is_the_maximum.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Ordering family T_s reduces to d^2/dx^2 + Gamma(s)/x^2 with Gamma(s) a quadratic maximal at s=1, Gamma(1)=1/4."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_graviton_lift.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Legendre transform of tensor-harmonic action gives oscillator Hamiltonian; EL/Hamilton give phi''+3H phi'+mu^2/a^2 phi=0."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_homogeneity_and_schur_cut_the_seven_to_one_unknown_per_level_and_the_diagonal_cubic_was_never_the_level_object.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Invariant-tensor nullspaces/ranks: level-summed quartic contractions have rank 3 (2 after parity), one unknown per level; diagonal cubic basis-dependent."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_minisuperspace_friedmann.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Deparametrized minisuperspace Hamiltonian reproduces Friedmann eq (adot/a)^2=(8pi/3)E_d/a^3+Lambda/3."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_no_rescaling_discharges_the_log_and_the_one_mass_shift_that_does_is_the_curvature_offset.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Large-m series of d(m)mu(m): log coefficient 15/4, no rescaling discharges it, only offset d=1; mpmath partial-sum slopes confirm."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_second_order_is_an_order_the_construction_does_not_reach_and_the_one_new_direction_carries_no_new_convention.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Ranks of dimension-six curvature invariants on deformed background: rank 1 at first order, 2 at second; plus zeta-residue and numeric size checks."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_step_three_is_written_down_and_it_reverses_the_previous_revisions_own_conclusion_about_the_sign.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "ADM kinetic term of a^2 exp(eps H) has +1/4 tr(Hdot^2), so Legendre gives potential -R3; frequency mu^2/a^2 and positive c_4."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_algebraic_quartic_is_settled_by_the_frame_constant_level_at_every_level_and_the_remainder_is_the_derivative_sectors_eight.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Traceless-matrix invariant identity collapses algebraic quartic of curvature expansion to one coefficient; derivative sector rank 8 on TT jets."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_assembly_gives_both_level_sums_in_the_towers_own_variables_and_the_sign_needs_no_bitensor.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Coincidence-limit level sums of curvature expansion: second-order sum -(1/4)deg mu^2, fourth-order -(1/120)deg^2(5mu^2+4)."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_assembly_has_two_invariants_and_the_cubic_is_traceless_but_the_invariant_cannot_be_named_on_this_background.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Oscillator perturbation assembly dE=-(sigma^3/hbar omega)[2 sum T^2 + 9 sum t^2]; traceless cubic; rank degeneracy of dim-six scalars."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_chain_does_not_reach_the_planck_length_and_the_second_order_term_is_bounded_at_the_bounce.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Dimensional bookkeeping: hbar link adds no constraint; a=alpha cosh has single minimum so (l_P/a)^2 <= Lambda l_P^2/3 ~ 1e-122."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_clause_66_wrote_on_this_seats_offer_says_exactly_what_its_receipt_supports_and_no_more_so_the_loop_the_grade_class_opened_is_closed_on_itself.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Text checks on P10 clause plus Schwarzschild horizon induced metric in EF coordinates is degenerate of rank two."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_coefficient_is_zero_because_the_weights_parity_misses_every_pole_so_the_ledger_spends_nothing_at_dimension_six.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Zeta-continued residues via Pochhammer coefficients: parity of weight in mu misses every pole, so dimension-six coefficient is zero."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_construction_own_regulator_reaches_the_interacting_sum_and_spends_one_counterterm_more_than_the_free_case.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Spectral zeta regulator gives exact Z_int(0)=-4/3 for the interacting sum and one extra subtraction versus the free tower."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "eps^4 coefficient of R on S^3 frame jets: pointwise ranks 8/4/12, integrated dimension 7 with seven rational coefficients."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_cubic_normalisation_is_written_down_and_it_empties_the_residue_so_the_sign_is_positive_on_the_whole_tower.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Oscillator matrix elements/Wick and polarisation factors give the cubic normalisation; criterion G/target < 36 pi^2 holds at all odd levels."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_cubic_summand_is_odd_over_m_cubed_so_it_reaches_the_pole_and_the_ledger_pays_at_dimension_six.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Recoupling sums fit an even polynomial over m^3 (held-out tests), so the cubic summand is odd and its 1/m coefficient reaches the zeta pole."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_cubic_vertex_is_written_down_and_K_is_not_label_independent_so_the_algebraic_channel_is_five_powers_clear.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "9j/Clebsch recoupling of the cubic vertex: K_rec varies with level (126/125 at m=3, decreasing); algebraic channel ratio < 1."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_degeneracy_needs_r_constant_not_the_cosh_so_the_anomaly_is_what_makes_its_own_constant_observable.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Degeneracy I2*I0=I1^2 holds iff R constant (not specifically cosh); trace anomaly makes dR/da !=0; numeric rank checks."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_descent_is_free_at_the_order_the_section_works_at_and_the_kernel_rotates_rather_than_failing.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Closed-FRW curvature-scalar ranks: rank 1 at first order of anomaly deformation, 2 at second; convention kernel rotates."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_frequency_shift_is_the_curvature_term_at_every_level_so_the_log_coefficient_is_fifteen_quarters.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Curvature term R_ikjl h^kl=-K h_ij shifts TT frequency by +2K: mu^2=m^2-1 at every level, log coefficient 15/4."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_kinetic_cubic_vertex_is_a_split_artefact_and_the_domain_premise_fails_on_the_marginal_branch.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "On S^3 frame, cubic kinetic vertex vanishes in the volume-preserving split (trace of commutator); R[exp h]=6-2tr h^2-(10/3)tr h^3."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_level_cubic_vanishes_at_every_even_level_and_the_bound_needs_no_bitensor_because_completeness_gives_a_delta.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "SO(4) representation counting: singlet multiplicity of a level's triple product is zero at even levels, 2 or 8 at odd."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_lowest_tt_harmonics_are_frame_constant_so_the_overlap_is_a_determinant_times_the_volume.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Lowest TT harmonics on round S^3 are frame-constant, transverse, eigenvalue 6, so the cubic overlap equals 2 pi^2 det h."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_odd_residue_is_five_levels_and_the_sign_is_mixed_because_the_vertex_carries_covariant_not_frame_derivatives.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Exact recoupling sums with covariant derivatives: ratio crosses 1 between m=11 and 13, so five odd levels carry a negative sign."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_odd_residue_is_the_levels_below_a_crossing_linear_in_one_constant_and_a_count_bounds_terms_not_sizes.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Degree counting gives ratio ~ 1/m; crossing bound m_0 <= 96 sqrt(2) K is linear in one constant."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_one_number_was_never_free_the_curl_eigenvalue_closes_it_and_the_per_level_route_is_capped_at_two.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "TT harmonics are curl eigenstates with nu^2=lambda+3=m^2, fixing c_C; per-level route capped at two combinations."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_overlap_does_not_fall_off_at_all_so_the_sixth_power_is_exact_and_the_collapse_reaches_every_dimension.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Completeness relation makes the level overlap constant (exact sixth power); dim-eight curvature invariants have value-rank 1."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_parity_is_structural_in_shape_but_order_by_order_in_conclusion_and_the_cubic_half_of_second_order_is_unverified.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Power counting: perturbative parity depends on order alone and alternates with j/2; cubic half of second order unverified."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_parity_is_the_channel_lists_mirror_symmetry_so_it_is_proved_rather_than_fitted_but_the_closed_forms_are_not.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Label reflection m->-m swaps recoupling channels, proving the recoupling sum is odd in m without fitting."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_parity_odd_density_goes_with_the_relative_phase_of_the_two_channels.py",
+  "bin": "D",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Pontryagin density of an unpolarized Gowdy wave factorizes as psi' omega' times a signless weight; cycle average ~ cos(delta)."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_payoff_count_of_one_is_right_because_P1_reaches_the_existence_occurrence_distinction_from_general_relativity_alone_and_answers_the_extension_move_with_a_theorem.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Text checks on P1's argument plus Schwarzschild horizon: kappa=1/4M, degenerate induced metric, infall limit and e^{kappa t} blueshift."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_ratio_is_read_from_the_world_so_the_premise_is_supplied_and_both_framings_are_wrong.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Dimensional analysis: alpha/l_P shares no inputs, equals sqrt(S/pi) of de Sitter entropy, and is read from measured Lambda l_P^2."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_same_level_sum_is_orthogonality_rather_than_an_integral_and_the_completeness_bound_was_loose_by_one_power.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Same-level triple overlap is a product of two 3j symbols (group integrals); sum is d^3/V times cubic-invariant count; bound loose by one power."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_second_anchor_confirms_the_shift_at_a_level_with_gradients_and_the_criterion_needs_a_weyl_function.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Explicit n=4 TT harmonic on S^3: second-order curvature integral gives mu^2=24=22+2, confirming +2K shift."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_second_order_term_is_the_quartics_deviation_from_the_cubics_own_completion_and_the_counterterm_collapses_to_lambda_cubed.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Oscillator identity dE2=<H4-H4fake>; de Sitter is maximally symmetric so all dimension-six curvature scalars are rational multiples of Lambda^3."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_shear_breaks_conformal_flatness_but_not_the_gauss_bonnet_degeneracy_so_nothing_sees_the_coefficient.py",
+  "bin": "D",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "C^2 = E4 + 2(Ric^2-R^2/3) checked on FLRW, Schwarzschild, Einstein spaces and a sheared de Sitter metric; Gauss-Bonnet degeneracy survives."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_subtraction_is_at_operator_dimension_six_pinned_three_ways_and_it_is_not_degenerate_so_the_ledger_cost_is_real.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Power counting of scale factor places the subtraction at operator dimension six three ways and shows it is non-degenerate."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Spectral zeta of the TT tower: zeta(0)=10, log coefficient 15/4 via residue, series and numeric hard cutoff."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_two_anchors_are_already_one_convention_and_they_agree_but_the_candidate_prescription_does_not_close.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Field rescaling leaves ratio g^2/(2c_4 mu^2) invariant so anchors agree; quartic energy grows like m^4 so decay-based summation fails."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_ultraviolet_object_is_a_rank_sequence_and_the_ledger_is_at_stake_at_dimension_six_and_not_four.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Ranks of FRW curvature invariants: dim-4 rank 2 of 3 pointwise (Weyl=0), dim-6 rank 5 of 5, collapsing to 1 on a=alpha cosh."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_vertex_cost_is_the_splits_and_the_ledger_inference_is_a_non_sequitur_so_the_stake_moves.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Canonical point transformation generates spurious cubic/quartic vertices with unchanged spectrum; j=2k-4 gives dimension six."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_vertex_numbers_are_exact_at_the_level_this_row_owns_and_the_whole_scheme_is_one_series_pole_data.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Bianchi-IX three-curvature expansion -48, 160 Re(beta)^3, -336 (beta^2)^2 gives vertex numbers and the second-order vacuum shift."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_weighting_preserves_the_two_power_gap_and_the_chain_stops_at_a_sign_carrying_step_nobody_wrote_down.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Bounded weighted tower sums: leading terms M^4(-1/8) and M^6(-1/48), two-power gap survives; sign disagreement located."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_the_weyl_invariant_at_second_order_carries_two_more_derivatives.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Weyl^2 of a sheared FLRW metric matches closed form 2eps^2 sum(beta''+H beta')^2 only as numerical eps->0 limit."
+ },
+ {
+  "path": "receipts/P10_canonical_time/P10_two_of_the_three_conventions_reach_nothing_observable_and_the_third_is_the_constant_the_row_already_spends.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Regulated mode sum asymptotics: log coefficient L, three subtractions; two conventions are trace-invisible and the third is the cosmological constant."
+ },
+ {
+  "path": "receipts/P11_dynamics_paper/P11_deSitter_attractor.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Homogeneous Gowdy-dS: background gives constant H with 3H^2=Lambda; shear charge C0 conserved; 2R s_t=-C0."
+ },
+ {
+  "path": "receipts/P11_dynamics_paper/P11_gowdy_dS.py",
+  "bin": "D",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Einstein tensor of polarized Gowdy-dS metric equals the WAVE/AREA/ENERGY/MOMENTUM equations."
+ },
+ {
+  "path": "receipts/P11_dynamics_paper/P11_mukhanov.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Mukhanov variable on de Sitter: a''/a=2/eta^2 gives massless W''+(k^2-2/eta^2)W=0; naive mass gives +4/eta^2."
+ },
+ {
+  "path": "receipts/P11_dynamics_paper/P11_twoKV.py",
+  "bin": "D",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Covariant Killing equation: d_x, d_y Killing for Gowdy-dS, d_t, d_z not, g_xx!=g_yy; exactly two Killing vectors."
+ },
+ {
+  "path": "receipts/P11_dynamics_paper/P11_wall_ppwave.py",
+  "bin": "D",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Brinkmann wave has det g=-1 and is Ricci-flat for arbitrary h_+(u), h_x(u); trace part breaks vacuum."
+ },
+ {
+  "path": "receipts/P12_algebroid_paper/E1_static_gauge.py",
+  "bin": "D",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Static SdS-type slicing has K_ab=0 (Christoffels), leaf scalar curvature 6/alpha^2, and FLRW K=3H."
+ },
+ {
+  "path": "receipts/P12_algebroid_paper/I13_the_stratification_is_a_ledger_of_first_integrals.py",
+  "bin": "A",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Counts Killing-vector first integrals per stratum (dS5 15, SdS 4, Kerr-dS 3, wall 1) against Liouville/superintegrability bounds"
+ },
+ {
+  "path": "receipts/P12_algebroid_paper/P12_bracket_closure.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Explicit 6x6 so(5,1) matrix brackets satisfy symmetric-space grading [h,h]<h,[h,m]<m,[m,m]<h with [M05,M15]=-M01"
+ },
+ {
+  "path": "receipts/P12_algebroid_paper/P12_coset_metric.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Killing form of so(5,1) restricted to coset m is diag(8,-8,-8,-8,-8) = -8 eta, Lorentzian (1,4) coset metric"
+ },
+ {
+  "path": "receipts/P12_algebroid_paper/P12_the_separator_must_carry_the_mass.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "From SdS metric: Ricci = Lambda g so R_abR^ab=36/alpha^4 is M-independent; Kretschmann 48M^2/r^6+24/alpha^4 carries M"
+ },
+ {
+  "path": "receipts/P13_boundary/L212_the_generation_index_fixes_the_mass.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Deck shift tau->tau+2pi i a/3 leaves r^3 = 2M a^2 sinh^2 invariant, fixing 2M; 2M(r0) neither invariant nor equivariant under r0->w r0"
+ },
+ {
+  "path": "receipts/P13_boundary_paper/P13_the_compact_face_is_odd_dimensional.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Round S^5/S^4 Dirac lowest eigenvalue saturates Friedrich bound; no zero modes on S^5; Lichnerowicz threshold R/4=5/a^2; dim 5 odd"
+ },
+ {
+  "path": "receipts/P13_boundary_paper/P13_the_last_evasion_inside_the_premise_is_the_squash_and_it_is_excluded_twice.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Squashed S^5 scalar curvature R_t=24-4t^2 vanishes at t=sqrt6 and is negative beyond; squash costs a free dimensionless t"
+ },
+ {
+  "path": "receipts/P13_boundary_paper/P13_the_one_scale_forbids_the_isometry_route.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Round S^5 of radius sqrt(3/Lambda): R=20Lambda/3, Dirac gap 5/(2alpha) nonzero; numerically the face's mass scale is ~1e-33 eV"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/HYPERCHARGE_from_anomalies.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Linear anomaly + Yukawa conditions uniquely fix hypercharges up to q; cubic anomaly then vanishes identically; q=1/6 gives SM values"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/I19_the_superpotential_is_not_shape_invariant.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Superpotential W=lambda sqrt(f)/r partner potentials admit no nondegenerate constant shape-invariance shift; Poschl-Teller control is shape invariant"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_B3_spinor_vielbein.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "SdS leaf tetrad reproduces the metric exactly; spin-connection coefficient sqrt(f)/r gives W=lambda sqrt(f)/r, zero at horizons, sign flip through r=0"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_R_fixes_the_photon_congruence.py",
+  "bin": "A",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Transposition R on congruences (A,B,P) fixing the photon congruence has eigenvalues +1,+1,-1: a 2+1 split"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_charge_or_colour.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Winding splits into integer lap count plus Z_3 fractional part; one crossing gives omega, lap gives omega^3=1; admitted hadrons have integer totals"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_colour_is_vector_like_on_singlets.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Horn swap T (X0->-X0) and offset parity R (r0->-r0) commute as substitutions on a generic function"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_is_there_a_singlet_for_the_axis_pair.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Height rule X0=sqrt(|X|^2-alpha^2) has one branch only at the throat pow=0; hinge and axis loci are two-branched"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_lambda_spectrum.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Angular Dirac spectrum lambda=+-n with multiplicity 2n; normalizability needs lambda<3/4; graded tally never gives 15 at any cutoff"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_leg_count_equals_arc_count.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Leg joining two hinges grazes the third hinge's wall; 12=3x4 legs; product of three wall monodromies is central omega^-lambda I"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_mode_monodromy_at_the_wall.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Near the wall f->-2M/r gives r^3=(9/2)M l^2 (limit, integral) and series r^3=(9/2)M tau^2; W dl=lambda dr/r so psi=r^-lambda, triality -lambda mod 3"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_no_choice_of_group_works.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Three configuration groups (orders 81, 27, 9) via character averages: none gives both baryon (epsilon-invariant) and meson counts correct"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_odd_D_contains_its_own_image.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Horizon polynomial r^(D-1)-r^(D-3)+r0^(D-3)-r0^(D-1) is divisible by (r-r0) and has -r0 as root exactly at odd D, complementing 2M parity"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_odd_D_is_pair_symmetric.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Horizon polynomial is even in r exactly at odd D; centraliser of (01)(23) in S_4 has order 8 so monodromy cannot be S_4 at D=5"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_quantisation_not_strength.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Admissible windings are thirds with constant gap 1/3; charge decomposes into three parts with geometry supplying only quantisation"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_quark_lepton_frontier.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Triality -lambda mod 3 with omega order 3 sorts partial waves 2:1 coloured:colourless periodically; weighted tally 76:36 is not 2:1"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_route_or_point.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Two equatorial routes transport psi by omega^-lambda and omega^-2lambda; ratio trivial iff lambda=0 mod 3 (route-labelled iff coloured)"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_scale_and_ratio.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Anomaly conditions at general N_c have unique solution, cubic vanishes identically, and all conditions are homogeneous under rescaling; q=1/6 reproduces SM"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_statistics_not_gauge.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "With fermionic exterior powers, only the unimodular group (order 27) gives baryon 1, diquark 0, meson 1 invariant counts"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_axis_vantage_is_a_pair.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Axis vantage pow=-alpha^2 gives X0^2=-alpha^2 with exactly two purely imaginary conjugate roots: a pair, not a triple"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_axis_vantage_is_imaginary_not_absent.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Power-of-a-point height: hinge lands on substrate (-(sqrt3 a)^2+(2a)^2=a^2) and the axis gets imaginary height X0=i alpha"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_between_horizon_leaf_converges_at_nariai.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Between-horizon SdS leaf length (mpmath quadrature) rises monotonically to finite pi alpha/sqrt3 as M->Nariai; double root has f''=-6/alpha^2"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_bundle_is_the_branching.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Real elements of su(3) form so(3); sheet 3-cycle P has P^3=I, det 1, eigenvalues equal triality; <P,Q> has scalar commutant and no invariant symmetric form"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_centre_is_the_weight_origin.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Three vantage radii are linear forms whose normals sum to zero with mutual cosine -1/2 (A_2 fundamental weights); deck-trivial D_6 characters total dimension 4"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_coincidence_is_forced_by_the_dimension.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "A hinge's antipode coincides with a midpoint between hinges iff hinge count is odd, so the welding holds at D=4 and breaks at D=3,5"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Pontryagin density from metric vanishes identically on general static spherical/Weyl metrics, is odd in Kerr spin and Gowdy twist; anomaly coefficient 3"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_core_family_carries_no_first_cohomology_and_the_cover_is_a_sphere.py",
+  "bin": "A",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Riemann-Hurwitz gives genus 0 for the horizon cubic's 3-sheeted cover; compact Euclidean sections S^4, S^2xS^2 have b_1=0"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_count_specified.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "SM generation counts 12 coloured + 3 colourless; 12 null legs factor 3x2x2 and match u_L,d_L,u_R,d_R state by state; colourless triple is 2+1 chiral"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_d5_world.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Mass function 2M=r0^(D-3)-r0^(D-1) under r0=c sin w: zero DC term at D=4, nonzero at D=5; odd in r0 exactly at even D"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_family_symmetry_is_cyclic.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Deck D and horn swap T on sheet indices satisfy TDT^-1=D^-1 and generate S_3 of order 6; T acts as an inversion, not a translation"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_fixed_axis_is_not_in_the_substrate.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Substrate hyperboloid -X0^2+X1^2+X2^2=alpha^2 has no real point on the axis X1=X2=0"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_frame_exchange_has_the_wrong_order_on_the_modes.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Frame exchange squares to diag(1,1,-1) not a scalar, so has order 4 and is not even projectively the involution R; sigma,R generate D_6"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_gap_is_antisymmetry.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Holonomy groups of orders 81 and 27: meson channel has one invariant, baryon channel 1 (not epsilon) or 3 (epsilon plus spurious)"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_isospin_exchange.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Unique involution exchanging windings u=2/3,d=-1/3 is w->1/3-w (=Q->Y-Q); baryon charge integral only at N=1,3; T o C is translation by 1/3"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_lap_orientation_is_derived.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Pullback deck matrix M=P^-1 has eigenvalue omega^-lambda on psi~r^-lambda for every lambda; clock/shift pair irreducible with no invariant form"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_lift_triple_is_colourless_by_indexing.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "sigma (w->pi/3-w) leaves 2M invariant and the lift sector period 2pi alpha/3 is independent of M and w, so lift modes are colour-trivial"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_lifts_own_measure_returns_the_same_three_quarters_so_the_removed_derivation_was_not_the_only_one.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Lift measure regular at hinges, |r|~theta^(2/3) from series/limit; integral of theta^(-4lambda/3) converges iff lambda<3/4; spinor lambda>=1"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_named_reopening_is_walked_and_closes.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "sigma and R generate D_6 and do not commute; so(n) dimensions give {6,7,10} with 7 unrealised; four distinct seat-failure modes"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_reassignment_three.py",
+  "bin": "A",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "R swapping ruling congruences A,B and fixing photon congruence P has eigenvalue split 2+1"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_reassignment_three_at_the_hinge.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Tabulates hinge/ruling/wall incidence and the colourless-vs-fermion-content trade-off at a hinge (row-structure assertions only)"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_shared_four_sphere_carries_chirality_and_su2_and_cannot_carry_colour.py",
+  "bin": "A",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "dS_5 and S^5 share the S^4 at X0=0; slice dimension even, faces odd; so(5) contains su(2)+su(2) but not su(3)"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_shared_four_sphere_twists_itself_and_its_zero_mode_is_a_singlet.py",
+  "bin": "A",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Round S^4 chiral spin connections are unit (anti)instantons (curvature + integral); index 1 by Atiyah-Singer and Betti; zero mode is su(2) singlet"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_species_bit_is_not_chiral.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Matrices commuting with sigma_y are span{1,sigma_y}; four (T,R) characters make T's action non-chiral, unlike SM's doublet/singlet occupation"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_two_plus_one_is_on_the_wrong_three.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Inversion k->-k on Z_3 as a permutation matrix has eigenvalues +1,+1,-1: a 2+1 split"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_the_wall_is_a_wall_of_a_hinge.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Three vantage wall monodromies: lap product central, ratios with hinge 3-cycle irreducible with no invariant form; areal radius r_j vanishes only at own wall"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_tower_is_not_kaluza_klein.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Dimension count: section 2 + transverse S^2 2 exhaust the 4-cut and the normal bundle rank 3 = 2+1, so the lambda tower is not Kaluza-Klein"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_turnaround_carries_D6.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "tau->-tau leaves the bead law invariant and conjugates deck to its inverse; Z_6/D_6 character counts give colourless total 4 = 2x2 grading"
+ },
+ {
+  "path": "receipts/P14_matter_sector_paper/P14_two_rank_threes.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Pushforward lines sort modes by lambda mod 3 while vantage lines index copies of one mode; all three colours of a mode share one triality"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Friction 4a'/a is 4/eta for radiation and 8/eta for matter; checks P15 text for two-leg background and consistency rule"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/C19_the_branch_point_join.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Super-horizon R/Phi=(5+3w)/(3+3w) gives 3/2 and 5/3 so the branch-point join Phi_exp/Phi_coll=9/10 exactly; checks P15 text"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/C1_closure_of_the_driving.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Radiation-era potential ODE solved (dsolve); (sin x - x cos x)/x^3 verified as solution, regular limit Psi_i, even in x"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/C20_the_caveat_named_an_empty_set.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Comoving horizon function (rH)^2 diverges as r->0+ (limits), so every mode is super-horizon at the branch point"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/C21_the_superhorizon_transfer_closes.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Phi -> Phi_i as x->0 (limit) with series 1 - x^2/10 + ...; join ratio 9/10 is k-independent"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Bardeen potential equation loses all k-dependence at w=0 (symbolic substitution), plus corpus text checks"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/I11_I1_one_condition_two_jobs_and_the_two_routes_are_independent.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "sinh^(2/3) satisfies the k=0 radial geodesic first integral identically, fails at k!=0; V_eff=1 root; separability vs Type-D routes"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_expansion_law.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "sinh^(2/3) scale factor solves the E=1 radial geodesic; Friedmann coth^2 and csch^2 forms parsed from paper; wrong-exponent control"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_hbar_survives_in_As_and_cancels_in_ns.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "hbar survives in A_s and cancels in the log-derivative tilt of P=hbar A0 k^(ns-1)"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_horn_ones_carrier_is_already_the_papers_own_wavenumber_free_potential_amplitude_while_on_the_segments_own_branch_a_sound_speed_costs_a_tilt_equal_to_its_whole_exponent.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "w=0 potential equation k-free; segment conformal/proper lengths by mpmath quadrature vs Beta closed forms; sub-horizon shares and sound-speed tilt"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_no_paper_fixes_the_primordial_normalisation_because_three_sentences_inherit_it_and_the_L_to_ell_map_is_a_projection_whose_width_passes_the_mode_spacing.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Corpus counts of A_s plus spherical-Bessel weights (mpmath) showing the L->ell map is a projection whose width passes mode spacing"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_order_one_answered_negative_the_crossing_cannot_share_a_measure_with_the_layers_parity_because_its_kernel_is_a_function_of_the_degree_and_the_parity_is_a_condition_on_the_charge.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "S^3 eigenvalue L(L+2) with multiplicity (L+1)^2 is constant over the charge ladder; neutral charge exists iff L even; kernel limits"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_po75_the_supplier_is_already_in_print_and_the_floor_is_two_derivations_not_one_so_the_odd_ladder_is_the_test_that_separates_them.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Charge-ladder counting over integers: neutral slice exists only at even degree, so the two L=2 floors disagree at odd degrees"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_po84_the_charge_is_carried_and_the_corpus_already_named_where_because_the_eigenvalue_divergence_is_the_traded_momentums_blueshift.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Squashing vanishes linearly at the double root; charge term equals proper momentum squared with k=2mr/alpha (rational identity, limits)"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_angular_momentum_sector_is_not_a_propagating_mode.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "dS2 mass parameter nu^2=1/4-l(l+1) negative for l>=1; angular momentum (l=1 axial) is not a propagating sector"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_bead_routes_damping_survives_on_the_squashed_layer_because_the_berger_harmonics_carry_no_squashing_and_the_spectrum_is_bounded_below_uniformly.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Berger-sphere Laplacian: same harmonics at every squashing, spectrum L(L+2)+4(eps^-2-1)m^2, bounded below by 2L"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_bridge_is_exact_on_the_spectrum_and_the_transport_is_not_shared_because_the_four_route_carries_a_weyl_coupling_the_layer_has_no_counterpart_for.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "SdS Kretschmann from Christoffels/Riemann = 48M^2/r^6 + 24/alpha^4; Weyl/Lambda ratio 2alpha^6/27r^6 = 1/2 at turnaround"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_conjecture_reduces_to_umbilicity_because_a_conformal_carrying_preserves_the_invariants_modulus_across_the_lift_and_the_foliation_is_umbilic_only_at_the_seam.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Conformal carrying preserves invariant modulus; constant-r foliation of SdS is umbilic only where rf'=2f, i.e. r=3M = r_N at Nariai"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_corpus_tensor_assignment_and_the_segments_unit_speed_support_are_two_objects_because_on_one_chart_the_two_equations_differ_by_exactly_the_radiation_constant.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Tensor equations on leaf and segment charts differ exactly by A_r(r phi''+2phi')/r, k-independent"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_dipole_parenthesis_is_right_on_its_own_tower_and_does_not_reach_the_other_one_because_the_scalar_floor_is_a_vanishing_traceless_hessian_and_the_tensor_floor_is_an_empty_degree.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "S^3 Ricci=2g; scalar Laplacian L(L+2), TT eigenvalues L(L+2)-2 via exact nullspace/eigen computation; two L=2 floors are distinct towers"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_enumeration_derived_from_the_construction_has_two_members_and_the_rows_own_identity_is_one_of_them_with_the_other_held_constant.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Log-derivative of a three-factor product gives exactly two tilt channels (symbolic derivatives)"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_evenness_is_the_time_symmetry.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Series parity of (sinh u/u)^(2/3) and cosh^(2/3): no odd coefficients, so r(-tau)=r(tau)"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "SdS four-metric: angular block round S^2, three rotational Killing vectors via Lie derivative, separated wave operator radial equation"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_history_is_spherically_symmetric_throughout_so_the_chern_simons_number_never_moves.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Pontryagin density of Nariai, rotating Nariai and Gowdy metrics computed symbolically; zero on the spherically symmetric history"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_kernel_carries_no_sound_speed_so_the_fork_had_no_subject_and_r7108s_equation_is_the_c_s_equals_one_member_which_is_exactly_the_tensor_equation.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "h=u/a substitution turns tensor equation into u''+(k^2-a''/a)u=0 identically; fluid equation differs by k^2(cs^2-1)u"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_laps_own_closure_is_a_translation_by_sqrt3_alpha_so_the_reflection_that_the_absolute_radius_implements_is_not_the_substrate_identification_and_the_two_agree_at_one_point_only.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Chart arithmetic: lap closure is translation r->r+sqrt3 alpha mapping back seam to front seam; reflection maps neither"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Induced metric on reassigned slice has Ricci eigenvalues (0,1/r^2,1/r^2): R x S^2, not S^3; Kretschmann comparisons"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_leg_contributes_no_tilt_because_a_fixed_phase_handover_is_scale_free_and_a_fixed_time_one_is_a_running.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Handover at fixed phase is scale-free; tilt series -x tan x and nsolve for required x show the leg yields a running, not a tilt"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_lifts_exact_envelope_on_the_carried_layer_is_a_one_parameter_deformation_indexed_by_the_hopf_charge_and_the_uniform_bound_is_not_attained.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "mpmath quadrature of lift's conformal length vs Gamma closed form; squashing exceeds round value; exponent ratio depends on sigma alone"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_one_ground_admits_exactly_one_independent_second_support_and_it_is_disqualified_because_the_rays_that_carry_the_flat_length_carry_a_blueshift.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Einstein condition, Killing field d/dchi, null congruences and vanishing optical tidal matrix of proper-frame metric; rays carry blueshift"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_route_from_the_handover_amplitude_to_the_spectral_parameters_is_already_in_print_as_the_hbar_sentence_so_the_tilt_passes_exactly_and_horn_two_cannot_carry_it_at_all.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Tilt of P is ns-1 independent of handover factor (log-derivative); w=0 equation k-free; numeric 0.4835 ratios"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_runtime_tail_in_r7170_is_not_localised_to_a_call_so_the_free_reduction_lands_and_the_pre_registered_fix_does_not_and_the_margin_to_the_cap_is_the_gates_to_set.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Runtime tail analysis of a receipt; re-derives SdS separated wave operator radial equation symbolically as control"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_seam_flux_is_not_computable_here_because_the_closure_makes_one_locus_carry_two_surface_gravities_and_the_euclidean_section_closes_in_a_clock_whose_conversion_vanishes_at_both_seams.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "At Nariai mass -f factorises with double root (kappa=0) and simple root (kappa=3sqrt3/4alpha); lap closure maps one to the other"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_seam_limit_of_the_carried_layer_with_its_chi_block_is_prop_throats_ds2_times_s2_obtained_with_both_radii_read_off_the_flow.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Proper-frame metric is exactly a warped product; near double root it tends to dS2 x S2 with R=4Lambda, Einstein, Kretschmann 8Lambda^2"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Collapse-leg r(s) derivatives: |dr/ds|=1 at every seam, 0 at turnaround; envelope's seam is the front chart value"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Bardeen coefficients on radiation leaf; series/integral of conformal time near branch; Beta-function closed forms of segment lengths (mpmath)"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_sheared_layers_invariant_is_obtained_in_closed_form_and_the_squashing_runs_to_zero_approaching_the_seam_so_the_shape_is_not_carried.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Extrinsic curvature shear of constant-r foliation is Berger-type; dln eps/dr = dln(sqrt f/r)/dr; Berger invariant has no linear term"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_term_the_leaf_adds_dominates_the_matter_term_everywhere_inside_the_lap_with_equality_forced_onto_the_back_chart_value_so_the_vacuum_reading_commits_to_its_strong_form.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Radiation/matter term ratio in (rH)^2 is 2r_N/r exactly, equal to 1 only at the back chart value"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_third_possibility_cannot_be_because_C21s_limit_is_taken_on_exactly_the_segment_the_lift_occupies_so_the_two_transfers_overlap_rather_than_compose.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Overlap of leaf collapse leg and lift measured by mpmath quadrature (23.25%); A/r_N = 2^(1/3); small-u scale factor powers"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_tower_is_robust_to_the_throat_being_squashed.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Throat mode nu^2=1/4-lambda l(l+1) thresholds under squashing: l=1 threshold 1/8, higher multipoles safer"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_the_two_exact_twos_are_the_same_pair_of_stretches_read_on_two_clocks_and_the_cosmic_one_is_the_ratio_of_the_two_seams_own_leg_parameters.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "High-precision quadratures of leg conformal lengths and seam parameters: arccosh2 = 2 arcsinh(1/sqrt2), ratios 2 and 2.3042"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_two_ranges_ratio.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Gaussian curvature of slicing surface vanishes at r*=(M alpha^2)^(1/3); amplitude A / r* = 2^(1/3); rho_m/rho_L = csch^2"
+ },
+ {
+  "path": "receipts/P15_CR_cosmology/P15_verify_geometry.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Riemann of const-tau 3-metric vanishes; Nariai degenerate root and dS2 x S2 radii; SdS Kretschmann; tortoise integrals"
+ },
+ {
+  "path": "receipts/P16_cosmogenesis/I14_the_interior_is_a_driven_oscillator_and_the_parity_split_is_forced_by_linearity.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Closed dust+radiation solution verified against its ODE (dsolve); even part is dust, odd part radiation; nonlinear control breaks split"
+ },
+ {
+  "path": "receipts/P16_cosmogenesis_paper/P16_nariai_welds.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "At Nariai f(rho)=f'(rho)=0 at rho=alpha/sqrt3, so the acceleration turnover coincides with the seam radius"
+ },
+ {
+  "path": "receipts/P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "TT rough Laplacian on S^3 via exact su(2) matrices has spectrum L(L+2)-2, multiplicity 2(L+3)(L-1), lowest L=2"
+ },
+ {
+  "path": "receipts/P16_cosmogenesis_paper/P16_radiation_is_the_odd_part.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Closed FRW a(eta) satisfies its Friedmann equation; dust even, radiation odd; series shows radiation leads at branch point"
+ },
+ {
+  "path": "receipts/P16_cosmogenesis_paper/P16_two_mass_blindnesses.py",
+  "bin": "C",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "Perspectival Kretschmann limit at fixed proper interval is M-independent, unlike at fixed r; infall energy per nucleon similarly"
+ },
+ {
+  "path": "receipts/P17_geometric_core_paper/P17_no_second_scale_on_either_face.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Wick rotation maps dS5 quadric to S^5 of same radius; every curvature invariant is a pure power of 1/alpha^2"
+ },
+ {
+  "path": "receipts/P17_geometric_core_paper/P17_the_alpha_family_is_a_foliation.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Equilateral confocal quadric family is linear in parameter (degree count), so it is a foliation with the light cone singular"
+ },
+ {
+  "path": "receipts/P17_geometric_core_paper/P17_the_cut_is_planar_only_at_M_zero.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "Embedding SdS as a cut of dS5: compatibility residual polynomial vanishes only at M=0; hyperplane sections have constant curvature"
+ },
+ {
+  "path": "receipts/P17_geometric_core_paper/P17_the_ds_entropy_is_the_gauge_count_squared_and_is_the_cc_number.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "dS horizon entropy pi(alpha/l_P)^2 = 3pi/(Lambda l_P^2) and its ratio to the CC factor is exactly 3/8"
+ },
+ {
+  "path": "receipts/P17_geometric_core_paper/P17_the_ledgers_entropy_is_the_de_sitter_readings_and_the_other_reading_has_a_number_but_not_an_entropy.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "dS surface gravity 1/alpha and entropy; Weyl^2 vanishes on the family and is quadratic in shear; only one licensed entropy"
+ },
+ {
+  "path": "receipts/RM_C_complex_analysis/C1_the_two_covers_branch_where_the_corpus_pries.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Horizon cubic's root cover (S_3 monodromy, branch at |r|=alpha/sqrt3) vs Z_3 turnaround deck (branch at r=0) branch at different points"
+ },
+ {
+  "path": "receipts/RM_C_complex_analysis/C4_the_reality_grid_and_the_pencil.py",
+  "bin": "C",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Im sin and Im sinh zero sets: sin gives a grid, sinh only horizontal lines; sinh^2 reality set and turnaround location"
+ },
+ {
+  "path": "receipts/RP_34_gr/G3_the_axis_names_two_orderings.py",
+  "bin": "B",
+  "geometric_subject": true,
+  "core_coordinate_identity": true,
+  "claim": "SdS Petrov invariant I^3-27J^2 vanishes identically; horizon discriminant -4(27M^2-1); plus text checks on axis wording"
+ },
+ {
+  "path": "receipts/p0_geometric_core/I17_the_substrate_is_maximally_superintegrable.py",
+  "bin": "A",
+  "geometric_subject": true,
+  "core_coordinate_identity": false,
+  "claim": "so(D,1) generators counted from the embedding and shown independent: 15 for dS5, so maximally superintegrable"
+ },
+ {
+  "path": "receipts/p0_geometric_core/N1_the_entropy_and_the_fine_tuning_factor_are_one_number.py",
+  "bin": "B",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Bekenstein-Hawking entropy S=3pi/(Lambda l_P^2) and CC factor 8pi/(Lambda l_P^2) differ by exactly 3/8"
+ },
+ {
+  "path": "receipts/p0_geometric_core/T50_the_imaginary_route_to_the_horizon_radii_is_forced_and_two_members_escape_it.py",
+  "bin": "A",
+  "geometric_subject": false,
+  "core_coordinate_identity": null,
+  "claim": "Horizon cubic in casus irreducibilis: three real roots not expressible in real radicals; discriminant and factor checks"
+ }
+]

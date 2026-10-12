@@ -363,7 +363,7 @@ wait:
 explainer and the corpus you have read. No manufactured
 frontier, no vision-statement to fill the step. **Name what you are ready to take**: if a next step is ready and
 you could start on a word, say so in one line as an option, then wait. *Withholding it is not restraint — it
-hides a move he can only choose if he knows it exists.*
+hides a move they can only choose if they know it exists.*
 
 **And if you noticed things on the read, give them as a list, at their weight** — not as a narrative with one
 item in it and the rest scrubbed for tidiness.
@@ -387,6 +387,9 @@ last step of catching up is `git log`, read as prose. **A changelog *file* that 
 stops**: the standing documents are updated when their content changes, which is not every revision, and a node
 that dates the programme by a file's last touch will report the work as halted when it has not been. *If your
 readout is about to say the record ends somewhere, read the log first and check whether it is the record that
-ended or your search.* **This file is a stable spin-up, and a node does not edit it — not
-its framing, not its order, not the documents it names — without asking.** A guard you think it needs is a
-guard for the changelog or the plan; write it there.
+ended or your search.* **This file is a stable spin-up, held to one rule: it is timeless** —
+nothing dated, no revision stamps, no state of the work, because its only job is to carry enough to be coherent
+and then send a seat into the read. **A problem found in it is fixed by the seat that finds it, within that
+rule, and is not referred upward** — the same rule as every other warranted edit. *The reading order is designed,
+so a change to it carries its reason in the commit.* A guard that would have to carry state is not a guard for
+this file; it goes to the changelog or the plan.
