@@ -136,167 +136,6 @@ reading of `L-269`–`L-273`; no open problem opened or closed, which is itself 
 > ⌗ *The body's picture of the **physics** fronts is not superseded by any of the above; what is superseded is its
 > picture of the **instruments, the register's shape, and how work moves**.*
 
-> **⌗⌗ THE FAMILIES AGAINST THE REGISTER.** *The table is a view of the register, and the register is the single
-> source of truth. **Three families are live**: family 3, the inherited datum, at `PO-31`; family 8, the interacting
-> quantum tower, at `PO-23` (`PO-51` struck); and family 5's live remainder, the acoustic contrast, at `PO-56`, the family itself
-> having reached its verdict (`PO-47` struck). **Families 1,
-> 2, 4, 6, 9, 10, 11 and 12 are closed**, family 4 with its last remainder, the charged interior's third regime
-> (`PO-49`), struck as the boundary of admissible data; family 6 by the matter sector's account of the propagating fermion and gauge
-> content. **Family 7 is not a work item** and says so itself.*
->
-> ⌗ *Struck in place, not deleted — nothing in this corpus is erased. And recorded honestly: no
-> argument anywhere in the corpus reasons FROM a clue-map, which is the other half of why retiring
-> them costs nothing.*
->
-> **⇒ WHAT REPLACES THEM: each family's status line below, stated against the register.** *The
-> register is the single source of truth; this ledger keeps what only it has — the families' worked
-> content, the LAW, the kill list and the cash-in sites.*
->
-> | family | what it is, in plain words | status |
-> |---|---|---|
-> | 1 | the detailed dynamics of matter crossing the branch point | **closed c54.113** — there is no worldline crossing to compute |
-> | 2 | which sheet goes with which ruling | **killed r1280** — they are the two faces of one object |
-> | 3 | derive the inherited datum rather than measuring it | **LIVE** — register `PO-31`, the progenitor spectrum |
-> | 4 | the irreducible interior reassignments (Kerr-inner, RN) | **closed** — the owning rows struck; its charged remainder is live at `PO-49` |
-> | 5 | the scalar perturbation sector, to a verdict | **verdict reached** — the arm's spectrum is rejected on shape; its residual is live at `PO-47`, what displaces the fourth acoustic peak |
-> | 6 | the propagating fermion and gauge sector | **closed** — the sector propagates and its gauge content is accounted for; `PO-45` and `PO-30` struck |
-> | 7 | the world-correspondence and empirical grounding | **not a work item** — the family says so itself: *"NOT a corpus gap — the empirical question."* |
-> | 8 | the interacting quantum tower as a defined theory | **LIVE** — register `PO-23` (`PO-51` struck) |
-> | 9 | the structure of the lap and the physics of the lift | **resolved r2154–r2159** |
-> | 10 | the quantum content of the lift | **closed r2239** |
-> | 11 | what crosses: inheritance vs the computed filter | **reclassified r2245** — not a hole but a strengthening. ⛔ *`L-168` was opened here at c54.119 on this family's **r2244 framing** and **struck at c54.121: the framing is the one r2245 itself withdrew.** The tilt IS inherited — frozen modes cross, oscillating ones do not. **Read this family's r2245 verdict, not its r2244 opening.*** |
-> | 12 | the unused three-fold (why three colours) | **resolved c54.61** from the other side |
-Format — **OWED** (established | open) · **HOME** · **WHY GENUINELY OPEN** · **CLUE-MAP** (mention clusters).
-
-**1. Matter branch-point crossing worldline-and-field dynamics.**
-
-**[r2376+c54.113 — THE WORLDLINE HALF, AND THE FAMILY CLOSES.]** ⇒⇒ ***There is no worldline crossing to compute.*** *A comoving worldline reaches the branch point at finite proper time with divergent curvature and divergent tidal stretch and **terminates** in the real section; what continues is the **analytic continuation**.* ⚠⚠ **And this family's own 'finite-curvature branch point $r=0$' is wrong as written — P2 classifies $r=0$ as the INFINITE-curvature species at which worldlines terminate.** ✔ *What it was protecting survives on better ground: at fixed $r$ the divergence carries $M$, but along the bead in the faller's own proper time it does not — $K=12[2+\sinh^{-4}(3\tau/2\alpha)]/\alpha^4\to(64/27)\tau^{-4}$, $M$-free, the same history for every progenitor. **The universality is of the APPROACH.*** ⌗ *And the two halves resolve on two clocks: zero cosmic duration, finite conformal length $3.32\alpha$ — the field half has something to act on, the worldline half nothing to transport.* **Landed in P2; receipt `P02_the_approach_is_mass_free`.**
-
-
-
-**[r2376+c54.112 — THE FIELD HALF IS DELIVERED, AND THE SELECTION RULE HAS TWO FACTORS.]** *The damping $e^{-kc_s|\Delta\eta|}$ is read at r2209 by varying $k$ at fixed $c_s$ — a **scale** criterion.* ⇒⇒ ***Vary $c_s$ at fixed $k$ and it is a **species** criterion, and a pressureless component has $c_s=0$ identically: its exponent vanishes at every wavenumber.*** **So the matter sector's inheritance is EXACT rather than adiabatic** — at $c_s=0$ the segment's equation is $\psi''=0$ and the constant solution is untouched with no approximation, where the frozen-mode argument rests on horizon exit and degrades at small scales. *Computed on the corpus's own segment: $|\Delta\eta|=3.3197$; the transfer matrix reproduces $-kc_s|\Delta\eta|$ to the digit; $\ln T=0$ exactly at $c_s=0$ across five decades in $k$.* ⇒ ***And it constrains the handover: at the first peak the exponent runs $\sim1.6\times10^2 c_s/c$, so the crossing can inherit perturbations from a COLD species and from no other.*** **Landed in P15 `sec:what-crosses`; receipt `P15_the_filter_is_a_sound_speed_filter`.** ⚠ *The WORLDLINE half is untouched and keeps the family open.*
-
-
-ESTABLISHED: the crossing is well-posed (finite-curvature **branch point $r=0$** -- *NOT the Nariai seam at $+\alpha/\sqrt3$, which is a full lap away; corrected r2154/r2206*, characteristic not Cauchy), isotropizes
-(de Sitter no-hair), scale-free, obeys a structural transition law; a first concrete matter model (cosmogenesis).
-OPEN: the *detailed* worldline-and-field dynamics for a concrete model. HOME: ~~P7 `sec:frontiers` item 1~~ **RETIRED BELOW P7's LIST c54.115** (the item left the frontier when this family closed at c54.113; P7 carries it as a named resolution, not as an enumerated item); P15 §331; dynamics §285. ⌗ **ADDRESS REPAIRED c54.118: an ORDINAL into a list that shrinks is a guaranteed-stale address, and this one went stale two revisions after the item was retired.**
-~~CLUE-MAP: CR_framework(10), groupoid(4), CR_cosmology(2), dynamics, matter_sector, SdS, BH_causality §346, P5 §526, P7 §739/§946 (named frontier; the crossing the productive edge), slicing_operator §325 (bend-emergence residual, reframed r1281 → points here). Gated to → item 4.~~  ⌫ **RETIRED c54.119 — see the banner at the head of this section.**
-
-
-**[r2209 -- SHRUNK. The SELECTION RULE for what crosses is now DERIVED, and it was the mechanism this family asserted but could not supply.** Re$\,\tilde\tau$ is frozen across the lift, so its conformal time is **imaginary**: an oscillating mode acquires $e^{-kc_s|\Delta\eta|}$ and is annihilated ($e^{-152}$ at $P_1$), a frozen super-horizon mode is a constant the shift cannot touch and passes unchanged. ***The crossing inherits what is frozen and destroys what oscillates.*** Confirmed independently on the observed peak positions ($21$-$39\times$ exclusion in the required distance). **What remains OPEN is unchanged in kind but smaller in scope:** the *detailed* worldline-and-field dynamics for a concrete model -- **on a crossing whose admissible content is now fixed.** *Sites given their due: P7 `sec:frontiers` item 1 (rewritten r2205), `OPEN_PROBLEMS_MAP` A4 (r2206/r2207).*]**
-
-**2. Sheet-to-ruling assignment. — ★ KILLED r1280 (Daryl-directed): resolved dead, migrated open→closed.**
-The corpus resolved this six ways in P13 (the CPT factorisation). R (mass-reflection, r-axis, linear) and K
-(reality involution τ̃↦τ̃̄, τ̃-axis, antilinear) are the two axis-symmetries of the ONE Plate ℂ_r×ℂ_τ̃
-(boundary `prop:conjugation-closure`; The Plate caption — explicitly "Daryl's P13/P14 conjecture"). So the two
-null rulings (R's r-axis) and the two conjugate wings (K's τ̃-axis) are NOT two candidates awaiting a bijection
-but the linear and antilinear FACES of one object; C=(Q↦-Q)_field∘(R∘K)_geometric; the particle/antiparticle
-species settled on the built sector (P14). P7 still advertised it open (frontiers item 2, old §1097) — a stale
-knot the downstream paper had long since untied. FIX (r1280): built P7 `sec:two-sided-closure` (the owed
-resolution, richly, in the synthesis where §1061 already set up R); DELETED frontiers item 2 (SEVEN→SIX live;
-inherited-data promoted to item 2, auto-correcting two stale `item~2` radiation refs); redirected §860/§867/§871
-from "stated without being claimed (§frontiers)" to the closure; added `sec:unification-scope` capstone (three disparate
-areas — GR vacuum sector, CPT, su(3)+ℏ — as one substrate's cuts/residue/two-real-forms, + the GR pathologies
-not inherited). Genuine residual (specific-particle ID, world-correspondence, full antilinear C) is the matter
-sector's — item 6, not this. P7 compiles 0/0, 49pp.
-~~CLUE-MAP (now all resolving to the closure): CR_framework `sec:two-sided-closure`, boundary(5), matter_sector(4).~~  ⌫ **RETIRED c54.119 — see the banner at the head of this section.**
-
-**3. Inherited datum (n_s, A_s; the branch-point radiation ρ_r/ρ_m≈2).**
-ESTABLISHED: composition target met (cosmogenesis — He-4, D at observed values). OPEN: the baryogenesis-analogue
-*derivation* of the inherited datum. *(The corpus's "may stay empirical, like η" describes what the dissolution depends on — it is NOT a licence to skip the derivation or the empirical check; Daryl, r1448.)* HOME: P7 \S`sec:inherited-datum` — *'Inherited boundary data, derived rather than measured'*, **relocated out of the frontiers list when `PO-16` was struck: the item is settled and its eager target is a bonus, not a debt (`kills/PO-16.md`).** ⌗ *Addressed by LABEL from c54.118 so it cannot drift again.* Register row `L-150` = map `F·1`. P15 §328.
-~~CLUE-MAP: CR_cosmology(23), cosmogenesis(13), CR_framework(8), geometric_core(4).~~  ⌫ **RETIRED c54.119 — see the banner at the head of this section.**
-
-
-**[r2209 -- CONSTRAINED. The CLASS of admissible inherited data is now FIXED, though the value is still owed.** By the same lift rule, ***only non-oscillatory content can cross***: an amplitude and a tilt, never a phase. So the inherited datum is not merely *unknown* -- it is **known to be of the frozen, non-oscillatory class**, which is what $n_s$ and $A_s$ are. **This ties family 3 to family 1: family 3's datum is exactly what the family-1 rule permits to cross.** *And the corpus already derives part of the amplitude map -- $A_s=0.2338\,P_\Psi$ from the leg's $k$-independent $0.4835$. **Still OPEN:** the baryogenesis-analogue derivation of the value.*]**
-
-**4. Irreducible interior reassignments (Kerr-inner, RN-interior).**
-ESTABLISHED: the reducible sector fully classified and reached (range paper). OPEN: the interior reassignments,
-tied to the matter side, gated on item 1's matter dynamics. HOME: ~~P7 `sec:frontiers` item 3~~ **RETIRED BELOW P7's LIST c54.115.** ⚠⚠ **AND THIS FAMILY IS STALE ABOUT ITSELF: both register rows that own its content are STRUCK** — `C·5` = `L-141` (the reducible classification, done r569) and `A·4` = `L-138` (struck c54.113, the worldline half having a negative answer with a reason). *What survives is the Kerr-inner/RN remainder, which is Tier-3 and matter-side, and it is carried in those rows rather than owed here.* ~~CLUE-MAP: CR_framework(3), P3 §753 (charged closed loop, RN-interior), P5 §526 (Kerr/RN interiors), P7 §946 (the cosmogenesis theorem's one open datum — the interior remainder), range §267 (P9 marks the irreducible interior reassignments as the vantage-axis complement of the reducible sector — r1286). Gated on item 1; its resolution rides item 1's.~~  ⌫ **RETIRED c54.119 — see the banner at the head of this section.**
-
-
-**[r2210 -- ITS GATE IS PARTLY RELIEVED.** *Family 4 is *"gated on item 1's matter dynamics"* and "its resolution rides item 1's". **Item 1 shrank at r2209**: the *selection rule* for what crosses the branch point is now derived, leaving only the detailed worldline-and-field model. ***So the part of family 4 that waited on "what content the crossing admits" no longer waits*** -- it waits on the concrete dynamics alone. **A narrower gate, on the same hinge.** *No independent progress claimed here; recorded so the dependency graph stays true.*]**
-
-**5. Scalar-perturbation sector to a verdict.**
-
-**[r2376+c54.103-105 — THE FAMILY BROUGHT CURRENT ON THREE COUNTS, ALL OF THEM AUDITS OF WHAT THE CORPUS ALREADY HELD RATHER THAN NEW COMPUTATION.]**
-
-**★ (i) THE LARGE-ANGLE SHAPE HAS A MINIMUM AT $\ell=4$, AND THE PAPER SAID TWO INCOMPATIBLE THINGS ABOUT IT FOR A HUNDRED AND SEVENTY REVISIONS.** *P15's body, abstract, results list, `sec:scope` (twice) and summary all said $0.47/0.41$ at $\ell=2,3$ "recovering by $\ell\approx7$"; the caption of `fig:lowL-floor` on the same page declared those **superseded** and gave $0.42/0.35/0.29/0.52$ at $\ell=2,3,4,5$ with a minimum at $\ell=4$ — and was the only place in the corpus that said so.* ⇒⇒ ***Re-running the standing CAMB receipt gives the full profile $0.473/0.410/0.356/0.676/0.916/0.984$: BOTH computations minimise at $\ell=4$ and both recover by $\ell\approx7$–$8$, differing only in depth by $10$–$25\%$, which is the residual `sec:instrument` declares. The SHAPE is cross-validated; the depth carries the spread.*** ⚠⚠ *And the $\ell=4$ minimum was never new — `verify_lowell_boltzmann.py` has printed $0.356$ there since r1395 and the likelihood has consumed it ever since. **A failure of quotation, not of computation.*** ✔ ***THE OCTOPOLE VERDICT: the octopole is not where the sector's weight is*** — quadrupole $-2.63$ (it REWARDS the construction), octopole $+1.31$, and the largest single-multipole penalty is $+2.10$ at $\ell=4$. **Sector total unchanged at $+1.8$: the wash stands.** *(`L-146` struck; receipt `P15_the_low_ell_minimum_is_at_ell_four`.)*
-
-**★ (ii) THE r2240/r2241 CONTROL WORRY IS SETTLED, and the settlement was in the same caption one paragraph down.** *Exact/WKB transmission ratios $0.926$, $0.913$, $0.901$, $0.891$, $0.889$ at $\ell=2,3,5,15,40$ vary by $4\%$ across a factor of twenty in $\ell$ — **so the correction rescales the low-$\ell$ block and cannot make or unmake a minimum.** The item's "does not yet predict $\ell=2$–$5$ sharply enough to be tested there" was stale.*
-
-**★ (iii) THE INHERITED DATUM IS ONE NUMBER AND NOT TWO, AND ITS NATURALNESS ARGUMENT IS WITHDRAWN.** ***$\rho_r/\rho_m$ at onset $= [1+\nu](\pi^4/30\zeta_3)T/[\eta(\omega_m/\omega_b)m_N]$, returning $1.99$ at $T=1.6$ eV*** — the quoted datum to one per cent, from standard thermodynamics and no feature of this construction. *Given $\eta$ and the matter content, both inherited regardless, **the ratio at onset IS the onset**, so P7's "the frontier is two data and not one" is corrected to **one inherited datum plus one fitted parameter**.* ⚠⚠ *And "a handover carrying radiation of order the matter density is the natural scale" is **withdrawn and registered in `check_withdrawn`**: $\rho_r=\rho_m$ at $T\simeq0.8$ eV, nine orders below the handover, where $O(1)$ would mean $\eta\simeq0.5$ — no light elements, no acoustic peaks. **The naturalness question runs the other way: what must be explained is a billion photons per baryon.*** *(`L-149` struck; `L-150` restated twice and still open; receipts `P15_the_ratio_is_the_onset_in_imported_units`, `P15_the_two_data_are_one`.)*
-
-
-ESTABLISHED: the large-angle depth built (genuine Boltzmann transfer; a wash within cosmic variance); peaks
-reduce to ΛCDM through ℓ≲800 (the time-reversal driving equality *at the acoustic scale*, |Ψ̃(ω=1)|;
-camb_reference); the damping-***scale*** signature computed — $\theta_D/\theta_*$ moved by under a per cent
-($r=0.9918$) with both lengths carried to the visibility peak, its size the handover's and its sign set by that
-common endpoint — and non-reabsorbable by $\omega_b$ (P15 `sec:diffusion-scale`; `damping_reabsorption`).
-OPEN — **RELOCATED r1408 by holding the expansion ontology (P7 bead + P15 three-level rule; the piece I kept
-collapsing onto FLRW):** the open core is NOT a free-standing CMB-transfer computation. It is the
-**short-wavelength (high-ℓ) collapse-phase driving envelope** — the peak *heights* above ℓ≈800 — which per
-§coherence lives on the **contracting collapse leg (L2)**, radiation gravitating on the progenitor excursion,
-and is *uncomputed*. The damping *scale* is settled; its high-ℓ *spectral* consequence is entangled with that
-uncomputed driving. Plus the full-spectrum likelihood vs ΛCDM.
-★ **THE TRAP (has burned two nodes — do NOT re-run as a finding):** taking ΛCDM's C_ℓ as the high-ℓ peak
-envelope and applying CR's damping signature (`full_transfer_verdict`) manufactures a spurious "decisive high-ℓ
-deficit." §coherence DISOWNS exactly this — assuming the high-ℓ peaks equal ΛCDM's "is precisely the unbuilt
-part, and it may not be imported for free," the radiation-free rate reshaping the high-ℓ driving envelope
-(removing the radiation-driving boost that sets the ΛCDM peaks). The time-reversal result buys the driving
-equality *only at the acoustic scale*, not the whole k-dependent envelope. This is the §CR-FLRW capstone's named
-reification — running the synchronous shadow's machinery as the existent.
-★ **LINK — 5 COUPLES TO 1, AND RIDES P16'S BUILD:** the collapse-phase driving envelope sits on the **same L2
-collapse excursion** item **1** (matter branch-point crossing) owns and the **cosmogenesis paper (P16)** already
-integrates a nuclear network on — adiabatic compression → peak → turnaround → re-expansion through the window.
-So the high-ℓ transfer is not a separate machine: **evolve the acoustic-mode potential driving through P16's
-collapse-excursion history.** 5's open core is an L2 collapse-excursion computation coupled to 1, not a
-stand-alone transfer — reshaping the "closable four" grouping below.
-HOME: P7 `sec:frontiers` \ref{frontier:scalar} — *'The scalar perturbation sector, to a verdict'*, **item 1 of P7's three, and register row `PO-13`**. ⌗ *`E·1` = `L-146` and `E·3` = `L-148` are STRUCK; what remains of this family is `E·2` = `L-147`, the full-spectrum likelihood alone.* P15 §326,§329,§coherence; CR_framework §coherence-of-driving + the L1/L2/L3 rate rule (P15 §tensions
-/ P7 lapse-shift-bend remark). ~~CLUE-MAP: CR_cosmology(14), cosmogenesis(3 — +the cooling-leg excursion the~~  ⌫ **RETIRED c54.119 — see the banner at the head of this section.**
-driving rides), CR_framework(2 — +collapse-side driving, the three-level rate rule), geometric_core(2).
-**Coupled → item 1; rides P16's cooling-leg model.**
-★ **RECEIPT FLAG (r1408, Daryl — FOR THE RECORD, later not now):** the r1391 P15–16 receipts this family (and family 3) lean on — `cr_collapse_driving`, `time_reversal_driving`, `full_transfer_verdict`, `damping_ratio_clean`, and the P16 cooling-leg network — were run by node **c47**, which was grinding near the end of its rope; they misled a later node into a false "decisive high-ℓ tension." Treat them as **receipt-suspect**, owed a critical re-read (avenue 11 / phase R), NOT trusted on their ✔✔ stamps. When that check is run, this family's cross-corpus clue-map (into P16, the seam, the three-level rate rule) is the aid for tracing what each receipt actually feeds.
-★ **RESOLVED IN THE HONEST DIRECTION (r1415–r1423, CAMB-anchored; the spectral consequence examined at leading order).** Receipt flag PARTIALLY DISCHARGED: `damping_ratio_clean`'s ~8% is now **INDEPENDENTLY CONFIRMED** — recomputed from scratch on one geometry with CAMB's real recombination opacity, θ_D/θ_*=+7.0%, r_D=+8.9%, matching the corpus to the digit (an early x_e=1 kernel gave a spurious +70% by being high-z- not recombination-dominated — fixed). `full_transfer_verdict` is **CONFIRMED to be the trap** — a node (this one) walked into it (r1420/r1421: ΛCDM peaks × CR damping → a spurious 40–70% deficit) and **STRUCK it (r1422)**. Still owed the full re-read: `time_reversal_driving`, `cr_collapse_driving`, the P16 network. **The spectral consequence itself (r1423, CAMB Fisher):** the confirmed ~8% *scale* signature is **~90% degenerate with the tilt n_s at fixed θ_*** (n_s alone 82%) → it **mostly washes**, leaving a small ℓ²-curvature residual (no tilt/peak param reproduces it) as the genuine tail distinguisher. Robust: the ~90% degeneracy. NOT robust: the residual's significance (CV-limited-to-3000 optimistic; bare-envelope construction). **So "neither tension nor wash" is quantified: mostly a wash into n_s, a small future-distinguishable residual, NOT a present tension.** STILL OPEN (unchanged in kind, narrowed in stakes): the full end-to-end L2 collapse-excursion transfer coupled to item 1 / riding P16 — now for the **exact residual shape + the mid-ℓ (ℓ~700) peak behaviour** (whose driving runs partly post-seam on L1), NOT to decide tension-vs-wash. Standard Boltzmann codes can't supply it (the content-not-rate split, P15 §scope); the build is a modified/bespoke transfer. **Asset banked:** CAMB installed+validated; the Step-1 collapse-worldline background object (`COLLAPSE_EXCURSION_TRANSFER_build.md`). **LESSON re-learned (bank it):** never multiply one cosmology's peaks by another's damping.
-
-***✔✔ SUPERSEDED r1927–r1928 — THE ENVELOPE IS BUILT.*** *The passage above records the trap correctly and is kept as the record; what it calls **"the unbuilt part" is no longer unbuilt**. The collapse-phase driving envelope is derived in closed form on the L2 leg — elementary $\Psi$, **even in $x$**; entry at $x=1/\sqrt3$ for every mode; **flat above ${\sim}10k_s$ with its turnover at the equality the inherited datum fixes** — and $r_D$, $r_s$ and $\theta_D/\theta_*$ follow, with $\ell_*=301.4$ against the measured ${\sim}301$. Landed in P15 `sec:envelope` and `sec:envelope-consequence`, ten receipts.*
-
-***⛭ AND THE TRAP'S LESSON GENERALISED IN THE DOING:*** *the rule is not "do not import ΛCDM's peaks" but **BOTH HALVES MUST COME FROM THE SAME PLACE** — a first pass here derived CR's peaks and then imported ΛCDM's damping machinery, **the same error with the halves swapped** (r1923).*
-
-***⟐ WHAT REPLACES IT AS THE OPEN ITEM, narrower and named:*** *the **early integrated Sachs–Wolfe** term on the radiation-free rate, and the **likelihood confrontation** — a parameter refit, not a closed-form calculation.*
-
-***⛭ AND CARRIED FURTHER r1955–r1962.*** *The damping signature now stands at **$\theta_D/\theta_*=+13.96\%\pm0.89\%$** with the acoustic angle's $H_0$-independence derived, the recombination redshift integrated on the construction's own rate, and $\ell_1$ landing at 220 because the early ISW is a flat factor.* ***What remains of this item is the PEAK HEIGHTS alone — and four attempts established that a WKB skeleton cannot deliver them in either cosmology, so it is a numerical tight-coupling transfer rather than a missing idea.***
-
-
-**[r2210 -- CONSTRAINED, AND ITS TRAP CHECKED.** *(i) **The trap was NOT re-run.** Tonight's high-$\ell$ deficit was measured between **our $\Lambda$CDM control and an independent Boltzmann code** -- an *instrument* comparison, with no CR damping applied to anyone's spectrum. **The trap is applying CR's damping signature to $\Lambda$CDM's $C_\ell$; that was never done.** *(ii) **The open core is SPLIT by the lift rule.** Family 5's open core is the **collapse-phase (L2) driving envelope** setting the high-$\ell$ peak heights. The lift now divides that question in two: ***the oscillating content of the collapse leg is annihilated*** ($e^{-152}$ at $P_1$; confirmed on peak positions, $21$-$39\times$), so **no collapse-side acoustic phase reaches the observed peaks** -- while ***the frozen, non-oscillatory envelope DOES cross***. **So what family 5 must compute is the inherited ENVELOPE, not a transmitted oscillation** -- a strictly smaller object, and the same one family 3 owes. *(iii) **The instrument now exists and is declared** (P15 `sec:instrument`, r2204): positions $\le0.5\%$, transfer $<1\%$ for $k<0.02$, **$\sim$4-5\% absolute above** -- and that absolute residual **cancels in CR/$\Lambda$CDM ratios but NOT in absolute peak heights**, which is precisely what family 5 wants. ***That is the current limit on family 5, and it is now a stated number rather than an unknown.*** *(iv) The large-angle depth is **superseded**: full Boltzmann gives $0.42/0.35/0.29/0.52$ with the minimum at $\ell=4$ (r2204/r2207).*]**
-
-**6. Propagating fermion sector (+ the compact-face gauge sector, the mass hierarchy).**
-ESTABLISHED: the discrete flavour structure built (P14 — count three, chirality γ⁵, and an S₃ that is a
-**WITHIN-STATE index and NOT a family symmetry** — revised c54.31, the generations' own threeness being the
-turnaround's deck ℤ₃ with the wall structure fixing the *number* at either seat — forced within CR, as bound
-leaf-modes); ⌗⌗ **AND SINCE c54.42–c54.62 THE SECTOR ALSO DELIVERS THE DISCRETE CONTENT OF COLOUR, which this
-family's ESTABLISHED line predates**: no ambient bundle can carry su(3) (all are real); the module is the
-**branching**; the three wall monodromies with the hinge 3-cycle generate SU(3); and second quantisation on the
-wall kernel returns baryon 1, diquark 0, meson 1, the configuration group *selected*. **The bundle is FLAT —
-the discrete content of colour and no force — so what stays open on the gauge side is the COUPLING, not the
-structure;** **and — (r1320 claim CORRECTED r1321 after actually reading + running `B2_zeromode_continuation.py`) — B2 COMPUTES one thing: the zero-mode superpotential's real→imaginary (bound→propagating) transition across a horizon on a concrete undercritical SdS (horizons r_b=0.257, r_c=0.846; ∫W dℓ = 0.95 REAL between horizons → bound/decaying, = i·0.64 IMAGINARY past the cosmological horizon → propagating phase). That "spatial mass → temporal frequency" transition is a genuine, executed foothold. B2 ASSERTS but does NOT compute (its "VERDICT" is print-statement prose): the a^{-3/2} cosmological-Dirac form, the γ⁵-chirality preservation (the script carries no spinor / no γ⁵), and the three-families continuation (it does one mode on one model). My r1320 "γ⁵ preserved term-for-term, continuation built" OVER-CITED B2. Verification of the γ⁵-preservation + a^{-3/2} form is PENDING — candidate items: `B3_spinor_vielbein.py`, `storyboard_receipts/A3_spinor_lift.py`, or a trace of §222's argument (not yet run/read).** OPEN (**narrowed r1320**): not "do the modes propagate" — they do, classically — but the full *second-quantised / interacting* spinor QFT sector as a defined theory (the "major construction" still unbuilt); the compact-face gauge-realized fermion sector; the mass-hierarchy identification (not claimed). HOME: P7 `sec:frontiers` \ref{frontier:sm} — *'The Standard-Model fermion and gauge sector'*, **item 2 of P7's three, and register row `PO-14`**. ⌗ *Registered at last as `L-164` (c54.115); it had no register row at all until then. The live half is the CONTINUOUS side — the bundle is flat, so no curvature, no coupling, no force.* P13 §267. ~~CLUE-MAP: boundary(14), geometric_core(12), matter_sector(9 — +§222 continuation), SdS(6), CR_framework(4), groupoid(3). **Note (r1320): its interacting-QFT half rhymes with family 8's interacting-tower wall — the same "interacting theory as a defined theory" character, fermion-side here, graviton-side there.**~~  ⌫ **RETIRED c54.119 — see the banner at the head of this section.**
-
-**7. The world-correspondence, and the empirical grounding of the discipline (empirical, standing).**
-The coherence-vs-correspondence line read at TWO levels — one family of empirical debt (coherence is not
-soundness; the world's verdict grounds the claim). OBJECT-level: whether the fixed point CR closes on is the
-world's — the cosmology empirical test, which is the ONE test posed to the world and is now returning in
-favour. *(The metric-singularity result is NOT a second test: it is a theorem of standard GR, proved for
-every admissible exterior slicing with no foliation premise, so nothing about it waits on data.)*
-METHOD-level: whether the theory-choice rules that select the framework TRACK TRUTH — the vindication lemma,
-held to the historical record of theory-choice as the discipline's own first programme (P6 §199–209), a
-buildable episode-sampling, outcome not presumed. The correspondence runs all the way down, to the principles
-no less than the theory. *(The r1253 elevation of the vindication lemma to an 8th family was folded here r1254,
-Daryl-corrected: a different test does not make a different family; the shared principle does.)* NOT a corpus
-gap — the empirical question. HOME: no `sec:frontiers` item (standing empirical, correctly absent), P6 §199–209 (method-level). ~~CLUE-MAP: geometric_core(10), boundary(9),~~  ⌫ **RETIRED c54.119 — see the banner at the head of this section.**
-CR_framework(8), SdS(3), matter_sector(3), P4 §196 (the global maximally-symmetric form as a Copernican extrapolation — the empirical reach), slicing_operator §327 (the radiation-free-rate discriminant → the cosmology empirical test).
-
-**8. The interacting quantum tower — its definition as a consistent theory.** *(RESTORED r1291 — wrongly kill-listed r1243 as "not a CR open" and propagated as such this session; a genuine open, not a false-open. Daryl-flagged.)*
-ESTABLISHED: the free graviton tower deparametrizes to a unitary cosmic-time evolution; the quantization *ambiguity* is closed by the de Sitter horizon's thermal state without a free parameter, at every order of the coupling; the classical nonlinear Λ>0 regime is ghost-free with a de Sitter attractor. OPEN: the *definition of the interacting tower* — the spectrum of Γ̂ (whether bounded below) and the UV definition of the mode sums; whether the coupled quantum graviton sector is a consistent, well-defined theory. WHY GENUINELY OPEN: not built — the interacting theory's spectrum + UV are not established; the same wall any interacting QFT meets, but that shared character does not settle it, and the established results standing independent of it does not close it. HOME: P7 `sec:frontiers` \ref{frontier:quantum} — *'The quantum sector'*, **item 3 of P7's three, and register row `PO-15` — STRUCK r3100: the ordering is settled as EXTERNAL by exhaustion (`L-833`), the cc problem localized; what remains of the item is the ultraviolet definition of the mode sums**. ⌗ *Registered as `L-165` (c54.116) together with the non-perturbative half; the map's whole cluster B had been left out of the c54.90 fold.* ⌗⌗ **AND THIS FAMILY'S OWN 'whether bounded below' CLAUSE IS NOW SCOPED:** *P10 asserted $\hat\Gamma$ bounded below where it builds the straddle and listed the same property as open four hundred characters later. Both are right of different operators — leading-order and complete — and the qualification landed c54.116. **The decomposition never used the floor:** it needs only that the spectrum meet both sides of $3/4$. Receipt `P10_the_straddle_does_not_need_a_floor`.* P10 §lock §250. ~~CLUE-MAP: canonical_time §250, dynamics, algebroid, CR_framework §1117.~~  ⌫ **RETIRED c54.119 — see the banner at the head of this section.**
-
 > **⌗⌗⌗ CURRENCY, r2376+c54.155 — this ledger stops at c54.137 and eighteen revisions have landed. What
 > follows below is accurate as far as it goes; these are the movements it does not carry.**
 >
@@ -377,148 +216,6 @@ ESTABLISHED: the free graviton tower deparametrizes to a unitary cosmic-time evo
 > c54.31. **The family hunted for colour in the one three-fold it believed was free; the free one was the
 > other.** Table corrected in place.*
 
----
-name: open-problems-ledger
-description: The arsenal's PRODUCT. The seven genuine open problems, every mention of each across the corpus (the clue-map to each resolution), the kill list of struck false-opens, and (written at campaign's end) the attack manual per problem. The ONLY opens the corpus may carry are mentions of these seven or a genuinely new miss.
-sources: [chat]
----
-
-> **⌫ r1449's ROUTING BANNER — SPENT, corrected r1812 by sweep `A4`. THIRD DOCUMENT CARRYING IT: `THE_PLAN`
-> (fixed r1745), `THE_ARSENAL` (fixed r1812), and this one.**
-> *The bin emptied at r1553; **this file is grain 1 of the six-grain instrument**, indexed and live; `CONSOLIDATE`
-> §3 is marked SPENT/RECORD at r1735. **A new family or kill goes HERE, at grain 1, and propagates down the
-> crosswalk — never to a filter that no longer runs.***
-> *(Original banner, kept as the record:)* **⌖ r1449 —** This file has not been
-> filtered into it yet; it sits in the bin (§2 there) awaiting a full read. Until it is filtered, work
-> from it as before — but **place nothing new here**. New items go to `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` §3.
-
-
-> **⌗ r2376+c54.10 — A RESULT LANDED THAT THIS LEDGER'S FAMILIES DO NOT YET REFLECT.** *Four-dimensional
-> spacetime is now **derived inside CR** from the matter sector: the fold the generation count reads is $D-1$;
-> the horizon relation collapses to a single multiple-angle only at $D=4$ and $D=5$; and the mass-parity
-> grading chirality exists only at even $D$ ⇒ **four is the only dimension carrying both a count and a
-> chirality**, and the corpus's three is its $D-1$. **Landed in P3 `rem:dimension`, P14 `sec:scope`, p0, P12,
-> P13, P7 `sec:frontiers`, and `COMBINATORICS_LEDGER` L8.1-a.** ⚠ **The counter below and the family
-> statements have NOT yet been recounted against it** — that is step 4 of
-> [`THE_LIVE_ARC.md`](THE_LIVE_ARC.md) and is **owed, not done**.
-> *Flagged here rather than silently left, because a ledger that looks current and is not is the defect this
-> programme sweeps for.*
-
-# THE OPEN-PROBLEMS LEDGER — the arsenal's product
-
-> **⌗ BROUGHT CURRENT r2376+c54.32** *(gate: `corpus/check_currency.py`, which now fails when a standing
-> register falls more than six revisions behind the fork).* **What has landed since this file was last current:**
-> ***(A1) DISCHARGED*** *(`L-01`) — CR's own operator is the **kernel of the matter functional**, and run at
-> general $D$ its entire solution space is Tangherlini–de Sitter, so the dimension result's input is **derived,
-> not imported**; the **LOCK** survives with it (`L-89`: $A=f$ and $p_r=-\rho$ are the same condition at every
-> $D$).* ***THE L8.1-a WELD IS SPLIT*** *(`L-67`/`L-92`/`L-95`) — the hinge three is the **within-state** index
-> (a bound triple takes one puncture per hinge, forced by the causal trichotomy) and **generation moves to the
-> turnaround three**; the count is untouched because **both threes are $D-1$, descending from $f$'s degree-$(D-1)$
-> numerator** (`L-07`), and the chirality survives verbatim because $R$ reaches the turnaround branch exactly
-> when $D$ is even. Landed in P14 `sec:whichthree`.* ***THE FERMION SECTOR READ IN THE GEOMETRY*** *
-> ([`THE_FERMION_SECTOR_GEOMETRY.md`](THE_FERMION_SECTOR_GEOMETRY.md), a spine step) — the wall **is** the graze
-> point **is** the $r=0$ branch point; charge is a **winding** whose thirds are **derived** from closure; triality
-> $=-\lambda\bmod3$ and chirality $=\operatorname{sign}\lambda$ computed on `prop:wall`'s own solution; and the
-> honest negative that the mode tower **does not terminate**, so the corpus gets the **grading** and not the
-> multiplet count.* ***AND THE OPERATING LAYER:*** *`PROTECTED_OPEN` gained checks 5–7; the arc gained rules 4–5;
-> and the corpus now has **five gates** — receipts, kills, burn-down, compile, currency.*
-> **The live queue is [`WHATS_TEED_UP.md`](WHATS_TEED_UP.md); the accounting is [`THE_BURN_DOWN.md`](THE_BURN_DOWN.md).**
-
-
-> **⛭ One instrument, five grains — described in `THE_PLAN.md` §THE INSTRUMENT.** **GRAIN 2 — coarsest.** The distilled canonical list: what is *genuinely* open, after false opens are killed and real ones consolidated into families. Sorts into `THE_PLAN`'s lanes.
-> *Grain discipline: a finding goes to the grain that fits. Propagate down the chain, not sideways.*
-
-Established **r1244**, Daryl-directed. The consolidated ledger the open-problems campaign produces: the seven
-genuine opens, all their mentions (the clue-map), the kill list of struck false-opens, and — at campaign's end
-— the attack manual per problem.
-
-**⛔ STANDING RULE (Daryl, r1448) — NO WORK-BLOCKERS.** Nothing in this programme's documents may say, or imply, that a piece of work *need not be done*: not "not load-bearing," not "at no cost," not "low-priority," not "optional," not "not on the critical path," not "unlocks nothing." Those phrases are **empty blockers** — they keep real work out of the plan by pre-deciding it away, and they are read as "leave it, unnecessary." **It is all necessary.** A document may record what a thing *is*, what state it is in, and what working it would involve. It may not rank it out of existence. The corpus's own earlier lesson is the rule: *"'not load-bearing' is never grounds to bury a structural lead."*
-
-> **⌗⌗⌗ CURRENCY, r2376+c54.155 — this ledger stops at c54.137 and eighteen revisions have landed. What
-> follows below is accurate as far as it goes; these are the movements it does not carry.**
->
-> - **Family 11 (the inherited boundary data) moved again, and further than the note below records.** *The
->   composition is **DERIVED**, not bounded: a small perturbation shares its background's composition, so the
->   patch's equality is the ambient universe's, giving $\rho\simeq5.4\times10^{-2}$ and closing to three
->   figures against the observable leg. **Five successive upper bounds on it are withdrawn.*** ⚠ *And the
->   scalar monodromy the note below quotes as $2\pi/\rho$ is the TENSOR value; the scalar is $4\pi/\rho$
->   (c54.146), which multiplies the transfer law by four.*
-> - **The tensor sector is closed as a negative**: no primordial $B$-modes at any conceivable sensitivity, and
->   it is the one place the machinery runs with no idealisation at all.
-> - ⚠⚠ **AND FRONT #1 IS NO LONGER A CALCULATION.** *The full-lap apparatus and its correction are both
->   withdrawn; what they bracket is **the construction's recursion**, never posed in the corpus and answerable
->   by a reading of P1, P2, P3 and P7 rather than by more apparatus.*
-> - ⌗⌗ **A NEW OPEN PROBLEM OF A DIFFERENT KIND, and this ledger is where it belongs: THE ASSERTION DEBT.**
->   *188 of 276 receipts carried no check at all — two thirds of the reproducibility layer, where `OK`
->   certifies that Python exited zero. Reading the cited subset against the sentences citing it returned
->   **1 match in 16**, and on P15's empirical spine **six published numbers no longer matched their own
->   receipts**. The debt is named in `receipts/ASSERTION_DEBT.txt` and ratcheted by `check_receipts`; the work
->   is bounded and its yield is measured.*
-
-> **⌗⌗ THE COLLAPSE-PERTURBATION ARC IS PROPAGATED (r2376+c54.137), AND IT MOVES THIS LEDGER'S FAMILY (11) —
-> the inherited boundary data — DECISIVELY IN ONE DIRECTION AND PARTLY IN THE OTHER.**
->
-> - **$n_s$ is NOT wholly inherited.** *The collapse leg is $\beta=2$, the second root of $\beta(\beta-1)=2$ —
->   the matter-contraction dual of de Sitter inflation, which this corpus had denied having (c54.122). **Its
->   scale-invariant part is a consequence of the leg's geometry; only the DEPARTURE from unity is inherited.***
-> - **$A_s$ IS wholly inherited, and now for a proved reason rather than a shrug.** *$\hbar$ is multiplicative
->   in $P(k)$, so it survives in an amplitude and cancels in every logarithmic derivative (c54.136): the
->   no-magnitude theorem bears on $A_s$ and not on $n_s$, **and the two were never the same kind of quantity —
->   though this ledger, like every frontier statement in the corpus, has named them as a pair.***
-> - **AND THE HOPED INVERSION IS DEAD (c54.137).** *A quantity fixed by the moduli is one an observation
->   measures, so $A_s=F(2M/\alpha)$ looked like an instrument. **$F$ is computed: it is a function of TWO
->   moduli, not one, and carries no fixed normalisation.** The progenitor's own vacuum, amplified by the full
->   passage, delivers $3\times10^{-103}$ against $2\times10^{-9}$ — so the incoming amplitude is a classical
->   datum, free at this level, and the relation cannot be solved for the mass.*
-> - **WHAT THE FAMILY GAINS INSTEAD: the progenitor's COMPOSITION is bracketed on both sides** —
->   $2.6\times10^{-6}\le\rho\le1.1\times10^{-3}$, *the child's spectrum from above and the parent's own
->   nucleosynthesis from below.* **That is the first two-sided constraint this family has ever carried on any
->   inherited datum.**
->
-> ⚠ *And a caution this ledger should carry about itself: family (11)'s r2244 clause was read at c54.119 as
-> saying the tilt cannot be inherited, and P15's body says the opposite in a paragraph that names that reading
-> as naive. **A lead was opened on the stale framing and struck two revisions later as my error.** The ledger's
-> family text is a summary and the paper's body is the source.*
-
-> **⌗⌗ THE LEADS SWEEP IS PROPAGATED (r2376+c54.84), AND WHAT IT LEAVES HERE IS MOSTLY SUBTRACTION.**
-> *The lead register ran 20 open → **2 open** across c54.63–c54.84. Four items in this ledger's families move:*
->
-> - **The `R3` row's pairing question is answered and the row is MIS-SHAPED rather than mis-ordered.** *Its two
->   objects (the designation $2{+}1$ and the sign $2{+}1$) both partition the three ROOTS, while one of its two
->   targets — $uud$ — is a partition by ISOSPIN within a baryon. **The correction is an ADDITION, not a
->   re-ordering: the row is missing a third object.*** *A better-typed candidate — the horn assignment of a
->   baryon's three ends — is registered at `PO-1c` and **not claimed**.*
-> - **The designation $2{+}1$ is NOT the physical hierarchy.** *It is a property of the vantage, three per
->   geometry, permuted by $S_3$; the hierarchy carries no such multiplicity. **An indexical structure cannot be
->   an absolute one**, and what the split says positively is "the generation this cut is" — P3's own "my
->   horizon".*
-> - **The taxonomy's last OPEN alignment row closes as a NON-alignment.** *At Nariai the geometry names **two**
->   distinguished roots and they differ; and on the colour side a distinguished one is structurally impossible,
->   $\Lambda^3$ of the wall kernel being one-dimensional and generated by $\varepsilon$.* **`PO-2` is narrowed,
->   not closed: the zero-sum-triple/baryon resemblance is untouched and its "distinguished member" leg is gone.**
-> - **The coverage register's 39 screened-clean probes are read.** *The complaint was never that the screen was
->   wrong but that it was **uncheckable** — the audit published counts and not the partition. The screen is
->   re-run with its criterion written as code and **the per-probe classification is now on disk**; no probe
->   classed clean rests on a quantity built from $f$.*
->
-> **⌗ AND THE MECHANISM THAT FOUND MOST OF THIS: `check_supersession`, the eighth gate.** *Six leads in nine
-> revisions had turned out to be answered by banked work never claimed against them; the gate matches open leads
-> against receipt summaries and ranks the overlaps.* **A family here is at the same risk and by the same
-> mechanism — this ledger records what is OWED and has no way to notice when something else PAYS it.**
-
----
-
-> **⌗ THE COLOUR ARC IS PROPAGATED (r2376+c54.61).** *Its content is in **family (12)**, which is
-> **resolved from the other side** — and whose own assignment table was found **inverted**: it read the hinge
-> $S_3$ as the generations and the comoving three-fold as unused, when P14 `sec:whichthree` had reversed that at
-> c54.31. **The family hunted for colour in the one three-fold it believed was free; the free one was the
-> other.** Table corrected in place.*
-
----
-name: open-problems-ledger
-description: The arsenal's PRODUCT. The seven genuine open problems, every mention of each across the corpus (the clue-map to each resolution), the kill list of struck false-opens, and (written at campaign's end) the attack manual per problem. The ONLY opens the corpus may carry are mentions of these seven or a genuinely new miss.
-sources: [chat]
----
 
 > **⌫ r1449's ROUTING BANNER — SPENT, corrected r1812 by sweep `A4`. THIRD DOCUMENT CARRYING IT: `THE_PLAN`
 > (fixed r1745), `THE_ARSENAL` (fixed r1812), and this one.**
@@ -710,6 +407,14 @@ resolves) and as the **clue-map** (everywhere an open touches points at where it
 > read.* ***A hand-maintained index of 177 pointers across 17 papers, with no gate over it, is a
 > maintenance liability that buys nothing the tree does not already give.***
 >
+> **⌗⌗ THE FAMILIES AGAINST THE REGISTER.** *The table is a view of the register, and the register is the single
+> source of truth. **Three families are live**: family 3, the inherited datum, at `PO-31`; family 8, the interacting
+> quantum tower, at `PO-23` (`PO-51` struck); and family 5's live remainder, the acoustic contrast, at `PO-56`, the family itself
+> having reached its verdict (`PO-47` struck). **Families 1,
+> 2, 4, 6, 9, 10, 11 and 12 are closed**, family 4 with its last remainder, the charged interior's third regime
+> (`PO-49`), struck as the boundary of admissible data; family 6 by the matter sector's account of the propagating fermion and gauge
+> content. **Family 7 is not a work item** and says so itself.*
+>
 > ⌗ *Struck in place, not deleted — nothing in this corpus is erased. And recorded honestly: no
 > argument anywhere in the corpus reasons FROM a clue-map, which is the other half of why retiring
 > them costs nothing.*
@@ -724,7 +429,7 @@ resolves) and as the **clue-map** (everywhere an open touches points at where it
 > | 2 | which sheet goes with which ruling | **killed r1280** — they are the two faces of one object |
 > | 3 | derive the inherited datum rather than measuring it | **LIVE** — register `PO-31`, the progenitor spectrum |
 > | 4 | the irreducible interior reassignments (Kerr-inner, RN) | **closed** — the owning rows struck; its charged remainder is live at `PO-49` |
-> | 5 | the scalar perturbation sector, to a verdict | **verdict reached** — the arm's spectrum is rejected on shape; its residual is live at `PO-47`, what displaces the fourth acoustic peak |
+> | 5 | the scalar perturbation sector, to a verdict | **verdict reached** — the arm's spectrum is rejected on shape (`PO-47` struck); its live remainder, the acoustic contrast, is at `PO-56` |
 > | 6 | the propagating fermion and gauge sector | **closed** — the sector propagates and its gauge content is accounted for; `PO-45` and `PO-30` struck |
 > | 7 | the world-correspondence and empirical grounding | **not a work item** — the family says so itself: *"NOT a corpus gap — the empirical question."* |
 > | 8 | the interacting quantum tower as a defined theory | **LIVE** — register `PO-23` (`PO-51` struck) |
@@ -769,7 +474,7 @@ sector's — item 6, not this. P7 compiles 0/0, 49pp.
 
 **3. Inherited datum (n_s, A_s; the branch-point radiation ρ_r/ρ_m≈2).**
 ESTABLISHED: composition target met (cosmogenesis — He-4, D at observed values). OPEN: the baryogenesis-analogue
-*derivation* of the inherited datum. *(The corpus's "may stay empirical, like η" describes what the dissolution depends on — it is NOT a licence to skip the derivation or the empirical check; Daryl, r1448.)* HOME: P7 `sec:frontiers` \ref{frontier:inherited} — *'Inherited boundary data, derived rather than measured'*, **which is item 1 as the list now stands** (it was item 2 when this line was written; the list ran seven → six → four). ⌗ *Addressed by LABEL from c54.118 so it cannot drift again.* Register row `L-150` = map `F·1`. P15 §328.
+*derivation* of the inherited datum. *(The corpus's "may stay empirical, like η" describes what the dissolution depends on — it is NOT a licence to skip the derivation or the empirical check; Daryl, r1448.)* HOME: P7 \S`sec:inherited-datum` — *'Inherited boundary data, derived rather than measured'*, **relocated out of the frontiers list when `PO-16` was struck: the item is settled and its eager target is a bonus, not a debt (`kills/PO-16.md`).** ⌗ *Addressed by LABEL from c54.118 so it cannot drift again.* Register row `L-150` = map `F·1`. P15 §328.
 ~~CLUE-MAP: CR_cosmology(23), cosmogenesis(13), CR_framework(8), geometric_core(4).~~  ⌫ **RETIRED c54.119 — see the banner at the head of this section.**
 
 
