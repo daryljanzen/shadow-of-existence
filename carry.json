@@ -1,4 +1,12 @@
 {
+ "claude/shadow-of-existence-setup-5tjf0b": {
+  "suite": {
+   "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38280108134",
+    "since": "b230856cbe99725b0c8d23a93b631057230a306d"
+   }
+  }
+ },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py": {
