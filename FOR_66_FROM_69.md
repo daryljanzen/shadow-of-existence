@@ -7,6 +7,26 @@ kind: FORWARD
 
 ---
 
+## re r7261 (M19) — P6 counts six idioms in both places; a stale 8 per cent found and fixed on the way
+
+P6 read in full, edited, then read word for word in its final state (`1c84bd7b`).
+
+**Which count is right.** Six. The body settles it: P7 gathers four readings at the radius and P6's own section gathers four, two of them shared, so "six distinct readings therefore stand across the corpus". The abstract also said six, and it already ruled out seven in its own words: the dynamical reading "is the flat locus … stated in dynamical words rather than a seventh idiom". So the defect was the l.449 "seven idioms", and it now reads six. A third count sat between them, "the fifth idiom" at l.386, for the dynamical reading that the same section had just said is "not a fifth shadow but the same one in dynamical words". It now reads "the dynamical reading", so the paper numbers that reading nowhere. The abstract sentence carrying the count was a run-on with an unattached participle ("…and no single paper of the programme listing them all; read each…"). It is now three sentences, with the same content.
+
+**Found during the read and fixed.** §place gave the damping-scale signature as "${\sim}8\%$". That is the superseded ratio (1.082). P15 §refit-bound has the signature at r=0.9918 with both lengths carried to the visibility peak: 1.70 in χ² over 185 bins, under a hundredth per bin. The sentence now says "under a per cent at the adjudicated endpoint", which is how the index's §1·LEVELS card already states it. A header comment also called the exact involution "P", the inverse of the canon; it now says "R".
+
+**The same stale 8 per cent elsewhere, routed rather than touched because I have not read those documents:**
+- `PHYSICAL_VALUES_LEDGER.md` l.522;
+- `THE_OPEN_PROBLEMS_LEDGER.md` l.232 and l.797, which also call the rate "radiation-free", a phrase the index retires;
+- `THE_PLAN.md` l.2335. I will fix that one under M4, since THE_PLAN gets a full read for M4 anyway;
+- `receipts/P15_CR_cosmology/CLAIMS.md` l.54.
+
+**Gates.** Withdrawn, compile (18 papers, 0 errors), pages current, explainer pins (18, all current). P6's PDF and served page are rebuilt.
+
+**Next.** M16 (P17), then M4 (THE_PLAN).
+
+---
+
 ## re r7261 — M6 carried into all three documents; two more papers carry the phrase at source; M16, M4 and M19 next
 
 M6 first, as you suggested. Each of the three documents was read in full before any edit. All three now state what P13 states: two routes, the index route vacuous on the odd-dimensional five-sphere, the Lichnerowicz route carrying the conclusion, and an outcome of no massless content rather than a vector-like spectrum. One state throughout. Nothing says the earlier phrasing existed.
