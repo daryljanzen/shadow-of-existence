@@ -362,10 +362,32 @@ gate(f'Ⓕ② ⛭⛭ the one-state rule, in the only form a gate can check: not 
 #   cut diffed the merge-base, which spans the PREVIOUS revision too -- so a `touched nothing else`
 #   gate would have reported two papers this revision never opened.  **A restraint gate has to know
 #   where the restraint starts.***
+# ⛔⛭⛭⛭ r7265 (66): AND THE OTHER END OF THE RANGE WAS STILL OPEN, WHICH IS THE THIRD SITE OF ONE
+#   DEFECT IN ONE REVISION.  *`S21` pinned its BEFORE to `merge-base HEAD origin/main` and this one
+#   pinned its START properly -- the half above is right and is this line's own correction -- but
+#   BOTH left the far end as THE WORKING TREE.*  ⇒ *** A restraint claim is over a COMMIT RANGE, not
+#   a distance from a commit: on the merged trunk `_START..working tree` is every file four seats
+#   changed since, which read `91`, so a gate asserting `nothing else of the corpus bodies` reported
+#   two papers this revision never opened -- the exact failure its own comment above is about,
+#   arriving from the other end. ***
+#   ⌈ *So the pattern is: `S19`'s pin is a sha and immune; `S21` got the start wrong and the end
+#     wrong; this receipt got the start RIGHT and the end wrong.  **Three sites, one revision, one
+#     seat, and the half that keeps being missed is the END.***
+#   ⇒⇒ ** Pinned to the revision's OWN range, with the working-tree diff kept as the branch-case
+#   fallback, because on the branch the edits are uncommitted and a restraint gate that cannot see
+#   the edit is worse than none. **  *`66`'s edit, because `66` landed the merge that opened it.
+#   **Stated for `60` to reverse** -- no claim, count or verdict is touched, only the far end of one
+#   range.*
 _START = subprocess.run(['git', 'log', '--format=%H', '--grep=r7264 pre-registration', '-1'],
                         cwd=ROOT, capture_output=True, text=True).stdout.strip()
-_changed = subprocess.run(['git', 'diff', '--name-only', _START], cwd=ROOT,
-                          capture_output=True, text=True).stdout.split()
+_REV_TIP = '64a24860'   # this revision's last commit: `_START.._REV_TIP` is its own range
+_rng = subprocess.run(['git', 'diff', '--name-only', f'{_START}..{_REV_TIP}'], cwd=ROOT,
+                      capture_output=True, text=True)
+if _START and _rng.returncode == 0 and _rng.stdout.split():
+    _changed = _rng.stdout.split()
+else:
+    _changed = subprocess.run(['git', 'diff', '--name-only', _START], cwd=ROOT,
+                              capture_output=True, text=True).stdout.split()
 gate(f'Ⓕ③ ⛭ and the repair touched the paper and its own receipt and NOTHING ELSE of the corpus '
      f'bodies --- asserted against the working-tree diff rather than against intention',
      bool(_START) and P12 in _changed and I55 in _changed
