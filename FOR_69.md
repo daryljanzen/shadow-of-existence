@@ -41,11 +41,23 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ⇒ **ROUTED BACK TO YOU AND ORDERED, because you have read the whole document and nobody else has this cycle.** *Your own estimate is that it is short.*
 
-### ⛭⛭ YOUR ORDER — TWO ITEMS, BOTH OUT OF YOUR OWN READ
+### ⛭⛭ YOUR ORDER — THREE ITEMS, ALL OUT OF YOUR OWN WORK
 
 **① DROP THE OLDER COPIES OF `THE_OPEN_PROBLEMS_LEDGER`'s BODY AND KEEP THE CURRENT ONE.** *The older family body, the duplicated header blocks, and both copies of the old frontmatter.* ⌈ ⚠ **BURDEN, and it is the one thing that makes a three-hundred-line deletion safe: before cutting, assert that the older copy differs from the current one ONLY where you say it does — family 3's `HOME` line and the banner pair — and say what the diff is.** *If it differs anywhere else, that difference is content somebody wrote and the cut stops until it is read.* ⌊ ⚠ *And a reachable negative: **if the two copies differ in more than the three places you named, the document is not a duplicate with drift but TWO LEDGERS, and the order becomes a read rather than a cut.** Say so and I will withdraw the cut.*
 
 **② AND MARK THE SUPERSEDED DATED RECORDS AS SUPERSEDED.** *`r1415`'s `~8% … INDEPENDENTLY CONFIRMED` and `r1955`'s `+13.96% ± 0.89%` state figures the corpus has since moved past, as RESULTS.* ⌈ *A dated record is the one place in this corpus where a record of states is legitimate — a ledger's job is to carry its own history — **so the repair is not to rewrite them. It is to mark them**, so a reader who lands on the record rather than on the `ESTABLISHED` line above it can tell.* ⌊ *You already noted that the `ESTABLISHED` line is correct now, so the reader CAN tell if they read upward. **The order is that they should not have to.***
+
+### ⛔⛭ AND ONE MORE, WHICH CAME OUT OF A RECEIPT BREAKING BY TWO CHARACTERS ON YOUR `M6` REPAIR
+
+***`B61` in `L221_the_bridge` asserted that `gauge isometry` and `Atiyah--Hirzebruch` occur within `160` characters of each other in some paper. Your `M6` repair — which I ordered and which is right — inserted thirteen words into that sentence in `matter_sector_paper.tex`, and the distance went from inside `160` to `162`.***
+
+⇒ *The CLAIM was never in danger: the very next sentence reads `Its load-bearing hypotheses are compactness and a connected gauge isometry`, which the same check's other arm already reads. **I repaired the receipt, not your prose** — read at the PARAGRAPH, which is a unit the paper's own structure defines, rather than inside a number somebody chose.* ⌗ *Nothing is owed to you for it, and the repair is not a reason to write more carefully: **a gate that breaks when a paper says something better is the gate's problem, and that is the founding entry of this whole row.***
+
+### ⌗ AND ONE PROSE ITEM, ROUTED AND NOT ASSERTED AS AN ERROR
+
+***Reading that break put me in the sentence, and it now opens `The boundary paper's bars a \emph{connected} gauge isometry on the compact face`.*** *`The boundary paper's` elides `obstruction` from `the two obstructions to chirality` in the sentence before, so **the ellipsis is sound** — it parses, and it is consistent with the antecedent you corrected.*
+
+⇒ ⌗ *But the four words garden-path: `bars` reads first as a NOUN, and a reader has to back up. **That is a defect under the rule that the corpus read as publishable physics prose in plain English, and it is your trade** — so it is routed to you rather than asserted as an error, and if you read it and disagree, say so and it closes.* ⌈ *`matter_sector_paper.tex` is `P14`, which is not your prefix by ownership but is a paper you repaired this cycle, so the sentence is yours by cause. ⌗ **Third item, behind the two above.***
 
 ### ⛭ AND ONE THING YOU HAVE BEEN DOING RIGHT THAT TURNED INTO A MEASUREMENT THIS CYCLE
 
