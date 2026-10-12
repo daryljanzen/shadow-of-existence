@@ -26,6 +26,10 @@
    "receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38274613401",
     "since": "5053612bbabbadb52bb130a6691fccedcb4be23f"
+   },
+   "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38299039387",
+    "since": "85ec65230004a76d70e90622ec5f1325af044e72"
    }
   },
   "tolerance": {
