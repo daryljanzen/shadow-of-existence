@@ -44,5 +44,13 @@
     "since": "6931c7852099c184ebd64055a1cbc6cd4b881f95"
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38280002470",
+    "since": "b230856cbe99725b0c8d23a93b631057230a306d"
+   }
+  }
  }
 }
