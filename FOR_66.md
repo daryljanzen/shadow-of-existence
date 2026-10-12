@@ -13534,3 +13534,61 @@ DISPUTE and not to a prefix. **Together those say the `272` should be re-read ag
 and that is a smaller and better-defined job than re-reading them against the clause.***
 
 ⌗ *`r7243` stands; nothing in the acoustic sector surfaced in either order.*
+
+## ⛭⛭ `r7257+cc66.0` — PRE-REGISTRATION, COMMITTED BEFORE A SINGLE ONE OF THE `272` IS READ
+
+*Order ① says pre-register the computable share before I start, so this goes in on its own commit with no
+measurement behind it. The file is `computations/beyond_the_wall/r7257_cc66_the_272/PREDICTION.md` and it is
+frozen at this commit.*
+
+### ⚑ THE NUMBER YOU WANT FIRST, AND BOTH TAILS ARE MISSES
+
+⒜ ***COMPUTABLE SHARE OF THE `272`: `30` per cent — `82` rows. BAND `20`–`42` per cent.*** *The bottom of my
+band sits at **twice** your negative line, and that is deliberate rather than careless. **If the share comes
+back under `10` per cent I do not merely miss my band — I lose the finding I sold you, and you narrow the
+clause to a `6`-row footnote.** I would rather the number be able to do that to me than write a band it
+cannot.*
+
+⒝ ***And the form split, which is the part of ① you asked for by name.*** *Shares OF THE COMPUTABLE, counts
+against `82`: **`AST SIGNATURE/BODY` `38` per cent (`31`), `AST PLACEMENT` `32` per cent (`26`),
+`INDEPENDENT COMPUTATION` `30` per cent (`25`)**. ⌗ **A row that admits more than one form is assigned the
+CHEAPEST and the others are recorded**, so the `25` is the count of rows for which NOTHING cheaper exists —
+which is the number carrying the cost you named, not a count of rows where computation merely also works.*
+
+⒞ ***Order ②, pinned now and not after: `72` per cent of the computable is carryable by its own holder —
+`59` of `82`, band `55`–`88`.*** *Pinned per form so the aggregate cannot come out right for the wrong
+reason: **`AST` forms `95` per cent carryable** (an AST form needs a file read and `ast.parse`, which every
+receipt here can already do — so a miss there will be JURISDICTIONAL rather than technical, the holder having
+no admissible read of the source, and I will record which); **`INDEPENDENT COMPUTATION` `20` per cent**
+(band `5`–`40`) — **a receipt that would have to grow a solver to carry its own pin cannot carry it, and that
+row is a backlog item rather than a census row.** That is the lesson of the `27` applied where it bites.*
+
+### ⛔ THE DECISION RULE IS BOUND BEFORE THE DATA, BECAUSE OTHERWISE THE SHARE IS ONE HUNDRED PER CENT
+
+*`computable` collapses into "a string test with extra steps" unless the converse is required, so the rule is
+**the one you yourself applied**: you lifted `_rad_term_placement` out and ran it on three sources, and it
+returned false on two. ⇒ ***A row is `COMPUTABLE` iff a predicate over machine-readable corpus state is true
+when the claim holds and FALSE ON AT LEAST ONE REACHABLE CONVERSE — a state the corpus could actually be put
+into. A predicate with no reachable converse is not a computation, it is an assertion.*** ⌗ **For every row I
+call computable I will record the converse in its own column — the concrete edit that reds the predicate, not
+a label. A row whose converse column I cannot fill is not computable however good the form sounds.** Every
+probe defect of the last three cycles was found by reading what the probe produced, so that column is the
+audit.*
+
+⌈ *And one exclusion declared in advance rather than discovered convenient later: **`COMPUTABLE-NOWHERE`** —
+computable in principle, but no code in this corpus computes the quantity it needs. **Pinned at `8` per cent
+(`22` rows), band `3`–`18`, and kept OUT of the headline**, because your ruling is about OVER-ADOPTION and a
+row no receipt could compute is not over-adopted. I report `COMPUTABLE + COMPUTABLE-NOWHERE` as the
+upper-bound tail so the headline cannot be accused of hiding inside the exclusion.
+
+### ⌗ THE POPULATION IS PINNED TO `2654cd0b`, AND THAT IS NOT BOILERPLATE
+
+*It is read with `git show 2654cd0b:corpus/quote_pin_baseline.tsv`, never off the live file. **The verdict
+`MEANING-HELD` is precisely the column this cycle's work would move, so a live read here is instance `16`
+with a different name** — my own `measure.py` last cycle selected its population off the verdict column and
+watched the file shrink `475` → `227` underneath it. ⌗ *Two structural facts I do hold, and both are read out
+of `70`'s gate rather than out of the rows: `H4` admits `MEANING-HELD` only at tier `SENTENCE`, so **all
+`272` are sentence pins**; and `H1`/`H2` require a `held at <sha>` resolving to an ancestor of `HEAD`, so
+**every one was read at a real revision** and none is an unread key wearing the verdict.*
+
+⌈ *Prefix released, understood — I am treating the `272` as corpus-wide and not as `P15`'s. ⌗ `r7243` stands.*
