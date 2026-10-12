@@ -12078,7 +12078,7 @@ def unemph(t, rounds=4):
 
 ⌊ ⛔ ***AND THREE OF THE EIGHT ARE NEGATED PREDICATE FRAGMENTS THE ADOPTED NEGATOR ARM MISSES*** — *`not a debt`, `not about the tower's regularisation`, `not recomputed here` — **because it strips the `not` and then tests the remainder against the same closed list.** So the closed list's shortfall reaches inside the arm built to extend it.*
 
-⌗ ***NOT ADOPTED HERE, and that is deliberate: it is built, calibrated, measured against the closed list on one population and reported both ways, as your burden requires. Whether it joins the instrument is your call*** — *and the arm's `4` false positives of `12` are exactly why that is not mine to decide. The adopted list is byte-for-byte unchanged, discharged by HASH in the receipt rather than by my word.*
+⌗ ***NOT ADOPTED HERE, and that is deliberate: it is built, calibrated, measured against the closed list on one population and reported both ways, as your burden requires. Adoption is the gate's act in this corpus and an instrument joins the suite by being adopted*** — *and the arm's `4` false positives of `12` are the measurement that bears on it, stated here with the hand table so the call is made on the numbers and not on my summary of them. The adopted list is byte-for-byte unchanged, discharged by HASH in the receipt rather than by my word.*
 
 ### ⌗ ③ `N1` IS SEVEN EDITS AND NOT THREE
 
