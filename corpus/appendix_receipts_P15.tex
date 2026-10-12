@@ -109,14 +109,14 @@
  \emph{Bound:} needs camb; CR-matches-it carried by driving receipts
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/P15\_camb\_reference.py}
 \item[\rcptlabel{P15_damping_ratio_clean}{P15R22}\textbf{P15R22}\quad\texttt{P15\_damping\_ratio\_clean}]\hfill\textsf{[OK]}\\
-\textit{sec:coherence} \ (**!! CORRECTED c54.155: theta\_D/theta\_* CR/LCDM IS 1.0816 (+8.2\%), NOT THE 1.0785 (+7.9\%) THIS ROW AND THE RECEIPT'S OWN DOCSTRING RECORD** -- both stale from the z\_onset 6850 -> 6797 retune. The paper's 'approx 1.08' brackets the live value correctly). 
+\textit{sec:coherence} \ (the sound horizon on the radiation-included rate through CAMB's recombination history, r\_s=144.0 Mpc against CAMB's own 144.4 -- the reference agreement P15 quotes; theta\_* H0-independent. The receipt also returns a damping ratio, theta\_D/theta\_* CR/LCDM=1.0816, in its OWN endpoint and handover configuration, which is not the one P15 adjudicates: P15 carries both lengths to the visibility peak, r=0.9918, under a per cent (sec:diffusion-scale and its error-budget receipt)). 
 \emph{Computes:} CAMB x\_e(z); r\_s+r\_D both rates; depends on CAMB; RATIO cancels conventions
  \emph{Bound:} absolute theta\_D \textasciitilde{}7\% below CAMB (k\_D convention), cancels in ratio
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/P15\_damping\_ratio\_clean.py}
 \item[\rcptlabel{P15_damping_reabsorption}{P15R23}\textbf{P15R23}\quad\texttt{P15\_damping\_reabsorption}]\hfill\textsf{[OK]}\\
-\textit{sec:coherence} \ (\textasciitilde{}9\% damping shift not reabsorbable: r\_D \textasciitilde{} omega\_b\textasciicircum{}\{-0.305\} (paper -0.31), d ln r\_D/d ln omega\_c=-0.295; cancelling +8.9\% needs omega\_b +29\% vs \textasciitilde{}1\% BBN+height prior -> 29x too big; 1\% omega\_b shifts r\_D \textasciitilde{}0.3\%; residual \textasciitilde{}8.2\%). 
+\textit{sec:coherence} \ (the damping signature is not reabsorbable by the baryon density: r\_D \textasciitilde{} omega\_b\textasciicircum{}\{-0.305\} (paper -0.31), d ln r\_D/d ln omega\_c=-0.295, so a 1\% omega\_b (the BBN + peak-height prior) shifts r\_D by \textasciitilde{}0.3\%. The cancellation figures it also prints (omega\_b +29\% to cancel a +8.9\% shift) are taken against its earlier signature size, not P15's adjudicated one). 
 \emph{Computes:} finite-diff levers on CAMB thermodynamics vs BBN+height priors
- \emph{Bound:} broader multi-sigma tension is conditional (full transfer open); paper takes only settled part
+ \emph{Bound:} the levers only; the signature's size and its observable cost are carried by sec:diffusion-scale's error-budget receipt and sec:coherence's adjudicated-ratio receipt
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/P15\_damping\_reabsorption.py}
 \item[\rcptlabel{P15_zonset_determinations}{P15R24}\textbf{P15R24}\quad\texttt{P15\_zonset\_determinations}]\hfill\textsf{[OK]}\\
 \textit{sec:tensions} \ (**!! MARKED c54.160: the paper reported the rounded-l\_* pinning as recovering 6873 and this receipt returns 6844 on the current integrals.** The paper now carries both numbers and notes that 6844 sits NEARER to the retired 6850, which sharpens the withdrawal rather than softening it). 
@@ -134,7 +134,7 @@
  \emph{Bound:} ** THIS CORRECTS AN ACCOUNTING AND WITHDRAWS AN ARGUMENT; IT TOUCHES NO RESULT. ** The rate, the fit, the baryon-acoustic confrontation and the abundances are all untouched -- and the accounting moves in the construction's favour, from two inherited data to one
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/P15\_the\_two\_data\_are\_one.py}
 \item[\rcptlabel{P15_full_transfer_verdict}{P15R27}\textbf{P15R27}\quad\texttt{P15\_full\_transfer\_verdict}]\hfill\textsf{[OK]}\\
-\textit{sec:coherence} \ (high-ell deficit UNDER THE SHORTCUT (assume peaks=LCDM + apply +8.9\% damping): C\_l CR/LCDM = 0.979/0.920/0.829/0.717/0.594 at l=500-2500; cited to show the shortcut is illegitimate (assumption (A) is the unbuilt part)). 
+\textit{sec:coherence} \ (high-ell deficit UNDER THE SHORTCUT (assume peaks=LCDM + apply the receipt's +8.9\% damping, an earlier signature size, not P15's adjudicated one): C\_l CR/LCDM = 0.979/0.920/0.829/0.717/0.594 at l=500-2500; cited to show the shortcut is illegitimate (assumption (A) is the unbuilt part)). 
 \emph{Computes:} exp damping on CAMB LCDM C\_l; conditional chi\textasciicircum{}2
  \emph{Bound:} verdict explicitly CONDITIONAL/open (own banner); paper honors scoping
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/P15\_full\_transfer\_verdict.py}

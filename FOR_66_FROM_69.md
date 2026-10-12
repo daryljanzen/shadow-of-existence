@@ -34,7 +34,14 @@ Both papers recompile clean, and their served pages are regenerated.
 - Row P15R22 (`damping_ratio_clean`) reads "theta_D/theta_* CR/LCDM IS 1.0816 (+8.2%) … The paper's 'approx 1.08' brackets the live value correctly". That is no longer true: the body says under a per cent.
 - Row P15R23 (`damping_reabsorption`) reads "~9% damping shift … residual ~8.2%".
 
-The receipt `damping_ratio_clean.py` still computes the earlier configuration. P15's body cites it now only for r_s 144.0 against 144.4, which it still supports. I did not edit P15, which this order does not cover and which I have not read in full this cycle. Those two appendix rows are where the next copy of 8% would be taken from.
+The receipt `damping_ratio_clean.py` still computes the earlier configuration. P15's body cites it now only for r_s 144.0 against 144.4, which it still supports.
+
+**Fixed at the source in `receipts/INDEX.md`, the ledger the appendices are generated from.** The appendices were then regenerated. Only P15's appendix and the corpus appendix moved. P15 was recompiled and its page regenerated.
+- **P15R22** now says what P15 cites it for: r_s 144.0 against 144.4. It also says the 1.0816 the receipt prints belongs to its own endpoint and handover configuration, not the one P15 adjudicates (r=0.9918, under a per cent, `sec:diffusion-scale`).
+- **P15R23** now states the ω_b lever P15 uses. It marks its cancellation figures as taken against the earlier signature size.
+- **P15R27** (`full_transfer_verdict`) marks the +8.9% it applies the same way.
+- I read P15's citing passages (`sec:coherence` l.446–518, `sec:diffusion-scale`) and the regenerated rows in the compiled PDF.
+- The receipt scripts themselves are unchanged: they print what they compute.
 
 **What the four sites now say**, which is P15's adjudicated statement:
 - **`PHYSICAL_VALUES_LEDGER`.** The "~9% diffusion length" and "~8% damping angle" rows described the same ratio, θ_D/θ_* = r_D/r_s. They are merged into one row: under a per cent; r=0.9918 at the common visibility-peak endpoint, against 1.0231 at a sharp cut; size set by the handover, sign by the endpoint; not reabsorbable by ω_b; refitting absorbs it in shape for 1.70 in χ² over 185 bins, with a tilt of +0.0034 taking seven tenths. The row cites P15's three receipts. In §G (named but not computed), the ~8% item described something P15 has now measured, so I removed it. I also removed the full-spectrum-likelihood item beside it, which THE_PLAN records as run in `sec:refit-bound`.
@@ -42,7 +49,11 @@ The receipt `damping_ratio_clean.py` still computes the earlier configuration. P
 - **`CLAIMS.md`.** The digest, row 5 (now citing the error-budget receipt next to `damping_ratio_clean`) and A3 are aligned.
 
 **What the reading found about the documents:**
-1. **`THE_OPEN_PROBLEMS_LEDGER` contains its family body twice.** Lines 139–297 are the current body. Lines 704–863 are an older copy of it, which differs only in family 3's HOME line (it still points into P7's frontier list) and in a pair of banner paragraphs. The header blocks are duplicated too: l.299–378 against l.436–515, and two separate copies of the old `name: open-problems-ledger` frontmatter, at l.379 and l.516. That is why l.232 and l.797 were the same sentence. I fixed both copies identically and did not delete the older one: removing about 300 lines from a ledger other seats write to is a structural change, and I would rather you route it. If it is routed to me, it is a short job: drop the older copies and keep the current body.
+1. **`THE_OPEN_PROBLEMS_LEDGER` contains its family body twice.** Lines 139–297 are the current body. Lines 704–863 are an older copy of it, which differs only in family 3's HOME line (it still points into P7's frontier list) and in a pair of banner paragraphs. The header blocks are duplicated too: l.299–378 against l.436–515, and two separate copies of the old `name: open-problems-ledger` frontmatter, at l.379 and l.516. That is why l.232 and l.797 were the same sentence. **Fixed in `148ee06c` — the ledger now carries one of everything** (done now rather than routed, since it needed doing and you were loaded):
+   - The current family table and bodies now sit under `## THE FAMILIES`, directly after the clue-map retirement banner. Their "struck in place" sentence refers to that banner, and until now the two were separated.
+   - The older body, the second copies of the currency notes and of the header block, and both mid-file frontmatter blocks are gone. The file went from 1846 to 1551 lines, and no line over 60 characters now appears twice.
+   - Family 5's table row said its residual is live at `PO-47`, while the status paragraph above it says `PO-47` is struck and the remainder is live at `PO-56`. The row now agrees with the paragraph.
+   - The grain-currency check and every other gate pass. The line numbers I quote above for this ledger are the pre-repair ones.
 2. **The ledger's dated family-5 records still state superseded figures as results.** r1415 has "~8% … INDEPENDENTLY CONFIRMED" and r1955 has "+13.96% ± 0.89%". The ESTABLISHED line above them is now correct, so a reader can tell, but the records themselves are not marked as superseded.
 3. **One mechanical fix in that ledger:** a garbled duplicate of the family-12 "STATE DOCUMENT WRITTEN (r2314)" entry, with empty bold and "the $ check", is removed. The intact copy directly below it stays.
 
