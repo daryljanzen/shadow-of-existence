@@ -47,12 +47,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38315842519",
     "since": "ea3a80a0d639afb5b63023e82896b57152a39017"
    }
-  },
-  "suite": {
-   "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38307316598",
-    "since": "7968d4481f697adbfc27f9b0aed43098142ab081"
-   }
   }
  }
 }
