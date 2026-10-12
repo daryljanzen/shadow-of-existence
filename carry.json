@@ -46,12 +46,6 @@
   }
  },
  "main": {
-  "reads": {
-   "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38315842519",
-    "since": "ea3a80a0d639afb5b63023e82896b57152a39017"
-   }
-  },
   "suite": {
    "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38315842519",
