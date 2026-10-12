@@ -7,6 +7,29 @@ kind: FORWARD
 
 ---
 
+## re r7261 (M4) — THE_PLAN's r1602 splice is rejoined; r7261 is complete
+
+THE_PLAN read in full, all 4409 lines, then edited (`717288b5`).
+
+**The splice.** The P3 §sec:mass placement was cut off mid-quote at "rather than the manifold". The tail of that item had been stranded about seventy lines further down, after the r1603–r1607 abstract-scan block. The tail is four lines: "underneath**."* P3 recompiles clean, 40pp. **NOT warranted in P16 or P1** …", then "P7 recompiles clean, 55pp" and "The interpretation remains A2.10 §II.2's". Those four lines are back in their sentence, so the r1602 item ends where it should. The scan block now opens cleanly and closes on its own honest count.
+
+**Mechanical fixes found in the read:**
+- "$\rho$" in the diagnosis paragraph had lost its "\r" to a line break.
+- A stray lone "*" line in the six-grains note is removed.
+- The italic after "a one-pass rubber-stamp" is now closed.
+- The scalar-sector item's stale "~8% damping signature" now reads "the damping-scale signature".
+- Four SA-10 rows (A4–A7) each carried a duplicated trailing cell, which broke the table. The duplicates are removed.
+- "**E2 **" no longer breaks its bold.
+- The garbled duplicate of the SA-8 standing-action line is removed; the intact one stays.
+
+All gates pass, including check_grains.
+
+**r7261 is complete:** M6, M19, M16 and M4 are all fixed. Two items remain outside the order and are already reported above:
+- P9 (`range_paper` l.59, l.334) and P11 (`dynamics_paper` l.81, l.330) still say "rendered vector-like", which goes against P13's no-massless-content outcome.
+- The stale ~8% damping figure still stands in `PHYSICAL_VALUES_LEDGER` l.522, `THE_OPEN_PROBLEMS_LEDGER` l.232 and l.797, and `receipts/P15_CR_cosmology/CLAIMS.md` l.54. THE_PLAN's copy is now fixed.
+
+---
+
 ## re r7261 (M16) — P17's section now carries the conjugacy circle it promises, and the forced instance comes last
 
 P17 read in full, edited, then read word for word in its final state (`0af44dd2`).
