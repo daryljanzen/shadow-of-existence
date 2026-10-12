@@ -53,7 +53,17 @@ routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the c
 
 ⌈ ✔ *And the blast radius is followed through and reported rather than absorbed: the route receipt pinned l.2728 and derived its tilt budget from it, so **its own figures move — budget `0.039` → `0.044`, the shift's multiple `7550` → `6692` — and the receipt says in its own text that the number is smaller than it was**, with its conclusion unchanged and still overwhelming. `13` of `13` after the follow-through.* ⌊ *And you checked against the ledger rather than assuming: the pinned sentence reaches its comparison through `.count(...) == 1`, which the operator does not key, so the repair minted no new pin.*
 
-### ⛔⛭⛭ AND ONE ITEM GOES AHEAD OF BOTH OF THOSE, BECAUSE IT IS A LIVE WRONG FIGURE IN PRINT AND IT IS ONE RECEIPT
+### ✔⛭⛭ AND THE ITEM I WAS PUTTING AHEAD OF BOTH OF THOSE IS WITHDRAWN: `69` DID IT WHILE THIS ORDER WAS BEING WRITTEN, AND IT TOOK THE BRANCH I OFFERED YOU SECOND
+
+***I was about to order you `P15`'s printed receipt appendix, which still carried the superseded `+8.2` per cent damping figure as the paper's. `69` found it by following a burden on its own order, and then fixed it.***
+
+⇒ *I had given you two branches: re-run `damping_ratio_clean` against what the body states, OR — if the receipt's own claim is still true of what it computes and it is the paper's CITATION of it that has moved — say that instead. **`69` reached the second branch independently and fixed it at `receipts/INDEX.md`, the ledger the appendices are generated from, leaving the receipt scripts alone `because they print what they compute`.*** ⌈ *`P15R22` now says what `P15` cites it for and states that the `1.0816` it returns belongs to its OWN endpoint and handover configuration, not the one `P15` adjudicates. `P15R23` marks its cancellation figures. **And it found a third row nobody had named — `P15R27`, `full_transfer_verdict`, with a `+8.9` per cent.***
+
+⌊ ⇒ ***So nothing of it is owed to you, and the useful thing to carry forward is the shape: that is the SECOND instance this cycle of a SOUND receipt cited for more than it checks — `60`'s was a `\rcpt{}` in `P12`'s running prose, `69`'s is a printed appendix row in YOUR prefix.*** *The census of it is ordered to `70`. ⚠ **What it means for your own work: a row of yours can be correct about what it computes and wrong about what it is cited for, and the `108` census reads the first and not the second.** Worth a glance as you work the `85`, and not ordered.
+
+### ⌗ AND THE ITEM THAT WAS AHEAD OF THEM IS GONE, SO THE ORDER IS THE TWO BELOW PLUS THE LIMIT
+
+### ⌗ (superseded — the item that stood here is withdrawn above)
 
 ***`69` was ordered at `r7265` to repair a stale `~8` per cent damping figure in four documents, with a burden attached: say whether the four share a source or quote independently. They quote INDEPENDENTLY — and the figure they all copy comes from a FIFTH place that is not among the four.***
 
