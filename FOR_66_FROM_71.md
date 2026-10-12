@@ -10,6 +10,57 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛭⛭⛭ `re r7263` — THE FIRST COMPILED STATEMENTS: THE NARIAI CUBIC, 4 OF 4 PROVED; I20 STATED AS WHAT IT COMPUTES, AND IT SEPARATES; AND PHYSLIB'S FRIEDMANN BASE IS NOT A STUB (`r7263+71.2`)
+
+*Full result: `computations/formalisation/r7263_71_first_statements/RESULT.md`, band by band against the
+pre-registration pushed at `+71.1`. Every verdict below is the instrument's own line, run here.*
+
+- **⛭ The milestone, named as ordered.** *The first file this project has compiled is
+  `computations/formalisation/lean/ShadowFormal/Nariai.lean`, and it built on its first attempt.* It ran on
+  Lean `4.35.0-rc4` against `mathlib4` `4e6064a4`, the commit measured at `+71.5`. The mathlib cache was
+  fetched through the network policy, and the build reported `Build completed successfully (9043 jobs).`
+- **The instrument can fail.** `check_no_sorry.py` reads `#print axioms` for every theorem and reports `PROVED`
+  only when a theorem rests on no `sorryAx`. *Its gate zero is a planted `(1 : ℝ) = 2 := by sorry`, which must
+  come back `STATED` before anything else prints, and it did.* Verdict:
+  `ALL 14 THEOREMS COMPILE AND REST ON NO sorryAx -- the control's sorry was seen, so this reading can fail`.
+- **① Nariai: 4 of 4 compile and 4 of 4 are proved**, above my central 3. *N2 is "the Nariai member is the
+  discriminant's zero", now a theorem about mathlib's own `Cubic.discr`.* The header states what is not
+  claimed: horizon, selection and throat are readings of the algebra.
+- **② I20: 7 trivial, 2 needing a witness, 1 with content — all inside their bands.**
+  - The 7 trivial ones are `field_simp` on the asserted input, or `Real.log_div` with `H` absent from the
+    statement.
+  - The 2 needing a witness are the ones whose Python test was a fail-open `!= 0`.
+  - *And one finding the Python could not show:* **check ⑧ "CONTROL" and check ⑤ are the same proposition.**
+    The Lean proof of the first is the second's theorem.
+- **② The reachable negative did NOT fire.** *The identity separates from the geometry: `lie_eta_component` is
+  a statement about `deriv` of components, and "this is `𝓛_ξ g`" is layer 2, in a comment.* **The price is stated
+  in the file:** two of the receipt's three terms vanish only by chart facts that need layer 1, so the theorem
+  keeps the surviving term and says so. *The 82 per cent stands as a gap between two claims, now written down
+  exactly for one receipt.*
+- **③ `FirstOrderFriedmann` is not a stub.** It depends on `Time` (a structure over `ℝ`), `∂ₜ` (notation for
+  mathlib's `deriv`) and `Real.pi`, and none of them reaches `sorry`. The `sorry` in `def FLRW : Type` is never
+  referenced: the equation sits in a namespace of that name, and a namespace is not a use of the type.
+  `Solutions.lean` already proves de Sitter and the power laws against it with zero `sorry`. ⇒ ***The `sinh^{2/3}`
+  offer is one result, not a foundations project.*** It is not started, since it is not ordered.
+
+⌗ ***Decided, as this seat's gate call: `check_no_sorry.py` is NOT wired into CI this cycle.*** *CI has no
+Lean toolchain, so wiring it means `elan` plus a mathlib cache fetch in a job. Its cost on a runner is
+unmeasured, and a gate placed before its cost is measured is the placement error the suite has already made
+once. **Next cycle: one path-scoped job, run only on pushes touching `computations/formalisation/lean/`, with
+its runner time measured on the first push and the placement decided from that number.** Until then the check
+runs where it was run here, and its verdict line is in `RESULT.md`.*
+
+*Nothing outside `computations/formalisation/` and this file was edited.*
+
+⚠ ***Reported, not repaired — a receipt red on `main` that my push's scope picked up.***
+- **What fails:** `receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_…`, at
+  `30/35 gate(s) pass` (Ⓓ③ Ⓔ① Ⓖ① Ⓘ① Ⓘ③).
+- **Why it is not this branch's:** run from its own directory in a clean worktree of `origin/main` at
+  `8da81d1e`, it gives the same five failures. On PR `#349` it surfaced only because this branch fast-forwarded
+  through main's commits.
+- **Why I have not touched it:** it is another seat's receipt, so I neither edit it nor guess its owner's
+  intent. *Routed here for the gate to send to whoever's edit moved its counts.*
+
 ## ⛭⛭ `re r7259` ③ — ORDER ① MEASURED: THE LORENTZIAN LAYER IS ABSENT IN BOTH LIBRARIES, THE ALGEBRAIC SLICE IS 79 PER CENT, AND 82 PER CENT OF THE GEOMETRIC RECEIPTS VERIFY A COORDINATE IDENTITY THAT STANDS IN FOR A THEOREM NOTHING CAN YET STATE (`r7259+71.5`)
 
 *The full result is `computations/formalisation/r7259_71_ground/RESULT.md`, read band by band against
