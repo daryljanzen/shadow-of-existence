@@ -13692,3 +13692,55 @@ of `70`'s gate rather than out of the rows: `H4` admits `MEANING-HELD` only at t
 *Order ② — `CR_cosmology.tex` quoting the tilt refit as `0.995`/`0.956` at l.2728 and `0.998`/`0.954` at l.912, **one quantity and two value pairs in one paper** — is a defect to repair and not a measurement. A full read of the passage before the edit, as ordered. Reported this cycle in its own section. ⌗ Same for the `P15` optical-depth row you routed back at ⒝: a one-row ledger correction, taking the resolved `PAPER` target.*
 
 ⌈ *`r7243` stands.*
+
+## ⛭⛭⛭ `r7261+cc66.3` — **THE NEGATIVE MISSES BY `58.5` POINTS AND BOTH PINNED NUMBERS LAND. ⛭ BUT THE FINDING IS THE `14` THAT DO NOT: THEY ARE ONE HOLE, AND IT IS THAT THIS CORPUS COMPUTES A ZERO-MODE NOWHERE IN A FUNCTION. ⛔ AND A PRE-REGISTERED IDENTITY FAILED, BECAUSE A CHEAPER FORM CAN COST A READ**
+
+*Order ① ⒜ and ⒝ and order ② are all complete. `C71` is in, `43` checks, all pass, and the pre-registration was pushed at `94c05044` before the census was worked or one of the `85` matched.*
+
+### ⛭⛭⛭ ⒝ THE NUMBER YOUR NEGATIVE WAS ON, AND IT KEEPS `computable` AS A STATEMENT ABOUT WORK
+
+⒜ ***`71` of the `85` have a named nearest FUNCTION — `83.5` per cent, against a pinned `82` and a band of `65`–`93`. INSIDE.*** *Your negative needed **under `25`** and the fraction misses that line by **`58.5` points**, so the `71` per cent is about work and not about possibility, and the headline takes no qualifier.*
+
+⒝ ***And the audit is per row, not per class, as bound: `22` modules and `30` functions, every one resolved against the tree by AST before the file is written.*** *`59` rows are a change of inputs to a named function and `12` a short extension. **A named function that was not in the file it is named in would be the same defect as a witness class resolved by a word in prose — the one I tightened in my own instrument last cycle — so `Ⓔ①` raises on it rather than warning.***
+
+### ⛭⛭⛭ AND THE FINDING IS THE `14` THAT HAVE NONE, BECAUSE THEY ARE ONE HOLE AND NOT FOURTEEN GAPS
+
+***`13` of the `14` want a zero-mode, a kernel or an equivariant index — and `0` of the `665` function names under `computations/` computes one.*** *`L110_the_count_specified.py`, `L78_the_mode_through_the_branch_point.py`, `L75_the_wall_is_the_graze_point.py`, `L15_the_quark_lepton_frontier.py` and `L117w_the_colourless_sector.py` are **top-level sympy scripts with no `def` in them at all**.*
+
+⇒ ***THIS IS WHAT THE DOMAIN-VERSUS-QUANTITY DISTINCTION WAS FOR, AND IT EARNED ITS KEEP IN THE ONE PLACE IT MATTERED.*** *I declared before looking that `r7257`'s witness test was domain-level and **all `85` passed it by construction**, so a high answer here must not be credited to it. **The `ZM` class resolved to `24` modules at domain level and to ZERO functions at quantity level. The one block where a high answer would have been unearned is the one block that failed.***
+
+⌈ *So the shape of the backlog is not `85` scattered needs. It is `71` rows a named function reaches and **one missing capability** standing behind the rest. That is a smaller thing to order than I expected to be reporting.*
+
+### ✔⛔ ⒜ THE CENSUS LANDS IN BAND AND MISSES ON SIZE
+
+*`67` of `108` record an AST form — **`62.0` per cent, inside the pinned band `58`–`72`** and above the `58.3` no-movement floor, so the movement I predicted did happen. ⛔ **But `4` rows moved against `6` pinned: the direction was right and the size was not.*** ⌗ *And the `2` I pinned and did not take are recorded with the reason rather than dropped — one would have taken an **absence-of-CODE** form that is WEAKER than the paper's claim, which is not the cheapest form but a different claim; the other has a computed outcome where an AST-PLACE form would assert a position instead.*
+
+### ⛔⛔ AND HERE IS THE ONE I OWE YOU PLAINLY: A PRE-REGISTERED IDENTITY FAILED
+
+*I pinned that ruling ③'s flag would leave `108 − 41 = 67`, `C70`'s strict carry count, and I told you the identity was **gate-checkable rather than asserted**. ***It is `64`.***
+
+⇒ ***THE CAUSE IS STRUCTURAL AND NOT A MISCOUNT: `3` of the `4` movers are held by receipts that open no source file. Taking a row to its CHEAPEST form bought an AST test and COST a read — while the `INDEP` form it left needed only a capability those holders already have.*** ⇒ ***So a cheaper form can LOWER the strict count, and the cheapest-form rule and ruling ③'s flag interact in a way neither ruling anticipated: the strict count is not invariant under the census, it is a function of which form each row records.***
+
+⌈ ***Your CONDITION still holds — the strict count is recoverable from the same table, at `64` — and what failed is my prediction of its value.*** *I would rather you had the distinction from me than find the `67` in my own file and wonder which of us was wrong.*
+
+### ⛭⛭ ORDER ②: THE PAPER HELD TWO VALUE PAIRS, AND A THIRD EXISTS THAT IS NOT A RIVAL
+
+⒜ ***The authority is the COMPUTED pair and not the better-cited one.*** *`sec:refit-bound` (l.912) reports the tilt as `$0.998$` against `$0.954$`, `bluer by $0.044$`, and the `1p57` receipt runs both arms through the instrument: its own table gives the TT minima at **`0.9980` and `0.9542`**. The `sec:transmission` item at l.2728 — **which cites `sec:refit-bound`** — carried `$0.995$`/`$0.956$`. ⇒ **l.2728 is repaired to agree with the section it was already citing, and that pair is now gone from the paper entirely.**
+
+⒝ ⌗ ***AND A THIRD PAIR IS REAL, said so that nobody later `fixes' the paper to it:*** *`refit_grid/best_cr.npy` and `best_lcdm.npy` carry **`0.9915` and `0.9530`**. That is the **response-model** refit over `132` bins at `$\ell$`100–1287 with lensing, a different likelihood scope from the full TT minimum. **Two quantities, not two answers** — and it is the one I would have taken by mistake had I stopped at the grid.*
+
+⒞ ⚠ ***THE BLAST RADIUS IS FOLLOWED THROUGH AND REPORTED RATHER THAN ABSORBED.*** *The route receipt PINNED the l.2728 sentence and derived its tilt budget from it, so the repair moves its own figures: **budget `0.039` → `0.044`, and the shift's multiple of it `7550` → `6692`.** Its conclusion is unchanged and still overwhelming, and **the number in its sentence is smaller than it was and the receipt says so in its own text.** `13` of `13` gates pass after the follow-through. ⌗ *The pinned sentence reaches its comparison through `.count(...) == 1`, which the operator does not key, so the repair minted no new pin — checked against the ledger rather than assumed.*
+
+### ✔ ⒝'s ROUTED LEDGER ROW, AND ONE LINE THAT IS WORTH HAVING
+
+*`P15`'s optical-depth key takes the RESOLVED `PAPER` target as ruled, verdict untouched, with the row recording the `25` false disagreements the container defect produced.*
+
+⌈ ⌗ ***And the pinning was load-bearing rather than boilerplate: since `2654cd0b`, `3` of the `272` have LEFT `MEANING-HELD` and `1` has joined — the live count is `270` — and one of the three departures is a row this census counts.*** *The unit is the pinned population, `Ⓐ④`–`Ⓐ⑥` prove it, and I am flagging the drift so nobody reads `272` as a live number.*
+
+### ⚠ WHAT IS ROUTED TO YOU
+
+⒜ ***The zero-mode hole, which is the one thing here I would ask you to set rather than infer.*** *`13` backlog rows stand behind it and it is one capability: a function that computes a zero-mode count, a kernel dimension or an equivariant index. **It is not mine to open as a prefix** — the rows are corpus-wide and the nearest code is `70`'s and `60`'s territory as much as mine.*
+⒝ ***Whether the strict count stays a reported number at all***, now that it moves with the form each row records. *If it does, it needs a definition that says which form the count is taken at; if it does not, ruling ③'s flag column still does its work and the number goes.*
+⒞ *Unchanged and still waiting: `60`'s two questions, and `70`'s `gen_pin_board` placement.*
+
+⌗ *`r7243` stands; nothing in the acoustic sector surfaced.*

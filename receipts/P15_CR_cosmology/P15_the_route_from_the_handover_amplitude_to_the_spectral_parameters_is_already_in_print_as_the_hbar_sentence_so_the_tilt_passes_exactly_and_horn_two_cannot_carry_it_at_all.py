@@ -38,10 +38,10 @@ sections**, and `sec:transmission` already asserts the join without giving it: *
       `$A_s$`, and that is the whole of what the route costs.*
 
 ⛔ ** AND THE ROUTE IS UNAVAILABLE ON HORN ⓶ -- NOT MERELY DEARER, UNAVAILABLE, BY THE PAPER'S OWN
-   TILT BUDGET. **  *`sec:refit-bound` prefers `$0.995$` here against `$0.956$` on the standard
-background, so the whole budget for any tilt the route itself contributes is the gap, `0.039`.  A
+   TILT BUDGET. **  *`sec:refit-bound` prefers `$0.998$` here against `$0.954$` on the standard
+background, so the whole budget for any tilt the route itself contributes is the gap, `0.044`.  A
 transfer with a sound speed is not `$k$`-free: by `r7142` its logarithmic slope is `$-c_skL$`, so on the
-spectrum it shifts the tilt by `$2c_skL`$ -- **`294.45` at the first acoustic peak, `7.5\\times10^{3}`
+spectrum it shifts the tilt by `$2c_skL`$ -- **`294.45` at the first acoustic peak, `6.7\\times10^{3}`
 times the entire budget.***  ⇒ *** So the pricing `r7142` inverted does not merely favour horn ⓵: the
 route exists on horn ⓵ and cannot exist on horn ⓶, because the only transfer horn ⓶ permits destroys
 the tilt it is supposed to deliver. ***
@@ -64,7 +64,7 @@ here touches it.  ⛔ *The route also says nothing about the acoustic COMB, whic
 `$\\hbar$` and `$n_s$` all free; `$\\partial_k$` of the standard potential equation at `$w=0$` and at
 `$w=1/3$`; the handover ratio and its square; and the horn-⓶ tilt shift from the segment's conformal
 length in the paper's own closed form.  *** THE ONLY NUMBERS PINNED ARE THE PAPER'S OWN *** -- its
-`$0.4835$`, its `$\\Psi_i/2$`, its three per cent, its `$0.995$` and `$0.956$`, its `$-255$`-fixed
+`$0.4835$`, its `$\\Psi_i/2$`, its three per cent, its `$0.998$` and `$0.954$`, its `$-255$`-fixed
 wavenumber and its `$c_0B(1/6,1/2)/2$`. **
 
 ⌗ *The guard this one leaves: ** when a row's last step is a route between two things the corpus
@@ -224,9 +224,19 @@ gate("Ⓓ② AND THE DOUBLING IS THE LEADING ORDER OF THE SQUARING AND NOTHING E
 # ============================================ E. horn 2 cannot carry the route at all
 head("E.  AND HORN ⓶ CANNOT CARRY THE ROUTE AT ALL, BY THE PAPER'S OWN TILT BUDGET")
 
-_REFIT = (r"refitting both arms on this construction's own background prefers a tilt of $0.995$ here "
-          r"against $0.956$ on the standard one")
-BUDGET = mp.mpf('0.995') - mp.mpf('0.956')
+# ⛭ r7261+cc66.2 -- THE PAPER CARRIED TWO VALUE PAIRS FOR ONE QUANTITY AND THIS RECEIPT PINNED THE
+#   WRONG ONE.  `sec:refit-bound` (l.912) reports the TT minimum as `$0.998$` against `$0.954$`,
+#   `bluer by $0.044$`, and its own receipt's table computes `0.9980` and `0.9542` through the
+#   instrument.  The `sec:transmission` item at l.2728 -- which CITES `sec:refit-bound` -- quoted
+#   `$0.995$` against `$0.956$` instead.  Node `71` located both lines; the paper is repaired at
+#   l.2728 to agree with the section it cites, and this literal and budget follow it.
+#   ⚠ THE CORRECTION MOVES THIS RECEIPT'S OWN FIGURE AND IS REPORTED RATHER THAN ABSORBED: the
+#     budget goes `0.039` -> `0.044` and the shift's multiple of it `7550` -> `6692`.  The conclusion
+#     is unchanged and still overwhelming -- a larger budget still loses by three orders of
+#     magnitude -- but the number in the sentence is smaller than it was and says so.
+_REFIT = (r"refitting both arms on this construction's own background prefers a tilt of $0.998$ here "
+          r"against $0.954$ on the standard one")
+BUDGET = mp.mpf('0.998') - mp.mpf('0.954')
 c0 = 2 / (mp.sqrt(3) * 2 ** (mp.mpf(1) / 3))
 L = c0 * mp.beta(mp.mpf(1) / 6, mp.mpf(1) / 2) / 2          # the paper's own closed form
 K1 = mp.mpf(255) / L                                        # the wavenumber its `-255` fixes
@@ -235,9 +245,9 @@ SHIFT = 2 * CS * K1 * L
 print(f"      the refit clause: {b15.count(_REFIT)}x;   budget = {mp.nstr(BUDGET, 4)}")
 print(f"      `$L$` from the paper's closed form = {mp.nstr(L, 12)};   `$k$` at the first peak = "
       f"{mp.nstr(K1, 10)};   tilt shift `$2c_skL$` = {mp.nstr(SHIFT, 9)}")
-gate("Ⓔ① THE BUDGET IS THE PAPER'S OWN GAP, `$0.995$` AGAINST `$0.956$`, SO `0.039` -- located, not "
+gate("Ⓔ① THE BUDGET IS THE PAPER'S OWN GAP, `$0.998$` AGAINST `$0.954$`, SO `0.044` -- located, not "
      "chosen here",
-     b15.count(_REFIT) == 1 and abs(BUDGET - mp.mpf('0.039')) < mp.mpf('1e-12')
+     b15.count(_REFIT) == 1 and abs(BUDGET - mp.mpf('0.044')) < mp.mpf('1e-12')
      and abs(L - mp.mpf('3.3387380236')) < mp.mpf('1e-10'))
 
 gate(f"Ⓔ② *** AND A TRANSFER WITH A SOUND SPEED IS NOT IN `Ⓑ①`'s CLASS, SO IT ENTERS THE TILT: by "
@@ -245,8 +255,8 @@ gate(f"Ⓔ② *** AND A TRANSFER WITH A SOUND SPEED IS NOT IN `Ⓑ①`'s CLASS, 
      f"first acoustic peak -- `{mp.nstr(SHIFT / BUDGET, 3)}` times the ENTIRE budget. ***  ⇒ ** So the "
      f"route exists on horn ⓵ and cannot exist on horn ⓶: the only transfer horn ⓶ permits destroys "
      f"the very tilt it is supposed to deliver **",
-     abs(SHIFT - mp.mpf('294.448637')) < mp.mpf('1e-5') and SHIFT / BUDGET > 7000
-     and SHIFT / BUDGET < 8000)
+     abs(SHIFT - mp.mpf('294.448637')) < mp.mpf('1e-5') and SHIFT / BUDGET > 6600
+     and SHIFT / BUDGET < 6800)
 
 gate("Ⓔ③ ⌗ AND THE CONTRAST IS THE SAME ALGEBRA AS `Ⓑ②` RATHER THAN A SECOND ARGUMENT: substituting "
      "`$T=e^{-c_skL}$` into `$\\dd\\ln(T^pP)/\\dd\\ln k$` returns `$n_s-1-pc_skL$` symbolically, which "
