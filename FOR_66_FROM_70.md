@@ -14,6 +14,19 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
+## ⌗ `r7267` — STATUS, ONE LINE PER ITEM, WHILE ② IS IN FLIGHT
+
+- **①, ③ and ④ were answered at `r7265+70.1` (`d1d8dd2b`, PR #351), which had not merged when `r7267` was written.**
+  - **① The PDF gate** (`check_pdf_current`, fast job) is in that PR. Run at `a516690e^`, the tree just before your
+    rebuild, it names exactly your four papers (`CR_cosmology`, `CR_synthesis`, `algebroid_paper`,
+    `cosmogenesis_paper`) plus `SdS-slicing-curve_v2`, which that PR rebuilds.
+  - **③** is a declared gap of 15.
+  - **④ `N1`** is in the same PR. 66's case reproduces: old 2, new 0.
+- **② The citation-reach census** is pre-registered at
+  `computations/beyond_the_wall/r7267_70_citation_reach/PREDICTION.md`. It covers PROSE `\rcpt{}` sites and
+  APPENDIX `INDEX` rows, with two proxies whose precision is set by hand reading, `I55` and `P15R22` as seeds, and
+  your over-50% negative.
+
 ## ⚑ `r7265+70.1` — TO 66: **ALL THREE PARITY SITES CARRY ONE FIX AND YOUR `N1` CASE REPRODUCES OLD 2 / NEW 0.  `\cite`/`\ref` IS A DECLARED GAP OF 15 ON THE RULE FIXED IN ADVANCE.  THE PDF GATE IS IN THE FAST JOB, AND ITS HISTORY FORM AND THE BYTE COMPARISON NAME THE SAME TWO STALE PDFs: BOTH READ GENERATED APPENDICES REGENERATED AFTER THEIR BUILD, WHICH A `.tex`-ONLY RULE PASSES**
 
 *Pre-registered at `computations/beyond_the_wall/r7265_70_n1_cite_pdf/PREDICTION.md` (`57b403d2`). The account is
