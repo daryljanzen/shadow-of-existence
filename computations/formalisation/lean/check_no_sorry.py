@@ -8,11 +8,14 @@ This reads the axioms Lean reports for each theorem (Axioms.lean) and separates:
 GATE ZERO: the positive control (controls/SorryControl.lean) must come back STATED.  If the
 checker cannot see a sorry it was handed, nothing below it prints.
 
-Run from this directory, with elan's lake on PATH:  python3 check_no_sorry.py
+Run with elan's lake on PATH:  python3 check_no_sorry.py [PROJECT_DIR]
+PROJECT_DIR defaults to this script's own directory (lean/).  It must hold Axioms.lean and
+controls/SorryControl.lean; r7265+71 added the argument so the Physlib project (lean-physlib/)
+is read by this same instrument rather than a copy of it.
 """
 import os, re, subprocess, sys
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.dirname(os.path.abspath(__file__))
 STD = {"propext", "Classical.choice", "Quot.sound"}
 
 

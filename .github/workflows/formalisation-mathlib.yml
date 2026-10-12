@@ -1,0 +1,41 @@
+# r7265+71 (node 71): the formalisation seat's gate for computations/formalisation/lean/.
+# Path-scoped by design: it runs ONLY on pushes that touch that project, never on the
+# corpus's ordinary pushes, and its placement is decided from the runner time it prints
+# (pre-registered at computations/formalisation/r7265_71_sinh_law/PREDICTION.md ②; over
+# 15 minutes moves it to a schedule).  It reads check_no_sorry.py's verdict, whose gate
+# zero is a planted sorry, so a green here can fail.
+name: formalisation — lean (Lean, check_no_sorry)
+
+on:
+  push:
+    paths:
+      - 'computations/formalisation/lean/**'
+  pull_request:
+    paths:
+      - 'computations/formalisation/lean/**'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    defaults:
+      run:
+        working-directory: computations/formalisation/lean
+    steps:
+      - uses: actions/checkout@v4
+      - name: install elan (toolchain from lean-toolchain)
+        run: |
+          t0=$(date +%s)
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          echo "TIMING elan: $(( $(date +%s) - t0 ))s"
+      - name: fetch dependencies and the mathlib cache
+        run: |
+          t0=$(date +%s)
+          lake exe cache get
+          echo "TIMING cache: $(( $(date +%s) - t0 ))s"
+      - name: build and read every theorem's axioms
+        run: |
+          t0=$(date +%s)
+          python3 $GITHUB_WORKSPACE/computations/formalisation/lean/check_no_sorry.py "$PWD"
+          echo "TIMING build+check: $(( $(date +%s) - t0 ))s"
