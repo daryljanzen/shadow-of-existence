@@ -28,6 +28,14 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7255_cc66_P15_the_475'))
 from containers import Resolver                                     # noqa: E402
 
+# ⌗ r7261+cc66.7 -- ** THIS FILE'S OWN OUTPUTS ARE NOT REGENERATED UNDER THE TWO FIXES ABOVE. **
+#   `GATHERED.tsv` and `READING.tsv` are digest-pinned by `C70`, which ran and passed on the old
+#   resolver, so the corrections are STATED in `FOR_66.md` at `r7261+cc66.3` rather than back-written
+#   underneath a receipt that already ran -- the same call `66` endorsed at `r7261` for `r7255`'s
+#   `CONTAINERS.tsv`, and the one it said is most likely to be got wrong.  ⇒ * Re-running this script
+#   now yields PAPER 257 / REGISTRY 8 / INSTRUMENT 4 / UNRESOLVED 3 against the frozen file's
+#   PAPER 261 / REGISTRY 8 / INSTRUMENT 3: four rows move, and NONE of them moves the census or the
+#   backlog, because the carry rule reads `caps` and `reads` and never the container column. *
 PREREG_REV = '2654cd0b'        # the revision this cycle's PREDICTION.md pinned the population to
 HELD = 'MEANING-HELD'
 
@@ -195,12 +203,29 @@ def trace_kind(src, expr):
                 if isinstance(t, ast.Name):
                     assigns[t.id].append(n.value)
                 elif isinstance(t, (ast.Tuple, ast.List)):
+                    # ⛔ r7261+cc66.5 -- A DEFECT OF MINE THAT REACHED 66's DESK AS A FINDING AND WAS
+                    #   RULED ON.  The first draft attributed the WHOLE value to every target name
+                    #   when the value was not a tuple, so
+                    #     `src, p15, p07 = (open(f) for f in (INSTR, P15, P07))`
+                    #   gave `src` the generator's every constant -- `CR_cosmology.tex` among them --
+                    #   and `src`, which is the ACOUSTIC instrument, resolved as PAPER.  That is the
+                    #   whole of the `P15` optical-depth `SOURCE`-vs-`PAPER` disagreement I routed at
+                    #   `r7257`: the ledger was right and my resolver was not.
+                    #   ⇒ ** A comprehension over a TUPLE OF NAMES is element-wise resolvable, so it
+                    #     is zipped; anything else attributes NOTHING and resolves UNKNOWN, because a
+                    #     wrong container is worse than an unresolved one -- it travels. **
                     val = n.value
                     elts = val.elts if isinstance(val, (ast.Tuple, ast.List)) else None
+                    if elts is None and isinstance(val, (ast.GeneratorExp, ast.ListComp, ast.SetComp)) \
+                            and len(val.generators) == 1 \
+                            and isinstance(val.generators[0].iter, (ast.Tuple, ast.List)) \
+                            and len(val.generators[0].iter.elts) == len(t.elts):
+                        elts = val.generators[0].iter.elts
                     for i, e in enumerate(t.elts):
                         if not isinstance(e, ast.Name):
                             continue
-                        assigns[e.id].append(elts[i] if elts and i < len(elts) else val)
+                        if elts and i < len(elts):
+                            assigns[e.id].append(elts[i])
                 elif isinstance(t, ast.Subscript) and isinstance(t.value, ast.Name):
                     assigns[t.value.id].append(n.value)
         elif isinstance(n, (ast.For, ast.AsyncFor)):
@@ -238,10 +263,19 @@ def trace_kind(src, expr):
                         frontier.append(('func', nm))
                         frontier.append(('name', nm))
 
-    for v in consts:                                    # extension first: an extension IS a kind
+    for v in consts:                                    # a `.tex` anywhere is a paper, and only that
         q = v.replace('\\', '/')
         if q.endswith('.tex') or '*.tex' in q:
             return 'PAPER'
+    # ⛔ r7261+cc66.6 -- AND THE JOIN GOES BEFORE THE PER-FRAGMENT PASS, which is last cycle's
+    #   `os.path.join` lesson for the THIRD time in my own code.  `os.path.join(ROOT, 'computations',
+    #   'beyond_the_wall', 'ACOUSTIC_two_arm.py')` has a fragment ending `.py`, so a per-fragment pass
+    #   returned RECEIPT before anything saw that the path is under `computations/` and the kind is
+    #   INSTRUMENT.  ** A fragment is not a path, and the first draft of three different functions has
+    #   now classified one as if it were. **
+    k = kind_of_path('/'.join(consts)) if consts else 'UNKNOWN'
+    if k not in ('UNKNOWN', 'OTHER'):
+        return k
     for v in consts:
         k = kind_of_path(v)
         if k not in ('UNKNOWN', 'OTHER'):
