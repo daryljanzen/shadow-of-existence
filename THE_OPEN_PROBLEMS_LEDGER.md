@@ -229,8 +229,9 @@ tied to the matter side, gated on item 1's matter dynamics. HOME: ~~P7 `sec:fron
 
 ESTABLISHED: the large-angle depth built (genuine Boltzmann transfer; a wash within cosmic variance); peaks
 reduce to ΛCDM through ℓ≲800 (the time-reversal driving equality *at the acoustic scale*, |Ψ̃(ω=1)|;
-camb_reference); the ~8% damping-***scale*** shift (r_D accumulated on the radiation-free **L1** rate) computed
-and non-reabsorbable (damping_ratio_clean, damping_reabsorption).
+camb_reference); the damping-***scale*** signature computed — $\theta_D/\theta_*$ moved by under a per cent
+($r=0.9918$) with both lengths carried to the visibility peak, its size the handover's and its sign set by that
+common endpoint — and non-reabsorbable by $\omega_b$ (P15 `sec:diffusion-scale`; `damping_reabsorption`).
 OPEN — **RELOCATED r1408 by holding the expansion ontology (P7 bead + P15 three-level rule; the piece I kept
 collapsing onto FLRW):** the open core is NOT a free-standing CMB-transfer computation. It is the
 **short-wavelength (high-ℓ) collapse-phase driving envelope** — the peak *heights* above ℓ≈800 — which per
@@ -238,7 +239,7 @@ collapsing onto FLRW):** the open core is NOT a free-standing CMB-transfer compu
 and is *uncomputed*. The damping *scale* is settled; its high-ℓ *spectral* consequence is entangled with that
 uncomputed driving. Plus the full-spectrum likelihood vs ΛCDM.
 ★ **THE TRAP (has burned two nodes — do NOT re-run as a finding):** taking ΛCDM's C_ℓ as the high-ℓ peak
-envelope and applying the +8% damping (`full_transfer_verdict`) manufactures a spurious "decisive high-ℓ
+envelope and applying CR's damping signature (`full_transfer_verdict`) manufactures a spurious "decisive high-ℓ
 deficit." §coherence DISOWNS exactly this — assuming the high-ℓ peaks equal ΛCDM's "is precisely the unbuilt
 part, and it may not be imported for free," the radiation-free rate reshaping the high-ℓ driving envelope
 (removing the radiation-driving boost that sets the ΛCDM peaks). The time-reversal result buys the driving
@@ -266,7 +267,7 @@ driving rides), CR_framework(2 — +collapse-side driving, the three-level rate 
 ***⛭ AND CARRIED FURTHER r1955–r1962.*** *The damping signature now stands at **$\theta_D/\theta_*=+13.96\%\pm0.89\%$** with the acoustic angle's $H_0$-independence derived, the recombination redshift integrated on the construction's own rate, and $\ell_1$ landing at 220 because the early ISW is a flat factor.* ***What remains of this item is the PEAK HEIGHTS alone — and four attempts established that a WKB skeleton cannot deliver them in either cosmology, so it is a numerical tight-coupling transfer rather than a missing idea.***
 
 
-**[r2210 -- CONSTRAINED, AND ITS TRAP CHECKED.** *(i) **The trap was NOT re-run.** Tonight's high-$\ell$ deficit was measured between **our $\Lambda$CDM control and an independent Boltzmann code** -- an *instrument* comparison, with no CR damping applied to anyone's spectrum. **The trap is applying CR's $+8\%$ damping to $\Lambda$CDM's $C_\ell$; that was never done.** *(ii) **The open core is SPLIT by the lift rule.** Family 5's open core is the **collapse-phase (L2) driving envelope** setting the high-$\ell$ peak heights. The lift now divides that question in two: ***the oscillating content of the collapse leg is annihilated*** ($e^{-152}$ at $P_1$; confirmed on peak positions, $21$-$39\times$), so **no collapse-side acoustic phase reaches the observed peaks** -- while ***the frozen, non-oscillatory envelope DOES cross***. **So what family 5 must compute is the inherited ENVELOPE, not a transmitted oscillation** -- a strictly smaller object, and the same one family 3 owes. *(iii) **The instrument now exists and is declared** (P15 `sec:instrument`, r2204): positions $\le0.5\%$, transfer $<1\%$ for $k<0.02$, **$\sim$4-5\% absolute above** -- and that absolute residual **cancels in CR/$\Lambda$CDM ratios but NOT in absolute peak heights**, which is precisely what family 5 wants. ***That is the current limit on family 5, and it is now a stated number rather than an unknown.*** *(iv) The large-angle depth is **superseded**: full Boltzmann gives $0.42/0.35/0.29/0.52$ with the minimum at $\ell=4$ (r2204/r2207).*]**
+**[r2210 -- CONSTRAINED, AND ITS TRAP CHECKED.** *(i) **The trap was NOT re-run.** Tonight's high-$\ell$ deficit was measured between **our $\Lambda$CDM control and an independent Boltzmann code** -- an *instrument* comparison, with no CR damping applied to anyone's spectrum. **The trap is applying CR's damping signature to $\Lambda$CDM's $C_\ell$; that was never done.** *(ii) **The open core is SPLIT by the lift rule.** Family 5's open core is the **collapse-phase (L2) driving envelope** setting the high-$\ell$ peak heights. The lift now divides that question in two: ***the oscillating content of the collapse leg is annihilated*** ($e^{-152}$ at $P_1$; confirmed on peak positions, $21$-$39\times$), so **no collapse-side acoustic phase reaches the observed peaks** -- while ***the frozen, non-oscillatory envelope DOES cross***. **So what family 5 must compute is the inherited ENVELOPE, not a transmitted oscillation** -- a strictly smaller object, and the same one family 3 owes. *(iii) **The instrument now exists and is declared** (P15 `sec:instrument`, r2204): positions $\le0.5\%$, transfer $<1\%$ for $k<0.02$, **$\sim$4-5\% absolute above** -- and that absolute residual **cancels in CR/$\Lambda$CDM ratios but NOT in absolute peak heights**, which is precisely what family 5 wants. ***That is the current limit on family 5, and it is now a stated number rather than an unknown.*** *(iv) The large-angle depth is **superseded**: full Boltzmann gives $0.42/0.35/0.29/0.52$ with the minimum at $\ell=4$ (r2204/r2207).*]**
 
 **6. Propagating fermion sector (+ the compact-face gauge sector, the mass hierarchy).**
 ESTABLISHED: the discrete flavour structure built (P14 — count three, chirality γ⁵, and an S₃ that is a
@@ -794,8 +795,9 @@ tied to the matter side, gated on item 1's matter dynamics. HOME: ~~P7 `sec:fron
 
 ESTABLISHED: the large-angle depth built (genuine Boltzmann transfer; a wash within cosmic variance); peaks
 reduce to ΛCDM through ℓ≲800 (the time-reversal driving equality *at the acoustic scale*, |Ψ̃(ω=1)|;
-camb_reference); the ~8% damping-***scale*** shift (r_D accumulated on the radiation-free **L1** rate) computed
-and non-reabsorbable (damping_ratio_clean, damping_reabsorption).
+camb_reference); the damping-***scale*** signature computed — $\theta_D/\theta_*$ moved by under a per cent
+($r=0.9918$) with both lengths carried to the visibility peak, its size the handover's and its sign set by that
+common endpoint — and non-reabsorbable by $\omega_b$ (P15 `sec:diffusion-scale`; `damping_reabsorption`).
 OPEN — **RELOCATED r1408 by holding the expansion ontology (P7 bead + P15 three-level rule; the piece I kept
 collapsing onto FLRW):** the open core is NOT a free-standing CMB-transfer computation. It is the
 **short-wavelength (high-ℓ) collapse-phase driving envelope** — the peak *heights* above ℓ≈800 — which per
@@ -803,7 +805,7 @@ collapsing onto FLRW):** the open core is NOT a free-standing CMB-transfer compu
 and is *uncomputed*. The damping *scale* is settled; its high-ℓ *spectral* consequence is entangled with that
 uncomputed driving. Plus the full-spectrum likelihood vs ΛCDM.
 ★ **THE TRAP (has burned two nodes — do NOT re-run as a finding):** taking ΛCDM's C_ℓ as the high-ℓ peak
-envelope and applying the +8% damping (`full_transfer_verdict`) manufactures a spurious "decisive high-ℓ
+envelope and applying CR's damping signature (`full_transfer_verdict`) manufactures a spurious "decisive high-ℓ
 deficit." §coherence DISOWNS exactly this — assuming the high-ℓ peaks equal ΛCDM's "is precisely the unbuilt
 part, and it may not be imported for free," the radiation-free rate reshaping the high-ℓ driving envelope
 (removing the radiation-driving boost that sets the ΛCDM peaks). The time-reversal result buys the driving
@@ -831,7 +833,7 @@ driving rides), CR_framework(2 — +collapse-side driving, the three-level rate 
 ***⛭ AND CARRIED FURTHER r1955–r1962.*** *The damping signature now stands at **$\theta_D/\theta_*=+13.96\%\pm0.89\%$** with the acoustic angle's $H_0$-independence derived, the recombination redshift integrated on the construction's own rate, and $\ell_1$ landing at 220 because the early ISW is a flat factor.* ***What remains of this item is the PEAK HEIGHTS alone — and four attempts established that a WKB skeleton cannot deliver them in either cosmology, so it is a numerical tight-coupling transfer rather than a missing idea.***
 
 
-**[r2210 -- CONSTRAINED, AND ITS TRAP CHECKED.** *(i) **The trap was NOT re-run.** Tonight's high-$\ell$ deficit was measured between **our $\Lambda$CDM control and an independent Boltzmann code** -- an *instrument* comparison, with no CR damping applied to anyone's spectrum. **The trap is applying CR's $+8\%$ damping to $\Lambda$CDM's $C_\ell$; that was never done.** *(ii) **The open core is SPLIT by the lift rule.** Family 5's open core is the **collapse-phase (L2) driving envelope** setting the high-$\ell$ peak heights. The lift now divides that question in two: ***the oscillating content of the collapse leg is annihilated*** ($e^{-152}$ at $P_1$; confirmed on peak positions, $21$-$39\times$), so **no collapse-side acoustic phase reaches the observed peaks** -- while ***the frozen, non-oscillatory envelope DOES cross***. **So what family 5 must compute is the inherited ENVELOPE, not a transmitted oscillation** -- a strictly smaller object, and the same one family 3 owes. *(iii) **The instrument now exists and is declared** (P15 `sec:instrument`, r2204): positions $\le0.5\%$, transfer $<1\%$ for $k<0.02$, **$\sim$4-5\% absolute above** -- and that absolute residual **cancels in CR/$\Lambda$CDM ratios but NOT in absolute peak heights**, which is precisely what family 5 wants. ***That is the current limit on family 5, and it is now a stated number rather than an unknown.*** *(iv) The large-angle depth is **superseded**: full Boltzmann gives $0.42/0.35/0.29/0.52$ with the minimum at $\ell=4$ (r2204/r2207).*]**
+**[r2210 -- CONSTRAINED, AND ITS TRAP CHECKED.** *(i) **The trap was NOT re-run.** Tonight's high-$\ell$ deficit was measured between **our $\Lambda$CDM control and an independent Boltzmann code** -- an *instrument* comparison, with no CR damping applied to anyone's spectrum. **The trap is applying CR's damping signature to $\Lambda$CDM's $C_\ell$; that was never done.** *(ii) **The open core is SPLIT by the lift rule.** Family 5's open core is the **collapse-phase (L2) driving envelope** setting the high-$\ell$ peak heights. The lift now divides that question in two: ***the oscillating content of the collapse leg is annihilated*** ($e^{-152}$ at $P_1$; confirmed on peak positions, $21$-$39\times$), so **no collapse-side acoustic phase reaches the observed peaks** -- while ***the frozen, non-oscillatory envelope DOES cross***. **So what family 5 must compute is the inherited ENVELOPE, not a transmitted oscillation** -- a strictly smaller object, and the same one family 3 owes. *(iii) **The instrument now exists and is declared** (P15 `sec:instrument`, r2204): positions $\le0.5\%$, transfer $<1\%$ for $k<0.02$, **$\sim$4-5\% absolute above** -- and that absolute residual **cancels in CR/$\Lambda$CDM ratios but NOT in absolute peak heights**, which is precisely what family 5 wants. ***That is the current limit on family 5, and it is now a stated number rather than an unknown.*** *(iv) The large-angle depth is **superseded**: full Boltzmann gives $0.42/0.35/0.29/0.52$ with the minimum at $\ell=4$ (r2204/r2207).*]**
 
 **6. Propagating fermion sector (+ the compact-face gauge sector, the mass hierarchy).**
 ESTABLISHED: the discrete flavour structure built (P14 — count three, chirality γ⁵, and an S₃ that is a
@@ -1775,9 +1777,6 @@ $$\textbf{the six null directions generate a subalgebra of DIMENSION THREE.}$$
 **⌗ AND THE TELL.** *I wrapped it in *"a route closed by a computed number is closed more usefully than one closed by a caution"* — ***which sounds like rigour and is a wrapper***. **Daryl caught it as a kill switch, and it was one.**
 
 **⇒ THE QUESTION IS OPEN.** ***What the null structure among the hinges generates in $\so(5,1)$ is not determined***, and P13's closure of the route rests on **its own argument** — that a discrete shadow is not a continuous internal symmetry — **not on anything I computed**. *The right calculation admits the transverse directions; it has not been done.*
-
-#### ⌗ FAMILY (12) — **STATE DOCUMENT WRITTEN (r2314); the paper cut back to r2296.**
-*The family's working material is now in  **SKETCH 8** (two computed facts, erasable), and **the position** — what is delivered, what is closed and by what, what is open, and what was tried and failed — is in ****. ***Read the state document, not this ledger, for where the work is.*** *P14 carried 199 lines of exploratory material across r2297--r2312 and has been restored to r2296, which retains **every result that stands**: the correspondence statement, the tower negative, the $ check, the per-wall anomaly condition, and hypercharge determined.*
 
 #### ⌘ FAMILY (12) — **STATE DOCUMENT WRITTEN (r2314); the paper cut back to r2296.**
 *The family's working material is now in `THE_QUANTUM_JOINT` **SKETCH 8** (two computed facts, erasable), and **the position** — what is delivered, what is closed and by what, what is open, and what was tried and failed — is in **`STATE_matter_sector.md`**. ***Read the state document, not this ledger, for where the work is.*** *P14 carried 199 lines of exploratory material across r2297–r2312 and has been restored to r2296, which retains **every result that stands**: the correspondence statement, the $j$-tower negative, the $S_3$ check, the per-wall anomaly condition, and hypercharge determined.*
