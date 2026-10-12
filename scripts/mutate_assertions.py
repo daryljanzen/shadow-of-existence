@@ -631,7 +631,7 @@ def _trace(expr, asg, fns, src, depth, seen, wide=True):
     a file, and a name's assignment is expanded only along a branch that reads.  r7251+70.4 (cc66's C64 Ⓔ): `wide`
     keeps EVERY helper and assignment the trace visits, so `P = papers()` beside `body(f)` -- the `corpus/*.tex` glob
     in one branch, the `open()` in the other -- brings the glob into view.  The wide text is used ONLY to file a key
-    PAPER (through `_only_tex`); whether a site is a key at all is decided by the narrow trace, as before."""
+    (r7257+70.1: its file kinds, through `_rstar`); whether a site is a key at all is decided by the narrow trace."""
     seg = _seg(src, expr) or ''
     acc, hit = [seg], bool(_READ.search(seg))
     for n in ast.walk(expr):
@@ -653,13 +653,6 @@ def _trace(expr, asg, fns, src, depth, seen, wide=True):
 
 
 _EXT = re.compile(r'\.(tex|py|md|json|tsv|txt|csv|ya?ml|log)\b')
-
-
-def _only_tex(text):
-    """r7251+70.4: the WIDENED trace (helpers and loop variables) files a key as PAPER only if `.tex` is the ONLY file
-    kind it names.  Loop variables are bound by NAME, so `c` in one loop can import another loop's `.tex` iterable;
-    a trace naming `.py` or `.md` beside `.tex` is ambiguous, and an ambiguous widening keeps the old SOURCE."""
-    return set(_EXT.findall(text)) == {'tex'}
 
 
 _VERDICT = re.compile(r"PASS|FAIL|\bassert\b|\braise\b|CHECKS|RESULTS|\.append\(\(")
@@ -833,6 +826,47 @@ def _list_sites(tree, asg, fns, src):
 _TEX_CACHE = {}
 
 
+TARGET_ANNOTATIONS = 'corpus/target_annotations.tsv'
+ANNOTATION_STATE = {'missing': [], 'unused': []}
+
+
+def _rstar(root, rows):
+    """r7257+70.1 (r7257 ②): R*, the key's target from the file KINDS its wide traces name, unioned over its sites.
+    `{tex}` -> PAPER; kinds without `tex` -> SOURCE; `tex` beside another kind, or NO kind at all -> UNDECIDED, and
+    an UNDECIDED key takes its target from the hand-kept `corpus/target_annotations.tsv` (receipt, literal, target).
+    ⌗ Measured first (computations/beyond_the_wall/r7257_70_board_and_target_rule/): the registered R* sent an empty
+    kind set to SOURCE, and its only two wrong calls against the baseline were both empty-kind keys that read a paper
+    through a path no extension names; a trace that names no file decides nothing, so it is UNDECIDED here.  An
+    UNDECIDED key with no annotation keeps the target UNDECIDED, which `check_quote_pins` fails by name; an annotation
+    on a key that is not UNDECIDED is reported as unused, and fails too."""
+    ann = {}
+    path = os.path.join(root, TARGET_ANNOTATIONS)
+    if os.path.exists(path):
+        for ln in open(path, encoding='utf-8'):
+            q = ln.rstrip('\n').split('\t')
+            if len(q) >= 3 and not ln.startswith('#') and ln.strip():
+                ann[(q[0], ' '.join(json.loads(q[1]).split()))] = q[2]
+    kinds = {}
+    for r in rows:
+        kinds.setdefault((r['receipt'], r['lit']), set()).update(r['_kinds'])
+    used, missing = set(), set()
+    for r in rows:
+        k = (r['receipt'], r['lit'])
+        ks = kinds[k]
+        t = 'PAPER' if ks == {'tex'} else 'SOURCE' if ks and 'tex' not in ks else 'UNDECIDED'
+        if t == 'UNDECIDED':
+            if k in ann:
+                t = ann[k]
+                used.add(k)
+            else:
+                missing.add(k)
+        r['target'] = t
+    # an annotation for a receipt outside this run's files says nothing about this run
+    scope = {r['receipt'] for r in rows}
+    ANNOTATION_STATE['missing'] = sorted(missing)
+    ANNOTATION_STATE['unused'] = sorted(k for k in ann if k not in used and k[0] in scope)
+
+
 def _multi_flags(root, rows):
     """add MULTI (and SECSHARED) to every PAPER row whose literal occurs twice or more in a .tex its trace names"""
     def text(name):
@@ -935,14 +969,16 @@ def quote(root, files=None):
             #   r7125+70.1 precision sample), or structured data whose `in` is key membership, not a quotation
             if _SELF.search(trace) or _STRUCT.search(trace):
                 continue
-            target = 'PAPER' if re.search(r'\.tex\b', trace) or _only_tex(_trace(cont, tasg, fns, src, 3, set())[0]) else 'SOURCE'
+            _wide = trace + '\n' + _trace(cont, tasg, fns, src, 3, set())[0]
+            target = None  # r7257+70.1: filed per KEY by `_rstar`, over the kinds of every site's wide trace
             # SENTENCE: three or more whitespace-separated words -- wording another seat owns.  TOKEN: a label,
             #   a receipt name, a macro, a figure -- a cross-reference rather than prose
             tier = 'SENTENCE' if len(lit.split()) >= 3 else 'TOKEN'
             flags = ','.join(x for x, on in (('ALT', alt), ('XOR', alt == 'XOR'),
                                              ('OPEN', bool(_OPEN_WORDS.search(lit)))) if on)
             out.append(dict(receipt=os.path.relpath(f, root), site=f'{n.lineno}:{n.col_offset}', kind='QUOTE-PIN',
-                            target=target, tier=tier, flags=flags, lit=' '.join(lit.split()), _trace=trace))
+                            target=target, tier=tier, flags=flags, lit=' '.join(lit.split()), _trace=trace,
+                            _kinds=sorted(set(_EXT.findall(_wide)))))
         # ⛭ r7201+70.1 (r7197's addition): A RECEIPT'S OWN PIN LISTS.  A module-level collection of strings whose
         #   loop variable reaches one of the site forms above (or `.count`) is a pin by BEHAVIOUR, and each string is
         #   keyed `(receipt, string)` like an inline literal.  So is a collection handed whole to
@@ -957,18 +993,20 @@ def quote(root, files=None):
             trace = 'reach_baseline corpus *.tex' if cont is None else _reads(cont, asg, fns, src)
             if trace is None or _SELF.search(trace) or _STRUCT.search(trace):
                 continue
-            target = 'PAPER' if re.search(r'\.tex\b', trace) or (cont is not None and _only_tex(_trace(cont, tasg, fns, src, 3, set())[0])) else 'SOURCE'
+            _wide = trace if cont is None else trace + '\n' + _trace(cont, tasg, fns, src, 3, set())[0]
+            target = None  # filed by `_rstar`
             tier = 'SENTENCE' if len(lit.split()) >= 3 else 'TOKEN'
             fl = ','.join(x for x, on in (('LIST', True), ('SURVEY', flags == 'SURVEY'),
                                           ('OPEN', bool(_OPEN_WORDS.search(lit)))) if on)
             out.append(dict(receipt=os.path.relpath(f, root), site=f'{site.lineno}:{site.col_offset}',
                             kind='QUOTE-PIN', target=target, tier=tier, flags=fl, lit=' '.join(lit.split()),
-                            _trace=trace))
+                            _trace=trace, _kinds=sorted(set(_EXT.findall(_wide)))))
     # ⛭⛭ r7201+70.1 (r7191's order): THE MULTI-SITE VERDICT.  A PAPER pin whose literal occurs more than once in the
     #   file its own read trace names is a pin on the FILE and not on the claim: it survives the removal of the
     #   sentence it was written for while any other copy stands (`by three independent routes`, r7183).  Flag
     #   `MULTI`, and `SECSHARED` beside it when two copies share a section, so a section scope alone cannot
     #   single-site it and only a neighbourhood or a longer literal can (the r7183 47/53 split).
+    _rstar(root, out)
     _multi_flags(root, out)
     # `re.search(...) is not None` reaches the same site as its Compare and as its Call: one site, ALT only if
     #   every route to it is ALT
@@ -1521,6 +1559,9 @@ def report_quote(rows):
     for r in rows:
         print(f'    [QUOTE-PIN][{r["target"]}][{r["tier"]}][{r["flags"]}] {r["receipt"]}:{r["site"]}  '
               f'{json.dumps(r["lit"], ensure_ascii=False)}')
+    for kind in ('missing', 'unused'):
+        for rc, lit in ANNOTATION_STATE[kind]:
+            print(f'    [TARGET-ANNOTATION][{kind.upper()}] {rc}  {json.dumps(lit, ensure_ascii=False)}')
 
 
 # ===================================================================================== seeds

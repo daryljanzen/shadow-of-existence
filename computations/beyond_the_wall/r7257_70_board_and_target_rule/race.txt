@@ -1,0 +1,3 @@
+B1 a committed copy from either branch is stale after the merge: True (A), False (B)
+B2 the new gate compares no copy, so the race cannot redden it: True (by construction; no committed board)
+B3 a void double claim still fails: True

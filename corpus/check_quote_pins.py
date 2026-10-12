@@ -38,9 +38,22 @@ ROOT = HERE
 while not os.path.exists(os.path.join(ROOT, 'scripts', 'mutate_assertions.py')) and ROOT != os.path.dirname(ROOT):
     ROOT = os.path.dirname(ROOT)
 BASELINE = os.path.join(HERE, 'quote_pin_baseline.tsv')
+# r7257+70.1: the instrument's report on `corpus/target_annotations.tsv` -- an UNDECIDED key with no row, a row R*
+#   does not need -- read off the same run as the keys
+ANN_LINE = re.compile(r'\s*\[TARGET-ANNOTATION\]\[(MISSING|UNUSED)\]\s+(\S+)\s+(".*")$')
+ANNOTATION_REPORT = []
+# r7257+70.1: a key whose baseline target is allowed to differ from the instrument, NAMED, with why, and routed to 66.
+#   File-scoped and exact; an entry here is a dispute awaiting a ruling, never a standing override.
+TARGET_DISPUTED = {
+    ('receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py',
+     'baryon 1, diquark 0, meson 1'):
+        'the site tests p14, matter_sector_paper.tex, so R* files it PAPER; the paper writes `baryon $1$, diquark $0$, '
+        'meson $1$`, so the plain literal is absent there and the MEANING-HELD row (66 re-filed it SOURCE at r7255 '
+        'so H3 would hold) fails H3 as PAPER.  A verdict question, not a column one: routed in r7257+70.1.',
+}
 INSTRUMENT = os.path.join(ROOT, 'scripts', 'mutate_assertions.py')
 
-LINE = re.compile(r'\s*\[QUOTE-PIN\]\[(PAPER|SOURCE)\]\[(SENTENCE|TOKEN)\]\[([A-Z,]*)\]\s+(\S+?):(\d+):(\d+)\s+(".*")$')
+LINE = re.compile(r'\s*\[QUOTE-PIN\]\[(PAPER|SOURCE|UNDECIDED)\]\[(SENTENCE|TOKEN)\]\[([A-Z,]*)\]\s+(\S+?):(\d+):(\d+)\s+(".*")$')
 UNREAD = 'UNADJUDICATED'
 # ⓷ the ratchet.  Seeded at r7125+70.1 as the count of distinct (receipt, literal) keys; lowering it is the point.
 CEILING = 2287
@@ -197,6 +210,8 @@ def measure():
     r = subprocess.run([sys.executable, INSTRUMENT, '--quote'], cwd=ROOT, capture_output=True, text=True,
                        timeout=600)
     out = {}
+    ANNOTATION_REPORT[:] = [(m.group(1), m.group(2), json.loads(m.group(3)))
+                            for m in map(ANN_LINE.match, r.stdout.splitlines()) if m]
     for ln in r.stdout.splitlines():
         m = LINE.match(ln)
         if m:
@@ -305,6 +320,40 @@ def main():
         bad += 1
     else:
         print('    no stale entry: every adjudication still describes a live key.')
+
+    # ⓼ r7257+70.1 (r7257 ②): THE TARGET COLUMN IS THE INSTRUMENT'S, NOT A SECOND HAND-KEPT COPY.  R* files a key
+    #   from the file kinds its trace names, and the keys it cannot decide read `corpus/target_annotations.tsv`; the
+    #   baseline's `target` must equal what that yields, so a hand correction lives in ONE place, the annotation.
+    _ann_bad = [x for x in ANNOTATION_REPORT]
+    _tgt_bad = sorted(k for k in live if k in base and live[k][0] != base[k][0] and k not in TARGET_DISPUTED)
+    _disp_stale = sorted(k for k in TARGET_DISPUTED if not (k in live and k in base and live[k][0] != base[k][0]))
+    print(f'    target: R* files {sum(1 for v in live.values() if v[0] != "UNDECIDED")} live key(s) (annotations included); '
+          f'{len(_ann_bad)} annotation fault(s); {len(_tgt_bad)} baseline target(s) differ from the instrument')
+    if _ann_bad:
+        print()
+        print(f'  ⛔ {len(_ann_bad)} TARGET ANNOTATION FAULT(S) in corpus/target_annotations.tsv:')
+        for kind, p, lit in _ann_bad[:40]:
+            print(f'    [{kind}] {p}  {json.dumps(lit, ensure_ascii=False)[:80]}')
+        print('     ⌗ MISSING: R* cannot decide this key from its trace (it names `.tex` beside another kind, or no')
+        print('       file kind at all) -- read what the site tests and add a row.  UNUSED: R* decides the key, so')
+        print('       the row is a second, silent override -- remove it.')
+        bad += 1
+    for k in sorted(TARGET_DISPUTED):
+        print(f'    [TARGET DISPUTED, named] {k[0]}  {json.dumps(k[1], ensure_ascii=False)[:60]}')
+    if _disp_stale:
+        print(f'  ⛔ {len(_disp_stale)} TARGET_DISPUTED entr(y/ies) no longer disputed -- remove them:')
+        for p, lit in _disp_stale:
+            print(f'    [STALE] {p}  {json.dumps(lit, ensure_ascii=False)[:60]}')
+        bad += 1
+    if _tgt_bad:
+        print()
+        print(f'  ⛔ {len(_tgt_bad)} BASELINE TARGET(S) DIFFER FROM THE INSTRUMENT:')
+        for p, lit in _tgt_bad[:40]:
+            print(f'    [TARGET] {p}  {json.dumps(lit, ensure_ascii=False)[:60]}  baseline {base[(p, lit)][0]}, '
+                  f'instrument {live[(p, lit)][0]}')
+        print('     ⌗ the baseline copies the instrument; if the instrument is wrong on an UNDECIDED key, correct')
+        print('       its annotation; if R* decided it wrongly, that is a finding about R*, routed to 66.')
+        bad += 1
 
     # ⛔ r7255+cc66.177 -- THE FIFTEENTH FAIL-ON-SUCCESS INSTANCE OF THIS CYCLE, AND THE FIRST IN A GATE
     #   RATHER THAN A RECEIPT.  This set read membership of the pinned-read POPULATION off the VERDICT
