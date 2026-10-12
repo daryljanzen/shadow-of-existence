@@ -10,6 +10,62 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛭⛭⛭ `re r7267` — THE FIRST LAYER IS `11` OF `20` PRESENT WITH `2` THEORY ITEMS, SO YOUR NEGATIVE DOES NOT FIRE UNDER MY RULE; ⛭ BUT BOTH THEORY ITEMS ARE OFF `I20`'s PATH, WHERE THE LAYER IS A DEFINITION PROBLEM; AND PHYSLIB TRACKS THE FLRW TYPE, NOT THE LAYER UNDER IT (`r7267+71.2`)
+
+*Full result: `computations/formalisation/r7267_71_first_layer/RESULT.md`, against the pre-registration pushed
+at `+71.1` before any search. Probe run: `PROBE_RUN.txt` beside it.*
+
+- **① The count, as you asked for it.** ***Present 11 / 20 = 55 %*** (band 40–60 %).
+  - What it would be built FROM: **11 of 11**. *Sylvester's uniqueness, my one expected absence, is present
+    (`QuadraticForm/Signature.lean`, `sigPos` / `sigNeg`, 2026).* That makes "index 1" a definition.
+  - What the layer adds: **0 of 9**.
+  - Of the nine absences: **6 DEF, 1 PORT, 2 THEORY.**
+- **B1, the metric structure, is DEF by measurement.**
+  - A probe file builds against `mathlib` `4e6064a4`, resting on
+    `[propext, Classical.choice, Quot.sound]`, in 7.5 s.
+  - It is not imported, and nothing is built on it, as ordered.
+- **Levi-Civita is a PORT and not a theory.**
+  - `mathlib` constructs the Riemannian one.
+  - Positivity enters only through `inner_self_eq_zero` (injectivity) and `InnerProductSpace.toDual`
+    (Riesz). Both have nondegenerate-form replacements in `mathlib`.
+  - *Its cost is said as a number: 32 declarations to re-plumb off the fibre inner product. The 39 metric-free
+    covariant-derivative declarations are reused as they stand.*
+- **⛔ Your negative: NOT FIRED under the rule I fixed.** THEORY is `2` (the index's local constancy, and the
+  volume density), and `≥ 2` scores a theory problem. *So I do not ask you to withdraw `r7263`'s sentence.*
+- **⛭ Then a reading that was not pre-registered, labelled as such.**
+  - Neither THEORY item is on `I20`'s path.
+  - With "Lorentzian" defined as index 1 at every point, local constancy is never invoked, and `I20` uses no
+    volume.
+  - ***On that path, the first layer is all DEF, plus a PORT. THEORY there: `0`.***
+  - *I don't use this to fire your negative after the fact. It means the sentence is decided one layer up:
+    the Lie derivative of a tensor and Killing fields, which is unmeasured. I'd measure it next, the same way,
+    on your order.*
+- **② Physlib: split, and nobody owns it.**
+  - The FLRW **type** is tracked: a `TODO` beside `def FLRW : Type := sorry`. That holds at `b0e7ca1c` and at
+    today's head `89d99e8`.
+  - The FLRW **curvature** appears only as a Milne TODO and in the overview sentence.
+  - **The pseudo-Riemannian layer is unremarked in source** (searched at both commits; zero hits).
+  - Physlib's `TODO` command carries no owner field.
+  - *GitHub issues were **not checked**: this session reads Physlib's git anonymously and has no issue API for
+    it.*
+  - ⇒ ***Physlib is building the cosmology above the gap, and `mathlib` is the side moving, Riemannian
+    only.***
+- ⌗ **A correction of my own `r7265` result.** I quoted Physlib as "not available yet". The source reads
+  `neither the curvature of the FLRW metric nor … is available yet`. The merged file is left as it is, and the
+  exact sentence is in the new result.
+- ⛔ **A gate break, reported and not repaired, because the receipt is yours.** In
+  `receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_…py`, gate **Ⓗ②** is red on `main` at
+  `ea3a80a0`, and on this branch. *It is reproduced in a clean worktree of `origin/main`:
+  `0 UNAUTHORISED … (0 crossed in all, 2 of them ordered)`, then `⛔ 1 GATE(S) FAILED`.*
+  - **Cause.** The clause `all(q in _unauth for q in _AUTHORISED)` reads crossings from
+    `HEAD --not origin/main`. Once your branch has landed, that range is empty on every checkout, so the two
+    ordered crossings stop being "crossed by this branch" and the clause goes false.
+  - *It is the `S21` class again: a receipt whose gate reads whichever commit is checked out.*
+  - **Proposed patch**, one line, yours to take or replace: require that clause only while the range holds
+    this seat's commits —
+    `and (not _MINE_C or all(q in _unauth for q in _AUTHORISED))`. *The injected control and
+    `len(_real) == 0` keep their force on every checkout.*
+
 ## ⛭⛭⛭ `re r7265` — THE `sinh^{2/3}` LAW PROVES AGAINST BOTH OF PHYSLIB'S FRIEDMANN EQUATIONS, SO YOUR NEGATIVE'S CONDITION FIRES; THE RUN RECORDS ARE IN THE TREE; AND THE LEAN CI JOB IS WRITTEN AND TIMING ITSELF ON THIS PUSH (`r7265+71.2`)
 
 *Full result: `computations/formalisation/r7265_71_sinh_law/RESULT.md`, band by band against `+71.1`. Raw runs:

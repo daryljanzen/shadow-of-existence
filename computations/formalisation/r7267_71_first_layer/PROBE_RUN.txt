@@ -1,0 +1,16 @@
+# B1 probe run — r7267+71.2
+date: 2026-10-12T22:28:40Z
+Lean (version 4.35.0-rc4, x86_64-unknown-linux-gnu, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)
+mathlib: 4e6064a4a3a617a3ba6739b50152b02e4d6ad3ea
+command: lake env lean probes/PseudoRiemannianProbe.lean
+---- output ----
+probes/PseudoRiemannianProbe.lean:51:0: warning: automatically included section variable(s) unused in theorem `ShadowProbe.ofRiemannian_inner`:
+  [∀ (b : B), IsTopologicalAddGroup (E b)]
+  [∀ (b : B), ContinuousConstSMul ℝ (E b)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [∀ (b : B), IsTopologicalAddGroup (E b)] [∀ (b : B), ContinuousConstSMul ℝ (E b)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ShadowProbe.ofRiemannian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.ofRiemannian_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+---- exit: 0 ----
