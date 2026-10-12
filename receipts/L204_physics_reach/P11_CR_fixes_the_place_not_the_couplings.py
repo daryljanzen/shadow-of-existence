@@ -113,9 +113,21 @@ def main():
           n_wall > 1 and 's a geometric origin for the gauge content' in allp)
 
     # the nu_R's status in the corpus
-    check("the nu_R appears as an OPTION in the count: one generation splits 12 coloured against 3 "
-          'colourless, "4 with a right-handed neutrino"',
-          '4$ with a right-handed neutrino' in allp or 'with a right-handed neutrino' in allp)
+    # ⛔⛭ RE-CUT r7260+60 (node 60), on `r7257`'s order ①.  ** THIS IS ANOTHER SEAT'S RECEIPT AND
+    #   THE EDIT IS STATED IN THE COMMIT. **  *The arms were `4$ with a right-handed neutrino` and
+    #   `with a right-handed neutrino`.  ** Both are LIVE, both open on a preposition, and the second
+    #   is a STRICT SUBSTRING of the first ** -- so the disjunction could never discriminate: arm two
+    #   decides every case arm one would have, and the grain clause's shorter-span limb and the
+    #   dangling test name the same row from two directions.  ⇒ `with a right-handed neutrino` occurs
+    #   in four places across two papers and names no subject, so what it tested was that SOME
+    #   sentence somewhere mentions the option -- not the count this check's own LABEL quotes.*
+    #   ⌗ *One span, carrying the subject and the two numbers the label claims, at the one site where
+    #   the paper actually makes the statement.*
+    check("the nu_R appears as an OPTION in the count: \"one generation splits $12$ coloured against "
+          '$3$ colourless ($4$ with a right-handed neutrino)\" -- ONE span naming its own subject, '
+          'replacing a two-arm disjunction whose shorter arm subsumed its longer one',
+          ('one generation splits $12$ coloured against $3$ colourless ($4$ with a right-handed '
+           'neutrino)') in allp)
     check('⌗ and "sterile" appears ZERO times -- the corpus never assigns the nu_R a gauge status at '
           'all', len(re.findall('sterile', allp, re.I)) == 0)
 

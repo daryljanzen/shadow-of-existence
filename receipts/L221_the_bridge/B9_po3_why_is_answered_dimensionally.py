@@ -66,6 +66,41 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+# ⛔⛭ ADDED r7260+60, on r7257's order ① -- the markup-carrier repair routed from r7258 §⑩.
+#   *`\emph{...}` inside a pinned span is not part of the claim: the pin breaks on any re-typesetting
+#   that preserves the meaning (`\emph`→`\textit`, or the emphasis simply dropped).  Normalising the
+#   emphasis out of the HAYSTACK leaves the span WHOLE -- one contiguous word-aligned read -- instead of
+#   cutting it into pieces that no longer carry the verb.  **r7258 §② refuted the split-into-conjuncts
+#   shape with a truth table and §③ exhibited the disjunction shape failing live, so neither is used
+#   here.**  The site count is PRINTED at each read and pinned nowhere, as the routing said.*
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+_WORD = re.compile(r'\w')
+
+
+def unemph(t, rounds=4):
+    """the text with inline emphasis commands unwrapped, contents kept, nesting handled by iteration"""
+    for _ in range(rounds):
+        t2 = _EMPH.sub(r'\1', t)
+        if t2 == t:
+            break
+        t = t2
+    return t
+
+
+def held(lit, hay):
+    """(present and WORD-ALIGNED at EVERY occurrence, how many occurrences) -- alignment is tracked
+    across all of them rather than abandoned at the first clipped one, so the count printed is true."""
+    i, n, ok = hay.find(lit), 0, True
+    while i >= 0:
+        b = hay[i - 1] if i else ' '
+        a = hay[i + len(lit)] if i + len(lit) < len(hay) else ' '
+        if (_WORD.match(lit[0]) and _WORD.match(b)) or (_WORD.match(lit[-1]) and _WORD.match(a)):
+            ok = False
+        n += 1
+        i = hay.find(lit, i + 1)
+    return (n > 0 and ok), n
+
+
 def main():
     print()
     print("  B9 -- is PO-3's 'why' answered anywhere?")
@@ -93,9 +128,20 @@ def main():
     check('⛭⛭⛭ ⓷ and P14 answers the WHY: "The mass function is odd in the signed offset exactly when '
           '$D$ is even"',
           'The mass function is odd in the signed offset exactly when $D$ is even' in p14)
-    check('with the consequence at $D=5$ spelled out: "the orientation parity $r_{0}\\to-r_{0}$ fixes '
-          'each geometry rather than exchanging it with its conjugate"',
-          '\\emph{fixes} each geometry rather than exchanging it with its conjugate' in p14)
+    # ⛔⛭ RE-CUT r7260+60 on r7257's orders ① and ③.  *The span was `\emph{fixes} each geometry
+    #   rather than exchanging it with its conjugate`: a MARKUP CARRIER whose first word was the
+    #   markup command itself, and a DANGLING span -- it opens on a finite verb and names nothing
+    #   that does the fixing, so it would pass on any sentence carrying that predicate.  ⇒ Emphasis
+    #   normalised out and the span extended LEFT to the paper's own subject, which is the
+    #   ORIENTATION PARITY and is the thing the surrounding argument turns on.*
+    _u14 = unemph(p14)
+    _KEY = ('the orientation parity $r_{0}\\mapsto-r_{0}$ fixes each geometry rather than exchanging '
+            'it with its conjugate')
+    _ok, _n = held(_KEY, _u14)
+    check(f'with the consequence at $D=5$ spelled out: "the orientation parity '
+          f'$r_{{0}}\\mapsto-r_{{0}}$ fixes each geometry rather than exchanging it with its '
+          f'conjugate" -- emphasis NORMALISED out of the paper and the SUBJECT inside the span, '
+          f'word-aligned at {_n} site(s)', _KEY in _u14 and _ok)
     check('and what is then absent: "there is no mass-reflection $\\mathbb{Z}_{2}$, hence no '
           '$\\mathbf3\\oplus\\bar{\\mathbf3}$ Nariai hexad, no outer factor of '
           '$\\mathrm{Aut}(A_{2})=S_{3}\\rtimes\\mathbb{Z}_{2}$, and no $\\gamma^{5}$"',

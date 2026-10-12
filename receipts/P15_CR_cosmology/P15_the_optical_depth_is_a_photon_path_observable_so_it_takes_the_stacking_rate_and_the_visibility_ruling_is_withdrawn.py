@@ -223,11 +223,20 @@ gate("`P07` names the stacking side by enumeration, and the enumeration is of ph
      "observable expansion",
      "a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the observable expansion---takes "
      "the stacking rate" in fp07)
-gate("`P15` makes the REDSHIFT the `L3` projection of an `L1` quantity -- \"through which an L1 or L2 "
-     "quantity appears as distance and redshift\" -- so the observed photons' own properties are read "
-     "off the stacking rate through the projection",
-     "through which an $L1$ or L2 quantity appears as distance and redshift" in body15
-     or "through which an L1 or L2 quantity appears as distance and redshift" in body15)
+# ⛔⛭ RE-CUT r7260+60 (node 60), on `r7257`'s order ①.  ** THIS IS ANOTHER SEAT'S RECEIPT AND THE
+#   EDIT IS STATED IN THE COMMIT. **  *The gate stood on a TWO-ARM DISJUNCTION, and r7258 §③ found it
+#   by instrument rather than by reading: arm one (`$L1$`) is DEAD against every live paper in the
+#   corpus -- `CR_cosmology` now writes `L1` unmathed -- so the gate was held up by arm two ALONE,
+#   and BOTH arms open on `through`, a preposition.  ⇒ ** A span that opens on a preposition names no
+#   subject of its own, so it would pass on any sentence carrying that relative clause: the gate was
+#   one dead arm away from asserting nothing. **  The dead arm is REMOVED rather than kept as a
+#   fallback, and the live one is extended LEFT to the subject the paper gives it -- `the reassigned
+#   shadow the observer reads` -- which is also what makes the gate's own label true.*
+gate("`P15` makes the REDSHIFT the `L3` projection of an `L1` quantity -- \"the reassigned shadow the "
+     "observer reads, through which an L1 or L2 quantity appears as distance and redshift\" -- so the "
+     "observed photons' own properties are read off the stacking rate through the projection",
+     "the reassigned shadow the observer reads, through which an L1 or L2 quantity appears as "
+     "distance and redshift" in body15)
 gate("and `P15` puts `$D_M$` and `$D_H=c/H$` on the stacking rate's `$1/H_0$` while the sound horizon "
      "is accumulated on the leaf -- the two sides in one sentence",
      "$D_M$ and $D_H=c/H$ carry the stacking rate's $1/H_0$, while the sound horizon is accumulated "

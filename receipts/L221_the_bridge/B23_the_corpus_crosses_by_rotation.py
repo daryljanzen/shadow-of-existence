@@ -69,6 +69,41 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+# ⛔⛭ ADDED r7260+60, on r7257's order ① -- the markup-carrier repair routed from r7258 §⑩.
+#   *`\emph{...}` inside a pinned span is not part of the claim: the pin breaks on any re-typesetting
+#   that preserves the meaning (`\emph`→`\textit`, or the emphasis simply dropped).  Normalising the
+#   emphasis out of the HAYSTACK leaves the span WHOLE -- one contiguous word-aligned read -- instead of
+#   cutting it into pieces that no longer carry the verb.  **r7258 §② refuted the split-into-conjuncts
+#   shape with a truth table and §③ exhibited the disjunction shape failing live, so neither is used
+#   here.**  The site count is PRINTED at each read and pinned nowhere, as the routing said.*
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+_WORD = re.compile(r'\w')
+
+
+def unemph(t, rounds=4):
+    """the text with inline emphasis commands unwrapped, contents kept, nesting handled by iteration"""
+    for _ in range(rounds):
+        t2 = _EMPH.sub(r'\1', t)
+        if t2 == t:
+            break
+        t = t2
+    return t
+
+
+def held(lit, hay):
+    """(present and WORD-ALIGNED at EVERY occurrence, how many occurrences) -- alignment is tracked
+    across all of them rather than abandoned at the first clipped one, so the count printed is true."""
+    i, n, ok = hay.find(lit), 0, True
+    while i >= 0:
+        b = hay[i - 1] if i else ' '
+        a = hay[i + len(lit)] if i + len(lit) < len(hay) else ' '
+        if (_WORD.match(lit[0]) and _WORD.match(b)) or (_WORD.match(lit[-1]) and _WORD.match(a)):
+            ok = False
+        n += 1
+        i = hay.find(lit, i + 1)
+    return (n > 0 and ok), n
+
+
 def main():
     print()
     print("  B23 -- how does the corpus cross the turnaround?")
@@ -92,10 +127,18 @@ def main():
     #   \\emph{purely imaginary}: the lift is the Euclidean segment of the bead".*  ⇒ *`dη` IS the
     #   conformal-time element, so the prose was replaced by its own definition -- a rewording that
     #   strengthens the statement.  Pinned to the symbolic form and its gloss.*
-    check('⛭⛭ ⓶ P7 states the crossing: $\\dd\\eta=\\dd\\tilde\\tau/a$ is "purely imaginary", '
-          'the lift being the Euclidean segment',
-          'is \\emph{purely imaginary}' in p7
-          and 'the lift is the Euclidean segment of the bead' in p7)
+    # ⛔⛭ RE-CUT r7260+60 on r7257's orders ① and ③.  *The arm read `is \emph{purely imaginary}`:
+    #   a MARKUP CARRIER (the pin broke on any re-typesetting that kept the meaning) and a DANGLING
+    #   span (it opens on a finite verb, so read alone it names no subject and `is purely imaginary`
+    #   occurs in four papers of this corpus).  ⇒ Emphasis normalised out of the haystack and the
+    #   span extended LEFT to the subject the paper gives it -- one contiguous word-aligned read.*
+    _u7 = unemph(p7)
+    _K1 = 'the conformal time $\\dd\\eta=\\dd\\tilde\\tau/a$ is purely imaginary'
+    _ok1, _n1 = held(_K1, _u7)
+    check(f'⛭⛭ ⓶ P7 states the crossing: "the conformal time $\\dd\\eta=\\dd\\tilde\\tau/a$ is '
+          f'purely imaginary" -- emphasis NORMALISED out and the span carrying its own SUBJECT, '
+          f'word-aligned at {_n1} site(s); the lift being the Euclidean segment',
+          _K1 in _u7 and _ok1 and 'the lift is the Euclidean segment of the bead' in _u7)
     check('along a segment running from the turnaround: "while the areal radius climbs from the '
           'comoving turnaround to the branch point"',
           # ⛭ r4070: P7 inserted the turnaround's explicit VALUE inside the span this pin
@@ -104,8 +147,14 @@ def main():
           #   then filled.*  Pinned to the two ends separately.
           'not advance while the areal radius climbs from the comoving turnaround $|r|=(2M' in p7
           and 'to the branch point' in p7)
-    check('with the rate continuous across it: "carried continuously from zero at the turnaround"',
-          'carried continuously from \\emph{zero} at the turnaround' in p7)
+    # ⛔⛭ RE-CUT r7260+60, same two defects as above: markup carrier AND dangling.  *`carried
+    #   continuously from zero at the turnaround` opens on a PARTICIPLE, so it names no subject and
+    #   nothing in it says what is being carried.  The paper says what: the rate $\dd r/\dd s$.*
+    _K2 = 'the rate $\\dd r/\\dd s$ is carried continuously from zero at the turnaround'
+    _ok2, _n2 = held(_K2, _u7)
+    check(f'with the rate continuous across it: "the rate $\\dd r/\\dd s$ is carried continuously '
+          f'from zero at the turnaround" -- emphasis normalised out and the SUBJECT inside the span '
+          f'rather than assumed from the label, word-aligned at {_n2} site(s)', _K2 in _u7 and _ok2)
 
     # the substitution
     Hi = sp.simplify(sp.expand_trig(Hc.subs(eta, sp.pi + sp.I*s)))

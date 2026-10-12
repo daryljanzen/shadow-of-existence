@@ -81,6 +81,28 @@ def check(label, cond):
         FAILED.append(label)
 
 
+# ⛔⛭ ADDED r7260+60, on r7257's order ① -- the routed repair for this receipt's one owed row, the
+#   CLIPPED TWIN of the row performed in `B8` at r7258.  *Both receipts pin the same sentence of the
+#   same paper and both stopped inside the word `branching`; `B8`'s was repaired then and this one
+#   was routed because a prefix claim gives this seat the KEYS and not the FILES.  r7257 ordered the
+#   routed patches landed, so it is performed here, in the form `B8` already carries.*
+_WORD = re.compile(r'\w')
+
+
+def held(lit, hay):
+    """(present and WORD-ALIGNED at EVERY occurrence, how many occurrences) -- alignment is tracked
+    across all of them rather than abandoned at the first clipped one, so the count printed is true."""
+    i, n, ok = hay.find(lit), 0, True
+    while i >= 0:
+        b = hay[i - 1] if i else ' '
+        a = hay[i + len(lit)] if i + len(lit) < len(hay) else ' '
+        if (_WORD.match(lit[0]) and _WORD.match(b)) or (_WORD.match(lit[-1]) and _WORD.match(a)):
+            ok = False
+        n += 1
+        i = hay.find(lit, i + 1)
+    return (n > 0 and ok), n
+
+
 def main():
     print()
     print("  B6 -- is PO-5's object already delivered?")
@@ -106,9 +128,27 @@ def main():
     check('⓶ P14 lists colour\'s discrete content as DELIVERED: "the discrete content of '
           '\\textbf{colour}"',
           'after them, the discrete content of \\textbf{colour}' in p14)
-    check('with the module named: "the module the operator\'s colour structure acts on is the branching '
-          'rather than any bundle of the substrate"',
-          "the module the operator's colour structure acts on is the branch" in re.sub(r'\s+', ' ', p14))
+    # ⛔⛭ RE-CUT r7260+60: the LABEL and the CONDITION quoted DIFFERENT TEXT, and the label was
+    #   already right.  *The label said `is the branching rather than any bundle of the substrate`;
+    #   the condition tested only `is the branch`, which is a character window stopping inside
+    #   `branching`.  ** So the key was clipped mid-word at every occurrence and the grain clause's
+    #   shorter-span test had nothing to run on. **  The re-cut makes the condition test what the
+    #   label has been claiming; nothing about the claim changes.*  ⌗ *Written as a DIRECT literal so
+    #   the quote-pin operator keys the repaired read -- a repair reachable only through a helper
+    #   leaves the pin in force and removes it from the counted backlog in the same move.*
+    _p14 = re.sub(r'\s+', ' ', p14)
+    _MOD = ("the module the operator's colour structure acts on is the branching rather than any "
+            'bundle of the substrate')
+    _ok_mod, _n_mod = held(_MOD, _p14)
+    check(f'with the module named: "the module the operator\'s colour structure acts on is the '
+          f'branching rather than any bundle of the substrate" -- RE-CUT to the span the LABEL always '
+          f'quoted, word-aligned at all {_n_mod} occurrence(s) in this paper',
+          ("the module the operator's colour structure acts on is the branching rather than any "
+           'bundle of the substrate') in _p14 and _ok_mod)
+    # the control, routed through the helper on purpose so the retired literal is not re-keyed
+    _ok_old, _n_old = held("the module the operator's colour structure acts on is the branch", _p14)
+    check(f'⛔ and the RETIRED key was clipped at every one of its {_n_old} occurrence(s), which is '
+          f'what made it a character window rather than a claim', _n_old > 0 and not _ok_old)
     # ** r6931+70.1: class (a), FROZE AN ERROR -- this and the BODY check below pinned "generate
     #   $SU(3)$" / "is $SU(3)$, with the lap as its centre".  A wall monodromy has determinant omega, so
     #   the group is finite, order 81, in U(3); corrected at r6707 (3b921b95, body) and r6719

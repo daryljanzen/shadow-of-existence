@@ -91,9 +91,39 @@ def main():
           'the bundle above is flat' in p14 and "above is flat, so the construction supplies colour's exact selection rules and no" in p14)
 
     # ⓷ the r2769 split is untouched
-    check('⓷ and the r2769 split from `PO-4` is untouched: P14 still states this row\'s residue as "a '
-          'fixed pure number rather than a free parameter"',
-          'a fixed pure number rather than a free parameter' in p14)
+    # ⛔⛭ CONDITION r7260+60, on r7257's order ① -- the routed repair for this receipt's one owed row.
+    #   *The span `a fixed pure number rather than a free parameter` is read by FIVE receipts of this
+    #   prefix and four of them are MEANING-HELD.  Only this one was REPAIR-OWED, and the reason is
+    #   not the span: it is the LABEL, which asserts that P14 ** STILL ** states the residue that way.
+    #   ** A claim whose content IS the present state cannot be held as meaning ** -- MEANING-HELD is
+    #   for a finding no string can carry, and L-249's rule is for a string expected to retire, and
+    #   this is neither.  ⇒ So the wording goes and a STRUCTURAL CONDITION on the residue clause
+    #   takes its place: the clause must REQUIRE a determinate number and must mention a free one
+    #   only in order to exclude it.*  ⌗ *Shape taken from `B33` and `B63` (r7258), both of which
+    #   carry their COUNTER on the read; `B61`'s shape is deliberately not copied, because its read
+    #   is pattern-traced and the quote-pin operator cannot key it.*
+    _FIX = re.compile(r'fixed pure number|a pure number|\bfixed\b|\bdeterminate\b')
+    _FREE = re.compile(r'free parameter|tunable|a tuning|adjustable|fitted|fit to')
+    _CONTRAST = re.compile(r'(?:rather than|and not|not merely|instead of|never)\s+(?:a |an )?$')
+
+    def residue_requires_a_number(t):
+        """the clause requires a DETERMINATE quantity, and every free-parameter word in it stands
+        behind a contrast marker -- i.e. a free parameter is named only to be excluded."""
+        if not _FIX.search(t):
+            return False
+        return all(_CONTRAST.search(t[max(0, m.start() - 26):m.start()]) for m in _FREE.finditer(t))
+
+    _i = p14.find('what a third mechanism must deliver')
+    _res = p14[_i:_i + 300] if _i >= 0 else ''
+    check('⓷ and the r2769 split from `PO-4` is untouched: P14\'s residue clause REQUIRES a '
+          'determinate number and names a free parameter only to exclude it -- a condition on the '
+          'clause rather than a pin on its wording, because the claim is about the paper\'s PRESENT '
+          'state and a re-wording that kept the requirement would have broken the pin',
+          _i >= 0 and residue_requires_a_number(_res))
+    check('⇒ and the condition carries its COUNTER, so it is a test and not a tautology: the same '
+          'test on a residue clause that made the number a FITTED parameter returns False',
+          not residue_requires_a_number('So what a third mechanism must deliver is a free parameter '
+                                        'fixed by fitting one observable.'))
 
     # ⓸ and the parallel
     check('⛭⛭ ⓸ while both rows now share a SHAPE: P14 gives colour "exact selection rules and no '

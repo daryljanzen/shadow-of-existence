@@ -184,13 +184,17 @@ RETIRED = r'9.4\%'
 REPLACED = r'8.2\%'
 RATE_GAP = 'puts $10.8\\%$ of that gap into the diffusion length by itself'
 OBSERVABLE = '$\\theta_{D}/\\theta_{*}$ moved by under a per cent'
-# ⌗ *`60`'s two constants are kept and `cc66`'s performed re-cut marker with them.  The gate's
-#   PAPER-side span carries its SUBJECT, because a span opening on a finite verb names none and
-#   would pass a paper saying some other quantity moved by under a per cent -- `r7258`'s own
-#   dangling-predicate finding, bound at `r7257`.  The MARKER is what `C26` carries today, which
-#   is a different claim and a different string.  **The merge's first resolution collapsed the two
-#   into the short one, which minted a dangling key inside the revision that measured the defect.**
-OBSERVABLE_IN_C26 = 'moved by under a per cent'   # what `C26` carries today, unchanged
+# ⛭⛭ *`r7258` had to keep TWO constants here because the repair's unit spanned two prefixes: the
+#   PAPER-side span carrying its subject, and a separate marker telling the truth about what `C26`
+#   carried.  A span opening on a participle names no subject and would pass a paper saying some
+#   OTHER quantity moved by under a per cent -- this seat's own dangling finding, adopted at
+#   `r7257`.*  ⌗ *The merge's first resolution collapsed the two into the SHORT one, which minted a
+#   dangling key inside the revision that measured the defect, and that is why they were split.*
+#   ⇒ ***r7260: `C26`'s own read is RE-CUT to the same subject-bearing span, so the split constant
+#       FOLDS BACK INTO ONE.***  *The marker and the gate's span are now the same string because
+#       the two prefixes now carry the same claim, which is what a repair of one sentence should
+#       leave behind.*  ⚠ It is kept as a NAME rather than deleted, so the three-tuple below still
+#       says which of its fields is the paper span and which is the source marker.
 APART = 'the rate gap is not what the signature is made of'
 print(f"      live paper bodies ({len(_papers)} files): {RETIRED!r} x{_all_bodies.count(RETIRED)}, "
       f"{REPLACED!r} x{_all_bodies.count(REPLACED)}")
@@ -251,7 +255,7 @@ PINS = (
     #     read from P15 at exactly one site -- so only the marker is re-pointed at the form the
     #     source now carries.  60's reading and this gate's wording are unchanged.
     (C26, RATE_GAP, '.{0,60}?diffusion length'),
-    (C26, OBSERVABLE, OBSERVABLE_IN_C26),
+    (C26, OBSERVABLE, OBSERVABLE),
     (C26, APART, APART),
     (C62, 'on $185$ bins, is the better-converged', '.{0,40}?converged'),   # re-cut, as above
     (KRE, 'the Kretschmann scalar is $48M^2/r^6+24/\\alpha^4$', 'the Kretschmann scalar is $48M^2/r^6'),

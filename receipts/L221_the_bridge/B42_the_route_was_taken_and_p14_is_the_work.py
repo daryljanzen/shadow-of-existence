@@ -74,6 +74,41 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+# ⛔⛭ ADDED r7260+60, on r7257's order ① -- and the DEFECT CLASS I ROUTED THIS ROW UNDER WAS WRONG.
+#   *r7258 §⑩ called `non-geometric but` a BARE LOCATOR owing a condition.  Reading the paper with
+#   the emphasis normalised shows what it actually is: the sentence is `not merely \emph{found}
+#   non-geometric but \emph{forced} to be`, so the markup falls on BOTH SIDES of the fragment and
+#   leaves a two-word island between them.*  ⇒ ***A markup carrier with emphasis on both sides
+#   DEGENERATES into something indistinguishable from a bare locator, which means the bare-locator
+#   count in my own r7258 census is contaminated.***  The repair is the same normalisation as the six.
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+_WORD = re.compile(r'\w')
+
+
+def unemph(t, rounds=4):
+    """the text with inline emphasis commands unwrapped, contents kept, nesting handled by iteration"""
+    for _ in range(rounds):
+        t2 = _EMPH.sub(r'\1', t)
+        if t2 == t:
+            break
+        t = t2
+    return t
+
+
+def held(lit, hay):
+    """(present and WORD-ALIGNED at EVERY occurrence, how many occurrences) -- alignment is tracked
+    across all of them rather than abandoned at the first clipped one, so the count printed is true."""
+    i, n, ok = hay.find(lit), 0, True
+    while i >= 0:
+        b = hay[i - 1] if i else ' '
+        a = hay[i + len(lit)] if i + len(lit) < len(hay) else ' '
+        if (_WORD.match(lit[0]) and _WORD.match(b)) or (_WORD.match(lit[-1]) and _WORD.match(a)):
+            ok = False
+        n += 1
+        i = hay.find(lit, i + 1)
+    return (n > 0 and ok), n
+
+
 def main():
     print()
     print("  B42 -- is PO-4's remaining route actually unworked?")
@@ -85,10 +120,19 @@ def main():
     check('⛭⛭ ⓵ the boundary paper gives the mechanism: the index theorem needs "a compact connected '
           'group", and the discrete parity has "no such circle action and so no trigger"',
           'no such circle action and so no trigger' in bp)
-    check('and concludes chirality is "not merely found non-geometric but forced to be, the boundary '
-          'the conclusion of a mechanism and not only the report of a wall"',
-          # ** 'forced to be' spans a source line break; the clause stem does not **
-          'not only the report of a wall' in bp and 'non-geometric but' in bp)
+    # ⛔⛭ RE-CUT r7260+60.  *The stem `non-geometric but` was not a line-break artefact, as the note
+    #   that stood here said: it is the gap between `\emph{found}` and `\emph{forced}`.  ⇒ With the
+    #   emphasis normalised out of the haystack the span is whole, carries its own SUBJECT (`observed
+    #   fermion chirality`) and ends on a predicate rather than on the conjunction `but`, which is
+    #   what the old two-word key did.*
+    _ubp = unemph(bp)
+    _KEY = ('observed fermion chirality is not merely found non-geometric but forced to be')
+    _ok, _n = held(_KEY, _ubp)
+    check(f'and concludes chirality is "observed fermion chirality is not merely found non-geometric '
+          f'but forced to be, the boundary the conclusion of a mechanism and not only the report of a '
+          f'wall" -- emphasis NORMALISED out so the two-word island between the two emphases closes '
+          f'up, word-aligned at {_n} site(s)',
+          _KEY in _ubp and _ok and 'not only the report of a wall' in _ubp)
     check('⛭⛭⛭ and names the route: "a fermion sector built on that discrete component ... is the '
           'single geometric opening the wall leaves"',
           'is the single geometric opening the wall leaves' in bp)
