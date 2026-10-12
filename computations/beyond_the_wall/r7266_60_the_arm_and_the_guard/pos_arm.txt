@@ -1,0 +1,51 @@
+
+============================================================================================
+  THE FOURTH ARM -- part of speech by distribution, not a fourth word on a closed list
+============================================================================================
+    corpus: 406655 word tokens, 13433 types; 26 determiners (CLOSED)
+    calibration: 50 known-verb controls, median d/n = 0.0869
+                 400 noun controls (words following a determiner >= 40 times), median d/n = 0.5150
+    axis ONE  (determiner BEFORE): verbs 0.0869 vs nouns 0.5150, a factor of 5.9;  threshold < 0.2115
+    axis TWO  (determiner AFTER) : verbs 0.1111 vs nouns 0.0843, a factor of 1.3;  threshold > 0.0968
+    *** A word is VERB-LIKE only on BOTH axes: one axis separates noun from not-noun, which is not what the arm needs. ***
+    controls that cross it: 30 of 50 verbs ABOVE, 14 of 400 nouns BELOW
+      verbs above  : been, can, carried, constrained, could, determined, did, do, does, fixed, given, goes
+      nouns below  : and, form, group, it, leaves, math, of, one, only, relativity, sector, term
+
+    THE POPULATION: 163 keys, the ones r7260 verdicted, read from its own table
+      the THREE ADOPTED ARMS flag      : 21
+      the PART-OF-SPEECH arm flags     : 20
+      part-of-speech ONLY (the widening): 12
+      closed-list ONLY                 : 13
+      both                             : 8
+
+    THE WIDENING, by name:
+      + `"USED exactly as filed"`   head `used` before=0.0000 after=0.1607
+      + `"draws no bound from it in either direction"`   head `draws` before=0.0845 after=0.3521
+      + `"exactly the zero-point quantum"`   head `exactly` before=0.0124 after=0.3214
+      + `"not a debt"`   head `not` before=0.0005 after=0.3614
+      + `"not about the tower's regularisation"`   head `not` before=0.0005 after=0.3614
+      + `"not recomputed here"`   head `not` before=0.0005 after=0.3614
+      + `"once dissociation is total, the memory of the peak is erased"`   head `once` before=0.0506 after=0.3797
+      + `"one per tensor harmonic"`   head `one` before=0.1978 after=0.1068
+      + `"selects the Friedrichs extension"`   head `selects` before=0.1325 after=0.4819
+      + `"survive on a background whose curvature runs"`   head `survive` before=0.0370 after=0.4815
+      + `"uses only that both sides of the threshold are occupied"`   head `uses` before=0.1200 after=0.3000
+      + `"whereas in the conserved spacetime Dirac norm the same static mode is not"`   head `whereas` before=0.0000 after=0.6000
+
+    WHAT THE CLOSED LIST CATCHES AND THIS ARM DOES NOT:
+      - `"At a double root the relation is not available at all"`   head `at` at d/n=0.0071
+      - `"At leading order $\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$"`   head `at` at d/n=0.0071
+      - `"a precision frontier the title does not stake itself on"`   head `a` at d/n=0.0277
+      - `"at the origin"`   head `at` at d/n=0.0071
+      - `"does not settle it"`   head `does` at d/n=0.0720
+      - `"essentially self-adjoint where"`   head `essentially` at n=5 (below MIN_N)
+      - `"every curvature invariant on either face is a pure power of"`   head `every` at d/n=0.0274
+      - `"is $\\tfrac14$ under normal ordering"`   head `is` at d/n=0.1084
+      - `"is a pure power of"`   head `is` at d/n=0.1084
+      - `"is an artefact of truncation"`   head `is` at d/n=0.1084
+      - `"is not assumed here"`   head `is` at d/n=0.1084
+      - `"on each sub-threshold fibre"`   head `on` at d/n=0.0062
+      - `"which can be non-zero at second order in the metric perturbation and reverses with `   head `which` at d/n=0.0072
+
+  ⇒ the order's threshold was fixed before this ran: the arm must flag at least 4 keys the closed list misses.  Measured: 12.

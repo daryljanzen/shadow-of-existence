@@ -1,0 +1,17 @@
+# THE TWELVE KEYS THE PART-OF-SPEECH ARM FLAGS AND THE CLOSED LIST MISSES, read BY HAND, with the
+# reason published per key so the count can be disputed without redoing the pass.  r7265's threshold
+# was fixed before the arm existed: at least 4 keys wider than the closed list, or the list was not
+# short and the fourth arm is the wrong repair.
+# verdict	key	head	why
+TRUE	USED exactly as filed	used	a past participle with no subject: the span says something was used and names nothing that was
+TRUE	draws no bound from it in either direction	draws	a finite verb in the third person with no subject anywhere in the span
+TRUE	not a debt	not	a bare predicate complement under a negator -- it predicates and names nothing.  ⌗ The ADOPTED negator arm misses it: it strips the `not` and tests the remainder's HEAD against the closed list, and `a` is not on that list
+TRUE	not about the tower's regularisation	not	the same shape, a negated prepositional predicate with no subject
+TRUE	not recomputed here	not	the same shape, a negated participle
+TRUE	selects the Friedrichs extension	selects	a finite verb with its object and no subject
+TRUE	survive on a background whose curvature runs	survive	a bare infinitive or plural finite verb, no subject
+TRUE	uses only that both sides of the threshold are occupied	uses	a finite verb with no subject; the `both sides` is the complement's subject and not the span's
+FALSE	exactly the zero-point quantum	exactly	a NOUN PHRASE with an adverb in front of it.  The arm's axis one puts `exactly` with the verbs because an adverb is not preceded by a determiner either, and axis two puts it there because an adverb IS often followed by one
+FALSE	once dissociation is total, the memory of the peak is erased	once	a full sentence with a subordinate clause in front; `the memory of the peak` is its subject, named in the span
+FALSE	one per tensor harmonic	one	a numeral phrase naming a quantity, not a predicate
+FALSE	whereas in the conserved spacetime Dirac norm the same static mode is not	whereas	a dependent clause that DOES name its subject (`the same static mode`), so it fails the test's own definition even though it cannot stand alone

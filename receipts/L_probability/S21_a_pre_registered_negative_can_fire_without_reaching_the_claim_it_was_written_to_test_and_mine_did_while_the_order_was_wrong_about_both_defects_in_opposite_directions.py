@@ -65,24 +65,6 @@ The history is in this receipt, which is where the order says it goes.*
 `READING_NOTES.md` of this revision, both pushed before the editing turn; `P16`, `P18`, `P10` and `P3`
 read at this tree; `r7258`'s fourth repair form (normalisation of the HAYSTACK) applied to the emphasis
 and the line wrapping; and `r7257`'s order ③, the dangling test run on every key BEFORE it was written.*
-
-** ⛔⛭⛭⛭ r7265 (66) -- AND THREE OF THESE GATES WENT RED ON THIS REVISION'S OWN MERGE, BECAUSE ITS
-`BEFORE` WAS PINNED TO A RELATION AND NOT TO A COMMIT. **  *`at_base` read `merge-base HEAD
-origin/main`, and `Ⓑ⑧`'s restraint diff read the same relation.*  ⇒ *** On the branch that relation
-named `b230856c`, the trunk this revision was written against.  The moment the branch LANDED it
-resolved to `HEAD` itself, so every `present at the trunk / absent here` assertion inverted and
-`Ⓑ①`, `Ⓑ⑧` and `Ⓒ①` failed on the merge of the work they record. ***
-  ⌈ ** `L-249` says pin the historical state AT ITS COMMIT.  This receipt applied that rule
-  deliberately and said so in `Ⓒ⑥`'s own label -- `Read AT THE TRUNK and not live, L-249 again` --
-  and pinned to a merge base, which is a relation between two moving refs. **  *A pin to a relation
-  is not a pin.  That is the `66`th member of `PO-78`, and it is sharper than an unpinned read: the
-  discipline was applied, in terms, with an instrument that does not hold still.*
-  ⇒⇒ *And pinning the base alone was not enough either: `BASE_SHA..working tree` on a merged trunk
-  is every file four seats changed since, which read `78`.*  ** `this revision` is a COMMIT RANGE and
-  not a distance from a commit, so the restraint diff is now `BASE_SHA..REV_TIP` with the
-  working-tree diff kept as the branch-case fallback. **
-  ⌊ *`66`'s edit, because `66` landed the merge that inverted it.  **Stated for `60` to reverse** --
-  not one claim, count or verdict is touched, only the commit the `BEFORE` is read at.*
 """
 
 import os
@@ -147,33 +129,53 @@ def read(rel):
         return fh.read()
 
 
-# ===================================================================================================
-# ** ⛔⛭⛭⛭ r7265 (66): `at_base` READ `merge-base HEAD origin/main`, AND THAT IS NOT A PIN. **
-#   *This receipt applied `L-249`'s rule deliberately and said so in `Ⓒ⑥`'s own label -- `Read AT THE
-#   TRUNK and not live, L-249 again` -- but it pinned the BEFORE to a RELATION rather than to a
-#   COMMIT.*  ⇒ *** On this branch `merge-base HEAD origin/main` was `b230856c`, the trunk this
-#   revision was written against.  The moment the branch LANDED, that relation resolved to HEAD
-#   ITSELF, so every `present at the trunk / absent here` assertion inverted and three gates went
-#   red on the merge of the work they record: `Ⓑ①`, `Ⓑ⑧`, `Ⓒ①`. ***
-#   ⌈ ** `L-249` says pin the historical state AT ITS COMMIT.  A merge base is not a commit; it is a
-#     relation between two moving refs, and a pin to a relation is not a pin at all. **  *That is the
-#     `66`th member of `PO-78`, and it is a sharper one than an unpinned read: the discipline was
-#     applied, in terms, and the instrument it was applied with does not hold still.*
-#   ⇒⇒ ** REPAIRED to the SHA that relation named while this revision was being written. **  The
-#   fallback is kept for the case where the sha is not in the clone, and it FAILS LOUD rather than
-#   silently reading HEAD.
-#   ⌊ *`66`'s edit, because `66` landed the merge that inverted it.  **Stated for `60` to reverse** --
-#   not one claim, count or verdict is touched, only the commit the BEFORE is read at.*
-# ===================================================================================================
-BASE_SHA = 'b230856c'   # `merge-base` of this revision's branch and `main`: the r7261 orders commit
+# ⛔⛭⛭⛭ THE REFERENCE COMMIT IS A LITERAL SHA AND NOT `merge-base HEAD origin/main`, AND THAT IS THE
+#   SECOND HALF OF `L-249`'s RULE THIS LINE GOT WRONG.
+#   *The first cut of this receipt read `before` at the merge base with `origin/main`.  **On a branch
+#   ahead of the trunk that is the right commit; the moment the work MERGES, `merge-base` collapses
+#   onto `HEAD` and every historical read returns the LIVE file** -- so each before-and-after gate
+#   compares a tree with itself and goes red.  `S21` was red on `main` in the runner-read sweep for
+#   exactly this, and the carry ledger named it there before any seat did.*
+#     ⇒ *** A historical pin computed against a MOVING REF is not a historical pin.  `L-249` says to
+#         pin the state at the commit it stood at; a commit is a sha. ***
+#   ⌗ *`S19`'s repair used a literal sha and is immune.  This receipt and its sibling used
+#     `merge-base` -- the same seat, the same revision, the right choice once and the wrong one
+#     twice -- which is why the guard below asserts the sha RESOLVES and DIFFERS rather than trusting
+#     it.*
+BEFORE = '0dd8b745'      # the commit r7262's subjects stood at, before this revision edited them
+
+
+def before_resolves():
+    """(the sha resolves, it is an ancestor of HEAD) -- so a bad pin fails LOUDLY and not silently"""
+    ok = subprocess.run(['git', 'cat-file', '-e', BEFORE + '^{commit}'],
+                        cwd=ROOT, capture_output=True, text=True).returncode == 0
+    anc = subprocess.run(['git', 'merge-base', '--is-ancestor', BEFORE, 'HEAD'],
+                         cwd=ROOT, capture_output=True, text=True).returncode == 0
+    return ok, anc
 
 
 def at_base(rel):
-    """the file as THE TRUNK THIS REVISION WAS WRITTEN AGAINST carries it, read at a fixed commit so
-    that `before` cannot become `after` when this branch lands."""
-    r = subprocess.run(['git', 'show', f'{BASE_SHA}:{rel}'],
+    """the file as the trunk carries it, so `before` is read from git and not from memory"""
+    r = subprocess.run(['git', 'show', f'{BEFORE}:{rel}'],
                        cwd=ROOT, capture_output=True, text=True)
     return r.stdout if r.returncode == 0 else None
+
+def files_of_revision(tag):
+    """the files THIS REVISION's OWN commits changed --- merges excluded, other seats' work excluded
+
+    ⛔⛭ *A plain `git diff BEFORE` cannot answer `did THIS revision touch that paper`: once the trunk
+    is merged in, the diff carries every other seat's change as well, and this gate read `83` files
+    where the revision had touched four.  **A restraint gate has to measure the restraint's own
+    commits, not the branch's position.***
+    """
+    shas = subprocess.run(['git', 'log', '--no-merges', '--format=%H', f'--grep={tag}',
+                           BEFORE + '..HEAD'], cwd=ROOT, capture_output=True, text=True).stdout.split()
+    out = set()
+    for sh in shas:
+        out |= set(subprocess.run(['git', 'diff-tree', '--no-commit-id', '--name-only', '-r', sh],
+                                  cwd=ROOT, capture_output=True, text=True).stdout.split())
+    return sorted(out), shas
+
 
 
 P16, P18, P10, P3 = ('corpus/cosmogenesis_paper.tex', 'corpus/CR_synthesis.tex',
@@ -188,6 +190,15 @@ print('=' * 100)
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓐ  THE INSTRUMENT STATES ITS OWN COMPETENCE FIRST, AND IT DISCRIMINATES IN BOTH '
       'DIRECTIONS ──\n')
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+_res, _anc = before_resolves()
+gate(f'Ⓐ⓿ ⛔⛭⛭ THE REFERENCE COMMIT RESOLVES, IS AN ANCESTOR OF HEAD, AND ITS CONTENT DIFFERS FROM '
+     f'THE LIVE TREE --- asserted before one historical read is taken through it.  ** This gate exists '
+     f'because the first cut pinned `merge-base HEAD origin/main`, which collapses onto `HEAD` the '
+     f'moment the work merges: this receipt then compared the tree with itself and went RED ON `main` '
+     f'in the runner-read sweep. ** *A historical pin computed against a moving ref is not one.*',
+     _res and _anc and (at_base(P16) or '') != read(P16)
+     and (at_base(P10) or '') != read(P10))
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 from mpmath import mp, mpf, quad, polyroots, sqrt, pi, log     # noqa: E402
 
@@ -348,28 +359,11 @@ gate('Ⓑ⑦ ✔⛭ and the DISTINCTION is `P18`\'s own, carried in a footnote t
 # ⛔⛭ READ AGAINST THE WORKING TREE AND NOT AGAINST `HEAD`.  *The first cut diffed `base..HEAD`
 #   and reported both repaired papers UNCHANGED while they sat edited in the tree -- a restraint
 #   gate that passes because it cannot see the edit is worse than none.*
-# ⛔⛭ AND THE SAME `r7265` REPAIR AS `at_base` ABOVE, FOR THE SAME REASON AND WITH ONE MORE TURN IN
-#   IT.  *This read `git diff --name-only <merge-base>` against the WORKING TREE, which was right on
-#   the branch -- the edits were uncommitted and a restraint gate that cannot see the edit is worse
-#   than none -- and wrong the moment the branch landed: the base resolved to `HEAD` and the diff
-#   that is this revision's own became EMPTY.*
-#   ⌈ ** And pinning the base alone is not enough either: `BASE_SHA..working tree` on a merged trunk
-#     is every file FOUR SEATS changed since, which read `78`. **  *`this revision` is a COMMIT
-#     RANGE, not a distance from a commit.*
-#   ⇒ ** So the pinned form is the revision's OWN range, and the working-tree diff is kept as the
-#   fallback for the branch case, where the range does not yet exist. **  *Both arms name what they
-#   are measuring; neither can silently read the other's answer.*
-REV_TIP = 'd3ebd9aa'    # this revision's last commit: `BASE_SHA..REV_TIP` is its own range
-_rng = subprocess.run(['git', 'diff', '--name-only', f'{BASE_SHA}..{REV_TIP}'],
-                      cwd=ROOT, capture_output=True, text=True)
-if _rng.returncode == 0 and _rng.stdout.split():
-    _changed = _rng.stdout.split()
-else:
-    _changed = subprocess.run(['git', 'diff', '--name-only', BASE_SHA],
-                              cwd=ROOT, capture_output=True, text=True).stdout.split()
+_changed, _own = files_of_revision('r7262')
 gate(f'Ⓑ⑧ ⛭⛭ AND THE REPAIR IS ONE PAPER AND NOT TWO, which is the order\'s framing corrected: '
      f'neither `P18` nor `P3` is touched by this revision, asserted against the diff rather than '
-     f'against intention (`{len(_changed)}` file(s) changed)',
+     f'against intention (`{len(_own)}` commit(s) of this revision, `{len(_changed)}` file(s) '
+     f'between them)',
      P18 not in _changed and P3 not in _changed and P16 in _changed and P10 in _changed)
 
 gate('Ⓑ⑨ ✔ and `P3` carries the merged horizon at the same radius, so the third paper agrees and the '
