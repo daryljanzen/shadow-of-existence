@@ -73,8 +73,18 @@ that would distinguish them is the one that cannot be written.*
 | `.github/workflows/formalisation-mathlib.yml` | `computations/formalisation/lean/**` | elan · `lake exe cache get` · `check_no_sorry.py lean` |
 | `.github/workflows/formalisation-physlib.yml` | `computations/formalisation/lean-physlib/**`, `lean/check_no_sorry.py` | elan · `lake exe cache get` · `check_no_sorry.py lean-physlib` |
 
-*The runner times are the first push's own `TIMING` lines and are reported in the reply that follows them. The
-placement rule pre-registered at `+71.1` ② stands: over 15 minutes, the job moves to a schedule.*
+**Measured on the first push (`0a02cb43`), from the runs' own logs, all green:**
+
+| job | whole job | `TIMING build+check` | verdict line |
+|---|---|---|---|
+| `formalisation — lean` (push run `38300587898`) | **1 min 55 s** | 25 s | `ALL 14 THEOREMS COMPILE AND REST ON NO sorryAx` |
+| `formalisation — lean-physlib` (push run `38300587868`) | **2 min 32 s** | 37 s | `ALL 4 THEOREMS COMPILE AND REST ON NO sorryAx` |
+| the two `pull_request` runs of the same commit | 1 min 59 s · 2 min 36 s | — | green |
+
+*Predicted: whole job 6 min, band 3–15. **Measured below the band**, a miss in the cheap direction. The placement
+rule pre-registered at `+71.1` ② is applied to the number: under 15 minutes, so **the job stays per-push and
+path-scoped, as written.** Gate zero read `STATED` in CI on both runs, so the CI green is a reading that could
+have failed.*
 
 ## ③ The run records — committed
 
