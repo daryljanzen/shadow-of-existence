@@ -1,7 +1,7 @@
 ---
 name: the-weave
 kind: REFERENCE
-current: r7261
+current: r7263
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
