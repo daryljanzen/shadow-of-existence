@@ -10,6 +10,67 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛭⛭ `re r7259` ③ — ORDER ① MEASURED: THE LORENTZIAN LAYER IS ABSENT IN BOTH LIBRARIES, THE ALGEBRAIC SLICE IS 79 PER CENT, AND 82 PER CENT OF THE GEOMETRIC RECEIPTS VERIFY A COORDINATE IDENTITY THAT STANDS IN FOR A THEOREM NOTHING CAN YET STATE (`r7259+71.5`)
+
+*The full result is `computations/formalisation/r7259_71_ground/RESULT.md`, read band by band against
+`PREDICTION.md` (pushed at `+71.3`). The receipts cited were run here, and their verdict lines are quoted there.
+The order's own outcomes, in one line each:*
+
+- **What exists.** *`mathlib` (`4e6064a4`) has Riemannian metrics and, unpredicted, a Levi-Civita connection
+  with uniqueness, all tied to positive-definite fibre inner products. It has **no** pseudo-Riemannian metric,
+  curvature tensor, Killing field (its "Killing" is the Killing form), Lie derivative of a tensor, geodesic, or
+  Einstein equation. `Physlib` (`b0e7ca1c`, formerly PhysLean) has `LorentzGroup (d : ℕ)` for every `d` — so
+  `SO(5,1)` exists — and the Minkowski product. It has no metric on a manifold. Its FLRW type is
+  `def FLRW : Type := sorry`, and its one GR file says the field equations *"are not verified here"*.
+  Every object is named by declaration and line in `RESULT.md` Ⓒ.*
+- **What stating one geometric receipt costs.** *For I20: five foundation layers missing, against my central
+  five — metric, Lie derivative of a tensor, the conformal-Killing equation, null geodesics, and the charge
+  along them. **What I20 actually computes is statable today**; the geometry it stands for is not.*
+- **The slice.** *285 symbolic receipts by the registered rule (the gate's 267; my rule's first run read 135
+  through an import-parsing bug, fixed and disclosed). **Algebraic slice A+B = 79%**, against my 38% —
+  a miss, above. **47% are geometric in subject**, so on subject the order's "most" was closer than my "a
+  quarter". **82% of those verify a coordinate identity** (band 35–80, a miss by two points). Readers'
+  agreement with my blind sample of 12: 8 of 12.*
+- **Neither outcome that would make the order wrong fired.** *Stop (A+B < 15%): no. Reversal (Lorentzian
+  present): no.*
+- **The open derivation (`L221`): not statable as posed.** *"A single condition" has no definition, and
+  `B12` already shows the two triples are of different type. What is statable is listed in `RESULT.md` Ⓔ,
+  and mathlib's `Cubic.discr` is the corpus's Nariai member's own object.*
+- **Toolchain.** *Lean `4.35.0-rc4` is installed here through the network policy; mathlib's cache is not yet
+  fetched, so nothing has been compiled.*
+
+### ⛭ THE FINDING THAT ANSWERS WHY YOU WANTED THIS
+
+*I20 prints `VERDICT: ALL PASS`, and its claims are true. Of its ten checks:*
+
+- *one carries the geometry;*
+- *one **cannot fail** — "ln(1+z) = ∫H dt" never uses `H`;*
+- *one reads back an input asserted in a comment — the geodesic, which I derived, and which is true;*
+- *two pass **whenever `simplify` does not reach zero**.*
+
+*(`I20_which_checks_could_fail.py`, run here.) That is the `r7219` class, found in the first receipt the order
+named, by reading it the way a formal statement would have to. **Across the 111 geometric receipts with a
+coordinate-identity core, that gap between "the identity holds" and "the geometric theorem holds" is
+structural**, and it is the gap a Lean statement makes visible at no proving cost.*
+
+### ⌗ WHAT I WOULD TAKE NEXT, offered for the gate to order or not
+
+1. **The Nariai cubic in mathlib** — the factorisation, `Cubic.discr = 0`, and the double root. The corpus's
+   central object; mathlib-native; small.
+2. **The `sinh^{2/3}` law against Physlib's own `FirstOrderFriedmann`**, with dust and Λ. Physlib has de Sitter
+   and the power laws, but not this solution. It is a corpus result stated in another project's terms, with
+   no geometry needed.
+3. **I20 stated in Lean as what it computes**, with the geometric statement it stands for written alongside as
+   a comment naming the five missing layers — so the gap is in the file and not only in this reply.
+
+*Each comes with a pre-registration first. Nothing outside `computations/formalisation/` and this file has been
+edited by this seat.*
+
+⚠ ***And one thing I broke and fixed, reported because the rule says so:*** *`+71.2` put a bare absence
+claim about the figure 58 into this file, with no search beside it,, and `check_absence_claims` turned the fast job red on PR `#348`. The
+gate was right. The claim now carries the search beside it (`corpus/*.tex`, `receipts/`, `computations/`; the
+one other hit is `1.58 times`, a different number). It was not deleted.*
+
 ## ⌗ `re r7259` ② — THE 29 CHECKED AGAINST THE TREE AT `r7259`: 18 STILL LIVE, 5 FIXED, 3 UNDECIDED, 2 REFUTED, 1 ENVIRONMENT — AND ONE NEW, FOUND BY THE CHECK (`r7259+71.2`)
 
 *Checked by reading each passage at source in the `r7259` tree, and where the passage had moved, by reading
@@ -40,7 +101,7 @@ FIXED below was confirmed by reading, not by an empty grep.*
 | **M14** | `canonical_time.tex` l.1573 | the free tower's large-label weight printed as `2(m²−4)√(m²−3)`. The paper's own convention at l.486–490 is `μ² = m² − 1`, `d = 2(m²−4)`, and it expands `d·μ = 2m³ − 9m + (15/4)m⁻¹ + …`, which is `2(m²−4)√(m²−1)`; the printed form expands to `2m³ − 11m + …`. **The conclusion drawn (a pure Laurent series, no logarithm of the label) holds for either, so the defect is the value and not the argument.** *Hand algebra, not a receipt.* | wrong formula beside a right conclusion |
 | **M16** | `geometric_core_paper.tex` l.683–710 | `sec:imaginary` announces *"Three instances"*, gives two paragraphs (the embedding coordinate, the equatorial seam), then says *"The three bullets above"* (there are no bullets and two items) and *"There is a fourth instance"*. The conjugacy circle, named among the three at l.147, has no paragraph. | P17's own count does not match its own text |
 | **M17** | `algebroid_paper.tex` l.283–287, against l.266 and l.312–318 | ① `eq:atiyah` is stated exact over the base `C` with a ten-dimensional kernel everywhere, citing the homogeneous-space identity — but `C` is defined at l.266 as **the space of cuts**, on which l.312 says the isotropy **drops** stratum by stratum (10, 4, 2, 3, 2, 0); a constant-rank kernel needs a transitive action, so the sequence as written holds on the Type O stratum and not over `C`. ② l.312's strata list omits the Nariai stratum (`so(2,1)⊕so(3)`) that l.318 tests two sentences later. *My `r7051` line named `so(3,1)⊕so(2)` as the omission; I cannot now reconstruct why, and that half is* **UNDECIDED**. | P12's central sequence is stated over a base its own next section says it does not hold on |
-| **M7** | `CR_synthesis.tex` l.1526–1528 | *"the separation between the arms is $58$ times the control's own distance from the data on the same bins"* — the figure 58 appears nowhere in P15 and carries no `\rcpt`. *(The configuration mix my `r7051` line also named is now labelled in place — "on an unlensed spectrum" — so that half reads correctly.)* | an unsourced number in the synthesis paper |
+| **M7** | `CR_synthesis.tex` l.1526–1528 | *"the separation between the arms is $58$ times the control's own distance from the data on the same bins"* — the figure 58 appears nowhere in P15 and carries no `\rcpt` — *searched: `$58$`, `58 times`, `58x`, `58×`, `factor of 58` across `corpus/*.tex`, `receipts/` and `computations/` (`.tex`, `.py`, `.md`); the only hit outside this sentence is `1.58 times` in `computations/beyond_the_wall/r6983_directions/bank.py` l.11, a different number.* *(The configuration mix my `r7051` line also named is now labelled in place — "on an unlensed spectrum" — so that half reads correctly.)* | an unsourced number in the synthesis paper |
 | **M10** | `CR_cosmology.tex` l.2728, against l.912 | the tilt refit quoted as `0.995` against `0.956` at l.2728 and as `0.998` against `0.954` at l.912. One paper, two pairs. | two values for one quantity |
 | **M19** | `shadow_of_existence.tex` l.110, against l.449 | *"six independent idioms"* at l.110; *"seven idioms"* at l.449. | count mismatch in one paper |
 | **M22** | `COMBINATORICS_LEDGER.md` l.836–837 *(my `r7051` line misattributed this to the ontology map)* | permuting the three roots called *"the deck symmetry"*; P5 (`groupoid_paper.tex` l.559) has the **monodromy** group `S₃` and the **deck** group trivial — the exact error ONTOLOGY l.123–124 records having fixed elsewhere. | the ledger repeats a retracted conflation |
@@ -131,7 +192,7 @@ a passage approximately in the raw file and are not exact. Where I gave no line,
 | M4 | `THE_PLAN.md` · ~l.2651 and ~l.2721 | A garbled splice: a quote breaks off at "…rather than the manifold" and its tail "underneath**." reappears ~70 lines later, with the r1603–r1606 abstract-scan text wedged between. (I confirmed this one in the raw file at the time.) |
 | M5 | `THE_PLAN.md` ~l.1343 and `ONTOLOGY_FOUNDATION_INDEX.md` §0 | τ described as "order three on the fundamental domain `[0,2π/3)`", where P5 `prop:tau` has it order one there and order three on the circle. |
 | M6 | P14 ~l.783 · P18 ~l.2468–70 · ONTOLOGY §1m (P9 quote, ~l.1878) and §1p (P13 quote, ~l.2033) | The wording "rendered vector-like", which P13's own header says understates; P13's correct form is "without massless content". I did not check whether P13's body still says it. |
-| M7 | P18 §acoustic ~l.1525–29 | "the control's own χ²/bin 2.10" and "58 times" mix two configurations; the figure 58 appears nowhere else in the corpus. |
+| M7 | P18 §acoustic ~l.1525–29 | "the control's own χ²/bin 2.10" and "58 times" mix two configurations; the figure 58 appears nowhere else in the corpus. *(As remembered from `r7051`, with no search recorded then; the claim has since been searched — `corpus/*.tex`, `receipts/`, `computations/` — and the search is stated with M7 in reply ②.)* |
 | M8 | P18 §displace ~l.2893 | "which term … open computation" stale against P15's acceptance law. |
 | M9 | P18 · the frontier row on the first peak | Possibly stale (weight: light, unverified). |
 | M10 | P15 · the tilt refit | The refit values quoted two ways: `0.998/0.954` against `0.995/0.956`. |
