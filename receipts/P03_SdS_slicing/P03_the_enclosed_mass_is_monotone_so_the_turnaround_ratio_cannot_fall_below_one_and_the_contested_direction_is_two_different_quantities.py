@@ -431,6 +431,11 @@ _inject = 'receipts/L259_the_distance_from_the_present/INJECTED_CONTROL.py'
 _ctrl = [q for q in _outside(_touched + [_inject]) if q not in _AUTHORISED]
 print(f"      with this branch as it stands: {len(_real)} UNAUTHORISED modified unowned receipt(s) "
       f"({len(_unauth)} crossed in all, {len(_AUTHORISED)} of them ordered)")
+if not _touched:
+    print("      ⌗ THE RANGE IS EMPTY -- this tree carries no commit of this seat ahead of "
+          "`origin/main`, so the exception list is NOT asserted against it: an exception list "
+          "cannot be checked against a range that does not exist.  The injected control below "
+          "builds its own crossing and carries the force here.")
 for _q in sorted(q for q in _unauth if q in _AUTHORISED):
     print(f"        ⌗ ordered: {_q.split('/')[-1][:58]} -- {_AUTHORISED[_q][:60]}")
 print(f"      with one MODIFIED unowned receipt injected: {len(_ctrl)}")
@@ -441,10 +446,21 @@ gate("Ⓗ② ⛔ AND THE REPAIR IS NOT VACUOUS, which is the thing a reader shou
      "⛭ `r7265`: the ordered crossings are carried BY NAME with the order that authorised each, "
      "printed above, so an unbidden crossing is still a violation and an authorisation is still "
      "readable",
+     # ⛔⛭⛭⛭ r7269 (66): AND MY OWN r7267 ANTI-STALE GUARD WAS THE DEFECT, FOR THE FOURTH TIME IN
+     #   THREE CYCLES IN THE SAME SHAPE.  *I required every entry of `_AUTHORISED` to be a path the
+     #   branch ACTUALLY crossed, so a stale authorisation could not silently widen the claim.  On
+     #   the TRUNK, `HEAD --not origin/main` is EMPTY -- so nothing was crossed, and the guard fired
+     #   on an empty set.*  ⇒ *** An exception list cannot be checked against a range that does not
+     #   exist.  The honest form is the one `70` wrote into `B1`'s `NODE=None` arm: DECLINE TO ASSERT
+     #   when the subject is absent, and say so, with the control carrying the force. ***
+     #   ⌈ *The injected control is range-INDEPENDENT by construction -- it builds its own crossing --
+     #     so it still fires at `1` on an empty range, which is what keeps this gate from going
+     #     vacuous rather than merely silent about the list.*
+     #   ⌊ *Routed here by `71`, by `cc66` and by `70` in the same cycle, each independently.  The
+     #     first three times this shape appeared it was somebody else's; this one is mine.*
      len(_real) == 0 and len(_ctrl) == 1 and _inject in _ctrl
-     # the exception list must not be a blanket: every entry has to be a path this branch
-     # ACTUALLY crossed, or a stale authorisation would silently widen the claim.
-     and all(q in _unauth for q in _AUTHORISED))
+     # the exception list must not be a blanket -- but it can only be checked where there IS a range
+     and (all(q in _unauth for q in _AUTHORISED) if _touched else True))
 
 print(f"\n{BAR}")
 if fail:
