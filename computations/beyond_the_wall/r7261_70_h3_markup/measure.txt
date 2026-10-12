@@ -1,0 +1,24 @@
+{
+ "held": 270,
+ "raw_fail": [
+  "B57_the_rules_are_centre_data_the_force_ baryon 1, diquark 0, meson 1"
+ ],
+ "norm_fail": [],
+ "burden": 231,
+ "paper_held": 258,
+ "collisions": 13
+}
+COLLISION P4_the_corpus_identifies_the_higgs_mechanism_it_do "is the $R$-odd \\emph{departure} from it" raw 1 N 2
+COLLISION A2_the_three_owed_derivations_are_one_boundary.py "$A_s" raw 23 N 25
+COLLISION Q1_the_missing_operator_and_the_higgs_identificati "is the $R$-odd \\emph{departure} from it" raw 1 N 2
+COLLISION C14_po12_gates_po10.py "\\emph{The end-to-end branch-point-to-recombination transfer is run}" raw 1 N 2
+COLLISION C16_the_transfer_is_six_eighths_built.py "\\emph{The end-to-end branch-point-to-recombination transfer is run}" raw 1 N 2
+COLLISION P15_the_history_is_spherically_symmetric_throughou "does not \\emph{select} it" raw 2 N 3
+COLLISION P07_the_lap_is_a_collapse_read_on_the_cosmic_clock "the \\emph{Hubble--Eddington radius} $r_{\\mathrm{HE}}=(M\\alpha^{2})^{1/3}$" raw 1 N 2
+COLLISION B13_po2_identification_is_stated.py "the Weyl $S_3$ is the relation among the three hinges" raw 0 N 3
+COLLISION B14_identical_in_content_is_po2s_reason.py "Every root, designated the slicing parameter, returns the same $2M=r_0-r_0^3$" raw 0 N 1
+COLLISION B14_identical_in_content_is_po2s_reason.py "the hinge $S_3$ is a within-state index and not a family symmetry" raw 0 N 1
+COLLISION B23_the_corpus_crosses_by_rotation.py "the conformal time $\\dd\\eta=\\dd\\tilde\\tau/a$ is purely imaginary" raw 0 N 1
+COLLISION B23_the_corpus_crosses_by_rotation.py "the rate $\\dd r/\\dd s$ is carried continuously from zero at the turnaround" raw 0 N 1
+COLLISION B9_po3_why_is_answered_dimensionally.py "the orientation parity $r_{0}\\mapsto-r_{0}$ fixes each geometry rather than exchanging it with its conjugate" raw 0 N 1
+H-c by kind (first match wins: math, emphasis, reference-only, other-command, none): {'math': 135, 'literal carries markup itself': 42, 'emphasis': 81, 'reference-only': 13, 'none': 25, 'other-command': 2}

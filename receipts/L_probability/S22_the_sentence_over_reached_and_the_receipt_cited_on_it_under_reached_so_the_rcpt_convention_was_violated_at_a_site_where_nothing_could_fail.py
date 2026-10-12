@@ -89,12 +89,33 @@ def read(rel):
         return fh.read()
 
 
-BASE = subprocess.run(['git', 'merge-base', 'HEAD', 'origin/main'],
-                      cwd=ROOT, capture_output=True, text=True).stdout.strip()
+# ⛔⛭⛭⛭ THE REFERENCE COMMIT IS A LITERAL SHA AND NOT `merge-base HEAD origin/main`, AND THAT IS THE
+#   SECOND HALF OF `L-249`'s RULE THIS LINE GOT WRONG.
+#   *The first cut of this receipt read `before` at the merge base with `origin/main`.  **On a branch
+#   ahead of the trunk that is the right commit; the moment the work MERGES, `merge-base` collapses
+#   onto `HEAD` and every historical read returns the LIVE file** -- so each before-and-after gate
+#   compares a tree with itself and goes red.  `S21` was red on `main` in the runner-read sweep for
+#   exactly this, and the carry ledger named it there before any seat did.*
+#     ⇒ *** A historical pin computed against a MOVING REF is not a historical pin.  `L-249` says to
+#         pin the state at the commit it stood at; a commit is a sha. ***
+#   ⌗ *`S19`'s repair used a literal sha and is immune.  This receipt and its sibling used
+#     `merge-base` -- the same seat, the same revision, the right choice once and the wrong one
+#     twice -- which is why the guard below asserts the sha RESOLVES and DIFFERS rather than trusting
+#     it.*
+BEFORE = '412e2aa7'      # the commit r7264's subjects stood at, before this revision edited them
+
+
+def before_resolves():
+    """(the sha resolves, it is an ancestor of HEAD) -- so a bad pin fails LOUDLY and not silently"""
+    ok = subprocess.run(['git', 'cat-file', '-e', BEFORE + '^{commit}'],
+                        cwd=ROOT, capture_output=True, text=True).returncode == 0
+    anc = subprocess.run(['git', 'merge-base', '--is-ancestor', BEFORE, 'HEAD'],
+                         cwd=ROOT, capture_output=True, text=True).returncode == 0
+    return ok, anc
 
 
 def at_base(rel):
-    r = subprocess.run(['git', 'show', f'{BASE}:{rel}'], cwd=ROOT, capture_output=True, text=True)
+    r = subprocess.run(['git', 'show', f'{BEFORE}:{rel}'], cwd=ROOT, capture_output=True, text=True)
     return r.stdout if r.returncode == 0 else None
 
 
@@ -125,12 +146,14 @@ print('=' * 100)
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓐ  THE HISTORICAL READ IS SHOWN TO WORK BEFORE ANYTHING IS READ THROUGH IT ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-gate(f'Ⓐ① ⛭⛭ the trunk resolves and both files come back from it, DIFFERING from the working tree '
+gate(f'Ⓐ① ⛔⛭⛭ the REFERENCE COMMIT resolves, is an ancestor of HEAD, and both files come back from '
+     f'it DIFFERING from the working tree '
      f'(`{len(p12_base)}` against `{len(p12)}` characters of `P12`; `{len(i55_base or "")}` against '
      f'`{len(i55)}` of the receipt).  ** Without this a shallow clone hands every before-and-after '
      f'gate below an empty string and they all pass on nothing -- the defect `r7262` found in its own '
      f'`L-249` work, carried forward as a habit **',
-     len(p12_base) > 20000 and len(i55 or '') > 4000 and len(i55_base or '') > 4000
+     all(before_resolves())
+     and len(p12_base) > 20000 and len(i55 or '') > 4000 and len(i55_base or '') > 4000
      and p12_base != p12 and i55_base != i55)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════

@@ -1,7 +1,7 @@
 ---
 name: the-plan
 kind: STATE
-current: r6921
+current: r7265
 job: The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance
 ---
 
@@ -321,7 +321,7 @@ corpus in `PO13_WORKING_STATE.md`.*
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7263
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7265
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
@@ -2141,7 +2141,9 @@ different sentences. **Check both after: `abstract=1, body=1`.**
   the horizon, an intrinsic spike at r=0. *"Metrically identical" was retired as false; do not reintroduce it.*
 
 *(Held here until the ontology map is filtered, then onto the cards of the papers they protect — with the
-three reading guards: the Hubble/acoustic matter is resolved and reopening it has burned ≥5 collaborators · α
+three reading guards: the expansion rate is fixed by the fit, not open for a node to reopen — what that does
+and does not do to the discrepancy with the local distance ladder is P15 §`sec:tensions`' own statement, read
+there and carried from nowhere else *(the README's form since r7181; this copy said "resolved" until r7261+70.1)* · α
 is never sent to a limit · `X` is the throat's size, `r` the signed areal radius.)*
 
 ## Writing into the corpus
@@ -2916,7 +2918,7 @@ run.***
 These are **strengths to state precisely and hold**, not work to grind — the decisive data-gated claims the apparatus was built to make. The move is to state each sharply and watch for the discriminating measurement, not to compute toward a foregone answer.
 
 - **A1.1 · P1 no-horizons — a THEOREM of standard GR, and the one item here that is NOT data-gated.** ⟐ *material:* the paper is `corpus/BH_causality_v2.tex`; its card is the ontology map **§1c**, *"the taproot the cosmological forcing rests on"*; it stands on causal structure alone and **needs none of the cosmology**. No event horizon completes at finite exterior time — established three ways (the metric identification; every exterior-adapted Cauchy temporal function of a globally hyperbolic exterior; the source's own outgoing generators), with no premise about which foliation is physical. **So it is not held to the world and no measurement discriminates on it**: it is where the programme's weight sits precisely because it is GR's own result and not a prediction of CR's. *It is listed here, among the data-gated claims, so that the list names it rather than losing it — stated at its true standing and not as a pending test.*
-- **A1.4 · The geometric rate — the near-term discriminator.** ⟐ *material:* `hubble_build/` (incl. `desi_dr2_confrontation.py`); P15 carries the resolution — *"the expansion history fits the low-redshift distance ladder, which fixes $H_0$ with the acoustic angle"*; map card **§1r**. Radiation carries no term in the expansion rate; the cleanest place CR and ΛCDM part on expansion-history data.
+- **A1.4 · The geometric rate — the near-term discriminator.** ⟐ *material:* `hubble_build/` (incl. `desi_dr2_confrontation.py`); P15 carries the confrontation — *"the expansion history fits the low-redshift distance ladder, which fixes $H_0$ alongside the epoch"*, the baryon-acoustic distances and not the local ladder, whose discrepancy P15 §`sec:tensions` leaves where the standard model leaves it; map card **§1r**. Radiation carries no term in the expansion rate; the cleanest place CR and ΛCDM part on expansion-history data.
   **⚑ AND IT HAS BEEN RUN AGAINST THE STATE OF THE ART — this line reads as waiting, and the confrontation is in
   P15 with two receipts (found r1770).** *A falsification ledger whose **tested** items read as **pending**
   misrepresents the programme's own exposure, which is the one thing this lane exists to state precisely.*

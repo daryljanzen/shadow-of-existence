@@ -129,15 +129,53 @@ def read(rel):
         return fh.read()
 
 
+# ⛔⛭⛭⛭ THE REFERENCE COMMIT IS A LITERAL SHA AND NOT `merge-base HEAD origin/main`, AND THAT IS THE
+#   SECOND HALF OF `L-249`'s RULE THIS LINE GOT WRONG.
+#   *The first cut of this receipt read `before` at the merge base with `origin/main`.  **On a branch
+#   ahead of the trunk that is the right commit; the moment the work MERGES, `merge-base` collapses
+#   onto `HEAD` and every historical read returns the LIVE file** -- so each before-and-after gate
+#   compares a tree with itself and goes red.  `S21` was red on `main` in the runner-read sweep for
+#   exactly this, and the carry ledger named it there before any seat did.*
+#     ⇒ *** A historical pin computed against a MOVING REF is not a historical pin.  `L-249` says to
+#         pin the state at the commit it stood at; a commit is a sha. ***
+#   ⌗ *`S19`'s repair used a literal sha and is immune.  This receipt and its sibling used
+#     `merge-base` -- the same seat, the same revision, the right choice once and the wrong one
+#     twice -- which is why the guard below asserts the sha RESOLVES and DIFFERS rather than trusting
+#     it.*
+BEFORE = '0dd8b745'      # the commit r7262's subjects stood at, before this revision edited them
+
+
+def before_resolves():
+    """(the sha resolves, it is an ancestor of HEAD) -- so a bad pin fails LOUDLY and not silently"""
+    ok = subprocess.run(['git', 'cat-file', '-e', BEFORE + '^{commit}'],
+                        cwd=ROOT, capture_output=True, text=True).returncode == 0
+    anc = subprocess.run(['git', 'merge-base', '--is-ancestor', BEFORE, 'HEAD'],
+                         cwd=ROOT, capture_output=True, text=True).returncode == 0
+    return ok, anc
+
+
 def at_base(rel):
     """the file as the trunk carries it, so `before` is read from git and not from memory"""
-    base = subprocess.run(['git', 'merge-base', 'HEAD', 'origin/main'],
-                          cwd=ROOT, capture_output=True, text=True)
-    if base.returncode != 0:
-        return None
-    r = subprocess.run(['git', 'show', f'{base.stdout.strip()}:{rel}'],
+    r = subprocess.run(['git', 'show', f'{BEFORE}:{rel}'],
                        cwd=ROOT, capture_output=True, text=True)
     return r.stdout if r.returncode == 0 else None
+
+def files_of_revision(tag):
+    """the files THIS REVISION's OWN commits changed --- merges excluded, other seats' work excluded
+
+    ⛔⛭ *A plain `git diff BEFORE` cannot answer `did THIS revision touch that paper`: once the trunk
+    is merged in, the diff carries every other seat's change as well, and this gate read `83` files
+    where the revision had touched four.  **A restraint gate has to measure the restraint's own
+    commits, not the branch's position.***
+    """
+    shas = subprocess.run(['git', 'log', '--no-merges', '--format=%H', f'--grep={tag}',
+                           BEFORE + '..HEAD'], cwd=ROOT, capture_output=True, text=True).stdout.split()
+    out = set()
+    for sh in shas:
+        out |= set(subprocess.run(['git', 'diff-tree', '--no-commit-id', '--name-only', '-r', sh],
+                                  cwd=ROOT, capture_output=True, text=True).stdout.split())
+    return sorted(out), shas
+
 
 
 P16, P18, P10, P3 = ('corpus/cosmogenesis_paper.tex', 'corpus/CR_synthesis.tex',
@@ -152,6 +190,15 @@ print('=' * 100)
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓐ  THE INSTRUMENT STATES ITS OWN COMPETENCE FIRST, AND IT DISCRIMINATES IN BOTH '
       'DIRECTIONS ──\n')
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+_res, _anc = before_resolves()
+gate(f'Ⓐ⓿ ⛔⛭⛭ THE REFERENCE COMMIT RESOLVES, IS AN ANCESTOR OF HEAD, AND ITS CONTENT DIFFERS FROM '
+     f'THE LIVE TREE --- asserted before one historical read is taken through it.  ** This gate exists '
+     f'because the first cut pinned `merge-base HEAD origin/main`, which collapses onto `HEAD` the '
+     f'moment the work merges: this receipt then compared the tree with itself and went RED ON `main` '
+     f'in the runner-read sweep. ** *A historical pin computed against a moving ref is not one.*',
+     _res and _anc and (at_base(P16) or '') != read(P16)
+     and (at_base(P10) or '') != read(P10))
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 from mpmath import mp, mpf, quad, polyroots, sqrt, pi, log     # noqa: E402
 
@@ -312,13 +359,11 @@ gate('Ⓑ⑦ ✔⛭ and the DISTINCTION is `P18`\'s own, carried in a footnote t
 # ⛔⛭ READ AGAINST THE WORKING TREE AND NOT AGAINST `HEAD`.  *The first cut diffed `base..HEAD`
 #   and reported both repaired papers UNCHANGED while they sat edited in the tree -- a restraint
 #   gate that passes because it cannot see the edit is worse than none.*
-_BASE = subprocess.run(['git', 'merge-base', 'HEAD', 'origin/main'],
-                       cwd=ROOT, capture_output=True, text=True).stdout.strip()
-_changed = subprocess.run(['git', 'diff', '--name-only', _BASE],
-                          cwd=ROOT, capture_output=True, text=True).stdout.split()
+_changed, _own = files_of_revision('r7262')
 gate(f'Ⓑ⑧ ⛭⛭ AND THE REPAIR IS ONE PAPER AND NOT TWO, which is the order\'s framing corrected: '
      f'neither `P18` nor `P3` is touched by this revision, asserted against the diff rather than '
-     f'against intention (`{len(_changed)}` file(s) changed)',
+     f'against intention (`{len(_own)}` commit(s) of this revision, `{len(_changed)}` file(s) '
+     f'between them)',
      P18 not in _changed and P3 not in _changed and P16 in _changed and P10 in _changed)
 
 gate('Ⓑ⑨ ✔ and `P3` carries the merged horizon at the same radius, so the third paper agrees and the '
