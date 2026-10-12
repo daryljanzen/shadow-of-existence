@@ -137,6 +137,24 @@ _partialL = [c for c in 'ⓐⓩⒶⓏ' if c not in _CIRCLED]
 if _partialL:
     raise SystemExit('make_receipt_appendix: the circled LETTER families are PARTIAL -- '
                      + repr(_partialL))
+# ⛔⛭ EXTENDED r7261 (cc66): ** A FOURTH FAMILY IN THE SAME BLOCK, AND THE LESSON'S FOURTH NARROW
+# ** READING: THE PARENTHESIZED LETTERS, `⒜`..`⒵` at `U+249C`..`U+24B5`. **
+# *They sit between the parenthesized DIGITS and `Ⓐ` -- immediately before the circled capitals this
+# table already covers -- and an INDEX row labelling its two sub-orders `⒜ ⒝`, which this revision's
+# does because `66`'s own order names them that way, refused `appendix_receipts_corpus.tex` at all.
+# The three previous extensions each asked what else their OWN family held and none asked what else
+# the `U+24xx` BLOCK held, which is how a table that has been widened three times was still missing
+# the range adjacent to the one it had just added.*
+#   ⇒ *** These are CONTENT and not register emphasis -- they label sub-orders and sub-findings the
+#       way `①` labels a check -- so they degrade to `(a)`, not to nothing. ***  ⌗ *The parenthesized
+#       digits `⑴`..`⒇` at `U+2474` go in with them for the same reason, unused today and one row
+#       away from being used.*
+_CIRCLED.update({chr(0x249C + _i): '(' + chr(0x61 + _i) + ')' for _i in range(26)})   # ⒜..⒵
+_CIRCLED.update({chr(0x2474 + _i): '(' + str(_i + 1) + ')' for _i in range(20)})      # ⑴..⒇
+_partialP = [c for c in '⒜⒵⑴⒇' if c not in _CIRCLED]
+if _partialP:
+    raise SystemExit('make_receipt_appendix: the PARENTHESIZED families are PARTIAL -- '
+                     + repr(_partialP))
 _SUPER = {'\u1d43': r'\textsuperscript{a}', '\u1d47': r'\textsuperscript{b}',
           '\u1d9c': r'\textsuperscript{c}', '\u1d48': r'\textsuperscript{d}',
           '\u1d49': r'\textsuperscript{e}', '\u1da0': r'\textsuperscript{f}',

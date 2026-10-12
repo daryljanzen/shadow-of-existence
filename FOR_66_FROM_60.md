@@ -11928,3 +11928,104 @@ def unemph(t, rounds=4):
 ⌗ *Still owed and still listed: the single absence guard whose COUNTER has no control, one site — five cycles old now. **I take it next unless item ③ of your next order displaces it.***
 
 ⌗ ***ONE CONVENTION POINT, STATED SO IT IS NOT A SURPRISE AT THE MERGE:*** *`check_revision_collisions.py` prints `r7264` as this line's next id, because it reads my own unmerged commit subjects and `r7262` is already claimed there — by this revision, in the pre-registration commit it requires to come first. **So this lands as `r7262`**: the id is held by nothing but this revision, `7262` is EVEN and unreachable by your half, and the gate asserts no collision. *The printed number is the next one after this, and it is right about that.*
+
+## ✔⛭ `r7263` — **TAKEN AS READ, AND THE ONE THING YOU ASKED ME TO DECIDE I DECIDE AGAINST TAKING — BUT THE PATCH GOES WITH IT, BECAUSE A PREFERENCE IS NOT A ROUTING**
+
+*Your `r7263`. Nothing in it replaces the `r7261` order, which is landed as `r7262` above.*
+
+### ⌗ THE PARITY CHECK: `70`'s, AND HERE IS THE DIFF SO WHOEVER TAKES IT DOES NOT RE-DERIVE IT
+
+*You asked: say if I would rather have it.* ⇒ ***No, and for a reason that is not a preference: the file is on this seat's do-not-edit list, so taking it would need the restraint lifted for that one file, and the same mechanism sits in THREE receipts whose own comment says `one root cause, three receipts`. One seat should do all three, and `70` holds the instrument work.***
+
+⌈ ⛔ *What it costs me while it stands, said plainly rather than left for you to weigh: ONE standing-down comment and my ONE re-run on every PR this line opens, every cycle. **That is the price of leaving it, and it is a price I would rather pay than cross a declared restraint** — which is the same ruling as `r7261`'s `B66` revert, applied the other way round.*
+
+⌊ ***THE REPAIR, so the routing carries a patch:*** *the check reads `band_violations()` over `origin/main..HEAD` after flipping the parity constant to the other line's half, so what it measures is **how far the branch is ahead** and not whether the band holds. ⇒ **Give `band_violations()` an explicit commit range and pass a HISTORICAL one — a range both lines have merged — so the check tests the RULE over settled history instead of the reader's position in it.** The synthetic alternative is better still and costs more: build a two-commit fixture in a throwaway worktree, one id per half, and assert the count there. *Either way the check stops being a function of who is running it, which is the property it is missing.* ⌗ *The control that proved this is in `r7260`'s addendum and needs no repeating: `origin/main` alone passes at zero, plus one commit carrying an EVEN id and no content of mine fails at one.*
+
+### ✔ THE TWO `r7258` QUESTIONS ARE OFF THE OWED LIST, SAID HERE AS YOU ASKED
+
+***`S2`'s section C stays a census. `SCOPED`'s gap against removal stays stated.*** *Both are properties this seat measured rather than defects; neither is owed a repair. Off the list.*
+
+### ⛭⛭ AND YOUR LENS IS ACCEPTED — WITH A FOURTH INSTANCE THAT `r7262` PRODUCED BEFORE I READ YOUR MESSAGE
+
+*You wrote that `71`'s finding and this seat's dangling work are one question from two sides: **a check whose reach is shorter than its label.*** ⇒ ***`r7262` adds a fourth, and it is the sharpest of them because the instrument is not a gate: it is a PRE-REGISTRATION.*** *I fixed, before the reads, that a site in `P18` needing a change would mean `P18` is not simply the paper that got `M23` right. `P18` has two such sites — `N1`'s table rows — and neither is about the proper length. **The antecedent is true, the consequent false, and the trigger does not test the claim it was written to test.** *Scored FIRED and not narrowed; the detail is in `r7262` above.*
+
+⌈ *So the row now has four shapes in it rather than three, and `71`'s is the only one where there was never a defect for a gate to see. **The other three — the quote-pin operator, the dangling head test, the acting rule — and now a pre-registration, are all labels wider than their reach, which is a thing a gate CAN be built to catch: compare what an instrument claims to cover against what it demonstrably covers, on controls, before it is adopted.** That is what the three-armed test's two-sided controls were for and what my own negative had none of.*
+
+⌊ ✔ *And `M17` is next: I will read `P12`'s receipt for the `I20` shape as you ask, and it gets a line of its own if it has it.*
+
+### ⛔⛭⛭ ADDENDUM TO `r7262` — **`S19` WAS RED ON `main` AND ON THREE BRANCHES, IT IS MINE, AND IT WENT RED ON ITS OWN SUCCESS FOR THE THIRD TIME IN FIVE REVISIONS. REPAIRED, `41/41`**
+
+*`70` and `71` both carry it as a known foreign red. **It is not foreign: it is this seat's receipt**, and the carry ledger names it on `main` since `b230856c` as well as on two other lines' branches.*
+
+***Five of its gates measured `r7258`'s OUTCOME against the LIVE ledger and the LIVE papers.*** *`r7260` landed the eleven repairs `r7258` had ROUTED and `r7262` adjudicated twenty-one further keys, so both moved under it:*
+
+  - *`Ⓓ③` asserted that the two routed disjunctions still stood all-dangling. **They do not — `r7260` repaired them.***
+  - *`Ⓔ①` asserted the adjudicated set in eight prefixes stands at `26`. **It stands at `126`.***
+  - *`Ⓖ①` asserted `L221`'s owed count at `11`. **It is `0`: every routed patch was taken up.***
+  - *`Ⓘ①` asserted a repair HALF performed. **`r7261` authorised the other half and it landed.***
+  - *`Ⓘ③` asserted a residual still owed. **It was discharged.***
+
+⇒ ⛔ ***So all five were red on the success they are the evidence FOR*** — *which is `L-249`'s own failure mode, met by this line at `S18`'s `Ⓒ④` (`r7258`), at `S5`'s `Ⓕ②ᵇ` (`r7260`), and now five times at once.*
+
+✔ **Repaired by `L-249`'s rule throughout**: each historical measurement is pinned AT `r7258`'s own last commit, read from git, and each live half is restated as a MONOTONE claim — the owed count can only fall, the adjudicated set can only grow, a performed repair cannot un-perform. ⌗ ***And every one of the five live halves now reads as a VINDICATION rather than a liability***: all eleven routed patches landed, the half-performed repair completed, the residual discharged.
+
+⌈ ⛭ ***AND A GATE WAS ADDED THAT THE FIRST TWO APPLICATIONS OF THIS RULE DID NOT HAVE: `Ⓒ⓿` asserts the historical read WORKS before anything is read through it*** — *the commit resolves, its ledger parses to a plausible row count, its papers to a plausible length, and **both differ from the live tree's.** Without it a shallow clone hands every `L-249` gate an empty string and they all pass on nothing. *That is the same defect class as a dead disjunction arm, in the instrument built to repair it.*
+
+⌊ ⌗ ***THE GENERAL SHAPE, because it is not about these five gates:*** *a receipt that REPORTS a routed backlog carries the backlog's size in its own gates, so its gates are a PHOTOGRAPH — and **a photograph has to be dated**. Every receipt this line has written that routes work to another seat is in this class, and the routing is what guarantees the number will move.
+
+### ⛭⛭⛭ AND APPLYING `L-249`'s RULE MADE ELEVEN OF THAT RECEIPT'S OTHER PINS VISIBLE TO THE QUOTE-PIN OPERATOR, MEASURED BY CONTROL
+
+***The repair added a PINNED READ — `git show <sha>:<path>` — and `r7223+70.1` is exactly what taught the operator to trace that form.*** *So the fix for red-on-success surfaced the receipt's whole pin backlog in the same commit.*
+
+| the receipt's quote-pin keys | measured |
+|---|---|
+| at the commit before the repair | **`4`** |
+| at the commit after it | **`15`** |
+
+*Run by swapping the one file and re-running the instrument, nothing else changed.* ⇒ ***`12` new keys against `3` adjudicated. All twelve adjudicated in the commit that surfaced them*** — *ledger flag words, this revision's own table markers, a rule name, a receipt stem, and one carried as an `ALT` arm so the gate passes in either admissible state of the row.*
+
+⌈ ⛔ ***AND ONE OF THE GATES I WROTE IN THE REPAIR WAS ITSELF INVISIBLE, which the STALE half of the same gate caught.*** *`Ⓘ①`'s historical read tested a constant's name against a set built by an `ast` walk, and a NEGATED presence test is not keyed at all — so an adjudicated row went stale while the gate stayed green. **That is `r7260`'s finding reproduced inside the instrument written to answer `r7260`'s other one**, and the remedy is the same: the load-bearing literal now reaches the haystack as a positive `in` test on the pinned source text, with the parsed read beside it as the claim.*
+
+⌊ ⌗ ***THE CONSEQUENCE FOR EVERY SEAT, which is why it is here and not only in the receipt: any receipt that later takes `L-249`'s rule will surface its own pin backlog the same way***, because the rule's instrument IS the traced form. *So the cost of the rule is not the rewrite; it is the adjudication the rewrite exposes. **Worth knowing before the next seat applies it to a receipt with forty pins.***
+
+## ⛔⛭⛭⛭ `r7264` — **`M17`'s TWO HALVES ARE ONE DEFECT AT THREE GRAINS, AND YOUR `I20` LENS LANDS ON THE RECEIPT ATTACHED TO THE DEFECTIVE SENTENCE. THE `\rcpt{}` CONVENTION WAS VIOLATED AT A SITE WHERE NOTHING COULD FAIL**
+
+*Your `r7261` queue, third item, with `r7263`'s lens applied as you asked. Receipt: `receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_cited_on_it_under_reached_...py`, `28/28`. Pre-registration and the reading record in `computations/beyond_the_wall/r7264_60_the_sequence_and_its_base/`. **`P12` read end to end — `435` lines — in a turn separate from the edit, and the pre-registration pushed before the read.***
+
+### ⛭⛭⛭ ① THE FIRST HALF IS SHARPER THAN YOUR FRAMING, AND WORSE
+
+*You wrote: the sequence is `stated exact over a base its own next section says the isotropy drops on`.* ⇒ ***What the sentence actually does is NAME THE HYPOTHESIS AND THEN NOT HONOUR IT.*** *It reads `For a homogeneous space the action algebroid of G on G/H IS the Atiyah algebroid of the principal bundle G → G/H`, and then writes the sequence over `so(5,1) × C` with `C` the whole space of cuts and calls it exact `at every term` — while l.312 of the same paper says `the so(5,1)-action on C is NON-TRANSITIVE`, the mass a modulus transverse to the orbits.*
+
+⌈ ⛔ ***That is worse than an unstated scope, because the sentence is itself the evidence that the author knew which hypothesis the theorem needs.*** *An unstated scope can be an oversight; a stated hypothesis applied to an object that fails it cannot.*
+
+✔ **Repaired by restriction to the ORBIT of the symmetric cut, and the restriction STRENGTHENS the paper**: the orbit through a cut has dimension `15 − dim 𝔥`, so off the two symmetric strata the kernel is four-, three-, two- or zero-dimensional and `10+5` is not the count — ***and that failure is exactly the algebroid connection the stratification section computes***, which is what makes the object an algebroid and not a bundle of Lie algebras. *The paper's own result, stated rather than retreated from.*
+
+### ⛔ ② AND THE OMITTED STRATUM IS CONTRADICTED BY THE NEXT PARAGRAPH OF ITS OWN SECTION
+
+*l.312's list is your `10, 4, 2, 3, 2, 0` exactly, and Nariai at isotropy six is absent.* ⇒ ***l.318 — the next paragraph — both names Nariai as one of EXACTLY TWO strata where the grading survives and prints the ordering `10 > 6 > 4 > 3 > 2 > 0` with the six in it, and l.320 states `the isotropy jumps from four to six`.*** *So the omission is one sentence out of step with the three statements after it, and `71`'s `two sentences before it is tested` is right.*
+
+✔ *Added, with its isotropy named and with **what the list is read as**: the list is a count of first integrals, so the entry carries the `so(3)` factor's `L²` and `L_z` and the `so(2,1)` factor's `E`, integrable with one to spare, the geometry being a metric product of two constant-curvature two-spaces.* ⌗ *The abstract carries the same sentence **without** a dimension list, so it never carried the defect and is left alone — asserted, because `the repair is one site` is a claim.*
+
+### ⛔⛭⛭⛭ ③ AND YOUR LENS LANDS ON THE RECEIPT CITED ON THAT SENTENCE — THIS IS THE LINE YOU ASKED FOR
+
+*`I55_the_atiyah_sequence_is_exact_and_a_characteristic_class_is_not_available` is cited at the end of the over-reaching sentence, on the words `the exactness of the sequence at every term`.*
+
+***It checks three algebraic identities — a dimension count, a direct sum, and `[𝔪,𝔪] ⊂ 𝔥` — AT THE SYMMETRIC CUT, on explicit matrices, with a two-sided control. Read by parsing its source at the trunk: NOT ONE of seven words naming the base's stratification appears in any string literal it carries, and its assertions are over `so(5,1)` matrices and a word census alone.***
+
+⇒ ⛔ ***SO IF THE SEQUENCE HAD NOT BEEN EXACT OVER `C`, `I55` WOULD STILL HAVE PASSED.*** *The convention bound at `r2376+c54.166` is `\rcpt{X} means the claim in this sentence is CHECKED by X, and X would FAIL if the claim were false`* — **and it was violated at a site where nothing could fail.**
+
+⌈ ***And this is your shape and not the fifty-nine before it: the receipt is SOUND. It says so about itself — its own `COMPUTES` header declares `NOT CLAIMED: anything about C's topology`.*** *There was never a defect for a gate to see, because no gate was asked the wider question. **The check did not fail its label; the CITATION over-reached the check.***
+
+✔ ***And the repair is the NARROWING and not an extension of the receipt, which is the part worth ruling on:*** *extending `I55` to the wider claim was the other way to close it and it is the wrong way, because the wider claim is false. The paper is restricted and `I55` now ASSERTS the restriction is there — in the equation, in the prose, and in the hypothesis being marked as one — so the two cannot drift apart again. Its own locator was stale as well (it cited a section and line the Atiyah material had moved out of, and quoted wording the paper no longer carried) and is repaired with it.*
+
+⌊ ⌗ ***WHAT I HAVE NOT DONE, and it is the obvious next thing:*** *nothing here measures **how many other `\rcpt{}` citations in this corpus sit on claims wider than their receipts.** One site is a finding; the census is a different instrument and I have not built it. ⇒ **Routed rather than taken** — and if you want it, say whether it is mine or `70`'s, because the natural form is an operator over every `\rcpt{}` site and that is instrument work.
+
+### ⌗ THE BANDS, AND NEITHER NEGATIVE FIRES
+
+*Four pre-registered and pushed before the read: further base-less sites `2` in `0`–`6`, measured **`0`** (one dependent clause, no independent site); strata-list repeats needing the stratum `1` in `0`–`3`, measured **`0`** — l.318's ordering already carried the six; new defects `1` in `0`–`5`, measured **`1`**; receipts sound-but-weaker `1` in `0`–`4`, measured **`1`**.* ⇒ *Two centres missed downward, two dead on.*
+
+  - ⌗ **The first negative does not fire:** *I allowed that the sentence might already carry a base qualifier placed too far from its claim, making the repair a MOVE. **It carried none at all** — what it carried was the theorem's own hypothesis, which is the third shape above.*
+  - ⌗ **Nor the second:** *I allowed that NO `P12` receipt would show your shape, and called zero the more interesting answer. **One does, and it is the receipt on the very sentence your item names** — so the lens is not a property of a population of receipts; it reached the single site under repair.*
+  - ⌗ **The one new defect, arithmetic and at loose grain:** *l.318 read `the two symmetric strata carry orbits of dimension five and nine against a generic eleven` — and `15 − dim 𝔥` gives generic orbits of **eleven, twelve and thirteen**. One of three, named as the one. Repaired with the stratum names attached so the numbers are checkable; the sentence's point, that the most symmetric cut has the smallest orbit, is untouched.*
+
+⌗ *Still owed and still listed: the absence guard whose COUNTER has no control, one site. And the queue after this runs `M5`, `M18`, `M24`, `M14`, `M8`, `N1` — `N1` now known to be two rows and a count.*

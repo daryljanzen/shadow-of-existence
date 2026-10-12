@@ -13,8 +13,8 @@ null-and-degenerate geometry assigns each its job. Maturity marks in prose: esta
   acoustic scale a one-parameter accommodation on ρ_r/ρ_m≈2; BAO ladder (SDSS DR12 χ²≈1.7 vs 49; DESI DR2
   χ²/dof≈1.0 vs 14).
 - **perturbation sector** — prop:subhorizon (modes sub-horizon at seam); sec:coherence (null seam →
-  characteristic data → one phase/mode → coherence comb Δℓ≈296; time-reversal driving equality; ~8-9%
-  damping-scale signature θ_D/θ_*≈1.08×ΛCDM, r_s=144.0 vs 144.4); prop:amplitude (substrate vacuum ~10⁻¹²²
+  characteristic data → one phase/mode → coherence comb Δℓ≈296; time-reversal driving equality; damping-scale
+  signature θ_D/θ_* moved by under a per cent, r=0.9918 at the common visibility-peak endpoint; r_s=144.0 vs 144.4); prop:amplitude (substrate vacuum ~10⁻¹²²
   vs A_s~2e-9); prop:throat (Nariai near-horizon dS₂×S², radii 1/√Λ, no-hair isotropization, tower
   m²/H²=ℓ(ℓ+1)); prop:flat (const-τ slice flat R³) + low-ℓ floor (ℓ_L≈√(L(L+2))D_C/r₀, ℓ₂≈7.8, deficit
   ≈0.47/0.41 at ℓ=2/3, Δ(-2lnL)≈+1.8 = wash); prop:transmission + prop:transmit (degenerate Nariai κ=0 →
@@ -31,7 +31,7 @@ null-and-degenerate geometry assigns each its job. Maturity marks in prose: esta
 | 2 | coherence comb Δℓ≈296 coherent vs washed-out (§coherence) | verify_coherence_comb.py | perturbation_verify/ | ✔✔ |
 | 3 | time-reversal driving equality \|Ψ̃(ω=1)\| invariant (§coherence) | cr_collapse_driving.py | perturbation_verify/ | ✔✔ |
 | 4 | peak ratios P1/P2≈2.2, P2/P1≈0.45, P3/P1≈0.44 (§coherence) | camb_reference.py | computations/peak_heights/ | ✔✔ |
-| 5 | ~8-9% damping: θ_D/θ_*≈1.08×ΛCDM, r_s=144.0 vs 144.4 (§coherence) | damping_ratio_clean.py | peak_heights/ | ✔✔ |
+| 5 | r_s=144.0 vs 144.4 (§coherence); the damping signature θ_D/θ_* under a per cent, r=0.9918 at the common endpoint (§diffusion-scale) | damping_ratio_clean.py; P15_the_damping_signature_error_budget_and_the_convention_dominates_it.py | peak_heights/; receipts/P15_CR_cosmology/ | ✔✔ |
 | 6 | damping non-reabsorption r_D∝ω_b^{-0.31} (§coherence) | damping_reabsorption.py | computations/damping_tail/ | ✔✔ |
 | 7 | high-ℓ deficit under assume-equal-peaks shortcut (§coherence) | full_transfer_verdict.py | damping_tail/ | ✔✔ |
 | 8 | prop:amplitude Λℓ_P²≈3e-122, vacuum ~10⁻¹²² vs A_s (§amplitude) | verify_numeric.py (anchor 5) | perturbation_verify/ | ✔✔ |
@@ -51,7 +51,7 @@ Non-receipt (derivation/structural, verify by trace not a .py): eq:scalefac 5-st
 ## AVENUES 1–10 — first-pass observations (off the whole-read; to execute)
 - **A1 Q-mine:** paper is disciplined (established/argued/open marks). Candidate scan: none glaring on first pass; verify no caution lowers a claim without adding a result.
 - **A2 own accomplishments:** strong candidates already owned (Hubble-tension dissolution as discriminating datum; transmission dichotomy as a proof; the requires-vs-permits verdict). Check nothing earned is undersold.
-- **A3 press the gap:** the honest edges are already sharply drawn (the ~8% damping signature's observable consequence "genuinely open"; high-ℓ transfer unbuilt; low-ℓ a "wash"). Check no residual overclaim in the peaks-match / economy verdict.
+- **A3 press the gap:** the honest edges are already sharply drawn (the damping signature's observable consequence, since measured: under a per cent, absorbed in shape by a tilt of +0.0034 at 1.70 in χ²; high-ℓ transfer unbuilt; low-ℓ a "wash"). Check no residual overclaim in the peaks-match / economy verdict.
 - **A4 identity:** title = "The cosmology of Cosmological Relativity: the expansion history…, the cosmogenesis seam, and the scalar perturbation sector." Reads at weight; confirm.
 - **A5 positive-face:** leads on what's established/inherited-division-of-labour. Confirm the inflation contrast leads positive (requires) not merely negative (inflation-permits).
 - **A6 symmetry:** Nariai parity-conjugate pair named (M>0 vs M<0, r↦−r); three Λ-scales kept apart (α, α/√3, amplitude). Check no conjugate dropped in the seam/branch-point discussion.

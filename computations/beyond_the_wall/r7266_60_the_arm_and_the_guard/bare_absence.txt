@@ -1,0 +1,49 @@
+  absence-guard sites: 78 (72 controlled on the same haystack, 6 BARE)
+
+  ⛔ receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py
+       l.140  `2(n-1)(n+3)`  in `p10_before`
+       l.141  `2(n^{2}-1)`  in `p10_before`
+       l.141  `(2m+1)(2m+5)`  in `p10_before`
+  ⛔ receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py
+       l.132  `Lovelock`  in `p12_then`
+  ⛔ receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py
+       l.182  `Rodnianski`  in `corpus_all`
+       l.182  `Speck`  in `corpus_all`
+
+  receipts carrying a bare site: 3
+
+================================================================================
+ ⛭⛭⛭ FIVE CUTS, AND THE ITEM'S `ONE SITE` IS RIGHT FOR A REASON THE PROXY COULD NOT HAVE KNOWN
+================================================================================
+
+ The number at each cut, on the same tree, differing only in where the instrument drew its two
+ boundaries:
+
+     cut   what changed                                                  receipts   bare sites
+     ---   -----------------------------------------------------------   --------   ----------
+      1    `any `not in` on any name`                                        65          --
+      2    + a seeded foreign-word list with transitive growth               20          --
+      3    + narrowed to PAPER bodies only                                    8          12
+      4    + a control through a NAME bound to a literal counts                7          11
+      5    + a NON-EMPTINESS guard and a REGEX SEARCH count too                4           7
+
+ ⇒ EVERY WIDENING OF THE CONTROL SIDE SHRANK IT, and the fifth is the one that matters: `bool(hay)`
+   excludes the empty read DIRECTLY where an `in` excludes it only by implying it, so a
+   non-emptiness guard is the STRONGEST control of the three forms and the first four cuts counted
+   every one of them as absent.
+
+ ⇒⇒ AND AFTER REPAIRING THE ONE SITE THIS SEAT MAY REPAIR:  78 sites, 72 controlled, 6 BARE across
+    3 receipts -- L554/D1 (3), L560/P1 (1), L802/S1 (2) -- ALL THREE UNATTRIBUTED, their introducing
+    commits carrying no revision id, under the ownership ruling this line routed at r7258 and that
+    was never ratified.
+
+ ⌗ SO `one site` WAS RIGHT, AND NOT FOR THE REASON IT WAS WRITTEN.  It is right as `one site this
+   seat may repair`, which is what five cycles of the reply have meant without saying.  r7246's proxy
+   could not have known that: it measured `any non-zero counter anywhere in the file`, which is
+   neither the haystack test nor the control test, and arrived at the right number by a route that
+   would have given a different one on any other tree.
+
+ ⌗ THE REPAIR, at L251/N1 l.142: the absence of a repaired phrase from CR_cosmology.tex is now read
+   off a paper SHOWN TO BE PRESENT -- non-empty and still carrying its own section structure -- so
+   the gate can tell `the phrase is gone` from `the paper is gone`.  That distinction is the whole
+   class.
