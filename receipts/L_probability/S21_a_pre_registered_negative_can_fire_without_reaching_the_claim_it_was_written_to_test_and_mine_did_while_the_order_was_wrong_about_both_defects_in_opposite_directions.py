@@ -168,8 +168,14 @@ def files_of_revision(tag):
     where the revision had touched four.  **A restraint gate has to measure the restraint's own
     commits, not the branch's position.***
     """
-    shas = subprocess.run(['git', 'log', '--no-merges', '--format=%H', f'--grep={tag}',
-                           BEFORE + '..HEAD'], cwd=ROOT, capture_output=True, text=True).stdout.split()
+    # ⛔⛭⛭ MATCHED ON THE SUBJECT LINE AND NOT ON THE WHOLE MESSAGE.  *`git log --grep` searches the
+    #   BODY too, and a later revision's commit that merely MENTIONS this one -- `r7262's and r7264's
+    #   receipts used merge-base` -- was pulled into this revision's own file set, so the restraint
+    #   gate reported papers this revision never opened.  **A selector broader than its claim, for the
+    #   third time in two revisions, and in the gate written to answer the second.***
+    _log = subprocess.run(['git', 'log', '--no-merges', '--format=%H\t%s', BEFORE + '..HEAD'],
+                          cwd=ROOT, capture_output=True, text=True).stdout.split('\n')
+    shas = [l.split('\t')[0] for l in _log if '\t' in l and tag in l.split('\t', 1)[1]]
     out = set()
     for sh in shas:
         out |= set(subprocess.run(['git', 'diff-tree', '--no-commit-id', '--name-only', '-r', sh],
