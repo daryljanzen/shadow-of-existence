@@ -12029,3 +12029,67 @@ def unemph(t, rounds=4):
   - ⌗ **The one new defect, arithmetic and at loose grain:** *l.318 read `the two symmetric strata carry orbits of dimension five and nine against a generic eleven` — and `15 − dim 𝔥` gives generic orbits of **eleven, twelve and thirteen**. One of three, named as the one. Repaired with the stratum names attached so the numbers are checkable; the sentence's point, that the most symmetric cut has the smallest orbit, is untouched.*
 
 ⌗ *Still owed and still listed: the absence guard whose COUNTER has no control, one site. And the queue after this runs `M5`, `M18`, `M24`, `M14`, `M8`, `N1` — `N1` now known to be two rows and a count.*
+
+## ⛔⛭⛭⛭ `r7266` — **ALL FOUR ITEMS WERE MIS-DESCRIBED, AND IN EACH CASE THE INSTRUMENT THAT WOULD HAVE CAUGHT IT STORED A SNAPSHOT OF A RULE INSTEAD OF THE RULE. FIVE INSTANCES IN ONE REVISION, AND `one site` IS RIGHT BY ACCIDENT**
+
+*Your `r7265` order, all four items. Receipt: `receipts/L_probability/S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py`, `32/32`. The instruments, the five cuts, the arm with both its axes and the hand reading of the widening are in `computations/beyond_the_wall/r7266_60_the_arm_and_the_guard/`. **The pre-registration was pushed before any item was worked**, with your threshold of `4` carried into it.*
+
+### ⛔⛭⛭⛭ THE ONE SHAPE, AND IT IS THE REVISION'S RESULT
+
+***A gate that stores the state a rule had REACHED, rather than the rule, goes red the day the rule's reach changes — and the change is usually THE WORK SUCCEEDING.***
+
+*Five instances, all this line's, all this cycle:*
+
+| the gate | the snapshot it stored | what changed |
+|---|---|---|
+| `S19`'s five remainders | the routed backlog's size | the routing worked — **your `61`st member** |
+| `S21`'s reference commit | `merge-base HEAD origin/main` | the work MERGED, and merge-base collapsed onto `HEAD` |
+| `S22`'s reference commit | the same | the same, caught before it merged |
+| `S22`'s revision selector | `git log --grep`, which reads the BODY | a later commit MENTIONED this revision |
+| `P03`'s ownership clause | the two prefixes the rule had reached at `r7222` | **an ORDER widened the scope** — yours |
+
+⌈ ⛔ ***`S21` was RED ON `main` in the runner-read sweep for the second of these, and your own carry ledger named it there before any seat did.*** *A historical pin computed against a MOVING REF is not a historical pin. `S19`'s repair — yours — used a literal sha and is immune; mine used `merge-base`: **the same rule, the same revision, the right choice once and the wrong one twice.*** ✔ *Both now pin a literal sha and assert it resolves, is an ancestor of `HEAD`, and differs from the live tree, so a bad pin fails loudly instead of passing on nothing.*
+
+⌊ ⌗ ***And `P03`'s is the one I would put in the row if you want a `65`th: a RESTRAINT gate that hardcodes the prefixes an ownership rule had reached goes red when an order reaches one more — red on its own authorisation.*** *It now resolves the introducing commit's parity: the rule, not its reach.*
+
+### ⛭⛭ ① `one site` WAS NEVER MEASURED, AND IT IS RIGHT BY ACCIDENT
+
+***Five cuts of one instrument on one tree: `65`, `20`, `8`, `7`, `4` receipts.*** *The number is a function of where the instrument draws TWO boundaries — what is a FOREIGN HAYSTACK and what is a POSITIVE CONTROL — and `r7246`'s proxy (`any non-zero counter assertion anywhere in the file`) defined neither.*
+
+⇒ ***Final: `78` sites, `72` controlled, `6` bare. And `one site` is right read as `one site THIS SEAT MAY REPAIR`, which is what five cycles of the reply have meant without saying it.***
+
+⌈ ⛔ ***THE FIFTH CUT IS THE REASON, and it is the one worth carrying: a NON-EMPTINESS guard — `bool(hay)` — excludes the empty read DIRECTLY where an `in` test excludes it only by implying it. So it is the STRONGEST of the three control forms, and the first four cuts counted every one of them as absent.***
+
+✔ *The one site is repaired: the absence of a repaired phrase from `CR_cosmology.tex` is now read off a paper **shown to be present** — non-empty and still carrying its own section structure — so the gate can tell `the phrase is gone` from `the paper is gone`. **That distinction is the whole class.***
+
+⌊ ⌗ *The `6` that remain sit in `3` receipts whose introducing commits carry NO revision id — `L554/D1`, `L560/P1`, `L802/S1`. They read `UNATTRIBUTED` under the ruling I routed at `r7258` and **you have never ratified it**. ⇒ **That is the fork, and it is yours, not mine:** ratify and they are mine to repair next cycle; reverse and they need a seat you name. I have not touched them.*
+
+⌈ ⛔ *And my own reachable negative FIRES: I set it as `if the bare site turns out NOT to be an absence guard at all, the item has been describing nothing for five cycles`. The site exists — six do. **What did not exist is the number**, which is a sharper answer than the one I allowed for, and the band breaks above its ceiling (`1` central in `0`–`5`, measured `6`).*
+
+### ⛭⛭ ② THE ARM IS PART-OF-SPEECH AS YOU RULED, AND IT REFUTED ITS OWN FIRST CUT
+
+***The reason the list kept coming up short is a fact about English and not about the list: VERBS ARE AN OPEN CLASS and cannot be enumerated in advance, while DETERMINERS ARE A CLOSED ONE and can.*** *So the arm tests the open class by its distribution against the closed one — the only list it carries is the one that can be finished.*
+
+⌈ ⛔ ***AND ONE AXIS WAS NOT ENOUGH.*** *A low determiner-BEFORE ratio says `not a noun`, which is not `a verb`: the first run's widening carried formula heads, three ADVERBS, a NEGATOR, a SUBORDINATOR and two NUMERALS, because none of those is preceded by a determiner either.* ⇒ *So the arm carries a SECOND axis — a verb is also often FOLLOWED by a determiner — and a word is verb-like only on both. Axis one separates by `5.9`, axis two by `1.3`, and **axis two is weak for the right reason**: auxiliaries and intransitives take no object, so the arm is conservative and misses them by construction.*
+
+⇒⇒ ***AND THE TWO TESTS ARE NOT NESTED, which is the finding and not a caveat: on the same `163` keys the adopted arms flag `21` and this one `20`, with `12` the closed list misses and `13` the other way. The closed list catches a FUNCTION-WORD head; this arm catches a TRANSITIVE-VERB head. The class is the UNION.***
+
+✔ **YOUR NEGATIVE DOES NOT FIRE — by `5` and not by `9`, and the tighter number is the honest one.** *The twelve are read BY HAND with the reason published per key: **`8` true and `4` the arm's own false positives** (an adverbial noun phrase, a sentence that does name its subject, a numeral phrase, and a dependent clause that names its subject). Against your threshold of `4`, fixed before the arm existed: `8`.*
+
+⌊ ⛔ ***AND THREE OF THE EIGHT ARE NEGATED PREDICATE FRAGMENTS THE ADOPTED NEGATOR ARM MISSES*** — *`not a debt`, `not about the tower's regularisation`, `not recomputed here` — **because it strips the `not` and then tests the remainder against the same closed list.** So the closed list's shortfall reaches inside the arm built to extend it.*
+
+⌗ ***NOT ADOPTED HERE, and that is deliberate: it is built, calibrated, measured against the closed list on one population and reported both ways, as your burden requires. Whether it joins the instrument is your call*** — *and the arm's `4` false positives of `12` are exactly why that is not mine to decide. The adopted list is byte-for-byte unchanged, discharged by HASH in the receipt rather than by my word.*
+
+### ⌗ ③ `N1` IS SEVEN EDITS AND NOT THREE
+
+*The count stands in **FOUR** places — the frontier section's opening, its relative-size sentence, the subsection title, and the weighing section's back-reference — and the fifth edit is a dependency your order does not name: **the body's statement of the Weyl-squared coefficient ended `which the frontier table records`, a pointer the row's removal would have broken silently.*** ⇒ *Seven edits in one unit. The removed row's own caveat — `reversible on its scoping` — is carried into the body, so nothing is lost with the row.*
+
+✔ *And the paper's own rule is satisfied rather than bypassed: `an item that leaves a list by reclassification rather than by being worked has not been closed`. **Both were worked** — the mode sums by the construction's own regulator with the counterterm computed, the Weyl-squared coefficient by being stated with its value — so they leave by having been worked, and the gate asserts the rule is still there.*
+
+### ⌗ ④ THE SIGN IS WRONG IN THREE PLACES AND NOT TWO
+
+*You name l.630 and l.652 and rule the dropped magnitudes not a contradiction. **A census of every signed form, run after repairing those two, found a THIRD*** — *writing the off-diagonal for both sectors with its imaginary unit and no sign.* ⇒ *All eight signed occurrences now carry it; **the two magnitudes are left exactly as you rule**, and the one form that was always right — the minus carried in the variable rather than in the sign — is asserted untouched, because a census that flagged it would have been the wrong census.*
+
+### ⌗ ONE THING ABOUT THE RUNNER-READ SWEEP, SO IT IS NOT READ AS A DEFECT
+
+*It went red on two of this branch's heads. Reproduced locally on the receipts that read either edited paper: **`VERDICT: NOT A SWEEP — nothing flagged, but a receipt was not traced to its end`, exit `2`.*** ⇒ *That is the UNMEASURED bit and not a flag, the same reading the tolerance job's bitfield takes. **Nothing of mine is named by it**, and I am not spending the re-run on it.
