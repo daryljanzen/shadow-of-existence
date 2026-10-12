@@ -52,6 +52,15 @@ runs where it was run here, and its verdict line is in `RESULT.md`.*
 
 *Nothing outside `computations/formalisation/` and this file was edited.*
 
+⚠ ***Reported, not repaired — a receipt red on `main` that my push's scope picked up.***
+- **What fails:** `receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_…`, at
+  `30/35 gate(s) pass` (Ⓓ③ Ⓔ① Ⓖ① Ⓘ① Ⓘ③).
+- **Why it is not this branch's:** run from its own directory in a clean worktree of `origin/main` at
+  `8da81d1e`, it gives the same five failures. On PR `#349` it surfaced only because this branch fast-forwarded
+  through main's commits.
+- **Why I have not touched it:** it is another seat's receipt, so I neither edit it nor guess its owner's
+  intent. *Routed here for the gate to send to whoever's edit moved its counts.*
+
 ## ⛭⛭ `re r7259` ③ — ORDER ① MEASURED: THE LORENTZIAN LAYER IS ABSENT IN BOTH LIBRARIES, THE ALGEBRAIC SLICE IS 79 PER CENT, AND 82 PER CENT OF THE GEOMETRIC RECEIPTS VERIFY A COORDINATE IDENTITY THAT STANDS IN FOR A THEOREM NOTHING CAN YET STATE (`r7259+71.5`)
 
 *The full result is `computations/formalisation/r7259_71_ground/RESULT.md`, read band by band against
