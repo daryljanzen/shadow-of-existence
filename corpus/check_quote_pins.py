@@ -42,6 +42,15 @@ BASELINE = os.path.join(HERE, 'quote_pin_baseline.tsv')
 #   does not need -- read off the same run as the keys
 ANN_LINE = re.compile(r'\s*\[TARGET-ANNOTATION\]\[(MISSING|UNUSED)\]\s+(\S+)\s+(".*")$')
 ANNOTATION_REPORT = []
+# r7257+70.1: a key whose baseline target is allowed to differ from the instrument, NAMED, with why, and routed to 66.
+#   File-scoped and exact; an entry here is a dispute awaiting a ruling, never a standing override.
+TARGET_DISPUTED = {
+    ('receipts/L221_the_bridge/B57_the_rules_are_centre_data_the_force_is_root_vectors.py',
+     'baryon 1, diquark 0, meson 1'):
+        'the site tests p14, matter_sector_paper.tex, so R* files it PAPER; the paper writes `baryon $1$, diquark $0$, '
+        'meson $1$`, so the plain literal is absent there and the MEANING-HELD row (66 re-filed it SOURCE at r7255 '
+        'so H3 would hold) fails H3 as PAPER.  A verdict question, not a column one: routed in r7257+70.1.',
+}
 INSTRUMENT = os.path.join(ROOT, 'scripts', 'mutate_assertions.py')
 
 LINE = re.compile(r'\s*\[QUOTE-PIN\]\[(PAPER|SOURCE|UNDECIDED)\]\[(SENTENCE|TOKEN)\]\[([A-Z,]*)\]\s+(\S+?):(\d+):(\d+)\s+(".*")$')
@@ -316,8 +325,9 @@ def main():
     #   from the file kinds its trace names, and the keys it cannot decide read `corpus/target_annotations.tsv`; the
     #   baseline's `target` must equal what that yields, so a hand correction lives in ONE place, the annotation.
     _ann_bad = [x for x in ANNOTATION_REPORT]
-    _tgt_bad = sorted(k for k in live if k in base and live[k][0] != base[k][0])
-    print(f'    target: R* decides {sum(1 for v in live.values() if v[0] != "UNDECIDED")} live key(s); '
+    _tgt_bad = sorted(k for k in live if k in base and live[k][0] != base[k][0] and k not in TARGET_DISPUTED)
+    _disp_stale = sorted(k for k in TARGET_DISPUTED if not (k in live and k in base and live[k][0] != base[k][0]))
+    print(f'    target: R* files {sum(1 for v in live.values() if v[0] != "UNDECIDED")} live key(s) (annotations included); '
           f'{len(_ann_bad)} annotation fault(s); {len(_tgt_bad)} baseline target(s) differ from the instrument')
     if _ann_bad:
         print()
@@ -327,6 +337,13 @@ def main():
         print('     ⌗ MISSING: R* cannot decide this key from its trace (it names `.tex` beside another kind, or no')
         print('       file kind at all) -- read what the site tests and add a row.  UNUSED: R* decides the key, so')
         print('       the row is a second, silent override -- remove it.')
+        bad += 1
+    for k in sorted(TARGET_DISPUTED):
+        print(f'    [TARGET DISPUTED, named] {k[0]}  {json.dumps(k[1], ensure_ascii=False)[:60]}')
+    if _disp_stale:
+        print(f'  ⛔ {len(_disp_stale)} TARGET_DISPUTED entr(y/ies) no longer disputed -- remove them:')
+        for p, lit in _disp_stale:
+            print(f'    [STALE] {p}  {json.dumps(lit, ensure_ascii=False)[:60]}')
         bad += 1
     if _tgt_bad:
         print()

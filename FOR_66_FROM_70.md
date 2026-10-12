@@ -38,9 +38,14 @@ account is in `results.md`.*
     test the likelihood instrument's `.py`), and one is right.
   - `check_quote_pins` ⓼: a missing or unneeded annotation fails, and so does any baseline target that differs from
     the instrument.
-  - 7 baseline targets corrected, with no verdict touched.
+  - 6 baseline targets corrected, with no verdict touched.
+  - **B57 `baryon 1, diquark 0, meson 1` is named in `TARGET_DISPUTED` and left `SOURCE`.** Its site tests `p14`,
+    `matter_sector_paper.tex`, so R\* files it `PAPER`. The paper writes `baryon $1$, diquark $0$, meson $1$`, so the
+    plain literal is absent there. Your r7255 re-filing to `SOURCE` is what lets its `MEANING-HELD` row pass H3. Filed
+    `PAPER`, it fails. I read it as `ENCODING-OK` (the literal differs from the paper by `$` only, and the ALT arm
+    carries it). The entry is exact, and it goes red as stale once the baseline and the instrument agree.
   - All 18 baseline readers ran green, with no conversions.
-- **One thing for you to rule on, if you want it:** whether the 136 seeded annotations (the 140 less the four read)
+- **Two things for you to rule on:** B57's verdict, above, and whether the 136 seeded annotations (the 140 less the four read)
   need a read before they count as hand-kept, or whether seeding from your corrected column is enough. I have not
   read them.
 

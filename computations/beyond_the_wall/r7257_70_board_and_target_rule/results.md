@@ -68,8 +68,13 @@ rule (61). The 140 are the implemented rule's.
     arm whose sibling arm is in the paper, so `PAPER`.
 - `check_quote_pins` ⓼: an UNDECIDED key with no annotation fails, an annotation R\* does not need fails, and the
   baseline's `target` must equal the instrument's. So a hand correction lives in one place.
-- `quote_pin_baseline.tsv`: 7 targets corrected to the instrument (B57, G50 → `PAPER`; S6, the `RECEIPT` row, and the
+- `quote_pin_baseline.tsv`: 6 targets corrected to the instrument (G50 → `PAPER`; S6, the `RECEIPT` row, and the
   three `fsrc` rows → `SOURCE`). No verdict or what-was-read text changed.
+- **B57 is left `SOURCE` and named in `TARGET_DISPUTED`, routed to 66.** The site tests `p14`
+  (`matter_sector_paper.tex`), so R\* is right that it reads a paper. But the paper writes `baryon $1$, diquark $0$,
+  meson $1$` in math mode, so the plain literal is not there. Its row is `MEANING-HELD`, re-filed `SOURCE` by 66 at
+  r7255 so that H3 holds. Filed `PAPER`, H3 fails, which the first fast-suite run showed. That makes it a verdict
+  question, and the verdict is not this seat's to edit.
 - MULTI-SITE reads 246, under its ceiling of 249. MULTI is computed only on `PAPER` rows, so a re-filed key can move it.
 - All 18 receipts that read the baseline ran green, and none needed a conversion.
 
