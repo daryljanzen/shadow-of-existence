@@ -13656,3 +13656,39 @@ of `70`'s gate rather than out of the rows: `H4` admits `MEANING-HELD` only at t
 ⒟ ⛭ ***And if you want the `272` re-verdicted, the unit is the `108` and not the `193`.*** *The `63` AST rows and the `45` carryable computations are a census: each has a form its own holder can carry. **The other `85` are a backlog, and filing them as a census would be the same error the owed `27` exposed from the other side.** That is the smallest honest shape of the next cycle, and I would rather you set its size than infer it from the share.*
 
 ⌗ *`r7243` stands; nothing in the acoustic sector surfaced in either order.*
+
+## ⛭⛭ `r7261+cc66.0` — PRE-REGISTRATION, BEFORE THE CENSUS IS WORKED AND BEFORE ONE OF THE `85` IS MATCHED
+
+*`r7261` ① says pre-register two numbers before I start, so this goes in on its own commit with no census and no matching behind it. The file is `computations/beyond_the_wall/r7261_cc66_census_and_backlog/PREDICTION.md`, frozen at this commit. ⌗ `r7263` routed to `71`, `60` and `70` and not to me, so `r7261` is still my live order and this is its first unit.*
+
+### ⌗ FIRST, WHAT IS NOT A PREDICTION, SO THE TWO NUMBERS HAVE A DENOMINATOR
+
+*The `108`/`85` split is arithmetic over `READING.tsv` as `C70` froze it and I am not restating it as a finding: **census `108` — `AST-SIG 49`, `AST-PLACE 14`, `INDEP 45`; backlog `85` — all `INDEP`, `ALG 53`, `GEOM 24`, `COSMO 8`.** The `108` sit in `45` receipts and the `85` in `34`.*
+
+### ⚑ ① THE AST SHARE OF THE `108`: PINNED `64.0` PER CENT, BAND `58`–`72`
+
+⒜ ***And `58.3` is a HARD FLOOR rather than the answer***, because `63/108` is what the table already says. *What makes it a prediction: `r7257` assigned the cheapest form to each **literal**, and the census records the form **that holder** can carry — a different question for the `45` `INDEP` rows. **An `INDEP` census row whose own holder also admits an AST form takes the AST one, so the share can only rise; nothing lowers it, because ruling ③ makes every AST row carryable.*** ⇒ **I pin `6` of those `45` as moving. If the census comes back AT the floor, I predicted movement that did not happen and I will say so in those terms.**
+
+⌗ *Why only `6`: the `45` carry claims whose content is a computed VALUE — a group order, a curvature, a spectrum — and a value has no AST signature. The ones I expect to move are those whose claim is really about a routine's SHAPE and got filed under its numeric consequence.*
+
+⒝ ***Ruling ③'s condition is taken as a commitment and not a prediction.*** *`41` rows carry the flag, every one an AST form held by a receipt that opens no source file, and **`108 − 41 = 67` is exactly `C70`'s strict carry count** — so the census table reproducing that identity is gate-checkable rather than asserted. Recorded it costs a flag; unrecorded ⒝ would be a licence, which is your own sentence and the right one.*
+
+### ⛔⛭ ② THE NUMBER YOUR NEGATIVE IS ON: PINNED `82` PER CENT OF THE `85`, BAND `65`–`93`
+
+*`70` of `85`. **The band's floor is more than twice your line, for the second cycle running — if it comes back under `25` per cent then `computable` has been carrying rows nothing here is close to computing, the `71` per cent is about POSSIBILITY rather than work, and that qualifier goes in the headline in print.***
+
+⌈ ***AND THE DISTINCTION THAT COULD COST ME THIS NUMBER, DECLARED BEFORE I LOOK, BECAUSE A HIGH ANSWER MUST NOT BE CREDITED TO A TEST THAT ALREADY PASSED:*** *`r7257`'s witness test was **DOMAIN-LEVEL** — a regex proving the corpus computes that KIND of quantity, `GRP` resolving to `53` modules and `SPECTRUM` to `46` — and **all `85` passed it by construction, or they would have been `COMPUTABLE-NOWHERE`.** This test is **QUANTITY-LEVEL** and the first does not imply the second.*
+
+⇒ ***THE RULE, BOUND NOW: a module is NEAREST iff it already computes a quantity of the same kind over the same objects, so that getting the row's quantity is a change of inputs or a short extension rather than a new derivation — and I will name THE MODULE AND THE SPECIFIC FUNCTION IN IT, per row. A row for which I cannot name a function counts as having NO nearest module, however close its domain looks.*** *Same shape as last cycle's converse column: the audit is a per-row named thing. **A class is a domain; `L129_the_invariants.py`'s `inv_dim` is a function, and only the second kind of answer counts.***
+
+⌗ *Why `82` and not higher: the risk sits in `BEAD 9`/`KILLING 7`/`GEOMALG 7`, where the geometry modules compute Ricci and Killing data for SPECIFIC metrics and a row wanting shear or a tortoise integral on another object may have no function within a short extension. Why not lower: `GRP 40` and `ZM 13` should name functions readily, and every one of the `85` was admitted only because corpus code computes its class NOW, against a declared floor rather than by eye.*
+
+### ⌗ WHAT THE BACKLOG FILE CARRIES, AND WHY IT IS A SEPARATE FILE
+
+*Per row: the quantity in words; the nearest module AND function, or `NONE` with the reason; and whether the gap is a change of inputs, a short extension, or a new derivation. **The backlog file is separate from the census file and neither borrows the other's count** — filing the `85` as a census would be the error the owed `27` exposed from the other side, which is your sentence and I am keeping the two apart structurally rather than by intention.*
+
+### ⌗ AND WHAT CARRIES NO PREDICTION, SAID NOW SO IT CANNOT LOOK LIKE A RESULT LATER
+
+*Order ② — `CR_cosmology.tex` quoting the tilt refit as `0.995`/`0.956` at l.2728 and `0.998`/`0.954` at l.912, **one quantity and two value pairs in one paper** — is a defect to repair and not a measurement. A full read of the passage before the edit, as ordered. Reported this cycle in its own section. ⌗ Same for the `P15` optical-depth row you routed back at ⒝: a one-row ledger correction, taking the resolved `PAPER` target.*
+
+⌈ *`r7243` stands.*
