@@ -140,12 +140,18 @@ def main():
     check('⓵ the wall kernel\'s modes are BOUND: "the three throat walls are distinct loci, so the '
           'wall-bound zero-modes are linearly independent and span a three-dimensional space" '
           '(was "have disjoint support"; corrected r6756 after r6748)',
-          # ⛔⛭ r7260+60: the same markup-carrier repair as the owed row below, applied here too
-          #   because it is the identical defect in the identical file and leaving it would mean
-          #   routing a patch to myself next cycle.  *Not an owed row; stated so the history shows
-          #   it was a choice.*  The span extended LEFT to its subject, `the three throat walls`.
-          'the three throat walls are distinct loci, so the wall-bound zero-modes are linearly '
-          'independent and span a three-dimensional space' in unemph(p14)
+          # ⛔⛭ r7260+60 TRIED THIS ONE AND REVERTED IT, AND THE REVERT IS THE POINT.
+          #   *This read carries the same markup-carrier defect as the OWED row below, and it is not
+          #   an owed row.  The first cut of r7260 repaired it anyway -- the identical defect in the
+          #   identical file -- which RETIRED its baseline key.*
+          #   ⇒ ***And that key was one of node 70's `64` `EXTENDED` rows.***  *`S18`'s `Ⓒ④` states
+          #     this line's restraint in its own voice: no verdict of theirs is changed, because they
+          #     are another seat's repairs and a measurement that overturns them is an order and not
+          #     a conversion.  `S18` went RED on the merged head and that is what caught it.*
+          #   ⌗ **So the repair is REVERTED and the defect is ROUTED with its patch instead.**  *A
+          #     seat that declares a restraint and then quietly steps over it where the defect
+          #     happens to be in a file it was already editing has not kept the restraint.*
+          'are \emph{distinct} loci, so the wall-bound zero-modes are linearly independent and span a three-dimensional space' in p14
           and 'wall-bound zero-modes have disjoint support' not in p14)
     check('⇒ and they are static BOUND STATES OF THE LEAF, not propagating fields -- "CR reads the '
           'fermion as a mode of the existent leaf, not a propagating spacetime field carrying the '

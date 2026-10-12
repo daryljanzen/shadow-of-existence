@@ -773,21 +773,38 @@ gate(f"Ⓕ② and the authorship bound is kept where it actually binds: `{len(_e
      and not any(e[0] in _touched and e[0] not in _out_owned and e[0] not in _out_ordered
                  for e in _exp_other))
 
-# ⛭⛭ r7248: ** AND THE `ordered` BRANCH ABOVE IS UNEXERCISED, SO IT IS CONTROLLED RATHER THAN
-#   TRUSTED. **  *Both receipts this branch modified outside the path scope came back owned by the
-#   introducing-commit rule, so the citation branch has NO live instance -- and a branch of an
+# ⛭⛭ r7248: ** AND THE `ordered` BRANCH ABOVE WAS UNEXERCISED, SO IT WAS CONTROLLED RATHER THAN
+#   TRUSTED. **  *Both receipts that branch modified outside the path scope came back owned by the
+#   introducing-commit rule, so the citation branch had NO live instance -- and a branch of an
 #   authorship test that never fires is this revision's own subject arriving in the test itself: a
 #   guard with no positive control.*
 #   ⇒ *** Two-sided, on strings rather than on history, so the control cannot be vacuous: a line
 #     that cites an order must match, and a line that merely carries a revision id must not. ***
+# ⛔⛭⛭⛭ r7260: ** AND THE BRANCH NOW HAS A POPULATION, SO THE SECOND CLAUSE WENT RED ON ITS OWN
+#   SUCCESS -- WHICH IS THIS FAMILY'S CLASS, FOUND IN THIS FILE FOR THE THIRD TIME. **
+#   *`r7257`'s order ① sent this seat into nine ODD-parity receipts of `L221_the_bridge` and two in
+#   other prefixes.  The clause asserted `not _out_ordered` -- that NOTHING exercises the branch --
+#   and the ordered work is exactly what fills it.  ** A gate asserting an absence is a gate that
+#   fails when the absence is filled by the work it was written beside. **  `L-249`'s rule is the
+#   instrument: pin the historical state where it is a fact about history, and assert the CURRENT
+#   state separately and MONOTONE.*
+#   ⇒ *** So the clause is replaced by the stronger one it was standing in for: the branch's
+#       population may be non-empty, and EVERY member of it must be a receipt whose edit in this
+#       branch's own commits cites an order. ***  *That is what the branch is for, it is now
+#       exercised, and the two-sided string control is kept beside it unchanged -- a controlled
+#       classifier with a live population beats a controlled classifier with none.*
 _ORD_YES = "#   *re `r7245`*: ordered, and measured two-sidedly before it was written."
 _ORD_NO = "# ⛭⛭ r7248 (60): the figure fell `32` -> `30` under this revision's own repairs."
-gate("Ⓕ②ᵇ ⛭ and the `ordered` branch of that bound is CONTROLLED although nothing exercises it: a "
-     "line citing an order matches and a line carrying only a revision id does not --- *an "
-     "unexercised branch of an authorship test is an absence guard with no positive control, which "
-     "is the defect this revision was ordered to repair elsewhere, so it is not left standing here*",
+print(f"      the `ordered` branch: {len(_out_ordered)} path(s), and every one of them must be a "
+      f"receipt whose edit in this branch's own commits CITES an order")
+gate(f"Ⓕ②ᵇ ⛭⛭ and the `ordered` branch of that bound is CONTROLLED and now EXERCISED: a line citing "
+     f"an order matches and a line carrying only a revision id does not, and all `{len(_out_ordered)}` "
+     f"path(s) in the branch are ones whose edit here cites an order --- ⛔ *the clause this replaces "
+     f"asserted the branch was EMPTY, and r7257's order ① filled it with nine ODD-parity receipts, so "
+     f"it went red on its own success.  L-249's rule: a historical fact stays pinned to history and "
+     f"the live statement is separate and monotone*",
      bool(_ORDER.search(_ORD_YES)) and not _ORDER.search(_ORD_NO)
-     and not _out_ordered)
+     and all(_edit_cites_order(p) for p in _out_ordered))
 
 # ⛭⛭⛭ r7256, on `r7253`'s order: ** THE THREE-VALUED CLASSIFIER, CONTROLLED ON ALL FOUR OUTCOMES. **
 #   *The merge arm has no live instance anywhere in this tree, so it is controlled on a synthetic

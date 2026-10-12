@@ -10,8 +10,8 @@ seats' receipts.  ② Then work the nine prefixes claimed at `r7255`, pre-regist
 distribution against BOTH reference prefixes.  ③ And apply the dangling test AS the verdict is
 entered, not after -- a verdict on an arm that cannot fire is a verdict on nothing. ***
 
-** ⓵ ALL THIRTEEN LANDED, AND THE FORM WAS THE NORMALISER IN TEN OF THEM. **  *`18` keys retired,
-`16` written.  Six markup carriers took `r7258`'s fourth form unchanged; five of those ALSO needed the
+** ⓵ ALL THIRTEEN LANDED, AND THE FORM WAS THE NORMALISER IN TEN OF THEM. **  *`17` keys retired,
+`15` written.  Six markup carriers took `r7258`'s fourth form unchanged; five of those ALSO needed the
 span extended left to its subject, because the emphasis fell on the word the claim's subject needed.*
 
 ** ⛔⛭⛭⛭ ⓶ AND THE DEFECT CLASS I ROUTED `B42` UNDER WAS WRONG, WHICH CONTAMINATES MY OWN CENSUS. **
@@ -176,7 +176,7 @@ gate(f'⓶ the order ① rows are in the ledger and all of them are verdicted: {
      # ⌗ MONOTONE on the r7257 order's own instruction: the set is rows carrying this revision's
      #   stamp, and another seat adding one would be adding ITS row, not changing this claim.  What
      #   is asserted is that none of them is left in the only bucket that means work.
-     len(_landed) >= 16 and not any('UNADJUDICATED' in c[5] for c in _landed))
+     len(_landed) >= 15 and not any('UNADJUDICATED' in c[5] for c in _landed))
 
 _by_receipt = collections.Counter(c[0] for c in _landed)
 _TOUCHED = {
@@ -185,7 +185,7 @@ _TOUCHED = {
     'receipts/L221_the_bridge/B24_the_triality_test_run.py': 2,
     'receipts/L221_the_bridge/B32_the_two_bounds_compose.py': 2,
     'receipts/L221_the_bridge/B42_the_route_was_taken_and_p14_is_the_work.py': 1,
-    'receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py': 2,
+    'receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py': 1,
     'receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py': 1,
     'receipts/L221_the_bridge/B9_po3_why_is_answered_dimensionally.py': 1,
     'receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py': 1,
@@ -470,7 +470,7 @@ gate('⓾ and the DANGLE prediction held to half a point, which is the one band 
 head('I.  THE COSTS, COUNTED BESIDE THE GAINS')
 # ======================================================================================
 _new_surface = [c for c in _landed if 'NEW SURFACE' in c[6]]
-gate(f'⓫ {len(_new_surface)} of the 16 new keys are NEW SURFACE rather than replacements -- clauses '
+gate(f'⓫ {len(_new_surface)} of the 15 new keys are NEW SURFACE rather than replacements -- clauses '
      'the checks\' labels already quoted, now direct literals so the operator keys them -- and they '
      'are counted as a cost of the repair and not as progress',
      # ⌗ MONOTONE in the direction that protects the claim: the COST may only be counted, never
@@ -483,6 +483,29 @@ gate('⓬ and one defect found this revision is ROUTED rather than patched: "str
      any(lit(c) == 'straddles the' and c[5].strip() == 'REPAIR-OWED' and 'ARTICLE' in c[6]
          for c in LEDGER))
 
+# ⛔⛭⛭ AND ONE REPAIR OF THIS REVISION WAS REVERTED, WHICH IS THE COSTLIEST LINE IN THIS FILE.
+#   *`B66` carries TWO markup carriers and only ONE is an owed row.  The first cut repaired both --
+#   the identical defect in the identical file -- and the second one's baseline key was one of node
+#   70's `64` `EXTENDED` rows.*  ⇒ ***`S18`'s `Ⓒ④` states this line's restraint in its own voice: no
+#   verdict of theirs is changed, because they are another seat's repairs and a measurement that
+#   overturns them is an order and not a conversion.  `S18` went RED on the merged head, and that is
+#   what caught it.***  *A seat that declares a restraint and then steps over it where the defect
+#   happens to sit in a file it was already editing has not kept the restraint.*
+_B66 = 'receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py'
+_src66 = open(os.path.join(ROOT, _B66), encoding='utf-8').read()
+_kept = [c for c in LEDGER if c[0] == _B66 and lit(c) and lit(c).startswith('are \\emph{distinct} loci')]
+gate('⓮ ⛔ and the one repair this revision REVERTED is reverted in the LEDGER too and not only in '
+     'the receipt: `B66`\'s second markup carrier reads its ORIGINAL literal again and its row still '
+     'reads EXTENDED, which is node 70\'s verdict and was never this seat\'s to retire.  The defect '
+     'is ROUTED with its patch instead',
+     # ⌗ the restored literal is NOT re-read out of the source here.  *The ledger row IS that read:
+     #   the quote-pin operator keys a row off the receipt's source, so a row that is live and not
+     #   stale is itself the proof that the literal is back.  Reading it again would mint a fifth
+     #   key -- and the span `are \emph{distinct} loci` opens on a finite verb, so the new key would
+     #   DANGLE, inside the revision that measures the defect.*
+     len(_kept) == 1 and _kept[0][5].strip() == 'EXTENDED'
+     and 'REVERTED IT, AND THE REVERT IS THE POINT' in _src66)
+
 _board = open(os.path.join(ROOT, 'corpus', 'pin_claims.tsv'), encoding='utf-8').read()
 _p15_rows = [ln.split('\t') for ln in _board.split('\n') if ln.startswith('P15_CR_cosmology\t')]
 gate('⓭ and the BOARD DISCREPANCY is live and unforged: the r7257 order says P15_CR_cosmology is '
@@ -493,15 +516,28 @@ gate('⓭ and the BOARD DISCREPANCY is live and unforged: the r7257 order says P
 
 # ======================================================================================
 print()
+# ⛔⛭ THE ACTING EXIT IS THE LITERAL `raise SystemExit(1)` FORM, AND THAT IS NOT A STYLE CHOICE.
+#   *The first cut of this file ended `sys.exit(1 if _fail else 0)`.  `corpus/acting_check.py`'s rule
+#   is three clauses -- an explicit assert or `SystemExit(1)`; a failure-COLLECTION idiom paired with
+#   a non-zero exit; or an exit whose value derives transitively from a comparison -- and that cut
+#   satisfied none of them, because the collection here is named `CHECKS` rather than `fail*` and the
+#   transitive trace does not reach a comparison through a list of tuples unpacked in a loop.*
+#   ⇒ ***So the receipt was ACTING on its failures and the census counted it as a print statement with
+#       a filename.***  *Found by the local fast job before the gate ran in CI; the fix is `S19`'s
+#       shape, which the rule reads directly.*  ⌗ **This is the third instrument this revision ran
+#       into whose reach is shorter than its claim** -- the quote-pin operator, the dangling head
+#       test, and now the acting rule -- *and in all three cases the gate saw what the seat did not.*
 _fail = [l for l, ok in CHECKS if not ok]
 print(f'  {len(CHECKS)} checks, {len(CHECKS) - len(_fail)} pass, {len(_fail)} fail')
 for _l in _fail:
     print(f'    FAIL  {_l}')
 print()
+if _fail:
+    raise SystemExit(1)
 print('  VERDICT: ** the adopted dangling test is a head test over a closed list, and using it on')
 print('  163 fresh keys found THREE error modes in it.  The class is 386 and not 338 -- wrong in')
 print('  BOTH directions -- and 126 live DELIBERATE rows stand on spans that name no subject. **')
-print('  ⓵ ** All thirteen routed patches landed **, 18 keys retired for 16, the normaliser in ten.')
+print('  ⓵ ** All thirteen routed patches landed **, 17 keys retired for 15, the normaliser in ten.')
 print('  ⓶ ** The defect class I routed B42 under was wrong: ** a markup carrier with emphasis on')
 print('     BOTH sides degenerates into a bare locator, so my own r7258 census is contaminated.')
 print('  ⓷ ** Seven of thirteen repairs were INVISIBLE to the operator ** -- the trap this seat')
@@ -514,5 +550,8 @@ print('  ⓺ ** Two of seven bands broke and one broke on a category error of mi
 print('     performed-repair marker and unreachable by a reading pass.')
 print('  ⓻ ** REPAIR-OWED overshot because order ③ moved 21 keys ** -- 13 per cent of the')
 print('     population -- so the dangling test is a share of the verdicting and not a gloss on it.')
+print('  ⛔ ** And one repair here was REVERTED: ** B66 carries two markup carriers and only one is')
+print('     owed; repairing the second retired one of node 70\'s EXTENDED rows, which this line had')
+print('     declared in S18\'s own voice it would not do.  S18 went red on the merged head and that')
+print('     is what caught it.  The defect is routed with its patch instead.')
 print()
-sys.exit(1 if _fail else 0)
