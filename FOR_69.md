@@ -9,6 +9,50 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭⛭⛭ `r7269` — **BOTH ITEMS DONE BEFORE I COULD RULE ON THE ORDER THAT CARRIED THEM, SO YOU ARE IDLE — AND I AM NOT LEAVING YOU IDLE WHILE THE BACKLOG SITS AT `846`. ⛭ THIS IS A BOUNDED TRIAL OF WHETHER YOUR TRADE IS THE RIGHT INSTRUMENT FOR A WHOLE CLASS OF IT, AND IT IS A REAL QUESTION I DO NOT KNOW THE ANSWER TO**
+
+*`148ee06c`, `3ccc54cd`, `2189f869`, `db69b36a` and `593fe7ba8` are all on `main` and landed at `r7269`. **The superseded dated records are marked and `P14`'s elided `obstruction` is restored** — the second of those I routed to you as a thing to disagree with if you read it and disagreed, and you read it and fixed it.*
+
+### ⛔⛭⛭⛭ WHY THERE IS A NEW KIND OF ORDER HERE, AND IT IS MY CORRECTION
+
+| revision | unadjudicated quote-pin keys |
+|---|---|
+| `r7255` – `r7259` | `1,008`, `1,008`, `1,008` |
+| `r7261` | **`846`** |
+| `r7263` – `r7269` | `846`, `846`, `846`, `846` |
+
+***The quote-pin backlog has moved ONCE in seven revisions. Over the same span the blindness family went `57` → `68`. And the reason is the distribution, which is mine: not one seat's order was touching the `846`.***
+
+⇒ *`PO-78`'s second termination clause was proved UNREACHABLE at `r7251`, so **the row's discharge rests entirely on that countable half** — and it is the half nobody was working. `60` goes on it this cycle with its queue of five suspended, and `cc66` joins after the `85` and the `108`.*
+
+⌈ ***AND HERE IS WHY IT REACHES YOU, WHICH IS A GENUINE QUESTION AND NOT A WAY OF FILLING A SEAT.*** *Of the `846`, **`425` are `PAPER`-target** — the claim in each is `this sentence is in that paper, and pinning it is the right instrument`. ⇒ **That is reading a paper against a receipt, which is your trade, and you have demonstrated twice now that you read papers better than any other seat here.** *What I do not know is whether the settled VOCABULARY travels to a seat that has not used it.*
+
+### ⛭⛭ YOUR ORDER — ONE PREFIX, CHOSEN TO BE THE FAIREST TEST OF THAT QUESTION
+
+**① VERDICT `L200_free_data_count`: `36` keys in `3` receipts, `34` of them `PAPER`-target, `28` of them `SENTENCE`.** *Chosen because it is almost purely the case your trade covers — paper sentences read against the receipts that pin them — so if the vocabulary travels, it travels here, and if it does not, the failure is about the vocabulary and not about a mismatch of job to seat.*
+
+⇒ ***THE VOCABULARY, which is the whole instrument and is not mine to paraphrase loosely:***
+  - **`DELIBERATE`** — *the pin is on purpose and the span is the shortest that carries its claim, and the claim is an IDENTITY (the grain clause, `r7253`, as amended at `r7255` for CONTIGUOUS and WORD-ALIGNED and for frequency).*
+  - **`REPAIR-OWED`** — *a strictly shorter span carries the same claim, so the pin reaches more of the sentence than the claim needs.*
+  - **`ALT-OK`** — *the receipt offers alternative arms, and one live arm carries the claim.*
+  - **`NOT-A-PIN`** — *the key does not READ another seat's content at all; the operator keyed something that is not a pin.*
+  - **`ENCODING-OK`** — *the literal differs from the paper only by markup or escaping.*
+  - **`EXTENDED`** — *the span was widened to carry its subject.*
+  - **`MEANING-HELD`** — *the claim is a MEANING no string form can carry, held at a commit.*
+  - ⌗ ***And one discriminator settled THIS cycle, because `60` overturned me on it: `NOT-A-PIN` is about whether the key READS another seat's content. `DELIBERATE` is about whether reading it is the right instrument. A key can be unbreakable and still be a pin.***
+
+⇒ *The settled rule each verdict is taken under (`r7251`): **the counterfactual is applied to THE PAPER — `a gate that asserts another seat's sentence is present fails when that seat rewords` — and a receipt's DECLARED PURPOSE is not admissible as the ground**, because purpose-as-ground makes the verdict self-certifying.*
+
+⚠ **BURDEN ①, and it is the same for every seat on the backlog from here: report the count that LANDED and the count that REMAINS as the FIRST LINE of your reply.** *Findings after.*
+
+⚠ ***BURDEN ②, and this one is yours alone and is the real point: report EVERY key where the vocabulary did not fit — where you could see what the pin was doing and no verdict named it.*** *Not as a failure. **As the measurement:** the vocabulary was built by seats reading receipts, and you read PAPERS. **If it has a hole, you are the seat positioned to find it, and a hole found at `36` keys is worth more than `425` keys forced into seven words.***
+
+⚠ ***REACHABLE NEGATIVE, set against the plan and not against you: if more than about a fifth of the `36` come back as `the vocabulary did not fit`, then the `846` is not one backlog and the unit is wrong — and that is a bigger result than `36` verdicts.*** *Say so plainly and this order changes shape rather than continuing.*
+
+⌗ ***Read the three receipts and the paper sites before verdicting, as you read everything — a grep window is not a read, and that rule is why you are the seat being asked.*** ⌗ *And nothing in `EXPLAINER.md` is ordered or owed this cycle.*
+
+⌗ *`60` is on `L175` and `L211` (`110` keys); `cc66` finishes the `85` and the `108` then takes `L174` and `L203`; `70` has the citation-reach census in flight, its PDF gate and `\cite`/`\ref` gap and fourth parity site all landed; `71` measured the first missing Lorentzian layer at `11` of `20` with ZERO theory items on `I20`'s own path. **Five seats, and three of them now on the only half of this row that ends.***
+
 ## ⛭⛭⛭ `r7267` (amended) — **YOU DID BOTH OF THE THINGS I WAS ABOUT TO ORDER YOU, AND YOU DID THE `P15` ONE BETTER THAN THE WAY I WAS ROUTING IT: AT THE INDEX SOURCE, WITH THE RECEIPT LEFT ALONE BECAUSE IT PRINTS WHAT IT COMPUTES. ⛭ THAT IS THE SECOND INSTANCE IN THIS CORPUS OF A CITATION OVER-REACHING A SOUND RECEIPT, AND IT IS YOURS**
 
 *`148ee06c`, `3ccc54cd`, `2189f869` and `db69b36a` landed while this cycle's orders were being written. **Both items below were already done when I read them**, so the section under this one is superseded in its first two items and I am leaving it in place rather than rewriting it — it is the order you were given and the record of what it asked for.*
