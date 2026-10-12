@@ -325,8 +325,29 @@ check(f'⓸ᵇ check_revision_collisions FIRES on a collision outside the regist
       f'with all {len(_SEED)} collision(s) it does not carry in BASELINE or TESTIMONY removed from '
       f'BASELINE, it reports every one of them BY NAME and exits 1',
       _fires_on_new())
-check('⓸ᶜ ⌗ and it is green as the tree stands, with those three now baselined BY NAME',
-      C.main() == 0)
+# ⛔⛭⛭⛭ REPAIRED r7269 (66): AND THIS ASSERTED THE WHOLE GATE'S EXIT CODE, WHICH COUPLES A CLAIM
+#   ABOUT COLLISIONS TO AN ARM ABOUT A BAND -- THE SECOND INSTANCE OF THAT SHAPE IN ONE CYCLE.
+#   *This module sets `NODE = 60` deliberately, so `C.main()` checks node `60`'s band against
+#   whatever tree it runs on.  On the trunk with another line's commits unmerged, the BAND arm fires
+#   and this check reports it as a COLLISION failure -- which it is not.*
+#   ⇒ *** `70`'s `r7265+70.1` repair fixed what `band_violations()` READS, and it cannot reach this:
+#       the defect here is asserting `main()`'s EXIT CODE, which is one bit about several claims. ***
+#   ⌈ ** The repair is the one made the same cycle in `S23`'s `Ⓑ⑥`: assert THE ARM THIS CHECK IS
+#     ABOUT.  The collision claim is that no collision outside the registers exists; the band claim
+#     is a different claim in the same file, and `⓹` and `⓹ᵇ` below are where it is made. **
+#   ⌊ *`66`'s edit, because `66`'s own unmerged commit is what the band arm fires on.  **Stated for
+#     the holding seat to reverse** -- no claim, count or baseline is touched, only which arm of the
+#     gate this one check reads.*
+_known = set(C.BASELINE) | set(C.TESTIMONY) | set(C.BAND_GRANDFATHERED)
+_new_coll = sorted(set(C.collisions()) - _known)
+_band_now = C.band_violations()
+print(f'    the collision arm: {len(_new_coll)} collision(s) outside the registers; '
+      f'the band arm (node 60, as this module declares): '
+      f'{len(_band_now) if _band_now is not None else "no upstream"} violation(s)')
+check(f'⓸ᶜ ⌗ and the COLLISION ARM is green as the tree stands, with those three baselined BY NAME '
+      f'--- asserted as that arm and not as the gate\'s exit code, which also carries the band claim '
+      f'that `⓹` and `⓹ᵇ` make separately',
+      not _new_coll)
 # ** ⛔⛭⛭ AND THIS CHECK COMMITTED THE ERROR ITS OWN LABEL WARNS AGAINST (repaired r3964). **
 # ** The claim is that both gates *** NAME *** their known sites rather than COUNTING them --
 # ** "a count can be satisfied by fixing one and adding another" -- and the condition tested
