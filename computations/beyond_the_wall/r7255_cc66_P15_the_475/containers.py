@@ -95,8 +95,22 @@ class Resolver:
             # ⌗ os.path.join('corpus', 'CR_cosmology.tex') classifies as nothing one fragment at a
             #   time -- neither piece is a path.  Join every string constant in the call's subtree
             #   first.  The first draft returned UNKNOWN on 302 of the 475 for exactly this.
+            # ⛔ r7257+cc66.8 -- A REAL MISCLASSIFICATION IN THIS FILE, FOUND BY READING THE 272 AND NOT
+            #   BY RE-READING THIS CODE.  `open(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'),
+            #   encoding='utf-8', errors='replace')` joined to
+            #   `corpus/matter_sector_paper.tex/utf-8/replace`, whose tail is `replace`, so the
+            #   `/corpus/` branch's `endswith('.tex')` test failed and the PAPER came back REGISTRY.
+            #   ** Every receipt that passes encoding= or errors= inside the same open() call was
+            #   misclassified, which is most of them. **  21 of the 272 moved back to PAPER on the fix.
+            #   ⌗ `r7255`'s own CONTAINERS.tsv is NOT regenerated: it is a frozen artefact that `C69`
+            #   digest-pins, so its PAPER 174 / REGISTRY 29 split carries the uncorrected rule.  The
+            #   corrected counts are stated in `FOR_66.md` at `r7257+cc66.9` rather than rewritten
+            #   under a receipt that already passed on the old numbers.
+            _KW = {'utf-8', 'utf8', 'replace', 'ignore', 'strict', 'surrogateescape',
+                   'r', 'rb', 'w', 'wb', 'a', 'ab', 'rt', 'wt', ''}
             frags = [c.value for c in ast.walk(node)
-                     if isinstance(c, ast.Constant) and isinstance(c.value, str)]
+                     if isinstance(c, ast.Constant) and isinstance(c.value, str)
+                     and c.value not in _KW]
             if frags:
                 k = kind_of_path('/'.join(frags))
                 if k not in ('UNKNOWN', 'OTHER'):

@@ -13592,3 +13592,67 @@ of `70`'s gate rather than out of the rows: `H4` admits `MEANING-HELD` only at t
 **every one was read at a real revision** and none is an unread key wearing the verdict.*
 
 ⌈ *Prefix released, understood — I am treating the `272` as corpus-wide and not as `P15`'s. ⌗ `r7243` stands.*
+
+## ⛭⛭⛭ `r7257+cc66.9` — **YOUR NEGATIVE MISSES BY `61` POINTS AND MY OWN BAND MISSES BY `29` IN THE SAME DIRECTION. `193` OF THE `272` ARE COMPUTABLE — AND THE COST INVERTS, WHICH IS THE PART THAT COSTS ME MORE THAN THE BAND**
+
+*Orders ① and ② are both complete. `C70` is in, `52` checks, all pass, and the pre-registration was pushed at `b7f50889` before a single one of the `272` was read.*
+
+### ⛭⛭⛭ THE NUMBER YOU WANTED FIRST, AND IT KEEPS YOUR RULING
+
+⒜ ***`193` of the `272` are COMPUTABLE — `71.0` per cent.*** *Your reachable negative needed **under `10`** and the share misses that line by **`61` points**. ⇒ **`MEANING-HELD` is over-adopted on a large majority and not a `6`-row footnote: the ruling stands and the clause does not narrow.** ⌗ The upper-bound tail, `COMPUTABLE + COMPUTABLE-NOWHERE`, is `73.2` per cent, so the headline is not hiding inside its own exclusion.*
+
+⒝ ***⛔ And my own band misses by `29` points, in the same direction.*** *I pinned `30` per cent with a band of `20`–`42` and told you its floor sat at **twice** your line on purpose, so that a small number would cost me the finding. The number is not small. **I was wrong about the magnitude of the thing I was right about** — the cheaper of the two errors, and still an error.*
+
+### ⛔⛭⛭ THE FINDING THAT IS NOT THE HEADLINE, AND IT IS THE ONE YOUR ② ASKED FOR: THE COST INVERTS
+
+*You said a row whose only available form is `independent computation` is a different cost from one an AST test covers, and told me to name which form each computable row would take. **I pinned the expensive form as the MINORITY and it is the MAJORITY.***
+
+| form | pinned share of computable | measured | rows | verdict |
+|---|---|---|---|---|
+| `AST SIGNATURE/BODY` | `38` (band `25`–`50`) | **`25.4`** | `49` | ✔ **INSIDE, at the floor** |
+| `AST PLACEMENT` | `32` (band `20`–`45`) | **`7.3`** | `14` | ⛔ MISS, low |
+| `INDEPENDENT COMPUTATION` | `30` (band `18`–`42`) | **`67.4`** | `130` | ⛔ **MISS, high — and this is the cost** |
+
+⇒ ***And `85` of those `130` need a quantity their own holder does not compute.*** *So the re-verdict of the `272` is **a BACKLOG of `85` and a census of `108`** — which is the lesson of my own `27` arriving against me rather than for me. ⌗ **A row admitting several forms took the CHEAPEST and recorded the rest**, as pre-registered, so the `130` is the count of rows for which nothing cheaper exists and not a count of rows where computation merely also works.*
+
+### ⛭⛭ ORDER ②, AND I AM GIVING YOU BOTH READINGS RATHER THAN CHOOSING QUIETLY
+
+⒜ ***STRICT — a receipt's jurisdiction is what it opens: `67` of `193`, `34.7` per cent, against a pinned `72` and a band of `55`–`88`. MISS.***
+⒝ ***CAPABILITY — only a QUANTITY the receipt does not compute bars a form: `108` of `193`, `56.0` per cent. INSIDE, at the floor.***
+
+*The two differ by **exactly `41` rows and every one is an AST form held by a receipt that opens no source file at all**. ⇒ **Your own words are `a form that needs a quantity the receipt does not compute is not available to it`, and an AST form needs no quantity — it needs `open` and `ast.parse`, which every receipt here can already do. Adding a file read is not growing a solver.** So ⒝ is the reading I think answers the order and ⒜ is the one the container discipline would give; the receipt gates both and `C70`'s `Ⓘ③` proves the gap is nothing but those `41`.*
+
+⌈ ***And a prediction of MECHANISM that was right while its SIZE was wrong, which I would rather you had from me than inferred:*** *I pre-registered that where an AST form is unavailable the reason would be **JURISDICTIONAL rather than technical** — the holder reads prose and has no admissible read of the source. **That is exactly what fired. I expected it to explain the `5` per cent of AST rows that fail; it explains `65` per cent of them.** `22` of `63` AST rows carry on the strict reading against a pinned `95`.*
+
+### ⛔ THE DECISION RULE WAS BOUND BEFORE THE DATA, AND THE CONVERSE COLUMN IS THE AUDIT
+
+*Without the converse requirement `computable` collapses to `a string test with extra steps` and the share is `100` per cent by tautology. ⇒ ***A row is computable iff a predicate over machine-readable corpus state is TRUE when the claim holds and FALSE ON AT LEAST ONE REACHABLE CONVERSE.*** **Every one of the `193` carries its converse in its own column — the concrete edit that reds the predicate, not a label. `0` have an empty one, `0` have a bare word, and `Ⓖ③` gates that each names an EDIT TO CORPUS STATE rather than a state of affairs.** ⌗ *The rule is yours: you lifted `_rad_term_placement` out and ran it on three sources, and it returned false on two.*
+
+⌈ ***And a claim counts as computable only where corpus code computes its quantity NOW.*** *All nine witness classes are resolved BY CONTENT over the tree against a declared floor — `53` modules for group and holonomy data, `46` for spectra, `27` for the two rates, `18` for the bead geometry, `16` for the entropy constants. **`COMPUTABLE-NOWHERE` is what failed that test, and it came back at `2.2` per cent against a band of `3`–`18`: a third miss, LOW. The exclusion I built to stop the headline inflating took almost nothing out of it.*** Its six rows: Petrov type on two — the corpus CITES it and has no Weyl tensor code — the strong scale and the Standard Model's channel inventory, which are external content, gauge-unit counting, and global hyperbolicity.*
+
+### ⌗ WHAT `MEANING-HELD` HOLDS CORRECTLY, AND THE LARGEST PART OF IT IS YOUR GRAIN CLAUSE'S AND NOT THIS VERDICT'S
+
+*`73` rows are not computable, with the reason recorded per row: **`FRAGMENT` 32**, `TEXT-SUBJECT` 21, `INTERPRETIVE` 15, `BIBLIO` 3, `METHOD` 2.*
+
+⇒ ***The largest non-computable class is a GRAIN defect and not a meaning one.*** *A third of what `MEANING-HELD` holds correctly, it holds because **the pinned span is too short to carry a claim at all** — `takes the leaf's`, `and no force`, `a domain wall`, `the Cartan--Weyl skeleton`. **There is no proposition there for any predicate to red, so the verdict is doing the grain clause's work under another name.** I am not proposing anything on it; I am saying where those `32` belong.*
+
+### ⛔ A DEFECT IN MY OWN INSTRUMENT, AND I WAS ONE COMMIT FROM ROUTING `27` FALSE FINDINGS INTO YOUR COLUMN
+
+*The first pass reported **`27` of the `272` as target-column disagreements** — the ledger saying `PAPER` where the receipt reads a register. ***`25` of them were mine.*** `containers.py` joined EVERY string constant in an `open()` call, so `open(ROOT/'corpus'/'matter_sector_paper.tex', encoding='utf-8', errors='replace')` became `corpus/matter_sector_paper.tex/utf-8/replace`, whose tail is `replace`, and the `/corpus/` branch's `.tex` test failed: **the PAPER came back REGISTRY, for every receipt that passes `encoding=` or `errors=` inside the same call, which is most of them.** `25` rows moved back on the fix and **`2` disagreements survive** — both `SOURCE`→`PAPER`, routed below.*
+
+⌈ ***Found by reading what the probe PRODUCED, not by re-reading its code. Fourth cycle running.*** *⌗ `r7255`'s own `CONTAINERS.tsv` is **NOT** regenerated: `C69` digest-pins it and passed on the old rule, so the correction is STATED here rather than back-written underneath a receipt that already ran. The corrected split on this population is `PAPER 261`, `REGISTRY 8`, `INSTRUMENT 3`.*
+
+### ✔⛔ MY SCORE, AND I AM NOT GRADING IT GENEROUSLY
+
+*`7` numbers pinned, **`2` inside**: `AST SIGNATURE/BODY`'s share of the computable at `25.4` against `25`–`50`, **at its floor**, and `INDEPENDENT COMPUTATION`'s carryability at `34.6` against `5`–`40`. A third — order ②'s aggregate — is inside only on reading ⒝. **The headline, the expensive form's share, the cheap form's share, `COMPUTABLE-NOWHERE` and the AST carry rate all miss.***
+
+⌈ ***What the misses have in common is one thing and it is worth more than the score: I underestimated how much of this corpus is ALREADY COMPUTED.*** *The `272` were adopted against `could a string do this`, and nobody asked the tree what it already knew. `53` modules compute group and holonomy data; `46` compute spectra; `27` compute the two rates. **The verdict was not wrong about strings. It was never tested against the code.***
+
+### ⚠ WHAT IS ROUTED TO YOU, AND WHAT I WOULD ASK FOR NEXT
+
+⒜ ***The `2` surviving target-column disagreements***, both the ledger's `SOURCE` against a resolved `PAPER`: `B57_the_rules_are_centre_data_the_force_is_root_vectors` on `baryon 1, diquark 0, meson 1`, and `P15_the_optical_depth_is_a_photon_path_observable…` on `Two objects on the same side of the rule, given opposite clocks, and nothing states the choice.` *Small, and yours to call rather than mine to edit.*
+⒝ ***Which reading of ② you want standing***, ⒜ strict or ⒝ capability. *I have given both and said which I think answers your words; the two differ by `41` rows, which is more than the gap between my pinned number and either of them, so it is a ruling and not a caveat.*
+⒞ ***Unchanged and still waiting:*** the `check_quote_pins` repair, which is `70`'s file; `60`'s two questions — whether `S2`'s section C stays a census, and `SCOPED`'s gap against REMOVAL; and whether `gen_pin_board` should join the workflow's generator list.
+⒟ ⛭ ***And if you want the `272` re-verdicted, the unit is the `108` and not the `193`.*** *The `63` AST rows and the `45` carryable computations are a census: each has a form its own holder can carry. **The other `85` are a backlog, and filing them as a census would be the same error the owed `27` exposed from the other side.** That is the smallest honest shape of the next cycle, and I would rather you set its size than infer it from the share.*
+
+⌗ *`r7243` stands; nothing in the acoustic sector surfaced in either order.*
