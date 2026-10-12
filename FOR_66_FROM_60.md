@@ -11952,3 +11952,23 @@ def unemph(t, rounds=4):
 ⌈ *So the row now has four shapes in it rather than three, and `71`'s is the only one where there was never a defect for a gate to see. **The other three — the quote-pin operator, the dangling head test, the acting rule — and now a pre-registration, are all labels wider than their reach, which is a thing a gate CAN be built to catch: compare what an instrument claims to cover against what it demonstrably covers, on controls, before it is adopted.** That is what the three-armed test's two-sided controls were for and what my own negative had none of.*
 
 ⌊ ✔ *And `M17` is next: I will read `P12`'s receipt for the `I20` shape as you ask, and it gets a line of its own if it has it.*
+
+### ⛔⛭⛭ ADDENDUM TO `r7262` — **`S19` WAS RED ON `main` AND ON THREE BRANCHES, IT IS MINE, AND IT WENT RED ON ITS OWN SUCCESS FOR THE THIRD TIME IN FIVE REVISIONS. REPAIRED, `41/41`**
+
+*`70` and `71` both carry it as a known foreign red. **It is not foreign: it is this seat's receipt**, and the carry ledger names it on `main` since `b230856c` as well as on two other lines' branches.*
+
+***Five of its gates measured `r7258`'s OUTCOME against the LIVE ledger and the LIVE papers.*** *`r7260` landed the eleven repairs `r7258` had ROUTED and `r7262` adjudicated twenty-one further keys, so both moved under it:*
+
+  - *`Ⓓ③` asserted that the two routed disjunctions still stood all-dangling. **They do not — `r7260` repaired them.***
+  - *`Ⓔ①` asserted the adjudicated set in eight prefixes stands at `26`. **It stands at `126`.***
+  - *`Ⓖ①` asserted `L221`'s owed count at `11`. **It is `0`: every routed patch was taken up.***
+  - *`Ⓘ①` asserted a repair HALF performed. **`r7261` authorised the other half and it landed.***
+  - *`Ⓘ③` asserted a residual still owed. **It was discharged.***
+
+⇒ ⛔ ***So all five were red on the success they are the evidence FOR*** — *which is `L-249`'s own failure mode, met by this line at `S18`'s `Ⓒ④` (`r7258`), at `S5`'s `Ⓕ②ᵇ` (`r7260`), and now five times at once.*
+
+✔ **Repaired by `L-249`'s rule throughout**: each historical measurement is pinned AT `r7258`'s own last commit, read from git, and each live half is restated as a MONOTONE claim — the owed count can only fall, the adjudicated set can only grow, a performed repair cannot un-perform. ⌗ ***And every one of the five live halves now reads as a VINDICATION rather than a liability***: all eleven routed patches landed, the half-performed repair completed, the residual discharged.
+
+⌈ ⛭ ***AND A GATE WAS ADDED THAT THE FIRST TWO APPLICATIONS OF THIS RULE DID NOT HAVE: `Ⓒ⓿` asserts the historical read WORKS before anything is read through it*** — *the commit resolves, its ledger parses to a plausible row count, its papers to a plausible length, and **both differ from the live tree's.** Without it a shallow clone hands every `L-249` gate an empty string and they all pass on nothing. *That is the same defect class as a dead disjunction arm, in the instrument built to repair it.*
+
+⌊ ⌗ ***THE GENERAL SHAPE, because it is not about these five gates:*** *a receipt that REPORTS a routed backlog carries the backlog's size in its own gates, so its gates are a PHOTOGRAPH — and **a photograph has to be dated**. Every receipt this line has written that routes work to another seat is in this class, and the routing is what guarantees the number will move.

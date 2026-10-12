@@ -114,6 +114,7 @@ import glob
 import json
 import os
 import re
+import subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -207,12 +208,65 @@ def shape(rel):
     return names, calls
 
 
+# ⛔⛭⛭⛭ `L-249`'s RULE (`r3105`), APPLIED TO THIS RECEIPT AFTER IT WENT RED ON ITS OWN SUCCESS.
+#   *Five gates below measured `r7258`'s OUTCOME against the LIVE ledger and the LIVE papers.
+#   `r7260` landed the eleven repairs this revision ROUTED and `r7262` adjudicated twenty-one
+#   further keys, so both moved and the five went red --* ⛔ *red on the success they are the
+#   evidence for, which is the failure mode `L-249` exists for and the THIRD time this line has met
+#   it in five revisions: `S18`'s `Ⓒ④` at `r7258`, `S5`'s `Ⓕ②ᵇ` at `r7260`, and now these.*
+#     ⇒ *** The historical measurement is pinned AT THE COMMIT IT STOOD AT -- `r7258`'s own last
+#         commit, read from git and not from memory -- and each live half is restated as a MONOTONE
+#         claim that the direction of travel cannot falsify. ***
+#   ⌗ *And the shape is worth naming because it is not the generic one: a receipt that REPORTS a
+#     routed backlog carries the backlog's size in its gates, so the gates are a photograph.  A
+#     photograph has to be dated.*
+R7258 = 'fcbbd87f'
+
+
+def _show(path, sha=None):
+    r = subprocess.run(['git', 'show', f'{sha or R7258}:{path}'],
+                       cwd=ROOT, capture_output=True, text=True)
+    return r.stdout if r.returncode == 0 else None
+
+
+def ledger_at(sha):
+    """the same rows as `ledger()`, read at a COMMIT rather than at the working tree"""
+    out, txt = [], _show('corpus/quote_pin_baseline.tsv', sha)
+    for line in (txt or '').split('\n'):
+        c = line.rstrip('\n').split('\t')
+        if len(c) >= 7 and c[0].startswith('receipts/'):
+            try:
+                c[1] = json.loads(c[1])
+            except ValueError:
+                continue
+            out.append(c)
+    return out
+
+
+def papers_at(sha):
+    """the paper bodies at a COMMIT, joined as `ALLP` joins them"""
+    names = subprocess.run(['git', 'ls-tree', '--name-only', sha, 'corpus/'],
+                           cwd=ROOT, capture_output=True, text=True).stdout.split()
+    bodies = []
+    for n in names:
+        if not n.endswith('.tex') or os.path.basename(n).startswith('appendix_receipts'):
+            continue
+        t = _show(n, sha)
+        if t is None:
+            continue
+        bodies.append(re.sub(r'\s+', ' ', '\n'.join(
+            l for l in t.split('\n') if not l.lstrip().startswith('%'))))
+    return ' @@@ '.join(bodies)
+
+
 LEDGER = ledger()
 PAPERS = papers()
 ALLP = ' @@@ '.join(PAPERS.values())
 UNEMPH = unemph(ALLP)
 CELL = [r for r in LEDGER if r[2] == 'PAPER' and r[3] == 'SENTENCE'
         and 'UNADJUDICATED' not in r[5]]
+LEDGER_THEN = ledger_at(R7258)
+ALLP_THEN = papers_at(R7258)
 BRIDGE = 'receipts/L221_the_bridge/'
 MINE_6 = ('B13_po2_identification_is_stated.py',
           'B1_the_index_argument_stops_where_a_mod_two_index_begins.py',
@@ -342,6 +396,14 @@ gate('Ⓒ③ ⌗ and the figures are PRINTED above and pinned nowhere, because a
      'three, so it is neither vacuous nor a blanket',
      len(CELL) / 10 < len(_D) < len(CELL) / 3)
 
+gate(f'Ⓒ⓿ ⛭⛭ THE HISTORICAL READ IS SHOWN TO WORK BEFORE ANYTHING IS READ THROUGH IT: `r7258`\'s '
+     f'commit resolves, its ledger parses to `{len(LEDGER_THEN)}` rows and its papers to '
+     f'`{len(ALLP_THEN)}` characters, and BOTH DIFFER from the live tree\'s '
+     f'(`{len(LEDGER)}` rows, `{len(ALLP)}` characters).  ** Without this check a shallow clone '
+     f'hands every `L-249` gate below an empty string and they all pass on nothing **',
+     len(LEDGER_THEN) > 2000 and len(ALLP_THEN) > 100000
+     and len(LEDGER_THEN) != len(LEDGER) and len(ALLP_THEN) != len(ALLP))
+
 # ======================================================================================
 head('D -- THREE DISJUNCTIONS STAND ON ARMS THAT ALL DANGLE, AND NINETEEN ARMS ARE DEAD')
 # ======================================================================================
@@ -368,11 +430,32 @@ gate('Ⓓ② ⇒ and a disjunction ACCUMULATES arms that reach nothing: more tha
      'are absent from every live paper, so the form declares more cover than it has.  ** The two '
      'defects are different: a dead arm cannot fire, a dangling arm fires on the wrong sentence **',
      len(_dead) > len(_ALT) / 10)
-gate('Ⓓ③ ⌗ and the one of the three this line may repair WAS repaired in this pass, while the other '
-     'two are ROUTED -- they sit in prefixes other seats hold.  ** The measurement was not made to '
-     'report about other people **',
-     not any('P16_order_two' in k for k in _allday)
-     and any('P15_CR_cosmology' in k or 'L204_physics_reach' in k for k in _allday))
+_ALT_T = [r for r in LEDGER_THEN if r[2] == 'PAPER' and 'UNADJUDICATED' not in r[5]
+          and 'ALT' in r[4].split(',')]
+_byrec_T = {}
+for _r in _ALT_T:
+    _byrec_T.setdefault(_r[0], []).append(_r)
+_disj_T = {k: v for k, v in _byrec_T.items() if len(v) > 1}
+_allday_T = {k: v for k, v in _disj_T.items()
+             if [a for a in v if a[1] in ALLP_THEN]
+             and all(dangles(a[1]) for a in v if a[1] in ALLP_THEN)}
+gate(f'Ⓓ③ ⌗⛭ and the one of the three this line may repair WAS repaired in this pass, while the '
+     f'other two were ROUTED -- they sat in prefixes other seats hold.  ** The measurement was not '
+     f'made to report about other people. **  ⛔ *`L-249`: read AT `r7258`\'s own commit, where the '
+     f'three stood (`{len(_allday_T)}` all-dangling of `{len(_disj_T)}` disjunctions), because '
+     f'`r7260` landed the two routed repairs and a live read of this clause goes red on exactly '
+     f'that success.*  ⌗ *`2` and not `3` at that commit is the clause itself: the third is the one '
+     f'this revision repaired, so the section\'s `three` is the count BEFORE the pass and the `2` is '
+     f'what it left.*',
+     len(_allday_T) == 2
+     and not any('P16_order_two' in k for k in _allday_T)
+     and any('P15_CR_cosmology' in k or 'L204_physics_reach' in k for k in _allday_T))
+gate('Ⓓ③ᵇ ✔⛭ and the LIVE half is the monotone one, and it is the stronger statement: the repair '
+     'performed here has not come back, and neither have the two that were routed -- NONE of the '
+     'three stands all-dangling now.  *A performed repair cannot un-perform, so this direction '
+     'survives every later revision*',
+     not any('P16_order_two' in k or 'P15_CR_cosmology' in k or 'L204_physics_reach' in k
+             for k in _allday))
 
 # ======================================================================================
 head('E -- ITEM TWO: THE TWENTY-SEVEN, AND A PRE-REGISTERED BAND PUBLISHED AS BROKEN')
@@ -400,12 +483,23 @@ print(f'      re-stated: {len(_rs)} row(s) in {len({r[1] for r in _rs})} receipt
       f'{len({r[0] for r in _rs})} prefix(es); the ledger now carries {len(_live)}')
 for _k in sorted(_after):
     print(f'        {_k:14} {_after[_k]:3}   {100 * _after[_k] / len(_rs):5.1f}%')
-gate('Ⓔ① the re-statement is DONE and the two counts RECONCILE: `27` movable rows re-stated, `3` of '
-     'them repaired out of existence in the same pass and `2` created in their place, so the ledger '
-     'carries `26` -- and the set is the one the ORDER named at `27`, not the `28` this revision '
-     'pre-registered',
-     (len(_rs), len({r[0] for r in _rs}), len(_live)) == (27, 8, 26)
-     and len(_rs) - 3 + 2 == len(_live))
+_CELL_T = [r for r in LEDGER_THEN if r[2] == 'PAPER' and r[3] == 'SENTENCE'
+           and 'UNADJUDICATED' not in r[5]]
+_live_T = [r for r in _CELL_T if r[0].split('/')[1] in _PREF and r[5] != 'EXTENDED'
+           and _REV.search(r[6]) and int(_REV.search(r[6]).group(1)) >= 7258]
+gate(f'Ⓔ① the re-statement is DONE and the two counts RECONCILE: `27` movable rows re-stated, `3` of '
+     f'them repaired out of existence in the same pass and `2` created in their place, so the ledger '
+     f'carried `{len(_live_T)}` -- and the set is the one the ORDER named at `27`, not the `28` this '
+     f'revision pre-registered.  ⛔ *`L-249`: the ledger is read AT `r7258`\'s commit, because this '
+     f'is a photograph of a backlog and later revisions adjudicate into the same prefixes.*',
+     (len(_rs), len({r[0] for r in _rs}), len(_live_T)) == (27, 8, 26)
+     and len(_rs) - 3 + 2 == len(_live_T))
+gate(f'Ⓔ①ᵇ ✔⛭ and the LIVE half is monotone: the adjudicated set in those prefixes can only GROW as '
+     f'later revisions read more of their keys, and it stands at `{len(_live)}` against the `26` '
+     f'this revision left.  *Not one of the `26` was dropped to get there -- the growth is reading, '
+     f'not churn*',
+     len(_live) >= len(_live_T)
+     and all(any(r[0] == t[0] and r[1] == t[1] for r in CELL) for t in _live_T))
 gate('Ⓔ② ⌗ and the over-count is NAMED rather than reconciled by guessing: the pre-registered filter '
      'admitted one row stamped AT the settlement revision `r7253`, which the gating line had '
      'already re-stated under the grain clause in that same revision.  ** The order\'s number was '
@@ -472,11 +566,17 @@ _new4 = ('the Weyl $S_3$ is the relation among the three hinges',
          'radial--angular spin connection',
          "the module the operator's colour structure acts on is the branching rather than any "
          'bundle of the substrate')
-gate('Ⓖ① the prefix\'s owed count fell by exactly the six performed and the eleven routed remain: '
-     '`17` owed before, `11` now, and every one of the `11` sits in a receipt whose introducing '
-     'revision is ODD',
-     len(_owed_now) == len(_new4) + 7
-     and all(r[0].startswith(BRIDGE) for r in _owed_now))
+_owed_T = [r for r in LEDGER_THEN if r[0].startswith(BRIDGE) and r[5] == 'REPAIR-OWED']
+gate(f'Ⓖ① the prefix\'s owed count fell by exactly the six performed and the eleven routed remained: '
+     f'`17` owed before, `{len(_owed_T)}` after this revision, and every one of the `11` sat in a '
+     f'receipt whose introducing revision is ODD.  ⛔ *`L-249`: read AT `r7258`\'s commit, because '
+     f'`r7260` LANDED all eleven and a live read of `11` owed asserts the routing never worked.*',
+     len(_owed_T) == len(_new4) + 7
+     and all(r[0].startswith(BRIDGE) for r in _owed_T))
+gate(f'Ⓖ①ᵇ ✔⛭⛭ and the LIVE half is monotone AND it is the vindication: the owed count can only '
+     f'FALL as repairs land, and it stands at `{len(_owed_now)}`.  ** All eleven routed patches were '
+     f'taken up and performed, which is what the routing was for **',
+     len(_owed_now) <= len(_owed_T))
 gate('Ⓖ② and the four replacement keys are in the ledger, all `DELIBERATE`, with their reads naming '
      'what each replaced',
      all(any(r[1] == k and r[5] == 'DELIBERATE' and 'r7258' in r[6] for r in LEDGER)
@@ -537,13 +637,25 @@ head('I -- AND WHAT THIS LINE COULD NOT FINISH, SAID AS A BLOCK AND NOT AS A SIL
 _s6 = sorted(glob.glob(os.path.join(ROOT, 'receipts', 'L_probability',
                                     'S6_an_unread_figure_is_a_claim_wit*.py')))[0]
 _s6n = shape(os.path.relpath(_s6, ROOT))[0]
-gate('Ⓘ① ⛔ one repair is HALF PERFORMED and the half that is not is routed with its patch: the '
-     'subject-bearing re-cut of this seat\'s own dangling span needs a paired change in a companion '
-     'receipt that sits in a prefix another seat holds on the board.  ** The paper-side read is '
-     'repaired HERE and the source-side marker still reports what the audited file ACTUALLY '
-     'carries -- a repair whose unit spans two prefixes cannot be performed by one seat, and an '
-     'audit must not report what the auditor wishes **',
-     'OBSERVABLE_IN_C26' in _s6n and 'OBSERVABLE' in _s6n)
+_s6n_T = set()
+_s6t = _show(os.path.relpath(_s6, ROOT))
+if _s6t:
+    for _n in ast.walk(ast.parse(_s6t)):
+        if isinstance(_n, ast.Name) and isinstance(_n.ctx, ast.Store):
+            _s6n_T.add(_n.id)
+gate('Ⓘ① ⛔ one repair WAS half performed and the half that was not was routed with its patch: the '
+     'subject-bearing re-cut of this seat\'s own dangling span needed a paired change in a companion '
+     'receipt sitting in a prefix another seat held on the board.  ** The paper-side read was '
+     'repaired here and the source-side marker still reported what the audited file ACTUALLY '
+     'carried -- a repair whose unit spans two prefixes cannot be performed by one seat, and an '
+     'audit must not report what the auditor wishes. **  ⛔ *`L-249`: the companion\'s source is read '
+     'AT `r7258`\'s commit, where the split constant stood.*',
+     'OBSERVABLE_IN_C26' in _s6n_T and 'OBSERVABLE' in _s6n_T)
+gate('Ⓘ①ᵇ ✔⛭⛭ and the LIVE half is monotone and records the DISCHARGE: the split is folded back into '
+     'one constant, so the half that was owed is performed.  *`r7261` authorised the prefix and '
+     '`r7262`\'s predecessor landed it; a half-performed repair that is later completed must read as '
+     'completed and not as still owed*',
+     'OBSERVABLE' in _s6n and 'OBSERVABLE_IN_C26' not in _s6n)
 gate('Ⓘ② ⌗ and one RULING is this seat\'s own and is stated rather than assumed: three of the '
      'receipts holding movable rows have introducing commits that carry NO revision id, so they '
      'read `UNATTRIBUTED` under the rule repaired at `r7256` and are owned by nobody.  ** This '
@@ -556,12 +668,19 @@ gate('Ⓘ② ⌗ and one RULING is this seat\'s own and is stated rather than as
                                              for r in _rs if r[0] == p)
          for p in ('L548_propagating_sector', 'L549_coupled_counterterms',
                    'L550_third_mechanism')))
-gate('Ⓘ③ and the two still-owed residuals from `r7256` are carried forward and not quietly dropped: '
-     'the single absence guard whose COUNTER has no control, and the other of the two rows whose '
-     'literal and whose own label quote different text -- that one being the TWIN of a repair '
-     'performed here, in a receipt this line does not own, routed with the same patch',
+gate('Ⓘ③ and the two still-owed residuals from `r7256` were carried forward and not quietly '
+     'dropped: the single absence guard whose COUNTER has no control, and the other of the two rows '
+     'whose literal and whose own label quote different text -- that one being the TWIN of a repair '
+     'performed here, in a receipt this line does not own, routed with the same patch.  ⛔ *`L-249`: '
+     'read AT `r7258`\'s commit, where the twin was still owed.*',
      any(r[0].startswith(BRIDGE) and 'B6_the_object_is_delivered' in r[0]
-         and r[5] == 'REPAIR-OWED' for r in LEDGER))
+         and r[5] == 'REPAIR-OWED' for r in LEDGER_THEN))
+gate('Ⓘ③ᵇ ✔⛭ and the LIVE half is monotone: the twin is no longer owed, so the residual carried '
+     'forward here was discharged rather than forgotten.  *The other residual -- the absence guard '
+     'whose COUNTER has no control -- is STILL owed and still listed, and that is said in the '
+     'channel rather than asserted here, because a gate cannot assert a thing it has not built*',
+     not any(r[0].startswith(BRIDGE) and 'B6_the_object_is_delivered' in r[0]
+             and r[5] == 'REPAIR-OWED' for r in LEDGER))
 
 # ======================================================================================
 _npass = sum(1 for _, ok in CHECKS if ok)
