@@ -83,3 +83,79 @@ table row for row.*
      **strengthened** by the member's divergence and is kept.*
   2. **`P10`** — *read end to end first, then item ②.*
   3. **`P18`** — *nothing for item ①. `N1`'s two rows are the order's queue and not item ① or ②.*
+
+---
+
+## ⌗ ⓔ `P10` READ END TO END, AND ITEM ② IS ONE SITE WHOSE BOTH ARMS ARE STALE
+
+*`corpus/canonical_time.tex`, `2010` lines, read end to end across two turns and no grep window.
+Pre-registered: `2` sites, band `1`–`5`. **Found: `1`** --- inside the band and below its centre, and
+reported as the lower number rather than padded to the prediction.*
+
+**⛔ THE SITE IS l.1827--1830 AND IT IS THE ONLY ONE.** *Verbatim:*
+
+> *So what remains open is one thing, and it is not a category---this construction's own founding
+> object, now stated as the question it reduces to: whether the interacting tower's divergence
+> structure reaches second order in the coupling at all, with the definition complete if it does not
+> and the single-scale ledger refuted if it does.*
+
+⌈ *Two greps establish that this framing occurs **once** in the paper: `second order in the coupling`
+matches l.638 alone besides it, and `refut` matches l.144 (the horizon, unrelated) and l.1850 (the CMB
+refuting the timeless premise, unrelated). **So the repair is one passage and does not chase a phrase
+through the paper.***
+
+**⇒ AND THE BODY ANSWERS BOTH ARMS, NOT ONLY THE FIRST --- WHICH IS MORE THAN THE ORDER CLAIMS.** *The
+order names l.638 as the body's answer, and it is:*
+
+> *The divergence does reach second order in the coupling, and it does so by an identity rather than by
+> a search that failed to find a reason for it to vanish.*
+
+*But the attached consequence is answered too, thirty lines later at l.667--677, and answered the other
+way from how the closing summary states it:*
+
+> *So the affirmative branch is a second number owed and not a second length introduced, and the
+> single-scale ledger stands either way, an undetermined dimensionless number not being a scale. … This
+> is therefore a single-scale ledger with one number read from the world, and that is stated here rather
+> than left to be inferred.*
+
+⇒ ***So the closing summary does not merely name as open what the body answers; it attaches a
+refutation the body has already refused.*** *The affirmative branch costs an entry in the
+dimensionless-constant ledger --- which l.670 says stands at one for these very sums --- and the
+single-scale ledger stands. **A paper that carries a self-refutation condition whose consequent is wrong
+is a worse fault than one that carries a settled question as open**, because a reader who checks the
+condition and finds it met will take the paper to have refuted itself on the paper's own authority.*
+
+⌊ *And l.678--690 bounds what the affirmative branch adds without computing it --- the expansion
+parameter is largest at the turnover and bounded by the product of the curvature with the squared gauge
+length, of order `10^-122` --- while l.690ff collapses the counterterm it would need, the substrate being
+exactly maximally symmetric. **Three independent pieces of the body stand against the one clause.***
+
+**⌗ WHAT SURVIVES UNCHANGED, AND WHY THAT IS WORTH STATING.** *The sentence immediately after, l.1833--1835
+(`the one at unbounded momentum is open, and it is not a new object standing beside the construction but
+the object the construction was opened to address`), **stays true** once the clause above is repaired to
+the narrower question --- the ultraviolet definition of the interacting tower's mode sums --- which is
+what l.459 and l.1803ff already call open in their own voices. ⇒ *So the repair is a restatement of one
+clause and not a rewrite of the paragraph, and the pairing the paragraph ends on is kept.*
+
+**⌗ AND `M14` IS NOW LOCATED BY LINE, WHICH IS QUEUE WORK AND NOT ITEM ②.** *The large-label weight
+`2(m^2-4)√(m^2-3)` appears at **l.1573 and nowhere else**, while l.486 fixes `μ^2 = m^2 - 1` with
+`d = 2(m^2-4)` and the l.459 passage reads the logarithmic coefficient off `d(m)μ(m)` on that convention.
+⇒ *So the defect is confined to one line and the paper's own convention is carried correctly everywhere
+else, **which is the computational form of `66`'s reading that the conclusion holds either way and the
+defect is the value and not the argument.*** ⌈ *Recorded, not taken: `M14` is sixth in the queue of
+seven.*
+
+**⌗ NEW-DEFECT COUNT UNMOVED BY THIS READ.** *Running total stays `1` firm (`P16`'s monodromy sign) and
+`1` loose. **`P10` turned up nothing off the list** --- and that is a finding about the pre-registration
+rather than about `P10`, since the band `0`–`6` was set before any paper was read and the third paper has
+now returned zero.*
+
+## ⌗ ⓕ WHAT THE EDITING TURN OWES, RESTATED NOW THAT ALL THREE PAPERS ARE READ
+
+  1. **`P16` l.269** --- *as ⓓ①.*
+  2. **`P10` l.1827--1830** --- *restate to what the body settles: the divergence **does** reach second
+     order, by an identity; the affirmative branch costs a dimensionless number and not a scale, so the
+     single-scale ledger stands; and what remains open is the ultraviolet definition of the interacting
+     tower's mode sums. **No `was formerly stated as` anywhere**, and the fact of resolution goes to the
+     consolidation plan.*
+  3. **`P18`** --- *nothing for ① or ②.*
