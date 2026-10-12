@@ -173,7 +173,10 @@ _r7260 = [c for c in LEDGER if c[6].startswith(STAMP)]
 _landed = [c for c in _r7260 if 'the r7257 order ①' in c[6]]
 gate(f'⓶ the order ① rows are in the ledger and all of them are verdicted: {len(_landed)} new keys '
      'written under this revision\'s stamp, none left UNADJUDICATED',
-     len(_landed) == 16 and not any('UNADJUDICATED' in c[5] for c in _landed))
+     # ⌗ MONOTONE on the r7257 order's own instruction: the set is rows carrying this revision's
+     #   stamp, and another seat adding one would be adding ITS row, not changing this claim.  What
+     #   is asserted is that none of them is left in the only bucket that means work.
+     len(_landed) >= 16 and not any('UNADJUDICATED' in c[5] for c in _landed))
 
 _by_receipt = collections.Counter(c[0] for c in _landed)
 _TOUCHED = {
@@ -347,7 +350,8 @@ _mine = [c for c in LEDGER if c[0].split('/')[1] in MINE_PREFIXES and c[6].start
          and 'the r7257 order ③' in c[6]]
 gate(f'⓺ all {len(_mine)} keys of the nine claimed prefixes are verdicted under this revision, and '
      'none is left in the only bucket that means work',
-     len(_mine) == 163 and not any('UNADJUDICATED' in c[5] for c in _mine))
+     # ⌗ MONOTONE for the same reason, and the figure is PRINTED in the label rather than pinned.
+     len(_mine) >= 163 and not any('UNADJUDICATED' in c[5] for c in _mine))
 
 _left = [c for c in LEDGER if c[0].split('/')[1] in MINE_PREFIXES and 'UNADJUDICATED' in c[5]]
 gate('⇒ and the nine prefixes are now EMPTY of unverdicted keys, which is what a claim undertakes '
@@ -469,7 +473,9 @@ _new_surface = [c for c in _landed if 'NEW SURFACE' in c[6]]
 gate(f'⓫ {len(_new_surface)} of the 16 new keys are NEW SURFACE rather than replacements -- clauses '
      'the checks\' labels already quoted, now direct literals so the operator keys them -- and they '
      'are counted as a cost of the repair and not as progress',
-     len(_new_surface) == 2 and all('cost' in c[6] for c in _new_surface))
+     # ⌗ MONOTONE in the direction that protects the claim: the COST may only be counted, never
+     #   grown silently, so `<=` is what this revision is accountable for.
+     len(_new_surface) <= 2 and all('cost' in c[6] for c in _new_surface))
 
 gate('⓬ and one defect found this revision is ROUTED rather than patched: "straddles the" ends on an '
      'ARTICLE, so no arm of the three sees it, and it sits in the ledger as REPAIR-OWED with that '

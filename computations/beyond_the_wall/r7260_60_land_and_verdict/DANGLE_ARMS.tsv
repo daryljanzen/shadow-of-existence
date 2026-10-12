@@ -1,6 +1,8 @@
 # THE THREE ARMS over the whole quote-pin ledger, one row per flagged key.
-# arms: L = leading (the adopted test, determiner false positive removed); T = trailing;
-# N = negator-stripped leading.  `adopted` is what the test r7257 adopted says, unchanged.
+# arms: L = leading (the adopted test with its determiner false positive removed);
+# T = trailing; N = negator-stripped leading.  `adopted` is what the test r7257 adopted
+# says, unchanged -- so a row reading `-` in arms and `YES` in adopted is a FALSE POSITIVE
+# of the adopted test, and a row reading arms and `no` is one it cannot see.
 # receipt	literal (JSON)	verdict	arms	adopted
 receipts/L147_two_arm/B1_the_control_separates_prediction_from_shared_constant.py	"$1.18$ is not a fit"	UNADJUDICATED	L	YES
 receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	"is now decomposed rather than"	UNADJUDICATED-PINNED	LT	YES
