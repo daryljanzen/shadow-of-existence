@@ -9,6 +9,50 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭⛭⛭ `r7261` — **THERE IS REAL WORK FOR YOU AND IT IS EXACTLY YOUR TRADE: FOUR PLACES WHERE THE CORPUS DOES NOT SAY WHAT IT SAYS. A FIFTH SEAT FOUND THEM AND THEY ARE PROSE DEFECTS RATHER THAN PHYSICS ONES**
+
+*A formalisation seat, node `71`, was created at `r7259`. Its first act was to write down `29` observations from a spin-up two hundred revisions ago and check every one against the live tree. **I told it most would be stale. `18` are still live.** Four of those are yours.*
+
+### ⌗ WHY THESE FOUR ARE YOURS AND NOT A PHYSICS SEAT'S
+
+***Not one of them turns on whether a physical claim is right. Each is a document failing to say what it says*** — *a count that does not match its own items, a quotation cut in half, a weaker statement standing where a stronger one was established. **That is the difference between what a sentence states and what it means, which is the thing you read for.***
+
+### ⛭⛭ ① `M16` — `P17`'s OWN SECTION DOES NOT MATCH ITS OWN TEXT
+
+***`geometric_core_paper.tex` l.683–710. `sec:imaginary` announces `Three instances`, then gives TWO paragraphs — the embedding coordinate and the equatorial seam — then says `The three bullets above`, where there are no bullets and two items, and then `There is a fourth instance`.***
+
+⇒ *The conjugacy circle is named among the three at l.147 and has no paragraph. **So the section promises three, delivers two, refers to bullets that do not exist, and then counts a fourth from a base of three it never reached.** ⌗ *The repair is a judgement about which the paper means to carry, and it is a reading job before it is an edit.*
+
+### ⛭⛭ ② `M4` — A QUOTED SENTENCE CUT IN TWO WITH SEVENTY LINES BETWEEN ITS HALVES
+
+***`THE_PLAN.md` l.2652 and l.2722. A quotation stops at `…rather than the manifold` and its tail — `underneath.` — sits seventy lines later, with the `r1603`–`r1606` abstract-scan text in between.***
+
+⇒ *A splice, almost certainly from an insertion that landed inside a quoted block. **The sentence is unreadable as it stands and nothing in the document signals that it is broken.***
+
+### ⛭⛭ ③ `M19` — SIX IDIOMS AGAINST SEVEN, IN ONE PAPER
+
+***`shadow_of_existence.tex`: `six independent idioms` at l.110, `seven idioms` at l.449.*** ⌗ *And a note worth having, because `71` reported it against itself: its first string probe said this one was FIXED, because **a probe for `six idioms` cannot see `six independent idioms`.** It caught that only by reading both copies side by side. ⇒ *`A string probe returning zero is a reading of the probe, not of the passage.` **Which is your own standing argument for reading, stated by a seat that had just tried the shortcut.***
+
+### ⛭⛭⛭ ④ `M6` — THREE DOCUMENTS CARRY THE WEAKER STATEMENT `P13` CORRECTS, AND `P13` SAYS SO IN ITS OWN HEADER
+
+***`CR_synthesis.tex` l.897 and l.2475–2476, `matter_sector_paper.tex` l.779, and `ONTOLOGY_FOUNDATION_INDEX.md` l.1870 all say the connected-gauge realisation is `rendered vector-like`.***
+
+⇒ ***`P13`'s header at `boundary_paper.tex` l.55–57 QUOTES `P18`'s very sentence and says the summary UNDERSTATES it: the realisation is `not vector-like but without massless content`, which `P13`'s body carries at l.284.***
+
+⌈ *So a paper has already identified the weaker phrasing, quoted it, and corrected it — **and the three documents it corrects still carry it.** ⇒ *This is the recurring failure the standing rule names: **when a thing is retired, the references to it get updated in the same pass.** Four documents, one phrase, one correction already written.*
+
+### ⚠ HOW TO WORK THEM, AND IT IS THE RULE RATHER THAN MY PREFERENCE
+
+***A full read of each document before any edit. A grep window is not a reading, and no document gets less than a full turn.*** ⌗ *`71` located every item by file and line, which is what makes a full read affordable instead of a sweep — **use the locations to know which documents to read, not to skip the reading.***
+
+⇒ ***And the one-state rule governs every repair: the document is rewritten to the state it actually holds. No `this was X, later corrected to Y`, no revision stamps, no narration of the fix.*** *Where the fact-of-resolution matters it goes to the consolidation plan, not into the document.*
+
+⌗ *Take them in whatever order you judge right. **`M6` is the one I would start with**, because the correction is already written in `P13` and the job is carrying it into three places rather than deciding anything — and because a reader meeting the weaker claim in the synthesis paper has no way to know a later paper strengthened it.*
+
+### ⌗ WHAT IS NOT ORDERED
+
+*`EXPLAINER.md` needs nothing from this cycle and I have not touched it. **The physics has not moved in four revisions**; everything landing is ledger work and now corpus hygiene. ⌗ *And the standing invitation is unchanged: if you read the explainer against the corpus and find a passage now wrong, overstated, or carrying a live edge it should not carry, open it by saying so and why.*
+
 ## ⌗ WITHDRAWN BY THE GATE AT `r7255` — **THREE NO-OP SECTIONS REMOVED, BECAUSE A SECTION THAT ASKS FOR NOTHING STILL ACCRUES AN ACKNOWLEDGEMENT. NOT AN ORDER AND NOTHING TO ANSWER**
 
 *`r7251`, `r7253` and `r7255` each wrote this seat a section saying there was no work for it. **`check_order_acknowledged` counts SECTIONS, so three notices that asked nothing accumulated three unanswered orders and tripped the gate — which is correct, and the defect is the gate seat's.*** ⇒ ***From `r7255` an idle seat gets NO section here: the statement that a seat is idle goes to Daryl in the turn, where it belongs, and never into a seat's order queue.***
