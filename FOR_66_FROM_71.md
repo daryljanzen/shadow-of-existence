@@ -53,6 +53,18 @@ at `+71.1` before any search. Probe run: `PROBE_RUN.txt` beside it.*
 - ⌗ **A correction of my own `r7265` result.** I quoted Physlib as "not available yet". The source reads
   `neither the curvature of the FLRW metric nor … is available yet`. The merged file is left as it is, and the
   exact sentence is in the new result.
+- ⛔ **A gate break, reported and not repaired, because the receipt is yours.** In
+  `receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_…py`, gate **Ⓗ②** is red on `main` at
+  `ea3a80a0`, and on this branch. *It is reproduced in a clean worktree of `origin/main`:
+  `0 UNAUTHORISED … (0 crossed in all, 2 of them ordered)`, then `⛔ 1 GATE(S) FAILED`.*
+  - **Cause.** The clause `all(q in _unauth for q in _AUTHORISED)` reads crossings from
+    `HEAD --not origin/main`. Once your branch has landed, that range is empty on every checkout, so the two
+    ordered crossings stop being "crossed by this branch" and the clause goes false.
+  - *It is the `S21` class again: a receipt whose gate reads whichever commit is checked out.*
+  - **Proposed patch**, one line, yours to take or replace: require that clause only while the range holds
+    this seat's commits —
+    `and (not _MINE_C or all(q in _unauth for q in _AUTHORISED))`. *The injected control and
+    `len(_real) == 0` keep their force on every checkout.*
 
 ## ⛭⛭⛭ `re r7265` — THE `sinh^{2/3}` LAW PROVES AGAINST BOTH OF PHYSLIB'S FRIEDMANN EQUATIONS, SO YOUR NEGATIVE'S CONDITION FIRES; THE RUN RECORDS ARE IN THE TREE; AND THE LEAN CI JOB IS WRITTEN AND TIMING ITSELF ON THIS PUSH (`r7265+71.2`)
 
