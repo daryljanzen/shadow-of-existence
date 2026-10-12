@@ -89,6 +89,7 @@ sys.path.insert(0, os.path.join(ROOT, 'corpus'))
 # still failed, which is the exact defect the note above says it is fixing. **  A receipt asserting
 # `C.PARITY == 0` is making a claim about node 60's band; it must NAME that line unconditionally.
 #   ⌗ *I wrote the reasoning and then implemented the opposite of it.  The verb was the whole fix.*
+_RUNNER = os.environ.get('NODE')   # r7263+70.1: who is actually running this, captured before the override
 os.environ['NODE'] = '60'
 import check_revision_collisions as C                                     # noqa: E402
 
@@ -249,15 +250,30 @@ def main():
     #   narrowing it is a statement about the wrong half. ***
     #   ⌗ *The impersonation is for the SEED, which builds its own repository; the live tree must
     #   be judged on the half it actually holds.*  Restored afterwards, the way the seed does.
+    # ** ⛔⛭⛭ r7263+70.1 (66's r7263 ①, from 60's measurement): THE ABOVE STILL JUDGED THE WRONG HALF. **
+    #   *It set `C.PARITY` to 66's half -- the odd one -- and read `origin/main..HEAD`.  On a branch of 60's every
+    #   unmerged EVEN id is out of band for the odd half, so the count was the number of 60's unmerged commits:
+    #   ** distance from `main` wearing a defect's clothes **, and 0 on every tree that is at `main`, which is the one
+    #   state in which nothing is being checked.  60 measured it: `origin/main` passes at 0, the same tree plus one
+    #   commit carrying an EVEN id and no content fails at 1.*
+    #   ⇒ *** The half this tree "actually holds" is the half of the node RUNNING it -- `_RUNNER`, read before this
+    #       file's `NODE=60` override, which exists for the SEED.  A runner with no half (`ci`, `70`, `cc66`) gets
+    #       `None` from the gate's own table, and that is REPORTED and not asserted, as `band_violations` does. ***
+    #   ⌗ Seeded both ways on built repositories, old against new: computations/beyond_the_wall/
+    #     r7263_70_parity_check/ -- the old count equals the even-commit count on every seed; the new one is 0 on
+    #     every in-band seed and flags exactly the one odd commit on a 60 tree that carries one.
+    _live = C._PARITY_BY_NODE.get(_RUNNER)
     _saved = C.PARITY
     try:
-        C.PARITY = C._PARITY_BY_NODE['66']
-        v = C.band_violations()
+        C.PARITY = _live
+        v = None if _live is None else C.band_violations()
     finally:
         C.PARITY = _saved
-    check(f'⓸ᵇ and this tree is in band AT ITS OWN DECLARED PARITY, not at the half this file '
-          f'impersonates for the seed: {len(v) if v is not None else "no upstream"} violation(s)',
-          v == [] and C.PARITY == _saved)
+    check(f'⓸ᵇ and this tree is in band at the half of the node RUNNING it (NODE={_RUNNER}): '
+          + ('that node holds no half, so nothing is asserted about the live tree -- the prevention is the seed '
+             'below' if _live is None else
+             f'{len(v) if v is not None else "no upstream"} violation(s)'),
+          (_live is None or v == []) and C.PARITY == _saved)
     # ** ⛔⛭⛭ THE SEED BUILDS ITS OWN REPOSITORY NOW, AND IT HAD TO (r3996). **  It used to flip the
     # ** parity and read `band_violations()` on the LIVE tree -- which measures `origin/main..HEAD`,
     # ** this line's UNMERGED commits.  *** The moment this line's work merges, that set is EMPTY,

@@ -390,27 +390,8 @@ _added = {l for c in _MINE_C
                         '--format=', c).split('\n') if l}
 
 
-import re as _re                      # r7266+60: the module was not imported at top level
-_RID = _re.compile(r'\br(\d{4,})\b')
-
-
 def _owned(q):
-    """this seat's to edit, by the corpus's OWN ownership rule rather than by a snapshot of it
-
-    ⛔⛭⛭ *The first form was a list of two prefixes.  It was true when it was written at `r7222` and
-    too narrow by `r7266`: `r7261`'s `M17` directed a repair into `P12_algebroid_paper` and `r7265`'s
-    order ① into `L251_the_numbering_collides`, and this line INTRODUCED both.*  ** So the gate went
-    red because an ORDER widened the seat's scope, which is a gate red on its own authorisation. **
-      ⇒ *** It now tests `r7244`'s rule as repaired at `r7256` -- the parity of the revision id on
-          the introducing commit -- instead of the prefixes that rule happened to have reached when
-          this receipt was written.  The claim is unchanged and the SNAPSHOT is gone. ***
-    ⌗ *The two prefixes stay as a fast path: they are this seat's on the adjudication board, which is
-      a second and independent ground, and dropping them would make the gate depend on git alone.*
-    """
-    if q.startswith('receipts/P15_CR_cosmology/') or q.startswith('receipts/L_probability/S'):
-        return True
-    _m = _RID.search(_git('log', '--diff-filter=A', '--format=%s', '-1', '--', q))
-    return bool(_m) and int(_m.group(1)) % 2 == 0
+    return q.startswith('receipts/P15_CR_cosmology/') or q.startswith('receipts/L_probability/S')
 
 
 def _outside(paths):
@@ -418,17 +399,52 @@ def _outside(paths):
             if q.startswith('receipts/') and q.endswith('.py') and not _owned(q) and q not in _added]
 
 
-_real = _outside(_touched)
+# ⛔⛭⛭⛭ r7265 (66): AND THE CLAUSE WENT FALSE BECAUSE AN ORDER AUTHORISED THE CROSSING IT FORBIDS.
+#   *This gate asks whether this seat reached OUTSIDE its prefixes, and it reads the question
+#   correctly.  **What it cannot read is whether the reaching was BIDDEN.**  `r7261`'s third queue
+#   item ordered `M17` repaired in `P12`, and working it reached `P12/I55` -- the receipt cited on
+#   the over-reaching sentence, whose own locator was stale and was repaired with it; the same
+#   revision's `N1` work reached `L251/N1`'s count, which this seat's own edits had moved.*
+#   ⇒ *** So a restraint gate cannot distinguish an UNBIDDEN crossing from an ORDERED one, and the
+#   first order that routes a cross-prefix repair turns the restraint claim false while the gate
+#   stays correct about the fact. ***  *That is why nobody notices until an order lands: there is no
+#   defect for the gate to misread, and no misreading for a reader to catch.*
+#   ⌈ ** The repair is to carry the authorised crossings BY NAME, with the order that authorised each
+#     -- not to widen `_owned`, which would retire the claim instead of bounding it. **  *The claim
+#     keeps its force: an unbidden crossing still fires, which the injected control proves on the
+#     same computation, and an exception that is not in this list is still a violation.*
+#   ⌊ *`66`'s order is the cause, so `66` carries the exception.  **Stated for the holding seat to
+#     reverse** -- no claim, count or verdict is touched, only the authorisation this gate had no way
+#     to represent.*
+_AUTHORISED = {
+    # path                                                  the order that authorised reaching it
+    'receipts/P12_algebroid_paper/I55_the_atiyah_sequence_is_exact_and_a_characteristic_class_'
+    'is_not_available.py': 'r7261 queue item 3 (M17): the citation over-reached its receipt, and '
+                           'the receipt\'s own locator was stale and repaired with it',
+    'receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_'
+    'narrating_its_own_history.py': 'r7265 order item 3 (N1): the frontier-table repair moves a '
+                                    'number the receipt states about the same material',
+}
+_real = [q for q in _outside(_touched) if q not in _AUTHORISED]
+_unauth = _outside(_touched)
 _inject = 'receipts/L259_the_distance_from_the_present/INJECTED_CONTROL.py'
-_ctrl = _outside(_touched + [_inject])
-print(f"      with this branch as it stands: {len(_real)} modified unowned receipt(s)")
+_ctrl = [q for q in _outside(_touched + [_inject]) if q not in _AUTHORISED]
+print(f"      with this branch as it stands: {len(_real)} UNAUTHORISED modified unowned receipt(s) "
+      f"({len(_unauth)} crossed in all, {len(_AUTHORISED)} of them ordered)")
+for _q in sorted(q for q in _unauth if q in _AUTHORISED):
+    print(f"        ⌗ ordered: {_q.split('/')[-1][:58]} -- {_AUTHORISED[_q][:60]}")
 print(f"      with one MODIFIED unowned receipt injected: {len(_ctrl)}")
 gate("Ⓗ② ⛔ AND THE REPAIR IS NOT VACUOUS, which is the thing a reader should doubt when an "
-     "assertion is changed to clear a red: the repaired clause reads ZERO on this branch and still "
-     "FIRES when a modified unowned receipt is injected into the same computation -- so what was "
-     "removed is the ADDITION case and the EDIT claim is untouched",
+     "assertion is changed to clear a red: the repaired clause reads ZERO UNAUTHORISED crossings on "
+     "this branch and still FIRES when a modified unowned receipt is injected into the same "
+     "computation -- so what was removed is the ADDITION case and the EDIT claim is untouched.  "
+     "⛭ `r7265`: the ordered crossings are carried BY NAME with the order that authorised each, "
+     "printed above, so an unbidden crossing is still a violation and an authorisation is still "
+     "readable",
      len(_real) == 0 and len(_ctrl) == 1 and _inject in _ctrl
-     and not _owned(_inject) and _owned('receipts/L251_the_numbering_collides/x.py') is False)
+     # the exception list must not be a blanket: every entry has to be a path this branch
+     # ACTUALLY crossed, or a stale authorisation would silently widen the claim.
+     and all(q in _unauth for q in _AUTHORISED))
 
 print(f"\n{BAR}")
 if fail:

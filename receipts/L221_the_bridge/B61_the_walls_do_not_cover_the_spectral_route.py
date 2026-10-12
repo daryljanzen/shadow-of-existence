@@ -126,11 +126,39 @@ def main():
           'isometry, and NOT a product or Kaluza--Klein structure' + _tail,
           bool(_hyp) and any(re.search(r'product or Kaluza--Klein|Kaluza--Klein structure', t)
                              for t in _CORPUS.values()))
+    # ⛔⛭⛭⛭ REPAIRED r7267 (66): THIS READ A 160-CHARACTER WINDOW AND BROKE BY TWO CHARACTERS.
+    #   *`69`'s `M6` repair --- ordered by `66` at `r7261` and correct --- replaced `rendered
+    #   vector-like` in `matter_sector_paper.tex` with the statement `P13` actually makes, inserting
+    #   `and what it leaves there is not a vector-like spectrum but no massless content at all: the
+    #   face is the five-sphere, odd-dimensional, so`.  **That pushed the distance from `gauge
+    #   isometry` to `Atiyah--Hirzebruch` from inside `160` to `162`.***
+    #   ⇒ *** The CLAIM is untouched and the paper carries it more plainly than before: the very
+    #       next sentence reads `Its load-bearing hypotheses are compactness and a connected gauge
+    #       isometry`, which the arm above already reads.  What failed is a NUMBER somebody chose. ***
+    #   ⌈ ** So the repair is not a wider window, which only defers the same break: the claim is a
+    #     CO-OCCURRENCE OF TWO CONCEPTS IN ONE PASSAGE, and a PARAGRAPH is a unit the paper's own
+    #     structure defines while `160` characters is a unit nobody does. **  *A hand-chosen window
+    #     is the founding shape of this row --- a gate that asserts another seat's sentence fails
+    #     when that seat rewords --- and widening it would keep the shape and move the threshold.*
+    #   ⌊ *It still fires on a real change: separating the obstruction's hypotheses from the route
+    #     they bear on into different paragraphs IS a change in what the paper says, and the counter
+    #     below reports which paragraph carries them so a rehoming stays visible.*
+    _paras = []
+    for _n, _f in sorted((os.path.basename(f), f) for f in
+                         _glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
+                         if not os.path.basename(f).startswith('appendix_receipts')):
+        _raw = open(_f, encoding='utf-8', errors='replace').read()
+        for _p in re.split(r'\n\s*\n', _raw):
+            _paras.append((_n, re.sub(r'\s+', ' ', _p)))
+    _both = [(_n, _p) for _n, _p in _paras
+             if 'gauge isometry' in _p and 'Atiyah--Hirzebruch' in _p]
     check('⇒ and the spectral route uses NO isometry -- inner fluctuations $D\\to D+A$ come from the '
-          'ALGEBRA, so ** the premise the paper says carries the theorem fails for it **',
-          any(re.search(r"gauge isometry[^.]{0,160}?Atiyah--Hirzebruch", t)
-              or re.search(r"Atiyah--Hirzebruch[^.]{0,160}?isometry", t)
-              for t in _CORPUS.values()))
+          'ALGEBRA, so ** the premise the paper says carries the theorem fails for it **.  ⛭ `r7267`: '
+          'read as a co-occurrence IN ONE PARAGRAPH rather than inside a '
+          + (f'hand-chosen character window -- carried in `{_both[0][0]}`, one paragraph of '
+             f'{len(_both[0][1])} characters' if _both else 'hand-chosen character window -- '
+             'and NO paragraph of any paper carries both'),
+          len(_both) >= 1)
 
     # ⛔⛭ REPAIRED r7258+60, on r7255's order ① -- row owed at r7256 with repair form CONDITION.  *The
     #   pin was a verbatim read of the escape clause, and the CLAIM is not that the clause is worded

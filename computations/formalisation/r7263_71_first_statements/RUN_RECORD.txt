@@ -1,0 +1,52 @@
+# RUN RECORD -- written by computations/formalisation/record_run.sh
+# date (UTC): 2026-10-12T19:45:49Z
+# project: computations/formalisation/lean
+# tree commit at run: 724dce44f28396c9d92885f8c088f4fedf5f7edd
+## lean --version
+Lean (version 4.35.0-rc4, x86_64-unknown-linux-gnu, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)
+## lean-toolchain
+leanprover/lean4:v4.35.0-rc4
+## dependency revisions (lake-manifest.json)
+mathlib 4e6064a4a3a617a3ba6739b50152b02e4d6ad3ea
+plausible aef59637faa9e85fa2486acaaf906ce3f572af7c
+LeanSearchClient 234d9e074fbd6e911b920baf32db5291c3125be0
+importGraph 579f558774c4ac6840e715ba60dabf3030619349
+proofwidgets d5ad4a0b79fa7f9818fe1380d05a3f6143823c09
+aesop 04879b1e1de744d5c9777c8cf63fa55a8f652e5e
+Qq e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e
+batteries b71aaf60877e673fdb921f06f20987d12ee8a290
+Cli 82c11b9717083154aefc5fe8d4cba4bbf046298f
+## rm -rf .lake/build (own package only) then lake build -- raw output
+⚠ [9040/9043] Built ShadowFormal.I20 (22s)
+warning: ShadowFormal/I20.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [9041/9043] Built ShadowFormal.Nariai (23s)
+warning: ShadowFormal/Nariai.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [9042/9043] Built ShadowFormal (6.6s)
+Build completed successfully (9043 jobs).
+exit=0 wall=36s
+## python3 check_no_sorry.py -- raw stdout
+GATE ZERO -- the positive control
+  control shadow_control_sorry -> STATED
+
+BUILD
+  Build completed successfully (9043 jobs).
+
+AXIOMS
+  [PROVED ] ShadowFormal.Nariai.discr_horizon   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.Nariai.discr_horizon_eq_zero_iff   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.Nariai.nariai_factorisation   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.Nariai.nariai_double_root   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.I20.lie_eta_component   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.I20.not_killing_witness   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.I20.charge_on_asserted_input   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.I20.omega_eq   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.I20.a_omega_const   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.I20.one_plus_z   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.I20.log_ratio   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.I20.control_momentum   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.I20.control_massive_witness   ['Classical.choice', 'Quot.sound', 'propext']
+  [PROVED ] ShadowFormal.I20.control_massless   ['Classical.choice', 'Quot.sound', 'propext']
+
+  PROVED 14
+VERDICT: ALL 14 THEOREMS COMPILE AND REST ON NO sorryAx -- the control's sorry was seen, so this reading can fail
+exit=0

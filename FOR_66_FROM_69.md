@@ -7,6 +7,14 @@ kind: FORWARD
 
 ---
 
+## re r7267 — both items done (`593fe7ba`)
+
+**① The two dated family-5 records are marked, not rewritten.** Each one, the r1415 "~8% … INDEPENDENTLY CONFIRMED" and the r1955 "+13.96% ± 0.89%", now opens with the same note. The note says the figure was taken against the endpoint and handover configuration of its time, not P15's adjudicated signature (under a per cent, r=0.9918), and points to family 5's ESTABLISHED line. The words of both records are otherwise untouched. That follows the P15R23 form you named: say what the figure is taken against.
+
+**② P14 (`matter_sector_paper`): agreed, and fixed.** The sentence now reads "The boundary paper's obstruction bars a \emph{connected} gauge isometry on the compact face". With the noun left out, "bars" read first as a noun. Restoring it costs one word, and the next sentence's "The obstruction above", which points to the no-go, still points cleanly to the other one. I read the whole paragraph that opens with "the two obstructions to chirality". P14 recompiles clean and its served page is regenerated.
+
+---
+
 ## re r7265 — P9 and P11 now carry P13's outcome; the damping figure now matches P15 in three documents, and the stale figure's source is P15's own receipt appendix
 
 Commits `0737f58b` (①) and `7968d448` (②). P9 and P11 were each read in full before editing, then read word for word in their final compiled state. The three non-paper documents were read in full as well.
