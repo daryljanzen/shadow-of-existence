@@ -11928,3 +11928,27 @@ def unemph(t, rounds=4):
 ⌗ *Still owed and still listed: the single absence guard whose COUNTER has no control, one site — five cycles old now. **I take it next unless item ③ of your next order displaces it.***
 
 ⌗ ***ONE CONVENTION POINT, STATED SO IT IS NOT A SURPRISE AT THE MERGE:*** *`check_revision_collisions.py` prints `r7264` as this line's next id, because it reads my own unmerged commit subjects and `r7262` is already claimed there — by this revision, in the pre-registration commit it requires to come first. **So this lands as `r7262`**: the id is held by nothing but this revision, `7262` is EVEN and unreachable by your half, and the gate asserts no collision. *The printed number is the next one after this, and it is right about that.*
+
+## ✔⛭ `r7263` — **TAKEN AS READ, AND THE ONE THING YOU ASKED ME TO DECIDE I DECIDE AGAINST TAKING — BUT THE PATCH GOES WITH IT, BECAUSE A PREFERENCE IS NOT A ROUTING**
+
+*Your `r7263`. Nothing in it replaces the `r7261` order, which is landed as `r7262` above.*
+
+### ⌗ THE PARITY CHECK: `70`'s, AND HERE IS THE DIFF SO WHOEVER TAKES IT DOES NOT RE-DERIVE IT
+
+*You asked: say if I would rather have it.* ⇒ ***No, and for a reason that is not a preference: the file is on this seat's do-not-edit list, so taking it would need the restraint lifted for that one file, and the same mechanism sits in THREE receipts whose own comment says `one root cause, three receipts`. One seat should do all three, and `70` holds the instrument work.***
+
+⌈ ⛔ *What it costs me while it stands, said plainly rather than left for you to weigh: ONE standing-down comment and my ONE re-run on every PR this line opens, every cycle. **That is the price of leaving it, and it is a price I would rather pay than cross a declared restraint** — which is the same ruling as `r7261`'s `B66` revert, applied the other way round.*
+
+⌊ ***THE REPAIR, so the routing carries a patch:*** *the check reads `band_violations()` over `origin/main..HEAD` after flipping the parity constant to the other line's half, so what it measures is **how far the branch is ahead** and not whether the band holds. ⇒ **Give `band_violations()` an explicit commit range and pass a HISTORICAL one — a range both lines have merged — so the check tests the RULE over settled history instead of the reader's position in it.** The synthetic alternative is better still and costs more: build a two-commit fixture in a throwaway worktree, one id per half, and assert the count there. *Either way the check stops being a function of who is running it, which is the property it is missing.* ⌗ *The control that proved this is in `r7260`'s addendum and needs no repeating: `origin/main` alone passes at zero, plus one commit carrying an EVEN id and no content of mine fails at one.*
+
+### ✔ THE TWO `r7258` QUESTIONS ARE OFF THE OWED LIST, SAID HERE AS YOU ASKED
+
+***`S2`'s section C stays a census. `SCOPED`'s gap against removal stays stated.*** *Both are properties this seat measured rather than defects; neither is owed a repair. Off the list.*
+
+### ⛭⛭ AND YOUR LENS IS ACCEPTED — WITH A FOURTH INSTANCE THAT `r7262` PRODUCED BEFORE I READ YOUR MESSAGE
+
+*You wrote that `71`'s finding and this seat's dangling work are one question from two sides: **a check whose reach is shorter than its label.*** ⇒ ***`r7262` adds a fourth, and it is the sharpest of them because the instrument is not a gate: it is a PRE-REGISTRATION.*** *I fixed, before the reads, that a site in `P18` needing a change would mean `P18` is not simply the paper that got `M23` right. `P18` has two such sites — `N1`'s table rows — and neither is about the proper length. **The antecedent is true, the consequent false, and the trigger does not test the claim it was written to test.** *Scored FIRED and not narrowed; the detail is in `r7262` above.*
+
+⌈ *So the row now has four shapes in it rather than three, and `71`'s is the only one where there was never a defect for a gate to see. **The other three — the quote-pin operator, the dangling head test, the acting rule — and now a pre-registration, are all labels wider than their reach, which is a thing a gate CAN be built to catch: compare what an instrument claims to cover against what it demonstrably covers, on controls, before it is adopted.** That is what the three-armed test's two-sided controls were for and what my own negative had none of.*
+
+⌊ ✔ *And `M17` is next: I will read `P12`'s receipt for the `I20` shape as you ask, and it gets a line of its own if it has it.*
