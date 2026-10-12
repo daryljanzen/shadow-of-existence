@@ -7,6 +7,42 @@ kind: FORWARD
 
 ---
 
+## re r7261 (M16) — P17's section now carries the conjugacy circle it promises, and the forced instance comes last
+
+P17 read in full, edited, then read word for word in its final state (`0af44dd2`).
+
+**What the paper means to carry.** Three places in the paper settle it, and two of them name the conjugacy circle. The abstract lists the imaginary variables used to reach the substrate as "the fifth embedding coordinate, the conjugacy circle, the equatorial seam's analytic continuation". The section's own closing remark lists "substrate, seam, cosmogenesis, and the phase structure at the seam". The landing section calls the P16 lap "a concrete instance of this paper's reached-through-the-imaginary principle", and the P15 entry ends "reached through the conjugacy yet real". So the conjugacy is load-bearing, and the defect was its missing paragraph, not the count at l.147.
+
+The section's order was a second defect, and 71's report did not mention it. After the "fourth instance" (the horizon radii) came a further, unnumbered paragraph on the cosmogenesis reassignment. So the paper said three, gave two, cited bullets that did not exist, counted a fourth, and then ran a fifth.
+
+**What it now says.**
+- The opening no longer gives a number: "Each of the instances below is already in the corpus, and each is the same move."
+- The chosen routes come in order: the embedding coordinate, the equatorial seam, the conjugacy circle (new), and the cosmogenesis reassignment.
+- The horizon radii come last, opening "The paragraphs above are places the corpus chooses an imaginary route … There is one further instance where that answer is unavailable".
+- The remark opens "Each paragraph above".
+
+No count is stated anywhere, so none can drift again.
+
+**The new paragraph, and what it rests on.** It is built only from statements already in the corpus:
+- P2's ring r(z)=M(1+cos z): the step z↦±iρ that opens the horizon into the two exteriors also opens r=0, via z↦π±iρ′, onto two regions at negative areal radius.
+- On the substrate that step is the lap. P3: the conjugate branch is a real branch of the one Lorentzian manifold, not a Euclidean excursion.
+- Along the lift, the bead law's cosmic time leaves the real axis. Its imaginary part is bounded by πα/3 and reaches that bound at the turnaround, while r stays real at every point (P7 `thm:bead`).
+- The reality involution τ̃↦τ̄̃ exchanges the two imaginary readings; its fixed set is the real axis. The paragraph points to §frontiers for the phase structure, which is decided there.
+
+**Carried into P18.** The l.263 list ("the embedding coordinate, the equatorial seam's continuation, and the reassignment at the cosmogenesis") now includes "the conjugate branch reached along the lift in imaginary cosmic time", so P18 agrees with P17. Checked in the PDF.
+
+**Found during the final read and fixed:**
+- Two cross-references pointed at §5 (the rulings) for the Cayley–Klein reading and the polar slices. Both are stated in §2.4, and both now point to §2.
+- The abstract had a dash followed by a comma ("supplying—, the necessity").
+- A pair of straight quotes rendered as ”one scale”.
+- The P11 landing entry said "beyond the index obstruction (P13)". It now says "the chirality obstruction", which is P13's term after M6.
+
+**Gates.** Withdrawn, compile (18 papers, 0 errors), pages current, chirality qualifier, explainer pins (18, all current). PDFs and served pages for P17 and P18 are rebuilt.
+
+**Next.** M4, THE_PLAN. It gets a full read, and l.2335's stale 8 per cent is fixed in the same pass.
+
+---
+
 ## re r7261 (M19) — P6 counts six idioms in both places; a stale 8 per cent found and fixed on the way
 
 P6 read in full, edited, then read word for word in its final state (`1c84bd7b`).
