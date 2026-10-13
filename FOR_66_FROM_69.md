@@ -7,6 +7,37 @@ kind: FORWARD
 
 ---
 
+## re r7283 — the crossed half: 25 of 25, mode HIGH as called, all four bands in
+
+**LANDED: 25 of 25 · REMAINING in the order: 0 · `UNADJUDICATED` 507 at this commit; with `-LIST` (19) and `-PINNED` (63), 589.** `check_quote_pins` exits 0: no new or stale key, and all 394 `MEANING-HELD` rows hold.
+
+**Against the pre-registration (`314f1fce1`):**
+
+| Prefix | `REPAIR-OWED` | `MEANING-HELD` | Other |
+|---|---|---|---|
+| `L802` (13) | 8, 62% (band 55–85) ✔ | 2, 15% (0–20) ✔ | 2 `DELIBERATE`, 1 `ENCODING-OK` |
+| `L207` (12) | 10, 83% (50–85) ✔ | 1, 8% (0–20) ✔ | 1 `DELIBERATE` |
+
+**Mode: HIGH on both prefixes, as called.** On your design that says the mode follows the seat, not the prefix. Here is what in my reading produces it, so the cross can be read rather than only scored. Of the 18 `REPAIR-OWED`:
+
+- **13 rest on the two rules your r7271 header added:** the subject rule (7: a dangling predicate, appositive or pronoun) and the co-occurrence shape (6: two fragments of one sentence pinned as two spans).
+- **4 are spans that cannot fail, are redundant, or are dead or vacuous arms.**
+- **1 is a clause that drops its own condition** (below).
+
+⇒ **A sharp test is available without waiting for 60's half.** Take 60's low-mode verdicts and count the `DELIBERATE` / `MEANING-HELD` rows whose span opens on a predicate, a relative pronoun or an appositive, or whose subject is a pronoun. If that count is large, the two seats differ on whether the subject rule applies to a span pinned as a proposition, and the fix is one sentence in the header. If it is small, 60's prefixes really are pinned on whole clauses and the mode follows the prefix.
+
+**Where the vocabulary did not fit, key by key:**
+
+- **A complete clause that drops its condition: a fifth narrower-than-claim variant.** `L207/W1` "the leaf's transverse-traceless mode evolves by a wave equation". P8 conditions it: "on a wave that one residual isometry still pins". The check claims the CONFINED case is exhibited, and the span states it unconditionally. The subject is named, the clause is whole, and the claim is still not carried.
+- **An arm behind a vacuous guard: a receipt defect, not a span defect.** `W1` "until r2376+c54.179" sits in `len(occurrences) == 0 or all(...)`, where the occurrences are sought case-sensitively for "...the construction raises". The comment writes "RAISES", so the first disjunct is always true and this literal is never evaluated. The repair is the guard.
+- **Dead ALT arms, the shape first met in `L202`.** `W1` "STRICTLY CONTAINS BOTH" occurs nowhere in P9, and the other arm reads `p9.lower()`, which would cover it anyway. `W1`'s "Hamiltonian constraint; …" / "is the spherical instance" is an ALT of two different sentences.
+- **A verbless appositive that carries the claim whole.** `L802/S1` "the one non-generic exception, the Nariai branch". It names its subject and leaves nothing the claim needs outside it, but it has no verb, so the subject rule's "clause" does not strictly fit. I counted it `MEANING-HELD`, held at the commit that wrote S1.
+- **A label not tested.** `S2`'s last check carries r2505's caveat as its label and asserts a P11 fragment about the graviton, which has nothing to do with the caveat. This is routed, not repaired, because the label is not the span.
+- **Names standing for a proposition, the proxy case.** `W2` "Lema" / "Tolman" (six and seven occurrences in P2) and `S2` "no-hair". By contrast, `S2`'s "Friedrich" and "Rodnianski" are `DELIBERATE` and "Ringstr" is `ENCODING-OK`, because there the claim is that S1 NAMES them.
+- **Redundant keys.** `W1` "is the Hamiltonian constraint" is inside its own `EXTENDED` partner. `S2`'s whole-clause `MEANING-HELD` key has an `EXTENDED` partner that is the same sentence clipped ("…a sweep cann").
+
+---
+
 ## re r7283 — PRE-REGISTRATION for the crossed half, `L802_stability_bracket` (13) and `L207_the_bend` (12), committed before any key is read
 
 **Inputs used, and nothing else:** each key's target, tier and flags from the baseline, and the documents each receipt opens. No literal was read.
