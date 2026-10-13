@@ -72,31 +72,6 @@
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
-  "suite": {
-   "receipts/L_probability/S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py": {
-    "gates": [
-     "\u24b8\u2460",
-     "\u24b8\u2461",
-     "\u24b8\u2462"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38399648600",
-    "since": "c3d97129cee4e2cd32b43dee20db651b2b651e99"
-   },
-   "receipts/L_probability/S24_a_gate_on_a_repair_has_a_subject_another_seat_may_rewrite_so_all_three_of_mine_went_red_and_the_selector_two_of_them_were_about_was_still_reading_the_commit_body.py": {
-    "gates": [
-     "\u24bb\u2460"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38399648600",
-    "since": "c3d97129cee4e2cd32b43dee20db651b2b651e99"
-   },
-   "receipts/L_probability/S28_twenty_seven_of_the_thirty_eight_change_and_the_pronoun_arm_was_firing_on_determiners_eleven_times_of_eighteen.py": {
-    "gates": [
-     "TypeError @ L386"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38399648600",
-    "since": "c3d97129cee4e2cd32b43dee20db651b2b651e99"
-   }
-  },
   "tolerance": {
    "receipts/L_probability/S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38399648600",
