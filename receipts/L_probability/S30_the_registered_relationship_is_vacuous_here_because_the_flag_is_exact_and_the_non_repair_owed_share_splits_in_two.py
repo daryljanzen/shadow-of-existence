@@ -58,6 +58,10 @@ def gate(label, ok):
 
 
 BEFORE = '6457919e'   # the commit that PUSHED the pre-registration, before the first key was opened
+AFTER = 'a4520168'    # the commit that carried this revision's verdicts -- the 71st member's corollary
+# ⚠ Every COUNT below is read at `AFTER`, not in the working tree: an equality on a LIVE ledger goes
+# red the moment another seat legitimately re-verdicts a row.  The one live read kept is the backlog,
+# and it is MONOTONE.  The restraint is stated as a specific negative rather than over a commit range.
 BASE = 'corpus/quote_pin_baseline.tsv'
 PRED = 'computations/beyond_the_wall/r7292_60_no_call/PREDICTION.md'
 PFX = 'receipts/L247_the_build_already_stands/'
@@ -110,7 +114,8 @@ gate(f'Ⓐ② ⛭⛭ and what it registered is the ABSENCE of a level: the mode 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓑ  THE TALLY, AND THE ARITHMETIC THE LAST ONE GOT WRONG ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_now = {(c[0], c[1]): (c[5], c[6] if len(c) > 6 else '') for c in rows_of(read(BASE))}
+_after_led = _git('show', f'{AFTER}:{BASE}')
+_now = {(c[0], c[1]): (c[5], c[6] if len(c) > 6 else '') for c in rows_of(_after_led)}
 _mine = {k: _now[k] for k in _keys}
 _tally = collections.Counter(v[0] for v in _mine.values())
 _n = len(_mine)
@@ -175,7 +180,7 @@ gate(f'Ⓒ③ ✔⛭ and registered ② holds, with equality: the flag UNDERCOUN
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓓ  THE BACKLOG, AND THE RESTRAINT ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_all = rows_of(read(BASE))
+_all = rows_of(_after_led)
 _un_before = sum(1 for c in rows_of(_git('show', f'{BEFORE}:{BASE}'))
                  if c[5].startswith('UNADJUDICATED'))
 _un_now = sum(1 for c in _all if c[5].startswith('UNADJUDICATED'))
