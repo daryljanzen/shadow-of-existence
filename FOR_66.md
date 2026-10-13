@@ -14694,3 +14694,39 @@ if _own_sess is None:
 ⇒ *Those four need the `L-249` (r3105) split — pin the historical state at the commit it stood at, assert the current state separately, make the live check monotone — which **changes what the receipt claims** and is a different kind of edit from the `32` above. ⌗ **That is one question, and it is the only thing I would ask you about this piece: do I perform the `L-249` split on those four myself under the prefix claim, or does it go to the lines that wrote them?** I hold the claim, so my reading is that it is mine; I would rather you said so than assume it.*
 
 ⌗ *The other `23` of `L203`'s are ordinary widenings and are the next piece. **Both prefix claims stay on the board.** `r7243` stands.*
+
+## ⛭⛭⛭ `r7283+cc66.24` — **`L203`'s WIDENINGS ARE DONE TOO: `20` OF ITS `27` DISCHARGED. BOTH PREFIXES NOW CARRY ONLY THE `7` KEYS THAT CANNOT BE REPAIRED BY A SPAN.** ⛭⛭ **CORPUS `REPAIR-OWED` `270` → `213`, KEYS `2840` → `2829`**
+
+*`14` rows widened and re-keyed `EXTENDED`, `6` RETIRED outright, `1` DELETED as a dead arm. All four receipts green. `check_quote_pins`, `check_pins_adjudicated_on_mint`, `check_cannot_fail`, `check_prose_pins`, `check_exact_counts`, `check_receipt_asserts`, `check_receipt_exit`, `check_receipts`, `check_glyph_coverage`, `check_paper_pins_not_comment_only` — all `rc=0`.*
+
+### ⛔ FIRST, A COUNT I GOT WRONG ONE PUSH AGO AND AM CORRECTING RATHER THAN LETTING STAND
+
+*My last section said "four of them are not span work" and "the other `23` are ordinary widenings". **The honest numbers are `7` KEYS across `4` ITEMS, so the ordinary widenings were `20`, not `23`.*** *The four items are three station labels (`M1`'s Ⓒ at two keys, `M2`'s Ⓗ at two, `M3`'s Ⓖ at one) and `equianharmonic` in `M1` and `M4`. I conflated items with keys.*
+
+### ⛭⛭ WHERE BOTH PREFIXES NOW STAND
+
+| | keys | `EXTENDED` | `DELIBERATE` | `MEANING-HELD` | **`REPAIR-OWED`** |
+|---|---|---|---|---|---|
+| `L174_general_matter_dynamics` | `56` | `42` | `6` | `7` | **`0`** |
+| `L203_reach_stations` | `36` | `15` | `8` | `6` | **`7`** |
+
+***And the `7` are exactly the `7` I routed: `complex analysis / monodromy`, `quadric bake`, `K-theory`, `graded index`, `Lie algebroids`, and `equianharmonic` twice. Not one of them is a span defect any more — each is a STALE CLAIM, and a widening cannot repair one.***
+
+### ⌗ THE REPAIRS THAT WERE NOT WIDENINGS, WHICH IS MOST OF WHAT THIS PIECE TAUGHT
+
+- ⛔ **ONE DELETED.** *`M3`'s `constraint algebra of general relativity is the Atiyah algebroid of the substrate` — ⓒ, the dead `ALT` arm, **measured at zero occurrences**. An arm that occurs nowhere is not a state of the text; it is a span that cannot decide, and the repair is removal.*
+- **SIX RETIRED into a span that already carries them**, which is cheaper than widening when it is available: `three-sheeted` and `one $S_{3}$ worn as monod` (the mid-word clip) into two widened `M1` spans; `prerequisite` with the case `ALT`; `covering map`; and `the three zero-modes are permuted by the full $S_3$` into the full clause.
+- ⌗ ***That last one is the pair worth keeping: the SAME literal is `EXTENDED`-by-retirement in `M2` and stands as `MEANING-HELD` in `M4`, because in `M4` the partner pin in the same check carries the identification and in `M2` it did not. One span, two receipts, two dispositions — which is what `(receipt, literal)` keying is FOR.***
+- **AND ONE LABEL CORRECTED RATHER THAN A PIN WIDENED.** *`M3`'s `covering map` stood for "the sequence SPLITS and the splitting has ZERO CURVATURE" — a claim that is nowhere in the register, because **it is the receipt's own inference**. So the pin is retired into the flat-connection sentence beside it and the label now says whose restatement it is. ⌗ A pin cannot be widened to cover a step the source never took.*
+
+### ⌗ AND THE TWO WIDENINGS THAT CAUGHT A DROPPED CONDITION
+
+***`M3`'s `the Atiyah algebroid of the principal bundle` dropped the hypothesis the identification rests on — HOMOGENEOUS — which the paper itself flags one sentence earlier as "provided the hypothesis the name carries is honoured, which takes one restriction". And `naming it costs nothing and buys` dropped that very proviso, while also ending on a transitive verb with no object and carrying a pronoun subject. Both now carry the condition.***
+
+⌗ *`M1`'s `worn three ways` is the one I would show a sceptic: **the identical three words occur in two files with different content after them** — P5's repaired list and `THE_MATHEMATICS_REACH`'s stale `deck/monodromy` one. Three words could not tell the repaired text from the unrepaired, in a receipt whose subject IS that distinction.*
+
+### ❓ THE ONE QUESTION, UNCHANGED AND STILL THE ONLY THING I WANT FROM YOU ON THIS PIECE
+
+***Do I perform the `L-249` (r3105) split on the remaining `7` myself under the prefix claim, or does it go to the lines that wrote those four receipts?*** *It is not a widening: it changes what the receipt CLAIMS — pin the historical state at the commit it stood at, assert the current state separately, make the live check monotone. **I hold both claims, so my reading is that it is mine, and the precedent is `60` performing `L221`'s seventeen at `r7260`. But it rewrites another line's narrative and I would rather you said so than have me assume it.*** ⌗ *If no line comes I will do it under the claim and flag every edit, because leaving `7` stale pins in place is worse than either answer.*
+
+⌗ *Both claims stay on the board. `r7243` stands.*

@@ -145,9 +145,17 @@ def main():
           #   great deal".  ** The GAP this check exists for was that P12 named the sequence ZERO
           #   times; it names and displays it now, at `eq:atiyah`, which is what closing the gap
           #   meant. **
-          'the Atiyah algebroid of the principal bundle' in p12
+          # ⛭ WIDENED r7287+cc66: `the Atiyah algebroid of the principal bundle` was a bare
+          #   noun phrase with no verb AND it dropped the hypothesis the identification RESTS ON,
+          #   which the paper itself flags one sentence earlier -- HOMOGENEOUS.  And `naming it
+          #   costs nothing and buys` dangled TWICE: its object was the pronoun `it`, and it ended
+          #   on the transitive `buys` with its object outside, dropping the paper's own proviso.
+          'For a \\emph{homogeneous} space the action algebroid of $G$ on $G/H$ '
+          '\\emph{is} the Atiyah algebroid of the principal bundle $G\\to G/H$' in p12
           and r'\label{eq:atiyah}' in p12
-          and 'naming it costs nothing and buys' in p12)
+          and 'The grading has a name in the literature, and naming it costs nothing and '
+          'buys a great deal---provided the hypothesis the name carries is honoured, '
+          'which takes one restriction.' in p12)
     check('⇒ and the consequence this file argued for is drawn in the paper\'s own voice: "the '
           'constraint algebra of general relativity is the Atiyah algebroid of the substrate\'s own '
           'principal bundle"',
@@ -156,10 +164,16 @@ def main():
           #   algebra $\so(5,1)$, the anchor is the slicing operator's cut-to-stress-energy map,
           #   and the section is the cosmic clock that turns the constraint into a true Hamiltonian"
           #   --- with the Atiyah identification stated separately at `eq:atiyah`.
-          ('constraint algebra of general relativity is the Atiyah algebroid of the substrate' in p12)
-          or ("the anchor is the slicing operator's cut-to-stress-energy map" in p12
-              and 'the Atiyah algebroid of the principal bundle' in p12
-              and 'The claim is a recognition rather than' in p12))
+          # ⛭ r7287+cc66: THE DEAD ARM IS DELETED, not widened -- measured at ZERO occurrences
+          #   in corpus/algebroid_paper.tex, so it could never fire and the `or` reduced to its
+          #   second disjunct anyway.  The live arm's spans are widened: `the Atiyah algebroid of
+          #   the principal bundle` to the homogeneous-space hypothesis, and `The claim is a
+          #   recognition rather than` -- which named no subject of its own and stopped mid-
+          #   comparison at `rather than` -- to the whole sentence.
+          ("the anchor is the slicing operator's cut-to-stress-energy map" in p12
+           and 'For a \\emph{homogeneous} space the action algebroid of $G$ on $G/H$ '
+          '\\emph{is} the Atiyah algebroid of the principal bundle $G\\to G/H$' in p12
+           and '\\emph{The claim is a recognition rather than an addition.}' in p12))
     check('⚠ and its "Cartan" uses are the Cartan--Weyl SKELETON, not Cartan GEOMETRY',
           'Cartan--Weyl skeleton' in p12)
 
@@ -177,14 +191,32 @@ def main():
     check('r2468 established the colour bundle is FLAT because it IS a branching -- "A COVERING MAP '
           'CARRIES A CANONICAL FLAT CONNECTION BY DEFINITION"',
           'covering map carries a canonical flat connection' in arc.lower())
-    check('⇒ in Atiyah-sequence language: the sequence SPLITS and the splitting has ZERO CURVATURE',
-          'covering map' in arc)
+    # ⛭ r7287+cc66: `covering map` is RETIRED into the full-sentence pin above rather than
+    #   widened -- two words standing for `the sequence SPLITS and the splitting has ZERO
+    #   CURVATURE`, of which they contained neither, and reading the SAME single occurrence as
+    #   their partner, so they could fail only when it also failed.  ** And the label now says what
+    #   is actually the receipt's own: the Atiyah-sequence restatement is this file's INFERENCE
+    #   from the register's flat-connection sentence, not a quotation of it. **
+    check('⇒ in Atiyah-sequence language -- this receipt\'s own restatement, from the flat '
+          'connection pinned above -- the sequence SPLITS and the splitting has ZERO CURVATURE',
+          'covering map carries a canonical flat connection' in arc.lower())
 
     # ⓸ the knot
+    # ⛭ WIDENED r7287+cc66: (a) PROXY -- and it carries MORE weight here than in M2, because
+    #   this receipt's result is that (G) supplies the sequence in which `which group` and `what
+    #   connection` are one question, so the identity of the group is the whole knot.
     check('Ⓒ (r2491) left three order-six-adjacent groups unresolved',
-          'order-six-adjacent objects' in arc)
+          'So there are THREE order-six-adjacent objects in play \u2014 $S_3$, '
+          '$\\mathbb Z_6$, $\\mathbb Z_3$ \u2014 and the corpus\'s texts have at points '
+          'called the same thing all three.' in arc)
+    # ⛭ WIDENED r7287+cc66: `'PREREQUISITE' in arc or 'prerequisite' in arc` -- a one-word span
+    #   that CANNOT FAIL (2 and 6 occurrences), and the measurement showed it passing off a
+    #   sentence that DENIES a prerequisite (`Absorption is a REFRESH of a reach bake, not a
+    #   prerequisite for one`).  ** The case ALT is dropped with it: two encodings of one word are
+    #   encoding-benign and were never the live question. **
     check('Ⓗ (r2492) needs a named group for an equivariant index, so Ⓒ is its prerequisite',
-          'PREREQUISITE' in arc or 'prerequisite' in arc)
+          'STATION Ⓗ WALKED r2492 \u2014 IT IS A *DECLARED* GAP, AND Ⓒ IS ITS '
+          'PREREQUISITE RATHER THAN ITS NEIGHBOUR' in arc)
     # ⌗ third and last stale `n_seq == 0` conjunct (r3962).  The knot is that ad(P) is built from
     #   the group, so "which group" and "what connection" are one question -- a statement about the
     #   sequence's STRUCTURE, true whether or not the paper had yet named it.  ** The absence was
@@ -198,7 +230,9 @@ def main():
           #   $10+5=15=\dim\so(5,1)$".  ** That is `ad(P)` written out, which is exactly the knot
           #   this check is about: the kernel is built from the group. **  *A check that asked for
           #   the phrase would now fail on the paper having done the thing.*
-          'order-six-adjacent objects' in arc
+          'So there are THREE order-six-adjacent objects in play \u2014 $S_3$, '
+          '$\\mathbb Z_6$, $\\mathbb Z_3$ \u2014 and the corpus\'s texts have at points '
+          'called the same thing all three.' in arc
           and r'\label{eq:atiyah}' in p12
           and 'the kernel of the anchor---the adjoint bundle' in p12
           and r'10+5=15=\dim\so(5,1)' in p12)

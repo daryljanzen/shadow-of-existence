@@ -83,7 +83,11 @@ def main():
     # Quoting from memory of a read rather than from the file is the error this whole receipt is
     # about, arriving in the receipt itself. **
     check('and Q4 found the vantage triple\'s cross-ratio is the equianharmonic $e^{i\\pi/3}$',
-          "cross-ratio is the **equianharmonic** $e^{i\\pi/3}$" in rm)
+          # ⛭ WIDENED r7287+cc66: (e) -- the possessor `the vantage triple's` sat outside the
+          #   span, and in a receipt whose thesis is FOUR OBJECTS UNDER ONE WORD that qualifier is
+          #   the whole claim.  The possessor is now inside it.
+          "that probe found the vantage triple's cross-ratio is the **equianharmonic** "
+          '$e^{i\\pi/3}$' in rm)
 
     # ⓵ the first step
     lam = sp.exp(sp.I*sp.pi/3)
@@ -118,27 +122,51 @@ def main():
           #   Galois group of the horizon cubic" -> "which is equally the Galois group of THAT
           #   cubic", and "deck group trivial" -> "trivial deck group".  *Content identical;
           #   the pins spanned the words that changed.*  Re-pinned to the invariant clauses.
-          'which is equally the Galois group of that cubic' in p5
-          and 'one $S_{3}$ worn as monod' in p5)
+          # ⛭ WIDENED r7287+cc66: one span opened on the RELATIVE PRONOUN `which` and the other
+          #   was an appositive ending MID-WORD at `monod`.  ** One widened span of the summary
+          #   sentence carries both, names the morphisms, and is word-aligned. **
+          "The same-$\\alpha$ between-member morphisms are the monodromy of the horizon "
+          "cubic's three-sheeted cover branched at the Nariai points, with monodromy "
+          "group $S_{3}$---which is equally the Galois group of that cubic, one "
+          "$S_{3}$ worn as monodromy, Weyl and Galois symmetry alike" in p5)
     check('⛭ and the paper calls the DECK group TRIVIAL, so the word the old pin used named the one '
           'group that does NOT carry the property -- which is this file\'s own thesis, met in its '
           'own pin',
-          'trivial deck group' in p5
+          # ⛭ WIDENED r7287+cc66: a bare noun phrase with NO verb, governed by a clause whose
+          #   subject `that one` is both outside the span and a demonstrative -- and positively NOT
+          #   a frozen record: this literal MOVED at r4070.  Widened to the governing clause.
+          'that one is three-sheeted, over the $2M$-plane, branched at the two Nariai '
+          'values, with monodromy group $S_{3}$ and trivial deck group '
+          '(Proposition~\\ref{prop:deck})' in p5
           and 'this deck group is equally the Galois group' not in p5)
     check('and the monodromy group of a branched cover is the Galois group acting on its sheets',
           'monodromy group of a branched cover is the Galois group' in p5)
     check('⇒ "the one group governing the family is worn THREE ways: deck/monodromy, the Weyl group '
           'of $A_2$, and the Galois group"',
-          'worn three ways' in p5)
+          # ⛭ WIDENED r7287+cc66: the span OPENED ON A PARTICIPLE, and the identical three words
+          #   occur in TWO files with DIFFERENT content after them -- P5's repaired list and
+          #   THE_MATHEMATICS_REACH's stale `deck/monodromy` one -- so they could not tell the
+          #   repaired text from the unrepaired, in a receipt whose subject IS that distinction.
+          'The one group governing the family is thus worn three ways: the monodromy '
+          'group of the three-sheeted cover (here), the Weyl group of the root system '
+          '$A_{2}$ (Section~\\ref{sec:autA2}), and the Galois group of the horizon '
+          'equation' in p5)
     check('⇒⇒ SO Z_6 IS A FOURTH OBJECT AND IS NOT ONE OF THE THREE',
-          Z6.is_abelian and not S3.is_abelian and 'worn three ways' in p5)
+          Z6.is_abelian and not S3.is_abelian
+          and 'The one group governing the family is thus worn three ways: the monodromy '
+          'group of the three-sheeted cover (here), the Weyl group of the root system '
+          '$A_{2}$ (Section~\\ref{sec:autA2}), and the Galois group of the horizon '
+          'equation' in p5)
 
     # ⓸ the same knot, routed
     f54 = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'FOR_54.md'),
                                    encoding='utf-8', errors='replace').read())
     check('and routed item 23 is the same knot from the other side: "deck group $S_3$" on a '
           'three-sheeted cover is impossible',
-          'deck group' in f54 and 'three-sheeted' in f54)
+          # ⛭ WIDENED r7287+cc66: a CO-OCCURRENCE pin whose arms both CANNOT FAIL (9 and 6
+          #   occurrences in FOR_54.md) and neither of which carried `$S_3$` or `impossible`.
+          #   One widened span carries item 23's claim.
+          '"DECK GROUP $S_3$" ON A THREE-SHEETED COVER IS IMPOSSIBLE' in f54)
     check('with rem:equianharmonic giving a third answer, Z_3',
           'equianharmonic' in p5)
 

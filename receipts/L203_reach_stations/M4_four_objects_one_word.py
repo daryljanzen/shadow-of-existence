@@ -118,8 +118,17 @@ def main():
           #   Galois group of the horizon cubic" -> "which is equally the Galois group of THAT
           #   cubic", and "deck group trivial" -> "trivial deck group".  *Content identical;
           #   the pins spanned the words that changed.*  Re-pinned to the invariant clauses.
-          'which is equally the Galois group of that cubic' in p5
-          and 'trivial deck group' in p5)
+          # ⛭ WIDENED r7287+cc66: one span opened on the RELATIVE PRONOUN `which` and the other
+          #   was a bare noun phrase whose governing subject `that one` is a demonstrative outside
+          #   it -- and in a file whose subject is FOUR OBJECTS SHARING ONE WORD, three words
+          #   naming a group without naming its object is the receipt's own defect in its own pin.
+          "The same-$\\alpha$ between-member morphisms are the monodromy of the horizon "
+          "cubic's three-sheeted cover branched at the Nariai points, with monodromy "
+          "group $S_{3}$---which is equally the Galois group of that cubic, one "
+          "$S_{3}$ worn as monodromy, Weyl and Galois symmetry alike" in p5
+          and 'that one is three-sheeted, over the $2M$-plane, branched at the two '
+          'Nariai values, with monodromy group $S_{3}$ and trivial deck group '
+          '(Proposition~\\ref{prop:deck})' in p5)
     check('and rem:equianharmonic\'s Z_3 is the deck of the CUBE-ROOT cover -- correct for that cover',
           'equianharmonic' in p5)
 
