@@ -100,6 +100,19 @@ def _r7283():
     import flat_ruled_and_discrete as _F
     return _F
 
+def _r7283b9():
+    """`r7283` ② batch nine: `Gamma` extended from the connection to the WEYL tensor, on demand.
+
+    *`EXTEND` means the named function does not reach the quantity and a short extension does.
+    `Gamma` returns Christoffels; the extension builds Riemann and then Weyl, which by the Sachs
+    equation is the only thing that can grow shear in a null geodesic congruence.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import extensions_b9 as _Y
+    return _Y
+
 def main():
     print()
     print('  P1 -- is the range complete across the Petrov types?')
@@ -199,6 +212,23 @@ def main():
           and _F.ruling_residuals(b=1.5)[2] > 1.0
           and _F.slicing_inherits_both_rulings(2, 0.5)
           and not _F.slicing_inherits_both_rulings(0, 0.5))
+
+    _Y = _r7283b9()
+    check("⛭ `r7283` ② COMPUTED, not cited: the shear of the ruling congruence, settled by an "
+          "ABSENCE. `Gamma` extended to Riemann and then to WEYL returns ALL 256 "
+          "components ZERO on the substrate in the papers own static chart, with "
+          "`R = 12/alpha^2` and `Ric = (R/4) g` exactly. By the Sachs equation -- a STATED "
+          "input -- the shear of a null geodesic congruence is driven by the Weyl tensor "
+          "and by nothing else, and `r7283`+cc66.1 computed the rulings to be straight "
+          "NULL lines, so their initial shear is zero and there is nothing to grow one. "
+          "Rebound to `probe1`s OWN chiral plane wave the same extension finds 16 non-zero "
+          "components, so the obstruction exists elsewhere and is absent here. ** And one "
+          "of the 256 needed `expand_trig` to show it was zero: a simplify that stops short "
+          "reads exactly like a real component **",
+          _Y.weyl_vanishes('substrate')
+          and not _Y.weyl_vanishes('plane_wave')
+          and _Y.substrate_is_einstein()
+          and _Y.rulings_are_straight_null_lines())
 
     return 0
 

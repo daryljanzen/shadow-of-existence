@@ -14391,3 +14391,40 @@ if _own_sess is None:
 ⌗ *Verified: all eight receipts now carry ZERO string literals on the left of an `in` test, from each file's own syntax tree; `C72` `59/59`, `C73` `37/37`, `C75` `48/48`, `C76` `48/48`, `C77` `54/54` all still green at their original counts; and **`check_quote_pins` is `rc=0` with `2840` keys against a baseline of `2840`, the annotation fault gone and every ratchet holding.***
 
 ⌗ ⌈ ***The general lesson, which is the part worth keeping:*** *a guard written against the SHAPE of a hazard inherits whatever threshold its author chose, and the instrument it is meant to anticipate may have none.* ⌊ **`C71` taught this seat to assemble needles so a receipt about pins mints none. What it did not teach was that `a sentence` is not the unit — `a literal` is.**
+
+---
+
+## ⛭⛭⛭ `r7283+cc66.6` — **LANDED `64` OF `71` (`52` of `59` `INPUTS`, `12` of `12` `EXTEND`). REMAINING `7`, AND EVERY ONE IS A FILED LIMIT.** ⛭⛭ **THE `EXTEND` CLASS IS CLOSED, AND THE LAST ROW IS SETTLED BY AN ABSENCE**
+
+*`C80`: `43` checks, all pass, `17` s. `REACHED_B9.tsv` digest `9359ba8ee22714fe`. Two rows, two taken. `CR_cosmology.pdf` at `316` pages.*
+
+### ⛭⛭⛭ THE RULINGS ARE SHEAR-FREE BECAUSE THE SUBSTRATE HAS NO WEYL TENSOR
+
+***By the Sachs equation — a STATED input, labelled as one — the shear of a null geodesic congruence is driven by the Weyl tensor and by nothing else.***
+
+⌈ *`Gamma` extended from the connection to Riemann and then to Weyl returns **all `256` components ZERO** on the substrate in the paper's own static chart, with `R = 12/α²` and `Ric = (R/4)g` exactly — Einstein, as the geometric core states.* ⌊ ⇒ ***And the converse is not a constructed edit but `probe1`'s OWN module-level metric: the chiral plane wave has `16` non-zero Weyl components.*** *So the obstruction exists elsewhere and is **absent** here.*
+
+⌗ *Batch four computed that the rulings are straight NULL lines, so their initial shear is zero. **What this batch adds is the thing that could have grown one — and it is not there.*** ⌗ *I cite batch four rather than redo it, and `C80`'s `Ⓑ④` gates that.*
+
+### ⚠⛭⛭ AND ONE OF THE `256` NEEDED MORE THAN `simplify` TO SHOW IT WAS ZERO
+
+***`W[1][3][3][2]` comes back as `r(sin2t·tan t + cos2t − 1)/(2tan t)`, which `sympy.simplify` returns UNCHANGED. It is identically zero*** — *`sin2t·tan t = 2sin²t` and `cos2t − 1 = −2sin²t` — and `expand_trig` resolves it, as does evaluating it at a point (`9.9e-17`).*
+
+⇒ ⚠ ***A SIMPLIFY THAT STOPS SHORT READS EXACTLY LIKE A NON-ZERO COMPONENT, and the only thing separating them is trying harder on the one that did not vanish.*** *The predicate pushes its survivors through `expand_trig` before counting, rather than taking `simplify`'s first answer for a geometric fact.* ⌗ **Had I counted on `simplify` alone I would have reported the substrate as having a Weyl tensor — which is to say, I would have refuted a true claim of the paper's with an artefact of a CAS.**
+
+### ⌗ AND `D_M` RECOVERS THE EXPANSION LAW EXACTLY
+
+*`D_M` is `∫c/H dz`, so differentiating the comoving distance must return `c/H(z)` — and it does, to `1e-8` relative at `z = 0.5`, `5` and `100`, which is quadrature precision. Against the OTHER rate at the same `H0` the same derivative misses by `1e-4` to `9e-4`: **four orders of separation**, so the agreement is that rate's own and not the integrator's.* ⌗ *The flatness half is batch four's constant-`τ` slice, cited rather than recomputed.*
+
+⌗ ⚠ ***And that row's holder is withheld for the THIRD time, same reason as at `C75` and `C77`. It now blocks three rows.*** *`C80`'s `Ⓔ②` gates the withholding by that receipt's own standing claim, as the other two do.*
+
+### ⛭ THE SUBJECT CLOSES ON A SHAPE RATHER THAN A NUMBER
+
+***`64` of `71` is not `71` of `71`, and the `7` that remain are not a shortfall — each is a limit I filed WITH a measurement.***
+
+- **`4`** are `bead_frames`' nested `tau_of_r` and `tau_r`, which `C73`'s `Ⓓ⑤` gated the decision NOT to build a capability for: *`37` of the `40` then-outstanding rows named a top-level function, `3` named a nested one, and **all three named the same one.***
+- **`3`** refuse on a module-level name nothing graftable binds — `los_spectrum`, `hier_run`, `spectrum`.
+
+⇒ ⛭ ***A backlog that ends in filed limits rather than in a round number is one whose remainder can be read by someone else without re-deriving it.*** *That is what I would want checked about this piece of work if it is checked at all.*
+
+⌗ *`r7243` stands. **Next is `r7275`/`r7283` order ②: the zero-mode function**, measure ruled as `dμ = √|g_rr| dr` with the absolute value AND the flat `dr` count reported beside it, hard stop at one cycle. `r7267` ③'s `STATED_LIMIT.md` already measured that one 1-D Dirac zero-mode solve discharges `12` of the `13` `NONE` rows, with `B1`'s equivariant index named as NOT discharged — that is the capability to build.*
