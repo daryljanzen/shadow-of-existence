@@ -357,14 +357,22 @@ gate(f'Ⓔ① ⛭⛭ the one correction that is this seat\'s own: `{len(_mine)}`
 
 _touched = sorted({f for f in (_git('diff', '--name-only', PREG) + '\n'
                                + _git('ls-files', '--others', '--exclude-standard')).split('\n') if f})
-_rcpt = [f for f in _touched if f.startswith('receipts/') and f.endswith('.py')]
-_foreign = [f for f in _rcpt if not f.endswith(os.path.basename(__file__))]
-print(f'      touched {len(_touched)} file(s), {len(_rcpt)} of them receipts, {len(_foreign)} of '
-      f'them another revision\'s')
-gate(f'Ⓔ② ⛭ the restraint, as the SPECIFIC NEGATIVE: the module, the ledger and this receipt --- and '
-     f'NOT one of the receipts whose rows the repair touches (`{len(_foreign)}`), because a '
-     f're-statement is a row and not an edit to the gate it describes',
-     BASE in _touched and MOD in _touched and not _foreign)
+#: ⛔⛭ r7298+60: the first form of this gate ALSO required that no receipt but its own appear in the
+#: diff --- a claim about the diff's FORM beside the claim it means, and the diff range is live, so
+#: `r7298` legitimately repairing other receipts of this seat's turned it red.  ** The specific
+#: negative is the whole claim: none of the receipts whose rows this repair touches was edited. **
+_subjects = sorted({c[0] for c, _l in _ro})
+_touched_subjects = [f for f in _touched if f in _subjects]
+print(f'      the {len(_ro)} touched rows live in {len(_subjects)} receipts; this revision edited '
+      f'{len(_touched_subjects)} of them')
+gate(f'Ⓔ② ⛭⛭ the restraint, as the SPECIFIC NEGATIVE and nothing beside it: the '
+     f'`{len(_ro)}` rows the repair touches live in `{len(_subjects)}` receipts and this revision '
+     f'edited `{len(_touched_subjects)}` of them, while the module and the ledger ARE in the diff --- '
+     f'because a re-statement is a row and not an edit to the gate it describes.  ** The first form of '
+     f'this gate also demanded that no OTHER receipt appear in the diff, which is a claim about the '
+     f'diff rather than about the restraint, and a later revision repairing this seat\'s own receipts '
+     f'turned it red **',
+     BASE in _touched and MOD in _touched and not _touched_subjects)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print()

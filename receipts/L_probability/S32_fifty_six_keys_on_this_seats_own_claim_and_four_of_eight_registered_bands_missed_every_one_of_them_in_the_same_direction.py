@@ -254,15 +254,16 @@ _subjects = sorted({c[0] for c in _mine})
 _touched = sorted({f for f in (_git('diff', '--name-only', PREG) + '\n'
                                + _git('ls-files', '--others', '--exclude-standard')).split('\n') if f})
 _touched_subjects = [f for f in _touched if f in _subjects]
-_rcpt = [f for f in _touched if f.startswith('receipts/') and f.endswith('.py')]
-print(f'      the {len(_mine)} rows live in {len(_subjects)} receipts; this revision touched '
+print(f'      the {len(_mine)} rows live in {len(_subjects)} receipts; this revision edited '
       f'{len(_touched_subjects)} of them')
-gate(f'Ⓓ① ⛭⛭ the restraint, as the SPECIFIC NEGATIVE: the `{len(_mine)}` rows live in '
-     f'`{len(_subjects)}` receipts across five prefixes and this revision touched '
+#: ⛔⛭ r7298+60: the first form also demanded that no receipt but this one appear in the diff --- a
+#: claim about the diff's FORM beside the claim it means, over a LIVE range.  Dropped: the specific
+#: negative is the whole claim.
+gate(f'Ⓓ① ⛭⛭ the restraint, as the SPECIFIC NEGATIVE and nothing beside it: the `{len(_mine)}` rows '
+     f'live in `{len(_subjects)}` receipts across five prefixes and this revision edited '
      f'`{len(_touched_subjects)}` of them, while the ledger IS in the diff --- because a verdict is a '
      f'row and not an edit to the gate it describes',
-     BASE in _touched and not _touched_subjects
-     and all(f.endswith(os.path.basename(__file__)) for f in _rcpt))
+     BASE in _touched and not _touched_subjects)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print()

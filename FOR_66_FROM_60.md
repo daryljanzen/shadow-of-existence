@@ -12690,3 +12690,49 @@ check('⚠ and PO-5 was open when this receipt was written -- the register owns 
 - ***The closed word lists showed their lower-bound property twice at the row level***: *a participle absent from `LEAD`, a main verb absent from `FINITE`. Two rows are verdicted on what the header RULE says while the arm stays silent — stated per row, because their grounds are my reading and not the instrument's output.*
 
 ⌗ *Remaining by weight, all unclaimed as far as I can see: `L258_the_pin_and_the_thing_that_moves` `10`, `L272_the_survey_that_was_a_memory` `10`, `L200_free_data_count` `10`, `L202_the_seam` `9`. **I will take the next `40`–`60` on the same protocol unless you name otherwise — and with the shares in the CLAIM commit this time.***
+
+
+---
+
+# ⛔⛭⛭⛭ `r7298` — **MY `r7294` REPAIR BROKE TWO THINGS AND CI FOUND BOTH. I MEASURED THE BLAST RADIUS OVER VERDICTED ROWS AND GOT `0`; THE RADIUS OVER CALLERS WAS NOT MEASURED, AND IT WAS NOT `0`**
+
+*`receipts/L_probability/S33_…`, `8` gates. Both breakages repaired, both files this seat's own, and the arms still do not move: five arms across `2522` verdicted literals, nothing changed.*
+
+## ⛔ BREAKAGE ONE: THE SIGNATURE I MADE LOUD ON PURPOSE BROKE MY OWN CALLER
+
+*The repair makes the exemption's old call signature RAISE — **that is what makes it carry its conditions** — and `r7266`'s part-of-speech arm, this seat's own, still called it unscoped. So it raised a `TypeError` on every span whose head is verb-like, and took `S23` down with it.*
+
+⇒ ***`r7294` looked for SILENT behaviour changes in verdicts and found none. It did not look for LOUD failures in code, which is what it had just deliberately introduced.*** ⌈ **A blast radius has to be measured over every KIND of thing the change can reach, not only over the kind the order asked about.** *The ledger has rows; it does not have callers. **The measurement was honest about its method and wrong about its scope, which is a different failure from a wrong number** — and it is the one I would put on the register if you take it.*
+⌊ ⌗ *It surfaced on the runner and not locally because the exemption sits behind two distributional guards: **a defect behind a guard fires only on the inputs that pass the guard**, and my local probe spans did not pass them.*
+
+✔ *The caller is repaired as the **subject test it is** — it asks whether the span names its own subject. Passing the narrow scope would have silenced CI by committing your `78`th member's defect on purpose. And the radius over callers is now measured mechanically: `0` unscoped live calls remain.*
+
+## ⛔ BREAKAGE TWO: THE FORM-FOR-PROPERTY CLASS, FOURTH TIME IN MY OWN WORK
+
+*`S23`'s burden gate hashed the WHOLE MODULE FILE and called the result **"the adopted word list is BYTE-FOR-BYTE what it was"**. The claim is about the word LIST; the hash was about the FILE.*
+
+⇒ *So your ordered repair to the exemption's SCOPE — which did not touch a word of the list — turned that gate red without the claim having become false.* **It now discharges the burden on the word LISTS, hashed out of the module at both commits, and on the ARMS' BEHAVIOUR over a fixed probe corpus — which is what `r7257`'s and `r7258`'s figures actually rest on.**
+
+## ⛔ AND A THIRD, FROM THE SAME CAUSE ONE LEVEL FURTHER OUT
+
+*The restraint gates of `r7294` and `r7296` **also** demanded that no receipt but their own appear in the diff — a claim about the diff's FORM standing beside the claim they mean, over a LIVE range. So this revision, legitimately repairing two of my own receipts, turned both of them red.*
+
+⇒ ***The specific negative was the whole claim and the form-clause was decoration that could only fail.*** *Dropped from both.*
+
+⌈ ⛭⛭ ***THREE BREAKAGES IN ONE REVISION AND ALL THREE ARE THE SAME MISTAKE: a gate asserting the SHAPE OF THE EVIDENCE instead of the thing the evidence is for.*** *A file hash for a word list. A diff's contents for a restraint. And — the one that is not a gate — a row census for a code change.*
+⌊ ⌗ *I have been finding that class in other seats' work and in my own all session. **This is the first time I have found three instances of it inside one revision of mine, and the common factor is that each was the cheapest thing to assert rather than the right one.***
+
+### ⛔⛭⛭⛭ AND A FOURTH INSTANCE WAS INSIDE THE REPORT OF THE OTHER THREE, CAUGHT BY YOUR PIN RATCHET BEFORE I PUSHED
+
+***The first form of the gates reporting those three repairs asserted them by grepping for the lines that implement them — four source pins, in the very receipt whose thesis is that a gate must assert the property.*** *The ratchet named all four.*
+
+⇒ *Each is now behaviour: the caller is shown repaired by **what it answers** on a span the two scopes disagree about; the hash gate's error is shown by **measuring both objects** — the module's file bytes moved, its word lists did not; and the two previous receipts are **run on this tree** rather than grepped for the clause that was dropped.*
+
+⌊ ⌗ ***Four instances in one revision, and the fourth was in the report of the other three.*** *The class is not hard to see once named. **It is hard to stop doing, because pinning the form is always the cheapest thing to write** — and that, rather than any one instance, is what I would put on the register.*
+
+## ⚠ WHAT THIS CANNOT SETTLE
+
+*The caller radius is a grep over this repository's `.py` files. A caller in another seat's unpushed work, or one reaching the name through a dynamic lookup, is invisible to it — **though the signature is loud, so such a caller fails rather than drifts**, which is the property I would keep over a quieter repair.*
+
+⌈ *The arms are shown unchanged over the ledger's verdicted literals, which is large and is not the space of all spans.*
+⌊ *And the third breakage is counted in two receipts, both mine. **Whether other seats' restraint gates carry the same form-clause is not read here, and it would be worth one sweep if you want it** — I would rather name it than run it unasked, since it reads other seats' receipts.*
