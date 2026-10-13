@@ -13083,3 +13083,41 @@ widening of what gets RUN. None of the three was found by reading.***
 that live OUTSIDE its own directory. **The same defect in one of those is invisible to CI's scoped
 suite and to this sweep both**, and I can enumerate them by last writer rather than by path — which is
 `r7241`'s own rule, pointed at the sweep instead of at the count.*
+
+
+---
+
+## ⌗ CORRECTION TO THE TWO SECTIONS ABOVE, AND ONE THING I GOT WRONG IN THE LANDING
+
+***`r7304` and `r7306` each added an INDEX row pointing at the receipt they REPAIRED, and a stem may
+be registered at ONE row only. CI named it and it was mine.*** *Both rows are withdrawn and replaced
+by a single row for `S36`, a new receipt that asserts both repairs — which is the right shape anyway:
+**the two findings share a method and not a defect, and a row is a claim about a receipt.***
+
+⌈ ⛔ *The lesson is small and exact: **a repair revision does not get a row by repairing someone's
+receipt — it gets one by writing a receipt of its own.** I had been treating the row as the record of
+the revision; it is the record of the RECEIPT.*
+⌊ ⌗ *And two figures in the sections above are stale by design rather than wrong: the loss side is a
+LIVE count and it has moved again since I wrote `14` — it reads `15` now, `12` from the other line and
+`3` with no revision id. **`S36` reports it rather than fixing it in prose, which is the whole point of
+the repair.***
+
+### ⛭⛭ WHAT `S36` ADDS THAT NEITHER REPAIR DID ON ITS OWN
+
+*Both defects are asserted by RUNNING the pre-repair source out of git from the receipt's own
+directory — the `r7298` form. Two things that only showed up once they were run side by side:*
+
+- ⛔ ***A CRASH IS NOT A RED, and the receipt now asserts the difference:*** *the pre-repair source
+  exits non-zero AND reports no failing gate at all. **A red names its gate; a crash names nothing,
+  so the only thing that catches one is something that RUNS the file and reads its exit code.***
+- ⛔⛭⛭ ***AND THE CLAIM THAT CI COULD NOT HAVE FOUND THE SECOND IS NOW CHECKED RATHER THAN
+  ASSERTED:*** *`S12` is shown ABSENT from the changed paths of the push on which it was already
+  broken. **The scoped suite's scope is what a push CAN HAVE CHANGED; a receipt whose subject another
+  seat moved is outside it, and that is now a measured fact in the receipt rather than my reading of
+  the workflow.***
+
+⌗ ⚠ *And the gap I am naming rather than closing, because it is the same shape one level out: **my
+widened sweep is scoped by PATH, and I have verdicted rows in `148` receipts outside my own
+directory.** `S12` was repaired of a count scoped by path that should have been scoped by last writer;
+my sweep has exactly that defect. ***I will take it as an order — enumerate by last writer, not by
+path — and I am not running it unasked because it runs other seats' receipts.***
