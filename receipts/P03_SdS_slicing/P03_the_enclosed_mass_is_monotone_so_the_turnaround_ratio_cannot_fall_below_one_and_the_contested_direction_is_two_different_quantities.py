@@ -372,7 +372,24 @@ _SESS = _re_r7245.compile(r'^Claude-Session:\s*(\S+)', _re_r7245.M)
 #   the filter would keep exactly the commits the claim is about excluding.  `r7244` measured
 #   last-writer parity migrating on 14.8 per cent of site-lines, so the adding commit is the
 #   only stable marker of whose receipt this is.
-_own_sess = _SESS.search(_git('log', '--diff-filter=A', '--format=%B', '--', __file__))
+# ⛔⛭⛭⛭ r7268 (60): AND THE SELF-IDENTIFICATION WAS PINNED TO HOW THE PROCESS WAS INVOKED.
+#   *`__file__` is whatever was passed to the interpreter.  Run as `python3 FILE` from this
+#   directory it is a BARE FILENAME, and this pathspec is resolved with `cwd=ROOT`, so git is asked
+#   for a path at the repository root that does not exist and returns NOTHING.*
+#   ⇒ *** Under the corpus's OWN runner-read tracer -- which runs each receipt as `python3 <name>`
+#       from its own directory -- the ownership read came back EMPTY, `_own_sess` fell to `None`, and
+#       the `or _own_sess is None` arm silently widened the commit set to EVERY seat's. ***
+#   ⌈ *Measured: this gate read `0` unauthorised crossings run directly and `2` under the tracer, on
+#     the same tree, for no reason in the tree.*
+#   ⌊ *Repaired twice over: the path is made REPOSITORY-RELATIVE, which holds however the file was
+#     invoked; and the empty read is no longer a licence to widen -- it FAILS, because an absence
+#     with no positive control is the class this stretch has been working.*
+_SELF_REL = os.path.relpath(os.path.abspath(__file__), ROOT).replace(os.sep, '/')
+_own_log = _git('log', '--diff-filter=A', '--format=%B', '--', _SELF_REL)
+assert _own_log.strip(), (
+    'the introducing commit of ' + _SELF_REL + ' read EMPTY: the ownership filter below '
+    'would widen to every seat, so this fails here instead of passing wider')
+_own_sess = _SESS.search(_own_log)
 _own_sess = _own_sess.group(1) if _own_sess else None
 _MINE_C = []
 for _blk in _git('log', '--no-merges', '--format=%H%x00%B%x01',
@@ -404,7 +421,6 @@ _added = {l for c in _MINE_C
 #     fast path, and another seat's receipt is still foreign -- the claim keeps its force and loses
 #     the snapshot.*
 _OWN_PFX = ('receipts/P15_CR_cosmology/', 'receipts/L_probability/S')
-_HERE_REL = os.path.relpath(os.path.abspath(__file__), ROOT).replace(os.sep, '/')
 
 
 def _introduced_by_this_seat(q):
@@ -490,7 +506,7 @@ gate("Ⓗ② ⛔ AND THE REPAIR IS NOT VACUOUS, which is the thing a reader shou
      and all(q in _unauth or _crossed_at(q, _AUTHORISED[q][1]) for q in _AUTHORISED)
      # ⌗ and the pin is not a rubber stamp: a path the authorising commit did NOT touch fails it,
      #   checked here on this receipt's own path against the same two commits.
-     and not any(_crossed_at(_HERE_REL, _v[1]) for _v in _AUTHORISED.values()))
+     and not any(_crossed_at(_SELF_REL, _v[1]) for _v in _AUTHORISED.values()))
 
 print(f"\n{BAR}")
 if fail:

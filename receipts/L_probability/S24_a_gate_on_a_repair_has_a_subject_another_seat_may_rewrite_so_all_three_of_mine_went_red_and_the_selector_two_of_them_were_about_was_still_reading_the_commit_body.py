@@ -61,6 +61,7 @@ import os
 import re
 import subprocess
 import sys
+import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -118,6 +119,8 @@ S23 = ('receipts/L_probability/S23_four_items_and_every_one_was_mis_described_be
        'stored_a_snapshot_of_a_rule_instead_of_the_rule.py')
 P03 = ('receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_'
        'fall_below_one_and_the_contested_direction_is_two_different_quantities.py')
+_S5 = ('receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_'
+       'of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py')
 HERE_REL = os.path.relpath(os.path.abspath(__file__), ROOT).replace(os.sep, '/')
 
 print()
@@ -364,12 +367,88 @@ _touched = sorted(_mine_f | _wt)
 _rcpt = [_f for _f in _touched if _f.startswith('receipts/') and _f.endswith('.py')]
 print(f'      this revision: {len(_mine_c)} own commit(s) by SUBJECT, {len(_touched)} file(s) '
       f'touched, {len(_rcpt)} of them receipts')
+for _f in _rcpt:
+    print(f'        {_f}')
 gate(f'Ⓕ② ⛭⛭ and the restraint is read over this revision\'s OWN range with a SUBJECT-matched '
      f'selector --- eating this revision\'s own cooking --- plus the working tree for the branch '
      f'case: `{len(_rcpt)}` receipt(s), and the only corpus BODIES among the rest are none',
-     all(_f in (S21, S22, S23, P03, HERE_REL) for _f in _rcpt)
+     all(_f in (S21, S22, S23, P03, _S5, HERE_REL) for _f in _rcpt)
      and not [_f for _f in _touched if _f.startswith('corpus/') and _f.endswith('.tex')
               and not _f.startswith('corpus/appendix_')])
+
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+print('\n── Ⓕ′ AND THE SELF-IDENTIFICATION WAS PINNED TO HOW THE PROCESS WAS INVOKED, TWO SITES ──\n')
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+# ⛔⛭⛭⛭ *This is the one the sweep caught, and it is the same shape in the identity rather than in a
+#   claim: both gates resolved WHOSE RECEIPT THIS IS by passing `__file__` to `git log` with
+#   `cwd=ROOT`.  Run as `python3 FILE` from the receipt's own directory -- which is exactly how the
+#   corpus's own runner-read tracer runs it -- `__file__` is a BARE FILENAME, so git is asked for a
+#   path at the repository root, returns nothing, and the ownership filter falls back to EVERY
+#   SEAT'S commits.*  ⇒ *** `P03` read `0` unauthorised crossings run directly and `2` under the
+#       tracer, on the same tree, for no reason in the tree. ***
+_RED_AT = '10ef840a'          # the head the sweep was red on, with both sites still on `__file__`
+_PATHSPEC = "'--', __file__"
+
+
+def intro_log(pathspec):
+    return _git('log', '--diff-filter=A', '--format=%B', '--', pathspec).strip()
+
+
+_sites = []
+for _rel in (P03, _S5):
+    _b = subprocess.run(['git', 'show', f'{_RED_AT}:{_rel}'], cwd=ROOT,
+                        capture_output=True, text=True).stdout
+    _sites.append((_rel.split('/')[-1][:30], _PATHSPEC in _b, _PATHSPEC in read(_rel),
+                   bool(intro_log(_rel)), bool(intro_log(os.path.basename(_rel)))))
+for _n, _was, _is_, _rel_ok, _bare_ok in _sites:
+    print(f'      {_n:32} at {_RED_AT}: {_was!s:5} live: {_is_!s:5}  '
+          f'repo-relative resolves: {_rel_ok!s:5} bare filename resolves: {_bare_ok}')
+gate(f'Ⓕ′① ⛔⛭⛭⛭ both sites identified themselves to `git` by `__file__` at `{_RED_AT}` and neither '
+     f'does live --- and the DISCRIMINATOR is measured rather than argued: the repository-relative '
+     f'path resolves the introducing commit for both, while the BARE FILENAME resolves it for '
+     f'neither, which is what the tracer was passing.  ** An identity read against the invocation '
+     f'path is not an identity read **',
+     all(_was and not _is_ and _rel_ok and not _bare_ok for _n, _was, _is_, _rel_ok, _bare_ok
+         in _sites))
+
+# ⛔⛭⛭ AND THE SECOND HALF OF THE REPAIR IS TESTED BY MAKING THE CONDITION HAPPEN, not by
+#   looking for the guard's words: the same file is copied into a repository that CANNOT resolve its
+#   introducing commit, and it must EXIT NON-ZERO.  *The message is checked only to establish that
+#   it died AT THE GUARD -- a file copied away from its siblings can fail for a dozen other reasons,
+#   and a control that accepts any failure is not a control.*
+def fails_on_empty_ownership(rel):
+    # ⌗ the WORKTREE is the real one -- the receipt's own file-existence guards must still pass, or
+    #   the control would accept a failure that has nothing to do with ownership.  Only the git
+    #   DATABASE is replaced, by an empty one, which is exactly the condition the tracer produced.
+    with tempfile.TemporaryDirectory() as _td:
+        subprocess.run(['git', 'init', '-q'], cwd=_td, capture_output=True)
+        _env = dict(os.environ, GIT_DIR=os.path.join(_td, '.git'), GIT_WORK_TREE=ROOT)
+        _r = subprocess.run([sys.executable, os.path.basename(rel)],
+                            cwd=os.path.join(ROOT, os.path.dirname(rel)),
+                            capture_output=True, text=True, timeout=900, env=_env)
+        return (_r.returncode != 0,
+                'would widen to every seat' in (_r.stdout + _r.stderr))
+
+
+_ctrls = {_n: fails_on_empty_ownership(_r) for _n, _r in (('P03', P03), ('S5', _S5))}
+for _n, (_nz, _atg) in _ctrls.items():
+    print(f'      {_n} against an empty git database, real worktree: exits non-zero {_nz}, '
+          f'at the ownership guard {_atg}')
+# ⌗ AND THE CONTROL REACHES ONE OF THE TWO SITES, WHICH IS SAID RATHER THAN AVERAGED OVER: with an
+#   empty database `S5` dies at line `310`, indexing into a list built FROM git, long before its own
+#   ownership guard.  So the guard is shown to fire at `P03`; at `S5` the same construction shows
+#   only that the receipt cannot run without its history, which is the weaker statement.
+_P03_NZ, _P03_AT = _ctrls['P03']
+_S5_NZ, _S5_AT = _ctrls['S5']
+gate(f'Ⓕ′② ⛔⛭⛭ and the EMPTY read is no longer a licence to widen, shown by MAKING THE READ '
+     f'EMPTY rather than by reading the guard\'s words: `P03` copied into a repository that cannot '
+     f'resolve their introducing commits both EXIT NON-ZERO, and `P03` exits AT THAT GUARD '
+     f'(`{_P03_AT}`) where before it fell back to every seat\'s commits.  ** The worktree is the '
+     f'real one, so the receipts\' own file-existence guards still pass --- a control that accepted '
+     f'any failure would not be one --- and that is also why the control reaches only one of the two '
+     f'sites: `S5` dies earlier, indexing a list built from git, which is said rather than averaged '
+     f'over **',
+     _P03_NZ and _P03_AT and _S5_NZ)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓖ  EVERY KEY THIS RECEIPT WRITES RUNS THE ADOPTED DANGLING TEST BEFORE IT IS WRITTEN ──\n')
