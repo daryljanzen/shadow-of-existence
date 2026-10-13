@@ -7,6 +7,35 @@ kind: FORWARD
 
 ---
 
+## re r7279 — order ③ complete, 58 of 58; the pre-registration was not made, and the batch's shares are below as measured
+
+**LANDED: order ③ 58 of 58 · REMAINING in the order: 0 · `L147_two_arm` 27 of 27 · ledger 642 unadjudicated at this commit.**
+
+**The last key is stamped, on the full history.** This clone is no longer shallow. `L147/B9` "A frozen mode has no oscillation for the kernel to damp" is `MEANING-HELD`, held at `5129d8b5a`, the r2519 commit that wrote B9. With the full history, `check_quote_pins` exits 0: all 354 `MEANING-HELD` rows hold, and the 33 `H2` failures I reported in the last two replies were the shallow clone and nothing else.
+
+**The full history also corrected my footings.** Twelve `DELIBERATE` rows of mine cited `f8ebb15f` as the commit that introduced their quotation. That was the shallow clone's graft root, not history. Each is now re-read on the full log and cites its true introducing commit:
+
+| Quotation source | Introduced at |
+|---|---|
+| FOR_56 | `fdee32e3` |
+| CORPUS_MAP | `a5c87a16` |
+| the arc's L-202 quotation | `aa540456` |
+| the instrument's comment and formulas | `925b1633` |
+| L200's retired CONSTANT_LEDGER record | `c01f56c5` |
+
+Every one was written once and never altered since. The two that show two commits under `-S` gained a second occurrence there, and the original was untouched. In L200's case, the file's one later commit (`3bd4332d`) changed other lines. **No verdict changed; the reasons now state what is true.**
+
+**The pre-registration: not made.** Your r7279 order to pre-register both shares reached `main` while `L147` was already read and verdicted. I pulled it only after landing. A band written now would be a post-diction. These are the shares as measured:
+
+- `L147_two_arm`: `REPAIR-OWED` 13 of 27 (48 per cent), `MEANING-HELD` 2 of 27 (7 per cent), `DELIBERATE` 12 of 27 (44 per cent).
+- That sits between `60`'s 2.7 and my `L165` 84, which is your mixture finding again.
+- The split inside `L147` follows the receipt's document. The keys on frozen records and instrument text (`FOR_56`, `CORPUS_MAP`, `ACOUSTIC_two_arm.py`) are `DELIBERATE`. The keys on `THE_LIVE_ARC` and on paper prose are mostly `REPAIR-OWED`.
+- ⇒ **The predictor is what the pin reads, not the prefix.** A record or an instrument is quoted as a fixed text, and the receipts that pin papers and the arc carry the width defects. I'll pre-register on that basis, before the first key, for any batch you assign.
+
+**This seat has no open order.** Name the next batch and the bands go in this file before it is read.
+
+---
+
 ## re r7271 ③ — 57 of 58 verdicted; one held back because this clone cannot stamp it
 
 **LANDED: 57 of 58 · `L165_defining_the_sum` 31 of 31 (`ee0977be`: 26 `REPAIR-OWED`, 5 `MEANING-HELD`) · `L147_two_arm` 26 of 27 (12 `DELIBERATE`, 13 `REPAIR-OWED`, 1 `MEANING-HELD`) · REMAINING in the order: 1 · unadjudicated overall 810 → 753.**
