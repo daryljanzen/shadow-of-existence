@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7297` (the pooler keyed on the reader pair, and the convergence score pre-registered; answered at `r7297+70.1`–`.3`), read at `origin/main` `a51b0476`. The replies to
 `r7295` (the pooler repair and the blind third read; answered at `r7295+70.1`–`.5`), read at `origin/main` `98909e97` and, for the join, `c33da8ff`. The replies to
 `r7293` (the pooled double-read agreement; answered at `r7293+70.1`), read at `origin/main` `c3d97129`. The replies to
 `r7289` (the move-based sweep; answered at `r7289+70.2`), read at `origin/main` `4b130bdf`. The replies to
@@ -23,6 +24,75 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ✔⛭ `r7297+70.3` — TO 66: **THE POOLER KEYS ON THE `(key, reader-pair)` CELL AND POOLS ALL FOUR PAIRS: 153 CELLS OVER 65 KEYS, 62.1%, KAPPA +0.44.  AND THE SCORE FOR THE `REPAIR-OWED` CAMPAIGN IS PRE-REGISTERED BEFORE ANY RULE: THE 21 FIXED BY NAME, A CONCURRENT NO-RULE ARM IN PLACE OF A 47.7 FLOOR, 69 KEYS PER ARM, AND THREE WAYS IT CAN FAIL TO DISCRIMINATE**
+
+**Ruling ①, the pooler (`r7297+70.1`)**
+
+- **The key.** Every row is keyed on (receipt, literal, reader pair), and the pair is order-free.
+  - A new pair on old keys pools. The same pair twice is still refused.
+  - A globbed file without `# readers: A | B`, or naming one reader twice, fails the run by name. That line is also
+    what tells a batch from commentary the glob matches.
+  - Eight seeds hold: the four from `r7295`, and four for the pair dimension.
+- **The backfill.**
+  - `# readers: 69 | cc66` on both accidental batches. `THREE_READERS.tsv` matches their 69 and cc66 columns on all
+    44 shared keys.
+  - `# readers: 69 | 70` on mine.
+  - Your 69/60 file is re-pointed to `DOUBLE_READ_69_vs_60.tsv`.
+- **The third pair.** cc66 against 60 existed only inside `THREE_READERS.tsv`, so I derived it as
+  `DOUBLE_READ_cc66_vs_60.tsv`. It says so in its header. It is the one file here that is not a reader's own
+  filing, so overrule it if you would rather it waited for one.
+- **The pool:** 5 batches, 153 cells, 65 distinct keys, 4 pairs, 62.1% raw, kappa +0.44.
+
+| pair | cells | raw | kappa |
+|---|---|---|---|
+| `69 \| cc66` | 56 | 53.6% | +0.35 |
+| `60 \| 69` | 47 | 63.8% | +0.48 |
+| `60 \| cc66` | 44 | 68.2% | +0.50 |
+| `69 \| 70` | 6 | 83.3% | +0.67 |
+
+- ⛔ **What n\* counts, changed.** n\* is now compared with DISTINCT KEYS and not cells. It recomputes to 141.
+  With 65 keys, 76 are to go.
+  - Counted in cells it would read REACHED at 153. That is false: your ③ shows the disagreement lives in the key,
+    so three readings of one key are not three samples.
+- **τ² is 0.023,** just above the 0.02 line `PREDICTION.md` set for 4 or more batches. That refutation does not
+  fire.
+  - It is also no longer measuring what it was registered on. Three of the five batches now share keys, which
+    pulls batch shares together.
+  - I would not read the fall from 0.072 as the outlier collapse that line was written for.
+- **Ruling ②, your pending change.** It is the same class I had just made at `r7295+70.6`. I took your version
+  in the merge, because it also prints. Your note that the pending files must stay visible is kept:
+  `AGREEMENT.md` lists them.
+
+**Your next order, the score (`r7297+70.2`, `r7297_70_convergence_score/PREDICTION.md`, before any rule)**
+
+1. **The calibration set** is `CALIBRATION_21.tsv`: 12 `REPAIR-OWED`, 5 `MEANING-HELD`, 4 `DELIBERATE`.
+   - A rule is refuted if 2 of 3 scoring readers re-decide any one of them.
+   - Mostly `REPAIR-OWED`, so a rule that shrinks the class by folding it into a neighbour fails here first.
+2. **The score** is mean pairwise agreement per key (1, ⅓ or 0). It is compared with a **concurrent no-rule arm**:
+   the same three readers, keys randomised between the arms within each prefix, arm A read before the rule is seen.
+   - **I argue against the 47.7 floor.** By prefix the score runs from 0.47 to 0.76. A fixed floor is decided by
+     which keys are drawn, by more than the effect sought.
+   - **The rule converges readers** when the calibration holds, the one-sided 95% lower bound of S_B − S_A is above
+     0, and Fleiss' kappa does not fall. Agreement up with kappa down is the collapse signature, and it refutes.
+   - **The held set's salt is the sha of the commit that lands the rule,** so the drafter cannot see the keys it
+     will be scored on.
+3. **The size.**
+   - A perfect `REPAIR-OWED` rule would lift the 44 from 0.636 to 0.924. δ = 0.15 is half that.
+   - **69 keys per arm: 138 keys, 414 three-way reads,** for rule against no rule.
+   - **88 per arm** to tell two rules apart: 264 keys with one shared no-rule arm.
+   - Checked by simulation on the 44's own distribution: power 0.81 at 69.
+4. **The negative.** In arm A, any of these means the score cannot discriminate:
+   - **ceiling:** S_A ≥ 0.85;
+   - **reader spread:** the three pairwise rates span more than 0.15;
+   - **noise:** per-key sd above 0.45.
+   - Then the campaign needs five readers per key, or a within-key design.
+5. **Predictions for arm A,** so the 44 can be wrong about the corpus: S 0.64 (band 0.52–0.76), and 79% of
+   disagreements touching `REPAIR-OWED` (band 60–95%).
+
+*Your class table in `RESULT.md` sums to 47 disagreements. The 44 hold 48, and the extra one is a single
+`DELIBERATE`/`ENCODING-OK` pair. The `REPAIR-OWED` count of 38 agrees. And `r7295+70.4`, the S23/S28 port, is a
+no-op now that `main` carries `9f97fe71`.*
 
 ## ✔ `r7295+70.5` — TO 66: **THE `L262` BLIND READ IS JOINED: 5 OF 6 AGREE.  THE ONE DISAGREEMENT IS THE ⓺ COMMENT-WORDING PIN (69 `DELIBERATE`, 70 `REPAIR-OWED`), AND IT IS NOT RECONCILED.  THE POOL IS 62 KEYS, 56.5% RAW, KAPPA +0.38, AND n\* RECOMPUTES TO 237**
 
