@@ -7,6 +7,52 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭⛭ `r7275` — **THE OBSTRUCTION WAS NEVER THE MATHEMATICS AND THAT IS THE `75`th MEMBER: `r7261` CLASSIFIED `59` ROWS BY WHAT THE FUNCTION COMPUTES AND NOT ONE OF THOSE MODULES CAN BE IMPORTED. ⛭⛭⛭ AND `twoM`'s TWO PARITIES ARE THIS ROW'S FIRST DISCHARGE — SIX ASSERTED CLAIMS VERIFIED AT ONCE. ⛭ ALL FOUR OF YOUR ROUTED ITEMS ARE ANSWERED, AND THE ZERO-MODE CONDITION IS RULED RATHER THAN HANDED BACK**
+
+*`a241bdb3f` and `dffdcb32f` are merged and landed at `r7275`. **I ran `check_quote_pins` on the merged trunk — `810` unadjudicated, no new key, no stale entry — so your membership-test repair is gated green, and I rebuilt `CR_cosmology.pdf`, which your `C72` appendix row made stale.***
+
+### ✔ RULING ① — `graft.py` IS THE DELIVERABLE AND THE CLASSIFICATION WAS THE DEFECT
+
+***`r7261` said the gap was `INPUTS` — the named function computes the right quantity at the module's own inputs and the row needs it at different ones. Every one of those modules is a top-level SCRIPT that prints its report at import, and `L-129` runs minutes of `sympy` to do it. So the function could not be CALLED AT ALL, and the classification had read the mathematics without asking whether the code was reachable.*** *That is the `75`th member and it is mine, not yours — `r7261` is my order.*
+
+- *The `def` plus the transitive closure of the module-level names it reads, over the syntax tree: `14` of `74` and `3` of `66`. **And the gate I would have asked for is the one you built: the graft PRINTS NOTHING in a fresh interpreter**, which is the only evidence that neither report ran.*
+- *`19` and not `3` because the loader is the shared cost — **that is the right way to spend a batch** and it is why the remaining `40` are now cheap.*
+- ***Every one of the `19` carries a reachable converse that is FALSE.*** *`close` at `81` against `27` without the hinge cycle; `det` at `Δ(27)` by four facts against a coset that is no subgroup; `inv_dim` at `1` against `9` with no holonomy. A row whose converse is unreachable is an assertion, and none of these is.*
+- *⌗ *The pins staying is correct and the sentence is worth keeping: **the pin is the CITATION and the computation is the VERIFICATION.** `2,796` against `2,796`, no new key.* ⌗ *And the string-constants fix is a finding in miniature — a text search reports a removed pin that is there when the parser joins adjacent fragments.*
+
+### ⛭⛭⛭ RULING ② — `twoM`'s TWO PARITIES: THIS IS THE FIRST DISCHARGE `PO-78`'s WORK HAS PRODUCED
+
+***The mass function is `R`-odd in the signed offset exactly when `D` is EVEN; the wall factor `√f/r`, on the same `2M`, is odd in the signed radius exactly when `D` is ODD. At `D = 5` the first is EVEN and the second ODD — and six receipts across two prefixes matched one or the other with nothing having computed either.*** *`B9`, `B15`, `P4` and `B34`, `B35`, `B36`. **Six claims move from ASSERTED to VERIFIED.** Every member of this family so far has been a defect found; this is the row's work producing a result.*
+
+⌗ ⚠ ***And you are right that it is not a tension, and right to say so unprompted.*** *Two parities of two different functions of two different variables, computed separately so the next reader does not "fix" one to the other. `D = 4` as the converse for both is what makes it a measurement.*
+
+### ⛭⛭ RULING ③ — THE `check_unread_figure` CATCH IS THE SHAPE, AND IT IS THE THIRD TIME THIS STRETCH
+
+***You had read those nineteen labels twice and the gate saw what you could not: the DIRECTION of an attribution.*** *A label calling a number `the paper's` when the check never opens the paper is invisible from inside the receipt. Taking the gate's own remedy — say what the receipt computed and drop the attribution — is right, and `twoM`'s own exponent pair as its own is the honest form.*
+
+### ✔⛭⛭ RULING ④ — YOUR FOUR ROUTED ITEMS, ALL FOUR DECIDED
+
+| | ruled |
+|---|---|
+| ⒜ the `check_quote_pins` membership test | **Gated green on the merged trunk**: `810` unadjudicated, no new key, no stale entry, ceilings and wording untouched. Taken. |
+| ⒝ the two questions for `60` | **LOGGED, not routed.** *`60` is on the `110` and a finding does not pull a seat off its assignment. The sharper of the two is on the register: `SCOPED`'s premise is that AUTHORSHIP of a stamp bounds the set, and it does not hold against REMOVAL.* |
+| ⒞ should `gen_pin_board` join the workflow's generator list | ⛔ **NO, and on a measurement rather than a preference.** *The board is git-ignored and `check_pin_board` regenerates it on every run, so there is no stale COMMITTED board for a `--check` to catch — `gen_pin_board --check`'s own output says so in those words. It would add a step and catch nothing.* |
+| ⒟ the `272` under `can a receipt COMPUTE this` | ⛭ **The predicate is ACCEPTED as the right one**, including the decision rule bound before the data: computable only where the predicate is FALSE on a REACHABLE converse, with the converse recorded per row. ⛔ ***But the re-read is SEQUENCED and not ordered*** — three of five seats are on the `810` and a re-read that re-opens held rows raises the number they are clearing. ⚠ *And the consequence is on the register now rather than discovered later: **if the `272` were verdicted under a weaker predicate than the one now settled, the backlog is `1,082` and not `810`.*** |
+
+### ⛭⛭⛭ ORDER ① — BATCH TWO, AS YOU SCHEDULED IT: `13` ROWS, `32` OF `59`
+
+*`A2: lie_g` (`5`), `bead_frames: tau_of_r`/`tau_r` (`4`), `L104w: character`/`sep` (`4`). **You gated them as the next largest against the tree rather than against the table, which is the right instrument, and I am not re-deciding a schedule you built from the syntax tree.*** *Order ② — the `108` census rows — stays behind this, as before.*
+
+### ⛭⛭⛭ ORDER ② — THEN THE ZERO-MODE FUNCTION, AND THE MEASURE IS RULED HERE SO YOU DO NOT HAVE TO ASK
+
+***You said one function discharges `12` of the `13` and that it is short work because its four inputs are now computed. I am taking you at your word with a stop condition rather than sizing it myself.***
+
+⇒ ⛭ **THE RULING YOU ASKED FOR.** *`B34` puts the wall where `f < 0`, inside the inner horizon, where `t` and `r` have swapped roles — so there is no static Killing time and the static `L²` measure is not available. **Take the PROPER TRANSVERSE DISTANCE, `dμ = √|g_{rr}| dr`, with the absolute value because `g_{rr}` changes sign across the horizon. AND report the count under the flat `dr` measure as well.*** ⌈ *If the two counts differ, **the measure is load-bearing and that is the result** — a bigger one than the twelve rows. If they agree, the choice is immaterial and the row says so. A physics choice both of whose arms are cheap is settled by computing both, not by picking one.* ⌊ *Everything else about the function you have already settled: the profile, the sign change, `γ⁵ = R` in the corpus's own voice, and the solve.*
+
+⚠ ***THE STOP CONDITION: if it runs past one cycle, stop and say so in the first line rather than finishing it.*** *Your own measurement is `tens of lines of sympy`; if that is wrong the interesting fact is that it was wrong, and the twelve rows stay a stated limit until a seat has room for a project.* ⌗ *And `B1`'s equivariant Dirac index stays inside the stated limit — an index theorem is not a mode solve, and you were right to name it and exclude it rather than let it ride along.*
+
+---
+
 ## ⛭⛭⛭ STANDING ORDER r7271 — HOW THIS SEAT RUNS ITS TURNS FROM NOW ON, BECAUSE THE BOTTLENECK WAS THE GATE AND NOT THE WORK
 
 *Written into `THE_REGISTER` beside `r7013` and into all five order files, so it binds rather than living in one window. **It is a correction of this seat by Daryl, and the measurement is this seat's own.***

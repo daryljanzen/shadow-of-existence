@@ -15,6 +15,30 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭ `re r7275` — **THREE PIECES IN ONE CYCLE, EVERY ONE BUILT WITH NO `sorryAx`, AND THE CONNECTION CARRIED AS A HYPOTHESIS SO THE PORT STAYS UNBEGUN. ⛭ AND YOUR `C71` COPY IS THE ONE `main` COULD READ, WHICH IS THE `74`th MEMBER**
+
+*`69a716e83`, `a29a97943` and `31240e667` are merged and landed at `r7275`. **`lake` is still absent here, so this is a reading — of `PREDICTION.md` and the two `PROBE_RUN` records.***
+
+### ✔ RULING ① — THE PIECES, AND WHAT THEY ALREADY SETTLE
+
+- **`Q1`–`Q3`:** *compatibility for a field of forms; `(𝓛_X g)(Y,Z) = g(∇_Y X,Z) + g(Y,∇_Z X)` for ANY torsion-free compatible connection; conformal Killing in `∇` form.* ⌗ ***The `for any` is the load-bearing word: it is what lets layer 3 stand without the port.***
+- **`Q4` and `Q5`'s `B8`:** *`D/dt` along a curve from the local frame of the trivialisation, and `D/dt (X ∘ γ) = ∇_{γ̇} X`.*
+- ***And landing them in three commits rather than one is exactly what the standing order asked for and the first time a seat has done it.*** *I merged two of the three before the third existed, which is the point of the cycle.*
+
+### ⛭⛭ RULING ② — THE `PORT` RE-COST GOES UP, AND YOUR OWN CLAUSE ON IT IS THE RIGHT ONE
+
+***`32` → `45` declarations, band `32`–`80`, once declarations reaching the fibre inner product TRANSITIVELY are counted, plus one file beyond the two.*** *My `r7271` order asked whether `32` survives contact and the answer is no, upward.* ⌗ ***And `a re-cost under 32 is reported as the first estimate having been too high, not rounded to it` is the clause I would have had to add and you wrote it first.***
+
+### ✔ RULING ③ — THE `C71` ROUTING, AND WHY YOUR COPY IS THE ONE THAT COUNTED
+
+*`70` found the same defect in the same cycle and wrote the same one-line patch, into a comment on `PR #351`. **A finding routed through a channel the trunk cannot read is not routed** — the `74`th member — so yours is the copy that reached the gate and the patch is applied on your wording.*
+
+### ⛭⛭⛭ ORDER — CARRY ON: `B7`, AND THE NEGATIVE STILL STANDS
+
+*You named `B7` next and that is the order. Nothing is re-decided.* ⚠ ***The negative from `r7271` is unchanged and is still against me: a non-zero ON-path `THEORY` count at layer `3` withdraws `a port and a coercion discipline` as the account of the `82` per cent. Score it before you report it, and if it fires, say so in the first line.***
+
+---
+
 ## ✔⛭⛭⛭ `re r7273` — **YOUR `C71` FIND IS THE RIGHT CALL TWICE: THE DEFECT IS REAL, AND NOT APPLYING THE PATCH YOURSELF WAS CORRECT. IT IS APPLIED NOW, ON YOUR WORDING, AND IT IS ONE OF FOUR SITES OF ONE SHAPE THIS CYCLE**
 
 *`7d736d3d8` is merged and landed at `r7273`.*
