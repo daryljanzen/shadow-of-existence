@@ -12644,3 +12644,49 @@ check('⚠ and PO-5 was open when this receipt was written -- the register owns 
 
 ⌈ *And the `0` counts rows whose RECORDED ground is the subject rule. A row verdicted on the arm without saying so would be invisible to it; what the census can assert is that no reason named no ground, and it does.*
 ⌊ ⌗ *Order ② next: the `56` keys, prefix by prefix, shares pre-registered per prefix as each lands.*
+
+
+---
+
+# ⛭⛭ `r7296` — **TOOK AND READ: `L811_po7_inversions_closed`, `P14_matter_sector_paper`, `L150_the_datum`, `L803_station9_neff`, `L210_entry_points` — `56` KEYS LANDED, `309` REMAIN.** ⛔⛭⛭⛭ AND FOUR OF MY EIGHT REGISTERED BANDS ARE MISSED, EVERY ONE IN THE SAME DIRECTION
+
+*The declaration first, as the endgame protocol asks. All five read whole, every key at its site. `receipts/L_probability/S32_…`, `9` gates. The backlog figure the registration predicted — `309` — is exact.*
+
+| prefix | keys | `REPAIR-OWED` | band | `MEANING-HELD` | band |
+|---|---|---|---|---|---|
+| `L811_po7_inversions_closed` | `12` | `16.7` | *unregistered* | `0.0` | *unregistered* |
+| `P14_matter_sector_paper` | `12` | `33.3` | `30`–`70` ✔ | **`41.7`** | `0`–`35` ⛔ |
+| `L150_the_datum` | `11` | `45.5` | `30`–`70` ✔ | **`54.5`** | `0`–`40` ⛔ |
+| `L803_station9_neff` | `11` | **`45.5`** | `0`–`30` ⛔ | `0.0` | `0`–`25` ✔ |
+| `L210_entry_points` | `10` | **`60.0`** | `10`–`55` ⛔ | `0.0` | `0`–`35` ✔ |
+
+## ⛔⛭⛭⛭ FOUR OF EIGHT MISSED, AND ALL FOUR IN THE SAME DIRECTION — ABOVE
+
+***`REPAIR-OWED` above its band on both `TOKEN`-heavy prefixes; `MEANING-HELD` above its band on both `SENTENCE`-heavy ones.*** *Not one miss in each direction, which would be noise. **Four in one direction, which is a bias.***
+
+⇒ ***And these bands were as wide as I could honestly draw them without an instrument — `30`–`70` on two of them.*** *So this is the argument for your own `r7289` ruling, from the other side: **the mode call is optional because a call with no instrument behind it is a guess, and a BAND with no instrument behind it is the same guess with error bars.** ⌗ I would rather report four misses in one direction than four hits inside bands that could not be missed.
+
+⌈ ⚠ ***What it does not say***: *a direction is not a correction. It does not say where the bands belong, and nothing here builds the instrument that would.*
+⌊ ⌗ *And the four were chosen BY WEIGHT, not at random, and weight tracks receipt count — so a heavier prefix may just be one whose author pinned more prose. That is a confound in the selection, and it is mine.*
+
+## ✔⛭⛭ THE ONE PREDICTION THAT NAMED ITS OWN REFUTATION FIRED EXACTLY AS WRITTEN
+
+*I registered `L803` as `TOKEN`-dominated with a `30` per cent ceiling, **and wrote down what breaking it would mean**: that the narrower-than-claim family is reaching TOKENS at a rate this seat has not seen.*
+
+***It came in at `45.5`, and the two rows that put it there are a single COMMON WORD and a WORD STEM — both `TOKEN` tier, both `CANNOT FAIL`.*** ⇒ **A band that says what breaking it would MEAN is worth more than a band that is merely narrow**, and that is the one piece of this registration I would keep.
+
+## ⛔⛭⛭⛭ AND THE SUBJECT TEST I REPAIRED ONE REVISION AGO HAS A FALSE POSITIVE, FOUND BY USING IT
+
+*`the same standard datum that fixes both the light-element abundances and the microwave-background peak heights` is a NOUN PHRASE with no main verb of its own — the predication sits outside the span — and the repaired test reads it as naming its subject.*
+
+⇒ ***It cannot tell `determiner + noun + restrictive relative + MAIN VERB` from the same thing with no main verb at all.*** *`r7294`'s fourth condition keyed on the COMMA, which correctly keeps `a consistency check that matches nothing is green forever` — and a restrictive relative carries no comma either way, so the comma cannot separate these two.*
+
+⌈ ***Routed with its discriminator and NOT applied: after stripping a restrictive relative, a finite verb must REMAIN.*** *Gated here on both spans — it rejects the false positive and keeps the one it must not break — but not landed, because one repair per revision is what keeps a measurement a measurement.*
+⌊ ⌗ *Third time in three revisions that an instrument of mine was bounded by what it had not yet been run on. **I am starting to think that is not a defect rate either.***
+
+## ⌗ TWO SMALLER THINGS, BOTH MINE
+
+- ***`L811`'s shares are REPORTED and not registered***, *and the registration says so in its own first section rather than quietly covering it: its twelve literals were read while I surveyed the claim.* ⇒ **A claim and a pre-registration are two pushes, and surveying what you claimed is already reading it.** *The claim should carry the shares, or the survey should stop at the counts. I will do the former next time.*
+- ***The closed word lists showed their lower-bound property twice at the row level***: *a participle absent from `LEAD`, a main verb absent from `FINITE`. Two rows are verdicted on what the header RULE says while the arm stays silent — stated per row, because their grounds are my reading and not the instrument's output.*
+
+⌗ *Remaining by weight, all unclaimed as far as I can see: `L258_the_pin_and_the_thing_that_moves` `10`, `L272_the_survey_that_was_a_memory` `10`, `L200_free_data_count` `10`, `L202_the_seam` `9`. **I will take the next `40`–`60` on the same protocol unless you name otherwise — and with the shares in the CLAIM commit this time.***
