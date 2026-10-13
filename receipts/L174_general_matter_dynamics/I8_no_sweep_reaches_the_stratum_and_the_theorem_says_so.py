@@ -88,30 +88,70 @@ def main():
           'the transverse coordinates' in p9)
     check('and that a sweep generates a deformation of FIXED orientation',
           'a sweep generates a deformation of \\emph{fixed} orientation' in p9)
+    # ⛭ WIDENED r7287+cc66: three words with no verb, `such` pointing outside, carrying neither
+    #   the substrate nor the angle -- and the hinge COUNT is what ⓵ asks about.  Widened to P3's
+    #   own clause.
     check('while P3 records that the substrate carries THREE hinges, 120 degrees apart',
-          'three such hinges' in p3)
+          'The substrate in fact carries three such hinges, $120^{\\circ}$ apart at '
+          'transverse distance $2\\alpha$' in p3)
 
     # ⓶ the theorem covers all H
+    # ⛭ WIDENED r7287+cc66: the span OPENED ON A PARTICIPLE with its subject outside, and the
+    #   binding of $H$ is the whole of what this receipt establishes.  ** One widened span now
+    #   carries the hypothesis AND the conclusion, so the separate `Then the generated geometry is
+    #   invariant under $H$` pin -- a whole clause with $H$ FREE in it, which held for a paper
+    #   binding $H$ to one one-parameter sweep -- is retired into it. **
     check('⛭ thm:bound is stated for A SUBGROUP $H\\subseteq\\so$ -- any subgroup, any dimension',
-          'swept or reassigned by a subgroup $H\\subseteq\\so$' in p9)
+          "swept or reassigned by a subgroup $H\\subseteq\\so$ of the substrate's "
+          'isometries. Then the generated geometry is invariant under $H$' in p9)
     check('and concludes the generated geometry is INVARIANT UNDER $H$',
-          'Then the generated geometry is invariant under $H$' in p9)
+          "swept or reassigned by a subgroup $H\\subseteq\\so$ of the substrate's "
+          'isometries. Then the generated geometry is invariant under $H$' in p9)
+    # ⛭ WIDENED r7287+cc66: `those orbits` pointed at `the orbits of $H$` outside the span, and
+    #   `is not of this form` in the converse sentence pointed at thm:bound's form.  ** ONE widened
+    #   span covers the whole proof, so both referents are inside it and the converse pin is
+    #   retired into it. **  ⌗ (2) rules a demonstrative SUBJECT dangling and names only `a
+    #   pronoun` as object, so a demonstrative NOUN PHRASE in the complement sits between its
+    #   halves -- read in the clause's general sense here and routed to 66 as a wording boundary.
     check('with a one-line proof: the induced metric is constant along those orbits BY CONSTRUCTION',
-          'the induced metric is constant along those orbits by construction' in p9)
+          "The sweep maps the slicing object along the orbits of $H$; the induced metric "
+          'is constant along those orbits by construction, so $H$ acts by isometries '
+          "of the generated geometry. The sweep-subgroups available are the subgroups "
+          "of the substrate's isometry group $\\so$. A geometry with no continuous "
+          'isometry, or whose isometry group contains no $\\so$-subgroup acting as a '
+          "sweep, is not of this form" in p9)
     check('⇒ so the reading of "a sweep, singular" was wrong -- the theorem already quantifies over '
           'every sweep-subgroup',
-          'swept or reassigned by a subgroup $H\\subseteq\\so$' in p9)
+          "swept or reassigned by a subgroup $H\\subseteq\\so$ of the substrate's "
+          'isometries. Then the generated geometry is invariant under $H$' in p9)
 
     # ⓷ composing makes it worse
+    # ⛭ WIDENED r7287+cc66: the span ended on the transitive `frees` with its object -- the
+    #   pronoun `it`, and (2)'s own exemplar -- outside it, so it was satisfied by that loss
+    #   freeing ANYTHING.  Widened back to the antecedent, which is the radiation.
     check('the wall is the loss of ALL confining symmetry',
-          'only the loss of all confining symmetry frees' in p9)
+          'High symmetry forbids radiation (Birkhoff and its analogues); intermediate '
+          'symmetry confines it to a reduced propagation that a residual isometry still '
+          'pins---the cylindrical Einstein--Rosen and Gowdy waves, type I with two '
+          'Killing vectors, hence in the reachable sector by Theorem~\\ref{thm:range} '
+          'and lying on its edge; only the loss of all confining symmetry frees it' in p9)
     check('⇒⇒ SO A LARGER $H$ MEANS MORE ISOMETRY, hence FURTHER INSIDE the symmetry-reducible sector '
           '-- composing sweeps moves AWAY from the wall',
-          'the range is contained in the symmetry-reducible sector' in p9
-          and 'only the loss of all confining symmetry frees' in p9)
+          'Consequently every geometry in the range of the operator carries an isometry '
+          'group containing a sweep-subgroup of $\\so$, and the range is contained in '
+          'the symmetry-reducible sector of general relativity' in p9
+          and 'High symmetry forbids radiation (Birkhoff and its analogues); intermediate '
+          'symmetry confines it to a reduced propagation that a residual isometry still '
+          'pins---the cylindrical Einstein--Rosen and Gowdy waves, type I with two '
+          'Killing vectors, hence in the reachable sector by Theorem~\\ref{thm:range} '
+          'and lying on its edge; only the loss of all confining symmetry frees it' in p9)
     check('⇒ and a geometry with no continuous isometry "is not of this form"',
-          'A geometry with no continuous isometry, or whose isometry group contains no '
-          '$\\so$-subgroup acting as a sweep, is not of this form' in p9)
+          "The sweep maps the slicing object along the orbits of $H$; the induced metric "
+          'is constant along those orbits by construction, so $H$ acts by isometries '
+          "of the generated geometry. The sweep-subgroups available are the subgroups "
+          "of the substrate's isometry group $\\so$. A geometry with no continuous "
+          'isometry, or whose isometry group contains no $\\so$-subgroup acting as a '
+          "sweep, is not of this form" in p9)
 
     # ⓸ and what the corpus already says
     # ⛔⛭ AMENDED r4514.  ** P9's `cor:wall` WAS REWRITTEN -- it is "The wall is inhomogeneity" now,
@@ -135,7 +175,8 @@ def main():
     check('⇒⇒ SO THE TWO-FUNCTION GAP WAS NEVER THE OPERATOR\'S TO FILL: the construction generates '
           'the data, ordinary GR evolves it past the wall',
           _ORD.search(p9) is not None
-          and 'swept or reassigned by a subgroup $H\\subseteq\\so$' in p9)
+          and "swept or reassigned by a subgroup $H\\subseteq\\so$ of the substrate's "
+              'isometries. Then the generated geometry is invariant under $H$' in p9)
 
     print()
     if FAILED:

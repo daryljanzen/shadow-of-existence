@@ -122,16 +122,26 @@ def main():
         if not l.lstrip().startswith('%')))
 
     # ⓵ P11's seam, at source
+    # ⛭ WIDENED r7287+cc66: the two halves of ONE sentence were pinned as two spans and BOTH
+    #   dangled in opposite ways -- the first opened on the finite verb `evolves` with its subject
+    #   outside, the second dropped the existential `there is` that makes it a claim.  ** One
+    #   widened span carries the subject and both halves. **
     check('P11: "A first-class constrained system evolves consistently to all orders by the contracted '
           'Bianchi identity: there is no classical dynamical obstruction at any order"',
-          'evolves consistently to all orders by the contracted Bianchi identity' in p11
-          and 'no classical dynamical obstruction at any order' in p11)
+          'A first-class constrained system evolves consistently to all orders by the '
+          'contracted Bianchi identity: there is no classical dynamical obstruction at '
+          'any order' in p11)
+    # ⛭ WIDENED r7287+cc66: the span's OBJECT was the demonstrative `this`, whose referent is
+    #   the sentence before it -- and that referent is exactly what this receipt's split turns on,
+    #   the Bianchi count being the FREEDOM half.  Widened to carry what is being sharpened.
     check('and P11 itself marks the NEXT layer as separate: "Two exact structures sharpen this beyond '
           'the Bianchi count"',
-          'Two exact structures sharpen this beyond the Bianchi count' in p11)
+          'there is no classical dynamical obstruction at any order. Two exact structures '
+          'sharpen this beyond the Bianchi count' in p11)
     check('⇒ so P11 has TWO layers, and the FREEDOM sits in the first while the Gowdy-specific '
           'structures sharpen STABILITY',
-          'Two exact structures sharpen this beyond the Bianchi count' in p11)
+          'there is no classical dynamical obstruction at any order. Two exact structures '
+          'sharpen this beyond the Bianchi count' in p11)
 
     # ⓶ the independent test
     res, g, deps = bianchi_residual()
@@ -147,12 +157,25 @@ def main():
           all(sp.simplify(v) == 0 for v in res) and all(s in fs for s in (t, x, z)))
 
     # ⓷ what P11 routes out, and what stays open
+    # ⛭ WIDENED r7287+cc66: `'Friedrich' in p11 or 'Ringstr' in p11` was a disjunction over TWO
+    #   DIFFERENT RESULTS rather than two states of one text -- not ALT-OK under r7271 ruling ② --
+    #   and both arms were surnames that could not fail (5 and 4 occurrences), with `Ringstr`
+    #   clipped MID-NAME because `H3`'s normaliser does not read through the LaTeX accent in
+    #   `Ringstr\"om`.  ** Each arm is now the clause that does the routing, accent and all. **
     check('⚠ and P11 routes the general/all-data stability statement OUT, to external results',
-          'Friedrich' in p11 or 'Ringstr' in p11)
-    check('with Nariai the named non-generic exception', 'Nariai' in p11)
+          'Friedrich proved the nonlinear stability of de Sitter in vacuum with $\\Lambda>0$' in p11
+          or 'Ringstr\\"om extend cosmic no-hair and future stability to \\emph{all} data in '
+          'the $T^3$-Gowdy class' in p11)
+    # ⛭ WIDENED r7287+cc66: one word at 9 occurrences, carrying neither `non-generic` nor
+    #   `exception`, replaced by the paper's own clause for the claim.
+    check('with Nariai the named non-generic exception',
+          'the one non-generic exception, the Nariai branch' in p11)
     check('⇒ so what the Gowdy scoping leaves open is the narrower STABILITY question, in a named and '
           'externally-bounded way',
-          ('Friedrich' in p11 or 'Ringstr' in p11) and 'Nariai' in p11)
+          ('Friedrich proved the nonlinear stability of de Sitter in vacuum with $\\Lambda>0$' in p11
+           or 'Ringstr\\"om extend cosmic no-hair and future stability to \\emph{all} data in '
+           'the $T^3$-Gowdy class' in p11)
+          and 'the one non-generic exception, the Nariai branch' in p11)
 
     # ⓸ and cc54's own filing judgement
     own = os.path.join(ROOT, 'receipts', 'L801_nonlinear_shear_freedom')

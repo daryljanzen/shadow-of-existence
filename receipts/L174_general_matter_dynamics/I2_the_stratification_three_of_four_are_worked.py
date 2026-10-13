@@ -111,12 +111,19 @@ def main():
           _CLOSED.search(p11) is not None and 'K_{G}' in p11)
     check('and P11 states its content: "the rate at which the symmetric cut\'s bend changes in time '
           'is the bend itself"',
-          "the rate at which the symmetric cut's bend changes in time is the bend itself" in p11)
+          # ⛭⛔ WIDENED r7287+cc66, AND THIS ONE WAS THE SHARPEST ROW IN THE RECEIPT: the span
+          #   stopped at the comma and dropped the paper's OWN HEDGE, so it asserted a BARE
+          #   IDENTITY where P11 asserts a PROPORTIONALITY -- and the equation it glosses carries
+          #   the factor $r$ explicitly.  The qualifier is now inside the span.
+          "\\emph{So the rate at which the symmetric cut's bend changes in time is the "
+          "bend itself}, up to the areal factor" in p11)
 
     # stratum 2: LTB, exhibited by this line
     check('the spherically symmetric general case was exhibited at r2450 -- LTB with Lambda, one '
           'equation per comoving shell',
-          'one equation per comoving shell' in arc or 'ONE equation per comoving shell, and the shells do n' in arc)
+          # ⛭ WIDENED r7287+cc66: an appositive with one term inside and its head outside.
+          'evolution $\\ddot R=-m(r)/R^2+\\Lambda R/3$, one equation per comoving shell' in arc
+          or 'ONE equation per comoving shell, and the shells do n' in arc)
 
     # stratum 3: Gowdy, worked in P11
     check('⛭ P11 works the FIRST inhomogeneous time-dependent bend explicitly: a polarized '
@@ -128,7 +135,11 @@ def main():
           _SHEAR.search(p11) is not None and _CONSTR.search(p11) is not None)
     check('⇒ and it locates that stratum: "the Type-I edge of the isotropy stratification---the LAST '
           'CONFINED STRATUM BEFORE THE WALL"',
-          'the last confined stratum before the wall' in p11)
+          # ⛭ WIDENED r7287+cc66: an appositive naming a POSITION without naming the stratum
+          #   it is a position of; widened to prop:twoKV's own clause.
+          'admits exactly two Killing vectors, $\\partial_x$ and $\\partial_y$'
+          '\\rcpt{P11_twoKV}, and so occupies the two-Killing-vector (Type-I) '
+          'stratum---the last confined stratum before the wall' in p11)
 
     # stratum 4: not worked
     check('⇒⇒ SO THE UNBUILT STRATUM IS THE ONE WITH NO CONTINUOUS ISOMETRY -- P11 carries ZERO uses '
@@ -137,7 +148,10 @@ def main():
           and len(re.findall('no continuous isometry', p11, re.I)) == 0)
     check('while P9 states the wall IS inhomogeneity: "a geometry with no continuous isometry admits '
           'no sweep-subgroup"',
-          'no continuous isometry admits no sweep-subgroup' in p9)
+          # ⛭ WIDENED r7287+cc66: the clip MANUFACTURED A FALSE SUBJECT -- read alone it
+          #   asserted something about isometries rather than about geometries.
+          'A geometry with no continuous isometry admits no sweep-subgroup of $\\so$ to '
+          'anchor the construction' in p9)
 
     # the wall's character, settled without evolving past it
     # ⛔⛭ AMENDED r4516: P11's `prop:radiative-wall` was rewritten to argue the two species SEPARATELY
@@ -160,7 +174,9 @@ def main():
     check('⚠ so P9\'s citation covers the METHOD (ordinary GR evolution, worked on the confined '
           'stratum) rather than the CASE, and does not say which',
           _CITES.search(p9) is not None
-          and 'the last confined stratum before the wall' in p11)
+          and 'admits exactly two Killing vectors, $\\partial_x$ and $\\partial_y$'
+              '\\rcpt{P11_twoKV}, and so occupies the two-Killing-vector (Type-I) '
+              'stratum---the last confined stratum before the wall' in p11)
 
     print()
     if FAILED:

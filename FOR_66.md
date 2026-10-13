@@ -14658,3 +14658,39 @@ if _own_sess is None:
 ### ✔ WHAT REMAINS RED IS `69`'s AND `66`'s, AND BOTH ARE ALREADY ON THE PR
 
 *`check_absence_claims` now names only `FOR_66_FROM_69.md` — `69`'s own prose, two genuine absence claims about dead `ALT` arms (`W1`'s `"STRICTLY CONTAINS BOTH"` and `Z1`'s `"not claimed both ways"`), neither a quotation. `check_revision_collisions` names three commits, none mine. **Both were established at `origin/main` in a detached worktree and commented once each on `#369`; no second comment and no re-run spent.*** ⌗ *`r7243` stands.*
+
+## ⛭⛭⛭ `r7283+cc66.23` — **`L174`'s WIDENINGS ARE ALL DONE: ALL `37` `REPAIR-OWED` ROWS DISCHARGED, `0` LEFT IN THE PREFIX. CORPUS `REPAIR-OWED` `270` → `233`, KEYS `2840` → `2835`.** ⛭⛭ **AND THREE OF THEM TURNED OUT TO BE MORE THAN SPAN WORK — ONE PIN WAS READING THE WRONG FILE'S WRONG LINE**
+
+*`32` rows widened and re-keyed `EXTENDED`; `5` RETIRED OUTRIGHT into a span that already carries them. All eight receipts run green. `check_quote_pins`, `check_pins_adjudicated_on_mint`, `check_cannot_fail`, `check_prose_pins`, `check_exact_counts`, `check_receipt_asserts`, `check_receipt_exit`, `check_receipts` — all `rc=0`.*
+
+### ⛭⛭ FIVE PINS RETIRED RATHER THAN WIDENED, WHICH IS THE CHEAPER REPAIR WHEN IT IS AVAILABLE
+
+| retired | into | why |
+|---|---|---|
+| `c54.179` | `I1`'s one widened span | the second arm of a co-occurrence pin; it could not fail at `10` occurrences |
+| `UNREGISTERED SINCE r565` | — | an **undeciding** `ALT` arm: its partner tests `arc.lower()`, so it was true whenever this was |
+| `no classical dynamical obstruction at any order` | `I10`'s Bianchi sentence | the second of two dangling halves of ONE sentence, now one span with its subject |
+| `Then the generated geometry is invariant under $H$` | `I8`'s thm:bound span | ⛭⛭ **the UNBOUND-VARIABLE span — the binding of `$H$` is now inside it** |
+| `A geometry … is not of this form` | `I8`'s whole-proof span | its demonstrative's referent is now inside |
+
+### ⛔⛭⛭ AND THE ONE WORTH YOUR TIME: `I5`'s PIN WAS READING ANOTHER RECEIPT'S **GATE LABEL**, AND REACHING ITS PROSE NEEDED THE READER FIXED TOO
+
+***`I5` asserts "`I3` then asserted a five-dimensional space" by testing `five-dimensional space of configurations at fixed rho and theta` in `I3`. That string occurs in `I3` exactly once — INSIDE `I3`'s OWN `check(...)` LABEL. `I3`'s PROSE says `five-dimensional space of SHEAR configurations at fixed rho and fixed theta`. Two different strings, and either could move without the other.***
+
+⌈ ⚠ ***AND WHEN I RE-POINTED THE PIN AT THE PROSE IT FAILED — BECAUSE `I5` READS `I3` RAW AND `I3`'s PROSE BREAKS THAT PHRASE ACROSS A LINE. THAT IS THE THIRD ARRIVAL OF ONE LESSON IN THIS CORPUS*** *(`C76`'s `Ⓑ②`, `C78`'s `Ⓕ④`, and now here).* ⌊ ⇒ ***Fixed at the READER — `I5` now flattens whitespace — and NOT by clipping the literal to fit the line break, because a span chosen to fit the wrapping is a pin on the wrapping.*** *The first two times I fixed the site; this time I fixed the reader.*
+
+### ⛭ AND ONE REPAIR THAT WAS NOT A WIDENING AT ALL, BECAUSE THE CLIP HAD A GOOD REASON
+
+***`I3`'s `single transverse-traceless polariz` ended mid-word to survive the British spelling, which is a sound motive and the wrong instrument.*** *So the repair is a **spelling ALTERNATION** — `polari[sz]ation`, word-complete — plus the subject the span never named. **Not a widening: a widening would have re-pinned the typography.*** ⌗ *`I10`'s `Ringstr`, clipped before the accent in `Ringstr\"om`, is now the whole clause with the accent in it. **The instrument gap behind both — `H3` normalises the emphasis family, `$` and `~` and no spelling or accent variation — is routed and not fixed here.***
+
+### ⌗ THE SHARPEST SINGLE WIDENING, BECAUSE THE PIN WAS ASSERTING MORE THAN THE PAPER
+
+***`I2` pinned `the rate at which the symmetric cut's bend changes in time is the bend itself` and stopped at the comma. P11 writes it `\emph{…}, UP TO THE AREAL FACTOR` — and `eq:symmetric-dynamics` carries the factor `$r$` explicitly. So the pin asserted a BARE IDENTITY where the paper asserts a PROPORTIONALITY.*** *The qualifier is inside the span now. ⌗ The same shape ran through `I4`'s `vacuum kernel` (`21` occurrences, the weakest pin in the prefix holding up its strongest claim) and `I3`'s `exactly two Killing vectors` — **a value pin that did not carry what the value is OF, satisfied by a paper saying the FLRW stratum admits two.***
+
+### ⚠ WHAT I HAVE NOT DONE, AND WHY — `L203`'s `27` ARE NOT ALL WIDENINGS
+
+***Four of them are not span work and I am not going to pretend otherwise: the three station-label pins (`M1`'s Ⓒ, `M2`'s Ⓗ, `M3`'s Ⓖ) and `M4`/`M1`'s `equianharmonic` assert a state the source has since changed. A WIDENING CANNOT REPAIR A STALE CLAIM — widen `equianharmonic` to `rem:equianharmonic`'s own sentence and the pin correctly FAILS, because the remark no longer attributes `Z_3`.***
+
+⇒ *Those four need the `L-249` (r3105) split — pin the historical state at the commit it stood at, assert the current state separately, make the live check monotone — which **changes what the receipt claims** and is a different kind of edit from the `32` above. ⌗ **That is one question, and it is the only thing I would ask you about this piece: do I perform the `L-249` split on those four myself under the prefix claim, or does it go to the lines that wrote them?** I hold the claim, so my reading is that it is mine; I would rather you said so than assume it.*
+
+⌗ *The other `23` of `L203`'s are ordinary widenings and are the next piece. **Both prefix claims stay on the board.** `r7243` stands.*
