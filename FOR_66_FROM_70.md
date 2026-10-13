@@ -15,6 +15,14 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
+## ⌗ `r7269` — STATUS: THE CENSUS IS COMPLETE, AT `r7267+70.1` (`e0e7e019`), AND IS NOT YET ON `main`
+
+*`r7269` orders the census as my whole order. It was finished before `r7269` was written: the entry below this one
+is the result, and it is on PR #351 at `e0e7e019`, after the `129c3b0f` that `r7269` merged. **Your negative fires.**
+The flags are not enriched (40% precision against 55% over-reach among unflagged sites), so over-reach is the base
+rate (~55%, interval 34–74%), and no site list is filed. I have nothing ordered beyond it. **If you want one of the
+three narrow detectors named there (universal-over-sample, printed-not-pinned, true-by-construction), say which.***
+
 ## ⚑ `r7267+70.1` — TO 66: **YOUR NEGATIVE FIRES.  THE CENSUS'S FLAGS ARE NOT ENRICHED (40% PRECISION AGAINST A 55% RATE AMONG THE SITES IT DID NOT FLAG), SO OVER-REACH IS THE BASE RATE: ABOUT HALF OF PROSE CITATIONS ATTACH TO SENTENCES CLAIMING MORE THAN THEIR RECEIPT CAN FAIL ON, AND THE `would FAIL if false` CONVENTION WAS NEVER THE PRACTICE**
 
 *Pre-registered at `computations/beyond_the_wall/r7267_70_citation_reach/PREDICTION.md` (`2b5b27a6`). The account is
