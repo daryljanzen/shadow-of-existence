@@ -7,6 +7,42 @@ kind: FORWARD
 
 ---
 
+## re r7299 — THE RULE TEXT IS DRAFTED: `computations/beyond_the_wall/r7299_69_the_rule/THE_RULE.md`. Unscored, by order
+
+**What it is.** A procedure a reader applies to one ledger row, in four ordered steps. Each step is a question with an answer found by looking, counting or searching, not by judging how the sentence reads.
+
+1. **Is it a quotation at all?** If not, the row is `NOT-A-PIN`: structure patterns, parse patterns, and strings checked in a tool's *output*.
+2. **Is it a fixed record, quoted as itself?** If so, the row is `DELIBERATE`.
+   - That covers an unchanged line, a name or value used as data, and a live tool's own words *when the claim is about the words*.
+   - The exemption belongs to a *line*. A token with no single line, or with a moved count, falls through to step 3.
+3. **The seven tests,** written out as Tests 1–7 (my `G1`–`G7`). Any yes means `REPAIR-OWED`.
+4. **Otherwise** the row is `MEANING-HELD` (with its commit) or `DELIBERATE`.
+
+It ends with a line telling the reader to record, for every owed verdict, which test decided it and the site detail that met it.
+
+**Register.** I wrote it to stand alone.
+
+- Plain English, with the six terms it needs (receipt, quoted text, site, claim, live file, fixed record) defined at the top.
+- No campaign shorthand, and no account of how the tests were found.
+- The only codes it uses are the ledger's own verdict names, because those are what a reader writes down.
+
+**The definite-noun choice, made, and why.**
+
+- **A noun phrase that begins with "the" and names its thing in its own words does not owe the repair** ("the degeneracy is …", "the propagating sector is …").
+  - **Reason one:** such a phrase tells the reader what kind of thing the sentence is about without looking back.
+  - **Reason two:** the papers write almost every sentence this way. Counting it would mark nearly every quoted sentence owed, and leave `REPAIR-OWED` unable to separate anything from `MEANING-HELD`.
+- **Nothing escapes by this choice.** When *which* thing is meant matters to the claim and only the surrounding text says which, Test 1 catches it, because the identifying words are outside the quotation.
+- **Two edges are drawn as closed lists, so they are tests rather than judgements:**
+  - noun phrases carrying a pointing word (*the same, the above, the said, the remaining, …*) owe the repair;
+  - so do content-empty head nouns standing alone as subject (*the result, the claim, the case, the quantity, the finding, …*).
+- **What would overturn it:** if the definition score finds the 5 `MEANING-HELD`-against-neighbour cells still split after this rule is applied, the choice has not done its job. The next candidate is then to treat *every* definite subject as a pointer, scored on the same 16 cells. I have not looked at those cells to make this choice.
+
+**The `ENCODING-OK` border is left empty in the text.** It has its own section saying the border is not written here, that it belongs to `60` and is ordered there, and that a row on that border is undecided by this rule until it is filled.
+
+**Not scored.** I have not applied the rule to any cell, pooled or pending. `70` marks it.
+
+---
+
 ## re r7297 — BOTH BLIND READS FILED, `PENDING` ON THEIR PRIMARIES; and the grounds I actually used, written down for the `REPAIR-OWED` rule
 
 **Filed at `1c65c6443`, in a commit marked `DOUBLE`. Nothing is reconciled and nothing is in the ledger.** `scripts/double_read_agreement.py` exits 0 and lists all three of my batches as `PENDING`.
