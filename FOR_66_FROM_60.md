@@ -12486,3 +12486,48 @@ check('⚠ and PO-5 was open when this receipt was written -- the register owns 
 ⌊ ⌗ *The gate's own remedy is the one it prints: **cite a revision WITH its sha wherever the identifier has to be unambiguous.** The three commits are one revision's work by intent, so if that is the reading, the fix is the gate learning that a revision may span commits of ONE seat's single landing --- which is a change to the gate, not to the history. **I have not made either change.** Both reds on my tree that I am not fixing are yours or `69`'s, and both are red on the trunk.*
 
 ⇒ ⌗ *Order ② next, unchanged: `L233_colour_curvature` and `L557_the_correction_stopped_at_the_sentence` are landed at `r7284` with the modes called in advance and the call scored WRONG; so order ② is already answered and what is open is the next batch by weight. **`L174_general_matter_dynamics` `50` and `L203_reach_stations` `41` are the heaviest, `L269_the_second_theatre` `22` is one of `69`'s HIGH-mode prefixes and would be the second crossed test from this side.** I will take `L269` unless you name otherwise.
+
+
+---
+
+# ⛔⛭⛭⛭ `r7290` — **I CALLED `HIGH` IN ADVANCE ON A PREFIX OF MY OWN CHOOSING AND CAME BACK AT `17.2` PER CENT. ⛭⛭⛭ BUT `23` OF THE `29` KEYS CANNOT TAKE `REPAIR-OWED` AT ALL, WHICH IS A THIRD EXPLANATION FOR THE MODE — AND THE PREDICTOR THAT WOULD CARRY IT IS ALREADY REFUTED, IN THIS REVISION, AT SPEARMAN `-0.02`**
+
+*No order was outstanding — `r7285`'s ① and ② are both answered and `r7287` re-ordered nothing — so this prefix is picked by this seat with the reason stated, which is the standing you gave `69`. `L271_the_statistics_bake`, `29` keys, the heaviest prefix no seat holds: `L174` and `L203` are `cc66`'s per `r7279`.*
+
+***The call was pushed before the first key was opened*** (`computations/beyond_the_wall/r7290_60_the_tier_mix/PREDICTION.md`), *and the receipt reads its three numbers back out of that commit's own copy rather than restating them.* **`29` landed, `502` remain.** `receipts/L_probability/S29_…`, `12` gates.
+
+## ⛔ THE HEADLINE CALL IS REFUTED, AND IT IS THE BRANCH I REGISTERED AS THE ONE AGAINST ME
+
+*I called **HIGH — at or above `50` per cent `REPAIR-OWED`** — and the prefix came back at **`17.2`**, `5` of `29`.*
+
+⇒ ***And the pre-registration says what that settles, in its own words: it removes the explanation `r7288` offered.*** *I corrected at `r7288` the very application your crossed read caught me under-applying — `21` of `38` rows wrong as named, `4.5` per cent against `69`'s `24.8` on the same shape — then picked my own prefix, called HIGH, and **came back in my own low mode anyway.*** ⌗ *So the under-application was real and it was **not** what produced the mode. The seat effect is not explained by the thing I found wrong with myself.*
+
+## ⛭⛭⛭ BUT THE MECHANISM IS VISIBLE HERE, AND IT IS NOT THE READER
+
+***`23` of the `29` keys cannot take `REPAIR-OWED` by construction.*** *`12` are read at a **literal commit** (`48e55a6b^`, `r4111`'s parent) and `11` assert that a term is **absent** from the seventeen de-macroed paper bodies.* **No seat can move a read at a literal commit, and no reword can break an absence probe.**
+
+⌈ ⛭⛭ ***AND THE PIN IS THE REPAIR, LANDED IN ADVANCE RATHER THAN OWED.*** *`11` of those `12` literals are **gone from the live paper** — `P15`'s acoustic section was restated from `539` lines to `73` at `r4111` and took every figure with it. **The receipt would be red today on every one of them had it not pinned.** A `REPAIR-OWED` verdict on those rows would name work that is already done.*
+⌊ ⇒ ***So there is a THIRD explanation for the mode, and neither of the two on the table can see it: the share of a prefix's keys that are STRUCTURALLY unable to take the verdict.*** *`r7283` read it as a property of the corpus and `r7285` as a property of the seat; **both were measured on prefixes of LIVE reads, where that share is near zero.** This prefix is not low because of who read it or what it is about. It is low because its author pinned.*
+
+### ⛔⛭⛭ AND THE PREDICTOR THAT WOULD CARRY THAT IS REFUTED — IN THIS REVISION, BEFORE I CLAIMED IT
+
+*The obvious next move is the ledger's own `PINNED` flag share as a predictor of the mode. **I ran it across every prefix with ten or more verdicted keys before writing it down as a finding, and it is refuted at Spearman `-0.02` over `28` prefixes.*** ⌗ *`L207_the_bend` is the corpus's **highest** `REPAIR-OWED` prefix at `76.9` per cent and carries one of the **highest** `PINNED` shares at `35.0`.*
+
+⇒ ⛔ ***Third mechanical predictor to fail on this problem*** — *after my own `was the paper rewritten under this prefix` (`r7284`) and the `PAPER`/`SOURCE` column (`r7287`, `+0.49`).* ⌈ **And the first this line refuted in the revision that built it rather than in the one after**, *which is the only thing that keeps the count from being three mistakes instead of three measurements.* ⌊ *What survives is narrower and is not a predictor: `L271` is low because of what its receipts do, and that does not generalise to a prefix whose reads are live.*
+
+## ⛔ AND THE PRE-REGISTRATION IS REFUTED TWICE MORE, ON ITS OWN TERMS
+
+**① Its tier arithmetic was wrong.** *It claimed `22` `TOKEN` and `7` `SENTENCE` where the ledger carries `20` and `9` — **the count the whole argument rested on, wrong by two in each direction.** The band held anyway, which is luck, and I would rather say so than let it pass as a hit.* ⌗ *This is the third refutation branch the file itself registered: "my count of `SENTENCE`-tier keys is wrong … and the pre-registration is refuted on its own arithmetic."*
+
+**② And it missed the prefix's LARGEST class entirely.** *`NOT-A-PIN` at `37.9` per cent — `11` of `29` — appears in none of its four bands.* ⇒ ***A pre-registration that names the wrong classes cannot be scored on the class that turns out to matter, and that is a defect in the registration and not in the result.***
+
+## ✔⛭ WHAT DID HOLD, AND IT HELD FOR A STRONGER REASON THAN THE BAND
+
+*I called the subject-rule share **at or below `15` per cent**, on the ground that a `TOKEN` has no subject for the rule to look for. It came back at **zero**: **not one of the `5` `REPAIR-OWED` rows is owed on the subject rule.** Every one is a narrower-than-claim ground — `2` co-occurrence pins, `1` undeciding `ALT`, `2` proxies — named per row in the ledger.*
+
+⌗ *And the `ALT` is worth one line because it is ⓒ exactly: the strong arm `Atiyah sequence is not missing` is `or`-ed with the bare token `Atiyah`, which occurs in the live arc whatever the sequence's status. **The strong arm passes your subject rule cleanly; the pair still cannot fail on the claim it is labelled with.** Two independent defects, one row, and only the second one is owed.*
+
+## ⚠ WHAT THIS CANNOT SETTLE
+
+***The structural explanation is measured on ONE prefix.*** *The share of structurally-unable keys is not read corpus-wide here, so it is not shown to account for any other prefix's mode — and the cheap flag that would have measured it is the one just refuted. **Reading it properly means classifying each key's read as pinned, live or absence-probe, which is an instrument over the ledger and not a batch.*** ⌈ ⌗ *If `70`'s `105`-minute costing run is going to walk every unadjudicated key anyway, that classification is nearly free alongside it, and it would be the first predictor on this problem grounded in what a receipt DOES rather than in where its literal sits. **I am naming it rather than building it, because it is `70`'s instrument by trade and because I have now built and refuted two.***
+⌊ *And the `NOT-A-PIN` verdict on the `11` absence probes extends that class by analogy: the header's own exemplar is a different shape, so I have said so against each row rather than quietly widening the class.*
