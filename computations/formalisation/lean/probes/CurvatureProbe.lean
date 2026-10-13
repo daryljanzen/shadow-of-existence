@@ -1,4 +1,5 @@
 import Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Basic
+import Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion
 import Mathlib.Geometry.Manifold.VectorBundle.Hom
 import Mathlib.Geometry.Manifold.VectorBundle.Tangent
 import Mathlib.Geometry.Manifold.VectorField.LieBracket
@@ -690,6 +691,51 @@ lemma covT_smul_Z {g : M → ℝ} (hg : CMDiff ∞ g) {X Y Z : Π x : M, Tangent
 
 end Tensor2
 
+/-! ## `r7291`, Probe S2 — the second fundamental form, the connection and the metric hypotheses -/
+
+section Sff
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+  {H : Type*} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type*} [TopologicalSpace M] [ChartedSpace H M] [IsManifold I ∞ M]
+  (cov : CovariantDerivative I E (TangentSpace I : M → Type _))
+  (g : Π x : M, TangentSpace I x →L[ℝ] TangentSpace I x →L[ℝ] ℝ)
+
+/-- **G3c.** The second fundamental form of a field `N`: `K(X, Y) = g(∇_X N, Y)`. -/
+noncomputable def sff (N X Y : Π x : M, TangentSpace I x) (x : M) : ℝ := g x (cov N x (X x)) (Y x)
+
+lemma sff_smul_X (N X Y : Π x : M, TangentSpace I x) (f : M → ℝ) (x : M) :
+    sff cov g N (f • X) Y x = f x * sff cov g N X Y x := by
+  simp [sff, Pi.smul_apply', map_smul]
+
+lemma sff_smul_Y (N X Y : Π x : M, TangentSpace I x) (f : M → ℝ) (x : M) :
+    sff cov g N X (f • Y) x = f x * sff cov g N X Y x := by
+  simp [sff, Pi.smul_apply', map_smul]
+
+/-- **G3c. `K` is symmetric** on fields tangent to the slice, for a torsion-free `cov` compatible with `g` along
+`X` and `Y`, when `N` is everywhere `g`-normal to `X` and `Y` and `[X, Y]` is tangent at `x`. -/
+theorem sff_symm (htor : cov.torsion = 0) {N X Y : Π x : M, TangentSpace I x}
+    (hX : MDiffAt (T% X) x) (hY : MDiffAt (T% Y) x)
+    (hNX : ∀ y, g y (N y) (X y) = 0) (hNY : ∀ y, g y (N y) (Y y) = 0)
+    (hcX : d% (fun y => g y (N y) (Y y)) x (X x)
+      = g x (cov N x (X x)) (Y x) + g x (N x) (cov Y x (X x)))
+    (hcY : d% (fun y => g y (N y) (X y)) x (Y x)
+      = g x (cov N x (Y x)) (X x) + g x (N x) (cov X x (Y x)))
+    (hbr : g x (N x) (mlieBracket I X Y x) = 0) :
+    sff cov g N X Y x = sff cov g N Y X x := by
+  have z : ∀ {Z : Π x : M, TangentSpace I x}, (∀ y, g y (N y) (Z y) = 0) →
+      d% (fun y => g y (N y) (Z y)) x = 0 := fun {Z} h => by
+    rw [show (fun y => g y (N y) (Z y)) = fun _ => (0 : ℝ) from funext h]; exact mvfderiv_const _
+  rw [z hNY, ContinuousLinearMap.zero_apply] at hcX
+  rw [z hNX, ContinuousLinearMap.zero_apply] at hcY
+  have ht := (CovariantDerivative.torsion_eq_zero_iff (cov := cov)).1 htor hX hY
+  have hb : g x (N x) (cov Y x (X x)) - g x (N x) (cov X x (Y x)) = 0 := by
+    rw [← map_sub, ht, hbr]
+  simp only [sff]
+  linarith
+
+end Sff
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -711,3 +757,6 @@ end ShadowProbe
 #print axioms ShadowProbe.covT_smul_X
 #print axioms ShadowProbe.covT_smul_Y
 #print axioms ShadowProbe.covT_smul_Z
+#print axioms ShadowProbe.sff_smul_X
+#print axioms ShadowProbe.sff_smul_Y
+#print axioms ShadowProbe.sff_symm
