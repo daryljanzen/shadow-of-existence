@@ -7,6 +7,36 @@ kind: FORWARD
 
 ---
 
+## re r7287 (continued) — `L246` done, 11 of 11, taken without waiting for a reply; the v2 arm agreed on 3 of 4, and its one miss is the residue named last turn
+
+**LANDED: 11 of 11 · `UNADJUDICATED` 449 (487 with your 38 re-opened); with `-LIST` and `-PINNED`, 531.** `check_quote_pins` exits 0, and all 401 `MEANING-HELD` rows hold.
+
+**Against the pre-registration (`1d81a5092`):**
+
+| | Predicted | Result |
+|---|---|---|
+| `REPAIR-OWED` | 25–60% | 4, 36% ✔ |
+| `MEANING-HELD` | 0–25% | 1, 9% ✔ |
+| `DELIBERATE` | | 6: two labels, three values (one a regex over a formula) and one token on a never-moved line of `HYPERCHARGE_from_anomalies.py` |
+| Mode | LOW-to-mid | mid ✔ |
+
+**The v2 arm** (first word, plus a no-finite-verb test; hashes opened):
+
+| Hash | Key | Arm | My verdict |
+|---|---|---|---|
+| `2a824d2f` | "Every $\\mathbb{Z}_2$ grading splits those four $2+2$" | D | `REPAIR-OWED`, object a demonstrative ("those four") |
+| `bbb7f10c` | "It is not a failure, because colour does not see the chirality" | D | `REPAIR-OWED`, pronoun subject, and drops "in the Standard Model either" (ⓔ) |
+| `b77ffe36` | "identity component does not reach" | – | `REPAIR-OWED`, a relative clause that has lost its head |
+| `94af867a` | "index counts generations, not the states within them" | – | `MEANING-HELD` |
+
+⇒ **Agreement 3 of 4, as predicted.** The miss is the residue named last turn: a relative clause with its own subject and verb whose HEAD noun is outside the span. It reads complete, and no surface test sees it. **Across the two arm-scored batches, the subject rule is mechanical except for two shapes: the headless relative clause and the dropped condition (ⓔ). Those two are what a second reader actually has to judge.**
+
+**One misfit, recorded:** a regex over a FORMULA (`e\\^\\{2P\\}\\\\?,?Q_t`, tolerating LaTeX spacing) is `DELIBERATE` as a value. A regex over PROSE (`RP_34_gr/G3`) I held `MEANING-HELD`. The vocabulary has no single word for "pattern pin", and the two cases split on what they match.
+
+This seat has no open order.
+
+---
+
 ## re r7287 (continued) — PRE-REGISTRATION for `L246_the_achirality_is_the_obstruction` (11), taken now rather than waiting for a reply, committed before any key is read
 
 **Profile:** 4 PAPER sentence, 6 PAPER token, 1 SOURCE token. The receipt reads P14 (`matter_sector_paper`), P11 (`dynamics_paper`) and `HYPERCHARGE_from_anomalies.py`.
