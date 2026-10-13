@@ -1,0 +1,76 @@
+# readers: 70 | 71
+# r7307+71 -- 71 applies 69's redrafted REPAIR-OWED rule (THE_RULE.md at 96fc83f1) BLIND to 70's held set
+#   (KEYS_BLIND.tsv, 69 keys, salt 96fc83f1b44e04887d9184debce6adb3d246260e).  All 69 keys, in file order.
+#   Column 3 is EMPTY for 70's join (70 named first); column 4 is 71's verdict.  UNDECIDED = the text licenses
+#   two verdicts or none -- the ground names them, in GROUNDS_71_redraft.tsv.  Literals byte for byte from
+#   KEYS_BLIND.tsv.  Never reconciled, never written to the ledger.
+# receipt	literal	verdict (first-named reader)	verdict (second-named reader)
+receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	"supplies no force"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_corpus_places_every_perturbation_source_before_the_branch_point_and_everything_after_it_is_transfer_so_nothing_already_built_supplies_anisotropic_content_on_the_expansion_leg.py	"seeded at the finite-curvature horizon seam, never at a curvature singularity"		REPAIR-OWED
+receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py	"held in {paper}"		UNDECIDED
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"LEAFREC = os.environ.get('LEAFREC', '1') == '1'"		REPAIR-OWED
+receipts/L204_physics_reach/C3_the_isotropy_citation_runs_in_a_loop.py	"\\mathrm{SO}(2,1)\\times\\mathrm{SO}(3)$ at Nariai"		REPAIR-OWED
+receipts/L221_the_bridge/B20_centre_and_weyl_are_opposite_ends.py	"the corpus's colour is the CENTRE and its structure group"		DELIBERATE
+receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py	"SEED REMOVED c54.222"		DELIBERATE
+receipts/L221_the_bridge/B37_po4_and_po5_share_a_root.py	"ORDER 4"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_window_free_reading_cannot_resolve_the_first_cycle_the_flatness_was_a_trend_and_nine_tenths_of_the_step_is_common_to_both_arms.py	"EXTREMAL ENVELOPE"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"LEAFSCALES = os.environ.get('LEAFSCALES', '0') == '1'"		REPAIR-OWED
+receipts/P07_CR_framework/P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature.py	"one point of the underlying geometry"		REPAIR-OWED
+receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	"Yp"		UNDECIDED
+receipts/L247_the_build_already_stands/B1_the_geometry_po14_asks_for_was_built_at_r2419.py	"FALSE WHEN WRITTEN"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed.py	"the lift's imaginary conformal-time interval"		REPAIR-OWED
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	"with no free parameter"		REPAIR-OWED
+receipts/L221_the_bridge/B60_one_operator_the_fork_does_not_exist.py	"e1=dr/sqrt f"		DELIBERATE
+receipts/L221_the_bridge/B56_it_is_lambda_8_not_a_coupling.py	"the Cartan--Weyl skeleton"		REPAIR-OWED
+receipts/L203_reach_stations/M3_station_G_supplies_the_sequence_and_the_three_are_one_knot.py	"the anchor is the slicing operator's cut-to-stress-energy map"		REPAIR-OWED
+receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py	"excluded from the isometry, and electroweak"		REPAIR-OWED
+receipts/L165_interacting_tower/D4_the_state_fixer_has_its_own_threshold.py	"Thermal (Hartle--Hawking) regularity is Euclidean smoothness at the horizon mode by mode"		MEANING-HELD
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"does not bear on the closure below"		REPAIR-OWED
+receipts/P15_CR_cosmology/C35_the_reference_is_F3.py	"chi^2(this instrument's LambdaCDM arm) - chi^2(CAMB)"		REPAIR-OWED
+receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	"not by the peak's value"		REPAIR-OWED
+receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py	"\\nu_R"		UNDECIDED
+receipts/P15_CR_cosmology/P15_the_dipole_parenthesis_is_right_on_its_own_tower_and_does_not_reach_the_other_one_because_the_scalar_floor_is_a_vanishing_traceless_hessian_and_the_tensor_floor_is_an_empty_degree.py	"the $S^3$ tensor tower starts at $L=2$ and has no $k=0$ member"		MEANING-HELD
+receipts/P15_CR_cosmology/P15_the_band_one_departure_is_not_in_the_likelihoods_excess_and_all_three_channels_match_it_in_separating_power.py	"significance"		REPAIR-OWED
+receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py	"complex conjugation of the pair"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py	"^BLOCK_PIN = '[0-9a-f]{40}'"		NOT-A-PIN
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"if not control_fires():"		DELIBERATE
+receipts/L550_third_mechanism/M1_the_third_mechanism_is_bounded_and_the_bound_is_two_sentences_earlier.py	"are combinations of these gauges, and \\emph{cross-register} ones"		REPAIR-OWED
+receipts/L175_dimensional_descent/E51_the_scale_map_rank_reproduced.py	"the plane-section"		REPAIR-OWED
+receipts/L221_the_bridge/B51_p0s_inference_is_sound_and_scoped.py	"rather than only in the limit"		REPAIR-OWED
+receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py	"no INDEX row"		REPAIR-OWED
+receipts/L204_physics_reach/C3_the_isotropy_citation_runs_in_a_loop.py	"JanzenAlgebroid"		REPAIR-OWED
+receipts/L221_the_bridge/B24_the_triality_test_run.py	"the triality class is the fractional part of the charge"		REPAIR-OWED
+receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"the four-dimensional $\\mathrm{dS}_4$ is the \\emph{background} its leaves carry"		REPAIR-OWED
+receipts/P15_CR_cosmology/C27_the_number_bracketed.py	"larger by $8.2\\%$"		DELIBERATE
+receipts/P16_cosmogenesis_paper/P16_order_two_answered_positive_the_tensor_floor_is_derivable_on_the_constructions_own_three_sphere_because_the_transverse_traceless_laplacian_is_L_times_L_plus_two_minus_two_and_the_lowest_member_is_L_equals_two.py	"the Bianchi shear simply is the long-wavelength growing tensor mode"		MEANING-HELD
+receipts/P15_CR_cosmology/C39_the_derived_list_read.py	"The quantities this cosmology actually uses are the epoch $x_{0}$ (equivalently $\\Omega_m=2/(x_{0}^{3}+2)$"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py	"inside band 1"		REPAIR-OWED
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	"1+\\cos z"		UNDECIDED
+receipts/P15_CR_cosmology/C28_length_against_angle.py	"10.8"		REPAIR-OWED
+receipts/L247_the_build_already_stands/B1_the_geometry_po14_asks_for_was_built_at_r2419.py	"wave map into the hyperbolic plane"		REPAIR-OWED
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"c54.223"		REPAIR-OWED
+receipts/L204_physics_reach/P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled.py	"Carter"		REPAIR-OWED
+receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py	"reality admits exactly two values, geometrically forced"		REPAIR-OWED
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	"206.44"		REPAIR-OWED
+receipts/L221_the_bridge/B10_po2_resemblance_is_now_a_construction.py	"available because the three wall modes are one operator's kernel and therefore identical particles"		REPAIR-OWED
+receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py	"THE BAND IS A PROPOSAL, NOT A PREVENTION"		DELIBERATE
+receipts/L221_the_bridge/B5_the_mod_two_index_is_one_and_the_corpus_computed_it.py	"traced rather than computed"		REPAIR-OWED
+receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	"The first acoustic peak, and the propagated comb"		DELIBERATE
+receipts/L221_the_bridge/B39_the_substrate_does_carry_compact_su2.py	"two ends of one hinge are timelike separated"		MEANING-HELD
+receipts/P15_CR_cosmology/P15_the_coupling_is_measured_and_negative_and_the_contribution_is_undetermined_because_its_input_is.py	"stated before use"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks.py	"the bilinear decomposition `SRCDEC`"		DELIBERATE
+receipts/P15_CR_cosmology/C26_the_onset_is_not_free.py	"\\emph{It is a limit rather than a parameter}: carried back over two decades in starting redshift the peaks hold to the grid step"		REPAIR-OWED
+receipts/L221_the_bridge/B16_the_coupling_cannot_come_from_this_bundle.py	"has a holonomy about the Nariai points"		REPAIR-OWED
+receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py	"COMPUTES:"		REPAIR-OWED
+receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py	"WITHDRAWN"		REPAIR-OWED
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"a closure on a protected item is made in the register with a kill receipt"		MEANING-HELD
+receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	"rs_from(Z_START) if _rsfrom == 'start' else rs_from(1e8)"		REPAIR-OWED
+receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py	"The substrate route is closed; the progenitor route is open"		DELIBERATE
+receipts/L805_freezing_reproduced/S1_every_mode_of_interest_freezes_and_the_inversion_is_closed.py	"exits it and freezes"		REPAIR-OWED
+receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	"every} mode exits it and freezes before the crossing"		REPAIR-OWED
+receipts/L221_the_bridge/B44_po5s_two_walls_are_one.py	"the bundle above is flat"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	"the cosmic layers are the surfaces of constant areal radius"		REPAIR-OWED
+receipts/L_probability/S21_a_pre_registered_negative_can_fire_without_reaching_the_claim_it_was_written_to_test_and_mine_did_while_the_order_was_wrong_about_both_defects_in_opposite_directions.py	"$2(m^{2}-4)\\sqrt{m^{2}-3}$"		DELIBERATE
+receipts/P15_CR_cosmology/C18_bespoke_means_two_legs.py	"On the radiation-dominated collapse leg the potential obeys"		DELIBERATE
+receipts/L247_the_build_already_stands/B1_the_geometry_po14_asks_for_was_built_at_r2419.py	"restoring the second polarization"		REPAIR-OWED
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"swaps the two conjugate wings of the lap"		REPAIR-OWED
