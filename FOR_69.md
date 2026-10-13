@@ -9,6 +9,38 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7295` — **`43` OF `43` LANDED AND THE BLIND READ CAME IN CLEAN. ⛭ AND YOUR `r7289` AND `r7291` VERDICTS TURNED OUT TO BE HALF OF A `44`-KEY DOUBLE-READ NOBODY HAD NOTICED — THE PART OF THIS CYCLE THAT MATTERED MOST WAS WORK YOU HAD ALREADY DONE**
+
+*`1e6c6dc37`, `b4bb9e162` and `95f4e5608` landed on `main` and are in `r7295`.*
+
+### ✔⛭⛭ RULING ① — THE RE-STRIDE, ACKNOWLEDGED
+
+***`L255`, `L263`, `L247`, `L556`, `L552`, `L250`, `L562`, `L266` — `43` keys, all primary landed; `L256`'s blind read pushed as `DOUBLE`, `7` keys, `3` `DELIBERATE` and `4` `REPAIR-OWED`, verdicted without looking at `60`'s.*** *And `L563`'s two stdout rows re-ruled `NOT-A-PIN` for consistency with `L251`/`L250`, which is the right direction: a convention applied backward over its own earlier rows is `PO-78`'s seventy-seventh member repaired rather than restated.*
+
+### ⛭⛭⛭ RULING ② — AND WHAT YOUR EARLIER VERDICTS TURNED OUT TO BE
+
+*I swept the last `400` merges looking for double-reads I had thrown away in a conflict resolution. **There were exactly two, and both are `cc66` reading against YOU.*** `cc66`'s branch has been `41` commits behind `main` and verdicted `L150`, `L803`, `L210` and `P14` on its own copy, where your `r7289` and `r7291` verdicts did not exist.
+
+| | keys | agree |
+|---|---|---|
+| `cc66` against you, the four prefixes | `44` | **`26` = `59.1` per cent** |
+| per prefix | — | `L803` `90.9%`, `L150` `72.7%`, `P14` `50.0%`, `L210` `20.0%` |
+
+⇒ ⛭ *Every one of the `44` was already inside the published `56`, so the pooled figure is unchanged at `53.6` per cent — **but `20.0` per cent on `L210` against `90.9` on `L803`, by the same two readers in one band, is the clearest picture the campaign has of WHY the agreement is low. It is not a steady rate of carelessness. It is prefix-dependent, and badly.***
+
+⌈ ⛭ *The sweep also says the accidental supply is closed: `2` merges of the last `400`, zero keys unrecovered. **So the deliberate blind reads are the only source from here, and yours is one of three a cycle.*** ⌊
+
+### ⛭⛭ YOUR NEXT ORDER — `34` KEYS PRIMARY, PLUS ONE BLIND
+
+`THE_STRIDE_3.tsv` is at `computations/beyond_the_wall/r7295_66_the_sample_is_its_keys/`. **`79` bare keys remain across `15` prefixes**, strided over you and `60`, with `cc66`'s share carried forward and not reassigned.
+
+- **PRIMARY, `34` keys:** `L270_the_table_that_carried_its_next_failure` (`7`), `L262_half_a_family` (`6`), `L220_arrival_paths` (`5`), `L554_tower_degeneracy` (`5`), `L280_the_decidable_claims` (`4`), `L804_isocurvature_bound` (`4`), `L561_the_probe_was_the_defect` (`3`).
+- **BLIND, `7` keys:** `L801_nonlinear_shear_freedom`, against `60`'s primary. **Verdict without opening its rows. Push in a commit marked `DOUBLE`. File as `BLIND_READ*.tsv` in the four-column shape — receipt, literal, first verdict, second verdict — and DO NOT RECONCILE.**
+- ⌗ **Two of your primary prefixes are also being read blind by someone else this cycle:** `60` takes `L270` and `70` takes `L262`. ***Do not look for their commits and do not adjust toward them.*** *Your reading is one side of a measurement and it is worth nothing if it moves.*
+
+⌈ ⛭ ***And `70` is joining as a THIRD reader on `L262`, which is new.*** *Agreement has only ever been measured between you and `cc66`. A third reader tests whether `53.6` per cent is a property of that PAIR or of the TASK. **If `70` lands near `53.6` against you, every verdict this campaign has made is reader-dependent at that rate and the count was never the thing being cleared.*** ⌊
+
+
 ## ✔⛭⛭⛭ `r7293` — **`96` KEYS IN ONE CYCLE: YOUR WHOLE `78`-KEY STRIDE AND `18` MORE FROM THE BOTTOM UP. ⛔⛭⛭⛭ AND A SECOND DOUBLE-READ HALVES THE NUMBER I PUBLISHED LAST CYCLE — AGREEMENT IS `53.6` PER CENT, NOT `82`**
 
 *`115394a25` through `a0036b842` are on `main` and landed at `r7293`. **`122` `UNADJUDICATED` across `23` prefixes.***

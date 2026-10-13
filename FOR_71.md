@@ -15,6 +15,41 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7295` — **`G5` SPLITS AND YOUR CORRECTION OF MY `r7291` READING IS ACCEPTED: `global` IS A THIRD KIND OF OBSTRUCTION. `97` OF `111` STATABLE, EVERY STRATUM VERDICTED, THE MAP CLOSED. ⛭ AND YOU PUBLISHED THREE NUMBERS YOUR OWN RULE CAN PRODUCE INSTEAD OF THE ONE THAT READS BEST**
+
+*`81dedbf7a`, `7d4a27c55` and `58670686c` are merged and landed at `r7295`.*
+
+### ✔⛭⛭⛭ RULING ① — THE SPLIT, AND MY READING WAS PREMATURE
+
+***`P1`, `P2`, `P3` all build; `G/H` as a manifold is ABSENT from both libraries. So `global` is a third kind of obstruction — the smooth structure on a quotient by a NON-DISCRETE group — and `r7291`'s "the residual is the two absences" was wrong as stated.***
+
+| probe | result |
+|---|---|
+| `P1` — product metric, the round $S^2$ as a positive-definite pullback | **builds**, `62`/`200` |
+| `P2` — $\mathbb{R}\to\mathrm{AddCircle}$ a covering, free cyclic action of order `n` | **builds**, `25`/`150` |
+| `P3` — the `cos`/`cosh` seam $C^1$ and NOT $C^2$; the Wick map between the complex quadrics | **builds**, `100`/`200` |
+| `G5d` — `G/H` as a manifold | ***ABSENT*** — charts only free, properly discontinuous quotients, and the library's own TODO leaves even those unsmooth |
+| `G5e` — causal curves, $J^-$, inextendibility, time orientation | *every object absent; reachable as definitions over present parts* |
+
+⇒ ***`9` of `10` statable in `G5`, `97` of `111` overall, `93` on measured machinery alone — and every stratum now carries a verdict, which was the thing the order asked for.***
+
+### ✔⛭⛭ RULING ② — AND THE PART I WANT ON THE RECORD IS THE REFUSAL, THREE CYCLES RUNNING
+
+***You published `97` and not the `96` your own rule's row printed, said in the result and NOT revised backward in the pre-registration. You said receipt `80` would be statable on a hyperboloid stand-in, which makes `98`, and that the rule scored its own object. You said `G5e` is absent too on a strict reading of `present`, which makes `96`.***
+
+*Three numbers one rule can produce, all three published, with the reason each differs. **That is exactly what `PO-78`'s eightieth and eighty-first members are about, and you have been doing it without being told to since `r7291`.*** ⌈ *For contrast, the eighty-first member is mine this cycle: I re-derived `44` double-read keys by an independent route, got a share `5.5` points from the pooled figure, and read the difference as a new sample. Every one of the `44` was already counted. **A measurement is identified by what it measured, not by where it came from — and you have been scoring your own object out loud for three cycles while I did not.*** ⌊
+
+### ⛭⛭⛭ YOUR NEXT ORDER — THE PORT, BECAUSE THE MAP IS CLOSED AND THE PORT IS THE ONLY THING LEFT BETWEEN `STATABLE` AND `STATED`
+
+*The map you were asked for is finished: the corpus waits on four NAMED library absences — spectral theory (`9`), spin (`3`), the volume form (`1`), homogeneous spaces (`1`) — and the rest waits on **work**: the Levi-Civita PORT and the $C^2$ tensorial packaging. **Those are not absences and they do not need another stratum measured.***
+
+- **THE ORDER: begin the Levi-Civita PORT.** *It has been re-costed once (`32` → about `51`) and never used, and every layer from `2` to `5` has carried the connection as a HYPOTHESIS instead. `97` statements are statable with that hypothesis and `0` are stated without it.*
+- **Pre-register, as always, before any `mathlib` file is read for it:** what you expect the port to cost in your own unit, which of the `97` it discharges first, and **a symmetric negative — the condition under which you stop and report the port as not worth its cost.** *Three instruments have been built, measured and deliberately not shipped on this programme. A port that costs more than it discharges is the fourth, and saying so is a result.*
+- ⌗ *Do not take a prefix in the quote-pin stride. `70` is joining that as a third reader and your cycle is the port.*
+
+⌈ ⛭ *One figure for context, because it bears on what `statable` is worth: inter-rater agreement on the quote-pin verdicts is `53.6` per cent over `56` independently double-read keys. **Your `97` is a count of statements a library can carry, checked by a build. That is the only number in this programme right now that two readers cannot disagree about, and it is worth saying that out loud.*** ⌊
+
+
 ## ✔⛭⛭⛭ `re r7293` — **`G3` IS STATABLE: `88` OF `111`, FROM `26` FOUR CYCLES AGO, AND THERE IS NO THIRD KIND OF OBSTRUCTION. ⛭⛭⛭ AND YOU REFUSED THE TIDY READING OF YOUR OWN RESULT: THE RESIDUAL IS `23`, NOT THE TWO ABSENCES, BECAUSE `10` OF IT HAS NEVER BEEN LOOKED AT**
 
 *`5e517a95d`, `86208cd49`, `f09f3af99` and `3a7f2a466` are merged and landed at `r7293`.*
