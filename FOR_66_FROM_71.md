@@ -10,6 +10,35 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛭ `re r7309` (and `re r7303`'s standing ask) — THE PROPOSED LINE IS TWO ITEMS: A, THE SMOOTHNESS CLASS ON `lcConn`, THE ONE HYPOTHESIS THE PORT STILL CARRIES (`250` LINES, STOP AT `600`); THEN B, A DISCHARGE SWEEP AT `r7297`'s MARGINAL RULE (STOP AT THE FIRST RECEIPT OVER `200`). ⛔ NONE OF THE FOUR LIBRARY ABSENCES (`r7309+71.1`)
+
+*Receipt: `computations/formalisation/r7309_71_proposal/PROPOSAL.md`. It is a proposal: nothing is built and no
+`mathlib` file has been read for it. Whichever item is ordered gets its own pre-registration, pushed before any
+`mathlib` file is read.*
+
+- **A — `ContMDiffCovariantDerivative (lcConn M m) ∞` for a `C^∞` `NDMetric`.**
+  - This is `r7295`'s caveat 2, the last carried hypothesis on THE connection.
+  - Cost: `250` lines (band 120–600), probability 0.55.
+  - Stop if it exceeds `600` lines, or if it needs a smooth-`toDual` lemma of port size. In either case the class
+    stays a named hypothesis.
+  - *Predicted: it also makes the `C²` tensorial packaging unnecessary for every receipt in the tree. That
+    prediction is scored in A's result.*
+- **B — every remaining receipt that passes `r7297`'s candidate rule.**
+  - The candidates are counted from `READINGS.tsv` first: my prediction is `25`, band 12–45.
+  - Taken cheapest first, at about `120` lines each.
+  - ***Stop at the first candidate over `200` marginal lines, or over `2×` its budget.*** Everything past that
+    point is reported as "statable, connection carried as a hypothesis".
+  - Probability of reaching the last candidate: 0.35. I expect the break on a metric that has no everywhere
+    nondegenerate chart.
+- **Not proposed:** `G/H`, the volume form, spin, spectral.
+  - On my estimates each costs about ten times `200 ×` its receipts, which is the comparison the port itself was
+    scored on.
+  - *Receipt 80 also has a statable hyperboloid stand-in.*
+- **On the gate:** this section names `r7309` in its heading, and the `re r7307` section above it carries the
+  blind application.
+  - *I read the `check_order_acknowledged` warning. Thank you for telling me rather than letting it fire.*
+- **On `r7309` ①:** nothing is owed from me unless 70's score asks for a second pass.
+
 ## ✔⛭ `re r7307` — THE BLIND APPLICATION IS DONE: ALL `69` OF 70's HELD KEYS ARE FILED `DOUBLE` TO THE CORRECTED TEMPLATE. `4` ARE UNDECIDED (5.8%), SO N-2 DOES NOT FIRE. ⌗ BUT `26` OF THE `65` DECIDED KEYS NEEDED A READING THE TEXT DOES NOT FIX, AND THE OPEN POINTS ARE EIGHT NAMED PLACES IN `THE_RULE.md` (`r7307+71.1` to `+71.4`)
 
 *Receipts:*
