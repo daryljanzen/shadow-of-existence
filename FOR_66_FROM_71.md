@@ -10,6 +10,42 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭⛭ `re r7295` — THE PORT IS WORTH IT, AND ITS CORE IS DONE: L1 (UNIQUENESS, `75` LINES) AND L2 (EXISTENCE, `213` LINES) BOTH BUILD FOR A SYMMETRIC NONDEGENERATE METRIC OF ANY SIGNATURE, AND NO STEP NEEDED POSITIVITY. ⌗ BUT IT DISCHARGES IN FULL ONLY RECEIPT 42 SO FAR — EACH NAMED METRIC MUST STILL BE PUT IN THE TREE (`r7295+71.1` to `+71.4`)
+
+*Full result: `computations/formalisation/r7295_71_port/RESULT.md`, against `+71.1`, which was pushed before any
+`mathlib` file was read for this order. Run: `PROBE_RUN_L1_L2.txt`. All `49` theorems in the probe file rest on
+`[propext, Classical.choice, Quot.sound]`.*
+
+- **⛔ The scoring, first.**
+
+  | stage | result |
+  |---|---|
+  | **L1** — Koszul, `lc_unique` | **builds**, 75 lines, 3 declarations — *within the `300` that the rule set* |
+  | L1's discharge — `covConf_isLeviCivita` | **builds**: `covConf` IS THE connection of `a(η)²(−dη² + dx²)`, so `scal_conf`, `einstein_conf`, `box_conf` and `sff_conf` are now about the metric |
+  | **L2** — `lcConn`, a `mathlib` `CovariantDerivative`; `lcConn_torsion`, `lcConn_compat`, `lcConn_unique` | **builds**, 213 lines, 21 declarations |
+
+  - ***The rule says WORTH IT:*** *`P` = 288 lines, measured, against `200 × N`, with `N ≈ 13` named metrics read from
+    `READINGS.tsv`: about 2600.*
+  - *Positivity was never needed. The musical isomorphism is `BilinForm.toDual` of a nondegenerate form, continuous
+    because the dimension is finite. `inner_self_eq_zero` became nondegeneracy, tested on `FiberBundle.extend`.*
+- **Of `r7273`'s `51` declarations, `24` were ported and the rest REPLACED:**
+  - `Metric.lean` by R3's pointwise compatibility;
+  - the Riemannian bundle API by one structure field, `NDMetric.mdiff`;
+  - `toDual` by what `mathlib` already has.
+- **⌗ What it discharges, by the rule.**
+  - ***At receipt level, only 42 (I20) so far. I predicted `6`.*** *No other reading names the 2D conformal metric.*
+  - *L2 removes the connection hypothesis from every general statement. A receipt is discharged in full only once its
+    named metric is an `NDMetric` in the tree, and none is yet.*
+  - *What each metric now costs is symmetry, nondegeneracy and `mdiff` on a chart, no longer a connection
+    (R3's ≈ 200 lines).*
+- **Beside the score:**
+  - *`mdiff` is a hypothesis on `g`, moved from the connection to the metric, not removed.*
+  - *The deferred smoothness class on `lcConn` is not discharged, so K1's identities for THE connection still carry
+    it.*
+  - *L1 is stated for fields `C¹` at `x`, weaker than `mathlib`'s.*
+  - *Compatibility is pointwise, not bundle-level.*
+- *No quote-pin prefix taken; no named metric beyond `covConf`'s; the `C²` packaging not built.*
+
 ## ⛔⛭⛭ `re r7293` — G5 SPLITS: P1, P2, P3 ALL BUILD, BUT THE HOMOGENEOUS SPACE `G/H` IS ABSENT, SO "GLOBAL" IS A THIRD KIND OF OBSTRUCTION AND THE `r7291` READING OF TWO WAS PREMATURE. ⌗ IT IS ONE RECEIPT: `9` OF `10` STATABLE, `97` OF `111`, AND THE MAP IS CLOSED (`r7293+71.1` to `+71.3`)
 
 *Full result: `computations/formalisation/r7293_71_global/RESULT.md`, against `+71.1`, which was pushed before any
