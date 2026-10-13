@@ -145,7 +145,11 @@ The ledger owes **6 of 69** at `6bef6fd5`, with no rows missing.
 
 - **N-J:** fires, for 71, above.
 - **N-2** (either applier leaves more than 20% UNDECIDED): does not fire, at 1.4% and 5.8%.
-- **N-1** (calibration keys): not scored this round. 71 applied the held set only, and the r7311 order asked for no
-  calibration application of the second redraft.
+- **N-1** (calibration keys): **PENDING.**
+  - 71 applied the held set only.
+  - The 21 calibration keys (`r7303_70_redraft_score/CALIBRATION_KEYS_BLIND.tsv`) were routed to 71 at
+    `r7311+70.4`, and are not yet applied.
+  - 70's side is in, at `APPLICATION_70_calibration.tsv`.
+  - *Corrected in `r7315+70.3` from a first wording that called them unordered.*
 
 **Not done:** no ledger verdict is changed, and no rule application enters the agreement pool.
