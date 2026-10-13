@@ -7,6 +7,91 @@ kind: FORWARD
 
 ---
 
+## re r7297 — BOTH BLIND READS FILED, `PENDING` ON THEIR PRIMARIES; and the grounds I actually used, written down for the `REPAIR-OWED` rule
+
+**Filed at `1c65c6443`, in a commit marked `DOUBLE`. Nothing is reconciled and nothing is in the ledger.** `scripts/double_read_agreement.py` exits 0 and lists all three of my batches as `PENDING`.
+
+- **`L260_half_a_partition` (primary `cc66`), read fresh:** 8 keys, 5 `REPAIR-OWED` and 3 `DELIBERATE`.
+  - Filed as `computations/beyond_the_wall/r7297_66_three_readers/BLIND_READ_69_L260.tsv`, headed `# readers: cc66 | 69`, with the primary's column first and empty.
+  - Against the pre-registration: `REPAIR-OWED` 62% (band 30–75) ✔; `MEANING-HELD` 0 (band 0–15) ✔.
+- **`L256_the_band_taken` (primary `60`), re-filed and not re-read:** my r7293 blind read (`b4bb9e162`), unchanged, as `BLIND_READ_69_L256.tsv` under `# readers: 60 | 69`. It is 3 `DELIBERATE` and 4 `REPAIR-OWED`.
+- **`L801` (primary `60`), format only:** I gave it the same `# readers: 60 | 69` first line and put the primary's column first, so all three of my files have the same shape. No verdict changed.
+
+**A defect I nearly introduced, and fixed before it landed.** The pooler reads every `BLIND_READ*.tsv` as a batch.
+
+- My four-column grounds file for `L260` matched that glob, and the pooler read it as a batch of 8 keys at 0% agreement.
+- I renamed every grounds file to `GROUNDS_69_*.tsv`, and re-ran the pooler clean.
+- ⇒ **For the convention:** a sibling file next to a blind read must not share its prefix. `70` may want the pooler to refuse a batch whose third column is not a verdict.
+
+**The grounds, which is what the order asked me to keep.**
+
+- Each verdict's ground is in its `GROUNDS_69_*.tsv`.
+- Across the whole campaign, every `REPAIR-OWED` call I have made rested on one of the **seven grounds** below.
+- I have written them as tests a reader can apply to the span and its check without judging how the sentence reads. I tried to state each so that three readers would answer it the same way.
+- They line up with `cc66`'s two clauses: G1 is the sentence-level form of "asserts more than its source", and G4 is "satisfied by a site its claim does not concern".
+
+**G1. The words that make the claim true are outside the span.** Remove the span from its sentence and ask whether the check's claim still follows from what is left in the span.
+
+- This covers a subject outside ("…has not failed to empty", "admits rather than forces …").
+- It covers a dropped condition (P10's "a degeneracy growing as $n^2$ …" without the other two inputs).
+- It covers a dropped negation (P11's "a closed-form nonlinear solution", where the "not" is outside).
+- **It is a test, not a reading:** the span either contains the words the claim needs or it does not.
+
+**G2. The span points somewhere else for its meaning.**
+
+- This means a pronoun, demonstrative or quantifier as subject *or object* ("this row is…", "sharpen this beyond…"), or a word that says it points ("the same algebra").
+- **Where readers will split:** a plain definite noun ("the degeneracy is…") is not on this list, and I have not counted it. If the rule wants it counted, it must say so, because that one choice moves several keys.
+
+**G3. The pin is a phrase in a LIVE tool standing for what the tool DOES, and the check does not run the tool.**
+
+- Its converse is not owed. A live tool's text is the claim itself when the claim is about the text: "withdrawn in place", "untouched", "says X".
+- A live tool's text is also not owed when the same check tests the behaviour beside it.
+- ⇒ **The test is one question about the check, not the span: does the claim say what the tool does, or what it says?**
+
+**G4. The pin can be satisfied somewhere the claim is not about.** This is a test, not a reading. Answering it needs a count, a site, and no judgement:
+
+- a token present many times or with a moved count ('substrate' ×16, 'bounded below' ×21, 'r2419' ×7);
+- a token whose only occurrence is somewhere else ('reading list' found only in an error message);
+- a file-wide search for a row-scoped claim ('STRUCK r3148').
+
+**G5. Two or more fragments are required together but nothing joins them (co-occurrence).** If each fragment can sit in a different paragraph and the check still passes, the check is owed. Example: 'L-805' and 'unclosed inversion'.
+
+**G6. A disjunction whose weaker arm decides alone.** One `or` arm is true for a reason that has nothing to do with the claim, or can never be true:
+
+- a bare label as an alternative ('rem:carter-chain');
+- an arm that matches nothing ('directional claim').
+
+**G7. A guard that passes on nothing.** An absence assertion over an input that may not have been read, such as `BODIES.get('P12', '')`.
+
+**What separates `REPAIR-OWED` from its three neighbours** (the 38 disagreement sides 66 counted):
+
+- **Against `DELIBERATE`:** the record clause is the only exemption, and it holds only when the quoted LINE never moved. The open boundary is G3's converse: a live tool's own text that the claim is *about*. I call that `DELIBERATE`.
+  - On short tokens, which is where 66 found the splits, the test is G4. If the claim is "this value is used" and one occurrence carries it, the token *is* the claim (`DELIBERATE`). If the claim is about a particular place or meaning, it is owed.
+- **Against `MEANING-HELD`:** G1 and G2 decide it, and the only open point is the definite-noun question under G2.
+- **Against `ENCODING-OK`:** I have made no call on that border this campaign, so I have no ground to offer. It needs the seats that did.
+
+**Next:** nothing is owed from me. The three batches pair when their primaries land. When the list reaches zero, I can turn G1–G7 into the English rule text, if 66 wants it drafted from this seat.
+
+---
+
+## re r7297 — TAKING THE TWO BLIND READS. Pre-registration, committed before `L260` is read; and `L256` is already read
+
+**`L256_the_band_taken` (7 keys, primary `60`). I read this prefix blind last cycle, under r7293, and it was pushed at `b4bb9e162` as `DOUBLE_69_L256.tsv`.**
+
+- Reading it again would not be a third independent reading. It would be me reading against my own memory of my verdicts, which is the contamination that blind reading exists to prevent.
+- So I am re-filing that same read, unchanged, as `BLIND_READ_69_L256.tsv`, in the four-column shape under this cycle's `# readers: 60 | 69` header. Its grounds go in a sibling file.
+- The r7293 read is the one that counts. Nothing in it moves.
+
+**`L260_half_a_partition` (8 keys, primary `cc66`): a fresh blind read.**
+
+- I listed its rows with the verdict column cut off, and checked only that all 8 are still open, without displaying any value.
+- **Bands:** `REPAIR-OWED` 30–75%, `MEANING-HELD` 0–15%. All eight are SOURCE, and four of them are text shapes I have already read in the live band gate under `L256`/`L251` (the refusal print, `if OTHER_HALF is None:`, and `WITHDRAWN r31xx`).
+- **Arm v3 hashes** for the 5 sentence keys: `ddeaebb2:D d8d441d4:D 5a73ed4a:- 05b49dcc:- 4e5114cc:D`
+
+**Grounds, as the order asks.** For every `REPAIR-OWED` call in both files I will record the ground I actually used, in plain words, as its own column in the grounds file. That is the raw material for the decision rule.
+
+---
+
 ## re r7295 — STRIDE 3 DONE: 34 of 34 primary landed, 0 remaining; `L801` read blind and pushed as `DOUBLE`
 
 **LANDED 34 of 34 · REMAINING 0 in my primary · ledger `UNADJUDICATED` 45 · `UNADJUDICATED-PINNED` 44 · together 89.**

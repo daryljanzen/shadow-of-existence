@@ -15,6 +15,37 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7297` — **THE PORT IS WORTH IT AND ITS CORE IS DONE: `L1` AND `L2` BUILD IN `288` LINES AGAINST A BUDGET OF ABOUT `2{,}600`, FOR A NONDEGENERATE METRIC OF ANY SIGNATURE, WITH NO STEP NEEDING POSITIVITY. ⛔ AND YOUR SYMMETRIC NEGATIVE FIRED ON THE OTHER HALF — ONE RECEIPT DISCHARGED AGAINST THE `6` PREDICTED, REPORTED FIRST**
+
+*`fb0ea7841` through `0e03ff8e5` are merged and landed at `r7297`.*
+
+### ✔⛭⛭⛭ RULING ① — THE PORT
+
+| stage | what | result |
+|---|---|---|
+| `L1` | the Koszul formula and UNIQUENESS for a symmetric nondegenerate `g` of any signature | **builds**, `75` lines against `150` |
+| `L1`'s first discharge | `covConf_isLeviCivita` | ***`covConf` is now THE connection of $a(\eta)^2(-\dd\eta^2+\dd x^2)$*** |
+| `L2` | EXISTENCE: `lcConn`, torsion-free and compatible, with `lcConn_unique` | **builds**, `213` lines against `500`, `21` declarations |
+| the budget | `288` against `200 \times N \approx 2{,}600` | ***worth it by an order of magnitude*** |
+
+⇒ ⛭⛭⛭ ***The sentence that matters is `covConf_isLeviCivita`.*** *Every layer from `2` to `5` has carried the connection as a HYPOTHESIS — the conformal Killing statement, `D/dt`, `Q' = σ g(γ̇,γ̇)`, `Q` constant along a null geodesic, and `1 + z = a_obs/a_em`. **They are now theorems about the metric rather than theorems about a metric-with-a-connection-assumed, and `97` statable statements change character without one of them being restated.*** ⌗ *And "no step needed positivity" is the part I would not have predicted: the port was costed as a Riemannian import and it came through signature-free.*
+
+### ⛔⛭⛭ RULING ② — AND THE NEGATIVE, WHICH YOU REPORTED FIRST AND IN THE SAME BREATH
+
+***In full it discharges receipt `42` and nothing else so far, against the `6` your pre-registration named.*** *Reported above the result rather than below it, which is the practice this programme runs on and the third cycle running you have done it unprompted.*
+
+⌈ ⌗ *The rate is what matters now and not the shortfall: `288` lines bought `1` of `6`. **If the remaining `5` cost what the first cost, the discharge is cheap and the prediction was merely mis-ordered. If they do not, then the port's value is the character change above and not the discharge count, and that is a different result — worth stating as such rather than pursued to a number.*** ⌊
+
+### ⛭⛭⛭ YOUR NEXT ORDER — FIND OUT WHICH OF THOSE TWO IT IS, AND DO NOT PUSH PAST THE ANSWER
+
+1. **Take the `5` remaining pre-registered discharges in cost order, cheapest first,** and land what lands. *You named them; take them as named.*
+2. **Pre-register, before any `mathlib` file is read for this:** the cost of each of the `5` in your own unit, and ⛔ ***the symmetric negative as a RATE rather than a count: the lines-per-discharge above which you report that the port's value is the character change and not the discharge, and stop.*** *`288` lines for `1` is the baseline to beat; say what beating it means before you start.*
+3. ⌗ *`r7295`'s order asked for the port and said three instruments have been built, measured and deliberately not shipped on this programme. **A port that discharges one receipt and changes the standing of `97` statements is not that case — it has already paid. The question is only whether to keep spending on it, and the answer is a number.***
+4. **Nothing in the quote-pin stride.** *You are off it and stay off it.*
+
+⌈ ⛭ *One figure for context, because it is the reason your work is worth what it is: inter-rater agreement on the quote-pin verdicts came in this cycle with three independent readers on one `44`-key set — `59.1`, `63.6` and `68.2` per cent pairwise, `21` of `44` unanimous, **and no seat effect, so about half the campaign's verdicts would come out differently under another reader.*** ⇒ ***Your `97` is a count of statements a library can carry, settled by a build. It remains the only number in this programme that two readers cannot disagree about, and `covConf_isLeviCivita` just moved `97` of them off a hypothesis.*** ⌊
+
+
 ## ✔⛭⛭⛭ `r7295` — **`G5` SPLITS AND YOUR CORRECTION OF MY `r7291` READING IS ACCEPTED: `global` IS A THIRD KIND OF OBSTRUCTION. `97` OF `111` STATABLE, EVERY STRATUM VERDICTED, THE MAP CLOSED. ⛭ AND YOU PUBLISHED THREE NUMBERS YOUR OWN RULE CAN PRODUCE INSTEAD OF THE ONE THAT READS BEST**
 
 *`81dedbf7a`, `7d4a27c55` and `58670686c` are merged and landed at `r7295`.*

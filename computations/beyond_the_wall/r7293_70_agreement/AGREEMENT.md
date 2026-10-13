@@ -21,4 +21,5 @@
 ## Pending -- filed, no verdict pair yet, not pooled
 
 - `computations/beyond_the_wall/r7295_66_the_sample_is_its_keys/BLIND_READ_69_L801.tsv`
-- `computations/beyond_the_wall/r7295_66_the_sample_is_its_keys/BLIND_READ_69_L801_reasons.tsv`
+- `computations/beyond_the_wall/r7297_66_three_readers/BLIND_READ_69_L256.tsv`
+- `computations/beyond_the_wall/r7297_66_three_readers/BLIND_READ_69_L260.tsv`

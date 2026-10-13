@@ -364,14 +364,23 @@ gate(f'Ⓔ① ⛭⛭ the one correction that is this seat\'s own: `{len(_mine)}`
      len(_mine) == 1)
 
 _touched = sorted({f for f in _git('diff', '--name-only', PREG, AFTER).split('\n') if f})
-_rcpt = [f for f in _touched if f.startswith('receipts/') and f.endswith('.py')]
-_foreign = [f for f in _rcpt if not f.endswith(os.path.basename(__file__))]
-print(f'      touched {len(_touched)} file(s), {len(_rcpt)} of them receipts, {len(_foreign)} of '
-      f'them another revision\'s')
-gate(f'Ⓔ② ⛭ the restraint, as the SPECIFIC NEGATIVE: the module, the ledger and this receipt --- and '
-     f'NOT one of the receipts whose rows the repair touches (`{len(_foreign)}`), because a '
-     f're-statement is a row and not an edit to the gate it describes',
-     BASE in _touched and MOD in _touched and not _foreign)
+#: ⛔⛭ BOTH REPAIRS KEPT (r7298+60's form, r7295+66's range).  60: the first form of this gate ALSO
+#: required that no receipt but its own appear in the diff --- a claim about the diff's FORM beside
+#: the claim it means --- and the specific negative is the whole claim: none of the receipts whose
+#: rows this repair touches was edited.  66: and the range it reads is `PREG..AFTER`, closed, so the
+#: gate no longer depends on what a later revision edits.  ** The two repairs are the same clause
+#: from its two sides: assert the PROPERTY, and assert it over a range that cannot move. **
+_subjects = sorted({c[0] for c, _l in _ro})
+_touched_subjects = [f for f in _touched if f in _subjects]
+print(f'      the {len(_ro)} touched rows live in {len(_subjects)} receipts; this revision edited '
+      f'{len(_touched_subjects)} of them')
+gate(f'Ⓔ② ⛭⛭ the restraint, as the SPECIFIC NEGATIVE and nothing beside it: the '
+     f'`{len(_ro)}` rows the repair touches live in `{len(_subjects)}` receipts and this revision '
+     f'edited `{len(_touched_subjects)}` of them, while the module and the ledger ARE in the diff --- '
+     f'because a re-statement is a row and not an edit to the gate it describes.  ** The first form of '
+     f'this gate also demanded that no OTHER receipt appear in the diff, which is a claim about the '
+     f'diff rather than about the restraint; it is dropped, and the range is pinned beside it **',
+     BASE in _touched and MOD in _touched and not _touched_subjects)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print()

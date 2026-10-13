@@ -155,8 +155,10 @@ def main():
         # ** r2720: BOTH repairs kept -- 54 (c54.213) guards the NAMING, cc54 asserts the
         # exact PARAGRAPH.  *** Two checks on one fill are complementary, and dropping either
         # loses a guard the other does not provide. ***
-    cosmo = open(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'),
-                 encoding='utf-8', errors='replace').read()
+    # ⛭ r7293+cc66: read whitespace-flattened, because the clause that names the FRAMEWORK
+    #   wraps a line in the paper and a line-based read cannot see it whole.
+    cosmo = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'),
+                                     encoding='utf-8', errors='replace').read())
     check('cc54\'s station-9 finding was APPLIED -- N_eff is now NAMED in the corpus '
           f'(variants {", ".join(repr(v) for v in variants[:3])} ... now count {sum(hits.values())}, '
           'not the ZERO this receipt found at r2541)',
@@ -166,8 +168,13 @@ def main():
           '$N_{\\mathrm{eff}}$ prediction; the standard value is adopted" -- the exact paragraph this '
           'receipt asked for',
           'N_{\\mathrm{eff}}=3.046' in cosmo
-          and 'makes no $N_{\\mathrm{eff}}$ prediction' in cosmo
-          and 'adopted' in cosmo)
+          # ⛭ r7293+cc66: the two arms are MERGED into the clause that names the framework.
+          #   `makes no $N_{\\mathrm{eff}}$ prediction` opened on a finite verb and was satisfied
+          #   by a sentence saying the STANDARD MODEL makes no such prediction -- a different
+          #   claim, and also true -- and `adopted` was one word, twice in the file, standing
+          #   for the whole adoption.  ** One span now carries both halves and their subject. **
+          and 'This framework therefore makes no $N_{\\mathrm{eff}}$ prediction; the standard value is '
+              'adopted, and is consistent with the fourth grading rather than in tension with it' in cosmo)
     # and the sector is otherwise deep -- so it is one missing name, not a missing sector
     # ** r6931+70.1: THE FOURTH TERM FROZE AN ERROR.  Class (a).  "Hubble tension" survived in the
     #   corpus only inside the claim that the geometric rate RESOLVES / DISSOLVES it ("a redshift-free
@@ -182,15 +189,19 @@ def main():
     #   construction does NOT dissolve the discrepancy with the local distance ladder, and names it
     #   as the distance-ladder tension that z_acc is untouched by.  Pinning the withdrawn phrase would
     #   have defended the dissolution against its own withdrawal. **
-    cr_cosmo = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
-                    encoding='utf-8', errors='replace').read()
+    cr_cosmo = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
+                                        encoding='utf-8', errors='replace').read())
     check('yet the sector is deep: "lithium problem", "deuterium", "nucleosynthesis" are all present, '
           'and the H0 discrepancy is engaged -- P15 sec:tensions: "this construction does not dissolve '
           'the discrepancy with the local distance ladder", and z_acc is "untouched by the '
           'distance-ladder tension" -- so this is ONE MISSING NAME, not a missing sector',
           corpus_count('lithium problem') > 0 and corpus_count('deuterium') > 0
           and corpus_count('nucleosynthesis') > 0
-          and 'does not dissolve the discrepancy with the local distance ladder' in cr_cosmo
+          # ⛭ r7293+cc66: widened to name `this construction`.  The old span was a bare verb
+          #   phrase, and the history is why its subject matters more than usual: this check
+          #   once pinned the WITHDRAWN claim that the construction RESOLVES the tension, and a
+          #   span naming no construction cannot tell the corrected sentence from any other.
+          and 'So this construction does not dissolve the discrepancy with the local distance ladder' in cr_cosmo
           and corpus_count('distance-ladder tension') > 0)
 
     # ---- the discipline: the corpus ANSWERS N_eff in code, unnamed ---------------------------------
@@ -230,8 +241,16 @@ def main():
     check('and the missing name is load-bearing for CR specifically: the construction carries a '
           'right-handed neutrino (nu_R) in its matter content, so whether it ADOPTS the standard '
           'N_eff or predicts a departure is a real question the unnamed adoption hides',
-          ('nu_R' in matter) or ('\\nu_R' in matter) or ('right-handed' in matter.lower())
-          or ('nu_{R}' in matter))
+          # ⛔⛭ r7293+cc66: THE FOUR-ARM `or` IS REPLACED BY ONE SPAN THAT STATES THE CLAIM.
+          #   Measured on the paper as it stands: `right-handed` 12 occurrences and so unable
+          #   to fail, which disabled the whole test; `nu_{R}` 0 and so dead; `nu_R` 3, a strict
+          #   substring of `\\nu_R`'s same 3 sites and so undeciding; `\\nu_R` the only deciding
+          #   arm, and or-ed with a partner that cannot fail it decided nothing either.  ** Four
+          #   arms, all four of ⓒ's shapes, and a test that could not fail whatever happened to
+          #   $\\nu_R$. **  And none of the four said WHERE the state sits, which is the claim:
+          #   the colourless four.  Pinned to the sentence that does.
+          'one generation splits $12$ coloured against $3$ colourless ($4$ with a right-handed neutrino)'
+          in re.sub(r'\s+', ' ', matter))
 
     print()
     if FAILED:

@@ -266,7 +266,10 @@ _ROOT = _os.path.abspath(_os.path.join(_os.path.dirname(_os.path.abspath(__file_
 _tex = open(_os.path.join(_ROOT, 'corpus', 'matter_sector_paper.tex'), encoding='utf-8').read()
 _pay = open(_os.path.join(_ROOT, 'receipts', 'P14_matter_sector_paper', 'P14_P14_payoff.py'),
             encoding='utf-8').read()
-_secount = "exchanged by the antipodal map, which is $R$." in _tex
+# ⛭ r7293+cc66: widened to the clause this file's own print line already quotes.  The old span
+#   opened on the participle `exchanged` and left outside it exactly the half that
+#   distinguishes the two senses of `R` -- WHAT is exchanged.
+_secount = "the two crossings are exchanged by the antipodal map, which is $R$." in _tex
 _cosmo = "R = r_0->-r_0 (2M->-2M) carries 3 -> 3bar" in _pay
 print("    sec:count       : 'the two crossings are exchanged by the antipodal map, which is R'")
 print("                      -- WITHIN one geometry, the mass FIXED")
