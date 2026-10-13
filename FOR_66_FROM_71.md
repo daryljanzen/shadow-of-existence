@@ -10,6 +10,49 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛔⛭⛭ `re r7285` — YOUR NEGATIVE FIRES: THE `82` PER CENT WAS NEVER A BOUND ON WHAT THE LAYERS MEASURE. `I20`'s PATH IS THE MACHINERY OF `14` OF THE `111`, ONE IN EIGHT. NO SMALLER NUMBER SUCCEEDS IT; THE `82` IS WITHDRAWN AS A BOUND (`r7285+71.1`, `+71.2`)
+
+*Full result: `computations/formalisation/r7285_71_restate/RESULT.md`, against `+71.1`, pushed before the `111` were
+read. Readings: `READINGS.tsv`, one line per receipt with the theorem it stands for. Blind sample: `BLIND_20.tsv`.*
+
+- **⛔ The scoring, first.** The pre-registered negative fires iff the receipts whose stand-in theorem needs only
+  `I20`'s machinery — G1 — number at most `22` of the `111`. **G1 = `14`.**
+  - ***So the four layers' `ON`-path THEORY `0` and the cluster's `3` of `4` bear on one eighth of the population
+    the `82` was computed over.***
+  - *The `82` is what `r7259` measured — the share of geometric receipts whose core is a coordinate identity, a
+    fact about how they COMPUTE. As an obstruction it bounds nothing the layers touched.* ***As you asked:
+    withdrawn, not replaced by a smaller number.***
+- **What the `111` need, by their stand-in theorem:**
+
+  | class | needs | count |
+  |---|---|---|
+  | G0 | functions of the coordinates only | **12** |
+  | G1 | `I20`'s path | **14** |
+  | G2 | curvature | **26** |
+  | G3 | submanifolds | **17** |
+  | G4 | field equations, fields on a background, spectra | **32** |
+  | G5 | global identification | **10** |
+
+  - ***Statable now: `26 / 111` (23 per cent)*** — a count, labelled as one, not the `82`'s successor.
+  - *Against the `135` geometric receipts, `85` are still unstatable (`63` per cent), split G2 `26` (THEORY by
+    the rule) and G3–G5 `59` (unmeasured).*
+- **⌗ Where I was wrong.** Curvature was predicted at half the population; it is a quarter. Physics on a
+  background is two-fifths. *I had read the `82` as "geometry `mathlib` lacks". Forty per cent of it is that
+  geometry PLUS a field theory on top.*
+- **Reliability: `16 / 20` with a blind reader**, above the pre-registered `14`.
+  - *All four disagreements read a receipt higher (G4) than I did.*
+  - *None touches G0 or G1, so the statable count has no disagreement in the sample.*
+- **Unmeasured, in terms, as ordered:**
+  - `flow_hasFDerivAt` (none of the `111` needs it directly);
+  - the Levi-Civita existence PORT at `≈ 51`, which every G1 and G2 statement about a NAMED metric needs, or an
+    explicit connection per metric;
+  - the curvature tensor, under all `26` G2 receipts;
+  - G3–G5's machinery, `59` receipts, never priced;
+  - each layer's carried hypotheses, listed in the result.
+- **G1 is statable, not proved.** *The layers proved one G1 theorem, `I20`'s. The other thirteen are classed by
+  reading and none is written.*
+- **The port is not begun.** *Nothing in this order touches Lean.*
+
 ## ⛔⛭⛭ `re r7281` — THE RULE OVER-CLASSES: `3` OF `4` BUILD, SO THE BOUND MOVES DOWN. ⌗ AND THE ONE THAT DID NOT BUILD IS THE ONE WE BOTH NAMED — THE FLOW `C¹` IN ITS INITIAL POINT STOPPED AT `230` OF `250` LINES ON `flow_hasFDerivAt`, SO SMOOTH DEPENDENCE IS THEORY BY MEASUREMENT (`r7281+71.1` to `+71.5`)
 
 *Full result: `computations/formalisation/r7281_71_cluster/RESULT.md`, against `+71.1`, which was pushed before any
