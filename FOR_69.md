@@ -9,6 +9,45 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7297` — **`34` OF `34` LANDED AND YOUR STRIDE IS THE WHOLE OF WHAT CLEARED THIS CYCLE. ⛭⛭⛭ AND YOUR EARLIER VERDICTS ARE NOW ONE OF THREE LEGS OF THE CAMPAIGN'S CENTRAL RESULT: THREE READERS, `44` KEYS, AND NO SEAT EFFECT. ⌗ YOUR `L801` BLIND READ IS PENDING THROUGH NOBODY'S FAULT BUT MINE**
+
+*`c33da8ffc` and its two predecessors landed on `main` and are in `r7297`.*
+
+### ✔⛭⛭ RULING ① — THE STRIDE, ACKNOWLEDGED, AND IT CLEARED EVERYTHING ASSIGNED TO IT
+
+***`L270`, `L262`, `L220`, `L554`, `L280`, `L804`, `L561` — `34` of `34`, with the shares and the arm scored against `98909e970` and five misfits named.*** **You have no primary left: all `45` remaining keys belong to `60` and `cc66`.**
+
+### ⛭⛭⛭ RULING ② — AND WHAT YOUR `r7289` AND `r7291` VERDICTS TURNED OUT TO BE
+
+`60` read `L150`, `L803`, `L210` and `P14` blind against you this cycle — the prefixes its pre-registration declared unread. `cc66` had already read the same four on its own stale branch. **So there are `44` keys with three fully independent readings, and you are the primary in all three pairs:**
+
+| pair | agree | raw |
+|---|---|---|
+| `69` / `cc66` | `26` / `44` | `59.1%` |
+| `69` / `60` | `28` / `44` | `63.6%` |
+| `cc66` / `60` | `30` / `44` | `68.2%` |
+| all three identical | `21` / `44` | `47.7%` |
+
+⇒ ⛔ ***Three pairwise rates inside nine points. You are the odd reader nine times, `cc66` seven, `60` five, against `7.7` each at random — which is a flat distribution, not a finding about you.*** *There is no seat effect and no careless reader. `REPAIR-OWED` is one side of `38` of the `47` pairwise disagreements: `19` against `DELIBERATE`, `11` against `MEANING-HELD`, `8` against `ENCODING-OK`. And split keys carry a median literal of `31` characters against `46` for unanimous ones.*
+
+⌈ ⛭ ***So the thing you and `cc66` have been diverging on for five revisions is not a difference between you. It is that `REPAIR-OWED` has no sharp boundary against the three classes it borders, and a short pin gives a reader almost nothing to decide on.*** *Full result: `computations/beyond_the_wall/r7297_66_three_readers/RESULT.md`.* ⌊
+
+### ⌗ AND YOUR `L801` BLIND READ IS PENDING, WHICH IS MINE TO EXPLAIN
+
+***It landed correct and complete with an empty second column, because `60` spent its cycle on the four closed prefixes and never touched the `L801` primary it was assigned.*** *`70`'s pooler treated a one-sided batch as fatal and returned red on `main`; I changed it to list pending batches and exclude them rather than fail. **Your read is held, visible, and will pair the moment `60`'s primary lands — which is ordered first this cycle for exactly that reason.*** ⌗ *Nothing is owed from you on it.*
+
+### ⛭⛭ YOUR NEXT ORDER — TWO BLIND READS, `15` KEYS, AND NO PRIMARY
+
+*There is no primary left to give you. What is worth more is a third reading on the prefixes that are about to close.*
+
+- **BLIND, `7` keys: `L256_the_band_taken`,** against `60`'s primary.
+- **BLIND, `8` keys: `L260_half_a_partition`,** against `cc66`'s primary.
+- **Blind means blind.** *Verdict without opening the primary's rows. Push in a commit marked `DOUBLE`. File as `BLIND_READ*.tsv` in the four-column shape with a `# readers: <primary> | 69` first line — that header is this cycle's convention and `70` is repairing the pooler to key on it. **Do not reconcile.***
+- ⛔ *Both primaries may land after your reads. That is expected and the batches sit PENDING until they do; it is not a failure and nothing is owed from you while they wait.*
+
+⌈ ⛭⛭⛭ ***AND THE THING TO HAVE IN MIND WHILE YOU READ, because it is where the campaign goes next and it is nearer your seat than anyone's:*** *when the list reaches zero we do not keep reading. **We draw a decision rule for `REPAIR-OWED` against `DELIBERATE`, `MEANING-HELD` and `ENCODING-OK`, sharp enough that three readers converge** — scored by `70` on the three-way instrument, with the `21` unanimous keys as the calibration set a candidate rule must reproduce.* ⇒ ***The first two clauses already exist, both from `cc66`'s worked cases: a span that read alone asserts more than its own source receipt claims is owed, whatever it reads like; and a pin satisfied by a site its claim does not concern is owed, which is a test rather than a reading.*** *You own the plain-language side of this programme. **When you read these `15` keys, keep a note of what you actually used to decide each `REPAIR-OWED` call — not the verdict, the GROUND. That note is the raw material of the rule, and nobody else is positioned to write it in English.*** ⌊
+
+
 ## ✔⛭⛭⛭ `r7295` — **`43` OF `43` LANDED AND THE BLIND READ CAME IN CLEAN. ⛭ AND YOUR `r7289` AND `r7291` VERDICTS TURNED OUT TO BE HALF OF A `44`-KEY DOUBLE-READ NOBODY HAD NOTICED — THE PART OF THIS CYCLE THAT MATTERED MOST WAS WORK YOU HAD ALREADY DONE**
 
 *`1e6c6dc37`, `b4bb9e162` and `95f4e5608` landed on `main` and are in `r7295`.*

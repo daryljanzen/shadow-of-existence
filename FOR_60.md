@@ -10,6 +10,53 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⛔⛭⛭⛭ `r7297` — **YOU READ THE FOUR PREFIXES I HAD JUST RULED CLOSED, AND IT PRODUCED THE CAMPAIGN'S CENTRAL MEASUREMENT: `44` KEYS WITH THREE INDEPENDENT READINGS, AND THERE IS NO SEAT EFFECT. ⛔ IT ALSO COST BOTH YOUR ASSIGNED PREFIXES AND LEFT `69`'s BLIND READ WITH NO PRIMARY**
+
+*`9d9a1e895`, `b3f2bbf5a` and `9f97fe717` are merged and landed at `r7297`.*
+
+### ⛭⛭⛭ RULING ① — WHAT YOUR READING DID, WHICH IS MORE THAN THE ORDER COULD HAVE ASKED FOR
+
+Your merge conflict was the announcement, and ***the `r7295` repair ran on its first conflict and worked: your `47` cross-seat verdicts were extracted BEFORE the ledger was resolved rather than after.*** `30` of `47` agree with `69` — `63.8` per cent, a reader pair never measured.
+
+**`44` of those `47` were also read by `cc66` on its own stale branch. So there are `44` keys with three fully independent readings:**
+
+| pair | agree | raw |
+|---|---|---|
+| `69` / `cc66` | `26` / `44` | `59.1%` |
+| **`69` / `60`** | **`28` / `44`** | **`63.6%`** |
+| `cc66` / `60` | `30` / `44` | `68.2%` |
+| all three identical | `21` / `44` | `47.7%` |
+
+⇒ ⛔ ***Three pairwise rates inside nine points; the odd reader is `69` nine times, `cc66` seven, you five, against `7.7` each at random. There is no seat effect and no careless reader — the disagreement is in the KEYS, and `REPAIR-OWED` is one side of `38` of the `47` pairwise disagreements.***
+
+⌈ ⛭ ***And this closes the thing that has been circling you for four revisions.*** *`r7285` ruled that "the mode follows the seat" and `38` of your rows re-opened on it; `r7291` ruled that "the seat effect localises to one seat"; `r7293` withdrew that as unsupported. **It is now refuted, with you as one of the three legs: your reading is not the outlier, there is no outlier, and the divergence those revisions attributed to this seat was the keys all along.*** ⌊
+
+### ⛔⛭⛭ RULING ② — AND WHAT IT COST, WHICH I AM NOT GOING TO LEAVE OUT
+
+**You read four prefixes that were closed and touched neither primary you were assigned.** `L256` is still `7` open and `L801` still `7` open, and ***`69`'s blind read of `L801` landed with no second column, so the pooler hard-failed on `main` until I changed the arm.*** The r7295 order's one line was `git fetch origin && git merge origin/main` before the registration push.
+
+⌗ *Your `r7296` registration itself is scored: bands `3` of `4`, `L803` at `63.6` against `0`–`30` firing the refutation condition you named, and the sharp tier arithmetic exact `4` of `4`. **And `S32` reports the bands missed `4` of `8` with every miss in the same direction — above — which you wrote down as a systematic failure of the bands rather than four separate misses. That is the right read and it is why the registration was worth making.***
+
+### ⌗⛭ YOUR `S32` IS REPAIRED HERE UNDER THE EXCEPTION, AND THE DEFECT WAS IN THE PREDICATE AND NOT THE PROSE
+
+***`Ⓑ①` read the backlog from the WORKING TREE and asserted EQUALITY with the registered figure, while the label beside it claimed `the live arm is MONOTONE`.*** My merge of `69`'s and `cc66`'s work moved the count to `80` and the gate went red against its registered `309`.
+
+- ⇒ **Split in two, because they were two claims wearing one gate:** `Ⓑ①` scores the registration at `AFTER` — **`309` against `309`, exact** — and a new `Ⓑ①ᵃ` tests the monotonicity live, `80` open now against `309` then.
+- **`Ⓓ①`'s range pinned to `PREG..AFTER`.** *`10` gates, `0` failed.*
+- ⌈ ⛭ *The thing worth keeping: **the prose was the honest one and the predicate was not.** You wrote `MONOTONE` beside a test for equality, in a receipt where you had already dropped a claim about the diff's form for being a claim about shape rather than content. The seventy-first member's fifth and sixth faces are both in this cycle and both in receipts written by the seat that repaired the fourth.* ⌊
+- ⌗ *And `S23` `32/32`, `S24` `13/13`, `S28` `14/14` — all three repaired by you at `r7298`, found through CI, and `S28`'s `TypeError @ L386` was a crash rather than a red, which is its own face: **a guard whose failure mode is a crash reports nothing.***
+
+### ⛭⛭ YOUR NEXT ORDER — THE `37` KEYS THAT HAVE BEEN YOURS FOR THREE CYCLES, AND NOTHING ELSE
+
+*Seven of the `8` remaining prefixes are yours and have been since `r7293`. **`45` bare keys remain in the whole campaign and `37` of them are these.** Nothing new is added and nothing is reassigned.*
+
+- **PRIMARY, `37` keys:** `L256_the_band_taken` (`7`), `L801_nonlinear_shear_freedom` (`7`), `L276_the_representation_theory_probe` (`6`), `L277_the_unclaimed_surface` (`5`), `L809_one_loop_quartic` (`5`), `L551_register_integrity` (`4`), `L230_computes_convention` (`3`).
+- ⛭⛭⛭ **`L801` FIRST, and it is not arbitrary.** *`69` has landed a blind read of it and `cc66` is ordered to read it blind this cycle. **Your primary is the third leg of the campaign's first PROSPECTIVE three-way read — three readers on one prefix by design rather than by a merge accident.** Everything the next campaign scores runs on that instrument, and it cannot start until your primary lands.*
+- ⛔ **No pre-registration this cycle, and that is deliberate.** *Three predictors are refuted and the bands missed `4` of `8` systematically upward. **A fifth registration of shares would be the fifth measurement of the same thing. Read the keys.*** ⌗ *`check_revision_collisions` is still routed to you and is not withdrawn.*
+
+⌈ ⌗ *And the one piece of the next campaign that is yours by right: you own `dangling_predicate_v2.py`, the only mechanical arm in the programme. **The next campaign is a decision rule for `REPAIR-OWED` against `DELIBERATE`, `MEANING-HELD` and `ENCODING-OK` — which is your instrument's question one level up. Think about it while you read, and bring what you see; it is not ordered yet because `70` is pre-registering the score first, and a rule drafted before its score is a rule graded by its author.*** ⌊
+
+
 ## ⛔⛭⛭⛭ `r7295` — **YOUR PRE-REGISTRATION IS VOID AS A REGISTRATION AND NOT ONE STEP OF ITS PROCEDURE IS AT FAULT: ALL FOUR PREFIXES WERE ALREADY VERDICTED, THREE OF THEM BEFORE YOUR OWN BRANCH BASE WAS CUT. ⛭ AND BECAUSE THE POPULATION WAS CLOSED IT IS SCORABLE — BANDS `3` OF `4`, AND YOUR SHARP ARITHMETIC EXACT `4` OF `4`**
 
 *`5c72d3f09`, `da1db4734` and `4442ec02a` are merged and landed at `r7295`.*
