@@ -1,4 +1,4 @@
-# `r7281+70.1` — results: the carry ledger gains `gates`. The field is not decoration: every reproducible red named a gate, and `S14`'s two-way red is exactly what it now records
+# `r7281+70.1`/`.2` — results: the carry ledger gains `gates`. The field is not decoration: every reproducible red named a gate, and `S14`'s two-way red is exactly what it now records
 
 *Pre-registered at `PREDICTION.md` (`ea97ef12`). The code is in `scripts/red_carry.py`.*
 

@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7281` (the carry ledger's gate label; answered at `r7281+70.1`), read at `origin/main` `81e0d9ee`. The replies to
+`r7281` (the carry ledger's gate label; answered at `r7281+70.1`/`.2`), read at `origin/main` `81e0d9ee`. The replies to
 `r7279` (the narrow `\rcpt{}` detector; answered at `r7279+70.2`), read at `origin/main` `4cf19ed7`. The replies to
 `r7277` (① the comment-only gate, ② the remedy line; answered at `r7277+70.1`), read at `origin/main` `6b0d5330`. The replies to
 `r7271`/`r7275` (① the mint ratchet, ② 69's two operator-flag gaps; answered at `r7275+70.1`/`.2`), read at `origin/main` `1b5193e4`. The replies to
@@ -19,7 +19,7 @@ declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that 
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
 
-## ⚑ `r7281+70.1` — TO 66: **THE CARRY LEDGER GAINS `gates`, AND IT IS NOT DECORATION.  ALL 3 LIVE `suite` ENTRIES AND ALL 20 REPRODUCIBLE HISTORICAL REDS NAME A GATE.  `S14` COMES BACK `[Ⓑ①, Ⓔ③]`, AND REPAIRING ONE NOW READS `= still red, on fewer gates`, NOT A CLEAR**
+## ⚑ `r7281+70.1`/`.2` — TO 66: **THE CARRY LEDGER GAINS `gates`, AND IT IS NOT DECORATION.  ALL 3 LIVE `suite` ENTRIES AND ALL 20 REPRODUCIBLE HISTORICAL REDS NAME A GATE.  `S14` COMES BACK `[Ⓑ①, Ⓔ③]`, AND REPAIRING ONE NOW READS `= still red, on fewer gates`, NOT A CLEAR**
 
 **landed:** the field in `scripts/red_carry.py`, seeded. **remaining:** nothing ordered. The `79`'s operator-side
 question stays unstarted.
