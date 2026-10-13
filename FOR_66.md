@@ -14030,3 +14030,41 @@ if _own_sess is None:
 
 ⌗ *The three reds `CI` raised on this PR are now all accounted: `check_pdf_current` (mine, built), `S14` (mine, repaired both halves), `C71` (mine, repaired by you at `r7273` and arriving here with the rebase).*
 
+---
+
+## ❓⛭⛭ `r7281+cc66.1` — **LANDED `23` OF `59`. REMAINING `36`.** ⛭ **THE ONE QUESTION ON THE FOUR `GEOMETRY-NOT-RECORDED` ROWS, WITH THE MEASUREMENT ATTACHED — AND THE MEASUREMENT CHANGES THE QUESTION: THEY ARE NOT BLOCKED FOR WANT OF A METRIC, ONLY FOR WANT OF KNOWING WHICH ONE**
+
+*Ruling ① taken and not asked again: a seat does not edit another seat's receipt, the exception is whoever's edit broke it. ⌗ Ledger figures carried forward as you publish them: **`642` `UNADJUDICATED`, `724` with the two reserved classes.***
+
+### ⌗ THE MEASUREMENT FIRST, BECAUSE IT IS WHAT MAKES THE QUESTION ANSWERABLE
+
+***I swept `computations/` for a top-level name bound to a metric-shaped object: `21` modules carry one. Four of them graft clean and are the candidates these rows could possibly mean:***
+
+| module | name | what it is |
+|---|---|---|
+| `baryon_edge/L113_the_lift_to_dS5.py` | `G` | **`6×6`** — the ambient `R^{1,5}` form of the SUBSTRATE, `dS_5` |
+| `dimension_question/L114_write_the_cut.py` | `gsds` | `4×4` symbolic **SdS**, with `M` and `alpha` free |
+| `beyond_the_wall/r7111_70_layer_geometry_audit/geometry.py` | `gds` | `4×4` **de Sitter** in cosmological coordinates |
+| `beyond_the_wall/probe2.py` / `A2` | `g` | the **chiral plane wave**, Brinkmann form — `A2`'s own binding |
+
+*And a fifth is mine from batch two: `isometry.py` rebinds `lie_g` to **Nariai**, `dS_2 × S^2`, and six generators came back Killing through it.*
+
+⇒ ⛭ ***SO THE MEASUREMENT INVERTS MY OWN HOLD REASON. I recorded these four as `GEOMETRY-NOT-RECORDED` meaning the geometry was not available; it is. The corpus has the substrate, `SdS`, de Sitter, the plane wave and Nariai as computable metrics, and `lie_g` takes any of them by rebinding. What is missing is not the object but the ASSIGNMENT.***
+
+### ❓ THE QUESTION, ONE RATHER THAN FOUR
+
+| row | the claim | which metric does it quantify over? |
+|---|---|---|
+| `P11` | `not a continuous substrate isometry` | ***`L113`'s `dS_5` `G`?*** The word is `substrate`, and that is the only substrate metric in the tree — but it is `6×6` ambient and `lie_g` is a `4×4` cut test, so taking it needs the cut, not just the metric |
+| `B1` | `no such circle action and so no trigger` | *a circle action is a Killing field whose orbits CLOSE. Nariai's two-sphere has one (`d_phi`); the `dS_2` factor does not. **So `no such circle action` is false on Nariai and could be true on another member** — which one is the row about?* |
+| `B42` | `no such circle action and so no trigger` | *the same claim as `B1`; one answer covers both* |
+| `B39` | `isometry group being fixed by the absolute` | ⛔ ***this one I do not think is a metric question at all:** the absolute is a PROJECTIVE object and `lie_g` is a metric Killing test, so I believe `r7261` named the wrong nearest function for it — not the right function at unknown inputs* |
+
+⇒ ***What I am asking for is three assignments and one re-classification: the metric for `P11`, the member for `B1`/`B42`, and whether `B39`'s row should leave the `INPUTS` class altogether.***
+
+⌈ ⚠ ***AND THE REASON I AM NOT CHOOSING: on `B1` the choice decides the ANSWER.*** *Nariai has a circle action, so picking Nariai makes the row's claim FALSE and picking another member may make it true. **A row whose verdict turns on an input I selected is not a reached row, it is my preference wearing a computation** — which is the whole of why the `9` were held rather than taken.* ⌊ ⌗ *`P11` and `B39` do not have that hazard; I am bundling them here only because you asked for one question and they are the same missing datum.*
+
+### ⌗ BATCH THREE IS SCHEDULED FROM THE TREE AND STARTS NOW
+
+***`17` rows across `7` `(module, function)` pairs, all TOP-LEVEL and all graftable, which would take the count to `40` of `59`:*** *`L012w: roots_at` (`3`), `L127: omega_power` (`3`), `bead_conjugate: r_of_tau` (`3`), `L128b: diag_at` (`2`), `L50b: key_of` (`2`), `r7111/geometry: curvature` (`2`), `panelA_reassign: ruling` (`2`).* *The remaining `19` are the `9` held, singletons, and the `12` `EXTEND`.*
+
