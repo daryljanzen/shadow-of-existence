@@ -1465,6 +1465,83 @@ theorem lcConn_unique {cov' : CovariantDerivative I E (TangentSpace I : M → Ty
 
 end LCExist
 
+/-! ## `r7297`, C1 — receipt 43: on a flat metric of any signature, the flat connection IS the Levi-Civita
+connection, so the homothety `ξ(x) = x` has `∇ξ = id` for THE connection, and its charge is conserved exactly
+along null geodesics -/
+
+section FlatLC
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+
+/-- The flat connection `σ ↦ Dσ`, from K2's `flat_isCov`. -/
+noncomputable def flatCov : CovariantDerivative 𝓘(ℝ, E) E (TangentSpace 𝓘(ℝ, E) : E → Type _) where
+  toFun σ x := show TangentSpace 𝓘(ℝ, E) x →L[ℝ] TangentSpace 𝓘(ℝ, E) x from (fderiv ℝ (vf σ) x : E →L[ℝ] E)
+  isCovariantDerivativeOnUniv := flat_isCov
+
+set_option backward.isDefEq.respectTransparency false in
+theorem flatCov_torsion : (flatCov (E := E)).torsion = 0 := by
+  rw [CovariantDerivative.torsion_eq_zero_iff]
+  intro X Y x hX hY
+  rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin]
+  show fderiv ℝ (vf Y) x (X x) - fderiv ℝ (vf X) x (Y x) = _
+  rw [lieBracketWithin_univ]
+  rfl
+
+set_option backward.isDefEq.respectTransparency false in
+/-- A constant form `η` is compatible with the flat connection. -/
+theorem flatCov_compat (η : E →L[ℝ] E →L[ℝ] ℝ) (x : E) :
+    IsCompatAt (fun _ => η) (flatCov (E := E)) x := by
+  intro X Y Z hX hY hZ
+  have dY : DifferentiableAt ℝ (vf Y) x :=
+    mdiffAt_model.1 (hY.mdifferentiableAt one_ne_zero)
+  have dZ : DifferentiableAt ℝ (vf Z) x :=
+    mdiffAt_model.1 (hZ.mdifferentiableAt one_ne_zero)
+  have hd : HasFDerivAt (fun y => η (vf Y y) (vf Z y)) _ x :=
+    (η.hasFDerivAt.comp x dY.hasFDerivAt).clm_apply dZ.hasFDerivAt
+  have : (show ℝ from mfderiv 𝓘(ℝ, E) 𝓘(ℝ, ℝ) (fun y => η (Y y) (Z y)) x (X x))
+      = fderiv ℝ (fun y => η (vf Y y) (vf Z y)) x (X x) := by
+    rw [mfderiv_eq_fderiv]; rfl
+  exact this.trans (by rw [hd.fderiv, add_apply, add_comm]; rfl)
+
+/-- **C1, the connection half.** For a symmetric nondegenerate constant `η` of ANY signature, every torsion-free
+connection compatible with `η` at `x` IS the flat one there (L1). -/
+theorem flat_isLeviCivita {η : E →L[ℝ] E →L[ℝ] ℝ} (hsym : ∀ u v, η u v = η v u)
+    (hnd : ∀ u, (∀ v, η u v = 0) → u = 0)
+    {cov' : CovariantDerivative 𝓘(ℝ, E) E (TangentSpace 𝓘(ℝ, E) : E → Type _)}
+    (htor' : cov'.torsion = 0) {x : E} (hc' : IsCompatAt (fun _ => η) cov' x)
+    {Y : Π y : E, TangentSpace 𝓘(ℝ, E) y} (hY : CMDiffAt 1 (T% Y) x) (w : TangentSpace 𝓘(ℝ, E) x) :
+    cov' Y x w = fderiv ℝ (vf Y) x w :=
+  lc_unique (g := fun _ => η) hsym hnd htor' flatCov_torsion hc' (flatCov_compat η x) hY w
+
+/-- The homothety field `ξ(x) = x`. -/
+def homo : Π y : E, TangentSpace 𝓘(ℝ, E) y := fun y => y
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **C1, receipt 43.** For THE Levi-Civita connection of a flat metric of any signature, `∇ξ = id`: the dilation
+is a homothety, `L_ξ η = 2η`. -/
+theorem homothety_nabla {η : E →L[ℝ] E →L[ℝ] ℝ} (hsym : ∀ u v, η u v = η v u)
+    (hnd : ∀ u, (∀ v, η u v = 0) → u = 0)
+    {cov' : CovariantDerivative 𝓘(ℝ, E) E (TangentSpace 𝓘(ℝ, E) : E → Type _)}
+    (htor' : cov'.torsion = 0) {x : E} (hc' : IsCompatAt (fun _ => η) cov' x)
+    (w : TangentSpace 𝓘(ℝ, E) x) : cov' homo x w = w := by
+  have hξ : CMDiffAt 1 (T% (homo (E := E))) x := by
+    rw [contMDiffAt_section]; simp only [trivializationAt_model_space_apply]
+    exact contMDiffAt_id
+  rw [flat_isLeviCivita hsym hnd htor' hc' hξ w]
+  show fderiv ℝ (fun y : E => y) x w = w
+  rw [fderiv_fun_id]; rfl
+
+/-- **C1, receipt 43.** Along a geodesic of the flat metric, `t ↦ p + t v`, the homothety charge `Q = η(ξ, γ̇)` has
+`Q′ = η(v, v)`: it is conserved exactly when the geodesic is null. -/
+theorem homothety_charge (η : E →L[ℝ] E →L[ℝ] ℝ) (p v : E) (t : ℝ) :
+    HasDerivAt (fun s : ℝ => η (p + s • v) v) (η v v) t := by
+  have e : (fun s : ℝ => η (p + s • v) v) = fun s => η p v + s * η v v := by
+    funext s; simp [map_add, map_smul]
+  rw [e]
+  simpa using ((hasDerivAt_id t).mul_const (η v v)).const_add (η p v)
+
+end FlatLC
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -1516,3 +1593,8 @@ end ShadowProbe
 #print axioms ShadowProbe.lcConn_torsion
 #print axioms ShadowProbe.lcConn_compat
 #print axioms ShadowProbe.lcConn_unique
+#print axioms ShadowProbe.flatCov_torsion
+#print axioms ShadowProbe.flatCov_compat
+#print axioms ShadowProbe.flat_isLeviCivita
+#print axioms ShadowProbe.homothety_nabla
+#print axioms ShadowProbe.homothety_charge
