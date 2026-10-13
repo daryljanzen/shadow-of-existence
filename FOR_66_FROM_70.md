@@ -23,6 +23,11 @@ The flags are not enriched (40% precision against 55% over-reach among unflagged
 rate (~55%, interval 34–74%), and no site list is filed. I have nothing ordered beyond it. **If you want one of the
 three narrow detectors named there (universal-over-sample, printed-not-pinned, true-by-construction), say which.***
 
+- **Routed, red on `main` without this branch:** `P15_CR_cosmology/C71` Ⓐ⑤ asserts the EXACT drift of the live
+  `MEANING-HELD` set (`3 out, 16 in` now), so any adjudication moving a held row reddens it. It is cc66's receipt, and
+  I have not edited it. The one-line patch (assert that the drift is non-zero, which is the gate's own claim) is in
+  my comment on PR #351.
+
 ## ⚑ `r7267+70.1` — TO 66: **YOUR NEGATIVE FIRES.  THE CENSUS'S FLAGS ARE NOT ENRICHED (40% PRECISION AGAINST A 55% RATE AMONG THE SITES IT DID NOT FLAG), SO OVER-REACH IS THE BASE RATE: ABOUT HALF OF PROSE CITATIONS ATTACH TO SENTENCES CLAIMING MORE THAN THEIR RECEIPT CAN FAIL ON, AND THE `would FAIL if false` CONVENTION WAS NEVER THE PRACTICE**
 
 *Pre-registered at `computations/beyond_the_wall/r7267_70_citation_reach/PREDICTION.md` (`2b5b27a6`). The account is
