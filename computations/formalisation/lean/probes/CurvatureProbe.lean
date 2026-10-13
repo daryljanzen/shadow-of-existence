@@ -1,3 +1,5 @@
+import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+import Mathlib.Geometry.Manifold.MFDeriv.NormedSpace
 import Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Basic
 import Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion
 import Mathlib.Geometry.Manifold.VectorBundle.Hom
@@ -736,6 +738,100 @@ theorem sff_symm (htor : cov.torsion = 0) {N X Y : Π x : M, TangentSpace I x}
 
 end Sff
 
+/-! ## `r7291`, Probe S1 — the induced metric of a map, and the flat slicing of de Sitter -/
+
+section Pull
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+  {H : Type*} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type*} [TopologicalSpace M] [ChartedSpace H M]
+  {E' : Type*} [NormedAddCommGroup E'] [NormedSpace ℝ E']
+  {H' : Type*} [TopologicalSpace H'] {I' : ModelWithCorners ℝ E' H'}
+  {M' : Type*} [TopologicalSpace M'] [ChartedSpace H' M']
+  {E'' : Type*} [NormedAddCommGroup E''] [NormedSpace ℝ E'']
+  {H'' : Type*} [TopologicalSpace H''] {I'' : ModelWithCorners ℝ E'' H''}
+  {M'' : Type*} [TopologicalSpace M''] [ChartedSpace H'' M'']
+
+/-- **G3a.** The pullback of a metric along a map: `(φ*g)ₓ(u, v) = g_{φ x}(dφ u, dφ v)`. -/
+noncomputable def pullG (φ : M → M') (g : Π y : M', LinearMap.BilinForm ℝ (TangentSpace I' y))
+    (x : M) : LinearMap.BilinForm ℝ (TangentSpace I x) :=
+  (g (φ x)).compl₁₂ (mfderiv I I' φ x : TangentSpace I x →ₗ[ℝ] _)
+    (mfderiv I I' φ x : TangentSpace I x →ₗ[ℝ] _)
+
+lemma pullG_apply (φ : M → M') (g : Π y : M', LinearMap.BilinForm ℝ (TangentSpace I' y))
+    (x : M) (u v : TangentSpace I x) :
+    pullG (I := I) (I' := I') φ g x u v = g (φ x) (mfderiv I I' φ x u) (mfderiv I I' φ x v) := rfl
+
+/-- The pullback of a symmetric form is symmetric. -/
+lemma pullG_symm (φ : M → M') (g : Π y : M', LinearMap.BilinForm ℝ (TangentSpace I' y))
+    (hg : ∀ y u v, g y u v = g y v u) (x : M) (u v : TangentSpace I x) :
+    pullG (I := I) (I' := I') φ g x u v = pullG (I := I) (I' := I') φ g x v u := hg _ _ _
+
+/-- Pulling back twice is pulling back along the composite — so a slice of a slice is a slice. -/
+lemma pullG_comp (ψ : M' → M'') (φ : M → M')
+    (g : Π y : M'', LinearMap.BilinForm ℝ (TangentSpace I'' y)) {x : M}
+    (hψ : MDifferentiableAt I' I'' ψ (φ x)) (hφ : MDifferentiableAt I I' φ x) (u v : TangentSpace I x) :
+    pullG (I := I) (I' := I'') (ψ ∘ φ) g x u v
+      = pullG (I := I) (I' := I') φ (pullG (I := I') (I' := I'') ψ g) x u v := by
+  simp only [pullG_apply, mfderiv_comp x hψ hφ, ContinuousLinearMap.comp_apply, Function.comp_apply]
+
+end Pull
+
+
+section DeSitter
+
+open Real
+
+/-- The metric `−dX₀² + dX₁² + dX₂²` of `ℝ^{1,2}`. -/
+noncomputable def mink : LinearMap.BilinForm ℝ (ℝ × ℝ × ℝ) :=
+  LinearMap.mk₂ ℝ (fun a b => -a.1 * b.1 + a.2.1 * b.2.1 + a.2.2 * b.2.2)
+    (fun _ _ _ => by simp only [Prod.fst_add, Prod.snd_add]; ring)
+    (fun _ _ _ => by simp only [Prod.smul_fst, Prod.smul_snd, smul_eq_mul]; ring)
+    (fun _ _ _ => by simp only [Prod.fst_add, Prod.snd_add]; ring)
+    (fun _ _ _ => by simp only [Prod.smul_fst, Prod.smul_snd, smul_eq_mul]; ring)
+
+/-- The flat slicing `(τ, x) ↦ X` of the de Sitter hyperboloid of radius `α`. -/
+noncomputable def dsFlat (α : ℝ) (p : ℝ × ℝ) : ℝ × ℝ × ℝ :=
+  (α / 2 * (exp (p.1 / α) - exp (-(p.1 / α))) + p.2 * p.2 * exp (p.1 / α) * (2 * α)⁻¹,
+   α / 2 * (exp (p.1 / α) + exp (-(p.1 / α))) - p.2 * p.2 * exp (p.1 / α) * (2 * α)⁻¹,
+   p.2 * exp (p.1 / α))
+
+/-- **Receipt 50's embedding lies on the hyperboloid** `−X₀² + X₁² + X₂² = α²`. -/
+theorem dsFlat_on {α : ℝ} (hα : α ≠ 0) (p : ℝ × ℝ) : mink (dsFlat α p) (dsFlat α p) = α ^ 2 := by
+  have h : exp (p.1 / α) * exp (-(p.1 / α)) = 1 := by rw [← exp_add]; simp
+  simp only [mink, LinearMap.mk₂_apply, dsFlat]
+  field_simp
+  linear_combination (α ^ 2 * 2 ^ 2 * α ^ 2) * h
+
+theorem dsFlat_pull {α : ℝ} (hα : α ≠ 0) (p u v : ℝ × ℝ) :
+    pullG (I := 𝓘(ℝ, ℝ × ℝ)) (I' := 𝓘(ℝ, ℝ × ℝ × ℝ)) (dsFlat α) (fun _ => mink) p u v
+      = -u.1 * v.1 + exp (2 * p.1 / α) * u.2 * v.2 := by
+  have ht : HasFDerivAt (fun q : ℝ × ℝ => q.1 / α) (α⁻¹ • ContinuousLinearMap.fst ℝ ℝ ℝ) p := by
+    convert (hasFDerivAt_fst (p := p) (𝕜 := ℝ)).const_smul α⁻¹ using 1
+    ext q; simp [div_eq_inv_mul]
+  have he := ht.exp
+  have hm := (ht.neg).exp
+  have hx : HasFDerivAt (fun q : ℝ × ℝ => q.2) (ContinuousLinearMap.snd ℝ ℝ ℝ) p := hasFDerivAt_snd
+  have h0 := ((he.sub hm).const_mul (α / 2)).add (((hx.mul hx).mul he).mul_const (2 * α)⁻¹)
+  have h1 := ((he.add hm).const_mul (α / 2)).sub (((hx.mul hx).mul he).mul_const (2 * α)⁻¹)
+  have h2 := hx.mul he
+  have hφ : HasFDerivAt (dsFlat α) _ p := h0.prodMk (h1.prodMk h2)
+  have hD : ∀ w, mfderiv 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ × ℝ × ℝ) (dsFlat α) p w = fderiv ℝ (dsFlat α) p w :=
+    fun w => by rw [mfderiv_eq_fderiv]; rfl
+  have key : pullG (I := 𝓘(ℝ, ℝ × ℝ)) (I' := 𝓘(ℝ, ℝ × ℝ × ℝ)) (dsFlat α) (fun _ => mink) p u v
+      = mink (fderiv ℝ (dsFlat α) p u) (fderiv ℝ (dsFlat α) p v) :=
+    congrArg₂ (fun a b => mink a b) (hD u) (hD v)
+  rw [key, hφ.fderiv]
+  have h : exp (p.1 / α) * exp (-(p.1 / α)) = 1 := by rw [← exp_add]; simp
+  have h2 : exp (2 * p.1 / α) = exp (p.1 / α) ^ 2 := by rw [← exp_nat_mul]; ring_nf
+  simp only [mink, LinearMap.mk₂_apply, ContinuousLinearMap.prod_apply, ContinuousLinearMap.add_apply,
+    ContinuousLinearMap.sub_apply, ContinuousLinearMap.neg_apply, FunLike.coe_smul, Pi.smul_apply,
+    ContinuousLinearMap.coe_fst', ContinuousLinearMap.coe_snd', Pi.mul_apply, Pi.neg_apply, smul_eq_mul, h2]
+  field_simp
+  linear_combination (-(u.1 * v.1) * (2 * α) ^ 2 * α ^ 2) * h
+
+end DeSitter
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -760,3 +856,7 @@ end ShadowProbe
 #print axioms ShadowProbe.sff_smul_X
 #print axioms ShadowProbe.sff_smul_Y
 #print axioms ShadowProbe.sff_symm
+#print axioms ShadowProbe.pullG_symm
+#print axioms ShadowProbe.pullG_comp
+#print axioms ShadowProbe.dsFlat_on
+#print axioms ShadowProbe.dsFlat_pull
