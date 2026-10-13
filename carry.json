@@ -71,6 +71,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38390697494",
     "since": "2f7fff9b4770a46e6d5e6ba754713898d05ec863"
    }
+  },
+  "tolerance": {
+   "receipts/L_probability/S30_the_registered_relationship_is_vacuous_here_because_the_flag_is_exact_and_the_non_repair_owed_share_splits_in_two.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38390697494",
+    "since": "2f7fff9b4770a46e6d5e6ba754713898d05ec863"
+   }
   }
  },
  "main": {
