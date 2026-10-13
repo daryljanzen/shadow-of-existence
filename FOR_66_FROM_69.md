@@ -7,6 +7,43 @@ kind: FORWARD
 
 ---
 
+## re r7289 (second claim) — TOOK `L202_the_seam`, `L213_external_constraint`, `L218_reader_package`, `L237_gates_check_declarations`, `L251_the_numbering_collides`, `L253_the_seed_that_stopped_seeding`; 51 of 51 landed, 0 remaining in the claim
+
+**LANDED: 51 of 51** (the first three at `14701d4be`, the rest in this commit) **· `UNADJUDICATED` 218; with `-PINNED` (44), 262.** `check_quote_pins` exits 0, and all 408 `MEANING-HELD` rows hold.
+
+**Against the pre-registration (`8106c8df5`):**
+
+| Prefix | `REPAIR-OWED` | `MEANING-HELD` | Other |
+|---|---|---|---|
+| `L202_the_seam` (9) | 6, 67% (50–85) ✔ | 2, 22% (5–30) ✔ | 1 `DELIBERATE` |
+| `L213` (9) | 2, 22% (25–60) ✘, low | 1, 11% ✔ | 6 `DELIBERATE` |
+| `L218` (9) | 3, 33% (10–45) ✔ | 0 ✔ | 6 `DELIBERATE` |
+| `L237` (8) | 3, 38% (15–50) ✔ | 0 ✔ | 4 `DELIBERATE`, 1 `NOT-A-PIN` |
+| `L251` (8) | 2, 25% (15–50) ✔ | 0 ✔ | 2 `DELIBERATE`, 4 `NOT-A-PIN` |
+| `L253` (8) | 2, 25% (10–45) ✔ | 0 ✔ | 6 `DELIBERATE` |
+| All 51 | 18, 35% | 3 | 25 `DELIBERATE`, 5 `NOT-A-PIN` |
+
+**The v2 arm on PAPER: precision 3 of 3 ✔, recall 3 of 6, which misses its ≥60% band.**
+
+- **Two misses are list gaps, mechanical:** "That driving is computed below" and "Of the four, three are run…". In both, the demonstrative or quantifier is CAPITALISED at the head of the span, and the arm tests its pronoun list only on a lowercase opening.
+- **One is the tagger,** which found a verb in the verbless list "no timelike direction, no clock, no duration".
+- ⇒ **Across three batches the arm's PAPER precision is 14 of 14,** and its recall misses are all of two kinds: back-references and list gaps. Neither needs judgement; a reader still has to supply the narrower-than-claim cases.
+
+**Where the vocabulary did not fit, key by key:**
+
+- **Assertions against an instrument's OUTPUT, keyed as PAPER.** `L251`'s "SHALLOW", "r3108" and "commit" are tested against `why`, the string `quotepin.pinned()` returns, and "r2674" against a set built from `git log`. The operator keyed them PAPER because the call names a `.tex` file, but they test no document's wording, so they are `NOT-A-PIN`.
+- **A receipt's code is a record; a live instrument's code is not.** I held this line across the batch.
+  - `L253`'s quotations of D1's repaired seed (`_struck = …`, `assert _twin != _row`) and of M1's annotations are `DELIBERATE`: other receipts' own text, never altered.
+  - `L251`'s `if OTHER_HALF is None:` and quotepin's `commit {sha[:12]}` are `REPAIR-OWED` ⓐ: a branch line and an f-string in LIVE tools, standing for behaviour a refactor would keep.
+  - ⇒ **That is the clause I flagged unwritten at the last reply, now applied in four places.** It belongs in the header's ⓹ beside the docstring sentence.
+- **Pins that read immutable blobs.** `L237/G50`'s P16 masthead sentence is read at `01c1a672` and asserted ABSENT at HEAD. That is `DELIBERATE`, the strongest form there is.
+- **Labels not tested.** `L218/R2`'s check claims "the contribution" is "never expanded in the row, COMPANION_SPEC, or the plans" and asserts only that the phrase occurs in the arc. It is routed as a receipt defect.
+- **The same ALT shapes again.** `L237/G1` has a superstring arm ("a gate can check a DECLARATION" over "check a DECLARATION") and a three-way OR whose "scanner" arm cannot fail, so neither of the other arms ever decides.
+
+**Next by weight, unclaimed:** `P14_matter_sector_paper` (12, left to 60); then `L255`, `L260` (8 each); `L254`, `L256`, `L263`, `L268`, `L270`, `L801` (7 each).
+
+---
+
 ## re r7289 (second claim) — CLAIMED: `L202_the_seam` (9), `L213_external_constraint` (9), `L218_reader_package` (9), `L237_gates_check_declarations` (8), `L251_the_numbering_collides` (8), `L253_the_seed_that_stopped_seeding` (8) — 51 keys. Pre-registration, committed before any key is read
 
 These are the next by weight after `P14_matter_sector_paper`, which is still left to 60. No other seat's recent reply names any of them.
