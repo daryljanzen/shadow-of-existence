@@ -7,6 +7,99 @@ kind: FORWARD
 
 ---
 
+## re r7295 — STRIDE 3 DONE: 34 of 34 primary landed, 0 remaining; `L801` read blind and pushed as `DOUBLE`
+
+**LANDED 34 of 34 · REMAINING 0 in my primary · ledger `UNADJUDICATED` 45 · `UNADJUDICATED-PINNED` 44 · together 89.**
+
+- The verdicts are at `df64eb930`. `check_quote_pins` exits 0, and all 422 `MEANING-HELD` rows hold.
+- No primary prefix had already been verdicted, so none was skipped.
+- I did not look for `60`'s commits on `L270` or `70`'s on `L262`.
+
+**The 34 keys:** 16 `REPAIR-OWED`, 12 `DELIBERATE`, 5 `MEANING-HELD`, 1 `NOT-A-PIN`.
+
+**The blind read of `L801_nonlinear_shear_freedom`:** 7 keys, 3 `REPAIR-OWED`, 3 `MEANING-HELD` and 1 `DELIBERATE`.
+
+- It is in `computations/beyond_the_wall/r7295_66_the_sample_is_its_keys/BLIND_READ_69_L801.tsv`, at `c5bf7229f`, a commit marked `DOUBLE`.
+- The file has the four columns the order asks for: receipt, literal, my verdict, and an empty column for `60`'s. My reasons are in `BLIND_READ_69_L801_reasons.tsv` beside it.
+- I opened none of `60`'s rows. I checked only *whether* each row was still open, and displayed no value.
+- It is not reconciled and not in the ledger.
+
+**Against the pre-registration (`98909e970`):**
+
+| Prefix | Keys | `REPAIR-OWED` (band) | `MEANING-HELD` (band) | Other |
+|---|---|---|---|---|
+| `L270` | 7 | 4, 57% (15–85) ✔ | 0 ✔ | 3 `DELIBERATE` |
+| `L262` | 6 | 2, 33% (15–85) ✔ | 0 ✔ | 4 `DELIBERATE` |
+| `L220` | 5 | 4, 80% (20–80) ✔ | 0 ✔ | 1 `NOT-A-PIN` |
+| `L554` | 5 | 1, 20% (25–75) ✘ low | 3, 60% (0–50) ✘ high | 1 `DELIBERATE` |
+| `L280` | 4 | 2, 50% (0–75) ✔ | 0 ✔ | 2 `DELIBERATE` |
+| `L804` | 4 | 1, 25% (25–75) ✔ | 2, 50% (0–50) ✔ | 1 `DELIBERATE` |
+| `L561` | 3 | 2, 67% (0–67) ✔ | 0 ✔ | 1 `DELIBERATE` |
+| **All 34** | | **16, 47% (35–60) ✔** | **5, 15% (3–20) ✔** | |
+| `L801` blind | 7 | 3, 43% (40–85) ✔ | 3, 43% (15–60) ✔ | 1 `DELIBERATE` |
+
+- **Both totals landed in band, and 6 of 7 prefixes hit both bands.**
+- **The one miss is `L554`.** Its P10 sentences are whole clauses with definite noun-phrase subjects ("the degeneracy is …", "the constant is …"). See misfit 1: that is a reading choice another seat may not make.
+
+**Arm v3 on PAPER (15 keys: 8 primary, 7 blind):** precision 4 of 5, recall 4 of 6.
+
+- **Both predictions are missed this time** (precision ≥ 85%, recall ≥ 70%).
+- **The false positive** is `L801`'s "first-class constrained system evolves consistently …". The span is clipped after its article, so it opens on a lower-case modifier the arm reads as a non-subject. It is a whole clause, `MEANING-HELD`.
+- **The two misses are both the reader's class, not list gaps:**
+  - `L554`'s run from "a degeneracy growing as $n^2$" drops two of its three conditions (ⓔ).
+  - `L801`'s "sharpen this beyond the Bianchi count" has a demonstrative *object*. The arm tests subjects only.
+- ⇒ **Across seven batches PAPER precision is 34 of 37.** The arm is reliable when it flags a span. It cannot see dropped conditions or pronoun objects, and those are where a reader is still needed.
+
+**Where the vocabulary did not fit, key by key:**
+
+1. **Definite noun-phrase subjects. This is the ruling most likely to split readers, so I am flagging it before the pooled number arrives.**
+   - I read ⓶'s list (pronoun, demonstrative, quantifier) as closed. So "the constant is the propagating-component count rather than a universal", "the degeneracy is $2(n-1)(n+3)$" (`L554`) and "the propagating sector is ghost-free to all orders" (`L801`) name their subjects and are `MEANING-HELD`.
+   - I ruled "the same algebra" (`L560`) dangling because "same" is anaphoric on its face.
+   - A reader who treats every definite subject as a back-reference will call all of these `REPAIR-OWED`. **If agreement on `L801` comes in low, check this line first.**
+2. **A negation outside the span.** `L801`'s "a closed-form nonlinear solution" is pinned to support "P11 does NOT claim one", and the "not" sits outside the span. The pin would pass unchanged if P11 started claiming one. I ruled it `REPAIR-OWED` ⓔ. It is the sharpest dropped-condition case so far, because the dropped word reverses the claim.
+3. **A phrase found only in an error path.** `L280`'s 'reading list' is claimed for decidable_claims.py's head. The head breaks the phrase across a line, so the only occurrence the pin finds is in a FAIL message ("an empty reading list is …"). The pin passes on an error path.
+4. **Variable names in another receipt whose counts moved.** `L561`'s '_CLAIMS' and '_verbatim' in `L207/W1` are receipt code, but their counts moved (6 → 5, 3 → 5). No unmoved line is quoted, so the record clause does not apply. I ruled them `REPAIR-OWED`. Their claim is already carried by 'ARITHMETIC OF THE OLD PROBE', which is `DELIBERATE` here as it was on `L560`.
+5. **Pins where an unchanged line is the claim itself.**
+   - `L262`'s phase-3 guard line and comment: the check claims the guard is UNTOUCHED, and an unchanged line is exactly that. I ruled them `DELIBERATE` even though they are live code.
+   - `L270`'s 'RESTATES THE RULE IT GUARDS': the check claims the finding is recorded IN the gate. `DELIBERATE` for the same reason.
+   - This is the converse of the live-code proxy rule, and it is the cleanest boundary I have for it: **live code is a proxy when the claim is about behaviour, and is the claim itself when the claim is about the text.**
+
+**Next:** my primary is empty and my blind read is in. I am not taking other seats' prefixes, because the blind reads depend on each seat reading its own.
+
+---
+
+## re r7295 — TAKING `THE_STRIDE_3`: 7 prefixes, 34 keys, and `L801_nonlinear_shear_freedom` blind. Pre-registration, committed before any key is read
+
+All 7 primary prefixes are still fully unadjudicated, 34 of 34, so none is skipped.
+
+**Blind read of `L801_nonlinear_shear_freedom`.** I listed its rows with the verdict column cut off, and checked only *whether* each row is still open, without displaying any value. Seven are open, which matches the order.
+
+- My verdicts go to `BLIND_READ_69_L801.tsv` in the four-column shape, in a commit marked `DOUBLE`. They will not be reconciled and will not go into the ledger.
+- The reasons go in a sibling file, so the four-column file stays exactly as the pooler expects.
+
+**Not looking.** I will not look for `60`'s commits on `L270` or `70`'s on `L262`, and I will not adjust toward them.
+
+| Prefix | Keys | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|---|
+| `L270_the_table_that_carried_its_next_failure` | 7 S (code tokens, two glyphs, three sentences) | 15–85% | 0–15% |
+| `L262_half_a_family` | 6 S (code tokens, a glyph, a numeral) | 15–85% | 0–17% |
+| `L220_arrival_paths` | 5: 2 P (one a regex), 3 S | 20–80% (and `NOT-A-PIN` ≥ 1) | 0–40% |
+| `L554_tower_degeneracy` | 5: 4 Ps, 1 Ss | 25–75% | 0–50% |
+| `L280_the_decidable_claims` | 4 S | 0–75% | 0–25% |
+| `L804_isocurvature_bound` | 4 P (one a display equation) | 25–75% | 0–50% |
+| `L561_the_probe_was_the_defect` | 3 S | 0–67% | 0 |
+| **All 34** | | **35–60%** | **3–20%** |
+| `L801` (blind) | 7 Ps | 40–85% | 15–60% |
+
+**Arm v3 hashes** (sha1 of receipt, tab, literal-json, first 8 hex; `D` = predicted dangling):
+
+- Primary, 20 sentence keys: `cb5d0232:D 479cb249:D 691718a5:D 19fb9c4e:- 0903e3d0:D c7bd1407:D ba83bfc1:- 1a2c6d34:D 4500dc65:D bf699d33:D d3feb15e:D c1b3fba2:D 0b4af7f5:- cf0ec51c:- ea8ed690:- 4b913a4f:- 667d93e1:D a05fce64:- 9f408c24:- 4ab904f1:D`
+- Blind, 8 sentence rows, one of them not open: `edd10dba:- c6899fc5:- 4d317054:D 462bbe59:D 70b720fe:D 113efdde:- 7f6bab85:- 8ed2dd1c:-`
+
+**Arm predictions:** on PAPER sentences (7 primary, 7 blind), precision ≥ 85% and recall ≥ 70%.
+
+---
+
 ## re r7293 — RE-STRIDE DONE: 43 of 43 primary landed, 0 remaining; `L256` read blind and pushed as `DOUBLE`
 
 **LANDED 43 of 43 · REMAINING 0 in my primary · ledger `UNADJUDICATED` 79 · `UNADJUDICATED-PINNED` 44 · together 123.**

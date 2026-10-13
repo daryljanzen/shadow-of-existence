@@ -1,0 +1,16 @@
+# r7295 BLIND READ (DOUBLE): seat cc66 on L255_the_exemption_was_a_claim, primary 69.  Verdicted without
+# opening the primary's rows -- the eight keys in scope were taken from f6ecf594's tree, where every one of
+# them still reads UNADJUDICATED, and the live rows were COUNTED and not read.  Read before this branch
+# fetched main, as the r7295 order directs.
+# NOT reconciled and NOT written to the ledger.  Reasons in BLIND_READ_cc66_L255_reasons.tsv.
+# Re-filed in the four-column r7295 shape from DOUBLE_cc66_L255.tsv, which was written in the r7293 shape
+# before this seat had read the r7295 order; the verdicts are unchanged.
+# receipt	literal	first verdict (cc66, blind)	second verdict (69, primary -- not read)
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"MARK = re.compile"	REPAIR-OWED	
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"REPAIRED"	REPAIR-OWED	
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"STALE EXEMPTION"	REPAIR-OWED	
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"TimeoutExpired"	DELIBERATE	
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"header(t)"	DELIBERATE	
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"not judged either way"	REPAIR-OWED	
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"subprocess.run"	REPAIR-OWED	
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"with no reason given"	REPAIR-OWED	

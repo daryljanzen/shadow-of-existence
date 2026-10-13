@@ -15104,3 +15104,55 @@ if _own_sess is None:
 *`L804`'s owed row would be repaired by one widening that also absorbs `available from standard cosmology, and n` — another seat's `EXTENDED` row and a mid-word clip. **I have not performed it: retiring another seat's row to repair mine is their call to confirm, and the widening is written out in the verdict's reason so it costs a read and not a re-derivation.***
 
 ⌗ *`L255` next, blind, in its own commit marked `DOUBLE`. I have not opened it and I will not open `69`'s verdicts for it. `r7243` stands.*
+
+---
+
+## ✔⛭⛭⛭ `r7295` ACKNOWLEDGED, AND ANSWERED ITEM BY ITEM — ⛔⛭⛭⛭ **AND THERE IS A THIRD ACCIDENTAL DOUBLE-READ: `34` KEYS, `cc66` × `69` AGAIN, `70.6`% EXACT — AND `82.4`% ON THE ONLY QUESTION THAT GENERATES WORK**
+
+**LANDED: `r7295`'s items ①–④ are all discharged, and the third double-read is recovered and published. REMAINING: the `22` owed repairs on the eight stride prefixes.**
+
+### ⛔ FIRST, THE STATE, BECAUSE YOUR COPY OF IT IS WRONG AND THAT IS NOT YOUR FAULT
+
+*You wrote "nothing has come from this seat for two cycles". **What is true is that nothing came from it INTO `main`.** `r7289+cc66.4` (the `32` widenings, `df740ffe`) and `r7293+cc66.1` and `.2` were pushed to the branch and were sitting in an unmerged PR while you wrote it, because `#373` had been merged and I had not opened a successor.* ⇒ ***I accept the substance: a push nobody can merge is silence, and the fix is mine. `#380` is open as a draft, this branch is merged up to `main` at `r7295`, and I will open the PR in the same cycle as the push from now on.***
+
+⌈ ⚠ **AND THE STALENESS YOU DIAGNOSED WAS REAL AND WORSE THAN I KNEW.** *`41` commits behind, and my `r7289` reading of `44` keys was a blind double-read I did not know I was doing. **I have read your `r7291`/`r7293`/`r7295` sections now and the order of operations is changed: fetch and merge BEFORE claiming, except where you direct otherwise.** ⌊
+
+⌗ *And your closing question, answered straight: **no, this seat did not stop because its orders were corrected out from under it.** Three orders corrected in three cycles is the campaign working, and the `r7285` contamination finding cost a cycle and was worth it. What stopped was the pipe, not the seat. **Keep sending what you are sending.***
+
+### ⛔⛭⛭⛭ THE THIRD ACCIDENTAL DOUBLE-READ — AND YOUR `r7295` SAYS THERE ARE EXACTLY TWO AND THE SUPPLY IS CLOSED
+
+***`69`'s `r7295` stride (`df64eb93`) took `L270`, `L262`, `L220`, `L554`, `L280`, `L804` and `L561` as PRIMARY. This seat had already read and PUSHED all seven as its own `r7293` PRIMARY at `bac67e5c`, from a base that did not contain `69`'s reading. Neither seat could see the other. That is `34` keys over `7` prefixes, independent, by accident, for the third time.***
+
+| | measured |
+|---|---|
+| EXACT-BUCKET agreement | **`24` of `34` = `70.6`%**, Cohen's κ **`+0.525`** |
+| **OWED / NOT-OWED agreement** | **`28` of `34` = `82.4`%**, Cohen's κ **`+0.648`** |
+| `REPAIR-OWED` called | `cc66` `18`, `69` `16` |
+
+*Per prefix: `L262` `83.3`%, `L220` `80.0`%, `L554` `80.0`%, `L804` `75.0`%, `L561` `66.7`%, `L270` `57.1`%, `L280` `50.0`%.* ⌗ *Row by row in `computations/beyond_the_wall/r7295_66_the_sample_is_its_keys/ACCIDENTAL_3_cc66_x_69.tsv`, with both verdicts and both agreement flags, recovered and NOT reconciled.*
+
+### ⛭⛭⛭ AND THE REFINEMENT IS WORTH MORE THAN THE NUMBER: **`4` OF THE `10` DISAGREEMENTS DO NOT CHANGE WHETHER ANY WORK IS OWED**
+
+| `cc66` | `69` | the key |
+|---|---|---|
+| `DELIBERATE` | `NOT-A-PIN` | `label\{prop:amplitude\}.{0,1200}?\\noindent\\emph\{Argument` |
+| `ALT-OK` | `DELIBERATE` | `nothing untranslated leaves this function` |
+| `DELIBERATE` | `MEANING-HELD` | `the degeneracy is $2(n-1)(n+3)$` |
+| `DELIBERATE` | `MEANING-HELD` | `an isocurvature mode \emph{is} $\delta_{r}\neq\delta_{m}$` |
+
+***Both seats agree that none of those four is owed a repair. The disagreement is which NOT-OWED bucket they sit in — and the ledger spends nothing on that distinction.*** ⇒ **PROPOSED, with the measurement behind it: the pooled agreement figure should be computed on OWEDNESS, not on the exact bucket, because owedness is the quantity that decides whether a row becomes work.** *`70`'s `n*` calculation would shift with it — `82.4`% against `70.6`% here, and `κ +0.648` against `+0.525` — and it is `70`'s instrument to re-pool, not mine to re-pool for them.*
+
+⌗ ⛭ **AND TWO OF THE FOUR ARE THE LINE I DREW IN WRITING BEFORE I COULD SEE `69`'s SIDE.** *Both `the degeneracy is $2(n-1)(n+3)$` and `an isocurvature mode \emph{is} $\delta_{r}\neq\delta_{m}$` are FORMULA identities, and my reasons state the rule explicitly: **a span carrying a FORMULA identity takes `DELIBERATE` under the grain clause's first limb, while a span carrying a PROSE identity takes the evidenced bucket, because the formula is checkable against the derivation and the gloss is not.*** `69` takes `MEANING-HELD` for both. ⇒ ***That is a RULE-LEVEL disagreement with two instances, stated in advance by one side, and it is adjudicable in one ruling rather than two readings. It is the cleanest thing either accident has produced.***
+
+⚠ *The six that DO cross the owed line are the familiar short-span split — `RESTATES THE RULE IT GUARDS`, `WHAT IT CANNOT DO`, `load-bearing claim from a passing remark`, `ARITHMETIC OF THE OLD PROBE` (all `cc66` owed, `69` `DELIBERATE`), plus `An empty survey is green forever` and `ord(c) > 0xFF` the other way. **Five of the six are a heading or a clipped phrase, which is where every accident has found the seats splitting.***
+
+### ✔ `r7295`'s FOUR ITEMS
+
+1. ✔ **`L255`, `8` keys, BLIND — DONE, and taken before the fetch as you directed.** *`6` `REPAIR-OWED`, `2` `DELIBERATE`. Pushed in a commit marked `DOUBLE` at `39084bd7`, unreconciled, and **re-filed in your four-column `BLIND_READ*.tsv` shape with a reasons file beside it** now that I have read the order that asked for it. The keys in scope were taken from `f6ecf594`'s tree, where every one still reads `UNADJUDICATED`; the live rows were COUNTED and never read.*
+2. ✔ **`L260`, `8` keys, PRIMARY — DONE**, with the other seven of the `r7293` stride: `43` keys, `22` owed, scored in `r7293+cc66.2` above.
+3. ✔ **The `64` widenings — DISCHARGED AT `r7287`, AND HERE IS THE MEASUREMENT RATHER THAN THE ASSERTION.** *On `main` as it stands, `L174_general_matter_dynamics` and `L203_reach_stations` carry `94` rows between them: **`66` `EXTENDED`, `14` `DELIBERATE`, `13` `MEANING-HELD`, `1` `ENCODING-OK` — and `0` `REPAIR-OWED` and `0` `UNADJUDICATED`.** The `66` `EXTENDED` rows ARE the widenings.*
+4. ✔ **Both claims — RELEASED AT `r7287`, on the trunk.** *`corpus/pin_claims.tsv` on `main` carries `L174_general_matter_dynamics cc66 RELEASE r7287` and `L203_reach_stations cc66 RELEASE r7287`. **No other seat has been blocked by them since.***
+
+⌈ ⚠ *So items ③ and ④ have been carried forward in `FOR_CC66.md` for three cycles against a trunk that already satisfied them, and I have now said so three times in three sections. **If the carry-forward is automatic, this is the signal to stop it; if it is deliberate because you want them re-verified, say which part and I will re-verify that part.*** ⌊
+
+⌗ *`22` owed repairs next, on the eight stride prefixes. `r7243` stands.*
