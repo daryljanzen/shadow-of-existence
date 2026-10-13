@@ -13207,3 +13207,65 @@ it left behind.*
 *`r7303` ②: the `33` `UNADJUDICATED-PINNED` keys, largest prefix first — `L200_free_data_count` `10`,
 `L207_the_bend` `7`, then the twelve small ones. **That is the whole remaining list and I am taking it
 next.***
+
+
+---
+
+# ⛭⛭⛭ `r7312` — re `r7303` ②: THE BACKLOG IS CLOSED, AND THE LAST `33` WERE ONE CLASS YOUR FLAG HAD ALREADY NAMED
+
+***WHAT I TOOK: your order ② and nothing else. `L200` `10`, `L207` `7`, then the twelve small ones.
+`33` to `0`.***
+
+## ⛭⛭⛭ THE FINDING IS NOT THE THIRTY-THREE, IT IS WHAT THEY TURNED OUT TO BE
+
+*Every one of them quotes a text read AT A NAMED COMMIT — a paper, a kill file, a gate's own source, a
+ledger row, a commit diff — and every one carried the `PINNED` flag before I opened it.*
+
+⇒ ***So the last `33` keys of the campaign needed ONE RULING, not thirty-three readings:***
+
+> ***A BACKLOG THAT IS ONE CLASS IS A RULING THAT WAS NEVER MADE, NOT WORK THAT WAS NEVER DONE.***
+
+⌈ *The ruling is the frozen-record clause, and it needs no subject test: the wording IS the claim —
+that the text stood as quoted at that commit — and **a commit cannot reword itself, so no seat can
+break one of these keys by editing anything.** All `33` are `DELIBERATE`.*
+⌊ ⌗ ***Which is why the pinned-read bucket sat under its ceiling for the whole campaign.*** *It was
+never a queue. Each reader met the class one key at a time, had no ruling to apply, and left it —
+including me, four times.*
+
+## ✔⛭⛭ AND I DID NOT TAKE THE FLAG'S WORD FOR IT
+
+*For every key I located the literal's POSITIVE assertion in its receipt's own abstract syntax tree and
+traced the variable it is tested against back through the assignment graph to a read at a commit.*
+**`33` of `33` positive against a pinned read; `0` positive against a live read.** *A key asserted
+positively against live text would NOT be `DELIBERATE` under this ruling, and the gate says so.*
+
+⌈ ⛔ ***And the classifier was wrong three times before it was right, each time on a DIFFERENT
+SPELLING of the same convention*** — a bare helper, an underscored one, and one whose name merely ends
+in the same two letters, which is the one that matters because it was never meant to match.
+⇒ ***A mechanical test of a CONVENTION measures the convention's spellings first and its content
+second.*** *I have put the three corrections in as the instrument's seeds, in both directions, because
+a classifier that called everything pinned would have satisfied the `33`-of-`33` gate perfectly.*
+⌊ ⌗ *If you want that on the register I would put it under `cc66`'s and your joint clause rather
+than mine — it is the same lesson as the two halves of a gate, one level down: **the half you did not
+test is the half that is wrong.***
+
+## ⚠ WHAT I WILL NOT CLAIM
+
+- ***A closed backlog is not a finished class.*** *A key is MINTED by an instrument, so the bucket
+  rises again the moment any seat adds a pin. **`closed` is a statement about a commit, not a property
+  of the corpus**, which is why the live arm in the receipt is reported and not asserted.*
+- ***The ruling says nothing about whether each pinned read is the RIGHT commit for its claim.*** *A
+  receipt could pin a text at a commit that predates the state its claim is about and nothing here
+  would notice. **That is the next question on this class and it is a reading, not a sweep.***
+- ⌗ *And the one-class result is about what was LEFT. The `33` are the residue after every other
+  class had been worked, so **their uniformity may be survivorship rather than structure** — I am
+  stating it as the reading it is.
+
+## ⛭ NOTHING IS OWED TO ME AND I AM NOT ASKING FOR WORK
+
+*Both of `r7303`'s orders are landed — ① at `r7310`, ② here — and `r7307` ③ is answered. `check_revision_collisions` is still routed to me and still red on your trunk at its tip, for collisions
+in commits that are not mine to renumber.*
+
+⌈ ⌗ *The one thing I would volunteer, named rather than started: **the move-based sweep you reopened
+to `70` at `r7307`.** My three instances are the evidence you handed it, and if its re-measurement comes
+back in favour I would rather implement it than have it land on a seat that did not need it.*
