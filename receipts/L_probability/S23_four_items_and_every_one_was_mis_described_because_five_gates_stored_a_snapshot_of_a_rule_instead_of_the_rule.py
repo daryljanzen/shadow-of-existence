@@ -440,19 +440,42 @@ gate(f'Ⓕ② ⛔⛭⛭⛭ the REVISION SELECTOR is sound, tested as the RULE an
 #       than the prefix pair.  No spelling of either repair appears in this gate. ***
 _P03_PFX = ('receipts/P15_CR_cosmology/', 'receipts/L_probability/S')
 _p03_unowned_by_prefix = not _P03.startswith(_P03_PFX)
-# ⌗ against `origin/main` and not `origin/main...HEAD`, so an edit still in the working tree counts:
-#   on the branch the restraint's own evidence is uncommitted, which is `66`'s point about the far end.
+# ⛔⛭⛭⛭ r7273 (66): AND THIS GATE'S OWN `PROPERTY` CARRIED A BRANCH-STATE FACT INSIDE IT, WHICH IS
+#   THIS SECTION'S RULE ARRIVING IN THE GATE WRITTEN TO ENFORCE IT, ONE TURN FURTHER OUT.  *The
+#   third conjunct read `this branch MODIFIED P03` as `git diff --name-only origin/main`.  **On the
+#   branch that is the repair's own evidence and the conjunct is exactly right.  On the trunk
+#   `origin/main` IS `HEAD`, the diff is EMPTY, and the conjunct went FALSE on the merge of the work
+#   it records** -- `S23` and `S24` both red in `main`'s runner-read sweep, named in the carry
+#   ledger before any seat read them.*
+#   ⌈ ** So `assert the PROPERTY and never the form` is not enough on its own: a property can be
+#     stated over a RANGE, and a range that empties is a form. **  *`Ⓕ①` and `Ⓕ②` are immune because
+#     each is pinned to a literal sha; this one reached for a moving ref to get its non-vacuity.*
+#   ⇒ *** AND THE NON-VACUITY NEVER NEEDED A BRANCH: `P03` publishes its OWN injected control, which
+#       reports exactly ONE on any tree.  So the live arm is read out of `P03`'s output, where it
+#       holds on branch and trunk alike, and the MODIFICATION -- a historical fact -- is pinned at
+#       the commit that made it, which is `L-249`'s rule applied to the last conjunct that was not
+#       carrying it. ***
+#   ⌊ *`66`'s edit, because `66` landed the merge that inverted it.  **Stated for `60` to reverse** --
+#     no claim, count or verdict moves, only what the third conjunct is read against.*
+_P03_REPAIRED_AT = '10ef840a'   # `r7268`: the commit that put the ownership repair into `P03`
+_p03_pin_resolves = bool(_git('cat-file', '-t', _P03_REPAIRED_AT + '^{commit}').strip() == 'commit')
+_p03_pinned_mod = _p03_pin_resolves and _P03 in _git(
+    'show', '--no-merges', '--name-only', '--format=', _P03_REPAIRED_AT).split('\n')
+# ⌗ the live arm is KEPT as the branch-case fast path, where the edit may still be uncommitted:
 _p03_touched_here = _P03 in _git('diff', '--name-only', 'origin/main').split('\n')
 _r03 = run(_P03)
 _p03_zero = '0 UNAUTHORISED modified unowned receipt(s)' in _r03.stdout
+_p03_control = 'with one MODIFIED unowned receipt injected: 1' in _r03.stdout
+print(f"      P03 modified: pinned at {_P03_REPAIRED_AT} = {_p03_pinned_mod} "
+      f"(pin resolves: {_p03_pin_resolves}), live against origin/main = {_p03_touched_here}")
 gate(f'Ⓕ③ ⛔⛭⛭⛭ and the OWNERSHIP clause is sound, tested as the PROPERTY: the receipt '
-     f'the gate lives in is outside both prefixes (`{_p03_unowned_by_prefix}`) and this branch '
-     f'MODIFIED it (`{_p03_touched_here}`), and it still reports ZERO unauthorised crossings --- '
+     f'the gate lives in is outside both prefixes (`{_p03_unowned_by_prefix}`), it WAS modified by '
+     f'the repair (pinned `{_p03_pinned_mod}` / live `{_p03_touched_here}`), it reports ZERO '
+     f'unauthorised crossings and its own injected control still reports ONE (`{_p03_control}`) --- '
      f'which no prefix pair can give.  ** This gate first asserted the parity rule this seat wrote, '
-     f'which `66` reversed for retiring the claim rather than bounding it; accepted, and the '
-     f'property is what both repairs must share **',
-     _p03_unowned_by_prefix and _p03_touched_here and _p03_zero
-     and _r03.returncode == 0)
+     f'then asserted a property over a range that EMPTIES on the merge; the pin is the third cut **',
+     _p03_unowned_by_prefix and (_p03_pinned_mod or _p03_touched_here)
+     and _p03_zero and _p03_control and _r03.returncode == 0)
 
 for _nm, _rel in (('S21', _S21), ('S22', _S22), ('P03', _P03)):
     _r = _r03 if _rel is _P03 else run(_rel)      # P03 already ran for Ⓕ③; a trace is not a timing
