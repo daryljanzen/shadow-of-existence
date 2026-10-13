@@ -1,0 +1,43 @@
+# r7295: THE THIRD ACCIDENTAL DOUBLE-READ, and it is cc66 x 69 again -- 34 keys over 7 prefixes.
+# 69's r7295 stride (df64eb93) took L270, L262, L220, L554, L280, L804 and L561 as PRIMARY.  cc66 had
+# already read and PUSHED all seven as its own r7293 PRIMARY at bac67e5c, from a base that did not contain
+# 69's reading -- so each seat read these keys without seeing the other's verdict, and this is an
+# independent double-read by accident for the third time.
+# 66's r7295 section says 'the accidental supply is closed and there are exactly two'.  This is a third.
+# Recovered here rather than resolved: cc66's side is what its branch carries, 69's is what the trunk
+# carries, and neither was reconciled.
+# receipt	literal	cc66	69	agree	owedness agrees
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"This is proved here from the maximal-symmetry requirement together with the signature and causal-structure conditions; nothing is assumed of the embedding"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"answers a question in the next sentence"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"label\\{prop:amplitude\\}.{0,1200}?\\\\noindent\\\\emph\\{Argument"	DELIBERATE	NOT-A-PIN	no	yes
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"rem:carter-chain"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"two sections above the question"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_CIRCLED"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_left = sorted({c for c in s if ord(c) > 0xFF})"	DELIBERATE	DELIBERATE	yes	yes
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"for _i in range(10)"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"nothing untranslated leaves this function"	ALT-OK	DELIBERATE	no	yes
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"ᶜ"	DELIBERATE	DELIBERATE	yes	yes
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"⓺"	DELIBERATE	DELIBERATE	yes	yes
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"An empty survey is green forever"	MEANING-HELD	REPAIR-OWED	no	no
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"RESTATES THE RULE IT GUARDS"	REPAIR-OWED	DELIBERATE	no	no
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"_SUPER"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"ord(c) > 0xFF"	DELIBERATE	REPAIR-OWED	no	no
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"tex_escape"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"ʙ"	DELIBERATE	DELIBERATE	yes	yes
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"ᵇ"	DELIBERATE	DELIBERATE	yes	yes
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"WHAT IT CANNOT DO"	REPAIR-OWED	DELIBERATE	no	no
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"load-bearing claim from a passing remark"	REPAIR-OWED	DELIBERATE	no	no
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"reading list"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"substrate"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	"CORRECTED c54.220 (`L-554`)"	DELIBERATE	DELIBERATE	yes	yes
+receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	"a degeneracy growing as $n^2$, the shell contribution goes as $n^3$ and the sum \\emph{diverges quartically}"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	"the constant is the propagating-component count rather than a universal"	MEANING-HELD	MEANING-HELD	yes	yes
+receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	"the degeneracy is $2(n-1)(n+3)$"	DELIBERATE	MEANING-HELD	no	yes
+receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	"there are no modes below $n=2$ on $S^{3}$"	MEANING-HELD	MEANING-HELD	yes	yes
+receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py	"ARITHMETIC OF THE OLD PROBE"	REPAIR-OWED	DELIBERATE	no	no
+receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py	"_CLAIMS"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py	"_verbatim"	REPAIR-OWED	REPAIR-OWED	yes	yes
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"(1+\\delta_{r})/(1+\\delta_{m})=1+(\\delta_{r}-\\delta_{m})+O(2)"	DELIBERATE	DELIBERATE	yes	yes
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"Adiabatic primordial perturbations are strongly favoured observationally"	MEANING-HELD	MEANING-HELD	yes	yes
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"an isocurvature mode \\emph{is} $\\delta_{r}\\neq\\delta_{m}$"	DELIBERATE	MEANING-HELD	no	yes
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"nearly scale-invariant adiabatic spectrum processed by ordinary structure formation"	REPAIR-OWED	REPAIR-OWED	yes	yes
