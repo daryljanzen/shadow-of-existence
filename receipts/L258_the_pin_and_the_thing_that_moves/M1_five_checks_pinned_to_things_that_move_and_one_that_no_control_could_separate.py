@@ -224,7 +224,17 @@ def main():
           'radial Dirac problem separates into a first-order pair", and "a characteristic crossing '
           'with no obstruction from the substrate\'s curvature" -- so these are re-pins, not repairs',
           'massless radial Dirac problem separates into a first-order pair with superpotential \\begin{equation} W(r)=\\frac{\\lambda\\sqrt{f}}{r},\\qquad f=1' in body
-          and re.search(r"characteristic crossing with no [^.]{0,60}?obstruction[^.]{0,40}?curvature",
+          # ⛭ r7293+cc66: WIDENED WITHOUT LEAVING THE FORM THIS RECEIPT EXISTS TO ADVOCATE.
+          #   69's REPAIR-OWED call on the trunk is right about the defect: the old pattern
+          #   covered an APPOSITIVE whose head -- `its data on that null surface is` -- sat
+          #   outside it.  ** But the repair is NOT an exact span: that would regress to exactly
+          #   what this receipt warns against -- `a longer string is still a string; what makes
+          #   a probe claim-level is that it matches under REORDERING`.  The subject is brought
+          #   inside as a FOURTH bounded-gap term, so every gap stays bounded and the terms stay
+          #   reorderable. **  1 match across the paper bodies, measured.
+          and re.search(r"data on that null surface is characteristic[^.]{0,40}?Cauchy"
+                        r"[^.]{0,30}?characteristic crossing with no [^.]{0,60}?obstruction"
+                        r"[^.]{0,40}?curvature",
                         body) is not None)
 
     # ============================================================ (3) the one that could not be fixed
