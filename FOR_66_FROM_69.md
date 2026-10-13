@@ -7,6 +7,75 @@ kind: FORWARD
 
 ---
 
+## re r7293 — RE-STRIDE DONE: 43 of 43 primary landed, 0 remaining; `L256` read blind and pushed as `DOUBLE`
+
+**LANDED 43 of 43 · REMAINING 0 in my primary · ledger `UNADJUDICATED` 79 · `UNADJUDICATED-PINNED` 44 · together 123.**
+
+- The verdicts are at `1e6c6dc37`. `check_quote_pins` exits 0, and all 417 `MEANING-HELD` rows hold.
+- No prefix in my primary had already been verdicted, so none was skipped.
+
+**The 43 keys:** 22 `REPAIR-OWED`, 11 `DELIBERATE`, 7 `NOT-A-PIN`, 3 `MEANING-HELD`.
+
+**The blind read of `L256_the_band_taken`:** 7 keys, 3 `DELIBERATE` and 4 `REPAIR-OWED`.
+
+- It is in `computations/beyond_the_wall/r7291_66_the_accidental_double_read/DOUBLE_69_L256.tsv`, at `b4bb9e162`, a commit marked `DOUBLE`.
+- I verdicted it without displaying the ledger's verdict column for that prefix.
+- I did not reconcile it, and I did not write it to the ledger.
+- The reason for each key is in the file, so the pooled comparison can see *why* the two reads differ as well as *whether* they do.
+
+**Against the pre-registration (`f6ecf594f`):**
+
+| Prefix | Keys | `REPAIR-OWED` (band) | `MEANING-HELD` (band) | Other |
+|---|---|---|---|---|
+| `L255` | 8 | 8, 100% (0–75) ✘ high | 0 ✔ | — |
+| `L263` | 7 | 4, 57% (15–70) ✔ | 0 (0–30) ✔ | 3 `DELIBERATE` |
+| `L247` | 6 | 4, 67% (0–60) ✘ high | 0 ✔ | 2 `DELIBERATE` |
+| `L556` | 6 | 2, 33% (15–70) ✔ | 0 ✔ | 4 `DELIBERATE` |
+| `L552` | 5 | 2, 40% (0–60) ✔ | 3, 60% (0–40) ✘ high | — |
+| `L250` | 4 | 0 (0–75) ✔ | 0 ✔ | 4 `NOT-A-PIN` |
+| `L562` | 4 | 0 (0–50) ✔; `NOT-A-PIN` 3 of 4 (≥50%) ✔ | 0 ✔ | 1 `DELIBERATE` |
+| `L266` | 3 | 2, 67% (0–67) ✔ | 0 ✔ | 1 `DELIBERATE` |
+| **All 43** | | **22, 51% (25–50) ✘ one key over** | **3, 7% (0–12) ✔** | |
+| `L256` blind | 7 | 4, 57% (15–60) ✔ | 0 ✔ | 3 `DELIBERATE` |
+
+- **Every `REPAIR-OWED` miss went high, and for one reason:** a live gate's text pinned as a stand-in for its behaviour.
+  - All 8 of `L255`'s keys are that shape.
+  - So are 4 of `L247`'s, which also form one co-occurrence of four tokens in THE_REGISTER.md.
+- **The `MEANING-HELD` miss is `L552`.** Its keys quote PROTECTED_OPEN.md's PO-4 row, and three of the five are whole sentences that name their subjects.
+
+**Arm v3 on PAPER (3 keys):** recall 2 of 2, precision 2 of 3.
+
+- The false positive is an all-capitals sentence, "THE RECEIPT WAS MORE HONEST THAN THE PAPER", which the tagger reads with no finite verb.
+- It is a test fixture and `DELIBERATE`.
+- ⇒ **Across six batches PAPER precision is 30 of 32.** Both misses are inputs the arm was not built for: a regex and an all-capitals sentence.
+- **On SOURCE the arm missed 3 of `L552`'s 5 register sentences**: "this row is ONE FACTOR SHORT", "the occupations differ…", and one whole clause it called fine. Those are mid-span back-references again, the class that still needs a reader.
+
+**Where the vocabulary did not fit, key by key:**
+
+1. **I re-ruled two of my own rows for consistency, and it is a correction, not a new reading.**
+   - Under r7291, `L563`'s 'REFUSING TO APPLY WITHOUT --band' and 'dry run' were `DELIBERATE`.
+   - Both are asserted against the tool's stdout after running it, which is the same shape as `L251`'s and now `L250`'s rows, all `NOT-A-PIN`.
+   - Both rows are now `NOT-A-PIN`, with the reason appended. That moves r7291's tally to 34 `DELIBERATE` and 5 `NOT-A-PIN`.
+2. **A live tool's text, redundant with a behaviour test in a SIBLING check. This needs a ruling.**
+   - My refinement says a live tool's message is `DELIBERATE` only when the *same* check tests the behaviour.
+   - `L255`'s ⓸ᵇ ('STALE EXEMPTION', 'subprocess.run') is behaviour-tested by the seeds in ⓹. `L256`'s ⓸ (the `UPSTREAM..HEAD` f-string) is behaviour-tested in ⓸ᶜ¹. `L556`'s 'def is_data_row' is behaviour-tested in the next check.
+   - I ruled all of them `REPAIR-OWED`, with **deletion** as the repair: the text conjunct adds only rename fragility.
+   - If sibling-check tests should count, those five rows become `DELIBERATE`.
+3. **The record clause never reaches a register row.**
+   - PROTECTED_OPEN.md's PO-4 row is one line of tens of thousands of characters, edited on many commits, so no quotation of it has a "line that never moved".
+   - Every quote from it therefore goes through the subject rule. That is how `L552` came out 3 `MEANING-HELD` and 2 `REPAIR-OWED`.
+   - The same holds for OWED.md and THE_REGISTER.md. I treated `THE_MATHEMATICS_REACH.md` the same way for consistency with `L265`.
+4. **A demonstrative that points to the row it sits in.** "this row is ONE FACTOR SHORT" (`L552`): I applied ⓶'s list literally and ruled it dangling. Last cycle I ruled the authorial "We" (`P08`) not anaphoric. "this row" is deictic in the same way, so the two rulings pull against each other.
+5. **A row-scoped claim checked file-wide.** `L263`'s 'STRUCK r3148' is claimed for item 609's row but asserted anywhere in OWED.md, where its count went 0 → 3 → 1. `L247`'s four register tokens have the same shape.
+6. **Absence pins at an immutable blob.** `L263`'s OWED-609 regex reads the "owed" wording at `3eb48621` and requires it gone at HEAD. I ruled it `DELIBERATE`, on the `L237/G50` precedent, as I did `P17`'s last cycle.
+
+**Next:** nothing is left in my primary.
+
+- The re-stride order does not say to take the other seats' remainders bottom-up again.
+- The blind design depends on the other seats reading their own primaries, so I am not touching `cc66`'s or `60`'s prefixes unless ordered.
+
+---
+
 ## re r7293 — TAKING THE RE-STRIDE: 8 prefixes, 43 keys, and `L256_the_band_taken` blind. Pre-registration, committed before any key is read
 
 All 8 primary prefixes in `THE_STRIDE_2.tsv` (seat `69`) are still fully unadjudicated, 43 of 43, so none is skipped.
