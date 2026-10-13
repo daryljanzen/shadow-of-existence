@@ -14332,3 +14332,48 @@ if _own_sess is None:
 ⌗ ⚠ ***And one lesson arrived a SECOND time because I fixed it at one site instead of generalising it:*** *`C76`'s `Ⓑ②` learned to read a paper whitespace-normalised because a sentence was broken across a line. `C78`'s `Ⓕ④` needed the same normalisation on my own prediction file and did not have it. **Every read of that file goes through it now — but the honest note is that I had already learned this once.***
 
 ⌗ *`r7243` stands. Next: batch eight, the last `8` `EXTEND` rows, **which is the batch that tests the pinned call**. I will report its outcome against the pinned `3` explicitly, whichever way it falls. Then order ②.*
+
+---
+
+## ⛔⛭⛭⛭ `r7283+cc66.5` — **LANDED `62` OF `71` (`52` of `59` `INPUTS`, `10` of `12` `EXTEND`). REMAINING `9`.** ⛔ **AND MY OWN PINNED CALL IS REFUTED BY ITS OWN REFUTATION CLAUSE: `1` OF `12`, NOT `3`**
+
+*`C79`: `48` checks, all pass, `17` s. `REACHED_B8.tsv` digest `51b5381324108df6`. Six rows, six taken. `CR_cosmology.pdf` at `314` pages.*
+
+### ⛔ THE CALL, AND THE CLAUSE THAT KILLED IT — WHICH THE CALL ITSELF WROTE
+
+***I called `3` of the `12` `EXTEND` rows `FUNCTION-IS-THE-WRONG-KIND`, at `25` per cent against `INPUTS`'s `8.5`. Measured: `1`. `8.3` per cent against `8.5` — the same to within a fifth of a point.***
+
+⇒ ***So `EXTEND` does NOT attract kind errors. The call is refuted in NUMBER and in DIRECTION, and the refutation fires the file's own FIRST clause*** — *`2` or fewer kills the direction — rather than anything written afterwards.*
+
+| row | the backlog named | reached instead by | verdict |
+|---|---|---|---|
+| `B15`, `B8` | `A2: lie_g` | **`L130`'s own `inv_dim` with `chi_meson`** | `FUNCTION-MIS-NAMED` |
+| `C3` | `probe2: killing_residual` | a subalgebra-dimension count | `FUNCTION-IS-THE-WRONG-KIND` |
+
+⌗ ***The measurement, with my own directory EXCLUDED because a function I wrote at batch five is not one the backlog could have named:*** **four `inv_dim` functions under `computations/` against ZERO subalgebra-dimension functions.** *The right kind for `B15`/`B8` existed all along; the right kind for `C3` did not. `C79`'s `Ⓑ④` is that count.*
+
+### ⛭⛭⛭ AND WHAT REFUTED IT IS WORTH MORE THAN THE CALL WOULD HAVE BEEN
+
+***`B15` and `B8` assert a LIE-GROUP fact — `the smallest connected group containing the ratios together with the hinge three-cycle is SU(3) itself` — and it is reached by a FINITE-GROUP CHARACTER COUNT with no Lie-algebra machinery in it at all.***
+
+*`inv_dim(G_su, chi_meson) = 1` is `dim Hom(V,V)`, so by **Schur** the `3` is irreducible. An irreducible `3` sits in no proper connected subgroup of `SU(3)`: the group is non-abelian so not in the maximal torus, `SU(2)×U(1)` acts as `2+1`, and `SO(3)`'s order-`27` subgroups are cyclic.*
+
+⌈ ⇒ ***THE SAME NUMBER `C77` READ AS `colour's meson selection rule` IS THE IRREDUCIBILITY CRITERION.*** *One invariant dimension, two readings — and the second is what makes a Lie-group claim reachable by counting characters of a group of order `27`.* ⌊ ⌗ **The corpus had the instrument. The backlog pointed at a metric Killing test instead.**
+
+### ⌗ `C3` SURVIVES AS THE ONE KIND ERROR, WITH ITS QUALIFICATION STATED AND NOT BURIED
+
+*The only subalgebra-dimension functions under `computations/` are the ones I wrote at batch five, **so the corpus carries the right kind NOW because I built it and did not when the backlog was written.** The verdict is a kind error against the corpus as the backlog found it, and I would rather say that than let the count stand unqualified.*
+
+⌗ *Its claim computes exactly: the isotropy subalgebra of a symmetric pair of `so(5,1)` is `so(k) ⊕ so(6−k)`, of dimension `k(k−1)/2 + (6−k)(5−k)/2`, and over `k = 1..5` the SET is `{6,7,10}` — **exactly the triple `P12` states**. One ambient dimension up, `so(6,1)` gives `{9,11,15}` and the triple fails, which is the converse.*
+
+### ⌗ AND THE THREE `P_T_of` ROWS ARE SETTLED BY THE FUNCTION'S OWN SIGNATURE
+
+*`P_T_of(rho_v, M_v)` has exactly two parameters, **both properties of the progenitor, and no crossing parameter at all** — which is what `a property of the progenitor's collapse history rather than of the crossing` means when the paper says the crossing has ZERO DURATION and nothing can act in it.* ⌗ *The log-log slopes are exactly `−6` in the density and `−2` in the mass, so a decade of approach moves the amplitude by `10^6` while the crossing contributes a factor of one.*
+
+### ⌗ WHAT I TAKE FROM HAVING BEEN WRONG
+
+***A prediction that names its own refutations is worth making even when it is wrong, and this one paid for itself twice.*** *The call was wrong by a factor of three and its direction was dead — but **the clause that killed it was in the file before the measurement**, so the refutation needed no adjudication and no argument from me: the corpus either carried a function of the right kind or it did not, and it did.* ⇒ ⛭ *And the search that settled it is what turned up the batch's result.*
+
+⌗ ⚠ ***So the honest summary of the `EXTEND` class is narrower than I expected and sharper: the backlog's failures are MIS-NAMINGS at about one in twelve either side, and the one true kind error of the twelve is `C3`'s — where the corpus genuinely had nothing.*** *That is the second register item I have withdrawn on my own measurement this cycle, after the argument-versus-module-level distinction at `r7283`.*
+
+⌗ *Remaining `9`: `7` `INPUTS` (`4` the nested-function limit `C73` gated the decision not to build for, `3` refusing on an unbound module-level name) and `2` `EXTEND` (`probe1: Gamma`, the shear of the ruling congruence; and `CR_acoustic: D_M`, whose holder is the withheld one). **Then order ②.*** ⌗ *And one detail on the routed reds: `S26` now appears in THREE scoped tiers, not two — the tolerance perturbation carries it as well, `ran 56, 1 named red`. Same receipt, same gates, no second comment.*
