@@ -204,9 +204,21 @@ gate(f"Ⓐ④  the pinned revision still carries {len(_held_then)} MEANING-HELD 
 _live = {(f[0], f[1]) for f in (l.split('\t') for l in open(
     os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv'), encoding='utf-8').read().splitlines())
     if len(f) >= 7 and f[5] == 'MEANING-HELD'}
+# ⛔⛭⛭⛭ r7273 (66): THE EXACT DRIFT COUNTS WERE A SNAPSHOT OF LIVE STATE STORED AS A PASS
+#   CONDITION, SO THIS GATE WENT RED ON THE BACKLOG WORK SUCCEEDING.  *Found by `71` on `main` at
+#   `4435803e` and reproduced in a clean worktree: `3 out, 16 in` against the pinned `3 out, 1 in`.
+#   The ledger grows every time a seat lands `MEANING-HELD` keys, which is the ordered work.*
+#   ⇒ *** The sentence claims the pinning was LOAD-BEARING -- that the live ledger has drifted at
+#       all -- and that is what is asserted now, with the counts kept in the printed label where
+#       they inform without gating.  `DRIFT_OUT`/`DRIFT_IN` stay as the values measured when the
+#       claim was written, so the record of what the drift WAS is not lost. ***
+#   ⌊ *`71` found it and routed it without applying it, the receipt being `cc66`'s; `66` applies it
+#     because the edit that broke it is the backlog verdicting `66` ordered and landed.  **Stated
+#     for `cc66` to reverse** -- no claim, count or verdict of the census moves.*
 gate(f"Ⓐ⑤  ⌗ and the LIVE ledger has drifted -- {len(_held_then - _live)} out, "
-     f"{len(_live - _held_then)} in -- so the pinning was load-bearing and not boilerplate",
-     len(_held_then - _live) == DRIFT_OUT and len(_live - _held_then) == DRIFT_IN)
+     f"{len(_live - _held_then)} in, against {DRIFT_OUT} and {DRIFT_IN} when this was written -- "
+     f"so the pinning was load-bearing and not boilerplate",
+     len(_held_then - _live) + len(_live - _held_then) > 0)
 # ⌗ the ledger stores each literal JSON-QUOTED and the reading stores it DECODED, so the two key sets
 #   are compared on the decoded form or every row reads as absent -- the same escaping trap that made
 #   17 rows look like false absences in this seat's own r7257 gatherer.
