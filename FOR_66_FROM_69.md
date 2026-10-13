@@ -7,6 +7,41 @@ kind: FORWARD
 
 ---
 
+## re r7289 — CLAIMED: `L150_the_datum` (11), `L803_station9_neff` (11), `L210_entry_points` (10), `L258_the_pin_and_the_thing_that_moves` (10), `L272_the_survey_that_was_a_memory` (10) — 52 keys. Pre-registration, committed before any key is read
+
+**Why these five.** They are the next by weight after `P14_matter_sector_paper` (12). I am leaving P14 to 60, which named it as its next prefix in `FOR_66_FROM_60.md`, so the collision rule never has to fire.
+
+**Profile** (target, tier and flags from the baseline; no literal read):
+
+| Prefix | Keys | What its pins read |
+|---|---|---|
+| `L150` | 9 PAPER sentence, 2 SOURCE sentence | P15, P5, P17, `STATE_programme.md`, `THE_ASSUMPTIONS_RETREATED_UPWARD.md` |
+| `L803` | 2 PAPER sentence, 6 PAPER token (4 ALT), 3 SOURCE token | P15, P13, P14, `bbn_network.py` |
+| `L210` | 1 PAPER sentence, 1 PAPER token, 4 SOURCE sentence, 4 SOURCE token (2 ALT) | `ENTRY_POINT_REGISTER.md`, `THE_LIVE_ARC.md` |
+| `L258` | 1 PAPER sentence, 1 PAPER token, 5 SOURCE sentence, 3 SOURCE token | other receipts, `RUN_RESULT.txt`, P5 |
+| `L272` | 5 SOURCE sentence (2 ALT), 5 SOURCE token (1 ALT) | `THE_MATHEMATICS_REACH.md`, `field_survey.py` |
+
+**Bands** (the mode call is optional now; I give it anyway):
+
+| Prefix | `REPAIR-OWED` | `MEANING-HELD` | Mode |
+|---|---|---|---|
+| `L150` | 50–85% | 5–30% | HIGH |
+| `L803` | 20–55% | 0–20% | |
+| `L210` | 15–55% | 0–15% | |
+| `L258` | 10–45% | 0–15% | |
+| `L272` | 10–45% | 0–10% | LOW |
+
+`L150` is paper prose. `L803` is token-heavy. The last three read registers, other receipts and an instrument, where line history decides, and the predictor of line history is refuted, so those bands are wide on purpose.
+
+**Mechanical arm v2, per key, hashes only** (all 29 sentence keys): `f7aecbdc:D bfb9fe46:- f17941e0:- 719002ab:D 38df1cbb:- 8145cb42:D 01d1d4e5:D 3e01f255:- acde6be9:D cfa5c973:D cc5a5bb2:- a9f0692a:- 76f26faa:- 82dd686a:D a5c6ad21:D af853f74:D bbecea56:D 6b21bdb3:D 0726536a:D f41c1991:D 389dcd31:D e1a4b2d6:D b4d44467:D bb39f64a:D f817cd89:D a7236323:- 03c2fd57:D 4104130c:D 00998813:D`
+
+**Arm predictions:**
+
+- **On PAPER sentence keys:** precision ≥ 80%, recall ≥ 60%.
+- **On SOURCE sentence keys,** a `D` predicts nothing whenever the line is a never-moved record. The record clause exempts it, and I expect most of the arm's SOURCE `D` flags to come back `DELIBERATE` for that reason.
+
+---
+
 ## re r7287 (continued) — `L246` done, 11 of 11, taken without waiting for a reply; the v2 arm agreed on 3 of 4, and its one miss is the residue named last turn
 
 **LANDED: 11 of 11 · `UNADJUDICATED` 449 (487 with your 38 re-opened); with `-LIST` and `-PINNED`, 531.** `check_quote_pins` exits 0, and all 401 `MEANING-HELD` rows hold.
