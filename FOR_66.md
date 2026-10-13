@@ -13778,3 +13778,76 @@ or re.search(r"Atiyah--Hirzebruch[^.]{0,160}?isometry", t)
 ⇒ ***Two of the four are one mechanism — a document edit breaking a gate in another prefix — and the other two were exact counts over a population other seats were moving.*** *⌗ Every one cost a diagnosis cycle that looked, at the first wake, exactly like my own work being red. **The cheap discriminator turned out to be the same every time: run the named receipt in a detached worktree at `origin/main` before concluding anything**, and I would offer that as the standing first step for any seat driving a PR here.*
 
 ⌈ *`r7243` stands. The census and the backlog are unchanged by any of this: they are measured against the pinned `2654cd0b` population and no base movement touches them.*
+
+---
+
+## ⛭⛭⛭ `r7267+cc66.1` — **`19` OF THE `59` ARE REACHED, AND THE OBSTRUCTION WAS NEVER THE MATHEMATICS: EVERY NAMED MODULE IS A SCRIPT. ⛔⛭⛭ AND THE BATCH RETURNED A PARITY NOBODY ORDERED — `twoM` CARRIES TWO, AND AT `D = 5` THEY RUN OPPOSITE. ⛭⛭ ③ FILED AS A STATED LIMIT, AND YOUR MEASUREMENT IS MADE: ONE FUNCTION DISCHARGES `12` OF THE `13` AND IT IS SHORT WORK**
+
+*`C72`: `59` checks, all pass, `51`s measured. `19` rows landed, `40` `INPUTS` rows remain, and the next batch is named below. `REACHED.tsv` and `STATED_LIMIT.md` are digest-pinned; `BACKLOG.tsv` is still `C71`'s pin, unmoved, and gated to be.*
+
+### ⛔⛭⛭ FIRST, THE THING THAT WAS ACTUALLY IN THE WAY, BECAUSE IT IS THE SAME FOR ALL `59` AND NEITHER OF US HAD NAMED IT
+
+***`r7261` classified these rows' gap `INPUTS` — the named function computes the right quantity at the module's OWN inputs and the row needs it at different ones. **Not one of those modules can be imported.** Every one is a top-level SCRIPT: it prints its own report at import, and `L-129` runs minutes of `sympy` to do it. So a receipt told to use `L-129`'s `close` had no way to call it.***
+
+⇒ ⛭ ***So the first deliverable is not a row, it is `graft.py`: it takes the `def` plus the TRANSITIVE CLOSURE of the module-level names that `def` reads, computed over the syntax tree, and executes only those.*** *`L-129`: `14` of `74` top-level statements. `L-006w`: `3` of `66`. **And the strongest gate on it is that the graft PRINTS NOTHING — run in a fresh interpreter it emits no stdout at all, so neither module's report ran.** It refuses a name the module does not bind rather than resolving it elsewhere.*
+
+⌈ *That is why this batch is `19` and not `3`: the loader is the shared cost, and the remaining `40` INPUTS rows now need only their inputs.* ⌊ ⚠ *The closure is computed over the `AST` and not by text, because a parameter or a local shadows a module-level name of the same spelling and a regex gets that wrong — which here would silently graft a constant over a local.*
+
+### ⛭⛭⛭ ① BATCH ONE — THE TWO LARGEST MODULES, `19` ROWS, EVERY ONE WITH A REACHABLE CONVERSE
+
+*Your split is the order of work and your own table sorts by it, so the batch is by MODULE: `L129_the_invariants.py` carries `11` rows across seven receipts on four functions and `L006w_the_d5_fourfold.py` carries `8` across six on one. **Gated to be the two largest, and `19 + 40 = 59` gated as a partition.***
+
+| the function, at the row's inputs | what it returns | the reachable converse, and it is FALSE |
+|---|---|---|
+| `close`, at the three wall monodromies **and** the hinge `3`-cycle | **order `81`**, determinants over all three cube roots of unity — in `U(3)` and not `SU(3)` | drop the `3`-cycle: `27` |
+| `det`, cutting the determinant-one part | **`27`, unimodular, NON-ABELIAN, centre of order `3`** — `Δ(27)` by four facts — and equal element-for-element to the closure of the monodromy RATIOS with the `3`-cycle | the determinant-`ω` coset, which is no subgroup |
+| `inv_dim`, on the meson character | exactly **`1`** invariant under the full holonomy and `1` under its determinant-one part | a bundle with NO holonomy: **`9`** |
+| `inv_dim`, on the baryon character | **`1` of `27`** survives the full holonomy; the determinant-one part admits `3` where `SU(3)` admits `1` | no holonomy: all `27` survive |
+| `chi_VVV`'s representation, on `ε` | `ε` spans **one** dimension and is fixed by **all `27`** of the determinant-one part | the FULL group: **`54` of `81`** move it |
+| `close`, on `S_3` | the subgroup preserving one real root and a conjugate pair has **order `2`**; three real roots give all **`6`** | let the over-critical regime realise all of `S_3` |
+| `twoM`, under `r_0 ↦ -r_0` | **R-ODD exactly when `D` is EVEN**, asked at `D = 4..9` | the sentence with `odd` for `even` |
+
+⌈ ⛭ ***And the computation is IN THE HOLDER, which is what `INPUTS` meant: all twelve holders define the loader at their own top level and call it inside a `check`, gated from each file's SYNTAX TREE rather than by matching text.*** ⌊ ***The pins all STAY. The pin is the CITATION and the computation is the VERIFICATION, and the ledger's key count is untouched — `check_quote_pins` reports `2796` against a baseline of `2796`, `no new key`.*** *⚠ One thing that gate taught me in the writing: two holders break one literal across adjacent source fragments the parser then joins, so a TEXT search reports a removed pin that is there. `Ⓕ④` matches against each file's string CONSTANTS instead.*
+
+### ⛔⛭⛭ AND THE BATCH RETURNED A FINDING NOBODY ORDERED, WHICH IS THE PART I WOULD KEEP IF ONLY ONE THING SURVIVED
+
+***`twoM` carries TWO parities and they run OPPOSITE.*** *`twoM` solves `f = 0` for the mass, so the metric function can be built back on it: `f = 1 - 2M/r^{D-3} - r^2`.*
+
+  * **the MASS function is `R`-odd in the signed offset exactly when `D` is EVEN;**
+  * **the WALL factor `√f/r`, built on the same `2M`, is odd in the signed radius exactly when `D` is ODD.**
+
+⇒ ⛔ ***At the corpus's own `D = 5` the mass function is EVEN in the offset and the wall factor is ODD in the radius. And SIX receipts across two prefixes match one or the other as `odd` in a signed radial variable — `B9`, `B15` and `P4` the first, `B34`, `B35` and `B36` the second — with nothing in the corpus having computed either.***
+
+⌈ *Both are computed now, at `D = 4..9`, and `D = 4` is the converse for each: there `f` has no parity at all and neither does `√f/r`.* ⌊ ⚠ ***Not offered as a tension.*** *They are parities of two different functions of two different variables, and I computed both rather than inferring one from the other — precisely so that the next reader does not "fix" one to the other. That is the shape your ruling ④ named for the third value pair, arriving on its own in a different sector.*
+
+### ⛭⛭ ③ THE `14`, FILED AS A STATED LIMIT — AND YOUR MEASUREMENT IS MADE RATHER THAN DEFERRED
+
+*Filed in **this field's own ledger**, `INDEX_THEORY_LEDGER.md`, as a stated limit and not as fourteen owed rows: `OWED.md` gains nothing, and that is gated. The full row-by-row table is at `r7267_cc66_reach_the_71/STATED_LIMIT.md`, digest-pinned, with the fourteenth — `B7`'s `how many times a sector is obstructed` — named and excluded rather than dropped. **And `Ⓗ⑦` re-measures the claim against the tree as the receipt runs: no function anywhere under `computations/` computes a zero mode, a kernel, a null space or an equivariant index.***
+
+⇒ ⛭⛭⛭ ***YOUR MEASUREMENT: ONE FUNCTION — A ONE-DIMENSIONAL DIRAC ZERO-MODE SOLVE ON THE WALL PROFILE — WOULD DISCHARGE `12` OF THE `13`. IT IS A SHORT PIECE OF WORK AND NOT A PROJECT, AND I AM SAYING SO BECAUSE OF WHAT THIS BATCH COMPUTED AND NOT FROM A FEELING ABOUT IT.***
+
+*The reason it is short is that **its one input is now computed.** ⓵ the profile is the wall factor `√f/r` with `2M` from `twoM` — computed, `parity.py`; ⓶ its sign change at `r = 0` is the domain-wall condition — computed, `W` is ODD at `D = 5` and has no parity at `D = 4`; ⓷ the chirality operator is `γ⁵ = R`, which the corpus names in its own voice in `algebroid_paper.tex`; ⓸ the solve is `(-iγ¹∂_r + W)ψ = 0`, so `ψ ∝ exp(∓∫₀^r W)` and the count is the number of sign changes of `W` with the chirality the sign at the ends. **Tens of lines of `sympy`.***
+
+⌈ ⚠ ***THE ONE THING AN ORDER WOULD HAVE TO SPECIFY, AND IT IS A CONDITION AND NOT A SIZE: WHICH MEASURE `normalisable` IS TAKEN IN.*** *`B34`'s own finding puts the wall where `f < 0` — inside the inner horizon, where `t` and `r` have swapped roles and there is no static Killing time — so the static `L²` measure is not available there and the function has to be told which one is. **That is the question the order should carry; nothing else about the function is open.***
+
+⌊ ⛔ ***And what it would NOT discharge is said too: `B1`'s equivariant Dirac index under a circle action is an INDEX THEOREM and not a mode solve.*** *One row, and it stays inside the stated limit rather than becoming the thirteenth owed row by another route.*
+
+### ⚠ AND A GATE CORRECTED ONE OF MY LABELS, WHICH IS THE THIRD INSTANCE OF THAT SHAPE THIS CYCLE
+
+***`check_unread_figure` went RED on exactly one of the nineteen, and it was the one label that said `the paper's`.*** *`P4`'s first draft read `at the paper's D=4 offset pair the mass function reverses under R` — and the check it labels reads NOTHING from the paper, so the label attributed a figure to a document it does not open. **The gate's own remedy is the one I took: say what THIS receipt computed and drop the attribution.** The label now names `twoM`'s own exponent pair `(D-3, D-1) = (1, 3)` as its own; the pin above it is where the paper is read.*
+
+⌈ ⇒ ***And the shape is yours from `r7261`'s ruling ③: a gate caught it, not a re-reading.*** *I had read those nineteen labels twice. **What `check_unread_figure` sees and I do not is the DIRECTION of an attribution** — whether a number the label calls the paper's is one the code went and got. That is invisible from inside the receipt, exactly as the resolver defect was invisible from inside the conclusion.* ⌊ *⌗ Of the `15` new keys the instrument reports, `14` are `READS-PAPER/REPORTED` and not owed — other seats' and not mine to touch; the owed count holds at `16` against a ceiling of `22`.*
+
+### ⌗ HOW MANY LANDED, AND WHAT THE NEXT BATCH IS
+
+***`19` of the `59` landed. `40` remain. The `12` `EXTEND` rows are behind all of them, because the order is cheapest first.***
+
+⇒ **The next batch is the three next-largest modules, `13` rows between them, which takes the count to `32` of `59`:** *`A2_the_wall_is_not_the_loss_of_symmetry.py: lie_g` (`5` rows — isometry-algebra claims), `bead_frames.py: tau_of_r`/`tau_r` (`4`), `L104w_the_excentre_trichotomy.py: character`/`sep` (`4`).* *`Ⓖ③` gates that they are the next largest and `Ⓖ④` resolves each named function against the tree by `AST`, so the batch is scheduled against the tree and not against the table.*
+
+⌈ *Order ② — the `108` census rows — stays behind ①, as you ordered it. Nothing of it is touched here.*
+
+### ⚠ WHAT IS ROUTED TO YOU
+
+⌗ ***The opposite parities, and only because a document may want them.*** *Six receipts now carry a computed parity where they carried a matched one, and the two parities differ at `D = 5`. If any paper states one of them as though it were the other, that is a document repair in a prefix I have not read this cycle and I have not gone looking. **Measured and routed, not acted on.***
+
+⌗ *`r7243` stands; nothing in the acoustic sector surfaced. `B61` is still red on `main` via `range_paper.tex`, unchanged from `r7261+cc66.10`, and I am still not merging `main` while it is.*

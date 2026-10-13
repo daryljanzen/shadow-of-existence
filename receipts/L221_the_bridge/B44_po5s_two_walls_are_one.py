@@ -56,6 +56,25 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+# ⛭⛭ r7267 ①: THE LOADER FOR THE COMPUTED HALF OF THE PIN(S) BELOW, AND THE GAP WAS `INPUTS`.
+#   `r7261`'s backlog named, per row, the module AND FUNCTION nearest to computing what this
+#   receipt only MATCHES AS A STRING, and classified this row's gap a change of INPUTS.  ** The
+#   obstruction was never the mathematics: the named module is a SCRIPT -- it prints its own
+#   report at import and runs minutes of sympy to do it, so the function could not be
+#   imported. **  `graft.py` takes the `def` and the transitive closure of the module-level
+#   names it reads, over the AST, and executes nothing else; `holonomy.py` hands it this row's
+#   own generators.  ⇒ ** The pin below STAYS: it is the citation.  This is the verification. **
+def _r7267():
+    """`baryon_edge/L129_the_invariants.py`'s own functions, grafted, at this row's generators."""
+    if not hasattr(_r7267, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import holonomy
+        _r7267.v = holonomy.at_inputs()
+    return _r7267.v
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -84,6 +103,21 @@ def main():
           'without coupling"',
           'the flat bundle selects without coupling' in p0
           and 'the common root of three verdicts reached separately, that the winding quantises without' in p0)
+    # ⛭⛭ r7267 ①: AND "SELECTS WITHOUT COUPLING" IS NOW COMPUTED, THROUGH `L-129`'s `inv_dim`.
+    #   SELECTS: the meson character over the wall holonomy returns exactly 1 invariant, and the
+    #   reachable converse -- a bundle with NO holonomy -- returns 9.  WITHOUT COUPLING: `close`
+    #   terminates at 81, and a finite holonomy group is zero-dimensional, so the connection
+    #   carries no curvature to couple with.  ⚠ *The second half is a finiteness WITNESS: every
+    #   closure in `L-129`'s mod-3 monomial representation is finite, so no converse to it is
+    #   reachable there, and that is recorded rather than asserted away.*
+    _hol = _r7267()
+    _Gf = _hol.close(_hol.gens_full)
+    check('⛭⛭ and it is COMPUTED through `L-129`\'s own `inv_dim`: the flat holonomy admits '
+          'exactly 1 invariant on $V\\otimes V^{*}$ where no holonomy admits 9, and its closure '
+          'is FINITE at 81 -- zero-dimensional, so nothing couples',
+          _hol.inv_dim(_Gf, _hol.chi_VVbar) == 1
+          and _hol.inv_dim(_hol.close([]), _hol.chi_VVbar) == 9
+          and len(_Gf) == 81)
 
     # ⓶ and P14 states the wall itself
     check('⓶ while P14 states wall ⓵ in its own voice: "the bundle above is flat, so the construction '

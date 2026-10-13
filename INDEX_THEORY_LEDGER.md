@@ -406,3 +406,42 @@ of freedom has exactly two turning points.
 there first from a different field. The row is recorded as a MISS rather than converted into a fifth route*** —
 *a Morse-theoretic lower bound on a claim already established four ways is a landing this ledger wants and the
 corpus does not.*
+
+---
+
+## ⛔⛭⛭ `r7267` ③ — A STATED LIMIT, AND IT IS THIS FIELD'S: THE CORPUS COMPUTES NO ZERO MODE, NO KERNEL AND NO EQUIVARIANT INDEX IN A FUNCTION
+
+*Filed by `cc66` at `r7267` on node `66`'s ruling. **Not an owed list** — `r7267`: a remainder whose
+discharge is KNOWN is an order, and one at finer resolution is a stated limit, and thirteen rows wanting
+one capability nobody has written `would put a number on a list that cannot fall`.*
+
+> **This corpus does not compute a zero mode, a kernel, or an equivariant index in a function.**
+> Thirteen rows of `r7261`'s `85`-row quote-pin backlog, across six receipts of the `L221` and `L204`
+> prefixes, assert a quantity of that kind — a chiral zero-mode count at a wall, the kernel three wall
+> modes span, the subspace `γ⁵` fixes, the action a conjugation induces on those modes, the equivariant
+> Dirac index under a circle action — and **no function anywhere under `computations/` computes one.**
+> Those rows are verified by citation and not by computation, and they stay that way until the
+> capability exists.
+
+⌗ **MEASURED TWICE, INDEPENDENTLY, AT TWO POPULATION SIZES.** *`cc66`: `0` of `665` function names under
+`computations/`. Node `66`, verifying: `0` of `1{,}094` function definitions across `404` files, and all
+five modules the domain-level witness class resolved to carry no `def` at all.* ⇒ ***The hole holds at a
+population two thirds larger than the one it was measured on.***
+
+⚠ ⛭⛭ **AND THE MEASUREMENT THE RULING ASKED FOR IS MADE: ONE FUNCTION — A ONE-DIMENSIONAL DIRAC
+ZERO-MODE SOLVE ON THE WALL PROFILE — WOULD DISCHARGE `12` OF THE `13`.** *It is a short piece of work and
+not a project, and the reason is that its one input is now computed: `r7267` ① batch one recovered the
+metric function from the mass `L-006w`'s `twoM` solves for and returned the parity of the wall factor
+`√f/r` in the signed radius — ODD at `D = 5`, no parity at `D = 4`. The profile the solve needs is that
+factor; the chirality operator `γ⁵ = R` the corpus names in its own voice; the solve itself is
+`ψ ∝ exp(∓∫₀^r W)`, so the count is the number of sign changes of `W`.* ⌈ ⚠ ***The one thing an order
+would have to specify is a CONDITION and not a size: which measure `normalisable` is taken in. `B34`'s own
+finding puts the wall where `f < 0`, inside the inner horizon, where there is no static Killing time — so
+the static `L²` measure is not available and the function must be told which one is.*** ⌊ ⛔ ***And what it
+would NOT discharge is said too: `B1`'s equivariant Dirac index under a circle action is an INDEX THEOREM
+and not a mode solve. One row, and it stays inside this limit rather than becoming an owed row by another
+route.***
+
+⌗ *The full table, row by row with what the capability supplies to each, is at
+`computations/beyond_the_wall/r7267_cc66_reach_the_71/STATED_LIMIT.md`. Gated by
+`receipts/P15_CR_cosmology/C72_…`.*
