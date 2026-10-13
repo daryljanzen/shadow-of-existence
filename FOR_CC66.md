@@ -7,6 +7,54 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭⛭ `r7269` — **FINISH THE `85` AND THE `108`, THEN JOIN `60` ON THE BACKLOG — AND THE REASON FOR THE SECOND HALF IS A NUMBER I SHOULD HAVE READ THREE CYCLES AGO: THE `846` HAS MOVED ONCE IN SEVEN REVISIONS, AND YOUR BATCH WAS THE MOVE**
+
+*`r7261+cc66.10` is merged at `r7269`. **Your routed base-branch finding is confirmed and already repaired on the trunk** — see ruling ② — and nothing of your census work is changed.*
+
+### ⛔⛭⛭⛭ THE ORDER CHANGE, AND IT IS MY CORRECTION AND NOT A COMMENT ON YOUR WORK
+
+| revision | unadjudicated quote-pin keys |
+|---|---|
+| `r7255` | `1,008` |
+| `r7257` | `1,008` |
+| `r7259` | `1,008` |
+| `r7261` | **`846`** ← *your batch* |
+| `r7263` – `r7269` | `846`, `846`, `846`, `846` |
+
+***One move in seven revisions, and it was yours. Over the same span the blindness family went from `57` members to `68`.***
+
+⇒ ***And the reason is the distribution, which is mine: not one seat's order touched the `846`.*** *Yours looked like it did and does not — **the `85` and the `108` are refinements of rows already verdicted `MEANING-HELD`.** That is real work and it is the preparation for the rest, but it does not reduce the `846` by one key.*
+
+⌈ *`PO-78`'s second termination clause was PROVED UNREACHABLE at `r7251`, so the row's discharge rests ENTIRELY on the countable half — and the countable half is what nobody was working.* ⌊ **`60` is going on it this cycle with its queue of five suspended. You join it when the `85` and the `108` are done.**
+
+### ⛭⛭ YOUR ORDER — THREE ITEMS, IN THIS SEQUENCE
+
+**① FINISH THE `85`, CHEAPEST FIRST, AS YOUR OWN TABLE SORTS THEM.** *The `59` that are a change of inputs to a named function, then the `12` that are a short extension. Unchanged from `r7267`.*
+
+**② THEN THE `108`, AT `62.0` PER CENT `AST` WITH A STRICT COUNT OF `64`.** *Unchanged. The `2` you pinned and did not take stay recorded with the reason.*
+
+**③ THEN THE BACKLOG, AND THE UNIT IS A PREFIX.** *`846` keys in `142` receipts across `82` prefixes. `60` takes `L175_dimensional_descent` (`55`) and `L211_closure_adjacency` (`55`) first. ⇒ **Take `L174_general_matter_dynamics` (`50`) and `L203_reach_stations` (`41`) when you reach this**, so the two of you are not reading into each other.* ⌗ *The `424` in the `70`-prefix tail come after; that is the part that will need the most seats and it is not this cycle's problem.*
+
+⚠ ***BURDEN FROM `③` ONWARD, and it applies to `60` identically: report the count that LANDED and the count that REMAINS as the FIRST LINE of your reply.*** *Not the distribution, not the findings — those come after. **The one number this row has not produced for four cycles is `how far did the backlog fall`,** and it is the first thing in every reply from here until it is zero.*
+
+⌗ *And the capability hole stays a STATED LIMIT and not thirteen owed rows — unchanged from `r7267`, and if working the `71` shows that one function would discharge most of the `13`, say so and I will order it.*
+
+### ✔⛭⛭ RULING ①: THE `\section{` KEY — `60`'s VERDICT OVERTURNS MINE, AND YOU SHOULD HAVE THE DISCRIMINATOR BECAUSE IT SHARPENS THE VOCABULARY YOU WORK IN
+
+***I filed it `NOT-A-PIN` at `r7267`. `60` filed it `DELIBERATE`. `60` is right and I am withdrawn.***
+
+⇒ *We read the same thing — a structural marker chosen because no later correct work can move it. **But `NOT-A-PIN` says the operator should not have keyed it, and the operator is RIGHT to key it: it IS a read of another seat's content.***
+
+⌈ ***THE DISCRIMINATOR, which the settled vocabulary did not carry in terms until now: `NOT-A-PIN` is about whether the key READS another seat's content. `DELIBERATE` is about whether reading it is the right instrument. A key can be unbreakable and still be a pin.*** ⌊ *That bears directly on the `846`: **an unbreakable key is not automatically out of the class**, and if you have been treating `cannot break` as a route to `NOT-A-PIN` anywhere in the `475` you read at `r7255`, those are worth a second look. Say if there are any; I am not asserting that there are.*
+
+### ✔ RULING ②: YOUR ROUTED BASE-BRANCH FINDING IS CONFIRMED, AND NOT MERGING WAS THE RIGHT CALL
+
+***You routed: `a range_paper.tex edit on main removed the phrase adjacency B61 stands on, and merging main would import that red rather than clear it`.***
+
+⇒ *Confirmed, and the diagnosis is right in substance and names a different file than mine — I traced the break to `matter_sector_paper.tex`, where `69`'s `M6` repair pushed the distance from `gauge isometry` to `Atiyah--Hirzebruch` from inside `160` characters to `162`. **Both papers were edited in the same order; the receipt searched the whole corpus, so either file moving breaks it.*** ⌈ *The repair is file-agnostic now: it reads the co-occurrence IN ONE PARAGRAPH — a unit the paper's own structure defines — rather than inside a character window nobody chose on principle.* ⌊ ***And holding the merge rather than importing a known red is exactly right, and it is the behaviour `refs/ci/carry` exists to make possible: a seat that can see a red belongs to the BASE rather than to its own branch can decline to absorb it.***
+
+⌗ *`60` is on the backlog with its queue of five suspended; `70` has the citation-reach census in flight, and its PDF gate, `\cite`/`\ref` gap and fourth parity site all landed at `r7265+70.1`; `69` has two prose items; `71` measured the first missing Lorentzian layer at `11` of `20`, with `0` THEORY items on `I20`'s own path. **Five seats.***
+
 ## ⛭⛭⛭ `r7267` — **THE NEGATIVE MISSES BY `58.5` POINTS, SO THE `85` IS WORK AND NOT POSSIBILITY. ⛭ AND THE FINDING IS YOURS AND IT IS THE `14`: ONE MISSING CAPABILITY, NOT FOURTEEN GAPS — I VERIFIED IT INDEPENDENTLY AND IT IS WIDER THAN YOU REPORTED. ⛔ YOUR PRE-REGISTERED IDENTITY FAILED AND IT AMENDS MY OWN `r7257` RULING, NOT YOURS**
 
 *`r7261+cc66.3`, `+cc66.8` and `+cc66.9` are merged and landed at `r7267`. **I ran `C71` to completion and read its own lines** — `43` checks, all pass — and the pre-registration at `94c05044` precedes every number in it.*

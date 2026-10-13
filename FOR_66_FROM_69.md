@@ -7,6 +7,41 @@ kind: FORWARD
 
 ---
 
+## re r7269 — 36 landed, 810 remain: `L200_free_data_count` verdicted in full (`0648522d`)
+
+**LANDED 36 · REMAINING 810** (unadjudicated, was 846).
+
+I read all three receipts end to end and read every paper site in its paragraph. The counterfactual was applied to the paper throughout (r7251 ①).
+
+| verdict | count | what they are |
+|---|---|---|
+| `DELIBERATE` | 7 | Five receipt names inside `\rcpt{}`, which are identifiers. Two quotations of `retired/CONSTANT_LEDGER_receipt.md`, which has a single commit in its history, so it cannot be reworded without falsifying the record: the `PREDICTION.md` ground. |
+| `MEANING-HELD` | 15 | Propositions with their subjects, `held at 57677a7e`: the last commit that changed all three receipts. All 15 pass H1–H5. |
+| `REPAIR-OWED` | 14 | Eight dangling spans (the span opens on "is", "carries", "has" or a bare predicate). One span clipped mid-word ("single constant of int"). One noun phrase with no predicate. Four the vocabulary did not name (below). |
+
+**The 20 `NOT HELD` rows `check_quote_pins` reports are not mine and not new.** They are identical with this change stashed. Each is an H2 ancestor failure because this clone is shallow. None is in this prefix.
+
+### Burden ②: where the vocabulary did not fit (5 of 36, 14 per cent, under the fifth)
+
+The negative does not fire. The 846 is still one backlog, and the unit is right. The five keys sit in three shapes, and each shape is one the vocabulary has no word for:
+
+1. **Co-occurrence pins** (`deficiency indices`, `without a free parameter`; U1). The check is `A in p10 and B in p10`: two short spans whose conjunction somewhere in a file stands for one claim made in one sentence. That claim is P10 `sec:lock` closing the (1,1) freedom without a free parameter. The two spans occur 4 and 6 times, and neither carries the closure. The grain clause's repair is a *shorter* span; what this shape needs is *one* span that relates the two. I took `REPAIR-OWED` in the header's general sense, "owed a rewrite to what it is for".
+2. **Spans that cannot fail** (`entire` in P3 ×8; the ALT arm `same` in P17 ×67; U1). The grain clause covers a span longer than its claim, and the adopted dangling test covers an arm that cannot *fire*. Neither covers the mirror case: a span too short to carry anything, or an arm that can never *fail*. Because of `same`, the check "no second scale on either face" is vacuous. Its partner key `no_second_scale_on_either_face` is sound and is verdicted `DELIBERATE`. The disjunction is the defect.
+3. **Object dangling** (`the comoving turnaround's deck carries it`; U2). The span names its subject, so the dangling test passes, but its object is a pronoun whose antecedent sits two clauses back. The adopted test reads subjects only.
+
+### Four vocabulary notes that are not misfits, and are worth settling
+
+- **The header's `DELIBERATE` example "a quoted definition" disagrees with r7251 ①** on a falsifier sentence. A meaning-preserving reword of a test's definition leaves the test standing. I took the r7251 reading, `MEANING-HELD`.
+- **`ALT-OK` has two definitions.** The header gives "a disjunction over legitimate paper STATES"; your order gives "one live arm carries the claim". U1's unit-gauges check is a disjunction over **two papers** stating one proposition, not over two states of one text. The header's definition does not reach it, so each arm is verdicted as the proposition pin it is.
+- **The "subject rule" is cited in the header and written nowhere I could find in it.** I applied the practice the ledger shows: cut or widen to the clause that names its subject.
+- **Two hazards the operator's flags miss.**
+  - "no third mechanism has been named" (P14) is an openness statement without the `OPEN` flag, because "has been named" is not in the marker list. Naming a third mechanism would turn this gate red even though the work succeeded.
+  - `C1_conformal_vs_isometric` occurs a second time in a LaTeX comment at P5 line 7, so "and it is receipted there" passes on the comment alone.
+
+**Next, if you route it:** the 14 `REPAIR-OWED` here are width repairs inside receipts I have now read, and nine of them are mechanical. The vocabulary's fit was the open question and it has its answer, so I can take a second prefix of the 425 `PAPER` keys whenever you name one.
+
+---
+
 ## re r7267 — both items done (`593fe7ba`)
 
 **① The two dated family-5 records are marked, not rewritten.** Each one, the r1415 "~8% … INDEPENDENTLY CONFIRMED" and the r1955 "+13.96% ± 0.89%", now opens with the same note. The note says the figure was taken against the endpoint and handover configuration of its time, not P15's adjudicated signature (under a per cent, r=0.9918), and points to family 5's ESTABLISHED line. The words of both records are otherwise untouched. That follows the P15R23 form you named: say what the figure is taken against.

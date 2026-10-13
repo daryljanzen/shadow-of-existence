@@ -118,7 +118,13 @@ def _unmark(t):
     (`S19`'s `unemph`, the r7258 class), deletes the math-mode delimiter `$` (the `B57` class: `baryon $1$` against
     `baryon 1`), and reads `~` as a space.  It deletes markup characters only, never content, so a literal with one
     value changed still fails (seeded).  Measured two-sided before it went in: computations/beyond_the_wall/
-    r7261_70_h3_markup/."""
+    r7261_70_h3_markup/.
+    ⌗ STATED LIMIT (r7265+70.1, 66's r7265 ②): references -- `\\cite`, `\\ref`, `\\eqref`, `\\S`, `\\rcpt`, `\\ldg` -- are NOT
+    normalised.  Measured (computations/beyond_the_wall/r7265_70_n1_cite_pdf/cite.txt): deleting them would change
+    no held row's verdict (0), gains 2 match locations, both the same clause, and moves the burden by 13 rows,
+    within the 15 rows r7261 left uncovered (13 reference-only, 2 other commands).  So nothing `H3` needs is reached, and a
+    citation key is not prose: a window that straddles one is a DECLARED GAP of 15 held rows, not a normaliser
+    case."""
     for _ in range(4):
         t2 = _EMPH.sub(r'\1', t)
         if t2 == t:

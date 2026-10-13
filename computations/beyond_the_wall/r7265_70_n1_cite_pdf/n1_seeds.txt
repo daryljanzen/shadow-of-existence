@@ -1,0 +1,5 @@
+N-a  NODE=66  commits=['r4001', 'r4003']  OLD 2 ['r4003', 'r4001']  NEW 0 []  as predicted: True
+N-b  NODE=60  commits=['r4000', 'r4002']  OLD 0 []  NEW 0 []  as predicted: True
+N-c  NODE=66  commits=['r4000', 'r4002', 'r4003']  OLD 1 ['r4003']  NEW 2 ['r4002', 'r4000']  as predicted: False
+N-d  NODE=ci  commits=['r4001', 'r4003']  OLD 2 ['r4003', 'r4001']  NEW None  as predicted: True
+all four seeds as pre-registered: False

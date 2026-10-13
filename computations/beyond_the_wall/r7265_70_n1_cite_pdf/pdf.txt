@@ -1,0 +1,46 @@
+
+  CROSS-PAPER LABEL COLLISIONS: 22 total, 0 of theorem class
+    [note] app:ledgers                19 papers: appendix_ledgers_P1, appendix_ledgers_P10, appendix_ledgers_P11, appendix_ledgers_P12, appendix_ledgers_P13, appendix_ledgers_P14, appendix_ledgers_P15, appendix_ledgers_P16, appendix_ledgers_P17, appendix_ledgers_P2, appendix_ledgers_P3, appendix_ledgers_P4, appendix_ledgers_P5, appendix_ledgers_P6, appendix_ledgers_P7, appendix_ledgers_P8, appendix_ledgers_P9, appendix_ledgers_SYN, appendix_ledgers_corpus
+    [note] eq:friedmann               2 papers: canonical_time, slicing_operator
+    [note] eq:sds                     2 papers: SdS-slicing-curve_v2, slicing_operator
+    [note] sec:boundary               2 papers: CR_synthesis, shadow_of_existence
+    [note] sec:chirality              2 papers: dynamics_paper, matter_sector_paper
+    [note] sec:conclusion             3 papers: CR_cosmology, canonical_time, groupoid_paper
+    [note] sec:cosmology              2 papers: groupoid_paper, slicing_operator
+    [note] sec:discrete               2 papers: algebroid_paper, dynamics_paper
+    [note] sec:discussion             3 papers: CR_cosmology, groupoid_paper, janzen_circle_v3
+    [note] sec:family                 2 papers: SdS-slicing-curve_v2, matter_sector_paper
+    [note] sec:frontiers              2 papers: CR_framework, geometric_core_paper
+    [note] sec:intro                  11 papers: CR_cosmology, CR_framework, algebroid_paper, canonical_time, cosmogenesis_paper, dynamics_paper, groupoid_paper, matter_sector_paper, modern_parallax, range_paper, shadow_of_existence
+    [note] sec:lap                    2 papers: SdS-slicing-curve_v2, cosmogenesis_paper
+    [note] sec:ontology               4 papers: SdS-slicing-curve_v2, boundary_paper, janzen_circle_v3, slicing_operator
+    [note] sec:open                   4 papers: boundary_paper, groupoid_paper, range_paper, slicing_operator
+    [note] sec:overcritical           2 papers: SdS-slicing-curve_v2, groupoid_paper
+    [note] sec:scope                  4 papers: CR_cosmology, algebroid_paper, dynamics_paper, matter_sector_paper
+    [note] sec:seam                   2 papers: SdS-slicing-curve_v2, groupoid_paper
+    [note] sec:strata                 2 papers: algebroid_paper, dynamics_paper
+    [note] sec:synthesis              3 papers: CR_framework, boundary_paper, cosmogenesis_paper
+    [note] sec:two-readings           2 papers: SdS-slicing-curve_v2, canonical_time
+    [note] sec:wall                   3 papers: boundary_paper, dynamics_paper, range_paper
+
+  CAPTION-ONLY CORRECTIONS: 0 caption(s) assert a correction whose figures the body does not carry
+BH_causality_v2.tex                      errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 825873 committed 825886
+CR_cosmology.tex                         errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 2712199 committed 2617203
+CR_framework.tex                         errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 1148692 committed 1148702
+CR_synthesis.tex                         errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 590674 committed 590686
+SdS-slicing-curve_v2.tex                 errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 1566358 committed 1560206
+algebroid_paper.tex                      errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 319415 committed 319427
+boundary_paper.tex                       errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 1065110 committed 1065121
+canonical_time.tex                       errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 1012465 committed 1012479
+cosmogenesis_paper.tex                   errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 632016 committed 632025
+dynamics_paper.tex                       errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 351045 committed 351058
+geometric_core_paper.tex                 errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 965309 committed 965319
+groupoid_paper.tex                       errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 480514 committed 480527
+janzen_circle_v3.tex                     errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 391650 committed 391663
+matter_sector_paper.tex                  errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 957003 committed 957014
+modern_parallax.tex                      errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 303892 committed 303905
+range_paper.tex                          errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 339626 committed 339638
+shadow_of_existence.tex                  errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 352299 committed 352312
+slicing_operator.tex                     errors  0  D-a two rebuilds identical: True   D-b rebuild == committed: False   sizes rebuild 385868 committed 385876
+D-a: 18 of 18 identical across two rebuilds;  D-b: 0 of 18 equal to the committed PDF
+rc=0

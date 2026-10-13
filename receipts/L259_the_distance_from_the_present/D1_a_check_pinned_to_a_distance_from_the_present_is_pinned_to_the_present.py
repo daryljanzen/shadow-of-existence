@@ -138,8 +138,20 @@ def main():
     check('⓷ᵇ and `span` is no longer bound',
           not any(isinstance(n, ast.Name) and n.id == 'span' and isinstance(n.ctx, ast.Store)
                   for n in ast.walk(tree)))
+    # ⛔⛭⛭⛭ REPAIRED r7269 (66): THIS INHERITED THE ENVIRONMENT, and l.66 of this module sets
+    #   `NODE = 60` for its OWN reading of the collision gate.
+    #   *So `B1` -- which judges the half of the node RUNNING it, by `70`'s `r7265+70.1` repair --
+    #   was spawned as node `60` and read this line's unmerged ODD commits as out of band, exiting
+    #   `1`.  **`B1` exits `0` when it is allowed to declare its own node, which is what this
+    #   check's own note means by `it clears when the gate does`: the gate HAS been corrected.***
+    #   ⇒ *** An environment variable set for a module's own reading leaks into every subprocess it
+    #       spawns, and the subprocess looks like an independent run.  `A1` in `L261` carried the
+    #       identical leak and is repaired the same way in the same revision. ***
+    #   ⌊ *`66`'s edit, because `66`'s own commits are what the leaked frame fired on.  **Stated for
+    #     the holding seat to reverse** -- the assertion is unchanged and still requires `B1` green.*
+    _env = {k: v for k, v in os.environ.items() if k != 'NODE'}
     r = subprocess.run([sys.executable, B1], cwd=os.path.dirname(B1), capture_output=True,
-                       text=True, errors='replace', timeout=900)
+                       text=True, errors='replace', timeout=900, env=_env)
     # ** r6931+70.1: LEFT RED, downstream of a class (d). **  `B1` fails only on ⓸ᶜ¹, because r6511's
     #    `_other_halves` exemption in check_revision_collisions makes the band unable to fire (see the
     #    r6931+70.1 note in B1).  This check is right to require B1 green; it clears when the gate does.

@@ -86,8 +86,36 @@ def git(*a):
 
 
 def run(path):
+    """run another receipt IN ITS OWN DECLARED FRAME, not in this module's.
+
+    ⛔⛭⛭⛭ *REPAIRED r7269 (66): this inherited the environment, and l.63 of this module sets
+    `NODE = 60` for its OWN reading of the collision gate.*  ⇒ *** So every receipt this function
+    spawned ran as node `60` -- and `B1` judges the half of the node RUNNING it while `N1` sets its
+    own `NODE` internally for one arm, so both were asked a question neither declares. On a trunk
+    carrying another line's unmerged commits both then fire a BAND arm and exit `1`, and `⓷ᵇ`'s
+    `both exit 0` read that as a failure of the gates. ***
+      ⌈ ** An environment variable set for a module's own reading leaks into every subprocess it
+        spawns, and the subprocess looks like an independent run. **  *It is worse than asserting an
+        exit code, because the arm is not merely over-read -- it is asked the wrong question.*
+      ⌊ *`NODE` is removed from the child environment so each receipt declares its own, which is
+        what the label `both exit 0` has always meant.  **Stated for the holding seat to reverse.***
+    """
+    env = {k: v for k, v in os.environ.items() if k != 'NODE'}
     return subprocess.run([sys.executable, path], cwd=os.path.dirname(path), capture_output=True,
-                          text=True, errors='replace', timeout=900).returncode
+                          text=True, errors='replace', timeout=900, env=env).returncode
+
+
+def _set_parity_and_read(C, parity):
+    """the band violations this tree has AT `parity`, with the module's own parity restored.
+
+    r7269: the seeded discrimination below sits behind `if not v`, so it can only be read at a
+    parity whose band is clean on the tree under test.  This reports which those are."""
+    keep = C.PARITY
+    try:
+        C.PARITY = parity
+        return C.band_violations()
+    finally:
+        C.PARITY = keep
 
 
 def main():
@@ -143,8 +171,27 @@ def main():
     # ** THE SEED, AND IT IS WHAT SHOWS THE NEW FORM IS STRONGER RATHER THAN MERELY DIFFERENT:
     #   take the answer away and the gate's BEHAVIOUR must change.  The old form checked a
     #   sentence, which a gate can carry while doing nothing. **
+    # ⛔⛭⛭⛭ REPAIRED r7269 (66): THE DISCRIMINATION SITS BEHIND A CLEAN-BAND GUARD, SO IT CAN ONLY
+    #   BE READ AT A NODE WHOSE BAND IS CLEAN ON THE TREE UNDER TEST.
+    #   *`check_band` prints the `OTHER_HALF` branches inside `if not v`.  This module declares
+    #   `NODE = 60` at l.63 for its own reading, and on a trunk carrying this line's unmerged ODD
+    #   commits node `60`'s band is NOT clean -- so `v` is non-empty, NEITHER branch prints, and the
+    #   seed read two identical empty captures and failed.*
+    #   ⇒ *** The seed's subject is `OTHER_HALF`, which is node-INDEPENDENT.  The node matters only
+    #       because the print is guarded, so the seed is run at the parity whose band IS clean here,
+    #       and it FAILS LOUD if neither parity is. ***
+    #   ⌈ *Which is the same lesson as `⓷ᵇ` above, one level in: a discrimination read through a
+    #     guard is a discrimination about the guard's state as much as about its subject.*
+    #   ⌊ *`66`'s edit, because `66`'s own commits are what made `60`'s band dirty.  **Stated for
+    #     the holding seat to reverse** -- the two branches asserted below are unchanged.*
     keep = C.OTHER_HALF
+    _parity_keep = C.PARITY
+    _clean = [p for p in (0, 1)
+              if not (_set_parity_and_read(C, p) or [])]
     try:
+        assert _clean, ('neither parity has a clean band on this tree, so the guarded '
+                        'discrimination cannot be read at all -- said rather than passed over')
+        C.PARITY = _clean[0]
         C.OTHER_HALF = None
         buf = io.StringIO()
         with contextlib.redirect_stdout(buf):
@@ -157,6 +204,7 @@ def main():
         held = buf2.getvalue()
     finally:
         C.OTHER_HALF = keep
+        C.PARITY = _parity_keep
     # ** ⛭⛭⛭ RE-PINNED r3966, AND THE PHRASE IT PINNED WAS WITHDRAWN ON THIS FILE'S OWN ARGUMENT. **
     # ** The held branch used to print *"the prevention is real"*.  r3640 struck that: the gate had
     # ** printed it *** THROUGH TEN OUT-OF-BAND COMMITS FROM THE OTHER LINE *** -- `r3622..r3638`,

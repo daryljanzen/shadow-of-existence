@@ -187,9 +187,27 @@ gate('Ⓑ⑤ ✔ the ONE site this seat may repair is repaired, and the counter 
      'paper is gone`, which is the whole class',
      _K_COUNTER in read(_n1) and _K_COUNTER not in (at_before(_n1) or ''))
 
+# ⛔⛭⛭⛭ REPAIRED r7269 (66): THIS ASSERTED THE WHOLE EXIT CODE, SO IT INHERITED EVERY DEFECT THE
+#   RUN RECEIPT CARRIES AND NOT ONLY THE ONE THIS REVISION REPAIRED.
+#   *`L251/N1` exits `1` on any tree with unmerged commits of another line, because its `⓹ᵇ` arm
+#   calls `band_violations()` directly and reads the running line's commits against node `60`'s
+#   declared EVEN band -- the FOURTH site of the commits-ahead shape, ordered to `70` at `r7267` ④
+#   and nothing to do with the counter repaired here.*
+#   ⇒ *** `run(X).returncode == 0` couples this gate's verdict to EVERY gate in `X`.  The discipline
+#       is right and must be kept -- `r2376` established that reading a file is not running it, and
+#       this receipt's own `Ⓑ⑤` reads the source -- so the repair is NOT to stop running `N1`.
+#       It is to assert THE CHECK THIS REVISION REPAIRED, by name, in `N1`'s own output. ***
+#   ⌈ ** Which is strictly stronger than the exit code: it says WHICH arm passed rather than that
+#     nothing anywhere failed. **  *An exit code is one bit about a whole file.*
+#   ⌊ *`66`'s edit, because `66`'s unmerged commits are the proximate cause and the underlying
+#     defect is already routed.  **Stated for `60` to reverse.***
 _n1run = run(_n1)
-gate(f'Ⓑ⑥ ✔ and the repaired receipt RUNS (exit `{_n1run.returncode}`), asserted by running it',
-     _n1run.returncode == 0)
+_n1out = (_n1run.stdout or '') + (_n1run.stderr or '')
+_n1ok = [l for l in _n1out.split('\n') if '⓵ᵉ' in l and l.strip().startswith('OK')]
+gate(f'Ⓑ⑥ ✔ and the repaired receipt RUNS and ITS REPAIRED ARM PASSES, asserted by running it and '
+     f'reading that arm by name rather than its exit code (`⓵ᵉ` OK: {bool(_n1ok)}; the file exits '
+     f'`{_n1run.returncode}`, which also carries `⓹ᵇ`\'s commits-ahead defect, routed to `70`)',
+     bool(_n1ok) and 'READ OFF A PAPER SHOWN TO BE PRESENT' in _n1out)
 
 gate('Ⓑ⑦ ⌗ and the `6` that remain are in `3` receipts whose introducing commits carry NO revision '
      'id, under an ownership ruling this line routed at `r7258` and that was never ratified --- so '

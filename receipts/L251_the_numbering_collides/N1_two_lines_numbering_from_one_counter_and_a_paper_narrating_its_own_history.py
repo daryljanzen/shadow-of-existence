@@ -73,6 +73,7 @@ sys.path.insert(0, os.path.join(ROOT, 'corpus'))
 # still failed, which is the exact defect the note above says it is fixing. **  A receipt asserting
 # `C.PARITY == 0` is making a claim about node 60's band; it must NAME that line unconditionally.
 #   ⌗ *I wrote the reasoning and then implemented the opposite of it.  The verb was the whole fix.*
+_RUNNER = os.environ.get('NODE')   # r7265+70.1: who is actually running this, captured before the override
 os.environ['NODE'] = '60'
 import check_paper_tense as T                                     # noqa: E402
 import check_revision_collisions as C                             # noqa: E402
@@ -324,8 +325,29 @@ check(f'⓸ᵇ check_revision_collisions FIRES on a collision outside the regist
       f'with all {len(_SEED)} collision(s) it does not carry in BASELINE or TESTIMONY removed from '
       f'BASELINE, it reports every one of them BY NAME and exits 1',
       _fires_on_new())
-check('⓸ᶜ ⌗ and it is green as the tree stands, with those three now baselined BY NAME',
-      C.main() == 0)
+# ⛔⛭⛭⛭ REPAIRED r7269 (66): AND THIS ASSERTED THE WHOLE GATE'S EXIT CODE, WHICH COUPLES A CLAIM
+#   ABOUT COLLISIONS TO AN ARM ABOUT A BAND -- THE SECOND INSTANCE OF THAT SHAPE IN ONE CYCLE.
+#   *This module sets `NODE = 60` deliberately, so `C.main()` checks node `60`'s band against
+#   whatever tree it runs on.  On the trunk with another line's commits unmerged, the BAND arm fires
+#   and this check reports it as a COLLISION failure -- which it is not.*
+#   ⇒ *** `70`'s `r7265+70.1` repair fixed what `band_violations()` READS, and it cannot reach this:
+#       the defect here is asserting `main()`'s EXIT CODE, which is one bit about several claims. ***
+#   ⌈ ** The repair is the one made the same cycle in `S23`'s `Ⓑ⑥`: assert THE ARM THIS CHECK IS
+#     ABOUT.  The collision claim is that no collision outside the registers exists; the band claim
+#     is a different claim in the same file, and `⓹` and `⓹ᵇ` below are where it is made. **
+#   ⌊ *`66`'s edit, because `66`'s own unmerged commit is what the band arm fires on.  **Stated for
+#     the holding seat to reverse** -- no claim, count or baseline is touched, only which arm of the
+#     gate this one check reads.*
+_known = set(C.BASELINE) | set(C.TESTIMONY) | set(C.BAND_GRANDFATHERED)
+_new_coll = sorted(set(C.collisions()) - _known)
+_band_now = C.band_violations()
+print(f'    the collision arm: {len(_new_coll)} collision(s) outside the registers; '
+      f'the band arm (node 60, as this module declares): '
+      f'{len(_band_now) if _band_now is not None else "no upstream"} violation(s)')
+check(f'⓸ᶜ ⌗ and the COLLISION ARM is green as the tree stands, with those three baselined BY NAME '
+      f'--- asserted as that arm and not as the gate\'s exit code, which also carries the band claim '
+      f'that `⓹` and `⓹ᵇ` make separately',
+      not _new_coll)
 # ** ⛔⛭⛭ AND THIS CHECK COMMITTED THE ERROR ITS OWN LABEL WARNS AGAINST (repaired r3964). **
 # ** The claim is that both gates *** NAME *** their known sites rather than COUNTING them --
 # ** "a count can be satisfied by fixing one and adding another" -- and the condition tested
@@ -356,10 +378,25 @@ check('⓹ the band is PARITY and this line takes the even half -- the cheapest 
       C.PARITY == 0 and 'THE BAND IS PARITY' in
       open(os.path.join(ROOT, 'corpus', 'check_revision_collisions.py'),
            encoding='utf-8', errors='replace').read())
-_v = C.band_violations()
-check(f'⓹ᵇ and it is PREVENTION: it reads this line\'s own unmerged commits, which are the only '
-      f'ones whose numbers can still be changed -- {len(_v) if _v is not None else "no upstream"} '
-      'out of band', _v == [])
+# ** ⛔⛭⛭ r7265+70.1 (66's r7265 ①, the third site after `L256/B1` and `L261/A1`): ⓹ᵇ JUDGED WHOEVER RAN IT
+#   AGAINST 60's HALF. **  *`NODE=60` above is DELIBERATE -- ⓹ asserts 60's band -- but ⓹ᵇ then read the LIVE
+#   `origin/main..HEAD`, which belongs to whoever is running this, at that fixed even half.  66's two unmerged odd
+#   `r7265` commits came back as `2 out of band`; a clean worktree of `origin/main` read 0.*  ⇒ *** The live range
+#   is judged at the half of the node RUNNING it, `_RUNNER`, read before the override; a runner with no half (`ci`,
+#   `70`, `cc66`, `71`) is reported and not asserted, as `band_violations` itself does. ***  Seeded both ways on
+#   built repositories: computations/beyond_the_wall/r7265_70_n1_cite_pdf/.
+_live = C._PARITY_BY_NODE.get(_RUNNER)
+_saved = C.PARITY
+try:
+    C.PARITY = _live
+    _v = None if _live is None else C.band_violations()
+finally:
+    C.PARITY = _saved
+check(f'⓹ᵇ and it is PREVENTION: it reads the RUNNING line\'s own unmerged commits (NODE={_RUNNER}), which are the '
+      f'only ones whose numbers can still be changed -- '
+      + ('that node holds no half, so nothing is asserted about the live tree' if _live is None else
+         f'{len(_v) if _v is not None else "no upstream"} out of band'),
+      (_live is None or _v == []) and C.PARITY == _saved)
 # ⛔⛭⛭ AMENDED r3142 (`L-261`): ** THIS CHECK ASSERTED THAT A QUESTION WAS STILL OPEN, and it broke
 # ** WHEN THE QUESTION WAS ANSWERED. **  *It required the gate to say the odd half "is a REQUEST, not
 #   an assumption"; node 57 accepted the band and now runs `PARITY = 1`, so the gate records the
