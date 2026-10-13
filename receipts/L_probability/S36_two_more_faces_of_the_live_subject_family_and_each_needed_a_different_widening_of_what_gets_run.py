@@ -121,36 +121,58 @@ gate(f'Ⓐ① ⛭⛭⛭ ** THE BARE BUCKET IS EMPTY: `{len(_bare)}` bare `UNADJU
      f'bare key is MINTED by an instrument and the bucket may rise again',
      len(_bare) == 0 and len(_pinned) > 0)
 
-_rc_before, _out_before = run_from_git(S2_BEFORE, S2, 's2')
-_crashed = _rc_before != 0 and 'ZeroDivisionError' in _out_before
-_failed_a_gate = '[FAIL]' in _out_before or 'FAILED:' in _out_before
-_rc_after, _out_after = run_live(S2)
-print(f'      the pre-repair source on THIS tree: rc={_rc_before}, ZeroDivisionError={_crashed}, '
-      f'any gate reported FAIL={_failed_a_gate};  the repaired source: rc={_rc_after}')
-gate(f'Ⓐ② ⛔⛭⛭⛭ and it is a CRASH and not a red, shown by RUNNING the pre-repair source out of git on '
-     f'this tree rather than by reading the line that changed: it exits `{_rc_before}` with a '
-     f'`ZeroDivisionError` (`{_crashed}`) and reports NO failing gate at all (`{not _failed_a_gate}`), '
-     f'while the repaired source exits `{_rc_after}`.  ** A guard whose failure mode is an exception '
-     f'reports nothing --- `r7297` read that face in `S28`\'s `TypeError`, and this is the same face '
-     f'with the denominator emptied by the ordered work itself **',
-     _crashed and not _failed_a_gate and _rc_after == 0)
+#: ⛭⛭ NOTHING HERE MATCHES A SENTENCE.  The first form of these two gates asserted the exception's
+#:   NAME in the probe's output and another seat's repair NOTE in the source -- two quote pins, in a
+#:   receipt whose own subject is gates that assert the wrong object.  *A CRASH is fully characterised
+#:   without naming the exception: a non-zero exit, no gate reporting a failure, and a run that STOPS
+#:   EARLY.*  ** So it is counted instead: gates reported before the exit, against the repaired run's. **
+def _gate_lines(out):
+    return [l for l in out.split('\n') if '[PASS]' in l or '[FAIL]' in l]
 
-_cc_note = 'a ratio needs a denominator' in read(S2)
+
+def _last_exception(out):
+    tail = [l for l in out.rstrip().split('\n') if l.strip()]
+    return bool(tail) and bool(re.match(r'^[A-Za-z_][A-Za-z0-9_.]*(Error|Exception)\b', tail[-1]))
+
+
+_rc_before, _out_before = run_from_git(S2_BEFORE, S2, 's2')
+_rc_after, _out_after = run_live(S2)
+_g_before, _g_after = _gate_lines(_out_before), _gate_lines(_out_after)
+_raised = _last_exception(_out_before)
+_failed_a_gate = any('[FAIL]' in l for l in _g_before) or 'FAILED:' in _out_before
+print(f'      the pre-repair source on THIS tree: rc={_rc_before}, ended on an exception={_raised}, '
+      f'gates reported {len(_g_before)} with any FAIL={_failed_a_gate};  '
+      f'the repaired source: rc={_rc_after}, gates reported {len(_g_after)}')
+gate(f'Ⓐ② ⛔⛭⛭⛭ and it is a CRASH and not a red, shown by RUNNING the pre-repair source out of git on '
+     f'this tree rather than by reading the line that changed --- and characterised WITHOUT naming '
+     f'the exception: it exits `{_rc_before}`, ends on an exception class (`{_raised}`), reports NO '
+     f'failing gate at all (`{not _failed_a_gate}`), and STOPS EARLY at `{len(_g_before)}` gates '
+     f'against the repaired run\'s `{len(_g_after)}`.  ** A red names its gate and a crash names '
+     f'nothing, so the only thing that catches one is something that RUNS the file and reads its exit '
+     f'code --- `r7297` read that face in `S28`\'s `TypeError` **',
+     _rc_before != 0 and _raised and not _failed_a_gate and len(_g_before) < len(_g_after)
+     and _rc_after == 0)
+
 _still_divides = re.search(r'/ len\(CARRY\)(?!\s*:\.\d)', read(S2).replace('if CARRY', ''))
-print(f'      the predicate\'s own repair note is in the file: {_cc_note}; '
-      f'an unguarded division remains: {bool(_still_divides)}')
-gate(f'Ⓐ③ ⛔⛭⛭ and the two halves of that gate were repaired APART, which is the finding: the note '
-     f'explaining why a ratio cannot survive the order being completed is in the file '
-     f'(`{_cc_note}`) --- it came with the repair to the CONDITION, which is why the condition '
-     f'passed --- while the report beside it went on dividing.  ** `S32` was the same fault reversed, '
-     f'the prose honest and the predicate not.  ⇒ The two halves of a gate have to be repaired '
-     f'together, because the unrepaired half is the one that decides **',
-     _cc_note and not _still_divides)
+print(f'      of the {len(_g_before)} gates the pre-repair run DID reach, '
+      f'{sum(1 for l in _g_before if "[PASS]" in l)} passed; unguarded division remaining: '
+      f'{bool(_still_divides)}')
+gate(f'Ⓐ③ ⛔⛭⛭ and the two halves of that gate were repaired APART, which is the finding --- counted '
+     f'rather than quoted: every one of the `{len(_g_before)}` gates the pre-repair run reached '
+     f'PASSED, so the CONDITION was already sound, and the run died on the REPORT beside it; the '
+     f'repaired source carries no unguarded division (`{not bool(_still_divides)}`).  ** The '
+     f'condition had been made monotone for exactly this reason, which is why it passed.  `S32` was '
+     f'the same fault reversed, the prose honest and the predicate not.  ⇒ The two halves of a gate '
+     f'have to be repaired together, because the unrepaired half is the one that decides **',
+     len(_g_before) > 0 and all('[PASS]' in l for l in _g_before) and not _still_divides)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓑ  THE PREDICTION LEFT STANDING AS A BOUND, ON A COUNT ONLY ANOTHER SEAT MOVES ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 _rc12_before, _out12_before = run_from_git(S12_BEFORE, S12, 's12')
+#: ⌗ `69`'s rule, step 1: *a pattern that reads a NUMBER out of a tool's output* is `NOT-A-PIN`.
+#:   The two readers below take figures out of the probe's own stdout and are adjudicated as such in
+#:   the baseline rather than left to raise the unadjudicated ceiling.
 _m = re.search(r'path-scope sites NOT owned:\s*(\d+)', _out12_before)
 _loss = int(_m.group(1)) if _m else -1
 _split = dict(collections.Counter(re.findall(r"NOT this seat`s:\s+\S+\s+L\d+\s+\w+\s+(r\d{4}|Merge|\S+)",
@@ -164,7 +186,7 @@ gate(f'Ⓑ① ⛔⛭⛭⛭ ** THE BOUND WAS A PREDICTION AND IT IS BROKEN BY ANO
      f'claim-sites inside this seat\'s own directories whose LAST WRITER is not this seat, so every '
      f'legitimate edit another seat makes to one of this seat\'s receipts adds one* --- ** and no '
      f'work of this seat\'s can lower it, which is what makes a standing bound on it the wrong shape **',
-     _crashed is not None and _rc12_before != 0 and _loss >= 10 and _rc12_after == 0)
+     _rc12_before != 0 and _loss >= 10 and _rc12_after == 0)
 
 _m2 = re.search(r"the loss side by LAST WRITER's parity:\s*(\{[^}]*\})", _out12_after)
 _odd = int(re.search(r"'ODD':\s*(\d+)", _m2.group(1)).group(1)) if _m2 else -1
