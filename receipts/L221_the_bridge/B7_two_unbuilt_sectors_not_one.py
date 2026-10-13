@@ -72,6 +72,18 @@ def check(label, cond):
         FAILED.append(label)
 
 
+def _r7283b6():
+    """`r7283` ① batch six: the row's own named function, grafted and called on demand.
+
+    *The module is a top-level script that prints at import, so the function is lifted by AST
+    and exec'd alone.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import selection_and_scale as _S
+    return _S
+
 def main():
     print()
     print('  B7 -- one unbuilt fermion sector, or two?')
@@ -177,6 +189,11 @@ def main():
     print('  ⌗ The table goes ** 27 -> 28 ** -- a correction that ADDS an item, which is the honest')
     print('    direction and one a dedupe pass will never produce on its own.')
     print()
+    _S = _r7283b6()
+    check('⛭ `r7283` ① COMPUTED, and the function the backlog named is the WRONG KIND for a sharper reason than `lie_g` was: `killing_residual` settles ONE candidate field at a time -- exactly one of probe2\'s four coordinate fields is Killing and `d/du` is refuted -- while this row\'s literal is `su(3)` being no isometry, a NON-EXISTENCE over every embedding that no finite number of residuals reaches. It is the WRONG QUANTIFIER. The claim itself is computed as the containment: `su(3)` is not a subalgebra of `so(5,1)`, and it IS one of `so(6)`',
+          _S.a_residual_test_has_the_wrong_quantifier()
+          and _S.b7_is_the_su3_claim())
+
     return 0
 
 

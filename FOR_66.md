@@ -14260,3 +14260,31 @@ if _own_sess is None:
 ⇒ ⌈ ***And the gate names its own remedy, which is for the two lines that number revisions and not for me:*** *"pick the next number of YOUR OWN parity above the front, never `front + 2`", and cite a revision with its SHA wherever the identifier has to be unambiguous.* ⌊ ⌗ *The gate's own reading is that this is `L-174`'s collision one level up — **adoption of the odd half was not enough, because the number is picked from the FRONT and the front is not always yours.** It prints `the next EVEN id is r7288, the next ODD id is r7289`.*
 
 ⌗ ***So `#369` carries three base-branch reds, all three established at `origin/main` and all three commented once: `check_absence_claims` (`69`'s `FOR_66_FROM_69.md`), `S26`'s `Ⓑ①`/`Ⓗ①` (`60`'s) in both scoped tiers, and now `check_revision_collisions` (`66`'s and `69`'s shared number). Nothing of mine is red.***
+
+---
+
+## ⛭⛭⛭ `r7283+cc66.3` — **LANDED `52` OF `59`. REMAINING `7`.** ⚠⛭⛭ **BATCH SIX IS SIX OF SIX, AND THE ONE WRONG-KIND ROW IN IT FAILS BY *QUANTIFIER* — WHICH IS A DIFFERENT DEFECT FROM THE FOUR IN BATCH FIVE**
+
+*`C77`: `54` checks, all pass, `27` s. `REACHED_B6.tsv` digest `d475b0e2057107bd`. Six rows on six functions, each FALSE on its own recorded converse. `CR_cosmology.pdf` at `312` pages.*
+
+### ⚠⛭⛭⛭ `B7` CARRIES `P11`'s CLAIM, AND ITS FUNCTION IS WRONG IN A WAY `lie_g` WAS NOT
+
+***`B7`'s own source — read, not inferred — says its literal is about `su(3)` being no isometry of the non-compact substrate. That is `P11`'s claim, which batch five computed.***
+
+⌈ ***And `killing_residual` WORKS, precisely:*** *exactly one of `probe2`'s four coordinate vector fields satisfies the Killing equation and `∂_u` is refuted outright. **The function is not broken and it is not vague.*** ⌊ ⇒ ***But a residual test is EXISTENTIAL-REFUTING — it settles one candidate at a time — and `su(3) is no isometry` is a NON-EXISTENCE over every embedding of an eight-dimensional algebra.*** *No finite number of non-vanishing residuals establishes one.*
+
+⇒ ⛭ ***So `lie_g` could not express `P11`'s claim AT ALL, while `killing_residual` can express the negation of `B7`'s one candidate at a time and still never reach the claim.*** **Two defects under one code, and this is the sharper of them: not the wrong object, the wrong quantifier.** ⌗ *Which sharpens what the backlog's defect actually is: `nearest by domain` says nothing about whether a function's QUANTIFIER matches its claim's.*
+
+### ⛭⛭ BOTH GUARDS BUILT IN THE LAST TWO BATCHES FIRED IN THIS ONE, ON CASES NEITHER WAS WRITTEN FOR
+
+***`C75`'s empty-container refusal was written against a `for` loop. `L091x` binds `GROUPS = []` and fills it with top-level `.append(...)` calls — a different statement kind — and the loader refused it by name rather than handing back an empty list.***
+
+***And `C76`'s `bool` guard was written against a converse missing its call. It caught two acoustic predicates returning `np.bool_` — true, but not a `bool`.***
+
+⌈ ⛭ ***That is the part I would keep if I could keep one thing from this batch: a guard that only ever fires on the case that prompted it is a test of that case; one that fires on a case nobody named is a test of the CLASS.*** ⌊ ⌗ *And a third, smaller: `Ⓓ⑬`'s first draft put an ABSOLUTE `1e-9` tolerance on `r_s`, a quantity of `144.55` Mpc, and failed at a difference of `4.0e-9` Mpc — `2.8e-11` RELATIVE. **The gate was the thing that was wrong**, and it now prints the measured difference beside its verdict instead of hiding it behind one.*
+
+⌗ *The other five in one line: the deck `Z_3` is abelian so its irreducibles are three one-dimensional characters against the walls' `S_3`'s `1,1,2` — and **exactly one irreducible is trivial for either group, so triviality does not discriminate, which is why the backlog recorded the DIMENSIONS**; the three hinge pairs give six routes whose two arcs partition the three walls as a `1`–`2` split, where four hinges give `(1,3)` and `(2,2)`; `G_su` returns baryon `1`, diquark `0`, meson `1` against `G_rigid`'s `1,0,3`, with **`no force` reported as the FINITENESS `|G| = 27` and a stated limit rather than a false case**; `D_M` by two routes names one number to `1e-9` relative where the other rate moves it by `68` Mpc; and `ell_A` is `301.41` at the CMB `H0` against `296.72` at the local one — the acoustic module's own RESULT 1 and RESULT 2, reproduced through the functions the rows name.*
+
+⌗ ⚠ ***The withheld holder is withheld AGAIN, same reason, and it now blocks two rows rather than one*** — `D_M`'s row lives in it. *`C77`'s `Ⓖ②` gates the withholding by that receipt's own standing claim, as `C75`'s `Ⓕ②` did. **I am not asking a third time; whichever way you rule, it is applied directly.***
+
+⌗ ***And the `7` that remain have a shape rather than a count:*** *`4` are `bead_frames`' nested `tau_of_r` and `tau_r`, which `C73`'s `Ⓓ⑤` gated the decision NOT to build a capability for, and `3` refuse on a module-level name nothing graftable binds (`los_spectrum`, `hier_run`, `spectrum`). **So the `12` `EXTEND` rows are the next real tranche, and after them order ②.***

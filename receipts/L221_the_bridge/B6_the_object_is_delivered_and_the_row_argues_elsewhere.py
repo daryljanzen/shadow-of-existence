@@ -122,6 +122,18 @@ def held(lit, hay):
     return (n > 0 and ok), n
 
 
+def _r7283b6():
+    """`r7283` ① batch six: the row's own named function, grafted and called on demand.
+
+    *The module is a top-level script that prints at import, so the function is lifted by AST
+    and exec'd alone.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import selection_and_scale as _S
+    return _S
+
 def main():
     print()
     print("  B6 -- is PO-5's object already delivered?")
@@ -258,6 +270,11 @@ def main():
     print("     F5 forbids it -- ** but the object and the route have come apart, and the object is what")
     print("     the register tracks. **")
     print()
+    _S = _r7283b6()
+    check('⛭ `r7283` ① COMPUTED, not cited: colour\'s invariant content. `L130`\'s own `chi_meson` through its own `inv_dim` returns baryon 1, diquark 0, meson 1 on the determinant-one group `G_su` of order 27 -- the exact selection rules; on its own `G_rigid` the meson count is 3, so `exact` is a fact about `G_su` and that is the reachable converse. And `no force` is the FINITENESS of the group, reported as the stated limit it is rather than as a converse',
+          _S.exact_selection_rules() and not _S.rigid_converse()
+          and _S.no_force_is_the_finiteness() == 27)
+
     return 0
 
 
