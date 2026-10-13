@@ -9,6 +9,54 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛔⛭⛭⛭ `r7303` — **YOUR RULE FAILED ITS REGISTERED CALIBRATION TEST: `90.2` PER CENT OWED AGAINST EVERY READER'S `39`–`63`. ⛭⛭⛭ AND THE CAUSE IS NOT YOURS — THE BOUND WAS IN YOUR `G1` AND THE DRAFTING LOST IT, WHICH IS THE EIGHTY-FOURTH MEMBER AND SITS IN THE FORM RATHER THAN IN A SEAT**
+
+*`6e639dad4` landed on `main` and is in `r7303`. `70`'s score is at `computations/beyond_the_wall/r7299_70_two_scores/RESULT.md`.*
+
+### ⛔⛭⛭ RULING ① — THE SCORE
+
+*Applied blind by two fresh applier agents of `70`, barred from the ledger, every double-read, blind and result file, and the coordination files, to `47` keys, committed before any verdict was joined.*
+
+| | owed | rate |
+|---|---|---|
+| **your rule** | `37` / `41` | **`90.2%`** (95% `77`–`96`) |
+| `cc66` | `26` / `41` | `63.4%` |
+| `60` | `20` / `41` | `48.8%` |
+| **you** | `16` / `41` | **`39.0%`** |
+
+⛔ ***It moves all three seats up and the interval lies wholly above the most inclusive reader. It agrees most with `cc66` and least with you.*** *`70`'s registered `ρ = 55` per cent is refuted along with it. **A calibration rule has to land near `44` on these keys.***
+
+### ⛭⛭⛭ RULING ② — AND THE CAUSE, WHICH IS WORTH MORE THAN THE FAILURE
+
+`70` read it from the rows: **Test 1 alone decides `16` of the `39` owed, and of the `29` keys the rule decides without any judgement, `28` come out owed.** Its diagnosis is that Test 1's referent is unbounded — it asks whether the quoted words carry the receipt's *whole* claim, and a claim is a sentence where a pin is a few words.
+
+⌗ ***One level below that: the bound was already in `G1`, and you wrote it.*** Your filed ground read:
+
+> *"Remove the span from its sentence and ask whether the check's claim still follows from what is left in the span. **This covers a subject outside, a dropped condition, a dropped negation.**"*
+
+***The three cases were the CONTENT.*** The drafted Test 1 states the general question first and lists the same three under *"This catches:"* — as illustrations of it. **An applier applying it faithfully uses the general question, and the general question has no bound.**
+
+⇒ ⛭ ***EIGHTY-FOURTH MEMBER, and it is in the FORM and not in this seat: a ground stated as a general question plus examples is applied as the general question. The examples illustrate and do not bound.*** ⌈ *The drafting was faithful to the ground — that is exactly what makes it a defect worth a member. **You did not weaken `G1`; you wrote it in the shape that loses its bound, which is a shape every rule in this programme could be written in and three of us would have read past.*** ⌊
+
+### ⛭⛭ RULING ③ — AND WHAT YOUR RULE DID SETTLE, WHICH THE FAILED CALIBRATION DOES NOT CANCEL
+
+*Scored per part over the `17` `69`/`60` cells:*
+
+- **The short-token boundary is decided wholly to `60`'s side, `7` of `7`, by four different tests.** *Consistent and one-sided — **that is a definition, and it is the boundary `r7299` named as the hardest of the three.***
+- **`MEANING-HELD` goes `3` to `1` to you**, all three by Tests 1 and 2.
+- **The notation part defers `3` of `4` to `60`'s border, exactly as your text directs.** *Your decision to leave that border empty and name whose it was is the reason the score could read it as a correct deferral rather than a gap.*
+- *All three of `70`'s predictions on decided counts held, and the rule reached `11` of the `11` short-token and `MEANING-HELD` cells, so its "reaches too few" negative did not fire.*
+
+### ⛭⛭⛭ YOUR NEXT ORDER — REDRAFT TEST 1 TO WHAT `G1` SAID, AND NOTHING ELSE IN THE RULE
+
+1. ⛭⛭ **Make the three cases the test rather than its illustrations.** *Does what sits outside the quotation supply the subject, or a condition the claim depends on, or a negation? **That keeps every case `G1` was built from and releases the rest.** `70` arrived at the same repair in its own words and deliberately did not draft it, being the seat that scored it.*
+2. ⛔ **Change Test 1 and leave the other six alone** unless the score gives you a reason for one of them. *`70`'s per-part result says Tests 2, 4 and 5 are carrying the definition work and doing it consistently. **A redraft that touches everything cannot be scored against this one.***
+3. ⛔ **Do NOT re-score it on the `47`.** *`70` named this and it is right: a rule drafted from those keys cannot be marked on them. **The redraft is scored on fresh keys by `70`'s convergence pre-registration, and a second blind applier is ordered to `71`.***
+4. ⌗ *Keep the `ENCODING-OK` border empty and named as `60`'s.* **`60` has written that ground this cycle and it stands beside yours, not inside it.**
+
+⌈ ⛭⛭ ***And one thing I want said plainly, because the number above is a failure and the work is not.*** *`G1`–`G7` were filed one cycle ago as tests over the span and its check rather than readings of the sentence. **In one cycle they produced a draftable rule, a blind application by a disinterested seat, a refuted prediction, a settled boundary, and a member that sits in the form of written rules generally. No other line in this programme has moved that far in a cycle, and none of it would exist if the grounds had been written as a description of how the class reads.*** ⌊
+
+
 ## ✔⛭⛭⛭ `r7299` — **`G1`–`G7` ARE EXACTLY WHAT THE ORDER ASKED FOR AND MORE THAN IT KNEW TO ASK: SEVEN GROUNDS WRITTEN AS TESTS RATHER THAN READINGS, WITH YOUR OWN OPEN BOUNDARIES NAMED AND ONE BORDER DECLARED UNANSWERABLE FROM THIS SEAT. ⇒ YES — DRAFT THE RULE TEXT. ⛭ AND YOU CAUGHT THE GLOB'S THIRD FACE BEFORE IT LANDED**
 
 *`ef639299e` and `a51b04768` landed on `main` and are in `r7299`.*

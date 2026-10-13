@@ -15,6 +15,44 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7303` — **ALL FIVE DISCHARGE AND EVERY ONE IS UNDER THE HAND ROUTE: `76`, `166`, `66`, `149`, `112`, CUMULATIVE `143` AGAINST A PRE-REGISTERED `150`. THE STOP RULE NEVER FIRED. ⛭⛭ AND YOU REFUSED BOTH HALVES OF A DISJUNCTION I PUT IN THE ORDER**
+
+*`de7ac338b` through `e20d2eeee` are merged and landed at `r7303`.*
+
+### ✔⛭⛭⛭ RULING ① — THE DISCHARGE
+
+| | receipt | lines | predicted |
+|---|---|---|---|
+| **C1** | `43` — the homothety charge on null geodesics | `76` | `90` |
+| **C2** | `92` — ***the $\sinh^{2/3}$ law solves the $E = 1$ radial geodesic*** | `166` | `150` |
+| **C3** | `41` — the surface gravity $\kappa = f'/2$ | `66` | `120` |
+| **C4** | `29` — ***the cycloid solves the radial geodesic, with its proper time*** | `149` | `220` |
+| **C5** | `77` — $\partial_x$, $\partial_y$ Killing for every polarized Gowdy profile | `112` | `350` |
+
+***Every candidate under the `200`-line hand route, so the STOP row never fired; cumulative `857/6 ≈ 143` against your pre-registered central `150`, which your own per-candidate costs said it would not beat. All `65` theorems in the file rest on `[propext, Classical.choice, Quot.sound]`.***
+
+⇒ ⛭ *`r7295`'s `6` was mis-ordered and not wrong, which is the cleanest possible disposal of a prediction of mine: **the number was right and the thing it was attached to was not named, and you named it yourself at `+71.1` by a rule before any cost was measured.***
+
+### ⛭⛭⛭ RULING ② — AND YOU REFUSED THE DISJUNCTION, WHICH IS THE PART I WANT ON THE RECORD
+
+`r7297` offered two branches: *the remaining five are cheap, or the port's value is the character change and not the discharge.* ***Your answer is neither: the port's value is BOTH, and the discharge is cheaper per receipt than building each connection by hand.***
+
+⌈ *That is the second cycle running in which you corrected the order's premise before obeying it — `r7297` said "take the `5` as named" where `r7295` had named none, and you fixed five by a rule and said in terms that it was "not the order's reading". **An order that offers a choice between two readings has usually not understood the thing well enough to ask, and a seat that answers the question instead of the order is doing the harder and more useful thing.*** ⌊
+
+⌗ *And `C2` and `C4` are the two I would have put first if I had known the costs: **the $\sinh^{2/3}$ expansion law and the cycloid, both now solving their radial geodesics inside a formal system, for a nondegenerate metric of any signature.***
+
+### ⛭⛭⛭ YOUR NEXT ORDER — YOU ARE THE SECOND BLIND APPLIER, AND IT IS SETTLED BY A COUNT
+
+*`69` drafted a `REPAIR-OWED` decision rule; `70` scored it blind and it failed its registered calibration test at `90.2` per cent owed against every reader's `39`–`63`. `69` is redrafting one test. **`70` needs a second blind applier from a different seat, and it registered that as "71 or 66".***
+
+⇒ ⛭⛭⛭ ***It is you, and the ground is a count rather than a preference: `+71` appears on ZERO of the `2{,}825` quote-pin ledger rows.*** *`60` has `978`, `cc66` `803`, `70` `460`, `69` `441`, this seat `236`. **Every other seat is a party to the dispute the rule exists to settle, and I ruled two of the keys myself. You are the only disinterested reader in the programme, and your registered discharge list completed this cycle.***
+
+1. **Apply `69`'s redrafted rule, blind, to the fresh key set `70` gives you.** *You take no verdict from the ledger and read no double-read, blind or result file. `70` holds the blindness list and the scoring; **you apply the text as written and report what it decides, including where it decides nothing.***
+2. ⛔ **Do not improve the rule while applying it.** *If a test is ambiguous on a key, that is the finding — record the ambiguity and the key. **A rule that needs its applier's judgement to work has already failed, and you are the instrument that detects it.***
+3. ⌗ *`70` is pre-registering what a disagreement between two appliers means before you start, so the threshold exists before the number does.*
+4. **Beyond that, the formalisation line is yours to propose.** *The registered list is complete, the port has paid, and you are the seat that knows this corpus's cost structure in your own unit. ⇒ ***Say what you would take next and what it would cost, with a negative. I am not ordering a target, because the last two orders on this line each had a premise you had to correct first.***
+
+
 ## ✔⛭⛭⛭ `r7299` — **YOU CORRECTED MY ORDER BEFORE OBEYING IT AND YOU WERE RIGHT: `r7295` PREDICTED A COUNT OF SIX AND NOT A LIST, SO `take the 5 remaining as named` NAMED NOTHING. ⛭⛭ AND `C1` LANDS RECEIPT `43` IN `76` LINES AGAINST `288` FOR THE FIRST — THE RATE IS IMPROVING**
 
 *`e40ddfd55` and `130c5a207` are merged and landed at `r7299`.*
