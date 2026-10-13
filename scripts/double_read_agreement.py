@@ -23,6 +23,19 @@ twice -- across batches or inside one -- FAILS the run (exit 1, nothing written)
 warning is how a borrower inherits a defect silently.  A third reader of an already-double-read key is a different
 measurement and needs a different key; it is refused here until that is designed.
 
+** r7297+70: THE UNIT IS THE (key, reader-pair) CELL. **  The r7295 key was one dimension short: 60 read 47 keys that 69
+and cc66 had already double-read, and the pooler refused 44 of them as duplicates when they are a NEW reader pair on an old
+key set -- the more informative kind, since only a new pair separates a reader effect from a key effect.  Every batch now
+declares its readers on a comment line
+
+    # readers: 69 | 60
+
+(order-free: `69 | 60` and `60 | 69` are one pair), and a row is keyed by (receipt, literal, reader pair).  The same pair
+presenting a key twice is still refused; a new pair on the same key pools.  A globbed file with no `# readers:` line, or
+naming one reader twice, FAILS the run by name: the line is also what tells a batch from commentary the glob happens to
+match (a reasons sidecar), so a file without it is never pooled by default.  The pooled share is now over CELLS, and a
+key read by three seats contributes three; the per-pair table says how the figure divides.
+
     python3 scripts/double_read_agreement.py            # print the tables
     python3 scripts/double_read_agreement.py --seed     # the duplicate refusal, both ways, on built batches
     python3 scripts/double_read_agreement.py --write    # also write AGREEMENT.md beside the prediction
@@ -49,10 +62,14 @@ def batches():
         # the oldest commit that touched the file (a file landed through a merge has no `--diff-filter=A` hit on main)
         when = (subprocess.run(['git', '-C', ROOT, 'log', '--reverse', '--format=%ct %h', '--', rel],
                                capture_output=True, text=True).stdout.split('\n')[0] or '').split()
-        pairs, keys, mism, label = [], [], 0, ''
+        pairs, keys, mism, label, readers = [], [], 0, '', None
+        rows = []
         for ln in open(f, encoding='utf-8', errors='replace'):
             ln = ln.rstrip('\n')
             if ln.startswith('#'):
+                if readers is None and ln.lstrip('# ').lower().startswith('readers:'):
+                    readers = tuple(r.strip() for r in ln.split(':', 1)[1].split('|'))
+                    continue
                 if not label and ('read' in ln.lower()) and len(ln) > 2:
                     label = ln.lstrip('# ').strip()[:90]
                 continue
@@ -61,11 +78,13 @@ def batches():
                 continue
             a, b = c[2].strip(), c[3].strip()
             pairs.append((a, b))
-            keys.append((c[0].strip(), _lit(c[1])))
+            rows.append((c[0].strip(), _lit(c[1])))
             if len(c) > 4 and c[4].strip() in ('AGREE', 'DISAGREE') and (c[4].strip() == 'AGREE') != (a == b):
                 mism += 1
+        pair = _pair(readers)
+        keys = [(*k, pair) for k in rows]
         out.append({'file': rel, 'when': int(when[0]) if when else 2 ** 62, 'sha': when[-1] if when else 'untracked',
-                    'pairs': pairs, 'keys': keys, 'mismatch': mism, 'label': label})
+                    'pairs': pairs, 'keys': keys, 'mismatch': mism, 'label': label, 'readers': readers, 'pair': pair})
     return sorted(out, key=lambda b: (b['when'], b['file']))
 
 
@@ -78,8 +97,20 @@ def _lit(cell):
         return cell
 
 
+def _pair(readers):
+    """the order-free reader pair, or None when the declaration is missing, not two names, or one name twice"""
+    if not readers or len(readers) != 2 or not all(readers) or readers[0] == readers[1]:
+        return None
+    return tuple(sorted(readers))
+
+
+def unlabelled(bs):
+    """[file] for every batch that does not declare two distinct readers"""
+    return [x['file'] for x in bs if x.get('pair') is None]
+
+
 def represented(bs):
-    """[(receipt, literal, first file, second file)] for every key presented more than once"""
+    """[(receipt, literal, reader pair, first file, second file)] for every (key, pair) cell presented more than once"""
     seen, out = {}, []
     for x in bs:
         for k in x['keys']:
@@ -91,16 +122,27 @@ def represented(bs):
 
 
 def _seed():
-    mk = lambda f, rows: {'file': f, 'keys': [r[:2] for r in rows], 'pairs': [r[2:] for r in rows]}
+    def mk(f, rows, readers=('69', 'cc66')):
+        pair = _pair(readers)
+        return {'file': f, 'keys': [(*r[:2], pair) for r in rows], 'pairs': [r[2:] for r in rows], 'pair': pair}
     a = mk('A.tsv', [('r/x.py', 'one', 'DELIBERATE', 'DELIBERATE'), ('r/x.py', 'two', 'REPAIR-OWED', 'DELIBERATE')])
     b = mk('B.tsv', [('r/y.py', 'one', 'MEANING-HELD', 'MEANING-HELD')])
     again = mk('C.tsv', [('r/x.py', 'two', 'REPAIR-OWED', 'REPAIR-OWED')])
     inner = mk('D.tsv', [('r/z.py', 'k', 'ALT-OK', 'ALT-OK'), ('r/z.py', 'k', 'ALT-OK', 'DELIBERATE')])
+    newpair = mk('E.tsv', [('r/x.py', 'two', 'REPAIR-OWED', 'DELIBERATE')], ('69', '60'))
+    flipped = mk('F.tsv', [('r/x.py', 'two', 'DELIBERATE', 'REPAIR-OWED')], ('cc66', '69'))
+    bare = mk('G.tsv', [('r/w.py', 'k', 'ALT-OK', 'ALT-OK')], None)
+    self_ = mk('H.tsv', [('r/w.py', 'k', 'ALT-OK', 'ALT-OK')], ('69', '69'))
+    refused = lambda bs: bool(represented(bs)) or bool(unlabelled(bs))
     cases = [('distinct keys in two batches pool', [a, b], False),
              ('the same literal under a different receipt is a different key', [a, b], False),
              ('a key re-presented in a later batch is refused', [a, b, again], True),
-             ('a key presented twice inside one batch is refused', [inner], True)]
-    bad = [f'{lab}: expected {"refused" if w else "pooled"}' for lab, bs, w in cases if bool(represented(bs)) != w]
+             ('a key presented twice inside one batch is refused', [inner], True),
+             ('r7297: the same key under a NEW reader pair pools', [a, b, newpair], False),
+             ('r7297: the same pair in the other order is the same pair, refused', [a, flipped], True),
+             ('r7297: a batch declaring no readers is refused', [a, bare], True),
+             ('r7297: a batch naming one reader twice is refused', [a, self_], True)]
+    bad = [f'{lab}: expected {"refused" if w else "pooled"}' for lab, bs, w in cases if refused(bs) != w]
     for b_ in bad:
         print(f'    [FAIL] {b_}')
     print(f'  seeds: {"hold" if not bad else "LOST"}')
@@ -151,7 +193,7 @@ def n_star(p, t2, b=23, delta=0.05, z=1.96):
 def report(bs):
     lines = ['| # | batch (file, landed at) | keys | agree | raw | 95% (Wilson) | kappa |', '|---|---|---|---|---|---|---|']
     cum = []
-    rows_cum = ['| after batch | pooled keys | pooled agree | pooled raw | moved by | pooled kappa |',
+    rows_cum = ['| after batch | pooled cells | pooled agree | pooled raw | moved by | pooled kappa |',
                 '|---|---|---|---|---|---|']
     prev = None
     for i, x in enumerate(bs, 1):
@@ -178,12 +220,19 @@ def main():
     if '--seed' in sys.argv:
         return _seed()
     bs = batches()
+    bare = unlabelled(bs)
+    if bare:
+        print(f'  ⛔ {len(bare)} FILE(S) MATCH THE BATCH GLOB AND DECLARE NO TWO READERS -- every batch carries '
+              f'`# readers: A | B`, and a file without it is not pooled by default.  Nothing is written.')
+        for f in bare:
+            print(f'    {f}')
+        return 1
     dup = represented(bs)
     if dup:
-        print(f'  ⛔ {len(dup)} KEY(S) PRESENTED MORE THAN ONCE -- a double-read is its key set, and these keys are '
-              f'already pooled.  Nothing is written.')
-        for r, l, f1, f2 in dup[:40]:
-            print(f'    {r}  {json.dumps(l, ensure_ascii=False)[:60]}  first in {f1}, again in {f2}')
+        print(f'  ⛔ {len(dup)} (KEY, READER-PAIR) CELL(S) PRESENTED MORE THAN ONCE -- the same two readers on the same '
+              f'key are one measurement, already pooled.  Nothing is written.')
+        for r, l, pr, f1, f2 in dup[:40]:
+            print(f'    {r}  {json.dumps(l, ensure_ascii=False)[:60]}  [{" | ".join(pr)}]  first in {f1}, again in {f2}')
         if len(dup) > 40:
             print(f'    ... and {len(dup) - 40} more')
         return 1
@@ -207,13 +256,25 @@ def main():
         print('  ⛔ NO PAIRED BATCH -- nothing to pool.')
         return 1
     lines, rows_cum, N, p, t2, ns, kp = report(bs)
+    distinct = len({k[:2] for x in bs for k in x['keys']})
+    by_pair = {}
+    for x in bs:
+        by_pair.setdefault(x['pair'], []).extend(x['pairs'])
+    pair_rows = ['| reader pair | cells | agree | raw | kappa |', '|---|---|---|---|---|']
+    for pr, ps in sorted(by_pair.items()):
+        k_ = sum(a == b for a, b in ps)
+        pair_rows.append(f'| `{" | ".join(pr)}` | {len(ps)} | {k_} | {100 * k_ / len(ps):.1f}% | {kappa(ps):+.2f} |')
     head = (f'# The double-read agreement, pooled — generated by `scripts/double_read_agreement.py`\n\n'
-            f'*{len(bs)} batch(es), {N} independently double-read keys.  Pooled raw agreement **{100 * p:.1f}%**, '
+            f'*{len(bs)} batch(es), {N} independently double-read (key, reader-pair) cells over {distinct} distinct '
+            f'keys and {len(by_pair)} reader pair(s).  Pooled raw agreement **{100 * p:.1f}%**, '
             f"pooled Cohen's kappa **{kp:+.2f}**.  Between-batch variance (DerSimonian–Laird) tau² = {t2:.4f}; "
             f'the size at which one more ~23-key batch moves the pooled share by more than 5 points with under 5% '
             f'probability is **n\\* = {ns}** keys (PREDICTION.md\'s rule, recomputed from the batches so far) — '
-            f'{"REACHED" if N >= ns else f"NOT YET: {ns - N} keys to go"}.*\n')
-    body = '\n'.join(['', '## Per batch', ''] + lines + ['', '## Cumulative', ''] + rows_cum) + '\n'
+            f'{"REACHED" if distinct >= ns else f"NOT YET: {ns - distinct} keys to go"}, counted in DISTINCT keys and not '
+            f'in cells -- the rule was registered in keys, and three readings of one key are not three independent '
+            f'samples when the disagreement is a property of the key (r7297).*\n')
+    body = '\n'.join(['', '## Per batch', ''] + lines + ['', '## Per reader pair', ''] + pair_rows
+                     + ['', '## Cumulative', ''] + rows_cum) + '\n'
     if pending:
         body += ('\n## Pending -- filed, no verdict pair yet, not pooled\n\n'
                  + '\n'.join(f'- `{f}`' for f in pending) + '\n')
