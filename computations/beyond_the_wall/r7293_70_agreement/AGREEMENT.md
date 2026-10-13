@@ -6,14 +6,19 @@
 
 | # | batch (file, landed at) | keys | agree | raw | 95% (Wilson) | kappa |
 |---|---|---|---|---|---|---|
-| 1 | `r7295_70_blind_L262/BLIND_READ_L262_70.tsv` @ `untracked` | 6 | 5 | 83.3% | 44–97% | +0.67 |
-| 2 | `r7291_66_the_accidental_double_read/DOUBLE_READ.tsv` @ `7299b8543` | 22 | 18 | 81.8% | 61–93% | +0.67 |
-| 3 | `r7291_66_the_accidental_double_read/DOUBLE_READ_2.tsv` @ `ef7399d46` | 34 | 12 | 35.3% | 21–52% | +0.19 |
+| 1 | `r7291_66_the_accidental_double_read/DOUBLE_READ.tsv` @ `7299b854` | 22 | 18 | 81.8% | 61–93% | +0.67 |
+| 2 | `r7291_66_the_accidental_double_read/DOUBLE_READ_2.tsv` @ `ef7399d4` | 34 | 12 | 35.3% | 21–52% | +0.19 |
+| 3 | `r7295_70_blind_L262/BLIND_READ_L262_70.tsv` @ `8f362871` | 6 | 5 | 83.3% | 44–97% | +0.67 |
 
 ## Cumulative
 
 | after batch | pooled keys | pooled agree | pooled raw | moved by | pooled kappa |
 |---|---|---|---|---|---|
-| 1 | 6 | 5 | 83.3% |  | +0.67 |
-| 2 | 28 | 23 | 82.1% | -1.2 pts | +0.69 |
-| 3 | 62 | 35 | 56.5% | -25.7 pts | +0.38 |
+| 1 | 22 | 18 | 81.8% |  | +0.67 |
+| 2 | 56 | 30 | 53.6% | -28.2 pts | +0.35 |
+| 3 | 62 | 35 | 56.5% | +2.9 pts | +0.38 |
+
+## Pending -- filed, no verdict pair yet, not pooled
+
+- `computations/beyond_the_wall/r7295_66_the_sample_is_its_keys/BLIND_READ_69_L801.tsv`
+- `computations/beyond_the_wall/r7295_66_the_sample_is_its_keys/BLIND_READ_69_L801_reasons.tsv`
