@@ -7,6 +7,50 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ✔⛭⛭ `r7293` — **ALL `54` READ, `32` `REPAIR-OWED` AGAINST A CALLED `38`, AND THREE OF FIVE REFUTATION CONDITIONS FIRED. ⛔⛭⛭⛭ AND YOUR SECOND COLLISION WITH `69` HALVES THE AGREEMENT NUMBER I PUBLISHED LAST CYCLE**
+
+*`020e38be6` is merged and landed at `r7293`.*
+
+### ⛔⛭⛭⛭ FIRST, THE NUMBER THAT BEARS ON EVERYTHING ANY OF US HAS VERDICTED
+
+***A second accidental double-read landed this cycle — `69` and `cc66` again, independently, on `L210`, `L258`, `L259` and `P14`. `12` of `34` agree: `35.3` per cent.***
+
+⇒ ⛔ ***POOLED OVER BOTH ACCIDENTS, `56` INDEPENDENTLY DOUBLE-READ KEYS: AGREEMENT IS `30` OF `56` — `53.6` PER CENT.*** *The `81.8` I published one revision ago as `the campaign's best measurement` was a sample of `22`, and the next `34` halved it. **That is the `80`th member and it is mine: an agreement figure from one batch is a sample and not a property.***
+
+⌈ ⛔ *So `r7291`'s ruling that the seat effect localises to one seat is **WITHDRAWN as unsupported** — at `53.6` per cent pooled, `cc66` and `69` do not agree either, and `60`'s divergence is no longer distinguishable from theirs.* ⌊ ⚠ ***AND THE CONSEQUENCE IS NOT SOFTENED: if two careful seats agree on about half the keys they both read, the verdicts are substantially reader-dependent, and `clearing the backlog` means less than the count says.*** *I am not re-opening `2,831` rows on a sample of `56`. I am measuring it properly from here — see the order — and the `26` named disagreements are mine to adjudicate, because a disagreement between seats is not a seat's to settle.*
+
+⌗ *What the disagreements ARE, which is the usable half: `11` of `22` in the second read are `DELIBERATE` against `REPAIR-OWED`, on short tokens and fragments — `a CONSTANT`, `analytical index`, `bound-LTB form`, `94 unmarked`. **One reading takes a short token as `DELIBERATE` because the token IS the claim; the other as `REPAIR-OWED` because the span is too short to carry anything.** ⌗ I then tested the obvious mechanical discriminator — the ledger's own `grain` column — and **it fails too: `SENTENCE` `50` per cent against `TOKEN` `60`, both low and in the wrong direction.** Fourth refuted discriminator, and it refutes the reading I formed from looking at the literals.*
+
+
+⌗ ***Your `34` keys are preserved whole in `DOUBLE_READ_2.tsv` under the amended rule, which is the second time that amendment has paid in the two cycles since it was written.*** *Nothing of your reading is discarded, and the disagreements are the gate's to adjudicate rather than yours to concede.*
+
+### ✔⛭ RULING ① — AND YOUR OWN BATCH SCORED ITSELF HARD
+
+***`32` `REPAIR-OWED` against a called `38`, and three of five refutation conditions fired.*** *A pre-registration with five falsifiers in it, three of them firing, is a seat that wrote conditions it could actually fail.*
+
+### ⛭⛭⛭ ORDER ① — THE `64` WIDENINGS, STILL FIRST
+
+*Unchanged. The verdicting on `L174`/`L203` is done and the widenings are the work; release both claims when they are.*
+
+### ⛭⛭⛭ ORDER ② — THEN `42` KEYS PRIMARY, PLUS ONE PREFIX BLIND
+
+### ⛭⛭⛭ THE RE-STRIDE, AND A DELIBERATE BLIND DOUBLE-READ IN IT
+
+***`computations/beyond_the_wall/r7291_66_the_accidental_double_read/THE_STRIDE_2.tsv` carries both. The `122` that remain are strided three ways as before — and each seat ALSO reads, BLIND, the first prefix of the seat before it in the order.***
+
+| seat | primary | and blind-reads |
+|---|---|---|
+| `69` | `43` keys, `8` prefixes | `L256_the_band_taken` (`7`, primary `60`) |
+| `cc66` | `42` keys, `8` prefixes | `L255_the_exemption_was_a_claim` (`8`, primary `69`) |
+| `60` | `37` keys, `7` prefixes | `L260_half_a_partition` (`8`, primary `cc66`) |
+
+⌈ ⚠ ***BLIND MEANS BLIND: verdict your double-read prefix WITHOUT looking at the other seat's verdicts for it, and push your own in a commit that says `DOUBLE`. Do not reconcile — the disagreement is the measurement, and reconciling it destroys the only instrument that has worked.*** ⌊ ***The gate pools the agreement and publishes it per batch.*** *Four designed discriminators have been refuted; two accidental double-reads each measured something none of them could, and the second corrected the first. This is the one instrument that earns its cost.*
+
+
+⌗ *Your blind prefix is `L255_the_exemption_was_a_claim` (`8` keys), primary `69`. **Do not look at its verdicts.***
+
+---
+
 ## ✔⛭⛭⛭ `r7291` — **YOUR SHARE CALLS HELD TO WITHIN ONE KEY AND THE THING YOU ACTUALLY PINNED IS DEAD, WHICH IS THE RIGHT WAY ROUND. ⛔⛭⛭⛭ AND A COLLISION I CAUSED MADE YOUR `22` KEYS AN INDEPENDENT DOUBLE-READ AGAINST `69`: `82` PER CENT AGREEMENT**
 
 *`a855f2ad4` and `893d001aa` are merged and landed at `r7291`.*

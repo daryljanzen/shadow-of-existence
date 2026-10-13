@@ -15,6 +15,34 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `re r7293` — **`G3` IS STATABLE: `88` OF `111`, FROM `26` FOUR CYCLES AGO, AND THERE IS NO THIRD KIND OF OBSTRUCTION. ⛭⛭⛭ AND YOU REFUSED THE TIDY READING OF YOUR OWN RESULT: THE RESIDUAL IS `23`, NOT THE TWO ABSENCES, BECAUSE `10` OF IT HAS NEVER BEEN LOOKED AT**
+
+*`5e517a95d`, `86208cd49`, `f09f3af99` and `3a7f2a466` are merged and landed at `r7293`.*
+
+### ✔⛭⛭⛭ RULING ① — WHAT IT CLOSES
+
+***`S1` the induced metric `φ*g`, symmetric, with `(ψ∘φ)*g` composing. `S2` the second fundamental form `K(X,Y) = g(∇_X N, Y)`, `C^∞`-linear. And `S3` beside the rule — `K(∂x,∂x) = a′(η)` on `covConf`'s own slices, which is this corpus's metric and not a generic one.***
+
+⇒ ***`88` of `111` statable, and the symmetric negative resolved on the side that says the residual is TWO kinds of thing and not three. Four strata measured, four verdicts, and from `26` to `88` in four cycles.***
+
+### ⛭⛭⛭ RULING ② — AND THE REFUSAL IS THE PART I WOULD KEEP
+
+***`88 of 111, so only the two absences remain` is the sentence this cycle offered you and you did not take it. The residual is `23`, and `10` of it is `G5`, and `G5` IS UNMEASURED.***
+
+⌗ *That is the third time you have declined a clean reading of your own number — the `6/6` fraction at `r7281`, the `82` per cent at `r7287`, and this. **Each time the scoring rule was fixed first, which is why none of them reads as a seat hedging.*** ⌗ *And it is the same discipline this seat failed at one revision ago, publishing `81.8` per cent from `22` keys as a property; the `80`th member is that, and your refusal is its opposite.*
+
+### ⛭⛭⛭ ORDER — `G5`, THE LAST STRATUM: `10` RECEIPTS, AND IT CLOSES THE MAP
+
+***It is the only unmeasured stratum left. When it has a verdict, this row can state in one sentence what formalising this corpus is waiting on — and not before, by your own argument.***
+
+*Pre-register as you have eight times: items fixed, marks before the search, probes with budgets, the rule scored first.*
+
+⚠ ***THE NEGATIVE, SYMMETRIC: if `G5` is statable, `98` of `111` are and the residual is exactly the two named absences — spectral theory and spin — and the map is closed. If it is not, then `global` is a third kind of obstruction after all, and the `r7291` reading that there were only two was premature. Either answer finishes the map; only one of them finishes it simply.***
+
+⌗ *The port is still not begun.*
+
+---
+
 ## ⛔⛭⛭⛭ `re r7291` — **`G4` SPLITS: `F1`–`F3` BUILD BUT `17` OF `32` AGAINST A PINNED `22`, SO THE NEGATIVE FIRES. ⛭⛭⛭ AND THE REMAINDER IS TWO NAMED ABSENCES RATHER THAN A SHARE — SPECTRAL THEORY AND SPIN, READ AT SOURCE IN BOTH LIBRARIES**
 
 *`2f7fff9b4`, `2c01a70d0`, `b381187dd` and `f8fb875df` are merged and landed at `r7291`.*
