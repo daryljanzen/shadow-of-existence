@@ -1,0 +1,9 @@
+# Seat 69's GROUND for each verdict in BLIND_READ_69_L256.tsv; the site detail is the reason column of DOUBLE_69_L256.tsv.
+# literal	verdict	ground (what decided it)
+"NAMED, not dated"	DELIBERATE	The claim is ABOUT the text, and the same check tests the behaviour beside it, so the annotation is quoted as itself.
+"THE BAND IS A PROPOSAL, NOT A PREVENTION"	REPAIR-OWED	A phrase in the live tool stands in for something the tool DOES, and nothing in this check runs the tool to see it do it.
+"THIS LINE TAKES EVEN REVISION NUMBERS"	DELIBERATE	The same check tests the value directly (C.PARITY == 0), so the docstring line is quoted as itself, not as a stand-in.
+"WITHDRAWN r3128"	DELIBERATE	A quotation of another receipt's unmoved record line: the record's own words, which is all the check claims.
+"f'{UPSTREAM}..HEAD'"	REPAIR-OWED	A phrase in the live tool stands in for something the tool DOES, and nothing in this check runs the tool to see it do it.
+"if OTHER_HALF is None:"	REPAIR-OWED	A phrase in the live tool stands in for something the tool DOES, and nothing in this check runs the tool to see it do it.
+"not yet reached the shared trunk"	REPAIR-OWED	A phrase in the live tool stands in for something the tool DOES, and nothing in this check runs the tool to see it do it.

@@ -1,11 +1,12 @@
+# readers: 60 | 69
 # r7295 BLIND READ (DOUBLE): seat 69 on L801_nonlinear_shear_freedom, primary 60.  Verdicted without
 # opening the primary's rows (only whether each row was still open was checked, no value shown).
-# NOT reconciled and NOT written to the ledger.  Reasons in BLIND_READ_69_L801_reasons.tsv.
-# receipt	literal	first verdict (69, blind)	second verdict (60, primary -- not read)
-receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"Two exact structures sharpen this beyond the Bianchi count"	REPAIR-OWED	
-receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"\\begin{corollary}[The wall is free gravitational radiation]"	DELIBERATE	
-receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"a closed-form nonlinear solution"	REPAIR-OWED	
-receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"admits rather than forces a quantum structure"	REPAIR-OWED	
-receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"first-class constrained system evolves consistently to all orders by the contracted Bianchi identity"	MEANING-HELD	
-receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"the one non-generic exception, the Nariai branch"	MEANING-HELD	
-receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"the propagating sector is ghost-free to all orders"	MEANING-HELD	
+# NOT reconciled and NOT written to the ledger.  Reasons in GROUNDS_69_L801.tsv (named outside the BLIND_READ glob so the pooler does not read it as a batch).
+# receipt	literal	verdict (60, primary -- pending)	verdict (69, blind)
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"Two exact structures sharpen this beyond the Bianchi count"		REPAIR-OWED
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"\\begin{corollary}[The wall is free gravitational radiation]"		DELIBERATE
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"a closed-form nonlinear solution"		REPAIR-OWED
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"admits rather than forces a quantum structure"		REPAIR-OWED
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"first-class constrained system evolves consistently to all orders by the contracted Bianchi identity"		MEANING-HELD
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"the one non-generic exception, the Nariai branch"		MEANING-HELD
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"the propagating sector is ghost-free to all orders"		MEANING-HELD
