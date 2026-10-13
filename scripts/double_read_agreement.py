@@ -42,12 +42,20 @@ is NOT A BATCH (a verdict cell may be EMPTY -- a pending side -- but not prose):
 file whose verdict columns hold a verdict on some rows and something else on others is a MALFORMED batch and fails the
 run, because there the content is a batch and a cell of it is wrong.
 
+** r7307+70: THE COLUMN RULE IS ASSERTED, NOT ASSUMED (66's r7307). **  Column 3 holds the FIRST reader named on the
+`# readers:` line and column 4 the second.  An inverted file pools to the same agreement -- a pair is order-free -- but
+every per-seat rate comes out backwards, and a joiner that fills the empty column labels the blind seat's verdicts as the
+primary's.  Where a batch's own comment lines name the verdict columns by seat, the LAST such line (a later correction
+governs) must name them in the `# readers:` order; if it names them the other way the batch is MALFORMED and the run fails.
+A batch whose comments name no column by seat is not checked, and says nothing either way.
+
     python3 scripts/double_read_agreement.py            # print the tables
     python3 scripts/double_read_agreement.py --seed     # the duplicate refusal, both ways, on built batches
     python3 scripts/double_read_agreement.py --write    # also write AGREEMENT.md beside the prediction
 """
 import glob
 import json
+import re
 import math
 import os
 import subprocess
@@ -71,10 +79,12 @@ def batches():
         when = (subprocess.run(['git', '-C', ROOT, 'log', '--reverse', '--format=%ct %h', '--', rel],
                                capture_output=True, text=True).stdout.split('\n')[0] or '').split()
         pairs, keys, mism, label, readers = [], [], 0, '', None
-        rows, vcells = [], []
+        rows, vcells, hdr = [], [], []
         for ln in open(f, encoding='utf-8', errors='replace'):
             ln = ln.rstrip('\n')
             if ln.startswith('#'):
+                if not rows:
+                    hdr.append(ln)
                 if readers is None and ln.lstrip('# ').lower().startswith('readers:'):
                     readers = tuple(r.strip() for r in ln.split(':', 1)[1].split('|'))
                     continue
@@ -95,7 +105,7 @@ def batches():
         keys = [(*k, pair) for k in rows]
         out.append({'file': rel, 'when': int(when[0]) if when else 2 ** 62, 'sha': when[-1] if when else 'untracked',
                     'pairs': pairs, 'keys': keys, 'mismatch': mism, 'label': label, 'readers': readers, 'pair': pair,
-                    'shape': _shape(vcells)})
+                    'shape': _shape(vcells), 'columns': _column_order(hdr, readers)})
     return sorted(out, key=lambda b: (b['when'], b['file']))
 
 
@@ -104,6 +114,22 @@ def _shape(vcells):
     verdict cells are a verdict or EMPTY (a pending side) and at least one is a verdict"""
     ok = [all(x in VERDICTS | {''} for x in v) and any(v) for v in vcells]
     return 'sidecar' if ok and not any(ok) else 'malformed' if not all(ok) else 'batch'
+
+
+def _column_order(header_lines, readers):
+    """'ok', 'inverted' or None: the LAST comment line that names the verdict columns and both readers decides"""
+    if not readers or len(readers) != 2:
+        return None
+    a, b = readers
+    pos = lambda name, l: [m.start() for m in re.finditer(rf'(?<![\w.]){re.escape(name)}(?![\w.])', l)]
+    last = None
+    for l in header_lines:
+        if l.lower().lstrip('# ').startswith('readers:') or not re.search(r'verdict|column|receipt\s', l, re.I):
+            continue
+        ia, ib = pos(a, l), pos(b, l)
+        if ia and ib:
+            last = 'ok' if ia[0] < ib[0] else 'inverted'
+    return last
 
 
 def _lit(cell):
@@ -169,6 +195,16 @@ def _seed():
               ('r7299: verdicts with one prose cell is a malformed batch',
                [('DELIBERATE', 'DELIBERATE'), ('DELIBERATE', 'see note')], 'malformed')]
     bad += [f'{lab}: expected {w}, got {_shape(v)}' for lab, v, w in shapes if _shape(v) != w]
+    cols = [('r7307: columns named in the readers order', ['# receipt\tliteral\tverdict (60, primary)\tverdict (69, blind)'],
+             ('60', '69'), 'ok'),
+            ('r7307: columns named against the readers order', ['# receipt\tliteral\tfirst verdict (cc66, blind)\tsecond '
+             'verdict (69, primary)'], ('69', 'cc66'), 'inverted'),
+            ('r7307: a later correction line governs', ['# receipt\tliteral\tfirst verdict (cc66)\tsecond verdict (60)',
+             '#: moved: column 3 is now 60, column 4 cc66'], ('60', 'cc66'), 'ok'),
+            ('r7307: a seat id inside a revision id is not a seat', ['# receipt\tliteral\tverdict (69, r7260)\tverdict (60)'],
+             ('69', '60'), 'ok'),
+            ('r7307: no column named by seat is not checked', ['# an accidental double-read'], ('69', 'cc66'), None)]
+    bad += [f'{lab}: expected {w}, got {_column_order(h, r)}' for lab, h, r, w in cols if _column_order(h, r) != w]
     for b_ in bad:
         print(f'    [FAIL] {b_}')
     print(f'  seeds: {"hold" if not bad else "LOST"}')
@@ -248,6 +284,13 @@ def main():
     bs = batches()
     sidecars = [x['file'] for x in bs if x['shape'] == 'sidecar']
     malformed = [x['file'] for x in bs if x['shape'] == 'malformed']
+    inverted = [x['file'] for x in bs if x['shape'] == 'batch' and x.get('columns') == 'inverted']
+    if inverted:
+        print(f'  ⛔ {len(inverted)} BATCH(ES) WHOSE COMMENTS NAME THE VERDICT COLUMNS AGAINST THE `# readers:` ORDER -- '
+              f'column 3 is the first-named reader.  Nothing is written.')
+        for f in inverted:
+            print(f'    {f}')
+        return 1
     bs = [x for x in bs if x['shape'] != 'sidecar']
     if sidecars:
         print(f'  ⌗ {len(sidecars)} FILE(S) MATCH THE BATCH GLOB AND HOLD NO VERDICT IN THE VERDICT COLUMN -- not a batch '

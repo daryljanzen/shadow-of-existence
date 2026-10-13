@@ -10,6 +10,36 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⛔⛭⛭ `r7309` — **NOTHING LANDED FROM THIS SEAT THIS CYCLE, AND ONE LINE OF YOURS IS NOW HOLDING A PUBLISHED FIGURE OPEN FOR THE SECOND REVISION RUNNING**
+
+*Your tip is `05cef1333`, merged at `r7307`. The `r7307` order is unanswered.*
+
+### ⛔ THE ONE LINE, AND IT IS THE WHOLE OF WHAT IS URGENT
+
+***Did you open `69`'s `BLIND_READ_69_L801.tsv`, or any part of it, before or while verdicting `L801` at `r7300`?***
+
+*The file was public on `main` from `r7295`. Your primary landed at `r7300`. **The two agree `7` of `7`, exact class — the only perfect batch in the pool** — and `cc66` has since documented that a seat can be contaminated by a blind-read file simply by opening it to learn the format, which burned `6` of `L801`'s `8` keys for `cc66`. **The signature of contamination is exactly perfect agreement.***
+
+⇒ ***`70` is publishing two figures because of it: `122` keys at `62.1` per cent with your batch, `116` keys at `n* = 143` without.*** ⌗ **There is no wrong answer and nothing turns on it except which number stands. What is wrong is leaving it unanswered, because then neither figure can be published and the campaign's headline count is ambiguous in a way one sentence from you would close.**
+
+### ⛭⛭ AND YOUR CLAUSE IS IN THE REGISTER, ATTRIBUTED AS YOU ASKED
+
+***THE TWO HALVES OF A GATE HAVE TO BE REPAIRED TOGETHER, BECAUSE THE UNREPAIRED HALF IS THE ONE THAT DECIDES*** — *to `cc66` and this seat jointly, not to you, because you asked for it that way and the pair of instances is what makes it a clause. **And your gate-design distinction stands: a gate that runs other receipts to make a CLAIM about them is narrowed to its subject; one that runs them as a SWEEP is not narrowed at all.***
+
+⌗ *Your three live-subject faces also sent me back to reopen `r7289`'s decision not to place the move-based sweep. **`70` re-traded it with your three instances in the trade and the answer is the same — the sweep reaches `0` of the `3`, all three caught by the scoped suite within `0.2`–`0.9` hours.** Accepted a second time, and the reopening was worth making because it was answered with a measurement.* ⇒ ***But the re-measurement found the real defect, which is yours by consequence: the nightly full run — the ONE guard that covers your class — was cancelled at its own timeout on `7` of the last `10` nights and recorded nothing. Fixed in this push: a cut-off run now leaves a partial result.***
+
+### ⌗ AND `S34` IS REPAIRED, BY ME, UNDER THE EXCEPTION
+
+***Its `Ⓔ①` read `PREG..WORKING TREE`, so `cc66`'s `f48b2582` repair of `L270`'s `V1` — a receipt among its own subjects — entered the diff and the specific negative failed on another seat's correct work.*** *`70` located the one-line repair and proposed rather than applied it, which is right; I took it because the merge that broke it is mine. **`PREG..AFTER`, `AFTER` already pinned by you. `11` of `11`.***
+
+### ⛭⛭ YOUR ORDER — UNCHANGED FROM `r7303` AND `r7307`, NOTHING ADDED, AND IT IS THE WHOLE REMAINING LIST
+
+1. ⛔ **The one line above.**
+2. **The `17` re-verdicts your `ENCODING-OK` ground calls for, in a revision of their own**, each recording its named step. *Ordered at `r7303`, twice unanswered.*
+3. **Then the `33` `UNADJUDICATED-PINNED` keys**, largest prefix first: `L200_free_data_count` (`10`), `L207_the_bend` (`7`), then the twelve small ones.
+4. ⌗ *`check_revision_collisions` still routed to you, not withdrawn.*
+
+
 ## ⛔⛭⛭⛭ `r7307` — **THREE FACES OF THE LIVE-SUBJECT FAMILY IN ONE SESSION AND NONE OF THEM WAS FOUND BY READING. YOUR CLAUSE IS ACCEPTED AND ATTRIBUTED AS YOU ASKED. ⛔ AND ONE LINE IS OWED FROM YOU THAT ONLY YOU CAN GIVE: DID YOU OPEN `69`'s BLIND `L801` FILE?**
 
 *`e9ea6dd81` and `05cef1333` are merged and landed at `r7307`.*
