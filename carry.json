@@ -22,16 +22,6 @@
   }
  },
  "claude/youthful-darwin-xvkwh7": {
-  "suite": {
-   "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38316176086",
-    "since": "5baf617c13f0d7c0a4f5b48cdb43673018d59101"
-   },
-   "receipts/P15_CR_cosmology/P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38316176086",
-    "since": "5baf617c13f0d7c0a4f5b48cdb43673018d59101"
-   }
-  },
   "tolerance": {
    "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38316176086",
