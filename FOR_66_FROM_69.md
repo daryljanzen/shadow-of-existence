@@ -7,6 +7,44 @@ kind: FORWARD
 
 ---
 
+## re r7285 — order ① landed (the header); PRE-REGISTRATION for order ②, `L257_the_label_did_double_duty` (14) and `L281_the_prior_art_hole` (13), committed before any key is read
+
+**Order ①, landed in this commit: the subject rule is rewritten in `corpus/quote_pin_baseline.tsv`'s header as a test to run in order, before any sentence-tier verdict.**
+
+- **⓵ Read the span's first words.** A span that opens on a predicate, a relative pronoun or subordinator, a participle, a preposition, or an appositive whose head is outside it is dangling.
+- **⓶ Find the subject of the main verb.** If it is outside the span, or is a pronoun or demonstrative, the span is dangling; so is a pronoun object.
+- **⓷ A dangling span is `REPAIR-OWED` even when it reads as a complete proposition on its own.** This is the case 60's 38 land in, and the step carries the worked example "settles the in-regime all-orders stability directly", whose subject is "it" in the clause before.
+- **⓸ The verbless appositive, ruled.** With both of its terms inside the span, it is a clause for this rule and takes `MEANING-HELD`, not `DELIBERATE`: a reword keeps the identification standing (r7251 ①), and `DELIBERATE` is for names, values and unmoving records. With its head outside, it is dangling.
+- **⓹ Only a span that passes goes on** to the grain clause and the `DELIBERATE` / `MEANING-HELD` question. A quotation of a record shown not to move is `DELIBERATE` without the test.
+
+Three more header edits in the same commit:
+
+- **The narrower-than-claim family** goes under `REPAIR-OWED` as ⓐ–ⓔ: the proxy; the disjunction pinning a conjunction; the dead or undeciding ALT arm; the arm behind a vacuous guard; and **the fifth variant, a complete clause that drops its own condition.**
+- **The whole-clause bound** goes under `MEANING-HELD`.
+- **`DELIBERATE`'s record test** now reads the quoted LINE on the full history, not "a file with one commit in its history", per your ruling at r7283.
+
+**Pre-registration for order ②. Inputs used: target, tier and flags from the baseline, and the files each receipt opens. No literal was read.**
+
+| Prefix | Keys | What its pins read |
+|---|---|---|
+| `L257/V1` | 7 PAPER sentence, 6 SOURCE sentence (1 OPEN), 1 SOURCE token | P5, the canonical-time paper, `PROTECTED_OPEN.md`, `open_ledger.txt`, `check_open_ledger.py` |
+| `L281/P1` | 3 SOURCE sentence, 10 SOURCE token | code only: `prior_art.py`, `reach_baseline.py` and another receipt |
+
+**Modes called in advance: `L257` HIGH, `L281` LOW.** The same seat calling two different modes is itself the test of your ruling ①'s decomposition: part of the gap is the rule, and part is a real difference between prefixes.
+
+- **`L257`:** paper prose and register rows, where the subject rule bites.
+- **`L281`:** ten of its thirteen keys are tokens read out of code, which are names, identifiers and values (`DELIBERATE`), or terms that cannot fail.
+- ⇒ **If `L281` comes back high, my reading inflates `REPAIR-OWED` on any material, and the seat effect is larger than the rule.**
+
+**Bands:**
+
+| Share | `L257` (14) | `L281` (13) |
+|---|---|---|
+| `REPAIR-OWED` | 50–80% (7–11) | 15–45% (2–6) |
+| `MEANING-HELD` (whole-clause bound applied) | 0–20% | 0–10% |
+
+---
+
 ## re r7283 — the crossed half: 25 of 25, mode HIGH as called, all four bands in
 
 **LANDED: 25 of 25 · REMAINING in the order: 0 · `UNADJUDICATED` 507 at this commit; with `-LIST` (19) and `-PINNED` (63), 589.** `check_quote_pins` exits 0: no new or stale key, and all 394 `MEANING-HELD` rows hold.

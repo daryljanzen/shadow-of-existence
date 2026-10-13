@@ -12,7 +12,9 @@
 # ** THE VERDICTS (proposed; 66's to settle): **
 #   UNADJUDICATED  not yet read.  ** The only bucket that means work, and its count may only FALL. **
 #   DELIBERATE     the wording IS the claim: a NAME (a receipt key inside \rcpt{}, a label, a macro), a value, or a
-#                  quotation of a record shown not to move (a file with one commit in its history).  ** NOT a quoted
+#                  quotation of a record shown not to move (the quoted LINE written once and never altered, traced
+#                  literal by literal on the FULL history -- not the file's commit count, which says nothing about whether
+#                  an append-only row moves, and never a shallow clone's graft root, r7283).  ** NOT a quoted
 #                  definition or a falsifier: a meaning-preserving reword of a definition leaves it standing, so such a
 #                  pin is a proposition and is MEANING-HELD (r7251 ①, r7271 ruling ②).  And a receipt's declared purpose
 #                  is never the ground (r7251 ②). **
@@ -24,6 +26,16 @@
 #                  CO-OCCURRENCE pin, two short spans whose conjunction in a FILE stands for one claim made in one sentence;
 #                  a span or ALT arm that cannot FAIL (a common word, the mirror of the dangling arm that cannot fire); and
 #                  an OBJECT-dangling span, subject named and object a pronoun.  Each repair is a widening. **
+#                  ** And the NARROWER-THAN-CLAIM family, of which cannot-fail is the extreme (r7271-r7285, 69's batches):
+#                  ⓐ the PROXY -- a name, term or heading standing for a proposition, able to fail but carrying less than
+#                  the claim ("Brown and Kucha", "WHAT IT CANNOT DO"); ⓑ the DISJUNCTION pinning a CONJUNCTION -- the label
+#                  claims both, the check is an `or`; ⓒ the DEAD or UNDECIDING ALT arm -- an arm occurring nowhere, or one
+#                  that is a substring of its partner, or one `or`-ed with a partner that cannot fail; ⓓ the arm behind a
+#                  VACUOUS GUARD, never evaluated (its repair is the guard, routed as a receipt defect); ⓔ (the FIFTH
+#                  variant, r7285 ruling ③) a COMPLETE CLAUSE THAT DROPS ITS OWN CONDITION -- subject named, clause whole,
+#                  and the qualifier the claim rests on outside the span ("the leaf's transverse-traceless mode evolves by
+#                  a wave equation", where the paper conditions it on "a wave that one residual isometry still pins" and
+#                  the claim is that the CONFINED case is exhibited).  None of ⓐ-ⓔ is reached by the subject rule. **
 #   NOT-A-PIN      (r7131+70.1, 70) the operator's false positive: not a test of another seat's wording at all (a parse guard,
 #                  an absence claim written as `== []`, a seed that adapts to the current state).  Counted, not owed.
 #   ENCODING-OK    (r7137+70.1, 70) an ALT whose arms are encodings of ONE fact (case, markup, spacing, prefix/full line),
@@ -32,6 +44,10 @@
 #                  70's registered content-skeleton passes 0 of 3 seeded members, structurally, because a converse keeps every
 #                  token.  So REPAIR-OWED on such a row named work nobody can do: the finding is held at its commit, the live
 #                  string assertion is a READ TRIGGER rather than a guard, and the key is COUNTED and not owed.
+#                  ** THE WHOLE-CLAUSE BOUND (r7283): a row can take MEANING-HELD only if its span passes the subject rule
+#                  below, so the MEANING-HELD share of a batch is bounded by how often its receipts pin WHOLE clauses.  A
+#                  batch of fragments has MEANING-HELD near zero however many propositions it pins -- they are all there,
+#                  and every one lands in REPAIR-OWED first. **
 #   ** AND r7253's ruling ② -- THE GRAIN CLAUSE, which decides WHICH of DELIBERATE and REPAIR-OWED a pin takes: DELIBERATE
 #      where the pinned span is the SHORTEST that carries its claim AND the claim is an IDENTITY; REPAIR-OWED where a strictly
 #      shorter span carries it, the repair being to shorten the span.
@@ -44,12 +60,30 @@
 #        windows landing mid-word.  ** SO THE CLAUSE AS BOUND READS: DELIBERATE where the pinned span is the shortest
 #        CONTIGUOUS, WORD-ALIGNED span that carries its claim and the claim is an IDENTITY; REPAIR-OWED where a
 #        strictly shorter such span carries it. **  A seat reading only limits ① and ② applies an unamended clause.
-#   ** THE SUBJECT RULE -- the rule limit ① defers to where the grain clause is silent (written down r7271, 69; the ledger
-#      applied it and the header named it without stating it).  A span that pins a PROPOSITION is cut or widened to the
-#      clause that NAMES ITS SUBJECT: it does not open on a verb, a subordinator or a bare predicate ("is ...",
-#      "carries ...", "has ...", "As ...", "not a datum ..."), and a pronoun inside it ("it", "they") is widened to its
-#      antecedent.  A span the rule finds dangling is REPAIR-OWED, and its repair is the widening, after which the row is
-#      EXTENDED.  Widening is a SPAN change: the receipt's assertion, tolerance and the document it reads do not move. **
+#   ** THE SUBJECT RULE -- the rule limit ① defers to where the grain clause is silent (written down r7271, 69; rewritten
+#      r7285, 69, because a second reader verdicted the same shape the other way: 38 of 60's 153 DELIBERATE/MEANING-HELD
+#      rows against 1 of 69's 22, r7285 ruling ②).  APPLY IT AS A TEST, BEFORE ANY SENTENCE-TIER VERDICT, IN THIS ORDER:
+#      ⓵ READ THE SPAN'S FIRST WORDS.  If it opens on a predicate or verb ("is ...", "settles ...", "extend ..."), a
+#        relative pronoun or subordinator ("which ...", "that ...", "while ...", "As ..."), a participle ("carrying ..."),
+#        a preposition, or an appositive or noun phrase whose head sits outside it ("complex-analytic and geometric",
+#        "exactly the perturbative regime of ..."), the span is DANGLING.
+#      ⓶ FIND THE SUBJECT OF ITS MAIN VERB.  If the subject is outside the span, or is a pronoun or demonstrative ("it",
+#        "this", "they", "these"), the span is DANGLING; so is a span whose OBJECT is a pronoun ("... frees it").
+#      ⓷ A DANGLING SPAN IS REPAIR-OWED EVEN WHEN IT READS AS A COMPLETE PROPOSITION ON ITS OWN.  This is the case the
+#        rule exists for and the one a second reader keeps passing: "settles the in-regime all-orders stability directly"
+#        reads complete, and its subject ("it", Friedrich's result) is in the clause before it.  Reading complete is not
+#        naming the subject.  Its repair is a widening -- to the clause that names the subject, a pronoun to its
+#        antecedent -- after which the row is EXTENDED.  Widening is a SPAN change: the receipt's assertion, tolerance and
+#        the document it reads do not move.
+#      ⓸ THE VERBLESS APPOSITIVE, ruled here because it is the boundary: an appositive with BOTH of its terms inside the
+#        span ("the one non-generic exception, the Nariai branch") is a CLAUSE for this rule -- it names its subject and
+#        nothing the claim needs is outside it.  It then takes MEANING-HELD, not DELIBERATE: a reword keeps the
+#        identification standing (r7251 ①), and DELIBERATE is for names, values and unmoving records.  An appositive
+#        with ONE term inside the span and its head outside is dangling under ⓵.
+#      ⓹ ONLY A SPAN THAT PASSES ⓵-⓸ GOES ON TO THE GRAIN CLAUSE and the DELIBERATE / MEANING-HELD question, and even
+#        then the narrower-than-claim family under REPAIR-OWED (ⓐ-ⓔ) is checked: a whole clause can still drop its
+#        condition.  A quotation of a record shown not to move is DELIBERATE without this test -- its wording, clipped or
+#        not, is the record. **
 #      ⌗ AND AN OPERATIONAL LIMIT, r7255+cc66.172 ①, from performing the 27: limb two needs the shorter span's
 #        OCCURRENCE COUNT taken BEFORE the shortening.  On the clause's own cited exemplar the shorter span occurs
 #        TWICE where the pinned form occurs once, so shortening converted a pin on the CLAIM into a pin on the FILE.
