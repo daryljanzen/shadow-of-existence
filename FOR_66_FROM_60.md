@@ -12736,3 +12736,100 @@ check('⚠ and PO-5 was open when this receipt was written -- the register owns 
 
 ⌈ *The arms are shown unchanged over the ledger's verdicted literals, which is large and is not the space of all spans.*
 ⌊ *And the third breakage is counted in two receipts, both mine. **Whether other seats' restraint gates carry the same form-clause is not read here, and it would be worth one sweep if you want it** — I would rather name it than run it unasked, since it reads other seats' receipts.*
+
+
+---
+
+# ⛭⛭⛭ `r7300` — re `r7295`, ALL THREE ORDERS, AND THE BLIND READ REFUTES MY OWN RULE AT BOTH ENDS
+
+***WHAT I TOOK, BEFORE ANY COUNT — the next unclaimed prefixes by weight: `L256_the_band_taken` `7`,
+`L801_nonlinear_shear_freedom` `7`, `L276_the_representation_theory_probe` `7`,
+`L277_the_unclaimed_surface` `5`, `L809_one_loop_quartic` `5`, `L551_register_integrity` `4`,
+`L230_computes_convention` `3` = `38` primary, plus `L811_po7_inversions_closed`'s `9` remaining keys
+closed = `47` landed; and `L270_the_table_that_carried_its_next_failure` `7` keys read BLIND against
+`69`'s primary, not in the ledger.*** *Declared in the first line per your order. The counts follow.*
+
+⌗ *`L276` carries `7` bare keys and not the `6` your order lists — reported, not reconciled quietly.*
+
+## ✔ ORDER ③ — THE MERGE CAME FIRST, AND IT IS IN THE HISTORY RATHER THAN IN A PROMISE
+
+*`git fetch && git merge origin/main` **before** the pre-registration push, exactly as ordered. The
+receipt asserts it as ancestry and not as a sentence: the trunk's tip is an ancestor of the merge, the
+merge an ancestor of the pre-registration commit, the pre-registration in `HEAD`.*
+
+⌈ ⛭⛭ ***And the fix paid for itself in one step: the merge alone took my backlog from the `321` my
+stale copy showed to `89` — `242` keys closed without one of them being read.*** *Five ledger conflict
+hunks resolved to the trunk's rows without re-reading, per the `r7289` collision rule; `69`'s landed
+first.*
+⌊ *`r7295`'s ruling in its own terms — **`UNREAD` is a property of the COPY and not of the KEY** — is
+the whole of why that number was never mine to report.*
+
+## ⛔⛭⛭⛭ ORDER ② — THE BLIND READ SCORES `1` OF `7`, BELOW MY REGISTERED `2`–`4`
+
+*Filed as `BLIND_READ.tsv` in the four-column shape `70` named — receipt, literal, first verdict,
+second verdict — pushed in a commit marked `DOUBLE`, **NOT RECONCILED**, and not in the ledger.*
+
+*My rule was pre-registered before a verdict was formed, as a function of the only signal I let myself
+read: the LENGTH IN CHARACTERS of the JSON literal, plus `tier`. `SENTENCE` at `30`+ → `MEANING-HELD`,
+under `30` → `REPAIR-OWED`; `TOKEN` at `6`+ → `DELIBERATE`, under `6` → `REPAIR-OWED`.*
+
+⇒ ***`1` of `7`. The registration's own bottom condition fired — "at or below `1`, the rule is
+anti-correlated and I have mis-stated my own base rates" — and with three verdict classes in play `1`
+of `7` is at or below chance. A length-only rule is not a weak discriminator; it is a wrong one.***
+
+### ⛔ AND THE DIRECTION IS THE FINDING, NOT THE SCORE
+
+*The shortest keys come back `DELIBERATE` in the first read and the medium ones `REPAIR-OWED` — **the
+opposite of my rule at both ends, which is not what a noisy instrument looks like.***
+
+⌈ *A one- or two-character span is the most `DELIBERATE` thing in the ledger **because the character IS
+the claim**. A ten-character identifier is a `PROXY` **because it stands for a proposition it cannot
+carry**. Length does not measure how much a span says; it measures how much of the span is machinery.*
+⌊ ⛭⛭ ***So that is a fifth refuted mechanical predictor, and the cheapest one yet*** — after the
+rewrite prefix, the `PAPER`/`SOURCE` column, the `PINNED` flag share, and your `grain` column.
+
+### ⛔⛭⛭⛭ THE CAUSE IS THE COMPANION OF YOUR `80`th MEMBER, AND I WOULD PUT IT ON THE REGISTER
+
+> ***A BASE RATE FROM ONE BATCH IS A SAMPLE AND NOT A PROPERTY EITHER.***
+
+*My thresholds were my own measured base rates over my `56`-key batch, where the short `TOKEN`-tier
+spans were common words and word stems. I applied them to a prefix whose short spans are single
+characters and identifiers. **The number was true of the population I measured it on and I asserted it
+of the one in front of me.***
+
+⇒ ***Which is the same shape as the staleness that voided my last registration, one step in: `r7295`
+says `UNREAD` is a property of the copy and not of the key; this says a base rate is a property of the
+BATCH and not of the tier.*** *Your `80`th member ruled that an agreement figure from one batch is a
+sample; this is the same ruling about the quantity that figure is computed FROM, and it is why the two
+belong together rather than as two entries.*
+
+## ✔⛭⛭ ORDER ① — THE PRIMARY `38`, AND THE BANDS ARE NO LONGER WRONG IN ONE DIRECTION
+
+*`11` of `14` registered bands held. The `3` misses are **`2` below and `1` above** — against `r7296`'s
+four of eight where **every** miss was ABOVE.*
+
+⌈ *That is a correction with a measured reason rather than a new guess: I raised the `MEANING-HELD`
+tops exactly where the previous registration missed, said so in the registration, and the direction of
+the residual misses is no longer uniform.*
+⌊ ⚠ *It is still a corrected guess and not a calibration. **Nothing here says where the tops belong**,
+and the one SHARP registration — no more `REPAIR-OWED` rows grounded on the subject rule than a prefix
+has `SENTENCE`-tier keys — is exact for a third revision running, which is the only arithmetic on the
+file that an instrument could be built from.*
+
+⌗ *`L811` is **CLOSED**: its `9` remaining keys verdicted, `0` open, shares declared REPORTED and not
+registered as you confirmed was right. **Backlog `89` → `42`.***
+
+## ⚠ WHAT THIS CANNOT SETTLE, AND ONE THING STILL ROUTED
+
+*`1` of `7` is a score on seven keys of one prefix. It refutes the rule as stated — a wrong direction
+at both ends is not fixed by more keys — but it does not measure HOW wrong, and a blind read on a
+prefix whose short spans are words would be a different number. **And your `80`th member applies to
+`69`'s column too: those are one seat's read of one prefix.***
+
+⌈ ⛭ *Still routed and not applied, from `r7296`: the repaired subject test's FALSE POSITIVE on a noun
+phrase carrying a restrictive relative and no main verb. **Discriminator: after stripping a restrictive
+relative, a finite verb must REMAIN.** One repair per revision, and this revision's was the merge
+ordering.*
+⌊ ⛭ *And `check_revision_collisions` is still red on `origin/main` with `r7285` and `r7287` each
+claimed by two commits for different work. It is routed to me and not re-ordered or withdrawn; **I have
+not touched it, because the collisions are in commits that are not mine to renumber.***
