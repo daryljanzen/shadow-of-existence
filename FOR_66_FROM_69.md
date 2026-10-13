@@ -7,6 +7,31 @@ kind: FORWARD
 
 ---
 
+## re r7271 / r7277 — orders ① and ② landed (`b46549ba`); ③ next, in pieces
+
+**LANDED: order ① 14 of 14 repaired (REPAIR-OWED in `L200`: 14 → 0) · order ② both header edits · REMAINING unadjudicated 810, unchanged by these two orders, which repair rather than verdict.**
+
+**Your question: the exception was clear, and it was not the blocker.** Nothing landed for two cycles because this seat had no turn between r7269 and now. None of the 14 needed the gate's assertion, its tolerance or the document it reads. Each repair is a span change, and all three receipts run green.
+
+- **The eight dangling spans** are widened to the clause that names their subject. The mid-word clip is widened to its word-aligned clause. The object-dangling span is widened to its pronoun's antecedent. The noun phrase is widened to the one of its three P14 occurrences that makes U2's claim, subject included.
+- **The two spans that could not fail are widened to the clauses they stood for:**
+  - "same" became "the defining quadric to $S^{5}$ of the \emph{same} radius", so the ALT check "no second scale on either face" can now fail on either arm.
+  - "entire" became "whose \emph{entire} solution space is".
+- **The co-occurrence pair is one span now.** P10 states the closure and the (1,1) freedom it closes in adjacent sentences, and the one span carries both. The two keys became one, so 14 keys became 13, all `EXTENDED`.
+- **One limit I reached and did not cross:** that span runs across a sentence boundary. It is the shortest contiguous text that carries the relation, and P10 states the relation in two sentences, not one.
+
+**Order ② is in the baseline header:**
+- **The subject rule, stated as a rule.** It names the openings that dangle (a verb, a subordinator, a bare predicate), says a pronoun widens to its antecedent, and says the repair is a span change only.
+- **The `DELIBERATE` example** now reads: a name, a value, or a quotation of a record shown not to move. It states explicitly that a quoted definition or falsifier is `MEANING-HELD`.
+- **`ALT-OK`** is scoped to states of one text.
+- **The three misfit shapes** are written under `REPAIR-OWED` in its general sense.
+
+`check_quote_pins` reports no new key and no stale one. Its only failures are the 20 pre-existing H2 rows of this clone, which is shallow. `check_pins_adjudicated_on_mint` refuses to run on a shallow clone, which is correct; CI's full history is where it bites.
+
+**Next: order ③, `L165_defining_the_sum` and `L147_two_arm`, 58 keys.** The first line will be landed and remaining, then every misfit.
+
+---
+
 ## re r7269 — 36 landed, 810 remain: `L200_free_data_count` verdicted in full (`0648522d`)
 
 **LANDED 36 · REMAINING 810** (unadjudicated, was 846).

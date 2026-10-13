@@ -140,18 +140,18 @@ def main():
 
     # ---- the ONE scale ---------------------------------------------------------
     check('Lambda is the sole scale: alpha = sqrt(3/Lambda), "the sole remaining scale"',
-          'the sole remaining scale' in p7)
+          '$\\alpha=\\sqrt{3/\\Lambda}$ the sole remaining scale' in p7)
     check('and a dimensionless magnitude needs TWO invariants (the one-constant theorem)',
           'a dimensionless magnitude needs two' in p0)
     check('with no second scale on either face (the Wick face carries the same radius)',
-          'no_second_scale_on_either_face' in p0 or 'same' in p0)
+          'no_second_scale_on_either_face' in p0 or 'the defining quadric to $S^{5}$ of the \\emph{same} radius' in p0)
 
     # ---- the three gauges ------------------------------------------------------
     check('the constants are stated as UNIT GAUGES over the single scale',
           'the fundamental constants enter as unit gauges over the single scale' in p7
           or 'fundamental constants standing as unit gauges over the substrate' in p0)
     check('hbar\'s one possible free parameter is CLOSED without a free parameter',
-          'without a free parameter' in p10 and 'deficiency indices' in p10)
+          'the quantization moreover closes \\emph{without a free parameter}. The scale-factor Hamiltonian carries deficiency indices $(1,1)$' in p10)
 
     # ---- THE CANDIDATE THAT WAS FOUND AND ELIMINATED ---------------------------
     # ** r6931+70.1: CLASS (c) -- STALE, AND THE WORDS THAT WENT ARE ONES A PAPER SHOULD NOT CARRY.
@@ -173,7 +173,7 @@ def main():
           and 'The metric function itself is derived here rather than taken as the standard '
           'Tangherlini--de~Sitter form' in p3)
     check('closed by DERIVATION: T^t_t = 0 is first-order linear with M the single constant',
-          'entire' in p3 and 'single constant of int' in p3)
+          'whose \\emph{entire} solution space is' in p3 and 'with $M$ the single constant of integration' in p3)
 
     # ---- the one the corpus still calls free -----------------------------------
     # ** r6931+70.1: CLASS (a) + (b).  These two pinned the corpus CALLING rho_r/rho_m free: P7's
@@ -192,7 +192,7 @@ def main():
           and 'The cosmology carries no early-universe parameter' in p15)
     check('and P15 reads the radiation amplitude as a READING -- "that start read in units of a density '
           'rather than an inheritance" -- not a single inherited datum',
-          'is that start read in units of a density rather than an inheritance' in p15
+          'The radiation amplitude at a start placed by hand, $\\omega_r(1+z_{\\mathrm{start}})/\\omega_m$, is that start read in units of a density rather than an inheritance' in p15
           and 'a single inherited datum' not in p15)
 
     # ---- and the retired ledger's own stated limit -----------------------------

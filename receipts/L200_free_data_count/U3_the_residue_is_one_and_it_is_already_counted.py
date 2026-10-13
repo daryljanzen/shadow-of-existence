@@ -122,7 +122,7 @@ def main():
     check('and a Cayley-Klein geometry carries the scale as its ONLY free constant',
           'carries the scale as its \\emph{only} free constant, signature, null structure and isometry group a' in p0)
     check('so the one-scale reading has a MECHANISM, not just an audit',
-          'has a classical mechanism and is not only the outcome of an exhaustive audit' in p0)
+          'The one-scale reading therefore has a classical mechanism and is not only the outcome of an exhaustive audit' in p0)
 
     # ---- the count itself ------------------------------------------------------
     dim_o51 = 6*5//2
