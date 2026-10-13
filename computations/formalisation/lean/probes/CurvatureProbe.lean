@@ -516,6 +516,54 @@ theorem scal_conf (a : ℝ → ℝ) (p : ℝ × ℝ) (ha : a p.1 ≠ 0) :
 
 end Instance
 
+/-! ## `r7289`, Probe F1 — the Einstein tensor and the field equations, over a fibre
+
+The trace of a bilinear form against `g` generalises K3's `scal`. -/
+
+section Fields
+
+variable {V : Type*} [AddCommGroup V] [Module ℝ V] [FiniteDimensional ℝ V]
+
+/-- The `g`-trace of a bilinear form: `tr (g⁻¹ ∘ H)`. -/
+noncomputable def trG (H : V →ₗ[ℝ] V →ₗ[ℝ] ℝ) (g : LinearMap.BilinForm ℝ V) (hg : g.Nondegenerate) : ℝ :=
+  LinearMap.trace ℝ V ((g.toDual hg).symm.toLinearMap ∘ₗ H)
+
+theorem trG_eq_sum {ι : Type*} [Fintype ι] [DecidableEq ι] (H : V →ₗ[ℝ] V →ₗ[ℝ] ℝ)
+    (g : LinearMap.BilinForm ℝ V) (hg : g.Nondegenerate) (b : Module.Basis ι ℝ V) :
+    trG H g hg = ∑ i, H (g.dualBasis hg b i) (b i) := by
+  rw [trG, LinearMap.trace_eq_matrix_trace ℝ (g.dualBasis hg b), Matrix.trace]
+  refine Finset.sum_congr rfl fun i _ => ?_
+  rw [Matrix.diag_apply, LinearMap.toMatrix_apply, LinearMap.BilinForm.dualBasis_repr_apply,
+    LinearMap.comp_apply, LinearEquiv.coe_coe, LinearMap.BilinForm.apply_toDual_symm_apply]
+
+/-- **G4a.** The Einstein tensor `Ein = Ric − ½ R g`. -/
+noncomputable def einstein (R : V →ₗ[ℝ] V →ₗ[ℝ] V →ₗ[ℝ] V) (g : LinearMap.BilinForm ℝ V)
+    (hg : g.Nondegenerate) : V →ₗ[ℝ] V →ₗ[ℝ] ℝ :=
+  ricci R - ((1 / 2 : ℝ) * scal R g hg) • g
+
+/-- **G4a.** Einstein's equations with `Λ`, coupling `κ` (`= 8πG`) and a source `T`: `Ein + Λ g = κ T`. -/
+def FieldEq (R : V →ₗ[ℝ] V →ₗ[ℝ] V →ₗ[ℝ] V) (g : LinearMap.BilinForm ℝ V) (hg : g.Nondegenerate)
+    (Λ κ : ℝ) (T : V →ₗ[ℝ] V →ₗ[ℝ] ℝ) : Prop :=
+  einstein R g hg + Λ • g = κ • T
+
+/-- **G4a.** A perfect fluid with density `ρ`, pressure `p` and velocity `U`: `(ρ + p) U♭ ⊗ U♭ + p g`. -/
+noncomputable def perfectFluid (g : LinearMap.BilinForm ℝ V) (ρ p : ℝ) (U : V) :
+    V →ₗ[ℝ] V →ₗ[ℝ] ℝ :=
+  (ρ + p) • LinearMap.mk₂ ℝ (fun v w => g U v * g U w) (fun _ _ _ => by simp [add_mul])
+    (fun _ _ _ => by simp [mul_assoc]) (fun _ _ _ => by simp [mul_add])
+    (fun _ _ _ => by simp; ring) + p • g
+
+end Fields
+
+/-- **F1, the instance.** In two dimensions the Einstein tensor of `covConf a` vanishes identically. -/
+theorem einstein_conf (a : ℝ → ℝ) (p : ℝ × ℝ) (ha : a p.1 ≠ 0) :
+    einstein (Rconf a p) (gB a p) (gB_nondeg a p ha) = 0 := by
+  refine LinearMap.ext₂ fun u v => ?_
+  rw [einstein, scal_conf a p ha, LinearMap.sub_apply, LinearMap.sub_apply, ricci_conf]
+  simp only [LinearMap.smul_apply, gB, LinearMap.mk₂_apply, smul_eq_mul, LinearMap.zero_apply]
+  field_simp
+  ring
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -528,3 +576,5 @@ end ShadowProbe
 #print axioms ShadowProbe.curv_conf
 #print axioms ShadowProbe.Rconf_eq_curv
 #print axioms ShadowProbe.scal_conf
+#print axioms ShadowProbe.trG_eq_sum
+#print axioms ShadowProbe.einstein_conf
