@@ -1,0 +1,69 @@
+# id	verdict	reason (two read-only readers; 51 and 65 re-read by this seat: 51 agreed, 65 disputed -- see results.md)
+1	NOT-LIVE	b_tot comes from counted(BIRTH): git ls-tree at the literal sha 9f4477c, which is pinned
+2	INTEGRITY	myrow is the receipts/INDEX.md working-tree rows naming this receipt's own filename; "exactly one row for me" is a uniqueness check
+3	NOT-LIVE	the git log runs in a temp repo the receipt seeds itself (two commits it makes), not the corpus's origin/main or HEAD
+4	INTEGRITY	subjects come live from git log --all; a per-id count of commits is a revision-id collision/duplicate classification, and the assertion is that no id is unique
+5	INTEGRITY	row is the live receipts/INDEX.md rows matching 'r3142, `L-261`'; "exactly one such row" is a uniqueness check
+6	DEFECT	counts '★ NEXT' in the live THE_MATHEMATICS_REACH.md; a seat marking or clearing the next candidate field moves it while the r3158 correction claim is unchanged
+7	INTEGRITY	the live THE_MATHEMATICS_REACH.md must hold the heading exactly once; this is a duplicate check against the spliced/corrupted-heading defect it records
+8	INTEGRITY	found is a fixed list of 3 presence booleans over live THE_LIVE_ARC/THE_PHYSICS_REACH; ==3 equals all-present and cannot be moved upward by a new row
+9	NOT-LIVE	rb = rows_of(git show 7b6fded:PROTECTED_OPEN.md), pinned sha
+10	NOT-LIVE	rn = rows_of(git show a83455b...:PROTECTED_OPEN.md), pinned sha
+11	INTEGRITY	rl is the live PROTECTED_OPEN.md, but 7 is the cell count of each row, a shape check that a split on an unescaped bar should fail
+12	NOT-LIVE	bad_before is built from rb, pinned at 7b6fded
+13	NOT-LIVE	v is a value of `one` = po_rows(git show ONE:PROTECTED_OPEN.md), pinned sha
+14	NOT-LIVE	_dupsk is from git show ed7b4d0:receipts/INDEX.md and skipped from e33c34c (_BLIND), both pinned
+15	NOT-LIVE	rows is from git show e33c34c:receipts/INDEX.md, pinned at _BLIND
+16	NOT-LIVE	n_near counts in src = git show e33c34c:corpus/check_receipts.py, pinned
+17	NOT-LIVE	v is a value of `now` = po_rows(git show REPAIRED:PROTECTED_OPEN.md), pinned
+18	INTEGRITY	liv is the live PROTECTED_OPEN.md; "not exactly one row per PO id" is the duplicate-recurrence check the receipt is about
+19	NOT-LIVE	node.ops is an AST Compare node's operator list in the detector, not a ledger read
+20	NOT-LIVE	node.ops is an AST Compare node from sources pinned at R7227^ (9ce054ba)
+21	NOT-LIVE	_cand/_saw_old come from blobs at R7227^ and S4's flagged() lifted from PIN 9c06b92f, all pinned
+22	NOT-LIVE	_cand/_saw_new come from the pinned R7227^ blobs run through the receipt's own detect()
+23	NOT-LIVE	_tot is summed over _live = at_many(PIN 9c06b92f, ...); the ls-files list only filters this seat's paths, and the content is pinned
+24	NOT-LIVE	_moved comes from S7's source read from _live, which is at_many at PIN 9c06b92f
+25	NOT-LIVE	_nonclaim is computed over _live blobs read at PIN 9c06b92f
+26	NOT-LIVE	_exposed comes from sweep(_live), and _live is the blobs at PIN 9c06b92f
+27	NOT-LIVE	_keys comes from at(PIN 9c06b92f, corpus/quote_pin_baseline.tsv), pinned sha
+28	NOT-LIVE	_dr comes from the baseline TSV read at PIN 9c06b92f
+29	NOT-LIVE	_from is regex matches on _dr rows from the baseline at PIN 9c06b92f
+30	NOT-LIVE	_from is regex matches on _dr rows from the baseline at PIN 9c06b92f
+31	NOT-LIVE	_rows = at(PIN 9c06b92f, corpus/quote_pin_baseline.tsv), pinned
+32	NOT-LIVE	p[0] is a git blame porcelain token, and len==40 is a hex-sha length test, not a count
+33	NOT-LIVE	CTL = sites_of_source(CONTROL), a local string constant in the receipt
+34	NOT-LIVE	CTL = sites_of_source(CONTROL), a local string constant in the receipt
+35	NOT-LIVE	CTL parsed from the local CONTROL source string; _w_in marks every site UNCOMMITTED, which own_sites always admits, so the result does not depend on the live RANGE
+36	NOT-LIVE	CTL = sites_of_source(CONTROL) over a constant source string inside the receipt
+37	NOT-LIVE	own_sites over constant CTL with the synthetic _w_in (all UNCOMMITTED) writers; the live RANGE plays no part when tree=True
+38	NOT-LIVE	_delta keys are the files changed in commit R7227='9ce054ba', read with git show at that sha and its parent (pinned)
+39	NOT-LIVE	constant CTL and synthetic _w_in writers again; own_sites returns it whatever the live RANGE holds
+40	NOT-LIVE	len(p[0])==40 checks that a blame porcelain token is a hex sha of length 40, a line-shape test
+41	DEFECT	_s5 counts MINE sites in S5_ marked EXPOSED; MINE comes from live working-tree SITES plus HEAD blame parity, so another seat's edit/repair of S5 lines moves it
+42	INTEGRITY	len(set(ps))==1 is a branch test that a line's live git log -L history has one parity; it classifies the line and is not a count
+43	NOT-LIVE	len(p[0])==40 is a hex-sha length check on a blame porcelain token
+44	NOT-LIVE	sha-length check on blame output at the literal PIN='15804cd2'
+45	NOT-LIVE	THIRTY comes from SITES_AT/W_AT, read with git ls-tree/show/blame at the literal PIN='15804cd2'
+46	NOT-LIVE	len(sub.ops)==1 counts the operators of an AST Compare node
+47	NOT-LIVE	_ctl/_no built from the local READING table plus nonzero_counter, which reads files via git show at PIN='15804cd2'
+48	NOT-LIVE	s[2] is the literal value of a site in THIRTY, which is pinned at PIN='15804cd2'
+49	NOT-LIVE	_no comes from pinned nonzero_counter results; READING['GENUINE'] is a local constant table
+50	NOT-LIVE	len(n.targets)==1 counts the targets of an AST Assign node
+51	DEFECT	_held counts live corpus/quote_pin_baseline.tsv rows with stamp r7260+60 and MEANING-HELD; another seat re-verdicting or restamping that row moves it
+52	INTEGRITY	_kept is a single-row lookup in live quote_pin_baseline.tsv: exactly one B66 row with that literal, verdict EXTENDED (a deliberate shape check)
+53	INTEGRITY	_t is the live git log --grep match count for each selector; the gate asserts the selector is unique in subjects, so a later matching commit should fail it
+54	NOT-LIVE	parity (mod 2) of the revision id in Q1's introducing commit (--diff-filter=A); fixed history, and not a count
+55	NOT-LIVE	GATELAYER is built from FILES, read with git ls-tree at the full sha PIN 211fe037...
+56	NOT-LIVE	_mine_files is counted over SRC blobs from git cat-file at PIN 211fe037 (pinned)
+57	NOT-LIVE	_n_glob counts regex matches in SRC[_hot], a blob read at the pinned PIN
+58	NOT-LIVE	_dropped compares RAW and STRICT, both computed over SRC read at the pinned PIN
+59	NOT-LIVE	_drop_rc comes from _dropped, which is computed over pinned PIN blobs
+60	NOT-LIVE	len(_n.ops)==1 counts the operators of an AST Compare node
+61	NOT-LIVE	parent count of a path's oldest introducing commit (git log --diff-filter=A); fixed history, and the check is "not a merge"
+62	INTEGRITY	_ctrl is the injected positive control: live _real (gated ==0 in the same clause) plus the constant _inject path; checks that the detector fires
+63	NOT-LIVE	then_answered comes from git show at the literal sha AT=2789ef91 (r2685); the live count is checked separately and monotonically
+64	INTEGRITY	commit count of the pre-registration PREDICTION.md; ==1 deliberately proves it is immutable and should go red if it is edited
+65	DEFECT	git log commit count of another seat's cc66.58 receipt; an ordinary later repair or reformat moves it while C64's own pins still hold
+66	INTEGRITY	_com[p] is the git log commit count of each pre-registration PREDICTION.md; ==1 is a deliberate immutability check
+67	INTEGRITY	_od is a single-row lookup in live quote_pin_baseline.tsv: exactly one row carries the optical-depth key
+68	INTEGRITY	_po75_rows is a regex lookup in live THE_REGISTER.md; exactly one PO-75 row is deliberate (a duplicate counts as failure)
