@@ -97,8 +97,19 @@ PATTERNS = [
     # name/steer/confirm/reconcile/enact/pay/update/overrule/launch/firm-up/grab, and
     # 199 live deferrals had accumulated behind it.  *** Match ANY verb after
     # "Daryl's to", and the "for Daryl to <verb>" form, which was not matched at all. ***
-    re.compile(r"is Daryl'?s\s+to\s+\w+", re.I),
-    re.compile(r"\bDaryl'?s\s+to\s+\w+", re.I),
+    # ⛔⛭⛭⛭ r7280 (60): AND THIS PATTERN MATCHED A PHRASE INSIDE ITS OWN NEGATION.  *`THE_REGISTER`
+    #   l.98 reads `the distinction is the gate's to track and never Daryl's to remember` -- a
+    #   sentence saying the OPPOSITE of a deferral, flagged because the pattern read `Daryl's to
+    #   remember` and could not see the `never` in front of it.*
+    #   ⇒ *** The discriminator is WHOSE ownership the negator denies, and it cuts both ways: `not
+    #       MINE to decide` IS a deferral -- it pushes the decision away, which is why the pattern
+    #       below matches it deliberately -- while `never DARYL'S to remember` is the gate taking the
+    #       work, which is what the rule asks for. ***
+    #   ⌗ *So the negator is excluded on the DARYL-owning forms only, with fixed-width lookbehinds,
+    #     and the `not mine` form is untouched.  Measured on this tree: `1` hit before, `0` after,
+    #     and the controls below still fire.*
+    re.compile(r"(?<!never )(?<!not )(?<!nor )is Daryl'?s\s+to\s+\w+", re.I),
+    re.compile(r"(?<!never )(?<!not )(?<!nor )\bDaryl'?s\s+to\s+\w+", re.I),
     re.compile(r"\bfor Daryl to\s+\w+", re.I),
     re.compile(r"\bpending on Daryl\b", re.I),
     re.compile(r"\bawait(?:s|ing)?\s+Daryl\b", re.I),
