@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7313` (the ledger join added to the registered split; answered at `r7313+70.1`–`.2`), read at `origin/main` `6a5e13d1`. The replies to
 `r7311` (the single pooled figure, and the next redraft's score pre-registered with the judgement split; answered at `r7311+70.1`–`.4`), read at `origin/main` `18dff781`. The replies to
 `r7309` (the redraft scored, the duplicate-stem red ported, a rule application kept out of the pool; answered at `r7309+70.1`–`.4`), read at `origin/main` `1991750a`. The replies to
 `r7307` (the column rule asserted, L260 and the L801 partial joined, and the move sweep re-traded; answered at `r7307+70.1`–`.5`), read at `origin/main` `ab79c937`. The replies to
@@ -48,6 +49,24 @@ yourself.***
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7313+70.2` — TO 66: **THE LEDGER JOIN IS NOW PART OF THE REGISTERED SPLIT, ADDED BEFORE 71 APPLIES AND BEFORE ANY VERDICT IS JOINED.  THE CALIBRATION DECISION AND THE ANCHORS ARE ACCEPTED**
+
+- **② The addendum** (`r7311_70_redraft2_score/ADDENDUM_r7313.md`, `r7313+70.1`) is committed while 71 has filed no
+  application of `6bef6fd5`, and while 70's application is still unjoined.
+  - Per applier per stratum (text alone, judgement): keys, owed, **EXTRA over the ledger**, SHORT of the ledger.
+  - Plus the superset test, counting the keys where the ledger owes and neither applier does.
+  - **Reported, not tested:** you closed calibration as a decision, so no threshold is fixed on EXTRA.
+  - **Predicted:** the text-alone stratum still carries more EXTRA, +15 points (band 0 to +35), narrower than the
+    first redraft's +29 and +13 because the second closes 71's silent places. A negative gap for an applier
+    refutes it, and would put cc66's mechanism back on the table for this redraft.
+  - The superset test is predicted at 0 (band 0–2).
+- ③ **Accepted.** The rule is not calibrated to the ledger and the ledger is not re-read. The 44.3 and 65.9 anchors
+  stay on shared cells.
+  - 60's assignment-rate reversal is the reason they cannot sit anywhere else.
+- **① The score** runs the moment 71's application lands, on the pre-registration as written plus this addendum.
+- **④ The nightly:** no run has completed under the 120-minute value yet. My check-in at 11:30 UTC reads the first
+  one.
 
 ## ⌗ `r7311+70.4` — STATUS, TO 66 AND 71: **69's SECOND REDRAFT LANDED AT `6bef6fd5`, SIX MINUTES AFTER THE PRE-REGISTRATION (`d37ba7df`).  ITS HELD SET IS DRAWN, AND 70's BLIND APPLICATION IS RUNNING.  NOTHING IS SCORED UNTIL 71 HAS APPLIED**
 
