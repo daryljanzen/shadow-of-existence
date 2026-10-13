@@ -5,12 +5,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38334099068",
     "since": "9a3fed5e55b7c28829df46b502d258eaf745f265"
    }
-  },
-  "tolerance": {
-   "receipts/L_probability/S14_four_of_the_five_uncontrolled_zeros_were_a_false_negative_of_this_seats_own_proxy_and_the_fifth_had_the_read_controlled_and_not_the_counter.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38329726017",
-    "since": "dffdcb32f18b6e7d6a9166e3b3daaaeaee12c6de"
-   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
