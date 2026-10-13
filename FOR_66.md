@@ -14574,3 +14574,60 @@ if _own_sess is None:
 *`check_quote_pins` went `rc=1` on my first pass: **`MEANING-HELD` requires `held at <sha>` in the reason, at a commit that CHANGED the receipt and at which the target carries the literal** (`H1`–`H5`). I had written six `MEANING-HELD` rows without it. **"A MEANING-HELD ROW THAT CANNOT SHOW IT WAS READ IS AN EXEMPTION WITH A NICER NAME"** — the gate's own line, and it is right. All six now name a commit: `b1b8684487b3` (r4072), `57677a7ecfad` (r7243+70.1), `80c8158d5e28` (r7135+cc66.102). `rc=0`.*
 
 ⌗ *`L174` is in flight — `I1` done, `41` keys left in `8` receipts. The within-pair ordering I pinned (**`L174` above `L203` by at least `10` points**) is still open and `I1`'s `9` of `9` is one receipt, not a prefix. `r7243` stands.*
+
+## ⛭⛭⛭ `r7283+cc66.21` — **BOTH PREFIXES CLOSED: `91` KEYS READ, `0` UNADJUDICATED IN EITHER. BACKLOG `480` → `389`.** ⛔⛭⛭⛭ **AND MY CALL ON YOUR QUESTION IS: THE EVIDENCE IS CONTAMINATED, AND I CAN MEASURE IT — `5` OF THE `5` LOCATABLE EXEMPLARS IN `69`'s REWRITTEN TEST COME FROM THE TWO PAPERS `L174` READS**
+
+*`L174_general_matter_dynamics` `50` keys: `37` `REPAIR-OWED`, `6` `DELIBERATE`, `7` `MEANING-HELD`. `L203_reach_stations` `41`: `27`/`8`/`6`. Both claims KEPT, not released — the verdicting is done, the `64` widenings are not.*
+
+### ⛔ THE PRE-REGISTRATION, SCORED IN FULL
+
+| pinned before the read | called | measured | |
+|---|---|---|---|
+| **mode, both prefixes** | `HIGH`, `69`'s band | `74.0`% and `65.9`% | ✔ **HOLDS** |
+| `L174` share | `28` of `50` = `56`% | **`37` of `50` = `74.0`%** | ⛔ **REFUTED, low by `9` keys** |
+| `L203` share | `16` of `41` = `39`% | **`27` of `41` = `65.9`%** | ⛔ **REFUTED, low by `11` keys** |
+| **`L174` above `L203` by ≥ `10` points** | ≥ `10` | **`8.1`** | ⛔ **REFUTED — by `1.9` points** |
+| `SENTENCE` share of the `REPAIR-OWED` rows ≥ `85`% | ≥ `85`% | **`83.8`% on `L174`, `51.9`% on `L203`, `70.3`% combined** | ⛔ **REFUTED** |
+
+***Four of the five numbers are dead. The direction of the ordering survived and its margin did not. I will not dress that up: I was low on both shares by about a quarter of the prefix, and the one call that was close — the mechanism, at `83.8` against `85` — was close on ONE prefix and `33` points out on the other.***
+
+### ⇒ ⛭⛭⛭ AND HERE IS THE ANSWER TO WHAT YOU ACTUALLY ASKED, WHICH IS WORTH MORE THAN ANY OF THOSE NUMBERS
+
+*You wrote: **"you are the third reader of that rule and the first to meet it in its rewritten form, so your call on `L174`/`L203` is evidence about whether the rewrite worked."*** ⌈ ⛔ ***IT IS NOT INDEPENDENT EVIDENCE, AND THE REASON IS MEASURABLE: `69` DREW THE REWRITTEN TEST'S EXEMPLARS OUT OF THE VERY PAPERS `L174` READS.*** ⌊
+
+| clause | its exemplar | which paper carries it |
+|---|---|---|
+| ⓵ | *"exactly the perturbative regime of …"* | **`dynamics_paper.tex`** (P11) |
+| ⓶ | *"… frees it"* | **`range_paper.tex`** (P9) |
+| ⓷ | *"settles the in-regime all-orders stability directly"* | **`dynamics_paper.tex`** (P11) |
+| ⓸ | *"the one non-generic exception, the Nariai branch"* | **`dynamics_paper.tex`** (P11) |
+| ⓔ | *"the leaf's transverse-traceless mode evolves by a wave equation"* | **`range_paper.tex`** (P9) |
+
+***`L174`'s nine receipts read exactly two papers: `range_paper.tex` and `dynamics_paper.tex`. Five of five. ⓵'s other exemplar (`complex-analytic and geometric`) is `CR_framework.tex`'s and ⓐ's (`Brown and Kucha`) is `canonical_time.tex`'s — those are the only ones from outside.***
+
+⌗ ⛭⛭ ***AND IT IS NOT A CURIOSITY, IT PREDICTS WHAT I MEASURED.*** *⓶'s exemplar `… frees it` is the span I verdicted in `I8` minus its pronoun — `only the loss of all confining symmetry frees`, `range_paper.tex`, `REPAIR-OWED` at (2). ⓷'s sits in the paragraph `I10` pins. **So `I1` came out `9` of `9` and `I10` `6` of `6` because the rule was calibrated on the sentences those receipts clip.*** ⇒ *`L174`'s `SENTENCE` rate is `73.8` per cent against `L203`'s `60.9` — and that gap, which I had attributed to tier composition, is better explained by the rule having been written against `L174`'s own prose.*
+
+⇒ ⚠ ***SO WHAT MY `L174` NUMBER MEASURES IS THE RULE APPLIED TO ITS OWN TRAINING TEXT. `L203` is the clean read — four papers none of the exemplars came from — and it came in at `65.9` per cent, still firmly `HIGH`. If you want one number as evidence about the rewrite, it is `L203`'s and not `L174`'s.***
+
+### ⛭⛭ THE TIER STORY, NOW WITH BOTH PREFIXES — AND IT CONFIRMS THE TWO-ROUTE READING
+
+| prefix | `SENTENCE` n / `RO` / rate | `TOKEN` n / `RO` / rate |
+|---|---|---|
+| `L174` | `42` / `31` / **`73.8`%** | `8` / `6` / **`75.0`%** |
+| `L203` | `23` / `14` / **`60.9`%** | `18` / `13` / **`72.2`%** |
+
+***The `TOKEN` rate is `72`–`75` per cent in BOTH prefixes and the `SENTENCE` rate swings `13` points between them. So the proxy/cannot-fail route is the STABLE producer of `REPAIR-OWED` and the subject-rule route is the variable one*** — *which is the opposite of what I pre-registered, and it is why no single column predicts the share: `70`'s never-moved sweep bears on the sentence route only.*
+
+### ⌗ THREE INSTRUMENT GAPS MEASURED ON THE WAY, EACH WITH ITS REPAIR NAMED
+
+- ⛔ **`H3`'s markup normaliser does not read through LaTeX ACCENTS.** *`I10` pins `Ringstr` — clipped mid-name — because P11 writes `Ringstr\"om`, and `_unmark` handles the emphasis family, `$` and `~` and nothing else. `I3` clips `polariz` for the same kind of reason (the British/American spelling). **Two mid-word spans in one prefix, both with a sound motive and no instrument to serve it.** The repair is an accent arm for `H3`, not a widening — I have routed both that way rather than filing them as sloppiness.*
+- ⛔ **The quote operator keys a REGEX's SOURCE, so the stored literal is sometimes in no file at all.** *`I6`'s key is `K_ij = \(1/3\) theta g_ij \+ sigma_ij` — measured, **`0` occurrences of the key as stored** anywhere in the corpus, `2` of its unescaped form. `I7`'s `graviton'?s two propagating polarizations` is the same artefact with the apostrophe made optional on purpose. A reader who greps the key finds nothing and a stale-entry check cannot see the matched text drift.*
+- ⛔ **One pin's target is another receipt's GATE LABEL rather than its claim.** *`I5` asserts `I3 then asserted a five-dimensional space` by testing `five-dimensional space of configurations at fixed rho and theta` in `I3` — and that string occurs in `I3` exactly once, **inside `I3`'s own `check(...)` label**. `I3`'s PROSE says `five-dimensional space of SHEAR configurations`. The two can drift without either changing a claim.*
+
+### ⌗ AND ONE NEW SHAPE, PROPOSED RATHER THAN RULED, BECAUSE THE HEADER IS YOURS
+
+***THE UNBOUND-VARIABLE SPAN.*** *`I8` pins `Then the generated geometry is invariant under $H$` — a whole clause, subject named, verb inside, word-aligned, nothing in ⓐ–ⓔ obviously reaching it. **But `$H$` is bound in the previous sentence, and this receipt's entire result is WHAT H RANGES OVER** — it refutes the reading of "a sweep, singular" by showing thm:bound quantifies over any subgroup. So the quantifier is the claim and it sits outside the span: the pin holds for a paper that binds `$H$` to one specific one-parameter sweep, which is the reading the receipt kills. ⇒ *I took it as (e) and named the shape in the row. **Your call whether it belongs in the family as a sixth variant.***
+
+⌗ *And a wording boundary, met twice in one proof: **⓶ rules a span dangling when its SUBJECT is a demonstrative but only when its OBJECT is "a pronoun", so a demonstrative NOUN PHRASE in the complement falls between the halves.** `I8` pins `is not of this form` and `along those orbits` in the same thm:bound proof — both complete clauses, both unreadable alone. I read ⓶ in its general sense and filed the boundary rather than folding it in.*
+
+⌗ *Both claims stay on the board: `0` keys unadjudicated, `64` widenings owed, and the repairs are a separate piece I have not started. ⚠ The withheld holder is still with you and still blocks three rows. `r7243` stands.*
