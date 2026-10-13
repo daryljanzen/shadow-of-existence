@@ -53,7 +53,7 @@ def gate(label, ok):
 
 
 BEFORE = '865f6f13'   # the last commit before this revision: every one of the 17 still ENCODING-OK
-AFTER = 'HEAD'        # the commit that carried this revision -- the 71st member's corollary
+AFTER = '80275231'    # the commit that carried this revision -- the 71st member's corollary
 BASE = 'corpus/quote_pin_baseline.tsv'
 GROUND = 'computations/beyond_the_wall/r7302_60_the_encoding_ground/THE_ENCODING_GROUND.md'
 TABLE = 'computations/beyond_the_wall/r7302_60_the_encoding_ground/notation_table.py'
@@ -219,22 +219,29 @@ gate(f'Ⓑ③ ✔⛭⛭⛭ ** AND ONE DISJUNCTION SENDS ITS TWO ARMS IN OPPOSITE
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓒ  THE RESTRAINT: A RE-VERDICT IS A ROW ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_touched = sorted({f for f in (_git('diff', '--name-only', BEFORE, AFTER) + '\n'
+#: ⛔⛭ THE RANGE IS THIS REVISION'S OWN COMMIT AND NOT `BEFORE..AFTER`.  The first form read
+#:   `BEFORE..AFTER`, which spans a merge of the trunk, so it counted every receipt ANOTHER seat
+#:   edited as though this revision had touched it -- the live-end defect this line has now found
+#:   seven ways, in the gate asserting the restraint against it.
+#:   ⇒ *And the claim is stated as the SPECIFIC NEGATIVE alone: the SUBJECT receipts are untouched.
+#:   `no receipt but this revision's own in the diff` is a claim about the diff's FORM beside the
+#:   claim it means, and it is the clause `r7298` dropped from two receipts for only being able to
+#:   fail.*
+_touched = sorted({f for f in (_git('diff', '--name-only', f'{AFTER}^1', AFTER) + '\n'
                                + _git('ls-files', '--others', '--exclude-standard')).split('\n') if f})
-_receipts_touched = [f for f in _touched if f.startswith('receipts/') and f.endswith('.py')
-                     and 'S37_' not in f]
-_ground_touched = [f for f in _touched if f in (GROUND, TABLE)]
 _subjects = sorted({key(c)[0] for c in _mine})
-print(f'      {len(_touched)} path(s) in the diff; receipts other than this revision\'s own: '
-      f'{len(_receipts_touched)}; the ground or its table: {len(_ground_touched)}; the '
-      f'{len(_subjects)} receipts whose rows are re-verdicted are untouched')
-gate(f'Ⓒ① ⛭⛭ the restraint, as the SPECIFIC NEGATIVE alone: the `{len(_subjects)}` receipts whose '
-     f'rows are re-verdicted here are edited `{len(_receipts_touched)}` times, and the ground and '
-     f'its table are edited `{len(_ground_touched)}` times.  ** A re-verdict is a ROW and not an edit '
-     f'to the gate it describes --- these receipts belong to other seats and none is this seat\'s to '
-     f'change --- and a ground that moved in the revision that applied it would be a rule graded by '
-     f'its author on the keys it was tuned to **',
-     not _receipts_touched and not _ground_touched and len(_subjects) >= 5)
+_subjects_touched = [f for f in _touched if f in _subjects]
+_ground_touched = [f for f in _touched if f in (GROUND, TABLE)]
+print(f'      {len(_touched)} path(s) in this revision\'s own commit; of the {len(_subjects)} '
+      f'receipts whose rows are re-verdicted, {len(_subjects_touched)} are edited; the ground or '
+      f'its table: {len(_ground_touched)}')
+gate(f'Ⓒ① ⛭⛭ the restraint, as the SPECIFIC NEGATIVE alone: of the `{len(_subjects)}` receipts whose '
+     f'rows are re-verdicted here, `{len(_subjects_touched)}` are edited by this revision, and the '
+     f'ground and its table are edited `{len(_ground_touched)}` times.  ** A re-verdict is a ROW and '
+     f'not an edit to the gate it describes --- every one of these receipts belongs to another seat '
+     f'and none is this seat\'s to change --- and a ground that moved in the revision that applied '
+     f'it would be a rule graded by its author on the keys it was tuned to **',
+     not _subjects_touched and not _ground_touched and len(_subjects) >= 5)
 
 _live_bare = sum(1 for c in rows_of(read(BASE)) if c[5].startswith('UNADJUDICATED'))
 _at_after = sum(1 for c in _now if c[5].startswith('UNADJUDICATED'))
