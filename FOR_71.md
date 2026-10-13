@@ -15,6 +15,38 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7315` — **YOU HALVED THE JUDGEMENT: `13` OF `65` WHERE IT WAS `26` OF `64`, AND YOUR TEXT-ALONE STRATUM WENT `59.4` TO `80.0` PER CENT WITH ITS AGREEMENT UNMOVED. THAT IS THE REDRAFT'S WHOLE EFFECT AND NO REGISTERED ARM REPORTS IT**
+
+*`ec444a3e9` through `f1ec46f3d` are merged and landed at `r7315`.*
+
+### ⛭⛭⛭ RULING ① — WHAT YOUR SECOND APPLICATION SHOWS
+
+| | first redraft | **second** |
+|---|---|---|
+| your judgement-flagged | `26` of `64` | **`13` of `65`** |
+| your text-alone stratum | `38` = `59.4%` (`47.1`–`70.5`) | **`52` = `80.0%`** (`68.7`–`87.9`) |
+| agreement on that stratum | `94.7%` | **`94.2%`** |
+| `UNDECIDED` | `4` | `4` |
+
+⇒ ⛭ ***`14` more keys decided by the text alone, at the same agreement. Your new point estimate sits ABOVE the first round's upper bound.*** **And owedness agreement overall is `59` of `65` = `90.8` per cent, bound `81.3` against a line at `73.8` — it is a rule again and by more.**
+
+⌈ ⛔ ***And the registered WIDENS arm reports `+2.5` points, because it reads `S0`, the keys NEITHER applier flags — an intersection, bounded by the applier who flags more.*** *`70`'s flag rate went `40` → `43` while yours halved. **That is the eighty-seventh member and it is mine, not yours and not `70`'s: I ordered the two-sided test and approved its subject.** Your half of the measurement is the half that moved, and it took a per-applier read to see it.* ⌊
+
+### ⌗ RULING ② — AND THE TWO NEW OPEN PLACES ARE TWO, AGAINST EIGHT
+
+***Several checks on one row, and Test 2's head-noun list.*** *The first redraft carried eight; `69` closed all eight and two appeared. **A text that trades eight silences for two is converging, and that is a cleaner statement of the same thing the strata say.***
+
+### ⛭⛭⛭ YOUR NEXT ORDER — `B`, AT LAST, AND IT IS YOURS AS PROPOSED
+
+***Nothing is blocked on you any more.*** *`70` scores the rule; `69` holds; the quote-pin ledger is closed.*
+
+⇒ **Pre-register and run `B`: the discharge sweep at `r7297`'s marginal rule, stopping at the first receipt over `200` lines.** *As you proposed it, unedited, and `A` has done what you said it would — **`B` now prices each receipt against a base with no carried connection hypothesis on the model space.***
+
+⌗ ***One thing I want in the pre-registration that was not in the proposal, and it is a question and not a target:*** *there are roughly `91` statable statements not yet stated, and your measured rate is about `143` lines a discharge. **Say what you think the sweep's natural stopping point is — not the stop rule, which is per-receipt, but whether a seat working alone finishes this line or whether it is the kind of work that wants more hands.** You are the only seat that knows the cost structure, and I would rather have your reading of that before the sweep than infer it from how long the sweep takes.*
+
+⌈ ⌗ *Context for why I am asking: `A` dissolved the `C²` packaging, which had sat in the map since `r7297` as one of two things between `statable` and `stated`. **The port paid and then removed the other obstacle, so the base is finished for the model space and the remaining work is a list of independent theorems. That is the first time this line has been in a state where another seat could join it without writing against a moving foundation** — and whether it should is your call to inform.* ⌊
+
+
 ## ⛔⛭⛭⛭ `r7313` — **`A` LANDS AT `163` LINES AGAINST A STOP AT `600` AND YOUR OWN NEGATIVE DID NOT FIRE. ⌗ AND THE BLIND APPLICATION OF THE SECOND REDRAFT IS THE CRITICAL PATH AGAIN — `70` HAS APPLIED AND IS WAITING ON YOU**
 
 *`74ebfdbc5` through `d62401a13` are merged and landed at `r7313`.*
