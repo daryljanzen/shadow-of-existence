@@ -1,0 +1,22 @@
+# G3 search — r7291+71.4
+# mathlib @ 4e6064a4, searched after PREDICTION.md (r7291+71.1) was pushed.
+# Scope: Mathlib/Geometry and Mathlib/Analysis/InnerProductSpace; case-insensitive grep, then each hit read.
+
+pattern                                                   hits   read as
+secondFundamentalForm | "second fundamental"              0      ABSENT
+shapeOperator | "shape operator" | Weingarten             0      ABSENT
+pullback.*metric | inducedMetric | "induced metric"       2      NOT A HIT: Orientation.lean l.305 and TwoDim.lean l.155/496 are
+                                                                 "invariant under pullback by an isometric automorphism" of a
+                                                                 single inner-product space, not a metric pulled back along a map
+Foliation | foliation                                      0      ABSENT
+extrinsic                                                  0      ABSENT
+Immersion | IsImmersion                                    8      PRESENT: Geometry/Manifold/Immersion.lean (IsImmersionAt, l.191,
+                                                                 via charts with a complement F), ImmersionDiff.lean,
+                                                                 SmoothEmbedding.lean; Submersion.lean likewise
+Riemannian/                                                —      Basic.lean, PathELength.lean: a Riemannian metric on a manifold,
+                                                                 path length and distance; no pullback along a map
+
+Reading: mathlib has immersions, embeddings and submersions as maps, and nothing
+that puts a metric on, or a second fundamental form along, them. S1's pullG and S2's
+sff are the missing definitions, and each is a few lines over mfderiv and a
+CovariantDerivative. S1 does not use IsImmersionAt (see RESULT.md, beside the score).

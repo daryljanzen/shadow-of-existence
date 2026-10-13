@@ -1,4 +1,8 @@
+import Mathlib.Analysis.Calculus.Deriv.Inv
+import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+import Mathlib.Geometry.Manifold.MFDeriv.NormedSpace
 import Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Basic
+import Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion
 import Mathlib.Geometry.Manifold.VectorBundle.Hom
 import Mathlib.Geometry.Manifold.VectorBundle.Tangent
 import Mathlib.Geometry.Manifold.VectorField.LieBracket
@@ -690,6 +694,190 @@ lemma covT_smul_Z {g : M → ℝ} (hg : CMDiff ∞ g) {X Y Z : Π x : M, Tangent
 
 end Tensor2
 
+/-! ## `r7291`, Probe S2 — the second fundamental form, the connection and the metric hypotheses -/
+
+section Sff
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+  {H : Type*} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type*} [TopologicalSpace M] [ChartedSpace H M] [IsManifold I ∞ M]
+  (cov : CovariantDerivative I E (TangentSpace I : M → Type _))
+  (g : Π x : M, TangentSpace I x →L[ℝ] TangentSpace I x →L[ℝ] ℝ)
+
+/-- **G3c.** The second fundamental form of a field `N`: `K(X, Y) = g(∇_X N, Y)`. -/
+noncomputable def sff (N X Y : Π x : M, TangentSpace I x) (x : M) : ℝ := g x (cov N x (X x)) (Y x)
+
+lemma sff_smul_X (N X Y : Π x : M, TangentSpace I x) (f : M → ℝ) (x : M) :
+    sff cov g N (f • X) Y x = f x * sff cov g N X Y x := by
+  simp [sff, Pi.smul_apply', map_smul]
+
+lemma sff_smul_Y (N X Y : Π x : M, TangentSpace I x) (f : M → ℝ) (x : M) :
+    sff cov g N X (f • Y) x = f x * sff cov g N X Y x := by
+  simp [sff, Pi.smul_apply', map_smul]
+
+/-- **G3c. `K` is symmetric** on fields tangent to the slice, for a torsion-free `cov` compatible with `g` along
+`X` and `Y`, when `N` is everywhere `g`-normal to `X` and `Y` and `[X, Y]` is tangent at `x`. -/
+theorem sff_symm (htor : cov.torsion = 0) {N X Y : Π x : M, TangentSpace I x}
+    (hX : MDiffAt (T% X) x) (hY : MDiffAt (T% Y) x)
+    (hNX : ∀ y, g y (N y) (X y) = 0) (hNY : ∀ y, g y (N y) (Y y) = 0)
+    (hcX : d% (fun y => g y (N y) (Y y)) x (X x)
+      = g x (cov N x (X x)) (Y x) + g x (N x) (cov Y x (X x)))
+    (hcY : d% (fun y => g y (N y) (X y)) x (Y x)
+      = g x (cov N x (Y x)) (X x) + g x (N x) (cov X x (Y x)))
+    (hbr : g x (N x) (mlieBracket I X Y x) = 0) :
+    sff cov g N X Y x = sff cov g N Y X x := by
+  have z : ∀ {Z : Π x : M, TangentSpace I x}, (∀ y, g y (N y) (Z y) = 0) →
+      d% (fun y => g y (N y) (Z y)) x = 0 := fun {Z} h => by
+    rw [show (fun y => g y (N y) (Z y)) = fun _ => (0 : ℝ) from funext h]; exact mvfderiv_const _
+  rw [z hNY, ContinuousLinearMap.zero_apply] at hcX
+  rw [z hNX, ContinuousLinearMap.zero_apply] at hcY
+  have ht := (CovariantDerivative.torsion_eq_zero_iff (cov := cov)).1 htor hX hY
+  have hb : g x (N x) (cov Y x (X x)) - g x (N x) (cov X x (Y x)) = 0 := by
+    rw [← map_sub, ht, hbr]
+  simp only [sff]
+  linarith
+
+end Sff
+
+/-! ## `r7291`, Probe S1 — the induced metric of a map, and the flat slicing of de Sitter -/
+
+section Pull
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+  {H : Type*} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type*} [TopologicalSpace M] [ChartedSpace H M]
+  {E' : Type*} [NormedAddCommGroup E'] [NormedSpace ℝ E']
+  {H' : Type*} [TopologicalSpace H'] {I' : ModelWithCorners ℝ E' H'}
+  {M' : Type*} [TopologicalSpace M'] [ChartedSpace H' M']
+  {E'' : Type*} [NormedAddCommGroup E''] [NormedSpace ℝ E'']
+  {H'' : Type*} [TopologicalSpace H''] {I'' : ModelWithCorners ℝ E'' H''}
+  {M'' : Type*} [TopologicalSpace M''] [ChartedSpace H'' M'']
+
+/-- **G3a.** The pullback of a metric along a map: `(φ*g)ₓ(u, v) = g_{φ x}(dφ u, dφ v)`. -/
+noncomputable def pullG (φ : M → M') (g : Π y : M', LinearMap.BilinForm ℝ (TangentSpace I' y))
+    (x : M) : LinearMap.BilinForm ℝ (TangentSpace I x) :=
+  (g (φ x)).compl₁₂ (mfderiv I I' φ x : TangentSpace I x →ₗ[ℝ] _)
+    (mfderiv I I' φ x : TangentSpace I x →ₗ[ℝ] _)
+
+lemma pullG_apply (φ : M → M') (g : Π y : M', LinearMap.BilinForm ℝ (TangentSpace I' y))
+    (x : M) (u v : TangentSpace I x) :
+    pullG (I := I) (I' := I') φ g x u v = g (φ x) (mfderiv I I' φ x u) (mfderiv I I' φ x v) := rfl
+
+/-- The pullback of a symmetric form is symmetric. -/
+lemma pullG_symm (φ : M → M') (g : Π y : M', LinearMap.BilinForm ℝ (TangentSpace I' y))
+    (hg : ∀ y u v, g y u v = g y v u) (x : M) (u v : TangentSpace I x) :
+    pullG (I := I) (I' := I') φ g x u v = pullG (I := I) (I' := I') φ g x v u := hg _ _ _
+
+/-- Pulling back twice is pulling back along the composite — so a slice of a slice is a slice. -/
+lemma pullG_comp (ψ : M' → M'') (φ : M → M')
+    (g : Π y : M'', LinearMap.BilinForm ℝ (TangentSpace I'' y)) {x : M}
+    (hψ : MDifferentiableAt I' I'' ψ (φ x)) (hφ : MDifferentiableAt I I' φ x) (u v : TangentSpace I x) :
+    pullG (I := I) (I' := I'') (ψ ∘ φ) g x u v
+      = pullG (I := I) (I' := I') φ (pullG (I := I') (I' := I'') ψ g) x u v := by
+  simp only [pullG_apply, mfderiv_comp x hψ hφ, ContinuousLinearMap.comp_apply, Function.comp_apply]
+
+end Pull
+
+
+section DeSitter
+
+open Real
+
+/-- The metric `−dX₀² + dX₁² + dX₂²` of `ℝ^{1,2}`. -/
+noncomputable def mink : LinearMap.BilinForm ℝ (ℝ × ℝ × ℝ) :=
+  LinearMap.mk₂ ℝ (fun a b => -a.1 * b.1 + a.2.1 * b.2.1 + a.2.2 * b.2.2)
+    (fun _ _ _ => by simp only [Prod.fst_add, Prod.snd_add]; ring)
+    (fun _ _ _ => by simp only [Prod.smul_fst, Prod.smul_snd, smul_eq_mul]; ring)
+    (fun _ _ _ => by simp only [Prod.fst_add, Prod.snd_add]; ring)
+    (fun _ _ _ => by simp only [Prod.smul_fst, Prod.smul_snd, smul_eq_mul]; ring)
+
+/-- The flat slicing `(τ, x) ↦ X` of the de Sitter hyperboloid of radius `α`. -/
+noncomputable def dsFlat (α : ℝ) (p : ℝ × ℝ) : ℝ × ℝ × ℝ :=
+  (α / 2 * (exp (p.1 / α) - exp (-(p.1 / α))) + p.2 * p.2 * exp (p.1 / α) * (2 * α)⁻¹,
+   α / 2 * (exp (p.1 / α) + exp (-(p.1 / α))) - p.2 * p.2 * exp (p.1 / α) * (2 * α)⁻¹,
+   p.2 * exp (p.1 / α))
+
+/-- **Receipt 50's embedding lies on the hyperboloid** `−X₀² + X₁² + X₂² = α²`. -/
+theorem dsFlat_on {α : ℝ} (hα : α ≠ 0) (p : ℝ × ℝ) : mink (dsFlat α p) (dsFlat α p) = α ^ 2 := by
+  have h : exp (p.1 / α) * exp (-(p.1 / α)) = 1 := by rw [← exp_add]; simp
+  simp only [mink, LinearMap.mk₂_apply, dsFlat]
+  field_simp
+  linear_combination (α ^ 2 * 2 ^ 2 * α ^ 2) * h
+
+theorem dsFlat_pull {α : ℝ} (hα : α ≠ 0) (p u v : ℝ × ℝ) :
+    pullG (I := 𝓘(ℝ, ℝ × ℝ)) (I' := 𝓘(ℝ, ℝ × ℝ × ℝ)) (dsFlat α) (fun _ => mink) p u v
+      = -u.1 * v.1 + exp (2 * p.1 / α) * u.2 * v.2 := by
+  have ht : HasFDerivAt (fun q : ℝ × ℝ => q.1 / α) (α⁻¹ • ContinuousLinearMap.fst ℝ ℝ ℝ) p := by
+    convert (hasFDerivAt_fst (p := p) (𝕜 := ℝ)).const_smul α⁻¹ using 1
+    ext q; simp [div_eq_inv_mul]
+  have he := ht.exp
+  have hm := (ht.neg).exp
+  have hx : HasFDerivAt (fun q : ℝ × ℝ => q.2) (ContinuousLinearMap.snd ℝ ℝ ℝ) p := hasFDerivAt_snd
+  have h0 := ((he.sub hm).const_mul (α / 2)).add (((hx.mul hx).mul he).mul_const (2 * α)⁻¹)
+  have h1 := ((he.add hm).const_mul (α / 2)).sub (((hx.mul hx).mul he).mul_const (2 * α)⁻¹)
+  have h2 := hx.mul he
+  have hφ : HasFDerivAt (dsFlat α) _ p := h0.prodMk (h1.prodMk h2)
+  have hD : ∀ w, mfderiv 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ × ℝ × ℝ) (dsFlat α) p w = fderiv ℝ (dsFlat α) p w :=
+    fun w => by rw [mfderiv_eq_fderiv]; rfl
+  have key : pullG (I := 𝓘(ℝ, ℝ × ℝ)) (I' := 𝓘(ℝ, ℝ × ℝ × ℝ)) (dsFlat α) (fun _ => mink) p u v
+      = mink (fderiv ℝ (dsFlat α) p u) (fderiv ℝ (dsFlat α) p v) :=
+    congrArg₂ (fun a b => mink a b) (hD u) (hD v)
+  rw [key, hφ.fderiv]
+  have h : exp (p.1 / α) * exp (-(p.1 / α)) = 1 := by rw [← exp_add]; simp
+  have h2 : exp (2 * p.1 / α) = exp (p.1 / α) ^ 2 := by rw [← exp_nat_mul]; ring_nf
+  simp only [mink, LinearMap.mk₂_apply, ContinuousLinearMap.prod_apply, ContinuousLinearMap.add_apply,
+    ContinuousLinearMap.sub_apply, ContinuousLinearMap.neg_apply, FunLike.coe_smul, Pi.smul_apply,
+    ContinuousLinearMap.coe_fst', ContinuousLinearMap.coe_snd', Pi.mul_apply, Pi.neg_apply, smul_eq_mul, h2]
+  field_simp
+  linear_combination (-(u.1 * v.1) * (2 * α) ^ 2 * α ^ 2) * h
+
+end DeSitter
+
+/-! ## `r7291`, Probe S3 — the extrinsic curvature of the slices `η = const` of `covConf a` -/
+
+section SliceK
+
+/-- The metric of `covConf a`: `a(η)² (−dη² + dx²)`. -/
+noncomputable def gConf (a : ℝ → ℝ) (p : ℝ × ℝ) :
+    TangentSpace 𝓘(ℝ, ℝ × ℝ) p →L[ℝ] TangentSpace 𝓘(ℝ, ℝ × ℝ) p →L[ℝ] ℝ :=
+  a p.1 ^ 2 • minkForm
+
+/-- The unit normal `a⁻¹ ∂_η` of the slices `η = const`. -/
+noncomputable def nConf (a : ℝ → ℝ) : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p :=
+  fun p => (((a p.1)⁻¹ : ℝ), (0 : ℝ))
+
+/-- `∂_x`, tangent to every slice. -/
+def dx : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p := fun _ => ((0 : ℝ), (1 : ℝ))
+
+/-- `N` is a unit timelike normal: `g(N, N) = −1`, `g(N, ∂_x) = 0`. -/
+lemma nConf_unit {a : ℝ → ℝ} {p : ℝ × ℝ} (ha : a p.1 ≠ 0) :
+    gConf a p (nConf a p) (nConf a p) = -1 ∧ gConf a p (nConf a p) (dx p) = 0 := by
+  show a p.1 ^ 2 * minkForm ((a p.1)⁻¹, 0) ((a p.1)⁻¹, 0) = -1
+    ∧ a p.1 ^ 2 * minkForm ((a p.1)⁻¹, 0) (0, 1) = 0
+  rw [minkForm_apply, minkForm_apply]
+  constructor
+  · field_simp; ring
+  · ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **S3.** The slices `η = const` of `a(η)²(−dη² + dx²)` have extrinsic curvature `K(∂_x, ∂_x) = a′(η)`. -/
+theorem sff_conf {a : ℝ → ℝ} {p : ℝ × ℝ} (ha : a p.1 ≠ 0) (hd : DifferentiableAt ℝ a p.1) :
+    sff (covConf a) (gConf a) (nConf a) dx dx p = deriv a p.1 := by
+  have hN := HasFDerivAt.prodMk
+    (HasDerivAt.comp_hasFDerivAt (f := Prod.fst) p (HasDerivAt.inv hd.hasDerivAt ha)
+      (hasFDerivAt_fst : HasFDerivAt (Prod.fst : ℝ × ℝ → ℝ) (ContinuousLinearMap.fst ℝ ℝ ℝ) p))
+    (hasFDerivAt_const (0 : ℝ) p)
+  have hD' : fderiv ℝ (fun q : ℝ × ℝ => ((a⁻¹ ∘ Prod.fst) q, (0 : ℝ))) p (0, 1) = 0 := by
+    rw [hN.fderiv]; simp
+  have hD : fderiv ℝ (nConf a : ℝ × ℝ → ℝ × ℝ) p (0, 1) = 0 := hD'
+  show a p.1 ^ 2 * minkForm (covConf a (nConf a) p (0, 1)) (0, 1) = deriv a p.1
+  rw [covConf_apply, hD, zero_add, Gam_apply, minkForm_apply, minkForm_apply]
+  simp only [nConf, phi', Prod.smul_fst, Prod.smul_snd, Prod.fst_add, Prod.snd_add, smul_eq_mul]
+  field_simp
+  ring
+
+end SliceK
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -711,3 +899,12 @@ end ShadowProbe
 #print axioms ShadowProbe.covT_smul_X
 #print axioms ShadowProbe.covT_smul_Y
 #print axioms ShadowProbe.covT_smul_Z
+#print axioms ShadowProbe.sff_smul_X
+#print axioms ShadowProbe.sff_smul_Y
+#print axioms ShadowProbe.sff_symm
+#print axioms ShadowProbe.pullG_symm
+#print axioms ShadowProbe.pullG_comp
+#print axioms ShadowProbe.dsFlat_on
+#print axioms ShadowProbe.dsFlat_pull
+#print axioms ShadowProbe.nConf_unit
+#print axioms ShadowProbe.sff_conf
