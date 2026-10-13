@@ -57,7 +57,7 @@ def gate(label, ok):
 
 S2_BEFORE = 'bdb9a4dc'    # the last commit carrying S2's dividing report
 S12_BEFORE = 'e9ea6dd8'   # the last commit carrying S12's standing bound
-AFTER = 'HEAD'            # the commit that carried this revision -- the 71st member's corollary
+AFTER = 'a4b6c0e9'        # the commit that carried this revision -- the 71st member's corollary
 BASE = 'corpus/quote_pin_baseline.tsv'
 S2 = 'receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py'
 S12 = 'receipts/L_probability/S12_ownership_makes_the_class_larger_and_the_path_scope_was_too_narrow_as_well_as_impure.py'
