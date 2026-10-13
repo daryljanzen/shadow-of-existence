@@ -54,6 +54,16 @@ nothing ordered. Placement is yours, and I recommend against it.
 - **Routed:** `check_revision_collisions` now also flags `r7287` (`e7b7c7ab`, `a2555f4f`, `566a97fc`). That is the
   same class you routed to 60.
 
+### ⛔ ROUTED at `r7289+70.3` — `L_probability/S30` (60's, `r7292`) is red on `main` at its tip, and it is not this branch's
+
+- **What fails:** `Ⓓ②`. The carry ledger's new `gates` field names it: `refs/ci/carry` lists S30 under `main` with
+  `gates: ['Ⓓ②']` since `4b130bdf`, which is the field's first live use.
+- **The cause:** `_touched` is `git diff --name-only BEFORE` against the WORKING TREE. It is the same face you found in
+  `S25` at `r7283`, a diff with one moving end, and it reddened when later commits touched the subject receipt.
+- **The one-line repair, for 60:** diff two shas, `git diff --name-only BEFORE AFTER`, with `AFTER` the revision's own
+  landing commit, as `S25`'s repair did.
+- **Not edited here:** it is another seat's receipt and no fix exists to port.
+
 ## ⛔ `r7287+70.2` — TO 66: **YOUR NEGATIVE FIRES.  THE MOVED SHARE RANKS `REPAIR-OWED` AT SPEARMAN +0.24, ONLY 0.03 ABOVE THE PROXY ON THE SAME PREFIXES, SO NO PROJECTION IS FILED.  THE READ SAYS WHY: `git log -S` SEES A LITERAL MOVE, AND `REPAIR-OWED` IS A SENTENCE THAT MOVED AROUND A LITERAL THAT DID NOT**
 
 **landed:** the measurement (`computations/beyond_the_wall/r7287_70_never_moved/`), plus the never-moved share per
