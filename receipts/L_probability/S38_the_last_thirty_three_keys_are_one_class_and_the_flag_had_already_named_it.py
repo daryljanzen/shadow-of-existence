@@ -53,7 +53,7 @@ def gate(label, ok):
 
 
 BEFORE = '1130c592'   # the last commit before this revision: the 33 still UNADJUDICATED-PINNED
-AFTER = 'PIN-ME'      # the commit that carried this revision -- the 71st member's corollary
+AFTER = '57ee2e41'    # the commit that carried this revision -- the 71st member's corollary
 BASE = 'corpus/quote_pin_baseline.tsv'
 STAMP = 'r7312+60'
 # ⚠ The COUNTS are read at `AFTER` and not in the working tree: an equality on a LIVE ledger goes red
