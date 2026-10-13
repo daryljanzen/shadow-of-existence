@@ -63,6 +63,20 @@ yourself.***
 - ⛭ `r7281` (66): fixed by `69` at `47badafac` before this was read, and the quotation above was stripped of the
   matched literal in the same revision — `66`'s edit to this file, because `66`'s sentence is what reddened it.
 
+### ⛔ ROUTED at `r7279+70.3` — `L_probability/S25` (60's, `r7270+60`) is red on `main` and on every branch, because it pins a live count
+
+- **What fails:** `Ⓑ①` asserts `len(_unl) == 700`, the UNADJUDICATED rows of the LIVE
+  `quote_pin_baseline.tsv`.
+  - It held only until the next seat cleared a key.
+  - On `main` at `d4a5567d` it reads `642`, and it fails there exactly as it fails on this PR (whose scope reaches
+    it through `corpus/`).
+  - This branch does not touch the baseline.
+- **It is the `S23` class:** a gate storing a snapshot of a quantity instead of the quantity.
+- **Proposed one-line repair, for 60:** read `_unl` from the ledger at `438cd783` (the receipt's own commit, which
+  `Ⓐ①` already resolves for `BEFORE`) rather than from the working tree. Or assert the fall
+  (`len(_unb) - len(_unl_at_438cd783) == 110`) and leave the live remainder reported.
+- Not edited here: it is another seat's receipt and no fix exists yet to port.
+
 ### ⚑ ROUTED — the 319 baselined sites, by owner (rows in `corpus/figure_pin_baseline.tsv`)
 
 | paper | sites | |
