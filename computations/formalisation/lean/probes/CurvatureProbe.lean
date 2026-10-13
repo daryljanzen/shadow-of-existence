@@ -1711,6 +1711,73 @@ theorem sinh23_flow {M α τ : ℝ} (hM : 0 < M) (hα : 0 < α) (hτ : 0 < τ) :
 
 end RainPG
 
+/-! ## `r7297`, C3 — receipt 41: in the PG chart with `A = 1`, `ξ = ∂_τ` satisfies `∇_ξ ξ = κ ξ` on the horizon
+`w = −1`, with `κ = w′ = f′/2`, `f = 1 − w²` — the surface gravity, for THE Levi-Civita connection -/
+
+section SurfGrav
+
+lemma fts_apply (p : ℝ × ℝ) (v : TangentSpace 𝓘(ℝ, ℝ × ℝ) p) :
+    ((NormedSpace.fromTangentSpace (𝕜 := ℝ) p : TangentSpace 𝓘(ℝ, ℝ × ℝ) p →L[ℝ] ℝ × ℝ) v) = v := rfl
+
+/-- `ξ = ∂_τ`. -/
+def xiT : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p := fun _ => ((1 : ℝ), (0 : ℝ))
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **C3, receipt 41.** On the horizon `w(r) = −1`, `∇_ξ ξ = w′(r) ξ`: the surface gravity is `κ = w′ = f′/2`. -/
+theorem surface_gravity (w : ℝ → ℝ) (hw : Differentiable ℝ w) (p : ℝ × ℝ) (hh : w p.2 = -1) :
+    lcConn (ℝ × ℝ) (pgMetric (fun _ => 1) w (fun _ => one_ne_zero) (differentiable_const _) hw) xiT p (xiT p)
+      = deriv w p.2 • xiT p := by
+  set m := pgMetric (fun _ => 1) w (fun _ => one_ne_zero) (differentiable_const _) hw
+  have hξd : HasFDerivAt (vf xiT) (0 : ℝ × ℝ →L[ℝ] ℝ × ℝ) p := hasFDerivAt_const _ _
+  have hξ : MDifferentiableAt 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ × ℝ).tangent
+      (fun q => (⟨q, xiT q⟩ : TangentBundle 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ))) p :=
+    mdiffAt_model.2 hξd.differentiableAt
+  refine m.g_inj fun Z hZ => ?_
+  have dZ := mdiffAt_model.1 hZ
+  rw [lcConn_apply m hξ hξ hZ]
+  -- the pieces of the Koszul form
+  have hW : HasFDerivAt (fun y : ℝ × ℝ => w y.2) (deriv w p.2 • ContinuousLinearMap.snd ℝ ℝ ℝ) p := by
+    exact (hw p.2).hasDerivAt.comp_hasFDerivAt p (hasFDerivAt_snd (p := p) (𝕜 := ℝ))
+  have hZ1 : HasFDerivAt (fun y => (vf Z y).1) ((ContinuousLinearMap.fst ℝ ℝ ℝ).comp (fderiv ℝ (vf Z) p)) p :=
+    hasFDerivAt_fst.comp p dZ.hasFDerivAt
+  have hZ2 : HasFDerivAt (fun y => (vf Z y).2) ((ContinuousLinearMap.snd ℝ ℝ ℝ).comp (fderiv ℝ (vf Z) p)) p :=
+    hasFDerivAt_snd.comp p dZ.hasFDerivAt
+  have gl : ∀ y (b : ℝ × ℝ), m.g y (xiT y) b = -b.1 - w y.2 * (b.2 - w y.2 * b.1) := fun y b => by
+    show pgForm (fun _ => 1) w y ((1 : ℝ), (0 : ℝ)) b = _
+    rw [pgForm_apply]; ring
+  have f1 : (fun y => m.g y (xiT y) (Z y)) =
+      fun y => -(vf Z y).1 - w y.2 * ((vf Z y).2 - w y.2 * (vf Z y).1) := funext fun y => gl y (Z y)
+  have f2 : (fun y => m.g y (Z y) (xiT y)) =
+      fun y => -(vf Z y).1 - w y.2 * ((vf Z y).2 - w y.2 * (vf Z y).1) :=
+    funext fun y => (pgForm_symm _ w y (Z y) (xiT y)).trans (gl y (Z y))
+  have f3 : (fun y => m.g y (xiT y) (xiT y)) = fun y => -1 + w y.2 * w y.2 := funext fun y => by
+    rw [gl]; show -(1 : ℝ) - w y.2 * (0 - w y.2 * 1) = _; ring
+  have hT1 : HasFDerivAt (fun y => -(vf Z y).1 - w y.2 * ((vf Z y).2 - w y.2 * (vf Z y).1)) _ p :=
+    (hZ1.neg).sub (hW.mul (hZ2.sub (hW.mul hZ1)))
+  have hT3 : HasFDerivAt (fun y : ℝ × ℝ => -1 + w y.2 * w y.2) _ p :=
+    (hasFDerivAt_const (-1 : ℝ) p).add (hW.mul hW)
+  have hbr : ∀ A B : Π y : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) y,
+      mlieBracket 𝓘(ℝ, ℝ × ℝ) A B p = fderiv ℝ (vf B) p (A p) - fderiv ℝ (vf A) p (B p) :=
+    fun A B => by
+      rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ]; rfl
+  simp only [kosz, f1, f2, f3, hbr, hξd.fderiv, zero_apply, sub_zero, sub_self, map_zero]
+  rw [mvfderiv_eq_fderiv, mvfderiv_eq_fderiv, hT1.fderiv, hT3.fderiv]
+  simp only [ContinuousLinearMap.comp_apply, sub_apply, neg_apply, add_apply, smul_apply,
+    ContinuousLinearMap.coe_fst', ContinuousLinearMap.coe_snd', smul_eq_mul, fts_apply, zero_apply]
+  have hx2 : (xiT p : ℝ × ℝ).2 = 0 := rfl
+  rw [map_smul, smul_apply, smul_eq_mul]
+  simp only [gl, hx2, Prod.fst_sub, Prod.snd_sub, Prod.fst_zero, Prod.snd_zero, mul_zero, zero_add, add_zero]
+  rw [hh]; ring
+
+/-- **C3.** And `w′ = f′/2` there, with `f = 1 − w²`: the surface gravity is half the slope of the metric function. -/
+lemma kappa_half_fprime (w : ℝ → ℝ) (r : ℝ) (hw : DifferentiableAt ℝ w r) (hh : w r = -1) :
+    deriv (fun s => 1 - w s ^ 2) r / 2 = deriv w r := by
+  have h : HasDerivAt (fun s => 1 - w s ^ 2) (-(2 * w r * deriv w r)) r := by
+    convert (hw.hasDerivAt.pow 2).const_sub 1 using 1; simp
+  rw [h.deriv, hh]; ring
+
+end SurfGrav
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -1770,3 +1837,5 @@ end ShadowProbe
 #print axioms ShadowProbe.rain_geodesic
 #print axioms ShadowProbe.sds_rain_geodesic
 #print axioms ShadowProbe.sinh23_flow
+#print axioms ShadowProbe.surface_gravity
+#print axioms ShadowProbe.kappa_half_fprime
