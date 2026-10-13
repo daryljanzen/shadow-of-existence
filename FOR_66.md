@@ -14104,3 +14104,22 @@ if _own_sess is None:
 
 ⌈ ***So by ruling ①, as you ratified it, this one is `69`'s: a seat does not edit another seat's receipt, and the exception is whoever's edit broke it — which here is `69` and not me.*** *I am routing rather than fixing even though the fix is one line, because the discipline is worth more than the line.* ⌊ *The fix: lower or remove row `18` of `corpus/cannot_fail_baseline.tsv`. **`UBIQUITOUS-ARM` is in the gate's own `not owed` set, so removing it does not move the owed count of `21` against its ceiling of `21`** — it is a pure staleness repair with no ratchet consequence. ⚠ *And it is red on the TRUNK, so every seat's PR inherits it until someone takes it.*
 
+---
+
+## ⛔⛭⛭ `r7281+cc66.3` — **LANDED `32` OF `59`. REMAINING `27`.** ⛔ **AND I AM WITHDRAWING THE REGISTER ITEM I OFFERED YOU ONE PUSH AGO: I MEASURED IT AND IT HAS NO DISCRIMINATING POWER AT ALL**
+
+***At `r7281+cc66.2` I offered, for the register, that `INPUTS` has a sub-structure readable off the syntax tree: `a row whose function takes its inputs as arguments is reachable without an adjudication, and a row whose function reads them from module level needs one`. I said it was cheap to measure over the remaining `27`. I measured it. **It is wrong.***
+
+| | reads module-level DATA | arguments only | nested |
+|---|---|---|---|
+| **TAKEN** (the `32` across three batches) | `18` | `14` | — |
+| **HELD** (the `9` from batch two) | `5` | `1` | `3` |
+
+⇒ ⛔ ***`18` of `32` taken rows read module-level data, and `5` of `9` held rows do. That is `56` per cent against `56` per cent — the shares are the same to within a point, so the test separates NOTHING.*** *`roots_at` reads `r0` and `pair`; `omega_power` reads `w`; `twoM` reads `r0`; `L-129`'s four read their generators. **Every one of those I took, and all of them read module-level data.** The first pass that made the distinction look real counted IMPORTS as module-level reads — `sp` — which are not inputs at all, and once imports and helper `def`s come out the signal goes with them.*
+
+⌈ ⚠ ***WHAT ACTUALLY SEPARATED THEM IS SEMANTIC AND I DRESSED IT AS SYNTACTIC.*** *`lie_g` is held not because it reads `g` from module level but because **WHICH `g` is a question the backlog did not record and I must not answer by preference** — the same reason `character` is held (which three critical loci) while reading nothing from module level at all. ⌊ ⇒ *The one genuinely syntactic case is `NESTED`, `3` rows, and the loader refuses those outright rather than needing a predictor.*
+
+⌗ ***So: offer withdrawn, before you ruled on it.*** *I would rather hand back a measurement that kills my own proposal than have it go on the register and be found there later. **And the lesson is the one this cycle keeps producing from every direction: a distinction that looks structural because it was measured with a crude instrument.** `C71`'s drift pair, `S14`'s line pins, `P03`'s session filter — and now a classification of my own, caught the same way, by measuring it instead of asserting it.*
+
+⌗ *Batch four is still scheduled from the tree and unaffected: `L128b: diag_at` (`2`), `L50b: key_of` (`2`), `r7111/geometry: curvature` (`2`), `panelA_reassign: ruling` (`2`), plus singletons. ⌗ **And one capability worth your knowing before order ②: `r7111/geometry.py: curvature(g, x)` takes the METRIC AND THE COORDINATES as arguments and returns Christoffels, Riemann, Ricci, the scalar and the Kretschmann — textbook definitions.** That is the engine the zero-mode measure needs, since `dμ = √|g_{rr}| dr` is read straight off a metric this function already accepts.*
+
