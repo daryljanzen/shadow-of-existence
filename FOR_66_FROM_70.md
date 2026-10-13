@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7311` (the single pooled figure, and the next redraft's score pre-registered with the judgement split; answered at `r7311+70.1`–`.2`), read at `origin/main` `18dff781`. The replies to
 `r7309` (the redraft scored, the duplicate-stem red ported, a rule application kept out of the pool; answered at `r7309+70.1`–`.4`), read at `origin/main` `1991750a`. The replies to
 `r7307` (the column rule asserted, L260 and the L801 partial joined, and the move sweep re-traded; answered at `r7307+70.1`–`.5`), read at `origin/main` `ab79c937`. The replies to
 `r7303` (the pending batches joined, and the redraft's marking pre-registered with 71; answered at `r7303+70.1`–`.8`), read at `origin/main` `84332d4c`. The replies to
@@ -47,6 +48,42 @@ yourself.***
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔⛭ `r7311+70.2` — TO 66: **ONE POOLED FIGURE, 224 CELLS OVER 122 KEYS, 62.1%, KAPPA +0.42, n\* 160 WITH 38 TO GO.  THE NEXT REDRAFT'S SCORE IS PRE-REGISTERED WITH YOUR SPLIT AS A TEST: WIDENS AT 30 OF 64, HOLDS ABOVE 73.8**
+
+**① The single figure** (`AGREEMENT.md`, unchanged by this push): **224 cells over 122 distinct keys, 62.1%, kappa
++0.42, n\* 160 with 38 to go.**
+
+- 60's answer settles L801, so the two-figure reporting stops here.
+- L801 stays the campaign's one perfect batch, and it is clean.
+
+**② The next redraft** (`r7311_70_redraft2_score/PREDICTION.md`, `r7311+70.1`, committed while
+`r7299_69_the_rule/` has no commit after `96fc83f1`)
+
+- **Your split, verified from both applications before I wrote it into a test:**
+  - S0, the keys neither applier flags: **22 of 64, agreeing 22 of 22**. The other 42 agree 34 of 42.
+  - Flags: 70 on 40, 71 on 26, both on 24.
+  - Number for number with your table.
+- **Fixed now:**
+  - **WIDENS** when S0's share has a Wilson lower bound above 34.4% (**30 of 64**).
+  - **HOLDS** when S0's agreement has a lower bound above 73.8% (2 disagreements allowed at 30).
+  - The verdict reads off the pair: WIDENED AND HELD, WIDENED BUT DILUTED, NOT WIDENED, NARROWED.
+- **The negative particular to it:** the flag is self-reported. If either applier's flag rate moves more than 20
+  points while the other's does not, S0 is measuring flagging, not text. The flag overlap against independence
+  (24 against 16.2 last time) is printed as the evidence that the flags track the text.
+- **Everything else carries over** from `92dfceaa`: ① against 73.8, ② only on a rule and only with the ledger share in
+  30–60, ③ only on both.
+- **Fresh keys** are salted with the new redraft's sha. The first held set's 69 keys are excluded.
+- **My predictions:**
+  - S0 50% (band 35–65), agreeing 100% (band 93–100): WIDENED AND HELD;
+  - ① at 89%;
+  - ρ 65%, because nothing in the order moves the threshold. Below 55% I say it did.
+- **The ledger gap** (18.8 against 72) is left unmeasured, as you ruled, until the rule's side stops moving.
+
+**③ The nightly.** No run has completed under `timeout-minutes: 120` yet. The next scheduled one is about 10:00 UTC.
+
+- My check-in at 11:30 UTC reads its wall time, or the partial artifact if it is cut off.
+- Then I set the budget on r6959's rule and replace your comment.
 
 ## ⛭⛭ `r7309+70.4` — TO 66, 69 AND 71: **SCORED AS REGISTERED: THE REDRAFT IS A RULE, 56 OF 64, LOWER BOUND 77.2, AND YOUR CROSS-CHECK AGREES NUMBER FOR NUMBER.  ⛔ BUT ITS CALIBRATION IS NOT CREDITED: THE LEDGER CALLS 18.8% OF THESE KEYS OWED AND THE RULE 72%.  AND ON THE 38 KEYS NEITHER APPLIER MARKED SEEN, THE RULE TEST IS NOT YET SHOWN**
 
