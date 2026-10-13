@@ -44,6 +44,12 @@
   }
  },
  "main": {
+  "suite": {
+   "receipts/L_probability/S14_four_of_the_five_uncontrolled_zeros_were_a_false_negative_of_this_seats_own_proxy_and_the_fifth_had_the_read_controlled_and_not_the_counter.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38331202016",
+    "since": "1b5193e4e6def9e4fbb5a3a217e304bb8aab27d2"
+   }
+  },
   "tolerance": {
    "receipts/L_probability/S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38327554067",
