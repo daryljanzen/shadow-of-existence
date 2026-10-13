@@ -155,7 +155,7 @@ def unpinned(claim, ps):
     """the printed figures of `claim` that no pin in `ps` holds within their allowance"""
     out = []
     for s, alts in figures(claim):
-        if not any(abs(abs(c) - x) <= a and t <= a for x, a in alts for c, t in ps):
+        if not any(abs(abs(c) - x) <= a * (1 + 1e-9) and t <= a * (1 + 1e-9) for x, a in alts for c, t in ps):
             out.append(s)
     return out
 
@@ -168,7 +168,8 @@ def _seeds():
            'assert round(q, 2) == 2.10\n'
            'assert 1.23 < w < 1.25\n'
            'assert math.isclose(z, 4.5678, rel_tol=1e-6)\n'
-           'assert 41.04 < y < 41.06\n')
+           'assert 41.04 < y < 41.06\n'
+           'assert abs(dlnob + 0.305) < 0.005\n')
     ps = pins(src)
     cases = [('a tight named-constant pin', 'the root is 0.315162424', False),
              ('a slack pin on a nearby value', 'the multipole is 7.78', True),
@@ -179,7 +180,8 @@ def _seeds():
              ('an isclose pin', 'the figure 4.5678', False),
              ('a figure no check names', 'the share 46.53', True),
              ('a revision tag is not a figure', 'answered at r7267+70.1', False),
-             ('a percent figure against its fraction', 'a shift of 0.065\\%', True)]
+             ('a percent figure against its fraction', 'a shift of 0.065\\%', True),
+             ('a pin exactly at the allowance (float edge, r7279+70.2)', 'the slope 0.31', False)]
     bad = []
     for label, claim, want in cases:
         got = bool(unpinned(claim, ps))

@@ -1,0 +1,49 @@
+# id	verdict	evidence (three read-only readers, blinded to the flag; F05, F15, F34, F45 re-read by this seat and confirmed)
+F01	WITHIN	46.5: check Ⓖ① pins PCT_SEAM (computed by mpmath quad) via abs(PCT_SEAM-46.508)<0.01, tighter than ±0.05; fails into sys.exit(1)
+F02	WITHIN	146.4/145.4: asserts at l.52-53 pin rs_CR to 146.36±0.05 and rs_LC to 145.38±0.05, both within the ±0.073 allowance
+F03	OVER	7.14/3.81/3.68/280.1/281.1/260.1 are only printed; checks are relative or one-sided (lc_ov<0.6*lc_b, |Δ|<0.5, CR change <2%, cr_f/n>100); no value pinned
+F04	NOT-A-CLAIM	2603.03257 is an arXiv identifier, not a computed quantity
+F05	WITHIN	0.31: l.111 asserts abs(dlnob+0.305)<0.005, a tolerance equal to the ±0.005 allowance (pinned centre 0.305 rounds to 0.31; edge value 0.300 would print 0.30)
+F06	WITHIN	1.040: check at l.423-426 pins C_C to 1.0401±0.0005, within the ±0.00052 allowance
+F07	OVER	<0.005 and <0.006 are gated only by worst<0.01 and worst_spread<0.01 (l.121-133), one-sided and looser; 0.408 comes from elsewhere and is not computed here
+F08	WITHIN	0.037049/1.411379: l.63-64 assert both to ±5e-6 (seeded rng), tighter than the allowances
+F09	OVER	0.065%: computed in the PART 2 table (xf/LEG) and printed in the l.123 gloss, but no assert or fail.append pins it; only the 0<xf<LEG and frozen checks
+F10	NOT-A-CLAIM	0.1929 and 1.0390 are quoted from node 66's r7221 brief (closure wording); the receipt only quotes them in docstring and labels, never computes them
+F11	WITHIN	2.63: l.61 asserts abs(_per[2]+2.6291)<0.002, tighter than ±0.005
+F12	WITHIN	3.3387: l.32 asserts abs(I-3.338738)<1e-6 for the integral over [0, pi a/3]
+F13	OVER	0.192450 is held by an exact sympy identity (l.199 M/alpha==1/(3sqrt3)), but 0.0075 (mu_needed) is gated only one-sided (<0, |.|<0.01, l.322-325); 0.995 is an input
+F14	WITHIN	0.315162424: check at l.212-213 asserts abs(Om_root-0.315162)<1e-6, far tighter than the ±1.6e-4 allowance
+F15	WITHIN	151.2: l.46 asserts the exact sympy identity phi(-cbrt2 rho) = -2pi cbrt(2)/3 (=-151.19 deg)
+F16	NOT-A-CLAIM	0.998/0.954 belong to sec:refit-bound's own receipt; this receipt only reads them as paper text (_REFIT string, BUDGET from mpf literals, l.237-248)
+F17	OVER	279.4 held via round(cb,2)==2.10 (L148) and 556.7 via abs(chi2-556.7)<=0.05 (L153), but 1.98 only gated by 1.95<ab/cb<2.05 (L160) and round(r,1); 68.60 arm ratio is ~1.99
+F18	NOT-A-CLAIM	0.07 is T_D=0.07 MeV, the deuterium-bottleneck input constant (L19); the receipt uses it as input, and asserts the derived 174 MeV and 3.4 orders separately
+F19	OVER	7.14 and 3.81 are hardcoded literals CTRL={2000:7.14,2512:3.81} (L65) taken from L-820 S2 and never computed; only a one-sided check dc<-0.4 (L85)
+F20	OVER	0.23% is never computed (receipt's headline gives 0.14%); the CAMB height-ratio match is only gated by abs(r2-CAMB_R2)/CAMB_R2<0.01 (A5, L245), looser than the allowance
+F21	WITHIN	9.443377 pinned abs(EXP[2][1]-9.443377)<1e-5 (gate C1, L253); 4.57 pinned abs(diff-4.574774)<1e-4 (gate C3, L268); a failed gate raises SystemExit(1)
+F22	OVER	2.2564 pinned to 5e-4 (L287) and 2.200 is CAMB/LCDM external reference, but 2.264 (construction's polarisation-path value) is never computed or checked in this receipt
+F23	WITHIN	1.000 is kappa at the substrate horizon, checked symbolically sp.simplify(k0-1/al)==0 (L143, check asserts); exact identity
+F24	WITHIN	0.764 pinned assert abs(_x_entry(1)-0.7637626)<1e-6 (L179)
+F25	NOT-A-CLAIM	46.5 never appears in this receipt; it is carried by the co-cited back-seam receipt (gate G1 abs(PCT_SEAM-46.508)<0.01)
+F26	OVER	the 7.18/3.83/3.73/2.23/5.38/1.33/1.19/1.18/1.014 sequence is only one-sidedly gated (un['L3200']>3.4, pred_3200<2.6, ln<1.3, 0.95<ref<1.1, L124/L153); none pinned; lensed check skips without camb
+F27	OVER	3.32 is not pinned: s_tot only gated abs(3.3233-s_tot)/s_tot<0.01 (L159) and 3.32*5213 vs 1.7e4 within 3% (L147); both looser than ±0.005
+F28	WITHIN	0.878 and 14.9 checked abs(leg-0.877972)<1e-5 and abs(GYR-14.90)<0.02 (gate E2, L249); failures go to sys.exit(1)
+F29	WITHIN	0.95 pinned assert abs(_re_in-0.9534)<1e-3 (assertions block, end of file)
+F30	OVER	peaks 171.2/406.5/634.6/917.9 and continuum values never pinned; 0.00 first-peak shift only gated rel1<0.01 (~1.7 ell) and max(diffs)<1.0
+F31	WITHIN	2.611994/2.741706/2.747427 pinned to 1e-5 (gates B2, B3); 2.60/2.95 band no-threshold checked T[1]==[]; 2.74<T<S_OTHER(=2.7618) checked; failed gate exits 1
+F32	OVER	0.500 (GM/R_s c^2) only printed in the loop (ratio, L43); no assert on it, and the only assert is 280<_ratio<320 for 294x
+F33	WITHIN	1.9276 pinned via _leg-1.927621297<1e-8 (Ⓖ①) with expansion/collapse=2 to 1e-9 (Ⓘ①), so the midpoint is fixed; 2.3759 pinned via _d_front-2.375870551<1e-8 (Ⓘ②)
+F34	OVER	1.489 (contour action S_E^c) is never computed: it appears only in the docstring and as a hard-coded divisor 1.4890 (lines 24, 35); no check computes it
+F35	WITHIN	2.774 pinned: gate and assert abs(_stretch-2.774)<5e-4 (lines 172, 355); the tolerance is tighter than the 1.4e-3 allowance
+F36	WITHIN	0.87797193 pinned: assert abs(s_back+0.87797193)<1e-6 (line 107) on the bisected back seam; allowance is about 4.4e-4
+F37	WITHIN	0.0018674: symbolic assert lam2-om2==0 (line 336) gives lambda/Omega=1 exactly; assert abs(exp(-2pi)-0.0018674)<5e-8 (line 337)
+F38	WITHIN	301.76 assert |MEAS_L-301.76|<0.01 (l.51); 300.90 assert |lstar(6850)-300.90|<0.02 (l.59); 1.04109 and 67.4 are measured or input values, not claims
+F39	WITHIN	10.8 pinned: assert abs(pct-10.83)<0.01 and abs(pct-10.8)<0.1 (lines 132-135); the baryon-weighted ratio is also pinned at 1.108305 to 1e-6
+F40	OVER	0.878, 0.899, 0.671 and 0.408 are only printed; 0.615 and 0.62 are held only by abs((CTRL-_ia)-0.615)<0.05 (l.204, too loose); the rest are range gates such as 0.15<_close<0.70
+F41	OVER	186.007 held only to 0.1 (allowance about 0.093); 278.788 unpinned; 0.007 is a one-sided |mv|/gap<5e-4; 184.989 only <control; 278.795 held at 0.1, which is within its allowance
+F42	WITHIN	0.0481 pinned: assert abs(I-(-0.048113))<1e-6 (line 34) on S_E^grav
+F43	OVER	P(l<=3) values 0.591, 0.151, 0.059 and 0.032 are never computed or gated in this receipt; its gates cover widths, modal multipoles and exponents only
+F44	OVER	1.0452/1.0451/1.034/1.099/1.058/0.989/0.5225/1.0267/1.030/1.089/1.017 etc. only printed; checks are one-sided (>1.02, >FULL, <=0.995, carry<0.1*(FULL-1)); no pins
+F45	OVER	tolerances are looser than the allowances: 0.500 and 0.999 held to 0.005 (allowance 5e-4), 2.00 to 0.02 (allowance 0.005), 1.60 and 1.10 to 0.01 (allowance 0.005) (lines 49-53)
+F46	WITHIN	4.977310 pinned: check abs(cpl-4.977310)<1e-4 (allowance 2.5e-3); the negative value is held by abs(cpl+cmi)<1e-6 (line 91)
+F47	NOT-A-CLAIM	(68.62, 0.2974) and 0.958/dof are the DESI BAO fit's background (r6760+cc66.2), which this receipt only reads as input ("COMPUTES: nothing"); 0.2974 and 0.958 never appear
+F48	WITHIN	-0.11% pinned: assert abs(_pct-(-0.107))<0.005 (line 82); the tolerance equals the 0.005 allowance and is centred on the unrounded -0.107
