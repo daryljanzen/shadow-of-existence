@@ -36,6 +36,12 @@ naming one reader twice, FAILS the run by name: the line is also what tells a ba
 match (a reasons sidecar), so a file without it is never pooled by default.  The pooled share is now over CELLS, and a
 key read by three seats contributes three; the per-pair table says how the figure divides.
 
+** r7299+70: A BATCH IS RECOGNISED BY ITS CONTENT, NOT ONLY ITS NAME (69's suggestion, routed by 66). **  A reasons sidecar
+that the glob matches has prose where a verdict belongs.  A file whose first-verdict column holds no verdict on any row
+is NOT A BATCH (a verdict cell may be EMPTY -- a pending side -- but not prose): it is excluded and listed by name, and cannot pool at zero per cent as 69's GROUNDS file once did.  A
+file whose verdict columns hold a verdict on some rows and something else on others is a MALFORMED batch and fails the
+run, because there the content is a batch and a cell of it is wrong.
+
     python3 scripts/double_read_agreement.py            # print the tables
     python3 scripts/double_read_agreement.py --seed     # the duplicate refusal, both ways, on built batches
     python3 scripts/double_read_agreement.py --write    # also write AGREEMENT.md beside the prediction
@@ -51,6 +57,8 @@ from collections import Counter
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7293_70_agreement', 'AGREEMENT.md')
 N_STAR = None   # filled from PREDICTION.md's fixed rule by n_star(); see there
+VERDICTS = {'DELIBERATE', 'ALT-OK', 'REPAIR-OWED', 'NOT-A-PIN', 'ENCODING-OK', 'MEANING-HELD', 'EXTENDED',
+            'UNADJUDICATED', 'UNADJUDICATED-PINNED'}   # the ledger's verdict classes (corpus/quote_pin_baseline.tsv)
 
 
 def batches():
@@ -63,7 +71,7 @@ def batches():
         when = (subprocess.run(['git', '-C', ROOT, 'log', '--reverse', '--format=%ct %h', '--', rel],
                                capture_output=True, text=True).stdout.split('\n')[0] or '').split()
         pairs, keys, mism, label, readers = [], [], 0, '', None
-        rows = []
+        rows, vcells = [], []
         for ln in open(f, encoding='utf-8', errors='replace'):
             ln = ln.rstrip('\n')
             if ln.startswith('#'):
@@ -74,6 +82,8 @@ def batches():
                     label = ln.lstrip('# ').strip()[:90]
                 continue
             c = ln.split('\t')
+            if len(c) >= 3 and ln.strip():
+                vcells.append((c[2].strip(), c[3].strip() if len(c) > 3 else ''))
             if len(c) < 4 or not c[2].strip() or not c[3].strip():
                 continue
             a, b = c[2].strip(), c[3].strip()
@@ -84,8 +94,16 @@ def batches():
         pair = _pair(readers)
         keys = [(*k, pair) for k in rows]
         out.append({'file': rel, 'when': int(when[0]) if when else 2 ** 62, 'sha': when[-1] if when else 'untracked',
-                    'pairs': pairs, 'keys': keys, 'mismatch': mism, 'label': label, 'readers': readers, 'pair': pair})
+                    'pairs': pairs, 'keys': keys, 'mismatch': mism, 'label': label, 'readers': readers, 'pair': pair,
+                    'shape': _shape(vcells)})
     return sorted(out, key=lambda b: (b['when'], b['file']))
+
+
+def _shape(vcells):
+    """'batch', 'sidecar' (no row verdict-shaped) or 'malformed' (some rows not): a row is verdict-shaped when both
+    verdict cells are a verdict or EMPTY (a pending side) and at least one is a verdict"""
+    ok = [all(x in VERDICTS | {''} for x in v) and any(v) for v in vcells]
+    return 'sidecar' if ok and not any(ok) else 'malformed' if not all(ok) else 'batch'
 
 
 def _lit(cell):
@@ -143,6 +161,14 @@ def _seed():
              ('r7297: a batch declaring no readers is refused', [a, bare], True),
              ('r7297: a batch naming one reader twice is refused', [a, self_], True)]
     bad = [f'{lab}: expected {"refused" if w else "pooled"}' for lab, bs, w in cases if refused(bs) != w]
+    shapes = [('r7299: a four-column batch is a batch', [('DELIBERATE', 'REPAIR-OWED')], 'batch'),
+              ('r7299: a pending blind read (one side empty) is a batch', [('', 'REPAIR-OWED')], 'batch'),
+              ('r7299: a reasons sidecar (prose in the verdict column) is not a batch',
+               [('(a) PROXY on a PARTIAL CODE LINE', ''), ('(b) the token is the claim', '')], 'sidecar'),
+              ('r7299: a GROUNDS file shaped verdict, prose is not a batch', [('REPAIR-OWED', 'G4: short token')], 'sidecar'),
+              ('r7299: verdicts with one prose cell is a malformed batch',
+               [('DELIBERATE', 'DELIBERATE'), ('DELIBERATE', 'see note')], 'malformed')]
+    bad += [f'{lab}: expected {w}, got {_shape(v)}' for lab, v, w in shapes if _shape(v) != w]
     for b_ in bad:
         print(f'    [FAIL] {b_}')
     print(f'  seeds: {"hold" if not bad else "LOST"}')
@@ -220,6 +246,21 @@ def main():
     if '--seed' in sys.argv:
         return _seed()
     bs = batches()
+    sidecars = [x['file'] for x in bs if x['shape'] == 'sidecar']
+    malformed = [x['file'] for x in bs if x['shape'] == 'malformed']
+    bs = [x for x in bs if x['shape'] != 'sidecar']
+    if sidecars:
+        print(f'  ⌗ {len(sidecars)} FILE(S) MATCH THE BATCH GLOB AND HOLD NO VERDICT IN THE VERDICT COLUMN -- not a batch '
+              f'(a reasons sidecar), excluded and listed:')
+        for f in sidecars:
+            print(f'    {f}')
+        print()
+    if malformed:
+        print(f'  ⛔ {len(malformed)} BATCH(ES) WITH A NON-VERDICT IN A VERDICT CELL ON SOME ROWS -- a malformed batch, '
+              f'not a sidecar.  Nothing is written.')
+        for f in malformed:
+            print(f'    {f}')
+        return 1
     bare = unlabelled(bs)
     if bare:
         print(f'  ⛔ {len(bare)} FILE(S) MATCH THE BATCH GLOB AND DECLARE NO TWO READERS -- every batch carries '
@@ -278,6 +319,9 @@ def main():
     if pending:
         body += ('\n## Pending -- filed, no verdict pair yet, not pooled\n\n'
                  + '\n'.join(f'- `{f}`' for f in pending) + '\n')
+    if sidecars:
+        body += ('\n## Not a batch -- matches the glob, holds no verdict in the verdict column (r7299)\n\n'
+                 + '\n'.join(f'- `{f}`' for f in sidecars) + '\n')
     print(head + body)
     if '--write' in sys.argv:
         os.makedirs(os.path.dirname(OUT), exist_ok=True)

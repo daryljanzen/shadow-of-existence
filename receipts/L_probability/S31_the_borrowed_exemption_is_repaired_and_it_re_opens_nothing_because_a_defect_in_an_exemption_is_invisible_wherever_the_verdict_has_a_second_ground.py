@@ -363,23 +363,26 @@ gate(f'Ⓔ① ⛭⛭ the one correction that is this seat\'s own: `{len(_mine)}`
      f're-stated by APPEND, keeping the original stamp as `r7253` requires',
      len(_mine) == 1)
 
+#: ⌗ BOTH REPAIRS OF THIS GATE, KEPT: `66`'s CLOSED RANGE and this seat's SPECIFIC NEGATIVE.
+#:   ⓵ `66` (r7295, under the exception, because the merge that broke it was its own): the range was
+#:     `PREG..WORKING TREE`, so verdicts landing AFTER this repair were imported into the repair's own
+#:     census --- the `71`st member for the fifth time.  Pinned to `PREG..AFTER`, the closed range the
+#:     claims are actually about, which also took the unclassified grounds from `4` to `0`.
+#:   ⓶ this seat (r7298): the gate ALSO demanded that no receipt but its own appear in the diff --- a
+#:     claim about the diff's FORM beside the claim it means --- so a later revision repairing this
+#:     seat's own receipts turned it red.  The specific negative was the whole claim.
+#:   ⇒ *** A closed range AND the negative alone: neither repair makes the other redundant, because
+#:       one fixes WHAT the gate reads and the other WHAT IT ASSERTS. ***
 _touched = sorted({f for f in _git('diff', '--name-only', PREG, AFTER).split('\n') if f})
-#: ⛔⛭ BOTH REPAIRS KEPT (r7298+60's form, r7295+66's range).  60: the first form of this gate ALSO
-#: required that no receipt but its own appear in the diff --- a claim about the diff's FORM beside
-#: the claim it means --- and the specific negative is the whole claim: none of the receipts whose
-#: rows this repair touches was edited.  66: and the range it reads is `PREG..AFTER`, closed, so the
-#: gate no longer depends on what a later revision edits.  ** The two repairs are the same clause
-#: from its two sides: assert the PROPERTY, and assert it over a range that cannot move. **
 _subjects = sorted({c[0] for c, _l in _ro})
 _touched_subjects = [f for f in _touched if f in _subjects]
 print(f'      the {len(_ro)} touched rows live in {len(_subjects)} receipts; this revision edited '
-      f'{len(_touched_subjects)} of them')
-gate(f'Ⓔ② ⛭⛭ the restraint, as the SPECIFIC NEGATIVE and nothing beside it: the '
+      f'{len(_touched_subjects)} of them, over the CLOSED range {PREG}..{AFTER}')
+gate(f'Ⓔ② ⛭⛭ the restraint, over a CLOSED range and as the SPECIFIC NEGATIVE alone: the '
      f'`{len(_ro)}` rows the repair touches live in `{len(_subjects)}` receipts and this revision '
      f'edited `{len(_touched_subjects)}` of them, while the module and the ledger ARE in the diff --- '
-     f'because a re-statement is a row and not an edit to the gate it describes.  ** The first form of '
-     f'this gate also demanded that no OTHER receipt appear in the diff, which is a claim about the '
-     f'diff rather than about the restraint; it is dropped, and the range is pinned beside it **',
+     f'because a re-statement is a row and not an edit to the gate it describes.  ** Two repairs, both '
+     f'kept: `66` pinned WHAT it reads and this seat fixed WHAT it asserts **',
      BASE in _touched and MOD in _touched and not _touched_subjects)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════

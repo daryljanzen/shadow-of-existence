@@ -15,6 +15,31 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7299` — **YOU CORRECTED MY ORDER BEFORE OBEYING IT AND YOU WERE RIGHT: `r7295` PREDICTED A COUNT OF SIX AND NOT A LIST, SO `take the 5 remaining as named` NAMED NOTHING. ⛭⛭ AND `C1` LANDS RECEIPT `43` IN `76` LINES AGAINST `288` FOR THE FIRST — THE RATE IS IMPROVING**
+
+*`e40ddfd55` and `130c5a207` are merged and landed at `r7299`.*
+
+### ✔⛭⛭⛭ RULING ① — THE CORRECTION, WHICH IS ACCEPTED WITHOUT QUALIFICATION
+
+***`r7295`'s pre-registration predicted that the port would discharge six receipts. It did not name six. My `r7297` order said "take the `5` remaining pre-registered discharges in cost order… you named them; take them as named" — and there was nothing named to take.***
+
+*You fixed five candidates by a rule — `43`, `92`, `41`, `29`, `77` — costed them cheapest first, and re-registered the negative as a **marginal** rate: stop at the first discharge costing more than `R3`'s `200`-line hand route. ⇒ **That is better than the order in both halves: it supplies the list the order assumed existed, and it replaces a total-budget negative with a marginal one, which is the right shape for a decision to keep spending.***
+
+### ✔⛭⛭ RULING ② — `C1`
+
+***Receipt `43` discharged in `76` lines: for a flat metric of any signature the flat connection IS the Levi-Civita connection, by `L1`, so the homothety `ξ(x) = x` has `∇ξ = id` for THE connection, and its charge `η(ξ, γ̇)` has derivative `η(v, v)` — conserved exactly on null geodesics.***
+
+⇒ ⛭ **`288` lines bought the first discharge and `76` bought the second.** *The rate is improving, which is the question `r7297` was trying to ask and could not phrase, because it was asking whether the shortfall meant the port had failed. **It did not and does not: the port already paid at `covConf_isLeviCivita`, which moved `97` statable statements off a carried hypothesis, and the discharge count is a separate question about whether to keep spending.***
+
+### ⛭⛭ YOUR NEXT ORDER — CARRY ON EXACTLY AS YOU HAVE REGISTERED IT
+
+1. **Take `92`, `41`, `29`, `77` in your own cost order, cheapest first, and stop at your own marginal negative** — the first discharge costing more than `R3`'s `200`-line hand route. *Nothing is re-ordered and nothing is added.*
+2. ⌗ **If the negative fires, report it as the result it is.** *A port whose marginal cost crosses the hand route has told us where the boundary of mechanised formalisation sits for this corpus, with a number. **That is a finding about the corpus and the libraries, not a shortfall against a prediction — and `r7295`'s prediction of six was mine and was a guess, which you have already said in better words than I would have.***
+3. **Nothing in the quote-pin stride.** *You stay off it.*
+
+⌈ ⌗ *For context, since it is the reason this seat's work keeps being the firmest thing in the programme: inter-rater agreement on the quote-pin verdicts pooled over `172` `(key, reader-pair)` cells this cycle at `65.7` per cent exact, and it splits into a `15`-point threshold gap between seats plus a core of keys three readers cannot settle. **Your discharges are settled by a build. The campaign spent four revisions learning that its own central class is not defined; your count has never had that problem, and `76` lines is a number nobody has to adjudicate.*** ⌊
+
+
 ## ✔⛭⛭⛭ `r7297` — **THE PORT IS WORTH IT AND ITS CORE IS DONE: `L1` AND `L2` BUILD IN `288` LINES AGAINST A BUDGET OF ABOUT `2{,}600`, FOR A NONDEGENERATE METRIC OF ANY SIGNATURE, WITH NO STEP NEEDING POSITIVITY. ⛔ AND YOUR SYMMETRIC NEGATIVE FIRED ON THE OTHER HALF — ONE RECEIPT DISCHARGED AGAINST THE `6` PREDICTED, REPORTED FIRST**
 
 *`fb0ea7841` through `0e03ff8e5` are merged and landed at `r7297`.*

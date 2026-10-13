@@ -1,0 +1,177 @@
+# every (key, reader-pair) CELL the campaign holds, 172 of them, pooled at r7299.
+# The unit is the CELL and not the key (PO-78 member 82): the same key read by a new
+# reader is a new measurement.  Sources: the 44-key three-way (three pairs), cc66s
+# 34-key third accident, the 4 L804 keys from this cycles conflict, 70s L262 join.
+# columns: receipt, literal, reader-pair, verdict A, verdict B, source
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"It survives in an amplitude and cancels in every logarithmic derivative"	69|cc66	DELIBERATE	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"The cosmology carries no early-universe parameter, and what it does carry should be stated plainly"	69|cc66	MEANING-HELD	MEANING-HELD	THREE_READERS 69|cc66
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"There is no early-universe parameter among them"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"a dimensionless magnitude needs two"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"a quantity with no single value has no handover to transmit"	69|cc66	MEANING-HELD	MEANING-HELD	THREE_READERS 69|cc66
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"is that start read in units of a density rather than an inheritance"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the crossing determines how much a perturbation is multiplied, and does not determine the perturbation"	69|cc66	DELIBERATE	MEANING-HELD	THREE_READERS 69|cc66
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the density crosses as inherited content"	69|cc66	MEANING-HELD	MEANING-HELD	THREE_READERS 69|cc66
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the one quantity the handover supplies"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the same standard datum that fixes both the light-element abundances and the microwave-background peak \\emph{heights}"	69|cc66	REPAIR-OWED	MEANING-HELD	THREE_READERS 69|cc66
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"there is no such start and no such amplitude"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"94 UNMARKED"	69|cc66	ENCODING-OK	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"94 unmarked"	69|cc66	ENCODING-OK	ALT-OK	THREE_READERS 69|cc66
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"A PHANTOM, and I built it from the advertisement"	69|cc66	DELIBERATE	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"P14's massive 54-development fell out of it"	69|cc66	DELIBERATE	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"grep clean across 17"	69|cc66	DELIBERATE	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"FRW/Kerr/RN analogous removal"	69|cc66	DELIBERATE	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"a CONSTANT"	69|cc66	DELIBERATE	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"bound-LTB form"	69|cc66	DELIBERATE	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"non-degenerate critical points of identical analytic character"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"r(z)=M(1+\\cos z)$"	69|cc66	DELIBERATE	DELIBERATE	THREE_READERS 69|cc66
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"(4/11)"	69|cc66	DELIBERATE	DELIBERATE	THREE_READERS 69|cc66
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"3 nu"	69|cc66	DELIBERATE	DELIBERATE	THREE_READERS 69|cc66
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"N_{\\mathrm{eff}}=3.046"	69|cc66	DELIBERATE	DELIBERATE	THREE_READERS 69|cc66
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"\\nu_R"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"adopted"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"decoupl"	69|cc66	DELIBERATE	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"does not dissolve the discrepancy with the local distance ladder"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"makes no $N_{\\mathrm{eff}}$ prediction"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"nu_R"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"nu_{R}"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"right-handed"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py	"analytical index"	69|cc66	DELIBERATE	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py	"analytical index|graded index|bulk index"	69|cc66	DELIBERATE	ALT-OK	THREE_READERS 69|cc66
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"at distinct points of the throat circle, and each vantage's signed areal radius vanishes at its own and at neither of the others"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"construction of this paper they are equivalent vantages"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"the distinction is between one door swung through a family and three doors standing at once"	69|cc66	MEANING-HELD	MEANING-HELD	THREE_READERS 69|cc66
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"the root-exchange $\\sigma$ is the hop from one to the next"	69|cc66	REPAIR-OWED	MEANING-HELD	THREE_READERS 69|cc66
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"unfixed arbitrary modulus"	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"A topological term's coefficient is of the third kind"	69|cc66	MEANING-HELD	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"THERE IS NO SUCH BUNDLE"	69|cc66	DELIBERATE	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"the ledger counts no counterterm coefficient"	69|cc66	MEANING-HELD	MEANING-HELD	THREE_READERS 69|cc66
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"R = r_0->-r_0 (2M->-2M) carries 3 -> 3bar"	69|cc66	DELIBERATE	MEANING-HELD	THREE_READERS 69|cc66
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"exchanged by the antipodal map, which is $R$."	69|cc66	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|cc66
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"It survives in an amplitude and cancels in every logarithmic derivative"	69|60	DELIBERATE	REPAIR-OWED	THREE_READERS 69|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"The cosmology carries no early-universe parameter, and what it does carry should be stated plainly"	69|60	MEANING-HELD	MEANING-HELD	THREE_READERS 69|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"There is no early-universe parameter among them"	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"a dimensionless magnitude needs two"	69|60	REPAIR-OWED	MEANING-HELD	THREE_READERS 69|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"a quantity with no single value has no handover to transmit"	69|60	MEANING-HELD	MEANING-HELD	THREE_READERS 69|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"is that start read in units of a density rather than an inheritance"	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the crossing determines how much a perturbation is multiplied, and does not determine the perturbation"	69|60	DELIBERATE	MEANING-HELD	THREE_READERS 69|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the density crosses as inherited content"	69|60	MEANING-HELD	MEANING-HELD	THREE_READERS 69|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the one quantity the handover supplies"	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the same standard datum that fixes both the light-element abundances and the microwave-background peak \\emph{heights}"	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"there is no such start and no such amplitude"	69|60	REPAIR-OWED	MEANING-HELD	THREE_READERS 69|60
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"94 UNMARKED"	69|60	ENCODING-OK	ENCODING-OK	THREE_READERS 69|60
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"94 unmarked"	69|60	ENCODING-OK	ENCODING-OK	THREE_READERS 69|60
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"A PHANTOM, and I built it from the advertisement"	69|60	DELIBERATE	REPAIR-OWED	THREE_READERS 69|60
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"P14's massive 54-development fell out of it"	69|60	DELIBERATE	REPAIR-OWED	THREE_READERS 69|60
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"grep clean across 17"	69|60	DELIBERATE	REPAIR-OWED	THREE_READERS 69|60
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"FRW/Kerr/RN analogous removal"	69|60	DELIBERATE	DELIBERATE	THREE_READERS 69|60
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"a CONSTANT"	69|60	DELIBERATE	REPAIR-OWED	THREE_READERS 69|60
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"bound-LTB form"	69|60	DELIBERATE	REPAIR-OWED	THREE_READERS 69|60
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"non-degenerate critical points of identical analytic character"	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"r(z)=M(1+\\cos z)$"	69|60	DELIBERATE	DELIBERATE	THREE_READERS 69|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"(4/11)"	69|60	DELIBERATE	DELIBERATE	THREE_READERS 69|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"3 nu"	69|60	DELIBERATE	DELIBERATE	THREE_READERS 69|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"N_{\\mathrm{eff}}=3.046"	69|60	DELIBERATE	DELIBERATE	THREE_READERS 69|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"\\nu_R"	69|60	REPAIR-OWED	ENCODING-OK	THREE_READERS 69|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"adopted"	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"decoupl"	69|60	DELIBERATE	REPAIR-OWED	THREE_READERS 69|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"does not dissolve the discrepancy with the local distance ladder"	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"makes no $N_{\\mathrm{eff}}$ prediction"	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"nu_R"	69|60	REPAIR-OWED	ENCODING-OK	THREE_READERS 69|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"nu_{R}"	69|60	REPAIR-OWED	ENCODING-OK	THREE_READERS 69|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"right-handed"	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py	"analytical index"	69|60	DELIBERATE	DELIBERATE	THREE_READERS 69|60
+receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py	"analytical index|graded index|bulk index"	69|60	DELIBERATE	ENCODING-OK	THREE_READERS 69|60
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"at distinct points of the throat circle, and each vantage's signed areal radius vanishes at its own and at neither of the others"	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"construction of this paper they are equivalent vantages"	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"the distinction is between one door swung through a family and three doors standing at once"	69|60	MEANING-HELD	MEANING-HELD	THREE_READERS 69|60
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"the root-exchange $\\sigma$ is the hop from one to the next"	69|60	REPAIR-OWED	MEANING-HELD	THREE_READERS 69|60
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"unfixed arbitrary modulus"	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"A topological term's coefficient is of the third kind"	69|60	MEANING-HELD	MEANING-HELD	THREE_READERS 69|60
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"THERE IS NO SUCH BUNDLE"	69|60	DELIBERATE	MEANING-HELD	THREE_READERS 69|60
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"the ledger counts no counterterm coefficient"	69|60	MEANING-HELD	MEANING-HELD	THREE_READERS 69|60
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"R = r_0->-r_0 (2M->-2M) carries 3 -> 3bar"	69|60	DELIBERATE	DELIBERATE	THREE_READERS 69|60
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"exchanged by the antipodal map, which is $R$."	69|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS 69|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"It survives in an amplitude and cancels in every logarithmic derivative"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"The cosmology carries no early-universe parameter, and what it does carry should be stated plainly"	cc66|60	MEANING-HELD	MEANING-HELD	THREE_READERS cc66|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"There is no early-universe parameter among them"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"a dimensionless magnitude needs two"	cc66|60	REPAIR-OWED	MEANING-HELD	THREE_READERS cc66|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"a quantity with no single value has no handover to transmit"	cc66|60	MEANING-HELD	MEANING-HELD	THREE_READERS cc66|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"is that start read in units of a density rather than an inheritance"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the crossing determines how much a perturbation is multiplied, and does not determine the perturbation"	cc66|60	MEANING-HELD	MEANING-HELD	THREE_READERS cc66|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the density crosses as inherited content"	cc66|60	MEANING-HELD	MEANING-HELD	THREE_READERS cc66|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the one quantity the handover supplies"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the same standard datum that fixes both the light-element abundances and the microwave-background peak \\emph{heights}"	cc66|60	MEANING-HELD	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"there is no such start and no such amplitude"	cc66|60	REPAIR-OWED	MEANING-HELD	THREE_READERS cc66|60
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"94 UNMARKED"	cc66|60	REPAIR-OWED	ENCODING-OK	THREE_READERS cc66|60
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"94 unmarked"	cc66|60	ALT-OK	ENCODING-OK	THREE_READERS cc66|60
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"A PHANTOM, and I built it from the advertisement"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"P14's massive 54-development fell out of it"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"grep clean across 17"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"FRW/Kerr/RN analogous removal"	cc66|60	REPAIR-OWED	DELIBERATE	THREE_READERS cc66|60
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"a CONSTANT"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"bound-LTB form"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"non-degenerate critical points of identical analytic character"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"r(z)=M(1+\\cos z)$"	cc66|60	DELIBERATE	DELIBERATE	THREE_READERS cc66|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"(4/11)"	cc66|60	DELIBERATE	DELIBERATE	THREE_READERS cc66|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"3 nu"	cc66|60	DELIBERATE	DELIBERATE	THREE_READERS cc66|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"N_{\\mathrm{eff}}=3.046"	cc66|60	DELIBERATE	DELIBERATE	THREE_READERS cc66|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"\\nu_R"	cc66|60	REPAIR-OWED	ENCODING-OK	THREE_READERS cc66|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"adopted"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"decoupl"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"does not dissolve the discrepancy with the local distance ladder"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"makes no $N_{\\mathrm{eff}}$ prediction"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"nu_R"	cc66|60	REPAIR-OWED	ENCODING-OK	THREE_READERS cc66|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"nu_{R}"	cc66|60	REPAIR-OWED	ENCODING-OK	THREE_READERS cc66|60
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"right-handed"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py	"analytical index"	cc66|60	REPAIR-OWED	DELIBERATE	THREE_READERS cc66|60
+receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py	"analytical index|graded index|bulk index"	cc66|60	ALT-OK	ENCODING-OK	THREE_READERS cc66|60
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"at distinct points of the throat circle, and each vantage's signed areal radius vanishes at its own and at neither of the others"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"construction of this paper they are equivalent vantages"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"the distinction is between one door swung through a family and three doors standing at once"	cc66|60	MEANING-HELD	MEANING-HELD	THREE_READERS cc66|60
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"the root-exchange $\\sigma$ is the hop from one to the next"	cc66|60	MEANING-HELD	MEANING-HELD	THREE_READERS cc66|60
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"unfixed arbitrary modulus"	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"A topological term's coefficient is of the third kind"	cc66|60	REPAIR-OWED	MEANING-HELD	THREE_READERS cc66|60
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"THERE IS NO SUCH BUNDLE"	cc66|60	REPAIR-OWED	MEANING-HELD	THREE_READERS cc66|60
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"the ledger counts no counterterm coefficient"	cc66|60	MEANING-HELD	MEANING-HELD	THREE_READERS cc66|60
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"R = r_0->-r_0 (2M->-2M) carries 3 -> 3bar"	cc66|60	MEANING-HELD	DELIBERATE	THREE_READERS cc66|60
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"exchanged by the antipodal map, which is $R$."	cc66|60	REPAIR-OWED	REPAIR-OWED	THREE_READERS cc66|60
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"This is proved here from the maximal-symmetry requirement together with the signature and causal-structure conditions; nothing is assumed of the embedding"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"answers a question in the next sentence"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"label\\{prop:amplitude\\}.{0,1200}?\\\\noindent\\\\emph\\{Argument"	69|cc66	DELIBERATE	NOT-A-PIN	ACCIDENTAL_3 (cc66 x 69)
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"rem:carter-chain"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"two sections above the question"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_CIRCLED"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_left = sorted({c for c in s if ord(c) > 0xFF})"	69|cc66	DELIBERATE	DELIBERATE	ACCIDENTAL_3 (cc66 x 69)
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"for _i in range(10)"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"nothing untranslated leaves this function"	69|cc66	ALT-OK	DELIBERATE	ACCIDENTAL_3 (cc66 x 69)
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"ᶜ"	69|cc66	DELIBERATE	DELIBERATE	ACCIDENTAL_3 (cc66 x 69)
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"⓺"	69|cc66	DELIBERATE	DELIBERATE	ACCIDENTAL_3 (cc66 x 69)
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"An empty survey is green forever"	69|cc66	MEANING-HELD	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"RESTATES THE RULE IT GUARDS"	69|cc66	REPAIR-OWED	DELIBERATE	ACCIDENTAL_3 (cc66 x 69)
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"_SUPER"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"ord(c) > 0xFF"	69|cc66	DELIBERATE	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"tex_escape"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"ʙ"	69|cc66	DELIBERATE	DELIBERATE	ACCIDENTAL_3 (cc66 x 69)
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"ᵇ"	69|cc66	DELIBERATE	DELIBERATE	ACCIDENTAL_3 (cc66 x 69)
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"WHAT IT CANNOT DO"	69|cc66	REPAIR-OWED	DELIBERATE	ACCIDENTAL_3 (cc66 x 69)
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"load-bearing claim from a passing remark"	69|cc66	REPAIR-OWED	DELIBERATE	ACCIDENTAL_3 (cc66 x 69)
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"reading list"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"substrate"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	"CORRECTED c54.220 (`L-554`)"	69|cc66	DELIBERATE	DELIBERATE	ACCIDENTAL_3 (cc66 x 69)
+receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	"a degeneracy growing as $n^2$, the shell contribution goes as $n^3$ and the sum \\emph{diverges quartically}"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	"the constant is the propagating-component count rather than a universal"	69|cc66	MEANING-HELD	MEANING-HELD	ACCIDENTAL_3 (cc66 x 69)
+receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	"the degeneracy is $2(n-1)(n+3)$"	69|cc66	DELIBERATE	MEANING-HELD	ACCIDENTAL_3 (cc66 x 69)
+receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	"there are no modes below $n=2$ on $S^{3}$"	69|cc66	MEANING-HELD	MEANING-HELD	ACCIDENTAL_3 (cc66 x 69)
+receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py	"ARITHMETIC OF THE OLD PROBE"	69|cc66	REPAIR-OWED	DELIBERATE	ACCIDENTAL_3 (cc66 x 69)
+receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py	"_CLAIMS"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py	"_verbatim"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"(1+\\delta_{r})/(1+\\delta_{m})=1+(\\delta_{r}-\\delta_{m})+O(2)"	69|cc66	DELIBERATE	DELIBERATE	ACCIDENTAL_3 (cc66 x 69)
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"Adiabatic primordial perturbations are strongly favoured observationally"	69|cc66	MEANING-HELD	MEANING-HELD	ACCIDENTAL_3 (cc66 x 69)
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"an isocurvature mode \\emph{is} $\\delta_{r}\\neq\\delta_{m}$"	69|cc66	DELIBERATE	MEANING-HELD	ACCIDENTAL_3 (cc66 x 69)
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"nearly scale-invariant adiabatic spectrum processed by ordinary structure formation"	69|cc66	REPAIR-OWED	REPAIR-OWED	ACCIDENTAL_3 (cc66 x 69)
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_CIRCLED"	69|70	REPAIR-OWED	REPAIR-OWED	BLIND_READ_L262_70
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"for _i in range(10)"	69|70	REPAIR-OWED	REPAIR-OWED	BLIND_READ_L262_70
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_left = sorted({c for c in s if ord(c) > 0xFF})"	69|70	DELIBERATE	DELIBERATE	BLIND_READ_L262_70
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"nothing untranslated leaves this function"	69|70	DELIBERATE	REPAIR-OWED	BLIND_READ_L262_70
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"ᶜ"	69|70	DELIBERATE	DELIBERATE	BLIND_READ_L262_70
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"⓺"	69|70	DELIBERATE	DELIBERATE	BLIND_READ_L262_70
