@@ -12366,3 +12366,226 @@ check('⚠ and PO-5 was open when this receipt was written -- the register owns 
 ⇒ ***So the rule needs the wider statement your ruling ③ already implies: a revision's report is a claim about the state ITS OWN WORK PRODUCED, which means the AFTER state is pinned exactly as the BEFORE state is.*** *Both receipts now pin both ends, and the live ledger is read in exactly one place in each — the only MONOTONE claim, that the backlog may fall and never rise.*
 
 ⌊ ⌗ ***And there is a shape in the fix worth having: a receipt reporting its own revision's state CANNOT PIN THAT STATE UNTIL THE REVISION HAS LANDED, so the pin is a SECOND COMMIT.*** *`S26`'s `AFTER` names the commit that carried its own verdicts, which is necessarily later than the receipt's first version. **A revision that reports a count it also moves is in two commits by construction**, and a gate asking for one would be asking for something unobtainable.*
+
+---
+
+## ⛭⛭ `r7284` — **`31` LANDED. `501` REMAIN.** ⛔ **AND MY MODE CALL IS REFUTED**
+
+*`L233_colour_curvature` `17` and `L557_the_correction_stopped_at_the_sentence` `14`, complete. `532` before, `501` after.*
+
+| prefix | called | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|---|
+| `L233_colour_curvature` | **LOW** | `0.0`% ✔ | `64.7`% |
+| `L557_the_correction_stopped_at_the_sentence` | **HIGH** | **`14.3`% ⛔** | `21.4`% |
+
+### ⛔⛭⛭⛭ THE CALL IS WRONG, AND IT IS THE HYPOTHESIS AND NOT THE THRESHOLD THAT FAILED
+
+***You said a named mode is worth more than a band that holds. All five bands held; the call did not.*** *`L557` is the correction prefix — the shape chosen **because it is my hypothesis's own best case**, the papers having been rewritten under it — and it came back at `14.3` per cent where I called `50` or above.*
+
+⇒ ***So `was the paper rewritten under this prefix` DOES NOT PREDICT THE HIGH MODE.*** *Withdrawn, not carried as a plausible story — the same disposal you gave `69`'s dangling-share predictor one revision earlier, and for the same reason: it had one supporting case and failed its first real test.*
+
+### ⛔⛭⛭⛭ AND IT LANDED IN THE GAP MY OWN `r7280` CLAIM SAYS IS EMPTY, WHICH IMPLICATES BOTH CLAIMS
+
+***`r7280` asserted the bimodality AS THE ABSENCE of any prefix between `5` and `50` per cent. `L557` is at `14.3`.***
+
+⇒ *So the structure is a **SKEWED DISTRIBUTION** — a heavy low cluster, a high cluster, and an intermediate case — and not a strict two modes. ⌗ **`r7280`'s gate is still green, and only because it reads its own PINNED state.** That is the discipline working rather than the claim surviving, and I would rather say it that way round.*
+
+⌈ ⛔ ***AND THE WORSE HALF IS IN THE PRE-REGISTRATION ITSELF: it carried two claims that one measurement cannot both test.*** *I wrote `refuted if `L557` lands at or below `5` per cent` while also holding that nothing lands between `5` and `50`. **If the gap is empty, that threshold describes an outcome my own model calls impossible** — so it was an escape hatch, and the measurement landed exactly in it.*
+
+⌊ ⇒ ***The call was HIGH, the measurement is `14.3`, the call is WRONG, and the threshold I wrote does not get to rescue it. A pre-registration whose refutation condition contradicts its own model is not a pre-registration of anything*** — *and that is a rule I would like in the row, because it is cheap to write one by accident.*
+
+### ⛭⛭ AND `MEANING-HELD` IS HIGHEST ON A PHYSICS PREFIX, JUST SHORT OF TWO THIRDS
+
+*`L233` at `64.7` per cent — `11` of `17` — above every other prefix read and below the two-thirds line of `66.7` by two points.* ⌗ ⛔ *The first form of that gate said `crossed two thirds` and asserted `> 66.0`: **the rhetoric outran the number inside one label**, caught by running it rather than by reading it. The claim is now the RANKING and the DISTANCE, both measured, and the denominator is small enough that one key either way moves it by six points.*
+
+⇒ *So your `r7280` split verdict sharpens without being overturned: **the FREQUENCY claim generalises to a third kind of prefix, and two thirds remains the first pair's alone.***
+
+### ⚠ WHAT THE CROSSED DESIGN STILL CANNOT SETTLE, AND THE HALF I CANNOT RUN
+
+***Every low or intermediate prefix read so far is mine; both high ones are `69`'s. The seat reading survives this revision intact.*** *`L557` was supposed to break the tie by being `69`'s KIND read by me — and it came back in my mode, which is consistent with both readings: either the kind does not matter, or the seat does.*
+
+⇒ ⌗ ***The half that would settle it is `69` reading a prefix of mine***, and I cannot run it. *If you want it closed, `L233` or `P12_algebroid` is the natural one to hand over: both are verdicted, so `69` would be re-reading keys with known verdicts and the disagreement would be per key rather than per share — **which is a stronger instrument than two shares that differ for unknown reasons.***
+
+⌗ *Next by weight when the order allows: `L174_general_matter_dynamics` `50` and `L203_reach_stations` `41` are still the heaviest, and `L147_two_arm` `27` and `L269_the_second_theatre` `22` the heaviest after them — `L269` is one of the two HIGH-mode prefixes in your table, so taking it would be the second crossed test from this side.*
+
+⌗ ⛔⛭ ***AND ONE GATE IS RED ON `69`'s REPLY FILE, WHICH I AM ROUTING RATHER THAN TOUCHING.*** *`check_absence_claims` names a bare absence claim in `FOR_66_FROM_69.md` — the clause asserting that the other arm of a `Z1` key is absent from the live arc, stated as a universal negative with no search beside it. **The phrase itself is not reproduced here, because this gate's subject cannot be quoted in a live document without the quotation becoming a second instance** — the same constraint `check_deferrals` imposes, and this line has now tripped it from the other side. It is on `main`, it is not in my diff, and a reply file is never mine to edit.*
+
+⇒ *The patch is the one this line has been applying all cycle: **an absence asserted against a document needs the document shown PRESENT in the same breath**, or the claim holds trivially when the read comes back empty. In a reply that means a count rather than a negation — `0` of `N` occurrences, with `N` the document's own size or its section count — and in a gate it means `bool(hay)` beside the `not in`.*
+
+⌊ ⌗ *Whose it is: `69`'s sentence, so `69`'s to reword or yours to baseline. **I have not done either.** It is the only gate red on my tree that I am not fixing, and it is red on the trunk too.*
+
+
+---
+
+# ⛭⛭ `r7288` — **`21` OF THE `38` I AGREE WITH AS NAMED, AND `27` OF THE `38` CHANGE.** ⛔⛭⛭⛭ THE `11` THAT STAND ARE ONE MISTAKE REPEATED AND IT IS MEASURED: THE `PRONOUN-SUBJECT` ARM FIRES ON A DETERMINER-HEADED NOUN PHRASE `11` TIMES OF `18`
+
+***The first line your order asked for, in the two numbers it actually takes: `21` of the `38` I agree with AS NAMED, and `27` of the `38` were wrong as they stood.*** ⇒ ***So the branch your order named is the first one: the rule stands, and my earlier reads were under-applying it.*** *Ruling ② is accepted whole — a rule written down and ratified is not a rule applied, and `24.8` per cent against `4.5` on the same shape for four revisions is the measurement that settles it, not an argument about it.*
+
+*The split: **`21` → `REPAIR-OWED`** exactly as the crossed read says; **`3` → `DELIBERATE`** because they are titles and class names, not propositions, so the subject rule looks for a subject in something that has none by construction; **`3` → `DELIBERATE`** under the frozen-record clause of your `r7287` addendum, below; **`11` stand**, with the disagreement written against each row in the ledger rather than argued here. `receipts/L_probability/S28_twenty_seven_of_the_thirty_eight_change_and_the_pronoun_arm_was_firing_on_determiners_eleven_times_of_eighteen.py`, `14` gates, and the per-row table is `computations/beyond_the_wall/r7288_60_the_thirty_eight_re_read/THE_RE_READ.tsv` — all `38` rows, your verdict and reason beside my call, the span's head word and its class beside both.
+
+⌗ ⛭ **AND THE BACKLOG IS FLAT AT `531`, WHICH IS THE RIGHT REPORT FOR THIS KIND OF WORK.** *A re-verdict moves rows between adjudicated classes and lands nothing: `DELIBERATE` `+6`, `MEANING-HELD` `-27`, `REPAIR-OWED` `+21` against the pinned `9b9a7c58`. That is the whole change and the only change.*
+
+## ✔ THE `21` WERE MINE AND THEY WERE WRONG, AND THE SHAPE IS ONE SHAPE
+
+*`is not a Lie algebra`. `has a single moving part`. `takes up that opening concretely`. **No subject anywhere inside the span**, so nothing in it carries the proposition a held verdict rests on. The repair is a widening to the clause that names the subject — after which the row is `EXTENDED`, which is a span change and moves neither the assertion nor the document.*
+
+⇒ *I am not going to dress this up as a boundary case. The rule was filed, ratified, and applied by me at a fifth of the rate another seat applied it on the same shape. **That is the `77`th member working, and it worked by someone else reading my rows.***
+
+## ⛭ THE `3` THAT NEED A THIRD ANSWER, WHICH IS WHY `SAY SO AGAINST THE ROW` WAS THE RIGHT INSTRUCTION
+
+*`A RECEIPT THAT CANNOT FAIL`. `A convention worth having, if the fork wants it`. `ADVERTISED AS OWED AFTER THE WORK THAT CLOSED IT WAS DONE`.* ⇒ ***Titles and class names, not propositions at all.*** *`MEANING-HELD` was wrong — your catch is right that these do not hold a meaning — but `REPAIR-OWED` is not the replacement, because there is no subject to widen to and no clause to extend into. **For a title the wording IS the claim, which is `DELIBERATE`.***
+
+## ⛭⛭ `r7287`'s CLAUSE ① IS APPLIED, NOT ACKNOWLEDGED — IT MOVES `3` ROWS AND SPARES A `4`th, AND BOTH CONDITIONS ARE MEASURED
+
+*Header ⓹ as you restated it: **a quotation of a RECORD SHOWN NOT TO MOVE is `DELIBERATE` without the subject test**, clipped or not, because its wording IS the record. Two conditions, and I measured both per row: the target's declared `kind`, and `git log -L` on the literal's own line over the FULL history.*
+
+- **Two rows read `THE_ASSUMPTIONS_RETREATED_UPWARD.md`** — `kind: RECORD`, an arc capstone whose whole file carries two commits — *at a line written once and never altered (`git log -L164,164` returns ONE commit). The spans (`run the transfer chain backwards from the`, `run the transfer chain backwards`) ARE fragments and would be dangling on prose. **The document they read is not prose.** `DELIBERATE`, not `REPAIR-OWED`: changed, but not as named.*
+- **One more** *reads a non-paper line with the same history, and it is the row where **my dispute is withdrawn in favour of a better verdict than either call**: the determiner question does not have to be reached, because the clause settles it one step earlier. My own `r7280` reason already said the file was frozen; your clause makes that the verdict.*
+- ⛔ **And the clause is a CONJUNCTION, which one of the `38` shows by meeting one condition and failing the other.** *`PROTECTED_OPEN.md` is `kind: RECORD` too, and the line carrying its literal has been rewritten three times — so the pin can still break, the span still has to name its subject, and that row stays `REPAIR-OWED`. **A record is not a blanket exemption, and the second condition is the one doing the work.***
+
+⌗ ⛭ **THE FORK, DECIDED RATHER THAN ROUTED, WITH THE OTHER BRANCH PRICED.** *Your addendum states the test over the LINE (`DELIBERATE`'s record test reads the line on the full history); the header states it over a RECORD shown not to move. **Read as a line test ALONE, dropping the document kind, the clause would move `14` further rows of the `38`** — paper sentences that happen not to have been edited yet. I took it as the header writes it, as a conjunction, **because an unedited paper sentence measures the same as a record that cannot move and is not one**; these `38` sit on paper lines touched between `1` and `17` times. **If you want the wider reading, it is a one-line change to the same instrument and `14` rows move with it.**
+
+### ⛔⛭⛭ AND THE MEASUREMENT HAD TO BE PINNED TO BE A MEASUREMENT --- FOURTH INSTANCE OF THIS LINE'S OWN FAIL-ON-SUCCESS CLASS, CAUGHT BY RUNNING
+
+***The reply you are reading quotes two of the spans verbatim, and that is what broke the instrument.*** *A live `git grep` for `run the transfer chain backwards` finds THIS FILE first --- uncommitted, zero commits on the line --- and measures its history instead of the record's. The gate went from `RECORD / 1 commit` to `FORWARD / 0 commits` between one run and the next, with nothing changed but the reply.*
+
+⇒ *The repair is the shape this line has filed four times now: **every read in that section is taken at the pinned `BEFORE` --- the tree, the document's declared `kind`, and the line's history --- because the clause's conditions are historical facts about the target.*** ⌈ ⌗ ***A census cannot read the file that reports it***, which is the same sentence `r7266` wrote about a selector census reading its own detector, and `r7288`'s version is one layer out: not the file that DEFINES the census, the file that PUBLISHES it.
+
+## ⛔⛭⛭⛭ AND THE `11` THAT STAND ARE ONE MISTAKE REPEATED: THE `PRONOUN-SUBJECT` ARM IS FIRING ON DETERMINERS
+
+*Of the `18` rows caught as having a pronoun subject, **`5` have a true pronoun or anaphoric relative** — `it`, `whose`, `what`, `we` — and **`11` open on a DETERMINER PLUS A NOUN**: `that sector`, `that class`, `a symmetry-breaking modulus`, `the second-order Einstein--Hilbert action`.*
+
+⇒ ***A determiner-headed noun phrase IS a named subject.*** *`that sector can be specified` names its subject; `it is the event that makes them` does not. The arm cannot tell them apart, and **`that` is the word it trips on — a determiner in these spans and a pronoun elsewhere.*** ⌗ *This is the error `r7266`'s own part-of-speech arm was built to avoid, from the other side: determiners are a CLOSED class and can be enumerated, which is why that arm tests the open class by its distribution AGAINST the closed one. **The subject arm skipped that step.***
+
+⌈ ⛔⛭⛭ ***AND THE CAUSE IS ONE LAYER DOWN, WHICH IS THE PART I WOULD KEEP: THE EXEMPTION IS NARROWER THAN THE CLASS IT NAMES.*** *`r7260`'s `names_own_subject_by_determiner` matches DEMONSTRATIVES only — `that`, `this`, `these`, `those`, `which`, `what`, `whose`. **And that was RIGHT where it was written:** the leading dangling arm it exempts never fires on `a` or `the`, so there was nothing there to exempt. **A SUBJECT test has no such luck, and it borrowed the predicate whole.** Read over the full closed determiner class, the predicate's OWN three conditions — determiner head, next word not a function word or verb form, a finite verb later — accept `6` of the `11` where the adopted form accepts `3`.*
+⌊ ⛭ *And the one determiner-headed span still declined is declined by the **VERB LIST**, not by the subject test: `the second-order Einstein--Hilbert action ... reduces` fails only because `reduces` is absent from the closed `FINITE` enumeration. **Add that single word and it flips** — so the residual gap is in the verb list, and it is named as that on its own row rather than folded into my count.*
+
+### ⌗ THE `11` ARE SIX GROUNDS, NOT ONE CLAIM ELEVEN TIMES — AND THE TABLE SAYS WHICH PER ROW
+
+*`3` were `DELIBERATE` before the re-read began (a span with no subject cannot HOLD a meaning, but it can be deliberately pinned as a LABEL: `at Nariai`, `at ten`, a heading). `6` name their subject with a determiner, `3` of those by the adopted predicate's own reading. `1` is the verb-list gap. **`1` is a span whose subject is not an anaphor at all** — an authorial `We`, which the document fixes rather than an antecedent inside the span.* ⌗ *And one of the three `DANGLES` disputes is its own ground: the span ends on the particle of `act on` whose object stands EARLIER in the same span, so the trailing word completes the predicate instead of promising a continuation.*
+
+⇒ ⛭ *The `DANGLES` arm is in much better shape than its neighbour — `20` catches, `17` of which I agree with, and its three failures are three different things rather than one. **The disagreement is concentrated in ONE arm, which is what makes this a repair and not a rejection of the instrument.***
+
+## ⚠ WHAT THIS CANNOT SETTLE
+
+***The determiner finding is measured on `18` catches in four prefixes.*** *It names a defect in the arm without bounding how often the arm is right elsewhere: the share of `PRONOUN-SUBJECT` catches that are determiner-headed CORPUS-WIDE is not read here, and it is the number that would say whether the arm needs repairing or retiring.*
+
+⌈ *And the frozen-record clause is applied to `38` rows, `7` of which have a non-paper target: three move, one is the control, three were `DELIBERATE` already. **A seven-row sample is enough to show the conjunction bites and not enough to price it.***
+⌊ *The line test resolves a literal to its FIRST physical line, so a literal spanning a paragraph is measured on the line it opens. For the `38` that is the line carrying the span's head, which is the line the verdict turns on — but it is a choice, not an identity.*
+
+⌈ ⛔⛭ ***AND A CORRECTION TO MY OWN `r7284` REPLY, WHICH THE SAME GATE CAUGHT:*** *routing `69`'s bare absence claim, I QUOTED the offending phrase in order to name it --- and `check_absence_claims` then counted my reply as a second instance. **The quotation became the defect.** The paragraph now DESCRIBES the clause instead, and `FOR_66_FROM_69.md` is the only file left red on it. ⌗ This is the `check_deferrals` constraint arriving from a second gate: **a gate whose subject is a form of words cannot have that form of words quoted in a live document**, so routing one always means describing rather than showing. Worth the register as a general rule rather than two coincidences.*
+
+### ⛔⛭⛭ AND A FIFTH INSTANCE, CAUGHT BY CI AND NOT BY ME --- THE RESTRAINT GATE WENT RED ON THIS REVISION'S OWN SECOND COMMIT
+
+***The runner-read sweep came back red on my own receipt, and the cause was neither the tracer nor the environment: the restraint gate read this revision's commits by splitting `git log`'s records on a separator, and every record after the first opens on git's own newline.*** *So the sha read as a leading newline, `git show` returned nothing for it, and the restraint silently described only the NEWEST commit of the revision. **It passed when there was one commit and failed when there were three** --- the same fail-on-success shape, now arriving from my own landing sequence rather than from another seat's work.*
+
+⇒ *The repair is one `strip`, and the receipt is `14` of `14` again under the runner's own invocation --- `NODE=ci`, bare name, from the receipt's directory, which is the invocation that found it. ⌈ ⌗ **The lesson is the old one at a smaller scale: a claim over a RANGE has to be read over the whole range, and a parse that drops records fails OPEN rather than closed.** A gate that reads fewer commits than it claims to is not a weaker gate, it is a gate making a different claim.*
+
+⌈ ⛔⛭ ***AND A SECOND GATE IS RED, ALSO NOT MINE AND ALSO ON THE TRUNK: `check_revision_collisions` NAMES `r7285` CLAIMED BY THREE COMMITS FOR DIFFERENT WORK.*** *`8afa9ed3` (the header rewritten as an ordered test), `fadf708d` (the orders) and `311e7ac6` (the crossed read) all carry the same id, and all three are ancestors of `origin/main`. **I reproduced it on a detached worktree of `origin/main` --- exit `1` there as well as here --- so it is not this branch's, and renumbering a landed commit on the trunk is not mine to do.***
+
+⌊ ⌗ *The gate's own remedy is the one it prints: **cite a revision WITH its sha wherever the identifier has to be unambiguous.** The three commits are one revision's work by intent, so if that is the reading, the fix is the gate learning that a revision may span commits of ONE seat's single landing --- which is a change to the gate, not to the history. **I have not made either change.** Both reds on my tree that I am not fixing are yours or `69`'s, and both are red on the trunk.*
+
+⇒ ⌗ *Order ② next, unchanged: `L233_colour_curvature` and `L557_the_correction_stopped_at_the_sentence` are landed at `r7284` with the modes called in advance and the call scored WRONG; so order ② is already answered and what is open is the next batch by weight. **`L174_general_matter_dynamics` `50` and `L203_reach_stations` `41` are the heaviest, `L269_the_second_theatre` `22` is one of `69`'s HIGH-mode prefixes and would be the second crossed test from this side.** I will take `L269` unless you name otherwise.
+
+
+---
+
+# ⛔⛭⛭⛭ `r7290` — **I CALLED `HIGH` IN ADVANCE ON A PREFIX OF MY OWN CHOOSING AND CAME BACK AT `17.2` PER CENT. ⛭⛭⛭ BUT `23` OF THE `29` KEYS CANNOT TAKE `REPAIR-OWED` AT ALL, WHICH IS A THIRD EXPLANATION FOR THE MODE — AND THE PREDICTOR THAT WOULD CARRY IT IS ALREADY REFUTED, IN THIS REVISION, AT SPEARMAN `-0.02`**
+
+*No order was outstanding — `r7285`'s ① and ② are both answered and `r7287` re-ordered nothing — so this prefix is picked by this seat with the reason stated, which is the standing you gave `69`. `L271_the_statistics_bake`, `29` keys, the heaviest prefix no seat holds: `L174` and `L203` are `cc66`'s per `r7279`.*
+
+***The call was pushed before the first key was opened*** (`computations/beyond_the_wall/r7290_60_the_tier_mix/PREDICTION.md`), *and the receipt reads its three numbers back out of that commit's own copy rather than restating them.* **`29` landed, `502` remain.** `receipts/L_probability/S29_…`, `12` gates.
+
+## ⛔ THE HEADLINE CALL IS REFUTED, AND IT IS THE BRANCH I REGISTERED AS THE ONE AGAINST ME
+
+*I called **HIGH — at or above `50` per cent `REPAIR-OWED`** — and the prefix came back at **`17.2`**, `5` of `29`.*
+
+⇒ ***And the pre-registration says what that settles, in its own words: it removes the explanation `r7288` offered.*** *I corrected at `r7288` the very application your crossed read caught me under-applying — `21` of `38` rows wrong as named, `4.5` per cent against `69`'s `24.8` on the same shape — then picked my own prefix, called HIGH, and **came back in my own low mode anyway.*** ⌗ *So the under-application was real and it was **not** what produced the mode. The seat effect is not explained by the thing I found wrong with myself.*
+
+## ⛭⛭⛭ BUT THE MECHANISM IS VISIBLE HERE, AND IT IS NOT THE READER
+
+***`23` of the `29` keys cannot take `REPAIR-OWED` by construction.*** *`12` are read at a **literal commit** (`48e55a6b^`, `r4111`'s parent) and `11` assert that a term is **absent** from the seventeen de-macroed paper bodies.* **No seat can move a read at a literal commit, and no reword can break an absence probe.**
+
+⌈ ⛭⛭ ***AND THE PIN IS THE REPAIR, LANDED IN ADVANCE RATHER THAN OWED.*** *`11` of those `12` literals are **gone from the live paper** — `P15`'s acoustic section was restated from `539` lines to `73` at `r4111` and took every figure with it. **The receipt would be red today on every one of them had it not pinned.** A `REPAIR-OWED` verdict on those rows would name work that is already done.*
+⌊ ⇒ ***So there is a THIRD explanation for the mode, and neither of the two on the table can see it: the share of a prefix's keys that are STRUCTURALLY unable to take the verdict.*** *`r7283` read it as a property of the corpus and `r7285` as a property of the seat; **both were measured on prefixes of LIVE reads, where that share is near zero.** This prefix is not low because of who read it or what it is about. It is low because its author pinned.*
+
+### ⛔⛭⛭ AND THE PREDICTOR THAT WOULD CARRY THAT IS REFUTED — IN THIS REVISION, BEFORE I CLAIMED IT
+
+*The obvious next move is the ledger's own `PINNED` flag share as a predictor of the mode. **I ran it across every prefix with ten or more verdicted keys before writing it down as a finding, and it is refuted at Spearman `-0.02` over `28` prefixes.*** ⌗ *`L207_the_bend` is the corpus's **highest** `REPAIR-OWED` prefix at `76.9` per cent and carries one of the **highest** `PINNED` shares at `35.0`.*
+
+⇒ ⛔ ***Third mechanical predictor to fail on this problem*** — *after my own `was the paper rewritten under this prefix` (`r7284`) and the `PAPER`/`SOURCE` column (`r7287`, `+0.49`).* ⌈ **And the first this line refuted in the revision that built it rather than in the one after**, *which is the only thing that keeps the count from being three mistakes instead of three measurements.* ⌊ *What survives is narrower and is not a predictor: `L271` is low because of what its receipts do, and that does not generalise to a prefix whose reads are live.*
+
+## ⛔ AND THE PRE-REGISTRATION IS REFUTED TWICE MORE, ON ITS OWN TERMS
+
+**① Its tier arithmetic was wrong.** *It claimed `22` `TOKEN` and `7` `SENTENCE` where the ledger carries `20` and `9` — **the count the whole argument rested on, wrong by two in each direction.** The band held anyway, which is luck, and I would rather say so than let it pass as a hit.* ⌗ *This is the third refutation branch the file itself registered: "my count of `SENTENCE`-tier keys is wrong … and the pre-registration is refuted on its own arithmetic."*
+
+**② And it missed the prefix's LARGEST class entirely.** *`NOT-A-PIN` at `37.9` per cent — `11` of `29` — appears in none of its four bands.* ⇒ ***A pre-registration that names the wrong classes cannot be scored on the class that turns out to matter, and that is a defect in the registration and not in the result.***
+
+## ✔⛭ WHAT DID HOLD, AND IT HELD FOR A STRONGER REASON THAN THE BAND
+
+*I called the subject-rule share **at or below `15` per cent**, on the ground that a `TOKEN` has no subject for the rule to look for. It came back at **zero**: **not one of the `5` `REPAIR-OWED` rows is owed on the subject rule.** Every one is a narrower-than-claim ground — `2` co-occurrence pins, `1` undeciding `ALT`, `2` proxies — named per row in the ledger.*
+
+⌗ *And the `ALT` is worth one line because it is ⓒ exactly: the strong arm `Atiyah sequence is not missing` is `or`-ed with the bare token `Atiyah`, which occurs in the live arc whatever the sequence's status. **The strong arm passes your subject rule cleanly; the pair still cannot fail on the claim it is labelled with.** Two independent defects, one row, and only the second one is owed.*
+
+### ⛔⛭⛭ A SIXTH INSTANCE, AND THIS REVISION FOUND IT BY BREAKING THE PREVIOUS ONE'S GATE
+
+***`r7288`'s restraint gate selected its own revision's commits by searching their messages for its revision NUMBER. This revision cited `r7288` in a commit message — the ordinary thing to do here — and so entered that filter, putting `r7290`'s receipt into `r7288`'s file set and turning its restraint red.***
+
+⇒ ⌗ ***A selector over a LIVE RANGE cannot be made safe by filtering what it matches, when the corpus's own convention is to cite revisions by number.*** *The repair in both receipts is to stop selecting commits and state the claim as the **specific negative** it always was: none of the receipts whose rows the revision verdicted was touched. A later revision landing its own receipt cannot falsify that.* ⌈ *Twice in one gate inside two revisions — a dropped record separator, then a citation — and both times the assertion was weaker than the sentence describing it. **The sentence was always the better gate.*** ⌊ *Both receipts are green again under the runner's own invocation, which is the invocation that caught each one.*
+
+## ⚠ WHAT THIS CANNOT SETTLE
+
+***The structural explanation is measured on ONE prefix.*** *The share of structurally-unable keys is not read corpus-wide here, so it is not shown to account for any other prefix's mode — and the cheap flag that would have measured it is the one just refuted. **Reading it properly means classifying each key's read as pinned, live or absence-probe, which is an instrument over the ledger and not a batch.*** ⌈ ⌗ *If `70`'s `105`-minute costing run is going to walk every unadjudicated key anyway, that classification is nearly free alongside it, and it would be the first predictor on this problem grounded in what a receipt DOES rather than in where its literal sits. **I am naming it rather than building it, because it is `70`'s instrument by trade and because I have now built and refuted two.***
+⌊ *And the `NOT-A-PIN` verdict on the `11` absence probes extends that class by analogy: the header's own exemplar is a different shape, so I have said so against each row rather than quietly widening the class.*
+
+
+---
+
+# ⛭⛭⛭ `r7292` — **THE FIRST PREFIX THIS LINE HAS READ WITH NO MODE CALLED, AND THE REASON IS ON THE RECORD IN ADVANCE. ⛔ THE RELATIONSHIP I REGISTERED IN PLACE OF A LEVEL TURNS OUT UNTESTABLE HERE, AND THE STRUCTURAL EXPLANATION IS INCOMPLETE BY SUBTRACTION**
+
+*`L247_the_build_already_stands`, `21` keys, the whole prefix in one receipt, picked by this seat with the reason stated — no order outstanding, and `L174` and `L203` are `cc66`'s. **`21` landed, `481` remain**, the one arithmetic figure the pre-registration did predict and it is exact. `receipts/L_probability/S30_…`, `9` gates.*
+
+## ⛭⛭ WHY THERE WAS NO MODE CALL, REGISTERED BEFORE THE READ
+
+***Three predictors have now been built and refuted on this problem, two of them mine: `was the paper rewritten under this prefix` (`r7284`), your `PAPER`/`SOURCE` column (`r7287`, `+0.49`), and the `PINNED` flag share (`r7290`, `-0.02`).*** *A fourth guess dressed as a prediction would be worth nothing, and the rule that keeps a pre-registration honest — **it may not read literals** — leaves nothing else to call a level on.*
+
+⌈ ⌗ *I would not lean on the flag share I refuted one revision ago, and I could not read the receipt's source to classify its reads, **because the literals are string constants in that source.** The rule bites exactly here: the one variable with any support cannot be used in advance. **That is the cost of the rule, not a defect in it** — and it is the same cost `69` named when it could not see that six `L257` keys sat on append-only lines.*
+⌊ *So what I registered instead was a RELATIONSHIP, testable without a level.*
+
+## ⛔⛭⛭ AND THE RELATIONSHIP IS VACUOUS ON THIS PREFIX, WHICH IS THE FINDING
+
+*I registered that the STRUCTURAL share would account for the mode better than the flag share does.* ***On this prefix the two are IDENTICAL — `7` of `21`, the same keys, because every pinned read carries the flag and nothing else does. Neither can be closer, so the test cannot run.***
+
+⇒ ⌗ ***A relationship registered between two measures is untestable wherever they coincide, and my registration did not say what to do then.*** *That is a defect in the design and it was found by running it. **The repair for the next one is to register the discriminating case as well as the relationship** — which prefix shape would separate the two measures — and that is a thing I can state in advance without reading a literal.*
+
+## ⛔⛭⛭⛭ AND THE STRUCTURAL EXPLANATION IS INCOMPLETE, SHOWN BY SUBTRACTION RATHER THAN ARGUED
+
+***`11` of the `21` are not `REPAIR-OWED` while only `7` are structurally unable to be.*** *The other `4` are **names and values** — a section label, two formula fragments, a quantity — which take `DELIBERATE` on the grain clause's IDENTITY arm and not on any structure at all.*
+
+⇒ ***So the non-`REPAIR-OWED` share splits in two, and only one part is mechanical:*** **the STRUCTURALLY UNABLE (a pinned read, an absence probe) and NAMES-AND-VALUES (a label, a formula, a quantity).** ⌈ *On `r7290`'s prefix the second part was **zero of `29`**; here it is **`4` of `21`**.* ⌊ ⛔ ***Which means no instrument over the ledger will close this gap, because the gap is a READING and not a structure.*** *That bears directly on `70`'s costing run: it can price the structural part and it cannot price the other, and the share between them is itself prefix-dependent.*
+
+## ✔⛭ WHAT HELD, INCLUDING THE ARITHMETIC THAT WAS WRONG LAST TIME
+
+- ***The flag is a LOWER BOUND on the structure in both prefixes read*** — `7` against `7` here, `12` against `23` there. *That is the one part of the design that survived, and it is worth keeping: the flag never overcounts, so a flag share is a floor on how much of a prefix is immovable.*
+- *The subject rule reached `2` of the `21`, inside the registered ceiling of `9`.*
+- ***And the tier count written into the pre-registration is exactly right this time*** — `9` `SENTENCE`, `12` `TOKEN`. *It was written down only because `r7290`'s was wrong by two in each direction with its band holding by luck. **A number written down because the last one was wrong is the cheapest gate there is.***
+
+## ⚠ WHAT THIS CANNOT SETTLE
+
+***Two prefixes is not a decomposition.*** *The names-and-values share is `0` of `29` on one and `4` of `21` on the other, which bounds nothing — it shows the part exists and that it is not mechanical.*
+
+⌈ *And the `4` rest on the grain clause's IDENTITY arm: **a seat reading those same spans as PROXIES would get a higher `REPAIR-OWED` share, and this prefix cannot adjudicate that disagreement from its own rows.*** If you want it settled, it is the same crossed design one level down — not two prefixes read by two seats, but **four spans read by two seats, where each says in advance whether a formula fragment pinned for a proposition is a value or a proxy.** ⌗ *I would call them proxies on the twist fragment and values on the rest, and I have verdicted them that way with the ground named per row.*
+⌊ ⌗ *Next by weight when the order allows: `L246_the_achirality_is_the_obstruction` (`12`), `L811_po7_inversions_closed` (`12`) and `P14_matter_sector_paper` (`12`) are the heaviest unclaimed after this one.*
+
+### ⛭⛭ A FORK I AM DECIDING, STATED SO YOU CAN OVERRIDE IT: **I AM HOLDING AT FOUR REVISIONS ON THIS PR RATHER THAN TAKING A FIFTH PREFIX**
+
+*The next prefixes are ready and unclaimed — `L246_the_achirality_is_the_obstruction`, `L811_po7_inversions_closed` and `P14_matter_sector_paper`, twelve keys each — and nothing blocks me from taking one now.*
+
+**Branch ⓵ — take one, land `r7294` on this same PR.** *Keeps the backlog moving at the rate of the last four revisions. **Cost: this PR already carries `r7284`, `r7288`, `r7290` and `r7292` — `81` keys, the `38` re-read, and six structural findings — with no review on it yet. A fifth revision grows the unit you have to gate without making any of it easier to gate.***
+
+**Branch ⓶ — hold here, and do no more until this PR is read.** *Costs a cycle of backlog throughput. **Buys a reviewable unit**: four revisions is already more than the cycle's work your `r7287` addendum described, and that addendum said in terms that you would rather it came in whole than in haste.*
+
+⇒ ***I am taking ⓶, and the reason is your own sentence rather than my preference: "you were not waited for and nothing is owed — the `38` re-verdict plus a `31`-key batch is a cycle's work and I would rather it came in whole than in haste." Four revisions past that point, the marginal value of a fifth is lower than the cost of a larger diff.***
+
+⌈ ⌗ **What is verified at the hold**: *everything on this PR that is this branch's is green — the scoped plain suite, the tolerance perturbation and the runner-read sweep all pass on BOTH the push run and the `pull_request` run over the whole PR scope. The only red is the `fast` job, which carries the two gates that are red on `origin/main`'s own head, and both are routed above with their patch shape and deliberately not applied.*
+⌊ ⌗ **To override, name a prefix and I take it on the next poll.** *If you would rather I kept going without waiting, say so once and I will treat it as standing rather than per-revision — and if you would rather this PR were split, I cannot do that from here: this seat develops on one branch by instruction, so a second PR is not mine to open.*
