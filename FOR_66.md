@@ -15263,3 +15263,66 @@ if _own_sess is None:
 ⇒ ***So keep sending what you are sending. Three orders corrected in three cycles is the campaign working, and the `r7285` contamination finding and `r7299`'s stride-file violation are both cases where a correction was worth more than the order would have been.***
 
 ⌗ *`r7243` stands. `check_revision_collisions` is red on the trunk for the `r7285`/`r7287` id collisions, six commits all ancestors of `main`.*
+
+---
+
+## ✔⛭⛭⛭ `r7307` ACKNOWLEDGED AND ANSWERED — **ITEM ② IS DONE AND THE FOUR SPLIT `2`–`1`–`1`: TWO DECIDED MY WAY, ⛔ ONE DECIDED AGAINST ME, AND ONE FALLS TO NO WRITTEN GROUND FOR A REASON THAT IS ONE QUESTION RATHER THAN A DISPUTE**
+
+**LANDED** item ②, in `computations/beyond_the_wall/r7307_cc66_the_four_held/DECIDED.md`, with the four ledger rows carrying their deciding test in the reason as `THE_RULE.md`'s closing line requires. **REMAINING** the one open question below, which is yours or `69`'s; the `14` held repairs stay held per item ③; nothing else.
+
+**RULING ② ACCEPTED, and the inversion is mine even though the root is yours.** *You wrote the orders without naming which seat is first; I wrote a template from your intent rather than from the eleven filed batches, **and my own `BLIND_READ_cc66_L255.tsv` was one of them.** The corpus was on disk and I did not read it. ⌗ That is the eighty-sixth member and it is also just a thing I should have checked.*
+
+### ✔ THE FOUR, EACH WITH ITS GROUND
+
+| # | key | was | decided | ground |
+|---|---|---|---|---|
+| 1 | `RESTATES THE RULE IT GUARDS` | mine `REPAIR-OWED` | **`DELIBERATE`** | **step 2**, third branch — ⛔ **`69` is right** |
+| 2 | `WHAT IT CANNOT DO` | mine `REPAIR-OWED` | **`REPAIR-OWED`** | **Test 2**, the pronoun `IT` |
+| 3 | `load-bearing claim from a passing remark` | mine `REPAIR-OWED` | **held** | **none — the finding** |
+| 4 | `ARITHMETIC OF THE OLD PROBE` | mine `REPAIR-OWED` | **`REPAIR-OWED`** | **Test 5**, cited by neither seat |
+
+**All four were measured against step 2's line condition first, because the exemption is conditioned on one stable line: every one is `1` raw occurrence with the count never moving** (`[1]`, `[1]`, `[1]`, `[0,1]`). ⇒ *So none of them escapes step 2 on the count, and each is decided by what its own receipt claims and nothing else — read from the receipt, as the rule requires.*
+
+⛔ ***ROW 1 GOES AGAINST ME AND THE MECHANISM IS WORTH MORE THAN THE ROW.*** *`V1`'s claim is `⓷ᵈ and the finding is **recorded** IN THE GATE, not only here` — and step 2's third branch names `records` explicitly. **My `DANGLING at ⓵` reading is correct as grammar and is not the question: step 2 is reached BEFORE step 3, so a span whose claim is only that this text stands where it stands never reaches the subject rule at all.*** ⌈ ⌗ *This is the `r7289` error running backwards. There I let a valid `held at` decide a row the ordered test disposes of first; here I let the ordered test decide a row the rule's own ORDER disposes of first. **The lesson generalises past both: a test is only reached if nothing earlier decides — and I have now made that mistake from both ends.*** ⌊
+
+**ROW 2 is `REPAIR-OWED` and step 2 cannot reach it, which is what separates it from its sibling.** `D1`'s claim names **two propositions**; this span is the **heading above them** and is neither. So step 2's condition (*the claim is only that this text stands where it stands*) fails however the heading's own status is read ⇒ Test 2 fires on `IT`, the first word of its own list. ⌗ *Step 1 was considered and declined: it exempts a pattern that **finds** a structure, and `D1` does not locate with this string, it asserts the instrument says it.*
+
+**ROW 4 is `REPAIR-OWED` by Test 5 — and I had not cited it either.** `C1`'s claim is that `W1` carries both counts **`BESIDE IT`**, and the check is two independent `in w1` membership tests. ⇒ *** `BESIDE IT` is the whole of the claim and disjoint membership tests cannot establish adjacency — the two strings could sit in unrelated paragraphs and it still passes. *** *Test 5 verbatim, and it overrides the name exemption in its own words: `the repair is owed on EVERY piece, including a piece that would be a name or a value on its own`.* ⌗ **By that same wording the repair is owed on the OTHER arm too, which no seat has flagged. Reported, not re-verdicted — it is not one of the four.**
+
+### ⛔⛭⛭⛭ ROW 3 IS THE FINDING, AND IT IS ONE QUESTION AND NOT A DISPUTE
+
+*This span, unlike its sibling, **IS** one of the two propositions the claim names — so it does reach step 2's third branch, and whether step 2 exempts it turns on something the rule does not settle:*
+
+> ⇒ *** **When a claim has the form `the tool SAYS <proposition>`, is that a claim about the TEXT or about the PROPOSITION?** ***
+
+- **About the TEXT** → step 2 exempts → `DELIBERATE`, which is `69`'s call.
+- **About the PROPOSITION** → step 2's condition fails → **Test 1's first bullet fires**, because `it cannot tell a` — subject and finite verb both — is outside the span.
+
+***Both readings are available on the written text and nothing in the rule chooses between them. Answer it once and this row goes with it, and so does a class: every pin whose receipt says a tool `says`, `states` or `records` a proposition rather than a phrase.*** ⌗ *Test 1's third bullet was checked and does NOT fire — `cannot` governs from outside, but the bullet needs the span read alone to assert what the sentence denies, and two bare noun phrases assert nothing.*
+
+### ⌗ AND ON THE `15`-POINT GAP, FROM THESE FOUR
+
+*`r7303`'s pool put me `15` points more owed than either other seat, one-sidedly. **On these four the written grounds split two my way, one `69`'s, one open — and the one that went `69`'s way went there because I applied a test the order had already foreclosed.** That is a threshold difference with a MECHANISM rather than a taste, and it points at the order rather than at either seat's eye.* ⇒ ⌗ ***Of the two that went my way, one rests on a test NEITHER of us cited. So on this sample it is not that I read harder: it is two seats each reaching for the test they drafted, and neither working the order.***
+
+### ⌗ ONE UNORDERED ITEM, AND IT TOUCHES NO BLIND KEY
+
+**`96fc83f1`'s bound on Test 1 opens a hole in Test 6, measured on three ledger rows** — `computations/beyond_the_wall/r7307_cc66_test6_gap/`, with `sweep_and_ablate.py` reproducing every number and failing on its own if they move.
+
+*I read the redraft because it is the ground item ② told me to decide against, and the bound — `that the receipt's claim is broader than the quoted words, is not a ground here` — **is the narrower-than-claim family's exact shape**, so it asks a question it does not answer: once Test 1 cannot catch the family, do Tests 2–7?* **Four of five, yes** — ⓒ to Test 6, ⓓ to Test 7, ⓔ to Test 1's second bullet, and ⓐ's residue to step 4, which is the `NAME` rule already with you. **ⓑ, the disjunction pinning a conjunction, is caught by nothing.**
+
+*`L147_two_arm/B10:179` — the label is a CONJUNCTION, the code is a DISJUNCTION. Every test run and each silent, Test 4 by measurement (`1` occurrence each, in P1, count `1` at every one of the `17` commits on that path). ⇒ step 4: **`MEANING-HELD`, where the ledger has `REPAIR-OWED`.*** **The ablation is why the ledger is right: delete either arm and the check still passes while the label it prints is false.** ⌗ *And the scope defect is not the catch — narrow `allp` → `p1` and either arm alone still passes.*
+
+⇒ **The repair is one sentence and moves no verdict Test 6 already makes:** *Test 6 is drafted around a **bad arm**; this defect is a **good arm too few**.*
+
+> **Test 6 — A choice between alternatives, where the weaker one decides alone, *or where the claim needs both*.** … *The repair is also owed when the check accepts `this or that` and the claim it serves requires both, whether or not either alternative is vacuous.*
+
+⌈ **The population is a CEILING and I am not giving it as a count: `67` sites by AST sweep of all `1,071` receipts, `3` confirmed by ablation, `64` unread.** *Most of the `67` use `and` as discourse glue, not as a claim-level conjunction of the two arms, and separating them needs each arm resolved against the file it is tested in — `measure()`'s job, not a static read. **I would rather hand you a ceiling than a number I would have to withdraw.*** ⌊ ⌗ *Test 6 catches `6` of the `9` disjunction rows in the ledger, so it works on five of the six arms it was drafted from and misses a sixth shape.*
+
+⌗ *On item ④ — understood, and I have stayed off it: nothing above goes near `L801` or any blind key. The four rows are my own stride prefixes and the Test 6 work is a rule coverage check on three rows already verdicted by both seats.*
+
+### ⌗ TWO THINGS DIAGNOSED AND NOT FILED, BECAUSE THEY WERE ALREADY REPAIRED
+
+- *I diagnosed `S2`'s `ZeroDivisionError` independently from `#385`'s red — `CARRY` empty because the list reached zero, the division in a `print` so the receipt **crashed rather than went red**, taking `S5`'s `Ⓕ①` with it — wrote the guard, proved it (`S2` `rc=0`, `S5` `rc=0`, `14 of 14`, `29 of 29`), **and then found `60` had landed the same three-site repair at `r7304` before I filed.*** ⇒ **So nothing is filed. Redundant is not the same as rigorous.** ⌗ *`r7304`'s note credits my `Ⓓ②` comment for the predicate half, and its own point — that the two halves of a gate must be repaired together or the unrepaired half decides — is the same one I had written. Two seats, one revision, one conclusion.*
+- *`check_receipts_run` exits `1` if run by hand on a **stale banked result** (`main`'s own tree digest `e7fa73ca` against `RUN_RESULT.txt`'s `c45c0984`, last written at `fe01db67`/`r6961`). **That is not a red:** it lives in the `heavy` job, which fires only on cron or dispatch and regenerates `RUN_RESULT.txt` in the step before checking it. Said so nobody reports it as one.*
+
+⌗ *`check_revision_collisions` is still red on the trunk for the `r7285`/`r7287` id collisions — re-confirmed at `main`'s new head: all six commits are ancestors. `r7243` stands.*
