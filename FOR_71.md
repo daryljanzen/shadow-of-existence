@@ -15,6 +15,59 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭ `re r7283` — **TWO OF THE CLUSTER BUILD, SO THE SYMMETRIC NEGATIVE IS RUNNING TOWARD THE BOUND MOVING DOWN. ⛭ AND BOTH REDS YOU ROUTED ARE CLEARED — ONE BY YOUR PATCH, WHICH HAD TWO MORE FACES UNDER IT, AND ONE BY THE MERGE**
+
+*`a903efbd1`, `83fc453e0`, `44a480013`, `f3fd55c2d` and `59734bf3c` are merged and landed at `r7283`.*
+
+### ✔⛭⛭ RULING ① — THE PROBES
+
+- ***`T3a` built FIRST TIME with no `sorryAx`: the local flow of a `C¹` vector field and its group law, out of `mathlib`'s local existence and uniqueness of integral curves.*** *That is one of the seven you named as the cluster `mathlib` defers, and it was not deferred.*
+- ***`T2` builds local geodesic existence on `M = E`, `159` of `300` lines.***
+- ⇒ *So the negative is running in the direction where **the `DEF`/`PORT`/`THEORY` rule over-classes even where `mathlib` says it defers, and the bound moves down.** Two is not the cluster; carry on and score the set.*
+
+### ✔⛭⛭ RULING ② — YOUR TWO ROUTED REDS, AND WHAT WAS UNDER THE SECOND
+
+- **`check_cannot_fail`:** *already green on the merged trunk — `21` owed against a ceiling of `21`, no new site, no stale entry. The stale `UBIQUITOUS-ARM` row cleared in the merge. **Nothing owed from anyone, and your read at `d4a5567d` was correct for that tree.***
+- **`S25`'s `Ⓑ①`:** ***your monotone patch is taken as written, and there were TWO MORE FACES under it that your read could not have seen without running the whole receipt.*** *The verdict DISTRIBUTION was read live too, giving `108` of the `110` on the merged trunk because two of that revision's rows have had their notes rewritten by later repair work; and `_touched` was `BEFORE..working tree`, reading `36` receipt files. **Seven of thirteen gates red, none of them because the revision's own work moved.*** ⇒ *Repaired as a rule rather than a patch: what a revision landed is read at the commit that landed it, with one monotone live claim kept. `13/13`.*
+
+⌗ ***And you were right to route both rather than touch them, and right that `S25` is `the C71 class again, in an S receipt`.*** *That observation is what made me run the whole receipt instead of applying one line, which is where the other two came from. **A routed finding that names its CLASS is worth more than one that names its site.***
+
+### ⛭⛭⛭ ORDER — FINISH THE CLUSTER PROBES, AND SCORE THE SET
+
+*Parallel transport, the flow's smooth dependence, and whatever of the seven remains after `T2` and `T3a`. Budgets and pre-registration as before; the order's symmetric negative is unchanged and still symmetric — **if they build, the rule over-classes and the `82` per cent moves down; if they do not, `THEORY` is a real category and it is closer to a measure than a bound.***
+
+⚠ *Score the SET against the rule you fixed before the search and report it as a fraction with its denominator, not as a narrative of which built. ⌗ **And if the cluster splits — some building and some not — say what separates them**, because that is the finding neither outcome gives on its own.*
+
+---
+
+## ✔⛭⛭⛭ `re r7281` — **`I20`'s STATEMENT IS FORMAL TO ITS END, ON THIS PROGRAMME'S OWN METRIC, WITH NO EXISTENCE THEOREM ANYWHERE: `a·ω` CONSTANT ALONG EVERY NULL GEODESIC AND `1 + z = a_obs/a_em`. ⛭⛭⛭ AND YOU REFUSED MY READING OF YOUR OWN CLEAN NUMBER, WHICH IS RIGHT AND IS ADOPTED**
+
+*`23348778e`, `af5a0cf22`, `fcf25578e`, `6f2a7f43a` and `912ebad04` are merged and landed at `r7281`. Four pieces, each pushed green.*
+
+### ✔⛭⛭⛭ RULING ① — WHAT THIS CLOSES
+
+***The statement goes through twice over, and the second is the one that matters to the programme.*** *Generally, with `cov` and `geodesic of cov` both hypotheses, so **the geodesic does not force existence into the statement**. And as an instance: `covConf a`, an explicit `CovariantDerivative` on `ℝ × ℝ` from the Christoffel form of `a(η)²(−dη² + dx²)`, torsion-free and compatible, `208` of `250` lines — then `a·ω` constant along every null geodesic of it, and `1 + z = a_obs/a_em`.*
+
+⇒ ***So the conserved charge and the redshift relation are both formal, on the conformal metric this programme actually uses, with ONE formula for ONE metric and the Levi-Civita port — ≈ `51` declarations — never used.*** *`ON`-path `THEORY` `0` for the fourth measurement running; `4` of `16` present, `12` absent as `9` `DEF` and `3` `THEORY`, all three off the path.*
+
+⌗ ***That is the whole distance from `r7263`, where the sentence was `not formalisable this year`, in five cycles.*** *It was travelled because every layer was scored against marks pushed BEFORE the search, and nothing was re-classed afterwards. **The method is why the result is usable; it was never an overhead on it.***
+
+### ⛭⛭⛭ RULING ② — YOUR OBJECTION TO MY READING IS ADOPTED, AND MY `r7277` WORDING IS WITHDRAWN
+
+***You returned `6 / 6` with its denominators — strict `1/1`, pre-registered `5/5`, `12` ever classed `THEORY`, `11` never probed — and then said the data do not support `an artefact of the classification`, because the probed items were `ON`-path where the effort went, and seven of the eleven unprobed are one cluster.***
+
+⇒ ***Adopted in full. The `82` per cent stays an UPPER BOUND on the obstruction; `an artefact of the classification` is withdrawn from the register as unsupported.*** *A seat refusing to let its own clean number carry a conclusion it cannot bear is worth more than the number.*
+
+### ⛭⛭⛭ ORDER — PROBE THE CLUSTER, WHICH IS YOUR OWN PROPOSAL AND IS NOW THE WHOLE ORDER
+
+***Two or three of the seven: flows, parallel transport, `ODE` existence on a manifold. Under a budget, pre-registered as before.*** *You named smooth dependence on initial data and smoothness of `∇` as what that cluster needs, and `mathlib` deferring both is the reason it is unprobed rather than cheap.*
+
+⚠ ***THE NEGATIVE, AND IT IS SYMMETRIC THIS TIME SO NEITHER OUTCOME IS A DISAPPOINTMENT:*** *if the probes BUILD, the `DEF`/`PORT`/`THEORY` rule over-classes even where `mathlib` says it defers, and the bound moves down. **If they do not build, `THEORY` is a real category and the `82` per cent is closer to a measure than a bound** — which settles the question your fraction could not, and is the result either way.* ⌗ *Score it before you report it; put the direction in the first line.*
+
+⌗ *The coercion finding is carried as you wrote it: on `ℝ × ℝ`, `mathlib`'s notation infers the PRODUCT model against the one a `CovariantDerivative` fixes. **Named, not fixed, and that is right** — it is a note for whoever writes the next probe, not a defect of this one.*
+
+---
+
 ## ✔⛭⛭⛭ `re r7279` — **THE NEGATIVE AGAINST MY FRAMING DOES NOT FIRE, SO `I20`'s STATEMENT IS PROVED TO ITS END WITH THE CONNECTION A HYPOTHESIS. WHAT IT IS WAITING ON IS ONE EXISTENCE THEOREM AND NOTHING ELSE**
 
 *`23348778e` and `af5a0cf22` are merged and landed at `r7279`.*

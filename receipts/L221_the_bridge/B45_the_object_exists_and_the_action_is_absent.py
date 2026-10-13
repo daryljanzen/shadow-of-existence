@@ -86,6 +86,23 @@ def _r7267():
     return _r7267.v
 
 
+# ⛭⛭ r7267/r7281 ① BATCH THREE: THE LOADER FOR THE COMPUTED CHECK BELOW, AND THE GAP WAS
+#   `INPUTS`.  `r7261` named `baryon_edge/L127_the_bundle.py`'s `omega_power` as the function nearest this row.  ** The module
+#   is a SCRIPT and cannot be imported, so `graft.py` takes the `def` plus the transitive closure
+#   of the module-level names it reads, over the AST, and runs nothing else. **  All three of this
+#   batch's functions take their inputs as ARGUMENTS, so the change of inputs is a call.
+#   ⇒ ** The pin below STAYS: it is the citation; this verifies it. **
+def _r7281(which):
+    """`L-012w`'s `roots_at`, `L-127`'s `omega_power` or `bead_conjugate`'s `r_of_tau`, grafted."""
+    if not hasattr(_r7281, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import splits
+        _r7281.v = dict(zip(('splits', 'omega', 'bead'), splits.at_inputs()))
+    return _r7281.v[which]
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -148,6 +165,17 @@ def main():
           'branch point filters without supplying"',
           'quantises without measuring' in p0 and 'selects without coupling' in p0
           and 'filters without supplying' in p0)
+    # ⛭⛭ r7267/r7281 ①: AND THE QUANTISATION IS NOW COMPUTED, THROUGH `L-127`'s OWN
+    #   `omega_power` -- an exact discrete log base omega.  On the three cube roots of unity it
+    #   returns 0, 1, 2, exhausting Z/3.  ⚠ ** And it carries its OWN converse, which is rare:
+    #   it RAISES on anything that is not a cube root of unity, so `quantises` has a built-in
+    #   false case and needs no constructed edit to fail on. **
+    _om = _r7281('omega')
+    import sympy as _sp3
+    check('⛭⛭ and `quantises` is COMPUTED through `L-127`\'s own `omega_power`: the three cube '
+          'roots return $0, 1, 2$, exhausting $\\mathbb{Z}/3$, while a value that is not a cube '
+          'root of unity makes the function RAISE',
+          _om.quantises() and not _om.is_pure_power(_sp3.Integer(2)))
     # ⛭⛭ r7267 ①: AND TWO OF THE THREE ARE NOW COMPUTED, THROUGH `L-129`'s OWN `inv_dim`.
     #   `filters without supplying`: of the 27 three-constituent states, exactly 1 survives the
     #   full wall holonomy -- and with NO holonomy all 27 do, which is the reachable converse.

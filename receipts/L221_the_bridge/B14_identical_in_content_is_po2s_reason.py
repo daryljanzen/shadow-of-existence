@@ -54,6 +54,24 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+# ⛭⛭ r7267/r7281 ① BATCH THREE: THE LOADER FOR THE COMPUTED CHECK BELOW, AND THE GAP WAS
+#   `INPUTS`.  `r7261` named `baryon_edge/L012w_the_two_splits.py`'s `roots_at` as the function nearest this row.  ** The module
+#   is a SCRIPT and cannot be imported, so `graft.py` takes the `def` plus the transitive closure
+#   of the module-level names it reads, over the AST, and runs nothing else. **  `splits.py` hands
+#   it this row's own inputs -- all three of this batch's functions take theirs as ARGUMENTS, so
+#   the change of inputs is a call rather than a rebinding.
+#   ⇒ ** The pin below STAYS: it is the citation; this verifies it. **
+def _r7281(which):
+    """`L-012w`'s `roots_at`, `L-127`'s `omega_power` or `bead_conjugate`'s `r_of_tau`, grafted."""
+    if not hasattr(_r7281, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import splits
+        _r7281.v = dict(zip(('splits', 'omega', 'bead'), splits.at_inputs()))
+    return _r7281.v[which]
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -129,6 +147,19 @@ def main():
           'which root each takes as its hole"',
           'the three carry one mass parameter and are identical in content' in p14
           and 'distinguished only by which root each takes as its hole' in p14)
+    # ⛭⛭ r7267/r7281 ①: AND IT IS NOW COMPUTED, THROUGH `L-012w`'s OWN `roots_at` -- AT THE
+    #   THREE VALUES ITS OWN REPORT NEVER PRINTS SIDE BY SIDE.  `L-012w` tabulates eleven values
+    #   of `r_0` with the designated root and its pair.  ** Asked at the three the designation
+    #   runs over, it returns the SAME ROOT SET every time -- {1, -1, 0} -- and differs only in
+    #   WHICH member is designated. **  ⇒ *That identity of the sets is the load-bearing half of
+    #   `only by which root each takes`, and no string match can see it.*
+    _spl = _r7281('splits')
+    _HZ = ('1', '-1', '0')
+    check('⛭⛭ and it is COMPUTED through `L-012w`\'s own `roots_at`: at the three values the '
+          'designation runs over the ROOT SET is identical and only the designated member '
+          'differs -- which is what `only by which root` asserts',
+          _spl.sets_agree(_HZ) and _spl.designations_differ(_HZ)
+          and all(_spl.designated(v) in _spl.triple(v) for v in _HZ))
 
     # ⓶ the index kind, and the withdrawal
     # ⛔⛭ AND THE DISJUNCTION THAT STOOD HERE WAS THE REFUTED SHAPE, LIVE IN THIS FILE.  *Two arms

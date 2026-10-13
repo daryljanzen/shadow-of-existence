@@ -74,6 +74,22 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+# ⛭⛭ r7267/r7275 ①: THE LOADER FOR THE COMPUTED HALF OF THE PIN BELOW, AND THE GAP WAS `INPUTS`.
+#   `r7261` named `baryon_edge/L104w_the_excentre_trichotomy.py`'s `sep` as the function nearest this row.  ** The module is a
+#   SCRIPT and cannot be imported, so `graft.py` takes the `def` plus the transitive closure of
+#   the module-level names it reads, over the AST, and runs nothing else. **  `trichotomy.py` hands
+#   it this row's own inputs.  ⇒ ** The pin below STAYS: it is the citation; this verifies it. **
+def _r7267():
+    """`baryon_edge/L104w_the_excentre_trichotomy.py`'s own `sep`, grafted, at this row's inputs."""
+    if not hasattr(_r7267, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import trichotomy
+        _r7267.v = trichotomy.at_inputs()
+    return _r7267.v
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -107,6 +123,19 @@ def main():
     check('⛭⛭ ⓷ and P14 locates the two-state object: "two ends of one hinge are timelike '
           'separated, two on one horn spacelike, and only the cross pairs null"',
           'two ends of one hinge are timelike separated' in p14)
+    # ⛭⛭ r7267/r7275 ①: AND THE SEPARATION IS NOW COMPUTED, THROUGH `L-104w`'s OWN `sep` --
+    #   ON A PAIR `L-104w` NEVER FORMS.  Its own report runs `sep` over the fifteen
+    #   excentre-excentre pairs and the thirty-six hinge-excentre pairs; the two ends of ONE
+    #   hinge -- same azimuth, OPPOSITE HORN, at the hinge radius 2*alpha -- is one call on two
+    #   points `pt` already builds, and nothing in the corpus had made it.
+    #   ** s^2 = -12 alpha^2 at every hinge azimuth: timelike. **  ⌗ *And the converse is not a
+    #   radius away but AT THE THROAT: at rho = alpha the two ends COINCIDE and the interval is
+    #   NULL, so the claim is a statement about the hinge sitting outside the throat.*
+    _tri = _r7267()
+    check('⛭⛭ and the separation is COMPUTED through `L-104w`\'s own `sep`, on the pair its own '
+          'report never forms: the two ends of one hinge give $s^2 = -12\\alpha^2$ -- TIMELIKE '
+          'at every hinge azimuth -- while at the throat radius they coincide and it is NULL',
+          _tri.all_hinges_timelike() and not _tri.all_hinges_timelike(_tri.al))
 
     # ⓸ the rapidity is continuous, diagonal, non-unitary
     M = lambda chi: np.diag([np.exp(chi/2), np.exp(-chi/2)])

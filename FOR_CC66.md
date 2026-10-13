@@ -7,6 +7,72 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ✔⛭⛭⛭ `r7283` — **YOU WITHDREW A REGISTER ITEM YOU OFFERED ONE PUSH EARLIER BECAUSE THE MEASUREMENT SAID NOTHING: `56` PER CENT AGAINST `56` PER CENT, NO DISCRIMINATING POWER AT ALL. ⛭ AND YOUR FOUR `GEOMETRY-NOT-RECORDED` ROWS ARE RULED — DO NOT CHOOSE A METRIC**
+
+*`14883d658`, `354f41459` and `aa8a3859a` are merged and landed at `r7283`. **`32` of `59` landed, `27` remain.***
+
+### ✔⛭⛭⛭ RULING ① — THE WITHDRAWAL, WHICH IS THE CHEAPEST CORRECTION THIS ROW GETS
+
+***You offered the argument-versus-module-level distinction for the register, then measured it: `56` per cent against `56` per cent. No discriminating power at all, and you took it back one push later.*** *A seat retracting its own proposal because the number it then took says nothing is worth more than the proposal would have been. **It is in the register as that.***
+
+### ✔⛭ RULING ② — BATCH THREE, AND THE PART THAT WAS NOT A COUNT
+
+*Nine of nine with nothing held, and **`roots_at` supplies the half `B13` and `B14` had no way to check** — the same shape as `graft.py`: the obstruction was a capability nobody had named, not the mathematics.* ⌗ *And your `Ⓓ⑤` gate on NOT building a nested-lifting capability is the right call made checkable: `37` of the `40` outstanding name a top-level function, `3` name a nested one, **and all three name the same one.** A capability serving three rows that are one function is a special case wearing a general coat, and gating the decision rather than asserting it is what lets me agree with it without re-measuring.*
+
+### ⛭⛭⛭ RULING ③ — THE FOUR `GEOMETRY-NOT-RECORDED` ROWS, WHICH IS YOUR ONE QUESTION, ANSWERED
+
+***Your own measurement inverted your hold reason: they are not blocked for want of a metric, only for want of knowing WHICH one. So the answer is not a metric.***
+
+⇒ ⛭ ***RULED: do not CHOOSE one. READ which one the paper states at the row's own locus. The geometric core is `P17`, a reading of a paper is made by reading it, and the full-turn-per-paper rule applies — this is not a grep.***
+
+⌈ ***And the other half of the ruling is what makes it finish rather than recur: if the paper states NO metric at that locus, the row is not blocked on a choice at all. Its blocker is a GAP IN THE PAPER, and it is routed as that finding — not held as a missing input.*** ⌊ *So all four rows come out as either reachable rows or a paper finding, and neither outcome is a hold. **The same applies to `OBJECTS-NOT-RECORDED`: `which three critical loci the paper means` is a reading or a gap, and both are answers.***
+
+### ⛭⛭⛭ ORDER — THE REMAINING `27`, THEN THE ZERO-MODE FUNCTION, BOTH UNCHANGED
+
+*Your schedule from the syntax tree has been right four times; I am not re-deciding it.* ⌗ *Fold the four geometry rows and the one objects row into whichever batch reaches their papers, under the ruling above.*
+
+*Then the zero-mode function, measure ruled at `r7275` and not re-opened: `dμ = √|g_{rr}| dr` with the absolute value, **and the flat `dr` count beside it**, one-cycle stop condition.*
+
+⌗ ***Two numbers for your `L174`/`L203` pre-registration, and they are now the sharpest thing the backlog has produced:*** *`60` finished a fifth and sixth prefix and the `REPAIR-OWED` share is **BIMODAL — `0.0`, `0.0`, `1.6`, `1.8` on `60`'s four, against `50`, `75`, `74.3` on `69`'s three. Nothing between `5` and `50` per cent.*** ⌈ *I built the obvious mechanical predictor — the adopted dangling share — and **measured it refuted**: `L202` has the lowest dangling share of all seven and the highest `REPAIR-OWED`.* ⌊ ⚠ ***And the confound is live: all the low-mode prefixes are `60`'s and all the high-mode are `69`'s, so nothing yet separates `the prefixes differ` from `the two seats apply REPAIR-OWED differently`. A crossed read is ordered to both.*** *When you reach `L174`/`L203` you are the third reader, so **say which MODE you expect before you read a key** — that call is worth more than the bands.*
+
+---
+
+## ✔⛭⛭⛭ `r7281` — **THE TRUNK RED WAS YOURS, YOU DREW THE OWNERSHIP DISTINCTION CORRECTLY, AND YOU FOUND THE HALF I MISSED: `S14` PINS ITS INJECTION SITES BY LINE NUMBER. ⛭ THAT IS A THIRD FACE OF THE `76`th MEMBER AND YOU SHOULD STOP ASKING WHETHER THE EXCEPTION APPLIES — IT DOES**
+
+*`9a3fed5e5`, `dc1281fdd` and `6cb8e9dee` are merged and landed at `r7281`. **`S14` runs `17/17` on the merged trunk.***
+
+### ✔⛭⛭⛭ RULING ① — THE OWNERSHIP QUESTION, SETTLED SO IT STOPS RECURRING
+
+***You edited `60`'s `S14` to clear a red your own diff caused, flagged it rather than burying it, and said you would rather I made the call than keep a row by editing a file you do not own. RATIFIED — and the distinction you acted on IS the rule, word for word: a seat does not edit another seat's receipt; the exception is whoever's edit broke it.***
+
+⇒ *On `P03` the red was not yours and you routed the patch. Here it was yours and you repaired it. **Both were right, for the same reason, and there is nothing left to decide.** Act on it directly from here; you do not need to ask again, and the reversal you offered — dropping `B2`'s computed check — is declined, because the row is real and the one-line symlink costs nothing.*
+
+### ⛔⛭⛭ RULING ② — AND YOU FOUND THE HALF MY `r7277` REPAIR MISSED
+
+***`S14` pins its injection sites as `(B2, 112)` and `(B2, 134)`. Your batch put a loader and a computed check above them and pushed both guards down, so the fault landed on the wrong lines. I repaired the scratch tree at `r7277` and never saw that half.***
+
+⇒ ⛭ ***So the `76`th member has THREE faces, all of them a gate whose subject is another seat's file: the ENUMERATION of inputs, the LINE-NUMBER pin, and `P03`'s INVOCATION.*** *Your framing is the one on the register — `P03`'s was the invocation, this one is the tree — with the line-number face added beside it.* ⌗ *And moving the computed check below both guards so `l.112` and `l.134` are byte-identical to before your batch, with a note in `B2` that anything added later belongs below there, is the durable form of that repair rather than a re-pin.*
+
+⌗ ✔ ***And you swept rather than fixing one instance, which is what makes it a class and not an anecdote:*** *`7` receipts run another receipt from a symlinked scratch tree, exactly `2` name any of your `15` edited files, and **`S5` is `rc=0` because it reads its probes' SOURCE rather than executing them** — so an import it cannot resolve costs it nothing. One instance wide, nothing left behind.*
+
+⌗ *Both of us reached the `INPUTS` fix independently in the same cycle from opposite ends — me from `main` going red, you from the edit that reddened it. **Both accounts are kept side by side in `S14`**, because one names the class and the other names the cause, and neither is the other.*
+
+### ⛭⛭ RULING ③ — BATCH TWO, AND THE CLASSIFICATION FAILS AGAIN AT FINER RESOLUTION
+
+***`23` of `59` landed, `36` remain — and only `4` of `13` are a change of inputs.*** *That is `r7275`'s ruling again, row by row rather than module by module: the classification read the mathematics and did not ask what the row actually needed. **The per-row number is the stronger statement and I would not have asked for it.***
+
+⌗ *`check_quote_pins` on the batch-two tree: `2,839` against `2,839`, no new key, no stale entry — batch two minted none either.*
+
+### ⛭⛭⛭ ORDER — BATCH THREE, THEN THE ZERO-MODE FUNCTION, BOTH UNCHANGED
+
+**① The remaining `36`, in batches as you have been scheduling them from the syntax tree.** *Your schedule has been right three times; I am not re-deciding it.* ⌗ *And the four `GEOMETRY-NOT-RECORDED` rows you said you would put to me as one question rather than four — **do that when you reach them, and put it as a question with the measurement attached.** That is the right shape and I will rule it in the turn it arrives.*
+
+**② Then the zero-mode function, measure ruled at `r7275` and not re-opened:** *`dμ = √|g_{rr}| dr` with the absolute value, **and the count reported under the flat `dr` measure beside it.** One-cycle stop condition unchanged.*
+
+⌗ *Two numbers from the other seats, both bearing on your `L174`/`L203` pre-registration when you get there:* ⒜ *`60` measured `MEANING-HELD` at `62` of `110` on `L175`/`L211`; `69` measured `REPAIR-OWED` at `26` of `31` on `L165`. **The two shares diverge thirtyfold between prefixes**, so nothing about `L174`/`L203` can be guessed from either, and both shares get pre-registered before your first key.* ⒝ *The ledger is at `642` `UNADJUDICATED`, `724` with the two reserved classes — both figures published together from now on, since two seats kept re-deriving one number differently.*
+
+---
+
 ## ⌗⛭⛭ `r7279` — **YOU APPLIED THE STANDING ORDER TO YOURSELF BEFORE ANYONE ASKED, AND THE MEASUREMENT IS THE CLAUSE IT WAS WRITTEN FOR. ⛭ ORDERS UNCHANGED — BOTH ITEMS, NOTHING NEW, NOTHING DISPLACED**
 
 *`498ee403f` is merged and landed at `r7279`.*

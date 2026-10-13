@@ -10,6 +10,65 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭⛭⛭ `re r7277` — YOUR NEGATIVE DOES NOT FIRE: I20's STATEMENT GOES THROUGH TO ITS END WITH THE CONNECTION A HYPOTHESIS, AND ITS INSTANCE WITH ONE EXPLICIT CONNECTION FOR ONE METRIC — `a·ω` CONSTANT ALONG EVERY NULL GEODESIC, `1 + z = a_obs/a_em`, NO EXISTENCE THEOREM ANYWHERE. ⌗ THE FRACTION IS `6 / 6`, WITH `11` NEVER PROBED (`r7277+71.2` to `+71.5`)
+
+*Full result: `computations/formalisation/r7277_71_fourth_fifth_layers/RESULT.md`, against `+71.1`, pushed before any
+search with the path marks in it. Landed in four pieces. Probe runs: `PROBE_RUN_R1_R2.txt`, `_R3.txt`, `_R4.txt`.*
+
+- **⛔ The scoring, first. NOT FIRED.**
+  - **B4 (`charge_hasDerivAt`):** along ANY geodesic of ANY torsion-free compatible `cov`, `Q′ = σ g(γ̇,γ̇)`.
+  - **B5:** so `Q` is constant along a null geodesic.
+  - **B6:** and `Q′ ≠ 0` where `σ ≠ 0` and `γ̇` is not null.
+  - *"Geodesic of `cov`" is a hypothesis on `γ`, and `cov` is a hypothesis.* ***The geodesic does not force
+    existence into the statement, so "the port is the price of existence" stands on five layers.***
+- **⛭ The instance, to its end.**
+  - **R3** builds `covConf a`, a `CovariantDerivative` on `ℝ × ℝ` from the Christoffel form of `a(η)²(−dη² +
+    dx²)`, torsion-free and compatible, in 208 of 250 lines.
+  - **R4** proves `a·ω` constant along every null geodesic of it, and `1 + z = a_obs/a_em`.
+  - *All on `[propext, Classical.choice, Quot.sound]`.* ***I20's statement to its end, on its own metric, and
+    the only connection is one formula for one metric.***
+- **The count:** 4 of 16 present (25 %, central). 12 absent: 9 DEF by measurement, 3 THEORY — geodesic
+  existence, null geodesics in every direction, and reparametrisation. All three are OFF the path. ON-path
+  THEORY `0`.
+- **② The fraction, with denominators, as ordered:**
+  - **strict** (classed THEORY in a result, then probed): ***1 / 1*** built;
+  - **pre-registered** (named THEORY in a prediction, then probed): ***5 / 5*** built;
+  - **distinct: `6 / 6`.**
+  - **Population: `12` ever classed THEORY, `11` never probed.**
+  - ⌗ ***That is not a rate, and I don't read it as one.*** The probed items were ON-path, where the effort
+    went. **Seven of the eleven unprobed are one cluster — flows, parallel transport, ODE existence on a
+    manifold** — which needs smooth dependence on initial data, or smoothness of `∇`, and `mathlib` defers
+    both.
+  - ⇒ *The data support "an upper bound on the obstruction". They do not support "an artefact of the
+    classification".* ***Probing two or three of that cluster under a budget would decide it.***
+- **Limits, in terms:**
+  - R2 is pointwise, with `g` symmetric and `C¹`, and frame-coefficient differentiability (`CoeffDiffAt`) as
+    hypotheses;
+  - R4's hypotheses are on `γ`;
+  - R4's `hξc` — coefficient differentiability of the constant field `∂_η` along `γ` — is dischargeable but
+    carried as a hypothesis, and said so.
+- **⌗ A coercion finding worth having:** on `ℝ × ℝ`, `mathlib`'s `MDiffAt`/`T%` notation infers the PRODUCT
+  model `𝓘(ℝ,ℝ).prod 𝓘(ℝ,ℝ)`, against `𝓘(ℝ, ℝ×ℝ)` fixed by a `CovariantDerivative`. *Statements that must meet
+  have to spell the model out. **About fifteen rounds, and none stopped on a missing lemma.***
+- **As ordered: the port is not begun.**
+- ⛔ **A gate break on `main` at `d4a5567d`, reported and not repaired: the baseline is `70`'s instrument.**
+  - **The failing gate:** `check_cannot_fail` is red, reading `[STALE] -1 T5
+    receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py 'same' in p0`. Reproduced in a
+    clean worktree of `origin/main`.
+  - **Cause:** a success. `69`'s `r7271` order ① (`b46549ba`) widened that ubiquitous `'same'` ALT arm to "the
+    defining quadric to $S^{5}$ of the \emph{same} radius". So the cannot-fail site is gone, and the row
+    `corpus/cannot_fail_baseline.tsv` l.18 no longer describes the tree.
+  - **Proposed patch:** delete that one row, as the gate's own message says ("Lower or remove the row"). *Owed
+    stays at 21: the row is `UBIQUITOUS-ARM`, which is not owed.*
+- ⛔ **A second, on `main` at `81e0d9ee`: `receipts/L_probability/S25_the_backlog_is_a_verdicting_job_…py`,
+  gate Ⓑ①**, reproduced in a clean worktree. *The `C71` class again, in an `S` receipt.*
+  - **What it reads:** `110 LANDED AND 642 REMAIN`.
+  - **Cause:** the clause `len(_unb) - len(_unl) == … == 110 and len(_unl) == 700` asserts the LIVE
+    `UNADJUDICATED` count exactly. So every row any seat verdicts after `438cd783` reds it.
+  - **Proposed patch:** keep what the receipt owns exact, and make the live half monotone —
+    `len(_landed) == len(_mine) == 110 and len(_unl) <= len(_unb) - 110`. The `700` stays in the printed
+    label as what it read at the time.
+
 ## ✔⛭⛭⛭ `re r7271` — YOUR NEGATIVE AGAINST YOUR OWN RULING DOES NOT FIRE: LAYER 3 HAS THEORY `0` ON `I20`'s PATH, AND EVERY ON ITEM NOT ALREADY IN `mathlib` IS PROVED — INCLUDING `D/dt` ALONG A CURVE AND COMPATIBILITY ALONG IT. ⌗ AND THE PORT'S `32` DOES NOT SURVIVE CONTACT: ≈ `51` (`r7273+71.2` to `+71.5`)
 
 *Full result: `computations/formalisation/r7273_71_third_layer/RESULT.md`, against `+71.1`, pushed before any

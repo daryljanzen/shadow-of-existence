@@ -81,6 +81,24 @@ def _r7267():
         _r7267.v = parity.at_inputs()
     return _r7267.v
 
+
+# ⛭⛭ r7267/r7281 ① BATCH THREE: THE LOADER FOR THE COMPUTED CHECK BELOW, AND THE GAP WAS
+#   `INPUTS`.  `r7261` named `baryon_edge/L012w_the_two_splits.py`'s `roots_at` as the function nearest this row.  ** The module
+#   is a SCRIPT and cannot be imported, so `graft.py` takes the `def` plus the transitive closure
+#   of the module-level names it reads, over the AST, and runs nothing else. **  `splits.py` hands
+#   it this row's own inputs -- all three of this batch's functions take theirs as ARGUMENTS, so
+#   the change of inputs is a call rather than a rebinding.
+#   ⇒ ** The pin below STAYS: it is the citation; this verifies it. **
+def _r7281(which):
+    """`L-012w`'s `roots_at`, `L-127`'s `omega_power` or `bead_conjugate`'s `r_of_tau`, grafted."""
+    if not hasattr(_r7281, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import splits
+        _r7281.v = dict(zip(('splits', 'omega', 'bead'), splits.at_inputs()))
+    return _r7281.v[which]
+
 M, AL = 0.12, 1.0
 RB, RC = 0.25696832, 0.84643915
 
@@ -112,6 +130,19 @@ def main():
     check('⓵ P14 gives $W$ TWO kinds of zero: it "vanishes at the horizons ($f=0$) and is odd in the '
           'signed radius"',
           'vanishes at the horizons' in p14 and 'odd in the signed radius' in p14)
+    # ⛭⛭ r7267/r7281 ①: AND `vanishes at the horizons` IS NOW COMPUTED, THROUGH `L-012w`'s OWN
+    #   `roots_at`: the horizon cubic evaluated at each of its own three roots returns exactly
+    #   0, 0, 0.  ⌗ *The converse is a seventh off each root, where it returns 120/343, 78/343
+    #   and -48/343 -- so the vanishing is AT the roots and not near them.*
+    _spl = _r7281('splits')
+    import sympy as _sp3
+    _cub = _spl.cubic()
+    check('⛭⛭ and `vanishes at the horizons` is COMPUTED through `L-012w`\'s own `roots_at`: the '
+          'horizon cubic is exactly ZERO at each of its three roots, and non-zero a seventh off '
+          'each of them',
+          all(x == 0 for x in _spl.vanishes_at_roots('1'))
+          and all(_sp3.simplify(_sp3.Poly(_cub, _sp3.Symbol('r')).eval(
+              x + _sp3.Rational(1, 7))) != 0 for x in _spl.triple('1')))
     # ⛭⛭ r7267 ①: AND THE PARITY IS NOW COMPUTED, THROUGH `L-006w`'s OWN `twoM`.  `twoM`
     #   solves f = 0 for the mass, 2M = r_0**(D-3) - r_0**(D-1), and `L-006w` prints its
     #   monomials and never substitutes r -> -r into the f it came from.  ** Built back on the
