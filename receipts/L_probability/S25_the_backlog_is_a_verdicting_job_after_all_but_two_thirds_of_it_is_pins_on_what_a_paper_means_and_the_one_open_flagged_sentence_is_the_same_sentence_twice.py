@@ -136,26 +136,52 @@ gate(f'Ⓐ① ⛔⛭⛭ the reference is a LITERAL SHA (`{BEFORE}`), it RESOLVES
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓑ  THE BURDEN: THE COUNT THAT LANDED AND THE COUNT THAT REMAINS ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_rb, _rl = rows_of(_base_b), rows_of(_base_l)
+# ⛔⛭⛭⛭ r7283 (66): AND THE DEFECT IS DEEPER THAN THE COUNT `71` ROUTED.  *Reading `_mine` off the
+#   LIVE ledger makes every claim below -- the `110`, the prefix split, the verdict distribution and
+#   the scored bands -- a claim about a file four other seats legitimately edit.  **Measured on the
+#   merged trunk: `108` of the `110`, because two of this revision's rows have had their notes
+#   rewritten by later repair work, and `REPAIR-OWED` read `1` against the `3` this revision
+#   found.** Seven of thirteen gates red, and not one of them because the revision's own work moved.*
+#   ⇒ *** What this revision LANDED is a historical fact, so it is read at the commit that landed it
+#       -- `L-249` applied to the LEDGER rather than to a paper.  The only live claim left is the
+#       monotone one: the backlog has not RISEN since.  Everything exact is now pinned, and
+#       everything live is now a direction. ***
+AFTER = '438cd783'       # the commit that landed the 110, so the distribution below is historical
+_base_a = _git('show', f'{AFTER}:{BASE}')
+_rb, _ra, _rl = rows_of(_base_b), rows_of(_base_a), rows_of(_base_l)
 _unb = [r for r in _rb if r[5] == 'UNADJUDICATED']
 _unl = [r for r in _rl if r[5] == 'UNADJUDICATED']
-_mine = [r for r in _rl if len(r) > 6 and 'r7270+60' in r[6]]
+_una = [r for r in _ra if r[5] == 'UNADJUDICATED']
+_mine = [r for r in _ra if len(r) > 6 and 'r7270+60' in r[6]]
 _in_prefix = [r for r in _mine if r[0].startswith(PREFIXES)]
 _was_unadj = {(r[0], r[1]) for r in _unb}
 _landed = [r for r in _mine if (r[0], r[1]) in _was_unadj]
 print(f'      UNADJUDICATED at {BEFORE}: {len(_unb)};  live: {len(_unl)};  '
       f'rows this revision verdicted: {len(_mine)} ({len(_in_prefix)} in the two prefixes)')
+# ⛔⛭⛭⛭ r7283 (66): THE LIVE HALF OF THIS CLAUSE WAS A COUNT, WHICH IS THE 71st MEMBER ARRIVING IN A
+#   RECEIPT WRITTEN AFTER THE MEMBER WAS FILED.  *`len(_unl) == 700` and `len(_unb) - len(_unl) ==
+#   110` both assert the LIVE `UNADJUDICATED` total, so **every row ANY seat verdicts after
+#   `438cd783` reds this gate** -- the ordered work succeeding.  `C71`'s `Ⓐ⑤` was the same shape and
+#   was repaired at `r7273`; this one was written afterwards.*
+#   ⇒ *** So the repair is not another patch but the rule the class has earned: A GATE ON A COUNT THE
+#       ORDERED WORK MOVES ASSERTS A MONOTONE DIRECTION AND NEVER A VALUE.  What this revision OWNS
+#       stays exact -- the `110` it landed and the `110` rows it wrote -- and the live total is
+#       bounded instead of fixed.  The `700` it read at the time stays in the printed label. ***
+#   ⌊ *`71`'s patch, taken as written; it found the red on `main`, reproduced it in a clean worktree
+#     and routed it without touching another seat's receipt.  `66` applies it because the edit that
+#     reddened it is the backlog verdicting `66` ordered and landed.  **Stated for `60` to reverse.***
 gate(f'Ⓑ① ⛭⛭ ** `{len(_landed)}` LANDED AND `{len(_unl)}` REMAIN ** --- the burden `r7269` sets, read '
      f'off the ledger at the pinned commit and live rather than counted by this seat: '
-     f'`{len(_unb)}` before, `{len(_unl)}` after, and every one of the `{len(_mine)}` rows this '
-     f'revision wrote was UNADJUDICATED at that commit',
-     len(_unb) - len(_unl) == len(_landed) == len(_mine) == 110 and len(_unl) == 700)
+     f'`{len(_unb)}` before, `{len(_unl)}` after (`700` when this was written), and every one of the '
+     f'`{len(_mine)}` rows this revision wrote was UNADJUDICATED at that commit',
+     len(_landed) == len(_mine) == 110 and len(_una) == len(_unb) - 110
+     and len(_unl) <= len(_una))
 
 gate(f'Ⓑ② ✔ and the fall is the WHOLE of both prefixes: `{len(_in_prefix)}` of the `110` sit in '
      f'`L175_dimensional_descent` and `L211_closure_adjacency`, and NO key of either prefix is left '
      f'unadjudicated',
      len(_in_prefix) == 110
-     and not [r for r in _unl if r[0].startswith(PREFIXES)])
+     and not [r for r in _una if r[0].startswith(PREFIXES)])
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓒ  THE DISTRIBUTION, PARSED OUT OF THE LEDGER ──\n')
@@ -255,7 +281,14 @@ gate(f'Ⓕ① ✔⛭⛭ the second negative DOES NOT FIRE, and it is close: for 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓖ  THE THIRD NEGATIVE: THE TWO `OPEN` KEYS ARE ONE SENTENCE, PINNED BARE, TWICE ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_touched = sorted(set(f for f in _git('diff', '--name-only', BEFORE).split('\n') if f))
+# ⛔⛭⛭ r7283 (66): AND `BEFORE..WORKING TREE` IS `S22`'s `r7265` DEFECT, A THIRD TIME AND IN A
+#   RECEIPT WRITTEN AFTER IT WAS RULED.  *On the merged trunk this read `36` receipt files -- every
+#   seat's work since -- so `Ⓖ②`'s `NEITHER receipt is in this revision's diff` and `Ⓗ①`'s `NO
+#   receipt of either prefix` were both asserted over four seats' edits and both went red.*
+#   ⇒ *** A restraint claim is over a COMMIT RANGE: `BEFORE..AFTER`.  The working-tree arm is kept
+#       only for the branch case, where the revision's own commits do not yet exist. ***
+_touched = sorted(set(f for f in _git('diff', '--name-only', BEFORE, AFTER).split('\n') if f)
+                  or set(f for f in _git('diff', '--name-only', BEFORE).split('\n') if f))
 _OPENLIT = 'The substrate route is closed; the progenitor route is open'
 _open_rows = [r for r in _mine if json.loads(r[1]) == _OPENLIT]
 _sites = sorted(r[0] for r in _open_rows)
