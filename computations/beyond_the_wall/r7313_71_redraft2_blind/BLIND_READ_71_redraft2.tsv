@@ -1,0 +1,42 @@
+# readers: 70 | 71
+# r7313+71 -- 71 applies 69's SECOND redraft of the REPAIR-OWED rule (THE_RULE.md at 6bef6fd5) BLIND to 70's held set
+#   (KEYS_BLIND.tsv, 69 keys, salt 6bef6fd5acf0692299f306c96e2ee630542dac14).  All 69 keys, in file order.
+#   Column 3 is EMPTY for 70's join (70 named first); column 4 is 71's verdict.  UNDECIDED = the text licenses
+#   two verdicts or none -- the ground names them, in GROUNDS_71_redraft2.tsv.  Literals byte for byte from
+#   KEYS_BLIND.tsv.  Never reconciled, never written to the ledger.
+# receipt	literal	verdict (first-named reader)	verdict (second-named reader)
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"SYMPTOM'S FIX, NOT THE CAUSE'S"		REPAIR-OWED
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"4.17\\times10^{52}"		DELIBERATE
+receipts/P15_CR_cosmology/C14_po12_gates_po10.py	"is not the same as producing the odd/even heights"		REPAIR-OWED
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"the victim"		REPAIR-OWED
+receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py	"len(UNADJ) == 2170"		UNDECIDED
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	"Varying an action returns a field \\emph{equality}, and an equality has no direction"		REPAIR-OWED
+receipts/L221_the_bridge/B42_the_route_was_taken_and_p14_is_the_work.py	"observed fermion chirality is not merely found non-geometric but forced to be"		REPAIR-OWED
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"\\rho_{r}/\\rho_{m}"		UNDECIDED
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"`lepton` ×1 (inside a bibliography title), `quark` ×0"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"would reinstate the red"		REPAIR-OWED
+receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py	"being no isometry of the non-compact substrate to begin with"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	"eq:shape-invariant"		REPAIR-OWED
+receipts/L_probability/S21_a_pre_registered_negative_can_fire_without_reaching_the_claim_it_was_written_to_test_and_mine_did_while_the_order_was_wrong_about_both_defects_in_opposite_directions.py	"belongs to the family, and to the rescaled limit the family defines, rather than to the member read in this chart"		REPAIR-OWED
+receipts/P15_CR_cosmology/C12_the_odd_even_half_has_its_parameter.py	"ordinary content physics on the observable leg"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"R^2/(1+R)"		REPAIR-OWED
+receipts/L811_po7_inversions_closed/S1_all_three_po7_inversion_routes_are_closed_by_computation.py	"NOTHING IS OWED BY DARYL"		REPAIR-OWED
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"the orientation parity and the threefold symmetry of the slicing"		REPAIR-OWED
+receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py	"== 13"		DELIBERATE
+receipts/L221_the_bridge/B34_the_join_crosses_the_inner_horizon.py	"JanzenBoundary"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_surviving_step_is_amplitude_and_not_phase_and_the_candidate_shares_do_not_survive_the_change_of_denominator.py	"NAMED BEFORE USE"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py	"os.environ.get('WBH2'"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py	"visibility: peak at eta"		REPAIR-OWED
+receipts/L276_the_representation_theory_probe/R1_a_clause_that_outruns_its_own_premise_and_the_counterexample_is_the_papers_own_grading.py	"no character count on a finite group can produce three"		UNDECIDED
+receipts/P15_CR_cosmology/P15_the_one_ground_admits_exactly_one_independent_second_support_and_it_is_disqualified_because_the_rays_that_carry_the_flat_length_carry_a_blueshift.py	"$D_M=D_C$"		DELIBERATE
+receipts/P12_algebroid/A5_the_dark_halves_audited.py	"register alias: **`L-221`**"		MEANING-HELD
+receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	"The mass function is odd in the signed offset exactly when $D$ is even"		MEANING-HELD
+receipts/P15_CR_cosmology/P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all.py	"equally capable of passing it"		REPAIR-OWED
+receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	"is now decomposed rather than"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"on one ground that is a theorem and a second that rests on it"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_two_projection_widths_differ_by_the_jacobian_alone_and_the_channel_that_opens_is_a_quarter_of_the_excess.py	"COMMITTED AT `r6993`"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"RAD_IN_RATE = True"		REPAIR-OWED
+receipts/L221_the_bridge/B11_three_triples_two_identifications.py	"the three critical loci are the three causal characters"		MEANING-HELD
+receipts/P15_CR_cosmology/C39_the_derived_list_read.py	"consequence follows with no free parameter"		UNDECIDED
+receipts/P15_CR_cosmology/P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma.py	"math.sqrt(c2_ / n_) < 1.1"		DELIBERATE
+receipts/L221_the_bridge/B42_the_route_was_taken_and_p14_is_the_work.py	"no such circle action and so no trigger"		REPAIR-OWED
