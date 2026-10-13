@@ -26,7 +26,7 @@ it live rather than academic, because the residue now lands on `DELIBERATE` by t
 
 ## 2. Of the nine disjunction rows in the ledger, Test 6 catches six
 
-`corpus/quote_pin_baseline.tsv`, the 351 rows verdicted `REPAIR-OWED`, the nine whose reason names a
+`corpus/quote_pin_baseline.tsv`, the 350 rows verdicted `REPAIR-OWED`, the nine whose reason names a
 disjunction:
 
 - **six are caught.** `3.3`, `rescal`, `scanner`, `CR/LCDM`, `INPUT`, `WITHDRAWN` — each a vacuous or
