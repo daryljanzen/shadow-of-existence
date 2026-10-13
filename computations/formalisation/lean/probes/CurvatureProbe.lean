@@ -2207,6 +2207,45 @@ theorem pg_curv_smul_left {A w : ℝ → ℝ} (hA : ∀ s, A s ≠ 0) (hAs : Con
 
 end SmoothLC
 
+/-! ## `r7315`, B1 — receipt 99: at the Nariai mass the SdS function `f = 1 − 2a/(3r) − r²/(3a²)` (`α = √3 a`) has
+a double root at `r = a` and a simple root at `r = −2a`, and THE Levi-Civita connection's surface gravity is `0` at
+the first and `3/(4a) = 3√3/(4α)` at the second -/
+
+section SweepB1
+
+/-- SdS at the Nariai mass, in the scale `a = α/√3`. -/
+noncomputable def fNar (a r : ℝ) : ℝ := 1 - 2 * a / (3 * r) - r ^ 2 / (3 * a ^ 2)
+
+lemma fNar_hasDerivAt {a : ℝ} (ha : a ≠ 0) {r : ℝ} (hr : r ≠ 0) :
+    HasDerivAt (fNar a) (2 * a / (3 * r ^ 2) - 2 * r / (3 * a ^ 2)) r := by
+  have e : fNar a = fun s => 1 - 2 * a / 3 * s⁻¹ - s ^ 2 / (3 * a ^ 2) := by
+    funext s; simp only [fNar]; ring
+  rw [e]
+  refine HasDerivAt.congr_deriv (HasDerivAt.sub (HasDerivAt.sub (hasDerivAt_const r (1 : ℝ))
+    ((hasDerivAt_inv hr).const_mul (2 * a / 3))) ((hasDerivAt_pow 2 r).div_const (3 * a ^ 2))) ?_
+  field_simp; ring
+
+/-- **B1, receipt 99.** Any PG profile `w` with `1 − w² = f` near each root and `w = −1` there: the surface
+gravity `∇_ξ ξ = κ ξ` is `κ = 0` at the double root and `κ = 3/(4a)` at the simple root. -/
+theorem two_surface_gravities (a : ℝ) (ha : a ≠ 0) (w : ℝ → ℝ) (hw : Differentiable ℝ w)
+    (hf₁ : (fun s => 1 - w s ^ 2) =ᶠ[nhds a] fNar a) (hf₂ : (fun s => 1 - w s ^ 2) =ᶠ[nhds (-2 * a)] fNar a)
+    (h₁ : w a = -1) (h₂ : w (-2 * a) = -1) (τ₁ τ₂ : ℝ) :
+    lcConn (ℝ × ℝ) (pgMetric (fun _ => 1) w (fun _ => one_ne_zero) (differentiable_const _) hw)
+        xiT (τ₁, a) (xiT (τ₁, a)) = 0
+    ∧ lcConn (ℝ × ℝ) (pgMetric (fun _ => 1) w (fun _ => one_ne_zero) (differentiable_const _) hw)
+        xiT (τ₂, -2 * a) (xiT (τ₂, -2 * a)) = (3 / (4 * a)) • xiT (τ₂, -2 * a) := by
+  have k : ∀ r, w r = -1 → (fun s => 1 - w s ^ 2) =ᶠ[nhds r] fNar a → r ≠ 0 →
+      deriv w r = (2 * a / (3 * r ^ 2) - 2 * r / (3 * a ^ 2)) / 2 := fun r h hf hr => by
+    rw [← kappa_half_fprime w r (hw r) h, hf.deriv_eq, (fNar_hasDerivAt ha hr).deriv]
+  refine ⟨?_, ?_⟩
+  · rw [surface_gravity w hw _ h₁, k a h₁ hf₁ ha]
+    have : (2 * a / (3 * a ^ 2) - 2 * a / (3 * a ^ 2)) / 2 = 0 := by ring
+    rw [this, zero_smul]
+  · rw [surface_gravity w hw _ h₂, k _ h₂ hf₂ (by simpa using ha)]
+    congr 1; field_simp; ring
+
+end SweepB1
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2281,3 +2320,5 @@ end ShadowProbe
 #print axioms ShadowProbe.dg_contMDiffCov
 #print axioms ShadowProbe.diag4_contMDiffCov
 #print axioms ShadowProbe.pg_curv_smul_left
+#print axioms ShadowProbe.fNar_hasDerivAt
+#print axioms ShadowProbe.two_surface_gravities
