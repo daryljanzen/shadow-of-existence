@@ -59,7 +59,7 @@ def gate(label, ok):
 
 
 BEFORE = '2fcc95a7'   # this branch's tip before this revision
-AFTER = 'HEAD'        # the commit that carried this revision -- the 71st member's corollary
+AFTER = 'd9a899ca'   # the commit that carried this revision -- the 71st member's corollary
 BASE = 'corpus/quote_pin_baseline.tsv'
 GROUND = 'computations/beyond_the_wall/r7302_60_the_encoding_ground/THE_ENCODING_GROUND.md'
 INSTRUMENT = os.path.join(ROOT, 'scripts', 'mutate_assertions.py')
