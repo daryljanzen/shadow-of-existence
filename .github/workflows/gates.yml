@@ -141,7 +141,17 @@ jobs:
     #   tree, which is the same class of defect as a cap that files a receipt as a failure. ***
     #   ⌗ *75 is the worst case plus a quarter, on the rule the LONG declarations use: the measured
     #   figure plus headroom, not a round number chosen to feel safe.*
-    timeout-minutes: 75
+    # ⛔ r7309 (66), on node 70's measurement: THE SUITE HAS OUTGROWN THAT BUDGET.  Of the last ten
+    #   scheduled runs, SEVEN were cancelled, every one at 75-76 minutes -- this line -- and it
+    #   completed on 2 of the last 7 days, its successes taking 39-73 minutes.  ** And a cancelled
+    #   run records NOTHING, which is how seven of them passed unread: the same class as a crash that
+    #   reports nothing and a cap that files a receipt as a failure. **
+    #   ⇒ *120 IS A MEASUREMENT VALUE AND NOT A BUDGET.*  r6959's own rule is worst case plus a
+    #   quarter from a MEASURED figure, and there is no measured worst while the job dies on the
+    #   clock.  This raises the ceiling high enough for one completed run to produce that figure;
+    #   the budget is then set from it and this comment replaced.  ** Do not read 120 as the
+    #   considered number -- it is the ceiling that lets the number exist. **
+    timeout-minutes: 120
     steps:
       # ⛔ r6977+70.1 (70): FULL HISTORY.  With the default depth-1 checkout every receipt that reads an
       #   earlier commit (`git show <sha>^`) fails here and passes in any real clone -- the first dispatch
@@ -162,6 +172,21 @@ jobs:
       #   registered receipts were unrunnable everywhere and counted as real failures.
       - run: pip install -r requirements-ci.txt pynucastro
       - run: python3 scripts/run_all_receipts.py --jobs 4 --timeout 600 | tee receipts/RUN_RESULT.txt
+      # ⛔ r7309 (66), node 70's option ③, taken unconditionally and first: ** A CANCELLED RUN RECORDED
+      #   NOTHING. **  Seven of the last ten scheduled runs were cut off at the clock and left no trace
+      #   of which receipts they had reached, so seven nights of the one guard that covers the
+      #   live-subject class passed unread.  `if: always()` runs on cancellation too, so a cut-off run
+      #   now leaves a PARTIAL result instead of silence -- and a partial result is what says where the
+      #   time goes, which is what sizing the budget needs.
+      #   ⌗ *This is not a fix for the timeout.  It is the thing that makes the timeout legible, and it
+      #   is worth having whatever the budget turns out to be.*
+      - name: the partial result, recorded even when this job is cut off
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: heavy-run-result
+          path: receipts/RUN_RESULT.txt
+          if-no-files-found: warn
       - run: python3 corpus/check_receipts_run.py
 
   # ===================================================================================================
