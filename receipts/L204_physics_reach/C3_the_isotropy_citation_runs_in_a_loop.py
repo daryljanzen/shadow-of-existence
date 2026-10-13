@@ -67,6 +67,22 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+# ⛭⛭ r7267/r7275 ①: THE LOADER FOR THE COMPUTED HALF OF THE PIN BELOW, AND THE GAP WAS `INPUTS`.
+#   `r7261` named `beyond_the_wall/A2_the_wall_is_not_the_loss_of_symmetry.py`'s `lie_g` as the function nearest this row.  ** The module is a
+#   SCRIPT and cannot be imported, so `graft.py` takes the `def` plus the transitive closure of
+#   the module-level names it reads, over the AST, and runs nothing else. **  `isometry.py` hands
+#   it this row's own inputs.  ⇒ ** The pin below STAYS: it is the citation; this verifies it. **
+def _r7267():
+    """`beyond_the_wall/A2_the_wall_is_not_the_loss_of_symmetry.py`'s own `lie_g`, grafted, at this row's inputs."""
+    if not hasattr(_r7267, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import isometry
+        _r7267.v = isometry.at_inputs().nariai()
+    return _r7267.v
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -122,6 +138,21 @@ def main():
     check('P9 names isotropies as GROUPS instead -- SO(4,1) at Type~O, SO(2,1)xSO(3) at Nariai',
           _ISO.search(p9) is not None
           and '\\mathrm{SO}(2,1)\\times\\mathrm{SO}(3)$ at Nariai' in p9)
+    # ⛭⛭ r7267/r7275 ①: AND THE ALGEBRA AT NARIAI IS NOW COMPUTED, THROUGH `A2`'s OWN `lie_g`.
+    #   `lie_g` is `A2`'s Killing test and reads its METRIC from module level, where `A2` binds
+    #   the chiral plane wave; the change of inputs is a REBINDING -- hand the grafted namespace
+    #   the Nariai metric dS_2 x S^2 and `A2`'s own test answers about this geometry.
+    #   ** Six generators come back Killing: three on the dS_2 factor, DERIVED from the
+    #   embedding -T^2+X^2+Y^2 = 1 and each verified against its third row rather than quoted,
+    #   and three on the two-sphere.  so(2,1) + so(3), with the product structure. **
+    #   ⌗ *Three reachable converses -- chi d_tau, d_chi, d_theta -- all come back NOT Killing.*
+    _iso = _r7267()
+    _gens, _conv = _iso.generators(), _iso.converses()
+    check('⛭⛭ and the ALGEBRA is COMPUTED through `A2`\'s own `lie_g` at the Nariai metric: six '
+          'generators are Killing -- three $\\mathfrak{so}(2,1)$ on the $dS_2$ factor and three '
+          '$\\mathfrak{so}(3)$ on the two-sphere -- and three reachable converses are not',
+          len(_gens) == 6 and all(_iso.is_killing(x) for x in _gens.values())
+          and not any(_iso.is_killing(x) for x in _conv.values()))
     check('⇒ so the fact is TRUE and recoverable by inspection, and the citation does not establish it '
           '-- which is why nobody noticed',
           '\\{6,7,10\\}' in p12 and '6,7,10' not in p9)

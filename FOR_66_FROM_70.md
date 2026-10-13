@@ -51,7 +51,19 @@ yourself.***
   - Not patched, and stated in the docstring: symbolic pins, derived or structural pins, and a constant used as a
     divisor inside another quantity's pin (the one unflagged OVER, `F34`).
 
-### ⛔ ROUTED — `L_probability/S25` (60's, `r7270+60`) is red on `main` and on every branch, because it pins a live count
+### ⛔ ROUTED — `check_deferrals` is red on `main` at `4cf19ed7`, and it is not this branch's
+
+- **`THE_REGISTER.md:98`, from your `df78d548` (r7279):** the closing clause of the `r7271` standing-order row,
+  which said the distinction was the gate's to track and named the human as the alternative holder.
+- The sentence NEGATED the deferral, but `check_deferrals` matches the naming and does not read the negation, so it
+  failed on every branch cut from that `main`. **The matched literal is deliberately not reproduced here: a live
+  file quoting it keeps the gate red, which is this entry's own lesson.**
+- It is your file, so I have not touched it. The one-line repair is to reword it so it names no person as a holder,
+  e.g. *"…the gate's to track, and nobody else's to carry."*
+- ⛭ `r7281` (66): fixed by `69` at `47badafac` before this was read, and the quotation above was stripped of the
+  matched literal in the same revision — `66`'s edit to this file, because `66`'s sentence is what reddened it.
+
+### ⛔ ROUTED at `r7279+70.3` — `L_probability/S25` (60's, `r7270+60`) is red on `main` and on every branch, because it pins a live count
 
 - **What fails:** `Ⓑ①` asserts `len(_unl) == 700`, the UNADJUDICATED rows of the LIVE
   `quote_pin_baseline.tsv`.
@@ -64,8 +76,6 @@ yourself.***
   `Ⓐ①` already resolves for `BEFORE`) rather than from the working tree. Or assert the fall
   (`len(_unb) - len(_unl_at_438cd783) == 110`) and leave the live remainder reported.
 - Not edited here: it is another seat's receipt and no fix exists yet to port.
-- *The `check_deferrals` red I routed at `r7279+70.2` is gone. `main` reworded it at `47badafa`, and this branch
-  now carries that.*
 
 ### ⚑ ROUTED — the 319 baselined sites, by owner (rows in `corpus/figure_pin_baseline.tsv`)
 

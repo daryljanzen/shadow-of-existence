@@ -41,19 +41,46 @@ class GraftError(RuntimeError):
 
 
 def _bound_by(stmt):
-    """the module-level names this top-level statement binds"""
+    """the module-level names this top-level statement BINDS -- `x = ...`, a `def`, an import.
+
+    ⚠ ** A SUBSCRIPT OR ATTRIBUTE TARGET IS NOT A BINDING AND MUST NOT BE READ AS ONE. **
+    `g[0, 1] = 1` mutates `g`; it does not create it.  A first version of this file walked the
+    target for any `ast.Name`, so it registered `g[2, 2] = g[3, 3] = 1` as the LAST binding of
+    `g` and dropped `g = sp.zeros(4, 4)` -- the graft then raised `NameError: name 'g' is not
+    defined` on a module that builds its metric by element assignment, which several in this
+    corpus do.  *The mutators are returned separately by `_mutated_by` and retained WITH the
+    binding, in source order, so the matrix is built the way the module builds it.*"""
     out = set()
     if isinstance(stmt, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)):
         out.add(stmt.name)
     elif isinstance(stmt, (ast.Import, ast.ImportFrom)):
         for a in stmt.names:
             out.add((a.asname or a.name).split('.')[0])
-    elif isinstance(stmt, (ast.Assign, ast.AnnAssign, ast.AugAssign)):
+    elif isinstance(stmt, (ast.Assign, ast.AnnAssign)):
         tgts = stmt.targets if isinstance(stmt, ast.Assign) else [stmt.target]
         for t in tgts:
-            for n in ast.walk(t):
-                if isinstance(n, ast.Name):
-                    out.add(n.id)
+            if isinstance(t, ast.Name):
+                out.add(t.id)
+            elif isinstance(t, (ast.Tuple, ast.List)):
+                for n in ast.walk(t):
+                    if isinstance(n, ast.Name):
+                        out.add(n.id)
+    return out
+
+
+def _mutated_by(stmt):
+    """the module-level names this statement MUTATES in place without binding them"""
+    out = set()
+    tgts = []
+    if isinstance(stmt, ast.Assign):
+        tgts = list(stmt.targets)
+    elif isinstance(stmt, (ast.AnnAssign, ast.AugAssign)):
+        tgts = [stmt.target]
+    for t in tgts:
+        while isinstance(t, (ast.Subscript, ast.Attribute)):
+            t = t.value
+        if isinstance(t, ast.Name) and t.id not in _bound_by(stmt):
+            out.add(t.id)
     return out
 
 
@@ -92,7 +119,7 @@ def _reads(stmt):
 
 
 _KEEP = (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef,
-         ast.Import, ast.ImportFrom, ast.Assign, ast.AnnAssign)
+         ast.Import, ast.ImportFrom, ast.Assign, ast.AnnAssign, ast.AugAssign)
 
 
 def graft(module, *names, extra=()):
@@ -107,13 +134,17 @@ def graft(module, *names, extra=()):
     tree = ast.parse(src, filename=path)
 
     # index the graftable top-level statements by every name each binds, keeping the LAST
-    # binding in source order -- which is what a module import would have left in place.
-    by_name, order = {}, {}
+    # binding in source order -- which is what a module import would have left in place --
+    # and index the IN-PLACE MUTATORS of each name separately, because a name's value is its
+    # binding plus every mutation of it the module performs at top level.
+    by_name, mut_by_name, order = {}, {}, {}
     for i, st in enumerate(tree.body):
         if not isinstance(st, _KEEP):
             continue
         for nm in _bound_by(st):
             by_name[nm] = st
+        for nm in _mutated_by(st):
+            mut_by_name.setdefault(nm, []).append(st)
         order[id(st)] = i
 
     wanted = list(names) + list(extra)
@@ -123,6 +154,8 @@ def graft(module, *names, extra=()):
 
     keep, seen = {}, set()
     stack = [by_name[nm] for nm in wanted]
+    for nm in wanted:
+        stack.extend(mut_by_name.get(nm, ()))
     while stack:
         st = stack.pop()
         if id(st) in keep:
@@ -134,6 +167,7 @@ def graft(module, *names, extra=()):
             seen.add(nm)
             if nm in by_name:
                 stack.append(by_name[nm])
+                stack.extend(mut_by_name.get(nm, ()))
             elif hasattr(builtins, nm):
                 pass
             elif nm in ('__doc__', '__file__', '__name__'):

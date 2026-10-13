@@ -88,6 +88,18 @@ STUB_RE = '\nimport re\nre.findall = lambda *a, **k: []\n'
 #     `60`'s and the edit that broke it is `cc66`'s.  **Stated for either to reverse** -- a read-only
 #     symlink cannot weaken a mutation test whose faults are injected into the receipt SOURCE, and no
 #     claim, count or verdict moves.*
+# ⛭ r7275+cc66.3 (cc66): `computations` ADDED, and the reason is a red this seat caused.
+#   `r7267`'s batch gave `B2` a computed check that calls `L-129`'s own `close` through
+#   `computations/beyond_the_wall/r7267_cc66_reach_the_71/`, so that directory is now one of
+#   the real inputs `B2` reads -- and a scratch tree that does not link it makes `B2` fail
+#   CLEAN, which turned `Ⓑ①` red on `main`.  ** One element added to the symlink list; no
+#   fault, band, count or assertion of this receipt is touched. **  ⌗ *Reversible: if this
+#   line is unwanted, the alternative is to drop `B2`'s computed check, and that trade is
+#   stated in `FOR_66.md` at `r7275+cc66.3` rather than decided here.*
+#   ⌗ ⛭⛭ *Both seats reached this one-line fix independently in the same cycle and from
+#     opposite ends -- `66` from `main` going red, `cc66` from the edit that reddened it -- and the
+#     two accounts above are kept side by side because they are not the same statement: one names
+#     the class, the other names the cause.*
 INPUTS = ('corpus', 'VARIATIONAL_LEDGER.md', 'computations')
 
 
