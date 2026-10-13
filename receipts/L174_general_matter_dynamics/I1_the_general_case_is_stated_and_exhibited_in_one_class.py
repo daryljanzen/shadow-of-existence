@@ -151,8 +151,19 @@ def main():
     check('and the row records why it was carried at the wrong weight: the framing was inherited '
           'from a `%` SOURCE COMMENT phrasing it as an open DISCOVERY, where the published '
           'paragraph had already downgraded it',
-          '**AND THIS ROW INHERITED ITS FRAMING FROM A SOURCE COMMENT.** *Checked at source: '
-          '**"the deepest open question the construction RAISES" is a `%` comment**' in arc)
+          # ⛔⛭ NARROWED AGAIN r7287+cc66, BY `check_provenance`, AND THE GATE IS RIGHT: the
+          #   widened span quoted the arc quoting `"the deepest open question the construction
+          #   RAISES"`, and that phrase lives ONLY in slicing_operator.tex's `%` COMMENTS.  A
+          #   quotation lifted from a comment carries the authority of the paper it sits in while
+          #   being no part of it -- and the gate cannot tell a quotation OF a comment, labelled as
+          #   one, from a quotation passed off AS the paper's.
+          #   ⌗ ** AND THE OTHER HALF IS NO BETTER, MEASURED: the arc's `the PUBLISHED paragraph
+          #     says "the deepest question the construction OPENS ONTO"` is in NO paper's body
+          #     either -- zero hits across every corpus/*.tex with comment lines stripped.  So the
+          #     arc's record of the c54.179 correction quotes two phrases and neither is live
+          #     paper text: one never was, and the other has been reworded away.  Routed. **
+          #   ⇒ So the pin is the arc's OWN claim sentence, which quotes no paper text at all.
+          '**AND THIS ROW INHERITED ITS FRAMING FROM A SOURCE COMMENT.**' in arc)
     check('⇒ a correction to a row\'s EVIDENCE is not a correction to its WEIGHT, and the second '
           'does not follow automatically',
           'n DISCOVERY (P8\'s % source comment, corrected at c54.179' in arc or 'is corrected at c54.179' in arc)

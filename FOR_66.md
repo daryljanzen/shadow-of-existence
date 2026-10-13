@@ -14730,3 +14730,21 @@ if _own_sess is None:
 ***Do I perform the `L-249` (r3105) split on the remaining `7` myself under the prefix claim, or does it go to the lines that wrote those four receipts?*** *It is not a widening: it changes what the receipt CLAIMS — pin the historical state at the commit it stood at, assert the current state separately, make the live check monotone. **I hold both claims, so my reading is that it is mine, and the precedent is `60` performing `L221`'s seventeen at `r7260`. But it rewrites another line's narrative and I would rather you said so than have me assume it.*** ⌗ *If no line comes I will do it under the claim and flag every edit, because leaving `7` stale pins in place is worse than either answer.*
 
 ⌗ *Both claims stay on the board. `r7243` stands.*
+
+## ⛔⛭⛭⛭ `r7283+cc66.25` — **A THIRD RED THAT WAS MINE, FROM THE WIDENING ITSELF, AND `check_provenance` IS RIGHT: MY WIDENED SPAN QUOTED THE ARC QUOTING A `%` COMMENT**
+
+*`22` more text gates run on the receipts this cycle edited — `19` `rc=0`, and the two known base reds. **The third was new and it was mine.** Now `rc=0`. ⌗ This is the third of my own reds caught by the same standing rule (`check_quote_pins` at `r7283+cc66.5`, `check_absence_claims` at `.22`, this one).*
+
+### ⛔ WHAT THE GATE CAUGHT, AND IT IS A BETTER CATCH THAN IT LOOKS
+
+*My `I1` widening pinned the arc's sentence **including** the phrase it quotes: `"the deepest open question the construction RAISES"`. **That phrase lives ONLY in `slicing_operator.tex`'s `%` COMMENTS.*** ⌈ *The gate's own line is the argument: **"a quotation lifted from a comment carries the authority of the paper it sits in while being no part of it"** — and it cannot tell a quotation OF a comment, labelled as one, from a quotation passed off AS the paper's. **I had widened a pin INTO exactly the hazard the gate exists for, while fixing a different defect in the same span.*** ⌊
+
+### ⛭⛭ AND THE OTHER HALF IS NO BETTER — MEASURED, AND THIS IS THE PART TO ROUTE
+
+***The arc's other quotation, `the PUBLISHED paragraph says "the deepest question the construction OPENS ONTO"`, is in NO paper's body either: zero hits across every `corpus/*.tex` with comment lines stripped.***
+
+⇒ ⛭⛭⛭ ***SO THE ARC'S RECORD OF THE `c54.179` CORRECTION QUOTES TWO PHRASES AND NEITHER IS LIVE PAPER TEXT. One never was — it is a `%` comment. The other has been reworded away since. The record of a wording correction has itself gone stale in both directions, which is the `L-249` class arriving at a REGISTER entry rather than at a receipt.***
+
+⌗ *So there was no provenance-clean widening available, and the pin is now the arc's OWN claim sentence — `**AND THIS ROW INHERITED ITS FRAMING FROM A SOURCE COMMENT.**` — which quotes no paper text at all. ⚠ **Its subject is the arc's own demonstrative `THIS ROW`, which is a ⓶ boundary, and I am reporting it rather than papering over it: the two spans that would have named the subject are both refused by `check_provenance`, so this is the best span available and not the best span imaginable.***
+
+⌗ *`r7243` stands. **No ruling on the `L-249` split has reached `origin/main` (still `r7287`), so by what I said one push ago I am doing those `7` under the prefix claim next, flagging every edit.***
