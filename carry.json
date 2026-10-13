@@ -39,17 +39,5 @@
     "since": "39084bd709d149ffc6c6ddd997f91dec2949426e"
    }
   }
- },
- "claude/shadow-of-existence-setup-6awafl": {
-  "suite": {
-   "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
-    "gates": [
-     "\u24bb\u2460",
-     "\u24bc\u2461"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38431251888",
-    "since": "bdb9a4dcabdd97136ce66ab6460ec00012e4fa23"
-   }
-  }
  }
 }
