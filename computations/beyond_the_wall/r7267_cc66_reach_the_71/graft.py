@@ -122,6 +122,70 @@ _KEEP = (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef,
          ast.Import, ast.ImportFrom, ast.Assign, ast.AnnAssign, ast.AugAssign)
 
 
+_MUTATORS = ('append', 'extend', 'insert', 'add', 'update', 'setdefault', 'pop',
+             'popitem', 'clear', 'remove', 'discard', 'sort', '__setitem__')
+
+def _is_empty_container(stmt):
+    """TRUE iff this statement binds its target to an EMPTY container and nothing else.
+
+    `ends = {}` is such a binding.  ** A NAME BOUND THIS WAY CARRIES NO VALUE OF ITS OWN:
+    whatever the module puts in it is put there by some LATER statement, and if that statement
+    is not graftable the graft hands back an empty container with nothing to say so. **"""
+    if not isinstance(stmt, ast.Assign) or len(stmt.targets) != 1:
+        return False
+    if not isinstance(stmt.targets[0], ast.Name):
+        return False
+    v = stmt.value
+    if isinstance(v, ast.Dict) and not v.keys:
+        return True
+    if isinstance(v, (ast.List, ast.Tuple)) and not v.elts:
+        return True
+    if isinstance(v, ast.Set) and not v.elts:
+        return True
+    if (isinstance(v, ast.Call) and isinstance(v.func, ast.Name)
+            and v.func.id in ('dict', 'list', 'set', 'defaultdict', 'OrderedDict')
+            and not v.args and not v.keywords):
+        return True
+    return False
+
+
+def _mutates_elsewhere(stmt):
+    """the names this statement mutates IN PLACE, however deeply nested inside it.
+
+    Unlike `_mutated_by`, which reads one top-level assignment, this one looks inside a `for`,
+    an `if` or a `with` -- the statement kinds the graft does NOT keep -- and reports every
+    module-level name they fill: `x[k] = v`, `x.attr = v`, `x.append(v)`."""
+    out = set()
+    local = set()
+    for n in ast.walk(stmt):
+        if isinstance(n, (ast.comprehension, ast.For, ast.AsyncFor)):
+            for t in ast.walk(n.target):
+                if isinstance(t, ast.Name):
+                    local.add(t.id)
+        elif isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef, ast.Lambda)):
+            a = n.args
+            for q in (list(a.posonlyargs) + list(a.args) + list(a.kwonlyargs)):
+                local.add(q.arg)
+    for n in ast.walk(stmt):
+        tgts = []
+        if isinstance(n, ast.Assign):
+            tgts = list(n.targets)
+        elif isinstance(n, (ast.AnnAssign, ast.AugAssign)):
+            tgts = [n.target]
+        elif isinstance(n, ast.Call) and isinstance(n.func, ast.Attribute) \
+                and n.func.attr in _MUTATORS:
+            tgts = [n.func]
+        for t in tgts:
+            base = t
+            depth = 0
+            while isinstance(base, (ast.Subscript, ast.Attribute)):
+                base = base.value
+                depth += 1
+            if depth and isinstance(base, ast.Name) and base.id not in local:
+                out.add(base.id)
+    return out
+
+
 def graft(module, *names, extra=()):
     """execute the named top-level functions of `module` and nothing else.
 
@@ -177,6 +241,28 @@ def graft(module, *names, extra=()):
                     f'{module}: {nm!r} is read by a grafted statement but is not bound by any '
                     f'graftable top-level statement -- refusing to guess')
 
+    # ** THE EMPTY-CONTAINER REFUSAL. **  A kept statement can bind a name to an EMPTY
+    # container -- `ends = {}` -- and leave the filling to a `for` loop, which is not a
+    # graftable statement kind.  The graft then hands back an empty dict and NOTHING SAYS SO,
+    # so a row taken through it is vacuous rather than wrong.  Refuse instead of guessing.
+    kept_names = {nm for st in keep.values() for nm in _bound_by(st)}
+    filled_outside = {}
+    for st in tree.body:
+        if id(st) in keep:
+            continue
+        for nm in _mutates_elsewhere(st):
+            if nm in kept_names:
+                filled_outside.setdefault(nm, []).append(getattr(st, 'lineno', 0))
+    hollow = sorted(nm for nm in filled_outside
+                    if nm in by_name and _is_empty_container(by_name[nm]))
+    if hollow:
+        where = '; '.join(f'{nm} filled at line(s) '
+                          + ','.join(str(x) for x in filled_outside[nm]) for nm in hollow)
+        raise GraftError(
+            f'{module}: {hollow} is bound to an EMPTY container by a graftable statement and '
+            f'filled by one that is not ({where}) -- the graft would hand back an empty '
+            f'container with nothing to say so, so it refuses')
+
     body = [keep[k] for k in sorted(keep, key=lambda k: order[k])]
     mod = ast.Module(body=body, type_ignores=[])
     ast.fix_missing_locations(mod)
@@ -188,6 +274,9 @@ def graft(module, *names, extra=()):
         raise GraftError(f'{module}: graft produced no {missing}')
     g['_GRAFTED'] = tuple(sorted({nm for st in body for nm in _bound_by(st)}))
     g['_STATEMENTS'] = len(body)
+    # names a non-graftable top-level statement also mutates, where the binding is NOT empty:
+    # recorded rather than refused, because the binding does carry a value of its own.
+    g['_MUTATED_OUTSIDE'] = tuple(sorted(nm for nm in filled_outside if nm not in hollow))
     g['_OF'] = len(tree.body)
     return g
 
