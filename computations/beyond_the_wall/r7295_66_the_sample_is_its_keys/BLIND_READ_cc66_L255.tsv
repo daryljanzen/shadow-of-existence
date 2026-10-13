@@ -7,11 +7,12 @@
 # Re-filed in the four-column r7295 shape from DOUBLE_cc66_L255.tsv, which was written in the r7293 shape
 # before this seat had read the r7295 order; the verdicts are unchanged.
 # receipt	literal	first verdict (cc66, blind)	second verdict (69, primary -- not read)
-receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"MARK = re.compile"	REPAIR-OWED	
-receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"REPAIRED"	REPAIR-OWED	
-receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"STALE EXEMPTION"	REPAIR-OWED	
-receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"TimeoutExpired"	DELIBERATE	
-receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"header(t)"	DELIBERATE	
-receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"not judged either way"	REPAIR-OWED	
-receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"subprocess.run"	REPAIR-OWED	
-receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"with no reason given"	REPAIR-OWED	
+# r7303+70: primary column joined from the ledger at its LANDING commit(s) 1e6c6dc3 (join_pending.py); checked against origin/main.  Only the empty cells were written.
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"MARK = re.compile"	REPAIR-OWED	REPAIR-OWED
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"REPAIRED"	REPAIR-OWED	REPAIR-OWED
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"STALE EXEMPTION"	REPAIR-OWED	REPAIR-OWED
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"TimeoutExpired"	DELIBERATE	REPAIR-OWED
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"header(t)"	DELIBERATE	REPAIR-OWED
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"not judged either way"	REPAIR-OWED	REPAIR-OWED
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"subprocess.run"	REPAIR-OWED	REPAIR-OWED
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"with no reason given"	REPAIR-OWED	REPAIR-OWED
