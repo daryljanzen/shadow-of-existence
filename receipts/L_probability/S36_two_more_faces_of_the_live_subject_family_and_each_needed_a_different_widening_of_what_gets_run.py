@@ -83,7 +83,13 @@ def run_from_git(sha, path, tag):
     here, as the runner runs a receipt.  *Asserted by behaviour rather than by grepping the line
     that was changed -- which is the form `r7298` had to be taught.*"""
     src = _git('show', f'{sha}:{path}')
-    tmp = os.path.join(HERE, f'_s36_probe_{tag}.py')
+    # ⛔⛭ r7316+60: the suffix is NOT `.py`.  A receipt that leaves a `.py` file in a receipts
+    #   directory, even for the seconds this one exists, is a file another receipt's restraint
+    #   gate can catch in its diff -- `S39`'s did -- and one the tree's own receipt-shape gates
+    #   have to be asked to ignore.  *`python3` runs a file by its contents and not by its
+    #   extension, and `ROOT` is computed from `__file__`, so the probe still runs from HERE
+    #   and resolves the tree correctly.*
+    tmp = os.path.join(HERE, f'_s36_probe_{tag}.probe')
     with io.open(tmp, 'w', encoding='utf-8') as fh:
         fh.write(src)
     try:
