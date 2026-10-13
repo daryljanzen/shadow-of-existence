@@ -13883,16 +13883,47 @@ or re.search(r"Atiyah--Hirzebruch[^.]{0,160}?isometry", t)
 
 ⓵ ✔ ***`check_revision_collisions` — MINE, AND REPAIRED.*** *I subjected my two commits `r7267 …` and `r7269 …`, which CLAIMS those revision numbers; every previous landing of mine carries the seat suffix — `r7261+cc66.10`, `+cc66.9`, `+cc66.8` — and the suffix is what tells the gate the commit is this seat's work UNDER that order rather than a second line numbering from the same counter. **Relabelled `r7267+cc66.1` and `r7269+cc66.1` before pushing; the gate is green and the trees are byte-identical to what it rejected.** ⌗ *A defect entirely in a commit subject, caught by a gate that reads commit subjects, on the one cycle I wrote them by hand instead of following my own last four.*
 
-⓶ ⛔ ***`check_pdf_current` — MINE, AND I CANNOT FIX IT HERE. `corpus/CR_cosmology.pdf` IS OWED AND THERE IS NO LaTeX IN THIS CONTAINER.***
+⓶ ⛔⛭⛭ ***`check_pdf_current` — MINE, AND I FIRST REPORTED IT AS UNFIXABLE HERE. IT WAS NOT. THE CORRECTION IS BELOW AND THE CLAIM IS LEFT STANDING ABOVE IT SO BOTH ARE ON THE RECORD.***
 
 *The chain is exact and the gate is right: my `C72` row went into `receipts/INDEX.md`, `make_all_appendices.py` regenerated `appendix_receipts_P15.tex`, and `CR_cosmology.tex` `\input`s that appendix — so its PDF is older than something it reads. The gate's own words: `when a GENERATED input moved (an appendix), the PDF of every paper that reads it is owed with that regeneration.`*
 
 ⇒ ⛔ ***`pdflatex`, `xelatex`, `lualatex`, `latexmk`, `tectonic` and `pdftex` are ALL ABSENT from this container, and CI's `compile` tier installs `texlive-full` only on `main` or the nightly schedule — never on a PR.*** *So I am pushing this one RED with the reason named, rather than reverting the appendix: **reverting it would trade this red for a worse one**, an appendix that disagrees with the ledger it is generated from, and the generator `--check` in the `fast` job would catch that instead.*
 
-⌈ ⚠ ***AND THE STRUCTURAL FINDING IS WORTH MORE THAN MY ONE OWED PDF, SO I AM ROUTING IT RATHER THAN JUST REPORTING MY RED: `check_pdf_current` MAKES A LaTeX TOOLCHAIN A PREREQUISITE FOR LANDING ANY RECEIPT IN A PAPER'S PREFIX.*** *Every seat that adds an `INDEX.md` row for a `P15`-prefix receipt now owes a `CR_cosmology.pdf` rebuild, and the same holds for every prefix whose paper reads a generated appendix. **A seat in a container without texlive cannot land a receipt at all under that rule, and nothing told it so before the gate fired.*** ⌊ ⇒ *This is the `lake` shape from `r7265` arriving in a second toolchain: **a gate that is correct, a claim that is real, and a capability the containers do not uniformly have.** `70`'s gate and `70`'s call — but the cost falls on every seat, so it wants an adjudication rather than a per-seat workaround. ⌗ *What I would propose, and it is not my gate to change: let the PR-tier gate check only that the PDF is not older than the paper's own SOURCE, and leave the generated-appendix arm to the `main`-tier job that has `texlive` — or give the `compile` tier a PR trigger. Either keeps the finding and stops it blocking seats that cannot compile.*
+⌈ ⛔⛔ ***AND THEN I CHECKED WHETHER THE WALL WAS A WALL, AND IT WAS NOT. THE PDF IS BUILT AND THE GATE IS GREEN.*** *`apt-get install texlive-latex-*` reaches the proxy from this container and installs **`pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)` — byte-for-byte the engine named in the committed PDF's own `/PTEX.Fullbanner`**, so the rebuild comes off the same instrument as the file it replaces rather than a different one. Compiled twice from `corpus/` as the gate's own remedy says: `305` pages before and after, no undefined references and no rerun warning on the second pass, `+10{,}025` bytes — the `C72` appendix row and nothing else. `check_pages_current` green with it, so no served page was owed. **`18` papers, `0` with a PDF older than its source.***
+
+⌊ ⇒ ⛔ ***SO THE THING TO TAKE FROM THIS IS MY ERROR AND NOT THE GATE: I READ `the tool is not here` AS `the tool cannot be here`, AND ROUTED YOU A STRUCTURAL FINDING ON THAT READING.*** *I ran `command -v` over six engines, found none, read the `compile` tier's `main`-only trigger, and concluded a capability was absent — **without once trying to install it.** That is the same shape as reporting a file where a phrase was absent as the file that caused a break: I stated what I had measured as though it were what was the case. ⌗ *The `lake` precedent is what made it feel safe, and `lake` is genuinely not installable here while `texlive` is — so the precedent is what let me stop looking.*
+
+⌈ ⌗ *What I would still route, much weaker and offered rather than urged: **a seat that does not know the toolchain is installable will read that red as a wall, exactly as I did**, and the gate's own message says `compile it` without saying `install texlive first`. One line in the gate's remedy text would have saved this cycle's detour. `70`'s gate and `70`'s call, and the cost is a sentence rather than an adjudication.* ⌊ *The structural claim I made above — that the gate makes a toolchain a prerequisite for landing a receipt in a paper's prefix — **is withdrawn as a blocker and stands only as that documentation gap.***
+
+### ⛔⛭⛭ AND A FOURTH GATE WENT RED IN CI THAT IS GREEN WHEN RUN BY HAND — `60`'s `P03` `Ⓗ②`, AND THE DEFECT IS THAT ITS OWN `r7245` REPAIR IS INERT IN THE ONLY JOB THAT RUNS IT
+
+***`scoped — the runner-read sweep` failed on `dffdcb32` with `60`'s `P03_the_enclosed_mass_is_monotone…`, gate `Ⓗ②`, reading `7 modified unowned receipt(s)` where it asserts ZERO. The same receipt run directly, on the same head, reads `0` and PASSES. I have reproduced BOTH readings and the mechanism is exact.***
+
+⇒ ⛔ ***THE GATE'S SESSION FILTER — the `r7245` repair added precisely to stop it reading another seat's work as `60`'s own — CANNOT RESOLVE ITSELF UNDER THE SWEEP, AND ITS `cannot determine` BRANCH FAILS OPEN.***
+
+  * `sweep_runner_reads.py` runs each receipt with `cwd` set to the receipt's **own directory** and `__file__` as a **bare filename**;
+  * the receipt then asks `git log --diff-filter=A --format=%B -- <__file__>` with `cwd=ROOT`, and a bare filename matches **nothing** from the repository root, so `_own_sess` comes back `None`;
+  * and the next line is `if _own_sess is None or (_m and _m.group(1) == _own_sess)` — ***so `None` ACCEPTS EVERY COMMIT IN `HEAD --not origin/main`***, which on my branch is my three commits;
+  * of the `12` receipts my `r7267` batch modified, `7` fail `_owned`'s revision-parity test, and `7` is exactly what the gate printed.
+
+⌈ ✔ ***MEASURED THREE WAYS before I wrote a word of this: `rc=0` at `origin/main` (where the range is EMPTY, so the open filter has nothing to accept); `rc=0` on my own head run directly (`0` unowned, because `__file__` resolves and the filter does its job); `rc=1` on my own head through `scripts/sweep_runner_reads.py` (`7` unowned, `Ⓗ②` FAIL) — the CI reading, reproduced locally.***
+
+⌊ ⇒ ⛭⛭ ***AND THE SHAPE IS THE ONE `P03`'s OWN SECTION H IS ABOUT, ARRIVING A FOURTH TIME AND FROM A NEW SIDE.*** *`S5`'s list of two prefixes was a gate on a set its own seat could grow; `r7245` found it was a gate on a set every other seat could grow; `r7266` found an ORDER could widen the scope. **This one is a gate whose repair is correct and never executes — because the job that runs it changes the one thing the repair reads.** A snapshot, a range and an authorisation have each been caught; this is the INVOCATION.*
+
+⚠ ***NOT REPAIRED BY ME, AND DELIBERATELY: it is `60`'s receipt, and the rule it encodes is ownership. Editing another seat's receipt to clear my own red would be the exact act the gate exists to catch.*** *The patch is two lines in `P03`, and I would rather `60` took it:*
+
+```python
+_rel = os.path.relpath(os.path.abspath(__file__), ROOT)        # resolve the path before asking git
+_own_sess = _SESS.search(_git('log', '--diff-filter=A', '--format=%B', '--', _rel))
+...
+if _own_sess is None:
+    _MINE_C = []          # cannot establish WHOSE commits these are -> assert nothing, fail CLOSED
+```
+
+*The first line fixes this instance. **The second is the one that matters: a filter that cannot identify its subject must assert nothing rather than assert about everyone**, and as written it does the opposite.* ⌗ *My branch is otherwise unaffected — no number in `C72` or the census touches this — and the red will clear on `60`'s push without anything from me.*
 
 ### ⌗ WHERE I AM
 
-***① `19` of `59` landed, `40` remain, the `12` `EXTEND` behind them. ② untouched. ③ held until ① and ② are done, with `L174` and `L203` claimed.*** *`r7243` stands; nothing in the acoustic sector surfaced.* ⚠ ***One red going in, named above and not mine to clear here: `check_pdf_current` on `CR_cosmology.pdf`.***
+***① `19` of `59` landed, `40` remain, the `12` `EXTEND` behind them. ② untouched. ③ held until ① and ② are done, with `L174` and `L203` claimed.*** *`r7243` stands; nothing in the acoustic sector surfaced.* ✔ ***The `check_pdf_current` red is discharged, not routed.*** ⚠ ***One red going in that is not mine to clear: `60`'s `P03` `Ⓗ②` in the runner-read sweep, with the mechanism measured three ways above and a two-line patch offered.***
 
 ⌗ ⚠ *And I take the correction in your order change without argument: **the `85` and the `108` do not reduce the `846` by one key, and I had not checked whether they would.** I measured a backlog and worked it; I did not ask what the number everybody is watching would do. That is the same error as reporting a file as a cause — reporting what I measured as though it were what was wanted.*
