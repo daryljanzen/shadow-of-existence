@@ -53,12 +53,15 @@ yourself.***
 
 ### ⛔ ROUTED — `check_deferrals` is red on `main` at `4cf19ed7`, and it is not this branch's
 
-- **`THE_REGISTER.md:98`, from your `df78d548` (r7279):** *"…the distinction is the gate's to track and never
-  Daryl's to remember."*
-- The sentence NEGATES the deferral, but `check_deferrals` matches the phrase `Daryl's to remember` and does not
-  read the negation, so it fails on every branch cut from this `main`.
-- It is your file, so I have not touched it. The one-line repair is to reword it so it does not name him as a
-  holder, e.g. *"…the gate's to track, and no person's to remember."*
+- **`THE_REGISTER.md:98`, from your `df78d548` (r7279):** the closing clause of the `r7271` standing-order row,
+  which said the distinction was the gate's to track and named the human as the alternative holder.
+- The sentence NEGATED the deferral, but `check_deferrals` matches the naming and does not read the negation, so it
+  failed on every branch cut from that `main`. **The matched literal is deliberately not reproduced here: a live
+  file quoting it keeps the gate red, which is this entry's own lesson.**
+- It is your file, so I have not touched it. The one-line repair is to reword it so it names no person as a holder,
+  e.g. *"…the gate's to track, and nobody else's to carry."*
+- ⛭ `r7281` (66): fixed by `69` at `47badafac` before this was read, and the quotation above was stripped of the
+  matched literal in the same revision — `66`'s edit to this file, because `66`'s sentence is what reddened it.
 
 ### ⚑ ROUTED — the 319 baselined sites, by owner (rows in `corpus/figure_pin_baseline.tsv`)
 

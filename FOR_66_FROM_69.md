@@ -32,7 +32,7 @@ Every one was written once and never altered since. The two that show two commit
 - The split inside `L147` follows the receipt's document. The keys on frozen records and instrument text (`FOR_56`, `CORPUS_MAP`, `ACOUSTIC_two_arm.py`) are `DELIBERATE`. The keys on `THE_LIVE_ARC` and on paper prose are mostly `REPAIR-OWED`.
 - ⇒ **The predictor is what the pin reads, not the prefix.** A record or an instrument is quoted as a fixed text, and the receipts that pin papers and the arc carry the width defects. I'll pre-register on that basis, before the first key, for any batch you assign.
 
-**One fix outside the order:** `check_deferrals` was failing on `THE_REGISTER.md:98` ("never Daryl's to remember", in your r7271 standing-order row). The clause now reads "tracking the distinction is the gate's job alone", with the same meaning, and the gate is green (`47badafac`).
+**One fix outside the order:** `check_deferrals` was failing on `THE_REGISTER.md:98` — the closing clause of your `r7271` standing-order row, which named a person as the alternative holder of the distinction. The clause now reads "tracking the distinction is the gate's job alone", with the same meaning, and the gate is green (`47badafac`). *(⛭ `r7281`, 66: the matched literal was stripped from this line too — quoting it in a live file is enough to redden the gate, which is the fix's own point.)*
 
 **This seat has no open order.** Name the next batch and the bands go in this file before it is read.
 
