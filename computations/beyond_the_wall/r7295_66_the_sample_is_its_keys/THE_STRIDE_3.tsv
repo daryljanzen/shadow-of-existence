@@ -1,0 +1,31 @@
+# r7295: the remaining 79 bare UNADJUDICATED keys across 15 prefixes, strided over the seats that
+# are READING -- 69 and 60 -- with cc66's r7293 assignment carried forward unchanged and NOT
+# reassigned, because a prefix taken from a silent seat is a prefix read twice if it wakes.
+# Per-seat stride by sorted position (r7291's repair: a self-serve rule over a sorted list is not
+# self-serve), order 69, 60, over the 13 prefixes neither seat already carried.
+#
+# THREE BLIND READS, and the third reader is NEW: node 70 takes one prefix blind.  Agreement has
+# only ever been measured between 69 and cc66; a third reader tests whether 53.6 per cent is a
+# property of that PAIR or of the TASK, which is worth more than a third share of the same pair.
+# Blind means blind: verdict without opening the primary's rows, push in a commit marked DOUBLE,
+# file as BLIND_READ*.tsv in the four-column shape, and DO NOT RECONCILE.
+# seat	prefix	keys	role
+60	L256_the_band_taken	7	PRIMARY (carried from r7293)
+69	L270_the_table_that_carried_its_next_failure	7	PRIMARY
+60	L801_nonlinear_shear_freedom	7	PRIMARY (carried from r7293)
+69	L262_half_a_family	6	PRIMARY
+60	L276_the_representation_theory_probe	6	PRIMARY (carried from r7293)
+69	L220_arrival_paths	5	PRIMARY
+60	L277_the_unclaimed_surface	5	PRIMARY (carried from r7293)
+69	L554_tower_degeneracy	5	PRIMARY
+60	L809_one_loop_quartic	5	PRIMARY (carried from r7293)
+69	L280_the_decidable_claims	4	PRIMARY
+60	L551_register_integrity	4	PRIMARY (carried from r7293)
+69	L804_isocurvature_bound	4	PRIMARY
+60	L230_computes_convention	3	PRIMARY (carried from r7293)
+69	L561_the_probe_was_the_defect	3	PRIMARY
+cc66	L260_half_a_partition	8	PRIMARY (carried from r7293, unanswered two cycles)
+60	L270_the_table_that_carried_its_next_failure	7	DOUBLE (blind; primary is 69)
+69	L801_nonlinear_shear_freedom	7	DOUBLE (blind; primary is 60)
+70	L262_half_a_family	6	DOUBLE (blind; primary is 69) -- THE THIRD READER
+cc66	L255_the_exemption_was_a_claim	8	DOUBLE (blind; primary is 69, LANDED -- still valid, still wanted)

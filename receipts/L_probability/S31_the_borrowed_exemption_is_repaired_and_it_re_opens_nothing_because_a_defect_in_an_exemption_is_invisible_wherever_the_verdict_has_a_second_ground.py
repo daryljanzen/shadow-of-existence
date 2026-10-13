@@ -95,6 +95,13 @@ def gate(label, ok):
 
 BEFORE = '4b130bdf'   # origin/main at r7289 -- the module as it stood before this repair
 PREG = '5c72d3f0'     # the commit that PUSHED the pre-registration, before the repair was written
+AFTER = 'da1db4734'   # the commit that LANDED this repair (r7294).  ⌗ repaired at r7295 by node 66,
+#                       whose merge of the verdicts that landed between PREG and here is the edit that
+#                       broke Ⓒ② and Ⓔ②: both read a LIVE end -- the ledger from the working tree and a
+#                       diff against it -- so each new verdict grew the census the gates had counted.
+#                       The claims are about what THIS repair did, and that is `PREG..AFTER`, a closed
+#                       range.  PO-78's 71st member, for the fifth time: a property stated over a live
+#                       range is still a form, and the range is the thing to pin.
 BASE = 'corpus/quote_pin_baseline.tsv'
 PRED = 'computations/beyond_the_wall/r7294_60_the_borrowed_exemption/PREDICTION.md'
 MOD = 'computations/beyond_the_wall/r7260_60_land_and_verdict/dangling_predicate_v2.py'
@@ -234,7 +241,8 @@ gate(f'Ⓑ③ ✔⛭⛭ and the conditions are written ONCE, shown by BEHAVIOUR 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓒ  THE MEASURED BLAST RADIUS: FOUR ROWS TOUCHED, NO VERDICT CHANGED ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_rows = [c for c in rows_of(read(BASE)) if not c[5].startswith('UNADJUDICATED')]
+_rows = [c for c in rows_of(_git('show', AFTER + ':' + BASE))
+         if not c[5].startswith('UNADJUDICATED')]
 _newly = []
 for _c in _rows:
     try:
@@ -355,8 +363,7 @@ gate(f'Ⓔ① ⛭⛭ the one correction that is this seat\'s own: `{len(_mine)}`
      f're-stated by APPEND, keeping the original stamp as `r7253` requires',
      len(_mine) == 1)
 
-_touched = sorted({f for f in (_git('diff', '--name-only', PREG) + '\n'
-                               + _git('ls-files', '--others', '--exclude-standard')).split('\n') if f})
+_touched = sorted({f for f in _git('diff', '--name-only', PREG, AFTER).split('\n') if f})
 _rcpt = [f for f in _touched if f.startswith('receipts/') and f.endswith('.py')]
 _foreign = [f for f in _rcpt if not f.endswith(os.path.basename(__file__))]
 print(f'      touched {len(_touched)} file(s), {len(_rcpt)} of them receipts, {len(_foreign)} of '

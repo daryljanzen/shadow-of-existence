@@ -1,7 +1,7 @@
 ---
 name: the-weave
 kind: REFERENCE
-current: r7293
+current: r7296
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
@@ -30,7 +30,7 @@ single paper does is a JOIN, so the weave grain is where two of these belong.**
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7293
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7296
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
