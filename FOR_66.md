@@ -13889,7 +13889,7 @@ or re.search(r"Atiyah--Hirzebruch[^.]{0,160}?isometry", t)
 
 ⇒ ⛔ ***`pdflatex`, `xelatex`, `lualatex`, `latexmk`, `tectonic` and `pdftex` are ALL ABSENT from this container, and CI's `compile` tier installs `texlive-full` only on `main` or the nightly schedule — never on a PR.*** *So I am pushing this one RED with the reason named, rather than reverting the appendix: **reverting it would trade this red for a worse one**, an appendix that disagrees with the ledger it is generated from, and the generator `--check` in the `fast` job would catch that instead.*
 
-⌈ ⛔⛔ ***AND THEN I CHECKED WHETHER THE WALL WAS A WALL, AND IT WAS NOT. THE PDF IS BUILT AND THE GATE IS GREEN.*** *`apt-get install texlive-latex-*` reaches the proxy from this container and installs **`pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)` — byte-for-byte the engine named in the committed PDF's own `/PTEX.Fullbanner`**, so the rebuild comes off the same instrument as the file it replaces rather than a different one. Compiled twice from `corpus/` as the gate's own remedy says: `305` pages before and after, no undefined references and no rerun warning on the second pass, `+10{,}025` bytes — the `C72` appendix row and nothing else. `check_pages_current` green with it, so no served page was owed. **`18` papers, `0` with a PDF older than its source.***
+⌈ ⛔⛔ ***AND THEN I CHECKED WHETHER THE WALL WAS A WALL, AND IT WAS NOT. THE PDF BUILDS HERE AND THE GATE GOES GREEN.*** ⌗ ***`r7275` SAYS YOU REBUILT IT ON THE TRUNK YOURSELF, SO MY REBUILD IS DROPPED RATHER THAN PUSHED: the appendix is byte-identical on both sides and two seats committing different builds of one source is noise. What the local build was worth is the measurement below, not the artefact.*** *`apt-get install texlive-latex-*` reaches the proxy from this container and installs **`pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)` — byte-for-byte the engine named in the committed PDF's own `/PTEX.Fullbanner`**, so the rebuild comes off the same instrument as the file it replaces rather than a different one. Compiled twice from `corpus/` as the gate's own remedy says: `305` pages before and after, no undefined references and no rerun warning on the second pass, `+10{,}025` bytes — the `C72` appendix row and nothing else. `check_pages_current` green with it, so no served page was owed. **`18` papers, `0` with a PDF older than its source.***
 
 ⌊ ⇒ ⛔ ***SO THE THING TO TAKE FROM THIS IS MY ERROR AND NOT THE GATE: I READ `the tool is not here` AS `the tool cannot be here`, AND ROUTED YOU A STRUCTURAL FINDING ON THAT READING.*** *I ran `command -v` over six engines, found none, read the `compile` tier's `main`-only trigger, and concluded a capability was absent — **without once trying to install it.** That is the same shape as reporting a file where a phrase was absent as the file that caused a break: I stated what I had measured as though it were what was the case. ⌗ *The `lake` precedent is what made it feel safe, and `lake` is genuinely not installable here while `texlive` is — so the precedent is what let me stop looking.*
 
@@ -13927,3 +13927,29 @@ if _own_sess is None:
 ***① `19` of `59` landed, `40` remain, the `12` `EXTEND` behind them. ② untouched. ③ held until ① and ② are done, with `L174` and `L203` claimed.*** *`r7243` stands; nothing in the acoustic sector surfaced.* ✔ ***The `check_pdf_current` red is discharged, not routed.*** ⚠ ***One red going in that is not mine to clear: `60`'s `P03` `Ⓗ②` in the runner-read sweep, with the mechanism measured three ways above and a two-line patch offered.***
 
 ⌗ ⚠ *And I take the correction in your order change without argument: **the `85` and the `108` do not reduce the `846` by one key, and I had not checked whether they would.** I measured a backlog and worked it; I did not ask what the number everybody is watching would do. That is the same error as reporting a file as a cause — reporting what I measured as though it were what was wanted.*
+
+---
+
+## ✔⛭⛭ `r7275+cc66.1` — **THE STANDING ORDER IS TAKEN AND IT NAMES WHAT I DID WRONG ALL CYCLE. ⌗ MY PDF REBUILD IS DROPPED BECAUSE YOU DID IT, AND ONE ITEM I ROUTED AFTER YOU WROTE `r7275` IS STILL LIVE**
+
+*`r7275` read in full off `origin/main` at `1b5193e4`. `a241bdb3` and `dffdcb32` are merged; `#356` closed with them, so this is a new PR.*
+
+### ⛔ FIRST, THE STANDING ORDER `r7271`, AND IT IS A DESCRIPTION OF MY OWN CYCLE
+
+***`CI is the suite and is READ, not duplicated`; `nothing long runs in the chat container`; `land in pieces and push whenever a piece is green`; `redundant is not the same as rigorous, and what the waiting was buying was not quality`.***
+
+⇒ ⛔ ***I ran the `123`-gate suite FOUR TIMES this cycle, roughly forty minutes each, and held every push behind it.*** *Three of the four told me nothing `CI` had not already said: `CI`'s own `fast` job on `dffdcb32` named exactly one failing gate, and that is the same list my local run walks. **The one defect my local runs caught that `CI` had not yet reported — `check_unread_figure` on a label — would have been caught by running the four gates that read what I had touched, in under a minute.*** ⌈ *So the clause lands on measured fact and not on preference, and I am taking it in the form it is written: from here the local run is the gates that read what I touched, `CI` is the suite, and a green piece is pushed when it is green.* ⌊ ⌗ *And the `846` → `810` → `892` three-column correction is taken; I will work against `892` with `landed`/`remaining` first in every reply from order ③ onward.*
+
+### ⌗ THE PDF: DROPPED, BECAUSE YOU BUILT IT
+
+***`r7275`: `I rebuilt CR_cosmology.pdf, which your C72 appendix row made stale`. So my own rebuild is dropped and not pushed*** — the appendix is byte-identical on both sides and two seats committing different builds of one source is noise. **What the local build was worth is the measurement, and it stands: the toolchain installs here and it is the SAME `pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)` the committed PDF names in its own `/PTEX.Fullbanner`.** The correction to my own report — that I read `the tool is not here` as `the tool cannot be here` without trying the install — is above and stays there.
+
+### ⚠ AND ONE ROUTED ITEM POSTDATES `r7275`, SO RULING ④ COULD NOT HAVE COVERED IT
+
+***`60`'s `P03_the_enclosed_mass_is_monotone…` `Ⓗ②` — the fourth gate red of my cycle, measured three ways, and the defect is that its `r7245` session filter is INERT in the only job that runs it.*** *Section above carries the mechanism and the two-line patch. **It is the fifth item for your ruling ④ table and I routed it after you had written `r7275`**, so nothing is owed on the timing — it is simply still open.*
+
+⌗ *`r7243` stands; nothing in the acoustic sector surfaced.*
+
+### ⌗ WHERE I AM, AND THE PIECES
+
+***① `19` of `59` landed, `40` remain — batch two (`13` rows, to `32` of `59`) is next and starts now. ② the `108` behind it. Then your order ② — the zero-mode function, with the measure ruled: proper transverse distance `dμ = √|g_{rr}| dr` AND the flat `dr` count, both reported, and a stop at one cycle.*** *Landing in pieces from here: this reply is a piece, batch two will be its own.*
