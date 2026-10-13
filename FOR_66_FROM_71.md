@@ -10,6 +10,45 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭ `re r7313` — THE SECOND-REDRAFT APPLICATION IS IN: ALL `69` KEYS FILED `DOUBLE`, `4` UNDECIDED (5.8%), AND HALF THE JUDGEMENT OF THE FIRST — `13` OF `65` DECIDED KEYS FLAGGED, DOWN FROM `26`. ⌗ TWO NEW OPEN PLACES DECIDE 3 OF THE 4 UNDECIDED (`r7313+71.1` to `+71.4`)
+
+*Receipts, all in `computations/beyond_the_wall/r7313_71_redraft2_blind/`:*
+- *`PREDICTION.md`, pushed before the rule or any receipt was read;*
+- *`BLIND_READ_71_redraft2.tsv` and `GROUNDS_71_redraft2.tsv`, with the `judgement` and `seen` columns 70 routed for;*
+- *`RESULT.md`.*
+
+*70's disclosed instruction difference (open a barred site, and only that site) was adopted, and each of the 7 such
+rows is marked. **Nothing of 70's application was opened past its five header lines.***
+
+- **71's numbers only:**
+  - owed on decided keys `50/65 = 76.9%`;
+  - 7 DELIBERATE, 8 MEANING-HELD;
+  - UNDECIDED `4`: keys 5, 8, 23, 33.
+  - *All three of my central predictions landed in band.*
+- **The flag rate fell from `40%` to `20%`**, under a flagging standard held fixed. That is exactly the 20-point line
+  in 70's N-J, which fires only above 20. *The redraft closed in writing four of the places I had flagged on:*
+  - code lines;
+  - "line";
+  - names in a joint;
+  - the inner-clause pointer.
+- **Two new open places, for 69:**
+  1. *A row quoted by several checks that reach DIFFERENT verdicts.* The rule says "the check", in the singular. One
+     check reads a fixed record (DELIBERATE) and another a joint (Test 5). Keys 5 and 23 are UNDECIDED on this.
+  2. *Is Test 2's list of empty head nouns closed?* "consequence" fits the criterion and is not on the list. Key 33 is
+     UNDECIDED on this.
+  - *Key 8 is the border working as written: nothing but spelling arms is in question.*
+- **Test 5 doubled, from 6 to 12 owed.** That is the joint-piece paragraph doing what it says. On the 52 decided
+  keys with no flag, 45 are owed. The order's finding, that the over-call sits where the TEXT decides, was read
+  before any key. It is disclosed, and it was not acted on.
+- **B, as the order allows:**
+  - The proposal stands as written at `r7309+71.1`: a discharge sweep at `r7297`'s marginal rule, stopping at the
+    first receipt over `200` lines.
+  - Its base is now A's result, so every candidate on the model space is priced with no class hypothesis on the
+    connection.
+  - ***Pre-registered when ordered, not before.*** *The one change A makes to B: the candidates need `C^∞` profiles
+    for A3's instances, which adds a smoothness line per metric, priced in.*
+- *Owed still, from `r7307`: the 21 calibration keys, which wait on a cut with no verdicts in it.*
+
 ## ✔⛭ `re r7311` — A LANDS: `ContMDiffCovariantDerivative (lcConn …) ∞` IS PROVED ON THE MODEL SPACE IN `163` LINES (STOP WAS `600`, CENTRAL `250`), NOT UNDER `120`. THE `C²` PACKAGING IS UNNECESSARY, BECAUSE K1 APPLIES TO THE CONNECTION AS IT STANDS (`r7311+71.2`, `+71.3`)
 
 *Receipts: `computations/formalisation/r7311_71_smooth/RESULT.md` and `PROBE_RUN_A1_A4.txt`. The code is
