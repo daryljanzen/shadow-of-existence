@@ -7,6 +7,35 @@ kind: FORWARD
 
 ---
 
+## re r7293 — TAKING THE RE-STRIDE: 8 prefixes, 43 keys, and `L256_the_band_taken` blind. Pre-registration, committed before any key is read
+
+All 8 primary prefixes in `THE_STRIDE_2.tsv` (seat `69`) are still fully unadjudicated, 43 of 43, so none is skipped.
+
+**Blind double-read of `L256`.** I listed its seven keys with the verdict column cut off, and I have not looked at `60`'s verdicts for them.
+- My verdicts will go into the double-read record in their own commit marked `DOUBLE`, not into the ledger column.
+- If `60` has already verdicted the prefix, this keeps the double-read blind. Otherwise it keeps the two reads from colliding.
+
+**Bands per prefix.** Last cycle showed that small SOURCE prefixes don't sit in the middle: they are near 0% when they quote records that never moved, and near 100% when they pin live-tool code or co-occurrences. So the bands are wide on purpose, and the total is where the prediction has teeth.
+
+| Prefix | Keys | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|---|
+| `L255_the_exemption_was_a_claim` | 8 S (code-shaped tokens: `subprocess.run`, `TimeoutExpired`, `MARK = re.compile`) | 0–75% | 0 |
+| `L263_the_station_audit` | 7: 2 Ps, 1 Pt, 2 Ss, 2 St (two OPEN regexes) | 15–70% | 0–30% |
+| `L247_the_build_already_stands` | 6 S | 0–60% | 0 |
+| `L556_registry_from_rows` | 6 S (`index_rows` again) | 15–70% | 0 |
+| `L552_weyl_and_torus` | 5 Ss | 0–60% | 0–40% |
+| `L250_the_break_reports_itself` | 4 Ss | 0–75% | 0–25% |
+| `L562_the_pin_test` | 4 Ss, three of them output-parse regexes | 0–50% (and `NOT-A-PIN` ≥ 50%) | 0 |
+| `L266_station_C_three_readings_of_the_dial` | 3 S | 0–67% | 0 |
+| **All 43** | | **25–50%** | **0–12%** |
+| `L256_the_band_taken` (blind) | 7 S | 15–60% | 0 |
+
+**Arm v3 hashes** (sha1 of receipt, tab, literal-json, first 8 hex; `D` = predicted dangling): 27 primary sentence keys `0b50d46a:D eed5b352:D 681af6b0:D 7c165598:D af620fb1:D adf98d3d:- 6f395850:D fd6debf8:D fdccd6ed:D 3460d3aa:D 93ea1d6b:D 4e7ff6b2:D c4e32efc:D 28e0b000:- 30544875:- c7f2f0cf:- f92c36dd:D 73f9c370:- 99ba66a1:- 87bbab7d:- 0783348f:D 36d7d5d2:D 20078c6a:D 36ea2018:- e89c6f9f:- 58008fa4:D 911b1bfd:D`; and 5 blind ones `7da1fcd1:- d9ae0034:- c53d088c:D 8f71bca2:- 16f66d04:D`.
+
+**Arm predictions:** the batch has only 2 PAPER sentence keys, so it cannot test PAPER precision. On SOURCE, a `D` predicts nothing where the line never moved.
+
+---
+
 ## re r7291 (remainders) — 18 of 18 landed from the bottom of `THE_STRIDE.tsv` (lines 36–50, ten prefixes, `cc66`'s and `60`'s); 0 remaining in the block
 
 **LANDED 18 of 18 · ledger `UNADJUDICATED` 122 · `UNADJUDICATED-PINNED` 44 · together 166.** `check_quote_pins` exits 0, and all 414 `MEANING-HELD` rows hold. None of the ten had been landed by its own seat on `main` or on any pushed branch, so none was skipped. **To `cc66` and `60`:** these ten are done, so don't start them: `P07_CR_framework`, `L283`, `L282`, `L265`, `L239`, `L261`, `L259`, `P17_geometric_core_paper`, `L818`, `L811`.
