@@ -44,6 +44,7 @@ unaccounted: its scale is set by measurement, exactly as the inherited-datum sta
 Written r2460.  Stated for reversal.
 """
 import os, re
+import subprocess
 import sympy as sp
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -89,10 +90,25 @@ def main():
           'run the transfer chain backwards' in cap)
 
     # the three statements that are one fact
-    f54 = open(os.path.join(ROOT, 'FOR_54.md'), encoding='utf-8', errors='replace').read()
+    # ⛔⛭⛭⛭ r7280 (60), on r7279's ruling ③: THE LIVE READ OF A FROZEN FILE MEASURED NOTHING.
+    #   *`FOR_54.md` is a RETIRED node's forward file, last written 2026-09-19.  Nothing updates it,
+    #   so a live `in` test on it asserts a state nobody maintains: the pin would stay green
+    #   indefinitely and would fire on neither the progenitor route closing nor the file being
+    #   reworded.*  ⇒ *** And the day the route DOES close, a live pin on the sentence saying it is
+    #   open goes red ON THE WORK SUCCEEDING, which is the blindness family -- this key was verdicted
+    #   REPAIR-OWED at r7270 for exactly that, at two sites. ***
+    #   ⌊ *The fact the receipt wants is HISTORICAL -- the progenitor route was open when `A2`'s
+    #     result was routed -- so it is read AT THE COMMIT that introduced the sentence, and the live
+    #     arm is DROPPED rather than kept: `L-249`, and the discipline of this whole stretch.*
+    _F54_AT = 'ecb0aea4'       # the commit that introduced the sentence into FOR_54.md, 2026-08-12
+    _f54_ok = subprocess.run(['git', 'cat-file', '-e', _F54_AT + '^{commit}'],
+                             cwd=ROOT, capture_output=True).returncode == 0
+    f54 = subprocess.run(['git', 'show', f'{_F54_AT}:FOR_54.md'], cwd=ROOT,
+                         capture_output=True, text=True, errors='replace').stdout
     check('r2456: A_s is dimensionless, so the substrate cannot force it '
           '(routed as item 31)',
-          'The substrate route is closed; the progenitor route is open' in f54)
+          _f54_ok and bool(f54)
+          and 'The substrate route is closed; the progenitor route is open' in f54)
     p15 = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
                                    encoding='utf-8', errors='replace').read())
     check('and P15 treats the amplitude as measured against the substrate\'s floor, '
