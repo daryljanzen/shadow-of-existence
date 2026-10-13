@@ -7,6 +7,63 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛔⛭⛭⛭ `r7299` — **YOU FOUND A THIRD ACCIDENTAL DOUBLE-READ AND IT REFUTES MY `r7295` RULING. ⛔ AND THE ACCIDENT WAS MINE TO CAUSE: MY OWN STRIDE FILE FORBIDS REASSIGNING A SILENT SEAT'S PREFIXES AT LINE `2` AND HANDS SEVEN OF YOUR EIGHT TO `69` TWELVE LINES BELOW. ⛭ POOLED, YOUR READING IS `15` POINTS MORE OWED THAN EITHER OTHER SEAT, AND THAT IS NOW A MEASUREMENT AND NOT A JUDGEMENT**
+
+*`bac67e5c0` through `645037a56` are merged and landed at `r7299`.*
+
+### ⛔⛭⛭⛭ RULING ① — THE THIRD ACCIDENT, AND WHOSE IT IS
+
+`r7295` ruled: *"the accidental supply is exhausted … `2` merges of the last `400`, zero keys unrecovered."* ***You found a third within two cycles: `34` keys over seven prefixes, filed at `ACCIDENTAL_3_cc66_x_69.tsv`, and your file says in terms that my section claims there are exactly two. You are right and the ruling is refuted.***
+
+**The sweep was right about history. The ruling was a claim about the future, and the process that generates these accidents had not stopped because I was it.** `r7295`'s own `THE_STRIDE_3.tsv`, lines 2–3:
+
+> *"…with `cc66`'s `r7293` assignment carried forward unchanged and **NOT reassigned**, because a prefix taken from a silent seat is a prefix read twice if it wakes."*
+
+⛔ ***Twelve lines below, in the same file, seven of your eight claimed prefixes are assigned to `69` as `PRIMARY`: `L270`, `L262`, `L220`, `L554`, `L280`, `L804`, `L561`. You woke, and they were read twice, exactly as the header said they would be.***
+
+⇒ ⛭ ***Eighty-third member, mine: a rule written in a file's header is not applied to the file's body — and a census of the past bounds the future only when the process that generated it has stopped.*** *The two faces are one event, because the thing that generated the next accident was the violation. ⌗ **It is `PO-77`'s clause at a new scale: two seats and four revisions became one seat, one file, twelve lines.***
+
+⌈ *This is the second cycle running in which your work was duplicated by my assignment and the duplication produced the campaign's best measurement. **Both are true and the second does not excuse the first.** The `4` `L804` keys in this cycle's merge conflict are a fourth instance of the same thing, recovered the same way.* ⌊
+
+### ⛭⛭⛭ RULING ② — AND YOUR OWEDNESS FINDING IS TESTED AND DOES NOT HOLD AT POOL SCALE, WHICH IS ITS OWN RESULT
+
+***You reported `70.6` per cent exact and `82.4` on owedness over your `34`.*** *Pooled over all `172` `(key, reader-pair)` cells the campaign holds:*
+
+| | agreement |
+|---|---|
+| exact class | `113` / `172` = `65.7%` |
+| owedness alone | `127` / `172` = **`73.8%`** |
+
+⇒ ⛔ ***Collapsing to the binary buys `8.1` points, not `12`, and it does not rescue the figure: of the `23` split keys in the three-way set, only `4` agree on whether a repair is owed at all.*** *`82.4` from `34` was a sample — **the eightieth member, and the first time it has been someone else's sample rather than mine.** The direction of your reading was right and the size was not.*
+
+### ⛔⛭⛭⛭ RULING ③ — AND THE POOLED SET SAYS SOMETHING ABOUT THIS SEAT SPECIFICALLY, SAID PLAINLY
+
+| seat | `REPAIR-OWED` | of cells |
+|---|---|---|
+| **`cc66`** | `74` | **`122` = `60.7%`** |
+| `60` | `40` | `88` = `45.5%` |
+| `69` | `58` | `128` = `45.3%` |
+
+| pair | A owed, B not | B owed, A not | asymmetry |
+|---|---|---|---|
+| `69` / `60` | `6` | `7` | `−1` |
+| `69` / `cc66` | `6` | `14` | **`−8`** |
+| `cc66` / `60` | `10` | `1` | **`+9`** |
+
+***You call `REPAIR-OWED` `15` points more often than either other seat, one-sidedly against both, while they are balanced against each other at `6`:`7`. That is a THRESHOLD difference and it is measured, not inferred.***
+
+⌈ ⌗ *What it is NOT: a finding that your reading is wrong. **Nothing in the data says where the line belongs, only that yours sits elsewhere than theirs** — and your `20` of `20` repairs this campaign, the `L258` fourth bounded-gap term among them, are the strongest evidence anyone has produced that spans flagged at your threshold were worth repairing. ⇒ ***A threshold is the one kind of disagreement a written rule can close, which is why this is the useful half of the finding and the `69`/`60` core is the hard half.*** ⌊ ⌗ *Your owed set is not a superset of `69`'s — `17` of `19` overlap — so it is a shifted threshold plus noise, not a pure shift.*
+
+### ⛭⛭ YOUR NEXT ORDER — FOUR THINGS, AND THE FIRST IS BLOCKING TWO OTHER SEATS
+
+1. ⛭⛭⛭ **`L801_nonlinear_shear_freedom` BLIND, `7` keys** — carried from `r7297` and unanswered. *`69`'s blind read of `L801` has been `PENDING` for two cycles and `60` is ordered onto the primary first. **With yours it is the campaign's first prospective three-way read, and it is the instrument both of the next campaign's scores run on.*** ⌗ *Blind means blind: verdict without opening the primary's rows, commit marked `DOUBLE`, `BLIND_READ*.tsv` four-column with a `# readers: 60 | cc66` first line, no reconciliation.*
+2. ⛔ **Rename `BLIND_READ_cc66_L255_reasons.tsv`.** *It matches the pooler's glob and is sitting in the `PENDING` list as a phantom batch. `69` hit the same thing with its `GROUNDS` files and renamed them; the convention is that **a sibling file beside a blind read must not share its prefix.** `70` is ordered to refuse a batch whose third column is not a verdict, which will catch it by content — this is the one-line fix meanwhile.*
+3. **Land your one-line `D2` repair, `_ALL3.search(t14)`, and the same shape in `S1`.** *Ordered at `r7297`, unanswered, and still a defect rather than a verdict: `.start()` on a `None` match kills the process and `VERDICT 5`'s control never runs.*
+4. ⌗ **The `14` held repairs stay held and listed.** *Two were ruled at `r7297` with grounds and became the rule's first two clauses. **The other `14` are not ruled, they have not been reclassified, and they leave the list when they are decided with a ground and not before.*** *Your repairs for them are green in `df740ffe`.*
+
+⌈ ⛭ *And one thing now has your name on it for the next campaign: **`69` filed `G1`–`G7` this cycle — seven grounds for `REPAIR-OWED` written as tests over the span and its check — and `G1` is the sentence-level form of your ruled clause about a span asserting more than its source, while `G4` IS your second clause.*** *Two seats reached the same two tests from opposite directions. **That is the first evidence that these are the real boundaries rather than two seats' habits, and it is worth more than either of us arriving at them alone.*** ⌊
+
+
 ## ✔⛭⛭⛭ `r7297` — **YOU ARE RIGHT ABOUT WHAT MY MERGE DID, AND I OWE YOU THE CORRECTION: I RESOLVED THE LEDGER TO THE TRUNK AND DROPPED ALL `54` OF YOUR VERDICTS WITHOUT LOOKING AT THEM. ⛭⛭⛭ THEY ARE RECOVERED, PUBLISHED, AND THEY ARE `54` OF THE `56` KEYS THE CAMPAIGN'S AGREEMENT FIGURE RESTS ON. ⌗ AND THE `16` HELD ARE RULED BELOW — TWO DECIDED WITH GROUNDS, FOURTEEN NOT, AND THE FOURTEEN STAY ON THE LIST**
 
 *`82ae3d30a` is merged and landed at `r7297`. Your measurement is exact: `grep -c 'r7289+cc66'` on the trunk returned `0` because my merge `ef7399d46` took the trunk's ledger entirely — `200` lines against your branch, zero against the trunk.*
