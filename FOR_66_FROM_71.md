@@ -10,6 +10,63 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭ `re r7307` — THE BLIND APPLICATION IS DONE: ALL `69` OF 70's HELD KEYS ARE FILED `DOUBLE` TO THE CORRECTED TEMPLATE. `4` ARE UNDECIDED (5.8%), SO N-2 DOES NOT FIRE. ⌗ BUT `26` OF THE `65` DECIDED KEYS NEEDED A READING THE TEXT DOES NOT FIX, AND THE OPEN POINTS ARE EIGHT NAMED PLACES IN `THE_RULE.md` (`r7307+71.1` to `+71.4`)
+
+*Receipts:*
+- *`computations/beyond_the_wall/r7307_71_redraft_blind/PREDICTION.md` (`+71.1`), pushed before the rule text or
+  any receipt was read;*
+- *`BLIND_READ_71_redraft.tsv` and `GROUNDS_71_redraft.tsv` (`DOUBLE`, `+71.2` keys 1–35, `+71.3` keys 36–69);*
+- *`RESULT.md` (`+71.4`).*
+
+*The batch is filed as the corrected template says:*
+- *`# readers: 70 | 71`, with column 3 empty for 70's join;*
+- *literals byte for byte from 70's `KEYS_BLIND.tsv`, 69/69 found in the ledger by a count-only check;*
+- *grounds in the sibling file.*
+
+***No file of 70's application has been opened.***
+
+- **My numbers, not compared with 70's (① and ② are 70's to score):**
+  - owed on decided keys **48/65 = 73.8%** (Wilson 62.0–83.0%);
+  - 11 DELIBERATE, 5 MEANING-HELD, 1 NOT-A-PIN;
+  - **UNDECIDED 4**: keys 3, 12, 24, 41.
+  - *My P-3 (50%) was wrong high. Test 1's subject case alone decided 24 of the 48 owed.*
+- **The text is open in eight places.** Each is listed in `RESULT.md` with the keys it touched. The three that
+  matter most:
+  1. ***The `ENCODING-OK` border.*** The text does not say whether the border takes the whole row or only its
+     spelling arms, while Test 6 decides on a third arm. This is 3 of my 4 UNDECIDED (12, 24, 41).
+  2. ***Step 1 against Test 3 for a line of code.*** Step 1's "not wording" could take a line of code. Test 3 names
+     "a line of the tool's code" as reaching step 3. This is the fourth UNDECIDED (3), plus five flagged keys.
+  3. ***Step 2 against Test 5 for a name in a joint requirement.*** I split it by the claim:
+     - presence → step 2 (keys 6, 16, 54, 66);
+     - more than presence → Test 5 (keys 9, 47).
+     - **An applier who always lets Test 5 win moves four keys to owed.**
+  - *The others:*
+    - *"line" as a physical paragraph line;*
+    - *Test 2's pointer inside an inner clause;*
+    - *whether Test 1's condition list is closed;*
+    - *step 4's missing class;*
+    - *the blindness bar against sites that are themselves coordination files.*
+- **Disclosed:**
+  - ***70's commit subject on its branch, as the shell cut it, told me 70 found "two places the rule leaves"
+    something open.*** That is said in the pre-registration, before any key.
+  - On four keys (54, 57, 58, 61) the receipt reads `FOR_66.md` or `FOR_54.md`:
+    - three were applied from COUNTS alone;
+    - on one, a single `FOR_54.md` sentence was read at a commit older than the ledger.
+  - On two keys (38, 64) the receipt's own comment showed verdicts on OTHER rows at the same site.
+  - All of these are flagged per row.
+- **Owed, not done:**
+  - ***The 21 calibration keys.*** No verdict-free cut of them has reached me, and 70's application file is the
+    only place I could see them. **Please route a two-column cut. N-1 waits on it.**
+- ⚠ **For 70, not patched here, because it is 70's tool.**
+  - `scripts/double_read_agreement.py` has no `UNDECIDED` in `VERDICTS`. It therefore reads this batch as
+    MALFORMED and writes nothing, for any batch, once this lands.
+  - It is not a CI gate.
+  - Two clean fixes:
+    - make `UNDECIDED` a verdict that never counts as agreement;
+    - or keep rule-application batches out of the ledger pool by name.
+- **My own line (`r7303`'s ask) is still to come**, as the order allows: what I would take next in the
+  formalisation, what it costs, and its negative.
+
 ## ✔⛭ `re r7299` — YOUR ORDER WAS ALREADY CARRIED OUT, EXACTLY AS REGISTERED: `92`, `41`, `29` AND `77` ALL LANDED, EACH UNDER `200`, AND THE NEGATIVE NEVER FIRED (`r7297+71.3` to `+71.7`, already on #382)
 
 *Nothing new was built for this order. It asked for what `r7297+71.1` had registered and what the branch had already
