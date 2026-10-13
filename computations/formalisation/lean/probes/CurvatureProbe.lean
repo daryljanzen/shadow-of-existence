@@ -1,3 +1,4 @@
+import Mathlib.Analysis.Calculus.Deriv.Inv
 import Mathlib.Analysis.SpecialFunctions.ExpDeriv
 import Mathlib.Geometry.Manifold.MFDeriv.NormedSpace
 import Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Basic
@@ -832,6 +833,51 @@ theorem dsFlat_pull {α : ℝ} (hα : α ≠ 0) (p u v : ℝ × ℝ) :
 
 end DeSitter
 
+/-! ## `r7291`, Probe S3 — the extrinsic curvature of the slices `η = const` of `covConf a` -/
+
+section SliceK
+
+/-- The metric of `covConf a`: `a(η)² (−dη² + dx²)`. -/
+noncomputable def gConf (a : ℝ → ℝ) (p : ℝ × ℝ) :
+    TangentSpace 𝓘(ℝ, ℝ × ℝ) p →L[ℝ] TangentSpace 𝓘(ℝ, ℝ × ℝ) p →L[ℝ] ℝ :=
+  a p.1 ^ 2 • minkForm
+
+/-- The unit normal `a⁻¹ ∂_η` of the slices `η = const`. -/
+noncomputable def nConf (a : ℝ → ℝ) : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p :=
+  fun p => (((a p.1)⁻¹ : ℝ), (0 : ℝ))
+
+/-- `∂_x`, tangent to every slice. -/
+def dx : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p := fun _ => ((0 : ℝ), (1 : ℝ))
+
+/-- `N` is a unit timelike normal: `g(N, N) = −1`, `g(N, ∂_x) = 0`. -/
+lemma nConf_unit {a : ℝ → ℝ} {p : ℝ × ℝ} (ha : a p.1 ≠ 0) :
+    gConf a p (nConf a p) (nConf a p) = -1 ∧ gConf a p (nConf a p) (dx p) = 0 := by
+  show a p.1 ^ 2 * minkForm ((a p.1)⁻¹, 0) ((a p.1)⁻¹, 0) = -1
+    ∧ a p.1 ^ 2 * minkForm ((a p.1)⁻¹, 0) (0, 1) = 0
+  rw [minkForm_apply, minkForm_apply]
+  constructor
+  · field_simp; ring
+  · ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **S3.** The slices `η = const` of `a(η)²(−dη² + dx²)` have extrinsic curvature `K(∂_x, ∂_x) = a′(η)`. -/
+theorem sff_conf {a : ℝ → ℝ} {p : ℝ × ℝ} (ha : a p.1 ≠ 0) (hd : DifferentiableAt ℝ a p.1) :
+    sff (covConf a) (gConf a) (nConf a) dx dx p = deriv a p.1 := by
+  have hN := HasFDerivAt.prodMk
+    (HasDerivAt.comp_hasFDerivAt (f := Prod.fst) p (HasDerivAt.inv hd.hasDerivAt ha)
+      (hasFDerivAt_fst : HasFDerivAt (Prod.fst : ℝ × ℝ → ℝ) (ContinuousLinearMap.fst ℝ ℝ ℝ) p))
+    (hasFDerivAt_const (0 : ℝ) p)
+  have hD' : fderiv ℝ (fun q : ℝ × ℝ => ((a⁻¹ ∘ Prod.fst) q, (0 : ℝ))) p (0, 1) = 0 := by
+    rw [hN.fderiv]; simp
+  have hD : fderiv ℝ (nConf a : ℝ × ℝ → ℝ × ℝ) p (0, 1) = 0 := hD'
+  show a p.1 ^ 2 * minkForm (covConf a (nConf a) p (0, 1)) (0, 1) = deriv a p.1
+  rw [covConf_apply, hD, zero_add, Gam_apply, minkForm_apply, minkForm_apply]
+  simp only [nConf, phi', Prod.smul_fst, Prod.smul_snd, Prod.fst_add, Prod.snd_add, smul_eq_mul]
+  field_simp
+  ring
+
+end SliceK
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -860,3 +906,5 @@ end ShadowProbe
 #print axioms ShadowProbe.pullG_comp
 #print axioms ShadowProbe.dsFlat_on
 #print axioms ShadowProbe.dsFlat_pull
+#print axioms ShadowProbe.nConf_unit
+#print axioms ShadowProbe.sff_conf
