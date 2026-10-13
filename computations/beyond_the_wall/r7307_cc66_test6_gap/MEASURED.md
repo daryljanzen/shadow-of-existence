@@ -127,3 +127,65 @@ Nothing else in the rule changes. Tests 1–5 and 7, the four steps and the `ENC
 
 **Not scored, and not tuned.** `70`'s row-level result was not opened, and no key of the 47 was read. The
 redraft follows from the bound `96fc83f1` wrote and from the three rows above, not from which keys would move.
+
+---
+
+# Re-checked against the second redraft (`6bef6fd5`), as `r7313` ordered
+
+**The hole SURVIVES — and the second redraft made it sharper rather than closing it.** `sweep_and_ablate.py`
+now carries a `PART 4` that pins this to the rule's current text and fails if any of it moves.
+
+## What the second redraft changed, and what it did not
+
+| | |
+|---|---|
+| **added** | a routing step in step 2: *"When one check requires several quoted pieces, read its claim before step 2. If the claim says something about the pieces together … step 2 reaches none of them, and **Test 5 decides**."* |
+| **added** | the `states`/`says`/`prints`/`records` bound on step 2's third branch |
+| **widened** | Test 1's condition markers; Test 2 to *any* clause in the quotation and to possessives |
+| **added** | a step 4 bullet: a fragment that is neither a clause nor a name or value, **on a line that has changed**, is `REPAIR-OWED` at step 4 |
+| **UNCHANGED** | **Test 5 and Test 6, verbatim** |
+
+## The hole is now a routing dead-end, which is a different and better-specified defect
+
+The routing step **fires** on `L147_two_arm/B10:179`: the claim *"it says the two readings are not
+reconciled there, **and** claims the coincidence rather than a value"* says something about the pieces
+together. So step 2 reaches neither arm, and the rule sends them to **Test 5**.
+
+**Test 5 cannot receive them.** Its antecedent is still *"Two or more pieces are **required together** and
+nothing joins them"* — and **the ablation in `PART 1` is the proof that they are not required together:
+delete either arm and the check still passes.** The same measurement that shows the defect shows why the
+test the rule sends it to cannot decide it.
+
+⇒ So after the second redraft the three rows run: step 1 → a quotation; **step 2 → routed out, to Test 5**;
+Test 5 → antecedent false; Tests 1, 2, 3, 4, 6, 7 → all silent as measured above; **step 4**.
+
+And step 4 now splits the family, which is worth recording:
+
+- `the two readings are not reconciled here` and `What is claimed is the coincidence and not a value` are
+  complete clauses naming their own subjects ⇒ **`MEANING-HELD`**. (Step 4's new third bullet does not
+  reach them: they are clauses, and their lines never changed — count `1` at every commit.)
+- `21.8%` is a value ⇒ **`DELIBERATE`**.
+
+**Three ledger rows at `REPAIR-OWED`; the written rule now gives two `MEANING-HELD` and one `DELIBERATE`.**
+And the `DELIBERATE` is the sharpest part: **Test 5's own words say the repair is owed *"including a piece
+that would be a name or a value on its own"* — so if the routing had landed, `21.8%` would be owed. It is
+`DELIBERATE` only because the routing dead-ends.**
+
+## The minimal repair, revised — and the second redraft is why it is better
+
+`r7307` proposed a second limb on Test 6. **The second redraft makes a one-clause change to Test 5 the
+better repair**, because `69` has already built the hard half: the routing step identifies *"the claim says
+something about the pieces together"* correctly and sends it onward. **It is Test 5's antecedent that is too
+narrow to receive what the routing step hands it.**
+
+> **Test 5 — The claim speaks of the pieces together and the check does not require them that way.**
+> The check requires several quoted pieces in one file, and they could sit in unrelated paragraphs while the
+> check still passes; **or the claim needs all of them and the check accepts any one** — a disjunction cannot
+> carry a conjunction. The repair is owed on every piece, including a piece that would be a name or a value
+> on its own: half of a joint requirement does not carry the claim.
+
+One clause, inside the test the rule already routes to. Test 6 then needs no change at all, and keeps
+working on the six of nine ledger disjunction rows it already decides.
+
+**Still a ceiling, not a count:** the AST sweep reads `67` sites over `1,075` receipts (four more receipts
+than at `r7307`, same `67`). Three confirmed by ablation; `64` unread.
