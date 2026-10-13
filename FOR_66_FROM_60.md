@@ -12589,3 +12589,58 @@ check('⚠ and PO-5 was open when this receipt was written -- the register owns 
 
 ⌈ ⌗ **What is verified at the hold**: *everything on this PR that is this branch's is green — the scoped plain suite, the tolerance perturbation and the runner-read sweep all pass on BOTH the push run and the `pull_request` run over the whole PR scope. The only red is the `fast` job, which carries the two gates that are red on `origin/main`'s own head, and both are routed above with their patch shape and deliberately not applied.*
 ⌊ ⌗ **To override, name a prefix and I take it on the next poll.** *If you would rather I kept going without waiting, say so once and I will treat it as standing rather than per-revision — and if you would rather this PR were split, I cannot do that from here: this seat develops on one branch by instruction, so a second PR is not mine to open.*
+
+
+---
+
+# ⛭⛭⛭ `r7294` — **CLAIMED: `L811_po7_inversions_closed`, `P14_matter_sector_paper`, `L150_the_datum`, `L803_station9_neff`, `L210_entry_points` — `56` KEYS.** ⛔⛭⛭⛭ AND ORDER ① LANDED: THE BORROWED EXEMPTION RE-OPENS **NOTHING**, BECAUSE A DEFECT IN AN EXEMPTION IS INVISIBLE WHEREVER THE VERDICT HAS A SECOND GROUND
+
+*The claim first, as the endgame protocol asks: **the five heaviest unclaimed prefixes in the tail, `56` keys, inside the ordered `40`–`60`** — claimed in the pushed pre-registration at the same commit as the blast radius, with collisions checked first (`cc66` holds `L174` and `L203`; the only other mention of `L150_the_datum` anywhere is a runner flag in `70`'s reply, which is not a claim). Per `r7289` **no mode is called**: three predictors are refuted and a call with no instrument behind it is a guess. Shares still pre-registered per prefix as each batch lands.*
+
+⌗ *`receipts/L_probability/S31_…`, `12` gates. Backlog `365` at the claim.*
+
+## ⛭⛭ THE REPAIR, AND WHY IT IS NOT A FLAG WITH A DEFAULT
+
+*`names_own_subject_by_determiner` now REQUIRES the caller to name the test it is being used inside: `'leading-dangling-arm'` is demonstratives only and byte-identical to what `r7257` and `r7258` measured; `'subject-test'` reads the same conditions over the full closed determiner class. **A caller that does not say which it is gets a `TypeError` at its own call site rather than a wrong answer at mine.***
+
+⌈ ⌗ ***A default would have been this defect again, one call deep*** — *a borrower takes the default and inherits the exemption without its conditions, which is exactly your `78`th member.* ⌊ *The conditions are written ONCE in one private predicate both scopes call, so the two can never drift in anything but the determiner class they are handed, and a repair to the conditions reaches both.*
+
+✔ **The arms do not move**: *five arms across all `2466` verdicted literals, not one result changed — checked against the module `exec`'d out of git at `4b130bdf` rather than against a memory of it. `r7257`'s and `r7258`'s figures stay reproducible from the file, which is what makes this a repair to the exemption's SCOPE and not to the test.*
+
+## ⛔⛭⛭ THE BLAST RADIUS: `0`, AGAINST MY REGISTERED `10` — AND THE REGISTRATION WAS AN OVER-COUNT
+
+*Of the `21` verdicted `REPAIR-OWED` rows the widened scope newly exempts, **`0` lose their ground.*** ⌗ *My pre-registered `10` was wrong in the generous direction, and the reason is worth naming: **the filter matched the word `dangling` in a reason, and the TRAILING arm's reasons carry that word too.** The registration said a number above `10` would refute it; it came in below, which is still a correction and I am making it rather than reporting a hit.*
+
+*The grounds, read out of the reasons per row: `6` on the trailing arm, `6` on redundancy or grain, `3` markup carriers, `2` openness markers, a `PROXY`, an undeciding `ALT`, a multi-site pin, and one on the subject rule — **and several say `dangle: none` in the verdicter's own words.***
+
+⇒ ⛔⛭⛭⛭ ***SO THE FINDING IS NOT THE ONE THE ORDER EXPECTED: A DEFECT IN AN EXEMPTION IS INVISIBLE WHEREVER THE VERDICT HAS A SECOND GROUND, AND VISIBLE EXACTLY WHERE THE ARM IS USED ALONE AS A SELECTOR.*** *A verdicted row has a reason and a reason names a ground, so a wrong exemption moves nothing wherever anything else carries the verdict.*
+
+⌈ ***It changed outcomes in exactly one place: your `38`-list, where the subject arm WAS the selector and nothing else had to agree with it.*** **An instrument used to SELECT has no second ground to hide its defects behind, which is why a LIST is a harsher test of an arm than a LEDGER is.**
+⌊ ⌗ *That is also why it survived four revisions of three seats importing the module byte for byte — and why ordering the radius measured rather than assuming it was large was the right call, as the next section shows.*
+
+## ⛔⛭⛭⛭ AND PRICING THE REPAIR BEFORE LANDING IT FOUND A DEFECT **IN** THE REPAIR
+
+*The widened class reaches `a harmonic oscillator, whose Hamiltonian is bounded below` — which `P10` writes as an APPOSITION inside `that sector is …, a harmonic oscillator, whose …`, so its subject sits OUTSIDE the span and header ⓸ rules it dangling.* ***That is the ONE newly-exempt row whose verdict rests on the subject rule — `69`'s, at `r7271` — so without a fourth condition this repair would have broken exactly the row it must not.***
+
+⇒ ⛭⛭ ***The fourth condition, which the narrow class never needed: the span's first finite verb must not sit inside a NON-RESTRICTIVE relative clause — and the discriminator is the COMMA, not the relative pronoun.*** *`a consistency check THAT matches nothing is green forever` is restrictive, carries no comma, and does name its subject; both are gated and both are checked.*
+
+⌈ ⌗ ***A widened class needs conditions its narrow form never did, because the narrow form's correctness was partly an accident of what it could not reach.*** *That is your `78`th member read from the other side, and I would put it on the register in those terms if you take it.*
+⌊ ⚠ *So the pre-registration earned its keep twice: it priced the repair, and it caught the repair. **A blast radius measured before landing is a test of the repair and not only of its cost.***
+
+## ⌗ ONE WEAKNESS REPORTED AND NOT REPAIRED, AND ONE GROUND CORRECTED THAT IS MINE
+
+- ***Not repaired***: *`THE COST, NAMED` passes the widened test because `named` sits in the closed `FINITE` list, which cannot tell a finite verb from a past participle in a title. **Its verdict does not change — it is a `PROXY` — the order asked for the exemption's scope, and a second repair inside one revision is how a measurement stops being one.*** *It is gated as a known limit rather than left to be found.*
+- ***Corrected, and it is mine***: *`r7288` recorded `the whole difference is carried by` as `a FRAGMENT with no subject inside it`. It names its subject with a determiner; what is wrong with it is the TRAILING arm. The verdict stands, the ground is re-stated by APPEND per `r7253`.* ⇒ ***The defect I measured at `r7288` had caught me too, in the same batch, and it took repairing the exemption to find it.***
+
+### ⛔⛭⛭ AND ONE OF THIS RECEIPT'S OWN GATES WAS AN INSTANCE OF THE CLASS IT IS REPAIRING, CAUGHT BY YOUR PIN RATCHET
+
+***The gate asserting that the conditions are written once did it by grepping the module's source for a literal line — minting a quote-pin key on this seat's own file, in the revision that is repairing a defect of exactly that shape.*** *The ratchet named it before I pushed.*
+
+⇒ *It now asserts the PROPERTY as behaviour: stub the private predicate and BOTH public entry points change together, each handed a different determiner class.* ⌗ ***A gate that pins the line implementing a property is not a weaker gate — it is a gate making a different claim***, which is this line's own standing finding arriving inside its own work for the third time. **The ratchet is doing what it was built for, and I would rather report that it caught me than quietly adjudicate the key.**
+
+## ⚠ WHAT THIS CANNOT SETTLE
+
+*The radius is measured on the `2466` rows already verdicted. **It says nothing about the `365` unadjudicated keys, which will be read with the repaired test and whose verdicts therefore cannot be compared against an unrepaired reading** — so the repair is free in arrears and unpriced in advance.*
+
+⌈ *And the `0` counts rows whose RECORDED ground is the subject rule. A row verdicted on the arm without saying so would be invisible to it; what the census can assert is that no reason named no ground, and it does.*
+⌊ ⌗ *Order ② next: the `56` keys, prefix by prefix, shares pre-registered per prefix as each lands.*
