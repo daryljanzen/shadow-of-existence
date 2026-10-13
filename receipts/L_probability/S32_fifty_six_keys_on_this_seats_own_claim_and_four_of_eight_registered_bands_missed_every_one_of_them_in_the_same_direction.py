@@ -149,14 +149,20 @@ for _c in _mine:
     _by_pfx[_c[0].split('/')[1]].append(_c)
 _un_then = sum(1 for c in rows_of(_git('show', f'{PREG}:{BASE}'))
                if c[5].startswith('UNADJUDICATED'))
+_un_after = sum(1 for c in _all if c[5].startswith('UNADJUDICATED'))
 _un_now = sum(1 for c in rows_of(read(BASE)) if c[5].startswith('UNADJUDICATED'))
 _reg_after = re.search(r'Expected after all five: `(\d+)`', _pred)
 print(f'      {len(_mine)} keys verdicted across {len(_by_pfx)} prefixes; backlog {_un_then} -> '
-      f'{_un_now}; the registration said {_reg_after.group(1) if _reg_after else "?"}')
-gate(f'Ⓑ① ⛭⛭ `{len(_mine)}` LANDED, `{_un_now}` REMAIN --- and the one arithmetic figure the '
+      f'{_un_after} at this revision, {_un_now} live; the registration said '
+      f'{_reg_after.group(1) if _reg_after else "?"}')
+gate(f'Ⓑ① ⛭⛭ `{len(_mine)}` LANDED, `{_un_after}` REMAINED --- and the one arithmetic figure the '
      f'registration predicted, the backlog after all five, is `{_reg_after.group(1)}` against '
-     f'`{_un_now}` measured.  The live arm is MONOTONE: the backlog may fall further and never rises',
-     len(_mine) == 56 and int(_reg_after.group(1)) == _un_now)
+     f'`{_un_after}` measured AT THIS REVISION\'S OWN COMMIT, which is where the prediction was '
+     f'scored.  ** The equality was read LIVE in the first form and went red the moment a later '
+     f'revision of this line landed more keys --- a prediction scored against a moving ledger is the '
+     f'fail-on-success family, and a figure hit exactly is a fact about the state it was hit in. '
+     f'The LIVE arm is the MONOTONE one: `{_un_now}` now, which may fall further and never rises **',
+     len(_mine) == 56 and int(_reg_after.group(1)) == _un_after and _un_now <= _un_after)
 
 _score = []
 for _p, (_ro_band, _mh_band) in BANDS.items():

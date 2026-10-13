@@ -65,6 +65,10 @@ def gate(label, ok):
 TRUNK = 'c33da8ff'    # origin/main's tip when this revision began
 MERGE = '653cc50c'    # the merge of the trunk into this branch, BEFORE the registration
 PREG = 'd07ee42b'     # the commit that PUSHED the registration, after the merge
+AFTER = 'f5d6155d'    # the commit that carried this revision's verdicts -- the 71st member's corollary
+# ⚠ The COUNTS below are read at `AFTER` and not in the working tree: an equality on a LIVE ledger
+#   goes red the moment another seat lands a key, which is the fail-on-success family.  The ONE live
+#   read kept is the backlog, and it is asserted MONOTONE rather than exact.
 BASE = 'corpus/quote_pin_baseline.tsv'
 PRED = 'computations/beyond_the_wall/r7300_60_the_blind_read/PREDICTION.md'
 BLIND = 'computations/beyond_the_wall/r7300_60_the_blind_read/BLIND_READ.tsv'
@@ -167,7 +171,7 @@ gate(f'Ⓑ② ⛔⛭⛭⛭ and the DIRECTION is the finding, not the score: of t
      f'carry.*',
      len(_short_del) == len(_short) and len(_mid_ro) == len(_mid) and len(_short) >= 2)
 
-_tier_of = {(c[0], c[1]): c[3] for c in rows_of(read(BASE))}
+_tier_of = {(c[0], c[1]): c[3] for c in rows_of(_git('show', f'{AFTER}:{BASE}'))}
 _applied = []
 for _r in _bl:
     _ge_arm = _rule[(_tier_of.get((_r[0], _r[1])), False)]
@@ -190,7 +194,7 @@ gate(f'Ⓑ③ ✔⛭⛭ and NOT RECONCILING is asserted as the thing it is FOR r
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓒ  THE PRIMARY 38, AND THE BANDS ARE NO LONGER WRONG IN ONE DIRECTION ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_all = rows_of(read(BASE))
+_all = rows_of(_git('show', f'{AFTER}:{BASE}'))
 _mine = [c for c in _all if 'r7300+60, the r7295 primary' in (c[6] or '')]
 _by = collections.defaultdict(list)
 for _c in _mine:
@@ -259,13 +263,15 @@ _un_merge = sum(1 for c in rows_of(_git('show', f'{MERGE}:{BASE}'))
                 if c[5].startswith('UNADJUDICATED'))
 _un_pre = sum(1 for c in rows_of(_git('show', f'{PREG}^:{BASE}'))
               if c[5].startswith('UNADJUDICATED'))
-_un_now = sum(1 for c in _all if c[5].startswith('UNADJUDICATED'))
+_un_now = sum(1 for c in rows_of(read(BASE)) if c[5].startswith('UNADJUDICATED'))
 print(f'      backlog at the merge {_un_merge}; now {_un_now}')
 gate(f'Ⓓ② ⛭⛭ `{_un_merge - _un_now}` landed this revision: the backlog goes `{_un_merge}` to '
      f'`{_un_now}`.  ** And the merge itself took it from `321` to `{_un_merge}` without a key being '
      f'read --- the `242`-key staleness `r7295` measured, which is the same defect as the base rate '
-     f'above: a number true of the copy and not of the thing ** --- the live arm is MONOTONE',
-     _un_now < _un_merge and _un_now <= 45)
+     f'above: a number true of the copy and not of the thing ** --- and this is the ONE live read '
+     f'in the receipt, asserted MONOTONE rather than exact, because every other count here is an '
+     f'equality on a set another seat can move and is pinned at `AFTER` instead',
+     _un_now <= _un_merge and _un_now <= 45)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓔ  THE RESTRAINT ──\n')

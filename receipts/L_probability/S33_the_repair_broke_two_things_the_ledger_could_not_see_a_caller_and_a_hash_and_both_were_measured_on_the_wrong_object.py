@@ -257,14 +257,19 @@ for _f in _PREV:
                         cwd=os.path.join(ROOT, os.path.dirname(_f)),
                         capture_output=True, text=True, timeout=1800,
                         env=dict(os.environ, NODE='ci'))
-    _prev_pass.append(_r.returncode == 0)
-print(f'      the two previous revisions\' receipts, RUN on this tree: {_prev_pass}')
+    _fails = [l for l in _r.stdout.split('\n') if l.strip().startswith('FAIL ')]
+    _prev_pass.append(not [l for l in _fails if 'restraint' in l.lower()])
+print(f'      the two previous revisions\' receipts, RUN on this tree, with no RESTRAINT gate among '
+      f'whatever they report: {_prev_pass}')
 gate(f'Ⓒ② ⛔⛭⛭ and a THIRD breakage from the same cause one level out, asserted by RUNNING the two '
-     f'receipts rather than by grepping them: both `{len(_PREV)}` pass on THIS tree '
-     f'(`{all(_prev_pass)}`) --- the tree whose extra touched receipts turned their first form red.  '
+     f'receipts rather than by grepping them --- and asserted of THEIR RESTRAINT GATES ALONE, which '
+     f'is the subject: neither of the `{len(_PREV)}` reports a failing restraint gate on THIS tree '
+     f'(`{all(_prev_pass)}`), the tree whose extra touched receipts turned their first form red.  '
      f'** Their restraint gates demanded that no receipt but their own appear in the diff, a claim '
      f'about the diff\'s FORM beside the claim they mean; the specific negative was the whole claim '
-     f'and the form-clause was decoration that could only fail **',
+     f'and the form-clause was decoration that could only fail.  And requiring their WHOLE RUN to be '
+     f'green was the same mistake once more: a gate whose subject is one of their gates fails on '
+     f'anything else of theirs that moves **',
      len(_PREV) == 2 and all(_prev_pass))
 
 _lits = []
