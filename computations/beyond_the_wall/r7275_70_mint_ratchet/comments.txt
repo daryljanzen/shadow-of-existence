@@ -1,0 +1,5 @@
+1602 live PAPER keys
+G-c matching inside a comment at all: 79
+G-b matching ONLY inside comments: 2
+   ONLY-COMMENT  W1_what_remains_between_the_wall_and_a_curve_dynamics.p  "until r2376+c54.179"  in ['slicing_operator.tex']  [UNADJUDICATED]
+   ONLY-COMMENT  S1_three_of_eight_stations_are_already_held_and_one_was  "THE RECEIPT WAS MORE HONEST THAN THE PAPER"  in ['matter_sector_paper.tex']  [UNADJUDICATED]

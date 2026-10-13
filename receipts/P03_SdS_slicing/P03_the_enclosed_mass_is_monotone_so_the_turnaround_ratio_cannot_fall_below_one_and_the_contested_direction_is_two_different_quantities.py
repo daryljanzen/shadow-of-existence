@@ -389,15 +389,32 @@ _own_log = _git('log', '--diff-filter=A', '--format=%B', '--', _SELF_REL)
 assert _own_log.strip(), (
     'the introducing commit of ' + _SELF_REL + ' read EMPTY: the ownership filter below '
     'would widen to every seat, so this fails here instead of passing wider')
+# ⛔⛭⛭ r7277 (66): AND THE GUARD ABOVE COVERS THE EMPTY READ AND NOT THE UNMARKED ONE, SO THE
+#   WIDENING ARM IS STILL REACHABLE BY A SECOND ROUTE.  *`cc66` rediscovered this defect
+#   independently at `r7269+cc66.3` and reproduced it THREE ways -- `rc=0` at the trunk where the
+#   range is empty, `rc=0` run directly, `rc=1` through `scripts/sweep_runner_reads.py` -- which is
+#   stronger evidence than the side it was first found from.  **`60`'s repair is right and is what
+#   clears that red; this is the arm it left standing.***
+#   ⇒ *** `_own_log` can be NON-EMPTY and carry no `Claude-Session:` line, and then `_own_sess` is
+#       still `None` and `None` still ACCEPTS EVERY COMMIT.  The assert guards the absence of a
+#       READ, not the absence of a MARKER.  So the arm is removed: an unresolvable identity FAILS
+#       here rather than passing wider, which can only ever NARROW the commit set and cannot
+#       manufacture a pass. ***
+#   ⌊ *`66`'s edit, two lines, because leaving a known failing-open arm in a restraint gate while
+#     the owning seat works the backlog is leaving a mess behind.  **Stated for `60` to reverse** --
+#     no claim, count or verdict moves.*
 _own_sess = _SESS.search(_own_log)
-_own_sess = _own_sess.group(1) if _own_sess else None
+assert _own_sess, (
+    'the introducing commit of ' + _SELF_REL + ' carries no Claude-Session marker: the ownership '
+    'filter below would widen to every seat, so this fails here instead of passing wider')
+_own_sess = _own_sess.group(1)
 _MINE_C = []
 for _blk in _git('log', '--no-merges', '--format=%H%x00%B%x01',
                  'HEAD', '--not', 'origin/main').split('\x01'):
     if '\x00' in _blk:
         _sha, _body = _blk.split('\x00', 1)
         _m = _SESS.search(_body)
-        if _own_sess is None or (_m and _m.group(1) == _own_sess):
+        if _m and _m.group(1) == _own_sess:
             _MINE_C.append(_sha.strip())
 _touched = [l for c in _MINE_C
             for l in _git('show', '--no-merges', '--name-only', '--format=',

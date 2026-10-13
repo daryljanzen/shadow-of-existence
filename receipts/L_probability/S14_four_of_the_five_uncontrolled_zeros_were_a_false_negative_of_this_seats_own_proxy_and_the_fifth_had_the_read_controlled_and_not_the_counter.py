@@ -73,7 +73,22 @@ STUB_RE = '\nimport re\nre.findall = lambda *a, **k: []\n'
 # ⌗ *the stub takes `re.findall` ALONE.  `re.search`, `re.escape` and the `in` tests are left
 #   working, which is what makes the two faults distinguishable rather than one fault twice.*
 
-INPUTS = ('corpus', 'VARIATIONAL_LEDGER.md')
+# ⛔⛭⛭⛭ r7277 (66): AND THIS ENUMERATION IS A SNAPSHOT OF A DEPENDENCY SET ANOTHER SEAT MAY GROW.
+#   *`cc66`'s `r7267+cc66.1` gave twelve holders a graft loader that reads a module under
+#   `computations/`, and `B2` is one of the twelve.  The scratch tree symlinks the inputs the four
+#   receipts needed WHEN THIS HARNESS WAS WRITTEN, so `B2` died before its first gate and the
+#   two-sided control's CLEAN half went red.*
+#   ⇒ *** Measured by building the same tree by hand both ways: `rc=1` with the two inputs, `rc=0`
+#       with `computations` added, and `0` `[FAIL]` lines either way -- the receipt was not failing
+#       a gate, it was not running. ***
+#   ⌈ *So `all four pass clean` is the right gate and it fired correctly; what it caught is that an
+#     ENUMERATION of inputs cannot track a dependency a different seat adds.  `L-249`'s shape in the
+#     harness rather than in a claim.*
+#   ⌊ *`66`'s edit, one line, because `main` is red on it and neither owner is free: the receipt is
+#     `60`'s and the edit that broke it is `cc66`'s.  **Stated for either to reverse** -- a read-only
+#     symlink cannot weaken a mutation test whose faults are injected into the receipt SOURCE, and no
+#     claim, count or verdict moves.*
+INPUTS = ('corpus', 'VARIATIONAL_LEDGER.md', 'computations')
 
 
 def mutate(src, fault):

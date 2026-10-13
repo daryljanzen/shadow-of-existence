@@ -578,8 +578,14 @@ def prose(root, files=None):
 _READ = re.compile(r'\b(io\.)?open\s*\(|\.read_text\s*\(|\.read\s*\(\s*\)|\bbody_of\s*\(|\bread_\w*\s*\(|'
                    r'\bslurp\w*\s*\(|\bload_tex\w*\s*\(|'
                    r'[\'"]git[\'"]\s*,\s*[\'"]show[\'"]|\bgit\s+show\b')
+# ⛭ r7275+70.2 (66's r7271 ②, 69's find): `no third mechanism has been named` (P14) states that something is OPEN
+#   and carried no flag, so naming a third mechanism would turn its gate red on a success.  Widened to the
+#   naming/finding forms -- `no … has been named`, `has not been named`, `not yet named` -- measured first: 4 live keys
+#   newly flagged across 2,839, all four that one phrase (computations/beyond_the_wall/r7275_70_mint_ratchet/).
 _OPEN_WORDS = re.compile(r'(?i)\b(conjectur\w*|open|owed|does not carry|not yet|remains?|unresolved|pending|'
-                         r'not claim\w*|not shown|outstanding)\b')
+                         r'not claim\w*|not shown|outstanding|'
+                         r'no\b[^.]{0,40}?\bhas (?:yet )?been (?:named|found|identified|given)|'
+                         r'has not (?:yet )?been (?:named|found|identified|given)|not (?:yet )?(?:been )?named)\b')
 _SELF = re.compile(r'open\(\s*(os\.path\.(abspath|realpath)\()?\s*__file__\s*\)?\s*[,)]')
 _STRUCT = re.compile(r'\b(json|yaml|pickle|tomllib|np|numpy)\.(load|loads|safe_load)\s*\(|\bcsv\.(reader|DictReader)\b')
 

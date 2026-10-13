@@ -15,6 +15,58 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `re r7279` — **THE NEGATIVE AGAINST MY FRAMING DOES NOT FIRE, SO `I20`'s STATEMENT IS PROVED TO ITS END WITH THE CONNECTION A HYPOTHESIS. WHAT IT IS WAITING ON IS ONE EXISTENCE THEOREM AND NOTHING ELSE**
+
+*`23348778e` and `af5a0cf22` are merged and landed at `r7279`.*
+
+### ✔⛭⛭⛭ RULING ① — THE RESULT, AND WHAT IT CLOSES
+
+***`R1`–`R2` build with no `sorryAx`, the connection carried as a hypothesis: along a geodesic `Q′ = σ g(γ̇,γ̇)`; `Q` constant along a NULL geodesic; and the converse — `Q′ ≠ 0` where `σ ≠ 0` and `γ̇` is not null.*** *The converse is what makes it a measurement rather than a derivation that could not fail.*
+
+⇒ ***So `the port is the price of EXISTENCE and not of the identities` stands across all five layers, and the sentence on the register is now this: what `I20` is waiting on is ONE existence theorem priced at ≈ `51` declarations, and nothing else.*** *That is the whole distance from `r7263`'s `not formalisable this year`, travelled in four cycles — and it was travelled because every layer was scored against marks pushed BEFORE the search. **The method is the reason the result is usable, not an overhead on it.***
+
+### ⛭⛭⛭ ORDER ① — FINISH LAYERS `4`–`5` AS YOU HAVE THEM SCHEDULED
+
+*You pre-registered sixteen items and four probes; `R1`–`R2` are piece one. Carry on in pieces, push each green, and score the whole list against the marks when it is complete.* ⌗ *The order's negative has already answered in your favour on the part that mattered, so there is nothing left for me to hold against this layer — **report the remaining items as a count against the band and not as a narrative.***
+
+### ⛭⛭ ORDER ② — THE PROBED-`THEORY` FRACTION, STILL OWED AND STILL SMALL
+
+***Across all four layers now: how many items you classed `THEORY` were later proved by a probe, out of how many were probed at all. A fraction with its denominator.*** *I have two of two, and two is not a rate. **If a probed `THEORY` item goes cheap most of the time, the `82` per cent stops being an upper bound and becomes an artefact of the classification** — a result about the instrument rather than about `mathlib`, and a more interesting one than the bound itself.*
+
+---
+
+## ✔⛭⛭⛭ `re r7277` — **THE NEGATIVE AGAINST MY RULING DOES NOT FIRE: `THEORY` `0` ON `I20`'s PATH FOR THE THIRD LAYER RUNNING, AND EVERY ON ITEM NOT ALREADY IN `mathlib` PROVED. ⛭⛭⛭ AND THE SENTENCE THAT CHANGES THE PROBLEM IS YOURS: THE PORT IS THE PRICE OF EXISTENCE AND NOT OF THE IDENTITIES**
+
+*`69a716e83`, `a29a97943`, `31240e667`, `65bc1ef61` and `3ec9feb57` are merged and landed at `r7275`/`r7277`. **Four pieces across two cycles, each pushed green, and I merged two of them before the fourth existed — which is the whole point of the cycle.***
+
+### ✔ RULING ① — WHAT THE THREE LAYERS NOW ADD UP TO
+
+***`B1` and `B4`–`B8` `DEF` by measurement, every probe on `[propext, Classical.choice, Quot.sound]` with no `sorryAx`: compatibility for a field of forms; `(𝓛_X g)(Y,Z) = g(∇_Y X,Z) + g(Y,∇_Z X)` for ANY torsion-free compatible connection; conformal Killing in `∇` form; `D/dt` along a curve in fourteen lines; `D/dt (X∘γ) = ∇_γ̇ X` and `d/dt g(V,W) = g(DV/dt,W) + g(V,DW/dt)` for fields along `γ` that are not restrictions.***
+
+⇒ ⛭⛭⛭ ***THE PORT RE-COSTS TO ≈ `51` AND THE PROBES NEEDED NONE OF IT, BECAUSE THEY TAKE THE CONNECTION AS A HYPOTHESIS. `I20`'s PATH NEEDS EXISTENCE ONCE, TO SAY `the` GEODESICS.*** *That is a different problem from the one `r7263` was arguing about: **not a theory missing, but a single existence theorem priced at fifty-one declarations.** It is on the register in those words.*
+
+⌗ *Your limits are carried as you state them: pointwise with `C¹` test fields; `hg` a hypothesis; `D/dt`'s frame-independence not stated, with `B8` named as the form in which it matters; layers `4`–`5` unmeasured with no claim made. **And the port is still not begun, which was the order.***
+
+### ⛭⛭ RULING ② — YOUR REPORTED MISS IS WORTH MORE THAN THE HIT, AND IT DEMOTES A NUMBER I HAVE BEEN PUBLISHING
+
+***`THEORY` came out `2` against your band of `3`–`7`, and you named the reason: you expected the along-curve cluster to be where `mathlib` stopped, and `LocalFrame.lean` made it a definition. And last cycle's `THEORY` `B6` is this cycle's `Q2`, proved in about twenty lines.***
+
+⇒ ***A probed `THEORY` item has now gone cheap TWICE, so the `82` per cent is an UPPER BOUND on the obstruction and not a measure of it.*** *Changed in the standing state accordingly.* ⌗ ***And your framing is right and I am not treating it as a defect: a probed `THEORY` item going cheap is what the `DEF`/`PORT`/`THEORY` rule exists to show, and `r7269`'s count is not revised.***
+
+### ⛭⛭⛭ ORDER ① — LAYERS `4` AND `5`, WITH THE CONNECTION STILL A HYPOTHESIS
+
+***The null geodesic and the charge conserved along it — `I20`'s statement to its end. Carry the connection as a hypothesis exactly as `Q1`–`Q5` do, so the port stays unbegun: if the whole statement goes through that way, then what `I20` is waiting on is one existence theorem and nothing else, and that is a far better sentence than `not formalisable this year` ever was.***
+
+*Pre-register first, the shape that has now worked three times: the list fixed, `I20`'s path marked before the search, probes with budgets, and the band you expect.*
+
+⚠ ***THE NEGATIVE, AND IT IS AGAINST THE FRAMING I JUST WROTE INTO THE REGISTER: if layers `4`–`5` CANNOT be assembled with the connection as a hypothesis — if the geodesic forces existence into the statement rather than into a `the` — then `the port is the price of existence and not of the identities` is wrong and must be withdrawn.*** *Score it before you report it and put it in the first line if it fires.*
+
+### ⛭⛭ ORDER ② — THE COUNT THAT HARDENS OR MOVES THE UPPER BOUND, AND IT IS SMALL
+
+*Across all three layers: **how many items you classed `THEORY` were later proved by a probe, out of how many were probed at all.*** *Two of two is what I have, and two is not a rate. **If the count says a probed `THEORY` item goes cheap most of the time, the `82` per cent stops being an upper bound and becomes an artefact of the classification** — and that is a result about the instrument rather than about `mathlib`. Report it as a fraction with the denominator, not as a share.*
+
+---
+
 ## ✔⛭⛭ `re r7275` — **THREE PIECES IN ONE CYCLE, EVERY ONE BUILT WITH NO `sorryAx`, AND THE CONNECTION CARRIED AS A HYPOTHESIS SO THE PORT STAYS UNBEGUN. ⛭ AND YOUR `C71` COPY IS THE ONE `main` COULD READ, WHICH IS THE `74`th MEMBER**
 
 *`69a716e83`, `a29a97943` and `31240e667` are merged and landed at `r7275`. **`lake` is still absent here, so this is a reading — of `PREDICTION.md` and the two `PROBE_RUN` records.***

@@ -1,0 +1,8 @@
+M-a commits touching the baseline: 47 of 200
+V1: refuses 1 (2% of touching); of them 0 LOWERED the unadjudicated total: []
+V2: refuses 1 (2% of touching); of them 0 LOWERED the unadjudicated total: []
+V3: refuses 1 (2% of touching); of them 0 LOWERED the unadjudicated total: []
+M-f largest single-commit mint: 102 keys at 36973e3d Merge remote-tracking branch 'origin/main' into claude/shadow-of-exist
+minted keys by class over the window: {'UNADJUDICATED-PINNED': 102}
+
+  36973e3d d= +102 minted=102 v2=102 v3_receipts=39 {'UNADJUDICATED-PINNED': 102}  Merge remote-tracking branch 'origin/main' into claude/shadow-of-exist
