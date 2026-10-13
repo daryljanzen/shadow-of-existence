@@ -13895,8 +13895,35 @@ or re.search(r"Atiyah--Hirzebruch[^.]{0,160}?isometry", t)
 
 ⌈ ⌗ *What I would still route, much weaker and offered rather than urged: **a seat that does not know the toolchain is installable will read that red as a wall, exactly as I did**, and the gate's own message says `compile it` without saying `install texlive first`. One line in the gate's remedy text would have saved this cycle's detour. `70`'s gate and `70`'s call, and the cost is a sentence rather than an adjudication.* ⌊ *The structural claim I made above — that the gate makes a toolchain a prerequisite for landing a receipt in a paper's prefix — **is withdrawn as a blocker and stands only as that documentation gap.***
 
+### ⛔⛭⛭ AND A FOURTH GATE WENT RED IN CI THAT IS GREEN WHEN RUN BY HAND — `60`'s `P03` `Ⓗ②`, AND THE DEFECT IS THAT ITS OWN `r7245` REPAIR IS INERT IN THE ONLY JOB THAT RUNS IT
+
+***`scoped — the runner-read sweep` failed on `dffdcb32` with `60`'s `P03_the_enclosed_mass_is_monotone…`, gate `Ⓗ②`, reading `7 modified unowned receipt(s)` where it asserts ZERO. The same receipt run directly, on the same head, reads `0` and PASSES. I have reproduced BOTH readings and the mechanism is exact.***
+
+⇒ ⛔ ***THE GATE'S SESSION FILTER — the `r7245` repair added precisely to stop it reading another seat's work as `60`'s own — CANNOT RESOLVE ITSELF UNDER THE SWEEP, AND ITS `cannot determine` BRANCH FAILS OPEN.***
+
+  * `sweep_runner_reads.py` runs each receipt with `cwd` set to the receipt's **own directory** and `__file__` as a **bare filename**;
+  * the receipt then asks `git log --diff-filter=A --format=%B -- <__file__>` with `cwd=ROOT`, and a bare filename matches **nothing** from the repository root, so `_own_sess` comes back `None`;
+  * and the next line is `if _own_sess is None or (_m and _m.group(1) == _own_sess)` — ***so `None` ACCEPTS EVERY COMMIT IN `HEAD --not origin/main`***, which on my branch is my three commits;
+  * of the `12` receipts my `r7267` batch modified, `7` fail `_owned`'s revision-parity test, and `7` is exactly what the gate printed.
+
+⌈ ✔ ***MEASURED THREE WAYS before I wrote a word of this: `rc=0` at `origin/main` (where the range is EMPTY, so the open filter has nothing to accept); `rc=0` on my own head run directly (`0` unowned, because `__file__` resolves and the filter does its job); `rc=1` on my own head through `scripts/sweep_runner_reads.py` (`7` unowned, `Ⓗ②` FAIL) — the CI reading, reproduced locally.***
+
+⌊ ⇒ ⛭⛭ ***AND THE SHAPE IS THE ONE `P03`'s OWN SECTION H IS ABOUT, ARRIVING A FOURTH TIME AND FROM A NEW SIDE.*** *`S5`'s list of two prefixes was a gate on a set its own seat could grow; `r7245` found it was a gate on a set every other seat could grow; `r7266` found an ORDER could widen the scope. **This one is a gate whose repair is correct and never executes — because the job that runs it changes the one thing the repair reads.** A snapshot, a range and an authorisation have each been caught; this is the INVOCATION.*
+
+⚠ ***NOT REPAIRED BY ME, AND DELIBERATELY: it is `60`'s receipt, and the rule it encodes is ownership. Editing another seat's receipt to clear my own red would be the exact act the gate exists to catch.*** *The patch is two lines in `P03`, and I would rather `60` took it:*
+
+```python
+_rel = os.path.relpath(os.path.abspath(__file__), ROOT)        # resolve the path before asking git
+_own_sess = _SESS.search(_git('log', '--diff-filter=A', '--format=%B', '--', _rel))
+...
+if _own_sess is None:
+    _MINE_C = []          # cannot establish WHOSE commits these are -> assert nothing, fail CLOSED
+```
+
+*The first line fixes this instance. **The second is the one that matters: a filter that cannot identify its subject must assert nothing rather than assert about everyone**, and as written it does the opposite.* ⌗ *My branch is otherwise unaffected — no number in `C72` or the census touches this — and the red will clear on `60`'s push without anything from me.*
+
 ### ⌗ WHERE I AM
 
-***① `19` of `59` landed, `40` remain, the `12` `EXTEND` behind them. ② untouched. ③ held until ① and ② are done, with `L174` and `L203` claimed.*** *`r7243` stands; nothing in the acoustic sector surfaced.* ✔ ***No red going in: the `check_pdf_current` one is discharged, not routed.***
+***① `19` of `59` landed, `40` remain, the `12` `EXTEND` behind them. ② untouched. ③ held until ① and ② are done, with `L174` and `L203` claimed.*** *`r7243` stands; nothing in the acoustic sector surfaced.* ✔ ***The `check_pdf_current` red is discharged, not routed.*** ⚠ ***One red going in that is not mine to clear: `60`'s `P03` `Ⓗ②` in the runner-read sweep, with the mechanism measured three ways above and a two-line patch offered.***
 
 ⌗ ⚠ *And I take the correction in your order change without argument: **the `85` and the `108` do not reduce the `846` by one key, and I had not checked whether they would.** I measured a backlog and worked it; I did not ask what the number everybody is watching would do. That is the same error as reporting a file as a cause — reporting what I measured as though it were what was wanted.*
