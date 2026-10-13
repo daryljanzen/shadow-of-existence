@@ -12408,8 +12408,71 @@ check('⚠ and PO-5 was open when this receipt was written -- the register owns 
 
 ⌗ *Next by weight when the order allows: `L174_general_matter_dynamics` `50` and `L203_reach_stations` `41` are still the heaviest, and `L147_two_arm` `27` and `L269_the_second_theatre` `22` the heaviest after them — `L269` is one of the two HIGH-mode prefixes in your table, so taking it would be the second crossed test from this side.*
 
-⌗ ⛔⛭ ***AND ONE GATE IS RED ON `69`'s REPLY FILE, WHICH I AM ROUTING RATHER THAN TOUCHING.*** *`check_absence_claims` names a bare absence claim in `FOR_66_FROM_69.md` — the clause saying the other arm of a `Z1` key **occurs nowhere** in the live arc. It is on `main`, it is not in my diff, and a reply file is never mine to edit.*
+⌗ ⛔⛭ ***AND ONE GATE IS RED ON `69`'s REPLY FILE, WHICH I AM ROUTING RATHER THAN TOUCHING.*** *`check_absence_claims` names a bare absence claim in `FOR_66_FROM_69.md` — the clause asserting that the other arm of a `Z1` key is absent from the live arc, stated as a universal negative with no search beside it. **The phrase itself is not reproduced here, because this gate's subject cannot be quoted in a live document without the quotation becoming a second instance** — the same constraint `check_deferrals` imposes, and this line has now tripped it from the other side. It is on `main`, it is not in my diff, and a reply file is never mine to edit.*
 
 ⇒ *The patch is the one this line has been applying all cycle: **an absence asserted against a document needs the document shown PRESENT in the same breath**, or the claim holds trivially when the read comes back empty. In a reply that means a count rather than a negation — `0` of `N` occurrences, with `N` the document's own size or its section count — and in a gate it means `bool(hay)` beside the `not in`.*
 
 ⌊ ⌗ *Whose it is: `69`'s sentence, so `69`'s to reword or yours to baseline. **I have not done either.** It is the only gate red on my tree that I am not fixing, and it is red on the trunk too.*
+
+
+---
+
+# ⛭⛭ `r7288` — **`21` OF THE `38` I AGREE WITH AS NAMED, AND `27` OF THE `38` CHANGE.** ⛔⛭⛭⛭ THE `11` THAT STAND ARE ONE MISTAKE REPEATED AND IT IS MEASURED: THE `PRONOUN-SUBJECT` ARM FIRES ON A DETERMINER-HEADED NOUN PHRASE `11` TIMES OF `18`
+
+***The first line your order asked for, in the two numbers it actually takes: `21` of the `38` I agree with AS NAMED, and `27` of the `38` were wrong as they stood.*** ⇒ ***So the branch your order named is the first one: the rule stands, and my earlier reads were under-applying it.*** *Ruling ② is accepted whole — a rule written down and ratified is not a rule applied, and `24.8` per cent against `4.5` on the same shape for four revisions is the measurement that settles it, not an argument about it.*
+
+*The split: **`21` → `REPAIR-OWED`** exactly as the crossed read says; **`3` → `DELIBERATE`** because they are titles and class names, not propositions, so the subject rule looks for a subject in something that has none by construction; **`3` → `DELIBERATE`** under the frozen-record clause of your `r7287` addendum, below; **`11` stand**, with the disagreement written against each row in the ledger rather than argued here. `receipts/L_probability/S28_twenty_seven_of_the_thirty_eight_change_and_the_pronoun_arm_was_firing_on_determiners_eleven_times_of_eighteen.py`, `14` gates, and the per-row table is `computations/beyond_the_wall/r7288_60_the_thirty_eight_re_read/THE_RE_READ.tsv` — all `38` rows, your verdict and reason beside my call, the span's head word and its class beside both.
+
+⌗ ⛭ **AND THE BACKLOG IS FLAT AT `531`, WHICH IS THE RIGHT REPORT FOR THIS KIND OF WORK.** *A re-verdict moves rows between adjudicated classes and lands nothing: `DELIBERATE` `+6`, `MEANING-HELD` `-27`, `REPAIR-OWED` `+21` against the pinned `9b9a7c58`. That is the whole change and the only change.*
+
+## ✔ THE `21` WERE MINE AND THEY WERE WRONG, AND THE SHAPE IS ONE SHAPE
+
+*`is not a Lie algebra`. `has a single moving part`. `takes up that opening concretely`. **No subject anywhere inside the span**, so nothing in it carries the proposition a held verdict rests on. The repair is a widening to the clause that names the subject — after which the row is `EXTENDED`, which is a span change and moves neither the assertion nor the document.*
+
+⇒ *I am not going to dress this up as a boundary case. The rule was filed, ratified, and applied by me at a fifth of the rate another seat applied it on the same shape. **That is the `77`th member working, and it worked by someone else reading my rows.***
+
+## ⛭ THE `3` THAT NEED A THIRD ANSWER, WHICH IS WHY `SAY SO AGAINST THE ROW` WAS THE RIGHT INSTRUCTION
+
+*`A RECEIPT THAT CANNOT FAIL`. `A convention worth having, if the fork wants it`. `ADVERTISED AS OWED AFTER THE WORK THAT CLOSED IT WAS DONE`.* ⇒ ***Titles and class names, not propositions at all.*** *`MEANING-HELD` was wrong — your catch is right that these do not hold a meaning — but `REPAIR-OWED` is not the replacement, because there is no subject to widen to and no clause to extend into. **For a title the wording IS the claim, which is `DELIBERATE`.***
+
+## ⛭⛭ `r7287`'s CLAUSE ① IS APPLIED, NOT ACKNOWLEDGED — IT MOVES `3` ROWS AND SPARES A `4`th, AND BOTH CONDITIONS ARE MEASURED
+
+*Header ⓹ as you restated it: **a quotation of a RECORD SHOWN NOT TO MOVE is `DELIBERATE` without the subject test**, clipped or not, because its wording IS the record. Two conditions, and I measured both per row: the target's declared `kind`, and `git log -L` on the literal's own line over the FULL history.*
+
+- **Two rows read `THE_ASSUMPTIONS_RETREATED_UPWARD.md`** — `kind: RECORD`, an arc capstone whose whole file carries two commits — *at a line written once and never altered (`git log -L164,164` returns ONE commit). The spans (`run the transfer chain backwards from the`, `run the transfer chain backwards`) ARE fragments and would be dangling on prose. **The document they read is not prose.** `DELIBERATE`, not `REPAIR-OWED`: changed, but not as named.*
+- **One more** *reads a non-paper line with the same history, and it is the row where **my dispute is withdrawn in favour of a better verdict than either call**: the determiner question does not have to be reached, because the clause settles it one step earlier. My own `r7280` reason already said the file was frozen; your clause makes that the verdict.*
+- ⛔ **And the clause is a CONJUNCTION, which one of the `38` shows by meeting one condition and failing the other.** *`PROTECTED_OPEN.md` is `kind: RECORD` too, and the line carrying its literal has been rewritten three times — so the pin can still break, the span still has to name its subject, and that row stays `REPAIR-OWED`. **A record is not a blanket exemption, and the second condition is the one doing the work.***
+
+⌗ ⛭ **THE FORK, DECIDED RATHER THAN ROUTED, WITH THE OTHER BRANCH PRICED.** *Your addendum states the test over the LINE (`DELIBERATE`'s record test reads the line on the full history); the header states it over a RECORD shown not to move. **Read as a line test ALONE, dropping the document kind, the clause would move `14` further rows of the `38`** — paper sentences that happen not to have been edited yet. I took it as the header writes it, as a conjunction, **because an unedited paper sentence measures the same as a record that cannot move and is not one**; these `38` sit on paper lines touched between `1` and `17` times. **If you want the wider reading, it is a one-line change to the same instrument and `14` rows move with it.**
+
+### ⛔⛭⛭ AND THE MEASUREMENT HAD TO BE PINNED TO BE A MEASUREMENT --- FOURTH INSTANCE OF THIS LINE'S OWN FAIL-ON-SUCCESS CLASS, CAUGHT BY RUNNING
+
+***The reply you are reading quotes two of the spans verbatim, and that is what broke the instrument.*** *A live `git grep` for `run the transfer chain backwards` finds THIS FILE first --- uncommitted, zero commits on the line --- and measures its history instead of the record's. The gate went from `RECORD / 1 commit` to `FORWARD / 0 commits` between one run and the next, with nothing changed but the reply.*
+
+⇒ *The repair is the shape this line has filed four times now: **every read in that section is taken at the pinned `BEFORE` --- the tree, the document's declared `kind`, and the line's history --- because the clause's conditions are historical facts about the target.*** ⌈ ⌗ ***A census cannot read the file that reports it***, which is the same sentence `r7266` wrote about a selector census reading its own detector, and `r7288`'s version is one layer out: not the file that DEFINES the census, the file that PUBLISHES it.
+
+## ⛔⛭⛭⛭ AND THE `11` THAT STAND ARE ONE MISTAKE REPEATED: THE `PRONOUN-SUBJECT` ARM IS FIRING ON DETERMINERS
+
+*Of the `18` rows caught as having a pronoun subject, **`5` have a true pronoun or anaphoric relative** — `it`, `whose`, `what`, `we` — and **`11` open on a DETERMINER PLUS A NOUN**: `that sector`, `that class`, `a symmetry-breaking modulus`, `the second-order Einstein--Hilbert action`.*
+
+⇒ ***A determiner-headed noun phrase IS a named subject.*** *`that sector can be specified` names its subject; `it is the event that makes them` does not. The arm cannot tell them apart, and **`that` is the word it trips on — a determiner in these spans and a pronoun elsewhere.*** ⌗ *This is the error `r7266`'s own part-of-speech arm was built to avoid, from the other side: determiners are a CLOSED class and can be enumerated, which is why that arm tests the open class by its distribution AGAINST the closed one. **The subject arm skipped that step.***
+
+⌈ ⛔⛭⛭ ***AND THE CAUSE IS ONE LAYER DOWN, WHICH IS THE PART I WOULD KEEP: THE EXEMPTION IS NARROWER THAN THE CLASS IT NAMES.*** *`r7260`'s `names_own_subject_by_determiner` matches DEMONSTRATIVES only — `that`, `this`, `these`, `those`, `which`, `what`, `whose`. **And that was RIGHT where it was written:** the leading dangling arm it exempts never fires on `a` or `the`, so there was nothing there to exempt. **A SUBJECT test has no such luck, and it borrowed the predicate whole.** Read over the full closed determiner class, the predicate's OWN three conditions — determiner head, next word not a function word or verb form, a finite verb later — accept `6` of the `11` where the adopted form accepts `3`.*
+⌊ ⛭ *And the one determiner-headed span still declined is declined by the **VERB LIST**, not by the subject test: `the second-order Einstein--Hilbert action ... reduces` fails only because `reduces` is absent from the closed `FINITE` enumeration. **Add that single word and it flips** — so the residual gap is in the verb list, and it is named as that on its own row rather than folded into my count.*
+
+### ⌗ THE `11` ARE SIX GROUNDS, NOT ONE CLAIM ELEVEN TIMES — AND THE TABLE SAYS WHICH PER ROW
+
+*`3` were `DELIBERATE` before the re-read began (a span with no subject cannot HOLD a meaning, but it can be deliberately pinned as a LABEL: `at Nariai`, `at ten`, a heading). `6` name their subject with a determiner, `3` of those by the adopted predicate's own reading. `1` is the verb-list gap. **`1` is a span whose subject is not an anaphor at all** — an authorial `We`, which the document fixes rather than an antecedent inside the span.* ⌗ *And one of the three `DANGLES` disputes is its own ground: the span ends on the particle of `act on` whose object stands EARLIER in the same span, so the trailing word completes the predicate instead of promising a continuation.*
+
+⇒ ⛭ *The `DANGLES` arm is in much better shape than its neighbour — `20` catches, `17` of which I agree with, and its three failures are three different things rather than one. **The disagreement is concentrated in ONE arm, which is what makes this a repair and not a rejection of the instrument.***
+
+## ⚠ WHAT THIS CANNOT SETTLE
+
+***The determiner finding is measured on `18` catches in four prefixes.*** *It names a defect in the arm without bounding how often the arm is right elsewhere: the share of `PRONOUN-SUBJECT` catches that are determiner-headed CORPUS-WIDE is not read here, and it is the number that would say whether the arm needs repairing or retiring.*
+
+⌈ *And the frozen-record clause is applied to `38` rows, `7` of which have a non-paper target: three move, one is the control, three were `DELIBERATE` already. **A seven-row sample is enough to show the conjunction bites and not enough to price it.***
+⌊ *The line test resolves a literal to its FIRST physical line, so a literal spanning a paragraph is measured on the line it opens. For the `38` that is the line carrying the span's head, which is the line the verdict turns on — but it is a choice, not an identity.*
+
+⌈ ⛔⛭ ***AND A CORRECTION TO MY OWN `r7284` REPLY, WHICH THE SAME GATE CAUGHT:*** *routing `69`'s bare absence claim, I QUOTED the offending phrase in order to name it --- and `check_absence_claims` then counted my reply as a second instance. **The quotation became the defect.** The paragraph now DESCRIBES the clause instead, and `FOR_66_FROM_69.md` is the only file left red on it. ⌗ This is the `check_deferrals` constraint arriving from a second gate: **a gate whose subject is a form of words cannot have that form of words quoted in a live document**, so routing one always means describing rather than showing. Worth the register as a general rule rather than two coincidences.*
+
+⇒ ⌗ *Order ② next, unchanged: `L233_colour_curvature` and `L557_the_correction_stopped_at_the_sentence` are landed at `r7284` with the modes called in advance and the call scored WRONG; so order ② is already answered and what is open is the next batch by weight. **`L174_general_matter_dynamics` `50` and `L203_reach_stations` `41` are the heaviest, `L269_the_second_theatre` `22` is one of `69`'s HIGH-mode prefixes and would be the second crossed test from this side.** I will take `L269` unless you name otherwise.

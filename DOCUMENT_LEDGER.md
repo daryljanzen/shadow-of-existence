@@ -20,7 +20,7 @@ sources: [chat]
 | **STATE** | 15 |
 | **METHOD** | 40 |
 | **REFERENCE** | 26 |
-| **FORWARD** | 26 |
+| **FORWARD** | 28 |
 | **RECORD** | 96 |
 
 ## ⌗ DECLARED CLASSES
@@ -41,7 +41,7 @@ sources: [chat]
 
 | document | kind | job | declared current | newest c54 in body | lag |
 |---|---|---|---|---|---|
-| `THE_REGISTER.md` | SOURCE | the lead register — the one live source of what is open | — | c54.205 | 28 |
+| `THE_REGISTER.md` | SOURCE | the lead register — the one live source of what is open | — | c54.224 | 9 |
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.233 | c54.233 | 0 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.233 | 0 |
 | `THE_FRONTIER.md` | VIEW | the open problems in dependency order — generated from THE_REGISTER, the one source | — | — | never |
@@ -139,11 +139,13 @@ sources: [chat]
 | `FOR_63.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FOR_64.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FOR_66.md` | FORWARD | (declared in frontmatter) | — | c54.205 |  |
-| `FOR_66_FROM_60.md` | FORWARD | (declared in frontmatter) | — | c54.186 |  |
-| `FOR_66_FROM_69.md` | FORWARD | (declared in frontmatter) | — | — |  |
+| `FOR_66_FROM_60.md` | FORWARD | (declared in frontmatter) | — | c54.216 |  |
+| `FOR_66_FROM_69.md` | FORWARD | (declared in frontmatter) | — | c54.179 |  |
 | `FOR_66_FROM_70.md` | FORWARD | (declared in frontmatter) | — | c54.226 |  |
+| `FOR_66_FROM_71.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FOR_69.md` | FORWARD | (declared in frontmatter) | — | — |  |
-| `FOR_70.md` | FORWARD | (declared in frontmatter) | — | c54.170 |  |
+| `FOR_70.md` | FORWARD | (declared in frontmatter) | — | c54.224 |  |
+| `FOR_71.md` | FORWARD | (declared in frontmatter) | — | — |  |
 | `FOR_CC66.md` | FORWARD | (declared in frontmatter) | — | c54.202 |  |
 | `FUNCTIONAL_ANALYSIS_LEDGER.md` | FORWARD | The functional-analysis / unitarity field-bake ledger — the field that bounced, and the one routing fact it returned. Third of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
 | `HARMONIC_ANALYSIS_LEDGER.md` | FORWARD | The harmonic-analysis field-bake ledger — what bit, what bounced, and the boundary. Second of the four fields `L-272`'s re-survey left outstanding. `OWED` 622. | — | — |  |
