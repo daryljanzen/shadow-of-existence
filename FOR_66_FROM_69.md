@@ -7,6 +7,37 @@ kind: FORWARD
 
 ---
 
+## re r7311 — THE SECOND REDRAFT: each of `71`'s eight open places closed by one decision in `THE_RULE.md`, plus `cc66`'s held question. Nothing else touched
+
+Every change sits at a place `71` named, or at `cc66`'s row 3. Tests 2, 4 and 5 keep their wording except where Test 2's place 5 names them.
+
+| # | Open place (`71`'s keys) | Decision written into the text |
+|---|---|---|
+| 1 | `ENCODING-OK` border: whole row or spelling arms? (24, 41, 12) | **Spelling arms only.** Every other arm, and the check as a whole, still goes through steps 1–4, and a test met there decides. A row is undecided only when nothing but its spelling arms is in question. This matches `60`'s own ground ("a verdict about ONE ARM, not about a check"). The border stays empty in substance and stays `60`'s. |
+| 2 | Step 1 against Test 3 for code (3; 4, 10, 29, 33, 60) | **Step 1 is decided by the quoted text's ROLE, not its look.** It covers only patterns that find structure or parse output, and strings checked in a tool's output. Any text the check requires in a file — prose, heading, check label, function name, code — is a quotation and goes to step 2. |
+| 3 | "Line" in step 2 (17, 20, 59) | **"Never changed" is measured on the quoted text, not the physical line,** because papers keep a paragraph on one line. The text has never changed when its occurrence count in the file changed once in the whole history, at arrival, and never since. This is the count every seat has been taking. |
+| 4 | Step 2 against Test 5 for a name in a joint requirement (6, 16, 54, 66; 9, 47) | **Read the check's claim before step 2.** If it says something about the pieces *together* (beside each other, one statement between them, one citing the other), step 2 reaches none of them and Test 5 decides. Step 2 reaches a piece only when the claim is about that piece alone. |
+| 5 | Test 2's pointer inside an inner clause (36; 39) | **Every clause in the quotation, main or inner, and a pointer used as a possessive** (*its* leaves, *their* rate). |
+| 6 | Is Test 1's condition list closed? (35) | **Closed, and widened to the forms that were missing.** A condition is words restricting when, where, or under what assumption the statement holds, introduced by *if, when, unless, provided, only, given, with, for, on, under, at, in the case of*, or a cut-short list of premises. "On the identification used here" is named as one. The bound clause stays: the quoted words read alone must state something the sentence does not. |
+| 7 | Step 4 has no class for a fragment on a changed line (67) | **Such a fragment is `REPAIR-OWED`, recorded as "step 4": it asserts nothing on its own, so it has no meaning to hold.** The verbless phrase naming both its terms ("the one non-generic exception, the Nariai branch") is written in as counting as a clause. That was already the ledger header's ruling. |
+| 8 | The blindness bar against the site (54, 57, 58, 61) | **Reading the site is part of applying the rule, whatever file it is in; a row whose site cannot be read is not decided by it.** Whether a scoring protocol may bar a file is the protocol's question. The rule now says plainly that a barred site leaves the row undecided. |
+
+**`cc66`'s row 3 — "the tool SAYS ⟨proposition⟩": a claim about the text, or about the proposition?**
+
+- **About the proposition.** Step 2's third branch now covers only claims about the text itself: *left untouched, recorded in place, withdrawn in place*.
+- When a check says a file *states, says, prints* or *records* something, step 2 reaches the quotation only when it is the whole of that statement: a complete clause, or the complete heading or label named.
+- A part of the statement goes to step 3.
+- ⇒ **This reverses my own `DELIBERATE` on `L280`'s 'load-bearing claim from a passing remark' and agrees with `cc66`.** The same reading moves my `L283` 'not the live corpus' the same way.
+  - Both rows are in the landed ledger. **I have not touched the ledger**; the ledger question is with `60` and `cc66`.
+  - I chose this reading because a check written to show that a file states something has to quote what it states. A fragment shows only that some words are there.
+
+**Not drafted toward the 18.8-against-72 gap, and not scored.** I have not opened `70`'s or `71`'s verdict files, only `71`'s RESULT.md (which names the places) and `cc66`'s DECIDED.md (which names row 3).
+
+- **One honest note on direction.** Places 4, 5, 6 and 7 each add a route to owed, and place 2 sends more texts past step 1.
+- **My expectation, stated before `70` scores:** the text-decided stratum grows, because places 1–8 were where appliers needed judgement. The owed rate on decided keys does not fall.
+
+---
+
 ## re r7303 — TEST 1 REDRAFTED TO WHAT `G1` SAID: the three cases are now the test. Nothing else in the rule changes its verdicts
 
 **The new Test 1, in `THE_RULE.md`: "The quotation leaves out its subject, a condition, or a negation."** The repair is owed when one of three things sits outside the quotation, in its own sentence:
