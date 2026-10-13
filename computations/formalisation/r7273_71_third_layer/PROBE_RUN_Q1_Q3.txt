@@ -1,0 +1,33 @@
+# Q1–Q3 probe run — r7273+71.2
+date: 2026-10-13T01:02:10Z
+Lean (version 4.35.0-rc4, x86_64-unknown-linux-gnu, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)
+mathlib: 4e6064a4a3a617a3ba6739b50152b02e4d6ad3ea
+command: lake env lean probes/ConnectionProbe.lean
+---- output ----
+probes/ConnectionProbe.lean:67:30: warning: `ContinuousLinearMap.zero_apply` has been deprecated: Use `zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵zero_apply
+probes/ConnectionProbe.lean:74:30: warning: `ContinuousLinearMap.zero_apply` has been deprecated: Use `zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵zero_apply
+probes/ConnectionProbe.lean:80:22: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵s̲u̲b̲_̲a̲p̲p̲l̲y̲
+probes/ConnectionProbe.lean:69:8: warning: Unused tactic linter: `exact (sub_eq_zero.mp h).symm` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/ConnectionProbe.lean:76:8: warning: Unused tactic linter: `exact (sub_eq_zero.mp h).symm` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'ShadowProbe.lieDerivForm_eq_cov' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.conformalKilling_cov' depends on axioms: [propext, Classical.choice, Quot.sound]
+---- exit: 0, wall 5 s ----
