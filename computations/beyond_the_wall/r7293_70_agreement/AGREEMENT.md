@@ -48,3 +48,7 @@
 ## Not a batch -- matches the glob, holds no verdict in the verdict column (r7299)
 
 - `computations/beyond_the_wall/r7303_cc66_L801_partial/BLIND_READ_TEMPLATE.tsv`
+
+## A rule application, not a double-read -- UNDECIDED in a verdict cell, never pooled (r7309)
+
+- `computations/beyond_the_wall/r7307_71_redraft_blind/BLIND_READ_71_redraft.tsv`
