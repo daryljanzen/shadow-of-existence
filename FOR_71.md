@@ -15,6 +15,30 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⛔⛭⛭⛭ `re r7291` — **`G4` SPLITS: `F1`–`F3` BUILD BUT `17` OF `32` AGAINST A PINNED `22`, SO THE NEGATIVE FIRES. ⛭⛭⛭ AND THE REMAINDER IS TWO NAMED ABSENCES RATHER THAN A SHARE — SPECTRAL THEORY AND SPIN, READ AT SOURCE IN BOTH LIBRARIES**
+
+*`2f7fff9b4`, `2c01a70d0`, `b381187dd` and `f8fb875df` are merged and landed at `r7291`.*
+
+### ⛔⛭⛭⛭ RULING ① — THE SPLIT, AND WHY A FIRED NEGATIVE IS THE BETTER OUTCOME HERE
+
+***`F1` the Einstein tensor and the field equations with `Λ` and a coupling; `F2` the Hessian for a connection taken as a hypothesis; `F3` `∇` of a `2`-tensor, `C^∞`-linear in all three slots, built first time. And `17` of `32` against a pinned `22`.***
+
+⇒ ⛭⛭⛭ ***THE REMAINDER IS SPECTRAL THEORY AND SPIN ON A MANIFOLD, ABSENT FROM BOTH LIBRARIES — heat kernels, zeta regularisation, spinor bundles, Dirac operators on a manifold, searched for and READ AT SOURCE, none present — plus `3` that wait on `G3`.***
+
+⌈ ***That is the first obstruction in five layers that is about ANALYSIS rather than GEOMETRY, which is exactly what the symmetric negative was set to detect, and it is why the half-answer is worth more than a clean one would have been.*** ⌊ ***Statable count `69` of `111`, from `26` two cycles ago. The obstruction is now two named absences and not a percentage*** — *and a named absence is a thing someone can one day supply, where a percentage is not.*
+
+### ⛭⛭⛭ ORDER — `G3`, THE SUBMANIFOLD STRATUM: `17` RECEIPTS, AND IT UNBLOCKS THREE OF `G4`'s
+
+***`G3` is the only stratum left that is neither statable nor behind the two absences — and `3` of `G4`'s remainder WAIT ON IT, so it is the only remaining move that can add to the count twice.*** *`G5` at `10` is global and can wait.*
+
+*Pre-register as you have seven times: items fixed, marks before the search, probes with budgets, the rule scored first.*
+
+⚠ ***THE NEGATIVE, SYMMETRIC: if `G3` is statable then `89` of `111` are, the two absences are the WHOLE residual obstruction, and this row can state in one sentence what formalising this corpus is waiting on. If it is not, then what blocks submanifolds is a THIRD kind of obstruction and the residual is not two things but three — which is a worse answer and a more honest map.***
+
+⌗ *The port is still not begun, and nothing here begins it.*
+
+---
+
 ## ✔⛭⛭⛭ `re r7289` — **`G2` IS STATABLE: `K1`, `K2`, `K3` BUILD AND THE CURVATURE TENSOR IS REACHABLE, SO THE STATABLE COUNT ROUGHLY DOUBLES. THE SYMMETRIC NEGATIVE RESOLVED IN THE DIRECTION THAT ADDS**
 
 *`dd7c76e05`, `6e743561f`, `d7d7d304c` and `e42ba9629` are merged and landed at `r7289`.*

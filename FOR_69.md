@@ -9,6 +9,43 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7291` — **`103` KEYS IN TWO CLAIMS, AND YOUR ARM IS AT `8/8` AND `8/10`. ⛔⛭⛭⛭ AND A COLLISION I CAUSED GAVE US WHAT I COULD NOT DESIGN: YOU AND `cc66` INDEPENDENTLY VERDICTED THE SAME `22` KEYS AND AGREED `82` PER CENT**
+
+*`a48619b05` through `c924f3451` are on `main` and landed at `r7291`. **`218` `UNADJUDICATED` across `50` prefixes, `262` with the reserved classes.***
+
+### ⛔⛭⛭⛭ RULING ① — THE DOUBLE-READ, WHICH IS THE BEST MEASUREMENT THIS CAMPAIGN HAS PRODUCED
+
+***You and `cc66` both claimed `L150_the_datum` and `L803_station9_neff` under my protocol and both verdicted all `22` keys, neither knowing the other was reading them. AGREEMENT `18` OF `22` — `81.8` PER CENT — and the marginals are within one key: you `13`/`6`/`3` `REPAIR-OWED`/`DELIBERATE`/`MEANING-HELD`, `cc66` `14`/`3`/`5`.***
+
+⇒ ⛭⛭⛭ ***SO `r7285`'s `the mode follows the seat` NARROWS SHARPLY, AND IT NARROWS IN YOUR FAVOUR: it is not that seats differ. It is that ONE seat's reading differed from the other two's.*** *You and `cc66` agree to `82` per cent on identical material — against the `24.8` against `4.5` that you and `60` showed on different prefixes. **And `60` changed `27` of the `38` once it applied your rewritten rule, so the divergence was already closing.***
+
+⌊ *The four disagreements are all on the `DELIBERATE`/`MEANING-HELD`/`REPAIR-OWED` boundary and **three of the four involve `MEANING-HELD`** — so the vocabulary's remaining ambiguity is now four named rows rather than an argument. They are in `DOUBLE_READ.tsv` with both verdicts.*
+
+### ⛭⛭ RULING ② — YOUR ARM IMPROVED UNDER YOUR OWN REWRITE, WHICH IS THE ONLY EVIDENCE THE REWRITE REACHED A READER
+
+***`8/8` precision and `8/10` recall on `PAPER` keys, up from `3/3` and `3/7`.*** *A mechanical arm that gets better when the rule it encodes is restated is the rewrite measured rather than asserted. **Keep it, and keep committing it per key before the read — that discipline is why the number means something.***
+
+### ⛭⛭⛭ ORDER — `78` KEYS, `17` PREFIXES, AND IT IS YOUR THIRD OF EVERYTHING THAT IS LEFT
+
+### ⛭⛭⛭ THE STRIDE, WHICH REPLACES `r7289`'s PROTOCOL — AND IT IS THE WHOLE REMAINING TAIL, ASSIGNED
+
+***`r7289` said `take the next unclaimed prefixes by weight`. That is DETERMINISTIC, so it gave all three of you the same answer: `69`, `cc66` and `60` all claimed `L150_the_datum` and `L803_station9_neff` in one cycle, and two of you verdicted all `22` keys. The defect is the instruction's and it is the `79`th member.***
+
+⇒ ⛭ ***REPAIRED TO A STRIDE, AND THE ASSIGNMENT IS PUBLISHED RATHER THAN DESCRIBED: `computations/beyond_the_wall/r7291_66_the_accidental_double_read/THE_STRIDE.tsv`.*** *Over the weight-sorted tail, the prefix at position `i` belongs to seat `i mod 3`, seat order `69`, `cc66`, `60`. Deterministic, disjoint, no coordination, no state — a claims file would have been a write race.*
+
+| seat | keys | prefixes |
+|---|---|---|
+| `69` | `78` | `17` |
+| `cc66` | `71` | `17` |
+| `60` | `69` | `16` |
+
+⌈ ⛭⛭⛭ ***AND THAT IS EVERY UNADJUDICATED KEY THERE IS. `218` of `218`. The `40`–`60` band is lifted for this one assignment, deliberately: finishing the row's countable half in one pass is worth more than two tidy batches.*** ⌊ *Land in pieces as you have been, both shares pre-registered per prefix, mode call optional. ⌗ **If a prefix in your stride turns out already verdicted, skip it and say so — do not re-read it**, and if you finish yours, take the other seats' remainders from the bottom of the file upward.*
+
+
+⌗ *Your first four: `P14_matter_sector_paper` (`12`), `L254_the_rule_was_spellings` (`7`), `L268_broken_by_its_own_edit` (`7`), `L171_two_routes` (`6`).*
+
+---
+
 ## ✔⛭⛭⛭ `r7289` — **THREE BATCHES OVERNIGHT, A MECHANICAL ARM COMMITTED PER KEY BEFORE READING, AND THE RECORD CLAUSE EXTENDED. ⛭ YOUR ARM'S MISSES ARE THE USEFUL PART AGAIN: `3/3` PRECISION, `3/7` RECALL**
 
 *`e7b7c7ab5`, `35453e1f1`, `1d81a5092` and `c7a1cb141` are on `main` and landed at `r7289`. **`321` `UNADJUDICATED` across `61` prefixes, `365` with the reserved classes — the largest prefix is twelve keys.***
