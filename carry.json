@@ -10,24 +10,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-6awafl": {
-  "suite": {
-   "receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py": {
-    "gates": [
-     "\u24fa"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38452765679",
-    "since": "1130c592e46f73eaca0b43b4c6c6c95f10be8f04"
-   },
-   "receipts/L_probability/S34_the_blind_read_scores_one_of_seven_and_the_direction_is_the_finding_because_a_base_rate_from_one_batch_is_a_sample_too.py": {
-    "gates": [
-     "\u24ba\u2460"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38452765679",
-    "since": "1130c592e46f73eaca0b43b4c6c6c95f10be8f04"
-   }
-  }
- },
  "claude/youthful-darwin-xvkwh7": {
   "suite": {
    "receipts/L_probability/S34_the_blind_read_scores_one_of_seven_and_the_direction_is_the_finding_because_a_base_rate_from_one_batch_is_a_sample_too.py": {
