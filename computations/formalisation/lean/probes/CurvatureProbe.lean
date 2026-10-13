@@ -1,5 +1,7 @@
 import Mathlib.Analysis.Calculus.Deriv.Inv
 import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+import Mathlib.Analysis.SpecialFunctions.Sqrt
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
 import Mathlib.Analysis.Calculus.ContDiff.Deriv
@@ -1542,6 +1544,173 @@ theorem homothety_charge (η : E →L[ℝ] E →L[ℝ] ℝ) (p v : E) (t : ℝ) 
 
 end FlatLC
 
+/-! ## `r7297`, C2 — receipt 92: in a Painlevé–Gullstrand chart `g = −dτ² + (A(s) ds − w(s) dτ)²` with `A ≠ 0`,
+nondegenerate everywhere, the rain field `V = ∂_τ + (w/A) ∂_s` is a GEODESIC field of THE Levi-Civita connection.
+`A = 1`, `s = r` is the usual chart; `A = eˢ`, `r = eˢ` makes Schwarzschild–de Sitter's profile smooth on all of `ℝ`. -/
+
+section RainPG
+
+/-- `L_p = A ds − w dτ`. -/
+noncomputable def pgL (A w : ℝ → ℝ) (p : ℝ × ℝ) : ℝ × ℝ →L[ℝ] ℝ :=
+  A p.2 • ContinuousLinearMap.snd ℝ ℝ ℝ - w p.2 • ContinuousLinearMap.fst ℝ ℝ ℝ
+
+/-- The 2D Painlevé–Gullstrand form `−dτ² + L²`. -/
+noncomputable def pgForm (A w : ℝ → ℝ) (p : ℝ × ℝ) : ℝ × ℝ →L[ℝ] ℝ × ℝ →L[ℝ] ℝ :=
+  -((ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.fst ℝ ℝ ℝ)
+      (ContinuousLinearMap.fst ℝ ℝ ℝ))
+    + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (pgL A w p) (pgL A w p)
+
+lemma pgForm_apply (A w : ℝ → ℝ) (p a b : ℝ × ℝ) :
+    pgForm A w p a b = -(a.1 * b.1) + (A p.2 * a.2 - w p.2 * a.1) * (A p.2 * b.2 - w p.2 * b.1) := by
+  simp [pgForm, pgL]; ring
+
+lemma pgForm_symm (A w : ℝ → ℝ) (p a b : ℝ × ℝ) : pgForm A w p a b = pgForm A w p b a := by
+  rw [pgForm_apply, pgForm_apply]; ring
+
+lemma pgForm_nondeg {A : ℝ → ℝ} (w : ℝ → ℝ) {p : ℝ × ℝ} (hA : A p.2 ≠ 0) (u : ℝ × ℝ)
+    (h : ∀ b : ℝ × ℝ, pgForm A w p u b = 0) : u = 0 := by
+  have h1 := h ((1 : ℝ), (0 : ℝ)); have h2 := h ((0 : ℝ), (1 : ℝ))
+  rw [pgForm_apply] at h1 h2
+  simp only [mul_one, mul_zero, sub_zero, zero_sub, neg_zero, zero_add] at h1 h2
+  have e0 : A p.2 * u.2 - w p.2 * u.1 = 0 := (mul_eq_zero.1 h2).resolve_right hA
+  have e1 : u.1 = 0 := by linear_combination -h1 - w p.2 * e0
+  have e2 : u.2 = 0 := by
+    rw [e1, mul_zero, sub_zero] at e0; exact (mul_eq_zero.1 e0).resolve_left hA
+  exact Prod.ext e1 e2
+
+/-- The PG metric as an `NDMetric` on `ℝ²`. -/
+noncomputable def pgMetric (A w : ℝ → ℝ) (hA : ∀ s, A s ≠ 0) (hAd : Differentiable ℝ A)
+    (hw : Differentiable ℝ w) : NDMetric 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ) where
+  g p := pgForm A w p
+  symm p a b := pgForm_symm A w p a b
+  nondeg p u h := pgForm_nondeg w (hA p.2) u h
+  mdiff {Y Z x} hY hZ := by
+    rw [mdiffAt_model] at hY hZ
+    rw [mdifferentiableAt_iff_differentiableAt]
+    have e : (fun y => pgForm A w y (Y y) (Z y)) = fun y =>
+        -((vf Y y).1 * (vf Z y).1) + (A y.2 * (vf Y y).2 - w y.2 * (vf Y y).1)
+          * (A y.2 * (vf Z y).2 - w y.2 * (vf Z y).1) := by
+      funext y; exact pgForm_apply A w y (Y y) (Z y)
+    show DifferentiableAt ℝ (fun y => pgForm A w y (Y y) (Z y)) x
+    rw [e]
+    have hw' : DifferentiableAt ℝ (fun y : ℝ × ℝ => w y.2) x := (hw _).comp x differentiableAt_snd
+    have hA' : DifferentiableAt ℝ (fun y : ℝ × ℝ => A y.2) x := (hAd _).comp x differentiableAt_snd
+    fun_prop
+
+/-- The rain field `V = ∂_τ + (w/A) ∂_s`. -/
+noncomputable def rain (A w : ℝ → ℝ) : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p :=
+  fun p => ((1 : ℝ), w p.2 / A p.2)
+
+lemma pg_rain_left {A : ℝ → ℝ} (w : ℝ → ℝ) {p : ℝ × ℝ} (hA : A p.2 ≠ 0) (b : ℝ × ℝ) :
+    pgForm A w p ((1 : ℝ), w p.2 / A p.2) b = -b.1 := by
+  rw [pgForm_apply]; field_simp; ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **C2, receipt 92.** The rain field is a GEODESIC field of THE Levi-Civita connection of the PG metric:
+`∇_V V = 0`. The E = 1 radial geodesics are its flow lines. -/
+theorem rain_geodesic (A w : ℝ → ℝ) (hA : ∀ s, A s ≠ 0) (hAd : Differentiable ℝ A)
+    (hw : Differentiable ℝ w) (p : ℝ × ℝ) :
+    lcConn (ℝ × ℝ) (pgMetric A w hA hAd hw) (rain A w) p (rain A w p) = 0 := by
+  set m := pgMetric A w hA hAd hw
+  have hw' : DifferentiableAt ℝ (fun y : ℝ × ℝ => w y.2) p := (hw _).comp p differentiableAt_snd
+  have hA' : DifferentiableAt ℝ (fun y : ℝ × ℝ => A y.2) p := (hAd _).comp p differentiableAt_snd
+  have dq : DifferentiableAt ℝ (fun y : ℝ × ℝ => w y.2 / A y.2) p := by
+    have := hA p.2; fun_prop (disch := assumption)
+  have hVf : HasFDerivAt (fun y : ℝ × ℝ => ((1 : ℝ), w y.2 / A y.2))
+      ((0 : ℝ × ℝ →L[ℝ] ℝ).prod (fderiv ℝ (fun y : ℝ × ℝ => w y.2 / A y.2) p)) p :=
+    (hasFDerivAt_const (1 : ℝ) p).prodMk dq.hasFDerivAt
+  have dV : DifferentiableAt ℝ (vf (rain A w)) p := hVf.differentiableAt
+  have hV : MDifferentiableAt 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ × ℝ).tangent
+      (fun q => (⟨q, rain A w q⟩ : TangentBundle 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ))) p := mdiffAt_model.2 dV
+  refine m.g_inj fun Z hZ => ?_
+  have dZ := mdiffAt_model.1 hZ
+  rw [lcConn_apply m hV hV hZ, map_zero, zero_apply]
+  have f1 : (fun y => m.g y (rain A w y) (Z y)) = fun y => -(vf Z y).1 := by
+    funext y; exact pg_rain_left w (hA y.2) (Z y)
+  have f2 : (fun y => m.g y (Z y) (rain A w y)) = fun y => -(vf Z y).1 := by
+    funext y; exact (pgForm_symm A w y (Z y) (rain A w y)).trans (pg_rain_left w (hA y.2) (Z y))
+  have f3 : (fun y => m.g y (rain A w y) (rain A w y)) = fun _ => (-1 : ℝ) := by
+    funext y; exact (pg_rain_left w (hA y.2) (rain A w y)).trans rfl
+  have dfst : HasFDerivAt (fun y => -(vf Z y).1)
+      (-((ContinuousLinearMap.fst ℝ ℝ ℝ).comp (fderiv ℝ (vf Z) p))) p :=
+    (hasFDerivAt_fst.comp p dZ.hasFDerivAt).neg
+  have hbr : ∀ A B : Π y : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) y,
+      mlieBracket 𝓘(ℝ, ℝ × ℝ) A B p = fderiv ℝ (vf B) p (A p) - fderiv ℝ (vf A) p (B p) :=
+    fun A B => by
+      rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ]; rfl
+  have hV1 : ∀ u, (fderiv ℝ (vf (rain A w)) p u).1 = 0 := fun u => by
+    show (fderiv ℝ (fun y : ℝ × ℝ => ((1 : ℝ), w y.2 / A y.2)) p u).1 = 0
+    rw [hVf.fderiv]; simp
+  simp only [kosz, f1, f2, f3, mvfderiv_const, zero_apply, hbr, sub_self, map_zero]
+  rw [mvfderiv_eq_fderiv, dfst.fderiv]
+  set a : ℝ × ℝ := fderiv ℝ (vf Z) p (show ℝ × ℝ from rain A w p) with ha
+  set b : ℝ × ℝ := fderiv ℝ (vf (rain A w)) p (show ℝ × ℝ from Z p) with hb
+  have h1 : b.1 = 0 := hV1 (Z p)
+  have k1 : m.g p (rain A w p) (a - b) = -(a.1 - b.1) := by
+    rw [show m.g p (rain A w p) (a - b) = -(a - b).1 from pg_rain_left w (hA p.2) (a - b)]; simp
+  have k2 : m.g p (rain A w p) (b - a) = -(b.1 - a.1) := by
+    rw [show m.g p (rain A w p) (b - a) = -(b - a).1 from pg_rain_left w (hA p.2) (b - a)]; simp
+  have k3 : (fderiv ℝ (vf Z) p (NormedSpace.fromTangentSpace p (rain A w p))).1 = a.1 := rfl
+  simp only [neg_apply, ContinuousLinearMap.comp_apply, ContinuousLinearMap.coe_fst']
+  linear_combination (norm := skip) -k3 - k1 / 2 + k2 / 2 - h1
+  ring_nf
+  first | rfl | simp | (congr 1)
+
+/-- Schwarzschild–de Sitter's E = 1 profile in the chart `r = eˢ`: `w(s) = v(eˢ) = √(2M e⁻ˢ + e²ˢ/α²)`. -/
+noncomputable def wSdS (M α : ℝ) (s : ℝ) : ℝ := Real.sqrt (2 * M * Real.exp (-s) + Real.exp (2 * s) / α ^ 2)
+
+lemma wSdS_diff {M : ℝ} (hM : 0 < M) (α : ℝ) : Differentiable ℝ (wSdS M α) := fun s => by
+  have hpos : 0 < 2 * M * Real.exp (-s) + Real.exp (2 * s) / α ^ 2 := by positivity
+  have h0 := hpos.ne'
+  unfold wSdS
+  fun_prop (disch := assumption)
+
+/-- **C2, receipt 92, on the named metric.** The rain field of Schwarzschild–de Sitter in the chart `r = eˢ`, where
+the metric is smooth and nondegenerate on all of `ℝ²`, is a geodesic field of THE Levi-Civita connection. -/
+theorem sds_rain_geodesic {M : ℝ} (hM : 0 < M) (α : ℝ) (p : ℝ × ℝ) :
+    lcConn (ℝ × ℝ) (pgMetric Real.exp (wSdS M α) Real.exp_ne_zero Real.differentiable_exp (wSdS_diff hM α))
+      (rain Real.exp (wSdS M α)) p (rain Real.exp (wSdS M α) p) = 0 :=
+  rain_geodesic _ _ _ _ _ p
+
+/-- **C2, receipt 92: the `sinh^{2/3}` law.** `r(τ) = (2Mα² sinh²(3τ/2α))^{1/3}` solves `ṙ = √(2M/r + r²/α²)`
+for `τ > 0`: it is a flow line of the rain field, an E = 1 radial geodesic. -/
+theorem sinh23_flow {M α τ : ℝ} (hM : 0 < M) (hα : 0 < α) (hτ : 0 < τ) :
+    HasDerivAt (fun t => (2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * t) ^ 2) ^ (1 / 3 : ℝ))
+      (Real.sqrt (2 * M / (2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * τ) ^ 2) ^ (1 / 3 : ℝ)
+        + ((2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * τ) ^ 2) ^ (1 / 3 : ℝ)) ^ 2 / α ^ 2)) τ := by
+  set k := 3 / (2 * α) with hk
+  set S := Real.sinh (k * τ)
+  set C := Real.cosh (k * τ)
+  have hS : 0 < S := Real.sinh_pos_iff.2 (by positivity)
+  have hC : 0 < C := Real.cosh_pos _
+  set F := 2 * M * α ^ 2 * S ^ 2
+  have hF : 0 < F := by positivity
+  set r := F ^ (1 / 3 : ℝ)
+  have hr : 0 < r := Real.rpow_pos_of_pos hF _
+  have hr3 : r ^ 3 = F := by
+    rw [← Real.rpow_natCast, ← Real.rpow_mul hF.le]; norm_num
+  have hFd : HasDerivAt (fun t => 2 * M * α ^ 2 * Real.sinh (k * t) ^ 2)
+      (2 * M * α ^ 2 * (2 * S * (C * k))) τ := by
+    have := (((Real.hasDerivAt_sinh (k * τ)).comp τ ((hasDerivAt_id τ).const_mul k)).pow 2).const_mul
+      (2 * M * α ^ 2)
+    convert this using 1
+    · funext y; simp [Function.comp_apply]
+    · rw [show (Real.sinh ∘ HMul.hMul k) τ = S from rfl]; push_cast; ring
+  have hrd := HasDerivAt.rpow_const (p := 1 / 3) hFd (Or.inl hF.ne')
+  convert hrd using 1
+  have hFr : F ^ ((1 : ℝ) / 3 - 1) = r / F := by
+    rw [Real.rpow_sub hF, Real.rpow_one]
+  rw [hFr]
+  have hcs : C ^ 2 = 1 + S ^ 2 := by rw [Real.cosh_sq]; ring
+  rw [Real.sqrt_eq_iff_mul_self_eq_of_pos (by positivity)]
+  field_simp
+  rw [hk]; field_simp
+  have hF' : F = 2 * M * α ^ 2 * S ^ 2 := rfl
+  linear_combination (4 * M ^ 2 * α ^ 4 * S ^ 2 * C ^ 2 - F ^ 2) * hr3 + 4 * M ^ 2 * α ^ 4 * S ^ 2 * F * hcs
+    - (2 * M * α ^ 2 * F + F * (F + 2 * M * α ^ 2 * S ^ 2)) * hF'
+
+end RainPG
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -1598,3 +1767,6 @@ end ShadowProbe
 #print axioms ShadowProbe.flat_isLeviCivita
 #print axioms ShadowProbe.homothety_nabla
 #print axioms ShadowProbe.homothety_charge
+#print axioms ShadowProbe.rain_geodesic
+#print axioms ShadowProbe.sds_rain_geodesic
+#print axioms ShadowProbe.sinh23_flow
