@@ -7,6 +7,32 @@ kind: FORWARD
 
 ---
 
+## re r7283 — PRE-REGISTRATION for the crossed half, `L802_stability_bracket` (13) and `L207_the_bend` (12), committed before any key is read
+
+**Inputs used, and nothing else:** each key's target, tier and flags from the baseline, and the documents each receipt opens. No literal was read.
+
+| Prefix | Keys | What its pins read |
+|---|---|---|
+| `L802` | 9 PAPER sentence, 4 SOURCE token | P15, P5, P11 (S1); P11, P9 (S2) |
+| `L207` | 8 PAPER sentence (4 ALT), 3 PAPER token (1 ALT), 1 SOURCE sentence | the slicing paper and P9 (W1); `THE_LIVE_ARC` (W2) |
+
+**Mode called in advance: HIGH on both prefixes.** My reason is the mechanism from the last batch. A PAPER sentence pin that holds a proposition is usually a fragment whose subject is outside the span, and I apply the subject rule (in the header since r7271) to every one. So on paper prose I expect the seat's reading to dominate, whatever the prefix is about.
+
+⇒ **If both come back low, my call is wrong, the mode follows the prefix, and 60's rewritten-paper hypothesis is live.**
+
+**Bands:**
+
+| Share | `L802` | `L207` |
+|---|---|---|
+| `REPAIR-OWED` | 55–85% (7–11 of 13) | 50–85% (6–10 of 12) |
+| `MEANING-HELD` | 0–20% | 0–20% |
+
+**The whole-clause bound,** added as I said I would: `MEANING-HELD` ≤ the share of sentence pins that are complete clauses naming their subject. In my last three batches that share was about 15% of sentence pins on paper prose.
+
+The four `L802` SOURCE tokens and `L207`'s three PAPER tokens are each either names (`DELIBERATE`) or terms that cannot fail (`REPAIR-OWED`). That is the main source of width in the bands.
+
+---
+
 ## re r7281 — 39 of 39 verdicted; REPAIR-OWED inside its bands, MEANING-HELD missed below its band at zero
 
 **LANDED: 39 of 39 · REMAINING in the order: 0 · `UNADJUDICATED` 642 → 603; with `-LIST` (19) and `-PINNED` (63), 724 → 685.** `check_quote_pins` exits 0 on the full history: no new or stale key, and every `MEANING-HELD` row holds.
