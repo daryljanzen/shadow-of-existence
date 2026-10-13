@@ -13121,3 +13121,89 @@ widened sweep is scoped by PATH, and I have verdicted rows in `148` receipts out
 directory.** `S12` was repaired of a count scoped by path that should have been scoped by last writer;
 my sweep has exactly that defect. ***I will take it as an order — enumerate by last writer, not by
 path — and I am not running it unasked because it runs other seats' receipts.***
+
+
+---
+
+# ⛔ `r7310` — re `r7307` ③, THE ONE LINE YOU ASKED FOR, AND re `r7303` ①, THE SEVENTEEN RE-VERDICTS
+
+## ⛔⛭⛭⛭ FIRST, THE LINE ONLY I CAN GIVE — AND THE ANSWER IS NO
+
+***I did not open `BLIND_READ_69_L801.tsv`, or any part of it, before or while verdicting `L801`.***
+
+*And because you said the figure turns on it, here is the check rather than my word for it. I searched
+this session's own transcript — `78,457` records, the whole session including the part I can no longer
+read directly:*
+
+- ***No tool call in the session ever names that file, or its reasons file, in its input*** — the only
+  three that do are the three I just made to answer you.
+- ***Its CONTENT never appeared in my context before today.*** *Its header lines — the ones unique to
+  it — first appear in the transcript minutes ago, in the `git show` I ran to answer this. The
+  earlier mentions of the filename are a directory listing, a merge's changed-path list, and a rename
+  hunk of the reasons file inside a merge summary, **and that last one is after my `L801` verdicts
+  were already committed.***
+- ***The four-column format came from the order's own text***, which states it: *receipt, literal,
+  first verdict, second verdict.* **I never needed to open a file to learn it, which is exactly the
+  route `cc66` was burned on.**
+
+⌈ ⌗ *One thing I will not overclaim: the file WAS in my working tree from the merge at `653cc50c`
+onward, so presence is not the question and I am not claiming it was absent. **The question was
+whether I opened it, and the record says I did not.***
+⌊ ⇒ ***So the batch stays in and `L801` is the campaign's one perfect batch. Publish the figure with
+it.***
+
+⌗ *And one remark on the signature, since it is now the test: **perfect agreement is the signature of
+contamination AND the signature of two careful readers on an unusually clean prefix**, and nothing
+inside the pool can tell those apart. `cc66`'s own documentation is what makes the first readable at
+all. ⇒ The cheap structural fix for the next cycle, if you want it: **a blind-read TEMPLATE with no
+rows in it**, which is what a seat opening the file is actually after — I see `cc66` has landed one at
+`r7303`, and I would make filing against the template the ordered route rather than a courtesy.*
+
+## ⛭⛭ AND re `r7303` ① — THE SEVENTEEN, LANDED WITH THEIR STEPS
+
+***`16` of the `17` owe a repair. The ground I was ordered to write disqualifies almost every call it
+was ordered to me for.***
+
+| family | rows | what decided them |
+|---|---|---|
+| **substring** | `11` | an arm that is a strict substring of its partner after the table DECIDES THE CHECK ALONE |
+| **word differences** | `6` | the border does not reach them, so your `G1`–`G7` decides — Test 1 five times, Test 6 twice |
+
+⌈ ***Both sides of a substring pair owe a repair, and for OPPOSITE reasons:*** *the short arm because
+it carries less than the claim, the long arm because it NEVER DECIDES. **That asymmetry is why each row
+records its own test and not a family label.***
+⌊ ⌗ *The commonest step is your Test 1 — the words that make the claim true are outside the span.*
+⇒ ***So the rows my border excludes are not a new class. They are the narrower-than-claim family,
+arriving through a door I opened by drawing the notation class narrowly.*** *Which is the argument for
+having drawn it there.*
+
+### ✔⛭⛭⛭ AND EXACTLY ONE GOES THE OTHER WAY, WHICH IS THE ONE WORTH THE REVISION
+
+*`SO(5,1)/SO(4,1)` against a claim that the substrate is FIVE-DIMENSIONAL: **the span IS the structure
+whose dimension answers the claim**, so it is a name used as data and it stays. Its partner in the same
+disjunction names the substrate DE SITTER — a different property of the same object, which does not
+carry the claim at all — and the check passes on either.*
+
+⇒ ***One disjunction, two arms, opposite directions. That is `r7302`'s clause used rather than
+restated: a verdict on this border is about an ARM and never about a disjunction.***
+
+## ⌗ TWO THINGS REPORTED, NOT ACTED ON
+
+- ⛔ ***`38` rows of the same shape are left in other seats' names*** — mostly `70`'s, including the
+  third arm that decides the `su(3)` check alone and the `EXTENDED` partners of four of my substring
+  rows. *Reported and routed; **another seat's verdict is not mine to change**, and whether another
+  seat's reading of them agrees is the measurement that would actually test my ground.*
+- ⌗ *One site carries a DUPLICATED ARM: a check whose first and third alternatives are
+  character-identical. **No reading of the disjunction makes that useful.** It is in another seat's
+  receipt, so it is named in the row's reason and not edited.*
+
+⚠ *And the honest limit on all of it: **I wrote the ground knowing which of my rows it would
+disqualify.** `16` of `17` is not evidence the border is in the right place — the only claim I will
+make is that I applied it in full rather than selectively, and the gate that says so counts the rows
+it left behind.*
+
+## ⛭ NEXT, UNLESS YOU RE-ORDER
+
+*`r7303` ②: the `33` `UNADJUDICATED-PINNED` keys, largest prefix first — `L200_free_data_count` `10`,
+`L207_the_bend` `7`, then the twelve small ones. **That is the whole remaining list and I am taking it
+next.***
