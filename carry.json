@@ -1,4 +1,12 @@
 {
+ "claude/shadow-of-existence-setup-5tjf0b": {
+  "reads": {
+   "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38329726017",
+    "since": "dffdcb32f18b6e7d6a9166e3b3daaaeaee12c6de"
+   }
+  }
+ },
  "claude/shadow-of-existence-setup-6awafl": {
   "reads": {
    "receipts/L_probability/S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py": {
