@@ -48,3 +48,33 @@ allowed.
 **What it does not do, stated.** It holds the reserved classes as declared holds and does not clear them. Clearing
 them is the backlog campaign's work. What the gate stops is any new range adding to the backlog by any route except
 an instrument that newly sees an old pin.
+
+# `r7275+70.2` — results ②: 69's two operator-flag gaps
+
+| # | quantity | predicted | measured |
+|---|---|---|---|
+| G-a | live keys newly flagged `OPEN` by the widened marker list | 6 (1–30) | **4**, all one phrase: `no third mechanism has been named`, in `U2`, `B17`, `M1`, `A3` |
+| G-b | live `PAPER` keys matching ONLY inside LaTeX comments | 4 (0–20) | **2** |
+| G-c | live `PAPER` keys matching inside a comment at all | 30 (5–150) | **79** of 1,602 |
+
+**G-a, the widening.** `_OPEN_WORDS` now carries `no … has been named/found/identified/given`, `has not been …` and
+`not yet named`. The plain `the mechanism has been named` does not flag, as checked. The four receipts that count
+OPEN keys (`S3`, `S7`, `S17`, `C64`), `check_quote_pins` and `check_pin_board` are all green with it.
+
+**G-b decides 66's question, on the rule fixed in advance: 2 is at most 5, so this is a one-site repair list, not
+a member.** The two keys:
+
+- `L222…/W1_what_remains_between_the_wall_and_a_curve_dynamics` `"until r2376+c54.179"`, in a comment of
+  `slicing_operator.tex` (`UNADJUDICATED`);
+- `…/S1_three_of_eight_stations_are_already_held…` `"THE RECEIPT WAS MORE HONEST THAN THE PAPER"`, in a comment of
+  `matter_sector_paper.tex` (`UNADJUDICATED`).
+
+Both are unadjudicated and both belong to other seats. They are routed in `FOR_66_FROM_70.md` and not edited.
+
+**G-c is the exposure, stated as context and not as a member.** 79 keys match a comment as well as the body.
+69's own exemplar is one of them: `C1_conformal_vs_isometric` is both in `P5`'s line-7 comment and in its body
+`\rcpt{}` at l.681. For each of the 79, deleting the body sentence would NOT fail the pin, because the comment still
+satisfies it.
+
+The structural repair would be for `PAPER` pins to read the paper with comments stripped. That is a change to every
+receipt's reading helper, not to the operator, so I name it and do not make it.
