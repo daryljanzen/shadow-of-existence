@@ -80,6 +80,10 @@ def gate(label, ok):
 
 CLAIM = '5c72d3f0'    # the commit that claimed the five prefixes
 PREG = '4442ec02'     # the commit that registered the four unread prefixes' shares
+AFTER = '9d9a1e89'    # the commit that carried this revision's verdicts -- the 71st member's corollary
+# ⚠ The COUNTS below are read at `AFTER`, not in the working tree: an equality on a LIVE ledger goes
+# red the moment another seat legitimately re-verdicts a row.  The backlog is the one live read kept,
+# and it is MONOTONE.
 BASE = 'corpus/quote_pin_baseline.tsv'
 PRED = 'computations/beyond_the_wall/r7296_60_the_four_unread/PREDICTION.md'
 STAMP = 'r7296+60'
@@ -137,14 +141,15 @@ gate(f'Ⓐ② ⛭⛭ and the fifth prefix is DECLARED UNCOVERED in the registrat
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓑ  THE COUNTS, AND THE BAND SCORECARD ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_all = rows_of(read(BASE))
+_after_led = _git('show', f'{AFTER}:{BASE}')
+_all = rows_of(_after_led)
 _mine = [c for c in _all if STAMP in (c[6] or '')]
 _by_pfx = collections.defaultdict(list)
 for _c in _mine:
     _by_pfx[_c[0].split('/')[1]].append(_c)
 _un_then = sum(1 for c in rows_of(_git('show', f'{PREG}:{BASE}'))
                if c[5].startswith('UNADJUDICATED'))
-_un_now = sum(1 for c in _all if c[5].startswith('UNADJUDICATED'))
+_un_now = sum(1 for c in rows_of(read(BASE)) if c[5].startswith('UNADJUDICATED'))
 _reg_after = re.search(r'Expected after all five: `(\d+)`', _pred)
 print(f'      {len(_mine)} keys verdicted across {len(_by_pfx)} prefixes; backlog {_un_then} -> '
       f'{_un_now}; the registration said {_reg_after.group(1) if _reg_after else "?"}')
