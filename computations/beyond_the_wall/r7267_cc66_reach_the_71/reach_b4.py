@@ -19,8 +19,9 @@ the binding, kept it, dropped the loop, and returned an EMPTY dict* -- so a row 
 passes.  ⇒ `graft.py` now REFUSES a kept binding to an empty container that a non-graftable
 statement fills, naming the name and the line.
   ⌗ ** AND THE MEASUREMENT THAT SAYS NOT TO BUILD THE LOOP-KEEPING CAPABILITY INSTEAD: of the
-  `30` rows still outstanding, the named function grafts ON ITS OWN in `27`, and the other `3`
-  fail on an unrelated cause.  NOT ONE of the `30` needs a filled container. **  *The six ends
+  `30` rows outstanding AFTER this batch, the named function grafts ON ITS OWN in `23`; of the
+  other `7`, three read a module-level name nothing graftable binds and four are the
+  nested-function limit already filed.  NOT ONE of the `30` needs a filled container. **  *The six ends
   are rebuilt here from `L50b`'s own `theta`, `A` and `sq3` and GATED on `L50b`'s own substrate
   equation `-X0^2 + X1^2 + X2^2 = A^2`, so the rebuild is checked and not trusted.*
 
@@ -242,8 +243,9 @@ def main():
     print('    ** AND THE LOADER NOW REFUSES AN EMPTY CONTAINER IT USED TO RETURN SILENTLY:')
     print('       `ends = {}` and `leg_wall = {}` are filled by `for` loops the graft drops, so')
     print('       a row taken through either would have been VACUOUS RATHER THAN WRONG.  Of the')
-    print('       30 rows still outstanding, NOT ONE needs a filled container -- so the refusal')
-    print('       is the whole of the fix and the loop-keeping capability is not built. **')
+    print('       30 rows outstanding after this batch, 23 graft on their own and NOT ONE needs')
+    print('       a filled container -- so the refusal is the whole of the fix and the')
+    print('       loop-keeping capability is not built. **')
     print()
     return 0
 

@@ -86,6 +86,20 @@ def pub(f):
                                          if not l.lstrip().startswith('%')))
 
 
+def _r7283():
+    """`r7283` ① batch four: the named function grafted OUT of its script, loaded on demand.
+
+    *The module is a top-level script that prints at import, so the function is lifted by AST
+    and exec'd alone.*  ⚠ ** And the loader REFUSES a table the module binds as `{}` and fills
+    in a `for` loop: it used to hand one back EMPTY with nothing to say so, which would have
+    made a check VACUOUS RATHER THAN WRONG. **"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import flat_ruled_and_discrete as _F
+    return _F
+
 def main():
     print()
     print('  P1 -- is the range complete across the Petrov types?')
@@ -179,6 +193,13 @@ def main():
     print('    doubly-ruled mechanism into P9 itself, so the mechanism and the claim it justifies now')
     print('    sit in the same paper, and the checks above guard that rather than assert the gap.')
     print()
+    _F = _r7283()
+    check('⛭ `r7283` ① COMPUTED, not cited: both ruling families lie on the quadric, are straight, and are NULL in the ambient signature to better than 1e-12, and every line of BOTH families meets each at-rest slice exactly once. Scaling the second axis so the quadric is no longer equilateral breaks the nullity, and slicing by planes through the axis breaks the inheritance',
+          _F.doubly_ruled_by_straight_null_lines()
+          and _F.ruling_residuals(b=1.5)[2] > 1.0
+          and _F.slicing_inherits_both_rulings(2, 0.5)
+          and not _F.slicing_inherits_both_rulings(0, 0.5))
+
     return 0
 
 

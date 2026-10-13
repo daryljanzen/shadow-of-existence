@@ -101,6 +101,20 @@ def unemph(t, rounds=4):
     return t
 
 
+def _r7283():
+    """`r7283` ① batch four: the named function grafted OUT of its script, loaded on demand.
+
+    *The module is a top-level script that prints at import, so the function is lifted by AST
+    and exec'd alone.*  ⚠ ** And the loader REFUSES a table the module binds as `{}` and fills
+    in a `for` loop: it used to hand one back EMPTY with nothing to say so, which would have
+    made a check VACUOUS RATHER THAN WRONG. **"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import flat_ruled_and_discrete as _F
+    return _F
+
 def main():
     print()
     print("  B13 -- is PO-2's identification stated anywhere?")
@@ -209,6 +223,11 @@ def main():
     print('     structure is the PHYSICAL one ** -- a different question from the one the row was opened')
     print('     for.')
     print()
+    _F = _r7283()
+    check('⛭ `r7283` ① COMPUTED, not cited: the root transposition sends each moved hinge ONE step. Built from FIVE stations instead of three -- a change of inputs and nothing else -- the same transposition sends a moved hinge TWO steps, so `a hop to a neighbouring hinge` is a fact about there being three stations',
+          _F.every_moved_hinge_is_a_neighbour(3)
+          and not _F.every_moved_hinge_is_a_neighbour(5))
+
     return 0
 
 

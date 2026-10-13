@@ -14133,3 +14133,45 @@ if _own_sess is None:
 
 ⌗ ***So `#364` carries TWO base-branch reds, both `60`'s and both established identical at `origin/main`: `check_cannot_fail` (cause named as `69`'s `r7271` widening) and `S25`'s `Ⓑ①`. Neither is mine to take under ruling ①, both are commented once on the PR, and nothing of mine is red.***
 
+
+---
+
+## ⛭⛭⛭ `r7283+cc66.1` — **LANDED `41` OF `59`. REMAINING `18`.** ⚠⛭⛭ **BATCH FOUR IS NINE OF NINE — AND THE LOADER COULD HAND BACK AN EMPTY TABLE AND SAY NOTHING, WHICH IS THE ONE DEFECT EVERY EARLIER FAILURE OF IT WAS TOO LOUD TO BE**
+
+*Four `(module, function)` pairs, nine rows, each with a recorded reachable converse: `L128b: diag_at` → `B29`, `B44`; `L50b: key_of` with `apply` → `B38`, `B41`, `B13`; `r7111/geometry: curvature` → the two `P15` rows; `panelA_reassign: ruling` → the two `P1` rows. **`C75`: `48` checks, all pass, `41` s. `REACHED_B4.tsv` digest `ed53a9d99621d9a8`. Nothing held.** `0323b526` is the computations, this push the receipt.*
+
+### ⚠⛭⛭⛭ THE PART THAT IS NOT A ROW COUNT, AND IT IS THE REASON THIS BATCH WAS WORTH RUNNING
+
+***`L50b` binds `ends = {}` and `L128b` binds `leg_wall = {}` at top level and fill them in a `for` loop — which is not a graftable statement kind. So the graft saw the binding, kept it, dropped the loop, and handed back an EMPTY dict.***
+
+⇒ ⚠ ***A row taken through `ends` would have been VACUOUS RATHER THAN WRONG, and that is the worse of the two failures because it PASSES.*** *Every earlier failure of this loader was loud — a `NameError` on `g`, a `GraftError` on a missing name, a refusal to guess. **This one is silent and green**: an empty dict where a six-element table belongs, and every `all(...)` over it vacuously `True`.*
+
+⌈ ***`graft.py` now REFUSES a kept binding to an empty container that a non-graftable statement fills, by name and by line.*** *And the refusal is **gated additive** — `Ⓒ⑤` re-grafts four functions the earlier batches took and all four still graft, so no landed row is withdrawn by the guard. ⌊ ⌗ *`Ⓒ①` proves the hazard from each module's OWN syntax tree rather than from the symptom.*
+
+⌗ ⛭⛭ ***AND THE MEASUREMENT THAT SAYS NOT TO BUILD THE LOOP-KEEPING CAPABILITY, which is the same shape as the nested-function gate you ratified at `r7283` ruling ②:*** *of the `30` rows outstanding after this batch the named function grafts **ON ITS OWN in `23`**; of the other `7`, three read a module-level name nothing graftable binds, and four are the nested-function limit already filed at `r7267` ③. **NOT ONE of the `30` needs a filled container**, so the refusal is the whole of the fix. *The six ends are rebuilt from `L50b`'s own `theta`, `A` and `sq3` and **gated on `L50b`'s own substrate equation** $-X_0^2+X_1^2+X_2^2 = A^2$, so the rebuild is checked rather than trusted.*
+
+⌗ ⚠ ***One correction to `0323b526`'s own commit message, which said `27` of `30`.*** *That figure was measured on the pre-batch set, which counted batch four's own nine as outstanding and batch two's nine HELD rows as settled. On the set that is actually outstanding it is `23`, and the four rows the difference adds were already filed as a stated limit rather than as owed work. **`C75` carries the correction in its own docstring with the withdrawn figure left standing above it.***
+
+### ⛭⛭ A REACHABLE CONVERSE SHARPENED A PREDICATE INSTEAD OF FAILING A ROW
+
+***`The constant-$\tau$ slice is exactly flat` read off the SCALAR curvature would have PASSED on the Schwarzschild spatial slice, whose $R$ is `0` and whose Kretschmann is $6r_s^2/r^6$.***
+
+⇒ *So the converse did not fail the row — **it found the predicate reading a quantity that does not separate flat from Ricci-flat.*** *The predicate now reads the invariant: on `r7111`'s own constant-$\tau$ slice, Ricci zero, scalar zero, **Kretschmann zero**, with `10` of `27` Christoffels non-zero so the flatness is not a coordinate accident. The at-rest $S^3$ slice gives $R=6$ and the Schwarzschild slice is recorded as the converse that exposed the defect.*
+
+⌗ *The other eight in one line each, since a ruling is as long as its measurement: the **plaquette** round two walls in both orders is the identity and so is the zero-winding class, while a winding-one loop gives a primitive cube root of unity — **flat and not trivial** — and a non-diagonal monodromy of the same order `3` breaks it. The **horn swap** is a fixed-point-free involution whose three 2-cycles each join ONE hinge's two ends, of order `2` in a group of order `12`; the same keying on a one-parameter rotation gives `12` distinct keys in `12` steps and never closes. The **root transposition** sends each moved hinge ONE step at three stations and TWO at five, so `a hop to a neighbouring hinge` is a fact about there being three. The **SdS seam** is a root of $f$ at finite positive radius where the Kretschmann invariant is finite and at $r\to0$ it diverges. Both **ruling families** lie on the quadric, are straight, and are null to `1e-12`, and every line of both meets each at-rest slice exactly once while a slicing by planes through the axis does not.
+
+### ✔ BOTH DOUBTS I RAISED BEFORE THE BATCH RESOLVE IN THE ROWS' FAVOUR
+
+*At `r7281+cc66.3` I said I wanted to check two before taking them, because `B39` taught that the backlog can name a function one notch off the quantity.* ⇒ ✔ ***`key_of` keys matrices, but with `apply` it reaches BOTH halves of `is a discrete horn swap`*** — the map of the six ends and the discreteness — ***and `ruling` is not a plotting parameterisation but the quadric's two straight-line families, with the converse named in the module's OWN docstring*** (`a=b=alpha => null rulings = light cone`). *Neither is a `B39`.*
+
+### ❓⚠ ONE HOLDER IS WITHHELD AND ROUTED RATHER THAN EDITED, AND IT IS THE SIXTH INSTANCE OF THE SAME SHAPE
+
+***`P15_the_rate_rule_reaches_the_projection_only_through_the_identification…` carries a standing gate `Ⓕ③` asserting that `it computes NOTHING, which is what the order asked for`, whose predicate is `len(CHECKS) >= 12`.***
+
+⇒ ⚠ ***Adding the computed check would make that gate's own LABEL false while its PREDICATE still passed.*** *That is the store-live-state-as-a-pass-condition shape for the sixth time this cycle — and the first where the stored state is a claim about the file's own character rather than a count.*
+
+⌈ ***And the conflict is between two of YOUR orders, not between me and a receipt:*** *the order `Ⓕ③` cites asked that receipt to compute nothing, and `r7283` ① asks this seat to compute that row. **`r7283` ① is the later order, but ruling ① says a seat does not edit another seat's receipt and I did not break this one** — so I am not resolving it by rewriting another seat's claim.* ⌊ ⇒ ***The row is TAKEN — the computation is in `C75` and in `REACHED_B4.tsv` — and only the holder edit is withheld.*** *`C75`'s `Ⓕ②` gates the withholding **by that receipt's own standing claim**, so it is a measurement in the receipt rather than an omission from it. *Seven of the eight holders carry `_r7283` and all seven run green.*
+
+⌗ ***What I need from you is one line: either that gate's label is yours to amend, or the row stands computed in `C75` alone and the holder keeps its `computes NOTHING` claim.*** *I will not ask again; whichever you say, it is applied directly.*
+
+⌗ *`r7243` stands. Next, in order: `r7283` ruling ③'s paper read at the four `GEOMETRY-NOT-RECORDED` loci and the one `OBJECTS-NOT-RECORDED` locus — a full turn on `P17`, not a grep, with `no metric stated at the locus` routed as a GAP IN THE PAPER rather than held. Then the rest of the `18`, then the `12` `EXTEND`, then order ②'s zero-mode function. **And for `L174`/`L203` I will give you my MODE call before I read a key, as ordered.***

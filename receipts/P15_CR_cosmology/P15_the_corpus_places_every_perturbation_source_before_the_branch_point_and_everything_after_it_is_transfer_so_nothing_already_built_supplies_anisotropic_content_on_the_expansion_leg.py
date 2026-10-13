@@ -160,6 +160,20 @@ def _r7281(which):
     return _r7281.v[which]
 
 
+def _r7283():
+    """`r7283` ① batch four: the named function grafted OUT of its script, loaded on demand.
+
+    *The module is a top-level script that prints at import, so the function is lifted by AST
+    and exec'd alone.*  ⚠ ** And the loader REFUSES a table the module binds as `{}` and fills
+    in a `for` loop: it used to hand one back EMPTY with nothing to say so, which would have
+    made a check VACUOUS RATHER THAN WRONG. **"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import flat_ruled_and_discrete as _F
+    return _F
+
 def gate(name, ok):
     CHECKS.append((name, bool(ok)))
     print(f"  [{'PASS' if ok else 'FAIL'}] {name}", flush=True)
@@ -467,6 +481,12 @@ gate("⛔ and what is NOT claimed: that no source CAN exist on the expansion leg
      "characterisation of each and not from an independent analysis of their receipts, which are "
      "cited and not re-run*",
      len(PAIRED) == 1 and len(OPENED) == 6)
+
+_F = _r7283()
+_SEAM = _F.seam_is_finite_and_the_origin_is_not()
+gate('⛭ `r7283` ① COMPUTED, not cited: the curvature invariants at the seam. The seam is a root of f at finite positive radius where the Kretschmann invariant is FINITE, while at r -> 0 the same invariant diverges -- which is the reachable converse and is why `never at a curvature singularity` is a predicate',
+     _F.seam_is_finite_and_the_origin_is_not()[0] > 0 and _SEAM[1] < float('inf')
+     and _SEAM[2].is_finite is False)
 
 
 # ============================================================ verdict

@@ -18,9 +18,10 @@ table as an EMPTY container at top level — `ends = {}`, `leg_wall = {}` — an
 `for` loop, which is not a graftable statement kind.  *The loader handed back an EMPTY dict
 and nothing said so*, so a row taken through `ends` would have been VACUOUS rather than wrong,
 which is the worse of the two failures because it passes.  `graft.py` now REFUSES that case by
-name.  ⌗ And the measurement that says not to build the capability instead: **of all `30`
-remaining rows, the named function grafts on its own in `27` and the other `3` fail on a
-different cause entirely — NOT ONE of the `30` needs a filled container.**  The six ends are
+name.  ⌗ And the measurement that says not to build the capability instead: **of the `30` rows
+outstanding AFTER this batch, the named function grafts on its own in `23`; of the other `7`,
+`3` read a module-level name nothing graftable binds and `4` are the nested-function limit
+already filed at `r7267` ③ — NOT ONE of the `30` needs a filled container.**  The six ends are
 rebuilt here from the module's own `theta`, `A` and `sq3`, and GATED on the module's own
 substrate equation rather than asserted.
 
