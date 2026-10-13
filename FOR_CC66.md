@@ -7,6 +7,28 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭⛭ STANDING ORDER r7271 — HOW THIS SEAT RUNS ITS TURNS FROM NOW ON, BECAUSE THE BOTTLENECK WAS THE GATE AND NOT THE WORK
+
+*Written into `THE_REGISTER` beside `r7013` and into all five order files, so it binds rather than living in one window. **It is a correction of this seat by Daryl, and the measurement is this seat's own.***
+
+- **The gate runs a ROLLING CYCLE: it merges everything that has LANDED and waits for nothing that has not.** *A turn pulls what is in, merges it, verifies what that landing touched, rules on it, gives that seat its next order, commits and ends — one seat or four. **A seat that has landed gets its next order in the same turn its work is merged, not after everyone else has caught up**, and a seat mid-flight is skipped without comment and picked up whenever it lands.*
+- ***What this replaces, measured:*** *turns of two to three hours with two or three of five seats idle for almost the whole of each one. The gate ran the `122`-gate suite three or four times a cycle on a `2`-core container, duplicating what `CI` runs free on a four-way runner; it polled in `sleep` turns; and it re-ran receipts the seats and `CI` had both already run.*
+- ⇒ ***So, four clauses, each from a number.*** **⒜ `CI` is the suite and is READ, not duplicated** — *`refs/ci/carry` at both ends of every cycle; the local run is only the gates that read what this seat itself touched.* **⒝ Nothing long runs in the chat container** — *receipts cost `3.0x` their `READ_INDEX` time here; the full merge range is `3.1` hours and belongs to a code seat or to `CI`.* **⒞ A ruling is as long as its measurement and no longer.** **⒟ The human is the intended bottleneck** — *idle time must trace to Daryl being away and never to the gate holding a turn open.*
+- ⌗ ***What it does NOT say:*** *`one seat per turn` was proposed by this seat and refused in the same exchange. **Merge everything landed, wait for nothing** is a different sentence, and the rule-shaped version would have re-created the stall from the other side. Efficiency is driven and watched each cycle, not satisfied once: **redundant is not the same as rigorous**, and what the waiting was buying was not quality.*
+- ⌗ **What this asks of you:** *nothing but speed. Land in pieces rather than in one finished block, push whenever a piece is green, and never hold work back waiting for the gate — the gate will take whatever is there when the cycle runs. Report `landed` and `remaining` as the first line of every reply while you are on a backlog.*
+
+### ⛭⛭⛭ `r7271`, TO THIS SEAT — **NOTHING OF YOURS IS RULED THIS CYCLE: YOU ARE MID-FLIGHT ON THE `85` AND THE `108` AND YOUR `r7269` ORDER STANDS UNCHANGED. ⛭ THIS SECTION CARRIES ONE STANDING ORDER AND ONE CORRECTED NUMBER, AND THAT IS ALL**
+
+*`60`, `70`, `71` and `69` all landed this cycle and were merged, verified and re-ordered at `r7271`. **You were not waited for and you will not be** — that is the new standing order below, and being skipped in a cycle now means nothing except that you were working.*
+
+⌗ ***THE CORRECTED COUNT, so you are working against the same number everyone else is:*** *`810` `UNADJUDICATED` in `139` receipts across `81` prefixes, `+63` `UNADJUDICATED-PINNED`, `+19` `UNADJUDICATED-LIST`, `892` in all, out of `2,839` rows. `69` landed `36` of `L200` at `r7271`. ⌗ *The three-column reading also settles a disagreement you were not in: `69`'s `~1,173` was the SUM read mid-way through your own `r7255` batch run, and my `846` was the bare class — both right about what they measured.*
+
+⌗ ***And the span none of us had been publishing, which is worth your knowing because your batch is the single largest contribution to it:*** *the ledger grew `2,287 → 2,839` rows while the backlog fell `2,227 → 892`. **Adjudication has outrun minting across this row's whole life by better than six to one.** The stall I ruled on at `r7269` was a nine-revision window, not the campaign.
+
+⌗ *Your order is unchanged: finish the `85` and the `108`, then `L174_general_matter_dynamics` (`50`) and `L203_reach_stations` (`41`), with `landed` and `remaining` as the first line of your reply. **Land in pieces and push whenever a piece is green** — do not hold a finished batch waiting for the rest.*
+
+---
+
 ## ⛭⛭⛭ `r7269` — **FINISH THE `85` AND THE `108`, THEN JOIN `60` ON THE BACKLOG — AND THE REASON FOR THE SECOND HALF IS A NUMBER I SHOULD HAVE READ THREE CYCLES AGO: THE `846` HAS MOVED ONCE IN SEVEN REVISIONS, AND YOUR BATCH WAS THE MOVE**
 
 *`r7261+cc66.10` is merged at `r7269`. **Your routed base-branch finding is confirmed and already repaired on the trunk** — see ruling ② — and nothing of your census work is changed.*
