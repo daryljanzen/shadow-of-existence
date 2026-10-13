@@ -1,0 +1,443 @@
+probes/CurvatureProbe.lean:84:32: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:84:63: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:73:64: warning: Variable name `hY` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hY
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/CurvatureProbe.lean:179:17: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:179:48: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:184:13: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:184:44: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:219:15: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:219:46: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:220:43: warning: This simp argument is unused:
+  ContinuousLinearMap.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply, ContinuousLinearMap.smulRight_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:237:13: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵s̲u̲b̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:241:10: warning: `ContinuousLinearMap.zero_apply` has been deprecated: Use `zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵zero_apply
+probes/CurvatureProbe.lean:296:60: warning: This simp argument is unused:
+  inTangentCoordinates_model_space
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [inCoordinates_tangent_bundle_core_model_space]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:319:37: warning: This simp argument is unused:
+  LinearMap.flip_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [map_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:320:37: warning: This simp argument is unused:
+  LinearMap.flip_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [map_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:376:6: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:381:6: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:430:19: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:430:50: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:431:47: warning: `ContinuousLinearMap.coe_comp'` has been deprecated: Use `ContinuousLinearMap.coe_comp` instead
+
+Hint: Replace the deprecated name:
+  ContinuousLinearMap.coe_comp'̵
+probes/CurvatureProbe.lean:431:47: warning: This simp argument is unused:
+  ContinuousLinearMap.coe_comp'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply, ContinuousLinearMap.smulRight_apply,
+    Function.comp_apply, smul_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:432:10: warning: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply, ContinuousLinearMap.smulRight_apply,
+    ContinuousLinearMap.coe_comp', smul_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:474:75: warning: This simp argument is unused:
+  Prod.fst_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [fun x y => (fa x y).1, fun x y => (fa x y).2, fun x y => (fs x y).1, fun x y => (fs x y).2,
+    fun c x => (fm c x).1, fun c x => (fm c x).2, Prod.snd_add, Prod.smul_fst, Prod.smul_snd, smul_eq_mul, Prod.fst_sub,
+    Prod.snd_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:475:6: warning: This simp argument is unused:
+  Prod.snd_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [fun x y => (fa x y).1, fun x y => (fa x y).2, fun x y => (fs x y).1, fun x y => (fs x y).2,
+    fun c x => (fm c x).1, fun c x => (fm c x).2, Prod.fst_add, Prod.smul_fst, Prod.smul_snd, smul_eq_mul, Prod.fst_sub,
+    Prod.snd_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:475:20: warning: This simp argument is unused:
+  Prod.smul_fst
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [fun x y => (fa x y).1, fun x y => (fa x y).2, fun x y => (fs x y).1, fun x y => (fs x y).2,
+    fun c x => (fm c x).1, fun c x => (fm c x).2, Prod.fst_add, Prod.snd_add, Prod.smul_snd, smul_eq_mul, Prod.fst_sub,
+    Prod.snd_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:475:35: warning: This simp argument is unused:
+  Prod.smul_snd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [fun x y => (fa x y).1, fun x y => (fa x y).2, fun x y => (fs x y).1, fun x y => (fs x y).2,
+    fun c x => (fm c x).1, fun c x => (fm c x).2, Prod.fst_add, Prod.snd_add, Prod.smul_fst, smul_eq_mul, Prod.fst_sub,
+    Prod.snd_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:475:50: warning: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [fun x y => (fa x y).1, fun x y => (fa x y).2, fun x y => (fs x y).1, fun x y => (fs x y).2,
+    fun c x => (fm c x).1, fun c x => (fm c x).2, Prod.fst_add, Prod.snd_add, Prod.smul_fst, Prod.smul_snd,
+    Prod.fst_sub, Prod.snd_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:475:63: warning: This simp argument is unused:
+  Prod.fst_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [fun x y => (fa x y).1, fun x y => (fa x y).2, fun x y => (fs x y).1, fun x y => (fs x y).2,
+    fun c x => (fm c x).1, fun c x => (fm c x).2, Prod.fst_add, Prod.snd_add, Prod.smul_fst, Prod.smul_snd, smul_eq_mul,
+    Prod.snd_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:475:77: warning: This simp argument is unused:
+  Prod.snd_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [fun x y => (fa x y).1, fun x y => (fa x y).2, fun x y => (fs x y).1, fun x y => (fs x y).2,
+    fun c x => (fm c x).1, fun c x => (fm c x).2, Prod.fst_add, Prod.snd_add, Prod.smul_fst, Prod.smul_snd, smul_eq_mul,
+    Prod.fst_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:614:13: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:614:44: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:678:45: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:691:13: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:691:44: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:705:13: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:705:44: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:746:13: warning: `ContinuousLinearMap.zero_apply` has been deprecated: Use `zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵zero_apply
+probes/CurvatureProbe.lean:747:13: warning: `ContinuousLinearMap.zero_apply` has been deprecated: Use `zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵zero_apply
+probes/CurvatureProbe.lean:842:72: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:843:4: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵s̲u̲b̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:843:35: warning: `ContinuousLinearMap.neg_apply` has been deprecated: Use `neg_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `neg_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵n̵e̵g̵_̵a̵p̵p̵l̵y̵n̲e̲g̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:947:9: warning: `mfderiv_coe_sphere_injective` has been deprecated: Use `injective_mvfderiv_subtypeVal_sphere` instead
+
+Note: The updated constant has a different type:
+  ∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {n : ℕ}
+    [inst_2 : Fact (finrank ℝ E = n + 1)] (v : ↑(sphere 0 1)), Function.Injective ⇑(d% Subtype.val v)
+instead of
+  ∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {n : ℕ}
+    [inst_2 : Fact (finrank ℝ E = n + 1)] (v : ↑(sphere 0 1)), Function.Injective ⇑(mfderiv% Subtype.val v)
+probes/CurvatureProbe.lean:1203:8: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/CurvatureProbe.lean:1370:13: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+probes/CurvatureProbe.lean:1659:10: warning: Unused tactic linter: `rfl` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/CurvatureProbe.lean:1659:23: warning: Unused tactic linter: `(congr 1)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/CurvatureProbe.lean:1659:23: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+probes/CurvatureProbe.lean:1831:53: warning: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+probes/CurvatureProbe.lean:1871:45: warning: This simp argument is unused:
+  sub_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.comp_apply, neg_apply, add_apply, smul_apply, ContinuousLinearMap.coe_fst',
+    ContinuousLinearMap.coe_snd', smul_eq_mul, fts_apply, zero_apply, ContinuousLinearMap.prod_apply, gl, Prod.fst_sub,
+    Prod.snd_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:1872:34: warning: This simp argument is unused:
+  ContinuousLinearMap.coe_snd'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.comp_apply, sub_apply, neg_apply, add_apply, smul_apply,
+    ContinuousLinearMap.coe_fst', smul_eq_mul, fts_apply, zero_apply, ContinuousLinearMap.prod_apply, gl, Prod.fst_sub,
+    Prod.snd_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:1873:54: warning: This simp argument is unused:
+  Prod.snd_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.comp_apply, sub_apply, neg_apply, add_apply, smul_apply,
+    ContinuousLinearMap.coe_fst', ContinuousLinearMap.coe_snd', smul_eq_mul, fts_apply, zero_apply,
+    ContinuousLinearMap.prod_apply, gl, Prod.fst_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:2003:66: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:2041:25: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:2041:57: warning: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/CurvatureProbe.lean:2069:51: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵s̲u̲b̲_̲a̲p̲p̲l̲y̲
+probes/CurvatureProbe.lean:2205:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'ShadowProbe.curv_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curv_smul_middle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curv_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.cov_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curv_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.contMDiffCov_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.scal_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curv_conf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Rconf_eq_curv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.scal_conf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.trG_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.einstein_conf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.hess_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.hess_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.hessConf_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.box_conf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.covT_smul_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.covT_smul_Y' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.covT_smul_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sff_smul_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sff_smul_Y' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sff_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.pullG_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.pullG_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.dsFlat_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.dsFlat_pull' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.nConf_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sff_conf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.prodG_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.prodG_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.roundG_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.roundG_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.period_isCovering' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.rot_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.rot_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.wseam_C1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.wseam_not_C2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.wick_bijOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.koszul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.lc_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.covConf_torsion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.covConf_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.covConf_isLeviCivita' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.kosz_tensorial₁' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.kosz_tensorial₃' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.lcAux_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.lcConn_torsion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.lcConn_compat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.lcConn_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.flatCov_torsion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.flatCov_compat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.flat_isLeviCivita' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.homothety_nabla' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.homothety_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.rain_geodesic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sds_rain_geodesic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sinh23_flow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.surface_gravity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.kappa_half_fprime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.unitU_geodesic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.interior_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.cycloid_proper_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.interior_geodesic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.killing_of_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.gowdy_killing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.lcConn_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.lcGam_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.lcConn_contMDiffCov' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.pg_contMDiffCov' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.dg_contMDiffCov' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.diag4_contMDiffCov' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.pg_curv_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
