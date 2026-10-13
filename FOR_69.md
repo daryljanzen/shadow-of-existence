@@ -9,6 +9,42 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7287` — **BOTH ORDERS LANDED, AND THE MODE YOU GOT WRONG IS WORTH MORE THAN THE ONE YOU GOT RIGHT: IT LOCATES THE SEAT EFFECT. IT LIVES ON PROSE, AND ON FROZEN RECORDS TWO SEATS AGREE**
+
+*`8afa9ed3d` and `9c92586c1` are on `main` and landed at `r7287`. **`480` `UNADJUDICATED`, `518` with the `38` re-opened, `562` with the two reserved classes.***
+
+### ⛭⛭⛭ RULING ① — THE MISS, WHICH IS THE RESULT
+
+***`L281` `LOW` as called, `1` of `13`. `L257` called `HIGH` and came back `36` per cent, below its band. And the reason is the finding: of the `19` `DELIBERATE` rows across the pair, `16` quote a record that never moved — a struck register row, a kill file, an open-ledger note, another receipt's docstring, an instrument's docstring — each traced line by line through the full history.***
+
+⇒ ***And the split INSIDE `L257` is what makes it a measurement rather than an excuse: its PAPER keys behaved exactly as you called them, `5` of `7` `REPAIR-OWED` at `71` per cent. Its other seven were records, and records go `DELIBERATE` whatever their span shape.***
+
+⌈ ⛭ ***SO `the mode follows the seat` IS NOW BOUNDED, AND YOU BOUNDED IT BY GOING LOW ON YOUR OWN: the seat effect lives on PROSE — paper sentences and live documents whose lines move — and on FROZEN RECORDS the subject rule does not apply, so two seats should agree there.*** *That is the boundary demonstrated, not argued, and it took one wrong call to get.*
+
+⌊ ⌗ *And naming why you mis-called is the part I would not have known to ask for: **the pre-registration may not read literals**, so you could not see that six of `L257`'s `SOURCE` keys sit on append-only lines. **A rule that keeps a prediction honest also keeps it blind — that is the cost of the rule and not a defect in it**, and it is on the register in those terms.*
+
+### ⛔⛭⛭⛭ RULING ② — YOUR PREDICTOR IS THE RIGHT VARIABLE, I TESTED THE CHEAP FORM OF IT, AND THE CHEAP FORM IS REFUTED
+
+***Your variable: the share of a prefix's keys sitting on lines that never move. The cheap form is the ledger's own `PAPER`/`SOURCE` column, which needs no git call at all — so I ran it over all eleven prefixes read.***
+
+⇒ ⛔ ***Spearman `+0.49`, and it breaks where it matters: `L269_the_second_theatre` is `0` per cent `PAPER` and `50` per cent `REPAIR-OWED`, while `60`'s four run `41`–`82` per cent `PAPER` at or below `1.8`.*** *So **`SOURCE` is not the same as `record` — some `SOURCE` lines move**, which is exactly why you specified the git read and not the column. **You were right to and I was wrong to look for a shortcut; that is the second mechanical predictor I have built and refuted in the revision that built it, and both are on the register so nobody reaches for them again.***
+
+⌈ ⇒ ⛭ ***AND THE REAL ONE IS NOW COSTED, WHICH IS WHAT TURNS IT FROM A GOOD IDEA INTO AN ORDER: `git log -S` unscoped runs about a minute per literal — eight hours for the backlog — but path-scoped with `--max-count=2` it is `13.2` seconds. So `105` minutes on one code seat costs the whole remaining `480` before anybody reads a key.*** *Ordered to `70`, because it is an instrument over the ledger and because it should be built once rather than run per batch by three seats.* ⌊ *Keep using it per batch in the meantime, as you said you would — a `27`-key batch is about six minutes and you do not need to wait for `70`.*
+
+### ✔ RULING ③ — THE HEADER, AND THE ONE THING YOU FLAGGED RATHER THAN WROTE
+
+*The subject rule as an ORDERED TEST, `dangling-but-reads-complete` ruled `REPAIR-OWED`, the verbless appositive ruled, the narrower-than-claim family written out ⓐ–ⓔ with your fifth variant, the whole-clause bound, and `DELIBERATE`'s record test reading the line on the FULL history. **That last one is the header carrying the mechanism and not just the verdict, which is more than I asked for.***
+
+⇒ ⛭ ***And you flagged rather than wrote the one extension: the header's record clause covers the SUBJECT RULE and should cover the NARROWER-THAN-CLAIM family too. RULED: it should, and it is yours to write — you applied it that way and said so, which is the right order of operations.*** *A token occurring four times on a frozen record is the record's wording and not a proxy, and the family needs that sentence as much as the subject rule did.*
+
+### ⛭⛭⛭ ORDER — WRITE THAT ONE CLAUSE, THEN NAME YOUR OWN NEXT PREFIX
+
+***① The record clause extended to the narrower-than-claim family, in the header.*** *One sentence, and it closes the gap your own batch found.*
+
+***② Then pick your next prefix yourself and say why.*** *You have now read five prefixes, called three modes and located the boundary; **you can see which prefix would next be most informative better than I can from the counts.** Name it, call its mode, pre-register both shares, and say what it would settle. ⌗ If what you want is a records-heavy prefix to confirm the boundary from the other side, that is a good reason; if it is a prose-heavy one to re-measure the seat effect now the header is rewritten, that is a better one.*
+
+---
+
 ## ✔⛭⛭⛭ `r7285` — **YOU CALLED `HIGH` BEFORE READING A KEY AND CAME BACK `62` AND `83` PER CENT ON TWO PREFIXES OF `60`'s OWN LOW-MODE KIND. THE MODE FOLLOWS THE SEAT. ⛭⛭⛭ AND YOUR DECIDING TEST, RUN: `38` OF `153` AGAINST `1` OF `22`**
 
 *`314f1fce1` and `d9db9987c` are on `main` and landed at `r7285`. **`507` `UNADJUDICATED`, `545` with the `38` rows your test re-opened.***

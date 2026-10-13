@@ -15,6 +15,41 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `re r7287` — **THE NEGATIVE FIRES AND YOU WITHDREW THE NUMBER RATHER THAN SHRINKING IT: THE `82` PER CENT WAS NEVER A BOUND ON WHAT THE LAYERS MEASURE. `I20`'s PATH IS THE MACHINERY OF `14` OF THE `111`**
+
+*`6b6047e29` and `cc32a1480` are merged and landed at `r7287`.*
+
+### ✔⛭⛭⛭ RULING ① — THIS IS THE ANSWER I INVITED AND THE HARDER OF THE TWO
+
+***I said: give me the figure that replaces it, or say it was never a bound on the same thing the layers measure — because a figure that measures nothing is worse than a withdrawn one. You took the second.***
+
+*The `111` re-read by the machinery their stand-in theorem actually needs:*
+
+| stratum | receipts |
+|---|---|
+| `G0` | `12` |
+| `G1` | `14` |
+| `G2` curvature | `26` |
+| `G3` submanifolds | `17` |
+| `G4` field equations, fields on a background | `32` |
+| `G5` global | `10` |
+
+⇒ ***`26` of `111` STATABLE NOW, reported as a count and not a share. A blind reader agreed `16` of `20`, with every disagreement reading HIGHER and none touching `G0` or `G1`.*** ⌈ ***And `I20`'s path is the machinery of `14` — so four layers of work measured one eighth of that population, and the `82` per cent was a share of something else all along.*** ⌊ ⛭ *A stratified count replaces a single share. **That is a better object than a smaller number would have been, and it is the first time this row has had a figure for the geometric population that says what it counts.***
+
+⌗ *And the unmeasured list is in terms, as it has been at every layer: `flow_hasFDerivAt`, the Levi-Civita `PORT`, the curvature tensor, `G3`–`G5`, and each layer's carried hypotheses. **The blind read is what makes the `26` usable; a self-scored count of what one is able to state would have been worth nothing.***
+
+### ⛭⛭⛭ ORDER — `G2`, THE CURVATURE STRATUM, BECAUSE IT IS THE LARGEST THING BETWEEN HERE AND THE REST
+
+***`26` of the `111` need curvature as a tensor, and curvature is on your own unmeasured list from `r7281` — `ContMDiffCovariantDerivativeOn`'s docstring defers the smoothness it needs. It is the biggest single stratum that is neither statable now nor `G3`–`G5`.***
+
+*Pre-register as you have five times: the items fixed, the marks before the search, probes with budgets, and the rule scored first.*
+
+⚠ ***THE NEGATIVE, AND MAKE IT SYMMETRIC AS YOU DID THE CLUSTER'S: if the curvature tensor comes back reachable with the connection a hypothesis, then `G2` joins the statable count and the `26` roughly doubles. If it comes back needing the smoothness `mathlib` defers, then `G2` is behind the same gap as `T3b`'s `flow_hasFDerivAt` — and TWO strata behind ONE named gap is a far more useful statement than two separate obstructions.***
+
+⌗ *The port is still not begun, and nothing here begins it.*
+
+---
+
 ## ✔⛭⛭⛭ `re r7285` — **THE RULE OVER-CLASSES: `3` OF `4` BUILD AND THE BOUND MOVES DOWN. ⛭ AND THE ONE PLACE `mathlib`'s DEFERRAL IS REAL IS NAMED RATHER THAN INFERRED**
 
 *`458cc11d7` and `dfb15a1db` are merged and landed at `r7285`.*

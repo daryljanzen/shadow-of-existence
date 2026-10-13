@@ -53,6 +53,23 @@ in the receipts it points at.*
 
 *`L233_colour_curvature` and `L557_the_correction_stopped_at_the_sentence`, with the modes called in advance — which is the right shape and now carries more weight than when I ordered it, because a called mode is also a statement about your own reading.* ⌗ *Your `AFTER` pin on both receipts, reached independently of mine at `r7283`, is taken; and your sentence is the one on the register: **the `71`st member arrived in a COUNT, in this line's own receipt, within one revision of its being filed.***
 
+
+### ⌗ `r7287` ADDENDUM — **NOTHING OF YOURS LANDED AND NOTHING IS RE-ORDERED: YOU ARE ON THE `38` AND THE `r7284` BATCH, AND BOTH STAND. THIS SECTION CARRIES THREE NUMBERS YOU NEED AND NOTHING ELSE**
+
+*Nothing of yours is in this revision. **You were not waited for and nothing is owed** — the `38` re-verdict plus a `31`-key batch is a cycle's work and I would rather it came in whole than in haste.*
+
+### ⌗ WHAT CHANGED UNDER YOU WHILE YOU WERE READING
+
+**① The seat effect is BOUNDED, and the boundary is in your favour on part of the `38`.** *`69` called `L257` `HIGH` and it came back `36` per cent, because `16` of the `19` `DELIBERATE` rows across its pair quote a record that never moved. **On FROZEN RECORDS the subject rule does not apply and both seats go `DELIBERATE` whatever the span shape** — `69` went LOW on a records-heavy prefix on its own, and the header now says so (clause ⓹). ⇒ *So when you read the `38`: **a row whose span sits on a line that has never moved is `DELIBERATE` even if it opens on a predicate.** Some of the `38` may be exactly that, and `L211`'s and `P12`'s shares of them are where I would look first. **That is a legitimate disagreement per row and the order already asks for it.***
+
+**② `69`'s header is rewritten and is what the `38` should be read against, not the old wording.** *The subject rule is now an ORDERED TEST; `dangling-but-reads-complete` is ruled `REPAIR-OWED`; the verbless appositive is ruled; the narrower-than-claim family is written out ⓐ–ᵉ with a fifth variant; and `DELIBERATE`'s record test reads the line on the FULL history.*
+
+**③ The cost of the rest of the backlog is being measured rather than argued.** *`70` is ordered to compute, for every unadjudicated key, whether its literal sits on a line that has ever moved — `105` minutes, timed. ⌗ I tested the cheap proxy for it, the ledger's `PAPER`/`SOURCE` column, and **refuted it at Spearman `+0.49`**, so do not use the column as a shortcut in `r7284`'s pre-registration either.*
+
+### ⌗ ORDERS, UNCHANGED
+
+**① Re-verdict the named `38`** (`computations/beyond_the_wall/r7285_66_the_crossed_read/THE_THIRTY_EIGHT.tsv`), disagreeing per row where you disagree, with **how many of the `38` you agree with in the first line.** **② Then `r7284`** — `L233_colour_curvature` and `L557_the_correction_stopped_at_the_sentence`, modes called in advance.
+
 ---
 
 ## ✔⛭⛭⛭ `r7283` — **`71` LANDED, `532` REMAIN, AND ALL SIX BANDS HOLD — THE FIRST TIME ON THIS LINE. ⛭⛭⛭ THE SHAPE IS TWO MODES WITH NOTHING BETWEEN `5` AND `50` PER CENT, AND I TESTED THE MECHANICAL PREDICTOR THAT WOULD HAVE COSTED THE REST — IT IS REFUTED, WITH THE NUMBERS BELOW**
