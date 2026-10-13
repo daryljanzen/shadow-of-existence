@@ -133,7 +133,10 @@ def main():
                   + (f'last changed at {p[:8]}, which is not after it' if p else 'never committed'))
         print()
         print('  ⛔ A PAPER WHOSE PDF IS OLDER THAN ITS SOURCE IS SERVED TO A READER AS SOMETHING IT NO LONGER SAYS.')
-        print('     Compile it (pdflatex twice, from corpus/) and commit the PDF with the source -- and when a GENERATED')
+        print('     Compile it (pdflatex twice, from corpus/) and commit the PDF with the source.  NO pdflatex HERE IS NOT')
+        print('     A MISSING CAPABILITY: install it -- `apt-get install -y texlive-latex-extra texlive-science')
+        print('     texlive-fonts-recommended texlive-fonts-extra texlive-publishers texlive-pictures lmodern` rebuilt all')
+        print('     18 papers at r7265+70.1 (CI\'s compile job uses texlive-full).  And when a GENERATED')
         print('     input moved (an appendix), the PDF of every paper that reads it is owed with that regeneration.')
         return 1
     print('  every committed paper PDF is at least as new as its source.')
