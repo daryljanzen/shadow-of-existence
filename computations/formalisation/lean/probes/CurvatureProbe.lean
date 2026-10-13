@@ -2274,6 +2274,37 @@ theorem ds_surface_gravity {α : ℝ} (hα : 0 < α) (τ : ℝ) :
 
 end SweepB2
 
+/-! ## `r7315`, B3 — receipt 11: the accelerated de Sitter temperature `T(a) = √(1/α² + a²)/2π` tends to `|κ|/2π`
+as `a → 0`, where `κ` is THE Levi-Civita connection's surface gravity on the horizon (B2), and to the flat Unruh law
+`T ~ a/2π` as `a → ∞`. The Nariai member's `κ = 0` is B1 -/
+
+section SweepB3
+
+open Filter Topology in
+/-- **B3, receipt 11.** -/
+theorem unruh_ds_limits {α : ℝ} (hα : 0 < α) (τ : ℝ) :
+    ∃ κ : ℝ, lcConn (ℝ × ℝ) (pgMetric (fun _ => 1) (wDS α) (fun _ => one_ne_zero) (differentiable_const _)
+        (wDS_diff α)) xiT (τ, α) (xiT (τ, α)) = κ • xiT (τ, α)
+      ∧ Tendsto (fun a : ℝ => Real.sqrt ((1 / α) ^ 2 + a ^ 2) / (2 * Real.pi)) (𝓝 0) (𝓝 (|κ| / (2 * Real.pi)))
+      ∧ Tendsto (fun a : ℝ => Real.sqrt ((1 / α) ^ 2 + a ^ 2) / (2 * Real.pi) / (a / (2 * Real.pi))) atTop (𝓝 1) := by
+  refine ⟨-(1 / α), (ds_surface_gravity hα τ).1, ?_, ?_⟩
+  · have hc : Continuous fun a : ℝ => Real.sqrt ((1 / α) ^ 2 + a ^ 2) / (2 * Real.pi) := by fun_prop
+    convert hc.tendsto 0 using 2
+    rw [abs_neg, abs_of_pos (by positivity)]
+    simp; exact (Real.sqrt_sq hα.le).symm
+  · have h0 : Tendsto (fun a : ℝ => (1 / α) ^ 2 / a ^ 2 + 1) atTop (𝓝 (0 + 1)) :=
+      (tendsto_const_nhds.div_atTop (tendsto_pow_atTop two_ne_zero)).add tendsto_const_nhds
+    have h1 := (Real.continuous_sqrt.tendsto _).comp h0
+    rw [zero_add, Real.sqrt_one] at h1
+    refine h1.congr' ?_
+    filter_upwards [eventually_gt_atTop 0] with a ha
+    simp only [Function.comp_apply]
+    have hpi : (2 * Real.pi) ≠ 0 := by positivity
+    have e : (1 / α) ^ 2 / a ^ 2 + 1 = ((1 / α) ^ 2 + a ^ 2) / a ^ 2 := by field_simp
+    rw [div_div_div_cancel_right₀ hpi, e, Real.sqrt_div (by positivity), Real.sqrt_sq ha.le]
+
+end SweepB3
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2352,3 +2383,4 @@ end ShadowProbe
 #print axioms ShadowProbe.two_surface_gravities
 #print axioms ShadowProbe.ds_horizon_iff
 #print axioms ShadowProbe.ds_surface_gravity
+#print axioms ShadowProbe.unruh_ds_limits
