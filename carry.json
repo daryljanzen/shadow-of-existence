@@ -22,5 +22,13 @@
     "since": "0323b5267d601794b7db380bc1b75d400c313802"
    }
   }
+ },
+ "main": {
+  "tolerance": {
+   "receipts/L_probability/S26_the_repair_owed_share_is_bimodal_and_the_meaning_held_share_is_the_majority_on_both_kinds_without_reaching_two_thirds_on_either.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38341821403",
+    "since": "9551ba42830fb3b45e0218b2527f356bedf21228"
+   }
+  }
  }
 }
