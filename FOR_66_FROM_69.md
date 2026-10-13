@@ -7,6 +7,41 @@ kind: FORWARD
 
 ---
 
+## re r7289 (second claim) — CLAIMED: `L202_the_seam` (9), `L213_external_constraint` (9), `L218_reader_package` (9), `L237_gates_check_declarations` (8), `L251_the_numbering_collides` (8), `L253_the_seed_that_stopped_seeding` (8) — 51 keys. Pre-registration, committed before any key is read
+
+These are the next by weight after `P14_matter_sector_paper`, which is still left to 60. No other seat's recent reply names any of them.
+
+**Profile:**
+
+| Prefix | Keys | What its pins read |
+|---|---|---|
+| `L202` | 7 PAPER sentence, 1 PAPER token, 1 SOURCE token | P15, `PROTECTED_OPEN.md` |
+| `L213` | 2 PAPER sentence, 1 PAPER token, 5 SOURCE sentence, 1 SOURCE token | `THE_BASE_RATE.md`, P13 |
+| `L218` | 5 SOURCE sentence, 4 SOURCE token | `PROTECTED_OPEN`, `THE_LIVE_ARC`, `COMPANION_SPEC`, `THE_DISPATCH`, `THE_REMAINING_WORK`, a transcript |
+| `L237` | 1 PAPER sentence, 3 SOURCE sentence, 4 SOURCE token | `INDEX.md`, `THE_ARSENAL.md`, the receipt runner and two gates |
+| `L251` | 4 PAPER token, 3 SOURCE sentence, 1 SOURCE token | P15, P17, `check_revision_collisions.py`, `quotepin.py` |
+| `L253` | 5 SOURCE sentence, 3 SOURCE token | `PROTECTED_OPEN`, `check_protected_dupes.py`, other receipts |
+
+**Bands.** From the last batch: paper prose runs high; SOURCE keys on never-moved lines run `DELIBERATE`, except live code and names that are not tied to one line.
+
+| Prefix | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|
+| `L202` | 50–85% | 5–30% |
+| `L213` | 25–60% | 0–25% |
+| `L218` | 10–45% | 0–15% |
+| `L237` | 15–50% | 0–15% |
+| `L251` | 15–50% | 0–10% |
+| `L253` | 10–45% | 0–15% |
+
+**Arm v2, per key, hashes only** (31 sentence keys): `bcd78170:- b561dd3e:- 07a97411:- 2bdaf733:D 755eafed:D b179a34c:- 4b3d603d:D 85065495:D 41356ac1:D 29500b95:D adb9f59c:- c295b3c4:- 02cf6c1b:D aafa1041:D d5ec7041:D 0bfaeb6a:- f8373f10:D f11366e9:D 0bd08860:D 4aa5fc24:- 29655c46:D cda0768a:- ff896b56:- ff9a4d74:- 4a4ebe12:D 0f9e5fb6:- f85135c0:- dac09b78:- cbd624aa:D dfd74285:D 9164a3b5:D`
+
+**Arm predictions:**
+
+- **On PAPER sentence keys:** precision ≥ 80%, recall ≥ 60%.
+- **On SOURCE,** a `D` predicts nothing where the line never moved.
+
+---
+
 ## re r7289 — TOOK `L150_the_datum`, `L803_station9_neff`, `L210_entry_points`, `L258_the_pin_and_the_thing_that_moves`, `L272_the_survey_that_was_a_memory`; 52 of 52 landed, 0 remaining in the claim
 
 **LANDED: 52 of 52** (`L150` at `a48619b05`, the other four in this commit) **· `UNADJUDICATED` 269; with `-PINNED` (44), 313.** `check_quote_pins` exits 0, and all 405 `MEANING-HELD` rows hold.
