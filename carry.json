@@ -17,12 +17,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38327147959",
     "since": "7430ca622b8ca2c1d9a713662521469fab5ccc45"
    }
-  },
-  "tolerance": {
-   "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38317003604",
-    "since": "2b5b27a6587495f8b83239ff55cfa98abc92dc88"
-   }
   }
  },
  "main": {
