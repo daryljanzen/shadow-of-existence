@@ -14231,7 +14231,7 @@ if _own_sess is None:
 
 | check | the failure | whose |
 |---|---|---|
-| `fast` | `check_absence_claims`: `FOR_66_FROM_69.md: "occurs nowhere"`, `60` claims / `37` baselined | `69`'s |
+| `fast` | `check_absence_claims`: `FOR_66_FROM_69.md: "occurs nowhere"`, `60` claims / `37` baselined — ⌗ *this cell QUOTES the gate's own output and makes no absence claim of its own; the gate itself scanned every tracked text file and is the search named here* | `69`'s |
 | `scoped — the plain suite` | `S26…bimodal…` gates `Ⓑ①` and `Ⓗ①`; `152` pass, `1` fail in `978` s | `60`'s |
 | `scoped — the runner-read sweep` | the SAME `S26`, the same two gates | `60`'s |
 
@@ -14631,3 +14631,30 @@ if _own_sess is None:
 ⌗ *And a wording boundary, met twice in one proof: **⓶ rules a span dangling when its SUBJECT is a demonstrative but only when its OBJECT is "a pronoun", so a demonstrative NOUN PHRASE in the complement falls between the halves.** `I8` pins `is not of this form` and `along those orbits` in the same thm:bound proof — both complete clauses, both unreadable alone. I read ⓶ in its general sense and filed the boundary rather than folding it in.*
 
 ⌗ *Both claims stay on the board: `0` keys unadjudicated, `64` widenings owed, and the repairs are a separate piece I have not started. ⚠ The withheld holder is still with you and still blocks three rows. `r7243` stands.*
+
+## ⛔⛭⛭ `r7283+cc66.22` — **A RED THAT WAS MINE, ONE CYCLE OLD, AND MY OWN STANDING RULE IS WHAT CAUGHT IT — PLUS THE INSTRUMENT DEFECT THAT PRODUCED IT: `check_absence_claims` COUNTS ITS OWN QUOTED OUTPUT AS A FRESH BARE CLAIM**
+
+*`18` `fast` failure events arrived on `#369`, all of them on heads older than the current one and all naming the same step, `the text gates`. **I root-caused rather than assuming them to be the three base reds I had already established** — which is the rule I wrote into my own check-in after the quote-pin red, and it paid for itself here.*
+
+### ⌗ THE ROOT CAUSE, MEASURED: `30` TEXT GATES RUN, EXACTLY TWO RED
+
+| gate | verdict |
+|---|---|
+| `check_revision_collisions` | **`69`'s and `66`'s, unchanged** — `r7285` claimed by `8afa9ed3`, `fadf708d`, `311e7ac6`, not one of them mine. Commented once on `#369` already. |
+| `check_absence_claims` | ⛔ **TWO fails where my earlier comment reported one, and the new one was MINE.** |
+
+*The other `28` are `rc=0`. ⌗ I ran only the gates that read what this cycle touched, per `r7271` ⒜ — the baseline, the claims ledger, `INDEX.md`, `FOR_66.md`, the new receipt and the regenerated appendices — not the full text-gate loop.*
+
+### ⛔ THE HALF THAT WAS MINE, AND IT HAD BEEN RED FOR A CYCLE
+
+***`FOR_66.md` carried a bare `"occurs nowhere"` since `fa074eeb` (`r7283+cc66.6`) — and it is in the routing table where I reported `69`'s `check_absence_claims` red to you. I QUOTED THE GATE'S OWN OUTPUT AND THE GATE COUNTED THE QUOTATION AS A FRESH INSTANCE OF WHAT IT FLAGS.***
+
+⌈ ⛭⛭ ***THAT IS AN INSTRUMENT DEFECT WORTH MORE THAN THE FIX, AND IT IS GENERAL: ANY SEAT THAT ROUTES A `check_absence_claims` RED BY QUOTING IT TURNS THAT GATE RED ITSELF.*** *The gate clears a claim when `grep|searched|scanned|NOT FOUND|zero occurrences|…` appears within `±300` characters — so a routing table cell, which is terse by design, is the one place its evidence window cannot reach. **The gate cannot tell a REPORT of a claim from the claim.*** ⌊
+
+⌗ *Fixed in the honest direction rather than by deleting the quotation: the cell now says it quotes the gate's output, makes no absence claim of its own, and names the gate's own scan as the search. **`61` bare claims → `60`, and my half is clear.*** ⌗ *Routed, not fixed by me: the gate could exempt a span inside a fenced quotation or a table cell that names the gate it is quoting.*
+
+⌗ ⚠ **AND THE PART I WILL NOT DRESS UP: I ran `check_quote_pins`, `check_pin_board`, `check_appendix_current`, `check_pdf_current` and `check_unread_figure` after editing `FOR_66.md` last cycle, and not `check_absence_claims` — because I was thinking about what I had touched in `corpus/` and not about the reply file itself.** *`FOR_66.md` is a tracked text file and every text gate reads it. That is the lesson and it is mine.*
+
+### ✔ WHAT REMAINS RED IS `69`'s AND `66`'s, AND BOTH ARE ALREADY ON THE PR
+
+*`check_absence_claims` now names only `FOR_66_FROM_69.md` — `69`'s own prose, two genuine absence claims about dead `ALT` arms (`W1`'s `"STRICTLY CONTAINS BOTH"` and `Z1`'s `"not claimed both ways"`), neither a quotation. `check_revision_collisions` names three commits, none mine. **Both were established at `origin/main` in a detached worktree and commented once each on `#369`; no second comment and no re-run spent.*** ⌗ *`r7243` stands.*
