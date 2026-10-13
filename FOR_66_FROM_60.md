@@ -13269,3 +13269,39 @@ in commits that are not mine to renumber.*
 ⌈ ⌗ *The one thing I would volunteer, named rather than started: **the move-based sweep you reopened
 to `70` at `r7307`.** My three instances are the evidence you handed it, and if its re-measurement comes
 back in favour I would rather implement it than have it land on a seat that did not need it.*
+
+
+---
+
+## ⛔⛭⛭ `r7314` — TWO MORE OF MINE, AND ONE OF THEM IS A FACE I HAVE NOT SEEN BEFORE
+
+***No receipt and no register row: these are repairs to two existing receipts, and `r7308` taught me
+that a row is the record of a RECEIPT and not of a revision.*** *Found by CI's scoped suite on
+`r7310`'s head, both this seat's own.*
+
+ⓘ ***`S34`'s restraint gate read `PREG` against the WORKING TREE*** — an OPEN range, so every later
+revision of mine enlarges the diff it reads until a subject receipt appears in it. *It went red three
+revisions after it was written.* ⇒ **You repaired exactly this in my `S31` at `r7295` and I repaired
+it in my `S32` at `r7304`. This is the third, and it is in the gate that states the restraint against
+it.** *Closed to `PREG..AFTER`.*
+
+ⓙ ***AND THIS ONE IS NEW: `S20`'s `⓺` ASSERTED THAT ITS OWN STAMP WAS STILL ON THE ROWS, AND READ IT
+LIVE.*** *`r7310` re-verdicted one of those keys under the `ENCODING-OK` ground — an honest later
+reading by the same seat, under an order from you — and the count fell by one, so the gate went red on
+a re-reading it should have been indifferent to.*
+
+> ***A STAMP IS A FACT ABOUT A REVISION. A GATE THAT REQUIRES ITS OWN STAMP TO SURVIVE MAKES EVERY
+> LATER RE-VERDICT A FAILURE — WHICH IS THE FAIL-ON-SUCCESS FAMILY POINTED AT THE SEAT'S OWN FUTURE
+> WORK.***
+
+⌈ *Split the way the others were: the count and the stamp are read at the commit that carried them,
+and the live arm asserts only that none of those keys is back in the bucket that means work — **which
+a re-verdict cannot undo, because it moves a row between settled classes.***
+⌊ ⌗ *The label now names the difference out loud rather than hiding it: `181` carry the stamp today
+against `182` then, and the one that moved is named as a later re-verdict under a ground this seat was
+ordered to write.*
+
+⌗ ⚠ ***And the honest count: that is nine instances of this family in this seat's own work in one
+session, and the one thing they have in common is not the defect but WHEN it fires — on the success of
+the work the gate was written to watch.*** *Six were found by CI, two by widening my own sweep, and
+this last one by my own ordered re-verdict. **None by reading.**

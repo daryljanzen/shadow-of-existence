@@ -278,8 +278,14 @@ print('\n── Ⓔ  THE RESTRAINT ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 _subjects = sorted({c[0] for c in _mine} | {c[0] for c in _l811_mine}
                    | {c[0] for c in _all if c[0].startswith('receipts/L270')})
-_touched = sorted({f for f in (_git('diff', '--name-only', PREG) + '\n'
-                               + _git('ls-files', '--others', '--exclude-standard')).split('\n') if f})
+#: ⛔⛭⛭ r7314+60: THE RANGE WAS OPEN AND IT WENT RED THREE REVISIONS LATER.  `PREG` against the
+#:   WORKING TREE is `PREG..whatever exists now`, so every later revision of this line enlarges the
+#:   diff this gate reads, and one of the subject receipts eventually appears in it.  ** The claim is
+#:   about what THIS revision edited, which is a closed range. **
+#:   ⇒ *`66` repaired exactly this in `S31` at `r7295` (`PREG..AFTER`) and this line repaired it in
+#:   `S32` at `r7304`.  This is the same shape a third time, in the gate that states the restraint
+#:   against it -- and it is the fourth range in this line's own work to be closed for this reason.*
+_touched = sorted({f for f in _git('diff', '--name-only', PREG, AFTER).split('\n') if f})
 _touched_subjects = [f for f in _touched if f in _subjects]
 print(f'      the rows verdicted here live in {len(_subjects)} receipts; this revision edited '
       f'{len(_touched_subjects)} of them')
