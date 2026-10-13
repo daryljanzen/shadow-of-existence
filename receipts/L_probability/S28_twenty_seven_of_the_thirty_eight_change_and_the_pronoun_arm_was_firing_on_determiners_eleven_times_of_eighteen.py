@@ -118,6 +118,13 @@ def gate(label, ok):
 
 
 BEFORE = '9b9a7c58'      # the merge that brought r7285's list in, before any row was re-read
+AFTER = '952d83b0'       # the commit that carried this revision's re-verdicts -- see the note below
+# ⚠ WHY `AFTER` IS A SECOND COMMIT, which is the 71st member's own corollary and not an oversight: a
+# receipt reporting its OWN revision's state cannot pin that state until the revision has LANDED, so
+# the pin arrives in the commit after the work.  Every count below is read at `AFTER` rather than in
+# the working tree, because an equality on a LIVE ledger goes red the moment another seat legitimately
+# re-verdicts any row -- the class `check_exact_counts` exists for, and it named seven sites in this
+# receipt's first form.  The list is read at `BEFORE`, where `r7285` committed it.
 BASE = 'corpus/quote_pin_baseline.tsv'
 LIST = 'computations/beyond_the_wall/r7285_66_the_crossed_read/THE_THIRTY_EIGHT.tsv'
 TABLE = 'computations/beyond_the_wall/r7288_60_the_thirty_eight_re_read/THE_RE_READ.tsv'
@@ -160,7 +167,8 @@ _res = subprocess.run(['git', 'cat-file', '-e', BEFORE + '^{commit}'], cwd=ROOT,
 _anc = subprocess.run(['git', 'merge-base', '--is-ancestor', BEFORE, 'HEAD'], cwd=ROOT,
                       capture_output=True).returncode == 0
 _lb = _git('show', f'{BEFORE}:{BASE}')
-_named = [l.split('\t') for l in read(LIST).split('\n') if l.strip() and not l.startswith('#')]
+_named = [l.split('\t') for l in _git('show', f'{BEFORE}:{LIST}').split('\n')
+          if l.strip() and not l.startswith('#')]
 gate(f'Ⓐ① ⛔⛭⛭ the reference is a LITERAL SHA (`{BEFORE}`) that resolves (`{_res}`) and is an ancestor '
      f'(`{_anc}`), and the list `r7285` committed carries `{len(_named)}` rows --- read from the '
      f'repository rather than retyped here',
@@ -178,8 +186,9 @@ gate(f'Ⓐ② ✔⛭ every one of the `{len(_named_keys)}` named rows was in the
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓑ  THE ANSWER THE ORDER ASKS FOR, COUNTED FROM THE LEDGER AND NOT FROM THIS TEXT ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_now = {(c[0], c[1]): (c[5], c[6] if len(c) > 6 else '') for c in rows_of(read(BASE))}
-_now_tgt = {(c[0], c[1]): c[2] for c in rows_of(read(BASE))}
+_after_led = _git('show', f'{AFTER}:{BASE}')
+_now = {(c[0], c[1]): (c[5], c[6] if len(c) > 6 else '') for c in rows_of(_after_led)}
+_now_tgt = {(c[0], c[1]): c[2] for c in rows_of(_after_led)}
 _agreed = [k for k in _named_keys if _now[k][0] == 'REPAIR-OWED' and 'r7288+60' in _now[k][1]]
 _third = [k for k in _named_keys if _now[k][0] == 'DELIBERATE'
           and 'r7288+60, re-read on r7285 order ①:' in _now[k][1]]
@@ -346,7 +355,8 @@ print('\n── Ⓓ  AND THE EXEMPTION IS NARROWER THAN THE CLASS: SIX GROUNDS, 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 _stood_rows = [c for c in _named if 'DISPUTED against r7285' in _now[(c[0], c[1])][1]]
 _stood_lits = [json.loads(c[1]) for c in _stood_rows]
-_tbl_pre = [l.split('\t') for l in read(TABLE).split('\n') if l.strip() and not l.startswith('#')]
+_tbl_pre = [l.split('\t') for l in _git('show', f'{AFTER}:{TABLE}').split('\n')
+            if l.strip() and not l.startswith('#')]
 
 # the adopted exemption, and the SAME THREE CONDITIONS over the full closed determiner class.  The
 # adopted form matches DEMONSTRATIVES only, which is all it ever needed: the LEADING arm it exempts
