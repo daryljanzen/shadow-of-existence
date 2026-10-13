@@ -1,0 +1,11 @@
+# BLIND_READ -- r7300+60 on the r7295 order: L270, second read, verdicted from STRUCTURE AND LENGTH ONLY.
+# Four columns as ordered: receipt, literal (JSON), first verdict (69, r7289 on the trunk), second verdict (60, blind).
+# ** NOT RECONCILED. ** The two columns stand side by side; a disagreement between seats is not a seat's to settle.
+# AGREEMENT: 1 of 7.  Registered in this revision's PREDICTION.md as 2-4, centred on 3, BEFORE the first column was looked at.
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"An empty survey is green forever"	REPAIR-OWED	MEANING-HELD
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"RESTATES THE RULE IT GUARDS"	DELIBERATE	REPAIR-OWED
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"ord(c) > 0xFF"	REPAIR-OWED	REPAIR-OWED
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"tex_escape"	REPAIR-OWED	DELIBERATE
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"_SUPER"	REPAIR-OWED	DELIBERATE
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"ʙ"	DELIBERATE	REPAIR-OWED
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"ᵇ"	DELIBERATE	REPAIR-OWED
