@@ -14748,3 +14748,42 @@ if _own_sess is None:
 ⌗ *So there was no provenance-clean widening available, and the pin is now the arc's OWN claim sentence — `**AND THIS ROW INHERITED ITS FRAMING FROM A SOURCE COMMENT.**` — which quotes no paper text at all. ⚠ **Its subject is the arc's own demonstrative `THIS ROW`, which is a ⓶ boundary, and I am reporting it rather than papering over it: the two spans that would have named the subject are both refused by `check_provenance`, so this is the best span available and not the best span imaginable.***
 
 ⌗ *`r7243` stands. **No ruling on the `L-249` split has reached `origin/main` (still `r7287`), so by what I said one push ago I am doing those `7` under the prefix claim next, flagging every edit.***
+
+## ⛭⛭⛭ `r7283+cc66.26` — **BOTH PREFIXES DISCHARGED AND RELEASED. `0` `REPAIR-OWED` AND `0` `UNADJUDICATED` IN EITHER. CORPUS `REPAIR-OWED` `270` → `206`.** ⛔⛭⛭⛭ **AND THE LAST `7` TURNED UP A FINDING THE SPLIT ITSELF COULD NOT HAVE PREDICTED: ONE OF THEM WAS NEVER TRUE OF THE PAPER'S BODY, NOT EVEN WHEN IT WAS WRITTEN**
+
+*No ruling had reached `origin/main` (still `r7287`), so I did the `L-249` split under the prefix claim as I said I would, **with every edit flagged** — in the rows, in the receipts' own docstrings, and here. All four receipts green; `12` gates `rc=0` including `check_provenance` and `check_paper_pins_not_comment_only`. `check_pin_board` `rc=0`, `0` live claims.*
+
+| | keys | `EXTENDED` | `DELIBERATE` | `MEANING-HELD` | `ENCODING-OK` | **`REPAIR-OWED`** |
+|---|---|---|---|---|---|---|
+| `L174_general_matter_dynamics` | `56` | `42` | `6` | `7` | `1` | **`0`** |
+| `L203_reach_stations` | `38` | `24` | `8` | `6` | — | **`0`** |
+
+### ⛔⛭⛭⛭ THE FINDING, AND IT IS WHY I AM GLAD I MEASURED BEFORE SPLITTING
+
+***Three of the `7` were a genuine `L-249` case — a claim that was TRUE and then the text moved — and I split them. `equianharmonic`, pinned in both `M1` and `M4`, is NOT that case, and the measurement is unambiguous:***
+
+> **At `e5eb8a00` — `M1`'s OWN BUILD COMMIT, r2491 — `rem:equianharmonic`'s BODY carries ZERO mentions of `Z_3` or a deck action of order three.** *The only place that statement ever lived is the paper's `%` HEADER COMMENT: "Classically equianharmonic ⟺ j = 0 ⟺ complex multiplication by omega = exp(2.pi.i/3) — the deck action's own order three."*
+
+⇒ ⛭⛭⛭ ***SO THE CLAIM WAS NEVER TRUE OF THE PAPER'S BODY. It was lifted from a comment — which is `check_provenance`'s own class, one hop EARLIER than the instance `c54.207` caught — and reading the `.tex` RAW is exactly what let `'equianharmonic' in p5` pass.***
+
+⌈ ***A STALE CLAIM GETS AN `L-249` SPLIT. A CLAIM THE BODY NEVER MADE GETS CORRECTED.*** *So those two rows are not split: the label now says the remark DECLINES the identification — then and now, "the two are not here shown to be one thing" — and the pin reads that body sentence. ⌊ ⌗ **And `M1` and `M4` now STRIP `%` lines, as `M2` (r2492) and `M3` (r2493) always did. The same prefix carried both readers, one revision apart, and the two that read raw are the two that carried this defect.***
+
+⌗ ⛭ *What does NOT change: **the cube-root cover's deck IS `Z_3`** and that row of `M4`'s four-object table stands — it is the receipt's own group theory, verified symbolically in its `PART 1`. **The four objects are still four. One of them was sourced to a comment.***
+
+### ⌗ THE THREE REAL `L-249` SPLITS, EACH WITH ITS HISTORICAL READ NAMED
+
+| station | historical, read by `git show` | current, asserted separately |
+|---|---|---|
+| `M1` Ⓒ | `e5eb8a00` (r2491, its own build) — *★ NEXT, handed to by the quadric bake's `Q4`* | **CLOSED r3154 (`L-266`)** *on the question `M1` left open* |
+| `M2` Ⓗ | `027bb3bf` (r2492, its own build) — *stations Ⓖ and Ⓗ are owed* | **THROWN r3150 (`L-264`) — and it BIT** |
+| `M3` Ⓖ | `ed5422d8^` — **the PARENT**, because `ed5422d8` is the commit that wrote `M3`'s own result INTO R-M, so the owed state is the one before it | **THROWN r3152 (`L-265`) — AND THE SEQUENCE IS THE OBJECT** |
+
+⌗ ⛭⛭ ***And `M3`'s current cell does something better than retire its claim: it RETRACTS the caveat `M3` itself stated*** — *"P12's algebroid is the constraint algebra's and not a bundle's" is right in general and wrong here.* **A receipt that carries its own caveat's retraction is stronger than one asserting a station is owed.**
+
+⌗ *The frontmatter sentence `LIVE: stations Ⓖ and Ⓗ are owed, and Ⓒ is the live handoff; registered as `L-203`.` turned out to be the tightest historical anchor available: **one clause carrying all three stations' statuses**, present at all three build commits and gone by `ed5422d8`.*
+
+### ✔ BOTH CLAIMS RELEASED
+
+*`corpus/pin_claims.tsv` carries both `RELEASE` rows on the precedent of `60` releasing `L221_the_bridge` at `r7260` — **every key verdicted AND every owed row performed, so the prefix carries no owed row.** `check_pin_board`: `0` live claims, board agrees with the ratchet.*
+
+⌗ *⚠ **One item is still with you and I am not asking again: the withheld holder** (the rate-rule `P15` receipt whose standing gate says it computes NOTHING). It blocks three rows. ⌗ And I note, without asking for anything, that **I took the `L-249` call myself because the alternative was leaving seven stale pins standing** — if that was the wrong call it is cheap to say so and I will route the four receipts instead. `r7243` stands.*

@@ -2,7 +2,16 @@
 """M2 -- station Ⓗ walked: the index statement is TRACED because the theorem invoked is not the theorem
 the object needs, and station Ⓒ is a prerequisite rather than a neighbour.
 
-** THE STATION. **  R-M carries Ⓗ, "the gamma^5-graded index -> K-theory / characteristic classes", as
+⛔⛭⛭ ** AMENDED r7287+cc66, UNDER THE `L203` PREFIX CLAIM AND FLAGGED AS SUCH: THE STATION IS NO
+LONGER OWED, AND IT WENT THE OTHER WAY TWICE. **  R-M now reads *Ⓗ the $\gamma^5$-graded index |
+THROWN r3150 (`L-264`) --- and it BIT*, and the same cell records that **the verdict INVERTS on the
+corrected operator**.  The owed status below was true at this file's build (`027bb3bf`, r2492), and
+the co-occurrence pin `'graded index' in rm and 'K-theory' in rm` could not see either move --- both
+words persist whatever the verdict cell says.  ⇒ Pinned now as the `L-249` (r3105) SPLIT: the
+historical state read with `git show 027bb3bf:THE_MATHEMATICS_REACH.md`, the current state asserted
+separately.
+
+** THE STATION, AS IT STOOD AT THIS FILE'S BUILD. **  R-M carried Ⓗ, "the gamma^5-graded index -> K-theory / characteristic classes", as
 owed.
 
 ** ⓵ AND THE CORPUS ALREADY DECLARES THE GAP, IN P14's OWN WORDS. **  P14, immediately after establishing
@@ -54,6 +63,7 @@ guess**. c54.220's rule, r2776.)*
 Written r2492.  Stated for reversal.
 """
 import os, re
+import subprocess as _sp
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -78,9 +88,27 @@ def main():
                                   encoding='utf-8', errors='replace').read())
     arc = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_LIVE_ARC.md'),
                                    encoding='utf-8', errors='replace').read())
+    # ** THE HISTORICAL HALF OF THE L-249 (r3105) REPAIR: R-M as it stood at THIS FILE'S OWN BUILD.
+    #   027bb3bf is the commit that ADDED this receipt (r2492) -- a git read, not a memory. **
+    _rm_at_build = re.sub(r'\s+', ' ', _sp.run(
+        ['git', 'show', '027bb3bf:THE_MATHEMATICS_REACH.md'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
 
-    check('R-M carries Ⓗ, the gamma^5-graded index -> K-theory, as owed',
-          'graded index' in rm and 'K-theory' in rm)
+    # ⛔⛭⛭⛭ L-249 (r3105) SPLIT, r7287+cc66, UNDER THIS SEAT'S PREFIX CLAIM AND FLAGGED AS SUCH:
+    #   the old pin was `'graded index' in rm and 'K-theory' in rm`, a CO-OCCURRENCE over one file
+    #   standing for `R-M carries Ⓗ as OWED` -- and that claim went STALE TWICE OVER.  R-M now
+    #   reads Ⓗ as THROWN r3150 (`L-264`) and it BIT, with the verdict INVERTING on the corrected
+    #   operator; the pin could not see either, because both words persist whatever the cell says.
+    #   ** Both ends pinned: the historical state at the commit it stood at, the current state
+    #   separately. **
+    check('⌗ HISTORICAL, at 027bb3bf (r2492, this file\'s own build): R-M carried Ⓗ as OWED, '
+          'alongside Ⓖ, with Ⓒ the live handoff',
+          'LIVE: stations Ⓖ and Ⓗ are owed, and Ⓒ is the live handoff; registered as '
+          'L-203.' in _rm_at_build)
+    check('⛭ AND CURRENT: Ⓗ is THROWN and it BIT -- R-M now reads it so, which the old pin could '
+          'not have detected',
+          '**Ⓗ** the $\\gamma^5$-graded index | ⛭⛭ **THROWN r3150 (`L-264`) — and it '
+          'BIT.**' in rm)
 
     # ⓵ the corpus declares the gap
     check('P14 establishes dim ker_+ = 3, dim ker_- = 0, the net chirality a gamma^5-graded index',

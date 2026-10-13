@@ -2,7 +2,22 @@
 """M1 -- station Ⓒ walked: the equianharmonic structure supplies Z_6, the monodromy supplies S_3, and
 they are not the same group.
 
-** THE STATION. **  R-M carries Ⓒ complex analysis / monodromy as ★ NEXT, "handed to by the quadric
+⛔⛭⛭⛭ ** AMENDED r7287+cc66, UNDER THE `L203` PREFIX CLAIM, AND FLAGGED BECAUSE IT TOUCHES ANOTHER
+LINE'S NARRATIVE. TWO THINGS THIS FILE ASSERTED ARE NO LONGER TRUE, AND ONE OF THEM NEVER WAS. **
+  ⒜ ** THE STATION IS CLOSED. **  R-M's station table now reads *Ⓒ complex analysis / monodromy |
+    CLOSED r3154 (`L-266`) on the question `M1` left open --- "nothing here exhibits an action"*.
+    *It acts.*  The ★ NEXT status below was true at this file's build (`e5eb8a00`, r2491) and the
+    co-occurrence pin could not see it move, so the pin is now the `L-249` (r3105) SPLIT: the
+    historical state read at that commit, the current state asserted separately.
+  ⒝ ⛔ ** AND `rem:equianharmonic` NEVER GAVE `Z_3` IN ITS BODY. **  Measured at `e5eb8a00`, this
+    file's own build: the remark's body carries ZERO mentions of `Z_3` or a deck action of order
+    three.  The statement lived only in the paper's `%` HEADER COMMENT, and this file read the
+    `.tex` RAW, which is what let `'equianharmonic' in p5` pass.  *The remark's body declines the
+    identification --- then and now.*  ⇒ ** The Z_3 row of the four-object table STANDS as this
+    file's own group theory; what does not stand is the attribution of it to the remark. **  The
+    reader now strips `%` lines, as `M2` (r2492) and `M3` (r2493) already did.
+
+** THE STATION, AS IT STOOD AT THIS FILE'S BUILD. **  R-M carried Ⓒ complex analysis / monodromy as ★ NEXT, "handed to by the quadric
 bake's `Q4`: that probe found ** the vantage triple's cross-ratio is the equianharmonic e^(i pi/3) **,
 and equianharmonic <=> j = 0 <=> complex multiplication by omega = e^(2 pi i/3) --- which is the
 corpus's own Z_3 deck action, the three-sheeted cube-root cover, and the 2 pi i alpha/3 period."
@@ -53,6 +68,7 @@ corpus's own vocabulary has been eliding, and this one does. **
 Written r2491.  Stated for reversal.
 """
 import os, re
+import subprocess as _sp
 
 import sympy as sp
 from sympy.combinatorics import SymmetricGroup, CyclicGroup
@@ -74,11 +90,39 @@ def main():
     print()
     rm = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_MATHEMATICS_REACH.md'),
                                   encoding='utf-8', errors='replace').read())
-    p5 = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'groupoid_paper.tex'),
-                                  encoding='utf-8', errors='replace').read())
+    # ⛭⛔ r7287+cc66: %-COMMENT LINES ARE NOW STRIPPED, and that is a REPAIR and not a tidy-up.
+    #   Measured: `'equianharmonic' in p5` passed off the paper's COMMENTED HEADER BLOCK -- delete
+    #   `rem:equianharmonic` from the body outright and the pin still passed, three times over, off
+    #   lines 18-23 alone.  ** M2 (r2492) and M3 (r2493) already stripped; this file (r2491) and M4
+    #   (r2494) did not, so the same prefix carried both readers one revision apart. **
+    _p5_raw = open(os.path.join(ROOT, 'corpus', 'groupoid_paper.tex'),
+                   encoding='utf-8', errors='replace').read()
+    p5 = re.sub(r'\s+', ' ', '\n'.join(l for l in _p5_raw.split('\n')
+                                        if not l.lstrip().startswith('%')))
+    # ** THE HISTORICAL HALF OF THE L-249 (r3105) REPAIR: R-M as it stood at THIS FILE'S OWN BUILD.
+    #   e5eb8a00 is the commit that ADDED this receipt (r2491) -- a git read, not a memory. **
+    _rm_at_build = re.sub(r'\s+', ' ', _sp.run(
+        ['git', 'show', 'e5eb8a00:THE_MATHEMATICS_REACH.md'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
 
-    check('R-M carries Ⓒ as the live handoff, from the quadric bake\'s Q4',
-          'complex analysis / monodromy' in rm and 'quadric bake' in rm)
+    # ⛔⛭⛭⛭ L-249 (r3105) SPLIT, r7287+cc66, PERFORMED UNDER THIS SEAT'S PREFIX CLAIM AND FLAGGED
+    #   AS SUCH: the old pin was `'complex analysis / monodromy' in rm and 'quadric bake' in rm`,
+    #   a CO-OCCURRENCE over one file standing for `R-M carries Ⓒ as the LIVE handoff` -- and that
+    #   claim went STALE.  R-M's station table now reads Ⓒ as CLOSED r3154 (`L-266`), on the very
+    #   question this file left open, and the pin could not see it because both words persist
+    #   whatever the verdict cell says.  ** The claim is not re-pointed at new wording and it is
+    #   not dropped: both ends are pinned, the historical state at the commit it stood at and the
+    #   current state separately, which is L-249's own prescription. **
+    check('⌗ HISTORICAL, at e5eb8a00 (r2491, this file\'s own build): R-M carried Ⓒ as the LIVE '
+          'handoff and Ⓖ and Ⓗ as owed, with the handoff from the quadric bake\'s Q4',
+          'LIVE: stations Ⓖ and Ⓗ are owed, and Ⓒ is the live handoff; registered as '
+          'L-203.' in _rm_at_build
+          and 'Ⓒ **complex analysis / monodromy** → ***★ NEXT, and handed to by the '
+          "quadric bake's `Q4`***" in _rm_at_build)
+    check('⛭ AND CURRENT: the station is CLOSED -- R-M now reads it so, which the old pin could '
+          'not have detected',
+          '**Ⓒ** complex analysis / monodromy | ⛭⛭ **CLOSED r3154 (`L-266`) on the '
+          'question `M1` left open — "nothing here exhibits an action".**' in rm)
     # ** the source has markdown bold INSIDE the phrase: "is the **equianharmonic** $e^{i\\pi/3}$".
     # Quoting from memory of a read rather than from the file is the error this whole receipt is
     # about, arriving in the receipt itself. **
@@ -167,8 +211,23 @@ def main():
           #   occurrences in FOR_54.md) and neither of which carried `$S_3$` or `impossible`.
           #   One widened span carries item 23's claim.
           '"DECK GROUP $S_3$" ON A THREE-SHEETED COVER IS IMPOSSIBLE' in f54)
-    check('with rem:equianharmonic giving a third answer, Z_3',
-          'equianharmonic' in p5)
+    # ⛔⛭⛭⛭ CORRECTED r7287+cc66, AND THIS IS NOT AN L-249 CASE -- IT IS A PROVENANCE ONE, WHICH
+    #   THE MEASUREMENT SETTLED.  The old label said `rem:equianharmonic gives a third answer,
+    #   Z_3`, pinned by `'equianharmonic' in p5`.  ** At e5eb8a00 -- this file's OWN build -- the
+    #   remark's BODY says nothing about Z_3 or a deck action of order three: ZERO mentions,
+    #   measured.  The only place that statement ever lived is the paper's `%` HEADER COMMENT
+    #   (`Classically equianharmonic <=> j = 0 <=> complex multiplication by omega = exp(2.pi.i/3)
+    #   -- the deck action's own order three`). **  ⇒ So the claim was never true of the paper's
+    #   body, not even when it was written -- it was lifted from a comment, which is
+    #   `check_provenance`'s own class one hop earlier, and reading the file RAW is what let the
+    #   pin pass.  *A stale claim gets an L-249 split; a claim the body never made gets CORRECTED.*
+    check('⛔ and rem:equianharmonic does NOT give a third answer: its body DECLINES the '
+          'identification, then and now -- the Z_3 was the paper\'s `%` header comment, never its '
+          'text, and the Z_3 the paper does carry is the TURNAROUND\'s deck, a different object',
+          'What the coincidence of order-three structures amounts to is therefore left '
+          'as noted rather than asserted: the cross-ratio is equianharmonic, the '
+          'monodromy contains an order-three cyclic subgroup, and the two are not here '
+          'shown to be one thing.' in p5)
 
     print()
     if FAILED:

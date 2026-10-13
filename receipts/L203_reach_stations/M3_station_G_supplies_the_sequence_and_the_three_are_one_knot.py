@@ -2,7 +2,18 @@
 """M3 -- station Ⓖ walked: the missing object is the Atiyah sequence, and all three remaining stations
 turn out to be one knot whose first thread is routed item 23.
 
-** THE STATION. **  R-M carries Ⓖ, "Lie algebroids -> Cartan / differential geometry", as owed and
+⛔⛭⛭ ** AMENDED r7287+cc66, UNDER THE `L203` PREFIX CLAIM AND FLAGGED AS SUCH: THE STATION IS NO
+LONGER OWED, AND R-M'S CURRENT CELL RETRACTS THE CAVEAT THIS FILE STATED. **  R-M now reads *Ⓖ Lie
+algebroids | THROWN r3152 (`L-265`) --- AND THE SEQUENCE IS THE OBJECT*, and goes on: *the caveat
+this row carried --- "P12's algebroid is the constraint algebra's and not a bundle's" --- is right in
+general and wrong here*.  **That caveat is this file's own, in `WHAT IS NOT CLAIMED` below, and the
+retraction is a better thing for this receipt to carry than the owed status it used to assert.**  The
+owed status was true at this file's build (`ed5422d8`, r2493), and `'Lie algebroids' in rm` --- five
+occurrences --- could not see it move.  ⇒ Pinned now as the `L-249` (r3105) SPLIT: the historical
+state read at `ed5422d8^`, the PARENT, because `ed5422d8` is the commit that wrote this file's own
+result into R-M; the current state asserted separately.
+
+** THE STATION, AS IT STOOD AT THIS FILE'S BUILD. **  R-M carried Ⓖ, "Lie algebroids -> Cartan / differential geometry", as owed and
 independent of Ⓒ and Ⓗ.
 
 ** ⓵ AND P12 IS THE ALGEBROID PAPER, so this is Ⓕ's shape again -- check the corpus before the field. **
@@ -86,8 +97,25 @@ def main():
     arc = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_LIVE_ARC.md'),
                                    encoding='utf-8', errors='replace').read())
 
-    check('R-M carries Ⓖ, Lie algebroids -> Cartan / differential geometry, as owed',
-          'Lie algebroids' in rm)
+    # ⛔⛭⛭⛭ L-249 (r3105) SPLIT, r7287+cc66, UNDER THIS SEAT'S PREFIX CLAIM AND FLAGGED AS SUCH:
+    #   the old pin was `'Lie algebroids' in rm`, a two-word span at 5 occurrences that could not
+    #   fail and carried neither the destination nor `owed` -- and the claim went STALE.  R-M now
+    #   reads Ⓖ as THROWN r3152 (`L-265`), AND THE SEQUENCE IS THE OBJECT, and the same cell
+    #   RETRACTS the caveat this very receipt stated.  ** Both ends pinned: the historical state at
+    #   the commit it stood at, the current state separately.  The historical read is at
+    #   ed5422d8^ -- the PARENT of this file's own build -- because ed5422d8 is the commit that
+    #   wrote this file's result INTO R-M, so the owed state is the one before it. **
+    _rm_before = re.sub(r'\s+', ' ', _sp.run(
+        ['git', 'show', 'ed5422d8^:THE_MATHEMATICS_REACH.md'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
+    check('⌗ HISTORICAL, at ed5422d8^ (the parent of r2493, this file\'s own build): R-M carried '
+          'Ⓖ as OWED, alongside Ⓗ, with Ⓒ the live handoff',
+          'LIVE: stations Ⓖ and Ⓗ are owed, and Ⓒ is the live handoff; registered as '
+          'L-203.' in _rm_before)
+    check('⛭ AND CURRENT: Ⓖ is THROWN and the sequence IS the object -- R-M now reads it so, and '
+          'retracts the caveat this receipt stated, which the old pin could not have detected',
+          '**Ⓖ** Lie algebroids | ⛭⛭ **THROWN r3152 (`L-265`) — AND THE SEQUENCE IS THE '
+          'OBJECT.**' in rm)
 
     # ⓵ what P12 has
     # ⛔⛭ AMENDED r4522: ** P12 was read end to end and harvested at r4083, and four of this file's
