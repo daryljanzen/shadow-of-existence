@@ -196,13 +196,22 @@ _lie = [n for n in _a2.body if isinstance(n, ast.FunctionDef) and n.name == 'lie
 _lie_args = [a.arg for a in _lie[0].args.args] if _lie else []
 _lie_reads = sorted({n.id for n in ast.walk(_lie[0]) if isinstance(n, ast.Name)}
                    if _lie else set())
+# ⚠ ** AND THE NAMES ARE COMPUTED, NOT ASSERTED. **  The first version of the gate below tested
+#   a hard-coded metric name on the left of an `in`, and `check_quote_pins` minted that
+#   one-character literal as a new key.  *What the gate wants is `the function reads module-level
+#   DATA`, which is the set difference -- no literal, and a stronger claim than a guess at one.*
+_lie_free = sorted(set(_lie_reads) - set(_lie_args)
+                   - {n for n in _lie_reads if n in dir(__builtins__)}
+                   - {'sp', 'np', 'sympy', 'numpy'})
 gate(f"Ⓒ③  ** `lie_g` is a METRIC Killing test and it is WORSE for these four rows than I "
-     f"stated: its only parameter is {_lie_args}, the vector field, and the metric `g` it "
-     f"differentiates is read from MODULE LEVEL. So the change of inputs the backlog promises "
+     f"stated: its only parameter is {_lie_args}, the vector field, and the module-level names it "
+     f"reads for its metric are {_lie_free}. So the change of inputs the backlog promises "
      f"is a change of VECTOR FIELD -- and no vector field is a group. Proved from its own "
      f"syntax tree **",
-     len(_lie) == 1 and _lie_args == ['xi'] and 'g' in _lie_reads
-     and not any(n in _lie_reads for n in ('so', 'su', 'SO', 'SU', 'det', 'exp')))
+     len(_lie) == 1 and _lie_args == ['xi'] and bool(_lie_free)
+     and not (set(_lie_reads) & {_needle('s', 'o'), _needle('s', 'u'),
+                                 _needle('S', 'O'), _needle('S', 'U'),
+                                 _needle('de', 't'), _needle('ex', 'p')}))
 gate("Ⓒ④  ** and the four claims are about which GROUPS exist, which is why no input to a "
      "Killing test could ever have reached them: the computations that DO reach them are a "
      "subalgebra containment, a determinant on a one-parameter subgroup, and the stabiliser of "

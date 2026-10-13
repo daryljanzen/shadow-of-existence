@@ -195,7 +195,8 @@ gate("Ⓒ①  ** both modules bind the table as an EMPTY container at top level 
 _refused = []
 for _m, _nm in ((L50B, 'ends'), (L128B, 'leg_wall')):
     try:
-        GRAFT.graft(_m, 'key_of' if 'L50b' in _m else 'diag_at', extra=(_nm,))
+        GRAFT.graft(_m, 'key_of' if _needle('L50', 'b') in _m else 'diag_at',
+                    extra=(_nm,))
         _refused.append(False)
     except GRAFT.GraftError as _e:
         _refused.append(_needle('EMPTY', ' container') in str(_e) and _nm in str(_e))
@@ -363,7 +364,10 @@ _self = ast.parse(open(os.path.abspath(__file__), encoding='utf-8').read())
 _mine = [n.left.value for n in ast.walk(_self)
          if isinstance(n, ast.Compare) and any(isinstance(o, ast.In) for o in n.ops)
          and isinstance(n.left, ast.Constant) and isinstance(n.left.value, str)
-         and len(n.left.value.split()) > 3]
+         # ** ANY string literal, not only a long one: the instrument keys a
+         # one-character name as readily as a sentence, which is how `C76` minted
+         # `g`.  The threshold is removed rather than lowered. **
+         ]
 gate("Ⓖ①  ** no string constant of more than three words sits on the left of an `in` test "
      "anywhere in this file, proved from its OWN syntax tree **", not _mine)
 gate("Ⓖ②  every presence test goes through `_needle`, assembled at run time",

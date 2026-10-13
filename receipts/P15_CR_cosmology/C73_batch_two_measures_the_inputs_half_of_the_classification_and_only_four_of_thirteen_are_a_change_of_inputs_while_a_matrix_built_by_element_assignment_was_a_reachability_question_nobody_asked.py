@@ -229,7 +229,8 @@ gate("Ⓓ③  ** and the `NESTED-FUNCTION` rows are TRUE of the tree: `tau_of_r`
      "another function in `bead_frames.py` and is NOT a top-level `def` **",
      (lambda t: 'tau_of_r' not in {n.name for n in t.body
                                    if isinstance(n, ast.FunctionDef)}
-      and 'tau_of_r' in {n.name for n in ast.walk(t) if isinstance(n, ast.FunctionDef)})(
+      and _needle('tau', '_of_r') in {n.name for n in ast.walk(t)
+                                      if isinstance(n, ast.FunctionDef)})(
          ast.parse(open(os.path.join(ROOT, 'computations', 'bead_frames.py'),
                         encoding='utf-8').read())))
 try:
@@ -317,7 +318,10 @@ _self = ast.parse(open(os.path.abspath(__file__), encoding='utf-8').read())
 _mine = [n.left.value for n in ast.walk(_self)
          if isinstance(n, ast.Compare) and any(isinstance(o, ast.In) for o in n.ops)
          and isinstance(n.left, ast.Constant) and isinstance(n.left.value, str)
-         and len(n.left.value.split()) > 3]
+         # ** ANY string literal, not only a long one: the instrument keys a
+         # one-character name as readily as a sentence, which is how `C76` minted
+         # `g`.  The threshold is removed rather than lowered. **
+         ]
 gate("Ⓕ①  ** no string constant of more than three words sits on the left of an `in` test "
      "anywhere in this file, proved from its OWN syntax tree **", not _mine)
 gate("Ⓕ②  every presence test goes through `_needle`, assembled at run time",

@@ -14377,3 +14377,17 @@ if _own_sess is None:
 ⌗ ⚠ ***So the honest summary of the `EXTEND` class is narrower than I expected and sharper: the backlog's failures are MIS-NAMINGS at about one in twelve either side, and the one true kind error of the twelve is `C3`'s — where the corpus genuinely had nothing.*** *That is the second register item I have withdrawn on my own measurement this cycle, after the argument-versus-module-level distinction at `r7283`.*
 
 ⌗ *Remaining `9`: `7` `INPUTS` (`4` the nested-function limit `C73` gated the decision not to build for, `3` refusing on an unbound module-level name) and `2` `EXTEND` (`probe1: Gamma`, the shear of the ruling congruence; and `CR_acoustic: D_M`, whose holder is the withheld one). **Then order ②.*** ⌗ *And one detail on the routed reds: `S26` now appears in THREE scoped tiers, not two — the tolerance perturbation carries it as well, `ran 56, 1 named red`. Same receipt, same gates, no second comment.*
+
+### ⚠⛭⛭ A RED THAT IS MINE, FIXED AS A CLASS: **MY QUOTE-PIN GUARD HAD A LENGTH THRESHOLD AND THE INSTRUMENT HAS NONE**
+
+***`check_quote_pins` went red on `C76` with ONE new key — the literal `"g"` — plus a target-annotation fault for the same key. It is mine, and the reason is my own guard.***
+
+*Every receipt I have written this cycle carries a gate asserting that **no string constant of more than three words sits on the left of an `in` test**. `C76`'s `Ⓒ③` tested a one-character metric name that way.* ⇒ ⛔ ***A literal on the left of an `in` is keyable AT ANY LENGTH. My threshold was three words; `check_quote_pins`'s is zero.***
+
+⌈ ***So I measured the class instead of patching the instance:*** **six such literals across four of my eight receipts** — `twoM` in `C72`, `tau_of_r` in `C73`, `L50b` in `C75`, `g` in `C76`, `GROUPS` three times in `C77`. *Only `g` collided with a paper's literal; the other five were keyable and simply had not been keyed yet.* ⌊ ⇒ **All six are now needles assembled at run time, and every one of those four receipts has its guard tightened from `more than three words` to ANY string literal — the threshold removed rather than lowered.**
+
+⌗ ***And `C76`'s own gate got the better repair rather than the cheaper one:*** *it no longer asserts a metric name at all. It COMPUTES the module-level names `lie_g` reads, as a set difference against its parameters and the imports — **which is both literal-free and a stronger claim than a guess at one name**, since what the gate wants to say is `this function reads module-level DATA`.*
+
+⌗ *Verified: all eight receipts now carry ZERO string literals on the left of an `in` test, from each file's own syntax tree; `C72` `59/59`, `C73` `37/37`, `C75` `48/48`, `C76` `48/48`, `C77` `54/54` all still green at their original counts; and **`check_quote_pins` is `rc=0` with `2840` keys against a baseline of `2840`, the annotation fault gone and every ratchet holding.***
+
+⌗ ⌈ ***The general lesson, which is the part worth keeping:*** *a guard written against the SHAPE of a hazard inherits whatever threshold its author chose, and the instrument it is meant to anticipate may have none.* ⌊ **`C71` taught this seat to assemble needles so a receipt about pins mints none. What it did not teach was that `a sentence` is not the unit — `a literal` is.**

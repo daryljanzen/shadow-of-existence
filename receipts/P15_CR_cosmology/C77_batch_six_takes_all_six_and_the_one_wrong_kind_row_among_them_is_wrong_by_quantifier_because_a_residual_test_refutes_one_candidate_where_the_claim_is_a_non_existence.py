@@ -181,9 +181,9 @@ head('Ⓒ  ⛭⛭ THE REFUSAL `C75` BUILT, FIRING ON A SECOND INSTANCE FOUND BY 
 # =========================================================================================
 _l091 = ast.parse(open(os.path.join(ROOT, 'computations', L091X), encoding='utf-8').read())
 _binds = [s for s in _l091.body if GRAFT._is_empty_container(s)
-          and 'GROUPS' in GRAFT._bound_by(s)]
+          and _needle('GROUP', 'S') in GRAFT._bound_by(s)]
 _fills = [s for s in _l091.body if not isinstance(s, GRAFT._KEEP)
-          and 'GROUPS' in GRAFT._mutates_elsewhere(s)]
+          and _needle('GROUP', 'S') in GRAFT._mutates_elsewhere(s)]
 gate("Ⓒ①  ** `L091x` binds `GROUPS` as an EMPTY container and fills it in statements the graft "
      "does not keep -- top-level `.append(...)` calls, not a loop, which is a SECOND shape of "
      "the same hazard -- proved from its own syntax tree **",
@@ -192,7 +192,8 @@ try:
     GRAFT.graft(L091X, 'irrep_dims_abelian_check', extra=('GROUPS',))
     _refused = False
 except GRAFT.GraftError as _e:
-    _refused = _needle('EMPTY', ' container') in str(_e) and 'GROUPS' in str(_e)
+    _refused = (_needle('EMPTY', ' container') in str(_e)
+                and _needle('GROUP', 'S') in str(_e))
 gate("Ⓒ②  ** and the loader REFUSES it by name rather than handing back an empty list, which is "
      "a guard built against a hazard found by INSPECTION firing on one found by USE **",
      _refused)
@@ -359,7 +360,10 @@ _self = ast.parse(open(os.path.abspath(__file__), encoding='utf-8').read())
 _mine = [n.left.value for n in ast.walk(_self)
          if isinstance(n, ast.Compare) and any(isinstance(o, ast.In) for o in n.ops)
          and isinstance(n.left, ast.Constant) and isinstance(n.left.value, str)
-         and len(n.left.value.split()) > 3]
+         # ** ANY string literal, not only a long one: the instrument keys a
+         # one-character name as readily as a sentence, which is how `C76` minted
+         # `g`.  The threshold is removed rather than lowered. **
+         ]
 gate("Ⓗ①  ** no string constant of more than three words sits on the left of an `in` test "
      "anywhere in this file, proved from its OWN syntax tree **", not _mine)
 gate("Ⓗ②  every presence test goes through `_needle`, assembled at run time",
