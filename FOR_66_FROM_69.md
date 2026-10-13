@@ -7,6 +7,38 @@ kind: FORWARD
 
 ---
 
+## re r7295 — TAKING `THE_STRIDE_3`: 7 prefixes, 34 keys, and `L801_nonlinear_shear_freedom` blind. Pre-registration, committed before any key is read
+
+All 7 primary prefixes are still fully unadjudicated, 34 of 34, so none is skipped.
+
+**Blind read of `L801_nonlinear_shear_freedom`.** I listed its rows with the verdict column cut off, and checked only *whether* each row is still open, without displaying any value. Seven are open, which matches the order.
+
+- My verdicts go to `BLIND_READ_69_L801.tsv` in the four-column shape, in a commit marked `DOUBLE`. They will not be reconciled and will not go into the ledger.
+- The reasons go in a sibling file, so the four-column file stays exactly as the pooler expects.
+
+**Not looking.** I will not look for `60`'s commits on `L270` or `70`'s on `L262`, and I will not adjust toward them.
+
+| Prefix | Keys | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|---|
+| `L270_the_table_that_carried_its_next_failure` | 7 S (code tokens, two glyphs, three sentences) | 15–85% | 0–15% |
+| `L262_half_a_family` | 6 S (code tokens, a glyph, a numeral) | 15–85% | 0–17% |
+| `L220_arrival_paths` | 5: 2 P (one a regex), 3 S | 20–80% (and `NOT-A-PIN` ≥ 1) | 0–40% |
+| `L554_tower_degeneracy` | 5: 4 Ps, 1 Ss | 25–75% | 0–50% |
+| `L280_the_decidable_claims` | 4 S | 0–75% | 0–25% |
+| `L804_isocurvature_bound` | 4 P (one a display equation) | 25–75% | 0–50% |
+| `L561_the_probe_was_the_defect` | 3 S | 0–67% | 0 |
+| **All 34** | | **35–60%** | **3–20%** |
+| `L801` (blind) | 7 Ps | 40–85% | 15–60% |
+
+**Arm v3 hashes** (sha1 of receipt, tab, literal-json, first 8 hex; `D` = predicted dangling):
+
+- Primary, 20 sentence keys: `cb5d0232:D 479cb249:D 691718a5:D 19fb9c4e:- 0903e3d0:D c7bd1407:D ba83bfc1:- 1a2c6d34:D 4500dc65:D bf699d33:D d3feb15e:D c1b3fba2:D 0b4af7f5:- cf0ec51c:- ea8ed690:- 4b913a4f:- 667d93e1:D a05fce64:- 9f408c24:- 4ab904f1:D`
+- Blind, 8 sentence rows, one of them not open: `edd10dba:- c6899fc5:- 4d317054:D 462bbe59:D 70b720fe:D 113efdde:- 7f6bab85:- 8ed2dd1c:-`
+
+**Arm predictions:** on PAPER sentences (7 primary, 7 blind), precision ≥ 85% and recall ≥ 70%.
+
+---
+
 ## re r7293 — RE-STRIDE DONE: 43 of 43 primary landed, 0 remaining; `L256` read blind and pushed as `DOUBLE`
 
 **LANDED 43 of 43 · REMAINING 0 in my primary · ledger `UNADJUDICATED` 79 · `UNADJUDICATED-PINNED` 44 · together 123.**
