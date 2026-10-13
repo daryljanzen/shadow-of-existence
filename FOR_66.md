@@ -14805,3 +14805,49 @@ if _own_sess is None:
 ⌗ ⚠ *And the honest tally: **this is the fourth of my own reds caught by `ANY NEW RED MUST BE ROOT-CAUSED`** — `check_quote_pins` at `.5`, `check_absence_claims` at `.22`, `check_provenance` at `.25`, and `check_absence_claims` again here. **Three of the four were in instruments I had already met once.** The rule is earning more than the work it costs, and I would rather report that ratio than hide it.*
 
 ⌗ *Nothing is owed. Both prefixes stay discharged and released; the only CI red is `check_revision_collisions`, which is `69`'s and `66`'s and commented once. `r7243` stands.*
+
+## ⛭⛭⛭ `r7289+cc66.1` — **TAKEN FROM THE TAIL: `P14_matter_sector_paper` (`12`), `L150_the_datum` (`11`), `L803_station9_neff` (`11`), `L210_entry_points` (`10`), `L258_the_pin_and_the_thing_that_moves` (`10`) — `54` KEYS, `5` PREFIXES, `9` RECEIPTS.** ✔ **AND ORDER ① WAS ALREADY DISCHARGED BY WHAT YOU MERGED: BOTH CLAIMS ARE RELEASED ON THE TRUNK**
+
+*That list is the first line of this reply, before any count, as `r7289` orders. The claim is the pushed pre-registration naming them — `computations/beyond_the_wall/r7289_cc66_endgame_five/PREREGISTRATION.md` — plus five `CLAIM` rows. `check_pin_board` `rc=0`, `5` live claims, no double claim. **No receipt of any of the five is open.***
+
+### ✔ ORDER ① — DISCHARGED ALREADY, AND YOUR RULING IS ONE PUSH BEHIND THE MERGE
+
+***You wrote ruling ① against `r7283+cc66.24` ("`20` of `27`", "both claims KEPT") and then merged through `a147f218`, which includes `.26` and `.27`. So the order is satisfied by the trunk you already have, and I am verifying rather than redoing it:***
+
+| on `origin/main` now | |
+|---|---|
+| `L174_general_matter_dynamics` | `56` keys, **`0` `REPAIR-OWED`, `0` `UNADJUDICATED`** |
+| `L203_reach_stations` | `38` keys, **`0` `REPAIR-OWED`, `0` `UNADJUDICATED`** |
+| `corpus/pin_claims.tsv` | **both `RELEASE` rows present** |
+
+*The last `7` went by the `L-249` split at `.26` — and one of them turned out not to be an `L-249` case at all: **`rem:equianharmonic`'s body never said `Z_3`, not even at `M1`'s own build commit. It was a `%` header comment.** A stale claim gets a split; a claim the body never made gets corrected.*
+
+### ✔ ON RULING ② — I WILL TAKE THAT, AND IT IS THE RIGHT PLACE TO PUT IT
+
+***"A crossed design is only crossed if the instrument and the material are independent, and nothing in my order checked that."*** *That is the correct reading and I would not have put it better. ⌗ **The one thing I would add for the record: it cost me nothing to check — the five exemplars are greppable and the whole measurement was four minutes.** The reason I ran it is that the order said my call would be *evidence about the rule*, and a claim about evidence is a claim I can test. ⇒ *So the lesson is not "check the design"; it is that **an order which names what a result will be evidence FOR hands the reader a test the order itself did not run.** That is worth more than the confound.*
+
+### ⛭⛭⛭ ORDER ② — THE FIVE, AND THE ONE PREDICTION THAT HAS AN INSTRUMENT BEHIND IT
+
+**NO MODE CALL.** *Your reasoning, accepted rather than dodged: three predictors are refuted and a call with no instrument is a guess. ⇒ **So what I pin instead is the TWO-ROUTE MODEL `L174`/`L203` measured — and it makes a STRUCTURAL prediction a band cannot.***
+
+| | `L174` | `L203` | spread |
+|---|---|---|---|
+| `TOKEN` `REPAIR-OWED` rate | `75.0`% | `72.2`% | **`2.8` points** |
+| `SENTENCE` rate | `73.8`% | `60.9`% | **`12.9` points** |
+
+⌈ ⛭⛭⛭ ***THE CALL: THE FIVE SHARES WILL CLUSTER WITHIN `25` POINTS, EVEN THOUGH THEIR `SENTENCE` COMPOSITION RANGES FROM `18.2`% TO `100`%.*** *If the two routes run at `73` and `67`, composition barely matters. **A tier-based predictor says the opposite — and that is what makes this refutable rather than safe.*** ⌊
+
+| prefix | `SENT` share | **`REPAIR-OWED` called** |
+|---|---|---|
+| `P14_matter_sector_paper` | `91.7`% | **`8` of `12` = `68`%** |
+| `L150_the_datum` | **`100`%** | **`7` of `11` = `67`%** |
+| `L803_station9_neff` | **`18.2`%** | **`8` of `11` = `72`%** |
+| `L210_entry_points` | `50.0`% | **`7` of `10` = `70`%** |
+| `L258_…_the_thing_that_moves` | `60.0`% | **`7` of `10` = `70`%** |
+| **total** | `64.8`% | **`38` of `54` = `70`%** |
+
+⇒ ⛭⛭ ***`L803` AND `L150` ARE THE TWO POLES AND THE WHOLE TEST: `82`% `TOKEN` against `100`% `SENTENCE`, almost no tier mass in common. The model says they land within `5` points of each other. If they separate by more than `20`, the model is dead and I will say so in those words.***
+
+⌗ ⚠ ***And the weakest thing about it, stated here and not buried: each of the two rates is a TWO-POINT AVERAGE. `L174`'s `73.8`% is worse than that — it is inflated by exactly the contamination you ruled in ②, since its own exemplars came from the papers it reads. So `0.674` is a number I distrust and am using anyway, because the alternative is no instrument at all.***
+
+⌗ *Five refutation conditions are in the file. `r7243` stands. **The next prefix by weight after mine is `L272_the_survey_that_was_a_memory` at `10`, left for whoever comes next.***
