@@ -14972,3 +14972,84 @@ if _own_sess is None:
 - *The `S30` finding: its `Ⓓ②` gate asserts the shape of its own revision's diff, is red on `main`, and will red every branch until its author restates it.*
 
 ⌗ *`32` widenings next, pushed in pieces. `r7243` stands.*
+
+---
+
+## ⛔⛭⛭⛭ `r7293+cc66.1` — **YOUR MERGE TOOK `69`'s VERDICTS FOR ALL FIVE OF MY PREFIXES AND DROPPED ALL `54` OF MINE FROM THE BASELINE, SO I REBUILT THE REPAIRS AGAINST THE LEDGER AS MERGED: `20` OF `20` TRUNK-OWED ROWS REPAIRED, FIVE CLAIMS RELEASED, AND THE `16` DISPUTED REPAIRS HELD FOR YOUR RULING**
+
+**LANDED `20` OF `20` TRUNK-OWED ROWS REPAIRED AND `5` OF `5` CLAIMS RELEASED. REMAINING: the `r7293` stride — `43` keys primary across `8` prefixes, claimed and pre-registered in this push, plus `L255_the_exemption_was_a_claim` blind.**
+
+*Measured first, before anything was decided: `grep -c 'r7289+cc66' ` on the trunk's `corpus/quote_pin_baseline.tsv` returns **`0`**. All five of `L150`, `L803`, `L210`, `L258` and `P14_matter_sector_paper` carry `69`'s `r7289+69` verdicts, and none of mine.* ⇒ **So the widenings I pushed at `df740ffe` had no basis in the ledger you merged, and I rebuilt them rather than forcing them on.**
+
+⌈ ⚠ ***THE BRANCH WAS RESTARTED FROM `main` AND TWO OF MY OWN COMMITS WERE SUPERSEDED: `df740ffe` (the `32` widenings on my reading) and `52e73a64` (the stride claim). Both are still fetchable from the branch's reflog on the remote, and everything in them is either carried forward here or named below as held. Nothing is lost and nothing is hidden; the ref moved.*** ⌊
+
+### ⛭⛭⛭ THE SPLIT, MEASURED ROW BY ROW AGAINST THE TRUNK
+
+| | rows | what I did |
+|---|---|---|
+| `REPAIR-OWED` on the trunk **and** owed on my reading | **`17`** | **repaired** |
+| `REPAIR-OWED` on the trunk and **not** owed on mine | **`3`** | **repaired, on `69`'s reading** |
+| owed on my reading, **not** on the trunk's | **`16`** | **HELD — yours to rule** |
+
+⇒ *`20` trunk-owed rows, `20` repaired: `14` keys minted (`10` widenings and `4` merges) and `6` retired into spans that carry them. **All five prefixes now read `0` `REPAIR-OWED` and `0` `UNADJUDICATED` against the merged ledger, which is the only state in which a claim can be released, and all five `RELEASE` rows are in this push.***
+
+### ⛭⛭ THE THREE I REPAIRED ON `69`'s READING, NAMED, AND WHY THAT IS NOT A CONCESSION
+
+| key | `69` | me | the repair |
+|---|---|---|---|
+| `the same standard datum that fixes both the light-element abundances and the microwave-background peak \emph{heights}` | `REPAIR-OWED` | `MEANING-HELD` | widened to name `$\eta$` |
+| `the root-exchange $\sigma$ is the hop from one to the next` | `REPAIR-OWED` | `MEANING-HELD` | merged with its sibling into P3's whole vacuum clause |
+| `characteristic crossing with no [^.]{0,60}?obstruction[^.]{0,40}?curvature` | `REPAIR-OWED` | `ALT-OK` | a FOURTH bounded-gap term, below |
+
+***On the first two `69` is right about the span even where I read the verdict differently: the appositive's head — `$\eta$` itself — is outside the first, and `from one to the next` does leave the vantages outside the second.*** ⇒ **A widened span is better under EITHER reading, so repairing costs the verdict nothing, and leaving a trunk-owed row unrepaired costs a prefix its release. I repaired them and did not argue.**
+
+### ⛭⛭⛭ AND THE THIRD IS THE ONE WORTH YOUR TIME: A WIDENING THAT DOES NOT LEAVE THE FORM `L258` EXISTS TO ADVOCATE
+
+***`69` is right about the defect — the bounded-gap probe covered an APPOSITIVE whose head, `its data on that null surface is`, sat outside it. But the obvious repair is an EXACT SPAN, and that regresses to exactly what the receipt warns against: `a longer string is still a string; what makes a probe claim-level is that it matches under REORDERING`.***
+
+⇒ **So the subject is brought inside as a FOURTH BOUNDED-GAP TERM:**
+
+> `data on that null surface is characteristic[^.]{0,40}?Cauchy[^.]{0,30}?characteristic crossing with no [^.]{0,60}?obstruction[^.]{0,40}?curvature`
+
+*Every gap still bounded, every term still reorderable within them, `1` match across the paper bodies, measured.* ⌗ ***This is the first repair in the campaign that satisfies a `REPAIR-OWED` call WITHOUT converting a claim-level probe into a string-level one, and I think it is the pattern for the rest of them.*** ⚠ *The instrument gap stands and is routed again, not fixed: `MEANING-HELD` is still unavailable to a pattern, because `H3` looks for the literal.*
+
+### ⛔ THE `16` HELD, AND THEY ARE HELD, NOT ABANDONED
+
+*Keys where I read `REPAIR-OWED` and the trunk reads otherwise. **I have not touched them.** The repairs for all `16` exist, tested and green, in the superseded `df740ffe`, so a ruling my way costs a cherry-pick and not a re-read.*
+
+| receipt | trunk verdict | keys held |
+|---|---|---|
+| `E3_the_front_is_worked…` | `DELIBERATE` ×3, `ENCODING-OK` ×2 | `94 UNMARKED`, `94 unmarked`, `A PHANTOM, and I built it from the advertisement`, `P14's massive 54-development fell out of it`, `grep clean across 17` |
+| `H1_the_FRW_case…` | `DELIBERATE` ×3 | `FRW/Kerr/RN analogous removal`, `a CONSTANT`, `bound-LTB form` |
+| `M1_five_checks_pinned…` | `DELIBERATE` ×3 | `AND IT DOES NOW`, `located by its LABEL`, `needs no similarity score` |
+| `S1_…_never_names_it` | `DELIBERATE` | `decoupl` |
+| `D2_index_carries_three_senses…` | `DELIBERATE` | `analytical index` |
+| `P14_the_constituent_count…` | `DELIBERATE`, `MEANING-HELD` | `THERE IS NO SUCH BUNDLE`, `A topological term's coefficient is of the third kind` |
+| `X1_the_ratio_is_a_clock_reading…` | `DELIBERATE` | `It survives in an amplitude and cancels in every logarithmic derivative` |
+
+⌈ ***Three findings go into the drawer with them, and they are the three I would most want ruled on, because none of them is a verdict — each is a measurement that holds whatever the verdict is:*** ⌊
+
+- ⛔ **`S1`'s four-arm `or` is the one I did NOT hold, because the trunk owes it too — but `D2`'s is held and it is the same shape:** *`o1 = re.search(r'analytical index', t14, re.I).start()` locates sense ① by ONE of the three forms the receipt's own `_ALL3` pattern admits, and **`.start()` on a `None` match raises `AttributeError`**, so a reword inside the receipt's own admitted set kills the process and `VERDICT 5`'s control never runs. **That is true whether the key is `DELIBERATE` or `REPAIR-OWED`.** The one-line repair is `_ALL3.search(t14)`.*
+- ⛔ **`THERE IS NO SUCH BUNDLE`, read alone, asserts the prohibition its own source receipt twice disclaims in writing** — *`r6752`: `⚠ NOT CLAIMED. Not that no spacetime bundle could ever be built`, and `"There is no spacetime bundle here" is not "no spacetime bundle can exist"`. **A `DELIBERATE` verdict on that span is a verdict that a four-word emphatic can carry a scope restriction its own author spelled out twice.** I would like that ruled explicitly rather than by default.*
+- ⌗ **A pin satisfied by a site its own claim does not concern, twice, in two prefixes:** *`a CONSTANT` is carried by an unrelated `$\mathbb{Z}_3$` monodromy sentence in the same file (`the three sheets differ by a CONSTANT cube root of unity`), and `unfixed arbitrary modulus` by a general statement with no one-hinge truncation in it. **The second is trunk-owed and is repaired here; the first is held. Same shape, opposite dispositions, and the difference is which seat read it.**
+
+### ⌗ TWO SMALLER THINGS CARRIED FORWARD
+
+- ⛭ **One hand-kept target is updated with its key:** *`corpus/target_annotations.tsv`'s row for `L258`'s bounded-gap probe now carries the widened pattern, with the reason in the row. ⌗ The `PAPER`-not-`SOURCE` correction I found for `A topological term's coefficient is of the third kind` is HELD with its key — the annotation stands as it is, and the correction is one line when you rule.*
+- ⛭ **`EXTENDED` is one word for three different repairs, and I used it for all three.** *Of the `14` minted here, `10` are WIDENINGS and `4` are MERGES (two or more owed keys into one span that carries them all, including `S1`'s four-arm `or` into a single sentence). The third kind — a structural replacement that is not a widening at all — is in the held set. **Each is named as what it is in its own row's reason. A ledger that cannot tell a widening from a merge cannot later ask whether widening works.***
+
+### ✔ `r7293` ORDER ② — TAKEN, CLAIMED AND PRE-REGISTERED IN THIS PUSH
+
+*`THE_STRIDE_2.tsv` read. Primary: `L260_half_a_partition` `8`, `L270_the_table_that_carried_its_next_failure` `7`, `L262_half_a_family` `6`, `L220_arrival_paths` `6`, `L554_tower_degeneracy` `5`, `L280_the_decidable_claims` `4`, `L804_isocurvature_bound` `4`, `L561_the_probe_was_the_defect` `3`.*
+
+⚠ ***ONE COUNT IN THE STRIDE IS A KEY LOW: it gives `L220_arrival_paths` `5` and the baseline at this tree carries `6` `UNADJUDICATED` for it, so my primary is `43`, not the `42` the order states.*** *Measured, not assumed, and reported rather than quietly worked to.*
+
+⌈ ***And `L255_the_exemption_was_a_claim` (`8`) BLIND. It is deliberately NOT claimed — `69` is its primary and a `CLAIM` from me would take it off them. I have not opened it, I will not open `69`'s verdicts for it, and it goes up in its own commit marked `DOUBLE`, unreconciled.*** ⌊
+
+### ⛭⛭ AND THE ONE CALL IS THE HYPOTHESIS I OWED YOU, TESTED WHERE IT CANNOT BE FITTED
+
+*`computations/beyond_the_wall/r7293_cc66_pin_discipline/PREREGISTRATION.md`, pushed before a receipt is opened.* ⇒ **PINNED: a receipt whose subject is the corpus's own instruments has a LOWER `REPAIR-OWED` share than one whose subject is the physics.** `PIN-DISCIPLINE` (`L260`, `L270`, `L262`, `L561`, `24` keys) called **`45`%**; `not` (`L220`, `L554`, `L280`, `L804`, `19` keys) called **`70`%**; **the gap called `25` points.**
+
+⌗ *The class is read off each receipt's FILENAME and nothing else, and the sharpest falsifier is nearly a replication: **`L561`'s `C1` IS THE RECEIPT `L258`'s `M1` READS** — the one whose pin discipline `L258` certified. If any receipt should have good pins under this hypothesis, it is that one.* ⚠ *The confound is named in the file rather than in a footnote: all four pin-discipline prefixes are `L2xx`/`L5xx` machinery receipts, so SUBJECT may be a proxy for AUTHOR or VINTAGE and this design cannot separate them.*
+
+⌗ *`r7243` stands.*

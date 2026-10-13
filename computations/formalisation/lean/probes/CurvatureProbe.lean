@@ -12,6 +12,8 @@ import Mathlib.Geometry.Manifold.Instances.Sphere
 import Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Basic
 import Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion
 import Mathlib.Geometry.Manifold.VectorBundle.Hom
+import Mathlib.Geometry.Manifold.VectorBundle.Tensoriality
+import Mathlib.Geometry.Manifold.ContMDiffMFDeriv
 import Mathlib.Geometry.Manifold.VectorBundle.Tangent
 import Mathlib.Geometry.Manifold.VectorField.LieBracket
 import Mathlib.LinearAlgebra.Trace
@@ -1076,6 +1078,393 @@ theorem wick_bijOn (α : ℂ) : BijOn (wick (n := n)) (quadDS α) (quadS α) := 
 
 end Wick
 
+/-! ## `r7295`, the PORT, L1 — the Levi-Civita connection of a NONDEGENERATE metric is unique
+
+`mathlib`'s `IsLeviCivitaConnection.uniqueness` (`CovariantDerivative/LeviCivita.lean`) is for a `RiemannianBundle`.
+Its Koszul step survives with `g` symmetric. Its injectivity step uses `inner_self_eq_zero`, i.e. positivity, and is
+replaced here by nondegeneracy, tested against `mathlib`'s `FiberBundle.extend`. -/
+
+section LCUnique
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+  {H : Type*} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type*} [TopologicalSpace M] [ChartedSpace H M] [IsManifold I ∞ M]
+
+/-- Compatibility with `g` at `x`, for a metric of any signature — R3's `IsCompatible`, verbatim. -/
+def IsCompatAt (g : Π x : M, TangentSpace I x →L[ℝ] TangentSpace I x →L[ℝ] ℝ)
+    (cov : CovariantDerivative I E (TangentSpace I : M → Type _)) (x : M) : Prop :=
+  ∀ X Y Z : Π x : M, TangentSpace I x, CMDiffAt 1 (T% X) x → CMDiffAt 1 (T% Y) x →
+    CMDiffAt 1 (T% Z) x →
+    (show ℝ from mfderiv I 𝓘(ℝ, ℝ) (fun y => g y (Y y) (Z y)) x (X x))
+      = g x (cov Y x (X x)) (Z x) + g x (Y x) (cov Z x (X x))
+
+variable {g : Π x : M, TangentSpace I x →L[ℝ] TangentSpace I x →L[ℝ] ℝ}
+  {cov cov' : CovariantDerivative I E (TangentSpace I : M → Type _)}
+
+/-- **The Koszul formula**, for a symmetric `g` of any signature: `g(∇_X Y, Z)` without `∇`. -/
+theorem koszul {x : M} (hsym : ∀ u v, g x u v = g x v u) (htor : cov.torsion = 0)
+    (hc : IsCompatAt g cov x) {X Y Z : Π x : M, TangentSpace I x}
+    (hX : CMDiffAt 1 (T% X) x) (hY : CMDiffAt 1 (T% Y) x) (hZ : CMDiffAt 1 (T% Z) x) :
+    g x (cov Y x (X x)) (Z x) =
+      ((show ℝ from mfderiv I 𝓘(ℝ, ℝ) (fun y => g y (Y y) (Z y)) x (X x))
+        + (show ℝ from mfderiv I 𝓘(ℝ, ℝ) (fun y => g y (Z y) (X y)) x (Y x))
+        - (show ℝ from mfderiv I 𝓘(ℝ, ℝ) (fun y => g y (X y) (Y y)) x (Z x))
+        - g x (Y x) (mlieBracket I X Z x) - g x (Z x) (mlieBracket I Y X x)
+        + g x (X x) (mlieBracket I Z Y x)) / 2 := by
+  have e1 := hc X Y Z hX hY hZ
+  have e2 := hc Y Z X hY hZ hX
+  have e3 := hc Z X Y hZ hX hY
+  have tor : ∀ {A B : Π x : M, TangentSpace I x}, MDiffAt (T% A) x → MDiffAt (T% B) x →
+      cov B x (A x) - cov A x (B x) = mlieBracket I A B x :=
+    fun hA hB => (CovariantDerivative.torsion_eq_zero_iff (cov := cov)).1 htor hA hB
+  have dX := hX.mdifferentiableAt one_ne_zero
+  have dY := hY.mdifferentiableAt one_ne_zero
+  have dZ := hZ.mdifferentiableAt one_ne_zero
+  have t1 := congrArg (g x (Y x)) (tor dX dZ)
+  have t2 := congrArg (g x (Z x)) (tor dY dX)
+  have t3 := congrArg (g x (X x)) (tor dZ dY)
+  simp only [map_sub] at t1 t2 t3
+  have s1 := hsym (cov X x (Z x)) (Y x)
+  have s2 := hsym (cov Y x (X x)) (Z x)
+  have s3 := hsym (cov Z x (Y x)) (X x)
+  rw [e1, e2, e3]
+  linarith
+
+/-- **L1. Uniqueness.** Two torsion-free connections compatible at `x` with a symmetric NONDEGENERATE `g` agree at
+`x` on every field `C¹` at `x`. -/
+theorem lc_unique {x : M} (hsym : ∀ u v, g x u v = g x v u)
+    (hnd : ∀ u : TangentSpace I x, (∀ v, g x u v = 0) → u = 0)
+    (htor : cov.torsion = 0) (htor' : cov'.torsion = 0)
+    (hc : IsCompatAt g cov x) (hc' : IsCompatAt g cov' x)
+    {Y : Π x : M, TangentSpace I x} (hY : CMDiffAt 1 (T% Y) x) (X₀ : TangentSpace I x) :
+    cov Y x X₀ = cov' Y x X₀ := by
+  have hX : CMDiffAt 1 (T% (FiberBundle.extend E X₀ : Π y : M, TangentSpace I y)) x :=
+    FiberBundle.contMDiffAt_extend (k := 1) I E X₀
+  have hXx : (FiberBundle.extend E X₀ : Π y : M, TangentSpace I y) x = X₀ :=
+    FiberBundle.extend_apply_self E X₀
+  refine sub_eq_zero.1 (hnd _ fun w => ?_)
+  have hZ : CMDiffAt 1 (T% (FiberBundle.extend E w : Π y : M, TangentSpace I y)) x :=
+    FiberBundle.contMDiffAt_extend (k := 1) I E w
+  have hZx : (FiberBundle.extend E w : Π y : M, TangentSpace I y) x = w :=
+    FiberBundle.extend_apply_self E w
+  have k1 := koszul hsym htor hc hX hY hZ
+  have k2 := koszul hsym htor' hc' hX hY hZ
+  rw [hXx, hZx] at k1 k2
+  rw [map_sub, sub_apply, k1, k2, sub_self]
+
+end LCUnique
+
+/-! ### L1's first discharge: `covConf a` is THE Levi-Civita connection of `a(η)²(−dη² + dx²)`
+
+R3's torsion-freeness and compatibility, copied from `ConformalLCProbe.lean` (the copy counts against the
+discharge, not L1). -/
+
+section LCConf
+
+lemma gConf_apply (a : ℝ → ℝ) (p v w : ℝ × ℝ) :
+    gConf a p v w = a p.1 ^ 2 * (-(v.1 * w.1) + v.2 * w.2) := by
+  show a p.1 ^ 2 * minkForm v w = _
+  rw [minkForm_apply]
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **R3 (B8), part 2.** It is torsion-free. -/
+theorem covConf_torsion (a : ℝ → ℝ) : (covConf a).torsion = 0 := by
+  rw [CovariantDerivative.torsion_eq_zero_iff]
+  intro X Y x hX hY
+  rw [covConf_apply, covConf_apply, Gam_symm a x (X x) (Y x)]
+  rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin]
+  set X' : ℝ × ℝ → ℝ × ℝ := X
+  set Y' : ℝ × ℝ → ℝ × ℝ := Y
+  show _ = fderivWithin ℝ Y' Set.univ x (X' x) - fderivWithin ℝ X' Set.univ x (Y' x)
+  rw [fderivWithin_univ, fderivWithin_univ]
+  abel
+
+/-- **R3 (B8), part 3.** It is compatible with `a(η)²(−dη² + dx²)` wherever `a` is differentiable and
+nonzero. -/
+theorem covConf_compatible (a : ℝ → ℝ) (p : ℝ × ℝ) (hd : DifferentiableAt ℝ a p.1)
+    (ha : a p.1 ≠ 0) : IsCompatAt (gConf a) (covConf a) p := by
+  intro X Y Z hX hY hZ
+  rw [contMDiffAt_vectorSpace_iff_contDiffAt] at hY hZ
+  obtain ⟨Y', rfl⟩ : ∃ Y' : ℝ × ℝ → ℝ × ℝ, Y' = Y := ⟨Y, rfl⟩
+  obtain ⟨Z', rfl⟩ : ∃ Z' : ℝ × ℝ → ℝ × ℝ, Z' = Z := ⟨Z, rfl⟩
+  obtain ⟨X', rfl⟩ : ∃ X' : ℝ × ℝ → ℝ × ℝ, X' = X := ⟨X, rfl⟩
+  have hYd : DifferentiableAt ℝ Y' p := hY.differentiableAt (by norm_num)
+  have hZd : DifferentiableAt ℝ Z' p := hZ.differentiableAt (by norm_num)
+  have hA : HasFDerivAt (fun q : ℝ × ℝ => a q.1 ^ 2)
+      ((2 * a p.1 * deriv a p.1) • ContinuousLinearMap.fst ℝ ℝ ℝ) p := by
+    have h1 := (hd.hasDerivAt.pow 2).comp_hasFDerivAt p (hasFDerivAt_fst (𝕜 := ℝ) (p := p))
+    convert h1 using 1
+    congr 1
+    norm_num
+    try ring
+  have hY1 := (hasFDerivAt_fst (𝕜 := ℝ) (p := Y' p)).comp p hYd.hasFDerivAt
+  have hY2 := (hasFDerivAt_snd (𝕜 := ℝ) (p := Y' p)).comp p hYd.hasFDerivAt
+  have hZ1 := (hasFDerivAt_fst (𝕜 := ℝ) (p := Z' p)).comp p hZd.hasFDerivAt
+  have hZ2 := (hasFDerivAt_snd (𝕜 := ℝ) (p := Z' p)).comp p hZd.hasFDerivAt
+  have hh := hA.mul (((hY1.mul hZ1).neg).add (hY2.mul hZ2))
+  have hm : (show ℝ from mfderiv 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ) (fun y => gConf a y (Y' y) (Z' y)) p (X' p))
+      = fderiv ℝ ((fun q : ℝ × ℝ => a q.1 ^ 2) *
+          (-(Prod.fst ∘ Y' * Prod.fst ∘ Z') + Prod.snd ∘ Y' * Prod.snd ∘ Z')) p (X' p) := by
+    rw [mfderiv_eq_fderiv]
+    have hfun : (fun y : ℝ × ℝ => gConf a y (Y' y) (Z' y)) =
+        ((fun q : ℝ × ℝ => a q.1 ^ 2) *
+          (-(Prod.fst ∘ Y' * Prod.fst ∘ Z') + Prod.snd ∘ Y' * Prod.snd ∘ Z')) := by
+      funext q
+      simp [gConf_apply]
+    rw [hfun]
+    rfl
+  rw [hm, hh.fderiv]
+  show _ = gConf a p (fderiv ℝ Y' p (X' p) + Gam a p (Y' p) (X' p)) (Z' p)
+    + gConf a p (Y' p) (fderiv ℝ Z' p (X' p) + Gam a p (Z' p) (X' p))
+  simp only [gConf_apply, Gam_apply, minkForm_apply, phi']
+  simp [Function.comp_def]
+  field_simp
+  ring
+
+lemma gConf_symm (a : ℝ → ℝ) (p u v : ℝ × ℝ) : gConf a p u v = gConf a p v u := by
+  rw [gConf_apply, gConf_apply]; ring
+
+lemma gConf_nondeg {a : ℝ → ℝ} {p : ℝ × ℝ} (ha : a p.1 ≠ 0) (u : ℝ × ℝ)
+    (h : ∀ v : ℝ × ℝ, gConf a p u v = 0) : u = 0 := by
+  have h1 := h ((1 : ℝ), (0 : ℝ)); have h2 := h ((0 : ℝ), (1 : ℝ))
+  rw [gConf_apply] at h1 h2
+  have ha2 : a p.1 ^ 2 ≠ 0 := pow_ne_zero 2 ha
+  have e1 : u.1 = 0 := by
+    have := (mul_eq_zero.1 h1).resolve_left ha2; simpa using this
+  have e2 : u.2 = 0 := by
+    have := (mul_eq_zero.1 h2).resolve_left ha2; simpa using this
+  exact Prod.ext e1 e2
+
+/-- **L1, discharged on the programme's metric.** Any torsion-free connection compatible at `p` with
+`a(η)²(−dη² + dx²)` IS `covConf a` there, on fields `C¹` at `p`. So every `covConf` theorem in this file —
+`curv_conf`, `scal_conf`, `einstein_conf`, `hessConf_eq`, `box_conf`, `sff_conf` — is about the METRIC. -/
+theorem covConf_isLeviCivita {a : ℝ → ℝ} {p : ℝ × ℝ} (hd : DifferentiableAt ℝ a p.1) (ha : a p.1 ≠ 0)
+    {cov' : CovariantDerivative 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ) (TangentSpace 𝓘(ℝ, ℝ × ℝ) : ℝ × ℝ → Type _)}
+    (htor' : cov'.torsion = 0) (hc' : IsCompatAt (gConf a) cov' p)
+    {Y : Π q : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) q}
+    (hY : ContMDiffAt 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ × ℝ).tangent 1
+      (fun q => (⟨q, Y q⟩ : TangentBundle 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ))) p)
+    (v : TangentSpace 𝓘(ℝ, ℝ × ℝ) p) :
+    cov' Y p v = covConf a Y p v :=
+  lc_unique (fun u v => gConf_symm a p u v) (fun u h => gConf_nondeg ha u h) htor' (covConf_torsion a) hc'
+    (covConf_compatible a p hd ha) hY v
+
+end LCConf
+
+/-! ## `r7295`, the PORT, L2 — EXISTENCE of the Levi-Civita connection for a nondegenerate metric
+
+`mathlib`'s existence section of `LeviCivita.lean`, with `inner` replaced by `g`, `InnerProductSpace.toDual` by
+`BilinForm.toDual` of a nondegenerate form, and the smoothness of `⟪Y, Z⟫` (the bundle API) by the field `mdiff` of
+`NDMetric`. -/
+
+section LCExist
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+  {H : Type*} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type*} [TopologicalSpace M] [ChartedSpace H M] [IsManifold I ∞ M]
+
+variable (I M) in
+/-- **L2.** A metric of any signature on `TM`: symmetric, nondegenerate, and differentiable along differentiable
+fields. -/
+structure NDMetric where
+  g : Π x : M, TangentSpace I x →L[ℝ] TangentSpace I x →L[ℝ] ℝ
+  symm : ∀ x u v, g x u v = g x v u
+  nondeg : ∀ x (u : TangentSpace I x), (∀ v, g x u v = 0) → u = 0
+  mdiff : ∀ {Y Z : Π x : M, TangentSpace I x} {x : M}, MDiffAt (T% Y) x → MDiffAt (T% Z) x →
+    MDiffAt (fun y => g y (Y y) (Z y)) x
+
+variable (m : NDMetric I M)
+
+/-- The Koszul form: what `g(∇_X Y, Z)` must be. -/
+noncomputable def kosz (X Y Z : Π x : M, TangentSpace I x) (x : M) : ℝ :=
+  (d% (fun y => m.g y (Y y) (Z y)) x (X x) + d% (fun y => m.g y (Z y) (X y)) x (Y x)
+    - d% (fun y => m.g y (X y) (Y y)) x (Z x)
+    - m.g x (Y x) (mlieBracket I X Z x) - m.g x (Z x) (mlieBracket I Y X x)
+    + m.g x (X x) (mlieBracket I Z Y x)) / 2
+
+theorem kosz_tensorial₁ {Y Z : Π x : M, TangentSpace I x} {x : M} (hY : MDiffAt (T% Y) x)
+    (hZ : MDiffAt (T% Z) x) : TensorialAt I E (kosz m · Y Z x) x where
+  smul {f X} hf hX := by
+    have e1 : (fun y => m.g y (Z y) ((f • X) y)) = f * fun y => m.g y (Z y) (X y) := by
+      funext y; simp
+    have e2 : (fun y => m.g y ((f • X) y) (Y y)) = f * fun y => m.g y (X y) (Y y) := by
+      funext y; simp
+    simp only [kosz, e1, e2, mvfderiv_mul hf (m.mdiff hZ hX), mvfderiv_mul hf (m.mdiff hX hY),
+      mlieBracket_smul_left hf hX, mlieBracket_smul_right hf hX]
+    simp
+    rw [m.symm x (Y x) (X x)]; ring
+  add {X X'} hX hX' := by
+    have e1 : (fun y => m.g y (Z y) ((X + X') y)) =
+        (fun y => m.g y (Z y) (X y)) + fun y => m.g y (Z y) (X' y) := by
+      funext y; simp
+    have e2 : (fun y => m.g y ((X + X') y) (Y y)) =
+        (fun y => m.g y (X y) (Y y)) + fun y => m.g y (X' y) (Y y) := by
+      funext y; simp
+    simp only [kosz, e1, e2, mvfderiv_add (m.mdiff hZ hX) (m.mdiff hZ hX'),
+      mvfderiv_add (m.mdiff hX hY) (m.mdiff hX' hY), mlieBracket_add_left hX hX',
+      mlieBracket_add_right hX hX']
+    simp
+    ring
+
+theorem kosz_tensorial₃ {X Y : Π x : M, TangentSpace I x} {x : M} (hX : MDiffAt (T% X) x)
+    (hY : MDiffAt (T% Y) x) : TensorialAt I E (kosz m X Y ·  x) x where
+  smul {f Z} hf hZ := by
+    have e1 : (fun y => m.g y (Y y) ((f • Z) y)) = f * fun y => m.g y (Y y) (Z y) := by
+      funext y; simp
+    have e2 : (fun y => m.g y ((f • Z) y) (X y)) = f * fun y => m.g y (Z y) (X y) := by
+      funext y; simp
+    simp only [kosz, e1, e2, mvfderiv_mul hf (m.mdiff hY hZ), mvfderiv_mul hf (m.mdiff hZ hX),
+      mlieBracket_smul_left hf hZ, mlieBracket_smul_right hf hZ]
+    simp
+    rw [m.symm x (X x) (Z x)]; ring
+  add {Z Z'} hZ hZ' := by
+    have e1 : (fun y => m.g y (Y y) ((Z + Z') y)) =
+        (fun y => m.g y (Y y) (Z y)) + fun y => m.g y (Y y) (Z' y) := by
+      funext y; simp
+    have e2 : (fun y => m.g y ((Z + Z') y) (X y)) =
+        (fun y => m.g y (Z y) (X y)) + fun y => m.g y (Z' y) (X y) := by
+      funext y; simp
+    simp only [kosz, e1, e2, mvfderiv_add (m.mdiff hY hZ) (m.mdiff hY hZ'),
+      mvfderiv_add (m.mdiff hZ hX) (m.mdiff hZ' hX), mlieBracket_add_left hZ hZ',
+      mlieBracket_add_right hZ hZ']
+    simp
+    ring
+
+/-- `kosz` at `x`, as a bilinear map in the values of `X` and `Z`. -/
+noncomputable def koszHom {Y : Π x : M, TangentSpace I x} {x : M} (hY : MDiffAt (T% Y) x) :
+    TangentSpace I x →L[ℝ] TangentSpace I x →L[ℝ] ℝ :=
+  TensorialAt.mkHom₂ (fun X Z => kosz m X Y Z x) x (fun _ hZ => kosz_tensorial₁ m hY hZ)
+    (fun _ hX => kosz_tensorial₃ m hX hY)
+
+/-- `g x` as a bilinear form. -/
+noncomputable def NDMetric.bil (x : M) : LinearMap.BilinForm ℝ (TangentSpace I x) := (m.g x).toLinearMap₁₂
+
+lemma NDMetric.bil_nondeg (x : M) : (m.bil x).Nondegenerate :=
+  ⟨fun u hu => m.nondeg x u hu, fun u hu => m.nondeg x u fun v => (m.symm x u v).trans (hu v)⟩
+
+/-- The candidate `∇Y` at `x`: the `g`-dual of the Koszul form. **The musical isomorphism of a nondegenerate form
+replaces `InnerProductSpace.toDual`.** -/
+noncomputable def lcAuxOf {Y : Π x : M, TangentSpace I x} {x : M} (hY : MDiffAt (T% Y) x) :
+    TangentSpace I x →L[ℝ] TangentSpace I x :=
+  haveI : FiniteDimensional ℝ (TangentSpace I x) := inferInstanceAs (FiniteDimensional ℝ E)
+  LinearMap.toContinuousLinearMap
+    (((m.bil x).toDual (m.bil_nondeg x)).symm.toLinearMap ∘ₗ (ContinuousLinearMap.coeLM ℝ) ∘ₗ
+      (koszHom m hY).toLinearMap)
+
+lemma lcAuxOf_apply {Y : Π x : M, TangentSpace I x} {x : M} (hY : MDiffAt (T% Y) x)
+    (X₀ Z₀ : TangentSpace I x) : m.g x (lcAuxOf m hY X₀) Z₀ = koszHom m hY X₀ Z₀ := by
+  show m.bil x _ Z₀ = _
+  simp [lcAuxOf]
+
+open scoped Classical in
+noncomputable def lcAux (Y : Π x : M, TangentSpace I x) (x : M) : TangentSpace I x →L[ℝ] TangentSpace I x :=
+  if hY : MDiffAt (T% Y) x then lcAuxOf m hY else 0
+
+lemma lcAux_apply {X Y Z : Π x : M, TangentSpace I x} {x : M} (hX : MDiffAt (T% X) x)
+    (hY : MDiffAt (T% Y) x) (hZ : MDiffAt (T% Z) x) :
+    m.g x (lcAux m Y x (X x)) (Z x) = kosz m X Y Z x := by
+  rw [lcAux, dif_pos hY, lcAuxOf_apply, koszHom, TensorialAt.mkHom₂_apply _ _ hX hZ]
+
+/-- A vector at `x` is determined by its `g`-products with differentiable fields — nondegeneracy in place of
+`inner_self_eq_zero`. -/
+lemma NDMetric.g_inj {x : M} {a b : TangentSpace I x}
+    (h : ∀ Z : Π x : M, TangentSpace I x, MDiffAt (T% Z) x → m.g x a (Z x) = m.g x b (Z x)) : a = b := by
+  refine sub_eq_zero.1 (m.nondeg x _ fun w => ?_)
+  have := h (FiberBundle.extend E w) (FiberBundle.mdifferentiableAt_extend I E w)
+  rw [FiberBundle.extend_apply_self] at this
+  rw [map_sub, sub_apply, this, sub_self]
+
+lemma kosz_add_Y {X Y Y' Z : Π x : M, TangentSpace I x} {x : M} (hX : MDiffAt (T% X) x)
+    (hY : MDiffAt (T% Y) x) (hY' : MDiffAt (T% Y') x) (hZ : MDiffAt (T% Z) x) :
+    kosz m X (Y + Y') Z x = kosz m X Y Z x + kosz m X Y' Z x := by
+  have e1 : (fun y => m.g y ((Y + Y') y) (Z y)) =
+      (fun y => m.g y (Y y) (Z y)) + fun y => m.g y (Y' y) (Z y) := by funext y; simp
+  have e2 : (fun y => m.g y (X y) ((Y + Y') y)) =
+      (fun y => m.g y (X y) (Y y)) + fun y => m.g y (X y) (Y' y) := by funext y; simp
+  simp only [kosz, e1, e2, mvfderiv_add (m.mdiff hY hZ) (m.mdiff hY' hZ),
+    mvfderiv_add (m.mdiff hX hY) (m.mdiff hX hY'), mlieBracket_add_left hY hY',
+    mlieBracket_add_right hY hY']
+  simp
+  ring
+
+lemma kosz_smul_Y {X Y Z : Π x : M, TangentSpace I x} {f : M → ℝ} {x : M} (hX : MDiffAt (T% X) x)
+    (hY : MDiffAt (T% Y) x) (hZ : MDiffAt (T% Z) x) (hf : MDiffAt f x) :
+    kosz m X (f • Y) Z x = f x * kosz m X Y Z x + d% f x (X x) * m.g x (Y x) (Z x) := by
+  have e1 : (fun y => m.g y ((f • Y) y) (Z y)) = f * fun y => m.g y (Y y) (Z y) := by
+    funext y; simp
+  have e2 : (fun y => m.g y (X y) ((f • Y) y)) = f * fun y => m.g y (X y) (Y y) := by
+    funext y; simp
+  simp only [kosz, e1, e2, mvfderiv_mul hf (m.mdiff hY hZ), mvfderiv_mul hf (m.mdiff hX hY),
+    mlieBracket_smul_left hf hY, mlieBracket_smul_right hf hY]
+  simp
+  rw [m.symm x (Z x) (Y x)]; ring
+
+lemma isCovariantDerivativeOn_lcAux : IsCovariantDerivativeOn E (lcAux m) where
+  add {Y Y' x} hY hY' _ := by
+    apply injective_eval_mdifferentiableAt_vectorField (I := I) (TangentSpace I x) x
+    funext X hX
+    dsimp only
+    refine m.g_inj fun Z hZ => ?_
+    rw [lcAux_apply m hX (mdifferentiableAt_add_section hY hY') hZ, add_apply,
+      map_add, add_apply, lcAux_apply m hX hY hZ, lcAux_apply m hX hY' hZ,
+      kosz_add_Y m hX hY hY' hZ]
+  leibniz {Y f x} hY hf _ := by
+    apply injective_eval_mdifferentiableAt_vectorField (I := I) (TangentSpace I x) x
+    funext X hX
+    dsimp only
+    refine m.g_inj fun Z hZ => ?_
+    rw [lcAux_apply m hX (hf.smul_section hY) hZ, kosz_smul_Y m hX hY hZ hf]
+    simp [lcAux_apply m hX hY hZ]
+
+variable (M) in
+/-- **L2. The Levi-Civita connection of a nondegenerate metric of any signature.** -/
+noncomputable def lcConn : CovariantDerivative I E (TangentSpace I : M → Type _) where
+  toFun := lcAux m
+  isCovariantDerivativeOnUniv := isCovariantDerivativeOn_lcAux m
+
+lemma lcConn_apply {X Y Z : Π x : M, TangentSpace I x} {x : M} (hX : MDiffAt (T% X) x)
+    (hY : MDiffAt (T% Y) x) (hZ : MDiffAt (T% Z) x) :
+    m.g x (lcConn M m Y x (X x)) (Z x) = kosz m X Y Z x :=
+  lcAux_apply m hX hY hZ
+
+lemma NDMetric.fun_symm (A B : Π x : M, TangentSpace I x) :
+    (fun y => m.g y (A y) (B y)) = fun y => m.g y (B y) (A y) := funext fun y => m.symm y _ _
+
+/-- **L2. It is torsion-free.** -/
+theorem lcConn_torsion : (lcConn M m).torsion = 0 := by
+  rw [CovariantDerivative.torsion_eq_zero_iff]
+  intro X Y x hX hY
+  refine m.g_inj fun Z hZ => ?_
+  rw [map_sub, sub_apply, lcConn_apply m hX hY hZ, lcConn_apply m hY hX hZ]
+  simp only [kosz, m.fun_symm X Z, m.fun_symm Z Y, m.fun_symm Y X,
+    congrFun (mlieBracket_swap (V := Y) (W := X)) x, congrFun (mlieBracket_swap (V := Z) (W := Y)) x,
+    congrFun (mlieBracket_swap (V := Z) (W := X)) x, Pi.neg_apply, map_neg]
+  rw [m.symm x (Z x) (mlieBracket I X Y x)]
+  ring
+
+/-- **L2. It is compatible with `g`**, in L1's form (`IsCompatAt`). -/
+theorem lcConn_compat (x : M) : IsCompatAt m.g (lcConn M m) x := by
+  intro X Y Z hX hY hZ
+  have dX := hX.mdifferentiableAt one_ne_zero
+  have dY := hY.mdifferentiableAt one_ne_zero
+  have dZ := hZ.mdifferentiableAt one_ne_zero
+  rw [lcConn_apply m dX dY dZ, m.symm x (Y x) (lcConn M m Z x (X x)), lcConn_apply m dX dZ dY]
+  simp only [kosz, m.fun_symm Y X, m.fun_symm Z Y, m.fun_symm X Z,
+    congrFun (mlieBracket_swap (V := Z) (W := X)) x, congrFun (mlieBracket_swap (V := Y) (W := X)) x,
+    congrFun (mlieBracket_swap (V := Z) (W := Y)) x, Pi.neg_apply, map_neg]
+  show d% (fun y => m.g y (Y y) (Z y)) x (X x) = _
+  ring
+
+/-- **The PORT, L1 + L2: the Levi-Civita theorem for a metric of any signature.** `lcConn M m` is torsion-free and
+compatible with `m.g`, and any connection that is, agrees with it at `x` on fields `C¹` at `x`. -/
+theorem lcConn_unique {cov' : CovariantDerivative I E (TangentSpace I : M → Type _)}
+    (htor' : cov'.torsion = 0) {x : M} (hc' : IsCompatAt m.g cov' x)
+    {Y : Π x : M, TangentSpace I x} (hY : CMDiffAt 1 (T% Y) x) (X₀ : TangentSpace I x) :
+    cov' Y x X₀ = lcConn M m Y x X₀ :=
+  lc_unique (m.symm x) (m.nondeg x) htor' (lcConn_torsion m) hc' (lcConn_compat m x) hY X₀
+
+end LCExist
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -1116,3 +1505,14 @@ end ShadowProbe
 #print axioms ShadowProbe.wseam_C1
 #print axioms ShadowProbe.wseam_not_C2
 #print axioms ShadowProbe.wick_bijOn
+#print axioms ShadowProbe.koszul
+#print axioms ShadowProbe.lc_unique
+#print axioms ShadowProbe.covConf_torsion
+#print axioms ShadowProbe.covConf_compatible
+#print axioms ShadowProbe.covConf_isLeviCivita
+#print axioms ShadowProbe.kosz_tensorial₁
+#print axioms ShadowProbe.kosz_tensorial₃
+#print axioms ShadowProbe.lcAux_apply
+#print axioms ShadowProbe.lcConn_torsion
+#print axioms ShadowProbe.lcConn_compat
+#print axioms ShadowProbe.lcConn_unique

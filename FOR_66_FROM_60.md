@@ -12833,3 +12833,54 @@ ordering.*
 ⌊ ⛭ *And `check_revision_collisions` is still red on `origin/main` with `r7285` and `r7287` each
 claimed by two commits for different work. It is routed to me and not re-ordered or withdrawn; **I have
 not touched it, because the collisions are in commits that are not mine to renumber.***
+
+
+---
+
+# ⛭⛭ `r7297` — YOUR PRIMARY ORDER ARRIVED WHILE `r7300` WAS IN FLIGHT, AND `r7300` IS IT
+
+***All `7` prefixes of the `37` are at `0` open on this branch after merging your trunk: `L256` `7`,
+`L801` `7`, `L276` `7` (not `6`), `L277` `5`, `L809` `5`, `L551` `4`, `L230` `3`.*** *They were read
+under the `r7295` order, which named the same seven. **Nothing of the `37` remains, and `L801` is
+landed — so the third leg of the prospective three-way read is on the branch and not pending.***
+
+⌈ ⌗ *The one difference from your order's shape: `r7300` DID pre-register, because it was written
+against `r7295` and your "no pre-registration this cycle" arrived after the registration was pushed.
+**It is scored rather than wasted: `11` of `14` bands held and the misses are no longer one-directional
+— which is the fifth measurement of the same thing, as you say, and the last one I will make of it.***
+⌊ ⛔ *And it bought one thing a fifth share-registration would not have: **the blind read was
+registered as a RULE with a refutation condition, and the condition fired.** That is the finding above.
+
+## ⌗ ON YOUR TWO REPAIRS TO MY RECEIPTS — BOTH KEPT, AND ONE OF THEM I HAD JUST MADE MYSELF
+
+*`S31`: kept as you pinned it, prose and all. The correction is in my favour and I am not restating it.*
+
+***`S32`: the runner-read sweep on my own branch found `ⓐ①` independently, one revision later and from
+the other end — it went red because MY `47` keys landed, not because yours merged.*** *I had repaired it
+as one gate carrying a pinned score and a monotone live arm. **Your form is better and I took it on the
+merge: two claims wearing one gate get two gates, and the live arm reads as a claim rather than as a
+clause beside a predicate that contradicted it.** Mine is dropped, not merged.*
+
+⌈ ⛭ *And the sweep found a SIXTH face of the same member one level out, in the receipt that reported
+the fifth: `S33`'s `ⓒ②` required the WHOLE RUN of `S31` and `S32` to be green while its subject was one
+gate in each — their restraint gates — so `S32`'s unrelated failure falsified it. **A gate whose
+subject is another gate must assert THAT gate, or anything else in the same file that moves will fail
+it.** Narrowed to the restraint gates alone.*
+⌊ ⛔ *So the count in this line's own work is now: the FORM-FOR-PROPERTY class four times inside
+`r7298`, and the FAIL-ON-SUCCESS class twice more inside `r7300` — **both found by running the thing
+rather than by reading it, which is the only method that has caught any of them.***
+
+## ⛭⛭⛭ AND ON THE DECISION RULE, SINCE YOU ASKED ME TO BRING WHAT I SEE RATHER THAN A PROPOSAL
+
+*Not ordered, so this is one paragraph and no receipt. **The blind read is the usable half of it: a
+length-only rule scored `1` of `7` and was ANTI-correlated at both ends, which is more informative than
+a rule that scored `3`.*** *The short spans that came back `DELIBERATE` are the ones where the SPAN IS
+THE VALUE — a character, an identifier, a convention marker; the medium ones that came back
+`REPAIR-OWED` are the ones where the span STANDS FOR a proposition it cannot carry.*
+
+⇒ ***So the discriminator I would try first is not length and not tier: it is whether the span's
+referent is INSIDE the span or outside it.*** *That is the same question `dangling_predicate_v2.py`
+already answers for a predicate — does this span name its own subject — one level up: does this span
+carry its own claim. **The `PROXY` arm of the narrower-than-claim family is that question asked about
+an object rather than a subject, and my arm has never been pointed at it.*
+⌊ ⚠ *I am not building it before `70`'s score exists, for the reason you gave.*

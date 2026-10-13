@@ -145,8 +145,15 @@ def main():
     check('P15 treats the radiation amplitude as a READING: "that start read in units of a density '
           'rather than an inheritance" -- and with the handover at the branch point, "no such start '
           'and no such amplitude"',
-          'is that start read in units of a density rather than an inheritance' in p15
-          and 'there is no such start and no such amplitude' in p15)
+          # ⛭ r7293+cc66: the two spans are MERGED into the one P15 sentence that carries both.
+          #   The first opened on the finite verb `is` and named no subject; the second's `no
+          #   SUCH start` and `no SUCH amplitude` both pointed outside it, at the hand-placed
+          #   start in the clause before -- and `such` is the whole content, since the paper is
+          #   not saying there is no start of any kind.  ** One pin over one sentence, rather
+          #   than two overlapping pins on it. **
+          'The radiation amplitude at a start placed by hand, $\\omega_r(1+z_{\\mathrm{start}})/\\omega_m$, '
+          'is that start read in units of a density rather than an inheritance; with the plasma handed over '
+          'at the branch point there is no such start and no such amplitude.' in p15)
     # ** r6931+70.1: CLASS (a) -- THE PIN FROZE A READING THE CORPUS CORRECTED.  "one-parameter
     #   accommodation" was the fitted-onset account of the acoustic scale; r6772+66.1 (507d2e99)
     #   replaced it: the acoustic scale is COMPUTED, the sound horizon carrying no early-universe
@@ -155,7 +162,14 @@ def main():
     #   strongly: there is no parameter for it to be.  Pinned to the corrected sentence.
     check('and P15 carries NO early-universe parameter for it to be: the angle is "an output of the '
           'rate rather than a calibration of it"',
-          'There is no early-universe parameter among them' in p15
+          # ⛭ r7293+cc66: widened left so that `among them` has a referent inside the span.
+          #   ** Disclosed rather than glossed: the paper's enumeration runs to four parameters
+          #   ($\Omega_m$, $H_0$, $\omega_b$, $\omega_\gamma$) and this span reaches the last two.
+          #   Taking all four would make a 600-character pin, which trades one brittleness for
+          #   another; what the span carries is that the list it ends is of directly and
+          #   framework-independently measured quantities, which is the content the claim needs. **
+          '$\\omega_b$ and $\\omega_\\gamma$, which the sound speed carries and which are measured directly '
+          'and framework-independently. \\emph{There is no early-universe parameter among them}' in p15
           and 'h the plasma handed over at the branch point the sound horizon has no lower endpoint to place, so the angle is an output of the rate rather than a calibration of it' in p15)
     # ** r6931+70.1: P16 IS READ WITHOUT ITS COMMENTS.  The pin this replaces was satisfied by
     #   P16's MASTHEAD, a `%` comment the paper never printed -- the instance L237/G50 records from
@@ -180,16 +194,27 @@ def main():
           'and the microwave-background peak heights ... the one quantity the handover supplies" -- and '
           'closes the radiation amplitude because "a quantity with no single value has no handover to '
           'transmit"',
-          'the same standard datum that fixes both the light-element abundances and the '
-          'microwave-background peak \\emph{heights}' in p16
-          and 'the one quantity the handover supplies' in p16
+          # ⛭ r7293+cc66: BOTH P16 arms widened to name $\eta$.  Each was an appositive with one
+          #   term inside and its head -- the quantity being renamed -- outside, and WHICH quantity
+          #   is the whole of this check's claim: the receipt's point is that $\eta$ is kept APART
+          #   from the ratio the clock reads.  ** The first arm is 69's REPAIR-OWED call on the
+          #   trunk and this seat had it MEANING-HELD; repaired on the merged ledger's reading,
+          #   which costs the verdict nothing -- a span that names $\eta$ is better either way. **
+          'the inherited baryon-to-photon ratio $\\eta$---the same standard datum that fixes both the '
+          'light-element abundances and the microwave-background peak \\emph{heights}'
+          in p16
+          and 'the inherited baryon-to-photon ratio $\\eta$---the composition datum, the one quantity the '
+              'handover supplies' in p16
           and 'a quantity with no single value has no handover to transmit' in p16
           and 'rho_r/rho_m the peak SPACING' not in p16)
 
     # ---- and the link to the one-constant theorem ------------------------------
     p0 = flat('corpus/geometric_core_paper.tex')
     check('the one-constant law: a dimensionless magnitude needs TWO invariants',
-          'a dimensionless magnitude needs two' in p0)
+          # ⛭ r7293+cc66: widened back to `a second invariant`.  The old span carried a COUNT
+          #   and not what it counts -- the noun is elided in the paper and so sat outside the
+          #   span -- while the check's own label says `needs TWO INVARIANTS`.
+          'neither real form supplies a second invariant and a dimensionless magnitude needs two' in p0)
     # ** THE FIRST DRAFT OF THIS CHECK WAS HOLLOW: `.is_commutative` is True for every ordinary
     # sympy symbol, so it asserted nothing.  Caught here rather than by the lint -- which is the
     # discipline the fork taught at c54.180: test the instrument against the thing it judges. **

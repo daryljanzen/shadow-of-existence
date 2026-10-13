@@ -149,20 +149,27 @@ for _c in _mine:
     _by_pfx[_c[0].split('/')[1]].append(_c)
 _un_then = sum(1 for c in rows_of(_git('show', f'{PREG}:{BASE}'))
                if c[5].startswith('UNADJUDICATED'))
-_un_after = sum(1 for c in _all if c[5].startswith('UNADJUDICATED'))
-_un_now = sum(1 for c in rows_of(read(BASE)) if c[5].startswith('UNADJUDICATED'))
+#: ⛔⛭ r7297+66: `_un_now` read the WORKING TREE and the gate asserted EQUALITY with the registered
+#: figure, while the label beside it claimed the arm was MONOTONE.  ** The prose was the honest one
+#: and the predicate was not: an equality against a live count is the 71st member, and it went red
+#: the moment another seat's verdicts merged. ** Repaired, both halves separately, because they are
+#: two different claims: the registration is scored at AFTER, the commit that landed the 56, and the
+#: monotonicity is the live claim and is tested as one.
+_un_at_after = sum(1 for c in rows_of(_after_led) if c[5].startswith('UNADJUDICATED'))
+_un_live = sum(1 for c in rows_of(read(BASE)) if c[5].startswith('UNADJUDICATED'))
 _reg_after = re.search(r'Expected after all five: `(\d+)`', _pred)
 print(f'      {len(_mine)} keys verdicted across {len(_by_pfx)} prefixes; backlog {_un_then} -> '
-      f'{_un_after} at this revision, {_un_now} live; the registration said '
+      f'{_un_at_after} at this revision, {_un_live} live now; the registration said '
       f'{_reg_after.group(1) if _reg_after else "?"}')
-gate(f'Ⓑ① ⛭⛭ `{len(_mine)}` LANDED, `{_un_after}` REMAINED --- and the one arithmetic figure the '
-     f'registration predicted, the backlog after all five, is `{_reg_after.group(1)}` against '
-     f'`{_un_after}` measured AT THIS REVISION\'S OWN COMMIT, which is where the prediction was '
-     f'scored.  ** The equality was read LIVE in the first form and went red the moment a later '
-     f'revision of this line landed more keys --- a prediction scored against a moving ledger is the '
-     f'fail-on-success family, and a figure hit exactly is a fact about the state it was hit in. '
-     f'The LIVE arm is the MONOTONE one: `{_un_now}` now, which may fall further and never rises **',
-     len(_mine) == 56 and int(_reg_after.group(1)) == _un_after and _un_now <= _un_after)
+gate(f'Ⓑ① ⛭⛭ `{len(_mine)}` LANDED and `{_un_at_after}` REMAINED AT THIS REVISION --- and the one '
+     f'arithmetic figure the registration predicted, the backlog after all five, is '
+     f'`{_reg_after.group(1)}` against `{_un_at_after}` measured AT `AFTER`, the commit that landed '
+     f'them.  ** Scored where the claim was made, not against a count other seats keep moving **',
+     len(_mine) == 56 and int(_reg_after.group(1)) == _un_at_after)
+gate(f'Ⓑ①ᵃ ⛭ and the live arm is MONOTONE, which is the claim the label above used to make while the '
+     f'predicate tested equality: `{_un_live}` open now against `{_un_at_after}` then --- the backlog '
+     f'may fall further and never rises',
+     _un_live <= _un_at_after)
 
 _score = []
 for _p, (_ro_band, _mh_band) in BANDS.items():
@@ -257,8 +264,10 @@ gate(f'Ⓒ③ ⌗⛭ and the closed word lists show their LOWER-BOUND property a
 print('\n── Ⓓ  THE RESTRAINT ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 _subjects = sorted({c[0] for c in _mine})
-_touched = sorted({f for f in (_git('diff', '--name-only', PREG) + '\n'
-                               + _git('ls-files', '--others', '--exclude-standard')).split('\n') if f})
+#: ⌗ r7297+66: and the range is pinned to `PREG..AFTER`, closed, for the same reason as Ⓑ① --- the
+#: restraint is a claim about what THIS revision edited, and a diff with one live end grows with
+#: every later commit until the negative fails on another seat's work.
+_touched = sorted({f for f in _git('diff', '--name-only', PREG, AFTER).split('\n') if f})
 _touched_subjects = [f for f in _touched if f in _subjects]
 print(f'      the {len(_mine)} rows live in {len(_subjects)} receipts; this revision edited '
       f'{len(_touched_subjects)} of them')
@@ -279,7 +288,8 @@ for l in FAILURES:
     print(f'    FAIL  {l}')
 print('=' * 100)
 print(f"""
-  ⛭⛭ ** {len(_mine)} LANDED, {_un_now} REMAIN ** -- the one arithmetic figure the registration predicted, exact.
+  ⛭⛭ ** {len(_mine)} LANDED, {_un_at_after} REMAINED AT THIS REVISION ** -- the one arithmetic figure the
+     registration predicted, exact. ({_un_live} open live now, the arm being monotone.)
   ⛔ ** AND {len(_missed)} OF THE {len(_score)} REGISTERED BANDS ARE MISSED, EVERY ONE IN THE SAME DIRECTION -- ABOVE. **
      REPAIR-OWED above its band on both token-heavy prefixes, MEANING-HELD above on both
      sentence-heavy ones. The bands are wrong systematically, not one at a time -- and they were
