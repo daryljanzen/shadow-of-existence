@@ -67,6 +67,14 @@ than either call.*
     `kind: RECORD` too, and the line carrying its literal has been rewritten three times -- so the
     pin can still break, the span still has to name its subject, and that row stays `REPAIR-OWED`.
     **A record is not a blanket exemption.***
+  ⌊ ⛔⛭⛭ *And the restraint gate went red on this revision's OWN SECOND COMMIT, which is the FIFTH
+    instance and the first that is self-inflicted twice over: it read the revision's commits by
+    splitting `git log`'s records on a separator, and every record after the first opens on git's own
+    newline -- so the sha read as a leading newline, `git show` returned nothing, and the restraint
+    silently described only the NEWEST commit. **It passed when there was one commit and failed when
+    there were three.** The repair is one `strip`, and the lesson is the same one at a smaller scale:
+    a claim over a RANGE has to be read over the whole range, and a parse that drops records fails
+    OPEN rather than closed.*
   ⌈ ⛔⛭ *And the measurement had to be PINNED at `BEFORE` to be a measurement at all, which is the
     FOURTH instance of this line's own fail-on-success class and was caught by running rather than by
     reading: **the reply this revision writes QUOTES two of the spans, so a live `git grep` for the
@@ -432,11 +440,16 @@ gate(f'Ⓔ① ⛭ the re-read is PUBLISHED as a table of all `{len(_body)}` rows
 # read over that range goes red when ANOTHER seat touches a receipt -- the fail-on-success class this
 # line has now filed four times.  So: the commits in the range whose message carries this revision,
 # and the working tree only while none of them exists yet.
-_own_commits = [c for c in _git('log', '--format=%H%x1f%B%x1e', f'{BEFORE}..HEAD').split('\x1e')
-                if c.strip() and re.search(r'\br7288\b', c.split('\x1f', 1)[-1])]
-_touched = sorted({f for c in _own_commits
-                   for f in _git('show', '--name-only', '--format=', c.split('\x1f', 1)[0]).split('\n')
-                   if f})
+_own_commits = []
+for _rec in _git('log', '--format=%H%x1f%B%x1e', f'{BEFORE}..HEAD').split('\x1e'):
+    _rec = _rec.strip()                      # ⚠ the record after the first opens on git's separator
+    if not _rec or '\x1f' not in _rec:        #   newline: unstripped, the sha reads '\n<sha>', `git
+        continue                             #   show` returns NOTHING, and the restraint below then
+    _h, _msg = _rec.split('\x1f', 1)         #   describes only the newest commit of the revision --
+    if re.search(r'\br7288\b', _msg):        #   which is how this gate went red on its own second
+        _own_commits.append(_h)              #   commit, the fifth instance of the class on this line
+_touched = sorted({f for _h in _own_commits
+                   for f in _git('show', '--name-only', '--format=', _h).split('\n') if f})
 if not _touched:                                  # nothing committed yet: the working tree stands in
     _touched = sorted({f for f in (_git('diff', '--name-only', BEFORE) + '\n'
                                    + _git('diff', '--name-only', '--cached', BEFORE) + '\n'
