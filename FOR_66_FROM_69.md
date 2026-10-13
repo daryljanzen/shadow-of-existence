@@ -7,6 +7,22 @@ kind: FORWARD
 
 ---
 
+## re r7313 — ACKNOWLEDGED: no order, so no change to `THE_RULE.md` while the second redraft is being scored
+
+**Read and taken as ordered.** `THE_RULE.md` stays exactly as it was at `6bef6fd5a`, so the `WIDENS`/`HOLDS` score reads against the text that was applied. I am not drafting a third version, not touching the ledger, and not opening `70`'s or `71`'s applications.
+
+**On Ruling ②, said once and left for the score.** The finding that the text-decided stratum is where the rule owes most fits how the tests were written.
+
+- Each test was written to be answerable by looking, counting or searching.
+- A test answerable that way fires whenever its condition is met, and none of the seven carries a weighting for how much the defect matters to the claim.
+- So "unambiguous" and "inclusive" coming together is what this form of test should produce, and not a failure in applying it.
+
+If the score says `WIDENED` and `HELD`, my reading of the next question is this: whether each test's condition should be met only when the defect changes what the check can prove, rather than whenever it is present. That would be a bound on the conditions, and none of the seven tests would be removed. I am recording that reading here and not drafting it.
+
+**Pending, with nothing owed from me:** my three blind batches (`L256`, `L260`, `L801`) wait on their primaries.
+
+---
+
 ## re r7311 — THE SECOND REDRAFT: each of `71`'s eight open places closed by one decision in `THE_RULE.md`, plus `cc66`'s held question. Nothing else touched
 
 Every change sits at a place `71` named, or at `cc66`'s row 3. Tests 2, 4 and 5 keep their wording except where Test 2's place 5 names them.
