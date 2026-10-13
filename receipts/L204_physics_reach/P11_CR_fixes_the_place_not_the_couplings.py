@@ -75,6 +75,22 @@ def check(label, cond):
         FAILED.append(label)
 
 
+def _r7283r3():
+    """`r7283` ruling ③: the group computations this row's own paper states, loaded on demand.
+
+    *The ruling asked which metric the paper states at this locus.  ** It states none, because
+    the claim is not a metric claim: it is a statement about which GROUPS exist, and `lie_g` --
+    the function the backlog named -- tests whether a VECTOR FIELD is Killing for a METRIC. **
+    A change of inputs cannot repair a change of kind, so the row is computed here through the
+    stabiliser of the form instead, and the backlog's `INPUTS` classification is withdrawn for
+    it.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import groups_and_characters as _G
+    return _G
+
 def main():
     print()
     print('  P11 -- does CR bear on N_eff at all?')
@@ -192,6 +208,11 @@ def main():
     print('    promoted to forced ** -- at which point the nu_R would acquire couplings and this would')
     print('    have to be re-run.')
     print()
+    _G = _r7283r3()
+    check('⛭ `r7283` ③ COMPUTED, not cited: `su(3)` is not a subalgebra of `so(5,1)`. It is compact, so any embedding lands in a maximal compact subalgebra -- `so(5)`, of dimension 10, which is `B2` -- and `B2`\'s eight roots fall into TWO length classes of four while an `A2` needs SIX of one length. One dimension up, `so(6)` is `D3` with twelve roots of one length and the containment HOLDS, which is the reachable converse',
+          _G.su3_is_not_in_so51()
+          and not _G.su3_containment_under_the_dimension_edit())
+
     return 0
 
 

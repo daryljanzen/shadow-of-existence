@@ -14175,3 +14175,52 @@ if _own_sess is None:
 ⌗ ***What I need from you is one line: either that gate's label is yours to amend, or the row stands computed in `C75` alone and the holder keeps its `computes NOTHING` claim.*** *I will not ask again; whichever you say, it is applied directly.*
 
 ⌗ *`r7243` stands. Next, in order: `r7283` ruling ③'s paper read at the four `GEOMETRY-NOT-RECORDED` loci and the one `OBJECTS-NOT-RECORDED` locus — a full turn on `P17`, not a grep, with `no metric stated at the locus` routed as a GAP IN THE PAPER rather than held. Then the rest of the `18`, then the `12` `EXTEND`, then order ②'s zero-mode function. **And for `L174`/`L203` I will give you my MODE call before I read a key, as ordered.***
+
+---
+
+## ⛭⛭⛭ `r7283+cc66.2` — **LANDED `46` OF `59`. REMAINING `13`.** ⚠⛭⛭ **RULING ③'s PAPER READ LANDS ALL FIVE HELD ROWS, AND IT MOVES YOUR RULING'S PREMISE IN TWO WAYS: THE LOCI ARE IN FOUR PAPERS, AND FOUR OF THE FIVE ARE NOT METRIC CLAIMS AT ALL**
+
+*`C76`: `48` checks, all pass, `17` s. `REACHED_B5.tsv` digest `7f4d93b0f36d7468`. Five rows, five taken, each FALSE on its own recorded converse. `r7283+cc66.4` is the computations, this push the receipt.*
+
+### ⌗ FIRST, THE LOCI ARE IN FOUR PAPERS AND NOT ONE
+
+*You wrote "the geometric core is `P17`". **It carries exactly one of the five.***
+
+| row | the paper its literal is pinned in |
+|---|---|
+| `B39` | `geometric_core_paper.tex` |
+| `B1`, `B42` | `boundary_paper.tex` |
+| `P11` | `matter_sector_paper.tex` |
+| `B11` | `janzen_circle_v3.tex` |
+
+⌗ *So the full-turn-per-paper rule bought four reads, not one, and `C76`'s `Ⓑ①` gates the count.*
+
+### ⚠⛭⛭⛭ SECOND, AND THIS IS THE FINDING: FOUR OF THE FIVE HAVE NO METRIC IN THEM
+
+***Your ruling inverted my hold reason correctly — they are not blocked for want of a metric — and then expected the answer to BE a metric. It is not.*** *Three of the four are statements about which GROUPS exist, and the fourth is the group the absolute fixes:*
+
+- `P11`: $\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$, structurally.
+- `B1`, `B42`: the handedness is carried by the **discrete** coset $\mathrm{O}(5,1)\setminus\mathrm{SO}_0(5,1)$, and a circle action needs a positive-dimensional **connected** group.
+- `B39`: the absolute is $\eta(X,X)=0$, and a substrate point's polar hyperplane cuts a totally geodesic $\mathrm{dS}_4$ of isometry $\mathrm{SO}(4,1)$, a sweep-subgroup of the substrate's $\mathrm{SO}(5,1)$.
+
+⇒ ⚠ ***And `lie_g`, the function the backlog named for all four, tests whether a VECTOR FIELD is Killing for a METRIC.*** *Measured off its own syntax tree it is worse than I had said: **its only parameter is `xi`, the vector field, and the metric it differentiates is read from module level** — so the change of inputs the backlog promises is a change of **vector field**, and no vector field is a group.*
+
+⌈ ***A CHANGE OF INPUTS CANNOT REPAIR A CHANGE OF KIND.*** *So `GEOMETRY-NOT-RECORDED` is **withdrawn** for all four — my code, and it was wrong in its own right — and `FUNCTION-IS-THE-WRONG-KIND` replaces it. ⌊ **That is a reclassification of the BACKLOG and not a hold on the row: all five are computed exactly, and the computation is what backs the reclassification rather than an argument about it.***
+
+⌗ ***And your GAP branch fires nowhere.*** *Every one of the five loci states what its row needs, in one sentence, in the paper where the literal is pinned. **The defect was mine and the backlog's; it was never the papers'.***
+
+⌗ *What is computed, in one line: `so(5,1)` dim `15` and `so(4,1)` dim `10` from the form itself; `B2` has eight roots in two length classes of four so it contains no `A2`, while `D3` has twelve of one length and does — **so `su(3)` embeds one dimension up and not here, and the obstruction is the ROOT SYSTEM and not a dimension count** (`so(5)` has `10` against `su(3)`'s `8`); all fifteen generators of `so(5,1)` are traceless so `det exp(tX) = 1` for every `t` and the `det = -1` coset meets no one-parameter subgroup, while the `(x4,x5)` generator exponentiates to a genuine circle of period `2π` inside the identity component; a substrate point's polar hyperplane is `(4,1)` and a point inside the cone gives `(5,0)`.*
+
+### ✔ `B11` LANDS AS AN ORDINARY `INPUTS` ROW AND ITS HOLD CODE WAS RIGHT
+
+*`character(s2)` is exactly the right KIND; the circle paper names the three critical loci as `f = 0` (the seam), `f = 1` (the turnaround) and `f = 2` (the interior Euclidean null); and `character(1-f)` at those three returns three DISTINCT characters where three equally spaced values return two.* ⇒ ✔ ***So `OBJECTS-NOT-RECORDED` was accurate and only my SEARCH was wrong — the objects were recorded, in a different paper from the one I looked in.*** ⌗ *And I do not claim the paper's two triples are one structure: it declines that in its own voice and nothing here supplies a derivation.*
+
+### ⚠⛭⛭ AND THIS BATCH MADE AND CAUGHT `C75`'s BUG ONE LAYER UP
+
+***Two converses were first written as `lambda: not GC.<fn>` WITHOUT the call. `not <function>` is always `False` — and `False` is exactly what a converse must return, so both rows PASSED for the wrong reason.***
+
+⇒ *Every predicate slot is a **named function** now, so a missing call raises `TypeError`, and `reach_b5` asserts at import that no slot is a lambda and every slot returns a `bool`.* ⌈ ⛭ ***`C75` taught the loader to refuse an empty container it used to return in silence; this is the same defect in the LEDGER rather than the loader, and I would rather hand you the pair than the half I found first.*** ⌊ ⌗ *Two more found the same way, both by a gate rather than by me. `Ⓑ②` failed on `B11` because I matched its literal against the RAW paper and the sentence is broken across a line — it now reads whitespace-normalised, the way the holders do. **And `check_unread_figure` caught `Ⓓ⑪` attributing the three values of `f` to the paper while nothing in the receipt opened it.** ⇒ *The gate's own remedy allows dropping the attribution; I took the other half and now **parse the three loci out of the paper's own sentence**, with the transcription checked against the read rather than standing beside it — four lines, and `B11` becomes a paper-read computation instead of a transcribed one.*
+
+⌗ ***And `B1` is one of `S14`'s five line-pinned sites and it is in this batch.*** *Checked BEFORE the edit this time, not after a trunk red: `S14`'s own source now says the line is provenance and the measurement does not depend on it, and `computations` is in its scratch-tree symlink list — **and `C76`'s `Ⓕ⑧` runs `S14` and gates it green with `B1` edited**, `17/17`.
+
+⌗ *`r7243` stands. Remaining `13` = `9` untouched `INPUTS` plus the `4` still held (`3` × `bead_frames: tau_of_r` `NESTED-FUNCTION`, `1` × `tau_r` `AXIS-ARGUMENT`), which is the capability `Ⓓ⑤` of `C73` gated the decision NOT to build. Then the `12` `EXTEND`, then order ②'s zero-mode function. **The one item still with you is `C75`'s withheld holder.***

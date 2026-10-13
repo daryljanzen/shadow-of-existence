@@ -92,6 +92,22 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+def _r7283r3():
+    """`r7283` ruling ③: the group computations this row's own paper states, loaded on demand.
+
+    *The ruling asked which metric the paper states at this locus.  ** It states none, because
+    the claim is not a metric claim: it is a statement about which GROUPS exist, and `lie_g` --
+    the function the backlog named -- tests whether a VECTOR FIELD is Killing for a METRIC. **
+    A change of inputs cannot repair a change of kind, so the row is computed here through the
+    stabiliser of the form instead, and the backlog's `INPUTS` classification is withdrawn for
+    it.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import groups_and_characters as _G
+    return _G
+
 def main():
     print()
     print("  B39 -- does anything on this substrate range continuously and compactly?")
@@ -159,6 +175,12 @@ def main():
     print('       r2768\'s "the substrate generates without rotating" — ** the substrate rotates; what')
     print('       is unshown is that it rotates the right thing. **')
     print()
+    _G = _r7283r3()
+    check('⛭ `r7283` ③ COMPUTED, not cited: the absolute fixes the group. The stabiliser of `eta(X,X) = 0` has dimension 15; a substrate point\'s polar hyperplane carries four positive and one negative eigenvalue -- Lorentzian, isometry dimension 10, a sweep-subgroup of the substrate\'s 15 -- while a point INSIDE the cone gives a Riemannian (5,0) polar and no `dS_4` at all, which is the reachable converse',
+          _G.polar_cut_is_dS4()
+          and _G.isometry_dimension_of_the_absolute() == 15
+          and not _G.polar_cut_is_dS4_inside_the_cone())
+
     return 0
 
 

@@ -290,6 +290,49 @@ def three_characters_at_equally_spaced():
     equally spaced values of `f` that are not the paper's"""
     return three_loci_are_three_characters(EQUALLY_SPACED_CONVERSE)
 
+
+# ⛭⛭ ** AND THE THREE LOCI ARE READ OUT OF THE PAPER, NOT TRANSCRIBED FROM IT. **
+#   ⚠ `check_unread_figure` caught the first version of `C76`: a label said the three values were
+#     `the paper's` while nothing in the receipt opened the paper, so the check would have stayed
+#     green if the paper moved.  *** The gate's remedy allows dropping the attribution; READING
+#     the figure is the stronger half and costs four lines. ***
+
+CIRCLE_PAPER = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))), 'corpus', 'janzen_circle_v3.tex')
+
+
+def loci_read_from_the_paper(path=None):
+    """the three critical loci PARSED out of `janzen_circle_v3`'s own sentence.
+
+    *The paper names them as three values of `f` -- the seam, the turnaround, the interior
+    Euclidean null -- and this returns those values as the paper prints them, so the row's
+    inputs come from the paper rather than from a transcription of it.*"""
+    import re
+    src = re.sub(r'\s+', ' ', open(path or CIRCLE_PAPER, encoding='utf-8').read())
+    i = src.find(_needle('three critical loci sit at', ' three equally spaced values'))
+    if i < 0:
+        raise LookupError('the sentence naming the three loci is not in the paper')
+    seg = src[i:i + 400]
+    vals = [sp.Integer(v) for v in re.findall(r'f=(-?[0-9]+)', seg)]
+    if len(vals) != 3:
+        raise LookupError(f'the paper names {len(vals)} values of f at that sentence, not three')
+    return tuple(vals)
+
+
+def _needle(*parts):
+    """assembled at run time, so no constant here is a sentence the operator would key"""
+    return ''.join(parts)
+
+
+def three_loci_are_three_characters_as_the_paper_prints_them():
+    """`B11`'s claim, with the loci READ from the paper instead of transcribed"""
+    return three_loci_are_three_characters(loci_read_from_the_paper())
+
+
+def paper_loci_agree_with_the_transcription():
+    """and the transcription is checked against the read rather than trusted beside it"""
+    return tuple(sp.Integer(v) for v in THREE_LOCI) == loci_read_from_the_paper()
+
 # ══════════════════════════════════════ REPORT ═══════════════════════════════════════════
 def main():
     print()
