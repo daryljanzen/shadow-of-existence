@@ -36,9 +36,18 @@ the file states it (`3`); or a single unchanged line whose TEXT IS THE FACT (`2`
 a name, or a whole clause -- never a span out of the middle of a sentence, and never several arms
 under one label. **
 
+** ⛭⛭ AND THE ONE CHECK ON A SELF COUNT THAT DOES NOT RUN THROUGH ME. **  *`71`'s blind application of
+the same redraft landed on the trunk while this was being read.  **One key is in both samples, and we
+agree on the verdict, the step and the reason.**  Its `50` owed keys are decided Test `1` `21` and Test
+`5` `12` ahead of everything else -- the same two grounds in the same order as these `27`, on a
+different population, read blind -- and it records the same cause for the second: the joint-piece
+paragraph sends a claim about pieces TOGETHER to Test `5` instead of step 2.*
+
 ⛔ ** THIS REVISION VERDICTS NOTHING. **  *`27` withdrawals read in a sample are a FINDING.  Writing
-them into the ledger re-opens a backlog this line closed at `r7318` and binds the campaign; `r7313`
-and the pre-registration both put that decision with the gating seat.  **Routed with the table.**
+them into the ledger adds `27` rows to the `366` `REPAIR-OWED` the trunk already carries -- the
+VERDICTING campaign is the one that closed, and `r7315` repaired that very framing in `PO-78`'s
+standing state -- and it binds the campaign that has not; `r7313` and the pre-registration both put
+that decision with the gating seat.  **Routed with the table.**
 
 ⚠ WHAT THIS CANNOT SETTLE is at the foot -- beginning with the fact that it is a SELF count whose one
 protection, the band, is the thing that failed.
@@ -376,6 +385,68 @@ gate('Ⓕ②  ⚠ and THE LIMIT IS THE ONE DECLARED BEFORE THE DRAW: this is a S
      'the thing that failed -- so what can be checked without trusting me is the draw\'s '
      'reproduction and the three grounds above, each read at a commit and not at the live tree **',
      _self and _prot)
+
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+head('G -- THE ONE CHECK ON A SELF COUNT THAT DOES NOT RUN THROUGH ME: 71 READ ONE OF THESE KEYS BLIND')
+
+# 71's blind application of the SAME redraft, landed on the trunk at r7315's merge and read AT that
+# commit.  A different population, a different seat, and no sight of any verdict -- which is the only
+# thing available that can corroborate a count its own author made.
+TRUNK = '619a4753'
+_G71 = rows_of(show(TRUNK, 'computations/beyond_the_wall/r7313_71_redraft2_blind/GROUNDS_71_redraft2.tsv'))
+_owed71 = [r for r in _G71 if r[2] == 'REPAIR-OWED']
+_t71 = {}
+for r in _owed71:
+    _t71[r[4]] = _t71.get(r[4], 0) + 1
+_mine_keys = {(c[1], c[2]): c for c in RESULT}
+_shared = [(r, _mine_keys[(r[0], r[1])]) for r in _G71 if (r[0], r[1]) in _mine_keys]
+_agree = [(r, c) for r, c in _shared
+          if (r[2] == 'DELIBERATE') == (c[6] == 'HELD') and r[3] == '2' and c[7].startswith('step 2')]
+print(f'      71 blind: {len(_owed71)} owed of {len(_G71)};  deciding test over owed: {_t71}')
+print(f'      keys both of us read: {len(_shared)};  agreeing on verdict AND step: {len(_agree)}')
+gate(f'Ⓖ①  ⛭⛭ **ONE KEY OF THE `40` WAS ALSO READ BLIND BY `71`, AND WE AGREE ON THE VERDICT, THE STEP '
+     f'AND THE REASON**: `$D_M=D_C$` -- `71` `DELIBERATE` at step 2\'s second bullet because the claim '
+     f'lists the four pieces as each present, which says something about each piece ON ITS OWN; this '
+     f'seat `HELD` at step 2 for the same reason.  ** On the one key where a blind reader overlaps a '
+     f'self count, the self count does not move **',
+     len(_shared) == 1 and len(_agree) == 1)
+
+_top = sorted(_t71.items(), key=lambda kv: -kv[1])[:2]
+gate(f'Ⓖ②  ⛭ and THE TWO GROUNDS ARE THE SAME TWO ON A DIFFERENT POPULATION READ BLIND: `71`\'s `50` '
+     f'owed keys are decided `Test {_top[0][0]}` `{_top[0][1]}` and `Test {_top[1][0]}` `{_top[1][1]}` '
+     f'ahead of everything else, where this seat\'s `27` are Test 1 `11` and Test 5 `11` -- and `71` '
+     f'records the same cause for the second, that the redraft\'s joint-piece paragraph sends a claim '
+     f'about pieces TOGETHER to Test 5 instead of step 2.  ** Test 1\'s share is `{100.0 * _top[0][1] / len(_owed71):.0f}` '
+     f'per cent there against `{100.0 * 11 / len(W):.0f}` here **',
+     {_top[0][0], _top[1][0]} == {'1', '5'} and len(_owed71) == 50)
+
+
+def quoting_checks(src, lit):
+    n = 0
+    for node in ast.walk(ast.parse(src)):
+        if isinstance(node, ast.Call) and isinstance(node.func, ast.Name) and node.func.id in ('check', 'gate'):
+            for c in ast.walk(node):
+                if isinstance(c, ast.Constant) and isinstance(c.value, str) and lit in c.value:
+                    n += 1
+                    break
+    return n
+
+
+SITE_GROUNDS = {'Test 1', 'Test 2', 'Test 4'}
+_multi = [c for c in RESULT if quoting_checks(show(DRAW, c[1]), ast.literal_eval(c[2])) > 1]
+_immune = [c for c in _multi if ground(c) in SITE_GROUNDS]
+print(f'      rows quoted by MORE THAN ONE check: {len(_multi)} of 40;  '
+      f'decided by a SITE ground and so check-independent: {len(_immune)}')
+gate(f'Ⓖ③  ⌗ and `71`\'s NEW OPEN PLACE -- *a row several checks quote with different results* -- '
+     f'MEASURED on this population rather than discussed: `{len(_multi)}` of the `40` are quoted by '
+     f'more than one check, `{len(_immune)}` of those are decided by a ground that is a property of the '
+     f'SITE (Tests 1, 2, 4) and so cannot differ between checks.  ** By this seat\'s reading none of the '
+     f'`{len(_multi)}` had checks that disagreed -- the `{len(_immune)}` cannot, and in the other four the '
+     f'claim is joint or several alike in both checks; that half is a reading and is marked as one. **  ** The discriminator follows from the rule\'s own text: Tests 1, 2 and '
+     f'4 are properties of the SITE, step 2 and Tests 3, 5, 6, 7 of the CHECK -- so the question only '
+     f'arises when no site ground is met.  ⇒ Offered with a proposed tie-break for that case, OWED IF '
+     f'ANY CHECK OWES IT, which is `69`\'s to write and `66`\'s to order **',
+     len(_multi) == 8 and len(_immune) == 4)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print()

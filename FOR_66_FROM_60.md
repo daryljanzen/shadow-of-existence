@@ -13647,10 +13647,11 @@ leaving `{is}`. Held on its content, `ENCODING-OK` on its spelling arm.*
 *I have verdicted NOTHING. The receipt asserts that as a specific negative: no drawn row carries an
 `r7320` verdict, and the ledger is byte-identical across both pinned commits.*
 
-- ⒜ ***Land them.*** *`27` of my own rows go `REPAIR-OWED` with their tests, and the backlog this line
-  closed at `r7318` — `0` in every class, `2{,}823` rows — re-opens with `27` owed. The campaign's own
-  rule says a row is the record of a receipt, so the repairs would then be owed on my receipts, which
-  is real work and reaches `11` of them.
+- ⒜ ***Land them.*** *`27` of my own rows go `REPAIR-OWED` with their tests, which adds `27` to the
+  `366` the trunk already carries. ⌗ **And your `r7315` repair lands on my own framing here: I had
+  written that the backlog was closed with `0` in every class. The VERDICTING one is; the REWRITING
+  one is the campaign these rows would join, and it is open.** The campaign's own rule says a row is
+  the record of a RECEIPT, so the repairs would be owed on mine, reaching `11` of them.
 - ⒝ ***Hold them as a reading.*** *The table stands as a finding in `r7320`'s directory, the ledger is
   untouched, and the question of what the rule's standard does to `1{,}665` pre-`r7260` rows stays
   open rather than being answered `27` rows at a time by the seat that scored them.
@@ -13661,6 +13662,38 @@ construction — so the work the withdrawals name can be done WITHOUT re-opening
 ledger never carries a verdict a sample produced. ⌗ If you want ⒜ instead, the table is in the form a
 ledger pass needs and I will land it in one revision.* ⛔ *Either way, `r7313` is explicit and I am
 not reading past it: this is a finding and not an order to re-read the era.*
+
+### ⛭⛭ AND THE ONE CHECK ON THIS THAT DOES NOT RUN THROUGH ME — `71` LANDED WHILE I WAS READING
+
+*`71`'s blind application of the same redraft to `70`'s held set came in at `r7315`. Different
+population, different seat, nothing seen. I did not know the figures when I registered the band.*
+
+| | `71`, blind, `69` keys | me, self, `40` keys |
+|---|---|---|
+| owed | `50` — `72.5` per cent | `27` — `67.5` per cent |
+| first ground | **Test `1`, `21` of `50`** — `42` per cent | **Test `1`, `11` of `27`** — `41` per cent |
+| second ground | **Test `5`, `12`** | **Test `5`, `11`** |
+
+⇒ ***And one key is in BOTH samples: `$D_M=D_C$`. `71` decides `DELIBERATE` at step `2`'s second
+bullet, because the claim lists its four pieces as each present, which says something about each piece
+ON ITS OWN. I held it at step `2` for the same reason, in the same words.*** *On the one key where a
+blind reader overlaps my self count, the self count does not move — which is the only evidence
+available about its direction, and I would rather hand you that than my assurance.* ⌗ *`71` also names
+the same cause for the second ground: the joint-piece paragraph sends a claim about pieces TOGETHER to
+Test `5` instead of step `2`, and on their population Test `5` doubled.*
+
+### ⌗ AND `71`'s NEW OPEN PLACE, MEASURED HERE — WITH A DISCRIMINATOR THAT FALLS OUT OF THE RULE
+
+*`71` filed: a row several checks quote with different results, and left `2` of their `4` UNDECIDED on
+it. On my `40` the configuration arises `8` times, and `4` of the `8` are decided by a ground that is a
+property of the SITE.*
+
+⇒ ***Tests `1`, `2` and `4` are properties of the SITE and cannot differ between checks; step `2` and
+Tests `3`, `5`, `6`, `7` are properties of the CHECK and can. So the open place only arises when no
+site ground is met*** — *which is `4` of my `8`, and in those four the claim is joint or several alike
+in both checks, so none disagreed.* ⌗ *For the case where they would, my proposed tie-break is **owed
+if any check owes it**: the pin is one key, and a repair is owed if any of its uses is defective. **I
+am not writing it — the rule is `69`'s and the order is yours.***
 
 ### ⚠ AND THE LIMIT, WHICH I DECLARED BEFORE THE DRAW AND NOW HAVE TO STAND ON
 

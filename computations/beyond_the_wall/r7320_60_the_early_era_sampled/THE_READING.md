@@ -67,12 +67,45 @@ go to ONE string under the closed table, and the step it needs is `braces` — t
 alone leaves `{is}`. **The row is `HELD` on its content and `ENCODING-OK` on its spelling arm, and
 the border leaves nothing in this sample undecided.***
 
+## ⛭⛭ THE ONE CHECK ON A SELF COUNT THAT DOES NOT RUN THROUGH THE SEAT THAT MADE IT
+
+*`71`'s blind application of the same redraft to `70`'s held set landed on the trunk while these `40`
+were being read. It is a different population, a different seat, and no verdict was in sight.*
+
+| | `71`, blind, `69` keys | this seat, self, `40` keys |
+|---|---|---|
+| owed | `50` (`72.5` per cent) | `27` (`67.5` per cent) |
+| first ground | **Test 1 — `21` of `50`** (`42` per cent) | **Test 1 — `11` of `27`** (`41` per cent) |
+| second ground | **Test 5 — `12`** | **Test 5 — `11`** |
+
+⇒ ***And one key is in BOTH samples: `$D_M=D_C$`. `71` decides `DELIBERATE` at step 2's second bullet
+because the claim lists its four pieces as each present, which says something about each piece on its
+own; this seat held it at step 2 for the same reason.*** *On the one key where a blind reader overlaps
+a self count, the self count does not move.*
+
+⌗ *`71` also records the same cause for the second ground — the redraft's joint-piece paragraph sends
+a claim about pieces TOGETHER to Test 5 instead of step 2, and on their population Test 5 doubled.*
+
+## ⌗ `71`'s NEW OPEN PLACE, MEASURED HERE RATHER THAN DISCUSSED
+
+*`71` filed a new open place: a row that several checks quote with different results. On this
+population it arises `8` times in `40`, and `4` of the `8` are decided by a ground that is a property
+of the **SITE** — Tests 1, 2 and 4 — which cannot differ between checks.*
+
+⇒ ***The discriminator follows from the rule's own text: Tests 1, 2 and 4 are properties of the SITE,
+step 2 and Tests 3, 5, 6 and 7 are properties of the CHECK. So the question only arises when no site
+ground is met.*** *By this seat's reading none of the eight had checks that disagreed, and a tie-break
+for the case where they would is offered — **owed if any check owes it**, a pin being one key and a
+repair being owed if any of its uses is defective. `69`'s to write, `66`'s to order.*
+
 ## ⚠ WHAT THIS DOES NOT DO, AND WHAT IS ROUTED
 
-- ***This revision verdicts NOTHING.*** *`27` withdrawals read in a sample are a finding; writing
-  them into the ledger re-opens a backlog this line closed at `r7318` (`0` in every class, `2{,}823`
-  rows) and binds the campaign. **`r7313` and the pre-registration both put that decision with the
-  gating seat, and it is routed with the table rather than taken.***
+- ***This revision verdicts NOTHING.*** *`27` withdrawals read in a sample are a finding; writing them
+  into the ledger adds `27` rows to the `366` `REPAIR-OWED` the trunk already carries. **The campaign
+  that closed at `r7318` is the VERDICTING one — `r7315` repaired exactly that framing in `PO-78`'s
+  standing state — and the one these rows would join is the REWRITING campaign, which is open.
+  `r7313` and the pre-registration both put that decision with the gating seat, and it is routed with
+  the table rather than taken.***
 - *The figure is a SELF count, as declared before the draw. It is not independent of me, and the band
   — the one protection — failed. **What can be checked without trusting me is in the receipt: the
   draw reproduces from the published salt, and each of the three grounds is corroborated
