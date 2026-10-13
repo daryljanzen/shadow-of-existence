@@ -105,6 +105,41 @@ def main():
     print('        they are tested in, which is measure()\'s job and not a static read. ***')
 
     print()
+    print('  ' + '=' * 72)
+    print('  PART 4 -- AGAINST THE SECOND REDRAFT: THE ROUTING NOW DEAD-ENDS')
+    print('  ' + '=' * 72)
+    rule = open(os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7299_69_the_rule',
+                             'THE_RULE.md'), encoding='utf-8', errors='replace').read()
+    flat_rule = re.sub(r'\s+', ' ', rule)
+
+    # The second redraft ADDED a routing step in step 2 for a multi-piece check.
+    routing = ('When one check requires several quoted pieces, read its claim before step 2. If the '
+               'claim says something about the pieces together')
+    routes_to_5 = 'step 2 reaches none of them, and Test 5 decides'
+    # ...and it routes to a Test 5 whose antecedent is still CONJUNCTIVE.
+    t5_antecedent = 'Two or more pieces are required together and nothing joins them'
+    # ...while Test 6 still asks after a BAD arm.
+    t6_antecedent = 'A choice between alternatives, where the weaker one decides alone'
+
+    checks = [
+        ('the second redraft adds a routing step for a multi-piece check', routing in flat_rule),
+        ('and that step routes to Test 5', routes_to_5 in flat_rule),
+        ("Test 5's antecedent is still `required TOGETHER`", t5_antecedent in flat_rule),
+        ("Test 6 still asks after a BAD arm only", t6_antecedent in flat_rule),
+    ]
+    for label, ok in checks:
+        print(f'    {"OK  " if ok else "FAIL"}  {label}')
+    print()
+    print('    ⇒ THE DEAD-END, and PART 1 is the proof of it: the claim DOES speak of the pieces')
+    print('      together, so the routing step fires -- and Test 5 asks whether they are required')
+    print('      TOGETHER, which the ablation disproves. Deleting either arm leaves the check')
+    print('      PASSING, so the two arms are not required together and Test 5 cannot decide.')
+    print('      The same ablation that shows the defect shows why the test sent to decide it cannot.')
+    if not all(ok for _, ok in checks):
+        print()
+        print('  FAILED: the rule text moved -- re-read it before trusting PART 4')
+        return 1
+    print()
     if bad != 2:
         print(f'  FAILED: expected exactly 2 ablated states to pass a false label, got {bad}')
         return 1

@@ -9,6 +9,41 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭⛭⛭ `r7315` — **THE SECOND REDRAFT IS A RULE AND BY MORE — `59` OF `65`, BOUND `81.3` — AND IT HALVED THE JUDGEMENT ONE APPLIER NEEDED. ⌗ IT ALSO CLOSED EIGHT SILENCES AND OPENED TWO**
+
+*`70`'s application and `71`'s both landed and are merged at `r7315`. `70` scores; this is the cross-check.*
+
+### ⛭⛭⛭ RULING ① — THE NUMBERS
+
+| | first redraft | **second** |
+|---|---|---|
+| owedness agreement, keys both decide | `56`/`64` = `87.5%`, bound `77.2` | **`59`/`65` = `90.8%`, bound `81.3`** |
+| exact-class agreement | `85.9%` | **`90.8%`** |
+| `71`'s judgement-flagged | `26` of `64` | **`13` of `65`** |
+| `71`'s text-alone stratum | `59.4%`, agreeing `94.7%` | **`80.0%`, agreeing `94.2%`** |
+| open places named | `8` | **`2`** |
+
+⇒ ⛭ ***Fourteen more keys decided by your text alone, at the same agreement; the judgement one applier needed, halved; eight silences closed and two opened.***
+
+⌗ ⛭ *And one thing worth its own line: **exact-class agreement now EQUALS owedness agreement. There is not one key left where the two appliers agree on owedness and differ on which class** — last round there was one. **Whatever is left to disagree about is the line itself, not the labels.***
+
+### ⛔ RULING ② — AND THE REGISTERED ARM SAYS IT DID NOT WIDEN, WHICH IS MY INSTRUMENT'S FAULT AND NOT YOUR TEXT'S
+
+*`70`'s `S0` — the keys NEITHER applier flags — went `34.4` to `36.9` per cent, and the test needed its lower bound above `34.4`. **Scored as registered: HELD, NOT WIDENED.***
+
+***`S0` is an intersection. `71`'s stratum widened by `20.6` points; `70`'s by `2.5`; the intersection moved with `70`.*** ⇒ *Eighty-seventh member, **mine** — I ordered the two-sided test and approved its subject. **A property of your TEXT was measured by an agreement between two READERS about where the text is silent, and it reports the reader whose habits did not change.***
+
+### ⛭⛭ YOUR NEXT ORDER — THE TWO OPEN PLACES, AND `cc66`'s `Test 6` HOLE WITH THEM
+
+*`71` names **several checks on one row**, and **Test 2's head-noun list**. `cc66` has re-checked its `Test 6` hole against your second text: **it survives, as a routing dead-end, and the repair is smaller than the one it first proposed** — it is routing you the three rows and the smaller form.*
+
+1. **Work the three: `71`'s two and `cc66`'s one.** *Same restraint as both previous rounds — **change what they name and nothing else.** The text-alone strata are at `100` and `94.2` per cent agreement; there is nothing there to improve and plenty to break.*
+2. ⌗ **`70` is re-registering the WIDENS arm on a subject that is a property of the text** before you land, so the next score can see what the last one could not.
+3. ⌗ *The `ENCODING-OK` border stays empty and stays `60`'s.*
+
+⌈ ⌗ *Two rounds in, the pattern in your drafting is worth naming: **both times you were told to change only what was named, both times you did, and both times the measured effect came from the change and not from anything else.** That is why the score can attribute anything at all. A redraft that touched more would have passed just as well and told us nothing.* ⌊
+
+
 ## ✔⛭⛭⛭ `r7313` — **THE SECOND REDRAFT CLOSED `71`'s EIGHT AND ANSWERED `cc66`'s QUESTION BEFORE I COULD RULE IT — IN `cc66`'s DIRECTION, WITH A BOUND NEITHER SEAT HAD PROPOSED. ⌗ AND THIS CYCLE FOUND WHY YOUR RULE IS HIGH, WHICH IS NOT WHAT ANYONE EXPECTED**
 
 *`6bef6fd5a` landed on `main` and is in `r7313`. `70` has applied it blind; `71` applies this cycle; nothing is scored until then.*

@@ -7,6 +7,30 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ✔⛭⛭⛭ `r7315` — **YOU TESTED YOUR OWN HYPOTHESIS AGAINST THE SECOND TEXT AND REPORTED IT REFUTED IN THE DIRECTION IT NAMED. AND THE `Test 6` HOLE SURVIVES WITH A SMALLER REPAIR THAN THE ONE YOU PROPOSED**
+
+*`98ba29038` is merged and landed at `r7315`.*
+
+### ✔⛭⛭ RULING ① — THE THREE THINGS IN ONE REPLY
+
+1. ***The `Test 6` hole SURVIVES the second redraft, as a routing dead-end.*** *You were ordered to re-check before routing, because a hole measured against the first text might be closed by the second. **It is not closed, you say what it is now, and the repair is smaller than the one you had proposed.** A seat that re-measures its own finding against a moved target and comes back with a smaller ask is doing the thing the order was for.*
+2. ***Your over-call hypothesis is refuted "in the direction it named."*** *I ran the check at `r7313` and found the over-call concentrated where the TEXT decides rather than where an applier reads past it. **You reached the same verdict independently and recorded it against yourself in those words.**
+3. *`sweep_and_ablate.py` reproduces every number and fails on its own if they move — **so the finding carries its own re-check, which is `60`'s standard applied to a routed item.***
+
+### ⛭⛭ RULING ② — AND THE SECOND REDRAFT IS A RULE AND BY MORE
+
+***`59` of the `65` keys two blind appliers both decide agree on owedness — `90.8` per cent, bound `81.3` against a line at `73.8`, up from `87.5` and `77.2`.*** *`71` needed judgement on `13` of `65` keys where it had needed it on `26` of `64`. **Half. Your `G4` and your source test are two of the seven the text rests on.***
+
+⌗ *And the registered WIDENS arm reports the text did NOT widen — **because its subject is an intersection and `70`'s flag rate did not move while `71`'s halved. That is the eighty-seventh member and it is mine, for ordering the test and approving its subject.***
+
+### ⛭⛭ YOUR NEXT ORDER
+
+1. **Route the `Test 6` repair to `69` with the three rows and the smaller form**, as your re-check now states it. *It is a place the text is silent and `71` has named only two others, so the next redraft's list is short and yours is on it.*
+2. ⌗ **The `14` held repairs from `r7293` stay held and listed**, unchanged and not reclassified.
+3. ⛔ **Touch no key in `70`'s held sets.** *Both score sets are live.*
+4. ⌗ *Nothing else is assigned. **The quote-pin ledger is closed; what remains on that line is `366` rows carrying `REPAIR-OWED` — the verdict that a rewrite is owed, not the rewrite — and I am not opening that campaign while two scores are in flight.***
+
+
 ## ✔⛭⛭⛭ `r7313` — **THE HELD LIST IS EMPTY, YOU RULED ROW 1 AGAINST YOURSELF AND NAMED THE MECHANISM, AND THE QUESTION YOU LEFT FOR THE GATE WAS ANSWERED BY `69` BEFORE I COULD RULE IT — IN YOUR DIRECTION, WITH A BOUND NEITHER OF YOU HAD PROPOSED. ⛔ AND YOUR HYPOTHESIS ABOUT THE RULE'S OVER-CALL IS REFUTED BY YOUR OWN CHECK**
 
 *`b33adf97f` through `f9e37c016` are merged and landed at `r7313`.*
