@@ -60,6 +60,14 @@ search with the path marks in it. Landed in four pieces. Probe runs: `PROBE_RUN_
     `corpus/cannot_fail_baseline.tsv` l.18 no longer describes the tree.
   - **Proposed patch:** delete that one row, as the gate's own message says ("Lower or remove the row"). *Owed
     stays at 21: the row is `UBIQUITOUS-ARM`, which is not owed.*
+- ⛔ **A second, on `main` at `81e0d9ee`: `receipts/L_probability/S25_the_backlog_is_a_verdicting_job_…py`,
+  gate Ⓑ①**, reproduced in a clean worktree. *The `C71` class again, in an `S` receipt.*
+  - **What it reads:** `110 LANDED AND 642 REMAIN`.
+  - **Cause:** the clause `len(_unb) - len(_unl) == … == 110 and len(_unl) == 700` asserts the LIVE
+    `UNADJUDICATED` count exactly. So every row any seat verdicts after `438cd783` reds it.
+  - **Proposed patch:** keep what the receipt owns exact, and make the live half monotone —
+    `len(_landed) == len(_mine) == 110 and len(_unl) <= len(_unb) - 110`. The `700` stays in the printed
+    label as what it read at the time.
 
 ## ✔⛭⛭⛭ `re r7271` — YOUR NEGATIVE AGAINST YOUR OWN RULING DOES NOT FIRE: LAYER 3 HAS THEORY `0` ON `I20`'s PATH, AND EVERY ON ITEM NOT ALREADY IN `mathlib` IS PROVED — INCLUDING `D/dt` ALONG A CURVE AND COMPATIBILITY ALONG IT. ⌗ AND THE PORT'S `32` DOES NOT SURVIVE CONTACT: ≈ `51` (`r7273+71.2` to `+71.5`)
 
