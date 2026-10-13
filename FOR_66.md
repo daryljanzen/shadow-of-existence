@@ -14030,3 +14030,96 @@ if _own_sess is None:
 
 ⌗ *The three reds `CI` raised on this PR are now all accounted: `check_pdf_current` (mine, built), `S14` (mine, repaired both halves), `C71` (mine, repaired by you at `r7273` and arriving here with the rebase).*
 
+---
+
+## ❓⛭⛭ `r7281+cc66.1` — **LANDED `23` OF `59`. REMAINING `36`.** ⛭ **THE ONE QUESTION ON THE FOUR `GEOMETRY-NOT-RECORDED` ROWS, WITH THE MEASUREMENT ATTACHED — AND THE MEASUREMENT CHANGES THE QUESTION: THEY ARE NOT BLOCKED FOR WANT OF A METRIC, ONLY FOR WANT OF KNOWING WHICH ONE**
+
+*Ruling ① taken and not asked again: a seat does not edit another seat's receipt, the exception is whoever's edit broke it. ⌗ Ledger figures carried forward as you publish them: **`642` `UNADJUDICATED`, `724` with the two reserved classes.***
+
+### ⌗ THE MEASUREMENT FIRST, BECAUSE IT IS WHAT MAKES THE QUESTION ANSWERABLE
+
+***I swept `computations/` for a top-level name bound to a metric-shaped object: `21` modules carry one. Four of them graft clean and are the candidates these rows could possibly mean:***
+
+| module | name | what it is |
+|---|---|---|
+| `baryon_edge/L113_the_lift_to_dS5.py` | `G` | **`6×6`** — the ambient `R^{1,5}` form of the SUBSTRATE, `dS_5` |
+| `dimension_question/L114_write_the_cut.py` | `gsds` | `4×4` symbolic **SdS**, with `M` and `alpha` free |
+| `beyond_the_wall/r7111_70_layer_geometry_audit/geometry.py` | `gds` | `4×4` **de Sitter** in cosmological coordinates |
+| `beyond_the_wall/probe2.py` / `A2` | `g` | the **chiral plane wave**, Brinkmann form — `A2`'s own binding |
+
+*And a fifth is mine from batch two: `isometry.py` rebinds `lie_g` to **Nariai**, `dS_2 × S^2`, and six generators came back Killing through it.*
+
+⇒ ⛭ ***SO THE MEASUREMENT INVERTS MY OWN HOLD REASON. I recorded these four as `GEOMETRY-NOT-RECORDED` meaning the geometry was not available; it is. The corpus has the substrate, `SdS`, de Sitter, the plane wave and Nariai as computable metrics, and `lie_g` takes any of them by rebinding. What is missing is not the object but the ASSIGNMENT.***
+
+### ❓ THE QUESTION, ONE RATHER THAN FOUR
+
+| row | the claim | which metric does it quantify over? |
+|---|---|---|
+| `P11` | `not a continuous substrate isometry` | ***`L113`'s `dS_5` `G`?*** The word is `substrate`, and that is the only substrate metric in the tree — but it is `6×6` ambient and `lie_g` is a `4×4` cut test, so taking it needs the cut, not just the metric |
+| `B1` | `no such circle action and so no trigger` | *a circle action is a Killing field whose orbits CLOSE. Nariai's two-sphere has one (`d_phi`); the `dS_2` factor does not. **So `no such circle action` is false on Nariai and could be true on another member** — which one is the row about?* |
+| `B42` | `no such circle action and so no trigger` | *the same claim as `B1`; one answer covers both* |
+| `B39` | `isometry group being fixed by the absolute` | ⛔ ***this one I do not think is a metric question at all:** the absolute is a PROJECTIVE object and `lie_g` is a metric Killing test, so I believe `r7261` named the wrong nearest function for it — not the right function at unknown inputs* |
+
+⇒ ***What I am asking for is three assignments and one re-classification: the metric for `P11`, the member for `B1`/`B42`, and whether `B39`'s row should leave the `INPUTS` class altogether.***
+
+⌈ ⚠ ***AND THE REASON I AM NOT CHOOSING: on `B1` the choice decides the ANSWER.*** *Nariai has a circle action, so picking Nariai makes the row's claim FALSE and picking another member may make it true. **A row whose verdict turns on an input I selected is not a reached row, it is my preference wearing a computation** — which is the whole of why the `9` were held rather than taken.* ⌊ ⌗ *`P11` and `B39` do not have that hazard; I am bundling them here only because you asked for one question and they are the same missing datum.*
+
+### ⌗ BATCH THREE IS SCHEDULED FROM THE TREE AND STARTS NOW
+
+***`17` rows across `7` `(module, function)` pairs, all TOP-LEVEL and all graftable, which would take the count to `40` of `59`:*** *`L012w: roots_at` (`3`), `L127: omega_power` (`3`), `bead_conjugate: r_of_tau` (`3`), `L128b: diag_at` (`2`), `L50b: key_of` (`2`), `r7111/geometry: curvature` (`2`), `panelA_reassign: ruling` (`2`).* *The remaining `19` are the `9` held, singletons, and the `12` `EXTEND`.*
+
+---
+
+## ⛭⛭⛭ `r7281+cc66.2` — **LANDED `32` OF `59`. REMAINING `27`.** ⛭⛭ **BATCH THREE IS NINE OF NINE WITH NOTHING HELD — AND `roots_at` SUPPLIES THE HALF `B13` AND `B14` HAD NO WAY TO CHECK**
+
+*`C74`: `34` checks, all pass, `13`s. Three batches' taken keys gated PAIRWISE DISJOINT, so `19 + 4 + 9 = 32` counts nothing twice.*
+
+### ⛭⛭ THE CONTRAST WITH BATCH TWO IS THE WHOLE POINT, AND IT IS A PROPERTY OF THE FUNCTIONS
+
+***Batch two scheduled `13` and took `4`. Batch three scheduled `9` and took `9`.*** *The difference is not difficulty: **all three of this batch's functions are top-level AND take their inputs as ARGUMENTS, so the change of inputs is a CALL rather than a rebinding or a choice.** `lie_g` reads its metric from module level and someone has to decide which metric; `roots_at(v)`, `omega_power(z)` and `r_of_tau(t)` are handed theirs.*
+
+⇒ ⌗ ***So `INPUTS` has a sub-structure worth having a name for: a row whose function takes its inputs as arguments is reachable without an adjudication, and a row whose function reads them from module level needs one.*** *That is checkable from the syntax tree and it predicts which rows hold — I would put it on the register if you want it, and it costs nothing to measure over the remaining `27`.*
+
+### ⛭⛭⛭ AND THE FINDING: `roots_at` SETTLES THE WORD `ONLY`
+
+***`L-012w`'s own report tabulates eleven values of `r_0` with the designated root and its pair. Asked at the three values the designation runs over, it returns the SAME ROOT SET every time — `{1, -1, 0}` — and differs only in WHICH member is designated.***
+
+⇒ ⛭ ***`B14` asserts `distinguished ONLY by which root each takes as its hole`. The `only` is the load-bearing word and it is a statement about the SETS BEING IDENTICAL — which no string match can see, and which `L-012w` never prints side by side.*** *So the computation does not merely confirm the sentence; **it supplies the half of it the receipt had no way to check.** And `only` is a predicate rather than a flourish: add a fourth value whose root set differs and the agreement breaks, which is the recorded converse.*
+
+⌈ ⌗ *Two smaller ones beside it: **`omega_power` carries its OWN converse** — it `raise`s on anything that is not a cube root of unity, so `quantises` has a built-in false case and needs no constructed edit — and **`r_of_tau(0) = 0.0` exactly**, against `0.638472` at `0.5`, so `the cosmology it seeds begins at the branch point` is a statement about proper time zero.* ⌊ *The horizon cubic is exactly `0` at each of its three roots and non-zero a seventh off each, which is `B34`'s `vanishes at the horizons` as a computation.*
+
+### ⌗ AND I KEPT THE `S14` LESSON IN FRONT OF ME RATHER THAN BEHIND
+
+***`Ⓓ⑦` gates that none of the nine holders is a receipt `S14` pins by line number.*** *It pins `B1` and `B2`; neither is in this batch, so no injection target moved. **I checked that before editing rather than after a trunk red told me.***
+
+⌗ *`r7243` stands. The `9` held from batch two are inside the remaining `27`, with the one question on the four `GEOMETRY-NOT-RECORDED` rows already in front of you at `r7281+cc66.1`. Ledger figures as you publish them: `642` `UNADJUDICATED`, `724` with the two reserved classes.*
+
+### ⛔ AND ONE BASE-BRANCH RED TO ROUTE, WHICH IS `69`'s BY THE RULE YOU JUST RATIFIED
+
+***`check_cannot_fail` is RED on `origin/main`, identically to here: `rc=1`, same single stale entry, and `no new site: the class has not grown` — so my batch minted nothing and this is not mine.***
+
+*The complaint: `1 STALE BASELINE ENTRY -- fewer live sites than recorded`, for `corpus/cannot_fail_baseline.tsv:18` — `receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py`, `T5`, `'same' in p0`, count `1`, verdict `UBIQUITOUS-ARM`.* **The live count of that site in `U1` is `0`.**
+
+⇒ ⌗ ***And the cause is named rather than guessed: the last change to `U1` is `b46549ba`, `r7271+69` — `order ① the 14 REPAIR-OWED in L200 repaired by widening`. `69`'s widening removed the `'same' in p0` site and the baseline row was not lowered with it.***
+
+⌈ ***So by ruling ①, as you ratified it, this one is `69`'s: a seat does not edit another seat's receipt, and the exception is whoever's edit broke it — which here is `69` and not me.*** *I am routing rather than fixing even though the fix is one line, because the discipline is worth more than the line.* ⌊ *The fix: lower or remove row `18` of `corpus/cannot_fail_baseline.tsv`. **`UBIQUITOUS-ARM` is in the gate's own `not owed` set, so removing it does not move the owed count of `21` against its ceiling of `21`** — it is a pure staleness repair with no ratchet consequence. ⚠ *And it is red on the TRUNK, so every seat's PR inherits it until someone takes it.*
+
+---
+
+## ⛔⛭⛭ `r7281+cc66.3` — **LANDED `32` OF `59`. REMAINING `27`.** ⛔ **AND I AM WITHDRAWING THE REGISTER ITEM I OFFERED YOU ONE PUSH AGO: I MEASURED IT AND IT HAS NO DISCRIMINATING POWER AT ALL**
+
+***At `r7281+cc66.2` I offered, for the register, that `INPUTS` has a sub-structure readable off the syntax tree: `a row whose function takes its inputs as arguments is reachable without an adjudication, and a row whose function reads them from module level needs one`. I said it was cheap to measure over the remaining `27`. I measured it. **It is wrong.***
+
+| | reads module-level DATA | arguments only | nested |
+|---|---|---|---|
+| **TAKEN** (the `32` across three batches) | `18` | `14` | — |
+| **HELD** (the `9` from batch two) | `5` | `1` | `3` |
+
+⇒ ⛔ ***`18` of `32` taken rows read module-level data, and `5` of `9` held rows do. That is `56` per cent against `56` per cent — the shares are the same to within a point, so the test separates NOTHING.*** *`roots_at` reads `r0` and `pair`; `omega_power` reads `w`; `twoM` reads `r0`; `L-129`'s four read their generators. **Every one of those I took, and all of them read module-level data.** The first pass that made the distinction look real counted IMPORTS as module-level reads — `sp` — which are not inputs at all, and once imports and helper `def`s come out the signal goes with them.*
+
+⌈ ⚠ ***WHAT ACTUALLY SEPARATED THEM IS SEMANTIC AND I DRESSED IT AS SYNTACTIC.*** *`lie_g` is held not because it reads `g` from module level but because **WHICH `g` is a question the backlog did not record and I must not answer by preference** — the same reason `character` is held (which three critical loci) while reading nothing from module level at all. ⌊ ⇒ *The one genuinely syntactic case is `NESTED`, `3` rows, and the loader refuses those outright rather than needing a predictor.*
+
+⌗ ***So: offer withdrawn, before you ruled on it.*** *I would rather hand back a measurement that kills my own proposal than have it go on the register and be found there later. **And the lesson is the one this cycle keeps producing from every direction: a distinction that looks structural because it was measured with a crude instrument.** `C71`'s drift pair, `S14`'s line pins, `P03`'s session filter — and now a classification of my own, caught the same way, by measuring it instead of asserting it.*
+
+⌗ *Batch four is still scheduled from the tree and unaffected: `L128b: diag_at` (`2`), `L50b: key_of` (`2`), `r7111/geometry: curvature` (`2`), `panelA_reassign: ruling` (`2`), plus singletons. ⌗ **And one capability worth your knowing before order ②: `r7111/geometry.py: curvature(g, x)` takes the METRIC AND THE COORDINATES as arguments and returns Christoffels, Riemann, Ricci, the scalar and the Kretschmann — textbook definitions.** That is the engine the zero-mode measure needs, since `dμ = √|g_{rr}| dr` is read straight off a metric this function already accepts.*
+

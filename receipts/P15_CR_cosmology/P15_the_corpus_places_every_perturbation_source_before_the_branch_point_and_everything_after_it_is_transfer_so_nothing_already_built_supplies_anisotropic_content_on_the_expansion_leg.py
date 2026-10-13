@@ -143,6 +143,23 @@ t_all = time.time()
 CHECKS = []
 
 
+# ⛭⛭ r7267/r7281 ① BATCH THREE: THE LOADER FOR THE COMPUTED CHECK BELOW, AND THE GAP WAS
+#   `INPUTS`.  `r7261` named `bead_conjugate.py`'s `r_of_tau` as the function nearest this row.  ** The module
+#   is a SCRIPT and cannot be imported, so `graft.py` takes the `def` plus the transitive closure
+#   of the module-level names it reads, over the AST, and runs nothing else. **  All three of this
+#   batch's functions take their inputs as ARGUMENTS, so the change of inputs is a call.
+#   ⇒ ** The pin below STAYS: it is the citation; this verifies it. **
+def _r7281(which):
+    """`L-012w`'s `roots_at`, `L-127`'s `omega_power` or `bead_conjugate`'s `r_of_tau`, grafted."""
+    if not hasattr(_r7281, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import splits
+        _r7281.v = dict(zip(('splits', 'omega', 'bead'), splits.at_inputs()))
+    return _r7281.v[which]
+
+
 def gate(name, ok):
     CHECKS.append((name, bool(ok)))
     print(f"  [{'PASS' if ok else 'FAIL'}] {name}", flush=True)
@@ -356,6 +373,16 @@ gate("⌗ and `P07`'s seeding is one register away from the order's question: wh
      "singularity'*, while *'the cosmology it seeds begins at the branch point'*.  ⇒ *that is "
      "geometry supplying observers, not a perturbation source*",
      all(B['P07'].count(ph) == 1 for ph in P07))
+# ⛭⛭ r7267/r7281 ①: AND THE BRANCH POINT IS NOW COMPUTED, THROUGH `bead_conjugate`'s OWN
+#   `r_of_tau`: at proper time ZERO the collapse radius is exactly 0.0 -- the branch point --
+#   while at 0.5 and 1.0 it is 0.638472 and 1.203939.  ⇒ *So `the cosmology it seeds begins at
+#   the branch point` is a statement about proper time zero, and the converse is any proper time
+#   away from it.*
+_bd = _r7281('bead')
+gate("⛭⛭ and the BRANCH POINT is COMPUTED through `bead_conjugate`'s own `r_of_tau`: the collapse "
+     "radius is exactly zero at proper time zero -- the branch point the cosmology begins at -- "
+     "and non-zero away from it",
+     _bd.branch_point_at_zero() and _bd.nonzero_away())
 
 
 # ============================================================ F. the fork, stated not resolved

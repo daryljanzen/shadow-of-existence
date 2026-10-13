@@ -61,6 +61,24 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+# ⛭⛭ r7267/r7281 ① BATCH THREE: THE LOADER FOR THE COMPUTED CHECK BELOW, AND THE GAP WAS
+#   `INPUTS`.  `r7261` named `baryon_edge/L127_the_bundle.py`'s `omega_power` as the function nearest this row.  ** The module
+#   is a SCRIPT and cannot be imported, so `graft.py` takes the `def` plus the transitive closure
+#   of the module-level names it reads, over the AST, and runs nothing else. **  `splits.py` hands
+#   it this row's own inputs -- all three of this batch's functions take theirs as ARGUMENTS, so
+#   the change of inputs is a call rather than a rebinding.
+#   ⇒ ** The pin below STAYS: it is the citation; this verifies it. **
+def _r7281(which):
+    """`L-012w`'s `roots_at`, `L-127`'s `omega_power` or `bead_conjugate`'s `r_of_tau`, grafted."""
+    if not hasattr(_r7281, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import splits
+        _r7281.v = dict(zip(('splits', 'omega', 'bead'), splits.at_inputs()))
+    return _r7281.v[which]
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -86,6 +104,17 @@ def main():
     check('⓵ HOLONOMY wall: "the bundle above is flat, so the construction supplies colour\'s exact '
           'selection rules and no force---it quantises and does not couple"',
           'the bundle above is flat' in p14 and 'it quantises and does not couple' in p14)
+    # ⛭⛭ r7267/r7281 ①: AND THE QUANTISATION IS NOW COMPUTED, THROUGH `L-127`'s OWN
+    #   `omega_power` -- an exact discrete log base omega.  On the three cube roots of unity it
+    #   returns 0, 1, 2, exhausting Z/3.  ⚠ ** And it carries its OWN converse, which is rare:
+    #   it RAISES on anything that is not a cube root of unity, so `quantises` has a built-in
+    #   false case and needs no constructed edit to fail on. **
+    _om = _r7281('omega')
+    import sympy as _sp3
+    check('⛭⛭ and the QUANTISATION is COMPUTED through `L-127`\'s own `omega_power`: the three '
+          'cube roots return $0, 1, 2$, exhausting $\\mathbb{Z}/3$, while a value that is not a '
+          'cube root of unity makes the function RAISE',
+          _om.quantises() and not _om.is_pure_power(_sp3.Integer(2)))
     check('ISOMETRY wall: "a Yang--Mills term in four dimensions carries a dimensionless coupling that '
           'a single length cannot build"',
           'dimensionless coupling that a single length cannot build' in po5
