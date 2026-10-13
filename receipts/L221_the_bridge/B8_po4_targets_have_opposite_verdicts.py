@@ -97,6 +97,18 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+def _r7283b7():
+    """`r7283` ② batch seven: a short EXTENSION of the row's own named function, on demand.
+
+    *`EXTEND` means the function alone does not reach the quantity and a short extension of it
+    does.  The extension lives in the computations directory, not here, and this loads it.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import extensions as _E
+    return _E
+
 def main():
     print()
     print("  B8 -- are PO-4's two targets in the same state?")
@@ -233,6 +245,11 @@ def main():
     print('  ⇒⇒ ** So PO-4 is now ONE target with a NAMED obstruction: su(2)_L as a GAUGING -- a chiral')
     print('     action where the geometry currently supplies a discrete swap. **')
     print()
+    _E = _r7283b7()
+    check('⛭ `r7283` ② COMPUTED, not cited: the centre of the determinant-one part is the three scalars, and the lap not only LIES in it but GENERATES it -- so `with the lap as its centre` is an identity and not an inclusion. Handed the hinge 3-cycle instead, an element of the same order three, the same predicate comes back FALSE: it generates a subgroup that is not central at all',
+          _E.generates_the_centre(_E.the_lap())
+          and not _E.generates_the_centre(_E.the_hinge_three_cycle()))
+
     return 0
 
 

@@ -87,6 +87,18 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+def _r7283b7():
+    """`r7283` ② batch seven: a short EXTENSION of the row's own named function, on demand.
+
+    *`EXTEND` means the function alone does not reach the quantity and a short extension of it
+    does.  The extension lives in the computations directory, not here, and this loads it.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import extensions as _E
+    return _E
+
 def main():
     print()
     print("  B36 -- how much of PO-11's matching is already supplied?")
@@ -163,6 +175,19 @@ def main():
     print('     ⌗ ** And it is not a free choice: ** the bound mode\'s condition at r=0 is fixed by the')
     print('       signed-radius flip, so the continuum\'s must be compatible with the same flip.')
     print()
+    _E = _r7283b7()
+    check("⛭ `r7283` ② COMPUTED, not cited: `bead_contour`s `M2` is EXACTLY `2/(3 sqrt 3)`, the "
+          "Nariai value, so the horizon is a DOUBLE root -- `f` and its first derivative "
+          "BOTH vanish there while the second does not. `1/f` therefore has a DOUBLE "
+          "pole and the tortoise integral diverges as `1/eps` rather than as "
+          "`log(1/eps)`, with `eps*I` converging to `2/f_rr(r_h)` across four decades. "
+          "Walked toward a point of the same kind that `f` does not vanish at, the same "
+          "predicate comes back FALSE",
+          _E.tortoise_diverges(_E.the_horizon())
+          and not _E.tortoise_diverges(_E.a_point_that_is_not_a_root())
+          and _E.is_at_the_nariai_value()
+          and _E.coefficient_matches_the_closed_form())
+
     return 0
 
 
