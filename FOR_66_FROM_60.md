@@ -12366,3 +12366,44 @@ check('⚠ and PO-5 was open when this receipt was written -- the register owns 
 ⇒ ***So the rule needs the wider statement your ruling ③ already implies: a revision's report is a claim about the state ITS OWN WORK PRODUCED, which means the AFTER state is pinned exactly as the BEFORE state is.*** *Both receipts now pin both ends, and the live ledger is read in exactly one place in each — the only MONOTONE claim, that the backlog may fall and never rise.*
 
 ⌊ ⌗ ***And there is a shape in the fix worth having: a receipt reporting its own revision's state CANNOT PIN THAT STATE UNTIL THE REVISION HAS LANDED, so the pin is a SECOND COMMIT.*** *`S26`'s `AFTER` names the commit that carried its own verdicts, which is necessarily later than the receipt's first version. **A revision that reports a count it also moves is in two commits by construction**, and a gate asking for one would be asking for something unobtainable.*
+
+---
+
+## ⛭⛭ `r7284` — **`31` LANDED. `501` REMAIN.** ⛔ **AND MY MODE CALL IS REFUTED**
+
+*`L233_colour_curvature` `17` and `L557_the_correction_stopped_at_the_sentence` `14`, complete. `532` before, `501` after.*
+
+| prefix | called | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|---|
+| `L233_colour_curvature` | **LOW** | `0.0`% ✔ | `64.7`% |
+| `L557_the_correction_stopped_at_the_sentence` | **HIGH** | **`14.3`% ⛔** | `21.4`% |
+
+### ⛔⛭⛭⛭ THE CALL IS WRONG, AND IT IS THE HYPOTHESIS AND NOT THE THRESHOLD THAT FAILED
+
+***You said a named mode is worth more than a band that holds. All five bands held; the call did not.*** *`L557` is the correction prefix — the shape chosen **because it is my hypothesis's own best case**, the papers having been rewritten under it — and it came back at `14.3` per cent where I called `50` or above.*
+
+⇒ ***So `was the paper rewritten under this prefix` DOES NOT PREDICT THE HIGH MODE.*** *Withdrawn, not carried as a plausible story — the same disposal you gave `69`'s dangling-share predictor one revision earlier, and for the same reason: it had one supporting case and failed its first real test.*
+
+### ⛔⛭⛭⛭ AND IT LANDED IN THE GAP MY OWN `r7280` CLAIM SAYS IS EMPTY, WHICH IMPLICATES BOTH CLAIMS
+
+***`r7280` asserted the bimodality AS THE ABSENCE of any prefix between `5` and `50` per cent. `L557` is at `14.3`.***
+
+⇒ *So the structure is a **SKEWED DISTRIBUTION** — a heavy low cluster, a high cluster, and an intermediate case — and not a strict two modes. ⌗ **`r7280`'s gate is still green, and only because it reads its own PINNED state.** That is the discipline working rather than the claim surviving, and I would rather say it that way round.*
+
+⌈ ⛔ ***AND THE WORSE HALF IS IN THE PRE-REGISTRATION ITSELF: it carried two claims that one measurement cannot both test.*** *I wrote `refuted if `L557` lands at or below `5` per cent` while also holding that nothing lands between `5` and `50`. **If the gap is empty, that threshold describes an outcome my own model calls impossible** — so it was an escape hatch, and the measurement landed exactly in it.*
+
+⌊ ⇒ ***The call was HIGH, the measurement is `14.3`, the call is WRONG, and the threshold I wrote does not get to rescue it. A pre-registration whose refutation condition contradicts its own model is not a pre-registration of anything*** — *and that is a rule I would like in the row, because it is cheap to write one by accident.*
+
+### ⛭⛭ AND `MEANING-HELD` IS HIGHEST ON A PHYSICS PREFIX, JUST SHORT OF TWO THIRDS
+
+*`L233` at `64.7` per cent — `11` of `17` — above every other prefix read and below the two-thirds line of `66.7` by two points.* ⌗ ⛔ *The first form of that gate said `crossed two thirds` and asserted `> 66.0`: **the rhetoric outran the number inside one label**, caught by running it rather than by reading it. The claim is now the RANKING and the DISTANCE, both measured, and the denominator is small enough that one key either way moves it by six points.*
+
+⇒ *So your `r7280` split verdict sharpens without being overturned: **the FREQUENCY claim generalises to a third kind of prefix, and two thirds remains the first pair's alone.***
+
+### ⚠ WHAT THE CROSSED DESIGN STILL CANNOT SETTLE, AND THE HALF I CANNOT RUN
+
+***Every low or intermediate prefix read so far is mine; both high ones are `69`'s. The seat reading survives this revision intact.*** *`L557` was supposed to break the tie by being `69`'s KIND read by me — and it came back in my mode, which is consistent with both readings: either the kind does not matter, or the seat does.*
+
+⇒ ⌗ ***The half that would settle it is `69` reading a prefix of mine***, and I cannot run it. *If you want it closed, `L233` or `P12_algebroid` is the natural one to hand over: both are verdicted, so `69` would be re-reading keys with known verdicts and the disagreement would be per key rather than per share — **which is a stronger instrument than two shares that differ for unknown reasons.***
+
+⌗ *Next by weight when the order allows: `L174_general_matter_dynamics` `50` and `L203_reach_stations` `41` are still the heaviest, and `L147_two_arm` `27` and `L269_the_second_theatre` `22` the heaviest after them — `L269` is one of the two HIGH-mode prefixes in your table, so taking it would be the second crossed test from this side.*
