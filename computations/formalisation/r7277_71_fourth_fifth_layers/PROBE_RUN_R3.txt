@@ -1,0 +1,84 @@
+# R3 probe run — r7277+71.3
+date: 2026-10-13T01:54:18Z
+Lean (version 4.35.0-rc4, x86_64-unknown-linux-gnu, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)
+mathlib: 4e6064a4a3a617a3ba6739b50152b02e4d6ad3ea
+command: lake env lean probes/ConformalLCProbe.lean
+---- output ----
+probes/ConformalLCProbe.lean:45:20: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/ConformalLCProbe.lean:45:20: warning: This simp argument is unused:
+  ContinuousLinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gConf, smul_eq_mul, minkForm_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/ConformalLCProbe.lean:45:52: warning: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gConf, ContinuousLinearMap.smul_apply, minkForm_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/ConformalLCProbe.lean:45:65: warning: This simp argument is unused:
+  minkForm_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gConf, ContinuousLinearMap.smul_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/ConformalLCProbe.lean:66:6: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/ConformalLCProbe.lean:71:6: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/ConformalLCProbe.lean:120:19: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/ConformalLCProbe.lean:120:50: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/ConformalLCProbe.lean:121:47: warning: `ContinuousLinearMap.coe_comp'` has been deprecated: Use `ContinuousLinearMap.coe_comp` instead
+
+Hint: Replace the deprecated name:
+  ContinuousLinearMap.coe_comp'̵
+probes/ConformalLCProbe.lean:121:47: warning: This simp argument is unused:
+  ContinuousLinearMap.coe_comp'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply, ContinuousLinearMap.smulRight_apply,
+    Function.comp_apply, smul_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/ConformalLCProbe.lean:122:10: warning: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply, ContinuousLinearMap.smulRight_apply,
+    ContinuousLinearMap.coe_comp', smul_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/ConformalLCProbe.lean:179:8: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'ShadowProbe.covConf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.covConf_torsion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.covConf_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+---- exit: 0, wall 8 s ----
