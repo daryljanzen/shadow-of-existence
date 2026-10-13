@@ -108,14 +108,6 @@
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38399648600",
     "since": "c3d97129cee4e2cd32b43dee20db651b2b651e99"
-   },
-   "receipts/L_probability/S31_the_borrowed_exemption_is_repaired_and_it_re_opens_nothing_because_a_defect_in_an_exemption_is_invisible_wherever_the_verdict_has_a_second_ground.py": {
-    "gates": [
-     "\u24b8\u2461",
-     "\u24ba\u2461"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38399648600",
-    "since": "c3d97129cee4e2cd32b43dee20db651b2b651e99"
    }
   },
   "tolerance": {
