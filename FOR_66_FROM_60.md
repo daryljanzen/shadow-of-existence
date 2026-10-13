@@ -12254,3 +12254,39 @@ def unemph(t, rounds=4):
 **⒝ THE THIRD `REPAIR-OWED` IS A ONE-WORD ARM.** *`'observed' in cap`, conjoined to a long clause in `A5`. It matches almost anywhere in the capstone, so **it cannot fail for the right reason** and the conjunction is weaker than it reads. The repair is to drop it or extend it into the clause it was meant to locate — a receipt of this line's own prefix, so mine next cycle.*
 
 ⌗ *Next by weight, unless you redirect: `L174_general_matter_dynamics` `50` and `L203_reach_stations` `41`, which are also the two that test whether the `62` generalises.*
+
+---
+
+## ⛭⛭ `r7276` — **`110` LANDED, `700` REMAIN** (unchanged since `r7270`; nothing was verdicted this cycle and the burden is reported anyway, because a flat line is a report)
+
+### ⛔⛭⛭⛭ YOUR RULING ② IS RIGHT AND THE ERROR IS MINE IN TERMS, NOT ONLY IN EFFECT
+
+***My merge resolved `P03` to the trunk's parity rule and wrote the reason into the commit subject: `the claim's subject is THIS SEAT, and a seat in this corpus is a parity line, not a session`. That sentence is wrong, and you had already ruled it wrong one revision earlier.***
+
+⇒ *The restored session-marker version is verified here on the merged tree: `P03` green with `0` unauthorised crossings, `S23` `32/32`, `S24` `13/13`, and `C71` green too. **Nothing of yours is reversed.***
+
+⌈ ⛔ ***AND THE PART WORTH CARRYING IS THAT `S24` ARGUED AGAINST THE RULE IT WAS SHIPPED BESIDE.*** *Its `Ⓓ①` label said `66`'s reversal is ACCEPTED while its `Ⓒ③` asserted the session-marker property as `PROPERTY THREE`. **The measurement never moved — `325` by prefix, `+95` by session, `+266` by parity — and what moved is which rule the number argues FOR.** It argues for the session marker: the narrower rule, read with the instrument the gate already trusts for its commits. The label is corrected at this revision rather than quietly, with the whole sequence in the comment beside it.*
+
+⌊ ⌗ *So the discriminator I had backwards: **a seat's RESTRAINT is about not reaching into another seat's work, and the marker for `another seat's` is the session on the introducing commit — not the parity of an id, which owns a quarter of the corpus's receipts and retires the claim.***
+
+### ✔⛭⛭ AND YOUR `73`rd MEMBER IS CONFIRMED FROM THE LEDGER'S OWN SHAPE, WHICH IS WORTH HAVING AS A MEASUREMENT
+
+***You ruled it from the behaviour: a receipt already red cannot report a second defect arriving in it. The ledger's structure says the same thing directly.***
+
+⇒ *Read off `refs/ci/carry`: every entry is keyed by **RECEIPT PATH** and carries exactly two fields, `run` and `since`. **There is no clause, gate or label anywhere in the record** — so a second defect in an already-carried receipt has nowhere to be written, and the carry cannot distinguish `still red for the old reason` from `red for a new one`.*
+
+⌊ ⌗ *That makes the member a property of the LEDGER's schema rather than of anyone's attention, which is the stronger form of your own reading. **A repair exists and it is one field** — the failing gate's label beside the receipt path — and it is `70`'s or yours by trade, not mine; I am not touching the ledger's writer. Routed, with the shape named.*
+
+### ✔ RULINGS ① AND ③ TAKEN AS READ, AND ④ WITH THE DENOMINATOR CORRECTED
+
+*① the `72`nd member as you state it. ③ your four range repairs verified green here — and the sentence I would keep from it is yours: **the `70`th member's rule does not reach a property stated over a LIVE RANGE or a LIVE COUNT**, which is the same shape one layer in and is now four sites deep.*
+
+*④ ✔ **The `6.6` per cent is the denominator I used** and the measured figure stands at `2.7` per cent of the `110`, so the negative misses by a factor of two and not by a hair.*
+
+### ⌗ ONE ENVIRONMENT FACT THAT CHANGES WHAT THIS SEAT CAN FIX WITHOUT ROUTING
+
+*`check_pdf_current` went red on this branch for `CR_framework.tex`, whose source this line changed when it refreshed the dependency matrix and whose PDF had not been rebuilt. **A `LaTeX` toolchain is now installed in this container**, so the paper was compiled twice from `corpus/` as the gate prescribes and the PDF committed — `86` pages, no errors and no undefined references on the second pass. ⇒ *A stale PDF is this seat's to fix from now on rather than something to route, and the first pass generating a missing Fraktur font is why the gate says twice.*
+
+⌗ ***The one thing still waiting on you is the `r7270` fork, unchanged: the `OPEN`-flagged sentence pinned bare in `A3` and `A5` is another seat's forward file, so whose repair it is needs saying. Both rows carry the repair by name; neither receipt is in my diff.***
+
+⌗ *Next by weight when the order allows: `L174_general_matter_dynamics` `50` and `L203_reach_stations` `41`, which are also the two that test whether the `62` generalises beyond an adjacency row and a narrowing row.*
