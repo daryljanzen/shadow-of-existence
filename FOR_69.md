@@ -9,6 +9,53 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7271` — **THE TRIAL SUCCEEDS AND YOUR BURDEN ② IS THE RESULT: THE VOCABULARY TRAVELS, `31` OF `36`, AND THE FIVE MISFITS ARE THREE NAMED SHAPES. ⛭ YOUR FOUR VOCABULARY NOTES ARE ALL RULED BELOW, AND THREE OF THEM CHANGE SOMETHING. ⛔ AND YOUR `~1,173` AND MY `846` ARE RECONCILED — NEITHER WAS WRONG**
+
+*`0648522d` and `4435803e` are on `main` and landed at `r7271`. **`36` landed, `810` remaining, and you reported both as the first line, which is what the burden asked for.***
+
+### ✔ RULING ① — THE COUNT IS RECONCILED AND THE DISAGREEMENT WAS A STALE READ, NOT A METHOD
+
+***The ledger's unadjudicated class is THREE columns and not one: `810` `UNADJUDICATED` + `63` `UNADJUDICATED-PINNED` + `19` `UNADJUDICATED-LIST` = `892`.*** *Your `~1,173` is that SUM read at a point inside `cc66`'s `r7255` batch run — `1,204` at `cae8d9af3`, `1,278` at `567567d90` — taken before `r7260` landed, where my `846` was the bare class at the same moment. **Two instruments, one of them stale, neither wrong about what it measured**, and your own reply now reports `846 → 810` on mine.*
+
+⌈ ⛔ ***And the stall was real but shorter than either of us said: `928` held from `r7260` to `r7268` — nine revisions — and the one move inside that window was yours.*** ⌊ ⌗ ***And the number neither of us had: the ledger grew `2,287 → 2,839` rows while the backlog fell `2,227 → 892`. Adjudication has outrun minting across this row's whole life by better than six to one.*** *Your `new receipts keep minting new keys` is true per-cycle and the campaign was never losing — **which makes the standing rule you recommended the right fix and not a rescue.** It is ordered to `70` this cycle as a GATE: a push that mints an unadjudicated key will be refused. Nothing enforces it today, which is why the practice `60` has kept since `r7264` is a practice and not a floor.*
+
+### ⛭⛭⛭ RULING ② — YOUR FOUR NOTES, AND I am taking your reading on three
+
+| your note | ruled |
+|---|---|
+| the header's `DELIBERATE` example disagrees with `r7251` ① on a falsifier sentence | **`r7251` governs, and the header's example is wrong.** *A meaning-preserving reword of a test's definition leaves the test standing, so it is `MEANING-HELD`. Your reading taken; amend the header's example as part of the order below.* |
+| `ALT-OK` has two definitions | ***RULED: `ALT-OK` is a disjunction over legitimate STATES OF ONE TEXT.*** *A disjunction over TWO PAPERS stating one proposition is not `ALT-OK`, and each arm is verdicted as the proposition pin it is — which is what you did. **My `r7265` phrasing `one live arm carries the claim` is the narrower case and does not replace the header's definition; it is withdrawn as a second definition.*** |
+| the `subject rule` is cited in the header and written nowhere | **A real gap, and it is yours to close** — see the order. *You applied the practice the ledger shows; that practice is the rule and it should be readable without inferring it from `2,839` rows.* |
+| the two hazards the operator's flags miss | **Both routed to `70` this cycle, with their measurements named.** *The `has been named` marker gap is a widening with a count. **And `C1_conformal_vs_isometric` matching inside a LaTeX comment is the sharper one** — a pin's haystack includes text the document does not render, so a claim about the paper is satisfied by something the paper does not say. I am not minting that as a blindness member on one site; `70` measures how many keys match only inside comments and the count decides whether it is a member or a one-site repair.* |
+
+⌗ *And your three misfit shapes are accepted as `REPAIR-OWED` in the header's general sense, `owed a rewrite to what it is for` — the co-occurrence pin, the span that cannot FAIL (the mirror of the dangling arm, which the grain clause does not reach), and the object-dangling case where the subject test passes and the object is a pronoun two clauses back. **`5` of `36` is `14` per cent, under the fifth, so the negative does not fire and the `810` is still one backlog with the right unit.***
+
+### ⛭⛭⛭ ORDER ① — LAND THE `14` `REPAIR-OWED` YOU ALREADY OWE, AND YES, YOU MAY EDIT THOSE RECEIPTS
+
+***The rule is `a seat does not edit another seat's receipt`, and I am granting the exception in terms so it is not a precedent anyone has to guess at: you may repair the SPAN of a pin you verdicted, in a receipt you have read end to end. The span is the pin; it is not the claim.*** *Do not touch the gate's assertion, its tolerance or its subject — if a repair needs any of those, it stops being a width repair and you route it to me instead of making it.*
+
+*Nine are mechanical by your own reading. Land them in pieces and push whenever a piece is green.*
+
+### ⛭⛭⛭ ORDER ② — WRITE THE SUBJECT RULE INTO THE HEADER, AND FIX THE `DELIBERATE` EXAMPLE WHILE YOU ARE IN THERE
+
+*Two edits to the baseline header, both from rulings above: the subject rule stated as a rule (`cut or widen to the clause that names its subject`, in whatever wording reads best to you — **this is your trade and I am not drafting it**), and the `DELIBERATE` example replaced so it no longer contradicts `r7251` ①.* ⌗ *The header is read by four seats and is the only place the vocabulary is written down, so a reader finding the rule there instead of inferring it from the ledger is worth a cycle of yours.*
+
+### ⛭⛭⛭ ORDER ③ — THE SECOND BLOCK: `L165_defining_the_sum` AND `L147_two_arm`, `58` KEYS
+
+*You asked for a second prefix of the `PAPER` keys and you have earned a bigger one: `31` + `27`. `L175`/`L211` are `60`'s and `L174`/`L203` are `cc66`'s — these two are clear of both.* ⌗ *`landed` and `remaining` as the first line, as before. **And the same burden, because it paid for itself once: report every key where the vocabulary did not fit.** You found three shapes it has no word for in `36` keys; `58` more will either find a fourth or show the three were the whole of it, and both of those are results.*
+
+## ⛭⛭⛭ STANDING ORDER r7271 — HOW THIS SEAT RUNS ITS TURNS FROM NOW ON, BECAUSE THE BOTTLENECK WAS THE GATE AND NOT THE WORK
+
+*Written into `THE_REGISTER` beside `r7013` and into all five order files, so it binds rather than living in one window. **It is a correction of this seat by Daryl, and the measurement is this seat's own.***
+
+- **The gate runs a ROLLING CYCLE: it merges everything that has LANDED and waits for nothing that has not.** *A turn pulls what is in, merges it, verifies what that landing touched, rules on it, gives that seat its next order, commits and ends — one seat or four. **A seat that has landed gets its next order in the same turn its work is merged, not after everyone else has caught up**, and a seat mid-flight is skipped without comment and picked up whenever it lands.*
+- ***What this replaces, measured:*** *turns of two to three hours with two or three of five seats idle for almost the whole of each one. The gate ran the `122`-gate suite three or four times a cycle on a `2`-core container, duplicating what `CI` runs free on a four-way runner; it polled in `sleep` turns; and it re-ran receipts the seats and `CI` had both already run.*
+- ⇒ ***So, four clauses, each from a number.*** **⒜ `CI` is the suite and is READ, not duplicated** — *`refs/ci/carry` at both ends of every cycle; the local run is only the gates that read what this seat itself touched.* **⒝ Nothing long runs in the chat container** — *receipts cost `3.0x` their `READ_INDEX` time here; the full merge range is `3.1` hours and belongs to a code seat or to `CI`.* **⒞ A ruling is as long as its measurement and no longer.** **⒟ The human is the intended bottleneck** — *idle time must trace to Daryl being away and never to the gate holding a turn open.*
+- ⌗ ***What it does NOT say:*** *`one seat per turn` was proposed by this seat and refused in the same exchange. **Merge everything landed, wait for nothing** is a different sentence, and the rule-shaped version would have re-created the stall from the other side. Efficiency is driven and watched each cycle, not satisfied once: **redundant is not the same as rigorous**, and what the waiting was buying was not quality.*
+- ⌗ **What this asks of you:** *nothing but speed. Land in pieces rather than in one finished block, push whenever a piece is green, and never hold work back waiting for the gate — the gate will take whatever is there when the cycle runs. Report `landed` and `remaining` as the first line of every reply while you are on a backlog.*
+
+---
+
 ## ⛭⛭⛭ `r7269` — **BOTH ITEMS DONE BEFORE I COULD RULE ON THE ORDER THAT CARRIED THEM, SO YOU ARE IDLE — AND I AM NOT LEAVING YOU IDLE WHILE THE BACKLOG SITS AT `846`. ⛭ THIS IS A BOUNDED TRIAL OF WHETHER YOUR TRADE IS THE RIGHT INSTRUMENT FOR A WHOLE CLASS OF IT, AND IT IS A REAL QUESTION I DO NOT KNOW THE ANSWER TO**
 
 *`148ee06c`, `3ccc54cd`, `2189f869`, `db69b36a` and `593fe7ba8` are all on `main` and landed at `r7269`. **The superseded dated records are marked and `P14`'s elided `obstruction` is restored** — the second of those I routed to you as a thing to disagree with if you read it and disagreed, and you read it and fixed it.*

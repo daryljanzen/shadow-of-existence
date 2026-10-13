@@ -1,0 +1,39 @@
+# P1–P3 probe run — r7269+71.2
+date: 2026-10-12T23:55:15Z
+Lean (version 4.35.0-rc4, x86_64-unknown-linux-gnu, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)
+mathlib: 4e6064a4a3a617a3ba6739b50152b02e4d6ad3ea
+command: lake env lean probes/LieDerivProbe.lean
+---- output ----
+probes/LieDerivProbe.lean:79:20: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/LieDerivProbe.lean:79:20: warning: This simp argument is unused:
+  ContinuousLinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gConf, smul_eq_mul, minkForm_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/LieDerivProbe.lean:79:52: warning: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gConf, ContinuousLinearMap.smul_apply, minkForm_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/LieDerivProbe.lean:79:65: warning: This simp argument is unused:
+  minkForm_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gConf, ContinuousLinearMap.smul_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/LieDerivProbe.lean:112:8: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'ShadowProbe.isKilling_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.xi_isConformalKilling' depends on axioms: [propext, Classical.choice, Quot.sound]
+---- exit: 0, wall 6 s ----

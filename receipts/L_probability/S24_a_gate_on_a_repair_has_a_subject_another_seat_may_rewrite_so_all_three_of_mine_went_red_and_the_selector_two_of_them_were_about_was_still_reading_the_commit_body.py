@@ -257,17 +257,30 @@ _own_sess = _own_sess.group(1) if _own_sess else None
 _p03_intro = _SESS.search(_git('log', '--diff-filter=A', '--format=%B', '-1', '--', P03))
 _r03 = run(P03)
 _p03_zero = '0 UNAUTHORISED modified unowned receipt(s)' in _r03.stdout
+# ⛔⛭⛭⛭ r7273 (66): AND THE `MODIFIED` CONJUNCT WAS A BRANCH-STATE FACT, SO THIS GATE AND `S23`'s
+#   `Ⓕ③` BOTH WENT RED ON THE MERGE OF THE WORK THEY RECORD.  *`git diff --name-only origin/main`
+#   is the repair's own evidence on the branch and is EMPTY on the trunk, where `origin/main` is
+#   `HEAD`.*  ⇒ *** So this revision's own rule needs one more clause: `assert the PROPERTY and
+#   never the form` does not reach a property stated over a RANGE, and a range that empties is a
+#   form.  The modification is a historical fact and is pinned at the commit that made it, with the
+#   live arm kept as the branch-case fast path. ***  *`66`'s edit, because `66` landed the merge
+#   that inverted it.  **Stated for `60` to reverse** -- no claim, count or verdict moves.*
+_P03_REPAIRED_AT = '10ef840a'   # `r7268`: the commit that put the ownership repair into `P03`
+_p03_pin_ok = _git('cat-file', '-t', _P03_REPAIRED_AT + '^{commit}').strip() == 'commit'
+_p03_pinned = _p03_pin_ok and P03 in _git(
+    'show', '--no-merges', '--name-only', '--format=', _P03_REPAIRED_AT).split('\n')
 _p03_touched = P03 in _git('diff', '--name-only', 'origin/main').split('\n')
 print(f'      P03: outside both prefixes {not P03.startswith(_PFX)}, introduced by this seat '
-      f'{bool(_p03_intro) and _p03_intro.group(1) == _own_sess}, modified on this branch '
-      f'{_p03_touched}, exit {_r03.returncode}')
+      f'{bool(_p03_intro) and _p03_intro.group(1) == _own_sess}, modified by the repair '
+      f'{_p03_pinned} pinned at {_P03_REPAIRED_AT} / {_p03_touched} live, exit {_r03.returncode}')
 gate(f'Ⓒ③ ⛔⛭⛭⛭ PROPERTY THREE --- the OWNERSHIP predicate must own the receipt THE GATE IS IN: '
-     f'`P03`\'s own path is outside both prefixes, this branch MODIFIED it, and it still reports '
-     f'ZERO unauthorised crossings and exits `{_r03.returncode}` --- which no prefix pair can give, '
-     f'and which names no spelling of either repair.  ** One gate had TWO definitions of `mine`: the '
-     f'session marker for its COMMITS and a path prefix for its FILES, and the weaker one was in '
-     f'the claim **',
-     not P03.startswith(_PFX) and _p03_touched and _p03_zero and _r03.returncode == 0
+     f'`P03`\'s own path is outside both prefixes, the repair MODIFIED it (pinned '
+     f'`{_p03_pinned}` / live `{_p03_touched}`), and it still reports ZERO unauthorised crossings '
+     f'and exits `{_r03.returncode}` --- which no prefix pair can give, and which names no spelling '
+     f'of either repair.  ** One gate had TWO definitions of `mine`: the session marker for its '
+     f'COMMITS and a path prefix for its FILES, and the weaker one was in the claim **',
+     not P03.startswith(_PFX) and (_p03_pinned or _p03_touched)
+     and _p03_zero and _r03.returncode == 0
      and bool(_p03_intro) and _p03_intro.group(1) == _own_sess)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
@@ -362,7 +375,14 @@ _mine_c = [l.split('\t', 1)[0] for l in
 _mine_f = set(_f for _c in _mine_c
               for _f in _git('diff-tree', '--no-commit-id', '--name-only', '-r', _c).split()
               if _f)
-_wt = set(_f for _f in _git('diff', '--name-only', BEFORE).split('\n') if _f)
+# ⛔⛭⛭⛭ r7273 (66): AND THE FAR END OF THIS RESTRAINT RANGE WAS `BEFORE..WORKING TREE`, WHICH IS
+#   `S22`'s r7265 DEFECT RECURRING IN THE RECEIPT THAT STATES THE RULE.  *On the branch it is the
+#   uncommitted evidence and is right.  **On the merged trunk it is every file four seats changed
+#   since `BEFORE`, so a gate asserting `only these receipts` read nine and then read other seats'
+#   work as this revision's.***  ⇒ *** The branch case wants UNCOMMITTED EDITS, which is `diff
+#   against HEAD` -- empty on a clean trunk, exact on a dirty branch -- and never a distance from a
+#   commit the trunk has long passed. ***  *`66`'s edit, stated for `60` to reverse.*
+_wt = set(_f for _f in _git('diff', '--name-only', 'HEAD').split('\n') if _f)
 _touched = sorted(_mine_f | _wt)
 _rcpt = [_f for _f in _touched if _f.startswith('receipts/') and _f.endswith('.py')]
 print(f'      this revision: {len(_mine_c)} own commit(s) by SUBJECT, {len(_touched)} file(s) '

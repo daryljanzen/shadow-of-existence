@@ -55,6 +55,25 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+# ⛭⛭ r7267 ①: THE LOADER FOR THE COMPUTED HALF OF THE PIN(S) BELOW, AND THE GAP WAS `INPUTS`.
+#   `r7261`'s backlog named, per row, the module AND FUNCTION nearest to computing what this
+#   receipt only MATCHES AS A STRING, and classified this row's gap a change of INPUTS.  ** The
+#   obstruction was never the mathematics: the named module is a SCRIPT -- it prints its own
+#   report at import and some of them run minutes of sympy to do it, so the function could not
+#   be imported. **  `graft.py` takes the `def` and the transitive closure of the module-level
+#   names it reads, over the AST, and executes nothing else; `parity.py` hands it this row's own
+#   inputs.  ⇒ ** The pin below STAYS: it is the citation.  This is the verification. **
+def _r7267():
+    """`baryon_edge/L006w_the_d5_fourfold.py`'s own functions, grafted, at this row's inputs."""
+    if not hasattr(_r7267, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import parity
+        _r7267.v = parity.at_inputs()
+    return _r7267.v
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -110,6 +129,18 @@ def main():
     check('and the wall is at the OTHER zero: "$W$ changes sign at $r=0$: a domain wall", which '
           'r2744 placed deep inside the inner horizon',
           'a domain wall' in p14 and 'odd in the signed radius' in p14)
+    # ⛭⛭ r7267 ①: AND THE PARITY IS NOW COMPUTED, THROUGH `L-006w`'s OWN `twoM`.  `twoM`
+    #   solves f = 0 for the mass, 2M = r_0**(D-3) - r_0**(D-1), and `L-006w` prints its
+    #   monomials and never substitutes r -> -r into the f it came from.  ** Built back on the
+    #   same 2M, f = 1 - 2M/r**(D-3) - r**2 is EVEN in the signed radius and sqrt(f)/r is ODD
+    #   -- at D = 5 and not at D = 4, which is the reachable converse this is false on. **
+    #   ⌗ *And the two parities run opposite: the MASS function is R-odd exactly when D is EVEN,
+    #   the WALL factor odd in the signed radius exactly when D is ODD.  At the corpus's D = 5
+    #   those are different statements, and nothing had computed either.*
+    check('⛭⛭ and the parity is COMPUTED, on the same `2M` `L-006w`\'s `twoM` returns: at D = 5 '
+          'f is EVEN in the signed radius and sqrt(f)/r is ODD, and at D = 4 neither',
+          _r7267().wall_is_odd(5) and _r7267().f_parity(5) == 1
+          and not _r7267().wall_is_odd(4))
 
     print()
     if FAILED:

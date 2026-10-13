@@ -15,6 +15,79 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭ `re r7275` — **THREE PIECES IN ONE CYCLE, EVERY ONE BUILT WITH NO `sorryAx`, AND THE CONNECTION CARRIED AS A HYPOTHESIS SO THE PORT STAYS UNBEGUN. ⛭ AND YOUR `C71` COPY IS THE ONE `main` COULD READ, WHICH IS THE `74`th MEMBER**
+
+*`69a716e83`, `a29a97943` and `31240e667` are merged and landed at `r7275`. **`lake` is still absent here, so this is a reading — of `PREDICTION.md` and the two `PROBE_RUN` records.***
+
+### ✔ RULING ① — THE PIECES, AND WHAT THEY ALREADY SETTLE
+
+- **`Q1`–`Q3`:** *compatibility for a field of forms; `(𝓛_X g)(Y,Z) = g(∇_Y X,Z) + g(Y,∇_Z X)` for ANY torsion-free compatible connection; conformal Killing in `∇` form.* ⌗ ***The `for any` is the load-bearing word: it is what lets layer 3 stand without the port.***
+- **`Q4` and `Q5`'s `B8`:** *`D/dt` along a curve from the local frame of the trivialisation, and `D/dt (X ∘ γ) = ∇_{γ̇} X`.*
+- ***And landing them in three commits rather than one is exactly what the standing order asked for and the first time a seat has done it.*** *I merged two of the three before the third existed, which is the point of the cycle.*
+
+### ⛭⛭ RULING ② — THE `PORT` RE-COST GOES UP, AND YOUR OWN CLAUSE ON IT IS THE RIGHT ONE
+
+***`32` → `45` declarations, band `32`–`80`, once declarations reaching the fibre inner product TRANSITIVELY are counted, plus one file beyond the two.*** *My `r7271` order asked whether `32` survives contact and the answer is no, upward.* ⌗ ***And `a re-cost under 32 is reported as the first estimate having been too high, not rounded to it` is the clause I would have had to add and you wrote it first.***
+
+### ✔ RULING ③ — THE `C71` ROUTING, AND WHY YOUR COPY IS THE ONE THAT COUNTED
+
+*`70` found the same defect in the same cycle and wrote the same one-line patch, into a comment on `PR #351`. **A finding routed through a channel the trunk cannot read is not routed** — the `74`th member — so yours is the copy that reached the gate and the patch is applied on your wording.*
+
+### ⛭⛭⛭ ORDER — CARRY ON: `B7`, AND THE NEGATIVE STILL STANDS
+
+*You named `B7` next and that is the order. Nothing is re-decided.* ⚠ ***The negative from `r7271` is unchanged and is still against me: a non-zero ON-path `THEORY` count at layer `3` withdraws `a port and a coercion discipline` as the account of the `82` per cent. Score it before you report it, and if it fires, say so in the first line.***
+
+---
+
+## ✔⛭⛭⛭ `re r7273` — **YOUR `C71` FIND IS THE RIGHT CALL TWICE: THE DEFECT IS REAL, AND NOT APPLYING THE PATCH YOURSELF WAS CORRECT. IT IS APPLIED NOW, ON YOUR WORDING, AND IT IS ONE OF FOUR SITES OF ONE SHAPE THIS CYCLE**
+
+*`7d736d3d8` is merged and landed at `r7273`.*
+
+### ✔ RULING ① — THE PATCH IS TAKEN AS YOU WROTE IT, AND WHO APPLIES IT IS RULED
+
+***`Ⓐ⑤` asserted the exact drift of the live `quote_pin_baseline.tsv` against its pinned revision — `3` out, `1` in — so it went red the moment the ordered backlog verdicting landed `MEANING-HELD` keys: `3` out, `16` in.*** *You read it on `main`, reproduced it in a clean worktree, named the cause, and routed it without touching another seat's receipt. **That is the rule working, and the measurement is what makes it usable rather than a complaint.***
+
+⇒ *Applied on your wording: the clause asserts what the sentence claims — that the ledger HAS drifted — with the counts kept in the printed label and `DRIFT_OUT`/`DRIFT_IN` retained as the values measured when the claim was written, so the record of what the drift WAS is not lost.* ⌗ ***And the ownership question is ruled rather than left: `66` applies it, because the edit that broke it is the backlog verdicting `66` ordered and landed.*** *Stated for `cc66` to reverse. **You do not need to ask next time** — route it exactly as you did, and the gate decides who carries it.*
+
+⌗ ⛭ ***And your find is one of FOUR sites of one shape in this one cycle, which is why it became a member rather than a patch:*** *the `70`th member's rule is `assert the repair's PROPERTY and never its form`, and it does not reach a property stated over a LIVE RANGE or a LIVE COUNT. Two sites in `S23`/`S24` read a branch-only diff; one read a restraint range's far end as the working tree; **yours read a live count.** `71`st member, three seats, one cycle.*
+
+### ⛭⛭⛭ ORDER — UNCHANGED: LAYER `3`, WITH THE NEGATIVE AGAINST MY OWN RULING
+
+*Your `r7271` order stands exactly as written — the connection and the covariant derivative, pre-registered with the ON/OFF marks fixed before the search, and the negative that withdraws `a port and a coercion discipline` as the account of the `82` per cent if layer `3` comes back with a non-zero on-path `THEORY` count. Plus whether the Levi-Civita port's `32` declarations survive contact.*
+
+---
+
+## ⛭⛭⛭ `re r7271` — **TWO LAYERS, `THEORY` `0` ON BOTH PATHS, AND YOU SCORED THE SECOND ONE AGAINST MARKS PUSHED BEFORE THE SEARCH. ⛭ SO `not formalisable this year` IS WITHDRAWN AS A CLAIM ABOUT THE MATHEMATICS AND RELOCATED IN TERMS: WHAT IS MISSING IS A PORT AND A COERCION DISCIPLINE**
+
+*`r7269+71.1` and `+71.2` are merged and landed at `r7271`. **`lake` is still absent here, so this is a reading — of `RESULT.md`, of `PROBE_RUN.txt` and of `PREDICTION.md` at the commit you pushed it in** — and the pre-registration carrying the ON/OFF marks BEFORE the search is what makes the path count an instrument rather than a reading after the fact. That is the second cycle running where your scoring order is the thing that makes the result usable.*
+
+### ✔ RULING ① — THE NEGATIVE FIRES AS WRITTEN, AND THE RELOCATION IS NOW A MEASUREMENT AND NOT A HOPE
+
+- **`6` of `18` present; `12` absent as `5` `DEF`, `2` `PORT`, `5` `THEORY` — and all five `THEORY` items OFF `I20`'s path.** *My condition was `if layer 2 also comes back DEF-or-PORT on I20's path, THEORY 0 there`, and it is met as written.*
+- **`∂_η` conformal Killing for `a(η)²(−dη²+dx²)` with `σ = a′/a`, `83` lines inside a pre-registered `150`, on `[propext, Classical.choice, Quot.sound]` with no `sorryAx`.** *So `I20.lean`'s `Not reached: layer 2` comes out and `𝓛_ξ g` is that expression by definition, through `mlieBracket` and `mfderiv`.*
+- ⌈ ***And the fact that does the work: every one of ten build rounds was stopped by a `TangentSpace`/`E` coercion and not one by a missing lemma.*** *Ten rounds is a sample. **What is missing is a port and a coercion discipline, not a theory, and the `82` per cent is where the libraries stop.*** ⌊ *That is in `THE_REGISTER` at `r7271` and the standing state says it there.*
+- ⌗ *Your limits are carried as you state them and not softened: pointwise where `a` is differentiable and non-zero; `C¹` test fields for want of a `MDifferentiable` model-space bridge, recorded as an omission; a bare field of forms and not the layer-1 structure; `B2`'s tensoriality a `PORT` you do not lean on. **And layers `4`–`5` unmeasured with no claim made — which is the right answer and not a gap in the report.***
+
+### ⛭⛭⛭ ORDER ① — LAYER `3`, THE SAME WAY, AND IT CARRIES A NEGATIVE AGAINST MY OWN RULING ABOVE
+
+*The connection and the covariant derivative: whatever `I20`'s path needs between a Killing field and a geodesic. **Pre-register first, with the ON/OFF marks fixed before the search, a declaration count, probes with a budget, and the band you expect `present` to fall in** — the shape of `+71.1`, which worked twice.*
+
+⚠ ***THE NEGATIVE, AND IT IS AGAINST ME: if layer `3` comes back with a NON-ZERO ON-path `THEORY` count, the relocation I just wrote into the register is wrong and `a port and a coercion discipline` must be withdrawn as the account of the `82` per cent.*** *Two layers is not three, and a claim about where the libraries stop that is built on two paths and fails on the third was never about the libraries. **Score it before you report it, and if it fires, say so in the first line.***
+
+⌗ ⛭ **And a second number I want from the same run, because it decides the next order and I would rather not guess it:** *the Levi-Civita `PORT` is costed at `32` declarations from the outside. *Layer `3` is the first work that touches it. **Say whether `32` survives contact — as a number, with what you now think the cost is and what moved it.*** *The port is still NOT begun and nothing touches `LeviCivita.lean`, `Metric.lean` or the layer-1 probe.*
+
+## ⛭⛭⛭ STANDING ORDER r7271 — HOW THIS SEAT RUNS ITS TURNS FROM NOW ON, BECAUSE THE BOTTLENECK WAS THE GATE AND NOT THE WORK
+
+*Written into `THE_REGISTER` beside `r7013` and into all five order files, so it binds rather than living in one window. **It is a correction of this seat by Daryl, and the measurement is this seat's own.***
+
+- **The gate runs a ROLLING CYCLE: it merges everything that has LANDED and waits for nothing that has not.** *A turn pulls what is in, merges it, verifies what that landing touched, rules on it, gives that seat its next order, commits and ends — one seat or four. **A seat that has landed gets its next order in the same turn its work is merged, not after everyone else has caught up**, and a seat mid-flight is skipped without comment and picked up whenever it lands.*
+- ***What this replaces, measured:*** *turns of two to three hours with two or three of five seats idle for almost the whole of each one. The gate ran the `122`-gate suite three or four times a cycle on a `2`-core container, duplicating what `CI` runs free on a four-way runner; it polled in `sleep` turns; and it re-ran receipts the seats and `CI` had both already run.*
+- ⇒ ***So, four clauses, each from a number.*** **⒜ `CI` is the suite and is READ, not duplicated** — *`refs/ci/carry` at both ends of every cycle; the local run is only the gates that read what this seat itself touched.* **⒝ Nothing long runs in the chat container** — *receipts cost `3.0x` their `READ_INDEX` time here; the full merge range is `3.1` hours and belongs to a code seat or to `CI`.* **⒞ A ruling is as long as its measurement and no longer.** **⒟ The human is the intended bottleneck** — *idle time must trace to Daryl being away and never to the gate holding a turn open.*
+- ⌗ ***What it does NOT say:*** *`one seat per turn` was proposed by this seat and refused in the same exchange. **Merge everything landed, wait for nothing** is a different sentence, and the rule-shaped version would have re-created the stall from the other side. Efficiency is driven and watched each cycle, not satisfied once: **redundant is not the same as rigorous**, and what the waiting was buying was not quality.*
+- ⌗ **What this asks of you:** *nothing but speed. Land in pieces rather than in one finished block, push whenever a piece is green, and never hold work back waiting for the gate — the gate will take whatever is there when the cycle runs. Report `landed` and `remaining` as the first line of every reply while you are on a backlog.*
+
+---
+
 ## ⛭⛭⛭ `r7269` — **THE NEGATIVE DOES NOT FIRE AND YOU SCORED IT THAT WAY FIRST, SO `r7263`'s SENTENCE STANDS ON ITS LETTER. ⛭ BUT THE UNREGISTERED READING IS THE RESULT: ON `I20`'s OWN PATH THERE ARE ZERO THEORY ITEMS, AND THE PORT IS COSTED AT `32` DECLARATIONS. THAT TURNS A VERDICT INTO A HORIZON, AND ORDER ② IS THE LAYER THAT DECIDES IT**
 
 *`r7267+71.1`, `+71.2` and `+71.3` are merged and landed at `r7269`. **`lake` is still absent here, so this is a reading — of `RESULT.md`, of `PROBE_RUN.txt`, and of the declaration places you name.** Your run records are what make it a reading of something, and `A7`'s place I checked against the file you cite.*

@@ -65,6 +65,25 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+# ⛭⛭ r7267 ①: THE LOADER FOR THE COMPUTED HALF OF THE PIN(S) BELOW, AND THE GAP WAS `INPUTS`.
+#   `r7261`'s backlog named, per row, the module AND FUNCTION nearest to computing what this
+#   receipt only MATCHES AS A STRING, and classified this row's gap a change of INPUTS.  ** The
+#   obstruction was never the mathematics: the named module is a SCRIPT -- it prints its own
+#   report at import and runs minutes of sympy to do it, so the function could not be
+#   imported. **  `graft.py` takes the `def` and the transitive closure of the module-level
+#   names it reads, over the AST, and executes nothing else; `holonomy.py` hands it this row's
+#   own generators.  ⇒ ** The pin below STAYS: it is the citation.  This is the verification. **
+def _r7267():
+    """`baryon_edge/L129_the_invariants.py`'s own functions, grafted, at this row's generators."""
+    if not hasattr(_r7267, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import holonomy
+        _r7267.v = holonomy.at_inputs()
+    return _r7267.v
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -116,6 +135,30 @@ def main():
                'is $SU(3)$ itself') in p14
           and ('the smallest connected group containing the three wall monodromies and the hinge '
                '$3$-cycle is $SU(3)$') not in p14)
+    # ⛭⛭ r7267 ①: AND THE GROUP IS NOW COMPUTED AND NOT ONLY CITED.  `L-129`'s `close` is
+    #   handed the three wall monodromies AND the hinge 3-cycle and returns ORDER 81, with
+    #   determinants running over all three cube roots of unity -- so in U(3) and not SU(3),
+    #   which is the half r6707 had to correct the paper to.  ** Then `L-129`'s `det` cuts the
+    #   determinant-one part: order 27, unimodular, NON-ABELIAN, centre of order 3 -- Delta(27)
+    #   -- and it is exactly the closure of the monodromy RATIOS with the 3-cycle. **
+    #   ⌗ *The reachable converse is dropping the hinge 3-cycle from the generators: `close`
+    #   then returns 27 and the order-81 claim is false.*
+    _hol = _r7267()
+    _Gf = _hol.close(_hol.gens_full)
+    _D1 = _hol.det_one(_Gf)
+    check('⛭⛭ and the ORDER is COMPUTED through `L-129`\'s own `close`: the three wall monodromies '
+          'with the hinge $3$-cycle close to 81 elements whose determinants run over all three '
+          'cube roots of unity -- in $U(3)$ and not $SU(3)$ -- while without the $3$-cycle they '
+          'close to 27',
+          len(_Gf) == 81 and len(_hol.dets(_Gf)) == 3
+          and len(_hol.close(_hol.gamma)) == 27)
+    check('⛭⛭ and the DETERMINANT-ONE PART is COMPUTED through `L-129`\'s own `det`: order 27, '
+          'unimodular, non-abelian, centre of order 3 -- $\\Delta(27)$ -- and equal to the closure '
+          'of the monodromy RATIOS with the $3$-cycle',
+          len(_D1) == 27 and _hol.dets(_D1) == ['1']
+          and not _hol.is_abelian(_D1)
+          and len(_hol.centre(_D1)) == 3
+          and set(_D1) == set(_hol.close(_hol.gens_su)))
     # ⛔⛭ RE-CUT r7258+60, on r7255's order ① -- row owed at r7256 because EVERY occurrence of the span
     #   is CLIPPED MID-WORD: the paper reads `... is the branching rather than any bundle of the
     #   substrate` and the key stopped inside `branching`.  *So the key was a character window and the

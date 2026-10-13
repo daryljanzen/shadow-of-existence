@@ -63,6 +63,24 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+# ⛭⛭ r7267 ①: THE LOADERS FOR THE COMPUTED HALVES OF THE PINS BELOW -- BOTH GAPS WERE `INPUTS`.
+#   `r7261`'s backlog named `L-006w`'s `twoM` for this receipt's parity row and `L-129`'s
+#   `close` and `det` for its two group rows.  ** Neither module can be imported: both are
+#   SCRIPTS that print their own report, and `L-129` runs minutes of sympy to do it. **
+#   `graft.py` takes each `def` plus the transitive closure of what it reads, over the AST, and
+#   runs nothing else.  ⇒ ** The pins STAY -- they are the citations.  These verify them. **
+def _r7267(which):
+    """`L-006w`'s `twoM` or `L-129`'s group functions, grafted, at this receipt's inputs."""
+    if not hasattr(_r7267, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import holonomy
+        import parity
+        _r7267.v = {'parity': parity.at_inputs(), 'holonomy': holonomy.at_inputs()}
+    return _r7267.v[which]
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -100,6 +118,16 @@ def main():
     check('⓶ CLAUSE ONE answered: "The mass function is odd in the signed offset exactly when $D$ is '
           'even"',
           'The mass function is odd in the signed offset exactly when $D$ is even' in p14)
+    # ⛭⛭ r7267 ①: AND CLAUSE ONE IS NOW COMPUTED.  `L-006w`'s `twoM` returns
+    #   r_0**(D-3) - r_0**(D-1), so r_0 -> -r_0 multiplies it by (-1)**(D-1): odd EXACTLY when
+    #   D is even, asked here at D = 4..9.  ** `L-006w` calls its own function at three values
+    #   and prints the monomials; the substitution this clause is about was never made. **
+    #   The reachable converse is the sentence with `odd` for `even`, on which this is false.
+    check('⛭⛭ and CLAUSE ONE is COMPUTED through `L-006w`\'s own `twoM`: its R-parity at D = 4..9 '
+          'is odd exactly on the even D',
+          all(_r7267('parity').mass_is_R_odd(_D) == (_D % 2 == 0) for _D in range(4, 10))
+          and not all(_r7267('parity').mass_is_R_odd(_D) == (_D % 2 == 1)
+                      for _D in range(4, 10)))
     check('and PO-3 carries it', 'odd in the signed offset' in po3)
 
     # ⓶ the bridge
@@ -120,6 +148,30 @@ def main():
                'is $SU(3)$ itself') in p14
           and ('the smallest connected group containing the three wall monodromies and the hinge '
                '$3$-cycle is $SU(3)$') not in p14)
+    # ⛭⛭ r7267 ①: AND THE GROUP IS NOW COMPUTED AND NOT ONLY CITED.  `L-129`'s `close` is
+    #   handed the three wall monodromies AND the hinge 3-cycle and returns ORDER 81, with
+    #   determinants running over all three cube roots of unity -- so in U(3) and not SU(3),
+    #   which is the half r6707 had to correct the paper to.  ** Then `L-129`'s `det` cuts the
+    #   determinant-one part: order 27, unimodular, NON-ABELIAN, centre of order 3 -- Delta(27)
+    #   -- and it is exactly the closure of the monodromy RATIOS with the 3-cycle. **
+    #   ⌗ *The reachable converse is dropping the hinge 3-cycle from the generators: `close`
+    #   then returns 27 and the order-81 claim is false.*
+    _hol = _r7267('holonomy')
+    _Gf = _hol.close(_hol.gens_full)
+    _D1 = _hol.det_one(_Gf)
+    check('⛭⛭ and the ORDER is COMPUTED through `L-129`\'s own `close`: the three wall monodromies '
+          'with the hinge $3$-cycle close to 81 elements whose determinants run over all three '
+          'cube roots of unity -- in $U(3)$ and not $SU(3)$ -- while without the $3$-cycle they '
+          'close to 27',
+          len(_Gf) == 81 and len(_hol.dets(_Gf)) == 3
+          and len(_hol.close(_hol.gamma)) == 27)
+    check('⛭⛭ and the DETERMINANT-ONE PART is COMPUTED through `L-129`\'s own `det`: order 27, '
+          'unimodular, non-abelian, centre of order 3 -- $\\Delta(27)$ -- and equal to the closure '
+          'of the monodromy RATIOS with the $3$-cycle',
+          len(_D1) == 27 and _hol.dets(_D1) == ['1']
+          and not _hol.is_abelian(_D1)
+          and len(_hol.centre(_D1)) == 3
+          and set(_D1) == set(_hol.close(_hol.gens_su)))
     check('and PO-4 carries THAT', 'wall monodromies with the hinge' in po4
           or 'three wall monodromies and the hinge' in po4)
 
