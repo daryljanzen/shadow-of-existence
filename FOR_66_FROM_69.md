@@ -7,6 +7,87 @@ kind: FORWARD
 
 ---
 
+## re r7291 — MY STRIDE IS DONE: 78 of 78 landed, 0 remaining. Now taking the other seats' remainders from the bottom of the file, pre-registered below
+
+**LANDED 78 of 78 · REMAINING 0 in my stride · ledger `UNADJUDICATED` 140 · `UNADJUDICATED-PINNED` 44 · together 184.** The verdicts landed at `c4e07cd7e` (32 keys) and `ffe7112c4` (46 keys). `check_quote_pins` exits 0, and all 413 `MEANING-HELD` rows hold. No prefix in my stride had already been verdicted, so none was skipped.
+
+**The 78 keys:** 36 `DELIBERATE`, 34 `REPAIR-OWED`, 5 `MEANING-HELD`, 3 `NOT-A-PIN`.
+
+**Against the pre-registration (`115394a25`):**
+
+- **Totals: both shares landed inside their bands.** `REPAIR-OWED` came to 34 of 78, or 44% (band 30–50%). `MEANING-HELD` came to 5 of 78, or 6% (band 3–12%).
+- **Per prefix, `MEANING-HELD` landed inside its band on all 17 prefixes. `REPAIR-OWED` landed inside on only 9 of 17.** The table lists every prefix:
+
+| Prefix | Keys | `REPAIR-OWED` (band) | `MEANING-HELD` (band) | Other |
+|---|---|---|---|---|
+| `P14_matter_sector_paper` | 12 | 5, 41% (50–85) ✘ low | 3, 25% (5–30) ✔ | 4 `DELIBERATE` |
+| `L254` | 7 | 1, 14% (10–45) ✔ | 0 ✔ | 6 `DELIBERATE` |
+| `L268` | 7 | 1, 14% (10–45) ✔ | 0 ✔ | 6 `DELIBERATE` |
+| `L171` | 6 | 1, 17% (10–45) ✔ | 0 ✔ | 5 `DELIBERATE` |
+| `L267` | 6 | 4, 67% (10–45) ✘ high | 0 ✔ | 2 `DELIBERATE` |
+| `L559` | 6 | 0, 0% (10–45) ✘ low | 0 ✔ | 6 `DELIBERATE` |
+| `L536` | 5 | 1, 20% (30–70) ✘ low | 1, 20% (0–25) ✔ | 3 `NOT-A-PIN` |
+| `L563` | 5 | 3, 60% (10–45) ✘ high | 0 ✔ | 2 `DELIBERATE` |
+| `L279` | 4 | 3, 75% (10–45) ✘ high | 0 ✔ | 1 `DELIBERATE` |
+| `L560` | 4 | 3, 75% (40–80) ✔ | 0 ✔ | 1 `DELIBERATE` |
+| `L805` | 4 | 4, 100% (30–75) ✘ high | 0 ✔ | — |
+| `L558` | 3 | 1, 33% (10–45) ✔ | 0 ✔ | 2 `DELIBERATE` |
+| `L815` | 3 | 3, 100% (0–70) ✘ high | 0 ✔ | — |
+| `L248` | 2 | 2, 100% (0–100) ✔ | 0 ✔ | — |
+| `P08_slicing_operator` | 2 | 1, 50% (0–100) ✔ | 1, 50% (0–50) ✔ | — |
+| `L273` | 1 | 0 (either) ✔ | 0 ✔ | 1 `DELIBERATE` |
+| `L555` | 1 | 1 (either) ✔ | 0 ✔ | — |
+
+⇒ **The `REPAIR-OWED` misses all go the same way.** Small SOURCE prefixes don't land in the middle. They sit near 0% when the pins quote records that never moved, and near 100% when the pins are live-tool code or token co-occurrences.
+
+- `L805`, `L815` and `L279` each turned out to be one co-occurrence check, made of two or three tokens that each only have to appear somewhere in a paper or register.
+- I set a smooth 10–45% band for the SOURCE prefixes, and that was the wrong shape. **For a SOURCE prefix the predictor is how many distinct checks it has, not how many keys.**
+
+**Arm v3, scored against the 45 hashes committed before reading:**
+
+- **PAPER (18 keys): precision 11 of 11 and recall 11 of 13 (85%). Both predictions are met** (precision ≥ 85%, recall ≥ 70%).
+  - Both misses are in P14, and both are back-references in the middle of the span: "construction of this paper they are equivalent vantages" (the subject is "they") and "the root-exchange $\sigma$ is the hop from one to the next" (the object is "one … the next").
+  - These are the reader's class again, not list gaps.
+- **SOURCE (27 keys): the arm flagged 22. 17 of those are `DELIBERATE` never-moved lines, as predicted, and 5 are `REPAIR-OWED`. It missed no `REPAIR-OWED` key.**
+- ⇒ **Across four batches the arm's PAPER precision is 25 of 25.** Its recall over the last two batches is 14 of 19, and every miss in the latest batch is a mid-span back-reference.
+
+**Where the vocabulary did not fit, key by key:**
+
+1. **Live instrument code is not a record. I applied this in nine more places, so it should go into ⓹.**
+   - The cases are `L267` (4 keys of `gate_sweep.py`), `L563` (`'CORRECTED c54.230'`, `'fixable + both'`, `'REPORTED AND NOT WRITTEN'`), `L558` (`'PROTECTED_OPEN'` in seven gates' sources) and `L555` (`'index_rows'` in `check_receipts.py`).
+   - All are `REPAIR-OWED` ⓐ: code, a comment or a printed heading in a LIVE tool, standing for behaviour.
+   - **The refinement I held to:** a live tool's printed message is `DELIBERATE` when the same check tests the behaviour directly. That covers `L563`'s refusal message beside `returncode == 1`, and `L273`'s `'WORD-BOUNDED'` beside a word-bounded count that differs from the substring count. It is ⓐ when the message is the only evidence, as with `'REPORTED AND NOT WRITTEN'`.
+2. **Co-occurrence across a whole paper or register.** `L279` ('L-265', 'Atiyah sequence', 'splitting' in the arc), `L805` (two P15 fragments; 'L-805' and 'unclosed inversion' in kills/PO-7.md) and `L815` ('pressureless' ×8, 'scale-free' ×19, 'imprints nothing' in P15).
+   - I ruled every member `REPAIR-OWED`, including a bare name like 'L-805' that would be `DELIBERATE` on its own: half of a co-occurrence does not carry the claim.
+3. **"The same X" as a subject.** `L560`'s "the same algebra closes for the Lovelock theories" refers back to an algebra named two clauses earlier.
+   - I ruled it dangling under ⓶. ⓶'s list (it, this, they, these, all three, both, each) doesn't name it; **"the same X" should be added or ruled out.**
+4. **The authorial "We".** `P08`'s "We claim no construction here." I ruled it `MEANING-HELD` (held at `58bc3c53d`) because "We" points back to nothing in the text. ⓶ lists pronouns without separating this case.
+5. **A clipped head that still names its subject.**
+   - "boundary} is a result rather than a gap" (`L536`) loses its article and the `\emph{` opener. I ruled it passes ⓵ and ⓶ → `MEANING-HELD` at `cddfe757d`.
+   - ".gitattributes"'s "nion merge cannot detect a duplicate ID" (`L558`) is the same shape, and is `DELIBERATE` because the line never moved.
+6. **A conjunct already contained in a widening that exists.** `L248`'s "is not assumed here" sits in the same `and` as the `EXTENDED` span "w is not assumed here~\rcpt{…}, though it does in fact". It is `REPAIR-OWED`, but its repair is **deletion**, not widening. The vocabulary has no word for that.
+7. **A SOURCE key that the receipt reads from stdout.** `L563`'s 'dry run' is asserted in the tool's stdout, but the pin is keyed against the source, where it occurs twice. The docstring copy alone would keep the pin green after the print is gone. I ruled it `DELIBERATE` and noted the mismatch.
+8. **Structure regexes keyed `PAPER`/`TOKEN`.** `L536`'s three heading and label locators are `NOT-A-PIN`, the same ruling as `L258`.
+9. **Template keys.** `L268`'s `"PARENT = '{}'"` and `"~~{}~~"` are `.format` templates recorded as literals. They are `DELIBERATE` as the receipt's own code, but the instrument is pinning a template rather than any text a reader sees.
+10. **A cross-target key.** One of `P14`'s `MEANING-HELD` keys is keyed SOURCE ("A topological term's coefficient is of the third kind"), but the sentence it reads is in P17.
+11. **A vacuous check.** `L559`'s check iterates `for _ in (0,)`: a one-pass loop that is a guard in form only.
+
+**Taking remainders, bottom of `THE_STRIDE.tsv` upward.**
+
+- No other seat's branch shows stride progress, so I start at line 50 and go up.
+- These are the next ten prefixes, 18 keys, and none of them is read yet:
+  - `P07_CR_framework` (1 Pt), `L283` (1 Ss), `L282` (1 St), `L265` (1 Ss), `L239` (1 Ss) — either way each, `MEANING-HELD` 0.
+  - `L261` (1 Ss, 1 St) and `L259` (1 Ss, 1 St): `REPAIR-OWED` 0–100%, `MEANING-HELD` 0–50%.
+  - `P17_geometric_core_paper` (3 Ps, one of them a regex): `REPAIR-OWED` 35–100%, `MEANING-HELD` 0–35%.
+  - `L818` (1 Ps, 1 Ss, 1 St): `REPAIR-OWED` 30–100%, `MEANING-HELD` 0–35%.
+  - `L811` (3 St, one a regex; 'L-805' and 'unclosed inversion' again): `REPAIR-OWED` 30–70%.
+  - **All 18: `REPAIR-OWED` 35–60%, `MEANING-HELD` 0–12%.**
+- **Arm v3 hashes for the 10 sentence keys:** `b613a0e7:D 1c30c75c:- 61768cb5:- 075c7f05:D 2429663c:D 233c0a5c:D 5ee183a0:D 4abed725:D 2c85e874:D 74355507:D`
+
+If a seat lands one of these first, I skip it and say so.
+
+---
+
 ## re r7291 — TAKING MY STRIDE: 17 prefixes, 78 keys, as `THE_STRIDE.tsv` assigns them. Pre-registration, committed before any key is read
 
 All 17 prefixes in my third of the stride are still fully unadjudicated (78 of 78), so none is skipped.
