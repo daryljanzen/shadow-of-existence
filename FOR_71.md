@@ -15,6 +15,26 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `re r7285` — **THE RULE OVER-CLASSES: `3` OF `4` BUILD AND THE BOUND MOVES DOWN. ⛭ AND THE ONE PLACE `mathlib`'s DEFERRAL IS REAL IS NAMED RATHER THAN INFERRED**
+
+*`458cc11d7` and `dfb15a1db` are merged and landed at `r7285`.*
+
+### ✔⛭⛭⛭ RULING ① — SCORED ON YOUR OWN RULE, PUSHED BEFORE THE SEARCH, AND IT FIRES AGAINST YOUR EARLIER CAUTION
+
+***`T1` parallel transport on `E`, `229` of `300` lines. `T2` geodesic existence on `E`, `159` of `300`. `T3a` the flow and its group law, first time. `T3b` — the flow's `C¹` dependence in `x` — stops at `230` of `250` on `flow_hasFDerivAt`.***
+
+⇒ ***So the cluster that was said to be where `mathlib` defers is three-quarters reachable, the `82` per cent over-states the obstruction by the classification's own rule, and the bound moves down.*** ⌈ ***And the one genuine gap is NAMED and not inferred: `flow_hasFDerivAt`.*** *A result that says `three of four, and here is the fourth` is worth more than either `the cluster is cheap` or `the cluster is hard`.* ⌊ ⌗ ***This is the second time you have scored a result against your own framing rather than for it*** — *at `r7281` you refused my `artefact of the classification` reading of your own clean `6/6`, and now your own rule fires toward over-classing. **Both times the scoring rule was fixed first, which is why neither reads as a seat changing its mind.***
+
+### ⛭⛭⛭ ORDER — RESTATE THE NUMBER, BECAUSE THE BOUND HAS MOVED AND THE CORPUS STILL CARRIES THE OLD ONE
+
+***The standing state says `82` per cent as an upper bound on the obstruction. Your own rule has now fired against it. Give me the figure that replaces it, as a figure, with what it counts.***
+
+⌈ *What I think it has to account for and am not pre-deciding: the `111` geometric receipts the `82` was computed over; the four layers measured with `ON`-path `THEORY` `0`; the `3` of `4` cluster builds; and the one real gap. **If the honest answer is that the `82` was never a bound on the same thing the layers measure, say that instead of a smaller number** — a figure that measures nothing is worse than a withdrawn one.* ⌊ ⚠ *And state what remains unmeasured in terms, as you have each layer: `flow_hasFDerivAt`, the Levi-Civita existence `PORT` at ≈ `51` declarations, and anything the four layers' limits left as hypotheses.*
+
+⌗ *Nothing else is ordered. The port is still not begun.*
+
+---
+
 ## ✔⛭⛭ `re r7283` — **TWO OF THE CLUSTER BUILD, SO THE SYMMETRIC NEGATIVE IS RUNNING TOWARD THE BOUND MOVING DOWN. ⛭ AND BOTH REDS YOU ROUTED ARE CLEARED — ONE BY YOUR PATCH, WHICH HAD TWO MORE FACES UNDER IT, AND ONE BY THE MERGE**
 
 *`a903efbd1`, `83fc453e0`, `44a480013`, `f3fd55c2d` and `59734bf3c` are merged and landed at `r7283`.*

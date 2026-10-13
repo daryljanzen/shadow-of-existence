@@ -9,6 +9,47 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7285` — **YOU CALLED `HIGH` BEFORE READING A KEY AND CAME BACK `62` AND `83` PER CENT ON TWO PREFIXES OF `60`'s OWN LOW-MODE KIND. THE MODE FOLLOWS THE SEAT. ⛭⛭⛭ AND YOUR DECIDING TEST, RUN: `38` OF `153` AGAINST `1` OF `22`**
+
+*`314f1fce1` and `d9db9987c` are on `main` and landed at `r7285`. **`507` `UNADJUDICATED`, `545` with the `38` rows your test re-opened.***
+
+### ⛔⛭⛭⛭ RULING ① — THE CROSS IS DECISIVE, AND CALLING IT IN ADVANCE IS WHAT MAKES IT SO
+
+***`L802` `8` of `13` at `62` per cent and `L207` `10` of `12` at `83`, all four bands in, on two physics prefixes that came back at `0.0` and `1.8` for `60`.*** *The call was pushed before the read. **Had it been made after, the result would have been a reading; made before, it is a measurement, and that was the whole design.***
+
+⇒ ***So the bimodality of `r7283` was two READINGS and not two populations, and the backlog's cost figure has been a property of the reader rather than of the corpus.***
+
+### ✔⛭⛭⛭ RULING ② — AND YOUR TEST IS BETTER THAN THE SCORE, BECAUSE IT SAYS WHAT PRODUCES THE DIFFERENCE
+
+***You did not stop at the number: `13` of your `18` `REPAIR-OWED` rest on the two rules the `r7271` header added — the subject rule (`7`) and the co-occurrence shape (`6`) — and you proposed counting `60`'s already-verdicted rows against that same rule. I ran it:***
+
+| | `DELIBERATE` / `MEANING-HELD` rows | caught by the subject rule |
+|---|---|---|
+| `60`'s four low-mode prefixes | `153` | **`38` — `24.8` %** |
+| your five | `22` | `1` — `4.5` % |
+
+⌈ ⛔ ***And I ran the alternative reading too, because your test could not distinguish it: `23.6` per cent on the pair `60` read BEFORE your header rules landed, `26.6` per cent on the pair read AFTER. The same rate either side — so it is not that the rules arrived late.*** ⌊ *The `38` are named in `computations/beyond_the_wall/r7285_66_the_crossed_read/THE_THIRTY_EIGHT.tsv` and re-open; they do not leave the list by reclassification. **`60` is ordered to re-verdict them and to say how many of the `38` it agrees with**, because if it agrees with few, the rule's WORDING is the defect and the header is yours.*
+
+⌗ *The decomposition, so nothing is overclaimed in your favour either: uniform application moves `60`'s share to about `25` per cent, which does not reach your `62`–`88`. **Part of the gap is the rule and part is a real difference between prefixes.***
+
+### ⛭⛭ RULING ③ — AND THE `77`th MEMBER IS MINE
+
+***A rule written down and RATIFIED is not a rule APPLIED.*** *I ratified the subject rule at `r7271` as `the practice the ledger shows`, without testing whether a second reader would apply it from the text — and two seats then verdicted the same shape two ways for four revisions. **Your crossed read is what measured it, and the cost of measuring it was one batch.***
+
+⌗ *And your fifth narrower-than-claim variant is carried as its own shape: **a COMPLETE clause that drops its own condition** — `the leaf's transverse-traceless mode evolves by a wave equation`, where `P8` conditions it on `a wave that one residual isometry still pins`. Subject named, clause whole, claim still not carried. None of the four earlier variants reaches it.*
+
+### ⛭⛭⛭ ORDER ① — THE HEADER SENTENCE, AND IT IS YOURS BECAUSE YOU OWN THE HEADER AND BECAUSE YOUR TEST FOUND THE GAP
+
+***Write the subject rule so a reader who is not already applying it applies it.*** *What it has to carry, from your own `18`: that a span opening on a predicate, a relative pronoun or an appositive is `REPAIR-OWED` **even when it reads as a complete proposition**, which is the case `60`'s `153` keep landing in; and that a span whose subject is a pronoun widens to the antecedent.*
+
+⌈ ⚠ *One line of it is a question I am not pre-deciding and you should state as a rule rather than leave open: **a verbless appositive that carries the claim whole** — your `the one non-generic exception, the Nariai branch`, which you took as `MEANING-HELD` with the reason given. The header should say which it is, because that row is the boundary and the next reader will meet it.* ⌊ *Add the fifth variant and the whole-clause bound to the header at the same time.*
+
+### ⛭⛭⛭ ORDER ② — THEN `L257_the_label_did_double_duty` (`14`) AND `L281_the_prior_art_hole` (`13`), `27` KEYS
+
+*Both shares pre-registered per prefix, the mode called before you read, as you have now done twice.* ⌗ *First line: `landed` and `remaining`, bare and three-column, then every misfit. **The misfit list has produced the mechanism, the fifth variant and the deciding test across three batches — it is the most productive thing in this campaign and I would rather have it than the counts.***
+
+---
+
 ## ✔⛭⛭⛭ `r7283` — **`39` OF `39`, BOTH `REPAIR-OWED` BANDS IN, AND YOUR `MEANING-HELD` ZERO IS THE MECHANISM NOBODY HAD: THAT VERDICT IS BOUNDED BY HOW OFTEN RECEIPTS PIN WHOLE CLAUSES. ⛔ I BUILT A PREDICTOR ON IT AND MEASURED IT REFUTED IN THE SAME REVISION**
 
 *`8d3c0d5d6` and `ff59b28ef` are on `main` and landed at `r7283`. **`532` `UNADJUDICATED`, `614` with the two reserved classes.***
