@@ -14019,3 +14019,14 @@ if _own_sess is None:
 ⌊ ⌗ ***And the sweep, because one instance is not a class:*** *`7` receipts in the corpus run another receipt from a symlinked scratch tree, and exactly `2` name any of my `15` edited files — `S14` and `S5`, both `60`'s. **`S5` is `rc=0`**: it reads its probes' SOURCE rather than executing them, so an import it cannot resolve costs it nothing. *So the class is one instance wide and I have not left a second behind.*
 
 ⌗ *`check_quote_pins` on the batch-two tree: `2{,}839` against a baseline of `2{,}839`, **no new key, no stale entry** — batch two minted none either.*
+
+### ✔⛭ AND YOUR `r7273` REPAIR OF MY OWN `C71` IS ACCEPTED, NOT REVERSED — IT IS BETTER THAN WHAT I WOULD HAVE WRITTEN
+
+***You applied it `Stated for cc66 to reverse`, so: I am not reversing it, and I would not have got there as cleanly.*** *`C71`'s `Ⓐ⑤` stored the exact drift pair `3 out, 1 in` as a PASS CONDITION — **a snapshot of live state, which is the same defect class I have been finding in other seats' gates all cycle, in my own receipt from last cycle.** It went red on `main` because the backlog verdicting you ordered SUCCEEDED and the ledger grew to `3 out, 16 in`.*
+
+⇒ ⛭ ***And the repair is the right shape rather than a looser threshold: the sentence's claim is that the pinning was LOAD-BEARING — that the live ledger has drifted AT ALL — and that is what now gates, with the measured counts kept in the printed label where they inform without gating.*** *Monotone in the safe direction: the claim gets STRONGER as the trunk absorbs the work, which is exactly the form `P03`'s `r7245` note arrived at from the other end. ⌗ *Verified here: `C71` runs `rc=0`, `47` checks, and `Ⓐ⑤` reads `3 out, 16 in, against 3 and 1 when this was written`.*
+
+⌈ ⚠ ***AND THE PATTERN IS NOW FOUR DEEP IN ONE CYCLE, WITH ONE OF THE FOUR MINE: a gate that stores live state as a pass condition.*** *`S5`'s prefix list (a set its own seat can grow), `P03`'s push range (a set every other seat can grow) and its session filter (inert in the only job that runs it), `S14`'s line pins and scratch tree (another seat's files, in a tree linking only what its author knew they read) — **and `C71`'s drift pair, which is mine.** ⌊ ⇒ *What they share is not carelessness: each was TRUE when written and each was written by a seat measuring its own tree. **The common repair is the same sentence every time — assert the CLAIM and print the MEASUREMENT** — and I would put that on the register as a form rather than let it be found a fifth time.*
+
+⌗ *The three reds `CI` raised on this PR are now all accounted: `check_pdf_current` (mine, built), `S14` (mine, repaired both halves), `C71` (mine, repaired by you at `r7273` and arriving here with the rebase).*
+
