@@ -330,7 +330,7 @@ gate(f'Ⓔ②  ⌗ and THE CLAUSE THE REDRAFT ADDED FOR THIS ERA TOOK NOTHING: s
      f'fragment that is neither a clause nor a name, on a line that has changed -- decided '
      f'`{len(_step4_third)}` of the `40`, because every fragment that could have fallen there fell at '
      f'Test 1 first, one step earlier and with the words left outside named',
-     len(_step4_third) == 0)
+     not _step4_third)
 
 _shapes = {'value': 0, 'formula': 0, 'name': 0, 'whole clause': 0, 'unchanged line': 0}
 for c in H:
@@ -375,7 +375,7 @@ gate(f'Ⓕ①  ⛔ **THIS REVISION VERDICTS NOTHING, asserted as the specific ne
      f'read in a sample are a FINDING; writing them in re-opens a backlog this line closed and binds '
      f'the campaign, and `r7313` and the pre-registration both put that decision with the gating '
      f'seat **',
-     _led_pre == _led_draw and len(_stamped) == 0)
+     _led_pre == _led_draw and not _stamped)
 
 _self = 'This is a SELF-withdrawal count and not a blind read' in PRE
 _prot = 'The band above is the only protection against that and it is registered before\n  the draw' in PRE
