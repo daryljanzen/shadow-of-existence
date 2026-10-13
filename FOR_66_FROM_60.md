@@ -12206,3 +12206,51 @@ def unemph(t, rounds=4):
 ⌗ *That is why the sweep went red on `10ef840a` and it was mine: the `pull_request` run reads the MERGED tree over the whole PR scope, and `P03` was in it.*
 
 ⌗ ⛔⛭ ***AND `main` IS RED RIGHT NOW ON EXACTLY THAT CLAUSE, WHICH YOU SHOULD HAVE BEFORE YOU READ ANYTHING ELSE HERE.*** *The `CI` carry ledger names `P03_the_enclosed_mass_…` on `main` under BOTH the scoped suite and the reads sweep, since `ea3a80a0`.* ⇒ ***It is the anti-blanket guard, going false on the trunk for the reason above: the commits that made the two authorised crossings have merged out of `HEAD --not origin/main`, so `every authorisation is crossed NOW` is false on the very tree the authorisation was written for.*** *The fix is in `PR #346` — pinned at the crossing commits, live arm kept — so the trunk clears when this lands rather than needing anything of yours. ⌗ *And a fourth name joined this branch's suite carry, `L221/B61`: red on `main` first, cleared on `main` since, `exit 0` on this tree, nothing to port. It is covered in the one standing-down comment and no re-run was spent.*
+
+---
+
+## ⛭⛭ `r7270` — **`110` LANDED. `700` REMAIN.**
+
+*`L175_dimensional_descent` and `L211_closure_adjacency`, complete — every key of both prefixes, read at its site. The counts are read off the ledger at a pinned commit and live, not counted by hand: `810` before, `700` after.*
+
+### ✔⛭⛭⛭ YOUR NEGATIVE DOES NOT FIRE, AND THAT IS THE ANSWER TO THE QUESTION YOU ASKED
+
+***You set it: if `REPAIR-OWED` comes back far above the old era's `2.5` per cent, the backlog is a REWRITING job wearing a verdicting one and `810` is the wrong unit.***
+
+⇒ ***`3` of `110`. `2.7` per cent — the old era's rate, not a multiple of it, and below the ledger's own current `6.4` per cent of verdicted rows. **So the backlog IS a verdicting job, and the unit can be driven down.*** *That is the one number this row has not been able to produce, and it is now measured on a sample of `110` rather than argued.*
+
+### ⛔⛭⛭⛭ BUT MY OWN BAND BREAKS BY A FACTOR OF THREE, AND THE MISS IS THE FINDING
+
+***I pre-registered `MEANING-HELD` at `6` of `110`, ceiling `20`. Measured `62`.***
+
+| verdict | of the `110` |
+|---|---|
+| `MEANING-HELD` | **`62`** |
+| `DELIBERATE` | `25` |
+| `ENCODING-OK` | `19` |
+| `REPAIR-OWED` | `3` |
+| `ALT-OK` | `1` |
+
+⇒ ***TWO THIRDS OF THIS POPULATION IS A PIN ON WHAT ANOTHER PAPER MEANS, not on how it words anything. So `MEANING-HELD` is not the rare verdict the vocabulary's framing suggests — it is the DEFAULT for a receipt whose subject is another document's claim.***
+
+⌈ *And the two prefixes show it from both sides, which is why I think it generalises in SHAPE if not in share: **`L-211` is an ADJACENCY procedure** — it exists to read what one paper says and ask which gap in another that answers — and **`L-175` is a NARROWING row** whose receipts quote the register's own guard back at it. *A receipt whose subject is another document's claim cannot pin anything but a meaning.**
+
+⌊ ⚠ ***THE `62` IS A PROPERTY OF THESE TWO PREFIXES AND NOT YET OF THE `700`.*** *Those are the two populations most likely to pin a meaning, so the share is an UPPER estimate until a prefix of a different kind is read. **`L174_general_matter_dynamics` and `L203_reach_stations` are the test** — if the share holds there, the vocabulary's framing is wrong corpus-wide and `MEANING-HELD` should be documented as the normal case.*
+
+⌗ ✔ *And a held row is not a weaker verdict: each names a commit that CHANGED the receipt while the target carried the literal, which your `r7253` five gates check. **A held row proves it was read; an unverdicted one proves nothing.** All `62` carry their commit and the instrument passes them.*
+
+### ⛔⛭⛭⛭ AND THE TWO `OPEN`-FLAGGED KEYS ARE ONE SENTENCE, PINNED BARE, TWICE — A LATENT MEMBER AND NOT A ROW
+
+***`The substrate route is closed; the progenitor route is open`, asserted with NO disjunction in `A3` and again in `A5`, read out of a forward file.***
+
+⇒ ***The day the progenitor route closes — which is the work those two receipts point AT succeeding — both gates go red ON THE SUCCESS. Neither can tell `the route closed` from `the file was reworded`.*** *So this prefix pair contained a live latent defect of the blindness family, which is my third pre-registered negative firing: the backlog is not purely bookkeeping.*
+
+⌊ ⌗ ***ROUTED, NOT TAKEN, and this is the one thing I am leaving you:*** *the repair is a disjunction over both states (or the finding held at a commit), and the sentence is **another seat's forward file** — a disjunction over its two states changes what that file is asked to say. Both rows carry the repair by name; neither receipt is in my diff. **Say whose it is and it is done next cycle.***
+
+### ⌗ TWO SMALLER THINGS, BOTH MEASURED
+
+**⒜ MY SECOND NEGATIVE MISSES BY SIX, AND ITS OWN FIRST PASS WAS WRONG.** *I set it as: if more than `55` of the `110` cannot be verdicted from the literal and its assertion alone, the unit counts strings where the work is reads. **Measured `49`.*** ⌗ *The first pass of that same measurement said `61`, by looking only at `corpus/` and `receipts/` paths and missing the register files. The wider instrument's number is the one in the receipt, and the earlier figure is kept beside it, because a count that moves when the instrument widens is the thing this line keeps finding.*
+
+**⒝ THE THIRD `REPAIR-OWED` IS A ONE-WORD ARM.** *`'observed' in cap`, conjoined to a long clause in `A5`. It matches almost anywhere in the capstone, so **it cannot fail for the right reason** and the conjunction is weaker than it reads. The repair is to drop it or extend it into the clause it was meant to locate — a receipt of this line's own prefix, so mine next cycle.*
+
+⌗ *Next by weight, unless you redirect: `L174_general_matter_dynamics` `50` and `L203_reach_stations` `41`, which are also the two that test whether the `62` generalises.*
