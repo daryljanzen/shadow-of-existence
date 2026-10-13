@@ -516,6 +516,180 @@ theorem scal_conf (a : ℝ → ℝ) (p : ℝ × ℝ) (ha : a p.1 ≠ 0) :
 
 end Instance
 
+/-! ## `r7289`, Probe F1 — the Einstein tensor and the field equations, over a fibre
+
+The trace of a bilinear form against `g` generalises K3's `scal`. -/
+
+section Fields
+
+variable {V : Type*} [AddCommGroup V] [Module ℝ V] [FiniteDimensional ℝ V]
+
+/-- The `g`-trace of a bilinear form: `tr (g⁻¹ ∘ H)`. -/
+noncomputable def trG (H : V →ₗ[ℝ] V →ₗ[ℝ] ℝ) (g : LinearMap.BilinForm ℝ V) (hg : g.Nondegenerate) : ℝ :=
+  LinearMap.trace ℝ V ((g.toDual hg).symm.toLinearMap ∘ₗ H)
+
+theorem trG_eq_sum {ι : Type*} [Fintype ι] [DecidableEq ι] (H : V →ₗ[ℝ] V →ₗ[ℝ] ℝ)
+    (g : LinearMap.BilinForm ℝ V) (hg : g.Nondegenerate) (b : Module.Basis ι ℝ V) :
+    trG H g hg = ∑ i, H (g.dualBasis hg b i) (b i) := by
+  rw [trG, LinearMap.trace_eq_matrix_trace ℝ (g.dualBasis hg b), Matrix.trace]
+  refine Finset.sum_congr rfl fun i _ => ?_
+  rw [Matrix.diag_apply, LinearMap.toMatrix_apply, LinearMap.BilinForm.dualBasis_repr_apply,
+    LinearMap.comp_apply, LinearEquiv.coe_coe, LinearMap.BilinForm.apply_toDual_symm_apply]
+
+/-- **G4a.** The Einstein tensor `Ein = Ric − ½ R g`. -/
+noncomputable def einstein (R : V →ₗ[ℝ] V →ₗ[ℝ] V →ₗ[ℝ] V) (g : LinearMap.BilinForm ℝ V)
+    (hg : g.Nondegenerate) : V →ₗ[ℝ] V →ₗ[ℝ] ℝ :=
+  ricci R - ((1 / 2 : ℝ) * scal R g hg) • g
+
+/-- **G4a.** Einstein's equations with `Λ`, coupling `κ` (`= 8πG`) and a source `T`: `Ein + Λ g = κ T`. -/
+def FieldEq (R : V →ₗ[ℝ] V →ₗ[ℝ] V →ₗ[ℝ] V) (g : LinearMap.BilinForm ℝ V) (hg : g.Nondegenerate)
+    (Λ κ : ℝ) (T : V →ₗ[ℝ] V →ₗ[ℝ] ℝ) : Prop :=
+  einstein R g hg + Λ • g = κ • T
+
+/-- **G4a.** A perfect fluid with density `ρ`, pressure `p` and velocity `U`: `(ρ + p) U♭ ⊗ U♭ + p g`. -/
+noncomputable def perfectFluid (g : LinearMap.BilinForm ℝ V) (ρ p : ℝ) (U : V) :
+    V →ₗ[ℝ] V →ₗ[ℝ] ℝ :=
+  (ρ + p) • LinearMap.mk₂ ℝ (fun v w => g U v * g U w) (fun _ _ _ => by simp [add_mul])
+    (fun _ _ _ => by simp [mul_assoc]) (fun _ _ _ => by simp [mul_add])
+    (fun _ _ _ => by simp; ring) + p • g
+
+end Fields
+
+/-- **F1, the instance.** In two dimensions the Einstein tensor of `covConf a` vanishes identically. -/
+theorem einstein_conf (a : ℝ → ℝ) (p : ℝ × ℝ) (ha : a p.1 ≠ 0) :
+    einstein (Rconf a p) (gB a p) (gB_nondeg a p ha) = 0 := by
+  refine LinearMap.ext₂ fun u v => ?_
+  rw [einstein, scal_conf a p ha, LinearMap.sub_apply, LinearMap.sub_apply, ricci_conf]
+  simp only [LinearMap.smul_apply, gB, LinearMap.mk₂_apply, smul_eq_mul, LinearMap.zero_apply]
+  field_simp
+  ring
+
+/-! ## `r7289`, Probe F2 — the Hessian and the wave operator, the connection a hypothesis -/
+
+section Wave
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+  {H : Type*} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type*} [TopologicalSpace M] [ChartedSpace H M] [IsManifold I ∞ M]
+
+/-- **G4b.** The Hessian of `f` for a connection `cov`: `Hess f (X, Y) = X(Y f) − (∇_X Y) f`. -/
+noncomputable def hess (cov : CovariantDerivative I E (TangentSpace I : M → Type _)) (f : M → ℝ)
+    (X Y : Π x : M, TangentSpace I x) (x : M) : ℝ :=
+  d% (fun y => d% f y (Y y)) x (X x) - d% f x (cov Y x (X x))
+
+lemma hess_smul_left (cov : CovariantDerivative I E (TangentSpace I : M → Type _)) (f g : M → ℝ)
+    (X Y : Π x : M, TangentSpace I x) (x : M) : hess cov f (g • X) Y x = g x * hess cov f X Y x := by
+  simp only [hess, Pi.smul_apply', map_smul, smul_eq_mul]
+  ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- `Hess f` is `C^∞`-linear in its second slot too. -/
+lemma hess_smul_right (cov : CovariantDerivative I E (TangentSpace I : M → Type _)) {f g : M → ℝ}
+    (hf : CMDiff ∞ f) (hg : CMDiff ∞ g) {X Y : Π x : M, TangentSpace I x} (hY : CMDiff ∞ (T% Y))
+    (x : M) : hess cov f X (g • Y) x = g x * hess cov f X Y x := by
+  have mg : MDiffAt g x := (hg x).mdifferentiableAt (by simp)
+  have mY : MDiffAt (T% Y) x := (hY x).mdifferentiableAt (by simp)
+  have e : (fun y => d% f y ((g • Y) y)) = g * fun y => d% f y (Y y) := by
+    funext y; simp [Pi.smul_apply', map_smul]
+  rw [hess, e, mvfderiv_mul mg (mdiff_df_apply hf hY x),
+    (cov.isCovariantDerivativeOn (s := univ)).leibniz mY mg, hess]
+  simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply,
+    ContinuousLinearMap.smulRight_apply, map_add, map_smul, smul_eq_mul]
+  ring
+
+end Wave
+
+/-- **G4b.** The wave operator over a fibre: the `g`-trace of a Hessian. -/
+noncomputable abbrev box {V : Type*} [AddCommGroup V] [Module ℝ V] [FiniteDimensional ℝ V]
+    (Hs : V →ₗ[ℝ] V →ₗ[ℝ] ℝ) (g : LinearMap.BilinForm ℝ V) (hg : g.Nondegenerate) : ℝ := trG Hs g hg
+
+/-- The Hessian of `f` for `covConf a` at `p`, on constant fields, as a bilinear form. -/
+noncomputable def hessConf (a : ℝ → ℝ) (f : ℝ × ℝ → ℝ) (p : ℝ × ℝ) :
+    (ℝ × ℝ) →ₗ[ℝ] (ℝ × ℝ) →ₗ[ℝ] ℝ :=
+  LinearMap.mk₂ ℝ (fun u v => fderiv ℝ (fderiv ℝ f) p u v - fderiv ℝ f p (Gam a p v u))
+    (fun _ _ _ => by simp; ring) (fun _ _ _ => by simp; ring)
+    (fun _ _ _ => by simp [Gam_add]; ring) (fun _ _ _ => by simp [Gam_smul]; ring)
+
+set_option backward.isDefEq.respectTransparency false in
+/-- `hessConf` IS the Hessian of `f` for `covConf a`, on constant fields. -/
+theorem hessConf_eq (a : ℝ → ℝ) (f : ℝ × ℝ → ℝ) (p u v : ℝ × ℝ) (hf : ContDiff ℝ 2 f) :
+    hessConf a f p u v = hess (covConf a) f (fun _ => u) (fun _ => v) p := by
+  have h1 : DifferentiableAt ℝ (fderiv ℝ f) p :=
+    (hf.fderiv_right (m := 1) (by norm_num)).differentiable (by norm_num) p
+  simp only [hess, mvfderiv_eq_fderiv]
+  show _ = fderiv ℝ (fun y => fderiv ℝ f y v) p u - fderiv ℝ f p (covConf a (fun _ => v) p u)
+  rw [fderiv_clm_apply h1 (differentiableAt_const v), covConf_apply]
+  simp [hessConf]
+
+/-- **F2, the instance.** On `a(η)²(−dη² + dx²)`, `□ f = a⁻² (−f_ηη + f_xx)`: the connection terms cancel. -/
+theorem box_conf (a : ℝ → ℝ) (f : ℝ × ℝ → ℝ) (p : ℝ × ℝ) (ha : a p.1 ≠ 0) :
+    box (hessConf a f p) (gB a p) (gB_nondeg a p ha)
+      = (-(fderiv ℝ (fderiv ℝ f) p (1, 0) (1, 0)) + fderiv ℝ (fderiv ℝ f) p (0, 1) (0, 1))
+        / a p.1 ^ 2 := by
+  rw [box, trG_eq_sum _ _ _ (Module.Basis.finTwoProd ℝ), Fin.sum_univ_two, dual_conf a p ha,
+    dual_conf a p ha]
+  simp only [hessConf, LinearMap.mk₂_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+    Module.Basis.finTwoProd_zero, Module.Basis.finTwoProd_one, Gam_apply, minkForm_apply]
+  have hm : ∀ (c : ℝ) (w : ℝ × ℝ), fderiv ℝ (fderiv ℝ f) p (c • w) = c • fderiv ℝ (fderiv ℝ f) p w :=
+    fun c w => map_smul _ c w
+  rw [show ((-1 / a p.1 ^ 2, 0) : ℝ × ℝ) = (-1 / a p.1 ^ 2) • ((1 : ℝ), (0 : ℝ)) by simp,
+    show ((0, 1 / a p.1 ^ 2) : ℝ × ℝ) = (1 / a p.1 ^ 2) • ((0 : ℝ), (1 : ℝ)) by simp, hm, hm]
+  have hl : ∀ c : ℝ, fderiv ℝ f p (c, 0) = c * fderiv ℝ f p (1, 0) := fun c => by
+    rw [show ((c, 0) : ℝ × ℝ) = c • ((1 : ℝ), (0 : ℝ)) by simp, map_smul, smul_eq_mul]
+  simp
+  rw [hl (phi' a p * (-1 / a p.1 ^ 2)), hl (phi' a p * (a p.1 ^ 2)⁻¹)]
+  field_simp
+  ring
+
+/-! ## `r7289`, Probe F3 — the covariant derivative of a `(0,2)` field, the connection a hypothesis -/
+
+section Tensor2
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+  {H : Type*} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type*} [TopologicalSpace M] [ChartedSpace H M] [IsManifold I ∞ M]
+  (cov : CovariantDerivative I E (TangentSpace I : M → Type _))
+  (T : Π x : M, TangentSpace I x →L[ℝ] TangentSpace I x →L[ℝ] ℝ)
+
+/-- **G4a, G4b.** `∇T (X; Y, Z) = X(T(Y,Z)) − T(∇_X Y, Z) − T(Y, ∇_X Z)`. -/
+noncomputable def covT (X Y Z : Π x : M, TangentSpace I x) (x : M) : ℝ :=
+  d% (fun y => T y (Y y) (Z y)) x (X x) - T x (cov Y x (X x)) (Z x) - T x (Y x) (cov Z x (X x))
+
+lemma covT_smul_X (g : M → ℝ) (X Y Z : Π x : M, TangentSpace I x) (x : M) :
+    covT cov T (g • X) Y Z x = g x * covT cov T X Y Z x := by
+  simp only [covT, Pi.smul_apply', map_smul, ContinuousLinearMap.smul_apply, smul_eq_mul]
+  ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- `C^∞`-linear in `Y`, given that `T(Y, Z)` is differentiable at `x`. -/
+lemma covT_smul_Y {g : M → ℝ} (hg : CMDiff ∞ g) {X Y Z : Π x : M, TangentSpace I x}
+    (hY : CMDiff ∞ (T% Y)) (x : M) (hT : MDiffAt (fun y => T y (Y y) (Z y)) x) :
+    covT cov T X (g • Y) Z x = g x * covT cov T X Y Z x := by
+  have mg : MDiffAt g x := (hg x).mdifferentiableAt (by simp)
+  have e : (fun y => T y ((g • Y) y) (Z y)) = g * fun y => T y (Y y) (Z y) := by
+    funext y; simp [Pi.smul_apply', map_smul]
+  rw [covT, e, mvfderiv_mul mg hT,
+    (cov.isCovariantDerivativeOn (s := univ)).leibniz ((hY x).mdifferentiableAt (by simp)) mg, covT]
+  simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply,
+    ContinuousLinearMap.smulRight_apply, Pi.smul_apply', map_add, map_smul, smul_eq_mul]
+  ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- `C^∞`-linear in `Z`, given that `T(Y, Z)` is differentiable at `x`. -/
+lemma covT_smul_Z {g : M → ℝ} (hg : CMDiff ∞ g) {X Y Z : Π x : M, TangentSpace I x}
+    (hZ : CMDiff ∞ (T% Z)) (x : M) (hT : MDiffAt (fun y => T y (Y y) (Z y)) x) :
+    covT cov T X Y (g • Z) x = g x * covT cov T X Y Z x := by
+  have mg : MDiffAt g x := (hg x).mdifferentiableAt (by simp)
+  have e : (fun y => T y (Y y) ((g • Z) y)) = g * fun y => T y (Y y) (Z y) := by
+    funext y; simp [Pi.smul_apply', map_smul]
+  rw [covT, e, mvfderiv_mul mg hT,
+    (cov.isCovariantDerivativeOn (s := univ)).leibniz ((hZ x).mdifferentiableAt (by simp)) mg, covT]
+  simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply,
+    ContinuousLinearMap.smulRight_apply, Pi.smul_apply', map_add, map_smul, smul_eq_mul]
+  ring
+
+end Tensor2
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -528,3 +702,12 @@ end ShadowProbe
 #print axioms ShadowProbe.curv_conf
 #print axioms ShadowProbe.Rconf_eq_curv
 #print axioms ShadowProbe.scal_conf
+#print axioms ShadowProbe.trG_eq_sum
+#print axioms ShadowProbe.einstein_conf
+#print axioms ShadowProbe.hess_smul_left
+#print axioms ShadowProbe.hess_smul_right
+#print axioms ShadowProbe.hessConf_eq
+#print axioms ShadowProbe.box_conf
+#print axioms ShadowProbe.covT_smul_X
+#print axioms ShadowProbe.covT_smul_Y
+#print axioms ShadowProbe.covT_smul_Z

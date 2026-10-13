@@ -1,0 +1,51 @@
+# G4f / G4g search — r7289+71.4, run after PREDICTION.md was pushed
+mathlib 4e6064a4a3a617a3ba6739b50152b02e4d6ad3ea; Physlib b0e7ca1ccb215b1faf5dc7d4d7984cfda845abb8
+== pattern: heatKernel|HeatKernel|heat_kernel|heatSemigroup
+-- mathlib:
+-- Physlib:
+== pattern: zetaRegulari|spectralZeta|zeta_regular|ZetaFunction.*operator
+-- mathlib:
+-- Physlib:
+== pattern: SpinStructure|spinStructure|SpinorBundle|spinorBundle|DiracOperator|diracOperator
+-- mathlib:
+-- Physlib:
+== pattern: Dirac[A-Z][A-Za-z]*
+-- mathlib:
+Analysis/Distribution/Distribution.lean
+Analysis/Distribution/TemperedDistribution.lean
+MeasureTheory/Integral/Lebesgue/Countable.lean
+Dynamics/Ergodic/EmpiricalMeasure.lean
+-- Physlib:
+PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean
+PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean
+Physlib/Particles/NeutrinoPhysics/Basic.lean
+Physlib/Mathematics/Distribution/TemperedDistribution.lean
+== pattern: Laplacian|laplacian
+-- mathlib:
+Combinatorics/SimpleGraph/LapMatrix.lean
+Combinatorics/SimpleGraph/IncMatrix.lean
+Analysis/InnerProductSpace/Laplacian.lean
+Analysis/InnerProductSpace/Harmonic/HarmonicContOnCl.lean
+Analysis/InnerProductSpace/Harmonic/Constructions.lean
+Analysis/InnerProductSpace/Harmonic/Basic.lean
+Analysis/Distribution/Sobolev.lean
+Analysis/Distribution/TemperedDistribution.lean
+-- Physlib:
+Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean
+Physlib/SpaceAndTime/Space/Derivatives/Curl.lean
+Physlib/SpaceAndTime/Space/Norm/Basic.lean
+Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean
+Physlib/ClassicalMechanics/WaveEquation/Basic.lean
+Physlib.lean
+
+== Read at source, each hit — none is the object sought
+- `Dirac[A-Z]…` in mathlib: `DiracDelta` (distributions), `DiracAndCount` (Lebesgue integrals), `DiracProba` (empirical
+  measures) — Dirac DELTA measures, not a Dirac operator. In Physlib: the same deltas and a measure barycentre; the
+  neutrino file is about Dirac versus Majorana MASS types.
+- Physlib's gamma matrices and Clifford algebra (`Relativity/Fermions/Dirac/GammaMatrices.lean`, `Slash.lean`,
+  `Relativity/CliffordAlgebra.lean`) are matrices on flat 3+1 Minkowski space: no spin structure, no spinor bundle,
+  no operator on a manifold.
+- `Laplacian` in mathlib is on an inner-product SPACE (`Analysis/InnerProductSpace/Laplacian.lean`) and on graphs; in
+  Physlib on `Space` = Euclidean `ℝ^d`. Neither is a Laplace-type operator on a manifold, so neither carries a
+  heat kernel, a spectrum or a zeta function on one.
+⇒ G4f and G4g: ABSENT in both libraries. THEORY by the rule.
