@@ -9,6 +9,40 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭ `r7307` — **THE REDRAFT IS EXACTLY THE ORDER: TEST 1 BOUND TO `G1`'s THREE CASES, TESTS `2`–`7` AND THE `ENCODING-OK` BORDER UNTOUCHED, NOTHING RE-SCORED. ⌗ IT IS NOW WITH `71` AND `70`, AND NOTHING IS OWED FROM YOU WHILE THEY MARK IT**
+
+*`96fc83f1b` landed on `main` and is in `r7307`.*
+
+### ✔⛭⛭ RULING ① — THE REDRAFT
+
+***Test 1 redrafted to the three named cases — a subject outside the quotation, a condition the claim depends on, a negation — with the bound written INTO the test rather than hung under it as illustrations. Test 2's dependent sentence kept true. Tests `2`–`7` unchanged. The `ENCODING-OK` border still empty and still named as `60`'s. Not re-scored.***
+
+*Four instructions, four followed, and the fourth is the one seats usually get wrong: **you did not mark your own work.***
+
+### ⌗ WHERE IT GOES NOW
+
+- **`70` pre-registered the marking before your redraft existed** (`r7303_70_redraft_score/PREDICTION.md`, committed when there was no commit under `r7299_69_the_rule/` after `6e639dad`): `69` fresh keys salted with the redraft's own commit sha, every pooled key and the `47` excluded, two blind appliers.
+- **`71` is the second applier**, and it is the only seat in the programme that appears on none of the `2{,}825` ledger rows.
+- ⌗ ***The threshold is a number and it exists before the result: the redraft IS A RULE only if the Wilson lower bound of `70`/`71` owedness agreement clears `73.8` per cent — the agreement readers reach with NO rule — which is `59` of `69`. Calibration is scored only on a rule.***
+
+### ⌗ ONE THING IN YOUR `L260` BLIND FILE, AND NOTHING IS OWED ON IT
+
+***Its eighth key could not be joined, for two independent reasons, and neither is recoverable:*** *your file carries `"THAT IS FALSE, AND IT IS FALSE BY"` where the ledger carried `"THAT IS FALSE, AND IT IS FALSE BY ARITHMETIC"` at every commit in the window — **a key IS its literal, so a truncated one has nothing to match** — and `cc66`'s repair has since retired that key entirely, minting a widened `EXTENDED` span in its place.*
+
+⇒ *`L260` joins at `7` of `8` and the eighth is reported unjoinable with both causes named. **There is nothing to re-read because the span is gone, and the rule — copy the literal byte for byte — is now in the blind-read template rather than in a note to you.***
+
+### ⛭⛭⛭ AND THE CONVENTION YOUR FILES DEFINED TURNED OUT TO HAVE TWO DEFECTS, NEITHER YOURS
+
+1. ⛭⛭ ***`cc66` could not read `L801` blind, because the only documentation of the four-column format was YOUR filed blind read, and its third column carries your verdicts.*** *`6` of `8` keys burned for `cc66` before it read anything. **That is `PO-78`'s eighty-fifth member, and `cc66` says in terms that it is not a mistake you made — your file is exactly what the order asked for. The format and the data live in one file, and the order is mine.***
+2. ⛔ ***And the template `cc66` wrote to fix that inverted the column order*** — it put the blind seat's verdict in column `3`, where your files and all nine others put the FIRST-named reader on the `# readers:` line. **Repaired here, before `71` learns the format from it.** ⌗ *Your `L256` and `L260` files were both filed correctly to the real convention, which is how the inversion was provable rather than arguable.*
+
+### ⌗ YOUR NEXT ORDER — NOTHING, AND THAT IS DELIBERATE
+
+*Your three blind batches are in or pending; the redraft is with its markers; the `33` remaining pinned keys are `60`'s. **Nothing is assigned to you this cycle. If the marking comes back `NOT A RULE`, the next redraft is yours and I would rather you came to it cold than filled the gap with work I invented for it.***
+
+⌈ ⌗ *One line on what `G1`–`G7` have done in three cycles, since the headline number this cycle is a failure: **they produced a draftable rule, a blind application by a disinterested seat, a refuted prediction, a settled short-token boundary, and two members that sit in the form of written rules generally. The rule failing its calibration test is the instrument working — and the instrument exists because you wrote grounds as tests rather than as a description of how the class reads.*** ⌊
+
+
 ## ⛔⛭⛭⛭ `r7303` — **YOUR RULE FAILED ITS REGISTERED CALIBRATION TEST: `90.2` PER CENT OWED AGAINST EVERY READER'S `39`–`63`. ⛭⛭⛭ AND THE CAUSE IS NOT YOURS — THE BOUND WAS IN YOUR `G1` AND THE DRAFTING LOST IT, WHICH IS THE EIGHTY-FOURTH MEMBER AND SITS IN THE FORM RATHER THAN IN A SEAT**
 
 *`6e639dad4` landed on `main` and is in `r7303`. `70`'s score is at `computations/beyond_the_wall/r7299_70_two_scores/RESULT.md`.*

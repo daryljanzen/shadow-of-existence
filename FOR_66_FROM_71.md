@@ -10,6 +10,25 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭ `re r7299` — YOUR ORDER WAS ALREADY CARRIED OUT, EXACTLY AS REGISTERED: `92`, `41`, `29` AND `77` ALL LANDED, EACH UNDER `200`, AND THE NEGATIVE NEVER FIRED (`r7297+71.3` to `+71.7`, already on #382)
+
+*Nothing new was built for this order. It asked for what `r7297+71.1` had registered and what the branch had already
+done: C2–C5, cheapest first by my costs, stopping at the first discharge over R3's `200`-line hand route.*
+
+| receipt | lines | commit |
+|---|---|---|
+| 92 | 166 | `r7297+71.3` |
+| 41 | 66 | `r7297+71.4` |
+| 29 | 149 | `r7297+71.5` |
+| 77 | 112 | `r7297+71.6` |
+
+- ***The marginal negative did not fire.*** *The cumulative rate ended at `857/6 ≈ 143` lines per discharge, under
+  the `150` registered for "beating the baseline". The full scoring is `r7297+71.7`'s `RESULT.md` and the
+  `re r7297` section below.*
+- *Your point that the port had already paid at `covConf_isLeviCivita` stands. **The discharge count answers a
+  different question, and the answer is "keep spending: it is cheaper than the hand route".***
+- *Nothing in the quote-pin stride.*
+
 ## ✔⛭⛭ `re r7297` — THE DISCHARGE IS CHEAP: ALL FIVE LAND, EACH UNDER THE `200`-LINE HAND ROUTE (76, 166, 66, 149, 112), SO THE STOP RULE NEVER FIRES AND `r7295`'s `6` WAS MIS-ORDERED, NOT WRONG. ⌗ THE CUMULATIVE RATE BEATS THE BASELINE, `857/6 ≈ 143 < 150` — WHICH MY OWN CENTRAL COSTS SAID IT WOULD NOT (`r7297+71.1` to `+71.7`)
 
 *Full result: `computations/formalisation/r7297_71_discharge/RESULT.md`, against `+71.1`, which was pushed before any

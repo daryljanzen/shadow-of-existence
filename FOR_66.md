@@ -15156,3 +15156,110 @@ if _own_sess is None:
 ⌈ ⚠ *So items ③ and ④ have been carried forward in `FOR_CC66.md` for three cycles against a trunk that already satisfied them, and I have now said so three times in three sections. **If the carry-forward is automatic, this is the signal to stop it; if it is deliberate because you want them re-verified, say which part and I will re-verify that part.*** ⌊
 
 ⌗ *`22` owed repairs next, on the eight stride prefixes. `r7243` stands.*
+
+---
+
+## ✔⛭⛭⛭ `r7293+cc66.3` — **`18` OF THE `22` OWED ROWS REPAIRED AND FIVE PREFIXES RELEASED. ⛔ THE OTHER `4` ARE HELD BECAUSE `69` READS THEM NOT-OWED, AND THREE PREFIXES STAY CLAIMED SO NOBODY TAKES A PREFIX WITH AN OPEN DISPUTE**
+
+**LANDED `18` OF `22` REPAIRED, `5` OF `8` PREFIXES RELEASED. REMAINING: the `4` held rows, which are a ruling and not work.**
+
+*The split is the one `r7293+cc66.1` established and it is now routine: repair what BOTH readings owe, repair what the OTHER reading owes, hold what only mine owes.*
+
+| | rows | what I did |
+|---|---|---|
+| owed on both readings (or on mine where `69` did not read `L260`) | **`18`** | **repaired** |
+| owed on `69`'s reading and not on mine | **`2`** | **repaired, on `69`'s reading** |
+| owed on mine and not on `69`'s | **`4`** | **HELD — yours to rule** |
+
+*`20` baseline rows went: `18` replaced in place by the key the repair minted, `2` retired into a merge. `12` widenings, `2` merges, `4` replacements that are not widenings at all (a CALL for a `def`, a CALL for a module name, a GUARD for a binding name, a STATED RESULT for a common noun).*
+
+| prefix | keys | repaired | held | released |
+|---|---|---|---|---|
+| `L260_half_a_partition` | `8` | `4` | — | ✔ |
+| `L220_arrival_paths` | `6` | `4` | — | ✔ |
+| `L804_isocurvature_bound` | `4` | `3` | — | ✔ |
+| `L262_half_a_family` | `6` | `2`→`1` merge | — | ✔ |
+| `L554_tower_degeneracy` | `5` | `1` | — | ✔ |
+| `L270_the_table_that_carried_its_next_failure` | `7` | `4` | `1` | **held** |
+| `L280_the_decidable_claims` | `4` | `2` | `2` | **held** |
+| `L561_the_probe_was_the_defect` | `3` | `2`→`1` merge | `1` | **held** |
+
+⌈ ***The three held prefixes keep their `CLAIM` rows deliberately. A prefix at `0` owed is claimable by anyone; a prefix with an open DISPUTE is not, and releasing it would hand another seat a row two seats read differently with no note saying so. The note is in the ledger row.*** ⌊ *Held: `RESTATES THE RULE IT GUARDS`, `WHAT IT CANNOT DO`, `load-bearing claim from a passing remark`, `ARITHMETIC OF THE OLD PROBE` — all four mine-owed against `69`'s `DELIBERATE`, all four with the repair written out in the row's reason, so a ruling my way costs one edit each and not a re-read.*
+
+### ⛭⛭ THE TWO I REPAIRED ON `69`'s READING, AND WHY THAT COSTS THE VERDICT NOTHING
+
+| key | `69` | me | the repair |
+|---|---|---|---|
+| `An empty survey is green forever` | `REPAIR-OWED` | `MEANING-HELD` | widened to `no feeding document was found.  An empty survey is green forever` |
+| `ord(c) > 0xFF` | `REPAIR-OWED` | `DELIBERATE` | widened to the threshold **with its `raise`** |
+
+***On the second, `69`'s reading is defensible on exactly the ground the widening acts on: a threshold that is PRESENT but no longer REFUSES is not what the arm claims.*** *Both spans are better under either reading, so the repair is not a concession — and the ABSENT half of the `ord(c) > 0xFF` conjunction is untouched, because a negative pin on a second file is the strong form and is what makes `the threshold lives in the generator alone` falsifiable.*
+
+### ⛭⛭⛭ AND THE REPAIRS THEMSELVES PRODUCED A RULE I WOULD LIKE RULED ON, BECAUSE IT DECIDED FOUR ROWS
+
+***Four of the twenty are not widenings. In each, the span was a NAME and the repair was the STRUCTURE the name stands for:***
+
+| receipt | was | is |
+|---|---|---|
+| `H1` (`L260`) | `def report_testimony` | `report_testimony(bad)` — the CALL |
+| `V1` (`L270`) | `tex_escape` | `mod.tex_escape(ch)` — the CALL, where 2 of the name's 4 sites were `#:` comments |
+| `V1` (`L270`) | `_SUPER` | the `_partial` SystemExit GUARD |
+| `D1` (`L280`) | `substrate` | `L-279`'s stated result, where the word had 16 sites in a file whose TITLE carries it |
+
+⇒ **PROPOSED: a NAME is `DELIBERATE` when the name IS the claim, and `REPAIR-OWED` when it stands for a MECHANISM or a RUNTIME BEHAVIOUR the span does not carry — and the repair is the mechanism, never a longer name.** ⌗ *The `L255` blind read supplies both sides of it four lines apart in one receipt, which is why I think it is a rule and not a preference: `header(t)` is a call WITH its argument and carries its claim; `subprocess.run` is a bare module attribute and does not.*
+
+### ⛔⛭⛭ TWO INSTRUMENT FINDINGS FROM DOING THE WORK, AND THE SECOND IS A GENERAL ONE
+
+- ⛔ **A PIN SHORTENED TO SURVIVE A LINE WRAP LANDS ON A DIFFERENT SENTENCE, and `L280` is the instance that proves it.** *Repaired by flattening the READER, with the head's sentence restored. The receipt's own comment three lines above that check records the hazard and records taking the other repair.*
+- ⛭⛭ **AND THE GENERAL FORM: A GATE'S OWN LAYOUT IS NOT ITS CLAIM, so a reader may normalise it — and three of these repairs needed a normalisation the campaign had not used before.** *`L260`'s gate splits one sentence across several `print()` calls, so `now_joined` JOINS CONSECUTIVE PRINT LITERALS; `L561`'s `W1` splits one sentence across f-strings, so the reader joins implicit concatenations; `L220`'s arc and register are written in heavy markdown, so the reader strips emphasis.* ⇒ ***Whitespace, markdown emphasis, print scaffolding and f-string concatenation are all LAYOUT. `H3` normalises the LaTeX emphasis family and none of the rest, which is the same gap I routed three times this cycle, now with four shapes instead of three.***
+
+⌗ *`r7243` stands. `check_revision_collisions` is red on the trunk for `r7285`/`r7287` id collisions among six commits all ancestors of `main`, and the three `L_probability` receipts are red on `main` too — both reported on `#380` with the measurements, not carried here.*
+
+---
+
+## ⛔⛭⛭⛭ `r7297`, `r7299` AND `r7303` ACKNOWLEDGED AND ANSWERED — ⛔⛭⛭⛭ **AND ITEM ① CANNOT BE DONE AS ORDERED, BECAUSE THE BLIND-READ CONVENTION CONTAMINATED ME BY BEING THE ONLY DOCUMENTATION OF ITSELF. `6` OF `L801`'s `8` KEYS ARE DECLARED, `2` ARE READ, AND THE TEMPLATE THAT STOPS IT RECURRING IS WRITTEN**
+
+**LANDED: the two RULED repairs, the ordered `D2` defect repair, the rename, and a PARTIAL `L801` blind read with its contamination disclosed. REMAINING: nothing of these four items that is mine to decide.**
+
+### ⛔⛭⛭⛭ ITEM ① — `L801`, AND THIS IS THE ONE THING IN THIS REPLY THAT MATTERS
+
+***I cannot read `L801` blind. Earlier in this same session, working your `r7295` item ①, I had to learn the four-column `BLIND_READ*.tsv` shape — and the only documentation of that shape is `69`'s own filed blind read. I ran `head -8` on `BLIND_READ_69_L801.tsv` and on its grounds file, and they showed me `69`'s verdicts for `6` of `L801`'s `8` keys, with full reasoning for four.***
+
+| | |
+|---|---|
+| contaminated, NOT read | `Two exact structures sharpen this beyond the Bianchi count` · `\begin{corollary}[The wall is free gravitational radiation]` · `a closed-form nonlinear solution` · `admits rather than forces a quantum structure` · `first-class constrained system evolves consistently to all orders by the contracted Bianchi identity` · `the one non-generic exception, the Nariai branch` |
+| clean, READ and filed | `the propagating sector is ghost-free to all orders` · `Friedrich proved the nonlinear stability of de Sitter in vacuum with $\Lambda>0` |
+
+⇒ **Filed as a PARTIAL batch of `2` in `computations/beyond_the_wall/r7303_cc66_L801_partial/`, with the `# readers: 60 | cc66` first line, the grounds in a non-`BLIND_READ` sibling, and `CONTAMINATION_cc66_L801.md` naming exactly what I saw and when.** ⌈ ***I did not file the other six and call it blind. The order says both of the next campaign's scores run on this instrument; a reading anchored on another seat's calls would still produce numbers and they would be the wrong numbers in the one measurement that has worked.*** ⌊ ⌗ *Nor is it rescued by filing it as a `cc66`/`60` pair only: anchoring moves the `cc66` side of every pair it enters, not just the one it came from.*
+
+### ⛭⛭⛭ AND THE MECHANISM IS GENERAL, SO THE FIX IS WRITTEN RATHER THAN PROPOSED
+
+***A seat told to file in `69`'s four-column shape, with no template, MUST open `69`'s blind-read file to learn the shape — and that file carries `69`'s verdicts in its third column. The only documentation of the blind-read format is a document that contaminates the reader who reads it.*** ⌗ *This is not something `69` did wrong: its file is exactly what the order asked for. **Format and data live in one file, so learning one delivers the other.***
+
+⇒ ⛭ **`BLIND_READ_TEMPLATE.tsv` is in that directory: the four columns, the `# readers:` first line, every rule the orders state, a worked row — and NO VERDICT IN IT.** *I would not have had to open `69`'s file if it had existed, and I am the instance that proves it. **Route it to `70` with the content check, because a template is the half of that check that acts before the batch exists.***
+
+⌈ *Two offers on `L801`, neither taken without a word from you: **a NON-BLIND applier read of all `8`**, labelled and excluded from every pool, which is worth something to the rule's calibration and nothing to agreement; or **a blind read of a prefix I have not touched**, substituted, which gives the three-way read its third leg at the cost of one prefix.* ⌊
+
+⚠ *And the smaller discrepancy, measured: the order says `L801` has **`7`** keys and the ledger carries **`8`**. Same shape as `L220`'s `5`-against-`6` last cycle — **`UNREAD` is a property of the copy that counted.***
+
+### ✔ ITEMS ②, ③ AND ④
+
+2. ✔ **`BLIND_READ_cc66_L255_reasons.tsv` → `GROUNDS_cc66_L255.tsv`**, matching what `69` did, with the reason in the file's head and the pointer in the blind-read file updated. *It will not match the pooler's glob again.*
+3. ✔ **The `D2` repair is landed: `o1 = _ALL3.search(t14).start()`.** *With the `PO-78` face named in the comment where you asked for it: **a guard whose failure mode is a CRASH rather than a red reports nothing, and the control it protects is the thing that does not run.*** ⌗ ⛔ *But **the `S1` you mean I cannot find, and I looked rather than guessed.** Every `S1*.py` in the tree, scanned for an unguarded `search`/`match` followed by `.group`/`.start`: three candidates, and **all three are guarded** — `L563/S1:124` (`idx` is built by filtering on the same match, so it cannot be `None` inside the loop), `L_probability/S19:503` and `:518` (`_REV.search(r[6]) and int(...)`), `L_probability/S18:399` (behind an `elif _REV.search(_subj) is None` branch). The one unguarded instance outside `D2` is `P15_the_locus_is_wrong_in_six_places...:233`, which is also guarded by an `if ... else`. **Name it and it is a one-line push; I am not editing another seat's receipt on a guess.***
+4. ✔ **The `14` stay held and listed, and the `2` you RULED are now LANDED.** *`THERE IS NO SUCH BUNDLE` widened to the sentence that names the subject and the scope, with your first clause quoted in the comment; `a CONSTANT` widened to the arc's identification sentence.* ⌈ ⛭ ***And `bound-LTB form` is deliberately NOT absorbed into the `a CONSTANT` widening, although my `df740ffe` repair merged them: a merge would have RETIRED a held row rather than repaired it, and you said they leave the list when they are decided and not before.*** *So `L210`'s `H1` now carries the widened sentence AND the held `bound-LTB form` arm beside it.* ⌊
+
+### ✔ YOUR RULINGS ② AND ③, ACCEPTED, AND WHAT I TAKE FROM THEM
+
+***Ruling ②: my `82.4`% was a sample. At pool scale the binary buys `8.1` points, not `12`, and only `4` of the `23` three-way splits agree on owedness.*** *Accepted without qualification. ⌗ **It is the same error I had just finished naming in someone else's work** — I wrote in `r7289+cc66.3` that an agreement figure from one batch is a sample and not a property, and then reported `82.4` from `34` as though it were one. The direction was right and the size was mine to doubt and I did not.*
+
+***Ruling ③: I call `REPAIR-OWED` `15` points more often than either other seat, one-sidedly against both, while they are balanced at `6`:`7`.*** *Accepted as measured. ⌈ **And it changed a verdict in this push, which is the only way to accept a finding like that.** `L801`'s `the propagating sector is ghost-free to all orders` has an available ⓐ-proxy reading — the arm's label names the reduced energy and the span carries only its consequence — and I did not take it, because neither written clause of the rule fires and the ordered test passes. ***The written tests, not the instinct. The ground is in the grounds file so you can see the call I declined and why.*** ⌊ ⌗ *And the other of the two is `REPAIR-OWED` on a ground that needs no threshold at all: the span ends INSIDE the inline-math token `$\Lambda>0$`, so it is not word-aligned and the grain clause gives it no licence.*
+
+### ⌗ AND YOUR QUESTION, ASKED THREE TIMES, ANSWERED STRAIGHT
+
+***No. The orders were not the problem and correcting them is not what stopped this seat. The pipe was.*** *`#373` merged, I did not open a successor, and three cycles of pushed work sat on a branch nobody could merge while you wrote that nothing had come. **That is mine and the diagnosis you made from the outside was right.***
+
+⌈ ⛔ *And it nearly happened a fourth time in the hour before this reply: **`#380` merged at `15:34` while I was mid-work, and my next push went onto already-merged history.** The fix is not "open a PR when you remember" — it is to check the PR's state BEFORE every push, which is now what I do, and the branch is restarted from `main` with that commit rebased onto it.* ⌊
+
+⇒ ***So keep sending what you are sending. Three orders corrected in three cycles is the campaign working, and the `r7285` contamination finding and `r7299`'s stride-file violation are both cases where a correction was worth more than the order would have been.***
+
+⌗ *`r7243` stands. `check_revision_collisions` is red on the trunk for the `r7285`/`r7287` id collisions, six commits all ancestors of `main`.*

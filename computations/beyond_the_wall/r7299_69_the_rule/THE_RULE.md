@@ -46,16 +46,22 @@ changed, quotes no single line, and step 2 does not reach it; go on to step 3.
 
 ### 3. The seven tests. If any answer is yes, the row is `REPAIR-OWED`.
 
-**Test 1 — The words that make the claim true are outside the quoted text.**
-Cut the quoted text out of its sentence and set it beside the claim. Does the claim still follow from
-the quoted words alone? If not, the repair is owed. This catches:
+**Test 1 — The quotation leaves out its subject, a condition, or a negation.**
+Read the words around the quotation in its own sentence. The repair is owed when one of these three sits
+outside the quotation:
 
-- a quotation that begins after its subject ("…has not failed to empty", "admits rather than forces a
-  quantum structure");
-- a quotation that leaves out a condition the claim depends on ("a degeneracy growing as $n^2$, the shell
-  contribution goes as $n^3$" without the other two inputs that give $n^3$);
-- a quotation that leaves out a negation ("a closed-form nonlinear solution", quoted to show the paper
-  does *not* claim one, with the "not" outside).
+- **its subject** — the quotation begins after the subject of its main verb, so the quoted words do not
+  say what they are about ("…has not failed to empty", "admits rather than forces a quantum structure");
+- **a condition the quoted statement depends on** — an *if, when, unless, provided, only, given*, a *with*
+  or *for* clause, or a list of premises of which the quotation keeps only some, such that the quoted
+  words read alone state something the sentence does not ("a degeneracy growing as $n^2$, the shell
+  contribution goes as $n^3$", which drops the other two inputs that give $n^3$);
+- **a negation that governs the quoted words** — *not, no, never, nor, without*, or a frame such as
+  "what is not claimed is", so that the quotation read alone asserts what the sentence denies ("a
+  closed-form nonlinear solution", from "what is *not* claimed is a closed-form nonlinear solution").
+
+Nothing else outside the quotation makes the repair owed under this test. That the sentence goes on to say
+more, or that the receipt's claim is broader than the quoted words, is not a ground here.
 
 **Test 2 — The quoted text points somewhere else for what it is about.**
 The repair is owed when the subject or the object of the quoted clause is one of these words, standing for
@@ -73,9 +79,8 @@ something named outside the quotation:
 ("the degeneracy is $2(n-1)(n+3)$", "the propagating sector is ghost-free to all orders"). The reason:
 such a phrase tells the reader what kind of thing the sentence is about without looking back, and the
 papers write almost every sentence this way; counting it would mark nearly every quoted sentence owed and
-leave the class unable to separate anything. When *which* thing is meant matters to the claim and only the
-surrounding text says which, Test 1 catches it — the identifying words are outside the quotation — so
-nothing escapes by this choice.
+leave the class unable to separate anything. Which particular thing is meant is not asked here: if the quotation
+leaves out its subject, a condition or a negation, Test 1 asks it, and otherwise the noun names enough.
 
 A **head noun that names nothing by itself** is treated as a pointer, because it carries no content of its
 own: *the result, the claim, the statement, the case, the quantity, the point, the question, the answer,

@@ -3,7 +3,7 @@
 # opening the primary's rows -- the eight keys in scope were taken from f6ecf594's tree, where every one of
 # them still reads UNADJUDICATED, and the live rows were COUNTED and not read.  Read before this branch
 # fetched main, as the r7295 order directs.
-# NOT reconciled and NOT written to the ledger.  Reasons in BLIND_READ_cc66_L255_reasons.tsv.
+# NOT reconciled and NOT written to the ledger.  Reasons in GROUNDS_cc66_L255.tsv (renamed on 66's r7299 item 2: a sibling file must not share the prefix).
 # Re-filed in the four-column r7295 shape from DOUBLE_cc66_L255.tsv, which was written in the r7293 shape
 # before this seat had read the r7295 order; the verdicts are unchanged.
 # receipt	literal	first verdict (cc66, blind)	second verdict (69, primary -- not read)

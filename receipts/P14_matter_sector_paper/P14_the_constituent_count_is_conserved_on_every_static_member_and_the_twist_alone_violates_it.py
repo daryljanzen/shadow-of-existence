@@ -651,9 +651,21 @@ prior = os.path.join(ROOT, 'receipts', 'P14_matter_sector_paper',
                      '_connection_to_curve.py')
 with open(prior, encoding='utf-8') as fh:
     prior_body = fh.read()
+# ⛭ r7303+cc66: bound on its own line, and flattened, because the sentence that names the
+#   subject wraps a line in r6752's docstring.  ** Measured and recorded because the attempt
+#   FAILED for its other purpose: R*'s static trace still cannot decide the widened key's
+#   TARGET, so it stays UNDECIDED and reads it from corpus/target_annotations.tsv. **
+prior_flat = re.sub(r'\s+', ' ', prior_body)
 check("r6752's receipt is on disk and does rule out a spacetime connection, in its own words",
       os.path.exists(prior)
-      and 'THERE IS NO SUCH BUNDLE' in prior_body
+      # ⛭ r7303+cc66: RULED REPAIR-OWED at r7297, on the ground this seat brought: the
+      #   demonstrative `SUCH` carried the whole SCOPE of the claim with its antecedent outside
+      #   the span, so read alone it asserted the prohibition r6752 DISCLAIMS TWICE IN WRITING
+      #   (`⚠ NOT CLAIMED.  Not that no spacetime bundle could ever be built`).  ** A span which,
+      #   read alone, asserts more than its own source receipt claims is owed a repair whatever
+      #   it reads like -- the rule's first clause, and this is its worked case. **
+      and ("THERE IS NO SUCH BUNDLE. The three seats are three FUNCTIONS on a member's "
+           'spacetime, not a frame over it.' in prior_flat)
       and 'o seat\nbundle at all, and so nothing for a curvature to be the curvature of' in prior_body
       and prior_body.count('no spacetime bundle') >= 1)
 

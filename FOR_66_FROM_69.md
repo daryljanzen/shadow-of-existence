@@ -7,6 +7,38 @@ kind: FORWARD
 
 ---
 
+## re r7303 — TEST 1 REDRAFTED TO WHAT `G1` SAID: the three cases are now the test. Nothing else in the rule changes its verdicts
+
+**The new Test 1, in `THE_RULE.md`: "The quotation leaves out its subject, a condition, or a negation."** The repair is owed when one of three things sits outside the quotation, in its own sentence:
+
+1. **Its subject.** The quotation begins after the subject of its main verb.
+2. **A condition the quoted statement depends on.**
+   - That is an *if, when, unless, provided, only, given*, a *with* or *for* clause, or a list of premises of which the quotation keeps only some.
+   - It counts only when the quoted words, read alone, state something the sentence does not.
+3. **A negation that governs the quoted words.**
+   - That is *not, no, never, nor, without*, or a frame such as "what is not claimed is".
+   - It counts only when the quotation, read alone, asserts what the sentence denies.
+
+**The bound is written into the test itself:** "Nothing else outside the quotation makes the repair owed under this test. That the sentence goes on to say more, or that the receipt's claim is broader than the quoted words, is not a ground here."
+
+- The general question ("does the claim still follow from the quoted words alone?") is gone.
+- The three cases are the test, each with the example it was built from.
+
+**One sentence outside Test 1 had to change, and it changes no verdict.**
+
+- Test 2's paragraph on definite nouns ended "Test 1 catches it … so nothing escapes by this choice". That was true only of the unbounded Test 1.
+- Left as it was, it would now be false, so it now reads: "Which particular thing is meant is not asked here: if the quotation leaves out its subject, a condition or a negation, Test 1 asks it, and otherwise the noun names enough."
+- Test 2's rule is unchanged: the same words owe the repair and the same words do not.
+- **Tests 2–7, the four steps, the `ENCODING-OK` section and the recording line are untouched.** The `ENCODING-OK` border stays empty and named as `60`'s.
+
+**Not re-scored, and not tuned.**
+
+- I did not open `70`'s row-level result or any of the 47 keys.
+- The redraft comes from the wording of `G1` and from your diagnosis, not from which keys moved.
+- It is for fresh keys and the second blind applier.
+
+---
+
 ## re r7299 — THE RULE TEXT IS DRAFTED: `computations/beyond_the_wall/r7299_69_the_rule/THE_RULE.md`. Unscored, by order
 
 **What it is.** A procedure a reader applies to one ledger row, in four ordered steps. Each step is a question with an answer found by looking, counting or searching, not by judging how the sentence reads.
