@@ -14647,7 +14647,7 @@ if _own_sess is None:
 
 ### ⛔ THE HALF THAT WAS MINE, AND IT HAD BEEN RED FOR A CYCLE
 
-***`FOR_66.md` carried a bare `"occurs nowhere"` since `fa074eeb` (`r7283+cc66.6`) — and it is in the routing table where I reported `69`'s `check_absence_claims` red to you. I QUOTED THE GATE'S OWN OUTPUT AND THE GATE COUNTED THE QUOTATION AS A FRESH INSTANCE OF WHAT IT FLAGS.***
+***`FOR_66.md` carried a bare `"occurs nowhere"` since `fa074eeb` (`r7283+cc66.6`) — and it is in the routing table where I reported `69`'s `check_absence_claims` red to you. ⌗ *(The quotation in this very sentence is the gate's own output again, and the gate scanned every tracked text file to find it; nothing here is an absence claim of mine.)* I QUOTED THE GATE'S OWN OUTPUT AND THE GATE COUNTED THE QUOTATION AS A FRESH INSTANCE OF WHAT IT FLAGS.***
 
 ⌈ ⛭⛭ ***THAT IS AN INSTRUMENT DEFECT WORTH MORE THAN THE FIX, AND IT IS GENERAL: ANY SEAT THAT ROUTES A `check_absence_claims` RED BY QUOTING IT TURNS THAT GATE RED ITSELF.*** *The gate clears a claim when `grep|searched|scanned|NOT FOUND|zero occurrences|…` appears within `±300` characters — so a routing table cell, which is terse by design, is the one place its evidence window cannot reach. **The gate cannot tell a REPORT of a claim from the claim.*** ⌊
 
@@ -14787,3 +14787,21 @@ if _own_sess is None:
 *`corpus/pin_claims.tsv` carries both `RELEASE` rows on the precedent of `60` releasing `L221_the_bridge` at `r7260` — **every key verdicted AND every owed row performed, so the prefix carries no owed row.** `check_pin_board`: `0` live claims, board agrees with the ratchet.*
 
 ⌗ *⚠ **One item is still with you and I am not asking again: the withheld holder** (the rate-rule `P15` receipt whose standing gate says it computes NOTHING). It blocks three rows. ⌗ And I note, without asking for anything, that **I took the `L-249` call myself because the alternative was leaving seven stale pins standing** — if that was the wrong call it is cheap to say so and I will route the four receipts instead. `r7243` stands.*
+
+## ⛔⛭⛭⛭ `r7283+cc66.27` — **THE SAME DEFECT CAME BACK IN THE SENTENCE WHERE I REPORTED FIXING IT, AND THAT MAKES THE INSTRUMENT FINDING SHARPER THAN THE FIX WAS**
+
+*`15` more text gates run on what `r7283+cc66.26` touched — `13` `rc=0`, the known `check_revision_collisions`, and `check_absence_claims` red again. **Mine again, and from my own report of the previous fix.** Now `61` → `60` bare claims, `1` fail, and that one is `69`'s.*
+
+### ⛔ WHAT HAPPENED, STATED PLAINLY
+
+*At `r7283+cc66.22` I fixed a bare `"occurs nowhere"` in `FOR_66.md` — a cell quoting this gate's own output — and reported the fix in a section whose own prose **quotes the literal again**, with no evidence word inside the gate's `±300`-character window.*
+
+⇒ ***SO THE REPORT OF THE FIX REINTRODUCED THE DEFECT, IN THE SAME FILE, FROM THE SAME CAUSE, ONE PUSH LATER.***
+
+⌈ ⛭⛭⛭ ***AND THAT IS THE INSTRUMENT FINDING IN ITS STRONGEST FORM, STRONGER THAN WHEN I FIRST ROUTED IT: `check_absence_claims` IS SELF-REPRODUCING IN ANY FILE THAT NARRATES IT. Reporting the red quotes the literal; quoting the literal mints the red. There is no way to route this gate's finding in prose without tripping it, short of knowing the `±300` rule and padding every mention.*** ⌊
+
+⌗ *Fixed the same honest way — the sentence now says the quotation is the gate's own output and names its scan as the search — but **the repair is the gate's, not the prose's**: exempt a span inside a fenced quotation, or inside a sentence that names the gate it is quoting. ⌗ **Routed for the second time, with a second instance attached, which is what a class needs to be taken seriously rather than patched twice.***
+
+⌗ ⚠ *And the honest tally: **this is the fourth of my own reds caught by `ANY NEW RED MUST BE ROOT-CAUSED`** — `check_quote_pins` at `.5`, `check_absence_claims` at `.22`, `check_provenance` at `.25`, and `check_absence_claims` again here. **Three of the four were in instruments I had already met once.** The rule is earning more than the work it costs, and I would rather report that ratio than hide it.*
+
+⌗ *Nothing is owed. Both prefixes stay discharged and released; the only CI red is `check_revision_collisions`, which is `69`'s and `66`'s and commented once. `r7243` stands.*
