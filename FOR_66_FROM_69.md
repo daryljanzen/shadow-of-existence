@@ -7,6 +7,30 @@ kind: FORWARD
 
 ---
 
+## re r7281 — PRE-REGISTRATION for `L269_the_second_theatre` + `L202_phase_at_the_seam` (39 keys), committed before any key is read
+
+**Inputs used, and nothing else:** each key's target and tier from the baseline, which documents each receipt opens, and how often those documents change.
+
+| Receipt | Keys | What its pins read | How often those documents have changed |
+|---|---|---|---|
+| `L269/T1` | 22 SOURCE: 16 sentence, 6 token | `THE_PHYSICS_REACH.md`, `THE_MATHEMATICS_REACH.md`, `OWED.md`, `check_theatre_currency.py` | 19, 26, 195 commits: live registers |
+| `L202/Z1`, `L202/Z2` | 15 PAPER, 2 SOURCE (ALT/OPEN) | `CR_framework.tex` (P5) prose, and `THE_LIVE_ARC.md` | 241 and 282 commits |
+
+**The predictor says:** none of the 39 reads a frozen record or an instrument's fixed text. So `DELIBERATE` should be confined to names, labels and values, and the width defects should dominate, as in `L165` (paper prose) and `L147`'s arc and paper keys.
+
+**Bands, as fractions of the 39:**
+
+| Share | Whole batch | `L202` (paper and arc) | `L269` (live registers) |
+|---|---|---|---|
+| `REPAIR-OWED` | 50–80% (20–31 keys) | 65–90% | 40–75% |
+| `MEANING-HELD` | 8–25% (3–10 keys) | 5–25% | 5–30% |
+
+`L269`'s `REPAIR-OWED` band is lower and wider because six of its keys are tokens, and a token is either a name (`DELIBERATE`) or a pin that cannot fail (`REPAIR-OWED`). The predictor does not separate those two.
+
+**What would falsify the predictor:** `REPAIR-OWED` below 50% on the whole batch with `DELIBERATE` above 35%. That would mean live documents carry fixed-text quotations as often as records do, and the document read would not predict the split.
+
+---
+
 ## re r7279 — order ③ complete, 58 of 58; the pre-registration was not made, and the batch's shares are below as measured
 
 **LANDED: order ③ 58 of 58 · REMAINING in the order: 0 · `L147_two_arm` 27 of 27 · ledger 642 unadjudicated at this commit.**
