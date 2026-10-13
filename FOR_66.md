@@ -14851,3 +14851,57 @@ if _own_sess is None:
 ⌗ ⚠ ***And the weakest thing about it, stated here and not buried: each of the two rates is a TWO-POINT AVERAGE. `L174`'s `73.8`% is worse than that — it is inflated by exactly the contamination you ruled in ②, since its own exemplars came from the papers it reads. So `0.674` is a number I distrust and am using anyway, because the alternative is no instrument at all.***
 
 ⌗ *Five refutation conditions are in the file. `r7243` stands. **The next prefix by weight after mine is `L272_the_survey_that_was_a_memory` at `10`, left for whoever comes next.***
+
+## ⛭⛭⛭ `r7289+cc66.2` — **LANDED `22` OF `54`. REMAINING `32`** (`P14_matter_sector_paper` `12`, `L210_entry_points` `10`, `L258_…_the_thing_that_moves` `10`). ⛔⛭⛭⛭ **THE TWO POLES ARE READ AND MY SHARPEST SUB-CALL IS REFUTED: `L803` `72.7`% AGAINST `L150` `54.5`%, `18.2` POINTS APART WHERE I PINNED `5`**
+
+*`L803_station9_neff` `11` keys: `8` `REPAIR-OWED`, `3` `DELIBERATE`. `L150_the_datum` `11`: `6` `REPAIR-OWED`, `5` `MEANING-HELD`. `check_quote_pins`, `check_pins_adjudicated_on_mint`, `check_cannot_fail` `rc=0` — and `check_absence_claims` is `rc=0` too, so your ruling-③ annotations hold.*
+
+### ⛔ THE SCORE SO FAR, AND I PINNED THE POLES BECAUSE THEY WERE THE TEST
+
+| | `SENT` share | called | **measured** | |
+|---|---|---|---|---|
+| `L803_station9_neff` | `18.2`% | `8` of `11` = `72`% | **`8` of `11` = `72.7`%** | ✔ **exact** |
+| `L150_the_datum` | `100`% | `7` of `11` = `67`% | **`6` of `11` = `54.5`%** | ⛔ off by one key, `12.5` points |
+| **the poles' separation** | | **≤ `5` points** | **`18.2` points** | ⛔⛭ **REFUTED** |
+
+***Both per-prefix numbers were within one key. The thing I actually pinned as the test — that the two poles land together because composition does not matter — is dead at `18.2` points.*** *My own kill threshold was `20`, so the model is not dead; it is calibrated loosely and its load-bearing claim failed. ⌗ **`L803` hitting exactly `8` is not evidence for the model while the comparison it was built to make is refuted.***
+
+### ⛭⛭ THE ROUTES, ON VERDICT-TIME NUMBERS — THE DIRECTION SURVIVES
+
+| prefix | `SENTENCE` rate | `TOKEN` rate |
+|---|---|---|
+| `L174_general_matter_dynamics` | `73.8`% | `75.0`% |
+| `L203_reach_stations` | `60.9`% | `72.2`% |
+| `L803_station9_neff` | `100.0`% *(n=2)* | **`66.7`%** *(n=9)* |
+| `L150_the_datum` | **`54.5`%** *(n=11)* | — *(n=0)* |
+
+*Excluding the `n=2` cell as noise: **`SENTENCE` spans `54.5`–`73.8`, a `19.3`-point range; `TOKEN` spans `66.7`–`75.0`, an `8.3`-point range.** The direction holds at three points each — the proxy route is the tighter one — and `TOKEN`'s range has more than doubled from the `2.8` points two prefixes gave me.*
+
+### ⛔⛭⛭⛭ AND A METHODOLOGICAL FINDING THAT LIMITS MY OWN INSTRUMENT, WHICH I WOULD RATHER STATE THAN HAVE FOUND LATER
+
+***WIDENING A PIN RE-TIERS IT. So the repairs the verdicts call for DESTROY the tier composition the two-route model is built on.***
+
+*Measured: `L174` had `42` `SENTENCE` and `8` `TOKEN` keys when I verdicted it. **After its `37` widenings the same prefix reads `43` `SENTENCE` and `2` `TOKEN` in the baseline** — because a widened `TOKEN` span becomes a sentence. The same for `L203`.*
+
+⇒ ⌈ ***SO THE MODEL'S EVIDENCE BASE CANNOT BE REBUILT RETROSPECTIVELY, ONLY ACCUMULATED PROSPECTIVELY: every prefix I repair stops being usable as a calibration point the moment I repair it.*** *The verdict-time numbers above exist only because I recorded them in `FOR_66.md` and the commits as I went. **Had I not reported them per-prefix at the time, the instrument would now be unrecoverable** — which is an argument for the reporting discipline rather than a complaint about the ledger.* ⌊
+
+### ⛭⛭⛭ `L803`'s FINDING: ONE `or` WITH FOUR ARMS EXHIBITING ALL FOUR OF ⓒ's SHAPES AT ONCE
+
+*The check is `('nu_R' in matter) or ('\nu_R' in matter) or ('right-handed' in matter.lower()) or ('nu_{R}' in matter)`:*
+
+| arm | occurrences | ⓒ shape |
+|---|---|---|
+| `right-handed` | **`12`** | **CANNOT FAIL** — and it disables the whole test |
+| `nu_{R}` | **`0`** | **DEAD** — occurs nowhere, measured |
+| `nu_R` | `3` | **UNDECIDING** — a strict substring of `\nu_R`, same three sites |
+| `\nu_R` | `3` | the only live and deciding arm, **or-ed with a partner that cannot fail** |
+
+***So the test cannot fail whatever happens to `$\nu_R$` — and the one arm that would carry the claim is rendered idle by its three partners. The repair is to delete three and keep one.*** ⌗ *And `right-handed` carries no neutrino at all: a right-handed ANYTHING satisfies it, in a paper about chirality.*
+
+### ⌗ THREE SMALLER THINGS
+
+- ⛔ **The inflection/accent/spelling gap in `H3` is at its THIRD instance and its THIRD prefix:** *`L803`'s `decoupl` clips mid-word to catch `decoupling`/`decoupled`/`decouple`, after `I3`'s `polariz` (spelling) and `I10`'s `Ringstr` (accent). **Three sound motives and no instrument for any of them.** Routed again with the third instance attached.*
+- ⚠ **One borderline row in `L150`, disclosed because it decided the number before I decided it.** *`the density crosses as inherited content` — the check's label attributes the carrying to THE REASSIGNMENT, which is outside the span, and that is the ⓔ reading. **I noticed it moves the prefix from `6` to `7` and its share by `9` points, and then decided it on the merits: `as inherited content` is the phrase the receipt's inference actually rests on, and the agent is a gloss.** It is `MEANING-HELD` with that disclosure in the row, so the next reader can overturn it.*
+- ⌗ ⛭ **And ⓸ settled two appositives in ONE sentence of `P16` opposite ways:** *`the same standard datum that fixes both the light-element abundances and the microwave-background peak heights` has BOTH terms inside and takes `MEANING-HELD`; `the one quantity the handover supplies`, four words later, has one term with its head (`$\eta$`) outside and is owed a widening. **Same sentence, same clause, two verdicts, and nothing left to my taste.***
+
+⌗ *Three prefixes left in this batch. `r7243` stands.*
