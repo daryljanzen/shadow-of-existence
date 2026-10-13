@@ -7,6 +7,39 @@ kind: FORWARD
 
 ---
 
+## re r7291 (remainders) — 18 of 18 landed from the bottom of `THE_STRIDE.tsv` (lines 36–50, ten prefixes, `cc66`'s and `60`'s); 0 remaining in the block
+
+**LANDED 18 of 18 · ledger `UNADJUDICATED` 122 · `UNADJUDICATED-PINNED` 44 · together 166.** `check_quote_pins` exits 0, and all 414 `MEANING-HELD` rows hold. None of the ten had been landed by its own seat on `main` or on any pushed branch, so none was skipped. **To `cc66` and `60`:** these ten are done, so don't start them: `P07_CR_framework`, `L283`, `L282`, `L265`, `L239`, `L261`, `L259`, `P17_geometric_core_paper`, `L818`, `L811`.
+
+**The 18 keys:** 9 `DELIBERATE`, 7 `REPAIR-OWED`, 1 `MEANING-HELD`, 1 `NOT-A-PIN`.
+
+**Against the pre-registration (`fa3b5fd4d`):**
+
+- **Totals: both landed in band.** `REPAIR-OWED` was 7 of 18, or 39% (band 35–60%). `MEANING-HELD` was 1 of 18, or 6% (band 0–12%).
+- **Per prefix, `REPAIR-OWED` hit its band 10 of 10, and `MEANING-HELD` 9 of 10.** The miss is `L265`: I had set the single-key prefixes at `MEANING-HELD` 0, and its one key, "a field that reaches nothing can still deliver a theorem", is a whole clause held at `427babd3b`.
+
+**Arm v3 on PAPER:** recall 3 of 3, precision 3 of 4.
+
+- The false positive is not prose. It is `P17`'s absence regex, `rho_r/rho_m\s*\n?%?\s*the peak SPACING`, which is `DELIBERATE`: the withdrawn wording stood at the immutable blob `0fcafd6c` and is required gone at HEAD.
+- The arm has no regex test. That is an input class it was never built for, so this is a list gap rather than a reading miss.
+- ⇒ **Across five batches PAPER precision is 28 of 29, and that one miss is not a sentence.**
+
+**New misfits:**
+
+1. **The record clause exempts a quotation whose claim does not hold.**
+   - `L261/A1` ⓷ claims `L256/B1` and `L251/N1` "now assert the gate's BEHAVIOUR".
+   - At the quoted lines, both actually assert that the phrase "THE BAND IS A PROPOSAL, NOT A PREVENTION" is in the gate's SOURCE. That is the text-form check `A1` itself calls the weaker one.
+   - `L259/D1` has the same shape: it reads `B1`'s *comment* "DIRECTIONAL and unfitted" as `B1` asserting the inequality.
+   - The record clause makes both `DELIBERATE`, because the lines never moved. **The clause answers "is the quotation stable", not "does the quoted record do what the check says it does".**
+   - I applied it as written and flag it here for a ruling.
+2. **A dead ALT arm with no history.** `L259`'s `'directional claim' in now.lower()` matches nothing in `B1`, case-folded. No commit ever introduced it, so the arm has never been able to decide (ⓒ, `REPAIR-OWED`).
+3. **A vacuous `.get` default under an absence assertion.** `P07/I7` asserts that "conserved charge" is absent from `BODIES.get('P12', '')`. If P12 is never loaded, the absence passes. `len(BODIES)` is printed but not asserted (ⓓ, `REPAIR-OWED`).
+4. **The same co-occurrence, keyed twice.** `L811` pins 'L-805' and 'unclosed inversion' in kills/PO-7.md exactly as `L805` does. I ruled both the same way, so one repair to kills/PO-7.md's closure sentence should discharge four rows.
+
+**Next, unless you order otherwise:** the block above these, lines 26–35, taken bottom-up and pre-registered before reading.
+
+---
+
 ## re r7291 — MY STRIDE IS DONE: 78 of 78 landed, 0 remaining. Now taking the other seats' remainders from the bottom of the file, pre-registered below
 
 **LANDED 78 of 78 · REMAINING 0 in my stride · ledger `UNADJUDICATED` 140 · `UNADJUDICATED-PINNED` 44 · together 184.** The verdicts landed at `c4e07cd7e` (32 keys) and `ffe7112c4` (46 keys). `check_quote_pins` exits 0, and all 413 `MEANING-HELD` rows hold. No prefix in my stride had already been verdicted, so none was skipped.
