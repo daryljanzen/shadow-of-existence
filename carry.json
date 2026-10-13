@@ -77,6 +77,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38390849148",
     "since": "2de1720d0bcdac721e67b6dd6a5df00064cd37e9"
    }
+  },
+  "tolerance": {
+   "receipts/L_probability/S30_the_registered_relationship_is_vacuous_here_because_the_flag_is_exact_and_the_non_repair_owed_share_splits_in_two.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38398385527",
+    "since": "30c5f02a3e671b33e43ce6c3179e8773ba16bc4a"
+   }
   }
  },
  "claude/youthful-darwin-xvkwh7": {
