@@ -641,6 +641,55 @@ theorem box_conf (a : ℝ → ℝ) (f : ℝ × ℝ → ℝ) (p : ℝ × ℝ) (ha
   field_simp
   ring
 
+/-! ## `r7289`, Probe F3 — the covariant derivative of a `(0,2)` field, the connection a hypothesis -/
+
+section Tensor2
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+  {H : Type*} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type*} [TopologicalSpace M] [ChartedSpace H M] [IsManifold I ∞ M]
+  (cov : CovariantDerivative I E (TangentSpace I : M → Type _))
+  (T : Π x : M, TangentSpace I x →L[ℝ] TangentSpace I x →L[ℝ] ℝ)
+
+/-- **G4a, G4b.** `∇T (X; Y, Z) = X(T(Y,Z)) − T(∇_X Y, Z) − T(Y, ∇_X Z)`. -/
+noncomputable def covT (X Y Z : Π x : M, TangentSpace I x) (x : M) : ℝ :=
+  d% (fun y => T y (Y y) (Z y)) x (X x) - T x (cov Y x (X x)) (Z x) - T x (Y x) (cov Z x (X x))
+
+lemma covT_smul_X (g : M → ℝ) (X Y Z : Π x : M, TangentSpace I x) (x : M) :
+    covT cov T (g • X) Y Z x = g x * covT cov T X Y Z x := by
+  simp only [covT, Pi.smul_apply', map_smul, ContinuousLinearMap.smul_apply, smul_eq_mul]
+  ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- `C^∞`-linear in `Y`, given that `T(Y, Z)` is differentiable at `x`. -/
+lemma covT_smul_Y {g : M → ℝ} (hg : CMDiff ∞ g) {X Y Z : Π x : M, TangentSpace I x}
+    (hY : CMDiff ∞ (T% Y)) (x : M) (hT : MDiffAt (fun y => T y (Y y) (Z y)) x) :
+    covT cov T X (g • Y) Z x = g x * covT cov T X Y Z x := by
+  have mg : MDiffAt g x := (hg x).mdifferentiableAt (by simp)
+  have e : (fun y => T y ((g • Y) y) (Z y)) = g * fun y => T y (Y y) (Z y) := by
+    funext y; simp [Pi.smul_apply', map_smul]
+  rw [covT, e, mvfderiv_mul mg hT,
+    (cov.isCovariantDerivativeOn (s := univ)).leibniz ((hY x).mdifferentiableAt (by simp)) mg, covT]
+  simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply,
+    ContinuousLinearMap.smulRight_apply, Pi.smul_apply', map_add, map_smul, smul_eq_mul]
+  ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- `C^∞`-linear in `Z`, given that `T(Y, Z)` is differentiable at `x`. -/
+lemma covT_smul_Z {g : M → ℝ} (hg : CMDiff ∞ g) {X Y Z : Π x : M, TangentSpace I x}
+    (hZ : CMDiff ∞ (T% Z)) (x : M) (hT : MDiffAt (fun y => T y (Y y) (Z y)) x) :
+    covT cov T X Y (g • Z) x = g x * covT cov T X Y Z x := by
+  have mg : MDiffAt g x := (hg x).mdifferentiableAt (by simp)
+  have e : (fun y => T y (Y y) ((g • Z) y)) = g * fun y => T y (Y y) (Z y) := by
+    funext y; simp [Pi.smul_apply', map_smul]
+  rw [covT, e, mvfderiv_mul mg hT,
+    (cov.isCovariantDerivativeOn (s := univ)).leibniz ((hZ x).mdifferentiableAt (by simp)) mg, covT]
+  simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply,
+    ContinuousLinearMap.smulRight_apply, Pi.smul_apply', map_add, map_smul, smul_eq_mul]
+  ring
+
+end Tensor2
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -659,3 +708,6 @@ end ShadowProbe
 #print axioms ShadowProbe.hess_smul_right
 #print axioms ShadowProbe.hessConf_eq
 #print axioms ShadowProbe.box_conf
+#print axioms ShadowProbe.covT_smul_X
+#print axioms ShadowProbe.covT_smul_Y
+#print axioms ShadowProbe.covT_smul_Z

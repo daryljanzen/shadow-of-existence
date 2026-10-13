@@ -10,6 +10,40 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛔⛭⛭ `re r7289` — G4 SPLITS: F1, F2, F3 ALL BUILD, SO THE FIELD EQUATIONS, THE WAVE OPERATOR AND `∇` OF A TENSOR ARE STATABLE WITH THE CONNECTION AND THE BACKGROUND HYPOTHESES — BUT `17` OF `32` IS UNDER THE PRE-REGISTERED `22`. ⌗ WHAT BLOCKS THE REST IS NOT THE FIELD EQUATIONS: IT IS SPECTRAL THEORY AND SPIN ON A MANIFOLD, ABSENT IN BOTH LIBRARIES. THE STATABLE COUNT PASSES HALF: `69` OF `111` (`r7289+71.1` to `+71.4`)
+
+*Full result: `computations/formalisation/r7289_71_fields/RESULT.md`, against `+71.1`, which was pushed before any
+probe and before any `mathlib` file was read for this order. Runs: `PROBE_RUN_F1.txt`, `_F2.txt`, `_F1_F3.txt`.
+Search: `SEARCH_G4f_G4g.txt`. Every theorem rests on `[propext, Classical.choice, Quot.sound]`.*
+
+- **⛔ The scoring, first.**
+
+  | probe | what | result |
+  |---|---|---|
+  | **F1** | Einstein tensor, `Ein + Λg = κT`, perfect fluid | **builds**, 48 / 150 — ***`Ein` of `covConf a` is `0`*** |
+  | **F2** | `Hess f`, `C^∞`-linear on a manifold; `□ = tr_g Hess` | **builds**, 77 / 250 — ***`□f = a⁻²(−f_ηη + f_xx)`, the connection terms cancelling*** |
+  | **F3** | `∇T` of a `(0,2)` field, `C^∞`-linear in all three slots | **builds**, 48 / 200 |
+
+  - ***Statable part of G4:*** *field equations `9`, wave/mode `4`, follow-on `2`, thermodynamic `2` = **`17`**, under
+    the `22` pre-registered for "statable".* ***The rule says SPLITS.***
+- **⌗ Your question — is what blocks the rest about the FIELD EQUATIONS? No.** *The remainder is:*
+  - **spectral, heat-kernel and quantum quantities** (`9`);
+  - **spin — spinor bundle, Dirac operator** (`3`);
+  - **three receipts that wait on G3**.
+  - *The first two are ABSENT in `mathlib` and `Physlib`, read at source: the "Dirac" hits are delta measures and
+    flat gamma matrices, and the "Laplacian" hits are Euclidean.*
+  - ***So the obstruction left is analysis and representation theory ON a background — quantum fields on curved
+    space, not classical fields.*** *Named, not probed. Its nearest relative in the record is T3b, also analysis.*
+- **The count now:** statable **`69` of `111`** — past half, by the count, though the G4 verdict is SPLITS. On
+  measured machinery alone it is `65`.
+  - *Still unstatable, of `135` geometric: `42` — G3 `17`, G4 remainder `15`, G5 `10`.*
+- **Beside the score:**
+  - *The pointwise tensor packaging (`r7287` (1)) still gates the divergence and `□` on a general manifold.*
+  - *The contracted Bianchi identity is not probed; it sits behind the PORT.*
+  - *Named metrics need the PORT or an explicit connection.*
+  - *G4c and G4d are classed by reading.* ***Statable, not proved.***
+- **The port is not begun.**
+
 ## ✔⛭⛭ `re r7287` — G2 IS STATABLE: K1, K2 AND K3 ALL BUILD, SO THE CURVATURE TENSOR IS REACHABLE WITH THE CONNECTION A HYPOTHESIS AND THE STATABLE COUNT GOES FROM `26` TO `52` OF `111`. ⌗ G2 IS NOT BEHIND T3b'S GAP: THE DEFERRED SMOOTHNESS IS A LEMMA ON A CHART. AND THE INSTANCE BUILDS — `R = 2 (log a)″ / a²` FOR `a(η)²(−dη² + dx²)` (`r7287+71.1` to `+71.4`)
 
 *Full result: `computations/formalisation/r7287_71_curvature/RESULT.md`, against `+71.1`, which was pushed before any
