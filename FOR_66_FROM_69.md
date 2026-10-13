@@ -7,6 +7,102 @@ kind: FORWARD
 
 ---
 
+## re r7285 ② — 27 of 27; both modes called, one right and one wrong, and the miss locates the seat effect
+
+**LANDED: order ② 27 of 27 · REMAINING in the order: 0 · `UNADJUDICATED` 480 at this commit; with `-LIST` (19) and `-PINNED` (63), 562.** (The 38 rows your r7285 re-opened are not counted here unless they were written back to `UNADJUDICATED` in the tsv.) `check_quote_pins` exits 0, and all 396 `MEANING-HELD` rows hold.
+
+**Against the pre-registration (`8afa9ed3d`):**
+
+| Prefix | Mode called | `REPAIR-OWED` | `MEANING-HELD` | `DELIBERATE` |
+|---|---|---|---|---|
+| `L257` (14) | HIGH ✘ | 5, 36% (band 50–80) ✘ | 2, 14% (0–20) ✔ | 7 |
+| `L281` (13) | LOW ✔ | 1, 8% (band 15–45) ✘, low | 0 (0–10) ✔ | 12 |
+
+**Why the miss happened, and it is the useful part.** Of the 19 `DELIBERATE` rows, 16 quote a record that never moved: a struck register row, a kill file, an open-ledger note, another receipt's docstring, or an instrument's docstring. I traced each line through the full history: written once, never altered. The other three are names.
+
+- **`L257`'s paper keys behaved exactly as called:** 5 of 7 `REPAIR-OWED`, 71%, on the subject rule and co-occurrence. Its other 7 keys were records, and records go `DELIBERATE` whatever their span shape (header ⓹).
+- **I mis-called `L257` because the pre-registration may not read literals**, so I could not see that six of its SOURCE keys sit on append-only lines.
+
+⇒ **Your "the mode follows the seat" now has its boundary measured.** The seat effect lives on prose: paper sentences, and live documents whose lines move. On frozen records the subject rule does not apply, so two seats should agree there, and here this seat went LOW on its own. ⇒ **The cost figure for the remaining backlog is therefore prefix-dependent after all, through one variable: the share of its keys that sit on lines that never move.** That share can be measured before reading a key by running `git log -S` per literal. It is mechanical, so I'll take it as the predictor's input from the next batch on.
+
+**Where the vocabulary did not fit, key by key:**
+
+- **The record footing beats the proxy shape.** `L281`'s "SPATIAL", "timelike" and "OVERALL FACTOR" are tokens occurring three or four times in B67, and on live prose each would be a proxy or unable to fail. On a record that never moves the wording is the record, so they are `DELIBERATE`. The same holds for `L257`'s kill-file fragment "one-dimensional by conformal flatness", which would be dangling on prose. ⇒ **The header's ⓹ says this for the subject rule; it should say it for the narrower-than-claim family too.** I've applied it that way and am flagging it rather than writing it into the header unasked.
+- **A proxy on a LIVE instrument's docstring.** `L281` "seventeen paper": the claim is that `reach_baseline` reads papers and not receipts, and the count is incidental. The corpus now holds eighteen non-appendix `.tex` files, so a docstring corrected to the true count would red the check with the finding standing.
+- **A quantifier subject.** `L257` "all three are settled": "all three" stands for "the three items named above" and works as a pronoun under ⓶. The header's pronoun list ("it", "this", "they", "these") does not name quantifiers, and the next reader may pass it.
+- **A verbless absolute phrase.** `L257` "the ultraviolet definition of the mode sums with them": its predicate and its pronoun's antecedent are both outside the span. This is the dangling counterpart of ⓸'s verbless appositive: the shape is the same, and nothing the claim needs is inside.
+
+---
+
+## re r7285 — order ① landed (the header); PRE-REGISTRATION for order ②, `L257_the_label_did_double_duty` (14) and `L281_the_prior_art_hole` (13), committed before any key is read
+
+**Order ①, landed in this commit: the subject rule is rewritten in `corpus/quote_pin_baseline.tsv`'s header as a test to run in order, before any sentence-tier verdict.**
+
+- **⓵ Read the span's first words.** A span that opens on a predicate, a relative pronoun or subordinator, a participle, a preposition, or an appositive whose head is outside it is dangling.
+- **⓶ Find the subject of the main verb.** If it is outside the span, or is a pronoun or demonstrative, the span is dangling; so is a pronoun object.
+- **⓷ A dangling span is `REPAIR-OWED` even when it reads as a complete proposition on its own.** This is the case 60's 38 land in, and the step carries the worked example "settles the in-regime all-orders stability directly", whose subject is "it" in the clause before.
+- **⓸ The verbless appositive, ruled.** With both of its terms inside the span, it is a clause for this rule and takes `MEANING-HELD`, not `DELIBERATE`: a reword keeps the identification standing (r7251 ①), and `DELIBERATE` is for names, values and unmoving records. With its head outside, it is dangling.
+- **⓹ Only a span that passes goes on** to the grain clause and the `DELIBERATE` / `MEANING-HELD` question. A quotation of a record shown not to move is `DELIBERATE` without the test.
+
+Three more header edits in the same commit:
+
+- **The narrower-than-claim family** goes under `REPAIR-OWED` as ⓐ–ⓔ: the proxy; the disjunction pinning a conjunction; the dead or undeciding ALT arm; the arm behind a vacuous guard; and **the fifth variant, a complete clause that drops its own condition.**
+- **The whole-clause bound** goes under `MEANING-HELD`.
+- **`DELIBERATE`'s record test** now reads the quoted LINE on the full history, not "a file with one commit in its history", per your ruling at r7283.
+
+**Pre-registration for order ②. Inputs used: target, tier and flags from the baseline, and the files each receipt opens. No literal was read.**
+
+| Prefix | Keys | What its pins read |
+|---|---|---|
+| `L257/V1` | 7 PAPER sentence, 6 SOURCE sentence (1 OPEN), 1 SOURCE token | P5, the canonical-time paper, `PROTECTED_OPEN.md`, `open_ledger.txt`, `check_open_ledger.py` |
+| `L281/P1` | 3 SOURCE sentence, 10 SOURCE token | code only: `prior_art.py`, `reach_baseline.py` and another receipt |
+
+**Modes called in advance: `L257` HIGH, `L281` LOW.** The same seat calling two different modes is itself the test of your ruling ①'s decomposition: part of the gap is the rule, and part is a real difference between prefixes.
+
+- **`L257`:** paper prose and register rows, where the subject rule bites.
+- **`L281`:** ten of its thirteen keys are tokens read out of code, which are names, identifiers and values (`DELIBERATE`), or terms that cannot fail.
+- ⇒ **If `L281` comes back high, my reading inflates `REPAIR-OWED` on any material, and the seat effect is larger than the rule.**
+
+**Bands:**
+
+| Share | `L257` (14) | `L281` (13) |
+|---|---|---|
+| `REPAIR-OWED` | 50–80% (7–11) | 15–45% (2–6) |
+| `MEANING-HELD` (whole-clause bound applied) | 0–20% | 0–10% |
+
+---
+
+## re r7283 — the crossed half: 25 of 25, mode HIGH as called, all four bands in
+
+**LANDED: 25 of 25 · REMAINING in the order: 0 · `UNADJUDICATED` 507 at this commit; with `-LIST` (19) and `-PINNED` (63), 589.** `check_quote_pins` exits 0: no new or stale key, and all 394 `MEANING-HELD` rows hold.
+
+**Against the pre-registration (`314f1fce1`):**
+
+| Prefix | `REPAIR-OWED` | `MEANING-HELD` | Other |
+|---|---|---|---|
+| `L802` (13) | 8, 62% (band 55–85) ✔ | 2, 15% (0–20) ✔ | 2 `DELIBERATE`, 1 `ENCODING-OK` |
+| `L207` (12) | 10, 83% (50–85) ✔ | 1, 8% (0–20) ✔ | 1 `DELIBERATE` |
+
+**Mode: HIGH on both prefixes, as called.** On your design that says the mode follows the seat, not the prefix. Here is what in my reading produces it, so the cross can be read rather than only scored. Of the 18 `REPAIR-OWED`:
+
+- **13 rest on the two rules your r7271 header added:** the subject rule (7: a dangling predicate, appositive or pronoun) and the co-occurrence shape (6: two fragments of one sentence pinned as two spans).
+- **4 are spans that cannot fail, are redundant, or are dead or vacuous arms.**
+- **1 is a clause that drops its own condition** (below).
+
+⇒ **A sharp test is available without waiting for 60's half.** Take 60's low-mode verdicts and count the `DELIBERATE` / `MEANING-HELD` rows whose span opens on a predicate, a relative pronoun or an appositive, or whose subject is a pronoun. If that count is large, the two seats differ on whether the subject rule applies to a span pinned as a proposition, and the fix is one sentence in the header. If it is small, 60's prefixes really are pinned on whole clauses and the mode follows the prefix.
+
+**Where the vocabulary did not fit, key by key:**
+
+- **A complete clause that drops its condition: a fifth narrower-than-claim variant.** `L207/W1` "the leaf's transverse-traceless mode evolves by a wave equation". P8 conditions it: "on a wave that one residual isometry still pins". The check claims the CONFINED case is exhibited, and the span states it unconditionally. The subject is named, the clause is whole, and the claim is still not carried.
+- **An arm behind a vacuous guard: a receipt defect, not a span defect.** `W1` "until r2376+c54.179" sits in `len(occurrences) == 0 or all(...)`, where the occurrences are sought case-sensitively for "...the construction raises". The comment writes "RAISES", so the first disjunct is always true and this literal is never evaluated. The repair is the guard.
+- **Dead ALT arms, the shape first met in `L202`.** `W1` "STRICTLY CONTAINS BOTH" occurs nowhere in P9, and the other arm reads `p9.lower()`, which would cover it anyway. `W1`'s "Hamiltonian constraint; …" / "is the spherical instance" is an ALT of two different sentences.
+- **A verbless appositive that carries the claim whole.** `L802/S1` "the one non-generic exception, the Nariai branch". It names its subject and leaves nothing the claim needs outside it, but it has no verb, so the subject rule's "clause" does not strictly fit. I counted it `MEANING-HELD`, held at the commit that wrote S1.
+- **A label not tested.** `S2`'s last check carries r2505's caveat as its label and asserts a P11 fragment about the graviton, which has nothing to do with the caveat. This is routed, not repaired, because the label is not the span.
+- **Names standing for a proposition, the proxy case.** `W2` "Lema" / "Tolman" (six and seven occurrences in P2) and `S2` "no-hair". By contrast, `S2`'s "Friedrich" and "Rodnianski" are `DELIBERATE` and "Ringstr" is `ENCODING-OK`, because there the claim is that S1 NAMES them.
+- **Redundant keys.** `W1` "is the Hamiltonian constraint" is inside its own `EXTENDED` partner. `S2`'s whole-clause `MEANING-HELD` key has an `EXTENDED` partner that is the same sentence clipped ("…a sweep cann").
+
+---
+
 ## re r7283 — PRE-REGISTRATION for the crossed half, `L802_stability_bracket` (13) and `L207_the_bend` (12), committed before any key is read
 
 **Inputs used, and nothing else:** each key's target, tier and flags from the baseline, and the documents each receipt opens. No literal was read.

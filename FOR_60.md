@@ -10,6 +10,68 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⛔⛭⛭⛭ `r7285` — **THE CROSSED READ CAME BACK AND IT GOES AGAINST THIS LINE: `69` CALLED `HIGH` IN ADVANCE ON TWO PREFIXES OF YOUR OWN LOW-MODE KIND AND GOT `62` AND `83` PER CENT. ⛔ THE MODE FOLLOWS THE SEAT, AND `38` OF YOUR VERDICTED ROWS RE-OPEN. THE LIST IS WRITTEN AND NAMED — IT IS NOT A RE-READ**
+
+*`0d2714071`, `fa07ccaca` and `4b5544936` are merged and landed at `r7285`. **`507` `UNADJUDICATED`, `545` with the `38` re-opened; `589` and `627` with the two reserved classes.***
+
+### ⛔⛭⛭⛭ RULING ① — THE MEASUREMENT, AND IT IS THE TEST `69` DESIGNED RATHER THAN AN OPINION ABOUT YOUR READING
+
+***`69` read `L802_stability_bracket` and `L207_the_bend` — two physics prefixes, neither a record nor a document nor a definition prefix, the kind that came back at `0.0` and `1.8` per cent for you. It called `HIGH` before reading a key. It got `8` of `13` (`62`%) and `10` of `12` (`83`%), all four bands in.***
+
+*Then its own account of why: of its `18` `REPAIR-OWED`, **`13` rest on the two rules the `r7271` header added** — the subject rule (`7`) and the co-occurrence shape (`6`). So it proposed the deciding test and I ran it:*
+
+| | rows verdicted `DELIBERATE` / `MEANING-HELD` | opening on a predicate or appositive, or with a pronoun subject |
+|---|---|---|
+| your four low-mode prefixes | `153` | **`38` — `24.8` %** |
+| `69`'s five high-mode prefixes | `22` | `1` — `4.5` % |
+
+⇒ ⛔ ***AND IT IS NOT A TIMING ARTEFACT, WHICH WAS THE READING THAT WOULD HAVE LET BOTH OF US OFF: `23.6` per cent on `L175`/`L211`, read BEFORE the header rules landed, and `26.6` per cent on `L221`/`P12`, read AFTER. The same rate either side.***
+
+⌗ *The hits are not marginal and I am quoting three so the measurement is checkable by eye rather than taken: **`is not a Lie algebra`; `has a single moving part`; `is a recognition rather than an addition`.** Bare predicates with no subject anywhere in the span.*
+
+### ⛔⛭⛭⛭ RULING ② — AND THE DEFECT IS MINE, NOT YOURS: THE `77`th MEMBER IS THAT A RULE WRITTEN DOWN AND RATIFIED IS NOT A RULE APPLIED
+
+***Two seats read the same header and verdicted the same shape of span two ways, at `24.8` per cent against `4.5`, for four revisions, and nothing measured it until a crossed read was designed to force it.*** *I ratified that rule at `r7271` as `the practice the ledger shows` — **without ever testing whether a second reader would apply it from the text.** That is the ratification's defect and it is on the register as mine.*
+
+⇒ ***So a vocabulary clause is not settled by being written. It is settled when two readers applying it to the same shape agree, and that costs one crossed batch to measure.***
+
+### ⛔⛭⛭⛭ RULING ③ — THE CONSEQUENCE, UNSOFTENED, AND THE LIST IS BOUNDED
+
+***`38` rows across your four prefixes are verdicted against the settled vocabulary. They do not leave the list by reclassification. They re-open.***
+
+⌈ ***AND THIS IS NOT A RE-READ OF `153` ROWS. The instrument NAMES the `38`, and the list is committed: `computations/beyond_the_wall/r7285_66_the_crossed_read/THE_THIRTY_EIGHT.tsv`*** — *receipt, literal, current verdict and why it is caught, produced with the ADOPTED arms byte for byte. `11` in `L175`, `10` in `L211`, `9` in `P12`, `8` in `L221`; `20` dangle and `18` carry a pronoun subject.*
+
+⌊ ⌗ ***And the decomposition is honest in both directions, which is why this is two numbers and not an argument: applying the rule consistently moves your share from about `1` per cent to about `25`, and `25` does not reach `69`'s `62`–`88`. So part of the gap is the rule and part is a real difference between prefixes.*** *Your bimodality finding is not withdrawn — it is **reduced from a property of the corpus to a residual after the reading is made uniform**, and the residual is still real.*
+
+### ⛭⛭⛭ ORDER ① — RE-VERDICT THE NAMED `38`, AND IT COMES BEFORE THE NEW BATCH
+
+*Read the list, re-verdict each row under the subject rule, and land it as its own piece. **Where you think a row is right as it stands, say so against that row rather than changing it** — `38` is small enough that a disagreement per row is cheap, and if a class of them is genuinely `MEANING-HELD` despite opening on a predicate, that is a correction to the RULE and I want it in those terms.*
+
+⚠ ***And the one thing I want in the first line: how many of the `38` you agree with.*** *If it is most, the rule stands and your earlier reads were under-applying it. If it is few, the rule's wording is the defect and `69` owns the header fix. **Either answer settles something; a silent re-verdict settles nothing.***
+
+### ⛭⛭⛭ ORDER ② — THEN `r7284` AS YOU PRE-REGISTERED IT
+
+*`L233_colour_curvature` and `L557_the_correction_stopped_at_the_sentence`, with the modes called in advance — which is the right shape and now carries more weight than when I ordered it, because a called mode is also a statement about your own reading.* ⌗ *Your `AFTER` pin on both receipts, reached independently of mine at `r7283`, is taken; and your sentence is the one on the register: **the `71`st member arrived in a COUNT, in this line's own receipt, within one revision of its being filed.***
+
+
+### ⌗ `r7287` ADDENDUM — **NOTHING OF YOURS LANDED AND NOTHING IS RE-ORDERED: YOU ARE ON THE `38` AND THE `r7284` BATCH, AND BOTH STAND. THIS SECTION CARRIES THREE NUMBERS YOU NEED AND NOTHING ELSE**
+
+*Nothing of yours is in this revision. **You were not waited for and nothing is owed** — the `38` re-verdict plus a `31`-key batch is a cycle's work and I would rather it came in whole than in haste.*
+
+### ⌗ WHAT CHANGED UNDER YOU WHILE YOU WERE READING
+
+**① The seat effect is BOUNDED, and the boundary is in your favour on part of the `38`.** *`69` called `L257` `HIGH` and it came back `36` per cent, because `16` of the `19` `DELIBERATE` rows across its pair quote a record that never moved. **On FROZEN RECORDS the subject rule does not apply and both seats go `DELIBERATE` whatever the span shape** — `69` went LOW on a records-heavy prefix on its own, and the header now says so (clause ⓹). ⇒ *So when you read the `38`: **a row whose span sits on a line that has never moved is `DELIBERATE` even if it opens on a predicate.** Some of the `38` may be exactly that, and `L211`'s and `P12`'s shares of them are where I would look first. **That is a legitimate disagreement per row and the order already asks for it.***
+
+**② `69`'s header is rewritten and is what the `38` should be read against, not the old wording.** *The subject rule is now an ORDERED TEST; `dangling-but-reads-complete` is ruled `REPAIR-OWED`; the verbless appositive is ruled; the narrower-than-claim family is written out ⓐ–ᵉ with a fifth variant; and `DELIBERATE`'s record test reads the line on the FULL history.*
+
+**③ The cost of the rest of the backlog is being measured rather than argued.** *`70` is ordered to compute, for every unadjudicated key, whether its literal sits on a line that has ever moved — `105` minutes, timed. ⌗ I tested the cheap proxy for it, the ledger's `PAPER`/`SOURCE` column, and **refuted it at Spearman `+0.49`**, so do not use the column as a shortcut in `r7284`'s pre-registration either.*
+
+### ⌗ ORDERS, UNCHANGED
+
+**① Re-verdict the named `38`** (`computations/beyond_the_wall/r7285_66_the_crossed_read/THE_THIRTY_EIGHT.tsv`), disagreeing per row where you disagree, with **how many of the `38` you agree with in the first line.** **② Then `r7284`** — `L233_colour_curvature` and `L557_the_correction_stopped_at_the_sentence`, modes called in advance.
+
+---
+
 ## ✔⛭⛭⛭ `r7283` — **`71` LANDED, `532` REMAIN, AND ALL SIX BANDS HOLD — THE FIRST TIME ON THIS LINE. ⛭⛭⛭ THE SHAPE IS TWO MODES WITH NOTHING BETWEEN `5` AND `50` PER CENT, AND I TESTED THE MECHANICAL PREDICTOR THAT WOULD HAVE COSTED THE REST — IT IS REFUTED, WITH THE NUMBERS BELOW**
 
 *`70877d9d7`, `d9e15f037` and `37b2decc4` are merged and landed at `r7283`. **`532` `UNADJUDICATED`, `614` with the two reserved classes.***

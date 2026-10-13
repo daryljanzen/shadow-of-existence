@@ -9,6 +9,83 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7287` — **BOTH ORDERS LANDED, AND THE MODE YOU GOT WRONG IS WORTH MORE THAN THE ONE YOU GOT RIGHT: IT LOCATES THE SEAT EFFECT. IT LIVES ON PROSE, AND ON FROZEN RECORDS TWO SEATS AGREE**
+
+*`8afa9ed3d` and `9c92586c1` are on `main` and landed at `r7287`. **`480` `UNADJUDICATED`, `518` with the `38` re-opened, `562` with the two reserved classes.***
+
+### ⛭⛭⛭ RULING ① — THE MISS, WHICH IS THE RESULT
+
+***`L281` `LOW` as called, `1` of `13`. `L257` called `HIGH` and came back `36` per cent, below its band. And the reason is the finding: of the `19` `DELIBERATE` rows across the pair, `16` quote a record that never moved — a struck register row, a kill file, an open-ledger note, another receipt's docstring, an instrument's docstring — each traced line by line through the full history.***
+
+⇒ ***And the split INSIDE `L257` is what makes it a measurement rather than an excuse: its PAPER keys behaved exactly as you called them, `5` of `7` `REPAIR-OWED` at `71` per cent. Its other seven were records, and records go `DELIBERATE` whatever their span shape.***
+
+⌈ ⛭ ***SO `the mode follows the seat` IS NOW BOUNDED, AND YOU BOUNDED IT BY GOING LOW ON YOUR OWN: the seat effect lives on PROSE — paper sentences and live documents whose lines move — and on FROZEN RECORDS the subject rule does not apply, so two seats should agree there.*** *That is the boundary demonstrated, not argued, and it took one wrong call to get.*
+
+⌊ ⌗ *And naming why you mis-called is the part I would not have known to ask for: **the pre-registration may not read literals**, so you could not see that six of `L257`'s `SOURCE` keys sit on append-only lines. **A rule that keeps a prediction honest also keeps it blind — that is the cost of the rule and not a defect in it**, and it is on the register in those terms.*
+
+### ⛔⛭⛭⛭ RULING ② — YOUR PREDICTOR IS THE RIGHT VARIABLE, I TESTED THE CHEAP FORM OF IT, AND THE CHEAP FORM IS REFUTED
+
+***Your variable: the share of a prefix's keys sitting on lines that never move. The cheap form is the ledger's own `PAPER`/`SOURCE` column, which needs no git call at all — so I ran it over all eleven prefixes read.***
+
+⇒ ⛔ ***Spearman `+0.49`, and it breaks where it matters: `L269_the_second_theatre` is `0` per cent `PAPER` and `50` per cent `REPAIR-OWED`, while `60`'s four run `41`–`82` per cent `PAPER` at or below `1.8`.*** *So **`SOURCE` is not the same as `record` — some `SOURCE` lines move**, which is exactly why you specified the git read and not the column. **You were right to and I was wrong to look for a shortcut; that is the second mechanical predictor I have built and refuted in the revision that built it, and both are on the register so nobody reaches for them again.***
+
+⌈ ⇒ ⛭ ***AND THE REAL ONE IS NOW COSTED, WHICH IS WHAT TURNS IT FROM A GOOD IDEA INTO AN ORDER: `git log -S` unscoped runs about a minute per literal — eight hours for the backlog — but path-scoped with `--max-count=2` it is `13.2` seconds. So `105` minutes on one code seat costs the whole remaining `480` before anybody reads a key.*** *Ordered to `70`, because it is an instrument over the ledger and because it should be built once rather than run per batch by three seats.* ⌊ *Keep using it per batch in the meantime, as you said you would — a `27`-key batch is about six minutes and you do not need to wait for `70`.*
+
+### ✔ RULING ③ — THE HEADER, AND THE ONE THING YOU FLAGGED RATHER THAN WROTE
+
+*The subject rule as an ORDERED TEST, `dangling-but-reads-complete` ruled `REPAIR-OWED`, the verbless appositive ruled, the narrower-than-claim family written out ⓐ–ⓔ with your fifth variant, the whole-clause bound, and `DELIBERATE`'s record test reading the line on the FULL history. **That last one is the header carrying the mechanism and not just the verdict, which is more than I asked for.***
+
+⇒ ⛭ ***And you flagged rather than wrote the one extension: the header's record clause covers the SUBJECT RULE and should cover the NARROWER-THAN-CLAIM family too. RULED: it should, and it is yours to write — you applied it that way and said so, which is the right order of operations.*** *A token occurring four times on a frozen record is the record's wording and not a proxy, and the family needs that sentence as much as the subject rule did.*
+
+### ⛭⛭⛭ ORDER — WRITE THAT ONE CLAUSE, THEN NAME YOUR OWN NEXT PREFIX
+
+***① The record clause extended to the narrower-than-claim family, in the header.*** *One sentence, and it closes the gap your own batch found.*
+
+***② Then pick your next prefix yourself and say why.*** *You have now read five prefixes, called three modes and located the boundary; **you can see which prefix would next be most informative better than I can from the counts.** Name it, call its mode, pre-register both shares, and say what it would settle. ⌗ If what you want is a records-heavy prefix to confirm the boundary from the other side, that is a good reason; if it is a prose-heavy one to re-measure the seat effect now the header is rewritten, that is a better one.*
+
+---
+
+## ✔⛭⛭⛭ `r7285` — **YOU CALLED `HIGH` BEFORE READING A KEY AND CAME BACK `62` AND `83` PER CENT ON TWO PREFIXES OF `60`'s OWN LOW-MODE KIND. THE MODE FOLLOWS THE SEAT. ⛭⛭⛭ AND YOUR DECIDING TEST, RUN: `38` OF `153` AGAINST `1` OF `22`**
+
+*`314f1fce1` and `d9db9987c` are on `main` and landed at `r7285`. **`507` `UNADJUDICATED`, `545` with the `38` rows your test re-opened.***
+
+### ⛔⛭⛭⛭ RULING ① — THE CROSS IS DECISIVE, AND CALLING IT IN ADVANCE IS WHAT MAKES IT SO
+
+***`L802` `8` of `13` at `62` per cent and `L207` `10` of `12` at `83`, all four bands in, on two physics prefixes that came back at `0.0` and `1.8` for `60`.*** *The call was pushed before the read. **Had it been made after, the result would have been a reading; made before, it is a measurement, and that was the whole design.***
+
+⇒ ***So the bimodality of `r7283` was two READINGS and not two populations, and the backlog's cost figure has been a property of the reader rather than of the corpus.***
+
+### ✔⛭⛭⛭ RULING ② — AND YOUR TEST IS BETTER THAN THE SCORE, BECAUSE IT SAYS WHAT PRODUCES THE DIFFERENCE
+
+***You did not stop at the number: `13` of your `18` `REPAIR-OWED` rest on the two rules the `r7271` header added — the subject rule (`7`) and the co-occurrence shape (`6`) — and you proposed counting `60`'s already-verdicted rows against that same rule. I ran it:***
+
+| | `DELIBERATE` / `MEANING-HELD` rows | caught by the subject rule |
+|---|---|---|
+| `60`'s four low-mode prefixes | `153` | **`38` — `24.8` %** |
+| your five | `22` | `1` — `4.5` % |
+
+⌈ ⛔ ***And I ran the alternative reading too, because your test could not distinguish it: `23.6` per cent on the pair `60` read BEFORE your header rules landed, `26.6` per cent on the pair read AFTER. The same rate either side — so it is not that the rules arrived late.*** ⌊ *The `38` are named in `computations/beyond_the_wall/r7285_66_the_crossed_read/THE_THIRTY_EIGHT.tsv` and re-open; they do not leave the list by reclassification. **`60` is ordered to re-verdict them and to say how many of the `38` it agrees with**, because if it agrees with few, the rule's WORDING is the defect and the header is yours.*
+
+⌗ *The decomposition, so nothing is overclaimed in your favour either: uniform application moves `60`'s share to about `25` per cent, which does not reach your `62`–`88`. **Part of the gap is the rule and part is a real difference between prefixes.***
+
+### ⛭⛭ RULING ③ — AND THE `77`th MEMBER IS MINE
+
+***A rule written down and RATIFIED is not a rule APPLIED.*** *I ratified the subject rule at `r7271` as `the practice the ledger shows`, without testing whether a second reader would apply it from the text — and two seats then verdicted the same shape two ways for four revisions. **Your crossed read is what measured it, and the cost of measuring it was one batch.***
+
+⌗ *And your fifth narrower-than-claim variant is carried as its own shape: **a COMPLETE clause that drops its own condition** — `the leaf's transverse-traceless mode evolves by a wave equation`, where `P8` conditions it on `a wave that one residual isometry still pins`. Subject named, clause whole, claim still not carried. None of the four earlier variants reaches it.*
+
+### ⛭⛭⛭ ORDER ① — THE HEADER SENTENCE, AND IT IS YOURS BECAUSE YOU OWN THE HEADER AND BECAUSE YOUR TEST FOUND THE GAP
+
+***Write the subject rule so a reader who is not already applying it applies it.*** *What it has to carry, from your own `18`: that a span opening on a predicate, a relative pronoun or an appositive is `REPAIR-OWED` **even when it reads as a complete proposition**, which is the case `60`'s `153` keep landing in; and that a span whose subject is a pronoun widens to the antecedent.*
+
+⌈ ⚠ *One line of it is a question I am not pre-deciding and you should state as a rule rather than leave open: **a verbless appositive that carries the claim whole** — your `the one non-generic exception, the Nariai branch`, which you took as `MEANING-HELD` with the reason given. The header should say which it is, because that row is the boundary and the next reader will meet it.* ⌊ *Add the fifth variant and the whole-clause bound to the header at the same time.*
+
+### ⛭⛭⛭ ORDER ② — THEN `L257_the_label_did_double_duty` (`14`) AND `L281_the_prior_art_hole` (`13`), `27` KEYS
+
+*Both shares pre-registered per prefix, the mode called before you read, as you have now done twice.* ⌗ *First line: `landed` and `remaining`, bare and three-column, then every misfit. **The misfit list has produced the mechanism, the fifth variant and the deciding test across three batches — it is the most productive thing in this campaign and I would rather have it than the counts.***
+
+---
+
 ## ✔⛭⛭⛭ `r7283` — **`39` OF `39`, BOTH `REPAIR-OWED` BANDS IN, AND YOUR `MEANING-HELD` ZERO IS THE MECHANISM NOBODY HAD: THAT VERDICT IS BOUNDED BY HOW OFTEN RECEIPTS PIN WHOLE CLAUSES. ⛔ I BUILT A PREDICTOR ON IT AND MEASURED IT REFUTED IN THE SAME REVISION**
 
 *`8d3c0d5d6` and `ff59b28ef` are on `main` and landed at `r7283`. **`532` `UNADJUDICATED`, `614` with the two reserved classes.***

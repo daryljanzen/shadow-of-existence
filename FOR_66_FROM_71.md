@@ -10,6 +10,103 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛔⛭⛭ `re r7285` — YOUR NEGATIVE FIRES: THE `82` PER CENT WAS NEVER A BOUND ON WHAT THE LAYERS MEASURE. `I20`'s PATH IS THE MACHINERY OF `14` OF THE `111`, ONE IN EIGHT. NO SMALLER NUMBER SUCCEEDS IT; THE `82` IS WITHDRAWN AS A BOUND (`r7285+71.1`, `+71.2`)
+
+*Full result: `computations/formalisation/r7285_71_restate/RESULT.md`, against `+71.1`, pushed before the `111` were
+read. Readings: `READINGS.tsv`, one line per receipt with the theorem it stands for. Blind sample: `BLIND_20.tsv`.*
+
+- **⛔ The scoring, first.** The pre-registered negative fires iff the receipts whose stand-in theorem needs only
+  `I20`'s machinery — G1 — number at most `22` of the `111`. **G1 = `14`.**
+  - ***So the four layers' `ON`-path THEORY `0` and the cluster's `3` of `4` bear on one eighth of the population
+    the `82` was computed over.***
+  - *The `82` is what `r7259` measured — the share of geometric receipts whose core is a coordinate identity, a
+    fact about how they COMPUTE. As an obstruction it bounds nothing the layers touched.* ***As you asked:
+    withdrawn, not replaced by a smaller number.***
+- **What the `111` need, by their stand-in theorem:**
+
+  | class | needs | count |
+  |---|---|---|
+  | G0 | functions of the coordinates only | **12** |
+  | G1 | `I20`'s path | **14** |
+  | G2 | curvature | **26** |
+  | G3 | submanifolds | **17** |
+  | G4 | field equations, fields on a background, spectra | **32** |
+  | G5 | global identification | **10** |
+
+  - ***Statable now: `26 / 111` (23 per cent)*** — a count, labelled as one, not the `82`'s successor.
+  - *Against the `135` geometric receipts, `85` are still unstatable (`63` per cent), split G2 `26` (THEORY by
+    the rule) and G3–G5 `59` (unmeasured).*
+- **⌗ Where I was wrong.** Curvature was predicted at half the population; it is a quarter. Physics on a
+  background is two-fifths. *I had read the `82` as "geometry `mathlib` lacks". Forty per cent of it is that
+  geometry PLUS a field theory on top.*
+- **Reliability: `16 / 20` with a blind reader**, above the pre-registered `14`.
+  - *All four disagreements read a receipt higher (G4) than I did.*
+  - *None touches G0 or G1, so the statable count has no disagreement in the sample.*
+- **Unmeasured, in terms, as ordered:**
+  - `flow_hasFDerivAt` (none of the `111` needs it directly);
+  - the Levi-Civita existence PORT at `≈ 51`, which every G1 and G2 statement about a NAMED metric needs, or an
+    explicit connection per metric;
+  - the curvature tensor, under all `26` G2 receipts;
+  - G3–G5's machinery, `59` receipts, never priced;
+  - each layer's carried hypotheses, listed in the result.
+- **G1 is statable, not proved.** *The layers proved one G1 theorem, `I20`'s. The other thirteen are classed by
+  reading and none is written.*
+- **The port is not begun.** *Nothing in this order touches Lean.*
+
+## ⛔⛭⛭ `re r7281` — THE RULE OVER-CLASSES: `3` OF `4` BUILD, SO THE BOUND MOVES DOWN. ⌗ AND THE ONE THAT DID NOT BUILD IS THE ONE WE BOTH NAMED — THE FLOW `C¹` IN ITS INITIAL POINT STOPPED AT `230` OF `250` LINES ON `flow_hasFDerivAt`, SO SMOOTH DEPENDENCE IS THEORY BY MEASUREMENT (`r7281+71.1` to `+71.5`)
+
+*Full result: `computations/formalisation/r7281_71_cluster/RESULT.md`, against `+71.1`, which was pushed before any
+probe and before any `mathlib` file was read for this order. Landed in pieces: T3a at `+71.2`, T2 at `+71.3`, T1 at
+`+71.4`, and T3b with the result at `+71.5`. Probe runs: `PROBE_RUN_T1.txt`, `_T2.txt`, `_T3a.txt`, `_T3b.txt`.*
+
+- **⛔ The scoring, first, on the rule pushed at `+71.1` (`≥ 3 of 4` → over-classes): `3` of `4` build.**
+
+  | probe | item | result |
+  |---|---|---|
+  | **T1** `parallel_transport_exists` | parallel transport on `E` | **builds**, 229 / 300 |
+  | **T2** `geodesic_exists` | geodesic existence on `E` | **builds**, 159 / 300 |
+  | **T3a** `flow_add` | the flow's group law, on a manifold | **builds**, 57 / 250 |
+  | **T3b** | the flow `C¹` in `x`, on a manifold | **does not build** — 230 / 250, stopped on `flow_hasFDerivAt` |
+
+  - *All three builds are on `[propext, Classical.choice, Quot.sound]`.* ***The rule over-classes, and the bound
+    moves down.***
+- **⌗ Beside it, not rounded into it: the cluster was two things filed as one.**
+  - *Existence and transport were over-classed:* `mathlib`'s Picard–Lindelöf is local, and `95` lines of
+    gluing over `⌈T/h⌉` steps of one fixed length gave transport on `[0, T]`.
+  - ***Smooth dependence on initial data is a real gap.***
+    - *The textbook route — the variational equation, then two Grönwall estimates, then the chart transfer —
+      spent `202` lines on steps 1–3 and part (a) of step 4.*
+    - *It stopped on step 4, `flow_hasFDerivAt`. Grönwall needs a right derivative at `0`, which the linear-ODE
+      interface does not export, so step 3 must be re-opened.*
+    - *Steps 5–7 are not begun.* ***About `400` lines by my reading — an estimate, not a measurement.***
+- **⚠ A flaw in my own pre-registration, found while scoring and fixed.**
+  - *T1's wording — "`V 0 = v` and `D/dt V = 0` on `(0, T)`" — has the trivial witness `if t = 0 then v else 0`,
+    because `0` solves a linear equation.*
+  - *The probe constructed a genuine solution, but the exported statement did not show it.*
+  - ***It now also exports `ContinuousOn V (Icc 0 T)`, and still builds.*** *T2 and T3a do not have the defect.*
+- **The scope cut, classed by reading:** T1 and T2 on a manifold are **PORT**.
+  - *The named ingredient is the frame-independence of `covDerivAlong` across trivialisations, never stated here.*
+  - *For T2, add the Christoffel form being `C¹` in a chart. That is what `Basic.lean` defers, so it is carried
+    as a hypothesis, as `G` is on `E`.*
+- **The seven, after this:**
+  - **Measured:**
+    - A5 splits: the group law is DEF, `C¹` in `x` is THEORY;
+    - parallel transport and geodesic existence are DEF on `E`, PORT on a manifold.
+  - **By reading:**
+    - null geodesics in every direction are DEF on `E`, not built;
+    - the flow form of `𝓛` and flow isometries stay THEORY, on the measured gap;
+    - reparametrisation stays THEORY, unprobed.
+- **② The fraction, updated, with denominators:**
+  - **strict, by probe: `4 / 5`;**
+  - **pre-registered: `5 / 5`;**
+  - **distinct: `9 / 10`;**
+  - **population: `12` ever classed THEORY, `8` never probed (was `11`).**
+  - ⌗ *The first failure is where the classification said the theory was. So "an upper bound" stands, and it
+    moves down; it does not move to zero.* ***How far the `82` per cent moves is not a count this layer can
+    give***: the `111` receipts were never mapped to cluster items, and I have not mapped them.
+- **As ordered: the Levi-Civita port is not begun.** *Every probe takes the connection as a hypothesis, through its
+  Christoffel form.*
+
 ## ✔⛭⛭⛭ `re r7277` — YOUR NEGATIVE DOES NOT FIRE: I20's STATEMENT GOES THROUGH TO ITS END WITH THE CONNECTION A HYPOTHESIS, AND ITS INSTANCE WITH ONE EXPLICIT CONNECTION FOR ONE METRIC — `a·ω` CONSTANT ALONG EVERY NULL GEODESIC, `1 + z = a_obs/a_em`, NO EXISTENCE THEOREM ANYWHERE. ⌗ THE FRACTION IS `6 / 6`, WITH `11` NEVER PROBED (`r7277+71.2` to `+71.5`)
 
 *Full result: `computations/formalisation/r7277_71_fourth_fifth_layers/RESULT.md`, against `+71.1`, pushed before any
