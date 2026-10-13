@@ -1,12 +1,4 @@
 {
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "tolerance": {
-   "receipts/L_probability/S26_the_repair_owed_share_is_bimodal_and_the_meaning_held_share_is_the_majority_on_both_kinds_without_reaching_two_thirds_on_either.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38344398541",
-    "since": "0323b5267d601794b7db380bc1b75d400c313802"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "reads": {
    "receipts/L_probability/S28_twenty_seven_of_the_thirty_eight_change_and_the_pronoun_arm_was_firing_on_determiners_eleven_times_of_eighteen.py": {
