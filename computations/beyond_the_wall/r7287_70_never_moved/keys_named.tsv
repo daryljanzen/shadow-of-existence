@@ -1,0 +1,366 @@
+# receipt	literal	target	verdict	class	files
+receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py	"$\\mathrm{dS}_{2}\\times S^{2}$"	PAPER	DELIBERATE	NEVER	corpus/BH_causality_v2.tex:1
+receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py	"What is claimed is the coincidence and not a value"	PAPER	REPAIR-OWED	NEVER	corpus/BH_causality_v2.tex:1
+receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py	"a third case"	PAPER	REPAIR-OWED	MOVED	corpus/CR_cosmology.tex:2
+receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py	"degenerate Nariai double root's power-law approach carries no scale"	PAPER	MEANING-HELD	NEVER	corpus/CR_cosmology.tex:1
+receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py	"exponential near-horizon approach"	PAPER	REPAIR-OWED	NEVER	corpus/CR_cosmology.tex:1
+receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py	"one fact serving two purposes"	PAPER	REPAIR-OWED	NEVER	corpus/BH_causality_v2.tex:1
+receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py	"the two readings are not reconciled here"	PAPER	REPAIR-OWED	NEVER	corpus/BH_causality_v2.tex:1
+receipts/L147_two_arm/B1_the_control_separates_prediction_from_shared_constant.py	"$1.18$ is not a fit"	SOURCE	DELIBERATE	NEVER	FOR_56.md:1
+receipts/L147_two_arm/B1_the_control_separates_prediction_from_shared_constant.py	"MEASUREMENT DISCREPANCY, not a framework verdict"	SOURCE	DELIBERATE	UNLOCATED	
+receipts/L147_two_arm/B1_the_control_separates_prediction_from_shared_constant.py	"PO-7` stays protected"	SOURCE	DELIBERATE	NEVER	FOR_56.md:1
+receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	"leaves no conflict marker to notice"	SOURCE	DELIBERATE	MOVED	CORPUS_MAP.md:2
+receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	"step"	SOURCE	REPAIR-OWED	MOVED	CORPUS_MAP.md:2 | FOR_56.md:2 | corpus/CR_cosmology.tex:2
+receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	"two consecutive stages of one argument"	SOURCE	DELIBERATE	MOVED	CORPUS_MAP.md:2
+receipts/L147_two_arm/B3_a_dichotomy_stated_is_not_a_dichotomy_proved.py	"0.7300"	SOURCE	REPAIR-OWED	NEVER	THE_LIVE_ARC.md:1
+receipts/L147_two_arm/B3_a_dichotomy_stated_is_not_a_dichotomy_proved.py	"21.8%"	SOURCE	REPAIR-OWED	MOVED	THE_LIVE_ARC.md:2
+receipts/L147_two_arm/B3_a_dichotomy_stated_is_not_a_dichotomy_proved.py	"ruling out one horn"	SOURCE	REPAIR-OWED	UNLOCATED	
+receipts/L147_two_arm/B3_a_dichotomy_stated_is_not_a_dichotomy_proved.py	"seam datum"	SOURCE	REPAIR-OWED	MOVED	THE_LIVE_ARC.md:2
+receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py	"antilinear"	SOURCE	REPAIR-OWED	MOVED	THE_LIVE_ARC.md:2
+receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py	"delta_g = D cos(k c_s (eta - eta_S) + phi)"	SOURCE	DELIBERATE	NEVER	computations/beyond_the_wall/ACOUSTIC_two_arm.py:1
+receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py	"phi = 0 is a density extremum with theta = 0"	SOURCE	DELIBERATE	NEVER	computations/beyond_the_wall/ACOUSTIC_two_arm.py:1
+receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py	"reality admits exactly two values, geometrically forced"	SOURCE	DELIBERATE	MOVED	THE_LIVE_ARC.md:2
+receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py	"theta_g = (3/4) D k c_s sin(phi)"	SOURCE	DELIBERATE	NEVER	computations/beyond_the_wall/ACOUSTIC_two_arm.py:1
+receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	"A frozen mode has no oscillation for the kernel to damp"	PAPER	MEANING-HELD	NEVER	corpus/CR_cosmology.tex:1
+receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	"every} mode exits it and freezes before the crossing"	PAPER	REPAIR-OWED	NEVER	corpus/CR_cosmology.tex:1
+receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	"label{sec:what-crosses}"	PAPER	DELIBERATE	NEVER	corpus/CR_cosmology.tex:1
+receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	"mode exits it and freezes before the crossing"	PAPER	REPAIR-OWED	NEVER	corpus/CR_cosmology.tex:1
+receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	"theta_g = (3/4) D k c_s sin(phi)"	SOURCE	DELIBERATE	NEVER	computations/beyond_the_wall/ACOUSTIC_two_arm.py:1
+receipts/L165_defining_the_sum/S1_seven_necessary_conditions_on_the_measure.py	"Brown and Kucha"	PAPER	REPAIR-OWED	UNLOCATED	
+receipts/L165_defining_the_sum/S1_seven_necessary_conditions_on_the_measure.py	"Here it does not"	PAPER	REPAIR-OWED	UNLOCATED	
+receipts/L165_defining_the_sum/S1_seven_necessary_conditions_on_the_measure.py	"path integral ranges over the conformal factor of the metric"	PAPER	REPAIR-OWED	UNLOCATED	
+receipts/L165_defining_the_sum/S1_seven_necessary_conditions_on_the_measure.py	"substrate's scale is $\\alpha$ and is fixed---not chosen, but required"	PAPER	MEANING-HELD	UNLOCATED	
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"Here it does not"	PAPER	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"The substrate's scale is $\\alpha$ and is fixed---not chosen, but required"	PAPER	MEANING-HELD	NEVER	corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"a harmonic oscillator, whose Hamiltonian is bounded below"	PAPER	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"finite throughout"	PAPER	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"harmonic oscillator"	SOURCE	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:2
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"is likewise confined"	PAPER	REPAIR-OWED	NEVER	corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"on an interval fixed by the progenitor mass"	PAPER	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"precisely the sector the conformal mode is absent from"	PAPER	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"so there is no conformal mode to integrate over"	PAPER	MEANING-HELD	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"the transverse-traceless shear"	PAPER	REPAIR-OWED	MOVED	corpus/canonical_time.tex:2
+receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py	"whether it is bounded below"	SOURCE	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2
+receipts/L165_defining_the_sum/S3_c6_is_a_theorem_not_a_condition.py	"FIBRE BY FIBRE"	SOURCE	REPAIR-OWED	NEVER	receipts/L165_defining_the_sum/S1_seven_necessary_conditions_on_the_measure.py:1 | receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py:1
+receipts/L165_defining_the_sum/S3_c6_is_a_theorem_not_a_condition.py	"at leading order"	SOURCE	REPAIR-OWED	NEVER	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py:1
+receipts/L165_defining_the_sum/S3_c6_is_a_theorem_not_a_condition.py	"decomposes as a DIRECT INTEGRAL over its spectrum"	SOURCE	REPAIR-OWED	NEVER	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py:1
+receipts/L165_defining_the_sum/S3_c6_is_a_theorem_not_a_condition.py	"irrelevant to whether each of its fibres receives a condition"	SOURCE	REPAIR-OWED	NEVER	receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py:1
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"bounded below by $\\gamma$ and unbounded above"	PAPER	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"commutes with the radial part"	PAPER	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"decomposes as a direct integral"	PAPER	REPAIR-OWED	NEVER	PROTECTED_OPEN.md:1 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"does not bear on the closure below"	PAPER	REPAIR-OWED	NEVER	PROTECTED_OPEN.md:1 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"does occupy both sides"	PAPER	REPAIR-OWED	NEVER	PROTECTED_OPEN.md:1 | corpus/canonical_time.tex:1 | receipts/P10_canonical_time/P10_the_straddle_is_computed.py:1
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"fibre by fibre"	PAPER	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:2
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"is not assumed here"	PAPER	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"not that the spectrum has a floor"	PAPER	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"straddle itself is a computed fact\\rcpt{P10_the_straddle_is_computed}"	PAPER	MEANING-HELD	NEVER	corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"the operator is a sum of squares"	PAPER	MEANING-HELD	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:1
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"uses only that both sides of the threshold are occupied"	PAPER	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/canonical_time.tex:2
+receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py	"whether it is bounded below"	SOURCE	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | receipts/P10_canonical_time/P10_the_straddle_does_not_need_a_floor.py:1
+receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"bounded BELOW and never above"	SOURCE	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1
+receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"five-dimensional $\\mathrm{dS}_5=SO(5,1)/SO(4,1)$"	PAPER	DELIBERATE	NEVER	THE_LIVE_ARC.md:1 | corpus/geometric_core_paper.tex:1
+receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"narrowing is always a node"	SOURCE	ENCODING-OK	NEVER	PROTECTED_OPEN.md:1 | THE_LIVE_ARC.md:1
+receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"the four-dimensional $\\mathrm{dS}_4$ is the \\emph{background} its leaves carry"	PAPER	MEANING-HELD	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py	"the single arc of that swing"	PAPER	MEANING-HELD	MOVED	THE_LIVE_ARC.md:2 | corpus/SdS-slicing-curve_v2.tex:1
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"a symmetry-breaking modulus is the adjustable parameter that criterion rejects"	PAPER	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1 | corpus/geometric_core_paper.tex:1
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"bounded BELOW and never above"	SOURCE	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"excluded not as disfavoured but as carrying an unfixed arbitrary modulus"	PAPER	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1 | corpus/matter_sector_paper.tex:1
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"has a single moving part"	PAPER	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1 | corpus/SdS-slicing-curve_v2.tex:1
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"narrowing is always a node"	SOURCE	ENCODING-OK	NEVER	PROTECTED_OPEN.md:1 | THE_LIVE_ARC.md:1
+receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py	"the single arc of that swing"	PAPER	MEANING-HELD	MOVED	THE_LIVE_ARC.md:2 | corpus/SdS-slicing-curve_v2.tex:1
+receipts/L175_dimensional_descent/E50_a_second_step_is_emptied_by_rule_two_and_not_forbidden_by_it.py	"\\\\dS_5\\$? is (?:the )?(?:derived |forced )?maximum|(?<!No )upper bound is established|substrate.{0,40}bounded above"	PAPER	ALT-OK	UNLOCATED	
+receipts/L175_dimensional_descent/E50_a_second_step_is_emptied_by_rule_two_and_not_forbidden_by_it.py	"a lower\\s*\\n?bound and not an equality"	PAPER	ENCODING-OK	UNLOCATED	
+receipts/L175_dimensional_descent/E51_the_scale_map_rank_reproduced.py	"reproduced nowhere else"	SOURCE	ENCODING-OK	UNLOCATED	
+receipts/L175_dimensional_descent/E51_the_scale_map_rank_reproduced.py	"the plane-section"	SOURCE	DELIBERATE	NEVER	kills/PO-9.md:1
+receipts/L175_dimensional_descent/E51_the_scale_map_rank_reproduced.py	"the scale map's rank being 1"	SOURCE	MEANING-HELD	NEVER	kills/PO-9.md:1
+receipts/L175_dimensional_descent/E52_the_plane_section_reduction_reproduced.py	"scale-only reduction"	SOURCE	DELIBERATE	NEVER	kills/PO-9.md:1
+receipts/L175_dimensional_descent/E52_the_plane_section_reduction_reproduced.py	"the count is TWO, not three"	SOURCE	MEANING-HELD	NEVER	kills/PO-9.md:1
+receipts/L175_dimensional_descent/E52_the_plane_section_reduction_reproduced.py	"the plane-section"	SOURCE	DELIBERATE	NEVER	kills/PO-9.md:1
+receipts/L175_dimensional_descent/E52_the_plane_section_reduction_reproduced.py	"transitive on unit spacelike normals"	SOURCE	MEANING-HELD	NEVER	receipts/L175_dimensional_descent/E50_a_second_step_is_emptied_by_rule_two_and_not_forbidden_by_it.py:1
+receipts/L175_dimensional_descent/E53_link_c_was_never_L533s.py	"JanzenShadowExistence"	PAPER	DELIBERATE	NEVER	corpus/algebroid_paper.tex:1 | corpus/geometric_core_paper.tex:1
+receipts/L175_dimensional_descent/E53_link_c_was_never_L533s.py	"every rung above the last being maximally symmetric"	SOURCE	MEANING-HELD	MOVED	kills/PO-9.md:2
+receipts/L175_dimensional_descent/E53_link_c_was_never_L533s.py	"is not a single world but a family"	PAPER	MEANING-HELD	NEVER	corpus/shadow_of_existence.tex:1
+receipts/L175_dimensional_descent/E53_link_c_was_never_L533s.py	"maximally symmetric and moduli-free for every"	PAPER	MEANING-HELD	MOVED	corpus/algebroid_paper.tex:1 | kills/PO-9.md:2
+receipts/L175_dimensional_descent/E53_link_c_was_never_L533s.py	"maximally symmetric and moduli-free in every dimension"	PAPER	MEANING-HELD	NEVER	corpus/geometric_core_paper.tex:1 | corpus/shadow_of_existence.tex:1 | kills/PO-9.md:1
+receipts/L175_dimensional_descent/E53_link_c_was_never_L533s.py	"silent on the dimension itself"	PAPER	MEANING-HELD	MOVED	corpus/algebroid_paper.tex:1 | corpus/shadow_of_existence.tex:1 | kills/PO-9.md:2
+receipts/L175_dimensional_descent/E53_link_c_was_never_L533s.py	"the count is ONE"	SOURCE	MEANING-HELD	NEVER	kills/PO-9.md:1
+receipts/L175_dimensional_descent/E53_link_c_was_never_L533s.py	"the moduli-free structure is the sole determinate answer"	PAPER	MEANING-HELD	NEVER	corpus/shadow_of_existence.tex:1 | kills/PO-9.md:1
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	"SO(5,1)/SO(4,1)"	PAPER	ENCODING-OK	MOVED	THE_LIVE_ARC.md:2 | corpus/algebroid_paper.tex:1
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	"Teitelboim1973"	PAPER	DELIBERATE	MOVED	THE_LIVE_ARC.md:2 | corpus/algebroid_paper.tex:1
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	"cut is four and **says nothing about the substrate**"	SOURCE	DELIBERATE	NEVER	THE_LIVE_ARC.md:1
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	"de Sitter substrate"	PAPER	ENCODING-OK	MOVED	THE_LIVE_ARC.md:1 | corpus/algebroid_paper.tex:2 | corpus/dynamics_paper.tex:2 | corpus/range_paper.tex:2
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	"evolves consistently to all orders by the contracted Bianchi identity"	PAPER	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1 | corpus/dynamics_paper.tex:1
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	"is a recognition rather than an addition"	PAPER	MEANING-HELD	NEVER	corpus/algebroid_paper.tex:1
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	"is not a Lie algebra"	PAPER	MEANING-HELD	MOVED	THE_LIVE_ARC.md:1 | corpus/algebroid_paper.tex:2
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	"no classical dynamical obstruction at any order"	PAPER	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1 | corpus/dynamics_paper.tex:1
+receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py	"the same algebra closes for the Lovelock theories"	PAPER	MEANING-HELD	NEVER	corpus/algebroid_paper.tex:1
+receipts/L175_dimensional_descent/N2_four_is_the_largest_dimension_that_forces_the_dynamics.py	"ADD MACHINERY"	SOURCE	DELIBERATE	NEVER	THE_BASE_RATE.md:1 | THE_LIVE_ARC.md:1
+receipts/L175_dimensional_descent/N2_four_is_the_largest_dimension_that_forces_the_dynamics.py	"REMOVE AN EXCEPTION succeed"	SOURCE	MEANING-HELD	NEVER	THE_BASE_RATE.md:1 | THE_LIVE_ARC.md:1
+receipts/L175_dimensional_descent/N2_four_is_the_largest_dimension_that_forces_the_dynamics.py	"The cut's dimension is settled"	SOURCE	MEANING-HELD	MOVED	PROTECTED_OPEN.md:2 | THE_LIVE_ARC.md:1
+receipts/L175_dimensional_descent/N2_four_is_the_largest_dimension_that_forces_the_dynamics.py	"bounded below only"	SOURCE	MEANING-HELD	MOVED	PROTECTED_OPEN.md:2 | THE_LIVE_ARC.md:2
+receipts/L175_dimensional_descent/N2_four_is_the_largest_dimension_that_forces_the_dynamics.py	"symmetry-breaking modulus"	PAPER	DELIBERATE	MOVED	THE_LIVE_ARC.md:2 | corpus/geometric_core_paper.tex:1 | corpus/matter_sector_paper.tex:1
+receipts/L175_dimensional_descent/N2_four_is_the_largest_dimension_that_forces_the_dynamics.py	"the first move is not to make the argument"	SOURCE	MEANING-HELD	NEVER	THE_BASE_RATE.md:1 | THE_LIVE_ARC.md:1
+receipts/L175_dimensional_descent/N3_the_criterion_is_the_programmes_own_and_it_is_stated.py	"a symmetry-breaking modulus is the adjustable parameter that criterion rejects"	PAPER	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1
+receipts/L175_dimensional_descent/N3_the_criterion_is_the_programmes_own_and_it_is_stated.py	"bounded below only"	SOURCE	MEANING-HELD	MOVED	PROTECTED_OPEN.md:2 | THE_LIVE_ARC.md:2
+receipts/L175_dimensional_descent/N3_the_criterion_is_the_programmes_own_and_it_is_stated.py	"forced rather than chosen"	PAPER	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	"The reading has no quarrel with a variational route"	PAPER	MEANING-HELD	UNLOCATED	
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	"The second-order Einstein--Hilbert action in the transverse-traceless sector reduces, mode by mode, to that of a harmonic oscillator"	PAPER	MEANING-HELD	UNLOCATED	
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	"Varying an action returns a field \\emph{equality}, and an equality has no direction"	PAPER	MEANING-HELD	UNLOCATED	
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	"available and unthrown"	SOURCE	MEANING-HELD	NEVER	VARIATIONAL_LEDGER.md:1
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	"conformal factor entering the Einstein--Hilbert action with the opposite sign"	PAPER	MEANING-HELD	UNLOCATED	
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	"is not a question the variation asks"	PAPER	MEANING-HELD	NEVER	VARIATIONAL_LEDGER.md:1
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	"reduced from the Einstein--Hilbert action"	PAPER	MEANING-HELD	UNLOCATED	
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	"the field with no footprint at all"	SOURCE	MEANING-HELD	NEVER	VARIATIONAL_LEDGER.md:1
+receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	"the two are orthogonal, not in competition"	PAPER	MEANING-HELD	UNLOCATED	
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"The cosmology carries no early-universe parameter"	PAPER	MEANING-HELD	NEVER	corpus/CR_cosmology.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"The matter-side count: open"	SOURCE	DELIBERATE	NEVER	CONSTANT_LEDGER_receipt.md:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"The metric function itself is derived here rather than taken as the standard Tangherlini--de~Sitter form"	PAPER	MEANING-HELD	NEVER	corpus/SdS-slicing-curve_v2.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"X1_the_ratio_is_a_clock_reading_not_a_carried_datum"	PAPER	DELIBERATE	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"a dimensionless magnitude needs two"	PAPER	MEANING-HELD	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"a hidden geometric freedom in the cosmology, or a genuinely free constant where the reading says it should lock"	PAPER	MEANING-HELD	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"a place where a genuinely free constant could have lived was checked and it locked"	PAPER	MEANING-HELD	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"whose \\emph{entire} solution space is"	PAPER	EXTENDED	NEVER	corpus/SdS-slicing-curve_v2.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"fundamental constants standing as unit gauges over the substrate"	PAPER	MEANING-HELD	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"The radiation amplitude at a start placed by hand, $\\omega_r(1+z_{\\mathrm{start}})/\\omega_m$, is that start read in units of a density rather than an inheritance"	PAPER	EXTENDED	NEVER	corpus/CR_cosmology.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"no_second_scale_on_either_face"	PAPER	DELIBERATE	MOVED	corpus/geometric_core_paper.tex:2
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"the defining quadric to $S^{5}$ of the \\emph{same} radius"	PAPER	EXTENDED	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"with $M$ the single constant of integration"	PAPER	EXTENDED	NEVER	corpus/SdS-slicing-curve_v2.tex:1 | corpus/geometric_core_paper.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"spends ZERO free dimensionless constants"	SOURCE	DELIBERATE	NEVER	CONSTANT_LEDGER_receipt.md:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"the fundamental constants enter as unit gauges over the single scale"	PAPER	MEANING-HELD	NEVER	corpus/CR_framework.tex:1 | corpus/canonical_time.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"$\\alpha=\\sqrt{3/\\Lambda}$ the sole remaining scale"	PAPER	EXTENDED	NEVER	corpus/CR_framework.tex:1
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"the quantization moreover closes \\emph{without a free parameter}. The scale-factor Hamiltonian carries deficiency indices $(1,1)$"	PAPER	EXTENDED	NEVER	corpus/canonical_time.tex:1
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"a dimensionless magnitude needs two"	PAPER	MEANING-HELD	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"a Yang--Mills term in four dimensions carries a dimensionless coupling that a single length cannot build"	PAPER	EXTENDED	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"The \\emph{generation-replication puzzle}---why the fermions come in three families, a number the Standard Model takes as an input---is, within CR, no free count but the fold of the one polynomial $f$"	PAPER	EXTENDED	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"no third mechanism has been named"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"so three is the maximally-symmetric matter construction's own index, not a datum to be fit"	PAPER	EXTENDED	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"the fold of the one polynomial $f$: the three walls count it and the comoving turnaround's deck carries it"	PAPER	EXTENDED	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"\\emph{The hypercharges are not a third undelivered item}: given those two, they follow from the per-wall anomaly conditions of \\S\\ref{sec:inflow} together with the existence of the Yukawa couplings, uniquely up to normalisation"	PAPER	EXTENDED	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"the position is not that the coupling is unbuilt but that a coupling is not the kind of thing a holonomy supplies"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"the substrate's one invariant being $\\alpha=\\sqrt{3/\\Lambda}$"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"the constant came out equal to \\emph{twice} the quark doublet's hypercharge, $2\\times\\tfrac16=\\tfrac13$, with nothing fitted"	PAPER	EXTENDED	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"C1_conformal_vs_isometric"	PAPER	DELIBERATE	NEVER	corpus/groupoid_paper.tex:1
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"U3_the_residue_is_one_and_it_is_already_counted"	PAPER	DELIBERATE	MOVED	corpus/geometric_core_paper.tex:2
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"X1_the_ratio_is_a_clock_reading_not_a_carried_datum"	PAPER	DELIBERATE	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"a single dimensionful input and nothing for a dimensionless tuning to hide in"	PAPER	MEANING-HELD	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"The one-scale reading therefore has a classical mechanism and is not only the outcome of an exhaustive audit"	PAPER	EXTENDED	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"that extra generator is the dilation carrying $\\alpha\\mapsto\\lambda\\alpha$"	PAPER	MEANING-HELD	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"the causal structure fixes the geometry up to the scale, and the scale is what it does not fix"	PAPER	MEANING-HELD	NEVER	corpus/groupoid_paper.tex:1
+receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py	"the group preserving the absolute is $\\mathrm{O}(5,1)\\times\\mathbb{R}^{+}$"	PAPER	MEANING-HELD	NEVER	corpus/geometric_core_paper.tex:1
+receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	"antimatter at the weight the fundamental branch is matter"	PAPER	REPAIR-OWED	NEVER	corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	"complexified cosmic time"	PAPER	REPAIR-OWED	MOVED	THE_LIVE_ARC.md:1 | corpus/CR_framework.tex:2
+receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	"mass-reflection"	PAPER	REPAIR-OWED	MOVED	THE_LIVE_ARC.md:2 | corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	"not claimed both ways"	SOURCE	REPAIR-OWED	NEVER	THE_LIVE_ARC.md:1
+receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	"reality involution"	PAPER	REPAIR-OWED	NEVER	THE_LIVE_ARC.md:1 | corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py	"second, antilinear face of the same object"	PAPER	REPAIR-OWED	NEVER	THE_LIVE_ARC.md:1 | corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"C=(Q\\mapsto-Q)_{\\mathrm{field}}\\circ(R\\circ K)_{\\mathrm{geometric}}"	PAPER	DELIBERATE	NEVER	corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"Feynman--St\\\"uckelberg particle$\\leftrightarrow$antiparticle wing structure"	PAPER	REPAIR-OWED	NEVER	corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"carrying $K$ with the cosmogenetic lap and its two wings"	PAPER	REPAIR-OWED	NEVER	THE_LIVE_ARC.md:1 | corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"complex-analytic and geometric"	PAPER	REPAIR-OWED	NEVER	corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"fixes the neutral real axis, the self-conjugate photon congruence"	PAPER	REPAIR-OWED	NEVER	THE_LIVE_ARC.md:1 | corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"not claimed BOTH WAYS"	SOURCE	REPAIR-OWED	NEVER	THE_LIVE_ARC.md:1
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"reality involution $K:\\tilde\\tau\\mapsto\\bar{\\tilde\\tau}$"	PAPER	DELIBERATE	NEVER	THE_LIVE_ARC.md:1 | corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"swaps the two conjugate wings of the lap"	PAPER	REPAIR-OWED	NEVER	corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"the self-conjugate photon congruence"	PAPER	REPAIR-OWED	NEVER	THE_LIVE_ARC.md:1 | corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"the two axis-symmetries of one analytic object"	PAPER	REPAIR-OWED	NEVER	THE_LIVE_ARC.md:1 | corpus/CR_framework.tex:1
+receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py	"two conjugate wings"	PAPER	REPAIR-OWED	NEVER	corpus/CR_framework.tex:1
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"Hamiltonian constraint; $\\rho=m'(r)/4\\pi r^{2}$ is its spherically symmetric case"	PAPER	REPAIR-OWED	NEVER	corpus/slicing_operator.tex:1
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"STRICTLY CONTAINS BOTH"	PAPER	REPAIR-OWED	UNLOCATED	
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"is the Hamiltonian constraint"	PAPER	REPAIR-OWED	MOVED	corpus/slicing_operator.tex:2
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"is the spherical instance"	PAPER	REPAIR-OWED	NEVER	corpus/slicing_operator.tex:1
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"it generates the stress-energy from the curve, not the curve's own dynamics"	PAPER	REPAIR-OWED	NEVER	corpus/slicing_operator.tex:1
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"strictly contains both"	PAPER	REPAIR-OWED	MOVED	corpus/range_paper.tex:2
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"the general inhomogeneous evolution is ordinary dynamical evolution of the leaf rather than a new generative law"	PAPER	MEANING-HELD	NEVER	corpus/slicing_operator.tex:1
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"the leaf's transverse-traceless mode evolves by a wave equation"	PAPER	REPAIR-OWED	NEVER	corpus/slicing_operator.tex:1
+receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py	"until r2376+c54.179"	PAPER	REPAIR-OWED	NEVER	corpus/slicing_operator.tex:1
+receipts/L207_the_bend/W2_the_general_inhomogeneous_leaf_exhibited.py	"EXHIBITION, not a DISCOVERY"	SOURCE	DELIBERATE	NEVER	THE_LIVE_ARC.md:1
+receipts/L207_the_bend/W2_the_general_inhomogeneous_leaf_exhibited.py	"Lema"	PAPER	REPAIR-OWED	MOVED	THE_LIVE_ARC.md:2 | corpus/janzen_circle_v3.tex:1
+receipts/L207_the_bend/W2_the_general_inhomogeneous_leaf_exhibited.py	"Tolman"	PAPER	REPAIR-OWED	MOVED	THE_LIVE_ARC.md:2 | corpus/janzen_circle_v3.tex:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"P13_the_construction_is_specifiable_and_colour_sits_in_the_spin_group"	PAPER	DELIBERATE	NEVER	corpus/boundary_paper.tex:1 | receipts/P13_boundary_paper/P13_the_construction_is_specifiable_and_colour_sits_in_the_spin_group.py:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"The module is the \\emph{branching} itself"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"closure-adjacency"	SOURCE	ENCODING-OK	NEVER	THE_LIVE_ARC.md:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"embeds in **exactly one**"	SOURCE	ENCODING-OK	NEVER	THE_LIVE_ARC.md:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"every ambient candidate is real"	PAPER	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1 | corpus/matter_sector_paper.tex:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"exactly one real form"	SOURCE	ENCODING-OK	UNLOCATED	
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"generate a finite group of order $81$ in $U(3)$"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"it is an ADD"	SOURCE	ENCODING-OK	NEVER	THE_LIVE_ARC.md:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"made the argument an ADD"	SOURCE	ENCODING-OK	UNLOCATED	
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"no curvature"	PAPER	DELIBERATE	MOVED	THE_LIVE_ARC.md:2 | corpus/matter_sector_paper.tex:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"none can carry"	PAPER	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1 | corpus/matter_sector_paper.tex:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"not a bundle of the substrate"	PAPER	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1 | corpus/matter_sector_paper.tex:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"other than $\\su(3)$ as a substrate isometry"	PAPER	MEANING-HELD	NEVER	corpus/boundary_paper.tex:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"parallel conjugation"	PAPER	DELIBERATE	MOVED	THE_LIVE_ARC.md:2 | corpus/matter_sector_paper.tex:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"selected\\/} rather than chosen"	PAPER	ENCODING-OK	UNLOCATED	
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"supplies no force"	PAPER	MEANING-HELD	MOVED	THE_LIVE_ARC.md:2 | corpus/matter_sector_paper.tex:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"that sector can be specified, and is obstructed twice"	PAPER	MEANING-HELD	NEVER	corpus/boundary_paper.tex:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"the bundle is \\emph{flat}"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"whose determinant-one part is $\\Delta(27)$ and lies in $SU(3)$, with the lap as its centre"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"$A_s"	PAPER	DELIBERATE	MOVED	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1 | THE_LIVE_ARC.md:2 | corpus/CR_cosmology.tex:2
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"10^{-122}"	PAPER	DELIBERATE	NEVER	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1 | THE_LIVE_ARC.md:1 | corpus/CR_cosmology.tex:1
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"10^{113}"	PAPER	DELIBERATE	NEVER	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1 | corpus/CR_cosmology.tex:1
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"4.17\\times10^{52}"	SOURCE	DELIBERATE	UNLOCATED	THE_ASSUMPTIONS_RETREATED_UPWARD.md:0
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"7.4\\times10^"	SOURCE	DELIBERATE	NEVER	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"A_s\\approx2\\times10^{-9}"	PAPER	DELIBERATE	NEVER	corpus/CR_cosmology.tex:1
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"\\rho_r/\\rho_m"	PAPER	ENCODING-OK	MOVED	THE_LIVE_ARC.md:2 | corpus/CR_cosmology.tex:2
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"\\rho_{r}/\\rho_{m}"	PAPER	ENCODING-OK	UNLOCATED	
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"as against the measurement---of $A_s$ and $n_s$"	PAPER	MEANING-HELD	NEVER	corpus/CR_cosmology.tex:1
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"dimensionless magnitude"	SOURCE	DELIBERATE	MOVED	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1 | THE_LIVE_ARC.md:2 | corpus/CR_cosmology.tex:1
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"does not drive $n_s\\to1$ by any \\emph{inflationary} attractor"	PAPER	MEANING-HELD	NEVER	corpus/CR_cosmology.tex:1
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"fixed by the progenitor collapse---the same handover that fixes $\\rho_r/\\rho_m$"	PAPER	MEANING-HELD	NEVER	corpus/CR_cosmology.tex:1
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"n_s"	PAPER	DELIBERATE	MOVED	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1 | THE_LIVE_ARC.md:2 | corpus/CR_cosmology.tex:2
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"two invariants"	SOURCE	DELIBERATE	MOVED	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1 | THE_LIVE_ARC.md:2
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	"1+\\cos z"	PAPER	ENCODING-OK	NEVER	corpus/janzen_circle_v3.tex:1
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	"M(1+\\cos z)"	PAPER	ENCODING-OK	NEVER	corpus/janzen_circle_v3.tex:1
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	"M\\left(1+\\cos z\\right)"	PAPER	ENCODING-OK	UNLOCATED	
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	"The heating leg"	PAPER	MEANING-HELD	NEVER	corpus/cosmogenesis_paper.tex:1
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	"The substrate route is closed; the progenitor route is open"	SOURCE	DELIBERATE	UNLOCATED	
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	"cannot fix a surviving light-element abundance"	PAPER	MEANING-HELD	NEVER	corpus/cosmogenesis_paper.tex:1
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	"it is the event that makes them"	PAPER	MEANING-HELD	NEVER	corpus/cosmogenesis_paper.tex:1
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	"only a subsequent \\emph{cooling} pass through the window can"	PAPER	ENCODING-OK	NEVER	corpus/cosmogenesis_paper.tex:1
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	"only a subsequent"	PAPER	ENCODING-OK	NEVER	corpus/cosmogenesis_paper.tex:1
+receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	"that class is a premise of the construction rather than a gap in it"	PAPER	MEANING-HELD	NEVER	corpus/cosmogenesis_paper.tex:1
+receipts/L211_closure_adjacency/A4_the_composition_rests_on_adiabaticity_not_uniformity.py	"Classical, non-vacuum primordial statistics"	PAPER	MEANING-HELD	NEVER	corpus/CR_cosmology.tex:1
+receipts/L211_closure_adjacency/A4_the_composition_rests_on_adiabaticity_not_uniformity.py	"a small perturbation shares its"	SOURCE	MEANING-HELD	NEVER	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1
+receipts/L211_closure_adjacency/A4_the_composition_rests_on_adiabaticity_not_uniformity.py	"adiabaticity parameter $C/\\mu_{n}$"	PAPER	DELIBERATE	NEVER	corpus/CR_cosmology.tex:1
+receipts/L211_closure_adjacency/A4_the_composition_rests_on_adiabaticity_not_uniformity.py	"background's composition"	SOURCE	DELIBERATE	NEVER	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1
+receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py	"10^{-6}"	SOURCE	DELIBERATE	NEVER	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1 | corpus/cosmogenesis_paper.tex:1
+receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py	"10^{113}"	PAPER	DELIBERATE	NEVER	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1 | corpus/CR_cosmology.tex:1
+receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py	"The substrate route is closed; the progenitor route is open"	SOURCE	DELIBERATE	UNLOCATED	
+receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py	"it is the event that makes them"	PAPER	MEANING-HELD	NEVER	corpus/cosmogenesis_paper.tex:1
+receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py	"observed"	SOURCE	REPAIR-OWED	MOVED	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1 | corpus/CR_cosmology.tex:2 | corpus/cosmogenesis_paper.tex:2
+receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py	"run the transfer chain backwards from the"	SOURCE	MEANING-HELD	NEVER	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1
+receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py	"run the transfer chain backwards"	SOURCE	MEANING-HELD	NEVER	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1
+receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py	"where matter domination ends"	SOURCE	MEANING-HELD	NEVER	THE_ASSUMPTIONS_RETREATED_UPWARD.md:1 | corpus/cosmogenesis_paper.tex:1
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"A node may write a bounded negative"	SOURCE	MEANING-HELD	NEVER	PROTECTED_OPEN.md:1
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"\\|\\s*~~\\*\\*PO-5\\*\\*"	SOURCE	ALT-OK	UNLOCATED	
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"`lepton` ×1 (inside a bibliography title), `quark` ×0"	SOURCE	DELIBERATE	MOVED	THE_LIVE_ARC.md:2
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"a closure on a protected item is made in the register with a kill receipt"	SOURCE	MEANING-HELD	NEVER	PROTECTED_OPEN.md:1
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"a count of gradings and not of fields"	PAPER	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1 | corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"baryon $1$, diquark $0$, meson $1$"	PAPER	DELIBERATE	MOVED	PROTECTED_OPEN.md:2 | THE_LIVE_ARC.md:1 | corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"made in the register with a kill receipt"	SOURCE	MEANING-HELD	NEVER	PROTECTED_OPEN.md:1 | THE_LIVE_ARC.md:1
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"one generation splits $12$ coloured against $3$ colourless"	PAPER	DELIBERATE	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"trivial on the deck $\\mathbb{Z}_{3}$"	PAPER	DELIBERATE	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"which is what carrying no colour would mean"	PAPER	MEANING-HELD	NEVER	THE_LIVE_ARC.md:1 | corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py	"with a right-handed neutrino"	PAPER	MEANING-HELD	MOVED	PROTECTED_OPEN.md:2 | THE_LIVE_ARC.md:1 | corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	"A node may write a bounded negative"	SOURCE	MEANING-HELD	NEVER	PROTECTED_OPEN.md:1
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	"Second quantisation"	PAPER	DELIBERATE	NEVER	PROTECTED_OPEN.md:1 | corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	"a count of gradings and not of fields"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	"a fermion on the compact face is an $\\SU(4)$ object"	PAPER	DELIBERATE	NEVER	corpus/boundary_paper.tex:1
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	"baryon $1$, diquark $0$, meson $1$"	PAPER	DELIBERATE	MOVED	PROTECTED_OPEN.md:2 | corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	"that sector can be specified, and is obstructed twice"	PAPER	MEANING-HELD	NEVER	corpus/boundary_paper.tex:1
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	"the round face carries no Dirac zero modes, so there is no massless content for it to act on"	PAPER	MEANING-HELD	NEVER	corpus/boundary_paper.tex:1
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	"the three wall modes are one operator's kernel and therefore identical particles"	PAPER	MEANING-HELD	MOVED	PROTECTED_OPEN.md:2 | corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/C2_gradings_become_fields_by_being_a_kernel.py	"trivial on the deck $\\mathbb{Z}_{3}$"	PAPER	DELIBERATE	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/P14_the_three_bridges_off_the_grading_all_land_on_the_same_ceiling.py	"PO-5 is (?:now )?closed|(?<!none is made that )(?<!and none that )the bridge does not exist|no bridge exists"	PAPER	ALT-OK	UNLOCATED	
+receipts/L221_quark_lepton/P14_the_three_bridges_off_the_grading_all_land_on_the_same_ceiling.py	"We make\\s+no claim about a fourth route, and none that the bridge does not exist"	PAPER	ENCODING-OK	UNLOCATED	
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"Dirac"	PAPER	DELIBERATE	MOVED	PROTECTED_OPEN.md:2 | corpus/boundary_paper.tex:2 | corpus/matter_sector_paper.tex:2
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"OPEN"	SOURCE	REPAIR-OWED	MOVED	PROTECTED_OPEN.md:2 | corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"PO-5"	SOURCE	DELIBERATE	MOVED	PROTECTED_OPEN.md:2
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"are one operator"	PAPER	ENCODING-OK	MOVED	PROTECTED_OPEN.md:2 | corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"external to the geometry"	PAPER	MEANING-HELD	NEVER	corpus/boundary_paper.tex:1 | corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"index"	PAPER	DELIBERATE	MOVED	PROTECTED_OPEN.md:2 | corpus/boundary_paper.tex:2 | corpus/matter_sector_paper.tex:2
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"is the $R$-odd \\emph{departure} from it"	PAPER	MEANING-HELD	NEVER	corpus/boundary_paper.tex:1
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"massless radial Dirac problem"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"radial first-order pair"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"takes up that opening concretely"	PAPER	MEANING-HELD	NEVER	PROTECTED_OPEN.md:1 | corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"the $R$-symmetric sector is exactly the offset-free, massless vacuum"	PAPER	MEANING-HELD	NEVER	corpus/boundary_paper.tex:1
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"the one opening through which matter might enter"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"the orientation parity and the threefold symmetry of the slicing"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"the zero-modes are massless, and their splitting is electroweak physics, external to the geometry"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/Q2_the_kernel_route_is_unavailable_off_the_R_even_sector.py	"PO-5"	SOURCE	DELIBERATE	MOVED	PROTECTED_OPEN.md:2
+receipts/L221_quark_lepton/Q2_the_kernel_route_is_unavailable_off_the_R_even_sector.py	"external to the geometry"	PAPER	MEANING-HELD	NEVER	corpus/matter_sector_paper.tex:1
+receipts/L221_quark_lepton/Q2_the_kernel_route_is_unavailable_off_the_R_even_sector.py	"index"	PAPER	DELIBERATE	MOVED	PROTECTED_OPEN.md:2 | corpus/matter_sector_paper.tex:2
+receipts/L221_quark_lepton/Q2_the_kernel_route_is_unavailable_off_the_R_even_sector.py	"kernel"	PAPER	DELIBERATE	MOVED	PROTECTED_OPEN.md:2 | corpus/matter_sector_paper.tex:2
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"$\\gamma\\le\\tfrac14<\\tfrac34$ places spectrum strictly below the threshold"	PAPER	MEANING-HELD	NEVER	corpus/canonical_time.tex:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"*It read MET, NOT OWED*"	SOURCE	DELIBERATE	NEVER	PROTECTED_OPEN.md:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"A generic problem on unusually good terms"	SOURCE	DELIBERATE	NEVER	kills/PO-6.md:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"LEDGER VERDICT ON A"	SOURCE	DELIBERATE	NEVER	corpus/open_ledger.txt:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"PO-14"	SOURCE	DELIBERATE	NEVER	corpus/CR_framework.tex:1 | corpus/open_ledger.txt:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"PO-23, opened r3809"	SOURCE	DELIBERATE	NEVER	PROTECTED_OPEN.md:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"THIS CLAUSE IS SUPERSEDED"	SOURCE	DELIBERATE	NEVER	PROTECTED_OPEN.md:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"The straddle itself is a computed fact\\rcpt{P10_the_straddle_is_computed}"	PAPER	MEANING-HELD	NEVER	corpus/canonical_time.tex:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"all three are settled"	PAPER	REPAIR-OWED	NEVER	corpus/CR_framework.tex:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"one-dimensional by conformal flatness"	SOURCE	DELIBERATE	NEVER	kills/PO-6.md:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"shared with every interacting field theory"	PAPER	REPAIR-OWED	NEVER	corpus/canonical_time.tex:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"supplied fibre by fibre and so cannot be broken by the size of the sub-threshold set"	PAPER	REPAIR-OWED	NEVER	PROTECTED_OPEN.md:1 | corpus/canonical_time.tex:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"the ultraviolet definition of the mode sums with them"	PAPER	REPAIR-OWED	NEVER	corpus/CR_framework.tex:1
+receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py	"ultraviolet definition of the tower sums---a different thing from a residual freedom in the quantization at the boundary"	PAPER	REPAIR-OWED	NEVER	corpus/canonical_time.tex:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"AGREED that it had"	SOURCE	REPAIR-OWED	NEVER	corpus/check_theatre_currency.py:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"CLOSED r3154 (`L-266`)"	SOURCE	REPAIR-OWED	MOVED	OWED.md:2 | THE_MATHEMATICS_REACH.md:2
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"MENTION VERSUS USE"	SOURCE	REPAIR-OWED	NEVER	corpus/check_theatre_currency.py:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"STRUCK r2383"	SOURCE	DELIBERATE	NEVER	THE_PHYSICS_REACH.md:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"THE COST, NAMED"	SOURCE	REPAIR-OWED	NEVER	corpus/check_theatre_currency.py:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"THE WALK IS COMPLETE r2544"	SOURCE	DELIBERATE	NEVER	THE_PHYSICS_REACH.md:0 | corpus/check_theatre_currency.py:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"THE ①② STRIKE — made r2383, and the delay is the finding"	SOURCE	DELIBERATE	MOVED	OWED.md:2 | THE_PHYSICS_REACH.md:2
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"WHAT IT CANNOT DO"	SOURCE	REPAIR-OWED	NEVER	corpus/check_theatre_currency.py:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"\"the earliest unrun\""	SOURCE	DELIBERATE	MOVED	OWED.md:2 | THE_PHYSICS_REACH.md:1 | corpus/check_theatre_currency.py:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"\"★ NEXT\""	SOURCE	DELIBERATE	NEVER	THE_MATHEMATICS_REACH.md:1 | THE_PHYSICS_REACH.md:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"\\|\\s*~*\\*\\*\\u24b8\\*\\*~*.*CLOSED"	SOURCE	NOT-A-PIN	UNLOCATED	
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"a consistency check that matches nothing is green forever"	SOURCE	REPAIR-OWED	UNLOCATED	
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"every station"	SOURCE	REPAIR-OWED	MOVED	OWED.md:2 | THE_PHYSICS_REACH.md:0 | corpus/check_theatre_currency.py:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"had already been run"	SOURCE	REPAIR-OWED	MOVED	OWED.md:2 | THE_PHYSICS_REACH.md:2
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"if not control_fires():"	SOURCE	DELIBERATE	NEVER	corpus/check_theatre_currency.py:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"reported six stations as AGREED that it had simply not read"	SOURCE	REPAIR-OWED	NEVER	corpus/check_theatre_currency.py:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"the delay is the finding"	SOURCE	REPAIR-OWED	MOVED	OWED.md:2 | THE_PHYSICS_REACH.md:2 | corpus/check_theatre_currency.py:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"the earliest unrun station"	SOURCE	DELIBERATE	NEVER	THE_PHYSICS_REACH.md:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"the earliest unrun"	SOURCE	DELIBERATE	MOVED	OWED.md:1 | THE_PHYSICS_REACH.md:2 | corpus/check_theatre_currency.py:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"the victim"	SOURCE	REPAIR-OWED	NEVER	THE_PHYSICS_REACH.md:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"weakens the gate everywhere"	SOURCE	REPAIR-OWED	NEVER	corpus/check_theatre_currency.py:1
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"~~①②"	SOURCE	DELIBERATE	MOVED	OWED.md:2
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"F5"	SOURCE	DELIBERATE	UNLOCATED	receipts/L829_po11_continuum_continues/S3_the_wall_index_is_real_because_sqrt_f_factors_out_of_the_operator_not_the_norm.py:-1
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"OVERALL FACTOR"	SOURCE	DELIBERATE	UNLOCATED	
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"SPATIAL"	SOURCE	DELIBERATE	UNLOCATED	
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"already DECIDED"	SOURCE	DELIBERATE	NEVER	corpus/prior_art.py:1 | corpus/reach_baseline.py:1
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"blind spot"	SOURCE	DELIBERATE	NEVER	corpus/prior_art.py:1
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"ln P ~ sqrt r"	SOURCE	DELIBERATE	NEVER	receipts/L829_po11_continuum_continues/S3_the_wall_index_is_real_because_sqrt_f_factors_out_of_the_operator_not_the_norm.py:1
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"matches words"	SOURCE	DELIBERATE	NEVER	corpus/prior_art.py:1
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"not a clean sheet"	SOURCE	DELIBERATE	NEVER	corpus/prior_art.py:1
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"oscillatory"	SOURCE	DELIBERATE	UNLOCATED	
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"receipt_heads"	SOURCE	DELIBERATE	NEVER	corpus/prior_art.py:1
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"regardless of the sign"	SOURCE	DELIBERATE	UNLOCATED	
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"seventeen paper"	SOURCE	REPAIR-OWED	NEVER	corpus/reach_baseline.py:1
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"timelike"	SOURCE	DELIBERATE	NEVER	receipts/L829_po11_continuum_continues/S3_the_wall_index_is_real_because_sqrt_f_factors_out_of_the_operator_not_the_norm.py:1
+receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py	"This is convergence across results"	PAPER	REPAIR-OWED	NEVER	corpus/dynamics_paper.tex:1
+receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py	"exactly the perturbative regime of the propagating graviton"	PAPER	REPAIR-OWED	NEVER	corpus/dynamics_paper.tex:1
+receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py	"extend cosmic no-hair and future stability to \\emph{all} data in the $T^3$-Gowdy class"	PAPER	REPAIR-OWED	NEVER	corpus/dynamics_paper.tex:1
+receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py	"settles the in-regime all-orders stability directly"	PAPER	REPAIR-OWED	NEVER	corpus/dynamics_paper.tex:1
+receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py	"the one non-generic exception, the Nariai branch"	PAPER	MEANING-HELD	NEVER	corpus/dynamics_paper.tex:1
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	"Friedrich"	SOURCE	DELIBERATE	MOVED	corpus/dynamics_paper.tex:2 | receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py:1
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	"Ringstr"	SOURCE	ENCODING-OK	NEVER	corpus/dynamics_paper.tex:1 | receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py:1
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	"Rodnianski"	SOURCE	DELIBERATE	NEVER	receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py:1
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	"The graviton's two propagating polarizations are exactly the transverse degrees of freedom a sweep cannot carry"	PAPER	MEANING-HELD	NEVER	corpus/range_paper.tex:1
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	"exactly the perturbative regime of the propagating graviton"	PAPER	REPAIR-OWED	NEVER	corpus/dynamics_paper.tex:1 | receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py:1
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	"no-hair"	SOURCE	REPAIR-OWED	MOVED	corpus/dynamics_paper.tex:2 | receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py:1
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	"only the loss of all confining symmetry frees"	PAPER	REPAIR-OWED	MOVED	corpus/range_paper.tex:2
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	"settles the in-regime all-orders stability directly"	PAPER	REPAIR-OWED	NEVER	corpus/dynamics_paper.tex:1 | receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py:1
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	"Grassmannian at six"	PAPER	MEANING-HELD	NEVER	corpus/algebroid_paper.tex:1
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	"The isotropy dimensions are the Killing-vector counts the construction establishes~\\cite{JanzenRange}"	PAPER	MEANING-HELD	NEVER	corpus/algebroid_paper.tex:1
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	"\\\\mathrm\\{SO\\}\\(4,1\\)\\$ at Type[~ ]?O"	PAPER	ENCODING-OK	UNLOCATED	
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	"at Nariai"	PAPER	DELIBERATE	MOVED	corpus/range_paper.tex:2
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	"at ten"	PAPER	DELIBERATE	MOVED	corpus/algebroid_paper.tex:2 | corpus/range_paper.tex:1
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	"every generic stratum (dimensions four, three"	PAPER	MEANING-HELD	NEVER	corpus/algebroid_paper.tex:1
+receipts/P12_algebroid/A1_the_triple_is_an_algebra_fact.py	"symmetric-pair isotropy dimensions of $\\so(5,1)$ are $\\{6,7,10\\}$"	PAPER	DELIBERATE	NEVER	corpus/algebroid_paper.tex:1
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"A RECEIPT THAT CANNOT FAIL"	SOURCE	MEANING-HELD	NEVER	FOR_54.md:1 | corpus/check_receipt_asserts.py:1 | corpus/check_receipts.py:1
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"A convention worth having, if the fork wants it"	SOURCE	MEANING-HELD	NEVER	FOR_54.md:1
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"absorbed r2384 rather than rediscovered"	SOURCE	MEANING-HELD	NEVER	corpus/check_receipt_asserts.py:1
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"hollow"	SOURCE	DELIBERATE	NEVER	corpus/check_receipts.py:1 | scripts/lint_assertions.py:1
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"provably cannot fail"	SOURCE	MEANING-HELD	NEVER	FOR_54.md:1 | scripts/lint_assertions.py:1
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"r2384"	SOURCE	DELIBERATE	NEVER	FOR_54.md:1 | corpus/check_receipt_asserts.py:1
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"r2442"	SOURCE	DELIBERATE	MOVED	FOR_54.md:2
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"what makes an artefact a receipt is not that it ran but that it could have come out false"	SOURCE	MEANING-HELD	NEVER	FOR_54.md:1
+receipts/P12_algebroid/A3_the_convergence_audit.py	"no third mechanism has been named"	SOURCE	MEANING-HELD	MOVED	PROTECTED_OPEN.md:2
+receipts/P12_algebroid/A4_the_ledger_seven_swept.py	"B24_the_triality_test_run"	PAPER	DELIBERATE	NEVER	corpus/matter_sector_paper.tex:1
+receipts/P12_algebroid/A4_the_ledger_seven_swept.py	"We state what that is and is not"	PAPER	MEANING-HELD	UNLOCATED	
+receipts/P12_algebroid/A5_the_dark_halves_audited.py	"L-165` · PO-6 · WHAT A QUANTUM OF THIS GEOMETRY IS"	SOURCE	DELIBERATE	NEVER	BOARD.md:1
+receipts/P12_algebroid/A5_the_dark_halves_audited.py	"PO-5"	SOURCE	DELIBERATE	MOVED	PROTECTED_OPEN.md:2
+receipts/P12_algebroid/A5_the_dark_halves_audited.py	"\\|\\s*~~"	SOURCE	ALT-OK	UNLOCATED	
+receipts/P12_algebroid/A5_the_dark_halves_audited.py	"coupling"	SOURCE	DELIBERATE	MOVED	PROTECTED_OPEN.md:2
+receipts/P12_algebroid/A5_the_dark_halves_audited.py	"register alias: **`L-221`**"	SOURCE	DELIBERATE	MOVED	PROTECTED_OPEN.md:2
+receipts/P12_algebroid/A5_the_dark_halves_audited.py	"satisfiab"	SOURCE	DELIBERATE	MOVED	BOARD.md:2 | PROTECTED_OPEN.md:2
+receipts/P12_algebroid/A7_the_frontier_has_two_kinds.py	"not the kind of thing a holonomy supplies"	SOURCE	MEANING-HELD	MOVED	PROTECTED_OPEN.md:2
+receipts/P12_algebroid/A7_the_frontier_has_two_kinds.py	"the whole difference is carried by"	PAPER	MEANING-HELD	MOVED	PROTECTED_OPEN.md:2 | corpus/CR_cosmology.tex:1
+receipts/P12_algebroid/A8_the_self_protecting_falsehood.py	"ADVERTISED AS OWED AFTER THE WORK THAT CLOSED IT WAS DONE"	SOURCE	MEANING-HELD	NEVER	corpus/check_open_ledger.py:1
+receipts/P12_algebroid/A8_the_self_protecting_falsehood.py	"B24_the_triality_test_run"	PAPER	DELIBERATE	MOVED	CORPUS_MAP.md:2 | corpus/matter_sector_paper.tex:1
+receipts/P12_algebroid/A8_the_self_protecting_falsehood.py	"routes rather than edits"	SOURCE	MEANING-HELD	NEVER	THE_WEAVE.md:1
+receipts/P12_algebroid/A8_the_self_protecting_falsehood.py	"the fork owns the papers"	SOURCE	MEANING-HELD	NEVER	CORPUS_MAP.md:1 | THE_WEAVE.md:1
+receipts/P12_algebroid/A8_the_self_protecting_falsehood.py	"the two routes agree on is the"	PAPER	MEANING-HELD	NEVER	CORPUS_MAP.md:1 | corpus/matter_sector_paper.tex:1
