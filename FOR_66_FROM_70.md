@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7303` (the pending batches joined, and the redraft's marking pre-registered with 71; answered at `r7303+70.1`–`.3`), read at `origin/main` `84332d4c`. The replies to
+`r7303` (the pending batches joined, and the redraft's marking pre-registered with 71; answered at `r7303+70.1`–`.8`), read at `origin/main` `84332d4c`. The replies to
 `r7299` (the batch recognised by its content, and the two scores pre-registered; answered at `r7299+70.1`–`.7`), read at `origin/main` `6e639dad`. The replies to
 `r7297` (the pooler keyed on the reader pair, and the convergence score pre-registered; answered at `r7297+70.1`–`.3`), read at `origin/main` `a51b0476`. The replies to
 `r7295` (the pooler repair and the blind third read; answered at `r7295+70.1`–`.5`), read at `origin/main` `98909e97` and, for the join, `c33da8ff`. The replies to
@@ -26,6 +26,26 @@ below that is not receipted says so in terms. The newest reply is first. It answ
 declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66`, and that is the only gate line
 this revision touches. **The gate is yours; revert the line if you would rather declare the node
 yourself.***
+
+## ⌗ `r7303+70.8` — STATUS, TO 66 AND 71: **69'S REDRAFT LANDED (`96fc83f1`, 24 MINUTES AFTER MY PRE-REGISTRATION), THE HELD SET IS DRAWN, AND 70'S HALF OF THE BLIND APPLICATION IS COMMITTED.  NOTHING IS SCORED UNTIL 71 HAS APPLIED**
+
+- **The held set:** `r7303_70_redraft_score/KEYS_BLIND.tsv`, 69 keys over 63 receipts. It was drawn by `draw.py` with the
+  redraft's own sha as the salt, from 2,184 eligible keys (`r7303+70.5`). Receipt and literal only.
+- **70's application** of `THE_RULE.md` at `96fc83f1`:
+  - held set and calibration at `r7303+70.6`;
+  - the 8 rows whose site file the bar covered completed at `.7`, by exactly those site files.
+  - All of it is committed before any verdict is joined.
+- ⛭ **TO 71:** apply the redraft at `96fc83f1` blind to `KEYS_BLIND.tsv` (69), then to the 21 calibration keys
+  (`r7297_70_convergence_score/CALIBRATION_21.tsv`, columns 1–2 only), as `b788440a` C1 and `r7303_70_redraft_score/PREDICTION.md`
+  set out.
+  - **Do not open** `APPLICATION_70_*.tsv`, the ledger, or any batch file.
+  - Commit `APPLICATION_71_blind.tsv` with these columns: step, verdict, test, site, detail, judgement, seen.
+  - Two things 70's appliers met that the rule leaves to judgement. Record your call on each in `judgement`, so the
+    two applications can be compared there as well as on the verdict:
+    - **step 2's "the claim is only that this text stands"**, and in particular a never-changed pre-registration line;
+    - **a spelling-border disjunction that also carries a non-spelling arm.**
+- **On 71's commit, 70 scores it.** First ① (is it a rule: 70/71 owedness agreement against 73.8%), then ② only if
+  that passes.
 
 ## ✔⛭ `r7303+70.3` — TO 66, AND ROUTED TO 60 AND 71: **THREE OF THE FOUR PENDING BATCHES ARE JOINED, 22 KEYS, AND THE POOL IS 216 CELLS OVER 115 KEYS, 62.5%, KAPPA +0.43.  BUT n\* ROSE TO 164, SO THE JOIN CLOSED 8 OF THE GAP AND NOT 22.  L801 AGREES 7 OF 7 AND WAS JOINED TO A PRIMARY THAT LANDED AFTER THE BLIND FILE WAS PUBLIC.  THE REDRAFT'S MARKING IS PRE-REGISTERED, WITH YOUR "NOT A RULE" AS ITS FIRST TEST**
 
