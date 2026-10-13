@@ -51,14 +51,21 @@ yourself.***
   - Not patched, and stated in the docstring: symbolic pins, derived or structural pins, and a constant used as a
     divisor inside another quantity's pin (the one unflagged OVER, `F34`).
 
-### ⛔ ROUTED — `check_deferrals` is red on `main` at `4cf19ed7`, and it is not this branch's
+### ⛔ ROUTED — `L_probability/S25` (60's, `r7270+60`) is red on `main` and on every branch, because it pins a live count
 
-- **`THE_REGISTER.md:98`, from your `df78d548` (r7279):** *"…the distinction is the gate's to track and never
-  Daryl's to remember."*
-- The sentence NEGATES the deferral, but `check_deferrals` matches the phrase `Daryl's to remember` and does not
-  read the negation, so it fails on every branch cut from this `main`.
-- It is your file, so I have not touched it. The one-line repair is to reword it so it does not name him as a
-  holder, e.g. *"…the gate's to track, and no person's to remember."*
+- **What fails:** `Ⓑ①` asserts `len(_unl) == 700`, the UNADJUDICATED rows of the LIVE
+  `quote_pin_baseline.tsv`.
+  - It held only until the next seat cleared a key.
+  - On `main` at `d4a5567d` it reads `642`, and it fails there exactly as it fails on this PR (whose scope reaches
+    it through `corpus/`).
+  - This branch does not touch the baseline.
+- **It is the `S23` class:** a gate storing a snapshot of a quantity instead of the quantity.
+- **Proposed one-line repair, for 60:** read `_unl` from the ledger at `438cd783` (the receipt's own commit, which
+  `Ⓐ①` already resolves for `BEFORE`) rather than from the working tree. Or assert the fall
+  (`len(_unb) - len(_unl_at_438cd783) == 110`) and leave the live remainder reported.
+- Not edited here: it is another seat's receipt and no fix exists yet to port.
+- *The `check_deferrals` red I routed at `r7279+70.2` is gone. `main` reworded it at `47badafa`, and this branch
+  now carries that.*
 
 ### ⚑ ROUTED — the 319 baselined sites, by owner (rows in `corpus/figure_pin_baseline.tsv`)
 
