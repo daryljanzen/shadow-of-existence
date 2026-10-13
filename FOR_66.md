@@ -14479,3 +14479,43 @@ if _own_sess is None:
 ***The withheld holder — the rate-rule `P15` receipt whose standing gate says it "computes NOTHING", so a computed check would falsify that gate's own label while its predicate passed. It now blocks three rows.*** *Withheld at `C75`, `C77` and `C80` for the same reason, each time gated by that receipt's own standing claim.* ⇒ **Rule it either way in one line and I will apply it. If no line comes, I will apply whichever way you rule whenever it arrives and will not raise it again.**
 
 ⌗ *`r7243` stands. **Next is `r7269` ③ / `r7287`: the backlog by prefix** — `L174_general_matter_dynamics` (`50`) and `L203_reach_stations` (`41`). Before I read a key I owe you three things and they come in the next push, in this order: **69's rewritten header read first** (the subject rule as an ORDERED TEST, `dangling-but-reads-complete` ruled `REPAIR-OWED`, the verbless appositive, the narrower-than-claim family ⓐ–ⓔ, `DELIBERATE`'s record test on the full history); **my MODE call STATED IN WRITING before the first key**; and **BOTH shares pre-registered**. ⌗ And I will not use the ledger's `PAPER`/`SOURCE` column as a shortcut — I refuted it myself at Spearman `+0.49`.*
+
+## ⌗⛭⛭ `r7283+cc66.19` — **LANDED `64` OF `71`. REMAINING `7`, ALL FILED LIMITS.** ⌗ **THE `L174`/`L203` CLAIM AND PRE-REGISTRATION, PUSHED BEFORE A SINGLE KEY IS READ — AND I REFUTED A SECOND CHEAP PROXY ON THE WAY IN, WORSE THAN THE ONE YOU REFUTED**
+
+*`corpus/pin_claims.tsv` carries both `CLAIM` rows; `check_pin_board` runs `rc=0` with `2` live claims and no double claim. `PREREGISTRATION.md` is in the same push. **No receipt of either prefix is open.** `69`'s rewritten header read in full first, as ordered.*
+
+### ⛭⛭ THE CALL: **`HIGH`, BOTH PREFIXES — AND THE REASON IS THE READER, NOT THE PREFIX**
+
+| prefix | keys | `SENT` | `TOKEN` | **`REPAIR-OWED` called** | **share** |
+|---|---|---|---|---|---|
+| `L174_general_matter_dynamics` | `50` | `42` | `8` | **`28`** | **`56`%** |
+| `L203_reach_stations` | `41` | `23` | `18` | **`16`** | **`39`%** |
+
+⌈ ***Your header says at ⓷ that dangling-but-reads-complete is the case the rule exists for and the one a second reader keeps passing — `38` of `60`'s `153` against `1` of `69`'s `22`. I am running the rewritten rule AS A TEST, IN ITS ORDER, FROM THE FIRST KEY, and its mechanical effect is to route dangling spans to `REPAIR-OWED` before any sentence-tier verdict exists. So I land in `69`'s band for that reason and not from the prefixes.*** ⌊
+
+**Two further things pinned SEPARATELY so each can fail on its own:** *`L174`'s share will exceed `L203`'s **by at least `10` points** (`43.9` per cent of `L203`'s keys are `TOKEN` tier against `L174`'s `16.0` — names, which the subject rule has no jurisdiction over); and **at least `85` per cent of the `REPAIR-OWED` rows I return will be `SENTENCE` tier**, which is the mechanism rather than the total.*
+
+⌗ *And the one thing that could pull me `LOW` without the rule failing is your own frozen-record bound. **I do not claim to have measured the never-moved share** — that is `70`'s `105`-minute sweep and I am not duplicating it. All I have is thirteen receipt names from a directory listing (`I1`–`I10` on the stratification, the shear count and constraint propagation; `M1`–`M4` on the equianharmonic group, the monodromy group and two declared station gaps) — physics-claim receipts rather than ledger audits. **That is a weak reason and I offer it as one.***
+
+### ⛔⛭⛭⛭ AND THE `tier` COLUMN IS A WORSE PROXY THAN THE ONE YOU REFUTED — **SPEARMAN `+0.00`**
+
+*You refuted `PAPER`/`SOURCE` at `+0.49` and told me not to use it; I have not. **I tested the next cheapest column before starting and it is dead flat: mean `SENTENCE` share `80.8` per cent on `60`'s four against `83.4` on `69`'s three, Spearman `+0.00` over the seven.** The two bands pin sentences at the same rate.*
+
+⇒ ⛭⛭⛭ ***SO HERE IS THE NUMBER I THINK YOU WANT, AND IT IS THE LAST COLUMN RATHER THAN THE HEADLINE ONE — `REPAIR-OWED` AS A SHARE OF EACH PREFIX'S `SENTENCE` KEYS:***
+
+| `60`'s four | | `69`'s three | |
+|---|---|---|---|
+| `L175_dimensional_descent` | `0.0`% | `L269_the_second_theatre` | `70.6`% |
+| `L200_free_data_count` | `0.0`% | `L202_phase_at_the_seam` | `88.2`% |
+| `L211_closure_adjacency` | `2.6`% | `L165_defining_the_sum` | `78.8`% |
+| `L221_quark_lepton` | `2.1`% | | |
+
+***The split is NOT in how many sentences a prefix pins. It is ENTIRELY in what the reader does with a sentence.*** *That is `the mode follows the SEAT` stated as a measurement instead of a correlation, and it is `0` versus `80` rather than anything gradual.*
+
+### ⛔⛭⛭ AND THE BIMODALITY IS A PROPERTY OF THE SEVEN, NOT OF THE BACKLOG
+
+*Your `r7283` note says nothing sits between `5` and `50` per cent. Over the whole ledger, **`10` of the `27` prefixes with at least `10` verdicted keys sit strictly inside that gap**: `L281` `6.7`, `P10` `9.8`, `L204` `14.2`, `L257` `31.2`, `L165_interacting_tower` `32.0`, `L550` `33.3`, `L548` `37.5`, `P16` `38.1`, `L147_two_arm` `43.3`, `L802` `44.4`.*
+
+⇒ *The gap is real **among the seven read under the `r7271` order** — it is not the backlog's shape. **Which is why I pre-registered a NUMBER and not a band: a number can land in the middle and a band cannot**, and the middle is where a third reader meeting a rewritten rule might honestly end up.*
+
+⌗ *Refutation conditions are in `PREREGISTRATION.md` and there are five. **The one I would most want recorded is the first: either share below `20` per cent, which would say the rewritten header did not transfer to a third reader** — the thing you said my call is evidence about. ⌗ The read starts on the next push. `r7243` stands.*
