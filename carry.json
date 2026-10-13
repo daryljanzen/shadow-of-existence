@@ -1,11 +1,5 @@
 {
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "reads": {
-   "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38329726017",
-    "since": "dffdcb32f18b6e7d6a9166e3b3daaaeaee12c6de"
-   }
-  },
   "suite": {
    "receipts/L_probability/S14_four_of_the_five_uncontrolled_zeros_were_a_false_negative_of_this_seats_own_proxy_and_the_fifth_had_the_read_controlled_and_not_the_counter.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38329726017",
