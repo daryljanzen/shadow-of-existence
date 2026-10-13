@@ -10,6 +10,38 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛔⛭⛭ `re r7293` — G5 SPLITS: P1, P2, P3 ALL BUILD, BUT THE HOMOGENEOUS SPACE `G/H` IS ABSENT, SO "GLOBAL" IS A THIRD KIND OF OBSTRUCTION AND THE `r7291` READING OF TWO WAS PREMATURE. ⌗ IT IS ONE RECEIPT: `9` OF `10` STATABLE, `97` OF `111`, AND THE MAP IS CLOSED (`r7293+71.1` to `+71.3`)
+
+*Full result: `computations/formalisation/r7293_71_global/RESULT.md`, against `+71.1`, which was pushed before any
+probe and before any `mathlib` file was read for this order. Run: `PROBE_RUN_P1_P3.txt`. Search: `SEARCH_G5.txt`.
+Every theorem rests on `[propext, Classical.choice, Quot.sound]`.*
+
+- **⛔ The scoring, first.**
+
+  | probe | what | result |
+  |---|---|---|
+  | **P1** | product metric `g₁ ⊕ g₂`; ***the round `S²` as a pullback, positive definite*** | **builds**, 62 / 200 |
+  | **P2** | `ℝ → AddCircle β` a covering; a free cyclic action of order `n` | **builds**, 25 / 150 |
+  | **P3** | ***the `cos`/`cosh` seam is `C¹` and NOT `C²`***; the Wick map between the complex quadrics | **builds**, 100 / 200 |
+  | search, G5d (80) | `G/H` as a manifold | ***ABSENT*** — *`mathlib` charts only quotients by free, properly discontinuous actions, and its own TODO leaves even those unsmooth* |
+  | search, G5e (26) | causal curves, `J⁻`, inextendibility, time orientation | *every object absent; reachable as definitions over present parts, listed in the result* |
+
+  - ***The rule says SPLITS.*** *The count is `97`, not the `96` the rule's row printed: that row had the arithmetic
+    for both G5d and G5e absent. Said in the result, not revised in the pre-registration.*
+- **⌗ Your negative.** *"Global" is a third kind: the smooth structure on a quotient by a non-discrete group,
+  absent. **It is one receipt, not a stratum.***
+- **⌗ The map, closed — the one sentence your order asked for:** ***stating the corpus waits on four named things
+  the libraries lack — spectral theory (`9`), spin (`3`), the volume form (`1`) and homogeneous spaces (`1`).
+  Proving what is statable waits on the Levi-Civita PORT and the `C²` tensorial packaging.***
+  - *`97` of `111` statable; `93` on measured machinery alone.*
+- **Beside the score:**
+  - *Receipt 80 would be statable on a hyperboloid stand-in, which makes `98`. The rule scored its own object.*
+  - *G5e is reachable by the rule's "definition over present parts". On a strict "present", it is absent too and the
+    count is `96`.*
+  - *P2 is topological; 18 is statable off the branch locus only.*
+  - *P1 does not assemble `dS₂ × S²` with radii. P3 represents neither the signature flip nor the real forms.*
+- **The port is not begun.**
+
 ## ✔⛭⛭ `re r7291` — G3 IS STATABLE: S1 AND S2 BOTH BUILD, SO THE INDUCED METRIC OF A MAP AND THE SECOND FUNDAMENTAL FORM ARE STATABLE WITH THE CONNECTION AND THE METRIC HYPOTHESES, AND THE COUNT GOES FROM `69` TO `88` OF `111`. NO THIRD KIND OF OBSTRUCTION. ⌗ BUT YOUR "THE RESIDUAL IS THE TWO ABSENCES" DOES NOT HOLD AS STATED: THE RESIDUAL IS `23`, AND `10` OF IT IS G5, WHICH NO LAYER HAS MEASURED (`r7291+71.1` to `+71.4`)
 
 *Full result: `computations/formalisation/r7291_71_submanifolds/RESULT.md`, against `+71.1`, which was pushed before
