@@ -15,7 +15,6 @@
 #
 # ** THE OWED COUNT may only fall; the ceiling lives in check_cannot_fail.py and nowhere else. **
 receipts/L165_interacting_tower/D4_the_state_fixer_has_its_own_threshold.py	T2c	(-0.25 + 0.25) <= 0 and (-0.24 + 0.25) > 0	1	CONSTANT	r7119 ruling: arithmetic on literals verifying a quoted figure; deliberate, counted apart
-receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	T5	'same' in p0	1	UBIQUITOUS-ARM	r7139+70.1: an or-arm in most files of its kind -- a PROXY (recall 3 of 5); reported, not enforced
 receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	T4	('within-state' in row or 'identical in content' in row) if t == 'PO-2' else True	1	GUARDED-TRUE	r7139+70.1: the claim is tested on one branch and passes on the rest; repair -- test every case or narrow the loop
 receipts/L221_the_bridge/B55_right_kind_right_place_numerical_declined.py	T2c	(5-4) == 1 and (4-4) == 0	1	CONSTANT	r7119 ruling: arithmetic on literals verifying a quoted figure; deliberate, counted apart
 receipts/L221_the_bridge/B64_the_composite_route_does_not_close.py	T5	'de Sitter' in bnd	1	UBIQUITOUS-ARM	r7139+70.1: an or-arm in most files of its kind -- a PROXY (recall 3 of 5); reported, not enforced

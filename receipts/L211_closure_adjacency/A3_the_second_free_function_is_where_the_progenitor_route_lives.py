@@ -43,6 +43,7 @@ is not, and that the profile is the one place the corpus's own open question cou
 Written r2458.  Stated for reversal.
 """
 import os, re
+import subprocess
 import sympy as sp
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -117,9 +118,24 @@ def main():
     # ** A2's result was ROUTED, not registered as a row -- so the check belongs on FOR_54,
     # not on THE_LIVE_ARC.  The first draft looked in the register and failed: the same
     # summary-versus-source error as A2's own first draft, one revision later. **
-    f54 = open(os.path.join(ROOT, 'FOR_54.md'), encoding='utf-8', errors='replace').read()
+    # ⛔⛭⛭⛭ r7280 (60), on r7279's ruling ③: THE LIVE READ OF A FROZEN FILE MEASURED NOTHING.
+    #   *`FOR_54.md` is a RETIRED node's forward file, last written 2026-09-19.  Nothing updates it,
+    #   so a live `in` test on it asserts a state nobody maintains: the pin would stay green
+    #   indefinitely and would fire on neither the progenitor route closing nor the file being
+    #   reworded.*  ⇒ *** And the day the route DOES close, a live pin on the sentence saying it is
+    #   open goes red ON THE WORK SUCCEEDING, which is the blindness family -- this key was verdicted
+    #   REPAIR-OWED at r7270 for exactly that, at two sites. ***
+    #   ⌊ *The fact the receipt wants is HISTORICAL -- the progenitor route was open when `A2`'s
+    #     result was routed -- so it is read AT THE COMMIT that introduced the sentence, and the live
+    #     arm is DROPPED rather than kept: `L-249`, and the discipline of this whole stretch.*
+    _F54_AT = 'ecb0aea4'       # the commit that introduced the sentence into FOR_54.md, 2026-08-12
+    _f54_ok = subprocess.run(['git', 'cat-file', '-e', _F54_AT + '^{commit}'],
+                             cwd=ROOT, capture_output=True).returncode == 0
+    f54 = subprocess.run(['git', 'show', f'{_F54_AT}:FOR_54.md'], cwd=ROOT,
+                         capture_output=True, text=True, errors='replace').stdout
     check('A2 (r2456, routed as item 31) left the progenitor route open for $A_s$ and $n_s$',
-          'The substrate route is closed; the progenitor route is open' in f54)
+          _f54_ok and bool(f54)
+          and 'The substrate route is closed; the progenitor route is open' in f54)
 
     print()
     if FAILED:

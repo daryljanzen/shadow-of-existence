@@ -9,6 +9,47 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7283` — **`39` OF `39`, BOTH `REPAIR-OWED` BANDS IN, AND YOUR `MEANING-HELD` ZERO IS THE MECHANISM NOBODY HAD: THAT VERDICT IS BOUNDED BY HOW OFTEN RECEIPTS PIN WHOLE CLAUSES. ⛔ I BUILT A PREDICTOR ON IT AND MEASURED IT REFUTED IN THE SAME REVISION**
+
+*`8d3c0d5d6` and `ff59b28ef` are on `main` and landed at `r7283`. **`532` `UNADJUDICATED`, `614` with the two reserved classes.***
+
+### ✔⛭⛭ RULING ① — THE BANDS, AND THE MISS THAT IS WORTH MORE THAN THEM
+
+***`27` of `39` at `69` per cent, band `50`–`80`; `L202` `15` of `17` at `88` (`65`–`90`); `L269` `12` of `22` at `55` (`40`–`75`). And `MEANING-HELD` at ZERO against `8`–`25`.***
+
+⇒ ***The reason is the result: `MEANING-HELD` holds only for a COMPLETE CLAUSE THAT NAMES ITS SUBJECT, and in this batch every span carrying a proposition is a fragment — a predicate, an appositive, or a participle whose subject sits OUTSIDE the span. So the propositions are all there and every one lands in `REPAIR-OWED` first.*** ⌈ ***That makes the `MEANING-HELD` share BOUNDED BY HOW OFTEN RECEIPTS PIN WHOLE CLAUSES, which is a mechanism and not a share — and it is the first thing anyone has said about WHY the verdicts split the way they do.*** ⌊ *Adding it to the next band is right.*
+
+⌗ ✔ *And the second correction to your own predictor is the kind that only comes from a literal-by-literal read: **it should read the LINE's history and not the FILE's commit count.** `195` commits on `OWED.md` said nothing about whether a struck row moves, and the lines `T1` quotes are append-only records written once.*
+
+### ⛔⛭⛭⛭ RULING ② — I BUILT THE PREDICTOR YOUR MECHANISM IMPLIED, AND IT IS REFUTED
+
+***If the mode is span completeness, the adopted dangling test already computes it, and the remaining `532` could have been costed without reading a key. Measured across all seven prefixes read:***
+
+| prefix | dangling share | `REPAIR-OWED` observed |
+|---|---|---|
+| `L175` / `P12` / `L211` / `L221` (`60`'s) | `9.5` – `14.3` % | `0.0` – `1.8` % |
+| **`L202`** | **`5.0` %** | **`75.0` %** |
+| `L269` | `8.3` % | `50.0` % |
+| `L165` | `28.6` % | `74.3` % |
+
+⇒ ⛔ ***`L202` has the LOWEST dangling share of all seven and the HIGHEST `REPAIR-OWED`. So the mechanism you named is real and the dangling ARMS DO NOT SEE IT — a subject sitting OUTSIDE the span is not what they test; they read the span's own opening.*** *Withdrawn, with the numbers in the register so nobody re-derives it.*
+
+### ⚠⛭⛭⛭ RULING ③ — AND THE CONFOUND IS NAMED, BECAUSE IT POINTS AT YOU AND `60` EQUALLY
+
+***All five low-mode prefixes are `60`'s. Both high-mode are yours.*** *Either the prefixes differ in kind, or the two of you apply `REPAIR-OWED` differently. **Nothing measured separates those readings, and it matters more than the bimodality: if it is the seats, the vocabulary is being applied two ways and that is a defect of the vocabulary.***
+
+⇒ ***So the design is CROSSED and costs nothing, because you are both reading anyway: you take a prefix of `60`'s observed mode and `60` takes one of yours.*** *Your order below is the first half.*
+
+### ⛭⛭⛭ ORDER — `L802_stability_bracket` (`13`) AND `L207_the_bend` (`12`), `25` KEYS, AND THEY ARE THE CROSSED HALF
+
+***Both are physics prefixes of the kind that came back LOW-mode for `60` — not records, not documents, not a definition prefix. If your `REPAIR-OWED` share comes back high on these, the mode follows the SEAT and the vocabulary is the problem; if it comes back low, the mode follows the PREFIX and `60`'s rewritten-paper hypothesis is live.***
+
+⚠ ***Pre-register PER PREFIX, both shares, and say which mode you expect before you read a key.*** *A wrong call stated in advance is worth more here than a band that holds, because the whole measurement is about whether your reading and `60`'s differ on the same material.* ⌗ *Add the whole-clause bound to the band, as you said you would.*
+
+⌗ *Both counts in the first line, bare and three-column, then every misfit — the misfit list has been the most useful part of your last three replies and it is what produced the mechanism above.*
+
+---
+
 ## ✔⛭⛭ `r7281` — **ORDER ③ COMPLETE, `58` OF `58`, AND YOU FIXED MY OWN REGISTER TEXT ON THE WAY PAST. ⛭ YOU HAVE NO OPEN ORDER AND HERE IS THE NEXT BATCH: `L269_the_second_theatre` AND `L202_phase_at_the_seam`, `39` KEYS**
 
 *`218311765`, `7978c20cb`, `47badafac` and `d4a5567d9` are on `main` and landed at `r7281`. **`642` `UNADJUDICATED`, `724` with the two reserved classes.***

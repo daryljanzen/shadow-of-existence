@@ -172,17 +172,31 @@ def carried(ledger, lines, which):
     return out
 
 
-def apply(ledger, branch, which, ran, red, sha, run, gone):
+def apply(ledger, branch, which, ran, red, sha, run, gone, relabelled=None):
     """this push's delta: every receipt it RAN is cleared unless red; every red is added (keeping the
-    first push it was seen at); a receipt no longer registered leaves, by name"""
+    first push it was seen at); a receipt no longer registered leaves, by name.
+    ⛭ r7281+70.1: when `red` is a MAPPING receipt -> labels (the `suite` class), the failing gates' labels
+    are written beside `since`/`run` as `gates`, and a receipt already carried and red again is told apart:
+    `relabelled` lists (receipt, old labels or None, new labels) whose labels CHANGED -- a gate newly red in
+    an already-carried receipt is the `73`rd member's case, which the two-field entry had nowhere to write.
+    Pass a list as `relabelled` to receive (receipt, old labels or None, new labels) for each."""
     cur = ledger.setdefault(branch, {}).setdefault(which, {})
+    labels = red if isinstance(red, dict) else {}
     added, cleared, kept = [], [], []
+    relabelled = relabelled if relabelled is not None else []
     for rec in sorted(ran):
         if rec in red:
+            new = labels.get(rec)
             if rec in cur:
                 kept.append(rec)
+                old = cur[rec].get('gates')
+                if new is not None and old != new:
+                    relabelled.append((rec, old, new))
+                    cur[rec]['gates'] = new
             else:
                 cur[rec] = {'since': sha, 'run': run}
+                if new is not None:
+                    cur[rec]['gates'] = new
                 added.append(rec)
         elif rec in cur:
             del cur[rec]
@@ -202,16 +216,65 @@ def apply(ledger, branch, which, ran, red, sha, run, gone):
 # ------------------------------------------------------------------------------------ evidence
 SUITE_RED = re.compile(r'^    \[(FAIL|slow)\] (\S+)', re.M)
 SUITE_VERDICT = re.compile(r'^  (\d+) pass, (\d+) fail, (\d+) over timeout', re.M)
+# ⛭ r7281+70.1: THE FAILING GATE'S LABEL, read from the lines the runner keeps under a red (`run_one`, r7163:
+#   `FAIL  | ` for every output line matching FAIL, then the stderr and stdout tails).  Three rules, in order:
+#   ① a GATE LINE -- a kept line carrying `[FAIL]` or `FAIL:`/`FAILED:`; the label is the gate's glyph id when
+#     the text after the marker opens with one (`Ⓑ①`, `⓸ᵇ`), else its first 60 characters.  A banner such as
+#     `RESULT: FAILED` carries no marker of that form and is not a gate.
+#   ② no gate line but a TRACEBACK -- `<ExceptionType> @ L<n>`, the innermost frame in the receipt's own file:
+#     a bare `assert`'s label.
+#   ③ neither -- `[]`: the run named no gate.  A whole-scope carry writes `[]` for every receipt in it.
+GATE_MARK = re.compile(r'\[FAIL\]|\bFAIL(?:ED)?:')
+GLYPH_ID = re.compile(r'^[\u2460-\u24ff\u2776-\u2793\u1d2c-\u1d6a\u2070-\u209f0-9a-z]*[\u2460-\u24ff\u2776-\u2793]'
+                      r'[\u2460-\u24ff\u2776-\u2793\u1d2c-\u1d6a\u2070-\u209f0-9a-z]*')
+_FRAME = re.compile(r'File "([^"]+)", line (\d+)')
+_EXC = re.compile(r'^([A-Za-z_][\w.]*(?:Error|Exception|Exit|Interrupt))\b')
+
+
+def gate_labels(kept, receipt):
+    """the labels of the gates that failed, from the lines kept under one red (each `TAG  | text`)"""
+    fails = [l.split('|', 1)[1].strip() for l in kept if l.strip().startswith('FAIL') and '|' in l]
+    out = []
+    for t in fails:
+        m = GATE_MARK.search(t)
+        if not m:
+            continue
+        rest = t[m.end():].strip()
+        g = GLYPH_ID.match(rest)
+        lab = g.group(0) if g else re.sub(r'\s+', ' ', rest)[:60]
+        if lab and lab not in out:
+            out.append(lab)
+    if out:
+        return sorted(out)
+    tail = [l.split('|', 1)[1] for l in kept if l.strip().startswith(('stderr', 'stdout')) and '|' in l]
+    base = os.path.basename(receipt)
+    frames = [int(m.group(2)) for l in tail for m in [_FRAME.search(l)] if m and os.path.basename(m.group(1)) == base]
+    exc = [m.group(1) for l in tail for m in [_EXC.match(l.strip())] if m]
+    if exc:
+        return [f'{exc[-1]} @ L{frames[-1]}' if frames else exc[-1]]
+    return []
 
 
 def reds_suite(log):
+    """{receipt: [gate labels]} for every red the runner named, or None when the parse cannot account for
+    the verdict's count -- a red we cannot name is a red we cannot clear"""
     t = open(log, encoding='utf-8', errors='replace').read()
     v = SUITE_VERDICT.search(t)
     if not v:
         return None
-    red = {m.group(2) for m in SUITE_RED.finditer(t)}
-    # the verdict counts are the check on the parse: a red we cannot name is a red we cannot clear
-    return red if len(red) == int(v.group(2)) + int(v.group(3)) else None
+    lines, red, cur = t.split('\n'), {}, None
+    for l in lines:
+        m = SUITE_RED.match(l)
+        if m:
+            cur = m.group(2)
+            red[cur] = []
+        elif cur and l.startswith('        '):
+            red[cur].append(l)
+        else:
+            cur = None
+    if len(red) != int(v.group(2)) + int(v.group(3)):
+        return None
+    return {r: gate_labels(k, r) for r, k in red.items()}
 
 
 def reds_tolerance(dirs, root, scope):
@@ -266,12 +329,22 @@ def do_union(root, which, path, remote):
     for r in sorted(carry):
         e = carry[r]
         print(f'    carried since {e["since"][:10]} on {e["line"]}: {r}'
+              + (f'  -- gate(s) {e["gates"]}' if e.get('gates') else
+                 '  -- the run named no gate' if e.get('gates') == [] else '')
               + ('  (NOT REGISTERED here -- cannot run)' if r in absent else ''), file=sys.stderr)
     if carry and tip:
         print(f'  ⌗ PO-68: what the ledger has recorded about these before, read at the run:', file=sys.stderr)
         print_history([h for h in history_lines(root, events(root), set(carry)) if h['which'] == which],
                       stream=sys.stderr, indent='    ')
     return 0
+
+
+def _relabel_tag(old, new):
+    """`≠` when a gate is red that was not before; `=` when the same receipt is red on fewer gates or
+    its labels are recorded for the first time"""
+    if old is not None and set(new) - set(old):
+        return '≠ red for a NEW gate'
+    return '= still red' + (', labels first recorded' if old is None else ', on fewer gates')
 
 
 def do_record(root, which, path, outcome, evidence, remote):
@@ -286,8 +359,9 @@ def do_record(root, which, path, outcome, evidence, remote):
     else:
         red = evidence()
         if not red:
-            red, how = set(ran), (f'the job ended "{outcome}" with no receipt it can name -- '
-                                  f'the WHOLE scope of {len(ran)} is carried')
+            red = {r: [] for r in ran} if which == 'suite' else set(ran)
+            how = (f'the job ended "{outcome}" with no receipt it can name -- '
+                   f'the WHOLE scope of {len(ran)} is carried')
         else:
             how = f'{len(red)} named red'
     regs = set(_mod('receipt_scope').registered(root))
@@ -297,24 +371,33 @@ def do_record(root, which, path, outcome, evidence, remote):
     for _ in range(TRIES):
         ledger, tip = fetch(root, remote)
         gone = {r for r in (ledger.get(branch, {}).get(which) or {}) if r not in regs}
-        added, cleared, kept, removed = apply(ledger, branch, which, ran, red, sha, run, gone)
+        relabelled = []
+        added, cleared, kept, removed = apply(ledger, branch, which, ran, red, sha, run, gone, relabelled)
         still = sorted((ledger.get(branch, {}).get(which) or {}))
         print(f'  RECORD ({which}, {branch} @ {sha[:10]}): ran {len(ran)}, {how}; '
               f'+{len(added)} carried, {len(cleared)} cleared by a green, {len(kept)} still red, '
               f'{len(removed)} no longer registered; {len(still)} carried after this push', file=sys.stderr)
-        for tag, xs in (('+ carried', added), ('- cleared', cleared), ('= still red', kept),
+        new_gate = {r for r, o, n in relabelled}
+        for tag, xs in (('+ carried', added), ('- cleared', cleared),
+                        ('= still red', [r for r in kept if r not in new_gate]),
                         ('- UNREGISTERED, leaves by name', removed)):
             for r in xs:
-                print(f'    {tag}: {r}', file=sys.stderr)
+                g = (ledger.get(branch, {}).get(which) or {}).get(r, {}).get('gates')
+                print(f'    {tag}: {r}' + (f'  -- gate(s) {g}' if g else ''), file=sys.stderr)
+        for r, o, n in relabelled:
+            print(f'    {_relabel_tag(o, n)}: {r}  -- {o if o is not None else "unrecorded"} -> {n}',
+                  file=sys.stderr)
         if added or kept:
             print(f'  ⌗ PO-68: the ledger\'s history for what is red here, read at the run:', file=sys.stderr)
             print_history([h for h in history_lines(root, events(root), set(added) | set(kept))
                            if h['which'] == which], stream=sys.stderr, indent='    ')
-        if not (added or cleared or removed):
+        if not (added or cleared or removed or relabelled):
             return 0
         msg = (f'{which} @ {branch} {sha[:10]}: +{len(added)} -{len(cleared)} ={len(kept)}'
-               + (f' unregistered {len(removed)}' if removed else '') + f'\n\n{run}\n'
-               + ''.join(f'\n{t} {r}' for t, xs in (('+', added), ('-', cleared), ('x', removed)) for r in xs))
+               + (f' unregistered {len(removed)}' if removed else '')
+               + (f' relabelled {len(relabelled)}' if relabelled else '') + f'\n\n{run}\n'
+               + ''.join(f'\n{t} {r}' for t, xs in (('+', added), ('-', cleared), ('x', removed)) for r in xs)
+               + ''.join(f'\n~ {r} {o} -> {n}' for r, o, n in relabelled))
         if write(root, ledger, tip, msg, remote):
             return 0
         print('  red_carry: another job moved the ledger first -- re-reading and re-applying', file=sys.stderr)
@@ -635,11 +718,68 @@ def seed():
         res['11. the ledger is a history in the repository, one commit per write'] = len([l for l in log if l]) >= 6
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
+    res.update(seed_labels())
     for k, v in res.items():
         print(f'    [{"ok" if v else "FAIL"}]  {k}')
     ok = all(res.values())
     print(f'\n  carried exactly when it should be, cleared exactly when it should be: {ok}')
     return 0 if ok else 1
+
+
+def seed_labels():
+    """r7281+70.1: the `gates` field, both ways, on a built suite log and the same `apply` CI calls"""
+    res = {}
+    log = ('\n'.join([
+        '    [FAIL] receipts/A/S14.py  (12s)',
+        '        FAIL  | [FAIL] \u24b6\u2464 the count the proxy missed',
+        '        FAIL  | [FAIL] \u24bd\u2461 the second defect from the same edit',
+        '        FAIL  | RESULT: FAILED',
+        '        stdout| gates run: 9, failed: 2',
+        '    [FAIL] receipts/A/R2.py  (3s)',
+        '        stderr| Traceback (most recent call last):',
+        '        stderr|   File "/w/receipts/A/R2.py", line 111, in <module>',
+        '        stderr| AssertionError: d ln r_D',
+        '    [FAIL] receipts/A/R4.py  (2s)',
+        '        FAIL  | RESULT: FAILED',
+        '    [slow] receipts/A/R3.py  -- exceeded 600s',
+        '        stdout| tick',
+        '',
+        '  10 pass, 3 fail, 1 over timeout, 0 skipped']) + '\n')
+    tmp = tempfile.mkdtemp(prefix='po65_labels_')
+    try:
+        f = os.path.join(tmp, 'log.txt')
+        open(f, 'w', encoding='utf-8').write(log)
+        red = reds_suite(f)
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    s14, a5, h2 = 'receipts/A/S14.py', '\u24b6\u2464', '\u24bd\u2461'
+    res['L1. a receipt red on two gates carries both labels'] = red and red.get(s14) == sorted([a5, h2])
+    res['L2. a bare assert is labelled by its exception and its own line'] = red and red.get('receipts/A/R2.py') == ['AssertionError @ L111']
+    res['L3. a runner banner (RESULT: FAILED) is not a gate: the run named none'] = red and red.get('receipts/A/R4.py') == []
+    res['L4. a timeout names no gate'] = red and red.get('receipts/A/R3.py') == []
+    L = {}
+    apply(L, 'main', 'suite', {s14}, {s14: sorted([a5, h2])}, 's1', 'x', set())
+    rl = []
+    _, _, kept, _ = apply(L, 'main', 'suite', {s14}, {s14: [a5]}, 's2', 'x', set(), rl)
+    res['L5. one of two repaired: STILL RED, not cleared, and the other label kept'] = \
+        kept == [s14] and L['main']['suite'][s14]['gates'] == [a5] and L['main']['suite'][s14]['since'] == 's1' \
+        and rl and _relabel_tag(rl[0][1], rl[0][2]).startswith('= still red')
+    rl = []
+    apply(L, 'main', 'suite', {s14}, {s14: sorted([a5, 'X9'])}, 's3', 'x', set(), rl)
+    res['L6. a gate newly red in an already-carried receipt is told apart (≠)'] = \
+        rl and _relabel_tag(rl[0][1], rl[0][2]).startswith('≠')
+    rl = []
+    apply(L, 'main', 'suite', {s14}, {s14: sorted([a5, 'X9'])}, 's4', 'x', set(), rl)
+    res['L7. red again on the same gates changes nothing and writes nothing'] = rl == []
+    L2 = {'main': {'suite': {'receipts/A/R1.py': {'since': 'old', 'run': 'x'}}}}
+    rl = []
+    apply(L2, 'main', 'suite', {'receipts/A/R1.py'}, {'receipts/A/R1.py': []}, 's5', 'x', set(), rl)
+    res['L8. an entry without the field reads UNRECORDED, then is filled, not flagged new'] = \
+        rl == [('receipts/A/R1.py', None, [])] and _relabel_tag(None, []).endswith('labels first recorded')
+    L3 = {}
+    apply(L3, 'main', 'tolerance', {'receipts/A/R1.py'}, {'receipts/A/R1.py'}, 's6', 'x', set())
+    res['L9. a class whose evidence is a set writes no field'] = 'gates' not in L3['main']['tolerance']['receipts/A/R1.py']
+    return {k: bool(v) for k, v in res.items()}
 
 
 def seed_history():

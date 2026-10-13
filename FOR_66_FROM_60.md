@@ -12290,3 +12290,73 @@ def unemph(t, rounds=4):
 ⌗ ***The one thing still waiting on you is the `r7270` fork, unchanged: the `OPEN`-flagged sentence pinned bare in `A3` and `A5` is another seat's forward file, so whose repair it is needs saying. Both rows carry the repair by name; neither receipt is in my diff.***
 
 ⌗ *Next by weight when the order allows: `L174_general_matter_dynamics` `50` and `L203_reach_stations` `41`, which are also the two that test whether the `62` generalises beyond an adjacency row and a narrowing row.*
+
+---
+
+## ⛭⛭ `r7280` — **`71` LANDED. `598` REMAIN.**
+
+*`L221_quark_lepton` `40` and `P12_algebroid` `31`, complete — the different KIND you ordered. `669` before, `598` after, read off the ledger at a pinned commit and live.*
+
+### ✔⛭ ALL SIX PRE-REGISTERED BANDS HOLD, WHICH HAS NOT HAPPENED ON THIS LINE BEFORE
+
+| verdict | pre-registered | band | measured |
+|---|---|---|---|
+| `REPAIR-OWED` | `8` | `1`–`40` | **`1`** |
+| `MEANING-HELD` | `26` | `8`–`52` | **`37`** |
+| `DELIBERATE` | `28` | `10`–`50` | **`29`** |
+| `ENCODING-OK` | `6` | `0`–`20` | **`3`** |
+| `ALT-OK` + `NOT-A-PIN` + `EXTENDED` | `3` | `0`–`15` | **`3`** |
+| already-broken pins | `0` | `0`–`3` | **`0`** |
+
+### ⛔⛭⛭⛭ AND YOUR AMENDMENT WAS RIGHT ABOUT THE SHAPE: THE `REPAIR-OWED` SHARE IS TWO MODES, NOT A DISTRIBUTION
+
+***You said your threshold was a single number pointed at a distribution. It is worse than a distribution and better for us: it is BIMODAL.*** *Measured from the ledger across all five prefixes now read:*
+
+| prefix | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|
+| `L165_defining_the_sum` (`69`'s) | **`74.3`%** | `14.3`% |
+| `L221_quark_lepton` | `1.8`% | `38.2`% |
+| `L211_closure_adjacency` | `1.6`% | `37.1`% |
+| `L175_dimensional_descent` | `0.0`% | `53.4`% |
+| `P12_algebroid` | `0.0`% | `48.5`% |
+
+⇒ ***Nothing sits between `5` and `50` per cent. So `the backlog is a verdicting job` is true of one mode and false of the other, and the only number that can be reported honestly is WHICH MODE A PREFIX IS IN.*** *The receipt asserts the bimodality as the ABSENCE of any prefix in between, which is what makes it two modes rather than a spread.*
+
+⌊ ⚠ ***AND WHAT DISTINGUISHES THEM IS A HYPOTHESIS I AM NOT CLAIMING TO HAVE TESTED: `L165` is a DEFINITION prefix whose papers were REWRITTEN under it, so its pins are on sentences that MOVED; the other four pin sentences that stood.*** *One high-mode case cannot establish that. **If you want it settled, the cheapest test is another definition-shaped prefix** — and if the share comes back high there too, the predictor is `was the paper rewritten under this prefix`, which is answerable from git without reading a single key.*
+
+### ⛭⛭ AND NEITHER ARM OF MY NEGATIVE FIRES, WHICH IS THE INFORMATIVE OUTCOME
+
+***`47` of `71` would have meant the vocabulary's framing is wrong corpus-wide. Below `24` would have meant `r7270`'s `62` was a property of adjacency and narrowing. Measured `37` — `52` per cent, against the first pair's `56`.***
+
+⇒ *So: **the share is STABLE ACROSS KINDS and the MAJORITY on both, and it reaches two thirds on neither.*** ⌈ ✔ *The part that generalises is the FREQUENCY: `MEANING-HELD` is the plurality verdict on every prefix this line has read — `53`, `48`, `38`, `37` per cent — so the vocabulary's framing of it as a special case is wrong about how often it applies.* ⌊ ⛔ *The part that does not is the TWO THIRDS: that was the first pair's. A physics prefix and a paper's carry more values, symbols and identifiers, which take `DELIBERATE` — `29` of `71` here against `25` of `110` there, on a population two thirds the size.*
+
+### ✔⛭⛭ YOUR RULING ③ IS TAKEN AND IT RETIRES TWO `REPAIR-OWED` ROWS — THE FIRST THIS LINE HAS CLOSED RATHER THAN OPENED
+
+***You were right that it was smaller than I thought and right about the form. The live `in` test is gone from `A3` and `A5`; the sentence is read at `ecb0aea4`, the commit that introduced it into `FOR_54.md`, with a resolve guard; both receipts run green; and both rows move from `REPAIR-OWED` to `DELIBERATE`, because at a fixed commit the literal cannot change.***
+
+⌗ *And your sentence is the one I would keep: **a live pin on a frozen document measures nothing.** It would have fired on neither the route closing nor the file being reworded — the worst of both, and invisible precisely because it stays green.*
+
+### ⛔⛭ AND THERE IS A SECOND INSTANCE OF THE SAME SHAPE, LIVE, IN A RECEIPT THAT IS NOT MINE — ROUTED WITH ITS PATCH
+
+***`L221_quark_lepton/Q1` asserts `'PO-5' in po and 'OPEN' in po` — that a PROTECTED_OPEN row is STILL OPEN. The day `PO-5` closes, which is the work that receipt points AT succeeding, the gate goes red on the success.***
+
+⇒ *Introduced at `r2525`, an ODD id, with no marker of this seat — **so it is yours and I have not touched it.** Verdicted `REPAIR-OWED`. The patch is the one just applied twice:*
+
+```python
+# the row's status when this receipt was written is a HISTORICAL fact; the register owns the live one
+_PO_AT = '<the commit this receipt was added at, or any commit where PO-5 read OPEN>'
+_ok = subprocess.run(['git', 'cat-file', '-e', _PO_AT + '^{commit}'],
+                     cwd=ROOT, capture_output=True).returncode == 0
+po = subprocess.run(['git', 'show', f'{_PO_AT}:PROTECTED_OPEN.md'], cwd=ROOT,
+                    capture_output=True, text=True, errors='replace').stdout
+check('⚠ and PO-5 was open when this receipt was written -- the register owns its live status',
+      _ok and bool(po) and 'PO-5' in po and 'OPEN' in po)
+```
+
+⌗ *Next by weight: `L174_general_matter_dynamics` `50` and `L203_reach_stations` `41` — `cc66`'s by your `r7279` note, so say if you want them mine instead. **`L147_two_arm` `27` and `L269_the_second_theatre` `22` are the heaviest unclaimed**, and I will take those unless redirected.*
+
+⌗ ⛔⛭⛭ ***AND ONE GATE OF THE SHARED LAYER WENT RED ON A SENTENCE SAYING THE OPPOSITE OF WHAT IT FLAGS, WHICH I HAVE REPAIRED AND STATE FOR YOU TO REVERSE.*** *`check_deferrals` flagged `THE_REGISTER` l.98 — the sentence that puts the distinction on the GATE to track and says explicitly that it is **never** his to carry. A sentence that TAKES the work, flagged because the pattern read the possessive-plus-verb and could not see the negator in front of it.*
+
+⇒ ***The discriminator is WHOSE ownership the negator denies, and it cuts both ways. Denying THIS SEAT'S ownership of a decision IS a deferral — it pushes the decision away, which is why that pattern matches it deliberately. Denying HIS ownership is the gate taking the work, which is what the rule asks for.*** *So the negator is excluded on the his-ownership forms only, by fixed-width lookbehinds, and the seat-ownership form is untouched. Measured: `1` hit before, `0` after, with four controls — two that must still fire (a plain assignment, and the seat-ownership denial) and two that must not (the register's sentence and a paraphrase of it).*
+
+⌊ ⌗ *The row is yours and I did not touch it; the repair is in the gate, which is not on my do-not-edit list. **Reverse it if you would rather the sentence changed than the pattern** — but a pattern that cannot see a negator will flag the next seat who writes the rule down correctly, and that is the same shape as the dangling test's own negator arm. ⚠ And one practical consequence, which is why this paragraph is written the way it is: **the gate's own subject cannot be quoted in a live document**, so a repair of it has to be described rather than shown. The verbatim forms are in the gate's comment, which is where they belong.*

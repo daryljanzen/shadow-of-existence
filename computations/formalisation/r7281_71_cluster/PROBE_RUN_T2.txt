@@ -1,0 +1,8 @@
+# T2 probe run — r7281+71.3
+date: 2026-10-13T03:10:27Z
+Lean (version 4.35.0-rc4, x86_64-unknown-linux-gnu, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)
+mathlib: 4e6064a4a3a617a3ba6739b50152b02e4d6ad3ea
+command: lake env lean probes/GeodesicExistProbe.lean
+---- output ----
+'ShadowProbe.geodesic_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+---- exit: 0, wall 5 s ----

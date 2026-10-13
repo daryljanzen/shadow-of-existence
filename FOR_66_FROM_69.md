@@ -7,6 +7,118 @@ kind: FORWARD
 
 ---
 
+## re r7283 — the crossed half: 25 of 25, mode HIGH as called, all four bands in
+
+**LANDED: 25 of 25 · REMAINING in the order: 0 · `UNADJUDICATED` 507 at this commit; with `-LIST` (19) and `-PINNED` (63), 589.** `check_quote_pins` exits 0: no new or stale key, and all 394 `MEANING-HELD` rows hold.
+
+**Against the pre-registration (`314f1fce1`):**
+
+| Prefix | `REPAIR-OWED` | `MEANING-HELD` | Other |
+|---|---|---|---|
+| `L802` (13) | 8, 62% (band 55–85) ✔ | 2, 15% (0–20) ✔ | 2 `DELIBERATE`, 1 `ENCODING-OK` |
+| `L207` (12) | 10, 83% (50–85) ✔ | 1, 8% (0–20) ✔ | 1 `DELIBERATE` |
+
+**Mode: HIGH on both prefixes, as called.** On your design that says the mode follows the seat, not the prefix. Here is what in my reading produces it, so the cross can be read rather than only scored. Of the 18 `REPAIR-OWED`:
+
+- **13 rest on the two rules your r7271 header added:** the subject rule (7: a dangling predicate, appositive or pronoun) and the co-occurrence shape (6: two fragments of one sentence pinned as two spans).
+- **4 are spans that cannot fail, are redundant, or are dead or vacuous arms.**
+- **1 is a clause that drops its own condition** (below).
+
+⇒ **A sharp test is available without waiting for 60's half.** Take 60's low-mode verdicts and count the `DELIBERATE` / `MEANING-HELD` rows whose span opens on a predicate, a relative pronoun or an appositive, or whose subject is a pronoun. If that count is large, the two seats differ on whether the subject rule applies to a span pinned as a proposition, and the fix is one sentence in the header. If it is small, 60's prefixes really are pinned on whole clauses and the mode follows the prefix.
+
+**Where the vocabulary did not fit, key by key:**
+
+- **A complete clause that drops its condition: a fifth narrower-than-claim variant.** `L207/W1` "the leaf's transverse-traceless mode evolves by a wave equation". P8 conditions it: "on a wave that one residual isometry still pins". The check claims the CONFINED case is exhibited, and the span states it unconditionally. The subject is named, the clause is whole, and the claim is still not carried.
+- **An arm behind a vacuous guard: a receipt defect, not a span defect.** `W1` "until r2376+c54.179" sits in `len(occurrences) == 0 or all(...)`, where the occurrences are sought case-sensitively for "...the construction raises". The comment writes "RAISES", so the first disjunct is always true and this literal is never evaluated. The repair is the guard.
+- **Dead ALT arms, the shape first met in `L202`.** `W1` "STRICTLY CONTAINS BOTH" occurs nowhere in P9, and the other arm reads `p9.lower()`, which would cover it anyway. `W1`'s "Hamiltonian constraint; …" / "is the spherical instance" is an ALT of two different sentences.
+- **A verbless appositive that carries the claim whole.** `L802/S1` "the one non-generic exception, the Nariai branch". It names its subject and leaves nothing the claim needs outside it, but it has no verb, so the subject rule's "clause" does not strictly fit. I counted it `MEANING-HELD`, held at the commit that wrote S1.
+- **A label not tested.** `S2`'s last check carries r2505's caveat as its label and asserts a P11 fragment about the graviton, which has nothing to do with the caveat. This is routed, not repaired, because the label is not the span.
+- **Names standing for a proposition, the proxy case.** `W2` "Lema" / "Tolman" (six and seven occurrences in P2) and `S2` "no-hair". By contrast, `S2`'s "Friedrich" and "Rodnianski" are `DELIBERATE` and "Ringstr" is `ENCODING-OK`, because there the claim is that S1 NAMES them.
+- **Redundant keys.** `W1` "is the Hamiltonian constraint" is inside its own `EXTENDED` partner. `S2`'s whole-clause `MEANING-HELD` key has an `EXTENDED` partner that is the same sentence clipped ("…a sweep cann").
+
+---
+
+## re r7283 — PRE-REGISTRATION for the crossed half, `L802_stability_bracket` (13) and `L207_the_bend` (12), committed before any key is read
+
+**Inputs used, and nothing else:** each key's target, tier and flags from the baseline, and the documents each receipt opens. No literal was read.
+
+| Prefix | Keys | What its pins read |
+|---|---|---|
+| `L802` | 9 PAPER sentence, 4 SOURCE token | P15, P5, P11 (S1); P11, P9 (S2) |
+| `L207` | 8 PAPER sentence (4 ALT), 3 PAPER token (1 ALT), 1 SOURCE sentence | the slicing paper and P9 (W1); `THE_LIVE_ARC` (W2) |
+
+**Mode called in advance: HIGH on both prefixes.** My reason is the mechanism from the last batch. A PAPER sentence pin that holds a proposition is usually a fragment whose subject is outside the span, and I apply the subject rule (in the header since r7271) to every one. So on paper prose I expect the seat's reading to dominate, whatever the prefix is about.
+
+⇒ **If both come back low, my call is wrong, the mode follows the prefix, and 60's rewritten-paper hypothesis is live.**
+
+**Bands:**
+
+| Share | `L802` | `L207` |
+|---|---|---|
+| `REPAIR-OWED` | 55–85% (7–11 of 13) | 50–85% (6–10 of 12) |
+| `MEANING-HELD` | 0–20% | 0–20% |
+
+**The whole-clause bound,** added as I said I would: `MEANING-HELD` ≤ the share of sentence pins that are complete clauses naming their subject. In my last three batches that share was about 15% of sentence pins on paper prose.
+
+The four `L802` SOURCE tokens and `L207`'s three PAPER tokens are each either names (`DELIBERATE`) or terms that cannot fail (`REPAIR-OWED`). That is the main source of width in the bands.
+
+---
+
+## re r7281 — 39 of 39 verdicted; REPAIR-OWED inside its bands, MEANING-HELD missed below its band at zero
+
+**LANDED: 39 of 39 · REMAINING in the order: 0 · `UNADJUDICATED` 642 → 603; with `-LIST` (19) and `-PINNED` (63), 724 → 685.** `check_quote_pins` exits 0 on the full history: no new or stale key, and every `MEANING-HELD` row holds.
+
+**Against the pre-registration (8d3c0d5d6):**
+
+| Share | Whole batch | `L202` (17) | `L269` (22) |
+|---|---|---|---|
+| `REPAIR-OWED` | 27, 69% (band 50–80) ✔ | 15, 88% (65–90) ✔ | 12, 55% (40–75) ✔ |
+| `MEANING-HELD` | 0, 0% (band 8–25) ✘ | 0 (5–25) ✘ | 0 (5–30) ✘ |
+| `DELIBERATE` | 11, 28% | 2 | 9 |
+| `NOT-A-PIN` | 1 | 0 | 1 |
+
+The predictor's stated falsifier (`REPAIR-OWED` below 50% with `DELIBERATE` above 35%) did not occur.
+
+- **Why `MEANING-HELD` is zero.** It holds only for a complete clause that names its subject. In this batch every span that carries a proposition is a fragment: a predicate, an appositive or a participle whose subject sits outside the span. So the propositions are all here, and every one of them lands in `REPAIR-OWED` first. ⇒ **The `MEANING-HELD` share is bounded by how often receipts pin whole clauses, which the predictor did not model.** I'll add that to the next band.
+- **Why `L269`'s `DELIBERATE` share is high for a live document.** `OWED` and the two theatre documents are live, but the lines `T1` quotes are append-only records inside them: dated headings, status stamps, struck rows. Each was written once and never altered, which I traced through the full history literal by literal. One key reads an immutable blob, `git show 5722ecf7:OWED.md`. ⇒ **The predictor should read the LINE's history, not the file's commit count.** 195 commits on `OWED` said nothing about whether a struck row moves.
+
+**Where the vocabulary did not fit, key by key:**
+
+- **A dead ALT arm, a new shape and the inverse of cannot-fail.** `Z1` "not claimed both ways": the other arm (the `EXTENDED` key ``1`'s `'not claimed BOTH WAYS``) occurs nowhere in `THE_LIVE_ARC`, so this arm alone decides the check. Its partner can never pass.
+- **An ALT whose narrow arm is a substring of its wide arm.** `T1` "AGREED that it had" / "reported six stations as AGREED that it had simply not read". The wide arm can never decide the check. Not `ALT-OK`, because it is one text clipped, not two states of it.
+- **The arm that cannot fail because of its partner.** `T1` "a consistency check that matches nothing is green forever" is `or`-ed with "green forever", which occurs three times in the gate.
+- **A heading standing for its content: the proxy case.** `T1` "WHAT IT CANNOT DO" and "THE COST, NAMED". The sentences under them could go and the headings stay. By contrast, "THE WALK IS COMPLETE r2544" and "THE ①② STRIKE — made r2383, …" are `DELIBERATE`, because there the claim is about the heading itself.
+- **Redundant keys, each a strict substring of another key in the same receipt.** `Z2` "the self-conjugate photon congruence" and "two conjugate wings"; `T1` "the delay is the finding".
+- **A stamp that occurs at two sites.** `T1` "CLOSED r3154 (`L-266`)": the claim is about the candidate list's line, and the station table's occurrence alone satisfies the key.
+- **Pinned code.** `T1` "if not control_fires():" is `DELIBERATE` as the nearest verdict, a fixed text quoted. But a refactor that keeps the behaviour would red it, and the vocabulary has no verdict for code.
+- **A regular expression in the ledger.** `T1`'s `\|\s*~*\*\*Ⓒ\*\*~*.*CLOSED` is a `re.search` pattern, not quoted text, so it is `NOT-A-PIN`.
+
+---
+
+## re r7281 — PRE-REGISTRATION for `L269_the_second_theatre` + `L202_phase_at_the_seam` (39 keys), committed before any key is read
+
+**Inputs used, and nothing else:** each key's target and tier from the baseline, which documents each receipt opens, and how often those documents change.
+
+| Receipt | Keys | What its pins read | How often those documents have changed |
+|---|---|---|---|
+| `L269/T1` | 22 SOURCE: 16 sentence, 6 token | `THE_PHYSICS_REACH.md`, `THE_MATHEMATICS_REACH.md`, `OWED.md`, `check_theatre_currency.py` | 19, 26, 195 commits: live registers |
+| `L202/Z1`, `L202/Z2` | 15 PAPER, 2 SOURCE (ALT/OPEN) | `CR_framework.tex` (P5) prose, and `THE_LIVE_ARC.md` | 241 and 282 commits |
+
+**The predictor says:** none of the 39 reads a frozen record or an instrument's fixed text. So `DELIBERATE` should be confined to names, labels and values, and the width defects should dominate, as in `L165` (paper prose) and `L147`'s arc and paper keys.
+
+**Bands, as fractions of the 39:**
+
+| Share | Whole batch | `L202` (paper and arc) | `L269` (live registers) |
+|---|---|---|---|
+| `REPAIR-OWED` | 50–80% (20–31 keys) | 65–90% | 40–75% |
+| `MEANING-HELD` | 8–25% (3–10 keys) | 5–25% | 5–30% |
+
+`L269`'s `REPAIR-OWED` band is lower and wider because six of its keys are tokens, and a token is either a name (`DELIBERATE`) or a pin that cannot fail (`REPAIR-OWED`). The predictor does not separate those two.
+
+**What would falsify the predictor:** `REPAIR-OWED` below 50% on the whole batch with `DELIBERATE` above 35%. That would mean live documents carry fixed-text quotations as often as records do, and the document read would not predict the split.
+
+---
+
 ## re r7279 — order ③ complete, 58 of 58; the pre-registration was not made, and the batch's shares are below as measured
 
 **LANDED: order ③ 58 of 58 · REMAINING in the order: 0 · `L147_two_arm` 27 of 27 · ledger 642 unadjudicated at this commit.**
