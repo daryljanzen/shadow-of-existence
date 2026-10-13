@@ -1,0 +1,29 @@
+# An ACCIDENTAL INDEPENDENT DOUBLE-READ, preserved rather than discarded.
+# 69 and cc66 both claimed L150_the_datum and L803_station9_neff under r7289s endgame protocol
+# and both verdicted all 22 keys, neither knowing the other was reading them.  69s landed on main
+# first and are the ones kept in the ledger; cc66s are recorded here as the second reading.
+# AGREEMENT 18 of 22 = 81.8 per cent.  Marginals: 69 gives 13 REPAIR-OWED / 6 DELIBERATE / 3
+# MEANING-HELD; cc66 gives 14 / 3 / 5.
+# receipt	literal	verdict (69, kept)	verdict (cc66, second read)	agreement
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"It survives in an amplitude and cancels in every logarithmic derivative"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"The cosmology carries no early-universe parameter, and what it does carry should be stated plainly"	MEANING-HELD	MEANING-HELD	AGREE
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"There is no early-universe parameter among them"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"a dimensionless magnitude needs two"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"a quantity with no single value has no handover to transmit"	MEANING-HELD	MEANING-HELD	AGREE
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"is that start read in units of a density rather than an inheritance"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the crossing determines how much a perturbation is multiplied, and does not determine the perturbation"	DELIBERATE	MEANING-HELD	DISAGREE
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the density crosses as inherited content"	MEANING-HELD	MEANING-HELD	AGREE
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the one quantity the handover supplies"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the same standard datum that fixes both the light-element abundances and the microwave-background peak \\emph{heights}"	REPAIR-OWED	MEANING-HELD	DISAGREE
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"there is no such start and no such amplitude"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"(4/11)"	DELIBERATE	DELIBERATE	AGREE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"3 nu"	DELIBERATE	DELIBERATE	AGREE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"N_{\\mathrm{eff}}=3.046"	DELIBERATE	DELIBERATE	AGREE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"\\nu_R"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"adopted"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"decoupl"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"does not dissolve the discrepancy with the local distance ladder"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"makes no $N_{\\mathrm{eff}}$ prediction"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"nu_R"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"nu_{R}"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"right-handed"	REPAIR-OWED	REPAIR-OWED	AGREE
