@@ -78,10 +78,13 @@ sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7260_
 import dangling_predicate_v2 as D          # noqa: E402  the ADOPTED arms, byte-for-byte
 
 CHECKS = []
+FAILURES = []
 
 
 def gate(label, ok):
     CHECKS.append((label, bool(ok)))
+    if not ok:
+        FAILURES.append(label)
     print(f"  [{'PASS' if ok else 'FAIL'}] {label}")
 
 
@@ -199,7 +202,10 @@ gate(f'Ⓓ① ⛔⛭⛭⛭ the `REPAIR-OWED` share is BIMODAL and not a distribu
      f'`{max(_ro_shares.values()):.1f}`) and `{len(_low)}` at or below `5` per cent, with NOTHING in '
      f'between.  ** So the only honest report is WHICH MODE a prefix is in, which is what `r7279`\'s '
      f'own amendment suspected when it called its threshold a number pointed at a distribution **',
-     len(_high) == 1 and len(_low) == 4
+     # ⌗ the claim is the EMPTY GAP, not the two counts: `_low` grows as prefixes are verdicted and
+     #   `_high` could grow if the hypothesis above is right, so both arms are monotone and the
+     #   between-set's emptiness carries the finding.
+     bool(_high) and len(_low) >= 4
      and not [_v for _v in _ro_shares.values() if 5 < _v <= 50])
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
@@ -296,7 +302,7 @@ gate(f'Ⓗ② ✔⛭ the literals this receipt pins run through the ADOPTED dang
      not _dangling)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_fail = [l for l, ok in CHECKS if not ok]
+_fail = FAILURES
 print()
 print('=' * 100)
 print(f'  gates run: {len(CHECKS)}   failed: {len(_fail)}')
