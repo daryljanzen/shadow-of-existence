@@ -1,0 +1,30 @@
+# r7293: the remaining tail re-strided, plus the deliberate double-read.  Prefix at sorted
+# position i belongs to seat i mod 3, seat order 69, cc66, 60 -- and each seat ALSO reads BLIND
+# the prefix marked DOUBLE below, which belongs to the seat before it in the order.
+# seat	prefix	keys	role
+69	L255_the_exemption_was_a_claim	8	PRIMARY
+cc66	L260_half_a_partition	8	PRIMARY
+60	L256_the_band_taken	7	PRIMARY
+69	L263_the_station_audit	7	PRIMARY
+cc66	L270_the_table_that_carried_its_next_failure	7	PRIMARY
+60	L801_nonlinear_shear_freedom	7	PRIMARY
+69	L247_the_build_already_stands	6	PRIMARY
+cc66	L262_half_a_family	6	PRIMARY
+60	L276_the_representation_theory_probe	6	PRIMARY
+69	L556_registry_from_rows	6	PRIMARY
+cc66	L220_arrival_paths	5	PRIMARY
+60	L277_the_unclaimed_surface	5	PRIMARY
+69	L552_weyl_and_torus	5	PRIMARY
+cc66	L554_tower_degeneracy	5	PRIMARY
+60	L809_one_loop_quartic	5	PRIMARY
+69	L250_the_break_reports_itself	4	PRIMARY
+cc66	L280_the_decidable_claims	4	PRIMARY
+60	L551_register_integrity	4	PRIMARY
+69	L562_the_pin_test	4	PRIMARY
+cc66	L804_isocurvature_bound	4	PRIMARY
+60	L230_computes_convention	3	PRIMARY
+69	L266_station_C_three_readings_of_the_dial	3	PRIMARY
+cc66	L561_the_probe_was_the_defect	3	PRIMARY
+69	L256_the_band_taken	7	DOUBLE (blind; primary is 60)
+cc66	L255_the_exemption_was_a_claim	8	DOUBLE (blind; primary is 69)
+60	L260_half_a_partition	8	DOUBLE (blind; primary is cc66)

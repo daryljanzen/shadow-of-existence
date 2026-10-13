@@ -193,8 +193,20 @@ gate(f'Ⓓ① ⛭⛭ `{_un_before - _un_now}` LANDED, `{_un_now}` REMAIN --- and
      f'rises, so another seat\'s work cannot turn this row red',
      _un_before - _un_now >= 21 and int(_registered_after.group(1)) == _un_now)
 
-_touched = sorted({f for f in (_git('diff', '--name-only', BEFORE) + '\n'
-                               + _git('ls-files', '--others', '--exclude-standard')).split('\n') if f})
+# ⛔⛭⛭ r7293 (66): AND THE RANGE WAS `BEFORE..WORKING TREE` AGAIN, WHICH IS THE RULE `r7283` SET AND
+#   `r7289` RESTATED, ARRIVING IN A RECEIPT WRITTEN AFTER BOTH.  *On the branch it is this revision's
+#   own evidence; on the merged trunk it is every seat's work since, so the restraint read wide and
+#   `Ⓓ②` went red on `main` -- found by the carry's own `gates` field, which `70` built for exactly
+#   this and which named the clause rather than only the receipt.*
+#   ⇒ *** A restraint claim is over a COMMIT RANGE: `BEFORE..AFTER`, with the working-tree arm kept
+#       only for the branch case where the revision's own commits do not yet exist. ***
+#   ⌊ *`66`'s edit, two lines, because `main` was red and `60` was mid-cycle.  **Stated for `60` to
+#     reverse** -- no claim, count or verdict moves.*
+AFTER = 'a45201689'      # this revision's own landing commit, so the restraint is over its own range
+_rng = _git('diff', '--name-only', BEFORE, AFTER)
+_touched = sorted({f for f in (_rng + '\n'
+                               + (_git('diff', '--name-only', BEFORE) if not _rng.strip() else '')
+                               + '\n' + _git('ls-files', '--others', '--exclude-standard')).split('\n') if f})
 _rcpt = [f for f in _touched if f.startswith('receipts/') and f.endswith('.py')]
 print(f'      touched {len(_touched)} file(s), {len(_rcpt)} of them receipts; the subject receipt '
       f'{"IS" if SUBJECT in _touched else "is NOT"} among them')
