@@ -79,6 +79,25 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+# ⛭⛭ r7267 ①: THE LOADER FOR THE COMPUTED HALF OF THE PIN(S) BELOW, AND THE GAP WAS `INPUTS`.
+#   `r7261`'s backlog named, per row, the module AND FUNCTION nearest to computing what this
+#   receipt only MATCHES AS A STRING, and classified this row's gap a change of INPUTS.  ** The
+#   obstruction was never the mathematics: the named module is a SCRIPT -- it prints its own
+#   report at import and some of them run minutes of sympy to do it, so the function could not
+#   be imported. **  `graft.py` takes the `def` and the transitive closure of the module-level
+#   names it reads, over the AST, and executes nothing else; `parity.py` hands it this row's own
+#   inputs.  ⇒ ** The pin below STAYS: it is the citation.  This is the verification. **
+def _r7267():
+    """`baryon_edge/L006w_the_d5_fourfold.py`'s own functions, grafted, at this row's inputs."""
+    if not hasattr(_r7267, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import parity
+        _r7267.v = parity.at_inputs()
+    return _r7267.v
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -104,6 +123,21 @@ def main():
           'the $R$-symmetric sector is exactly the offset-free, massless vacuum' in p6)
     check('and mass -- geometric $M$ or fermionic $m$ -- is the $R$-odd DEPARTURE from it',
           'is the $R$-odd \\emph{departure} from it' in p6)
+    # ⛭⛭ r7267 ①: AND THE R-ODDNESS IS NOW COMPUTED AND NOT ONLY CITED.  `L-006w`'s `twoM`
+    #   returns the offset form the framework paper states, 2M = r_0**(D-3) - r_0**(D-1), and
+    #   `L-006w` calls it at D = 4, 5, 6 to print its monomials -- never substituting the one
+    #   thing this row is about, R: r_0 -> -r_0.  ** At the paper's own D=4 pair the mass
+    #   function REVERSES, so mass is the R-odd datum; the reachable converse is the same
+    #   sentence at the D=5 pair (2,4), where it does not reverse. **
+    _par = _r7267()
+    # ⚠ r7267 ①: and the label says what THIS receipt computed, with no attribution to the
+    #   paper's figure -- `check_unread_figure` caught a first draft that called the exponent
+    #   pair `the paper's` while this check reads nothing from the paper.  ** The pin above is
+    #   where the paper is read; this is `twoM`'s own exponents, named as its own. **
+    check('⛭⛭ and the R-oddness is COMPUTED, through `L-006w`\'s own `twoM`: at the exponent pair '
+          '(D-3, D-1) = (1, 3) the mass function reverses under R (r_0 -> -r_0), and at (2, 4) '
+          'it does not',
+          _par.mass_parity(4) == -1 and _par.mass_parity(5) == 1)
     check('and "Geometric and fermion mass are thereby the same kind of object, the one discrete '
           'residue broken"',
           'Geometric and fermion mass are thereby the same kind of object' in p6)

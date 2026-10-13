@@ -67,6 +67,25 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+# ⛭⛭ r7267 ①: THE LOADER FOR THE COMPUTED HALF OF THE PIN(S) BELOW, AND THE GAP WAS `INPUTS`.
+#   `r7261`'s backlog named, per row, the module AND FUNCTION nearest to computing what this
+#   receipt only MATCHES AS A STRING, and classified this row's gap a change of INPUTS.  ** The
+#   obstruction was never the mathematics: the named module is a SCRIPT -- it prints its own
+#   report at import and some of them run minutes of sympy to do it, so the function could not
+#   be imported. **  `graft.py` takes the `def` and the transitive closure of the module-level
+#   names it reads, over the AST, and executes nothing else; `holonomy.py` hands it this row's own
+#   inputs.  ⇒ ** The pin below STAYS: it is the citation.  This is the verification. **
+def _r7267():
+    """`baryon_edge/L129_the_invariants.py`'s own functions, grafted, at this row's inputs."""
+    if not hasattr(_r7267, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import holonomy
+        _r7267.v = holonomy.at_inputs()
+    return _r7267.v
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -127,6 +146,18 @@ def main():
     check('with the order-two subgroup named: "only the order-two subgroup---complex conjugation of the '
           'pair---is realised on the real structure"',
           'only the order-two subgroup' in p5 and 'complex conjugation of the pair' in p5)
+    # ⛭⛭ r7267 ①: AND THE ORDER IS NOW COMPUTED AND NOT ONLY NAMED.  `L-129`'s `close` is a
+    #   generic closure over the monomial representation, used there on the wall monodromies;
+    #   handed the permutations that PRESERVE the over-critical real structure -- one real root
+    #   fixed, the conjugate pair swapped -- it returns order 2.  ** The reachable converse is
+    #   the under-critical regime, three real roots, where the same function returns 6: all of
+    #   S_3.  So `only the order-two subgroup` is a computed restriction and not a label. **
+    _hol = _r7267()
+    check('⛭⛭ and the ORDER is COMPUTED through `L-129`\'s own `close`: the subgroup of $S_3$ '
+          'preserving one real root and a conjugate pair has order 2, while three real roots '
+          'give all 6',
+          len(_hol.close(_hol.stab_gens((0,)))) == 2
+          and len(_hol.close(_hol.stab_gens((0, 1, 2)))) == 6)
 
     # the names remain absent
     for k in ('mod 2', 'mod-two', 'Witten anomaly', 'eta invariant'):

@@ -67,6 +67,25 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+# ⛭⛭ r7267 ①: THE LOADER FOR THE COMPUTED HALF OF THE PIN(S) BELOW, AND THE GAP WAS `INPUTS`.
+#   `r7261`'s backlog named, per row, the module AND FUNCTION nearest to computing what this
+#   receipt only MATCHES AS A STRING, and classified this row's gap a change of INPUTS.  ** The
+#   obstruction was never the mathematics: the named module is a SCRIPT -- it prints its own
+#   report at import and runs minutes of sympy to do it, so the function could not be
+#   imported. **  `graft.py` takes the `def` and the transitive closure of the module-level
+#   names it reads, over the AST, and executes nothing else; `holonomy.py` hands it this row's
+#   own generators.  ⇒ ** The pin below STAYS: it is the citation.  This is the verification. **
+def _r7267():
+    """`baryon_edge/L129_the_invariants.py`'s own functions, grafted, at this row's generators."""
+    if not hasattr(_r7267, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import holonomy
+        _r7267.v = holonomy.at_inputs()
+    return _r7267.v
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -129,6 +148,28 @@ def main():
           'branch point filters without supplying"',
           'quantises without measuring' in p0 and 'selects without coupling' in p0
           and 'filters without supplying' in p0)
+    # ⛭⛭ r7267 ①: AND TWO OF THE THREE ARE NOW COMPUTED, THROUGH `L-129`'s OWN `inv_dim`.
+    #   `filters without supplying`: of the 27 three-constituent states, exactly 1 survives the
+    #   full wall holonomy -- and with NO holonomy all 27 do, which is the reachable converse.
+    #   `selects without coupling`: the meson channel admits exactly 1 invariant under the
+    #   determinant-one part against 9 under none.  ** And the `without` in both is the same
+    #   computed fact: `close` TERMINATES, at 81 and at 27, so the holonomy is finite and
+    #   zero-dimensional and there is no curvature to supply. **  ⚠ *That half is a finiteness
+    #   witness -- every closure in `L-129`'s mod-3 representation is finite, so it carries no
+    #   reachable converse, and it is recorded that way rather than asserted away.*
+    _hol = _r7267()
+    _Gf, _Gs, _G1 = (_hol.close(_hol.gens_full), _hol.close(_hol.gens_su), _hol.close([]))
+    check('⛭⛭ and `filters without supplying` is COMPUTED through `L-129`\'s own `inv_dim`: 1 of '
+          'the 27 three-constituent states survives the full holonomy, where none at all leaves '
+          'all 27, and the closure is finite at 81',
+          _hol.inv_dim(_Gf, _hol.chi_VVV) == 1
+          and _hol.inv_dim(_G1, _hol.chi_VVV) == 27
+          and len(_Gf) == 81)
+    check('⛭⛭ and `selects without coupling` likewise: the determinant-one part admits exactly 1 '
+          'invariant on $V\\otimes V^{*}$ against 9 under no holonomy, and closes at 27',
+          _hol.inv_dim(_Gs, _hol.chi_VVbar) == 1
+          and _hol.inv_dim(_G1, _hol.chi_VVbar) == 9
+          and len(_Gs) == 27)
     check('calling it "a property of a one-constant theory rather than a gap awaiting work"',
           'cannot force a coupling, and its silence about magnitudes is a property of a one-constant theory rather than a gap awaiting work' in p0)
 
