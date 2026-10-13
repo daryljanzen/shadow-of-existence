@@ -14068,3 +14068,39 @@ if _own_sess is None:
 
 ***`17` rows across `7` `(module, function)` pairs, all TOP-LEVEL and all graftable, which would take the count to `40` of `59`:*** *`L012w: roots_at` (`3`), `L127: omega_power` (`3`), `bead_conjugate: r_of_tau` (`3`), `L128b: diag_at` (`2`), `L50b: key_of` (`2`), `r7111/geometry: curvature` (`2`), `panelA_reassign: ruling` (`2`).* *The remaining `19` are the `9` held, singletons, and the `12` `EXTEND`.*
 
+---
+
+## ⛭⛭⛭ `r7281+cc66.2` — **LANDED `32` OF `59`. REMAINING `27`.** ⛭⛭ **BATCH THREE IS NINE OF NINE WITH NOTHING HELD — AND `roots_at` SUPPLIES THE HALF `B13` AND `B14` HAD NO WAY TO CHECK**
+
+*`C74`: `34` checks, all pass, `13`s. Three batches' taken keys gated PAIRWISE DISJOINT, so `19 + 4 + 9 = 32` counts nothing twice.*
+
+### ⛭⛭ THE CONTRAST WITH BATCH TWO IS THE WHOLE POINT, AND IT IS A PROPERTY OF THE FUNCTIONS
+
+***Batch two scheduled `13` and took `4`. Batch three scheduled `9` and took `9`.*** *The difference is not difficulty: **all three of this batch's functions are top-level AND take their inputs as ARGUMENTS, so the change of inputs is a CALL rather than a rebinding or a choice.** `lie_g` reads its metric from module level and someone has to decide which metric; `roots_at(v)`, `omega_power(z)` and `r_of_tau(t)` are handed theirs.*
+
+⇒ ⌗ ***So `INPUTS` has a sub-structure worth having a name for: a row whose function takes its inputs as arguments is reachable without an adjudication, and a row whose function reads them from module level needs one.*** *That is checkable from the syntax tree and it predicts which rows hold — I would put it on the register if you want it, and it costs nothing to measure over the remaining `27`.*
+
+### ⛭⛭⛭ AND THE FINDING: `roots_at` SETTLES THE WORD `ONLY`
+
+***`L-012w`'s own report tabulates eleven values of `r_0` with the designated root and its pair. Asked at the three values the designation runs over, it returns the SAME ROOT SET every time — `{1, -1, 0}` — and differs only in WHICH member is designated.***
+
+⇒ ⛭ ***`B14` asserts `distinguished ONLY by which root each takes as its hole`. The `only` is the load-bearing word and it is a statement about the SETS BEING IDENTICAL — which no string match can see, and which `L-012w` never prints side by side.*** *So the computation does not merely confirm the sentence; **it supplies the half of it the receipt had no way to check.** And `only` is a predicate rather than a flourish: add a fourth value whose root set differs and the agreement breaks, which is the recorded converse.*
+
+⌈ ⌗ *Two smaller ones beside it: **`omega_power` carries its OWN converse** — it `raise`s on anything that is not a cube root of unity, so `quantises` has a built-in false case and needs no constructed edit — and **`r_of_tau(0) = 0.0` exactly**, against `0.638472` at `0.5`, so `the cosmology it seeds begins at the branch point` is a statement about proper time zero.* ⌊ *The horizon cubic is exactly `0` at each of its three roots and non-zero a seventh off each, which is `B34`'s `vanishes at the horizons` as a computation.*
+
+### ⌗ AND I KEPT THE `S14` LESSON IN FRONT OF ME RATHER THAN BEHIND
+
+***`Ⓓ⑦` gates that none of the nine holders is a receipt `S14` pins by line number.*** *It pins `B1` and `B2`; neither is in this batch, so no injection target moved. **I checked that before editing rather than after a trunk red told me.***
+
+⌗ *`r7243` stands. The `9` held from batch two are inside the remaining `27`, with the one question on the four `GEOMETRY-NOT-RECORDED` rows already in front of you at `r7281+cc66.1`. Ledger figures as you publish them: `642` `UNADJUDICATED`, `724` with the two reserved classes.*
+
+### ⛔ AND ONE BASE-BRANCH RED TO ROUTE, WHICH IS `69`'s BY THE RULE YOU JUST RATIFIED
+
+***`check_cannot_fail` is RED on `origin/main`, identically to here: `rc=1`, same single stale entry, and `no new site: the class has not grown` — so my batch minted nothing and this is not mine.***
+
+*The complaint: `1 STALE BASELINE ENTRY -- fewer live sites than recorded`, for `corpus/cannot_fail_baseline.tsv:18` — `receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py`, `T5`, `'same' in p0`, count `1`, verdict `UBIQUITOUS-ARM`.* **The live count of that site in `U1` is `0`.**
+
+⇒ ⌗ ***And the cause is named rather than guessed: the last change to `U1` is `b46549ba`, `r7271+69` — `order ① the 14 REPAIR-OWED in L200 repaired by widening`. `69`'s widening removed the `'same' in p0` site and the baseline row was not lowered with it.***
+
+⌈ ***So by ruling ①, as you ratified it, this one is `69`'s: a seat does not edit another seat's receipt, and the exception is whoever's edit broke it — which here is `69` and not me.*** *I am routing rather than fixing even though the fix is one line, because the discipline is worth more than the line.* ⌊ *The fix: lower or remove row `18` of `corpus/cannot_fail_baseline.tsv`. **`UBIQUITOUS-ARM` is in the gate's own `not owed` set, so removing it does not move the owed count of `21` against its ceiling of `21`** — it is a pure staleness repair with no ratchet consequence. ⚠ *And it is red on the TRUNK, so every seat's PR inherits it until someone takes it.*
+
