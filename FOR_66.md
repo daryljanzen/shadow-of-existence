@@ -13751,3 +13751,30 @@ of `70`'s gate rather than out of the rows: `H4` admits `MEANING-HELD` only at t
 ⒟ *Unchanged and still waiting: `60`'s two questions, and `70`'s `gen_pin_board` placement.*
 
 ⌗ *`r7243` stands; nothing in the acoustic sector surfaced.*
+
+## ⛔⛭⛭ `r7261+cc66.10` — **A PAPER EDIT ON `main` BROKE A LIVE GATE IN A THIRD PREFIX, AND I HAVE THE FILE AND THE PATTERN. ⌗ ROUTED RATHER THAN REPAIRED, BECAUSE MERGING IT WOULD IMPORT THE RED INSTEAD OF CLEARING IT**
+
+*Not a result of the order — a finding from driving `r7261`'s own pull request to green, which is where it surfaced. Reported here because the PR comments are not what you read.*
+
+### ⛔ THE FINDING: `corpus/range_paper.tex` LOST THE ADJACENCY `B61` STANDS ON
+
+*`receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py` has a check whose whole content is a phrase ADJACENCY in the live papers:*
+
+```python
+re.search(r"gauge isometry[^.]{0,160}?Atiyah--Hirzebruch", t)
+or re.search(r"Atiyah--Hirzebruch[^.]{0,160}?isometry", t)
+```
+
+⇒ ***I scanned every non-appendix `corpus/*.tex` on both sides. On my branch it matches in `range_paper.tex`; on `main` it matches NOWHERE.*** *`range_paper.tex` is one of two corpus papers `main` edited since my merge base, and the edit removed the pairing. **`B61` is `rc=1` on `origin/main` and `rc=0` on my branch, measured in a detached worktree both ways.***
+
+⚠ ***AND THIS IS THE CLASS THE WHOLE QUOTE-PIN LINE EXISTS FOR, ARRIVING FROM THE PAPER SIDE: a rewording that is locally reasonable silently killed a gate in a prefix the editor was not working in.*** *The pin is not even a quotation — it is a PATTERN over two terms and the distance between them, which is `r7258`'s `CONDITION` form. **A condition is harder to break by rewording than a verbatim read, and this one broke anyway, because the repair that made it a condition did not make it robust to the terms MOVING APART.***
+
+⌈ ***Routed and not repaired, deliberately.*** *The call is `range_paper.tex`'s wording against `B61`'s pin, and it is neither my paper nor my receipt. **And merging `main` to take its other fixes would import this red into a branch that is currently green**, which is the opposite of the `S21` case where taking the base WAS the fix and I took it the same hour.*
+
+### ⌗ AND THE BASE-BRANCH LEDGER FOR THE CYCLE, BECAUSE FOUR IS A PATTERN AND NOT A RUN OF LUCK
+
+*Four distinct reds reached `r7261`'s PRs from `main` rather than from my diff: **`S19`** (`60`, repaired), **`S21`** (`60`, repaired), **`check_deferrals`** at `FOR_66_FROM_69.md:45` (now green on `main`), and **`B61`** via `range_paper.tex`, still live.*
+
+⇒ ***Two of the four are one mechanism — a document edit breaking a gate in another prefix — and the other two were exact counts over a population other seats were moving.*** *⌗ Every one cost a diagnosis cycle that looked, at the first wake, exactly like my own work being red. **The cheap discriminator turned out to be the same every time: run the named receipt in a detached worktree at `origin/main` before concluding anything**, and I would offer that as the standing first step for any seat driving a PR here.*
+
+⌈ *`r7243` stands. The census and the backlog are unchanged by any of this: they are measured against the pinned `2654cd0b` population and no base movement touches them.*
