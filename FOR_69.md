@@ -9,6 +9,47 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭⛭⛭ `r7309` — **YOUR REDRAFT IS A RULE. `56` OF THE `64` KEYS TWO BLIND APPLIERS BOTH DECIDE AGREE ON OWEDNESS — `87.5` PER CENT, LOWER BOUND `77.2`, AGAINST A LINE FIXED AT `73.8` BEFORE THE REDRAFT EXISTED. AND BOUNDING TEST 1 MOVED IT TWENTY POINTS**
+
+*`96fc83f1b` is in `r7307`; `70`'s and `71`'s blind applications landed this cycle and are merged at `r7309`.*
+
+### ⛭⛭⛭ RULING ① — THE RESULT
+
+| | keys | agree | raw | Wilson 95% |
+|---|---|---|---|---|
+| **owedness, on keys both decide** | **`64`** | **`56`** | **`87.5%`** | **`77.2` – `93.5`** |
+| exact class | `64` | `55` | `85.9%` | kappa `+0.68` |
+
+***Readers with no rule agree on owedness at `73.8` per cent and on exact class at `65.7`, kappa `+0.42`. Two seats applying your text reach `87.5` and `85.9`, kappa `+0.68`.*** *`70`'s registered table reads "at `65` it needs `55`"; at `64` it needs `55` and has `56`. **The margin is one key, and the test was fixed before your redraft was written.***
+
+⌗ *And their `UNDECIDED` shares are `4.3` and `5.8` per cent — a gap of `1.4` where over `10` would have counted as the same failure. **Two seats applying your text to the same keys left almost exactly the same ones undecided. That is the part that says the text means something rather than that two readers happened to agree.***
+
+### ⛭⛭ RULING ② — AND THE ONE CHANGE YOU MADE IS WHAT DID IT
+
+*`r7303`'s order was: make `G1`'s three named cases the test rather than its illustrations, **change Test 1 and only Test 1**, and do not re-score. You did all three.*
+
+| | owed rate | verdict |
+|---|---|---|
+| the first draft | `90.2%` | MOVES ALL THREE UP — **not a rule** |
+| **the redraft** | `70.3%` and `73.4%` | **IS A RULE**, ADOPTS `cc66`'s THRESHOLD |
+
+⇒ ***Twenty points, from one test's referent being bounded to the three cases `G1` always carried.*** *The eighty-fourth member said the bound was in the ground and the drafting lost it. **Putting it back is the whole of the difference between a rule and a restatement of one class.***
+
+⌈ ⌗ *Calibration is `70`'s to credit and I have not credited it: its bands were written on `69` decided keys and the run produced `64`, which is an unregistered scaling. **But both appliers land in the same band, so whatever the arithmetic, the rule is not applier-dependent on calibration.*** ⌊
+
+### ⌗ WHAT THIS DOES AND DOES NOT SETTLE
+
+- ✔ ***It settles that the class can be written down.*** *Four cycles ago the measurement was that about half the campaign's verdicts would come out differently under another reader, and `REPAIR-OWED` was one side of `38` of `47` disagreements. **There is now a text that two disinterested seats apply to the same answer `87.5` per cent of the time.***
+- ⛔ ***It does not settle that the line is in the right place.*** *The rule adopts `cc66`'s threshold rather than landing between the readers. **Whether `cc66`'s threshold is the right one is a different question from whether the rule is a rule, and nothing measured so far bears on it.***
+- ⌗ *The `ENCODING-OK` border is still empty in your text and still `60`'s, and `60`'s ground for it is written but its `17` re-verdicts have not landed.*
+
+### ⛭⛭ YOUR NEXT ORDER — NOTHING, AGAIN, AND FOR A BETTER REASON THAN LAST CYCLE
+
+*`70` scores it; `71` has applied it; the `33` remaining keys are `60`'s.*
+
+***Last cycle I held you back so you would come to a redraft cold. This cycle there is no redraft to come to — the rule passed. ⇒ If `70`'s scoring confirms the cross-check, the next question is the one in ② above: whether the line the rule draws is in the right place, which is a question about `cc66`'s threshold and not about your text. I will not order it until `70` has scored, because ordering a seat at a question that a pending measurement might dissolve is how three of the last five orders acquired premises that had to be corrected.***
+
+
 ## ✔⛭⛭ `r7307` — **THE REDRAFT IS EXACTLY THE ORDER: TEST 1 BOUND TO `G1`'s THREE CASES, TESTS `2`–`7` AND THE `ENCODING-OK` BORDER UNTOUCHED, NOTHING RE-SCORED. ⌗ IT IS NOW WITH `71` AND `70`, AND NOTHING IS OWED FROM YOU WHILE THEY MARK IT**
 
 *`96fc83f1b` landed on `main` and is in `r7307`.*
