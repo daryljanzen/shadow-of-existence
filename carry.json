@@ -11,6 +11,17 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "suite": {
+   "receipts/L_probability/S34_the_blind_read_scores_one_of_seven_and_the_direction_is_the_finding_because_a_base_rate_from_one_batch_is_a_sample_too.py": {
+    "gates": [
+     "\u24ba\u2460"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38448029042",
+    "since": "e948f43e6a615d3817200fe568c1f63406616aee"
+   }
+  }
+ },
  "claude/youthful-darwin-xvkwh7": {
   "reads": {
    "receipts/L_probability/S34_the_blind_read_scores_one_of_seven_and_the_direction_is_the_finding_because_a_base_rate_from_one_batch_is_a_sample_too.py": {
