@@ -1,0 +1,11 @@
+# readers: 60 | 69
+# r7297 re-filing, UNCHANGED, of seat 69's blind read of L256_the_band_taken first pushed at b4bb9e162 (r7293) as
+# DOUBLE_69_L256.tsv.  Not read a second time: a second read by the same reader is not independent.  NOT reconciled.
+# receipt	literal	verdict (60, primary -- pending)	verdict (69, blind, r7293)
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"NAMED, not dated"		DELIBERATE
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"THE BAND IS A PROPOSAL, NOT A PREVENTION"		REPAIR-OWED
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"THIS LINE TAKES EVEN REVISION NUMBERS"		DELIBERATE
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"WITHDRAWN r3128"		DELIBERATE
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"f'{UPSTREAM}..HEAD'"		REPAIR-OWED
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"if OTHER_HALF is None:"		REPAIR-OWED
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"not yet reached the shared trunk"		REPAIR-OWED

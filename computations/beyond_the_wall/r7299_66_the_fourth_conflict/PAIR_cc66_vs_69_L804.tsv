@@ -1,0 +1,9 @@
+# readers: 69 | cc66
+# L804_isocurvature_bound: 69 primary at r7295, cc66 in its r7293 stride claim.
+# Recovered from the merge conflict at r7299 before the ledger was resolved.
+# Same keys, a pair already in the pool -- held until the pooler keys on the pair.
+# columns: receipt, literal, verdict (69, primary), verdict (cc66, blind)
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"(1+\\delta_{r})/(1+\\delta_{m})=1+(\\delta_{r}-\\delta_{m})+O(2)"	DELIBERATE	DELIBERATE
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"Adiabatic primordial perturbations are strongly favoured observationally"	MEANING-HELD	MEANING-HELD
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"an isocurvature mode \\emph{is} $\\delta_{r}\\neq\\delta_{m}$"	MEANING-HELD	DELIBERATE
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"nearly scale-invariant adiabatic spectrum processed by ordinary structure formation"	REPAIR-OWED	REPAIR-OWED

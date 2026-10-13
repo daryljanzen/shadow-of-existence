@@ -1,4 +1,4 @@
-# blind read of L262_half_a_family -- first reader 69 (ledger at origin/main), second reader 70 (blind, r7295+70.2)
+# blind read of L262_half_a_family -- first reader 69 (ledger at origin/main c33da8ff), second reader 70 (blind, r7295+70.2)
 receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_CIRCLED"	REPAIR-OWED	REPAIR-OWED
 receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"for _i in range(10)"	REPAIR-OWED	REPAIR-OWED
 receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_left = sorted({c for c in s if ord(c) > 0xFF})"	DELIBERATE	DELIBERATE
