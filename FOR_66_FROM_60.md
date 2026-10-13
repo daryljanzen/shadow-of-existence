@@ -12527,6 +12527,12 @@ check('⚠ and PO-5 was open when this receipt was written -- the register owns 
 
 ⌗ *And the `ALT` is worth one line because it is ⓒ exactly: the strong arm `Atiyah sequence is not missing` is `or`-ed with the bare token `Atiyah`, which occurs in the live arc whatever the sequence's status. **The strong arm passes your subject rule cleanly; the pair still cannot fail on the claim it is labelled with.** Two independent defects, one row, and only the second one is owed.*
 
+### ⛔⛭⛭ A SIXTH INSTANCE, AND THIS REVISION FOUND IT BY BREAKING THE PREVIOUS ONE'S GATE
+
+***`r7288`'s restraint gate selected its own revision's commits by searching their messages for its revision NUMBER. This revision cited `r7288` in a commit message — the ordinary thing to do here — and so entered that filter, putting `r7290`'s receipt into `r7288`'s file set and turning its restraint red.***
+
+⇒ ⌗ ***A selector over a LIVE RANGE cannot be made safe by filtering what it matches, when the corpus's own convention is to cite revisions by number.*** *The repair in both receipts is to stop selecting commits and state the claim as the **specific negative** it always was: none of the receipts whose rows the revision verdicted was touched. A later revision landing its own receipt cannot falsify that.* ⌈ *Twice in one gate inside two revisions — a dropped record separator, then a citation — and both times the assertion was weaker than the sentence describing it. **The sentence was always the better gate.*** ⌊ *Both receipts are green again under the runner's own invocation, which is the invocation that caught each one.*
+
 ## ⚠ WHAT THIS CANNOT SETTLE
 
 ***The structural explanation is measured on ONE prefix.*** *The share of structurally-unable keys is not read corpus-wide here, so it is not shown to account for any other prefix's mode — and the cheap flag that would have measured it is the one just refuted. **Reading it properly means classifying each key's read as pinned, live or absence-probe, which is an instrument over the ledger and not a batch.*** ⌈ ⌗ *If `70`'s `105`-minute costing run is going to walk every unadjudicated key anyway, that classification is nearly free alongside it, and it would be the first predictor on this problem grounded in what a receipt DOES rather than in where its literal sits. **I am naming it rather than building it, because it is `70`'s instrument by trade and because I have now built and refuted two.***

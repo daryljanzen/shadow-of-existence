@@ -46,6 +46,20 @@ count the whole argument rested on, wrong by two in each direction, with the ban
 its four bands.* ⇒ ***A pre-registration that names the wrong classes cannot be scored on the class
 that turns out to matter, and that is a defect in the registration and not in the result.***
 
+** ⛔⛭⛭ AND A SIXTH INSTANCE OF THIS LINE'S OWN FAIL-ON-SUCCESS CLASS, FOUND BY THIS REVISION
+BREAKING THE PREVIOUS ONE'S GATE. **  *`r7288`'s restraint gate selected its revision's commits by
+searching their messages for its own revision NUMBER.  **This revision cited `r7288` in a commit
+message --- the ordinary thing to do in this corpus --- and so entered that filter, putting this
+receipt into `r7288`'s file set and turning its restraint red.***
+  ⌈ ⇒ ***A selector over a LIVE RANGE cannot be made safe by filtering what it matches, when the
+    corpus's own convention is to cite revisions by number.*** *The repair in both receipts is to stop
+    selecting commits at all and state the claim as the SPECIFIC NEGATIVE it always was: **none of the
+    receipts whose rows this revision verdicted was touched.** That cannot be broken by a later
+    revision landing its own receipt.*
+  ⌊ ⌗ *Twice in one gate inside two revisions --- a dropped record separator, then a citation --- and
+    both times the claim was weaker than the sentence describing it. The sentence was always the
+    better gate.*
+
 ⌗ *`29` landed, `502` remain.  The prefix was picked by this seat with the reason stated, no order
 being outstanding; the three called numbers are read out of the pushed file at the commit that pushed
 it, and the second call --- that the subject rule would reach at most a sixth of the prefix --- held
@@ -312,11 +326,22 @@ if not _touched:
                        if f})
 _rcpt = [f for f in _touched if f.startswith('receipts/') and f.endswith('.py')]
 print(f'      touched {len(_touched)} file(s), {len(_rcpt)} of them receipts')
-gate(f'Ⓔ② ⛭ the restraint: the ledger, this revision\'s own pre-registration and this receipt --- and '
-     f'NOT `L271`\'s two receipts, because a verdict is a row and not an edit to the gate it '
-     f'describes.  ** The commit range is read over THIS revision\'s own commits, with the record '
-     f'separator stripped, which is the repair `r7288` needed **',
-     BASE in _touched and all(f.endswith(os.path.basename(__file__)) for f in _rcpt))
+# ⌗ THE CLAIM IS STATED AS THE SPECIFIC NEGATIVE IT IS: none of the receipts whose rows this
+#   revision verdicted was touched.  The range form of this claim broke twice in `r7288` -- once on a
+#   dropped record separator and once because `r7290` CITED `r7288` by number in a commit message and
+#   so entered its filter.  ** A selector over a live range cannot be made safe by filtering what it
+#   matches, when the corpus's own convention is to cite revisions by number. **
+_subjects = sorted({k[0] for k in _keys})
+_touched_subjects = [f for f in _touched if f in _subjects]
+print(f'      the {len(_keys)} rows live in {len(_subjects)} receipt(s); this revision touched '
+      f'{len(_touched_subjects)} of them')
+gate(f'Ⓔ② ⛭⛭ the restraint, as the SPECIFIC NEGATIVE: the `{len(_keys)}` rows live in '
+     f'`{len(_subjects)}` receipts of `L271` and this revision touched `{len(_touched_subjects)}` of '
+     f'them, while the ledger IS in the diff --- because a verdict is a row and not an edit to the '
+     f'gate it describes.  ** Stated this way it cannot be broken by a later revision landing its own '
+     f'receipt, which is how the range form of the same claim broke twice in `r7288` **',
+     BASE in _touched and not _touched_subjects
+     and all(f.endswith(os.path.basename(__file__)) for f in _rcpt))
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print()

@@ -440,26 +440,40 @@ gate(f'Ⓔ① ⛭ the re-read is PUBLISHED as a table of all `{len(_body)}` rows
 # read over that range goes red when ANOTHER seat touches a receipt -- the fail-on-success class this
 # line has now filed four times.  So: the commits in the range whose message carries this revision,
 # and the working tree only while none of them exists yet.
-_own_commits = []
-for _rec in _git('log', '--format=%H%x1f%B%x1e', f'{BEFORE}..HEAD').split('\x1e'):
-    _rec = _rec.strip()                      # ⚠ the record after the first opens on git's separator
-    if not _rec or '\x1f' not in _rec:        #   newline: unstripped, the sha reads '\n<sha>', `git
-        continue                             #   show` returns NOTHING, and the restraint below then
-    _h, _msg = _rec.split('\x1f', 1)         #   describes only the newest commit of the revision --
-    if re.search(r'\br7288\b', _msg):        #   which is how this gate went red on its own second
-        _own_commits.append(_h)              #   commit, the fifth instance of the class on this line
+# ⚠ THE RANGE IS PINNED AT BOTH ENDS, and the reason is the SIXTH instance of this class --- the
+# second found in this one gate.  The previous form selected this revision's commits by searching
+# their messages for its own revision number, and `r7290` then CITED `r7288` in its commit message,
+# so `r7290`'s receipt entered this restraint's file set and the gate went red on a later revision
+# doing the ordinary thing.  ** A selector over a LIVE range cannot be made safe by filtering what it
+# matches, because the corpus's own convention is to cite revisions by number. **  The repair is to
+# stop reading a live range: `BEFORE..RANGE_END` is a fixed pair of commits, every commit in it is
+# this revision's, and no filter is needed or wanted.
+RANGE_END = 'aa365894'       # r7288's last commit -- the four between BEFORE and here are all its own
+_own_commits = [_h for _h in _git('log', '--format=%H', f'{BEFORE}..{RANGE_END}').split('\n') if _h]
 _touched = sorted({f for _h in _own_commits
                    for f in _git('show', '--name-only', '--format=', _h).split('\n') if f})
 if not _touched:                                  # nothing committed yet: the working tree stands in
     _touched = sorted({f for f in (_git('diff', '--name-only', BEFORE) + '\n'
                                    + _git('diff', '--name-only', '--cached', BEFORE) + '\n'
-                                   + _git('ls-files', '--others', '--exclude-standard')).split('\n') if f})
+                                   + _git('ls-files', '--others', '--exclude-standard')).split('\n')
+                       if f})
 _rcpt = [f for f in _touched if f.startswith('receipts/') and f.endswith('.py')]
 print(f'      touched {len(_touched)} file(s), {len(_rcpt)} of them receipts')
-gate(f'Ⓔ② ⛭ the restraint: the ledger, this revision\'s own table and this receipt --- and NOT ONE '
-     f'of the `38` rows\' receipts, because a re-verdict is a row and not an edit to the gate it '
-     f'describes',
-     BASE in _touched and all(f.endswith(os.path.basename(__file__)) for f in _rcpt))
+# ⌗ AND THE CLAIM IS STATED AS THE SPECIFIC NEGATIVE IT IS, which is what makes it immune to the
+#   class above rather than merely pinned against it: the restraint is that NONE OF THE 38 ROWS'
+#   RECEIPTS WAS TOUCHED.  A later revision adding its own receipt cannot falsify that, so the gate
+#   says what it means and stops depending on which commits the range happens to contain.
+_subjects = sorted({_c[0] for _c in _named})
+_touched_subjects = [f for f in _touched if f in _subjects]
+print(f'      the 38 rows live in {len(_subjects)} receipt(s); this revision touched '
+      f'{len(_touched_subjects)} of them')
+gate(f'Ⓔ② ⛭⛭ the restraint, as the SPECIFIC NEGATIVE: the `38` rows live in '
+     f'`{len(_subjects)}` receipts and this revision touched `{len(_touched_subjects)}` of them, '
+     f'while the ledger IS in the diff --- because a re-verdict is a row and not an edit to the gate '
+     f'it describes.  ** Stated this way the claim cannot be broken by a later revision landing its '
+     f'own receipt, which is how the range form of it broke twice **',
+     BASE in _touched and not _touched_subjects
+     and all(f.endswith(os.path.basename(__file__)) for f in _rcpt))
 
 _KEYS = ['is not a Lie algebra', 'that sector can be specified, and is obstructed twice',
          'A RECEIPT THAT CANNOT FAIL']
