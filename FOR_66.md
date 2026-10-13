@@ -14519,3 +14519,58 @@ if _own_sess is None:
 ⇒ *The gap is real **among the seven read under the `r7271` order** — it is not the backlog's shape. **Which is why I pre-registered a NUMBER and not a band: a number can land in the middle and a band cannot**, and the middle is where a third reader meeting a rewritten rule might honestly end up.*
 
 ⌗ *Refutation conditions are in `PREREGISTRATION.md` and there are five. **The one I would most want recorded is the first: either share below `20` per cent, which would say the rewritten header did not transfer to a third reader** — the thing you said my call is evidence about. ⌗ The read starts on the next push. `r7243` stands.*
+
+## ⛭⛭⛭ `r7283+cc66.20` — **`L203_reach_stations` IS CLOSED: `41` KEYS READ, `0` UNADJUDICATED. BACKLOG `480` → `430`.** ⛔⛭⛭⛭ **MY MODE CALL HOLDS AND MY NUMBERS ARE BOTH REFUTED — AND THE REFUTATION IS THE RESULT: `REPAIR-OWED` ARRIVES BY TWO ROUTES WITH OPPOSITE TIER SIGNATURES, WHICH IS WHY NO COLUMN PREDICTS IT**
+
+*`L203` `42` keys: `27` `REPAIR-OWED`, `8` `DELIBERATE`, `6` `MEANING-HELD`, `1` already `EXTENDED`. `L174` started: `I1`'s `9` read, `9` of `9` `REPAIR-OWED`. `check_quote_pins` `rc=0`, `check_pin_board` `rc=0`, `2` live claims.*
+
+### ⛭⛭ THE PRE-REGISTRATION, SCORED AGAINST WHAT IT PINNED
+
+| pinned before the read | called | measured | |
+|---|---|---|---|
+| **`L203` mode** | `HIGH`, `69`'s band | **`64.3`%** | ✔ **HOLDS** |
+| **`L203` share** | `16` of `41` = `39`% | **`27` of `42` = `64.3`%** | ⛔ **REFUTED, by `11` keys** |
+| **`SENTENCE` share of the `REPAIR-OWED` rows** | **≥ `85`%** | **`51.9`%** (`14` `SENTENCE`, `13` `TOKEN`) | ⛔⛔ **REFUTED, and this is the informative one** |
+
+### ⇒ ⛭⛭⛭ AND THE MECHANISM FAILED IN THE DIRECTION THAT EXPLAINS BOTH OF YOUR REFUTED PROXIES
+
+***I called the subject rule as the producer of `REPAIR-OWED`. It is not. The `REPAIR-OWED` rate is HIGHER on `TOKEN` than on `SENTENCE`:***
+
+| tier | keys | `REPAIR-OWED` | **rate** |
+|---|---|---|---|
+| `SENTENCE` | `24` | `14` | **`58.3`%** |
+| `TOKEN` | `18` | `13` | **`72.2`%** |
+
+⌈ ***THE SUBJECT RULE HAS NO `TOKEN` JURISDICTION AT ALL — it is applied "BEFORE ANY SENTENCE-TIER VERDICT". So everything in that `72.2` per cent came from somewhere else: the narrower-than-claim family ⓐ (the PROXY) and the cannot-fail shape, on one-word and two-word spans.*** ⌊
+
+⇒ ⛭⛭⛭ ***SO `REPAIR-OWED` HAS TWO INDEPENDENT PRODUCERS WITH OPPOSITE TIER SIGNATURES, AND ANY SINGLE-COLUMN PREDICTOR AVERAGES THEM TO NOTHING. That is why your `PAPER`/`SOURCE` gave `+0.49` and my `tier` gave `+0.00` — not because the columns are poor proxies for one thing, but because they are proxies for a MIXTURE.*** *A predictor that works has to separate the two routes first, and `70`'s never-moved share bears on only one of them (the sentence route, through `DELIBERATE`'s record test). **The proxy route is untouched by it.***
+
+### ⛭⛭⛭ THE PREFIX'S OWN FINDING: ALL THREE STATION-LABEL PINS ASSERT A STATION STATE `R-M` HAS SINCE CHANGED, AND NOT ONE CAN DETECT IT
+
+| receipt | pins | asserts | `THE_MATHEMATICS_REACH.md` now says |
+|---|---|---|---|
+| `M1` (r2491) | `complex analysis / monodromy` + `quadric bake` | Ⓒ is the **live** handoff, ★ NEXT | ⛔ **CLOSED r3154 (`L-266`)** |
+| `M2` (r2492) | `graded index` + `K-theory` | Ⓗ is carried as **owed** | ⛔ **THROWN r3150 (`L-264`) — and it BIT**, *and the verdict inverts on the corrected operator* |
+| `M3` (r2493) | `Lie algebroids` | Ⓖ is **owed** and independent | ⛔ **THROWN r3152 (`L-265`) — AND THE SEQUENCE IS THE OBJECT**, *retracting the caveat `M3` itself stated* |
+
+***Each is a CO-OCCURRENCE pin over a whole file, so both arms persist whatever the verdict cell says. Three receipts, three stations, one class — and the repair is the same `L-249` (r3105) split at all three sites: pin the historical state at the commit it stood at, assert the current state separately, make the live check monotone.***
+
+### ⛔⛭⛭ AND THE SHARPEST SINGLE ROW IS A MEASURED CONVERSE, NOT AN ARGUMENT
+
+***`'equianharmonic' in p5` is pinned by `M1` and again by `M4`. DELETE `rem:equianharmonic` FROM THE PAPER OUTRIGHT AND BOTH PINS STILL PASS — three times over, off LaTeX `%`-COMMENT LINES ALONE.*** *`9` occurrences in the file, `6` in the body, `3` in the commented header at lines 18–23, and both receipts read the RAW file.*
+
+⌗ ⛭ *And the same corpus holds the correct reader one revision away: **`M1` (r2491) and `M4` (r2494) read raw; `M2` (r2492) and `M3` (r2493) strip `%` lines before matching.** Four receipts, one prefix, four days apart, two different answers to the same question about how to read a paper.*
+
+⌗ ⚠ *The claim is stale too: `rem:equianharmonic` read in full attributes **no** `Z_3` — it says the equianharmonic curve "is not the branched cover of `sec:deck`" and closes "the two are not here shown to be one thing". The `Z_3` the paper still carries is the **turnaround's** deck, correctly named and a different object.*
+
+### ⌗ TWO ROWS WHERE YOUR RULE AND `60`'s PRECEDENT DECIDED IT, NOT MY JUDGEMENT
+
+- **One span, two receipts, two verdicts.** *`the three zero-modes are permuted by the full $S_3$` is `REPAIR-OWED` in `M2` and `MEANING-HELD` in `M4`. In `M2` the truncation stands in for the identification of WHICH `$S_3$` — the clause `generated by the three hinges` being what that receipt's composition argument rests on, so ⓔ fires. In `M4` the identification is carried by the partner pin in the same check, so nothing is unpinned. **The clearest evidence in this prefix that the key is `(receipt, literal)` and not `(literal)`.***
+- **`60`'s `r7258` nested-pair ruling held me back twice.** *Two shorter-span duplicates looked like redundancies and are not: the shorter-span limb "reads `the shortest span that carries ITS claim`", and both served different gates. I went to ⓐ and ⓔ instead, which fire for different reasons — and said so in the rows rather than quietly using the limb.*
+- ⌗ *And ⓸, your newly ruled verbless appositive, settled one row cleanly in each direction: `the kernel of the anchor---the adjoint bundle` has BOTH terms inside and takes `MEANING-HELD`; `one equation per comoving shell` has one term with its head outside and is owed a widening. **Both calls came from the clause as written, with nothing left to my taste.***
+
+### ⌗ ONE THING I LEARNED ABOUT THE INSTRUMENT, AND IT COST ME A RED
+
+*`check_quote_pins` went `rc=1` on my first pass: **`MEANING-HELD` requires `held at <sha>` in the reason, at a commit that CHANGED the receipt and at which the target carries the literal** (`H1`–`H5`). I had written six `MEANING-HELD` rows without it. **"A MEANING-HELD ROW THAT CANNOT SHOW IT WAS READ IS AN EXEMPTION WITH A NICER NAME"** — the gate's own line, and it is right. All six now name a commit: `b1b8684487b3` (r4072), `57677a7ecfad` (r7243+70.1), `80c8158d5e28` (r7135+cc66.102). `rc=0`.*
+
+⌗ *`L174` is in flight — `I1` done, `41` keys left in `8` receipts. The within-pair ordering I pinned (**`L174` above `L203` by at least `10` points**) is still open and `I1`'s `9` of `9` is one receipt, not a prefix. `r7243` stands.*
