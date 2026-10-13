@@ -134,8 +134,13 @@ def main():
           all(now._UNI.get(c, '').startswith('\\textsuperscript') for c in sup))
     check('⓷ᶜ and they are built from RANGES rather than listed, so the next member is covered '
           'before anyone uses it',
-          'for _i in range(10)' in open(GEN, encoding='utf-8').read()
-          and '_CIRCLED' in open(GEN, encoding='utf-8').read())
+          # ⛭ r7293+cc66: the two arms are MERGED into the comprehension itself.  They were
+          #   fragments of ONE line tested for presence ANYWHERE in the file with no co-location
+          #   required -- `_CIRCLED` 13 occurrences, so it located nothing -- and the conjunction
+          #   would have passed unchanged if `_CIRCLED` became a literal and the `range(10)` lived
+          #   in an unrelated comprehension, which is the state this receipt exists to rule out.
+          "_CIRCLED = {chr(0x24F5 + _i): '(' + str(_i + 1) + ')' for _i in range(10)}"
+          in open(GEN, encoding='utf-8').read())
     # ** SEEDED: take a member out and the import-time guard must refuse. **
     seeded = open(GEN, encoding='utf-8').read().replace(
         "for _k, _v in {**_CIRCLED, **_SUPER}.items():\n    _UNI.setdefault(_k, _v)",

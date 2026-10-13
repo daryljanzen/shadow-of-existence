@@ -90,6 +90,7 @@ found anything ** -- it did not: below the top two hundred of the unclaimed surf
 Written r3178, `L-280`.  Stated for reversal.
 """
 import os
+import re
 import sys
 
 import numpy as np
@@ -156,7 +157,16 @@ def main():
                   encoding='utf-8', errors='replace').read()
     check('⓵ᵇ and it says so in its own head: it cannot tell a true claim from a false one, nor a '
           'load-bearing one from a passing remark',
-          'WHAT IT CANNOT DO' in dc_src and 'reading list' in dc_src
+          # ⛭ r7293+cc66: the `reading list` arm is repaired, and the repair is the one this
+          #   receipt's own comment above shows was taken the wrong way round.  Measured:
+          #   `reading list` has ONE RAW occurrence and TWO flattened -- the head's sentence
+          #   breaks as `It produces a reading\n    list.`, so the pin could not see it, and the
+          #   site it DID match is a runtime FAIL MESSAGE in the body.  ** The repair for a line
+          #   wrap is to flatten the READER, never to shorten the span: shortening buys a match
+          #   and loses the site. **  The other two arms are 69's DELIBERATE where this seat read
+          #   REPAIR-OWED and are left for the gate to rule.
+          'WHAT IT CANNOT DO' in dc_src
+          and 'It produces a reading list' in re.sub(r'\s+', ' ', dc_src)
           and 'load-bearing claim from a passing remark' in dc_src)
     check('⓵ᶜ ⌗ and the two prior findings it generalises came from reading, not counting: L-276 '
           'from one sentence, L-278 from following a field into an argument',
@@ -204,7 +214,13 @@ def main():
     check('⓷ᵇ L-279: so(4,2)/so(4,1) IS AdS_5 — the substrate\'s own symmetric-space dual, sharing '
           'its isotropy exactly',
           os.path.exists(l279)
-          and 'substrate' in open(l279, encoding='utf-8', errors='replace').read())
+          # ⛭ r7293+cc66: the arm pinned the word `substrate`, which has 16 occurrences in a file
+          #   whose own TITLE contains it -- it could not fail, so the conjunction reduced to the
+          #   `os.path.exists` beside it.  Replaced by L-279's own STATED RESULT, which is what
+          #   this check claims it establishes.
+          and "so(4,2)/so(4,1) is AdS_5, it shares the substrate's own isotropy subalgebra, and it is the "
+              'symmetric-space DUAL of dS_5'
+          in re.sub(r'\s+', ' ', open(l279, encoding='utf-8', errors='replace').read()))
     check('⓷ᶜ ⛔ and here: AdS_5 is one of the two manifolds this uniqueness claim omits — so one '
           'object appears three times, twice inside a uniqueness claim that leaves it out',
           d_ads == maxdim)

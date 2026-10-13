@@ -132,7 +132,15 @@ def main():
     check('SOURCE: and CR INHERITS the adiabatic spectrum rather than generating it -- P16: '
           '"a nearly scale-invariant adiabatic spectrum processed by ordinary structure formation -- a '
           'fully specified input, available from standard cosmology"',
-          'nearly scale-invariant adiabatic spectrum processed by ordinary structure formation' in cosmo
+          # ⛭ r7293+cc66: widened LEFT to name the CARRIER.  The old span was a bare noun phrase
+          #   with no finite verb, and the check's claim is that CR INHERITS the spectrum rather
+          #   than generating it -- so a span naming no carrier was satisfied by a sentence about
+          #   anything at all having such a spectrum.  ** Stopped short of the partner arm
+          #   deliberately: one widening could absorb `available from standard cosmology, and n`,
+          #   but that is another seat's EXTENDED row and retiring it is their call to confirm. **
+          'what it carries into collapse is a nearly scale-invariant adiabatic spectrum processed by '
+          'ordinary structure formation'
+          in cosmo
           and 'available from standard cosmology, and n' in cosmo)
     check('SOURCE: the corpus itself flags adiabatic as the observed standard, named not assumed -- '
           '"Adiabatic primordial perturbations are strongly favoured observationally and are the '

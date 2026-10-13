@@ -109,8 +109,14 @@ def main():
     # ------------------------------------------------------- (0) what rests on it
     check('⓪ P10 measures the UV degree from three inputs, the third being "a degeneracy growing as '
           '$n^2$, the shell contribution goes as $n^3$ and the sum \\emph{diverges quartically}"',
-          'a degeneracy growing as $n^2$, the shell contribution goes as $n^3$ and the sum '
-          '\\emph{diverges quartically}' in p10)
+          # ⛭ r7293+cc66: widened LEFT to the `with` that makes the three items PREMISES.  The old
+          #   span opened on the OBJECT of a preposition sitting outside it -- the mirror of ⓵'s
+          #   preposition case -- so read alone it was an absolute phrase glued to a conclusion,
+          #   with the relation between them carried by the word that was cut.
+          'with $\\mu_n\\sim n$, $\\langle\\hat\\pi_n^2\\rangle\\sim n$ in the instantaneous ground state, '
+          'and a degeneracy growing as $n^2$, the shell contribution goes as $n^3$ and the sum '
+          '\\emph{diverges quartically}'
+          in p10)
     # ⛔ ALSO PINNED.  This revision amends D2 with a correction note, so the quote is asked of the
     #   commit at which the assertion stood unqualified -- not of the live file this turn edits.
     d2_before = re.sub(r'\s+', ' ', subprocess.run(

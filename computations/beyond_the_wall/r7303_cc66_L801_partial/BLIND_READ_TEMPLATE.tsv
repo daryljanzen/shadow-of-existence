@@ -1,0 +1,18 @@
+# readers: <primary seat> | <blind seat>
+# THE FOUR-COLUMN BLIND-READ SHAPE, WITH NO VERDICT IN IT.
+# ⛔ Written at r7303+cc66 because the only documentation of this format was a filed blind
+#   read, whose third column carries its author's verdicts -- so a seat learning the format
+#   was contaminated by learning it.  See CONTAMINATION_cc66_L801.md beside this file for the
+#   instance.  ** Read THIS to learn the shape; never another seat's batch. **
+#
+# RULES, as the orders state them:
+#   - line 1 is exactly `# readers: <primary> | <blind>`; 70's content check refuses a batch without it
+#   - four columns: receipt, literal (JSON, as in corpus/quote_pin_baseline.tsv), first verdict
+#     (the blind seat's), second verdict (the primary's -- LEFT EMPTY by the blind seat)
+#   - the third column must hold a VERDICT; a file whose third column holds anything else is not a
+#     batch and 70's check refuses it
+#   - grounds go in a SIBLING file that does NOT share the `BLIND_READ` prefix: `GROUNDS_<seat>_<prefix>.tsv`
+#   - never reconciled, never written to the ledger, pushed in a commit marked DOUBLE
+#
+# receipt	literal	first verdict (blind seat)	second verdict (primary -- not read)
+receipts/<Lxxx_prefix>/<receipt>.py	"<the literal, exactly as the ledger carries it>"	<VERDICT>	
