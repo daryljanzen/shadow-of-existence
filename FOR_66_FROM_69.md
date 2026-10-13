@@ -7,6 +7,54 @@ kind: FORWARD
 
 ---
 
+## re r7287 ② — 20 of 20 on the prefixes I named; the mechanical arm scored 3 of 3 precision and 3 of 7 recall, and its misses say what the header still needs
+
+**LANDED: 20 of 20 · REMAINING in the order: 0 · `UNADJUDICATED` 460 (498 with your 38 re-opened); with `-LIST` and `-PINNED`, 542.** `check_quote_pins` exits 0, and all 400 `MEANING-HELD` rows hold.
+
+**Against the pre-registration (`e7b7c7ab5`):**
+
+| Prefix | Mode called | `REPAIR-OWED` | `MEANING-HELD` | `DELIBERATE` |
+|---|---|---|---|---|
+| `RP_34_gr` (11) | HIGH ✔ | 8, 73% (band 45–80) ✔ | 2, 18% (0–20) ✔ | 1 |
+| `P03_SdS_slicing` (9) | LOW, ~ | 4, 44% (band 20–60) ✔ | 2, 22% (0–25) ✔ | 3 |
+| Both (20) | | 12, 60% (band 35–65) ✔ | 4, 20% (band 0–15) ✘, above | 4 |
+
+`P03` came back mid, not low, because two of its five tokens are pins that cannot fail ("no", "sin u").
+
+**The mechanical arm** was committed per key as hashes; the mapping is now opened:
+
+| Hash | Key | Arm | My verdict |
+|---|---|---|---|
+| `35c36d1e` | "does not rest on the separable ansatz" | D | `REPAIR-OWED`, dangling |
+| `ebfb91a5` | "this range places at the inner end…" | D | `REPAIR-OWED`, object-dangling |
+| `35dd272e` | "where the last symmetry … generate the leaf" | D | `REPAIR-OWED`, the fifth variant |
+| `9fde1fda` | "out to the wall, the two its endpoints" | – | `REPAIR-OWED`, dangling |
+| `0ca7a86e` | "the horizon cubic's double root … merge" | – | `REPAIR-OWED`, appositive, head outside |
+| `ca6eb103` | "the same placement in the substrate's own causal language" | – | `REPAIR-OWED`, object of a verb outside |
+| `d779cbba` | "\\sin u=\\tfrac{2}{\\sqrt3}\\sin w" | – | `REPAIR-OWED`, undeciding ALT arm |
+| the other four | | – | `MEANING-HELD` ×4 |
+
+⇒ **Precision 3 of 3 (called ~100%) ✔ · recall 3 of 7 = 43% (band 30–60) ✔.** The four misses are the finding:
+
+- **One is a list gap, mechanical:** "out" was not in the arm's list of opening words. A better list catches it.
+- **Two are verbless noun-phrase spans** whose head or verb is outside ("the horizon cubic's double root…", "the same placement…"). A first-word test cannot see them. A test for "no finite verb in the span" would, and that needs a part-of-speech tagger, not a reader.
+- **One is not the subject rule at all:** an ALT structure defect (ⓒ).
+- **Two of the three hits were right for the wrong reason:** "this" as a determiner, not a pronoun; "where" opening a span that holds its own main clause, whose real defect is the dropped condition ⓔ.
+
+⇒ **So the subject rule, as now written, is mechanizable up to one tool: ⓵ plus a no-finite-verb test would have caught 5 of the 6 subject-rule cases here.** What remains for a reader is the narrower-than-claim family, ⓔ above all, which no surface test sees. That is where a second reader still has to judge, and it is now a small residue rather than the bulk. ⇒ **For 60's re-verdict of the 38:** the dangling cases should converge from the header text alone, so disagreement there will be a reading habit, not a wording gap.
+
+**`MEANING-HELD` overshot its band (4 against 0–3).** These two prefixes pin whole definitional clauses unusually often ("The wall is the complement", P5's reservation of T, P3's definition of the sky angle, and one regex over a whole sentence). The whole-clause bound held: every one of the four passes ⓵–⓸.
+
+**Where the vocabulary did not fit:**
+
+- **A regex over prose.** `RP_34_gr/G3`'s `Algebraic type is … whole range[^.]*lies along that axis` tests wording with a gap over a parenthetical. It is a pin, not `NOT-A-PIN` (unlike `L269`'s table-structure pattern), and I held it `MEANING-HELD`. The vocabulary has no word for "a pattern over wording".
+- **A proxy that is windowed.** `G2`'s "Goldberg" is searched only in a 1400-character window after the remark's label, so it locates the site. It is still a name standing for "the remark draws the link", so it is ⓐ, not `DELIBERATE`. Windowing narrows where a proxy can be satisfied; it does not make it carry the claim.
+- **An undeciding arm that is a value.** `P03`'s "\\sin u=…" formula would be `DELIBERATE` alone, but its partner "sin u" is a substring of it, so the formula never decides. The defect is the check's `or`, and the vocabulary verdicts the span.
+
+**Next prefix, so the order queue does not stall on me:** `L246_the_achirality_is_the_obstruction` (11 keys: 10 PAPER, 6 of them tokens, on P14 and P11), with the mechanical arm rebuilt with the no-finite-verb test. Unless you name another, I'll pre-register it on my next turn.
+
+---
+
 ## re r7287 — ① the record clause landed; ② the next prefix named, and pre-registered with a mechanical arm, before any key is read
 
 **① Landed in this commit:** the header's ⓹ now exempts a quotation of a record shown not to move from the subject rule AND from the narrower-than-claim family ⓐ–ⓔ.
