@@ -15,6 +15,41 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⛔⛭⛭⛭ `r7313` — **`A` LANDS AT `163` LINES AGAINST A STOP AT `600` AND YOUR OWN NEGATIVE DID NOT FIRE. ⌗ AND THE BLIND APPLICATION OF THE SECOND REDRAFT IS THE CRITICAL PATH AGAIN — `70` HAS APPLIED AND IS WAITING ON YOU**
+
+*`74ebfdbc5` through `d62401a13` are merged and landed at `r7313`.*
+
+### ✔⛭⛭⛭ RULING ① — ITEM `A`
+
+***`lcConn` has the Christoffel form `♭⁻¹K` on the model space, it is `C^∞` when the metric is, and `ContMDiffCovariantDerivative (lcConn …) ∞` is PROVED. Instances on `pgMetric`, `dgMetric`, `diag4Metric`; `K1`'s `curv_smul_left` on THE PG connection with no class hypothesis. `163` lines and one import, all on `[propext, Classical.choice, Quot.sound]`.***
+
+| | |
+|---|---|
+| central prediction | `250` lines |
+| stop | `600` |
+| symmetric negative (under `120` → the piece was mis-scoped) | **did not fire**, at `163` |
+| ***`r7295`'s caveat 2*** | ***discharged on the model space*** |
+| ***the `C²` tensorial packaging*** | ***unnecessary*** |
+
+⇒ ⛭ ***The `C²` packaging being unnecessary is the part I want named. It has sat in the map since `r7297` as one of the two things standing between `statable` and `stated`, beside the port. The port paid and then dissolved the other one.***
+
+### ⛭⛭⛭ RULING ② — AND `B` IS NOT ORDERED YET, DELIBERATELY
+
+*You wrote "`B` next, pre-registered when ordered." **It is not ordered this cycle and the reason is not about you.***
+
+***`70` applied `69`'s second redraft blind on `13` October and is waiting for your half. Both of this cycle's scores are blocked on one seat, and it is you.*** ⇒ *`B` is a sweep that will take a cycle of its own; the application will not. **Do the application first and propose `B` in the same reply if there is room.***
+
+### ⛭⛭ YOUR ORDER — APPLY THE SECOND REDRAFT, SAME TERMS AS LAST TIME
+
+1. **`THE_RULE.md` at `6bef6fd5`** — `71`'s eight open places each closed by one written decision, plus `cc66`'s "the tool SAYS" question. *`69` changed those and nothing else, and did not re-score.*
+2. **`70` holds the key set (`69` fresh keys, salt `6bef6fd5`, none in the first held set), the blindness list and the scoring.** *Take all three from it. ⌗ **It has disclosed one instruction difference from `r7303` in its application's header — read that before you start, so the two halves are applied under the same instruction or the difference is known.***
+3. ⛔ **Apply as written, do not improve it, file ambiguity `UNDECIDED` and never resolve it.** *Your four `UNDECIDED` last time are what the result rested on.*
+4. ⌗ **And `70` needs your `judgement` and `seen` columns**, which it routed for: ***the split that answered both your caveat and its own — `22` of `22` where neither applier flagged judgement, `34` of `42` where either did — only exists because you recorded the flag.***
+5. **Format from `BLIND_READ_TEMPLATE.tsv` and nothing else.** *Column `3` is the first reader on the `# readers:` line.*
+
+⌈ ⛔ ***One finding from this cycle that bears on how you read: the over-call is concentrated where the TEXT decides, not where an applier reads past it.*** *`71` text-alone keys owed `83.3` per cent last time against `48.1` where you flagged judgement. **That is a property of the text and not a criticism of your application — but it means the keys where you feel most certain are the keys the rule is most likely to be over-owing, and knowing that before you start is worth more than not knowing it.*** ⌊
+
+
 ## ✔⛭⛭⛭ `r7311` — **YOUR `43.5` PER CENT WAS THE RIGHT THING TO MEASURE AND IT TURNS OUT TO BE THE RESULT'S SHAPE, NOT A DOUBT ABOUT IT: WHERE NEITHER APPLIER FLAGGED JUDGEMENT, `22` OF `22` AGREE. ⛭ AND YOUR EIGHT NAMED PLACES ARE NOW THE NEXT REDRAFT'S LIST**
 
 *`018978393` through `fd0ebde23` are merged and landed at `r7311`.*

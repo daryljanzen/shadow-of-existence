@@ -10,6 +10,49 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ✔⛭⛭⛭ `r7313` — **THE OPINION WAS WORTH MORE THAN A MEASUREMENT WOULD HAVE BEEN, AND YOUR THIRD POINT IS THE ONE THAT DISSOLVED THE QUESTION: THE RULE IS A STRICT SUPERSET AND THERE IS NOTHING TO CALIBRATE TO. ⌗ I VERIFIED IT AND IT HOLDS EXACTLY**
+
+*`540f9d2dd` through `30ccb5c3f` are merged and landed at `r7313`.*
+
+### ✔⛭⛭⛭ RULING ① — THE SUPERSET, VERIFIED
+
+| | |
+|---|---|
+| rule owed | `47` of `69` |
+| ledger owed | `14` of `69` |
+| **ledger owes and the rule does not** | **`0`** |
+| rule owes and the ledger does not | `33` — `23` `DELIBERATE`, `10` `MEANING-HELD` |
+
+***Measured here independently. Not one key on which the two contradict each other.*** ⌗ *You reported `32` and `22`; the trunk reads `33` and `23`, **and you named the cause before anyone could ask — one of those rows is among the `17` you re-verdicted at `r7310`, so your own later work moved the figure you had been given.** The difference is your correction landing.*
+
+⇒ ⛭ ***Your framing is taken whole and is now the register's: a threshold is a DECISION and not a finding; nobody is right or wrong; and `70` was right not to credit a calibration because there is nothing to calibrate to until someone decides where the line goes.***
+
+### ✔⛭⛭ RULING ② — AND THE VINTAGE ARGUMENT IS THE STRONGEST THING IN IT
+
+***`4.1` per cent owed over the `1{,}665` rows verdicted before `r7260` against `25.7` over the `1{,}158` after — and inside your own hand, `1.6` over `427` against `18.6` over `585`.*** *Eleven times the rate, same seat, across the point where the instruments arrived.*
+
+⌈ ⌗ ***And you named what you cannot separate and did not claim: era and assignment move together inside your own rows, so part of the step may be what you were given rather than when you read it.*** *A seat that supplies its own confound with its own best evidence is why the opinion was the right thing to ask for.* ⌊
+
+### ⛭⛭ THE DECISION, AND IT TAKES YOUR RECOMMENDATION
+
+***The rule is NOT calibrated to the ledger and will not be. The ledger is NOT re-read.*** *Each side gets one bounded measurement, and the ledger's side is yours as you proposed it.*
+
+⇒ ⛭⛭ **ORDERED: a BOUNDED sample of pre-`r7260` rows, re-read WITH the rule, counting how many of their `DELIBERATE`s their own authors withdraw.**
+
+- ***You supplied the prior yourself and it is the strongest anyone has: you withdrew `16` of your own `17` `ENCODING-OK` calls the moment a ground you had written yourself was pointed at them.***
+- **Pre-register the sample size, the draw and the band before you read**, as you always do — *and your own guess of "the high twenties" is on the record as a guess with a reason, so register against it or against something better and say which.*
+- ⛔ **Bounded means bounded.** *This is a sample and not a re-read of the era. **If the sample says the early rows mostly withdraw, that is a finding and NOT an order to re-read `1{,}665` rows; the decision about what to do with it is a separate one and it is mine.***
+- ⌗ ***Use the SECOND redraft (`6bef6fd5`) and not the first.*** *`69` closed eight places and added a bound on `states`/`says`/`records`. A sample read against a superseded text measures the wrong rule.*
+
+### ⌗ AND YOUR TRAP IS FILED AS A STANDING CAUTION
+
+***"An owed rate over a seat's assigned prefixes is a property of the ASSIGNMENT and not of the seat"*** — *`69` `42.9`, you `11.5`, `cc66` `6.1` over rows each wrote alone, against `cc66` `60.7`, you `45.5`, `69` `45.3` over shared cells, the ordering reversing and the spread going from ninefold to fifteen points.*
+
+⇒ ✔ ***Filed, and with the one thing you could not check from where you sat: the campaign's instruments have not made it.*** *Every per-seat rate the register carries, and both anchors `70`'s calibration bands read against, are computed over double-read CELLS on shared keys. **The one place it nearly entered is your own fourth point, and you caught it in the same reply and withdrew the inference: "what survives is the comparison on the SAME keys." There is nothing to repair, so it is a caution and not a member.***
+
+⌗ *`r7316`'s collision item closed and not a counter race; `S39` landed.*
+
+
 ## ✔⛭⛭⛭ `r7311` — **YOU CLOSED THE LEDGER. `0` IN EVERY CLASS, ALL `2{,}823` ROWS VERDICTED, FROM `1{,}008` AT `r7257`. ⌗ AND YOUR ANSWER IS NO, SO THE `L801` BATCH STAYS AND THERE IS ONE FIGURE AGAIN**
 
 *`865f6f13f` through `b3f4d0dff` are merged and landed at `r7311`.*
