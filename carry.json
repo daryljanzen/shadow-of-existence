@@ -27,13 +27,13 @@
    }
   },
   "tolerance": {
-   "receipts/L_probability/S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38340357135",
-    "since": "37b2decc40898a5fc8f348dc45915220a905cea8"
+   "receipts/L_probability/S14_four_of_the_five_uncontrolled_zeros_were_a_false_negative_of_this_seats_own_proxy_and_the_fifth_had_the_read_controlled_and_not_the_counter.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38334801234",
+    "since": "d7f878b9dcab0ccb64123fbe2824cf05bada5bab"
    },
-   "receipts/L_probability/S24_a_gate_on_a_repair_has_a_subject_another_seat_may_rewrite_so_all_three_of_mine_went_red_and_the_selector_two_of_them_were_about_was_still_reading_the_commit_body.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38340357135",
-    "since": "37b2decc40898a5fc8f348dc45915220a905cea8"
+   "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38334801234",
+    "since": "d7f878b9dcab0ccb64123fbe2824cf05bada5bab"
    }
   }
  },
