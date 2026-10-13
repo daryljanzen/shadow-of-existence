@@ -1,1 +1,10 @@
-{}
+{
+ "main": {
+  "reads": {
+   "receipts/L_probability/S30_the_registered_relationship_is_vacuous_here_because_the_flag_is_exact_and_the_non_repair_owed_share_splits_in_two.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38390473870",
+    "since": "4b130bdfb99bbea3eff145e26b0ec7f9c826e72d"
+   }
+  }
+ }
+}
