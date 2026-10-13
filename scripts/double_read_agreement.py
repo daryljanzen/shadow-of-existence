@@ -16,10 +16,19 @@ at which it stops moving (computations/beyond_the_wall/r7293_70_agreement/PREDIC
 recomputed from the two verdicts (identical strings) -- a file's own AGREE column is checked against it and a mismatch is
 reported, never trusted.  Batches are ordered by the commit that added the file.
 
+** r7295+70: A DOUBLE-READ'S IDENTITY IS ITS KEY SET, NOT ITS FILE. **  66 re-presented 44 keys already inside the
+pooled 56 as one more batch and the first version pooled them -- 100 keys from 56 distinct ones, no warning, and the
+duplicate read as ordinary between-batch variance.  Every row is now keyed by (receipt, literal), and a key presented
+twice -- across batches or inside one -- FAILS the run (exit 1, nothing written), naming both files.  Not a warning: a
+warning is how a borrower inherits a defect silently.  A third reader of an already-double-read key is a different
+measurement and needs a different key; it is refused here until that is designed.
+
     python3 scripts/double_read_agreement.py            # print the tables
+    python3 scripts/double_read_agreement.py --seed     # the duplicate refusal, both ways, on built batches
     python3 scripts/double_read_agreement.py --write    # also write AGREEMENT.md beside the prediction
 """
 import glob
+import json
 import math
 import os
 import subprocess
@@ -40,7 +49,7 @@ def batches():
         # the oldest commit that touched the file (a file landed through a merge has no `--diff-filter=A` hit on main)
         when = (subprocess.run(['git', '-C', ROOT, 'log', '--reverse', '--format=%ct %h', '--', rel],
                                capture_output=True, text=True).stdout.split('\n')[0] or '').split()
-        pairs, mism, label = [], 0, ''
+        pairs, keys, mism, label = [], [], 0, ''
         for ln in open(f, encoding='utf-8', errors='replace'):
             ln = ln.rstrip('\n')
             if ln.startswith('#'):
@@ -52,11 +61,50 @@ def batches():
                 continue
             a, b = c[2].strip(), c[3].strip()
             pairs.append((a, b))
+            keys.append((c[0].strip(), _lit(c[1])))
             if len(c) > 4 and c[4].strip() in ('AGREE', 'DISAGREE') and (c[4].strip() == 'AGREE') != (a == b):
                 mism += 1
         out.append({'file': rel, 'when': int(when[0]) if when else 0, 'sha': when[-1] if when else 'untracked',
-                    'pairs': pairs, 'mismatch': mism, 'label': label})
+                    'pairs': pairs, 'keys': keys, 'mismatch': mism, 'label': label})
     return sorted(out, key=lambda b: (b['when'], b['file']))
+
+
+def _lit(cell):
+    """the literal as the ledger means it: JSON-decoded when it is JSON, else the cell stripped"""
+    cell = cell.strip()
+    try:
+        return json.loads(cell)
+    except ValueError:
+        return cell
+
+
+def represented(bs):
+    """[(receipt, literal, first file, second file)] for every key presented more than once"""
+    seen, out = {}, []
+    for x in bs:
+        for k in x['keys']:
+            if k in seen:
+                out.append((*k, seen[k], x['file']))
+            else:
+                seen[k] = x['file']
+    return out
+
+
+def _seed():
+    mk = lambda f, rows: {'file': f, 'keys': [r[:2] for r in rows], 'pairs': [r[2:] for r in rows]}
+    a = mk('A.tsv', [('r/x.py', 'one', 'DELIBERATE', 'DELIBERATE'), ('r/x.py', 'two', 'REPAIR-OWED', 'DELIBERATE')])
+    b = mk('B.tsv', [('r/y.py', 'one', 'MEANING-HELD', 'MEANING-HELD')])
+    again = mk('C.tsv', [('r/x.py', 'two', 'REPAIR-OWED', 'REPAIR-OWED')])
+    inner = mk('D.tsv', [('r/z.py', 'k', 'ALT-OK', 'ALT-OK'), ('r/z.py', 'k', 'ALT-OK', 'DELIBERATE')])
+    cases = [('distinct keys in two batches pool', [a, b], False),
+             ('the same literal under a different receipt is a different key', [a, b], False),
+             ('a key re-presented in a later batch is refused', [a, b, again], True),
+             ('a key presented twice inside one batch is refused', [inner], True)]
+    bad = [f'{lab}: expected {"refused" if w else "pooled"}' for lab, bs, w in cases if bool(represented(bs)) != w]
+    for b_ in bad:
+        print(f'    [FAIL] {b_}')
+    print(f'  seeds: {"hold" if not bad else "LOST"}')
+    return 0 if not bad else 1
 
 
 def kappa(pairs):
@@ -127,7 +175,25 @@ def report(bs):
 
 
 def main():
+    if '--seed' in sys.argv:
+        return _seed()
     bs = batches()
+    dup = represented(bs)
+    if dup:
+        print(f'  ⛔ {len(dup)} KEY(S) PRESENTED MORE THAN ONCE -- a double-read is its key set, and these keys are '
+              f'already pooled.  Nothing is written.')
+        for r, l, f1, f2 in dup[:40]:
+            print(f'    {r}  {json.dumps(l, ensure_ascii=False)[:60]}  first in {f1}, again in {f2}')
+        if len(dup) > 40:
+            print(f'    ... and {len(dup) - 40} more')
+        return 1
+    empty = [x['file'] for x in bs if not x['pairs']]
+    if empty:
+        print(f'  ⛔ {len(empty)} BATCH(ES) WITH NO VERDICT PAIR -- a batch lands with both readers or not at all.  '
+              f'Nothing is written.')
+        for f in empty:
+            print(f'    {f}')
+        return 1
     lines, rows_cum, N, p, t2, ns, kp = report(bs)
     head = (f'# The double-read agreement, pooled — generated by `scripts/double_read_agreement.py`\n\n'
             f'*{len(bs)} batch(es), {N} independently double-read keys.  Pooled raw agreement **{100 * p:.1f}%**, '
