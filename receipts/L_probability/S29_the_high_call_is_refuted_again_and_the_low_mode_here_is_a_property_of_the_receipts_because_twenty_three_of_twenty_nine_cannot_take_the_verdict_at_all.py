@@ -75,6 +75,11 @@ def gate(label, ok):
 
 
 BEFORE = '20135e9c'   # the commit that PUSHED the pre-registration, before the first key was opened
+AFTER = 'db791aad'    # the commit that carried this revision's verdicts -- the 71st member's corollary
+# ⚠ Every COUNT below is read at `AFTER` rather than in the working tree: an equality on a LIVE
+# ledger goes red the moment another seat legitimately re-verdicts any row, which is the class
+# `check_exact_counts` exists for.  The pre-registration is read at `BEFORE`, where it was pushed.
+# The one live read kept is the backlog, and it is MONOTONE.
 PIN = '48e55a6b^'     # the commit L271/S2 reads its superseded figures at -- r4111's parent
 BASE = 'corpus/quote_pin_baseline.tsv'
 PRED = 'computations/beyond_the_wall/r7290_60_the_tier_mix/PREDICTION.md'
@@ -140,7 +145,8 @@ gate(f'Ⓐ② ✔⛭ and the three called numbers are READ out of that commit\'s
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓑ  THE SCORE, AND THE HEADLINE CALL IS REFUTED ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_now = {(c[0], c[1]): (c[5], c[6] if len(c) > 6 else '') for c in rows_of(read(BASE))}
+_after_led = _git('show', f'{AFTER}:{BASE}')
+_now = {(c[0], c[1]): (c[5], c[6] if len(c) > 6 else '') for c in rows_of(_after_led)}
 _mine = {k: _now[k] for k in _keys}
 _tally = collections.Counter(v[0] for v in _mine.values())
 _n = len(_mine)
@@ -220,7 +226,7 @@ print(f'      the {len(_still)} still live: {", ".join(_still) or "none"} --- fl
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓓ  THE THIRD MECHANICAL PREDICTOR, REFUTED BEFORE IT WAS CLAIMED ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_all = rows_of(read(BASE))
+_all = rows_of(_after_led)
 _per = collections.defaultdict(list)
 for _r in _all:
     _per[_r[0].split('/')[1]].append(_r)
