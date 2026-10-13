@@ -225,8 +225,12 @@ i4 = open(os.path.join(HERE, 'I4_the_shear_selection_exists_and_is_vacuum_bound.
 i3 = open(os.path.join(HERE, 'I3_the_identification_is_general_and_the_shear_count_is_the_gap.py'),
           encoding='utf-8').read()
 CHECKS = [
+    # ⛭ WIDENED r7287+cc66: the span had NO VERB and dropped the two words this receipt is
+    #   about -- `algebraically special VACUUM` (the hypothesis I4 established as the finding) and
+    #   whose congruence it is.  Widened to the Goldberg--Sachs clause.
     ("P9's shear-selection is about a NULL GEODESIC CONGRUENCE",
-     p9, r'shear-free null geodesic congruence'),
+     p9, r'An algebraically special vacuum geometry has, by the Goldberg--Sachs '
+     r'theorem~\\cite\{GoldbergSachs1962\}, a shear-free null geodesic congruence'),
     ("P9 states the VACUUM hypothesis, which is r2505's finding and stands",
      p9, r'algebraically special \\?emph\{?vacuum|algebraically special vacuum'),
     ("r2505's I4 reads it as sigma = 0 ON THE PRINCIPAL CONGRUENCE",
@@ -276,7 +280,8 @@ assert sp.simplify(sig2_pg - 3 * M / r ** 3) == 0, f"PG shear scalar moved: {sig
 assert sp.simplify(sig2_pg) != 0, "the PG slicing shows no shear — there is no contrast to demonstrate"
 assert _long, "the PG shear is not purely longitudinal — the synthesis in PART 3 fails"
 assert _split == (3, 2), f"the York split gives {_split}, not (3, 2)"
-assert re.search(r'shear-free null geodesic congruence', p9, re.I), \
+assert re.search(r'An algebraically special vacuum geometry has, by the Goldberg--Sachs '
+                 r'theorem~\\cite\{GoldbergSachs1962\}, a shear-free null geodesic congruence', p9, re.I), \
     "P9's selection principle is not stated over a null congruence — this reading is not the corpus's"
 assert re.search(r'K_ij = \(1/3\) theta g_ij \+ sigma_ij', i3), \
     "I3's sigma is not the extrinsic curvature's trace-free part — the two-objects claim fails"

@@ -304,7 +304,7 @@ gate("Ⓔ④  ⇒ *** and at the corpus's own D = 5 they DISAGREE: the mass func
 import sympy as _sp                                                       # noqa: E402
 gate("Ⓔ⑤  and both are read off ONE grafted function: the `2M` the metric function is built on is "
      "`twoM` evaluated at the horizon radius, element for element",
-     'twoM' in _g006['_GRAFTED']
+     _needle('two', 'M') in _g006['_GRAFTED']
      and P.metric_function(5)[2] == _sp.nsimplify(P.twoM(5).subs(P.r0, _sp.Rational(1, 2)))
      and P.metric_function(4)[2] == _sp.nsimplify(P.twoM(4).subs(P.r0, _sp.Rational(1, 2))))
 

@@ -71,8 +71,14 @@ def main():
                encoding='utf-8', errors='replace').read()
     p9 = re.sub(r'\s+', ' ', '\n'.join(l for l in raw.split('\n')
                                        if not l.lstrip().startswith('%')))
-    i3 = open(os.path.join(HERE, 'I3_the_identification_is_general_and_the_shear_count_is_the_gap.py'),
-              encoding='utf-8', errors='replace').read()
+    # ⛭ r7287+cc66: FLATTENED, and this is the THIRD arrival of one lesson in this corpus -- a
+    #   literal matched against a RAW file fails when the sentence is broken across a line, which
+    #   is exactly what I3's prose does to `a five-dimensional / space of shear configurations`.
+    #   ** Fixed at the READER rather than by clipping the literal to fit the line break, because
+    #   a span chosen to dodge a line break is a pin on the line wrapping. **
+    i3 = re.sub(r'\s+', ' ',
+                open(os.path.join(HERE, 'I3_the_identification_is_general_and_the_shear_count_is_the_gap.py'),
+                     encoding='utf-8', errors='replace').read())
 
     # ⓵ the count
     n = 3
@@ -101,16 +107,26 @@ def main():
           'D_j sigma^ij' in i3)
     # ** I3's own wording, matched at source rather than from memory of it -- which is the same
     # error this receipt is about, and it fired here on the first run. **
+    # ⛭ WIDENED r7287+cc66, AND THE TARGET WAS WRONG AS WELL AS NARROW: the old span occurred
+    #   in I3 exactly ONCE, ** inside I3's own check(...) GATE LABEL and not in its prose ** --
+    #   I3's prose reads `five-dimensional space of SHEAR configurations at fixed rho and fixed
+    #   theta`, so the label and the claim could drift apart without either changing.  The pin now
+    #   reads I3's PROSE.  And `nothing in the identity says which` stopped at the interrogative,
+    #   before its own object; it is widened to the clause's end.
     check('and then asserted a five-dimensional space with nothing selecting among them',
-          'five-dimensional space of configurations at fixed rho and theta' in i3
-          and 'nothing in the identity says which' in i3)
+          'five-dimensional space of shear configurations at fixed rho and fixed theta' in i3
+          and 'nothing in the identity says which of them a bend can be' in i3)
     check('⇒ THE SELECTING OBJECT WAS IN I3\'s OWN OUTPUT, four lines from the denial',
           'D_j sigma^ij' in i3
-          and 'five-dimensional space of configurations at fixed rho and theta' in i3)
+          and 'five-dimensional space of shear configurations at fixed rho and fixed theta' in i3)
 
     # and what stands
+    # ⛭ WIDENED r7287+cc66: the span was THE LEFT-HAND SIDE ONLY of the identity whose whole
+    #   content is the right-hand side -- and it occurs in I3 four times, once inside the
+    #   Hamiltonian constraint `R3 + K^2 - K_ij K^ij = 2 rho`, where it is a term and not an
+    #   identity at all.  The whole equation is now pinned.
     check('r2504\'s identity STANDS: K^2 - K_ij K^ij = (2/3)theta^2 - sigma_ij sigma^ij identically',
-          'K^2 - K_ij K^ij' in i3)
+          'K^2 - K_ij K^ij = (2/3) theta^2 - sigma_ij sigma^ij' in i3)
     check('⚠ and the stratum is still unworked: two free functions is still two functions, and no '
           'beyond-wall solution is exhibited', tt == 2)
 

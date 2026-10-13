@@ -106,6 +106,20 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+def _r7283():
+    """`r7283` ① batch four: the named function grafted OUT of its script, loaded on demand.
+
+    *The module is a top-level script that prints at import, so the function is lifted by AST
+    and exec'd alone.*  ⚠ ** And the loader REFUSES a table the module binds as `{}` and fills
+    in a `for` loop: it used to hand one back EMPTY with nothing to say so, which would have
+    made a check VACUOUS RATHER THAN WRONG. **"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import flat_ruled_and_discrete as _F
+    return _F
+
 def main():
     print()
     print("  B44 -- are PO-5's two walls independent?")
@@ -216,6 +230,11 @@ def main():
     print('     *** Both: the thing exists and nothing does anything with it.  r2768\'s merge was wrong')
     print('     and r2769\'s split was right — and the parallel is neither. ***')
     print()
+    _F = _r7283()
+    check('⛭ `r7283` ① COMPUTED, not cited: the vantage bundle IS flat. The plaquette round two walls in both orders is the identity and so is the zero-winding class, so the holonomy is a function of the winding numbers alone; on a winding-ONE loop it is a primitive cube root of unity, so flat is not TRIVIAL; and a non-diagonal monodromy of the same order 3 breaks it, which is the reachable converse',
+          _F.bundle_is_flat() and _F.flat_is_not_trivial()
+          and not _F.nonabelian_converse())
+
     return 0
 
 

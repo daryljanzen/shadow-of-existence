@@ -91,7 +91,15 @@ def main():
     check('and the ADM energy and momentum equations "are precisely the ADM Hamiltonian and momentum '
           'constraints"', _CONSTR.search(p11) is not None)
     check('and it carries exactly two Killing vectors, at the Type-I edge',
-          'exactly two Killing vectors' in p11 and 'the last confined stratum before the wall' in p11)
+          # ⛭ WIDENED r7287+cc66: `exactly two Killing vectors` named a COUNT and no counted
+          #   object -- satisfied by a paper saying the FLRW stratum admits two -- and `the last
+          #   confined stratum before the wall` was an appositive with its head outside.  ** One
+          #   widened span of prop:twoKV carries the metric, the count and the stratum. **
+          'The polarized Gowdy--de Sitter metric~\\eqref{eq:metric} with a generic profile '
+          '$\\psi(t,z)$ admits exactly two Killing vectors' in p11
+          and 'admits exactly two Killing vectors, $\\partial_x$ and $\\partial_y$'
+          '\\rcpt{P11_twoKV}, and so occupies the two-Killing-vector (Type-I) '
+          'stratum---the last confined stratum before the wall' in p11)
 
     # ** the general decomposition -- symbolic, no symmetry assumed **
     n = 3
@@ -138,7 +146,12 @@ def main():
     check('while a polarized Gowdy leaf has ONE propagating polarisation -- P11: "the single '
           'transverse-traceless polarization ... the leaf\'s shear, the propagating graviton" -- and '
           'still NOT "mode", which is the conflation r3539 removed',
-          re.search(r"single transverse-traceless polariz", p11) is not None
+          # ⛭ WIDENED r7287+cc66, AND THE REPAIR IS NOT A WIDENING ALONE: the span ended
+          #   MID-WORD at `polariz`, which fails the word-aligned limit (r7255 ruling ②) -- and
+          #   the clip had a SOUND MOTIVE, surviving the British spelling.  ** So the fix is a
+          #   spelling ALTERNATION rather than a clip, plus the subject the span never named. **
+          re.search(r"field \$\\psi\$ is the single transverse-traceless polari[sz]ation",
+                    p11) is not None
           and 'transverse-traceless mode' not in p11)
     # ⌗ and this check no longer repeats the one above it.  Both asserted the SAME literal under
     #   different labels -- two checks, one test -- so the second could never fail where the first
@@ -160,7 +173,9 @@ def main():
           #      longer has, and it is not quietly dropped either: it is named here as replaced.*
           'The two polarizations are a wave map into the hyperbolic plane' in p11
           and 'e then shown to be a wave map into the hyperbolic plane}, the polarized case being a geodesic' in p11
-          and 'second polarization lives' in p11
+          # ⛭ WIDENED r7287+cc66: three words that dropped the LOCATION, which is the whole of
+          #   the claim this clause makes; widened to the relative clause's head.
+          and 'the torus block in which the second polarization lives' in p11
           and free >= 5)
 
     # ** the dark region **

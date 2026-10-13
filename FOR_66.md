@@ -9,8 +9,8 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #294**, draft) — nothing waits on the chat window.*
-⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290 and #293 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #369**, draft) — nothing waits on the chat window.*
+⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
@@ -14133,3 +14133,675 @@ if _own_sess is None:
 
 ⌗ ***So `#364` carries TWO base-branch reds, both `60`'s and both established identical at `origin/main`: `check_cannot_fail` (cause named as `69`'s `r7271` widening) and `S25`'s `Ⓑ①`. Neither is mine to take under ruling ①, both are commented once on the PR, and nothing of mine is red.***
 
+
+---
+
+## ⛭⛭⛭ `r7283+cc66.1` — **LANDED `41` OF `59`. REMAINING `18`.** ⚠⛭⛭ **BATCH FOUR IS NINE OF NINE — AND THE LOADER COULD HAND BACK AN EMPTY TABLE AND SAY NOTHING, WHICH IS THE ONE DEFECT EVERY EARLIER FAILURE OF IT WAS TOO LOUD TO BE**
+
+*Four `(module, function)` pairs, nine rows, each with a recorded reachable converse: `L128b: diag_at` → `B29`, `B44`; `L50b: key_of` with `apply` → `B38`, `B41`, `B13`; `r7111/geometry: curvature` → the two `P15` rows; `panelA_reassign: ruling` → the two `P1` rows. **`C75`: `48` checks, all pass, `41` s. `REACHED_B4.tsv` digest `ed53a9d99621d9a8`. Nothing held.** `0323b526` is the computations, this push the receipt.*
+
+### ⚠⛭⛭⛭ THE PART THAT IS NOT A ROW COUNT, AND IT IS THE REASON THIS BATCH WAS WORTH RUNNING
+
+***`L50b` binds `ends = {}` and `L128b` binds `leg_wall = {}` at top level and fill them in a `for` loop — which is not a graftable statement kind. So the graft saw the binding, kept it, dropped the loop, and handed back an EMPTY dict.***
+
+⇒ ⚠ ***A row taken through `ends` would have been VACUOUS RATHER THAN WRONG, and that is the worse of the two failures because it PASSES.*** *Every earlier failure of this loader was loud — a `NameError` on `g`, a `GraftError` on a missing name, a refusal to guess. **This one is silent and green**: an empty dict where a six-element table belongs, and every `all(...)` over it vacuously `True`.*
+
+⌈ ***`graft.py` now REFUSES a kept binding to an empty container that a non-graftable statement fills, by name and by line.*** *And the refusal is **gated additive** — `Ⓒ⑤` re-grafts four functions the earlier batches took and all four still graft, so no landed row is withdrawn by the guard. ⌊ ⌗ *`Ⓒ①` proves the hazard from each module's OWN syntax tree rather than from the symptom.*
+
+⌗ ⛭⛭ ***AND THE MEASUREMENT THAT SAYS NOT TO BUILD THE LOOP-KEEPING CAPABILITY, which is the same shape as the nested-function gate you ratified at `r7283` ruling ②:*** *of the `30` rows outstanding after this batch the named function grafts **ON ITS OWN in `23`**; of the other `7`, three read a module-level name nothing graftable binds, and four are the nested-function limit already filed at `r7267` ③. **NOT ONE of the `30` needs a filled container**, so the refusal is the whole of the fix. *The six ends are rebuilt from `L50b`'s own `theta`, `A` and `sq3` and **gated on `L50b`'s own substrate equation** $-X_0^2+X_1^2+X_2^2 = A^2$, so the rebuild is checked rather than trusted.*
+
+⌗ ⚠ ***One correction to `0323b526`'s own commit message, which said `27` of `30`.*** *That figure was measured on the pre-batch set, which counted batch four's own nine as outstanding and batch two's nine HELD rows as settled. On the set that is actually outstanding it is `23`, and the four rows the difference adds were already filed as a stated limit rather than as owed work. **`C75` carries the correction in its own docstring with the withdrawn figure left standing above it.***
+
+### ⛭⛭ A REACHABLE CONVERSE SHARPENED A PREDICATE INSTEAD OF FAILING A ROW
+
+***`The constant-$\tau$ slice is exactly flat` read off the SCALAR curvature would have PASSED on the Schwarzschild spatial slice, whose $R$ is `0` and whose Kretschmann is $6r_s^2/r^6$.***
+
+⇒ *So the converse did not fail the row — **it found the predicate reading a quantity that does not separate flat from Ricci-flat.*** *The predicate now reads the invariant: on `r7111`'s own constant-$\tau$ slice, Ricci zero, scalar zero, **Kretschmann zero**, with `10` of `27` Christoffels non-zero so the flatness is not a coordinate accident. The at-rest $S^3$ slice gives $R=6$ and the Schwarzschild slice is recorded as the converse that exposed the defect.*
+
+⌗ *The other eight in one line each, since a ruling is as long as its measurement: the **plaquette** round two walls in both orders is the identity and so is the zero-winding class, while a winding-one loop gives a primitive cube root of unity — **flat and not trivial** — and a non-diagonal monodromy of the same order `3` breaks it. The **horn swap** is a fixed-point-free involution whose three 2-cycles each join ONE hinge's two ends, of order `2` in a group of order `12`; the same keying on a one-parameter rotation gives `12` distinct keys in `12` steps and never closes. The **root transposition** sends each moved hinge ONE step at three stations and TWO at five, so `a hop to a neighbouring hinge` is a fact about there being three. The **SdS seam** is a root of $f$ at finite positive radius where the Kretschmann invariant is finite and at $r\to0$ it diverges. Both **ruling families** lie on the quadric, are straight, and are null to `1e-12`, and every line of both meets each at-rest slice exactly once while a slicing by planes through the axis does not.
+
+### ✔ BOTH DOUBTS I RAISED BEFORE THE BATCH RESOLVE IN THE ROWS' FAVOUR
+
+*At `r7281+cc66.3` I said I wanted to check two before taking them, because `B39` taught that the backlog can name a function one notch off the quantity.* ⇒ ✔ ***`key_of` keys matrices, but with `apply` it reaches BOTH halves of `is a discrete horn swap`*** — the map of the six ends and the discreteness — ***and `ruling` is not a plotting parameterisation but the quadric's two straight-line families, with the converse named in the module's OWN docstring*** (`a=b=alpha => null rulings = light cone`). *Neither is a `B39`.*
+
+### ❓⚠ ONE HOLDER IS WITHHELD AND ROUTED RATHER THAN EDITED, AND IT IS THE SIXTH INSTANCE OF THE SAME SHAPE
+
+***`P15_the_rate_rule_reaches_the_projection_only_through_the_identification…` carries a standing gate `Ⓕ③` asserting that `it computes NOTHING, which is what the order asked for`, whose predicate is `len(CHECKS) >= 12`.***
+
+⇒ ⚠ ***Adding the computed check would make that gate's own LABEL false while its PREDICATE still passed.*** *That is the store-live-state-as-a-pass-condition shape for the sixth time this cycle — and the first where the stored state is a claim about the file's own character rather than a count.*
+
+⌈ ***And the conflict is between two of YOUR orders, not between me and a receipt:*** *the order `Ⓕ③` cites asked that receipt to compute nothing, and `r7283` ① asks this seat to compute that row. **`r7283` ① is the later order, but ruling ① says a seat does not edit another seat's receipt and I did not break this one** — so I am not resolving it by rewriting another seat's claim.* ⌊ ⇒ ***The row is TAKEN — the computation is in `C75` and in `REACHED_B4.tsv` — and only the holder edit is withheld.*** *`C75`'s `Ⓕ②` gates the withholding **by that receipt's own standing claim**, so it is a measurement in the receipt rather than an omission from it. *Seven of the eight holders carry `_r7283` and all seven run green.*
+
+⌗ ***What I need from you is one line: either that gate's label is yours to amend, or the row stands computed in `C75` alone and the holder keeps its `computes NOTHING` claim.*** *I will not ask again; whichever you say, it is applied directly.*
+
+⌗ *`r7243` stands. Next, in order: `r7283` ruling ③'s paper read at the four `GEOMETRY-NOT-RECORDED` loci and the one `OBJECTS-NOT-RECORDED` locus — a full turn on `P17`, not a grep, with `no metric stated at the locus` routed as a GAP IN THE PAPER rather than held. Then the rest of the `18`, then the `12` `EXTEND`, then order ②'s zero-mode function. **And for `L174`/`L203` I will give you my MODE call before I read a key, as ordered.***
+
+---
+
+## ⛭⛭⛭ `r7283+cc66.2` — **LANDED `46` OF `59`. REMAINING `13`.** ⚠⛭⛭ **RULING ③'s PAPER READ LANDS ALL FIVE HELD ROWS, AND IT MOVES YOUR RULING'S PREMISE IN TWO WAYS: THE LOCI ARE IN FOUR PAPERS, AND FOUR OF THE FIVE ARE NOT METRIC CLAIMS AT ALL**
+
+*`C76`: `48` checks, all pass, `17` s. `REACHED_B5.tsv` digest `7f4d93b0f36d7468`. Five rows, five taken, each FALSE on its own recorded converse. `r7283+cc66.4` is the computations, this push the receipt.*
+
+### ⌗ FIRST, THE LOCI ARE IN FOUR PAPERS AND NOT ONE
+
+*You wrote "the geometric core is `P17`". **It carries exactly one of the five.***
+
+| row | the paper its literal is pinned in |
+|---|---|
+| `B39` | `geometric_core_paper.tex` |
+| `B1`, `B42` | `boundary_paper.tex` |
+| `P11` | `matter_sector_paper.tex` |
+| `B11` | `janzen_circle_v3.tex` |
+
+⌗ *So the full-turn-per-paper rule bought four reads, not one, and `C76`'s `Ⓑ①` gates the count.*
+
+### ⚠⛭⛭⛭ SECOND, AND THIS IS THE FINDING: FOUR OF THE FIVE HAVE NO METRIC IN THEM
+
+***Your ruling inverted my hold reason correctly — they are not blocked for want of a metric — and then expected the answer to BE a metric. It is not.*** *Three of the four are statements about which GROUPS exist, and the fourth is the group the absolute fixes:*
+
+- `P11`: $\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$, structurally.
+- `B1`, `B42`: the handedness is carried by the **discrete** coset $\mathrm{O}(5,1)\setminus\mathrm{SO}_0(5,1)$, and a circle action needs a positive-dimensional **connected** group.
+- `B39`: the absolute is $\eta(X,X)=0$, and a substrate point's polar hyperplane cuts a totally geodesic $\mathrm{dS}_4$ of isometry $\mathrm{SO}(4,1)$, a sweep-subgroup of the substrate's $\mathrm{SO}(5,1)$.
+
+⇒ ⚠ ***And `lie_g`, the function the backlog named for all four, tests whether a VECTOR FIELD is Killing for a METRIC.*** *Measured off its own syntax tree it is worse than I had said: **its only parameter is `xi`, the vector field, and the metric it differentiates is read from module level** — so the change of inputs the backlog promises is a change of **vector field**, and no vector field is a group.*
+
+⌈ ***A CHANGE OF INPUTS CANNOT REPAIR A CHANGE OF KIND.*** *So `GEOMETRY-NOT-RECORDED` is **withdrawn** for all four — my code, and it was wrong in its own right — and `FUNCTION-IS-THE-WRONG-KIND` replaces it. ⌊ **That is a reclassification of the BACKLOG and not a hold on the row: all five are computed exactly, and the computation is what backs the reclassification rather than an argument about it.***
+
+⌗ ***And your GAP branch fires nowhere.*** *Every one of the five loci states what its row needs, in one sentence, in the paper where the literal is pinned. **The defect was mine and the backlog's; it was never the papers'.***
+
+⌗ *What is computed, in one line: `so(5,1)` dim `15` and `so(4,1)` dim `10` from the form itself; `B2` has eight roots in two length classes of four so it contains no `A2`, while `D3` has twelve of one length and does — **so `su(3)` embeds one dimension up and not here, and the obstruction is the ROOT SYSTEM and not a dimension count** (`so(5)` has `10` against `su(3)`'s `8`); all fifteen generators of `so(5,1)` are traceless so `det exp(tX) = 1` for every `t` and the `det = -1` coset meets no one-parameter subgroup, while the `(x4,x5)` generator exponentiates to a genuine circle of period `2π` inside the identity component; a substrate point's polar hyperplane is `(4,1)` and a point inside the cone gives `(5,0)`.*
+
+### ✔ `B11` LANDS AS AN ORDINARY `INPUTS` ROW AND ITS HOLD CODE WAS RIGHT
+
+*`character(s2)` is exactly the right KIND; the circle paper names the three critical loci as `f = 0` (the seam), `f = 1` (the turnaround) and `f = 2` (the interior Euclidean null); and `character(1-f)` at those three returns three DISTINCT characters where three equally spaced values return two.* ⇒ ✔ ***So `OBJECTS-NOT-RECORDED` was accurate and only my SEARCH was wrong — the objects were recorded, in a different paper from the one I looked in.*** ⌗ *And I do not claim the paper's two triples are one structure: it declines that in its own voice and nothing here supplies a derivation.*
+
+### ⚠⛭⛭ AND THIS BATCH MADE AND CAUGHT `C75`'s BUG ONE LAYER UP
+
+***Two converses were first written as `lambda: not GC.<fn>` WITHOUT the call. `not <function>` is always `False` — and `False` is exactly what a converse must return, so both rows PASSED for the wrong reason.***
+
+⇒ *Every predicate slot is a **named function** now, so a missing call raises `TypeError`, and `reach_b5` asserts at import that no slot is a lambda and every slot returns a `bool`.* ⌈ ⛭ ***`C75` taught the loader to refuse an empty container it used to return in silence; this is the same defect in the LEDGER rather than the loader, and I would rather hand you the pair than the half I found first.*** ⌊ ⌗ *Two more found the same way, both by a gate rather than by me. `Ⓑ②` failed on `B11` because I matched its literal against the RAW paper and the sentence is broken across a line — it now reads whitespace-normalised, the way the holders do. **And `check_unread_figure` caught `Ⓓ⑪` attributing the three values of `f` to the paper while nothing in the receipt opened it.** ⇒ *The gate's own remedy allows dropping the attribution; I took the other half and now **parse the three loci out of the paper's own sentence**, with the transcription checked against the read rather than standing beside it — four lines, and `B11` becomes a paper-read computation instead of a transcribed one.*
+
+⌗ ***And `B1` is one of `S14`'s five line-pinned sites and it is in this batch.*** *Checked BEFORE the edit this time, not after a trunk red: `S14`'s own source now says the line is provenance and the measurement does not depend on it, and `computations` is in its scratch-tree symlink list — **and `C76`'s `Ⓕ⑧` runs `S14` and gates it green with `B1` edited**, `17/17`.
+
+⌗ *`r7243` stands. Remaining `13` = `9` untouched `INPUTS` plus the `4` still held (`3` × `bead_frames: tau_of_r` `NESTED-FUNCTION`, `1` × `tau_r` `AXIS-ARGUMENT`), which is the capability `Ⓓ⑤` of `C73` gated the decision NOT to build. Then the `12` `EXTEND`, then order ②'s zero-mode function. **The one item still with you is `C75`'s withheld holder.***
+
+### ⛔ THREE REDS ON `#369`, ALL THREE ESTABLISHED AS THE BASE'S, AND ONE OF LAST CYCLE'S IS FIXED
+
+***Each reproduced in a detached worktree at `origin/main` before I concluded anything, which is a stronger discriminator than a re-run and is why the one re-run is unspent. Commented ONCE on `#369` and not again.***
+
+| check | the failure | whose |
+|---|---|---|
+| `fast` | `check_absence_claims`: `FOR_66_FROM_69.md: "occurs nowhere"`, `60` claims / `37` baselined — ⌗ *this cell QUOTES the gate's own output and makes no absence claim of its own; the gate itself scanned every tracked text file and is the search named here* | `69`'s |
+| `scoped — the plain suite` | `S26…bimodal…` gates `Ⓑ①` and `Ⓗ①`; `152` pass, `1` fail in `978` s | `60`'s |
+| `scoped — the runner-read sweep` | the SAME `S26`, the same two gates | `60`'s |
+
+✔ ***And one piece of good news in the same run: `check_cannot_fail` is GONE from the fast tier and the carry ledger reads `- cleared: S25`.*** *Both reds I routed on `#364` have been fixed — the stale `cannot_fail_baseline.tsv` row lowered, and `S25`'s ledger pair repaired. **Routing them rather than taking them was the right call and it cost nothing.***
+
+⚠ ⌈ ***But `S26` is `S25`'s successor and it carries the same defect: a gate asserting a ledger count read BOTH at a pinned commit AND live.*** *That is the **sixth** instance this cycle. ⌊ ⇒ *I am not writing a seventh account of it; the repair is on the record — **assert the CLAIM and print the MEASUREMENT** — and it is `60`'s to apply.* ⌗ *`check_absence_claims` wants what was SEARCHED beside the claim, which only `69` can supply.*
+
+⌗ ***Nothing of mine is red. On the current head: `C75` `48/48`, `C76` `48/48`, `S14` `17/17`, and `check_appendix_current`, `check_pdf_current`, `check_revision_collisions` and `check_unread_figure` all `rc=0`.***
+
+---
+
+## ✔⌗ `r7285` AND `r7287` — **BOTH ORDERS READ, BOTH UNCHANGED, AND I AM PAST WHERE THEY LEFT ME: `52` OF `59` LANDED, `7` REMAIN**
+
+*`r7287` acknowledges `41` of `59` and `r7285` acknowledges `9428addcf`. **Since then: batch five took all five rows ruling ③ sent me to the papers for, and batch six took six more. `52` landed, `7` remain.*** ⌗ *Nothing in either order asks for anything I am not already doing, so this is an acknowledgement and not a report — the entries are `r7283+cc66.2` above and `r7283+cc66.7`.*
+
+⌗ ***What the `7` are, so the remainder is not a number without a shape:*** *`4` are `bead_frames`' nested `tau_of_r` and `tau_r`, which `C73`'s `Ⓓ⑤` gated the decision NOT to build a capability for; `3` refuse on a module-level name nothing graftable binds (`los_spectrum`, `hier_run`, `spectrum`). **So the `12` `EXTEND` rows are the next real tranche, not the `7`.***
+
+⌗ ***And on `r7287`'s `L174`/`L203` note, which changes what I have to do before I touch a key:*** *the variable is the share of a prefix's keys on lines that never move; the `PAPER`/`SOURCE` column is **refuted** as a shortcut at Spearman `+0.49` and I will not use it; `69`'s rewritten header — the subject rule as an ORDERED TEST, `dangling-but-reads-complete` ruled `REPAIR-OWED`, the verbless appositive ruled, the narrower-than-claim family written out ⓐ–ⓔ, `DELIBERATE`'s record test on the full history — gets read **before my first key**, and my MODE call goes in writing before it. ⌗ *I have taken the point that I am the third reader of one disputed rule rather than a third sample.*
+
+### ⛔ A THIRD BASE-BRANCH RED, AND IT IS THE BAND FAILING AT THE FRONT
+
+***`check_revision_collisions` is red, and it is not mine: `r7285` is claimed by THREE commits for different work — `8afa9ed3` (`69`'s), `fadf708d` and `311e7ac6` (both `66`'s orders).*** *All six of my commits this cycle are subjected `r7283+cc66.N`, so none claims a bare number.*
+
+⌗ *Established the same way as the other two: **`rc=1` byte-identically in a detached worktree at `origin/main`**, same single `[FAIL]`, same three SHAs. ⌗ *It passed at my own head and failed in CI because CI evaluates head MERGED WITH BASE — the colliding commits were only on main until I merged it in, which is worth knowing as a general fact about this gate.*
+
+⇒ ⌈ ***And the gate names its own remedy, which is for the two lines that number revisions and not for me:*** *"pick the next number of YOUR OWN parity above the front, never `front + 2`", and cite a revision with its SHA wherever the identifier has to be unambiguous.* ⌊ ⌗ *The gate's own reading is that this is `L-174`'s collision one level up — **adoption of the odd half was not enough, because the number is picked from the FRONT and the front is not always yours.** It prints `the next EVEN id is r7288, the next ODD id is r7289`.*
+
+⌗ ***So `#369` carries three base-branch reds, all three established at `origin/main` and all three commented once: `check_absence_claims` (`69`'s `FOR_66_FROM_69.md`), `S26`'s `Ⓑ①`/`Ⓗ①` (`60`'s) in both scoped tiers, and now `check_revision_collisions` (`66`'s and `69`'s shared number). Nothing of mine is red.***
+
+---
+
+## ⛭⛭⛭ `r7283+cc66.3` — **LANDED `52` OF `59`. REMAINING `7`.** ⚠⛭⛭ **BATCH SIX IS SIX OF SIX, AND THE ONE WRONG-KIND ROW IN IT FAILS BY *QUANTIFIER* — WHICH IS A DIFFERENT DEFECT FROM THE FOUR IN BATCH FIVE**
+
+*`C77`: `54` checks, all pass, `27` s. `REACHED_B6.tsv` digest `d475b0e2057107bd`. Six rows on six functions, each FALSE on its own recorded converse. `CR_cosmology.pdf` at `312` pages.*
+
+### ⚠⛭⛭⛭ `B7` CARRIES `P11`'s CLAIM, AND ITS FUNCTION IS WRONG IN A WAY `lie_g` WAS NOT
+
+***`B7`'s own source — read, not inferred — says its literal is about `su(3)` being no isometry of the non-compact substrate. That is `P11`'s claim, which batch five computed.***
+
+⌈ ***And `killing_residual` WORKS, precisely:*** *exactly one of `probe2`'s four coordinate vector fields satisfies the Killing equation and `∂_u` is refuted outright. **The function is not broken and it is not vague.*** ⌊ ⇒ ***But a residual test is EXISTENTIAL-REFUTING — it settles one candidate at a time — and `su(3) is no isometry` is a NON-EXISTENCE over every embedding of an eight-dimensional algebra.*** *No finite number of non-vanishing residuals establishes one.*
+
+⇒ ⛭ ***So `lie_g` could not express `P11`'s claim AT ALL, while `killing_residual` can express the negation of `B7`'s one candidate at a time and still never reach the claim.*** **Two defects under one code, and this is the sharper of them: not the wrong object, the wrong quantifier.** ⌗ *Which sharpens what the backlog's defect actually is: `nearest by domain` says nothing about whether a function's QUANTIFIER matches its claim's.*
+
+### ⛭⛭ BOTH GUARDS BUILT IN THE LAST TWO BATCHES FIRED IN THIS ONE, ON CASES NEITHER WAS WRITTEN FOR
+
+***`C75`'s empty-container refusal was written against a `for` loop. `L091x` binds `GROUPS = []` and fills it with top-level `.append(...)` calls — a different statement kind — and the loader refused it by name rather than handing back an empty list.***
+
+***And `C76`'s `bool` guard was written against a converse missing its call. It caught two acoustic predicates returning `np.bool_` — true, but not a `bool`.***
+
+⌈ ⛭ ***That is the part I would keep if I could keep one thing from this batch: a guard that only ever fires on the case that prompted it is a test of that case; one that fires on a case nobody named is a test of the CLASS.*** ⌊ ⌗ *And a third, smaller: `Ⓓ⑬`'s first draft put an ABSOLUTE `1e-9` tolerance on `r_s`, a quantity of `144.55` Mpc, and failed at a difference of `4.0e-9` Mpc — `2.8e-11` RELATIVE. **The gate was the thing that was wrong**, and it now prints the measured difference beside its verdict instead of hiding it behind one.*
+
+⌗ *The other five in one line: the deck `Z_3` is abelian so its irreducibles are three one-dimensional characters against the walls' `S_3`'s `1,1,2` — and **exactly one irreducible is trivial for either group, so triviality does not discriminate, which is why the backlog recorded the DIMENSIONS**; the three hinge pairs give six routes whose two arcs partition the three walls as a `1`–`2` split, where four hinges give `(1,3)` and `(2,2)`; `G_su` returns baryon `1`, diquark `0`, meson `1` against `G_rigid`'s `1,0,3`, with **`no force` reported as the FINITENESS `|G| = 27` and a stated limit rather than a false case**; `D_M` by two routes names one number to `1e-9` relative where the other rate moves it by `68` Mpc; and `ell_A` is `301.41` at the CMB `H0` against `296.72` at the local one — the acoustic module's own RESULT 1 and RESULT 2, reproduced through the functions the rows name.*
+
+⌗ ⚠ ***The withheld holder is withheld AGAIN, same reason, and it now blocks two rows rather than one*** — `D_M`'s row lives in it. *`C77`'s `Ⓖ②` gates the withholding by that receipt's own standing claim, as `C75`'s `Ⓕ②` did. **I am not asking a third time; whichever way you rule, it is applied directly.***
+
+⌗ ***And the `7` that remain have a shape rather than a count:*** *`4` are `bead_frames`' nested `tau_of_r` and `tau_r`, which `C73`'s `Ⓓ⑤` gated the decision NOT to build a capability for, and `3` refuse on a module-level name nothing graftable binds (`los_spectrum`, `hier_run`, `spectrum`). **So the `12` `EXTEND` rows are the next real tranche, and after them order ②.***
+
+---
+
+## ⛭⛭⛭ `r7283+cc66.4` — **LANDED `56` OF `71` (`52` of `59` `INPUTS`, `4` of `12` `EXTEND`). REMAINING `15`.** ⛭⛭ **THE `EXTEND` CLASS IS OPEN, AND IT SAYS SOMETHING THE `INPUTS` CLASS NEVER COULD: AN EXTENSION CAN OVERSHOOT ITS CLAIM, AND BOTH OF THESE DO**
+
+*`C78`: `51` checks, all pass, `17` s. `REACHED_B7.tsv` digest `e187c0d9fb7fd795`. Four rows, two functions, nothing held. `CR_cosmology.pdf` at `313` pages.*
+
+### ❗ FIRST, A CALL PINNED BEFORE ANY OF THE `12` WAS COMPUTED
+
+***`EXTEND_PREDICTION.md`, digest `14aa710408c33d02`, pushed before the work: `3` of the `12` `EXTEND` rows will be `FUNCTION-IS-THE-WRONG-KIND` — a `25` per cent share against the `8.5` per cent measured over all `59` `INPUTS` rows.***
+
+*The three I name: `B15` and `B8`'s `lie_g` rows (**the Lie algebra generated by the ratios and the three-cycle**) and `C3`'s `killing_residual` row, whose claim `P12` states as **the symmetric-pair isotropy dimensions of `so(5,1)` are `{6,7,10}`**.*
+
+⌈ ***And the reason, which is what makes it a prediction rather than a guess:*** *`EXTEND` means `a short extension of that function`. **A short extension changes what a function COMPUTES; it does not change the KIND of question it answers.*** ⇒ *So a row whose function is the wrong kind is MORE likely to be filed `EXTEND` than `INPUTS` — because `a short extension` is exactly the phrase a classifier reaches for when a change of inputs plainly will not do and **the real answer, a different instrument, was never on the form.*** ⌊ ⌗ *Three refutations are written out in the file, including the one that would hurt most: if the corpus already carries a commutator-closure or involution-enumeration function I have not found, then the backlog named the wrong function but the right KIND exists and these are ordinary mis-namings like `B39`'s.*
+
+⌗ *The call is **honestly not blind** and says so: written after reading all `12` literals and `quantity` columns and five of the seven named functions. **What it fixes is the number, which is the thing a measurement can refute.*** ⌗ *This batch does NOT resolve it — four of twelve in, none a kind error, and all three named rows are in batch eight. `C78`'s `Ⓕ③` gates that.*
+
+### ⛭⛭⛭ `B13` IS SETTLED BY `L129`'s OWN TWO GENERATOR SETS AND BY NO CHOICE OF MINE
+
+***`close(gam)` and `close(ratios + [P])` are both of order `27` and both of exponent `3` — identical element-order multisets, one identity and `26` elements of order three — and they are NOT ISOMORPHIC: abelian `Z_3^3` with `27` conjugacy classes against `Δ(27)` with `11`.***
+
+⇒ *So `is not a second group resembling the substrate's own` is **exact rather than rhetorical**: resemblance by order AND by exponent is not isomorphism.* ⌗ *And the predicate is not vacuously `different` — handed one group against itself from the generators in the other order it comes back ISOMORPHIC. **The counterexample is the corpus's, not mine.***
+
+### ⛭⛭ AND `bead_contour` SITS AT EXACTLY THE NARIAI VALUE, SO THE POLE IS DOUBLE
+
+***`M2` is exactly `2/(3√3)`. `f` and its first derivative both vanish at `r_h = 1/√3` while the second does not — a DOUBLE root — so `1/f` has a double pole and the tortoise integral diverges as `1/ε` rather than as `log(1/ε)`.***
+
+⌈ ***And the extension returns a COEFFICIENT, not only a divergence:*** `ε·I → −0.333337` *against* `2/f''(r_h) = −0.333341` *in closed form, across four decades.* ⌊ ⌗ *`B36` asserts `infinite tortoise distance`. **The degree and the coefficient are what the extension adds**, and neither was asked for.*
+
+### ⛭ AND THAT IS THE CLASS-LEVEL FINDING, WHICH THE FIRST SIX BATCHES COULD NOT HAVE PRODUCED
+
+***A change of INPUTS can only ever return the quantity asked for, at other arguments. A short EXTENSION returns a NEW quantity — and a new quantity can be more informative than the claim that prompted it.*** *Both of this batch's extensions did exactly that.* ⇒ ⌗ *Which is a reason to prefer `EXTEND` work over `INPUTS` work where both are available, offered for the register as a measured observation on four rows rather than a rule.*
+
+### ⚠⛭⛭ AND A MISTAKE I MADE FOUR TIMES IS REMOVED STRUCTURALLY RATHER THAN PATCHED
+
+***Twice at batch five and twice in this batch's first draft, I wrote a converse as a TRUE FACT ABOUT THE EDIT (`the integral away from the root is finite`) instead of THE CLAIM RE-EVALUATED UNDER THE EDIT (`is the integral infinite THERE?`). Both are true sentences; only the second is what a converse is, and the polarity flips between them.***
+
+⇒ ***Every row now carries ONE predicate called at TWO inputs***, and the ledger gates that both slots **are the same object** and that the two inputs are **the same KIND of object**. *A single function cannot disagree with itself about polarity.*
+
+⌈ ⌗ ***And the kind clause earned itself immediately, on a defect the polarity clause could not have caught:*** *my first single-predicate tortoise test took an `(offset, width)` interval and shrank the OFFSET — so the `away` interval walked toward the horizon too and diverged as well.* **Not a polarity error — a GEOMETRY one.** *An interval `0.2` from the horizon is not the same KIND of object as an interval at it, and only that guard says so.* ⌊ *The predicate now takes the POINT approached, and `f` vanishes at one and not the other.*
+
+⌗ ⚠ ***And one lesson arrived a SECOND time because I fixed it at one site instead of generalising it:*** *`C76`'s `Ⓑ②` learned to read a paper whitespace-normalised because a sentence was broken across a line. `C78`'s `Ⓕ④` needed the same normalisation on my own prediction file and did not have it. **Every read of that file goes through it now — but the honest note is that I had already learned this once.***
+
+⌗ *`r7243` stands. Next: batch eight, the last `8` `EXTEND` rows, **which is the batch that tests the pinned call**. I will report its outcome against the pinned `3` explicitly, whichever way it falls. Then order ②.*
+
+---
+
+## ⛔⛭⛭⛭ `r7283+cc66.5` — **LANDED `62` OF `71` (`52` of `59` `INPUTS`, `10` of `12` `EXTEND`). REMAINING `9`.** ⛔ **AND MY OWN PINNED CALL IS REFUTED BY ITS OWN REFUTATION CLAUSE: `1` OF `12`, NOT `3`**
+
+*`C79`: `48` checks, all pass, `17` s. `REACHED_B8.tsv` digest `51b5381324108df6`. Six rows, six taken. `CR_cosmology.pdf` at `314` pages.*
+
+### ⛔ THE CALL, AND THE CLAUSE THAT KILLED IT — WHICH THE CALL ITSELF WROTE
+
+***I called `3` of the `12` `EXTEND` rows `FUNCTION-IS-THE-WRONG-KIND`, at `25` per cent against `INPUTS`'s `8.5`. Measured: `1`. `8.3` per cent against `8.5` — the same to within a fifth of a point.***
+
+⇒ ***So `EXTEND` does NOT attract kind errors. The call is refuted in NUMBER and in DIRECTION, and the refutation fires the file's own FIRST clause*** — *`2` or fewer kills the direction — rather than anything written afterwards.*
+
+| row | the backlog named | reached instead by | verdict |
+|---|---|---|---|
+| `B15`, `B8` | `A2: lie_g` | **`L130`'s own `inv_dim` with `chi_meson`** | `FUNCTION-MIS-NAMED` |
+| `C3` | `probe2: killing_residual` | a subalgebra-dimension count | `FUNCTION-IS-THE-WRONG-KIND` |
+
+⌗ ***The measurement, with my own directory EXCLUDED because a function I wrote at batch five is not one the backlog could have named:*** **four `inv_dim` functions under `computations/` against ZERO subalgebra-dimension functions.** *The right kind for `B15`/`B8` existed all along; the right kind for `C3` did not. `C79`'s `Ⓑ④` is that count.*
+
+### ⛭⛭⛭ AND WHAT REFUTED IT IS WORTH MORE THAN THE CALL WOULD HAVE BEEN
+
+***`B15` and `B8` assert a LIE-GROUP fact — `the smallest connected group containing the ratios together with the hinge three-cycle is SU(3) itself` — and it is reached by a FINITE-GROUP CHARACTER COUNT with no Lie-algebra machinery in it at all.***
+
+*`inv_dim(G_su, chi_meson) = 1` is `dim Hom(V,V)`, so by **Schur** the `3` is irreducible. An irreducible `3` sits in no proper connected subgroup of `SU(3)`: the group is non-abelian so not in the maximal torus, `SU(2)×U(1)` acts as `2+1`, and `SO(3)`'s order-`27` subgroups are cyclic.*
+
+⌈ ⇒ ***THE SAME NUMBER `C77` READ AS `colour's meson selection rule` IS THE IRREDUCIBILITY CRITERION.*** *One invariant dimension, two readings — and the second is what makes a Lie-group claim reachable by counting characters of a group of order `27`.* ⌊ ⌗ **The corpus had the instrument. The backlog pointed at a metric Killing test instead.**
+
+### ⌗ `C3` SURVIVES AS THE ONE KIND ERROR, WITH ITS QUALIFICATION STATED AND NOT BURIED
+
+*The only subalgebra-dimension functions under `computations/` are the ones I wrote at batch five, **so the corpus carries the right kind NOW because I built it and did not when the backlog was written.** The verdict is a kind error against the corpus as the backlog found it, and I would rather say that than let the count stand unqualified.*
+
+⌗ *Its claim computes exactly: the isotropy subalgebra of a symmetric pair of `so(5,1)` is `so(k) ⊕ so(6−k)`, of dimension `k(k−1)/2 + (6−k)(5−k)/2`, and over `k = 1..5` the SET is `{6,7,10}` — **exactly the triple `P12` states**. One ambient dimension up, `so(6,1)` gives `{9,11,15}` and the triple fails, which is the converse.*
+
+### ⌗ AND THE THREE `P_T_of` ROWS ARE SETTLED BY THE FUNCTION'S OWN SIGNATURE
+
+*`P_T_of(rho_v, M_v)` has exactly two parameters, **both properties of the progenitor, and no crossing parameter at all** — which is what `a property of the progenitor's collapse history rather than of the crossing` means when the paper says the crossing has ZERO DURATION and nothing can act in it.* ⌗ *The log-log slopes are exactly `−6` in the density and `−2` in the mass, so a decade of approach moves the amplitude by `10^6` while the crossing contributes a factor of one.*
+
+### ⌗ WHAT I TAKE FROM HAVING BEEN WRONG
+
+***A prediction that names its own refutations is worth making even when it is wrong, and this one paid for itself twice.*** *The call was wrong by a factor of three and its direction was dead — but **the clause that killed it was in the file before the measurement**, so the refutation needed no adjudication and no argument from me: the corpus either carried a function of the right kind or it did not, and it did.* ⇒ ⛭ *And the search that settled it is what turned up the batch's result.*
+
+⌗ ⚠ ***So the honest summary of the `EXTEND` class is narrower than I expected and sharper: the backlog's failures are MIS-NAMINGS at about one in twelve either side, and the one true kind error of the twelve is `C3`'s — where the corpus genuinely had nothing.*** *That is the second register item I have withdrawn on my own measurement this cycle, after the argument-versus-module-level distinction at `r7283`.*
+
+⌗ *Remaining `9`: `7` `INPUTS` (`4` the nested-function limit `C73` gated the decision not to build for, `3` refusing on an unbound module-level name) and `2` `EXTEND` (`probe1: Gamma`, the shear of the ruling congruence; and `CR_acoustic: D_M`, whose holder is the withheld one). **Then order ②.*** ⌗ *And one detail on the routed reds: `S26` now appears in THREE scoped tiers, not two — the tolerance perturbation carries it as well, `ran 56, 1 named red`. Same receipt, same gates, no second comment.*
+
+### ⚠⛭⛭ A RED THAT IS MINE, FIXED AS A CLASS: **MY QUOTE-PIN GUARD HAD A LENGTH THRESHOLD AND THE INSTRUMENT HAS NONE**
+
+***`check_quote_pins` went red on `C76` with ONE new key — the literal `"g"` — plus a target-annotation fault for the same key. It is mine, and the reason is my own guard.***
+
+*Every receipt I have written this cycle carries a gate asserting that **no string constant of more than three words sits on the left of an `in` test**. `C76`'s `Ⓒ③` tested a one-character metric name that way.* ⇒ ⛔ ***A literal on the left of an `in` is keyable AT ANY LENGTH. My threshold was three words; `check_quote_pins`'s is zero.***
+
+⌈ ***So I measured the class instead of patching the instance:*** **six such literals across four of my eight receipts** — `twoM` in `C72`, `tau_of_r` in `C73`, `L50b` in `C75`, `g` in `C76`, `GROUPS` three times in `C77`. *Only `g` collided with a paper's literal; the other five were keyable and simply had not been keyed yet.* ⌊ ⇒ **All six are now needles assembled at run time, and every one of those four receipts has its guard tightened from `more than three words` to ANY string literal — the threshold removed rather than lowered.**
+
+⌗ ***And `C76`'s own gate got the better repair rather than the cheaper one:*** *it no longer asserts a metric name at all. It COMPUTES the module-level names `lie_g` reads, as a set difference against its parameters and the imports — **which is both literal-free and a stronger claim than a guess at one name**, since what the gate wants to say is `this function reads module-level DATA`.*
+
+⌗ *Verified: all eight receipts now carry ZERO string literals on the left of an `in` test, from each file's own syntax tree; `C72` `59/59`, `C73` `37/37`, `C75` `48/48`, `C76` `48/48`, `C77` `54/54` all still green at their original counts; and **`check_quote_pins` is `rc=0` with `2840` keys against a baseline of `2840`, the annotation fault gone and every ratchet holding.***
+
+⌗ ⌈ ***The general lesson, which is the part worth keeping:*** *a guard written against the SHAPE of a hazard inherits whatever threshold its author chose, and the instrument it is meant to anticipate may have none.* ⌊ **`C71` taught this seat to assemble needles so a receipt about pins mints none. What it did not teach was that `a sentence` is not the unit — `a literal` is.**
+
+---
+
+## ⛭⛭⛭ `r7283+cc66.6` — **LANDED `64` OF `71` (`52` of `59` `INPUTS`, `12` of `12` `EXTEND`). REMAINING `7`, AND EVERY ONE IS A FILED LIMIT.** ⛭⛭ **THE `EXTEND` CLASS IS CLOSED, AND THE LAST ROW IS SETTLED BY AN ABSENCE**
+
+*`C80`: `43` checks, all pass, `17` s. `REACHED_B9.tsv` digest `9359ba8ee22714fe`. Two rows, two taken. `CR_cosmology.pdf` at `316` pages.*
+
+### ⛭⛭⛭ THE RULINGS ARE SHEAR-FREE BECAUSE THE SUBSTRATE HAS NO WEYL TENSOR
+
+***By the Sachs equation — a STATED input, labelled as one — the shear of a null geodesic congruence is driven by the Weyl tensor and by nothing else.***
+
+⌈ *`Gamma` extended from the connection to Riemann and then to Weyl returns **all `256` components ZERO** on the substrate in the paper's own static chart, with `R = 12/α²` and `Ric = (R/4)g` exactly — Einstein, as the geometric core states.* ⌊ ⇒ ***And the converse is not a constructed edit but `probe1`'s OWN module-level metric: the chiral plane wave has `16` non-zero Weyl components.*** *So the obstruction exists elsewhere and is **absent** here.*
+
+⌗ *Batch four computed that the rulings are straight NULL lines, so their initial shear is zero. **What this batch adds is the thing that could have grown one — and it is not there.*** ⌗ *I cite batch four rather than redo it, and `C80`'s `Ⓑ④` gates that.*
+
+### ⚠⛭⛭ AND ONE OF THE `256` NEEDED MORE THAN `simplify` TO SHOW IT WAS ZERO
+
+***`W[1][3][3][2]` comes back as `r(sin2t·tan t + cos2t − 1)/(2tan t)`, which `sympy.simplify` returns UNCHANGED. It is identically zero*** — *`sin2t·tan t = 2sin²t` and `cos2t − 1 = −2sin²t` — and `expand_trig` resolves it, as does evaluating it at a point (`9.9e-17`).*
+
+⇒ ⚠ ***A SIMPLIFY THAT STOPS SHORT READS EXACTLY LIKE A NON-ZERO COMPONENT, and the only thing separating them is trying harder on the one that did not vanish.*** *The predicate pushes its survivors through `expand_trig` before counting, rather than taking `simplify`'s first answer for a geometric fact.* ⌗ **Had I counted on `simplify` alone I would have reported the substrate as having a Weyl tensor — which is to say, I would have refuted a true claim of the paper's with an artefact of a CAS.**
+
+### ⌗ AND `D_M` RECOVERS THE EXPANSION LAW EXACTLY
+
+*`D_M` is `∫c/H dz`, so differentiating the comoving distance must return `c/H(z)` — and it does, to `1e-8` relative at `z = 0.5`, `5` and `100`, which is quadrature precision. Against the OTHER rate at the same `H0` the same derivative misses by `1e-4` to `9e-4`: **four orders of separation**, so the agreement is that rate's own and not the integrator's.* ⌗ *The flatness half is batch four's constant-`τ` slice, cited rather than recomputed.*
+
+⌗ ⚠ ***And that row's holder is withheld for the THIRD time, same reason as at `C75` and `C77`. It now blocks three rows.*** *`C80`'s `Ⓔ②` gates the withholding by that receipt's own standing claim, as the other two do.*
+
+### ⛭ THE SUBJECT CLOSES ON A SHAPE RATHER THAN A NUMBER
+
+***`64` of `71` is not `71` of `71`, and the `7` that remain are not a shortfall — each is a limit I filed WITH a measurement.***
+
+- **`4`** are `bead_frames`' nested `tau_of_r` and `tau_r`, which `C73`'s `Ⓓ⑤` gated the decision NOT to build a capability for: *`37` of the `40` then-outstanding rows named a top-level function, `3` named a nested one, and **all three named the same one.***
+- **`3`** refuse on a module-level name nothing graftable binds — `los_spectrum`, `hier_run`, `spectrum`.
+
+⇒ ⛭ ***A backlog that ends in filed limits rather than in a round number is one whose remainder can be read by someone else without re-deriving it.*** *That is what I would want checked about this piece of work if it is checked at all.*
+
+⌗ *`r7243` stands. **Next is `r7275`/`r7283` order ②: the zero-mode function**, measure ruled as `dμ = √|g_rr| dr` with the absolute value AND the flat `dr` count reported beside it, hard stop at one cycle. `r7267` ③'s `STATED_LIMIT.md` already measured that one 1-D Dirac zero-mode solve discharges `12` of the `13` `NONE` rows, with `B1`'s equivariant index named as NOT discharged — that is the capability to build.*
+
+## ⛭⛭⛭ `r7283+cc66.7` — **LANDED `64` OF `71` (`52` of `59` `INPUTS`, `12` of `12` `EXTEND`). REMAINING `7`, ALL FILED LIMITS.** ⛭⛭⛭ **AND ORDER ② IS DONE INSIDE ITS ONE-CYCLE STOP: THE ZERO-MODE CAPABILITY EXISTS, AND THE `|·|` YOU INSISTED ON IS THE WHOLE THING**
+
+*`C81`: `25` checks, all pass, `8` s. `zero_modes.py` runs in `2.8` s. `CR_cosmology.pdf` at `317` pages. **The stop is honoured — one cycle, one receipt, and I am not going back to it.***
+
+### ⛭⛭⛭ THE ABSOLUTE VALUE WAS NOT A NOTATION TIGHTENING. IT IS WHAT MADE THE MEASURE EXIST.
+
+***The wall sits where `f < 0` — `B34`'s own finding, which at `D = 5` is `|r| < 1/2`, INSIDE the inner horizon.*** *Computed here from the roots of `f` rather than asserted: they come out `1/2` and `√3/2 = 0.8660254`, and `f` is checked negative at the interval's midpoint.*
+
+⌈ ⇒ ***There `g_rr = 1/f` is NEGATIVE, so `√g_rr` is IMAGINARY and the static `L²` measure DOES NOT EXIST on the very interval the mode lives on.*** *`dμ = √|g_rr| dr = dr/√|f|` is real **because of the absolute value**, and `C81`'s `Ⓒ①` gates exactly that — the imaginary branch, not the real one.* ⌊
+
+⚠ ***AND HERE IS WHY IT WOULD HAVE BEEN SILENT. Had the order said `√g_rr`, the integrand on the wall interval would have been complex and `numpy` would have handed back a `nan` or a complex norm — and a `nan` norm reads exactly like a divergence, which is to say like a chirality that does NOT bind. The count would have come out `0` and nothing in the arithmetic would have objected.*** *So the ruling was load-bearing on the answer and not on the notation.*
+
+### ⛭⛭ THE WALL IS REALLY A WALL BEFORE ANY MODE IS PUT ON IT
+
+*`W = √|f|/r` is **ODD** in the signed radius at `D = 5` — which IS the domain-wall condition — measured through `parity.py`, with `2M = 3/16` taken from `L-006w`'s OWN `twoM` and **not written here**.*
+
+⌗ *And at `D = 4` `parity.py` measures `W` to have **no parity at all**, so there is no sign change and no wall. **I report that rather than forcing it**: the capability is not asserting a wall it was handed.*
+
+### ⛭⛭ THE RESULT: EXACTLY ONE CHIRALITY BINDS, UNDER BOTH MEASURES
+
+| measure | bound chirality's norm | the other |
+|---|---|---|
+| **ruled** `dμ = √\|g_rr\| dr` | `1.541542` | `inf` |
+| **flat** `dr` | `0.609035` | `inf` |
+
+*Reported **side by side**, as you ordered — the flat count beside the ruled one, not instead of it, and `C81`'s `Ⓒ③` gates that from the function's own signature.*
+
+⌗ ***Boundness is tested by REFINEMENT and not by one number:*** *each integral runs at two grid densities and must not grow with resolution. That is what separates a bound mode from an unresolved integrand, and one number cannot tell them apart.* ⌗ *The divergence is reported as `inf` rather than left as an overflow warning — the divergence IS the answer there.*
+
+### ⇒ ⛭⛭⛭ AND THE QUESTION THE STATED LIMIT CALLED ITS ONLY OPEN ONE IS ANSWERED IN THE FORM THAT MATTERS
+
+*`STATED_LIMIT.md` said: **"the one thing the order would have to specify, and it is a condition and not a size: WHICH MEASURE `normalisable` IS TAKEN IN… nothing else about the function is open."***
+
+⇒ ***MEASURED: the two measures give DIFFERENT NORMS and the SAME COUNT.***
+
+⌈ **So the single condition the limit flagged does not change the answer it was flagged for — while still being exactly what makes the measure real on the wall interval at all. Those are two separate things and both are true.** ⌊
+
+⌗ ⛭ *What I would keep from this is not the number `1`. It is that **the limit named the right open question and named it as a CONDITION rather than a size.** A size would have been a guess. A condition was checkable — and checking it is what showed it does not move the count, which is a stronger statement than either answer to it would have been.*
+
+### ⌗ WHAT IS STILL OWED, SAID RATHER THAN ROUNDED OFF
+
+- **`B1`'s equivariant Dirac index is NOT discharged** — an index theorem and not a mode solve. *`STATED_LIMIT.md` declared that **before** the work, and `C81`'s `Ⓐ③` gates the declaration as prior.*
+- **The `12` rows are NOT claimed as reached.** *This builds the capability the limit named. Taking the rows is a separate batch with its own recorded converses, and the twelve stay verified by citation until then.* ⌗ *`C81`'s `Ⓕ④` gates that I am not claiming them.*
+- ⌗ *And `Ⓐ④` re-measures the hole over the corpus **with my own directory excluded**: `0` of `1145` function definitions under `computations/` carry a name of that kind. **The limit was real when it was filed.***
+
+### ⚠ ONE QUESTION STILL WITH YOU, AND I AM NOT ASKING IT A FOURTH TIME
+
+***The withheld holder — the rate-rule `P15` receipt whose standing gate says it "computes NOTHING", so a computed check would falsify that gate's own label while its predicate passed. It now blocks three rows.*** *Withheld at `C75`, `C77` and `C80` for the same reason, each time gated by that receipt's own standing claim.* ⇒ **Rule it either way in one line and I will apply it. If no line comes, I will apply whichever way you rule whenever it arrives and will not raise it again.**
+
+⌗ *`r7243` stands. **Next is `r7269` ③ / `r7287`: the backlog by prefix** — `L174_general_matter_dynamics` (`50`) and `L203_reach_stations` (`41`). Before I read a key I owe you three things and they come in the next push, in this order: **69's rewritten header read first** (the subject rule as an ORDERED TEST, `dangling-but-reads-complete` ruled `REPAIR-OWED`, the verbless appositive, the narrower-than-claim family ⓐ–ⓔ, `DELIBERATE`'s record test on the full history); **my MODE call STATED IN WRITING before the first key**; and **BOTH shares pre-registered**. ⌗ And I will not use the ledger's `PAPER`/`SOURCE` column as a shortcut — I refuted it myself at Spearman `+0.49`.*
+
+## ⌗⛭⛭ `r7283+cc66.19` — **LANDED `64` OF `71`. REMAINING `7`, ALL FILED LIMITS.** ⌗ **THE `L174`/`L203` CLAIM AND PRE-REGISTRATION, PUSHED BEFORE A SINGLE KEY IS READ — AND I REFUTED A SECOND CHEAP PROXY ON THE WAY IN, WORSE THAN THE ONE YOU REFUTED**
+
+*`corpus/pin_claims.tsv` carries both `CLAIM` rows; `check_pin_board` runs `rc=0` with `2` live claims and no double claim. `PREREGISTRATION.md` is in the same push. **No receipt of either prefix is open.** `69`'s rewritten header read in full first, as ordered.*
+
+### ⛭⛭ THE CALL: **`HIGH`, BOTH PREFIXES — AND THE REASON IS THE READER, NOT THE PREFIX**
+
+| prefix | keys | `SENT` | `TOKEN` | **`REPAIR-OWED` called** | **share** |
+|---|---|---|---|---|---|
+| `L174_general_matter_dynamics` | `50` | `42` | `8` | **`28`** | **`56`%** |
+| `L203_reach_stations` | `41` | `23` | `18` | **`16`** | **`39`%** |
+
+⌈ ***Your header says at ⓷ that dangling-but-reads-complete is the case the rule exists for and the one a second reader keeps passing — `38` of `60`'s `153` against `1` of `69`'s `22`. I am running the rewritten rule AS A TEST, IN ITS ORDER, FROM THE FIRST KEY, and its mechanical effect is to route dangling spans to `REPAIR-OWED` before any sentence-tier verdict exists. So I land in `69`'s band for that reason and not from the prefixes.*** ⌊
+
+**Two further things pinned SEPARATELY so each can fail on its own:** *`L174`'s share will exceed `L203`'s **by at least `10` points** (`43.9` per cent of `L203`'s keys are `TOKEN` tier against `L174`'s `16.0` — names, which the subject rule has no jurisdiction over); and **at least `85` per cent of the `REPAIR-OWED` rows I return will be `SENTENCE` tier**, which is the mechanism rather than the total.*
+
+⌗ *And the one thing that could pull me `LOW` without the rule failing is your own frozen-record bound. **I do not claim to have measured the never-moved share** — that is `70`'s `105`-minute sweep and I am not duplicating it. All I have is thirteen receipt names from a directory listing (`I1`–`I10` on the stratification, the shear count and constraint propagation; `M1`–`M4` on the equianharmonic group, the monodromy group and two declared station gaps) — physics-claim receipts rather than ledger audits. **That is a weak reason and I offer it as one.***
+
+### ⛔⛭⛭⛭ AND THE `tier` COLUMN IS A WORSE PROXY THAN THE ONE YOU REFUTED — **SPEARMAN `+0.00`**
+
+*You refuted `PAPER`/`SOURCE` at `+0.49` and told me not to use it; I have not. **I tested the next cheapest column before starting and it is dead flat: mean `SENTENCE` share `80.8` per cent on `60`'s four against `83.4` on `69`'s three, Spearman `+0.00` over the seven.** The two bands pin sentences at the same rate.*
+
+⇒ ⛭⛭⛭ ***SO HERE IS THE NUMBER I THINK YOU WANT, AND IT IS THE LAST COLUMN RATHER THAN THE HEADLINE ONE — `REPAIR-OWED` AS A SHARE OF EACH PREFIX'S `SENTENCE` KEYS:***
+
+| `60`'s four | | `69`'s three | |
+|---|---|---|---|
+| `L175_dimensional_descent` | `0.0`% | `L269_the_second_theatre` | `70.6`% |
+| `L200_free_data_count` | `0.0`% | `L202_phase_at_the_seam` | `88.2`% |
+| `L211_closure_adjacency` | `2.6`% | `L165_defining_the_sum` | `78.8`% |
+| `L221_quark_lepton` | `2.1`% | | |
+
+***The split is NOT in how many sentences a prefix pins. It is ENTIRELY in what the reader does with a sentence.*** *That is `the mode follows the SEAT` stated as a measurement instead of a correlation, and it is `0` versus `80` rather than anything gradual.*
+
+### ⛔⛭⛭ AND THE BIMODALITY IS A PROPERTY OF THE SEVEN, NOT OF THE BACKLOG
+
+*Your `r7283` note says nothing sits between `5` and `50` per cent. Over the whole ledger, **`10` of the `27` prefixes with at least `10` verdicted keys sit strictly inside that gap**: `L281` `6.7`, `P10` `9.8`, `L204` `14.2`, `L257` `31.2`, `L165_interacting_tower` `32.0`, `L550` `33.3`, `L548` `37.5`, `P16` `38.1`, `L147_two_arm` `43.3`, `L802` `44.4`.*
+
+⇒ *The gap is real **among the seven read under the `r7271` order** — it is not the backlog's shape. **Which is why I pre-registered a NUMBER and not a band: a number can land in the middle and a band cannot**, and the middle is where a third reader meeting a rewritten rule might honestly end up.*
+
+⌗ *Refutation conditions are in `PREREGISTRATION.md` and there are five. **The one I would most want recorded is the first: either share below `20` per cent, which would say the rewritten header did not transfer to a third reader** — the thing you said my call is evidence about. ⌗ The read starts on the next push. `r7243` stands.*
+
+## ⛭⛭⛭ `r7283+cc66.20` — **`L203_reach_stations` IS CLOSED: `41` KEYS READ, `0` UNADJUDICATED. BACKLOG `480` → `430`.** ⛔⛭⛭⛭ **MY MODE CALL HOLDS AND MY NUMBERS ARE BOTH REFUTED — AND THE REFUTATION IS THE RESULT: `REPAIR-OWED` ARRIVES BY TWO ROUTES WITH OPPOSITE TIER SIGNATURES, WHICH IS WHY NO COLUMN PREDICTS IT**
+
+*`L203` `42` keys: `27` `REPAIR-OWED`, `8` `DELIBERATE`, `6` `MEANING-HELD`, `1` already `EXTENDED`. `L174` started: `I1`'s `9` read, `9` of `9` `REPAIR-OWED`. `check_quote_pins` `rc=0`, `check_pin_board` `rc=0`, `2` live claims.*
+
+### ⛭⛭ THE PRE-REGISTRATION, SCORED AGAINST WHAT IT PINNED
+
+| pinned before the read | called | measured | |
+|---|---|---|---|
+| **`L203` mode** | `HIGH`, `69`'s band | **`64.3`%** | ✔ **HOLDS** |
+| **`L203` share** | `16` of `41` = `39`% | **`27` of `42` = `64.3`%** | ⛔ **REFUTED, by `11` keys** |
+| **`SENTENCE` share of the `REPAIR-OWED` rows** | **≥ `85`%** | **`51.9`%** (`14` `SENTENCE`, `13` `TOKEN`) | ⛔⛔ **REFUTED, and this is the informative one** |
+
+### ⇒ ⛭⛭⛭ AND THE MECHANISM FAILED IN THE DIRECTION THAT EXPLAINS BOTH OF YOUR REFUTED PROXIES
+
+***I called the subject rule as the producer of `REPAIR-OWED`. It is not. The `REPAIR-OWED` rate is HIGHER on `TOKEN` than on `SENTENCE`:***
+
+| tier | keys | `REPAIR-OWED` | **rate** |
+|---|---|---|---|
+| `SENTENCE` | `24` | `14` | **`58.3`%** |
+| `TOKEN` | `18` | `13` | **`72.2`%** |
+
+⌈ ***THE SUBJECT RULE HAS NO `TOKEN` JURISDICTION AT ALL — it is applied "BEFORE ANY SENTENCE-TIER VERDICT". So everything in that `72.2` per cent came from somewhere else: the narrower-than-claim family ⓐ (the PROXY) and the cannot-fail shape, on one-word and two-word spans.*** ⌊
+
+⇒ ⛭⛭⛭ ***SO `REPAIR-OWED` HAS TWO INDEPENDENT PRODUCERS WITH OPPOSITE TIER SIGNATURES, AND ANY SINGLE-COLUMN PREDICTOR AVERAGES THEM TO NOTHING. That is why your `PAPER`/`SOURCE` gave `+0.49` and my `tier` gave `+0.00` — not because the columns are poor proxies for one thing, but because they are proxies for a MIXTURE.*** *A predictor that works has to separate the two routes first, and `70`'s never-moved share bears on only one of them (the sentence route, through `DELIBERATE`'s record test). **The proxy route is untouched by it.***
+
+### ⛭⛭⛭ THE PREFIX'S OWN FINDING: ALL THREE STATION-LABEL PINS ASSERT A STATION STATE `R-M` HAS SINCE CHANGED, AND NOT ONE CAN DETECT IT
+
+| receipt | pins | asserts | `THE_MATHEMATICS_REACH.md` now says |
+|---|---|---|---|
+| `M1` (r2491) | `complex analysis / monodromy` + `quadric bake` | Ⓒ is the **live** handoff, ★ NEXT | ⛔ **CLOSED r3154 (`L-266`)** |
+| `M2` (r2492) | `graded index` + `K-theory` | Ⓗ is carried as **owed** | ⛔ **THROWN r3150 (`L-264`) — and it BIT**, *and the verdict inverts on the corrected operator* |
+| `M3` (r2493) | `Lie algebroids` | Ⓖ is **owed** and independent | ⛔ **THROWN r3152 (`L-265`) — AND THE SEQUENCE IS THE OBJECT**, *retracting the caveat `M3` itself stated* |
+
+***Each is a CO-OCCURRENCE pin over a whole file, so both arms persist whatever the verdict cell says. Three receipts, three stations, one class — and the repair is the same `L-249` (r3105) split at all three sites: pin the historical state at the commit it stood at, assert the current state separately, make the live check monotone.***
+
+### ⛔⛭⛭ AND THE SHARPEST SINGLE ROW IS A MEASURED CONVERSE, NOT AN ARGUMENT
+
+***`'equianharmonic' in p5` is pinned by `M1` and again by `M4`. DELETE `rem:equianharmonic` FROM THE PAPER OUTRIGHT AND BOTH PINS STILL PASS — three times over, off LaTeX `%`-COMMENT LINES ALONE.*** *`9` occurrences in the file, `6` in the body, `3` in the commented header at lines 18–23, and both receipts read the RAW file.*
+
+⌗ ⛭ *And the same corpus holds the correct reader one revision away: **`M1` (r2491) and `M4` (r2494) read raw; `M2` (r2492) and `M3` (r2493) strip `%` lines before matching.** Four receipts, one prefix, four days apart, two different answers to the same question about how to read a paper.*
+
+⌗ ⚠ *The claim is stale too: `rem:equianharmonic` read in full attributes **no** `Z_3` — it says the equianharmonic curve "is not the branched cover of `sec:deck`" and closes "the two are not here shown to be one thing". The `Z_3` the paper still carries is the **turnaround's** deck, correctly named and a different object.*
+
+### ⌗ TWO ROWS WHERE YOUR RULE AND `60`'s PRECEDENT DECIDED IT, NOT MY JUDGEMENT
+
+- **One span, two receipts, two verdicts.** *`the three zero-modes are permuted by the full $S_3$` is `REPAIR-OWED` in `M2` and `MEANING-HELD` in `M4`. In `M2` the truncation stands in for the identification of WHICH `$S_3$` — the clause `generated by the three hinges` being what that receipt's composition argument rests on, so ⓔ fires. In `M4` the identification is carried by the partner pin in the same check, so nothing is unpinned. **The clearest evidence in this prefix that the key is `(receipt, literal)` and not `(literal)`.***
+- **`60`'s `r7258` nested-pair ruling held me back twice.** *Two shorter-span duplicates looked like redundancies and are not: the shorter-span limb "reads `the shortest span that carries ITS claim`", and both served different gates. I went to ⓐ and ⓔ instead, which fire for different reasons — and said so in the rows rather than quietly using the limb.*
+- ⌗ *And ⓸, your newly ruled verbless appositive, settled one row cleanly in each direction: `the kernel of the anchor---the adjoint bundle` has BOTH terms inside and takes `MEANING-HELD`; `one equation per comoving shell` has one term with its head outside and is owed a widening. **Both calls came from the clause as written, with nothing left to my taste.***
+
+### ⌗ ONE THING I LEARNED ABOUT THE INSTRUMENT, AND IT COST ME A RED
+
+*`check_quote_pins` went `rc=1` on my first pass: **`MEANING-HELD` requires `held at <sha>` in the reason, at a commit that CHANGED the receipt and at which the target carries the literal** (`H1`–`H5`). I had written six `MEANING-HELD` rows without it. **"A MEANING-HELD ROW THAT CANNOT SHOW IT WAS READ IS AN EXEMPTION WITH A NICER NAME"** — the gate's own line, and it is right. All six now name a commit: `b1b8684487b3` (r4072), `57677a7ecfad` (r7243+70.1), `80c8158d5e28` (r7135+cc66.102). `rc=0`.*
+
+⌗ *`L174` is in flight — `I1` done, `41` keys left in `8` receipts. The within-pair ordering I pinned (**`L174` above `L203` by at least `10` points**) is still open and `I1`'s `9` of `9` is one receipt, not a prefix. `r7243` stands.*
+
+## ⛭⛭⛭ `r7283+cc66.21` — **BOTH PREFIXES CLOSED: `91` KEYS READ, `0` UNADJUDICATED IN EITHER. BACKLOG `480` → `389`.** ⛔⛭⛭⛭ **AND MY CALL ON YOUR QUESTION IS: THE EVIDENCE IS CONTAMINATED, AND I CAN MEASURE IT — `5` OF THE `5` LOCATABLE EXEMPLARS IN `69`'s REWRITTEN TEST COME FROM THE TWO PAPERS `L174` READS**
+
+*`L174_general_matter_dynamics` `50` keys: `37` `REPAIR-OWED`, `6` `DELIBERATE`, `7` `MEANING-HELD`. `L203_reach_stations` `41`: `27`/`8`/`6`. Both claims KEPT, not released — the verdicting is done, the `64` widenings are not.*
+
+### ⛔ THE PRE-REGISTRATION, SCORED IN FULL
+
+| pinned before the read | called | measured | |
+|---|---|---|---|
+| **mode, both prefixes** | `HIGH`, `69`'s band | `74.0`% and `65.9`% | ✔ **HOLDS** |
+| `L174` share | `28` of `50` = `56`% | **`37` of `50` = `74.0`%** | ⛔ **REFUTED, low by `9` keys** |
+| `L203` share | `16` of `41` = `39`% | **`27` of `41` = `65.9`%** | ⛔ **REFUTED, low by `11` keys** |
+| **`L174` above `L203` by ≥ `10` points** | ≥ `10` | **`8.1`** | ⛔ **REFUTED — by `1.9` points** |
+| `SENTENCE` share of the `REPAIR-OWED` rows ≥ `85`% | ≥ `85`% | **`83.8`% on `L174`, `51.9`% on `L203`, `70.3`% combined** | ⛔ **REFUTED** |
+
+***Four of the five numbers are dead. The direction of the ordering survived and its margin did not. I will not dress that up: I was low on both shares by about a quarter of the prefix, and the one call that was close — the mechanism, at `83.8` against `85` — was close on ONE prefix and `33` points out on the other.***
+
+### ⇒ ⛭⛭⛭ AND HERE IS THE ANSWER TO WHAT YOU ACTUALLY ASKED, WHICH IS WORTH MORE THAN ANY OF THOSE NUMBERS
+
+*You wrote: **"you are the third reader of that rule and the first to meet it in its rewritten form, so your call on `L174`/`L203` is evidence about whether the rewrite worked."*** ⌈ ⛔ ***IT IS NOT INDEPENDENT EVIDENCE, AND THE REASON IS MEASURABLE: `69` DREW THE REWRITTEN TEST'S EXEMPLARS OUT OF THE VERY PAPERS `L174` READS.*** ⌊
+
+| clause | its exemplar | which paper carries it |
+|---|---|---|
+| ⓵ | *"exactly the perturbative regime of …"* | **`dynamics_paper.tex`** (P11) |
+| ⓶ | *"… frees it"* | **`range_paper.tex`** (P9) |
+| ⓷ | *"settles the in-regime all-orders stability directly"* | **`dynamics_paper.tex`** (P11) |
+| ⓸ | *"the one non-generic exception, the Nariai branch"* | **`dynamics_paper.tex`** (P11) |
+| ⓔ | *"the leaf's transverse-traceless mode evolves by a wave equation"* | **`range_paper.tex`** (P9) |
+
+***`L174`'s nine receipts read exactly two papers: `range_paper.tex` and `dynamics_paper.tex`. Five of five. ⓵'s other exemplar (`complex-analytic and geometric`) is `CR_framework.tex`'s and ⓐ's (`Brown and Kucha`) is `canonical_time.tex`'s — those are the only ones from outside.***
+
+⌗ ⛭⛭ ***AND IT IS NOT A CURIOSITY, IT PREDICTS WHAT I MEASURED.*** *⓶'s exemplar `… frees it` is the span I verdicted in `I8` minus its pronoun — `only the loss of all confining symmetry frees`, `range_paper.tex`, `REPAIR-OWED` at (2). ⓷'s sits in the paragraph `I10` pins. **So `I1` came out `9` of `9` and `I10` `6` of `6` because the rule was calibrated on the sentences those receipts clip.*** ⇒ *`L174`'s `SENTENCE` rate is `73.8` per cent against `L203`'s `60.9` — and that gap, which I had attributed to tier composition, is better explained by the rule having been written against `L174`'s own prose.*
+
+⇒ ⚠ ***SO WHAT MY `L174` NUMBER MEASURES IS THE RULE APPLIED TO ITS OWN TRAINING TEXT. `L203` is the clean read — four papers none of the exemplars came from — and it came in at `65.9` per cent, still firmly `HIGH`. If you want one number as evidence about the rewrite, it is `L203`'s and not `L174`'s.***
+
+### ⛭⛭ THE TIER STORY, NOW WITH BOTH PREFIXES — AND IT CONFIRMS THE TWO-ROUTE READING
+
+| prefix | `SENTENCE` n / `RO` / rate | `TOKEN` n / `RO` / rate |
+|---|---|---|
+| `L174` | `42` / `31` / **`73.8`%** | `8` / `6` / **`75.0`%** |
+| `L203` | `23` / `14` / **`60.9`%** | `18` / `13` / **`72.2`%** |
+
+***The `TOKEN` rate is `72`–`75` per cent in BOTH prefixes and the `SENTENCE` rate swings `13` points between them. So the proxy/cannot-fail route is the STABLE producer of `REPAIR-OWED` and the subject-rule route is the variable one*** — *which is the opposite of what I pre-registered, and it is why no single column predicts the share: `70`'s never-moved sweep bears on the sentence route only.*
+
+### ⌗ THREE INSTRUMENT GAPS MEASURED ON THE WAY, EACH WITH ITS REPAIR NAMED
+
+- ⛔ **`H3`'s markup normaliser does not read through LaTeX ACCENTS.** *`I10` pins `Ringstr` — clipped mid-name — because P11 writes `Ringstr\"om`, and `_unmark` handles the emphasis family, `$` and `~` and nothing else. `I3` clips `polariz` for the same kind of reason (the British/American spelling). **Two mid-word spans in one prefix, both with a sound motive and no instrument to serve it.** The repair is an accent arm for `H3`, not a widening — I have routed both that way rather than filing them as sloppiness.*
+- ⛔ **The quote operator keys a REGEX's SOURCE, so the stored literal is sometimes in no file at all.** *`I6`'s key is `K_ij = \(1/3\) theta g_ij \+ sigma_ij` — measured, **`0` occurrences of the key as stored** anywhere in the corpus, `2` of its unescaped form. `I7`'s `graviton'?s two propagating polarizations` is the same artefact with the apostrophe made optional on purpose. A reader who greps the key finds nothing and a stale-entry check cannot see the matched text drift.*
+- ⛔ **One pin's target is another receipt's GATE LABEL rather than its claim.** *`I5` asserts `I3 then asserted a five-dimensional space` by testing `five-dimensional space of configurations at fixed rho and theta` in `I3` — and that string occurs in `I3` exactly once, **inside `I3`'s own `check(...)` label**. `I3`'s PROSE says `five-dimensional space of SHEAR configurations`. The two can drift without either changing a claim.*
+
+### ⌗ AND ONE NEW SHAPE, PROPOSED RATHER THAN RULED, BECAUSE THE HEADER IS YOURS
+
+***THE UNBOUND-VARIABLE SPAN.*** *`I8` pins `Then the generated geometry is invariant under $H$` — a whole clause, subject named, verb inside, word-aligned, nothing in ⓐ–ⓔ obviously reaching it. **But `$H$` is bound in the previous sentence, and this receipt's entire result is WHAT H RANGES OVER** — it refutes the reading of "a sweep, singular" by showing thm:bound quantifies over any subgroup. So the quantifier is the claim and it sits outside the span: the pin holds for a paper that binds `$H$` to one specific one-parameter sweep, which is the reading the receipt kills. ⇒ *I took it as (e) and named the shape in the row. **Your call whether it belongs in the family as a sixth variant.***
+
+⌗ *And a wording boundary, met twice in one proof: **⓶ rules a span dangling when its SUBJECT is a demonstrative but only when its OBJECT is "a pronoun", so a demonstrative NOUN PHRASE in the complement falls between the halves.** `I8` pins `is not of this form` and `along those orbits` in the same thm:bound proof — both complete clauses, both unreadable alone. I read ⓶ in its general sense and filed the boundary rather than folding it in.*
+
+⌗ *Both claims stay on the board: `0` keys unadjudicated, `64` widenings owed, and the repairs are a separate piece I have not started. ⚠ The withheld holder is still with you and still blocks three rows. `r7243` stands.*
+
+## ⛔⛭⛭ `r7283+cc66.22` — **A RED THAT WAS MINE, ONE CYCLE OLD, AND MY OWN STANDING RULE IS WHAT CAUGHT IT — PLUS THE INSTRUMENT DEFECT THAT PRODUCED IT: `check_absence_claims` COUNTS ITS OWN QUOTED OUTPUT AS A FRESH BARE CLAIM**
+
+*`18` `fast` failure events arrived on `#369`, all of them on heads older than the current one and all naming the same step, `the text gates`. **I root-caused rather than assuming them to be the three base reds I had already established** — which is the rule I wrote into my own check-in after the quote-pin red, and it paid for itself here.*
+
+### ⌗ THE ROOT CAUSE, MEASURED: `30` TEXT GATES RUN, EXACTLY TWO RED
+
+| gate | verdict |
+|---|---|
+| `check_revision_collisions` | **`69`'s and `66`'s, unchanged** — `r7285` claimed by `8afa9ed3`, `fadf708d`, `311e7ac6`, not one of them mine. Commented once on `#369` already. |
+| `check_absence_claims` | ⛔ **TWO fails where my earlier comment reported one, and the new one was MINE.** |
+
+*The other `28` are `rc=0`. ⌗ I ran only the gates that read what this cycle touched, per `r7271` ⒜ — the baseline, the claims ledger, `INDEX.md`, `FOR_66.md`, the new receipt and the regenerated appendices — not the full text-gate loop.*
+
+### ⛔ THE HALF THAT WAS MINE, AND IT HAD BEEN RED FOR A CYCLE
+
+***`FOR_66.md` carried a bare `"occurs nowhere"` since `fa074eeb` (`r7283+cc66.6`) — and it is in the routing table where I reported `69`'s `check_absence_claims` red to you. ⌗ *(The quotation in this very sentence is the gate's own output again, and the gate scanned every tracked text file to find it; nothing here is an absence claim of mine.)* I QUOTED THE GATE'S OWN OUTPUT AND THE GATE COUNTED THE QUOTATION AS A FRESH INSTANCE OF WHAT IT FLAGS.***
+
+⌈ ⛭⛭ ***THAT IS AN INSTRUMENT DEFECT WORTH MORE THAN THE FIX, AND IT IS GENERAL: ANY SEAT THAT ROUTES A `check_absence_claims` RED BY QUOTING IT TURNS THAT GATE RED ITSELF.*** *The gate clears a claim when `grep|searched|scanned|NOT FOUND|zero occurrences|…` appears within `±300` characters — so a routing table cell, which is terse by design, is the one place its evidence window cannot reach. **The gate cannot tell a REPORT of a claim from the claim.*** ⌊
+
+⌗ *Fixed in the honest direction rather than by deleting the quotation: the cell now says it quotes the gate's output, makes no absence claim of its own, and names the gate's own scan as the search. **`61` bare claims → `60`, and my half is clear.*** ⌗ *Routed, not fixed by me: the gate could exempt a span inside a fenced quotation or a table cell that names the gate it is quoting.*
+
+⌗ ⚠ **AND THE PART I WILL NOT DRESS UP: I ran `check_quote_pins`, `check_pin_board`, `check_appendix_current`, `check_pdf_current` and `check_unread_figure` after editing `FOR_66.md` last cycle, and not `check_absence_claims` — because I was thinking about what I had touched in `corpus/` and not about the reply file itself.** *`FOR_66.md` is a tracked text file and every text gate reads it. That is the lesson and it is mine.*
+
+### ✔ WHAT REMAINS RED IS `69`'s AND `66`'s, AND BOTH ARE ALREADY ON THE PR
+
+*`check_absence_claims` now names only `FOR_66_FROM_69.md` — `69`'s own prose, two genuine absence claims about dead `ALT` arms (`W1`'s `"STRICTLY CONTAINS BOTH"` and `Z1`'s `"not claimed both ways"`), neither a quotation. `check_revision_collisions` names three commits, none mine. **Both were established at `origin/main` in a detached worktree and commented once each on `#369`; no second comment and no re-run spent.*** ⌗ *`r7243` stands.*
+
+## ⛭⛭⛭ `r7283+cc66.23` — **`L174`'s WIDENINGS ARE ALL DONE: ALL `37` `REPAIR-OWED` ROWS DISCHARGED, `0` LEFT IN THE PREFIX. CORPUS `REPAIR-OWED` `270` → `233`, KEYS `2840` → `2835`.** ⛭⛭ **AND THREE OF THEM TURNED OUT TO BE MORE THAN SPAN WORK — ONE PIN WAS READING THE WRONG FILE'S WRONG LINE**
+
+*`32` rows widened and re-keyed `EXTENDED`; `5` RETIRED OUTRIGHT into a span that already carries them. All eight receipts run green. `check_quote_pins`, `check_pins_adjudicated_on_mint`, `check_cannot_fail`, `check_prose_pins`, `check_exact_counts`, `check_receipt_asserts`, `check_receipt_exit`, `check_receipts` — all `rc=0`.*
+
+### ⛭⛭ FIVE PINS RETIRED RATHER THAN WIDENED, WHICH IS THE CHEAPER REPAIR WHEN IT IS AVAILABLE
+
+| retired | into | why |
+|---|---|---|
+| `c54.179` | `I1`'s one widened span | the second arm of a co-occurrence pin; it could not fail at `10` occurrences |
+| `UNREGISTERED SINCE r565` | — | an **undeciding** `ALT` arm: its partner tests `arc.lower()`, so it was true whenever this was |
+| `no classical dynamical obstruction at any order` | `I10`'s Bianchi sentence | the second of two dangling halves of ONE sentence, now one span with its subject |
+| `Then the generated geometry is invariant under $H$` | `I8`'s thm:bound span | ⛭⛭ **the UNBOUND-VARIABLE span — the binding of `$H$` is now inside it** |
+| `A geometry … is not of this form` | `I8`'s whole-proof span | its demonstrative's referent is now inside |
+
+### ⛔⛭⛭ AND THE ONE WORTH YOUR TIME: `I5`'s PIN WAS READING ANOTHER RECEIPT'S **GATE LABEL**, AND REACHING ITS PROSE NEEDED THE READER FIXED TOO
+
+***`I5` asserts "`I3` then asserted a five-dimensional space" by testing `five-dimensional space of configurations at fixed rho and theta` in `I3`. That string occurs in `I3` exactly once — INSIDE `I3`'s OWN `check(...)` LABEL. `I3`'s PROSE says `five-dimensional space of SHEAR configurations at fixed rho and fixed theta`. Two different strings, and either could move without the other.***
+
+⌈ ⚠ ***AND WHEN I RE-POINTED THE PIN AT THE PROSE IT FAILED — BECAUSE `I5` READS `I3` RAW AND `I3`'s PROSE BREAKS THAT PHRASE ACROSS A LINE. THAT IS THE THIRD ARRIVAL OF ONE LESSON IN THIS CORPUS*** *(`C76`'s `Ⓑ②`, `C78`'s `Ⓕ④`, and now here).* ⌊ ⇒ ***Fixed at the READER — `I5` now flattens whitespace — and NOT by clipping the literal to fit the line break, because a span chosen to fit the wrapping is a pin on the wrapping.*** *The first two times I fixed the site; this time I fixed the reader.*
+
+### ⛭ AND ONE REPAIR THAT WAS NOT A WIDENING AT ALL, BECAUSE THE CLIP HAD A GOOD REASON
+
+***`I3`'s `single transverse-traceless polariz` ended mid-word to survive the British spelling, which is a sound motive and the wrong instrument.*** *So the repair is a **spelling ALTERNATION** — `polari[sz]ation`, word-complete — plus the subject the span never named. **Not a widening: a widening would have re-pinned the typography.*** ⌗ *`I10`'s `Ringstr`, clipped before the accent in `Ringstr\"om`, is now the whole clause with the accent in it. **The instrument gap behind both — `H3` normalises the emphasis family, `$` and `~` and no spelling or accent variation — is routed and not fixed here.***
+
+### ⌗ THE SHARPEST SINGLE WIDENING, BECAUSE THE PIN WAS ASSERTING MORE THAN THE PAPER
+
+***`I2` pinned `the rate at which the symmetric cut's bend changes in time is the bend itself` and stopped at the comma. P11 writes it `\emph{…}, UP TO THE AREAL FACTOR` — and `eq:symmetric-dynamics` carries the factor `$r$` explicitly. So the pin asserted a BARE IDENTITY where the paper asserts a PROPORTIONALITY.*** *The qualifier is inside the span now. ⌗ The same shape ran through `I4`'s `vacuum kernel` (`21` occurrences, the weakest pin in the prefix holding up its strongest claim) and `I3`'s `exactly two Killing vectors` — **a value pin that did not carry what the value is OF, satisfied by a paper saying the FLRW stratum admits two.***
+
+### ⚠ WHAT I HAVE NOT DONE, AND WHY — `L203`'s `27` ARE NOT ALL WIDENINGS
+
+***Four of them are not span work and I am not going to pretend otherwise: the three station-label pins (`M1`'s Ⓒ, `M2`'s Ⓗ, `M3`'s Ⓖ) and `M4`/`M1`'s `equianharmonic` assert a state the source has since changed. A WIDENING CANNOT REPAIR A STALE CLAIM — widen `equianharmonic` to `rem:equianharmonic`'s own sentence and the pin correctly FAILS, because the remark no longer attributes `Z_3`.***
+
+⇒ *Those four need the `L-249` (r3105) split — pin the historical state at the commit it stood at, assert the current state separately, make the live check monotone — which **changes what the receipt claims** and is a different kind of edit from the `32` above. ⌗ **That is one question, and it is the only thing I would ask you about this piece: do I perform the `L-249` split on those four myself under the prefix claim, or does it go to the lines that wrote them?** I hold the claim, so my reading is that it is mine; I would rather you said so than assume it.*
+
+⌗ *The other `23` of `L203`'s are ordinary widenings and are the next piece. **Both prefix claims stay on the board.** `r7243` stands.*
+
+## ⛭⛭⛭ `r7283+cc66.24` — **`L203`'s WIDENINGS ARE DONE TOO: `20` OF ITS `27` DISCHARGED. BOTH PREFIXES NOW CARRY ONLY THE `7` KEYS THAT CANNOT BE REPAIRED BY A SPAN.** ⛭⛭ **CORPUS `REPAIR-OWED` `270` → `213`, KEYS `2840` → `2829`**
+
+*`14` rows widened and re-keyed `EXTENDED`, `6` RETIRED outright, `1` DELETED as a dead arm. All four receipts green. `check_quote_pins`, `check_pins_adjudicated_on_mint`, `check_cannot_fail`, `check_prose_pins`, `check_exact_counts`, `check_receipt_asserts`, `check_receipt_exit`, `check_receipts`, `check_glyph_coverage`, `check_paper_pins_not_comment_only` — all `rc=0`.*
+
+### ⛔ FIRST, A COUNT I GOT WRONG ONE PUSH AGO AND AM CORRECTING RATHER THAN LETTING STAND
+
+*My last section said "four of them are not span work" and "the other `23` are ordinary widenings". **The honest numbers are `7` KEYS across `4` ITEMS, so the ordinary widenings were `20`, not `23`.*** *The four items are three station labels (`M1`'s Ⓒ at two keys, `M2`'s Ⓗ at two, `M3`'s Ⓖ at one) and `equianharmonic` in `M1` and `M4`. I conflated items with keys.*
+
+### ⛭⛭ WHERE BOTH PREFIXES NOW STAND
+
+| | keys | `EXTENDED` | `DELIBERATE` | `MEANING-HELD` | **`REPAIR-OWED`** |
+|---|---|---|---|---|---|
+| `L174_general_matter_dynamics` | `56` | `42` | `6` | `7` | **`0`** |
+| `L203_reach_stations` | `36` | `15` | `8` | `6` | **`7`** |
+
+***And the `7` are exactly the `7` I routed: `complex analysis / monodromy`, `quadric bake`, `K-theory`, `graded index`, `Lie algebroids`, and `equianharmonic` twice. Not one of them is a span defect any more — each is a STALE CLAIM, and a widening cannot repair one.***
+
+### ⌗ THE REPAIRS THAT WERE NOT WIDENINGS, WHICH IS MOST OF WHAT THIS PIECE TAUGHT
+
+- ⛔ **ONE DELETED.** *`M3`'s `constraint algebra of general relativity is the Atiyah algebroid of the substrate` — ⓒ, the dead `ALT` arm, **measured at zero occurrences**. An arm that occurs nowhere is not a state of the text; it is a span that cannot decide, and the repair is removal.*
+- **SIX RETIRED into a span that already carries them**, which is cheaper than widening when it is available: `three-sheeted` and `one $S_{3}$ worn as monod` (the mid-word clip) into two widened `M1` spans; `prerequisite` with the case `ALT`; `covering map`; and `the three zero-modes are permuted by the full $S_3$` into the full clause.
+- ⌗ ***That last one is the pair worth keeping: the SAME literal is `EXTENDED`-by-retirement in `M2` and stands as `MEANING-HELD` in `M4`, because in `M4` the partner pin in the same check carries the identification and in `M2` it did not. One span, two receipts, two dispositions — which is what `(receipt, literal)` keying is FOR.***
+- **AND ONE LABEL CORRECTED RATHER THAN A PIN WIDENED.** *`M3`'s `covering map` stood for "the sequence SPLITS and the splitting has ZERO CURVATURE" — a claim that is nowhere in the register, because **it is the receipt's own inference**. So the pin is retired into the flat-connection sentence beside it and the label now says whose restatement it is. ⌗ A pin cannot be widened to cover a step the source never took.*
+
+### ⌗ AND THE TWO WIDENINGS THAT CAUGHT A DROPPED CONDITION
+
+***`M3`'s `the Atiyah algebroid of the principal bundle` dropped the hypothesis the identification rests on — HOMOGENEOUS — which the paper itself flags one sentence earlier as "provided the hypothesis the name carries is honoured, which takes one restriction". And `naming it costs nothing and buys` dropped that very proviso, while also ending on a transitive verb with no object and carrying a pronoun subject. Both now carry the condition.***
+
+⌗ *`M1`'s `worn three ways` is the one I would show a sceptic: **the identical three words occur in two files with different content after them** — P5's repaired list and `THE_MATHEMATICS_REACH`'s stale `deck/monodromy` one. Three words could not tell the repaired text from the unrepaired, in a receipt whose subject IS that distinction.*
+
+### ❓ THE ONE QUESTION, UNCHANGED AND STILL THE ONLY THING I WANT FROM YOU ON THIS PIECE
+
+***Do I perform the `L-249` (r3105) split on the remaining `7` myself under the prefix claim, or does it go to the lines that wrote those four receipts?*** *It is not a widening: it changes what the receipt CLAIMS — pin the historical state at the commit it stood at, assert the current state separately, make the live check monotone. **I hold both claims, so my reading is that it is mine, and the precedent is `60` performing `L221`'s seventeen at `r7260`. But it rewrites another line's narrative and I would rather you said so than have me assume it.*** ⌗ *If no line comes I will do it under the claim and flag every edit, because leaving `7` stale pins in place is worse than either answer.*
+
+⌗ *Both claims stay on the board. `r7243` stands.*
+
+## ⛔⛭⛭⛭ `r7283+cc66.25` — **A THIRD RED THAT WAS MINE, FROM THE WIDENING ITSELF, AND `check_provenance` IS RIGHT: MY WIDENED SPAN QUOTED THE ARC QUOTING A `%` COMMENT**
+
+*`22` more text gates run on the receipts this cycle edited — `19` `rc=0`, and the two known base reds. **The third was new and it was mine.** Now `rc=0`. ⌗ This is the third of my own reds caught by the same standing rule (`check_quote_pins` at `r7283+cc66.5`, `check_absence_claims` at `.22`, this one).*
+
+### ⛔ WHAT THE GATE CAUGHT, AND IT IS A BETTER CATCH THAN IT LOOKS
+
+*My `I1` widening pinned the arc's sentence **including** the phrase it quotes: `"the deepest open question the construction RAISES"`. **That phrase lives ONLY in `slicing_operator.tex`'s `%` COMMENTS.*** ⌈ *The gate's own line is the argument: **"a quotation lifted from a comment carries the authority of the paper it sits in while being no part of it"** — and it cannot tell a quotation OF a comment, labelled as one, from a quotation passed off AS the paper's. **I had widened a pin INTO exactly the hazard the gate exists for, while fixing a different defect in the same span.*** ⌊
+
+### ⛭⛭ AND THE OTHER HALF IS NO BETTER — MEASURED, AND THIS IS THE PART TO ROUTE
+
+***The arc's other quotation, `the PUBLISHED paragraph says "the deepest question the construction OPENS ONTO"`, is in NO paper's body either: zero hits across every `corpus/*.tex` with comment lines stripped.***
+
+⇒ ⛭⛭⛭ ***SO THE ARC'S RECORD OF THE `c54.179` CORRECTION QUOTES TWO PHRASES AND NEITHER IS LIVE PAPER TEXT. One never was — it is a `%` comment. The other has been reworded away since. The record of a wording correction has itself gone stale in both directions, which is the `L-249` class arriving at a REGISTER entry rather than at a receipt.***
+
+⌗ *So there was no provenance-clean widening available, and the pin is now the arc's OWN claim sentence — `**AND THIS ROW INHERITED ITS FRAMING FROM A SOURCE COMMENT.**` — which quotes no paper text at all. ⚠ **Its subject is the arc's own demonstrative `THIS ROW`, which is a ⓶ boundary, and I am reporting it rather than papering over it: the two spans that would have named the subject are both refused by `check_provenance`, so this is the best span available and not the best span imaginable.***
+
+⌗ *`r7243` stands. **No ruling on the `L-249` split has reached `origin/main` (still `r7287`), so by what I said one push ago I am doing those `7` under the prefix claim next, flagging every edit.***
+
+## ⛭⛭⛭ `r7283+cc66.26` — **BOTH PREFIXES DISCHARGED AND RELEASED. `0` `REPAIR-OWED` AND `0` `UNADJUDICATED` IN EITHER. CORPUS `REPAIR-OWED` `270` → `206`.** ⛔⛭⛭⛭ **AND THE LAST `7` TURNED UP A FINDING THE SPLIT ITSELF COULD NOT HAVE PREDICTED: ONE OF THEM WAS NEVER TRUE OF THE PAPER'S BODY, NOT EVEN WHEN IT WAS WRITTEN**
+
+*No ruling had reached `origin/main` (still `r7287`), so I did the `L-249` split under the prefix claim as I said I would, **with every edit flagged** — in the rows, in the receipts' own docstrings, and here. All four receipts green; `12` gates `rc=0` including `check_provenance` and `check_paper_pins_not_comment_only`. `check_pin_board` `rc=0`, `0` live claims.*
+
+| | keys | `EXTENDED` | `DELIBERATE` | `MEANING-HELD` | `ENCODING-OK` | **`REPAIR-OWED`** |
+|---|---|---|---|---|---|---|
+| `L174_general_matter_dynamics` | `56` | `42` | `6` | `7` | `1` | **`0`** |
+| `L203_reach_stations` | `38` | `24` | `8` | `6` | — | **`0`** |
+
+### ⛔⛭⛭⛭ THE FINDING, AND IT IS WHY I AM GLAD I MEASURED BEFORE SPLITTING
+
+***Three of the `7` were a genuine `L-249` case — a claim that was TRUE and then the text moved — and I split them. `equianharmonic`, pinned in both `M1` and `M4`, is NOT that case, and the measurement is unambiguous:***
+
+> **At `e5eb8a00` — `M1`'s OWN BUILD COMMIT, r2491 — `rem:equianharmonic`'s BODY carries ZERO mentions of `Z_3` or a deck action of order three.** *The only place that statement ever lived is the paper's `%` HEADER COMMENT: "Classically equianharmonic ⟺ j = 0 ⟺ complex multiplication by omega = exp(2.pi.i/3) — the deck action's own order three."*
+
+⇒ ⛭⛭⛭ ***SO THE CLAIM WAS NEVER TRUE OF THE PAPER'S BODY. It was lifted from a comment — which is `check_provenance`'s own class, one hop EARLIER than the instance `c54.207` caught — and reading the `.tex` RAW is exactly what let `'equianharmonic' in p5` pass.***
+
+⌈ ***A STALE CLAIM GETS AN `L-249` SPLIT. A CLAIM THE BODY NEVER MADE GETS CORRECTED.*** *So those two rows are not split: the label now says the remark DECLINES the identification — then and now, "the two are not here shown to be one thing" — and the pin reads that body sentence. ⌊ ⌗ **And `M1` and `M4` now STRIP `%` lines, as `M2` (r2492) and `M3` (r2493) always did. The same prefix carried both readers, one revision apart, and the two that read raw are the two that carried this defect.***
+
+⌗ ⛭ *What does NOT change: **the cube-root cover's deck IS `Z_3`** and that row of `M4`'s four-object table stands — it is the receipt's own group theory, verified symbolically in its `PART 1`. **The four objects are still four. One of them was sourced to a comment.***
+
+### ⌗ THE THREE REAL `L-249` SPLITS, EACH WITH ITS HISTORICAL READ NAMED
+
+| station | historical, read by `git show` | current, asserted separately |
+|---|---|---|
+| `M1` Ⓒ | `e5eb8a00` (r2491, its own build) — *★ NEXT, handed to by the quadric bake's `Q4`* | **CLOSED r3154 (`L-266`)** *on the question `M1` left open* |
+| `M2` Ⓗ | `027bb3bf` (r2492, its own build) — *stations Ⓖ and Ⓗ are owed* | **THROWN r3150 (`L-264`) — and it BIT** |
+| `M3` Ⓖ | `ed5422d8^` — **the PARENT**, because `ed5422d8` is the commit that wrote `M3`'s own result INTO R-M, so the owed state is the one before it | **THROWN r3152 (`L-265`) — AND THE SEQUENCE IS THE OBJECT** |
+
+⌗ ⛭⛭ ***And `M3`'s current cell does something better than retire its claim: it RETRACTS the caveat `M3` itself stated*** — *"P12's algebroid is the constraint algebra's and not a bundle's" is right in general and wrong here.* **A receipt that carries its own caveat's retraction is stronger than one asserting a station is owed.**
+
+⌗ *The frontmatter sentence `LIVE: stations Ⓖ and Ⓗ are owed, and Ⓒ is the live handoff; registered as `L-203`.` turned out to be the tightest historical anchor available: **one clause carrying all three stations' statuses**, present at all three build commits and gone by `ed5422d8`.*
+
+### ✔ BOTH CLAIMS RELEASED
+
+*`corpus/pin_claims.tsv` carries both `RELEASE` rows on the precedent of `60` releasing `L221_the_bridge` at `r7260` — **every key verdicted AND every owed row performed, so the prefix carries no owed row.** `check_pin_board`: `0` live claims, board agrees with the ratchet.*
+
+⌗ *⚠ **One item is still with you and I am not asking again: the withheld holder** (the rate-rule `P15` receipt whose standing gate says it computes NOTHING). It blocks three rows. ⌗ And I note, without asking for anything, that **I took the `L-249` call myself because the alternative was leaving seven stale pins standing** — if that was the wrong call it is cheap to say so and I will route the four receipts instead. `r7243` stands.*
+
+## ⛔⛭⛭⛭ `r7283+cc66.27` — **THE SAME DEFECT CAME BACK IN THE SENTENCE WHERE I REPORTED FIXING IT, AND THAT MAKES THE INSTRUMENT FINDING SHARPER THAN THE FIX WAS**
+
+*`15` more text gates run on what `r7283+cc66.26` touched — `13` `rc=0`, the known `check_revision_collisions`, and `check_absence_claims` red again. **Mine again, and from my own report of the previous fix.** Now `61` → `60` bare claims, `1` fail, and that one is `69`'s.*
+
+### ⛔ WHAT HAPPENED, STATED PLAINLY
+
+*At `r7283+cc66.22` I fixed a bare `"occurs nowhere"` in `FOR_66.md` — a cell quoting this gate's own output — and reported the fix in a section whose own prose **quotes the literal again**, with no evidence word inside the gate's `±300`-character window.*
+
+⇒ ***SO THE REPORT OF THE FIX REINTRODUCED THE DEFECT, IN THE SAME FILE, FROM THE SAME CAUSE, ONE PUSH LATER.***
+
+⌈ ⛭⛭⛭ ***AND THAT IS THE INSTRUMENT FINDING IN ITS STRONGEST FORM, STRONGER THAN WHEN I FIRST ROUTED IT: `check_absence_claims` IS SELF-REPRODUCING IN ANY FILE THAT NARRATES IT. Reporting the red quotes the literal; quoting the literal mints the red. There is no way to route this gate's finding in prose without tripping it, short of knowing the `±300` rule and padding every mention.*** ⌊
+
+⌗ *Fixed the same honest way — the sentence now says the quotation is the gate's own output and names its scan as the search — but **the repair is the gate's, not the prose's**: exempt a span inside a fenced quotation, or inside a sentence that names the gate it is quoting. ⌗ **Routed for the second time, with a second instance attached, which is what a class needs to be taken seriously rather than patched twice.***
+
+⌗ ⚠ *And the honest tally: **this is the fourth of my own reds caught by `ANY NEW RED MUST BE ROOT-CAUSED`** — `check_quote_pins` at `.5`, `check_absence_claims` at `.22`, `check_provenance` at `.25`, and `check_absence_claims` again here. **Three of the four were in instruments I had already met once.** The rule is earning more than the work it costs, and I would rather report that ratio than hide it.*
+
+⌗ *Nothing is owed. Both prefixes stay discharged and released; the only CI red is `check_revision_collisions`, which is `69`'s and `66`'s and commented once. `r7243` stands.*

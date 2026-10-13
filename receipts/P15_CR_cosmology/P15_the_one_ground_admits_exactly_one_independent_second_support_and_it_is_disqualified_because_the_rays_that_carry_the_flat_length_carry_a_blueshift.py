@@ -116,6 +116,18 @@ import sympy as sp
 CHECKS = []
 
 
+def _r7283b6():
+    """`r7283` ① batch six: the row's own named function, grafted and called on demand.
+
+    *The module is a top-level script that prints at import, so the function is lifted by AST
+    and exec'd alone.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import selection_and_scale as _S
+    return _S
+
 def gate(name, ok):
     CHECKS.append((name, bool(ok)))
     print(f"  [{'PASS' if ok else 'FAIL'}] {name}", flush=True)
@@ -524,6 +536,10 @@ gate("Ⓕ③ ⚠ WHAT IS NOT CLAIMED: not that no second support can exist -- on
      "numbers are the paper's own printed background and the arithmetic on it*",
      'WHAT THIS REVISION WILL NOT DO' in PRED and 'NO FITTING.' in PRED
      and abs(ALPHA - XI * R0) < 1e-9)
+
+_S = _r7283b6()
+gate('⛭ `r7283` ① COMPUTED, not cited: the acoustic scale in multipole. The module\'s own `ell_A` on flat LambdaCDM at the CMB `H0` returns 301.41 against its own recorded observed 301.0, with `r_s` at 144.55 Mpc; forcing the LOCAL `H0` -- a change of the rate function handed to the same call -- leaves `r_s` pinned and MISSES the scale at 296.72, which is the reachable converse and is the module\'s own second result',
+     _S.acoustic_scale_is_301() and not _S.local_H0_converse())
 
 
 print()

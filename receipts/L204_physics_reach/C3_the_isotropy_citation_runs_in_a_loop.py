@@ -96,6 +96,18 @@ def body(name):
         if not l.lstrip().startswith('%')))
 
 
+def _r7283b8():
+    """`r7283` ② batch eight: the extension that reaches this row, loaded on demand.
+
+    ⚠ *For this row the backlog named a function of the wrong kind or the wrong name, and the
+    note beside the check says which.  The extension records what DID reach the claim.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import extensions_b8 as _X
+    return _X
+
 def main():
     print()
     print("  C3 -- item 26's residue: does P9 establish what P12 cites it for?")
@@ -178,6 +190,17 @@ def main():
     print('  ⇒ WHAT WOULD DISCHARGE IT: ** one paper derives the triple, or P12 states it as its own. **')
     print('    One clause -- and which paper owns it is authorial.')
     print()
+    _X = _r7283b8()
+    check("⛭ `r7283` ② COMPUTED, not cited: the symmetric-pair isotropy dimensions. An involution "
+          "of `so(5,1)` flipping `k` of the six ambient axes fixes `so(k) + so(6-k)`, of "
+          "dimension `k(k-1)/2 + (6-k)(5-k)/2`; over `k = 1..5` the SET is `{6,7,10}`, "
+          "exactly the triple `P12` states. One ambient dimension up, `so(6,1)` gives "
+          "`{9,11,15}` and the triple fails, which is the reachable converse. ** The "
+          "backlog named `killing_residual`, which settles ONE field against ONE metric, "
+          "and the corpus carried NO subalgebra-dimension function when the backlog was "
+          "written: this is the one FUNCTION-IS-THE-WRONG-KIND row of the twelve **",
+          _X.triple_matches_the_paper(6) and not _X.triple_matches_the_paper(7))
+
     return 0
 
 

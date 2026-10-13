@@ -109,6 +109,34 @@ def held(lit, hay):
     return (n > 0 and ok), n
 
 
+def _r7283r3():
+    """`r7283` ruling ③: the group computations this row's own paper states, loaded on demand.
+
+    *The ruling asked which metric the paper states at this locus.  ** It states none, because
+    the claim is not a metric claim: it is a statement about which GROUPS exist, and `lie_g` --
+    the function the backlog named -- tests whether a VECTOR FIELD is Killing for a METRIC. **
+    A change of inputs cannot repair a change of kind, so the row is computed here through the
+    stabiliser of the form instead, and the backlog's `INPUTS` classification is withdrawn for
+    it.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import groups_and_characters as _G
+    return _G
+
+def _r7283b6():
+    """`r7283` ① batch six: the row's own named function, grafted and called on demand.
+
+    *The module is a top-level script that prints at import, so the function is lifted by AST
+    and exec'd alone.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import selection_and_scale as _S
+    return _S
+
 def main():
     print()
     print("  B42 -- is PO-4's remaining route actually unworked?")
@@ -173,6 +201,17 @@ def main():
     print('     line read the row\'s "it was not in this row" as "it has not been done", when the')
     print('     sentence means the ROUTING was recorded elsewhere.')
     print()
+    _G = _r7283r3()
+    check('⛭ `r7283` ③ COMPUTED, not cited: no circle action lies in the discrete component. All fifteen generators of `so(5,1)` are TRACELESS, so `det exp(tX) = exp(t tr X) = 1` for every `t` and no element of the `det = -1` coset lies on a one-parameter subgroup; the `(x4,x5)` rotation generator exponentiates to a genuine circle of period `2 pi` INSIDE the identity component, which is the reachable converse and is where a positive-dimensional connected group puts the trigger',
+          _G.every_one_parameter_subgroup_has_determinant_one()
+          and _G.parity_is_in_O51_and_not_in_SO0()
+          and not _G.no_circle_under_the_connected_edit())
+
+    _S = _r7283b6()
+    check('⛭ `r7283` ① COMPUTED, not cited: the routes between hinges, enumerated. The three pairs give six routes whose two arcs PARTITION the three walls at every pair, each a one-wall against two-wall split -- a finite discrete structure and not a continuum. Built at FOUR hinges instead of three the splits are (1,3) and (2,2), so the 1-2 structure is a fact about THREE and that is the reachable converse',
+          _S.routes_partition_the_walls() and _S.every_pair_is_a_one_two_split()
+          and not _S.one_two_split_at(4))
+
     return 0
 
 

@@ -90,20 +90,30 @@ def main():
     check('L-174 asks for the classical general matter dynamics, and the SOURCE claim this receipt '
           'rests on is P9\'s rather than the register\'s: the wall hands off to ordinary evolution',
           _HANDOFF.search(p9) is not None)
+    # ⛭ WIDENED r7287+cc66: the ALT's upper-case arm was UNDECIDING -- the first arm tests
+    #   `arc.lower()`, so it was true whenever the second was, and case folding is monotone.  The
+    #   arm is dropped rather than kept, and the surviving span is widened past the participle to
+    #   the clause that NAMES ITS SUBJECT (`the map`), which `unregistered since r565` did not.
     check('and it folds the map\'s A-1, carried live and unregistered since r565',
-          'unregistered since r565' in arc.lower() or 'UNREGISTERED SINCE r565' in arc)
+          'which the map has carried live and unregistered since r565' in arc.lower())
 
     # ⓵ P9 states the general case
     check("P9's cor:wall: \"The wall is inhomogeneity\" -- a geometry with no continuous isometry "
           'admits no sweep-subgroup to anchor the construction',
-          'The wall is inhomogeneity]\\label{cor:wall} A geometry with n' in p9 and 'no continuous isometry admits no sweep-subgroup' in p9)
+          'The wall is inhomogeneity]\\label{cor:wall} A geometry with n' in p9 and 'A geometry with no continuous isometry admits no sweep-subgroup of $\\so$ to anchor '
+          'the construction' in p9)
     check('⛭ and immediately after: "since the construction leaves the dynamics of general '
           'relativity unchanged, the radiative sector beyond it is reached by ORDINARY EVOLUTION '
           'OF THE LEAF"',
           _HANDOFF.search(p9) is not None)
     check('⇒ "so the wall is the seam at which GENERATION-BY-SYMMETRY hands off to '
           'EVOLUTION-BY-DYNAMICS"',
-          'generation-by-symmetry hands off to evolution-by-dynamics' in p9)
+          # ⛭ WIDENED r7287+cc66: the bare clause dropped the one thing the claim rests on --
+          #   that it is THE WALL that hands off -- so it held for a paper siting the handoff
+          #   anywhere else.  Widened to P9's own sentence, which names the wall.
+          "The wall is therefore the proper boundary of the operator's generative "
+          'reach---the boundary at which generation-by-symmetry hands off to '
+          'evolution-by-dynamics' in p9)
     check('⇒⇒ SO THE GENERAL CASE BEYOND THE WALL IS ORDINARY GR BY STATEMENT -- the construction '
           'owes no generative law there because it HANDS OFF',
           _NOTDEF.search(p9) is not None)
@@ -111,24 +121,49 @@ def main():
     # ⓶ L-207 exhibited it in one class
     check('and L-207 (1) exhibited exactly that at r2450, computed from the metric: LTB with '
           'Lambda, one equation per comoving shell',
-          'one equation per comoving shell' in arc or 'ONE equation per comoving shell, and the shells do n' in arc)
+          # ⛭ WIDENED r7287+cc66: an appositive with one term inside the span and its head --
+          #   the evolution equation it renames -- outside it.  Widened to the head.
+          'evolution $\\ddot R=-m(r)/R^2+\\Lambda R/3$, one equation per comoving shell' in arc
+          or 'ONE equation per comoving shell, and the shells do n' in arc)
     check('with the bend-density identity exact for arbitrary m(r)',
-          'exact for arbitrary' in arc.lower())
+          # ⛭ WIDENED r7287+cc66: three words that stopped before the thing they quantify over.
+          'the bend-density identity exact for arbitrary $m(r)$' in arc.lower())
 
     # ⇒ the gap
     check('⇒ and the row itself already says what is owed is the EXHIBITION of a dynamics the '
           'framework says is ordinary GR, "not the discovery of a generative law"',
-          'not the discovery of a generative law' in arc)
+          # ⛭ WIDENED r7287+cc66: the span carried only the NEGATIVE limb of an `X, not Y`
+          #   contrast whose X -- the exhibition that IS owed -- was outside it.  Both limbs now.
+          'what is owed is the EXHIBITION of a general matter dynamics the framework '
+          'already says is ordinary GR, not the discovery of a generative law' in arc)
     check('⇒⇒ SO THE GAP IS THE DISTANCE BETWEEN THEM: P9 STATES the general case; L-207 EXHIBITS '
           'it only in the spherically symmetric class',
           _HANDOFF.search(p9) is not None
-          and ('one equation per comoving shell' in arc
+          and ('evolution $\\ddot R=-m(r)/R^2+\\Lambda R/3$, one equation per comoving shell' in arc
                or 'ONE equation per comoving shell, and the shells do n' in arc))
 
     # why it sat
-    check('and the row records why it was carried at the wrong weight: the quotation was P8\'s '
-          'SOURCE COMMENT phrasing it as an open DISCOVERY, corrected at c54.179',
-          'SOURCE COMMENT' in arc and 'c54.179' in arc)
+    # ⛭ WIDENED r7287+cc66: this was a CO-OCCURRENCE pin -- `'SOURCE COMMENT' in arc and
+    #   'c54.179' in arc` -- two spans whose conjunction in ONE FILE stood for the claim, and
+    #   `c54.179` could not fail at 10 occurrences.  ** One widened span replaces both, and the
+    #   label no longer claims the correction: the NEXT check establishes that, with its own
+    #   literal. **
+    check('and the row records why it was carried at the wrong weight: the framing was inherited '
+          'from a `%` SOURCE COMMENT phrasing it as an open DISCOVERY, where the published '
+          'paragraph had already downgraded it',
+          # ⛔⛭ NARROWED AGAIN r7287+cc66, BY `check_provenance`, AND THE GATE IS RIGHT: the
+          #   widened span quoted the arc quoting `"the deepest open question the construction
+          #   RAISES"`, and that phrase lives ONLY in slicing_operator.tex's `%` COMMENTS.  A
+          #   quotation lifted from a comment carries the authority of the paper it sits in while
+          #   being no part of it -- and the gate cannot tell a quotation OF a comment, labelled as
+          #   one, from a quotation passed off AS the paper's.
+          #   ⌗ ** AND THE OTHER HALF IS NO BETTER, MEASURED: the arc's `the PUBLISHED paragraph
+          #     says "the deepest question the construction OPENS ONTO"` is in NO paper's body
+          #     either -- zero hits across every corpus/*.tex with comment lines stripped.  So the
+          #     arc's record of the c54.179 correction quotes two phrases and neither is live
+          #     paper text: one never was, and the other has been reworded away.  Routed. **
+          #   ⇒ So the pin is the arc's OWN claim sentence, which quotes no paper text at all.
+          '**AND THIS ROW INHERITED ITS FRAMING FROM A SOURCE COMMENT.**' in arc)
     check('⇒ a correction to a row\'s EVIDENCE is not a correction to its WEIGHT, and the second '
           'does not follow automatically',
           'n DISCOVERY (P8\'s % source comment, corrected at c54.179' in arc or 'is corrected at c54.179' in arc)

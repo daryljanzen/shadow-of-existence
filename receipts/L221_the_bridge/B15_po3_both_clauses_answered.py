@@ -94,6 +94,18 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+def _r7283b8():
+    """`r7283` ② batch eight: the extension that reaches this row, loaded on demand.
+
+    ⚠ *For this row the backlog named a function of the wrong kind or the wrong name, and the
+    note beside the check says which.  The extension records what DID reach the claim.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import extensions_b8 as _X
+    return _X
+
 def main():
     print()
     print("  B15 -- are both of PO-3's clauses answered?")
@@ -215,6 +227,20 @@ def main():
     print('    REDUCTION but a ** GENERATION ** from the skeleton -- which is why PO-4\'s stale "what')
     print('    reduces so(6) to su(3)?" never matched it.')
     print()
+    _X = _r7283b8()
+    check("⛭ `r7283` ② COMPUTED, and the backlog named the wrong function while the corpus "
+          "carried the right one all along. `L130`s OWN `inv_dim` with `chi_meson` gives "
+          "`dim Hom(V,V) = 1`, which is SCHURs criterion: the `3` is IRREDUCIBLE. An "
+          "irreducible `3` sits in no proper connected subgroup of `SU(3)` -- the group "
+          "is non-abelian so not in the maximal torus, `SU(2)xU(1)` acts as `2+1`, and "
+          "`SO(3)`s order-27 subgroups are cyclic -- so the smallest connected group "
+          "containing it IS `SU(3)`. On `L130`s own `G_rigid` the same number is `3`, the "
+          "`3` is reducible and the predicate comes back FALSE. ** The backlog named "
+          "`lie_g`, a metric Killing test; this is FUNCTION-MIS-NAMED and not a kind "
+          "error, and that is what refuted this seats own pinned call **",
+          _X.no_proper_connected_subgroup_contains_it('G_su')
+          and not _X.no_proper_connected_subgroup_contains_it('G_rigid'))
+
     return 0
 
 

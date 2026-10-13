@@ -77,6 +77,20 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+def _r7283():
+    """`r7283` ① batch four: the named function grafted OUT of its script, loaded on demand.
+
+    *The module is a top-level script that prints at import, so the function is lifted by AST
+    and exec'd alone.*  ⚠ ** And the loader REFUSES a table the module binds as `{}` and fills
+    in a `for` loop: it used to hand one back EMPTY with nothing to say so, which would have
+    made a check VACUOUS RATHER THAN WRONG. **"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import flat_ruled_and_discrete as _F
+    return _F
+
 def main():
     print()
     print("  B38 -- do PO-4 and PO-5 really ask for the same thing?")
@@ -132,6 +146,13 @@ def main():
     print('     CONSTRUCTION question; ** PO-4\'s is a KIND question — does anything here RANGE')
     print('     continuously and compactly? **')
     print()
+    _F = _r7283()
+    check('⛭ `r7283` ① COMPUTED, not cited: the horn swap IS a discrete map of the six ends. The six ends rebuild onto the substrate exactly, the swap is a fixed-point-free involution whose three 2-cycles each join ONE hinge\'s two ends, and it has order 2 inside a group of order 12; the same keying on a ONE-PARAMETER rotation never closes, which is the reachable converse',
+          _F.ends_are_on_the_substrate() and _F.swap_is_three_two_cycles()
+          and _F.horn_swap_order() == 2
+          and _F.group_order_under_key_of() == 12
+          and _F.continuous_converse() == 12)
+
     return 0
 
 

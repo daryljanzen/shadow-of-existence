@@ -11,6 +11,17 @@ answer, $\\mathbb Z_3$.  Everything fits once the word is 'monodromy'."
 group acts, Ⓗ needs that group for an equivariant index on a branched object, Ⓖ supplies the Atiyah
 sequence in which "which group" and "what connection" are one question.
 
+⛔⛭⛭ ** AMENDED r7287+cc66, UNDER THE `L203` PREFIX CLAIM AND FLAGGED AS SUCH: ONE ROW OF THE TABLE
+BELOW IS SOURCED TO A `%` COMMENT, AND THE TABLE STILL STANDS. **  Measured at `e5eb8a00` (`M1`'s
+build, r2491): `rem:equianharmonic`'s BODY carries **zero** mentions of `Z_3` or a deck action of
+order three.  The statement lived only in the paper's `%` header comment, and this file read the
+`.tex` RAW, which is what let `'equianharmonic' in p5` pass.  *The remark's body declines the
+identification --- then and now: "the two are not here shown to be one thing".*
+  ⇒ ** The cube-root cover's deck IS $\mathbb{Z}_3$ and that row of the table is this file's own
+  group theory, verified symbolically in PART 1.  What does not stand is the ATTRIBUTION of it to
+  `rem:equianharmonic`. **  *The four objects are still four; one of them was sourced to a comment,
+  which is `check_provenance`'s own class one hop earlier.*  The reader now strips `%` lines.
+
 ** ⛭⛭⛭ THE ANSWER: THERE ARE FOUR OBJECTS, AND EVERY GROUP IS CORRECT FOR ITS OWN. **
 
   The rule that settles it: ** a connected cover's deck group acts FREELY on each fibre, so its order
@@ -106,8 +117,14 @@ def main():
           '2M-plane at all (r2491)', Z6.order() == 6 and Z6.is_abelian != S3.is_abelian)
 
     # the texts, at source
-    p5 = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'groupoid_paper.tex'),
-                                  encoding='utf-8', errors='replace').read())
+    # ⛭⛔ r7287+cc66: %-COMMENT LINES ARE NOW STRIPPED, the same repair M1 took in the same push.
+    #   Measured: `'equianharmonic' in p5` passed off the paper's COMMENTED HEADER BLOCK, so
+    #   deleting `rem:equianharmonic` from the body outright left the pin passing.  ** M2 (r2492)
+    #   and M3 (r2493) already stripped; this file (r2494) and M1 (r2491) did not. **
+    _p5_raw = open(os.path.join(ROOT, 'corpus', 'groupoid_paper.tex'),
+                   encoding='utf-8', errors='replace').read()
+    p5 = re.sub(r'\s+', ' ', '\n'.join(l for l in _p5_raw.split('\n')
+                                        if not l.lstrip().startswith('%')))
     # ** ⛭⛭ RE-PINNED r3962: the pin read "this DECK group is equally the Galois group of the horizon
     # ** cubic", and r3528 corrected P5 at eighteen sites to "this MONODROMY group" -- the paper calls
     # ** the deck group TRIVIAL.  A file whose subject is FOUR OBJECTS SHARING ONE WORD was pinned to
@@ -118,10 +135,34 @@ def main():
           #   Galois group of the horizon cubic" -> "which is equally the Galois group of THAT
           #   cubic", and "deck group trivial" -> "trivial deck group".  *Content identical;
           #   the pins spanned the words that changed.*  Re-pinned to the invariant clauses.
-          'which is equally the Galois group of that cubic' in p5
-          and 'trivial deck group' in p5)
-    check('and rem:equianharmonic\'s Z_3 is the deck of the CUBE-ROOT cover -- correct for that cover',
-          'equianharmonic' in p5)
+          # ⛭ WIDENED r7287+cc66: one span opened on the RELATIVE PRONOUN `which` and the other
+          #   was a bare noun phrase whose governing subject `that one` is a demonstrative outside
+          #   it -- and in a file whose subject is FOUR OBJECTS SHARING ONE WORD, three words
+          #   naming a group without naming its object is the receipt's own defect in its own pin.
+          "The same-$\\alpha$ between-member morphisms are the monodromy of the horizon "
+          "cubic's three-sheeted cover branched at the Nariai points, with monodromy "
+          "group $S_{3}$---which is equally the Galois group of that cubic, one "
+          "$S_{3}$ worn as monodromy, Weyl and Galois symmetry alike" in p5
+          and 'that one is three-sheeted, over the $2M$-plane, branched at the two '
+          'Nariai values, with monodromy group $S_{3}$ and trivial deck group '
+          '(Proposition~\\ref{prop:deck})' in p5)
+    # ⛔⛭⛭⛭ CORRECTED r7287+cc66, AND IT NARROWS THIS FILE'S OWN TABLE BY ONE ROW RATHER THAN
+    #   CONFIRMING IT.  The old label said `rem:equianharmonic's Z_3 is the deck of the CUBE-ROOT
+    #   cover`, pinned by `'equianharmonic' in p5`.  ** Measured at e5eb8a00 (M1's build, r2491):
+    #   the remark's BODY carries ZERO mentions of Z_3 or a deck action of order three.  The
+    #   statement lived only in the paper's `%` HEADER COMMENT, and reading the file RAW is what
+    #   let the pin pass. **  ⇒ The cube-root cover's deck IS $\mathbb{Z}_3$ and that row of this
+    #   file's table STANDS -- it is PART 1's group theory, verified symbolically above.  What does
+    #   not stand is the attribution of it to `rem:equianharmonic`: the remark declines the
+    #   identification, then and now.  *The four objects are still four; one of them was sourced to
+    #   a comment.*
+    check('⛔ and rem:equianharmonic does NOT attribute the Z_3: its body DECLINES the '
+          'identification, then and now -- the cube-root cover\'s deck being $\\mathbb{Z}_3$ is '
+          'this file\'s own group theory, verified above, and not the remark\'s claim',
+          'What the coincidence of order-three structures amounts to is therefore left '
+          'as noted rather than asserted: the cross-ratio is equianharmonic, the '
+          'monodromy contains an order-three cyclic subgroup, and the two are not here '
+          'shown to be one thing.' in p5)
 
     # what it discharges
     p14 = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'),

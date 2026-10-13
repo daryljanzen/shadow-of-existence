@@ -77,7 +77,12 @@ def main():
 
     # r2504's claim, as this line wrote it
     check('r2504 wrote that nothing in the identity says which shear a bend can be',
-          'nothing in the identity says which of them a bend can be' in arc)
+          # ⛭ WIDENED r7287+cc66: the span's OBJECT was the pronoun `them`, whose antecedent --
+          #   the five-dimensional space -- is the SCOPE that made the clause true-but-limited,
+          #   and correcting the promotion of that clause is this receipt's whole purpose.
+          'with **five** there is a **five-dimensional space of shear configurations at '
+          'fixed $\\rho$ and $\\theta$** \u2014* ***and nothing in the identity says which of '
+          'them a bend can be' in arc)
 
     # the selection principle exists
     # ⛔⛭ AMENDED r4516.  ** Six quotations here broke and every claim survived. **  P9 now writes
@@ -104,7 +109,12 @@ def main():
           _GS.search(p9) is not None)
     check("and the substrate's null rulings are shear-free, so a cut inheriting one is algebraically "
           'special -- the Type-D corner',
-          "the substrate's null rulings are shear-free" in p9 and 'this is the Type-D corner' in p9)
+          # ⛭ WIDENED r7287+cc66: `this is the Type-D corner` had THE DEMONSTRATIVE AS ITS
+          #   SUBJECT; widened to the clause that names what the corner is.  The first arm names
+          #   its own subject and is MEANING-HELD, so it stands as it is.
+          "the substrate's null rulings are shear-free" in p9
+          and 'where a cut inherits one as its principal congruence the geometry is '
+          'algebraically special---this is the Type-D corner' in p9)
     check('⇒ while shear FORBIDS a repeated principal null direction, so the operator climbs past '
           'Type D into Type I',
           'shear forbids a repeated principal null direction' in p9
@@ -119,8 +129,11 @@ def main():
           _VAC.search(p9) is not None)
     check('and again at the second: "a Type-D vacuum admits a Killing tensor"',
           'a Type-D vacuum admits a Killing tensor~\\cite{WalkerPenrose1970' in p9)
+    # ⛭ WIDENED r7287+cc66: `vacuum kernel` could not fail at 21 occurrences in P9, and carried
+    #   neither `Kerr--NUT--(A)dS` nor anything locating it in a title -- the weakest possible pin
+    #   for this receipt's strongest claim.  Widened to the title's own phrase.
     check("and the paper's own title names the object the Kerr--NUT--(A)dS VACUUM KERNEL",
-          'vacuum kernel' in p9)
+          'the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity' in p9)
 
     # and the stratum it cannot reach
     check('while the wall is where matter is genuinely inhomogeneous -- "such a geometry is one whose '
@@ -134,10 +147,12 @@ def main():
     # the corrected statement
     check('⌗ so r2504\'s dark region is SHARPENED, not removed: not "no principle exists" but "the '
           'principle we have has a hypothesis the stratum violates"',
-          'nothing in the identity says which of them a bend can be' in arc
+          'with **five** there is a **five-dimensional space of shear configurations at '
+          'fixed $\\rho$ and $\\theta$** \u2014* ***and nothing in the identity says which of '
+          'them a bend can be' in arc
           and _VAC.search(p9) is not None)
     check('⇒ and it names what a beyond-wall result must supply: a shear-selection statement that does '
-          'NOT assume vacuum', 'vacuum kernel' in p9)
+          'NOT assume vacuum', 'the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity' in p9)
 
     print()
     if FAILED:

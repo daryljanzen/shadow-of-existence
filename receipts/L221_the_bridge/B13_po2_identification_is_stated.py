@@ -101,6 +101,32 @@ def unemph(t, rounds=4):
     return t
 
 
+def _r7283():
+    """`r7283` ① batch four: the named function grafted OUT of its script, loaded on demand.
+
+    *The module is a top-level script that prints at import, so the function is lifted by AST
+    and exec'd alone.*  ⚠ ** And the loader REFUSES a table the module binds as `{}` and fills
+    in a `for` loop: it used to hand one back EMPTY with nothing to say so, which would have
+    made a check VACUOUS RATHER THAN WRONG. **"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import flat_ruled_and_discrete as _F
+    return _F
+
+def _r7283b7():
+    """`r7283` ② batch seven: a short EXTENSION of the row's own named function, on demand.
+
+    *`EXTEND` means the function alone does not reach the quantity and a short extension of it
+    does.  The extension lives in the computations directory, not here, and this loads it.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import extensions as _E
+    return _E
+
 def main():
     print()
     print("  B13 -- is PO-2's identification stated anywhere?")
@@ -209,6 +235,16 @@ def main():
     print('     structure is the PHYSICAL one ** -- a different question from the one the row was opened')
     print('     for.')
     print()
+    _F = _r7283()
+    check('⛭ `r7283` ① COMPUTED, not cited: the root transposition sends each moved hinge ONE step. Built from FIVE stations instead of three -- a change of inputs and nothing else -- the same transposition sends a moved hinge TWO steps, so `a hop to a neighbouring hinge` is a fact about there being three stations',
+          _F.every_moved_hinge_is_a_neighbour(3)
+          and not _F.every_moved_hinge_is_a_neighbour(5))
+
+    _E = _r7283b7()
+    check('⛭ `r7283` ② COMPUTED, not cited: `L129`\'s OWN two generator sets settle it and no choice of mine does. `close(gam)` and `close(ratios+[P])` are BOTH of order 27 and BOTH of exponent 3 -- identical element-order multisets -- and NOT isomorphic: `Z_3^3` abelian with 27 conjugacy classes against `Delta(27)` with 11. So resemblance by order AND by exponent is not isomorphism; and the same predicate says ISOMORPHIC for one group against itself from the generators in the other order, so it is not vacuously `different`',
+          _E.groups_not_isomorphic(('diag', 'su'))
+          and not _E.groups_not_isomorphic(('su', 'su_other_order')))
+
     return 0
 
 

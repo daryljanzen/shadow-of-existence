@@ -76,6 +76,32 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+def _r7283():
+    """`r7283` ① batch four: the named function grafted OUT of its script, loaded on demand.
+
+    *The module is a top-level script that prints at import, so the function is lifted by AST
+    and exec'd alone.*  ⚠ ** And the loader REFUSES a table the module binds as `{}` and fills
+    in a `for` loop: it used to hand one back EMPTY with nothing to say so, which would have
+    made a check VACUOUS RATHER THAN WRONG. **"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import flat_ruled_and_discrete as _F
+    return _F
+
+def _r7283b6():
+    """`r7283` ① batch six: the row's own named function, grafted and called on demand.
+
+    *The module is a top-level script that prints at import, so the function is lifted by AST
+    and exec'd alone.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import selection_and_scale as _S
+    return _S
+
 def main():
     print()
     print("  B41 -- what acts on the two ends of a single hinge?")
@@ -133,6 +159,19 @@ def main():
     print('     two-dimensional irrep delivers — it distinguishes two states and does not rotate')
     print('     between them. **')
     print()
+    _F = _r7283()
+    check('⛭ `r7283` ① COMPUTED, not cited: the horn swap IS a discrete map of the six ends. The six ends rebuild onto the substrate exactly, the swap is a fixed-point-free involution whose three 2-cycles each join ONE hinge\'s two ends, and it has order 2 inside a group of order 12; the same keying on a ONE-PARAMETER rotation never closes, which is the reachable converse',
+          _F.ends_are_on_the_substrate() and _F.swap_is_three_two_cycles()
+          and _F.horn_swap_order() == 2
+          and _F.group_order_under_key_of() == 12
+          and _F.continuous_converse() == 12)
+
+    _S = _r7283b6()
+    check('⛭ `r7283` ① COMPUTED, not cited: the deck\'s irreducible dimensions. `L091x`\'s own check says the deck `Z_3` is ABELIAN, so by the identity its docstring states its irreducibles are three ONE-dimensional characters whose squares sum to the order 3; handed the walls\' `S_3` table instead -- a change of the argument and nothing else -- it comes back non-abelian, whose dimensions are 1, 1, 2. And exactly ONE irreducible is trivial for either group, so triviality does not discriminate and the DIMENSIONS are what the clause turns on',
+          _S.deck_is_abelian() and _S.deck_irrep_dims() == [1, 1, 1]
+          and _S.triviality_does_not_discriminate()
+          and not _S.s3_is_abelian())
+
     return 0
 
 

@@ -63,6 +63,20 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+def _r7283r3():
+    """`r7283` ruling ③: `character` at the three loci `janzen_circle_v3` names, on demand.
+
+    *This row was held as `OBJECTS-NOT-RECORDED` -- which three critical loci the paper means.
+    ** The code was right and the objects were recorded, in a different paper from the one I
+    looked in: the circle paper names them as three values of `f`. **  So this is an ordinary
+    change of inputs to the function the backlog named, and nothing is reclassified.*"""
+    import sys as _s
+    _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7267_cc66_reach_the_71')
+    if _p not in _s.path:
+        _s.path.insert(0, _p)
+    import groups_and_characters as _G
+    return _G
+
 def main():
     print()
     print('  B11 -- how many three-fold structures, and how many open identifications?')
@@ -125,6 +139,11 @@ def main():
     print('     BOTH, and P4 says exactly what it would have to produce. ***')
     print('  ⌗ ** The third pairing -- causal characters against wall modes -- is asked NOWHERE. **')
     print()
+    _G = _r7283r3()
+    check('⛭ `r7283` ③ COMPUTED, not cited: the three critical loci are the three causal characters. `character(1-f)` at the paper\'s own `f = 0, 1, 2` returns three DISTINCT characters, while three equally spaced values `0, 1/2, 1` return only two -- so the claim is a fact about those three values of `f` and not about three loci in general',
+          _G.three_loci_are_three_characters()
+          and not _G.three_characters_at_equally_spaced())
+
     return 0
 
 
