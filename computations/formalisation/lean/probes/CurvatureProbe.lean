@@ -1,6 +1,14 @@
 import Mathlib.Analysis.Calculus.Deriv.Inv
 import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+import Mathlib.Analysis.Calculus.ContDiff.Deriv
+import Mathlib.Analysis.Calculus.TangentCone.Real
+import Mathlib.Topology.Covering.AddCircle
+import Mathlib.Data.ZMod.QuotientGroup
 import Mathlib.Geometry.Manifold.MFDeriv.NormedSpace
+import Mathlib.Geometry.Manifold.MFDeriv.SpecificFunctions
+import Mathlib.Geometry.Manifold.Instances.Sphere
 import Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Basic
 import Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion
 import Mathlib.Geometry.Manifold.VectorBundle.Hom
@@ -878,6 +886,196 @@ theorem sff_conf {a : ℝ → ℝ} {p : ℝ × ℝ} (ha : a p.1 ≠ 0) (hd : Dif
 
 end SliceK
 
+/-! ## `r7293`, Probe P1 — a metric on a product, and the round sphere as a pullback -/
+
+section Product
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+  {H : Type*} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type*} [TopologicalSpace M] [ChartedSpace H M]
+  {E' : Type*} [NormedAddCommGroup E'] [NormedSpace ℝ E']
+  {H' : Type*} [TopologicalSpace H'] {I' : ModelWithCorners ℝ E' H'}
+  {M' : Type*} [TopologicalSpace M'] [ChartedSpace H' M']
+
+/-- **G5a.** The product metric `g₁ ⊕ g₂ = pr₁*g₁ + pr₂*g₂` on `M × M'`. -/
+noncomputable def prodG (g₁ : Π x : M, LinearMap.BilinForm ℝ (TangentSpace I x))
+    (g₂ : Π y : M', LinearMap.BilinForm ℝ (TangentSpace I' y)) (p : M × M') :
+    LinearMap.BilinForm ℝ (TangentSpace (I.prod I') p) :=
+  pullG (I := I.prod I') (I' := I) Prod.fst g₁ p + pullG (I := I.prod I') (I' := I') Prod.snd g₂ p
+
+/-- In components: `(g₁ ⊕ g₂)((u, u′), (v, v′)) = g₁(u, v) + g₂(u′, v′)`. -/
+lemma prodG_apply (g₁ : Π x : M, LinearMap.BilinForm ℝ (TangentSpace I x))
+    (g₂ : Π y : M', LinearMap.BilinForm ℝ (TangentSpace I' y)) (p : M × M')
+    (u v : TangentSpace (I.prod I') p) :
+    prodG (I := I) (I' := I') g₁ g₂ p u v = g₁ p.1 u.1 v.1 + g₂ p.2 u.2 v.2 := by
+  simp only [prodG, LinearMap.add_apply, pullG_apply, mfderiv_fst, mfderiv_snd]
+  rfl
+
+lemma prodG_symm (g₁ : Π x : M, LinearMap.BilinForm ℝ (TangentSpace I x))
+    (g₂ : Π y : M', LinearMap.BilinForm ℝ (TangentSpace I' y))
+    (h₁ : ∀ x u v, g₁ x u v = g₁ x v u) (h₂ : ∀ y u v, g₂ y u v = g₂ y v u) (p : M × M')
+    (u v : TangentSpace (I.prod I') p) :
+    prodG (I := I) (I' := I') g₁ g₂ p u v = prodG (I := I) (I' := I') g₁ g₂ p v u := by
+  rw [prodG_apply, prodG_apply]
+  exact congrArg₂ (· + ·) (h₁ _ _ _) (h₂ _ _ _)
+
+end Product
+
+section Sphere
+
+open Metric Module
+
+local notation "ℝ³" => EuclideanSpace ℝ (Fin 3)
+
+instance fact_finrank_three : Fact (finrank ℝ ℝ³ = 2 + 1) := ⟨by simp⟩
+
+/-- **G5a.** The round metric of the unit `S²`: the Euclidean inner product pulled back along `S² → ℝ³`. -/
+noncomputable def roundG (x : sphere (0 : ℝ³) 1) : LinearMap.BilinForm ℝ (TangentSpace (𝓡 2) x) :=
+  pullG (I := 𝓡 2) (I' := 𝓘(ℝ, ℝ³)) ((↑) : sphere (0 : ℝ³) 1 → ℝ³)
+    (fun _ => (innerₗ ℝ³ : LinearMap.BilinForm ℝ ℝ³)) x
+
+/-- **It is positive definite** on every tangent space — a Riemannian metric, from the inclusion's derivative
+being injective. -/
+theorem roundG_pos (x : sphere (0 : ℝ³) 1) (v : TangentSpace (𝓡 2) x) (hv : v ≠ 0) : 0 < roundG x v v := by
+  have hD : mfderiv (𝓡 2) 𝓘(ℝ, ℝ³) ((↑) : sphere (0 : ℝ³) 1 → ℝ³) x v ≠ 0 := fun h0 =>
+    hv ((mfderiv_coe_sphere_injective x) (h0.trans (map_zero _).symm))
+  show 0 < @inner ℝ ℝ³ _ (mfderiv (𝓡 2) 𝓘(ℝ, ℝ³) ((↑) : sphere (0 : ℝ³) 1 → ℝ³) x v)
+    (mfderiv (𝓡 2) 𝓘(ℝ, ℝ³) ((↑) : sphere (0 : ℝ³) 1 → ℝ³) x v)
+  exact real_inner_self_pos.mpr hD
+
+lemma roundG_symm (x : sphere (0 : ℝ³) 1) (u v : TangentSpace (𝓡 2) x) : roundG x u v = roundG x v u :=
+  pullG_symm (I := 𝓡 2) (I' := 𝓘(ℝ, ℝ³)) _ (fun _ => (innerₗ ℝ³ : LinearMap.BilinForm ℝ ℝ³))
+    (fun _ (a b : ℝ³) => real_inner_comm b a) x u v
+
+end Sphere
+
+/-! ## `r7293`, Probe P2 — a periodic identification: a covering, and a free cyclic deck action -/
+
+section Period
+
+variable {β : ℝ} [Fact (0 < β)]
+
+/-- **G5b.** Identifying a coordinate mod its period `β` is a covering map. -/
+theorem period_isCovering : IsCoveringMap ((↑) : ℝ → AddCircle β) := AddCircle.isCoveringMap_coe β
+
+/-- The rotation by `β/n`. -/
+noncomputable def rot (β : ℝ) (n : ℕ) : AddCircle β := ((β / n : ℝ) : AddCircle β)
+
+/-- It generates a cyclic group of order `n`. -/
+theorem rot_order {n : ℕ} (hn : 0 < n) : addOrderOf (rot β n) = n :=
+  AddCircle.addOrderOf_period_div hn
+
+theorem rot_card {n : ℕ} (hn : 0 < n) : Nat.card (AddSubgroup.zmultiples (rot β n)) = n := by
+  rw [Nat.card_zmultiples, rot_order hn]
+
+omit [Fact (0 < β)] in
+/-- And it acts freely: no element but `0` fixes a point. -/
+theorem rot_free (n : ℕ) (k : ℤ) (x : AddCircle β) (h : k • rot β n + x = x) : k • rot β n = 0 := by
+  simpa using h
+
+end Period
+
+/-! ## `r7293`, Probe P3 — a continuation seam that is `C¹` and not `C²`, and the Wick map between quadrics -/
+
+section Seam
+
+open Real
+open scoped Topology
+
+/-- The warp factor across the seam: `cos` on the Riemannian side, `cosh` on the Lorentzian side. -/
+noncomputable def wseam (s : ℝ) : ℝ := if s ≤ 0 then cos s else cosh s
+
+noncomputable def wseam' (s : ℝ) : ℝ := if s ≤ 0 then -sin s else sinh s
+
+lemma wseam_Iic : EqOn wseam cos (Iic 0) := fun s hs => by simp [wseam, show s ≤ 0 from hs]
+
+lemma wseam_Ici : EqOn wseam cosh (Ici 0) := fun s hs => by
+  rcases eq_or_lt_of_le (show (0:ℝ) ≤ s from hs) with h | h
+  · subst h; simp [wseam]
+  · simp [wseam, not_le.mpr h]
+
+lemma wseam'_Iic : EqOn wseam' (fun s => -sin s) (Iic 0) := fun s hs => by
+  simp [wseam', show s ≤ 0 from hs]
+
+lemma wseam'_Ici : EqOn wseam' sinh (Ici 0) := fun s hs => by
+  rcases eq_or_lt_of_le (show (0:ℝ) ≤ s from hs) with h | h
+  · subst h; simp [wseam']
+  · simp [wseam', not_le.mpr h]
+
+lemma hasDerivAt_wseam (s : ℝ) : HasDerivAt wseam (wseam' s) s := by
+  rcases lt_trichotomy s 0 with h | h | h
+  · have e : wseam =ᶠ[𝓝 s] cos := Filter.eventually_of_mem (Iic_mem_nhds h) fun y hy => wseam_Iic hy
+    rw [show wseam' s = -sin s from wseam'_Iic h.le]
+    exact (hasDerivAt_cos s).congr_of_eventuallyEq e
+  · subst h
+    have h1 : HasDerivWithinAt wseam (wseam' 0) (Iic 0) 0 := by
+      rw [show wseam' 0 = -sin 0 from wseam'_Iic (Set.mem_Iic.mpr le_rfl)]
+      exact (hasDerivAt_cos 0).hasDerivWithinAt.congr wseam_Iic (wseam_Iic (Set.mem_Iic.mpr le_rfl))
+    have h2 : HasDerivWithinAt wseam (wseam' 0) (Ici 0) 0 := by
+      rw [show wseam' 0 = sinh 0 by simp [wseam']]
+      exact (hasDerivAt_cosh 0).hasDerivWithinAt.congr wseam_Ici (wseam_Ici (Set.mem_Ici.mpr le_rfl))
+    have := h1.union h2
+    rwa [Iic_union_Ici, hasDerivWithinAt_univ] at this
+  · have e : wseam =ᶠ[𝓝 s] cosh := Filter.eventually_of_mem (Ici_mem_nhds h) fun y hy => wseam_Ici hy
+    rw [show wseam' s = sinh s from wseam'_Ici h.le]
+    exact (hasDerivAt_cosh s).congr_of_eventuallyEq e
+
+lemma deriv_wseam : deriv wseam = wseam' := funext fun s => (hasDerivAt_wseam s).deriv
+
+/-- **G5c, receipt 37.** The join is `C¹`. -/
+theorem wseam_C1 : ContDiff ℝ 1 wseam := by
+  rw [contDiff_one_iff_deriv, deriv_wseam]
+  refine ⟨fun s => (hasDerivAt_wseam s).differentiableAt, ?_⟩
+  exact Continuous.if_le continuous_sin.neg continuous_sinh continuous_id continuous_const
+    (fun s hs => by simp [hs])
+
+/-- **G5c, receipt 37.** The join is NOT `C²` at the seam: the second derivative jumps from `−1` to `+1`. -/
+theorem wseam_not_C2 : ¬ ContDiffAt ℝ 2 wseam 0 := by
+  intro h
+  obtain ⟨u, hu, hC⟩ := h.contDiffOn (m := 2) le_rfl (by simp)
+  obtain ⟨t, htu, hto, h0⟩ := mem_nhds_iff.mp hu
+  have h2 := ((contDiffOn_succ_iff_deriv_of_isOpen (n := 1) hto).mp (hC.mono htu)).2.2
+  rw [deriv_wseam] at h2
+  have hd : DifferentiableAt ℝ wseam' 0 :=
+    (h2.differentiableOn (by simp) 0 h0).differentiableAt (hto.mem_nhds h0)
+  have hL : HasDerivWithinAt wseam' (-cos 0) (Iic 0) 0 :=
+    (hasDerivAt_sin 0).neg.hasDerivWithinAt.congr wseam'_Iic (wseam'_Iic (Set.mem_Iic.mpr le_rfl))
+  have hR : HasDerivWithinAt wseam' (cosh 0) (Ici 0) 0 :=
+    (hasDerivAt_sinh 0).hasDerivWithinAt.congr wseam'_Ici (wseam'_Ici (Set.mem_Ici.mpr le_rfl))
+  have e1 := (uniqueDiffWithinAt_Iic 0).eq_deriv _ hd.hasDerivAt.hasDerivWithinAt hL
+  have e2 := (uniqueDiffWithinAt_Ici 0).eq_deriv _ hd.hasDerivAt.hasDerivWithinAt hR
+  simp at e1 e2
+  linarith
+
+end Seam
+
+section Wick
+
+open Complex
+
+variable {n : ℕ}
+
+/-- The de Sitter quadric `−X₀² + Σ Xᵢ² = α²` and the sphere quadric `X₀² + Σ Xᵢ² = α²`, over `ℂ`. -/
+def quadDS (α : ℂ) : Set (ℂ × (Fin n → ℂ)) := {X | -X.1 ^ 2 + ∑ i, X.2 i ^ 2 = α ^ 2}
+def quadS (α : ℂ) : Set (ℂ × (Fin n → ℂ)) := {X | X.1 ^ 2 + ∑ i, X.2 i ^ 2 = α ^ 2}
+
+/-- The Wick rotation `X₀ ↦ i X₀`, as an equivalence. -/
+def wick : (ℂ × (Fin n → ℂ)) ≃ (ℂ × (Fin n → ℂ)) where
+  toFun X := (Complex.I * X.1, X.2)
+  invFun X := (-Complex.I * X.1, X.2)
+  left_inv X := by ext <;> simp [← mul_assoc]
+  right_inv X := by ext <;> simp [← mul_assoc]
+
+/-- **G5c, receipt 106.** The Wick rotation maps the de Sitter quadric onto the sphere quadric, bijectively. -/
+theorem wick_bijOn (α : ℂ) : BijOn (wick (n := n)) (quadDS α) (quadS α) := by
+  have key : ∀ X : ℂ × (Fin n → ℂ), wick X ∈ quadS α ↔ X ∈ quadDS α := fun X => by
+    simp only [quadS, quadDS, mem_ofPred_eq, wick, Equiv.coe_fn_mk, mul_pow, I_sq]
+    constructor <;> intro h <;> linear_combination h
+  refine ⟨fun X hX => (key X).2 hX, wick.injective.injOn, fun Y hY => ⟨wick.symm Y, ?_, by simp⟩⟩
+  rw [← key, Equiv.apply_symm_apply]; exact hY
+
+end Wick
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -908,3 +1106,13 @@ end ShadowProbe
 #print axioms ShadowProbe.dsFlat_pull
 #print axioms ShadowProbe.nConf_unit
 #print axioms ShadowProbe.sff_conf
+#print axioms ShadowProbe.prodG_apply
+#print axioms ShadowProbe.prodG_symm
+#print axioms ShadowProbe.roundG_pos
+#print axioms ShadowProbe.roundG_symm
+#print axioms ShadowProbe.period_isCovering
+#print axioms ShadowProbe.rot_card
+#print axioms ShadowProbe.rot_free
+#print axioms ShadowProbe.wseam_C1
+#print axioms ShadowProbe.wseam_not_C2
+#print axioms ShadowProbe.wick_bijOn
