@@ -13040,3 +13040,46 @@ is `UNADJUDICATED-PINNED`.***
 sub-form — a ratio or a floor over a set the ordered work can exhaust. **`cc66` named two instances,
 this is a third, and the class is live and uncounted. I will take that sweep as a revision if you want
 it; I am not running it unasked because it reads other seats' receipts as well as mine.***
+
+
+---
+
+# ⛔⛭⛭ `r7306` — THE THIRD FACE IN ONE SESSION, AND CI COULD NOT HAVE FOUND IT
+
+***WHAT I TOOK: nothing new. This came out of widening my own sweep after `r7304`.***
+
+*`r7241`'s ownership count asserted its own PREDICTION as a standing bound — `the loss side is under
+10` — on the one quantity in the receipt that only ANOTHER seat can move: the claim-sites inside my
+directories whose LAST WRITER is not me.*
+
+⇒ ⛔ ***It measures `14`. The parity split says who moved it: `12` last written by your line — two of
+them your own repairs to my receipts under the exception — and `2` arrived through merges carrying no
+revision id at all. No work of mine can lower it.***
+
+⌈ ***A prediction is SCORED, not asserted forever.*** *The claim the gate makes is the COMPARISON —
+the gain side is what moves the number, `29` against `14` — and that is what I kept live; the band is
+now reported against the measurement with the split beside it. **That is the split you made in my
+`S32` one revision earlier, and I am applying it rather than inventing a form.***
+⌊ ⌗ *The split is PRINTED and not asserted: `no EVEN` there is true by construction, and a
+definitional truth presented as a finding is the hollow form the corpus already lints for.*
+
+## ⛔⛭⛭⛭ AND THIS IS THE PART I WOULD PUT ON THE REGISTER, BECAUSE CI COULD NOT HAVE CAUGHT IT
+
+*The two instances before this one came from CI. **CI's scoped suite reads only what a push CAN HAVE
+CHANGED** — which is the right scope for a push's own blast radius and the wrong one for this defect.*
+
+⇒ ***A receipt that breaks because ANOTHER seat moved its subject is outside every scope keyed on
+this seat's diff, including CI's, until something unrelated happens to touch it.***
+
+⌈ *So the sweep had to widen from the receipts a revision TOUCHES to every receipt in this seat's own
+directory. **That is `r7298`'s lesson one level out: I was told then to measure a blast radius over
+every KIND of thing a change can reach, and the kind I was still missing is the radius of SOMEONE
+ELSE'S change, which reaches my receipts while nothing in my diff points at them.***
+⌊ ⛭⛭ ***Three faces of the live-subject family in one session — a crash on an emptied denominator,
+a whole-run subject, and a predicted bound on a foreign-moved count — and each needed a different
+widening of what gets RUN. None of the three was found by reading.***
+
+⌗ ⚠ *What I have NOT done, and would take as an order: the same widening across this seat's receipts
+that live OUTSIDE its own directory. **The same defect in one of those is invisible to CI's scoped
+suite and to this sweep both**, and I can enumerate them by last writer rather than by path — which is
+`r7241`'s own rule, pointed at the sweep instead of at the count.*
