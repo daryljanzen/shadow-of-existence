@@ -92,11 +92,24 @@ def main():
           'FRW/Kerr/RN analogous removal' in epr)
 
     # the other half, already in hand
-    arc = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_LIVE_ARC.md'),
-                                   encoding='utf-8', errors='replace').read())
+    # ⛭ r7303+cc66: the arc is read with its MARKDOWN EMPHASIS stripped as well as flattened, so
+    #   a pin into it can be a sentence rather than a sentence cut at an asterisk -- the markdown
+    #   analogue of what `check_quote_pins`'s own H3 normaliser does for the LaTeX emphasis family.
+    arc = re.sub(r'\*+', '', re.sub(r'\s+', ' ',
+                 open(os.path.join(ROOT, 'THE_LIVE_ARC.md'),
+                      encoding='utf-8', errors='replace').read()))
     check("r2458 had the other half unconnected: P2's cycloid is the bound LTB case with "
           'E = -1/2, a CONSTANT -- and bound LTB with constant E is closed FRW',
-          'a CONSTANT' in arc and 'bound-LTB form' in arc)
+          # ⛭ r7303+cc66: `a CONSTANT` is RULED REPAIR-OWED at r7297 on a mechanical ground -- the
+          #   pin was satisfied by an unrelated $\mathbb{Z}_3$ monodromy sentence in the same file
+          #   (`the three sheets differ by a CONSTANT cube root of unity`), so it would have kept
+          #   passing with the cycloid site deleted outright.  Widened to the arc's own
+          #   identification sentence.  ** `bound-LTB form` is NOT absorbed into it: that row is
+          #   one of the 14 still HELD, and a merge would retire a held row rather than repair it. **
+          "P2's cycloid $r(z)=M(1+\\cos z)$ matches the bound-LTB form "
+          '$R=(m/(-2E))(1-\\cos\\eta)$ at $m=M$ with $E=-\\tfrac12$, a CONSTANT'
+          in arc
+          and 'bound-LTB form' in arc)
 
     # ** and what stays live **
     check('⚠ Kerr and Reissner-Nordstroem are NOT cycloids and nothing here bears on them',

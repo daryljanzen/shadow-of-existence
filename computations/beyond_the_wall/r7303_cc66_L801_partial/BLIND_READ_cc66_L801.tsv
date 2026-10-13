@@ -1,0 +1,12 @@
+# readers: 60 | cc66
+# r7303 BLIND READ (DOUBLE), PARTIAL: seat cc66 on L801_nonlinear_shear_freedom, primary 60.
+# ** 2 of the prefix's 8 keys only.  The other 6 are DISCLOSED AS CONTAMINATED in
+# CONTAMINATION_cc66_L801.md beside this file and are deliberately NOT read: this seat saw 69's
+# blind verdicts for them earlier in the same session.  A contaminated read filed as blind would
+# corrupt the instrument the whole campaign now runs on. **
+# Verdicted without opening 60's rows: the keys in scope were taken from the ledger's literal
+# column alone, and columns 6 and 7 were never displayed for this prefix.
+# NOT reconciled and NOT written to the ledger.  Grounds in GROUNDS_cc66_L801.tsv.
+# receipt	literal	first verdict (cc66, blind)	second verdict (60, primary -- not read)
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"the propagating sector is ghost-free to all orders"	MEANING-HELD	
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"Friedrich proved the nonlinear stability of de Sitter in vacuum with $\\Lambda>0"	REPAIR-OWED	

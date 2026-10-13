@@ -187,7 +187,15 @@ has2 = bool(WITHIN.search(t14))
 has3 = bool(SUBGRP.search(t14))
 print(f"    P14: ① operator index = {has1}   ② within-state = {has2}   ③ subgroup = {has3}")
 check("P14 carries all three", [has1, has2, has3], [True, True, True])
-o1 = re.search(r'analytical index', t14, re.I).start()
+# ⛔ r7303+cc66, ORDERED AT r7297 AS A DEFECT AND NOT A VERDICT: this was
+#   `re.search(r'analytical index', t14, re.I).start()` -- ONE of the three forms this receipt's
+#   own ① admits -- and `.start()` on a None match raises AttributeError, so a reword inside the
+#   receipt's own admitted set KILLS THE PROCESS and VERDICT 5's control never runs.
+#   ** A guard whose failure mode is a CRASH rather than a red reports nothing, and the control
+#   it protects is the thing that does not run. **  A face of PO-78, and the same shape as S28's
+#   `TypeError @ L386` in another seat's receipt this cycle.  The sense is located by the sense's
+#   own pattern.
+o1 = _ALL3.search(t14).start()
 o2 = WITHIN.search(t14).start()
 o3 = SUBGRP.search(t14).start()
 print(f"    first occurrence offsets: ① {o1}   ② {o2}   ③ {o3}")

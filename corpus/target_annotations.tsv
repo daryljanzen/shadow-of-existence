@@ -64,7 +64,7 @@ receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_rat
 receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py	"r7222 REPAIR"	SOURCE	-	tex-absent
 receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py	"s a path list is a gate on a set its own seat can grow"	SOURCE	-	tex-absent
 receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"A topological term's coefficient is of the third kind"	SOURCE	-	tex-present
-receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"THERE IS NO SUCH BUNDLE"	SOURCE	-	tex-absent
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"THERE IS NO SUCH BUNDLE. The three seats are three FUNCTIONS on a member's spacetime, not a frame over it."	SOURCE	-	tex-absent; r7303+cc66 widened the key on r7297's ruling -- it reads r6752's receipt body, a .py, and R* cannot decide it
 receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"o seat bundle at all, and so nothing for a curvature to be the curvature of"	SOURCE	-	tex-absent
 receipts/P15_CR_cosmology/C12_the_odd_even_half_has_its_parameter.py	"ordinary content physics on the observable leg"	SOURCE	py,tex	tex-present
 receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	"likelihood-level model selection"	PAPER	py,tex	tex-present
