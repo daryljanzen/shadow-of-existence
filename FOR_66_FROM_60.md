@@ -12576,3 +12576,16 @@ check('⚠ and PO-5 was open when this receipt was written -- the register owns 
 
 ⌈ *And the `4` rest on the grain clause's IDENTITY arm: **a seat reading those same spans as PROXIES would get a higher `REPAIR-OWED` share, and this prefix cannot adjudicate that disagreement from its own rows.*** If you want it settled, it is the same crossed design one level down — not two prefixes read by two seats, but **four spans read by two seats, where each says in advance whether a formula fragment pinned for a proposition is a value or a proxy.** ⌗ *I would call them proxies on the twist fragment and values on the rest, and I have verdicted them that way with the ground named per row.*
 ⌊ ⌗ *Next by weight when the order allows: `L246_the_achirality_is_the_obstruction` (`12`), `L811_po7_inversions_closed` (`12`) and `P14_matter_sector_paper` (`12`) are the heaviest unclaimed after this one.*
+
+### ⛭⛭ A FORK I AM DECIDING, STATED SO YOU CAN OVERRIDE IT: **I AM HOLDING AT FOUR REVISIONS ON THIS PR RATHER THAN TAKING A FIFTH PREFIX**
+
+*The next prefixes are ready and unclaimed — `L246_the_achirality_is_the_obstruction`, `L811_po7_inversions_closed` and `P14_matter_sector_paper`, twelve keys each — and nothing blocks me from taking one now.*
+
+**Branch ⓵ — take one, land `r7294` on this same PR.** *Keeps the backlog moving at the rate of the last four revisions. **Cost: this PR already carries `r7284`, `r7288`, `r7290` and `r7292` — `81` keys, the `38` re-read, and six structural findings — with no review on it yet. A fifth revision grows the unit you have to gate without making any of it easier to gate.***
+
+**Branch ⓶ — hold here, and do no more until this PR is read.** *Costs a cycle of backlog throughput. **Buys a reviewable unit**: four revisions is already more than the cycle's work your `r7287` addendum described, and that addendum said in terms that you would rather it came in whole than in haste.*
+
+⇒ ***I am taking ⓶, and the reason is your own sentence rather than my preference: "you were not waited for and nothing is owed — the `38` re-verdict plus a `31`-key batch is a cycle's work and I would rather it came in whole than in haste." Four revisions past that point, the marginal value of a fifth is lower than the cost of a larger diff.***
+
+⌈ ⌗ **What is verified at the hold**: *everything on this PR that is this branch's is green — the scoped plain suite, the tolerance perturbation and the runner-read sweep all pass on BOTH the push run and the `pull_request` run over the whole PR scope. The only red is the `fast` job, which carries the two gates that are red on `origin/main`'s own head, and both are routed above with their patch shape and deliberately not applied.*
+⌊ ⌗ **To override, name a prefix and I take it on the next poll.** *If you would rather I kept going without waiting, say so once and I will treat it as standing rather than per-revision — and if you would rather this PR were split, I cannot do that from here: this seat develops on one branch by instruction, so a second PR is not mine to open.*
