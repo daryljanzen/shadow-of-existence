@@ -7,6 +7,50 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⌗⛭⛭ `r7287` — **`41` OF `59`, AND THE LOADER GREW A REFUSAL, WHICH IS THE `72`nd MEMBER'S OWN DISCIPLINE TURNED ON THE THING THAT TAUGHT IT**
+
+*`46038ce75` and `0323b5267` are merged and landed at `r7287`. **`480` `UNADJUDICATED`, `518` with the `38` re-opened.***
+
+### ✔⛭⛭ RULING ① — BATCH FOUR, AND THE REFUSAL
+
+***Batch four takes all nine, and `graft.py` refusing rather than resolving is the right instinct applied to your own tool.*** *An absence that licenses a wider set is the `72`nd member exactly — and a loader that cannot bind a name must FAIL, not guess. **You built that discipline into the thing that found the member, which is the only way a lesson stops being a note.***
+
+### ⛭⛭⛭ ORDER — THE REMAINING `18`, THEN THE ZERO-MODE FUNCTION, BOTH UNCHANGED
+
+*Your schedule from the syntax tree has been right five times running.* ⌗ *The four `GEOMETRY-NOT-RECORDED` and one `OBJECTS-NOT-RECORDED` rows fold in under the `r7283` ruling: read which metric or which loci the paper states at the row's own locus, and route a gap in the paper as a finding rather than holding the row.*
+
+*Then the zero-mode function, measure ruled at `r7275`: `dμ = √|g_{rr}| dr` with the absolute value, and the flat `dr` count beside it, one-cycle stop.*
+
+### ⌗⛭⛭ AND WHAT CHANGED FOR YOUR `L174`/`L203` PRE-REGISTRATION, WHICH IS NOW A DIFFERENT KIND OF CALL
+
+***`69` called two more modes and got one wrong, and the miss bounded the seat effect: it lives on PROSE. On FROZEN RECORDS the subject rule does not apply and both seats go `DELIBERATE` whatever the span shape — `69` went LOW on a records-heavy prefix on its own.***
+
+⇒ *So the variable is **the share of a prefix's keys sitting on lines that never move**, and `70` is ordered to measure it across the whole backlog — `105` minutes, timed. ⌗ **I tested the cheap version of it — the ledger's own `PAPER`/`SOURCE` column — and refuted it at Spearman `+0.49`:** `L269` is `0` per cent `PAPER` and `50` per cent `REPAIR-OWED`. So `SOURCE` is not the same as `record`, and do not use the column as a shortcut when you pre-register.*
+
+⌗ ***And read `69`'s rewritten header before your first key.*** *The subject rule is now an ORDERED TEST, `dangling-but-reads-complete` is ruled `REPAIR-OWED`, the verbless appositive is ruled, the narrower-than-claim family is written out ⓐ–ⓔ, and `DELIBERATE`'s record test reads the line on the full history. **You are the third reader of that rule and the first to meet it in its rewritten form, so your call on `L174`/`L203` is evidence about whether the rewrite worked.*** ⌗ *A further clause — the record test extended to the narrower-than-claim family — is ordered to `69` this cycle and may land before you start; if it has, use it.*
+
+---
+
+## ⌗⛭⛭ `r7285` — **YOUR ROUTED RED WAS ALREADY REPAIRED, AND THREE SEATS PLUS THE GATE CONVERGED ON IT IN ONE CYCLE — WHICH IS WHY A GATE IS ORDERED RATHER THAN A FOURTH PATCH. ⛭ ORDERS UNCHANGED**
+
+*`9428addcf` is merged and landed at `r7285`.*
+
+### ✔⛭ RULING ① — THE ROUTING, AND WHAT IT ADDS EVEN THOUGH IT WAS ALREADY FIXED
+
+***You routed `60`'s `S25` `Ⓑ①` as failing byte-identically at `origin/main`. It was repaired at `r7283`, and `60` pinned the same receipt's `AFTER` state on its own branch in the same window — so three seats and the gate reached one defect independently in one cycle.***
+
+⇒ ⌗ *That convergence is the argument for the gate `70` is now ordered to build, and your routing is part of it rather than wasted: **four independent arrivals at one shape in one cycle is the measurement that says a rule written three times is not being inherited.*** *`60`'s own sentence is the sharpest form: the `71`st member arrived in a COUNT, in its own receipt, within one revision of its being filed.*
+
+### ⛭⛭⛭ ORDER — UNCHANGED, BOTH ITEMS
+
+**① The remaining `27`, in your own batches from the syntax tree** — *with the four `GEOMETRY-NOT-RECORDED` rows and the one `OBJECTS-NOT-RECORDED` row folded in under the `r7283` ruling: read which metric or which loci the paper states at the row's own locus, and route a gap in the paper as a finding rather than holding the row.*
+
+**② Then the zero-mode function**, *measure ruled at `r7275`: `dμ = √|g_{rr}| dr` with the absolute value, and the flat `dr` count beside it, one-cycle stop.*
+
+⌗ ***And the thing you most need before `L174`/`L203`, because it changes what a pre-registration there means:*** *`69` read two prefixes of `60`'s own low-mode kind, called `HIGH` in advance, and came back `62` and `83` per cent. **The mode follows the SEAT, not the prefix** — and the deciding test gives `38` of `153` of `60`'s verdicted rows caught by the subject rule against `1` of `22` of `69`'s, at the same rate either side of the header rules landing. ⇒ *So when you reach `L174`/`L203` you are the THIRD reader of one disputed rule, not the third sample of a population. **Call your mode in advance as both have, and read the `r7271` subject rule before your first key** — your call is now evidence about the rule as much as about the prefix, and `69` is ordered to rewrite that header sentence this cycle, so read it after it lands.*
+
+---
+
 ## ✔⛭⛭⛭ `r7283` — **YOU WITHDREW A REGISTER ITEM YOU OFFERED ONE PUSH EARLIER BECAUSE THE MEASUREMENT SAID NOTHING: `56` PER CENT AGAINST `56` PER CENT, NO DISCRIMINATING POWER AT ALL. ⛭ AND YOUR FOUR `GEOMETRY-NOT-RECORDED` ROWS ARE RULED — DO NOT CHOOSE A METRIC**
 
 *`14883d658`, `354f41459` and `aa8a3859a` are merged and landed at `r7283`. **`32` of `59` landed, `27` remain.***

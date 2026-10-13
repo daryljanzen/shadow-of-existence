@@ -1,0 +1,68 @@
+1	receipts/L230_computes_convention/C1_the_uptake_is_falling_and_this_line_is_why.py:109	395	b_tot == 395
+2	receipts/L230_computes_convention/C1_the_uptake_is_falling_and_this_line_is_why.py:133	1	len(myrow) == 1
+3	receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py:308	2	len(_git('log', '--format=%h', 'origin/main..HEAD').stdout.split()) == 2
+4	receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py:282	1	sum((1 for x in subjects if x.startswith(r + ' '))) == 1
+5	receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py:115	1	len(row) == 1
+6	receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py:253	1	math_reach.count('★ NEXT') == 1
+7	receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py:262	1	math_reach.count('## THE FIELDS TO THROW (candidate bakes') == 1
+8	receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py:290	3	len(found) == 3
+9	receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py:235	7	len(SPL.split(v)) != 7
+10	receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py:236	7	len(SPL.split(v)) != 7
+11	receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py:245	7	len(SPL.split(v)) != 7
+12	receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py:255	29	bad_before['PO-11'] == 29
+13	receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py:151	1	len(v) == 1
+14	receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py:284	2	len(_dupsk) - len(skipped) == 2
+15	receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py:285	1	sum((1 for l in rows if 'L-555' in l)) == 1
+16	receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py:307	2	n_near == 2
+17	receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py:373	1	len(v) == 1
+18	receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py:377	1	len(v) != 1
+19	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:194	1	len(node.ops) == 1
+20	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:317	1	len(node.ops) == 1
+21	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:342	1	sum((1 for k, l, v, _ in _cand if l in _saw_old[k])) == 1
+22	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:349	3	sum((1 for k, l, v, _ in _cand if l in _saw_new[k])) == 3
+23	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:440	5	_tot['lost_lp'] == 5
+24	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:478	3	len(_moved) == 3
+25	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:505	4	len(_nonclaim) == 4
+26	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:538	2	sum((1 for r, *_ in _exposed if os.path.basename(r).startswith('S5_'))) == 2
+27	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:563	107	len(_keys) == 107
+28	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:575	2	len(_dr) == 2
+29	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:576	2	len({m.group(1) for m in _from}) == 2
+30	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:577	2	len({m.group(2) for m in _from}) == 2
+31	receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py:612	2776	len(_rows) == 2776
+32	receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py:119	40	len(p[0]) == 40
+33	receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py:236	1	len(CTL) == 1
+34	receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py:243	1	len(CTL) == 1
+35	receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py:244	1	len(own_sites(CTL, _w_in, RANGE)) == 1
+36	receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py:303	1	len(CTL) == 1
+37	receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py:310	1	len(own_sites(CTL, _w_in, RANGE)) == 1
+38	receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py:405	3	len(_delta) == 3
+39	receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py:452	1	len(own_sites(CTL, _w_in, RANGE)) == 1
+40	receipts/L_probability/S12_ownership_makes_the_class_larger_and_the_path_scope_was_too_narrow_as_well_as_impure.py:130	40	len(p[0]) == 40
+41	receipts/L_probability/S12_ownership_makes_the_class_larger_and_the_path_scope_was_too_narrow_as_well_as_impure.py:249	2	len(_s5) == 2
+42	receipts/L_probability/S12_ownership_makes_the_class_larger_and_the_path_scope_was_too_narrow_as_well_as_impure.py:317	1	len(set(ps)) == 1
+43	receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py:120	40	len(p[0]) == 40
+44	receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py:185	40	len(p[0]) == 40
+45	receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py:311	30	len(THIRTY) == 30
+46	receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py:344	1	len(sub.ops) == 1
+47	receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py:367	8	len(_ctl) - len(_no) == 8
+48	receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py:392	1	s[2] == 1
+49	receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py:438	24	30 - len(_no) - len(READING['GENUINE']) == 24
+50	receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py:234	1	len(n.targets) == 1
+51	receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py:424	1	len(_held) == 1
+52	receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py:506	1	len(_kept) == 1
+53	receipts/L_probability/S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py:428	1	_the_rule.py:428  == 1  _t == 1
+54	receipts/L_probability/S26_the_repair_owed_share_is_bimodal_and_the_meaning_held_share_is_the_majority_on_both_kinds_without_reaching_two_thirds_on_either.py:283	1	int(_q1_rid.group(1)) % 2 == 1
+55	receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py:273	306	GATELAYER == 306
+56	receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py:283	9	_mine_files == 9
+57	receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py:319	9	_n_glob == 9
+58	receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py:333	10	len([1 for p, _ in _dropped if fam(p) == 'scripts']) == 10
+59	receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py:349	1	len(_drop_rc) == 1
+60	receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py:398	1	len(_n.ops) == 1
+61	receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py:872	1	len(_introduced_record(p)[1].split()) == 1
+62	receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py:520	1	len(_ctrl) == 1
+63	receipts/P12_algebroid/A3_the_convergence_audit.py:91	2	len(then_answered) == 2
+64	receipts/P15_CR_cosmology/C64_the_first_sixty_eight_keys_of_the_prefix_are_read_and_the_repair_owed_fraction_is_four_point_four_per_cent_with_both_mechanisms_present_in_shapes_the_flag_cannot_see.py:558	1	len(_pre_log) == 1
+65	receipts/P15_CR_cosmology/C64_the_first_sixty_eight_keys_of_the_prefix_are_read_and_the_repair_owed_fraction_is_four_point_four_per_cent_with_both_mechanisms_present_in_shapes_the_flag_cannot_see.py:562	1	len(_c58_log) == 1
+66	receipts/P15_CR_cosmology/C65_the_next_sixty_keys_are_all_source_and_none_is_a_repair_so_last_cycles_prediction_is_wrong_and_all_three_repair_forms_already_exist_in_this_prefix.py:369	1	_com[p] == 1
+67	receipts/P15_CR_cosmology/C71_the_census_is_sixty_two_per_cent_ast_and_the_backlog_has_a_nearest_function_for_eighty_three_per_cent_but_the_fourteen_that_do_not_are_one_hole_and_a_cheaper_form_lowers_the_strict_count.py:393	1	len(_od) == 1
+68	receipts/P15_CR_cosmology/P15_the_corpus_places_every_perturbation_source_before_the_branch_point_and_everything_after_it_is_transfer_so_nothing_already_built_supplies_anisotropic_content_on_the_expansion_leg.py:322	1	len(_po75_rows) == 1

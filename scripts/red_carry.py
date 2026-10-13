@@ -218,13 +218,20 @@ SUITE_RED = re.compile(r'^    \[(FAIL|slow)\] (\S+)', re.M)
 SUITE_VERDICT = re.compile(r'^  (\d+) pass, (\d+) fail, (\d+) over timeout', re.M)
 # ⛭ r7281+70.1: THE FAILING GATE'S LABEL, read from the lines the runner keeps under a red (`run_one`, r7163:
 #   `FAIL  | ` for every output line matching FAIL, then the stderr and stdout tails).  Three rules, in order:
-#   ① a GATE LINE -- a kept line carrying `[FAIL]` or `FAIL:`/`FAILED:`; the label is the gate's glyph id when
-#     the text after the marker opens with one (`Ⓑ①`, `⓸ᵇ`), else its first 60 characters.  A banner such as
+#   ① a GATE LINE -- a kept line carrying `[FAIL]`, `FAIL:`/`FAILED:`, or opening `FAIL  `; the label is the
+#     gate's glyph id when the text after the marker opens with one (`Ⓑ①`, `⓸ᵇ`), else its first 40
+#     characters with digits masked (the revision below).  A banner such as
 #     `RESULT: FAILED` carries no marker of that form and is not a gate.
 #   ② no gate line but a TRACEBACK -- `<ExceptionType> @ L<n>`, the innermost frame in the receipt's own file:
 #     a bare `assert`'s label.
 #   ③ neither -- `[]`: the run named no gate.  A whole-scope carry writes `[]` for every receipt in it.
-GATE_MARK = re.compile(r'\[FAIL\]|\bFAIL(?:ED)?:')
+GATE_MARK = re.compile(r'\[FAIL\]|\bFAIL(?:ED)?:|^FAIL\s{2,}')
+#   ⌗ r7281+70.1, REVISED AFTER THE MEASUREMENT AND REPORTED AS SUCH (computations/beyond_the_wall/
+#     r7281_70_carry_label/): the registered marker was `[FAIL]` or `FAIL:`.  Re-running 20 historical reds
+#     found a third gate-printer form, the COLUMN `FAIL  Ⓐ③ …` (`OK    ⓷ …` when green), on 6 of them; the
+#     marker now takes it.  And a gate with no glyph id is labelled by its TEXT, which carries counts that
+#     move between runs (`twenty-six (26` / `thirty-five (33`): its first 40 characters are kept with every
+#     digit run masked to `#`, so a moved count does not read as a NEW gate.
 GLYPH_ID = re.compile(r'^[\u2460-\u24ff\u2776-\u2793\u1d2c-\u1d6a\u2070-\u209f0-9a-z]*[\u2460-\u24ff\u2776-\u2793]'
                       r'[\u2460-\u24ff\u2776-\u2793\u1d2c-\u1d6a\u2070-\u209f0-9a-z]*')
 _FRAME = re.compile(r'File "([^"]+)", line (\d+)')
@@ -241,7 +248,7 @@ def gate_labels(kept, receipt):
             continue
         rest = t[m.end():].strip()
         g = GLYPH_ID.match(rest)
-        lab = g.group(0) if g else re.sub(r'\s+', ' ', rest)[:60]
+        lab = g.group(0) if g else re.sub(r'\d+', '#', re.sub(r'\s+', ' ', rest)[:40]).strip()
         if lab and lab not in out:
             out.append(lab)
     if out:
@@ -739,12 +746,16 @@ def seed_labels():
         '        stderr| Traceback (most recent call last):',
         '        stderr|   File "/w/receipts/A/R2.py", line 111, in <module>',
         '        stderr| AssertionError: d ln r_D',
+        '    [FAIL] receipts/A/R5.py  (1s)',
+        '        FAIL  |     FAIL  \u24f7 and the corpus has never written this form',
+        '    [FAIL] receipts/A/R6.py  (1s)',
+        '        FAIL  | [FAIL] the control word is found, and P15 carries 26 sites',
         '    [FAIL] receipts/A/R4.py  (2s)',
         '        FAIL  | RESULT: FAILED',
         '    [slow] receipts/A/R3.py  -- exceeded 600s',
         '        stdout| tick',
         '',
-        '  10 pass, 3 fail, 1 over timeout, 0 skipped']) + '\n')
+        '  10 pass, 5 fail, 1 over timeout, 0 skipped']) + '\n')
     tmp = tempfile.mkdtemp(prefix='po65_labels_')
     try:
         f = os.path.join(tmp, 'log.txt')
@@ -757,6 +768,11 @@ def seed_labels():
     res['L2. a bare assert is labelled by its exception and its own line'] = red and red.get('receipts/A/R2.py') == ['AssertionError @ L111']
     res['L3. a runner banner (RESULT: FAILED) is not a gate: the run named none'] = red and red.get('receipts/A/R4.py') == []
     res['L4. a timeout names no gate'] = red and red.get('receipts/A/R3.py') == []
+    res['L4b. a COLUMN gate line (`FAIL  ⓷`) is a gate'] = red and red.get('receipts/A/R5.py') == ['\u24f7']
+    lab6 = red and red.get('receipts/A/R6.py')
+    res['L4c. a text label masks its counts, so a moved count is the same gate'] = \
+        lab6 == ['the control word is found, and P# carri'] and \
+        gate_labels(['        FAIL  | [FAIL] the control word is found, and P15 carries 33 sites'], 'R6.py') == lab6
     L = {}
     apply(L, 'main', 'suite', {s14}, {s14: sorted([a5, h2])}, 's1', 'x', set())
     rl = []
