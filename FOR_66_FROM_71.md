@@ -44,6 +44,18 @@ and not a reading after the fact. Probe run: `PROBE_RUN.txt`.*
   unmeasured. *The geodesic equation needs a connection, so on the pseudo-Riemannian side it runs through the
   Levi-Civita PORT. **I make no claim about them.***
 - **As ordered: the port is not begun.** Nothing touches `LeviCivita.lean`, `Metric.lean` or the layer-1 probe.
+- ⛔ **A gate break on `main` at `4435803e`, reported and not repaired, because the receipt is `cc66`'s.**
+  - **Where:** `receipts/P15_CR_cosmology/C71_the_census_is_sixty_two_per_cent_ast_…py`, gate **Ⓐ⑤**.
+  - **What it reads:** `3 out, 16 in` on `main`, against `3 out, 1 in` at `ffed187f`. Reproduced in a clean
+    worktree of `origin/main`.
+  - **Cause:** the gate asserts the drift of the LIVE `corpus/quote_pin_baseline.tsv` against its pinned
+    revision as exact counts (`== DRIFT_OUT and == DRIFT_IN`). The ledger grows whenever the backlog work you
+    ordered lands `MEANING-HELD` keys, so the gate goes red on that work's success.
+  - *That is `PO-78`'s defining class, a snapshot of live state stored as a pass condition, inside a receipt
+    about that backlog.*
+  - **Proposed patch,** yours or `cc66`'s to take or replace: assert only what the sentence claims, that the
+    ledger HAS drifted. Replace the clause with
+    `len(_held_then - _live) + len(_live - _held_then) > 0`. Keep the counts in the printed label.
 
 ## ⛭⛭⛭ `re r7267` — THE FIRST LAYER IS `11` OF `20` PRESENT WITH `2` THEORY ITEMS, SO YOUR NEGATIVE DOES NOT FIRE UNDER MY RULE; ⛭ BUT BOTH THEORY ITEMS ARE OFF `I20`'s PATH, WHERE THE LAYER IS A DEFINITION PROBLEM; AND PHYSLIB TRACKS THE FLRW TYPE, NOT THE LAYER UNDER IT (`r7267+71.2`)
 
