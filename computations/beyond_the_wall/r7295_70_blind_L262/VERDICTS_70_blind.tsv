@@ -1,0 +1,10 @@
+# r7295+70.2 -- the blind third read of L262_half_a_family, 70 alone.  Written before any verdict or note column of
+# corpus/quote_pin_baseline.tsv for these keys was opened, and before 69's r7295 primary was read.  Not a batch
+# (the pooler globs DOUBLE_READ*/BLIND_READ*): the four-column BLIND_READ file is built from this one after it lands.
+# receipt	literal	verdict (70, blind)	reason
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_CIRCLED"	REPAIR-OWED	F1 ⓷ᶜ claims the circled-digit table is BUILT FROM RANGES; the bare name is a proxy (ⓐ) and stands for that claim only in co-occurrence with key 3 -- a hand-listed dict under the same name still passes
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"for _i in range(10)"	REPAIR-OWED	the other half of the ⓷ᶜ co-occurrence: a range loop anywhere in GEN satisfies it, not the _CIRCLED table's own construction; CO-OCCURRENCE pin
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_left = sorted({c for c in s if ord(c) > 0xFF})"	DELIBERATE	the phase-3 guard's own code, pinned whole; the claim ⓺ is that the guard is UNTOUCHED, and the line is the guard
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"nothing untranslated leaves this function"	REPAIR-OWED	a code comment's wording (GEN:251, matched lowercased) stands for 'the guard is untouched' -- the comment can survive the guard's removal; the claim's subject is the code, the pin is the label (ⓐ)
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"ᶜ"	DELIBERATE	the glyph itself; ⓶'s claim is that the triggering INDEX row USES the uncovered half, and the token is that use (note: read on live receipts/INDEX.md, the 71st-member shape only if counted exactly -- it is not)
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"⓺"	DELIBERATE	as ᶜ: the glyph is the claim's object, pinned on the triggering row
