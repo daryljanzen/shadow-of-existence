@@ -10,6 +10,49 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭⛭⛭ `re r7271` — YOUR NEGATIVE AGAINST YOUR OWN RULING DOES NOT FIRE: LAYER 3 HAS THEORY `0` ON `I20`'s PATH, AND EVERY ON ITEM NOT ALREADY IN `mathlib` IS PROVED — INCLUDING `D/dt` ALONG A CURVE AND COMPATIBILITY ALONG IT. ⌗ AND THE PORT'S `32` DOES NOT SURVIVE CONTACT: ≈ `51` (`r7273+71.2` to `+71.5`)
+
+*Full result: `computations/formalisation/r7273_71_third_layer/RESULT.md`, against `+71.1`, pushed before any
+search with the ON/OFF marks in it. Landed in four pieces, per the standing order. Probe runs:
+`PROBE_RUN_Q1_Q3.txt` and `PROBE_RUN_Q4_Q5.txt`.*
+
+- **⛔ The scoring, first. ON-path THEORY = `0`. NOT FIRED.** Ten ON items:
+  - **A1, A2, A7 present:** `CovariantDerivative`, `torsion`, and the curve's `mfderiv`.
+  - **B2 is the PORT.**
+  - **B1, B4–B8 are DEF by measurement.** Every probe built, all on `[propext, Classical.choice, Quot.sound]`:
+    - compatibility for a field of forms (Q1);
+    - `(𝓛_X g)(Y,Z) = g(∇_Y X, Z) + g(Y, ∇_Z X)` for ANY torsion-free compatible connection (Q2);
+    - conformal Killing in `∇` form (Q3);
+    - `D/dt` along a curve, in 14 lines (Q4);
+    - `D/dt (X∘γ) = ∇_γ̇ X`, and `d/dt g(V,W) = g(DV/dt,W) + g(V,DW/dt)` for fields along `γ` (Q5, 166 of 200
+      lines).
+  - ***So "a port and a coercion discipline" stands on three layers.***
+- **The miss, reported:** THEORY overall came out at `2` against a band of 3–7. *I expected the along-curve
+  cluster to be where `mathlib` stopped. **`LocalFrame.lean` made it a definition.*** Both remaining THEORY
+  items are OFF the path:
+  - parallel transport — *`Metric.lean` l.34 names it as absent*;
+  - curvature as a tensor — *`ContMDiffCovariantDerivativeOn`'s docstring defers the smoothness it needs*.
+- **⌗ Last cycle's THEORY B6 is this cycle's Q2, proved in about twenty lines.** *`r7269`'s count is not
+  revised. **A probed THEORY item going cheap is what the rule exists to show,** and it has now gone that way
+  twice.*
+- **② The PORT: ≈ `51`, not `32`, and you were right to ask.**
+  - `LeviCivita.lean` 24 (the first `grep` missed `public`/`private`) + `Metric.lean` 10;
+  - the bundle smoothness API, 14 (`IsContMDiffRiemannianBundle`, its order instances, and the
+    `inner_bundle` lemmas);
+  - a bundle class and a continuity lemma, 2;
+  - a continuous `toDual`, 1.
+  - Two files beyond the two. *A reading, good to a few.*
+  - ⇒ ***The port is the price of EXISTENCE, not of the identities.*** The probes needed none of the 51,
+    because they take the connection as a hypothesis. *`I20`'s path needs existence once, to say "the"
+    geodesics.*
+- **Limits, in terms:**
+  - pointwise, with `C¹` test fields;
+  - `hg` (that `g(Y,Z)` is differentiable) is a hypothesis;
+  - `D/dt`'s frame-independence is not stated. *B8 is the form in which it matters.*
+  - **Layers 4–5 are unmeasured, and no claim is made about them.** *Assembling the charge's one-line proof from
+    B5, B7 and B8 plus a geodesic is layer 5.*
+- **As ordered: the port is not begun.** Nothing touches `LeviCivita.lean`, `Metric.lean` or the layer-1 probe.
+
 ## ⛔⛭⛭⛭ `re r7269` — YOUR NEGATIVE FIRES: LAYER 2 HAS THEORY `0` ON `I20`'s PATH, AND ITS ONE THEOREM IS PROVED — `∂_η` IS CONFORMAL KILLING FOR `a(η)²(−dη² + dx²)` WITH `σ = a′/a`, AGAINST `mathlib` AS IT STANDS (`r7269+71.2`)
 
 *Full result: `computations/formalisation/r7269_71_second_layer/RESULT.md`, against `+71.1`, which was pushed
