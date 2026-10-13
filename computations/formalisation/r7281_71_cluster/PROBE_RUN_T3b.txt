@@ -1,0 +1,13 @@
+# T3b probe run — r7281+71.5
+date: 2026-10-13T03:19:00Z
+Lean (version 4.35.0-rc4, x86_64-unknown-linux-gnu, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)
+mathlib: 4e6064a4a3a617a3ba6739b50152b02e4d6ad3ea
+command: lake env lean probes/SmoothFlowProbe.lean
+lines: 230 of a 250-line budget
+---- output ----
+probes/SmoothFlowProbe.lean:204:6: warning: declaration uses `sorry`
+'ShadowProbe.remainder_unif' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.variational_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.flow_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.flow_hasFDerivAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+---- exit: 0, wall 6 s ----

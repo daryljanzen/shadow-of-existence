@@ -162,7 +162,8 @@ lemma linear_glue (A : ℝ → E →L[ℝ] E) (V W : ℝ → E) (c d : ℝ) (hc 
 
 /-- A linear ODE `V′ = A(t) V` with `A` continuous has a solution through `v` on `[0, T]`. -/
 theorem linear_exists (A : ℝ → E →L[ℝ] E) (hA : Continuous A) (T : ℝ) (hT : 0 < T) (v : E) :
-    ∃ V : ℝ → E, V 0 = v ∧ ∀ t ∈ Ioo 0 T, HasDerivAt V (A t (V t)) t := by
+    ∃ V : ℝ → E, V 0 = v ∧ ContinuousOn V (Icc 0 T) ∧
+      ∀ t ∈ Ioo 0 T, HasDerivAt V (A t (V t)) t := by
   obtain ⟨C, hC⟩ := isCompact_Icc.exists_bound_of_continuousOn (hA.continuousOn (s := Icc 0 (T + 1)))
   set M := max C 0
   have hM : 0 ≤ M := le_max_right _ _
@@ -200,20 +201,23 @@ theorem linear_exists (A : ℝ → E →L[ℝ] E) (hA : Continuous A) (T : ℝ) 
   obtain ⟨V, hV0, hV⟩ := key ⌈T / h⌉₊ (by
     have h2 : (⌈T / h⌉₊ : ℝ) * h < (T / h + 1) * h := mul_lt_mul_of_pos_right hc hh0
     rw [add_mul, div_mul_cancel₀ _ hh0.ne'] at h2; linarith)
-  exact ⟨V, hV0, fun t ht => (hV t ⟨ht.1.le, by linarith [ht.2]⟩).hasDerivAt
+  refine ⟨V, hV0, ?_, fun t ht => (hV t ⟨ht.1.le, by linarith [ht.2]⟩).hasDerivAt
     (Icc_mem_nhds ht.1 (by linarith [ht.2]))⟩
+  exact ContinuousOn.mono (fun t ht => (hV t ht).continuousWithinAt) (Icc_subset_Icc le_rfl hTN)
 
 /-- **T1.** Parallel transport along a `C¹` curve on `E`, for a connection whose Christoffel form `G` is
-continuous along the curve: from any `v` there is `V` with `V 0 = v` and `D/dt V = 0` on `(0, T)`. -/
+continuous along the curve: from any `v` there is `V`, continuous on `[0, T]`, with `V 0 = v` and `D/dt V = 0` on
+`(0, T)`. *The continuity is what makes `V 0 = v` an initial condition: without it, `fun t => if t = 0 then v
+else 0` would witness the rest, since `0` solves a linear equation.* -/
 theorem parallel_transport_exists
     (cov : CovariantDerivative 𝓘(ℝ, E) E (TangentSpace 𝓘(ℝ, E) : E → Type _))
     (G : E → E →L[ℝ] E →L[ℝ] E) (hG : ∀ x w u, cov (fun _ => u) x w = G x w u)
     (γ : ℝ → E) (hγ : ContDiff ℝ 1 γ) (hGγ : Continuous fun t => G (γ t))
     (T : ℝ) (hT : 0 < T) (v : E) :
-    ∃ V : ℝ → E, V 0 = v ∧ ∀ t ∈ Ioo 0 T, covDerivAlong cov γ V t = 0 := by
-  obtain ⟨V, hV0, hV⟩ := linear_exists (fun t => -(G (γ t) (deriv γ t)))
+    ∃ V : ℝ → E, V 0 = v ∧ ContinuousOn V (Icc 0 T) ∧ ∀ t ∈ Ioo 0 T, covDerivAlong cov γ V t = 0 := by
+  obtain ⟨V, hV0, hVc, hV⟩ := linear_exists (fun t => -(G (γ t) (deriv γ t)))
     (hGγ.clm_apply (hγ.continuous_deriv le_rfl)).neg T hT v
-  refine ⟨V, hV0, fun t ht => ?_⟩
+  refine ⟨V, hV0, hVc, fun t ht => ?_⟩
   rw [covDerivAlong_model cov G hG γ V t (hV t ht).differentiableAt, (hV t ht).deriv, vel_model]
   simp
   rfl
