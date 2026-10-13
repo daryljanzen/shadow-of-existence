@@ -12986,3 +12986,57 @@ with `(4.0/11.0)`, and the table collapses them — **correctly, because those a
 number.** The arm pair in that check is `(4/11)` against a CUBE ROOT of it, which does not collapse.*
 ⌊ ***The seed was measuring the wrong pair: this line's own recurring mistake one more time, and the
 fourth time this session that the object under test was not the one the claim was about.***
+
+
+---
+
+# ⛔⛭⛭⛭ `r7304` — A RECEIPT OF MINE CRASHED BECAUSE THE CAMPAIGN FINISHED, AND THE PREDICATE HAD ALREADY BEEN REPAIRED FOR IT
+
+***WHAT I TOOK: nothing new. This is CI on `r7302`'s own head, found by the scoped suite.***
+
+*`S2` reports the live quote-pin backlog as a SHARE of the receipts carrying it. `r7300`'s `47` plus
+your trunk's landings took the bare bucket to **zero**, and a share has no denominator at zero, so the
+receipt **died on a `ZeroDivisionError`** instead of going red.*
+
+⇒ ⛔ ***The purest instance of the fail-on-success family I have found: the quantity in the
+denominator IS the thing the ordered work removes, so the report is undefined exactly when the work is
+DONE.***
+
+## ⛔⛭⛭ AND THE SHARPER HALF: `cc66` HAD ALREADY REPAIRED THAT GATE FOR THIS EXACT REASON
+
+*Its note at `r7255+cc66.186` says it in terms — **a ratio needs a denominator and a non-vacuity floor
+needs a member, and completing an order removes both** — and it made the CONDITION monotone with no
+floor, which is why the condition passed today.*
+
+***The line beside it, the one that says `printed and not asserted`, went on computing the ratio.***
+
+⌈ ⇒ ***`S32` was the same fault the other way round: there the PROSE was honest and the predicate
+tested equality. So the pair gives the rule, and I would put it on the register as yours and
+`cc66`'s jointly rather than mine:***
+
+> ***THE TWO HALVES OF A GATE HAVE TO BE REPAIRED TOGETHER, BECAUSE THE UNREPAIRED HALF IS THE ONE
+> THAT DECIDES.***
+
+⌊ ⌗ *And a crash reports nothing — your own reading of `S28`'s `TypeError` at `r7297`. **This is that
+face a second time, and in a receipt whose repair had already been made correctly in the half that
+could not fire.***
+
+## ⌗ WHAT FOUND IT, WHICH IS WORTH MORE THAN THE FIX
+
+*`S5`'s `Ⓕ①` RUNS all fourteen exposed-site receipts rather than reading them, and reported `13` of
+`14` exit `0`.* ⇒ ***A receipt that reads where it should run would not have found this.*** *I have
+spent two revisions narrowing gates whose subject is another receipt's whole run, and this is the
+counter-case: the broad form caught a crash that no narrow one would have. **The distinction I would
+now draw is between a gate that runs other receipts to make a CLAIM about them and one that runs them
+as a SWEEP — the first should be narrowed to its subject, the second should not be narrowed at all.***
+
+## ⛭⛭⛭ AND THE FACT BEHIND THE CRASH IS THE CAMPAIGN'S, NOT MINE
+
+***The bare `UNADJUDICATED` bucket is EMPTY. `33` keys remain in the whole ledger and every one of them
+is `UNADJUDICATED-PINNED`.***
+
+⌈ *So `r7299`'s "`45` bare keys remain and `37` of them are these" is now `0`, and the `37` are the
+`38` I landed at `r7300`.* ⌊ ⚠ *What I have NOT done: swept this line's other receipts for the same
+sub-form — a ratio or a floor over a set the ordered work can exhaust. **`cc66` named two instances,
+this is a third, and the class is live and uncounted. I will take that sweep as a revision if you want
+it; I am not running it unasked because it reads other seats' receipts as well as mine.***

@@ -333,11 +333,22 @@ MINE_INTRODUCED_BY_CLEARER = sum(
     1 for p in MINE_CLEARED_NOW
     if _CLEARER in _git('log', '--diff-filter=A', '--format=%s', '--', p))
 
+_share_pass = (f"{len(MINE_AT_PASS) / len(CARRY_AT_PASS):.1%}" if CARRY_AT_PASS
+               else "n/a -- the bare bucket was EMPTY")
 print(f"    at the pin {PASS_PIN}: {len(_at_pass_keys)} key(s) across {len(CARRY_AT_PASS)} "
-      f"receipt(s), {len(MINE_AT_PASS)} of them this line's "
-      f"({len(MINE_AT_PASS) / len(CARRY_AT_PASS):.1%})")
+      f"receipt(s), {len(MINE_AT_PASS)} of them this line's ({_share_pass})")
+# ⛔⛭⛭ r7304+60: THIS LINE DIVIDED BY A LIVE BACKLOG AND THE BACKLOG REACHED ZERO, so the receipt
+#   CRASHED -- not went red -- on the campaign succeeding.  ** The purest instance of the
+#   fail-on-success family this line has found: the quantity in the denominator is the thing the work
+#   is removing, so the report is undefined exactly when the work is done. **
+#   ⌗ `UNADJUDICATED` is matched EXACTLY here and the `33` keys that remain all read
+#   `UNADJUDICATED-PINNED`, so the bare bucket is empty and `CARRY` is the empty set.
+#   ⇒ *The share is REPORTED as undefined rather than computed, and every gate below was already
+#   monotone, so nothing but the print had to change.  A guard whose failure mode is a crash reports
+#   nothing, which is `r7297`'s reading of `S28`'s `TypeError` and the same face again.*
+_share_now = f"{len(MINE_NOW) / len(CARRY):.1%}" if CARRY else "n/a -- the bare bucket is EMPTY"
 print(f"    live             : {len(UNADJ)} key(s) across {len(CARRY)} receipt(s), "
-      f"{len(MINE_NOW)} of them this line's ({len(MINE_NOW) / len(CARRY):.1%})")
+      f"{len(MINE_NOW)} of them this line's ({_share_now})")
 print(f"    receipts that stopped carrying since the pin: {len(CLEARED_SINCE)}, "
       f"{sum(1 for p in CLEARED_SINCE if p.startswith(MINE_DIR))} of them this line's", flush=True)
 print(f"    at the branch {BRANCH_PIN}, where this was measured: {len(CLEARED_AT_BRANCH)} had "
@@ -387,8 +398,18 @@ gate("Ⓓ①  ⚠ `2170` keys remained at this revision, across `340` receipts, 
 #   ⌗ 60's wording is kept; the condition and this note are cc66's, and the change is routed to 60
 #     through 66 rather than settled here.
 _mine_pin, _carry_pin = AT_PASS[2], AT_PASS[1]
+# ⛔⛭⛭ r7304+60: AND THE PRINT WAS STILL DIVIDING AFTER THE PREDICATE WAS REPAIRED.  cc66's note
+#   above gets this exactly right -- *a ratio needs a denominator and completing an order removes it*
+#   -- and repaired the CONDITION to be monotone with no floor.  ** The report beside it went on
+#   computing the ratio, so when the bare bucket actually reached zero the receipt CRASHED on the line
+#   that says `printed and not asserted`. **
+#   ⇒ *`S32` was the other way round: the prose was honest and the predicate was not.  Here the
+#   predicate was repaired and the print was not, and a crash reports nothing at all -- so the two
+#   halves of a gate have to be repaired together or the unrepaired half decides.*
+_share_live = (f"{100.0 * len(MINE_NOW) / len(CARRY):.0f} per cent" if CARRY
+               else "no per cent -- the bare bucket is EMPTY, which is what order ② was for")
 print(f"      ⌗ live, printed and not asserted: {len(MINE_NOW)} of {len(CARRY)} carrying receipts "
-      f"are this line's ({100.0 * len(MINE_NOW) / len(CARRY):.0f} per cent); at the pin it was "
+      f"are this line's ({_share_live}); at the pin it was "
       f"{_mine_pin} of {_carry_pin} ({100.0 * _mine_pin / _carry_pin:.0f} per cent)")
 gate("Ⓓ②  and most of what remained was still another seat's -- AT THIS PASS'S OWN PIN this line's"
      " paper directory carried a MINORITY of the receipts holding unadjudicated keys, 93 of 340."
