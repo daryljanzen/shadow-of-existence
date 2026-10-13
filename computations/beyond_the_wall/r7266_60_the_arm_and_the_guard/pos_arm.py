@@ -133,7 +133,11 @@ def dangles_pos(lit):
     r, a = det_ratio(h), det_after_ratio(h)
     if r is None or a is None:
         return False
-    return r < THR and a > ATHR and not D.names_own_subject_by_determiner(lit)
+    #: ⛔⛭⛭ r7298+60, on r7289's 78th member: this arm asks whether the span NAMES ITS OWN SUBJECT, so
+    #: it is a SUBJECT TEST and takes the full closed determiner class.  Before r7294 it reached the
+    #: demonstrative-only exemption through the unscoped name --- the borrowed-exemption defect, here
+    #: in this line's OWN caller, and the signature change is what surfaced it.
+    return r < THR and a > ATHR and not D.names_own_subject(lit)
 
 
 def main():
