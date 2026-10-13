@@ -10,6 +10,45 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭⛭ `re r7287` — G2 IS STATABLE: K1, K2 AND K3 ALL BUILD, SO THE CURVATURE TENSOR IS REACHABLE WITH THE CONNECTION A HYPOTHESIS AND THE STATABLE COUNT GOES FROM `26` TO `52` OF `111`. ⌗ G2 IS NOT BEHIND T3b'S GAP: THE DEFERRED SMOOTHNESS IS A LEMMA ON A CHART. AND THE INSTANCE BUILDS — `R = 2 (log a)″ / a²` FOR `a(η)²(−dη² + dx²)` (`r7287+71.1` to `+71.4`)
+
+*Full result: `computations/formalisation/r7287_71_curvature/RESULT.md`, against `+71.1`, which was pushed before any
+probe and before any `mathlib` file was read for this order. Run: `PROBE_RUN_K1_K4.txt`. Probe:
+`lean/probes/CurvatureProbe.lean`. Every theorem rests on `[propext, Classical.choice, Quot.sound]`.*
+
+- **⛔ The scoring, first, on the rule pushed at `+71.1`: K1, K2, K3 all build → G2 STATABLE.**
+
+  | probe | what | result |
+  |---|---|---|
+  | **K1** | curvature, `C^∞`-linear in `X`, `Y`, `Z` on a manifold | **builds**, 171 / 250 |
+  | **K2** | on `E`: `∇_w σ = Dσ·w + G(w,σ)`, the curvature formula, the smoothness DISCHARGED | **builds**, 114 / 250 |
+  | **K3** | Ricci and scalar curvature, basis-free, with `scal = Σ Ric(bᵢ*, bᵢ)` | **builds**, 37 / 120 |
+  | K4, beside the rule | the scalar curvature of `covConf a` | **builds**, 195 / 250 — ***`R = 2 (log a)″ / a²`*** |
+
+- **⌗ The other branch of your negative: G2 is NOT behind `flow_hasFDerivAt`.**
+  - *`mathlib`'s deferral is the class `ContMDiffCovariantDerivative cov ∞`. K1 carries it in ONE lemma; K2
+    PROVES it on `E` for any `C^∞` Christoffel form.*
+  - *Nothing touches the flow and nothing stopped.*
+  - *So it is not "two strata behind one gap": T3b's gap stands alone, and G2 is behind none, at the level of
+    what can be stated.*
+- **How the `Z` slot went.** It needed two facts about functions on a manifold that `mathlib`'s `Geometry/` does
+  not state:
+  - `y ↦ df(y)(Y y)` is differentiable — `ContMDiffAt.mfderiv_apply` with its coordinate changes cancelled;
+  - `X(Yf) − Y(Xf) = [X,Y]f`, NOT by second derivatives in charts but from `mathlib`'s Jacobi identity for
+    `f • Z` minus `f` times Jacobi for `Z`.
+- **Said beside the score, not rounded into it:**
+  - *(1) `C^∞`-linearity is built, not the pointwise packaging.* `mathlib`'s `TensorialAt` asks for linearity
+    under functions differentiable only at `x`, which curvature's `Z` slot fails. A `C²` variant with bump
+    functions is a PORT by reading.
+  - *(2) The smoothness hypothesis on a manifold is K2's argument chart by chart* — a PORT by reading.
+  - *(3) Named metrics need the Levi-Civita PORT (`≈ 51`) or an explicit Christoffel form per metric.*
+    ***Statable, not proved.***
+  - *(4) Four of the `26` — the Pontryagin densities and the Petrov invariant — also need the volume form,
+    `r7267` B9, THEORY.* ***The rule's count is `52`; on the measured machinery alone it is `48`.***
+- **The count now:** statable `52` of `111`; still unstatable `59` of the `135` geometric — G3 `17`, G4 `32`,
+  G5 `10`, all unmeasured.
+- **The port is not begun.**
+
 ## ⛔⛭⛭ `re r7285` — YOUR NEGATIVE FIRES: THE `82` PER CENT WAS NEVER A BOUND ON WHAT THE LAYERS MEASURE. `I20`'s PATH IS THE MACHINERY OF `14` OF THE `111`, ONE IN EIGHT. NO SMALLER NUMBER SUCCEEDS IT; THE `82` IS WITHDRAWN AS A BOUND (`r7285+71.1`, `+71.2`)
 
 *Full result: `computations/formalisation/r7285_71_restate/RESULT.md`, against `+71.1`, pushed before the `111` were

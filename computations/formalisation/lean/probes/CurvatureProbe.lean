@@ -2,6 +2,8 @@ import Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Basic
 import Mathlib.Geometry.Manifold.VectorBundle.Hom
 import Mathlib.Geometry.Manifold.VectorBundle.Tangent
 import Mathlib.Geometry.Manifold.VectorField.LieBracket
+import Mathlib.LinearAlgebra.Trace
+import Mathlib.LinearAlgebra.BilinearForm.Properties
 
 /-!
 # Probe K1 of `r7287+71.1`: the curvature tensor, the connection a hypothesis
@@ -281,6 +283,239 @@ theorem contMDiffCov_model (hGs : ContDiff ℝ ∞ G) :
 
 end Model
 
+/-! ## Probe K3 — Ricci and scalar curvature over one fibre -/
+
+section Fibre
+
+variable {V : Type*} [AddCommGroup V] [Module ℝ V] [FiniteDimensional ℝ V]
+
+/-- **K-D.** The Ricci form of a curvature-type map `R`: `Ric(u, v) = tr (w ↦ R(w, u) v)`. -/
+noncomputable def ricci (R : V →ₗ[ℝ] V →ₗ[ℝ] V →ₗ[ℝ] V) : V →ₗ[ℝ] V →ₗ[ℝ] ℝ :=
+  LinearMap.mk₂ ℝ (fun u v => LinearMap.trace ℝ V ((R.flip u).flip v))
+    (fun u u' v => by
+      rw [show (R.flip (u + u')).flip v = (R.flip u).flip v + (R.flip u').flip v by ext; simp,
+        map_add])
+    (fun c u v => by
+      rw [show (R.flip (c • u)).flip v = c • (R.flip u).flip v by ext; simp, map_smul,
+        smul_eq_mul])
+    (fun u v v' => by simp [map_add, LinearMap.flip_apply])
+    (fun c u v => by simp [map_smul, LinearMap.flip_apply])
+
+lemma ricci_apply (R : V →ₗ[ℝ] V →ₗ[ℝ] V →ₗ[ℝ] V) (u v : V) :
+    ricci R u v = LinearMap.trace ℝ V ((R.flip u).flip v) := rfl
+
+/-- **K-E.** The scalar curvature: the trace of `g⁻¹ ∘ Ric`, through a nondegenerate form `g`. Basis-free. -/
+noncomputable def scal (R : V →ₗ[ℝ] V →ₗ[ℝ] V →ₗ[ℝ] V) (g : LinearMap.BilinForm ℝ V)
+    (hg : g.Nondegenerate) : ℝ :=
+  LinearMap.trace ℝ V ((g.toDual hg).symm.toLinearMap ∘ₗ ricci R)
+
+/-- What `scal` is, in any basis: `Σᵢ Ric(bᵢ*, bᵢ)`, with `b*` the `g`-dual basis. -/
+theorem scal_eq_sum {ι : Type*} [Fintype ι] [DecidableEq ι] (R : V →ₗ[ℝ] V →ₗ[ℝ] V →ₗ[ℝ] V)
+    (g : LinearMap.BilinForm ℝ V) (hg : g.Nondegenerate) (b : Module.Basis ι ℝ V) :
+    scal R g hg = ∑ i, ricci R (g.dualBasis hg b i) (b i) := by
+  rw [scal, LinearMap.trace_eq_matrix_trace ℝ (g.dualBasis hg b), Matrix.trace]
+  refine Finset.sum_congr rfl fun i _ => ?_
+  rw [Matrix.diag_apply, LinearMap.toMatrix_apply, LinearMap.BilinForm.dualBasis_repr_apply,
+    LinearMap.comp_apply, LinearEquiv.coe_coe, LinearMap.BilinForm.apply_toDual_symm_apply]
+
+end Fibre
+
+/-! ## Probe K4 — the instance: the scalar curvature of `covConf a`, the programme's 2D conformal metric
+
+R3's connection for `a(η)²(−dη² + dx²)` is copied verbatim from `ConformalLCProbe.lean`; the copied lines count
+against K4's budget. -/
+
+section Instance
+
+/-- `−dη² + dx²`. Copied from `ConformalLCProbe.lean`. -/
+noncomputable def minkForm : ℝ × ℝ →L[ℝ] ℝ × ℝ →L[ℝ] ℝ :=
+  -((ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.fst ℝ ℝ ℝ)
+      (ContinuousLinearMap.fst ℝ ℝ ℝ))
+    + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.snd ℝ ℝ ℝ)
+      (ContinuousLinearMap.snd ℝ ℝ ℝ)
+
+lemma minkForm_apply (v w : ℝ × ℝ) : minkForm v w = -(v.1 * w.1) + v.2 * w.2 := by
+  simp [minkForm]
+
+/-- `φ′ = a′/a` at `p`. -/
+noncomputable def phi' (a : ℝ → ℝ) (p : ℝ × ℝ) : ℝ := deriv a p.1 / a p.1
+
+/-- `Γ_p(·, w)`. -/
+noncomputable def Gam (a : ℝ → ℝ) (p w : ℝ × ℝ) : ℝ × ℝ →L[ℝ] ℝ × ℝ :=
+  phi' a p • ((ContinuousLinearMap.fst ℝ ℝ ℝ).smulRight w + w.1 • ContinuousLinearMap.id ℝ (ℝ × ℝ)
+    + (minkForm.flip w).smulRight ((1 : ℝ), (0 : ℝ)))
+
+lemma Gam_apply (a : ℝ → ℝ) (p w v : ℝ × ℝ) :
+    Gam a p w v = phi' a p • (v.1 • w + w.1 • v + minkForm v w • ((1 : ℝ), (0 : ℝ))) := by
+  simp [Gam]
+
+lemma Gam_symm (a : ℝ → ℝ) (p v w : ℝ × ℝ) : Gam a p w v = Gam a p v w := by
+  rw [Gam_apply, Gam_apply, minkForm_apply, minkForm_apply]
+  ext <;> simp <;> ring
+
+lemma Gam_add (a : ℝ → ℝ) (p w w' : ℝ × ℝ) : Gam a p (w + w') = Gam a p w + Gam a p w' := by
+  refine ContinuousLinearMap.ext fun v => ?_
+  rw [ContinuousLinearMap.add_apply, Gam_apply, Gam_apply, Gam_apply]
+  simp only [minkForm_apply]; ext <;> simp <;> ring
+
+lemma Gam_smul (a : ℝ → ℝ) (p w : ℝ × ℝ) (c : ℝ) : Gam a p (c • w) = c • Gam a p w := by
+  refine ContinuousLinearMap.ext fun v => ?_
+  rw [ContinuousLinearMap.smul_apply, Gam_apply, Gam_apply]
+  simp only [minkForm_apply]; ext <;> simp <;> ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- On `ℝ × ℝ` as a manifold, a section differentiable in the bundle sense is differentiable. -/
+/- The models are written out: for `M = ℝ × ℝ` the `MDiffAt`/`T%` notation infers the PRODUCT model
+`𝓘(ℝ, ℝ).prod 𝓘(ℝ, ℝ)`, while `CovariantDerivative 𝓘(ℝ, ℝ × ℝ) …` fixes `𝓘(ℝ, ℝ × ℝ)`. -/
+lemma diff_of_mdiff {σ : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p} {x : ℝ × ℝ}
+    (h : MDifferentiableAt 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ × ℝ).tangent
+      (fun y => (⟨y, σ y⟩ : TangentBundle 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ))) x) :
+    DifferentiableAt ℝ (fun y => (σ y : ℝ × ℝ)) x := by
+  rw [mdifferentiableAt_totalSpace] at h
+  obtain ⟨-, h2⟩ := h
+  have : (fun y => (trivializationAt (ℝ × ℝ) (TangentSpace 𝓘(ℝ, ℝ × ℝ)) x ⟨y, σ y⟩).2)
+      = fun y => (σ y : ℝ × ℝ) := by
+    funext y; simp
+  rw [this] at h2
+  exact mdifferentiableAt_iff_differentiableAt.mp h2
+
+/-- The connection's underlying function: `∇_v Y (p) = DY(p) v + Γ_p(v, Y p)`. -/
+noncomputable def covFun (a : ℝ → ℝ) (Y : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p) (p : ℝ × ℝ) :
+    TangentSpace 𝓘(ℝ, ℝ × ℝ) p →L[ℝ] TangentSpace 𝓘(ℝ, ℝ × ℝ) p :=
+  fderiv ℝ (Y : ℝ × ℝ → ℝ × ℝ) p + Gam a p (Y p)
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **R3 (B8), part 1.** It is a covariant derivative. -/
+noncomputable def covConf (a : ℝ → ℝ) :
+    CovariantDerivative 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ) (TangentSpace 𝓘(ℝ, ℝ × ℝ) : ℝ × ℝ → Type _) where
+  toFun := covFun a
+  isCovariantDerivativeOnUniv :=
+    { add := by
+        intro σ σ' x hσ hσ' _
+        simp only [covFun]
+        rw [show ((σ + σ' : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p) : ℝ × ℝ → ℝ × ℝ)
+          = (σ : ℝ × ℝ → ℝ × ℝ) + (σ' : ℝ × ℝ → ℝ × ℝ) from rfl,
+          fderiv_add (diff_of_mdiff (σ := σ) (x := x) hσ) (diff_of_mdiff (σ := σ') (x := x) hσ')]
+        rw [show (σ + σ') x = σ x + σ' x from rfl, Gam_add]
+        abel
+      leibniz := by
+        intro σ g x hσ hg _
+        simp only [covFun]
+        have hgd : DifferentiableAt ℝ g x := mdifferentiableAt_iff_differentiableAt.mp hg
+        rw [show ((g • σ : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p) : ℝ × ℝ → ℝ × ℝ)
+          = fun y => g y • (σ : ℝ × ℝ → ℝ × ℝ) y from rfl,
+          fderiv_fun_smul hgd (diff_of_mdiff (σ := σ) (x := x) hσ)]
+        beta_reduce
+        rw [Gam_smul]
+        simp only [mvfderiv_eq_fderiv]
+        refine ContinuousLinearMap.ext fun v => ?_
+        simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply,
+          ContinuousLinearMap.smulRight_apply, ContinuousLinearMap.coe_comp',
+          Function.comp_apply, smul_add]
+        show g x • fderiv ℝ (fun y => (show ℝ × ℝ from σ y)) x v
+            + fderiv ℝ g x v • (show ℝ × ℝ from σ x) + g x • Gam a x (σ x) v
+          = g x • fderiv ℝ (fun y => (show ℝ × ℝ from σ y)) x v + g x • Gam a x (σ x) v
+            + fderiv ℝ g x v • (show ℝ × ℝ from σ x)
+        abel }
+
+lemma covConf_apply (a : ℝ → ℝ) (Y : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p) (p v : ℝ × ℝ) :
+    covConf a Y p v = fderiv ℝ (Y : ℝ × ℝ → ℝ × ℝ) p v + Gam a p (Y p) v := rfl
+
+set_option backward.isDefEq.respectTransparency false in
+lemma mlieBracket_const₂ (u v p : ℝ × ℝ) :
+    mlieBracket 𝓘(ℝ, ℝ × ℝ) (fun _ => (u : ℝ × ℝ)) (fun _ => (v : ℝ × ℝ)) p = 0 := by
+  rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ,
+    lieBracket_eq]
+  simp
+
+/-- `(log a)″` at `p`. -/
+noncomputable def phi'' (a : ℝ → ℝ) (p : ℝ × ℝ) : ℝ := deriv (fun t => deriv a t / a t) p.1
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **The curvature of `covConf a`**, on constant fields: `R(u,v)w = (log a)″ (u₁v₂ − u₂v₁) (w₂, w₁)`. -/
+theorem curv_conf (a : ℝ → ℝ) (p u v w : ℝ × ℝ)
+    (hd : DifferentiableAt ℝ (fun t => deriv a t / a t) p.1) :
+    curv (covConf a) (fun _ => u) (fun _ => v) (fun _ => w) p
+      = (phi'' a p * (u.1 * v.2 - u.2 * v.1)) • (w.2, w.1) := by
+  have hphi : HasFDerivAt (phi' a) ((phi'' a p) • ContinuousLinearMap.fst ℝ ℝ ℝ) p :=
+    hd.hasDerivAt.comp_hasFDerivAt p (hasFDerivAt_fst)
+  have hD : ∀ K d : ℝ × ℝ, fderiv ℝ (fun y => phi' a y • K) p d = (phi'' a p * d.1) • K :=
+    fun K d => by rw [(hphi.smul_const K).fderiv]; simp [mul_comm]
+  have h0 : ∀ (y c : ℝ × ℝ), fderiv ℝ (fun _ : ℝ × ℝ => (w : ℝ × ℝ)) y c = 0 := by simp
+  unfold curv
+  simp only [covConf_apply, h0, zero_add, Gam_apply, minkForm_apply, hD, mlieBracket_const₂,
+    map_zero, sub_zero]
+  have fa : ∀ x y : TangentSpace 𝓘(ℝ, ℝ × ℝ) p, (x + y).1 = x.1 + y.1 ∧ (x + y).2 = x.2 + y.2 :=
+    fun _ _ => ⟨rfl, rfl⟩
+  have fs : ∀ x y : TangentSpace 𝓘(ℝ, ℝ × ℝ) p, (x - y).1 = x.1 - y.1 ∧ (x - y).2 = x.2 - y.2 :=
+    fun _ _ => ⟨rfl, rfl⟩
+  have fm : ∀ (c : ℝ) (x : TangentSpace 𝓘(ℝ, ℝ × ℝ) p), (c • x).1 = c * x.1 ∧ (c • x).2 = c * x.2 :=
+    fun _ _ => ⟨rfl, rfl⟩
+  refine Prod.ext ?_ ?_ <;>
+    simp only [fun x y => (fa x y).1, fun x y => (fa x y).2, fun x y => (fs x y).1,
+      fun x y => (fs x y).2, fun c x => (fm c x).1, fun c x => (fm c x).2, Prod.fst_add,
+      Prod.snd_add, Prod.smul_fst, Prod.smul_snd, smul_eq_mul, Prod.fst_sub, Prod.snd_sub] <;> ring
+
+/-- `det(u, v) = u₁v₂ − u₂v₁`. -/
+noncomputable def det2 : (ℝ × ℝ) →ₗ[ℝ] (ℝ × ℝ) →ₗ[ℝ] ℝ :=
+  LinearMap.mk₂ ℝ (fun u v => u.1 * v.2 - u.2 * v.1) (fun _ _ _ => by simp; ring)
+    (fun _ _ _ => by simp; ring) (fun _ _ _ => by simp; ring) (fun _ _ _ => by simp; ring)
+
+/-- The curvature of `covConf a` at `p`, as a trilinear map. -/
+noncomputable def Rconf (a : ℝ → ℝ) (p : ℝ × ℝ) :
+    (ℝ × ℝ) →ₗ[ℝ] (ℝ × ℝ) →ₗ[ℝ] (ℝ × ℝ) →ₗ[ℝ] (ℝ × ℝ) :=
+  phi'' a p • det2.compr₂ (LinearMap.smulRight LinearMap.id
+    ((LinearMap.snd ℝ ℝ ℝ).prod (LinearMap.fst ℝ ℝ ℝ)))
+
+lemma Rconf_apply (a : ℝ → ℝ) (p u v w : ℝ × ℝ) :
+    Rconf a p u v w = (phi'' a p * (u.1 * v.2 - u.2 * v.1)) • (w.2, w.1) := by
+  simp [Rconf, det2, mul_smul]
+
+/-- `Rconf` IS the curvature of `covConf a`, on constant fields. -/
+theorem Rconf_eq_curv (a : ℝ → ℝ) (p u v w : ℝ × ℝ)
+    (hd : DifferentiableAt ℝ (fun t => deriv a t / a t) p.1) :
+    Rconf a p u v w = curv (covConf a) (fun _ => u) (fun _ => v) (fun _ => w) p := by
+  rw [Rconf_apply, curv_conf a p u v w hd]
+
+/-- `a(η)²(−dη² + dx²)` at `p`, as a bilinear form. -/
+noncomputable def gB (a : ℝ → ℝ) (p : ℝ × ℝ) : LinearMap.BilinForm ℝ (ℝ × ℝ) :=
+  LinearMap.mk₂ ℝ (fun v w => a p.1 ^ 2 * (-(v.1 * w.1) + v.2 * w.2)) (fun _ _ _ => by simp; ring)
+    (fun _ _ _ => by simp; ring) (fun _ _ _ => by simp; ring) (fun _ _ _ => by simp; ring)
+
+lemma gB_nondeg (a : ℝ → ℝ) (p : ℝ × ℝ) (ha : a p.1 ≠ 0) : (gB a p).Nondegenerate := by
+  refine ⟨fun m hm => ?_, fun m hm => ?_⟩
+  · have h1 := hm (1, 0); have h2 := hm (0, 1)
+    simp [gB, ha] at h1 h2; exact Prod.ext h1 h2
+  · have h1 := hm (1, 0); have h2 := hm (0, 1)
+    simp [gB, ha] at h1 h2; exact Prod.ext h1 h2
+
+lemma dual_conf (a : ℝ → ℝ) (p : ℝ × ℝ) (ha : a p.1 ≠ 0) (i : Fin 2) :
+    (gB a p).dualBasis (gB_nondeg a p ha) (Module.Basis.finTwoProd ℝ) i
+      = ![(-1 / a p.1 ^ 2, 0), (0, 1 / a p.1 ^ 2)] i := by
+  refine ((gB a p).dualBasis (gB_nondeg a p ha) (Module.Basis.finTwoProd ℝ)).ext_elem fun j => ?_
+  rw [Module.Basis.repr_self, LinearMap.BilinForm.dualBasis_repr_apply]
+  fin_cases i <;> fin_cases j <;> simp [gB] <;> field_simp
+
+/-- **The Ricci form of `covConf a`:** `Ric = (log a)″ (−dη² + dx²)`. -/
+lemma ricci_conf (a : ℝ → ℝ) (p u v : ℝ × ℝ) :
+    ricci (Rconf a p) u v = phi'' a p * (-(u.1 * v.1) + u.2 * v.2) := by
+  rw [ricci_apply, LinearMap.trace_eq_matrix_trace ℝ (Module.Basis.finTwoProd ℝ), Matrix.trace_fin_two]
+  simp [LinearMap.toMatrix_apply, Rconf_apply]
+  ring
+
+/-- **K-G. The scalar curvature of `a(η)²(−dη² + dx²)`, through its explicit connection `covConf a`:**
+`R = 2 (log a)″ / a²`. -/
+theorem scal_conf (a : ℝ → ℝ) (p : ℝ × ℝ) (ha : a p.1 ≠ 0) :
+    scal (Rconf a p) (gB a p) (gB_nondeg a p ha) = 2 * phi'' a p / a p.1 ^ 2 := by
+  rw [scal_eq_sum _ _ _ (Module.Basis.finTwoProd ℝ), Fin.sum_univ_two, dual_conf a p ha,
+    dual_conf a p ha,
+    ricci_conf, ricci_conf]
+  simp
+  field_simp
+  ring
+
+end Instance
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -289,3 +524,7 @@ end ShadowProbe
 #print axioms ShadowProbe.cov_model
 #print axioms ShadowProbe.curv_model
 #print axioms ShadowProbe.contMDiffCov_model
+#print axioms ShadowProbe.scal_eq_sum
+#print axioms ShadowProbe.curv_conf
+#print axioms ShadowProbe.Rconf_eq_curv
+#print axioms ShadowProbe.scal_conf
