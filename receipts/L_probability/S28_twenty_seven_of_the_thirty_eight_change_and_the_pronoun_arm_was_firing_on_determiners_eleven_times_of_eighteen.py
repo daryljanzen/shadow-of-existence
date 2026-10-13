@@ -383,7 +383,11 @@ def names_subject_by_any_determiner(lit, finite=D._FIN_ANY):
     return bool(finite.search(' '.join(w[2:])))
 
 
-_demo = [l for l in _stood_lits if D.names_own_subject_by_determiner(l)]
+#: ⛔ r7298+60: this call was UNSCOPED and `r7294`'s repair made it RAISE.  The scope it wants is
+#: the DEMONSTRATIVE one, because this gate's whole point is to contrast the adopted narrow form
+#: against the wide one --- so the name is now explicit and the measured `3` is unchanged.
+_demo = [l for l in _stood_lits
+         if D.names_own_subject_by_determiner(l, within='leading-dangling-arm')]
 _anydet = [l for l in _stood_lits if names_subject_by_any_determiner(l)]
 _narrower = not D._DET.match('a symmetry-breaking modulus is the adjustable parameter') \
     and bool(_DET_ALL.match('a symmetry-breaking modulus is the adjustable parameter'))

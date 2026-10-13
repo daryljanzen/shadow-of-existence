@@ -218,12 +218,43 @@ gate('Ⓑ⑦ ⌗ and the `6` that remain are in `3` receipts whose introducing c
 print('\n── Ⓒ  ② THE ARM, ITS TWO AXES, AND THE ORDER\'S THRESHOLD ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 _ADOPTED = 'computations/beyond_the_wall/r7260_60_land_and_verdict/dangling_predicate_v2.py'
-_h_now = hashlib.sha256(read(_ADOPTED).encode()).hexdigest()
-_h_then = hashlib.sha256((at_before(_ADOPTED) or '').encode()).hexdigest()
-gate(f'Ⓒ① ⛭⛭ THE BURDEN IS DISCHARGED BY HASH AND NOT BY INTENTION: the adopted word list is '
-     f'BYTE-FOR-BYTE what it was, so `r7257`\'s and `r7258`\'s figures stay reproducible from it '
-     f'(`{_h_now[:16]}`)',
-     _h_now == _h_then)
+# ⛔⛭⛭ REPAIRED r7298+60.  This gate hashed the WHOLE MODULE FILE and called the result `the adopted
+#   word list is BYTE-FOR-BYTE what it was`.  ** The claim is about the WORD LIST; the hash was about
+#   the FILE. **  So `r7289`'s ordered repair to the exemption's SCOPE --- which did not touch a word
+#   of the list --- turned this gate red without the claim having become false, and the runner-read
+#   sweep is what found it.
+#   ⇒ *** A gate that pins the FORM implementing a property is not a weaker gate, it is a gate making
+#       a different claim. *** The burden is now discharged on the word LISTS themselves, hashed out of
+#       the module at both commits, AND on the arms' BEHAVIOUR over a fixed corpus of literals --- which
+#       is what `r7257`'s and `r7258`'s figures actually rest on.
+_then_src = at_before(_ADOPTED) or ''
+_ns_now, _ns_then = {}, {}
+exec(compile(read(_ADOPTED), 'adopted@now', 'exec'), _ns_now)
+exec(compile(_then_src, 'adopted@then', 'exec'), _ns_then)
+
+
+def _wordlists(ns):
+    return '\x1f'.join([ns['FINITE'], ns['LEAD'].pattern, ns['TRAIL'].pattern,
+                        '\x1e'.join(sorted(ns['_FUNC']))])
+
+
+_h_now = hashlib.sha256(_wordlists(_ns_now).encode()).hexdigest()
+_h_then = hashlib.sha256(_wordlists(_ns_then).encode()).hexdigest()
+_PROBE = ['is not a Lie algebra', 'that sector can be specified, and is obstructed twice',
+          'a symmetry-breaking modulus is the adjustable parameter', 'non-geometric but',
+          'not need a lower bound', 'The cosmology carries no early-universe parameter',
+          'carries a single moving part', 'extends to the unpolarised case']
+_ARMS = ['dangles_leading_adopted', 'dangles_leading', 'dangles_trailing', 'dangles_negated',
+         'dangles']
+_moved = [(a, l) for a in _ARMS for l in _PROBE if _ns_then[a](l) != _ns_now[a](l)]
+gate(f'Ⓒ① ⛭⛭ THE BURDEN IS DISCHARGED ON THE WORD LISTS AND ON THE ARMS\' BEHAVIOUR, NOT ON THE '
+     f'FILE\'S BYTES: the adopted lists are byte-for-byte what they were (`{_h_now[:16]}`) and all '
+     f'`{len(_ARMS)}` arms agree on every one of the `{len(_PROBE)}` probe literals before and after '
+     f'(`{len(_moved)}` moved), so `r7257`\'s and `r7258`\'s figures stay reproducible.  ** The first '
+     f'form of this gate hashed the whole FILE and so went red on `r7289`\'s ordered repair to the '
+     f'exemption\'s SCOPE, which did not touch a word of the list --- a gate pinning the FORM of a '
+     f'property rather than the property **',
+     _h_now == _h_then and not _moved)
 
 _arm = run('computations/beyond_the_wall/r7266_60_the_arm_and_the_guard/pos_arm.py')
 _a1 = re.search(r'axis ONE.*?verbs ([\d.]+) vs nouns ([\d.]+)', _arm.stdout)
