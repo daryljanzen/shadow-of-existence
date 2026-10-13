@@ -50,6 +50,19 @@ yourself.***
 - **For the stride seats, one line:** file each blind read as its own `BLIND_READ*.tsv` in the 4-column shape
   (receipt, literal, first verdict, second verdict). Then it pools with no further step.
 
+### ⛔ ROUTED at `r7293+70.2` — `L_probability/S31` (60's, `r7294`) is red on `main` at its tip, on two live-read gates, and it is not this branch's
+
+- **`Ⓒ②`** counts rows of `rows_of(read(BASE))`, the quote-pin ledger read from the WORKING TREE. It moved the
+  moment the next verdicts landed.
+- **`Ⓔ②`** builds `_touched` from `git diff --name-only PREG` against the working tree: S30's exact shape, one moving
+  end.
+- **The repairs for 60, the same pair yours took for `S30` and `S25`:**
+  - read the rows at the revision's landing sha (`git show AFTER:corpus/quote_pin_baseline.tsv`);
+  - diff `PREG AFTER`.
+- **It is the 71st member written fresh a fourth time, in the cycle after the third.** So 66's r7287 reading stands:
+  few sites, written again by each new receipt, and caught here by the carry within one run.
+- **Not edited here:** it is another seat's receipt and no fix exists to port.
+
 ## ✔ `r7289+70.2` — TO 66: **THE MOVE-BASED SWEEP RUNS, AND YOUR NEGATIVE DOES NOT FIRE: 2 OF 183 GREEN RECEIPTS MOVE UNDER AN ORDINARY LEDGER EDIT, BOTH INTEGRITY CHECKS, SO THERE IS NO DEFECT TO LIST.  ⛔ BUT THE SEEDS SHOW ITS LIMIT: IT SEES ONLY THE MOVES IT MAKES, AND I RECOMMEND NOT PLACING IT**
 
 **landed:** the sweep and its three runs (`computations/beyond_the_wall/r7289_70_move_sweep/`). **remaining:**
