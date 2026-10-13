@@ -215,14 +215,23 @@ _m14 = open(_p14, encoding="utf-8", errors="replace").read()
 #   convention footnote's surviving clause.  Re-pointed there, and at the independence that now
 #   carries the three-dimensional span, and the word is asserted ABSENT so the refuted reason
 #   cannot quietly return. **
-assert ("at distinct points of the throat circle, and each vantage's signed areal radius vanishes "
-        "at its own and at neither of the others") in _m14, \
+# ⛭ r7293+cc66: widened left by six words.  The old span opened on the preposition `at` and
+#   its subject -- the three walls, one per hinge -- sat outside it.  And the history makes the
+#   repair clear: this pin is r6931's RE-POINT of a span that had FROZEN AN ERROR, so the clause
+#   was chosen deliberately and then cut at the wrong edge.
+assert ("There are three, one per hinge, at distinct points of the throat circle, and each "
+        "vantage's signed areal radius vanishes at its own and at neither of the others") in _m14, \
     "P14 must still carry the three-walls clause -- if this fires the premise is lost from the corpus"
 assert "e \\emph{distinct} loci, so the wall-bound zero-modes are linearly independent and span a three-dimensional space" in _m14, \
     "P14 must carry the three-dimensional span on the TRUE reason, linear independence"
 assert "disjoint support" not in _m14, \
     "P14 has regained 'disjoint support', which r6748 refuted -- route it, do not re-pin to it"
-assert "unfixed arbitrary modulus" in _m14, \
+# ⛭ r7293+cc66: widened to the exclusion sentence.  `unfixed arbitrary modulus` has TWO sites
+#   in P14 and the second -- "A construction carrying an unfixed arbitrary modulus is exactly
+#   what that principle excludes" -- carries no one-hinge truncation at all, so the old span was
+#   satisfied by a site this check's own message does not concern.
+assert ("A one-hinge truncation is excluded not as disfavoured but as carrying an unfixed "
+        "arbitrary modulus") in _m14, \
     "P14 must still carry the one-hinge exclusion in its own voice"
 
 # ⓶ WHAT WAS LOST, asserted as a FACT so the loss is checkable and cannot be quietly reversed
@@ -260,11 +269,21 @@ assert _CONDITIONAL in _tex, \
 #     *So the vacuum half is intact and BETTER bounded, while the matter half is no longer P3's to
 #     state.  Both halves changed in the same direction, which is what makes r4035 a coherent pass
 #     rather than an accident.*
-_VACUUM = "construction of this paper they are equivalent vantages"
+# ⛭ r7293+cc66: the TWO pins on P3's vacuum clause are MERGED into the one span that carries
+#   both and names its subject.  `construction of this paper they are equivalent vantages` opened
+#   MID-PREPOSITIONAL-PHRASE -- preposition, determiner and emphasised adjective all outside --
+#   and its clause's subject was the pronoun `they`; `the root-exchange $\\sigma$ is the hop from
+#   one to the next` is 69's REPAIR-OWED call on the trunk where this seat had it MEANING-HELD,
+#   and `from one to the next` does leave the vantages outside the span.  ** Repaired on the
+#   merged ledger's reading; a span naming the vantages is better either way, and the words the
+#   finding is about -- "of this paper", which P3 ADDED when it scoped the claim to itself --
+#   are still inside. **
+_VACUUM = ("for the \\emph{vacuum} construction of this paper they are equivalent vantages---the "
+           "root-exchange $\\sigma$ is the hop from one to the next, and one swing charts the "
+           "whole family")
 assert _VACUUM in _tex, \
-    "P3 must still state the VACUUM half -- the three hinges as equivalent vantages"
-assert "the root-exchange $\\sigma$ is the hop from one to the next" in _tex, \
-    "P3's vacuum half must still carry the root-exchange as the hop between vantages"
+    "P3 must still state the VACUUM half -- the three hinges as equivalent vantages, with the "\
+    "root-exchange as the hop between them"
 
 # ⓹ AND THE SURVIVING STATEMENTS ARE STILL GENERAL -- no mass parameter in either, which was the
 #    whole cost recorded in PART 4 and is unchanged by the rewording.

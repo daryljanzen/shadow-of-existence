@@ -78,7 +78,12 @@ def main():
 
     check("and that is what P1/P2's argument turns on: the endpoints are \"non-degenerate critical "
           'points of identical analytic character on a smooth underlying manifold"',
-          'non-degenerate critical points of identical analytic character' in p3)
+          # ⛭ r7293+cc66: widened to the whole clause this check's own label already quotes.
+          #   The old span was a bare noun phrase whose head -- `whose two endpoints ... are` --
+          #   sat outside it, and it dropped `on a smooth underlying manifold`, which is the
+          #   PREMISE P1/P2's removal argument needs.
+          'whose two endpoints---the horizon at $r=2M$ and the curvature singularity at $r=0$---are '
+          'non-degenerate critical points of identical analytic character on a smooth underlying manifold' in p3)
 
     # the site
     epr = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'ENTRY_POINT_REGISTER.md'),
