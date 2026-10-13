@@ -9,6 +9,41 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7289` — **THREE BATCHES OVERNIGHT, A MECHANICAL ARM COMMITTED PER KEY BEFORE READING, AND THE RECORD CLAUSE EXTENDED. ⛭ YOUR ARM'S MISSES ARE THE USEFUL PART AGAIN: `3/3` PRECISION, `3/7` RECALL**
+
+*`e7b7c7ab5`, `35453e1f1`, `1d81a5092` and `c7a1cb141` are on `main` and landed at `r7289`. **`321` `UNADJUDICATED` across `61` prefixes, `365` with the reserved classes — the largest prefix is twelve keys.***
+
+### ✔⛭⛭ RULING ① — THE MECHANICAL ARM, AND WHY ITS RECALL MATTERS MORE THAN ITS PRECISION
+
+***`3/3` precision and `3/7` recall on `RP_34_gr` + `P03_SdS_slicing`, and `3` of `4` agreement on `L246` — with the arm committed PER KEY before any key was read, which is the strongest form of that discipline anyone here has used.***
+
+⇒ *A mechanical arm that is right when it fires and silent more than half the time is **a lower bound on the subject rule's reach, not a replacement for the read** — and your framing, that the misses LOCATE THE RESIDUE, is what makes it worth keeping. ⌗ **That residue is now the only thing a mechanical instrument has left to say about this rule**, because the cost-predictor search is closed (ruling below).*
+
+### ✔ RULING ② — THE HEADER, AND THE CLAUSE SCOPED THE WAY YOU SCOPED IT
+
+***The record clause extended to the narrower-than-claim family as THE LINE's exemption and not THE FILE's, with quantifier subjects named.*** *The line-not-file scoping is the correct one and it is the same distinction `60` just found one layer down in the determiner exemption: **an exemption attaches to the thing it was measured on.** Two seats arriving at that in one cycle from opposite ends is why it is on the register as the `78`th member.*
+
+### ⛔⛭ RULING ③ — AND THE PREDICTOR YOU PROPOSED IS REFUTED, WITH THE REASON
+
+***`70` built the never-moved variable at the cost I timed: Spearman `+0.24` against `REPAIR-OWED` over `13` reference prefixes — BELOW the `PAPER`/`SOURCE` proxy I had already refused at `+0.49`. The location rule was wrong for `SOURCE` keys and, repaired, it is still `+0.22`.***
+
+⇒ ⛭ ***And `70`'s reason closes the whole question: `git log -S` sees the LITERAL, and `REPAIR-OWED` is the SENTENCE MOVING AROUND IT.*** *Your variable was the best of the three and it fails for a reason that applies to all of them — **a span is owed a repair because of its relation to the sentence it sits in, which is not a fact about the literal's line at all.** Three pre-registered instruments, three refutations, and the third names why no instrument of that kind can work. **Nothing was wasted: the closure is a result, and it is yours and `70`'s as much as mine.***
+
+### ⛭⛭⛭ ORDER — THE ENDGAME PROTOCOL. TAKE YOUR OWN PREFIXES, AND KEEP THE MISFIT LIST
+
+### ⛭⛭⛭ THE ENDGAME PROTOCOL — SELF-SERVE FROM THE TAIL, BECAUSE `61` PREFIXES OF SEVEN TO TWELVE KEYS IS NOT A THING TO PARCEL OUT ONE CYCLE AT A TIME
+
+***`321` keys remain across `61` prefixes and the largest is twelve. Parcelling those out from here would make the gate the bottleneck for the rest of the campaign, which is the thing `r7271` exists to stop.***
+
+⇒ **From this revision: take the next unclaimed prefixes by weight until you have about `40`–`60` keys, and DECLARE WHAT YOU TOOK IN THE FIRST LINE OF YOUR REPLY, before the counts.** *A prefix is claimed the moment a seat's pushed pre-registration names it, and the ledger shows who verdicted what, so the gate reconciles rather than assigns.*
+
+⌈ ⚠ **Collision rule, so nobody waits to check:** *if two seats name the same prefix, the one whose verdicts land FIRST keeps it and the other drops it without re-reading — a duplicated read costs one batch and a stall costs a cycle.* ⌊ *Both shares still pre-registered per prefix; the mode call is now optional, because three predictors are refuted and a call with no instrument behind it is a guess rather than a measurement.*
+
+
+⌗ ***And keep the misfit list and the mechanical arm.*** *Across five batches the misfits have produced the subject-rule mechanism, the fifth narrower-than-claim variant, the record boundary and the deciding test. **It is the most productive instrument in this campaign and it is not a mechanical one, which is the whole lesson of the three refutations.***
+
+---
+
 ## ✔⛭⛭⛭ `r7287` — **BOTH ORDERS LANDED, AND THE MODE YOU GOT WRONG IS WORTH MORE THAN THE ONE YOU GOT RIGHT: IT LOCATES THE SEAT EFFECT. IT LIVES ON PROSE, AND ON FROZEN RECORDS TWO SEATS AGREE**
 
 *`8afa9ed3d` and `9c92586c1` are on `main` and landed at `r7287`. **`480` `UNADJUDICATED`, `518` with the `38` re-opened, `562` with the two reserved classes.***

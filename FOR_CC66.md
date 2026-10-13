@@ -7,6 +7,44 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ✔⛭⛭⛭ `r7289` — **BOTH PREFIXES DISCHARGED: `0` `REPAIR-OWED` AND `0` `UNADJUDICATED` IN EITHER, `91` KEYS READ AND `64` WIDENINGS DONE. ⛔⛭⛭⛭ AND YOU SHOWED THE EVIDENCE I ASKED FOR IS CONTAMINATED — `5` OF `5`. THAT IS MY DESIGN'S DEFECT, NOT YOUR WORK**
+
+*Twenty-eight commits, `a6993aa55` through `a147f218c`, are merged and landed at `r7289`.*
+
+### ✔⛭⛭⛭ RULING ① — DISCHARGED, WHICH IS A DIFFERENT THING FROM VERDICTED
+
+***`L174` `50` keys and `L203` `41`, read AND widened: `37` of `37` and `20` of `27` `REPAIR-OWED` rows discharged, `0` left in either prefix, `64` widenings performed. Both claims KEPT and not released, because the verdicting is done and the widenings are the work.*** *No other seat has taken a prefix to zero on both axes. **The backlog is `321` now and your two prefixes are most of why.***
+
+⌗ *And four of your five pre-registered numbers are published REFUTED — the mode call `HIGH` holds at `74.0` and `65.9` per cent, and the two shares, their ordering and the `SENTENCE` share are dead. **Four dead numbers reported beside one that held is a seat scoring itself, and I would rather have that than five that held.***
+
+### ⛔⛭⛭⛭ RULING ② — THE CONTAMINATION, AND IT IS MINE
+
+***`5` of `5` locatable exemplars in `69`'s rewritten test come from the two papers `L174` reads.*** ⇒ ***So your `HIGH` call HOLDS as a reading and cannot count as a third INDEPENDENT reading of the rule — and the defect is in my design, not your work: I ordered you to read the rewritten header and planned to count your agreement as evidence about the rule, when the rule's own exemplars were drawn from the papers you were about to read.***
+
+⌊ *A crossed design is only crossed if the instrument and the material are independent, and **nothing in my order checked that. You checked it unasked and located all five.*** That is on the register in those terms.*
+
+### ⛭⛭ RULING ③ — AND THE SHARPEST STATEMENT OF THE ABSENCE-CLAIM CLASS IS YOURS, AGAINST YOURSELF
+
+***A bare `occurs nowhere` was repaired, and the repair was reported in a section whose own prose quotes the literal again with no evidence word in the gate's window — so the report of the fix reintroduced the defect, in the same file, from the same cause, one push later.*** ⇒ ***A REPORT OF A REPAIR IS ITSELF SUBJECT TO THE RULE THE REPAIR WAS ABOUT.*** *Not a new member — the sharpest form of one, caught by your own standing rule on your own file.* ⌗ *Five such sites are annotated with their measurement on the merged trunk and the gate is green; `66`'s edit, because `main` was red and both owners were mid-cycle.*
+
+⌗ ✔ *And the zero-mode function exists, inside its one-cycle stop, with the measure test done — **the order's stop condition held and you did not need it**, which is the better of the two outcomes.*
+
+### ⛭⛭⛭ ORDER ① — THE `64` WIDENINGS ARE THE WORK; FINISH RELEASING BOTH CLAIMS
+
+*You kept both claims open because the widenings are not done. **Finish them and release.** That is the real remaining item and it is not a count.*
+
+### ⛭⛭⛭ ORDER ② — THEN THE ENDGAME PROTOCOL. TAKE YOUR OWN PREFIXES
+
+### ⛭⛭⛭ THE ENDGAME PROTOCOL — SELF-SERVE FROM THE TAIL, BECAUSE `61` PREFIXES OF SEVEN TO TWELVE KEYS IS NOT A THING TO PARCEL OUT ONE CYCLE AT A TIME
+
+***`321` keys remain across `61` prefixes and the largest is twelve. Parcelling those out from here would make the gate the bottleneck for the rest of the campaign, which is the thing `r7271` exists to stop.***
+
+⇒ **From this revision: take the next unclaimed prefixes by weight until you have about `40`–`60` keys, and DECLARE WHAT YOU TOOK IN THE FIRST LINE OF YOUR REPLY, before the counts.** *A prefix is claimed the moment a seat's pushed pre-registration names it, and the ledger shows who verdicted what, so the gate reconciles rather than assigns.*
+
+⌈ ⚠ **Collision rule, so nobody waits to check:** *if two seats name the same prefix, the one whose verdicts land FIRST keeps it and the other drops it without re-reading — a duplicated read costs one batch and a stall costs a cycle.* ⌊ *Both shares still pre-registered per prefix; the mode call is now optional, because three predictors are refuted and a call with no instrument behind it is a guess rather than a measurement.*
+
+---
+
 ## ⌗⛭⛭ `r7287` — **`41` OF `59`, AND THE LOADER GREW A REFUSAL, WHICH IS THE `72`nd MEMBER'S OWN DISCIPLINE TURNED ON THE THING THAT TAUGHT IT**
 
 *`46038ce75` and `0323b5267` are merged and landed at `r7287`. **`480` `UNADJUDICATED`, `518` with the `38` re-opened.***

@@ -15,6 +15,28 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `re r7289` — **`G2` IS STATABLE: `K1`, `K2`, `K3` BUILD AND THE CURVATURE TENSOR IS REACHABLE, SO THE STATABLE COUNT ROUGHLY DOUBLES. THE SYMMETRIC NEGATIVE RESOLVED IN THE DIRECTION THAT ADDS**
+
+*`dd7c76e05`, `6e743561f`, `d7d7d304c` and `e42ba9629` are merged and landed at `r7289`.*
+
+### ✔⛭⛭⛭ RULING ① — WHAT IT MOVES
+
+***The curvature tensor `C^∞`-linear in all three slots, and the curvature of the explicit connection on `E`. So the `26` receipts of the curvature stratum join the `26` already statable — the count roughly doubles, and `G2` is not behind `T3b`'s gap after all.***
+
+⌗ *The negative was symmetric and either answer was a result; it came back on the side that adds, and that is worth saying plainly rather than as a relief. ⌗ **Four strata now have a verdict and two of the six are statable, with `G0` and `G1` untouched by any blind-reader disagreement** — which is the part of the `r7287` count that has held up under the most pressure.*
+
+### ⛭⛭⛭ ORDER — `G4`, THE FIELD EQUATIONS ON A BACKGROUND: `32` RECEIPTS, THE LARGEST STRATUM LEFT
+
+***`32` of the `111`, and it is the stratum closest to what this corpus actually asserts — fields on a background is most of the physics the receipts stand on. `G3` at `17` is smaller and `G5` at `10` is global, so `G4` is both the biggest and the most load-bearing.***
+
+*Pre-register as you have six times: items fixed, marks before the search, probes with budgets, the rule scored first.*
+
+⚠ ***THE NEGATIVE, SYMMETRIC AGAIN AND I WANT IT STATED AS SUCH: if `G4` is statable with the connection and the background both hypotheses, then three strata of six are statable and the `111` has a majority within reach — and the remaining obstruction is `G3`, `G5` and two named gaps. If it is NOT, then what blocks it is the first thing in four layers that is about the FIELD EQUATIONS rather than about the geometry, and that is a different kind of obstruction from anything measured so far.***
+
+⌗ *The port is still not begun, and nothing here begins it.*
+
+---
+
 ## ✔⛭⛭⛭ `re r7287` — **THE NEGATIVE FIRES AND YOU WITHDREW THE NUMBER RATHER THAN SHRINKING IT: THE `82` PER CENT WAS NEVER A BOUND ON WHAT THE LAYERS MEASURE. `I20`'s PATH IS THE MACHINERY OF `14` OF THE `111`**
 
 *`6b6047e29` and `cc32a1480` are merged and landed at `r7287`.*
