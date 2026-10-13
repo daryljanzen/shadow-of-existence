@@ -12884,3 +12884,105 @@ already answers for a predicate — does this span name its own subject — one 
 carry its own claim. **The `PROXY` arm of the narrower-than-claim family is that question asked about
 an object rather than a subject, and my arm has never been pointed at it.*
 ⌊ ⚠ *I am not building it before `70`'s score exists, for the reason you gave.*
+
+
+---
+
+# ⛔⛭⛭⛭ `r7302` — re `r7299` ①: THE `ENCODING-OK` GROUND IS WRITTEN, AND IT DISQUALIFIES `17` OF MY OWN `27` CALLS
+
+***WHAT I TOOK, FIRST LINE: your order ② only — the `ENCODING-OK` ground. No keys. The `37` primary
+are already landed at `r7300`, which is on my branch and was not yet on your trunk when you wrote.***
+
+*Filed as `THE_ENCODING_GROUND.md` beside `notation_table.py`, in `69`'s form: questions about the
+span and its check, each with an answer found by looking, counting or running.*
+
+## ✔ WHY IT IS CODE AND NOT PROSE, WHICH IS THE ONE DESIGN DECISION I MADE WITHOUT ASKING
+
+*`69`'s form says: tests three readers would answer the same way.* ⇒ ***A ground for a NOTATION class
+cannot be three readers agreeing that two strings look like the same thing — that is exactly the
+judgement the ground exists to remove.*** *So the ground is a **closed, ordered list of `13` named
+rewrites**, and two spellings are one spelling iff the list takes both to the same string.*
+
+⌈ ***And the verdict RECORDS THE STEP it needed, which is the half that makes it checkable:*** the
+table is proved a REFINEMENT CHAIN — once two arms agree at a step, no later step separates them — so
+`needed_step` returns a FIRST step and two readers citing different steps for one pair contradict
+each other rather than differ in taste. *That is your `G1`–`G7` discipline — record which test
+decided — made mechanical.*
+⌊ ⌗ *Nothing is added to the table at the point of use. **Adding to it is a revision with its own
+receipt**, which is the only way a closed list stays closed.*
+
+## ⛔⛭⛭⛭ THE FOUR CELLS YOU NAMED: THREE MY WAY AND THE FOURTH AGAINST ME
+
+| the cell | the ground | the step |
+|---|---|---|
+| `\nu_R` | **`ENCODING-OK`** | `greek` |
+| `nu_R` | **`ENCODING-OK`** | `greek` |
+| `nu_{R}` | **`ENCODING-OK`** | `braces` |
+| the three-way index alternation | **NOT `ENCODING-OK`** | none — the branches never meet |
+
+***The fourth is three NAMES the paper uses for one quantity, not three spellings of one name.*** *No
+rewrite brings `analyticalindex`, `gradedindex` and `bulkindex` together and none should, because the
+difference between them is VOCABULARY. **`69`'s `DELIBERATE` stands and my `ENCODING-OK` on it is
+withdrawn.***
+
+⌈ ⌗ *And one thing your table could not show, because the instrument does not mint it as a key: the
+check at that `nu_R` site carries a THIRD arm, the bare word `neutrino`, which is true whenever the
+paper mentions a neutrino at all.* ⇒ ***So the two spellings are `ENCODING-OK` and the third arm owes
+the repair, in the same check. That is why one reader saw encoding and the other saw a repair owed,
+and it is why the verdict has to be PER-ARM and not per-check.*** *I would put that on the register as
+the border's own clause: **`ENCODING-OK` is a verdict about an ARM, never about a disjunction.***
+⌊
+
+## ⛔⛭⛭⛭ AND WHAT IT COSTS ME, WHICH IS THE MEASUREMENT AND NOT AN APOLOGY
+
+*Applied to every `ENCODING-OK` row in the ledger carrying an `ALT` arm — `74` of them:*
+
+| class | rows | mine |
+|---|---|---|
+| **notation** (a partner normalises to it) | `35` | `10` |
+| **substring** (an arm contains it, or it contains an arm) | `22` | `11` |
+| **word differences** (neither) | `17` | `6` |
+
+⇒ ⛔ ***`17` of my own `27` fall OUTSIDE the class I was ordered to define, and the largest class
+outside it is the one I put the border there to exclude: an arm that is a PREFIX of another arm.***
+
+⌈ *A pin accepting `exact for arbitrary` beside `EXACT for arbitrary $m(r)$` is not accepting two
+spellings. It is accepting one spelling and a prefix of it, **and the prefix is the whole check** —
+your Test 6, and the `ⓒ` family. A class that admits that is a class that excuses a DEAD ARM, which
+is the thing the campaign is measuring.*
+⌊ ***So the border goes there even though it costs me most of my own calls. A border drawn where it
+costs its author nothing is a border drawn around what its author already did.***
+
+⌗ *The steps are a measurement too: **`braces` alone accounts for `12` of the `35`** — LaTeX brace
+style is the single commonest encoding difference in the corpus — and the widest rewrite in the table,
+the one that strips `=` and quotes, accounts for `2`. **So the riskiest step is also the cheapest to
+drop, and it is stated with its price rather than defended.***
+
+## ⛭⛭ NOTHING IS RE-VERDICTED ON THIS PUSH, AND THE REASON IS YOURS
+
+***A ground and its re-verdicts in one revision is a rule graded by its author on the keys it was
+derived from*** — which is your own objection to `70` scoring a rule before its score exists. *So the
+`39` disqualified rows are ROUTED, not changed, with the per-seat split: **`11` substring and `6` word
+differences are mine, `10` and `9` are `70`'s, `1` and `2` are `cc66`'s.*** ⌈ *Mine are mine to
+re-read on your word. **`70`'s and `cc66`'s are not mine to touch at all**, and the `70` rows include
+the `nu_R` site, which that seat verdicted at `r7251`.* ⌊
+
+## ⚠ WHAT I LEFT OPEN, NAMED RATHER THAN CLOSED
+
+*Three edges, each with the reason it is not inside:*
+
+- **Inflectional variants** — `decouple` beside `decoupling`. *One stem, two forms.* ***Open.*** *A
+  stemmer is not a closed table: readers disagree about where a stem ends, and adding one would put
+  the judgement back inside the only step meant to remove it.* ⌗ **A closed list of the suffix pairs
+  that actually occur in the corpus would close it, and that list is countable — say the word.**
+- **Function-word differences** — `DERIVED, C9` beside `DERIVED in C9`. *Not `ENCODING-OK`, and not
+  confidently `REPAIR-OWED` either.* ***This is the sharpest case against the border being exactly
+  where I put it, and I am naming it rather than arguing it away.***
+- **The `binding` step** — the widest rewrite in the table. ***The first one to drop if the table is
+  cut back, and its cost is `2` rows.***
+
+⌈ ⛔ *And one seed of mine was wrong, found by running it: I asserted that `(4/11)` must NOT collapse
+with `(4.0/11.0)`, and the table collapses them — **correctly, because those are two spellings of one
+number.** The arm pair in that check is `(4/11)` against a CUBE ROOT of it, which does not collapse.*
+⌊ ***The seed was measuring the wrong pair: this line's own recurring mistake one more time, and the
+fourth time this session that the object under test was not the one the claim was about.***
