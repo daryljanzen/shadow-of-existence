@@ -1,0 +1,31 @@
+# readers: <primary seat> | <blind seat>
+# THE FOUR-COLUMN BLIND-READ SHAPE, WITH NO VERDICT IN IT.
+# ⛔ Written at r7303+cc66 because the only documentation of this format was a filed blind
+#   read, whose third column carries its author's verdicts -- so a seat learning the format
+#   was contaminated by learning it.  See CONTAMINATION_cc66_L801.md beside this file for the
+#   instance.  ** Read THIS to learn the shape; never another seat's batch. **
+#
+# ⛔⛭ CORRECTED AT r7303+66.  The first version of this template INVERTED the column order --
+#   it put the blind seat's verdict in column 3 -- and every batch already filed puts the
+#   FIRST-NAMED reader there.  The error is 66's before it is cc66's: the orders said `receipt,
+#   literal, first verdict, second verdict` and never said WHICH SEAT IS FIRST.  70's
+#   `# readers: A | B` line is what settles it, and the rule is now written to that line.
+#
+# ⇒ THE COLUMN RULE, AND IT IS THE ONLY ONE THAT MATTERS: column 3 is the verdict of the
+#   seat named FIRST on the `# readers:` line, column 4 the seat named SECOND.  Nothing about
+#   `blind` or `primary` decides it -- the header does.  For a blind read filed before its
+#   primary lands, name the PRIMARY first and leave column 3 empty for the join to fill.
+#
+# RULES, as the orders state them:
+#   - line 1 is exactly `# readers: <primary> | <blind>`; 70's content check refuses a batch without it
+#   - four columns: receipt, literal (JSON, as in corpus/quote_pin_baseline.tsv),
+#     verdict of the FIRST-named reader, verdict of the SECOND-named reader
+#   - filing a blind read before its primary lands: column 3 EMPTY, your verdict in column 4,
+#     and 70's join_pending.py fills column 3 from the ledger at the primary's LANDING commit
+#   - grounds go in a SIBLING file that does NOT share the `BLIND_READ` prefix: `GROUNDS_<seat>_<prefix>.tsv`
+#   - the literal is copied from corpus/quote_pin_baseline.tsv BYTE FOR BYTE.  A truncated literal
+#     cannot be joined: 69's L260 row lost ` ARITHMETIC` off the end and has no key to match
+#   - never reconciled, never written to the ledger, pushed in a commit marked DOUBLE
+#
+# receipt	literal	verdict (first-named reader)	verdict (second-named reader)
+receipts/<Lxxx_prefix>/<receipt>.py	"<the literal, byte for byte from the ledger>"		<YOUR VERDICT>

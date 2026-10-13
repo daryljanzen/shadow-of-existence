@@ -58,6 +58,7 @@ Written r3158, `L-270`.  Stated for reversal.
 import collections
 import importlib.util
 import os
+import re
 import subprocess
 import sys
 
@@ -136,7 +137,14 @@ def main():
                encoding='utf-8', errors='replace').read()
     check('⓵ᶜ the refusal is above LATIN-1 by the generator\'s own rule, and that threshold lives in '
           'the generator alone -- it is not copied into the gate',
-          'ord(c) > 0xFF' in src
+          # ⛭ r7293+cc66: the PRESENT half is widened to the threshold WITH ITS CONSEQUENCE --
+          #   the guard and the raise it guards -- read off a flattened copy, because the three
+          #   lines are one statement.  69 reads the bare expression as REPAIR-OWED where this
+          #   seat read it DELIBERATE; the widening is better under either reading, since a
+          #   threshold that is present but no longer refuses is not the claim.  ** The ABSENT
+          #   half is untouched: a negative pin on a second file is the strong form here. **
+          '_left = sorted({c for c in s if ord(c) > 0xFF}) if _left: raise SystemExit('
+          in re.sub(r'\s+', ' ', src)
           and 'ord(c) > 0xFF' not in open(os.path.join(ROOT, 'corpus',
                                                        'check_glyph_coverage.py'),
                                           encoding='utf-8', errors='replace').read())
@@ -188,8 +196,13 @@ def main():
           set(naive) != set(before))
     check('⓷ᶜ ⌗ and the repair removes the threshold rather than correcting it: the gate calls the '
           'generator\'s tex_escape and has no codepoint literal of its own',
-          'tex_escape' in open(os.path.join(ROOT, 'corpus', 'check_glyph_coverage.py'),
-                               encoding='utf-8', errors='replace').read())
+          # ⛭ r7293+cc66: the pin is the CALL, not the name.  `tex_escape` has 4 occurrences in
+          #   the gate and TWO OF THEM ARE `#:` COMMENTS, so the arm was satisfied by the gate's
+          #   own narration of the repair and would have stayed green with the call deleted and
+          #   the comment left.
+          'mod.tex_escape(ch)'
+          in open(os.path.join(ROOT, 'corpus', 'check_glyph_coverage.py'),
+                  encoding='utf-8', errors='replace').read())
     check('⓷ᵈ and the finding is recorded IN THE GATE, not only here',
           'RESTATES THE RULE IT GUARDS' in open(os.path.join(ROOT, 'corpus',
                                                              'check_glyph_coverage.py'),
@@ -204,7 +217,16 @@ def main():
           'ʙ' in arc)
     check('⓸ᵇ while the corpus elsewhere writes that suffix as the superscript ᵇ (U+1D47), and '
           'L-262 generated THAT family from its range so it could not be partial',
-          'ᵇ' in arc and '_SUPER' in src)
+          # ⛭ r7293+cc66: the `_SUPER` arm is replaced by the GUARD that makes the family
+          #   non-partial.  Measured: `_SUPER` is an explicit DICT LITERAL, not a range
+          #   comprehension -- and it cannot be one, because the superscript letters are NOT
+          #   CONTIGUOUS codepoints (a at U+1D43, b at U+1D47, c at U+1D9C).  `_CIRCLED` and
+          #   `_SCRIPT` ARE range-generated; `_SUPER` is the family that could not be, which is a
+          #   sharper version of this receipt's own point than the one it states.  What keeps it
+          #   whole is the `_partial` SystemExit guard, and that is what is pinned.
+          'ᵇ' in arc
+          and '_partial = [c for c in list(_CIRCLED) + list(_SUPER) if c not in _UNI]'
+          in src)
     check('⓸ᶜ ⛭ so the hole is not a missing member of a family -- it is the SAME MEANING wearing '
           'a glyph from outside the range the family was generated from',
           not (0x1D43 <= 0x0299 <= 0x1D7F))
@@ -240,7 +262,12 @@ def main():
                  encoding='utf-8', errors='replace').read()
     check('⓹ᶜ it reports its population every run -- feeding documents, per rail -- and FAILS on an '
           'empty survey, because a survey that read nothing is green forever',
-          'feeding document(s)' in rc.stdout and 'An empty survey is green forever' in _gsrc)
+          # ⛭ r7293+cc66: widened to carry WHAT makes the survey empty.  69 reads the bare
+          #   sentence as REPAIR-OWED where this seat read it MEANING-HELD; the widened span names
+          #   the condition the gate refuses on, which is better under either reading.
+          'feeding document(s)' in rc.stdout
+          and 'no feeding document was found.  An empty survey is green forever'
+          in _gsrc)
     # ** SEEDED: put an untranslatable glyph into a surveyed document and the gate must catch it **
     import tempfile
     with tempfile.TemporaryDirectory() as td:

@@ -1,0 +1,26 @@
+# r7297+70: THE CALIBRATION SET, fixed by name before any rule is drafted.  The 21 of the 44 three-way keys
+# (r7297_66_three_readers/THREE_READERS.tsv) on which 69, cc66 and 60 -- three blind readers, none seeing
+# another -- gave the SAME verdict.  A candidate rule must reproduce every one (PREDICTION.md, C1).
+# 12 REPAIR-OWED, 5 MEANING-HELD, 4 DELIBERATE.
+# receipt	literal	unanimous verdict
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"The cosmology carries no early-universe parameter, and what it does carry should be stated plainly"	MEANING-HELD
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"There is no early-universe parameter among them"	REPAIR-OWED
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"a quantity with no single value has no handover to transmit"	MEANING-HELD
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"is that start read in units of a density rather than an inheritance"	REPAIR-OWED
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the density crosses as inherited content"	MEANING-HELD
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the one quantity the handover supplies"	REPAIR-OWED
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"non-degenerate critical points of identical analytic character"	REPAIR-OWED
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"r(z)=M(1+\\cos z)$"	DELIBERATE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"(4/11)"	DELIBERATE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"3 nu"	DELIBERATE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"N_{\\mathrm{eff}}=3.046"	DELIBERATE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"adopted"	REPAIR-OWED
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"does not dissolve the discrepancy with the local distance ladder"	REPAIR-OWED
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"makes no $N_{\\mathrm{eff}}$ prediction"	REPAIR-OWED
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"right-handed"	REPAIR-OWED
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"at distinct points of the throat circle, and each vantage's signed areal radius vanishes at its own and at neither of the others"	REPAIR-OWED
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"construction of this paper they are equivalent vantages"	REPAIR-OWED
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"the distinction is between one door swung through a family and three doors standing at once"	MEANING-HELD
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"unfixed arbitrary modulus"	REPAIR-OWED
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"the ledger counts no counterterm coefficient"	MEANING-HELD
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"exchanged by the antipodal map, which is $R$."	REPAIR-OWED

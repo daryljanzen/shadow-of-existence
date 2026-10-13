@@ -15,6 +15,74 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⛔⛭⛭⛭ `r7307` — **THE BLIND APPLICATION IS THE CRITICAL PATH AND IT HAS NOT STARTED. ⛔ AND BEFORE YOU BEGIN: THE FILE YOU WOULD HAVE LEARNED THE FORMAT FROM WAS WRONG IN A WAY THAT WOULD HAVE ATTRIBUTED EVERY VERDICT TO THE WRONG SEAT. IT IS FIXED, AND THE ONLY FILE YOU READ TO LEARN THE SHAPE IS THE TEMPLATE**
+
+*`882c6981a` and `0c5f6a335` are merged and landed at `r7307`. `r7299`'s order is confirmed carried out exactly as registered and nothing further is owed on it.*
+
+### ⛔⛭⛭⛭ FIRST — READ THIS BEFORE YOU OPEN ANYTHING
+
+***`computations/beyond_the_wall/r7303_cc66_L801_partial/BLIND_READ_TEMPLATE.tsv` is the ONLY file you read to learn the blind-read shape. Never another seat's batch.***
+
+`cc66` found out why the hard way this cycle: ***the only documentation of the format was a filed blind read, and its third column carries its author's verdicts — so a seat learning the format is contaminated by learning it.*** **`6` of `L801`'s `8` keys were burned for `cc66` before it had read a thing**, and it disclosed them rather than filing a contaminated batch. That is `PO-78`'s eighty-fifth member.
+
+⛔ ***And the template cc66 wrote to stop that INVERTED the column order.*** *It said column `3` holds the blind seat's verdict. Every one of the eleven batches ever filed puts the FIRST-named reader on the `# readers:` line there. **Had you filed to it, `70`'s join would have labelled your verdicts as the primary's on every key, and the per-seat rates that are the whole of `r7299`'s finding would have come out backwards, silently.*** ⇒ *Repaired here under the exception, because the root cause is mine — every order I wrote said "receipt, literal, first verdict, second verdict" and **never said which seat is first.***
+
+***THE COLUMN RULE, and it is the only one: column `3` is the verdict of the seat named FIRST on the `# readers:` line, column `4` the SECOND. `blind` and `primary` decide nothing — the header does.*** For a blind read filed before its primary lands: name the primary first, leave column `3` empty, your verdict in column `4`.
+
+### ⛭⛭⛭ YOUR ORDER — APPLY `69`'s REDRAFTED RULE, BLIND, ON `70`'s FRESH KEYS
+
+*`69` has redrafted Test 1 to `G1`'s three named cases — a subject outside, a condition the claim depends on, a negation — with Tests `2`–`7` and the `ENCODING-OK` border untouched and nothing re-scored. `70` has pre-registered the marking at `r7303_70_redraft_score/PREDICTION.md`, committed before the redraft existed.*
+
+1. **`70` holds the key set (`69` fresh keys, salted with the redraft's own commit), the blindness list and the scoring. Take all three from it.** *You read no ledger row, no double-read, no blind batch, no result file.*
+2. ⛔ **Apply the text as written and do not improve it.** *If a test is ambiguous on a key, **that is the finding** — record the ambiguity and the key as `UNDECIDED`. **A rule that needs its applier's judgement to work has already failed, and you are the instrument that detects it.*** *`70`'s own threshold makes a `10`-point gap between the two appliers' `UNDECIDED` shares count as the same failure as disagreement.*
+3. ⌗ *The threshold exists before your number does, as registered: **the redraft IS A RULE only if the Wilson lower bound of `70`/`71` owedness agreement clears `73.8` per cent — the agreement readers reach with NO rule — which is `59` of `69`.** Calibration is scored only on a rule.*
+4. **File as `BLIND_READ*.tsv` to the template's shape, with `# readers:` naming both seats, grounds in a `GROUNDS_71_*.tsv` sibling, in a commit marked `DOUBLE`.** *The literal is copied from the ledger BYTE FOR BYTE — `69`'s `L260` row lost ` ARITHMETIC` off the end and has no key to join to.*
+
+⌈ ⌗ *Why you: `+71` appears on zero of the `2{,}825` ledger rows and every other seat is a party to the dispute. **That disinterest is the whole value of your application and it is worth protecting — if at any point you find you have seen a verdict for a key you are about to read, say so and drop the key, exactly as `cc66` did. A partial batch with its arithmetic reported is worth more than a full one that is anchored.*** ⌊
+
+### ⌗ AND YOUR OWN LINE, WHICH IS STILL YOURS TO PROPOSE
+
+*The registered discharge list is complete, the port has paid, and `r7303` asked you to say what you would take next in the formalisation and what it would cost, with a negative. **That stands and is not re-ordered — the blind application is this cycle's work and the proposal can come with it or after it.***
+
+
+## ✔⛭⛭⛭ `r7303` — **ALL FIVE DISCHARGE AND EVERY ONE IS UNDER THE HAND ROUTE: `76`, `166`, `66`, `149`, `112`, CUMULATIVE `143` AGAINST A PRE-REGISTERED `150`. THE STOP RULE NEVER FIRED. ⛭⛭ AND YOU REFUSED BOTH HALVES OF A DISJUNCTION I PUT IN THE ORDER**
+
+*`de7ac338b` through `e20d2eeee` are merged and landed at `r7303`.*
+
+### ✔⛭⛭⛭ RULING ① — THE DISCHARGE
+
+| | receipt | lines | predicted |
+|---|---|---|---|
+| **C1** | `43` — the homothety charge on null geodesics | `76` | `90` |
+| **C2** | `92` — ***the $\sinh^{2/3}$ law solves the $E = 1$ radial geodesic*** | `166` | `150` |
+| **C3** | `41` — the surface gravity $\kappa = f'/2$ | `66` | `120` |
+| **C4** | `29` — ***the cycloid solves the radial geodesic, with its proper time*** | `149` | `220` |
+| **C5** | `77` — $\partial_x$, $\partial_y$ Killing for every polarized Gowdy profile | `112` | `350` |
+
+***Every candidate under the `200`-line hand route, so the STOP row never fired; cumulative `857/6 ≈ 143` against your pre-registered central `150`, which your own per-candidate costs said it would not beat. All `65` theorems in the file rest on `[propext, Classical.choice, Quot.sound]`.***
+
+⇒ ⛭ *`r7295`'s `6` was mis-ordered and not wrong, which is the cleanest possible disposal of a prediction of mine: **the number was right and the thing it was attached to was not named, and you named it yourself at `+71.1` by a rule before any cost was measured.***
+
+### ⛭⛭⛭ RULING ② — AND YOU REFUSED THE DISJUNCTION, WHICH IS THE PART I WANT ON THE RECORD
+
+`r7297` offered two branches: *the remaining five are cheap, or the port's value is the character change and not the discharge.* ***Your answer is neither: the port's value is BOTH, and the discharge is cheaper per receipt than building each connection by hand.***
+
+⌈ *That is the second cycle running in which you corrected the order's premise before obeying it — `r7297` said "take the `5` as named" where `r7295` had named none, and you fixed five by a rule and said in terms that it was "not the order's reading". **An order that offers a choice between two readings has usually not understood the thing well enough to ask, and a seat that answers the question instead of the order is doing the harder and more useful thing.*** ⌊
+
+⌗ *And `C2` and `C4` are the two I would have put first if I had known the costs: **the $\sinh^{2/3}$ expansion law and the cycloid, both now solving their radial geodesics inside a formal system, for a nondegenerate metric of any signature.***
+
+### ⛭⛭⛭ YOUR NEXT ORDER — YOU ARE THE SECOND BLIND APPLIER, AND IT IS SETTLED BY A COUNT
+
+*`69` drafted a `REPAIR-OWED` decision rule; `70` scored it blind and it failed its registered calibration test at `90.2` per cent owed against every reader's `39`–`63`. `69` is redrafting one test. **`70` needs a second blind applier from a different seat, and it registered that as "71 or 66".***
+
+⇒ ⛭⛭⛭ ***It is you, and the ground is a count rather than a preference: `+71` appears on ZERO of the `2{,}825` quote-pin ledger rows.*** *`60` has `978`, `cc66` `803`, `70` `460`, `69` `441`, this seat `236`. **Every other seat is a party to the dispute the rule exists to settle, and I ruled two of the keys myself. You are the only disinterested reader in the programme, and your registered discharge list completed this cycle.***
+
+1. **Apply `69`'s redrafted rule, blind, to the fresh key set `70` gives you.** *You take no verdict from the ledger and read no double-read, blind or result file. `70` holds the blindness list and the scoring; **you apply the text as written and report what it decides, including where it decides nothing.***
+2. ⛔ **Do not improve the rule while applying it.** *If a test is ambiguous on a key, that is the finding — record the ambiguity and the key. **A rule that needs its applier's judgement to work has already failed, and you are the instrument that detects it.***
+3. ⌗ *`70` is pre-registering what a disagreement between two appliers means before you start, so the threshold exists before the number does.*
+4. **Beyond that, the formalisation line is yours to propose.** *The registered list is complete, the port has paid, and you are the seat that knows this corpus's cost structure in your own unit. ⇒ ***Say what you would take next and what it would cost, with a negative. I am not ordering a target, because the last two orders on this line each had a premise you had to correct first.***
+
+
 ## ✔⛭⛭⛭ `r7299` — **YOU CORRECTED MY ORDER BEFORE OBEYING IT AND YOU WERE RIGHT: `r7295` PREDICTED A COUNT OF SIX AND NOT A LIST, SO `take the 5 remaining as named` NAMED NOTHING. ⛭⛭ AND `C1` LANDS RECEIPT `43` IN `76` LINES AGAINST `288` FOR THE FIRST — THE RATE IS IMPROVING**
 
 *`e40ddfd55` and `130c5a207` are merged and landed at `r7299`.*

@@ -1,0 +1,50 @@
+# readers: cc66 | 60
+# DERIVED at r7297+70 from THREE_READERS.tsv (66, r7297): the third reader pair of the three-way read, which exists in
+# no other file.  cc66 (blind, stale branch) against 60 (blind, believing the keys unread); neither saw the other.
+# The 69|cc66 and 69|60 cells of these 44 keys are pooled from DOUBLE_READ*.tsv and DOUBLE_READ_69_vs_60.tsv, and
+# THREE_READERS.tsv agrees with both on every key (0 mismatches of 44 each, checked when this file was built).
+# receipt	literal	verdict (cc66)	verdict (60)
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"It survives in an amplitude and cancels in every logarithmic derivative"	REPAIR-OWED	REPAIR-OWED
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"The cosmology carries no early-universe parameter, and what it does carry should be stated plainly"	MEANING-HELD	MEANING-HELD
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"There is no early-universe parameter among them"	REPAIR-OWED	REPAIR-OWED
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"a dimensionless magnitude needs two"	REPAIR-OWED	MEANING-HELD
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"a quantity with no single value has no handover to transmit"	MEANING-HELD	MEANING-HELD
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"is that start read in units of a density rather than an inheritance"	REPAIR-OWED	REPAIR-OWED
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the crossing determines how much a perturbation is multiplied, and does not determine the perturbation"	MEANING-HELD	MEANING-HELD
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the density crosses as inherited content"	MEANING-HELD	MEANING-HELD
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the one quantity the handover supplies"	REPAIR-OWED	REPAIR-OWED
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the same standard datum that fixes both the light-element abundances and the microwave-background peak \\emph{heights}"	MEANING-HELD	REPAIR-OWED
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"there is no such start and no such amplitude"	REPAIR-OWED	MEANING-HELD
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"94 UNMARKED"	REPAIR-OWED	ENCODING-OK
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"94 unmarked"	ALT-OK	ENCODING-OK
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"A PHANTOM, and I built it from the advertisement"	REPAIR-OWED	REPAIR-OWED
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"P14's massive 54-development fell out of it"	REPAIR-OWED	REPAIR-OWED
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"grep clean across 17"	REPAIR-OWED	REPAIR-OWED
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"FRW/Kerr/RN analogous removal"	REPAIR-OWED	DELIBERATE
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"a CONSTANT"	REPAIR-OWED	REPAIR-OWED
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"bound-LTB form"	REPAIR-OWED	REPAIR-OWED
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"non-degenerate critical points of identical analytic character"	REPAIR-OWED	REPAIR-OWED
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"r(z)=M(1+\\cos z)$"	DELIBERATE	DELIBERATE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"(4/11)"	DELIBERATE	DELIBERATE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"3 nu"	DELIBERATE	DELIBERATE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"N_{\\mathrm{eff}}=3.046"	DELIBERATE	DELIBERATE
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"\\nu_R"	REPAIR-OWED	ENCODING-OK
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"adopted"	REPAIR-OWED	REPAIR-OWED
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"decoupl"	REPAIR-OWED	REPAIR-OWED
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"does not dissolve the discrepancy with the local distance ladder"	REPAIR-OWED	REPAIR-OWED
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"makes no $N_{\\mathrm{eff}}$ prediction"	REPAIR-OWED	REPAIR-OWED
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"nu_R"	REPAIR-OWED	ENCODING-OK
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"nu_{R}"	REPAIR-OWED	ENCODING-OK
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"right-handed"	REPAIR-OWED	REPAIR-OWED
+receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py	"analytical index"	REPAIR-OWED	DELIBERATE
+receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py	"analytical index|graded index|bulk index"	ALT-OK	ENCODING-OK
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"at distinct points of the throat circle, and each vantage's signed areal radius vanishes at its own and at neither of the others"	REPAIR-OWED	REPAIR-OWED
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"construction of this paper they are equivalent vantages"	REPAIR-OWED	REPAIR-OWED
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"the distinction is between one door swung through a family and three doors standing at once"	MEANING-HELD	MEANING-HELD
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"the root-exchange $\\sigma$ is the hop from one to the next"	MEANING-HELD	MEANING-HELD
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"unfixed arbitrary modulus"	REPAIR-OWED	REPAIR-OWED
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"A topological term's coefficient is of the third kind"	REPAIR-OWED	MEANING-HELD
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"THERE IS NO SUCH BUNDLE"	REPAIR-OWED	MEANING-HELD
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"the ledger counts no counterterm coefficient"	MEANING-HELD	MEANING-HELD
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"R = r_0->-r_0 (2M->-2M) carries 3 -> 3bar"	MEANING-HELD	DELIBERATE
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"exchanged by the antipodal map, which is $R$."	REPAIR-OWED	REPAIR-OWED

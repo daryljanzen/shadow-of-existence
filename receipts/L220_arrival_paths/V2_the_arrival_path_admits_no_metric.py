@@ -203,20 +203,46 @@ def main():
     check('⇒ and the path is still supplied, now in the paper\'s own voice: "This is proved here '
           'from the maximal-symmetry requirement together with the signature and causal-structure '
           'conditions; nothing is assumed of the embedding"',
-          'This is proved here from the maximal-symmetry requirement together with the signature '
-          'and causal-structure conditions; nothing is assumed of the embedding' in _p0_flat)
+          # ⛭ r7293+cc66: widened LEFT so the demonstrative's antecedent is INSIDE the span.  The
+          #   old span's subject was `This`, and what is proved -- the proposition's own statement
+          #   -- sat outside it, so the span was satisfied by any proposition saying it proves
+          #   itself here.
+          'is the only such manifold with the requisite causal structure. This is proved here from the '
+          'maximal-symmetry requirement together with the signature and causal-structure conditions; '
+          'nothing is assumed of the embedding'
+          in _p0_flat)
     check('prop:amplitude supplies its path by a following "\\noindent\\emph{Argument.}" paragraph',
           re.search(r'label\{prop:amplitude\}.{0,1200}?\\noindent\\emph\{Argument', 
                     re.sub(r'\s+', ' ', p15), re.S) is not None)
 
     # the class's own three founding instances all resolved this way
-    arc = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()
+    # ⛭ r7293+cc66: the arc is read FLATTENED and with its MARKDOWN EMPHASIS stripped, so a pin
+    #   into it can be a clause rather than a clause cut at an asterisk or a line wrap.  This is
+    #   the markdown analogue of what `check_quote_pins`'s own H3 normaliser does for the LaTeX
+    #   emphasis family.
+    arc = re.sub(r'\*+', '', re.sub(r'\s+', ' ', open(
+        os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()))
+    # ⛭ r7293+cc66: widened to the arc's whole clause.  The old span was a bare prepositional
+    #   phrase -- no subject, no finite verb -- and it dropped `in the same file`, which is what
+    #   makes the instance an arrival-path defect rather than an ordinary cross-reference.
     check('L-209: the answer sat two sections above the question in the same file',
-          'two sections above the question' in arc)
+          '`L-209` (r2391) — the answer sat two sections above the question in the same file'
+          in arc)
+    # ⛭ r7293+cc66: widened to name P16 and to keep `and never asks it`, which is the half that
+    #   makes the instance a defect: a paper that answers in the next sentence AND asks the
+    #   question is doing the right thing.
     check('U1: P16 answers a question in the next sentence and never asks it',
-          'answers a question in the next sentence' in arc)
+          'P16 answers a question in the next sentence and never asks it' in arc)
+    # ⛔⛭ r7293+cc66: TWO repairs, and the connective is the first of them.  The arm was
+    #   `'ALREADY FIXED BY THE FORK' in arc OR 'rem:carter-chain' in arc` -- ⓑ, a DISJUNCTION
+    #   PINNING A CONJUNCTION: the claim is that the remark EXISTS and that it was ALREADY there
+    #   before the item was routed, and `or` let the bare label satisfy the whole of it.  Both
+    #   arms are present and measured today, so `and` costs nothing.  And the label arm is
+    #   widened to carry the remark's POSITION, which is what `already written` is about.
     check('V1/G1: rem:carter-chain was ALREADY written by the fork before the item was routed',
-          'ALREADY FIXED BY THE FORK' in arc or 'rem:carter-chain' in arc)
+          'ALREADY FIXED BY THE FORK' in arc
+          and '`rem:carter-chain` sits immediately after the corollary, draws every link'
+          in arc)
 
     print()
     if FAILED:

@@ -23,6 +23,25 @@ twice -- across batches or inside one -- FAILS the run (exit 1, nothing written)
 warning is how a borrower inherits a defect silently.  A third reader of an already-double-read key is a different
 measurement and needs a different key; it is refused here until that is designed.
 
+** r7297+70: THE UNIT IS THE (key, reader-pair) CELL. **  The r7295 key was one dimension short: 60 read 47 keys that 69
+and cc66 had already double-read, and the pooler refused 44 of them as duplicates when they are a NEW reader pair on an old
+key set -- the more informative kind, since only a new pair separates a reader effect from a key effect.  Every batch now
+declares its readers on a comment line
+
+    # readers: 69 | 60
+
+(order-free: `69 | 60` and `60 | 69` are one pair), and a row is keyed by (receipt, literal, reader pair).  The same pair
+presenting a key twice is still refused; a new pair on the same key pools.  A globbed file with no `# readers:` line, or
+naming one reader twice, FAILS the run by name: the line is also what tells a batch from commentary the glob happens to
+match (a reasons sidecar), so a file without it is never pooled by default.  The pooled share is now over CELLS, and a
+key read by three seats contributes three; the per-pair table says how the figure divides.
+
+** r7299+70: A BATCH IS RECOGNISED BY ITS CONTENT, NOT ONLY ITS NAME (69's suggestion, routed by 66). **  A reasons sidecar
+that the glob matches has prose where a verdict belongs.  A file whose first-verdict column holds no verdict on any row
+is NOT A BATCH (a verdict cell may be EMPTY -- a pending side -- but not prose): it is excluded and listed by name, and cannot pool at zero per cent as 69's GROUNDS file once did.  A
+file whose verdict columns hold a verdict on some rows and something else on others is a MALFORMED batch and fails the
+run, because there the content is a batch and a cell of it is wrong.
+
     python3 scripts/double_read_agreement.py            # print the tables
     python3 scripts/double_read_agreement.py --seed     # the duplicate refusal, both ways, on built batches
     python3 scripts/double_read_agreement.py --write    # also write AGREEMENT.md beside the prediction
@@ -38,6 +57,8 @@ from collections import Counter
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7293_70_agreement', 'AGREEMENT.md')
 N_STAR = None   # filled from PREDICTION.md's fixed rule by n_star(); see there
+VERDICTS = {'DELIBERATE', 'ALT-OK', 'REPAIR-OWED', 'NOT-A-PIN', 'ENCODING-OK', 'MEANING-HELD', 'EXTENDED',
+            'UNADJUDICATED', 'UNADJUDICATED-PINNED'}   # the ledger's verdict classes (corpus/quote_pin_baseline.tsv)
 
 
 def batches():
@@ -49,24 +70,40 @@ def batches():
         # the oldest commit that touched the file (a file landed through a merge has no `--diff-filter=A` hit on main)
         when = (subprocess.run(['git', '-C', ROOT, 'log', '--reverse', '--format=%ct %h', '--', rel],
                                capture_output=True, text=True).stdout.split('\n')[0] or '').split()
-        pairs, keys, mism, label = [], [], 0, ''
+        pairs, keys, mism, label, readers = [], [], 0, '', None
+        rows, vcells = [], []
         for ln in open(f, encoding='utf-8', errors='replace'):
             ln = ln.rstrip('\n')
             if ln.startswith('#'):
+                if readers is None and ln.lstrip('# ').lower().startswith('readers:'):
+                    readers = tuple(r.strip() for r in ln.split(':', 1)[1].split('|'))
+                    continue
                 if not label and ('read' in ln.lower()) and len(ln) > 2:
                     label = ln.lstrip('# ').strip()[:90]
                 continue
             c = ln.split('\t')
+            if len(c) >= 3 and ln.strip():
+                vcells.append((c[2].strip(), c[3].strip() if len(c) > 3 else ''))
             if len(c) < 4 or not c[2].strip() or not c[3].strip():
                 continue
             a, b = c[2].strip(), c[3].strip()
             pairs.append((a, b))
-            keys.append((c[0].strip(), _lit(c[1])))
+            rows.append((c[0].strip(), _lit(c[1])))
             if len(c) > 4 and c[4].strip() in ('AGREE', 'DISAGREE') and (c[4].strip() == 'AGREE') != (a == b):
                 mism += 1
+        pair = _pair(readers)
+        keys = [(*k, pair) for k in rows]
         out.append({'file': rel, 'when': int(when[0]) if when else 2 ** 62, 'sha': when[-1] if when else 'untracked',
-                    'pairs': pairs, 'keys': keys, 'mismatch': mism, 'label': label})
+                    'pairs': pairs, 'keys': keys, 'mismatch': mism, 'label': label, 'readers': readers, 'pair': pair,
+                    'shape': _shape(vcells)})
     return sorted(out, key=lambda b: (b['when'], b['file']))
+
+
+def _shape(vcells):
+    """'batch', 'sidecar' (no row verdict-shaped) or 'malformed' (some rows not): a row is verdict-shaped when both
+    verdict cells are a verdict or EMPTY (a pending side) and at least one is a verdict"""
+    ok = [all(x in VERDICTS | {''} for x in v) and any(v) for v in vcells]
+    return 'sidecar' if ok and not any(ok) else 'malformed' if not all(ok) else 'batch'
 
 
 def _lit(cell):
@@ -78,8 +115,20 @@ def _lit(cell):
         return cell
 
 
+def _pair(readers):
+    """the order-free reader pair, or None when the declaration is missing, not two names, or one name twice"""
+    if not readers or len(readers) != 2 or not all(readers) or readers[0] == readers[1]:
+        return None
+    return tuple(sorted(readers))
+
+
+def unlabelled(bs):
+    """[file] for every batch that does not declare two distinct readers"""
+    return [x['file'] for x in bs if x.get('pair') is None]
+
+
 def represented(bs):
-    """[(receipt, literal, first file, second file)] for every key presented more than once"""
+    """[(receipt, literal, reader pair, first file, second file)] for every (key, pair) cell presented more than once"""
     seen, out = {}, []
     for x in bs:
         for k in x['keys']:
@@ -91,16 +140,35 @@ def represented(bs):
 
 
 def _seed():
-    mk = lambda f, rows: {'file': f, 'keys': [r[:2] for r in rows], 'pairs': [r[2:] for r in rows]}
+    def mk(f, rows, readers=('69', 'cc66')):
+        pair = _pair(readers)
+        return {'file': f, 'keys': [(*r[:2], pair) for r in rows], 'pairs': [r[2:] for r in rows], 'pair': pair}
     a = mk('A.tsv', [('r/x.py', 'one', 'DELIBERATE', 'DELIBERATE'), ('r/x.py', 'two', 'REPAIR-OWED', 'DELIBERATE')])
     b = mk('B.tsv', [('r/y.py', 'one', 'MEANING-HELD', 'MEANING-HELD')])
     again = mk('C.tsv', [('r/x.py', 'two', 'REPAIR-OWED', 'REPAIR-OWED')])
     inner = mk('D.tsv', [('r/z.py', 'k', 'ALT-OK', 'ALT-OK'), ('r/z.py', 'k', 'ALT-OK', 'DELIBERATE')])
+    newpair = mk('E.tsv', [('r/x.py', 'two', 'REPAIR-OWED', 'DELIBERATE')], ('69', '60'))
+    flipped = mk('F.tsv', [('r/x.py', 'two', 'DELIBERATE', 'REPAIR-OWED')], ('cc66', '69'))
+    bare = mk('G.tsv', [('r/w.py', 'k', 'ALT-OK', 'ALT-OK')], None)
+    self_ = mk('H.tsv', [('r/w.py', 'k', 'ALT-OK', 'ALT-OK')], ('69', '69'))
+    refused = lambda bs: bool(represented(bs)) or bool(unlabelled(bs))
     cases = [('distinct keys in two batches pool', [a, b], False),
              ('the same literal under a different receipt is a different key', [a, b], False),
              ('a key re-presented in a later batch is refused', [a, b, again], True),
-             ('a key presented twice inside one batch is refused', [inner], True)]
-    bad = [f'{lab}: expected {"refused" if w else "pooled"}' for lab, bs, w in cases if bool(represented(bs)) != w]
+             ('a key presented twice inside one batch is refused', [inner], True),
+             ('r7297: the same key under a NEW reader pair pools', [a, b, newpair], False),
+             ('r7297: the same pair in the other order is the same pair, refused', [a, flipped], True),
+             ('r7297: a batch declaring no readers is refused', [a, bare], True),
+             ('r7297: a batch naming one reader twice is refused', [a, self_], True)]
+    bad = [f'{lab}: expected {"refused" if w else "pooled"}' for lab, bs, w in cases if refused(bs) != w]
+    shapes = [('r7299: a four-column batch is a batch', [('DELIBERATE', 'REPAIR-OWED')], 'batch'),
+              ('r7299: a pending blind read (one side empty) is a batch', [('', 'REPAIR-OWED')], 'batch'),
+              ('r7299: a reasons sidecar (prose in the verdict column) is not a batch',
+               [('(a) PROXY on a PARTIAL CODE LINE', ''), ('(b) the token is the claim', '')], 'sidecar'),
+              ('r7299: a GROUNDS file shaped verdict, prose is not a batch', [('REPAIR-OWED', 'G4: short token')], 'sidecar'),
+              ('r7299: verdicts with one prose cell is a malformed batch',
+               [('DELIBERATE', 'DELIBERATE'), ('DELIBERATE', 'see note')], 'malformed')]
+    bad += [f'{lab}: expected {w}, got {_shape(v)}' for lab, v, w in shapes if _shape(v) != w]
     for b_ in bad:
         print(f'    [FAIL] {b_}')
     print(f'  seeds: {"hold" if not bad else "LOST"}')
@@ -151,7 +219,7 @@ def n_star(p, t2, b=23, delta=0.05, z=1.96):
 def report(bs):
     lines = ['| # | batch (file, landed at) | keys | agree | raw | 95% (Wilson) | kappa |', '|---|---|---|---|---|---|---|']
     cum = []
-    rows_cum = ['| after batch | pooled keys | pooled agree | pooled raw | moved by | pooled kappa |',
+    rows_cum = ['| after batch | pooled cells | pooled agree | pooled raw | moved by | pooled kappa |',
                 '|---|---|---|---|---|---|']
     prev = None
     for i, x in enumerate(bs, 1):
@@ -178,30 +246,82 @@ def main():
     if '--seed' in sys.argv:
         return _seed()
     bs = batches()
+    sidecars = [x['file'] for x in bs if x['shape'] == 'sidecar']
+    malformed = [x['file'] for x in bs if x['shape'] == 'malformed']
+    bs = [x for x in bs if x['shape'] != 'sidecar']
+    if sidecars:
+        print(f'  ⌗ {len(sidecars)} FILE(S) MATCH THE BATCH GLOB AND HOLD NO VERDICT IN THE VERDICT COLUMN -- not a batch '
+              f'(a reasons sidecar), excluded and listed:')
+        for f in sidecars:
+            print(f'    {f}')
+        print()
+    if malformed:
+        print(f'  ⛔ {len(malformed)} BATCH(ES) WITH A NON-VERDICT IN A VERDICT CELL ON SOME ROWS -- a malformed batch, '
+              f'not a sidecar.  Nothing is written.')
+        for f in malformed:
+            print(f'    {f}')
+        return 1
+    bare = unlabelled(bs)
+    if bare:
+        print(f'  ⛔ {len(bare)} FILE(S) MATCH THE BATCH GLOB AND DECLARE NO TWO READERS -- every batch carries '
+              f'`# readers: A | B`, and a file without it is not pooled by default.  Nothing is written.')
+        for f in bare:
+            print(f'    {f}')
+        return 1
     dup = represented(bs)
     if dup:
-        print(f'  ⛔ {len(dup)} KEY(S) PRESENTED MORE THAN ONCE -- a double-read is its key set, and these keys are '
-              f'already pooled.  Nothing is written.')
-        for r, l, f1, f2 in dup[:40]:
-            print(f'    {r}  {json.dumps(l, ensure_ascii=False)[:60]}  first in {f1}, again in {f2}')
+        print(f'  ⛔ {len(dup)} (KEY, READER-PAIR) CELL(S) PRESENTED MORE THAN ONCE -- the same two readers on the same '
+              f'key are one measurement, already pooled.  Nothing is written.')
+        for r, l, pr, f1, f2 in dup[:40]:
+            print(f'    {r}  {json.dumps(l, ensure_ascii=False)[:60]}  [{" | ".join(pr)}]  first in {f1}, again in {f2}')
         if len(dup) > 40:
             print(f'    ... and {len(dup) - 40} more')
         return 1
-    # a file with no verdict pair yet -- a blind read filed before its other reader lands, or a reasons sidecar the glob
-    # also matches -- is PENDING: left out of the pool and listed, never pooled and never fatal (r7295+70.5)
+    # ⌗ r7297+66: a one-sided batch is PENDING, not an error, and this was a hard failure.
+    #   The blind read lands in the cycle it is ordered; the PRIMARY it pairs with may not.  `69`'s
+    #   blind read of `L801` is correct and complete and has no second column because `60` spent its
+    #   cycle on four prefixes it believed unread, so the primary never landed.  Failing there stops
+    #   the instrument whenever the protocol is mid-stride, which is most of the time.  Listed and
+    #   excluded from the pool instead, so the figure is computed from the batches that ARE paired
+    #   and the pending ones stay visible.  ** The pool must not silently drop them: a pending batch
+    #   that nobody can see is a blind read that never gets paired. **
     pending = [x['file'] for x in bs if not x['pairs']]
     bs = [x for x in bs if x['pairs']]
+    if pending:
+        print(f'  ⌗ {len(pending)} BATCH(ES) PENDING -- blind read landed, primary has not, so there is no verdict '
+              f'pair yet.  Excluded from the pool and NOT discarded:')
+        for f in pending:
+            print(f'    {f}')
+        print()
+    if not bs:
+        print('  ⛔ NO PAIRED BATCH -- nothing to pool.')
+        return 1
     lines, rows_cum, N, p, t2, ns, kp = report(bs)
+    distinct = len({k[:2] for x in bs for k in x['keys']})
+    by_pair = {}
+    for x in bs:
+        by_pair.setdefault(x['pair'], []).extend(x['pairs'])
+    pair_rows = ['| reader pair | cells | agree | raw | kappa |', '|---|---|---|---|---|']
+    for pr, ps in sorted(by_pair.items()):
+        k_ = sum(a == b for a, b in ps)
+        pair_rows.append(f'| `{" | ".join(pr)}` | {len(ps)} | {k_} | {100 * k_ / len(ps):.1f}% | {kappa(ps):+.2f} |')
     head = (f'# The double-read agreement, pooled — generated by `scripts/double_read_agreement.py`\n\n'
-            f'*{len(bs)} batch(es), {N} independently double-read keys.  Pooled raw agreement **{100 * p:.1f}%**, '
+            f'*{len(bs)} batch(es), {N} independently double-read (key, reader-pair) cells over {distinct} distinct '
+            f'keys and {len(by_pair)} reader pair(s).  Pooled raw agreement **{100 * p:.1f}%**, '
             f"pooled Cohen's kappa **{kp:+.2f}**.  Between-batch variance (DerSimonian–Laird) tau² = {t2:.4f}; "
             f'the size at which one more ~23-key batch moves the pooled share by more than 5 points with under 5% '
             f'probability is **n\\* = {ns}** keys (PREDICTION.md\'s rule, recomputed from the batches so far) — '
-            f'{"REACHED" if N >= ns else f"NOT YET: {ns - N} keys to go"}.*\n')
-    body = '\n'.join(['', '## Per batch', ''] + lines + ['', '## Cumulative', ''] + rows_cum) + '\n'
+            f'{"REACHED" if distinct >= ns else f"NOT YET: {ns - distinct} keys to go"}, counted in DISTINCT keys and not '
+            f'in cells -- the rule was registered in keys, and three readings of one key are not three independent '
+            f'samples when the disagreement is a property of the key (r7297).*\n')
+    body = '\n'.join(['', '## Per batch', ''] + lines + ['', '## Per reader pair', ''] + pair_rows
+                     + ['', '## Cumulative', ''] + rows_cum) + '\n'
     if pending:
         body += ('\n## Pending -- filed, no verdict pair yet, not pooled\n\n'
                  + '\n'.join(f'- `{f}`' for f in pending) + '\n')
+    if sidecars:
+        body += ('\n## Not a batch -- matches the glob, holds no verdict in the verdict column (r7299)\n\n'
+                 + '\n'.join(f'- `{f}`' for f in sidecars) + '\n')
     print(head + body)
     if '--write' in sys.argv:
         os.makedirs(os.path.dirname(OUT), exist_ok=True)

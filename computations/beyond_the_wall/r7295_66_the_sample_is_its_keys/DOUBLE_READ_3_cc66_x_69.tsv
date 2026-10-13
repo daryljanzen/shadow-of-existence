@@ -1,3 +1,4 @@
+# readers: cc66 | 69
 # r7295: THE THIRD ACCIDENTAL DOUBLE-READ, and it is cc66 x 69 again -- 34 keys over 7 prefixes.
 # 69's r7295 stride (df64eb93) took L270, L262, L220, L554, L280, L804 and L561 as PRIMARY.  cc66 had
 # already read and PUSHED all seven as its own r7293 PRIMARY at bac67e5c, from a base that did not contain

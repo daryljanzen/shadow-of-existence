@@ -1,3 +1,7 @@
+# readers: 69 | 60
+#: added by 66 at r7303 under the exception -- my merge landed this file beside 70's r7299+70.1
+#: content check, which refuses a batch declaring no two readers, so the pooler was red on main
+#: with nothing written.  The pair is named in the column header below and nothing else changed.
 # BLIND_READ -- r7300+60 on the r7295 order: L270, second read, verdicted from STRUCTURE AND LENGTH ONLY.
 # Four columns as ordered: receipt, literal (JSON), first verdict (69, r7289 on the trunk), second verdict (60, blind).
 # ** NOT RECONCILED. ** The two columns stand side by side; a disagreement between seats is not a seat's to settle.
