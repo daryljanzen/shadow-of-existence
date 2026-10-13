@@ -89,6 +89,17 @@ def gate(label, ok):
 
 
 BEFORE = '3bdc1418'          # this revision's pre-registration, before any of the 71 sites was read
+# ⛔⛭⛭⛭ AND THE AFTER STATE IS PINNED TOO, which `S25` learned the hard way in this same revision:
+#   *a revision's report is a claim about the state ITS OWN WORK produced, and read LIVE it goes
+#   false the moment the next revision verdicts a key.  `r7280` verdicted `71` and retired two of
+#   `r7270`'s rows, and SEVEN of `S25`'s thirteen gates failed on it -- the `71`st member arriving in
+#   a count instead of a range.*
+#   ⌈ ⌗ *And there is a shape worth naming in the fix: **a receipt reporting its own revision's state
+#     cannot pin that state until the revision has LANDED**, so the pin is a SECOND commit.  This one
+#     names the commit that carried the verdicts, which is why the sha below is later than this
+#     receipt's first version.*
+#   ⌊ *The live ledger is read only where the claim is MONOTONE: the backlog may fall and never rise.*
+AFTER = '37b2decc'          # the commit that carried this revision's 71 verdicts
 BASE = 'corpus/quote_pin_baseline.tsv'
 PREFIXES = ('receipts/L221_quark_lepton/', 'receipts/P12_algebroid/')
 SELF_REL = os.path.relpath(os.path.abspath(__file__), ROOT).replace(os.sep, '/')
@@ -121,10 +132,12 @@ _res = subprocess.run(['git', 'cat-file', '-e', BEFORE + '^{commit}'], cwd=ROOT,
                       capture_output=True).returncode == 0
 _anc = subprocess.run(['git', 'merge-base', '--is-ancestor', BEFORE, 'HEAD'], cwd=ROOT,
                       capture_output=True).returncode == 0
-_base_b, _base_l = _git('show', f'{BEFORE}:{BASE}'), read(BASE)
+_base_b = _git('show', f'{BEFORE}:{BASE}')
+_base_l = _git('show', f'{AFTER}:{BASE}')      # the state this revision produced
+_base_now = read(BASE)                          # live, for the MONOTONE arm only
 gate(f'Ⓐ① ⛔⛭⛭ the reference is a LITERAL SHA (`{BEFORE}`), it RESOLVES (`{_res}`), it is an ANCESTOR '
      f'of `HEAD` (`{_anc}`), and the ledger comes back from it DIFFERING from the working tree',
-     _res and _anc and bool(_base_b) and _base_b != _base_l)
+     _res and _anc and bool(_base_b) and bool(_base_l) and _base_b != _base_l)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓑ  THE BURDEN: THE COUNT THAT LANDED AND THE COUNT THAT REMAINS ──\n')
@@ -142,7 +155,9 @@ gate(f'Ⓑ① ⛭⛭ ** `{len(_landed)}` LANDED AND `{len(_unl)}` REMAIN ** --- 
      f'pinned commit and live, with every one of the `{len(_in_pfx)}` prefix rows UNADJUDICATED at '
      f'that commit, and NO key of either prefix left behind',
      len(_landed) == len(_in_pfx) == 71 and len(_unb) - len(_unl) == 71
-     and not [r for r in _unl if r[0].startswith(PREFIXES)])
+     and not [r for r in _unl if r[0].startswith(PREFIXES)]
+     # ⌗ the one LIVE read, and the only monotone claim: the backlog may fall further, never rise.
+     and len([r for r in rows_of(_base_now) if r[5] == 'UNADJUDICATED']) <= len(_unl))
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓒ  THE DISTRIBUTION, AND THE SIX BANDS SCORED AS A SET ──\n')
@@ -281,7 +296,8 @@ gate(f'Ⓖ① ⛔⛭⛭ a SECOND instance of the latent shape is live in another
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓗ  THE RESTRAINT, AND THE DANGLING TEST ON THIS RECEIPT\'S OWN KEYS ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_touched = sorted(set(f for f in _git('diff', '--name-only', BEFORE).split('\n') if f))
+_touched = sorted(set(f for f in _git('diff', '--name-only',
+                                      f'{BEFORE}..{AFTER}').split('\n') if f))
 _rcpt_touched = [f for f in _touched if f.startswith('receipts/') and f.endswith('.py')]
 print(f'      this revision touched {len(_touched)} file(s), {len(_rcpt_touched)} of them receipts: '
       + ', '.join(f.split('/')[-1][:22] for f in _rcpt_touched))

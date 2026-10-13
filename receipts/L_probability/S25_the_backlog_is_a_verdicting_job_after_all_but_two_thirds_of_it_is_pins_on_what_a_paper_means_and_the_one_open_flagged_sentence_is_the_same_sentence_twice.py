@@ -85,6 +85,15 @@ def gate(label, ok):
 # ⛔⛭⛭ THE REFERENCE COMMIT IS A LITERAL SHA WITH A RESOLVE-AND-ANCESTOR GUARD -- the form r7267
 #   ruled better than a bare sha, because a bad pin fails LOUDLY instead of silently reading HEAD.
 BEFORE = 'a2dfa7ab'      # this revision's pre-registration, before any of the 110 sites was read
+# ⛔⛭⛭⛭ r7280 (60): AND EVERY GATE BELOW READ THE LEDGER *LIVE*, WHICH IS THE 71st MEMBER IN THIS
+#   RECEIPT'S OWN FORM.  *A revision's report is a claim about the state its own work produced; read
+#   live, it goes false the moment the NEXT revision verdicts a key -- and `r7280` verdicted `71` and
+#   retired two of these very rows, so SEVEN of this receipt's thirteen gates failed on work of this
+#   line's own succeeding.*
+#   ⇒ *** So the AFTER state is pinned at this revision's own landing commit, exactly as the BEFORE
+#       state was, and the live ledger is read only where the claim is MONOTONE: the backlog may
+#       only fall.  `L-249` applied to a count rather than to a sentence. ***
+AFTER = '438cd783'       # this revision's own landing commit: the state these numbers describe
 SELF_REL = os.path.relpath(os.path.abspath(__file__), ROOT).replace(os.sep, '/')
 BASE = 'corpus/quote_pin_baseline.tsv'
 PREFIXES = ('receipts/L175_dimensional_descent/', 'receipts/L211_closure_adjacency/')
@@ -127,11 +136,12 @@ print('\n── Ⓐ  THE REFERENCE COMMIT, ASSERTED BEFORE ANYTHING IS READ THRO
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 _res, _anc = before_resolves()
 _base_b = _git('show', f'{BEFORE}:{BASE}')
-_base_l = read(BASE)
+_base_l = _git('show', f'{AFTER}:{BASE}')      # the state this revision produced
+_base_now = read(BASE)                          # live, for the MONOTONE arm only
 gate(f'Ⓐ① ⛔⛭⛭ the reference is a LITERAL SHA (`{BEFORE}`), it RESOLVES (`{_res}`), it is an ANCESTOR '
      f'of `HEAD` (`{_anc}`), and the ledger comes back from it DIFFERING from the working tree --- '
      f'so the before-and-after below is two states of one file and not one state read twice',
-     _res and _anc and bool(_base_b) and _base_b != _base_l)
+     _res and _anc and bool(_base_b) and bool(_base_l) and _base_b != _base_l)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓑ  THE BURDEN: THE COUNT THAT LANDED AND THE COUNT THAT REMAINS ──\n')
@@ -149,7 +159,10 @@ gate(f'Ⓑ① ⛭⛭ ** `{len(_landed)}` LANDED AND `{len(_unl)}` REMAIN ** --- 
      f'off the ledger at the pinned commit and live rather than counted by this seat: '
      f'`{len(_unb)}` before, `{len(_unl)}` after, and every one of the `{len(_mine)}` rows this '
      f'revision wrote was UNADJUDICATED at that commit',
-     len(_unb) - len(_unl) == len(_landed) == len(_mine) == 110 and len(_unl) == 700)
+     len(_unb) - len(_unl) == len(_landed) == len(_mine) == 110 and len(_unl) == 700
+     # ⌗ and the LIVE arm is the only one read live, because it is the only MONOTONE claim: the
+     #   backlog may fall further -- `r7280` took it to 598 -- and may never rise.
+     and len([r for r in rows_of(_base_now) if r[5] == 'UNADJUDICATED']) <= len(_unl))
 
 gate(f'Ⓑ② ✔ and the fall is the WHOLE of both prefixes: `{len(_in_prefix)}` of the `110` sit in '
      f'`L175_dimensional_descent` and `L211_closure_adjacency`, and NO key of either prefix is left '
@@ -255,7 +268,8 @@ gate(f'Ⓕ① ✔⛭⛭ the second negative DOES NOT FIRE, and it is close: for 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓖ  THE THIRD NEGATIVE: THE TWO `OPEN` KEYS ARE ONE SENTENCE, PINNED BARE, TWICE ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_touched = sorted(set(f for f in _git('diff', '--name-only', BEFORE).split('\n') if f))
+_touched = sorted(set(f for f in _git('diff', '--name-only',
+                                      f'{BEFORE}..{AFTER}').split('\n') if f))
 _OPENLIT = 'The substrate route is closed; the progenitor route is open'
 _open_rows = [r for r in _mine if json.loads(r[1]) == _OPENLIT]
 _sites = sorted(r[0] for r in _open_rows)
