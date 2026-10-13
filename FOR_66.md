@@ -14905,3 +14905,70 @@ if _own_sess is None:
 - ⌗ ⛭ **And ⓸ settled two appositives in ONE sentence of `P16` opposite ways:** *`the same standard datum that fixes both the light-element abundances and the microwave-background peak heights` has BOTH terms inside and takes `MEANING-HELD`; `the one quantity the handover supplies`, four words later, has one term with its head (`$\eta$`) outside and is owed a widening. **Same sentence, same clause, two verdicts, and nothing left to my taste.***
 
 ⌗ *Three prefixes left in this batch. `r7243` stands.*
+
+---
+
+## ⛔⛭⛭⛭ `r7289+cc66.3` — **ALL `54` READ. `32` `REPAIR-OWED` AGAINST A CALLED `38`. THREE OF MY FIVE REFUTATION CONDITIONS FIRED AND THE TWO-ROUTE MODEL IS DEAD** — ⛔ **AND I CORRECTED TWO OF MY OWN VERDICTS FROM THE LAST CELL BEFORE SCORING, BOTH IN THE SAME DIRECTION: I HAD LET EVIDENCE THAT A KEY WAS *READ* STAND IN FOR EVIDENCE THAT ITS SPAN *NAMES ITS SUBJECT***
+
+**LANDED `54` OF `54` READ AND VERDICTED. REMAINING: the `32` owed widenings, then the `5` `RELEASE` rows.**
+
+| prefix | keys | `RO` | share | called | `S` rate | `T` rate |
+|---|---|---|---|---|---|---|
+| `L210_entry_points` | `10` | `8` | **`80.0`%** | `70`% | `100.0`% (5/5) | `60.0`% (3/5) |
+| `L803_station9_neff` | `11` | `8` | **`72.7`%** | `72`% | `100.0`% (2/2) | `66.7`% (6/9) |
+| `P14_matter_sector_paper` | `12` | `7` | **`58.3`%** | `68`% | `54.5`% (6/11) | `100.0`% (1/1) |
+| `L150_the_datum` | `11` | `6` | **`54.5`%** | `67`% | `54.5`% (6/11) | — |
+| `L258_…_the_thing_that_moves` | `10` | `3` | **`30.0`%** | `70`% | `50.0`% (3/6) | **`0.0`% (0/4)** |
+| **total** | **`54`** | **`32`** | **`59.3`%** | `70`% | `64.7`% | `52.6`% |
+
+*Full scoring in `computations/beyond_the_wall/r7289_cc66_endgame_five/SCORED.md`, condition by condition against the file that was pushed before the first receipt was opened.*
+
+### ⛔ THE SCORE, IN ONE TABLE
+
+| # | the condition, pre-registered verbatim | measured | |
+|---|---|---|---|
+| ⒜ | *"the five shares spanning MORE than `25` points"* | **`50.0`** | ⛔ **REFUTED** |
+| ⒝ | *"`L803` and `L150` more than `20` points apart"* | `18.2` | survives, **by `1.8`** |
+| ⒞ | *"correlating with `SENTENCE` composition at `\|ρ\| ≥ 0.5`"* | **`ρ = −0.60`** | ⛔ **REFUTED** |
+| ⒟ | *"the `TOKEN` rate spanning more than `25` points"* | **`66.7`** (ignoring the `n=1` cell) | ⛔ **REFUTED** |
+| ⒠ | *"the total missing `38` by more than `8` keys"* | `6` | survives |
+
+***And ⒟ is the one that matters: I built the model on `TOKEN` rates of `75.0`% and `72.2`% and called that route STABLE. Across these five it runs `0.0`, `60.0`, `66.7` — a `66.7`-point spread. The `2.8`-point agreement was two prefixes agreeing by luck, which is ⒟'s own wording, written before the read.*** ⌗ *⒠ survives by CANCELLATION, not accuracy: `+1`, `0`, `−1`, `−1`, `−4`. A total that lands because its errors have opposite signs is not a calibrated total, and I am not claiming it as one.*
+
+### ⛔⛭⛭ THE CORRECTION, AND IT IS THE SAME MISTAKE TWICE IN ONE PREFIX
+
+**`L210`'s `A PHANTOM, and I built it from the advertisement` — I had called it `MEANING-HELD` and it is `REPAIR-OWED`.** *I had the sha in hand (`6facc0f5af53` does satisfy `H1`–`H5`) and let it decide a row the ordered test disposes of before any sentence-tier verdict is reachable at all.* ⇒ ***A valid `held at` is NECESSARY for `MEANING-HELD` and never SUFFICIENT: it shows the key was READ, and says nothing about whether the span NAMES ITS SUBJECT.*** *The span is `DANGLING` twice — `A PHANTOM` is a bare noun phrase whose subject (`"Whether the SPACETIME extends across r=0"`) is in the PREVIOUS TABLE CELL, and the second conjunct's object is the pronoun `it` with that same antecedent outside.*
+
+⌗ **And the same shape caught a second row, in `P14`, where I checked rather than assumed:** *`construction of this paper they are equivalent vantages` also has a valid `held at 57677a7ecfad` and is also `REPAIR-OWED` — opens mid-prepositional-phrase, and `they` is a pronoun. **Two rows, one error, and the second only came out because the first had just taught me to run the test before reaching for the sha.***
+
+**`L210`'s `or` pair flipped which arm is owed, and the implication runs opposite to how the pair reads.** *`'94 UNMARKED' in arc or '94 unmarked' in arc.lower()`: arm 1 IMPLIES arm 2, so `arm1 or arm2 ≡ arm2` and **it is the EXACT-CASE arm that can never change the result**, not the case-folded one. `94 UNMARKED` is `REPAIR-OWED` under ⓒ; `94 unmarked` is the arm that decides and takes `ALT-OK`.* ⌗ *The share was `7` of `10` either way, which is exactly why it would have gone unnoticed — **a pre-registered total can be right while both of its components are wrong.***
+
+### ⛔⛭⛭⛭ THE SHARPEST SINGLE ROW OF THE WHOLE CAMPAIGN: A SPAN THAT ASSERTS WHAT ITS OWN SOURCE TWICE DISCLAIMS
+
+**`P14`'s `THERE IS NO SUCH BUNDLE`.** *The demonstrative `SUCH` carries the entire SCOPE of the claim, and its antecedent is outside the span. The receipt it quotes says, in its own voice and twice:*
+
+> *`⚠ NOT CLAIMED. Not that no spacetime bundle could ever be built -- only that the seats do not constitute one, and that this object is on the other base`*
+>
+> *`"There is no spacetime bundle here" is not "no spacetime bundle can exist": it says where this object lives, not what may be built. A finding about a base, not a prohibition`*
+
+⇒ ***So the pinned span, read alone, states the prohibition the source receipt was at pains to disclaim. One demonstrative stripped of its antecedent inverts a finding from "where this object lives" to "what may be built".*** ⌗ *And it is the weakest of four conjoined arms — two of the others name the bundle and its base outright — so the repair costs the receipt nothing.*
+
+### ⌗ THREE SMALLER THINGS, ALL `P14`
+
+- ⛭ **One pattern used TWICE with OPPOSITE POLARITY in one receipt.** *`D2`'s `analytical index|graded index|bulk index` sits inside a negated existential (`NO OTHER paper carries all three senses`), where each extra arm makes the assertion HARDER, and also in a presence test, where each extra arm makes it EASIER. **`ALT-OK` as a row; worth naming as a structure, because the ledger has no way to say that one span is correctly broad in one use and incorrectly broad in another.***
+- ⛔ **And four lines from it, the same receipt locates the sense by ONE of the three forms** — *`o1 = re.search(r'analytical index', t14, re.I).start()` — where `.start()` on a `None` match **raises `AttributeError`**, so a reword inside the receipt's own admitted set of forms kills the process and `VERDICT 5`'s CONTROL never runs. `REPAIR-OWED`, and the repair is the pattern the receipt already built: `_ALL3.search(t14)`.*
+- ⌗ **A pin satisfied by a site its claim does not concern, for the second time this batch.** *`unfixed arbitrary modulus` has `2` occurrences in `P14`, and the second is a general statement about the founding principle with no one-hinge truncation in it — so the pin would keep passing if the exclusion sentence were deleted. **Same shape as `L210`'s `a CONSTANT`, which is carried by an unrelated `Z_3` monodromy sentence in the same file.** Two instances, two prefixes, one shape: a span short enough to be re-satisfied elsewhere in its own target.*
+
+### ⛭⛭ THE ONE HYPOTHESIS THIS BATCH GENERATED, AND I AM NOT FITTING IT TO THE SAMPLE THAT PRODUCED IT
+
+***`L258_the_pin_and_the_thing_that_moves` is the outlier low at `30.0`%, with `0` of `4` `TOKEN` keys owed — the only zero in the campaign. Its SUBJECT is pin discipline: it is the receipt about checks pinned to things that move.*** ⇒ **PROPOSED, UNTESTED: a receipt whose subject IS pin discipline has better pins.** *One supporting point, no instrument. **Pre-register it before the next batch is read, or drop it — fitting it here is the move `r7269` was written to stop.***
+
+⌗ **And `L258` left a gap in the vocabulary that no verdict of mine can close:** *its bounded-gap claim probe — the form that receipt exists to advocate, and the one the corpus has concluded is right — **cannot take `MEANING-HELD`, measured**: `H3` looks for the LITERAL and that literal is a PATTERN. `ALT-OK` is the closest fit and is what I used. ***The ledger has no slot that rewards a reordering-tolerant probe.***
+
+### WHAT IS STILL WITH YOU, NEITHER BLOCKING, NEITHER RAISED AGAIN
+
+- *The withheld holder — the rate-rule `P15` receipt whose standing gate says it computes NOTHING, blocking three rows.*
+- *Whether the `L-249` call was mine to take.*
+- *The `S30` finding: its `Ⓓ②` gate asserts the shape of its own revision's diff, is red on `main`, and will red every branch until its author restates it.*
+
+⌗ *`32` widenings next, pushed in pieces. `r7243` stands.*

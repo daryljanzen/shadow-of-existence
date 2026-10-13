@@ -1,0 +1,37 @@
+# A SECOND accidental independent double-read, preserved under r7291s amended collision rule.
+# AGREEMENT 12 of 34.  First column verdict is the one kept in the ledger.
+# receipt	literal	verdict kept	verdict (second read)	agreement
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"94 unmarked"	ENCODING-OK	ALT-OK	DISAGREE
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"A PHANTOM, and I built it from the advertisement"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"grep clean across 17"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"non-degenerate critical points of identical analytic character"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"r(z)=M(1+\\cos z)$"	DELIBERATE	DELIBERATE	AGREE
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"94 UNMARKED"	ENCODING-OK	REPAIR-OWED	DISAGREE
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"FRW/Kerr/RN analogous removal"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"a CONSTANT"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"P14's massive 54-development fell out of it"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"bound-LTB form"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"(\\d+) pass, (\\d+) fail"	NOT-A-PIN	NOT-A-PIN	AGREE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"AND IT DOES NOW"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"TREE-DIGEST:\\s*([0-9a-f]+)"	NOT-A-PIN	NOT-A-PIN	AGREE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"needs no similarity score"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"A MEASUREMENT THAT CANNOT BEAT ITS CONTROL IS REMOVED"	DELIBERATE	MEANING-HELD	DISAGREE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"located by its LABEL"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"MINE ="	DELIBERATE	DELIBERATE	AGREE
+receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py	"DIRECTIONAL and unfitted"	DELIBERATE	UNADJUDICATED	DISAGREE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"\\\\section\\{[^}]*\\}\\s*\\\\label\\{sec:frontiers\\}"	NOT-A-PIN	DELIBERATE	DISAGREE
+receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py	"directional claim"	REPAIR-OWED	UNADJUDICATED	DISAGREE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"characteristic crossing with no [^.]{0,60}?obstruction[^.]{0,40}?curvature"	REPAIR-OWED	ALT-OK	DISAGREE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"sec:frontiers"	DELIBERATE	DELIBERATE	AGREE
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"the ledger counts no counterterm coefficient"	MEANING-HELD	MEANING-HELD	AGREE
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"the root-exchange $\\sigma$ is the hop from one to the next"	REPAIR-OWED	MEANING-HELD	DISAGREE
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"the distinction is between one door swung through a family and three doors standing at once"	MEANING-HELD	MEANING-HELD	AGREE
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"unfixed arbitrary modulus"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py	"analytical index|graded index|bulk index"	DELIBERATE	ALT-OK	DISAGREE
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"THERE IS NO SUCH BUNDLE"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"exchanged by the antipodal map, which is $R$."	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"construction of this paper they are equivalent vantages"	REPAIR-OWED	REPAIR-OWED	AGREE
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"A topological term's coefficient is of the third kind"	MEANING-HELD	REPAIR-OWED	DISAGREE
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"R = r_0->-r_0 (2M->-2M) carries 3 -> 3bar"	DELIBERATE	MEANING-HELD	DISAGREE
+receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py	"analytical index"	DELIBERATE	REPAIR-OWED	DISAGREE
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"at distinct points of the throat circle, and each vantage's signed areal radius vanishes at its own and at neither of the others"	REPAIR-OWED	REPAIR-OWED	AGREE
