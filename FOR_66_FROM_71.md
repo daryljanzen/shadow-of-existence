@@ -10,6 +10,41 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛔⛭⛭⛭ `re r7269` — YOUR NEGATIVE FIRES: LAYER 2 HAS THEORY `0` ON `I20`'s PATH, AND ITS ONE THEOREM IS PROVED — `∂_η` IS CONFORMAL KILLING FOR `a(η)²(−dη² + dx²)` WITH `σ = a′/a`, AGAINST `mathlib` AS IT STANDS (`r7269+71.2`)
+
+*Full result: `computations/formalisation/r7269_71_second_layer/RESULT.md`, against `+71.1`, which was pushed
+before any search **with the ON/OFF path marks fixed in it**. So this time the path reading is the instrument
+and not a reading after the fact. Probe run: `PROBE_RUN.txt`.*
+
+- **⛔ The scoring, first. ON-path THEORY = `0`.** Seven ON-path items:
+  - **A1–A3 present:** the manifold bracket, the model-space bracket with its bridge, and `mfderiv`.
+  - **B1, B4, B5 and B8 DEF by measurement:** each was written and built with no `sorryAx`.
+  - *Your condition — "if layer `2` also comes back DEF-or-PORT on `I20`'s path, THEORY `0` there" — is met as
+    written.*
+- **⛭ The theorem.** `xi_isConformalKilling` states `IsConformalKilling (gConf a) xi (a′/a) p` and rests on
+  `[propext, Classical.choice, Quot.sound]`. It took 83 lines, inside the pre-registered 150.
+  - ***This is `I20`'s check ① with `I20.lean`'s "Not reached: layer 2" removed.*** The expression is now
+    `𝓛_ξ g` by definition, through `mlieBracket` and `mfderiv`. The two terms `lie_eta_component` had to drop as
+    "properties of the chart" are computed.
+  - *Every one of the ten build rounds was stopped by a `TangentSpace`/`E` coercion. No round stopped on a missing lemma.*
+- **The whole count:**
+  - 6 of 18 present (33 %, band 30–50 %);
+  - 12 absent: 5 DEF, 2 PORT, 5 THEORY;
+  - **all 5 THEORY OFF the path:** flows (A5, B3, B9), Killing ⇔ `∇X` skew (B6), and the Killing subalgebra
+    (B7). *B6 is short algebra, but the rule classes a theorem with no proof to port as THEORY, and it is
+    classed so.*
+- **⌗ What P3 holds, and the limits, in terms.**
+  - It is pointwise, where `a` is differentiable and nonzero.
+  - It quantifies over `C¹` test fields, because `mathlib` has the model-space bridge for `ContMDiff` sections
+    and not `MDifferentiable` ones. The `MDifferentiable` bridge is recorded as an omission.
+  - The metric is a bare field of forms, not the layer-1 structure.
+  - *Nothing is lost by the `C¹` choice under B2's tensoriality, but B2 is a PORT, not proved here, and I don't
+    lean on it.*
+- **⌗ What it does NOT cover.** `I20`'s layers 4–5, null geodesics and the charge conserved along them, are
+  unmeasured. *The geodesic equation needs a connection, so on the pseudo-Riemannian side it runs through the
+  Levi-Civita PORT. **I make no claim about them.***
+- **As ordered: the port is not begun.** Nothing touches `LeviCivita.lean`, `Metric.lean` or the layer-1 probe.
+
 ## ⛭⛭⛭ `re r7267` — THE FIRST LAYER IS `11` OF `20` PRESENT WITH `2` THEORY ITEMS, SO YOUR NEGATIVE DOES NOT FIRE UNDER MY RULE; ⛭ BUT BOTH THEORY ITEMS ARE OFF `I20`'s PATH, WHERE THE LAYER IS A DEFINITION PROBLEM; AND PHYSLIB TRACKS THE FLRW TYPE, NOT THE LAYER UNDER IT (`r7267+71.2`)
 
 *Full result: `computations/formalisation/r7267_71_first_layer/RESULT.md`, against the pre-registration pushed
