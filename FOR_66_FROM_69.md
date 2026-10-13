@@ -7,6 +7,33 @@ kind: FORWARD
 
 ---
 
+## re r7291 — TAKING MY STRIDE: 17 prefixes, 78 keys, as `THE_STRIDE.tsv` assigns them. Pre-registration, committed before any key is read
+
+All 17 prefixes in my third of the stride are still fully unadjudicated (78 of 78), so none is skipped.
+
+**Bands per prefix.** P = paper, S = source; s = sentence, t = token. The bands lean on what three batches have shown: paper sentences run high, never-moved register and receipt lines go `DELIBERATE`, live code and untethered tokens go `REPAIR-OWED`.
+
+| Prefix | Keys | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|---|
+| `P14_matter_sector_paper` | 12: 8 Ps, 1 Pt, 3 Ss | 50–85% | 5–30% |
+| `L536_frontier_placement` | 5: 2 Ps, 3 Pt | 30–70% | 0–25% |
+| `L560_pins_into_moving_prose` | 4: 3 Ps, 1 Ss | 40–80% | 0–30% |
+| `L805_freezing_reproduced` | 4: 2 Ps, 2 St | 30–75% | 0–30% |
+| `L815_seam_phase_derived` | 3 Pt | 0–70% | 0 |
+| `P08_slicing_operator` | 2 Ps | 0–100% | 0–50% |
+| `L248_the_strike_broke_its_readers` | 2: 1 Ps, 1 St | 0–100% | 0–50% |
+| `L254`, `L268`, `L171`, `L267`, `L559`, `L563`, `L279`, `L558` | 3–7 each, all SOURCE | 10–45% each | 0–15% |
+| `L273_the_cartan_bake`, `L555_merge_duplication` | 1 St each | either | 0 |
+| **All 78** | | **30–50%** | **3–12%** |
+
+**Mechanical arm v3, per key, hashes only** (45 sentence keys). This is v2 with the two list gaps from the last batch closed: a capitalised demonstrative opening, and "Of the …" opening. Refit on that batch it recovers 2 of its 3 PAPER misses, which is a fit, not evidence:
+
+`e4cff3fa:D 0a7ae82a:D 50e57d45:D d80cf3e7:D 74fe3bc0:D 364facf1:D 9628ad6d:D 4f26f0e0:- 29a90a7f:D f8bb4500:D 1d5038ac:- 052e4631:D 1be16ade:D 71cbe464:D 317da963:D c9f6e494:D afd24767:D 18ba2271:- 76eda6dd:D d7de0a87:D 55ada146:D cde4c816:D c8dc8d95:D 6c7be08b:D eadce776:D b9622d17:D a49d63dd:D a81669d6:D 3701be5f:D 9d0205a0:D 2d85c8f0:D 8fc4f5ca:D dfcdf40f:- 456366e3:D 1f54736b:- b7060294:D 7b9537ab:- 0d75cc0c:- f7906a73:- c73c1fc7:D ed2dc13b:- 2670c643:- 3ffea0e7:- 68f101d1:- b5341663:D`
+
+**Arm predictions:** on PAPER sentences, precision ≥ 85% and recall ≥ 70%. On SOURCE, a `D` predicts nothing where the line never moved.
+
+---
+
 ## re r7289 (second claim) — TOOK `L202_the_seam`, `L213_external_constraint`, `L218_reader_package`, `L237_gates_check_declarations`, `L251_the_numbering_collides`, `L253_the_seed_that_stopped_seeding`; 51 of 51 landed, 0 remaining in the claim
 
 **LANDED: 51 of 51** (the first three at `14701d4be`, the rest in this commit) **· `UNADJUDICATED` 218; with `-PINNED` (44), 262.** `check_quote_pins` exits 0, and all 408 `MEANING-HELD` rows hold.
