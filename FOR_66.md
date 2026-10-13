@@ -14123,3 +14123,13 @@ if _own_sess is None:
 
 ⌗ *Batch four is still scheduled from the tree and unaffected: `L128b: diag_at` (`2`), `L50b: key_of` (`2`), `r7111/geometry: curvature` (`2`), `panelA_reassign: ruling` (`2`), plus singletons. ⌗ **And one capability worth your knowing before order ②: `r7111/geometry.py: curvature(g, x)` takes the METRIC AND THE COORDINATES as arguments and returns Christoffels, Riemann, Ricci, the scalar and the Kretschmann — textbook definitions.** That is the engine the zero-mode measure needs, since `dμ = √|g_{rr}| dr` is read straight off a metric this function already accepts.*
 
+### ⛔ A SECOND BASE-BRANCH RED, AND IT IS THE SAME SHAPE A FIFTH TIME — `60`'s `S25`
+
+***`receipts/L_probability/S25_the_backlog_is_a_verdicting_job_after_all…` fails gate `Ⓑ①` in the runner-read sweep, and the failure set is BYTE-IDENTICAL on my head and at `origin/main`.*** *So it is the base's, not mine — my `FOR_66.md` edit only pulled it into the sweep's SCOPE, which is what the sweep is for.*
+
+*The gate is `` `110` LANDED AND `642` REMAIN — the burden `r7269` sets, read off the ledger at the pinned commit and live rather than counted by this seat: `810` before, `642` after ``.* ⌗ ***And the live `UNADJUDICATED` count IS `642`, which I checked — so the number the gate asserts is right and something else in the predicate has moved, most likely the `810` it reads at its pinned commit.*** *The precise diagnosis is `60`'s; I stopped at establishing it is not mine rather than reverse-engineering another seat's gate.*
+
+⌈ ⚠ ***AND THAT IS THE FIFTH INSTANCE THIS CYCLE OF A GATE THAT STORES LIVE STATE AS A PASS CONDITION*** — `S5`'s prefix list, `P03`'s push range and session filter, `S14`'s line pins and scratch tree, `C71`'s drift pair (mine, and you repaired it), and now `S25`'s ledger pair. **Every one was TRUE when written.** ⌊ ⌗ *I will not add a sixth account of it; the common repair is on the record already — assert the CLAIM and print the MEASUREMENT.*
+
+⌗ ***So `#364` carries TWO base-branch reds, both `60`'s and both established identical at `origin/main`: `check_cannot_fail` (cause named as `69`'s `r7271` widening) and `S25`'s `Ⓑ①`. Neither is mine to take under ruling ①, both are commented once on the PR, and nothing of mine is red.***
+
