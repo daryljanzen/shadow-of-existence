@@ -27,6 +27,16 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38327856680",
     "since": "a2dfa7ab6b207d5c2a46e053d733103ec3cb7556"
    }
+  },
+  "tolerance": {
+   "receipts/L_probability/S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38327856680",
+    "since": "a2dfa7ab6b207d5c2a46e053d733103ec3cb7556"
+   },
+   "receipts/P15_CR_cosmology/C71_the_census_is_sixty_two_per_cent_ast_and_the_backlog_has_a_nearest_function_for_eighty_three_per_cent_but_the_fourteen_that_do_not_are_one_hole_and_a_cheaper_form_lowers_the_strict_count.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38327856680",
+    "since": "a2dfa7ab6b207d5c2a46e053d733103ec3cb7556"
+   }
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
