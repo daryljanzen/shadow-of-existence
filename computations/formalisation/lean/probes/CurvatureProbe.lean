@@ -73,6 +73,100 @@ theorem curv_smul_middle [CovariantDerivative.ContMDiffCovariantDerivative cov (
     curv cov X (f • Y) Z x = f x • curv cov X Y Z x := by
   rw [curv_swap, curv_smul_left cov hf hY hX hZ, curv_swap cov Y X, smul_neg, neg_neg]
 
+set_option backward.isDefEq.respectTransparency false in
+/-- **(b)** `y ↦ df(y)(Y y)` is differentiable, from `ContMDiffAt.mfderiv_apply` by undoing its two
+coordinate changes on the chart at `x₀`. -/
+lemma mdiff_df_apply {f : M → ℝ} (hf : CMDiff ∞ f) {Y : Π x : M, TangentSpace I x}
+    (hY : CMDiff ∞ (T% Y)) (x₀ : M) : MDiffAt (fun y => d% f y (Y y)) x₀ := by
+  have hg₂ := (contMDiffAt_section (IB := I) (s := Y) x₀).1 (hY x₀)
+  have h := ContMDiffAt.mfderiv_apply (I' := 𝓘(ℝ, ℝ)) (n := ∞) (m := 1) (fun _ : M => f) id id
+    (fun y => (trivializationAt E (TangentSpace I) x₀ ⟨y, Y y⟩).2)
+    ((hf x₀).comp _ contMDiffAt_snd) contMDiffAt_id contMDiffAt_id (hg₂.of_le (by simp)) (by simp)
+  refine (h.mdifferentiableAt (by simp)).congr_of_eventuallyEq ?_
+  filter_upwards [chart_source_mem_nhds H x₀] with y hy
+  simp only [id]
+  rw [inTangentCoordinates_eq _ _ _ hy (by simp)]
+  simp only [id, tangentBundleCore_coordChange_model_space, ContinuousLinearMap.id_comp,
+    ContinuousLinearMap.comp_apply]
+  have hv : (trivializationAt E (TangentSpace I) x₀ ⟨y, Y y⟩).2
+      = (tangentBundleCore I M).coordChange (achart H y) (achart H x₀) y (Y y) := rfl
+  have hyy : y ∈ (tangentBundleCore I M).baseSet (achart H y) := mem_chart_source H y
+  have hy0 : y ∈ (tangentBundleCore I M).baseSet (achart H x₀) := hy
+  have hcc : (tangentBundleCore I M).coordChange (achart H x₀) (achart H y) y
+      ((tangentBundleCore I M).coordChange (achart H y) (achart H x₀) y (Y y)) = Y y := by
+    rw [(tangentBundleCore I M).coordChange_comp _ _ _ y ⟨⟨hyy, hy0⟩, hyy⟩,
+      (tangentBundleCore I M).coordChange_self _ y hyy]
+  rw [hv]
+  exact Eq.trans rfl (congrArg (fun v => (mfderiv% f y) v) hcc.symm)
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **(c), via Jacobi:** `(X(Yf) − Y(Xf) − [X,Y]f) · Z = 0` at `x`. Jacobi for `f • Z` minus `f` times
+Jacobi for `Z`, each bracket expanded by `mlieBracket_smul_right`. -/
+lemma jacobi_fun {f : M → ℝ} (hf : CMDiff ∞ f) {X Y Z : Π x : M, TangentSpace I x}
+    (hX : CMDiff ∞ (T% X)) (hY : CMDiff ∞ (T% Y)) (hZ : CMDiff ∞ (T% Z)) (x : M) :
+    (d% (fun y => d% f y (Y y)) x (X x) - d% (fun y => d% f y (X y)) x (Y x)
+      - d% f x (mlieBracket I X Y x)) • Z x = 0 := by
+  have : IsManifold I (minSmoothness ℝ 3) M := .of_le (n := ∞) (by simp)
+  have : IsManifold I (minSmoothness ℝ 2) M := .of_le (n := ∞) (by simp)
+  have : IsManifold I (((2 : ℕ∞) : ℕ∞ω) + 1) M := .of_le (n := ∞) (by simp)
+  have md : ∀ {V : Π x : M, TangentSpace I x}, CMDiff ∞ (T% V) → ∀ y, MDiffAt (T% V) y :=
+    fun hV y => (hV y).mdifferentiableAt (by simp)
+  have mf : ∀ y, MDiffAt f y := fun y => (hf y).mdifferentiableAt (by simp)
+  have br : ∀ {U V : Π x : M, TangentSpace I x}, CMDiff ∞ (T% U) → CMDiff ∞ (T% V) →
+      MDiffAt (T% (mlieBracket I U V)) x := fun hU hV =>
+    (((hU x).of_le (by simp)).mlieBracket_vectorField (m := 1) (n := 2) ((hV x).of_le (by simp))
+      (by simp; rfl)).mdifferentiableAt (by simp)
+  have hfZ : CMDiff ∞ (T% (f • Z)) := hf.smul_section hZ
+  have exp : ∀ V : Π x : M, TangentSpace I x,
+      mlieBracket I V (f • Z) = (fun y => d% f y (V y)) • Z + f • mlieBracket I V Z :=
+    fun _ => funext fun y => mlieBracket_smul_right (mf y) (md hZ y)
+  have j1 := leibniz_identity_mlieBracket_apply (x := x) ((hX x).of_le (by simp))
+    ((hY x).of_le (by simp)) ((hfZ x).of_le (by simp))
+  have j0 := leibniz_identity_mlieBracket_apply (x := x) ((hX x).of_le (by simp))
+    ((hY x).of_le (by simp)) ((hZ x).of_le (by simp))
+  rw [exp Y, exp X, exp (mlieBracket I X Y), mlieBracket_add_right ((mdiff_df_apply hf hY x).smul_section (md hZ x))
+    ((mf x).smul_section (br hY hZ)), mlieBracket_add_right
+    ((mdiff_df_apply hf hX x).smul_section (md hZ x)) ((mf x).smul_section (br hX hZ)),
+    mlieBracket_smul_right (mdiff_df_apply hf hY x) (md hZ x), mlieBracket_smul_right (mf x) (br hY hZ),
+    mlieBracket_smul_right (mdiff_df_apply hf hX x) (md hZ x), mlieBracket_smul_right (mf x) (br hX hZ),
+    Pi.add_apply, Pi.smul_apply', Pi.smul_apply'] at j1
+  rw [j0] at j1
+  rw [sub_smul, sub_smul]
+  linear_combination (norm := module) j1
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **K-B, the `Z` slot.** `R(X, Y)(f Z) = f R(X, Y) Z`. -/
+theorem curv_smul_right [CovariantDerivative.ContMDiffCovariantDerivative cov (∞ : ℕ∞ω)]
+    {f : M → ℝ} (hf : CMDiff ∞ f) {X Y Z : Π x : M, TangentSpace I x} (hX : CMDiff ∞ (T% X))
+    (hY : CMDiff ∞ (T% Y)) (hZ : CMDiff ∞ (T% Z)) (x : M) :
+    curv cov X Y (f • Z) x = f x • curv cov X Y Z x := by
+  have md : ∀ {V : Π x : M, TangentSpace I x}, CMDiff ∞ (T% V) → ∀ y, MDiffAt (T% V) y :=
+    fun hV y => (hV y).mdifferentiableAt (by simp)
+  have mf : ∀ y, MDiffAt f y := fun y => (hf y).mdifferentiableAt (by simp)
+  have hc := cov.isCovariantDerivativeOn (s := univ)
+  have s : ∀ V : Π x : M, TangentSpace I x, (fun y => cov (f • Z) y (V y))
+      = f • (fun y => cov Z y (V y)) + (fun y => d% f y (V y)) • Z := fun V => funext fun y => by
+    rw [hc.leibniz (md hZ y) (mf y)]; rfl
+  have e : ∀ {V W : Π x : M, TangentSpace I x}, CMDiff ∞ (T% V) → CMDiff ∞ (T% W) →
+      cov (f • (fun y => cov Z y (V y)) + (fun y => d% f y (V y)) • Z) x (W x)
+        = f x • cov (fun y => cov Z y (V y)) x (W x) + d% f x (W x) • cov Z x (V x)
+          + d% f x (V x) • cov Z x (W x) + d% (fun y => d% f y (V y)) x (W x) • Z x :=
+    fun {V W} hV hW => by
+      rw [hc.add ((mf x).smul_section (md (covApply_smooth cov hV hZ) x))
+        ((mdiff_df_apply hf hV x).smul_section (md hZ x)),
+        hc.leibniz (md (covApply_smooth cov hV hZ) x) (mf x),
+        hc.leibniz (md hZ x) (mdiff_df_apply hf hV x)]
+      simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply,
+        ContinuousLinearMap.smulRight_apply]
+      abel
+  unfold curv
+  rw [s Y, s X, e hY hX, e hX hY, hc.leibniz (md hZ x) (mf x)]
+  simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply,
+    ContinuousLinearMap.smulRight_apply]
+  have j := jacobi_fun hf hX hY hZ x
+  rw [sub_smul, sub_smul] at j
+  linear_combination (norm := module) j
+
 /-! ## Probe K2 — on `E` as its own model: the model formula, and the smoothness DISCHARGED -/
 
 section Model
@@ -191,6 +285,7 @@ end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
 #print axioms ShadowProbe.curv_smul_middle
+#print axioms ShadowProbe.curv_smul_right
 #print axioms ShadowProbe.cov_model
 #print axioms ShadowProbe.curv_model
 #print axioms ShadowProbe.contMDiffCov_model
