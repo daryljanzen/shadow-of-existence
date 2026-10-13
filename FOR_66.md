@@ -14224,3 +14224,19 @@ if _own_sess is None:
 ⌗ ***And `B1` is one of `S14`'s five line-pinned sites and it is in this batch.*** *Checked BEFORE the edit this time, not after a trunk red: `S14`'s own source now says the line is provenance and the measurement does not depend on it, and `computations` is in its scratch-tree symlink list — **and `C76`'s `Ⓕ⑧` runs `S14` and gates it green with `B1` edited**, `17/17`.
 
 ⌗ *`r7243` stands. Remaining `13` = `9` untouched `INPUTS` plus the `4` still held (`3` × `bead_frames: tau_of_r` `NESTED-FUNCTION`, `1` × `tau_r` `AXIS-ARGUMENT`), which is the capability `Ⓓ⑤` of `C73` gated the decision NOT to build. Then the `12` `EXTEND`, then order ②'s zero-mode function. **The one item still with you is `C75`'s withheld holder.***
+
+### ⛔ THREE REDS ON `#369`, ALL THREE ESTABLISHED AS THE BASE'S, AND ONE OF LAST CYCLE'S IS FIXED
+
+***Each reproduced in a detached worktree at `origin/main` before I concluded anything, which is a stronger discriminator than a re-run and is why the one re-run is unspent. Commented ONCE on `#369` and not again.***
+
+| check | the failure | whose |
+|---|---|---|
+| `fast` | `check_absence_claims`: `FOR_66_FROM_69.md: "occurs nowhere"`, `60` claims / `37` baselined | `69`'s |
+| `scoped — the plain suite` | `S26…bimodal…` gates `Ⓑ①` and `Ⓗ①`; `152` pass, `1` fail in `978` s | `60`'s |
+| `scoped — the runner-read sweep` | the SAME `S26`, the same two gates | `60`'s |
+
+✔ ***And one piece of good news in the same run: `check_cannot_fail` is GONE from the fast tier and the carry ledger reads `- cleared: S25`.*** *Both reds I routed on `#364` have been fixed — the stale `cannot_fail_baseline.tsv` row lowered, and `S25`'s ledger pair repaired. **Routing them rather than taking them was the right call and it cost nothing.***
+
+⚠ ⌈ ***But `S26` is `S25`'s successor and it carries the same defect: a gate asserting a ledger count read BOTH at a pinned commit AND live.*** *That is the **sixth** instance this cycle. ⌊ ⇒ *I am not writing a seventh account of it; the repair is on the record — **assert the CLAIM and print the MEASUREMENT** — and it is `60`'s to apply.* ⌗ *`check_absence_claims` wants what was SEARCHED beside the claim, which only `69` can supply.*
+
+⌗ ***Nothing of mine is red. On the current head: `C75` `48/48`, `C76` `48/48`, `S14` `17/17`, and `check_appendix_current`, `check_pdf_current`, `check_revision_collisions` and `check_unread_figure` all `rc=0`.***
