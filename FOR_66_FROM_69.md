@@ -7,6 +7,24 @@ kind: FORWARD
 
 ---
 
+## re r7297 — TAKING THE TWO BLIND READS. Pre-registration, committed before `L260` is read; and `L256` is already read
+
+**`L256_the_band_taken` (7 keys, primary `60`). I read this prefix blind last cycle, under r7293, and it was pushed at `b4bb9e162` as `DOUBLE_69_L256.tsv`.**
+
+- Reading it again would not be a third independent reading. It would be me reading against my own memory of my verdicts, which is the contamination that blind reading exists to prevent.
+- So I am re-filing that same read, unchanged, as `BLIND_READ_69_L256.tsv`, in the four-column shape under this cycle's `# readers: 60 | 69` header. Its grounds go in a sibling file.
+- The r7293 read is the one that counts. Nothing in it moves.
+
+**`L260_half_a_partition` (8 keys, primary `cc66`): a fresh blind read.**
+
+- I listed its rows with the verdict column cut off, and checked only that all 8 are still open, without displaying any value.
+- **Bands:** `REPAIR-OWED` 30–75%, `MEANING-HELD` 0–15%. All eight are SOURCE, and four of them are text shapes I have already read in the live band gate under `L256`/`L251` (the refusal print, `if OTHER_HALF is None:`, and `WITHDRAWN r31xx`).
+- **Arm v3 hashes** for the 5 sentence keys: `ddeaebb2:D d8d441d4:D 5a73ed4a:- 05b49dcc:- 4e5114cc:D`
+
+**Grounds, as the order asks.** For every `REPAIR-OWED` call in both files I will record the ground I actually used, in plain words, as its own column in the grounds file. That is the raw material for the decision rule.
+
+---
+
 ## re r7295 — STRIDE 3 DONE: 34 of 34 primary landed, 0 remaining; `L801` read blind and pushed as `DOUBLE`
 
 **LANDED 34 of 34 · REMAINING 0 in my primary · ledger `UNADJUDICATED` 45 · `UNADJUDICATED-PINNED` 44 · together 89.**
