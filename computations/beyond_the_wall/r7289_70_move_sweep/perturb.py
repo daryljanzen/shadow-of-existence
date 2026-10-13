@@ -2,7 +2,10 @@
 """r7289+70: the move-based sweep's perturbation.  In a scratch worktree at a given commit, make the ORDINARY edits other
 seats make every cycle -- one new row in every shared ledger, and HEAD advanced by one empty commit -- and nothing else.
 
-    python3 perturb.py WORKTREE BASE      # creates WORKTREE at BASE, writes the perturbation as two commits, prints the tip
+    python3 perturb.py WORKTREE BASE [--reverdict]
+        # creates WORKTREE at BASE, writes the perturbation as two commits, prints the tip.  --reverdict (EXPLORATORY,
+        # added after the registered run: results.md) also re-verdicts two quote-pin rows, the other ordinary edit:
+        # the first UNADJUDICATED row and the first MEANING-HELD row each become DELIBERATE.
 
 The ledgers are fixed by rule (PREDICTION.md): every tracked `corpus/*.tsv`, `receipts/INDEX.md`, and every root-level
 `THE_*.md`, `FOR_*.md`, `*LEDGER*.md`, `PROTECTED_OPEN.md`, `OWED.md`.  The row each gains is shaped like that file's
@@ -62,6 +65,17 @@ def main():
                 fh.write('\n')
             fh.write(new_row(p, t))
         touched.append(os.path.relpath(p, wt))
+    if '--reverdict' in sys.argv:
+        q = os.path.join(wt, 'corpus', 'quote_pin_baseline.tsv')
+        rows = open(q, encoding='utf-8').read().split('\n')
+        for cls in ('UNADJUDICATED', 'MEANING-HELD'):
+            for i, r in enumerate(rows):
+                c = r.split('\t')
+                if len(c) >= 6 and not r.startswith('#') and c[5] == cls and not c[0].startswith('receipts/ZZ_'):
+                    c[5] = 'DELIBERATE'
+                    rows[i] = '\t'.join(c)
+                    break
+        open(q, 'w', encoding='utf-8').write('\n'.join(rows))
     env = dict(os.environ, GIT_AUTHOR_NAME='move sweep', GIT_AUTHOR_EMAIL='sweep@local',
                GIT_COMMITTER_NAME='move sweep', GIT_COMMITTER_EMAIL='sweep@local')
     subprocess.run(['git', 'add', '-A'], cwd=wt, check=True)
