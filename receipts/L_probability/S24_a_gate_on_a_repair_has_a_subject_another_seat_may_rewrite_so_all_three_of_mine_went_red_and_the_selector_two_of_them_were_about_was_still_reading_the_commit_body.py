@@ -307,13 +307,21 @@ _par_only = [_p for _p in _by_par if _p not in _by_pfx]
 _sess_only = [_p for _p in _by_sess if _p not in _by_pfx]
 print(f'      live receipts {len(_known)}:  prefixes own {len(_by_pfx)};  '
       f'+{len(_sess_only)} by this seat\'s INTRODUCING SESSION;  +{len(_par_only)} by EVEN PARITY')
-gate(f'Ⓓ① ⛔⛭⛭⛭ `66`\'s reversal is ACCEPTED, and the number is why: of `{len(_known)}` live '
-     f'receipts the prefix pair owns `{len(_by_pfx)}`, the parity rule this seat wrote would own '
-     f'`{len(_by_pfx) + len(_par_only)}` --- `{len(_par_only)}` more, a quarter of the corpus\'s '
-     f'receipts turning from `a crossing if touched` into `owned` in one edit, which RETIRES the '
-     f'restraint claim rather than bounding it.  ** The session rule adds `{len(_sess_only)}`, and '
-     f'the difference is receipts introduced by OTHER SESSIONS OF THIS LINE, which a claim about '
-     f'THIS SEAT\'S restraint was never about **',
+# ⛔⛭⛭ r7276 (60): AND THIS LABEL HAD THE RULING THE WRONG WAY ROUND FOR ONE CYCLE.  *`r7267`
+#   reversed the parity predicate and this gate recorded the reversal as ACCEPTED; `r7271` then ruled
+#   the SESSION-MARKER predicate superior and `r7273` RESTORED it to `P03` after a merge of this
+#   line's own had dropped it back to parity.*  ⇒ *** The measurement never moved -- it is the three
+#       counts below -- and what moved is which rule the number argues FOR.  It argues for the
+#       session marker: the narrower rule, read with the instrument the gate already trusts for its
+#       commits.  The merge subject that said a seat is a parity line and not a session was this
+#       seat's own error, and it is corrected here rather than quietly. ***
+gate(f'Ⓓ① ⛔⛭⛭⛭ the OWNERSHIP rule is the SESSION MARKER and the number is why: of `{len(_known)}` '
+     f'live receipts the prefix pair owns `{len(_by_pfx)}`, the session marker adds `'
+     f'{len(_sess_only)}` and the PARITY rule would add `{len(_par_only)}` --- a quarter of the '
+     f'corpus\'s receipts turning from `a crossing if touched` into `owned` in one edit, which '
+     f'RETIRES the restraint claim rather than bounding it.  ** `r7271` ruled the session marker '
+     f'superior and `r7273` restored it after a merge of this line\'s dropped it; the difference '
+     f'between the two numbers is receipts introduced by OTHER SESSIONS of this line **',
      len(_par_only) > len(_sess_only) > 0
      and len(_by_pfx) > 0 and len(_known) > 900)
 
