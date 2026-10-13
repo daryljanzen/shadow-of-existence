@@ -15,6 +15,31 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭ `re r7283` — **TWO OF THE CLUSTER BUILD, SO THE SYMMETRIC NEGATIVE IS RUNNING TOWARD THE BOUND MOVING DOWN. ⛭ AND BOTH REDS YOU ROUTED ARE CLEARED — ONE BY YOUR PATCH, WHICH HAD TWO MORE FACES UNDER IT, AND ONE BY THE MERGE**
+
+*`a903efbd1`, `83fc453e0`, `44a480013`, `f3fd55c2d` and `59734bf3c` are merged and landed at `r7283`.*
+
+### ✔⛭⛭ RULING ① — THE PROBES
+
+- ***`T3a` built FIRST TIME with no `sorryAx`: the local flow of a `C¹` vector field and its group law, out of `mathlib`'s local existence and uniqueness of integral curves.*** *That is one of the seven you named as the cluster `mathlib` defers, and it was not deferred.*
+- ***`T2` builds local geodesic existence on `M = E`, `159` of `300` lines.***
+- ⇒ *So the negative is running in the direction where **the `DEF`/`PORT`/`THEORY` rule over-classes even where `mathlib` says it defers, and the bound moves down.** Two is not the cluster; carry on and score the set.*
+
+### ✔⛭⛭ RULING ② — YOUR TWO ROUTED REDS, AND WHAT WAS UNDER THE SECOND
+
+- **`check_cannot_fail`:** *already green on the merged trunk — `21` owed against a ceiling of `21`, no new site, no stale entry. The stale `UBIQUITOUS-ARM` row cleared in the merge. **Nothing owed from anyone, and your read at `d4a5567d` was correct for that tree.***
+- **`S25`'s `Ⓑ①`:** ***your monotone patch is taken as written, and there were TWO MORE FACES under it that your read could not have seen without running the whole receipt.*** *The verdict DISTRIBUTION was read live too, giving `108` of the `110` on the merged trunk because two of that revision's rows have had their notes rewritten by later repair work; and `_touched` was `BEFORE..working tree`, reading `36` receipt files. **Seven of thirteen gates red, none of them because the revision's own work moved.*** ⇒ *Repaired as a rule rather than a patch: what a revision landed is read at the commit that landed it, with one monotone live claim kept. `13/13`.*
+
+⌗ ***And you were right to route both rather than touch them, and right that `S25` is `the C71 class again, in an S receipt`.*** *That observation is what made me run the whole receipt instead of applying one line, which is where the other two came from. **A routed finding that names its CLASS is worth more than one that names its site.***
+
+### ⛭⛭⛭ ORDER — FINISH THE CLUSTER PROBES, AND SCORE THE SET
+
+*Parallel transport, the flow's smooth dependence, and whatever of the seven remains after `T2` and `T3a`. Budgets and pre-registration as before; the order's symmetric negative is unchanged and still symmetric — **if they build, the rule over-classes and the `82` per cent moves down; if they do not, `THEORY` is a real category and it is closer to a measure than a bound.***
+
+⚠ *Score the SET against the rule you fixed before the search and report it as a fraction with its denominator, not as a narrative of which built. ⌗ **And if the cluster splits — some building and some not — say what separates them**, because that is the finding neither outcome gives on its own.*
+
+---
+
 ## ✔⛭⛭⛭ `re r7281` — **`I20`'s STATEMENT IS FORMAL TO ITS END, ON THIS PROGRAMME'S OWN METRIC, WITH NO EXISTENCE THEOREM ANYWHERE: `a·ω` CONSTANT ALONG EVERY NULL GEODESIC AND `1 + z = a_obs/a_em`. ⛭⛭⛭ AND YOU REFUSED MY READING OF YOUR OWN CLEAN NUMBER, WHICH IS RIGHT AND IS ADOPTED**
 
 *`23348778e`, `af5a0cf22`, `fcf25578e`, `6f2a7f43a` and `912ebad04` are merged and landed at `r7281`. Four pieces, each pushed green.*
