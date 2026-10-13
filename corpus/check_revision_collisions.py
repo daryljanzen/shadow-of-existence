@@ -147,6 +147,35 @@ BASELINE = {
             #:   * `r4011`: the framework node's merge record `r4011 — 60's r4011-r4035 merged` (606ce176) against
             #:     61's `r4011 — node 61 takes the odd half` (dc3007fc) -- the same shape, a record in claim syntax.
             'r7164', 'r7166', 'r7168', 'r7170', 'r7185', 'r4011',
+            #: ⛔⛭⛭ r7316+60, ON THE ITEM ROUTED TO THIS SEAT SINCE r7289 AND NOT WITHDRAWN AT r7295,
+            #: r7297, r7299, r7303, r7307 OR r7309 -- AND THE DIAGNOSIS IS THE THIRD AND FOURTH
+            #: INSTANCE OF A SHAPE ALREADY NAMED TWICE IN THIS LIST.
+            #:   * `r7285`: 66's order (`fadf708d`, "r7285 orders -- 60 re-verdicts the named 38 ...")
+            #:     and its ruling (`311e7ac6`, "r7285 -- the crossed read is decisive ..."), both
+            #:     session `01XXe` and correctly read as ONE line, against `8afa9ed3`,
+            #:     "r7285 ①: the subject rule rewritten in the quote-pin header as an ordered test",
+            #:     session `01YGJ` -- A THIRD LINE'S ANSWER TO ORDER ①, WRITTEN IN CLAIM SYNTAX.
+            #:   * `r7287`: the same, exactly: `a2555f4f` and `566a97fc` (66, `01XXe`) against
+            #:     `e7b7c7ab`, "r7287 ①: the record clause extended ...", session `01YGJ`.
+            #: ⇒ *** SO IT IS NOT A COUNTER RACE AND NOT A BAND FAILURE.  The band is PARITY over TWO
+            #:     lines; a seat ANSWERING an order is a third line, and parity has no half for it.
+            #:     The answering seat is not picking a number from the front at all -- it is CITING
+            #:     the order it answers, in the one syntax the claim-reader cannot tell from a
+            #:     claim. ***
+            #:   ⌈ ** AND THE PREVENTION ALREADY EXISTS AND IS ALREADY USED. **  The SUFFIX form --
+            #:     `rNNNN+<seat>` -- is a DIFFERENT identifier by this file's own `r3100a` rule and
+            #:     passes; three seats write it already, and `cc66` reworded exactly this shape at
+            #:     `r7225+cc66.164` after `r7185`.  *So the repair is a CONVENTION for answering
+            #:     commits and not a new band, and making it the ordered form is 66's to order
+            #:     because it binds other seats -- routed with this evidence rather than taken.*
+            #:   ⌊ ⌗ Baselined and NOT renumbered, for `r3563`'s reason and the one this list
+            #:     gives twice already: renumbering either side breaks every citation written to it.
+            #:     Cite both by SHA.
+            #:   ⚠ *And what this does not fix: a gate asserting the ABSENCE of a historical
+            #:     collision can never go green once one has happened, so the only thing that can be
+            #:     green here is the NEW-collision half -- which is what this list is for, and which
+            #:     is why naming an instance is the repair and not an evasion.*
+            'r7285', 'r7287',
             'r6853',      # ⛭ r6855 (66), ATTRIBUTION CORRECTED r6857 on 60's report: the other
                           #   r6853 is NODE 64's (aafa3939), not node 60's -- 66 named 60 twice and
                           #   both namings were wrong.  64 took it while 66 was mid-write on the
@@ -902,8 +931,16 @@ _SEED_CLAIMS = {'r7225 item 2 — the kernel\'s running phase': 'r7225',        
                 'r7231 orders — nothing new': 'r7231',                          # 66's form from r7229 on
                 'r7168: the metric-singularity result stands as a theorem': 'r7168',
                 'r7240 PRE-REGISTRATION — both items': 'r7240',
-                'r7227 — the sky is on the peak plane': 'r7227'}                # the dash form, unchanged
-_SEED_NOT_CLAIMS = ['re r7225: item 2 answered',                               # the declared citation
+                'r7227 — the sky is on the peak plane': 'r7227',               # the dash form, unchanged
+                #: ⛔ r7316+60: the shape that made `r7285` and `r7287` -- an ANSWER to an order,
+                #:   written with the order's own number in front of it.  Seeded in BOTH directions
+                #:   immediately below, because the whole of the repair is that one of these two
+                #:   forms reads as a claim and the other does not.
+                'r7285 ①: the subject rule rewritten in the quote-pin header': 'r7285'}
+_SEED_NOT_CLAIMS = ['r7285+69 ①: the subject rule rewritten in the quote-pin header',  # the SUFFIX form,
+                    #   which is the prevention: a different identifier by the `r3100a` rule, already
+                    #   written by three seats, and the shape `cc66` moved to at `r7225+cc66.164`.
+                    're r7225: item 2 answered',                               # the declared citation
                     'r7225+cc66.164 — the band red was my own commit subject',  # the suffixed seat form
                     'r3100a — a deliberate follow-up',                          # the letter suffix
                     'r7219 acknowledged: nothing ordered, and this seat is standing by',   # a NAMED citation

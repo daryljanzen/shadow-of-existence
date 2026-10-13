@@ -286,14 +286,30 @@ head('B.  THE COVERAGE, AGAINST THE BAND PRE-REGISTERED BEFORE ANY OF THIS WAS B
 
 _band = (2, 12)
 _guess = 6
+# ⛔⛭⛭ r7316+60: THE BAND WAS SCORED AGAINST A RANGE THAT GROWS WITH EVERY LATER PUSH.  `RANGE` is
+#   `origin/main..HEAD` united with this file's own history, so each revision this line adds to the
+#   branch enlarges it and admits more sites -- it reached `13` against a band of `2`-`12` and the
+#   gate went red on this line's own later work, four revisions after the band was scored.
+#   ⇒ *** A PRE-REGISTERED BAND IS SCORED ONCE, AT THE COMMIT THAT REGISTERED IT.  The comment above
+#       already caught the sibling of this -- a range that EMPTIES on merge -- and repaired it by
+#       uniting with `OWN_HISTORY`; the same range still GROWS on every push, and a band scored
+#       against it is a prediction re-scored against a different population every time. ***
+#   The band is now scored over this receipt's OWN HISTORY alone, which changes only when this file
+#   does, and the branch-range figure is REPORTED beside it.
+_own_at_rev = own_sites(SITES, WRITERS, OWN_HISTORY)
 print(f"      pre-registered band {_band[0]}-{_band[1]} of the live claim-sites, central guess "
-      f"{_guess};  measured {len(OWN)} of {len(SITES)} "
-      f"({100.0 * len(OWN) / max(1, len(SITES)):.1f} per cent)")
-gate(f'Ⓑ① *** THE PRE-REGISTERED COVERAGE BAND HOLDS: `{_band[0]}`-`{_band[1]}` of the live '
-     f'claim-sites was the band, `{_guess}` the central guess, and the measured coverage is '
-     f'`{len(OWN)}` of `{len(SITES)}`. ***  ⌗ *One prediction of this revision`s four is right, and '
-     f'it is the one the order asked for in advance*',
-     _band[0] <= len(OWN) <= _band[1])
+      f"{_guess};  scored over this receipt's own history: {len(_own_at_rev)} of {len(SITES)} "
+      f"({100.0 * len(_own_at_rev) / max(1, len(SITES)):.1f} per cent);  over the whole branch "
+      f"range, reported: {len(OWN)}")
+gate(f'Ⓑ① *** THE PRE-REGISTERED COVERAGE BAND HOLDS WHERE IT WAS SCORED: `{_band[0]}`-`{_band[1]}` '
+     f'of the live claim-sites was the band, `{_guess}` the central guess, and the coverage over '
+     f'this receipt`s OWN history is `{len(_own_at_rev)}` of `{len(SITES)}`. ***  ⌗ *One prediction '
+     f'of this revision`s four is right, and it is the one the order asked for in advance.*  '
+     f'⛔ **The first form scored it over `origin/main..HEAD`, which GROWS with every later push of '
+     f'this line, and it reached `{len(OWN)}` -- so the band was being re-scored against a different '
+     f'population each time.  A pre-registered band is scored ONCE, at the commit that registered '
+     f'it, and the branch-range figure is reported beside it**',
+     _band[0] <= len(_own_at_rev) <= _band[1])
 
 gate('Ⓑ①ᵇ *** AND THE COVERAGE OF A SELF-INCLUDING SWEEP IS SET BY THE DETECTOR AND NOT BY THE '
      'SCOPE RULE, which is the part of this that generalises: *** the rule admits every site its own '

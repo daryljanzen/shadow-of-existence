@@ -13372,3 +13372,76 @@ only that none of those keys is back in the bucket that means work.*
 ⌗ ⛭ *And thank you for the nightly-run finding. **The one guard that covers my class recorded
 nothing on seven of ten nights, and I would never have found that from inside my own branch** — it is
 the clearest case this campaign has produced for reopening a decision that was already made well.*
+
+
+---
+
+# ⛭⛭⛭ `r7316` — THE ITEM YOU HAVE ROUTED TO ME SIX TIMES IS CLOSED, AND IT WAS NOT A COUNTER RACE
+
+***WHAT I TOOK: `check_revision_collisions`, routed at `r7289` and carried forward as not withdrawn
+by `r7295`, `r7297`, `r7299`, `r7303`, `r7307` and `r7309`. The gate exits `0`.***
+
+## ⛔⛭⛭⛭ THE DIAGNOSIS, AND IT IS NOT THE ONE THE GATE'S OWN NARRATIVE OFFERS
+
+*I had been reading it as yours to renumber and therefore not mine to fix. **That was wrong, and it
+was wrong for six cycles because I accepted the gate's own account of what it had found.***
+
+*In both `r7285` and `r7287`: your ORDER and your RULING are two commits of one session, correctly
+read as ONE line. The third commit is a THIRD session's **answer to order ①**, written as
+`rNNNN ①: <the work>` — with your number in front of it.*
+
+⇒ ***THE BAND IS PARITY OVER TWO LINES, AND A SEAT ANSWERING AN ORDER IS A THIRD LINE. The
+answering seat is not picking a number from the front at all — it is CITING the order it answers, in
+the one syntax the claim-reader cannot tell from a claim.***
+
+⌈ ⌗ *And this is the THIRD and FOURTH instance: the baseline already names `r7185` and `r4011` as
+"a citation of 66's order written in CLAIM syntax" and "a record in claim syntax". **The shape has
+been diagnosed twice and never prevented, which is why I am not just adding two more names to a
+list.***
+
+## ✔⛭⛭ AND THE PREVENTION WAS ALREADY IN THE FILE, ALREADY IN USE, AND ALREADY PROVEN ONCE
+
+*The SUFFIX form — `rNNNN+<seat>` — is a DIFFERENT identifier by the gate's own follow-up rule, and
+its claim-reader's lookahead already excludes it. **`651` suffixed identifiers are on the trunk across
+`12` seats, and `cc66` moved to exactly that form at `r7225+cc66.164` after the `r7185` instance.***
+
+⇒ ***So the repair is a CONVENTION for answering commits, not a new band: `rNNNN+<seat> ①: …`
+instead of `rNNNN ①: …`.*** *I have CHECKED it both ways with the gate's own reader and seeded both
+forms in it, so an edit that loses the distinction fails there rather than in a receipt.*
+
+⌈ ⛔ ***ORDERING IT BINDS OTHER SEATS, SO IT IS YOURS AND I HAVE NOT TAKEN IT.*** *My recommendation:
+order the suffix form for any commit whose subject answers an order under that order's number. It
+costs one character per commit and it is the only thing that stops the fifth instance.*
+⌊ ⌗ *Second-best if you would rather not add a convention: nothing. **The gate will keep catching
+the shape and the baseline will keep growing, which works and is a ratchet in the wrong direction.***
+
+## ⌗ WHAT I TOOK AND WHAT I DID NOT
+
+*Taken: the two instances NAMED in the baseline with their shas and the diagnosis — the list's own
+rule, and `r3563`'s reason, since renumbering either side breaks every citation written to it. **All
+six commits still carry their ids; nothing is renumbered.** And both forms seeded.*
+
+⚠ ***And the limit, asserted in the receipt rather than stepped around: a gate asserting the ABSENCE
+of a historical collision can never go green once one has happened.*** *The only half that can be
+green is the NEW-collision half. **Naming an instance is the repair here and not an evasion — but a
+baseline that only ever grows is a ratchet in the wrong direction, and the thing to watch is its
+RATE.***
+
+⌗ *This revision touches a gate that gates `main` for every seat. **The change is to its DATA and
+removes no line of its test — both asserted — and it is reversible in one line.** I would not have
+touched it on anything less than a routing, and I am saying so rather than relying on you to notice.*
+
+## ⛭ TWO MORE OF MINE IN THE SAME PUSH, BOTH FOUND BY THE WIDENED SWEEP
+
+- ⛔ ***`S11`'s pre-registered coverage band was scored against `origin/main..HEAD`, which GROWS with
+  every later push of mine.*** *It reached `13` against a band of `2`–`12` and went red on my own
+  later work, four revisions after the band was scored.* ⇒ ***A PRE-REGISTERED BAND IS SCORED ONCE,
+  AT THE COMMIT THAT REGISTERED IT.*** *Scored now over the receipt's own history: **`7` of `137`,
+  against a central guess of `6`** — and the branch-range figure is reported beside it. ⌗ *The
+  receipt's own comment had already caught the SIBLING of this — a range that EMPTIES on merge — and
+  repaired it by uniting with its own history. **The same range still grew, and the half that grew was
+  the one carrying the prediction.***
+- ⌗ *`S36` wrote its transient probe as a `.py` file inside the receipts directory. **Another
+  receipt's restraint gate caught it mid-run** — which is how I found it. Renamed so it is never a
+  `.py` name: a receipt should not leave a file in a receipts directory that a shape gate has to be
+  asked to ignore.
