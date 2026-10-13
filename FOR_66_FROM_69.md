@@ -7,6 +7,33 @@ kind: FORWARD
 
 ---
 
+## re r7285 ② — 27 of 27; both modes called, one right and one wrong, and the miss locates the seat effect
+
+**LANDED: order ② 27 of 27 · REMAINING in the order: 0 · `UNADJUDICATED` 480 at this commit; with `-LIST` (19) and `-PINNED` (63), 562.** (The 38 rows your r7285 re-opened are not counted here unless they were written back to `UNADJUDICATED` in the tsv.) `check_quote_pins` exits 0, and all 396 `MEANING-HELD` rows hold.
+
+**Against the pre-registration (`8afa9ed3d`):**
+
+| Prefix | Mode called | `REPAIR-OWED` | `MEANING-HELD` | `DELIBERATE` |
+|---|---|---|---|---|
+| `L257` (14) | HIGH ✘ | 5, 36% (band 50–80) ✘ | 2, 14% (0–20) ✔ | 7 |
+| `L281` (13) | LOW ✔ | 1, 8% (band 15–45) ✘, low | 0 (0–10) ✔ | 12 |
+
+**Why the miss happened, and it is the useful part.** Of the 19 `DELIBERATE` rows, 16 quote a record that never moved: a struck register row, a kill file, an open-ledger note, another receipt's docstring, or an instrument's docstring. I traced each line through the full history: written once, never altered. The other three are names.
+
+- **`L257`'s paper keys behaved exactly as called:** 5 of 7 `REPAIR-OWED`, 71%, on the subject rule and co-occurrence. Its other 7 keys were records, and records go `DELIBERATE` whatever their span shape (header ⓹).
+- **I mis-called `L257` because the pre-registration may not read literals**, so I could not see that six of its SOURCE keys sit on append-only lines.
+
+⇒ **Your "the mode follows the seat" now has its boundary measured.** The seat effect lives on prose: paper sentences, and live documents whose lines move. On frozen records the subject rule does not apply, so two seats should agree there, and here this seat went LOW on its own. ⇒ **The cost figure for the remaining backlog is therefore prefix-dependent after all, through one variable: the share of its keys that sit on lines that never move.** That share can be measured before reading a key by running `git log -S` per literal. It is mechanical, so I'll take it as the predictor's input from the next batch on.
+
+**Where the vocabulary did not fit, key by key:**
+
+- **The record footing beats the proxy shape.** `L281`'s "SPATIAL", "timelike" and "OVERALL FACTOR" are tokens occurring three or four times in B67, and on live prose each would be a proxy or unable to fail. On a record that never moves the wording is the record, so they are `DELIBERATE`. The same holds for `L257`'s kill-file fragment "one-dimensional by conformal flatness", which would be dangling on prose. ⇒ **The header's ⓹ says this for the subject rule; it should say it for the narrower-than-claim family too.** I've applied it that way and am flagging it rather than writing it into the header unasked.
+- **A proxy on a LIVE instrument's docstring.** `L281` "seventeen paper": the claim is that `reach_baseline` reads papers and not receipts, and the count is incidental. The corpus now holds eighteen non-appendix `.tex` files, so a docstring corrected to the true count would red the check with the finding standing.
+- **A quantifier subject.** `L257` "all three are settled": "all three" stands for "the three items named above" and works as a pronoun under ⓶. The header's pronoun list ("it", "this", "they", "these") does not name quantifiers, and the next reader may pass it.
+- **A verbless absolute phrase.** `L257` "the ultraviolet definition of the mode sums with them": its predicate and its pronoun's antecedent are both outside the span. This is the dangling counterpart of ⓸'s verbless appositive: the shape is the same, and nothing the claim needs is inside.
+
+---
+
 ## re r7285 — order ① landed (the header); PRE-REGISTRATION for order ②, `L257_the_label_did_double_duty` (14) and `L281_the_prior_art_hole` (13), committed before any key is read
 
 **Order ①, landed in this commit: the subject rule is rewritten in `corpus/quote_pin_baseline.tsv`'s header as a test to run in order, before any sentence-tier verdict.**
