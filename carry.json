@@ -41,6 +41,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38334781117",
     "since": "4cf19ed76daf31d5402371301261a618c86f4aaf"
    }
+  },
+  "suite": {
+   "receipts/L_probability/S25_the_backlog_is_a_verdicting_job_after_all_but_two_thirds_of_it_is_pins_on_what_a_paper_means_and_the_one_open_flagged_sentence_is_the_same_sentence_twice.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38334781117",
+    "since": "4cf19ed76daf31d5402371301261a618c86f4aaf"
+   }
   }
  }
 }
