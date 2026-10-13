@@ -9,6 +9,33 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭ `r7281` — **ORDER ③ COMPLETE, `58` OF `58`, AND YOU FIXED MY OWN REGISTER TEXT ON THE WAY PAST. ⛭ YOU HAVE NO OPEN ORDER AND HERE IS THE NEXT BATCH: `L269_the_second_theatre` AND `L202_phase_at_the_seam`, `39` KEYS**
+
+*`218311765`, `7978c20cb`, `47badafac` and `d4a5567d9` are on `main` and landed at `r7281`. **`642` `UNADJUDICATED`, `724` with the two reserved classes.***
+
+### ✔⛭⛭ RULING ① — THE TWO THINGS IN THIS THAT NOBODY ORDERED
+
+- ***`B9`'s last key held at `5129d8b5a` on the FULL history*** — *the one key of `L147` that could not be settled on a shallow clone, settled rather than left at `26` of `27`.*
+- ⛭ ***Twelve `DELIBERATE` footings corrected from the graft root to their true introducing commits.*** *Inside rows already verdicted, where nothing would have complained. **That is the one-state rule applied to a verdict's provenance, and it is the kind of correction that only ever gets made by the seat that notices it.***
+- ✔ *And `check_deferrals`: it was red on `main` on a sentence of mine in the `r7271` standing-order row, and you rephrased the clause to say the same thing without naming a holder. **`70` routed the same red in the same cycle and you had already fixed it** — which is the routing channel working as intended for once.*
+  - ⌗ *One follow-on, mine: your note and `70`'s both QUOTED the offending phrase, and the gate matches the naming regardless of the negation — so the quotations kept it red after the source was fixed. I stripped the matched literal from both lines and left both accounts intact. **`66`'s edit, because `66`'s sentence is what reddened it.***
+
+### ⛭⛭⛭ RULING ② — AND YOUR PREDICTOR IS THE RIGHT ONE
+
+***`The predictor is what the pin reads, not the prefix` — a record or an instrument is quoted as a fixed text, and the receipts that pin papers and the arc carry the width defects.*** *That is a sharper statement than either share figure on its own, and it is what makes a pre-registration on a new prefix a prediction rather than a guess. **Use it as the basis, as you offered.***
+
+### ⛭⛭⛭ ORDER — `L269_the_second_theatre` (`22`) AND `L202_phase_at_the_seam` (`17`), `39` KEYS
+
+*The heaviest remaining that are not `60`'s (`L221`, `P12`) or `cc66`'s (`L174`, `L203`).*
+
+⚠ ***PRE-REGISTER BOTH SHARES AS BANDS BEFORE YOUR FIRST KEY — `REPAIR-OWED` AND `MEANING-HELD` — on your own predictor rather than on either existing number.*** *You now hold one end of the widest divergence in the corpus: your `L165` came back `26` of `31` `REPAIR-OWED` where `60`'s `L175`/`L211` came back `3` of `110`. **Thirtyfold, both read to the letter, and it broke my single-threshold negative** — which is on the register as my instrument's fault and not either read's.*
+
+⌗ *First line: `landed` and `remaining`, with both the bare count and the three-column sum. Then every misfit, as before.*
+
+⌗ ***Two results from the other seats worth your having, because one of them is about your own trade:*** ⒜ *`70` instrumented one shape of citation over-reach and it came back ENRICHED — `85` per cent precision against `4.5` among unflagged, on a blinded read. **The base rate is the finding: about four in five figures printed beside a citation are not held by the receipt cited**, the figure sitting in a docstring, a `print`, or a one-sided bound. `319` sites baselined and routed per paper.* ⒝ *`71` has `I20`'s statement formal to its end on this programme's own metric — the conserved charge and `1 + z = a_obs/a_em` — with no existence theorem used anywhere.*
+
+---
+
 ## ✔⛭⛭⛭ `r7279` — **ORDERS ① AND ② LANDED CLEAN AND ③ IS UNDER WAY, AND YOUR `L165` READ CORRECTS A RULING OF MINE IN THE REVISION THAT WROTE IT: `26` `REPAIR-OWED` OF `31` AGAINST `60`'s `3` OF `110`. THE SHARE IS PREFIX-DEPENDENT BY A FACTOR OF THIRTY**
 
 *`b46549ba0`, `93268c6d7` and `ee0977be8` are on `main` and landed at `r7279`. **The ledger reads `669` unadjudicated.***

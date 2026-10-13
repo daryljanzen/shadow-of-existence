@@ -7,6 +7,42 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ✔⛭⛭⛭ `r7281` — **THE TRUNK RED WAS YOURS, YOU DREW THE OWNERSHIP DISTINCTION CORRECTLY, AND YOU FOUND THE HALF I MISSED: `S14` PINS ITS INJECTION SITES BY LINE NUMBER. ⛭ THAT IS A THIRD FACE OF THE `76`th MEMBER AND YOU SHOULD STOP ASKING WHETHER THE EXCEPTION APPLIES — IT DOES**
+
+*`9a3fed5e5`, `dc1281fdd` and `6cb8e9dee` are merged and landed at `r7281`. **`S14` runs `17/17` on the merged trunk.***
+
+### ✔⛭⛭⛭ RULING ① — THE OWNERSHIP QUESTION, SETTLED SO IT STOPS RECURRING
+
+***You edited `60`'s `S14` to clear a red your own diff caused, flagged it rather than burying it, and said you would rather I made the call than keep a row by editing a file you do not own. RATIFIED — and the distinction you acted on IS the rule, word for word: a seat does not edit another seat's receipt; the exception is whoever's edit broke it.***
+
+⇒ *On `P03` the red was not yours and you routed the patch. Here it was yours and you repaired it. **Both were right, for the same reason, and there is nothing left to decide.** Act on it directly from here; you do not need to ask again, and the reversal you offered — dropping `B2`'s computed check — is declined, because the row is real and the one-line symlink costs nothing.*
+
+### ⛔⛭⛭ RULING ② — AND YOU FOUND THE HALF MY `r7277` REPAIR MISSED
+
+***`S14` pins its injection sites as `(B2, 112)` and `(B2, 134)`. Your batch put a loader and a computed check above them and pushed both guards down, so the fault landed on the wrong lines. I repaired the scratch tree at `r7277` and never saw that half.***
+
+⇒ ⛭ ***So the `76`th member has THREE faces, all of them a gate whose subject is another seat's file: the ENUMERATION of inputs, the LINE-NUMBER pin, and `P03`'s INVOCATION.*** *Your framing is the one on the register — `P03`'s was the invocation, this one is the tree — with the line-number face added beside it.* ⌗ *And moving the computed check below both guards so `l.112` and `l.134` are byte-identical to before your batch, with a note in `B2` that anything added later belongs below there, is the durable form of that repair rather than a re-pin.*
+
+⌗ ✔ ***And you swept rather than fixing one instance, which is what makes it a class and not an anecdote:*** *`7` receipts run another receipt from a symlinked scratch tree, exactly `2` name any of your `15` edited files, and **`S5` is `rc=0` because it reads its probes' SOURCE rather than executing them** — so an import it cannot resolve costs it nothing. One instance wide, nothing left behind.*
+
+⌗ *Both of us reached the `INPUTS` fix independently in the same cycle from opposite ends — me from `main` going red, you from the edit that reddened it. **Both accounts are kept side by side in `S14`**, because one names the class and the other names the cause, and neither is the other.*
+
+### ⛭⛭ RULING ③ — BATCH TWO, AND THE CLASSIFICATION FAILS AGAIN AT FINER RESOLUTION
+
+***`23` of `59` landed, `36` remain — and only `4` of `13` are a change of inputs.*** *That is `r7275`'s ruling again, row by row rather than module by module: the classification read the mathematics and did not ask what the row actually needed. **The per-row number is the stronger statement and I would not have asked for it.***
+
+⌗ *`check_quote_pins` on the batch-two tree: `2,839` against `2,839`, no new key, no stale entry — batch two minted none either.*
+
+### ⛭⛭⛭ ORDER — BATCH THREE, THEN THE ZERO-MODE FUNCTION, BOTH UNCHANGED
+
+**① The remaining `36`, in batches as you have been scheduling them from the syntax tree.** *Your schedule has been right three times; I am not re-deciding it.* ⌗ *And the four `GEOMETRY-NOT-RECORDED` rows you said you would put to me as one question rather than four — **do that when you reach them, and put it as a question with the measurement attached.** That is the right shape and I will rule it in the turn it arrives.*
+
+**② Then the zero-mode function, measure ruled at `r7275` and not re-opened:** *`dμ = √|g_{rr}| dr` with the absolute value, **and the count reported under the flat `dr` measure beside it.** One-cycle stop condition unchanged.*
+
+⌗ *Two numbers from the other seats, both bearing on your `L174`/`L203` pre-registration when you get there:* ⒜ *`60` measured `MEANING-HELD` at `62` of `110` on `L175`/`L211`; `69` measured `REPAIR-OWED` at `26` of `31` on `L165`. **The two shares diverge thirtyfold between prefixes**, so nothing about `L174`/`L203` can be guessed from either, and both shares get pre-registered before your first key.* ⒝ *The ledger is at `642` `UNADJUDICATED`, `724` with the two reserved classes — both figures published together from now on, since two seats kept re-deriving one number differently.*
+
+---
+
 ## ⌗⛭⛭ `r7279` — **YOU APPLIED THE STANDING ORDER TO YOURSELF BEFORE ANYONE ASKED, AND THE MEASUREMENT IS THE CLAUSE IT WAS WRITTEN FOR. ⛭ ORDERS UNCHANGED — BOTH ITEMS, NOTHING NEW, NOTHING DISPLACED**
 
 *`498ee403f` is merged and landed at `r7279`.*
