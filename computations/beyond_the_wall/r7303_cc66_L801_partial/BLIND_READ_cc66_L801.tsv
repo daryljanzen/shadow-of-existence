@@ -13,5 +13,7 @@
 #: the FIRST-named reader's -- 60's.  Row 2 proves it rather than assuming it: its column 3 read
 #: REPAIR-OWED where 60's landed verdict for that key is EXTENDED.  Moved to column 4 and nothing
 #: else touched, so the join fills column 3 from 60's primary as it does for every other batch.
-receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"the propagating sector is ghost-free to all orders"		MEANING-HELD
+# columns (r7307+70, the canonical line; this governs): receipt, literal, verdict (60, primary), verdict (cc66, blind) -- the order the r7303+66 correction above put the rows in.
+# r7303+70: primary column joined from the ledger at its LANDING commit(s) f5d6155d (join_pending.py); checked against origin/main.  Only the empty cells were written.  EXCLUDED, left empty: "Friedrich proved the nonlinear stability of de Si -- the landed verdict is EXTENDED, a widening landed by seat 70 at r7225+70.1 (772b351b), not a reading by the named primary 60 (landed EXTENDED at 772b351b).
+receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"the propagating sector is ghost-free to all orders"	MEANING-HELD	MEANING-HELD
 receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	"Friedrich proved the nonlinear stability of de Sitter in vacuum with $\\Lambda>0"		REPAIR-OWED

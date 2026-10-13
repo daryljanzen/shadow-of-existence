@@ -278,8 +278,14 @@ print('\n── Ⓔ  THE RESTRAINT ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 _subjects = sorted({c[0] for c in _mine} | {c[0] for c in _l811_mine}
                    | {c[0] for c in _all if c[0].startswith('receipts/L270')})
-_touched = sorted({f for f in (_git('diff', '--name-only', PREG) + '\n'
-                               + _git('ls-files', '--others', '--exclude-standard')).split('\n') if f})
+#: ⌗ r7307+66, the one-line repair 70 located and proposed rather than applied, taken here under the
+#: exception because the merge that broke it is this seat's: the range read `PREG..WORKING TREE`, so
+#: cc66's `f48b2582` repair of `L270`'s `V1` — a receipt among the subjects — entered the diff and the
+#: specific negative failed on another seat's correct work.  `AFTER` was already pinned above and the
+#: claim is about what THIS revision edited, so the range is `PREG..AFTER` and closed.  The 71st
+#: member, and the count of its faces is no longer worth keeping: the lesson is that a restraint gate
+#: has a live end unless its range names two commits.
+_touched = sorted({f for f in _git('diff', '--name-only', PREG, AFTER).split('\n') if f})
 _touched_subjects = [f for f in _touched if f in _subjects]
 print(f'      the rows verdicted here live in {len(_subjects)} receipts; this revision edited '
       f'{len(_touched_subjects)} of them')

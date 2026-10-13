@@ -2,11 +2,12 @@
 # r7297 BLIND READ (DOUBLE): seat 69 on L260_half_a_partition, primary cc66.  Verdicted without opening the
 # primary's rows (only whether each row was open was checked, no value shown).  NOT reconciled, NOT in the ledger.
 # receipt	literal	verdict (cc66, primary -- pending)	verdict (69, blind)
-receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"BASELINE | TESTIMONY"		REPAIR-OWED
+# r7303+70: primary column joined from the ledger at its LANDING commit(s) bac67e5c (join_pending.py); checked against origin/main.  Only the empty cells were written.  UNJOINABLE, left empty: 1 key(s) with no landed verdict for the exact literal -- "THAT IS FALSE, AND IT IS FALSE BY"
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"BASELINE | TESTIMONY"	DELIBERATE	REPAIR-OWED
 receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"THAT IS FALSE, AND IT IS FALSE BY"		DELIBERATE
-receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"THE BAND IS A PROPOSAL, NOT A PREVENTION"		REPAIR-OWED
-receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"WITHDRAWN r3140"		DELIBERATE
-receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"def report_testimony"		REPAIR-OWED
-receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"if OTHER_HALF is None:"		REPAIR-OWED
-receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"must be struck rather than left"		DELIBERATE
-receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"on testimony"		REPAIR-OWED
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"THE BAND IS A PROPOSAL, NOT A PREVENTION"	MEANING-HELD	REPAIR-OWED
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"WITHDRAWN r3140"	DELIBERATE	DELIBERATE
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"def report_testimony"	REPAIR-OWED	REPAIR-OWED
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"if OTHER_HALF is None:"	DELIBERATE	REPAIR-OWED
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"must be struck rather than left"	REPAIR-OWED	DELIBERATE
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"on testimony"	REPAIR-OWED	REPAIR-OWED
