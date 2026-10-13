@@ -94,20 +94,20 @@ def main():
     #   maximally-symmetric matter construction's own index". **  Pinned to the corrected carrier.
     check('(1) the generation count is "no free count" but the substrate\'s own index -- "the fold of '
           'the one polynomial f", three walls counting it and the turnaround\'s deck carrying it',
-          'no free count but the fold of the one polynomial $f$' in p14
-          and "the comoving turnaround's deck carries it" in p14
+          'The \\emph{generation-replication puzzle}---why the fermions come in three families, a number the Standard Model takes as an input---is, within CR, no free count but the fold of the one polynomial $f$' in p14
+          and "the fold of the one polynomial $f$: the three walls count it and the comoving turnaround's deck carries it" in p14
           and "h being $D-1$ for the same reason, so three is the maximally-symmetric matter construction's own index, n" in p14)
-    check('(1) and explicitly "not a datum to be fit"', 'not a datum to be fit' in p14)
+    check('(1) and explicitly "not a datum to be fit"', "so three is the maximally-symmetric matter construction's own index, not a datum to be fit" in p14)
 
     # (2) the hypercharges are not fitted
     check('(2) the hypercharge constant "came out ... with nothing fitted"',
-          'with nothing fitted' in p14)
+          "the constant came out equal to \\emph{twice} the quark doublet's hypercharge, $2\\times\\tfrac16=\\tfrac13$, with nothing fitted" in p14)
     check('(2) and the five SM hypercharges follow from anomalies + Yukawa EXISTENCE',
-          'the existence of the Yukawa couplings' in p14)
+          '\\emph{The hypercharges are not a third undelivered item}: given those two, they follow from the per-wall anomaly conditions of \\S\\ref{sec:inflow} together with the existence of the Yukawa couplings, uniquely up to normalisation' in p14)
 
     # (3) THE DECISIVE ONE: the sector cannot build a dimensionless coupling
     check('(3) a Yang-Mills coupling is dimensionless and "a single length cannot build" it',
-          'carries a dimensionless coupling that a single length cannot build' in p14)
+          'a Yang--Mills term in four dimensions carries a dimensionless coupling that a single length cannot build' in p14)
     check('(3) the substrate\'s one invariant is named as alpha = sqrt(3/Lambda)',
           "the substrate's one invariant being $\\alpha=\\sqrt{3/\\Lambda}$" in p14)
     check('(3) and the position is stated as a KIND-claim, not a to-do',
