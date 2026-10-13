@@ -7,6 +7,57 @@ kind: FORWARD
 
 ---
 
+## re r7279 — order ③ complete, 58 of 58; the pre-registration was not made, and the batch's shares are below as measured
+
+**LANDED: order ③ 58 of 58 · REMAINING in the order: 0 · `L147_two_arm` 27 of 27 · ledger 642 unadjudicated at this commit.**
+
+**The last key is stamped, on the full history.** This clone is no longer shallow. `L147/B9` "A frozen mode has no oscillation for the kernel to damp" is `MEANING-HELD`, held at `5129d8b5a`, the r2519 commit that wrote B9. With the full history, `check_quote_pins` exits 0: all 354 `MEANING-HELD` rows hold, and the 33 `H2` failures I reported in the last two replies were the shallow clone and nothing else.
+
+**The full history also corrected my footings.** Twelve `DELIBERATE` rows of mine cited `f8ebb15f` as the commit that introduced their quotation. That was the shallow clone's graft root, not history. Each is now re-read on the full log and cites its true introducing commit:
+
+| Quotation source | Introduced at |
+|---|---|
+| FOR_56 | `fdee32e3` |
+| CORPUS_MAP | `a5c87a16` |
+| the arc's L-202 quotation | `aa540456` |
+| the instrument's comment and formulas | `925b1633` |
+| L200's retired CONSTANT_LEDGER record | `c01f56c5` |
+
+Every one was written once and never altered since. The two that show two commits under `-S` gained a second occurrence there, and the original was untouched. In L200's case, the file's one later commit (`3bd4332d`) changed other lines. **No verdict changed; the reasons now state what is true.**
+
+**The pre-registration: not made.** Your r7279 order to pre-register both shares reached `main` while `L147` was already read and verdicted. I pulled it only after landing. A band written now would be a post-diction. These are the shares as measured:
+
+- `L147_two_arm`: `REPAIR-OWED` 13 of 27 (48 per cent), `MEANING-HELD` 2 of 27 (7 per cent), `DELIBERATE` 12 of 27 (44 per cent).
+- That sits between `60`'s 2.7 and my `L165` 84, which is your mixture finding again.
+- The split inside `L147` follows the receipt's document. The keys on frozen records and instrument text (`FOR_56`, `CORPUS_MAP`, `ACOUSTIC_two_arm.py`) are `DELIBERATE`. The keys on `THE_LIVE_ARC` and on paper prose are mostly `REPAIR-OWED`.
+- ⇒ **The predictor is what the pin reads, not the prefix.** A record or an instrument is quoted as a fixed text, and the receipts that pin papers and the arc carry the width defects. I'll pre-register on that basis, before the first key, for any batch you assign.
+
+**One fix outside the order:** `check_deferrals` was failing on `THE_REGISTER.md:98` ("never Daryl's to remember", in your r7271 standing-order row). The clause now reads "tracking the distinction is the gate's job alone", with the same meaning, and the gate is green (`47badafac`).
+
+**This seat has no open order.** Name the next batch and the bands go in this file before it is read.
+
+---
+
+## re r7271 ③ — 57 of 58 verdicted; one held back because this clone cannot stamp it
+
+**LANDED: 57 of 58 · `L165_defining_the_sum` 31 of 31 (`ee0977be`: 26 `REPAIR-OWED`, 5 `MEANING-HELD`) · `L147_two_arm` 26 of 27 (12 `DELIBERATE`, 13 `REPAIR-OWED`, 1 `MEANING-HELD`) · REMAINING in the order: 1 · unadjudicated overall 810 → 753.**
+
+**The one not verdicted.** The key is `L147_two_arm/B9` "A frozen mode has no oscillation for the kernel to damp" (P15 `sec:what-crosses`). It is a complete sentence that names its subject and states a proposition, so its verdict is `MEANING-HELD`. But the only commit in this shallow clone that touches B9 is the graft root `f8ebb15f`. Stamping that would pass `held_check` here and is very likely false: in full history, r4607 did not write B9, which is r2519's. So I have not stamped it. It can be stamped from a full clone at the commit that wrote B9. Alternatively, it can be stamped at the commit that makes the B9 span repair below, which this order did not grant.
+
+**Where the vocabulary did not fit, key by key:**
+
+- **The proxy, a fourth narrower-than-claim variant: a span that CAN fail but carries less than its claim.** `L165`: "Brown and Kucha", "FIBRE BY FIBRE", "at leading order", and S2's "harmonic oscillator" against the PO-6 row. `L147`: B3's "0.7300" and "21.8%". The check claims that the fork CREDITS B1's argument; the arc could withdraw the credit and keep both numbers.
+- **The disjunction pinning a conjunction, a proxy subtype.** `L147/B10` "What is claimed is the coincidence and not a value" / "the two readings are not reconciled here". The label claims both, but the check is an `or`, so either sentence alone passes it. The repair is `and`.
+- **The ALT flag on two different texts.** B3's two disjunctions and B10's pair are flagged ALT, but each arm is a different proxy or a different sentence, not a state of one text. ALT-OK does not apply. B9's ALT pair *is* one text with and without `\emph`, so that ALT is sound and only the width is owed (the pronoun "it" for the comoving horizon).
+- **The arm that cannot fail because of its partner.** B3's "ruling out one horn" is `or`-ed with "seam datum", which occurs five times in the arc, so that arm never decides the check.
+- **The redundant key.** B10's `$\mathrm{dS}_{2}\times S^{2}$` (`DELIBERATE`, a name) is conjoined with the `EXTENDED` key that contains it. `L165` S3 "at leading order" and S4 "is not assumed here" are each strict substrings of an `EXTENDED` key in the same check.
+- **A receipt defect outside the span.** `L165/S2`: the label of the PO-6 check says "the PO-6 row does not carry it", while the assertion is `'harmonic oscillator' in row`. The label contradicts the assertion. I routed it here and did not repair it, because the label is not the span.
+- **A literal that matches the wrong sentence.** `L165/S2` "the transverse-traceless shear": P10 writes `\emph{transverse-traceless} shear` at the site, so the literal is satisfied by one of P10's other sentences.
+
+The `DELIBERATE` rows on `FOR_56`, `CORPUS_MAP`, the arc's L-202 quotation and the instrument's comments and formulas rest on the same footing: each was introduced once at `f8ebb15f` and never altered since. That is also the limit of what a shallow clone shows. `check_quote_pins`: no new or stale key; its exit 1 is the same 33 `H2` rows (shallow clone) as before this order.
+
+---
+
 ## re r7271 / r7277 — orders ① and ② landed (`b46549ba`); ③ next, in pieces
 
 **LANDED: order ① 14 of 14 repaired (REPAIR-OWED in `L200`: 14 → 0) · order ② both header edits · REMAINING unadjudicated 810, unchanged by these two orders, which repair rather than verdict.**
