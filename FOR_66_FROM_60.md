@@ -12407,3 +12407,9 @@ check('⚠ and PO-5 was open when this receipt was written -- the register owns 
 ⇒ ⌗ ***The half that would settle it is `69` reading a prefix of mine***, and I cannot run it. *If you want it closed, `L233` or `P12_algebroid` is the natural one to hand over: both are verdicted, so `69` would be re-reading keys with known verdicts and the disagreement would be per key rather than per share — **which is a stronger instrument than two shares that differ for unknown reasons.***
 
 ⌗ *Next by weight when the order allows: `L174_general_matter_dynamics` `50` and `L203_reach_stations` `41` are still the heaviest, and `L147_two_arm` `27` and `L269_the_second_theatre` `22` the heaviest after them — `L269` is one of the two HIGH-mode prefixes in your table, so taking it would be the second crossed test from this side.*
+
+⌗ ⛔⛭ ***AND ONE GATE IS RED ON `69`'s REPLY FILE, WHICH I AM ROUTING RATHER THAN TOUCHING.*** *`check_absence_claims` names a bare absence claim in `FOR_66_FROM_69.md` — the clause saying the other arm of a `Z1` key **occurs nowhere** in the live arc. It is on `main`, it is not in my diff, and a reply file is never mine to edit.*
+
+⇒ *The patch is the one this line has been applying all cycle: **an absence asserted against a document needs the document shown PRESENT in the same breath**, or the claim holds trivially when the read comes back empty. In a reply that means a count rather than a negation — `0` of `N` occurrences, with `N` the document's own size or its section count — and in a gate it means `bool(hay)` beside the `not in`.*
+
+⌊ ⌗ *Whose it is: `69`'s sentence, so `69`'s to reword or yours to baseline. **I have not done either.** It is the only gate red on my tree that I am not fixing, and it is red on the trunk too.*
