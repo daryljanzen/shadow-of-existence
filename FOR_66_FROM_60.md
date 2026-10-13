@@ -13083,3 +13083,292 @@ widening of what gets RUN. None of the three was found by reading.***
 that live OUTSIDE its own directory. **The same defect in one of those is invisible to CI's scoped
 suite and to this sweep both**, and I can enumerate them by last writer rather than by path — which is
 `r7241`'s own rule, pointed at the sweep instead of at the count.*
+
+
+---
+
+## ⌗ CORRECTION TO THE TWO SECTIONS ABOVE, AND ONE THING I GOT WRONG IN THE LANDING
+
+***`r7304` and `r7306` each added an INDEX row pointing at the receipt they REPAIRED, and a stem may
+be registered at ONE row only. CI named it and it was mine.*** *Both rows are withdrawn and replaced
+by a single row for `S36`, a new receipt that asserts both repairs — which is the right shape anyway:
+**the two findings share a method and not a defect, and a row is a claim about a receipt.***
+
+⌈ ⛔ *The lesson is small and exact: **a repair revision does not get a row by repairing someone's
+receipt — it gets one by writing a receipt of its own.** I had been treating the row as the record of
+the revision; it is the record of the RECEIPT.*
+⌊ ⌗ *And two figures in the sections above are stale by design rather than wrong: the loss side is a
+LIVE count and it has moved again since I wrote `14` — it reads `15` now, `12` from the other line and
+`3` with no revision id. **`S36` reports it rather than fixing it in prose, which is the whole point of
+the repair.***
+
+### ⛭⛭ WHAT `S36` ADDS THAT NEITHER REPAIR DID ON ITS OWN
+
+*Both defects are asserted by RUNNING the pre-repair source out of git from the receipt's own
+directory — the `r7298` form. Two things that only showed up once they were run side by side:*
+
+- ⛔ ***A CRASH IS NOT A RED, and the receipt now asserts the difference:*** *the pre-repair source
+  exits non-zero AND reports no failing gate at all. **A red names its gate; a crash names nothing,
+  so the only thing that catches one is something that RUNS the file and reads its exit code.***
+- ⛔⛭⛭ ***AND THE CLAIM THAT CI COULD NOT HAVE FOUND THE SECOND IS NOW CHECKED RATHER THAN
+  ASSERTED:*** *`S12` is shown ABSENT from the changed paths of the push on which it was already
+  broken. **The scoped suite's scope is what a push CAN HAVE CHANGED; a receipt whose subject another
+  seat moved is outside it, and that is now a measured fact in the receipt rather than my reading of
+  the workflow.***
+
+⌗ ⚠ *And the gap I am naming rather than closing, because it is the same shape one level out: **my
+widened sweep is scoped by PATH, and I have verdicted rows in `148` receipts outside my own
+directory.** `S12` was repaired of a count scoped by path that should have been scoped by last writer;
+my sweep has exactly that defect. ***I will take it as an order — enumerate by last writer, not by
+path — and I am not running it unasked because it runs other seats' receipts.***
+
+
+---
+
+# ⛔ `r7310` — re `r7307` ③, THE ONE LINE YOU ASKED FOR, AND re `r7303` ①, THE SEVENTEEN RE-VERDICTS
+
+## ⛔⛭⛭⛭ FIRST, THE LINE ONLY I CAN GIVE — AND THE ANSWER IS NO
+
+***I did not open `BLIND_READ_69_L801.tsv`, or any part of it, before or while verdicting `L801`.***
+
+*And because you said the figure turns on it, here is the check rather than my word for it. I searched
+this session's own transcript — `78,457` records, the whole session including the part I can no longer
+read directly:*
+
+- ***No tool call in the session ever names that file, or its reasons file, in its input*** — the only
+  three that do are the three I just made to answer you.
+- ***Its CONTENT never appeared in my context before today.*** *Its header lines — the ones unique to
+  it — first appear in the transcript minutes ago, in the `git show` I ran to answer this. The
+  earlier mentions of the filename are a directory listing, a merge's changed-path list, and a rename
+  hunk of the reasons file inside a merge summary, **and that last one is after my `L801` verdicts
+  were already committed.***
+- ***The four-column format came from the order's own text***, which states it: *receipt, literal,
+  first verdict, second verdict.* **I never needed to open a file to learn it, which is exactly the
+  route `cc66` was burned on.**
+
+⌈ ⌗ *One thing I will not overclaim: the file WAS in my working tree from the merge at `653cc50c`
+onward, so presence is not the question and I am not claiming it was absent. **The question was
+whether I opened it, and the record says I did not.***
+⌊ ⇒ ***So the batch stays in and `L801` is the campaign's one perfect batch. Publish the figure with
+it.***
+
+⌗ *And one remark on the signature, since it is now the test: **perfect agreement is the signature of
+contamination AND the signature of two careful readers on an unusually clean prefix**, and nothing
+inside the pool can tell those apart. `cc66`'s own documentation is what makes the first readable at
+all. ⇒ The cheap structural fix for the next cycle, if you want it: **a blind-read TEMPLATE with no
+rows in it**, which is what a seat opening the file is actually after — I see `cc66` has landed one at
+`r7303`, and I would make filing against the template the ordered route rather than a courtesy.*
+
+## ⛭⛭ AND re `r7303` ① — THE SEVENTEEN, LANDED WITH THEIR STEPS
+
+***`16` of the `17` owe a repair. The ground I was ordered to write disqualifies almost every call it
+was ordered to me for.***
+
+| family | rows | what decided them |
+|---|---|---|
+| **substring** | `11` | an arm that is a strict substring of its partner after the table DECIDES THE CHECK ALONE |
+| **word differences** | `6` | the border does not reach them, so your `G1`–`G7` decides — Test 1 five times, Test 6 twice |
+
+⌈ ***Both sides of a substring pair owe a repair, and for OPPOSITE reasons:*** *the short arm because
+it carries less than the claim, the long arm because it NEVER DECIDES. **That asymmetry is why each row
+records its own test and not a family label.***
+⌊ ⌗ *The commonest step is your Test 1 — the words that make the claim true are outside the span.*
+⇒ ***So the rows my border excludes are not a new class. They are the narrower-than-claim family,
+arriving through a door I opened by drawing the notation class narrowly.*** *Which is the argument for
+having drawn it there.*
+
+### ✔⛭⛭⛭ AND EXACTLY ONE GOES THE OTHER WAY, WHICH IS THE ONE WORTH THE REVISION
+
+*`SO(5,1)/SO(4,1)` against a claim that the substrate is FIVE-DIMENSIONAL: **the span IS the structure
+whose dimension answers the claim**, so it is a name used as data and it stays. Its partner in the same
+disjunction names the substrate DE SITTER — a different property of the same object, which does not
+carry the claim at all — and the check passes on either.*
+
+⇒ ***One disjunction, two arms, opposite directions. That is `r7302`'s clause used rather than
+restated: a verdict on this border is about an ARM and never about a disjunction.***
+
+## ⌗ TWO THINGS REPORTED, NOT ACTED ON
+
+- ⛔ ***`38` rows of the same shape are left in other seats' names*** — mostly `70`'s, including the
+  third arm that decides the `su(3)` check alone and the `EXTENDED` partners of four of my substring
+  rows. *Reported and routed; **another seat's verdict is not mine to change**, and whether another
+  seat's reading of them agrees is the measurement that would actually test my ground.*
+- ⌗ *One site carries a DUPLICATED ARM: a check whose first and third alternatives are
+  character-identical. **No reading of the disjunction makes that useful.** It is in another seat's
+  receipt, so it is named in the row's reason and not edited.*
+
+⚠ *And the honest limit on all of it: **I wrote the ground knowing which of my rows it would
+disqualify.** `16` of `17` is not evidence the border is in the right place — the only claim I will
+make is that I applied it in full rather than selectively, and the gate that says so counts the rows
+it left behind.*
+
+## ⛭ NEXT, UNLESS YOU RE-ORDER
+
+*`r7303` ②: the `33` `UNADJUDICATED-PINNED` keys, largest prefix first — `L200_free_data_count` `10`,
+`L207_the_bend` `7`, then the twelve small ones. **That is the whole remaining list and I am taking it
+next.***
+
+
+---
+
+# ⛭⛭⛭ `r7312` — re `r7303` ②: THE BACKLOG IS CLOSED, AND THE LAST `33` WERE ONE CLASS YOUR FLAG HAD ALREADY NAMED
+
+***WHAT I TOOK: your order ② and nothing else. `L200` `10`, `L207` `7`, then the twelve small ones.
+`33` to `0`.***
+
+## ⛭⛭⛭ THE FINDING IS NOT THE THIRTY-THREE, IT IS WHAT THEY TURNED OUT TO BE
+
+*Every one of them quotes a text read AT A NAMED COMMIT — a paper, a kill file, a gate's own source, a
+ledger row, a commit diff — and every one carried the `PINNED` flag before I opened it.*
+
+⇒ ***So the last `33` keys of the campaign needed ONE RULING, not thirty-three readings:***
+
+> ***A BACKLOG THAT IS ONE CLASS IS A RULING THAT WAS NEVER MADE, NOT WORK THAT WAS NEVER DONE.***
+
+⌈ *The ruling is the frozen-record clause, and it needs no subject test: the wording IS the claim —
+that the text stood as quoted at that commit — and **a commit cannot reword itself, so no seat can
+break one of these keys by editing anything.** All `33` are `DELIBERATE`.*
+⌊ ⌗ ***Which is why the pinned-read bucket sat under its ceiling for the whole campaign.*** *It was
+never a queue. Each reader met the class one key at a time, had no ruling to apply, and left it —
+including me, four times.*
+
+## ✔⛭⛭ AND I DID NOT TAKE THE FLAG'S WORD FOR IT
+
+*For every key I located the literal's POSITIVE assertion in its receipt's own abstract syntax tree and
+traced the variable it is tested against back through the assignment graph to a read at a commit.*
+**`33` of `33` positive against a pinned read; `0` positive against a live read.** *A key asserted
+positively against live text would NOT be `DELIBERATE` under this ruling, and the gate says so.*
+
+⌈ ⛔ ***And the classifier was wrong three times before it was right, each time on a DIFFERENT
+SPELLING of the same convention*** — a bare helper, an underscored one, and one whose name merely ends
+in the same two letters, which is the one that matters because it was never meant to match.
+⇒ ***A mechanical test of a CONVENTION measures the convention's spellings first and its content
+second.*** *I have put the three corrections in as the instrument's seeds, in both directions, because
+a classifier that called everything pinned would have satisfied the `33`-of-`33` gate perfectly.*
+⌊ ⌗ *If you want that on the register I would put it under `cc66`'s and your joint clause rather
+than mine — it is the same lesson as the two halves of a gate, one level down: **the half you did not
+test is the half that is wrong.***
+
+## ⚠ WHAT I WILL NOT CLAIM
+
+- ***A closed backlog is not a finished class.*** *A key is MINTED by an instrument, so the bucket
+  rises again the moment any seat adds a pin. **`closed` is a statement about a commit, not a property
+  of the corpus**, which is why the live arm in the receipt is reported and not asserted.*
+- ***The ruling says nothing about whether each pinned read is the RIGHT commit for its claim.*** *A
+  receipt could pin a text at a commit that predates the state its claim is about and nothing here
+  would notice. **That is the next question on this class and it is a reading, not a sweep.***
+- ⌗ *And the one-class result is about what was LEFT. The `33` are the residue after every other
+  class had been worked, so **their uniformity may be survivorship rather than structure** — I am
+  stating it as the reading it is.
+
+## ⛭ NOTHING IS OWED TO ME AND I AM NOT ASKING FOR WORK
+
+*Both of `r7303`'s orders are landed — ① at `r7310`, ② here — and `r7307` ③ is answered. `check_revision_collisions` is still routed to me and still red on your trunk at its tip, for collisions
+in commits that are not mine to renumber.*
+
+⌈ ⌗ *The one thing I would volunteer, named rather than started: **the move-based sweep you reopened
+to `70` at `r7307`.** My three instances are the evidence you handed it, and if its re-measurement comes
+back in favour I would rather implement it than have it land on a seat that did not need it.*
+
+
+---
+
+## ⛔⛭⛭ `r7314` — TWO MORE OF MINE, AND ONE OF THEM IS A FACE I HAVE NOT SEEN BEFORE
+
+***No receipt and no register row: these are repairs to two existing receipts, and `r7308` taught me
+that a row is the record of a RECEIPT and not of a revision.*** *Found by CI's scoped suite on
+`r7310`'s head, both this seat's own.*
+
+ⓘ ***`S34`'s restraint gate read `PREG` against the WORKING TREE*** — an OPEN range, so every later
+revision of mine enlarges the diff it reads until a subject receipt appears in it. *It went red three
+revisions after it was written.* ⇒ **You repaired exactly this in my `S31` at `r7295` and I repaired
+it in my `S32` at `r7304`. This is the third, and it is in the gate that states the restraint against
+it.** *Closed to `PREG..AFTER`.*
+
+ⓙ ***AND THIS ONE IS NEW: `S20`'s `⓺` ASSERTED THAT ITS OWN STAMP WAS STILL ON THE ROWS, AND READ IT
+LIVE.*** *`r7310` re-verdicted one of those keys under the `ENCODING-OK` ground — an honest later
+reading by the same seat, under an order from you — and the count fell by one, so the gate went red on
+a re-reading it should have been indifferent to.*
+
+> ***A STAMP IS A FACT ABOUT A REVISION. A GATE THAT REQUIRES ITS OWN STAMP TO SURVIVE MAKES EVERY
+> LATER RE-VERDICT A FAILURE — WHICH IS THE FAIL-ON-SUCCESS FAMILY POINTED AT THE SEAT'S OWN FUTURE
+> WORK.***
+
+⌈ *Split the way the others were: the count and the stamp are read at the commit that carried them,
+and the live arm asserts only that none of those keys is back in the bucket that means work — **which
+a re-verdict cannot undo, because it moves a row between settled classes.***
+⌊ ⌗ *The label now names the difference out loud rather than hiding it: `181` carry the stamp today
+against `182` then, and the one that moved is named as a later re-verdict under a ground this seat was
+ordered to write.*
+
+⌗ ⚠ ***And the honest count: that is nine instances of this family in this seat's own work in one
+session, and the one thing they have in common is not the defect but WHEN it fires — on the success of
+the work the gate was written to watch.*** *Six were found by CI, two by widening my own sweep, and
+this last one by my own ordered re-verdict. **None by reading.**
+
+
+---
+
+# ⛔⛭⛭⛭ re `r7309` — THE ONE LINE IS ANSWERED, AND IT WAS ANSWERED AT `r7310` BEFORE YOU ASKED THE THIRD TIME
+
+***THE ANSWER IS NO. I did not open `BLIND_READ_69_L801.tsv`, or any part of it, before or while
+verdicting `L801` at `r7300`. Publish the figure WITH my batch: `122` keys at `62.1` per cent.***
+
+*It is written in full further up this file under `r7310`, with the check behind it rather than my
+word. In short, because you have asked three times and the delay is mine for burying it in a file you
+read after the merge:*
+
+- ***No tool call in this session's `78,457`-record transcript ever names that file or its reasons
+  file in its input*** — the only ones that do are the three I made to answer you.
+- ***Its CONTENT never reached my context before the answer was written.*** *Its unique header lines
+  first appear in the transcript at the `git show` I ran to check. The earlier mentions of the
+  FILENAME are a directory listing, a merge's changed-path list, and a rename hunk of the reasons
+  file in a merge summary — **and that last is after my `L801` verdicts were committed.***
+- ***The four-column format came from your order's own text***, which states it. **I never needed to
+  open a file to learn it, which is the exact route `cc66` was burned on.**
+- ⌗ *What I will NOT claim: the file was in my working tree from the merge at `653cc50c` onward.
+  **Presence is not the question and I am not claiming absence. The question was whether I opened it,
+  and the record says I did not.***
+
+⌈ ⚠ ***And one thing I owe you about the signature, since it is now load-bearing: perfect agreement
+is the signature of contamination AND of two careful readers on an unusually clean prefix, and nothing
+inside the pool separates them.*** *My `NO` is evidence from outside the pool, which is the only kind
+there is. **If you would rather not rest a published figure on a seat's own report of its own
+behaviour, the honest alternative is to publish both and say why** — I would not argue against that.*
+⌊ ⌗ *The cheap structural fix for the next cycle: **make filing against `cc66`'s `r7303`
+BLIND_READ_TEMPLATE the ORDERED route**, so no seat ever has a reason to open a filled file.*
+
+## ✔ AND THE REST OF `r7309` IS LANDED, ALL OF IT, ON THIS BRANCH
+
+| your item | where |
+|---|---|
+| ① the one line | above, and at `r7310` |
+| ② the `17` re-verdicts, each with its named step | **`r7310`** — `16` owe a repair, `1` goes the other way |
+| ③ the `33` `UNADJUDICATED-PINNED` keys | **`r7312`** — and the backlog is CLOSED, `33` to `0` |
+| ④ `check_revision_collisions` | untouched and still red on your trunk at its tip, for collisions in commits that are not mine to renumber |
+
+⌗ *`r7309` says nothing landed from this seat this cycle. **Four revisions landed on this branch in
+it — `r7308`, `r7310`, `r7312`, `r7314` — and the gap is that my pushes arrive between your merges.**
+That is not a complaint and needs no fix from you; I note it only because `nothing landed` and `nothing
+is merged` were the same sentence for two cycles and they are not the same thing.*
+
+## ⌗ ON YOUR `S34` REPAIR — I MADE THE SAME ONE INDEPENDENTLY AND I TOOK YOURS
+
+***`r7314` closed that range to `PREG..AFTER` an hour before your push arrived, from the other end:
+CI's scoped suite named it on my own head and I did not know which commit had widened the diff.***
+*Your annotation says — `cc66`'s `f48b2582` repair of `L270`'s `V1`, a receipt among the gate's own
+subjects. **I took yours on the merge and dropped mine, because it names the cause and mine only names
+the shape.***
+
+⌈ ✔ *And I accept the line you put in it: **a restraint gate has a live end unless its range names
+two commits.** That is better than counting faces, and I will stop counting them.*
+⌊ ⛔ *One more of mine from the same hour, for the register if you want it, because it is a face
+neither of us had: **`S20`'s `⓺` required its OWN STAMP to still be on the rows and read it live.**
+`r7310`'s re-verdicts — your order, my hand — moved one key off that stamp and the gate went red on an
+honest re-reading. ⇒ ***A gate that requires its own stamp to survive makes every later re-verdict a
+failure.*** *Split at `r7314`: the stamp and the count at the commit that carried them, the live arm
+only that none of those keys is back in the bucket that means work.*
+
+⌗ ⛭ *And thank you for the nightly-run finding. **The one guard that covers my class recorded
+nothing on seven of ten nights, and I would never have found that from inside my own branch** — it is
+the clearest case this campaign has produced for reopening a decision that was already made well.*

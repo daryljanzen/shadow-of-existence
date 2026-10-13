@@ -131,6 +131,17 @@ def git(*a):
 
 BASE = os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv')
 LEDGER = tsv(BASE, 7)
+
+
+def git_show(sha, rel):
+    import subprocess as _sp
+    return _sp.run(['git', 'show', f'{sha}:{rel}'], cwd=ROOT, capture_output=True, text=True,
+                   errors='replace').stdout
+
+
+def tsv_text(text, n):
+    return [c for c in (l.split('\t') for l in text.split('\n'))
+            if len(c) >= n and c[0].startswith('receipts/')]
 VOCAB = ['MEANING-HELD', 'DELIBERATE', 'EXTENDED', 'ALT-OK', 'ENCODING-OK', 'REPAIR-OWED', 'NOT-A-PIN']
 MINE_PREFIXES = ['P10_canonical_time', 'P16_cosmogenesis_paper', 'L_probability',
                  'L549_coupled_counterterms', 'L550_third_mechanism', 'L553_the_shear_counterterm',
@@ -348,10 +359,25 @@ head('F.  THE 163 VERDICTS, AND THE RESEMBLANCE TEST FIXED BEFORE ANY KEY WAS RE
 # ======================================================================================
 _mine = [c for c in LEDGER if c[0].split('/')[1] in MINE_PREFIXES and c[6].startswith(STAMP)
          and 'the r7257 order ③' in c[6]]
-gate(f'⓺ all {len(_mine)} keys of the nine claimed prefixes are verdicted under this revision, and '
-     'none is left in the only bucket that means work',
-     # ⌗ MONOTONE for the same reason, and the figure is PRINTED in the label rather than pinned.
-     len(_mine) >= 163 and not any('UNADJUDICATED' in c[5] for c in _mine))
+# ⛔⛭⛭ r7314+60: THIS GATE ASSERTED ITS OWN STAMP WAS STILL ON THE ROWS, AND READ IT LIVE.
+#   A stamp is a fact about a REVISION.  `r7310` re-verdicted one of these keys under the
+#   `ENCODING-OK` ground -- an honest later reading by the same seat -- and the count fell below the
+#   figure, so the gate went red on a re-reading it should have been indifferent to.
+#   ⇒ *** A gate that requires its own stamp to survive makes every later re-verdict a failure, which
+#       is the fail-on-success family pointed at the seat's own future work. ***
+#   The claim is split: the COUNT AND THE STAMP are read at the commit that carried them, and the
+#   live arm asserts only that none of those keys is back in the bucket that means work -- which a
+#   re-verdict cannot undo, because it moves a row between settled classes.
+_AT_r7260 = 'fcbcb38a'      # the commit after which this revision's rows were complete
+_mine_then = [c for c in tsv_text(git_show(_AT_r7260, 'corpus/quote_pin_baseline.tsv'), 7)
+              if c[0].split('/')[1] in MINE_PREFIXES and c[6].startswith(STAMP)
+              and lit(c) is not None]
+gate(f'⓺ all {len(_mine_then)} keys of the nine claimed prefixes were verdicted under this revision '
+     f'at the commit that carried them, and none of them is in the only bucket that means work '
+     f'today ({len(_mine)} still carry this stamp, the difference being later re-verdicts by this '
+     f'seat under a ground it was ordered to write)',
+     len(_mine_then) >= 163 and not any('UNADJUDICATED' in c[5] for c in _mine_then)
+     and not any('UNADJUDICATED' in c[5] for c in _mine))
 
 _left = [c for c in LEDGER if c[0].split('/')[1] in MINE_PREFIXES and 'UNADJUDICATED' in c[5]]
 gate('⇒ and the nine prefixes are now EMPTY of unverdicted keys, which is what a claim undertakes '

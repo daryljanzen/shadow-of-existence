@@ -49,6 +49,12 @@ primary's.  Where a batch's own comment lines name the verdict columns by seat, 
 governs) must name them in the `# readers:` order; if it names them the other way the batch is MALFORMED and the run fails.
 A batch whose comments name no column by seat is not checked, and says nothing either way.
 
+** r7309+70: A RULE APPLICATION IS NOT A DOUBLE-READ. **  71 filed its blind application of 69's redraft as
+`BLIND_READ_71_redraft.tsv` for 70's join, and the pooler read its UNDECIDED cells as a malformed batch and wrote
+nothing.  UNDECIDED is a decision RULE's output, not a ledger class: a file carrying it records readers applying a
+rule, which is a different measurement from two seats verdicting without one, and pooling it would mix the two.  Such a
+file is recognised by that content, listed under its own heading, and never pooled.
+
     python3 scripts/double_read_agreement.py            # print the tables
     python3 scripts/double_read_agreement.py --seed     # the duplicate refusal, both ways, on built batches
     python3 scripts/double_read_agreement.py --write    # also write AGREEMENT.md beside the prediction
@@ -67,6 +73,7 @@ OUT = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7293_70_agreement'
 N_STAR = None   # filled from PREDICTION.md's fixed rule by n_star(); see there
 VERDICTS = {'DELIBERATE', 'ALT-OK', 'REPAIR-OWED', 'NOT-A-PIN', 'ENCODING-OK', 'MEANING-HELD', 'EXTENDED',
             'UNADJUDICATED', 'UNADJUDICATED-PINNED'}   # the ledger's verdict classes (corpus/quote_pin_baseline.tsv)
+RULE_ONLY = {'UNDECIDED'}   # a decision rule's output (r7299_69_the_rule/THE_RULE.md), never a ledger class
 
 
 def batches():
@@ -112,6 +119,8 @@ def batches():
 def _shape(vcells):
     """'batch', 'sidecar' (no row verdict-shaped) or 'malformed' (some rows not): a row is verdict-shaped when both
     verdict cells are a verdict or EMPTY (a pending side) and at least one is a verdict"""
+    if any(x in RULE_ONLY for v in vcells for x in v) and all(x in VERDICTS | RULE_ONLY | {''} for v in vcells for x in v):
+        return 'rule application'
     ok = [all(x in VERDICTS | {''} for x in v) and any(v) for v in vcells]
     return 'sidecar' if ok and not any(ok) else 'malformed' if not all(ok) else 'batch'
 
@@ -193,7 +202,11 @@ def _seed():
                [('(a) PROXY on a PARTIAL CODE LINE', ''), ('(b) the token is the claim', '')], 'sidecar'),
               ('r7299: a GROUNDS file shaped verdict, prose is not a batch', [('REPAIR-OWED', 'G4: short token')], 'sidecar'),
               ('r7299: verdicts with one prose cell is a malformed batch',
-               [('DELIBERATE', 'DELIBERATE'), ('DELIBERATE', 'see note')], 'malformed')]
+               [('DELIBERATE', 'DELIBERATE'), ('DELIBERATE', 'see note')], 'malformed'),
+              ('r7309: a rule application (UNDECIDED, one side pending) is not a batch',
+               [('', 'REPAIR-OWED'), ('', 'UNDECIDED')], 'rule application'),
+              ('r7309: verdicts, UNDECIDED and prose together is malformed, not an application',
+               [('DELIBERATE', 'DELIBERATE'), ('', 'UNDECIDED'), ('', 'see note')], 'malformed')]
     bad += [f'{lab}: expected {w}, got {_shape(v)}' for lab, v, w in shapes if _shape(v) != w]
     cols = [('r7307: columns named in the readers order', ['# receipt\tliteral\tverdict (60, primary)\tverdict (69, blind)'],
              ('60', '69'), 'ok'),
@@ -291,7 +304,14 @@ def main():
         for f in inverted:
             print(f'    {f}')
         return 1
-    bs = [x for x in bs if x['shape'] != 'sidecar']
+    applications = [x['file'] for x in bs if x['shape'] == 'rule application']
+    bs = [x for x in bs if x['shape'] not in ('sidecar', 'rule application')]
+    if applications:
+        print(f'  ⌗ {len(applications)} FILE(S) MATCH THE BATCH GLOB AND RECORD A RULE APPLICATION (UNDECIDED in a '
+              f'verdict cell) -- not a no-rule double-read, never pooled, listed:')
+        for f in applications:
+            print(f'    {f}')
+        print()
     if sidecars:
         print(f'  ⌗ {len(sidecars)} FILE(S) MATCH THE BATCH GLOB AND HOLD NO VERDICT IN THE VERDICT COLUMN -- not a batch '
               f'(a reasons sidecar), excluded and listed:')
@@ -365,6 +385,9 @@ def main():
     if sidecars:
         body += ('\n## Not a batch -- matches the glob, holds no verdict in the verdict column (r7299)\n\n'
                  + '\n'.join(f'- `{f}`' for f in sidecars) + '\n')
+    if applications:
+        body += ('\n## A rule application, not a double-read -- UNDECIDED in a verdict cell, never pooled (r7309)\n\n'
+                 + '\n'.join(f'- `{f}`' for f in applications) + '\n')
     print(head + body)
     if '--write' in sys.argv:
         os.makedirs(os.path.dirname(OUT), exist_ok=True)

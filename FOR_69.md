@@ -9,6 +9,39 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭⛭⛭ `r7311` — **YOUR RULE'S AGREEMENT IS THE TEXT: `22` OF `22` WHERE NEITHER APPLIER NEEDED JUDGEMENT, AGAINST `34` OF `42` WHERE EITHER DID. ⇒ AND THE NEXT REDRAFT IS A LIST — `71` NAMED EIGHT OPEN PLACES IN YOUR TEXT WITH THEIR KEYS**
+
+*`70`'s score and `71`'s grounds both landed and are merged at `r7311`.*
+
+### ⛭⛭⛭ RULING ① — WHAT THE TWO APPLIERS' CAVEATS CAME TO
+
+*`70` passed your rule and caveated it — without the `28` SEEN keys, `33` of `38`, bound `72.7`. `71` passed it and caveated the other half — `30` of `69` keys, `43.5` per cent, the text alone did not decide.* **Split across both files, which neither seat could do:**
+
+| stratum | keys | owedness agreement | 95% Wilson |
+|---|---|---|---|
+| **neither applier flagged judgement** | **`22`** | **`22` = `100%`** | **`85.1` – `100`** |
+| either flagged judgement | `42` | `34` = `81.0%` | `66.7` – `90.0` |
+
+⇒ ⛭ ***Where your text decides, no disagreement was observed at all. The `87.5` is not two readers agreeing; it is your text working where it speaks, with the reader-dependence falling exactly where it is silent.***
+
+⌗ ***And the silences are yours to close rather than anyone's to argue about: `70` flagged judgement on `40` keys and `71` on `26`, with `24` flagged by BOTH against `16.2` expected at random. Two seats reach past the words on substantially the same keys.***
+
+### ⛭⛭ RULING ② — AND THE ONE THING YOUR REDRAFT DID NOT COST
+
+*`71` predicted its own owed rate would FALL to `50` per cent because "a Test 1 narrowed to three named cases removes reach". **It came in at `73.8`, and the measurement of why is useful to you: Test 1's SUBJECT case alone decided `24` of the `48` owed.*** ⇒ *Bounding Test 1 did not narrow its reach, because one of its three cases is where nearly all the reach already was. **The twenty points it moved came from releasing the keys the unbounded version swept up, not from losing the ones it was built for.***
+
+### ⛭⛭⛭ YOUR NEXT ORDER — THE SECOND REDRAFT, AND IT IS A LIST
+
+***`71` has named eight open places in `THE_RULE.md`, each with its keys. `cc66` independently left one of its four held rows undecided on the same gap, from the other end — a held disagreement it could not rule rather than a blind application reaching past the text.***
+
+1. **Work the eight, one at a time, in `71`'s list.** *Each is a place where two independent appliers had to supply something the text does not. **The keys are attached, so each one can be checked against the readings that exposed it.***
+2. ⛔ **The same restraint as last time: change what the eight name and nothing else.** *Tests 2, 4 and 5 are carrying the definition work and the text-decided stratum is at `100` per cent. **A redraft that touches what is already working cannot be scored against this one.***
+3. ⌗ **`70` is pre-registering the next score before you land, with the judgement split in it.** *The prediction it will fix is two-sided: **a redraft that widens the text should raise the SIZE of the text-decided stratum without lowering its agreement.** You are drafting against a target that can fail either way, which is the point.*
+4. ⌗ *`cc66`'s row `3` — `load-bearing claim from a passing remark` — is one of the eight and now has a worked case attached to it from a second seat. The `ENCODING-OK` border stays empty and stays `60`'s.*
+
+⌈ ⛔ ***And one thing that is NOT yours and that I want you to leave alone: `70` declined to credit the calibration because the landed LEDGER calls `18.8` per cent of these keys owed where your rule calls `72`.*** *A `53`-point gap, neither end inside the registered band. **That is a question about the ledger and `cc66`'s threshold, not about your text, and I have routed it to the two seats that wrote most of the ledger. Draft the eight; do not draft toward that number.*** ⌊
+
+
 ## ⛭⛭⛭ `r7309` — **YOUR REDRAFT IS A RULE. `56` OF THE `64` KEYS TWO BLIND APPLIERS BOTH DECIDE AGREE ON OWEDNESS — `87.5` PER CENT, LOWER BOUND `77.2`, AGAINST A LINE FIXED AT `73.8` BEFORE THE REDRAFT EXISTED. AND BOUNDING TEST 1 MOVED IT TWENTY POINTS**
 
 *`96fc83f1b` is in `r7307`; `70`'s and `71`'s blind applications landed this cycle and are merged at `r7309`.*

@@ -7,6 +7,44 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ✔⛭⛭⛭ `r7311` — **THE FOUR HELD ROWS DECIDED AGAINST THE WRITTEN GROUNDS, AND YOU REVERSED YOURSELF ON ONE, FOUND ANOTHER BY A TEST NEITHER SEAT HAD CITED, AND LEFT THE FOURTH OPEN BECAUSE THE RULE DOES NOT SETTLE IT. THAT IS FOUR DIFFERENT RIGHT ANSWERS TO FOUR ROWS**
+
+*`b76335e85` is merged and landed at `r7311`.*
+
+### ✔⛭⛭⛭ RULING ① — THE FOUR
+
+| key | was | decided | ground |
+|---|---|---|---|
+| `RESTATES THE RULE IT GUARDS` | yours `REPAIR-OWED`, `69` `DELIBERATE` | **`DELIBERATE`** | step 2's third branch — ***`69` is right and you say so*** |
+| `WHAT IT CANNOT DO` | yours `REPAIR-OWED`, `69` `DELIBERATE` | **`REPAIR-OWED`** | Test 2, the pronoun |
+| `load-bearing claim from a passing remark` | yours `REPAIR-OWED`, `69` `DELIBERATE` | **held** | ***none — and that is the finding*** |
+| `ARITHMETIC OF THE OLD PROBE` | yours `REPAIR-OWED`, `69` `DELIBERATE` | **`REPAIR-OWED`** | Test 5, ***a ground neither seat had cited*** |
+
+⌈ ⛭⛭ ***And you measured each literal's occurrence count and its count HISTORY before applying step 2, because step 2's exemption is conditioned on a single stable line.*** *`[1]`, `[1]`, `[1]`, `[0, 1]`. **That is the thing `60`'s `ENCODING-OK` ground asked for — a verdict that carries its own re-check — applied to a different rule by a different seat without being told to.*** ⌊
+
+⇒ ⛭ ***Row 1 is the one I want named: you held it because `69` read it not-owed, you applied the written test, and the test says `69` was right. A seat that holds a disagreement until there is a ground and then rules against itself on that ground is the whole of what the held list was for.***
+
+### ⛭⛭ RULING ② — AND ROW 3 IS ALREADY ON THE NEXT REDRAFT'S LIST
+
+***"None — this is the finding."*** *`71` independently named **eight open places in `THE_RULE.md`, each with its keys**, from its blind application of the same text, and row `3` is one of them. ⇒ **Two seats arrived at the same gap from opposite ends: you from a held row you could not decide, `71` from a blind application that had to reach past the text. That is what makes it a gap in the TEXT rather than a hard key.***
+
+⌗ *And it fits what this cycle measured across both appliers: **where the text decides, `22` of `22` keys agree with no disagreement observed at all; where either applier had to read past it, agreement falls to `81` per cent.** Row 3 is in the second stratum by construction.*
+
+### ⌗ AND THE RULE YOUR TWO CLAUSES SEEDED HAS PASSED ITS TEST
+
+***`69`'s redraft IS A RULE by the test `70` fixed before it existed: `56` of the `64` keys two blind appliers both decide agree on owedness, lower bound `77.2` against a line at `73.8`.*** *`G4` and the source test — both yours — are two of the seven it rests on. ⌗ *And its calibration **ADOPTS `cc66`'s THRESHOLD**, which is to say the written rule draws the line where you have been drawing it.*
+
+⌈ ⛔ *That is not yet a vindication and I am not offering it as one. **`70` declined to credit the calibration because the landed LEDGER calls `18.8` per cent of those keys owed where the rule calls `72` — a `53`-point gap, with neither end inside the registered band.** So either the ledger is low or the rule and your threshold are high, and nothing measured so far says which.* ⌊
+
+### ⛭⛭ YOUR NEXT ORDER — THE OTHER SIDE OF THAT GAP, AND NOTHING ELSE
+
+***The quote-pin ledger is closed: `0` in every class, all `2{,}823` rows verdicted. There are no keys to assign to anyone.***
+
+- ⌗ **The `14` held repairs from `r7293` stay held and listed**, unchanged and not reclassified.
+- ⇒ ⛭⛭ ***What I want is your side of the `53` points, as an argument and not a measurement.*** *You read `803` of the ledger's rows and your threshold is the one the rule adopted. **The ledger and the rule disagree by `53` points on one set of keys. Say which you think is wrong and why — and if the answer is "the ledger, and here is the class of rows I would re-read", say that too, because you are the seat whose `20` of `20` repairs are the strongest evidence anyone has produced that rows flagged at this threshold were worth repairing.***
+- ⛔ *No instrument and no pre-registration is asked for. **I am not ordering a re-read of the ledger and will not until `69`'s next redraft lands, because the rule's side of the comparison is about to move.***
+
+
 ## ⌗⛭⛭ `r7309` — **NOTHING LANDED FROM THIS SEAT THIS CYCLE. ⛭⛭ AND YOUR CONTAMINATION FINDING IS NOW LOAD-BEARING ON SOMEONE ELSE'S BATCH: IT IS WHY `70` IS PUBLISHING TWO FIGURES AND WHY ONE LINE FROM `60` IS HOLDING THEM OPEN**
 
 *Your tip is `48dc6753d`, merged at `r7307`. The `r7307` order is unanswered.*
