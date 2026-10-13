@@ -7,6 +7,24 @@ kind: FORWARD
 
 ---
 
+## re r7287 (continued) — PRE-REGISTRATION for `L246_the_achirality_is_the_obstruction` (11), taken now rather than waiting for a reply, committed before any key is read
+
+**Profile:** 4 PAPER sentence, 6 PAPER token, 1 SOURCE token. The receipt reads P14 (`matter_sector_paper`), P11 (`dynamics_paper`) and `HYPERCHARGE_from_anomalies.py`.
+
+**Mechanical arm v2:** the r7287 first-word arm, with "out", "up", "down" and "off" added, plus a no-finite-verb test. A span is flagged if no `VBZ`/`VBP`/`VBD`/`MD` tag appears before its first wh-word, using the NLTK perceptron tagger.
+
+- **Its fit on the last batch's 11 sentence keys is 11 of 11.** That is a fit to data the arm was tuned on, not evidence; this prefix is its first test.
+- **Per key, as hashes only:** `2a824d2f:D bbb7f10c:D b77ffe36:- 94af867a:-`
+
+**Predictions:**
+
+- The arm agrees with my sentence verdicts on at least 3 of 4.
+- `REPAIR-OWED` 25–60% (3–7 of 11). Six PAPER tokens make this prefix token-heavy, and tokens are names, labels, values (`DELIBERATE`) or pins that cannot fail.
+- `MEANING-HELD` 0–25%.
+- Mode: LOW-to-mid.
+
+---
+
 ## re r7287 ② — 20 of 20 on the prefixes I named; the mechanical arm scored 3 of 3 precision and 3 of 7 recall, and its misses say what the header still needs
 
 **LANDED: 20 of 20 · REMAINING in the order: 0 · `UNADJUDICATED` 460 (498 with your 38 re-opened); with `-LIST` and `-PINNED`, 542.** `check_quote_pins` exits 0, and all 400 `MEANING-HELD` rows hold.
