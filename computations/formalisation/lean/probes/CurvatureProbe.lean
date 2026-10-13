@@ -2246,6 +2246,34 @@ theorem two_surface_gravities (a : ℝ) (ha : a ≠ 0) (w : ℝ → ℝ) (hw : D
 
 end SweepB1
 
+/-! ## `r7315`, B2 — receipt 109: pure de Sitter `f = 1 − r²/α²` in PG form, `w = −r/α`. On `r > 0` the horizon
+`w = −1` is `r = α` alone, and THE Levi-Civita connection gives it surface gravity `|κ| = |f′(α)|/2 = 1/α` -/
+
+section SweepB2
+
+/-- de Sitter's PG profile, with `1 − w² = 1 − r²/α²` identically. -/
+noncomputable def wDS (α r : ℝ) : ℝ := -(r / α)
+
+lemma wDS_diff (α : ℝ) : Differentiable ℝ (wDS α) := by unfold wDS; fun_prop
+
+lemma ds_horizon_iff {α r : ℝ} (hα : 0 < α) : wDS α r = -1 ↔ r = α := by
+  unfold wDS; constructor
+  · intro h; field_simp at h; linarith
+  · rintro rfl; field_simp
+
+/-- **B2, receipt 109.** `∇_ξ ξ = −(1/α) ξ` on the de Sitter horizon, and `|f′(α)|/2 = 1/α`. -/
+theorem ds_surface_gravity {α : ℝ} (hα : 0 < α) (τ : ℝ) :
+    lcConn (ℝ × ℝ) (pgMetric (fun _ => 1) (wDS α) (fun _ => one_ne_zero) (differentiable_const _) (wDS_diff α))
+      xiT (τ, α) (xiT (τ, α)) = -(1 / α) • xiT (τ, α)
+    ∧ |deriv (fun s => 1 - s ^ 2 / α ^ 2) α / 2| = 1 / α := by
+  have hd : HasDerivAt (wDS α) (-(1 / α)) α := HasDerivAt.neg ((hasDerivAt_id α).div_const α)
+  have hh : wDS α (τ, α).2 = -1 := (ds_horizon_iff hα).2 rfl
+  have hf : (fun s => 1 - s ^ 2 / α ^ 2) = fun s => 1 - wDS α s ^ 2 := by funext s; unfold wDS; ring
+  refine ⟨by rw [surface_gravity _ (wDS_diff α) _ hh, hd.deriv], ?_⟩
+  rw [hf, kappa_half_fprime _ α (wDS_diff α α) hh, hd.deriv, abs_neg, abs_of_pos (by positivity)]
+
+end SweepB2
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2322,3 +2350,5 @@ end ShadowProbe
 #print axioms ShadowProbe.pg_curv_smul_left
 #print axioms ShadowProbe.fNar_hasDerivAt
 #print axioms ShadowProbe.two_surface_gravities
+#print axioms ShadowProbe.ds_horizon_iff
+#print axioms ShadowProbe.ds_surface_gravity
