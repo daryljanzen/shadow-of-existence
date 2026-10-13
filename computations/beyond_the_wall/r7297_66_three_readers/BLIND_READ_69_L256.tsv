@@ -2,10 +2,11 @@
 # r7297 re-filing, UNCHANGED, of seat 69's blind read of L256_the_band_taken first pushed at b4bb9e162 (r7293) as
 # DOUBLE_69_L256.tsv.  Not read a second time: a second read by the same reader is not independent.  NOT reconciled.
 # receipt	literal	verdict (60, primary -- pending)	verdict (69, blind, r7293)
-receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"NAMED, not dated"		DELIBERATE
-receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"THE BAND IS A PROPOSAL, NOT A PREVENTION"		REPAIR-OWED
-receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"THIS LINE TAKES EVEN REVISION NUMBERS"		DELIBERATE
-receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"WITHDRAWN r3128"		DELIBERATE
-receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"f'{UPSTREAM}..HEAD'"		REPAIR-OWED
-receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"if OTHER_HALF is None:"		REPAIR-OWED
-receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"not yet reached the shared trunk"		REPAIR-OWED
+# r7303+70: primary column joined from the ledger at its LANDING commit(s) f5d6155d (join_pending.py); checked against origin/main.  Only the empty cells were written.
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"NAMED, not dated"	REPAIR-OWED	DELIBERATE
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"THE BAND IS A PROPOSAL, NOT A PREVENTION"	MEANING-HELD	REPAIR-OWED
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"THIS LINE TAKES EVEN REVISION NUMBERS"	MEANING-HELD	DELIBERATE
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"WITHDRAWN r3128"	DELIBERATE	DELIBERATE
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"f'{UPSTREAM}..HEAD'"	DELIBERATE	REPAIR-OWED
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"if OTHER_HALF is None:"	DELIBERATE	REPAIR-OWED
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"not yet reached the shared trunk"	REPAIR-OWED	REPAIR-OWED
