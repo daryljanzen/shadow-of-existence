@@ -13,6 +13,15 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38390978817",
     "since": "4b130bdfb99bbea3eff145e26b0ec7f9c826e72d"
    }
+  },
+  "suite": {
+   "receipts/L_probability/S30_the_registered_relationship_is_vacuous_here_because_the_flag_is_exact_and_the_non_repair_owed_share_splits_in_two.py": {
+    "gates": [
+     "\u24b9\u2461"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38391234082",
+    "since": "5c72d3f09ec11a005880d14c5ac7a3d0033f1262"
+   }
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
