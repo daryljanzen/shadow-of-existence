@@ -10,6 +10,44 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭⛭ `re r7297` — THE DISCHARGE IS CHEAP: ALL FIVE LAND, EACH UNDER THE `200`-LINE HAND ROUTE (76, 166, 66, 149, 112), SO THE STOP RULE NEVER FIRES AND `r7295`'s `6` WAS MIS-ORDERED, NOT WRONG. ⌗ THE CUMULATIVE RATE BEATS THE BASELINE, `857/6 ≈ 143 < 150` — WHICH MY OWN CENTRAL COSTS SAID IT WOULD NOT (`r7297+71.1` to `+71.7`)
+
+*Full result: `computations/formalisation/r7297_71_discharge/RESULT.md`, against `+71.1`, which was pushed before any
+`mathlib` file was read for this order. Run: `PROBE_RUN_C1_C5.txt`. All `65` theorems in the probe file rest on
+`[propext, Classical.choice, Quot.sound]`.*
+
+- **⚠ Your premise, first.** *`r7295` predicted a COUNT of `6`, not a list. There were no five named discharges. The
+  five here were fixed at `+71.1` by a rule — statable, a connection in the stand-in, one chart — and ranked cheapest
+  first before anything was measured.*
+- **⛔ The scoring.**
+
+  | # | receipt | lines | stand-in, now about THE connection |
+  |---|---|---|---|
+  | C1 | 43 | 76 | flat LC is the flat connection, any signature; `∇ξ = id`; the homothety charge conserved exactly on null geodesics |
+  | C2 | 92 | 166 | PG rain field geodesic; SdS in `r = eˢ`; `r = (2Mα² sinh²)^{1/3}` solves `ṙ = √(2M/r + r²/α²)` |
+  | C3 | 41 | 66 | `∇_ξ ξ = w′ ξ` on the horizon, and `w′ = f′/2` |
+  | C4 | 29 | 149 | `U = c⁻¹∂_u` geodesic; the chart IS the Schwarzschild interior; the cycloid is its proper time |
+  | C5 | 77 | 112 | translation invariance ⇒ Killing for THE connection; `∂_x`, `∂_y` for every polarized-Gowdy-type diagonal metric |
+
+  - ***Every `cᵢ ≤ 200`: the stop rule never fired.*** *Your two-way question has the answer you called cheap.*
+  - *Cumulative: `288 → 182 → 177 → 149 → 149 → 143` per discharge, against `150` for "beating the baseline".
+    **My central costs said `203` at the end. C3–C5 came in `54`, `71` and `238` lines under.***
+  - *I predicted the stop rule would fire before C5 at **0.75**, and the "character change" verdict at **0.6**.
+    **Both wrong, in the direction this programme keeps being wrong in.***
+- **Why it was cheap.** *No Christoffel symbol was computed anywhere. Each named metric became an `NDMetric` in a
+  chart where it is global — SdS in `r = eˢ`, the interior in `η = 2 arctan eᵘ` — and each claim was read off the
+  Koszul form against an arbitrary test field. That is what the port bought.*
+- **Receipt level:** *`42` at `r7295`, now `43, 92, 41, 29, 77`. **`6` in full, the count `r7295` predicted, in the
+  other order.***
+- **Beside the score:**
+  - *77's "EXACTLY two" (no third Killing vector) is Lie-derivative content with no connection in it. Not a
+    discharge candidate, not built.*
+  - *C2's flow ODE is in `r`, the rain field in `s = log r`. The chain rule between them is reading.*
+  - *C4's chart identity is by coefficients, not by `pullG`.*
+  - *C3 is for the generic metric function.*
+  - *`mdiff` and the deferred smoothness class are as at `r7295`. Neither was used.*
+- *Nothing in the quote-pin stride; nothing outside the five.*
+
 ## ✔⛭⛭ `re r7295` — THE PORT IS WORTH IT, AND ITS CORE IS DONE: L1 (UNIQUENESS, `75` LINES) AND L2 (EXISTENCE, `213` LINES) BOTH BUILD FOR A SYMMETRIC NONDEGENERATE METRIC OF ANY SIGNATURE, AND NO STEP NEEDED POSITIVITY. ⌗ BUT IT DISCHARGES IN FULL ONLY RECEIPT 42 SO FAR — EACH NAMED METRIC MUST STILL BE PUT IN THE TREE (`r7295+71.1` to `+71.4`)
 
 *Full result: `computations/formalisation/r7295_71_port/RESULT.md`, against `+71.1`, which was pushed before any

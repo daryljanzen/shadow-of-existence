@@ -1,7 +1,10 @@
 import Mathlib.Analysis.Calculus.Deriv.Inv
 import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+import Mathlib.Analysis.SpecialFunctions.Sqrt
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv
 import Mathlib.Analysis.Calculus.ContDiff.Deriv
 import Mathlib.Analysis.Calculus.TangentCone.Real
 import Mathlib.Topology.Covering.AddCircle
@@ -1542,6 +1545,503 @@ theorem homothety_charge (η : E →L[ℝ] E →L[ℝ] ℝ) (p v : E) (t : ℝ) 
 
 end FlatLC
 
+/-! ## `r7297`, C2 — receipt 92: in a Painlevé–Gullstrand chart `g = −dτ² + (A(s) ds − w(s) dτ)²` with `A ≠ 0`,
+nondegenerate everywhere, the rain field `V = ∂_τ + (w/A) ∂_s` is a GEODESIC field of THE Levi-Civita connection.
+`A = 1`, `s = r` is the usual chart; `A = eˢ`, `r = eˢ` makes Schwarzschild–de Sitter's profile smooth on all of `ℝ`. -/
+
+section RainPG
+
+/-- `L_p = A ds − w dτ`. -/
+noncomputable def pgL (A w : ℝ → ℝ) (p : ℝ × ℝ) : ℝ × ℝ →L[ℝ] ℝ :=
+  A p.2 • ContinuousLinearMap.snd ℝ ℝ ℝ - w p.2 • ContinuousLinearMap.fst ℝ ℝ ℝ
+
+/-- The 2D Painlevé–Gullstrand form `−dτ² + L²`. -/
+noncomputable def pgForm (A w : ℝ → ℝ) (p : ℝ × ℝ) : ℝ × ℝ →L[ℝ] ℝ × ℝ →L[ℝ] ℝ :=
+  -((ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.fst ℝ ℝ ℝ)
+      (ContinuousLinearMap.fst ℝ ℝ ℝ))
+    + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (pgL A w p) (pgL A w p)
+
+lemma pgForm_apply (A w : ℝ → ℝ) (p a b : ℝ × ℝ) :
+    pgForm A w p a b = -(a.1 * b.1) + (A p.2 * a.2 - w p.2 * a.1) * (A p.2 * b.2 - w p.2 * b.1) := by
+  simp [pgForm, pgL]; ring
+
+lemma pgForm_symm (A w : ℝ → ℝ) (p a b : ℝ × ℝ) : pgForm A w p a b = pgForm A w p b a := by
+  rw [pgForm_apply, pgForm_apply]; ring
+
+lemma pgForm_nondeg {A : ℝ → ℝ} (w : ℝ → ℝ) {p : ℝ × ℝ} (hA : A p.2 ≠ 0) (u : ℝ × ℝ)
+    (h : ∀ b : ℝ × ℝ, pgForm A w p u b = 0) : u = 0 := by
+  have h1 := h ((1 : ℝ), (0 : ℝ)); have h2 := h ((0 : ℝ), (1 : ℝ))
+  rw [pgForm_apply] at h1 h2
+  simp only [mul_one, mul_zero, sub_zero, zero_sub, neg_zero, zero_add] at h1 h2
+  have e0 : A p.2 * u.2 - w p.2 * u.1 = 0 := (mul_eq_zero.1 h2).resolve_right hA
+  have e1 : u.1 = 0 := by linear_combination -h1 - w p.2 * e0
+  have e2 : u.2 = 0 := by
+    rw [e1, mul_zero, sub_zero] at e0; exact (mul_eq_zero.1 e0).resolve_left hA
+  exact Prod.ext e1 e2
+
+/-- The PG metric as an `NDMetric` on `ℝ²`. -/
+noncomputable def pgMetric (A w : ℝ → ℝ) (hA : ∀ s, A s ≠ 0) (hAd : Differentiable ℝ A)
+    (hw : Differentiable ℝ w) : NDMetric 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ) where
+  g p := pgForm A w p
+  symm p a b := pgForm_symm A w p a b
+  nondeg p u h := pgForm_nondeg w (hA p.2) u h
+  mdiff {Y Z x} hY hZ := by
+    rw [mdiffAt_model] at hY hZ
+    rw [mdifferentiableAt_iff_differentiableAt]
+    have e : (fun y => pgForm A w y (Y y) (Z y)) = fun y =>
+        -((vf Y y).1 * (vf Z y).1) + (A y.2 * (vf Y y).2 - w y.2 * (vf Y y).1)
+          * (A y.2 * (vf Z y).2 - w y.2 * (vf Z y).1) := by
+      funext y; exact pgForm_apply A w y (Y y) (Z y)
+    show DifferentiableAt ℝ (fun y => pgForm A w y (Y y) (Z y)) x
+    rw [e]
+    have hw' : DifferentiableAt ℝ (fun y : ℝ × ℝ => w y.2) x := (hw _).comp x differentiableAt_snd
+    have hA' : DifferentiableAt ℝ (fun y : ℝ × ℝ => A y.2) x := (hAd _).comp x differentiableAt_snd
+    fun_prop
+
+/-- The rain field `V = ∂_τ + (w/A) ∂_s`. -/
+noncomputable def rain (A w : ℝ → ℝ) : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p :=
+  fun p => ((1 : ℝ), w p.2 / A p.2)
+
+lemma pg_rain_left {A : ℝ → ℝ} (w : ℝ → ℝ) {p : ℝ × ℝ} (hA : A p.2 ≠ 0) (b : ℝ × ℝ) :
+    pgForm A w p ((1 : ℝ), w p.2 / A p.2) b = -b.1 := by
+  rw [pgForm_apply]; field_simp; ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **C2, receipt 92.** The rain field is a GEODESIC field of THE Levi-Civita connection of the PG metric:
+`∇_V V = 0`. The E = 1 radial geodesics are its flow lines. -/
+theorem rain_geodesic (A w : ℝ → ℝ) (hA : ∀ s, A s ≠ 0) (hAd : Differentiable ℝ A)
+    (hw : Differentiable ℝ w) (p : ℝ × ℝ) :
+    lcConn (ℝ × ℝ) (pgMetric A w hA hAd hw) (rain A w) p (rain A w p) = 0 := by
+  set m := pgMetric A w hA hAd hw
+  have hw' : DifferentiableAt ℝ (fun y : ℝ × ℝ => w y.2) p := (hw _).comp p differentiableAt_snd
+  have hA' : DifferentiableAt ℝ (fun y : ℝ × ℝ => A y.2) p := (hAd _).comp p differentiableAt_snd
+  have dq : DifferentiableAt ℝ (fun y : ℝ × ℝ => w y.2 / A y.2) p := by
+    have := hA p.2; fun_prop (disch := assumption)
+  have hVf : HasFDerivAt (fun y : ℝ × ℝ => ((1 : ℝ), w y.2 / A y.2))
+      ((0 : ℝ × ℝ →L[ℝ] ℝ).prod (fderiv ℝ (fun y : ℝ × ℝ => w y.2 / A y.2) p)) p :=
+    (hasFDerivAt_const (1 : ℝ) p).prodMk dq.hasFDerivAt
+  have dV : DifferentiableAt ℝ (vf (rain A w)) p := hVf.differentiableAt
+  have hV : MDifferentiableAt 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ × ℝ).tangent
+      (fun q => (⟨q, rain A w q⟩ : TangentBundle 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ))) p := mdiffAt_model.2 dV
+  refine m.g_inj fun Z hZ => ?_
+  have dZ := mdiffAt_model.1 hZ
+  rw [lcConn_apply m hV hV hZ, map_zero, zero_apply]
+  have f1 : (fun y => m.g y (rain A w y) (Z y)) = fun y => -(vf Z y).1 := by
+    funext y; exact pg_rain_left w (hA y.2) (Z y)
+  have f2 : (fun y => m.g y (Z y) (rain A w y)) = fun y => -(vf Z y).1 := by
+    funext y; exact (pgForm_symm A w y (Z y) (rain A w y)).trans (pg_rain_left w (hA y.2) (Z y))
+  have f3 : (fun y => m.g y (rain A w y) (rain A w y)) = fun _ => (-1 : ℝ) := by
+    funext y; exact (pg_rain_left w (hA y.2) (rain A w y)).trans rfl
+  have dfst : HasFDerivAt (fun y => -(vf Z y).1)
+      (-((ContinuousLinearMap.fst ℝ ℝ ℝ).comp (fderiv ℝ (vf Z) p))) p :=
+    (hasFDerivAt_fst.comp p dZ.hasFDerivAt).neg
+  have hbr : ∀ A B : Π y : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) y,
+      mlieBracket 𝓘(ℝ, ℝ × ℝ) A B p = fderiv ℝ (vf B) p (A p) - fderiv ℝ (vf A) p (B p) :=
+    fun A B => by
+      rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ]; rfl
+  have hV1 : ∀ u, (fderiv ℝ (vf (rain A w)) p u).1 = 0 := fun u => by
+    show (fderiv ℝ (fun y : ℝ × ℝ => ((1 : ℝ), w y.2 / A y.2)) p u).1 = 0
+    rw [hVf.fderiv]; simp
+  simp only [kosz, f1, f2, f3, mvfderiv_const, zero_apply, hbr, sub_self, map_zero]
+  rw [mvfderiv_eq_fderiv, dfst.fderiv]
+  set a : ℝ × ℝ := fderiv ℝ (vf Z) p (show ℝ × ℝ from rain A w p) with ha
+  set b : ℝ × ℝ := fderiv ℝ (vf (rain A w)) p (show ℝ × ℝ from Z p) with hb
+  have h1 : b.1 = 0 := hV1 (Z p)
+  have k1 : m.g p (rain A w p) (a - b) = -(a.1 - b.1) := by
+    rw [show m.g p (rain A w p) (a - b) = -(a - b).1 from pg_rain_left w (hA p.2) (a - b)]; simp
+  have k2 : m.g p (rain A w p) (b - a) = -(b.1 - a.1) := by
+    rw [show m.g p (rain A w p) (b - a) = -(b - a).1 from pg_rain_left w (hA p.2) (b - a)]; simp
+  have k3 : (fderiv ℝ (vf Z) p (NormedSpace.fromTangentSpace p (rain A w p))).1 = a.1 := rfl
+  simp only [neg_apply, ContinuousLinearMap.comp_apply, ContinuousLinearMap.coe_fst']
+  linear_combination (norm := skip) -k3 - k1 / 2 + k2 / 2 - h1
+  ring_nf
+  first | rfl | simp | (congr 1)
+
+/-- Schwarzschild–de Sitter's E = 1 profile in the chart `r = eˢ`: `w(s) = v(eˢ) = √(2M e⁻ˢ + e²ˢ/α²)`. -/
+noncomputable def wSdS (M α : ℝ) (s : ℝ) : ℝ := Real.sqrt (2 * M * Real.exp (-s) + Real.exp (2 * s) / α ^ 2)
+
+lemma wSdS_diff {M : ℝ} (hM : 0 < M) (α : ℝ) : Differentiable ℝ (wSdS M α) := fun s => by
+  have hpos : 0 < 2 * M * Real.exp (-s) + Real.exp (2 * s) / α ^ 2 := by positivity
+  have h0 := hpos.ne'
+  unfold wSdS
+  fun_prop (disch := assumption)
+
+/-- **C2, receipt 92, on the named metric.** The rain field of Schwarzschild–de Sitter in the chart `r = eˢ`, where
+the metric is smooth and nondegenerate on all of `ℝ²`, is a geodesic field of THE Levi-Civita connection. -/
+theorem sds_rain_geodesic {M : ℝ} (hM : 0 < M) (α : ℝ) (p : ℝ × ℝ) :
+    lcConn (ℝ × ℝ) (pgMetric Real.exp (wSdS M α) Real.exp_ne_zero Real.differentiable_exp (wSdS_diff hM α))
+      (rain Real.exp (wSdS M α)) p (rain Real.exp (wSdS M α) p) = 0 :=
+  rain_geodesic _ _ _ _ _ p
+
+/-- **C2, receipt 92: the `sinh^{2/3}` law.** `r(τ) = (2Mα² sinh²(3τ/2α))^{1/3}` solves `ṙ = √(2M/r + r²/α²)`
+for `τ > 0`: it is a flow line of the rain field, an E = 1 radial geodesic. -/
+theorem sinh23_flow {M α τ : ℝ} (hM : 0 < M) (hα : 0 < α) (hτ : 0 < τ) :
+    HasDerivAt (fun t => (2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * t) ^ 2) ^ (1 / 3 : ℝ))
+      (Real.sqrt (2 * M / (2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * τ) ^ 2) ^ (1 / 3 : ℝ)
+        + ((2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * τ) ^ 2) ^ (1 / 3 : ℝ)) ^ 2 / α ^ 2)) τ := by
+  set k := 3 / (2 * α) with hk
+  set S := Real.sinh (k * τ)
+  set C := Real.cosh (k * τ)
+  have hS : 0 < S := Real.sinh_pos_iff.2 (by positivity)
+  have hC : 0 < C := Real.cosh_pos _
+  set F := 2 * M * α ^ 2 * S ^ 2
+  have hF : 0 < F := by positivity
+  set r := F ^ (1 / 3 : ℝ)
+  have hr : 0 < r := Real.rpow_pos_of_pos hF _
+  have hr3 : r ^ 3 = F := by
+    rw [← Real.rpow_natCast, ← Real.rpow_mul hF.le]; norm_num
+  have hFd : HasDerivAt (fun t => 2 * M * α ^ 2 * Real.sinh (k * t) ^ 2)
+      (2 * M * α ^ 2 * (2 * S * (C * k))) τ := by
+    have := (((Real.hasDerivAt_sinh (k * τ)).comp τ ((hasDerivAt_id τ).const_mul k)).pow 2).const_mul
+      (2 * M * α ^ 2)
+    convert this using 1
+    · funext y; simp [Function.comp_apply]
+    · rw [show (Real.sinh ∘ HMul.hMul k) τ = S from rfl]; push_cast; ring
+  have hrd := HasDerivAt.rpow_const (p := 1 / 3) hFd (Or.inl hF.ne')
+  convert hrd using 1
+  have hFr : F ^ ((1 : ℝ) / 3 - 1) = r / F := by
+    rw [Real.rpow_sub hF, Real.rpow_one]
+  rw [hFr]
+  have hcs : C ^ 2 = 1 + S ^ 2 := by rw [Real.cosh_sq]; ring
+  rw [Real.sqrt_eq_iff_mul_self_eq_of_pos (by positivity)]
+  field_simp
+  rw [hk]; field_simp
+  have hF' : F = 2 * M * α ^ 2 * S ^ 2 := rfl
+  linear_combination (4 * M ^ 2 * α ^ 4 * S ^ 2 * C ^ 2 - F ^ 2) * hr3 + 4 * M ^ 2 * α ^ 4 * S ^ 2 * F * hcs
+    - (2 * M * α ^ 2 * F + F * (F + 2 * M * α ^ 2 * S ^ 2)) * hF'
+
+end RainPG
+
+/-! ## `r7297`, C3 — receipt 41: in the PG chart with `A = 1`, `ξ = ∂_τ` satisfies `∇_ξ ξ = κ ξ` on the horizon
+`w = −1`, with `κ = w′ = f′/2`, `f = 1 − w²` — the surface gravity, for THE Levi-Civita connection -/
+
+section SurfGrav
+
+lemma fts_apply (p : ℝ × ℝ) (v : TangentSpace 𝓘(ℝ, ℝ × ℝ) p) :
+    ((NormedSpace.fromTangentSpace (𝕜 := ℝ) p : TangentSpace 𝓘(ℝ, ℝ × ℝ) p →L[ℝ] ℝ × ℝ) v) = v := rfl
+
+/-- `ξ = ∂_τ`. -/
+def xiT : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p := fun _ => ((1 : ℝ), (0 : ℝ))
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **C3, receipt 41.** On the horizon `w(r) = −1`, `∇_ξ ξ = w′(r) ξ`: the surface gravity is `κ = w′ = f′/2`. -/
+theorem surface_gravity (w : ℝ → ℝ) (hw : Differentiable ℝ w) (p : ℝ × ℝ) (hh : w p.2 = -1) :
+    lcConn (ℝ × ℝ) (pgMetric (fun _ => 1) w (fun _ => one_ne_zero) (differentiable_const _) hw) xiT p (xiT p)
+      = deriv w p.2 • xiT p := by
+  set m := pgMetric (fun _ => 1) w (fun _ => one_ne_zero) (differentiable_const _) hw
+  have hξd : HasFDerivAt (vf xiT) (0 : ℝ × ℝ →L[ℝ] ℝ × ℝ) p := hasFDerivAt_const _ _
+  have hξ : MDifferentiableAt 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ × ℝ).tangent
+      (fun q => (⟨q, xiT q⟩ : TangentBundle 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ))) p :=
+    mdiffAt_model.2 hξd.differentiableAt
+  refine m.g_inj fun Z hZ => ?_
+  have dZ := mdiffAt_model.1 hZ
+  rw [lcConn_apply m hξ hξ hZ]
+  -- the pieces of the Koszul form
+  have hW : HasFDerivAt (fun y : ℝ × ℝ => w y.2) (deriv w p.2 • ContinuousLinearMap.snd ℝ ℝ ℝ) p := by
+    exact (hw p.2).hasDerivAt.comp_hasFDerivAt p (hasFDerivAt_snd (p := p) (𝕜 := ℝ))
+  have hZ1 : HasFDerivAt (fun y => (vf Z y).1) ((ContinuousLinearMap.fst ℝ ℝ ℝ).comp (fderiv ℝ (vf Z) p)) p :=
+    hasFDerivAt_fst.comp p dZ.hasFDerivAt
+  have hZ2 : HasFDerivAt (fun y => (vf Z y).2) ((ContinuousLinearMap.snd ℝ ℝ ℝ).comp (fderiv ℝ (vf Z) p)) p :=
+    hasFDerivAt_snd.comp p dZ.hasFDerivAt
+  have gl : ∀ y (b : ℝ × ℝ), m.g y (xiT y) b = -b.1 - w y.2 * (b.2 - w y.2 * b.1) := fun y b => by
+    show pgForm (fun _ => 1) w y ((1 : ℝ), (0 : ℝ)) b = _
+    rw [pgForm_apply]; ring
+  have f1 : (fun y => m.g y (xiT y) (Z y)) =
+      fun y => -(vf Z y).1 - w y.2 * ((vf Z y).2 - w y.2 * (vf Z y).1) := funext fun y => gl y (Z y)
+  have f2 : (fun y => m.g y (Z y) (xiT y)) =
+      fun y => -(vf Z y).1 - w y.2 * ((vf Z y).2 - w y.2 * (vf Z y).1) :=
+    funext fun y => (pgForm_symm _ w y (Z y) (xiT y)).trans (gl y (Z y))
+  have f3 : (fun y => m.g y (xiT y) (xiT y)) = fun y => -1 + w y.2 * w y.2 := funext fun y => by
+    rw [gl]; show -(1 : ℝ) - w y.2 * (0 - w y.2 * 1) = _; ring
+  have hT1 : HasFDerivAt (fun y => -(vf Z y).1 - w y.2 * ((vf Z y).2 - w y.2 * (vf Z y).1)) _ p :=
+    (hZ1.neg).sub (hW.mul (hZ2.sub (hW.mul hZ1)))
+  have hT3 : HasFDerivAt (fun y : ℝ × ℝ => -1 + w y.2 * w y.2) _ p :=
+    (hasFDerivAt_const (-1 : ℝ) p).add (hW.mul hW)
+  have hbr : ∀ A B : Π y : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) y,
+      mlieBracket 𝓘(ℝ, ℝ × ℝ) A B p = fderiv ℝ (vf B) p (A p) - fderiv ℝ (vf A) p (B p) :=
+    fun A B => by
+      rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ]; rfl
+  simp only [kosz, f1, f2, f3, hbr, hξd.fderiv, zero_apply, sub_zero, sub_self, map_zero]
+  rw [mvfderiv_eq_fderiv, mvfderiv_eq_fderiv, hT1.fderiv, hT3.fderiv]
+  simp only [ContinuousLinearMap.comp_apply, sub_apply, neg_apply, add_apply, smul_apply,
+    ContinuousLinearMap.coe_fst', ContinuousLinearMap.coe_snd', smul_eq_mul, fts_apply, zero_apply]
+  have hx2 : (xiT p : ℝ × ℝ).2 = 0 := rfl
+  rw [map_smul, smul_apply, smul_eq_mul]
+  simp only [gl, hx2, Prod.fst_sub, Prod.snd_sub, Prod.fst_zero, Prod.snd_zero, mul_zero, zero_add, add_zero]
+  rw [hh]; ring
+
+/-- **C3.** And `w′ = f′/2` there, with `f = 1 − w²`: the surface gravity is half the slope of the metric function. -/
+lemma kappa_half_fprime (w : ℝ → ℝ) (r : ℝ) (hw : DifferentiableAt ℝ w r) (hh : w r = -1) :
+    deriv (fun s => 1 - w s ^ 2) r / 2 = deriv w r := by
+  have h : HasDerivAt (fun s => 1 - w s ^ 2) (-(2 * w r * deriv w r)) r := by
+    convert (hw.hasDerivAt.pow 2).const_sub 1 using 1; simp
+  rw [h.deriv, hh]; ring
+
+end SurfGrav
+
+/-! ## `r7297`, C4 — receipt 29: for a static 2D metric `g = −c(u)² du² + b(u) dt²` (`c, b ≠ 0`), the unit field
+`U = c⁻¹ ∂_u` is a GEODESIC field of THE Levi-Civita connection. The Schwarzschild interior in the chart
+`η = 2 arctan eᵘ` is `c = 4M eᵘ/(1+e²ᵘ)²`, `b = e²ᵘ`, and the cycloid `τ = M(η + sin η)` is its proper time. -/
+
+section StaticDiag
+
+noncomputable def dgForm (c b : ℝ → ℝ) (p : ℝ × ℝ) : ℝ × ℝ →L[ℝ] ℝ × ℝ →L[ℝ] ℝ :=
+  -(c p.1 ^ 2 • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.fst ℝ ℝ ℝ)
+      (ContinuousLinearMap.fst ℝ ℝ ℝ))
+    + b p.1 • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.snd ℝ ℝ ℝ)
+      (ContinuousLinearMap.snd ℝ ℝ ℝ)
+
+lemma dgForm_apply (c b : ℝ → ℝ) (p x y : ℝ × ℝ) :
+    dgForm c b p x y = -(c p.1 ^ 2 * (x.1 * y.1)) + b p.1 * (x.2 * y.2) := by
+  simp [dgForm]
+
+lemma dgForm_symm (c b : ℝ → ℝ) (p x y : ℝ × ℝ) : dgForm c b p x y = dgForm c b p y x := by
+  rw [dgForm_apply, dgForm_apply]; ring
+
+lemma dgForm_nondeg {c b : ℝ → ℝ} {p : ℝ × ℝ} (hc : c p.1 ≠ 0) (hb : b p.1 ≠ 0) (x : ℝ × ℝ)
+    (h : ∀ y : ℝ × ℝ, dgForm c b p x y = 0) : x = 0 := by
+  have h1 := h ((1 : ℝ), (0 : ℝ)); have h2 := h ((0 : ℝ), (1 : ℝ))
+  rw [dgForm_apply] at h1 h2
+  simp only [mul_one, mul_zero, add_zero, zero_add, neg_zero, neg_eq_zero] at h1 h2
+  exact Prod.ext ((mul_eq_zero.1 h1).resolve_left (pow_ne_zero 2 hc))
+    ((mul_eq_zero.1 h2).resolve_left hb)
+
+noncomputable def dgMetric (c b : ℝ → ℝ) (hc : ∀ u, c u ≠ 0) (hb : ∀ u, b u ≠ 0)
+    (hcd : Differentiable ℝ c) (hbd : Differentiable ℝ b) : NDMetric 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ) where
+  g p := dgForm c b p
+  symm p x y := dgForm_symm c b p x y
+  nondeg p x h := dgForm_nondeg (hc p.1) (hb p.1) x h
+  mdiff {Y Z x} hY hZ := by
+    rw [mdiffAt_model] at hY hZ
+    rw [mdifferentiableAt_iff_differentiableAt]
+    have e : (fun y => dgForm c b y (Y y) (Z y)) = fun y =>
+        -(c y.1 ^ 2 * ((vf Y y).1 * (vf Z y).1)) + b y.1 * ((vf Y y).2 * (vf Z y).2) := by
+      funext y; exact dgForm_apply c b y (Y y) (Z y)
+    show DifferentiableAt ℝ (fun y => dgForm c b y (Y y) (Z y)) x
+    rw [e]
+    have hc' : DifferentiableAt ℝ (fun y : ℝ × ℝ => c y.1) x := (hcd _).comp x differentiableAt_fst
+    have hb' : DifferentiableAt ℝ (fun y : ℝ × ℝ => b y.1) x := (hbd _).comp x differentiableAt_fst
+    fun_prop
+
+/-- The unit field `U = c⁻¹ ∂_u`. -/
+noncomputable def unitU (c : ℝ → ℝ) : Π p : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) p :=
+  fun p => ((c p.1)⁻¹, (0 : ℝ))
+
+lemma dg_U_left {c : ℝ → ℝ} (b : ℝ → ℝ) {p : ℝ × ℝ} (hc : c p.1 ≠ 0) (y : ℝ × ℝ) :
+    dgForm c b p ((c p.1)⁻¹, (0 : ℝ)) y = -(c p.1 * y.1) := by
+  rw [dgForm_apply]; field_simp; ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **C4.** `U = c⁻¹ ∂_u` is a geodesic field of THE Levi-Civita connection: `∇_U U = 0`. -/
+theorem unitU_geodesic (c b : ℝ → ℝ) (hc : ∀ u, c u ≠ 0) (hb : ∀ u, b u ≠ 0)
+    (hcd : Differentiable ℝ c) (hbd : Differentiable ℝ b) (p : ℝ × ℝ) :
+    lcConn (ℝ × ℝ) (dgMetric c b hc hb hcd hbd) (unitU c) p (unitU c p) = 0 := by
+  set m := dgMetric c b hc hb hcd hbd
+  have hc1 : HasFDerivAt (fun y : ℝ × ℝ => c y.1) (deriv c p.1 • ContinuousLinearMap.fst ℝ ℝ ℝ) p := by
+    exact (hcd p.1).hasDerivAt.comp_hasFDerivAt p (hasFDerivAt_fst (p := p) (𝕜 := ℝ))
+  have hci : HasFDerivAt (fun y : ℝ × ℝ => (c y.1)⁻¹)
+      (-(deriv c p.1 / c p.1 ^ 2) • ContinuousLinearMap.fst ℝ ℝ ℝ) p := by
+    have := ((hcd p.1).hasDerivAt.inv (hc p.1)).comp_hasFDerivAt p (hasFDerivAt_fst (p := p) (𝕜 := ℝ))
+    convert this using 1; ext v; simp; ring
+  have hUf : HasFDerivAt (vf (unitU c)) ((-(deriv c p.1 / c p.1 ^ 2) • ContinuousLinearMap.fst ℝ ℝ ℝ).prod
+      (0 : ℝ × ℝ →L[ℝ] ℝ)) p := hci.prodMk (hasFDerivAt_const (0 : ℝ) p)
+  have hU : MDifferentiableAt 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ × ℝ).tangent
+      (fun q => (⟨q, unitU c q⟩ : TangentBundle 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ))) p :=
+    mdiffAt_model.2 hUf.differentiableAt
+  refine m.g_inj fun Z hZ => ?_
+  have dZ := mdiffAt_model.1 hZ
+  rw [lcConn_apply m hU hU hZ, map_zero, zero_apply]
+  have gl : ∀ y (v : ℝ × ℝ), m.g y (unitU c y) v = -(c y.1 * v.1) := fun y v => dg_U_left b (hc y.1) v
+  have f1 : (fun y => m.g y (unitU c y) (Z y)) = fun y => -(c y.1 * (vf Z y).1) :=
+    funext fun y => gl y (Z y)
+  have f2 : (fun y => m.g y (Z y) (unitU c y)) = fun y => -(c y.1 * (vf Z y).1) :=
+    funext fun y => (dgForm_symm c b y (Z y) (unitU c y)).trans (gl y (Z y))
+  have f3 : (fun y => m.g y (unitU c y) (unitU c y)) = fun _ => (-1 : ℝ) := funext fun y => by
+    rw [gl]; show -(c y.1 * (c y.1)⁻¹) = -1; rw [mul_inv_cancel₀ (hc y.1)]
+  have hZ1 : HasFDerivAt (fun y => (vf Z y).1) ((ContinuousLinearMap.fst ℝ ℝ ℝ).comp (fderiv ℝ (vf Z) p)) p :=
+    hasFDerivAt_fst.comp p dZ.hasFDerivAt
+  have hT : HasFDerivAt (fun y => -(c y.1 * (vf Z y).1)) _ p := (hc1.mul hZ1).neg
+  have hbr : ∀ A B : Π y : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) y,
+      mlieBracket 𝓘(ℝ, ℝ × ℝ) A B p = fderiv ℝ (vf B) p (A p) - fderiv ℝ (vf A) p (B p) :=
+    fun A B => by
+      rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ]; rfl
+  simp only [kosz, f1, f2, f3, hbr, mvfderiv_const, zero_apply, sub_self, map_zero, hUf.fderiv]
+  rw [mvfderiv_eq_fderiv, hT.fderiv]
+  simp only [ContinuousLinearMap.comp_apply, sub_apply, neg_apply, add_apply, smul_apply,
+    ContinuousLinearMap.coe_fst', ContinuousLinearMap.coe_snd', smul_eq_mul, fts_apply, zero_apply,
+    ContinuousLinearMap.prod_apply, gl, Prod.fst_sub, Prod.snd_sub]
+  have hu1 : (unitU c p : ℝ × ℝ).1 = (c p.1)⁻¹ := rfl
+  have hvz : (vf Z p) = (Z p : ℝ × ℝ) := rfl
+  simp only [hu1, hvz]
+  have hcp := hc p.1
+  field_simp
+  ring
+
+/-- The Schwarzschild interior in the chart `η = 2 arctan eᵘ`: `c(u) = 4M eᵘ/(1 + e²ᵘ)²`, `b(u) = e²ᵘ`. -/
+noncomputable def cInt (M u : ℝ) : ℝ := 4 * M * Real.exp u / (1 + Real.exp (2 * u)) ^ 2
+
+/-- The areal radius in that chart, `r(u) = 2M/(1 + e²ᵘ)`, in `(0, 2M)`. -/
+noncomputable def rInt (M u : ℝ) : ℝ := 2 * M / (1 + Real.exp (2 * u))
+
+/-- **C4, receipt 29 — the chart IS the Schwarzschild interior.** `b = e²ᵘ = 2M/r − 1` and `r′ = −c eᵘ`, so
+`−c² du² + b dt² = −dr²/(2M/r − 1) + (2M/r − 1) dt²`. -/
+lemma interior_chart {M : ℝ} (hM : M ≠ 0) (u : ℝ) :
+    2 * M / rInt M u - 1 = Real.exp (2 * u) ∧ HasDerivAt (rInt M) (-(cInt M u * Real.exp u)) u := by
+  have h1 : (0 : ℝ) < 1 + Real.exp (2 * u) := by positivity
+  refine ⟨by unfold rInt; field_simp; ring, ?_⟩
+  have hd := (((Real.hasDerivAt_exp (2 * u)).comp u ((hasDerivAt_id u).const_mul 2)).const_add 1).inv h1.ne'
+  have := hd.const_mul (2 * M)
+  unfold rInt cInt
+  convert this using 1
+  · funext s; simp [div_eq_mul_inv]
+  · have he2 : Real.exp (2 * u) = Real.exp u ^ 2 := by rw [← Real.exp_nat_mul]; ring_nf
+    simp only [Function.comp_apply, he2]
+    field_simp; ring
+
+/-- **C4, receipt 29 — the cycloid.** With `η = 2 arctan eᵘ`, the cycloid time `τ = M(η + sin η)` has `τ′ = c`: it is
+the proper time along the geodesic field `U`, and `r = M(1 + cos η)`. -/
+lemma cycloid_proper_time (M u : ℝ) :
+    HasDerivAt (fun s => M * (2 * Real.arctan (Real.exp s) + Real.sin (2 * Real.arctan (Real.exp s))))
+      (cInt M u) u ∧ rInt M u = M * (1 + Real.cos (2 * Real.arctan (Real.exp u))) := by
+  have hx : (0 : ℝ) < 1 + Real.exp u ^ 2 := by positivity
+  have hcos : Real.cos (2 * Real.arctan (Real.exp u)) = 2 / (1 + Real.exp u ^ 2) - 1 := by
+    rw [Real.cos_two_mul, Real.cos_sq_arctan]; ring
+  have he2 : Real.exp (2 * u) = Real.exp u ^ 2 := by rw [← Real.exp_nat_mul]; ring_nf
+  have hη : HasDerivAt (fun s => 2 * Real.arctan (Real.exp s)) (2 * (Real.exp u / (1 + Real.exp u ^ 2))) u := by
+    have := (Real.hasDerivAt_arctan (Real.exp u)).comp u (Real.hasDerivAt_exp u)
+    convert this.const_mul 2 using 1
+    · rfl
+    · field_simp
+  refine ⟨?_, ?_⟩
+  · have := (hη.add (hη.sin)).const_mul M
+    convert this using 1
+    rw [hcos]; unfold cInt; rw [he2]; field_simp; ring
+  · unfold rInt; rw [hcos, he2]; field_simp; ring
+
+/-- **C4, receipt 29, on the named metric.** The radial infall field of the Schwarzschild interior, in the chart
+where it is smooth and nondegenerate on all of `ℝ²`, is a geodesic field of THE Levi-Civita connection. -/
+theorem interior_geodesic {M : ℝ} (hM : 0 < M) (p : ℝ × ℝ) :
+    lcConn (ℝ × ℝ) (dgMetric (cInt M) (fun u => Real.exp (2 * u))
+      (fun u => by unfold cInt; positivity) (fun u => (Real.exp_pos _).ne')
+      (by unfold cInt; fun_prop (disch := intro u; positivity)) (by fun_prop))
+      (unitU (cInt M)) p (unitU (cInt M) p) = 0 :=
+  unitU_geodesic _ _ _ _ _ _ p
+
+end StaticDiag
+
+/-! ## `r7297`, C5 — receipt 77: if a metric on `E` is invariant under translation along `K`, then the constant
+field `K` is a KILLING field of THE Levi-Civita connection, `g(∇_X K, Y) + g(X, ∇_Y K) = 0`. For every diagonal
+metric on `ℝ⁴` whose coefficients depend on `(t, z)` only — the polarized Gowdy family — `∂_x` and `∂_y` are Killing. -/
+
+section KillingTrans
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+
+/-- The constant field `w`. -/
+def constF (w : E) : Π y : E, TangentSpace 𝓘(ℝ, E) y := fun _ => w
+
+lemma constF_mdiff (w x : E) : MDiffAt (T% (constF w)) x :=
+  mdiffAt_model.2 (differentiableAt_const (c := w))
+
+set_option backward.isDefEq.respectTransparency false in
+lemma dirDeriv_invariant (m : NDMetric 𝓘(ℝ, E) E) {K : E} (hinv : ∀ y (t : ℝ), m.g (y + t • K) = m.g y)
+    (u v x : E) : d% (fun y => m.g y (constF u y) (constF v y)) x K = 0 := by
+  have hf : DifferentiableAt ℝ (fun y => m.g y (constF u y) (constF v y)) x :=
+    mdifferentiableAt_iff_differentiableAt.1 (m.mdiff (constF_mdiff u x) (constF_mdiff v x))
+  have hl : HasDerivAt (fun t : ℝ => x + t • K) K 0 := by
+    simpa using ((hasDerivAt_id (0 : ℝ)).smul_const K).const_add x
+  have h1 := HasFDerivAt.comp_hasDerivAt_of_eq (x := (0 : ℝ)) hf.hasFDerivAt hl (by simp)
+  have h2 : HasDerivAt ((fun y => m.g y (constF u y) (constF v y)) ∘ fun t : ℝ => x + t • K) 0 0 := by
+    have : ((fun y => m.g y (constF u y) (constF v y)) ∘ fun t : ℝ => x + t • K) =
+        fun _ => m.g x u v := by
+      funext t; simp only [Function.comp, constF, hinv]; rfl
+    rw [this]; exact hasDerivAt_const _ _
+  rw [mvfderiv_eq_fderiv]
+  exact h1.unique h2
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **C5.** Translation invariance along `K` makes `K` a Killing field of THE Levi-Civita connection. -/
+theorem killing_of_invariant (m : NDMetric 𝓘(ℝ, E) E) {K : E} (hinv : ∀ y (t : ℝ), m.g (y + t • K) = m.g y)
+    (x u v : E) :
+    m.g x (lcConn E m (constF K) x u) v + m.g x u (lcConn E m (constF K) x v) = 0 := by
+  rw [m.symm x u, show m.g x (lcConn E m (constF K) x u) v
+      = m.g x (lcConn E m (constF K) x (constF u x)) (constF v x) from rfl,
+    show m.g x (lcConn E m (constF K) x v) u
+      = m.g x (lcConn E m (constF K) x (constF v x)) (constF u x) from rfl,
+    lcConn_apply m (constF_mdiff u x) (constF_mdiff K x) (constF_mdiff v x),
+    lcConn_apply m (constF_mdiff v x) (constF_mdiff K x) (constF_mdiff u x)]
+  simp only [kosz]
+  have hb : ∀ a b : E, mlieBracket 𝓘(ℝ, E) (constF a) (constF b) x = 0 := fun a b => by
+    rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ,
+      lieBracket_eq]
+    show fderiv ℝ (fun _ : E => b) x a - fderiv ℝ (fun _ : E => a) x b = 0
+    simp
+  simp only [hb, map_zero]
+  rw [m.fun_symm (constF u) (constF K), m.fun_symm (constF K) (constF v), m.fun_symm (constF v) (constF u)]
+  have h0 : d% (fun y => m.g y (constF u y) (constF v y)) x (constF K x) = 0 :=
+    dirDeriv_invariant m hinv u v x
+  linarith
+
+/-- A diagonal form on `ℝ⁴`: `Σᵢ cᵢ(p) dxᵢ²`, any signature. -/
+noncomputable def diag4 (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) :
+    (Fin 4 → ℝ) →L[ℝ] (Fin 4 → ℝ) →L[ℝ] ℝ :=
+  ∑ i, c i p • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj i)
+    (ContinuousLinearMap.proj i)
+
+lemma diag4_apply (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (p u v : Fin 4 → ℝ) :
+    diag4 c p u v = ∑ i, c i p * (u i * v i) := by
+  simp [diag4]
+
+lemma diag4_symm (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (p u v : Fin 4 → ℝ) : diag4 c p u v = diag4 c p v u := by
+  rw [diag4_apply, diag4_apply]; exact Finset.sum_congr rfl fun i _ => by ring
+
+lemma diag4_nondeg {c : Fin 4 → (Fin 4 → ℝ) → ℝ} {p : Fin 4 → ℝ} (hc : ∀ i, c i p ≠ 0) (u : Fin 4 → ℝ)
+    (h : ∀ v : Fin 4 → ℝ, diag4 c p u v = 0) : u = 0 := by
+  funext j
+  have hj := h (Pi.single j 1)
+  rw [diag4_apply, Finset.sum_eq_single j (fun i _ hi => by simp [Pi.single_apply, hi])
+    (by simp)] at hj
+  simpa [hc j] using hj
+
+/-- A diagonal metric with nonvanishing differentiable coefficients, as an `NDMetric` on `ℝ⁴`. -/
+noncomputable def diag4Metric (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (hc : ∀ i p, c i p ≠ 0)
+    (hcd : ∀ i, Differentiable ℝ (c i)) : NDMetric 𝓘(ℝ, Fin 4 → ℝ) (Fin 4 → ℝ) where
+  g p := diag4 c p
+  symm p u v := diag4_symm c p u v
+  nondeg p u h := diag4_nondeg (fun i => hc i p) u h
+  mdiff {Y Z x} hY hZ := by
+    rw [mdiffAt_model] at hY hZ
+    rw [mdifferentiableAt_iff_differentiableAt]
+    have e : (fun y => diag4 c y (Y y) (Z y)) = fun y => ∑ i, c i y * (vf Y y i * vf Z y i) := by
+      funext y; exact diag4_apply c y (Y y) (Z y)
+    show DifferentiableAt ℝ (fun y => diag4 c y (Y y) (Z y)) x
+    rw [e]
+    have hYi : ∀ i, DifferentiableAt ℝ (fun y => vf Y y i) x := fun i =>
+      ((ContinuousLinearMap.proj (R := ℝ) (φ := fun _ : Fin 4 => ℝ) i).differentiableAt).comp x hY
+    have hZi : ∀ i, DifferentiableAt ℝ (fun y => vf Z y i) x := fun i =>
+      ((ContinuousLinearMap.proj (R := ℝ) (φ := fun _ : Fin 4 => ℝ) i).differentiableAt).comp x hZ
+    exact DifferentiableAt.fun_sum fun i _ => ((hcd i x).mul ((hYi i).mul (hZi i)))
+
+/-- **C5, receipt 77.** For EVERY diagonal metric on `ℝ⁴` (any signature) whose coefficients depend on the
+coordinates `(t, z) = (x₀, x₁)` only — the polarized Gowdy family, for all profiles — `∂_x` and `∂_y` are Killing
+fields of THE Levi-Civita connection. -/
+theorem gowdy_killing (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (hc : ∀ i p, c i p ≠ 0)
+    (hcd : ∀ i, Differentiable ℝ (c i))
+    (hdep : ∀ i (p q : Fin 4 → ℝ), p 0 = q 0 → p 1 = q 1 → c i p = c i q)
+    (k : Fin 4) (hk : k = 2 ∨ k = 3) (x u v : Fin 4 → ℝ) :
+    (diag4Metric c hc hcd).g x (lcConn (Fin 4 → ℝ) (diag4Metric c hc hcd) (constF (Pi.single k 1)) x u) v
+      + (diag4Metric c hc hcd).g x u
+          (lcConn (Fin 4 → ℝ) (diag4Metric c hc hcd) (constF (Pi.single k 1)) x v) = 0 := by
+  refine killing_of_invariant _ (fun y t => ?_) x u v
+  have h0 : (0 : Fin 4) ≠ k := by rcases hk with rfl | rfl <;> decide
+  have h1 : (1 : Fin 4) ≠ k := by rcases hk with rfl | rfl <;> decide
+  show diag4 c (y + t • Pi.single k 1) = diag4 c y
+  have : ∀ i, c i (y + t • Pi.single k 1) = c i y := fun i =>
+    hdep i _ _ (by simp [Pi.single_apply, h0]) (by simp [Pi.single_apply, h1])
+  simp only [diag4, this]
+
+end KillingTrans
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -1598,3 +2098,14 @@ end ShadowProbe
 #print axioms ShadowProbe.flat_isLeviCivita
 #print axioms ShadowProbe.homothety_nabla
 #print axioms ShadowProbe.homothety_charge
+#print axioms ShadowProbe.rain_geodesic
+#print axioms ShadowProbe.sds_rain_geodesic
+#print axioms ShadowProbe.sinh23_flow
+#print axioms ShadowProbe.surface_gravity
+#print axioms ShadowProbe.kappa_half_fprime
+#print axioms ShadowProbe.unitU_geodesic
+#print axioms ShadowProbe.interior_chart
+#print axioms ShadowProbe.cycloid_proper_time
+#print axioms ShadowProbe.interior_geodesic
+#print axioms ShadowProbe.killing_of_invariant
+#print axioms ShadowProbe.gowdy_killing
