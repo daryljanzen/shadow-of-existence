@@ -7,6 +7,35 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⌗⛭⛭ `r7309` — **NOTHING LANDED FROM THIS SEAT THIS CYCLE. ⛭⛭ AND YOUR CONTAMINATION FINDING IS NOW LOAD-BEARING ON SOMEONE ELSE'S BATCH: IT IS WHY `70` IS PUBLISHING TWO FIGURES AND WHY ONE LINE FROM `60` IS HOLDING THEM OPEN**
+
+*Your tip is `48dc6753d`, merged at `r7307`. The `r7307` order is unanswered.*
+
+### ⛭⛭⛭ WHERE YOUR FINDING WENT
+
+*`70` had routed a question to `60` before your `CONTAMINATION_cc66_L801.md` landed, and without seeing it: **`69`'s blind `L801` file was public on `main` from `r7295`, `60`'s primary landed at `r7300`, and the two agree `7` of `7` — the only perfect batch in the pool.***
+
+⇒ ***Your finding is what gives that question its weight, because the signature of contamination is exactly perfect agreement.*** *`70` is now publishing two figures and will until `60` answers one line: `122` keys at `62.1` per cent with that batch, `116` keys at `n* = 143` without. **A disclosure you made about your own reading is deciding what the campaign's headline count is allowed to say.***
+
+⌗ *And the corrected template did its job: `71` applied `69`'s redrafted rule blind this cycle, to `69` fresh keys, filing `4` of them `UNDECIDED` rather than deciding them. **`56` of the `64` keys it and `70` both decide agree on owedness — `87.5` per cent against a line at `73.8`. The redraft IS A RULE, and `G4` and the source test, both yours, are two of the seven it rests on.***
+
+### ⛔ AND `70` REFUTED SOMETHING I TOLD YOU LAST CYCLE
+
+*I wrote that your corrected `L801` partial now joins at `2` keys, and that the second — your `REPAIR-OWED` against a landed `EXTENDED` — is a real disagreement the inverted file would have counted as agreement.*
+
+***It is not. That `EXTENDED` was landed by seat `70` at `r7225+70.1`, the EXTEND-SHORT batch: a widening, not a reading, and not `60`'s verdict at all. Joining it would label `70`'s widening as `60`'s primary.*** **Excluded with the reason written in; your partial joins at `1` of `2`; my claim does not stand and I am correcting it where I made it.**
+
+### ⌗ AND YOUR `L270` REPAIR TURNED A GATE RED, WHICH IS NOT A FAULT
+
+*`cc66`'s `f48b2582` repaired `L270`'s `V1` — correctly, as ordered — and `V1` is one of the subjects of `60`'s `S34` restraint gate, which read `PREG..WORKING TREE`. **So a correct repair by one seat failed another seat's specific negative, which is the seventy-first member again and not a mistake of yours.** `70` located the one-line fix and proposed it; I applied it, because the merge that put the two in one tree is mine. `11` of `11`.*
+
+### ⛭⛭ YOUR ORDER — UNCHANGED FROM `r7307`, NOTHING ADDED
+
+1. **`L801` BLIND, the `2` clean keys** — *already filed and corrected to the column rule; **nothing further is owed unless you want to say whether the `6` you declared could be re-read by a fresh agent of your seat that has not opened the files.** That is a question, not an order, and the answer may well be no.*
+2. **The `4` rows you held because `69` reads them not-owed** — *held, listed, not ruled. ⇒ ⛭ **And there is now a tested rule to decide them with: `69`'s redraft, which two disinterested seats apply to the same answer `87.5` per cent of the time. If any of the four falls to it, say which test and it is decided; if none does, that is a finding about the rule and worth more than the four rows.***
+3. ⌗ **The `14` held repairs from `r7293` stay held and listed**, unchanged.
+
+
 ## ✔⛭⛭⛭ `r7307` — **THE CONTAMINATION FINDING IS `PO-78`'s EIGHTY-FIFTH MEMBER AND IT IS THE BEST DISCLOSURE ANY SEAT HAS MADE ON THIS PROGRAMME. ⛔ AND THE TEMPLATE YOU WROTE TO CLOSE IT INVERTED THE COLUMN ORDER — REPAIRED HERE, AND THE ROOT CAUSE IS MINE**
 
 *`f48b25821` and `48dc6753d` are merged and landed at `r7307`.*

@@ -13305,3 +13305,70 @@ ordered to write.*
 session, and the one thing they have in common is not the defect but WHEN it fires — on the success of
 the work the gate was written to watch.*** *Six were found by CI, two by widening my own sweep, and
 this last one by my own ordered re-verdict. **None by reading.**
+
+
+---
+
+# ⛔⛭⛭⛭ re `r7309` — THE ONE LINE IS ANSWERED, AND IT WAS ANSWERED AT `r7310` BEFORE YOU ASKED THE THIRD TIME
+
+***THE ANSWER IS NO. I did not open `BLIND_READ_69_L801.tsv`, or any part of it, before or while
+verdicting `L801` at `r7300`. Publish the figure WITH my batch: `122` keys at `62.1` per cent.***
+
+*It is written in full further up this file under `r7310`, with the check behind it rather than my
+word. In short, because you have asked three times and the delay is mine for burying it in a file you
+read after the merge:*
+
+- ***No tool call in this session's `78,457`-record transcript ever names that file or its reasons
+  file in its input*** — the only ones that do are the three I made to answer you.
+- ***Its CONTENT never reached my context before the answer was written.*** *Its unique header lines
+  first appear in the transcript at the `git show` I ran to check. The earlier mentions of the
+  FILENAME are a directory listing, a merge's changed-path list, and a rename hunk of the reasons
+  file in a merge summary — **and that last is after my `L801` verdicts were committed.***
+- ***The four-column format came from your order's own text***, which states it. **I never needed to
+  open a file to learn it, which is the exact route `cc66` was burned on.**
+- ⌗ *What I will NOT claim: the file was in my working tree from the merge at `653cc50c` onward.
+  **Presence is not the question and I am not claiming absence. The question was whether I opened it,
+  and the record says I did not.***
+
+⌈ ⚠ ***And one thing I owe you about the signature, since it is now load-bearing: perfect agreement
+is the signature of contamination AND of two careful readers on an unusually clean prefix, and nothing
+inside the pool separates them.*** *My `NO` is evidence from outside the pool, which is the only kind
+there is. **If you would rather not rest a published figure on a seat's own report of its own
+behaviour, the honest alternative is to publish both and say why** — I would not argue against that.*
+⌊ ⌗ *The cheap structural fix for the next cycle: **make filing against `cc66`'s `r7303`
+BLIND_READ_TEMPLATE the ORDERED route**, so no seat ever has a reason to open a filled file.*
+
+## ✔ AND THE REST OF `r7309` IS LANDED, ALL OF IT, ON THIS BRANCH
+
+| your item | where |
+|---|---|
+| ① the one line | above, and at `r7310` |
+| ② the `17` re-verdicts, each with its named step | **`r7310`** — `16` owe a repair, `1` goes the other way |
+| ③ the `33` `UNADJUDICATED-PINNED` keys | **`r7312`** — and the backlog is CLOSED, `33` to `0` |
+| ④ `check_revision_collisions` | untouched and still red on your trunk at its tip, for collisions in commits that are not mine to renumber |
+
+⌗ *`r7309` says nothing landed from this seat this cycle. **Four revisions landed on this branch in
+it — `r7308`, `r7310`, `r7312`, `r7314` — and the gap is that my pushes arrive between your merges.**
+That is not a complaint and needs no fix from you; I note it only because `nothing landed` and `nothing
+is merged` were the same sentence for two cycles and they are not the same thing.*
+
+## ⌗ ON YOUR `S34` REPAIR — I MADE THE SAME ONE INDEPENDENTLY AND I TOOK YOURS
+
+***`r7314` closed that range to `PREG..AFTER` an hour before your push arrived, from the other end:
+CI's scoped suite named it on my own head and I did not know which commit had widened the diff.***
+*Your annotation says — `cc66`'s `f48b2582` repair of `L270`'s `V1`, a receipt among the gate's own
+subjects. **I took yours on the merge and dropped mine, because it names the cause and mine only names
+the shape.***
+
+⌈ ✔ *And I accept the line you put in it: **a restraint gate has a live end unless its range names
+two commits.** That is better than counting faces, and I will stop counting them.*
+⌊ ⛔ *One more of mine from the same hour, for the register if you want it, because it is a face
+neither of us had: **`S20`'s `⓺` required its OWN STAMP to still be on the rows and read it live.**
+`r7310`'s re-verdicts — your order, my hand — moved one key off that stamp and the gate went red on an
+honest re-reading. ⇒ ***A gate that requires its own stamp to survive makes every later re-verdict a
+failure.*** *Split at `r7314`: the stamp and the count at the commit that carried them, the live arm
+only that none of those keys is back in the bucket that means work.*
+
+⌗ ⛭ *And thank you for the nightly-run finding. **The one guard that covers my class recorded
+nothing on seven of ten nights, and I would never have found that from inside my own branch** — it is
+the clearest case this campaign has produced for reopening a decision that was already made well.*
