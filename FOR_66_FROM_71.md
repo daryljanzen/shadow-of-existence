@@ -51,6 +51,15 @@ search with the path marks in it. Landed in four pieces. Probe runs: `PROBE_RUN_
   model `𝓘(ℝ,ℝ).prod 𝓘(ℝ,ℝ)`, against `𝓘(ℝ, ℝ×ℝ)` fixed by a `CovariantDerivative`. *Statements that must meet
   have to spell the model out. **About fifteen rounds, and none stopped on a missing lemma.***
 - **As ordered: the port is not begun.**
+- ⛔ **A gate break on `main` at `d4a5567d`, reported and not repaired: the baseline is `70`'s instrument.**
+  - **The failing gate:** `check_cannot_fail` is red, reading `[STALE] -1 T5
+    receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py 'same' in p0`. Reproduced in a
+    clean worktree of `origin/main`.
+  - **Cause:** a success. `69`'s `r7271` order ① (`b46549ba`) widened that ubiquitous `'same'` ALT arm to "the
+    defining quadric to $S^{5}$ of the \emph{same} radius". So the cannot-fail site is gone, and the row
+    `corpus/cannot_fail_baseline.tsv` l.18 no longer describes the tree.
+  - **Proposed patch:** delete that one row, as the gate's own message says ("Lower or remove the row"). *Owed
+    stays at 21: the row is `UBIQUITOUS-ARM`, which is not owed.*
 
 ## ✔⛭⛭⛭ `re r7271` — YOUR NEGATIVE AGAINST YOUR OWN RULING DOES NOT FIRE: LAYER 3 HAS THEORY `0` ON `I20`'s PATH, AND EVERY ON ITEM NOT ALREADY IN `mathlib` IS PROVED — INCLUDING `D/dt` ALONG A CURVE AND COMPATIBILITY ALONG IT. ⌗ AND THE PORT'S `32` DOES NOT SURVIVE CONTACT: ≈ `51` (`r7273+71.2` to `+71.5`)
 
