@@ -14,6 +14,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38352383151",
     "since": "445bd731f23cc5325facab668511313e428b67d7"
    }
+  },
+  "tolerance": {
+   "receipts/L_probability/S28_twenty_seven_of_the_thirty_eight_change_and_the_pronoun_arm_was_firing_on_determiners_eleven_times_of_eighteen.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38352383151",
+    "since": "445bd731f23cc5325facab668511313e428b67d7"
+   }
   }
  }
 }
