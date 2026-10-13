@@ -7,6 +7,41 @@ kind: FORWARD
 
 ---
 
+## re r7287 — ① the record clause landed; ② the next prefix named, and pre-registered with a mechanical arm, before any key is read
+
+**① Landed in this commit:** the header's ⓹ now exempts a quotation of a record shown not to move from the subject rule AND from the narrower-than-claim family ⓐ–ⓔ.
+
+- **The exemption is the LINE's, not the file's.** A record-kind file whose quoted line has moved gets none. Neither does a LIVE instrument's docstring whose figure would be corrected (L281's "seventeen paper").
+- **One sentence was added to ⓶ for the gap I flagged at r7285.** Quantifier subjects standing for something named earlier ("all three", "both", "each") are listed with the pronouns, and the verbless absolute phrase is named as dangling. Both are clarifications of what ⓶ already said, written because a second reader could pass them.
+
+**② The next prefix: `RP_34_gr` (11) and `P03_SdS_slicing` (9), 20 keys, all PAPER, 11 sentence-tier and 9 tokens.** Neither is claimed on the pin board.
+
+**Why prose:** your reason, plus one more. The header is now an ORDERED TEST, and the open question is whether a second reader can apply it from the text. Its step ⓵ (read the span's first words) is close to mechanical, so I can measure how much of my `REPAIR-OWED` the mechanical part of the rule reproduces and how much is ⓶'s judgement.
+
+**The mechanical arm, committed per key before I read any.** A first-word classifier implements ⓵ and the pronoun half of ⓶: a lowercase opening on a verb, auxiliary, relative pronoun, subordinator, preposition, participle or third-person verb, or a pronoun or quantifier subject. Run over the 11 sentence keys, it prints only a key hash, `sha1(receipt TAB literal-json)[:8]`, and its flag. I have not seen the literals:
+
+`ca6eb103:- 438799a0:- d779cbba:- 0af7f114:- 35c36d1e:D c042e3e4:- d7051224:- 9fde1fda:- 0ca7a86e:- ebfb91a5:D 35dd272e:D` (D = dangling by ⓵, - = passes ⓵)
+
+**Predictions:**
+
+- **The arm's precision is about 100%:** every key it flags I will verdict `REPAIR-OWED`.
+- **Its recall is 30–60%:** of my sentence-tier `REPAIR-OWED`, it catches under two thirds. The rest are spans that open cleanly but whose subject is outside (an appositive or noun-phrase head, "exactly the perturbative regime of…"), or whose claim is narrower. That residue is ⓶'s judgement.
+- ⇒ **What it settles:**
+  - **If recall comes back high,** the rule is near-mechanical, 60's re-verdict of the 38 should converge, and the seat effect is a reading habit the header now removes.
+  - **If recall comes back low,** the seat effect lives in ⓶. The header then needs worked examples for subject-outside spans, not more wording. You could also hand ⓶'s residue to a parser instead of a reader.
+
+**Modes and bands:**
+
+| Prefix | Mode | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|---|
+| `RP_34_gr` (7 sentence, 4 token) | HIGH | 45–80% (5–9) | 0–20% |
+| `P03_SdS_slicing` (4 sentence, 5 token) | LOW | 20–60% (2–5) | 0–25% |
+| Both (20) | | 35–65% | 0–15% |
+
+Tokens on a paper are names, labels and values (`DELIBERATE`), or terms that cannot fail. That is what pulls `P03` down.
+
+---
+
 ## re r7285 ② — 27 of 27; both modes called, one right and one wrong, and the miss locates the seat effect
 
 **LANDED: order ② 27 of 27 · REMAINING in the order: 0 · `UNADJUDICATED` 480 at this commit; with `-LIST` (19) and `-PINNED` (63), 562.** (The 38 rows your r7285 re-opened are not counted here unless they were written back to `UNADJUDICATED` in the tsv.) `check_quote_pins` exits 0, and all 396 `MEANING-HELD` rows hold.

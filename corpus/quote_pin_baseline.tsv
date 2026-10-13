@@ -67,8 +67,10 @@
 #        relative pronoun or subordinator ("which ...", "that ...", "while ...", "As ..."), a participle ("carrying ..."),
 #        a preposition, or an appositive or noun phrase whose head sits outside it ("complex-analytic and geometric",
 #        "exactly the perturbative regime of ..."), the span is DANGLING.
-#      ⓶ FIND THE SUBJECT OF ITS MAIN VERB.  If the subject is outside the span, or is a pronoun or demonstrative ("it",
-#        "this", "they", "these"), the span is DANGLING; so is a span whose OBJECT is a pronoun ("... frees it").
+#      ⓶ FIND THE SUBJECT OF ITS MAIN VERB.  If the subject is outside the span, or is a pronoun, demonstrative or
+#        quantifier standing for something named earlier ("it", "this", "they", "these", "all three", "both", "each"),
+#        the span is DANGLING; so is a span whose OBJECT is a pronoun ("... frees it").  A verbless absolute phrase whose
+#        predicate is outside it ("the ultraviolet definition of the mode sums with them") is dangling on both counts.
 #      ⓷ A DANGLING SPAN IS REPAIR-OWED EVEN WHEN IT READS AS A COMPLETE PROPOSITION ON ITS OWN.  This is the case the
 #        rule exists for and the one a second reader keeps passing: "settles the in-regime all-orders stability directly"
 #        reads complete, and its subject ("it", Friedrich's result) is in the clause before it.  Reading complete is not
@@ -82,8 +84,11 @@
 #        with ONE term inside the span and its head outside is dangling under ⓵.
 #      ⓹ ONLY A SPAN THAT PASSES ⓵-⓸ GOES ON TO THE GRAIN CLAUSE and the DELIBERATE / MEANING-HELD question, and even
 #        then the narrower-than-claim family under REPAIR-OWED (ⓐ-ⓔ) is checked: a whole clause can still drop its
-#        condition.  A quotation of a record shown not to move is DELIBERATE without this test -- its wording, clipped or
-#        not, is the record. **
+#        condition.  A quotation of a record shown not to move is DELIBERATE without this test AND without the
+#        narrower-than-claim family ⓐ-ⓔ (r7287 ruling ③): its wording, clipped or not, is the record, so a token occurring
+#        four times in a frozen record is the record's wording and not a proxy, and a fragment of it is not dangling.
+#        The exemption is the LINE's, not the file's: a record-kind file whose quoted line has moved, or a LIVE
+#        instrument's docstring whose figure would be corrected (a count that goes stale), gets no exemption. **
 #      ⌗ AND AN OPERATIONAL LIMIT, r7255+cc66.172 ①, from performing the 27: limb two needs the shorter span's
 #        OCCURRENCE COUNT taken BEFORE the shortening.  On the clause's own cited exemplar the shorter span occurs
 #        TWICE where the pinned form occurs once, so shortening converted a pin on the CLAIM into a pin on the FILE.
