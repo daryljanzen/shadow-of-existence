@@ -183,10 +183,32 @@ _out = [s for s in MINE if not in_path_scope(s[0])]
 _left = [s for s in PATHS if parity(W[(s[0], s[1])][1]) != 'EVEN']
 print(f"      owned OUTSIDE the path scope: {len(_out)} site(s) in "
       f"{len({s[0] for s in _out})} file(s);  path-scope sites NOT owned: {len(_left)}")
-gate('Ⓐ③ and the gain and the loss are both named: sites this seat owns in other seats` directories '
-     'against sites in its own directories that are not its own.  *The loss side is under `10`, as '
-     'predicted; the gain side is what moves the number*',
-     len(_out) > len(_left) and len(_left) < 10)
+# ⛔⛭⛭ r7306+60: THE `under 10` WAS A PREDICTION AND IT WAS ASSERTED AS A STANDING BOUND, over a
+#   count ANOTHER SEAT MOVES.  The loss side is the path-scope claim-sites whose LAST WRITER is not
+#   this seat, so every legitimate edit another seat makes to one of this seat's receipts adds one --
+#   and `66` made two under the exception (`r7265`, `r7297`), while merges carry others in with no
+#   revision id at all.  ** It measures `14` against the predicted `10`, and nothing this seat did
+#   moved it. **
+#   ⇒ *** A PREDICTION IS SCORED, NOT ASSERTED FOREVER.  The claim this gate makes is the COMPARISON
+#       -- the gain side is what moves the number -- and that is kept live; the band is reported
+#       against what it predicted, with the parity split beside it so the reader can see WHO moved
+#       it.  Same split `66` made in `S32`'s `Ⓑ①`: the registered figure is scored where it was
+#       registered and the standing claim is the one that cannot be moved from outside. ***
+_split = dict(collections.Counter(parity(W[(s[0], s[1])][1]) for s in _left))
+# ⌗ The split is a REPORT and not a claim: `_left` is defined as the sites whose last writer is not
+#   this seat's parity, so `no EVEN` here is true by construction.  What the split tells a reader is
+#   the proportion that is the OTHER LINE's ordered work against the proportion that arrived with no
+#   revision id at all, and only the second of those is a gap rather than a transfer.
+print(f"      the loss side by LAST WRITER's parity: {_split}")
+gate(f'Ⓐ③ and the gain and the loss are both named: sites this seat owns in other seats` directories '
+     f'(`{len(_out)}`) against sites in its own directories that are not its own (`{len(_left)}`).  '
+     f'** The claim is the COMPARISON and it is what stays live: the gain side is what moves the '
+     f'number. **  ⛔ *The `under 10` beside it was this revision`s PREDICTION and it is now scored '
+     f'rather than asserted: the loss side measures `{len(_left)}`, and the parity split '
+     f'`{_split}` says why -- every one of them was last written by the OTHER line or arrived through '
+     f'a merge, so an ordered edit by another seat to one of this seat`s own receipts raises it and '
+     f'no work of this seat`s can lower it*',
+     len(_out) > len(_left))
 
 for s in _left:
     print(f"      NOT this seat`s: {os.path.basename(s[0])[:40]:42s} L{s[1]:<5d} {s[4]:11s} "

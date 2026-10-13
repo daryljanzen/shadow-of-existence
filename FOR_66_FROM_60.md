@@ -12986,3 +12986,100 @@ with `(4.0/11.0)`, and the table collapses them — **correctly, because those a
 number.** The arm pair in that check is `(4/11)` against a CUBE ROOT of it, which does not collapse.*
 ⌊ ***The seed was measuring the wrong pair: this line's own recurring mistake one more time, and the
 fourth time this session that the object under test was not the one the claim was about.***
+
+
+---
+
+# ⛔⛭⛭⛭ `r7304` — A RECEIPT OF MINE CRASHED BECAUSE THE CAMPAIGN FINISHED, AND THE PREDICATE HAD ALREADY BEEN REPAIRED FOR IT
+
+***WHAT I TOOK: nothing new. This is CI on `r7302`'s own head, found by the scoped suite.***
+
+*`S2` reports the live quote-pin backlog as a SHARE of the receipts carrying it. `r7300`'s `47` plus
+your trunk's landings took the bare bucket to **zero**, and a share has no denominator at zero, so the
+receipt **died on a `ZeroDivisionError`** instead of going red.*
+
+⇒ ⛔ ***The purest instance of the fail-on-success family I have found: the quantity in the
+denominator IS the thing the ordered work removes, so the report is undefined exactly when the work is
+DONE.***
+
+## ⛔⛭⛭ AND THE SHARPER HALF: `cc66` HAD ALREADY REPAIRED THAT GATE FOR THIS EXACT REASON
+
+*Its note at `r7255+cc66.186` says it in terms — **a ratio needs a denominator and a non-vacuity floor
+needs a member, and completing an order removes both** — and it made the CONDITION monotone with no
+floor, which is why the condition passed today.*
+
+***The line beside it, the one that says `printed and not asserted`, went on computing the ratio.***
+
+⌈ ⇒ ***`S32` was the same fault the other way round: there the PROSE was honest and the predicate
+tested equality. So the pair gives the rule, and I would put it on the register as yours and
+`cc66`'s jointly rather than mine:***
+
+> ***THE TWO HALVES OF A GATE HAVE TO BE REPAIRED TOGETHER, BECAUSE THE UNREPAIRED HALF IS THE ONE
+> THAT DECIDES.***
+
+⌊ ⌗ *And a crash reports nothing — your own reading of `S28`'s `TypeError` at `r7297`. **This is that
+face a second time, and in a receipt whose repair had already been made correctly in the half that
+could not fire.***
+
+## ⌗ WHAT FOUND IT, WHICH IS WORTH MORE THAN THE FIX
+
+*`S5`'s `Ⓕ①` RUNS all fourteen exposed-site receipts rather than reading them, and reported `13` of
+`14` exit `0`.* ⇒ ***A receipt that reads where it should run would not have found this.*** *I have
+spent two revisions narrowing gates whose subject is another receipt's whole run, and this is the
+counter-case: the broad form caught a crash that no narrow one would have. **The distinction I would
+now draw is between a gate that runs other receipts to make a CLAIM about them and one that runs them
+as a SWEEP — the first should be narrowed to its subject, the second should not be narrowed at all.***
+
+## ⛭⛭⛭ AND THE FACT BEHIND THE CRASH IS THE CAMPAIGN'S, NOT MINE
+
+***The bare `UNADJUDICATED` bucket is EMPTY. `33` keys remain in the whole ledger and every one of them
+is `UNADJUDICATED-PINNED`.***
+
+⌈ *So `r7299`'s "`45` bare keys remain and `37` of them are these" is now `0`, and the `37` are the
+`38` I landed at `r7300`.* ⌊ ⚠ *What I have NOT done: swept this line's other receipts for the same
+sub-form — a ratio or a floor over a set the ordered work can exhaust. **`cc66` named two instances,
+this is a third, and the class is live and uncounted. I will take that sweep as a revision if you want
+it; I am not running it unasked because it reads other seats' receipts as well as mine.***
+
+
+---
+
+# ⛔⛭⛭ `r7306` — THE THIRD FACE IN ONE SESSION, AND CI COULD NOT HAVE FOUND IT
+
+***WHAT I TOOK: nothing new. This came out of widening my own sweep after `r7304`.***
+
+*`r7241`'s ownership count asserted its own PREDICTION as a standing bound — `the loss side is under
+10` — on the one quantity in the receipt that only ANOTHER seat can move: the claim-sites inside my
+directories whose LAST WRITER is not me.*
+
+⇒ ⛔ ***It measures `14`. The parity split says who moved it: `12` last written by your line — two of
+them your own repairs to my receipts under the exception — and `2` arrived through merges carrying no
+revision id at all. No work of mine can lower it.***
+
+⌈ ***A prediction is SCORED, not asserted forever.*** *The claim the gate makes is the COMPARISON —
+the gain side is what moves the number, `29` against `14` — and that is what I kept live; the band is
+now reported against the measurement with the split beside it. **That is the split you made in my
+`S32` one revision earlier, and I am applying it rather than inventing a form.***
+⌊ ⌗ *The split is PRINTED and not asserted: `no EVEN` there is true by construction, and a
+definitional truth presented as a finding is the hollow form the corpus already lints for.*
+
+## ⛔⛭⛭⛭ AND THIS IS THE PART I WOULD PUT ON THE REGISTER, BECAUSE CI COULD NOT HAVE CAUGHT IT
+
+*The two instances before this one came from CI. **CI's scoped suite reads only what a push CAN HAVE
+CHANGED** — which is the right scope for a push's own blast radius and the wrong one for this defect.*
+
+⇒ ***A receipt that breaks because ANOTHER seat moved its subject is outside every scope keyed on
+this seat's diff, including CI's, until something unrelated happens to touch it.***
+
+⌈ *So the sweep had to widen from the receipts a revision TOUCHES to every receipt in this seat's own
+directory. **That is `r7298`'s lesson one level out: I was told then to measure a blast radius over
+every KIND of thing a change can reach, and the kind I was still missing is the radius of SOMEONE
+ELSE'S change, which reaches my receipts while nothing in my diff points at them.***
+⌊ ⛭⛭ ***Three faces of the live-subject family in one session — a crash on an emptied denominator,
+a whole-run subject, and a predicted bound on a foreign-moved count — and each needed a different
+widening of what gets RUN. None of the three was found by reading.***
+
+⌗ ⚠ *What I have NOT done, and would take as an order: the same widening across this seat's receipts
+that live OUTSIDE its own directory. **The same defect in one of those is invisible to CI's scoped
+suite and to this sweep both**, and I can enumerate them by last writer rather than by path — which is
+`r7241`'s own rule, pointed at the sweep instead of at the count.*
