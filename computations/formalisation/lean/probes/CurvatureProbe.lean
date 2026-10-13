@@ -1929,6 +1929,119 @@ theorem interior_geodesic {M : ℝ} (hM : 0 < M) (p : ℝ × ℝ) :
 
 end StaticDiag
 
+/-! ## `r7297`, C5 — receipt 77: if a metric on `E` is invariant under translation along `K`, then the constant
+field `K` is a KILLING field of THE Levi-Civita connection, `g(∇_X K, Y) + g(X, ∇_Y K) = 0`. For every diagonal
+metric on `ℝ⁴` whose coefficients depend on `(t, z)` only — the polarized Gowdy family — `∂_x` and `∂_y` are Killing. -/
+
+section KillingTrans
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+
+/-- The constant field `w`. -/
+def constF (w : E) : Π y : E, TangentSpace 𝓘(ℝ, E) y := fun _ => w
+
+lemma constF_mdiff (w x : E) : MDiffAt (T% (constF w)) x :=
+  mdiffAt_model.2 (differentiableAt_const (c := w))
+
+set_option backward.isDefEq.respectTransparency false in
+lemma dirDeriv_invariant (m : NDMetric 𝓘(ℝ, E) E) {K : E} (hinv : ∀ y (t : ℝ), m.g (y + t • K) = m.g y)
+    (u v x : E) : d% (fun y => m.g y (constF u y) (constF v y)) x K = 0 := by
+  have hf : DifferentiableAt ℝ (fun y => m.g y (constF u y) (constF v y)) x :=
+    mdifferentiableAt_iff_differentiableAt.1 (m.mdiff (constF_mdiff u x) (constF_mdiff v x))
+  have hl : HasDerivAt (fun t : ℝ => x + t • K) K 0 := by
+    simpa using ((hasDerivAt_id (0 : ℝ)).smul_const K).const_add x
+  have h1 := HasFDerivAt.comp_hasDerivAt_of_eq (x := (0 : ℝ)) hf.hasFDerivAt hl (by simp)
+  have h2 : HasDerivAt ((fun y => m.g y (constF u y) (constF v y)) ∘ fun t : ℝ => x + t • K) 0 0 := by
+    have : ((fun y => m.g y (constF u y) (constF v y)) ∘ fun t : ℝ => x + t • K) =
+        fun _ => m.g x u v := by
+      funext t; simp only [Function.comp, constF, hinv]; rfl
+    rw [this]; exact hasDerivAt_const _ _
+  rw [mvfderiv_eq_fderiv]
+  exact h1.unique h2
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **C5.** Translation invariance along `K` makes `K` a Killing field of THE Levi-Civita connection. -/
+theorem killing_of_invariant (m : NDMetric 𝓘(ℝ, E) E) {K : E} (hinv : ∀ y (t : ℝ), m.g (y + t • K) = m.g y)
+    (x u v : E) :
+    m.g x (lcConn E m (constF K) x u) v + m.g x u (lcConn E m (constF K) x v) = 0 := by
+  rw [m.symm x u, show m.g x (lcConn E m (constF K) x u) v
+      = m.g x (lcConn E m (constF K) x (constF u x)) (constF v x) from rfl,
+    show m.g x (lcConn E m (constF K) x v) u
+      = m.g x (lcConn E m (constF K) x (constF v x)) (constF u x) from rfl,
+    lcConn_apply m (constF_mdiff u x) (constF_mdiff K x) (constF_mdiff v x),
+    lcConn_apply m (constF_mdiff v x) (constF_mdiff K x) (constF_mdiff u x)]
+  simp only [kosz]
+  have hb : ∀ a b : E, mlieBracket 𝓘(ℝ, E) (constF a) (constF b) x = 0 := fun a b => by
+    rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ,
+      lieBracket_eq]
+    show fderiv ℝ (fun _ : E => b) x a - fderiv ℝ (fun _ : E => a) x b = 0
+    simp
+  simp only [hb, map_zero]
+  rw [m.fun_symm (constF u) (constF K), m.fun_symm (constF K) (constF v), m.fun_symm (constF v) (constF u)]
+  have h0 : d% (fun y => m.g y (constF u y) (constF v y)) x (constF K x) = 0 :=
+    dirDeriv_invariant m hinv u v x
+  linarith
+
+/-- A diagonal form on `ℝ⁴`: `Σᵢ cᵢ(p) dxᵢ²`, any signature. -/
+noncomputable def diag4 (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) :
+    (Fin 4 → ℝ) →L[ℝ] (Fin 4 → ℝ) →L[ℝ] ℝ :=
+  ∑ i, c i p • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj i)
+    (ContinuousLinearMap.proj i)
+
+lemma diag4_apply (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (p u v : Fin 4 → ℝ) :
+    diag4 c p u v = ∑ i, c i p * (u i * v i) := by
+  simp [diag4]
+
+lemma diag4_symm (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (p u v : Fin 4 → ℝ) : diag4 c p u v = diag4 c p v u := by
+  rw [diag4_apply, diag4_apply]; exact Finset.sum_congr rfl fun i _ => by ring
+
+lemma diag4_nondeg {c : Fin 4 → (Fin 4 → ℝ) → ℝ} {p : Fin 4 → ℝ} (hc : ∀ i, c i p ≠ 0) (u : Fin 4 → ℝ)
+    (h : ∀ v : Fin 4 → ℝ, diag4 c p u v = 0) : u = 0 := by
+  funext j
+  have hj := h (Pi.single j 1)
+  rw [diag4_apply, Finset.sum_eq_single j (fun i _ hi => by simp [Pi.single_apply, hi])
+    (by simp)] at hj
+  simpa [hc j] using hj
+
+/-- A diagonal metric with nonvanishing differentiable coefficients, as an `NDMetric` on `ℝ⁴`. -/
+noncomputable def diag4Metric (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (hc : ∀ i p, c i p ≠ 0)
+    (hcd : ∀ i, Differentiable ℝ (c i)) : NDMetric 𝓘(ℝ, Fin 4 → ℝ) (Fin 4 → ℝ) where
+  g p := diag4 c p
+  symm p u v := diag4_symm c p u v
+  nondeg p u h := diag4_nondeg (fun i => hc i p) u h
+  mdiff {Y Z x} hY hZ := by
+    rw [mdiffAt_model] at hY hZ
+    rw [mdifferentiableAt_iff_differentiableAt]
+    have e : (fun y => diag4 c y (Y y) (Z y)) = fun y => ∑ i, c i y * (vf Y y i * vf Z y i) := by
+      funext y; exact diag4_apply c y (Y y) (Z y)
+    show DifferentiableAt ℝ (fun y => diag4 c y (Y y) (Z y)) x
+    rw [e]
+    have hYi : ∀ i, DifferentiableAt ℝ (fun y => vf Y y i) x := fun i =>
+      ((ContinuousLinearMap.proj (R := ℝ) (φ := fun _ : Fin 4 => ℝ) i).differentiableAt).comp x hY
+    have hZi : ∀ i, DifferentiableAt ℝ (fun y => vf Z y i) x := fun i =>
+      ((ContinuousLinearMap.proj (R := ℝ) (φ := fun _ : Fin 4 => ℝ) i).differentiableAt).comp x hZ
+    exact DifferentiableAt.fun_sum fun i _ => ((hcd i x).mul ((hYi i).mul (hZi i)))
+
+/-- **C5, receipt 77.** For EVERY diagonal metric on `ℝ⁴` (any signature) whose coefficients depend on the
+coordinates `(t, z) = (x₀, x₁)` only — the polarized Gowdy family, for all profiles — `∂_x` and `∂_y` are Killing
+fields of THE Levi-Civita connection. -/
+theorem gowdy_killing (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (hc : ∀ i p, c i p ≠ 0)
+    (hcd : ∀ i, Differentiable ℝ (c i))
+    (hdep : ∀ i (p q : Fin 4 → ℝ), p 0 = q 0 → p 1 = q 1 → c i p = c i q)
+    (k : Fin 4) (hk : k = 2 ∨ k = 3) (x u v : Fin 4 → ℝ) :
+    (diag4Metric c hc hcd).g x (lcConn (Fin 4 → ℝ) (diag4Metric c hc hcd) (constF (Pi.single k 1)) x u) v
+      + (diag4Metric c hc hcd).g x u
+          (lcConn (Fin 4 → ℝ) (diag4Metric c hc hcd) (constF (Pi.single k 1)) x v) = 0 := by
+  refine killing_of_invariant _ (fun y t => ?_) x u v
+  have h0 : (0 : Fin 4) ≠ k := by rcases hk with rfl | rfl <;> decide
+  have h1 : (1 : Fin 4) ≠ k := by rcases hk with rfl | rfl <;> decide
+  show diag4 c (y + t • Pi.single k 1) = diag4 c y
+  have : ∀ i, c i (y + t • Pi.single k 1) = c i y := fun i =>
+    hdep i _ _ (by simp [Pi.single_apply, h0]) (by simp [Pi.single_apply, h1])
+  simp only [diag4, this]
+
+end KillingTrans
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -1994,3 +2107,5 @@ end ShadowProbe
 #print axioms ShadowProbe.interior_chart
 #print axioms ShadowProbe.cycloid_proper_time
 #print axioms ShadowProbe.interior_geodesic
+#print axioms ShadowProbe.killing_of_invariant
+#print axioms ShadowProbe.gowdy_killing
