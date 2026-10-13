@@ -59,6 +59,26 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+# ⛭⛭ r7267/r7275 ①: THE LOADER FOR THE COMPUTED HALF OF THE PIN BELOW, AND THE GAP WAS `INPUTS`.
+#   `r7261` named `baryon_edge/L104w_the_excentre_trichotomy.py`'s `sep` as the function nearest
+#   this row.  ** The module is a SCRIPT and cannot be imported, so `graft.py` takes the `def`
+#   plus the transitive closure of the module-level names it reads, over the AST, and runs
+#   nothing else. **  ⇒ ** The pin below STAYS: it is the citation; this verifies it. **
+#   ⚠ *This receipt's OTHER backlog row -- `isometry group being fixed by the absolute`, against
+#   `A2`'s `lie_g` -- is HELD and not taken: the absolute is a projective object and `lie_g` is a
+#   metric Killing test, so that row needs a different computation and not this one at different
+#   inputs.  Recorded in `r7267_cc66_reach_the_71/REACHED_B2.tsv` with the reason.*
+def _r7267():
+    """`baryon_edge/L104w_the_excentre_trichotomy.py`'s own `sep`, grafted, at this row's inputs."""
+    if not hasattr(_r7267, 'v'):
+        import sys
+        sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                        'r7267_cc66_reach_the_71'))
+        import trichotomy
+        _r7267.v = trichotomy.at_inputs()
+    return _r7267.v
+
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -94,6 +114,19 @@ def main():
     check('⛔ ⓷ while `PO-4`\'s doublet is the HINGE: P14 puts the two-state object at "two ends of '
           'one hinge are timelike separated"',
           'two ends of one hinge are timelike separated' in p14)
+    # ⛭⛭ r7267/r7275 ①: AND THE SEPARATION IS NOW COMPUTED, THROUGH `L-104w`'s OWN `sep` -- ON A
+    #   PAIR `L-104w` NEVER FORMS.  Its own report runs `sep` over the fifteen excentre-excentre
+    #   pairs and the thirty-six hinge-excentre pairs; the two ends of ONE hinge -- same azimuth,
+    #   OPPOSITE HORN, at the hinge radius 2*alpha -- is one call on two points `pt` already
+    #   builds, and nothing in the corpus had made it.  ** s^2 = -12 alpha^2: timelike at every
+    #   hinge azimuth. **  ⌗ *The converse is not a radius away but AT THE THROAT: at rho = alpha
+    #   the two ends COINCIDE and the interval is NULL.*
+    _tri = _r7267()
+    check('⛭⛭ and the DOUBLET\'s separation is COMPUTED through `L-104w`\'s own `sep`, on the pair '
+          'its own report never forms: the two ends of one hinge give $s^2 = -12\\alpha^2$ -- '
+          'TIMELIKE at every hinge azimuth -- while at the throat radius they coincide and it is '
+          'NULL, so the two-state object is a timelike pair and not a spacelike one',
+          _tri.all_hinges_timelike() and not _tri.all_hinges_timelike(_tri.al))
     check('so the $SO(4)$ generators act on the SPATIAL LAYER and the isospin must act on the HINGE '
           '-- different spaces, and nothing yet connects them',
           'two ends of one hinge are timelike separated' in p14

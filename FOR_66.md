@@ -13953,3 +13953,41 @@ if _own_sess is None:
 ### ⌗ WHERE I AM, AND THE PIECES
 
 ***① `19` of `59` landed, `40` remain — batch two (`13` rows, to `32` of `59`) is next and starts now. ② the `108` behind it. Then your order ② — the zero-mode function, with the measure ruled: proper transverse distance `dμ = √|g_{rr}| dr` AND the flat `dr` count, both reported, and a stop at one cycle.*** *Landing in pieces from here: this reply is a piece, batch two will be its own.*
+
+---
+
+## ⛭⛭⛭ `r7275+cc66.2` — **LANDED `23` OF `59`. REMAINING `36`.**
+
+### ⛔⛭⛭ AND THE BATCH IS A RESULT RATHER THAN A COUNT: OF THE `13` I SCHEDULED, ONLY `4` ARE A CHANGE OF INPUTS. YOUR RULING ① ARRIVES AGAIN, PER ROW THIS TIME
+
+*`C73`: `37` checks, all pass, `7`s. `4` taken with converses, `9` held with the reason, and the two batches' taken keys are DISJOINT — gated, so `19 + 4 = 23` counts nothing twice.*
+
+***Your ruling ① said `r7261` classified `59` rows by what the function computes without asking whether the code was reachable. **Batch two says the same thing about the `INPUTS` half, and says it per ROW rather than per module.***
+
+| held, with the reason | rows |
+|---|---|
+| `GEOMETRY-NOT-RECORDED` — the row needs a metric or a structure the backlog did not name, and choosing one is a reading of the paper | `4` |
+| `NESTED-FUNCTION` — `bead_frames.py: tau_of_r` is a closure defined INSIDE a matplotlib plotting routine, so it is not a top-level `def` at all | `3` |
+| `OBJECTS-NOT-RECORDED` — `character` is one call once the three critical loci are points, and WHICH three the paper means is not recorded | `1` |
+| `AXIS-ARGUMENT` — `tau_r(ax)`'s only parameter is a matplotlib axis and its body draws | `1` |
+
+⌈ ⌗ ***And I did NOT build a nested-lifting capability for the three, on a measurement rather than a preference: of the `40` `INPUTS` rows outstanding before this batch, `37` name a TOP-LEVEL function and `3` name a nested one — and all three name the SAME one.*** *A capability serving three rows that are one function is not the shared cost `graft.py` was; it is a special case wearing a general coat. **Gated as `Ⓓ⑤`, so the decision is checkable rather than asserted.***
+
+### ⛭⛭ THE FOUR TAKEN, AND THE SECOND ONE IS A PAIR `L-104w` NEVER FORMS
+
+  * ⓵ **`C3`, through `A2`'s own `lie_g` at a REBOUND metric.** *`lie_g` reads the metric from module level, where `A2` binds its chiral plane wave — **so the change of inputs is a rebinding and not an argument**, which is what `graft` returning the NAMESPACE is for. Handed `dS_2 × S^2`, **six generators come back Killing**: three `so(2,1)` and three `so(3)`. ⌗ *The `so(2,1)` half is **DERIVED and not quoted** — each is solved from two rows of the embedding's Jacobian and VERIFIED against the third. Three reachable converses all come back not Killing.*
+  * ⓶ **`B30`, `B39`, `B40`, through `L-104w`'s own `sep` — on a pair its own report never forms.** *`L-104w` runs `sep` over fifteen excentre–excentre pairs and thirty-six hinge–excentre pairs. The three rows assert something about **the two ends of ONE hinge** — same azimuth, OPPOSITE HORN, at `2α` — which is one call on two points `pt` already builds and which **nothing in the corpus had made**. `s² = −12α²`, timelike at every hinge azimuth.*
+
+⌊ ⇒ ⛭⛭ ***AND THE CONVERSE IS THE PART I WOULD KEEP: IT IS NOT A RADIUS AWAY BUT AT THE THROAT.*** *At `ρ = α` the two ends COINCIDE and the interval is NULL. **So `timelike` is a statement about the hinge sitting OUTSIDE the throat, and the three receipts that assert it had no way to know that was the condition.*** *`pt`'s time component is `sgn·√(ρ²−α²)`, and the whole claim lives in that square root.*
+
+### ⛔⛭ AND THE LOADER NEEDED A SECOND REPAIR TO REACH `A2` AT ALL, WHICH IS YOUR RULING ① ONE LEVEL DOWN
+
+***`A2` builds its metric by ELEMENT ASSIGNMENT — `g = sp.zeros(4, 4)`, then `g[0, 1] = g[1, 0] = 1` and three more. `graft.py` read a SUBSCRIPT TARGET AS A BINDING, so it kept the last element assignment as the definition of `g` and dropped the `sp.zeros` that creates it: the graft raised `NameError: name 'g' is not defined`.***
+
+⇒ *** A matrix built by element assignment is a reachability question nobody had asked, and several modules here build theirs that way. *** *Subscript and attribute targets are now MUTATIONS, retained with the binding in source order. **Gated as additive: `Ⓑ④` re-grafts batch one's five functions and gets the same statement counts, so the repair moved nothing already landed.***
+
+⌗ *`r7243` stands; nothing in the acoustic sector surfaced. The `check_pdf_current` currency is held by me this time — the `C73` row moves `appendix_receipts_P15.tex`, so I rebuilt `CR_cosmology.pdf` with the toolchain rather than leaving it to the trunk.*
+
+### ⌗ WHAT IS NEXT, AND IN PIECES
+
+***① `36` remain: `12` more `INPUTS` rows on modules of one or two rows each, then the `12` `EXTEND`. ② the `108`. Then your order ② — the zero-mode function, with the measure ruled: `dμ = √|g_{rr}| dr` AND the flat `dr` count, both reported, stop at one cycle.*** *The `9` held here go back into the remaining count as rows needing a decision rather than a batch, and I will put the four `GEOMETRY-NOT-RECORDED` ones to you as one question rather than four when I reach them.*
