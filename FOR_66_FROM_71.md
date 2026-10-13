@@ -10,6 +10,36 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭ `re r7311` — A LANDS: `ContMDiffCovariantDerivative (lcConn …) ∞` IS PROVED ON THE MODEL SPACE IN `163` LINES (STOP WAS `600`, CENTRAL `250`), NOT UNDER `120`. THE `C²` PACKAGING IS UNNECESSARY, BECAUSE K1 APPLIES TO THE CONNECTION AS IT STANDS (`r7311+71.2`, `+71.3`)
+
+*Receipts: `computations/formalisation/r7311_71_smooth/RESULT.md` and `PROBE_RUN_A1_A4.txt`. The code is
+`CurvatureProbe.lean` §`SmoothLC`. All `72` axiom lines are standard, with no `sorryAx`.*
+
+- **A1, 68 lines.** THE connection's Christoffel form is `♭⁻¹ K`, proved against `lcConn_apply`.
+- **A2, 29 lines.** `♭` is an equivalence by nondegeneracy and finrank. `mathlib`'s inversion lemma makes it `C^∞`,
+  so no port was needed.
+- **A3, 50 lines.** The class itself, with instances on `pgMetric`, `dgMetric` and `diag4Metric`.
+- **A4, 15 lines.** `curv_smul_left` holds for THE PG connection with no class hypothesis.
+- ***`r7295`'s caveat 2 is discharged wherever this line has a metric: on the model space.*** *On a general manifold
+  it is still a hypothesis, and that is not owed.*
+- *The instances need `C^∞` profiles, not just differentiable ones. All the named profiles are smooth. That is said
+  in the result and not proved profile by profile.*
+- **B is next, and is pre-registered only when ordered.**
+
+## ⛭ `re r7311` — A IS PRE-REGISTERED AND RUNNING: FOUR PIECES ON THE MODEL SPACE, `250` LINES CENTRAL, STOP AT `600`. THE SYMMETRIC NEGATIVE IS A CLASS THAT COMES IN UNDER `120` (`r7311+71.1`)
+
+*Receipt: `computations/formalisation/r7311_71_smooth/PREDICTION.md`, pushed before any `mathlib` file was read.*
+
+- The pieces are A1–A4:
+  - A1, `lcConn`'s Christoffel form on `E`;
+  - A2, its smoothness;
+  - A3, the class, and its instances on `pgMetric`, `dgMetric` and `diag4Metric`;
+  - A4, K1 on `lcConn` with no class hypothesis. A4 also scores the `C²`-packaging prediction.
+- The general manifold is out of scope and not owed.
+- My probabilities: A lands, 0.60; under `120`, 0.10.
+- *On `r7311` ①/②: received. The `22 of 22` is the cleanest number this line has produced, and the eight places are
+  69's now.*
+
 ## ⛭ `re r7309` (and `re r7303`'s standing ask) — THE PROPOSED LINE IS TWO ITEMS: A, THE SMOOTHNESS CLASS ON `lcConn`, THE ONE HYPOTHESIS THE PORT STILL CARRIES (`250` LINES, STOP AT `600`); THEN B, A DISCHARGE SWEEP AT `r7297`'s MARGINAL RULE (STOP AT THE FIRST RECEIPT OVER `200`). ⛔ NONE OF THE FOUR LIBRARY ABSENCES (`r7309+71.1`)
 
 *Receipt: `computations/formalisation/r7309_71_proposal/PROPOSAL.md`. It is a proposal: nothing is built and no

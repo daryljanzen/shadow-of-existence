@@ -21,6 +21,7 @@ import Mathlib.Geometry.Manifold.VectorBundle.Tangent
 import Mathlib.Geometry.Manifold.VectorField.LieBracket
 import Mathlib.LinearAlgebra.Trace
 import Mathlib.LinearAlgebra.BilinearForm.Properties
+import Mathlib.Analysis.Calculus.ContDiff.FiniteDimension
 
 /-!
 # Probe K1 of `r7287+71.1`: the curvature tensor, the connection a hypothesis
@@ -2042,6 +2043,170 @@ theorem gowdy_killing (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (hc : ∀ i p, c i
 
 end KillingTrans
 
+/-! ## r7311 — item A: the smoothness class on THE connection, DISCHARGED on the model space -/
+
+section SmoothLC
+
+set_option synthInstance.maxHeartbeats 400000
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+  (B : E → E →L[ℝ] E →L[ℝ] ℝ)
+
+/-- The `NDMetric` of a differentiable, symmetric, nondegenerate field of forms on `E`. -/
+noncomputable def ndOf (hs : ∀ x u v, B x u v = B x v u) (hn : ∀ x (u : E), (∀ v, B x u v = 0) → u = 0)
+    (hB : Differentiable ℝ B) : NDMetric 𝓘(ℝ, E) E where
+  g := B
+  symm := hs
+  nondeg := hn
+  mdiff {Y Z x} hY hZ := by
+    rw [mdiffAt_model] at hY hZ
+    rw [mdifferentiableAt_iff_differentiableAt]
+    exact ((hB x).clm_apply hY).clm_apply hZ
+
+/-- **A2's key step: `♭ = B x` is invertible**, by nondegeneracy and equal finite dimension. -/
+lemma flat_isInvertible (hn : ∀ x (u : E), (∀ v, B x u v = 0) → u = 0) (x : E) : (B x).IsInvertible := by
+  have hinj : Function.Injective (B x) := fun a b h =>
+    sub_eq_zero.1 (hn x _ fun v => by rw [map_sub, ContinuousLinearMap.sub_apply, h, sub_self])
+  have H : Module.finrank ℝ E = Module.finrank ℝ (E →L[ℝ] ℝ) := by
+    rw [← LinearEquiv.finrank_eq (LinearMap.toContinuousLinearMap (𝕜 := ℝ) (E := E) (F' := ℝ))]
+    exact Subspace.dual_finrank_eq.symm
+  have hsurj : Function.Surjective (B x) :=
+    (LinearMap.injective_iff_surjective_of_finrank_eq_finrank H (f := (B x).toLinearMap)).1 hinj
+  exact ⟨ContinuousLinearEquiv.ofBijective (B x) (LinearMap.ker_eq_bot.2 hinj)
+    (LinearMap.range_eq_top.2 hsurj), rfl⟩
+
+/-- The Koszul form on constant fields, as a bilinear map into the dual:
+`K x a b v = ½[(DB·a)(b,v) + (DB·b)(v,a) − (DB·v)(a,b)]`. -/
+noncomputable def koszK (x : E) : E →L[ℝ] E →L[ℝ] E →L[ℝ] ℝ :=
+  let fl : (E →L[ℝ] E →L[ℝ] ℝ) →L[ℝ] (E →L[ℝ] E →L[ℝ] ℝ) :=
+    (ContinuousLinearMap.flipₗᵢ ℝ E E ℝ).toContinuousLinearEquiv.toContinuousLinearMap
+  (1 / 2 : ℝ) • (fderiv ℝ B x + (fl.comp (fderiv ℝ B x)).flip + (-1 : ℝ) • fl.comp (fderiv ℝ B x).flip)
+
+lemma koszK_apply (x a b v : E) :
+    koszK B x a b v = (fderiv ℝ B x a b v + fderiv ℝ B x b v a - fderiv ℝ B x v a b) / 2 := by
+  simp [koszK]; ring
+
+/-- **A1's object: the Christoffel form of `lcConn`**, `Γ x a b = ♭⁻¹(K x a b)`. -/
+noncomputable def lcGam (x : E) : E →L[ℝ] E →L[ℝ] E :=
+  (ContinuousLinearMap.compL ℝ E (E →L[ℝ] ℝ) E (B x).inverse).comp (koszK B x)
+
+lemma lcGam_apply (x a b : E) : lcGam B x a b = (B x).inverse (koszK B x a b) := rfl
+
+variable {B}
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **A1. `lcConn` HAS the Christoffel form `lcGam`** on constant fields: `∇_a b = Γ(a, b)`. -/
+theorem lcConn_const (hs : ∀ x u v, B x u v = B x v u) (hn : ∀ x (u : E), (∀ v, B x u v = 0) → u = 0)
+    (hB : Differentiable ℝ B) (x a b : E) :
+    lcConn E (ndOf B hs hn hB) (fun _ => b) x a = lcGam B x a b := by
+  set m := ndOf B hs hn hB
+  refine (flat_isInvertible B hn x).injective (ContinuousLinearMap.ext fun v => ?_)
+  have h1 : m.g x (lcConn E m (constF b) x (constF a x)) (constF v x) = kosz m (constF a) (constF b) (constF v) x :=
+    lcConn_apply m (constF_mdiff a x) (constF_mdiff b x) (constF_mdiff v x)
+  have hb : ∀ p q : E, mlieBracket 𝓘(ℝ, E) (constF p) (constF q) x = 0 := fun p q => by
+    rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ,
+      lieBracket_eq]
+    show fderiv ℝ (fun _ : E => q) x p - fderiv ℝ (fun _ : E => p) x q = 0
+    simp
+  have hd : ∀ p q c : E, d% (fun y => m.g y (constF p y) (constF q y)) x c = fderiv ℝ B x c p q :=
+    fun p q c => by
+      rw [mvfderiv_eq_fderiv]
+      have h := ((hB x).hasFDerivAt.clm_apply (hasFDerivAt_const p x)).clm_apply (hasFDerivAt_const q x)
+      show fderiv ℝ (fun y => B y p q) x c = _
+      rw [h.fderiv]
+      simp
+  simp only [kosz, hb, map_zero, sub_zero, add_zero, hd] at h1
+  have h2 : m.g x (lcGam B x a b) v = koszK B x a b v := by
+    show B x ((B x).inverse (koszK B x a b)) v = _
+    rw [(flat_isInvertible B hn x).self_apply_inverse]
+  show m.g x (lcConn E m (constF b) x (constF a x)) (constF v x) = m.g x (lcGam B x a b) v
+  rw [h1, h2, koszK_apply]
+  simp only [constF]
+
+/-- **A2. `lcGam` is `C^∞` when `B` is**: inversion is smooth at an invertible map. -/
+theorem lcGam_smooth (hn : ∀ x (u : E), (∀ v, B x u v = 0) → u = 0) (hB : ContDiff ℝ ∞ B) :
+    ContDiff ℝ ∞ (lcGam B) := by
+  have hinv : ContDiff ℝ ∞ fun x => (B x).inverse :=
+    contDiff_iff_contDiffAt.2 fun x =>
+      (flat_isInvertible B hn x).contDiffAt_map_inverse.comp x hB.contDiffAt
+  have hD := hB.fderiv_right (m := ∞) (by simp)
+  rw [contDiff_clm_apply_iff]; intro a
+  rw [contDiff_clm_apply_iff]; intro b
+  simp only [lcGam_apply]
+  refine hinv.clm_apply ?_
+  rw [contDiff_clm_apply_iff]; intro v
+  simp only [koszK_apply]
+  have e : ∀ p q r : E, ContDiff ℝ ∞ fun x => fderiv ℝ B x p q r := fun p q r =>
+    ((hD.clm_apply contDiff_const).clm_apply contDiff_const).clm_apply contDiff_const
+  exact (((e a b v).add (e b v a)).sub (e v a b)).div_const 2
+
+/-- **A3. THE smoothness class on THE connection.** For a `C^∞` symmetric nondegenerate form field on `E`,
+the Levi-Civita connection is a `C^∞` covariant derivative in `mathlib`'s sense — K1–K3 apply to it with no
+class carried. -/
+theorem lcConn_contMDiffCov (hs : ∀ x u v, B x u v = B x v u) (hn : ∀ x (u : E), (∀ v, B x u v = 0) → u = 0)
+    (hB : ContDiff ℝ ∞ B) :
+    CovariantDerivative.ContMDiffCovariantDerivative (lcConn E (ndOf B hs hn (hB.differentiable (by simp))))
+      (∞ : ℕ∞ω) :=
+  contMDiffCov_model _ (lcGam B) (fun x w u => lcConn_const hs hn _ x w u) (lcGam_smooth hn hB)
+
+/-! ### A3 on the named metrics already in the tree, and A4 -/
+
+/-- **A3 on C2/C3's Painlevé–Gullstrand metric**: with `C^∞` profiles, its Levi-Civita connection is `C^∞`. -/
+theorem pg_contMDiffCov {A w : ℝ → ℝ} (hA : ∀ s, A s ≠ 0) (hAs : ContDiff ℝ ∞ A) (hws : ContDiff ℝ ∞ w)
+    (hAd : Differentiable ℝ A) (hw : Differentiable ℝ w) :
+    CovariantDerivative.ContMDiffCovariantDerivative (lcConn (ℝ × ℝ) (pgMetric A w hA hAd hw)) (∞ : ℕ∞ω) := by
+  have hB : ContDiff ℝ ∞ (pgForm A w) := by
+    rw [contDiff_clm_apply_iff]; intro a; rw [contDiff_clm_apply_iff]; intro b
+    simp only [pgForm_apply]
+    have h1 : ContDiff ℝ ∞ fun p : ℝ × ℝ => A p.2 := hAs.comp contDiff_snd
+    have h2 : ContDiff ℝ ∞ fun p : ℝ × ℝ => w p.2 := hws.comp contDiff_snd
+    fun_prop
+  exact lcConn_contMDiffCov (B := pgForm A w) (fun p a b => pgForm_symm A w p a b)
+    (fun p u h => pgForm_nondeg w (hA p.2) u h) hB
+
+/-- **A3 on C4's static diagonal metric** `−c² du² + b dt²` (the Schwarzschild interior chart). -/
+theorem dg_contMDiffCov {c b : ℝ → ℝ} (hc : ∀ u, c u ≠ 0) (hb : ∀ u, b u ≠ 0) (hcs : ContDiff ℝ ∞ c)
+    (hbs : ContDiff ℝ ∞ b) (hcd : Differentiable ℝ c) (hbd : Differentiable ℝ b) :
+    CovariantDerivative.ContMDiffCovariantDerivative (lcConn (ℝ × ℝ) (dgMetric c b hc hb hcd hbd))
+      (∞ : ℕ∞ω) := by
+  have hB : ContDiff ℝ ∞ (dgForm c b) := by
+    rw [contDiff_clm_apply_iff]; intro x; rw [contDiff_clm_apply_iff]; intro y
+    simp only [dgForm_apply]
+    have h1 : ContDiff ℝ ∞ fun p : ℝ × ℝ => c p.1 := hcs.comp contDiff_fst
+    have h2 : ContDiff ℝ ∞ fun p : ℝ × ℝ => b p.1 := hbs.comp contDiff_fst
+    fun_prop
+  exact lcConn_contMDiffCov (B := dgForm c b) (fun p x y => dgForm_symm c b p x y)
+    (fun p x h => dgForm_nondeg (hc p.1) (hb p.1) x h) hB
+
+/-- **A3 on C5's diagonal metric on `ℝ⁴`** (the polarized Gowdy family). -/
+theorem diag4_contMDiffCov {c : Fin 4 → (Fin 4 → ℝ) → ℝ} (hc : ∀ i p, c i p ≠ 0)
+    (hcs : ∀ i, ContDiff ℝ ∞ (c i)) (hcd : ∀ i, Differentiable ℝ (c i)) :
+    CovariantDerivative.ContMDiffCovariantDerivative (lcConn (Fin 4 → ℝ) (diag4Metric c hc hcd))
+      (∞ : ℕ∞ω) := by
+  have hB : ContDiff ℝ ∞ (diag4 c) := by
+    rw [contDiff_clm_apply_iff]; intro u; rw [contDiff_clm_apply_iff]; intro v
+    simp only [diag4_apply]
+    exact ContDiff.sum fun i _ => (hcs i).mul contDiff_const
+  exact lcConn_contMDiffCov (B := diag4 c) (fun p u v => diag4_symm c p u v)
+    (fun p u h => diag4_nondeg (fun i => hc i p) u h) hB
+
+/-- **A4.** K1's `R(fX, Y)Z = f R(X, Y)Z` holds for THE Levi-Civita connection of the PG metric with NO class
+hypothesis: A3 supplies it. The `C^∞` statements already built apply as they stand. -/
+theorem pg_curv_smul_left {A w : ℝ → ℝ} (hA : ∀ s, A s ≠ 0) (hAs : ContDiff ℝ ∞ A) (hws : ContDiff ℝ ∞ w)
+    (hAd : Differentiable ℝ A) (hw : Differentiable ℝ w) {f : ℝ × ℝ → ℝ}
+    (hf : ContMDiff 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ) ∞ f)
+    {X Y Z : Π x : ℝ × ℝ, TangentSpace 𝓘(ℝ, ℝ × ℝ) x}
+    (hX : ContMDiff 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ × ℝ).tangent ∞ fun q => (⟨q, X q⟩ : TangentBundle 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ)))
+    (hY : ContMDiff 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ × ℝ).tangent ∞ fun q => (⟨q, Y q⟩ : TangentBundle 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ)))
+    (hZ : ContMDiff 𝓘(ℝ, ℝ × ℝ) 𝓘(ℝ, ℝ × ℝ).tangent ∞ fun q => (⟨q, Z q⟩ : TangentBundle 𝓘(ℝ, ℝ × ℝ) (ℝ × ℝ)))
+    (x : ℝ × ℝ) :
+    curv (lcConn (ℝ × ℝ) (pgMetric A w hA hAd hw)) (f • X) Y Z x
+      = f x • curv (lcConn (ℝ × ℝ) (pgMetric A w hA hAd hw)) X Y Z x := by
+  haveI := pg_contMDiffCov hA hAs hws hAd hw
+  exact curv_smul_left _ hf hX hY hZ x
+
+end SmoothLC
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2109,3 +2274,10 @@ end ShadowProbe
 #print axioms ShadowProbe.interior_geodesic
 #print axioms ShadowProbe.killing_of_invariant
 #print axioms ShadowProbe.gowdy_killing
+#print axioms ShadowProbe.lcConn_const
+#print axioms ShadowProbe.lcGam_smooth
+#print axioms ShadowProbe.lcConn_contMDiffCov
+#print axioms ShadowProbe.pg_contMDiffCov
+#print axioms ShadowProbe.dg_contMDiffCov
+#print axioms ShadowProbe.diag4_contMDiffCov
+#print axioms ShadowProbe.pg_curv_smul_left
