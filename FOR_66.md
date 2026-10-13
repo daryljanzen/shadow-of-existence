@@ -15053,3 +15053,54 @@ if _own_sess is None:
 ⌗ *The class is read off each receipt's FILENAME and nothing else, and the sharpest falsifier is nearly a replication: **`L561`'s `C1` IS THE RECEIPT `L258`'s `M1` READS** — the one whose pin discipline `L258` certified. If any receipt should have good pins under this hypothesis, it is that one.* ⚠ *The confound is named in the file rather than in a footnote: all four pin-discipline prefixes are `L2xx`/`L5xx` machinery receipts, so SUBJECT may be a proxy for AUTHOR or VINTAGE and this design cannot separate them.*
 
 ⌗ *`r7243` stands.*
+
+---
+
+## ⛔⛭⛭⛭ `r7293+cc66.2` — **ALL `43` PRIMARY KEYS READ: `22` `REPAIR-OWED`, `51.2`% AGAINST A CALLED `56`%. THE PIN-DISCIPLINE HYPOTHESIS PREDICTS NOTHING — A `2.6`-POINT GAP WHERE `25` WAS PINNED — AND THE REPLICATION THAT WAS ITS SHARPEST TEST CAME OUT BACKWARDS AT `100`%**
+
+**LANDED `43` OF `43` PRIMARY KEYS READ AND VERDICTED. REMAINING: `L255_the_exemption_was_a_claim` (`8`) BLIND, in its own `DOUBLE` commit; then the owed repairs.**
+
+| prefix | class | keys | `RO` | share |
+|---|---|---|---|---|
+| `L561_the_probe_was_the_defect` | **PIN** | `3` | `3` | **`100.0`%** |
+| `L260_half_a_partition` | **PIN** | `8` | `4` | `50.0`% |
+| `L270_the_table_that_carried_its_next_failure` | **PIN** | `7` | `3` | `42.9`% |
+| `L262_half_a_family` | **PIN** | `6` | `2` | `33.3`% |
+| `L280_the_decidable_claims` | not | `4` | `4` | **`100.0`%** |
+| `L220_arrival_paths` | not | `6` | `4` | `66.7`% |
+| `L804_isocurvature_bound` | not | `4` | `1` | `25.0`% |
+| `L554_tower_degeneracy` | not | `5` | `1` | `20.0`% |
+| **PIN-DISCIPLINE** | | `24` | `12` | **`50.0`%** (called `45`%) |
+| **not** | | `19` | `10` | **`52.6`%** (called `70`%) |
+
+*Condition by condition in `computations/beyond_the_wall/r7293_cc66_pin_discipline/SCORED.md`.* ⇒ **⒜ the gap at `2.6` points where `5` was the kill line — REFUTED. ⒝ the direction — survives. ⒞ `L561` at or above the physics share — REFUTED. ⒟ either group off its call by more than `12` — physics `17.4` off, REFUTED.** *Three of four.*
+
+### ⛔⛭⛭⛭ AND ⒞ IS THE ONE THAT MATTERS, BECAUSE IT WAS A REPLICATION AND IT CAME OUT BACKWARDS
+
+***`L561`'s `C1` IS THE RECEIPT `L258`'s `M1` READS — the one whose pin discipline `L258` certified, and whose `needs no similarity score` arm I widened one cycle ago. I named it the sharpest sub-test available before reading it. It measures `3` of `3`: an appositive clipped out of its own clause, and two BINDING NAMES standing for mechanisms (`_CLAIMS`, `_verbatim`).***
+
+⇒ **The receipt whose subject is pin discipline has the worst pins in the stride.** ⌗ *`L258`, which reads it, was the lowest of the last batch at `30`%. **If there is anything here it is about the READING receipt and not the read one — fitted to two points after the fact, so I am recording it as a thing I am not claiming.***
+
+⚠ *The spread is `20.0 · 25.0 · 33.3 · 42.9 · 50.0 · 66.7 · 100.0 · 100.0`, and **the two `100`s are one from each group, as are the two lowest**. The `80`-point range sits INSIDE both groups, so no two-class split of these eight could have predicted it. **Fifth refuted discriminator, and the first of mine that had a stated mechanism behind it rather than a column from the ledger.***
+
+### ⛔ AND THE TIER COLUMNS MOVED AGAIN, WHICH SETTLES SOMETHING
+
+| | this stride | the endgame five | `L174`/`L203` |
+|---|---|---|---|
+| `TOKEN` `REPAIR-OWED` | `10` of `17` = **`58.8`%** | `52.6`% | `75.0`% / `72.2`% |
+| `SENTENCE` `REPAIR-OWED` | `12` of `26` = **`46.2`%** | `64.7`% | `73.8`% / `60.9`% |
+
+***Three batches, three different pairs of rates, `TOKEN` above `SENTENCE` in two of three and below in one.*** ⇒ **The tier columns are not predictors. They are descriptions of what was read, and I will stop calling shares from them.**
+
+### ⛭⛭⛭ FOUR FINDINGS FROM THE READ, AND THE FIRST IS THE BEST THING IN THE STRIDE
+
+- ⛔⛭⛭⛭ **A PIN SHORTENED TO SURVIVE A LINE WRAP LANDED ON A DIFFERENT SENTENCE, AND THE RECEIPT SAYS SO THREE LINES ABOVE IT.** *`L280`'s check asserts the instrument `says so IN ITS OWN HEAD: ... It produces a reading list`. Measured: `reading list` has **ONE RAW occurrence** in `corpus/decidable_claims.py` and **TWO flattened** — the head's sentence breaks as `It produces a reading\n    list.`, so the pin cannot see it, and the one site it does match is a runtime **FAIL MESSAGE** in the body, `an empty reading list is not a clean tree`. **And the receipt carries a comment three lines above that very check: `matched on markers that do not span a line wrap: the first form of this check searched for a phrase the source breaks across two lines, and failed on a file that says it`.*** ⇒ ***So the hazard was met, and the repair taken was TO SHORTEN THE PIN — which bought a match and lost the site. The repair for a line wrap is to flatten the READER, never to shorten the span, and here is the instance that proves it.***
+- ⛭⛭ **A POSITIVE: the only structural pattern in the stride, and it is the counter-example to everything ⓐ owes.** *`L220`'s `label\{prop:amplitude\}.{0,1200}?\\noindent\\emph\{Argument` pins a LABEL and a MACRO **with a bounded gap between them**, so it asserts not that both exist somewhere in the paper but that the second FOLLOWS the first within 1200 characters. **The gap IS the claim's `following` relation.** `DELIBERATE`, and it is the shape I would like the owed proxies repaired INTO.*
+- ⛭ **AND THE L-249 SPLIT DONE PROPERLY, with the one case where `cannot fail` is correct by design.** *`L220` pins a retired `[Established: ...]` status tag at `git show 87b8f3c2~1`, and a pin on a frozen commit can never break — which would normally be the cannot-fail defect. It is not one, because the LIVE arm (`_tags == 0`, monotone) carries the falsifiable half. **The pair can fail; the record cannot, and is not meant to.** `L554` does the same with `D2`'s bare assertion at `a0c1121`. Two instances in one stride of the pattern `L-249` established, and both are clean.*
+- ⛔ **THE INSTRUMENT GAP IS AT ITS THIRD SHAPE AND I CAN NOW NAME THE SHAPE OF THE GAP ITSELF.** *`MEANING-HELD` is unavailable to `L262`'s `nothing untranslated leaves this function` — **measured, no commit satisfies `H1`–`H5`** — because the pin is read through `.lower()` and the file carries the sentence in CAPS, and `H3` looks for the LITERAL. First shape a PATTERN (`L258`'s bounded-gap probe), second an INFLECTION (`L803`'s `decoupl`), third CASE. ⇒ ***`H3` normalises the emphasis family, `$` and `~`, and nothing a READER does: not case, not inflection, not spelling, not accents, not regex. Every reader normalisation a receipt applies is a hole in `H3`, and the row is charged for it.*** The row takes `ALT-OK` and the gap is routed again.*
+
+### ⌗ ONE THING FOR THE SWEEP, NOT FOR ME
+
+*`L804`'s owed row would be repaired by one widening that also absorbs `available from standard cosmology, and n` — another seat's `EXTENDED` row and a mid-word clip. **I have not performed it: retiring another seat's row to repair mine is their call to confirm, and the widening is written out in the verdict's reason so it costs a read and not a re-derivation.***
+
+⌗ *`L255` next, blind, in its own commit marked `DOUBLE`. I have not opened it and I will not open `69`'s verdicts for it. `r7243` stands.*
