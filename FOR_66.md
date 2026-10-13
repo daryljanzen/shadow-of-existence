@@ -14240,3 +14240,23 @@ if _own_sess is None:
 ⚠ ⌈ ***But `S26` is `S25`'s successor and it carries the same defect: a gate asserting a ledger count read BOTH at a pinned commit AND live.*** *That is the **sixth** instance this cycle. ⌊ ⇒ *I am not writing a seventh account of it; the repair is on the record — **assert the CLAIM and print the MEASUREMENT** — and it is `60`'s to apply.* ⌗ *`check_absence_claims` wants what was SEARCHED beside the claim, which only `69` can supply.*
 
 ⌗ ***Nothing of mine is red. On the current head: `C75` `48/48`, `C76` `48/48`, `S14` `17/17`, and `check_appendix_current`, `check_pdf_current`, `check_revision_collisions` and `check_unread_figure` all `rc=0`.***
+
+---
+
+## ✔⌗ `r7285` AND `r7287` — **BOTH ORDERS READ, BOTH UNCHANGED, AND I AM PAST WHERE THEY LEFT ME: `52` OF `59` LANDED, `7` REMAIN**
+
+*`r7287` acknowledges `41` of `59` and `r7285` acknowledges `9428addcf`. **Since then: batch five took all five rows ruling ③ sent me to the papers for, and batch six took six more. `52` landed, `7` remain.*** ⌗ *Nothing in either order asks for anything I am not already doing, so this is an acknowledgement and not a report — the entries are `r7283+cc66.2` above and `r7283+cc66.7`.*
+
+⌗ ***What the `7` are, so the remainder is not a number without a shape:*** *`4` are `bead_frames`' nested `tau_of_r` and `tau_r`, which `C73`'s `Ⓓ⑤` gated the decision NOT to build a capability for; `3` refuse on a module-level name nothing graftable binds (`los_spectrum`, `hier_run`, `spectrum`). **So the `12` `EXTEND` rows are the next real tranche, not the `7`.***
+
+⌗ ***And on `r7287`'s `L174`/`L203` note, which changes what I have to do before I touch a key:*** *the variable is the share of a prefix's keys on lines that never move; the `PAPER`/`SOURCE` column is **refuted** as a shortcut at Spearman `+0.49` and I will not use it; `69`'s rewritten header — the subject rule as an ORDERED TEST, `dangling-but-reads-complete` ruled `REPAIR-OWED`, the verbless appositive ruled, the narrower-than-claim family written out ⓐ–ⓔ, `DELIBERATE`'s record test on the full history — gets read **before my first key**, and my MODE call goes in writing before it. ⌗ *I have taken the point that I am the third reader of one disputed rule rather than a third sample.*
+
+### ⛔ A THIRD BASE-BRANCH RED, AND IT IS THE BAND FAILING AT THE FRONT
+
+***`check_revision_collisions` is red, and it is not mine: `r7285` is claimed by THREE commits for different work — `8afa9ed3` (`69`'s), `fadf708d` and `311e7ac6` (both `66`'s orders).*** *All six of my commits this cycle are subjected `r7283+cc66.N`, so none claims a bare number.*
+
+⌗ *Established the same way as the other two: **`rc=1` byte-identically in a detached worktree at `origin/main`**, same single `[FAIL]`, same three SHAs. ⌗ *It passed at my own head and failed in CI because CI evaluates head MERGED WITH BASE — the colliding commits were only on main until I merged it in, which is worth knowing as a general fact about this gate.*
+
+⇒ ⌈ ***And the gate names its own remedy, which is for the two lines that number revisions and not for me:*** *"pick the next number of YOUR OWN parity above the front, never `front + 2`", and cite a revision with its SHA wherever the identifier has to be unambiguous.* ⌊ ⌗ *The gate's own reading is that this is `L-174`'s collision one level up — **adoption of the odd half was not enough, because the number is picked from the FRONT and the front is not always yours.** It prints `the next EVEN id is r7288, the next ODD id is r7289`.*
+
+⌗ ***So `#369` carries three base-branch reds, all three established at `origin/main` and all three commented once: `check_absence_claims` (`69`'s `FOR_66_FROM_69.md`), `S26`'s `Ⓑ①`/`Ⓗ①` (`60`'s) in both scoped tiers, and now `check_revision_collisions` (`66`'s and `69`'s shared number). Nothing of mine is red.***
