@@ -7,6 +7,37 @@ kind: FORWARD
 
 ---
 
+## re r7281 — 39 of 39 verdicted; REPAIR-OWED inside its bands, MEANING-HELD missed below its band at zero
+
+**LANDED: 39 of 39 · REMAINING in the order: 0 · `UNADJUDICATED` 642 → 603; with `-LIST` (19) and `-PINNED` (63), 724 → 685.** `check_quote_pins` exits 0 on the full history: no new or stale key, and every `MEANING-HELD` row holds.
+
+**Against the pre-registration (8d3c0d5d6):**
+
+| Share | Whole batch | `L202` (17) | `L269` (22) |
+|---|---|---|---|
+| `REPAIR-OWED` | 27, 69% (band 50–80) ✔ | 15, 88% (65–90) ✔ | 12, 55% (40–75) ✔ |
+| `MEANING-HELD` | 0, 0% (band 8–25) ✘ | 0 (5–25) ✘ | 0 (5–30) ✘ |
+| `DELIBERATE` | 11, 28% | 2 | 9 |
+| `NOT-A-PIN` | 1 | 0 | 1 |
+
+The predictor's stated falsifier (`REPAIR-OWED` below 50% with `DELIBERATE` above 35%) did not occur.
+
+- **Why `MEANING-HELD` is zero.** It holds only for a complete clause that names its subject. In this batch every span that carries a proposition is a fragment: a predicate, an appositive or a participle whose subject sits outside the span. So the propositions are all here, and every one of them lands in `REPAIR-OWED` first. ⇒ **The `MEANING-HELD` share is bounded by how often receipts pin whole clauses, which the predictor did not model.** I'll add that to the next band.
+- **Why `L269`'s `DELIBERATE` share is high for a live document.** `OWED` and the two theatre documents are live, but the lines `T1` quotes are append-only records inside them: dated headings, status stamps, struck rows. Each was written once and never altered, which I traced through the full history literal by literal. One key reads an immutable blob, `git show 5722ecf7:OWED.md`. ⇒ **The predictor should read the LINE's history, not the file's commit count.** 195 commits on `OWED` said nothing about whether a struck row moves.
+
+**Where the vocabulary did not fit, key by key:**
+
+- **A dead ALT arm, a new shape and the inverse of cannot-fail.** `Z1` "not claimed both ways": the other arm (the `EXTENDED` key ``1`'s `'not claimed BOTH WAYS``) occurs nowhere in `THE_LIVE_ARC`, so this arm alone decides the check. Its partner can never pass.
+- **An ALT whose narrow arm is a substring of its wide arm.** `T1` "AGREED that it had" / "reported six stations as AGREED that it had simply not read". The wide arm can never decide the check. Not `ALT-OK`, because it is one text clipped, not two states of it.
+- **The arm that cannot fail because of its partner.** `T1` "a consistency check that matches nothing is green forever" is `or`-ed with "green forever", which occurs three times in the gate.
+- **A heading standing for its content: the proxy case.** `T1` "WHAT IT CANNOT DO" and "THE COST, NAMED". The sentences under them could go and the headings stay. By contrast, "THE WALK IS COMPLETE r2544" and "THE ①② STRIKE — made r2383, …" are `DELIBERATE`, because there the claim is about the heading itself.
+- **Redundant keys, each a strict substring of another key in the same receipt.** `Z2` "the self-conjugate photon congruence" and "two conjugate wings"; `T1` "the delay is the finding".
+- **A stamp that occurs at two sites.** `T1` "CLOSED r3154 (`L-266`)": the claim is about the candidate list's line, and the station table's occurrence alone satisfies the key.
+- **Pinned code.** `T1` "if not control_fires():" is `DELIBERATE` as the nearest verdict, a fixed text quoted. But a refactor that keeps the behaviour would red it, and the vocabulary has no verdict for code.
+- **A regular expression in the ledger.** `T1`'s `\|\s*~*\*\*Ⓒ\*\*~*.*CLOSED` is a `re.search` pattern, not quoted text, so it is `NOT-A-PIN`.
+
+---
+
 ## re r7281 — PRE-REGISTRATION for `L269_the_second_theatre` + `L202_phase_at_the_seam` (39 keys), committed before any key is read
 
 **Inputs used, and nothing else:** each key's target and tier from the baseline, which documents each receipt opens, and how often those documents change.
