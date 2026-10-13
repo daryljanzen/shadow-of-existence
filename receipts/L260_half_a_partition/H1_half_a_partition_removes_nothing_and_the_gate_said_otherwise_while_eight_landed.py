@@ -144,9 +144,25 @@ def main():
     check('⓵ᵇ and it printed the same sentence on every GREEN run, beside a count of zero',
           'this removes the collisions this line can cause and no others' in was)
     now = open(GATE, encoding='utf-8').read()
+    # ⛭ r7293+cc66: two normalised copies of the gate, because two of this receipt's pins were
+    #   defeated by the gate's own LAYOUT rather than by anything it says.  `now_flat` flattens
+    #   whitespace; `now_joined` also JOINS CONSECUTIVE `print()` LITERALS, so a sentence the
+    #   gate prints over several calls can be pinned whole instead of a subjectless fragment of
+    #   one line.  The same move as flattening a paper that wraps a sentence across lines.
+    now_flat = re.sub(r'\s+', ' ', now)
+    now_joined = re.sub(r'\s+', ' ', re.sub(r"'\)\s*print\('", ' ', now_flat))
     check('⓵ᶜ and it is WITHDRAWN in place rather than quietly rewritten',
           'WITHDRAWN r3140' in now
-          and 'THAT IS FALSE, AND IT IS FALSE BY\nARITHMETIC' in now
+          # ⛭ r7293+cc66: widened to the clause that names what is false, and read off the
+          #   flattened copy.  The old span's subject was the demonstrative `THAT` and its
+          #   antecedent -- the r3128 sentence quoted immediately before -- sat outside it; and
+          #   the old literal carried a HARD-CODED `\\n` at the gate's line wrap, so re-wrapping
+          #   one comment paragraph would have redded a check about a withdrawal that had not
+          #   moved.
+          and 'WITHDRAWN r3140 (`L-260`): THIS FILE SAID, OF THE HALF IT COULD ENFORCE, *"until it is, this '
+              'half removes the collisions this line can cause and no others."* THAT IS FALSE, AND IT IS '
+              'FALSE BY ARITHMETIC RATHER THAN BY BAD LUCK'
+          in now_flat
           and 'removes the collisions this line can cause and no others' not in
           now.split('WITHDRAWN r3140')[0])
 
@@ -276,8 +292,19 @@ def main():
               encoding='utf-8', errors='replace').read())
     check('⓹ᶜ and the gate prints the confirmed/reported split on every run, with its source, and '
           'says that an entry still unconfirmed AFTER the merge must be struck',
-          'def report_testimony' in now and 'on testimony' in now
-          and 'must be struck rather than left' in now)
+          # ⛭ r7293+cc66: all three arms repaired.  `def report_testimony` was a DEFINITION
+          #   standing for `the gate PRINTS the split ON EVERY RUN` -- delete the call site, leave
+          #   the definition, and every arm still passed while the gate printed nothing -- so the
+          #   CALL is pinned instead.  `on testimony` was two words of a print label with a
+          #   SECOND site in a `#:` comment, so renaming the label left the arm green; the label
+          #   is pinned with its structure.  And `must be struck rather than left` opened on a
+          #   MODAL with no subject, the subject sitting two printed lines earlier -- pinned whole
+          #   off the joined copy.
+          'report_testimony(bad)' in now
+          and 'on testimony   : {unseen or "none"}' in now
+          and 'An entry still unconfirmed AFTER the merge is a baseline entry that is not an instance, and '
+              'must be struck rather than left'
+          in now_joined)
     subjects = git('log', '--format=%s', '--all').split('\n')
     mine = {r for r in C.TESTIMONY if sum(1 for x in subjects if x.startswith(r + ' ')) == 1}
     _pairs = {r for r in C.TESTIMONY

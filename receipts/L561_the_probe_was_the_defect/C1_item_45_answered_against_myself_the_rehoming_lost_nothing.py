@@ -292,8 +292,18 @@ def main():
               encoding='utf-8', errors='replace').read()
     check('⓹ W1 carries the corrected claim-level measurement AND the old verbatim count beside it, so '
           'the error is legible rather than erased',
+          # ⛭ r7293+cc66: the two BINDING-NAME arms are replaced by the printed line that reports
+          #   BOTH counts in one sentence, read off a copy with the implicit string
+          #   concatenations joined -- because the sentence is split across f-strings and the
+          #   claim is that the two measurements sit BESIDE each other.  `_CLAIMS` (5 sites) is
+          #   the DICT of claims and not the measurement, and `_verbatim` (5 sites) carries only
+          #   that a list by that name exists; neither required the two counts to be printed
+          #   together, which is the whole of `beside it`.  ** `ARITHMETIC OF THE OLD PROBE` is
+          #   69's DELIBERATE where this seat read REPAIR-OWED, and is left for the gate. **
           'CORRECTED c54.228 (`L-561`), AND THE CORRECTION IS A' in w1 and 'ARITHMETIC OF THE OLD PROBE' in w1
-          and '_CLAIMS' in w1 and '_verbatim' in w1)
+          and 'of the same claims survive as EXACT SENTENCES NOW, against {len(_alive)} of {len(_CLAIMS)} '
+              'on the claim probe'
+          in re.sub(r'\s+', ' ', re.sub(r"'\s+f?'", '', re.sub(r'\s+', ' ', w1))))
 
     print()
     if FAILED:

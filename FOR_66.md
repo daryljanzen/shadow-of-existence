@@ -15156,3 +15156,61 @@ if _own_sess is None:
 ⌈ ⚠ *So items ③ and ④ have been carried forward in `FOR_CC66.md` for three cycles against a trunk that already satisfied them, and I have now said so three times in three sections. **If the carry-forward is automatic, this is the signal to stop it; if it is deliberate because you want them re-verified, say which part and I will re-verify that part.*** ⌊
 
 ⌗ *`22` owed repairs next, on the eight stride prefixes. `r7243` stands.*
+
+---
+
+## ✔⛭⛭⛭ `r7293+cc66.3` — **`18` OF THE `22` OWED ROWS REPAIRED AND FIVE PREFIXES RELEASED. ⛔ THE OTHER `4` ARE HELD BECAUSE `69` READS THEM NOT-OWED, AND THREE PREFIXES STAY CLAIMED SO NOBODY TAKES A PREFIX WITH AN OPEN DISPUTE**
+
+**LANDED `18` OF `22` REPAIRED, `5` OF `8` PREFIXES RELEASED. REMAINING: the `4` held rows, which are a ruling and not work.**
+
+*The split is the one `r7293+cc66.1` established and it is now routine: repair what BOTH readings owe, repair what the OTHER reading owes, hold what only mine owes.*
+
+| | rows | what I did |
+|---|---|---|
+| owed on both readings (or on mine where `69` did not read `L260`) | **`18`** | **repaired** |
+| owed on `69`'s reading and not on mine | **`2`** | **repaired, on `69`'s reading** |
+| owed on mine and not on `69`'s | **`4`** | **HELD — yours to rule** |
+
+*`20` baseline rows went: `18` replaced in place by the key the repair minted, `2` retired into a merge. `12` widenings, `2` merges, `4` replacements that are not widenings at all (a CALL for a `def`, a CALL for a module name, a GUARD for a binding name, a STATED RESULT for a common noun).*
+
+| prefix | keys | repaired | held | released |
+|---|---|---|---|---|
+| `L260_half_a_partition` | `8` | `4` | — | ✔ |
+| `L220_arrival_paths` | `6` | `4` | — | ✔ |
+| `L804_isocurvature_bound` | `4` | `3` | — | ✔ |
+| `L262_half_a_family` | `6` | `2`→`1` merge | — | ✔ |
+| `L554_tower_degeneracy` | `5` | `1` | — | ✔ |
+| `L270_the_table_that_carried_its_next_failure` | `7` | `4` | `1` | **held** |
+| `L280_the_decidable_claims` | `4` | `2` | `2` | **held** |
+| `L561_the_probe_was_the_defect` | `3` | `2`→`1` merge | `1` | **held** |
+
+⌈ ***The three held prefixes keep their `CLAIM` rows deliberately. A prefix at `0` owed is claimable by anyone; a prefix with an open DISPUTE is not, and releasing it would hand another seat a row two seats read differently with no note saying so. The note is in the ledger row.*** ⌊ *Held: `RESTATES THE RULE IT GUARDS`, `WHAT IT CANNOT DO`, `load-bearing claim from a passing remark`, `ARITHMETIC OF THE OLD PROBE` — all four mine-owed against `69`'s `DELIBERATE`, all four with the repair written out in the row's reason, so a ruling my way costs one edit each and not a re-read.*
+
+### ⛭⛭ THE TWO I REPAIRED ON `69`'s READING, AND WHY THAT COSTS THE VERDICT NOTHING
+
+| key | `69` | me | the repair |
+|---|---|---|---|
+| `An empty survey is green forever` | `REPAIR-OWED` | `MEANING-HELD` | widened to `no feeding document was found.  An empty survey is green forever` |
+| `ord(c) > 0xFF` | `REPAIR-OWED` | `DELIBERATE` | widened to the threshold **with its `raise`** |
+
+***On the second, `69`'s reading is defensible on exactly the ground the widening acts on: a threshold that is PRESENT but no longer REFUSES is not what the arm claims.*** *Both spans are better under either reading, so the repair is not a concession — and the ABSENT half of the `ord(c) > 0xFF` conjunction is untouched, because a negative pin on a second file is the strong form and is what makes `the threshold lives in the generator alone` falsifiable.*
+
+### ⛭⛭⛭ AND THE REPAIRS THEMSELVES PRODUCED A RULE I WOULD LIKE RULED ON, BECAUSE IT DECIDED FOUR ROWS
+
+***Four of the twenty are not widenings. In each, the span was a NAME and the repair was the STRUCTURE the name stands for:***
+
+| receipt | was | is |
+|---|---|---|
+| `H1` (`L260`) | `def report_testimony` | `report_testimony(bad)` — the CALL |
+| `V1` (`L270`) | `tex_escape` | `mod.tex_escape(ch)` — the CALL, where 2 of the name's 4 sites were `#:` comments |
+| `V1` (`L270`) | `_SUPER` | the `_partial` SystemExit GUARD |
+| `D1` (`L280`) | `substrate` | `L-279`'s stated result, where the word had 16 sites in a file whose TITLE carries it |
+
+⇒ **PROPOSED: a NAME is `DELIBERATE` when the name IS the claim, and `REPAIR-OWED` when it stands for a MECHANISM or a RUNTIME BEHAVIOUR the span does not carry — and the repair is the mechanism, never a longer name.** ⌗ *The `L255` blind read supplies both sides of it four lines apart in one receipt, which is why I think it is a rule and not a preference: `header(t)` is a call WITH its argument and carries its claim; `subprocess.run` is a bare module attribute and does not.*
+
+### ⛔⛭⛭ TWO INSTRUMENT FINDINGS FROM DOING THE WORK, AND THE SECOND IS A GENERAL ONE
+
+- ⛔ **A PIN SHORTENED TO SURVIVE A LINE WRAP LANDS ON A DIFFERENT SENTENCE, and `L280` is the instance that proves it.** *Repaired by flattening the READER, with the head's sentence restored. The receipt's own comment three lines above that check records the hazard and records taking the other repair.*
+- ⛭⛭ **AND THE GENERAL FORM: A GATE'S OWN LAYOUT IS NOT ITS CLAIM, so a reader may normalise it — and three of these repairs needed a normalisation the campaign had not used before.** *`L260`'s gate splits one sentence across several `print()` calls, so `now_joined` JOINS CONSECUTIVE PRINT LITERALS; `L561`'s `W1` splits one sentence across f-strings, so the reader joins implicit concatenations; `L220`'s arc and register are written in heavy markdown, so the reader strips emphasis.* ⇒ ***Whitespace, markdown emphasis, print scaffolding and f-string concatenation are all LAYOUT. `H3` normalises the LaTeX emphasis family and none of the rest, which is the same gap I routed three times this cycle, now with four shapes instead of three.***
+
+⌗ *`r7243` stands. `check_revision_collisions` is red on the trunk for `r7285`/`r7287` id collisions among six commits all ancestors of `main`, and the three `L_probability` receipts are red on `main` too — both reported on `#380` with the measurements, not carried here.*
