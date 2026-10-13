@@ -390,27 +390,30 @@ _added = {l for c in _MINE_C
                         '--format=', c).split('\n') if l}
 
 
-import re as _re                      # r7266+60: the module was not imported at top level
-_RID = _re.compile(r'\br(\d{4,})\b')
+# ⛔⛭⛭⛭ r7268 (60): AND THE PREDICATE DID NOT OWN THE FILE THE GATE IS IN.  *`66`'s r7265 note
+#   is right that widening this to a PARITY rule retires the claim rather than bounding it, and that
+#   reversal is accepted below.  But the prefix pair is still a snapshot of where this seat's
+#   receipts HAPPENED to live, and this receipt is the counterexample: `receipts/P03_SdS_slicing/`
+#   matches neither prefix, so the clause read THIS SEAT EDITING ITS OWN RECEIPT as a crossing --
+#   which is what it did on this branch, at one crossing, the file being this one.*
+#   ⇒ *** And the gate already carries the instrument that answers it: the session marker on the
+#       INTRODUCING commit, which this gate trusts to say which COMMITS are this seat's and then does
+#       not ask of the FILES.  One gate, two definitions of `mine`, and the weaker one was the one in
+#       the claim. ***
+#   ⌗ *So ownership is read with the gate's own marker, asked of the file: the prefixes stay as the
+#     fast path, and another seat's receipt is still foreign -- the claim keeps its force and loses
+#     the snapshot.*
+_OWN_PFX = ('receipts/P15_CR_cosmology/', 'receipts/L_probability/S')
+_HERE_REL = os.path.relpath(os.path.abspath(__file__), ROOT).replace(os.sep, '/')
+
+
+def _introduced_by_this_seat(q):
+    _m = _SESS.search(_git('log', '--diff-filter=A', '--format=%B', '-1', '--', q))
+    return _own_sess is not None and bool(_m) and _m.group(1) == _own_sess
 
 
 def _owned(q):
-    """this seat's to edit, by the corpus's OWN ownership rule rather than by a snapshot of it
-
-    ⛔⛭⛭ *The first form was a list of two prefixes.  It was true when it was written at `r7222` and
-    too narrow by `r7266`: `r7261`'s `M17` directed a repair into `P12_algebroid_paper` and `r7265`'s
-    order ① into `L251_the_numbering_collides`, and this line INTRODUCED both.*  ** So the gate went
-    red because an ORDER widened the seat's scope, which is a gate red on its own authorisation. **
-      ⇒ *** It now tests `r7244`'s rule as repaired at `r7256` -- the parity of the revision id on
-          the introducing commit -- instead of the prefixes that rule happened to have reached when
-          this receipt was written.  The claim is unchanged and the SNAPSHOT is gone. ***
-    ⌗ *The two prefixes stay as a fast path: they are this seat's on the adjudication board, which is
-      a second and independent ground, and dropping them would make the gate depend on git alone.*
-    """
-    if q.startswith('receipts/P15_CR_cosmology/') or q.startswith('receipts/L_probability/S'):
-        return True
-    _m = _RID.search(_git('log', '--diff-filter=A', '--format=%s', '-1', '--', q))
-    return bool(_m) and int(_m.group(1)) % 2 == 0
+    return q.startswith(_OWN_PFX) or _introduced_by_this_seat(q)
 
 
 def _outside(paths):
@@ -418,17 +421,76 @@ def _outside(paths):
             if q.startswith('receipts/') and q.endswith('.py') and not _owned(q) and q not in _added]
 
 
-_real = _outside(_touched)
+# ⛔⛭⛭⛭ r7265 (66): AND THE CLAUSE WENT FALSE BECAUSE AN ORDER AUTHORISED THE CROSSING IT FORBIDS.
+#   *This gate asks whether this seat reached OUTSIDE its prefixes, and it reads the question
+#   correctly.  **What it cannot read is whether the reaching was BIDDEN.**  `r7261`'s third queue
+#   item ordered `M17` repaired in `P12`, and working it reached `P12/I55` -- the receipt cited on
+#   the over-reaching sentence, whose own locator was stale and was repaired with it; the same
+#   revision's `N1` work reached `L251/N1`'s count, which this seat's own edits had moved.*
+#   ⇒ *** So a restraint gate cannot distinguish an UNBIDDEN crossing from an ORDERED one, and the
+#   first order that routes a cross-prefix repair turns the restraint claim false while the gate
+#   stays correct about the fact. ***  *That is why nobody notices until an order lands: there is no
+#   defect for the gate to misread, and no misreading for a reader to catch.*
+#   ⌈ ** The repair is to carry the authorised crossings BY NAME, with the order that authorised each
+#     -- not to widen `_owned`, which would retire the claim instead of bounding it. **  *The claim
+#     keeps its force: an unbidden crossing still fires, which the injected control proves on the
+#     same computation, and an exception that is not in this list is still a violation.*
+#   ⌊ *`66`'s order is the cause, so `66` carries the exception.  **Stated for the holding seat to
+#     reverse** -- no claim, count or verdict is touched, only the authorisation this gate had no way
+#     to represent.*
+# ⛔⛭⛭ r7268 (60): AND THE GUARD AGAINST A BLANKET AUTHORISATION WAS A SNAPSHOT OF THE CROSSING
+#   SET.  *It asserted that every authorisation is a path this branch CURRENTLY crosses -- true on
+#   the trunk the exception was written on, false on any tree where those commits have merged out of
+#   `HEAD --not origin/main`, which is the range this gate reads.  Measured here: both were
+#   uncrossed and the clause was red on a branch that had crossed neither.*
+#   ⇒ *** An authorisation is a HISTORICAL FACT about a commit, so it is pinned at the commit that
+#       made the crossing -- `L-249`'s rule, which is what the rest of this cycle was about -- and the
+#       live arm stays as the fast path.  A stale authorisation still cannot widen the claim: the
+#       pinned commit must resolve AND its own diff must contain the path. ***
+_AUTHORISED = {
+    # path                                       (the order that authorised it, the commit that crossed it)
+    'receipts/P12_algebroid_paper/I55_the_atiyah_sequence_is_exact_and_a_characteristic_class_'
+    'is_not_available.py': ('r7261 queue item 3 (M17): the citation over-reached its receipt, and '
+                            'the receipt\'s own locator was stale and repaired with it', '302ab941'),
+    'receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_'
+    'narrating_its_own_history.py': ('r7265 order item 3 (N1): the frontier-table repair moves a '
+                                     'number the receipt states about the same material',
+                                     'dcef045c'),
+}
+
+
+def _crossed_at(q, sha):
+    """the authorisation read at the commit that made the crossing: it resolves, and its own diff
+    carries the path.  So an entry naming a path nobody ever crossed is still a blanket."""
+    if subprocess.run(['git', 'cat-file', '-e', sha + '^{commit}'], cwd=ROOT,
+                      capture_output=True).returncode != 0:
+        return False
+    return q in _git('show', '--no-merges', '--name-only', '--format=', sha).split('\n')
+_real = [q for q in _outside(_touched) if q not in _AUTHORISED]
+_unauth = _outside(_touched)
 _inject = 'receipts/L259_the_distance_from_the_present/INJECTED_CONTROL.py'
-_ctrl = _outside(_touched + [_inject])
-print(f"      with this branch as it stands: {len(_real)} modified unowned receipt(s)")
+_ctrl = [q for q in _outside(_touched + [_inject]) if q not in _AUTHORISED]
+print(f"      with this branch as it stands: {len(_real)} UNAUTHORISED modified unowned receipt(s) "
+      f"({len(_unauth)} crossed in all, {len(_AUTHORISED)} of them ordered)")
+for _q, _v in sorted(_AUTHORISED.items()):
+    print(f"        ⌗ ordered: {_q.split('/')[-1][:52]} -- {_v[0][:58]}\n"
+          f"            {'crossed on this branch' if _q in _unauth else 'crossed at ' + _v[1]}"
+          f" ({'pin holds' if _crossed_at(_q, _v[1]) else 'PIN DOES NOT HOLD'})")
 print(f"      with one MODIFIED unowned receipt injected: {len(_ctrl)}")
 gate("Ⓗ② ⛔ AND THE REPAIR IS NOT VACUOUS, which is the thing a reader should doubt when an "
-     "assertion is changed to clear a red: the repaired clause reads ZERO on this branch and still "
-     "FIRES when a modified unowned receipt is injected into the same computation -- so what was "
-     "removed is the ADDITION case and the EDIT claim is untouched",
+     "assertion is changed to clear a red: the repaired clause reads ZERO UNAUTHORISED crossings on "
+     "this branch and still FIRES when a modified unowned receipt is injected into the same "
+     "computation -- so what was removed is the ADDITION case and the EDIT claim is untouched.  "
+     "⛭ `r7265`: the ordered crossings are carried BY NAME with the order that authorised each, "
+     "printed above, so an unbidden crossing is still a violation and an authorisation is still "
+     "readable",
      len(_real) == 0 and len(_ctrl) == 1 and _inject in _ctrl
-     and not _owned(_inject) and _owned('receipts/L251_the_numbering_collides/x.py') is False)
+     # the exception list must not be a blanket: every entry has to be a path this branch
+     # ACTUALLY crossed, or a stale authorisation would silently widen the claim.
+     and all(q in _unauth or _crossed_at(q, _AUTHORISED[q][1]) for q in _AUTHORISED)
+     # ⌗ and the pin is not a rubber stamp: a path the authorising commit did NOT touch fails it,
+     #   checked here on this receipt's own path against the same two commits.
+     and not any(_crossed_at(_HERE_REL, _v[1]) for _v in _AUTHORISED.values()))
 
 print(f"\n{BAR}")
 if fail:

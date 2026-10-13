@@ -25,6 +25,14 @@ RULE.*
     which is the sentence above reaching the instrument that wrote it.*
   ⇒ *** It is rewritten to the property -- a constant bound to a literal sha that RESOLVES and is an
       ANCESTOR of `HEAD` -- which both spellings satisfy and no moving ref does. ***
+  ⛔ ** AND THEN THE OTHER TWO WENT THE SAME WAY, WHICH IS WHY IT IS THE SECTION AND NOT THE GATE. **
+    *`r7267` repaired all three subjects on the trunk, and `Ⓕ②` and `Ⓕ③` failed on the merge for the
+    same reason `Ⓕ①` did: `Ⓕ②` asked for the ABSENCE of `--grep`, so it called the trunk's better
+    selector -- the range's start named by the pre-registration's subject -- the defect; `Ⓕ③` asked
+    for the parity predicate THIS SEAT wrote, which `66` reversed with a reason that holds.*
+  ⇒⇒ *** SO THE RULE IS ABOUT THE WHOLE CLASS: a gate that asserts a REPAIR LANDED has as its subject
+      a thing another seat may legitimately rewrite, so it must assert the repair's PROPERTY and
+      never its form.  The three properties are in `r7268`'s receipt, with a control each. ***
 
 ** ⛭⛭ ① `one site` WAS NEVER MEASURED, AND IT IS RIGHT BY ACCIDENT. **  *Five cuts of the instrument
 on one tree: `65`, `20`, `8`, `7`, `4` receipts.  The number is a function of where the instrument
@@ -376,19 +384,78 @@ gate(f'Ⓕ① ⛔⛭⛭⛭ the REFERENCE-COMMIT snapshot is gone from both recei
      and _MOVING in _CTRL_MOVING and not sha_pins(_CTRL_MOVING)
      and not sha_pins(_CTRL_GONE))
 
-gate('Ⓕ② ⛔ the REVISION SELECTOR snapshot is gone: neither receipt passes `--grep` to `git log` for '
-     'its own commits, because `--grep` searches the BODY and a later commit that merely MENTIONS '
-     'this revision pulled its files in',
-     '--grep=' not in _s21 and '--grep=r' not in _s22)
+# ⛔⛭⛭⛭ AND Ⓕ② STORED A FORM TOO, AND THE TRUNK'S OWN REPAIR BROKE IT.  *It asked that
+#   neither receipt pass `--grep` to `git log` at all -- the shape MY repair took.  `66` repaired
+#   `S22`'s far end and selected the range's START by the pre-registration's SUBJECT, which is better
+#   than a bare sha because it says WHAT the start is; the gate called that the defect.*
+#   ⇒ *** The rule is not `no --grep`.  It is that a selector must not be satisfiable by a later
+#       commit that merely MENTIONS the revision -- so the test is a CENSUS of each selector the two
+#       receipts actually use: unique, and matched in the SUBJECT rather than only in a body. ***
+_GREPPAT = re.compile(r"'--grep=([^']+)'")
 
-gate('Ⓕ③ ⛔ and the OWNERSHIP snapshot is gone: the clause that listed two prefixes now resolves the '
-     'introducing commit\'s revision parity --- the rule itself, which an order can widen without '
-     'turning the gate red',
-     '_RID' in _p03 and 'introducing commit' in _p03
-     and "q.startswith('receipts/P15_CR_cosmology/')" in _p03)
+
+def grep_census(pat):
+    """(matches, matches whose SUBJECT does not carry the pattern) -- the second number is the
+    defect's own signature, a commit that merely MENTIONS the revision in its message body."""
+    _out = subprocess.run(['git', 'log', '--format=%H%x00%s%x00%b%x01', '--grep=' + pat],
+                          cwd=ROOT, capture_output=True, text=True).stdout
+    _tot = _body = 0
+    for _blk in _out.split('\x01'):
+        if _blk.count('\x00') >= 2:
+            _, _subj, _bod = _blk.split('\x00', 2)
+            _tot += 1
+            if pat not in _subj and pat in _bod:
+                _body += 1
+    return _tot, _body
+
+
+_pats = _GREPPAT.findall(_s21) + _GREPPAT.findall(_s22)
+# ⌗ a selector ASSEMBLED AT RUNTIME cannot be censused from the source at all, so it would pass this
+#   gate by being invisible to it.  Both kinds are counted and the non-literal kind must be empty.
+_built = [_p for _p in _pats if '{' in _p or '}' in _p]
+_cens = {_p: grep_census(_p) for _p in _pats if _p not in _built}
+_CTRL_PAT = 'r7266'                      # a revision id MENTIONED in bodies as well as in subjects
+_ctot, _cbody = grep_census(_CTRL_PAT)
+for _p, (_t, _b) in sorted(_cens.items()):
+    print(f'      selector `{_p[:52]}`: {_t} match(es), {_b} body-only')
+gate(f'Ⓕ② ⛔⛭⛭⛭ the REVISION SELECTOR is sound, tested as the RULE and not as the absence of '
+     f'`--grep`: each of the `{len(_cens)}` literal selector(s) the two receipts use matches exactly '
+     f'once and '
+     f'in the SUBJECT, so no later commit that merely mentions the revision can satisfy it --- and '
+     f'the census is CONTROLLED on the same haystack, `{_CTRL_PAT}` giving `{_ctot}` matches of '
+     f'which `{_cbody}` are body-only.  ** This gate first asked for the absence of `--grep` '
+     f'itself, which called the trunk\'s better selector the defect **',
+     all(_t == 1 and _b == 0 for _t, _b in _cens.values()) and not _built
+     and _ctot > 1 and _cbody >= 1)
+
+# ⛔⛭⛭⛭ AND SO DID Ⓕ③, AND HERE THE TRUNK WAS RIGHT AND THIS SEAT WAS WRONG.  *It
+#   asserted the ownership clause had become a REVISION-PARITY rule -- the repair this seat made --
+#   and `66` reversed it with a reason that holds: parity owns every receipt an even revision ever
+#   introduced, which RETIRES the restraint claim instead of bounding it.  **Accepted.**  The
+#   authorised crossings are carried by name instead, and this gate is rewritten to the property
+#   both repairs have to share.*
+#   ⇒ *** The property: the predicate must own the receipt THE GATE IS IN.  `P03`'s own path is
+#       outside both prefixes, this branch MODIFIED it, and `P03` nevertheless reports ZERO
+#       unauthorised crossings --- which cannot be true unless ownership is read by something better
+#       than the prefix pair.  No spelling of either repair appears in this gate. ***
+_P03_PFX = ('receipts/P15_CR_cosmology/', 'receipts/L_probability/S')
+_p03_unowned_by_prefix = not _P03.startswith(_P03_PFX)
+# ⌗ against `origin/main` and not `origin/main...HEAD`, so an edit still in the working tree counts:
+#   on the branch the restraint's own evidence is uncommitted, which is `66`'s point about the far end.
+_p03_touched_here = _P03 in _git('diff', '--name-only', 'origin/main').split('\n')
+_r03 = run(_P03)
+_p03_zero = '0 UNAUTHORISED modified unowned receipt(s)' in _r03.stdout
+gate(f'Ⓕ③ ⛔⛭⛭⛭ and the OWNERSHIP clause is sound, tested as the PROPERTY: the receipt '
+     f'the gate lives in is outside both prefixes (`{_p03_unowned_by_prefix}`) and this branch '
+     f'MODIFIED it (`{_p03_touched_here}`), and it still reports ZERO unauthorised crossings --- '
+     f'which no prefix pair can give.  ** This gate first asserted the parity rule this seat wrote, '
+     f'which `66` reversed for retiring the claim rather than bounding it; accepted, and the '
+     f'property is what both repairs must share **',
+     _p03_unowned_by_prefix and _p03_touched_here and _p03_zero
+     and _r03.returncode == 0)
 
 for _nm, _rel in (('S21', _S21), ('S22', _S22), ('P03', _P03)):
-    _r = run(_rel)
+    _r = _r03 if _rel is _P03 else run(_rel)      # P03 already ran for Ⓕ③; a trace is not a timing
     gate(f'Ⓕ④{_nm} ✔ and `{_nm}` RUNS GREEN after its repair (exit `{_r.returncode}`), asserted by '
          f'running it here rather than by citing it',
          _r.returncode == 0)
