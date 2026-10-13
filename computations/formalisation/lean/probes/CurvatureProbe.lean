@@ -564,6 +564,83 @@ theorem einstein_conf (a : ℝ → ℝ) (p : ℝ × ℝ) (ha : a p.1 ≠ 0) :
   field_simp
   ring
 
+/-! ## `r7289`, Probe F2 — the Hessian and the wave operator, the connection a hypothesis -/
+
+section Wave
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+  {H : Type*} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type*} [TopologicalSpace M] [ChartedSpace H M] [IsManifold I ∞ M]
+
+/-- **G4b.** The Hessian of `f` for a connection `cov`: `Hess f (X, Y) = X(Y f) − (∇_X Y) f`. -/
+noncomputable def hess (cov : CovariantDerivative I E (TangentSpace I : M → Type _)) (f : M → ℝ)
+    (X Y : Π x : M, TangentSpace I x) (x : M) : ℝ :=
+  d% (fun y => d% f y (Y y)) x (X x) - d% f x (cov Y x (X x))
+
+lemma hess_smul_left (cov : CovariantDerivative I E (TangentSpace I : M → Type _)) (f g : M → ℝ)
+    (X Y : Π x : M, TangentSpace I x) (x : M) : hess cov f (g • X) Y x = g x * hess cov f X Y x := by
+  simp only [hess, Pi.smul_apply', map_smul, smul_eq_mul]
+  ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- `Hess f` is `C^∞`-linear in its second slot too. -/
+lemma hess_smul_right (cov : CovariantDerivative I E (TangentSpace I : M → Type _)) {f g : M → ℝ}
+    (hf : CMDiff ∞ f) (hg : CMDiff ∞ g) {X Y : Π x : M, TangentSpace I x} (hY : CMDiff ∞ (T% Y))
+    (x : M) : hess cov f X (g • Y) x = g x * hess cov f X Y x := by
+  have mg : MDiffAt g x := (hg x).mdifferentiableAt (by simp)
+  have mY : MDiffAt (T% Y) x := (hY x).mdifferentiableAt (by simp)
+  have e : (fun y => d% f y ((g • Y) y)) = g * fun y => d% f y (Y y) := by
+    funext y; simp [Pi.smul_apply', map_smul]
+  rw [hess, e, mvfderiv_mul mg (mdiff_df_apply hf hY x),
+    (cov.isCovariantDerivativeOn (s := univ)).leibniz mY mg, hess]
+  simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply,
+    ContinuousLinearMap.smulRight_apply, map_add, map_smul, smul_eq_mul]
+  ring
+
+end Wave
+
+/-- **G4b.** The wave operator over a fibre: the `g`-trace of a Hessian. -/
+noncomputable abbrev box {V : Type*} [AddCommGroup V] [Module ℝ V] [FiniteDimensional ℝ V]
+    (Hs : V →ₗ[ℝ] V →ₗ[ℝ] ℝ) (g : LinearMap.BilinForm ℝ V) (hg : g.Nondegenerate) : ℝ := trG Hs g hg
+
+/-- The Hessian of `f` for `covConf a` at `p`, on constant fields, as a bilinear form. -/
+noncomputable def hessConf (a : ℝ → ℝ) (f : ℝ × ℝ → ℝ) (p : ℝ × ℝ) :
+    (ℝ × ℝ) →ₗ[ℝ] (ℝ × ℝ) →ₗ[ℝ] ℝ :=
+  LinearMap.mk₂ ℝ (fun u v => fderiv ℝ (fderiv ℝ f) p u v - fderiv ℝ f p (Gam a p v u))
+    (fun _ _ _ => by simp; ring) (fun _ _ _ => by simp; ring)
+    (fun _ _ _ => by simp [Gam_add]; ring) (fun _ _ _ => by simp [Gam_smul]; ring)
+
+set_option backward.isDefEq.respectTransparency false in
+/-- `hessConf` IS the Hessian of `f` for `covConf a`, on constant fields. -/
+theorem hessConf_eq (a : ℝ → ℝ) (f : ℝ × ℝ → ℝ) (p u v : ℝ × ℝ) (hf : ContDiff ℝ 2 f) :
+    hessConf a f p u v = hess (covConf a) f (fun _ => u) (fun _ => v) p := by
+  have h1 : DifferentiableAt ℝ (fderiv ℝ f) p :=
+    (hf.fderiv_right (m := 1) (by norm_num)).differentiable (by norm_num) p
+  simp only [hess, mvfderiv_eq_fderiv]
+  show _ = fderiv ℝ (fun y => fderiv ℝ f y v) p u - fderiv ℝ f p (covConf a (fun _ => v) p u)
+  rw [fderiv_clm_apply h1 (differentiableAt_const v), covConf_apply]
+  simp [hessConf]
+
+/-- **F2, the instance.** On `a(η)²(−dη² + dx²)`, `□ f = a⁻² (−f_ηη + f_xx)`: the connection terms cancel. -/
+theorem box_conf (a : ℝ → ℝ) (f : ℝ × ℝ → ℝ) (p : ℝ × ℝ) (ha : a p.1 ≠ 0) :
+    box (hessConf a f p) (gB a p) (gB_nondeg a p ha)
+      = (-(fderiv ℝ (fderiv ℝ f) p (1, 0) (1, 0)) + fderiv ℝ (fderiv ℝ f) p (0, 1) (0, 1))
+        / a p.1 ^ 2 := by
+  rw [box, trG_eq_sum _ _ _ (Module.Basis.finTwoProd ℝ), Fin.sum_univ_two, dual_conf a p ha,
+    dual_conf a p ha]
+  simp only [hessConf, LinearMap.mk₂_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+    Module.Basis.finTwoProd_zero, Module.Basis.finTwoProd_one, Gam_apply, minkForm_apply]
+  have hm : ∀ (c : ℝ) (w : ℝ × ℝ), fderiv ℝ (fderiv ℝ f) p (c • w) = c • fderiv ℝ (fderiv ℝ f) p w :=
+    fun c w => map_smul _ c w
+  rw [show ((-1 / a p.1 ^ 2, 0) : ℝ × ℝ) = (-1 / a p.1 ^ 2) • ((1 : ℝ), (0 : ℝ)) by simp,
+    show ((0, 1 / a p.1 ^ 2) : ℝ × ℝ) = (1 / a p.1 ^ 2) • ((0 : ℝ), (1 : ℝ)) by simp, hm, hm]
+  have hl : ∀ c : ℝ, fderiv ℝ f p (c, 0) = c * fderiv ℝ f p (1, 0) := fun c => by
+    rw [show ((c, 0) : ℝ × ℝ) = c • ((1 : ℝ), (0 : ℝ)) by simp, map_smul, smul_eq_mul]
+  simp
+  rw [hl (phi' a p * (-1 / a p.1 ^ 2)), hl (phi' a p * (a p.1 ^ 2)⁻¹)]
+  field_simp
+  ring
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -578,3 +655,7 @@ end ShadowProbe
 #print axioms ShadowProbe.scal_conf
 #print axioms ShadowProbe.trG_eq_sum
 #print axioms ShadowProbe.einstein_conf
+#print axioms ShadowProbe.hess_smul_left
+#print axioms ShadowProbe.hess_smul_right
+#print axioms ShadowProbe.hessConf_eq
+#print axioms ShadowProbe.box_conf
