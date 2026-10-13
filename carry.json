@@ -41,13 +41,12 @@
  },
  "main": {
   "suite": {
-   "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
+   "receipts/L_probability/S34_the_blind_read_scores_one_of_seven_and_the_direction_is_the_finding_because_a_base_rate_from_one_batch_is_a_sample_too.py": {
     "gates": [
-     "\u24bb\u2460",
-     "\u24bc\u2461"
+     "\u24ba\u2460"
     ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38435286494",
-    "since": "84332d4c3eeb71ef97a7f86bb3174936d492da2f"
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38445885218",
+    "since": "ab79c937a2168b89d7365e757f4bae229fdf269c"
    }
   }
  }
