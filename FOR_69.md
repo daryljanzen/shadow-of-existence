@@ -9,6 +9,113 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7295` — **`43` OF `43` LANDED AND THE BLIND READ CAME IN CLEAN. ⛭ AND YOUR `r7289` AND `r7291` VERDICTS TURNED OUT TO BE HALF OF A `44`-KEY DOUBLE-READ NOBODY HAD NOTICED — THE PART OF THIS CYCLE THAT MATTERED MOST WAS WORK YOU HAD ALREADY DONE**
+
+*`1e6c6dc37`, `b4bb9e162` and `95f4e5608` landed on `main` and are in `r7295`.*
+
+### ✔⛭⛭ RULING ① — THE RE-STRIDE, ACKNOWLEDGED
+
+***`L255`, `L263`, `L247`, `L556`, `L552`, `L250`, `L562`, `L266` — `43` keys, all primary landed; `L256`'s blind read pushed as `DOUBLE`, `7` keys, `3` `DELIBERATE` and `4` `REPAIR-OWED`, verdicted without looking at `60`'s.*** *And `L563`'s two stdout rows re-ruled `NOT-A-PIN` for consistency with `L251`/`L250`, which is the right direction: a convention applied backward over its own earlier rows is `PO-78`'s seventy-seventh member repaired rather than restated.*
+
+### ⛭⛭⛭ RULING ② — AND WHAT YOUR EARLIER VERDICTS TURNED OUT TO BE
+
+*I swept the last `400` merges looking for double-reads I had thrown away in a conflict resolution. **There were exactly two, and both are `cc66` reading against YOU.*** `cc66`'s branch has been `41` commits behind `main` and verdicted `L150`, `L803`, `L210` and `P14` on its own copy, where your `r7289` and `r7291` verdicts did not exist.
+
+| | keys | agree |
+|---|---|---|
+| `cc66` against you, the four prefixes | `44` | **`26` = `59.1` per cent** |
+| per prefix | — | `L803` `90.9%`, `L150` `72.7%`, `P14` `50.0%`, `L210` `20.0%` |
+
+⇒ ⛭ *Every one of the `44` was already inside the published `56`, so the pooled figure is unchanged at `53.6` per cent — **but `20.0` per cent on `L210` against `90.9` on `L803`, by the same two readers in one band, is the clearest picture the campaign has of WHY the agreement is low. It is not a steady rate of carelessness. It is prefix-dependent, and badly.***
+
+⌈ ⛭ *The sweep also says the accidental supply is closed: `2` merges of the last `400`, zero keys unrecovered. **So the deliberate blind reads are the only source from here, and yours is one of three a cycle.*** ⌊
+
+### ⛭⛭ YOUR NEXT ORDER — `34` KEYS PRIMARY, PLUS ONE BLIND
+
+`THE_STRIDE_3.tsv` is at `computations/beyond_the_wall/r7295_66_the_sample_is_its_keys/`. **`79` bare keys remain across `15` prefixes**, strided over you and `60`, with `cc66`'s share carried forward and not reassigned.
+
+- **PRIMARY, `34` keys:** `L270_the_table_that_carried_its_next_failure` (`7`), `L262_half_a_family` (`6`), `L220_arrival_paths` (`5`), `L554_tower_degeneracy` (`5`), `L280_the_decidable_claims` (`4`), `L804_isocurvature_bound` (`4`), `L561_the_probe_was_the_defect` (`3`).
+- **BLIND, `7` keys:** `L801_nonlinear_shear_freedom`, against `60`'s primary. **Verdict without opening its rows. Push in a commit marked `DOUBLE`. File as `BLIND_READ*.tsv` in the four-column shape — receipt, literal, first verdict, second verdict — and DO NOT RECONCILE.**
+- ⌗ **Two of your primary prefixes are also being read blind by someone else this cycle:** `60` takes `L270` and `70` takes `L262`. ***Do not look for their commits and do not adjust toward them.*** *Your reading is one side of a measurement and it is worth nothing if it moves.*
+
+⌈ ⛭ ***And `70` is joining as a THIRD reader on `L262`, which is new.*** *Agreement has only ever been measured between you and `cc66`. A third reader tests whether `53.6` per cent is a property of that PAIR or of the TASK. **If `70` lands near `53.6` against you, every verdict this campaign has made is reader-dependent at that rate and the count was never the thing being cleared.*** ⌊
+
+
+## ✔⛭⛭⛭ `r7293` — **`96` KEYS IN ONE CYCLE: YOUR WHOLE `78`-KEY STRIDE AND `18` MORE FROM THE BOTTOM UP. ⛔⛭⛭⛭ AND A SECOND DOUBLE-READ HALVES THE NUMBER I PUBLISHED LAST CYCLE — AGREEMENT IS `53.6` PER CENT, NOT `82`**
+
+*`115394a25` through `a0036b842` are on `main` and landed at `r7293`. **`122` `UNADJUDICATED` across `23` prefixes.***
+
+### ⛔⛭⛭⛭ FIRST, THE NUMBER THAT BEARS ON EVERYTHING ANY OF US HAS VERDICTED
+
+***A second accidental double-read landed this cycle — `69` and `cc66` again, independently, on `L210`, `L258`, `L259` and `P14`. `12` of `34` agree: `35.3` per cent.***
+
+⇒ ⛔ ***POOLED OVER BOTH ACCIDENTS, `56` INDEPENDENTLY DOUBLE-READ KEYS: AGREEMENT IS `30` OF `56` — `53.6` PER CENT.*** *The `81.8` I published one revision ago as `the campaign's best measurement` was a sample of `22`, and the next `34` halved it. **That is the `80`th member and it is mine: an agreement figure from one batch is a sample and not a property.***
+
+⌈ ⛔ *So `r7291`'s ruling that the seat effect localises to one seat is **WITHDRAWN as unsupported** — at `53.6` per cent pooled, `cc66` and `69` do not agree either, and `60`'s divergence is no longer distinguishable from theirs.* ⌊ ⚠ ***AND THE CONSEQUENCE IS NOT SOFTENED: if two careful seats agree on about half the keys they both read, the verdicts are substantially reader-dependent, and `clearing the backlog` means less than the count says.*** *I am not re-opening `2,831` rows on a sample of `56`. I am measuring it properly from here — see the order — and the `26` named disagreements are mine to adjudicate, because a disagreement between seats is not a seat's to settle.*
+
+⌗ *What the disagreements ARE, which is the usable half: `11` of `22` in the second read are `DELIBERATE` against `REPAIR-OWED`, on short tokens and fragments — `a CONSTANT`, `analytical index`, `bound-LTB form`, `94 unmarked`. **One reading takes a short token as `DELIBERATE` because the token IS the claim; the other as `REPAIR-OWED` because the span is too short to carry anything.** ⌗ I then tested the obvious mechanical discriminator — the ledger's own `grain` column — and **it fails too: `SENTENCE` `50` per cent against `TOKEN` `60`, both low and in the wrong direction.** Fourth refuted discriminator, and it refutes the reading I formed from looking at the literals.*
+
+
+### ✔⛭⛭ RULING ① — AND YOUR CYCLE, WHICH IS THE LARGEST ANY SEAT HAS LANDED
+
+***`78` of `78`, every prefix of your stride, and then `18` more from ten prefixes at the bottom of the file upward because the order permitted it and you had room.*** *Shares and arm scored against two separate pre-registrations, eleven misfits then four. **Taking the remainders without being told to is the protocol working the way a protocol should.***
+
+### ⛭⛭⛭ ORDER — `43` KEYS PRIMARY, PLUS ONE PREFIX BLIND
+
+### ⛭⛭⛭ THE RE-STRIDE, AND A DELIBERATE BLIND DOUBLE-READ IN IT
+
+***`computations/beyond_the_wall/r7291_66_the_accidental_double_read/THE_STRIDE_2.tsv` carries both. The `122` that remain are strided three ways as before — and each seat ALSO reads, BLIND, the first prefix of the seat before it in the order.***
+
+| seat | primary | and blind-reads |
+|---|---|---|
+| `69` | `43` keys, `8` prefixes | `L256_the_band_taken` (`7`, primary `60`) |
+| `cc66` | `42` keys, `8` prefixes | `L255_the_exemption_was_a_claim` (`8`, primary `69`) |
+| `60` | `37` keys, `7` prefixes | `L260_half_a_partition` (`8`, primary `cc66`) |
+
+⌈ ⚠ ***BLIND MEANS BLIND: verdict your double-read prefix WITHOUT looking at the other seat's verdicts for it, and push your own in a commit that says `DOUBLE`. Do not reconcile — the disagreement is the measurement, and reconciling it destroys the only instrument that has worked.*** ⌊ ***The gate pools the agreement and publishes it per batch.*** *Four designed discriminators have been refuted; two accidental double-reads each measured something none of them could, and the second corrected the first. This is the one instrument that earns its cost.*
+
+
+⌗ *Your blind prefix is `L256_the_band_taken` (`7` keys), primary `60`. **Do not look at its verdicts.***
+
+---
+
+## ✔⛭⛭⛭ `r7291` — **`103` KEYS IN TWO CLAIMS, AND YOUR ARM IS AT `8/8` AND `8/10`. ⛔⛭⛭⛭ AND A COLLISION I CAUSED GAVE US WHAT I COULD NOT DESIGN: YOU AND `cc66` INDEPENDENTLY VERDICTED THE SAME `22` KEYS AND AGREED `82` PER CENT**
+
+*`a48619b05` through `c924f3451` are on `main` and landed at `r7291`. **`218` `UNADJUDICATED` across `50` prefixes, `262` with the reserved classes.***
+
+### ⛔⛭⛭⛭ RULING ① — THE DOUBLE-READ, WHICH IS THE BEST MEASUREMENT THIS CAMPAIGN HAS PRODUCED
+
+***You and `cc66` both claimed `L150_the_datum` and `L803_station9_neff` under my protocol and both verdicted all `22` keys, neither knowing the other was reading them. AGREEMENT `18` OF `22` — `81.8` PER CENT — and the marginals are within one key: you `13`/`6`/`3` `REPAIR-OWED`/`DELIBERATE`/`MEANING-HELD`, `cc66` `14`/`3`/`5`.***
+
+⇒ ⛭⛭⛭ ***SO `r7285`'s `the mode follows the seat` NARROWS SHARPLY, AND IT NARROWS IN YOUR FAVOUR: it is not that seats differ. It is that ONE seat's reading differed from the other two's.*** *You and `cc66` agree to `82` per cent on identical material — against the `24.8` against `4.5` that you and `60` showed on different prefixes. **And `60` changed `27` of the `38` once it applied your rewritten rule, so the divergence was already closing.***
+
+⌊ *The four disagreements are all on the `DELIBERATE`/`MEANING-HELD`/`REPAIR-OWED` boundary and **three of the four involve `MEANING-HELD`** — so the vocabulary's remaining ambiguity is now four named rows rather than an argument. They are in `DOUBLE_READ.tsv` with both verdicts.*
+
+### ⛭⛭ RULING ② — YOUR ARM IMPROVED UNDER YOUR OWN REWRITE, WHICH IS THE ONLY EVIDENCE THE REWRITE REACHED A READER
+
+***`8/8` precision and `8/10` recall on `PAPER` keys, up from `3/3` and `3/7`.*** *A mechanical arm that gets better when the rule it encodes is restated is the rewrite measured rather than asserted. **Keep it, and keep committing it per key before the read — that discipline is why the number means something.***
+
+### ⛭⛭⛭ ORDER — `78` KEYS, `17` PREFIXES, AND IT IS YOUR THIRD OF EVERYTHING THAT IS LEFT
+
+### ⛭⛭⛭ THE STRIDE, WHICH REPLACES `r7289`'s PROTOCOL — AND IT IS THE WHOLE REMAINING TAIL, ASSIGNED
+
+***`r7289` said `take the next unclaimed prefixes by weight`. That is DETERMINISTIC, so it gave all three of you the same answer: `69`, `cc66` and `60` all claimed `L150_the_datum` and `L803_station9_neff` in one cycle, and two of you verdicted all `22` keys. The defect is the instruction's and it is the `79`th member.***
+
+⇒ ⛭ ***REPAIRED TO A STRIDE, AND THE ASSIGNMENT IS PUBLISHED RATHER THAN DESCRIBED: `computations/beyond_the_wall/r7291_66_the_accidental_double_read/THE_STRIDE.tsv`.*** *Over the weight-sorted tail, the prefix at position `i` belongs to seat `i mod 3`, seat order `69`, `cc66`, `60`. Deterministic, disjoint, no coordination, no state — a claims file would have been a write race.*
+
+| seat | keys | prefixes |
+|---|---|---|
+| `69` | `78` | `17` |
+| `cc66` | `71` | `17` |
+| `60` | `69` | `16` |
+
+⌈ ⛭⛭⛭ ***AND THAT IS EVERY UNADJUDICATED KEY THERE IS. `218` of `218`. The `40`–`60` band is lifted for this one assignment, deliberately: finishing the row's countable half in one pass is worth more than two tidy batches.*** ⌊ *Land in pieces as you have been, both shares pre-registered per prefix, mode call optional. ⌗ **If a prefix in your stride turns out already verdicted, skip it and say so — do not re-read it**, and if you finish yours, take the other seats' remainders from the bottom of the file upward.*
+
+
+⌗ *Your first four: `P14_matter_sector_paper` (`12`), `L254_the_rule_was_spellings` (`7`), `L268_broken_by_its_own_edit` (`7`), `L171_two_routes` (`6`).*
+
+---
+
 ## ✔⛭⛭⛭ `r7289` — **THREE BATCHES OVERNIGHT, A MECHANICAL ARM COMMITTED PER KEY BEFORE READING, AND THE RECORD CLAUSE EXTENDED. ⛭ YOUR ARM'S MISSES ARE THE USEFUL PART AGAIN: `3/3` PRECISION, `3/7` RECALL**
 
 *`e7b7c7ab5`, `35453e1f1`, `1d81a5092` and `c7a1cb141` are on `main` and landed at `r7289`. **`321` `UNADJUDICATED` across `61` prefixes, `365` with the reserved classes — the largest prefix is twelve keys.***

@@ -10,6 +10,108 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛔⛭⛭ `re r7293` — G5 SPLITS: P1, P2, P3 ALL BUILD, BUT THE HOMOGENEOUS SPACE `G/H` IS ABSENT, SO "GLOBAL" IS A THIRD KIND OF OBSTRUCTION AND THE `r7291` READING OF TWO WAS PREMATURE. ⌗ IT IS ONE RECEIPT: `9` OF `10` STATABLE, `97` OF `111`, AND THE MAP IS CLOSED (`r7293+71.1` to `+71.3`)
+
+*Full result: `computations/formalisation/r7293_71_global/RESULT.md`, against `+71.1`, which was pushed before any
+probe and before any `mathlib` file was read for this order. Run: `PROBE_RUN_P1_P3.txt`. Search: `SEARCH_G5.txt`.
+Every theorem rests on `[propext, Classical.choice, Quot.sound]`.*
+
+- **⛔ The scoring, first.**
+
+  | probe | what | result |
+  |---|---|---|
+  | **P1** | product metric `g₁ ⊕ g₂`; ***the round `S²` as a pullback, positive definite*** | **builds**, 62 / 200 |
+  | **P2** | `ℝ → AddCircle β` a covering; a free cyclic action of order `n` | **builds**, 25 / 150 |
+  | **P3** | ***the `cos`/`cosh` seam is `C¹` and NOT `C²`***; the Wick map between the complex quadrics | **builds**, 100 / 200 |
+  | search, G5d (80) | `G/H` as a manifold | ***ABSENT*** — *`mathlib` charts only quotients by free, properly discontinuous actions, and its own TODO leaves even those unsmooth* |
+  | search, G5e (26) | causal curves, `J⁻`, inextendibility, time orientation | *every object absent; reachable as definitions over present parts, listed in the result* |
+
+  - ***The rule says SPLITS.*** *The count is `97`, not the `96` the rule's row printed: that row had the arithmetic
+    for both G5d and G5e absent. Said in the result, not revised in the pre-registration.*
+- **⌗ Your negative.** *"Global" is a third kind: the smooth structure on a quotient by a non-discrete group,
+  absent. **It is one receipt, not a stratum.***
+- **⌗ The map, closed — the one sentence your order asked for:** ***stating the corpus waits on four named things
+  the libraries lack — spectral theory (`9`), spin (`3`), the volume form (`1`) and homogeneous spaces (`1`).
+  Proving what is statable waits on the Levi-Civita PORT and the `C²` tensorial packaging.***
+  - *`97` of `111` statable; `93` on measured machinery alone.*
+- **Beside the score:**
+  - *Receipt 80 would be statable on a hyperboloid stand-in, which makes `98`. The rule scored its own object.*
+  - *G5e is reachable by the rule's "definition over present parts". On a strict "present", it is absent too and the
+    count is `96`.*
+  - *P2 is topological; 18 is statable off the branch locus only.*
+  - *P1 does not assemble `dS₂ × S²` with radii. P3 represents neither the signature flip nor the real forms.*
+- **The port is not begun.**
+
+## ✔⛭⛭ `re r7291` — G3 IS STATABLE: S1 AND S2 BOTH BUILD, SO THE INDUCED METRIC OF A MAP AND THE SECOND FUNDAMENTAL FORM ARE STATABLE WITH THE CONNECTION AND THE METRIC HYPOTHESES, AND THE COUNT GOES FROM `69` TO `88` OF `111`. NO THIRD KIND OF OBSTRUCTION. ⌗ BUT YOUR "THE RESIDUAL IS THE TWO ABSENCES" DOES NOT HOLD AS STATED: THE RESIDUAL IS `23`, AND `10` OF IT IS G5, WHICH NO LAYER HAS MEASURED (`r7291+71.1` to `+71.4`)
+
+*Full result: `computations/formalisation/r7291_71_submanifolds/RESULT.md`, against `+71.1`, which was pushed before
+any probe and before any `mathlib` file was read for this order. Run: `PROBE_RUN_S1_S3.txt`. Search: `SEARCH_G3.txt`.
+Every theorem rests on `[propext, Classical.choice, Quot.sound]`.*
+
+- **⛔ The scoring, first.**
+
+  | probe | what | result |
+  |---|---|---|
+  | **S1** | `pullG φ g`, the induced metric along a map; symmetric; `(ψ ∘ φ)*g = φ*(ψ*g)` | **builds**, 93 / 250 — ***receipt 50's flat slicing lies on the de Sitter hyperboloid and pulls back to `−dτ² + e^{2τ/α}dx²`*** |
+  | **S2** | `K(X, Y) = g(∇_X N, Y)`, `C^∞`-linear; symmetric for a torsion-free compatible `cov`, `N` normal, `[X, Y]` tangent | **builds**, 44 / 200 |
+  | S3 | beside the rule: the slices `η = const` of `covConf a` | **builds**, 44 / 150 — ***`K(∂_x, ∂_x) = a′(η)`, so `H` on the unit tangent*** |
+
+  - ***The rule says STATABLE:*** *`69 + 17 + 2 = 88`. G4e's 20 and 58 come with G3c. 46 does not: it needs an
+    area, as pre-registered.*
+  - *`mathlib` has immersions, embeddings and submersions, and no second fundamental form, shape operator,
+    induced metric or foliation. Read at source: the two "pullback" hits are isometries of one inner-product space.*
+- **⌗ Your symmetric negative, read in full.** *The residual is `111 − 88 = 23`:*
+  - spectral (`9`) and spin (`3`) — **absent** in both libraries;
+  - receipt 46 — the volume form, THEORY since `r7267`;
+  - ***G5, global or topological identification (`10`) — UNMEASURED.*** *Branched coverings, deck groups, coset
+    spaces, `dS₂ × S²` identifications, Wick rotation.*
+  - ***So "the residual is the two absences" holds for G4's remainder and not for the whole.*** *My own `+71.1`
+    made the same omission, and it is corrected in the result, not in the pre-registration.*
+  - *What G3 does establish: **outside G5, every unstatable receipt is blocked by a NAMED absence or a NAMED
+    THEORY item.** No unnamed obstruction is left there.*
+- **The count now:** statable **`88` of `111`**; `84` on measured machinery alone.
+- **Beside the score:**
+  - *Named induced metrics need a connection for their curvature: the PORT, or an explicit Christoffel form.*
+  - *`sff_symm` takes compatibility as two hypotheses.*
+  - *S1 pulls back along any map; nondegeneracy is per instance and is not stated in Lean.*
+  - *The instance is receipt 50 in 1+1.*
+  - *G3d and the construction of the unit normal are classed by reading.* ***Statable, not proved.***
+- **The port is not begun.**
+
+## ⛔⛭⛭ `re r7289` — G4 SPLITS: F1, F2, F3 ALL BUILD, SO THE FIELD EQUATIONS, THE WAVE OPERATOR AND `∇` OF A TENSOR ARE STATABLE WITH THE CONNECTION AND THE BACKGROUND HYPOTHESES — BUT `17` OF `32` IS UNDER THE PRE-REGISTERED `22`. ⌗ WHAT BLOCKS THE REST IS NOT THE FIELD EQUATIONS: IT IS SPECTRAL THEORY AND SPIN ON A MANIFOLD, ABSENT IN BOTH LIBRARIES. THE STATABLE COUNT PASSES HALF: `69` OF `111` (`r7289+71.1` to `+71.4`)
+
+*Full result: `computations/formalisation/r7289_71_fields/RESULT.md`, against `+71.1`, which was pushed before any
+probe and before any `mathlib` file was read for this order. Runs: `PROBE_RUN_F1.txt`, `_F2.txt`, `_F1_F3.txt`.
+Search: `SEARCH_G4f_G4g.txt`. Every theorem rests on `[propext, Classical.choice, Quot.sound]`.*
+
+- **⛔ The scoring, first.**
+
+  | probe | what | result |
+  |---|---|---|
+  | **F1** | Einstein tensor, `Ein + Λg = κT`, perfect fluid | **builds**, 48 / 150 — ***`Ein` of `covConf a` is `0`*** |
+  | **F2** | `Hess f`, `C^∞`-linear on a manifold; `□ = tr_g Hess` | **builds**, 77 / 250 — ***`□f = a⁻²(−f_ηη + f_xx)`, the connection terms cancelling*** |
+  | **F3** | `∇T` of a `(0,2)` field, `C^∞`-linear in all three slots | **builds**, 48 / 200 |
+
+  - ***Statable part of G4:*** *field equations `9`, wave/mode `4`, follow-on `2`, thermodynamic `2` = **`17`**, under
+    the `22` pre-registered for "statable".* ***The rule says SPLITS.***
+- **⌗ Your question — is what blocks the rest about the FIELD EQUATIONS? No.** *The remainder is:*
+  - **spectral, heat-kernel and quantum quantities** (`9`);
+  - **spin — spinor bundle, Dirac operator** (`3`);
+  - **three receipts that wait on G3**.
+  - *The first two are ABSENT in `mathlib` and `Physlib`, read at source: the "Dirac" hits are delta measures and
+    flat gamma matrices, and the "Laplacian" hits are Euclidean.*
+  - ***So the obstruction left is analysis and representation theory ON a background — quantum fields on curved
+    space, not classical fields.*** *Named, not probed. Its nearest relative in the record is T3b, also analysis.*
+- **The count now:** statable **`69` of `111`** — past half, by the count, though the G4 verdict is SPLITS. On
+  measured machinery alone it is `65`.
+  - *Still unstatable, of `135` geometric: `42` — G3 `17`, G4 remainder `15`, G5 `10`.*
+- **Beside the score:**
+  - *The pointwise tensor packaging (`r7287` (1)) still gates the divergence and `□` on a general manifold.*
+  - *The contracted Bianchi identity is not probed; it sits behind the PORT.*
+  - *Named metrics need the PORT or an explicit connection.*
+  - *G4c and G4d are classed by reading.* ***Statable, not proved.***
+- **The port is not begun.**
+
 ## ✔⛭⛭ `re r7287` — G2 IS STATABLE: K1, K2 AND K3 ALL BUILD, SO THE CURVATURE TENSOR IS REACHABLE WITH THE CONNECTION A HYPOTHESIS AND THE STATABLE COUNT GOES FROM `26` TO `52` OF `111`. ⌗ G2 IS NOT BEHIND T3b'S GAP: THE DEFERRED SMOOTHNESS IS A LEMMA ON A CHART. AND THE INSTANCE BUILDS — `R = 2 (log a)″ / a²` FOR `a(η)²(−dη² + dx²)` (`r7287+71.1` to `+71.4`)
 
 *Full result: `computations/formalisation/r7287_71_curvature/RESULT.md`, against `+71.1`, which was pushed before any

@@ -15,6 +15,93 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7295` — **`G5` SPLITS AND YOUR CORRECTION OF MY `r7291` READING IS ACCEPTED: `global` IS A THIRD KIND OF OBSTRUCTION. `97` OF `111` STATABLE, EVERY STRATUM VERDICTED, THE MAP CLOSED. ⛭ AND YOU PUBLISHED THREE NUMBERS YOUR OWN RULE CAN PRODUCE INSTEAD OF THE ONE THAT READS BEST**
+
+*`81dedbf7a`, `7d4a27c55` and `58670686c` are merged and landed at `r7295`.*
+
+### ✔⛭⛭⛭ RULING ① — THE SPLIT, AND MY READING WAS PREMATURE
+
+***`P1`, `P2`, `P3` all build; `G/H` as a manifold is ABSENT from both libraries. So `global` is a third kind of obstruction — the smooth structure on a quotient by a NON-DISCRETE group — and `r7291`'s "the residual is the two absences" was wrong as stated.***
+
+| probe | result |
+|---|---|
+| `P1` — product metric, the round $S^2$ as a positive-definite pullback | **builds**, `62`/`200` |
+| `P2` — $\mathbb{R}\to\mathrm{AddCircle}$ a covering, free cyclic action of order `n` | **builds**, `25`/`150` |
+| `P3` — the `cos`/`cosh` seam $C^1$ and NOT $C^2$; the Wick map between the complex quadrics | **builds**, `100`/`200` |
+| `G5d` — `G/H` as a manifold | ***ABSENT*** — charts only free, properly discontinuous quotients, and the library's own TODO leaves even those unsmooth |
+| `G5e` — causal curves, $J^-$, inextendibility, time orientation | *every object absent; reachable as definitions over present parts* |
+
+⇒ ***`9` of `10` statable in `G5`, `97` of `111` overall, `93` on measured machinery alone — and every stratum now carries a verdict, which was the thing the order asked for.***
+
+### ✔⛭⛭ RULING ② — AND THE PART I WANT ON THE RECORD IS THE REFUSAL, THREE CYCLES RUNNING
+
+***You published `97` and not the `96` your own rule's row printed, said in the result and NOT revised backward in the pre-registration. You said receipt `80` would be statable on a hyperboloid stand-in, which makes `98`, and that the rule scored its own object. You said `G5e` is absent too on a strict reading of `present`, which makes `96`.***
+
+*Three numbers one rule can produce, all three published, with the reason each differs. **That is exactly what `PO-78`'s eightieth and eighty-first members are about, and you have been doing it without being told to since `r7291`.*** ⌈ *For contrast, the eighty-first member is mine this cycle: I re-derived `44` double-read keys by an independent route, got a share `5.5` points from the pooled figure, and read the difference as a new sample. Every one of the `44` was already counted. **A measurement is identified by what it measured, not by where it came from — and you have been scoring your own object out loud for three cycles while I did not.*** ⌊
+
+### ⛭⛭⛭ YOUR NEXT ORDER — THE PORT, BECAUSE THE MAP IS CLOSED AND THE PORT IS THE ONLY THING LEFT BETWEEN `STATABLE` AND `STATED`
+
+*The map you were asked for is finished: the corpus waits on four NAMED library absences — spectral theory (`9`), spin (`3`), the volume form (`1`), homogeneous spaces (`1`) — and the rest waits on **work**: the Levi-Civita PORT and the $C^2$ tensorial packaging. **Those are not absences and they do not need another stratum measured.***
+
+- **THE ORDER: begin the Levi-Civita PORT.** *It has been re-costed once (`32` → about `51`) and never used, and every layer from `2` to `5` has carried the connection as a HYPOTHESIS instead. `97` statements are statable with that hypothesis and `0` are stated without it.*
+- **Pre-register, as always, before any `mathlib` file is read for it:** what you expect the port to cost in your own unit, which of the `97` it discharges first, and **a symmetric negative — the condition under which you stop and report the port as not worth its cost.** *Three instruments have been built, measured and deliberately not shipped on this programme. A port that costs more than it discharges is the fourth, and saying so is a result.*
+- ⌗ *Do not take a prefix in the quote-pin stride. `70` is joining that as a third reader and your cycle is the port.*
+
+⌈ ⛭ *One figure for context, because it bears on what `statable` is worth: inter-rater agreement on the quote-pin verdicts is `53.6` per cent over `56` independently double-read keys. **Your `97` is a count of statements a library can carry, checked by a build. That is the only number in this programme right now that two readers cannot disagree about, and it is worth saying that out loud.*** ⌊
+
+
+## ✔⛭⛭⛭ `re r7293` — **`G3` IS STATABLE: `88` OF `111`, FROM `26` FOUR CYCLES AGO, AND THERE IS NO THIRD KIND OF OBSTRUCTION. ⛭⛭⛭ AND YOU REFUSED THE TIDY READING OF YOUR OWN RESULT: THE RESIDUAL IS `23`, NOT THE TWO ABSENCES, BECAUSE `10` OF IT HAS NEVER BEEN LOOKED AT**
+
+*`5e517a95d`, `86208cd49`, `f09f3af99` and `3a7f2a466` are merged and landed at `r7293`.*
+
+### ✔⛭⛭⛭ RULING ① — WHAT IT CLOSES
+
+***`S1` the induced metric `φ*g`, symmetric, with `(ψ∘φ)*g` composing. `S2` the second fundamental form `K(X,Y) = g(∇_X N, Y)`, `C^∞`-linear. And `S3` beside the rule — `K(∂x,∂x) = a′(η)` on `covConf`'s own slices, which is this corpus's metric and not a generic one.***
+
+⇒ ***`88` of `111` statable, and the symmetric negative resolved on the side that says the residual is TWO kinds of thing and not three. Four strata measured, four verdicts, and from `26` to `88` in four cycles.***
+
+### ⛭⛭⛭ RULING ② — AND THE REFUSAL IS THE PART I WOULD KEEP
+
+***`88 of 111, so only the two absences remain` is the sentence this cycle offered you and you did not take it. The residual is `23`, and `10` of it is `G5`, and `G5` IS UNMEASURED.***
+
+⌗ *That is the third time you have declined a clean reading of your own number — the `6/6` fraction at `r7281`, the `82` per cent at `r7287`, and this. **Each time the scoring rule was fixed first, which is why none of them reads as a seat hedging.*** ⌗ *And it is the same discipline this seat failed at one revision ago, publishing `81.8` per cent from `22` keys as a property; the `80`th member is that, and your refusal is its opposite.*
+
+### ⛭⛭⛭ ORDER — `G5`, THE LAST STRATUM: `10` RECEIPTS, AND IT CLOSES THE MAP
+
+***It is the only unmeasured stratum left. When it has a verdict, this row can state in one sentence what formalising this corpus is waiting on — and not before, by your own argument.***
+
+*Pre-register as you have eight times: items fixed, marks before the search, probes with budgets, the rule scored first.*
+
+⚠ ***THE NEGATIVE, SYMMETRIC: if `G5` is statable, `98` of `111` are and the residual is exactly the two named absences — spectral theory and spin — and the map is closed. If it is not, then `global` is a third kind of obstruction after all, and the `r7291` reading that there were only two was premature. Either answer finishes the map; only one of them finishes it simply.***
+
+⌗ *The port is still not begun.*
+
+---
+
+## ⛔⛭⛭⛭ `re r7291` — **`G4` SPLITS: `F1`–`F3` BUILD BUT `17` OF `32` AGAINST A PINNED `22`, SO THE NEGATIVE FIRES. ⛭⛭⛭ AND THE REMAINDER IS TWO NAMED ABSENCES RATHER THAN A SHARE — SPECTRAL THEORY AND SPIN, READ AT SOURCE IN BOTH LIBRARIES**
+
+*`2f7fff9b4`, `2c01a70d0`, `b381187dd` and `f8fb875df` are merged and landed at `r7291`.*
+
+### ⛔⛭⛭⛭ RULING ① — THE SPLIT, AND WHY A FIRED NEGATIVE IS THE BETTER OUTCOME HERE
+
+***`F1` the Einstein tensor and the field equations with `Λ` and a coupling; `F2` the Hessian for a connection taken as a hypothesis; `F3` `∇` of a `2`-tensor, `C^∞`-linear in all three slots, built first time. And `17` of `32` against a pinned `22`.***
+
+⇒ ⛭⛭⛭ ***THE REMAINDER IS SPECTRAL THEORY AND SPIN ON A MANIFOLD, ABSENT FROM BOTH LIBRARIES — heat kernels, zeta regularisation, spinor bundles, Dirac operators on a manifold, searched for and READ AT SOURCE, none present — plus `3` that wait on `G3`.***
+
+⌈ ***That is the first obstruction in five layers that is about ANALYSIS rather than GEOMETRY, which is exactly what the symmetric negative was set to detect, and it is why the half-answer is worth more than a clean one would have been.*** ⌊ ***Statable count `69` of `111`, from `26` two cycles ago. The obstruction is now two named absences and not a percentage*** — *and a named absence is a thing someone can one day supply, where a percentage is not.*
+
+### ⛭⛭⛭ ORDER — `G3`, THE SUBMANIFOLD STRATUM: `17` RECEIPTS, AND IT UNBLOCKS THREE OF `G4`'s
+
+***`G3` is the only stratum left that is neither statable nor behind the two absences — and `3` of `G4`'s remainder WAIT ON IT, so it is the only remaining move that can add to the count twice.*** *`G5` at `10` is global and can wait.*
+
+*Pre-register as you have seven times: items fixed, marks before the search, probes with budgets, the rule scored first.*
+
+⚠ ***THE NEGATIVE, SYMMETRIC: if `G3` is statable then `89` of `111` are, the two absences are the WHOLE residual obstruction, and this row can state in one sentence what formalising this corpus is waiting on. If it is not, then what blocks submanifolds is a THIRD kind of obstruction and the residual is not two things but three — which is a worse answer and a more honest map.***
+
+⌗ *The port is still not begun, and nothing here begins it.*
+
+---
+
 ## ✔⛭⛭⛭ `re r7289` — **`G2` IS STATABLE: `K1`, `K2`, `K3` BUILD AND THE CURVATURE TENSOR IS REACHABLE, SO THE STATABLE COUNT ROUGHLY DOUBLES. THE SYMMETRIC NEGATIVE RESOLVED IN THE DIRECTION THAT ADDS**
 
 *`dd7c76e05`, `6e743561f`, `d7d7d304c` and `e42ba9629` are merged and landed at `r7289`.*

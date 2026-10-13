@@ -7,6 +7,494 @@ kind: FORWARD
 
 ---
 
+## re r7295 — STRIDE 3 DONE: 34 of 34 primary landed, 0 remaining; `L801` read blind and pushed as `DOUBLE`
+
+**LANDED 34 of 34 · REMAINING 0 in my primary · ledger `UNADJUDICATED` 45 · `UNADJUDICATED-PINNED` 44 · together 89.**
+
+- The verdicts are at `df64eb930`. `check_quote_pins` exits 0, and all 422 `MEANING-HELD` rows hold.
+- No primary prefix had already been verdicted, so none was skipped.
+- I did not look for `60`'s commits on `L270` or `70`'s on `L262`.
+
+**The 34 keys:** 16 `REPAIR-OWED`, 12 `DELIBERATE`, 5 `MEANING-HELD`, 1 `NOT-A-PIN`.
+
+**The blind read of `L801_nonlinear_shear_freedom`:** 7 keys, 3 `REPAIR-OWED`, 3 `MEANING-HELD` and 1 `DELIBERATE`.
+
+- It is in `computations/beyond_the_wall/r7295_66_the_sample_is_its_keys/BLIND_READ_69_L801.tsv`, at `c5bf7229f`, a commit marked `DOUBLE`.
+- The file has the four columns the order asks for: receipt, literal, my verdict, and an empty column for `60`'s. My reasons are in `BLIND_READ_69_L801_reasons.tsv` beside it.
+- I opened none of `60`'s rows. I checked only *whether* each row was still open, and displayed no value.
+- It is not reconciled and not in the ledger.
+
+**Against the pre-registration (`98909e970`):**
+
+| Prefix | Keys | `REPAIR-OWED` (band) | `MEANING-HELD` (band) | Other |
+|---|---|---|---|---|
+| `L270` | 7 | 4, 57% (15–85) ✔ | 0 ✔ | 3 `DELIBERATE` |
+| `L262` | 6 | 2, 33% (15–85) ✔ | 0 ✔ | 4 `DELIBERATE` |
+| `L220` | 5 | 4, 80% (20–80) ✔ | 0 ✔ | 1 `NOT-A-PIN` |
+| `L554` | 5 | 1, 20% (25–75) ✘ low | 3, 60% (0–50) ✘ high | 1 `DELIBERATE` |
+| `L280` | 4 | 2, 50% (0–75) ✔ | 0 ✔ | 2 `DELIBERATE` |
+| `L804` | 4 | 1, 25% (25–75) ✔ | 2, 50% (0–50) ✔ | 1 `DELIBERATE` |
+| `L561` | 3 | 2, 67% (0–67) ✔ | 0 ✔ | 1 `DELIBERATE` |
+| **All 34** | | **16, 47% (35–60) ✔** | **5, 15% (3–20) ✔** | |
+| `L801` blind | 7 | 3, 43% (40–85) ✔ | 3, 43% (15–60) ✔ | 1 `DELIBERATE` |
+
+- **Both totals landed in band, and 6 of 7 prefixes hit both bands.**
+- **The one miss is `L554`.** Its P10 sentences are whole clauses with definite noun-phrase subjects ("the degeneracy is …", "the constant is …"). See misfit 1: that is a reading choice another seat may not make.
+
+**Arm v3 on PAPER (15 keys: 8 primary, 7 blind):** precision 4 of 5, recall 4 of 6.
+
+- **Both predictions are missed this time** (precision ≥ 85%, recall ≥ 70%).
+- **The false positive** is `L801`'s "first-class constrained system evolves consistently …". The span is clipped after its article, so it opens on a lower-case modifier the arm reads as a non-subject. It is a whole clause, `MEANING-HELD`.
+- **The two misses are both the reader's class, not list gaps:**
+  - `L554`'s run from "a degeneracy growing as $n^2$" drops two of its three conditions (ⓔ).
+  - `L801`'s "sharpen this beyond the Bianchi count" has a demonstrative *object*. The arm tests subjects only.
+- ⇒ **Across seven batches PAPER precision is 34 of 37.** The arm is reliable when it flags a span. It cannot see dropped conditions or pronoun objects, and those are where a reader is still needed.
+
+**Where the vocabulary did not fit, key by key:**
+
+1. **Definite noun-phrase subjects. This is the ruling most likely to split readers, so I am flagging it before the pooled number arrives.**
+   - I read ⓶'s list (pronoun, demonstrative, quantifier) as closed. So "the constant is the propagating-component count rather than a universal", "the degeneracy is $2(n-1)(n+3)$" (`L554`) and "the propagating sector is ghost-free to all orders" (`L801`) name their subjects and are `MEANING-HELD`.
+   - I ruled "the same algebra" (`L560`) dangling because "same" is anaphoric on its face.
+   - A reader who treats every definite subject as a back-reference will call all of these `REPAIR-OWED`. **If agreement on `L801` comes in low, check this line first.**
+2. **A negation outside the span.** `L801`'s "a closed-form nonlinear solution" is pinned to support "P11 does NOT claim one", and the "not" sits outside the span. The pin would pass unchanged if P11 started claiming one. I ruled it `REPAIR-OWED` ⓔ. It is the sharpest dropped-condition case so far, because the dropped word reverses the claim.
+3. **A phrase found only in an error path.** `L280`'s 'reading list' is claimed for decidable_claims.py's head. The head breaks the phrase across a line, so the only occurrence the pin finds is in a FAIL message ("an empty reading list is …"). The pin passes on an error path.
+4. **Variable names in another receipt whose counts moved.** `L561`'s '_CLAIMS' and '_verbatim' in `L207/W1` are receipt code, but their counts moved (6 → 5, 3 → 5). No unmoved line is quoted, so the record clause does not apply. I ruled them `REPAIR-OWED`. Their claim is already carried by 'ARITHMETIC OF THE OLD PROBE', which is `DELIBERATE` here as it was on `L560`.
+5. **Pins where an unchanged line is the claim itself.**
+   - `L262`'s phase-3 guard line and comment: the check claims the guard is UNTOUCHED, and an unchanged line is exactly that. I ruled them `DELIBERATE` even though they are live code.
+   - `L270`'s 'RESTATES THE RULE IT GUARDS': the check claims the finding is recorded IN the gate. `DELIBERATE` for the same reason.
+   - This is the converse of the live-code proxy rule, and it is the cleanest boundary I have for it: **live code is a proxy when the claim is about behaviour, and is the claim itself when the claim is about the text.**
+
+**Next:** my primary is empty and my blind read is in. I am not taking other seats' prefixes, because the blind reads depend on each seat reading its own.
+
+---
+
+## re r7295 — TAKING `THE_STRIDE_3`: 7 prefixes, 34 keys, and `L801_nonlinear_shear_freedom` blind. Pre-registration, committed before any key is read
+
+All 7 primary prefixes are still fully unadjudicated, 34 of 34, so none is skipped.
+
+**Blind read of `L801_nonlinear_shear_freedom`.** I listed its rows with the verdict column cut off, and checked only *whether* each row is still open, without displaying any value. Seven are open, which matches the order.
+
+- My verdicts go to `BLIND_READ_69_L801.tsv` in the four-column shape, in a commit marked `DOUBLE`. They will not be reconciled and will not go into the ledger.
+- The reasons go in a sibling file, so the four-column file stays exactly as the pooler expects.
+
+**Not looking.** I will not look for `60`'s commits on `L270` or `70`'s on `L262`, and I will not adjust toward them.
+
+| Prefix | Keys | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|---|
+| `L270_the_table_that_carried_its_next_failure` | 7 S (code tokens, two glyphs, three sentences) | 15–85% | 0–15% |
+| `L262_half_a_family` | 6 S (code tokens, a glyph, a numeral) | 15–85% | 0–17% |
+| `L220_arrival_paths` | 5: 2 P (one a regex), 3 S | 20–80% (and `NOT-A-PIN` ≥ 1) | 0–40% |
+| `L554_tower_degeneracy` | 5: 4 Ps, 1 Ss | 25–75% | 0–50% |
+| `L280_the_decidable_claims` | 4 S | 0–75% | 0–25% |
+| `L804_isocurvature_bound` | 4 P (one a display equation) | 25–75% | 0–50% |
+| `L561_the_probe_was_the_defect` | 3 S | 0–67% | 0 |
+| **All 34** | | **35–60%** | **3–20%** |
+| `L801` (blind) | 7 Ps | 40–85% | 15–60% |
+
+**Arm v3 hashes** (sha1 of receipt, tab, literal-json, first 8 hex; `D` = predicted dangling):
+
+- Primary, 20 sentence keys: `cb5d0232:D 479cb249:D 691718a5:D 19fb9c4e:- 0903e3d0:D c7bd1407:D ba83bfc1:- 1a2c6d34:D 4500dc65:D bf699d33:D d3feb15e:D c1b3fba2:D 0b4af7f5:- cf0ec51c:- ea8ed690:- 4b913a4f:- 667d93e1:D a05fce64:- 9f408c24:- 4ab904f1:D`
+- Blind, 8 sentence rows, one of them not open: `edd10dba:- c6899fc5:- 4d317054:D 462bbe59:D 70b720fe:D 113efdde:- 7f6bab85:- 8ed2dd1c:-`
+
+**Arm predictions:** on PAPER sentences (7 primary, 7 blind), precision ≥ 85% and recall ≥ 70%.
+
+---
+
+## re r7293 — RE-STRIDE DONE: 43 of 43 primary landed, 0 remaining; `L256` read blind and pushed as `DOUBLE`
+
+**LANDED 43 of 43 · REMAINING 0 in my primary · ledger `UNADJUDICATED` 79 · `UNADJUDICATED-PINNED` 44 · together 123.**
+
+- The verdicts are at `1e6c6dc37`. `check_quote_pins` exits 0, and all 417 `MEANING-HELD` rows hold.
+- No prefix in my primary had already been verdicted, so none was skipped.
+
+**The 43 keys:** 22 `REPAIR-OWED`, 11 `DELIBERATE`, 7 `NOT-A-PIN`, 3 `MEANING-HELD`.
+
+**The blind read of `L256_the_band_taken`:** 7 keys, 3 `DELIBERATE` and 4 `REPAIR-OWED`.
+
+- It is in `computations/beyond_the_wall/r7291_66_the_accidental_double_read/DOUBLE_69_L256.tsv`, at `b4bb9e162`, a commit marked `DOUBLE`.
+- I verdicted it without displaying the ledger's verdict column for that prefix.
+- I did not reconcile it, and I did not write it to the ledger.
+- The reason for each key is in the file, so the pooled comparison can see *why* the two reads differ as well as *whether* they do.
+
+**Against the pre-registration (`f6ecf594f`):**
+
+| Prefix | Keys | `REPAIR-OWED` (band) | `MEANING-HELD` (band) | Other |
+|---|---|---|---|---|
+| `L255` | 8 | 8, 100% (0–75) ✘ high | 0 ✔ | — |
+| `L263` | 7 | 4, 57% (15–70) ✔ | 0 (0–30) ✔ | 3 `DELIBERATE` |
+| `L247` | 6 | 4, 67% (0–60) ✘ high | 0 ✔ | 2 `DELIBERATE` |
+| `L556` | 6 | 2, 33% (15–70) ✔ | 0 ✔ | 4 `DELIBERATE` |
+| `L552` | 5 | 2, 40% (0–60) ✔ | 3, 60% (0–40) ✘ high | — |
+| `L250` | 4 | 0 (0–75) ✔ | 0 ✔ | 4 `NOT-A-PIN` |
+| `L562` | 4 | 0 (0–50) ✔; `NOT-A-PIN` 3 of 4 (≥50%) ✔ | 0 ✔ | 1 `DELIBERATE` |
+| `L266` | 3 | 2, 67% (0–67) ✔ | 0 ✔ | 1 `DELIBERATE` |
+| **All 43** | | **22, 51% (25–50) ✘ one key over** | **3, 7% (0–12) ✔** | |
+| `L256` blind | 7 | 4, 57% (15–60) ✔ | 0 ✔ | 3 `DELIBERATE` |
+
+- **Every `REPAIR-OWED` miss went high, and for one reason:** a live gate's text pinned as a stand-in for its behaviour.
+  - All 8 of `L255`'s keys are that shape.
+  - So are 4 of `L247`'s, which also form one co-occurrence of four tokens in THE_REGISTER.md.
+- **The `MEANING-HELD` miss is `L552`.** Its keys quote PROTECTED_OPEN.md's PO-4 row, and three of the five are whole sentences that name their subjects.
+
+**Arm v3 on PAPER (3 keys):** recall 2 of 2, precision 2 of 3.
+
+- The false positive is an all-capitals sentence, "THE RECEIPT WAS MORE HONEST THAN THE PAPER", which the tagger reads with no finite verb.
+- It is a test fixture and `DELIBERATE`.
+- ⇒ **Across six batches PAPER precision is 30 of 32.** Both misses are inputs the arm was not built for: a regex and an all-capitals sentence.
+- **On SOURCE the arm missed 3 of `L552`'s 5 register sentences**: "this row is ONE FACTOR SHORT", "the occupations differ…", and one whole clause it called fine. Those are mid-span back-references again, the class that still needs a reader.
+
+**Where the vocabulary did not fit, key by key:**
+
+1. **I re-ruled two of my own rows for consistency, and it is a correction, not a new reading.**
+   - Under r7291, `L563`'s 'REFUSING TO APPLY WITHOUT --band' and 'dry run' were `DELIBERATE`.
+   - Both are asserted against the tool's stdout after running it, which is the same shape as `L251`'s and now `L250`'s rows, all `NOT-A-PIN`.
+   - Both rows are now `NOT-A-PIN`, with the reason appended. That moves r7291's tally to 34 `DELIBERATE` and 5 `NOT-A-PIN`.
+2. **A live tool's text, redundant with a behaviour test in a SIBLING check. This needs a ruling.**
+   - My refinement says a live tool's message is `DELIBERATE` only when the *same* check tests the behaviour.
+   - `L255`'s ⓸ᵇ ('STALE EXEMPTION', 'subprocess.run') is behaviour-tested by the seeds in ⓹. `L256`'s ⓸ (the `UPSTREAM..HEAD` f-string) is behaviour-tested in ⓸ᶜ¹. `L556`'s 'def is_data_row' is behaviour-tested in the next check.
+   - I ruled all of them `REPAIR-OWED`, with **deletion** as the repair: the text conjunct adds only rename fragility.
+   - If sibling-check tests should count, those five rows become `DELIBERATE`.
+3. **The record clause never reaches a register row.**
+   - PROTECTED_OPEN.md's PO-4 row is one line of tens of thousands of characters, edited on many commits, so no quotation of it has a "line that never moved".
+   - Every quote from it therefore goes through the subject rule. That is how `L552` came out 3 `MEANING-HELD` and 2 `REPAIR-OWED`.
+   - The same holds for OWED.md and THE_REGISTER.md. I treated `THE_MATHEMATICS_REACH.md` the same way for consistency with `L265`.
+4. **A demonstrative that points to the row it sits in.** "this row is ONE FACTOR SHORT" (`L552`): I applied ⓶'s list literally and ruled it dangling. Last cycle I ruled the authorial "We" (`P08`) not anaphoric. "this row" is deictic in the same way, so the two rulings pull against each other.
+5. **A row-scoped claim checked file-wide.** `L263`'s 'STRUCK r3148' is claimed for item 609's row but asserted anywhere in OWED.md, where its count went 0 → 3 → 1. `L247`'s four register tokens have the same shape.
+6. **Absence pins at an immutable blob.** `L263`'s OWED-609 regex reads the "owed" wording at `3eb48621` and requires it gone at HEAD. I ruled it `DELIBERATE`, on the `L237/G50` precedent, as I did `P17`'s last cycle.
+
+**Next:** nothing is left in my primary.
+
+- The re-stride order does not say to take the other seats' remainders bottom-up again.
+- The blind design depends on the other seats reading their own primaries, so I am not touching `cc66`'s or `60`'s prefixes unless ordered.
+
+---
+
+## re r7293 — TAKING THE RE-STRIDE: 8 prefixes, 43 keys, and `L256_the_band_taken` blind. Pre-registration, committed before any key is read
+
+All 8 primary prefixes in `THE_STRIDE_2.tsv` (seat `69`) are still fully unadjudicated, 43 of 43, so none is skipped.
+
+**Blind double-read of `L256`.** I listed its seven keys with the verdict column cut off, and I have not looked at `60`'s verdicts for them.
+- My verdicts will go into the double-read record in their own commit marked `DOUBLE`, not into the ledger column.
+- If `60` has already verdicted the prefix, this keeps the double-read blind. Otherwise it keeps the two reads from colliding.
+
+**Bands per prefix.** Last cycle showed that small SOURCE prefixes don't sit in the middle: they are near 0% when they quote records that never moved, and near 100% when they pin live-tool code or co-occurrences. So the bands are wide on purpose, and the total is where the prediction has teeth.
+
+| Prefix | Keys | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|---|
+| `L255_the_exemption_was_a_claim` | 8 S (code-shaped tokens: `subprocess.run`, `TimeoutExpired`, `MARK = re.compile`) | 0–75% | 0 |
+| `L263_the_station_audit` | 7: 2 Ps, 1 Pt, 2 Ss, 2 St (two OPEN regexes) | 15–70% | 0–30% |
+| `L247_the_build_already_stands` | 6 S | 0–60% | 0 |
+| `L556_registry_from_rows` | 6 S (`index_rows` again) | 15–70% | 0 |
+| `L552_weyl_and_torus` | 5 Ss | 0–60% | 0–40% |
+| `L250_the_break_reports_itself` | 4 Ss | 0–75% | 0–25% |
+| `L562_the_pin_test` | 4 Ss, three of them output-parse regexes | 0–50% (and `NOT-A-PIN` ≥ 50%) | 0 |
+| `L266_station_C_three_readings_of_the_dial` | 3 S | 0–67% | 0 |
+| **All 43** | | **25–50%** | **0–12%** |
+| `L256_the_band_taken` (blind) | 7 S | 15–60% | 0 |
+
+**Arm v3 hashes** (sha1 of receipt, tab, literal-json, first 8 hex; `D` = predicted dangling): 27 primary sentence keys `0b50d46a:D eed5b352:D 681af6b0:D 7c165598:D af620fb1:D adf98d3d:- 6f395850:D fd6debf8:D fdccd6ed:D 3460d3aa:D 93ea1d6b:D 4e7ff6b2:D c4e32efc:D 28e0b000:- 30544875:- c7f2f0cf:- f92c36dd:D 73f9c370:- 99ba66a1:- 87bbab7d:- 0783348f:D 36d7d5d2:D 20078c6a:D 36ea2018:- e89c6f9f:- 58008fa4:D 911b1bfd:D`; and 5 blind ones `7da1fcd1:- d9ae0034:- c53d088c:D 8f71bca2:- 16f66d04:D`.
+
+**Arm predictions:** the batch has only 2 PAPER sentence keys, so it cannot test PAPER precision. On SOURCE, a `D` predicts nothing where the line never moved.
+
+---
+
+## re r7291 (remainders) — 18 of 18 landed from the bottom of `THE_STRIDE.tsv` (lines 36–50, ten prefixes, `cc66`'s and `60`'s); 0 remaining in the block
+
+**LANDED 18 of 18 · ledger `UNADJUDICATED` 122 · `UNADJUDICATED-PINNED` 44 · together 166.** `check_quote_pins` exits 0, and all 414 `MEANING-HELD` rows hold. None of the ten had been landed by its own seat on `main` or on any pushed branch, so none was skipped. **To `cc66` and `60`:** these ten are done, so don't start them: `P07_CR_framework`, `L283`, `L282`, `L265`, `L239`, `L261`, `L259`, `P17_geometric_core_paper`, `L818`, `L811`.
+
+**The 18 keys:** 9 `DELIBERATE`, 7 `REPAIR-OWED`, 1 `MEANING-HELD`, 1 `NOT-A-PIN`.
+
+**Against the pre-registration (`fa3b5fd4d`):**
+
+- **Totals: both landed in band.** `REPAIR-OWED` was 7 of 18, or 39% (band 35–60%). `MEANING-HELD` was 1 of 18, or 6% (band 0–12%).
+- **Per prefix, `REPAIR-OWED` hit its band 10 of 10, and `MEANING-HELD` 9 of 10.** The miss is `L265`: I had set the single-key prefixes at `MEANING-HELD` 0, and its one key, "a field that reaches nothing can still deliver a theorem", is a whole clause held at `427babd3b`.
+
+**Arm v3 on PAPER:** recall 3 of 3, precision 3 of 4.
+
+- The false positive is not prose. It is `P17`'s absence regex, `rho_r/rho_m\s*\n?%?\s*the peak SPACING`, which is `DELIBERATE`: the withdrawn wording stood at the immutable blob `0fcafd6c` and is required gone at HEAD.
+- The arm has no regex test. That is an input class it was never built for, so this is a list gap rather than a reading miss.
+- ⇒ **Across five batches PAPER precision is 28 of 29, and that one miss is not a sentence.**
+
+**New misfits:**
+
+1. **The record clause exempts a quotation whose claim does not hold.**
+   - `L261/A1` ⓷ claims `L256/B1` and `L251/N1` "now assert the gate's BEHAVIOUR".
+   - At the quoted lines, both actually assert that the phrase "THE BAND IS A PROPOSAL, NOT A PREVENTION" is in the gate's SOURCE. That is the text-form check `A1` itself calls the weaker one.
+   - `L259/D1` has the same shape: it reads `B1`'s *comment* "DIRECTIONAL and unfitted" as `B1` asserting the inequality.
+   - The record clause makes both `DELIBERATE`, because the lines never moved. **The clause answers "is the quotation stable", not "does the quoted record do what the check says it does".**
+   - I applied it as written and flag it here for a ruling.
+2. **A dead ALT arm with no history.** `L259`'s `'directional claim' in now.lower()` matches nothing in `B1`, case-folded. No commit ever introduced it, so the arm has never been able to decide (ⓒ, `REPAIR-OWED`).
+3. **A vacuous `.get` default under an absence assertion.** `P07/I7` asserts that "conserved charge" is absent from `BODIES.get('P12', '')`. If P12 is never loaded, the absence passes. `len(BODIES)` is printed but not asserted (ⓓ, `REPAIR-OWED`).
+4. **The same co-occurrence, keyed twice.** `L811` pins 'L-805' and 'unclosed inversion' in kills/PO-7.md exactly as `L805` does. I ruled both the same way, so one repair to kills/PO-7.md's closure sentence should discharge four rows.
+
+**Next, unless you order otherwise:** the block above these, lines 26–35, taken bottom-up and pre-registered before reading.
+
+---
+
+## re r7291 — MY STRIDE IS DONE: 78 of 78 landed, 0 remaining. Now taking the other seats' remainders from the bottom of the file, pre-registered below
+
+**LANDED 78 of 78 · REMAINING 0 in my stride · ledger `UNADJUDICATED` 140 · `UNADJUDICATED-PINNED` 44 · together 184.** The verdicts landed at `c4e07cd7e` (32 keys) and `ffe7112c4` (46 keys). `check_quote_pins` exits 0, and all 413 `MEANING-HELD` rows hold. No prefix in my stride had already been verdicted, so none was skipped.
+
+**The 78 keys:** 36 `DELIBERATE`, 34 `REPAIR-OWED`, 5 `MEANING-HELD`, 3 `NOT-A-PIN`.
+
+**Against the pre-registration (`115394a25`):**
+
+- **Totals: both shares landed inside their bands.** `REPAIR-OWED` came to 34 of 78, or 44% (band 30–50%). `MEANING-HELD` came to 5 of 78, or 6% (band 3–12%).
+- **Per prefix, `MEANING-HELD` landed inside its band on all 17 prefixes. `REPAIR-OWED` landed inside on only 9 of 17.** The table lists every prefix:
+
+| Prefix | Keys | `REPAIR-OWED` (band) | `MEANING-HELD` (band) | Other |
+|---|---|---|---|---|
+| `P14_matter_sector_paper` | 12 | 5, 41% (50–85) ✘ low | 3, 25% (5–30) ✔ | 4 `DELIBERATE` |
+| `L254` | 7 | 1, 14% (10–45) ✔ | 0 ✔ | 6 `DELIBERATE` |
+| `L268` | 7 | 1, 14% (10–45) ✔ | 0 ✔ | 6 `DELIBERATE` |
+| `L171` | 6 | 1, 17% (10–45) ✔ | 0 ✔ | 5 `DELIBERATE` |
+| `L267` | 6 | 4, 67% (10–45) ✘ high | 0 ✔ | 2 `DELIBERATE` |
+| `L559` | 6 | 0, 0% (10–45) ✘ low | 0 ✔ | 6 `DELIBERATE` |
+| `L536` | 5 | 1, 20% (30–70) ✘ low | 1, 20% (0–25) ✔ | 3 `NOT-A-PIN` |
+| `L563` | 5 | 3, 60% (10–45) ✘ high | 0 ✔ | 2 `DELIBERATE` |
+| `L279` | 4 | 3, 75% (10–45) ✘ high | 0 ✔ | 1 `DELIBERATE` |
+| `L560` | 4 | 3, 75% (40–80) ✔ | 0 ✔ | 1 `DELIBERATE` |
+| `L805` | 4 | 4, 100% (30–75) ✘ high | 0 ✔ | — |
+| `L558` | 3 | 1, 33% (10–45) ✔ | 0 ✔ | 2 `DELIBERATE` |
+| `L815` | 3 | 3, 100% (0–70) ✘ high | 0 ✔ | — |
+| `L248` | 2 | 2, 100% (0–100) ✔ | 0 ✔ | — |
+| `P08_slicing_operator` | 2 | 1, 50% (0–100) ✔ | 1, 50% (0–50) ✔ | — |
+| `L273` | 1 | 0 (either) ✔ | 0 ✔ | 1 `DELIBERATE` |
+| `L555` | 1 | 1 (either) ✔ | 0 ✔ | — |
+
+⇒ **The `REPAIR-OWED` misses all go the same way.** Small SOURCE prefixes don't land in the middle. They sit near 0% when the pins quote records that never moved, and near 100% when the pins are live-tool code or token co-occurrences.
+
+- `L805`, `L815` and `L279` each turned out to be one co-occurrence check, made of two or three tokens that each only have to appear somewhere in a paper or register.
+- I set a smooth 10–45% band for the SOURCE prefixes, and that was the wrong shape. **For a SOURCE prefix the predictor is how many distinct checks it has, not how many keys.**
+
+**Arm v3, scored against the 45 hashes committed before reading:**
+
+- **PAPER (18 keys): precision 11 of 11 and recall 11 of 13 (85%). Both predictions are met** (precision ≥ 85%, recall ≥ 70%).
+  - Both misses are in P14, and both are back-references in the middle of the span: "construction of this paper they are equivalent vantages" (the subject is "they") and "the root-exchange $\sigma$ is the hop from one to the next" (the object is "one … the next").
+  - These are the reader's class again, not list gaps.
+- **SOURCE (27 keys): the arm flagged 22. 17 of those are `DELIBERATE` never-moved lines, as predicted, and 5 are `REPAIR-OWED`. It missed no `REPAIR-OWED` key.**
+- ⇒ **Across four batches the arm's PAPER precision is 25 of 25.** Its recall over the last two batches is 14 of 19, and every miss in the latest batch is a mid-span back-reference.
+
+**Where the vocabulary did not fit, key by key:**
+
+1. **Live instrument code is not a record. I applied this in nine more places, so it should go into ⓹.**
+   - The cases are `L267` (4 keys of `gate_sweep.py`), `L563` (`'CORRECTED c54.230'`, `'fixable + both'`, `'REPORTED AND NOT WRITTEN'`), `L558` (`'PROTECTED_OPEN'` in seven gates' sources) and `L555` (`'index_rows'` in `check_receipts.py`).
+   - All are `REPAIR-OWED` ⓐ: code, a comment or a printed heading in a LIVE tool, standing for behaviour.
+   - **The refinement I held to:** a live tool's printed message is `DELIBERATE` when the same check tests the behaviour directly. That covers `L563`'s refusal message beside `returncode == 1`, and `L273`'s `'WORD-BOUNDED'` beside a word-bounded count that differs from the substring count. It is ⓐ when the message is the only evidence, as with `'REPORTED AND NOT WRITTEN'`.
+2. **Co-occurrence across a whole paper or register.** `L279` ('L-265', 'Atiyah sequence', 'splitting' in the arc), `L805` (two P15 fragments; 'L-805' and 'unclosed inversion' in kills/PO-7.md) and `L815` ('pressureless' ×8, 'scale-free' ×19, 'imprints nothing' in P15).
+   - I ruled every member `REPAIR-OWED`, including a bare name like 'L-805' that would be `DELIBERATE` on its own: half of a co-occurrence does not carry the claim.
+3. **"The same X" as a subject.** `L560`'s "the same algebra closes for the Lovelock theories" refers back to an algebra named two clauses earlier.
+   - I ruled it dangling under ⓶. ⓶'s list (it, this, they, these, all three, both, each) doesn't name it; **"the same X" should be added or ruled out.**
+4. **The authorial "We".** `P08`'s "We claim no construction here." I ruled it `MEANING-HELD` (held at `58bc3c53d`) because "We" points back to nothing in the text. ⓶ lists pronouns without separating this case.
+5. **A clipped head that still names its subject.**
+   - "boundary} is a result rather than a gap" (`L536`) loses its article and the `\emph{` opener. I ruled it passes ⓵ and ⓶ → `MEANING-HELD` at `cddfe757d`.
+   - ".gitattributes"'s "nion merge cannot detect a duplicate ID" (`L558`) is the same shape, and is `DELIBERATE` because the line never moved.
+6. **A conjunct already contained in a widening that exists.** `L248`'s "is not assumed here" sits in the same `and` as the `EXTENDED` span "w is not assumed here~\rcpt{…}, though it does in fact". It is `REPAIR-OWED`, but its repair is **deletion**, not widening. The vocabulary has no word for that.
+7. **A SOURCE key that the receipt reads from stdout.** `L563`'s 'dry run' is asserted in the tool's stdout, but the pin is keyed against the source, where it occurs twice. The docstring copy alone would keep the pin green after the print is gone. I ruled it `DELIBERATE` and noted the mismatch.
+8. **Structure regexes keyed `PAPER`/`TOKEN`.** `L536`'s three heading and label locators are `NOT-A-PIN`, the same ruling as `L258`.
+9. **Template keys.** `L268`'s `"PARENT = '{}'"` and `"~~{}~~"` are `.format` templates recorded as literals. They are `DELIBERATE` as the receipt's own code, but the instrument is pinning a template rather than any text a reader sees.
+10. **A cross-target key.** One of `P14`'s `MEANING-HELD` keys is keyed SOURCE ("A topological term's coefficient is of the third kind"), but the sentence it reads is in P17.
+11. **A vacuous check.** `L559`'s check iterates `for _ in (0,)`: a one-pass loop that is a guard in form only.
+
+**Taking remainders, bottom of `THE_STRIDE.tsv` upward.**
+
+- No other seat's branch shows stride progress, so I start at line 50 and go up.
+- These are the next ten prefixes, 18 keys, and none of them is read yet:
+  - `P07_CR_framework` (1 Pt), `L283` (1 Ss), `L282` (1 St), `L265` (1 Ss), `L239` (1 Ss) — either way each, `MEANING-HELD` 0.
+  - `L261` (1 Ss, 1 St) and `L259` (1 Ss, 1 St): `REPAIR-OWED` 0–100%, `MEANING-HELD` 0–50%.
+  - `P17_geometric_core_paper` (3 Ps, one of them a regex): `REPAIR-OWED` 35–100%, `MEANING-HELD` 0–35%.
+  - `L818` (1 Ps, 1 Ss, 1 St): `REPAIR-OWED` 30–100%, `MEANING-HELD` 0–35%.
+  - `L811` (3 St, one a regex; 'L-805' and 'unclosed inversion' again): `REPAIR-OWED` 30–70%.
+  - **All 18: `REPAIR-OWED` 35–60%, `MEANING-HELD` 0–12%.**
+- **Arm v3 hashes for the 10 sentence keys:** `b613a0e7:D 1c30c75c:- 61768cb5:- 075c7f05:D 2429663c:D 233c0a5c:D 5ee183a0:D 4abed725:D 2c85e874:D 74355507:D`
+
+If a seat lands one of these first, I skip it and say so.
+
+---
+
+## re r7291 — TAKING MY STRIDE: 17 prefixes, 78 keys, as `THE_STRIDE.tsv` assigns them. Pre-registration, committed before any key is read
+
+All 17 prefixes in my third of the stride are still fully unadjudicated (78 of 78), so none is skipped.
+
+**Bands per prefix.** P = paper, S = source; s = sentence, t = token. The bands lean on what three batches have shown: paper sentences run high, never-moved register and receipt lines go `DELIBERATE`, live code and untethered tokens go `REPAIR-OWED`.
+
+| Prefix | Keys | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|---|
+| `P14_matter_sector_paper` | 12: 8 Ps, 1 Pt, 3 Ss | 50–85% | 5–30% |
+| `L536_frontier_placement` | 5: 2 Ps, 3 Pt | 30–70% | 0–25% |
+| `L560_pins_into_moving_prose` | 4: 3 Ps, 1 Ss | 40–80% | 0–30% |
+| `L805_freezing_reproduced` | 4: 2 Ps, 2 St | 30–75% | 0–30% |
+| `L815_seam_phase_derived` | 3 Pt | 0–70% | 0 |
+| `P08_slicing_operator` | 2 Ps | 0–100% | 0–50% |
+| `L248_the_strike_broke_its_readers` | 2: 1 Ps, 1 St | 0–100% | 0–50% |
+| `L254`, `L268`, `L171`, `L267`, `L559`, `L563`, `L279`, `L558` | 3–7 each, all SOURCE | 10–45% each | 0–15% |
+| `L273_the_cartan_bake`, `L555_merge_duplication` | 1 St each | either | 0 |
+| **All 78** | | **30–50%** | **3–12%** |
+
+**Mechanical arm v3, per key, hashes only** (45 sentence keys). This is v2 with the two list gaps from the last batch closed: a capitalised demonstrative opening, and "Of the …" opening. Refit on that batch it recovers 2 of its 3 PAPER misses, which is a fit, not evidence:
+
+`e4cff3fa:D 0a7ae82a:D 50e57d45:D d80cf3e7:D 74fe3bc0:D 364facf1:D 9628ad6d:D 4f26f0e0:- 29a90a7f:D f8bb4500:D 1d5038ac:- 052e4631:D 1be16ade:D 71cbe464:D 317da963:D c9f6e494:D afd24767:D 18ba2271:- 76eda6dd:D d7de0a87:D 55ada146:D cde4c816:D c8dc8d95:D 6c7be08b:D eadce776:D b9622d17:D a49d63dd:D a81669d6:D 3701be5f:D 9d0205a0:D 2d85c8f0:D 8fc4f5ca:D dfcdf40f:- 456366e3:D 1f54736b:- b7060294:D 7b9537ab:- 0d75cc0c:- f7906a73:- c73c1fc7:D ed2dc13b:- 2670c643:- 3ffea0e7:- 68f101d1:- b5341663:D`
+
+**Arm predictions:** on PAPER sentences, precision ≥ 85% and recall ≥ 70%. On SOURCE, a `D` predicts nothing where the line never moved.
+
+---
+
+## re r7289 (second claim) — TOOK `L202_the_seam`, `L213_external_constraint`, `L218_reader_package`, `L237_gates_check_declarations`, `L251_the_numbering_collides`, `L253_the_seed_that_stopped_seeding`; 51 of 51 landed, 0 remaining in the claim
+
+**LANDED: 51 of 51** (the first three at `14701d4be`, the rest in this commit) **· `UNADJUDICATED` 218; with `-PINNED` (44), 262.** `check_quote_pins` exits 0, and all 408 `MEANING-HELD` rows hold.
+
+**Against the pre-registration (`8106c8df5`):**
+
+| Prefix | `REPAIR-OWED` | `MEANING-HELD` | Other |
+|---|---|---|---|
+| `L202_the_seam` (9) | 6, 67% (50–85) ✔ | 2, 22% (5–30) ✔ | 1 `DELIBERATE` |
+| `L213` (9) | 2, 22% (25–60) ✘, low | 1, 11% ✔ | 6 `DELIBERATE` |
+| `L218` (9) | 3, 33% (10–45) ✔ | 0 ✔ | 6 `DELIBERATE` |
+| `L237` (8) | 3, 38% (15–50) ✔ | 0 ✔ | 4 `DELIBERATE`, 1 `NOT-A-PIN` |
+| `L251` (8) | 2, 25% (15–50) ✔ | 0 ✔ | 2 `DELIBERATE`, 4 `NOT-A-PIN` |
+| `L253` (8) | 2, 25% (10–45) ✔ | 0 ✔ | 6 `DELIBERATE` |
+| All 51 | 18, 35% | 3 | 25 `DELIBERATE`, 5 `NOT-A-PIN` |
+
+**The v2 arm on PAPER: precision 3 of 3 ✔, recall 3 of 6, which misses its ≥60% band.**
+
+- **Two misses are list gaps, mechanical:** "That driving is computed below" and "Of the four, three are run…". In both, the demonstrative or quantifier is CAPITALISED at the head of the span, and the arm tests its pronoun list only on a lowercase opening.
+- **One is the tagger,** which found a verb in the verbless list "no timelike direction, no clock, no duration".
+- ⇒ **Across three batches the arm's PAPER precision is 14 of 14,** and its recall misses are all of two kinds: back-references and list gaps. Neither needs judgement; a reader still has to supply the narrower-than-claim cases.
+
+**Where the vocabulary did not fit, key by key:**
+
+- **Assertions against an instrument's OUTPUT, keyed as PAPER.** `L251`'s "SHALLOW", "r3108" and "commit" are tested against `why`, the string `quotepin.pinned()` returns, and "r2674" against a set built from `git log`. The operator keyed them PAPER because the call names a `.tex` file, but they test no document's wording, so they are `NOT-A-PIN`.
+- **A receipt's code is a record; a live instrument's code is not.** I held this line across the batch.
+  - `L253`'s quotations of D1's repaired seed (`_struck = …`, `assert _twin != _row`) and of M1's annotations are `DELIBERATE`: other receipts' own text, never altered.
+  - `L251`'s `if OTHER_HALF is None:` and quotepin's `commit {sha[:12]}` are `REPAIR-OWED` ⓐ: a branch line and an f-string in LIVE tools, standing for behaviour a refactor would keep.
+  - ⇒ **That is the clause I flagged unwritten at the last reply, now applied in four places.** It belongs in the header's ⓹ beside the docstring sentence.
+- **Pins that read immutable blobs.** `L237/G50`'s P16 masthead sentence is read at `01c1a672` and asserted ABSENT at HEAD. That is `DELIBERATE`, the strongest form there is.
+- **Labels not tested.** `L218/R2`'s check claims "the contribution" is "never expanded in the row, COMPANION_SPEC, or the plans" and asserts only that the phrase occurs in the arc. It is routed as a receipt defect.
+- **The same ALT shapes again.** `L237/G1` has a superstring arm ("a gate can check a DECLARATION" over "check a DECLARATION") and a three-way OR whose "scanner" arm cannot fail, so neither of the other arms ever decides.
+
+**Next by weight, unclaimed:** `P14_matter_sector_paper` (12, left to 60); then `L255`, `L260` (8 each); `L254`, `L256`, `L263`, `L268`, `L270`, `L801` (7 each).
+
+---
+
+## re r7289 (second claim) — CLAIMED: `L202_the_seam` (9), `L213_external_constraint` (9), `L218_reader_package` (9), `L237_gates_check_declarations` (8), `L251_the_numbering_collides` (8), `L253_the_seed_that_stopped_seeding` (8) — 51 keys. Pre-registration, committed before any key is read
+
+These are the next by weight after `P14_matter_sector_paper`, which is still left to 60. No other seat's recent reply names any of them.
+
+**Profile:**
+
+| Prefix | Keys | What its pins read |
+|---|---|---|
+| `L202` | 7 PAPER sentence, 1 PAPER token, 1 SOURCE token | P15, `PROTECTED_OPEN.md` |
+| `L213` | 2 PAPER sentence, 1 PAPER token, 5 SOURCE sentence, 1 SOURCE token | `THE_BASE_RATE.md`, P13 |
+| `L218` | 5 SOURCE sentence, 4 SOURCE token | `PROTECTED_OPEN`, `THE_LIVE_ARC`, `COMPANION_SPEC`, `THE_DISPATCH`, `THE_REMAINING_WORK`, a transcript |
+| `L237` | 1 PAPER sentence, 3 SOURCE sentence, 4 SOURCE token | `INDEX.md`, `THE_ARSENAL.md`, the receipt runner and two gates |
+| `L251` | 4 PAPER token, 3 SOURCE sentence, 1 SOURCE token | P15, P17, `check_revision_collisions.py`, `quotepin.py` |
+| `L253` | 5 SOURCE sentence, 3 SOURCE token | `PROTECTED_OPEN`, `check_protected_dupes.py`, other receipts |
+
+**Bands.** From the last batch: paper prose runs high; SOURCE keys on never-moved lines run `DELIBERATE`, except live code and names that are not tied to one line.
+
+| Prefix | `REPAIR-OWED` | `MEANING-HELD` |
+|---|---|---|
+| `L202` | 50–85% | 5–30% |
+| `L213` | 25–60% | 0–25% |
+| `L218` | 10–45% | 0–15% |
+| `L237` | 15–50% | 0–15% |
+| `L251` | 15–50% | 0–10% |
+| `L253` | 10–45% | 0–15% |
+
+**Arm v2, per key, hashes only** (31 sentence keys): `bcd78170:- b561dd3e:- 07a97411:- 2bdaf733:D 755eafed:D b179a34c:- 4b3d603d:D 85065495:D 41356ac1:D 29500b95:D adb9f59c:- c295b3c4:- 02cf6c1b:D aafa1041:D d5ec7041:D 0bfaeb6a:- f8373f10:D f11366e9:D 0bd08860:D 4aa5fc24:- 29655c46:D cda0768a:- ff896b56:- ff9a4d74:- 4a4ebe12:D 0f9e5fb6:- f85135c0:- dac09b78:- cbd624aa:D dfd74285:D 9164a3b5:D`
+
+**Arm predictions:**
+
+- **On PAPER sentence keys:** precision ≥ 80%, recall ≥ 60%.
+- **On SOURCE,** a `D` predicts nothing where the line never moved.
+
+---
+
+## re r7289 — TOOK `L150_the_datum`, `L803_station9_neff`, `L210_entry_points`, `L258_the_pin_and_the_thing_that_moves`, `L272_the_survey_that_was_a_memory`; 52 of 52 landed, 0 remaining in the claim
+
+**LANDED: 52 of 52** (`L150` at `a48619b05`, the other four in this commit) **· `UNADJUDICATED` 269; with `-PINNED` (44), 313.** `check_quote_pins` exits 0, and all 405 `MEANING-HELD` rows hold.
+
+**Shares against the pre-registration (`8d73a8a34`):**
+
+| Prefix | `REPAIR-OWED` | `MEANING-HELD` | Other |
+|---|---|---|---|
+| `L150` (11) | 6, 55% (50–85) ✔ | 3, 27% (5–30) ✔ | 2 `DELIBERATE` |
+| `L803` (11) | 7, 64% (20–55) ✘, high | 0 ✔ | 4 `DELIBERATE` |
+| `L210` (10) | 1, 10% (15–55) ✘, low | 0 ✔ | 7 `DELIBERATE`, 2 `ENCODING-OK` |
+| `L258` (10) | 1, 10% (10–45) ✔ | 0 ✔ | 6 `DELIBERATE`, 3 `NOT-A-PIN` |
+| `L272` (10) | 4, 40% (10–45) ✔ | 0 ✔ | 6 `DELIBERATE` |
+| All 52 | 19, 37% | 3 | 25 `DELIBERATE`, 2 `ENCODING-OK`, 3 `NOT-A-PIN` |
+
+- **`L803` came back high** because its four-way ALT on the right-handed neutrino (`\\nu_R` / `nu_R` / `nu_{R}` / `right-handed`) is four `REPAIR-OWED` arms by itself: one superstring, one name that a cannot-fail partner outvotes, one dead, one that cannot fail.
+- **`L210` came back low** because nine of its ten keys sit on register lines that were written once and never altered.
+
+**The v2 arm, scored over all 29 sentence keys:**
+
+| Target | Arm `D` | Arm – |
+|---|---|---|
+| PAPER (13) | 8, all `REPAIR-OWED` | 5: 3 `MEANING-HELD`, 2 `REPAIR-OWED` |
+| SOURCE (16) | 13: 12 `DELIBERATE`, 1 `NOT-A-PIN` | 3 |
+
+⇒ **On PAPER: precision 8 of 8, recall 8 of 10. Both predictions held (≥80%, ≥60%).** Both misses are ⓶ back-references in the middle or at the end of the span:
+
+- "There is no early-universe parameter among them" (the pronoun is last)
+- "there is no such start and no such amplitude" ("such" points back)
+
+A first-word test cannot see either. ⇒ **On SOURCE, as predicted, a `D` predicts nothing:** 12 of the 13 flagged keys are fragments of lines that never moved, and the record clause takes them.
+
+**Where the vocabulary did not fit, key by key:**
+
+- **One key, two reads, two verdicts.** `L272` "bifurcation-theoretic sense" is asserted against `field_survey.py`, where the line never moved (`DELIBERATE`), AND against P07's body, where it is a dangling fragment (`REPAIR-OWED`). One key carries one verdict, so it takes the stricter one. The ledger cannot record that one of its reads is sound.
+- **Live code against a receipt's own code.** `L272`'s `return 1` is a token in a LIVE instrument standing for behaviour; a `sys.exit(1)` refactor would red it. So the line exemption does not reach it, and it is `REPAIR-OWED` ⓐ. `L258`'s `MINE =` is in another receipt's code, which does not move, and is `DELIBERATE`. ⇒ **The record clause should say a live instrument's CODE is not a record even where its annotations are.** I have applied it that way and not written it into the header, since the header's live-instrument sentence names only docstrings.
+- **A name tied to no line.** `L272` "L-264" occurs nine times in a growing document. The line exemption needs a LINE, and a literal matching nine has none, so it is `REPAIR-OWED` (cannot fail). Contrast `L210` "a CONSTANT", whose two occurrences are both original lines.
+- **Regexes, three ways in one batch:**
+  - parse patterns over a cache (`(\\d+) pass, (\\d+) fail`, `TREE-DIGEST:…`): `NOT-A-PIN`
+  - a structure pattern (`\\section\{…\}\\label\{sec:frontiers\}`): `NOT-A-PIN`
+  - a prose pattern ("characteristic crossing with no …obstruction…curvature"): `REPAIR-OWED`, a dangling appositive
+  
+  ⇒ **The split is what the pattern matches: format, structure or wording.**
+- **Case-folded ALT pairs are `ENCODING-OK`, not record quotations.** `L210`'s "94 UNMARKED" / "94 unmarked", the second read through `arc.lower()`.
+
+**Claimable next by weight** (I take nothing until my next turn): `P14_matter_sector_paper` (12, left to 60), `L202_the_seam` (9), `L213_external_constraint` (9), `L218_reader_package` (9).
+
+---
+
+## re r7289 — CLAIMED: `L150_the_datum` (11), `L803_station9_neff` (11), `L210_entry_points` (10), `L258_the_pin_and_the_thing_that_moves` (10), `L272_the_survey_that_was_a_memory` (10) — 52 keys. Pre-registration, committed before any key is read
+
+**Why these five.** They are the next by weight after `P14_matter_sector_paper` (12). I am leaving P14 to 60, which named it as its next prefix in `FOR_66_FROM_60.md`, so the collision rule never has to fire.
+
+**Profile** (target, tier and flags from the baseline; no literal read):
+
+| Prefix | Keys | What its pins read |
+|---|---|---|
+| `L150` | 9 PAPER sentence, 2 SOURCE sentence | P15, P5, P17, `STATE_programme.md`, `THE_ASSUMPTIONS_RETREATED_UPWARD.md` |
+| `L803` | 2 PAPER sentence, 6 PAPER token (4 ALT), 3 SOURCE token | P15, P13, P14, `bbn_network.py` |
+| `L210` | 1 PAPER sentence, 1 PAPER token, 4 SOURCE sentence, 4 SOURCE token (2 ALT) | `ENTRY_POINT_REGISTER.md`, `THE_LIVE_ARC.md` |
+| `L258` | 1 PAPER sentence, 1 PAPER token, 5 SOURCE sentence, 3 SOURCE token | other receipts, `RUN_RESULT.txt`, P5 |
+| `L272` | 5 SOURCE sentence (2 ALT), 5 SOURCE token (1 ALT) | `THE_MATHEMATICS_REACH.md`, `field_survey.py` |
+
+**Bands** (the mode call is optional now; I give it anyway):
+
+| Prefix | `REPAIR-OWED` | `MEANING-HELD` | Mode |
+|---|---|---|---|
+| `L150` | 50–85% | 5–30% | HIGH |
+| `L803` | 20–55% | 0–20% | |
+| `L210` | 15–55% | 0–15% | |
+| `L258` | 10–45% | 0–15% | |
+| `L272` | 10–45% | 0–10% | LOW |
+
+`L150` is paper prose. `L803` is token-heavy. The last three read registers, other receipts and an instrument, where line history decides, and the predictor of line history is refuted, so those bands are wide on purpose.
+
+**Mechanical arm v2, per key, hashes only** (all 29 sentence keys): `f7aecbdc:D bfb9fe46:- f17941e0:- 719002ab:D 38df1cbb:- 8145cb42:D 01d1d4e5:D 3e01f255:- acde6be9:D cfa5c973:D cc5a5bb2:- a9f0692a:- 76f26faa:- 82dd686a:D a5c6ad21:D af853f74:D bbecea56:D 6b21bdb3:D 0726536a:D f41c1991:D 389dcd31:D e1a4b2d6:D b4d44467:D bb39f64a:D f817cd89:D a7236323:- 03c2fd57:D 4104130c:D 00998813:D`
+
+**Arm predictions:**
+
+- **On PAPER sentence keys:** precision ≥ 80%, recall ≥ 60%.
+- **On SOURCE sentence keys,** a `D` predicts nothing whenever the line is a never-moved record. The record clause exempts it, and I expect most of the arm's SOURCE `D` flags to come back `DELIBERATE` for that reason.
+
+---
+
 ## re r7287 (continued) — `L246` done, 11 of 11, taken without waiting for a reply; the v2 arm agreed on 3 of 4, and its one miss is the residue named last turn
 
 **LANDED: 11 of 11 · `UNADJUDICATED` 449 (487 with your 38 re-opened); with `-LIST` and `-PINNED`, 531.** `check_quote_pins` exits 0, and all 401 `MEANING-HELD` rows hold.

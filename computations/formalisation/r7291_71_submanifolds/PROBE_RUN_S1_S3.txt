@@ -1,0 +1,35 @@
+# S1–S3 probe run — r7291+71.4
+date: 2026-10-13T12:24:41Z
+Lean (version 4.35.0-rc4, x86_64-unknown-linux-gnu, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)
+mathlib: 4e6064a4a3a617a3ba6739b50152b02e4d6ad3ea
+command: lake env lean probes/CurvatureProbe.lean   (filtered to axiom lines and errors; 0 errors, no sorry)
+S2: l.698–739 · S1: l.741–833 · S3: l.836–879
+---- output ----
+'ShadowProbe.curv_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curv_smul_middle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curv_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.cov_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curv_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.contMDiffCov_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.scal_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curv_conf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Rconf_eq_curv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.scal_conf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.trG_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.einstein_conf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.hess_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.hess_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.hessConf_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.box_conf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.covT_smul_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.covT_smul_Y' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.covT_smul_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sff_smul_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sff_smul_Y' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sff_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.pullG_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.pullG_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.dsFlat_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.dsFlat_pull' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.nConf_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sff_conf' depends on axioms: [propext, Classical.choice, Quot.sound]

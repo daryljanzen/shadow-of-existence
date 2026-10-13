@@ -1,0 +1,53 @@
+# G5 search — r7293+71.3
+# mathlib @ 4e6064a4, searched after PREDICTION.md (r7293+71.1) was pushed.
+# Scope: all of Mathlib/; case-insensitive grep, then each hit read.
+
+## G5d — a homogeneous space G/H as a manifold (receipt 80)
+
+pattern                                                         hits   read as
+HomogeneousSpace | "homogeneous space"                          0      ABSENT
+QuotientGroup/⧸ with ChartedSpace or IsManifold; LieGroup       0
+  with quotient
+"closed subgroup theorem" | "Cartan's theorem" |                0      ABSENT
+  ClosedSubgroup.*manifold
+Quotient | ⧸ under Geometry/Manifold                            1      Instances/Quotient.lean. It gives
+                                                                       MulAction.instChartedSpaceQuotient, a CHARTED SPACE on the
+                                                                       quotient by a FREE, PROPERLY DISCONTINUOUS action, so only a
+                                                                       discrete group. Its own TODO lists "the quotient is an
+                                                                       IsManifold" and "the projection is smooth" as not done.
+                                                                       SO(1,4)/SO(1,3) is a quotient by a positive-dimensional
+                                                                       subgroup, which is not properly discontinuous. NOT A HIT.
+killingForm                                                     6      PRESENT, algebraic: Algebra/Lie/Killing.lean, TraceForm.lean, …
+indefinite (Algebra/Lie/Classical.lean l.174–180)               1      PRESENT, algebraic: indefiniteDiagonal, and so' p q, the
+                                                                       indefinite orthogonal Lie algebra. Matrices, not a group
+                                                                       acting on a manifold.
+Geometry/Manifold/Algebra/                                      —      LieGroup, LeftInvariantDerivation, Monoid, SMul,
+                                                                       SmoothFunctions, Structures. No quotient of a Lie group.
+
+=> G5d: ABSENT. The Killing form and so(p,q) are present as algebra. The manifold G/H with its induced metric is
+   not, and the one quotient construction present does not reach a non-discrete subgroup.
+
+## G5e — global causal structure (receipt 26)
+
+causal curve | CausalCurve | timelike curve | IsTimelike |      0      ABSENT
+  causalPast | CausalPast | chronological
+inextendible | globally hyperbolic | Cauchy surface             0      ABSENT
+TimeOrient | "time orientation"                                0      ABSENT
+Lorentz                                                         0      ABSENT
+pseudo-Riemannian | semi-Riemannian                             0      ABSENT
+geodesically complete | geodesic completeness                   0      ABSENT
+
+=> G5e: every object ABSENT. Per the rule at +71.1, it is scored reachable iff it is a definition over present
+   constituents. Those are listed in RESULT.md: curves and their velocity (mfderiv, r7281), the metric as a
+   hypothesis, a time orientation as a hypothesis vector field, sets and closure in the topology. Defined there by
+   reading, not built.
+
+## 18 — a branched covering as an object
+
+branched cover | BranchedCover | ramified cover                 0      ABSENT. 18 is scored on the covering off the
+                                                                       branch locus, as pre-registered.
+
+## G5b — what P2 used (read before use)
+
+Topology/Covering/AddCircle.lean l.32: AddCircle.isCoveringMap_coe — PRESENT, used by P2.
+Topology/Instances/AddCircle/Defs.lean l.586: addOrderOf_period_div — PRESENT, used by P2.

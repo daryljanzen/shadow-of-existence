@@ -1,0 +1,54 @@
+# r7291: the whole remaining tail assigned by STRIDE over the weight-sorted list, so the
+# assignment is deterministic and disjoint with no coordination.  Seat order 69, cc66, 60;
+# prefix at sorted position i belongs to seat i mod 3.  This is every UNADJUDICATED key there is.
+# seat	prefix	keys
+69	P14_matter_sector_paper	12
+cc66	L255_the_exemption_was_a_claim	8
+60	L260_half_a_partition	8
+69	L254_the_rule_was_spellings	7
+cc66	L256_the_band_taken	7
+60	L263_the_station_audit	7
+69	L268_broken_by_its_own_edit	7
+cc66	L270_the_table_that_carried_its_next_failure	7
+60	L801_nonlinear_shear_freedom	7
+69	L171_two_routes	6
+cc66	L247_the_build_already_stands	6
+60	L262_half_a_family	6
+69	L267_the_sweep_that_did_not_run	6
+cc66	L276_the_representation_theory_probe	6
+60	L556_registry_from_rows	6
+69	L559_the_registry_from_files_inward	6
+cc66	L220_arrival_paths	5
+60	L277_the_unclaimed_surface	5
+69	L536_frontier_placement	5
+cc66	L552_weyl_and_torus	5
+60	L554_tower_degeneracy	5
+69	L563_the_split_partition	5
+cc66	L809_one_loop_quartic	5
+60	L250_the_break_reports_itself	4
+69	L279_the_symmetric_space_probe	4
+cc66	L280_the_decidable_claims	4
+60	L551_register_integrity	4
+69	L560_pins_into_moving_prose	4
+cc66	L562_the_pin_test	4
+60	L804_isocurvature_bound	4
+69	L805_freezing_reproduced	4
+cc66	L230_computes_convention	3
+60	L266_station_C_three_readings_of_the_dial	3
+69	L558_the_second_duplication	3
+cc66	L561_the_probe_was_the_defect	3
+60	L811_po7_inversions_closed	3
+69	L815_seam_phase_derived	3
+cc66	L818_po6_running_layer	3
+60	P17_geometric_core_paper	3
+69	L248_the_strike_broke_its_readers	2
+cc66	L259_the_distance_from_the_present	2
+60	L261_the_question_was_answered	2
+69	P08_slicing_operator	2
+cc66	L239_capability_assumed	1
+60	L265_station_G_the_sequence_is_the_object	1
+69	L273_the_cartan_bake	1
+cc66	L282_the_scope_that_five_papers_carry	1
+60	L283_the_third_source_class	1
+69	L555_merge_duplication	1
+cc66	P07_CR_framework	1
