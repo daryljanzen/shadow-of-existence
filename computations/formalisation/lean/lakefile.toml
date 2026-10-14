@@ -8,3 +8,6 @@ rev = "4e6064a4a3a617a3ba6739b50152b02e4d6ad3ea"
 
 [[lean_lib]]
 name = "ShadowFormal"
+
+[[lean_lib]]
+name = "ShadowEngine"
