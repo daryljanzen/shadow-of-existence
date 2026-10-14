@@ -4018,6 +4018,197 @@ theorem frw_K_trace (p : Fin 4 → ℝ) :
 
 end Inst_R79
 
+
+/-! ### `r7323` E5 — the two-variable recipe: coefficients that depend on several coordinates and are NOT
+separable products. A second partial is read off ANY `HasFDerivAt` of the first partial, and independence
+from a coordinate kills every second partial with that slot. -/
+
+section Engine4D_E5
+
+set_option synthInstance.maxHeartbeats 400000
+
+lemma fdA_hasFDerivAt {f : (Fin 4 → ℝ) → ℝ} (hf : ContDiff ℝ ∞ f) (p v : Fin 4 → ℝ) :
+    HasFDerivAt (fun y => fderiv ℝ f y v) ((fderiv ℝ (fderiv ℝ f) p).flip v) p := by
+  have h2 := (hf.fderiv_right (m := ∞) (by simp)).differentiable (by simp) p
+  exact (h2.hasFDerivAt.clm_apply (hasFDerivAt_const v p)).congr_fderiv (by ext; simp)
+
+/-- **E5.** The second partial `∂_u∂_v F` is `L u` for any derivative `L` of the first partial `∂_v F`. -/
+lemma d2_of {F φ : (Fin 4 → ℝ) → ℝ} (hF : ContDiff ℝ ∞ F) {p v : Fin 4 → ℝ}
+    (hφ : ∀ y, fderiv ℝ F y v = φ y) {L : (Fin 4 → ℝ) →L[ℝ] ℝ} (hL : HasFDerivAt φ L p) (u : Fin 4 → ℝ) :
+    fderiv ℝ (fderiv ℝ F) p u v = L u := by
+  have := (fdA_hasFDerivAt hF p v).unique (by rw [show (fun y => fderiv ℝ F y v) = φ from funext hφ]; exact hL)
+  rw [show fderiv ℝ (fderiv ℝ F) p u v = ((fderiv ℝ (fderiv ℝ F) p).flip v) u from rfl, this]
+
+/-- **E5.** No dependence on coordinate `i` ⇒ every second partial with an `i` slot vanishes. -/
+lemma d2_indep {f : (Fin 4 → ℝ) → ℝ} (hf : ContDiff ℝ ∞ f) {i : Fin 4}
+    (h0 : ∀ y, fderiv ℝ f y (Pi.single i 1) = 0) (p u : Fin 4 → ℝ) :
+    fderiv ℝ (fderiv ℝ f) p u (Pi.single i 1) = 0 ∧ fderiv ℝ (fderiv ℝ f) p (Pi.single i 1) u = 0 := by
+  have h1 : fderiv ℝ (fderiv ℝ f) p u (Pi.single i 1) = 0 := by
+    rw [d2_of hf (φ := fun _ => 0) h0 (hasFDerivAt_const (0 : ℝ) p)]; simp
+  exact ⟨h1, by rw [(hf.contDiffAt.isSymmSndFDerivAt (by simp)) _ _]; exact h1⟩
+
+end Engine4D_E5
+
+/-! ### `r7323` instance 3 — row 75: the polarized Gowdy–de Sitter metric with `ψ, γ, R` functions of
+`(t, z)`, `e^{2(γ−ψ)}(−dt² + dz²) + e^{2ψ}dx² + R²e^{−2ψ}dy²`. Under THE connection, `E_μν = R_μν − Λg_μν`
+is exactly the four Gowdy field equations: `E_xx ∝ WAVE`, `E_yy ∝ WAVE − AREA`, `E_tz = MOMENTUM/R`,
+`E_tt + E_zz = ENERGY/R`, the factors derivative-free. -/
+
+section Inst_R75
+
+set_option synthInstance.maxHeartbeats 400000
+
+noncomputable def cG (ψ γ R : (Fin 4 → ℝ) → ℝ) : Fin 4 → (Fin 4 → ℝ) → ℝ :=
+  ![fun y => -Real.exp (2 * (γ y - ψ y)), fun y => Real.exp (2 * (γ y - ψ y)), fun y => Real.exp (2 * ψ y),
+    fun y => R y ^ 2 * Real.exp (-(2 * ψ y))]
+
+variable {ψ γ R : (Fin 4 → ℝ) → ℝ} (hψ : ContDiff ℝ ∞ ψ) (hγ : ContDiff ℝ ∞ γ) (hR : ContDiff ℝ ∞ R)
+  (hR0 : ∀ y, R y ≠ 0)
+
+include hψ hγ hR in
+lemma cG_smooth (k : Fin 4) : ContDiff ℝ ∞ (cG ψ γ R k) := by fin_cases k <;> simp [cG] <;> fun_prop
+include hR0 in
+lemma cG_ne (k : Fin 4) (p : Fin 4 → ℝ) : cG ψ γ R k p ≠ 0 := by
+  fin_cases k <;> simp [cG, Real.exp_ne_zero, hR0]
+
+set_option maxHeartbeats 8000000 in
+include hψ hγ hR hR0 in
+/-- **Row 75.** -/
+theorem gowdy_tz_field (Λ : ℝ) (p : Fin 4 → ℝ)
+    (hind : ∀ y, ∀ i : Fin 4, i = 2 ∨ i = 3 → fderiv ℝ ψ y (Pi.single i 1) = 0
+      ∧ fderiv ℝ γ y (Pi.single i 1) = 0 ∧ fderiv ℝ R y (Pi.single i 1) = 0) :
+    let Rf := fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cG ψ γ R)) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => cG_ne hR0 i p) u h)
+      ((diag4_smooth (cG_smooth hψ hγ hR)).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p
+    let E := fun j => ricC Rf j j - Λ * cG ψ γ R j p
+    let D := fun (f : (Fin 4 → ℝ) → ℝ) (i : Fin 4) => fderiv ℝ f p (Pi.single i 1)
+    let D2 := fun (f : (Fin 4 → ℝ) → ℝ) (i j : Fin 4) => fderiv ℝ (fderiv ℝ f) p (Pi.single i 1) (Pi.single j 1)
+    let ex := Real.exp (2 * (γ p - ψ p))
+    let WAVE := D R 0 * D ψ 0 + R p * D2 ψ 0 0 - D R 1 * D ψ 1 - R p * D2 ψ 1 1 - Λ * R p * ex
+    let AREA := D2 R 0 0 - D2 R 1 1 - 2 * Λ * R p * ex
+    let ENERGY := 2 * (D R 0 * D γ 0 + D R 1 * D γ 1) - (D2 R 0 0 + D2 R 1 1) - 2 * R p * (D ψ 0 ^ 2 + D ψ 1 ^ 2)
+    let MOM := D R 0 * D γ 1 + D R 1 * D γ 0 - D2 R 0 1 - 2 * R p * D ψ 0 * D ψ 1
+    R p * ex * Real.exp (-(2 * ψ p)) * E 2 = WAVE
+      ∧ ex * Real.exp (2 * ψ p) * E 3 = -(R p * (WAVE - AREA))
+      ∧ ricC Rf 0 1 = MOM / R p
+      ∧ E 0 + E 1 = ENERGY / R p := by
+  intro Rf E D D2 ex WAVE AREA ENERGY MOM
+  have dψ := fun y => (hψ.differentiable (by simp) y).hasFDerivAt
+  have dγ := fun y => (hγ.differentiable (by simp) y).hasFDerivAt
+  have dR := fun y => (hR.differentiable (by simp) y).hasFDerivAt
+  have Hh : ∀ y, HasFDerivAt (fun y => 2 * (γ y - ψ y)) ((2 : ℝ) • (fderiv ℝ γ y - fderiv ℝ ψ y)) y :=
+    fun y => ((dγ y).sub (dψ y)).const_mul 2
+  have H2 : ∀ y, HasFDerivAt (fun y => 2 * ψ y) ((2 : ℝ) • fderiv ℝ ψ y) y := fun y => (dψ y).const_mul 2
+  -- first partials of the four coefficients, at every point
+  have e1 : ∀ y v, fderiv ℝ (fun y => Real.exp (2 * (γ y - ψ y))) y v
+      = Real.exp (2 * (γ y - ψ y)) * (2 * (fderiv ℝ γ y v - fderiv ℝ ψ y v)) := fun y v => by
+    rw [((Hh y).exp).fderiv]; simp
+  have e0 : ∀ y v, fderiv ℝ (fun y => -Real.exp (2 * (γ y - ψ y))) y v
+      = -(Real.exp (2 * (γ y - ψ y)) * (2 * (fderiv ℝ γ y v - fderiv ℝ ψ y v))) := fun y v => by
+    rw [(show HasFDerivAt (fun y => -Real.exp (2 * (γ y - ψ y))) _ y from (Hh y).exp.neg).fderiv]; simp
+  have e2 : ∀ y v, fderiv ℝ (fun y => Real.exp (2 * ψ y)) y v = Real.exp (2 * ψ y) * (2 * fderiv ℝ ψ y v) :=
+    fun y v => by rw [((H2 y).exp).fderiv]; simp
+  have e3 : ∀ y v, fderiv ℝ (fun y => R y ^ 2 * Real.exp (-(2 * ψ y))) y v
+      = 2 * R y * fderiv ℝ R y v * Real.exp (-(2 * ψ y))
+        - R y ^ 2 * (2 * fderiv ℝ ψ y v) * Real.exp (-(2 * ψ y)) := fun y v => by
+    rw [(show HasFDerivAt (fun y => R y ^ 2 * Real.exp (-(2 * ψ y))) _ y from
+      ((dR y).pow 2).mul ((H2 y).neg.exp)).fderiv]; simp; ring
+  -- second partials, through E5
+  have s1 : ∀ u v, fderiv ℝ (fderiv ℝ (fun y => Real.exp (2 * (γ y - ψ y)))) p u v
+      = Real.exp (2 * (γ p - ψ p)) * (2 * (fderiv ℝ γ p u - fderiv ℝ ψ p u))
+          * (2 * (fderiv ℝ γ p v - fderiv ℝ ψ p v))
+        + Real.exp (2 * (γ p - ψ p)) * (2 * (fderiv ℝ (fderiv ℝ γ) p u v - fderiv ℝ (fderiv ℝ ψ) p u v)) :=
+    fun u v => by
+    rw [d2_of (by fun_prop) (fun y => e1 y v)
+      (((Hh p).exp).mul (((fdA_hasFDerivAt hγ p v).sub (fdA_hasFDerivAt hψ p v)).const_mul 2))]
+    simp; ring
+  have s0 : ∀ u v, fderiv ℝ (fderiv ℝ (fun y => -Real.exp (2 * (γ y - ψ y)))) p u v
+      = -(Real.exp (2 * (γ p - ψ p)) * (2 * (fderiv ℝ γ p u - fderiv ℝ ψ p u))
+          * (2 * (fderiv ℝ γ p v - fderiv ℝ ψ p v))
+        + Real.exp (2 * (γ p - ψ p)) * (2 * (fderiv ℝ (fderiv ℝ γ) p u v - fderiv ℝ (fderiv ℝ ψ) p u v))) :=
+    fun u v => by
+    rw [d2_of (by fun_prop) (fun y => e0 y v)
+      (((Hh p).exp).mul (((fdA_hasFDerivAt hγ p v).sub (fdA_hasFDerivAt hψ p v)).const_mul 2)).neg]
+    simp; ring
+  have s2 : ∀ u v, fderiv ℝ (fderiv ℝ (fun y => Real.exp (2 * ψ y))) p u v
+      = Real.exp (2 * ψ p) * (2 * fderiv ℝ ψ p u) * (2 * fderiv ℝ ψ p v)
+        + Real.exp (2 * ψ p) * (2 * fderiv ℝ (fderiv ℝ ψ) p u v) := fun u v => by
+    rw [d2_of (by fun_prop) (fun y => e2 y v) (((H2 p).exp).mul ((fdA_hasFDerivAt hψ p v).const_mul 2))]
+    simp; ring
+  have s3 : ∀ u v, fderiv ℝ (fderiv ℝ (fun y => R y ^ 2 * Real.exp (-(2 * ψ y)))) p u v
+      = (2 * fderiv ℝ R p u * fderiv ℝ R p v + 2 * R p * fderiv ℝ (fderiv ℝ R) p u v
+          - 2 * R p * fderiv ℝ R p v * (2 * fderiv ℝ ψ p u)
+          - 2 * R p * fderiv ℝ R p u * (2 * fderiv ℝ ψ p v) - R p ^ 2 * (2 * fderiv ℝ (fderiv ℝ ψ) p u v)
+          + R p ^ 2 * (2 * fderiv ℝ ψ p v) * (2 * fderiv ℝ ψ p u)) * Real.exp (-(2 * ψ p)) := fun u v => by
+    rw [d2_of (by fun_prop) (fun y => e3 y v)
+      (HasFDerivAt.sub (HasFDerivAt.mul (HasFDerivAt.mul ((dR p).const_mul 2) (fdA_hasFDerivAt hR p v))
+        ((H2 p).neg.exp))
+        (HasFDerivAt.mul (HasFDerivAt.mul ((dR p).pow 2) ((fdA_hasFDerivAt hψ p v).const_mul 2))
+          ((H2 p).neg.exp)))]
+    simp; ring
+  -- the recipe's facts, in the engine's own names
+  have i2 := hind p 2 (by decide); have i3 := hind p 3 (by decide)
+  -- `(t, z)` dependence only: every first partial is `v⁰ ∂₀ + v¹ ∂₁`
+  have lin : ∀ f : (Fin 4 → ℝ) → ℝ, fderiv ℝ f p (Pi.single 2 1) = 0 → fderiv ℝ f p (Pi.single 3 1) = 0 →
+      ∀ v, fderiv ℝ f p v = v 0 * fderiv ℝ f p (Pi.single 0 1) + v 1 * fderiv ℝ f p (Pi.single 1 1) := by
+    intro f h2 h3 v
+    have hv : v = ∑ i, v i • (Pi.single i 1 : Fin 4 → ℝ) := by ext i; simp [Pi.single_apply]
+    conv_lhs => rw [hv]
+    simp [map_sum, Fin.sum_univ_four, h2, h3]
+  have hD1 : ∀ k v, fderiv ℝ (cG ψ γ R k) p v = (![
+      -(Real.exp (2 * (γ p - ψ p)) * (2 * ((v 0 * fderiv ℝ γ p (Pi.single 0 1) + v 1 * fderiv ℝ γ p (Pi.single 1 1))
+        - (v 0 * fderiv ℝ ψ p (Pi.single 0 1) + v 1 * fderiv ℝ ψ p (Pi.single 1 1))))),
+      Real.exp (2 * (γ p - ψ p)) * (2 * ((v 0 * fderiv ℝ γ p (Pi.single 0 1) + v 1 * fderiv ℝ γ p (Pi.single 1 1))
+        - (v 0 * fderiv ℝ ψ p (Pi.single 0 1) + v 1 * fderiv ℝ ψ p (Pi.single 1 1)))),
+      Real.exp (2 * ψ p) * (2 * (v 0 * fderiv ℝ ψ p (Pi.single 0 1) + v 1 * fderiv ℝ ψ p (Pi.single 1 1))),
+      2 * R p * (v 0 * fderiv ℝ R p (Pi.single 0 1) + v 1 * fderiv ℝ R p (Pi.single 1 1)) * Real.exp (-(2 * ψ p))
+        - R p ^ 2 * (2 * (v 0 * fderiv ℝ ψ p (Pi.single 0 1) + v 1 * fderiv ℝ ψ p (Pi.single 1 1)))
+          * Real.exp (-(2 * ψ p))] : Fin 4 → ℝ) k := fun k v => by
+    rw [← lin ψ i2.1 i3.1 v, ← lin γ i2.2.1 i3.2.1 v, ← lin R i2.2.2 i3.2.2 v]
+    fin_cases k
+    exacts [e0 p v, e1 p v, e2 p v, e3 p v]
+  have hD2 : ∀ k u v, fderiv ℝ (fderiv ℝ (cG ψ γ R k)) p u v = (![
+      -(Real.exp (2 * (γ p - ψ p)) * (2 * (fderiv ℝ γ p u - fderiv ℝ ψ p u))
+          * (2 * (fderiv ℝ γ p v - fderiv ℝ ψ p v))
+        + Real.exp (2 * (γ p - ψ p)) * (2 * (fderiv ℝ (fderiv ℝ γ) p u v - fderiv ℝ (fderiv ℝ ψ) p u v))),
+      Real.exp (2 * (γ p - ψ p)) * (2 * (fderiv ℝ γ p u - fderiv ℝ ψ p u))
+          * (2 * (fderiv ℝ γ p v - fderiv ℝ ψ p v))
+        + Real.exp (2 * (γ p - ψ p)) * (2 * (fderiv ℝ (fderiv ℝ γ) p u v - fderiv ℝ (fderiv ℝ ψ) p u v)),
+      Real.exp (2 * ψ p) * (2 * fderiv ℝ ψ p u) * (2 * fderiv ℝ ψ p v)
+        + Real.exp (2 * ψ p) * (2 * fderiv ℝ (fderiv ℝ ψ) p u v),
+      (2 * fderiv ℝ R p u * fderiv ℝ R p v + 2 * R p * fderiv ℝ (fderiv ℝ R) p u v
+          - 2 * R p * fderiv ℝ R p v * (2 * fderiv ℝ ψ p u)
+          - 2 * R p * fderiv ℝ R p u * (2 * fderiv ℝ ψ p v) - R p ^ 2 * (2 * fderiv ℝ (fderiv ℝ ψ) p u v)
+          + R p ^ 2 * (2 * fderiv ℝ ψ p v) * (2 * fderiv ℝ ψ p u)) * Real.exp (-(2 * ψ p))] : Fin 4 → ℝ) k :=
+    fun k u v => by
+    fin_cases k
+    exacts [s0 u v, s1 u v, s2 u v, s3 u v]
+  -- `(t, z)` dependence only, and the mixed partials' symmetry
+  have j2 := fun f (hf : ContDiff ℝ ∞ f) (h : ∀ y, fderiv ℝ f y (Pi.single (2 : Fin 4) 1) = 0) u =>
+    d2_indep hf h p u
+  have k2ψ := j2 ψ hψ (fun y => (hind y 2 (by decide)).1)
+  have k2γ := j2 γ hγ (fun y => (hind y 2 (by decide)).2.1)
+  have k2R := j2 R hR (fun y => (hind y 2 (by decide)).2.2)
+  have k3ψ := fun u => d2_indep hψ (fun y => (hind y 3 (by decide)).1) p u
+  have k3γ := fun u => d2_indep hγ (fun y => (hind y 3 (by decide)).2.1) p u
+  have k3R := fun u => d2_indep hR (fun y => (hind y 3 (by decide)).2.2) p u
+  have yψ : fderiv ℝ (fderiv ℝ ψ) p (Pi.single 1 1) (Pi.single 0 1)
+      = fderiv ℝ (fderiv ℝ ψ) p (Pi.single 0 1) (Pi.single 1 1) := (hψ.contDiffAt.isSymmSndFDerivAt (by simp)) _ _
+  have yγ : fderiv ℝ (fderiv ℝ γ) p (Pi.single 1 1) (Pi.single 0 1)
+      = fderiv ℝ (fderiv ℝ γ) p (Pi.single 0 1) (Pi.single 1 1) := (hγ.contDiffAt.isSymmSndFDerivAt (by simp)) _ _
+  have yR : fderiv ℝ (fderiv ℝ R) p (Pi.single 1 1) (Pi.single 0 1)
+      = fderiv ℝ (fderiv ℝ R) p (Pi.single 0 1) (Pi.single 1 1) := (hR.contDiffAt.isSymmSndFDerivAt (by simp)) _ _
+  have hRp := hR0 p
+  simp only [Rf, E, ricC, Fin.sum_univ_four, curvD_eq (cG_ne hR0) (cG_smooth hψ hγ hR)]
+  simp only [curvD, Pi.sub_apply, Pi.add_apply, DGD, gamD, dC1, dC2, hD1, hD2]
+  simp [cG, Fin.sum_univ_four, i2, i3, k2ψ, k2γ, k2R, k3ψ, k3γ, k3R, yψ, yγ, yR, Real.exp_neg,
+    D, D2, ex, WAVE, AREA, ENERGY, MOM]
+  refine ⟨?_, ?_, ?_, ?_⟩ <;> (field_simp; ring)
+
+end Inst_R75
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -4144,3 +4335,6 @@ end ShadowProbe
 #print axioms ShadowProbe.static_K_zero
 #print axioms ShadowProbe.frw_K
 #print axioms ShadowProbe.frw_K_trace
+#print axioms ShadowProbe.d2_of
+#print axioms ShadowProbe.d2_indep
+#print axioms ShadowProbe.gowdy_tz_field
