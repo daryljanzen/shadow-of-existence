@@ -15858,3 +15858,82 @@ alternative — *"an eighteen-minute gate explains being skipped on its own"* �
 and `233` s on yours**, so that explanation is container-specific too.
 
 Write-up with the reproduction: `computations/beyond_the_wall/r7327_cc66_what_the_gate_spends/MEASURED.md`.
+
+---
+
+## `r7329` — the stride is open: `5` receipts repaired, `6` rows retired, inside the band I registered first
+
+**LANDED** the band pushed alone before one receipt was touched (`36bcf050b`), then five repairs, five
+owed rows cleared and a sixth adjudicated row retired with them, and four cases for the working rule.
+**REMAINING** `44` of my `49` receipts and `117` of my `122` rows — including all `42` of
+`P15_CR_cosmology`, of which **none is routed yet because none was reached.**
+
+**① AGAINST THE REGISTERED BAND.**
+
+| | registered | measured |
+|---|---|---|
+| receipts repaired | band **`4`–`12`** | **`5`** ✔ |
+| owed rows cleared | — | **`5`** — `REPAIR-OWED` `366` → **`361`** |
+| rows retired in total | — | **`6`** (see ⓷) |
+| mean rows per repaired receipt | registered **below** `2.49` | **`1.00`** ✔ |
+| condition 4 (stride invalid) | voids the rest | **none** — five receipts `rc=0`, `0` new keys, `0` stale |
+
+⇒ **Inside the band, and below your unmeasured `11`–`16`, in the direction my §3 named.** ⌗ **The figure
+that replaces yours is a first-stride, cheap-end figure and says so: `5` receipts at `1.0` rows each,
+because item ②.1 sent me to the single-row end. `L269`'s `12`-row `T1` and `L255`'s `8` are the other end
+and are NOT in it.**
+
+**② THE DECISIVE FRACTION, and the standing does not transfer as written.** I registered it anyway and
+said why: here the outcome is an integer count of my own work — **a census, no sampling and no interval —
+so every reachable outcome decides and the fraction is `1`, which measures nothing.** What a census
+registration can publish instead is **how much of the space the band CLAIMS**: `9` of `50` outcomes,
+`18`%, so the band is wrong on `82`% of its own space. **Proposed as the census form of the standing, not
+asserted — `70` holds the port.**
+
+**③ FOUR CASES, met rather than argued in advance (item ②.4).**
+
+⒜ ⛔ **A key whose literal is `DELIBERATE` can be `REPAIR-OWED` for a defect in the CHECK that quotes
+it.** `P07/I7`: the `r7291` reason names ground ⓓ, a vacuous guard — `BODIES.get('P12', '')` let the
+**absence pass when P12 was never loaded** — *and the same reason says the term is the receipt's object of
+study and "would be `DELIBERATE` alone"*. A verdict keyed on `(receipt, literal)` cannot tell *the
+quotation is bad* from *the check around it is bad*. ⇒ So that row is **re-verdicted on the literal's own
+ground after the guard is repaired, not removed** — the key is still live and removing it goes stale.
+**Not reclassification: the named defect was repaired in the receipt first, and both checks are
+exercised.** The refinement I propose is that a reason name its ground so the repair is identifiable from
+the row.
+
+⒝ ⛔ **A repair can MINT a key, and then it has not repaired.** My first form of the `L268` repair wrote
+`'HELD' in ast.get_source_segment(...)` — **a presence test on another receipt's source is a quote-pin
+however structural the rest of the arm is** — and the instrument reported `"HELD"` as new. Measured: the
+structural shape alone matched **exactly one** loop, so the identifier bought nothing and cost a key.
+⇒ **A repair is complete only when the instrument reports no new key for the receipt**, which
+`--quote --files <receipt>` answers in seconds. **I would not have caught it without running that.**
+
+⒞ **Two arms of one disjunction can carry two rows with different verdicts, and a repair retires both.**
+`L268` held `"held in {paper}"` (owed, mine) and `"held in"` (`DELIBERATE`) — the two arms of one
+condition. ⇒ **`PO-78`'s bound should expect adjudicated rows to retire alongside owed ones: `REPAIR-OWED`
+fell by `5` while `6` rows left the ledger.**
+
+⒟ ⛔⛔ **AND THE INSTRUMENT DOES NOT SEE A LITERAL WHOSE READ PASSES THROUGH A TRANSFORMATION — my own
+`L553` repair is on the wrong side of it.** After it the receipt still tests `'Pontryagin'` and two
+clauses against P10, but through a `re.split` of a normalised body, and the instrument reports **none of
+the three** (verified: `21` live keys across my five receipts, not one of them among them). ⇒ **So part of
+that repair moved presence tests out of the instrument's view rather than out of the receipt.** The repair
+is still a real strengthening — the caveat now needs its subject and survives the markup — but **the
+residual tests are unadjudicatable, and the ledger cannot ratchet what it cannot see.** ⌗ *Said against my
+own work because nothing else would catch it: a campaign repairing pins with an instrument that stops at
+one transformation can lower its own count without lowering the thing the count stands for.* **Whether
+the instrument should follow one hop is `70`'s to price and yours to order; I am not proposing it from
+inside a repair.**
+
+**④ VERIFIED.** Five receipts individually `rc=0`; the instrument scoped to the five reports **`0` new,
+`0` stale** (run before and after ⒝, and it is what found ⒝); and **the full `check_quote_pins` is green
+on the tree** — `rc=0`, *no new key, no stale entry*, `UNADJUDICATED 0`, `2818` live keys against `2823`
+before, `REPAIR-OWED 361`.
+
+⌗ *One method note against myself: I first read a receipt's exit code through `| head -12` and recorded
+`rc=1`. That was the pipe closing, not the receipt — a repair briefly reported to myself as broken when it
+was green. **A receipt's rc is never read through a truncating pipe.***
+
+Write-up with every repair and its reproduction:
+`computations/beyond_the_wall/r7329_cc66_the_repair_stride/MEASURED.md`.

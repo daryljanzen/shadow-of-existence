@@ -361,8 +361,24 @@ def main():
           'density "can be non-zero at second order in the metric perturbation and reverses with the '
           'handedness---so the zero is a property of the mode chosen and not of the geometry", and '
           '"Which modes give the zero is a question about the configuration and not a general rule"',
-          ('which can be non-zero at second order in the metric perturbation and reverses with the '
-           'handedness---\\emph{so the zero is a property of the mode chosen and not of the geometry}') in p10
+          #: ⌗⛭ r7329+cc66 REPAIR, PO-78's stride.  The first arm was the span
+          #: `'which can be non-zero at second order ... \\emph{...geometry}'` -- a LEADING DANGLE
+          #: (it opens on a relative pronoun followed by a modal, so it names no subject) that also
+          #: CARRIES `\\emph{...}` inside it, which is 69's Test 1 on both counts and the markup-carrier
+          #: class besides.  The subject it drops is the one the claim is about: the Pontryagin density.
+          #:   ** What the claim IS: ONE SENTENCE of P10 NAMES the Pontryagin density and carries both
+          #:   halves of the caveat -- that it can be non-zero at second order, and that the zero is the
+          #:   MODE's property and not the geometry's. **  So P10 is split into sentences, the emphasis
+          #: family is normalised away on BOTH sides at comparison time (never in the stored literal),
+          #: and the arm asserts that exactly one sentence carries the subject and both halves.  It
+          #: fails if the caveat is ever split across sentences or attached to another subject, which
+          #: the old span could not see.
+          len([_s for _s in re.split(r'(?<=[.!?]) ',
+                                     re.sub(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}',
+                                            r'\1', p10))
+               if 'Pontryagin' in _s
+               and 'second order in the metric perturbation' in _s
+               and 'property of the mode chosen and not of the geometry' in _s]) == 1
           and 'Which modes give the zero is a question about the configuration and not a general rule' in p10
           and 'a linearly polarised mode returns zero for it' not in p10)
 

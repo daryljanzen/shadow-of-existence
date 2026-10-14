@@ -157,8 +157,20 @@ check("⛔ and the fifth is NAMED with its cause: P12 carried sense A at cd90179
       "not now -- r4083's harvest removed the passage, and `conserved charge` itself is zero there, "
       "so nothing was reworded and nothing is being counted in its place",
       ['P02', 'P03', 'P08', 'P10'], apapers)
+#: ⌗⛭ r7329+cc66 REPAIR, PO-78's stride.  ⛔ AND THE OWED REPAIR WAS NEVER ABOUT THE QUOTATION.
+#: The ledger's own reason says so: the term is this receipt's OBJECT OF STUDY and "would be
+#: DELIBERATE alone"; what it owed is 69's Test 7, ⓓ a VACUOUS GUARD -- `BODIES.get('P12', '')`
+#: makes the ABSENCE pass when P12 is not loaded at all, which a rename of `algebroid_paper.tex`
+#: or a CODE-table miss would do silently.  `len(BODIES)` was printed and never asserted.
+#:   ** The repair is the presence guard the reason names: P12 is asserted LOADED and NON-EMPTY,
+#:   and the absence is asserted of that body and not of a default. **  The phrase stays, because
+#: the phrase is what the receipt is about; it is the guard that was missing.
+_p12 = BODIES.get('P12')
+check("⛭ and P12 is LOADED before its absence is read -- the guard r7329 repaired: an absence over "
+      "an empty default passes when the paper is simply not there",
+      bool(_p12) and len(_p12) > 10000, True)
 check("and P12 really has dropped the phrase rather than moved it",
-      'conserved charge' in BODIES.get('P12', ''), False)
+      'conserved charge' in (_p12 or ''), False)
 print("    *** Each says the object is NOT well defined here.  B and C use the same two words")
 print("        for objects that are.  A reader importing A into B loses P11's result. ***")
 

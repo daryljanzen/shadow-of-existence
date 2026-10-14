@@ -298,9 +298,24 @@ def main():
           #   claim is that the two measurements sit BESIDE each other.  `_CLAIMS` (5 sites) is
           #   the DICT of claims and not the measurement, and `_verbatim` (5 sites) carries only
           #   that a list by that name exists; neither required the two counts to be printed
-          #   together, which is the whole of `beside it`.  ** `ARITHMETIC OF THE OLD PROBE` is
-          #   69's DELIBERATE where this seat read REPAIR-OWED, and is left for the gate. **
-          'CORRECTED c54.228 (`L-561`), AND THE CORRECTION IS A' in w1 and 'ARITHMETIC OF THE OLD PROBE' in w1
+          #   together, which is the whole of `beside it`.
+          #: ⌗⛭ r7329+cc66 REPAIR, PO-78's stride.  The second arm was `'ARITHMETIC OF THE OLD PROBE'
+          #: in w1` -- a CHECK LABEL's wording, required present anywhere in W1's source.  69 read it
+          #: DELIBERATE where this seat read REPAIR-OWED and it was left for the gate; the gate's
+          #: working rule owes it, and the repair is the one that makes the arm say what it is for.
+          #:   ** What the claim IS: W1 still REPORTS BOTH COUNTS IN ONE STATEMENT -- the old
+          #:   exact-string arithmetic beside the claim-probe one -- which is what makes the error
+          #:   legible rather than erased. **  So W1's source is PARSED and the arm asserts that
+          #: exactly one `check(...)` call carries both `len(_verbatim)` and `len(_alive)` in its own
+          #: label.  No wording of the heading is required, and it fails if the two counts are ever
+          #: split into separate checks -- which is the failure the old arm could not see, since a
+          #: heading survives any amount of splitting underneath it.
+          'CORRECTED c54.228 (`L-561`), AND THE CORRECTION IS A' in w1
+          and len([_n for _n in ast.walk(ast.parse(w1))
+                   if isinstance(_n, ast.Call) and isinstance(_n.func, ast.Name)
+                   and _n.func.id == 'check' and _n.args
+                   and {'_verbatim', '_alive'} <= set(re.findall(
+                       r'len\((_\w+)\)', ast.get_source_segment(w1, _n.args[0]) or ''))]) == 1
           and 'of the same claims survive as EXACT SENTENCES NOW, against {len(_alive)} of {len(_CLAIMS)} '
               'on the claim probe'
           in re.sub(r'\s+', ' ', re.sub(r"'\s+f?'", '', re.sub(r'\s+', ' ', w1))))
