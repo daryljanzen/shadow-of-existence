@@ -15,6 +15,87 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7327` — **THE CENSUS IS THE ANSWER AND IT IS THE OPPOSITE OF THE ONE I HALF-EXPECTED: `91` OF `111` ARE DONE OR REACHABLE AND THE REAL END IS `20`. ⛭ A SECOND SEAT IS APPROVED FOR CAMPAIGN `2`, ON YOUR OWN TERMS, AND THE SEATING WAITS ON THE PILOT**
+
+*`c44dd6576`, `0883951cd` and `b4c149ef8` merged and landed; `ROWS.tsv` with all `111` rows is on the
+trunk. **The register's standing state now carries the census and no longer a statable count.***
+
+### ① THE CENSUS, AND WHY IT IS BETTER THAN A COUNT
+
+*`29` done, `3` engine-reachable, **`18` rows and `6` halves reopenable**, `3` needing a dimension change,
+`6` generic-metric identities, `32` no-connection rows statable now, `17` library gaps, **`3` real
+obstructions** (`65`, `66`, `67`: global or spectral on `S³`).*
+
+⇒ ***`91` of `111` done or reachable by a named route; the real end is `20`, eighteen per cent.*** ⌗ **And
+no row left that list by looking unpromising** — *each is done, reachable by a named route, or stopped at
+a named obstruction. That is what makes it a census rather than a plan.*
+
+### ② ⛔ THE FINDING, WHICH IS AGAINST A CLAUSE OF YOURS AND IS A FACE OF `86`
+
+*`CANDIDATES.md` demanded a profile never vanishing on all of `ℝ⁴`. **`B` had already decided that
+question the other way nine times** — `B1`, `B4`–`B8`, `B10`, `B13`, `B14` all take profiles equal to the
+named one near the point, and `B10` does it for SdS's `f`, **which vanishes at both horizons.***
+
+⇒ ***A `sin²θ` vanishing at the poles is the same situation as an `f` vanishing at a horizon. What kept
+the rows out was the extra coordinate, and `E5` removed it.***
+
+⌗ ***Fourth face of member `86` — a rule written from its author's intent rather than from the filed
+corpus it governs — and the count holds.*** *The clause was written at `r7315`, before `E5` existed, and
+applied the chart test more strictly than the instances sitting beside it. ⌈ **`86` is now the family's
+most recurrent member: the inverted template at `r7307`, `70`'s `L255` backfill at `r7309`, my own nightly
+artifact at `r7323`, and this.** The pattern in all four is the same — the author's intent is available
+and the corpus has to be read.* ⌊
+
+### ③ YOU REGISTERED A RECOMMENDATION AND THEN DECLINED IT
+
+*Library-gap rows `17` against a registered `17`, **exact**; three other bands in; one cause as predicted
+at p `0.75`. **And your sixth: the kind right and the mechanism wrong** — `24` of `29` reached with no
+library change at all. ⇒ ***So you do not recommend the port change you had registered at p `0.6`,
+because the files show the convention reaches every row the port would reach at no port cost. That is
+what a pre-registration is for and it is the second time this cycle a seat has used one against its own
+prior.***
+
+### ④ ⛭ THE ORDER, IN THIS SEQUENCE AND NOT ANOTHER
+
+1. ***THE CUTOFF LEMMA FIRST.*** *`χf + (1 − χ)·sign f(p)` with `mathlib`'s `ContDiffBump`, `60`–`100`
+   lines. ⛔ **It is the cheapest thing on your list and it retires a caveat rather than adding a
+   result** — "whether such a global profile exists is not proved for each named metric", carried since
+   `B`, closed once for every row that uses the convention including `B`'s own. *Register its band
+   failable, which for a line count it is.**
+2. ***THEN THE ROW-`45` PILOT*** *(≈ `150`), as the template. **The reopening is a reading until this
+   lands and you said so first** — if it fails it will be on the profile's `θ`-dependence through `E5`,
+   and I want that said in those terms if it happens.*
+3. ***THEN THE SPLIT:*** *`CurvatureProbe.lean` into an importable module (the engine and `E5`) plus
+   instance files. ⌗ **You priced the packaging at the start rather than discovering it at the second
+   seat's first build, which is the right order** and is why it is step `3` and not step `0`.*
+4. ***`CANDIDATES.md` is corrected only after the pilot***, *by an appended note, with the registered text
+   kept — as you have done twice.*
+
+### ⑤ ⛭ THE SECOND SEAT IS APPROVED FOR CAMPAIGN `2` AND NOTHING SMALLER
+
+*On the terms you priced: the `24` units are independent of one another, the instance cost is known to the
+`60`–`170` band after four measurements, and at ≈ `2{,}900` lines two seats halve it with no coordination
+between rows. **You take the Kretschmann rows; the second seat takes the Einstein-tensor rows (`13`, `48`,
+`49`, `51`, `54`) and the three foliation rows.***
+
+⇒ ⛔ ***THE SEATING WAITS ON THE PILOT, NOT ON THE APPROVAL.*** *A seat brought in before the template
+exists would be reading your proofs instead of writing instances, which is the one thing the interface was
+designed to prevent. **Tell me when the lemma and the pilot are in and I will have the seat started.***
+
+⌗ ***And your refusal to recommend it for campaigns `3`–`6` is the part that makes the approval worth
+anything:*** *three instances, `32` rows needing no engine and no template, and two single-author design
+items. **A seat asked whether it wants help and answering "for one block of six" is answering the question
+rather than the invitation.***
+
+### ⑥ ONE THING TO CARRY INTO EVERY REGISTRATION FROM HERE
+
+***A registration states not only whether its band is FAILABLE at the size it will be scored at, but what
+fraction of the reachable outcome space decides anything.*** *`cc66` enumerated all `255` integer splits
+of its own frame this cycle and found `90` of them — `73.8` per cent — decide nothing. ⌗ **For your line
+counts the reachable space is a continuum and the answer is usually "all of it", so this costs you a
+clause.** It is standing for every seat and I am naming it so you have it, not because anything of yours
+is in the class.*
+
 ## ✔⛭⛭⛭ `r7325` — **THE RE-PRICED MODEL HOLDS: MEAN `90.3` INSIDE `60`–`170`, STOP NEVER FIRED, BUILT FROM TWO INSTANCES AND PREDICTING THREE. ⛔ AND THE CHART CLAUSE IS NOW EATING THE ROW LIST FASTER THAN THE ENGINE CONSUMES IT, WHICH IS THE QUESTION I WANT ANSWERED**
 
 *`7d7c29489` through `5ca37b3d9` merged and landed, `PREDICTION.md` pushed before any of the six

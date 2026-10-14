@@ -10,6 +10,51 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛭ `re r7325` — THE ROW LIST IS NOT NEARLY SPENT: 24 OF THE 29 CHART-EXCLUDED UNITS ARE POINTWISE CLAIMS THAT B'S OWN NEAR-POINT CONVENTION PLUS E5 ALREADY REACHES. ⛔ THE REAL END IS `20` OF `111` (LIBRARY GAPS AND GLOBAL `S³` CLAIMS). ⌗ NEXT: ONE CUTOFF LEMMA AND AN `S²` PILOT, THEN ≈ `2,900` LINES OF REOPENED ROWS, AND THAT IS WHERE A SECOND SEAT PAYS (`r7325+71.1` to `+71.3`)
+
+*Result: `computations/formalisation/r7325_71_inventory/RESULT.md`; the list is `ROWS.tsv` in the same directory, with
+all `111` rows, each marked. Pre-registration first. The counts are a census, so each band is failable as a count
+(`r7325` ③).*
+
+- ***②.1, the list:***
+  - `29` done;
+  - `3` engine-reachable now (1, 3, 98);
+  - `18` rows and `6` halves chart-excluded but reopenable;
+  - `3` needing the engine in another dimension;
+  - `6` generic-metric identities;
+  - `32` no-connection rows not done;
+  - `3` real obstructions;
+  - `17` library gaps.
+  - *Every row has a route or a named obstruction; none left by looking unpromising.*
+- ***②.2, the chart clause:***
+  - `29` row-units, all from ONE cause: a compact sphere factor (`S²`, `S³`, `S⁵`, `S^{D−2}`).
+  - ⛔ ***The obstruction is mostly not real, and that is NOT what I registered.*** I predicted a library gap, an
+    `NDMetric` on an open set. In fact B already used "a profile equal to the named one near the point" nine times,
+    including SdS's vanishing `f`. A `sin²θ` vanishing at the poles is the same case.
+  - What kept these rows out was a second coordinate, and E5 (`r7323`) removes that.
+  - The real obstructions are `65`, `66`, `67`: global and spectral claims on `S³`. Rows `35` and `83` need another
+    dimension.
+- ***②.3, my judgement:***
+  - ***The line is not near its end.*** The end is `20` of `111` rows, 18 %, which need spectral theory, spinors, a
+    volume form, `G/H` or analysis on a compact manifold.
+  - ***The next campaign is a cutoff lemma*** (`ContDiffBump`, ≈ `80` lines). It proves the convention's
+    existence caveat ONCE for every row that uses it, B's included.
+  - Then an `S²` pilot (row 45, SdS Kretschmann, ≈ `150`), then the 24 reopened units at ≈ `2,900`.
+  - The port change is not needed.
+- ***②.4, a second seat:***
+  - ***Worth seating for the reopening, and for nothing smaller.*** The 24 units are independent and priced.
+  - It needs the lemma, the pilot as a template, and a split: I take the Kretschmann rows, it takes the Einstein-
+    tensor and foliation rows.
+  - My cost is ≈ `230` lines that are on the path anyway, plus splitting the `5½`-minute probe into an importable
+    module so two seats can build separately.
+- ***Scored:***
+  - L-1 `3` (in), L-2 `29` (in), L-3 `17` (exact), L-4 `35` (in).
+  - L-5, one cause: right. L-6: the kind is right, the mechanism wrong.
+  - I did not recommend the port change, which I had registered at p `0.6`.
+- *③: the failability sentence is in the registration, and will be in every one from here.*
+- ***Not built:*** the reopening is a reading until the pilot lands. ***That pilot is the one thing I would ask to be
+  ordered next.***
+
 ## ⛭ `re r7323` — THE PER-INSTANCE PRICE HELD AND THE STOP NEVER FIRED: THREE ROWS LAND AT `62`, `47` AND `162` (MEAN `90`, BAND `60`–`170`), WITH E5, THE TWO-VARIABLE RECIPE, AT `32`. ⛔ THE OTHER THREE (47, 102, 94) ARE FOLIATIONS OF A STATIC SPHERE, AND `CANDIDATES.md` HAD CALLED THEM `ℝ⁴` (`r7323+71.1` to `+71.5`)
 
 *Result: `computations/formalisation/r7323_71_instances/RESULT.md`. Pre-registration first (`+71.1`), before any
