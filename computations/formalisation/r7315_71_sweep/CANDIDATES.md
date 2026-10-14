@@ -150,3 +150,18 @@ for the first time.*
 
 ***Corrected counts:*** *candidates `33`. The three are listed as `ℝ⁴` above, and that was wrong: the `S²` sits in the
 foliation each claim is ABOUT, not in a chart that could be changed.* *No landed number depends on it.*
+
+## ⌗ Note appended at `r7327+71.5`, after the `S²` pilot landed: the chart clause's exclusions are REOPENED
+
+*Appended, not revised. `r7327` ④.4 orders this correction only after the pilot, and the pilot has landed (row 45,
+`sds_kretschmann`, `../r7327_71_cutoff_pilot/`).*
+
+- ***The chart clause above demanded a profile that never vanishes on all of `ℝ⁴`.*** B's own instances (`B1`,
+  `B4`–`B8`, `B10`, `B13`, `B14`) had already used profiles equal to the named one near the point. Since `r7327+71.2`,
+  the cutoff lemma `exists_global_profile` makes that convention a theorem: such a profile always exists.
+- With E5 and the coordinate recipe (`co_d1`/`co_d2`/`pr_d1`/`pr_d2`), a metric with an `S²` factor is an ordinary
+  instance. Row 45 landed at `149` lines.
+- ***So the 18 whole rows and 6 halves marked REOPENABLE in `../r7325_71_inventory/ROWS.tsv` are candidates again.***
+- The exclusions that STAND:
+  - rows 35 and 83, which need the engine in dimension `D` and `5`;
+  - rows 65, 66, 67, which are global claims on `S³`.
