@@ -114,3 +114,24 @@ first over the line, so the stop fires there with `k = 9`.***
 ***A candidate predicted above 200 cannot pass the rule. If it is reached, the run stops there.*** *So candidates
 10–37 are predicted unreachable under the registered rule, and the sweep's own result will say whether that
 prediction holds at candidate 10.*
+
+## ⌗ Correction at `r7319+71.1`, as `r7319` ① orders — the text above is kept as registered
+
+***Rows 0, 4, 5, 2, 3 and 72 each ALSO name P10's closed synchronous slicing `a = α cosh(T/α)` on `S³`.*** That
+half fails the chart clause, exactly like the 16 excluded rows. The classification above missed it by reading
+each row by its chartable half.
+
+| row | chartable half (a candidate) | `S³` half (chart-excluded) |
+|---|---|---|
+| 0 | max-symmetric invariants, `D = 4` (`B15`'s result) | `R` of the closed slicing |
+| 4 | P15's flat layer `sinh^{2/3}`, `R` runs (`B16`) | the closed slicing's `R` |
+| 5 | the layer's late limit `12H²` (`B17`) | the closed slicing's constant `R` |
+| 2 | `k = 0` (`frw_weyl`) and `k = −1` (the engine) | `k = +1` |
+| 3 | the shear-sector rank and `Weyl²` | the closed-FRW rank |
+| 72 | — | the closed-Friedmann ranks: ***wholly chart-excluded*** |
+
+***Corrected counts:***
+- **Candidates: 36.** Row 72 leaves the list.
+- **Chart-excluded: the 16 rows above, plus row 72, plus the `S³` halves of 0, 4, 5, 2 and 3.**
+
+*No landed number in `RESULT.md` depends on this correction.*

@@ -3556,6 +3556,80 @@ theorem frw_weyl (p : Fin 4 → ℝ) :
 
 end SweepB18
 
+/-! ## `r7319`, the `4D` engine (pre-registered at `r7317+71.6`) — E1: THE connection's curvature on constant fields
+for ANY diagonal metric `Σ cₖ(p) dxₖ²` on `ℝ⁴`, in closed form in `cₖ`, `∂cₖ` and `∂∂cₖ` at the point.
+***The interface is `curvD_eq`; nothing downstream needs `lcConn`, `kosz`, `curv_model` or `lcGam`.*** -/
+
+section Engine4D
+
+set_option synthInstance.maxHeartbeats 400000
+
+/-- First and second partials of a coefficient: `∂_v cₖ` and `∂_u ∂_v cₖ` at `p`. -/
+noncomputable def dC1 (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) (k : Fin 4) (v : Fin 4 → ℝ) : ℝ :=
+  fderiv ℝ (c k) p v
+noncomputable def dC2 (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) (k : Fin 4) (u v : Fin 4 → ℝ) : ℝ :=
+  fderiv ℝ (fderiv ℝ (c k)) p u v
+
+/-- `∂_u` of the Christoffel form `gamD`, componentwise. -/
+noncomputable def DGD (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (p u a b : Fin 4 → ℝ) : Fin 4 → ℝ := fun k =>
+  ((dC2 c p k u a * b k + dC2 c p k u b * a k - ∑ j, dC2 c p j u (Pi.single k 1) * (a j * b j)) * (2 * c k p)
+    - (dC1 c p k a * b k + dC1 c p k b * a k - ∑ j, dC1 c p j (Pi.single k 1) * (a j * b j)) * (2 * dC1 c p k u))
+    / (2 * c k p) ^ 2
+
+/-- **The engine's closed form**: `R(u,v)w = ∂_u Γ(v,w) − ∂_v Γ(u,w) + Γ(u,Γ(v,w)) − Γ(v,Γ(u,w))`. -/
+noncomputable def curvD (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (p u v w : Fin 4 → ℝ) : Fin 4 → ℝ :=
+  DGD c p u v w - DGD c p v u w + gamD c p u (gamD c p v w) - gamD c p v (gamD c p u w)
+
+variable {c : Fin 4 → (Fin 4 → ℝ) → ℝ} (hc : ∀ i p, c i p ≠ 0) (hcs : ∀ i, ContDiff ℝ ∞ (c i))
+include hc hcs
+
+omit hc in
+lemma dC1_hasFDerivAt (p : Fin 4 → ℝ) (k : Fin 4) (v : Fin 4 → ℝ) :
+    HasFDerivAt (fun y => fderiv ℝ (c k) y v) ((fderiv ℝ (fderiv ℝ (c k)) p).flip v) p := by
+  have h2 := ((hcs k).fderiv_right (m := ∞) (by simp)).differentiable (by simp) p
+  exact (h2.hasFDerivAt.clm_apply (hasFDerivAt_const v p)).congr_fderiv (by ext; simp)
+
+lemma gamD_comp_hasFDerivAt (p a b : Fin 4 → ℝ) (k : Fin 4) :
+    ∃ L : (Fin 4 → ℝ) →L[ℝ] ℝ, HasFDerivAt (fun y => gamD c y a b k) L p ∧ ∀ u, L u = DGD c p u a b k := by
+  have hN : HasFDerivAt (fun y => fderiv ℝ (c k) y a * b k + fderiv ℝ (c k) y b * a k
+      - ∑ j, fderiv ℝ (c j) y (Pi.single k 1) * (a j * b j)) _ p :=
+    HasFDerivAt.sub (HasFDerivAt.add ((dC1_hasFDerivAt hcs p k a).mul_const _) ((dC1_hasFDerivAt hcs p k b).mul_const _))
+      (HasFDerivAt.fun_sum fun j _ => (dC1_hasFDerivAt hcs p j _).mul_const _)
+  have hD : HasFDerivAt (fun y => 2 * c k y) _ p :=
+    (((hcs k).differentiable (by simp) p).hasFDerivAt).const_mul 2
+  have hq := HasFDerivAt.mul hN ((hasDerivAt_inv (mul_ne_zero two_ne_zero (hc k p))).comp_hasFDerivAt p hD)
+  refine ⟨_, hq, fun u => ?_⟩
+  simp only [DGD, dC1, dC2]
+  have := hc k p
+  simp
+  field_simp
+  rw [Finset.sum_congr rfl fun x _ => (by ring : a x * b x * fderiv ℝ (fderiv ℝ (c x)) p u (Pi.single k 1)
+    = fderiv ℝ (fderiv ℝ (c x)) p u (Pi.single k 1) * a x * b x)]
+  ring
+
+/-- `∂_u` of `gamD` as a vector. -/
+lemma fderiv_gamD (p u a b : Fin 4 → ℝ) : fderiv ℝ (fun y => gamD c y a b) p u = DGD c p u a b := by
+  choose L hL hLu using fun k => gamD_comp_hasFDerivAt hc hcs p a b k
+  have hd : DifferentiableAt ℝ (fun y => gamD c y a b) p := differentiableAt_pi.2 fun k => (hL k).differentiableAt
+  funext k
+  rw [show fderiv ℝ (fun y => gamD c y a b) p u k = fderiv ℝ (fun y => gamD c y a b k) p u by
+    rw [_root_.fderiv_apply hd k]; rfl, (hL k).fderiv, hLu]
+
+/-- **E1, the engine.** THE connection's curvature of `Σ cₖ dxₖ²` on constant fields is `curvD`. -/
+theorem curvD_eq (p u v w : Fin 4 → ℝ) :
+    curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 c) (diag4_symm _) (fun p u h => diag4_nondeg (fun i => hc i p) u h)
+      ((diag4_smooth hcs).differentiable (by simp)))) (fun _ => u) (fun _ => v) (fun _ => w) p = curvD c p u v w := by
+  have hGd : Differentiable ℝ (lcGam (diag4 c)) :=
+    (lcGam_smooth (fun p u h => diag4_nondeg (fun i => hc i p) u h) (diag4_smooth hcs)).differentiable (by simp)
+  have hF : ∀ e a b, fderiv ℝ (lcGam (diag4 c)) p e a b = DGD c p e a b := fun e a b => by
+    rw [fderiv_apply₂' (hGd p), show (fun y => lcGam (diag4 c) y a b) = fun y => gamD c y a b from
+      funext fun y => lcGam_diag4 hc hcs y a b, fderiv_gamD hc hcs]
+  rw [curv_model _ _ (fun x w u => lcConn_const (diag4_symm _) _ _ x w u) hGd, hF, hF,
+    lcGam_diag4 hc hcs, lcGam_diag4 hc hcs, lcGam_diag4 hc hcs, lcGam_diag4 hc hcs]
+  rfl
+
+end Engine4D
+
 
 end ShadowProbe
 
