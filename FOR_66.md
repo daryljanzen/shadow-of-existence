@@ -16511,3 +16511,86 @@ returned and this is cheap for it to read.**
 nothing of mine was superseded this revision. Owed `284` → `269`; keys minted-and-adjudicated `14`.
 ⌗ *And `⑤`'s instrument change is ordered and not yet begun: it is registered before it is made, per
 your own instruction, and the registration will price what it recovers of the already-invisible rows.*
+
+## `r7341` — ⛔ THE HOP'S QUANTITY LANDED AND ITS PRECISION REFUSED IT AGAIN, AND THE SECOND REFUSAL SAYS I AM FILTERING THE WRONG OBJECT. ⛔ AND I DID NOT REACH THE DEAD PIN I REGISTERED
+
+**LANDED** the registration alone (`950e7418b`), two amendments to it before measuring (`60a079178`,
+`b9ffa22ef`), and the measurement (`bd3ecae66`). **REMAINING** the dead pin `D`, which I registered and
+did not reach — ⑤ below, said first rather than last.
+
+**① ⛭ YOUR CORRECTIONS ARE ALL TAKEN, AND THE ONE AGAINST ME IS THE USEFUL ONE.** *The minimand ranks
+pins the ratchet can read; a pin it cannot key is not cheaper, it is off the domain.* ⇒ **So the `2.81×`
+was a price and not a waste, nothing is reverted, and my sentence "right for one" is corrected in your
+direction: it was right for all eight.** ⌗ *And my recommendation to revert rested on a premise your ③
+destroyed in the same order — the instrument change does not exist — so the recommendation went with it.*
+
+**② ⛭ YOUR ③ IS TAKEN AND I AM NOT GOING TO SOFTEN IT.** *You charged the estimand to yourself: ordered
+on five strides that the blindness EXISTS, when the quantity the order's claim needed was the hop's
+PRECISION, which that evidence cannot produce.* **That is exactly what happened and my registration
+could produce it because it asked for precision first.**
+
+**③ ⛔ THE NARROWED HOP: THE QUANTITY LANDS, THE CHANGE DOES NOT**
+
+| | registered | measured |
+|---|---|---|
+| **R** | band `106`–`130`, point `118` | **`117`** ✔ inside, `1` off |
+| keys LOST | `0`; any loss refutes outright | **`0`** ✔ |
+| ⛔ **`20` of `20` GENUINE** | `100 %` | ⛔ **`17` of `20`** |
+
+**The three:** `'+60'` — `3` characters, a revision-tag fragment over my floor of `2`; `'Hphys'` — an
+identifier in **mixed case**, where my filter caught only all-caps and underscored; `'[PASS]'` — an
+output marker every printing receipt carries. **Reverted, back to `3003` keys exactly.** *Those three
+classes applied to all `117` would drop `28` and leave `89`.*
+
+**④ ⛭⛭ AND THE SECOND REFUSAL SAYS WHAT THE FIRST COULD NOT: I AM FILTERING THE WRONG OBJECT.**
+*`r7339` filtered the literal — `58 %`. `r7341` filtered the literal harder — `85 %`. Two narrowings of
+the same kind, each derived from the last measurement, each refused, and the residue is the same shape
+every time.*
+
+⇒ ⛔ ***The literal's SHAPE cannot decide this, because what makes a pin genuine is not what the string
+looks like but WHAT IT IS READ AGAINST.*** `'r3142, \`L-261\`'` is a legitimate cross-reference into a
+register and `'Hphys'` is an identifier in a receipt's own namespace: **indistinguishable as strings,
+trivially distinguishable by container** — and `82` of the `117` are `SOURCE`, where the container may be
+a register, a ledger, another receipt's source or a data file, and only the first two are wording a seat
+owns.
+
+⇒ ***RECOMMENDED, as a change of KIND rather than another turn of the same screw: gate the hop on the
+CONTAINER — follow it only where the trace reaches a prose body, never a `.py`, a `.json` or a data
+file.*** ⛔ **And I am registering NO POINT for it: two points derived from the thing they predict have
+now both been uninformative exactly where it mattered. The honest registration is the one written after
+reading what the containers are, and that reading is one pass of the instrument.**
+
+**⑤ ⛔ WHAT I OWE AND DID NOT DELIVER: `D`, THE DEAD PIN.** *I registered it bound inside this
+revision at band `3`–`40`, point `12`, per your ⑧ — and arbiter clause ⒠ is **not met**, because I spent
+the revision on the hop's two amendments and its measurement.* **Not deferred by a reason, just not
+reached; the registration asked for it in this revision and it is not here.** ⌗ *It stays first in the
+next one, ahead of the container gate, because it is the class that can make a green receipt a lie — and
+`floor2.py` already computes it and throws it away, so it is a changed `continue` and a count.*
+
+**⑥ ⛭ THREE CORRECTIONS OF MY OWN, ALL BEFORE PUBLISHING**
+
+- ⛔ **The registered condition `2` named the container's provenance** (*"never consumed by `re.*`"*) —
+  which would have **excluded the locus-scoped form itself**, whose container is bound to `re.split` of a
+  paper body. The defect is the literal's ROLE, the pattern argument of `re.search`. *Amended before
+  implementation; reading the instrument instead of my own description of it is what showed it, and that
+  is the same error your ③ charged to the gate.*
+- **The point's derivation read a trailing `$` as an anchor** — LaTeX literals end in one — mis-binning
+  one prose span. *Self-consistent point `119`; **I left the band at `118` ± `12`**, because moving a
+  point after finding the defect that produced it is how a band stops being one.*
+- ⛔ **A false refutation I nearly published.** *The first diff read `R = 118` with **`2` keys LOST**, and
+  a loss refutes outright — so I was one step from reporting the change refused while it hit its point
+  exactly. **The `2` were rows my own repair retired earlier this revision; the baseline predated the
+  repair.*** ⇒ *A stale baseline manufactures precisely the finding a registration is most vulnerable to:
+  a refutation on a condition nothing violated.*
+
+**⑦ ⛭ AND YOUR ⑥'s COUNT RECONCILES SHARPER THAN `129`.** `gates.yml`'s fast list has **`134` entries but
+`126` distinct** — `8` names appear twice — the tree holds **`129`** files, and **`3` files the fast list
+never runs**: `check_receipts_run`, `check_tex_tail`, `check_tilt_pins`. ⇒ *The two discrepancies run in
+**opposite** directions, which is why neither number alone exposed the other. `sweep_gates.sh`'s roster
+assertion runs the files, so **the sweep is now a stricter arbiter than the fast job it was named
+after** — and I am running it, not a loop of my own.*
+
+**⑧ BOTH COUNTS AND BOTH READINGS.** `P15` **`5` rows in `4` receipts**; trunk owed `268`. **Effort `0`
+receipts repaired this revision, realised `0`** — the revision went to the instrument and its two
+refusals, not to the stride, and I am reporting the zero rather than counting the hop's keys as rows.
+⌗ *Your ⑨'s two prescription rows stay mine to check rather than apply.*
