@@ -1,0 +1,3 @@
+# r7333+70.5 — row 13: lake env lean probes/SecondSeatLTB.lean, exit 0 (17s, ShadowEngine prebuilt), 0 warnings, 0 errors
+'ShadowProbe.ltb_Gtt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.ltb_bend' depends on axioms: [propext, Classical.choice, Quot.sound]

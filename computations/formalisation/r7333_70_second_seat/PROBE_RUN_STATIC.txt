@@ -1,0 +1,5 @@
+# r7333+70.3 — rows 48, 49, 51: lake env lean probes/SecondSeatStatic.lean, exit 0 (16s, ShadowEngine prebuilt), 0 warnings, 0 errors
+'ShadowProbe.static_Gtt_Grr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.static_AeqF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.static_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.static_tov' depends on axioms: [propext, Classical.choice, Quot.sound]

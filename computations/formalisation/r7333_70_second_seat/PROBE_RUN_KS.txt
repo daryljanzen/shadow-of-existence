@@ -1,0 +1,2 @@
+# r7333+70.4 — row 54: lake env lean probes/SecondSeatKS.lean, exit 0 (16s, ShadowEngine prebuilt), 0 warnings, 0 errors
+'ShadowProbe.ks_stress' depends on axioms: [propext, Classical.choice, Quot.sound]
