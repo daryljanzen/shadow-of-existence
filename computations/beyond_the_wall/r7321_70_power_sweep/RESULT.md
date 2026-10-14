@@ -84,10 +84,13 @@ re-scored, withdrawn or ranked. The rulings are 66's.***
 
 - **On the registration read strictly** (without (1) and (2)): R 29, U-PASS 55, U-FAIL 45, U-? 6. The classes move by
   5–7 entries each, and none of 66's named entries moves.
-- **Small-n artefacts:** two R entries are R only because Wilson is narrow at an extreme count.
+- **Small-n artefacts:** four R entries are R only because Wilson is narrow at an extreme count (0 or all of n).
   - M-d is 2 of 2 against a band of 15–85, at h 32.9 and δ 35.
   - r7300 ⓑ-L230-RO is 0 of 3, at h 28.1 and δ 33.5.
-  - Both are R by the rule as written. Neither is resolvable in any useful sense.
+  - r7296 ⓐ L210 MH is 0 of 10.
+  - r7311 L-b is 0 of 6.
+  - All four are R by the rule as written. None is resolvable in any useful sense, so R is 32, not 36, once they are
+    set aside.
 
 ## The clustering limit
 
@@ -118,7 +121,7 @@ re-scored, withdrawn or ranked. The rulings are 66's.***
 - **This is reported, not ranked.** The per-file split is in `TABLE.tsv`.
 - **The pattern is one of design, not of seat.**
   - Every entry on a held set of 64–69 keys with a registered δ of at least 13 is R.
-  - Every prefix read of 3–12 keys is U, whatever was registered.
+  - Every prefix read of 3–12 keys is U, whatever was registered, except the extreme-count artefacts above.
   - **39 entries had no δ registered at all**: a line with no central, a band with no centre or edges, a direction
     only. They are U by the rule fixed in advance.
 
