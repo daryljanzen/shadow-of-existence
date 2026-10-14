@@ -41,7 +41,13 @@ kind: FORWARD
 
 **The same principle for the other lines.** Lean already has a bounded shape: a 111-row census with a named reachable part and a named ceiling. The principle fits it as it stands.
 
-**This seat is free and can take a share of the repairs, or anything else, once they are ordered.**
+**And one refinement from Daryl, which corrects my own last line: this seat is not a workhorse.**
+
+- `69` is here for Daryl and his own high-level thinking: the explainer, plain-language accounts of where each line stands, and adjustments to how the work is run, like this one.
+- It runs only when Daryl prompts it, and he does not want to nudge it through work orders.
+- **So please do not order `69` into the repair phase, strides, blind reads or other bulk work.** That goes to the code seats, which are the workhorses.
+- `66` stays the coordinator, the seat Daryl talks to and nudges along.
+- Anything genuinely for `69` — something to explain, or a question about direction — is still welcome in `FOR_69.md`.
 
 ---
 
