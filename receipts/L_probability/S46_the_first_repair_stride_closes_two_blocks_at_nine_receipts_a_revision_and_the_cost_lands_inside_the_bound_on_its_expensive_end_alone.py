@@ -21,6 +21,19 @@ that figure replaces the bound's prediction and decides whether `70` stays secon
   => ** And on the rows `cc66`'s clause ACTUALLY DECIDED it is `12` of `12`: the one case filed in
      that block is a PROXY row, not a disjunction row, so the clause stands unamended. **
 
+⛔⛭⛭⛭ *** READ SECTION G FIRST: FIVE OF THE NINE RECEIPTS BELOW WERE ALREADY REPAIRED WHEN THIS
+    STRIDE REPAIRED THEM. ***  *The block the order sent this seat into FIRST had been repaired by
+    the other seat one revision earlier; the trunk kept that seat's versions and the next revision's
+    orders concede the assignment.*  ** So this receipt now reports TWO rates and lets neither stand
+    for the other: the per-receipt EFFORT, which is what a repair costs and what the order asked
+    for, and the REALISED rate, which is what a backlog actually falls by. **  ⇒ *Effort `9` a
+    revision, `7.4` cycles, inside the top of `8`; realised `4` a revision against the `62` that
+    were ever this seat's, `15.5` cycles, outside it -- and the gap is exactly the duplicated block
+    on both sides of the arithmetic.*  ⌗ ** The effort rate is the one that forecasts, because
+    duplication is a property of the ASSIGNMENT and not of the stride.  Everything below is the
+    stride as it was measured, with its historical claims now pinned to this revision's own commits
+    rather than to a live file later seats write. **
+
 *** ⓒ THE COST: `9` RECEIPTS IN ONE REVISION, AGAINST `66`'s PREDICTED `11`-`16` A CYCLE.  THIS
     SEAT'S `67` RECEIPTS AT THAT RATE ARE `7.4` CYCLES, INSIDE THE BAND'S TOP OF `8` BY `0.6`. ***
   ⚠ ** AND THE RATE IS MEASURED ON THE EXPENSIVE END ALONE, which the order chose on purpose: **
@@ -79,6 +92,17 @@ print(__doc__)
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
 ORDER = '46fed61a'              # r7331's orders on the trunk
 PREG = 'ad66413b'               # the commit that PUSHED the registration, before any repair
+# ⛔⛭⛭⛭ RE-PINNED AFTER THE TRUNK ANSWERED, AND THE ANSWER IS THE FINDING AT SECTION G.  *Five of
+#   the nine receipts this stride repaired had ALREADY been repaired in the trunk, by the other
+#   seat, one revision earlier -- so the trunk kept that seat's versions and dropped this seat's,
+#   and every clause here that read the LIVE ledger for what THIS REVISION minted went red on a
+#   state it does not describe.*
+#   ⇒ *** `L-249`'s rule, applied to this receipt's own numbers: what this revision DID is a fact
+#     about history and is read at this revision's own last content commit; what the TRUNK carries
+#     is read live, asserted separately, and allowed to differ. ***  ** A receipt whose historical
+#     claims read a live file is a receipt the next seat's work can falsify without touching it. **
+MINE = '2fda7677'               # this revision's own last content commit, in the trunk's history
+TRUNK = '53b0944d'              # the trunk commit where the next revision's orders answered it
 BLOCKS = ('/L147_two_arm/', '/L165_defining_the_sum/')
 RECEIPTS = sorted(
     [f'receipts/L147_two_arm/{n}' for n in os.listdir(os.path.join(ROOT, 'receipts/L147_two_arm'))
@@ -154,7 +178,7 @@ gate(f'Ⓒ①  ⛭⛭ BOTH BLOCKS CARRY NO OWED ROW, and what they HELD is read 
      f'commit **',
      len(_was) == K.ROWS and len(_was_recs) == K.A_DONE and not _now)
 
-_minted = [c for c in ledger() if any(b in c[0] for b in BLOCKS) and 'r7332+60' in c[6]]
+_minted = [c for c in ledger(MINE) if any(b in c[0] for b in BLOCKS) and 'r7332+60' in c[6]]
 _verdicts = collections.Counter(c[5] for c in _minted)
 print(f'      keys this revision minted in the two blocks: {len(_minted)};  verdicts {dict(_verdicts)}')
 gate(f'Ⓒ②  and EVERY KEY THE REPAIRS MINTED IS ADJUDICATED IN THE SAME PUSH: `{len(_minted)}` keys, '
@@ -164,6 +188,27 @@ gate(f'Ⓒ②  and EVERY KEY THE REPAIRS MINTED IS ADJUDICATED IN THE SAME PUSH:
      f'fragments of ONE sentence are ONE pin **',
      len(_minted) == K.KEYS and set(_verdicts) == {'EXTENDED'}
      and not [c for c in _minted if c[5] == 'UNADJUDICATED'])
+
+# ⛭⛭ AND THE LIVE LEDGER IS ASSERTED SEPARATELY AND ALLOWED TO BE SMALLER, which is the half the
+#   first form left out: a key this revision minted can be SUPERSEDED by another seat's earlier
+#   repair of the same receipt, and a receipt that cannot say so reads its own supersession as a
+#   defect in itself.
+_live = [c for c in ledger() if any(b in c[0] for b in BLOCKS) and 'r7332+60' in c[6]]
+_live_recs = sorted({c[0] for c in _live})
+_gone_recs = sorted({c[0] for c in _minted} - set(_live_recs))
+_super = {r: sorted({c[6].split(',')[0].strip() for c in ledger() if c[0] == r
+                     and c[5] != 'REPAIR-OWED' and 'r7329' in c[6]}) for r in _gone_recs}
+print(f'      of those {len(_minted)} keys, {len(_live)} are live, in {len(_live_recs)} receipt(s);  '
+      f'{len(_gone_recs)} receipt(s) superseded: '
+      f'{ {r.split("/")[-1][:4]: v for r, v in _super.items()} }')
+gate(f'Ⓒ③  ⛭⛭ AND THE LIVE LEDGER IS SMALLER THAN WHAT THIS REVISION MINTED, WHICH IS SUPERSESSION '
+     f'AND NOT LOSS: `{len(_live)}` of the `{len(_minted)}` keys stand live, every one of them still '
+     f'`EXTENDED`, and the `{len(_gone_recs)}` receipts whose keys are gone each carry rows minted by '
+     f'ANOTHER SEAT at the PREVIOUS revision -- the repair that was already there before this one '
+     f'started.  ** The monotone statement is the only one a receipt may make about a file later '
+     f'seats write: what it minted is pinned, what survives is read, and the difference is named **',
+     _live and all(c[5] == 'EXTENDED' for c in _live) and len(_live) <= len(_minted)
+     and _gone_recs and all(_super[r] for r in _gone_recs))
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 head('D -- EVERY REPAIRED RECEIPT RE-RUNS GREEN, AND NO RETIRED LITERAL SURVIVES')
@@ -180,10 +225,29 @@ gate(f'Ⓓ①  ALL `{len(_runs)}` REPAIRED RECEIPTS RE-RUN GREEN on this tree, r
      f'receipt red is not a repair **',
      all(rc == 0 and nf == 0 for rc, nf in _runs.values()) and len(_runs) == K.A_DONE)
 
+# ⛔⛭⛭ SCOPED AFTER THE TRUNK ANSWERED.  *The claim is about THIS REVISION's repairs, and the
+#   trunk carries five of the nine receipts in the OTHER seat's form -- whose arms are that seat's
+#   to choose.  Measured: the superseded `B10` keeps two literals this revision retired, which is
+#   not a repair left half-done but a DIFFERENT repair, adjudicated under its own revision's rows.*
+#   ⇒ The parse runs over the receipts whose repair this revision's own work is still what the
+#     trunk reads, and the others are asserted to be another revision's by their own last commit --
+#     which is the specific negative that keeps the claim honest instead of dropping it.
+_LASTREV = re.compile(r'\br(\d{4})\b')
+# ⌗ *AND THE PARTITION IS READ AT THE TRUNK COMMIT WHERE THE ANSWER CAME, not live: which seat's
+#   repair the trunk carries is a fact about THAT commit, and a later seat re-repairing any of these
+#   nine must not be able to move a count this receipt states.  ** The two sizes below are therefore
+#   closed facts about `TRUNK`, and their sum is asserted against this revision's own receipt count
+#   rather than against a literal. **
+_last_rev = {rel: (_LASTREV.search(git('log', '--no-merges', '-1', '--format=%s', TRUNK, '--', rel)
+                                   or '') or [None])
+             for rel in RECEIPTS}
+_last_rev = {rel: (m.group(1) if hasattr(m, 'group') else None) for rel, m in _last_rev.items()}
+_mine_now = [rel for rel in RECEIPTS if _last_rev[rel] == '7332']
+_superseded = [rel for rel in RECEIPTS if _last_rev[rel] != '7332']
 _retired = {c[1][1:-1] for c in _was}
 _survivors = {}
-for _rel in RECEIPTS:
-    _src = io.open(os.path.join(ROOT, _rel), encoding='utf-8').read()
+for _rel in _mine_now:
+    _src = git('show', f'{TRUNK}:{_rel}')
     _consts = {n.value for n in ast.walk(ast.parse(_src))
                if isinstance(n, ast.Constant) and isinstance(n.value, str)}
     _hit = sorted(c for c in _consts if any(c == r.replace('\\\\', '\\') for r in _retired))
@@ -195,7 +259,18 @@ gate(f'Ⓓ②  and ⛔ **NO RETIRED LITERAL SURVIVES AS A CONSTANT, as the speci
      f'`{len(_retired)}` of them are read off the ledger at the registration commit and PARSED out '
      f'of each receipt\'s own syntax tree, not grepped, and `{len(_survivors)}` remain.  ** A repair '
      f'that leaves the old arm in place beside the new one has widened nothing **',
-     not _survivors and len(_retired) >= 30)
+     not _survivors and len(_retired) >= 30
+     and _mine_now and len(_mine_now) + len(_superseded) == len(RECEIPTS))
+
+print(f'      and the other {len(_superseded)} are another revision\'s in the trunk: '
+      f'{ {r.split("/")[-1][:4]: _last_rev[r] for r in _superseded} }')
+gate(f'Ⓓ③  ⛔ **AND THE `{len(_superseded)}` RECEIPTS NOT PARSED ABOVE ARE NOT SKIPPED BUT NAMED, as '
+     f'the specific negative they are**: each one\'s last commit in the trunk carries a DIFFERENT '
+     f'revision than this one, so its arms are the other seat\'s choice and this receipt asserts '
+     f'nothing about which literals they keep.  ** A claim that cannot be made about a file another '
+     f'seat now owns is dropped WITH ITS REASON, never quietly narrowed **',
+     _superseded and len(_superseded) + len(_mine_now) == K.A_DONE
+     and all(_last_rev[r] and _last_rev[r] != '7332' for r in _superseded))
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 head('E -- THE TWO ARMS SCORED, AND THE COST WITH THE DIRECTION OF ITS ERROR NAMED')
@@ -250,13 +325,19 @@ head('F -- THE RESTRAINT: TWO BLOCKS, NO OTHER SEAT\'s WORK, AND THE CASES ON TH
 #     gate now also forbids writing any other non-receipt file under that tree -- strictly stronger
 #     than the form it replaces, and stable whether or not this receipt is itself committed. ***
 _REGISTER = os.path.join('receipts', 'INDEX.md')
-_range_all = sorted({f for f in git('diff', '--name-only', f'{PREG}~1', 'HEAD').split('\n')
+# ⛔⛭⛭⛭ AND THE RANGE IS PINNED AT BOTH ENDS AFTER ITS SECOND RED.  *The first form ended the
+#   range at `HEAD`, which was this revision's own tip for exactly as long as it took the trunk to
+#   move: the moment the branch merged the trunk in, the range held every seat's work since the
+#   registration and the restraint clause read thirty-six commits of other people's receipts as
+#   this revision's own.*  ⇒ *** A revision's range is a CLOSED interval between two of its own
+#   commits, and naming it that way is what makes the restraint assertable at any later time. ***
+_range_all = sorted({f for f in git('diff', '--name-only', f'{PREG}~1', MINE).split('\n')
                      if f.startswith('receipts/')})
 _range = [f for f in _range_all
           if f.endswith('.py') and os.path.basename(f) != os.path.basename(__file__)]
 _nonrec = [f for f in _range_all if not f.endswith('.py')]
 _outside = [f for f in _range if not any(b in '/' + f for b in BLOCKS)]
-print(f'      receipt files in {PREG}~1..HEAD (this one aside): {len(_range)};  outside the two '
+print(f'      receipt files in {PREG}~1..{MINE} (this one aside): {len(_range)};  outside the two '
       f'blocks: {_outside};  non-receipt paths: {_nonrec}')
 gate(f'Ⓕ①  ⛔ **ONLY THE TWO ORDERED BLOCKS ARE TOUCHED, as the specific negative it is**: the '
      f'`{len(_range)}` RECEIPT FILES in this revision\'s own range are exactly the `{K.A_DONE}` it '
@@ -273,6 +354,63 @@ gate(f'Ⓕ②  and BOTH CASES ARE ON THE RECORD BESIDE THEIR REPAIRS, which is t
      f'** A row leaves the list by being repaired or withdrawn WITH ITS CASE WRITTEN DOWN, never by '
      f'reclassification **',
      len(_cases) == K.CASES and all('r7332+60' in c[6] for c in _cases))
+
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+head('G -- THE DUPLICATION, MEASURED: WHAT THE STRIDE COST AND WHAT THE TRUNK ACTUALLY GAINED')
+
+# ⛭⛭⛭ THIS SECTION DID NOT EXIST WHEN THE STRIDE WAS WRITTEN.  *It is here because the trunk
+#   answered: the block the order sent this seat into FIRST had already been repaired by the other
+#   seat at the previous revision, and the trunk kept that seat's versions.*  ** So the effort this
+#   revision spent and the backlog it actually cleared are two different numbers, and the figure
+#   the order asked for depends on which one it meant. **  Both are computed here and neither is
+#   allowed to stand for the other.
+_dup_rows = [c for c in _was if c[0] in _superseded]
+_mine_rows = [c for c in _was if c[0] in _mine_now]
+print(f'      effort: {len(RECEIPTS)} receipts and {len(_was)} rows repaired in this revision;  '
+      f'superseded: {len(_superseded)} receipts and {len(_dup_rows)} rows;  '
+      f'net to the trunk: {len(_mine_now)} receipts and {len(_mine_rows)} rows')
+gate(f'Ⓖ①  ⛔⛭⛭ **FIVE OF THE NINE RECEIPTS WERE ALREADY REPAIRED WHEN THIS STRIDE REPAIRED THEM**, '
+     f'and the trunk says so in two independent ways rather than in prose: each of the '
+     f'`{len(_superseded)}` carries a LAST COMMIT from the previous revision, and each carries '
+     f'ledger rows minted under that revision.  ** `{len(_dup_rows)}` of this revision\'s '
+     f'`{len(_was)}` rows were a second payment for rows already closed **',
+     len(_superseded) > len(_mine_now) and _dup_rows and _mine_rows
+     and len(_dup_rows) + len(_mine_rows) == len(_was)
+     and len(_superseded) + len(_mine_now) == len(RECEIPTS))
+
+_eff_cycles = K.STRIDE_RECEIPTS / K.A_DONE
+_own_backlog = K.STRIDE_RECEIPTS - len(_superseded)
+_net_cycles = _own_backlog / len(_mine_now)
+print(f'      the two readings: effort {K.A_DONE} a revision ⇒ {_eff_cycles:.1f} cycles for '
+      f'{K.STRIDE_RECEIPTS}, top {K.CYCLE_TOP};  realised {len(_mine_now)} a revision ⇒ '
+      f'{_net_cycles:.1f} cycles for the {_own_backlog} that were this seat\'s to clear')
+gate(f'Ⓖ②  ⛭⛭⛭ **AND THE COST FIGURE THE SECONDMENT TURNS ON READS TWO WAYS, SO BOTH ARE PUT UP**: '
+     f'the PER-RECEIPT EFFORT, which is what the order asked for and what a repair costs, is '
+     f'`{K.A_DONE}` a revision and `{_eff_cycles:.1f}` cycles, INSIDE the top of `{K.CYCLE_TOP}`; '
+     f'the REALISED rate, which is what a backlog actually falls by, is `{len(_mine_now)}` against '
+     f'the `{_own_backlog}` that were ever this seat\'s, and `{_net_cycles:.1f}` cycles, OUTSIDE it. '
+     f'⇒ *** And the gap is not a disagreement about the work: it is exactly the duplicated block, '
+     f'`{len(_superseded)}` receipts on both sides of the arithmetic. *** ⚠ ** The effort rate is the '
+     f'one that forecasts, because duplication is a property of the ASSIGNMENT and not of the '
+     f'stride -- which is why the number is reported with the assignment named and not averaged.  '
+     f'⌗ And the trunk\'s own reading sits between the two and is the one the phase runs on: it '
+     f'POOLS the seats, so a row repaired twice is counted once and the duplicated work shows up as '
+     f'effort spent rather than as progress claimed **',
+     _eff_cycles <= K.CYCLE_TOP and _net_cycles > K.CYCLE_TOP
+     and _own_backlog + len(_superseded) == K.STRIDE_RECEIPTS
+     and len(_mine_now) + len(_superseded) == K.A_DONE)
+
+_CONCEDED = ['WAS ALREADY DONE WHEN I TOLD YOU TO START THERE', 'THAT IS MINE, NOT YOURS',
+             'pooled rate', 'a re-cut applies to work not yet begun']
+_ord_next = git('show', f'{TRUNK}:FOR_60.md')
+print(f'      the assignment conceded at {TRUNK}: {[s in _ord_next for s in _CONCEDED]}')
+gate(f'Ⓖ③  ⌗ AND THE MISASSIGNMENT IS NOT THIS SEAT\'s CLAIM BUT THE ORDERING SEAT\'s OWN, read at '
+     f'the trunk commit that carries it: the next revision\'s orders say the block was already done '
+     f'when this seat was told to start there, pool the two seats\' rates rather than adding them, '
+     f'and fix the protocol so that a re-cut applies to work not yet begun.  ** Which settles whose '
+     f'cost the duplicated five are and leaves this receipt reporting the measurement rather than '
+     f'arguing it **',
+     all(s in _ord_next for s in _CONCEDED))
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print()
@@ -293,6 +431,14 @@ print(f'  ⛭⛭ ** THE COST: {K.A_DONE} RECEIPTS A REVISION ⇒ {_cycles:.1f} C
 print('     ⚠ Measured on the expensive end alone, so it is a lower bound on the rate and an upper')
 print('     bound on the cost; the cheap tail is unmeasured and moves it down, never up.')
 print('  ⛔ Two cases filed beside their repairs, which is the refinement path running.')
+print(f'  ⛔⛭⛭ ** AND FIVE OF THE NINE WERE ALREADY REPAIRED: {len(_dup_rows)} of the {len(_was)} rows')
+print('     were a second payment for rows the other seat closed one revision earlier, and the')
+print(f'     trunk kept its versions. ** ⇒ Effort {K.A_DONE} a revision = {_eff_cycles:.1f} cycles,')
+print(f'     INSIDE the top of {K.CYCLE_TOP}; realised {len(_mine_now)} a revision = '
+      f'{_net_cycles:.1f} cycles for the')
+print(f'     {_own_backlog} that were ever this seat\'s, OUTSIDE it -- and the gap IS the duplicated')
+print('     block, on both sides of the arithmetic.  The effort rate is the one that forecasts,')
+print('     because duplication is a property of the assignment and not of the stride.')
 if FAILURES:
     print('\n  FAILED:')
     for f in FAILURES:
