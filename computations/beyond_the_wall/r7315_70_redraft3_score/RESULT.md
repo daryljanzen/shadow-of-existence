@@ -20,7 +20,7 @@
 | UNDECIDED, 70 and 71 | 1 and 4 | **0 and 2**, gap 2.9 |
 | without the 20 SEEN keys | 42/46, bound 79.7 | **43/47 = 91.5%, bound 80.1** |
 
-**Resolvable, on r7321's sweep:** the registered effect is 15.2 (J-d's 89 against 73.8), and h is 7.4.
+**Resolvable, on r7321's sweep:** the registered effect is 15.2 (J-d's 89 against 73.8), and h is 7.8 (78.2–93.8).
 
 ## ② Calibration: NOT CREDITED
 
