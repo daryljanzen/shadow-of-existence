@@ -155,6 +155,8 @@ def main():
     #   that cannot fail.  ** Measured before performing: the clause stands ONCE in the flattened
     #   file and its count arrived once and has never changed, so the widening trades a cannot-fail
     #   arm for a single-site one and not for a reword exposure. **
+    #   ⌗ EDITED HERE ON `r7331`'s order ④, which named this block and sent this seat into it;
+    #     the receipt's own authorship is unchanged and nothing outside the owed rows is touched.
     check('and step 6 asking about FILES rather than about content inside one file is a real gap '
           "in this line's checklist -- which is node 56's own finding and is asserted here as the "
           'whole clause it wrote it in, quoted in the condition below rather than paraphrased',

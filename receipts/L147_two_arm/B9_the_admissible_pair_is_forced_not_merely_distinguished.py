@@ -106,6 +106,8 @@ def main():
     #      what cc66's clause asks for: a conjunction of one rather than a disjunction of two.
     #      ⌗ ONE site in the normalised paper, and the raw markered form's count has never changed
     #        over the file's 348 commits.
+    #   ⌗ EDITED HERE ON `r7331`'s order ④, which named this block and sent this seat into it;
+    #     the receipt's own authorship is unchanged and nothing outside the owed rows is touched.
     p15u = re.sub(r'\\(emph|textbf|textit)\{([^{}]*)\}', r'\2', p15)
     check('⛭ and it states: the comoving horizon shrinks to zero so EVERY mode exits it and FREEZES '
           'before the crossing -- asserted as the one clause that carries the quantifier and names '

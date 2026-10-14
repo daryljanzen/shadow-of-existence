@@ -81,6 +81,8 @@ def main():
     #     their adjacency; the fourth is its own sentence and takes its own span.  Read with the
     #     emphasis normalised -- r7258's form for a markup carrier -- since the markers fall inside
     #     the only spans that carry the claims.  Measured: ONE site each.
+    #   ⌗ EDITED HERE ON `r7331`'s order ④, which named this block and sent this seat into it;
+    #     the receipt's own authorship is unchanged and nothing outside the owed rows is touched.
     d1u = re.sub(r'\s+', ' ', d1.replace('**', ' '))
     _D1_STRUCTURE = ('the boundary coefficient is an operator $\\\\hat\\\\Gamma = \\\\gamma + c\\\\sum_n\\\\hat\\\\pi_n^2$ (at leading order), and since it commutes with the radial part, $-\\\\partial_x^2 + \\\\hat\\\\Gamma/x^2$ decomposes as a DIRECT INTEGRAL over its spectrum -- essentially self-adjoint where $\\\\hat\\\\Gamma\\\\ge3/4$, limit-circle where $\\\\hat\\\\Gamma<3/4$ -- and thermal regularity supplies the condition FIBRE BY FIBRE')
     _D1_SEPARATES = ("the sub-threshold set's SIZE -- finite, countable, or a continuum -- is irrelevant to whether each of its fibres receives a condition")

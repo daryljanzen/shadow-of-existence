@@ -88,6 +88,8 @@ def main():
     #   subjects sat outside them.  Each is replaced by the one span the paper or the row prints
     #   the claim in, so adjacency is tested rather than assumed.  Two readers are normalised --
     #   r7258's form for a markup carrier -- because the markers fall inside the carrying spans.
+    #   ⌗ EDITED HERE ON `r7331`'s order ④, which named this block and sent this seat into it;
+    #     the receipt's own authorship is unchanged and nothing outside the owed rows is touched.
     p10u = re.sub(r'\\(emph|textbf|textit)\{([^{}]*)\}', r'\2', p10)
     rowu = re.sub(r'\s+', ' ', row.replace('**', ' ').replace('*', ' '))
     _C1_BOTH_HALVES = ('the path integral ranges over the conformal factor of the metric. Here it does not')

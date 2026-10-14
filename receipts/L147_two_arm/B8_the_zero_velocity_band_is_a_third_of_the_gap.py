@@ -113,6 +113,8 @@ def main():
     #     over them -- both of those drop the words that fix what the claim is about.**  Measured
     #     before performing: ONE site in the normalised arc, and one at the trunk commit this
     #     revision reads at, so the widening is single-site in both.
+    #   ⌗ EDITED HERE ON `r7331`'s order ④, which named this block and sent this seat into it;
+    #     the receipt's own authorship is unchanged and nothing outside the owed rows is touched.
     arc_u = arc.replace('**', '')
     check('⛔ but L-202\'s phase is the ANTILINEAR FACE K on the branch structure -- the arc\'s own '
           'clause saying so, asserted whole over a markup-normalised read rather than through the '

@@ -132,6 +132,8 @@ def main():
     #     correction and names what it corrected.
     #   ⌗ Each replacement stands ONCE and its count arrived once and has never changed over the
     #     file's 282 commits.
+    #   ⌗ EDITED HERE ON `r7331`'s order ④, which named this block and sent this seat into it;
+    #     the receipt's own authorship is unchanged and nothing outside the owed rows is touched.
     check("B1's argument stands and is credited by the fork: two arms at equal l_A with first "
           'peaks 21.8% apart rules out l_1 = c*l_A -- the fork\'s own credited clause, asserted '
           'whole in place of a disjunction whose other arm was about the control instead',

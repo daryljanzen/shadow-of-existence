@@ -132,6 +132,8 @@ def main():
     #   first.  Each is replaced by the clause the claim is actually about, in the paper the claim
     #   names rather than in every paper joined.  The reader is hoisted here so the scope can be
     #   narrowed on the first of them.
+    #   ⌗ EDITED HERE ON `r7331`'s order ④, which named this block and sent this seat into it;
+    #     the receipt's own authorship is unchanged and nothing outside the owed rows is touched.
     p15 = re.sub(r'\s+', ' ', '\n'.join(
         l for l in open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
                         encoding='utf-8', errors='replace').read().split('\n')

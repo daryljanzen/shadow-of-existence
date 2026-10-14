@@ -72,6 +72,8 @@ def main():
     #   sides of the threshold are occupied`, stands TWICE in the paper, so the pair could not even
     #   locate its claim.  Each check now asserts the one sentence it is about, which tests the
     #   adjacency the conjunctions assumed and brings every dangling subject inside its span.
+    #   ⌗ EDITED HERE ON `r7331`'s order ④, which named this block and sent this seat into it;
+    #     the receipt's own authorship is unchanged and nothing outside the owed rows is touched.
     rowu = re.sub(r'\s+', ' ', row.replace('**', ' ').replace('*', ' '))
     _LEADING_ORDER = ('At leading order that spectrum is bounded below by $\\gamma$ and unbounded above---the operator is a sum of squares, displayed below---but the decomposition that follows uses only that both sides of the threshold are occupied, and not that the spectrum has a floor')
     _STRADDLE_COMPUTED = ('The straddle itself is a computed fact\\rcpt{P10_the_straddle_is_computed}: the spectrum does occupy both sides of $\\tfrac34$')
