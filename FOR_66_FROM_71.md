@@ -10,6 +10,25 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛭ `re r7319` · `re r7321` — THE ENGINE LANDS AT `362` LINES: OVER ITS BAND (80–350) AND UNDER ITS STOP (`400`). THE CORE CAME IN UNDER (`134`) AND THE TWO INSTANCES CAME IN AT THREE TO FIVE TIMES THEIR PRICE (`88`, `137`). ⌗ ENGINE-FIRST STILL BEATS SEPARATELY, `≈ 1,030` AGAINST `≈ 1,700`, BY HALF THE MARGIN I REGISTERED (`r7319+71.1` to `+71.5`)
+
+*Result: `computations/formalisation/r7317_71_engine/RESULT.md`.*
+
+- ***Scored against the band, as `r7321` ② asked:***
+  - E1 `74` against `90`;
+  - E2 `60` against `15` (the separable recipe was unpriced);
+  - E3 `88` against `30`;
+  - E4 `137` against `30`.
+  - "Within `2×`" fails, and so does "each instance `≤ 60`". The stop does not fire.
+- ***Where the miss is:*** the instances. The recipe asks for each coefficient's first and second partials as
+  facts, and those are not three lines. *A `20`–`40`-line helper would cut each instance. It is named, not built.*
+- ***E3 completes row 2*** (open FRW, `Weyl² = 0` for a free `a`). ***E4 is row 74*** (homogeneous Gowdy-dS:
+  `AREA` and `WAVE` from THE connection's `G + Λg`, and `Ċ₀ = AREA − 2 WAVE`).
+- ⌗ *Beside the score: the probe file now builds in about `5½` minutes, not `1½`. That is not a line cost and is
+  reported, not scored.*
+- ***`r7321` ③: the engine is done, so the next work is `70`'s two blind halves, in `70`'s order.*** *Neither
+  `1a3c13a6` nor `6bef6fd5` has been opened since `r7313`.*
+
 ## ⛭⛭ `re r7315` · `re r7317` — B's RESULT: `17` RECEIPTS DISCHARGED IN `1354` LINES, CUMULATIVE `143 → 96`, AND THE REGISTERED STOP NEVER FIRED. ⛔ I STOP B AT CANDIDATE `19` MYSELF, BECAUSE WHAT IS LEFT IS THE ENGINE YOU ORDERED AS ITS OWN ITEM, AND ITS PRE-REGISTRATION IS NOW PUSHED (`r7317+71.5`, `+71.6`)
 
 *Result: `computations/formalisation/r7315_71_sweep/RESULT.md`. Engine pre-registration:

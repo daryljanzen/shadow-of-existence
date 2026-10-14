@@ -1,0 +1,85 @@
+# `r7319+71.5` — RESULT: THE `4D` ENGINE LANDS, at `362` lines against `150` central. That is OVER its band (80–350) and over `2×`, and UNDER its stop (`400`). ⌗ The core is cheap; the instances are not. E1 + E2 came to `134`, but each named metric cost `88` and `137`, because the recipe makes a second seat write every coefficient's partials. ⇒ r7317 ③'s comparison still favours the engine, `≈ 1,030` against `≈ 1,700`, by half the margin I registered
+
+*Scored against `PREDICTION.md` in this directory, pushed at `r7317+71.6` before any Lean for this item. It is not
+revised. The code is the sections `Engine4D`, `Engine4D_E2`, `Engine4D_E3` and `Engine4D_E4` of
+`lean/probes/CurvatureProbe.lean`. **All `#print axioms` lines rest on `[propext, Classical.choice, Quot.sound]`, and
+there is no `sorryAx`.** Unit: `git diff --stat` insertions, as in B.*
+
+## ⛔ The stop rule, scored first
+
+| outcome | measured |
+|---|---|
+| E1–E4 build in `≤ 400` | ***`362`. THE ENGINE LANDS*** |
+| E1 alone `> 250`, or a symmetric-second-derivative step needs a port `> 100` | ***no.*** *E1 is `74`, and `ContDiffAt.isSymmSndFDerivAt` was already there (used in `B12`)* |
+| ⛭ symmetric negative: E1–E4 `< 60` | ***does not fire*** |
+
+## The predictions
+
+| piece | predicted | measured | |
+|---|---|---|---|
+| E1 `curvD_eq` | 90 | ***74*** | under |
+| E2 contractions (and the separable recipe `dC1_cS`/`dC2_cS`, which I did not price) | 15 | ***60*** | over: the recipe was unpriced |
+| E3 row 2 `k = −1`, open FRW `Weyl² = 0` | 30 | ***88*** | over ×3 |
+| E4 row 74, homogeneous Gowdy-dS: `AREA`, `WAVE`, `Ċ₀` | 30 | ***137*** | over ×4.6 |
+| **total** | ***150*** (80–350) | ***362*** | ***over the band, under the stop*** |
+
+| probability (pre-registered) | p | outcome |
+|---|---|---|
+| E1–E4 land `≤ 400` | 0.75 | **yes** |
+| within `2×` the central `150` | 0.65 | **no** (`362 > 300`) |
+| symmetric negative | 0.10 | **no** |
+| E3 and E4 each `≤ 60` once E1 exists | 0.6 | ***no — `88` and `137`*** |
+
+***Where the miss is, said plainly: the CORE came in under, and the INSTANCES came in at three to five times their
+price.***
+- An instance pays for what the recipe asks of it: every coefficient's first and second derivatives, written as
+  facts.
+  - For E3 that also meant a 24-entry Riemann table. Expanding the 256-term `Riem²` directly runs out of
+    heartbeats, so it has to go through a table.
+  - E4 needed exponential-composition derivatives for four coefficients.
+- I priced an instance as "three lines of recipe". ***The three lines are real, but the derivative facts in front of
+  them are not three lines.***
+
+## ⌗ `r7317` ③, the comparison, registered before the build and scored here
+
+| route | registered | measured basis | lines |
+|---|---|---|---|
+| engine first, 8 rows | `≈ 510` | core `134` + 8 × the measured mean `112.5` | ***`≈ 1,030`*** |
+| separately, as B ran | `≈ 1,700` | unchanged | `≈ 1,700` |
+
+***The engine still wins, by about `670` lines rather than `1,190`.*** *The line I wrote said "if the measured engine
+implies more than `1,700`, I will say so". It does not.*
+
+## What a second seat now uses — the interface, as built
+
+1. **Input:** `c : Fin 4 → (Fin 4 → ℝ) → ℝ`, with `∀ i p, c i p ≠ 0` and `∀ i, ContDiff ℝ ∞ (c i)`.
+   - For separable metrics, use `cS F G` with `cₖ(p) = Fₖ(p⁰) Gₖ(p¹)`.
+2. **One theorem:** `curvD_eq`. THE connection's curvature on constant fields equals `curvD`, which is explicit in
+   `c`, `dC1`, `dC2`.
+3. **Contractions:** `ricC`, `scalC`, `ric2C`, `riem2C`, `weyl2C`, `gbC`, `einsteinC`.
+4. **The recipe, as it actually ran in E3 and E4:**
+   - write `deriv (F k)`, `deriv (deriv (F k))` and the same for `G` as per-index facts;
+   - `simp only [curvD, Pi.sub_apply, Pi.add_apply, DGD, gamD, dC1_cS, dC2_cS, <the facts>]`;
+   - then `simp [cS, F, G, Fin.sum_univ_four]` and `field_simp; ring`.
+   - ***For a 256-term contraction, prove the component table first by `fin_cases` and contract the table.***
+5. ***The derivative facts are where a second seat's time goes.*** *A further `20`–`40` lines of helpers would cut each
+   instance. That is not part of this item and is named, not built.*
+
+## Beside the score, said and not rounded
+
+1. ***Build time.*** The probe file now takes about `5½` minutes, against `1½` before E3. The instance proofs are
+   `fin_cases` over 256 small goals and large `field_simp` steps. *It is not a line cost and was not registered,
+   so it is reported here. A second seat working in its own file would not pay it.*
+2. ***E4 is the homogeneous sector*** (`ψ`, `γ`, `R` functions of `t`), which is what row 74 states. Row 75 — the
+   Einstein tensor of the full `(t, z)` Gowdy metric — needs coefficients that are not separable products. That is
+   `curvD_eq` with a two-variable recipe, which is not built.
+3. ***E3 completes row 2.*** With `B18`'s `k = 0` and the chart-excluded `k = +1`, row 2 is now discharged in its
+   chartable cases, at `38 + 88 = 126` lines.
+4. *The `E3` table `oR` was generated by sympy with the engine's own convention, then PROVED against `curvD`
+   component by component. The table is a statement, not an assumption.*
+
+## Not done
+
+- Rows 75, 79, 47, 102, 94 and 52 remain "statable, connection carried as a hypothesis". The engine now reaches each
+  of them at about `110` lines, or less with the helper named above.
+- Nothing in the quote-pin stride.
