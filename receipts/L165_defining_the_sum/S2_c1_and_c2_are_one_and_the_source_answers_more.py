@@ -82,12 +82,26 @@ def main():
     raw_po = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
     row = next(l for l in raw_po.split('\n')
                if re.match(r'\|\s*~?~?\*\*PO-6\*\*', l))
+    # ⛭⛭ r7332+60, PO-78's repair stride, the dense block.  ** THE NINE OWED ROWS OF THIS RECEIPT
+    #   WERE FRAGMENTS AND CO-OCCURRENCE PINS **: three conditions each split into two or three
+    #   spans whose conjunction in a FILE stood for one sentence, plus bare fragments whose
+    #   subjects sat outside them.  Each is replaced by the one span the paper or the row prints
+    #   the claim in, so adjacency is tested rather than assumed.  Two readers are normalised --
+    #   r7258's form for a markup carrier -- because the markers fall inside the carrying spans.
+    p10u = re.sub(r'\\(emph|textbf|textit)\{([^{}]*)\}', r'\2', p10)
+    rowu = re.sub(r'\s+', ' ', row.replace('**', ' ').replace('*', ' '))
+    _C1_BOTH_HALVES = ('the path integral ranges over the conformal factor of the metric. Here it does not')
+    _PO6_OBJECT = ('The interacting tower — the spectrum of $\\hat\\Gamma$, whether it is bounded below, the UV definition')
+    _TT_OSCILLATOR = ('Mode by mode that sector is \\eqref{eq:tt-action}, a harmonic oscillator, whose Hamiltonian is bounded below')
+    _TT_SECTOR = ('the propagating gravitational degree of freedom of the layer is the transverse-traceless shear of Section~\\ref{sec:lock}, which is precisely the sector the conformal mode is absent from')
+    _PO6_QUOTES_P10 = ('AND THE SAME PASSAGE STATES WHAT THIS ROW ASKS. The row\'s object includes "whether it is bounded below" . P10, in the same breath: "the propagating gravitational degree of freedom of the layer is the transverse-traceless shear … precisely the sector the conformal mode is absent from. Mode by mode that sector is a harmonic oscillator, whose Hamiltonian is bounded below.')
+    _CONFINED = ('The areal radius along the lift is likewise confined, running between the comoving turnaround and the branch point on an interval fixed by the progenitor mass, with the substrate curvature finite throughout')
 
     # ⓵ one sentence, not two conditions
     check('⓵ P10 states C1: "The conformal-factor problem arises when the path integral ranges over the '
           'conformal factor of the metric. Here it does not."',
           't reach this construction, and the reason is structural rather than fortunate.}} The conformal-factor problem arises when the path integral ranges over the conformal factor'
-          in p10 and 'Here it does not' in p10)
+          in p10 and _C1_BOTH_HALVES in p10)
     check('and states C2 in the SAME passage, as the reason: "The substrate\'s scale is $\\alpha$ and is '
           'fixed---not chosen, but required"',
           "The substrate's scale is $\\alpha$ and is fixed---not chosen, but required" in p10)
@@ -97,24 +111,40 @@ def main():
           'so there is no conformal mode to integrate over' in p10)
 
     # ⓶ the same passage answers part of PO-6
-    check("⓶ PO-6's row asks about \"whether it is bounded below\"",
-          'whether it is bounded below' in row)
+    check("⓶ PO-6's row asks about \"whether it is bounded below\" -- asserted as the row's own object "
+          'clause, which names the tower and all three of the things it asks, so the fragment is read '
+          'where the row poses it rather than anywhere in a long row',
+          _PO6_OBJECT in rowu)
     check('and the SAME P10 passage states it for the free TT sector: "Mode by mode that sector is '
           '\\eqref{eq:tt-action}, a harmonic oscillator, whose Hamiltonian is bounded below."',
-          'a harmonic oscillator, whose Hamiltonian is bounded below' in p10)
+          _TT_OSCILLATOR in p10)
     check('with the sector identified: "the propagating gravitational degree of freedom of the layer is '
           'the transverse-traceless shear ... precisely the sector the conformal mode is absent from"',
-          'the transverse-traceless shear' in p10
-          and 'precisely the sector the conformal mode is absent from' in p10)
-    check('✔ and NOW the PO-6 row does not carry it: "bounded below" appears in the row only as the QUESTION',
-          'harmonic oscillator' in row)
+          _TT_SECTOR in p10u)
+    # ⛔⛭⛭ AND THIS ONE IS NOT A WIDENING BUT A WITHDRAWAL WITH ITS CASE, because the claim had gone
+    #   FALSE and the condition could not fail.  *The label said the row does not carry it and that
+    #   `bounded below` appears there only as the QUESTION.  Both halves are now untrue: the row
+    #   answers `BOUNDED BELOW: YES` in its own voice about the COMPLETE operator, and a later
+    #   revision wrote P10's free-sector sentence INTO the row and credited it.*  ** The condition
+    #   `'harmonic oscillator' in row` passed throughout -- it passes BECAUSE the row now carries the
+    #   quotation the label says it does not. **
+    #   ⇒ *** A cannot-fail arm whose LABEL has gone false reports a falsehood in green: the
+    #     fail-on-success family in the mirror, where nothing goes red and the sentence quietly stops
+    #     being true. ***  Restated as the CURRENT state, which is L-249's own rule, and the two
+    #     statements are separated: the row's YES is about the complete operator and P10's is about
+    #     the free TT sector.
+    check('⛭ and the PO-6 row now QUOTES P10 for the free TT sector and credits it, rather than '
+          "resting on its own answer: the row's own YES is about the COMPLETE operator and P10's "
+          'statement is about the FREE sector, and the row names the difference -- asserted as the '
+          'one span where the row attributes the sentence, in place of a bare term that passed '
+          'because the quotation had arrived',
+          _PO6_QUOTES_P10 in rowu)
 
     # ⓷ the confinement
     check('⓷ and the same passage supplies the domain: "The areal radius along the lift is likewise '
           'confined ... on an interval fixed by the progenitor mass, with the substrate curvature finite '
           'throughout"',
-          'is likewise confined' in p10 and 'on an interval fixed by the progenitor mass' in p10
-          and 'finite throughout' in p10)
+          _CONFINED in p10)
 
     print()
     if FAILED:

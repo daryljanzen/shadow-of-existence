@@ -66,21 +66,36 @@ def main():
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
     row = next(l for l in raw.split('\n')
                if re.match(r'\|\s*~?~?\*\*PO-6\*\*', l))
+    # ⛭⛭ r7332+60, PO-78's repair stride, the dense block's largest receipt.  ** ALL TEN OWED ROWS
+    #   WERE FRAGMENTS OF FIVE SENTENCES **, paired two and three to a check so that their
+    #   CONJUNCTION IN A FILE stood for what one sentence says.  One of them, `uses only that both
+    #   sides of the threshold are occupied`, stands TWICE in the paper, so the pair could not even
+    #   locate its claim.  Each check now asserts the one sentence it is about, which tests the
+    #   adjacency the conjunctions assumed and brings every dangling subject inside its span.
+    rowu = re.sub(r'\s+', ' ', row.replace('**', ' ').replace('*', ' '))
+    _LEADING_ORDER = ('At leading order that spectrum is bounded below by $\\gamma$ and unbounded above---the operator is a sum of squares, displayed below---but the decomposition that follows uses only that both sides of the threshold are occupied, and not that the spectrum has a floor')
+    _STRADDLE_COMPUTED = ('The straddle itself is a computed fact\\rcpt{P10_the_straddle_is_computed}: the spectrum does occupy both sides of $\\tfrac34$')
+    _CLOSURE_PER_FIBRE = ('How the straddle falls does not bear on the closure below, which is supplied fibre by fibre and so cannot be broken by the size of the sub-threshold set')
+    _PO6_OBJECT = ('The interacting tower — the spectrum of $\\hat\\Gamma$, whether it is bounded below, the UV definition')
+    _COMMUTES = ('As $\\hat\\Gamma$ commutes with the radial part, $-\\partial_x^2+\\hat\\Gamma/x^2$ decomposes as a direct integral over its spectrum')
 
     # ⓵ the decomposition does not need the floor
     check('⓵ P10: "the decomposition that follows uses only that both sides of the threshold are '
           'occupied, and not that the spectrum has a floor"',
-          'uses only that both sides of the threshold are occupied' in p10
-          and 'not that the spectrum has a floor' in p10)
+          _LEADING_ORDER in p10)
     # ** RE-PINNED r3106.  This pin quoted P10 marking the floor as OPEN.  It broke because the
     #    argument won: P10 now states that boundedness is not ASSUMED and yet DOES FOLLOW -- the full
     #    inverse-square coefficient is positive on non-degenerate metrics, so Gamma-hat keeps its floor
     #    at gamma beyond leading order, and a spectrum below -1/4 has no object.  The receipt's thesis
     #    is unchanged and strengthened: the decomposition never rested on the floor.  What the paragraph
     #    leaves open is now the STRADDLE, a different threshold deciding a different property. **
+    # ⌗ The short arm `'is not assumed here'` is REDUNDANT: the long conjunct beside it contains
+    #   those very words, so the pair asserted one thing twice while the short arm on its own could
+    #   have matched anywhere.  Dropped rather than widened -- there is nothing for a second span to
+    #   add that the first does not already carry.
     check('and does not ASSUME the floor, while now deriving it: "is not assumed here ... '
           'though it does in fact follow"',
-          'is not assumed here' in p10 and 'w is not assumed here~\\rcpt{P10_the_straddle_does_not_need_a_floor}, though it does in fact follow' in p10)
+          'w is not assumed here~\\rcpt{P10_the_straddle_does_not_need_a_floor}, though it does in fact follow' in p10)
     # ⛔⛭⛭ RE-PINNED r3938, AND NOT BY MOVING THE PIN.  The check that stood here asserted that
     #    "what the paragraph leaves open is the STRADDLE", pinned on 'not the floor but the straddle
     #    itself'.  That phrase is gone from P10 -- and the CLAIM is gone with it, not merely reworded:
@@ -100,13 +115,11 @@ def main():
     #   check still requires the straddle to be stated as COMPUTED and cited.
     check('and the straddle is no longer open but COMPUTED: "the straddle itself is a computed '
           'fact", the spectrum occupying both sides of 3/4',
-          'straddle itself is a computed fact\\rcpt{P10_the_straddle_is_computed}' in p10
-          and 'does occupy both sides' in p10)
+          _STRADDLE_COMPUTED in p10)
     check('and the receipt\'s own thesis is what P10 now states outright -- the closure does not rest '
           'on where the straddle falls, "supplied fibre by fibre and so cannot be broken by the size '
           'of the sub-threshold set"',
-          'does not bear on the closure below' in p10
-          and 'fibre by fibre' in p10)
+          _CLOSURE_PER_FIBRE in p10)
     check('with both receipts cited for it present: P10_the_straddle_does_not_need_a_floor and '
           'P10_the_straddle_is_computed (both RUN at r3938, both pass)',
           os.path.exists(os.path.join(ROOT, 'receipts', 'P10_canonical_time',
@@ -115,8 +128,9 @@ def main():
                                           'P10_the_straddle_is_computed.py')))
 
     # ⓶ the row asks for exactly that
-    check('⓶ and the PO-6 row asks for exactly that: "whether it is bounded below"',
-          'whether it is bounded below' in row)
+    check('⓶ and the PO-6 row asks for exactly that: "whether it is bounded below" -- asserted as the '
+          "row's own object clause, which names the tower and all three of the things it asks",
+          _PO6_OBJECT in rowu)
 
     # ⓷ leading order is a sum of squares
     check('⓷ and the leading-order form is manifestly non-negative: "the operator is a sum of squares, '
@@ -124,13 +138,13 @@ def main():
           'the operator is a sum of squares' in p10)
     check('so the boundedness question is about COMPLETION, not sign -- and P10 states the leading-order '
           'spectrum as "bounded below by $\\gamma$ and unbounded above"',
-          'bounded below by $\\gamma$ and unbounded above' in p10)
+          _LEADING_ORDER in p10)
 
     # the commutation is structural
     check("⌗ and the commutation is structural, not perturbative: \"As $\\hat\\Gamma$ commutes with the "
           'radial part, $-\\partial_x^2+\\hat\\Gamma/x^2$ decomposes as a direct integral over its '
           'spectrum"',
-          'commutes with the radial part' in p10 and 'decomposes as a direct integral' in p10)
+          _COMMUTES in p10)
 
     print()
     if FAILED:
