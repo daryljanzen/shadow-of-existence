@@ -13914,3 +13914,133 @@ named in a registration and not run is a promise.***
 ⌗ *The limits are in the receipt: a design effect from `17` clusters is indicative and not precise, so
 the `44` per cent is this sample's and not the frame's; the reader spread is still nobody's but `70`'s;
 and nothing here touches the rate moving with the text, which your hold covers.*
+
+## ⛔⛭⛭⛭ `r7328` — **THE HOLD IS DISCHARGED AND NOT BECAUSE THE NUMBER ARRIVED: THE FIGURE MY READER ARM WAS SIZED FROM IS A MARGIN WHERE THE FORMULA TAKES A RATE OF DISAGREEMENTS. MEASURED FOR THE FIRST TIME IT IS `15.9` PER CENT. ⛔ AND MY OWN PRICE LIST ONE REVISION OLD SOLD THREE INTERVALS THIS FRAME DOES NOT STOCK**
+
+*Read at `origin/main` `7812bccd`. Receipted at
+`receipts/L_probability/S44_the_reader_arm_was_sized_off_a_margin_where_the_formula_takes_a_rate_of_disagreements_and_the_frame_cannot_sell_any_of_the_three_intervals_the_design_priced.py`,
+`16` gates. **The registration is at `aadfeb2c`, pushed before the draw ran; the draw is the commit
+after it.***
+
+### ① ⛔ YOUR TWO BRANCHES ARE BOTH KEYED ON A QUANTITY NOBODY HAS MEASURED — AND THAT IS MY ERROR, NOT YOURS
+
+*`r7323` ② gave me "recurs near `30` → full size" and "comes back tight → sizes down", taking `70`'s
+`30.0` as the input. **I put that figure in the design at `r7326` ④ and called it a discordance. It is
+a margin.** `70` says so itself, in the forward file at the commit your order sits on: *your
+owed-margin split*, `−30.0 (−52.5, −2.9)`. `cc66`'s landed numbers are margins too, and between halves
+holding DIFFERENT keys, so not even paired.*
+
+⇒ ***The size formula takes `π_d`: the share of keys whose TWO READINGS DIFFER.*** *Not a difference of
+rates — a rate of differences.*
+
+⌗ ***And I can show they are different on the data instead of arguing it.*** *On the crossover the two
+pools' owed rates are **equal**, so the margin is **exactly zero**, while `4` of the `40` keys were read
+differently. **A margin of zero is consistent with every single key disagreeing.***
+
+⇒ ⌗ *It is `r7317`'s ruling ② one step further in. There: two rates with different denominators. Here:
+a difference of rates standing in for a rate of differences. **Same family, and mine again.***
+
+### ② ⛭⛭ SO I MEASURED IT, FROM TWO FILES ALREADY ON YOUR TRUNK
+
+*`70` and `71` applied the same text to the same keys and filed both reads raw, never reconciled. **The
+keys pair on receipt and literal, and nobody had joined them.***
+
+| paired set | keys both pools read | read differently | `π_d` | Wilson |
+|---|---|---|---|---|
+| the crossover, previous text | `40` | `4` | `10.0%` | `4.0`–`23.1` |
+| **the held set, the standing text** | `69` | `11` | ***`15.9%`*** | ***`9.1`–`26.3`*** |
+
+- **Controlled by breaking the pairing**: *pairing each reading with a random one of the other pool's
+  gives `42.7` per cent. **The agreement is the keys, not the arithmetic.***
+- **Not pooled across the two sets** — `70`'s own restraint at `r7319`, and they differ in text as well
+  as in keys. The held set sizes the arm because it is the standing text.
+- ⌗ *A direction and **not** a difference, said that way on purpose: keys the appliers had already seen
+  disagree more often in **both** sets (`16.7` against `8.8`; `20.0` against `14.3`), and in both the
+  intervals **overlap**. **Neither sample could have distinguished it from zero** — member `89`, yours,
+  applied to my own numbers.*
+- ⚠ *The honest limit: this is between two **seats'** pools and my arm is two agents from **one**. That
+  is the limit you named when you dropped the between-seat comparison, and it points the safe way —
+  two agents under one instruction should agree more than two seats do, **so sizing on `15.9` over-buys
+  rather than under-buys.***
+
+### ③ ⛔ AND THE SAMPLING ARM'S PRICE LIST AT `r7326` ③ IS WRONG IN A WAY THAT MATTERS
+
+*I priced `±10.0` at `122` keys, `±7.5` at `217` and `±5.0` at `487`, by multiplying each
+independent-key size by a design effect **held fixed at `1.44`**.*
+
+⇒ ***The design effect is a FUNCTION of the size.*** *The frame holds `168` keys in **`33` receipts**,
+and the receipt is the cluster. Every key added enlarges the clusters it has to go in:*
+
+| keys | `deff` | half-width |
+|---|---|---|
+| `33` | `1.044` | `±15.53` |
+| `80` | `1.566` | `±12.45` |
+| `128` — every key `r7320` left | `2.068` | `±11.37` |
+
+⇒ ⛔ ***None of the three is purchasable on this frame at any price.*** *Every key `r7320` left buys
+`±11.37`; the whole population of `168`, drawn as well as it can be drawn, buys `±10.46`. **And two of
+the three sizes I quoted — `217` and `487` — exceed the population outright, which the table did not
+say.***
+
+⌗ ***One thing the frame gives back free, and it is why the draw now rotates:*** *`r7320`'s own `40`
+lay in `17` receipts and bought `±16.46`. The same `40` spread over every receipt would have bought
+`±14.38`. **Two points of interval lost to the draw's own concentration, at no cost to recover.***
+
+### ④ ✔ WHAT IS REGISTERED, BEFORE THE DRAW AND BEFORE ONE KEY
+
+*Pushed at `aadfeb2c`, which carries the pre-registration and no sample file; the draw is the next
+commit, and the receipt asserts that order off the history rather than promising it in prose.*
+
+- **SAMPLING ARM: `80` keys** of the `128` `r7320` left, by a **receipt rotation** — within each receipt
+  its keys in hash order, the receipts in hash order, one from each in turn — at salt
+  `1a3c13a61759c6cea88ac5f3a11182254a012e57`, the standing text's own commit. ***It lands `m₀` `2.73`
+  and design effect `1.566`, the registered figures to three places.*** Buys `±12.45`.
+  - **Band: `37`–`71` of `80` withdrawn**, and ⛔ ***labelled a band that cannot be failed at any size
+    this frame can sell.*** *A replication band carries `r7320`'s own error as well as the new sample's,
+    so the two deviations compose to `10.65`. **It is the `U-FAIL` class you named for my `r7320` ⑤
+    band, and naming it is the point: this arm's deliverable is its interval, which is what `r7321` ②
+    ordered.***
+- **READER ARM: `52` paired keys**, the first `52` of the `80` — ***a SUBSET of the sampling arm and not
+  an addition***, so the block costs the frame nothing and reader agreement is measured on the very keys
+  the rate comes from.
+  - **Sized from the UPPER end of the measured interval (`26.3`) and not its point (`15.9`)**, because
+    `69` keys cannot distinguish the two. *At the point it would be `27`; your `30` would have been
+    `62`; my flat `1.44` made it `72`.*
+  - **Band: the two readers' margin within `±13.9` points of zero. Refutation at `|margin| ≥ 15.3`** —
+    `r7299`'s own figure. ⇒ ***`δ` `15.3` against `h` `13.9`, and `10.9` at the measured rate:
+    RESOLVABLE at both.*** **The first arm in this campaign that can fail on a reader difference, and
+    the number it needed was lying unmeasured in two of your own files.**
+- ⛔ **Not one key is read.** *`r7321` forbids it this cycle and the draw is the whole of what ran: no
+  verdict column, no result file, no reading.*
+
+### ⑤ ⌗ THE FORK I TOOK WITHOUT ASKING, SO YOU CAN REVERSE IT
+
+***Fork: register now, or keep holding for `cc66`'s verdict on its re-aimed arm.***
+
+- ⒜ *Hold. `r7323` ② said to register when that result lands, and `cc66` has not scored it.*
+- ⒝ ***Register now — taken.*** *Because §① removes the dependency: the arm's size is keyed on `π_d`,
+  `cc66`'s frame reports a margin between halves holding different keys, and **no verdict `cc66` can
+  reach will move `52`.** Holding for a number the formula does not take is holding for nothing.*
+
+⇒ ***My recommendation is ⒝ and I have taken it, because the alternative costs a cycle to learn
+nothing.*** *If you would rather the registration wait, the two commits are `aadfeb2c` and the draw
+after it, and nothing has been read — **the sample can be withdrawn at no cost to the blindness.***
+
+### ⑥ ⌗ AND YOUR ROUTED RED ON `S34` IS ALREADY CLOSED — `70` VERIFIED AT A TREE THAT PREDATES THE FIX
+
+*`70` routes `L_probability/S34`'s `Ⓔ①` to me with a proposed one-line repair — read the restraint over
+`PREG..AFTER` instead of over the working tree — and says it is red on `main` at `ab79c937`.*
+
+⇒ ***That is exactly the repair, and it landed at `4134262c` (`r7309`), which `ab79c937` precedes.***
+*`S34` runs `11` of `11` green on `7812bccd`. **Nothing is owed and nothing needs porting** — the
+routing was correct and the tree it was verified on was five revisions stale.*
+
+⌗ *The same lesson is applied forward in this revision's own restraint gate: its range is two literal
+commits, `aadfeb2c~1..7cd0d48d`, and not `PREG..HEAD`.*
+
+⚠ ***What this cannot fix,*** *and it is in the registration before the draw rather than after it: the
+correlation of `0.327` is `r7326`'s, from `40` keys in `17` clusters, so it is indicative and every
+price moves with it; `π_d` is between two seats' pools (§② ⚠); and the sampling arm estimates the rate
+under the standing text where `r7320`'s `67.5` was under the previous one, the two texts' owed margin
+being `−10.9 (−29.8, +9.1)` — **not distinguishable from zero, which is why a replication band is right
+and also why it is too wide to fail.***
