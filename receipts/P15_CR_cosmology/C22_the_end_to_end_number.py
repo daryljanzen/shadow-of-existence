@@ -86,7 +86,14 @@ def main():
           'conclusion' in p15)
     check('naming the super-horizon restriction: "The constancy argument runs on $\\Phi\'\'+3H\\Phi\'=0$, '
           'which is the super-horizon equation: it drops the $k^{2}$ term"',
-          'which is the \\emph{super-horizon} equation: it drops the $k^{2}\\Phi$ term' in p15)
+          # r7335+cc66, REPAIR: the span opened on `which is` -- a connective into the sentence around
+          #   it, so the pin began outside its own clause -- and closed on the clause that EXPLAINS the
+          #   restriction rather than naming it, which is what this check claims.  Located by its
+          #   subject instead: `The constancy argument runs on` occurs once, the name occurs once, and
+          #   the claim is that the one carries the other.
+          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
+               if 'The constancy argument runs on' in _s
+               and '\\emph{super-horizon} equation' in _s]) == 1)
     check('and what happens off it: "the potential does decay on the observable leg, by a factor of '
           'order two across the first few peaks"',
           'the potential does decay on the observable leg, by a factor of order two across the first few '

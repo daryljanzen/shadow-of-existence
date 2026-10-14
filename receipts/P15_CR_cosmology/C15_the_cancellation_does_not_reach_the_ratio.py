@@ -83,9 +83,22 @@ def main():
           and 'carried by $H(a)$' in p15)
     # ⛔⛭ RE-PINNED r3952 -- r3841's sweep, same cause as r3950's five.  The paper says "on the inherited datum the GEOMETRIC rate gives a diffusion
     #   length $10.8\\%$" -- the term only; the number and the comparison were already right.
-    check('and it is between two RATES: "on the inherited datum the geometric stacking rate gives a '
-          'diffusion length $10.8\\%$ longer"',
-          'h integrals close in elementary form, and on the inherited datum the geometric rate gives a diffusion length $10' in p15 and '10.8' in p15)
+    #: ⌗⛭ r7333+cc66 REPAIR, PO-78's stride, P15 block.  The second arm was a BARE `'10.8' in p15` --
+    #: `[MULTI-SITE] the literal occurs more than once in its container: a pin on the FILE and not on
+    #: the claim` (it occurs twice, the other in \S\ref{sec:envelope-consequence}), with the named
+    #: repair order ①'s family-B pairing with an anchor.  ⌗ And it was REDUNDANT as well as unscoped:
+    #: the first arm's span already ends `...diffusion length $10`, so the bare value added nothing a
+    #: file-wide search could not satisfy from the other site.
+    #:   ** What the claim IS: the value sits IN the sentence that states the rate comparison. **  So
+    #: the paper is split into sentences, the one carrying the anchor span is located (it is unique),
+    #: and the value is required in THAT sentence -- which fails if the number is ever moved to another
+    #: sentence or changed, and cannot be satisfied by the other occurrence.
+    _rate = [_s for _s in re.split(r'(?<=[.!?]) ', p15)
+             if 'geometric rate gives a diffusion length' in _s]
+    check(f'and it is between two RATES, the value paired with its anchor in ONE sentence: "on the '
+          f'inherited datum the geometric rate gives a diffusion length $10.8\\%$ longer" '
+          f'({len(_rate)} sentence carries the anchor)',
+          len(_rate) == 1 and '10.8' in _rate[0])
     check('with the sound horizon computed the same way: "$r_{s}=146.4$~Mpc against $145.4$ on the '
           'radiation-included"',
           '146.4$~Mpc against $145.4$ on the radiation-i' in p15 and '145.4' in p15)

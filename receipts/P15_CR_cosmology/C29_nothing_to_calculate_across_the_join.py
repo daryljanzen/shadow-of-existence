@@ -98,8 +98,12 @@ def main():
     #       what the corpus corrected; the check follows the correction. **
     check('⛭⛭ ⓵ P15: the potential equation for a pressureless component "contains no $k$ at all once '
           '$w=0$" -- now scoped: "so on a radiation-free rate the problem is scale-free"',
-          '\\emph{contains no $k$ at all once $w=0$}, so on a radiation-free rate the problem is '
-          'scale-free' in p15)
+          # r7335+cc66, REPAIR: one span for the TWO quotations the label above states separately, with
+          #   the connective `, so ` joining them inside the pin.  Each piece occurs once in this paper
+          #   and the sentence identity carries the scoping the span was standing in for.
+          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
+               if '\\emph{contains no $k$ at all once $w=0$}' in _s
+               and 'on a radiation-free rate the problem is scale-free' in _s]) == 1)
     check('[corrected r6772+66.9] but the stretch is NOT pressureless on the rate the perturbations run on: '
           '"That is the stacking rate\'s answer, and the perturbations do not take it: they take the '
           'leaf\'s, which carries the radiation term and therefore the driving"',

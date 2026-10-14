@@ -107,7 +107,23 @@ def main():
           '\\tfrac{9}{10}\\Phi_i$ scale-invariantly' in p15)
     check('and the matching condition: "the branch point transmits that content rather than imprinting '
           'one of its own"',
-          'the branch point transmits that content rather than imprinting one of its own' in p15)
+          #: ⌗⛭ r7333+cc66 REPAIR, PO-78's stride, P15 block.  The ledger's ground: the span bundles
+          #: the claim with its own restatement -- `rather than imprinting one of its own` restates
+          #: `transmits that content` negatively -- and the named repair is the shorter claim-bearing
+          #: span `the branch point transmits that content`.
+          #:   ⛔ ** THE CASE, second instance this stride: that shortening is owed under 69's Test 2.
+          #:   `that content` is a demonstrative before a noun standing for the progenitor-supplied
+          #:   content named EARLIER IN THE SENTENCE, which is Test 2's second bullet. ** So the width
+          #: re-cut moves the ground from a bundled restatement to a pointing demonstrative.
+          #:   ⇒ ** The repair for a Test 2 defect is to RESOLVE THE POINTER INSIDE THE ASSERTED
+          #:   SCOPE: ** the sentence is located by the ANTECEDENT -- `progenitor-supplied content`,
+          #: which occurs ONCE in the paper -- and both halves of the matching condition are required
+          #: in that same sentence.  `that content` then points at something the assertion itself
+          #: requires to be present, and the arm fails if the antecedent and the transmission ever part
+          #: company, which neither the long span nor the short one could see.
+          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
+               if 'progenitor-supplied content' in _s
+               and 'transmits' in _s and 'imprinting' in _s]) == 1)
 
     # ⓶ the value
     w = sp.symbols('w')

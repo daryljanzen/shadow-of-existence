@@ -102,10 +102,22 @@ def main():
 
     # ⓵ both quantities are stated
     check('⛭⛭ ⓵ the LENGTH: "the geometric stacking rate gives a diffusion length $10.8\\%$ longer"',
-          'h integrals close in elementary form, and on the inherited datum the geometric rate gives a diffusion length $10' in p15 and '10.8' in p15)
+          # r7335+cc66, REPAIR: a bare '10.8' occurs twice in this paper, so it pinned the FILE and
+          #   not the claim, and the long conjunct beside it was a whole 20-word sentence standing
+          #   in as its anchor.  `geometric rate gives a diffusion length` is claim-complete --
+          #   subject, verb, object -- and occurs ONCE, so the value is read INSIDE the sentence
+          #   that makes the claim about it.
+          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
+               if 'geometric rate gives a diffusion length' in _s and '10.8' in _s]) == 1)
     check('the ANGLE: "The observable, in which the common distance cancels, is then '
           '$\\theta_{D}/\\theta_{*}$ larger by $9.4\\%$"',
-          'in which the common distance cancels' in p15 and '9.4' in _p15_at(_BEFORE_R2755)
+          # r7335+cc66, REPAIR: `in which` is a connective INTO the sentence around it, so the pin
+          #   began outside its own clause.  The claim is WHICH observable cancels the distance,
+          #   so the ratio is now read in the same sentence: `the common distance cancels` occurs
+          #   once, and the ratio alone occurs twice, which is why neither stands by itself.
+          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
+               if 'the common distance cancels' in _s
+               and '$\\theta_{D}/\\theta_{*}$' in _s]) == 1 and '9.4' in _p15_at(_BEFORE_R2755)
           # ** r6931+70.1: `'8.2' in p15` was VACUOUS -- the 8.2% left P15 at `a99b7a86`
           #    (r6772+66.6) and the conjunct held on an unrelated "the control by $8.2\\%$".  Read
           #    where it stood instead (c54.220's rule). **
@@ -119,7 +131,11 @@ def main():
     #    onset's name left it. ***  Re-pinned to the numbers and the comparison together. **
     check('and the sound horizon moves rather than being pinned: "returns $r_{s}=146.4$~Mpc against '
           '$145.4$ on the radiation-included rate---within $0.7\\%$ of each other"',
-          'Doing so returns $r_{s}=146.4$~Mpc against $145.4$ on the radiation-included rate---within '
+          # r7335+cc66, REPAIR: the span opened on `Doing so`, a pointing phrase whose antecedent is
+          #   the PREVIOUS sentence -- so the pin carried two words of text the claim is not about
+          #   and would red on any reword of the sentence before it.  Cut to the clause-aligned span
+          #   the label above already quotes, which occurs once: the numbers and the comparison.
+          'returns $r_{s}=146.4$~Mpc against $145.4$ on the radiation-included rate---within '
           '$0.7\\%$ of each other' in p15)
 
     # ⓶ C10's own r is the angle ratio

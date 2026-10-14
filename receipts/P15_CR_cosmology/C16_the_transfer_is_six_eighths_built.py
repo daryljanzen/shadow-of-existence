@@ -119,9 +119,22 @@ def main():
           'removes the source exactly' in p15)
 
     # ⓶ the projection is calibrated
-    check('⛭⛭ ⓷ and the projection is calibrated: "$\\ell_{*}=D_{M}/r_{s}=302.2$ against the measured '
-          '$301$"',
-          '302.2' in p15 and '301' in p15)
+    #: ⌗⛭ r7333+cc66 REPAIR, PO-78's stride, P15 block.  The arm was `'302.2' in p15 and '301' in p15`:
+    #: the ledger's r7255 reading is `[MULTI-SITE] a bare three-digit number occurring EIGHTEEN times in
+    #: the papers -- a pin on the FILE and not on the claim`, and the named repair is order ①'s family-B
+    #: WIDTH RE-CUT, pairing the value with its anchor.  ** `301` is not even a value in the paper: the
+    #: paper writes `$301.76$`, so the old arm matched a PREFIX of a different number, and eight of its
+    #: occurrences are elsewhere. **
+    #:   ** What the claim IS: ONE SENTENCE of the paper carries the computed ratio AND the measured one
+    #:   beside it -- that is what `calibrated` means. **  So the paper is split into sentences, the one
+    #: carrying the computed `302.2` is located (it occurs ONCE in the whole paper), and the measured
+    #: value is required IN THAT SENTENCE.  It fails if the pairing is ever split across sentences or
+    #: the measured value changes, neither of which the old arm could see.
+    _cal = [_s for _s in re.split(r'(?<=[.!?]) ', p15) if '302.2' in _s]
+    check(f'⛭⛭ ⓷ and the projection is calibrated in ONE sentence, the computed ratio beside the '
+          f'measured one: "$\\ell_{{*}}=\\pi D_{{M}}/r_{{s}}=302.2$ against the measured $301.76$" '
+          f'({len(_cal)} sentence carries the computed value)',
+          len(_cal) == 1 and '301' in _cal[0])
 
     # ⓷ the ratio, recomputed
     # ** r6931+70.1 (PO-59): CLASS (a) -- this pair was passing VACUOUSLY at head and failed at r6774

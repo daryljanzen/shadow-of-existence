@@ -103,8 +103,14 @@ def main():
           'densities and the tilt" in each arm with "the amplitude in closed form", the arm at $1.57$ '
           'times the control -- the refit this receipt distinguished from L-147 (r3005-r6772 figures '
           '$397.13$/$206.44$ read at `754e76db^`)',
-          'With the expansion rate, the matter and baryon densities and the tilt free in each arm and the '
-          'amplitude in closed form' in p15
+          # r7335+cc66, REPAIR: this pinned ONE 20-word span for the TWO quotations the label
+          #   above states separately, so the connective joining them -- 'and the' -- was inside
+          #   the pin: a reword of the join reds the check with both claims intact.  Each piece is
+          #   claim-complete and occurs ONCE in this paper, and the SENTENCE identity carries the
+          #   conjunction the span was standing in for.
+          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
+               if 'the expansion rate, the matter and baryon densities and the tilt free in each arm'
+               in _s and 'the amplitude in closed form' in _s]) == 1
           and "\\emph{the arm at $1.57$ times the control's distance" in p15
           and '397.13' in _then and '206.44' in _then)
     check('while L-147 holds parameters FIXED, using CAMB only as a reference: "THE PIPELINE IS WIRED '
