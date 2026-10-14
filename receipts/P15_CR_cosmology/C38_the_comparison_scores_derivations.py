@@ -90,7 +90,8 @@ def main():
     # ⓵ the derived quantities are the paper's own
     check('⛭⛭ ⓵ P15 derives $\\theta_{*}$ and reports it against measurement: '
           '"$\\theta_{*}=D_{M}/r_{s}=302.2$ against the measured $301$"',
-          '302.2' in p15 and 'against the measured' in p15)
+          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
+               if '302.2' in _s and 'against the measured' in _s]) == 1)
     # ** r6931+70.1: STALE (c).  The finding is unchanged; the sentence carrying it was rewritten.
     #   This pinned "Matter--radiation equality is then a consequence and a check, not an input",
     #   which `caaf3481` (r6772+66.3) removed when P15 dropped the fitted onset and handed the
@@ -121,8 +122,24 @@ def main():
     check('⓶ while $\\Omega_m$ is named as fixed by data -- "the epoch $x_{0}$ (equivalently '
           '$\\Omega_m$ ...), which the rate carries and the baryon-acoustic data fix" -- so it is '
           'fitted and not a test',
-          'The quantities this cosmology actually uses are the epoch $x_{0}$ (equivalently '
-          '$\\Omega_m=2/(x_{0}^{3}+2)$' in p15
+                    #: ⌗⛭ r7333+cc66 REPAIR, PO-78's stride, P15 block.  The arm pinned a CHARACTER WINDOW:
+          #: the span ended on an unbalanced delimiter -- `$\\Omega_m=2/(x_{0}^{3}+2)$` with the
+          #: opening paren of `(equivalently` unclosed -- which is r7255's reading, and the ledger
+          #: named the repair as the word-aligned span
+          #: `The quantities this cosmology actually uses are the epoch $x_{0}$`.
+          #:   ⛔ ** THE CASE, and it is why that repair is NOT the one taken: that span is owed under
+          #:   69's Test 2. `this cosmology` is a demonstrative before a noun standing for something
+          #:   named outside the quotation, which is Test 2's second bullet exactly. ** So the width
+          #: re-cut would have MOVED THE GROUND from a character window to a pointing demonstrative
+          #: without clearing the row.
+          #:   ⇒ So the sentence is located instead, by the clause that occurs ONCE in the whole paper
+          #: (`which the rate carries and the baryon-acoustic data fix`, the arm's own second literal),
+          #: and the claim is asserted INSIDE it: the quantity named is the epoch, written as the
+          #: formula the paper gives.  No long span is pinned, no demonstrative is quoted, and it fails
+          #: if the data-fix clause and the epoch ever part company.
+          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
+               if 'which the rate carries and the baryon-acoustic data fix' in _s
+               and '$\\Omega_m=2/(x_{0}^{3}+2)$' in _s]) == 1
           and 't the offset itself, which the Nariai condition fixes at $\\alpha/\\sqrt3$}), which the rate carries and the baryon-acoustic data fix' in p15)
     check('and $A_s$ is "anchored" at the first peak by a value the construction "inherits rather '
           'than predicts" -- also not a test',

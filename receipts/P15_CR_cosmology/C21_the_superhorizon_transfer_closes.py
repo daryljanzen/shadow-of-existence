@@ -73,7 +73,17 @@ def main():
     # ⓵ the closed form and its branch-point limit
     check('⓵ the closed form is the paper\'s: "$\\Phi=3\\Phi_{i}(\\sin x-x\\cos x)/x^{3}$ with '
           '$x=k\\eta/\\sqrt3$"',
-          'whose regular solution is elementary' in p15 and 'x=k\\eta/\\sqrt' in p15)
+          #: ⌗⛭ r7333+cc66 REPAIR, PO-78's stride, P15 block.  The second arm was a bare
+          #: `'x=k\\eta/\\sqrt' in p15` -- the substitution occurring TWICE in the paper and flagged
+          #: MULTI-SITE, so a pin on the FILE and not on the claim, with the named repair order ①'s
+          #: family-B pairing with an anchor.
+          #:   ** What the claim IS: the regular solution the paper calls elementary is the one written
+          #:   IN that substitution. **  So the sentence carrying the anchor is located -- `whose
+          #: regular solution is elementary` occurs once -- and the substitution is required in THAT
+          #: sentence.  The second occurrence can no longer satisfy it, and it fails if the solution
+          #: and its variable are ever stated apart.
+          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
+               if 'whose regular solution is elementary' in _s and 'x=k\\eta/\\sqrt' in _s]) == 1)
     check('and at the branch point $x\\to0$ it gives $\\Phi\\to\\Phi_i$ EXACTLY, for every $k$',
           sp.limit(Phi, x, 0) == Phi_i)
 
@@ -94,7 +104,23 @@ def main():
           join == sp.Rational(9, 10))
     check('which is the corpus\'s own claim, now computed: the branch point "transmits that content '
           'rather than imprinting one of its own"',
-          'transmits that content rather than imprinting one of its own' in p15)
+          #: ⌗⛭ r7333+cc66 REPAIR, PO-78's stride, P15 block.  The ledger's ground: the span bundles
+          #: the claim with its own restatement -- `rather than imprinting one of its own` restates
+          #: `transmits that content` negatively -- and the named repair is the shorter claim-bearing
+          #: span `the branch point transmits that content`.
+          #:   ⛔ ** THE CASE, second instance this stride: that shortening is owed under 69's Test 2.
+          #:   `that content` is a demonstrative before a noun standing for the progenitor-supplied
+          #:   content named EARLIER IN THE SENTENCE, which is Test 2's second bullet. ** So the width
+          #: re-cut moves the ground from a bundled restatement to a pointing demonstrative.
+          #:   ⇒ ** The repair for a Test 2 defect is to RESOLVE THE POINTER INSIDE THE ASSERTED
+          #:   SCOPE: ** the sentence is located by the ANTECEDENT -- `progenitor-supplied content`,
+          #: which occurs ONCE in the paper -- and both halves of the matching condition are required
+          #: in that same sentence.  `that content` then points at something the assertion itself
+          #: requires to be present, and the arm fails if the antecedent and the transmission ever part
+          #: company, which neither the long span nor the short one could see.
+          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
+               if 'progenitor-supplied content' in _s
+               and 'transmits' in _s and 'imprinting' in _s]) == 1)
 
     # ⓷ the near-miss
     check('⚠ ⓷ and the near-miss: the join is $1-1/10$ while the series\' leading correction is '

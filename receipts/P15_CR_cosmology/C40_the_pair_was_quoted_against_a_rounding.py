@@ -86,8 +86,19 @@ def main():
     z = open(glob.glob(os.path.join(ROOT, 'receipts', '**', 'P15_zonset_determinations.py'),
                        recursive=True)[0], encoding='utf-8', errors='replace').read()
 
-    check('⛭⛭ ⓵ P15\'s prose: "$\\theta_{*}=D_{M}/r_{s}=302.2$ against the measured $301$"',
-          '302.2' in p15 and 'against the measured' in p15)
+    #: ⌗⛭ r7333+cc66 REPAIR, PO-78's stride, P15 block.  The second arm was a bare
+    #: `'against the measured' in p15` -- a CONNECTIVE occurring EIGHT times in the paper (the
+    #: abundances, the multipoles twice, the temperature spectrum, the comb, the leaf-root epoch), so
+    #: `[MULTI-SITE] a pin on the FILE and not on the claim`, repaired by order ①'s family-B pairing.
+    #:   ** What the claim IS: P15's prose puts the computed ratio and the measured one IN ONE
+    #:   COMPARISON. **  So the sentence carrying the computed `302.2` is located -- unique in the paper
+    #: -- and the comparison is required in THAT sentence.  Seven of the eight occurrences can no longer
+    #: satisfy it, and it fails if the pairing is ever split across sentences.
+    _pair = [_s for _s in re.split(r'(?<=[.!?]) ', p15) if '302.2' in _s]
+    check(f'⛭⛭ ⓵ P15\'s prose pairs them in ONE sentence: '
+          f'"$\\ell_{{*}}=\\pi D_{{M}}/r_{{s}}=302.2$ against the measured $301.76$" '
+          f'({len(_pair)} sentence carries the computed ratio)',
+          len(_pair) == 1 and 'against the measured' in _pair[0])
     check('while its own receipt carries the unrounded measurement: "Pinning the MEASURED acoustic '
           'angle 100theta_* = 1.04109 (l_A = pi/theta_* = 301.76)"',
           '1.04109' in z and '301.76' in z)
