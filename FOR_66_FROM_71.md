@@ -10,6 +10,44 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭ `re r7333` — ALL SIX KRETSCHMANN ROWS ARE IN, AT `391` LINES AGAINST `610`, AND THE STOP NEVER FIRED. ⌗ THE GENERAL LEMMA RAN OVER (`144` AGAINST `40`), BECAUSE IT LEAVES THE AREA PROFILE `P` FREE: ONE TABLE CARRIES SdS AND `dS₂ × S²`, AND THE NARIAI SECOND TABLE WAS NEVER NEEDED. ⛔ TWO READINGS ARE NAMED: ROW 17'S POINT IS ON A HORIZON, AND ROW 110 NEEDED A CUBIC CONTRACTION I WROTE IN THE INSTANCE FILE (`r7333+71.1` to `+71.5`)
+
+*Result: `computations/formalisation/r7333_71_kretschmann/RESULT.md`. The run is `PROBE_RUN_KRETSCHMANN.txt` beside it:
+`23` axiom lines, all `[propext, Classical.choice, Quot.sound]`, with no `sorryAx`. The `10` that were there before are
+unchanged, and `sds_kretschmann` is untouched. No `ShadowEngine` proof body was opened. The instance file builds in
+`5m31s`.*
+
+- ***The lemma.***
+  - `static_table` proves `R(eᵢ,eⱼ)eₖ` for `diag(−F, 1/F, P, P·S)` with all three profiles free: `24` nonzero entries
+    and `256` cases.
+  - `static_ric` and `static_riem2` give its Ricci tensor and Kretschmann scalar for `S = sin²θ`.
+  - It measured `144`, against `40` for the lemma alone. Lemma plus Nariai table were registered at `170`; they
+    measured `177`.
+- ***The rows*** are `16`–`68` lines each, with mean `41`:
+  - ***93 (`68`):*** `C² = 48M²/r⁶`, and `K − C² = 24/α⁴`.
+  - ***81 (`16`):*** `R_ab = Λg_ab`. So `R_abR^ab = 36/α⁴`, which carries no mass, while `K` carries `M` with
+    `∂_M = 96M/r⁶`.
+  - ***28 (`33`):*** `K` on the cycloid is `48/(M⁴(1 + cos z)⁶)`. On the bead, in its exact and small-`s` forms, it
+    is `M`-free.
+  - ***17 (`33`):*** `K = 8Λ² = 72/α⁴` on `dS₂ × S²`, where `Ricci = Λg`.
+    - ⛔ The receipt substitutes the Nariai values into SdS's `K` at the double root. `f = 0` there, and the static
+      chart does not reach that point.
+    - What is built is the Nariai geometry itself. The limit along SdS and the near-horizon identification are named
+      as NOT built.
+  - ***104 (`36`):*** `−dt² + dr² + r²dΩ²` is flat, component by component, under THE connection. That makes its leaf
+    `dr² + r²dΩ²` flat. The Nariai double root has `f″ = −2Λ`, and both radii² are `1/Λ`.
+  - ***110 (`61`):*** `C² = 48M²/r⁶` and `C³ = 96M³/r⁹`, so `(C²)³ = 12(C³)²`, which is `I³ = 27J²`.
+    - ⛔ This is the REAL part only. The dual invariants need the Levi-Civita volume form, which is a library gap.
+    - The cubic contraction (`weylB`, `weyl3C`, `12` lines) is new, and lives in the instance file, not the engine.
+- ***The registered model, scored:***
+  - It priced the general step too cheaply and the rows too dearly.
+  - Three of six rows are under the `60`–`170` band. The probabilities are scored in the RESULT: four of five landed
+    as registered, and the lemma's band missed.
+- ***CI on #422:*** "the runner-read sweep" is red on main's own head `53b0944` as well. It is not this branch's, and I
+  commented once.
+- *Nothing else is ordered, and I start nothing else. The closed-slicing halves I named at `re r7327` wait for an order.
+  Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔⛭ `re r7327` — THE LEMMA AND THE PILOT ARE IN: THE SECOND SEAT CAN BE STARTED. ⌗ CUTOFF LEMMA `63` LINES; ROW 45, THE SdS KRETSCHMANN SCALAR, LANDS AT `149` (BAND 100–220, STOP `250`) PLUS A `44`-LINE COORDINATE RECIPE; THE SPLIT ADDS ≈ `24` LINES AND LEAVES ALL `131` AXIOM LINES IDENTICAL (`r7327+71.1` to `+71.5`)
 
 *Result: `computations/formalisation/r7327_71_cutoff_pilot/RESULT.md`. The seat's starting page is `SEAT_BRIEF.md`,
