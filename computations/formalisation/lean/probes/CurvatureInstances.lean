@@ -961,6 +961,66 @@ theorem nariai_curvature (Λ : ℝ) (p : Fin 4 → ℝ)
   have : α ≠ 0 := fun h => hΛ (by rw [hα, h]; simp)
   rw [hK, hα]; field_simp; ring
 
+
+/-- The Weyl tensor as a map on bivectors, `C_ij^kl`, for a diagonal metric `g` and a curvature table `Rf`:
+`Rf` with its Ricci and scalar traces removed, the 4D formula. Its square traced is `weyl2C`. -/
+noncomputable def weylB (g : Fin 4 → ℝ) (Rf : Fin 4 → Fin 4 → Fin 4 → Fin 4 → ℝ) (i j k l : Fin 4) : ℝ :=
+  (Rf i j l k - ((if i = k then ricC Rf j l else 0) - (if j = k then ricC Rf i l else 0)
+      + (if j = l then g j * ricC Rf i k / g k else 0) - (if i = l then g i * ricC Rf j k / g k else 0)) / 2
+    + scalC g Rf / 6 * ((if i = k ∧ j = l then g j else 0) - (if j = k ∧ i = l then g i else 0))) / g l
+
+/-- The cubic Weyl invariant `C_ab^cd C_cd^ef C_ef^ab`. -/
+noncomputable def weyl3C (g : Fin 4 → ℝ) (Rf : Fin 4 → Fin 4 → Fin 4 → Fin 4 → ℝ) : ℝ :=
+  ∑ i, ∑ j, ∑ k, ∑ l, weylB g Rf i j k l * ∑ m, ∑ n, weylB g Rf k l m n * weylB g Rf m n i j
+
+/-- SdS's Weyl bivector table: `±2a` on the `tr` and `θφ` planes, `∓a` on the other four, `a = M/r³`. -/
+noncomputable def wT (a : ℝ) (i j k l : Fin 4) : ℝ :=
+  if (i, j) = (k, l) then (if (i, j) = (0, 1) ∨ (i, j) = (1, 0) ∨ (i, j) = (2, 3) ∨ (i, j) = (3, 2) then 2 * a
+    else if i = j then 0 else -a)
+  else if (i, j) = (l, k) then (if (i, j) = (0, 1) ∨ (i, j) = (1, 0) ∨ (i, j) = (2, 3) ∨ (i, j) = (3, 2) then -2 * a
+    else if i = j then 0 else a)
+  else 0
+
+open Filter Topology in
+set_option maxHeartbeats 8000000 in
+/-- **Row 110.** SdS is Petrov type D in its real invariants: `C² = 48M²/r⁶` (`= 48Ψ₂²`), the cubic
+`C³ = 96M³/r⁹` (`= −96Ψ₂³`), and so `(C²)³ = 12(C³)²`, which is `I³ = 27J²` with `I = C²/16`, `J = −C³/96`,
+for every `M` and `Λ`. -/
+theorem row110_petrov (M Λ : ℝ) (p : Fin 4 → ℝ)
+    (eF : F =ᶠ[𝓝 (p 1)] fun s => 1 - 2 * M * s⁻¹ - Λ / 3 * s ^ 2) (eP : P =ᶠ[𝓝 (p 1)] fun s => s ^ 2)
+    (eS : S =ᶠ[𝓝 (p 2)] fun s => Real.sin s ^ 2) :
+    weyl2C (fun i => cK F P S i p) (RK hF hP hS hF0 hP0 hS0 p) = 48 * M ^ 2 / p 1 ^ 6 ∧
+      weyl3C (fun i => cK F P S i p) (RK hF hP hS hF0 hP0 hS0 p) = 96 * M ^ 3 / p 1 ^ 9 ∧
+      weyl2C (fun i => cK F P S i p) (RK hF hP hS hF0 hP0 hS0 p) ^ 3
+        = 12 * weyl3C (fun i => cK F P S i p) (RK hF hP hS hF0 hP0 hS0 p) ^ 2 := by
+  obtain ⟨hR, h2, h3, h4⟩ := sds_contractions hF hP hS hF0 hP0 hS0 M Λ p eF eP eS
+  have hW2 : weyl2C (fun i => cK F P S i p) (RK hF hP hS hF0 hP0 hS0 p) = 48 * M ^ 2 / p 1 ^ 6 := by
+    simp only [weyl2C, h2, h3, h4]; ring
+  set r := p 1 with hr_def
+  have hr : r ≠ 0 := fun h => hP0 r (by rw [eP.eq_of_nhds, h]; simp)
+  obtain ⟨d1, d2⟩ := sds_derivs M Λ r hr
+  obtain ⟨hSv, hS1, hS2⟩ := sin2_facts eS
+  have hs : Real.sin (p 2) ≠ 0 := fun h => hS0 (p 2) (by rw [hSv, h]; simp)
+  have hF0v : F r = 1 - 2 * M * r⁻¹ - Λ / 3 * r ^ 2 := eF.eq_of_nhds
+  have hF1v : deriv F r = _ := eF.deriv_eq.trans d1
+  have hF2v : deriv (deriv F) r = _ := eF.deriv.deriv_eq.trans d2
+  have hPv : P r = r ^ 2 := eP.eq_of_nhds
+  have hP1 : deriv P r = 2 * r := by rw [eP.deriv_eq]; simp
+  have hP2 : deriv (deriv P) r = 2 := by
+    rw [(eP.deriv.trans (Eventually.of_forall fun s => by simp) : deriv P =ᶠ[𝓝 r] fun s => 2 * s).deriv_eq]; simp
+  have hf := hF0 r
+  have hWB : ∀ i j k l, weylB (fun i => cK F P S i p) (RK hF hP hS hF0 hP0 hS0 p) i j k l = wT (M / r ^ 3) i j k l := by
+    intro i j k l
+    fin_cases i <;> fin_cases j <;> fin_cases k <;> fin_cases l <;>
+      (simp only [weylB, h2]; simp [wT, hR, static_table, kG, cK, ← hr_def, hF1v, hF2v, hPv, hP1, hP2, hSv, hS1, hS2]
+       try (field_simp; (try simp only [hF0v]); (try field_simp); try ring))
+  have hW3 : weyl3C (fun i => cK F P S i p) (RK hF hP hS hF0 hP0 hS0 p) = 96 * M ^ 3 / r ^ 9 := by
+    simp only [weyl3C, hWB]
+    simp [Fin.sum_univ_four, wT]
+    field_simp; ring
+  refine ⟨hW2, hW3, ?_⟩
+  rw [hW2, hW3]; field_simp; ring
+
 end Inst_Kretschmann
 
 end ShadowProbe
@@ -987,3 +1047,4 @@ end ShadowProbe
 #print axioms ShadowProbe.row104_flat_slice
 #print axioms ShadowProbe.row104_nariai_root
 #print axioms ShadowProbe.nariai_curvature
+#print axioms ShadowProbe.row110_petrov
