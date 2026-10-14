@@ -147,7 +147,8 @@ print("  " + "=" * 96)
 print("  ③ SUPERSEDED FIGURES")
 print("  " + "=" * 96)
 check("the figure r7065 corrects -- r7063's logarithmic coefficient 39/4 at the superseded offset -- is named "
-      "in r7065's receipt", "NAMES THE LOGARITHMIC COEFFICIENT 39/4" in SRC['r7065'])
+      "in r7065's receipt",
+      "`r7063` NAMES THE LOGARITHMIC COEFFICIENT 39/4.  That is the value at the SUPERSEDED offset" in SRC['r7065'])
 report("     ...and appears nowhere in canonical_time.tex (searched at source), which carries the current 15/4",
       not re.search(r'39/4(?!\d)|\\tfrac\{39\}\{4\}|\\frac\{39\}\{4\}', tex) and '\\tfrac{15}{4}' in tex)
 check("the figures used as filed are the receipts' own: 175/22 (r7058's literal of r7056), 39/40 (r7063)",
