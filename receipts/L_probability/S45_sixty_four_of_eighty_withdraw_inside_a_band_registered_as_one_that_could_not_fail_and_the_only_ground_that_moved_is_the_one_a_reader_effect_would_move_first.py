@@ -346,18 +346,27 @@ for _m in re.findall(r'`([^`]+)`', _reading):
     for _num in re.findall(r'\d+(?:\.\d+)?', _m):
         _ticked.add(_num)
 _pid = {'15.9', '9.1', '26.3', '52'} <= _ticked
-_no_pid_claimed = not any(r.get('pi_d') for r in R)
-_cols = [l for l in io.open(os.path.join(ROOT, D7330, 'RESULT_80.tsv'),
-                            encoding='utf-8') if l.startswith('# n\t')][0]
-_colnames = _cols.lstrip('# ').rstrip('\n').split('\t')
-print(f'      the result columns: {_colnames};  the arm\'s quantity and its interval carried in the '
-      f'reading: {_pid}')
-gate(f'Ⓖ②  and THE ARM IS READ ONCE AND ITS `pi_d` IS NOT CLAIMED FROM THIS READ: the result file '
-     f'carries ONE verdict per key and no second reading (`{len(_colnames)}` columns, one outcome), '
-     f'and the reading reports the arm\'s quantity as the figure `r7328` measured with its interval '
-     f'and the two MARGINS only beside it -- read by PARSING the reading\'s backticked figures.  '
-     f'** `pi_d` is the share of keys whose TWO readings differ, and one reader cannot produce it **',
-     _pid and _colnames.count('outcome') == 1 and 'decided_at' in _colnames)
+#: ⌗ `one verdict per key and no second reading` is asserted as what it IS -- each key occurring
+#: exactly once in the file -- rather than by naming a column, which would pin a header string and
+#: mint a key of its own.  The file's shape is read off its own widths, not typed here.
+_lines = [l.rstrip('\n') for l in io.open(os.path.join(ROOT, D7330, 'RESULT_80.tsv'),
+                                          encoding='utf-8') if l.strip()]
+_hdr = [l for l in _lines if l.startswith('# ') and l.count('\t') > 3]
+_data = [l for l in _lines if not l.startswith('#')]
+_widths = {l.count('\t') + 1 for l in _data}
+_once_n = len({r['n'] for r in R}) == len(R)
+_once_key = len({(r['receipt'], r['literal']) for r in R}) == len(R)
+print(f'      {len(_data)} data rows, field widths {sorted(_widths)}, header rows {len(_hdr)};  '
+      f'each key once: n {_once_n}, (receipt, literal) {_once_key};  '
+      f'the arm\'s quantity and its interval carried in the reading: {_pid}')
+gate(f'Ⓖ②  and THE ARM IS READ ONCE AND ITS `pi_d` IS NOT CLAIMED FROM THIS READ, asserted as what '
+     f'that IS rather than by naming a column: every one of the `{len(_data)}` rows is one key and '
+     f'each key occurs exactly ONCE, on a file of uniform width `{sorted(_widths)[0]}`, so there is '
+     f'no second reading anywhere in it -- and the reading reports the arm\'s quantity as the figure '
+     f'`r7328` measured with its interval, with the two MARGINS only beside it, read by PARSING the '
+     f'reading\'s backticked figures.  ** `pi_d` is the share of keys whose TWO readings differ, and '
+     f'one reader cannot produce it **',
+     _pid and _once_n and _once_key and _widths == {7} and len(_data) == 80)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print()
