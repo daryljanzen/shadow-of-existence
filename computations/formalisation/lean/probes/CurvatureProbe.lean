@@ -3431,6 +3431,82 @@ theorem ds_invariants (H : ℝ) (p : Fin 4 → ℝ) :
 
 end SweepB15
 
+/-! ## `r7315`, B16 — receipt 4 (its chartable half): flat FRW `−dt² + a(t)² dx²` under THE connection has
+`R = 6(ä/a + ȧ²/a²)`, and on P15's layer `a = sinh^{2/3}(3Ht/2)` that is `R = 12H² + 3H²/sinh²(3Ht/2)`: it RUNS.
+*P10's closed slicing `a = α cosh(T/α)` on `S³` fails the chart clause and is not attempted.* -/
+
+section SweepB16
+
+set_option synthInstance.maxHeartbeats 400000
+
+/-- Flat FRW: `q = (−1, a², a², a²)`. -/
+noncomputable def qFRW (a : ℝ → ℝ) : Fin 4 → ℝ → ℝ :=
+  ![fun _ => -1, fun s => a s ^ 2, fun s => a s ^ 2, fun s => a s ^ 2]
+
+variable {a : ℝ → ℝ} (ha : ∀ s, a s ≠ 0) (has : ContDiff ℝ ∞ a)
+
+include ha in
+lemma qFRW_ne (i : Fin 4) (s : ℝ) : qFRW a i s ≠ 0 := by fin_cases i <;> simp [qFRW, ha]
+include has in
+lemma qFRW_smooth (i : Fin 4) : ContDiff ℝ ∞ (qFRW a i) := by fin_cases i <;> simp [qFRW] <;> fun_prop
+
+include ha has in
+/-- **B16.** THE connection's scalar curvature of flat FRW. -/
+theorem frw_scal (p : Fin 4 → ℝ) :
+    scalC (fun i => qFRW a i (p 0)) (fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cT (qFRW a)))
+      (diag4_symm _) (fun p u h => diag4_nondeg (fun i => cT_ne (qFRW_ne ha) (qFRW_smooth has) i p) u h)
+      ((diag4_smooth (cT_smooth (qFRW_ne ha) (qFRW_smooth has))).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p)
+      = 6 * (deriv (deriv a) (p 0) / a (p 0) + (deriv a (p 0) / a (p 0)) ^ 2) := by
+  have d0 : ∀ s, HasDerivAt a (deriv a s) s := fun s => ((has.differentiable (by simp)) s).hasDerivAt
+  have d1 : ∀ s, HasDerivAt (deriv a) (deriv (deriv a) s) s := fun s =>
+    (((contDiff_infty_iff_deriv.1 has).2.differentiable (by simp)) s).hasDerivAt
+  have e1 : deriv (fun s => a s ^ 2) = fun s => 2 * a s * deriv a s :=
+    funext fun s => ((d0 s).pow 2).deriv.trans (by simp)
+  have e2 : deriv (fun s => 2 * a s * deriv a s) = fun s => 2 * deriv a s ^ 2 + 2 * a s * deriv (deriv a) s :=
+    funext fun s => (((d0 s).const_mul 2).mul (d1 s)).deriv.trans (by ring)
+  simp only [scalC, ricC, curv_T (qFRW_ne ha) (qFRW_smooth has)]
+  simp [Fin.sum_univ_four, curvT, GT, DGT, qFRW, e1, e2]
+  have := ha (p 0)
+  field_simp; ring
+
+omit ha has in
+open Filter Topology in
+/-- **B16, receipt 4.** On P15's layer, `a = sinh^{2/3}(3Ht/2)` near `t > 0`, the flat-FRW curvature
+`6(ä/a + ȧ²/a²)` is `12H² + 3H²/sinh²(3Ht/2)`: it runs, divergent early and `12H²` late. -/
+theorem layer_scal {H t : ℝ} (hH : 0 < H) (ht : 0 < t)
+    (hat : a =ᶠ[𝓝 t] fun s => Real.sinh (3 * H / 2 * s) ^ (2 / 3 : ℝ)) :
+    6 * (deriv (deriv a) t / a t + (deriv a t / a t) ^ 2)
+      = 12 * H ^ 2 + 3 * H ^ 2 / Real.sinh (3 * H / 2 * t) ^ 2 := by
+  set k := 3 * H / 2 with hk
+  have hk0 : 0 < k := by positivity
+  have hsk : ∀ s, HasDerivAt (fun s => Real.sinh (k * s)) (Real.cosh (k * s) * k) s := fun s => by
+    exact (((hasDerivAt_id' s).const_mul k).sinh).congr_deriv (by ring)
+  have hck : ∀ s, HasDerivAt (fun s => Real.cosh (k * s)) (Real.sinh (k * s) * k) s := fun s => by
+    exact (((hasDerivAt_id' s).const_mul k).cosh).congr_deriv (by ring)
+  have hA : ∀ s, 0 < Real.sinh (k * s) → HasDerivAt (fun s => Real.sinh (k * s) ^ (2 / 3 : ℝ))
+      (2 / 3 * k * Real.cosh (k * s) * (Real.sinh (k * s) ^ (2 / 3 : ℝ) / Real.sinh (k * s))) s := fun s hs =>
+    ((hsk s).rpow_const (p := 2 / 3) (Or.inl hs.ne')).congr_deriv (by
+      rw [show (2 / 3 : ℝ) - 1 = 2 / 3 - 1 from rfl, Real.rpow_sub_one hs.ne']; ring)
+  have hpos : ∀ᶠ s in 𝓝 t, 0 < Real.sinh (k * s) :=
+    ((Real.continuous_sinh.comp (continuous_const.mul continuous_id)).continuousAt (x := t)).eventually
+      (lt_mem_nhds (Real.sinh_pos_iff.2 (mul_pos hk0 ht)))
+  have hS := hpos.self_of_nhds
+  have hd : deriv a =ᶠ[𝓝 t] fun s =>
+      2 / 3 * k * Real.cosh (k * s) * (Real.sinh (k * s) ^ (2 / 3 : ℝ) / Real.sinh (k * s)) :=
+    hat.deriv.trans (hpos.mono fun s hs => (hA s hs).deriv)
+  have h2 : HasDerivAt (fun s => 2 / 3 * k * Real.cosh (k * s)
+      * (Real.sinh (k * s) ^ (2 / 3 : ℝ) / Real.sinh (k * s))) _ t :=
+    HasDerivAt.mul ((hck t).const_mul (2 / 3 * k)) (HasDerivAt.div (hA t hS) (hsk t) hS.ne')
+  rw [hd.deriv_eq, h2.deriv, hd.eq_of_nhds, hat.eq_of_nhds]
+  have hApos : 0 < Real.sinh (k * t) ^ (2 / 3 : ℝ) := Real.rpow_pos_of_pos hS _
+  have hc := Real.cosh_sq (k * t)
+  field_simp
+  rw [hc, hk]; ring
+
+end SweepB16
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -3543,3 +3619,5 @@ end ShadowProbe
 #print axioms ShadowProbe.ds_app
 #print axioms ShadowProbe.curv_T
 #print axioms ShadowProbe.ds_invariants
+#print axioms ShadowProbe.frw_scal
+#print axioms ShadowProbe.layer_scal
