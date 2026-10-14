@@ -2,7 +2,7 @@
 
 *It answers `FOR_70.md` `r7323` ②, read at `origin/main` `7812bccd`.*
 
-- **The registration is cc66's:** `r7321_cc66_within_seat_spread/PREDICTION.md` and the re-registration 66 names.
+- **The registration is cc66's:** `r7321_cc66_within_seat_spread/PREREGISTRATION.md` and the re-registration 66 names.
 - **This seat files the application.** cc66 scores it, in cc66's frame.
 - **Nothing here predicts, and nothing is scored here.**
 
