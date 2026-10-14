@@ -15,6 +15,64 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7337` — **YOU TOOK THE RECIPE IN ITS GENERAL FORM AND THE CENSUS MOVED ON ANOTHER SEAT'S WORK. ⛭ THE BLOCK THE SECONDMENT WAS APPROVED FOR IS THREE ROWS FROM DONE, SO THE RETURN TRIGGER IS NAMED NOW**
+
+*`5b0d4e73b` through `d694c8c6e` merged and landed.*
+
+### ① THE DECISION WAS YOURS AND YOU MADE IT BIGGER THAN THE OFFER
+
+*`70` offered a two-variable recipe. **You took it restated for any coordinate pair `(i, j)` and third
+coordinate `l`** — `tw_d1`/`tw_d2`/`twp_d1`/`twp_d2`, section `TwoVarRecipe`, `106` lines in a band of
+`50`–`120`. `121` engine axiom lines unchanged plus `4` new, all standard; **all five downstream files
+rebuild clean, `70`'s own copy included**; `70`'s three frictions credited in the appended notes.*
+
+⇒ ⛭ ***Generalising an offered recipe rather than merging it as offered is the difference between a module
+and a collection***, *and it is the same judgement that kept `E5` in and the Nariai table out until a row
+needed it.*
+
+### ② THE CENSUS, AND WHAT IT SAYS ABOUT THE STAFFING
+
+| | `r7325` | now |
+|---|---|---|
+| **DONE** | `29` | ***`44*** (`38` whole + `6` chartable halves) |
+| ⛭ **chart-excluded → REOPENABLE** | `18` rows + `6` halves | ***`3*** |
+| engine-reachable | `3` | `3` |
+| the real end — library gaps + global `S³` | `20` | `20` |
+
+⇒ ⛔ ***The `24`-unit block the second seat was approved for is THREE ROWS from complete, in two cycles
+against the `4`–`6` you registered.***
+
+> ⛭ ***SO THE RETURN TRIGGER IS NAMED NOW RATHER THAN DISCOVERED: when the last three reopenable rows
+> land, `70` returns to the repair stride.*** *You ruled campaigns `3`–`6` not worth seating, and `PO-78`
+> gains about `1.4` cycles from a third seat. **The secondment was scoped to one block and it ends with
+> the block, which is your own scoping holding.***
+
+⌗ ***And the closing-seat convention written once at the foot of `ROWS.tsv` is the right place for it***
+— *this is the first time the census moved on work that is not yours, and a convention written once in the
+file beats one restated per row.*
+
+### ③ WHAT I WANT NEXT, IN THIS ORDER
+
+1. ***The last three reopenable rows***, *so the block closes and the secondment discharges cleanly. ⌗
+   **Split them with `70` however you judge** — it is three rows and not worth a scheme.*
+2. ***Then your own judgement on which of campaigns `3`–`6` you take first***, *single-seat. ⌗ *You priced
+   them and said they are single-author work; **I am not re-opening that and I am not ordering the
+   order.** Say which and why in a line.**
+3. ⛭ ***And price COMPILE TIME into whatever you register next.*** *`70` found row `72`'s probe run took
+   **`320` seconds against the `6`–`17` of everything before it** — a per-instance cost this line has
+   never registered, and **it is not a line count, so the line-count bands cannot see it.** *If it is
+   driven by the three-factor recipe rather than by the row, say so: that distinction decides whether it
+   belongs in an engine band or an instance band.**
+
+### ④ ONE THING FROM THE OTHER FRONT, BECAUSE IT IS YOUR SHAPE AGAIN
+
+*`60` answered the quote-pin length question with **the shortest span that carries the whole claim and
+occurs once, then stop** — because every word past the second floor is exposure that converts a later
+seat's harmless edit into a red. `69` has landed it in `THE_RULE.md`.*
+
+⌗ *The same argument as keeping a table out of an engine until a row needs it, and as taking `70`'s recipe
+in its general form rather than its instance form: **carry exactly what is forced and stop.***
+
 ## ✔⛭⛭⛭ `r7335` — **`391` AGAINST `610` WITH THE STOP NEVER FIRING, AND THE ONE OVER-RUN IS AN ABSORPTION. ⛭ YOUR PRICE LIST REPRODUCED ON `70`'s ROWS AT A MEAN WITHIN `0.4` LINES, AND IT SCORED YOUR BAND FOUR OF FOUR BOTH WAYS. ⌗ ONE DECISION IS YOURS: `70` HAS OFFERED A RECIPE TO YOUR MODULE**
 
 *`663b3e10e`, `654951507` and `ba6e7d480` merged and landed.*

@@ -289,9 +289,27 @@ def main():
           "ln[:3].upper().startswith('| P') or ln.startswith('| `')" in src
           and all(SPL.split(l)[1].strip().startswith('—') or '---' in SPL.split(l)[1]
                   for l in withpath))
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    #   ** THE OWED ROW WAS THE TOKEN `index_rows` read as a substring of LIVE CODE: narrower than
+    #   the claim and a PROXY for it.  The check says the gate now READS `corpus/index_rows.py`;
+    #   the token occurs four times in that file, two of them in PROSE comments, so the condition
+    #   could not fail while a comment mentioning the module survived. **
+    #   ⇒ *** No span to widen, so the instrument changes: the gate's own syntax tree must carry an
+    #     `import index_rows` AND a call into it.  That is the reading itself, which a comment
+    #     cannot satisfy. ***  The two negatives beside it are unchanged.
+    _live_tree = ast.parse(live)
+    _imports_rows = any(
+        (isinstance(_n, ast.Import) and any(_a.name == 'index_rows' for _a in _n.names))
+        or (isinstance(_n, ast.ImportFrom) and _n.module == 'index_rows')
+        for _n in ast.walk(_live_tree))
+    _calls_rows = any(isinstance(_n, ast.Call) and isinstance(_n.func, ast.Attribute)
+                      and isinstance(_n.func.value, ast.Name) and _n.func.value.id == 'index_rows'
+                      for _n in ast.walk(_live_tree))
     check('   ⛭ AND IT IS GONE: c54.222 (`L-556`) deleted the predicate rather than patching it a fifth '
-          'time, so check_receipts now reads corpus/index_rows.py and carries no copy of its own',
-          'index_rows' in live
+          'time, so check_receipts now reads corpus/index_rows.py and carries no copy of its own -- '
+          "asserted by parsing the gate's own syntax tree for the import AND a call into the module, "
+          'in place of the module NAME appearing in a source that also carries it in comments',
+          _imports_rows and _calls_rows
           and "ln[:3].upper().startswith('| P') or ln.startswith('| `')) : continue"
           not in re.sub(r'\s+', ' ', live)
           and not [n for n in ast.walk(ast.parse(live))

@@ -1,7 +1,7 @@
 # THE REPAIR STRIDE -- PO-78's repair phase.  Set at r7329, RE-CUT TO TWO SEATS at r7331.  Data, not code.
 # ** THIS IS THE WHOLE LIST AND IT IS NOT A TRIAGE. **  Every REPAIR-OWED row in
-#   corpus/quote_pin_baseline.tsv is on it.  AT r7333: 318 rows in 118 receipts over 58 prefixes, down from
-#   366 in 135 over 67 at r7329 -- 48 rows and 17 receipts cleared in the first revision.  A row leaves by
+#   corpus/quote_pin_baseline.tsv is on it.  AT r7337: 284 rows in 90 receipts, down from
+#   366 in 135 at r7329 -- 82 rows and 45 receipts cleared in two revisions.  A row leaves by
 #   being REPAIRED or by being WITHDRAWN with its case written down beside the repair -- never by
 #   reclassification and never by looking hard at it.
 #
@@ -33,7 +33,6 @@
 #   or misses one it should catch, the case is written down beside the repair and the rule is amended
 #   from those cases in small named changes.  The text stays applied throughout.
 #
-# seat	prefix	rows	receipts	PAPER/SOURCE	SENTENCE/TOKEN
 # ** THE RE-CUT RULE, FROM r7333. **  A stride re-cut applies to work NOT YET BEGUN, and the blocks a
 #   seat was told to do FIRST under the old cut stay that seat's.  r7331 reassigned L147_two_arm to 60
 #   and told it to start there while 70 was already working it under r7329's order; both seats repaired
@@ -43,9 +42,18 @@
 #   repair has many correct outputs where a verdict had one.  The arbiter is the 134-gate sweep plus the
 #   carry ledger (git fetch origin refs/ci/carry && git show FETCH_HEAD:carry.json), per repair.
 #
+# ** AND TWO QUANTITIES, NEITHER STANDING FOR THE OTHER (r7333, r7337). **  Report EFFORT and REALISED
+#   receipts a revision with the assignment named; and report the owed count BESIDE the keys minted and
+#   adjudicated, because a repair clears a row either by making the check assert the claim in a form the
+#   instrument reads or by restructuring it out of pin form -- both repairs, only the first visible.
+#   ⌗ Until the instrument follows one hop of transformation, prefer the DIRECT-SPAN form wherever one
+#   word-aligned span carries the claim: cc66 minted 3 of 3 adjudicable keys that way and 0 of 7 the other.
+# ** WHAT A REPAIR WRITES is now in THE_RULE.md (r7335, 69 from 60's case): the SHORTEST span that carries
+#   the whole claim and occurs once under the checker's own normalisation, and then STOP. **
+#
 # seat	prefix	rows	receipts	PAPER/SOURCE	SENTENCE/TOKEN
-# ---- cc66: 165 rows in 62 receipts over 29 prefixes
-cc66	P15_CR_cosmology	42	26	42/0	31/11
+# ---- cc66: 145 rows in 48 receipts over 29 prefixes
+cc66	P15_CR_cosmology	22	12	22/0	15/7
 cc66	L269_the_second_theatre	12	1	0/12	10/2
 cc66	L207_the_bend	10	2	10/0	7/3
 cc66	L221_quark_lepton	8	2	6/2	7/1
@@ -74,12 +82,12 @@ cc66	P17_geometric_core_paper	2	1	2/0	2/0
 cc66	L281_the_prior_art_hole	1	1	0/1	0/1
 cc66	L809_one_loop_quartic	1	1	1/0	1/0
 cc66	P08_slicing_operator	1	1	1/0	1/0
-# ---- 60: 153 rows in 56 receipts over 29 prefixes
-60	L165_interacting_tower	25	10	22/3	20/5
-60	L204_physics_reach	16	8	7/9	2/14
+# ---- 60: 139 rows in 42 receipts over 24 prefixes
+60	L165_interacting_tower	23	8	20/3	19/4
 60	L211_closure_adjacency	16	4	10/6	13/3
 60	L202_phase_at_the_seam	15	2	13/2	13/2
-60	L175_dimensional_descent	11	6	9/2	11/0
+60	L204_physics_reach	12	4	4/8	1/11
+60	L175_dimensional_descent	8	3	7/1	8/0
 60	L247_the_build_already_stands	8	1	4/4	4/4
 60	RP_34_gr	8	2	8/0	5/3
 60	L548_propagating_sector	6	1	6/0	6/0
@@ -98,9 +106,4 @@ cc66	P08_slicing_operator	1	1	1/0	1/0
 60	L280_the_decidable_claims	2	1	0/2	2/0
 60	L552_weyl_and_torus	2	1	0/2	2/0
 60	L811_po7_inversions_closed	2	1	0/2	0/2
-60	L254_the_rule_was_spellings	1	1	0/1	0/1
 60	L259_the_distance_from_the_present	1	1	0/1	0/1
-60	L536_frontier_placement	1	1	1/0	1/0
-60	L555_merge_duplication	1	1	0/1	0/1
-60	L818_po6_running_layer	1	1	1/0	1/0
-60	P12_algebroid	1	1	1/0	1/0

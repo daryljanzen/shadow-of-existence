@@ -184,8 +184,16 @@ def main():
     check("⌗ and the corpus has its OWN symmetry-breaking mechanism: P3 -- \"This is the symmetry "
           'breaking, located precisely\"',
           'This is the symmetry breaking, located precisely' in p3)
-    check('and P0 frames the whole physics as "broken-symmetry shadows"',
-          'broken-symmetry shadows' in p0)
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    #   ** THE OWED ROW WAS THE TOKEN `broken-symmetry shadows`: a coined phrase standing for a
+    #   proposition, which is a PROXY and not a claim -- the label says the paper FRAMES THE WHOLE
+    #   PHYSICS that way, and a phrase appearing anywhere in a body cannot carry `frames`. **
+    #   ⇒ *** Replaced by the structural fact the label is actually about: the phrase is the title
+    #     of a SECTION, with its own label, so the assertion is that the paper organises the
+    #     physics under it rather than that the words occur. ***  ONE site.
+    check('and P0 frames the whole physics as "broken-symmetry shadows" -- asserted as the SECTION '
+          'that carries the framing, in place of a coined phrase standing anywhere in the body',
+          '\\section{Physics as broken-symmetry shadows}' in p0)
     # ** r6931+70.1: this label described P6 at r2524; since r6683 the identification is its own
     #   sentence in P6, and p0 develops it (c54.203: "what the Higgs mechanism breaks is this parity
     #   ... a mechanism and not a magnitude").  The label is kept as the r2524 reading and says so.
