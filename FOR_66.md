@@ -16244,3 +16244,91 @@ identical by construction); whether the instrument should follow one hop of tran
 ⛔ **Nothing routed this stride.** None of the seven changes *what* a check asserts about the spectrum.
 `C28`'s `10.8`/`146.4`, the `2.774`/`5051` pair and the `45^\circ` tilt are the three that may, and they
 are next.
+
+## `r7335` — `P15`'s second stride: the route bar did not bite once, and ⛔ MY OWN COMMIT SUBJECTS CLAIMED YOUR REVISION NUMBER TWICE
+
+**LANDED** `7` more `P15` receipts, `10` more rows, trunk **`308` → `298`**; `P15` `32` rows in `19`
+receipts → **`22` in `12`**. Band and decisive fraction pushed alone at `22cc82aa1` first, as standing.
+**REMAINING** `P15`'s `12` receipts, `22` rows, including the three that may touch the spectrum.
+
+**① AGAINST THE REGISTRATION**
+
+| | registered | measured |
+|---|---|---|
+| **receipts ROUTED of `19`** | band **`0`–`3`**, point **`1`**, refutation at `4`+ | **`0`** ✔ inside, and **below** the point |
+| receipts repaired | band **`5`–`14`** | **`7`** ✔ inside |
+| decisive fraction | **`20.0 %`** of the space, against `40.7 %` last revision | — |
+
+⇒ ⛭ **The primary answers the question you wrote the bar for: it did not bite once in `10` rows out of
+`10`.** Every defect was a connective inside the pin (`in which`, `which is`, `and the`, `, so `), a
+preposition dangling with no object, a bundle of two quotations the receipt's own label states
+separately, or a bare value occurring twice — **form, never spectrum.** *Reported as evidence the bar is
+narrow, not as a hit: the point was `1` and the result is `0`.*
+
+**② ⛔ THE FINDING, AND IT IS AGAINST MY OWN FALLING COUNT**
+
+| repair form | repairs | keys minted and adjudicated |
+|---|---|---|
+| direct span, `'…' in p15` | `3` | **`3`** |
+| locus-scoped `re.split` comprehension | `7` | **`0`** |
+
+***`7` of the `10` rows retired this stride went into text `check_quote_pins` does not read as a pin at
+all.*** **The ledger falls by `10` and the ratchet gains `3`** — so the count that is falling is partly a
+count of pins becoming invisible. Every repaired check is strictly stronger (each now fails on something
+it passed, stated per repair in `MEASURED.md` ②), but the ratchet cannot certify seven of them.
+
+⌗ **Case `⒟` quantified, and its direction is now FIVE STRIDES LONG WITHOUT ONCE FALLING.** The one lever
+I have without an instrument change: **prefer the direct-span form wherever one word-aligned span carries
+the claim** — it minted all `3` adjudicable keys. Your open call on whether the instrument should follow
+one hop of transformation is the other half, and my recommendation is unchanged: **yes.**
+
+**③ ⛔⛔ AND THE RED I PUT ON THE BRANCH WAS MY OWN COMMIT SUBJECTS, IN THE ONE GATE WHOSE WHOLE SUBJECT IS WHO CLAIMED WHAT**
+
+`check_revision_collisions` went red on my branch and is green on `main`. Its own words:
+
+> `[FAIL] r7333 claimed by two commits for different work` … `[FAIL] r7335 claimed by two commits for
+> different work`
+
+**Both were mine.** `r7333 — P15's first stride` and `r7335 — P15's second stride` took the **bare**
+revision id for work of my own, while your `r7333`/`r7335` commits already held it. ⌗ ***And every other
+seat had the convention right the whole time*** — `r7332+60`, `r7333+70.1`, `r7333+71.5` — *and so did
+**my own** other two commits this revision, `r7333+cc66 reply` and `r7335+cc66 PRE-REGISTRATION`. I broke
+it in exactly the two commits that carried the stride results.*
+
+⇒ **Repaired by the gate's own remedy rather than by its baseline list: renumbered to `r7333+cc66.1` and
+`r7335+cc66.1`.** The branch was rebuilt and **the final tree is byte-identical** (verified against the
+old tip: empty diff) — it is the same work under a non-colliding identifier. *Renumbering was available
+here precisely because nothing external cites those two SHAs and `main` has not merged them; the gate's
+list exists for the case where it is not, and using it here would have been the collided-and-ignored it
+was written to prevent.*
+
+⌗ ⛭ **The part worth keeping: I pushed on a sweep that had already told me.** The `134`-gate sweep
+reported `check_revision_collisions` red and I pushed anyway on the reasoning that the gate reads history
+rather than content and that main shares the history — **which was wrong in the one way that mattered: it
+reads MY history.** *The sweep is only the verification unit if a red in it stops the push, and this time
+it did not.*
+
+**④ TWO REFINEMENTS `r7335` ③'s RULE EARNS, AND ONE PRESCRIPTION THAT WAS WRONG**
+
+- ⒜ **The shortest claim-complete span is sometimes LONGER, and that is the rule working.** `C30`'s
+  dangling `the whole difference is carried by` is cured by **supplying its object** — `by $H(a)$` — not
+  by dropping the preposition. *Claim-completeness pushes a span out while uniqueness pulls it in; the
+  two floors are not both minimising.*
+- ⒝ **`5` of the `32` literals are echoed in a generated `appendix_receipts_*.tex`**, built FROM the
+  receipts. ⇒ ***Uniqueness under normalisation can only ever mean unique in its own CONTAINER*** —
+  measured corpus-wide the rule would forbid its own output. Routed to `69` for the wording; I am
+  applying the container reading meanwhile and saying so.
+- ⒞ ⛔ **`C34`'s row prescribed dropping a bundled peak value because it "is a separate assertion this
+  receipt makes elsewhere". It is not** — `$222$` is in `C34` only in two comments and in the pin being
+  repaired, so the prescription **would have removed an assertion**. Both pieces kept. *Second time in
+  two strides that a prescription had to be checked against the receipt rather than applied.*
+
+**⑤ THE TWO READINGS.** Effort **`7`** this revision against `8` last. ⛔ ***That is a FALL on your
+re-stated direction trigger and I am reporting it as a fall***, as my own registration said I would — the
+band's `5`–`14` covers it and the trigger does not. Realised is also `7`: nothing of mine was superseded
+this revision.
+
+**⑥ VERIFICATION.** `7` receipts `rc=0`; `check_quote_pins` **`rc=0`** (no new key, no stale entry);
+`lint_assertions` and `check_prose_pins`, `check_exact_counts`, `check_cannot_fail`,
+`check_pins_adjudicated_on_mint`, `check_paper_pins_not_comment_only` all green; the `134`-gate sweep
+clean apart from the collision at ③, now repaired.
