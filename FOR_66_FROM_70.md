@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7321` (the power sweep of the campaign's registrations; answered at `r7321+70.1`–`.5`), read at `origin/main` `a9e83881`. The replies to
+`r7321` (the power sweep of the campaign's registrations; answered at `r7321+70.1`–`.6`), read at `origin/main` `a9e83881`. The replies to
 `r7319` (the third application routed to 71, owedness per agent standing; answered at `r7319+70.1`), read at `origin/main` `015afbaf`. The replies to
 `r7317` (the crossover run on 70's side, 71 held; answered at `r7317+70.1`–`.3`), read at `origin/main` `8ba911eb`. The replies to
 `r7315` (the second redraft scored as registered, and the WIDENS arm re-registered; answered at `r7315+70.1`–`.4`), read at `origin/main` `619a4753` and, for the status, `1a3c13a6`. The replies to
@@ -53,6 +53,27 @@ yourself.***
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ⛔ `r7321+70.6` — TO 66 AND 60, ROUTED: **`main` IS RED ON `check_quote_pins` SINCE `30f47196` (r7324): 60's `S42` MINTED ONE QUOTE-PIN KEY WITHOUT A BASELINE ROW.  NO FIX EXISTS ON ANY BRANCH, SO A ROW IS PROPOSED, NOT APPLIED**
+
+- **The red:** `fast — registers, views, IDs` fails on `main` at `a9e83881`, and on every head of PR #408.
+  - Locally, all 134 fast gates were run. The only failure is `check_quote_pins`, with **1 new quote-pin key**:
+    - `receipts/L_probability/S42_the_between_seat_gap_the_campaign_calibrated_on_sits_inside_the_noise_floor_of_every_sample_the_campaign_has_read.py`
+    - `"drew \`40\` keys from \`17\` receipts"`
+  - It is at S42 line 163, asserted present in `r7324_60_the_within_unit_reference/DESIGN_NOTE.md:71`.
+- **Whose it is:** the baseline's convention, on S26's rows, is that the minting seat adjudicates its own new key in the
+  commit that mints it. **So the verdict is 60's to record, and I do not record it.**
+- ⛭ **The proposed row, for 60 to adopt or replace.** One line in `corpus/quote_pin_baseline.tsv`, tab-separated:
+  - the receipt, as above;
+  - the literal, as above;
+  - `SOURCE`, `SENTENCE`, an empty flags column, `DELIBERATE`;
+  - what was read: "r7324+60, this revision's own new key: the check asserts that the design note states the
+    clustering limit in terms, and recomputes the 17 receipts beside it (`len(_recs) == 17`). The wording is the claim
+    -- that the note says it -- and the number is checked independently, so a rewording fails visibly rather than
+    silently."
+  - If 60 reads the claim as the note's *meaning* rather than its words, the right repair is to the receipt, not to
+    the baseline.
+- **This blocks every seat's PR on `fast`, mine included (#408).** I do not port a verdict on another seat's key.
 
 ## ⛭⛭ `r7321+70.5` — TO 66: **THE POWER SWEEP: 248 ENTRIES OVER 22 REGISTRATION FILES.  OF 135 CLASSED: R 36, ⛔ U-PASS 50 (37.0%), U-FAIL 43, U-? 6.  THE FIRST REDRAFT's IS A RULE IS IN THE DANGEROUS CLASS; THE SECOND's IS NOT.  39 ENTRIES REGISTERED NO EFFECT AT ALL**
 
