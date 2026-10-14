@@ -2752,6 +2752,122 @@ theorem pw_dv_null {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : Cont
 
 end SweepB9
 
+/-! ## `r7315`, B10 — receipt 44: the equatorial chart `(t, r, φ)` on `ℝ³` with a diagonal metric `Σ cₖ(r) dxₖ²`.
+THE connection's geodesic equation, radial part, on a null velocity of energy `E` and angular momentum `L` around
+SdS (`c = (−f, 1/f, r²)`), is `r̈ = −(L²/2)(f/r²)′`. At the photon sphere `r = 3M` the Lyapunov exponent
+`λ² = −(r²f/2)(f/r²)″` equals `Ω² = f/r²`: `λ = Ω_c` in four dimensions -/
+
+section SweepB10
+
+set_option synthInstance.maxHeartbeats 400000
+
+/-- A diagonal form on `ℝ³` with coefficients depending on `r = p 1`. -/
+noncomputable def diag3F (c : Fin 3 → ℝ → ℝ) (p : Fin 3 → ℝ) : (Fin 3 → ℝ) →L[ℝ] (Fin 3 → ℝ) →L[ℝ] ℝ :=
+  ∑ i, c i (p 1) • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj i) (ContinuousLinearMap.proj i)
+
+lemma diag3F_apply (c : Fin 3 → ℝ → ℝ) (p a b : Fin 3 → ℝ) : diag3F c p a b = ∑ i, c i (p 1) * (a i * b i) := by
+  simp [diag3F]
+
+lemma diag3F_symm (c : Fin 3 → ℝ → ℝ) (p a b : Fin 3 → ℝ) : diag3F c p a b = diag3F c p b a := by
+  rw [diag3F_apply, diag3F_apply]; exact Finset.sum_congr rfl fun i _ => by ring
+
+lemma diag3F_nondeg {c : Fin 3 → ℝ → ℝ} (hc : ∀ i s, c i s ≠ 0) (p a : Fin 3 → ℝ) (h : ∀ b, diag3F c p a b = 0) :
+    a = 0 := by
+  funext j
+  have hj := h (Pi.single j 1)
+  rw [diag3F_apply, Finset.sum_eq_single j (fun i _ hi => by simp [Pi.single_apply, hi]) (by simp)] at hj
+  simpa [hc j] using hj
+
+/-- The explicit Christoffel form: `Γ(a,b)ₖ = (cₖ′(a_r bₖ + aₖ b_r) − δₖᵣ Σⱼ cⱼ′ aⱼ bⱼ) / (2cₖ)`. -/
+noncomputable def gam3 (c : Fin 3 → ℝ → ℝ) (s : ℝ) (a b : Fin 3 → ℝ) : Fin 3 → ℝ := fun k =>
+  (deriv (c k) s * (a 1 * b k + a k * b 1) - if k = 1 then ∑ j, deriv (c j) s * (a j * b j) else 0) / (2 * c k s)
+
+/-- `fderiv_apply₂` on any domain. -/
+lemma fderiv_apply₂' {E F : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [NormedAddCommGroup F] [NormedSpace ℝ F]
+    {Φ : E → (E →L[ℝ] E →L[ℝ] F)} {p : E} (hΦ : DifferentiableAt ℝ Φ p) (e a b : E) :
+    fderiv ℝ Φ p e a b = fderiv ℝ (fun y => Φ y a b) p e := by
+  rw [fderiv_clm_apply (hΦ.clm_apply (differentiableAt_const a)) (differentiableAt_const b),
+    fderiv_clm_apply hΦ (differentiableAt_const a)]
+  simp
+
+variable {c : Fin 3 → ℝ → ℝ} (hc : ∀ i s, c i s ≠ 0) (hcs : ∀ i, ContDiff ℝ ∞ (c i))
+include hc hcs
+
+lemma diag3F_smooth : ContDiff ℝ ∞ (diag3F c) := by
+  rw [contDiff_clm_apply_iff]; intro a; rw [contDiff_clm_apply_iff]; intro b
+  simp only [diag3F_apply]
+  exact ContDiff.sum fun i _ => ((hcs i).comp (contDiff_apply ℝ ℝ 1)).mul contDiff_const
+
+/-- **B10, the Christoffel form:** `lcGam` of `Σ cₖ(r) dxₖ²` is `gam3`. -/
+lemma lcGam_diag3 (p a b : Fin 3 → ℝ) : lcGam (diag3F c) p a b = gam3 c (p 1) a b := by
+  have inv := flat_isInvertible (diag3F c) (diag3F_nondeg hc) p
+  have hd : ∀ i, DifferentiableAt ℝ (c i) (p 1) := fun i => ((hcs i).differentiable (by simp)) _
+  have hD : ∀ e a b : Fin 3 → ℝ, fderiv ℝ (diag3F c) p e a b = e 1 * ∑ i, deriv (c i) (p 1) * (a i * b i) :=
+    fun e a b => by
+    rw [fderiv_apply₂' ((diag3F_smooth hc hcs).differentiable (by simp) p),
+      show (fun y => diag3F c y a b) = fun y => ∑ i, c i (y 1) * (a i * b i) from funext fun y => diag3F_apply c y a b]
+    have hF : HasFDerivAt (fun y : Fin 3 → ℝ => ∑ i, c i (y 1) * (a i * b i))
+        (∑ i, (a i * b i) • deriv (c i) (p 1) • ContinuousLinearMap.proj (R := ℝ) (φ := fun _ : Fin 3 => ℝ) 1) p :=
+      HasFDerivAt.fun_sum fun i _ => ((hd i).hasDerivAt.comp_hasFDerivAt p
+        (hasFDerivAt_apply (𝕜 := ℝ) (1 : Fin 3) p)).mul_const (a i * b i)
+    rw [hF.fderiv]; simp [Finset.mul_sum]; exact Finset.sum_congr rfl fun i _ => by ring
+  have hK : koszK (diag3F c) p a b = diag3F c p (gam3 c (p 1) a b) := by
+    refine ContinuousLinearMap.ext fun v => ?_
+    rw [koszK_apply, hD, hD, hD, diag3F_apply]
+    simp only [gam3, Fin.sum_univ_three]
+    have := hc 0 (p 1); have := hc 1 (p 1); have := hc 2 (p 1)
+    simp
+    field_simp; ring
+  rw [lcGam_apply, hK, inv.inverse_apply_self]
+
+open Filter Topology in
+/-- **B10.** THE connection's geodesic acceleration, radial part, on a null velocity `(E/f, ṙ, L/r²)` around SdS-type
+profiles `c = (−f, 1/f, r²)`: `−Γ(γ̇, γ̇)_r = −(L²/2)(f/r²)′`. -/
+theorem null_radial {f : ℝ → ℝ} {p : Fin 3 → ℝ} {E L rd : ℝ} (hr : p 1 ≠ 0) (hf : f (p 1) ≠ 0)
+    (hfd : DifferentiableAt ℝ f (p 1)) (e0 : c 0 =ᶠ[𝓝 (p 1)] fun s => -f s) (e1 : c 1 =ᶠ[𝓝 (p 1)] fun s => (f s)⁻¹)
+    (e2 : c 2 =ᶠ[𝓝 (p 1)] fun s => s ^ 2) (hnull : rd ^ 2 = E ^ 2 - f (p 1) * L ^ 2 / p 1 ^ 2) :
+    -(lcConn (Fin 3 → ℝ) (ndOf (diag3F c) (diag3F_symm c) (diag3F_nondeg hc)
+        ((diag3F_smooth hc hcs).differentiable (by simp))) (fun _ => ![E / f (p 1), rd, L / p 1 ^ 2]) p
+        ![E / f (p 1), rd, L / p 1 ^ 2]) 1
+      = -(L ^ 2 / 2) * (deriv f (p 1) / p 1 ^ 2 - 2 * f (p 1) / p 1 ^ 3) := by
+  rw [lcConn_const (diag3F_symm c) (diag3F_nondeg hc), lcGam_diag3 hc hcs]
+  have d0 : deriv (c 0) (p 1) = -deriv f (p 1) := by rw [e0.deriv_eq]; exact hfd.hasDerivAt.neg.deriv
+  have d1 : deriv (c 1) (p 1) = -deriv f (p 1) / f (p 1) ^ 2 := by
+    rw [e1.deriv_eq]; exact (hfd.hasDerivAt.inv hf).deriv
+  have d2 : deriv (c 2) (p 1) = 2 * p 1 := by rw [e2.deriv_eq, (hasDerivAt_pow 2 _).deriv]; norm_num
+  simp [gam3, Fin.sum_univ_three, d0, d1, d2, e1.eq_of_nhds]
+  have hn' : rd ^ 2 * p 1 ^ 2 = E ^ 2 * p 1 ^ 2 - f (p 1) * L ^ 2 := by rw [hnull]; field_simp
+  field_simp
+  linear_combination (-(deriv f (p 1) * p 1)) * hn'
+
+omit hc hcs
+
+lemma sdsV_hasDerivAt {M α r : ℝ} (hr : r ≠ 0) :
+    HasDerivAt (fun s => fSdS M α s / s ^ 2) (-2 / r ^ 3 + 6 * M / r ^ 4) r :=
+  HasDerivAt.congr_deriv ((fSdS_hasDerivAt M α hr).div (hasDerivAt_pow 2 r) (pow_ne_zero 2 hr)) (by
+    unfold fSdS; field_simp; ring)
+
+lemma sdsW_hasDerivAt {M r : ℝ} (hr : r ≠ 0) :
+    HasDerivAt (fun s => -2 / s ^ 3 + 6 * M / s ^ 4) (6 / r ^ 4 - 24 * M / r ^ 5) r :=
+  HasDerivAt.congr_deriv (HasDerivAt.add ((hasDerivAt_const r (-2 : ℝ)).div (hasDerivAt_pow 3 r) (pow_ne_zero 3 hr))
+    ((hasDerivAt_const r (6 * M)).div (hasDerivAt_pow 4 r) (pow_ne_zero 4 hr))) (by field_simp; ring)
+
+open Filter Topology in
+/-- **B10, receipt 44.** On SdS the radial potential `(f/r²)` is stationary at `r = 3M` (the photon sphere), and
+there the Lyapunov exponent `λ² = −(r²f/2)(f/r²)″` equals `Ω² = f/r²`. -/
+theorem sds_photon_lyapunov {M α : ℝ} (hM : M ≠ 0) :
+    deriv (fun s => fSdS M α s / s ^ 2) (3 * M) = 0
+    ∧ -((3 * M) ^ 2 * fSdS M α (3 * M) / 2) * deriv (deriv fun s => fSdS M α s / s ^ 2) (3 * M)
+      = fSdS M α (3 * M) / (3 * M) ^ 2 := by
+  have h3 : (3 * M) ≠ 0 := mul_ne_zero three_ne_zero hM
+  have hev : deriv (fun s => fSdS M α s / s ^ 2) =ᶠ[𝓝 (3 * M)] fun s => -2 / s ^ 3 + 6 * M / s ^ 4 :=
+    (eventually_ne_nhds h3).mono fun s hs => (sdsV_hasDerivAt hs).deriv
+  refine ⟨by rw [(sdsV_hasDerivAt h3).deriv]; field_simp; ring, ?_⟩
+  rw [hev.deriv_eq, (sdsW_hasDerivAt h3).deriv]
+  field_simp; ring
+
+end SweepB10
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2847,3 +2963,6 @@ end ShadowProbe
 #print axioms ShadowProbe.pw_bracket
 #print axioms ShadowProbe.pw_wronskian_const
 #print axioms ShadowProbe.pw_dv_null
+#print axioms ShadowProbe.lcGam_diag3
+#print axioms ShadowProbe.null_radial
+#print axioms ShadowProbe.sds_photon_lyapunov
