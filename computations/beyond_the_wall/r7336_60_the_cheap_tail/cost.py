@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""r7334+60 -- THE CHEAP TAIL: the arithmetic of the registration, written and pushed BEFORE the
+"""r7336+60 -- THE CHEAP TAIL: the arithmetic of the registration, written and pushed BEFORE the
 first repair of this revision.
 
 ** WHAT THIS PRICES. **  `r7333` ④ ordered the single-row tail next rather than another dense block,
@@ -108,7 +108,7 @@ if __name__ == '__main__':
     _t = tail()
     _m = mine()
     print()
-    print('  r7334+60 -- THE CHEAP TAIL, REGISTERED BEFORE THE STRIDE')
+    print('  r7336+60 -- THE CHEAP TAIL, REGISTERED BEFORE THE STRIDE')
     print()
     print(f'    this seat\'s stride at {CENSUS}: {sum(_m.values())} rows in {len(_m)} receipts')
     print(f'    the single-row tail: {len(_t)} receipts, {BARRED} of them on the do-not-edit list '
@@ -126,3 +126,28 @@ if __name__ == '__main__':
     for r in _t:
         print(f'      {"[routed]" if "/L259" in r else "        "} {r}')
     print()
+
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+# THE RESULT, appended after the stride and read by the receipt.  ** The registration above is
+# untouched: nothing here moves a band, a central or a decisive fraction. **
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+RESULT.update({
+    # arm ⒜ -- receipts of the tail closed.  ⚠ CENSORED AT THE CEILING, as registered: the tail is
+    #   14 receipts long, so 14 supports `>= 14` and not an equality.
+    'A_CLOSED': 14,
+    # arm ⒝ -- rows needing something other than a plain widening.  ** OUTSIDE THE BAND, HIGH **,
+    #   which is one of the two failures the registration named in advance.
+    'B_OTHER': 9,
+    #   its composition: 7 needed the markup normaliser the gate layer compares with (one of them a
+    #   MARKDOWN carrier the gate layer's own normaliser does not reach), and 2 had no span to
+    #   widen at all -- proxies on LIVE CODE, repaired by parsing the gate's syntax tree.
+    'B_NORMALISED': 7,
+    'B_STRUCTURAL': 2,
+    'B_PLAIN': 5,
+    'CASES': 1,                 # the markdown carrier, filed beside its repair
+    'ROUTED': 1,                # the row on the do-not-edit list, routed as a patch
+    # why ⒝ failed, measured rather than asserted: the tail's rows are composed differently from
+    # the dense blocks the band was priced on.
+    'TAIL_MARKUP': 4, 'TAIL_ROWS': 15, 'BLOCK_MARKUP': 1, 'BLOCK_ROWS': 39,
+    'TAIL_TOKEN': 7, 'BLOCK_TOKEN': 7,
+})

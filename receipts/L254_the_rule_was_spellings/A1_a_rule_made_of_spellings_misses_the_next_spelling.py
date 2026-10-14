@@ -171,7 +171,7 @@ def main():
           "no longer matches this file's rule" in old_lint)
     gate_now = open(os.path.join(ROOT, 'corpus', 'check_receipts.py'), encoding='utf-8').read()
     lint_now = open(os.path.join(ROOT, 'scripts', 'lint_assertions.py'), encoding='utf-8').read()
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
     #   ** THE OWED ROW WAS THE TOKEN `acting_check.py` read as a substring of LIVE CODE: a
     #   FILENAME standing in for the claim that both files LOAD the shared rule. **  *A name can sit
     #   in a comment of a file that has grown a private copy back -- and in these two files it does

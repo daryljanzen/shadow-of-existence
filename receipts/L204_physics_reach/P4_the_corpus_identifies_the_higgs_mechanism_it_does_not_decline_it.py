@@ -184,7 +184,7 @@ def main():
     check("⌗ and the corpus has its OWN symmetry-breaking mechanism: P3 -- \"This is the symmetry "
           'breaking, located precisely\"',
           'This is the symmetry breaking, located precisely' in p3)
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
     #   ** THE OWED ROW WAS THE TOKEN `broken-symmetry shadows`: a coined phrase standing for a
     #   proposition, which is a PROXY and not a claim -- the label says the paper FRAMES THE WHOLE
     #   PHYSICS that way, and a phrase appearing anywhere in a body cannot carry `frames`. **

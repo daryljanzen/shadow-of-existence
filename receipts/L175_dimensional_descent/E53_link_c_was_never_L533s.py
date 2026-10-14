@@ -94,7 +94,7 @@ def main():
     check('and P6 argues it from Rule 2 directly: "the moduli-free structure is the sole determinate '
           'answer---which Rule~2 then certifies as the explanatory one"',
           'the moduli-free structure is the sole determinate answer' in p6)
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
     #   ** THE OWED ROW WAS `is not a single world but a family`: a FRAGMENT opening on a predicate,
     #   standing THREE times in this paper, so it could not locate the claim it was about. **  And
     #   the label quoted wording the paper no longer carries (`a free modulus`, `$W_{\lambda}$`),

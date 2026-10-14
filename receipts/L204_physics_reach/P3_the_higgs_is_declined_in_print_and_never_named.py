@@ -196,7 +196,7 @@ def main():
           zero['Higgs'] > 0)
 
     # ⓸ the corpus already holds the sentence
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
     #   ** THE OWED ROW WAS `CR is a \emph{selection-rule}` -- LaTeX emphasis in a MARKDOWN
     #   document, wording the document no longer carries -- and it sat in a DISJUNCTION whose other
     #   arm was a CASE-FOLDED TOKEN (`SELECTION-RULE` anywhere in the file), so the token decided

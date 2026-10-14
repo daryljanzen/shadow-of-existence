@@ -168,7 +168,7 @@ def main():
     #    ⇒ *The DECLINATION is the finding and it is intact and sharper; the two words were the
     #      evidence for it, not the thing itself.*  So the check asserts the declination in the
     #      paper's own current voice, and the ratchet above still forbids the footprint growing.
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
     #   ** THE OWED ROW WAS `is not a question the variation asks`, and it stood as the SECOND HALF
     #   of one sentence whose first half was the conjunct beside it: two fragments whose conjunction
     #   IN A FILE stood for what one sentence says, with the subject of the second (`which side is

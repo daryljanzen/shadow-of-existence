@@ -187,7 +187,7 @@ def main():
           'thermodynamics of an idealisation' in allp)
 
     # ⓷ the cosmological horizon, and it is load-bearing
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
     #   ** THE OWED ROW WAS THE TOKEN `\beta=2\pi\alpha`, standing at TEN sites across the corpus
     #   and sitting as the second arm of a conjunction whose first arm stopped before the period. **
     #   *So the conjunction of a clause and a formula IN A FILE stood for what one sentence says,

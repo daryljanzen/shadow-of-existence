@@ -118,7 +118,7 @@ def main():
           abs(tot[1000]/(1000**4/4) - 1) < 0.01)
 
     # the asymmetry: IR free, UV untouched
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order,
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order,
     #   which sent this seat into the tail.  ** THE OWED ROW WAS THE TOKEN `$n\\ge 2$`: a LOCATOR
     #   standing in for the claim, and a strict substring of this receipt's own longer key. **  A
     #   range on its own says nothing about WHAT starts at two, so the condition could not fail

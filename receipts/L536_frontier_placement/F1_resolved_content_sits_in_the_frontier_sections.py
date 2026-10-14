@@ -147,7 +147,7 @@ def main():
           'e of two kinds, and a reader is owed the difference.} \\emph{Work} is something unworked that a definite computation would close' in p7f
           and 'boundary} is a result rather than a gap' in p7f
           and _FINISHED in _p7u)
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
     #   ** THE OWED ROW WAS `has not failed to empty; it has finished`: the span opens on a
     #   PREDICATE, its subject -- `A list that ends with only boundaries and standing conditions` --
     #   sits outside it, and the second clause's `it` points back to that same absent subject. **

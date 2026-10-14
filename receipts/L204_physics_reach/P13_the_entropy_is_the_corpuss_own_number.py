@@ -133,7 +133,7 @@ def main():
           'The one physical length is $\\alpha$, not $\\ell_P$' in allp)
     check('and interprets it: "the size of the universe in gauge-units---a number, not a tuning"',
           'the size of the universe in gauge-units---a number, not a tuning' in allp)
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order, and
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order, and
     #   the repair is the one `70` prescribed at `r7251` PLUS the widening this seat's own rule asks
     #   for.  ** THE OWED ROW WAS THE TOKEN `\Lambda\ell_P^2\approx3\times10^{-122}`: a bare
     #   formula, which a markup rewording that keeps the content breaks, and which says nothing

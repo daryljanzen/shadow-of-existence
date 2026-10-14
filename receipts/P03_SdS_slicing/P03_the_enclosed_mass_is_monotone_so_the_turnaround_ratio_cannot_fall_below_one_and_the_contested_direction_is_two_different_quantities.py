@@ -489,7 +489,7 @@ _AUTHORISED = {
     'narrating_its_own_history.py': ('r7265 order item 3 (N1): the frontier-table repair moves a '
                                      'number the receipt states about the same material',
                                      'dcef045c'),
-    # ⛭⛭ r7334+60: AND NINE MORE, WHICH IS THE MECHANISM WORKING AND NOT THE CLAIM WIDENING.
+    # ⛭⛭ r7336+60: AND NINE MORE, WHICH IS THE MECHANISM WORKING AND NOT THE CLAIM WIDENING.
     #   *`r7331` ④ ordered this seat into two blocks outside its prefixes, so the crossing is
     #   BIDDEN and belongs here by name with the order that bade it -- not in a wider `_owned`,
     #   which would retire the claim instead of bounding it.*  ** Each is pinned at the commit of

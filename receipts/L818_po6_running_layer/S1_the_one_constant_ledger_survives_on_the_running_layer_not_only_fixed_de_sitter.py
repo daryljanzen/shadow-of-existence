@@ -197,7 +197,7 @@ def main():
           'this is the decidable answer for the running classical background',
           'curvature runs' in s50_txt and 'counterterm basis survive' in s50_txt
           and _UV_OPEN in _tex_u)
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
     #   ** THE OWED ROW WAS `definition of the interacting tower`: a VERBLESS NOUN PHRASE standing
     #   four times in this paper (its count moved from three at one commit), so it was tied to no
     #   line -- and the claim beside it is that the paper names the interacting-tower UV as WHAT

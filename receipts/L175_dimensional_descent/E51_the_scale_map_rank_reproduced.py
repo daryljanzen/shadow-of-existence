@@ -71,7 +71,7 @@ def main():
           "the plane-section scale-only reduction; (e) the scale map's rank being 1\"",
           "the scale map's rank being 1" in kill
           and 'the plane-section' in kill)
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
     #   ** THE OWED ROW WAS `reproduced nowhere else`, and it sat in a DISJUNCTION whose weaker arm
     #   decided alone: a case-folded read of a bare predicate whose SUBJECT is outside the span
     #   entirely. **  *From `reproduced nowhere else` nothing says WHAT is reproduced nowhere else,

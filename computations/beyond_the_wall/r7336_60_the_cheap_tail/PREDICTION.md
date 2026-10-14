@@ -1,4 +1,4 @@
-# `r7334`+`60` — THE CHEAP TAIL, REGISTERED BEFORE THE FIRST REPAIR
+# `r7336`+`60` — THE CHEAP TAIL, REGISTERED BEFORE THE FIRST REPAIR
 
 **Written and pushed before one receipt of this revision was edited.** `r7333` ④: *the single-row
 tail next, not another dense block — the rate is measured on the expensive end and the cheap end is

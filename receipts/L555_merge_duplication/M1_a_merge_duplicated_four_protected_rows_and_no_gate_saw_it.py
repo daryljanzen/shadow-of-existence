@@ -289,7 +289,7 @@ def main():
           "ln[:3].upper().startswith('| P') or ln.startswith('| `')" in src
           and all(SPL.split(l)[1].strip().startswith('—') or '---' in SPL.split(l)[1]
                   for l in withpath))
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
     #   ** THE OWED ROW WAS THE TOKEN `index_rows` read as a substring of LIVE CODE: narrower than
     #   the claim and a PROXY for it.  The check says the gate now READS `corpus/index_rows.py`;
     #   the token occurs four times in that file, two of them in PROSE comments, so the condition

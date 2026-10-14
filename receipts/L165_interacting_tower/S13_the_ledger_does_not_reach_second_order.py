@@ -123,7 +123,7 @@ def main():
 
     # ⓷ the corpus's one-constant statement is about the faces
     p0 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'geometric_core_paper.tex')))
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
     #   ** THE OWED ROW WAS `is a pure power of`: a span dangling at BOTH ends -- a leading finite
     #   verb and a trailing preposition -- standing at nine sites across six files, so it was a pin
     #   on the FILE and could not locate the claim it was about. **  Its partner arm began

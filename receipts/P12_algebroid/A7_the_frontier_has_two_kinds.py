@@ -93,7 +93,7 @@ def main():
     rows = {re.search(r'PO-\d+', l).group(0): l
             for l in raw.split('\n') if re.match(r'\|\s*~*\*\*PO-\d+\*\*', l)}
 
-    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
     #   ** THE OWED ROW WAS `the whole difference is carried by`, and the ground is the TRAILING
     #   arm: the span ends on `by`, promising an agent it does not carry. **  *The sorting rule this
     #   receipt runs on is that the difference is carried by $H(a)$ -- the agent is the whole
