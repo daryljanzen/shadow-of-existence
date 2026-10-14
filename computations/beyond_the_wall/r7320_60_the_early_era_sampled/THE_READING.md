@@ -98,6 +98,23 @@ ground is met.*** *By this seat's reading none of the eight had checks that disa
 for the case where they would is offered — **owed if any check owes it**, a pin being one key and a
 repair being owed if any of its uses is defective. `69`'s to write, `66`'s to order.*
 
+## ⛭⛭ AND THE THIRD REDRAFT LANDED AFTER THIS READING — IT MOVES NOTHING IN THE `40`
+
+*`69`'s third redraft came in on the trunk after this reading was pushed. **The measurement is of the
+SECOND, as `r7313` ordered and the pre-registration pinned**, so the only question is whether the newer
+text moves a row of it. It does not, and each of its three new places is checked rather than waved
+past:*
+
+- ***The multi-check precedence is the tie-break this reading proposed*** — a row several checks quote
+  is one pin, and the repair is owed if any use of it owes one. *So that open place is closed, and on
+  this population it changes nothing: none of the eight multi-check rows had checks that disagreed.*
+- ***Test 5's new disjunction clause reaches none of the held rows***, by parsing rather than by
+  reading: not one of the `11` has a quoting check that accepts a quoted piece through an `or`. *And it
+  could only ever add to the owed class, never return one.*
+- ***Test 2's head-noun list, now closed and four nouns longer, reaches none of them either***: no held
+  or moved row's quotation opens on one of the `14` as its subject — each names its own thing, or is a
+  value or a name with no clause at all.
+
 ## ⚠ WHAT THIS DOES NOT DO, AND WHAT IS ROUTED
 
 - ***This revision verdicts NOTHING.*** *`27` withdrawals read in a sample are a finding; writing them

@@ -449,6 +449,65 @@ gate(f'Ⓖ③  ⌗ and `71`\'s NEW OPEN PLACE -- *a row several checks quote wit
      len(_multi) == 8 and len(_immune) == 4)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
+head('H -- THE THIRD REDRAFT LANDED AFTER THIS READING, AND IT MOVES NOTHING IN THE 40')
+
+# 69's THIRD redraft (`r7315+69`) landed on the trunk after this revision's reading was pushed.  The
+# measurement is OF THE SECOND, as `r7313` ordered and as the pre-registration pinned -- so the
+# question this section answers is the narrow one: does the newer text move any of these 40?
+THIRD = '1a3c13a6'
+RULE3 = show(THIRD, 'computations/beyond_the_wall/r7299_69_the_rule/THE_RULE.md')
+_CH3 = {
+    'the multi-check precedence': 'the repair is owed if any use of it owes one',
+    "Test 2's head-noun list, closed": 'This list is closed',
+    "Test 5's disjunction clause": 'the claim needs all of them and the check accepts any one',
+}
+_new3 = {k: (v in RULE3 and v not in RULETEXT) for k, v in _CH3.items()}
+print(f'      third redraft, places new against the second: {_new3}')
+gate(f'Ⓗ①  ⛭⛭ **THE THIRD REDRAFT\'s FIRST NEW PLACE IS THE TIE-BREAK THIS REVISION PROPOSED**: read at '
+     f'`{THIRD}`, it writes that a row several checks quote is one pin and *the repair is owed if any use '
+     f'of it owes one* -- which is Ⓖ③\'s proposal, landed by `69` after this reading was pushed and '
+     f'without this branch being merged.  ** So that open place is CLOSED and the recommendation does '
+     f'not need making twice; all three new places are present there and absent from the second text **',
+     all(_new3.values()))
+
+_OR_ROWS = []
+for c in H:
+    src = show(DRAW, c[1])
+    lit = ast.literal_eval(c[2])
+    for node in checks_requiring(src, lit):
+        for x in ast.walk(node):
+            if isinstance(x, ast.BoolOp) and isinstance(x.op, ast.Or) and any(
+                    isinstance(y, ast.Compare) and len(y.ops) == 1 and isinstance(y.ops[0], ast.In)
+                    and isinstance(y.left, ast.Constant) and isinstance(y.left.value, str)
+                    for y in ast.walk(x)):
+                _OR_ROWS.append(c[0])
+print(f'      HELD rows whose quoting checks accept a quoted piece through an OR: {_OR_ROWS or "none"}')
+gate(f'Ⓗ②  and **Test 5\'s NEW DISJUNCTION CLAUSE REACHES NONE OF THEM**, by parsing rather than by '
+     f'reading: not one of the `{len(H)}` HELD rows has a quoting check that accepts a quoted piece '
+     f'through an `or`, so *a disjunction cannot carry a conjunction* has nothing to take here.  ⌗ It '
+     f'can only ADD to the owed class in any case, never return one',
+     not _OR_ROWS)
+
+_HEADS = [n for n in ('result', 'consequence', 'conclusion', 'outcome', 'claim', 'statement', 'fact',
+                      'case', 'quantity', 'point', 'question', 'answer', 'argument', 'finding')
+          if f'the {n},' in RULE3 or f'the {n}*' in RULE3 or f'the {n} ' in RULE3]
+_opens = []
+for c in H + M:
+    lit = ast.literal_eval(c[2]).lstrip()
+    low = lit.lower()
+    if any(low.startswith(f'the {n}') or low.startswith(f'a {n}') for n in _HEADS):
+        _opens.append(c[0])
+print(f'      head nouns on the closed list: {len(_HEADS)};  '
+      f'HELD or MOVED rows opening on one: {_opens or "none"}')
+gate(f'Ⓗ③  and **Test 2\'s list, now CLOSED and four nouns longer, reaches none of them either**: the '
+     f'`{len(_HEADS)}` listed nouns are read out of the third text rather than restated, and no HELD or '
+     f'MOVED row\'s quotation opens on one of them as its subject -- each names its own thing '
+     f'(`the module`, `the Weyl $S_3$`, `the $S^3$ tensor tower`, `A bound by a mechanism the order did '
+     f'not name`), or is a value or a name with no clause at all.  ⇒ ** The reading stands against the '
+     f'text it was ordered against, and nothing in the newer text moves a row of it **',
+     len(_HEADS) >= 14 and not _opens)
+
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
 print()
 print('=' * 100)
 print(f'  gates run: {len(CHECKS)}   failed: {len(FAILURES)}')

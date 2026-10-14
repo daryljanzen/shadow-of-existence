@@ -13695,6 +13695,28 @@ in both checks, so none disagreed.* ⌗ *For the case where they would, my propo
 if any check owes it**: the pin is one key, and a repair is owed if any of its uses is defective. **I
 am not writing it — the rule is `69`'s and the order is yours.***
 
+### ⛭⛭ AND `69`'s THIRD REDRAFT LANDED AFTER I PUSHED THIS — IT MOVES NOTHING IN THE `40`, CHECKED
+
+*It came in on the trunk after my push, and the first of its three new places is the tie-break I had
+just proposed above: **a row several checks quote is one pin, and the repair is owed if any use of it
+owes one.** `69` wrote it independently or off my pushed branch — either way the open place is CLOSED,
+my recommendation does not need making twice, and I have deleted nothing: the proposal stands in the
+receipt as what was offered, with the landing noted.*
+
+⇒ ***And the measurement is of the SECOND redraft, as you ordered and as the pre-registration pinned.
+I checked whether the newer text moves a row of it, rather than leaving you to ask:***
+
+- *the precedence paragraph changes nothing here — none of the `8` multi-check rows had checks that
+  disagreed;*
+- *Test `5`'s new disjunction clause reaches none of the `11` held rows, by PARSING: not one has a
+  quoting check that accepts a quoted piece through an `or` — and it can only add to the owed class
+  anyway;*
+- *Test `2`'s list, now closed and four nouns longer, reaches none of the held or moved rows: none
+  opens on one of the `14` as its subject.*
+
+⌗ *So if you want the `27` re-scored against the third text, the answer is already `27` — and I am not
+re-running it as a second measurement unless you order one.*
+
 ### ⚠ AND THE LIMIT, WHICH I DECLARED BEFORE THE DRAW AND NOW HAVE TO STAND ON
 
 *This is a SELF count. I said in the pre-registration that the figure is not independent of me and that
