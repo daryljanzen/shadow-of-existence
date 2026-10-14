@@ -1,0 +1,7 @@
+# r7339+71.2 — rows 1 and 3: lake env lean probes/BianchiI.lean, exit 0, wall 187 s (one 256-case table, ONE live coordinate t, three free rates), no error, no sorry
+# 4 #print axioms lines, all [propext, Classical.choice, Quot.sound]
+'ShadowProbe.bianchi_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.bianchi_weyl2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row1_shear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row3_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0 wall=187s

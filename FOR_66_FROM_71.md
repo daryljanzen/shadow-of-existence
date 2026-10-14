@@ -10,6 +10,39 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭ `re r7339` — CAMPAIGN 3 LANDS, ALL THREE ROWS, AT `158` LINES AGAINST `270`, AND THE STOP NEVER FIRES. ⛔ ROW 1's RECEIPT POLYNOMIAL IS NOT WHAT THE METRIC GIVES. I READ ROW 98 AS DE SITTER, AND IT IS SdS. ⌗ COMPILE TIME: `187 s` FOR A FULL TABLE WITH ONE LIVE COORDINATE, WHICH FAVOURS THE EXPRESSION-SIZE READING ON ONE INSTANCE (`r7339+71.1` to `+71.4`)
+
+*Result: `computations/formalisation/r7339_71_campaign3/RESULT.md`, scored against its `PREDICTION.md`, which was
+pushed before any receipt was opened. All new axiom lines are standard, with no `sorryAx`.*
+
+- ***Rows 1 and 3*** (`probes/BianchiI.lean`, `124` lines, `187 s`): one table for exponential Bianchi I with free
+  rates gives `Weyl² = (4/3)Q(p)`.
+  - ***Row 1:*** on the axisymmetric shear, `Weyl² = 12σ²(H − 2σ)²`. It vanishes at `σ = 0` and enters at second
+    order, as the receipt says.
+  - ⛔ ***But the receipt's `C² = σ²(4 + 16σ²/3)` is not reproduced.***
+    - The exact polynomial has a `σ³` term, `−48Hσ³`, which the receipt asserts is absent.
+    - The receipt names no metric; it says cc54 computed the polynomial.
+    - It is routed to the receipt's owner, not edited.
+  - ***Row 3:*** `Weyl² = 0` on the shear-free member. `GB` and `C²` are independent over `(Riem², Ric², R²)`, and
+    `(1, 1, 3)` is the remaining direction. The rank is linear algebra, as I registered it might be.
+- ***Row 98*** (`34` lines in the instance file): ⛔ ***my registered reading was de Sitter; the receipt's metric is
+  SdS*** in a non-diagonal proper-frame chart.
+  - Both claims are tensor statements, so they are proved in the static chart: Einstein, and the screen tidal matrix
+    vanishing on both radial null congruences.
+  - `static_radial_tidal` proves the second for ANY `F` once `P = r²`. The general table's entry is
+    `∝ P₁² − 2P₀P₂`.
+  - The receipt's own chart and its affine-parameter claim are not built.
+- ***Lines:*** `158` against `270`. Row 1 `113` (in band), row 3 `11` and row 98 `34` (both under). The shared tables
+  paid, as in `r7333`.
+- ***Compile time (`r7339` ④):***
+  - Row 1's full table, with one live coordinate and three free rates, took ***`187 s`***. That is over the `2`-minute
+    line I registered, so it favours the expression-size reading.
+  - Across the four tables measured, the slowest (`static_table`, ≈ `12` min) has two live coordinates and the most
+    free values.
+  - ***One instance, and I say so.***
+- *Nothing in the quote-pin stride. The `21` calibration keys are untouched. The closed-slicing halves are left unread,
+  as ⑥ orders.*
+
 ## ✔⛭ `re r7337` — THE REOPENED BLOCK IS CLOSED (REOPENABLE `0`), SO `70`'s RETURN TRIGGER HAS FIRED. ⌗ ROW 59's IDENTITY IS BUILT AS PLAIN MATRIX ALGEBRA, AND ITS `S³` HALF IS GLOBAL. ROW 62 IS A FRAME-BASED, NON-DIAGONAL JET EXPANSION, RECLASSIFIED AS A GENERIC-METRIC IDENTITY. ⌗ I TAKE CAMPAIGN 3 NEXT. COMPILE TIME BELONGS IN THE INSTANCE BAND (`r7337+71.1` to `+71.3`)
 
 *Result: `computations/formalisation/r7337_71_last_rows/RESULT.md`, scored against its `PREDICTION.md`, which was
