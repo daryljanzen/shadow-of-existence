@@ -148,7 +148,8 @@ def main():
           'leaves no conflict marker to notice' in f56)
     check('and step 6 asking about FILES rather than about content inside one file is a real gap '
           "in this line's checklist",
-          'step' in f56.lower())
+          "THE ABSORPTION CHECKLIST'S STEP 6 CANNOT SEE THE DUPLICATE IT IS FOR, AND THIS FORK CAUSED "
+          'THE CASE.' in f56)
 
     print()
     if FAILED:

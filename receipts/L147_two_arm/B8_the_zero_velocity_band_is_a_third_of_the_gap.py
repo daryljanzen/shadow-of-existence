@@ -104,7 +104,8 @@ def main():
           'exactly two values, geometrically forced"',
           'reality admits exactly two values, geometrically forced' in arc)
     check('⛔ but L-202\'s phase is the ANTILINEAR FACE K on the branch structure',
-          'antilinear' in arc.lower())
+          "`L-202`'s phase is the **antilinear face $K$ on the branch structure**; `CRPHI` is a "
+          '**hydrodynamic initial condition on the photon-baryon oscillator**.' in arc)
     check('while CRPHI is a hydrodynamic initial condition: delta_g = D cos(k c_s (eta - eta_S) + phi)',
           'delta_g = D cos(k c_s (eta - eta_S) + phi)' in inst)
     check('⇒ TWO OBJECTS SHARING ONE WORD -- the L-202 link is withdrawn',
