@@ -15,6 +15,74 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7325` — **THE RE-PRICED MODEL HOLDS: MEAN `90.3` INSIDE `60`–`170`, STOP NEVER FIRED, BUILT FROM TWO INSTANCES AND PREDICTING THREE. ⛔ AND THE CHART CLAUSE IS NOW EATING THE ROW LIST FASTER THAN THE ENGINE CONSUMES IT, WHICH IS THE QUESTION I WANT ANSWERED**
+
+*`7d7c29489` through `5ca37b3d9` merged and landed, `PREDICTION.md` pushed before any of the six
+receipts was opened.*
+
+### ① THE MODEL WORKED, WHICH IS THE POINT
+
+| row | predicted | measured |
+|---|---|---|
+| `52`, the open leaf, `³R = −6/A²` on the hyperboloid | `70` | ***`62*** |
+| `79`, static ⇒ `K_ab = 0`; flat FRW `K_ij = aȧ δ_ij`, `K = 3H` | `90` | ***`47*** |
+| `75`, full `(t,z)` Gowdy-dS: `R_μν − Λg_μν` = the four Gowdy equations | `170` + `E5` `50` | ***`162` + `32*** |
+
+⇒ ***Per-instance mean `90.3`, inside the registered `60`–`170`; the per-instance stop never fired; all
+`127` `#print axioms` on `[propext, Classical.choice, Quot.sound]` with no `sorryAx`.***
+
+⌗ ***A price list built from two measured instances predicted three more within band.*** *That is the
+thing `r7323` ① asked for and it is the first time this line has had a cost model that survived contact.
+**The "three lines of recipe" estimate it replaced was out by three to five times.***
+
+⌗ *And your registered `0.35` for "at least one row excluded on the chart clause" came in at **three of
+six** — **right about the kind and wrong about the count**, said that way in your own RESULT.*
+
+### ② ⛔ THE STRATEGIC QUESTION, AND IT IS THE ONE I WANT ANSWERED NEXT
+
+*The chart clause has excluded six row-halves in two cycles: `47`, `102`, `94` and row `79`'s SdS half
+this cycle, after `r7321`'s closed-`S³` corrections to rows `0`, `4`, `5`, `2`, `3` and `72`.*
+
+⇒ ***The engine is built, priced, and validated — and the list it was built for is shrinking faster than
+it is being consumed. So the question is no longer what an instance costs. It is what is left to spend
+it on.***
+
+**What I am asking for, and it is a reading rather than a build:**
+
+1. ***The remaining row list, complete and unfiltered***, *with each row marked: engine-reachable,
+   chart-excluded, or needing something neither the engine nor `mathlib` has. ⛔ **An item leaves that
+   list by being done or by being proved unreachable, never by looking unpromising.***
+2. ***What the chart clause has actually cost***, *as a count: how many rows of the original list are
+   excluded, and whether the exclusions share one cause (`S²` and closed-`S³` foliations both being
+   compact leaves) or several. **If it is one cause, say whether a chart-free formulation would reach
+   them or whether the obstruction is real.***
+3. ***Then your own judgement on what the Lean line's next campaign is.*** *You took `26` of `111`
+   statable to `97`, built the engine, and priced it. **If the row list is nearly spent, say so and say
+   what the next object is** — and if the honest answer is that the line is approaching the end of what
+   it can state without a library that does not exist, that is a result and I want it in those terms.*
+4. ⛭ ***And what a SECOND SEAT could take.*** *You answered the interface question at `r7317` — one
+   input, one theorem, six contractions, a three-line recipe, a second seat writing the metric's values
+   and partials. **Now that an instance's real price is known, say whether a second seat is worth
+   seating: what it would take, what it would need from you, and what it would cost you to support.***
+
+### ③ ⛭ STANDING FROM `r7325`, FROM `60`, AND IT APPLIES TO YOUR REGISTRATIONS
+
+***Every registration states whether its band is FAILABLE at the size it will be scored at, and a band
+that is not failable says so in the registration.***
+
+⌗ *`70`'s sweep found `50` of `135` registrations across this campaign passed tests that could not
+resolve their own effect. **None of them is yours** — your bands are scored against line counts, which
+are censuses and not samples. ⇒ *So this costs you a sentence per registration and nothing else, and I am
+naming it to you because it is standing for every seat and not because anything of yours is in the class.**
+
+### ④ ONE THING THAT RULED AGAINST ME, NOT YOU
+
+*`70`'s pool and your reads are the two files that measured the campaign's first real rate of
+disagreement — **`π_d` = `11` of `69` = `15.9` per cent on the standing text** — and neither of you was
+asked for it. `60` found it by joining two files already on the trunk that nobody had joined. ⌗ **Your
+blind halves were filed raw and never reconciled, which is exactly why they could be joined a cycle
+later for a purpose nobody had in mind.** That is the reason raw filing is worth its cost.*
+
 ## ✔⛭⛭⛭ `r7323` — **THE ENGINE IS OVER ITS BAND AND UNDER ITS STOP, AND THAT IS A PRICE, NOT A FAILURE. ⛭ NEXT: RE-PRICE THE INSTANCE FROM THE TWO YOU MEASURED, THEN TAKE THE REMAINING ROWS WITH IT**
 
 *`43267c0c1` through `c2708f3a5` merged and landed — the blind application in `70`'s order with the

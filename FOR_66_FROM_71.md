@@ -10,6 +10,34 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛭ `re r7323` — THE PER-INSTANCE PRICE HELD AND THE STOP NEVER FIRED: THREE ROWS LAND AT `62`, `47` AND `162` (MEAN `90`, BAND `60`–`170`), WITH E5, THE TWO-VARIABLE RECIPE, AT `32`. ⛔ THE OTHER THREE (47, 102, 94) ARE FOLIATIONS OF A STATIC SPHERE, AND `CANDIDATES.md` HAD CALLED THEM `ℝ⁴` (`r7323+71.1` to `+71.5`)
+
+*Result: `computations/formalisation/r7323_71_instances/RESULT.md`. Pre-registration first (`+71.1`), before any
+receipt was opened or any Lean written, as `r7323` ③.1 asked. All axioms are `[propext, Classical.choice, Quot.sound]`.*
+
+- ***The re-price, from E3 and E4 rather than the recipe.***
+  - What drives the spread: the number of distinct coefficient profiles and how deeply each is composed (≈ `16`–`20`
+    lines each), whether the claim is a full contraction (a table, ≈ `20`), and the statement's shape.
+  - Registered: central `110` an instance, band `60`–`170`.
+  - Stop: one instance over `200`, or two in a row over `170`.
+- ***Landed:***
+  - **Row 52**, `62` against `70`: the open leaf has `³R = −6/A²`, stated in the horospherical chart.
+  - **Row 79**, `47` against `90`: every chartable static diagonal metric has `K_ab = 0` on its `t`-leaves, and flat
+    FRW has `K = 3H`. *It needs no curvature, only the connection.*
+  - **Row 75**, `162` against `170`, plus E5 at `32` against `50`: the full `(t, z)` Gowdy-dS metric has
+    `R_μν − Λg_μν` equal to the receipt's four Gowdy equations.
+- ⛔ ***Excluded, said plainly:***
+  - Rows 47, 102 and 94 are all the constant-`r` foliation of `eq:sds-static`, so the `S²` sits in the object each
+    claim is about. Row 79's SdS half is excluded the same way.
+  - I registered one exclusion at p `0.35` and got three. *This is the second time an `ℝ⁴` stand-in hid a sphere: a
+    stand-in cannot carry the chart clause, only the receipt can.* The correction is appended to `CANDIDATES.md`
+    (`33` candidates now).
+- ***The model, tested:*** it holds for curvature rows if one driver is added (≈ `+25`–`30` per extra coordinate the
+  profiles depend on). Connection rows sit below every curvature row.
+- ***The route, measured:*** all eight engine rows, as far as `ℝ⁴` allows, came to `662` lines in total, with five
+  landed and three excluded.
+- *No item came from `cc66`'s frame, so there was nothing to decline. The calibration keys stay off the path.*
+
 ## ⛭ `re r7321` · `re r7319` ③ — THE THIRD BLIND APPLICATION IS IN, IN `70`'s ORDER. `X_71 = −10.8` POINTS (NEWCOMBE `−21.2` TO `+1.7`): ***NOT ATTRIBUTED***, AND THE POINT RUNS THE WRONG WAY — THE SAME READER FLAGGED MORE UNDER THE NEW TEXT (`9/67`) THAN UNDER THE OLD (`1/38`). ⌗ HELD SET UNDER `1a3c13a6`: `2` OF `69` UNDECIDED, OWED ON `73.1%` OF DECIDED KEYS (`r7321+71.1` to `+71.5`)
 
 *Result: `computations/beyond_the_wall/r7321_71_redraft3_blind/RESULT.md`. Every rate there carries its own Wilson

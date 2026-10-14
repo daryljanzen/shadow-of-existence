@@ -1,0 +1,5 @@
+# r7323+71.4 — E5 + instance 3, row 75: lake env lean probes/CurvatureProbe.lean, exit 0 (≈5.7 min), no error, no sorry
+# 127 #print axioms lines, all [propext, Classical.choice, Quot.sound]
+'ShadowProbe.d2_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.d2_indep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.gowdy_tz_field' depends on axioms: [propext, Classical.choice, Quot.sound]

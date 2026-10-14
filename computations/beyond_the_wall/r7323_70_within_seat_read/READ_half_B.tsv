@@ -1,0 +1,39 @@
+# derived by derive.py from APPLICATION_70_half_B.tsv; columns: receipt, literal, verdict, flag
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"It survives in an amplitude and cancels in every logarithmic derivative"	REPAIR-OWED	FLAG
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"a dimensionless magnitude needs two"	REPAIR-OWED	
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the crossing determines how much a perturbation is multiplied, and does not determine the perturbation"	MEANING-HELD	FLAG
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"the same standard datum that fixes both the light-element abundances and the microwave-background peak \\emph{heights}"	REPAIR-OWED	FLAG
+receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py	"there is no such start and no such amplitude"	REPAIR-OWED	FLAG
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"94 unmarked"	REPAIR-OWED	
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"A PHANTOM, and I built it from the advertisement"	REPAIR-OWED	
+receipts/L210_entry_points/E3_the_front_is_worked_and_the_row_never_recounted.py	"P14's massive 54-development fell out of it"	REPAIR-OWED	FLAG
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"FRW/Kerr/RN analogous removal"	REPAIR-OWED	
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"bound-LTB form"	DELIBERATE	FLAG
+receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	"non-degenerate critical points of identical analytic character"	REPAIR-OWED	
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"This is proved here from the maximal-symmetry requirement together with the signature and causal-structure conditions; nothing is assumed of the embedding"	REPAIR-OWED	FLAG
+receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py	"label\\{prop:amplitude\\}.{0,1200}?\\\\noindent\\\\emph\\{Argument"	NOT-A-PIN	
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_left = sorted({c for c in s if ord(c) > 0xFF})"	REPAIR-OWED	FLAG
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"nothing untranslated leaves this function"	REPAIR-OWED	FLAG
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"\u24fa"	DELIBERATE	FLAG
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"An empty survey is green forever"	REPAIR-OWED	FLAG
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"_SUPER"	REPAIR-OWED	
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"tex_escape"	REPAIR-OWED	
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"\u0299"	DELIBERATE	FLAG
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"\u1d47"	DELIBERATE	FLAG
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"WHAT IT CANNOT DO"	REPAIR-OWED	FLAG
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"load-bearing claim from a passing remark"	REPAIR-OWED	FLAG
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"substrate"	REPAIR-OWED	
+receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	"the degeneracy is $2(n-1)(n+3)$"	MEANING-HELD	FLAG
+receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py	"_CLAIMS"	REPAIR-OWED	
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"(4/11)"	REPAIR-OWED	FLAG
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"3 nu"	REPAIR-OWED	FLAG
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"nu_R"	REPAIR-OWED	FLAG
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"nu_{R}"	REPAIR-OWED	FLAG
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"right-handed"	REPAIR-OWED	
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"(1+\\delta_{r})/(1+\\delta_{m})=1+(\\delta_{r}-\\delta_{m})+O(2)"	REPAIR-OWED	FLAG
+receipts/L804_isocurvature_bound/S1_the_adiabatic_premise_is_what_the_data_demands.py	"nearly scale-invariant adiabatic spectrum processed by ordinary structure formation"	REPAIR-OWED	FLAG
+receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py	"analytical index"	REPAIR-OWED	FLAG
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"at distinct points of the throat circle, and each vantage's signed areal radius vanishes at its own and at neither of the others"	REPAIR-OWED	
+receipts/P14_matter_sector_paper/P14_p3_already_said_it.py	"the root-exchange $\\sigma$ is the hop from one to the next"	REPAIR-OWED	FLAG
+receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py	"THERE IS NO SUCH BUNDLE"	REPAIR-OWED	FLAG
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"R = r_0->-r_0 (2M->-2M) carries 3 -> 3bar"	DELIBERATE	FLAG
