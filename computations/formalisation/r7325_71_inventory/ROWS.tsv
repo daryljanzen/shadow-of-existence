@@ -1,0 +1,112 @@
+index	class	status	what it needs next	stand-in
+0	G2	DONE (chartable half)	closed half: the closed S^3 slicing's R -> REOPENABLE by the near-point convention	curvature invariants of max-symmetric spaces, R of a slicing
+1	G2	ENGINE-REACHABLE	a diagonal instance on the existing 4D engine (Bianchi I / dS)	Weyl^2 (C^2) as a polynomial in shear
+2	G2	DONE (chartable half)	closed half: k=+1 (closed FRW) -> REOPENABLE by the near-point convention	Weyl^2 = 0 on FRW
+3	G2	ENGINE-REACHABLE	a diagonal instance on the existing 4D engine (Bianchi I / dS); closed half: the closed-FRW rank -> REOPENABLE	rank of curvature-invariant basis, Weyl^2 = 0
+4	G2	DONE (chartable half)	discharged in B (r7315); closed half: the closed slicing's R -> REOPENABLE by the near-point convention	curvature invariants; Ricci scalar of a layer
+5	G2	DONE (chartable half)	discharged in B (r7315); closed half: the closed slicing's constant R -> REOPENABLE by the near-point convention	Ricci scalar of two slicings
+6	G2	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	Einstein tensor and its divergence (contracted Bianchi identity)
+7	G3	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	ADM identity for extrinsic curvature K_ij of a slice
+8	G4	DONE	discharged in B (r7315)	TT mode function of a field on de Sitter
+9	G3	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	plane sections of the dS hyperboloid as submanifolds with radius
+10	G3	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	plane sections of the dS quadric identified as dS_{D-1} / sphere
+11	G4	DONE	discharged in B (r7315)	surface gravity and the accelerated (Unruh-type) temperature
+12	G1	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	Killing norm: static region pinches off at the double root; blueshift factor
+13	G4	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	LTB Einstein tensor with matter, equation of motion
+14	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	closed-FRW dust scale factor equals a cycloid (a function)
+15	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	LTB turnaround radius (functions of r)
+16	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	LTB turnaround time (functions)
+17	G2	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	Kretschmann scalar on the Nariai cut
+18	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	branched covering and its canonical flat connection
+19	G2	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	Weyl^2, Gauss-Bonnet as a total derivative
+20	G4	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	momentum constraint, mode ODE, div G
+21	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	Nariai limit identified as dS2 x S2
+22	G2	DONE	discharged in B (r7315)	de Sitter curvature invariants
+23	G4	LIBRARY GAP	spectral theory	quadratic counterterm reduction to GB + EOM terms
+24	G4	LIBRARY GAP	spectral theory	heat-kernel coefficient b_4 decomposition
+25	G1	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	one metric in four charts; Killing norm at the horizon
+26	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	horizons sorted by completion (global)
+27	G1	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	continuation reproduces exterior metric coefficients (a metric in a chart)
+28	G2	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	Kretschmann along a curve
+29	G1	DONE	discharged before B (r7297 C1-C5 and earlier)	cycloid solves the radial geodesic equation
+30	G1	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	interior metric in cycloid coordinates; causal character of eta
+31	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	complex continuation lands on real r on three axes
+32	G3	DONE	discharged in B (r7315)	geodesic acceleration equals r times a slice's Gaussian curvature
+33	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	parity split of the lapse polynomial
+34	G3	DONE	discharged in B (r7315)	a slice's Gaussian curvature equals -f'/(2r)
+35	G4	NEEDS A DIMENSION CHANGE	the engine over Fin n (108: R^5; 35: general D; 83: squashed S^5, also chart-excluded)	Einstein tensor; vacuum field equation solved by Tangherlini-dS
+36	G3	DONE	discharged in B (r7315)	slice Gaussian curvature zero locus and the Nariai discriminant
+37	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	continuation through a throat: C1-not-C2 join with signature flip
+38	G3	DONE	discharged in B (r7315)	geodesic acceleration = r K_G (slice curvature)
+39	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	points on the ambient quadric and values of the ambient interval
+40	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	deck group Z_{D-1} from the imaginary period
+41	G1	DONE	discharged before B (r7297 C1-C5 and earlier)	zero-energy radial orbit; null flow fixed points with kappa = f'/2
+42	G1	DONE	discharged before B (r7297 C1-C5 and earlier)	I20: conformal Killing, charge on null geodesics, 1+z
+43	G1	DONE	discharged before B (r7297 C1-C5 and earlier)	homothety charge conserved on null geodesics only
+44	G1	DONE	discharged in B (r7315)	photon-sphere Lyapunov exponent of the geodesic flow
+45	G2	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	SdS Kretschmann from Riemann
+46	G4	LIBRARY GAP	the Levi-Civita volume form	horizon areas and entropies of two readings
+47	G3	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	shear of a foliation from extrinsic curvature
+48	G4	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	Einstein tensor and p_r + rho of a matter source
+49	G4	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	Einstein tensor = 8 pi T; vacuum solution SdS; density m'
+50	G3	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	flat slicing as an embedding with its induced metric
+51	G4	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	TOV system from the Einstein tensor
+52	G3	DONE	discharged by the engine (E3/E4, r7323)	closed/open slicings as hyperboloid embeddings, 3-curvature
+53	G4	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	parameter count of vacuum-equation solutions; isotropy groups
+54	G4	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	Kantowski-Sachs stress-energy vanishes
+55	G2	DONE	discharged in B (r7315)	pp-wave Ricci/Riemann, vacuum iff harmonic, Petrov type N
+56	G1	DONE	discharged in B (r7315)	Killing algebra of the plane wave (Heisenberg), null orbits
+57	G4	LIBRARY GAP	spectral theory	curvature invariants on an anomaly-deformed background, zeta residue
+58	G4	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	ADM kinetic term and Legendre transform
+59	G2	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	algebraic quartic of a curvature expansion
+60	G4	LIBRARY GAP	spectral theory	coincidence-limit level sums (heat-kernel expansion)
+61	G3	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	horizon induced metric degenerate of rank two
+62	G2	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	scalar curvature on S^3 frame jets
+63	G4	LIBRARY GAP	spectral theory	trace anomaly
+64	G4	LIBRARY GAP	spectral theory	curvature-scalar ranks under an anomaly deformation
+65	G4	REAL OBSTRUCTION	a GLOBAL claim on S^3 (spectral / an integral over S^3): needs analysis on S^3 as a manifold	curvature shifts a TT mode frequency
+66	G4	REAL OBSTRUCTION	a GLOBAL claim on S^3 (spectral / an integral over S^3): needs analysis on S^3 as a manifold	cubic kinetic vertex on S^3
+67	G4	REAL OBSTRUCTION	a GLOBAL claim on S^3 (spectral / an integral over S^3): needs analysis on S^3 as a manifold	TT harmonics on S^3, eigenvalue 6 (spectral)
+68	G4	LIBRARY GAP	spectral theory	completeness relation, level overlap (spectral)
+69	G2	LIBRARY GAP	the Levi-Civita volume form	Pontryagin density of a Gowdy wave
+70	G4	LIBRARY GAP	spectral theory	oscillator identity for the energy shift
+71	G2	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	C^2 = E4 + 2(Ric^2 - R^2/3)
+72	G2	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	ranks of FRW curvature invariants
+73	G4	LIBRARY GAP	spectral theory	Bianchi-IX curvature expansion, vertices, vacuum shift
+74	G4	DONE	discharged by the engine (E3/E4, r7323)	Gowdy-dS background field equation 3H^2 = Lambda, shear charge
+75	G4	DONE	discharged by the engine (E3/E4, r7323)	Einstein tensor of Gowdy-dS equals the wave/constraint equations
+76	G4	DONE	discharged in B (r7315)	Mukhanov variable mode equation on de Sitter
+77	G1	DONE	discharged before B (r7297 C1-C5 and earlier)	Killing equation: exactly two Killing vectors
+78	G2	DONE	discharged in B (r7315)	Brinkmann wave Ricci-flat
+79	G3	DONE (chartable half)	closed half: SdS's static S^2 leaves (K=0, leaf 3R) -> REOPENABLE by the near-point convention	extrinsic curvature K_ab = 0 of leaves, leaf scalar curvature
+80	G5	LIBRARY GAP	homogeneous spaces G/H	dS as a coset space with the Killing-form metric
+81	G2	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	Ricci = Lambda g; Kretschmann carries M
+82	G4	LIBRARY GAP	spinors	Dirac spectrum on S^5/S^4
+83	G2	NEEDS A DIMENSION CHANGE	the engine over Fin n (108: R^5; 35: general D; 83: squashed S^5, also chart-excluded)	scalar curvature of a squashed S^5
+84	G4	LIBRARY GAP	spinors	Dirac gap on S^5
+85	G4	LIBRARY GAP	spinors	leaf tetrad and spin connection give the superpotential W
+86	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	branches of a height function on the quadric
+87	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	imaginary roots of X0^2 = -alpha^2
+88	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	power-of-a-point height: a point on the quadric
+89	G2	LIBRARY GAP	the Levi-Civita volume form	Pontryagin density from a metric
+90	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	the quadric has no real point on the axis
+91	G1	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	sinh^(2/3) satisfies the radial geodesic first integral
+92	G1	DONE	discharged before B (r7297 C1-C5 and earlier)	sinh^(2/3) solves the E = 1 radial geodesic
+93	G2	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	SdS Kretschmann; Weyl to Lambda ratio
+94	G3	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	umbilic locus of a foliation
+95	G4	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	separated wave operator (Killing vectors via Lie derivative on the way)
+96	G2	LIBRARY GAP	the Levi-Civita volume form	Pontryagin density of three metrics
+97	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	induced slice identified as R x S^2, not S^3
+98	G2	ENGINE-REACHABLE	a diagonal instance on the existing 4D engine (Bianchi I / dS)	Einstein condition and optical tidal matrix
+99	G1	DONE	discharged in B (r7315)	surface gravities at the two roots
+100	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	proper-frame metric tends to dS2 x S2 (identification)
+101	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	derivatives of r(s) along a collapse leg
+102	G3	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	extrinsic-curvature shear of a foliation
+103	G3	DONE	discharged in B (r7315)	Gaussian curvature of the slicing surface
+104	G5	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	dS2 x S2 radii (with flat induced 3-metric, Kretschmann)
+105	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	f = f' = 0 at the Nariai root
+106	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	Wick rotation identifies the dS5 quadric with S^5
+107	G3	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	a confocal quadric family as a foliation
+108	G3	NEEDS A DIMENSION CHANGE	the engine over Fin n (108: R^5; 35: general D; 83: squashed S^5, also chart-excluded)	SdS as a cut of dS5; hyperplane sections of constant curvature
+109	G4	DONE	discharged in B (r7315)	de Sitter surface gravity and entropy
+110	G2	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	SdS Petrov invariant vanishes
