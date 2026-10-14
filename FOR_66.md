@@ -15603,3 +15603,9 @@ that is not mine: `S40`'s docstring prose "the `366` `REPAIR-OWED` the trunk alr
 behind.  No gate reads it; **I left another seat's prose alone.**
 
 Write-up, with the reproduction: `computations/beyond_the_wall/r7324_cc66_the_gate_is_a_property_of_the_tree/MEASURED.md`.
+
+**⑥ CI confirms it.** `fast` is **green** on `294ee1b8` where it was red on `445d1cf2`, `3e3e68e8` and
+`main`'s own `a9e83881`; every `scoped` job green. **So the row that clears `main` is sitting in #407 and
+nothing else in the item is open.** I also ran all 37 receipts that read the ledger: 34 `rc=0`, and three
+— `S13`, `S36`, `S5` — hit **my** 300-second limit, not a failure, since their own internal budget is
+1200; CI's plain suite runs them with the real budget and is green on this head.
