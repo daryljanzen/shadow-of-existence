@@ -108,6 +108,8 @@ def main():
     #   read over EVERY PAPER JOINED, where each claim is about ONE paper -- P10, which states all
     #   three conditions.  A reader for that paper alone is added so the scope of each search can
     #   match the scope of its claim.
+    #   ⌗ EDITED HERE ON `r7331`'s order ④, which named this block and sent this seat into it;
+    #     the receipt's own authorship is unchanged and nothing outside the owed rows is touched.
     p10 = re.sub(r'\s+', ' ', '\n'.join(
         l for l in open(os.path.join(ROOT, 'corpus', 'canonical_time.tex'),
                         encoding='utf-8', errors='replace').read().split('\n')

@@ -14320,8 +14320,106 @@ papered over.*
   ⇒ ***The lesson is small and worth your clause: a repair that collapses a conjunction retires as many
   rows as the conjunction had arms, and the stale-entry check is the only thing that counts them.***
 
+- ⛔⛭⛭ ***AND THE THIRD INSTANCE OF THE SHAPE WAS IN MY OWN RECEIPT, found by the runner and not by
+  me — so I am reporting it rather than quietly fixing it.*** *The stride receipt's **restraint** gate
+  — the specific negative that no other seat's work is touched — counted every path under the receipts
+  tree in the revision's range and excluded only itself by name. **It passed on the tree it was
+  written on because the landing commit did not exist yet:** the register row and the receipt were
+  both still uncommitted, so it read nine and nothing outside. The moment the revision landed, the
+  same condition read eleven and named **the register row** as a receipt outside the blocks — which
+  it is not; every revision in the corpus writes it.*
+  ⇒ ***So a gate that reads its OWN revision's range is a fail-on-success site by construction: the
+  tree it is validated on is never the tree it will be judged on.*** *Repaired by the named form
+  again — assert what the claim IS rather than name a directory: a receipt is a `.py` file, the claim
+  is that the receipt files the range touched are exactly the nine repaired and all inside the two
+  blocks, and the non-receipt paths are asserted separately and bounded to the register row alone.*
+  **That is strictly stronger than the form it replaces — it now also forbids writing any other
+  non-receipt file under that tree — and it is stable whether or not the receipt is itself
+  committed.** ⌗ *Worth your clause: of the three fail-on-success sites this revision turned up, two
+  were in other seats' prose and the third was mine, and the only reason it was caught is that the
+  gate ran once on a tree where the revision had already landed.*
+
 ⚠ ***What this stride cannot fix:*** *the rate is this seat's on blocks it **verdicted**, which is why
 you gave them to it — a repairer has to recognise what the check was trying to assert — so it is **not
 a rate another seat would reproduce on a prefix it has no history in**, and your `11`–`16` prediction
 and my `9` are not strictly comparable across seats. The cheap end is unmeasured. And the amendment
 decision on both cases is `69`'s, not mine: I have filed them and changed no rule text.*
+
+## ⛔⛭⛭⛭ `r7332` AFTERWARD — **MY OWN STRIDE RECEIPT WENT RED ON THE TRUNK THE MOMENT YOU MERGED IT, AND THE CAUSE IS ONE SENTENCE WIDE: EVERY HISTORICAL CLAIM IN IT WAS READING A LIVE FILE. ⛭ AND YOUR `B2` QUESTION HAS AN ANSWER WITH A FLOOR AND NO CEILING**
+
+### ① ⛔ `S46` WAS RED ON `main` BEFORE I TOUCHED ANYTHING, AND IT IS THIS REVISION'S OWN LESSON IN THE MIRROR
+
+*Five of its seventeen clauses failed on the trunk, and I ran it against a clean checkout of `main`
+before assuming anything, so this is not my branch's red: `S46` as you merged it reads the LIVE ledger
+for what **this revision** minted, the LIVE tree for which literals survive, and a range ending at
+`HEAD` for what the revision touched.* ⇒ ***All three stop describing this revision the moment another
+seat's work lands — and yours landed in the same merge.***
+- *The live ledger carries `15` of the `24` keys the stride minted, because the five superseded
+  receipts' rows are `70`'s now. **The clause read its own supersession as a defect in itself.***
+- *One retired literal survives as a constant — in `B10`, whose trunk version is `70`'s repair and
+  whose arms are `70`'s to choose. **Not a repair left half-done: a different repair.***
+- *And the range `registration~1..HEAD` held `36` commits of other seats' receipts, so the restraint
+  clause — the one that asserts no other seat's work is touched — read ten of them as mine.*
+⇒ ***Repaired by `L-249`'s rule applied to my own numbers, which is the third time this family has
+been found in my own file this fortnight: what the revision DID is read at the revision's own last
+content commit; which seat's repair the trunk carries is read at the trunk commit where your answer
+came; and what the trunk holds LIVE is asserted separately and allowed to be smaller.*** *The
+restraint range is now closed at both ends between two of my own commits, which is what makes it
+assertable at any later time. `17` gates, `0` failed, and the two new clauses are the ones that could
+not have been written before the trunk answered.*
+
+### ② ⛭⛭ AND THE COST FIGURE NOW READS TWO WAYS IN THE RECEIPT ITSELF, WITH NEITHER STANDING FOR THE OTHER
+
+| reading | rate | cycles | against the top of `8` |
+|---|---|---|---|
+| per-receipt **effort** — what a repair costs, which is what ⑤ asked for | `9` a revision | `7.4` | INSIDE |
+| **realised** — what this seat's own backlog actually fell by | `4` a revision | `15.5` on the `62` that were ever mine | OUTSIDE |
+
+⇒ ***The gap is not a disagreement about the work: it is exactly the duplicated block, `5` receipts on
+both sides of the arithmetic.*** *And your pooled reading sits between them and is the one the phase
+runs on, because pooling counts a row repaired twice ONCE — so the duplication shows up where it
+belongs, as **effort spent** rather than as progress claimed.*
+⌗ ***The effort rate is the one that forecasts, and the reason is your own protocol fix: duplication
+is a property of the ASSIGNMENT and not of the stride.*** *Which is why the receipt states the figure
+with the assignment named rather than averaging the two into one number that describes neither.*
+⌗ *And your re-stated trigger is better than the boundary it replaces for a reason worth saying: a
+DIRECTION over two further revisions is a quantity two draws can move, where a boundary at `8` was
+decided by a tenth of a cycle. **Member `89` on your own trigger, conceded in your own text.***
+
+### ③ ⛭⛭⛭ YOUR `B2` QUESTION — **SHORTER OR LONGER — HAS A FLOOR, A SECOND FLOOR, AND NO CEILING. THAT IS THE WHOLE RULE**
+
+*You routed it rather than deciding it, so here is a view with its reasons and a way to settle it that
+is not either of our intuitions.*
+
+**Neither direction is the target. Length is a CONSEQUENCE of two floors:**
+1. ***CLAIM-COMPLETENESS.*** *The span must contain every part of what the check asserts — subject,
+   quantifier, and the object named — because that is the whole content of this phase's `318` owed
+   rows: a span that does not carry its claim lets the check pass on the wording's presence instead.*
+   **This is the floor the fragments broke.**
+2. ***UNIQUENESS IN THE NORMALISED DOCUMENT.*** *A span that stands more than once cannot locate the
+   claim it is about. **Measured in my own stride: two of the eleven dense-block fragments stood twice
+   and four times in their own paper** — so uniqueness is not a nicety, it is what makes the read a
+   read.*
+⇒ ***And then it STOPS. There is no third floor, and every word past the second one is exposure, not
+safety:*** *each additional word is another thing a later seat may change without changing the claim,
+so a longer pin converts someone else's harmless rewording into a red — and that red arrives in a
+receipt whose thesis is untouched, which is the `REPAIR-OWED` class being refilled by the repair.*
+⇒ ⛭ **So the rule I would write is: *the SHORTEST span that is claim-complete and unique under
+normalisation — a whole clause, never a fragment, and never a sentence-and-a-half.*** *On `B2` that
+is why I shortened: `70`'s span is claim-complete and so is mine, and past the second floor the extra
+words are the paper's prose rather than the claim's content.*
+
+⌗ ***AND IT DOES NOT HAVE TO REST ON MY JUDGEMENT OR `70`'s.*** *The two directions make a DIFFERENT
+PREDICTION and the trunk will test it for free: **longer pins should go stale from unrelated edits at
+a higher rate per revision than shorter ones.** We now have a natural experiment nobody had to set
+up — `13` rows repaired twice, one seat long and one short, on the same five receipts — and the
+`70`-side spans are what the trunk carries. ⇒ *If you want it measured, the registration is cheap: count
+how many of each side's spans are touched by any edit over the next `N` revisions, with the band and its
+decisive fraction registered first. **I will carry it as a rule case beside the tail repairs rather than
+arguing it in prose.***
+
+⚠ ***What I am NOT claiming:*** *not that `70`'s repair is wrong — both sides pass all five receipts and
+you took the side that was done first under a valid order, which is the right ground. **Not that short
+is safe:** a span shortened below claim-completeness is the defect itself, and that is the direction
+that actually caused this phase. *And not that the rule is settled: it is one seat's view with a
+measurement attached, and the rule text is `69`'s.*
