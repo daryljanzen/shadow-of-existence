@@ -81,3 +81,59 @@ twice — is the example sitting in a receipt I had open, and I left it.*
 LIVE papers, so a literal read at a pinned historical commit is counted in the wrong container — `C28`'s
 `9.4`, read at `_BEFORE_R2755`, is that case and is one of the `305`; ⒝ it counts one reading per
 container, so a literal present in three papers contributes three.
+
+## ⑧ `P15`'s last rows: `1` more repaired, `4` ROUTED, and a dead pin that sat `EXTENDED` and green
+
+*Written after `r7339` ①, so the locus-scoped form is the mandated one and the minimand is total pinned
+characters. Three of the last seven are measured below and sent back rather than repaired — because what
+each needs is a decision about the floor, not a span.*
+
+### ⒜ ⛭ REPAIRED: a disjunction whose STRONGER arm was dead
+
+`P15_the_history_is_spherically_symmetric…` asserted *either* `permits the chirality-asymmetric action
+and does n` *or* the bare `does not \emph{select} it`. **Measured against the raw file the check itself
+reads: the first arm matches `0` times** — the paper says *permits … **but** does not select it* — so the
+check had been passing on the second arm alone, and that arm stands **twice**.
+
+⇒ ⛔ ***A choice whose stronger arm is DEAD and whose weaker arm is MULTI-SITE is Test 6 at its sharpest:
+the weaker arm does not merely decide alone, it is the only arm there is.*** One span now carries the
+permission and the negation and stands once under `_unmark`; `1` owed row cleared.
+
+⌗ ⛔ **AND THE DEAD ARM HAD A LEDGER ROW, VERDICT `EXTENDED`.** *It matched nothing and was adjudicated as
+a widening. **A dead pin can sit in the ledger as `EXTENDED` and green indefinitely, because the
+disjunction around it carries the check** — which no count of owed rows can see. Dropped here with its
+measurement; routed as a class, because I have no reason to think `P15` is where it stops.*
+
+### ⒝ ROUTED: `P15_the_angular_label…`, where ALL THREE arms of one disjunction are defective
+
+Measured under **the receipt's own comparison** (it strips every space before matching, so the floor's
+`_unmark` is not the right normaliser here and that is itself worth saying):
+
+| arm | occurrences |
+|---|---|
+| `r^2d\Omega^2` | **`4`** — multi-site |
+| `r^{2}d\Omega^{2}` | **`0`** — dead |
+| `d\Omega^2` | **`9`** — badly multi-site |
+
+⇒ *The claim names a section (`sec:properframe`'s `r^2d\Omega^2`), so the repair is a section scope or a
+span from that section — **and choosing which changes what the check asserts about where the angular
+block is read from.** That is the route bar's own wording, so it is routed rather than guessed. `\cosh^{2/3}`
+in the same receipt is the same shape, with an anchor that ends mid-word at `and is d`.*
+
+### ⒞ ROUTED: `P15_the_spacing_drift…`, two rows against a **PINNED** container
+
+Its `_CLAUSES` list is asserted against `_tex_pin`, a read at a **fixed commit**, and two of the three
+clauses are multi-site there. ⇒ ***Floor `2` says "stands exactly once in the file it is checked
+against" — and when that file is FROZEN, a multi-site literal still cannot say which place, but nothing
+can ever move it.*** *Whether the floor applies to a pinned container is a question about the rule and
+not about this receipt. Routed to `69` and `66`; my own view, stated rather than parked: **it should not
+apply, because the defect floor `2` exists to prevent is a later edit landing on the wrong site, and a
+pinned container has no later edits.***
+
+### ⒟ ROUTED: the two rows whose ledger prescription is to adopt a span already live elsewhere
+
+`P15_the_expansion_in_the_de_sitter…` and `P15_the_one_fitted_number…` are each prescribed a shorter or
+"tolerant" form that `cc66.172` made live in other receipts. ⛔ *I have now had a prescription be wrong
+**twice out of twice** — the `r7333` width re-cut moved the ground to Test 2, and `C34`'s said a value was
+asserted elsewhere when it was not. **So these two are not applied unchecked, and checking them means
+reading three other receipts' live keys, which is the next revision's work and is registered as such.***
