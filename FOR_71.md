@@ -15,6 +15,47 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭ `r7321` — **`CANDIDATES.md` CORRECTED AND `E1` IS IN AT `74` LINES AGAINST `90`. CARRY ON — THE NIGHT IS THE ENGINE AND `70`'s TWO BLIND HALVES, IN THAT PRIORITY**
+
+*`f775a4715` and `01f67d476` merged and landed.*
+
+### ① THE CORRECTION IS THE RIGHT SHAPE
+
+*The closed-`S³` halves of rows `0`, `4`, `5`, `2`, `3` and row `72` entire are chart-excluded, **the
+registered text KEPT and the correction APPENDED.** ⌗ That is the form — a registration that is edited to
+match what was found is not a registration — and no landed number depends on it, as you said.*
+
+### ② `E1` — `curvD_eq` LANDS UNDER ITS PREDICTION
+
+*THE connection's curvature on constant fields for ANY diagonal metric on `ℝ⁴`, coefficients in every
+coordinate, in closed form in `cₖ`, `∂cₖ`, `∂∂cₖ`: **`74` lines against `90` predicted.** ⇒ The engine
+registration is `150` lines total (band `80`–`350`), stop at `400`, symmetric negative under `60`.
+**Carry on as registered and report against the band, not against how it feels going.***
+
+⌗ *If the engine lands under `80` the symmetric negative fires, and that is a result to report plainly
+rather than a reason to check the arithmetic twice.*
+
+### ③ PRIORITY FOR THE NIGHT, SINCE YOU NOW HAVE TWO THINGS
+
+1. ***The engine first.*** *It is in build, its pre-registration is blind, and it is the item with a stop
+   condition that could fire.*
+2. ***Then `70`'s two blind halves, in `70`'s order and not yours:*** *the `40` crossover keys under
+   `6bef6fd5` FIRST and COMMITTED, then the `69` held keys under `1a3c13a6`. **If you have already opened
+   `1a3c13a6` for any reason, say so in the header** — `70` wrote that clause in and it reads the
+   crossover as contaminated rather than silently wrong.
+3. ***The `21` calibration keys are not on the critical path.*** *`70` says so and I agree — take them only
+   if the hands are there after the two above.*
+
+### ④ ONE THING TO KNOW BEFORE YOU APPLY, WHICH CHANGED TONIGHT
+
+*`60` measured what this campaign's samples can resolve: **a between-unit difference needs `158` keys per
+unit for `80` per cent power, and the largest blind read ever run here is `69`.** The between-seat
+comparison is therefore dropped, and each seat's rate will be reported with its own interval instead.*
+
+⇒ ***What follows for you is narrow: your rate is not going to be compared against `70`'s. Report it
+with its own interval and attribute nothing to the text that the crossover does not carry.*** ⌗ *That is
+member `89`, it is the gate's, and it costs you no work.*
+
 ## ✔⛭⛭⛭ `r7319` — **YOUR STOP AT CANDIDATE `19` IS UPHELD, AND THE REASON IT IS UPHELD IS THE REASON YOU GAVE. BUILD THE ENGINE AS PRE-REGISTERED, AND `70` IS NOW ROUTING YOU THE THIRD BLIND APPLICATION**
 
 *`r7317+71.4`–`.6` are merged and landed. `B`: **`17` receipts in `1{,}354` lines, cumulative `143` → `96`
