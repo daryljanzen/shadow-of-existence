@@ -2576,6 +2576,182 @@ theorem sds_balance_is_flat {r v : ℝ → ℝ} {E M α t a : ℝ} (hα : α ≠
 
 end SweepB8
 
+/-! ## `r7315`, B9 — receipt 56: the plane wave `2 du dv + H du² + dx² + dy²`, `H = h₊(u)(x²−y²) + 2hₓ(u)xy`, in
+Brinkmann coordinates on `ℝ⁴`. For THE Levi-Civita connection, `∂_v` and every `ξ_f = f^a(u)∂_a − (ḟ·x)∂_v` with
+`f̈ = A f` are Killing (`∇ξ` antisymmetric); `[ξ_f, ξ_g] = W(f, g) ∂_v` with the Wronskian `W` constant; no
+Killing field has a `∂_u` part, and `∂_v` is null and orthogonal to all of them: the orbits are null -/
+
+section SweepB9
+
+set_option synthInstance.maxHeartbeats 400000
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **The Killing operator on a model space**: `g(∇_u ξ, v) + g(u, ∇_v ξ) = ξ(g(u,v)) + g(Dξ·u, v) + g(u, Dξ·v)`. -/
+lemma killing_lie {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+    (m : NDMetric 𝓘(ℝ, E) E) {ξ : Π y : E, TangentSpace 𝓘(ℝ, E) y} {x : E} (hξ : DifferentiableAt ℝ (vf ξ) x)
+    (u v : E) :
+    m.g x (lcConn E m ξ x u) v + m.g x u (lcConn E m ξ x v)
+      = fderiv ℝ (fun y => m.g y (constF u y) (constF v y)) x (vf ξ x) + m.g x (fderiv ℝ (vf ξ) x u) v
+        + m.g x u (fderiv ℝ (vf ξ) x v) := by
+  have hξm : MDiffAt (T% ξ) x := mdiffAt_model.2 hξ
+  rw [m.symm x u, show m.g x (lcConn E m ξ x u) v = m.g x (lcConn E m ξ x (constF u x)) (constF v x) from rfl,
+    show m.g x (lcConn E m ξ x v) u = m.g x (lcConn E m ξ x (constF v x)) (constF u x) from rfl,
+    lcConn_apply m (constF_mdiff u x) hξm (constF_mdiff v x), lcConn_apply m (constF_mdiff v x) hξm (constF_mdiff u x)]
+  have hbr : ∀ A B : Π y : E, TangentSpace 𝓘(ℝ, E) y,
+      mlieBracket 𝓘(ℝ, E) A B x = fderiv ℝ (vf B) x (A x) - fderiv ℝ (vf A) x (B x) := fun A B => by
+    rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ]; rfl
+  have hc : ∀ (a : E) (w : E), fderiv ℝ (vf (constF a)) x w = 0 := fun a w => by
+    rw [show vf (constF a) = fun _ => a from rfl, fderiv_const_apply]; rfl
+  have fts : ∀ w : TangentSpace 𝓘(ℝ, E) x, (NormedSpace.fromTangentSpace (𝕜 := ℝ) x : _ →L[ℝ] E) w = w :=
+    fun _ => rfl
+  simp only [kosz, hbr, hc, sub_zero, zero_sub, sub_self, map_zero, map_neg, mvfderiv_eq_fderiv,
+    ContinuousLinearMap.comp_apply, fts]
+  rw [m.fun_symm ξ (constF u), m.fun_symm ξ (constF v), m.fun_symm (constF v) (constF u)]
+  have s1 := m.symm x (constF v x) (fderiv ℝ (vf ξ) x u)
+  have s2 := m.symm x (constF u x) (fderiv ℝ (vf ξ) x v)
+  simp only [constF] at s1 s2 ⊢
+  rw [show vf ξ x = ξ x from rfl]
+  linarith
+
+/-- `H = h₊(u)(x² − y²) + 2hₓ(u)xy`, coordinates `(u, v, x, y) = (p 0, p 1, p 2, p 3)`. -/
+noncomputable def Hpw (hp hx : ℝ → ℝ) (p : Fin 4 → ℝ) : ℝ :=
+  hp (p 0) * (p 2 ^ 2 - p 3 ^ 2) + 2 * hx (p 0) * (p 2 * p 3)
+
+/-- The Brinkmann form `2 du dv + H du² + dx² + dy²`. -/
+noncomputable def pwF (hp hx : ℝ → ℝ) (p : Fin 4 → ℝ) : (Fin 4 → ℝ) →L[ℝ] (Fin 4 → ℝ) →L[ℝ] ℝ :=
+  (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 0) (ContinuousLinearMap.proj 1)
+  + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 1) (ContinuousLinearMap.proj 0)
+  + Hpw hp hx p • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 0) (ContinuousLinearMap.proj 0)
+  + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 2) (ContinuousLinearMap.proj 2)
+  + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 3) (ContinuousLinearMap.proj 3)
+
+lemma pwF_apply (hp hx : ℝ → ℝ) (p a b : Fin 4 → ℝ) :
+    pwF hp hx p a b = a 0 * b 1 + a 1 * b 0 + Hpw hp hx p * (a 0 * b 0) + a 2 * b 2 + a 3 * b 3 := by
+  simp [pwF]
+
+lemma pwF_symm (hp hx : ℝ → ℝ) (p a b : Fin 4 → ℝ) : pwF hp hx p a b = pwF hp hx p b a := by
+  rw [pwF_apply, pwF_apply]; ring
+
+lemma pwF_nondeg (hp hx : ℝ → ℝ) (p a : Fin 4 → ℝ) (h : ∀ b, pwF hp hx p a b = 0) : a = 0 := by
+  have e0 := h (Pi.single 1 1); have e1 := h (Pi.single 0 1)
+  have e2 := h (Pi.single 2 1); have e3 := h (Pi.single 3 1)
+  simp [pwF_apply] at e0 e1 e2 e3
+  funext i; fin_cases i <;> simp_all
+
+lemma pwF_smooth {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : ContDiff ℝ ∞ hx) : ContDiff ℝ ∞ (pwF hp hx) := by
+  rw [contDiff_clm_apply_iff]; intro a; rw [contDiff_clm_apply_iff]; intro b
+  simp only [pwF_apply, Hpw]
+  have h1 : ContDiff ℝ ∞ fun p : Fin 4 → ℝ => hp (p 0) := hps.comp (contDiff_apply ℝ ℝ 0)
+  have h2 : ContDiff ℝ ∞ fun p : Fin 4 → ℝ => hx (p 0) := hxs.comp (contDiff_apply ℝ ℝ 0)
+  have h3 : ∀ i : Fin 4, ContDiff ℝ ∞ fun p : Fin 4 → ℝ => p i := fun i => contDiff_apply ℝ ℝ i
+  fun_prop
+
+/-- The plane wave as an `NDMetric` on `ℝ⁴`. -/
+noncomputable def pwM {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : ContDiff ℝ ∞ hx) :
+    NDMetric 𝓘(ℝ, Fin 4 → ℝ) (Fin 4 → ℝ) :=
+  ndOf (pwF hp hx) (pwF_symm hp hx) (pwF_nondeg hp hx) ((pwF_smooth hps hxs).differentiable (by simp))
+
+/-- `ξ_f = f^a(u) ∂_a − (ḟ·x) ∂_v`. -/
+noncomputable def xiPW (f1 f2 : ℝ → ℝ) : Π y : Fin 4 → ℝ, TangentSpace 𝓘(ℝ, Fin 4 → ℝ) y :=
+  fun y => ![0, -(deriv f1 (y 0) * y 2 + deriv f2 (y 0) * y 3), f1 (y 0), f2 (y 0)]
+
+lemma fd_coord {k : ℝ → ℝ} {x : Fin 4 → ℝ} (hk : DifferentiableAt ℝ k (x 0)) :
+    HasFDerivAt (fun y : Fin 4 → ℝ => k (y 0)) (deriv k (x 0) • ContinuousLinearMap.proj (R := ℝ) (φ := fun _ : Fin 4 => ℝ) 0) x :=
+  hk.hasDerivAt.comp_hasFDerivAt x (hasFDerivAt_apply (𝕜 := ℝ) (0 : Fin 4) x)
+
+variable {f1 f2 : ℝ → ℝ} (h1s : ContDiff ℝ ∞ f1) (h2s : ContDiff ℝ ∞ f2)
+include h1s h2s
+
+/-- `ξ_f` is differentiable, with `Dξ·w = (0, −(f̈·x) w⁰ − ḟ·w^⊥, ḟ₁ w⁰, ḟ₂ w⁰)`. -/
+lemma xiPW_deriv (x : Fin 4 → ℝ) : DifferentiableAt ℝ (vf (xiPW f1 f2)) x ∧ ∀ w : Fin 4 → ℝ,
+    fderiv ℝ (vf (xiPW f1 f2)) x w = ![0, -((deriv (deriv f1) (x 0) * x 2 + deriv (deriv f2) (x 0) * x 3) * w 0
+      + deriv f1 (x 0) * w 2 + deriv f2 (x 0) * w 3), deriv f1 (x 0) * w 0, deriv f2 (x 0) * w 0] := by
+  have d1 := (contDiff_infty_iff_deriv.1 h1s).1; have d2 := (contDiff_infty_iff_deriv.1 h2s).1
+  have d1' := ((contDiff_infty_iff_deriv.1 h1s).2).differentiable (by simp)
+  have d2' := ((contDiff_infty_iff_deriv.1 h2s).2).differentiable (by simp)
+  have k0 : HasFDerivAt (fun y => vf (xiPW f1 f2) y 0) (0 : (Fin 4 → ℝ) →L[ℝ] ℝ) x := hasFDerivAt_const (0 : ℝ) x
+  have k1 : HasFDerivAt (fun y => vf (xiPW f1 f2) y 1) _ x :=
+    (((fd_coord (d1' _)).mul (hasFDerivAt_apply (𝕜 := ℝ) (2 : Fin 4) x)).add ((fd_coord (d2' _)).mul (hasFDerivAt_apply (𝕜 := ℝ) (3 : Fin 4) x))).neg
+  have k2 : HasFDerivAt (fun y => vf (xiPW f1 f2) y 2) _ x := fd_coord (d1 _)
+  have k3 : HasFDerivAt (fun y => vf (xiPW f1 f2) y 3) _ x := fd_coord (d2 _)
+  have hd : DifferentiableAt ℝ (vf (xiPW f1 f2)) x := by
+    refine differentiableAt_pi.2 fun i => ?_
+    fin_cases i
+    exacts [k0.differentiableAt, k1.differentiableAt, k2.differentiableAt, k3.differentiableAt]
+  refine ⟨hd, fun w => funext fun i => ?_⟩
+  have D : ∀ j, fderiv ℝ (vf (xiPW f1 f2)) x w j = fderiv ℝ (fun y => vf (xiPW f1 f2) y j) x w := fun j => by
+    rw [_root_.fderiv_apply hd j]; rfl
+  have D0 : fderiv ℝ (vf (xiPW f1 f2)) x w 0 = 0 := by rw [D, k0.fderiv]; rfl
+  have D1 : fderiv ℝ (vf (xiPW f1 f2)) x w 1 = -((deriv (deriv f1) (x 0) * x 2 + deriv (deriv f2) (x 0) * x 3) * w 0
+      + deriv f1 (x 0) * w 2 + deriv f2 (x 0) * w 3) := by rw [D, k1.fderiv]; simp; ring
+  have D2 : fderiv ℝ (vf (xiPW f1 f2)) x w 2 = deriv f1 (x 0) * w 0 := by rw [D, k2.fderiv]; simp
+  have D3 : fderiv ℝ (vf (xiPW f1 f2)) x w 3 = deriv f2 (x 0) * w 0 := by rw [D, k3.fderiv]; simp
+  fin_cases i
+  exacts [D0, D1, D2, D3]
+
+/-- **B9, receipt 56.** If `f̈ = A f`, `A = [[h₊, hₓ], [hₓ, −h₊]]`, then `ξ_f` is a Killing field of THE Levi-Civita
+connection of the plane wave: `g(∇_u ξ, v) + g(u, ∇_v ξ) = 0`. -/
+theorem pw_killing {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : ContDiff ℝ ∞ hx)
+    (o1 : ∀ s, deriv (deriv f1) s = hp s * f1 s + hx s * f2 s)
+    (o2 : ∀ s, deriv (deriv f2) s = hx s * f1 s - hp s * f2 s) (x u v : Fin 4 → ℝ) :
+    (pwM hps hxs).g x (lcConn (Fin 4 → ℝ) (pwM hps hxs) (xiPW f1 f2) x u) v
+      + (pwM hps hxs).g x u (lcConn (Fin 4 → ℝ) (pwM hps hxs) (xiPW f1 f2) x v) = 0 := by
+  obtain ⟨hd, hD⟩ := xiPW_deriv h1s h2s x
+  rw [killing_lie _ hd u v]
+  have hG : (fun y => (pwM hps hxs).g y (constF u y) (constF v y))
+      = fun y => u 0 * v 1 + u 1 * v 0 + Hpw hp hx y * (u 0 * v 0) + u 2 * v 2 + u 3 * v 3 :=
+    funext fun y => pwF_apply hp hx y u v
+  have dp := (hps.differentiable (by simp)) (x 0); have dx := (hxs.differentiable (by simp)) (x 0)
+  have kH : HasFDerivAt (Hpw hp hx) _ x :=
+    ((fd_coord dp).mul (((hasFDerivAt_apply (𝕜 := ℝ) (2 : Fin 4) x).pow 2).sub ((hasFDerivAt_apply (𝕜 := ℝ) (3 : Fin 4) x).pow 2))).add
+      (((fd_coord dx).const_mul 2).mul ((hasFDerivAt_apply (𝕜 := ℝ) (2 : Fin 4) x).mul (hasFDerivAt_apply (𝕜 := ℝ) (3 : Fin 4) x)))
+  have hGd := (((kH.mul_const (u 0 * v 0)).const_add (u 0 * v 1 + u 1 * v 0)).add_const (u 2 * v 2)).add_const
+    (u 3 * v 3)
+  rw [hG, hGd.fderiv]
+  simp only [pwM, ndOf]
+  erw [hD, hD, pwF_apply, pwF_apply]
+  simp [xiPW, vf, o1, o2]
+  ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **B9. Heisenberg:** `[ξ_f, ξ_g] = W(f, g) ∂_v`, `W = ḟ·g − ġ·f`. -/
+theorem pw_bracket {g1 g2 : ℝ → ℝ} (k1s : ContDiff ℝ ∞ g1) (k2s : ContDiff ℝ ∞ g2) (x : Fin 4 → ℝ) :
+    mlieBracket 𝓘(ℝ, Fin 4 → ℝ) (xiPW f1 f2) (xiPW g1 g2) x = (deriv f1 (x 0) * g1 (x 0) + deriv f2 (x 0) * g2 (x 0)
+      - deriv g1 (x 0) * f1 (x 0) - deriv g2 (x 0) * f2 (x 0)) • (Pi.single 1 1 : Fin 4 → ℝ) := by
+  rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ]
+  show fderiv ℝ (vf (xiPW g1 g2)) x (xiPW f1 f2 x) - fderiv ℝ (vf (xiPW f1 f2)) x (xiPW g1 g2 x) = _
+  rw [(xiPW_deriv k1s k2s x).2, (xiPW_deriv h1s h2s x).2]
+  funext i; fin_cases i <;> simp [xiPW, Pi.single_apply] <;> ring
+
+/-- **B9.** The Wronskian is constant when `f̈ = A f`, `g̈ = A g` with `A` symmetric. -/
+theorem pw_wronskian_const {hp hx g1 g2 : ℝ → ℝ} (k1s : ContDiff ℝ ∞ g1) (k2s : ContDiff ℝ ∞ g2)
+    (o1 : ∀ s, deriv (deriv f1) s = hp s * f1 s + hx s * f2 s) (o2 : ∀ s, deriv (deriv f2) s = hx s * f1 s - hp s * f2 s)
+    (q1 : ∀ s, deriv (deriv g1) s = hp s * g1 s + hx s * g2 s) (q2 : ∀ s, deriv (deriv g2) s = hx s * g1 s - hp s * g2 s)
+    (s : ℝ) : HasDerivAt (fun t => deriv f1 t * g1 t + deriv f2 t * g2 t - deriv g1 t * f1 t - deriv g2 t * f2 t) 0 s := by
+  have D : ∀ {k : ℝ → ℝ}, ContDiff ℝ ∞ k → HasDerivAt k (deriv k s) s ∧ HasDerivAt (deriv k) (deriv (deriv k) s) s :=
+    fun hk => ⟨((contDiff_infty_iff_deriv.1 hk).1 s).hasDerivAt,
+      (((contDiff_infty_iff_deriv.1 hk).2.differentiable (by simp)) s).hasDerivAt⟩
+  obtain ⟨a1, b1⟩ := D h1s; obtain ⟨a2, b2⟩ := D h2s; obtain ⟨c1, d1⟩ := D k1s; obtain ⟨c2, d2⟩ := D k2s
+  refine HasDerivAt.congr_deriv (HasDerivAt.sub (HasDerivAt.sub (HasDerivAt.add (b1.mul c1) (b2.mul c2))
+    (d1.mul a1)) (d2.mul a2)) ?_
+  rw [o1, o2, q1, q2]; ring
+
+omit h1s h2s in
+/-- **B9, the `∂_v` generator and the null orbits.** `∂_v` is Killing; no `ξ_f` has a `∂_u` part; `∂_v` is null and
+orthogonal to every `ξ_f`. -/
+theorem pw_dv_null {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : ContDiff ℝ ∞ hx) (x u v : Fin 4 → ℝ) :
+    ((pwM hps hxs).g x (lcConn (Fin 4 → ℝ) (pwM hps hxs) (constF (Pi.single 1 1)) x u) v
+      + (pwM hps hxs).g x u (lcConn (Fin 4 → ℝ) (pwM hps hxs) (constF (Pi.single 1 1)) x v) = 0)
+    ∧ (xiPW f1 f2 x : Fin 4 → ℝ) 0 = 0 ∧ (pwM hps hxs).g x (Pi.single 1 1) (Pi.single 1 1) = 0
+    ∧ (pwM hps hxs).g x (Pi.single 1 1) (xiPW f1 f2 x) = 0 := by
+  refine ⟨killing_of_invariant _ (fun y t => ?_) x u v, rfl, ?_, ?_⟩
+  · show pwF hp hx (y + t • Pi.single 1 1) = pwF hp hx y
+    simp [pwF, Hpw, Pi.single_apply]
+  · show pwF hp hx x _ _ = 0; simp [pwF_apply]
+  · show pwF hp hx x _ _ = 0; simp [pwF_apply, xiPW]
+
+end SweepB9
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2665,3 +2841,9 @@ end ShadowProbe
 #print axioms ShadowProbe.accel_rKG
 #print axioms ShadowProbe.sds_accel_is_rKG
 #print axioms ShadowProbe.sds_balance_is_flat
+#print axioms ShadowProbe.killing_lie
+#print axioms ShadowProbe.xiPW_deriv
+#print axioms ShadowProbe.pw_killing
+#print axioms ShadowProbe.pw_bracket
+#print axioms ShadowProbe.pw_wronskian_const
+#print axioms ShadowProbe.pw_dv_null
