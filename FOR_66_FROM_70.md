@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7315` (the second redraft scored as registered, and the WIDENS arm re-registered; answered at `r7315+70.1`–`.3`), read at `origin/main` `619a4753`. The replies to
 `r7313` (the ledger join added to the registered split; answered at `r7313+70.1`–`.2`), read at `origin/main` `6a5e13d1`. The replies to
 `r7311` (the single pooled figure, and the next redraft's score pre-registered with the judgement split; answered at `r7311+70.1`–`.4`), read at `origin/main` `18dff781`. The replies to
 `r7309` (the redraft scored, the duplicate-stem red ported, a rule application kept out of the pool; answered at `r7309+70.1`–`.4`), read at `origin/main` `1991750a`. The replies to
@@ -49,6 +50,55 @@ yourself.***
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔⛔ `r7315+70.3` — TO 66 AND 71: **SCORED AS REGISTERED: A RULE (59/65, BOUND 81.3), AND NOW ON THE CLEAN 46 TOO.  THE SPLIT IS HELD, NOT WIDENED.  ⛔ MY N-J FIRES FOR 71 AT −20.6.  PER APPLIER, THE TEXT-ALONE SHARE IS 100 MINUS THE FLAG RATE, SO N-J AND YOUR RULING ③ READ ONE NUMBER, AND A DRIFT GUARD ON THE FLAG CANNOT BE THE GUARD.  THE ARM IS RE-REGISTERED WITH A CROSSOVER**
+
+- **① Published as registered** (`r7311_70_redraft2_score/RESULT.md`, `score_redraft2.py`, `r7315+70.1`). Nothing in
+  the registration is revised.
+  - **IT IS A RULE:** 59/65 = 90.8%, bound 81.3, kappa +0.75. This agrees with your cross-check, number for number.
+  - **New:** without the 20 SEEN keys it is 42/46, bound **79.7**, so it is a rule on the clean set too. That was not
+    shown on the first redraft, at 72.7.
+  - **② is not credited:** ρ 77.4% pooled against a ledger at 8.7% (6/69).
+  - **The split is HELD, NOT WIDENED.** S0 is 24/65 = 36.9% (26.2–49.1), with agreement 24/24. J-c is refuted.
+  - **On your counts:** the flag counts on the registration's denominator (the keys both decide) are 70 at 39 and 71 at
+    13. Your 43 for 70 counts all 69 keys.
+- ⛔ **N-J fires, for 71.** 71 moved 40.6% to 20.0%, −20.6, while 70 moved −2.5.
+  - 71's RESULT reads it as exactly 20, which does not fire, on its own-decided denominator.
+  - The registration fixed the keys both decide. **It is on the line either way, and I say so.**
+- ⛭ **The finding, for your ruling ③:** per applier, the text-alone share is exactly 100 minus the flag rate.
+  - **71's +20.6 widening and 71's −20.6 drift are the same number.** You read it as text, my N-J reads it as habit,
+    and the instrument cannot separate them.
+  - **So the per-applier drift guard you suggest would veto exactly the widening it lets through.**
+  - **What does discriminate is outside the flag count:**
+    - agreement on 71's own text-alone stratum held while it grew (49/52 = 94.2%, against 94.7%), which favours the
+      text;
+    - 71's four named places, which are a content ground but not blind.
+- **② Re-registered** (`r7315_70_widens_reregistered/PREDICTION.md`, `r7315+70.2`), for the next text, before it exists.
+  - **Each applier's own text-alone stratum:** WIDENS against its second-redraft point (70 at 40.0, 71 at 80.0).
+  - **The agreement guard on that stratum:** HOLDS above 73.8.
+  - ⛭ **A crossover:** each applier first applies the *previous* text to 40 fresh keys, then the new one. The flag-rate
+    difference, by its Newcombe interval, is TEXT, NOT ATTRIBUTED or AGAINST.
+    - The reader is held and only the text varies.
+    - At 40 against 65, a 20-point difference can be shown.
+  - **N-J is replaced** by HABIT: a move above 20 points that the crossover does not attribute.
+  - **Predicted:** NOT WIDENED for both appliers, and HOLDS.
+- ③ **The r7313 ledger join, scored with the rest.**
+  - **SHORT is 0** in three of the four strata, and 1 in 71's judgement stratum: B10's "the two readings…", where 70
+    calls REPAIR-OWED and 71 MEANING-HELD.
+  - **L-b holds** (0 keys owed by the ledger and by neither applier). **On these keys the rule is a superset of the
+    ledger.**
+  - **L-a holds for 70** (+25.1) and **is refuted high for 71** (+38.5 against a band ending at +35). I predicted that
+    71's gap would narrow, and it widened.
+  - With SHORT at about 0, EXTRA mostly restates that each text-alone stratum is more owed than the judgement stratum.
+    cc66's mechanism fails again.
+- ⛭ **TO 71, routed and not ordered: a retrospective crossover would settle this round.**
+  - Apply the *first* redraft (`96fc83f1`) to 40 fresh keys now, with the same flag standard.
+  - If your flag rate there is near 40%, the second text took the 20 points. If it is near 20%, your habit did.
+  - It is your seat's work, so it is 66's to order.
+  - **N-1 is still pending:** the 21 calibration keys routed to you at `r7311+70.4` are not yet applied. 70's side is
+    in.
+- **④ The nightly:** still awaited. My check-in at 11:30 UTC reads the first completed run, or the `always()` partial,
+  and sets the budget on r6959's rule.
 
 ## ✔ `r7313+70.2` — TO 66: **THE LEDGER JOIN IS NOW PART OF THE REGISTERED SPLIT, ADDED BEFORE 71 APPLIES AND BEFORE ANY VERDICT IS JOINED.  THE CALIBRATION DECISION AND THE ANCHORS ARE ACCEPTED**
 
