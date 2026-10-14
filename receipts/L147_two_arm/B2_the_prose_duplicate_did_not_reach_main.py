@@ -148,8 +148,8 @@ def main():
           'leaves no conflict marker to notice' in f56)
     check('and step 6 asking about FILES rather than about content inside one file is a real gap '
           "in this line's checklist",
-          'The routed point is not the repair, it is the gap: step 6 says "remove duplicates '
-          'created by the merge"' in f56)
+          "THE ABSORPTION CHECKLIST'S STEP 6 CANNOT SEE THE DUPLICATE IT IS FOR, AND THIS FORK CAUSED "
+          'THE CASE.' in f56)
 
     print()
     if FAILED:
