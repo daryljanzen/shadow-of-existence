@@ -119,12 +119,30 @@ def main():
     for term in ('normal order', 'symmetric order'):
         check(f'⛭ ⓷ and P10 NOW names it, the omission supplied at r3100: "{term}" appears',
               len(re.findall(term, p10, re.I)) > 0)
-    check('⛭ and P10 states both minima and identifies their difference as the zero-point quantum',
-          'is $\\tfrac14$ under normal ordering' in p10
-          and 'exactly the zero-point quantum' in p10)
-    check("while its decomposition survives either way -- it \"uses only that both sides of the "
-          'threshold are occupied"',
-          'both sides of the threshold are occupied' in p10)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.
+    #   ** TWO OWED ROWS. ** `is $\tfrac14$ under normal ordering` DANGLES on a leading finite verb
+    #   and names nothing that is a quarter, and it stood conjoined with a second fragment of the
+    #   SAME sentence; `both sides of the threshold are occupied` stands at FIVE sites across four
+    #   files and is the shortened form of a key another receipt of this prefix also owed -- the
+    #   same defect twice in one prefix.
+    #   ⇒ *** The first is replaced by the one sentence that names the operator, both minima and
+    #     what their difference IS; the second by the clause that says what the decomposition uses
+    #     INSTEAD of a floor, which is the same span this seat has now asserted in all three
+    #     receipts that reason from it.  One site each. ***
+    _MINIMA = ('on the natural ordering family the minimum of $\\hat\\Gamma$ is $\\tfrac14$ under '
+               'normal ordering and $\\tfrac34$ under symmetric ordering with one mode occupied, and '
+               'the difference between the two is exactly the zero-point quantum of that mode')
+    _USES_ONLY = ('the decomposition that follows uses only that both sides of the threshold are '
+                  'occupied, and not that the spectrum has a floor')
+    check('⛭ and P10 states both minima and identifies their difference as the zero-point quantum '
+          '-- asserted as the one sentence that names the operator and both orderings, in place of '
+          'two fragments of it',
+          _MINIMA in p10)
+    check('while its decomposition survives either way -- "the decomposition that follows uses only '
+          'that both sides of the threshold are occupied, and not that the spectrum has a floor" -- '
+          'asserted as the clause that says what it uses INSTEAD, in place of a shortened span at '
+          'five sites',
+          _USES_ONLY in p10)
 
     print()
     if FAILED:
