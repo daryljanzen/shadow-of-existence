@@ -643,6 +643,148 @@ theorem sds_kretschmann (M Λ : ℝ) (p : Fin 4 → ℝ)
 
 end Inst_R45
 
+/-! ### `r7333` — the Kretschmann rows. Row 45's table, lifted to ANY radial area profile: `diag(−F, 1/F, P, P·S)`
+with `F`, `P` functions of `r` and `S` of `θ`, all arbitrary. One table carries SdS (`P = r²`) and Nariai (`P`
+constant); the rows are its corollaries. `sds_kretschmann` above is not touched. -/
+
+section Inst_Kretschmann
+
+set_option synthInstance.maxHeartbeats 400000
+
+/-- The general static table `R(eᵢ,eⱼ)eₖ` component `l`: the radial profile `F₀, F₁, F₂`, the area profile
+`P₀, P₁, P₂`, and the angular profile `S₀, S₁, S₂`, entering through `A`, `B`, `C`. Generated, and then proved below. -/
+noncomputable def kG (f0 f1 f2 p0 p1 p2 s0 s1 s2 : ℝ) (i j k l : Fin 4) : ℝ :=
+  let A := (2 * f0 * p0 * p2 - f0 * p1 ^ 2 + f1 * p0 * p1) / (4 * p0)
+  let B := (f0 * p1 ^ 2 * s0 ^ 2 + 2 * p0 * s0 * s2 - p0 * s1 ^ 2) / (4 * p0 * s0 ^ 2)
+  let C := f1 * p1 / 4
+  if (i, j, k, l) = (0, 1, 0, 1) then -(f0 * f2 / 2) else if (i, j, k, l) = (0, 1, 1, 0) then -(f2 / (2 * f0))
+  else if (i, j, k, l) = (0, 2, 0, 2) then -(f0 * C / p0) else if (i, j, k, l) = (0, 2, 2, 0) then -C
+  else if (i, j, k, l) = (0, 3, 0, 3) then -(f0 * C / p0) else if (i, j, k, l) = (0, 3, 3, 0) then -(C * s0)
+  else if (i, j, k, l) = (1, 0, 0, 1) then f0 * f2 / 2 else if (i, j, k, l) = (1, 0, 1, 0) then f2 / (2 * f0)
+  else if (i, j, k, l) = (1, 2, 1, 2) then A / (f0 * p0) else if (i, j, k, l) = (1, 2, 2, 1) then -A
+  else if (i, j, k, l) = (1, 3, 1, 3) then A / (f0 * p0) else if (i, j, k, l) = (1, 3, 3, 1) then -(A * s0)
+  else if (i, j, k, l) = (2, 0, 0, 2) then f0 * C / p0 else if (i, j, k, l) = (2, 0, 2, 0) then C
+  else if (i, j, k, l) = (2, 1, 1, 2) then -(A / (f0 * p0)) else if (i, j, k, l) = (2, 1, 2, 1) then A
+  else if (i, j, k, l) = (2, 3, 2, 3) then B else if (i, j, k, l) = (2, 3, 3, 2) then -(B * s0)
+  else if (i, j, k, l) = (3, 0, 0, 3) then f0 * C / p0 else if (i, j, k, l) = (3, 0, 3, 0) then C * s0
+  else if (i, j, k, l) = (3, 1, 1, 3) then -(A / (f0 * p0)) else if (i, j, k, l) = (3, 1, 3, 1) then A * s0
+  else if (i, j, k, l) = (3, 2, 2, 3) then -B else if (i, j, k, l) = (3, 2, 3, 2) then B * s0
+  else 0
+
+variable {F P S : ℝ → ℝ} (hF : ContDiff ℝ ∞ F) (hP : ContDiff ℝ ∞ P) (hS : ContDiff ℝ ∞ S)
+  (hF0 : ∀ s, F s ≠ 0) (hP0 : ∀ s, P s ≠ 0) (hS0 : ∀ s, S s ≠ 0)
+
+/-- THE connection's curvature on basis fields at `p`, for `diag(−F, 1/F, P, P·S)`: the same expression
+`sds_kretschmann` states, named once. -/
+noncomputable def RK (p : Fin 4 → ℝ) (i j k : Fin 4) : Fin 4 → ℝ :=
+  curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cK F P S)) (diag4_symm _)
+    (fun p u h => diag4_nondeg (fun i => cK_ne hF0 hP0 hS0 i p) u h)
+    ((diag4_smooth (cK_smooth hF hP hS hF0)).differentiable (by simp))))
+    (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+    (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p
+
+set_option maxHeartbeats 8000000 in
+/-- **The general static table**, for any `F`, `P`, `S`. -/
+theorem static_table (p : Fin 4 → ℝ) (i j k l : Fin 4) :
+    RK hF hP hS hF0 hP0 hS0 p i j k l = kG (F (p 1)) (deriv F (p 1)) (deriv (deriv F) (p 1)) (P (p 1))
+      (deriv P (p 1)) (deriv (deriv P) (p 1)) (S (p 2)) (deriv S (p 2)) (deriv (deriv S) (p 2)) i j k l := by
+  rw [RK, curvD_eq (cK_ne hF0 hP0 hS0) (cK_smooth hF hP hS hF0)]
+  set r := p 1 with hr_def
+  have dF := fun s => ((hF.differentiable (by simp)) s).hasDerivAt
+  have dF' := fun s => (((contDiff_infty_iff_deriv.1 hF).2.differentiable (by simp)) s).hasDerivAt
+  have iv1 : deriv (fun s => (F s)⁻¹) = fun s => -(deriv F s) / F s ^ 2 :=
+    funext fun s => ((dF s).inv (hF0 s)).deriv.trans (by ring)
+  have iv2 : deriv (deriv (fun s => (F s)⁻¹)) r = (2 * deriv F r ^ 2 - F r * deriv (deriv F) r) / F r ^ 3 := by
+    rw [iv1, (show HasDerivAt (fun s => -deriv F s / F s ^ 2) _ r from
+      (dF' r).neg.div ((dF r).pow 2) (pow_ne_zero 2 (hF0 r))).deriv]
+    have := hF0 r; simp only [Pi.neg_apply]; field_simp; ring
+  have ng1 : deriv (fun s => -F s) = fun s => -deriv F s := funext fun s => deriv.neg
+  have hneg : ContDiff ℝ ∞ (fun s => -F s) := hF.neg
+  have hinv : ContDiff ℝ ∞ (fun s => (F s)⁻¹) := hF.inv hF0
+  have hD1 : ∀ k v, fderiv ℝ (cK F P S k) p v = (![-(deriv F r * v 1), -(deriv F r) / F r ^ 2 * v 1,
+      deriv P r * v 1, deriv P r * v 1 * S (p 2) + P r * (deriv S (p 2) * v 2)] : Fin 4 → ℝ) k := fun k v => by
+    fin_cases k
+    · show fderiv ℝ (fun y => (fun s => -F s) (y 1)) p v = _
+      rw [co_d1 hneg]; simp [← hr_def, ng1]
+    · show fderiv ℝ (fun y => (fun s => (F s)⁻¹) (y 1)) p v = _
+      rw [co_d1 hinv]; simp [← hr_def, iv1]
+    · show fderiv ℝ (fun y => P (y 1)) p v = _
+      rw [co_d1 hP]; simp [← hr_def]
+    · show fderiv ℝ (fun y => P (y 1) * S (y 2)) p v = _
+      rw [pr_d1 hP hS]; simp [← hr_def]
+  have hD2 : ∀ k u v, fderiv ℝ (fderiv ℝ (cK F P S k)) p u v = (![-(deriv (deriv F) r * u 1 * v 1),
+      (2 * deriv F r ^ 2 - F r * deriv (deriv F) r) / F r ^ 3 * u 1 * v 1, deriv (deriv P) r * u 1 * v 1,
+      deriv (deriv P) r * u 1 * v 1 * S (p 2) + deriv P r * v 1 * (deriv S (p 2) * u 2)
+        + deriv P r * u 1 * (deriv S (p 2) * v 2) + P r * (deriv (deriv S) (p 2) * u 2 * v 2)] : Fin 4 → ℝ) k :=
+    fun k u v => by
+    fin_cases k
+    · show fderiv ℝ (fderiv ℝ (fun y => (fun s => -F s) (y 1))) p u v = _
+      rw [co_d2 hneg]; simp [← hr_def, ng1]
+    · show fderiv ℝ (fderiv ℝ (fun y => (fun s => (F s)⁻¹) (y 1))) p u v = _
+      rw [co_d2 hinv]; simp [← hr_def, iv2]
+    · show fderiv ℝ (fderiv ℝ (fun y => P (y 1))) p u v = _
+      rw [co_d2 hP]; simp [← hr_def]
+    · show fderiv ℝ (fderiv ℝ (fun y => P (y 1) * S (y 2))) p u v = _
+      rw [pr_d2 hP hS]; simp [← hr_def]
+  have := hF0 r; have := hS0 (p 2); have := hP0 r
+  fin_cases i <;> fin_cases j <;> fin_cases k <;> fin_cases l <;>
+    (simp only [curvD, Pi.sub_apply, Pi.add_apply, DGD, gamD, dC1, dC2, hD1, hD2]
+     simp [cK, kG, Fin.sum_univ_four, ← hr_def]
+     try (field_simp; try ring))
+
+
+open Filter Topology in
+/-- `sin²θ` and its two derivatives at `θ`. -/
+lemma sin2_facts {S : ℝ → ℝ} {θ : ℝ} (eS : S =ᶠ[𝓝 θ] fun s => Real.sin s ^ 2) :
+    S θ = Real.sin θ ^ 2 ∧ deriv S θ = 2 * Real.sin θ * Real.cos θ ∧
+      deriv (deriv S) θ = 2 * Real.cos θ ^ 2 - 2 * Real.sin θ ^ 2 := by
+  have sd : ∀ s, HasDerivAt (fun s => Real.sin s ^ 2) (2 * Real.sin s * Real.cos s) s := fun s =>
+    (show HasDerivAt (fun s => Real.sin s ^ 2) _ s from (Real.hasDerivAt_sin s).pow 2).congr_deriv (by norm_num)
+  refine ⟨eS.eq_of_nhds, by rw [eS.deriv_eq, (sd _).deriv], ?_⟩
+  rw [(eS.deriv.trans (Eventually.of_forall fun s => (sd s).deriv) :
+    deriv S =ᶠ[𝓝 θ] fun s => 2 * Real.sin s * Real.cos s).deriv_eq,
+    (show HasDerivAt (fun s => 2 * Real.sin s * Real.cos s) _ θ from
+      ((Real.hasDerivAt_sin θ).const_mul 2).mul (Real.hasDerivAt_cos θ)).deriv]
+  ring
+
+include hF hP hS hF0 hP0 hS0
+
+open Filter Topology in
+/-- **The Ricci tensor** of `diag(−F, 1/F, P, P sin²θ)`, for any `F` and `P`, in `F₀, F₁, F₂, P₀, P₁, P₂` at `r`. -/
+theorem static_ric (p : Fin 4 → ℝ) (eS : S =ᶠ[𝓝 (p 2)] fun s => Real.sin s ^ 2) (j k : Fin 4) :
+    ricC (RK hF hP hS hF0 hP0 hS0 p) j k = if j = k then (![
+      F (p 1) * (deriv F (p 1) * deriv P (p 1) + deriv (deriv F) (p 1) * P (p 1)) / (2 * P (p 1)),
+      -(2 * F (p 1) * P (p 1) * deriv (deriv P) (p 1) - F (p 1) * deriv P (p 1) ^ 2
+        + deriv F (p 1) * P (p 1) * deriv P (p 1) + deriv (deriv F) (p 1) * P (p 1) ^ 2)
+        / (2 * F (p 1) * P (p 1) ^ 2),
+      -(F (p 1) * deriv (deriv P) (p 1) + deriv F (p 1) * deriv P (p 1) - 2) / 2,
+      -(S (p 2) * (F (p 1) * deriv (deriv P) (p 1) + deriv F (p 1) * deriv P (p 1) - 2)) / 2] : Fin 4 → ℝ) j
+      else 0 := by
+  obtain ⟨hSv, hS1, hS2⟩ := sin2_facts eS
+  have hs : Real.sin (p 2) ≠ 0 := fun h => hS0 (p 2) (by rw [hSv, h]; simp)
+  have := hF0 (p 1); have := hP0 (p 1)
+  fin_cases j <;> fin_cases k <;>
+    (simp [ricC, Fin.sum_univ_four, static_table, kG, hSv, hS1, hS2]
+     try (field_simp; try ring))
+
+open Filter Topology in
+/-- **The Kretschmann scalar** of `diag(−F, 1/F, P, P sin²θ)`, for any `F` and `P`. -/
+theorem static_riem2 (p : Fin 4 → ℝ) (eS : S =ᶠ[𝓝 (p 2)] fun s => Real.sin s ^ 2) :
+    riem2C (fun i => cK F P S i p) (RK hF hP hS hF0 hP0 hS0 p) =
+      let f0 := F (p 1); let f1 := deriv F (p 1); let f2 := deriv (deriv F) (p 1)
+      let p0 := P (p 1); let p1 := deriv P (p 1); let p2 := deriv (deriv P) (p 1)
+      (8 * f0 ^ 2 * p0 ^ 2 * p2 ^ 2 - 8 * f0 ^ 2 * p0 * p1 ^ 2 * p2 + 3 * f0 ^ 2 * p1 ^ 4
+        + 8 * f0 * f1 * p0 ^ 2 * p1 * p2 - 4 * f0 * f1 * p0 * p1 ^ 3 - 8 * f0 * p0 * p1 ^ 2
+        + 4 * f1 ^ 2 * p0 ^ 2 * p1 ^ 2 + 4 * f2 ^ 2 * p0 ^ 4 + 16 * p0 ^ 2) / (4 * p0 ^ 4) := by
+  obtain ⟨hSv, hS1, hS2⟩ := sin2_facts eS
+  have hs : Real.sin (p 2) ≠ 0 := fun h => hS0 (p 2) (by rw [hSv, h]; simp)
+  have := hF0 (p 1); have := hP0 (p 1)
+  simp [riem2C, Fin.sum_univ_four, static_table, kG, cK, hSv, hS1, hS2]
+  field_simp
+  ring
+
+end Inst_Kretschmann
+
 end ShadowProbe
 
 #print axioms ShadowProbe.open_frw_weyl
@@ -655,3 +797,7 @@ end ShadowProbe
 #print axioms ShadowProbe.frw_K_trace
 #print axioms ShadowProbe.gowdy_tz_field
 #print axioms ShadowProbe.sds_kretschmann
+#print axioms ShadowProbe.static_table
+#print axioms ShadowProbe.sin2_facts
+#print axioms ShadowProbe.static_ric
+#print axioms ShadowProbe.static_riem2
