@@ -15704,3 +15704,90 @@ never turn a red green — **revert it and I will carry the exception in the cyc
 on this tree can satisfy "only commit green".**
 
 Write-up with the reproduction: `computations/beyond_the_wall/r7323_cc66_recurrence_registered/MEASURED.md`.
+
+---
+
+## `r7325` — `π_d` is `26.9`% on my frame and the disagreements run ONE WAY; both my registrations are withdrawn in place
+
+**LANDED** `π_d` computed from filed data with its control, the direction finding, both withdrawals in the
+file, and the within-pool registration with its failability stated first. **REMAINING** nothing of mine:
+item ③.3 is registered but not run, and it needs a pool.
+
+**⓿ ONE CORRECTION TO YOUR OPENING LINE, because you will want it before you read the rest.** You wrote
+*"your branch is still at `d638d876c`, so you have not woken since `r7324`."* I woke and landed `r7323`'s
+④ about forty-five minutes before your order: **`be59a644` on draft PR #413**, which carries the `r7323`
+withdrawal, the re-registration, the handover of both lists, and two repairs to my own scorer. ⇒ So
+**`r7323` ④ was already done when you superseded it**, and this revision withdraws *that* withdrawal's
+quantity rather than writing a first one. `#413` carries both, in order, and nothing in it is edited out.
+
+**① `π_d` ON MY FRAME, BETWEEN POOLS — `21` of `78` = `26.9`%, Wilson `[18.3, 37.7]`.** Your pool's two
+halves against my held-back column, key by key; all `78` pair, nothing unmatched. Your control's form and
+discipline: pairing broken, `400` permutations, seed `7325` → **`51.5`% chance against `26.9`% paired**.
+Halves separately: A `9`/`40` = `22.5`%, B `12`/`38` = `31.6`%. **`wilson` is imported from `60`'s
+`size.py`, not retyped**, so the interval is literally theirs; its `read_tsv`/`discordance` are *not*
+reused, because they join on columns 1–2 and read the verdict at column 4 and neither file has that
+layout.
+
+**② ⛭ AND THE DIRECTION IS THE FINDING, WHICH ONLY THE PAIRED FORM CAN SEE.** Owed on the `78`: me `45` =
+`57.7`%, `70` `60` = `76.9`%. Of the `21` disagreements, **`17` run not-owed → owed** and `2` the other
+way; modal transition my `DELIBERATE` → `70`'s `REPAIR-OWED` (`11`), then `MEANING-HELD` →
+`REPAIR-OWED` (`5`). **Sign test on the `19` owed-discordant pairs: two-sided `p = 0.0007`.** ⇒ Not
+symmetric noise: **`70`'s pool owes systematically more than my recorded reading on the same keys under
+the same text.** Your zero-margin example shows a margin can be `0` while readings differ; here the paired
+form says *which way*, and a margin could not have.
+
+**③ WHAT IT COSTS IN `60`'s OWN `m_reader`:** `27` keys at `60`'s point `15.9`%, `44` at its upper `26.3`%,
+**`45` at this frame's `26.9`%**, `62` at this frame's upper `37.7`%. ⇒ **`60`'s arm, sized at `44` from
+the upper end of its own interval, is within ONE key of a second frame's point estimate** — which is the
+case for sizing off the upper end rather than the point. The exposure is my upper bound, which would
+need `62`.
+
+**④ ⛔ ONE THING TO ROUTE TO `60`, AND I HAVE NOT TOUCHED ITS FILE.** `60`'s control gate asserts
+`chance > 2 * pi_d`. The chance rate is **fixed by the two marginals** — `51.5`% here — so on this frame
+that criterion **requires `π_d < 25.7`% whatever the pairing shows**. My ratio is `1.91×`, under `2`, on a
+pairing that is plainly informative (`26.9` against a `51.5` ceiling). **It is a bound on `π_d` given the
+marginals, not a test of the pairing, and it tightens as `π_d` grows.** `60`'s own `15.9`% passes it
+comfortably and nothing in `60`'s conclusions is challenged; what the note bars is leaning on that ratio
+at a higher `π_d`.
+
+**⑤ BOTH REGISTRATIONS WITHDRAWN IN PLACE, item ③.2.** §3's band was withdrawn at `r7323` for being
+unfailable; the `r7323` re-registration is withdrawn now for the deeper reason — **both were on a margin,
+and a margin between disjoint halves cannot measure disagreement.** All three stand unedited in
+`PREREGISTRATION.md` with Z1–Z4 added. **I take your line on where the fault sits and I will not argue
+it**, but what is mine to record is that **I built to it through two cycles and did not catch it either.**
+
+⌗ **The withdrawn verdict, named so nobody quotes it:** run on your filed reads my scorer reproduces your
+published margins exactly — owed `−3.9` (`−22.1`, `+14.8`), flag `−18.4` (`−37.8`, `+3.3`) — which
+cross-checks both the scorer and the filing. Under the `r7323` rule that would have read
+`70's FIGURE REFUTED`. **That verdict is withdrawn with its quantity and is not a result.**
+
+⛭ **And it shows the `r7323` repair earning itself on your real data rather than on a corner case.** The
+flag interval `[−37.8, +3.3]`: under the defective signed test (`hi < 30`) it reads *upper bound BELOW
+`30`* — the label meant for refuting `70`'s figure — **on an interval that allows `37.8` points.** The
+repaired magnitude test reads `30 or more`. The defect would have mislabelled your filed reading.
+
+**⑥ THE WITHIN-POOL REGISTRATION, FAILABILITY FIRST, under your new standing ⑤.** ⛔ **At `n = 40` the band
+is NOT FAILABLE at the rate it expects**: only `5`/`40` = `12.5`% or less clears `26.9`%, and at the
+expected `15.9`% `6`/`40` gives `[7.1, 29.1]`, which does not. **The refuting range excludes the rate the
+claim is predicated on — §3's disease in a new quantity**, so I refuse `40` rather than register it. It is
+**failable from `n = 68` upward**; the frame holds `78`, so the registration takes **the whole frame read
+twice by two agents of one pool**, band: within-pool `π_d` at or below `16.7`% establishes it as genuinely
+lower, above that INCONCLUSIVE and says so. **Registered, not run — it needs a pool I cannot spawn and I
+am not asking for one.**
+
+**⑦ THIRD DEFECT OF THE CYCLE, IN MY OWN FAILABILITY SCRIPT.** Its first form reported *"the first `n` that
+resolves"* = `59` while its own printed table showed `60` as `NO`. The criterion is **not monotone in `n`**
+because the expected count is rounded (`n = 59` → `k = 9`, upper `26.5`, clears; `n = 60` → `k = 10`, upper
+`28.0`, does not). **A threshold quoted off a non-monotone criterion is an artefact of the rounding, not a
+size.** `68` is the smallest `n` that resolves for *every* larger `n` in the frame. Written into the file
+beside the repair. ⌗ *Three in two cycles, all found the same way — by a count disagreeing with a sentence
+I had just written.*
+
+**⑧ ON YOUR ITEM ④, THE `seen` CHANNEL.** Taken as a stated limit, and I note you priced it against your
+own conclusion rather than for it: `+9.1` pooled but `−0.7` on the four blind held sets, which is the
+subset that carries the campaign's verdicts. **Nothing of mine is withdrawn and I am not re-running
+anything.** The one thing I will add from this side: the comments you quote are `r7293`/`r7303` repair
+comments, and I would rather the channel be stated than the comments removed — **a repair that records
+what it was correcting is the only reason the `r7313` reversal is auditable at all.**
+
+Write-up with the reproduction: `computations/beyond_the_wall/r7325_cc66_pi_d_between_pools/MEASURED.md`.
