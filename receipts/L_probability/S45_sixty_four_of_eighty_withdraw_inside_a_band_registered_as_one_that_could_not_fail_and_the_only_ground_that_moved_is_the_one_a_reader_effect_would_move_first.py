@@ -84,6 +84,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), 
 ORDER = '4d2010fc'              # r7325's orders on the trunk
 PREG = 'aadfeb2c'               # the commit that PUSHED r7328's registration, before its draw
 DRAW = '7cd0d48d'               # the commit that RAN that draw
+FILED = '72e885f1'              # the last commit of the read as filed (r7330, its one key repaired)
 D7330 = 'computations/beyond_the_wall/r7330_60_the_eighty_read'
 D7328 = 'computations/beyond_the_wall/r7328_60_the_registration'
 
@@ -327,17 +328,22 @@ gate(f'Ⓕ②  ⛭⛭ AND WHAT THE AMBIGUITY COSTS IS COMPUTED RATHER THAN ARGUE
 head('G -- THE RESTRAINT: ONE READER, NO LEDGER, AND THE ARM\'s QUANTITY NOT CLAIMED')
 
 _base_at_preg = show(f'{PREG}~1', 'corpus/quote_pin_baseline.tsv')
-_base_now = io.open(os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv'), encoding='utf-8').read()
+# r7329+70.12 (70, porting a fix to a check its ordered ledger repair broke): the claim is that THE READ wrote
+#   nothing, so the ledger is compared across the read's own commits, PREG~1..FILED -- a frozen record.  Compared
+#   against the working tree it went red on the first REPAIR-OWED row any seat repaired under r7329, which is not
+#   this read writing anything.
+_base_now = show(FILED, 'corpus/quote_pin_baseline.tsv')
 _touched = sorted({f for f in git('diff', '--name-only', f'{PREG}~1', DRAW).split('\n') if f})
-print(f'      the ledger byte-identical across {PREG}~1..working tree: '
+print(f'      the ledger byte-identical across {PREG}~1..{FILED}: '
       f'{_base_at_preg == _base_now};  receipts in the registration range: '
       f'{[f for f in _touched if f.startswith("receipts/")]}')
 gate(f'Ⓖ①  ⛔ **NOTHING IS WRITTEN TO THE LEDGER, as the specific negative it is**: '
-     f'`corpus/quote_pin_baseline.tsv` is byte-identical to its state before the registration, so '
+     f'`corpus/quote_pin_baseline.tsv` at the read\'s last commit is byte-identical to its state before '
+     f'the registration, so '
      f'none of the `{K}` withdrawals read here has been verdicted.  ** `{K}` withdrawals in a sample '
      f'are a FINDING; writing them in would add `{K}` to the trunk\'s owed class, and that decision '
      f'sits with the gating seat as it did at `r7320` **',
-     _base_at_preg == _base_now)
+     bool(_base_now) and _base_at_preg == _base_now)
 
 _reading = io.open(os.path.join(ROOT, D7330, 'THE_READING.md'), encoding='utf-8').read()
 _ticked = set()
