@@ -3113,6 +3113,145 @@ theorem pp_kretschmann (p : Fin 4 → ℝ) :
 
 end SweepB12
 
+/-! ## `r7315`, B13 — receipt 8: a 4D engine (THE connection's Christoffel form for ANY diagonal metric on `ℝ⁴`, and
+`□φ` as the trace of its Hessian), then de Sitter in conformal time, `a(η)²(−dη² + dx²)`: the mode
+`φ = h(η) cos(kx)` has `□φ = a⁻²(−h″ − 2(a′/a)h′ − k²h) cos(kx)`, and with `a = −1/(Hη)` the TT mode
+`h = η cos kη − sin kη / k` (`u = ah ∝ cos kη − sin kη/(kη)`) solves `□φ = 0` -/
+
+section SweepB13
+
+set_option synthInstance.maxHeartbeats 400000
+
+lemma diag4_smooth {c : Fin 4 → (Fin 4 → ℝ) → ℝ} (hcs : ∀ i, ContDiff ℝ ∞ (c i)) : ContDiff ℝ ∞ (diag4 c) := by
+  rw [contDiff_clm_apply_iff]; intro a; rw [contDiff_clm_apply_iff]; intro b
+  simp only [diag4_apply]
+  exact ContDiff.sum fun i _ => (hcs i).mul contDiff_const
+
+/-- The Christoffel form of `Σ cᵢ(p) dxᵢ²`: `Γ(a,b)ₖ = (Dcₖ·a bₖ + Dcₖ·b aₖ − Σⱼ ∂ₖcⱼ aⱼbⱼ)/(2cₖ)`. -/
+noncomputable def gamD (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (p a b : Fin 4 → ℝ) : Fin 4 → ℝ := fun k =>
+  (fderiv ℝ (c k) p a * b k + fderiv ℝ (c k) p b * a k - ∑ j, fderiv ℝ (c j) p (Pi.single k 1) * (a j * b j))
+    / (2 * c k p)
+
+variable {c : Fin 4 → (Fin 4 → ℝ) → ℝ} (hc : ∀ i p, c i p ≠ 0) (hcs : ∀ i, ContDiff ℝ ∞ (c i))
+include hc hcs
+
+/-- **The engine:** `lcGam` of any diagonal metric on `ℝ⁴` is `gamD`. -/
+lemma lcGam_diag4 (p a b : Fin 4 → ℝ) : lcGam (diag4 c) p a b = gamD c p a b := by
+  have inv := flat_isInvertible (diag4 c) (fun p u h => diag4_nondeg (fun i => hc i p) u h) p
+  have hD : ∀ e a b : Fin 4 → ℝ, fderiv ℝ (diag4 c) p e a b = ∑ i, fderiv ℝ (c i) p e * (a i * b i) :=
+    fun e a b => by
+    rw [fderiv_apply₂' ((diag4_smooth hcs).differentiable (by simp) p),
+      show (fun y => diag4 c y a b) = fun y => ∑ i, c i y * (a i * b i) from funext fun y => diag4_apply c y a b]
+    rw [(HasFDerivAt.fun_sum fun i _ => (((hcs i).differentiable (by simp) p).hasFDerivAt.mul_const
+      (a i * b i))).fderiv]
+    simp; exact Finset.sum_congr rfl fun i _ => by ring
+  have hK : koszK (diag4 c) p a b = diag4 c p (gamD c p a b) := by
+    refine ContinuousLinearMap.ext fun v => ?_
+    have hv : v = ∑ k, v k • (Pi.single k 1 : Fin 4 → ℝ) := by ext i; simp [Pi.single_apply]
+    rw [koszK_apply, hD, hD, hD, diag4_apply]
+    simp only [gamD, Fin.sum_univ_four]
+    have := hc 0 p; have := hc 1 p; have := hc 2 p; have := hc 3 p
+    conv_lhs => rw [hv]
+    simp [Fin.sum_univ_four]
+    field_simp; ring
+  rw [lcGam_apply, hK, inv.inverse_apply_self]
+
+omit hc hcs
+
+/-- THE connection's wave operator for a diagonal metric `Σ cᵢ dxᵢ²`: `□φ = Σᵢ cᵢ⁻¹ (∂ᵢ∂ᵢφ − (∇_{eᵢ} eᵢ)φ)`. -/
+noncomputable def boxD (m : NDMetric 𝓘(ℝ, Fin 4 → ℝ) (Fin 4 → ℝ)) (c : Fin 4 → (Fin 4 → ℝ) → ℝ)
+    (φ : (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) : ℝ :=
+  ∑ i, (c i p)⁻¹ * (fderiv ℝ (fun y => fderiv ℝ φ y (Pi.single i 1)) p (Pi.single i 1)
+    - fderiv ℝ φ p (lcConn (Fin 4 → ℝ) m (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) p (Pi.single i 1)))
+
+/-- The conformally flat metric `a(η)²(−dη² + dx² + dy² + dz²)`. -/
+noncomputable def cConf (a : ℝ → ℝ) : Fin 4 → (Fin 4 → ℝ) → ℝ :=
+  ![fun p => -a (p 0) ^ 2, fun p => a (p 0) ^ 2, fun p => a (p 0) ^ 2, fun p => a (p 0) ^ 2]
+
+variable {a h : ℝ → ℝ} (ha : ∀ s, a s ≠ 0) (has : ContDiff ℝ ∞ a) (hhs : ContDiff ℝ ∞ h)
+
+include ha in
+lemma cConf_ne (i : Fin 4) (p : Fin 4 → ℝ) : cConf a i p ≠ 0 := by
+  fin_cases i <;> simp [cConf, ha]
+
+include has in
+lemma cConf_smooth (i : Fin 4) : ContDiff ℝ ∞ (cConf a i) := by
+  have := has.comp (contDiff_apply ℝ ℝ (0 : Fin 4))
+  fin_cases i <;> simp [cConf] <;> fun_prop
+
+include ha has hhs in
+/-- **B13.** `□(h(η) cos kx) = a⁻²(−h″ − 2(a′/a)h′ − k²h) cos kx` for THE Levi-Civita connection. -/
+theorem conf_box (k : ℝ) (p : Fin 4 → ℝ) :
+    boxD (ndOf (diag4 (cConf a)) (diag4_symm _) (fun p u h => diag4_nondeg (fun i => cConf_ne ha i p) u h)
+      ((diag4_smooth (cConf_smooth has)).differentiable (by simp))) (cConf a) (fun y => h (y 0) * Real.cos (k * y 1)) p
+      = (a (p 0) ^ 2)⁻¹ * (-deriv (deriv h) (p 0) - 2 * (deriv a (p 0) / a (p 0)) * deriv h (p 0)
+          - k ^ 2 * h (p 0)) * Real.cos (k * p 1) := by
+  have da : ∀ s, DifferentiableAt ℝ a s := fun s => (has.differentiable (by simp)) s
+  have dh : ∀ s, DifferentiableAt ℝ h s := fun s => (hhs.differentiable (by simp)) s
+  have dh' : ∀ s, DifferentiableAt ℝ (deriv h) s :=
+    fun s => ((contDiff_infty_iff_deriv.1 hhs).2.differentiable (by simp)) s
+  have pr : ∀ (i : Fin 4) (y : Fin 4 → ℝ), HasFDerivAt (fun z : Fin 4 → ℝ => z i) _ y :=
+    fun i y => hasFDerivAt_apply (𝕜 := ℝ) i y
+  have cosk : ∀ (y : Fin 4 → ℝ), HasFDerivAt (fun z : Fin 4 → ℝ => Real.cos (k * z 1)) _ y :=
+    fun y => (Real.hasDerivAt_cos _).comp_hasFDerivAt y ((pr 1 y).const_mul k)
+  have sink : ∀ (y : Fin 4 → ℝ), HasFDerivAt (fun z : Fin 4 → ℝ => Real.sin (k * z 1)) _ y :=
+    fun y => (Real.hasDerivAt_sin _).comp_hasFDerivAt y ((pr 1 y).const_mul k)
+  have hφ : ∀ y, HasFDerivAt (fun z : Fin 4 → ℝ => h (z 0) * Real.cos (k * z 1)) _ y :=
+    fun y => (fd_coord (dh _)).mul (cosk y)
+  have e0 : (fun y => fderiv ℝ (fun z : Fin 4 → ℝ => h (z 0) * Real.cos (k * z 1)) y (Pi.single 0 1))
+      = fun y => deriv h (y 0) * Real.cos (k * y 1) := funext fun y => by rw [(hφ y).fderiv]; simp; ring
+  have e1 : (fun y => fderiv ℝ (fun z : Fin 4 → ℝ => h (z 0) * Real.cos (k * z 1)) y (Pi.single 1 1))
+      = fun y => -(k * (h (y 0) * Real.sin (k * y 1))) := funext fun y => by rw [(hφ y).fderiv]; simp; ring
+  have e2 : ∀ j : Fin 4, j = 2 ∨ j = 3 →
+      (fun y => fderiv ℝ (fun z : Fin 4 → ℝ => h (z 0) * Real.cos (k * z 1)) y (Pi.single j 1)) = fun _ => 0 :=
+    fun j hj => funext fun y => by rcases hj with rfl | rfl <;> (rw [(hφ y).fderiv]; simp)
+  have hsq := (fd_coord (x := p) (da (p 0))).pow 2
+  have hq : ∀ v, fderiv ℝ (fun p : Fin 4 → ℝ => a (p 0) ^ 2) p v = 2 * a (p 0) * deriv a (p 0) * v 0 :=
+    fun v => by rw [hsq.fderiv]; simp; ring
+  have g0 : HasFDerivAt (fun y : Fin 4 → ℝ => deriv h (y 0) * Real.cos (k * y 1)) _ p :=
+    (fd_coord (dh' _)).mul (cosk p)
+  have g1 : HasFDerivAt (fun y : Fin 4 → ℝ => -(k * (h (y 0) * Real.sin (k * y 1)))) _ p :=
+    (((fd_coord (dh _)).mul (sink p)).const_mul k).neg
+  simp only [boxD, Fin.sum_univ_four, lcConn_const, lcGam_diag4 (cConf_ne ha) (cConf_smooth has), e0, e1,
+    e2 2 (Or.inl rfl), e2 3 (Or.inr rfl), (hφ p).fderiv]
+  rw [g0.fderiv, g1.fderiv]
+  simp [gamD, Fin.sum_univ_four, cConf, hq]
+  have := ha (p 0)
+  field_simp; ring
+
+/-- The de Sitter TT mode, `h = η cos kη − sin kη / k` (so `a h ∝ cos kη − sin kη/(kη)`). -/
+noncomputable def hTT (k s : ℝ) : ℝ := s * Real.cos (k * s) - Real.sin (k * s) / k
+
+open Filter Topology in
+include ha has in
+/-- **B13, receipt 8.** On de Sitter in conformal time (`a = −1/(Hη)` near `η`), the TT mode `h(η) cos kx` solves
+THE connection's wave equation `□φ = 0`. -/
+theorem ds_tt_mode {H k η : ℝ} (hH : H ≠ 0) (hk : k ≠ 0) (hη : η ≠ 0) (haη : a =ᶠ[𝓝 η] fun s => -(H * s)⁻¹)
+    (p : Fin 4 → ℝ) (hp : p 0 = η) :
+    boxD (ndOf (diag4 (cConf a)) (diag4_symm _) (fun p u h => diag4_nondeg (fun i => cConf_ne ha i p) u h)
+      ((diag4_smooth (cConf_smooth has)).differentiable (by simp))) (cConf a)
+      (fun y => hTT k (y 0) * Real.cos (k * y 1)) p = 0 := by
+  have hs : ContDiff ℝ ∞ (hTT k) := by unfold hTT; fun_prop
+  have d1 : ∀ s, HasDerivAt (hTT k) (-(k * s * Real.sin (k * s))) s := fun s => by
+    have hc := (Real.hasDerivAt_cos (k * s)).comp s ((hasDerivAt_id s).const_mul k)
+    have hn := (Real.hasDerivAt_sin (k * s)).comp s ((hasDerivAt_id s).const_mul k)
+    refine HasDerivAt.congr_deriv (HasDerivAt.sub ((hasDerivAt_id s).mul hc) (hn.div_const k)) ?_
+    simp; field_simp; ring
+  have d2 : HasDerivAt (fun s => -(k * s * Real.sin (k * s))) (-(k * Real.sin (k * η) + k * η * (Real.cos (k * η) * k))) η :=
+    by
+    have hn := (Real.hasDerivAt_sin (k * η)).comp η ((hasDerivAt_id η).const_mul k)
+    refine HasDerivAt.congr_deriv ((((hasDerivAt_id η).const_mul k).mul hn).neg) ?_
+    simp
+  have dd : deriv (hTT k) = fun s => -(k * s * Real.sin (k * s)) := funext fun s => (d1 s).deriv
+  have da : deriv a η = 1 / (H * η ^ 2) := by
+    rw [haη.deriv_eq]
+    exact (((hasDerivAt_id η).const_mul H).inv (mul_ne_zero hH hη)).neg.deriv.trans (by simp only [id_eq]; field_simp)
+  rw [conf_box ha has hs, hp, dd, d2.deriv, haη.eq_of_nhds, da]
+  unfold hTT
+  field_simp; ring
+
+end SweepB13
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -3218,3 +3357,6 @@ end ShadowProbe
 #print axioms ShadowProbe.pp_riemann
 #print axioms ShadowProbe.pp_Ruxux
 #print axioms ShadowProbe.pp_kretschmann
+#print axioms ShadowProbe.lcGam_diag4
+#print axioms ShadowProbe.conf_box
+#print axioms ShadowProbe.ds_tt_mode
