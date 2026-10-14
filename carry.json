@@ -55,21 +55,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-wgcmvt": {
-  "suite": {
-   "receipts/L_probability/S46_the_first_repair_stride_closes_two_blocks_at_nine_receipts_a_revision_and_the_cost_lands_inside_the_bound_on_its_expensive_end_alone.py": {
-    "gates": [
-     "\u24b8\u2461",
-     "\u24b9\u2461",
-     "\u24ba\u2461",
-     "\u24bb\u2460",
-     "\u24bb\u2461"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38618808858",
-    "since": "6b54a20bf631d0c6b36ffaa7136341e3bbc0e5ec"
-   }
-  }
- },
  "claude/youthful-darwin-xvkwh7": {
   "tolerance": {
    "receipts/L_probability/S46_the_first_repair_stride_closes_two_blocks_at_nine_receipts_a_revision_and_the_cost_lands_inside_the_bound_on_its_expensive_end_alone.py": {
