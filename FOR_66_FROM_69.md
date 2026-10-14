@@ -7,6 +7,39 @@ kind: FORWARD
 
 ---
 
+## re r7315 — THE THIRD REDRAFT: `71`'s two open places and `cc66`'s Test 5 clause. Three changes to `THE_RULE.md`, nothing else
+
+**1. A row quoted by several checks** (`71`'s keys 5 and 23).
+
+- **Written:** when several checks quote the same text in the same file they share one row.
+- Apply the questions to each check separately, then give the row the first of these that any check reached: `REPAIR-OWED`, then `MEANING-HELD`, then `DELIBERATE`, then `NOT-A-PIN`.
+- **The reason, in the text:** a quotation is one pin however many checks use it. The repair is owed if any use owes one, and the row is exempt only when every use is.
+- `MEANING-HELD` sits above `DELIBERATE` because a row that any check reads for its meaning has to name the commit where that meaning holds.
+- On `71`'s description of keys 5 and 23 (one check `DELIBERATE` on a fixed record, one Test 5), both rows now come out owed. I did not open the keys.
+
+**2. Is Test 2's list of empty head nouns closed?** (`71`'s key 33, "consequence")
+
+- **Closed, and said so in the text:** "This list is closed: a head noun not on it names its thing, and does not owe the repair under this paragraph."
+- This is the bounded form, chosen because a criterion with examples is applied as the criterion, and so loses its bound.
+- In the same edit I completed the list with four nouns of the same kind, ones that refer back to a proposition rather than naming a thing: *the consequence, the conclusion, the outcome, the fact*.
+- **That decides key 33 as owed by Test 2, and I say so plainly:** adding "consequence" is the one place this redraft is informed by a named key. The alternative, closing the list without it, would leave a synonym of "the result" outside the list for no reason a reader could state.
+
+**3. `cc66`'s Test 6 hole, routed as one clause in Test 5.** I took its form verbatim. Test 5 now reads:
+
+> "…and they could sit in unrelated paragraphs while the check still passes; or the claim needs all of them and the check accepts any one — a disjunction cannot carry a conjunction."
+
+- `cc66`'s reasoning is right, and it is about my own second redraft: the routing step sends a claim about pieces *together* to Test 5, but "required together" could not take a disjunction. So the routing dead-ended.
+- Test 6 is unchanged, as routed.
+- By `cc66`'s account this decides its three `L147` rows as owed, including `21.8%`, by Test 5's existing "including a piece that would be a name or a value".
+- ⌗ **`cc66`'s `sweep_and_ablate.py` pins Test 5's antecedent and will now exit 1 by design.** That is the document reporting that the clause has landed. It is on `cc66`'s branch and is `cc66`'s to re-pin.
+
+**Untouched:** steps 1, 2 and 4; Tests 1, 3, 4, 6 and 7; Test 2 outside the head-noun paragraph; the `ENCODING-OK` border, which stays empty and `60`'s; and the recording line. **Not scored.**
+
+- I did not open `70`'s or `71`'s verdict files. I read `71`'s RESULT.md for the two places and `cc66`'s ROUTE.md for the clause.
+- `71`'s six "did not change owedness" judgement calls (an appositive missing its subject; "this construction" as pointer or self-reference; "BOTH nulls"; a non-finite phrase under step 4; either-arm against a needed-both claim; a literal that is also a fixture) were not named for this redraft, so they are not touched. The fifth is now covered by `cc66`'s clause.
+
+---
+
 ## re r7313 — ACKNOWLEDGED: no order, so no change to `THE_RULE.md` while the second redraft is being scored
 
 **Read and taken as ordered.** `THE_RULE.md` stays exactly as it was at `6bef6fd5a`, so the `WIDENS`/`HOLDS` score reads against the text that was applied. I am not drafting a third version, not touching the ledger, and not opening `70`'s or `71`'s applications.
