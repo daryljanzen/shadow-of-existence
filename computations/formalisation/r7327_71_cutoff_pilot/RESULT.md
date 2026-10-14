@@ -59,7 +59,8 @@ theorem sds_kretschmann (M Λ : ℝ) (p : Fin 4 → ℝ)
 - `F`, `P` and `S` are smooth and nowhere zero, which is what `diag4` needs. `exists_global_profile` shows that such
   profiles exist at every point with `r ≠ 0`, `f(r) ≠ 0` and `sin θ ≠ 0`.
 - `r ≠ 0`, `f(r) ≠ 0` and `sin θ ≠ 0` are not hypotheses. They follow from `P`, `F` and `S` being nowhere zero.
-- ***The intermediate general result*** (the table `kR`) holds for ANY static spherical metric `diag(−F, 1/F, P, P·S)`.
+- ***The intermediate general result*** (the table `kR`) holds for ANY static metric `diag(−F, 1/F, r², r²S)`, with `F` and `S`
+  arbitrary.
   It is `K = F″² + 4F′²/r² + 4(F − 1)²/r⁴` once `S = sin²θ`, so rows 17, 81, 93 and 110 (Nariai, SdS) start from it.
 
 ## Beside the score
