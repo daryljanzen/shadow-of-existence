@@ -121,17 +121,18 @@ def main():
     check('P11 routes the stability question OUT by name -- Friedrich (vacuum small-data) and '
           'Andreasson-Ringstrom (all-data T^3-Gowdy), Nariai the non-generic exception',
           'Friedrich proved the nonlinear stability of de Sitter in vacuum with $\\Lambda>0' in p11
-          and 'extend cosmic no-hair and future stability to \\emph{all} data in the $T^3$-Gowdy class' in p11
+          and "Andr\\'easson and Ringstr\\\"om extend cosmic no-hair and future stability to \\emph{all} data in "
+          'the $T^3$-Gowdy class' in p11
           and 'the one non-generic exception, the Nariai branch' in p11)
     check('P11 names the CELL CR needs and its covering result: "Friedrich is a small-data result, '
           'EXACTLY THE PERTURBATIVE REGIME OF THE PROPAGATING GRAVITON, so it settles the in-regime '
           'all-orders stability directly"',
-          'exactly the perturbative regime of the propagating graviton' in p11
-          and 'settles the in-regime all-orders stability directly' in p11)
+          'Friedrich is a small-data result, exactly the perturbative regime of the propagating graviton, so it '
+          'settles the in-regime all-orders stability directly' in p11)
     check('and P11 itself calls this a BRACKET, not a single-theorem closure: "convergence across '
           'results ... rather than a single theorem covering the exact vacuum polarized Gowdy" case',
-          'This is convergence across results' in p11
-          and 'rather than a single theorem covering the exact vacuum polarized Gowdy--$\\Lambda$ case, and the in-model computations above are t' in p11)
+          'This is convergence across results---vacuum small-data, all-data Gowdy with matter, vacuum '
+          'Nariai-genericity---rather than a single theorem covering the exact vacuum polarized Gowdy--$\\Lambda$ case' in p11)
     # ⛔⛭ AMENDED r4534: P11 states it in more detail now and with the citation -- "This is a massive
     #    scalar on de Sitter and admits a clean, unitary Bunch--Davies
     #    quantization~\cite{BunchDavies1978}", after naming the mode's own equation (Hubble friction
