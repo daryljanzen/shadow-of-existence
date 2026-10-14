@@ -3914,6 +3914,66 @@ lemma gowdy_shear_charge (Λ ex s : ℝ) : HasDerivAt (fun t => deriv R t - 2 * 
 end Engine4D_E4
 
 
+
+/-! ### `r7323` instance 1 — row 52, the open slicing: the `k = −1` leaf at radius `A`, in a horospherical
+chart `A²(dw² + e^{2w}(dx² + dy²))`, lies on the hyperboloid and has `³R = −6/A²` (so `6k/a²` with `k = −1`).
+The leaf's curvature is read through the engine as the scalar curvature of the static product `−dt² + A²h`,
+which equals `³R` because the product is static and its `t`-direction is flat. -/
+
+section Inst_R52
+
+set_option synthInstance.maxHeartbeats 400000
+
+/-- The horospherical point of the hyperboloid `−X₀² + X₁² + X₂² + X₃² = A²` (the 4D slice of the
+5D one, which is all a 3-leaf needs). -/
+lemma horo_on_hyperboloid (A w x y : ℝ) :
+    -(A * (Real.exp (-w) ^ 2 + x ^ 2 + y ^ 2 + 1) / (2 * Real.exp (-w))) ^ 2
+      + (A * (Real.exp (-w) ^ 2 + x ^ 2 + y ^ 2 - 1) / (2 * Real.exp (-w))) ^ 2
+      + (A * x / Real.exp (-w)) ^ 2 + (A * y / Real.exp (-w)) ^ 2 = -A ^ 2 := by
+  have := Real.exp_pos (-w); field_simp; ring
+
+set_option maxHeartbeats 4000000 in
+/-- **Row 52.** The open leaf of radius `A` has scalar curvature `−6/A²` under THE connection. -/
+theorem open_leaf_curv (A : ℝ) (hA : A ≠ 0) (p : Fin 4 → ℝ) :
+    scalC (fun i => cS (FoF fun _ => A) GoF i p) (fun i j k => curv (lcConn (Fin 4 → ℝ)
+      (ndOf (diag4 (cS (FoF fun _ => A) GoF)) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => oF_ne (a := fun _ => A) (fun _ => hA) i p) u h)
+      ((diag4_smooth (cS_smooth (FoF_smooth (a := fun _ => A) contDiff_const) GoF_smooth)).differentiable
+        (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p) = -6 / A ^ 2 := by
+  have hs := FoF_smooth (a := fun _ => A) contDiff_const
+  have x1 : ∀ w, HasDerivAt (fun w => Real.exp (2 * w)) (2 * Real.exp (2 * w)) w := fun w =>
+    HasDerivAt.congr_deriv (((hasDerivAt_id' w).const_mul 2).exp) (by ring)
+  have f1 : deriv (fun w => Real.exp (2 * w)) = fun w => 2 * Real.exp (2 * w) := funext fun w => (x1 w).deriv
+  have f2 : deriv (fun w => 2 * Real.exp (2 * w)) = fun w => 4 * Real.exp (2 * w) :=
+    funext fun w => (((x1 w).const_mul 2)).deriv.trans (by ring)
+  have hDF : ∀ k, deriv (FoF (fun _ => A) k) (p 0) = 0 := fun k => by
+    fin_cases k <;> simp [FoF]
+  have hDDF : ∀ k, deriv (deriv (FoF (fun _ => A) k)) (p 0) = 0 := fun k => by
+    fin_cases k <;> simp [FoF]
+  have hDG : ∀ k, deriv (GoF k) (p 1) = (![0, 0, 2 * Real.exp (2 * p 1), 2 * Real.exp (2 * p 1)] : Fin 4 → ℝ) k :=
+    fun k => by
+    fin_cases k
+    exacts [deriv_const _ _, deriv_const _ _, (x1 _).deriv, (x1 _).deriv]
+  have hDDG : ∀ k, deriv (deriv (GoF k)) (p 1)
+      = (![0, 0, 4 * Real.exp (2 * p 1), 4 * Real.exp (2 * p 1)] : Fin 4 → ℝ) k := fun k => by
+    fin_cases k
+    · show deriv (deriv fun _ : ℝ => (1 : ℝ)) (p 1) = 0; simp
+    · show deriv (deriv fun _ : ℝ => (1 : ℝ)) (p 1) = 0; simp
+    all_goals (show deriv (deriv fun w => Real.exp (2 * w)) (p 1) = _; rw [f1, f2]; rfl)
+  have h1 := fun k v => dC1_cS hs GoF_smooth p k v
+  have h2 := fun k u v => dC2_cS hs GoF_smooth p k u v
+  have h1' : ∀ k v, fderiv ℝ (cS (FoF fun _ => A) GoF k) p v = _ := fun k v => h1 k v
+  have hE := Real.exp_pos (2 * p 1)
+  simp only [scalC, ricC, Fin.sum_univ_four,
+    curvD_eq (oF_ne (a := fun _ => A) (fun _ => hA)) (cS_smooth hs GoF_smooth)]
+  simp only [curvD, Pi.sub_apply, Pi.add_apply, DGD, gamD, h1', h1, h2, hDF, hDDF, hDG, hDDG]
+  simp [cS, FoF, GoF, Fin.sum_univ_four]
+  field_simp; ring
+
+end Inst_R52
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -4035,3 +4095,5 @@ end ShadowProbe
 #print axioms ShadowProbe.open_frw_weyl
 #print axioms ShadowProbe.gowdy_ds_field
 #print axioms ShadowProbe.gowdy_shear_charge
+#print axioms ShadowProbe.horo_on_hyperboloid
+#print axioms ShadowProbe.open_leaf_curv

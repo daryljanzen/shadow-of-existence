@@ -1,0 +1,4 @@
+# r7323+71.2 — instance 1, row 52: lake env lean probes/CurvatureProbe.lean, exit 0 (≈15 min on this machine), no error, no sorry
+# 121 #print axioms lines, all [propext, Classical.choice, Quot.sound]
+'ShadowProbe.horo_on_hyperboloid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.open_leaf_curv' depends on axioms: [propext, Classical.choice, Quot.sound]
