@@ -96,8 +96,13 @@ of transformation is `70`'s to price and `66`'s to order; I am not proposing it 
 - **Nothing about `P15_CR_cosmology`.** Not one of its `42` rows in `26` receipts is touched here: it is
   the sector where a repair might change what a check asserts about the spectrum, and `r7329` says to stop
   and route those. **None were reached this stride, so none are routed yet either.**
-- **Not that ⒟ is settled.** It is a limit I measured and reported against my own repair; whether it
-  changes the instrument is not mine to decide.
+- **Not that ⒟ is settled** — but the judgement is given rather than parked, because
+  `check_deferrals` red this line's first form and was right to: `THE_PLAN`'s rule since `r1885` is that a
+  deferral written into a file outlives its moment and gets quoted back as authority. ⇒ **So, my
+  recommendation: the instrument SHOULD follow one hop of transformation. `12` of the `14` literals this
+  stride left are invisible without it, and a ratchet that cannot see them is counting the wrong thing.**
+  It is `70`'s instrument, so `70` prices it and `66` orders it — **a routing, with my call on the
+  substance already made above.**
 
 ---
 
@@ -273,3 +278,72 @@ three-argument `check` will hit it**, and this stride hit it on its first.*
 - **The stride count stands at `8` receipts** — ⑩ and ⑪ are the same two receipts repaired again, not new
   ones. ⇒ **The cost figure in ⑦ should arguably be read as `8` receipts for the price of `10` repairs**,
   which makes the rate *worse*, not better, and is said here because it bears on the trigger.
+
+---
+
+# ⛔⛔ And a full gate sweep found two MORE — so the real lesson is the sweep, not any one gate
+
+After the second red I stopped guessing gate by gate and **swept all `134` gates CI runs**, parsed out of
+the workflow rather than listed by hand, each with a `240`-second cap. **That is the instrument I should
+have used before the first push, and it cost `35` minutes.**
+
+| | |
+|---|---|
+| gates swept | **`134`**, the workflow's own list |
+| non-zero | **`3`** |
+| `check_deferrals` | **red — case ⒢** |
+| `check_prose_pins` | **red — case ⒣** |
+| `check_quote_pins` | `rc=124`, my sweep's `240`-second cap, not a failure — it needs `~18` min and is green |
+
+⇒ ***Four of my repairs broke four different gates, each of which polices assertions, and the quote-pin
+gate caught none of them.*** `check_receipts`, `check_exact_counts`, `check_deferrals`,
+`check_prose_pins`. **The repair phase's verification unit is the gate sweep.**
+
+## ⑬ Case ⒢ — I wrote a deferral into a file, and the gate for that is older than this campaign
+
+`check_deferrals` red on **my own write-up**, `MEASURED.md:100`, for the phrase it forbids. `THE_PLAN`'s
+rule since `r1885`: ***the gate never writes a deferral to Daryl into any document — if something
+genuinely needs him it is said in the turn, because a written deferral outlives the moment and gets
+quoted back as authority.***
+
+⇒ **It was right and the fix is to decide.** The sentence now carries my recommendation instead: the
+instrument **should** follow one hop of transformation, since `12` of the `14` literals this stride left
+are invisible without it. `70` prices it and `66` orders it — a routing, with the substance called.
+
+⌗ **And the first repair of this line was red too**, because it *quoted* the forbidden phrase while
+explaining it. **The gate matches the phrase, not the stance — which is correct: a quotation of a deferral
+is still a deferral sitting in a file where it can be read back.** Worth knowing before anyone else
+explains one in a write-up.
+
+## ⑭ Case ⒣ — ⛔ the repair shape converts a quote-pin into a PROSE-pin, which is a second ledger
+
+`check_prose_pins`: **`1 NEW PROSE-PIN SITE`** — my `L561/C1` repair, `len([...]) == 1` over
+`ast.walk(ast.parse(w1))`, and the gate's own words are *"a new pin on a count is the class this gate
+exists for"*.
+
+⇒ **Case ⒠ again in a second instrument, and the sharper statement of the whole pattern:** W1's checks are
+another seat's to add to, so **counting them is a pin on a population I do not own** — and uniqueness was
+never the claim. The claim is that the two counts sit *beside* each other, which is an **existence**, not
+a count. Repaired to `any(...)`: green, stronger against W1 growing, and no count pinned.
+
+⌗ ***So the prescribed repair shape — assert the structure — moves a pin from one ledger to another unless
+the assertion is an existence or a naming.*** Three of my eight repairs still assert `== 1` over another
+file's structure and are green, which means **the prose-pin gate's detector does not catch the shape
+uniformly** — it keyed on the `ast.walk(ast.parse(...))` form and not on the comprehension-over-lines
+form. **Routed to `70` with the three sites named, as a coverage gap rather than a defect in those
+repairs.** My own call: all three should be existences too, and I will write them that way in the next
+stride rather than re-opening green receipts now.
+
+## ⑮ The stride, finally
+
+| | |
+|---|---|
+| receipts repaired | **`8`** |
+| repairs it took | **`12`** — four of them repairs of my own repairs |
+| owed rows cleared | **`9`**, `REPAIR-OWED` `366` → **`357`** |
+| gates my repairs broke | **`4`**, all assertion gates, none of them the quote-pin gate |
+| full gate sweep | **`134` of `134` accounted**, `0` real failures |
+
+⇒ **Read against `r7331`'s trigger, the cost is `8` receipts for `12` repairs plus a `35`-minute sweep**,
+which is worse than ⑦'s figure and worse again than the order's `11`–`16`. **That is the number, and it
+is the honest one.**

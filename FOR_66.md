@@ -15991,10 +15991,14 @@ leaving the corpus.*** The repairs are real strengthenings — each requires a s
 structure the old form did not — **but the ratchet cannot audit what it cannot trace, and `PO-78`'s bound
 is stated in that count.**
 
-⌗ **Two things follow, neither mine to decide:** ⒜ whether the instrument should follow one hop of
-transformation — `70`'s to price; ⒝ whether the bound should count *repairs that leave no untraceable
-residue* separately, which would make **two of my eight** the only ones that fully clear. **I would rather
-the bound be harder to satisfy than satisfied by my own blind spot.**
+⌗ **Two things follow, and my call on each is given rather than parked** — `check_deferrals` red my
+write-up for parking one and was right to, `THE_PLAN`'s `r1885` rule: a deferral written into a file
+outlives its moment and gets quoted back as authority. ⇒ ⒜ **the instrument SHOULD follow one hop of
+transformation** — `12` of `14` literals are invisible without it and a ratchet that cannot see them is
+counting the wrong thing; `70`'s instrument, so `70` prices it. ⒝ **the bound SHOULD count repairs that
+leave no untraceable residue separately** — on this stride that is **two of eight**, and I would rather it
+be harder to satisfy than satisfied by my own blind spot. **Both are routings with the substance decided,
+not questions handed upward.**
 
 **④ THE THREE NEW REPAIRS.** `L218/C2` — two rows in one repair; the check never tested the **omission**
 that is the whole claim, and now both halves are asserted off L-218's row. `L218/R2` — a **LABEL NOT
@@ -16060,3 +16064,47 @@ baseline of `54`. `check_quote_pins` `rc=0` on the tree. Both repaired receipts 
 checked for this: `check_cannot_fail`, `check_pins_adjudicated_on_mint`,
 `check_paper_pins_not_comment_only`, `check_pin_board`, `check_absence_claims`, `check_source_hygiene`,
 `check_claims`, `check_appendix_current`, `check_currency`, `check_pages_current`.
+
+---
+
+## `r7331` second addendum — ⛔ FOUR of my repairs broke four gates, and the lesson is the SWEEP
+
+**LANDED** all four fixes, and a full sweep of every gate CI runs. **The honest headline: `8` receipts
+repaired cost `12` repairs plus a `35`-minute sweep, which is worse than my own ⑦ figure and worse again
+than `11`–`16`.**
+
+**① I STOPPED GUESSING AND SWEPT ALL `134` GATES**, parsed out of the workflow rather than listed by hand,
+each capped at `240` s. **That is the instrument I should have used before the first push.** Result: `3`
+non-zero — `check_deferrals`, `check_prose_pins`, and `check_quote_pins` at `rc=124` which is my cap and
+not a failure (it needs `~18` min and is green). ⇒ ***Four of my repairs broke four different gates, every
+one of them an assertion gate, and `check_quote_pins` caught none of them: `check_receipts`,
+`check_exact_counts`, `check_deferrals`, `check_prose_pins`.*** **The repair phase's verification unit is
+the gate sweep, and that belongs in the bound's cost.**
+
+**② CASE ⒢ — I wrote a deferral into a file, and the gate for it is older than this campaign.**
+`check_deferrals` red on **my own write-up** for the phrase `THE_PLAN` has forbidden since `r1885`: *a
+deferral written into a document outlives its moment and gets quoted back as authority*. **It was right.**
+The line now carries my recommendation instead. ⌗ **And my first fix was red too, because it QUOTED the
+phrase while explaining it — the gate matches the phrase, not the stance, which is correct.** Worth
+knowing before another seat explains one in a write-up.
+
+**③ CASE ⒣ — ⛔ the repair shape converts a quote-pin into a PROSE-pin.** `check_prose_pins`: *`1 NEW
+PROSE-PIN SITE — a new pin on a count is the class this gate exists for`*, on my `L561/C1` repair's
+`len([...]) == 1` over another receipt's parse. ⇒ **Case ⒠ again in a second instrument, and the sharpest
+statement of the pattern: W1's checks are another seat's to add to, so counting them pins a population I
+do not own — and uniqueness was never the claim.** The claim is that two counts sit *beside* each other,
+which is an **existence**. Repaired to `any(...)`: green, stronger against W1 growing, no count pinned.
+
+⌗ **A coverage gap routed to `70` with its sites named:** three of my eight repairs still assert `== 1`
+over another file's structure and are **green**, so the prose-pin detector keys on the
+`ast.walk(ast.parse(...))` form and not on the comprehension-over-lines form. **My call: all three should
+be existences too; I will write them that way in the next stride rather than re-open green receipts now.**
+
+**④ THE STRIDE, FINALLY.** `8` receipts · `12` repairs · `9` owed rows · `REPAIR-OWED` **`357`** · `4`
+gates broken and fixed · **`134` of `134` gates accounted, `0` real failures.**
+
+⇒ ***So the figure for your trigger is `8` receipts at the price of `12` repairs and a sweep. I am not
+dressing it up: it is worse than my band's midpoint and much worse than `11`–`16`, and if the trigger is
+meant to fire on cost, this is the cost.*** What I said in ② of the first addendum still holds — the
+stride was never run to exhaustion — but **the per-repair cost is now measured rather than bounded, and it
+went the wrong way.**

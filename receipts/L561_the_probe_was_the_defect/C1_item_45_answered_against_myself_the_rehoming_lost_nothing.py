@@ -311,11 +311,17 @@ def main():
           #: split into separate checks -- which is the failure the old arm could not see, since a
           #: heading survives any amount of splitting underneath it.
           'CORRECTED c54.228 (`L-561`), AND THE CORRECTION IS A' in w1
-          and len([_n for _n in ast.walk(ast.parse(w1))
-                   if isinstance(_n, ast.Call) and isinstance(_n.func, ast.Name)
-                   and _n.func.id == 'check' and _n.args
-                   and {'_verbatim', '_alive'} <= set(re.findall(
-                       r'len\((_\w+)\)', ast.get_source_segment(w1, _n.args[0]) or ''))]) == 1
+          #: ⌗⛭ r7331+cc66, SECOND repair of this arm, and `check_prose_pins` found the first:
+          #: `len([...]) == 1` over `ast.walk(ast.parse(w1))` is `1 NEW PROSE-PIN SITE -- a new pin on a
+          #: count`, which is the class that gate exists for.  It is right, and it is case ⒠ again in a
+          #: second instrument: ** W1's checks are another seat's to add to, so counting them is a pin on
+          #: a population I do not own. **  And uniqueness was never the claim -- the claim is that the
+          #: two counts sit BESIDE each other, which is an EXISTENCE and not a count.  So `any`.
+          and any(isinstance(_n, ast.Call) and isinstance(_n.func, ast.Name)
+                  and _n.func.id == 'check' and _n.args
+                  and {'_verbatim', '_alive'} <= set(re.findall(
+                      r'len\((_\w+)\)', ast.get_source_segment(w1, _n.args[0]) or ''))
+                  for _n in ast.walk(ast.parse(w1)))
           and 'of the same claims survive as EXACT SENTENCES NOW, against {len(_alive)} of {len(_CLAIMS)} '
               'on the claim probe'
           in re.sub(r'\s+', ' ', re.sub(r"'\s+f?'", '', re.sub(r'\s+', ' ', w1))))
