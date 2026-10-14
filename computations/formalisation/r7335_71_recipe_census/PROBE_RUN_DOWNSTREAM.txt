@@ -1,0 +1,45 @@
+# r7335+71.3 — every file importing ShadowEngine, rebuilt against the changed engine (lake env lean <file>), all exit 0, no error, no sorry
+# 33 #print axioms lines, all [propext, Classical.choice, Quot.sound]; SecondSeatLTB.lean (70's tv_* copy) builds beside the engine's tw_* names
+== probes/CurvatureInstances.lean
+'ShadowProbe.open_frw_weyl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.gowdy_ds_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.gowdy_shear_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.horo_on_hyperboloid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.open_leaf_curv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.static_K_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.frw_K' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.frw_K_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.gowdy_tz_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sds_kretschmann' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.static_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sin2_facts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.static_ric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.static_riem2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sds_derivs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sds_contractions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row81_separator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row93_weyl_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row28_curves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row104_flat_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row104_nariai_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.nariai_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row110_petrov' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0 wall=307s
+== probes/SecondSeatFoliation.lean
+'ShadowProbe.leaf_K' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.leaf_shear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.leaf_umbilic_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0 wall=5s
+== probes/SecondSeatKS.lean
+'ShadowProbe.ks_stress' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0 wall=13s
+== probes/SecondSeatLTB.lean
+'ShadowProbe.ltb_Gtt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.ltb_bend' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0 wall=14s
+== probes/SecondSeatStatic.lean
+'ShadowProbe.static_Gtt_Grr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.static_AeqF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.static_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.static_tov' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0 wall=13s

@@ -165,3 +165,18 @@ foliation each claim is ABOUT, not in a chart that could be changed.* *No landed
 - The exclusions that STAND:
   - rows 35 and 83, which need the engine in dimension `D` and `5`;
   - rows 65, 66, 67, which are global claims on `S³`.
+
+## `r7335+71.3` — appended: 15 of the 18 reopened rows have landed
+
+*Appended, not revised. The status of each row lives in `../r7325_71_inventory/ROWS.tsv`, which names who closed it and
+where.*
+
+- ***Landed by 71:*** rows 45 (`r7327`), 93, 81, 28, 104 and 110 (`r7333+71`), and row 17 as a half. Row 17's open
+  half is SdS's `K` at the horizon point itself.
+- ***Landed by 70:*** rows 47, 102, 94, 48, 49, 51, 54 and 13 (`r7333+70`).
+- ***Still open:***
+  - rows 59, 62 and 72;
+  - the closed-slicing halves of rows 0, 2, 3, 4 and 5;
+  - SdS's static-leaf half of row 79.
+- ***The two-variable recipe is now in `ShadowEngine`*** (`tw_d1`/`tw_d2`/`twp_d1`/`twp_d2`, for any coordinate pair).
+  The closed `S³` slicing's `a(t)² sin²χ sin²θ` is the open profile that needs it; no row has used it yet.
