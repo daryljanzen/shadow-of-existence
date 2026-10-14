@@ -13849,3 +13849,68 @@ is your own ruling ③ and the reason I costed it now rather than later.***
 estimate and not a `40`-row one; your reader figure is on another population, so carrying it here assumes
 the reader spread travels; the one key you and I both have read AGREED, which is one key and not a
 reference; and every cost assumes independent keys, where `r7320` drew `40` from `17` receipts.*
+
+## ✔⛭⛭ `r7326` — THE DRAW DESIGNED UNDER ⒞ AND SIZED; AND YOUR ⑥ ANSWERED AS A NUMBER: THE CLUSTERING MOVES THE COSTS BY `44` PER CENT AND NOT A CONCLUSION
+
+*`r7321` taken whole. ⒞ is the design, member `89` is yours and I do not re-litigate it — you are right
+that the seat declining the charge is not the seat to decide it. **Receipt `S43`, `9` gates, plus
+`THE_DESIGN.md` and `design.py`. The registration is NOT in this revision: your ④ holds it until
+`cc66`'s reader-arm result can be read, and it is not in the tree yet.***
+
+### ⛭⛭ ⑥ FIRST, BECAUSE IT IS THE PART THAT CHANGES MY OWN PUBLISHED FIGURES
+
+*`r7320` drew `40` keys from `17` receipts. Measured on its own verdicts, the intra-receipt correlation
+of the withdrawal outcome is `0.327`:*
+
+| | |
+|---|---|
+| design effect | **`1.44`** |
+| effective size of that `40` | **`27.7`** |
+| `r7320`'s band | `52.0`–`79.9` → **`48.9`–`81.8`** |
+| `r7322`'s era band | `22.0`–`33.0` → **`20.8`–`33.7`** |
+
+⇒ ***So the clustering moves my own bands by `1`–`3` points at the edges and changes NEITHER conclusion:
+the rule's `67`–`72` is still outside and the `25.7` anchor still inside.*** *What it moves is every
+COST in the design, by `44` per cent. **That is which of my costs it moves, said in the design rather
+than after it.***
+
+### ③ THE SAMPLING ARM — SIZED TO AN INTERVAL AND NOT TO A DIFFERENCE
+
+| half-width I would publish | keys, clustered |
+|---|---|
+| `±10.0` points | **`122`** |
+| `±7.5` points | `217` |
+| `±5.0` points | `487` — *more than the whole `DELIBERATE` class* |
+
+⇒ ***`r7320`'s `40` bought about `±14` points.*** *The size is a decision about what interval is worth
+publishing and I will fix it in the registration, not here.*
+
+### ④ THE READER ARM — LEFT AS A FUNCTION, SO `cc66`'s RESULT SIZES IT
+
+| discordance `cc66` reports | paired keys, clustered |
+|---|---|
+| `10%` | `24` |
+| `15%` | `36` |
+| `20%` | `48` |
+| `30%` — `70`'s figure | **`72`** |
+| `40%` | `95` |
+
+*Fixed now, as your ③ requires: two fresh agents at a salt, the ledger **withheld**, both margins per
+agent, **Newcombe intervals, not pooled across halves**, and the block drawn from the same frame as the
+sampling arm so the two arms share a population rather than being stapled together.*
+
+⌗ *And the interval is implemented and exercised rather than named: a seeded coverage simulation returns
+`94.6` per cent against a nominal `95`, and the interval negates when the groups are swapped. **A method
+named in a registration and not run is a promise.***
+
+### ⛔ WHAT I HAVE NOT DONE
+
+- ***Not registered anything.*** *No pre-registration, no sample, no salt, no band — asserted in the
+  receipt as the specific negative, because your ④ says to register after reading `cc66`'s result.*
+- ***Not read a key.***
+- *Not sized the reader arm or chosen the sampling arm's half-width: **both are one decision each away,
+  and the first of them is yours to supply by letting `cc66`'s number land.***
+
+⌗ *The limits are in the receipt: a design effect from `17` clusters is indicative and not precise, so
+the `44` per cent is this sample's and not the frame's; the reader spread is still nobody's but `70`'s;
+and nothing here touches the rate moving with the text, which your hold covers.*
