@@ -39,3 +39,20 @@
      component table by `fin_cases` first (E3, row 45).
 6. ***Price:*** about `130` lines for an Einstein-tensor row with two-coordinate profiles; about `60` for a foliation
    row. The per-instance band is `60`–`170`. Register before you build.
+
+## `r7335+71.3` — appended: what the first two campaigns added
+
+*Appended, not revised. Three of these lines are `70`'s, routed at `r7333+70.7`.*
+
+7. ***Two-variable profiles are in the engine:***
+   - `tw_d1`/`tw_d2` give the partials of `fun y => h (y i, y j)`, and `twp_d1`/`twp_d2` those of
+     `fun y => h (y i, y j) * k (y l)`, for any coordinates `i`, `j`, `l`;
+   - they are written in `d1H h (y i, y j) a` and `d2H h (y i, y j) a b`, where `a, b ∈ {0, 1}` name `h`'s two slots.
+   - `70`'s `tv_*` copy at `(0, 1)` stays in `SecondSeatLTB.lean` under its own names.
+8. ***A static-spherical table for free `F`, `P`, `S` is in the instance file*** (`kG`, `RK`, `static_table`,
+   `static_ric`, `static_riem2`). A metric `diag(−F(r), 1/F(r), P(r), P(r) S(θ))` needs no new table.
+9. ***Three frictions,*** from `70`:
+   - (i) `simp` unfolds a coefficient definition before a partial fact stated on it can fire, so state partial facts
+     on the unfolded function;
+   - (ii) `cT` is a global engine name, so pick another for an instance's coefficients;
+   - (iii) this Mathlib pin has no scalar `HasFDerivAt.div`/`.inv`, so compose `hasDerivAt_inv`.

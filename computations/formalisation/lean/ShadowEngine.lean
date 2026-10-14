@@ -3834,6 +3834,108 @@ lemma pr_d2 (i j : Fin 4) (p u v : Fin 4 → ℝ) :
 
 end CoordRecipe
 
+/-! ### `r7335` — the two-variable recipe, from `70`'s (`r7333+70.5`, row 13), stated for ANY coordinate pair
+`i ≠ j` and any third coordinate `l`: first and second partials of `y ↦ h(yⁱ, yʲ)` and of `y ↦ h(yⁱ, yʲ) k(yˡ)`.
+`70`'s copy at `(0, 1)` and `2` stays in its instance file under its own names. -/
+
+section TwoVarRecipe
+
+/-- `y ↦ (yⁱ, yʲ)`. -/
+noncomputable def prP (i j : Fin 4) : (Fin 4 → ℝ) →L[ℝ] ℝ × ℝ :=
+  (ContinuousLinearMap.proj (R := ℝ) (φ := fun _ : Fin 4 => ℝ) i).prod (ContinuousLinearMap.proj j)
+
+lemma prP_apply (i j : Fin 4) (y : Fin 4 → ℝ) : prP i j y = (y i, y j) := rfl
+
+lemma prP_split (i j : Fin 4) (y : Fin 4 → ℝ) :
+    prP i j y = y i • ((1 : ℝ), (0 : ℝ)) + y j • ((0 : ℝ), (1 : ℝ)) := by
+  simp [prP_apply]
+
+/-- The two-variable partials of `h` at `q`: `∂ₐh` and `∂ₐ∂_bh`, `a, b ∈ {0, 1}` naming `h`'s two slots. -/
+noncomputable def eTV : Fin 2 → ℝ × ℝ := ![(1, 0), (0, 1)]
+noncomputable def d1H (h : ℝ × ℝ → ℝ) (q : ℝ × ℝ) (a : Fin 2) : ℝ := fderiv ℝ h q (eTV a)
+noncomputable def d2H (h : ℝ × ℝ → ℝ) (q : ℝ × ℝ) (a b : Fin 2) : ℝ := fderiv ℝ (fderiv ℝ h) q (eTV a) (eTV b)
+
+variable {h : ℝ × ℝ → ℝ} (hh : ContDiff ℝ ∞ h) (i j : Fin 4)
+
+include hh in
+lemma tw_has (y : Fin 4 → ℝ) :
+    HasFDerivAt (fun y : Fin 4 → ℝ => h (y i, y j)) ((fderiv ℝ h (prP i j y)).comp (prP i j)) y :=
+  ((hh.differentiable (by simp)) _).hasFDerivAt.comp y (prP i j).hasFDerivAt
+
+include hh in
+lemma tw_d1 (y v : Fin 4 → ℝ) :
+    fderiv ℝ (fun y : Fin 4 → ℝ => h (y i, y j)) y v = v i * d1H h (y i, y j) 0 + v j * d1H h (y i, y j) 1 := by
+  rw [(tw_has hh i j y).fderiv, ContinuousLinearMap.comp_apply, prP_split i j v, map_add, map_smul, map_smul]
+  simp [d1H, eTV, prP_apply]
+
+include hh in
+lemma tw_line (w q : ℝ × ℝ) : HasFDerivAt (fun x => fderiv ℝ h x w) ((fderiv ℝ (fderiv ℝ h) q).flip w) q := by
+  have hd := ((hh.fderiv_right (m := ∞) (by simp)).differentiable (by simp)) q
+  exact hd.hasFDerivAt.clm_apply (hasFDerivAt_const w q) |>.congr_fderiv
+    (by rw [ContinuousLinearMap.comp_zero, zero_add])
+
+include hh in
+lemma tw_d2 (p u v : Fin 4 → ℝ) :
+    fderiv ℝ (fderiv ℝ (fun y : Fin 4 → ℝ => h (y i, y j))) p u v
+      = u i * v i * d2H h (p i, p j) 0 0 + (u i * v j + u j * v i) * d2H h (p i, p j) 0 1
+        + u j * v j * d2H h (p i, p j) 1 1 := by
+  have hs := (hh.contDiffAt (x := (p i, p j))).isSymmSndFDerivAt (by simp)
+  have L0 := (tw_line hh ((1 : ℝ), (0 : ℝ)) (prP i j p)).comp p (prP i j).hasFDerivAt
+  have L1 := (tw_line hh ((0 : ℝ), (1 : ℝ)) (prP i j p)).comp p (prP i j).hasFDerivAt
+  rw [d2_of (F := fun y : Fin 4 → ℝ => h (y i, y j)) (hh.comp (prP i j).contDiff) (fun y => tw_d1 hh i j y v)
+    (((L0.const_mul (v i)).add (L1.const_mul (v j))).congr_of_eventuallyEq
+      (Eventually.of_forall fun y => by simp [d1H, eTV, prP_apply]))]
+  simp only [add_apply, smul_apply, ContinuousLinearMap.comp_apply,
+    ContinuousLinearMap.flip_apply, smul_eq_mul]
+  rw [prP_split i j u]
+  simp only [map_add, map_smul, add_apply, smul_apply, smul_eq_mul]
+  simp only [d2H, eTV, prP_apply, Matrix.cons_val_zero, Matrix.cons_val_one]
+  rw [hs ((0 : ℝ), (1 : ℝ)) ((1 : ℝ), (0 : ℝ))]
+  ring
+
+variable {k : ℝ → ℝ} (hk : ContDiff ℝ ∞ k) (l : Fin 4)
+
+include hh hk in
+lemma twp_d1 (y v : Fin 4 → ℝ) :
+    fderiv ℝ (fun y : Fin 4 → ℝ => h (y i, y j) * k (y l)) y v
+      = (v i * d1H h (y i, y j) 0 + v j * d1H h (y i, y j) 1) * k (y l) + h (y i, y j) * (deriv k (y l) * v l) := by
+  have H : HasFDerivAt (fun y : Fin 4 → ℝ => h (y i, y j) * k (y l)) _ y :=
+    (tw_has hh i j y).mul (fd_coord_i l ((hk.differentiable (by simp)) _))
+  rw [H.fderiv]
+  simp only [add_apply, smul_apply, ContinuousLinearMap.comp_apply,
+    smul_eq_mul, ContinuousLinearMap.proj_apply]
+  rw [prP_split i j v, map_add, map_smul, map_smul]
+  simp [d1H, eTV, prP_apply]; ring
+
+include hh hk in
+lemma twp_d2 (p u v : Fin 4 → ℝ) :
+    fderiv ℝ (fderiv ℝ (fun y : Fin 4 → ℝ => h (y i, y j) * k (y l))) p u v
+      = (u i * v i * d2H h (p i, p j) 0 0 + (u i * v j + u j * v i) * d2H h (p i, p j) 0 1
+          + u j * v j * d2H h (p i, p j) 1 1) * k (p l)
+        + (v i * d1H h (p i, p j) 0 + v j * d1H h (p i, p j) 1) * (deriv k (p l) * u l)
+        + (u i * d1H h (p i, p j) 0 + u j * d1H h (p i, p j) 1) * (deriv k (p l) * v l)
+        + h (p i, p j) * (deriv (deriv k) (p l) * u l * v l) := by
+  have hs := (hh.contDiffAt (x := (p i, p j))).isSymmSndFDerivAt (by simp)
+  have L0 := (tw_line hh ((1 : ℝ), (0 : ℝ)) (prP i j p)).comp p (prP i j).hasFDerivAt
+  have L1 := (tw_line hh ((0 : ℝ), (1 : ℝ)) (prP i j p)).comp p (prP i j).hasFDerivAt
+  have K0 := fd_coord_i (x := p) l ((hk.differentiable (by simp)) (p l))
+  have K1 := fd_coord_i (x := p) l (((contDiff_infty_iff_deriv.1 hk).2.differentiable (by simp)) (p l))
+  have H := tw_has hh i j p
+  rw [d2_of (F := fun y : Fin 4 → ℝ => h (y i, y j) * k (y l))
+    ((hh.comp (prP i j).contDiff).mul (hk.comp (contDiff_apply ℝ ℝ l))) (fun y => twp_d1 hh i j hk l y v)
+    (((((L0.const_mul (v i)).add (L1.const_mul (v j))).mul K0).add (H.mul (K1.mul_const (v l)))).congr_of_eventuallyEq
+      (Eventually.of_forall fun y => by simp [d1H, eTV, prP_apply]))]
+  simp only [add_apply, smul_apply, ContinuousLinearMap.comp_apply,
+    ContinuousLinearMap.flip_apply, smul_eq_mul, ContinuousLinearMap.proj_apply, Pi.add_apply,
+    Function.comp_apply]
+  rw [prP_split i j u]
+  simp only [map_add, map_smul, add_apply, smul_apply, smul_eq_mul]
+  simp only [d1H, d2H, eTV, prP_apply, Matrix.cons_val_zero, Matrix.cons_val_one]
+  rw [hs ((0 : ℝ), (1 : ℝ)) ((1 : ℝ), (0 : ℝ))]
+  ring
+
+end TwoVarRecipe
+
 
 end ShadowProbe
 
@@ -3958,3 +4060,7 @@ end ShadowProbe
 #print axioms ShadowProbe.exists_global_profile
 #print axioms ShadowProbe.exists_global_family
 #print axioms ShadowProbe.pr_d2
+#print axioms ShadowProbe.tw_d1
+#print axioms ShadowProbe.tw_d2
+#print axioms ShadowProbe.twp_d1
+#print axioms ShadowProbe.twp_d2
