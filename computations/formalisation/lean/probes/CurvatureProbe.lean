@@ -2305,6 +2305,146 @@ theorem unruh_ds_limits {α : ℝ} (hα : 0 < α) (τ : ℝ) :
 
 end SweepB3
 
+/-! ## `r7315`, B4 — receipt 34: for a diagonal 2D metric `e(r) dr² + h(r) dφ²`, THE Levi-Civita connection's
+curvature gives `g(R(∂_r, ∂_φ)∂_φ, ∂_r) = −h″/2 + e′h′/(4e) + h′²/(4h)`; on the slice `dr²/f + r² dφ²` the
+Gaussian curvature is `K_G = −f′/(2r)` -/
+
+section SweepB4
+
+set_option synthInstance.maxHeartbeats 400000
+
+/-- The diagonal form `e(r) dr² + h(r) dφ²` on `ℝ²`, in the chart `p = (r, φ)`. -/
+noncomputable def diagF (e h : ℝ → ℝ) (p : ℝ × ℝ) : ℝ × ℝ →L[ℝ] ℝ × ℝ →L[ℝ] ℝ :=
+  e p.1 • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.fst ℝ ℝ ℝ) (ContinuousLinearMap.fst ℝ ℝ ℝ)
+    + h p.1 • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.snd ℝ ℝ ℝ)
+      (ContinuousLinearMap.snd ℝ ℝ ℝ)
+
+lemma diagF_apply (e h : ℝ → ℝ) (p a b : ℝ × ℝ) : diagF e h p a b = e p.1 * (a.1 * b.1) + h p.1 * (a.2 * b.2) := by
+  simp [diagF]
+
+lemma diagF_symm (e h : ℝ → ℝ) (p a b : ℝ × ℝ) : diagF e h p a b = diagF e h p b a := by
+  rw [diagF_apply, diagF_apply]; ring
+
+lemma diagF_nondeg {e h : ℝ → ℝ} (he : ∀ s, e s ≠ 0) (hh : ∀ s, h s ≠ 0) (p a : ℝ × ℝ)
+    (H : ∀ b, diagF e h p a b = 0) : a = 0 := by
+  have h1 := H ((1 : ℝ), (0 : ℝ)); have h2 := H ((0 : ℝ), (1 : ℝ))
+  simp only [diagF_apply, mul_one, mul_zero, add_zero, zero_add] at h1 h2
+  exact Prod.ext ((mul_eq_zero.1 h1).resolve_left (he _)) ((mul_eq_zero.1 h2).resolve_left (hh _))
+
+lemma diagF_smooth {e h : ℝ → ℝ} (he : ContDiff ℝ ∞ e) (hh : ContDiff ℝ ∞ h) : ContDiff ℝ ∞ (diagF e h) := by
+  rw [contDiff_clm_apply_iff]; intro a; rw [contDiff_clm_apply_iff]; intro b
+  simp only [diagF_apply]
+  have h1 : ContDiff ℝ ∞ fun p : ℝ × ℝ => e p.1 := he.comp contDiff_fst
+  have h2 : ContDiff ℝ ∞ fun p : ℝ × ℝ => h p.1 := hh.comp contDiff_fst
+  fun_prop
+
+/-- A function of `r` alone, differentiated along `c`. -/
+lemma fderiv_of_fst {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] {ψ : ℝ → F} {p : ℝ × ℝ}
+    (hψ : DifferentiableAt ℝ ψ p.1) (c : ℝ × ℝ) : fderiv ℝ (fun y : ℝ × ℝ => ψ y.1) p c = c.1 • deriv ψ p.1 := by
+  have H : HasFDerivAt (fun y : ℝ × ℝ => ψ y.1) ((fderiv ℝ ψ p.1).comp (ContinuousLinearMap.fst ℝ ℝ ℝ)) p :=
+    hψ.hasFDerivAt.comp p hasFDerivAt_fst
+  rw [H.fderiv]
+  calc (fderiv ℝ ψ p.1).comp (ContinuousLinearMap.fst ℝ ℝ ℝ) c = fderiv ℝ ψ p.1 (c.1 • (1 : ℝ)) := by simp
+    _ = c.1 • deriv ψ p.1 := by rw [map_smul]; rfl
+
+/-- Two-slot evaluation of the derivative of a bilinear-map field. -/
+lemma fderiv_apply₂ {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
+    {Φ : ℝ × ℝ → (ℝ × ℝ →L[ℝ] ℝ × ℝ →L[ℝ] F)} {p : ℝ × ℝ} (hΦ : DifferentiableAt ℝ Φ p) (c a b : ℝ × ℝ) :
+    fderiv ℝ Φ p c a b = fderiv ℝ (fun y => Φ y a b) p c := by
+  rw [fderiv_clm_apply (hΦ.clm_apply (differentiableAt_const a)) (differentiableAt_const b),
+    fderiv_clm_apply hΦ (differentiableAt_const a)]
+  simp
+
+/-- The explicit Christoffel form of `e dr² + h dφ²`. -/
+noncomputable def gD (e h : ℝ → ℝ) (s : ℝ) (a b : ℝ × ℝ) : ℝ × ℝ :=
+  (deriv e s / (2 * e s) * (a.1 * b.1) - deriv h s / (2 * e s) * (a.2 * b.2),
+   deriv h s / (2 * h s) * (a.1 * b.2 + a.2 * b.1))
+
+variable {e h : ℝ → ℝ} (he : ∀ s, e s ≠ 0) (hh : ∀ s, h s ≠ 0) (hes : ContDiff ℝ ∞ e) (hhs : ContDiff ℝ ∞ h)
+include he hh hes hhs
+
+/-- **B4, the Christoffel form:** `lcGam` of `e dr² + h dφ²` is `gD`. -/
+lemma lcGam_diag (p a b : ℝ × ℝ) : lcGam (diagF e h) p a b = gD e h p.1 a b := by
+  have hn := diagF_nondeg he hh
+  have inv := flat_isInvertible (diagF e h) hn p
+  have hD : ∀ c a b : ℝ × ℝ, fderiv ℝ (diagF e h) p c a b
+      = c.1 * (deriv e p.1 * (a.1 * b.1) + deriv h p.1 * (a.2 * b.2)) := fun c a b => by
+    rw [fderiv_apply₂ ((diagF_smooth hes hhs).differentiable (by simp) p)]
+    have : (fun y => diagF e h y a b) = fun y : ℝ × ℝ => e y.1 * (a.1 * b.1) + h y.1 * (a.2 * b.2) :=
+      funext fun y => diagF_apply e h y a b
+    rw [this, fderiv_of_fst (F := ℝ) (ψ := fun s => e s * (a.1 * b.1) + h s * (a.2 * b.2))
+      ((((hes.differentiable (by simp)) _).mul_const _).add (((hhs.differentiable (by simp)) _).mul_const _))]
+    have hd : HasDerivAt (fun s => e s * (a.1 * b.1) + h s * (a.2 * b.2))
+        (deriv e p.1 * (a.1 * b.1) + deriv h p.1 * (a.2 * b.2)) p.1 :=
+      HasDerivAt.add (((hes.differentiable (by simp)) p.1).hasDerivAt.mul_const (a.1 * b.1))
+        (((hhs.differentiable (by simp)) p.1).hasDerivAt.mul_const (a.2 * b.2))
+    rw [hd.deriv, smul_eq_mul]
+  have hK : koszK (diagF e h) p a b = diagF e h p (gD e h p.1 a b) := by
+    refine ContinuousLinearMap.ext fun v => ?_
+    rw [koszK_apply, hD, hD, hD, diagF_apply]
+    simp only [gD]
+    have := he p.1; have := hh p.1
+    field_simp; ring
+  rw [lcGam_apply, hK, inv.inverse_apply_self]
+
+/-- `gD` differentiated in `r`. -/
+lemma gD_hasDerivAt (s : ℝ) (a b : ℝ × ℝ) : HasDerivAt (fun t => gD e h t a b)
+    (((deriv (deriv e) s * (2 * e s) - deriv e s * (2 * deriv e s)) / (2 * e s) ^ 2 * (a.1 * b.1)
+        - (deriv (deriv h) s * (2 * e s) - deriv h s * (2 * deriv e s)) / (2 * e s) ^ 2 * (a.2 * b.2),
+      (deriv (deriv h) s * (2 * h s) - deriv h s * (2 * deriv h s)) / (2 * h s) ^ 2 * (a.1 * b.2 + a.2 * b.1))) s := by
+  have hE := ((hes.differentiable (by simp)) s).hasDerivAt
+  have hH := ((hhs.differentiable (by simp)) s).hasDerivAt
+  have hE' := (((contDiff_infty_iff_deriv.1 hes).2.differentiable (by simp)) s).hasDerivAt
+  have hH' := (((contDiff_infty_iff_deriv.1 hhs).2.differentiable (by simp)) s).hasDerivAt
+  have e2 : 2 * e s ≠ 0 := mul_ne_zero two_ne_zero (he s)
+  have h2 : 2 * h s ≠ 0 := mul_ne_zero two_ne_zero (hh s)
+  exact HasDerivAt.prodMk
+    (HasDerivAt.sub ((hE'.div (hE.const_mul 2) e2).mul_const _) ((hH'.div (hE.const_mul 2) e2).mul_const _))
+    ((hH'.div (hH.const_mul 2) h2).mul_const _)
+
+/-- **B4.** `g(R(∂_r, ∂_φ)∂_φ, ∂_r) = −h″/2 + e′h′/(4e) + h′²/(4h)` for THE Levi-Civita connection. -/
+theorem diag_curv (p : ℝ × ℝ) :
+    diagF e h p (curv (lcConn (ℝ × ℝ) (ndOf (diagF e h) (diagF_symm e h) (diagF_nondeg he hh)
+        ((diagF_smooth hes hhs).differentiable (by simp))))
+      (fun _ => ((1 : ℝ), (0 : ℝ))) (fun _ => ((0 : ℝ), (1 : ℝ))) (fun _ => ((0 : ℝ), (1 : ℝ))) p) ((1 : ℝ), (0 : ℝ))
+      = -(deriv (deriv h) p.1) / 2 + deriv e p.1 * deriv h p.1 / (4 * e p.1)
+        + deriv h p.1 ^ 2 / (4 * h p.1) := by
+  have hn := diagF_nondeg he hh
+  have hGd : Differentiable ℝ (lcGam (diagF e h)) := (lcGam_smooth hn (diagF_smooth hes hhs)).differentiable (by simp)
+  have hfd : ∀ a b c : ℝ × ℝ, fderiv ℝ (fun y => lcGam (diagF e h) y a b) p c
+      = c.1 • deriv (fun t => gD e h t a b) p.1 := fun a b c => by
+    rw [show (fun y => lcGam (diagF e h) y a b) = fun y : ℝ × ℝ => gD e h y.1 a b from
+      funext fun y => lcGam_diag he hh hes hhs y a b]
+    exact fderiv_of_fst (gD_hasDerivAt he hh hes hhs p.1 a b).differentiableAt c
+  rw [curv_model _ (lcGam (diagF e h)) (fun x w u => lcConn_const (diagF_symm e h) hn _ x w u) hGd,
+    fderiv_apply₂ (hGd p), fderiv_apply₂ (hGd p), hfd, hfd, (gD_hasDerivAt he hh hes hhs _ _ _).deriv]
+  simp only [lcGam_diag he hh hes hhs, gD, diagF_apply, zero_smul, one_smul, sub_zero, Prod.fst_add, Prod.fst_sub,
+    Prod.snd_add, Prod.snd_sub]
+  have := he p.1; have := hh p.1
+  field_simp
+  ring
+
+open Filter Topology in
+/-- **B4, receipt 34.** On the slice `dr²/f + r² dφ²` (profiles equal to `1/f`, `r²` near `r`), the Gaussian
+curvature `K_G = g(R(∂_r, ∂_φ)∂_φ, ∂_r)/(g_rr g_φφ)` of THE Levi-Civita connection is `−f′(r)/(2r)`. -/
+theorem slice_gauss {f : ℝ → ℝ} {p : ℝ × ℝ} (hr : p.1 ≠ 0) (hf : f p.1 ≠ 0) (hfd : DifferentiableAt ℝ f p.1)
+    (he1 : e =ᶠ[𝓝 p.1] fun s => (f s)⁻¹) (hh1 : h =ᶠ[𝓝 p.1] fun s => s ^ 2) :
+    diagF e h p (curv (lcConn (ℝ × ℝ) (ndOf (diagF e h) (diagF_symm e h) (diagF_nondeg he hh)
+        ((diagF_smooth hes hhs).differentiable (by simp))))
+      (fun _ => ((1 : ℝ), (0 : ℝ))) (fun _ => ((0 : ℝ), (1 : ℝ))) (fun _ => ((0 : ℝ), (1 : ℝ))) p) ((1 : ℝ), (0 : ℝ))
+      / (e p.1 * h p.1) = -deriv f p.1 / (2 * p.1) := by
+  have e1 : deriv e p.1 = -deriv f p.1 / f p.1 ^ 2 := by rw [he1.deriv_eq]; exact (hfd.hasDerivAt.inv hf).deriv
+  have h1 : deriv h p.1 = 2 * p.1 := by rw [hh1.deriv_eq, (hasDerivAt_pow 2 p.1).deriv]; norm_num
+  have h2 : deriv (deriv h) p.1 = 2 := by
+    have : deriv (fun s : ℝ => s ^ 2) = fun s => 2 * s :=
+      funext fun s => by rw [(hasDerivAt_pow 2 s).deriv]; norm_num
+    rw [hh1.deriv.deriv_eq, this, ((hasDerivAt_id' p.1).const_mul 2).deriv, mul_one]
+  rw [diag_curv he hh hes hhs, e1, h1, h2, he1.eq_of_nhds, hh1.eq_of_nhds]
+  field_simp
+  ring
+
+end SweepB4
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2384,3 +2524,6 @@ end ShadowProbe
 #print axioms ShadowProbe.ds_horizon_iff
 #print axioms ShadowProbe.ds_surface_gravity
 #print axioms ShadowProbe.unruh_ds_limits
+#print axioms ShadowProbe.lcGam_diag
+#print axioms ShadowProbe.diag_curv
+#print axioms ShadowProbe.slice_gauss
