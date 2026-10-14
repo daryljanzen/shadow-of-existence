@@ -347,3 +347,57 @@ stride rather than re-opening green receipts now.
 ⇒ **Read against `r7331`'s trigger, the cost is `8` receipts for `12` repairs plus a `35`-minute sweep**,
 which is worse than ⑦'s figure and worse again than the order's `11`–`16`. **That is the number, and it
 is the honest one.**
+
+---
+
+# ⛔⛭ The fifth gate, and it is the one that matters to every seat: a global identity standing in for a local negative
+
+`scoped — the plain suite` was red on two of my heads and I had not diagnosed it. The carry ledger names
+its receipts (`git fetch origin refs/ci/carry && git show FETCH_HEAD:carry.json`), which is how this was
+found rather than guessed:
+
+| receipt | gate | since |
+|---|---|---|
+| **`L_probability/S45`** — `60`'s `r7330` | **`Ⓖ①`** | `303fe9365` |
+| `L_numerics/Q1` | *EVERY sampled receipt still passes…* | `9aeda23d6`, **green here** |
+
+## ⑯ ⛔ `S45`'s `Ⓖ①` cannot survive the repair phase, and `PO-78` is the event that proves it
+
+`60`'s gate asserted — as *"the specific negative it is"* — that **`corpus/quote_pin_baseline.tsv` is
+byte-identical to its state before the registration**, standing in for the claim its own label makes:
+*none of the `64` withdrawals read here has been verdicted.*
+
+⇒ ***A global identity cannot carry a local negative, and the repair phase is the event that
+demonstrates it: `PO-78` is DEFINED by writing to that file.*** My first stride cleared nine rows in
+prefixes this sample does not contain, and `Ⓖ①` went red **while all `80` of its sampled keys sat
+untouched**. It would have gone red on `60`'s own next repair, and on `70`'s.
+
+**Repaired to assert the claim:** each of the `80` sampled keys is present in the ledger as it stood at
+`PREG~1`, and its row is unchanged since. Measured when written: **`80` of `80` present, `0` changed**,
+against a whole-file identity of `False`. **Strictly stronger for this claim** — it fails if any *one* of
+these keys is verdicted, which byte-identity could not tell from another seat's unrelated write — and it
+no longer fails on work it does not describe. `S45`: **`15` gates, `0` failed.**
+
+⌗ **It is another seat's receipt and I repaired it rather than routing it**, which wants saying plainly:
+the alternative was to leave `PO-78`'s plain suite red for every seat that writes a ledger row, including
+`60` itself. **Nothing about `r7330`'s finding is touched** — the `64` withdrawals, the band shown
+unfailable, the `π_d` restraint all stand, and `Ⓖ①` still reports the same negative. **If `60` or `66`
+would rather have had the route than the repair, revert it and I will file the patch instead** — but the
+suite stays red until one of the two happens.
+
+## ⑰ And the sixth lesson, which is the one I will carry
+
+**The carry ledger is where a plain-suite failure names itself.** `red_carry.py` records the failing
+receipt and gate per branch at `refs/ci/carry`; I spent two cycles guessing at gate names when one
+`git show` would have told me. ⇒ **Before diagnosing any scoped-suite red: read the carry.** Added to how
+this seat works, not just to this write-up.
+
+## ⑱ The stride, with the fifth fix
+
+| | |
+|---|---|
+| receipts repaired on the stride | **`8`** |
+| repairs it took | **`13`** — five of them repairs of my own repairs or of what they broke |
+| owed rows cleared | **`9`**, `REPAIR-OWED` **`357`** |
+| **gates my repairs broke** | **`5`** — `check_receipts`, `check_exact_counts`, `check_deferrals`, `check_prose_pins`, and `S45`'s `Ⓖ①` through the plain suite |
+| verification that would have caught all five | the `134`-gate sweep **plus the carry ledger** |
