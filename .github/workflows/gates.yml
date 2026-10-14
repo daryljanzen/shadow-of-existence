@@ -141,17 +141,18 @@ jobs:
     #   tree, which is the same class of defect as a cap that files a receipt as a failure. ***
     #   ⌗ *75 is the worst case plus a quarter, on the rule the LONG declarations use: the measured
     #   figure plus headroom, not a round number chosen to feel safe.*
-    # ⛔ r7309 (66), on node 70's measurement: THE SUITE HAS OUTGROWN THAT BUDGET.  Of the last ten
-    #   scheduled runs, SEVEN were cancelled, every one at 75-76 minutes -- this line -- and it
-    #   completed on 2 of the last 7 days, its successes taking 39-73 minutes.  ** And a cancelled
-    #   run records NOTHING, which is how seven of them passed unread: the same class as a crash that
-    #   reports nothing and a cap that files a receipt as a failure. **
-    #   ⇒ *120 IS A MEASUREMENT VALUE AND NOT A BUDGET.*  r6959's own rule is worst case plus a
-    #   quarter from a MEASURED figure, and there is no measured worst while the job dies on the
-    #   clock.  This raises the ceiling high enough for one completed run to produce that figure;
-    #   the budget is then set from it and this comment replaced.  ** Do not read 120 as the
-    #   considered number -- it is the ceiling that lets the number exist. **
-    timeout-minutes: 120
+    # ⛔ r7309 (66), on node 70's measurement: the suite outgrew 75.  Seven of ten scheduled runs were
+    #   cancelled at 75-76 minutes, and a cancelled run records nothing.  66 raised the ceiling to 120 as a
+    #   MEASUREMENT VALUE, so that one completed run could produce a figure.
+    # ⌗ r7321+70.11 (70): THE FIGURE, AND THE BUDGET SET FROM IT ON r6959's RULE.  The first scheduled run
+    #   under 120 (run 38534751987, 2026-10-14, at a9e83881) COMPLETED: the heavy job took 100.9 minutes
+    #   (08:23:24-10:04:18), of which the receipt run took 97.8 minutes and check_receipts_run 1.9.  It
+    #   ended red on the tree, not on the clock -- the guard working.  The worst measured figure is
+    #   100.9 (the earlier successes were 39-73); plus a quarter is 126.1, hence 127.
+    #   ** One completed run is one sample of a suite that grows.  If a run is cut off at 127, the
+    #   always() step below still records RUN_RESULT, and the next budget is set from that record --
+    #   never by raising this number without a measured figure. **
+    timeout-minutes: 127
     steps:
       # ⛔ r6977+70.1 (70): FULL HISTORY.  With the default depth-1 checkout every receipt that reads an
       #   earlier commit (`git show <sha>^`) fails here and passes in any real clone -- the first dispatch
