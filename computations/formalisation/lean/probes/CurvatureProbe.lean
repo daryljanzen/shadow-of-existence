@@ -2868,6 +2868,176 @@ theorem sds_photon_lyapunov {M α : ℝ} (hM : M ≠ 0) :
 
 end SweepB10
 
+/-! ## `r7315`, B11 — receipt 78: the pp-wave `2 du dv + H du² + dx² + dy²` for ANY smooth `H(u, x, y)`. THE
+connection's Ricci contraction is `Ric(a, b) = −½(H_xx + H_yy) a⁰ b⁰`; for `H = h₊(x²−y²) + 2hₓxy` it VANISHES
+for any `h₊(u), hₓ(u)`, while `g(R(∂_u, ∂_x)∂_u, ∂_x) = ½H_xx = h₊ ≠ 0`; a trace part `h(x²+y²)` gives
+`Ric(∂_u, ∂_u) = −2h ≠ 0` (the control) -/
+
+section SweepB11
+
+set_option synthInstance.maxHeartbeats 400000
+
+/-- The pp-wave form, any profile `H`. -/
+noncomputable def ppF (H : (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) : (Fin 4 → ℝ) →L[ℝ] (Fin 4 → ℝ) →L[ℝ] ℝ :=
+  (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 0) (ContinuousLinearMap.proj 1)
+  + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 1) (ContinuousLinearMap.proj 0)
+  + H p • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 0) (ContinuousLinearMap.proj 0)
+  + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 2) (ContinuousLinearMap.proj 2)
+  + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 3) (ContinuousLinearMap.proj 3)
+
+lemma pwF_eq_ppF (hp hx : ℝ → ℝ) : pwF hp hx = ppF (Hpw hp hx) := rfl
+
+lemma ppF_apply (H : (Fin 4 → ℝ) → ℝ) (p a b : Fin 4 → ℝ) :
+    ppF H p a b = a 0 * b 1 + a 1 * b 0 + H p * (a 0 * b 0) + a 2 * b 2 + a 3 * b 3 := by
+  simp [ppF]
+
+lemma ppF_symm (H : (Fin 4 → ℝ) → ℝ) (p a b : Fin 4 → ℝ) : ppF H p a b = ppF H p b a := by
+  rw [ppF_apply, ppF_apply]; ring
+
+lemma ppF_nondeg (H : (Fin 4 → ℝ) → ℝ) (p a : Fin 4 → ℝ) (h : ∀ b, ppF H p a b = 0) : a = 0 := by
+  have e0 := h (Pi.single 1 1); have e1 := h (Pi.single 0 1)
+  have e2 := h (Pi.single 2 1); have e3 := h (Pi.single 3 1)
+  simp [ppF_apply] at e0 e1 e2 e3
+  funext i; fin_cases i <;> simp_all
+
+/-- `∂ⱼH` and `∂ᵢ∂ⱼH`. -/
+noncomputable def dH (H : (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) (j : Fin 4) : ℝ := fderiv ℝ H p (Pi.single j 1)
+noncomputable def ddH (H : (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) (i j : Fin 4) : ℝ :=
+  fderiv ℝ (fderiv ℝ H) p (Pi.single i 1) (Pi.single j 1)
+
+/-- The pp-wave Christoffel form. -/
+noncomputable def gPP (H : (Fin 4 → ℝ) → ℝ) (p a b : Fin 4 → ℝ) : Fin 4 → ℝ :=
+  ![0, (dH H p 0 * (a 0 * b 0) + dH H p 2 * (a 0 * b 2 + a 2 * b 0) + dH H p 3 * (a 0 * b 3 + a 3 * b 0)) / 2,
+    -(dH H p 2 * (a 0 * b 0)) / 2, -(dH H p 3 * (a 0 * b 0)) / 2]
+
+variable {H : (Fin 4 → ℝ) → ℝ} (hH : ContDiff ℝ ∞ H) (hv : ∀ p, dH H p 1 = 0)
+include hH
+
+lemma ppF_smooth : ContDiff ℝ ∞ (ppF H) := by
+  rw [contDiff_clm_apply_iff]; intro a; rw [contDiff_clm_apply_iff]; intro b
+  simp only [ppF_apply]; fun_prop
+
+include hv
+
+lemma dH_lin (p a : Fin 4 → ℝ) : fderiv ℝ H p a = a 0 * dH H p 0 + a 2 * dH H p 2 + a 3 * dH H p 3 := by
+  have e : a = ∑ j, a j • (Pi.single j 1 : Fin 4 → ℝ) := by ext i; simp [Pi.single_apply]
+  have h1 := hv p; simp only [dH] at h1 ⊢
+  conv_lhs => rw [e]
+  simp [Fin.sum_univ_four, h1]
+
+/-- **B11, the Christoffel form:** `lcGam` of the pp-wave is `gPP`. -/
+lemma lcGam_pp (p a b : Fin 4 → ℝ) : lcGam (ppF H) p a b = gPP H p a b := by
+  have inv := flat_isInvertible (ppF H) (ppF_nondeg H) p
+  have hD : ∀ e a b : Fin 4 → ℝ, fderiv ℝ (ppF H) p e a b = fderiv ℝ H p e * (a 0 * b 0) := fun e a b => by
+    rw [fderiv_apply₂' ((ppF_smooth hH).differentiable (by simp) p),
+      show (fun y => ppF H y a b) = fun y => a 0 * b 1 + a 1 * b 0 + H y * (a 0 * b 0) + a 2 * b 2 + a 3 * b 3 from
+        funext fun y => ppF_apply H y a b]
+    have h := ((((hH.differentiable (by simp)) p).hasFDerivAt.mul_const (a 0 * b 0)).const_add
+      (a 0 * b 1 + a 1 * b 0)).add_const (a 2 * b 2) |>.add_const (a 3 * b 3)
+    rw [h.fderiv]; simp; ring
+  have hK : koszK (ppF H) p a b = ppF H p (gPP H p a b) := by
+    refine ContinuousLinearMap.ext fun w => ?_
+    rw [koszK_apply, hD, hD, hD, dH_lin hH hv, dH_lin hH hv, dH_lin hH hv, ppF_apply]
+    simp [gPP]; ring
+  rw [lcGam_apply, hK, inv.inverse_apply_self]
+
+omit hv in
+lemma dH_hasFDerivAt (p : Fin 4 → ℝ) (j : Fin 4) :
+    HasFDerivAt (fun y => dH H y j) ((fderiv ℝ (fderiv ℝ H) p).flip (Pi.single j 1)) p := by
+  have h2 := (hH.fderiv_right (m := ∞) (by simp)).differentiable (by simp) p
+  exact (h2.hasFDerivAt.clm_apply (hasFDerivAt_const (Pi.single j 1 : Fin 4 → ℝ) p)).congr_fderiv (by ext; simp)
+
+omit hv in
+/-- `gPP` differentiated, with `Dⱼ e = ∂_e ∂ⱼ H`. -/
+lemma gPP_deriv (p a b : Fin 4 → ℝ) : DifferentiableAt ℝ (fun y => gPP H y a b) p ∧ ∀ e : Fin 4 → ℝ,
+    fderiv ℝ (fun y => gPP H y a b) p e = ![0, (fderiv ℝ (fderiv ℝ H) p e (Pi.single 0 1) * (a 0 * b 0)
+      + fderiv ℝ (fderiv ℝ H) p e (Pi.single 2 1) * (a 0 * b 2 + a 2 * b 0)
+      + fderiv ℝ (fderiv ℝ H) p e (Pi.single 3 1) * (a 0 * b 3 + a 3 * b 0)) / 2,
+      -(fderiv ℝ (fderiv ℝ H) p e (Pi.single 2 1) * (a 0 * b 0)) / 2,
+      -(fderiv ℝ (fderiv ℝ H) p e (Pi.single 3 1) * (a 0 * b 0)) / 2] := by
+  have k0 : HasFDerivAt (fun y => gPP H y a b 0) (0 : (Fin 4 → ℝ) →L[ℝ] ℝ) p := hasFDerivAt_const (0 : ℝ) p
+  have k1 : HasFDerivAt (fun y => gPP H y a b 1) _ p := HasFDerivAt.mul_const (HasFDerivAt.add (HasFDerivAt.add
+    ((dH_hasFDerivAt hH p 0).mul_const (a 0 * b 0)) ((dH_hasFDerivAt hH p 2).mul_const (a 0 * b 2 + a 2 * b 0)))
+    ((dH_hasFDerivAt hH p 3).mul_const (a 0 * b 3 + a 3 * b 0))) (2⁻¹ : ℝ)
+  have k2 : HasFDerivAt (fun y => gPP H y a b 2) _ p :=
+    HasFDerivAt.mul_const (HasFDerivAt.neg ((dH_hasFDerivAt hH p 2).mul_const (a 0 * b 0))) (2⁻¹ : ℝ)
+  have k3 : HasFDerivAt (fun y => gPP H y a b 3) _ p :=
+    HasFDerivAt.mul_const (HasFDerivAt.neg ((dH_hasFDerivAt hH p 3).mul_const (a 0 * b 0))) (2⁻¹ : ℝ)
+  have hd : DifferentiableAt ℝ (fun y => gPP H y a b) p := by
+    refine differentiableAt_pi.2 fun i => ?_
+    fin_cases i
+    exacts [k0.differentiableAt, k1.differentiableAt, k2.differentiableAt, k3.differentiableAt]
+  refine ⟨hd, fun e => funext fun i => ?_⟩
+  have D : ∀ j, fderiv ℝ (fun y => gPP H y a b) p e j = fderiv ℝ (fun y => gPP H y a b j) p e := fun j => by
+    rw [_root_.fderiv_apply hd j]; rfl
+  have D0 := (D 0).trans (by rw [k0.fderiv])
+  have D1 := (D 1).trans (by rw [k1.fderiv])
+  have D2 := (D 2).trans (by rw [k2.fderiv])
+  have D3 := (D 3).trans (by rw [k3.fderiv])
+  fin_cases i
+  · exact D0
+  · exact D1.trans (by simp; ring)
+  · exact D2.trans (by simp; ring)
+  · exact D3.trans (by simp; ring)
+
+/-- **B11.** THE connection's Ricci contraction on the pp-wave: `Σᵢ (R(eᵢ, a)b)ⁱ = −½(H_xx + H_yy) a⁰ b⁰`. -/
+theorem pp_ricci (p a b : Fin 4 → ℝ) :
+    ∑ i, curv (lcConn (Fin 4 → ℝ) (ndOf (ppF H) (ppF_symm H) (ppF_nondeg H) ((ppF_smooth hH).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => a) (fun _ => b) p i
+      = -(ddH H p 2 2 + ddH H p 3 3) / 2 * (a 0 * b 0) := by
+  have hGd : Differentiable ℝ (lcGam (ppF H)) :=
+    (lcGam_smooth (ppF_nondeg H) (ppF_smooth hH)).differentiable (by simp)
+  have hF : ∀ e c d, fderiv ℝ (lcGam (ppF H)) p e c d = fderiv ℝ (fun y => gPP H y c d) p e := fun e c d => by
+    rw [fderiv_apply₂' (hGd p), show (fun y => lcGam (ppF H) y c d) = fun y => gPP H y c d from
+      funext fun y => lcGam_pp hH hv y c d]
+  have hsym : ∀ j : Fin 4, fderiv ℝ (fderiv ℝ H) p (Pi.single 1 1) (Pi.single j 1) = 0 := fun j => by
+    rw [(hH.contDiffAt.isSymmSndFDerivAt (by simp)) _ _]
+    have h0 : HasFDerivAt (fun y => dH H y 1) (0 : (Fin 4 → ℝ) →L[ℝ] ℝ) p := by
+      rw [show (fun y => dH H y 1) = fun _ => 0 from funext hv]; exact hasFDerivAt_const _ _
+    simpa using congrArg (fun L => L (Pi.single j 1 : Fin 4 → ℝ)) ((dH_hasFDerivAt hH p 1).unique h0)
+  simp only [Fin.sum_univ_four, curv_model _ _ (fun x w u => lcConn_const (ppF_symm H) (ppF_nondeg H) _ x w u) hGd,
+    hF, (gPP_deriv hH _ _ _).2, lcGam_pp hH hv]
+  simp [gPP, hsym, ddH]
+  ring
+
+omit hv in
+/-- Second partials read off any explicit derivative of `∂ⱼH`. -/
+lemma ddH_of {p : Fin 4 → ℝ} {j : Fin 4} {φ : (Fin 4 → ℝ) → ℝ} {L : (Fin 4 → ℝ) →L[ℝ] ℝ} (hφ : ∀ y, dH H y j = φ y)
+    (hL : HasFDerivAt φ L p) (i : Fin 4) : ddH H p i j = L (Pi.single i 1) := by
+  have := (dH_hasFDerivAt hH p j).unique (by rw [show (fun y => dH H y j) = φ from funext hφ]; exact hL)
+  simpa [ddH] using congrArg (fun M => M (Pi.single i 1 : Fin 4 → ℝ)) this
+
+end SweepB11
+
+lemma Hpw_smooth {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : ContDiff ℝ ∞ hx) : ContDiff ℝ ∞ (Hpw hp hx) := by
+  unfold Hpw; have := hps.comp (contDiff_apply ℝ ℝ (0 : Fin 4)); have := hxs.comp (contDiff_apply ℝ ℝ (0 : Fin 4))
+  fun_prop
+
+/-- **B11, receipt 78.** The polarized wave `H = h₊(u)(x²−y²) + 2hₓ(u)xy` is Ricci-flat for THE Levi-Civita
+connection, for ANY smooth `h₊, hₓ`. -/
+theorem pw_ricci_flat {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : ContDiff ℝ ∞ hx) (p a b : Fin 4 → ℝ) :
+    ∑ i, curv (lcConn (Fin 4 → ℝ) (ndOf (ppF (Hpw hp hx)) (ppF_symm _) (ppF_nondeg _)
+        ((ppF_smooth (Hpw_smooth hps hxs)).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => a) (fun _ => b) p i = 0 := by
+  have hH := Hpw_smooth hps hxs
+  have dp : ∀ y : Fin 4 → ℝ, DifferentiableAt ℝ hp (y 0) := fun y => (hps.differentiable (by simp)) _
+  have dx : ∀ y : Fin 4 → ℝ, DifferentiableAt ℝ hx (y 0) := fun y => (hxs.differentiable (by simp)) _
+  have c : ∀ (i : Fin 4) (y : Fin 4 → ℝ), HasFDerivAt (fun z : Fin 4 → ℝ => z i) _ y :=
+    fun i y => hasFDerivAt_apply (𝕜 := ℝ) i y
+  have kH : ∀ y, HasFDerivAt (Hpw hp hx) _ y := fun y =>
+    ((fd_coord (dp y)).mul (((c 2 y).pow 2).sub ((c 3 y).pow 2))).add
+      (((fd_coord (dx y)).const_mul 2).mul ((c 2 y).mul (c 3 y)))
+  have d1 : ∀ y, dH (Hpw hp hx) y 1 = 0 := fun y => by rw [dH, (kH y).fderiv]; simp
+  have d2 : ∀ y, dH (Hpw hp hx) y 2 = 2 * hp (y 0) * y 2 + 2 * hx (y 0) * y 3 := fun y => by
+    rw [dH, (kH y).fderiv]; simp; ring
+  have d3 : ∀ y, dH (Hpw hp hx) y 3 = -(2 * hp (y 0) * y 3) + 2 * hx (y 0) * y 2 := fun y => by
+    rw [dH, (kH y).fderiv]; simp; ring
+  rw [pp_ricci hH d1, ddH_of hH d2 ((((fd_coord (dp p)).const_mul 2).mul (c 2 p)).add
+      (((fd_coord (dx p)).const_mul 2).mul (c 3 p))),
+    ddH_of hH d3 ((((fd_coord (dp p)).const_mul 2).mul (c 3 p)).neg.add (((fd_coord (dx p)).const_mul 2).mul (c 2 p)))]
+  simp
+
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2966,3 +3136,6 @@ end ShadowProbe
 #print axioms ShadowProbe.lcGam_diag3
 #print axioms ShadowProbe.null_radial
 #print axioms ShadowProbe.sds_photon_lyapunov
+#print axioms ShadowProbe.lcGam_pp
+#print axioms ShadowProbe.pp_ricci
+#print axioms ShadowProbe.pw_ricci_flat
