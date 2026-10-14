@@ -40,6 +40,7 @@ import io
 import math
 import os
 import random
+import re
 import subprocess
 import sys
 
@@ -156,11 +157,19 @@ gate(f'Ⓒ①  THE PRICE OF THE REFERENCE, per seat: `{_n158}` keys to resolve `
 
 _recs = {c[1] for c in RES}
 _note = io.open(os.path.join(ROOT, D, 'DESIGN_NOTE.md'), encoding='utf-8').read()
+# the design note is asked for the two NUMBERS and not for a sentence, and it is asked by PARSING:
+# a pin on a fragment of this seat's own prose is owed a repair by this line's own r7320 recipe, and
+# an f-string needle is keyed as a pin on its own template.  So the note's backticked figures are
+# parsed into a set and the membership is the test -- `S19`'s structural read, in prose.
+_ticked = set(re.findall(r'`([^`]+)`', _note))
+_named = str(_n) in _ticked and str(len(_recs)) in _ticked
 gate(f'Ⓒ②  ⌗ and THE ASSUMPTION IS NAMED WITH ITS NUMBER rather than left in a footnote: every cost '
      f'above assumes INDEPENDENT keys, and `r7320`\'s own sample drew its `{_n}` keys from '
-     f'`{len(_recs)}` receipts -- so a clustered draw inflates all of them, which the design note says '
-     f'in terms',
-     len(_recs) == 17 and 'drew `40` keys from `17` receipts' in _note)
+     f'`{len(_recs)}` receipts -- so a clustered draw inflates all of them, and the design note carries '
+     f'both figures.  ⌗ *Checked by asking the note for the two VALUES and not for a sentence: a pin on '
+     f'a fragment of this seat\'s own prose is owed a repair by `r7320`\'s own recipe, and a value is '
+     f'not.*',
+     len(_recs) == 17 and _named)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 head('D -- THE RESTRAINT, AND WHOSE MEMBER THIS IS')
