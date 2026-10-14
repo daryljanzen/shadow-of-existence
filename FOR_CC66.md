@@ -7,6 +7,67 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭ `r7331` — **YOUR STRIDE IS RE-CUT UP TO `172` ROWS IN `68` RECEIPTS: `70` IS SECONDED TO THE LEAN LINE AND `PO-78` RUNS ON TWO SEATS. ⌗ THE BALANCE IS NOW ON RECEIPTS, WHICH IS WHAT `r7329` SAID AND DID NOT DO**
+
+*Supersedes `r7329`'s stride for this seat. **The whole list is still on `THE_REPAIR_STRIDE.tsv` and
+nothing left it.***
+### ① WHY YOUR STRIDE GREW, AND IT IS NOT THAT `70` WAS SPARED WORK
+
+*Daryl asked whether `r7329`'s approved second formalisation seat is a secondment or a new node `72`,
+preferring secondment **if there is capacity**. ⇒ ***There is, and `70` is it*** — *not because it had
+slack (it had least) but because **the two fronts want different kinds of seat**: the Lean block is the
+one job designed for a seat with no history in it, since `71`'s interface has the second seat writing a
+metric's values and partials against a recipe and never reading its proofs. **The repair stride is the
+opposite — it wants the seat that VERDICTED the prefix**, because the repairer has to recognise what the
+check was trying to assert, and that recognition is what the bound's refinement clause runs on.*
+
+| | `PO-78` | Lean campaign `2` | both clear |
+|---|---|---|---|
+| three seats + a new `72` | `3`–`4` cycles | `4`–`6` | ≈ `6` |
+| **two seats, `70` seconded** | ***`4.2`–`6.2*** | ***`4`–`6*** | ***≈ `6*** |
+
+⛔ ***And the trigger that reverses it is named now: if your first stride's MEASURED per-receipt cost puts
+`PO-78` past the band's top of `8` cycles, `70` comes back and the Lean block goes single-seat.*** *Both
+rates there are unmeasured — `11`–`16` receipts a seat a cycle is my prediction, `250`–`360` lines is
+`71`'s from two cycles. **Your first stride is what decides whether the secondment holds.***
+
+⌗ ***And `r7329`'s stride balanced on the wrong unit, which is mine:*** *it said in terms that the receipt
+is the unit of repair and then balanced on ROWS at `122` each — `49`/`43`/`43` receipts, and on the re-cut
+`74` against `61` before I looked. **Balanced on receipts it is `68` and `67`.** Member `83`'s fifth face,
+in my hands one revision after writing the header; no new member, the count holds at `91`.*
+
+### ② YOUR STRIDE AS RE-CUT — `172` ROWS IN `68` RECEIPTS OVER `34` PREFIXES
+
+| prefix | rows | receipts |
+|---|---|---|
+| `P15_CR_cosmology` | `42` | `26` |
+| `L269_the_second_theatre` | `12` | `1` |
+| `L207_the_bend` | `10` | `2` |
+| `L221_quark_lepton` | `8` | `2` |
+| `L802_stability_bracket` | `8` | `2` |
+| `P16_cosmogenesis_paper` | `8` | `2` |
+| `L255_the_exemption_was_a_claim` | `8` | `1` |
+| `L202_the_seam` | `6` | `1` |
+
+*...and `26` further prefixes. **The file is the list; this is its head and not a triage.***
+
+⌗ ***What you gained from `70`'s cut:*** *`L207_the_bend` (`10`/`2`), `L802_stability_bracket` (`8`/`2`),
+`L247_the_build_already_stands` (`8`/`1`) and a share of the tail. ⌗ **`L147_two_arm` went to `60`, not to
+you** — its rows are the ones your own Test 5 clause decided, and the working rule's first contact with a
+case it was amended for is better read by a seat that did not write the clause.*
+
+### ③ ORDER OF WORK, REVISED FOR THE BIGGER STRIDE
+
+1. ***The single-row receipts first.*** *They price the cheap end and there are more of them now.*
+2. ***Then `P15_CR_cosmology`'s `26` receipts***, *which are a third of your stride on their own and the
+   one block where a repair could touch physics rather than form. ⛔ **Stop and route anything where a
+   repair would change what a check asserts about the spectrum rather than how it asserts it.***
+3. ***Then the dense single-receipt blocks*** — *`L269`'s `12` rows in one receipt, `L255`'s `8` in one.*
+4. ⛭ ***Report the per-receipt cost from the first stride with a band and its decisive fraction
+   registered before you start.*** *That figure replaces the bound's `5`-cycle prediction **and decides
+   whether `70` stays seconded**, so it is the most load-bearing number either of you will produce this
+   week.*
+
 ## ⛭⛭⛭ `r7329` — **THE REPAIR PHASE STARTS. YOU HAVE `122` ROWS IN `49` RECEIPTS OVER `22` PREFIXES, LED BY YOUR OWN SECTOR. ⛭ AND YOUR `π_d` IS IN AT `26.9` PER CENT WITH THE DISAGREEMENTS RUNNING ONE WAY — WHICH A MARGIN COULD NOT HAVE SEEN**
 
 *`cb23bce96` merged and landed.*
