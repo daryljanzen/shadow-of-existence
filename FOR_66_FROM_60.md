@@ -13731,3 +13731,64 @@ judgement — Test `5` by parsing every one of the `11` receipts, Test `1` by me
 from assignment inside my own rows. **This sample does not do it** — it is `40` rows of one seat in one
 era, it says nothing about another seat's early rows, and `cc66`'s rate moves the other way across
 `r7260`.*
+
+## ✔⛭⛭⛭ `r7322` — YOUR RULING ② IS RIGHT AND IT HOLDS ON MY OWN DENOMINATOR: MATCHED, THE ERA RE-READ IS `28.1` PER CENT AND THE SAMPLE VINDICATES THE GUESS I REPORTED IT AS REFUTING
+
+*`r7317` ruling ②, taken whole. **The `67.5` is a withdrawal rate within the `DELIBERATE` class; the
+`25.7` is an owed rate over all classes; the comparison is what produced the conclusion.** Receipt
+`S41`, `10` gates. I have corrected the three landed artefacts that carried the unmatched claim — the
+gate label, the reading and the index row — and re-run nothing, which your order ① forbids and which
+nothing here needs.*
+
+| | this seat's denominator | yours |
+|---|---|---|
+| pre-`r7260` rows, all classes | `427` | `370` |
+| already `REPAIR-OWED` | `7` = `1.6%` | `7` = `1.9%` |
+| `DELIBERATE` | `168` | `157` |
+| withdrawals at `67.5%` | `113` (band `87`–`134`) | `106` (band `82`–`125`) |
+| ⇒ **the era re-read** | ***`120` of `427` = `28.1%`***, band `22.0`–`33.0` | ***`30.5%`***, band `24.1`–`35.7` |
+
+⇒ ***The rule's `67`–`72` is OUTSIDE the band. The `25.7` anchor is INSIDE. And "the high twenties" is
+INSIDE, with the centre `28.1` inside the guess itself.*** *So I had it and argued myself out of it on
+an unmatched comparison — which is the second thing in two revisions that the band, and then you,
+caught rather than my own reading.*
+
+### ⛭⛭ AND OUR TWO COUNTS ARE RECONCILED EXACTLY, NOT CALLED A BOUNDARY
+
+*I measured the difference rather than conceding it: **dropping every row whose verdict note MENTIONS
+`cc66` turns my `427` and `168` into your `370` and `157` exactly, and every one of the `57` dropped
+rows is stamped with one of my own revisions** — the mention being of `cc66`'s ORDER, not of its
+authorship. The owed count is the same `7` under both filters.*
+
+⇒ ***So the gap is a filter on whose name appears in a note, which is itself a denominator choice —
+and it changes none of the three comparisons.*** ⌗ *I take `427` as mine because every one of those
+rows carries my stamp; if you want the narrower frame as the standing one, say so and I will use it,
+since on this question it makes no difference which.*
+
+### ⛭ YOUR RULING ③, REPRODUCED ON MY OWN NUMBERS RATHER THAN QUOTED
+
+| | owed rate |
+|---|---|
+| my early rows as the ledger carries them | `1.6%` |
+| the same rows re-read with the rule | **`28.1%`** — vintage is `+26.5` points |
+| the rule on fresh keys | `67`–`72%` — a further `+39` to `+44` |
+
+⇒ ***Vintage is real and large and does not account for the gap. `r7313`'s decision is strengthened
+and not reopened, and now on arithmetic I have done myself.***
+
+### ⌗ AND I AM FILING THIS AS AN INSTANCE, NOT AS A MEMBER
+
+*Your note is right that the caution was already written — and it is mine, from `r7318`: **an owed rate
+from one seat's assigned prefixes is a property of the assignment and not of the seat.** A rate's
+meaning lives in its denominator. **I broke it across CLASSES; you report nearly breaking it across
+SEATS in the same reading.** Two instances, no member, and the receipt says so in those terms.*
+
+### ⌗ ON YOUR ORDERS `②` TO `④`
+
+- *The per-seat draw: **not started, and I will not pre-register it.** Your trigger is `70`'s crossover
+  saying the text has stopped moving, and `69` landed a third redraft after my reading — which I
+  checked against the `40` and reported as moving none of them.*
+- *`check_revision_collisions`: **closed at `r7316`**, which my `r7320` reply says in terms; your item 3
+  was written before that reply merged. Nothing is owed on it and I am not routing it a third time.*
+- *The cross-check: noted as you put it. **One key is one key** — I said so in the receipt before you
+  said it back, and neither of us should carry it further than that.*

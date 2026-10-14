@@ -14,7 +14,11 @@ the draw, the three outcomes, the band `8`-`16`, centre `11`, and the two refuta
     era's shortfall is substantially a matter of WHEN it was read, so re-reading early rows with the
     instruments should bring them to about the post-instrument era's `25.7` per cent -- is refuted in
     the direction the pre-registration named.*  ** Re-read with the rule, my own early `DELIBERATE`s
-    withdraw at `67.5` per cent, which is where the rule's own aggregate rate already sat. **
+    withdraw at `67.5` per cent. **
+    ⛔ *CORRECTED AT `r7322`, on `r7317`'s ruling ②: this paragraph went on to set that figure beside
+    the rule's own aggregate rate, which is an ALL-CLASS owed rate against a WITHIN-CLASS withdrawal
+    rate.  Matched, the era re-read is `28.1` per cent of this seat's `427` pre-`r7260` rows, which
+    puts the rule's `67`-`72` OUTSIDE its band and the `25.7` anchor INSIDE -- `S41` carries it.*
 
 ** ⛭⛭ AND WHAT TAKES THEM IS NOT THE ERA.  IT IS WHERE THE CHECK WAS CUT. **
   ⓘ **Test 1 takes `11`**: the span is cut INSIDE its own sentence, so its subject or its condition
@@ -186,10 +190,14 @@ gate(f'Ⓒ①  THE COUNT: `{len(W)}` WITHDRAWN, `{len(H)}` HELD, `{len(M)}` MOVE
 _pct = 100.0 * len(W) / 40
 gate(f'Ⓒ②  ⛔ AND THE BAND FAILED, ABOVE IT: `{len(W)}` of `40` is `{_pct:.1f}` per cent against a '
      f'registered band of `8`-`16` and a central guess of `11`, and it is at or above the `25` the '
-     f'pre-registration fixed as the SECOND refutation condition.  ** So the `r7318` claim is '
-     f'refuted in the registered direction and not in the flattering one -- the early era does not '
-     f'come to the post-instrument era\'s `25.7` per cent when it is read with the instruments, it '
-     f'comes to the rule\'s own rate **',
+     f'pre-registration fixed as the SECOND refutation condition.  ** So the `r7318` claim\'s BAND '
+     f'is refuted in the registered direction and not in the flattering one. **  ⛔ CORRECTED AT '
+     f'`r7322`: this label went on to set the era beside the rule\'s own aggregate rate, which '
+     f'compared a WITHIN-CLASS withdrawal rate against an ALL-CLASS owed rate -- `r7317`\'s ruling '
+     f'②, and '
+     f'right.  ** On matched denominators the era re-read is `28.1` per cent of this seat\'s `427` '
+     f'pre-`r7260` rows, which puts the rule\'s `67`-`72` OUTSIDE the band and the `25.7` anchor '
+     f'INSIDE it; `S41` carries the arithmetic. **',
      len(W) > 16 and len(W) >= 25)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
@@ -516,8 +524,10 @@ for l in FAILURES:
 print('=' * 100)
 print(f"""
   ⛔ ** {len(W)} OF 40 WITHDRAW, {len(H)} HOLD, {len(M)} MOVE. **  The registered band was 8-16 with a centre of 11,
-     and the registered refutation at or above 25 is MET: the r7318 claim is refuted in the direction
-     the pre-registration named rather than in the flattering one.
+     and the registered refutation at or above 25 is MET: the r7318 claim's BAND is refuted in the
+     direction the pre-registration named rather than in the flattering one.
+     ⛔ CORRECTED AT r7322: the conclusion drawn from it here compared a within-class withdrawal rate
+     to an all-class owed rate.  Matched, the era re-read is 28.1 per cent -- see S41.
   ⛭⛭ ** AND WHAT TAKES THEM IS WHERE THE CHECK WAS CUT, NOT WHAT THE QUOTED WORDS SAY: ** Test 1 and
      Test 5 take 11 each -- a span cut inside its own sentence, and one label over arms found
      independently -- and the clause the redraft added for this era took none.

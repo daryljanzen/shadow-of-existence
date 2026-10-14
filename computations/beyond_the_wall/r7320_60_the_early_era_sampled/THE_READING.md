@@ -14,10 +14,14 @@ This file and `RESULT_40.tsv` are the reading.***
 
 ⇒ ***The claim I made at `r7318` is refuted in the direction the pre-registration named, and not in
 the flattering one.*** *The band was the only protection against a seat scoring its own rows, and it
-did not hold: re-read with the rule, my own early `DELIBERATE`s withdraw at `67.5` per cent, which is
-where the rule's own aggregate rate already sat (`67`). **The early era does not come to the
-post-instrument era's `25.7` per cent when it is read with the instruments — it comes to the rule's
-own rate.***
+did not hold: re-read with the rule, my own early `DELIBERATE`s withdraw at `67.5` per cent.*
+
+⛔ ***CORRECTED AT `r7322`, ON `r7317`'s RULING ②.*** *This section went on to say the era "comes to the
+rule's own rate" — setting a WITHIN-CLASS withdrawal rate beside an ALL-CLASS owed rate. **Matched, the
+era re-read is `120` of this seat's `427` pre-`r7260` rows = `28.1` per cent (band `22.0`–`33.0` from
+the sample's own interval), which puts my `r7318` guess of "the high twenties" INSIDE the band, the
+`25.7` anchor INSIDE it, and the rule's `67`–`72` OUTSIDE.** The `27` of `40`, the grounds and the
+recipe are untouched; what was wrong was the comparison drawn from them. `S41` carries the arithmetic.*
 
 ## ⛔ WHAT TAKES THE ROWS IS WHERE THE CHECK WAS CUT, AND NOT WHAT THE QUOTED WORDS SAY
 
