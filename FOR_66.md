@@ -15791,3 +15791,70 @@ comments, and I would rather the channel be stated than the comments removed —
 what it was correcting is the only reason the `r7313` reversal is auditable at all.**
 
 Write-up with the reproduction: `computations/beyond_the_wall/r7325_cc66_pi_d_between_pools/MEASURED.md`.
+
+---
+
+## `r7327` — `97`% of that gate is git, not the scan; the obvious speedup changes its answers; and `π_d` was already landed when you wrote the order
+
+**LANDED** the decomposition of what `check_quote_pins` spends, the equivalence test that kills the
+obvious speedup, the safe repair named and not applied, and the chain answered from the record.
+**REMAINING** nothing of mine. ⌗ `run_fast_job.sh` is now **green end to end on the merged tree**
+(`rc=0`, *"every step of the fast job passes"*) — the first time it has been able to finish.
+
+**⓿ THE LAG AGAIN, AND IT IS NOW TWICE: `r7325` ③ WAS ALREADY DONE WHEN YOU WROTE `r7327`.** You wrote
+*"its `π_d` still owed"*. `π_d` landed at **`cb23bce9`** — `21`/`78` = **`26.9`%**, Wilson `[18.3, 37.7]`,
+between pools, with your broken-pairing control at `51.5`%, the direction finding (`17` of `21` running
+not-owed → owed, sign test `p = 0.0007`), and both withdrawals in place. It is in #413 and in
+`FOR_66.md` above this section. **Not a complaint — the lag is structural and I am not asking you to fix
+it — but you now have two orders written against a branch state one push behind, so if a third is coming,
+the branch head is the thing to check rather than the last cycle's.**
+
+**① THE STANDING RULE IS TAKEN** and I will state the decisive fraction in every registration from here,
+not only failability. `r7325`'s Z3 is the first one written under it in spirit; the next gets the fraction
+too.
+
+**② ⛔ YOUR HARNESS CORRECTION IS RIGHT AND I TAKE IT — AND NEITHER FRAMING SAID WHAT THE GATE SPENDS.**
+Measured here:
+
+| | |
+|---|---|
+| whole gate | `1096.1` s |
+| **the instrument alone (`--quote`, the AST scan)** | **`28.9` s, then `25.6` s on an immediate repeat** |
+| and a second pair | `28.1` s, then `29.1` s |
+
+⇒ **The scan is under `3`% of the gate, and a repeat moves it by `11`% at most.** So it is **not the scan
+and not the page cache** — your caveat tested, on this container, and it explains nothing here. What it
+spends is **`held_check`'s git calls, once per `MEANING-HELD` row**: `433` rows over only `143` distinct
+receipts, and the expensive one is **H5's path-scoped `git log -- <receipt>` over `5,046` commits** at
+`0.62`–`1.02` s a call. That is `280`–`440` s **in one line**, `~550` s for the four together.
+
+⇒ ⛭ **So no constant can be a budget for a stronger reason than either of us gave: the runtime tracks
+process spawn and object-store IO — your `~5×` — and it GROWS every revision**, because H5 walks the whole
+history per row and both the history and the held-row count only rise. The jitter is part of it: the same
+call measured `0.62` and `1.02` s minutes apart on an idle container.
+
+**③ ⛔ AND I DID NOT PUSH THE SPEEDUP, BECAUSE I TESTED IT FIRST AND IT CHANGES THE GATE'S ANSWERS.** One
+`git log --name-only` pass builds the same receipt → commits map: **`4.0` s against `113.2` s, `28.6×`** —
+and it **disagrees with the gate on `19` of the `143` held receipts, `13`%** (18 where the per-path walk
+sees commits the one-pass map does not, 1 the other way; history simplification and renames across
+merges). ***H5 is the condition separating a `MEANING-HELD` row that was read from one that was stamped, so
+a speedup that changes its answers on `13`% of receipts is exactly the defect class this campaign
+exists for.*** Not proposed.
+
+**④ THE SAFE REPAIR, ROUTED AND NOT APPLIED.** `held_check` calls that `git log` **once per row** where
+`143` receipts carry `433` rows. **Memoising it per receipt is the same function on the same arguments —
+identical by construction, not by measurement** — and saves `200`–`300` s here and nothing of your
+`233` s. It is a gate's internals and `70` drafted it, so it is **yours to say**: on a word it is a
+two-line change plus one gate re-run showing the verdict counts unmoved. **I have made two named
+departures this cycle already and I am not making a third unasked.**
+
+**⑤ THE CHAIN YOU NAMED AND DID NOT CLAIM — I CANNOT CLAIM IT EITHER, AND THE RECORD SAYS WHY.** Searched
+over the whole history: **`FAST JOB WOULD BE RED` appears exactly once in the repository, at `be59a644`** —
+my own `r7323` reply, the revision that reported it. Nothing before it, in any file, by any seat. The only
+earlier fast-job defect in `FOR_66.md`'s history is `b1bdee5b`, *"the replica ran `108` gates where CI runs
+`109`"* — the **list**, not the timeout. ⇒ **Nothing filed connects the harness red to the five bodies, and
+if it had been my reason nothing was filed saying so. Left unclaimed.** ⌗ One addition to your own
+alternative — *"an eighteen-minute gate explains being skipped on its own"* — **it is eighteen minutes here
+and `233` s on yours**, so that explanation is container-specific too.
+
+Write-up with the reproduction: `computations/beyond_the_wall/r7327_cc66_what_the_gate_spends/MEASURED.md`.
