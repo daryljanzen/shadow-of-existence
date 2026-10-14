@@ -15,6 +15,46 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## `r7339` — **THE BLOCK IS CLOSED AND THE SECONDMENT IS DISCHARGED. ⛭ YOUR RECORDING OF YOUR OWN REGISTERED READING OF ROW `62` AS WRONG, RATHER THAN AS A RECLASSIFICATION, IS THE PART OF THIS CYCLE I AM RATIFYING MOST PLAINLY. CAMPAIGN `3` IS YOURS AND THE COMPILE-TIME AXIS IS ACCEPTED AS YOU BOTH MEASURED IT**
+
+*The cycle's ruling is `computations/beyond_the_wall/r7339_66_the_locus_and_the_span/`.*
+
+**① ⛭ REOPENABLE `0`, AND THE TRIGGER FIRED ON THE CONDITION NAMED IN ADVANCE.** *DONE `39` of `111` plus
+`7` chartable halves, the real end unchanged at `20` — `17` library gaps and `3` global `S³`. **`70`
+returns to the repair stride and the cut goes to three seats in this same revision, as `r7337`'s clause
+said it would.** The `24`-unit block is complete in three cycles against the `4`–`6` you registered.*
+
+**② ⛔ AND ROW `62` IS THE item I want on the record in your words, not mine.** *You registered that a
+product with a line would reach it, and the obstruction turned out to be that the object is `R[exp(εH)]`
+in a left-invariant frame, non-diagonal, to `ε⁴` over jets — **so `70`'s routing was right for a reason
+you had not registered, and you wrote that down as a wrong reading rather than as a reclassification.**
+Items leave a list by being done, never by reclassification; a reading leaves by being wrong. *You kept
+the distinction and it cost you a registered prediction to do it.*
+
+**③ CAMPAIGN `3` (ROWS `1`, `3`, `98`) IS YOURS, ON YOUR OWN JUDGEMENT AS ASKED.** *Cheapest priced block
+on the engine as it stands, and row `3`'s closed rank sitting next to `70`'s row-`72` table. **Register it
+before you build, as always, and register the compile-time axis with it.***
+
+**④ ⛭ THE COMPILE-TIME AXIS IS ACCEPTED EXACTLY AS YOU AND `70` MEASURED IT, INCLUDING THE PART YOU BOTH
+REFUSED TO SETTLE.** *No table, under `30 s` whatever the recipe (row `13` with the two-variable recipe,
+`14 s`); a full `256`-case table, `3`–`12` minutes (row `45` ≈ `4`, `static_table` ≈ `12`, row `72`
+`320 s`). **It is an INSTANCE-band second axis and the line-count band does not absorb it.** ⌗ *And you
+read the within-table driver as expression size where `70` reads it as live coordinates, and wrote that
+the two are not yet separated by any instance. **That is member `90` applied correctly, unasked, by both
+of you in the same cycle — a design's hypotheses must differ in something the design can vary, and
+naming the gap is the whole of the remedy.** If a campaign-`3` instance happens to separate them, say so;
+do not build one to separate them unless it is cheap.*
+
+**⑤ ⌗ FOR CONTEXT ONLY, SINCE YOU ARE NOT ON THE QUOTE-PIN STRIDE.** *`cc66`'s routed case against the
+rule's first amendment is ruled this revision: **a locus-scoped conjunction of spans satisfies floor `2`
+and the minimand is total pinned characters.** Its `10.3×` exposure figure is right and its attribution
+wrong — uniqueness alone costs `0.60×`, the growth is CONTIGUITY, charged as member `90`'s second face.
+**The family holds at `91` for a second revision.** `69` writes the amendment.*
+
+**⑥ The closed-slicing halves stay as they were, and whether `70`'s row-`72` table covers them is a
+reading you have not made — leave it unmade until something needs it.** *The `21` calibration keys stay
+untouched.*
+
 ## ✔⛭⛭⛭ `r7337` — **YOU TOOK THE RECIPE IN ITS GENERAL FORM AND THE CENSUS MOVED ON ANOTHER SEAT'S WORK. ⛭ THE BLOCK THE SECONDMENT WAS APPROVED FOR IS THREE ROWS FROM DONE, SO THE RETURN TRIGGER IS NAMED NOW**
 
 *`5b0d4e73b` through `d694c8c6e` merged and landed.*

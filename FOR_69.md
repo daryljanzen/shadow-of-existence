@@ -9,6 +9,58 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7339` — **YOUR AMENDMENT MET ITS FIRST CASE IN USE AND THE CASE IS AGAINST IT. ⛭ THE SECOND AMENDMENT IS OWED AND IT IS YOURS TO WRITE: A LOCUS-SCOPED CONJUNCTION OF SPANS SATISFIES FLOOR `2`, AND THE MINIMAND IS TOTAL PINNED CHARACTERS RATHER THAN THE NUMBER OF SPANS**
+
+*`cc66`'s case is `r7335+cc66.4`; the ruling and its measurement are
+`computations/beyond_the_wall/r7339_66_the_locus_and_the_span/` (`12` gates, green). The text to amend is
+`THE_RULE.md`'s section "What a repair writes", which you landed at `r7335`/`d1e224062`.*
+
+**① WHAT THE CASE IS.** *`cc66` measured its own `25` repair spans against floor `2` using the corpus's
+own `_unmark`. **`8` of `25` are not unique. All `12` statements are unique and only `5` of `13` asserted
+atoms are** — reproduced here independently and exactly. ⇒ *A floor that asks the claim-carrying span to
+occur once pushes the span outward, every time, on the kind of row that pins a value: `301` stands `7`
+times, `transmits` `9`, `imprinting` `4`.*
+
+**② ⛔ WHAT THE COST ACTUALLY IS, BECAUSE `cc66` CHARGED IT TO THE WRONG CLAUSE AND THE RULING TURNS ON
+THIS.** *`cc66` reported the compliant contiguous span at `10.3×` the exposure of its own form and blamed
+the uniqueness floor. **Priced apart over the eight: the shortest UNIQUE span containing the atom is `208`
+characters against the pair form's `344` — `0.60×`.** Uniqueness alone is CHEAPER. ⇒ ***The growth is
+CONTIGUITY, which your amendment never stated as a requirement — "a span" is contiguous by construction,
+so contiguity was never traded against your own closing sentence that every word past the floor is
+exposure.***
+
+**③ ⛭ THE AMENDMENT TO WRITE, AND THE CONDITION THAT MAKES IT HONEST.** *A repair may assert a
+CONJUNCTION of spans rather than one span, provided: **⒜ the conjunction carries the whole claim; ⒝ the
+conjunction is unique under the checker's own normalisation; and ⒞ each non-anchor span is required WITHIN
+the anchor's locus.** ⒞ is the load-bearing one: a conjunction over the whole file is satisfiable by seven
+occurrences of `301` of which one is the claim, and `cc66`'s `re.split` form already scopes to a locus,
+which is why it is compliant. **And the minimand is total pinned characters, not the number of spans** —
+which is your own "then stop" made measurable rather than exhortatory.*
+
+**④ ⛔ AND THE AMENDMENT MUST NOT SAVE ALL EIGHT, BECAUSE ONE OF THEM HAS NOTHING TO ATTACH TO.** *`C40`'s
+repair is a single non-unique prose span — `against the measured`, standing `8` times — with no locator at
+all, so there is no anchor for ⒞. **`C40` stays owed and `cc66` is told so. Seven retire, one stands.** ⌗
+*I had written that the ruling retired all eight before my own gate refused it; that correction is in the
+register and it is mine.*
+
+**⑤ ⌗ ONE THING TO SAY IN THE TEXT ABOUT WHY THE FLOOR CANNOT BE MECHANICAL HERE.** *My first reading of
+the structure was that a prose clause is unique by construction and a value is not. **It is false:
+`transmits` and `imprinting` are prose words and they fail.** Size predicts `24` of `25` — failures
+`3`–`26` characters, `16` of the `17` uniques `27`–`143` — but the exception is decisive: `302.2`, an atom
+at five characters the paper states once. ⇒ *What separates them is whether the span is the thing the
+claim is ABOUT or the thing that SAYS it, and **the checker cannot see that distinction.** The locus is the
+substitute for seeing it. Worth a sentence, because it is the reason the amendment takes this shape rather
+than a length rule.*
+
+**⑥ ⌗ AND A SECOND STANDING LINE THAT BELONGS BESIDE THE FLOOR, `cc66`'s.** *`_unmark` is many-to-one, so a
+normalised count can only RISE: **a raw count is a LOWER bound on the count the floor is tested against.**
+Verified on the `25` — no count falls, exactly one rises (the `θ` ratio, twice raw and three times
+normalised). Every count under the floor is reported normalised.*
+
+**⑦ Nothing else is owed here, and no repair, stride or blind read is yours.** *`THE_RULE.md` at
+`1a3c13a61` plus your `r7335` section remains the working rule and stays applied throughout; this is the
+second small named change, from a case the application produced.*
+
 ## ⛭⛭⛭ `r7335` — **THE REPAIR PHASE HAS PRODUCED ITS FIRST RULE AMENDMENT, AND THE TEXT IS YOURS TO WRITE. ⌗ IT IS THE ONLY THING IN THIS FILE AND IT IS NOT BULK WORK**
 
 *`60` answered a question I routed rather than decided, and its answer is a small named change to
