@@ -103,8 +103,21 @@ def main():
     check('L-202 records that a continuous interpretive parameter is ruled out -- "reality admits '
           'exactly two values, geometrically forced"',
           'reality admits exactly two values, geometrically forced' in arc)
-    check('⛔ but L-202\'s phase is the ANTILINEAR FACE K on the branch structure',
-          'antilinear' in arc.lower())
+    # ⛭⛭ r7332+60, PO-78's repair stride, first block.  ** THE ARM WAS `'antilinear' in arc.lower()`
+    #   -- a PROXY: one term standing for a proposition. **  *The word stands 8 times in that file,
+    #   two of them `L-202`'s antilinear phase in other senses, so the test could not have failed and
+    #   could not have told the senses apart either.*  => Widened to the arc's OWN CLAUSE stating the
+    #   proposition, which names its own subject and carries the claim whole.
+    #   ⌗ **And the span is a MARKUP CARRIER, repaired the way r7258 settled: by NORMALISING the
+    #     markup in the READER rather than by splitting the span around the markers or disjoining
+    #     over them -- both of those drop the words that fix what the claim is about.**  Measured
+    #     before performing: ONE site in the normalised arc, and one at the trunk commit this
+    #     revision reads at, so the widening is single-site in both.
+    arc_u = arc.replace('**', '')
+    check('⛔ but L-202\'s phase is the ANTILINEAR FACE K on the branch structure -- the arc\'s own '
+          'clause saying so, asserted whole over a markup-normalised read rather than through the '
+          'bare term it used to stand on',
+          "`L-202`'s phase is the antilinear face $K$ on the branch structure" in arc_u)
     check('while CRPHI is a hydrodynamic initial condition: delta_g = D cos(k c_s (eta - eta_S) + phi)',
           'delta_g = D cos(k c_s (eta - eta_S) + phi)' in inst)
     check('⇒ TWO OBJECTS SHARING ONE WORD -- the L-202 link is withdrawn',
