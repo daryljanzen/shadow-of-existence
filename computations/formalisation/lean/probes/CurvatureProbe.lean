@@ -3974,6 +3974,50 @@ theorem open_leaf_curv (A : ℝ) (hA : A ≠ 0) (p : Fin 4 → ℝ) :
 
 end Inst_R52
 
+
+/-! ### `r7323` instance 2 — row 79, the static gauge: the extrinsic curvature of the `t = const` leaves is
+`K_ab = N Γ^t_ab`, so ***a static diagonal metric has `K_ab = 0` on every leaf***, under THE connection; and on
+flat FRW (`N = 1`) the same object is `K_ij = a ȧ δ_ij`, with trace `K = 3H`. *The receipt's SdS leaf
+(`r² dΩ²`) fails the chart clause; the vanishing is proved here for EVERY static diagonal metric that has a
+chart, which contains every chartable member of that family.* -/
+
+section Inst_R79
+
+set_option synthInstance.maxHeartbeats 400000
+
+variable {c : Fin 4 → (Fin 4 → ℝ) → ℝ} (hc : ∀ i p, c i p ≠ 0) (hcs : ∀ i, ContDiff ℝ ∞ (c i))
+include hc hcs in
+/-- **Row 79, static.** No coefficient depends on `t` ⇒ `Γ^t_ab = 0` for spatial `a, b`, so `K_ab = 0`. -/
+theorem static_K_zero (p a b : Fin 4 → ℝ) (hst : ∀ k, fderiv ℝ (c k) p (Pi.single 0 1) = 0)
+    (ha : a 0 = 0) (hb : b 0 = 0) : lcGam (diag4 c) p a b 0 = 0 := by
+  rw [lcGam_diag4 hc hcs]; simp [gamD, ha, hb, hst]
+
+variable {a : ℝ → ℝ} (ha : ∀ s, a s ≠ 0) (has : ContDiff ℝ ∞ a)
+include ha has in
+/-- **Row 79, FRW.** `K_ij = Γ^t_ij = a ȧ δ_ij` on the leaves of flat FRW. -/
+theorem frw_K (p : Fin 4 → ℝ) (i j : Fin 4) (hi : i ≠ 0) (hj : j ≠ 0) :
+    lcGam (diag4 (cT (qFRW a))) p (Pi.single i 1) (Pi.single j 1) 0
+      = if i = j then a (p 0) * deriv a (p 0) else 0 := by
+  have d0 : ∀ s, HasDerivAt a (deriv a s) s := fun s => ((has.differentiable (by simp)) s).hasDerivAt
+  have e1 : deriv (fun s => a s ^ 2) = fun s => 2 * a s * deriv a s :=
+    funext fun s => ((d0 s).pow 2).deriv.trans (by simp)
+  rw [lcGam_T (qFRW_ne ha) (qFRW_smooth has)]
+  fin_cases i <;> fin_cases j <;> simp_all [GT, qFRW, Fin.sum_univ_four, e1] <;> ring
+
+include ha has in
+/-- **Row 79, FRW, the trace.** `K = h^{ij} K_ij = 3ȧ/a = 3H`: the stacking rate, carried by the lapse. -/
+theorem frw_K_trace (p : Fin 4 → ℝ) :
+    ∑ i : Fin 4, (if i = 0 then 0 else
+      lcGam (diag4 (cT (qFRW a))) p (Pi.single i 1) (Pi.single i 1) 0 / qFRW a i (p 0))
+      = 3 * (deriv a (p 0) / a (p 0)) := by
+  simp only [Fin.sum_univ_four]
+  rw [frw_K ha has p 1 1 (by decide) (by decide), frw_K ha has p 2 2 (by decide) (by decide),
+    frw_K ha has p 3 3 (by decide) (by decide)]
+  have := ha (p 0)
+  simp [qFRW]; field_simp; ring
+
+end Inst_R79
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -4097,3 +4141,6 @@ end ShadowProbe
 #print axioms ShadowProbe.gowdy_shear_charge
 #print axioms ShadowProbe.horo_on_hyperboloid
 #print axioms ShadowProbe.open_leaf_curv
+#print axioms ShadowProbe.static_K_zero
+#print axioms ShadowProbe.frw_K
+#print axioms ShadowProbe.frw_K_trace
