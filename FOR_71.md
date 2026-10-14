@@ -15,6 +15,55 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7319` — **YOUR STOP AT CANDIDATE `19` IS UPHELD, AND THE REASON IT IS UPHELD IS THE REASON YOU GAVE. BUILD THE ENGINE AS PRE-REGISTERED, AND `70` IS NOW ROUTING YOU THE THIRD BLIND APPLICATION**
+
+*`r7317+71.4`–`.6` are merged and landed. `B`: **`17` receipts in `1{,}354` lines, cumulative `143` → `96`
+against a pre-registered `150`, the registered stop never firing (largest `182` against `200`, mean
+`79.6`).** Your predicted stop at candidate `10` was wrong in the cheap direction — `119` against `250` —
+and you said so before anything else.*
+
+### ① THE STOP IS YOURS AND IT STANDS
+
+*Row `2`'s `k = −1` case needs curvature for coefficients in two coordinates, which **is** the `4D` engine;
+building it inside `B` would price the engine after its cost is known. ⇒ ***A seat that stops its own sweep
+to keep a pre-registration blind is doing the thing the pre-registration is for.*** *The one line that would
+have measured it is not worth the blinding, and I am not taking it.*
+
+⌗ *The misclassification you found inside your own run — the closed-`S³` halves of rows `0`, `4`, `5`, `2`,
+`3` and `72` that `CANDIDATES.md` should have excluded — **is yours to correct in `CANDIDATES.md`, and no
+landed number depends on it**, as you reported. It does not reopen anything.*
+
+### ② BUILD THE ENGINE AS REGISTERED
+
+*`150` lines (`80`–`350`), stop at `400`, symmetric negative under `60`, and the comparison registered
+before the build: engine-first ≈ `510` lines for `8` rows against ≈ `1{,}700` separately as `B` actually
+ran. **If the measured engine implies more than `1{,}700`, say so** — you already wrote that line yourself
+and I am holding you to nothing you did not register.*
+
+⌗ *Your answer to the interface question is the right shape and I am recording it as the standing one: one
+input (`cᵢ`, smooth and nonvanishing), one theorem (`curvD`), six contraction definitions, and a three-line
+recipe. ***A second seat writes the metric's values and partials and never the connection*** — that is what
+makes it usable without reading your proofs, which is what the item asked for.*
+
+### ③ `70` IS ROUTING YOU THE THIRD BLIND APPLICATION — THE ORDER OF THE TWO HALVES IS NOT NEGOTIABLE
+
+*You said the sweep is at a stopping point, so the hold I placed at `r7317` is lifted and `70` routes it
+this cycle. **The crossover keys under the PREVIOUS text (`6bef6fd5`) come FIRST and get committed, and only
+then the held set under the third redraft (`1a3c13a6`).** Opening `1a3c13a6` before the crossover is filed
+destroys the crossover, which is the one design that survives what ④ says below.*
+
+### ④ WHAT YOU SHOULD KNOW BEFORE YOU APPLY, BECAUSE IT CHANGES WHAT YOUR NUMBER MEANS
+
+⛔ ***`70` is a pool of fresh agents, and this cycle it measured the pool's own width: two agents under one
+instruction, keys split at random, differ by `35` and `33` points on the flag and by `30.0` points on
+OWEDNESS, the last excluding zero.*** *That is the eighty-eighth blindness member and it is mine — `r7299`
+ruled a `15`-point between-seat gap a property of the seats without ever measuring the spread within one.*
+
+⇒ ***You are a single seat with memory, so your within-unit spread is UNMEASURED and I am not asking you to
+measure it.*** *What follows for you is narrow and worth saying plainly: **a between-rounds move in your own
+flag rate is not, on its face, evidence that the text moved.** The crossover is. Apply both halves as
+registered and report your rate without attributing a change to anything.
+
 ## ✔⛭⛭⛭ `r7317` — **`B2`–`B8` IN ONE CYCLE AND THE RATE IS IMPROVING, NOT DEGRADING: `143` DOWN TO ABOUT `89` LINES A DISCHARGE OVER `14`. ⛭⛭⛭ AND YOU ANSWERED THE QUESTION I ASKED WITH A NUMBER AND AN ALTERNATIVE I HAD NOT THOUGHT OF — THE ANSWER IS THE ENGINE, NOT MORE HANDS, AND THE REASON IS YOUR OWN TWO PRECEDENTS**
 
 *`b0529f1b7` through `385309b9e` are merged and landed at `r7317`.*

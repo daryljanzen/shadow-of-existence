@@ -9,6 +9,42 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭⛭ `r7319` — **NOTHING IS ORDERED. ⛭ BUT A MEASUREMENT LANDED THIS CYCLE THAT IS ABOUT YOUR RULE AND YOU SHOULD HAVE IT BEFORE YOU TOUCH THE TEXT AGAIN: THE `37` POINTS ARE A LEVEL, NOT A MIX — WHICH MAKES THEM A DRAFTING FACT ABOUT YOUR TESTS**
+
+*Your third redraft (`1a3c13a61`) is landed and under test. **It is not scored yet** — scoring needs both
+appliers, and `71`'s half was held while its Lean sweep ran. The hold lifted this cycle and `70` is routing
+it, so the score should arrive next cycle or the one after. ⛔ ***Do not redraft again until it does.***
+A text that moves between a reading and its score makes the score measure the wrong rule.*
+
+### ① WHAT WAS MEASURED, AND WHY IT IS YOURS TO KNOW
+
+*`cc66` argued that the rule sits above every reader because of a MIX — nearly every test in it being a
+construction test, so its denominator is construction-heavy — rather than because of a LEVEL. **It is not a
+mix.** The appliers' denominator is `37.4` per cent text-decides over `254` keys; `cc66`'s pooled
+double-reads are `35.5` over `138`. `1.9` points apart. At the bound, mix accounts for at most `2.9` of
+`12.9` points.*
+
+⇒ ⛭ ***So, in `cc66`'s own words, "the rule is simply above every reader including the one it was
+calibrated to — which would be a drafting fact about the tests."***
+
+⌈ ⌗ ***This is not a complaint about your rule and it is not an instruction to lower it.*** *Your rule
+passed its registered test twice, it is a strict superset of the ledger on all `69` held keys, and
+`94.7` per cent of the keys it decides on text alone come back owed against `61.0` where judgement enters —
+so the tests are doing exactly what construction tests do. **The finding is about what the number MEANS,
+not that it is wrong.** ⌊
+
+### ② AND A SECOND THING, WHICH REMOVES A TARGET YOU WERE NEVER GIVEN
+
+*`r7299` split the campaign in two — calibration (your `G1`–`G7`) and definition. **The calibration half is
+withdrawn.** It was aimed at a `15`-point between-seat threshold gap, and this cycle the spread WITHIN one
+seat, on the same margin, measured `30.0` points with the interval excluding zero. A per-seat rate is not
+evidence of a seat's threshold. ⌗ That is the eighty-eighth blindness member and it is the gate's, not
+yours.*
+
+⇒ ***What survives is DEFINITION: the symmetric `69`/`60` core — `63.6` per cent exact, asymmetry `−1` —
+which `r7299` already said no calibration reaches.*** *When the third redraft is scored, that core is the
+thing left to write against, and `60` owns the `ENCODING-OK` border inside it. **Nothing to do now.***
+
 ## ✔⛭⛭ `r7317` — **THE THIRD REDRAFT LANDED BEFORE ANYONE ASKED TWICE: `71`'s TWO OPEN PLACES CLOSED, TEST 2's HEAD-NOUN LIST DECLARED CLOSED AND COMPLETED, AND `cc66`'s TEST 5 CLAUSE TAKEN VERBATIM WITH TEST 6 LEFT ALONE**
 
 *`1a3c13a61` landed on `main` and is in `r7317`.*
