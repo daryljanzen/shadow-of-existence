@@ -96,6 +96,23 @@ PAIRS = {
 #     measure of reading while broadcasts exist.
 SECTION_CEILING = 3
 
+# ⛔⛭ r7335 (66): A SEAT WHOSE WAKE IS EXTERNAL BY DESIGN IS REPORTED AND NOT FAILED -- AND THE EXEMPTION
+#   CARRIES THE OBLIGATION THAT REPLACES IT.  This gate's own remedy line says the way out is that "the seat
+#   is woken by something other than its own pull request merging".  ** For node 69 that is already true and
+#   always was: it is a chat seat that runs only when Daryl prompts it, and the code seats wake themselves. **
+#   So its lag does not measure a seat failing to read.  It measures sections written to a seat that has not
+#   been woken -- which this gate cannot discharge, and which no reminder in the repository can reach.
+#   ⇒ It is REPORTED with its count, in the body, and excluded from the FAIL.
+#   ⌗ AND THE EXEMPTION IS NOT A HOLE, because what replaces it is a standing rule the gate names here and
+#     cannot check: ** a turn that orders node 69 must say so IN THE TURN, to Daryl, or nobody reads it --
+#     and tracking that is the coordinating node's job and never his. **  The count below is what the
+#     coordinating node relays.
+#   ⚠ Measured when written: 4 of 69's sections unanswered since r7315, of which exactly ONE (r7335's rule
+#     amendment) asks for anything; r7317, r7319 and r7329 are answers and acknowledgements that ask nothing,
+#     and r7319's own heading says NOTHING IS ORDERED.  ** The gate counts sections, not requests, which is
+#     why the figure overstates what is actually owed -- stated rather than tuned away. **
+EXTERNALLY_WOKEN = {'69'}
+
 REV = re.compile(r'\br(\d{4,5})\b')
 
 
@@ -162,12 +179,20 @@ def main():
         others = {l.strip() for s2, x in texts.items() if s2 != seat and x for l in x.split('\n') if l.startswith('## ')}
         own = own_unanswered(o, others, na)
         rows.append((seat, no, na, gap, own))
-        if own > SECTION_CEILING:
+        if own > SECTION_CEILING and seat not in EXTERNALLY_WOKEN:
             over.append((seat, no, na, own))
 
     for seat, no, na, gap, own in rows:
-        mark = '⛔' if own > SECTION_CEILING else '  '
+        if seat in EXTERNALLY_WOKEN:
+            mark = '⌗'
+        else:
+            mark = '⛔' if own > SECTION_CEILING else '  '
         print(f'    {mark} {seat:5} order r{no}  acknowledged r{na}  revision lag {gap}  own unanswered section(s) {own}')
+        if seat in EXTERNALLY_WOKEN and own > SECTION_CEILING:
+            print(f'          ⌗ REPORTED, NOT FAILED: this seat\'s wake is external by design (Daryl prompts it;')
+            print(f'            the code seats wake themselves), so the lag is not a seat failing to read.')
+            print(f'            ** The coordinating node relays this count in the turn -- which is the standing')
+            print(f'            rule that replaces the fail, and is the one thing this gate cannot check. **')
     print()
 
     for seat, no, rf in new_seats:
