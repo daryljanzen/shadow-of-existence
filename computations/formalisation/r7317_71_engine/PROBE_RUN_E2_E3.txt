@@ -1,0 +1,8 @@
+# r7319+71.3 — engine E2+E3: lake env lean probes/CurvatureProbe.lean, exit 0 (≈5.5 min), no error, no sorry
+# 117 #print axioms lines, all [propext, Classical.choice, Quot.sound]
+'ShadowProbe.layer_scal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.layer_late' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.frw_weyl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curvD_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.dC2_cS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.open_frw_weyl' depends on axioms: [propext, Classical.choice, Quot.sound]
