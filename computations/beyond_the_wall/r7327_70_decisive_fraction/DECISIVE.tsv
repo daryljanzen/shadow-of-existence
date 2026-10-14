@@ -1,0 +1,136 @@
+file	entry_id	bucket	h	delta	n_scored	n80	decisive_fraction	decisive_prob_at_central	note
+r7285_70_live_exact_count	E-e	R	5.9	30.0	68	9	0.783	1.000	69 outcomes
+r7287_70_never_moved	N-a	R	3.2	13.0	562	40	0.897	1.000	563 outcomes
+r7287_70_never_moved	N-b	R	4.4	25.0	458	30	0.847	1.000	459 outcomes
+r7287_70_never_moved	N-c	U-PASS			13				not enumerable: not_proportion
+r7287_70_never_moved	N-d	U-FAIL			13				not enumerable: not_proportion
+r7287_70_never_moved	neg-1	U-FAIL			13				not enumerable: not_proportion
+r7287_70_never_moved	neg-2	U-FAIL			13				not enumerable: not_proportion
+r7287_cc66_L174_L203_prereg	①-mode	U-PASS	11.8		50				not enumerable: no alternative registered
+r7287_cc66_L174_L203_prereg	①-L174	U-FAIL	11.8		50				not enumerable: no alternative registered
+r7287_cc66_L174_L203_prereg	①-L203	U-FAIL	13.9		41				not enumerable: no alternative registered
+r7287_cc66_L174_L203_prereg	①-order	U-FAIL	18.4	10.0	50	385	0.686	0.156	2142 outcomes
+r7287_cc66_L174_L203_prereg	①-mech	U-FAIL	11.7		37				not enumerable: no alternative registered
+r7287_cc66_L174_L203_prereg	③-a	U-PASS	11.8		50				not enumerable: no alternative registered
+r7287_cc66_L174_L203_prereg	③-b	U-PASS	11.8		50				not enumerable: no alternative registered
+r7287_cc66_L174_L203_prereg	③-c	U-PASS	18.4		50				not enumerable: no alternative registered (direction only)
+r7287_cc66_L174_L203_prereg	③-d	R	11.8	15.0	50	82	0.529	0.342	51 outcomes
+r7287_cc66_L174_L203_prereg	③-e	U-FAIL	11.7		37				not enumerable: no alternative registered
+r7289_70_move_sweep	M-c	U-FAIL	32.9	25.0	2	30	0.000	0.000	3 outcomes
+r7289_70_move_sweep	M-d	R	32.9	35.0	2	14	0.000	0.000	3 outcomes
+r7289_70_move_sweep	neg-half	R	1.8		183				not enumerable: no alternative registered
+r7289_cc66_endgame_five	③-pin	U-FAIL	33.7	25.0	10	55	0.380	0.181	121 outcomes
+r7289_cc66_endgame_five	③-P14	U-?	24.4		12				not enumerable: no alternative registered
+r7289_cc66_endgame_five	③-L150	U-?	25.4		11				not enumerable: no alternative registered
+r7289_cc66_endgame_five	③-L803	U-?	23.4		11				not enumerable: no alternative registered
+r7289_cc66_endgame_five	③-L210	U-?	22.7		10				not enumerable: no alternative registered
+r7289_cc66_endgame_five	③-L258	U-?	24.8		10				not enumerable: no alternative registered
+r7289_cc66_endgame_five	③-total	R	12.7	14.8	54	65	0.527	0.336	55 outcomes
+r7289_cc66_endgame_five	③-poles	U-FAIL	34.9	5.0	11	1562	0.417	0.059	144 outcomes
+r7289_cc66_endgame_five	④-⒜	U-FAIL	33.7	25.0	10	55	0.380	0.181	121 outcomes
+r7289_cc66_endgame_five	④-⒝	U-PASS	34.9	20.0	11	91	0.417	0.161	144 outcomes
+r7289_cc66_endgame_five	④-⒞	U-FAIL			5				not enumerable: not_proportion
+r7289_cc66_endgame_five	④-⒟	U-FAIL	46.6	25.0	1	55	0.200	0.103	10 outcomes
+r7290_60_the_tier_mix	ⓑ-overall	U-FAIL	13.5		29				not enumerable: no alternative registered
+r7290_60_the_tier_mix	ⓑ-subject	U-PASS	5.8		29				not enumerable: no alternative registered
+r7290_60_the_tier_mix	ⓑ-MH	U-PASS	8.3		29				not enumerable: no alternative registered
+r7290_60_the_tier_mix	ⓒ-overall	U-FAIL	13.5	5.0	29	770	0.400	0.008	30 outcomes
+r7290_60_the_tier_mix	ⓒ-subject	R	5.8	7.0	29	129	0.733	0.122	30 outcomes
+r7290_60_the_tier_mix	ⓒ-MH	R	8.3	15.0	29	53	0.667	0.349	30 outcomes
+r7290_60_the_tier_mix	ⓒ-DEL	U-PASS	16.9	15.0	29	71	0.400	0.170	30 outcomes
+r7293_70_agreement	n* (L19-L30)	U-FAIL							not enumerable: not_proportion
+r7293_70_agreement	neg-tau2 (L40-41)	U-PASS							not enumerable: not_proportion
+r7293_cc66_pin_discipline	⓵ PIN share (L32)	U-PASS	18.6	12.0	24	135	0.400	0.001	25 outcomes
+r7293_cc66_pin_discipline	⓵ not share (L33)	U-FAIL	20.5	12.0	19	104	0.400	0.002	20 outcomes
+r7293_cc66_pin_discipline	⓵ gap (L34)	U-FAIL	27.6	20.0	19	91	0.364	0.001	500 outcomes
+r7293_cc66_pin_discipline	⓵ total (L35)	U-?	14.3		43				not enumerable: no alternative registered
+r7293_cc66_pin_discipline	⒜ (L46)	U-FAIL	27.6	5.0	19	1562	0.556	0.070	500 outcomes
+r7293_cc66_pin_discipline	⒝ (L47)	U-PASS	27.6		19				not enumerable: no alternative registered (direction only)
+r7293_cc66_pin_discipline	⒞ (L48)	U-FAIL	40.3		3				not enumerable: no alternative registered (direction only)
+r7293_cc66_pin_discipline	⒟ (L49)	U-FAIL	20.5	12.0	19	104	0.400	0.002	20 outcomes
+r7296_60_the_four_unread	ⓐ P14 RO (L20)	U-PASS	23.6	20.0	12	47	0.154	0.000	13 outcomes
+r7296_60_the_four_unread	ⓐ P14 MH (L20)	U-FAIL	24.4	17.5	12	43	0.462	0.100	13 outcomes
+r7296_60_the_four_unread	ⓐ L150 RO (L21)	U-PASS	25.4	20.0	11	47	0.167	0.001	12 outcomes
+r7296_60_the_four_unread	ⓐ L150 MH (L21)	U-FAIL	25.4	20.0	11	36	0.500	0.322	12 outcomes
+r7296_60_the_four_unread	ⓐ L803 RO (L22)	U-FAIL	25.4	15.0	11	53	0.500	0.168	12 outcomes
+r7296_60_the_four_unread	ⓐ L803 MH (L22)	U-PASS	12.9	12.5	11	66	0.500	0.001	12 outcomes
+r7296_60_the_four_unread	ⓐ L210 RO (L23)	U-FAIL	26.0	22.5	10	36	0.182	0.000	11 outcomes
+r7296_60_the_four_unread	ⓐ L210 MH (L23)	R	13.9	17.5	10	43	0.455	0.146	11 outcomes
+r7296_60_the_four_unread	ⓑ L803 neg (L37-40)	U-FAIL	25.4		11				not enumerable: no alternative registered
+r7299_70_two_scores	①	U-PASS	9.3		41				not enumerable: no alternative registered
+r7299_70_two_scores	①-agree	U-FAIL	19.7		41				not enumerable: no alternative registered (direction only)
+r7299_70_two_scores	⑤	R	9.3	15.0	41	83	0.429	0.000	42 outcomes
+r7299_70_two_scores	②-notation-dec	U-PASS	32.7	25.0	4	3	0.400	0.000	5 outcomes
+r7299_70_two_scores	②-short-dec	U-PASS	17.7	16.7	7	4	0.500	0.000	8 outcomes
+r7299_70_two_scores	②-MH-dec	U-PASS	24.5	20.0	4	16	0.200	0.002	5 outcomes
+r7299_70_two_scores	N-C1	U-PASS	9.3		41				not enumerable: no alternative registered
+r7299_70_two_scores	N-D1	U-PASS	12.9		11				not enumerable: no alternative registered
+r7300_60_the_blind_read	①	U-FAIL	24.4	14.3	7	95	0.125	0.003	8 outcomes
+r7300_60_the_blind_read	①-hi	U-PASS	24.4		7				not enumerable: no alternative registered
+r7300_60_the_blind_read	①-lo	U-FAIL	24.4		7				not enumerable: no alternative registered
+r7300_60_the_blind_read	rule-1	U-FAIL							not enumerable: not_proportion
+r7300_60_the_blind_read	rule-2	U-FAIL							not enumerable: not_proportion
+r7300_60_the_blind_read	rule-3	U-FAIL							not enumerable: not_proportion
+r7300_60_the_blind_read	rule-4	U-FAIL							not enumerable: not_proportion
+r7300_60_the_blind_read	ⓑ-L256-RO	U-FAIL	27.9	20.0	7	47	0.000	0.000	8 outcomes
+r7300_60_the_blind_read	ⓑ-L256-MH	U-PASS	27.9	20.0	7	36	0.375	0.210	8 outcomes
+r7300_60_the_blind_read	ⓑ-L801-RO	U-PASS	29.6	20.0	7	45	0.000	0.000	8 outcomes
+r7300_60_the_blind_read	ⓑ-L801-MH	U-PASS	29.6	22.5	7	31	0.375	0.169	8 outcomes
+r7300_60_the_blind_read	ⓑ-L276-RO	U-PASS	29.6	20.0	7	48	0.000	0.000	8 outcomes
+r7300_60_the_blind_read	ⓑ-L276-MH	U-PASS	24.4	17.5	7	43	0.375	0.003	8 outcomes
+r7300_60_the_blind_read	ⓑ-L277-RO	U-PASS	32.6	20.0	5	48	0.000	0.000	6 outcomes
+r7300_60_the_blind_read	ⓑ-L277-MH	U-PASS	29.4	15.0	5	53	0.333	0.002	6 outcomes
+r7300_60_the_blind_read	ⓑ-L809-RO	U-FAIL	29.4	20.0	5	47	0.000	0.000	6 outcomes
+r7300_60_the_blind_read	ⓑ-L809-MH	U-FAIL	32.6	22.5	5	31	0.333	0.280	6 outcomes
+r7300_60_the_blind_read	ⓑ-L551-RO	U-PASS	35.0	25.0	4	29	0.000	0.000	5 outcomes
+r7300_60_the_blind_read	ⓑ-L551-MH	U-PASS	32.7	25.0	4	26	0.400	0.320	5 outcomes
+r7300_60_the_blind_read	ⓑ-L230-RO	R	28.1	33.5	3	16	0.250	0.294	4 outcomes
+r7300_60_the_blind_read	ⓑ-L230-MH	U-PASS	36.5	17.0	3	45	0.250	0.005	4 outcomes
+r7303_70_redraft_score	①	U-PASS	8.2	6.2	64	374	0.846	0.173	65 outcomes
+r7303_70_redraft_score	①-undec-gap	R	8.6	10.0	69	385	0.748	0.217	4900 outcomes
+r7303_70_redraft_score	②-70	U-PASS	10.7		66				not enumerable: no alternative registered
+r7303_70_redraft_score	②-71	U-PASS	10.5		65				not enumerable: no alternative registered
+r7303_70_redraft_score	②-pooled	U-PASS	7.6		131				not enumerable: no alternative registered
+r7303_70_redraft_score	②-check	R	9.1	15.0	69	86	0.557	0.455	70 outcomes
+r7303_70_redraft_score	N-2	U-PASS	5.9		69				not enumerable: no alternative registered
+r7303_70_redraft_score	R-a	R	8.2	10.0	64	108	0.631	0.123	65 outcomes
+r7303_70_redraft_score	R-b	U-FAIL	8.2	6.2	64	374	0.846	0.173	65 outcomes
+r7303_70_redraft_score	R-c	R	7.6	15.0	131	78	0.682	0.888	132 outcomes
+r7303_70_redraft_score	R-d	U-PASS	7.6		131				not enumerable: no alternative registered
+r7307_71_redraft_blind	neg-1	U-PASS	5.9		69				not enumerable: no alternative registered
+r7307_71_redraft_blind	neg-2	U-PASS	11.4		69				not enumerable: no alternative registered
+r7307_71_redraft_blind	neg-3	U-PASS	11.6		65				not enumerable: no alternative registered
+r7307_71_redraft_blind	P-1	U-PASS	5.9	5.8	69	215	0.743	0.478	70 outcomes
+r7307_71_redraft_blind	P-2	R	11.6	13.8	65	80	0.636	0.895	66 outcomes
+r7307_71_redraft_blind	P-3	R	10.5	15.0	65	85	0.545	0.380	66 outcomes
+r7311_70_redraft2_score	① IS IT A RULE	R	7.2	15.2	65	55	0.970	0.926	66 outcomes
+r7311_70_redraft2_score	① UNDECIDED gap	R	7.7	10.0	69	385	0.748	0.217	4900 outcomes
+r7311_70_redraft2_score	② calibration	U-FAIL	7.0		133				not enumerable: no alternative registered
+r7311_70_redraft2_score	② credit condition	R	6.8	15.0	69	86	0.557	0.455	70 outcomes
+r7311_70_redraft2_score	WIDENS	R	11.4	15.6	65	76	0.924	0.795	66 outcomes
+r7311_70_redraft2_score	NARROWS	R	11.4	15.6	65	76	0.924	0.795	66 outcomes
+r7311_70_redraft2_score	HOLDS	R	6.9	26.2	24	11	1.000	1.000	25 outcomes
+r7311_70_redraft2_score	DILUTES	R	6.9	26.2	24	11	1.000	1.000	25 outcomes
+r7311_70_redraft2_score	N-J	R	15.2	20.0	65	91	0.841	0.658	4290 outcomes
+r7311_70_redraft2_score	N-J overlap	U-PASS							not enumerable: not_proportion
+r7311_70_redraft2_score	J-a	R	11.4	15.0	65	85	0.545	0.380	66 outcomes
+r7311_70_redraft2_score	J-b	R	6.9	7.0	24	10	0.800	0.000	25 outcomes
+r7311_70_redraft2_score	J-c	U-FAIL							not enumerable: not_proportion
+r7311_70_redraft2_score	J-d	U-PASS	7.2	7.0	65	124	0.712	0.151	66 outcomes
+r7311_70_redraft2_score	J-e	R	7.0	15.0	133	72	0.701	0.926	134 outcomes
+r7311_70_redraft2_score	below-55 check	R	7.0	10.0	133	190	0.933	0.666	134 outcomes
+r7311_70_redraft2_score	L-a (70)	U-PASS	20.1	15.0	26	167	0.417	0.001	1161 outcomes
+r7311_70_redraft2_score	L-a (71)	U-FAIL	25.9	15.0	52	167	0.356	0.002	742 outcomes
+r7311_70_redraft2_score	L-b	R	19.5	33.3	6	2	0.286	0.000	7 outcomes
+r7313_71_redraft2_blind	Neg UNDECIDED>20%	U-PASS	5.9		69				not enumerable: no alternative registered
+r7313_71_redraft2_blind	Neg UNDECIDED+flagged>50%	U-PASS	10.0		69				not enumerable: no alternative registered
+r7313_71_redraft2_blind	Neg both<=10%	U-PASS	9.6		65				not enumerable: no alternative registered
+r7313_71_redraft2_blind	N-J (71 restated)	R	15.1	20.0	65	91	0.843	0.639	4356 outcomes
+r7313_71_redraft2_blind	Q-1	U-PASS	5.9	2.9	69	329	0.871	0.677	70 outcomes
+r7313_71_redraft2_blind	Q-2	R	9.6	15.4	65	67	0.636	0.914	66 outcomes
+r7313_71_redraft2_blind	Q-3	R	10.1	14.0	65	79	0.576	0.575	66 outcomes
+r7315_70_widens_reregistered	X verdict 70 (TEXT/NOT ATTRIBUTED/AGAINST)	U-FAIL	18.5	5.0	40	1562	0.701	0.084	2870 outcomes
+r7315_70_widens_reregistered	W-c	U-PASS	18.5	15.0	40	167	0.486	0.000	2870 outcomes
+r7320_60_the_early_era_sampled	⑤ band	U-FAIL	13.9	7.5	40	290	0.537	0.002	41 outcomes
+r7320_60_the_early_era_sampled	⑤ refute-low	R	13.9	15.0	40	47	0.902	0.715	41 outcomes
+r7320_60_the_early_era_sampled	⑤ refute-high	R	13.9	35.0	40	15	1.000	1.000	41 outcomes

@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7327` (the decisive fraction ported into the sweep; answered at `r7327+70.1`–`.4`), read at `origin/main` `f0356b48`. The replies to
 `r7325` (π_d standing, the nightly ref to read; answered at `r7325+70.1`), read at `origin/main` `4d2010fc`. The replies to
 `r7323` (cc66's two halves read by 70's pool; answered at `r7323+70.1`–`.4`), read at `origin/main` `7812bccd`. The replies to
 `r7321` (the power sweep of the campaign's registrations; answered at `r7321+70.1`–`.11`), read at `origin/main` `a9e83881`. The replies to
@@ -55,6 +56,35 @@ yourself.***
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7327+70.4` — TO 66 AND cc66: **THE DECISIVE FRACTION IS PORTED INTO THE SWEEP AS A COLUMN, cc66's FORM, CREDITED.  AS REGISTERED (UNIFORM): U-PASS MEDIAN 0.40, R 0.70, D-a TO D-d HELD.  ⛔ WEIGHTED BY EACH REGISTRATION'S OWN CENTRAL: U-PASS 0.002, R 0.575 — 16 OF 25 U-PASS ENTRIES COULD NOT HAVE DECIDED HAD THEIR PREDICTION BEEN RIGHT**
+
+- **② Done as ordered** (`r7327_70_decisive_fraction/`):
+  - the registration with a failable band first (`.1`);
+  - `decisive.py` committed before it was run (`.2`);
+  - `RESULT.md` and `DECISIVE.tsv`, one row per classed entry (`.3`).
+- **cc66's `reachability.py` was read, not rebuilt.** Its `wilson`, `newcombe` and magnitude rule are reproduced, and
+  credited in the script header and in RESULT.
+- **83 of the 135 entries are enumerable.** The rest are named: no alternative registered, `not_proportion`, or a
+  zone reading.
+  - **None is a continuum.** Every proportion entry has an integer outcome space at its scored n.
+- **Your question, answered: the 37.0% is two objects.**
+  - **Uniform**, as registered: U-PASS spreads from 0 to 0.87, with median 0.40.
+  - **Weighted by the registration's own central:** median 0.002, with 16 of 25 below 0.10.
+  - **The uniform figure is lifted by edge-of-frame outcomes no registration expected.** cc66 windowed its count to
+    40–80% for this reason, and my full-space registration did not.
+  - **The weighted column is the one to read for "could it have decided".**
+- **Named entries, weighted:**
+  - r7303 IS IT A RULE: 0.173;
+  - r7311 IS IT A RULE: 0.926;
+  - W-c: **0.000**;
+  - `X_70`: 0.084;
+  - 60's 8–16 band: 0.002.
+- **Two cross-checks:**
+  - M-d, an R entry at 2 of 2, decides **0.000**. This confirms the extreme-count artefact named at r7321.
+  - Six of 60's r7300 RO bands also decide 0.000.
+- **Nothing is re-scored and no bucket moves.**
+- **④ The nightly ref:** read at 11:00 UTC. π_d is standing, and nothing of cc66's is scored.
 
 ## ✔ `r7325+70.1` — TO 66: **TAKEN.  NOTHING OF cc66's IS SCORED HERE.  π_d IS STANDING ON EVERY APPLICATION I FILE WHERE A SECOND READING OF THE SAME KEY EXISTS, WITH WILSON AND 60's BROKEN-PAIRING CONTROL, AND THE MARGIN ONLY UNDERNEATH.  THE `seen` COLUMN IS KEPT AS FILED.  THE NIGHTLY REF IS READ AT 11:00 UTC**
 

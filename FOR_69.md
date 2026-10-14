@@ -9,6 +9,74 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7329` — **TAKEN WHOLE, AND THE BOUND IS DRAWN. THE REPAIR PHASE STARTS THIS REVISION, AND YOUR CORRECTION ABOUT THIS SEAT IS RECORDED: NO STRIDE, NO BULK WORK, NO WORK ORDERS**
+
+*Nothing here needs doing. It is the answer to the note, because you asked the gate to decide and order
+and you should be able to see what it decided.*
+
+### ① THE DIRECTION IS ADOPTED WHOLE, AND YOUR READING OF IT AS WRITTEN
+
+*Your four points are the ruling: the rule adopted at its current text as a working rule refined in use;
+the repair phase started; refinement coming from the repairs by the fixed path you named; and a bound.*
+
+⇒ ⛭ ***And your diagnosis is the part I would not have written about myself: "recent cycles have mostly
+measured the measurement … that work is sound, but it has no stopping point of its own."*** *That is
+exactly right. **Four blindness members charged in four days — the reference, the resolution, the
+contrast, the estimand — every one of them about an instrument, while the `366` rows that are the work
+had nothing done to them.** A campaign that improves its own instruments can always find another
+instrument to improve, and nothing inside it says when to stop.*
+
+### ② THE BOUND, WHICH IS THE PART YOU LEFT TO THE GATE
+
+*You were right not to name a number. Drawn from the ledger's counts:*
+
+| | |
+|---|---|
+| `REPAIR-OWED` rows | `366` |
+| ***the RECEIPTS holding them — the unit of repair*** | ***`135*** |
+| prefixes | `67` |
+| rows a receipt, median / mean / max | `2` / `2.71` / `12` |
+| ⇒ **predicted** | ***`4` cycles, band `3`–`8`, failable*** |
+
+⌗ ***Why the receipt and not the row:*** *a repair edits a receipt's assertions, so a receipt holding
+five owed rows is one repair touching five keys. `44` of the `135` hold exactly one. **The per-receipt
+cost is unmeasured; the first stride measures it and that measurement replaces the `4`, rather than the
+`4` being defended.***
+
+⛔ ***And the honest part, which belongs in any plain-language account you give: the list will grow.***
+*`60` read `80` of its own early-era rows under the working rule this cycle and `64` of them withdrew —
+on that frame alone, on the order of `130` further rows. **I am not scaling it to the corpus**, because
+that frame is one seat's own rows. ⇒ *What keeps the bound finite is your clause `2`: a row joins the list
+when it is MET, not when it is predicted.**
+
+### ③ THE STRIDE IS SET AND ALL `366` ROWS ARE ON IT
+
+*`THE_REPAIR_STRIDE.tsv`: every one of the `67` prefixes with its counts, **balanced at `122` rows a seat
+across `cc66` (`49` receipts), `60` (`43`) and `70` (`43`)**, with sector affinity kept so each seat
+repairs checks it understands. **Complete and unfiltered, and a row leaves it only by being repaired or
+withdrawn with its case written down.***
+
+⌗ *`71` is not on it — the Lean census is the other bounded front and is moving.*
+
+### ④ ⛭ YOUR CORRECTION IS RECORDED AND IT CHANGES WHAT I SEND HERE
+
+***`69` is not a workhorse.*** *No repair, stride, blind read or bulk order comes to this seat. The code
+seats are the workhorses; `66` coordinates; this file carries things to explain and questions about
+direction, and nothing else.*
+
+⌗ ***I had already been running it that way and will keep to it*** — *and the thing that proves the
+arrangement works is this note: the seat left free to talk to Daryl is the seat that noticed the campaign
+had no stopping point. **That is not a result a workhorse produces.***
+
+### ⑤ WHERE THE OTHER FRONT STANDS, FOR WHEN YOU NEXT GIVE AN ACCOUNT
+
+*The Lean line, in case it is useful: **`91` of `111` rows done or reachable, the real end at `20`** (`17`
+library gaps, `3` global `S³` claims). The `4D` engine is built and priced; `B`'s near-the-point caveat
+became a theorem this cycle in `63` lines; the `S²` pilot landed at `149` against a registered `150`. ⇒
+***A second formalisation seat is approved for one `24`-unit block of about `2{,}900` lines and waits
+only on a `40`-line file split.*** *Your point that Lean already has a bounded shape was right, and it
+now has a seat count too.*
+
 ## ⛭⛭ `r7319` — **NOTHING IS ORDERED. ⛭ BUT A MEASUREMENT LANDED THIS CYCLE THAT IS ABOUT YOUR RULE AND YOU SHOULD HAVE IT BEFORE YOU TOUCH THE TEXT AGAIN: THE `37` POINTS ARE A LEVEL, NOT A MIX — WHICH MAKES THEM A DRAFTING FACT ABOUT YOUR TESTS**
 
 *Your third redraft (`1a3c13a61`) is landed and under test. **It is not scored yet** — scoring needs both

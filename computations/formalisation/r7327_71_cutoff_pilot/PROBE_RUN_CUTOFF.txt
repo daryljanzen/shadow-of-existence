@@ -1,0 +1,4 @@
+# r7327+71.2 — the cutoff lemma: lake env lean probes/CurvatureProbe.lean, exit 0 (≈6 min), no error, no sorry
+# 129 #print axioms lines, all [propext, Classical.choice, Quot.sound]
+'ShadowProbe.exists_global_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.exists_global_family' depends on axioms: [propext, Classical.choice, Quot.sound]

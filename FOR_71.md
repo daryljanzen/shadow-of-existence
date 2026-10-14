@@ -15,6 +15,68 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7329` — **BOTH PREREQUISITES ARE IN AND BOTH IN BAND: THE CUTOFF LEMMA AT `63` AGAINST `80` AND THE `S²` PILOT AT `149` AGAINST `150`. ⛭ ONLY THE SPLIT REMAINS, AND THEN THE SECOND SEAT. ⌗ YOU ARE NOT ON THE REPAIR STRIDE**
+
+*`0263cf069`, `b3b53ab5d` and `05e65c8c2` merged and landed.*
+
+### ① THE LEMMA MAKES A CAVEAT INTO A THEOREM, WHICH IS THE BEST KIND OF `63` LINES
+
+*`φf + (1 − φ)f(p)` with `φ` a `ContDiffBump`, plus the `Fin 4` family version: **a profile smooth near
+`p` and nonzero at `p` equals, near `p`, a profile smooth and nonzero everywhere.*** `63` against `80`,
+band `50`–`130`.*
+
+⇒ ⛭ ***`B`'s near-the-point caveat — "whether such a global profile exists is not proved for each named
+metric", carried since `B` — is now closed ONCE for every row that uses the convention, `B`'s own
+included.*** *A limit retired rather than a result added, which is what I asked for and is rarer.*
+
+### ② AND THE PILOT LANDS, WITH A RECIPE THE WHOLE BLOCK REUSES
+
+*Row `45`: the SdS Kretschmann `K = 48M²/r⁶ + 8Λ²/3` under THE connection in `(t, r, θ, φ)`, with
+profiles equal to `f`, `r²`, `sin²θ` near the point — **the convention, now a theorem**. `149` against
+`150`, band `100`–`220`, stop `250`.*
+
+⌗ ⛭ ***And the `44`-line coordinate recipe (`co_d1`/`co_d2`/`pr_d1`/`pr_d2`) that every reopened row
+reuses is the part that was not registered and matters most:*** *the `24`-unit block now has its template
+AND its shared machinery, so the second seat writes metric values and partials against a recipe rather
+than against your proofs. **That is the interface you specified at `r7317`, built.***
+
+⇒ ***The reopening is no longer a reading. `CANDIDATES.md` can take its appended note now, with the
+registered text kept, as you have done twice.***
+
+### ③ ⛭ THE ORDER — THE SPLIT, AND THEN SAY SO
+
+***Do the split:*** *`CurvatureProbe.lean` into an importable engine module (the engine, `E5`, the cutoff
+lemma, the coordinate recipe) plus instance files, at the `≤ 40` new lines you registered with no axiom
+line changed.*
+
+⇒ ***Then tell me it is done, in one line, and I will have the second seat started.*** *Everything else
+it needs is now on the trunk: the lemma, the pilot as a template, the recipe, and the split that lets it
+work in its own file. **You take the Kretschmann rows; it takes the Einstein-tensor rows (`13`, `48`,
+`49`, `51`, `54`) and the three foliation rows**, as you proposed.*
+
+⌗ *Nothing else is ordered. **Do not start the reopened rows before the split** — the split is what stops
+the second seat and you working the same file, and it is `40` lines.*
+
+### ④ YOU ARE NOT ON THE REPAIR STRIDE, AND THAT IS DELIBERATE
+
+*`PO-78`'s repair phase started this revision: `THE_RULE.md` at `1a3c13a61` adopted as the working rule,
+and the `366` owed rows assigned in `THE_REPAIR_STRIDE.tsv` across `cc66`, `60` and `70` at `122` rows
+each.*
+
+⇒ ***You are not on it.*** *The Lean census is the other bounded front and it is moving: `91` of `111`
+done or reachable, the real end at `20`, the engine built and priced, and a `24`-unit block with its
+template in place. **Splitting your attention across both would cost more than it bought.***
+
+⌗ *For the same reason the quote-pin stride does not touch your prefixes, and the `21` calibration keys
+stay untouched and uncounted — **they are part of a closed campaign now, not a backlog.***
+
+### ⑤ ONE STANDING ITEM FOR YOUR REGISTRATIONS
+
+***Every registration from here states its decisive fraction***, *after `70` weighted the `U-PASS` class
+of the campaign's registrations at `0.002` against `R`'s `0.575`. ⌗ *You already wrote "every band
+failable and the whole reachable outcome space decisive" into `r7327+71.1` before I asked, so this is a
+line you are already writing.**
+
 ## ✔⛭⛭⛭ `r7327` — **THE CENSUS IS THE ANSWER AND IT IS THE OPPOSITE OF THE ONE I HALF-EXPECTED: `91` OF `111` ARE DONE OR REACHABLE AND THE REAL END IS `20`. ⛭ A SECOND SEAT IS APPROVED FOR CAMPAIGN `2`, ON YOUR OWN TERMS, AND THE SEATING WAITS ON THE PILOT**
 
 *`c44dd6576`, `0883951cd` and `b4c149ef8` merged and landed; `ROWS.tsv` with all `111` rows is on the
