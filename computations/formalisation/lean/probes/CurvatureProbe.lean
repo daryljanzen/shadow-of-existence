@@ -3038,6 +3038,81 @@ theorem pw_ricci_flat {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : C
   simp
 
 
+
+/-! ## `r7315`, B12 — receipt 55: on the pp-wave, THE connection is vacuum iff `H_xx + H_yy = 0`; its Riemann
+form is `g(R(a,b)c, d) = P(a,b,c,d)` in closed form; `g(R(∂_u,∂_x)∂_u,∂_x) = ½H_xx` is nonzero for a nontrivial wave
+while the Kretschmann contraction `R_abcd R^abcd` (raised through the `g`-dual basis) VANISHES: Petrov type N -/
+
+section SweepB12
+
+set_option synthInstance.maxHeartbeats 400000
+
+variable {H : (Fin 4 → ℝ) → ℝ} (hH : ContDiff ℝ ∞ H) (hv : ∀ p, dH H p 1 = 0)
+include hH hv
+
+/-- The pp-wave as an `NDMetric`. -/
+noncomputable abbrev ppM : NDMetric 𝓘(ℝ, Fin 4 → ℝ) (Fin 4 → ℝ) :=
+  ndOf (ppF H) (ppF_symm H) (ppF_nondeg H) ((ppF_smooth hH).differentiable (by simp))
+
+/-- **B12.** Vacuum iff harmonic. -/
+theorem pp_vacuum_iff (p : Fin 4 → ℝ) :
+    (∀ a b, ∑ i, curv (lcConn (Fin 4 → ℝ) (ppM hH)) (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => a)
+      (fun _ => b) p i = 0) ↔ ddH H p 2 2 + ddH H p 3 3 = 0 := by
+  simp only [pp_ricci hH hv]
+  refine ⟨fun h => ?_, fun h a b => by rw [h]; ring⟩
+  have := h (Pi.single 0 1) (Pi.single 0 1); simp at this; linarith
+
+/-- **B12, the Riemann form in closed form**, `Aⱼ = ∂_a∂ⱼH`, `Bⱼ = ∂_b∂ⱼH`. -/
+theorem pp_riemann (p a b c d : Fin 4 → ℝ) :
+    ppF H p (curv (lcConn (Fin 4 → ℝ) (ppM hH)) (fun _ => a) (fun _ => b) (fun _ => c) p) d
+      = (fderiv ℝ (fderiv ℝ H) p a (Pi.single 0 1) * (b 0 * c 0)
+          + fderiv ℝ (fderiv ℝ H) p a (Pi.single 2 1) * (b 0 * c 2 + b 2 * c 0)
+          + fderiv ℝ (fderiv ℝ H) p a (Pi.single 3 1) * (b 0 * c 3 + b 3 * c 0)
+          - fderiv ℝ (fderiv ℝ H) p b (Pi.single 0 1) * (a 0 * c 0)
+          - fderiv ℝ (fderiv ℝ H) p b (Pi.single 2 1) * (a 0 * c 2 + a 2 * c 0)
+          - fderiv ℝ (fderiv ℝ H) p b (Pi.single 3 1) * (a 0 * c 3 + a 3 * c 0)) / 2 * d 0
+        - (fderiv ℝ (fderiv ℝ H) p a (Pi.single 2 1) * b 0 - fderiv ℝ (fderiv ℝ H) p b (Pi.single 2 1) * a 0)
+          * c 0 / 2 * d 2
+        - (fderiv ℝ (fderiv ℝ H) p a (Pi.single 3 1) * b 0 - fderiv ℝ (fderiv ℝ H) p b (Pi.single 3 1) * a 0)
+          * c 0 / 2 * d 3 := by
+  have hGd : Differentiable ℝ (lcGam (ppF H)) :=
+    (lcGam_smooth (ppF_nondeg H) (ppF_smooth hH)).differentiable (by simp)
+  have hF : ∀ e c d, fderiv ℝ (lcGam (ppF H)) p e c d = fderiv ℝ (fun y => gPP H y c d) p e := fun e c d => by
+    rw [fderiv_apply₂' (hGd p), show (fun y => lcGam (ppF H) y c d) = fun y => gPP H y c d from
+      funext fun y => lcGam_pp hH hv y c d]
+  rw [curv_model _ _ (fun x w u => lcConn_const (ppF_symm H) (ppF_nondeg H) _ x w u) hGd, hF, hF,
+    (gPP_deriv hH _ _ _).2, (gPP_deriv hH _ _ _).2, lcGam_pp hH hv, lcGam_pp hH hv, lcGam_pp hH hv, lcGam_pp hH hv,
+    ppF_apply]
+  simp [gPP]; ring
+
+/-- **B12.** `g(R(∂_u, ∂_x)∂_u, ∂_x) = ½ H_xx`: nonzero Riemann (= Weyl in vacuum) when `H_xx ≠ 0`. -/
+theorem pp_Ruxux (p : Fin 4 → ℝ) :
+    ppF H p (curv (lcConn (Fin 4 → ℝ) (ppM hH)) (fun _ => (Pi.single 0 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single 2 1 : Fin 4 → ℝ)) (fun _ => (Pi.single 0 1 : Fin 4 → ℝ)) p) (Pi.single 2 1)
+      = ddH H p 2 2 / 2 := by
+  rw [pp_riemann hH hv]; simp [ddH]; ring
+
+/-- The `g`-dual basis: `ê₀ = ∂_v`, `ê₁ = ∂_u − H ∂_v`, `ê₂ = ∂_x`, `ê₃ = ∂_y`. -/
+noncomputable def ppDual (H : (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) (i : Fin 4) : Fin 4 → ℝ :=
+  ![Pi.single 1 1, Pi.single 0 1 - H p • Pi.single 1 1, Pi.single 2 1, Pi.single 3 1] i
+
+omit hH hv in
+lemma ppDual_dual (H : (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) (i j : Fin 4) :
+    ppF H p (ppDual H p i) (Pi.single j 1) = if i = j then 1 else 0 := by
+  fin_cases i <;> fin_cases j <;> simp [ppDual, ppF_apply]
+
+/-- **B12, VSI.** The Kretschmann contraction `Σ R(eᵢ,eⱼ,eₖ,eₗ) R(êᵢ,êⱼ,êₖ,êₗ)` vanishes. -/
+theorem pp_kretschmann (p : Fin 4 → ℝ) :
+    ∑ i, ∑ j, ∑ k, ∑ l,
+      ppF H p (curv (lcConn (Fin 4 → ℝ) (ppM hH)) (fun _ => (Pi.single i 1 : Fin 4 → ℝ))
+        (fun _ => (Pi.single j 1 : Fin 4 → ℝ)) (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p) (Pi.single l 1)
+      * ppF H p (curv (lcConn (Fin 4 → ℝ) (ppM hH)) (fun _ => ppDual H p i) (fun _ => ppDual H p j)
+        (fun _ => ppDual H p k) p) (ppDual H p l) = 0 := by
+  simp only [pp_riemann hH hv]
+  simp [Fin.sum_univ_four, ppDual]
+
+end SweepB12
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -3139,3 +3214,7 @@ end ShadowProbe
 #print axioms ShadowProbe.lcGam_pp
 #print axioms ShadowProbe.pp_ricci
 #print axioms ShadowProbe.pw_ricci_flat
+#print axioms ShadowProbe.pp_vacuum_iff
+#print axioms ShadowProbe.pp_riemann
+#print axioms ShadowProbe.pp_Ruxux
+#print axioms ShadowProbe.pp_kretschmann
