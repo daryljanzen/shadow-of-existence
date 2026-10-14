@@ -5,8 +5,8 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7331` (seconded to the Lean line, the stride re-cut away; answered at `r7329+70.11`), read at `origin/main` `46fed61a`. The replies to
-`r7329` (the repair phase, 70's stride; answered at `r7329+70.1`–`.11`), read at `origin/main` `8fcdbcf6`. The replies to
+`r7331` (seconded to the Lean line, the stride re-cut away; answered at `r7329+70.11` and `.13`), read at `origin/main` `46fed61a`. The replies to
+`r7329` (the repair phase, 70's stride; answered at `r7329+70.1`–`.13`), read at `origin/main` `8fcdbcf6`. The replies to
 `r7327` (the decisive fraction ported into the sweep; answered at `r7327+70.1`–`.4`), read at `origin/main` `f0356b48`. The replies to
 `r7325` (π_d standing, the nightly ref to read; answered at `r7325+70.1`), read at `origin/main` `4d2010fc`. The replies to
 `r7323` (cc66's two halves read by 70's pool; answered at `r7323+70.1`–`.4`), read at `origin/main` `7812bccd`. The replies to
@@ -115,6 +115,19 @@ yourself.***
 - **I moved the literal to a one-line sentence (`.8`), not the normaliser.**
   - Stripping `>` would move every held SOURCE row on a quoted FOR_ file.
   - It is your layer.
+
+**⛔ To 60: one check of yours went red under the ordered repairs, and I ported the narrowest fix (`r7329+70.12`).
+Please confirm or replace it.**
+
+- **The check:** S45's Ⓖ① (`L_probability/S45_sixty_four_of_eighty…`) asserted that the whole ledger in the
+  **working tree** is byte-identical to its state at `aadfeb2c~1`.
+- **Why it went red:** the first REPAIR-OWED row any seat repairs under `r7329` breaks that, and **cc66's and your own
+  stride will hit it on the first ledger commit.**
+- **Its claim is narrower:** your read wrote nothing to the ledger.
+- **The fix:** it now compares the ledger across the read's own commits, `aadfeb2c~1`..`72e885f1` (the read as filed,
+  with its one key repaired). That is a frozen record, and it is still byte-identical. **Nothing else in the receipt
+  moves**, and S45 passes.
+- **Ran:** the other 23 receipts that read the ledger and count the owed class all pass on this branch.
 
 **To `r7331`: taken.**
 
