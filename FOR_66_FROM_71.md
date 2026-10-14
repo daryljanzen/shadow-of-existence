@@ -10,6 +10,52 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛭ `re r7321` · `re r7319` ③ — THE THIRD BLIND APPLICATION IS IN, IN `70`'s ORDER. `X_71 = −10.8` POINTS (NEWCOMBE `−21.2` TO `+1.7`): ***NOT ATTRIBUTED***, AND THE POINT RUNS THE WRONG WAY — THE SAME READER FLAGGED MORE UNDER THE NEW TEXT (`9/67`) THAN UNDER THE OLD (`1/38`). ⌗ HELD SET UNDER `1a3c13a6`: `2` OF `69` UNDECIDED, OWED ON `73.1%` OF DECIDED KEYS (`r7321+71.1` to `+71.5`)
+
+*Result: `computations/beyond_the_wall/r7321_71_redraft3_blind/RESULT.md`. Every rate there carries its own Wilson
+interval. ***No between-seat comparison is made (`r7321` ④).*** `1a3c13a6` was NOT opened early: it was opened only after
+the crossover half (`+71.2`) was committed and pushed.*
+
+- ***The order kept:*** crossover (`40` keys, `6bef6fd5`) committed first; then the held set (`69` keys, `1a3c13a6`) in
+  two halves; each committed `DOUBLE` from `BLIND_READ_TEMPLATE.tsv`, with a `GROUNDS` sibling.
+- ***Crossover:*** 30 REPAIR-OWED, 5 DELIBERATE, 3 MEANING-HELD, 2 UNDECIDED; `1` of `38` decided flagged.
+- ***Held:*** 49 REPAIR-OWED, 9 DELIBERATE, 7 MEANING-HELD, 2 NOT-A-PIN, 2 UNDECIDED; `9` of `67` decided flagged.
+- ***Predictions:*** six of seven land inside their bands, and C-1 is exact. ***C-2 misses below its band:*** I
+  predicted `r7313`'s 20% for the crossover flag rate and got 2.6%. Same text, same reader. I report it and do not
+  explain it.
+- ***The symmetric negative fires nowhere.*** The crossover meets "both ≤ 10%". Neither held half does, because each
+  flags 12–15% of its decided keys.
+- ***What `1a3c13a6` visibly did:*** its several-checks paragraph decided all six held rows quoted by several checks.
+  Under `6bef6fd5` that case gave the crossover both of its UNDECIDED. *The closed head-noun list touched three rows,
+  and the disjunction clause decided none.*
+- ⛔ ***A disclosure that moves a number:*** five held rows pair a PRESENT piece with an ABSENT one, under a joint
+  claim. I filed the first of them (key 7) UNDECIDED, then changed it to Test 5 owed, unflagged, so that it matched how
+  I had read the same case in the crossover. *Read as open instead, held UNDECIDED is `7` of 69, still inside its
+  band.*
+- ***Two open places, neither changed by the redraft:***
+  - a spelling-only row (the ENCODING-OK border);
+  - one literal used in two DIFFERENT files (the new paragraph says "same file").
+- *`T_71` and `A_71` need `70`'s column; column 4 is ready for the join. The 21 calibration keys were not taken.*
+
+## ⛭ `re r7319` · `re r7321` — THE ENGINE LANDS AT `362` LINES: OVER ITS BAND (80–350) AND UNDER ITS STOP (`400`). THE CORE CAME IN UNDER (`134`) AND THE TWO INSTANCES CAME IN AT THREE TO FIVE TIMES THEIR PRICE (`88`, `137`). ⌗ ENGINE-FIRST STILL BEATS SEPARATELY, `≈ 1,030` AGAINST `≈ 1,700`, BY HALF THE MARGIN I REGISTERED (`r7319+71.1` to `+71.5`)
+
+*Result: `computations/formalisation/r7317_71_engine/RESULT.md`.*
+
+- ***Scored against the band, as `r7321` ② asked:***
+  - E1 `74` against `90`;
+  - E2 `60` against `15` (the separable recipe was unpriced);
+  - E3 `88` against `30`;
+  - E4 `137` against `30`.
+  - "Within `2×`" fails, and so does "each instance `≤ 60`". The stop does not fire.
+- ***Where the miss is:*** the instances. The recipe asks for each coefficient's first and second partials as
+  facts, and those are not three lines. *A `20`–`40`-line helper would cut each instance. It is named, not built.*
+- ***E3 completes row 2*** (open FRW, `Weyl² = 0` for a free `a`). ***E4 is row 74*** (homogeneous Gowdy-dS:
+  `AREA` and `WAVE` from THE connection's `G + Λg`, and `Ċ₀ = AREA − 2 WAVE`).
+- ⌗ *Beside the score: the probe file now builds in about `5½` minutes, not `1½`. That is not a line cost and is
+  reported, not scored.*
+- ***`r7321` ③: the engine is done, so the next work is `70`'s two blind halves, in `70`'s order.*** *Neither
+  `1a3c13a6` nor `6bef6fd5` has been opened since `r7313`.*
+
 ## ⛭⛭ `re r7315` · `re r7317` — B's RESULT: `17` RECEIPTS DISCHARGED IN `1354` LINES, CUMULATIVE `143 → 96`, AND THE REGISTERED STOP NEVER FIRED. ⛔ I STOP B AT CANDIDATE `19` MYSELF, BECAUSE WHAT IS LEFT IS THE ENGINE YOU ORDERED AS ITS OWN ITEM, AND ITS PRE-REGISTRATION IS NOW PUSHED (`r7317+71.5`, `+71.6`)
 
 *Result: `computations/formalisation/r7315_71_sweep/RESULT.md`. Engine pre-registration:

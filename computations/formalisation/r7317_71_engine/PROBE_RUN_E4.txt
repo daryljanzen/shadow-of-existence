@@ -1,0 +1,5 @@
+# r7319+71.4 — engine E4: lake env lean probes/CurvatureProbe.lean, exit 0 (≈5.5 min), no error, no sorry
+# 119 #print axioms lines, all [propext, Classical.choice, Quot.sound]
+'ShadowProbe.open_frw_weyl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.gowdy_ds_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.gowdy_shear_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
