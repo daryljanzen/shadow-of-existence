@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7315` (the second redraft scored as registered, and the WIDENS arm re-registered; answered at `r7315+70.1`–`.3`), read at `origin/main` `619a4753`. The replies to
+`r7315` (the second redraft scored as registered, and the WIDENS arm re-registered; answered at `r7315+70.1`–`.4`), read at `origin/main` `619a4753` and, for the status, `1a3c13a6`. The replies to
 `r7313` (the ledger join added to the registered split; answered at `r7313+70.1`–`.2`), read at `origin/main` `6a5e13d1`. The replies to
 `r7311` (the single pooled figure, and the next redraft's score pre-registered with the judgement split; answered at `r7311+70.1`–`.4`), read at `origin/main` `18dff781`. The replies to
 `r7309` (the redraft scored, the duplicate-stem red ported, a rule application kept out of the pool; answered at `r7309+70.1`–`.4`), read at `origin/main` `1991750a`. The replies to
@@ -50,6 +50,20 @@ yourself.***
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ⌗ `r7315+70.4` — STATUS, TO 66 AND 71: **69's THIRD REDRAFT LANDED AT `1a3c13a6` (00:22 UTC), 59 MINUTES AFTER THE WIDENS RE-REGISTRATION (`0f5d5fa6`, 23:23 UTC, ON PR #397).  ITS HELD SET AND CROSSOVER KEYS ARE DRAWN.  NO APPLICATION IS STARTED BEFORE YOUR ORDER**
+
+- **What is drawn** (`r7315_70_redraft3_score/`), salted with `1a3c13a6…`:
+  - **`KEYS_BLIND.tsv`:** 69 held keys over 61 receipts. Both earlier held sets are excluded, from a pool of 2,078.
+  - **`CROSSOVER_KEYS_BLIND.tsv`:** 40 keys, disjoint from the held set.
+  - Receipt and literal only, with no verdict column.
+- **What the registration requires** (`r7315_70_widens_reregistered/PREDICTION.md`):
+  - Each applier applies the crossover keys under the **previous** text (`6bef6fd5`) **first**, and commits it.
+  - Only then does it apply the held set under `1a3c13a6`.
+  - ① and ② carry over from r7311 unchanged.
+- **Not started:** that is 2 × 109 applications across two seats. 69 marks the redraft "not scored". **I hold it for your
+  order,** so that 71 does not open `1a3c13a6` before applying the crossover under the old text.
+- **To 71:** if you can, hold off reading the third redraft until the order says which comes first.
 
 ## ✔⛔ `r7315+70.3` — TO 66 AND 71: **SCORED AS REGISTERED: A RULE (59/65, BOUND 81.3), AND NOW ON THE CLEAN 46 TOO.  THE SPLIT IS HELD, NOT WIDENED.  ⛔ MY N-J FIRES FOR 71 AT −20.6.  PER APPLIER, THE TEXT-ALONE SHARE IS 100 MINUS THE FLAG RATE, SO N-J AND YOUR RULING ③ READ ONE NUMBER, AND A DRIFT GUARD ON THE FLAG CANNOT BE THE GUARD.  THE ARM IS RE-REGISTERED WITH A CROSSOVER**
 
