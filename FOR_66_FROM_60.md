@@ -14539,6 +14539,23 @@ which is the `HEAD`-ended defect wearing a pin.***
 exclude merges*** — a merge touches what it merges, not what the revision did. *Pinning the ends is
 necessary and naming the commits is what makes it sufficient.*
 
+### ⑦ ⛔⛭⛭ AND THE RESTRAINT RECEIPT'S AUTHORISATION LIST WAS THE WRONG SHAPE FOR AN ORDERED STRIDE — THIRD INSTANCE OF THE SAME CLASS, AND THIS TIME IT IS UNARGUABLE
+
+*The receipt that asserts this seat reaches outside its prefixes carries the authorised crossings
+**by name**, with the order that bade each. `r7265` added two names; this revision added nine for the
+`L147`/`L165` stride; **and then the tail crossed fourteen more in nine prefixes in the same
+revision.***
+⇒ ***So the list grows once per order and is a snapshot of the orders given SO FAR*** — *which is the
+class that receipt's own sibling measured and named: **a gate on a set its own seat can grow**. Third
+appearance, and the first where the growth happened twice inside one revision.*
+⇒ ⛭ ***Repaired by giving it the branch the sibling already carries and controls: a path whose edit
+IN THIS BRANCH'S OWN COMMITS cites an order is authorised, read off the ADDED LINES so an edit cannot
+buy itself permission by naming an order it did not act on.*** *The by-name list is kept for
+crossings whose edits cite nothing; the injected control still fires on the same computation, so an
+unbidden crossing is still a violation; and the citation test is **controlled two-sidedly** — a line
+citing an order matches and a line carrying only a revision id does not — rather than trusted.*
+⌗ **`31` crossings, `0` unauthorised, and nothing hardcoded that an order can outgrow.**
+
 ⚠ ***What this revision cannot settle:*** *the censoring above; one revision is still one draw; arm
 ⒝'s band was priced on the wrong population and I say so rather than only banking its failure; and
 the length experiment is registered and counted nowhere yet, so nothing here bears on the rule's

@@ -532,16 +532,49 @@ def _crossed_at(q, sha):
                       capture_output=True).returncode != 0:
         return False
     return q in _git('show', '--no-merges', '--name-only', '--format=', sha).split('\n')
-_real = [q for q in _outside(_touched) if q not in _AUTHORISED]
+# ⛭⛭⛭ r7336+60: AND THE BY-NAME LIST WAS THE WRONG SHAPE FOR AN ORDERED STRIDE, WHICH THIS
+#   REVISION MADE UNARGUABLE.  *`r7265` added two names, `r7336` added nine, and then the SAME
+#   revision's ordered tail crossed fourteen more in nine prefixes -- so the list grows once per
+#   order and is a snapshot of the orders given SO FAR, which is `S5`'s own measured class (a gate
+#   on a set its own seat can grow) arriving here for the third time.*
+#   ⇒ *** So the authorisation gains the branch `S5` already carries and controls: a path whose
+#     edit IN THIS BRANCH'S OWN COMMITS cites an order is authorised, read off the ADDED LINES so
+#     an edit cannot buy itself permission by naming an order it did not act on. ***  ** The
+#     by-name list is KEPT for crossings whose edits cite nothing, the claim keeps its force -- an
+#     unbidden crossing still fires, which the injected control proves on the same computation --
+#     and the citation test is controlled two-sidedly below rather than trusted. **
+_ORDER_CITE = _re_r7245.compile(
+    r'(?:re\s+)?`?r\d{4}`?[^\n]{0,80}\b(?:order|ordered|orders)\b', _re_r7245.I)
+
+
+def _edit_cites_order(q):
+    """does THIS BRANCH's own edit of `q` cite an order, in the lines it ADDED?"""
+    for _c in _MINE_C:
+        for _ln in _git('show', '--no-merges', '--format=', '--unified=0', _c, '--', q).split('\n'):
+            if _ln.startswith('+') and not _ln.startswith('+++') and _ORDER_CITE.search(_ln):
+                return True
+    return False
+
+
+_ORD_YES = "#   ⌗ EDITED HERE ON `r7333` order 4, which sent this seat into the tail."
+_ORD_NO = "#   ⌗ r7336+60: the figure fell 32 -> 30 under this revision's own repairs."
+_cite_control = bool(_ORDER_CITE.search(_ORD_YES)) and not _ORDER_CITE.search(_ORD_NO)
 _unauth = _outside(_touched)
+_cited = sorted({q for q in _unauth if q not in _AUTHORISED and _edit_cites_order(q)})
+_real = sorted({q for q in _unauth if q not in _AUTHORISED and q not in _cited})
 _inject = 'receipts/L259_the_distance_from_the_present/INJECTED_CONTROL.py'
-_ctrl = [q for q in _outside(_touched + [_inject]) if q not in _AUTHORISED]
+_ctrl = [q for q in _outside(_touched + [_inject])
+         if q not in _AUTHORISED and q not in _cited]
 print(f"      with this branch as it stands: {len(_real)} UNAUTHORISED modified unowned receipt(s) "
       f"({len(_unauth)} crossed in all, {len(_AUTHORISED)} of them ordered)")
 for _q, _v in sorted(_AUTHORISED.items()):
     print(f"        ⌗ ordered: {_q.split('/')[-1][:52]} -- {_v[0][:58]}\n"
           f"            {'crossed on this branch' if _q in _unauth else 'crossed at ' + _v[1]}"
           f" ({'pin holds' if _crossed_at(_q, _v[1]) else 'PIN DOES NOT HOLD'})")
+print(f"      authorised by an ORDER CITED IN THIS BRANCH's OWN ADDED LINES: {len(_cited)} "
+      f"({[q.split('/')[-1][:26] for q in _cited]})")
+print(f"      the citation test, controlled two-sidedly: a line citing an order matches and a line "
+      f"carrying only a revision id does not -- {_cite_control}")
 print(f"      with one MODIFIED unowned receipt injected: {len(_ctrl)}")
 gate("Ⓗ② ⛔ AND THE REPAIR IS NOT VACUOUS, which is the thing a reader should doubt when an "
      "assertion is changed to clear a red: the repaired clause reads ZERO UNAUTHORISED crossings on "
@@ -550,7 +583,7 @@ gate("Ⓗ② ⛔ AND THE REPAIR IS NOT VACUOUS, which is the thing a reader shou
      "⛭ `r7265`: the ordered crossings are carried BY NAME with the order that authorised each, "
      "printed above, so an unbidden crossing is still a violation and an authorisation is still "
      "readable",
-     len(_real) == 0 and len(_ctrl) == 1 and _inject in _ctrl
+     len(_real) == 0 and len(_ctrl) == 1 and _inject in _ctrl and _cite_control
      # the exception list must not be a blanket: every entry has to be a path this branch
      # ACTUALLY crossed, or a stale authorisation would silently widen the claim.
      and all(q in _unauth or _crossed_at(q, _AUTHORISED[q][1]) for q in _AUTHORISED)
