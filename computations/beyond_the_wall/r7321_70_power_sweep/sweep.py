@@ -89,8 +89,10 @@ def classify(r):
         return 'C', None, None, None, 'census'
     c, lo, hi, line = (f(r[x]) for x in ('central', 'band_lo', 'band_hi', 'line'))
     delta, n80, note = None, None, ''
-    if kind == 'band' and c is not None and lo is not None and hi is not None:
-        delta = min(abs(c - lo), abs(hi - c))
+    if kind == 'band' and lo is not None and hi is not None:
+        if c is None:                                   # normalize.py (i): the midpoint is the central
+            c = (lo + hi) / 2
+        delta = min(abs(c - lo), abs(hi - c)) or max(abs(c - lo), abs(hi - c))   # (ii): one-sided -> far edge
     elif kind == 'rate_vs_line' and c is not None and line is not None:
         delta = abs(c - line)
         if delta:
@@ -102,11 +104,10 @@ def classify(r):
     if delta == 0:
         delta = None
     if delta is not None and n80 is None and kind in ('band', 'difference'):
-        base = f(r['observed']) if (r.get('effect_basis') or '') != 'diff' else 50.0
         if (r.get('effect_basis') or '') == 'diff' or kind == 'difference':
-            n80 = n80_two(delta, 50.0)
-        elif base is not None and 0 < base < 100:
-            n80 = n80_one(base, delta)
+            n80 = n80_two(delta, 50.0)                  # two arms, at the most conservative base rate
+        elif c is not None:
+            n80 = n80_one(c, delta if c + delta <= 100 else -delta)   # from the central to the nearer edge
     h = h_of(r)
     if h is None:
         note = 'no interval reported'
