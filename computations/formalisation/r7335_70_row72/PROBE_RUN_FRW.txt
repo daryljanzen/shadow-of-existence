@@ -1,0 +1,2 @@
+# r7335+70.2 — row 72: lake env lean probes/SecondSeatFRW.lean, exit 0 (320s, ShadowEngine prebuilt), 0 warnings, 0 errors
+'ShadowProbe.frw_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
