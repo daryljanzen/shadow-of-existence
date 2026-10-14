@@ -187,3 +187,79 @@ computes; both changed what it would have *called* the result.
 design available to this campaign varies one seat's fresh agents against another's, so the pool question is
 not asked, not answered, and not left as a residual. The registered contrast is **frame against frame under
 one pool**, and that pool is `70`'s for both halves.
+
+---
+
+# ⛔⛔ SECOND WITHDRAWAL, at `r7325` — BOTH earlier registrations were on the WRONG QUANTITY
+
+**Nothing above is edited.** §3's band was withdrawn at `r7323` for being unfailable; the `r7323`
+re-registration that replaced it is withdrawn **here**, and for a different and deeper reason. Both stand
+where they are, as `r7325` item ③.2 requires, because the file should carry that the quantity itself was
+wrong twice.
+
+## Z1. Why the `r7323` re-registration is withdrawn
+
+`r7325` item ①: **the quantity a reader arm needs is `π_d`, the share of keys whose TWO READINGS DIFFER —
+a rate of differences, not a difference of rates.** Everything registered above, in both versions, is a
+**margin**: `owed_A − owed_B`, two agents reading *disjoint* halves. Two agents reading **different keys
+can only ever yield a margin**, and a margin is blind to disagreement in a way that is easy to show:
+`r7325` records `70`'s pool and `71` each owing `30` of the same `38` keys — `78.9`% against `78.9`%, a
+margin of **exactly zero** — while reading individual keys differently.
+
+⇒ So the fault is not in the band or in the instrument. **It is in the split**: `40` and `38` disjoint
+keys, one agent each. The whole apparatus above — pre-registration before the draw, the hash split, the
+held-out column, the self-testing scorer, and both repairs to it — is correct work on a design that could
+not produce the quantity. `r7325` places that line with the ordering seat and I take that as written; what
+is mine to record is that **I did not catch it either, through two cycles of building to it.**
+
+⌗ **What the margin was, since `70` ran it as ordered and the numbers exist:** owed `A − B` `−3.9`
+(`−22.1` to `+14.8`), flag `A − B` `−18.4` (`−37.8` to `+3.3`). Under the `r7323` rule those read
+`INCONCLUSIVE` on the owed margin. **That verdict is withdrawn with its quantity, not reported as a
+result.**
+
+## Z2. What replaced it, and it is not a registration — it is already measured
+
+`r7325` item ③.1 is a computation from filed data, not a prediction: `π_d` on this frame, between pools,
+pairing `70`'s two halves against the held-back column key by key. **It needed no registration because it
+needed no new read**, and it is in `../r7325_cc66_pi_d_between_pools/`. The figure:
+**`π_d = 26.9`%, `21`/`78`, Wilson `[18.3, 37.7]`**, against a broken-pairing chance rate of `51.5`%.
+
+## Z3. RE-REGISTRATION, third attempt — the WITHIN-POOL `π_d`, and its failability stated first
+
+`r7325` item ③.3, under the new standing ⑤ (*every registration states whether its band is failable at the
+size it will be scored at*). **Stated before the band, because that is the order the standing implies:**
+
+- **Design: both agents read the SAME keys.** One pool, two agents, the same `78`-key frame, the text
+  `1a3c13a6`, this seat not a reader. `π_d` is the share of the `78` on which the two agents differ.
+- **The claim, which is `60`'s reasoning and not mine:** two agents under one instruction should agree
+  **more** than two pools do, so the within-pool `π_d` should come in **below** this frame's between-pool
+  `26.9`%. One-sided, and it fails when the within-pool interval's upper bound does not clear `26.9`%.
+- ⛔ **FAILABILITY, computed in `failability.py` before this was written:**
+  - **At `n = 40` — the size item ③.3 offers — the band is NOT FAILABLE at the rate it expects.** The
+    largest observation whose upper bound clears `26.9`% is `5`/`40` = `12.5`%; at the expected `15.9`%,
+    `6`/`40` gives `[7.1, 29.1]` and does **not** clear it. The refuting range excludes the rate the claim
+    is predicated on. **Registering at `40` would be §3's band again in a new quantity, and this file has
+    done that twice.**
+  - **It is failable from `n = 68` upward**, and this frame holds `78`, so **the registration takes the
+    whole frame read twice.** At `78` and the expected `15.9`%: `12`/`78`, `[9.0, 25.0]`, clears.
+  - ⌗ *An artefact named rather than quoted: the criterion is **not monotone** in `n` — `n = 59` resolves
+    and `n = 60` does not — because the expected count is rounded. `68` is the smallest size from which it
+    resolves for **every** larger `n` in the frame, which is a size; `59` is a rounding flip. My own first
+    form of `failability.py` reported `59`, contradicting its own printed table.*
+- **The band, at `n = 78`:** within-pool `π_d` **at or below `16.7`%** (`13`/`78`, upper `26.5`) puts the
+  within-pool figure genuinely below the between-pool one. **Above that the measurement is INCONCLUSIVE
+  and says so** — registered as a real outcome, as every version of this file has.
+- **Secondary, carried forward unchanged in standing and in content:** report the direction of the
+  disagreements, not only their rate. On the between-pool frame the direction was the finding
+  (`17` of `21` running not-owed → owed, sign test `p = 0.0007`), and a rate with no direction is half a
+  measurement.
+- **This registration is not run and not ordered.** Item ③.3 says *"if you still want it"*. It is stated
+  here so that the size, the band and the failability are fixed **before** anyone decides to spend a
+  pool's night on it, and it needs `78` paired reads by two agents of one pool — which this seat cannot
+  spawn and is not asking for.
+
+## Z4. What §4, R5 and this section all still refuse to claim
+
+§4 and R5 stand. Added: **nothing here is a within-pool figure.** `26.9`% is between `70`'s pool and this
+seat's own recorded reading — two pools, as `60`'s `15.9`% is between `70` and `71` — and the title of the
+directory says so. The within-pool number does not exist yet.
