@@ -2576,6 +2576,987 @@ theorem sds_balance_is_flat {r v : ℝ → ℝ} {E M α t a : ℝ} (hα : α ≠
 
 end SweepB8
 
+/-! ## `r7315`, B9 — receipt 56: the plane wave `2 du dv + H du² + dx² + dy²`, `H = h₊(u)(x²−y²) + 2hₓ(u)xy`, in
+Brinkmann coordinates on `ℝ⁴`. For THE Levi-Civita connection, `∂_v` and every `ξ_f = f^a(u)∂_a − (ḟ·x)∂_v` with
+`f̈ = A f` are Killing (`∇ξ` antisymmetric); `[ξ_f, ξ_g] = W(f, g) ∂_v` with the Wronskian `W` constant; no
+Killing field has a `∂_u` part, and `∂_v` is null and orthogonal to all of them: the orbits are null -/
+
+section SweepB9
+
+set_option synthInstance.maxHeartbeats 400000
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **The Killing operator on a model space**: `g(∇_u ξ, v) + g(u, ∇_v ξ) = ξ(g(u,v)) + g(Dξ·u, v) + g(u, Dξ·v)`. -/
+lemma killing_lie {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+    (m : NDMetric 𝓘(ℝ, E) E) {ξ : Π y : E, TangentSpace 𝓘(ℝ, E) y} {x : E} (hξ : DifferentiableAt ℝ (vf ξ) x)
+    (u v : E) :
+    m.g x (lcConn E m ξ x u) v + m.g x u (lcConn E m ξ x v)
+      = fderiv ℝ (fun y => m.g y (constF u y) (constF v y)) x (vf ξ x) + m.g x (fderiv ℝ (vf ξ) x u) v
+        + m.g x u (fderiv ℝ (vf ξ) x v) := by
+  have hξm : MDiffAt (T% ξ) x := mdiffAt_model.2 hξ
+  rw [m.symm x u, show m.g x (lcConn E m ξ x u) v = m.g x (lcConn E m ξ x (constF u x)) (constF v x) from rfl,
+    show m.g x (lcConn E m ξ x v) u = m.g x (lcConn E m ξ x (constF v x)) (constF u x) from rfl,
+    lcConn_apply m (constF_mdiff u x) hξm (constF_mdiff v x), lcConn_apply m (constF_mdiff v x) hξm (constF_mdiff u x)]
+  have hbr : ∀ A B : Π y : E, TangentSpace 𝓘(ℝ, E) y,
+      mlieBracket 𝓘(ℝ, E) A B x = fderiv ℝ (vf B) x (A x) - fderiv ℝ (vf A) x (B x) := fun A B => by
+    rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ]; rfl
+  have hc : ∀ (a : E) (w : E), fderiv ℝ (vf (constF a)) x w = 0 := fun a w => by
+    rw [show vf (constF a) = fun _ => a from rfl, fderiv_const_apply]; rfl
+  have fts : ∀ w : TangentSpace 𝓘(ℝ, E) x, (NormedSpace.fromTangentSpace (𝕜 := ℝ) x : _ →L[ℝ] E) w = w :=
+    fun _ => rfl
+  simp only [kosz, hbr, hc, sub_zero, zero_sub, sub_self, map_zero, map_neg, mvfderiv_eq_fderiv,
+    ContinuousLinearMap.comp_apply, fts]
+  rw [m.fun_symm ξ (constF u), m.fun_symm ξ (constF v), m.fun_symm (constF v) (constF u)]
+  have s1 := m.symm x (constF v x) (fderiv ℝ (vf ξ) x u)
+  have s2 := m.symm x (constF u x) (fderiv ℝ (vf ξ) x v)
+  simp only [constF] at s1 s2 ⊢
+  rw [show vf ξ x = ξ x from rfl]
+  linarith
+
+/-- `H = h₊(u)(x² − y²) + 2hₓ(u)xy`, coordinates `(u, v, x, y) = (p 0, p 1, p 2, p 3)`. -/
+noncomputable def Hpw (hp hx : ℝ → ℝ) (p : Fin 4 → ℝ) : ℝ :=
+  hp (p 0) * (p 2 ^ 2 - p 3 ^ 2) + 2 * hx (p 0) * (p 2 * p 3)
+
+/-- The Brinkmann form `2 du dv + H du² + dx² + dy²`. -/
+noncomputable def pwF (hp hx : ℝ → ℝ) (p : Fin 4 → ℝ) : (Fin 4 → ℝ) →L[ℝ] (Fin 4 → ℝ) →L[ℝ] ℝ :=
+  (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 0) (ContinuousLinearMap.proj 1)
+  + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 1) (ContinuousLinearMap.proj 0)
+  + Hpw hp hx p • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 0) (ContinuousLinearMap.proj 0)
+  + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 2) (ContinuousLinearMap.proj 2)
+  + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 3) (ContinuousLinearMap.proj 3)
+
+lemma pwF_apply (hp hx : ℝ → ℝ) (p a b : Fin 4 → ℝ) :
+    pwF hp hx p a b = a 0 * b 1 + a 1 * b 0 + Hpw hp hx p * (a 0 * b 0) + a 2 * b 2 + a 3 * b 3 := by
+  simp [pwF]
+
+lemma pwF_symm (hp hx : ℝ → ℝ) (p a b : Fin 4 → ℝ) : pwF hp hx p a b = pwF hp hx p b a := by
+  rw [pwF_apply, pwF_apply]; ring
+
+lemma pwF_nondeg (hp hx : ℝ → ℝ) (p a : Fin 4 → ℝ) (h : ∀ b, pwF hp hx p a b = 0) : a = 0 := by
+  have e0 := h (Pi.single 1 1); have e1 := h (Pi.single 0 1)
+  have e2 := h (Pi.single 2 1); have e3 := h (Pi.single 3 1)
+  simp [pwF_apply] at e0 e1 e2 e3
+  funext i; fin_cases i <;> simp_all
+
+lemma pwF_smooth {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : ContDiff ℝ ∞ hx) : ContDiff ℝ ∞ (pwF hp hx) := by
+  rw [contDiff_clm_apply_iff]; intro a; rw [contDiff_clm_apply_iff]; intro b
+  simp only [pwF_apply, Hpw]
+  have h1 : ContDiff ℝ ∞ fun p : Fin 4 → ℝ => hp (p 0) := hps.comp (contDiff_apply ℝ ℝ 0)
+  have h2 : ContDiff ℝ ∞ fun p : Fin 4 → ℝ => hx (p 0) := hxs.comp (contDiff_apply ℝ ℝ 0)
+  have h3 : ∀ i : Fin 4, ContDiff ℝ ∞ fun p : Fin 4 → ℝ => p i := fun i => contDiff_apply ℝ ℝ i
+  fun_prop
+
+/-- The plane wave as an `NDMetric` on `ℝ⁴`. -/
+noncomputable def pwM {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : ContDiff ℝ ∞ hx) :
+    NDMetric 𝓘(ℝ, Fin 4 → ℝ) (Fin 4 → ℝ) :=
+  ndOf (pwF hp hx) (pwF_symm hp hx) (pwF_nondeg hp hx) ((pwF_smooth hps hxs).differentiable (by simp))
+
+/-- `ξ_f = f^a(u) ∂_a − (ḟ·x) ∂_v`. -/
+noncomputable def xiPW (f1 f2 : ℝ → ℝ) : Π y : Fin 4 → ℝ, TangentSpace 𝓘(ℝ, Fin 4 → ℝ) y :=
+  fun y => ![0, -(deriv f1 (y 0) * y 2 + deriv f2 (y 0) * y 3), f1 (y 0), f2 (y 0)]
+
+lemma fd_coord {k : ℝ → ℝ} {x : Fin 4 → ℝ} (hk : DifferentiableAt ℝ k (x 0)) :
+    HasFDerivAt (fun y : Fin 4 → ℝ => k (y 0)) (deriv k (x 0) • ContinuousLinearMap.proj (R := ℝ) (φ := fun _ : Fin 4 => ℝ) 0) x :=
+  hk.hasDerivAt.comp_hasFDerivAt x (hasFDerivAt_apply (𝕜 := ℝ) (0 : Fin 4) x)
+
+variable {f1 f2 : ℝ → ℝ} (h1s : ContDiff ℝ ∞ f1) (h2s : ContDiff ℝ ∞ f2)
+include h1s h2s
+
+/-- `ξ_f` is differentiable, with `Dξ·w = (0, −(f̈·x) w⁰ − ḟ·w^⊥, ḟ₁ w⁰, ḟ₂ w⁰)`. -/
+lemma xiPW_deriv (x : Fin 4 → ℝ) : DifferentiableAt ℝ (vf (xiPW f1 f2)) x ∧ ∀ w : Fin 4 → ℝ,
+    fderiv ℝ (vf (xiPW f1 f2)) x w = ![0, -((deriv (deriv f1) (x 0) * x 2 + deriv (deriv f2) (x 0) * x 3) * w 0
+      + deriv f1 (x 0) * w 2 + deriv f2 (x 0) * w 3), deriv f1 (x 0) * w 0, deriv f2 (x 0) * w 0] := by
+  have d1 := (contDiff_infty_iff_deriv.1 h1s).1; have d2 := (contDiff_infty_iff_deriv.1 h2s).1
+  have d1' := ((contDiff_infty_iff_deriv.1 h1s).2).differentiable (by simp)
+  have d2' := ((contDiff_infty_iff_deriv.1 h2s).2).differentiable (by simp)
+  have k0 : HasFDerivAt (fun y => vf (xiPW f1 f2) y 0) (0 : (Fin 4 → ℝ) →L[ℝ] ℝ) x := hasFDerivAt_const (0 : ℝ) x
+  have k1 : HasFDerivAt (fun y => vf (xiPW f1 f2) y 1) _ x :=
+    (((fd_coord (d1' _)).mul (hasFDerivAt_apply (𝕜 := ℝ) (2 : Fin 4) x)).add ((fd_coord (d2' _)).mul (hasFDerivAt_apply (𝕜 := ℝ) (3 : Fin 4) x))).neg
+  have k2 : HasFDerivAt (fun y => vf (xiPW f1 f2) y 2) _ x := fd_coord (d1 _)
+  have k3 : HasFDerivAt (fun y => vf (xiPW f1 f2) y 3) _ x := fd_coord (d2 _)
+  have hd : DifferentiableAt ℝ (vf (xiPW f1 f2)) x := by
+    refine differentiableAt_pi.2 fun i => ?_
+    fin_cases i
+    exacts [k0.differentiableAt, k1.differentiableAt, k2.differentiableAt, k3.differentiableAt]
+  refine ⟨hd, fun w => funext fun i => ?_⟩
+  have D : ∀ j, fderiv ℝ (vf (xiPW f1 f2)) x w j = fderiv ℝ (fun y => vf (xiPW f1 f2) y j) x w := fun j => by
+    rw [_root_.fderiv_apply hd j]; rfl
+  have D0 : fderiv ℝ (vf (xiPW f1 f2)) x w 0 = 0 := by rw [D, k0.fderiv]; rfl
+  have D1 : fderiv ℝ (vf (xiPW f1 f2)) x w 1 = -((deriv (deriv f1) (x 0) * x 2 + deriv (deriv f2) (x 0) * x 3) * w 0
+      + deriv f1 (x 0) * w 2 + deriv f2 (x 0) * w 3) := by rw [D, k1.fderiv]; simp; ring
+  have D2 : fderiv ℝ (vf (xiPW f1 f2)) x w 2 = deriv f1 (x 0) * w 0 := by rw [D, k2.fderiv]; simp
+  have D3 : fderiv ℝ (vf (xiPW f1 f2)) x w 3 = deriv f2 (x 0) * w 0 := by rw [D, k3.fderiv]; simp
+  fin_cases i
+  exacts [D0, D1, D2, D3]
+
+/-- **B9, receipt 56.** If `f̈ = A f`, `A = [[h₊, hₓ], [hₓ, −h₊]]`, then `ξ_f` is a Killing field of THE Levi-Civita
+connection of the plane wave: `g(∇_u ξ, v) + g(u, ∇_v ξ) = 0`. -/
+theorem pw_killing {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : ContDiff ℝ ∞ hx)
+    (o1 : ∀ s, deriv (deriv f1) s = hp s * f1 s + hx s * f2 s)
+    (o2 : ∀ s, deriv (deriv f2) s = hx s * f1 s - hp s * f2 s) (x u v : Fin 4 → ℝ) :
+    (pwM hps hxs).g x (lcConn (Fin 4 → ℝ) (pwM hps hxs) (xiPW f1 f2) x u) v
+      + (pwM hps hxs).g x u (lcConn (Fin 4 → ℝ) (pwM hps hxs) (xiPW f1 f2) x v) = 0 := by
+  obtain ⟨hd, hD⟩ := xiPW_deriv h1s h2s x
+  rw [killing_lie _ hd u v]
+  have hG : (fun y => (pwM hps hxs).g y (constF u y) (constF v y))
+      = fun y => u 0 * v 1 + u 1 * v 0 + Hpw hp hx y * (u 0 * v 0) + u 2 * v 2 + u 3 * v 3 :=
+    funext fun y => pwF_apply hp hx y u v
+  have dp := (hps.differentiable (by simp)) (x 0); have dx := (hxs.differentiable (by simp)) (x 0)
+  have kH : HasFDerivAt (Hpw hp hx) _ x :=
+    ((fd_coord dp).mul (((hasFDerivAt_apply (𝕜 := ℝ) (2 : Fin 4) x).pow 2).sub ((hasFDerivAt_apply (𝕜 := ℝ) (3 : Fin 4) x).pow 2))).add
+      (((fd_coord dx).const_mul 2).mul ((hasFDerivAt_apply (𝕜 := ℝ) (2 : Fin 4) x).mul (hasFDerivAt_apply (𝕜 := ℝ) (3 : Fin 4) x)))
+  have hGd := (((kH.mul_const (u 0 * v 0)).const_add (u 0 * v 1 + u 1 * v 0)).add_const (u 2 * v 2)).add_const
+    (u 3 * v 3)
+  rw [hG, hGd.fderiv]
+  simp only [pwM, ndOf]
+  erw [hD, hD, pwF_apply, pwF_apply]
+  simp [xiPW, vf, o1, o2]
+  ring
+
+set_option backward.isDefEq.respectTransparency false in
+/-- **B9. Heisenberg:** `[ξ_f, ξ_g] = W(f, g) ∂_v`, `W = ḟ·g − ġ·f`. -/
+theorem pw_bracket {g1 g2 : ℝ → ℝ} (k1s : ContDiff ℝ ∞ g1) (k2s : ContDiff ℝ ∞ g2) (x : Fin 4 → ℝ) :
+    mlieBracket 𝓘(ℝ, Fin 4 → ℝ) (xiPW f1 f2) (xiPW g1 g2) x = (deriv f1 (x 0) * g1 (x 0) + deriv f2 (x 0) * g2 (x 0)
+      - deriv g1 (x 0) * f1 (x 0) - deriv g2 (x 0) * f2 (x 0)) • (Pi.single 1 1 : Fin 4 → ℝ) := by
+  rw [← mlieBracketWithin_univ, mlieBracketWithin_eq_lieBracketWithin, lieBracketWithin_univ]
+  show fderiv ℝ (vf (xiPW g1 g2)) x (xiPW f1 f2 x) - fderiv ℝ (vf (xiPW f1 f2)) x (xiPW g1 g2 x) = _
+  rw [(xiPW_deriv k1s k2s x).2, (xiPW_deriv h1s h2s x).2]
+  funext i; fin_cases i <;> simp [xiPW, Pi.single_apply] <;> ring
+
+/-- **B9.** The Wronskian is constant when `f̈ = A f`, `g̈ = A g` with `A` symmetric. -/
+theorem pw_wronskian_const {hp hx g1 g2 : ℝ → ℝ} (k1s : ContDiff ℝ ∞ g1) (k2s : ContDiff ℝ ∞ g2)
+    (o1 : ∀ s, deriv (deriv f1) s = hp s * f1 s + hx s * f2 s) (o2 : ∀ s, deriv (deriv f2) s = hx s * f1 s - hp s * f2 s)
+    (q1 : ∀ s, deriv (deriv g1) s = hp s * g1 s + hx s * g2 s) (q2 : ∀ s, deriv (deriv g2) s = hx s * g1 s - hp s * g2 s)
+    (s : ℝ) : HasDerivAt (fun t => deriv f1 t * g1 t + deriv f2 t * g2 t - deriv g1 t * f1 t - deriv g2 t * f2 t) 0 s := by
+  have D : ∀ {k : ℝ → ℝ}, ContDiff ℝ ∞ k → HasDerivAt k (deriv k s) s ∧ HasDerivAt (deriv k) (deriv (deriv k) s) s :=
+    fun hk => ⟨((contDiff_infty_iff_deriv.1 hk).1 s).hasDerivAt,
+      (((contDiff_infty_iff_deriv.1 hk).2.differentiable (by simp)) s).hasDerivAt⟩
+  obtain ⟨a1, b1⟩ := D h1s; obtain ⟨a2, b2⟩ := D h2s; obtain ⟨c1, d1⟩ := D k1s; obtain ⟨c2, d2⟩ := D k2s
+  refine HasDerivAt.congr_deriv (HasDerivAt.sub (HasDerivAt.sub (HasDerivAt.add (b1.mul c1) (b2.mul c2))
+    (d1.mul a1)) (d2.mul a2)) ?_
+  rw [o1, o2, q1, q2]; ring
+
+omit h1s h2s in
+/-- **B9, the `∂_v` generator and the null orbits.** `∂_v` is Killing; no `ξ_f` has a `∂_u` part; `∂_v` is null and
+orthogonal to every `ξ_f`. -/
+theorem pw_dv_null {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : ContDiff ℝ ∞ hx) (x u v : Fin 4 → ℝ) :
+    ((pwM hps hxs).g x (lcConn (Fin 4 → ℝ) (pwM hps hxs) (constF (Pi.single 1 1)) x u) v
+      + (pwM hps hxs).g x u (lcConn (Fin 4 → ℝ) (pwM hps hxs) (constF (Pi.single 1 1)) x v) = 0)
+    ∧ (xiPW f1 f2 x : Fin 4 → ℝ) 0 = 0 ∧ (pwM hps hxs).g x (Pi.single 1 1) (Pi.single 1 1) = 0
+    ∧ (pwM hps hxs).g x (Pi.single 1 1) (xiPW f1 f2 x) = 0 := by
+  refine ⟨killing_of_invariant _ (fun y t => ?_) x u v, rfl, ?_, ?_⟩
+  · show pwF hp hx (y + t • Pi.single 1 1) = pwF hp hx y
+    simp [pwF, Hpw, Pi.single_apply]
+  · show pwF hp hx x _ _ = 0; simp [pwF_apply]
+  · show pwF hp hx x _ _ = 0; simp [pwF_apply, xiPW]
+
+end SweepB9
+
+/-! ## `r7315`, B10 — receipt 44: the equatorial chart `(t, r, φ)` on `ℝ³` with a diagonal metric `Σ cₖ(r) dxₖ²`.
+THE connection's geodesic equation, radial part, on a null velocity of energy `E` and angular momentum `L` around
+SdS (`c = (−f, 1/f, r²)`), is `r̈ = −(L²/2)(f/r²)′`. At the photon sphere `r = 3M` the Lyapunov exponent
+`λ² = −(r²f/2)(f/r²)″` equals `Ω² = f/r²`: `λ = Ω_c` in four dimensions -/
+
+section SweepB10
+
+set_option synthInstance.maxHeartbeats 400000
+
+/-- A diagonal form on `ℝ³` with coefficients depending on `r = p 1`. -/
+noncomputable def diag3F (c : Fin 3 → ℝ → ℝ) (p : Fin 3 → ℝ) : (Fin 3 → ℝ) →L[ℝ] (Fin 3 → ℝ) →L[ℝ] ℝ :=
+  ∑ i, c i (p 1) • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj i) (ContinuousLinearMap.proj i)
+
+lemma diag3F_apply (c : Fin 3 → ℝ → ℝ) (p a b : Fin 3 → ℝ) : diag3F c p a b = ∑ i, c i (p 1) * (a i * b i) := by
+  simp [diag3F]
+
+lemma diag3F_symm (c : Fin 3 → ℝ → ℝ) (p a b : Fin 3 → ℝ) : diag3F c p a b = diag3F c p b a := by
+  rw [diag3F_apply, diag3F_apply]; exact Finset.sum_congr rfl fun i _ => by ring
+
+lemma diag3F_nondeg {c : Fin 3 → ℝ → ℝ} (hc : ∀ i s, c i s ≠ 0) (p a : Fin 3 → ℝ) (h : ∀ b, diag3F c p a b = 0) :
+    a = 0 := by
+  funext j
+  have hj := h (Pi.single j 1)
+  rw [diag3F_apply, Finset.sum_eq_single j (fun i _ hi => by simp [Pi.single_apply, hi]) (by simp)] at hj
+  simpa [hc j] using hj
+
+/-- The explicit Christoffel form: `Γ(a,b)ₖ = (cₖ′(a_r bₖ + aₖ b_r) − δₖᵣ Σⱼ cⱼ′ aⱼ bⱼ) / (2cₖ)`. -/
+noncomputable def gam3 (c : Fin 3 → ℝ → ℝ) (s : ℝ) (a b : Fin 3 → ℝ) : Fin 3 → ℝ := fun k =>
+  (deriv (c k) s * (a 1 * b k + a k * b 1) - if k = 1 then ∑ j, deriv (c j) s * (a j * b j) else 0) / (2 * c k s)
+
+/-- `fderiv_apply₂` on any domain. -/
+lemma fderiv_apply₂' {E F : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [NormedAddCommGroup F] [NormedSpace ℝ F]
+    {Φ : E → (E →L[ℝ] E →L[ℝ] F)} {p : E} (hΦ : DifferentiableAt ℝ Φ p) (e a b : E) :
+    fderiv ℝ Φ p e a b = fderiv ℝ (fun y => Φ y a b) p e := by
+  rw [fderiv_clm_apply (hΦ.clm_apply (differentiableAt_const a)) (differentiableAt_const b),
+    fderiv_clm_apply hΦ (differentiableAt_const a)]
+  simp
+
+variable {c : Fin 3 → ℝ → ℝ} (hc : ∀ i s, c i s ≠ 0) (hcs : ∀ i, ContDiff ℝ ∞ (c i))
+include hc hcs
+
+lemma diag3F_smooth : ContDiff ℝ ∞ (diag3F c) := by
+  rw [contDiff_clm_apply_iff]; intro a; rw [contDiff_clm_apply_iff]; intro b
+  simp only [diag3F_apply]
+  exact ContDiff.sum fun i _ => ((hcs i).comp (contDiff_apply ℝ ℝ 1)).mul contDiff_const
+
+/-- **B10, the Christoffel form:** `lcGam` of `Σ cₖ(r) dxₖ²` is `gam3`. -/
+lemma lcGam_diag3 (p a b : Fin 3 → ℝ) : lcGam (diag3F c) p a b = gam3 c (p 1) a b := by
+  have inv := flat_isInvertible (diag3F c) (diag3F_nondeg hc) p
+  have hd : ∀ i, DifferentiableAt ℝ (c i) (p 1) := fun i => ((hcs i).differentiable (by simp)) _
+  have hD : ∀ e a b : Fin 3 → ℝ, fderiv ℝ (diag3F c) p e a b = e 1 * ∑ i, deriv (c i) (p 1) * (a i * b i) :=
+    fun e a b => by
+    rw [fderiv_apply₂' ((diag3F_smooth hc hcs).differentiable (by simp) p),
+      show (fun y => diag3F c y a b) = fun y => ∑ i, c i (y 1) * (a i * b i) from funext fun y => diag3F_apply c y a b]
+    have hF : HasFDerivAt (fun y : Fin 3 → ℝ => ∑ i, c i (y 1) * (a i * b i))
+        (∑ i, (a i * b i) • deriv (c i) (p 1) • ContinuousLinearMap.proj (R := ℝ) (φ := fun _ : Fin 3 => ℝ) 1) p :=
+      HasFDerivAt.fun_sum fun i _ => ((hd i).hasDerivAt.comp_hasFDerivAt p
+        (hasFDerivAt_apply (𝕜 := ℝ) (1 : Fin 3) p)).mul_const (a i * b i)
+    rw [hF.fderiv]; simp [Finset.mul_sum]; exact Finset.sum_congr rfl fun i _ => by ring
+  have hK : koszK (diag3F c) p a b = diag3F c p (gam3 c (p 1) a b) := by
+    refine ContinuousLinearMap.ext fun v => ?_
+    rw [koszK_apply, hD, hD, hD, diag3F_apply]
+    simp only [gam3, Fin.sum_univ_three]
+    have := hc 0 (p 1); have := hc 1 (p 1); have := hc 2 (p 1)
+    simp
+    field_simp; ring
+  rw [lcGam_apply, hK, inv.inverse_apply_self]
+
+open Filter Topology in
+/-- **B10.** THE connection's geodesic acceleration, radial part, on a null velocity `(E/f, ṙ, L/r²)` around SdS-type
+profiles `c = (−f, 1/f, r²)`: `−Γ(γ̇, γ̇)_r = −(L²/2)(f/r²)′`. -/
+theorem null_radial {f : ℝ → ℝ} {p : Fin 3 → ℝ} {E L rd : ℝ} (hr : p 1 ≠ 0) (hf : f (p 1) ≠ 0)
+    (hfd : DifferentiableAt ℝ f (p 1)) (e0 : c 0 =ᶠ[𝓝 (p 1)] fun s => -f s) (e1 : c 1 =ᶠ[𝓝 (p 1)] fun s => (f s)⁻¹)
+    (e2 : c 2 =ᶠ[𝓝 (p 1)] fun s => s ^ 2) (hnull : rd ^ 2 = E ^ 2 - f (p 1) * L ^ 2 / p 1 ^ 2) :
+    -(lcConn (Fin 3 → ℝ) (ndOf (diag3F c) (diag3F_symm c) (diag3F_nondeg hc)
+        ((diag3F_smooth hc hcs).differentiable (by simp))) (fun _ => ![E / f (p 1), rd, L / p 1 ^ 2]) p
+        ![E / f (p 1), rd, L / p 1 ^ 2]) 1
+      = -(L ^ 2 / 2) * (deriv f (p 1) / p 1 ^ 2 - 2 * f (p 1) / p 1 ^ 3) := by
+  rw [lcConn_const (diag3F_symm c) (diag3F_nondeg hc), lcGam_diag3 hc hcs]
+  have d0 : deriv (c 0) (p 1) = -deriv f (p 1) := by rw [e0.deriv_eq]; exact hfd.hasDerivAt.neg.deriv
+  have d1 : deriv (c 1) (p 1) = -deriv f (p 1) / f (p 1) ^ 2 := by
+    rw [e1.deriv_eq]; exact (hfd.hasDerivAt.inv hf).deriv
+  have d2 : deriv (c 2) (p 1) = 2 * p 1 := by rw [e2.deriv_eq, (hasDerivAt_pow 2 _).deriv]; norm_num
+  simp [gam3, Fin.sum_univ_three, d0, d1, d2, e1.eq_of_nhds]
+  have hn' : rd ^ 2 * p 1 ^ 2 = E ^ 2 * p 1 ^ 2 - f (p 1) * L ^ 2 := by rw [hnull]; field_simp
+  field_simp
+  linear_combination (-(deriv f (p 1) * p 1)) * hn'
+
+omit hc hcs
+
+lemma sdsV_hasDerivAt {M α r : ℝ} (hr : r ≠ 0) :
+    HasDerivAt (fun s => fSdS M α s / s ^ 2) (-2 / r ^ 3 + 6 * M / r ^ 4) r :=
+  HasDerivAt.congr_deriv ((fSdS_hasDerivAt M α hr).div (hasDerivAt_pow 2 r) (pow_ne_zero 2 hr)) (by
+    unfold fSdS; field_simp; ring)
+
+lemma sdsW_hasDerivAt {M r : ℝ} (hr : r ≠ 0) :
+    HasDerivAt (fun s => -2 / s ^ 3 + 6 * M / s ^ 4) (6 / r ^ 4 - 24 * M / r ^ 5) r :=
+  HasDerivAt.congr_deriv (HasDerivAt.add ((hasDerivAt_const r (-2 : ℝ)).div (hasDerivAt_pow 3 r) (pow_ne_zero 3 hr))
+    ((hasDerivAt_const r (6 * M)).div (hasDerivAt_pow 4 r) (pow_ne_zero 4 hr))) (by field_simp; ring)
+
+open Filter Topology in
+/-- **B10, receipt 44.** On SdS the radial potential `(f/r²)` is stationary at `r = 3M` (the photon sphere), and
+there the Lyapunov exponent `λ² = −(r²f/2)(f/r²)″` equals `Ω² = f/r²`. -/
+theorem sds_photon_lyapunov {M α : ℝ} (hM : M ≠ 0) :
+    deriv (fun s => fSdS M α s / s ^ 2) (3 * M) = 0
+    ∧ -((3 * M) ^ 2 * fSdS M α (3 * M) / 2) * deriv (deriv fun s => fSdS M α s / s ^ 2) (3 * M)
+      = fSdS M α (3 * M) / (3 * M) ^ 2 := by
+  have h3 : (3 * M) ≠ 0 := mul_ne_zero three_ne_zero hM
+  have hev : deriv (fun s => fSdS M α s / s ^ 2) =ᶠ[𝓝 (3 * M)] fun s => -2 / s ^ 3 + 6 * M / s ^ 4 :=
+    (eventually_ne_nhds h3).mono fun s hs => (sdsV_hasDerivAt hs).deriv
+  refine ⟨by rw [(sdsV_hasDerivAt h3).deriv]; field_simp; ring, ?_⟩
+  rw [hev.deriv_eq, (sdsW_hasDerivAt h3).deriv]
+  field_simp; ring
+
+end SweepB10
+
+/-! ## `r7315`, B11 — receipt 78: the pp-wave `2 du dv + H du² + dx² + dy²` for ANY smooth `H(u, x, y)`. THE
+connection's Ricci contraction is `Ric(a, b) = −½(H_xx + H_yy) a⁰ b⁰`; for `H = h₊(x²−y²) + 2hₓxy` it VANISHES
+for any `h₊(u), hₓ(u)`, while `g(R(∂_u, ∂_x)∂_u, ∂_x) = ½H_xx = h₊ ≠ 0`; a trace part `h(x²+y²)` gives
+`Ric(∂_u, ∂_u) = −2h ≠ 0` (the control) -/
+
+section SweepB11
+
+set_option synthInstance.maxHeartbeats 400000
+
+/-- The pp-wave form, any profile `H`. -/
+noncomputable def ppF (H : (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) : (Fin 4 → ℝ) →L[ℝ] (Fin 4 → ℝ) →L[ℝ] ℝ :=
+  (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 0) (ContinuousLinearMap.proj 1)
+  + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 1) (ContinuousLinearMap.proj 0)
+  + H p • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 0) (ContinuousLinearMap.proj 0)
+  + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 2) (ContinuousLinearMap.proj 2)
+  + (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj 3) (ContinuousLinearMap.proj 3)
+
+lemma pwF_eq_ppF (hp hx : ℝ → ℝ) : pwF hp hx = ppF (Hpw hp hx) := rfl
+
+lemma ppF_apply (H : (Fin 4 → ℝ) → ℝ) (p a b : Fin 4 → ℝ) :
+    ppF H p a b = a 0 * b 1 + a 1 * b 0 + H p * (a 0 * b 0) + a 2 * b 2 + a 3 * b 3 := by
+  simp [ppF]
+
+lemma ppF_symm (H : (Fin 4 → ℝ) → ℝ) (p a b : Fin 4 → ℝ) : ppF H p a b = ppF H p b a := by
+  rw [ppF_apply, ppF_apply]; ring
+
+lemma ppF_nondeg (H : (Fin 4 → ℝ) → ℝ) (p a : Fin 4 → ℝ) (h : ∀ b, ppF H p a b = 0) : a = 0 := by
+  have e0 := h (Pi.single 1 1); have e1 := h (Pi.single 0 1)
+  have e2 := h (Pi.single 2 1); have e3 := h (Pi.single 3 1)
+  simp [ppF_apply] at e0 e1 e2 e3
+  funext i; fin_cases i <;> simp_all
+
+/-- `∂ⱼH` and `∂ᵢ∂ⱼH`. -/
+noncomputable def dH (H : (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) (j : Fin 4) : ℝ := fderiv ℝ H p (Pi.single j 1)
+noncomputable def ddH (H : (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) (i j : Fin 4) : ℝ :=
+  fderiv ℝ (fderiv ℝ H) p (Pi.single i 1) (Pi.single j 1)
+
+/-- The pp-wave Christoffel form. -/
+noncomputable def gPP (H : (Fin 4 → ℝ) → ℝ) (p a b : Fin 4 → ℝ) : Fin 4 → ℝ :=
+  ![0, (dH H p 0 * (a 0 * b 0) + dH H p 2 * (a 0 * b 2 + a 2 * b 0) + dH H p 3 * (a 0 * b 3 + a 3 * b 0)) / 2,
+    -(dH H p 2 * (a 0 * b 0)) / 2, -(dH H p 3 * (a 0 * b 0)) / 2]
+
+variable {H : (Fin 4 → ℝ) → ℝ} (hH : ContDiff ℝ ∞ H) (hv : ∀ p, dH H p 1 = 0)
+include hH
+
+lemma ppF_smooth : ContDiff ℝ ∞ (ppF H) := by
+  rw [contDiff_clm_apply_iff]; intro a; rw [contDiff_clm_apply_iff]; intro b
+  simp only [ppF_apply]; fun_prop
+
+include hv
+
+lemma dH_lin (p a : Fin 4 → ℝ) : fderiv ℝ H p a = a 0 * dH H p 0 + a 2 * dH H p 2 + a 3 * dH H p 3 := by
+  have e : a = ∑ j, a j • (Pi.single j 1 : Fin 4 → ℝ) := by ext i; simp [Pi.single_apply]
+  have h1 := hv p; simp only [dH] at h1 ⊢
+  conv_lhs => rw [e]
+  simp [Fin.sum_univ_four, h1]
+
+/-- **B11, the Christoffel form:** `lcGam` of the pp-wave is `gPP`. -/
+lemma lcGam_pp (p a b : Fin 4 → ℝ) : lcGam (ppF H) p a b = gPP H p a b := by
+  have inv := flat_isInvertible (ppF H) (ppF_nondeg H) p
+  have hD : ∀ e a b : Fin 4 → ℝ, fderiv ℝ (ppF H) p e a b = fderiv ℝ H p e * (a 0 * b 0) := fun e a b => by
+    rw [fderiv_apply₂' ((ppF_smooth hH).differentiable (by simp) p),
+      show (fun y => ppF H y a b) = fun y => a 0 * b 1 + a 1 * b 0 + H y * (a 0 * b 0) + a 2 * b 2 + a 3 * b 3 from
+        funext fun y => ppF_apply H y a b]
+    have h := ((((hH.differentiable (by simp)) p).hasFDerivAt.mul_const (a 0 * b 0)).const_add
+      (a 0 * b 1 + a 1 * b 0)).add_const (a 2 * b 2) |>.add_const (a 3 * b 3)
+    rw [h.fderiv]; simp; ring
+  have hK : koszK (ppF H) p a b = ppF H p (gPP H p a b) := by
+    refine ContinuousLinearMap.ext fun w => ?_
+    rw [koszK_apply, hD, hD, hD, dH_lin hH hv, dH_lin hH hv, dH_lin hH hv, ppF_apply]
+    simp [gPP]; ring
+  rw [lcGam_apply, hK, inv.inverse_apply_self]
+
+omit hv in
+lemma dH_hasFDerivAt (p : Fin 4 → ℝ) (j : Fin 4) :
+    HasFDerivAt (fun y => dH H y j) ((fderiv ℝ (fderiv ℝ H) p).flip (Pi.single j 1)) p := by
+  have h2 := (hH.fderiv_right (m := ∞) (by simp)).differentiable (by simp) p
+  exact (h2.hasFDerivAt.clm_apply (hasFDerivAt_const (Pi.single j 1 : Fin 4 → ℝ) p)).congr_fderiv (by ext; simp)
+
+omit hv in
+/-- `gPP` differentiated, with `Dⱼ e = ∂_e ∂ⱼ H`. -/
+lemma gPP_deriv (p a b : Fin 4 → ℝ) : DifferentiableAt ℝ (fun y => gPP H y a b) p ∧ ∀ e : Fin 4 → ℝ,
+    fderiv ℝ (fun y => gPP H y a b) p e = ![0, (fderiv ℝ (fderiv ℝ H) p e (Pi.single 0 1) * (a 0 * b 0)
+      + fderiv ℝ (fderiv ℝ H) p e (Pi.single 2 1) * (a 0 * b 2 + a 2 * b 0)
+      + fderiv ℝ (fderiv ℝ H) p e (Pi.single 3 1) * (a 0 * b 3 + a 3 * b 0)) / 2,
+      -(fderiv ℝ (fderiv ℝ H) p e (Pi.single 2 1) * (a 0 * b 0)) / 2,
+      -(fderiv ℝ (fderiv ℝ H) p e (Pi.single 3 1) * (a 0 * b 0)) / 2] := by
+  have k0 : HasFDerivAt (fun y => gPP H y a b 0) (0 : (Fin 4 → ℝ) →L[ℝ] ℝ) p := hasFDerivAt_const (0 : ℝ) p
+  have k1 : HasFDerivAt (fun y => gPP H y a b 1) _ p := HasFDerivAt.mul_const (HasFDerivAt.add (HasFDerivAt.add
+    ((dH_hasFDerivAt hH p 0).mul_const (a 0 * b 0)) ((dH_hasFDerivAt hH p 2).mul_const (a 0 * b 2 + a 2 * b 0)))
+    ((dH_hasFDerivAt hH p 3).mul_const (a 0 * b 3 + a 3 * b 0))) (2⁻¹ : ℝ)
+  have k2 : HasFDerivAt (fun y => gPP H y a b 2) _ p :=
+    HasFDerivAt.mul_const (HasFDerivAt.neg ((dH_hasFDerivAt hH p 2).mul_const (a 0 * b 0))) (2⁻¹ : ℝ)
+  have k3 : HasFDerivAt (fun y => gPP H y a b 3) _ p :=
+    HasFDerivAt.mul_const (HasFDerivAt.neg ((dH_hasFDerivAt hH p 3).mul_const (a 0 * b 0))) (2⁻¹ : ℝ)
+  have hd : DifferentiableAt ℝ (fun y => gPP H y a b) p := by
+    refine differentiableAt_pi.2 fun i => ?_
+    fin_cases i
+    exacts [k0.differentiableAt, k1.differentiableAt, k2.differentiableAt, k3.differentiableAt]
+  refine ⟨hd, fun e => funext fun i => ?_⟩
+  have D : ∀ j, fderiv ℝ (fun y => gPP H y a b) p e j = fderiv ℝ (fun y => gPP H y a b j) p e := fun j => by
+    rw [_root_.fderiv_apply hd j]; rfl
+  have D0 := (D 0).trans (by rw [k0.fderiv])
+  have D1 := (D 1).trans (by rw [k1.fderiv])
+  have D2 := (D 2).trans (by rw [k2.fderiv])
+  have D3 := (D 3).trans (by rw [k3.fderiv])
+  fin_cases i
+  · exact D0
+  · exact D1.trans (by simp; ring)
+  · exact D2.trans (by simp; ring)
+  · exact D3.trans (by simp; ring)
+
+/-- **B11.** THE connection's Ricci contraction on the pp-wave: `Σᵢ (R(eᵢ, a)b)ⁱ = −½(H_xx + H_yy) a⁰ b⁰`. -/
+theorem pp_ricci (p a b : Fin 4 → ℝ) :
+    ∑ i, curv (lcConn (Fin 4 → ℝ) (ndOf (ppF H) (ppF_symm H) (ppF_nondeg H) ((ppF_smooth hH).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => a) (fun _ => b) p i
+      = -(ddH H p 2 2 + ddH H p 3 3) / 2 * (a 0 * b 0) := by
+  have hGd : Differentiable ℝ (lcGam (ppF H)) :=
+    (lcGam_smooth (ppF_nondeg H) (ppF_smooth hH)).differentiable (by simp)
+  have hF : ∀ e c d, fderiv ℝ (lcGam (ppF H)) p e c d = fderiv ℝ (fun y => gPP H y c d) p e := fun e c d => by
+    rw [fderiv_apply₂' (hGd p), show (fun y => lcGam (ppF H) y c d) = fun y => gPP H y c d from
+      funext fun y => lcGam_pp hH hv y c d]
+  have hsym : ∀ j : Fin 4, fderiv ℝ (fderiv ℝ H) p (Pi.single 1 1) (Pi.single j 1) = 0 := fun j => by
+    rw [(hH.contDiffAt.isSymmSndFDerivAt (by simp)) _ _]
+    have h0 : HasFDerivAt (fun y => dH H y 1) (0 : (Fin 4 → ℝ) →L[ℝ] ℝ) p := by
+      rw [show (fun y => dH H y 1) = fun _ => 0 from funext hv]; exact hasFDerivAt_const _ _
+    simpa using congrArg (fun L => L (Pi.single j 1 : Fin 4 → ℝ)) ((dH_hasFDerivAt hH p 1).unique h0)
+  simp only [Fin.sum_univ_four, curv_model _ _ (fun x w u => lcConn_const (ppF_symm H) (ppF_nondeg H) _ x w u) hGd,
+    hF, (gPP_deriv hH _ _ _).2, lcGam_pp hH hv]
+  simp [gPP, hsym, ddH]
+  ring
+
+omit hv in
+/-- Second partials read off any explicit derivative of `∂ⱼH`. -/
+lemma ddH_of {p : Fin 4 → ℝ} {j : Fin 4} {φ : (Fin 4 → ℝ) → ℝ} {L : (Fin 4 → ℝ) →L[ℝ] ℝ} (hφ : ∀ y, dH H y j = φ y)
+    (hL : HasFDerivAt φ L p) (i : Fin 4) : ddH H p i j = L (Pi.single i 1) := by
+  have := (dH_hasFDerivAt hH p j).unique (by rw [show (fun y => dH H y j) = φ from funext hφ]; exact hL)
+  simpa [ddH] using congrArg (fun M => M (Pi.single i 1 : Fin 4 → ℝ)) this
+
+end SweepB11
+
+lemma Hpw_smooth {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : ContDiff ℝ ∞ hx) : ContDiff ℝ ∞ (Hpw hp hx) := by
+  unfold Hpw; have := hps.comp (contDiff_apply ℝ ℝ (0 : Fin 4)); have := hxs.comp (contDiff_apply ℝ ℝ (0 : Fin 4))
+  fun_prop
+
+/-- **B11, receipt 78.** The polarized wave `H = h₊(u)(x²−y²) + 2hₓ(u)xy` is Ricci-flat for THE Levi-Civita
+connection, for ANY smooth `h₊, hₓ`. -/
+theorem pw_ricci_flat {hp hx : ℝ → ℝ} (hps : ContDiff ℝ ∞ hp) (hxs : ContDiff ℝ ∞ hx) (p a b : Fin 4 → ℝ) :
+    ∑ i, curv (lcConn (Fin 4 → ℝ) (ndOf (ppF (Hpw hp hx)) (ppF_symm _) (ppF_nondeg _)
+        ((ppF_smooth (Hpw_smooth hps hxs)).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => a) (fun _ => b) p i = 0 := by
+  have hH := Hpw_smooth hps hxs
+  have dp : ∀ y : Fin 4 → ℝ, DifferentiableAt ℝ hp (y 0) := fun y => (hps.differentiable (by simp)) _
+  have dx : ∀ y : Fin 4 → ℝ, DifferentiableAt ℝ hx (y 0) := fun y => (hxs.differentiable (by simp)) _
+  have c : ∀ (i : Fin 4) (y : Fin 4 → ℝ), HasFDerivAt (fun z : Fin 4 → ℝ => z i) _ y :=
+    fun i y => hasFDerivAt_apply (𝕜 := ℝ) i y
+  have kH : ∀ y, HasFDerivAt (Hpw hp hx) _ y := fun y =>
+    ((fd_coord (dp y)).mul (((c 2 y).pow 2).sub ((c 3 y).pow 2))).add
+      (((fd_coord (dx y)).const_mul 2).mul ((c 2 y).mul (c 3 y)))
+  have d1 : ∀ y, dH (Hpw hp hx) y 1 = 0 := fun y => by rw [dH, (kH y).fderiv]; simp
+  have d2 : ∀ y, dH (Hpw hp hx) y 2 = 2 * hp (y 0) * y 2 + 2 * hx (y 0) * y 3 := fun y => by
+    rw [dH, (kH y).fderiv]; simp; ring
+  have d3 : ∀ y, dH (Hpw hp hx) y 3 = -(2 * hp (y 0) * y 3) + 2 * hx (y 0) * y 2 := fun y => by
+    rw [dH, (kH y).fderiv]; simp; ring
+  rw [pp_ricci hH d1, ddH_of hH d2 ((((fd_coord (dp p)).const_mul 2).mul (c 2 p)).add
+      (((fd_coord (dx p)).const_mul 2).mul (c 3 p))),
+    ddH_of hH d3 ((((fd_coord (dp p)).const_mul 2).mul (c 3 p)).neg.add (((fd_coord (dx p)).const_mul 2).mul (c 2 p)))]
+  simp
+
+
+
+/-! ## `r7315`, B12 — receipt 55: on the pp-wave, THE connection is vacuum iff `H_xx + H_yy = 0`; its Riemann
+form is `g(R(a,b)c, d) = P(a,b,c,d)` in closed form; `g(R(∂_u,∂_x)∂_u,∂_x) = ½H_xx` is nonzero for a nontrivial wave
+while the Kretschmann contraction `R_abcd R^abcd` (raised through the `g`-dual basis) VANISHES: Petrov type N -/
+
+section SweepB12
+
+set_option synthInstance.maxHeartbeats 400000
+
+variable {H : (Fin 4 → ℝ) → ℝ} (hH : ContDiff ℝ ∞ H) (hv : ∀ p, dH H p 1 = 0)
+include hH hv
+
+/-- The pp-wave as an `NDMetric`. -/
+noncomputable abbrev ppM : NDMetric 𝓘(ℝ, Fin 4 → ℝ) (Fin 4 → ℝ) :=
+  ndOf (ppF H) (ppF_symm H) (ppF_nondeg H) ((ppF_smooth hH).differentiable (by simp))
+
+/-- **B12.** Vacuum iff harmonic. -/
+theorem pp_vacuum_iff (p : Fin 4 → ℝ) :
+    (∀ a b, ∑ i, curv (lcConn (Fin 4 → ℝ) (ppM hH)) (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => a)
+      (fun _ => b) p i = 0) ↔ ddH H p 2 2 + ddH H p 3 3 = 0 := by
+  simp only [pp_ricci hH hv]
+  refine ⟨fun h => ?_, fun h a b => by rw [h]; ring⟩
+  have := h (Pi.single 0 1) (Pi.single 0 1); simp at this; linarith
+
+/-- **B12, the Riemann form in closed form**, `Aⱼ = ∂_a∂ⱼH`, `Bⱼ = ∂_b∂ⱼH`. -/
+theorem pp_riemann (p a b c d : Fin 4 → ℝ) :
+    ppF H p (curv (lcConn (Fin 4 → ℝ) (ppM hH)) (fun _ => a) (fun _ => b) (fun _ => c) p) d
+      = (fderiv ℝ (fderiv ℝ H) p a (Pi.single 0 1) * (b 0 * c 0)
+          + fderiv ℝ (fderiv ℝ H) p a (Pi.single 2 1) * (b 0 * c 2 + b 2 * c 0)
+          + fderiv ℝ (fderiv ℝ H) p a (Pi.single 3 1) * (b 0 * c 3 + b 3 * c 0)
+          - fderiv ℝ (fderiv ℝ H) p b (Pi.single 0 1) * (a 0 * c 0)
+          - fderiv ℝ (fderiv ℝ H) p b (Pi.single 2 1) * (a 0 * c 2 + a 2 * c 0)
+          - fderiv ℝ (fderiv ℝ H) p b (Pi.single 3 1) * (a 0 * c 3 + a 3 * c 0)) / 2 * d 0
+        - (fderiv ℝ (fderiv ℝ H) p a (Pi.single 2 1) * b 0 - fderiv ℝ (fderiv ℝ H) p b (Pi.single 2 1) * a 0)
+          * c 0 / 2 * d 2
+        - (fderiv ℝ (fderiv ℝ H) p a (Pi.single 3 1) * b 0 - fderiv ℝ (fderiv ℝ H) p b (Pi.single 3 1) * a 0)
+          * c 0 / 2 * d 3 := by
+  have hGd : Differentiable ℝ (lcGam (ppF H)) :=
+    (lcGam_smooth (ppF_nondeg H) (ppF_smooth hH)).differentiable (by simp)
+  have hF : ∀ e c d, fderiv ℝ (lcGam (ppF H)) p e c d = fderiv ℝ (fun y => gPP H y c d) p e := fun e c d => by
+    rw [fderiv_apply₂' (hGd p), show (fun y => lcGam (ppF H) y c d) = fun y => gPP H y c d from
+      funext fun y => lcGam_pp hH hv y c d]
+  rw [curv_model _ _ (fun x w u => lcConn_const (ppF_symm H) (ppF_nondeg H) _ x w u) hGd, hF, hF,
+    (gPP_deriv hH _ _ _).2, (gPP_deriv hH _ _ _).2, lcGam_pp hH hv, lcGam_pp hH hv, lcGam_pp hH hv, lcGam_pp hH hv,
+    ppF_apply]
+  simp [gPP]; ring
+
+/-- **B12.** `g(R(∂_u, ∂_x)∂_u, ∂_x) = ½ H_xx`: nonzero Riemann (= Weyl in vacuum) when `H_xx ≠ 0`. -/
+theorem pp_Ruxux (p : Fin 4 → ℝ) :
+    ppF H p (curv (lcConn (Fin 4 → ℝ) (ppM hH)) (fun _ => (Pi.single 0 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single 2 1 : Fin 4 → ℝ)) (fun _ => (Pi.single 0 1 : Fin 4 → ℝ)) p) (Pi.single 2 1)
+      = ddH H p 2 2 / 2 := by
+  rw [pp_riemann hH hv]; simp [ddH]; ring
+
+/-- The `g`-dual basis: `ê₀ = ∂_v`, `ê₁ = ∂_u − H ∂_v`, `ê₂ = ∂_x`, `ê₃ = ∂_y`. -/
+noncomputable def ppDual (H : (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) (i : Fin 4) : Fin 4 → ℝ :=
+  ![Pi.single 1 1, Pi.single 0 1 - H p • Pi.single 1 1, Pi.single 2 1, Pi.single 3 1] i
+
+omit hH hv in
+lemma ppDual_dual (H : (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) (i j : Fin 4) :
+    ppF H p (ppDual H p i) (Pi.single j 1) = if i = j then 1 else 0 := by
+  fin_cases i <;> fin_cases j <;> simp [ppDual, ppF_apply]
+
+/-- **B12, VSI.** The Kretschmann contraction `Σ R(eᵢ,eⱼ,eₖ,eₗ) R(êᵢ,êⱼ,êₖ,êₗ)` vanishes. -/
+theorem pp_kretschmann (p : Fin 4 → ℝ) :
+    ∑ i, ∑ j, ∑ k, ∑ l,
+      ppF H p (curv (lcConn (Fin 4 → ℝ) (ppM hH)) (fun _ => (Pi.single i 1 : Fin 4 → ℝ))
+        (fun _ => (Pi.single j 1 : Fin 4 → ℝ)) (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p) (Pi.single l 1)
+      * ppF H p (curv (lcConn (Fin 4 → ℝ) (ppM hH)) (fun _ => ppDual H p i) (fun _ => ppDual H p j)
+        (fun _ => ppDual H p k) p) (ppDual H p l) = 0 := by
+  simp only [pp_riemann hH hv]
+  simp [Fin.sum_univ_four, ppDual]
+
+end SweepB12
+
+/-! ## `r7315`, B13 — receipt 8: a 4D engine (THE connection's Christoffel form for ANY diagonal metric on `ℝ⁴`, and
+`□φ` as the trace of its Hessian), then de Sitter in conformal time, `a(η)²(−dη² + dx²)`: the mode
+`φ = h(η) cos(kx)` has `□φ = a⁻²(−h″ − 2(a′/a)h′ − k²h) cos(kx)`, and with `a = −1/(Hη)` the TT mode
+`h = η cos kη − sin kη / k` (`u = ah ∝ cos kη − sin kη/(kη)`) solves `□φ = 0` -/
+
+section SweepB13
+
+set_option synthInstance.maxHeartbeats 400000
+
+lemma diag4_smooth {c : Fin 4 → (Fin 4 → ℝ) → ℝ} (hcs : ∀ i, ContDiff ℝ ∞ (c i)) : ContDiff ℝ ∞ (diag4 c) := by
+  rw [contDiff_clm_apply_iff]; intro a; rw [contDiff_clm_apply_iff]; intro b
+  simp only [diag4_apply]
+  exact ContDiff.sum fun i _ => (hcs i).mul contDiff_const
+
+/-- The Christoffel form of `Σ cᵢ(p) dxᵢ²`: `Γ(a,b)ₖ = (Dcₖ·a bₖ + Dcₖ·b aₖ − Σⱼ ∂ₖcⱼ aⱼbⱼ)/(2cₖ)`. -/
+noncomputable def gamD (c : Fin 4 → (Fin 4 → ℝ) → ℝ) (p a b : Fin 4 → ℝ) : Fin 4 → ℝ := fun k =>
+  (fderiv ℝ (c k) p a * b k + fderiv ℝ (c k) p b * a k - ∑ j, fderiv ℝ (c j) p (Pi.single k 1) * (a j * b j))
+    / (2 * c k p)
+
+variable {c : Fin 4 → (Fin 4 → ℝ) → ℝ} (hc : ∀ i p, c i p ≠ 0) (hcs : ∀ i, ContDiff ℝ ∞ (c i))
+include hc hcs
+
+/-- **The engine:** `lcGam` of any diagonal metric on `ℝ⁴` is `gamD`. -/
+lemma lcGam_diag4 (p a b : Fin 4 → ℝ) : lcGam (diag4 c) p a b = gamD c p a b := by
+  have inv := flat_isInvertible (diag4 c) (fun p u h => diag4_nondeg (fun i => hc i p) u h) p
+  have hD : ∀ e a b : Fin 4 → ℝ, fderiv ℝ (diag4 c) p e a b = ∑ i, fderiv ℝ (c i) p e * (a i * b i) :=
+    fun e a b => by
+    rw [fderiv_apply₂' ((diag4_smooth hcs).differentiable (by simp) p),
+      show (fun y => diag4 c y a b) = fun y => ∑ i, c i y * (a i * b i) from funext fun y => diag4_apply c y a b]
+    rw [(HasFDerivAt.fun_sum fun i _ => (((hcs i).differentiable (by simp) p).hasFDerivAt.mul_const
+      (a i * b i))).fderiv]
+    simp; exact Finset.sum_congr rfl fun i _ => by ring
+  have hK : koszK (diag4 c) p a b = diag4 c p (gamD c p a b) := by
+    refine ContinuousLinearMap.ext fun v => ?_
+    have hv : v = ∑ k, v k • (Pi.single k 1 : Fin 4 → ℝ) := by ext i; simp [Pi.single_apply]
+    rw [koszK_apply, hD, hD, hD, diag4_apply]
+    simp only [gamD, Fin.sum_univ_four]
+    have := hc 0 p; have := hc 1 p; have := hc 2 p; have := hc 3 p
+    conv_lhs => rw [hv]
+    simp [Fin.sum_univ_four]
+    field_simp; ring
+  rw [lcGam_apply, hK, inv.inverse_apply_self]
+
+omit hc hcs
+
+/-- THE connection's wave operator for a diagonal metric `Σ cᵢ dxᵢ²`: `□φ = Σᵢ cᵢ⁻¹ (∂ᵢ∂ᵢφ − (∇_{eᵢ} eᵢ)φ)`. -/
+noncomputable def boxD (m : NDMetric 𝓘(ℝ, Fin 4 → ℝ) (Fin 4 → ℝ)) (c : Fin 4 → (Fin 4 → ℝ) → ℝ)
+    (φ : (Fin 4 → ℝ) → ℝ) (p : Fin 4 → ℝ) : ℝ :=
+  ∑ i, (c i p)⁻¹ * (fderiv ℝ (fun y => fderiv ℝ φ y (Pi.single i 1)) p (Pi.single i 1)
+    - fderiv ℝ φ p (lcConn (Fin 4 → ℝ) m (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) p (Pi.single i 1)))
+
+/-- The conformally flat metric `a(η)²(−dη² + dx² + dy² + dz²)`. -/
+noncomputable def cConf (a : ℝ → ℝ) : Fin 4 → (Fin 4 → ℝ) → ℝ :=
+  ![fun p => -a (p 0) ^ 2, fun p => a (p 0) ^ 2, fun p => a (p 0) ^ 2, fun p => a (p 0) ^ 2]
+
+variable {a h : ℝ → ℝ} (ha : ∀ s, a s ≠ 0) (has : ContDiff ℝ ∞ a) (hhs : ContDiff ℝ ∞ h)
+
+include ha in
+lemma cConf_ne (i : Fin 4) (p : Fin 4 → ℝ) : cConf a i p ≠ 0 := by
+  fin_cases i <;> simp [cConf, ha]
+
+include has in
+lemma cConf_smooth (i : Fin 4) : ContDiff ℝ ∞ (cConf a i) := by
+  have := has.comp (contDiff_apply ℝ ℝ (0 : Fin 4))
+  fin_cases i <;> simp [cConf] <;> fun_prop
+
+include ha has hhs in
+/-- **B13.** `□(h(η) cos kx) = a⁻²(−h″ − 2(a′/a)h′ − k²h) cos kx` for THE Levi-Civita connection. -/
+theorem conf_box (k : ℝ) (p : Fin 4 → ℝ) :
+    boxD (ndOf (diag4 (cConf a)) (diag4_symm _) (fun p u h => diag4_nondeg (fun i => cConf_ne ha i p) u h)
+      ((diag4_smooth (cConf_smooth has)).differentiable (by simp))) (cConf a) (fun y => h (y 0) * Real.cos (k * y 1)) p
+      = (a (p 0) ^ 2)⁻¹ * (-deriv (deriv h) (p 0) - 2 * (deriv a (p 0) / a (p 0)) * deriv h (p 0)
+          - k ^ 2 * h (p 0)) * Real.cos (k * p 1) := by
+  have da : ∀ s, DifferentiableAt ℝ a s := fun s => (has.differentiable (by simp)) s
+  have dh : ∀ s, DifferentiableAt ℝ h s := fun s => (hhs.differentiable (by simp)) s
+  have dh' : ∀ s, DifferentiableAt ℝ (deriv h) s :=
+    fun s => ((contDiff_infty_iff_deriv.1 hhs).2.differentiable (by simp)) s
+  have pr : ∀ (i : Fin 4) (y : Fin 4 → ℝ), HasFDerivAt (fun z : Fin 4 → ℝ => z i) _ y :=
+    fun i y => hasFDerivAt_apply (𝕜 := ℝ) i y
+  have cosk : ∀ (y : Fin 4 → ℝ), HasFDerivAt (fun z : Fin 4 → ℝ => Real.cos (k * z 1)) _ y :=
+    fun y => (Real.hasDerivAt_cos _).comp_hasFDerivAt y ((pr 1 y).const_mul k)
+  have sink : ∀ (y : Fin 4 → ℝ), HasFDerivAt (fun z : Fin 4 → ℝ => Real.sin (k * z 1)) _ y :=
+    fun y => (Real.hasDerivAt_sin _).comp_hasFDerivAt y ((pr 1 y).const_mul k)
+  have hφ : ∀ y, HasFDerivAt (fun z : Fin 4 → ℝ => h (z 0) * Real.cos (k * z 1)) _ y :=
+    fun y => (fd_coord (dh _)).mul (cosk y)
+  have e0 : (fun y => fderiv ℝ (fun z : Fin 4 → ℝ => h (z 0) * Real.cos (k * z 1)) y (Pi.single 0 1))
+      = fun y => deriv h (y 0) * Real.cos (k * y 1) := funext fun y => by rw [(hφ y).fderiv]; simp; ring
+  have e1 : (fun y => fderiv ℝ (fun z : Fin 4 → ℝ => h (z 0) * Real.cos (k * z 1)) y (Pi.single 1 1))
+      = fun y => -(k * (h (y 0) * Real.sin (k * y 1))) := funext fun y => by rw [(hφ y).fderiv]; simp; ring
+  have e2 : ∀ j : Fin 4, j = 2 ∨ j = 3 →
+      (fun y => fderiv ℝ (fun z : Fin 4 → ℝ => h (z 0) * Real.cos (k * z 1)) y (Pi.single j 1)) = fun _ => 0 :=
+    fun j hj => funext fun y => by rcases hj with rfl | rfl <;> (rw [(hφ y).fderiv]; simp)
+  have hsq := (fd_coord (x := p) (da (p 0))).pow 2
+  have hq : ∀ v, fderiv ℝ (fun p : Fin 4 → ℝ => a (p 0) ^ 2) p v = 2 * a (p 0) * deriv a (p 0) * v 0 :=
+    fun v => by rw [hsq.fderiv]; simp; ring
+  have g0 : HasFDerivAt (fun y : Fin 4 → ℝ => deriv h (y 0) * Real.cos (k * y 1)) _ p :=
+    (fd_coord (dh' _)).mul (cosk p)
+  have g1 : HasFDerivAt (fun y : Fin 4 → ℝ => -(k * (h (y 0) * Real.sin (k * y 1)))) _ p :=
+    (((fd_coord (dh _)).mul (sink p)).const_mul k).neg
+  simp only [boxD, Fin.sum_univ_four, lcConn_const, lcGam_diag4 (cConf_ne ha) (cConf_smooth has), e0, e1,
+    e2 2 (Or.inl rfl), e2 3 (Or.inr rfl), (hφ p).fderiv]
+  rw [g0.fderiv, g1.fderiv]
+  simp [gamD, Fin.sum_univ_four, cConf, hq]
+  have := ha (p 0)
+  field_simp; ring
+
+/-- The de Sitter TT mode, `h = η cos kη − sin kη / k` (so `a h ∝ cos kη − sin kη/(kη)`). -/
+noncomputable def hTT (k s : ℝ) : ℝ := s * Real.cos (k * s) - Real.sin (k * s) / k
+
+open Filter Topology in
+include ha has in
+/-- **B13, receipt 8.** On de Sitter in conformal time (`a = −1/(Hη)` near `η`), the TT mode `h(η) cos kx` solves
+THE connection's wave equation `□φ = 0`. -/
+theorem ds_tt_mode {H k η : ℝ} (hH : H ≠ 0) (hk : k ≠ 0) (hη : η ≠ 0) (haη : a =ᶠ[𝓝 η] fun s => -(H * s)⁻¹)
+    (p : Fin 4 → ℝ) (hp : p 0 = η) :
+    boxD (ndOf (diag4 (cConf a)) (diag4_symm _) (fun p u h => diag4_nondeg (fun i => cConf_ne ha i p) u h)
+      ((diag4_smooth (cConf_smooth has)).differentiable (by simp))) (cConf a)
+      (fun y => hTT k (y 0) * Real.cos (k * y 1)) p = 0 := by
+  have hs : ContDiff ℝ ∞ (hTT k) := by unfold hTT; fun_prop
+  have d1 : ∀ s, HasDerivAt (hTT k) (-(k * s * Real.sin (k * s))) s := fun s => by
+    have hc := (Real.hasDerivAt_cos (k * s)).comp s ((hasDerivAt_id s).const_mul k)
+    have hn := (Real.hasDerivAt_sin (k * s)).comp s ((hasDerivAt_id s).const_mul k)
+    refine HasDerivAt.congr_deriv (HasDerivAt.sub ((hasDerivAt_id s).mul hc) (hn.div_const k)) ?_
+    simp; field_simp; ring
+  have d2 : HasDerivAt (fun s => -(k * s * Real.sin (k * s))) (-(k * Real.sin (k * η) + k * η * (Real.cos (k * η) * k))) η :=
+    by
+    have hn := (Real.hasDerivAt_sin (k * η)).comp η ((hasDerivAt_id η).const_mul k)
+    refine HasDerivAt.congr_deriv ((((hasDerivAt_id η).const_mul k).mul hn).neg) ?_
+    simp
+  have dd : deriv (hTT k) = fun s => -(k * s * Real.sin (k * s)) := funext fun s => (d1 s).deriv
+  have da : deriv a η = 1 / (H * η ^ 2) := by
+    rw [haη.deriv_eq]
+    exact (((hasDerivAt_id η).const_mul H).inv (mul_ne_zero hH hη)).neg.deriv.trans (by simp only [id_eq]; field_simp)
+  rw [conf_box ha has hs, hp, dd, d2.deriv, haη.eq_of_nhds, da]
+  unfold hTT
+  field_simp; ring
+
+end SweepB13
+
+/-! ## `r7315`, B14 — receipt 76: the Mukhanov variable. For THE connection on `a(η)²(−dη² + dx²)`, the field mode
+`φ = h(η) cos kx` has `(□ − m²)φ = −a⁻³ (W″ + (k² + m²a² − a″/a) W) cos kx` with `W = a h`; on de Sitter
+`a = −1/(Hη)`, `a″/a = 2/η²`, so the massless mode obeys `W″ + (k² − 2/η²) W = 0` -/
+
+section SweepB14
+
+variable {a h : ℝ → ℝ} (ha : ∀ s, a s ≠ 0) (has : ContDiff ℝ ∞ a) (hhs : ContDiff ℝ ∞ h)
+include ha has hhs
+
+/-- **B14, receipt 76.** -/
+theorem mukhanov (k m : ℝ) (p : Fin 4 → ℝ) :
+    boxD (ndOf (diag4 (cConf a)) (diag4_symm _) (fun p u h => diag4_nondeg (fun i => cConf_ne ha i p) u h)
+      ((diag4_smooth (cConf_smooth has)).differentiable (by simp))) (cConf a) (fun y => h (y 0) * Real.cos (k * y 1)) p
+      - m ^ 2 * (h (p 0) * Real.cos (k * p 1))
+      = -(a (p 0) ^ 3)⁻¹ * (deriv (deriv fun s => a s * h s) (p 0)
+          + (k ^ 2 + m ^ 2 * a (p 0) ^ 2 - deriv (deriv a) (p 0) / a (p 0)) * (a (p 0) * h (p 0)))
+        * Real.cos (k * p 1) := by
+  have D : ∀ {f : ℝ → ℝ}, ContDiff ℝ ∞ f → ∀ s, HasDerivAt f (deriv f s) s ∧ HasDerivAt (deriv f) (deriv (deriv f) s) s :=
+    fun hf s => ⟨((contDiff_infty_iff_deriv.1 hf).1 s).hasDerivAt,
+      (((contDiff_infty_iff_deriv.1 hf).2.differentiable (by simp)) s).hasDerivAt⟩
+  have d1 : deriv (fun s => a s * h s) = fun s => deriv a s * h s + a s * deriv h s :=
+    funext fun s => ((D has s).1.mul (D hhs s).1).deriv
+  have d2 : deriv (fun s => deriv a s * h s + a s * deriv h s) (p 0) = deriv (deriv a) (p 0) * h (p 0)
+      + deriv a (p 0) * deriv h (p 0) + (deriv a (p 0) * deriv h (p 0) + a (p 0) * deriv (deriv h) (p 0)) :=
+    (HasDerivAt.add ((D has (p 0)).2.mul (D hhs (p 0)).1) ((D has (p 0)).1.mul (D hhs (p 0)).2)).deriv
+  rw [conf_box ha has hhs, d1, d2]
+  have := ha (p 0)
+  field_simp; ring
+
+omit has hhs ha
+
+open Filter Topology in
+/-- On de Sitter, `a = −1/(Hη)`: `a″/a = 2/η²`. -/
+lemma ds_app {H η : ℝ} (hH : H ≠ 0) (hη : η ≠ 0) (haη : a =ᶠ[𝓝 η] fun s => -(H * s)⁻¹) :
+    deriv (deriv a) η / a η = 2 / η ^ 2 := by
+  have hd : ∀ s ≠ 0, HasDerivAt (fun s => -(H * s)⁻¹) ((H * s ^ 2)⁻¹) s := fun s hs =>
+    (((hasDerivAt_id s).const_mul H).inv (mul_ne_zero hH hs)).neg.congr_deriv (by simp only [id_eq]; field_simp)
+  have e1 : deriv a =ᶠ[𝓝 η] fun s => (H * s ^ 2)⁻¹ :=
+    haη.deriv.trans ((eventually_ne_nhds hη).mono fun s hs => (hd s hs).deriv)
+  have h2 : HasDerivAt (fun s => (H * s ^ 2)⁻¹) (-(H * (2 * η)) / (H * η ^ 2) ^ 2) η := by
+    have := ((hasDerivAt_pow 2 η).const_mul H).inv (mul_ne_zero hH (pow_ne_zero 2 hη))
+    convert this using 1; simp
+  rw [e1.deriv_eq, h2.deriv, haη.eq_of_nhds]
+  field_simp
+
+end SweepB14
+
+/-! ## `r7315`, B15 — receipt 22: a second engine, for time-dependent diagonal metrics `Σ qᵢ(t) dxᵢ²` on `ℝ⁴` (THE
+connection's Christoffel form `GT`, its `t`-derivative `DGT`, and its curvature on constant fields in closed form);
+then de Sitter in the flat slicing, `−dt² + e^{2Ht} dx²`: `R = 12H²`, `Ric² = 36H⁴`, `Riem² = 24H⁴`, so
+`Weyl² = 0` and `GB = 24H⁴` — with `α = 1/H` these are `144, 36, 24 /α⁴` squared and contracted -/
+
+section SweepB15
+
+set_option synthInstance.maxHeartbeats 400000
+
+/-- `Σ qᵢ(t) dxᵢ²`, with `t = p 0`. -/
+def cT (q : Fin 4 → ℝ → ℝ) : Fin 4 → (Fin 4 → ℝ) → ℝ := fun i p => q i (p 0)
+
+noncomputable def GT (q : Fin 4 → ℝ → ℝ) (s : ℝ) (a b : Fin 4 → ℝ) : Fin 4 → ℝ := fun k =>
+  (deriv (q k) s * (a 0 * b k + b 0 * a k) - if k = 0 then ∑ j, deriv (q j) s * (a j * b j) else 0) / (2 * q k s)
+
+noncomputable def DGT (q : Fin 4 → ℝ → ℝ) (s : ℝ) (a b : Fin 4 → ℝ) : Fin 4 → ℝ := fun k =>
+  ((deriv (deriv (q k)) s * (a 0 * b k + b 0 * a k)
+      - if k = 0 then ∑ j, deriv (deriv (q j)) s * (a j * b j) else 0) * (2 * q k s)
+    - (deriv (q k) s * (a 0 * b k + b 0 * a k) - if k = 0 then ∑ j, deriv (q j) s * (a j * b j) else 0)
+      * (2 * deriv (q k) s)) / (2 * q k s) ^ 2
+
+/-- The curvature, in closed form: `R(u,v)w = u⁰ DGT(v,w) − v⁰ DGT(u,w) + Γ(u,Γ(v,w)) − Γ(v,Γ(u,w))`. -/
+noncomputable def curvT (q : Fin 4 → ℝ → ℝ) (s : ℝ) (u v w : Fin 4 → ℝ) : Fin 4 → ℝ :=
+  u 0 • DGT q s v w - v 0 • DGT q s u w + GT q s u (GT q s v w) - GT q s v (GT q s u w)
+
+variable {q : Fin 4 → ℝ → ℝ} (hq : ∀ i s, q i s ≠ 0) (hqs : ∀ i, ContDiff ℝ ∞ (q i))
+include hq hqs
+
+lemma cT_ne (i : Fin 4) (p : Fin 4 → ℝ) : cT q i p ≠ 0 := hq i _
+lemma cT_smooth (i : Fin 4) : ContDiff ℝ ∞ (cT q i) := (hqs i).comp (contDiff_apply ℝ ℝ (0 : Fin 4))
+
+lemma GT_hasDerivAt (s : ℝ) (a b : Fin 4 → ℝ) : HasDerivAt (fun t => GT q t a b) (DGT q s a b) s := by
+  have d1 : ∀ i, HasDerivAt (deriv (q i)) (deriv (deriv (q i)) s) s := fun i =>
+    (((contDiff_infty_iff_deriv.1 (hqs i)).2.differentiable (by simp)) s).hasDerivAt
+  have d0 : ∀ i, HasDerivAt (q i) (deriv (q i) s) s := fun i => (((hqs i).differentiable (by simp)) s).hasDerivAt
+  refine hasDerivAt_pi.2 fun k => ?_
+  have hS : HasDerivAt (fun t => ∑ j, deriv (q j) t * (a j * b j)) (∑ j, deriv (deriv (q j)) s * (a j * b j)) s :=
+    HasDerivAt.fun_sum fun j _ => (d1 j).mul_const _
+  have hN : HasDerivAt (fun t => deriv (q k) t * (a 0 * b k + b 0 * a k)
+      - if k = 0 then ∑ j, deriv (q j) t * (a j * b j) else 0)
+      (deriv (deriv (q k)) s * (a 0 * b k + b 0 * a k)
+        - if k = 0 then ∑ j, deriv (deriv (q j)) s * (a j * b j) else 0) s := by
+    split_ifs
+    · exact HasDerivAt.sub ((d1 k).mul_const _) hS
+    · exact HasDerivAt.sub ((d1 k).mul_const _) (hasDerivAt_const s 0)
+  exact (hN.div ((d0 k).const_mul 2) (mul_ne_zero two_ne_zero (hq k s))).congr_deriv (by simp [DGT])
+
+lemma lcGam_T (p a b : Fin 4 → ℝ) : lcGam (diag4 (cT q)) p a b = GT q (p 0) a b := by
+  rw [lcGam_diag4 (cT_ne hq hqs) (cT_smooth hq hqs)]
+  have hf : ∀ i v, fderiv ℝ (cT q i) p v = deriv (q i) (p 0) * v 0 := fun i v => by
+    show fderiv ℝ (fun y : Fin 4 → ℝ => q i (y 0)) p v = _
+    rw [(fd_coord (x := p) (((hqs i).differentiable (by simp)) (p 0))).fderiv]; simp [mul_comm]
+  funext k
+  fin_cases k <;> simp [gamD, GT, hf, cT, Fin.sum_univ_four] <;> ring
+
+lemma fderiv_lcGam_T (p u a b : Fin 4 → ℝ) :
+    fderiv ℝ (lcGam (diag4 (cT q))) p u a b = u 0 • DGT q (p 0) a b := by
+  have hGd : Differentiable ℝ (lcGam (diag4 (cT q))) :=
+    (lcGam_smooth (fun p u h => diag4_nondeg (fun i => cT_ne hq hqs i p) u h)
+      (diag4_smooth (cT_smooth hq hqs))).differentiable (by simp)
+  rw [fderiv_apply₂' (hGd p), show (fun y => lcGam (diag4 (cT q)) y a b) = fun y => GT q (y 0) a b from
+    funext fun y => lcGam_T hq hqs y a b]
+  have H := (GT_hasDerivAt hq hqs (p 0) a b).hasFDerivAt.comp p (hasFDerivAt_apply (𝕜 := ℝ) (0 : Fin 4) p)
+  rw [show (fun y : Fin 4 → ℝ => GT q (y 0) a b) = (fun t => GT q t a b) ∘ fun y => y 0 from rfl, H.fderiv]
+  simp
+
+/-- **B15, the engine.** THE connection's curvature of `Σ qᵢ(t) dxᵢ²` on constant fields is `curvT`. -/
+theorem curv_T (p u v w : Fin 4 → ℝ) :
+    curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cT q)) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => cT_ne hq hqs i p) u h) ((diag4_smooth (cT_smooth hq hqs)).differentiable
+        (by simp)))) (fun _ => u) (fun _ => v) (fun _ => w) p = curvT q (p 0) u v w := by
+  have hGd : Differentiable ℝ (lcGam (diag4 (cT q))) :=
+    (lcGam_smooth (fun p u h => diag4_nondeg (fun i => cT_ne hq hqs i p) u h)
+      (diag4_smooth (cT_smooth hq hqs))).differentiable (by simp)
+  rw [curv_model _ _ (fun x w u => lcConn_const (diag4_symm _) _ _ x w u) hGd, fderiv_lcGam_T hq hqs,
+    fderiv_lcGam_T hq hqs, lcGam_T hq hqs, lcGam_T hq hqs, lcGam_T hq hqs, lcGam_T hq hqs]
+  rfl
+
+omit hq hqs
+
+/-- Contractions of a Riemann array `Rf i j k = R(eᵢ,eⱼ)eₖ` through a diagonal metric `g`. -/
+noncomputable def ricC (Rf : Fin 4 → Fin 4 → Fin 4 → Fin 4 → ℝ) (j k : Fin 4) : ℝ := ∑ i, Rf i j k i
+noncomputable def scalC (g : Fin 4 → ℝ) (Rf : Fin 4 → Fin 4 → Fin 4 → Fin 4 → ℝ) : ℝ := ∑ j, ricC Rf j j / g j
+noncomputable def ric2C (g : Fin 4 → ℝ) (Rf : Fin 4 → Fin 4 → Fin 4 → Fin 4 → ℝ) : ℝ :=
+  ∑ j, ∑ k, ricC Rf j k ^ 2 / (g j * g k)
+noncomputable def riem2C (g : Fin 4 → ℝ) (Rf : Fin 4 → Fin 4 → Fin 4 → Fin 4 → ℝ) : ℝ :=
+  ∑ i, ∑ j, ∑ k, ∑ l, (g l * Rf i j k l) ^ 2 / (g i * g j * g k * g l)
+
+/-- de Sitter in the flat slicing: `−dt² + e^{2Ht}(dx² + dy² + dz²)`. -/
+noncomputable def qDS (H : ℝ) : Fin 4 → ℝ → ℝ :=
+  ![fun _ => -1, fun s => Real.exp (2 * H * s), fun s => Real.exp (2 * H * s), fun s => Real.exp (2 * H * s)]
+
+lemma qDS_ne (H : ℝ) (i : Fin 4) (s : ℝ) : qDS H i s ≠ 0 := by fin_cases i <;> simp [qDS, Real.exp_ne_zero]
+lemma qDS_smooth (H : ℝ) (i : Fin 4) : ContDiff ℝ ∞ (qDS H i) := by fin_cases i <;> simp [qDS] <;> fun_prop
+
+/-- **B15, receipt 22.** THE connection's invariants on de Sitter: `R = 12H²`, `Ric² = 36H⁴`, `Riem² = 24H⁴`;
+hence `Weyl² = Riem² − 2Ric² + R²/3 = 0` and `GB = Riem² − 4Ric² + R² = 24H⁴`. -/
+theorem ds_invariants (H : ℝ) (p : Fin 4 → ℝ) :
+    let Rf := fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cT (qDS H))) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => cT_ne (qDS_ne H) (qDS_smooth H) i p) u h)
+      ((diag4_smooth (cT_smooth (qDS_ne H) (qDS_smooth H))).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p
+    let g := fun i => qDS H i (p 0)
+    scalC g Rf = 12 * H ^ 2 ∧ ric2C g Rf = 36 * H ^ 4 ∧ riem2C g Rf = 24 * H ^ 4
+      ∧ riem2C g Rf - 2 * ric2C g Rf + scalC g Rf ^ 2 / 3 = 0
+      ∧ riem2C g Rf - 4 * ric2C g Rf + scalC g Rf ^ 2 = 24 * H ^ 4 := by
+  intro Rf g
+  have h1 : ∀ s, HasDerivAt (fun s => Real.exp (2 * H * s)) (2 * H * Real.exp (2 * H * s)) s := fun s =>
+    HasDerivAt.congr_deriv (((hasDerivAt_id' s).const_mul (2 * H)).exp) (by ring)
+  have e1 : deriv (fun s => Real.exp (2 * H * s)) = fun s => 2 * H * Real.exp (2 * H * s) :=
+    funext fun s => (h1 s).deriv
+  have e2 : deriv (fun s => 2 * H * Real.exp (2 * H * s)) = fun s => 4 * H ^ 2 * Real.exp (2 * H * s) :=
+    funext fun s => (HasDerivAt.congr_deriv ((h1 s).const_mul (2 * H)) (by ring)).deriv
+  have hR : ∀ i j k, Rf i j k = curvT (qDS H) (p 0) (Pi.single i 1) (Pi.single j 1) (Pi.single k 1) :=
+    fun i j k => curv_T (qDS_ne H) (qDS_smooth H) p _ _ _
+  have hS : scalC g Rf = 12 * H ^ 2 := by
+    simp only [scalC, ricC, hR, g]
+    simp [Fin.sum_univ_four, curvT, GT, DGT, qDS, e1, e2]
+    field_simp; ring
+  have hC : ric2C g Rf = 36 * H ^ 4 := by
+    simp only [ric2C, ricC, hR, g]
+    simp [Fin.sum_univ_four, curvT, GT, DGT, qDS, e1, e2]
+    field_simp; ring
+  have hM : riem2C g Rf = 24 * H ^ 4 := by
+    simp only [riem2C, hR, g]
+    simp [Fin.sum_univ_four, curvT, GT, DGT, qDS, e1, e2]
+    field_simp; ring
+  refine ⟨hS, hC, hM, ?_, ?_⟩ <;> rw [hS, hC, hM] <;> ring
+
+end SweepB15
+
+/-! ## `r7315`, B16 — receipt 4 (its chartable half): flat FRW `−dt² + a(t)² dx²` under THE connection has
+`R = 6(ä/a + ȧ²/a²)`, and on P15's layer `a = sinh^{2/3}(3Ht/2)` that is `R = 12H² + 3H²/sinh²(3Ht/2)`: it RUNS.
+*P10's closed slicing `a = α cosh(T/α)` on `S³` fails the chart clause and is not attempted.* -/
+
+section SweepB16
+
+set_option synthInstance.maxHeartbeats 400000
+
+/-- Flat FRW: `q = (−1, a², a², a²)`. -/
+noncomputable def qFRW (a : ℝ → ℝ) : Fin 4 → ℝ → ℝ :=
+  ![fun _ => -1, fun s => a s ^ 2, fun s => a s ^ 2, fun s => a s ^ 2]
+
+variable {a : ℝ → ℝ} (ha : ∀ s, a s ≠ 0) (has : ContDiff ℝ ∞ a)
+
+include ha in
+lemma qFRW_ne (i : Fin 4) (s : ℝ) : qFRW a i s ≠ 0 := by fin_cases i <;> simp [qFRW, ha]
+include has in
+lemma qFRW_smooth (i : Fin 4) : ContDiff ℝ ∞ (qFRW a i) := by fin_cases i <;> simp [qFRW] <;> fun_prop
+
+include ha has in
+/-- **B16.** THE connection's scalar curvature of flat FRW. -/
+theorem frw_scal (p : Fin 4 → ℝ) :
+    scalC (fun i => qFRW a i (p 0)) (fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cT (qFRW a)))
+      (diag4_symm _) (fun p u h => diag4_nondeg (fun i => cT_ne (qFRW_ne ha) (qFRW_smooth has) i p) u h)
+      ((diag4_smooth (cT_smooth (qFRW_ne ha) (qFRW_smooth has))).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p)
+      = 6 * (deriv (deriv a) (p 0) / a (p 0) + (deriv a (p 0) / a (p 0)) ^ 2) := by
+  have d0 : ∀ s, HasDerivAt a (deriv a s) s := fun s => ((has.differentiable (by simp)) s).hasDerivAt
+  have d1 : ∀ s, HasDerivAt (deriv a) (deriv (deriv a) s) s := fun s =>
+    (((contDiff_infty_iff_deriv.1 has).2.differentiable (by simp)) s).hasDerivAt
+  have e1 : deriv (fun s => a s ^ 2) = fun s => 2 * a s * deriv a s :=
+    funext fun s => ((d0 s).pow 2).deriv.trans (by simp)
+  have e2 : deriv (fun s => 2 * a s * deriv a s) = fun s => 2 * deriv a s ^ 2 + 2 * a s * deriv (deriv a) s :=
+    funext fun s => (((d0 s).const_mul 2).mul (d1 s)).deriv.trans (by ring)
+  simp only [scalC, ricC, curv_T (qFRW_ne ha) (qFRW_smooth has)]
+  simp [Fin.sum_univ_four, curvT, GT, DGT, qFRW, e1, e2]
+  have := ha (p 0)
+  field_simp; ring
+
+omit ha has in
+open Filter Topology in
+/-- **B16, receipt 4.** On P15's layer, `a = sinh^{2/3}(3Ht/2)` near `t > 0`, the flat-FRW curvature
+`6(ä/a + ȧ²/a²)` is `12H² + 3H²/sinh²(3Ht/2)`: it runs, divergent early and `12H²` late. -/
+theorem layer_scal {H t : ℝ} (hH : 0 < H) (ht : 0 < t)
+    (hat : a =ᶠ[𝓝 t] fun s => Real.sinh (3 * H / 2 * s) ^ (2 / 3 : ℝ)) :
+    6 * (deriv (deriv a) t / a t + (deriv a t / a t) ^ 2)
+      = 12 * H ^ 2 + 3 * H ^ 2 / Real.sinh (3 * H / 2 * t) ^ 2 := by
+  set k := 3 * H / 2 with hk
+  have hk0 : 0 < k := by positivity
+  have hsk : ∀ s, HasDerivAt (fun s => Real.sinh (k * s)) (Real.cosh (k * s) * k) s := fun s => by
+    exact (((hasDerivAt_id' s).const_mul k).sinh).congr_deriv (by ring)
+  have hck : ∀ s, HasDerivAt (fun s => Real.cosh (k * s)) (Real.sinh (k * s) * k) s := fun s => by
+    exact (((hasDerivAt_id' s).const_mul k).cosh).congr_deriv (by ring)
+  have hA : ∀ s, 0 < Real.sinh (k * s) → HasDerivAt (fun s => Real.sinh (k * s) ^ (2 / 3 : ℝ))
+      (2 / 3 * k * Real.cosh (k * s) * (Real.sinh (k * s) ^ (2 / 3 : ℝ) / Real.sinh (k * s))) s := fun s hs =>
+    ((hsk s).rpow_const (p := 2 / 3) (Or.inl hs.ne')).congr_deriv (by
+      rw [show (2 / 3 : ℝ) - 1 = 2 / 3 - 1 from rfl, Real.rpow_sub_one hs.ne']; ring)
+  have hpos : ∀ᶠ s in 𝓝 t, 0 < Real.sinh (k * s) :=
+    ((Real.continuous_sinh.comp (continuous_const.mul continuous_id)).continuousAt (x := t)).eventually
+      (lt_mem_nhds (Real.sinh_pos_iff.2 (mul_pos hk0 ht)))
+  have hS := hpos.self_of_nhds
+  have hd : deriv a =ᶠ[𝓝 t] fun s =>
+      2 / 3 * k * Real.cosh (k * s) * (Real.sinh (k * s) ^ (2 / 3 : ℝ) / Real.sinh (k * s)) :=
+    hat.deriv.trans (hpos.mono fun s hs => (hA s hs).deriv)
+  have h2 : HasDerivAt (fun s => 2 / 3 * k * Real.cosh (k * s)
+      * (Real.sinh (k * s) ^ (2 / 3 : ℝ) / Real.sinh (k * s))) _ t :=
+    HasDerivAt.mul ((hck t).const_mul (2 / 3 * k)) (HasDerivAt.div (hA t hS) (hsk t) hS.ne')
+  rw [hd.deriv_eq, h2.deriv, hd.eq_of_nhds, hat.eq_of_nhds]
+  have hApos : 0 < Real.sinh (k * t) ^ (2 / 3 : ℝ) := Real.rpow_pos_of_pos hS _
+  have hc := Real.cosh_sq (k * t)
+  field_simp
+  rw [hc, hk]; ring
+
+end SweepB16
+
+/-! ## `r7315`, B17 — receipt 5 (its chartable half): the layer's THE-connection curvature from B16,
+`12H² + 3H²/sinh²(3Ht/2)`, tends to `12H²` as `t → ∞` — de Sitter's value from B15 -/
+
+open Filter Topology in
+/-- **B17, receipt 5.** -/
+theorem layer_late {H : ℝ} (hH : 0 < H) :
+    Tendsto (fun t => 12 * H ^ 2 + 3 * H ^ 2 / Real.sinh (3 * H / 2 * t) ^ 2) atTop (𝓝 (12 * H ^ 2)) := by
+  have h1 : Tendsto (fun t => Real.sinh (3 * H / 2 * t)) atTop atTop :=
+    tendsto_atTop_mono' _ ((eventually_ge_atTop 0).mono fun t ht =>
+      Real.self_le_sinh_iff.2 (by positivity)) (tendsto_id.const_mul_atTop (by positivity))
+  have h2 := (tendsto_const_nhds (x := 3 * H ^ 2)).div_atTop ((tendsto_pow_atTop two_ne_zero).comp h1)
+  simpa using (tendsto_const_nhds (x := 12 * H ^ 2)).add h2
+
+/-! ## `r7315`, B18 — receipt 2: on flat FRW `−dt² + a(t)² dx²`, for a FREE `a`, THE connection's
+`Weyl² = Riem² − 2Ric² + R²/3 = 0` -/
+
+section SweepB18
+
+set_option synthInstance.maxHeartbeats 400000
+
+variable {a : ℝ → ℝ} (ha : ∀ s, a s ≠ 0) (has : ContDiff ℝ ∞ a)
+include ha has
+
+/-- **B18, receipt 2 (k = 0).** -/
+theorem frw_weyl (p : Fin 4 → ℝ) :
+    let Rf := fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cT (qFRW a))) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => cT_ne (qFRW_ne ha) (qFRW_smooth has) i p) u h)
+      ((diag4_smooth (cT_smooth (qFRW_ne ha) (qFRW_smooth has))).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p
+    let g := fun i => qFRW a i (p 0)
+    riem2C g Rf - 2 * ric2C g Rf + scalC g Rf ^ 2 / 3 = 0 := by
+  intro Rf g
+  have d0 : ∀ s, HasDerivAt a (deriv a s) s := fun s => ((has.differentiable (by simp)) s).hasDerivAt
+  have d1 : ∀ s, HasDerivAt (deriv a) (deriv (deriv a) s) s := fun s =>
+    (((contDiff_infty_iff_deriv.1 has).2.differentiable (by simp)) s).hasDerivAt
+  have e1 : deriv (fun s => a s ^ 2) = fun s => 2 * a s * deriv a s :=
+    funext fun s => ((d0 s).pow 2).deriv.trans (by simp)
+  have e2 : deriv (fun s => 2 * a s * deriv a s) = fun s => 2 * deriv a s ^ 2 + 2 * a s * deriv (deriv a) s :=
+    funext fun s => (((d0 s).const_mul 2).mul (d1 s)).deriv.trans (by ring)
+  have hR : ∀ i j k, Rf i j k = curvT (qFRW a) (p 0) (Pi.single i 1) (Pi.single j 1) (Pi.single k 1) :=
+    fun i j k => curv_T (qFRW_ne ha) (qFRW_smooth has) p _ _ _
+  simp only [riem2C, ric2C, scalC, ricC, hR, g]
+  simp [Fin.sum_univ_four, curvT, GT, DGT, qFRW, e1, e2]
+  have := ha (p 0)
+  field_simp; ring
+
+end SweepB18
+
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2665,3 +3646,30 @@ end ShadowProbe
 #print axioms ShadowProbe.accel_rKG
 #print axioms ShadowProbe.sds_accel_is_rKG
 #print axioms ShadowProbe.sds_balance_is_flat
+#print axioms ShadowProbe.killing_lie
+#print axioms ShadowProbe.xiPW_deriv
+#print axioms ShadowProbe.pw_killing
+#print axioms ShadowProbe.pw_bracket
+#print axioms ShadowProbe.pw_wronskian_const
+#print axioms ShadowProbe.pw_dv_null
+#print axioms ShadowProbe.lcGam_diag3
+#print axioms ShadowProbe.null_radial
+#print axioms ShadowProbe.sds_photon_lyapunov
+#print axioms ShadowProbe.lcGam_pp
+#print axioms ShadowProbe.pp_ricci
+#print axioms ShadowProbe.pw_ricci_flat
+#print axioms ShadowProbe.pp_vacuum_iff
+#print axioms ShadowProbe.pp_riemann
+#print axioms ShadowProbe.pp_Ruxux
+#print axioms ShadowProbe.pp_kretschmann
+#print axioms ShadowProbe.lcGam_diag4
+#print axioms ShadowProbe.conf_box
+#print axioms ShadowProbe.ds_tt_mode
+#print axioms ShadowProbe.mukhanov
+#print axioms ShadowProbe.ds_app
+#print axioms ShadowProbe.curv_T
+#print axioms ShadowProbe.ds_invariants
+#print axioms ShadowProbe.frw_scal
+#print axioms ShadowProbe.layer_scal
+#print axioms ShadowProbe.layer_late
+#print axioms ShadowProbe.frw_weyl
