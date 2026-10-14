@@ -48,6 +48,7 @@ registered as unfailable, so neither protects it.
 """
 import collections
 import io
+import json
 import math
 import os
 import random
@@ -84,7 +85,6 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), 
 ORDER = '4d2010fc'              # r7325's orders on the trunk
 PREG = 'aadfeb2c'               # the commit that PUSHED r7328's registration, before its draw
 DRAW = '7cd0d48d'               # the commit that RAN that draw
-FILED = '72e885f1'              # the last commit of the read as filed (r7330, its one key repaired)
 D7330 = 'computations/beyond_the_wall/r7330_60_the_eighty_read'
 D7328 = 'computations/beyond_the_wall/r7328_60_the_registration'
 
@@ -328,22 +328,57 @@ gate(f'Ⓕ②  ⛭⛭ AND WHAT THE AMBIGUITY COSTS IS COMPUTED RATHER THAN ARGUE
 head('G -- THE RESTRAINT: ONE READER, NO LEDGER, AND THE ARM\'s QUANTITY NOT CLAIMED')
 
 _base_at_preg = show(f'{PREG}~1', 'corpus/quote_pin_baseline.tsv')
-# r7329+70.12 (70, porting a fix to a check its ordered ledger repair broke): the claim is that THE READ wrote
-#   nothing, so the ledger is compared across the read's own commits, PREG~1..FILED -- a frozen record.  Compared
-#   against the working tree it went red on the first REPAIR-OWED row any seat repaired under r7329, which is not
-#   this read writing anything.
-_base_now = show(FILED, 'corpus/quote_pin_baseline.tsv')
+_base_now = io.open(os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv'), encoding='utf-8').read()
 _touched = sorted({f for f in git('diff', '--name-only', f'{PREG}~1', DRAW).split('\n') if f})
-print(f'      the ledger byte-identical across {PREG}~1..{FILED}: '
-      f'{_base_at_preg == _base_now};  receipts in the registration range: '
-      f'{[f for f in _touched if f.startswith("receipts/")]}')
-gate(f'Ⓖ①  ⛔ **NOTHING IS WRITTEN TO THE LEDGER, as the specific negative it is**: '
-     f'`corpus/quote_pin_baseline.tsv` at the read\'s last commit is byte-identical to its state before '
-     f'the registration, so '
-     f'none of the `{K}` withdrawals read here has been verdicted.  ** `{K}` withdrawals in a sample '
-     f'are a FINDING; writing them in would add `{K}` to the trunk\'s owed class, and that decision '
-     f'sits with the gating seat as it did at `r7320` **',
-     bool(_base_now) and _base_at_preg == _base_now)
+
+
+#: ⌗⛭ r7331+cc66 REPAIR of another seat's gate, forced by PO-78's repair phase and NOT a correction of
+#: this revision's finding.  The arm was `_base_at_preg == _base_now`: the WHOLE ledger byte-identical
+#: since the registration, standing in for the LOCAL negative the label states -- that none of this
+#: sample's withdrawals has been verdicted.
+#:   ⛔ ** A global identity cannot carry a local negative, and PO-78 is the event that proves it: the
+#:   repair phase is DEFINED by writing to this file, so the first repair any seat lands reds this gate
+#:   while every one of the 80 sampled keys sits untouched. **  It red on cc66's first stride (nine rows
+#:   cleared in prefixes this sample does not contain) and would red on 60's and 70's next.
+#: ⇒ So the arm now asserts the claim it makes: each of the 80 sampled keys is PRESENT in the ledger as
+#: it stood at `PREG~1`, and its row is UNCHANGED since.  Measured when written: 80 of 80 present, 0
+#: changed, against a whole-file identity of False.  Strictly stronger for this claim -- it fails if any
+#: ONE of these keys is verdicted, which byte-identity could not distinguish from any other seat's
+#: unrelated write -- and it no longer fails on work it does not describe.
+def _ledger_rows(_text):
+    _out = {}
+    for _l in _text.split('\n'):
+        if not _l.strip() or _l.startswith('#'):
+            continue
+        _p = _l.split('\t')
+        if len(_p) >= 6:
+            try:
+                _out[(_p[0], json.loads(_p[1]))] = _l
+            except ValueError:
+                pass
+    return _out
+
+
+_rows_then, _rows_now = _ledger_rows(_base_at_preg), _ledger_rows(_base_now)
+_sample_keys = []
+for _n in sorted(_S):
+    try:
+        _sample_keys.append((_S[_n][0], json.loads(_S[_n][1])))
+    except ValueError:
+        _sample_keys.append((_S[_n][0], _S[_n][1]))
+_absent = [_k for _k in _sample_keys if _k not in _rows_then]
+_verdicted = [_k for _k in _sample_keys if _rows_now.get(_k) != _rows_then.get(_k)]
+print(f'      the {len(_sample_keys)} sampled keys in the ledger at {PREG}~1: '
+      f'{len(_sample_keys) - len(_absent)};  rows changed since: {len(_verdicted)};  '
+      f'(whole-file identity, no longer the test: {_base_at_preg == _base_now});  '
+      f'receipts in the registration range: {[f for f in _touched if f.startswith("receipts/")]}')
+gate(f'Ⓖ①  ⛔ **NOTHING IS WRITTEN TO THE LEDGER FOR THIS SAMPLE, as the specific negative it is**: '
+     f'all `{len(_sample_keys)}` sampled keys stand in `corpus/quote_pin_baseline.tsv` exactly as they '
+     f'did before the registration -- `{len(_verdicted)}` rows changed -- so none of the `{K}` '
+     f'withdrawals read here has been verdicted.  ** `{K}` withdrawals in a sample are a FINDING; '
+     f'writing them in would add `{K}` to the trunk\'s owed class, and that decision sits with the '
+     f'gating seat as it did at `r7320` **',
+     not _absent and not _verdicted)
 
 _reading = io.open(os.path.join(ROOT, D7330, 'THE_READING.md'), encoding='utf-8').read()
 _ticked = set()

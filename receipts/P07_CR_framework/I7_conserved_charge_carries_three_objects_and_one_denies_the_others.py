@@ -157,8 +157,31 @@ check("⛔ and the fifth is NAMED with its cause: P12 carried sense A at cd90179
       "not now -- r4083's harvest removed the passage, and `conserved charge` itself is zero there, "
       "so nothing was reworded and nothing is being counted in its place",
       ['P02', 'P03', 'P08', 'P10'], apapers)
+#: ⌗⛭ r7329+cc66 REPAIR, PO-78's stride.  ⛔ AND THE OWED REPAIR WAS NEVER ABOUT THE QUOTATION.
+#: The ledger's own reason says so: the term is this receipt's OBJECT OF STUDY and "would be
+#: DELIBERATE alone"; what it owed is 69's Test 7, ⓓ a VACUOUS GUARD -- `BODIES.get('P12', '')`
+#: makes the ABSENCE pass when P12 is not loaded at all, which a rename of `algebroid_paper.tex`
+#: or a CODE-table miss would do silently.  `len(BODIES)` was printed and never asserted.
+#:   ** The repair is the presence guard the reason names: P12 is asserted LOADED and NON-EMPTY,
+#:   and the absence is asserted of that body and not of a default. **  The phrase stays, because
+#: the phrase is what the receipt is about; it is the guard that was missing.
+_p12 = BODIES.get('P12')
+#: ⌗⛭ r7331+cc66, SECOND repair of this guard, and the hollow-assertion lint found the first one.
+#: It read `check(label, bool(_p12) and len(_p12) > 10000, True)` and reported it `provably cannot
+#: fail` -- because the lint takes `node.args[-1]` as the condition, which is right for the two-argument
+#: `check(label, cond)` form and WRONG for this receipt's three-argument `check(label, got, want)`:
+#: there the last argument is the EXPECTED VALUE, and the natural spelling of a boolean claim is the
+#: literal `True`, which is in the lint's TRUTHY_CONST.
+#:   ** So my repair of a vacuous guard was itself reported as a vacuous guard, and the guard was never
+#:   hollow. **  Rewritten in the idiom this receipt already uses for its other three-argument checks --
+#: the EXPECTED value first, the computed one last (see the `['P02', 'P03', 'P08', 'P10']` call above) --
+#: which both satisfies the lint and reads the way the file reads.  It still fails if P12 is absent or
+#: short, which is the whole point of the guard.  The lint's false positive is routed, not patched.
+check("⛭ and P12 is LOADED before its absence is read -- the guard r7329 repaired: an absence over "
+      "an empty default passes when the paper is simply not there",
+      ['P12'], sorted(c for c in BODIES if c == 'P12' and len(BODIES[c]) > 10000))
 check("and P12 really has dropped the phrase rather than moved it",
-      'conserved charge' in BODIES.get('P12', ''), False)
+      'conserved charge' in (_p12 or ''), False)
 print("    *** Each says the object is NOT well defined here.  B and C use the same two words")
 print("        for objects that are.  A reader importing A into B loses P11's result. ***")
 

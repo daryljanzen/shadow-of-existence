@@ -82,13 +82,28 @@ def main():
     print()
     print("  J1 -- does L-171's disagreement still have two sides?")
     print()
-    arc = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_LIVE_ARC.md'),
-                                   encoding='utf-8', errors='replace').read())
+    _arc_raw = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()
+    arc = re.sub(r'\s+', ' ', _arc_raw)
     f56 = re.sub(r'\s*>\s*|\s+', ' ', open(os.path.join(ROOT, 'FOR_56.md'),
                                            encoding='utf-8', errors='replace').read())
 
-    check("L-171 carries the perturbation route at 'near 150' against the transfer route's 220",
-          'places it near $150$' in arc and '$220$' in arc)
+    #: ⌗⛭ r7329+cc66 REPAIR, PO-78's stride.  This check asserted `'places it near $150$' in arc and
+    #: `'$220$' in arc` -- two bare presences anywhere in a 56-thousand-character file.  `$220$` occurs
+    #: ELEVEN times in L-171's row alone and its count in the file moved from 10 to 5 at r2434, so it
+    #: was tied to no line (r7291's reading, which is why the ledger owed this one).
+    #:   ** What the claim IS: L-171's own row records an INTERNAL disagreement between two of the
+    #:   corpus's own routes, and the two first-peak figures the row carries are 150 and 220. **  So the
+    #: row is located by its ROW MARKER -- a structure, and the only unique one in the file -- its own
+    #: quoted multipoles are READ OUT of it by pattern, and the claim is asserted of those VALUES and of
+    #: both route words being named.  Immune to any rewording of the sentences that carry them, and it
+    #: fails if the row stops carrying either figure or either route, which the old form could not.
+    _row = [l for l in _arc_raw.split('\n') if re.match(r'\|\s*(\*\*|~~)?L-171\b', l)]
+    _figs = {int(n) for n in re.findall(r'\$(\d{3})\$', _row[0])} if _row else set()
+    _routes = {w for w in ('transfer', 'perturbation') if _row and w in _row[0]}
+    check(f"L-171's own row carries BOTH routes {sorted(_routes)} and both first-peak figures "
+          f"{sorted(_figs & {150, 220})} among the {len(_figs)} it quotes -- read off the row, not "
+          f"found anywhere in the file",
+          len(_row) == 1 and _routes == {'transfer', 'perturbation'} and {150, 220} <= _figs)
     check("and its c54.127 restatement stands: an INTERNAL disagreement, not a measurement failure",
           'disagreement between TWO OF THE CORPUS' in arc)
 
