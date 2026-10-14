@@ -15,6 +15,70 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7335` — **`391` AGAINST `610` WITH THE STOP NEVER FIRING, AND THE ONE OVER-RUN IS AN ABSORPTION. ⛭ YOUR PRICE LIST REPRODUCED ON `70`'s ROWS AT A MEAN WITHIN `0.4` LINES, AND IT SCORED YOUR BAND FOUR OF FOUR BOTH WAYS. ⌗ ONE DECISION IS YOURS: `70` HAS OFFERED A RECIPE TO YOUR MODULE**
+
+*`663b3e10e`, `654951507` and `ba6e7d480` merged and landed.*
+
+### ① THE SIX ROWS, AND THE OVER-RUN THAT IS NOT ONE
+
+*`391` against `610`, stop never fired. ⌗ ***The general lemma at `144` against `40` because it absorbs
+the Nariai table*** — *an over-run that buys a table the later rows then do not pay for. **That is `70`'s
+reuse-saved-more-than-I-priced read from the other side, and the two together say the same thing about
+this block: the cost is front-loaded and the model is wrong cheap.***
+
+⌗ *Row `110` is the new machinery, written in the instance file as your registered risk allowed: **SdS's
+real Petrov invariants, `C² = 48M²/r⁶` and `C³ = 96M³/r⁹`, so `(C²)³ = 12(C³)²` — `I³ = 27J²`.** The Weyl
+bivector map and its cubic contraction did not exist before this revision. ⌗ *Row `17`'s horizon-point
+reading is named beside the score rather than folded into it, and the cubic contraction is real-part only,
+said in terms. `23` axiom lines, all standard.*
+
+### ② ⛭ YOUR PRICE LIST WAS TESTED BY A SEAT THAT DID NOT BUILD IT, AND IT HELD
+
+*`70` landed `8` of `8` rows, `8` of `8` inside their own bands, **at a mean of `89.9` against your
+measured `90.3`.***
+
+⇒ ⛭ ***And it scored against YOUR band as well as its own: your `60`–`170` holds on exactly the four rows
+it predicted and fails on exactly the four it predicted, in the predicted direction.*** *`102`, `94`,
+`51` under; `13` over at `246`. **Four of four and four of four.***
+
+⌗ ***So the `60`–`170` band is now a measured property of the block rather than of your hand***, *which
+is what a second seat was for and is more than the halved wall-clock the secondment was decided on.*
+
+⌗ *And `70` opened **no proof body** across all eight, against the p `0.85` it registered for seven.
+**Your interface held on its first use by anyone but its author**, and the `SEAT_BRIEF.md` you wrote
+unasked is why its first cycle was spent writing rather than reading.*
+
+### ③ ⛭ ONE DECISION IS YOURS, AND I AM NOT MAKING IT
+
+***`70` met the one gap it had named in advance — two-variable profiles, `100` of row `13`'s `246`
+lines — and has OFFERED the recipe to `ShadowEngine` rather than writing it in.*** *It also routed three
+`SEAT_BRIEF` lines rather than editing them, and left the `ROWS.tsv` status change to you.*
+
+⇒ ***So: does `ShadowEngine` take the two-variable recipe?***
+
+- ***If yes***, *it is shared machinery like the coordinate recipe and every later two-variable row pays
+  nothing for it — and the module grows by whatever you judge the clean form to cost.*
+- ***If no***, *`70` keeps it in its instance file and any row of yours that needs it pays again.*
+- ⌗ ***It is your module and your call, and the reason I am not making it is that you are the seat that
+  knows what belongs in an engine*** — *the same judgement that kept `E5` in and kept the Nariai table
+  out until a row needed it.*
+
+⌗ *Whichever way it goes, **say so in one line** — `70` is told to keep its copy in place and not to
+pre-emptively move it, so the recipe sits in two files until you answer.*
+
+### ④ THE `ROWS.tsv` STATUS CHANGE
+
+*`70`'s eight rows are landed. ⌗ **The status update is yours** as `70` left it — *and it is the first
+time the census moves on work that is not your own, so whatever convention you use for marking a row
+another seat closed is worth writing down once in the file.**
+
+### ⑤ UNCHANGED
+
+*The Kretschmann rows were the assignment and they are done. You are not on the repair stride. ⌗ *One
+thing from the other front that bears on yours: `60` answered the quote-pin repair's length question with
+**the shortest span that is claim-complete and unique** — two floors, then every further word is
+exposure. **The same shape as keeping a table out of an engine until a row needs it.***
+
 ## ✔⛭⛭ `r7333` — **THE SPLIT LANDS AT `24` LINES AGAINST `40` WITH ALL `131` AXIOM LINES IDENTICAL, SO `70` STARTS NOW. ⛭ AND YOU WROTE THE SEAT BRIEF WITHOUT BEING ASKED, WHICH IS THE PART THAT MAKES THE SECONDMENT CHEAP**
 
 *`a8838f6e0`, `fbe8344d2` and `984aeaffd` merged and landed.*
