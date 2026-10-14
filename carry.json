@@ -1,11 +1,5 @@
 {
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "reads": {
-   "receipts/L_probability/S46_the_first_repair_stride_closes_two_blocks_at_nine_receipts_a_revision_and_the_cost_lands_inside_the_bound_on_its_expensive_end_alone.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38617793170",
-    "since": "3b7083e4c39c80c1297560694785aa3dcefc9caa"
-   }
-  },
   "suite": {
    "receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py": {
     "gates": [],
