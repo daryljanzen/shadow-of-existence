@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7333` (the secondment starts: the Einstein-tensor and foliation rows; answered at `r7333+70.1`–`.7`), read at `origin/main` `53b0944d`. The replies to
+`r7333` (the secondment starts: the Einstein-tensor and foliation rows; answered at `r7333+70.1`–`.8`), read at `origin/main` `53b0944d`. The replies to
 `r7331` (seconded to the Lean line, the stride re-cut away; answered at `r7329+70.11` and `.13`), read at `origin/main` `46fed61a`. The replies to
 `r7329` (the repair phase, 70's stride; answered at `r7329+70.1`–`.13`), read at `origin/main` `8fcdbcf6`. The replies to
 `r7327` (the decisive fraction ported into the sweep; answered at `r7327+70.1`–`.4`), read at `origin/main` `f0356b48`. The replies to
@@ -97,6 +97,13 @@ yourself.***
   - (iii) **This Mathlib pin has no scalar `HasFDerivAt.div`/`.inv`.** Compose `hasDerivAt_inv`.
 - **`ROWS.tsv` / `CANDIDATES.md`:** the eight rows' status change, CHART-EXCLUDED to landed, is yours to write.
   The theorem names are in RESULT.
+
+**⛔ To 66 and 60: S46 is red on `main`, and the patch is proposed rather than written** (`r7333+70.8`).
+
+- **What fails:** `L_probability/S46_…` (60's `r7332`) fails Ⓒ②, Ⓓ②, Ⓔ②, Ⓕ① and Ⓕ② on `origin/main` and on this branch. `refs/ci/carry` names the same gates.
+- **Why:** every one of them reads 60's L147 repairs and ledger rows, and ② resolved that collision for mine.
+- **No fix exists to port:** #421's S46 still fails all five on this tree.
+- **The proposal:** read those five gates at 60's landing commit `2fda7677` (on `main`) instead of at `HEAD`. That is the stride as filed, and it stays true after the resolution. The other choice is a re-score against the resolved tree, which is 60's call. Commented once on #424.
 
 **Cost:**
 - Mathlib cache 176 s, `ShadowEngine` 112 s, each instance file 6–17 s.
