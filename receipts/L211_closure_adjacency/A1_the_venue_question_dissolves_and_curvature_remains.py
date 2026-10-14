@@ -132,13 +132,30 @@ def main():
     #   corrected at r6707 (3b921b95) in the body and r6719 (440623b6) in the abstract.  What this check
     #   is about is that the monodromy route yields a definite, selected group with the lap as its centre;
     #   the pin follows the correction: order 81 in U(3), determinant-one part Delta(27) in SU(3). **
-    check('and the three wall monodromies with the hinge 3-cycle generate a finite group of order 81 '
-          'in U(3), whose determinant-one part Delta(27) lies in SU(3), with the lap as its centre',
-          'generate a finite group of order $81$ in $U(3)$' in p14
-          and 'whose determinant-one part is $\\Delta(27)$ and lies in $SU(3)$, with the lap as its centre' in p14)
-    check('with the configuration group SELECTED rather than chosen',
-          'y channel the Standard Model has, with the configuration group \\emph{selected} rather than chosen' in p14 or 'selected\\/} rather than chosen' in p14
-          or 'y channel the Standard Model has, with the configuration group \\emph{selected} rather than chosen' in p14)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.  ** SEVEN OWED
+    #   ROWS IN THIS RECEIPT, THE MOST OF ANY IN THE BLOCK, and they fall into three kinds: ** two
+    #   halves of one sentence conjoined (the group's order and its determinant-one part); a
+    #   three-way disjunction over SPELLINGS of one emphasis (`selected\/}` among them, a markup
+    #   fragment); and four spans in the arc file, two of them disjoined pairs over the same claim.
+    #   ⇒ *** Each claim is asserted once, as the clause the corpus states it in, over a
+    #     markup-normalised read where the markers fall inside the span -- so a re-emphasis cannot
+    #     break what the emphasis is not carrying. ***
+    _p14u = re.sub(r'\\(?:emph|textit|textbf|textsl)\{([^{}]*)\}', r'\1', p14)
+    _ORDER81 = ('the three wall monodromies and the hinge $3$-cycle generate a finite group of '
+                'order $81$ in $U(3)$, each monodromy carrying determinant $\\omega$, whose '
+                'determinant-one part is $\\Delta(27)$ and lies in $SU(3)$, with the lap as its '
+                'centre')
+    _SELECTED = ('every channel the Standard Model has, with the configuration group selected '
+                 'rather than chosen')
+    check('and the three wall monodromies with the hinge 3-cycle "generate a finite group of order '
+          '$81$ in $U(3)$, each monodromy carrying determinant $\\omega$, whose determinant-one '
+          'part is $\\Delta(27)$ and lies in $SU(3)$, with the lap as its centre" -- one span, in '
+          'place of two halves of it conjoined',
+          _ORDER81 in p14)
+    check('with the configuration group SELECTED rather than chosen -- "every channel the Standard '
+          'Model has, with the configuration group selected rather than chosen", asserted over a '
+          'markup-normalised read in place of three spellings of one emphasis',
+          _SELECTED in _p14u)
 
     # and the negative half, which is where the gap moves to
     check('⛭ AND THE BUNDLE IS FLAT: "Flat holonomy supplies exact selection rules and no curvature"',
@@ -148,13 +165,32 @@ def main():
 
     # the two closures this is run on
     arc = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()
-    check('L-213 was struck by pricing the compact-face motivation as an ADD',
-          'made the argument an ADD' in arc or 'it is an ADD' in arc)
-    check('and F13 established su(3) embeds in exactly one real form',
-          'exactly one real form' in arc or 'embeds in **exactly one**' in arc
-          or 'EXACTLY ONE' in arc)
-    check("L-211's procedure is what joined three papers no single reading would have",
-          'closure-adjacency' in arc.lower() or 'CLOSURE-ADJACENCY (L-211' in arc)
+    # ⛭⛭ r7338+60: ** and the four arc rows. ** `made the argument an ADD` is absent from the file
+    #   and `it is an ADD` carried the pair; `exactly one real form` is likewise absent, while
+    #   `EXACTLY ONE` stands at FOURTEEN sites, so that disjunction's surviving arm could be
+    #   satisfied by any of them; and `closure-adjacency` was read case-folded as a bare hyphenated
+    #   term.  ⇒ *** Each is replaced by the clause the arc states the claim in, over a
+    #     MARKDOWN-normalised read, with the dead arms dropped rather than kept beside the live
+    #     ones. ***
+    _arc_md = re.sub(r'\*+', '', re.sub(r'\s+', ' ', arc))
+    _ADD = 'the DELETE reading is available to state and it is an ADD'
+    _F13 = ('$\\mathfrak{so}(6,\\mathbb C)$ has four real forms and $\\mathfrak{su}(3)$ embeds in '
+            'exactly one (compact, dim 8, needs max-compact $\\ge8$')
+    _L211 = ('THE CLOSURE-ADJACENCY DEBT, which is the MECHANISM behind `L-210` rather than a '
+             'second copy of it')
+    check('L-213 was struck by pricing the compact-face motivation as an ADD: "the DELETE reading '
+          'is available to state and it is an ADD" -- asserted as the verdict clause, in place of a '
+          'pair whose first arm is absent from the file',
+          _ADD in _arc_md)
+    check('and F13 established su(3) embeds in exactly one real form: "$\\mathfrak{so}(6,\\mathbb '
+          'C)$ has four real forms and $\\mathfrak{su}(3)$ embeds in exactly one (compact, dim 8, '
+          'needs max-compact $\\ge8$" -- asserted as that clause, in place of a disjunction whose '
+          'live arm was a two-word phrase at fourteen sites',
+          _F13 in _arc_md)
+    check("L-211's procedure is what joined three papers no single reading would have: \"THE "
+          'CLOSURE-ADJACENCY DEBT, which is the MECHANISM behind `L-210` rather than a second copy '
+          'of it" -- asserted as the registering clause, in place of a case-folded hyphenated term',
+          _L211 in _arc_md)
 
     print()
     if FAILED:
