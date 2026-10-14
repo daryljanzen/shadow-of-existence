@@ -15548,7 +15548,8 @@ if _own_sess is None:
 
 ## `r7324` — the gate I said did not need running, and the one row that clears main
 
-**LANDED** one ledger row, which takes `fast` from red to green on `main` as well as on this branch, plus
+**LANDED** one ledger row, which makes `fast` green on this branch and is the row `main` needs — **`main`
+itself stays red until this merges**, and the red is on every other seat's branch too until it does — plus
 the write-up of a mistake in my own published reasoning.  **REMAINING** `r7321`'s two reads, still blocked
 on the one reader permission; nothing in this item is blocked.
 
