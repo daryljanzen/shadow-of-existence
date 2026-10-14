@@ -10,6 +10,79 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⛭⛭ `r7331` — **YOUR STRIDE IS RE-CUT UP TO `194` ROWS IN `67` RECEIPTS: `70` IS SECONDED TO THE LEAN LINE AND `PO-78` RUNS ON TWO SEATS. ⌗ AND YOU TAKE `L147_two_arm`, WHICH IS THE WORKING RULE'S FIRST CONTACT WITH A CASE IT WAS AMENDED FOR**
+
+*Supersedes `r7329`'s stride for this seat. **The whole list is still on `THE_REPAIR_STRIDE.tsv` and
+nothing left it.***
+### ① WHY YOUR STRIDE GREW, AND IT IS NOT THAT `70` WAS SPARED WORK
+
+*Daryl asked whether `r7329`'s approved second formalisation seat is a secondment or a new node `72`,
+preferring secondment **if there is capacity**. ⇒ ***There is, and `70` is it*** — *not because it had
+slack (it had least) but because **the two fronts want different kinds of seat**: the Lean block is the
+one job designed for a seat with no history in it, since `71`'s interface has the second seat writing a
+metric's values and partials against a recipe and never reading its proofs. **The repair stride is the
+opposite — it wants the seat that VERDICTED the prefix**, because the repairer has to recognise what the
+check was trying to assert, and that recognition is what the bound's refinement clause runs on.*
+
+| | `PO-78` | Lean campaign `2` | both clear |
+|---|---|---|---|
+| three seats + a new `72` | `3`–`4` cycles | `4`–`6` | ≈ `6` |
+| **two seats, `70` seconded** | ***`4.2`–`6.2*** | ***`4`–`6*** | ***≈ `6*** |
+
+⛔ ***And the trigger that reverses it is named now: if your first stride's MEASURED per-receipt cost puts
+`PO-78` past the band's top of `8` cycles, `70` comes back and the Lean block goes single-seat.*** *Both
+rates there are unmeasured — `11`–`16` receipts a seat a cycle is my prediction, `250`–`360` lines is
+`71`'s from two cycles. **Your first stride is what decides whether the secondment holds.***
+
+⌗ ***And `r7329`'s stride balanced on the wrong unit, which is mine:*** *it said in terms that the receipt
+is the unit of repair and then balanced on ROWS at `122` each — `49`/`43`/`43` receipts, and on the re-cut
+`74` against `61` before I looked. **Balanced on receipts it is `68` and `67`.** Member `83`'s fifth face,
+in my hands one revision after writing the header; no new member, the count holds at `91`.*
+
+### ② YOUR STRIDE AS RE-CUT — `194` ROWS IN `67` RECEIPTS OVER `33` PREFIXES
+
+| prefix | rows | receipts |
+|---|---|---|
+| `L165_defining_the_sum` | `26` | `4` |
+| `L165_interacting_tower` | `25` | `10` |
+| `L204_physics_reach` | `16` | `8` |
+| `L211_closure_adjacency` | `16` | `4` |
+| `L202_phase_at_the_seam` | `15` | `2` |
+| `L147_two_arm` | `13` | `5` |
+| `L175_dimensional_descent` | `11` | `6` |
+| `RP_34_gr` | `8` | `2` |
+
+*...and `25` further prefixes. **The file is the list; this is its head and not a triage.***
+
+⌗ ***What you gained from `70`'s cut:*** *`L204_physics_reach` (`16`/`8`), `L202_phase_at_the_seam`
+(`15`/`2`), **`L147_two_arm` (`13`/`5`)** and a share of the tail.*
+
+### ③ ⛭ `L147_two_arm` FIRST, AND HERE IS WHY IT IS NOT JUST ANOTHER PREFIX
+
+*Its rows are the ones **`cc66`'s Test 5 clause decided** — the disjunction-cannot-carry-a-conjunction
+clause `69` took verbatim into the third redraft. ⇒ ***So it is the working rule's first contact with a
+case it was amended FOR, and it goes to you rather than to `cc66` because the seat that wrote the clause
+is not the seat to test it.***
+
+⌗ ***If the amendment is wrong, that is where it shows***, *and the case goes beside the repair in the
+form the bound's clause `3` asks for. **That is the refinement path running for the first time**, and it
+is worth more than the five receipts it costs.*
+
+### ④ ORDER OF WORK
+
+1. ***`L147_two_arm`*** *— `13` rows in `5` receipts, for the reason in ③.*
+2. ***`L165_defining_the_sum`*** *— `26` rows in `4` receipts, the densest block anyone holds, which prices
+   the expensive end immediately.*
+3. ***Then `L165_interacting_tower` and `L204_physics_reach`*** *— `10` and `8` receipts, the middle.*
+4. ***Then the single-row tail.***
+5. ⛭ ***Report the per-receipt cost from the first stride, with a band and its decisive fraction
+   registered before you start.*** *That figure replaces the bound's `5`-cycle prediction **and decides
+   whether `70` stays seconded** — so it is the most load-bearing number either of you will produce this
+   week.*
+
+⌗ *Your `S45` repair at `r7330` remains the named form for the whole stride: **assert what the claim IS
+rather than name a column.***
+
 ## ⛭⛭⛭ `r7329` — **THE REPAIR PHASE STARTS AND YOU HAVE `122` ROWS IN `43` RECEIPTS OVER `21` PREFIXES, LED BY THE `L165` BLOCK YOU VERDICTED. ⛭ AND YOUR `80`-KEY READ IS THE LAST MEASUREMENT THE PREPARING PHASE NEEDED**
 
 *`18c904812`, `72e885f1e` and `8c812454d` merged and landed; `S45` with them.*

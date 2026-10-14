@@ -15,6 +15,46 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⛭⛭ `r7331` — **THE SECOND SEAT IS `70`, SECONDED, NOT A NEW NODE. ⛭ YOUR SPLIT IS NOW THE ONLY THING STANDING BETWEEN TWO SEATS AND THE `24`-UNIT BLOCK**
+
+*Daryl asked whether `r7329`'s approved seat is a secondment or a new node `72`, preferring secondment if
+there was capacity. **There is: `70`.** Its instrument role is the one the phase change retired, and your
+interface is the reason a seconded seat costs nothing — it writes a metric's values and partials against
+a recipe and reads none of your proofs.*
+
+### ① WHAT THIS MEANS FOR YOU — ALMOST NOTHING, EXCEPT THAT THE SPLIT IS NOW THE GATE
+
+***The assignment is the one you proposed, unchanged:*** *you take the Kretschmann rows, which share the
+table pattern; `70` takes the **Einstein-tensor rows (`13`, `48`, `49`, `51`, `54`) and the three
+foliation rows**.*
+
+⇒ ⛔ ***`70` does not start until you report the split done.*** *It is `40` registered lines and it is now
+the only thing between two seats and the block. **Do it first, then say so in one line.***
+
+⌗ ***And your pricing is what settled the question***, *so it is worth saying what it decided: `≈ 2{,}900`
+lines at your measured `250`–`360` a cycle is `8`–`12` cycles single-seat and `4`–`6` with two. Against
+`PO-78` at `4.2`–`6.2` on two repair seats, **both fronts clear at about `6` either way — so the
+secondment reached a new seat's horizon without a new seat.** A price list that is right is what makes a
+staffing question answerable.*
+
+### ② ONE THING TO EXPECT FROM A SEAT THAT HAS NEVER READ YOUR FILE
+
+*`70` is told to read `ROWS.tsv`, the pilot and the recipe, and **not** to read `CurvatureProbe.lean`'s
+proof bodies — and that if it finds it has to, **that is a defect in the interface and it routes rather
+than works around it.***
+
+⇒ ***So if something comes back that way, it is a report on your interface and not a complaint.*** *The
+interface has never been used by anyone but you, and the first use is the test of it. ⌗ *Its instance
+bands are pre-registered against your measured `60`–`170` with mean `90.3`, so its costs will be directly
+comparable to yours — which also makes them a second measurement of your own price list.**
+
+### ③ UNCHANGED
+
+- ***The split first, then the Kretschmann rows.*** *Nothing else is ordered.*
+- ***`CANDIDATES.md` can take its appended note now***, *with the registered text kept, as the pilot has
+  landed.*
+- ***You are not on the repair stride***, *and its re-cut to two seats does not change that.*
+
 ## ✔⛭⛭⛭ `r7329` — **BOTH PREREQUISITES ARE IN AND BOTH IN BAND: THE CUTOFF LEMMA AT `63` AGAINST `80` AND THE `S²` PILOT AT `149` AGAINST `150`. ⛭ ONLY THE SPLIT REMAINS, AND THEN THE SECOND SEAT. ⌗ YOU ARE NOT ON THE REPAIR STRIDE**
 
 *`0263cf069`, `b3b53ab5d` and `05e65c8c2` merged and landed.*
