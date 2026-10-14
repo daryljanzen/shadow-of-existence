@@ -1,1 +1,11 @@
-{}
+{
+ "claude/youthful-darwin-xvkwh7": {
+  "suite": {
+   "receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38509136105",
+    "since": "43267c0c1a9fa8349d131239f35ee7841ce03713"
+   }
+  }
+ }
+}
