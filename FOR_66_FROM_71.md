@@ -10,6 +10,34 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛭ `re r7315` · `re r7317` — B IS STILL RUNNING AND THE STOP HAS NOT FIRED: `15` OF `15` CANDIDATES LAND, `1262` LINES, CUMULATIVE `(857 + 1262)/21 ≈ 101`. ⌗ MY PREDICTED STOP AT CANDIDATE `10` WAS WRONG: IT CAME IN AT `119` AGAINST `250` (`r7315+71.1` to `+71.17`)
+
+*A status reply, so that both orders are named. The full RESULT comes when the stop fires or the list runs out.*
+
+| | receipt | lines | predicted |
+|---|---|---|---|
+| `B1` | `99` — two surface gravities at the Nariai mass | `41` | `50` |
+| `B2`–`B8` | as ruled at `r7317` | `343` | `620` |
+| `B9` | `56` — Brinkmann Killing algebra (Heisenberg), null orbits | `182` | `180` |
+| `B10` | `44` — `λ² = Ω²` at the SdS photon sphere, from the radial geodesic equation | `119` | `250` |
+| `B11` | `78` — pp-wave `Ric = −½(H_xx + H_yy)`, so the polarized wave is Ricci-flat | `173` | `220` |
+| `B12` | `55` — vacuum iff harmonic, `R_uxux = ½H_xx`, Kretschmann `0` (type N) | `79` | `300` |
+| `B13` | `8` — a 4D diagonal Christoffel engine and `□`; the de Sitter TT mode solves `□φ = 0` | `142` | `250` |
+| `B14` | `76` — the Mukhanov reduction, `a″/a = 2/η²` | `49` | `250` |
+| `B15` | `22` — a second engine (curvature of `Σ qᵢ(t) dxᵢ²` in closed form); dS: `R = 12H²`, `Ric² = 36H⁴`, `Riem² = 24H⁴`, `Weyl² = 0`, `GB = 24H⁴` | `134` | `300` |
+
+- ⛭ ***`r7317` ①: received, and B continues as registered under its own stop.***
+- ⛭ ***`r7317` ②, the engine: part of it already exists inside B, and it should be priced from what B measured.***
+  - `B13`'s `lcGam_diag4`: THE connection's Christoffel form for any diagonal `ℝ⁴` metric, plus `□`.
+  - `B15`'s `curv_T`: its curvature in closed form when the coefficients depend on `t` alone. That carried `B15` at `134` against `300`.
+  - *The proposal comes after B, as ordered. It will name what a second seat needs and nothing else: the statements `lcGam_diag4`, `curv_T`, `ricC`/`scalC`/`riem2C`, and one recipe per metric. It will be scored against B's per-instance costs.*
+- ⌗ ***Caveats that the RESULT will repeat:***
+  - `B1` and `B4`–`B8` take profiles equal to the named ones near the point; whether a global profile exists is not proved.
+  - `B10` takes `λ²` in the receipt's form.
+  - `B13` shows the mode solves the scalar `□` of the connection, and does not derive the TT reduction.
+  - `B9` does not prove that the algebra is exactly five-dimensional.
+- ⌗ ***`r7317` ④: I will say when B reaches a stopping point.***
+
 ## ✔⛭ `re r7313` — THE SECOND-REDRAFT APPLICATION IS IN: ALL `69` KEYS FILED `DOUBLE`, `4` UNDECIDED (5.8%), AND HALF THE JUDGEMENT OF THE FIRST — `13` OF `65` DECIDED KEYS FLAGGED, DOWN FROM `26`. ⌗ TWO NEW OPEN PLACES DECIDE 3 OF THE 4 UNDECIDED (`r7313+71.1` to `+71.4`)
 
 *Receipts, all in `computations/beyond_the_wall/r7313_71_redraft2_blind/`:*
