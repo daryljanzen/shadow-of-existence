@@ -3778,6 +3778,141 @@ theorem open_frw_weyl (p : Fin 4 → ℝ) :
 
 end Engine4D_E3
 
+/-! ### E4 — acceptance instance 2, row 74: the homogeneous Gowdy–de Sitter metric
+`e^{2(γ−ψ)}(−dt² + dz²) + e^{2ψ}dx² + R²e^{−2ψ}dy²` (`ψ, γ, R` of `t`). With `E = G + Λg` from THE connection,
+`R(E_tt − E_zz) = AREA` and `R e^{2(γ−ψ)}(e^{−2ψ}E_xx − e^{2ψ}E_yy/R²) = 2 WAVE − AREA`, so the field equations give
+`AREA = WAVE = 0`, and the shear charge `C₀ = Ṙ − 2Rψ̇` has `Ċ₀ = AREA − 2 WAVE`: conserved on shell -/
+
+section Engine4D_E4
+
+set_option synthInstance.maxHeartbeats 400000
+
+noncomputable def FgW (ψ γ R : ℝ → ℝ) : Fin 4 → ℝ → ℝ :=
+  ![fun s => -Real.exp (2 * (γ s - ψ s)), fun s => Real.exp (2 * (γ s - ψ s)), fun s => Real.exp (2 * ψ s),
+    fun s => R s ^ 2 * Real.exp (-(2 * ψ s))]
+def GgW : Fin 4 → ℝ → ℝ := fun _ _ => 1
+
+/-- `(e^h)′ = h′e^h`, `(e^h)″ = (h″ + h′²)e^h`. -/
+lemma exp_derivs {h : ℝ → ℝ} (hs : ContDiff ℝ ∞ h) :
+    deriv (fun s => Real.exp (h s)) = (fun s => deriv h s * Real.exp (h s))
+    ∧ deriv (fun s => deriv h s * Real.exp (h s))
+      = fun s => (deriv (deriv h) s + deriv h s ^ 2) * Real.exp (h s) := by
+  have d0 : ∀ s, HasDerivAt h (deriv h s) s := fun s => ((hs.differentiable (by simp)) s).hasDerivAt
+  have d1 : ∀ s, HasDerivAt (deriv h) (deriv (deriv h) s) s := fun s =>
+    (((contDiff_infty_iff_deriv.1 hs).2.differentiable (by simp)) s).hasDerivAt
+  exact ⟨funext fun s => ((d0 s).exp).deriv.trans (by ring),
+    funext fun s => (((d1 s).mul (d0 s).exp)).deriv.trans (by ring)⟩
+
+variable {ψ γ R : ℝ → ℝ} (hψ : ContDiff ℝ ∞ ψ) (hγ : ContDiff ℝ ∞ γ) (hR : ContDiff ℝ ∞ R) (hR0 : ∀ s, R s ≠ 0)
+
+include hψ hγ hR in
+lemma FgW_smooth (k : Fin 4) : ContDiff ℝ ∞ (FgW ψ γ R k) := by fin_cases k <;> simp [FgW] <;> fun_prop
+lemma GgW_smooth (k : Fin 4) : ContDiff ℝ ∞ (GgW k) := contDiff_const
+include hR0 in
+lemma gW_ne (k : Fin 4) (p : Fin 4 → ℝ) : cS (FgW ψ γ R) GgW k p ≠ 0 := by
+  fin_cases k <;> simp [cS, FgW, GgW, Real.exp_ne_zero, hR0]
+
+set_option maxHeartbeats 4000000 in
+include hψ hγ hR hR0 in
+/-- **E4, row 74.** -/
+theorem gowdy_ds_field (Λ : ℝ) (p : Fin 4 → ℝ) :
+    let Rf := fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cS (FgW ψ γ R) GgW)) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => gW_ne hR0 i p) u h)
+      ((diag4_smooth (cS_smooth (FgW_smooth hψ hγ hR) GgW_smooth)).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p
+    let g := fun i => cS (FgW ψ γ R) GgW i p
+    let E := fun j => einsteinC g Rf j j + Λ * g j
+    let s := p 0
+    let ex := Real.exp (2 * (γ s - ψ s))
+    let WAVE := deriv R s * deriv ψ s + R s * deriv (deriv ψ) s - Λ * R s * ex
+    let AREA := deriv (deriv R) s - 2 * Λ * R s * ex
+    R s * (E 0 - E 1) = AREA
+      ∧ R s * ex * (Real.exp (-(2 * ψ s)) * E 2 - Real.exp (2 * ψ s) * E 3 / R s ^ 2) = 2 * WAVE - AREA := by
+  intro Rf g E s ex WAVE AREA
+  have D : ∀ {f : ℝ → ℝ}, ContDiff ℝ ∞ f → ∀ t, HasDerivAt f (deriv f t) t ∧ HasDerivAt (deriv f) (deriv (deriv f) t) t :=
+    fun hf t => ⟨((contDiff_infty_iff_deriv.1 hf).1 t).hasDerivAt,
+      (((contDiff_infty_iff_deriv.1 hf).2.differentiable (by simp)) t).hasDerivAt⟩
+  -- the exponents and their derivatives, at every point
+  have H0 : ∀ t, HasDerivAt (fun t => 2 * (γ t - ψ t)) (2 * (deriv γ t - deriv ψ t)) t :=
+    fun t => (((D hγ t).1).sub ((D hψ t).1)).const_mul 2
+  have H0' : ∀ t, HasDerivAt (fun t => 2 * (deriv γ t - deriv ψ t)) (2 * (deriv (deriv γ) t - deriv (deriv ψ) t)) t :=
+    fun t => (((D hγ t).2).sub ((D hψ t).2)).const_mul 2
+  have H2 : ∀ t, HasDerivAt (fun t => 2 * ψ t) (2 * deriv ψ t) t := fun t => ((D hψ t).1).const_mul 2
+  have H2' : ∀ t, HasDerivAt (fun t => 2 * deriv ψ t) (2 * deriv (deriv ψ) t) t := fun t => ((D hψ t).2).const_mul 2
+  have H3 : ∀ t, HasDerivAt (fun t => R t ^ 2 * Real.exp (-(2 * ψ t)))
+      (2 * R t * deriv R t * Real.exp (-(2 * ψ t)) - R t ^ 2 * (2 * deriv ψ t) * Real.exp (-(2 * ψ t))) t :=
+    fun t => (((D hR t).1.pow 2).mul (((D hψ t).1.const_mul 2).neg.exp)).congr_deriv (by simp; ring)
+  have dF0 : deriv (fun t => Real.exp (2 * (γ t - ψ t))) = fun t => 2 * (deriv γ t - deriv ψ t) * Real.exp (2 * (γ t - ψ t)) :=
+    funext fun t => ((H0 t).exp).deriv.trans (by ring)
+  have dF0n : deriv (fun t => -Real.exp (2 * (γ t - ψ t))) = fun t => -(2 * (deriv γ t - deriv ψ t) * Real.exp (2 * (γ t - ψ t))) :=
+    funext fun t => ((H0 t).exp.neg).deriv.trans (by ring)
+  have dF2 : deriv (fun t => Real.exp (2 * ψ t)) = fun t => 2 * deriv ψ t * Real.exp (2 * ψ t) :=
+    funext fun t => ((H2 t).exp).deriv.trans (by ring)
+  have dF3 : deriv (fun t => R t ^ 2 * Real.exp (-(2 * ψ t))) = fun t =>
+      2 * R t * deriv R t * Real.exp (-(2 * ψ t)) - R t ^ 2 * (2 * deriv ψ t) * Real.exp (-(2 * ψ t)) :=
+    funext fun t => (H3 t).deriv
+  have hDF : ∀ k, deriv (FgW ψ γ R k) s = (![-(2 * (deriv γ s - deriv ψ s) * ex), 2 * (deriv γ s - deriv ψ s) * ex,
+      2 * deriv ψ s * Real.exp (2 * ψ s),
+      2 * R s * deriv R s * Real.exp (-(2 * ψ s)) - R s ^ 2 * (2 * deriv ψ s) * Real.exp (-(2 * ψ s))] : Fin 4 → ℝ) k :=
+    fun k => by
+    fin_cases k
+    exacts [congrFun dF0n s, congrFun dF0 s, congrFun dF2 s, congrFun dF3 s]
+  have hDDF : ∀ k, deriv (deriv (FgW ψ γ R k)) s = (![
+      -((2 * (deriv (deriv γ) s - deriv (deriv ψ) s) + (2 * (deriv γ s - deriv ψ s)) ^ 2) * ex),
+      (2 * (deriv (deriv γ) s - deriv (deriv ψ) s) + (2 * (deriv γ s - deriv ψ s)) ^ 2) * ex,
+      (2 * deriv (deriv ψ) s + (2 * deriv ψ s) ^ 2) * Real.exp (2 * ψ s),
+      (2 * deriv R s ^ 2 + 2 * R s * deriv (deriv R) s) * Real.exp (-(2 * ψ s))
+        - 2 * (2 * R s * deriv R s) * (2 * deriv ψ s) * Real.exp (-(2 * ψ s))
+        - R s ^ 2 * (2 * deriv (deriv ψ) s) * Real.exp (-(2 * ψ s))
+        + R s ^ 2 * (2 * deriv ψ s) ^ 2 * Real.exp (-(2 * ψ s))] : Fin 4 → ℝ) k := fun k => by
+    fin_cases k
+    · show deriv (deriv fun t => -Real.exp (2 * (γ t - ψ t))) s = _
+      rw [dF0n]; exact (((H0' s).mul (H0 s).exp).neg).deriv.trans (by simp [ex]; ring)
+    · show deriv (deriv fun t => Real.exp (2 * (γ t - ψ t))) s = _
+      rw [dF0]; exact (((H0' s).mul (H0 s).exp)).deriv.trans (by simp [ex]; ring)
+    · show deriv (deriv fun t => Real.exp (2 * ψ t)) s = _
+      rw [dF2]; exact (((H2' s).mul (H2 s).exp)).deriv.trans (by simp; ring)
+    · show deriv (deriv fun t => R t ^ 2 * Real.exp (-(2 * ψ t))) s = _
+      rw [dF3]
+      have e3 := ((H2 s).neg.exp)
+      have a1 := (((D hR s).1.const_mul 2).mul (D hR s).1).mul e3
+      have a2 := ((((D hR s).1.pow 2).mul (H2' s)).mul ((H2 s).neg.exp))
+      exact (HasDerivAt.sub (HasDerivAt.mul (HasDerivAt.mul ((D hR s).1.const_mul 2) (D hR s).2) e3)
+        (HasDerivAt.mul (HasDerivAt.mul ((D hR s).1.pow 2) (H2' s)) e3)).deriv.trans (by simp; ring)
+  have hDG : ∀ k, deriv (GgW k) (p 1) = 0 := fun k => deriv_const _ _
+  have hDDG : ∀ k, deriv (deriv (GgW k)) (p 1) = 0 := fun k => by
+    show deriv (deriv fun _ : ℝ => (1 : ℝ)) (p 1) = 0; simp
+  have h1 := fun k v => dC1_cS (FgW_smooth hψ hγ hR) GgW_smooth p k v
+  have h2 := fun k u v => dC2_cS (FgW_smooth hψ hγ hR) GgW_smooth p k u v
+  have h1' : ∀ k v, fderiv ℝ (cS (FgW ψ γ R) GgW k) p v = _ := fun k v => h1 k v
+  have hRs := hR0 s
+  simp only [s, ex] at hDF hDDF
+  simp only [Rf, g, E, einsteinC, scalC, ricC, Fin.sum_univ_four,
+    curvD_eq (gW_ne hR0) (cS_smooth (FgW_smooth hψ hγ hR) GgW_smooth)]
+  simp only [curvD, Pi.sub_apply, Pi.add_apply, DGD, gamD, h1', h1, h2, hDF, hDDF, hDG, hDDG]
+  simp [cS, FgW, GgW, Fin.sum_univ_four, WAVE, AREA, ex, s]
+  have hRp : R (p 0) ≠ 0 := hR0 _
+  have hx : Real.exp (-(2 * ψ (p 0))) * Real.exp (2 * ψ (p 0)) = 1 := by rw [← Real.exp_add]; simp
+  constructor
+  · field_simp; ring
+  · field_simp
+    linear_combination (R (p 0) * deriv ψ (p 0) * deriv R (p 0) * 4 - R (p 0) * deriv (deriv R) (p 0) * 2
+      + R (p 0) ^ 2 * deriv (deriv ψ) (p 0) * 4) * hx
+
+omit hγ hR0 in
+include hψ hR in
+/-- **E4, the shear charge.** `C₀ = Ṙ − 2Rψ̇` has `Ċ₀ = AREA − 2 WAVE` (the `Λ` terms cancel): conserved on shell. -/
+lemma gowdy_shear_charge (Λ ex s : ℝ) : HasDerivAt (fun t => deriv R t - 2 * R t * deriv ψ t)
+    ((deriv (deriv R) s - 2 * Λ * R s * ex)
+      - 2 * (deriv R s * deriv ψ s + R s * deriv (deriv ψ) s - Λ * R s * ex)) s := by
+  have dR := (((contDiff_infty_iff_deriv.1 hR).2.differentiable (by simp)) s).hasDerivAt
+  have dψ := (((contDiff_infty_iff_deriv.1 hψ).2.differentiable (by simp)) s).hasDerivAt
+  have R0 := ((hR.differentiable (by simp)) s).hasDerivAt
+  exact (dR.sub ((R0.const_mul 2).mul dψ)).congr_deriv (by ring)
+
+end Engine4D_E4
+
 
 end ShadowProbe
 
@@ -3898,3 +4033,5 @@ end ShadowProbe
 #print axioms ShadowProbe.curvD_eq
 #print axioms ShadowProbe.dC2_cS
 #print axioms ShadowProbe.open_frw_weyl
+#print axioms ShadowProbe.gowdy_ds_field
+#print axioms ShadowProbe.gowdy_shear_charge
