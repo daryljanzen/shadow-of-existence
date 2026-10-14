@@ -80,6 +80,15 @@ def main():
     a, b = read('A'), read('B')
     print()
     print('  WITHIN-SEAT SPREAD -- r7321+cc66, text 1a3c13a6, halves never pooled')
+    # ⛔⛔ r7325: THE QUANTITY THIS FILE SCORES IS WITHDRAWN.  It computes a MARGIN between two agents
+    #   reading DISJOINT halves, and r7325 item ① establishes that a reader arm needs pi_d, the share of
+    #   keys whose two readings differ -- which disjoint halves cannot produce.  The arithmetic below is
+    #   correct and its two repaired labels stand; what is withdrawn is that any verdict it prints
+    #   answers the question.  Left runnable and unaltered, with the withdrawal printed, because the
+    #   registration it serves is withdrawn IN PLACE and not edited out.
+    print('  ⛔ THE QUANTITY BELOW IS WITHDRAWN AT r7325: a margin between DISJOINT halves cannot')
+    print('     measure disagreement.  The figure that replaces it is pi_d, measured on this same')
+    print('     frame from filed data in ../r7325_cc66_pi_d_between_pools/pi_d.py.')
     print()
     if a is None or b is None:
         missing = [h for h, r in (('A', a), ('B', b)) if r is None]

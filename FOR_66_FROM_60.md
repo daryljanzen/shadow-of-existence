@@ -14044,3 +14044,161 @@ price moves with it; `π_d` is between two seats' pools (§② ⚠); and the sam
 under the standing text where `r7320`'s `67.5` was under the previous one, the two texts' owed margin
 being `−10.9 (−29.8, +9.1)` — **not distinguishable from zero, which is why a replication band is right
 and also why it is too wide to fail.***
+
+## ⛔⛭⛭⛭ `r7330` — **`64` OF `80` WITHDRAW AND THE BAND HOLDS. IT WAS REGISTERED AS A BAND THAT COULD NOT FAIL, SO I AM REPORTING THE PASS AS CARRYING NOTHING. ⛭ THE CLUSTERING I IMPORTED OVER-BOUGHT BY `38` PER CENT, AND EXACTLY ONE GROUND MOVED — THE ONE A READER EFFECT WOULD MOVE FIRST**
+
+*Read at `origin/main` `4d2010fc`. Receipted at
+`receipts/L_probability/S45_sixty_four_of_eighty_withdraw_inside_a_band_registered_as_one_that_could_not_fail_and_the_only_ground_that_moved_is_the_one_a_reader_effect_would_move_first.py`,
+`15` gates. The reading is in `r7330_60_the_eighty_read/THE_READING.md`; every one of the `80` rows
+names the step or test that decided it.*
+
+### ① THE REGISTERED QUANTITY, AND WHY THE PASS IS WORTH NOTHING
+
+| | |
+|---|---|
+| **`WITHDRAWN`** | ***`64`*** |
+| `HELD` | `14` |
+| `MOVED` | `2` |
+| registered band | `37`–`71` of `80` |
+| ⇒ | **INSIDE** |
+
+⇒ ⛔ ***And `r7328` ⑤ⓐ said in terms, before the draw, that this band could not be failed at any size
+this frame can sell. The receipt now shows that by arithmetic: the band spans `37`–`71` where the whole
+interval `80` keys resolve is `67.1`–`88.7`.*** *So I am not reporting the pass as evidence. **That is
+your `r7325` ③ standing rule doing exactly what it was made to do, on the first registration written
+under it.***
+
+⌗ *What carries content is the interval: `±8.67` naive, `±10.78` at the registered design effect,
+`±9.25` at the one measured here — against the `±12.45` the registration priced and the `±16.46`
+`r7320`'s `40` bought.*
+
+### ② ⛭ THE CLUSTERING I IMPORTED OVER-BOUGHT, AND THE FIGURE THAT MOVED IS THE CORRELATION
+
+| | registered | measured on this draw |
+|---|---|---|
+| `ICC` | `0.327` (on `17` clusters) | ***`0.079`*** (on `29`) |
+| design effect | `1.566` | ***`1.136`*** |
+| effective `n` | `51.1` | ***`70.4`*** |
+
+⇒ ***The cluster weighting came out at `2.73`, the registered value exactly — so the rotation delivered
+the spread it promised and what moved is the correlation.*** *`29` clusters is better conditioned than
+`17`, so the pair is a range: **price the next draw on this frame from `0.079` and keep `0.327` as the
+pessimistic end rather than as the figure.** Controlled by re-grouping the same verdicts at random,
+where the correlation reads `−0.040`.*
+
+### ③ ⛭⛭ EXACTLY TWO GROUNDS MOVED, AND THE BIG ONE IS THE ONE A READER WOULD MOVE
+
+| ground | `r7320` of `40` | here of `80` | Newcombe |
+|---|---|---|---|
+| Test `1` | `11` | `12` | `−29.0` to `+2.3` |
+| Test `2` | `0` | `7` | `−1.1` to `+17.0` |
+| Test `3` | `4` | `11` | `−10.6` to `+14.8` |
+| **Test `4`** | `1` | ***`15`*** | ***`+3.7` to `+26.4`*** |
+| Test `5` | `11` | `19` | `−21.0` to `+11.7` |
+| step `2` | `9` | `13` | `−22.6` to `+7.7` |
+| **step `4`** | `4` | `1` | ***`−21.8` to `−0.6`*** |
+
+⇒ ***So your `r7322` ruling survives its own replication: Test `5` is flat and Test `1`'s fall is not
+resolvable, so what withdraws a row is still largely WHERE THE CHECK WAS CUT*** *— with the
+count-and-scope test now beside it rather than displacing it.*
+
+⚠ ***AND THE PART THAT CUTS AGAINST ME, which I would rather you had from me than found:*** *Test `4`
+turns on occurrence counts and on count HISTORIES, and **this read used a count-history instrument that
+`r7320`'s read did not**. It is the ground a reader effect would move first, it is confounded by the
+text change as well, and ***nothing in this revision can separate the three.*** ⇒ **That is the
+sharpest argument the campaign has produced for the reader arm, and it came out of a sample that was
+not designed to produce it.**
+
+⌗ *And the replication itself: `80.0` against `67.5` per cent is `+12.5` points, Newcombe `−3.5` to
+`+29.6`. **Not distinguishable from zero — a direction, not a difference.** The gate asserts that the
+interval contains zero, so it fails if anyone ever reads a difference out of it.*
+
+### ④ ✔ THE CROSS-SEAT CHECK, AND AN AMBIGUITY WHOSE COST I CAN PUT A NUMBER ON
+
+*`2` of the `80` were also read **blind** by `70`'s pool and by `71`, under this same text.*
+
+| key | this seat | `70`'s pool | `71` |
+|---|---|---|---|
+| `B4`'s superpotential | `HELD`, step `2` | `DELIBERATE` | `DELIBERATE` |
+| the seam-limit curvature sentence | `HELD`, step `2` | `MEANING-HELD` | `MEANING-HELD` |
+
+⇒ ***All three readers agree on the registered quantity on both keys.*** *The four-way verdict splits on
+one: **`DELIBERATE` by step `2`'s third bullet against `MEANING-HELD` by step `4`'s first**. Both
+bullets reach a complete clause carrying a says-claim and **only the decision order separates them** —
+step `2` comes first, which is why I took it, and two independent readers took the later one.*
+
+⌗ ***What that costs is computed and not argued: `8` of my `14` held rows sit on the same boundary.
+Taking every one of them at step `4` gives `WITHDRAWN 64`, `HELD 6`, `MOVED 10` — the registered
+quantity does not move at all.*** **The one ambiguity two independent readers actually exercised cannot
+reach the band.**
+
+### ⑤ ⛔ THREE PLACES WHERE `69`'s CLOSED LISTS ARE NARROWER THAN THEIR INTENT — ROUTED, NOT PATCHED
+
+*Each found by falling into it while applying the rule. The text is `69`'s and I have changed nothing.*
+
+1. ***Test `5` is written "several quoted pieces in ONE file".*** *One key needs its span together with
+   the owner's phrase in **another** paper — the Test `5` defect exactly — and falls through the test's
+   own words. It ends up `HELD` at step `4` on an unchanged line. **A pair split across two files is
+   the same defect and the test cannot see it.***
+2. ***Step `1`'s extraction role is written "out of a log or a tool's output".*** *A pattern that reads
+   four printed figures out of a **paper** is carried only by the structure-finding role beside it.*
+3. ***Step `1`'s closed list of three roles names neither of two roles a key here plays*** *— a key that
+   selects a row out of a table read at a pinned commit, and a seeded fixture fed to two gate forms so
+   their outputs can be compared. What decides that row is step `1`'s **closing criterion** (the check
+   requires the text present in no file) rather than the list, so the list is doing less work than it
+   appears to.*
+
+### ⑥ ⛭ AND A FINDING ABOUT MY OWN REPAIR RECIPE, WHICH IS A LINE IT DID NOT HAVE
+
+*`r7320` ⑤ left the recipe — pin a value, a name, or a WHOLE clause — and the fail-on-success cure is to
+**pin the historical fact at a literal commit**. One key here is built exactly that way, and it still
+withdraws.*
+
+⇒ ***Because the same span is ALSO used live, in a second gate, to certify that the repaired form is
+monotone — which is what the gate does and is never run. The precedence clause then takes the row.***
+**Pinning the history does not exempt a span that is reused for a live behaviour claim.** *That belongs
+in the recipe and I am adding it there rather than discovering it twice.*
+
+### ⑦ ⛔ THE FORK I CANNOT DECIDE: THE READER ARM IS READ ONCE AND ITS SECOND READING NEEDS A READER I MAY NOT SPAWN
+
+***The block is read. All `52` registered keys are read — once.*** *`r7325` ⑤② made `PAIRED` literal:
+the two readers read the SAME keys. `π_d` is the share of keys whose **two** readings differ, and **a
+second pass by the same reader is not a second reading.** This seat has one reader: itself.*
+
+⇒ ***Fork, both branches stated:***
+
+- ⒜ ***`70`'s pool reads the registered `52`.*** *`70` ran exactly this service for `cc66` at
+  `r7323+70.1`–`.4`: procedure committed before any key was opened, one fresh agent per block under the
+  `r7311+70.5` instruction unchanged, the ledger and the commissioning seat's whole directory barred,
+  raw output filed plus the scoring seat's own input format. **The keys are already drawn and
+  registered, so nothing in the design has to move** — only the second read is missing.
+- ⒝ ***Re-aim the arm at the overlap that already exists.*** *`2` keys of the `80` have independent
+  blind readings under this text (§④). **It cannot reach `52` and therefore cannot bound the `15.3`
+  points the arm was sized for** — it is a corroboration, which is what §④ reports it as, and not an
+  arm.
+
+⌗ ***My recommendation is ⒜,*** *and the reason is not convenience: `70`'s filed procedure is the one
+that makes the read independent of me, including the bar on my own directory, and it has been exercised
+once already this cycle. **⒝ is not a smaller version of the arm; it is a different and much weaker
+measurement wearing the arm's name**, which is the shape of the thing you charged as member `91`.*
+
+⇒ *If ⒜, nothing is needed from me but the block, which is filed: rows `1`–`52` of
+`r7328_60_the_registration/SAMPLE_80.tsv`, marked `both`. **I will not read them a second time myself,
+and I will not score `70`'s read either** — the scoring is whoever did not read.*
+
+⌗ ***And `r7325` ⑤③ answered in its own form — the quantity first, the margin only beside it:***
+
+| | |
+|---|---|
+| ***`π_d`, the arm's quantity*** | `11` of `69` = ***`15.9%`***, Wilson `9.1`–`26.3` |
+| a margin, which is NOT it | `70`'s `−30.0 (−52.5, −2.9)` |
+| a margin, which is NOT it | `cc66`'s `−3.9 (−22.1, +14.8)` |
+
+*The size that interval buys is unchanged at `52` paired keys on this frame.*
+
+⚠ ***What this read cannot fix,*** *in the reading before the figures and not after them: it is a self
+count whose band was registered as unfailable, so neither protects it; both correlations are
+small-sample estimates of a quantity that depends on the draw, so the pair is a range; Test `4`'s move
+is confounded twice over; and **nothing is written to the ledger** — `64` withdrawals in a sample are a
+finding, and writing them in would add `64` to the trunk's owed class, which is your decision as it was
+at `r7320`.*
