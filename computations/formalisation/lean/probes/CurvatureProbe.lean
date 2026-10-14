@@ -22,6 +22,7 @@ import Mathlib.Geometry.Manifold.VectorField.LieBracket
 import Mathlib.LinearAlgebra.Trace
 import Mathlib.LinearAlgebra.BilinearForm.Properties
 import Mathlib.Analysis.Calculus.ContDiff.FiniteDimension
+import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
 
 /-!
 # Probe K1 of `r7287+71.1`: the curvature tensor, the connection a hypothesis
@@ -4209,6 +4210,66 @@ theorem gowdy_tz_field (Λ : ℝ) (p : Fin 4 → ℝ)
 
 end Inst_R75
 
+
+/-! ### `r7327` — the cutoff lemma: B's near-the-point convention, proved once. A profile smooth near `p` and
+nonzero at `p` is equal near `p` to a profile that is smooth and nonzero EVERYWHERE, so every instance stated
+"for profiles equal to the named ones near the point" is about profiles that exist. -/
+
+section Cutoff
+
+open Metric Filter Topology
+
+/-- **The cutoff lemma.** `g = φf + (1 − φ)·f(p)`, `φ` a bump inside a ball where `f` keeps the sign of `f(p)`. -/
+theorem exists_global_profile {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+    {f : E → ℝ} {p : E} {R : ℝ} (hR : 0 < R) (hf : ContDiffOn ℝ ∞ f (ball p R)) (hp : f p ≠ 0) :
+    ∃ g : E → ℝ, ContDiff ℝ ∞ g ∧ (∀ x, g x ≠ 0) ∧ g =ᶠ[𝓝 p] f := by
+  have hc : ContinuousAt f p := hf.continuousOn.continuousAt (ball_mem_nhds p hR)
+  have hsq : 0 < f p * f p := mul_self_pos.2 hp
+  obtain ⟨δ, hδ, hs⟩ := Metric.eventually_nhds_iff_ball.1
+    ((hc.mul continuousAt_const).eventually (lt_mem_nhds hsq) |>.mono fun _ h => h)
+  set r := min δ R with hr
+  have hr0 : 0 < r := lt_min hδ hR
+  let φ : ContDiffBump p := ⟨r / 4, r / 2, by positivity, by linarith⟩
+  have hout : ∀ x, x ∉ ball p r → φ x = 0 := fun x hx =>
+    φ.zero_of_le_dist (by simp only [mem_ball, not_lt] at hx; show r / 2 ≤ _; linarith)
+  refine ⟨fun x => φ x * f x + (1 - φ x) * f p, ?_, fun x => ?_, ?_⟩
+  · refine ContDiff.add (contDiff_iff_contDiffAt.2 fun x => ?_) ((contDiff_const.sub φ.contDiff).mul contDiff_const)
+    by_cases hx : x ∈ ball p r
+    · exact φ.contDiffAt.mul (hf.contDiffAt (isOpen_ball.mem_nhds
+        (ball_subset_ball (min_le_right δ R) hx)))
+    · have hz : (fun x => φ x * f x) =ᶠ[𝓝 x] fun _ => 0 := by
+        have hU : {y | r / 2 < dist y p} ∈ 𝓝 x :=
+          (isOpen_lt continuous_const (continuous_id.dist continuous_const)).mem_nhds
+            (by simp only [mem_ball, not_lt] at hx; show r / 2 < dist x p; linarith)
+        exact Filter.mem_of_superset hU fun y hy => by
+          simp [φ.zero_of_le_dist (le_of_lt (show (r / 2 : ℝ) < dist y p from hy))]
+      exact contDiffAt_const.congr_of_eventuallyEq hz
+  · show φ x * f x + (1 - φ x) * f p ≠ 0
+    by_cases hx : x ∈ ball p r
+    · have hfx : 0 < f x * f p := by simpa using hs x (ball_subset_ball (min_le_left δ R) hx)
+      have h0 := φ.nonneg (x := x); have h1 := φ.le_one (x := x)
+      intro h
+      have : (φ x * f x + (1 - φ x) * f p) * f p = 0 := by rw [h]; ring
+      have hpos : 0 < (φ x * f x + (1 - φ x) * f p) * f p := by
+        rcases h0.lt_or_eq with h0 | h0
+        · nlinarith
+        · rw [← h0]; nlinarith
+      linarith
+    · simp [hout x hx, hp]
+  · filter_upwards [φ.eventuallyEq_one] with x hx
+    simp [hx]
+
+/-- **The cutoff lemma, in the shape the instances use**: a coefficient family smooth near `p` and nonzero at `p`
+is equal near `p` to a family that is smooth and nowhere zero, so `diag4`'s hypotheses are met. -/
+theorem exists_global_family {c : Fin 4 → (Fin 4 → ℝ) → ℝ} {p : Fin 4 → ℝ} {R : ℝ} (hR : 0 < R)
+    (hc : ∀ i, ContDiffOn ℝ ∞ (c i) (Metric.ball p R)) (hp : ∀ i, c i p ≠ 0) :
+    ∃ c' : Fin 4 → (Fin 4 → ℝ) → ℝ, (∀ i, ContDiff ℝ ∞ (c' i)) ∧ (∀ i x, c' i x ≠ 0)
+      ∧ ∀ i, c' i =ᶠ[𝓝 p] c i := by
+  choose c' h1 h2 h3 using fun i => exists_global_profile hR (hc i) (hp i)
+  exact ⟨c', h1, h2, h3⟩
+
+end Cutoff
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -4338,3 +4399,5 @@ end ShadowProbe
 #print axioms ShadowProbe.d2_of
 #print axioms ShadowProbe.d2_indep
 #print axioms ShadowProbe.gowdy_tz_field
+#print axioms ShadowProbe.exists_global_profile
+#print axioms ShadowProbe.exists_global_family
