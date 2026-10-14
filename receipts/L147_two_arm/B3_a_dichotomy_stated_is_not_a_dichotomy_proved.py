@@ -118,12 +118,30 @@ def main():
 
     # B1 stands
     arc = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()
+    # ⛭⛭ r7332+60, PO-78's repair stride, first block.  Both checks below were TWO-ARM
+    #   DISJUNCTIONS OVER TOKENS, which is the shape cc66's clause decided and the reason this
+    #   prefix goes first.  Each is replaced by ONE assertion of the clause the claim is about.
+    #   ⓵ `'21.8%' in arc or '0.7300' in arc` -- and the two arms are about DIFFERENT FACTS: the
+    #     figure is the two arms' peak separation and `0.7300` is the CONTROL's own return, so the
+    #     disjunction would have passed on a fact the claim is not about.  *Measured: `21.8%` stands
+    #     twice in the file and `0.7300` once.*  => The fork's own credited clause, which carries the
+    #     figure AND the conclusion it licenses.
+    #   ⓶ `'ruling out one horn' in arc.lower() or 'seam datum' in arc.lower()` -- `seam datum`
+    #     stands SIX times in the file and names no correction at all, and `ruling out one horn` is
+    #     a gerund phrase with no subject.  => The arc's own correction clause, which states the
+    #     correction and names what it corrected.
+    #   ⌗ Each replacement stands ONCE and its count arrived once and has never changed over the
+    #     file's 282 commits.
     check("B1's argument stands and is credited by the fork: two arms at equal l_A with first "
-          'peaks 21.8% apart rules out l_1 = c*l_A',
-          '21.8%' in arc or '0.7300' in arc)
+          'peaks 21.8% apart rules out l_1 = c*l_A -- the fork\'s own credited clause, asserted '
+          'whole in place of a disjunction whose other arm was about the control instead',
+          'two arms at essentially equal $\\ell_A$ with first peaks 21.8% apart still rules out '
+          '$\\ell_1=c\\,\\ell_A$' in arc)
     check("⛔ and the row's disposition overclaimed -- CORRECTED at r2470, so the arc now carries the "
-          'correction rather than the error, which is why this pins the CORRECTION',
-          'ruling out one horn' in arc.lower() or 'seam datum' in arc.lower())
+          'correction rather than the error, which is why this pins the CORRECTION: the arc\'s own '
+          'correction clause, asserted whole in place of two tokens that named no correction',
+          "DISPOSITION CORRECTED r2470 BY c54.187 — THE ARGUMENT STANDS AND THIS ROW'S VERDICT DID "
+          'NOT FOLLOW FROM IT' in arc)
 
     print()
     if FAILED:
