@@ -126,9 +126,19 @@ def main():
           sp.simplify(fS.subs(r, rn)) == 0 and sp.simplify(sp.diff(fS, r).subs(r, rn)) == 0)
 
     # ⓷ P15 already has the split
-    check("⛭⛭ AND P15 ALREADY DERIVED THE SPLIT, for a different purpose: a non-degenerate horizon's "
-          '"exponential near-horizon approach" imprints a scale-invariant spectrum',
-          'exponential near-horizon approach' in allp)
+    # ** r7329+70 (repair stride): the claim is that P15 DERIVED the split, so it is tested against P15
+    #   (not every paper concatenated) and on P15's whole clause -- subject, verb and what it imprints --
+    #   rather than on the three-word fragment "exponential near-horizon approach", which said nothing
+    #   on its own and could be satisfied by any paper.  The clause has stood once in P15 since it
+    #   arrived (c01f56c5). **
+    p15 = re.sub(r'\s+', ' ', '\n'.join(
+        l for l in open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
+                        encoding='utf-8', errors='replace').read().split('\n')
+        if not l.lstrip().startswith('%')))
+    check("⛭⛭ AND P15 ALREADY DERIVED THE SPLIT, for a different purpose: \"a non-degenerate horizon's "
+          'exponential near-horizon approach imprints a scale-invariant spectrum"',
+          "a non-degenerate horizon's exponential near-horizon approach imprints a scale-invariant "
+          "spectrum" in p15)
     # ** r6931+70.1: CLASS (a) -- THE PIN FROZE A CONFLATION THE CORPUS CORRECTED AT r6717+66.1
     #   (715ccd02).  It pinned P15's abstract as "the degenerate Nariai member's power-law,
     #   scale-free approach TO THE BRANCH POINT is argued to transmit the progenitor spectrum
@@ -145,20 +155,26 @@ def main():
     #   (9fd40454, 45 minutes after this receipt): P1 itself (BH_causality_v2) says the simple/double-root split "is put to a
     #   second use in a companion paper ... one fact serving two purposes".  The check now pins
     #   that connection in P1 rather than asserting its absence.
-    p15 = re.sub(r'\s+', ' ', '\n'.join(
-        l for l in open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
-                        encoding='utf-8', errors='replace').read().split('\n')
-        if not l.lstrip().startswith('%')))
     check("while \"the degenerate Nariai double root's power-law approach carries no scale\" -- the "
           'transmission itself being the branch point\'s, a third case',
-          "degenerate Nariai double root's power-law approach carries no scale" in p15
-          and 'a third case' in p15)
+          # r7329+70: one quotation carrying both halves, so they cannot be satisfied from unrelated
+          # paragraphs (bare "a third case" stands three times in P15).
+          "the degenerate Nariai double root's power-law approach carries no scale, and the branch "
+          "point where the modes cross---a third case" in p15)
     check('⇒ SO IT IS ONE FACT USED FOR TWO PURPOSES -- P15 needs it to say what CROSSES; L-519 needs '
           'it to say what the configuration CARRIES -- and P1 now says so itself: "one fact serving '
           'two purposes"',
-          'exponential near-horizon approach' in p15
-          and "degenerate Nariai double root's power-law approach carries no scale" in p15
-          and 'one fact serving two purposes' in p1)
+          # r7329+70: P15's split as ONE clause (both approaches, joined by its own "whereas"), and P1's
+          # connection as its whole sentence -- the fragment "one fact serving two purposes" asserted
+          # nothing alone.  Rule case RC1 (r7329+70 RESULT): the sentence's subject carries "The same",
+          # a pointing word by the letter of Test 2, though the noun phrase names its thing in full.
+          "a non-degenerate horizon's exponential near-horizon approach imprints a scale-invariant "
+          "spectrum (the inflationary de~Sitter-horizon mechanism), whereas the degenerate Nariai "
+          "double root's power-law approach carries no scale" in p15
+          and "The same simple-root against double-root split is put to a second use in a companion "
+          "paper, where a non-degenerate horizon's exponential approach imprints a scale on what passes "
+          "it and the degenerate member's power-law approach imprints none~\\cite{JanzenCRcosmology}: "
+          "one fact serving two purposes." in p1)
 
     # ⓸ the three footings
     # ** RE-PINNED r4022, AND THE PIN WAS ANCHORED ON THE ONE THING 61's r4019 EXISTED TO REMOVE. **
@@ -176,10 +192,13 @@ def main():
           'which carries a scale of its own',
           '$\\mathrm{dS}_{2}\\times S^{2}$' in p1
           and 's $\\mathrm{dS}_{2}\\times S^{2}$, which carries a scale of its own' in p1)
-    check('and it says the two readings are not reconciled there, and claims the coincidence rather '
-          'than a value',
-          'What is claimed is the coincidence and not a value' in allp
-          or 'the two readings are not reconciled here' in allp)
+    # r7329+70: this was ONE check accepting EITHER clause from ANY paper, for a claim that needs BOTH
+    # in P1 -- a disjunction cannot carry a conjunction.  Now two claims, each its own whole clause in
+    # P1, each standing once since it arrived (0d38a5bf).
+    check('and P1 says the two readings are not reconciled there',
+          'the two readings are not reconciled here' in p1)
+    check('and P1 claims the coincidence rather than a value',
+          'What is claimed is the coincidence and not a value' in p1)
 
     print()
     if FAILED:
