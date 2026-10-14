@@ -196,3 +196,80 @@ should follow one hop of transformation — `70`'s to price. ⒝ Whether `PO-78`
 *repairs that leave no untraceable residue* separately, which would make `L268/O1` and `L561/C1` the only
 two of my eight that fully clear. **I would rather the bound be harder to satisfy than satisfied by my
 own blind spot.**
+
+---
+
+# ⛔ CI caught two of these repairs, and both are cases the repair phase needs
+
+`fast` went **red on `1f77631c7`**, the five-repair commit, on both twin runs. **Mine, and the failures
+are instructive rather than careless:** `check_quote_pins` was green on that tree and I pushed on it. **It
+was the wrong gate to push on.**
+
+## ⑨ What failed, and the general lesson first
+
+| | |
+|---|---|
+| the failing step in CI | **`the text gates`** — one of the `126`, not the lint step |
+| the gate | **`check_receipts`** → *`⛔ 1 HOLLOW ASSERTION — provably cannot fail`* |
+| and a second, found by looking | **`check_exact_counts`** → *`1 NEW EXPOSED exact count`* on the eight-repair tree |
+
+⇒ ***A repair changes a receipt's ASSERTIONS, so the gates that police assertions are exactly the ones it
+can break — and `check_quote_pins` is not one of them.*** The quote-pin gate answers *did this key leave
+cleanly*; it says nothing about whether what replaced it is an assertion the corpus allows. **The
+verification for a repair is the fast job, and mine had not finished when I pushed.** I pushed on a
+partial check and CI found what the partial check could not.
+
+## ⑩ Case ⒠ — an exact count on a set another seat can grow
+
+`L558/D1`: my repair asserted **`len(readers) == 5`**, and `check_exact_counts` reports it as *an equality
+on a set another seat can move*. It is right — the seven gates are another seat's to add to or rename, and
+a count of five breaks the moment they do.
+
+⇒ Repaired by **naming the two that do not read the register** instead of counting the five that do:
+`set(GATES) - set(readers) == {'check_open_ledger', 'check_dupes'}`. **Strictly stronger** — it fails if a
+*different* gate stops reading it, which a count of five cannot see — and it carries no count equality.
+`check_exact_counts` is green: `54` EXPOSED keys against a baseline of `54`.
+
+⌗ **And the lesson generalises past this one row:** the repair shape prescribed — *assert what the claim
+IS* — reaches for a count of the things found, and **a count of another seat's things is the next defect
+along.** Three of my eight repairs assert `== 1` on a parse of another seat's file; those survive because
+the structure they count is the receipt's own claim, not a population another seat grows. **The
+distinction is worth stating in the working rule: count your own structure, name theirs.**
+
+## ⑪ Case ⒡ — ⛔ my repair of a vacuous guard was reported as a vacuous guard, and the guard was never hollow
+
+`P07/I7`: the repair added the presence guard the ledger's reason asked for, written the natural way —
+
+```python
+check('⛭ and P12 is LOADED before its absence is read …', bool(_p12) and len(_p12) > 10000, True)
+```
+
+The hollow-assertion lint reported it **`provably cannot fail`**. It is a **false positive**, and the
+mechanism is exact: `lint_assertions.py` takes **`node.args[-1]`** as the condition, which is right for the
+two-argument `check(label, cond)` form and wrong for this receipt's three-argument
+`check(label, got, want)` — there the last argument is the **expected value**, and the natural spelling of
+a boolean claim is the literal `True`, which sits in the lint's `TRUTHY_CONST = (True, 1, -1, 'x')`.
+
+⇒ Rewritten in **the idiom this receipt already uses** for its other three-argument checks — the expected
+value first, the computed one last, exactly as its `['P02', 'P03', 'P08', 'P10']` call does:
+
+```python
+check('… the guard r7329 repaired …', ['P12'],
+      sorted(c for c in BODIES if c == 'P12' and len(BODIES[c]) > 10000))
+```
+
+Both the receipt and the lint are green, and the guard still fails if P12 is absent or short, which is its
+whole point. **The lint's false positive is routed, not patched**: it is another line's instrument, and the
+fix on my side cost two lines.
+
+⌗ ***The irony is the finding:*** *a guard written to repair a vacuous guard was reported as one, by a
+heuristic that cannot see which argument is the condition. **Any seat repairing a Test 7 defect in a
+three-argument `check` will hit it**, and this stride hit it on its first.*
+
+## ⑫ What the two fixes do NOT change
+
+- **No verdict moves.** Both are repairs to repairs; the ledger is untouched by ⑩ and ⑪, and `REPAIR-OWED`
+  stays at `357`.
+- **The stride count stands at `8` receipts** — ⑩ and ⑪ are the same two receipts repaired again, not new
+  ones. ⇒ **The cost figure in ⑦ should arguably be read as `8` receipts for the price of `10` repairs**,
+  which makes the rate *worse*, not better, and is said here because it bears on the trigger.

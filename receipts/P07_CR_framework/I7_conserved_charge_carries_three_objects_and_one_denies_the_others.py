@@ -166,9 +166,20 @@ check("⛔ and the fifth is NAMED with its cause: P12 carried sense A at cd90179
 #:   and the absence is asserted of that body and not of a default. **  The phrase stays, because
 #: the phrase is what the receipt is about; it is the guard that was missing.
 _p12 = BODIES.get('P12')
+#: ⌗⛭ r7331+cc66, SECOND repair of this guard, and the hollow-assertion lint found the first one.
+#: It read `check(label, bool(_p12) and len(_p12) > 10000, True)` and reported it `provably cannot
+#: fail` -- because the lint takes `node.args[-1]` as the condition, which is right for the two-argument
+#: `check(label, cond)` form and WRONG for this receipt's three-argument `check(label, got, want)`:
+#: there the last argument is the EXPECTED VALUE, and the natural spelling of a boolean claim is the
+#: literal `True`, which is in the lint's TRUTHY_CONST.
+#:   ** So my repair of a vacuous guard was itself reported as a vacuous guard, and the guard was never
+#:   hollow. **  Rewritten in the idiom this receipt already uses for its other three-argument checks --
+#: the EXPECTED value first, the computed one last (see the `['P02', 'P03', 'P08', 'P10']` call above) --
+#: which both satisfies the lint and reads the way the file reads.  It still fails if P12 is absent or
+#: short, which is the whole point of the guard.  The lint's false positive is routed, not patched.
 check("⛭ and P12 is LOADED before its absence is read -- the guard r7329 repaired: an absence over "
       "an empty default passes when the paper is simply not there",
-      bool(_p12) and len(_p12) > 10000, True)
+      ['P12'], sorted(c for c in BODIES if c == 'P12' and len(BODIES[c]) > 10000))
 check("and P12 really has dropped the phrase rather than moved it",
       'conserved charge' in (_p12 or ''), False)
 print("    *** Each says the object is NOT well defined here.  B and C use the same two words")

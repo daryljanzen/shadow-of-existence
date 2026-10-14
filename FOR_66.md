@@ -16013,3 +16013,50 @@ check around the literal was the defect and the literal survives the repair, so 
 stale) — each with its ground written into the row.
 
 Write-up: `computations/beyond_the_wall/r7329_cc66_the_repair_stride/MEASURED.md` ⑥–⑧.
+
+---
+
+## `r7331` addendum — ⛔ CI caught two of my repairs, and the lesson is which gate a repair must be pushed on
+
+**LANDED** both fixes, green. **The red was mine**: `fast` failed on `1f77631c7` (both twin runs) and I
+had pushed on `check_quote_pins` being green. ***It was the wrong gate to push on.***
+
+**① THE GENERAL LESSON, first because it is the useful part.** The failing step was `the text gates`, and
+the gate was **`check_receipts`** → *`⛔ 1 HOLLOW ASSERTION — provably cannot fail`*. Looking further found
+a second on the eight-repair tree: **`check_exact_counts`** → *`1 NEW EXPOSED exact count`*. ⇒ ***A repair
+changes a receipt's ASSERTIONS, so the gates that police assertions are exactly the ones it can break —
+and the quote-pin gate is not one of them.*** It answers *did this key leave cleanly*; it says nothing
+about whether what replaced it is an assertion the corpus allows. **The verification for a repair is the
+fast job. Mine had not finished when I pushed, and I pushed anyway.**
+
+**② CASE ⒠ — an exact count on a set another seat can grow.** `L558/D1` asserted `len(readers) == 5`;
+`check_exact_counts` calls that *an equality on a set another seat can move*, and it is right — the seven
+gates are another seat's to add to or rename. Repaired by **naming the two that do NOT read the register**
+instead of counting the five that do, which is strictly stronger (it fails if a *different* gate stops
+reading it) and carries no count equality. ⌗ **And it generalises: the prescribed repair shape reaches for
+a count of the things it found, and a count of another seat's things is the next defect along. Three of my
+eight repairs assert `== 1` on a parse and survive only because the structure they count is the receipt's
+own claim. Worth a line in the working rule: COUNT YOUR OWN STRUCTURE, NAME THEIRS.**
+
+**③ CASE ⒡ — ⛔ my repair of a vacuous guard was reported as a vacuous guard, and it was never hollow.**
+`P07/I7`'s new presence guard, written the natural way as `check(label, bool(_p12) and len(_p12) > 10000,
+True)`, was reported `provably cannot fail`. **False positive, mechanism exact:** `lint_assertions.py`
+takes **`node.args[-1]`** as the condition — right for two-argument `check(label, cond)`, wrong for this
+receipt's three-argument `check(label, got, want)`, where the last argument is the EXPECTED VALUE and the
+natural spelling of a boolean claim is the literal `True`, which is in its `TRUTHY_CONST`. ⇒ Rewritten in
+**the idiom the receipt already uses** (expected value first, computed last — exactly as its
+`['P02','P03','P08','P10']` call does). Receipt and lint both green, and the guard still fails if P12 is
+absent or short. **Routed, not patched: it is another line's instrument and the fix on my side cost two
+lines.** ⌗ *Any seat repairing a Test 7 defect inside a three-argument `check` will hit this, and this
+stride hit it on its first.*
+
+**④ AND IT MAKES THE RATE WORSE, not better.** No verdict moves and `REPAIR-OWED` stays at **`357`**: ⒠ and
+⒡ are the same two receipts repaired a second time, not new ones. ⇒ **So ⑦'s figure is better read as `8`
+receipts for the price of `10` repairs.** Said because it bears on the trigger and it cuts against me.
+
+**⑤ VERIFIED NOW, on the gates that actually police this.** `check_receipts` **`rc=0`** — *"No hollow
+assertions."* `lint_assertions.py` `rc=0`. `check_exact_counts` `rc=0` — `54` EXPOSED keys against a
+baseline of `54`. `check_quote_pins` `rc=0` on the tree. Both repaired receipts `rc=0`. Also green and
+checked for this: `check_cannot_fail`, `check_pins_adjudicated_on_mint`,
+`check_paper_pins_not_comment_only`, `check_pin_board`, `check_absence_claims`, `check_source_hygiene`,
+`check_claims`, `check_appendix_current`, `check_currency`, `check_pages_current`.

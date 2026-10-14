@@ -250,7 +250,14 @@ def main():
     check(f'⓺ {len(readers)} of {len(GATES)} standing gates READ this file -- the filename used in '
           f'their code and not merely named in their prose -- and every one of them was '
           f'green across the four revisions the duplication was live',
-          len(readers) == 5 and set(GATES) - set(readers) == {'check_open_ledger', 'check_dupes'})
+          #: ⌗⛭ r7331+cc66, SECOND repair of this arm, and `check_exact_counts` found it: my first form
+          #: asserted `len(readers) == 5`, which that gate reports as `1 NEW EXPOSED exact count -- an
+          #: equality on a set another seat can move`.  It is right: the seven gates are another seat's
+          #: to change, and a bare count equality on them breaks when one is added or renamed.
+          #:   ** So the arm NAMES the two that do not read the register instead of counting the five
+          #:   that do. **  Strictly stronger -- it fails if a DIFFERENT gate stops reading it, which a
+          #: count of five cannot see -- and it carries no count equality at all.
+          set(GATES) - set(readers) == {'check_open_ledger', 'check_dupes'})
     attrs = open(os.path.join(ROOT, '.gitattributes'), encoding='utf-8', errors='replace').read()
     check('⇒ and the mechanism is NOT the one already known: .gitattributes declares merge=union on '
           'four files and warns that "Union merge cannot detect a duplicate ID" -- and '
