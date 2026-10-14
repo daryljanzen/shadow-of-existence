@@ -3299,6 +3299,138 @@ lemma ds_app {H η : ℝ} (hH : H ≠ 0) (hη : η ≠ 0) (haη : a =ᶠ[𝓝 η
 
 end SweepB14
 
+/-! ## `r7315`, B15 — receipt 22: a second engine, for time-dependent diagonal metrics `Σ qᵢ(t) dxᵢ²` on `ℝ⁴` (THE
+connection's Christoffel form `GT`, its `t`-derivative `DGT`, and its curvature on constant fields in closed form);
+then de Sitter in the flat slicing, `−dt² + e^{2Ht} dx²`: `R = 12H²`, `Ric² = 36H⁴`, `Riem² = 24H⁴`, so
+`Weyl² = 0` and `GB = 24H⁴` — with `α = 1/H` these are `144, 36, 24 /α⁴` squared and contracted -/
+
+section SweepB15
+
+set_option synthInstance.maxHeartbeats 400000
+
+/-- `Σ qᵢ(t) dxᵢ²`, with `t = p 0`. -/
+def cT (q : Fin 4 → ℝ → ℝ) : Fin 4 → (Fin 4 → ℝ) → ℝ := fun i p => q i (p 0)
+
+noncomputable def GT (q : Fin 4 → ℝ → ℝ) (s : ℝ) (a b : Fin 4 → ℝ) : Fin 4 → ℝ := fun k =>
+  (deriv (q k) s * (a 0 * b k + b 0 * a k) - if k = 0 then ∑ j, deriv (q j) s * (a j * b j) else 0) / (2 * q k s)
+
+noncomputable def DGT (q : Fin 4 → ℝ → ℝ) (s : ℝ) (a b : Fin 4 → ℝ) : Fin 4 → ℝ := fun k =>
+  ((deriv (deriv (q k)) s * (a 0 * b k + b 0 * a k)
+      - if k = 0 then ∑ j, deriv (deriv (q j)) s * (a j * b j) else 0) * (2 * q k s)
+    - (deriv (q k) s * (a 0 * b k + b 0 * a k) - if k = 0 then ∑ j, deriv (q j) s * (a j * b j) else 0)
+      * (2 * deriv (q k) s)) / (2 * q k s) ^ 2
+
+/-- The curvature, in closed form: `R(u,v)w = u⁰ DGT(v,w) − v⁰ DGT(u,w) + Γ(u,Γ(v,w)) − Γ(v,Γ(u,w))`. -/
+noncomputable def curvT (q : Fin 4 → ℝ → ℝ) (s : ℝ) (u v w : Fin 4 → ℝ) : Fin 4 → ℝ :=
+  u 0 • DGT q s v w - v 0 • DGT q s u w + GT q s u (GT q s v w) - GT q s v (GT q s u w)
+
+variable {q : Fin 4 → ℝ → ℝ} (hq : ∀ i s, q i s ≠ 0) (hqs : ∀ i, ContDiff ℝ ∞ (q i))
+include hq hqs
+
+lemma cT_ne (i : Fin 4) (p : Fin 4 → ℝ) : cT q i p ≠ 0 := hq i _
+lemma cT_smooth (i : Fin 4) : ContDiff ℝ ∞ (cT q i) := (hqs i).comp (contDiff_apply ℝ ℝ (0 : Fin 4))
+
+lemma GT_hasDerivAt (s : ℝ) (a b : Fin 4 → ℝ) : HasDerivAt (fun t => GT q t a b) (DGT q s a b) s := by
+  have d1 : ∀ i, HasDerivAt (deriv (q i)) (deriv (deriv (q i)) s) s := fun i =>
+    (((contDiff_infty_iff_deriv.1 (hqs i)).2.differentiable (by simp)) s).hasDerivAt
+  have d0 : ∀ i, HasDerivAt (q i) (deriv (q i) s) s := fun i => (((hqs i).differentiable (by simp)) s).hasDerivAt
+  refine hasDerivAt_pi.2 fun k => ?_
+  have hS : HasDerivAt (fun t => ∑ j, deriv (q j) t * (a j * b j)) (∑ j, deriv (deriv (q j)) s * (a j * b j)) s :=
+    HasDerivAt.fun_sum fun j _ => (d1 j).mul_const _
+  have hN : HasDerivAt (fun t => deriv (q k) t * (a 0 * b k + b 0 * a k)
+      - if k = 0 then ∑ j, deriv (q j) t * (a j * b j) else 0)
+      (deriv (deriv (q k)) s * (a 0 * b k + b 0 * a k)
+        - if k = 0 then ∑ j, deriv (deriv (q j)) s * (a j * b j) else 0) s := by
+    split_ifs
+    · exact HasDerivAt.sub ((d1 k).mul_const _) hS
+    · exact HasDerivAt.sub ((d1 k).mul_const _) (hasDerivAt_const s 0)
+  exact (hN.div ((d0 k).const_mul 2) (mul_ne_zero two_ne_zero (hq k s))).congr_deriv (by simp [DGT])
+
+lemma lcGam_T (p a b : Fin 4 → ℝ) : lcGam (diag4 (cT q)) p a b = GT q (p 0) a b := by
+  rw [lcGam_diag4 (cT_ne hq hqs) (cT_smooth hq hqs)]
+  have hf : ∀ i v, fderiv ℝ (cT q i) p v = deriv (q i) (p 0) * v 0 := fun i v => by
+    show fderiv ℝ (fun y : Fin 4 → ℝ => q i (y 0)) p v = _
+    rw [(fd_coord (x := p) (((hqs i).differentiable (by simp)) (p 0))).fderiv]; simp [mul_comm]
+  funext k
+  fin_cases k <;> simp [gamD, GT, hf, cT, Fin.sum_univ_four] <;> ring
+
+lemma fderiv_lcGam_T (p u a b : Fin 4 → ℝ) :
+    fderiv ℝ (lcGam (diag4 (cT q))) p u a b = u 0 • DGT q (p 0) a b := by
+  have hGd : Differentiable ℝ (lcGam (diag4 (cT q))) :=
+    (lcGam_smooth (fun p u h => diag4_nondeg (fun i => cT_ne hq hqs i p) u h)
+      (diag4_smooth (cT_smooth hq hqs))).differentiable (by simp)
+  rw [fderiv_apply₂' (hGd p), show (fun y => lcGam (diag4 (cT q)) y a b) = fun y => GT q (y 0) a b from
+    funext fun y => lcGam_T hq hqs y a b]
+  have H := (GT_hasDerivAt hq hqs (p 0) a b).hasFDerivAt.comp p (hasFDerivAt_apply (𝕜 := ℝ) (0 : Fin 4) p)
+  rw [show (fun y : Fin 4 → ℝ => GT q (y 0) a b) = (fun t => GT q t a b) ∘ fun y => y 0 from rfl, H.fderiv]
+  simp
+
+/-- **B15, the engine.** THE connection's curvature of `Σ qᵢ(t) dxᵢ²` on constant fields is `curvT`. -/
+theorem curv_T (p u v w : Fin 4 → ℝ) :
+    curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cT q)) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => cT_ne hq hqs i p) u h) ((diag4_smooth (cT_smooth hq hqs)).differentiable
+        (by simp)))) (fun _ => u) (fun _ => v) (fun _ => w) p = curvT q (p 0) u v w := by
+  have hGd : Differentiable ℝ (lcGam (diag4 (cT q))) :=
+    (lcGam_smooth (fun p u h => diag4_nondeg (fun i => cT_ne hq hqs i p) u h)
+      (diag4_smooth (cT_smooth hq hqs))).differentiable (by simp)
+  rw [curv_model _ _ (fun x w u => lcConn_const (diag4_symm _) _ _ x w u) hGd, fderiv_lcGam_T hq hqs,
+    fderiv_lcGam_T hq hqs, lcGam_T hq hqs, lcGam_T hq hqs, lcGam_T hq hqs, lcGam_T hq hqs]
+  rfl
+
+omit hq hqs
+
+/-- Contractions of a Riemann array `Rf i j k = R(eᵢ,eⱼ)eₖ` through a diagonal metric `g`. -/
+noncomputable def ricC (Rf : Fin 4 → Fin 4 → Fin 4 → Fin 4 → ℝ) (j k : Fin 4) : ℝ := ∑ i, Rf i j k i
+noncomputable def scalC (g : Fin 4 → ℝ) (Rf : Fin 4 → Fin 4 → Fin 4 → Fin 4 → ℝ) : ℝ := ∑ j, ricC Rf j j / g j
+noncomputable def ric2C (g : Fin 4 → ℝ) (Rf : Fin 4 → Fin 4 → Fin 4 → Fin 4 → ℝ) : ℝ :=
+  ∑ j, ∑ k, ricC Rf j k ^ 2 / (g j * g k)
+noncomputable def riem2C (g : Fin 4 → ℝ) (Rf : Fin 4 → Fin 4 → Fin 4 → Fin 4 → ℝ) : ℝ :=
+  ∑ i, ∑ j, ∑ k, ∑ l, (g l * Rf i j k l) ^ 2 / (g i * g j * g k * g l)
+
+/-- de Sitter in the flat slicing: `−dt² + e^{2Ht}(dx² + dy² + dz²)`. -/
+noncomputable def qDS (H : ℝ) : Fin 4 → ℝ → ℝ :=
+  ![fun _ => -1, fun s => Real.exp (2 * H * s), fun s => Real.exp (2 * H * s), fun s => Real.exp (2 * H * s)]
+
+lemma qDS_ne (H : ℝ) (i : Fin 4) (s : ℝ) : qDS H i s ≠ 0 := by fin_cases i <;> simp [qDS, Real.exp_ne_zero]
+lemma qDS_smooth (H : ℝ) (i : Fin 4) : ContDiff ℝ ∞ (qDS H i) := by fin_cases i <;> simp [qDS] <;> fun_prop
+
+/-- **B15, receipt 22.** THE connection's invariants on de Sitter: `R = 12H²`, `Ric² = 36H⁴`, `Riem² = 24H⁴`;
+hence `Weyl² = Riem² − 2Ric² + R²/3 = 0` and `GB = Riem² − 4Ric² + R² = 24H⁴`. -/
+theorem ds_invariants (H : ℝ) (p : Fin 4 → ℝ) :
+    let Rf := fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cT (qDS H))) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => cT_ne (qDS_ne H) (qDS_smooth H) i p) u h)
+      ((diag4_smooth (cT_smooth (qDS_ne H) (qDS_smooth H))).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p
+    let g := fun i => qDS H i (p 0)
+    scalC g Rf = 12 * H ^ 2 ∧ ric2C g Rf = 36 * H ^ 4 ∧ riem2C g Rf = 24 * H ^ 4
+      ∧ riem2C g Rf - 2 * ric2C g Rf + scalC g Rf ^ 2 / 3 = 0
+      ∧ riem2C g Rf - 4 * ric2C g Rf + scalC g Rf ^ 2 = 24 * H ^ 4 := by
+  intro Rf g
+  have h1 : ∀ s, HasDerivAt (fun s => Real.exp (2 * H * s)) (2 * H * Real.exp (2 * H * s)) s := fun s =>
+    HasDerivAt.congr_deriv (((hasDerivAt_id' s).const_mul (2 * H)).exp) (by ring)
+  have e1 : deriv (fun s => Real.exp (2 * H * s)) = fun s => 2 * H * Real.exp (2 * H * s) :=
+    funext fun s => (h1 s).deriv
+  have e2 : deriv (fun s => 2 * H * Real.exp (2 * H * s)) = fun s => 4 * H ^ 2 * Real.exp (2 * H * s) :=
+    funext fun s => (HasDerivAt.congr_deriv ((h1 s).const_mul (2 * H)) (by ring)).deriv
+  have hR : ∀ i j k, Rf i j k = curvT (qDS H) (p 0) (Pi.single i 1) (Pi.single j 1) (Pi.single k 1) :=
+    fun i j k => curv_T (qDS_ne H) (qDS_smooth H) p _ _ _
+  have hS : scalC g Rf = 12 * H ^ 2 := by
+    simp only [scalC, ricC, hR, g]
+    simp [Fin.sum_univ_four, curvT, GT, DGT, qDS, e1, e2]
+    field_simp; ring
+  have hC : ric2C g Rf = 36 * H ^ 4 := by
+    simp only [ric2C, ricC, hR, g]
+    simp [Fin.sum_univ_four, curvT, GT, DGT, qDS, e1, e2]
+    field_simp; ring
+  have hM : riem2C g Rf = 24 * H ^ 4 := by
+    simp only [riem2C, hR, g]
+    simp [Fin.sum_univ_four, curvT, GT, DGT, qDS, e1, e2]
+    field_simp; ring
+  refine ⟨hS, hC, hM, ?_, ?_⟩ <;> rw [hS, hC, hM] <;> ring
+
+end SweepB15
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -3409,3 +3541,5 @@ end ShadowProbe
 #print axioms ShadowProbe.ds_tt_mode
 #print axioms ShadowProbe.mukhanov
 #print axioms ShadowProbe.ds_app
+#print axioms ShadowProbe.curv_T
+#print axioms ShadowProbe.ds_invariants
