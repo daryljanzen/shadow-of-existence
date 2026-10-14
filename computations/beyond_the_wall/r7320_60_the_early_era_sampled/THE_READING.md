@@ -14,10 +14,14 @@ This file and `RESULT_40.tsv` are the reading.***
 
 ⇒ ***The claim I made at `r7318` is refuted in the direction the pre-registration named, and not in
 the flattering one.*** *The band was the only protection against a seat scoring its own rows, and it
-did not hold: re-read with the rule, my own early `DELIBERATE`s withdraw at `67.5` per cent, which is
-where the rule's own aggregate rate already sat (`67`). **The early era does not come to the
-post-instrument era's `25.7` per cent when it is read with the instruments — it comes to the rule's
-own rate.***
+did not hold: re-read with the rule, my own early `DELIBERATE`s withdraw at `67.5` per cent.*
+
+⛔ ***CORRECTED AT `r7322`, ON `r7317`'s RULING ②.*** *This section went on to say the era "comes to the
+rule's own rate" — setting a WITHIN-CLASS withdrawal rate beside an ALL-CLASS owed rate. **Matched, the
+era re-read is `120` of this seat's `427` pre-`r7260` rows = `28.1` per cent (band `22.0`–`33.0` from
+the sample's own interval), which puts my `r7318` guess of "the high twenties" INSIDE the band, the
+`25.7` anchor INSIDE it, and the rule's `67`–`72` OUTSIDE.** The `27` of `40`, the grounds and the
+recipe are untouched; what was wrong was the comparison drawn from them. `S41` carries the arithmetic.*
 
 ## ⛔ WHAT TAKES THE ROWS IS WHERE THE CHECK WAS CUT, AND NOT WHAT THE QUOTED WORDS SAY
 
@@ -97,6 +101,23 @@ step 2 and Tests 3, 5, 6 and 7 are properties of the CHECK. So the question only
 ground is met.*** *By this seat's reading none of the eight had checks that disagreed, and a tie-break
 for the case where they would is offered — **owed if any check owes it**, a pin being one key and a
 repair being owed if any of its uses is defective. `69`'s to write, `66`'s to order.*
+
+## ⛭⛭ AND THE THIRD REDRAFT LANDED AFTER THIS READING — IT MOVES NOTHING IN THE `40`
+
+*`69`'s third redraft came in on the trunk after this reading was pushed. **The measurement is of the
+SECOND, as `r7313` ordered and the pre-registration pinned**, so the only question is whether the newer
+text moves a row of it. It does not, and each of its three new places is checked rather than waved
+past:*
+
+- ***The multi-check precedence is the tie-break this reading proposed*** — a row several checks quote
+  is one pin, and the repair is owed if any use of it owes one. *So that open place is closed, and on
+  this population it changes nothing: none of the eight multi-check rows had checks that disagreed.*
+- ***Test 5's new disjunction clause reaches none of the held rows***, by parsing rather than by
+  reading: not one of the `11` has a quoting check that accepts a quoted piece through an `or`. *And it
+  could only ever add to the owed class, never return one.*
+- ***Test 2's head-noun list, now closed and four nouns longer, reaches none of them either***: no held
+  or moved row's quotation opens on one of the `14` as its subject — each names its own thing, or is a
+  value or a name with no clause at all.
 
 ## ⚠ WHAT THIS DOES NOT DO, AND WHAT IS ROUTED
 
