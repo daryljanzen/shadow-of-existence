@@ -123,10 +123,28 @@ def main():
 
     # ⓷ the corpus's one-constant statement is about the faces
     p0 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'geometric_core_paper.tex')))
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    #   ** THE OWED ROW WAS `is a pure power of`: a span dangling at BOTH ends -- a leading finite
+    #   verb and a trailing preposition -- standing at nine sites across six files, so it was a pin
+    #   on the FILE and could not locate the claim it was about. **  Its partner arm began
+    #   mid-word (`t force a coupling`), so the conjunction of two fragments in one file stood for
+    #   what two adjacent sentences say.
+    #   ⇒ *** Replaced by ONE span carrying both sentences -- the subject (`every curvature
+    #     invariant on either face`), the predicate, and the one-constant conclusion -- read over a
+    #     MARKUP-NORMALISED paper, which is `r7258`'s settled form for a carrier whose markers fall
+    #     inside the carrying span.  Normalising the READER, never splitting the span around the
+    #     markers. ***  ⌗ ONE site in the normalised paper; zero in the raw, which is the whole
+    #     reason the normalisation is in the reader.
+    p0u = re.sub(r'\\(emph|textbf|textit)\{([^{}]*)\}', r'\2', p0)
+    _FACES = ('every curvature invariant on either face is a pure power of $1/\\alpha^{2}$. So the '
+              'construction cannot force a coupling, and its silence about magnitudes is a property '
+              'of a one-constant theory rather than a gap awaiting work')
     check('⓷ while the corpus\'s one-constant claim is about the FACES: "every curvature invariant on '
           'either face is a pure power of $1/\\alpha^{2}$ ... a property of a one-constant theory '
-          'rather than a gap awaiting work"',
-          'is a pure power of' in p0 and 't force a coupling, and its silence about magnitudes is a property of a one-constant theory' in p0)
+          'rather than a gap awaiting work" -- asserted as the two adjacent sentences in one span '
+          'over a markup-normalised read, in place of two fragments whose conjunction in a file '
+          'stood for them',
+          _FACES in p0u)
 
     print()
     if FAILED:

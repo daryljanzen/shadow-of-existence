@@ -168,13 +168,27 @@ def main():
     #    ⇒ *The DECLINATION is the finding and it is intact and sharper; the two words were the
     #      evidence for it, not the thing itself.*  So the check asserts the declination in the
     #      paper's own current voice, and the ratchet above still forbids the footprint growing.
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    #   ** THE OWED ROW WAS `is not a question the variation asks`, and it stood as the SECOND HALF
+    #   of one sentence whose first half was the conjunct beside it: two fragments whose conjunction
+    #   IN A FILE stood for what one sentence says, with the subject of the second (`which side is
+    #   the existent`) sitting in neither span. **
+    #   ⇒ *** The two are merged into the ONE sentence they are halves of, read over a markup-
+    #     normalised paper -- `r7258`'s form, since the emphasis marker falls inside the carrying
+    #     span -- while the two conjuncts that are DIFFERENT sentences stay separate, because a
+    #     conjunction of distinct claim-complete sentences is not the defect. ***  ONE site.
+    allpu = re.sub(r'\\(emph|textbf|textit)\{([^{}]*)\}', r'\2', allp)
+    _DECLINED = ('Varying an action returns a field equality, and an equality has no direction; '
+                 "which side is the existent and which the name of the other's bend is not a "
+                 'question the variation asks')
     check('⛭⛭ AND THE ROUTE IS STILL DECLINED, IN THE PAPER\'S CURRENT WORDS: "Varying an action '
-          'returns a field \\emph{equality}, and an equality has no direction; which side is the '
-          'existent ... is not a question the variation asks", and "the two are orthogonal, not in '
-          'competition --- the same field equations either way".  *The paragraph is headed "The '
-          'reading has no quarrel with a variational route."*',
-          'Varying an action returns a field \\emph{equality}, and an equality has no direction' in allp
-          and 'is not a question the variation asks' in allp
+          'returns a field equality, and an equality has no direction; which side is the existent '
+          'and which the name of the other\'s bend is not a question the variation asks" -- '
+          'asserted as the ONE sentence, over a markup-normalised read, in place of two fragments '
+          'of it -- and "the two are orthogonal, not in competition --- the same field equations '
+          'either way".  *The paragraph is headed "The reading has no quarrel with a variational '
+          'route."*',
+          _DECLINED in allpu
           and 'the two are orthogonal, not in competition' in allp
           and 'The reading has no quarrel with a variational route' in allp)
 

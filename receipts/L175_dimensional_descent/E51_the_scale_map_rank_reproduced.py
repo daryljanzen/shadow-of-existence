@@ -71,8 +71,18 @@ def main():
           "the plane-section scale-only reduction; (e) the scale map's rank being 1\"",
           "the scale map's rank being 1" in kill
           and 'the plane-section' in kill)
-    check('and says they are reproduced nowhere else',
-          'reproduced NOWHERE ELSE" than `L-533' in kill or 'reproduced nowhere else' in kill.lower())
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    #   ** THE OWED ROW WAS `reproduced nowhere else`, and it sat in a DISJUNCTION whose weaker arm
+    #   decided alone: a case-folded read of a bare predicate whose SUBJECT is outside the span
+    #   entirely. **  *From `reproduced nowhere else` nothing says WHAT is reproduced nowhere else,
+    #   while the claim is about the three named links.*
+    #   ⇒ *** Replaced by the one clause that names the three links, whose derivation they are, and
+    #     what is true of them -- case-sensitive, one arm, ONE site. ***
+    _NOWHERE = ("(c), (d) and (e) are `L-533`'s own derivation and are reproduced NOWHERE ELSE")
+    check('and says the three are `L-533`\'s own derivation and are reproduced NOWHERE ELSE -- '
+          'asserted as the clause that carries its own subject, in place of a case-folded predicate '
+          'whose subject sat outside it',
+          _NOWHERE in kill)
 
     # ⓶ route 1 -- symbolic
     a, c = sp.symbols('alpha_top c_2', positive=True)

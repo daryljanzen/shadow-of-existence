@@ -94,6 +94,8 @@ def main():
     # framework papers and failed -- located by grep instead of by expectation. **
     p6 = body(os.path.join(ROOT, 'corpus', 'boundary_paper.tex'))
     p0 = body(os.path.join(ROOT, 'corpus', 'geometric_core_paper.tex'))
+    _higgs_raw = open(os.path.join(ROOT, 'CR_AND_THE_HIGGS.md'),
+                      encoding='utf-8', errors='replace').read()
     higgs_doc = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'CR_AND_THE_HIGGS.md'),
                                          encoding='utf-8', errors='replace').read())
     rp = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_PHYSICS_REACH.md'),
@@ -194,9 +196,33 @@ def main():
           zero['Higgs'] > 0)
 
     # ⓸ the corpus already holds the sentence
-    check('⌗ and the relation is WORKED OUT in CR_AND_THE_HIGGS.md §4: "CR is a SELECTION-RULE theory; '
-          'the Higgs sector is a MAGNITUDE theory"',
-          'CR is a \\emph{selection-rule}' in higgs_doc or 'SELECTION-RULE' in higgs_doc.upper())
+    # ⛭⛭ r7336+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    #   ** THE OWED ROW WAS `CR is a \emph{selection-rule}` -- LaTeX emphasis in a MARKDOWN
+    #   document, wording the document no longer carries -- and it sat in a DISJUNCTION whose other
+    #   arm was a CASE-FOLDED TOKEN (`SELECTION-RULE` anywhere in the file), so the token decided
+    #   alone and the stale arm was never noticed. **
+    #   ⇒ *** Replaced by the one §4 sentence-pair that states the relation and names the asymmetry,
+    #     read over a MARKDOWN-normalised document: the blockquote markers are stripped per line and
+    #     the emphasis runs dropped, because the carrier's markers fall INSIDE the carrying span.
+    #     `r7258`'s form, applied to a markdown carrier rather than a LaTeX one. ***  ONE site
+    #     normalised; the shorter form stands twice, so the asymmetry clause is what locates it.
+    #   ⚠ *** AND THIS IS A RULE CASE, FILED NOT PAPERED OVER: the gate layer's own normaliser reads
+    #     the LaTeX emphasis family, math delimiters and `~`.  A MARKDOWN carrier -- blockquote plus
+    #     asterisk emphasis -- is outside it, so a span like this one cannot be held by the same
+    #     mechanism that holds a paper span.  Second instance of the class filed at `r7332`, in a
+    #     different markup language. ***
+    _higgs_md = re.sub(r'\*+', '',
+                       re.sub(r'\s+', ' ',
+                              ' '.join(re.sub(r'^\s*>\s?', '', _l)
+                                       for _l in _higgs_raw.split('\n'))))
+    _RELATION = ('CR is a SELECTION-RULE theory; the Higgs sector is a MAGNITUDE theory. They '
+                 'compose, and the composition is asymmetric in a way worth naming')
+    check('⌗ and the relation is WORKED OUT in CR_AND_THE_HIGGS.md §4: "CR is a SELECTION-RULE '
+          'theory; the Higgs sector is a MAGNITUDE theory.  They compose, and the composition is '
+          'asymmetric in a way worth naming" -- asserted as the sentence-pair that states the '
+          'relation AND names the asymmetry, over a markdown-normalised read, in place of a stale '
+          'LaTeX spelling disjoined with a case-folded token',
+          _RELATION in _higgs_md)
     check("with CR's own one-constant theorem saying it cannot supply the strengths",
           'one-constant theorem' in higgs_doc)
     check('⇒⇒ AND THE ANSWER IS IN A PAPER NOW -- the one-clause fix this receipt asked for was made '
