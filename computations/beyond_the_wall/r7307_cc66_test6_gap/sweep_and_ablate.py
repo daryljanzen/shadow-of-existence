@@ -106,38 +106,45 @@ def main():
 
     print()
     print('  ' + '=' * 72)
-    print('  PART 4 -- AGAINST THE SECOND REDRAFT: THE ROUTING NOW DEAD-ENDS')
+    print('  PART 4 -- IS THE HOLE STILL OPEN?  AND THE PIN THAT COULD NOT TELL')
     print('  ' + '=' * 72)
     rule = open(os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7299_69_the_rule',
                              'THE_RULE.md'), encoding='utf-8', errors='replace').read()
     flat_rule = re.sub(r'\s+', ' ', rule)
 
-    # The second redraft ADDED a routing step in step 2 for a multi-piece check.
-    routing = ('When one check requires several quoted pieces, read its claim before step 2. If the '
+    # ⛔ r7317+cc66: THE FIRST FORM OF THIS PART WAS A GUARD THAT COULD NOT FAIL FOR THE RIGHT
+    #   REASON, and it is this seat's own instrument with the shape this campaign is about.
+    #   It asserted the PRESENCE of four phrases and inferred `the hole is open` from them --
+    #   among them Test 5's heading, `Two or more pieces are required together and nothing joins
+    #   them`.  ** The repair this seat proposed ADDED a clause and deliberately KEPT that heading,
+    #   so the phrase the pin keyed on survives the fix the pin was watching for. **  69 took the
+    #   clause verbatim in the third redraft at 1a3c13a61 and the pin reported `OK` on all four
+    #   arms, which is to say it reported a closed hole as open.
+    #   ⇒ *** PRESENCE DOES NOT CARRY THE CLAIM -- which is Test 5's own lesson, and the pin was
+    #       written to watch Test 5. ***  The repair is to key on the thing that CHANGES: the
+    #       disjunction clause itself, absent while the hole is open and present once it is closed.
+    DISJ = ('or the claim needs all of them and the check accepts any one — a disjunction cannot '
+            'carry a conjunction')
+    ROUTING = ('When one check requires several quoted pieces, read its claim before step 2. If the '
                'claim says something about the pieces together')
-    routes_to_5 = 'step 2 reaches none of them, and Test 5 decides'
-    # ...and it routes to a Test 5 whose antecedent is still CONJUNCTIVE.
-    t5_antecedent = 'Two or more pieces are required together and nothing joins them'
-    # ...while Test 6 still asks after a BAD arm.
-    t6_antecedent = 'A choice between alternatives, where the weaker one decides alone'
+    closed = DISJ in flat_rule
+    routes = ROUTING in flat_rule
 
-    checks = [
-        ('the second redraft adds a routing step for a multi-piece check', routing in flat_rule),
-        ('and that step routes to Test 5', routes_to_5 in flat_rule),
-        ("Test 5's antecedent is still `required TOGETHER`", t5_antecedent in flat_rule),
-        ("Test 6 still asks after a BAD arm only", t6_antecedent in flat_rule),
-    ]
-    for label, ok in checks:
-        print(f'    {"OK  " if ok else "FAIL"}  {label}')
+    print(f'    routing step present in step 2            : {routes}')
+    print(f'    Test 5 carries the disjunction clause     : {closed}')
     print()
-    print('    ⇒ THE DEAD-END, and PART 1 is the proof of it: the claim DOES speak of the pieces')
-    print('      together, so the routing step fires -- and Test 5 asks whether they are required')
-    print('      TOGETHER, which the ablation disproves. Deleting either arm leaves the check')
-    print('      PASSING, so the two arms are not required together and Test 5 cannot decide.')
-    print('      The same ablation that shows the defect shows why the test sent to decide it cannot.')
-    if not all(ok for _, ok in checks):
+    if closed:
+        print('    ✔ THE HOLE IS CLOSED.  Test 5 now receives what the routing step hands it, so the')
+        print('      three rows below reach Test 5 and the repair is owed on every piece -- including')
+        print('      `21.8%`, which step 4 called DELIBERATE only while the routing dead-ended.')
+        print('      ⌗ Measured, not assumed: the clause is in THE_RULE.md as this script reads it.')
+    else:
+        print('    ⛔ THE HOLE IS OPEN.  The routing step fires and Test 5 cannot receive the arms,')
+        print('      because its antecedent asks whether they are required TOGETHER and PART 1')
+        print('      disproves exactly that: deleting either arm leaves the check PASSING.')
+    if not routes:
         print()
-        print('  FAILED: the rule text moved -- re-read it before trusting PART 4')
+        print('  FAILED: the routing step is gone -- the whole reading above rests on it')
         return 1
     print()
     if bad != 2:
@@ -146,8 +153,13 @@ def main():
     if moved != [(0, 0), (1, 1)]:
         print(f'  FAILED: the count history moved more than 0->1: {moved}')
         return 1
-    print('  VERDICT: the disjunction-for-a-conjunction is owed a repair that no test in 1-7 asks')
-    print('  for.  Test 6 is drafted around a BAD ARM; this defect is a GOOD ARM TOO FEW.')
+    if closed:
+        print('  VERDICT: the disjunction-for-a-conjunction IS now decided, by Test 5 carrying this')
+        print('  seat\'s clause as of 69\'s third redraft.  The defect was a GOOD ARM TOO FEW, and the')
+        print('  ablation above is still what shows it and still what Test 5 now answers.')
+    else:
+        print('  VERDICT: the disjunction-for-a-conjunction is owed a repair that no test in 1-7 asks')
+        print('  for.  Test 6 is drafted around a BAD ARM; this defect is a GOOD ARM TOO FEW.')
     print()
     return 0
 
