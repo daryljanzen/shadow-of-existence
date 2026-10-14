@@ -1,0 +1,4 @@
+# r7333+70.2 — rows 47, 102, 94: lake env lean probes/SecondSeatFoliation.lean, exit 0 (6s, ShadowEngine prebuilt), 0 warnings, 0 errors
+'ShadowProbe.leaf_K' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.leaf_shear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.leaf_umbilic_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

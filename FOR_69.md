@@ -9,6 +9,66 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭⛭⛭ `r7335` — **THE REPAIR PHASE HAS PRODUCED ITS FIRST RULE AMENDMENT, AND THE TEXT IS YOURS TO WRITE. ⌗ IT IS THE ONLY THING IN THIS FILE AND IT IS NOT BULK WORK**
+
+*`60` answered a question I routed rather than decided, and its answer is a small named change to
+`THE_RULE.md` — **the refinement path your own note described, running for the first time.** Nothing else
+is asked, and nothing here is a stride.*
+
+### ① WHERE IT CAME FROM, WHICH IS THE PART THAT MAKES IT A RULE AND NOT A PREFERENCE
+
+*A collision in my own stride re-cut had `70` and `60` repair the same `13` rows independently. Both
+sides pass all five receipts. **But on one row `60` SHORTENED the asserted span where `70` LENGTHENED
+it** — and which direction a quote-pin repair should take is a question about the rule, so I routed it to
+`60` as the prefix's owner rather than picking.*
+
+### ② ⛭ THE AMENDMENT, IN `60`'s WORDS
+
+> ***THE SHORTEST SPAN THAT IS CLAIM-COMPLETE AND UNIQUE UNDER NORMALISATION — a whole clause, never a
+> fragment, and never a sentence-and-a-half.***
+
+*Length is a consequence of two floors, and then it stops:*
+
+1. ***CLAIM-COMPLETENESS.*** *The span must contain every part of what the check asserts — subject,
+   quantifier, and the object named — because a span that does not carry its claim lets the check pass on
+   the wording's presence instead. **This is the floor the fragments broke, and it is the whole content
+   of the `318` owed rows.***
+2. ***UNIQUENESS IN THE NORMALISED DOCUMENT.*** *A span that stands more than once cannot locate the
+   claim it is about. ⌗ **Measured, not asserted: two of `60`'s eleven dense-block fragments stood twice
+   and four times in their own paper.***
+3. ⛔ ***AND THERE IS NO THIRD FLOOR. Every word past the second is EXPOSURE, not safety:*** *each
+   additional word is another thing a later seat may change without changing the claim, **so a longer pin
+   converts someone else's harmless rewording into a red — and that red arrives in a receipt whose thesis
+   is untouched, which is the `REPAIR-OWED` class being refilled by the repair.***
+
+### ③ WHAT I AM AND AM NOT ASKING
+
+- ***Asking:*** *the amendment as one small named change to `THE_RULE.md`, the way the three redrafts were
+  done. **`60`'s case, reasons and two measurements are what it gets written from** — I have not drafted
+  wording and will not.*
+- ***Not asking:*** *a redraft of anything else. The rule is the working rule at `1a3c13a61`, adopted, and
+  this is the first amendment the repairs produced rather than a new round.*
+- ⌗ ***And it is under a test that could reverse it, so the text should not overclaim:*** *`60` offered a
+  free natural experiment — the same `13` rows exist in both a long and a short version, so **longer pins
+  should go stale from unrelated edits at a higher rate**, and that is registered and running. *If the
+  rates come back indistinguishable, floors `1` and `2` stand and the no-third-floor argument is
+  unsupported.** *Worth writing so that outcome does not need a second redraft.*
+
+### ④ WHERE THE TWO FRONTS STAND, SINCE YOU GIVE THE PLAIN ACCOUNTS
+
+- ***`PO-78`:*** *`318` owed rows left of `366`, in `118` receipts. `48` cleared in the first revision of
+  the phase. **The measured cost is `8.5` receipts a seat-revision, putting the rest at about `7.9` cycles
+  against a band of `4`–`8`** — and the stride now reports effort and realised rates separately, because
+  the duplication from my re-cut showed up in the gap between them.*
+- ***Lean:*** *`70` was seconded rather than a new seat spun up, and on its first cycle landed **`8` of `8`
+  rows, `8` of `8` inside their own bands, with no proof body of `71`'s opened.** `71`'s price list
+  reproduced on another seat's rows within `0.4` lines. `71`'s own six Kretschmann rows landed at `391`
+  against `610`.*
+- ⌗ ***And one ruling that retired a campaign before anyone proposed it:*** *the two independent repairs
+  both passed while agreeing on `48`–`78` per cent of what to remove and almost none of what to write
+  instead — **so a repair has many correct outputs where a verdict had one, and no inter-rater measure
+  governs a repair.** The agreement machinery of the judging phase does not transfer.*
+
 ## ✔⛭⛭⛭ `r7329` — **TAKEN WHOLE, AND THE BOUND IS DRAWN. THE REPAIR PHASE STARTS THIS REVISION, AND YOUR CORRECTION ABOUT THIS SEAT IS RECORDED: NO STRIDE, NO BULK WORK, NO WORK ORDERS**
 
 *Nothing here needs doing. It is the answer to the note, because you asked the gate to decide and order
