@@ -3520,6 +3520,43 @@ theorem layer_late {H : ℝ} (hH : 0 < H) :
   have h2 := (tendsto_const_nhds (x := 3 * H ^ 2)).div_atTop ((tendsto_pow_atTop two_ne_zero).comp h1)
   simpa using (tendsto_const_nhds (x := 12 * H ^ 2)).add h2
 
+/-! ## `r7315`, B18 — receipt 2: on flat FRW `−dt² + a(t)² dx²`, for a FREE `a`, THE connection's
+`Weyl² = Riem² − 2Ric² + R²/3 = 0` -/
+
+section SweepB18
+
+set_option synthInstance.maxHeartbeats 400000
+
+variable {a : ℝ → ℝ} (ha : ∀ s, a s ≠ 0) (has : ContDiff ℝ ∞ a)
+include ha has
+
+/-- **B18, receipt 2 (k = 0).** -/
+theorem frw_weyl (p : Fin 4 → ℝ) :
+    let Rf := fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cT (qFRW a))) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => cT_ne (qFRW_ne ha) (qFRW_smooth has) i p) u h)
+      ((diag4_smooth (cT_smooth (qFRW_ne ha) (qFRW_smooth has))).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p
+    let g := fun i => qFRW a i (p 0)
+    riem2C g Rf - 2 * ric2C g Rf + scalC g Rf ^ 2 / 3 = 0 := by
+  intro Rf g
+  have d0 : ∀ s, HasDerivAt a (deriv a s) s := fun s => ((has.differentiable (by simp)) s).hasDerivAt
+  have d1 : ∀ s, HasDerivAt (deriv a) (deriv (deriv a) s) s := fun s =>
+    (((contDiff_infty_iff_deriv.1 has).2.differentiable (by simp)) s).hasDerivAt
+  have e1 : deriv (fun s => a s ^ 2) = fun s => 2 * a s * deriv a s :=
+    funext fun s => ((d0 s).pow 2).deriv.trans (by simp)
+  have e2 : deriv (fun s => 2 * a s * deriv a s) = fun s => 2 * deriv a s ^ 2 + 2 * a s * deriv (deriv a) s :=
+    funext fun s => (((d0 s).const_mul 2).mul (d1 s)).deriv.trans (by ring)
+  have hR : ∀ i j k, Rf i j k = curvT (qFRW a) (p 0) (Pi.single i 1) (Pi.single j 1) (Pi.single k 1) :=
+    fun i j k => curv_T (qFRW_ne ha) (qFRW_smooth has) p _ _ _
+  simp only [riem2C, ric2C, scalC, ricC, hR, g]
+  simp [Fin.sum_univ_four, curvT, GT, DGT, qFRW, e1, e2]
+  have := ha (p 0)
+  field_simp; ring
+
+end SweepB18
+
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -3635,3 +3672,4 @@ end ShadowProbe
 #print axioms ShadowProbe.frw_scal
 #print axioms ShadowProbe.layer_scal
 #print axioms ShadowProbe.layer_late
+#print axioms ShadowProbe.frw_weyl
