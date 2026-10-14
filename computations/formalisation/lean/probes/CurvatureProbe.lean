@@ -2445,6 +2445,60 @@ theorem slice_gauss {f : ℝ → ℝ} {p : ℝ × ℝ} (hr : p.1 ≠ 0) (hf : f 
 
 end SweepB4
 
+/-! ## `r7315`, B5 — receipt 36: on SdS, `f = 1 − 2M/r − r²/α²`, THE connection's slice curvature is
+`K_G = 1/α² − M/r³`. On `K_G = 0` the mass leaves `f`, which becomes `1 − 3r²/α²`, and `K_G` and `f` vanish
+together at some `r > 0` iff `27M² = α²`, the Nariai discriminant (there `r = 3M = α/√3`) -/
+
+section SweepB5
+
+noncomputable def fSdS (M α r : ℝ) : ℝ := 1 - 2 * M / r - r ^ 2 / α ^ 2
+
+lemma fSdS_hasDerivAt (M α : ℝ) {r : ℝ} (hr : r ≠ 0) :
+    HasDerivAt (fSdS M α) (2 * M / r ^ 2 - 2 * r / α ^ 2) r := by
+  have e : fSdS M α = fun s => 1 - 2 * M * s⁻¹ - s ^ 2 / α ^ 2 := by funext s; simp only [fSdS]; ring
+  rw [e]
+  refine HasDerivAt.congr_deriv (HasDerivAt.sub (HasDerivAt.sub (hasDerivAt_const r (1 : ℝ))
+    ((hasDerivAt_inv hr).const_mul (2 * M))) ((hasDerivAt_pow 2 r).div_const (α ^ 2))) ?_
+  field_simp; ring
+
+open Filter Topology in
+/-- **B5.** THE connection's slice curvature on SdS is `1/α² − M/r³`. -/
+theorem sds_slice_gauss {e h : ℝ → ℝ} (he : ∀ s, e s ≠ 0) (hh : ∀ s, h s ≠ 0) (hes : ContDiff ℝ ∞ e)
+    (hhs : ContDiff ℝ ∞ h) {M α : ℝ} {p : ℝ × ℝ} (hr : p.1 ≠ 0) (hf : fSdS M α p.1 ≠ 0)
+    (he1 : e =ᶠ[𝓝 p.1] fun s => (fSdS M α s)⁻¹) (hh1 : h =ᶠ[𝓝 p.1] fun s => s ^ 2) :
+    diagF e h p (curv (lcConn (ℝ × ℝ) (ndOf (diagF e h) (diagF_symm e h) (diagF_nondeg he hh)
+        ((diagF_smooth hes hhs).differentiable (by simp))))
+      (fun _ => ((1 : ℝ), (0 : ℝ))) (fun _ => ((0 : ℝ), (1 : ℝ))) (fun _ => ((0 : ℝ), (1 : ℝ))) p) ((1 : ℝ), (0 : ℝ))
+      / (e p.1 * h p.1) = 1 / α ^ 2 - M / p.1 ^ 3 := by
+  rw [slice_gauss he hh hes hhs hr hf (fSdS_hasDerivAt M α hr).differentiableAt he1 hh1,
+    (fSdS_hasDerivAt M α hr).deriv]
+  field_simp; ring
+
+/-- On `K_G = 0` the mass term is absorbed: `f = 1 − 3r²/α²`. -/
+lemma sds_flat_locus {M α r : ℝ} (hα : α ≠ 0) (hr : r ≠ 0) (hK : 1 / α ^ 2 - M / r ^ 3 = 0) :
+    fSdS M α r = 1 - 3 * r ^ 2 / α ^ 2 := by
+  have hM : M = r ^ 3 / α ^ 2 := by field_simp at hK ⊢; linarith
+  rw [fSdS, hM]; field_simp; ring
+
+/-- **B5, receipt 36.** `K_G` and `f` vanish together at some `r > 0` iff `27M² = α²`. -/
+theorem sds_nariai_iff {M α : ℝ} (hM : 0 < M) (hα : 0 < α) :
+    (∃ r > 0, 1 / α ^ 2 - M / r ^ 3 = 0 ∧ fSdS M α r = 0) ↔ 27 * M ^ 2 = α ^ 2 := by
+  constructor
+  · rintro ⟨r, hr, hK, hf⟩
+    rw [sds_flat_locus hα.ne' hr.ne' hK] at hf
+    have hM' : M * α ^ 2 = r ^ 3 := by field_simp at hK; linarith
+    have hα2 : α ^ 2 = 3 * r ^ 2 := by field_simp at hf; linarith
+    have h9 : 9 * M ^ 2 * r ^ 4 = r ^ 2 * r ^ 4 := by
+      linear_combination (M * α ^ 2 + r ^ 3) * hM' - M ^ 2 * (α ^ 2 + 3 * r ^ 2) * hα2
+    have := mul_right_cancel₀ (pow_ne_zero 4 hr.ne') h9
+    linear_combination 3 * this - hα2
+  · intro h27
+    refine ⟨3 * M, by positivity, ?_, ?_⟩
+    · rw [← h27]; field_simp; ring
+    · rw [fSdS, ← h27]; field_simp; ring
+
+end SweepB5
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2527,3 +2581,6 @@ end ShadowProbe
 #print axioms ShadowProbe.lcGam_diag
 #print axioms ShadowProbe.diag_curv
 #print axioms ShadowProbe.slice_gauss
+#print axioms ShadowProbe.sds_slice_gauss
+#print axioms ShadowProbe.sds_flat_locus
+#print axioms ShadowProbe.sds_nariai_iff
