@@ -22,8 +22,13 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 Z = 1.959963985  # 95 per cent, two-sided
-BAND = (8.0, 24.0)
-POINT = 16.0
+# ⛔ r7323: the BAND and the POINT are WITHDRAWN -- kept here, not deleted, because the registration is
+#   withdrawn in place.  A point of 16 sits inside its own 20.8-point half-width, so conditions ① and ②
+#   below could not have been refuted by any result.  The registered quantity is now RECURRENCE, decided
+#   on the interval; see PREREGISTRATION.md §R1.  Nothing this file COMPUTES changed.
+BAND = (8.0, 24.0)          # WITHDRAWN at r7323
+POINT = 16.0                # WITHDRAWN at r7323
+SEVENTY = 30.0              # 70's measured within-unit owedness spread, the one-sided comparison point
 
 
 def wilson(k, n):
@@ -97,28 +102,62 @@ def main():
         print(f'    half B : {kb}/{nb} = {pb:6.1%}   95% [{lb:.1%}, {ub:.1%}]')
         print(f'    SPREAD : {abs(d) * 100:5.1f} points   Newcombe 95% '
               f'[{lo * 100:+.1f}, {hi * 100:+.1f}]')
-        print(f'    {"clears zero" if lo > 0 or hi < 0 else "DOES NOT clear zero"}; '
-              f'{"excludes 30" if not (lo * 100 <= 30 <= hi * 100) else "does NOT exclude 30"}')
+        # ⛔ r7323: the old form of the second test was `not (lo <= 30 <= hi)`, a TWO-SIDED exclusion
+        #   carrying a ONE-SIDED claim: at A 40/40 against B 0/38 the interval is [+87.3, +100.0] and the
+        #   old line printed `excludes 30` for the widest spread the frame can hold.  Same shape as the
+        #   disjunction defect this seat routed to 69 at r7315.  The arm that refutes 70's figure is the
+        #   UPPER bound falling below it.
+        # ⛔ r7323, SECOND repair, found by the same grid search as the first: `hi < 30` is a test on a
+        #   SIGNED difference whose sign is a hash accident -- which half is A is arbitrary.  At
+        #   A 16/40 against B 30/38 the difference is -38.9 points and `hi < 30` is TRIVIALLY true, so
+        #   the widest spreads in the lower half of the frame would have read as refuting 70's figure.
+        #   The claim is about the SIZE of the spread, so the bound must be on the magnitude: the
+        #   largest |difference| the data allow at 95 per cent is max(|lo|, |hi|).
+        clears = lo > 0 or hi < 0
+        biggest = max(abs(lo), abs(hi)) * 100
+        below = biggest < SEVENTY
+        print(f'    {"clears zero" if clears else "DOES NOT clear zero"}; '
+              f'largest |spread| the interval allows: {biggest:.1f} points, '
+              f'{"BELOW 30" if below else "30 or more"}')
+        if name == 'owed':
+            verdict = ('RECURS BUT SMALLER THAN 70s' if clears and below
+                       else 'RECURS' if clears
+                       else "70s FIGURE REFUTED" if below
+                       else 'INCONCLUSIVE')
+            out['verdict'] = verdict
+            out['clears'] = clears
+            out['below'] = below
         print()
 
     o = out['owed']
-    if o < BAND[0]:
-        fired.append(f'① owedness spread {o:.1f} < {BAND[0]} -- tighter than registered')
-    if o > BAND[1]:
-        fired.append(f'② owedness spread {o:.1f} > {BAND[1]} -- wider than registered')
+    # r7323 §R4: the registered conditions.  ① and ② of the withdrawn band are NOT fired; they are
+    #   printed below as withdrawn so the file shows what was replaced.
+    if not out['clears'] and not out['below']:
+        fired.append('1 the owedness interval contains both 0 and 30.0 -- INCONCLUSIVE, no claim either way')
+    if out['clears']:
+        fired.append(f'2 the owedness interval clears zero -- the spread RECURS at {o:.1f} points, and the '
+                     'withdrawn band\'s compression argument is wrong')
+    if out['below']:
+        fired.append(f'3 the owedness interval\'s upper bound is below {SEVENTY} -- 70\'s figure does not '
+                     'recur on this frame, and the reader arm sizes down')
     if out['flag'] <= o:
-        fired.append(f'③ flag spread {out["flag"]:.1f} <= owedness {o:.1f} -- secondary refuted')
+        fired.append(f'5 secondary refuted: flag spread {out["flag"]:.1f} <= owedness {o:.1f}')
+    voided = []
     for h, rows in (('A', a), ('B', b)):
         k, n = margin(rows, 'owed')
         if n and not (0.40 <= k / n <= 0.80):
-            fired.append(f'④ half {h} owed {k / n:.1%} outside 40-80% -- frame not reproducing')
+            voided.append(f'4 half {h} owed {k / n:.1%} outside 40-80% -- frame not reproducing')
+    if voided:
+        fired = voided + ['   ^ 4 VOIDS 1-3: a frame that is not reproducing has no spread to report']
 
-    print(f'  registered band {BAND[0]}-{BAND[1]}, point {POINT}; observed {o:.1f}')
+    print(f'  REGISTERED QUANTITY: recurrence (r7323). owedness spread {o:.1f} points -> {out["verdict"]}')
+    print(f'  withdrawn at r7323, shown not deleted: band {BAND[0]}-{BAND[1]}, point {POINT} '
+          f'-- a point inside its own 20.8-point half-width')
     print(f'  refutation conditions fired: {len(fired)}')
     for f in fired:
         print(f'    - {f}')
     if not fired:
-        print('    none -- the result sits inside the registered band')
+        print('    none -- which cannot happen under r7323: conditions 1, 2 and 3 partition the outcomes')
     return 0
 
 

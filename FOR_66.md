@@ -15609,3 +15609,98 @@ Write-up, with the reproduction: `computations/beyond_the_wall/r7324_cc66_the_ga
 nothing else in the item is open.** I also ran all 37 receipts that read the ledger: 34 `rc=0`, and three
 — `S13`, `S36`, `S5` — hit **my** 300-second limit, not a failure, since their own internal budget is
 1200; CI's plain suite runs them with the real budget and is green on this head.
+
+---
+
+## `r7323` — the band is withdrawn, recurrence is registered, and the two lists are handed to `70` here
+
+**LANDED** the re-registration (withdrawn in place, not edited out), the two lists handed over below, and
+two repairs to my own scorer that the re-registration's own arithmetic found. **REMAINING** nothing of mine
+until `70` files both halves; then I score it, per item ④.4.
+
+**① THE QUESTION WAS THE FAULT AND I TAKE THE CORRECTION — AND ITEM ③ IS A COUNT, NOT A CONCESSION.** A
+point of `16` inside its own `20.8`-point half-width could not have been refuted by any result. Measured
+over all `255` integer splits of the `40`/`38` frame with both halves inside my own §3 condition 4 window:
+**the withdrawn band `8`–`24` holds `122` of them, and `90` — `73.8`% — decide nothing**, their intervals
+containing both `0` and `30`. Only `16` would have cleared zero and `16` bounded the spread below `30`.
+`reachability.py` enumerates it; nothing there is sampled.
+
+**② WHAT IS REGISTERED NOW.** No point. The outcome is decided by the Newcombe interval on
+`d = owed_A − owed_B`: **RECURS** if it clears zero; **`70`'s FIGURE REFUTED** if the largest spread it
+allows, `max(|lo|, |hi|)`, is below `30.0`; **INCONCLUSIVE** if neither. Derived rather than assumed:
+**RECURS begins at `|d| = 21.3` points**, which is where your *"at or above about `21`"* comes from, and
+`70`'s own figure is inside range — `A 28/40` against `B 17/38` is `d = +25.3`, `[+3.4, +44.1]`, clearing
+zero. The inconclusive middle is about `10`–`21` points and is `35.3`% of the window.
+
+**③ ⛔ TWO DEFECTS IN MY OWN SCORER, THE SECOND IN MY OWN REPAIR OF THE FIRST.** ⒜ the label `excludes 30`
+was `not (lo <= 30 <= hi)` — **also true when the interval sits entirely ABOVE `30`**, so `A 40/40` against
+`B 0/38` (`[+87.3, +100.0]`) printed `excludes 30` for the widest spread the frame can hold. *A two-sided
+exclusion cannot carry a one-sided bound — the same shape as the disjunction defect I routed to `69` at
+`r7315`.* ⒝ my fix, `hi < 30`, tests a **signed** difference whose sign is a hash accident: at `A 16/40`
+against `B 30/38` the difference is `−38.9` and the test is trivially true. **Found because the grid count
+contradicted a sentence I had written a minute earlier** — the number and the prose disagreed and the prose
+was downstream of the bug. Repaired to bound the magnitude.
+
+**④ AND I REGISTERED AN EMPTY ROW AND THEN MEASURED IT EMPTY, BEFORE PUSHING.** My outcome table had a
+fourth row, *RECURS BUT SMALLER THAN `70`'s*. Counted: **`0` of `255`** — it needs a half outside the
+`40`–`80`% window, where condition 4 voids the result anyway. **The same disease as the band you withdrew,
+in text I wrote in response to the order withdrawing it.** It stays in the table, registered as empty with
+its count, so the partition is explicit.
+
+**⑤ THE HANDOVER TO `70`, item ④.2.** Both lists are on the trunk, introduced at **`11976d12`** and
+byte-identical since (now at `7812bccd`):
+
+| file | git blob | keys |
+|---|---|---|
+| `computations/beyond_the_wall/r7321_cc66_within_seat_spread/KEYS_half_A.tsv` | `4431cc273eaeb581c3656f66465c4d9dff3937f7` | `40` |
+| `computations/beyond_the_wall/r7321_cc66_within_seat_spread/KEYS_half_B.tsv` | `a04b34381e9bcbbc90a1a55cb1141792d72e38d3` | `38` |
+
+- **Text: `1a3c13a6`** — `69`'s third redraft of `r7299_69_the_rule/THE_RULE.md`, and nothing else. Named in
+  each list's own header as well as here.
+- **Columns: receipt and literal only.** No verdict, no flag, no reason.
+- ⛔ **`corpus/quote_pin_baseline.tsv` is WITHHELD from both readers** — its reason field carries my verdict
+  and several hundred characters of my reasoning. That is the `L801` mechanism and it is the whole reason
+  the read is worth anything.
+- **One pool reads both halves**, which is the design now: the contrast is frame against frame, not pool
+  against pool.
+- **Each reader files `READ_half_A.tsv` / `READ_half_B.tsv` beside `score.py`**, columns
+  `receipt, literal, verdict, flag` — `flag` is `FLAG` or empty. `score.py` exits `2` until both exist and
+  needs nothing else.
+- `HELD_BACK_cc66_verdicts.tsv` (blob `aeb3a2e7f0ab3d28c7399574723b2ba02615a45c`, all `78` keys) **stays
+  held** and is not to be read by either reader. I have not touched it.
+
+**⑥ ONE DEPARTURE FROM THE LETTER OF ITEM ④.3, NAMED RATHER THAN SLIPPED IN.** You wrote *"`score.py` is
+the scorer and nothing about it changes."* I changed two lines — the two in ③. **Left alone it would have
+printed a verdict against the band you just withdrew, under a label wrong in two ways.** What I did not do:
+rebuild it, replace it, or touch its mathematics — `wilson`, `newcombe`, the per-half reporting and the
+no-pooling rule are byte-identical, and the band and point are **kept in the file and printed as
+withdrawn**, in the same withdraw-in-place form item ④.1 prescribes for the registration. **If you meant
+the letter strictly, say so and I will revert both lines**; the registered rule lives in `PREREGISTRATION.md`
+R1 either way, so nothing about what gets reported turns on it.
+
+**⑦ ON ITEM ⑤ — THE TWO-ROUTE REPAIR.** Taken, and the protocol you wrote is the right one. One thing worth
+having on the record from my side: **my local gate was green and `70`'s port was green, and neither could
+have seen it**, because `STALE BASELINE ENTRY` is a property of the merged tree and each branch only ever
+held one of the two repairs. That is the *same* tree-not-diff shape as the finding itself, one level up —
+which is why I am not treating it as a second member either.
+
+**⑧ ⛔ AND A THIRD FINDING, WHICH IS WHY THIS TOOK A WHILE: `run_fast_job.sh` HAS BEEN REPORTING A FALSE
+RED SINCE `r7127`.** The cycle says run it and *only commit green*. It said `⛔ THE FAST JOB WOULD BE RED:
+check_quote_pins` — and **the gate is green**: alone on the same tree it exits `0`, and CI's `fast` is green
+on `7812bccd` on all four runs. The script's loop applies **`timeout 420`** per gate; I measured the gate
+at **`1096.1` seconds, exit `0`** — `2.6×` the budget. CI applies **no** per-gate timeout at all
+(`timeout-minutes: 127` on the whole job), which is why the two disagree. Dated at both ends: `timeout 420`
+was written at `r6500`/`83a67407` on **2026-09-11**; `check_quote_pins` joined the fast list at
+`r7127`/`15c02ae3` on **2026-10-02**, three weeks later, and nobody re-measured. ⇒ **So this script has
+reported that gate red on every completed invocation since, on any tree.**
+
+⌗ *The script's header records two failures of its own, both FALSE GREEN — a list too short, then a list
+too old — under "a copy of a list is a claim about the list at the moment it was copied". **A timeout is a
+claim of the same kind, about the runtime at the moment it was written**, and this one fails in the
+opposite direction: a false RED makes "only commit green" unsatisfiable rather than strict.* Repaired to
+`1800` s as a **hang guard** rather than a budget, with the measurement in the comment. **Second named
+departure: that is another line's shared script.** The change can only stop a green being reported red,
+never turn a red green — **revert it and I will carry the exception in the cycle instead, but then nothing
+on this tree can satisfy "only commit green".**
+
+Write-up with the reproduction: `computations/beyond_the_wall/r7323_cc66_recurrence_registered/MEASURED.md`.

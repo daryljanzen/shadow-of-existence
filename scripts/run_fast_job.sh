@@ -58,8 +58,21 @@ fails=""
 for c in $GENS; do
   python3 "scripts/$c.py" --check >/dev/null 2>&1 || fails="$fails $c"
 done
+# ⛔⛭ r7323 (cc66): THE BUDGET WAS A CLAIM ABOUT THE RUNTIME AT THE MOMENT IT WAS WRITTEN, and the
+#   runtimes moved.  `timeout 420` was written at r6500 (2026-09-11).  `check_quote_pins` joined the
+#   fast list at r7127 (2026-10-02), three weeks later, and NOBODY RE-MEASURED.  Measured on this
+#   container: that gate takes *** 1096.1 seconds and exits 0 *** -- 2.6x the budget -- so this script
+#   reported `⛔ THE FAST JOB WOULD BE RED: check_quote_pins` on a tree where the gate is GREEN and
+#   CI's own `fast` job is green, every single invocation since r7127.
+#     ⌗ *** AND THE DIRECTION IS THE NEW ONE. ***  This line's two recorded failures were both FALSE
+#       GREEN -- a list too short, then a list too old.  This is a FALSE RED, which defeats the same
+#       purpose from the other side: the script exists so that green here is a claim about CI, and a
+#       standing red makes "only commit green" unsatisfiable rather than strict.
+#   ⇒ CI applies NO per-gate timeout (`NODE=ci python3 corpus/$g.py`, the job capped at
+#     `timeout-minutes: 127`), so a per-gate limit here is a HANG GUARD and not a budget.  Set well
+#     above the slowest measured gate, and the measurement is quoted above rather than remembered.
 for g in $GATES; do
-  timeout 420 python3 -W ignore "corpus/$g.py" >/dev/null 2>&1 || fails="$fails $g"
+  timeout 1800 python3 -W ignore "corpus/$g.py" >/dev/null 2>&1 || fails="$fails $g"
 done
 python3 scripts/lint_assertions.py >/dev/null 2>&1 || fails="$fails lint_assertions"
 
