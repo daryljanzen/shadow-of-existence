@@ -29,6 +29,16 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38624969999",
     "since": "23cecc9962642bab60d4bca7056a95e973bbf6ff"
    }
+  },
+  "tolerance": {
+   "receipts/L254_the_rule_was_spellings/A1_a_rule_made_of_spellings_misses_the_next_spelling.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38630234896",
+    "since": "34647cf5c5261e61f921110dd66dc93818812183"
+   },
+   "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38630234896",
+    "since": "34647cf5c5261e61f921110dd66dc93818812183"
+   }
   }
  }
 }
