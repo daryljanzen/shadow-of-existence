@@ -136,10 +136,14 @@ def main():
     check(f'P12 AT {_P12_WAS}^ said the coefficient is "a structure \\emph{{function}} rather than a '
           f'constant" -- the wording this receipt was written against, read where it stood',
           'a structure \\emph{function} rather than a constant' in _p12_then)
+    # ⛭⛭ r7338+60: ** `is not a Lie algebra` opened on a finite verb and named nothing that is
+    #   not one -- so the arm could be satisfied by any sentence in the paper denying Lie-algebra
+    #   status, of which the scope paragraph has its own. **  ⇒ *Extended to the clause that names
+    #   its subject: a finite group, however enlarged.*  ONE site.
     check('P12 NOW: the Dirac algebra "is not a Lie algebra", closing with the inverse spatial '
           'metric, "a field rather than a constant" -- and $h^{ab}$ named as "the structure '
           '\\emph{function} that makes the algebra an algebroid".  *Same content, rewritten*',
-          'is not a Lie algebra' in p12
+          'a finite group, however enlarged, is not a Lie algebra' in p12
           and 's the inverse spatial metric, a field rather than a constant' in p12
           and 'the structure \\emph{function} that makes the algebra an algebroid and is t' in p12)
     check('and P12 cites Teitelboim1973 for the brackets', 'Teitelboim1973' in p12)
@@ -175,8 +179,21 @@ def main():
     check("⇒ SO THE CORPUS CITED THE PAPER THE UNIQUENESS RESULT LIVES BESIDE, FOR THE ALGEBRA'S FORM, "
           'AND NEVER FOR ITS CONTENT', 'Teitelboim1973' in p12 and lovelock_then == 0)
 
-    check('the substrate is five-dimensional',
-          'SO(5,1)/SO(4,1)' in p12 or 'de Sitter substrate' in p12)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.
+    #   ** THE OWED ROW WAS `de Sitter substrate`, at SIX sites in its paper (the title among
+    #   them) and sitting as the weaker arm of a DISJUNCTION, so a phrase from the title could
+    #   satisfy a claim about the algebra. **
+    #   ⇒ *** One span: the sentence that names the acting algebra, the anchor and the section --
+    #     which is what `five-dimensional substrate` is doing work for here.  ONE site. ***
+    _ACTING = ("the acting algebra is the substrate's isometry algebra $\\so(5,1)$, the anchor is "
+               "the slicing operator's cut-to-stress-energy map, and the section is the cosmic "
+               'clock that turns the constraint into a true Hamiltonian')
+    check('the substrate is five-dimensional and its isometry algebra is the acting one: "the '
+          "acting algebra is the substrate's isometry algebra $\\so(5,1)$, the anchor is the "
+          "slicing operator's cut-to-stress-energy map, and the section is the cosmic clock that "
+          'turns the constraint into a true Hamiltonian" -- asserted as that sentence, in place of '
+          'a phrase that also stands in the title',
+          _ACTING in p12)
     # AMENDED r3105 (`L-249`): BOARD.md's vein summary carried this at eda3ad7c9d4a, where this
     # receipt was written.  r2832h pruned it out of BOARD -- "a struck row with a live lead is
     # closed work still being of interest" -- and the wording lives on in THE_LIVE_ARC.
@@ -202,8 +219,14 @@ def main():
     check('⚠ CR does NOT derive the dynamics: "the construction leaves the dynamics of general '
           'relativity unchanged"',
           'the construction leaves the dynamics of general relativity unchanged, the radiative sector beyond the wall is reached by ordinary evolution of the leaf, n' in p9)
-    check('and P12 calls its own claim "a recognition rather than an addition"',
-          'is a recognition rather than an addition' in p12)
+    # ⛭⛭ r7338+60: ** `is a recognition rather than an addition` opens on a finite verb and names
+    #   nothing that is one. **  ⇒ *The paper's own sentence, subject included, over a
+    #   markup-normalised read since the paper sets it in emphasis.*  ONE site.
+    _p12u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p12)
+    _RECOGNITION = 'The claim is a recognition rather than an addition'
+    check('and P12 calls its own claim "a recognition rather than an addition" -- asserted as the '
+          'sentence with its subject, over a markup-normalised read',
+          _RECOGNITION in _p12u)
 
     print()
     if FAILED:
