@@ -4270,6 +4270,197 @@ theorem exists_global_family {c : Fin 4 → (Fin 4 → ℝ) → ℝ} {p : Fin 4 
 
 end Cutoff
 
+
+/-! ### `r7327` — the coordinate recipe: first and second partials of a profile in ONE coordinate, and of a product
+of profiles in two. This is what an `S²` metric's coefficients are made of, and it is the template the reopened rows
+use. -/
+
+section CoordRecipe
+
+set_option synthInstance.maxHeartbeats 400000
+
+variable {k m : ℝ → ℝ} (hk : ContDiff ℝ ∞ k) (hm : ContDiff ℝ ∞ m)
+
+include hk in
+lemma co_d1 (i : Fin 4) (y v : Fin 4 → ℝ) : fderiv ℝ (fun y : Fin 4 → ℝ => k (y i)) y v = deriv k (y i) * v i := by
+  rw [(fd_coord_i i ((hk.differentiable (by simp)) _)).fderiv]; simp
+
+include hk in
+lemma co_d2 (i : Fin 4) (p u v : Fin 4 → ℝ) :
+    fderiv ℝ (fderiv ℝ (fun y : Fin 4 → ℝ => k (y i))) p u v = deriv (deriv k) (p i) * u i * v i := by
+  rw [d2_of (F := fun y : Fin 4 → ℝ => k (y i)) (hk.comp (contDiff_apply ℝ ℝ i)) (fun y => co_d1 hk i y v)
+    ((fd_coord_i i (((contDiff_infty_iff_deriv.1 hk).2.differentiable (by simp)) _)).mul_const (v i))]
+  simp; ring
+
+include hk hm in
+lemma pr_d1 (i j : Fin 4) (y v : Fin 4 → ℝ) : fderiv ℝ (fun y : Fin 4 → ℝ => k (y i) * m (y j)) y v
+    = deriv k (y i) * v i * m (y j) + k (y i) * (deriv m (y j) * v j) := by
+  rw [(show HasFDerivAt (fun y : Fin 4 → ℝ => k (y i) * m (y j)) _ y from
+    (fd_coord_i i ((hk.differentiable (by simp)) _)).mul (fd_coord_i j ((hm.differentiable (by simp)) _))).fderiv]
+  simp; ring
+
+include hk hm in
+lemma pr_d2 (i j : Fin 4) (p u v : Fin 4 → ℝ) :
+    fderiv ℝ (fderiv ℝ (fun y : Fin 4 → ℝ => k (y i) * m (y j))) p u v
+      = deriv (deriv k) (p i) * u i * v i * m (p j) + deriv k (p i) * v i * (deriv m (p j) * u j)
+        + deriv k (p i) * u i * (deriv m (p j) * v j) + k (p i) * (deriv (deriv m) (p j) * u j * v j) := by
+  have dk := fun s => ((contDiff_infty_iff_deriv.1 hk).2.differentiable (by simp)) s
+  have dm := fun s => ((contDiff_infty_iff_deriv.1 hm).2.differentiable (by simp)) s
+  rw [d2_of (F := fun y : Fin 4 → ℝ => k (y i) * m (y j))
+    ((hk.comp (contDiff_apply ℝ ℝ i)).mul (hm.comp (contDiff_apply ℝ ℝ j))) (fun y => pr_d1 hk hm i j y v)
+    (HasFDerivAt.add (((fd_coord_i i (dk _)).mul_const (v i)).mul (fd_coord_i j ((hm.differentiable (by simp)) _)))
+      ((fd_coord_i i ((hk.differentiable (by simp)) _)).mul ((fd_coord_i j (dm _)).mul_const (v j))))]
+  simp; ring
+
+end CoordRecipe
+
+/-! ### `r7327` — the `S²` pilot, row 45: the SdS Kretschmann scalar `K = 48M²/r⁶ + 8Λ²/3` under THE connection,
+in `(t, r, θ, φ)`. The profiles `F, P, S` are smooth and nowhere zero and equal `f`, `r²`, `sin²θ` NEAR THE POINT:
+the convention, whose existence the cutoff lemma now proves. -/
+
+section Inst_R45
+
+set_option synthInstance.maxHeartbeats 400000
+
+noncomputable def cK (F P S : ℝ → ℝ) : Fin 4 → (Fin 4 → ℝ) → ℝ :=
+  ![fun y => -F (y 1), fun y => (F (y 1))⁻¹, fun y => P (y 1), fun y => P (y 1) * S (y 2)]
+
+/-- The static-spherical Riemann table `R(eᵢ,eⱼ)eₖ` component `l`, in `F₀, F₁, F₂` (the radial profile and its
+derivatives), `r`, and `S₀, S₁, S₂` (the angular profile); the angular part enters only through `Q`. -/
+noncomputable def kR (f0 f1 f2 r s0 s1 s2 : ℝ) (i j k l : Fin 4) : ℝ :=
+  let Q := (4 * f0 * s0 ^ 2 + 2 * s0 * s2 - s1 ^ 2) / (4 * s0 ^ 2)
+  if (i, j, k, l) = (0, 1, 0, 1) then -(f0 * f2 / 2) else if (i, j, k, l) = (0, 1, 1, 0) then -(f2 / (2 * f0))
+  else if (i, j, k, l) = (0, 2, 0, 2) then -(f0 * f1 / (2 * r)) else if (i, j, k, l) = (0, 2, 2, 0) then -(f1 * r / 2)
+  else if (i, j, k, l) = (0, 3, 0, 3) then -(f0 * f1 / (2 * r)) else if (i, j, k, l) = (0, 3, 3, 0) then -(f1 * r * s0 / 2)
+  else if (i, j, k, l) = (1, 0, 0, 1) then f0 * f2 / 2 else if (i, j, k, l) = (1, 0, 1, 0) then f2 / (2 * f0)
+  else if (i, j, k, l) = (1, 2, 1, 2) then f1 / (2 * f0 * r) else if (i, j, k, l) = (1, 2, 2, 1) then -(f1 * r / 2)
+  else if (i, j, k, l) = (1, 3, 1, 3) then f1 / (2 * f0 * r) else if (i, j, k, l) = (1, 3, 3, 1) then -(f1 * r * s0 / 2)
+  else if (i, j, k, l) = (2, 0, 0, 2) then f0 * f1 / (2 * r) else if (i, j, k, l) = (2, 0, 2, 0) then f1 * r / 2
+  else if (i, j, k, l) = (2, 1, 1, 2) then -(f1 / (2 * f0 * r)) else if (i, j, k, l) = (2, 1, 2, 1) then f1 * r / 2
+  else if (i, j, k, l) = (2, 3, 2, 3) then Q else if (i, j, k, l) = (2, 3, 3, 2) then -(Q * s0)
+  else if (i, j, k, l) = (3, 0, 0, 3) then f0 * f1 / (2 * r) else if (i, j, k, l) = (3, 0, 3, 0) then f1 * r * s0 / 2
+  else if (i, j, k, l) = (3, 1, 1, 3) then -(f1 / (2 * f0 * r)) else if (i, j, k, l) = (3, 1, 3, 1) then f1 * r * s0 / 2
+  else if (i, j, k, l) = (3, 2, 2, 3) then -Q else if (i, j, k, l) = (3, 2, 3, 2) then Q * s0
+  else 0
+
+variable {F P S : ℝ → ℝ} (hF : ContDiff ℝ ∞ F) (hP : ContDiff ℝ ∞ P) (hS : ContDiff ℝ ∞ S)
+  (hF0 : ∀ s, F s ≠ 0) (hP0 : ∀ s, P s ≠ 0) (hS0 : ∀ s, S s ≠ 0)
+
+include hF hP hS hF0 in
+lemma cK_smooth (k : Fin 4) : ContDiff ℝ ∞ (cK F P S k) := by
+  fin_cases k
+  · exact (hF.comp (contDiff_apply ℝ ℝ 1)).neg
+  · exact (hF.comp (contDiff_apply ℝ ℝ 1)).inv fun y => hF0 _
+  · exact hP.comp (contDiff_apply ℝ ℝ 1)
+  · exact (hP.comp (contDiff_apply ℝ ℝ 1)).mul (hS.comp (contDiff_apply ℝ ℝ 2))
+include hF0 hP0 hS0 in
+lemma cK_ne (k : Fin 4) (p : Fin 4 → ℝ) : cK F P S k p ≠ 0 := by
+  fin_cases k <;> simp [cK, hF0, hP0, hS0]
+
+open Filter Topology in
+set_option maxHeartbeats 8000000 in
+include hF hP hS hF0 hP0 hS0 in
+/-- **Row 45, the `S²` pilot.** -/
+theorem sds_kretschmann (M Λ : ℝ) (p : Fin 4 → ℝ)
+    (eF : F =ᶠ[𝓝 (p 1)] fun s => 1 - 2 * M * s⁻¹ - Λ / 3 * s ^ 2) (eP : P =ᶠ[𝓝 (p 1)] fun s => s ^ 2)
+    (eS : S =ᶠ[𝓝 (p 2)] fun s => Real.sin s ^ 2) :
+    riem2C (fun i => cK F P S i p) (fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cK F P S)) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => cK_ne hF0 hP0 hS0 i p) u h)
+      ((diag4_smooth (cK_smooth hF hP hS hF0)).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p) = 48 * M ^ 2 / p 1 ^ 6 + 8 * Λ ^ 2 / 3 := by
+  set r := p 1 with hr_def
+  have hr : r ≠ 0 := fun h => hP0 r (by rw [eP.eq_of_nhds, h]; simp)
+  -- the radial profile: `f`, `f′`, `f″` at `r`
+  have hf1 : ∀ s, s ≠ 0 → HasDerivAt (fun s => 1 - 2 * M * s⁻¹ - Λ / 3 * s ^ 2)
+      (2 * M * (s ^ 2)⁻¹ - 2 * Λ / 3 * s) s := fun s hs =>
+    (show HasDerivAt (fun s => 1 - 2 * M * s⁻¹ - Λ / 3 * s ^ 2) _ s from
+      ((hasDerivAt_const s (1 : ℝ)).sub ((hasDerivAt_inv hs).const_mul (2 * M))).sub
+        ((hasDerivAt_pow 2 s).const_mul (Λ / 3))).congr_deriv (by norm_num; ring)
+  have ed : deriv (fun s => 1 - 2 * M * s⁻¹ - Λ / 3 * s ^ 2) =ᶠ[𝓝 r]
+      fun s => 2 * M * (s ^ 2)⁻¹ - 2 * Λ / 3 * s :=
+    Filter.eventually_of_mem (isOpen_ne.mem_nhds hr) fun s hs => (hf1 s hs).deriv
+  have hF0v : F r = 1 - 2 * M * r⁻¹ - Λ / 3 * r ^ 2 := eF.eq_of_nhds
+  have hF1v : deriv F r = 2 * M * (r ^ 2)⁻¹ - 2 * Λ / 3 * r := by rw [eF.deriv_eq, (hf1 r hr).deriv]
+  have hF2v : deriv (deriv F) r = -(4 * M / r ^ 3) - 2 * Λ / 3 := by
+    rw [(eF.deriv.trans ed).deriv_eq]
+    have := (show HasDerivAt (fun s => 2 * M * (s ^ 2)⁻¹ - 2 * Λ / 3 * s) _ r from
+      (((hasDerivAt_pow 2 r).inv (pow_ne_zero 2 hr)).const_mul (2 * M)).sub ((hasDerivAt_id r).const_mul (2 * Λ / 3)))
+    rw [this.deriv]; field_simp; ring
+  -- the inverse profile `1/F`
+  have dF := fun s => ((hF.differentiable (by simp)) s).hasDerivAt
+  have dF' := fun s => (((contDiff_infty_iff_deriv.1 hF).2.differentiable (by simp)) s).hasDerivAt
+  have iv1 : deriv (fun s => (F s)⁻¹) = fun s => -(deriv F s) / F s ^ 2 :=
+    funext fun s => ((dF s).inv (hF0 s)).deriv.trans (by ring)
+  have iv2 : deriv (deriv (fun s => (F s)⁻¹)) r = (2 * deriv F r ^ 2 - F r * deriv (deriv F) r) / F r ^ 3 := by
+    rw [iv1, (show HasDerivAt (fun s => -deriv F s / F s ^ 2) _ r from
+      (dF' r).neg.div ((dF r).pow 2) (pow_ne_zero 2 (hF0 r))).deriv]
+    have := hF0 r; simp only [Pi.neg_apply]; field_simp; ring
+  have ng1 : deriv (fun s => -F s) = fun s => -deriv F s := funext fun s => deriv.neg
+  have hneg : ContDiff ℝ ∞ (fun s => -F s) := hF.neg
+  have hinv : ContDiff ℝ ∞ (fun s => (F s)⁻¹) := hF.inv hF0
+  -- `r²` and `sin²θ`
+  have hPv : P r = r ^ 2 := eP.eq_of_nhds
+  have hP1 : deriv P r = 2 * r := by rw [eP.deriv_eq]; simp
+  have e2 : deriv P =ᶠ[𝓝 r] fun s => 2 * s := eP.deriv.trans (Eventually.of_forall fun s => by simp)
+  have hP2 : deriv (deriv P) r = 2 := by rw [e2.deriv_eq]; simp
+  have sd : ∀ s, HasDerivAt (fun s => Real.sin s ^ 2) (2 * Real.sin s * Real.cos s) s := fun s =>
+    (show HasDerivAt (fun s => Real.sin s ^ 2) _ s from (Real.hasDerivAt_sin s).pow 2).congr_deriv (by norm_num <;> ring)
+  have hSv : S (p 2) = Real.sin (p 2) ^ 2 := eS.eq_of_nhds
+  have hS1 : deriv S (p 2) = 2 * Real.sin (p 2) * Real.cos (p 2) := by rw [eS.deriv_eq, (sd _).deriv]
+  have hS2 : deriv (deriv S) (p 2) = 2 * Real.cos (p 2) ^ 2 - 2 * Real.sin (p 2) ^ 2 := by
+    have e3 : deriv S =ᶠ[𝓝 (p 2)] fun s => 2 * Real.sin s * Real.cos s :=
+      eS.deriv.trans (Eventually.of_forall fun s => (sd s).deriv)
+    rw [e3.deriv_eq]
+    have := (show HasDerivAt (fun s => 2 * Real.sin s * Real.cos s) _ (p 2) from
+      ((Real.hasDerivAt_sin (p 2)).const_mul 2).mul (Real.hasDerivAt_cos (p 2)))
+    rw [this.deriv]; ring
+  -- the recipe's facts
+  have hD1 : ∀ k v, fderiv ℝ (cK F P S k) p v = (![-(deriv F r * v 1), -(deriv F r) / F r ^ 2 * v 1,
+      2 * r * v 1, 2 * r * v 1 * S (p 2) + r ^ 2 * (deriv S (p 2) * v 2)] : Fin 4 → ℝ) k := fun k v => by
+    fin_cases k
+    · show fderiv ℝ (fun y => (fun s => -F s) (y 1)) p v = _
+      rw [co_d1 hneg]; simp [← hr_def, ng1]
+    · show fderiv ℝ (fun y => (fun s => (F s)⁻¹) (y 1)) p v = _
+      rw [co_d1 hinv]; simp [← hr_def, iv1]
+    · show fderiv ℝ (fun y => P (y 1)) p v = _
+      rw [co_d1 hP]; simp [← hr_def, hP1]
+    · show fderiv ℝ (fun y => P (y 1) * S (y 2)) p v = _
+      rw [pr_d1 hP hS]; simp [← hr_def, hP1, hPv]
+  have hD2 : ∀ k u v, fderiv ℝ (fderiv ℝ (cK F P S k)) p u v = (![-(deriv (deriv F) r * u 1 * v 1),
+      (2 * deriv F r ^ 2 - F r * deriv (deriv F) r) / F r ^ 3 * u 1 * v 1, 2 * u 1 * v 1,
+      2 * u 1 * v 1 * S (p 2) + 2 * r * v 1 * (deriv S (p 2) * u 2) + 2 * r * u 1 * (deriv S (p 2) * v 2)
+        + r ^ 2 * (deriv (deriv S) (p 2) * u 2 * v 2)] : Fin 4 → ℝ) k := fun k u v => by
+    fin_cases k
+    · show fderiv ℝ (fderiv ℝ (fun y => (fun s => -F s) (y 1))) p u v = _
+      rw [co_d2 hneg]; simp [← hr_def, ng1, deriv.neg]
+    · show fderiv ℝ (fderiv ℝ (fun y => (fun s => (F s)⁻¹) (y 1))) p u v = _
+      rw [co_d2 hinv]; simp [← hr_def, iv2]
+    · show fderiv ℝ (fderiv ℝ (fun y => P (y 1))) p u v = _
+      rw [co_d2 hP]; simp [← hr_def, hP2]
+    · show fderiv ℝ (fderiv ℝ (fun y => P (y 1) * S (y 2))) p u v = _
+      rw [pr_d2 hP hS]; simp [← hr_def, hP1, hP2, hPv]
+  -- the table, component by component
+  have hT : ∀ i j k l, curvD (cK F P S) p (Pi.single i 1) (Pi.single j 1) (Pi.single k 1) l
+      = kR (F r) (deriv F r) (deriv (deriv F) r) r (S (p 2)) (deriv S (p 2)) (deriv (deriv S) (p 2)) i j k l := by
+    have := hF0 r; have := hS0 (p 2)
+    intro i j k l
+    fin_cases i <;> fin_cases j <;> fin_cases k <;> fin_cases l <;>
+      (simp only [curvD, Pi.sub_apply, Pi.add_apply, DGD, gamD, dC1, dC2, hD1, hD2]
+       simp [cK, kR, Fin.sum_univ_four, ← hr_def, hPv]
+       try (field_simp; try ring))
+  simp only [riem2C, curvD_eq (cK_ne hF0 hP0 hS0) (cK_smooth hF hP hS hF0), hT]
+  have hs : Real.sin (p 2) ≠ 0 := fun h => hS0 (p 2) (by rw [hSv, h]; simp)
+  have hf := hF0 r
+  rw [show (48 * M ^ 2 / r ^ 6 + 8 * Λ ^ 2 / 3 : ℝ)
+      = deriv (deriv F) r ^ 2 + 4 * deriv F r ^ 2 / r ^ 2 + 4 * (F r - 1) ^ 2 / r ^ 4 by
+    rw [hF0v, hF1v, hF2v]; field_simp; ring]
+  simp [Fin.sum_univ_four, kR, cK, ← hr_def, hPv, hSv, hS1, hS2]
+  field_simp
+  ring
+
+end Inst_R45
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -4401,3 +4592,5 @@ end ShadowProbe
 #print axioms ShadowProbe.gowdy_tz_field
 #print axioms ShadowProbe.exists_global_profile
 #print axioms ShadowProbe.exists_global_family
+#print axioms ShadowProbe.pr_d2
+#print axioms ShadowProbe.sds_kretschmann

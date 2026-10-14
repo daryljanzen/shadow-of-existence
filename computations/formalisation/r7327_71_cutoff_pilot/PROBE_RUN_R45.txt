@@ -1,0 +1,4 @@
+# r7327+71.3 — the coordinate recipe + the row-45 S^2 pilot: lake env lean probes/CurvatureProbe.lean, exit 0 (≈7 min), no error, no sorry
+# 131 #print axioms lines, all [propext, Classical.choice, Quot.sound]
+'ShadowProbe.pr_d2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sds_kretschmann' depends on axioms: [propext, Classical.choice, Quot.sound]
