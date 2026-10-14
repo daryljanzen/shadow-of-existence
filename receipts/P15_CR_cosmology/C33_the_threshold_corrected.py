@@ -118,8 +118,12 @@ def main():
           'separates them", and the $\\chi^2$ is scored: the arm at $1.57$ times the control',
           'fitted to the acoustic angle' not in p15
           and 'the first peak is where the amplitude is anchored' in p15
-          and 'With the expansion rate, the matter and baryon densities and the tilt free in each arm and '
-              'the amplitude in closed form' in p15
+          # r7335+cc66, REPAIR: the same BUNDLED ANTECEDENT as C31's, repaired the same way --
+          #   two claim-complete pieces, each occurring once in this paper, with the sentence
+          #   identity carrying the conjunction instead of a connective inside the pin.
+          and len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
+                   if 'the expansion rate, the matter and baryon densities and the tilt free in each '
+                      'arm' in _s and 'the amplitude in closed form' in _s]) == 1
           and 'The two arms fit the same four parameters, so no information criterion separates them' in p15
           and "\\emph{the arm at $1.57$ times the control's distance" in p15)
 

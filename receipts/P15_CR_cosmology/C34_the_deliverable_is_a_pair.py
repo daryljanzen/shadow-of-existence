@@ -133,8 +133,13 @@ def main():
           'times" as computed, "$1.57$" refitted',
           'The seam datum carries two freedoms' not in p15
           and 'leaves two things to be fixed, and the handover fixes both' in p15
-          and '\\emph{The single-locus reading is not inside that trade}: it returns the first peak at '
-              '$222$' in p15
+          # r7335+cc66, REPAIR: the emphasised sentence is self-contained and the peak value is a second
+          #   assertion; bundling them pinned the colon and the `it` between the two, so a reword of the
+          #   join would red a check whose two claims both held.  Each piece occurs ONCE in this paper
+          #   and NEITHER is dropped -- the sentence identity carries the conjunction.
+          and len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
+                   if '\\emph{The single-locus reading is not inside that trade}' in _s
+                   and 'returns the first peak at $222$' in _s]) == 1
           and 'Across the seventeen readings admitted by a four-peak criterion fixed before the numbers, '
               'the first peak spans $148$ to $228$' in p15
           and "\\emph{the arm sits at $2.57$ times the control's distance from the data}" in p15

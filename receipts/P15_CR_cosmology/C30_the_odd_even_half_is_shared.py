@@ -148,8 +148,12 @@ def main():
     check('⛭⛭ ⓶ and P15 gives where and at what value: "the odd/even asymmetry is imprinted afterwards, '
           'on the expansion side at $R\\simeq0.6$, which is ordinary content physics on the observable '
           'leg"',
-          'the odd/even asymmetry is imprinted afterwards, on the expansion side at' in p15
-          and 's imprinted afterwards, on the expansion side at $R\\approx0.6$, which is ordinary content physics on the observable leg' in p15)
+          # r7335+cc66, REPAIR: the first conjunct ended on a DANGLING `at` and the second began
+          #   mid-word at `s imprinted` -- two character-window artefacts of ONE claim, the second
+          #   containing the first.  One word-aligned span now carries it, claim-complete from its
+          #   subject to its qualification and occurring ONCE in this paper.
+          'the odd/even asymmetry is imprinted afterwards, on the expansion side at $R\\approx0.6$, '
+          'which is ordinary content physics on the observable leg' in p15)
     # ** r6931+70.1 (PO-59): CLASS (c), STALE.  `de97f96e` (r6772+66.11, "the last of the fitted-onset
     #    reading cleared from P15's prose") rewrote "$R\\simeq0.1$ at the onset" as "$R\\lesssim0.1$ where
     #    the driving happens" -- same bound, same "orders below that at entry"; only the retired onset's
@@ -168,7 +172,11 @@ def main():
     # ⓸ R is a content ratio
     check('⛭ ⓸ and $R=3\\rho_b/4\\rho_\\gamma$ is a ratio of CONTENTS, so the rate difference -- which '
           'P15 says carries "the whole difference" -- does not enter it',
-          'the whole difference is carried by' in p15)
+          # r7335+cc66, REPAIR: the span ended on a DANGLING `by`, so it asserted that something
+          #   carries the whole difference without saying WHAT -- and WHAT is the claim, since the
+          #   point is that it is the RATE and not a content ratio.  The agent is now inside the
+          #   pin: subject, verb, agent, once in this paper.
+          'the whole difference is carried by $H(a)$' in p15)
 
     print()
     if FAILED:
