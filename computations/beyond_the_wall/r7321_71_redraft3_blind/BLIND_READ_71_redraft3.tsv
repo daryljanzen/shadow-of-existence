@@ -1,5 +1,5 @@
 # readers: 70 | 71
-# r7321+71.3 -- 71 applies THE_RULE.md at 1a3c13a6 (the third redraft; opened only AFTER r7321+71.2 was committed and pushed -- not early) BLIND to 70's held KEYS_BLIND.tsv (69 keys, salt 1a3c13a6...).  Keys 1-35 of 69 keys, in file order.
+# r7321+71.3 (keys 1-35) and r7321+71.4 (keys 36-69) -- 71 applies THE_RULE.md at 1a3c13a6 (the third redraft; opened only AFTER r7321+71.2 was committed and pushed -- not early) BLIND to 70's held KEYS_BLIND.tsv (69 keys, salt 1a3c13a6...).  All 69 keys, in file order.
 #   Column 3 is EMPTY for 70's join (70 named first); column 4 is 71's verdict.  UNDECIDED = the text licenses
 #   two verdicts or none -- the ground names them in the GROUNDS sibling.  Literals byte for byte from the keys
 #   file.  Never reconciled, never written to the ledger.
@@ -39,3 +39,37 @@ receipts/L221_the_bridge/B4_the_radial_operator_carries_a_real_structure.py	"H=-
 receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py	"never named"		REPAIR-OWED
 receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"take the leaf's, together with recombination's microphysics and the perturbations"		REPAIR-OWED
 receipts/P15_CR_cosmology/P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control.py	"instead of choosing"		REPAIR-OWED
+receipts/L204_physics_reach/P7_the_temperature_is_taken_and_the_entropy_never_is.py	"\\beta=2\\pi\\alpha"		REPAIR-OWED
+receipts/L211_closure_adjacency/A1_the_venue_question_dissolves_and_curvature_remains.py	"generate a finite group of order $81$ in $U(3)$"		REPAIR-OWED
+receipts/L221_the_bridge/B9_po3_why_is_answered_dimensionally.py	"zero-sum triple"		DELIBERATE
+receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py	"OPEN"		REPAIR-OWED
+receipts/L_probability/S21_a_pre_registered_negative_can_fire_without_reaching_the_claim_it_was_written_to_test_and_mine_did_while_the_order_was_wrong_about_both_defects_in_opposite_directions.py	"r7261"		REPAIR-OWED
+receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py	"with no completed horizon there is no background"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py	"Because the distance slicing is flat"		MEANING-HELD
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	"leaf norm is FINITE and CUT-OFF INDEPENDENT"		REPAIR-OWED
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"item has two sides and they now stand differently"		DELIBERATE
+receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py	"selects the Friedrichs extension"		REPAIR-OWED
+receipts/L266_station_C_three_readings_of_the_dial/C1_the_degree_six_dial_has_three_readings_and_the_paper_excludes_one.py	"DE-MACROED"		REPAIR-OWED
+receipts/L174_general_matter_dynamics/I7_the_free_shear_is_two_not_five_and_the_corpus_already_names_the_two.py	"onset of free gravitational radiation"		REPAIR-OWED
+receipts/L221_the_bridge/B24_the_triality_test_run.py	"B24_the_triality_test_run"		REPAIR-OWED
+receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	"The graviton's two propagating polarizations are exactly the transverse degrees of freedom a sweep cannot carry"		MEANING-HELD
+receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py	"changes which flat bundle one has and not whether there is a field strength"		REPAIR-OWED
+receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	"over {} TT bins"		REPAIR-OWED
+receipts/P15_CR_cosmology/C48_the_pairs_are_three.py	"assert\\s+abs\\(\\(1\\+zo\\)/3402"		DELIBERATE
+receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py	"Reach: the item has two sides"		REPAIR-OWED
+receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	"leaves two things to be fixed, and the handover fixes both"		REPAIR-OWED
+receipts/L221_the_bridge/B21_the_three_levels_audited.py	"stand exactly as r693 set them"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_corpus_places_every_perturbation_source_before_the_branch_point_and_everything_after_it_is_transfer_so_nothing_already_built_supplies_anisotropic_content_on_the_expansion_leg.py	"Phi=3Phi_i(sinx-xcosx)/x^3"		REPAIR-OWED
+receipts/P15_CR_cosmology/C20_the_caveat_named_an_empty_set.py	"The comoving Hubble radius is built from the slicing"		MEANING-HELD
+receipts/P15_CR_cosmology/P15_the_surviving_step_is_amplitude_and_not_phase_and_the_candidate_shares_do_not_survive_the_change_of_denominator.py	"the inseparable row"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	"_rsfrom = os.environ.get('LRSFROM', 'zero')"		REPAIR-OWED
+receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py	"antilinear"		REPAIR-OWED
+receipts/P15_CR_cosmology/C30_the_odd_even_half_is_shared.py	"control settles at $1.01$ in $\\chi^{2}$ per bin and this arm at $1.58$"		REPAIR-OWED
+receipts/P15_CR_cosmology/P15_the_one_ground_admits_exactly_one_independent_second_support_and_it_is_disqualified_because_the_rays_that_carry_the_flat_length_carry_a_blueshift.py	"The limit metric is Einstein with $R_{ab}=\\Lambda g_{ab}$, has $\\mathcal R=4\\Lambda$"		MEANING-HELD
+receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py	"RETIRED r2639"		REPAIR-OWED
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"n_s"		REPAIR-OWED
+receipts/L221_the_bridge/B4_the_radial_operator_carries_a_real_structure.py	"W(r)=\\frac{\\lambda\\sqrt{f}}{r}"		DELIBERATE
+receipts/P15_CR_cosmology/C27_the_number_bracketed.py	"visibility function, $r=0.992$, it is a rise of about two per cent at $\\ell_{D}$"		REPAIR-OWED
+receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	"closed-form nonlinear"		REPAIR-OWED
+receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	"One scope qualification is owed here, and it narrows the claim without touching the conclusion"		MEANING-HELD
+receipts/L221_the_bridge/B15_po3_both_clauses_answered.py	"The bridge was BUILT"		MEANING-HELD
