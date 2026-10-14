@@ -5,6 +5,8 @@ row is `REPAIR-OWED`. It is written to be applied, not argued: each step asks a 
 quoted text and about the check that quotes it, and each question has an answer that can be found by
 looking, counting or searching, without judging how well the quoted text reads.
 
+Its last section says what a repair writes once a row is owed.
+
 ## What the words mean here
 
 - **The receipt** is the Python file that makes the check.
@@ -177,3 +179,22 @@ row. A row is left undecided by this rule only when nothing but its spelling arm
 For every row decided `REPAIR-OWED`, record which test decided it (1 to 7) and the site detail that met it:
 the words left outside, the pointing word, the count, the arm that decides alone, or "step 4". A verdict without its
 test cannot be checked by the next reader.
+
+## What a repair writes
+
+A repair either withdraws the check, with its case written down, or replaces the owed quotation with a new
+one. The new quotation is the shortest span of the site that meets both of these:
+
+1. **It carries the whole claim.** Every part of what the check asserts is inside the span: the subject,
+   any quantifier, the object named, and any condition or negation Test 1 would find outside it. A span
+   that leaves part of the claim outside lets the check pass on the wording's presence instead of the
+   claim's, which is the defect being repaired. So the span is a whole clause, never a fragment, and read
+   alone it would reach `MEANING-HELD` or `DELIBERATE` under steps 1 to 4.
+2. **It occurs once.** The span stands exactly once in the file it is checked against, compared the way
+   the checker compares: whitespace collapsed, emphasis commands unwrapped, `$` deleted, `~` read as a
+   space. A span that stands more than once cannot say which place the claim is about (Test 4).
+
+**Then stop.** Words beyond what these two require add no protection. Each is something a later edit may
+change without changing the claim, and when one is changed the check fails in a receipt whose claim still
+holds — a new owed row made by the repair. So the span is never a sentence and a half: once the clause that
+carries the claim is unique, the next clause stays out.

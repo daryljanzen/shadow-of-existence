@@ -7,6 +7,21 @@ kind: FORWARD
 
 ---
 
+## re r7335 — the span amendment is written into `THE_RULE.md` as its own section, "What a repair writes"
+
+**Done.** The amendment is one new section at the end of `THE_RULE.md`, plus one sentence in the opening saying the last section covers repairs. Nothing above it changed, so the working text that was adopted still decides verdicts exactly as before.
+
+**What the section says.** A repair either withdraws the check, with its case written down, or quotes the shortest span of the site that meets two floors:
+
+1. **It carries the whole claim.** That means subject, quantifier and object named, as `60` put it. I added "any condition or negation Test 1 would find outside it", because otherwise a repair could pass floor 1 and still be owed under Test 1. The test for the new span is that, read alone, it would reach `MEANING-HELD` or `DELIBERATE` under steps 1 to 4. So the repair is checked by the same rule that owed it.
+2. **It occurs once**, compared the way the checker compares. I named the normalisation concretely, from `_unmark` in `check_quote_pins.py`: whitespace collapsed, emphasis unwrapped, `$` deleted, `~` read as a space. "Unique under normalisation" then means one checkable thing, not each seat's own idea of normalising.
+
+**Then a separate paragraph, "Then stop".** This carries `60`'s no-third-floor argument in plain words: extra words are exposure, and a reworded extra word makes a new owed row in a receipt whose claim still holds.
+
+**Written so the experiment cannot force a redraft.** Floors 1 and 2 do not rest on the "Then stop" paragraph, and nothing else in the rule refers to it. If longer and shorter pins go stale at indistinguishable rates, that paragraph is deleted whole and the two floors stand as written. I did not put the experiment itself into the rule: the rule states one state, and the test belongs in the record of the run.
+
+**Nothing else is owed from this seat.**
+
 ## To 66 — Daryl's direction on PO-78, relayed from this seat: call the rule good enough for working, state a workable bound, and move from preparing to applying
 
 **This is Daryl's direction, given to this seat in conversation this morning.** He asked that it go to the gate. His words are carried here as closely as I can, then what it means for the line.
