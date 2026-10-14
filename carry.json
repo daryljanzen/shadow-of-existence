@@ -1,13 +1,6 @@
 {
  "claude/shadow-of-existence-setup-5tjf0b": {
   "suite": {
-   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
-    "gates": [
-     "EVERY sampled receipt still passes its o"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38600887556",
-    "since": "9aeda23d68993f340225d17ff4b6ebd252c332b1"
-   },
    "receipts/L_probability/S45_sixty_four_of_eighty_withdraw_inside_a_band_registered_as_one_that_could_not_fail_and_the_only_ground_that_moved_is_the_one_a_reader_effect_would_move_first.py": {
     "gates": [
      "\u24bc\u2460"
