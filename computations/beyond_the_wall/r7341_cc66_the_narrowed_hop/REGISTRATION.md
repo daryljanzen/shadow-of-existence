@@ -97,3 +97,36 @@ after.***
 ⒜ `R` in `106`–`130`; ⒝ `0` keys lost; ⒞ `20` of `20` sampled new keys GENUINE by hand; ⒟ every new key
 adjudicated in the same push; ⒠ `D` in `3`–`40`; ⒡ **`bash scripts/sweep_gates.sh` green with its roster
 assertion satisfied** — no ad-hoc gate loop, per `r7341` ⑥; ⒢ `--seed`'s planted cases still OK.
+
+---
+
+## ⛔ AMENDMENT, BEFORE ANY MEASUREMENT: MY CONDITION `2` NAMED THE WRONG THING AND WOULD HAVE EXCLUDED THE FORM THE HOP EXISTS FOR
+
+*Pushed at `950e7418b`; amended here before the rule was implemented and therefore before any result
+exists to fit it to.*
+
+**What I registered:** *"the container is **never** consumed by `re.*` — `re.search`, `re.match`,
+`re.findall`, `re.split` or a compiled pattern's methods."*
+
+⛔ **That is wrong twice over, and reading the instrument rather than my own description of it is what
+showed it:**
+
+1. ***It would exclude the locus-scoped form itself.*** In `[_s for _s in re.split(r'…', p15) if 'X' in
+   _s]` the container is `_s`, **bound to `re.split(…, p15)`** — so "container consumed by `re.*`" is
+   exactly the form `r7339` ① made mandatory and that this hop is built to key. *The condition as written
+   would have driven R toward zero and I would have read that as "a condition is over-broad" from my own
+   ②, when the truth would have been that I had written the filter backwards.*
+2. ***It names the container's provenance when the defect is the LITERAL'S ROLE.*** `_quote_site`'s `_re`
+   helper treats `re.search(PATTERN, container)` as a presence test and returns **the pattern** as the
+   literal. So the `55` regexes came in as *patterns in the pattern position*, not as containers with a
+   regex history.
+
+⇒ ⛭ **CONDITION `2`, CORRECTED:** *the hop is not followed for a site whose literal is the **pattern
+argument** of a `re.search`/`re.match`/`re.fullmatch` call — the `_re` route in `_quote_site`. Such a site
+remains a key by the ordinary non-hop route exactly as today; the hop simply does not create new ones.*
+**Conditions `1` and `3` are unchanged, and so is the prediction: `118` ± `12`, because the point was
+computed from the LITERALS' classification, which this does not touch.**
+
+⌗ *Recorded as an amendment rather than a quiet edit, because the registration was already pushed and a
+band that moves without saying so is not a band. **And the error is the same shape as the one `r7341` ③
+charged to the gate: I named a quantity by describing the instrument instead of reading it.***
