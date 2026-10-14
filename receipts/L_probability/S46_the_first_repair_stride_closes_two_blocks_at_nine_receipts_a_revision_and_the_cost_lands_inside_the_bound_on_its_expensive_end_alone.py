@@ -236,17 +236,34 @@ gate(f'Ⓔ③  ⛭⛭ THE COST IS MEASURED AND IT LANDS INSIDE THE BOUND: `{K.A_
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 head('F -- THE RESTRAINT: TWO BLOCKS, NO OTHER SEAT\'s WORK, AND THE CASES ON THE RECORD')
 
-_range = sorted({f for f in git('diff', '--name-only', f'{PREG}~1', 'HEAD').split('\n')
-                 if f.startswith('receipts/')})
-_outside = [f for f in _range if not any(b in '/' + f for b in BLOCKS)
-            and os.path.basename(f) != os.path.basename(__file__)]
-print(f'      receipts in {PREG}~1..HEAD: {len(_range)};  outside the two blocks and not this file: '
-      f'{_outside}')
-gate(f'Ⓕ①  ⛔ **ONLY THE TWO ORDERED BLOCKS ARE TOUCHED, as the specific negative it is**: '
-     f'`{len(_range)}` receipts are in this revision\'s own range -- exactly the `{K.A_DONE}` it '
-     f'repaired -- and `{len(_outside)}` of them lie outside the blocks.  ** No other seat\'s receipt is edited, and the do-not-edit list is not '
-     f'approached **',
-     not _outside and len(_range) == K.A_DONE)
+# ⛔⛭ REPAIRED AFTER ITS FIRST RED, AND THE RED WAS THIS GATE's OWN FAIL-ON-SUCCESS SHAPE.  The
+#   form that stood here counted EVERY path under `receipts/` in the revision's range and excluded
+#   only this file by name.  *It passed on the tree it was written on because the landing commit did
+#   not exist yet: the register row and this receipt were both still uncommitted, so the range held
+#   `9` and nothing outside.*  ** The moment the revision landed, the same condition read `11` and
+#   named `receipts/INDEX.md` as a receipt outside the blocks -- which it is not: it is the REGISTER
+#   ROW, and every revision in the corpus writes it. **
+#   ⇒ *** So the repair is the named form again: assert what the claim IS rather than name a
+#     directory.  A RECEIPT is a `.py` file; the claim is that the receipt files this revision's own
+#     range touched are exactly the nine it repaired and all of them inside the two ordered blocks.
+#     The non-receipt paths are asserted SEPARATELY and bounded to the register row alone, so the
+#     gate now also forbids writing any other non-receipt file under that tree -- strictly stronger
+#     than the form it replaces, and stable whether or not this receipt is itself committed. ***
+_REGISTER = os.path.join('receipts', 'INDEX.md')
+_range_all = sorted({f for f in git('diff', '--name-only', f'{PREG}~1', 'HEAD').split('\n')
+                     if f.startswith('receipts/')})
+_range = [f for f in _range_all
+          if f.endswith('.py') and os.path.basename(f) != os.path.basename(__file__)]
+_nonrec = [f for f in _range_all if not f.endswith('.py')]
+_outside = [f for f in _range if not any(b in '/' + f for b in BLOCKS)]
+print(f'      receipt files in {PREG}~1..HEAD (this one aside): {len(_range)};  outside the two '
+      f'blocks: {_outside};  non-receipt paths: {_nonrec}')
+gate(f'Ⓕ①  ⛔ **ONLY THE TWO ORDERED BLOCKS ARE TOUCHED, as the specific negative it is**: the '
+     f'`{len(_range)}` RECEIPT FILES in this revision\'s own range are exactly the `{K.A_DONE}` it '
+     f'repaired, and `{len(_outside)}` of them lie outside the blocks -- with the only non-receipt '
+     f'path written under that tree being the register row every revision writes.  ** No other '
+     f'seat\'s receipt is edited, and the do-not-edit list is not approached **',
+     not _outside and len(_range) == K.A_DONE and set(_nonrec) <= {_REGISTER})
 
 print(f'      cases filed in the minted rows: {len(_cases)}')
 gate(f'Ⓕ②  and BOTH CASES ARE ON THE RECORD BESIDE THEIR REPAIRS, which is the bound\'s clause `3` '

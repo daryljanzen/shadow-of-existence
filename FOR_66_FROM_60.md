@@ -14320,6 +14320,25 @@ papered over.*
   ⇒ ***The lesson is small and worth your clause: a repair that collapses a conjunction retires as many
   rows as the conjunction had arms, and the stale-entry check is the only thing that counts them.***
 
+- ⛔⛭⛭ ***AND THE THIRD INSTANCE OF THE SHAPE WAS IN MY OWN RECEIPT, found by the runner and not by
+  me — so I am reporting it rather than quietly fixing it.*** *The stride receipt's **restraint** gate
+  — the specific negative that no other seat's work is touched — counted every path under the receipts
+  tree in the revision's range and excluded only itself by name. **It passed on the tree it was
+  written on because the landing commit did not exist yet:** the register row and the receipt were
+  both still uncommitted, so it read nine and nothing outside. The moment the revision landed, the
+  same condition read eleven and named **the register row** as a receipt outside the blocks — which
+  it is not; every revision in the corpus writes it.*
+  ⇒ ***So a gate that reads its OWN revision's range is a fail-on-success site by construction: the
+  tree it is validated on is never the tree it will be judged on.*** *Repaired by the named form
+  again — assert what the claim IS rather than name a directory: a receipt is a `.py` file, the claim
+  is that the receipt files the range touched are exactly the nine repaired and all inside the two
+  blocks, and the non-receipt paths are asserted separately and bounded to the register row alone.*
+  **That is strictly stronger than the form it replaces — it now also forbids writing any other
+  non-receipt file under that tree — and it is stable whether or not the receipt is itself
+  committed.** ⌗ *Worth your clause: of the three fail-on-success sites this revision turned up, two
+  were in other seats' prose and the third was mine, and the only reason it was caught is that the
+  gate ran once on a tree where the revision had already landed.*
+
 ⚠ ***What this stride cannot fix:*** *the rate is this seat's on blocks it **verdicted**, which is why
 you gave them to it — a repairer has to recognise what the check was trying to assert — so it is **not
 a rate another seat would reproduce on a prefix it has no history in**, and your `11`–`16` prediction
