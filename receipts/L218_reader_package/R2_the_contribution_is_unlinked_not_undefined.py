@@ -76,8 +76,27 @@ def main():
     arc = read('THE_LIVE_ARC.md')
 
     # ⓵ the label is never expanded where it is used
-    check('⓵ the label "the contribution" is never expanded in the row, COMPANION_SPEC, or the plans',
-          'the contribution' in arc)
+    #: ⌗⛭ r7329+cc66 REPAIR, PO-78's stride.  This was `'the contribution' in arc` -- four occurrences
+    #: in THE_LIVE_ARC and growing, tied to no line (69's ⓒ), and ** the LABEL WAS NOT TESTED **: the
+    #: label claims the phrase is never EXPANDED in the row, COMPANION_SPEC or the plans, and the arm
+    #: asserted only that it occurs somewhere in the arc -- the opposite kind of fact.
+    #:   ** What the claim IS, and it is this receipt's title: A15 is UNLINKED, NOT UNDEFINED -- the
+    #:   label is used in the row while the SUBSTANCE lives in the transcript. **  So it is asserted as
+    #: a COMPARISON and not a threshold: the transcript carries strictly more occurrences of the
+    #: question's own terms than L-218's row and all three planning documents put together.  Measured
+    #: when written: 49 against 6.  Threshold-free, so no band to fit, and it fails the moment any plan
+    #: starts working the question -- which is the event the row is waiting for and the old arm could
+    #: never see.
+    _TERMS = ('contribution-parsing', 'lone-genius', 'credit', 'attribution')
+    _arc_row = [l for l in arc.split('\n') if re.match(r'\|\s*(\*\*|~~)?L-218\b', l)]
+    _plans = {d: read(d) for d in ('COMPANION_SPEC.md', 'THE_DISPATCH.md', 'THE_REMAINING_WORK.md')}
+    _elsewhere = sum(_plans[d].count(w) for d in _plans for w in _TERMS) \
+        + sum(_arc_row[0].count(w) for w in _TERMS if _arc_row)
+    _in_credo = sum(credo.count(w) for w in _TERMS)
+    check(f'⓵ the label "the contribution" is USED in L-218\'s row and never worked there or in the '
+          f'plans: the transcript carries {_in_credo} occurrences of the question\'s own terms against '
+          f'{_elsewhere} in the row and all three planning documents together',
+          len(_arc_row) == 1 and 'the contribution' in _arc_row[0] and _in_credo > _elsewhere)
 
     # the material exists
     check(f'⛭ but CREDO_birth_transcript.md is {len(credo)//1024} KB and works the question directly',

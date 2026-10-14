@@ -44,6 +44,7 @@ its disguises, and this disguise is the one that a rule about the past cannot ca
 
 Written r3156, `L-268`.  Stated for reversal.
 """
+import ast
 import glob
 import os
 import re
@@ -123,9 +124,33 @@ def main():
     rc = subprocess.run([sys.executable, S1], cwd=os.path.dirname(S1), capture_output=True,
                         text=True, errors='replace', timeout=900).returncode
     check(f'⓸ᶜ and L-263/S1 exits {rc}', rc == 0)
+    #: ⌗⛭ r7329+cc66 REPAIR, PO-78's stride.  This arm was `'held in {paper}' in now or 'held in ' in
+    #: now` -- a DISJUNCTION whose second arm, the bare `'held in '`, decides alone and is true of any
+    #: prose containing those eight characters.  A disjunction cannot carry a conjunction and the weak
+    #: arm cannot carry the claim (69's Test 5 and Test 6, the family this seat routed at r7315).
+    #:   ** What the claim IS: the checks that establish the three held stations TEST A QUOTE AGAINST A
+    #:   PAPER'S BODY. **  So S1 is PARSED and the arm asserts that its loop over `HELD` contains a
+    #: check whose CONDITION is a membership test against a subscripted body -- `quote in B[paper]`.
+    #: Nothing about the label's wording is required, and it fails if the station checks ever stop
+    #: reading the papers, which neither old arm could see.
+    _s1 = ast.parse(now)
+    #: ⌗ and the filter names NO identifier of S1's: an earlier form of this repair wrote
+    #: `'HELD' in ast.get_source_segment(...)`, which MINTED A NEW KEY -- a presence test on another
+    #: receipt's source is a quote-pin however structural the rest of the arm is.  Measured: the
+    #: structural shape alone (a `for` whose body checks `X in Y[Z]`) matches exactly ONE loop in S1,
+    #: so the name bought nothing and cost a key.  ** A repair that mints a key has not repaired. **
+    _reads_papers = [_f for _f in ast.walk(_s1)
+                     if isinstance(_f, ast.For)
+                     and any(isinstance(_m, ast.Call) and isinstance(_m.func, ast.Name)
+                             and _m.func.id == 'check' and len(_m.args) > 1
+                             and isinstance(_m.args[1], ast.Compare)
+                             and any(isinstance(_o, ast.In) for _o in _m.args[1].ops)
+                             and isinstance(_m.args[1].comparators[0], ast.Subscript)
+                             for _m in ast.walk(_f))]
     check('⓸ᵈ ⌗ and nothing about the FINDING moved: the checks that establish the three held '
-          'stations read the PAPERS, which this revision does not touch',
-          'held in {paper}' in now or 'held in ' in now)
+          f'stations read the PAPERS -- {len(_reads_papers)} loop over the held stations tests a quote '
+          f'against a paper body, which this revision does not touch',
+          len(_reads_papers) == 1)
 
     print()
     if FAILED:

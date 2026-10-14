@@ -126,26 +126,19 @@ def main():
           sp.simplify(fS.subs(r, rn)) == 0 and sp.simplify(sp.diff(fS, r).subs(r, rn)) == 0)
 
     # ⓷ P15 already has the split
-    # ⛭⛭ r7332+60, PO-78's repair stride, first block.  The five owed rows in this receipt were
-    #   four checks standing on NOUN PHRASES and FRAGMENTS, and one of them was a disjunction
-    #   carrying a conjunction -- the shape cc66's clause decided, which is why this prefix is
-    #   first.  Each is replaced by the clause the claim is actually about, in the paper the claim
-    #   names rather than in every paper joined.  The reader is hoisted here so the scope can be
-    #   narrowed on the first of them.
-    #   ⌗ EDITED HERE ON `r7331`'s order ④, which named this block and sent this seat into it;
-    #     the receipt's own authorship is unchanged and nothing outside the owed rows is touched.
+    # ** r7329+70 (repair stride): the claim is that P15 DERIVED the split, so it is tested against P15
+    #   (not every paper concatenated) and on P15's whole clause -- subject, verb and what it imprints --
+    #   rather than on the three-word fragment "exponential near-horizon approach", which said nothing
+    #   on its own and could be satisfied by any paper.  The clause has stood once in P15 since it
+    #   arrived (c01f56c5). **
     p15 = re.sub(r'\s+', ' ', '\n'.join(
         l for l in open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
                         encoding='utf-8', errors='replace').read().split('\n')
         if not l.lstrip().startswith('%')))
-    #   ⓵ was `'exponential near-horizon approach' in allp`: a NOUN PHRASE, and over every paper
-    #     joined where the claim is about P15.  => P15's own clause, which names the subject and
-    #     carries the imprinting the claim turns on.  ONE site, count never changed.
-    check("⛭⛭ AND P15 ALREADY DERIVED THE SPLIT, for a different purpose: a non-degenerate horizon's "
-          '"exponential near-horizon approach" imprints a scale-invariant spectrum -- asserted as '
-          "P15's own clause, in P15, rather than as the noun phrase across every paper joined",
-          "a non-degenerate horizon's exponential near-horizon approach imprints a "
-          'scale-invariant spectrum' in p15)
+    check("⛭⛭ AND P15 ALREADY DERIVED THE SPLIT, for a different purpose: \"a non-degenerate horizon's "
+          'exponential near-horizon approach imprints a scale-invariant spectrum"',
+          "a non-degenerate horizon's exponential near-horizon approach imprints a scale-invariant "
+          "spectrum" in p15)
     # ** r6931+70.1: CLASS (a) -- THE PIN FROZE A CONFLATION THE CORPUS CORRECTED AT r6717+66.1
     #   (715ccd02).  It pinned P15's abstract as "the degenerate Nariai member's power-law,
     #   scale-free approach TO THE BRANCH POINT is argued to transmit the progenitor spectrum
@@ -162,26 +155,26 @@ def main():
     #   (9fd40454, 45 minutes after this receipt): P1 itself (BH_causality_v2) says the simple/double-root split "is put to a
     #   second use in a companion paper ... one fact serving two purposes".  The check now pins
     #   that connection in P1 rather than asserting its absence.
-    #   ⓶ was `'a third case' in p15`: a FRAGMENT, and it stands THREE times in that paper, so it
-    #     could neither fail nor locate the claim.  => The clause that names the branch point and
-    #     says what it does, which is the one of the three sites the claim is about.
     check("while \"the degenerate Nariai double root's power-law approach carries no scale\" -- the "
-          'transmission itself being the branch point\'s, a third case, asserted as the clause that '
-          'names the branch point in place of a fragment standing at three sites',
-          "degenerate Nariai double root's power-law approach carries no scale" in p15
-          and 'the branch point where the modes cross---a third case, $f$ diverging so that the '
-          'tortoise coordinate stays finite---accumulates no phase at all' in p15)
-    #   ⓷ was `'one fact serving two purposes' in p1`: a NOUN PHRASE, P1's own gloss rather than the
-    #     statement it glosses.  => P1's clause stating the second use, whose subject is the split
-    #     itself.  ONE site, count never changed.
+          'transmission itself being the branch point\'s, a third case',
+          # r7329+70: one quotation carrying both halves, so they cannot be satisfied from unrelated
+          # paragraphs (bare "a third case" stands three times in P15).
+          "the degenerate Nariai double root's power-law approach carries no scale, and the branch "
+          "point where the modes cross---a third case" in p15)
     check('⇒ SO IT IS ONE FACT USED FOR TWO PURPOSES -- P15 needs it to say what CROSSES; L-519 needs '
-          'it to say what the configuration CARRIES -- and P1 now says so itself, in the clause that '
-          'states the second use rather than in the phrase that glosses it',
-          "a non-degenerate horizon's exponential near-horizon approach imprints a "
-          'scale-invariant spectrum' in p15
-          and "degenerate Nariai double root's power-law approach carries no scale" in p15
-          and 'simple-root against double-root split is put to a second use in a companion '
-          'paper' in p1)
+          'it to say what the configuration CARRIES -- and P1 now says so itself: "one fact serving '
+          'two purposes"',
+          # r7329+70: P15's split as ONE clause (both approaches, joined by its own "whereas"), and P1's
+          # connection as its whole sentence -- the fragment "one fact serving two purposes" asserted
+          # nothing alone.  Rule case RC1 (r7329+70 RESULT): the sentence's subject carries "The same",
+          # a pointing word by the letter of Test 2, though the noun phrase names its thing in full.
+          "a non-degenerate horizon's exponential near-horizon approach imprints a scale-invariant "
+          "spectrum (the inflationary de~Sitter-horizon mechanism), whereas the degenerate Nariai "
+          "double root's power-law approach carries no scale" in p15
+          and "The same simple-root against double-root split is put to a second use in a companion "
+          "paper, where a non-degenerate horizon's exponential approach imprints a scale on what passes "
+          "it and the degenerate member's power-law approach imprints none~\\cite{JanzenCRcosmology}: "
+          "one fact serving two purposes." in p1)
 
     # ⓸ the three footings
     # ** RE-PINNED r4022, AND THE PIN WAS ANCHORED ON THE ONE THING 61's r4019 EXISTED TO REMOVE. **
@@ -199,19 +192,13 @@ def main():
           'which carries a scale of its own',
           '$\\mathrm{dS}_{2}\\times S^{2}$' in p1
           and 's $\\mathrm{dS}_{2}\\times S^{2}$, which carries a scale of its own' in p1)
-    #   ⓸ was `'What is claimed is the coincidence and not a value' in allp or 'the two readings are
-    #     not reconciled here' in allp` -- ** A DISJUNCTION CARRYING A CONJUNCTION: ** the label says
-    #     the paper does BOTH and the condition accepted EITHER, which is the case cc66's clause was
-    #     written for.  => Replaced by ONE span covering both halves as the paper prints them, which
-    #     proves their ADJACENCY as well -- strictly stronger than a conjunction of two searches,
-    #     since two searches cannot rule out the halves sitting in different sections.  Read with the
-    #     emphasis normalised, r7258's form for a markup carrier.  ONE site in P1.
-    p1u = re.sub(r'\\(emph|textbf|textit)\{([^{}]*)\}', r'\2', p1)
-    check('and it says the two readings are not reconciled there, and claims the coincidence rather '
-          'than a value -- both halves asserted as the ONE span the paper prints them in, so their '
-          'adjacency is tested too, in place of a disjunction that accepted either',
-          'and the two readings are not reconciled here. What is claimed is the coincidence and '
-          'not a value' in p1u)
+    # r7329+70: this was ONE check accepting EITHER clause from ANY paper, for a claim that needs BOTH
+    # in P1 -- a disjunction cannot carry a conjunction.  Now two claims, each its own whole clause in
+    # P1, each standing once since it arrived (0d38a5bf).
+    check('and P1 says the two readings are not reconciled there',
+          'the two readings are not reconciled here' in p1)
+    check('and P1 claims the coincidence rather than a value',
+          'What is claimed is the coincidence and not a value' in p1)
 
     print()
     if FAILED:

@@ -1,6 +1,7 @@
 # THE REPAIR STRIDE -- PO-78's repair phase.  Set at r7329, RE-CUT TO TWO SEATS at r7331.  Data, not code.
-# ** THIS IS THE WHOLE LIST AND IT IS NOT A TRIAGE. **  Every one of the 366 REPAIR-OWED rows in
-#   corpus/quote_pin_baseline.tsv is on it, in 135 receipts over 67 prefixes.  A row leaves this list by
+# ** THIS IS THE WHOLE LIST AND IT IS NOT A TRIAGE. **  Every REPAIR-OWED row in
+#   corpus/quote_pin_baseline.tsv is on it.  AT r7333: 318 rows in 118 receipts over 58 prefixes, down from
+#   366 in 135 over 67 at r7329 -- 48 rows and 17 receipts cleared in the first revision.  A row leaves by
 #   being REPAIRED or by being WITHDRAWN with its case written down beside the repair -- never by
 #   reclassification and never by looking hard at it.
 #
@@ -33,24 +34,33 @@
 #   from those cases in small named changes.  The text stays applied throughout.
 #
 # seat	prefix	rows	receipts	PAPER/SOURCE	SENTENCE/TOKEN
-# ---- cc66: 172 rows in 68 receipts over 34 prefixes
+# ** THE RE-CUT RULE, FROM r7333. **  A stride re-cut applies to work NOT YET BEGUN, and the blocks a
+#   seat was told to do FIRST under the old cut stay that seat's.  r7331 reassigned L147_two_arm to 60
+#   and told it to start there while 70 was already working it under r7329's order; both seats repaired
+#   the same 13 rows.  A re-cut that reassigns the head of a seat's queue is a re-cut that will be raced.
+# ** AND NO INTER-RATER MEASURE GOVERNS A REPAIR (r7333). **  Both those repairs pass all five receipts
+#   while agreeing on 48-78 per cent of what to remove and on 2 replacement literals of fifty-odd: a
+#   repair has many correct outputs where a verdict had one.  The arbiter is the 134-gate sweep plus the
+#   carry ledger (git fetch origin refs/ci/carry && git show FETCH_HEAD:carry.json), per repair.
+#
+# seat	prefix	rows	receipts	PAPER/SOURCE	SENTENCE/TOKEN
+# ---- cc66: 165 rows in 62 receipts over 29 prefixes
 cc66	P15_CR_cosmology	42	26	42/0	31/11
 cc66	L269_the_second_theatre	12	1	0/12	10/2
 cc66	L207_the_bend	10	2	10/0	7/3
 cc66	L221_quark_lepton	8	2	6/2	7/1
+cc66	L255_the_exemption_was_a_claim	8	1	0/8	3/5
 cc66	L802_stability_bracket	8	2	7/1	7/1
 cc66	P16_cosmogenesis_paper	8	2	8/0	8/0
-cc66	L255_the_exemption_was_a_claim	8	1	0/8	3/5
 cc66	L202_the_seam	6	1	5/1	5/1
 cc66	L_probability	6	1	0/6	2/4
-cc66	P10_canonical_time	5	4	3/2	4/1
 cc66	L257_the_label_did_double_duty	5	1	5/0	5/0
-cc66	P03_SdS_slicing	4	2	4/0	2/2
+cc66	P10_canonical_time	5	4	3/2	4/1
 cc66	L246_the_achirality_is_the_obstruction	4	1	4/0	3/1
 cc66	L263_the_station_audit	4	1	2/2	3/1
 cc66	L267_the_sweep_that_did_not_run	4	1	0/4	2/2
 cc66	L550_third_mechanism	4	1	3/1	4/0
-cc66	L218_reader_package	3	2	0/3	0/3
+cc66	P03_SdS_slicing	4	2	4/0	2/2
 cc66	L276_the_representation_theory_probe	3	1	0/3	1/2
 cc66	L279_the_symmetric_space_probe	3	1	0/3	0/3
 cc66	L801_nonlinear_shear_freedom	3	1	3/0	3/0
@@ -61,23 +71,17 @@ cc66	L253_the_seed_that_stopped_seeding	2	1	0/2	0/2
 cc66	L551_register_integrity	2	1	0/2	2/0
 cc66	L556_registry_from_rows	2	1	0/2	0/2
 cc66	P17_geometric_core_paper	2	1	2/0	2/0
-cc66	L171_two_routes	1	1	0/1	0/1
 cc66	L281_the_prior_art_hole	1	1	0/1	0/1
-cc66	L553_the_shear_counterterm	1	1	1/0	1/0
-cc66	L558_the_second_duplication	1	1	0/1	0/1
-cc66	L561_the_probe_was_the_defect	1	1	0/1	1/0
 cc66	L809_one_loop_quartic	1	1	1/0	1/0
 cc66	P08_slicing_operator	1	1	1/0	1/0
-# ---- 60: 194 rows in 67 receipts over 33 prefixes
-60	L165_defining_the_sum	26	4	19/7	24/2
+# ---- 60: 153 rows in 56 receipts over 29 prefixes
 60	L165_interacting_tower	25	10	22/3	20/5
 60	L204_physics_reach	16	8	7/9	2/14
 60	L211_closure_adjacency	16	4	10/6	13/3
 60	L202_phase_at_the_seam	15	2	13/2	13/2
-60	L147_two_arm	13	5	7/6	8/5
 60	L175_dimensional_descent	11	6	9/2	11/0
-60	RP_34_gr	8	2	8/0	5/3
 60	L247_the_build_already_stands	8	1	4/4	4/4
+60	RP_34_gr	8	2	8/0	5/3
 60	L548_propagating_sector	6	1	6/0	6/0
 60	L271_the_statistics_bake	5	2	2/3	1/4
 60	L237_gates_check_declarations	4	1	0/4	2/2
@@ -96,9 +100,7 @@ cc66	P08_slicing_operator	1	1	1/0	1/0
 60	L811_po7_inversions_closed	2	1	0/2	0/2
 60	L254_the_rule_was_spellings	1	1	0/1	0/1
 60	L259_the_distance_from_the_present	1	1	0/1	0/1
-60	L268_broken_by_its_own_edit	1	1	0/1	1/0
 60	L536_frontier_placement	1	1	1/0	1/0
 60	L555_merge_duplication	1	1	0/1	0/1
 60	L818_po6_running_layer	1	1	1/0	1/0
-60	P07_CR_framework	1	1	1/0	0/1
 60	P12_algebroid	1	1	1/0	1/0

@@ -10,6 +10,38 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭ `re r7327` — THE LEMMA AND THE PILOT ARE IN: THE SECOND SEAT CAN BE STARTED. ⌗ CUTOFF LEMMA `63` LINES; ROW 45, THE SdS KRETSCHMANN SCALAR, LANDS AT `149` (BAND 100–220, STOP `250`) PLUS A `44`-LINE COORDINATE RECIPE; THE SPLIT ADDS ≈ `24` LINES AND LEAVES ALL `131` AXIOM LINES IDENTICAL (`r7327+71.1` to `+71.5`)
+
+*Result: `computations/formalisation/r7327_71_cutoff_pilot/RESULT.md`. The seat's starting page is `SEAT_BRIEF.md`,
+in the same directory. All axioms are `[propext, Classical.choice, Quot.sound]`; no `sorryAx`.*
+
+- ***④.1, the cutoff lemma***, `63` against `80`:
+  - `exists_global_profile`: a profile smooth near `p` and nonzero at `p` is equal near `p` to one that is smooth and
+    nowhere zero. It is built as `φf + (1 − φ)f(p)` with a `ContDiffBump`.
+  - `exists_global_family` gives the same in the `Fin 4` shape.
+  - ***B's caveat, carried since `r7315`, is now a theorem.***
+- ***④.2, the pilot***, `149` against `150`, well under the stop:
+  - `sds_kretschmann`: `K = 48M²/r⁶ + 8Λ²/3` under THE connection in `(t, r, θ, φ)`, with profiles equal to `f`,
+    `r²` and `sin²θ` near the point.
+  - The `44`-line coordinate recipe (`co_d1`/`co_d2`/`pr_d1`/`pr_d2`) is the template.
+  - ***It did not fail on `θ`.*** The angular profile entered only through one combination, which is `F − 1` by plain
+    algebra.
+  - What cost the iterations were three tactic traps, named in the RESULT and in the brief so the seat does not pay
+    for them again.
+- ***④.3, the split:***
+  - `CurvatureProbe.lean` is now the module `ShadowEngine` (a second `lean_lib`; `lake build ShadowEngine`, `2`
+    minutes), plus `probes/CurvatureInstances.lean`.
+  - Importing the engine costs about `6` seconds.
+  - ⌗ ***A registered line half missed:*** "an instance file under `2` minutes" holds for Einstein-component and
+    foliation rows (`6.5` s for row 79), not for a `256`-case table (`4` minutes). The seat's rows are the fast kind.
+- ***④.4:*** `CANDIDATES.md` has an appended note. The 18 rows and 6 halves are candidates again; 35, 83, 65, 66 and 67
+  stay excluded.
+- ***⑤, the seat:***
+  - it takes 13, 48, 49, 51, 54 and the three foliation rows (47, 102, 94);
+  - I take the Kretschmann rows (17, 28, 81, 93, 104, 110) and the closed-slicing halves;
+  - the brief has the interface, the recipe and the price.
+- *⑥ is in the registration: every count's outcome space is wholly decisive.*
+
 ## ⛭ `re r7325` — THE ROW LIST IS NOT NEARLY SPENT: 24 OF THE 29 CHART-EXCLUDED UNITS ARE POINTWISE CLAIMS THAT B'S OWN NEAR-POINT CONVENTION PLUS E5 ALREADY REACHES. ⛔ THE REAL END IS `20` OF `111` (LIBRARY GAPS AND GLOBAL `S³` CLAIMS). ⌗ NEXT: ONE CUTOFF LEMMA AND AN `S²` PILOT, THEN ≈ `2,900` LINES OF REOPENED ROWS, AND THAT IS WHERE A SECOND SEAT PAYS (`r7325+71.1` to `+71.3`)
 
 *Result: `computations/formalisation/r7325_71_inventory/RESULT.md`; the list is `ROWS.tsv` in the same directory, with

@@ -93,28 +93,10 @@ def main():
     # ⓵ the forcing, at source
     check('P15 sec:what-crosses exists and argues the transmission dichotomy',
           'label{sec:what-crosses}' in p15)
-    # ⛭⛭ r7332+60, PO-78's repair stride, first block -- and this row is one of the two the
-    #   disjunction-cannot-carry-a-conjunction clause decided, so it is the working rule's first
-    #   contact with a case it was amended FOR.
-    #   ** THE ARM WAS A DISJUNCTION WHOSE SECOND HALF IS IMPLIED BY ITS FIRST, so the disjunction
-    #     reduced to the WEAKER arm alone -- and the weaker arm drops `every`, which is the whole of
-    #     what the claim turns on, and leaves `exits it` with its object named outside the span. **
-    #     *Measured: the weaker arm stands TWICE in the markup-normalised paper, once in this
-    #     section and once in the summary paragraph, so it could not even locate the claim.*
-    #   => Replaced by ONE assertion of the clause that carries the quantifier AND names the horizon
-    #      `it` refers to, over a markup-normalised read -- r7258's form for a markup carrier, and
-    #      what cc66's clause asks for: a conjunction of one rather than a disjunction of two.
-    #      ⌗ ONE site in the normalised paper, and the raw markered form's count has never changed
-    #        over the file's 348 commits.
-    #   ⌗ EDITED HERE ON `r7331`'s order ④, which named this block and sent this seat into it;
-    #     the receipt's own authorship is unchanged and nothing outside the owed rows is touched.
-    p15u = re.sub(r'\\(emph|textbf|textit)\{([^{}]*)\}', r'\2', p15)
     check('⛭ and it states: the comoving horizon shrinks to zero so EVERY mode exits it and FREEZES '
-          'before the crossing -- asserted as the one clause that carries the quantifier and names '
-          'the horizon, over a markup-normalised read, in place of the two-arm disjunction whose '
-          'weaker arm was deciding it alone',
-          'the comoving horizon $1/aH$ shrinks to zero and every mode exits it and freezes '
-          'before the crossing' in p15u)
+          'before the crossing',
+          'so the comoving horizon $1/aH$ shrinks to zero and \\emph{every} mode exits it and '
+          'freezes before the crossing.' in p15)
     check('and "A frozen mode has no oscillation for the kernel to damp"',
           'A frozen mode has no oscillation for the kernel to damp' in p15)
     check("and the instrument's continuity equation gives theta_g = (3/4) D k c_s sin(phi)",

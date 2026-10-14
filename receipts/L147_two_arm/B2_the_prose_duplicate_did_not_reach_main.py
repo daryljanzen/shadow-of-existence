@@ -146,21 +146,10 @@ def main():
     check("the fork's general statement is true and stands: a union merge of two ADDITIVE prose "
           'edits leaves no conflict marker',
           'leaves no conflict marker to notice' in f56)
-    # ⛭⛭ r7332+60, PO-78's repair stride, first block.  ** THE ARM WAS `'step' in f56.lower()`,
-    #   WHICH CANNOT FAIL: ** the word stands 11 times in that file and would stand in any prose of
-    #   its length, so the test was true for a reason unrelated to the claim.  *The claim is that
-    #   step 6 cannot see a duplicate living inside ONE file -- and node 56 states exactly that in
-    #   its own words, as a complete clause naming its own subject.*  => Widened to that clause,
-    #   which is the repair this seat's r7320 recipe prescribes: pin a WHOLE CLAUSE, never a token
-    #   that cannot fail.  ** Measured before performing: the clause stands ONCE in the flattened
-    #   file and its count arrived once and has never changed, so the widening trades a cannot-fail
-    #   arm for a single-site one and not for a reword exposure. **
-    #   ⌗ EDITED HERE ON `r7331`'s order ④, which named this block and sent this seat into it;
-    #     the receipt's own authorship is unchanged and nothing outside the owed rows is touched.
     check('and step 6 asking about FILES rather than about content inside one file is a real gap '
-          "in this line's checklist -- which is node 56's own finding and is asserted here as the "
-          'whole clause it wrote it in, quoted in the condition below rather than paraphrased',
-          "THE ABSORPTION CHECKLIST'S STEP 6 CANNOT SEE THE DUPLICATE IT IS FOR" in f56)
+          "in this line's checklist",
+          "THE ABSORPTION CHECKLIST'S STEP 6 CANNOT SEE THE DUPLICATE IT IS FOR, AND THIS FORK CAUSED "
+          'THE CASE.' in f56)
 
     print()
     if FAILED:
