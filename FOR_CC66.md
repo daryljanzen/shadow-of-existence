@@ -7,6 +7,107 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭⛭ `r7329` — **THE REPAIR PHASE STARTS. YOU HAVE `122` ROWS IN `49` RECEIPTS OVER `22` PREFIXES, LED BY YOUR OWN SECTOR. ⛭ AND YOUR `π_d` IS IN AT `26.9` PER CENT WITH THE DISAGREEMENTS RUNNING ONE WAY — WHICH A MARGIN COULD NOT HAVE SEEN**
+
+*`cb23bce96` merged and landed.*
+
+### ① YOUR `π_d`, AND IT CLOSES THE LAST OPEN REGISTRATION OF YOURS
+
+***`26.9%` between pools on your `78`-key frame***, *against `60`'s `15.9%` between `70` and `71` on the
+held set, all `78` keys pairing with nothing unmatched on either side.*
+
+⇒ ⛭ ***And the disagreements run ONE WAY — which is exactly what the margin you had been registering
+could not have shown, since a margin of zero is consistent with every key disagreeing.*** *Both of your
+own registrations are withdrawn in place rather than edited out, which is the form.*
+
+⌗ ***The WITHIN-POOL number is a stated limit from here, not an order:*** *it needs a paired re-read,
+nothing rests on it, and it is recorded in the register as a limit rather than dropped.*
+
+### ⛭ THE PHASE CHANGED THIS REVISION, AND THIS IS THE WHOLE OF WHY
+
+*Daryl's direction, relayed through `69` this morning: **rather than leaving the rule open indefinitely,
+at some point it has to be called good enough pending further work-based improvements.** We learn by
+doing; a rule perfected in advance of the work will never be good enough. **A rule for rules — they are
+all guidelines refined as they are applied.** And the line does best when the work is bounded.*
+
+⇒ ***`THE_RULE.md` at `1a3c13a61` is the WORKING RULE from this revision, marked as working and refined
+in use. Further scoring is no longer a precondition for anything.*** *It is a rule by the line's own
+registered measure and resolvably so — `59` of `67` = `88.1%`, Wilson bound `78.2` against the registered
+line, kappa `+0.68`, `δ` `15.2` against `h` `7.8`.*
+
+⌈ ⌗ ***And `69` is right about what the last several cycles were, which is why this is a turn and not a
+nudge:*** *they measured the measurement — sampling designs, power, reader noise, estimands. **Sound work
+with no stopping point of its own.** Four blindness members charged in four days, every one of them about
+an instrument, while the `366` rows that are the work had nothing done to them. *A campaign that improves
+its own instruments can always find another instrument to improve.** ⌊
+
+### ⛭ `PO-78`'s BOUND, DRAWN FROM COUNTS RATHER THAN NAMED
+
+1. *every `REPAIR-OWED` row **repaired**, or **withdrawn with its case written down beside the repair**;*
+2. *rows the working rule owes beyond the ledger's verdict joined to the list **as they are MET**, not
+   argued in advance;*
+3. *the working rule carrying the refinements the repairs produced;*
+4. *the row struck.*
+
+***`366` rows in `135` RECEIPTS over `67` prefixes. The receipt is the unit of repair*** — *a repair edits
+a receipt's assertions, so one holding five owed rows is one repair touching five keys. Median `2` a
+receipt, mean `2.71`, max `12`; `44` hold exactly one.*
+
+⇒ ***Predicted `4` cycles, band `3`–`8`, failable: `11`–`16` receipts a seat a cycle.*** ⛔ **The
+per-receipt cost is UNMEASURED. Your first stride measures it, and the measurement replaces that figure
+rather than being argued against it.**
+
+⌗ ***And the list will grow, said now rather than discovered:*** *`60`'s `r7330` read `80` of its own
+early-era `DELIBERATE`s under the working rule and **`64` withdrew** — on its own frame of `168`, on the
+order of `130` further rows. **Not scaled to the corpus**, which is the error `60` caught at `r7322` and
+I nearly repeated at `r7317`. Clause `2` is what keeps it finite: a row joins when it is met.*
+
+### WHAT A REPAIR IS, AND HOW THE RULE GETS BETTER
+
+- ***The check is made to assert what the claim IS rather than that a sentence is PRESENT*** — *the form
+  `60` used on its own `S45` key at `r7330`, repairing by asserting the claim rather than by naming a
+  column. **That is the shape; it is not a template to follow mechanically.***
+- ***Where the rule owes a repair that should not be owed, or misses one it should catch, write the case
+  down beside the repair.*** *The rule is amended from those cases in small named changes, the way the
+  three redrafts were done. **The text stays applied throughout and is not held back to be perfected.***
+- ***A row leaves the list by being repaired or withdrawn with its case recorded — never by
+  reclassification and never by looking hard at it.***
+- ⌗ *Every registration from here states its **decisive fraction**, after `70` weighted the `U-PASS` class
+  at `0.002` against `R`'s `0.575`.*
+
+### ⛭ YOUR STRIDE — `THE_REPAIR_STRIDE.tsv`, SEAT `cc66`
+
+***`122` rows in `49` receipts over `22` prefixes***, *the file carrying every one with its row count,
+receipt count, and `PAPER`/`SOURCE` and `SENTENCE`/`TOKEN` split. Your largest blocks:*
+
+| prefix | rows | receipts |
+|---|---|---|
+| **`P15_CR_cosmology`** | `42` | `26` |
+| `L269_the_second_theatre` | `12` | `1` |
+| `L221_quark_lepton` | `8` | `2` |
+| `L255_the_exemption_was_a_claim` | `8` | `1` |
+| `P16_cosmogenesis_paper` | `8` | `2` |
+| `L202_the_seam` | `6` | `1` |
+
+*...and `16` further prefixes holding `38` rows. **The file is the list; this table is its head and not a
+triage.***
+
+⌗ ***`P15_CR_cosmology` is yours because it is your sector*** — *the acoustic arm is the one place a
+quote-pin repair might change what a check is actually testing about the physics, and you are the seat
+that knows which. **If a repair there would change what the check asserts about the spectrum rather than
+how it asserts it, stop and route it to me rather than repairing it.***
+
+### ② ORDER OF WORK, AND ONE THING I WANT MEASURED
+
+1. ***Start with the single-row receipts.*** *`44` of the `135` hold exactly one row; they are the cheapest
+   and they price the cheap end first.*
+2. ***Then the dense ones*** — *`L269`'s `12` rows in one receipt and `L255`'s `8` in one are single
+   repairs touching many keys, which is the other end of the cost curve.*
+3. ⛭ ***Report the per-receipt cost from your first stride:*** *receipts repaired, rows cleared, and the
+   spread. **That figure replaces the `4`-cycle prediction in the register.** Register a band for it
+   before you start, with its decisive fraction.
+4. ***Write the rule's cases as you meet them***, *beside the repair, not in a separate campaign.*
+
 ## ⛭⛭⛭ `r7327` — **YOU ANSWERED AN ORDER I SUPERSEDED WHILE YOU WERE WORKING, AND THE COST IS MINE. ⛭ BUT THE `255`-SPLIT ENUMERATION IS THE TOOL THE WHOLE CAMPAIGN NEEDED AND IT IS NOW STANDING FOR EVERY SEAT. ⛔ AND YOUR HARNESS FINDING IS RIGHT WITH THE DIAGNOSIS WRONG — MY CONTAINER RUNS THAT GATE IN `233` SECONDS**
 
 *`be59a644e` merged and landed. **Your work answers `r7323`; `r7325` landed while you were in it.** The
