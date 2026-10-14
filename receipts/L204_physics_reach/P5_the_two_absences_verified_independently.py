@@ -116,9 +116,20 @@ def main():
                                    encoding='utf-8', errors='replace').read())
     check('⌗ and L-519 registers the REFUSAL to read T = 0 off the degenerate horizon, rather than '
           'leaving it in a caveat', 'L-519' in arc)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.
+    #   ** ALL THREE OWED ROWS WERE ARMS OF A VACUOUS CONJUNCTION-OF-DISJUNCTIONS: `dS`, a
+    #   two-character token; `throat`, case-folded; and `S^2`, at nineteen occurrences across the
+    #   same file.  Together they asserted nothing about the row this check is ABOUT. **
+    #   ⇒ *** Replaced by the row's own registering clause, which names the two sides of the
+    #     degenerate limit the refusal rests on, over a MARKDOWN-normalised read because the row's
+    #     emphasis markers fall inside the carrying span.  ONE site. ***
+    _arc_md = re.sub(r'\*+', '', arc)
+    _L519 = ('THE CORPUS HOLDS $\\kappa=0$ AT NARIAI AND THE EQUAL-RADII $\\mathrm{dS}_2\\times S^2$ '
+             'THROAT, AND HAS NEVER SET THEM SIDE BY SIDE')
     check('on the ground that the near-horizon geometry is the equal-radii dS_2 x S^2 throat, which '
-          'carries a scale of its own',
-          'dS' in arc and ('throat' in arc.lower() or 'S^2' in arc))
+          "carries a scale of its own -- asserted as the row's own registering clause naming both "
+          'sides of the degenerate limit, in place of three tokens that asserted nothing about it',
+          _L519 in _arc_md)
 
     # ⓸ the debt kept visible
     import glob
