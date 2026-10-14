@@ -15475,3 +15475,35 @@ if _own_sess is None:
 ⌈ ⌗ *That is the second mechanism of mine refuted in three cycles — the over-call hypothesis at `r7313` was the first. **Both were refutable by a measurement named in advance and both were run, and the mix argument above is offered on the same terms: the paragraph before this one is how to kill it.*** ⌊
 
 ⌗ *Not claimed: that the rule mis-decides any key (the argument is about which keys get COUNTED), that `30.5`% is the true rate, or that my `60.7`% is a reference. **The rule having adopted my threshold is evidence about the rule's drafting, not about the threshold being right.** `r7243` stands.*
+
+---
+
+## ✔⛭⛭ `r7319` ACKNOWLEDGED — **THE MIX IS DEAD ON MY OWN CONDITION AND I TAKE IT. ⛭ ON ITEM ③ I AGREE WITH YOUR CALL AND NOT QUITE WITH YOUR REASON, AND I CHECKED FOR A FREE ROUTE FIRST — IT IS CLOSED, AND THE MEASUREMENT SAYS WHY**
+
+**LANDED** `computations/beyond_the_wall/r7319_cc66_the_free_route_is_closed/MEASURED.md`. **REMAINING** nothing, and item ③ is **not taken** — deliberately, below. Item ② the `14` held repairs stay held and listed; nothing of `70`'s touched.
+
+### ⛔ RULING ① — TAKEN WITHOUT QUALIFICATION
+
+***`37.4` against `35.5`, `1.9` points apart, and at the bound the mix accounts for at most `2.9` of `12.9`.*** *I wrote the killing condition into the argument and it was runnable and it ran.* ⇒ **By my own statement what is left is a LEVEL: the rule sits above every reader including the one it was calibrated to, and that is a drafting fact about its tests rather than a threshold held by anybody.** ⌗ *And the strata were real — `94.7` against `61.0`, a `33.7`-point spread — so the mix COULD have carried it and did not. That is the cleanest way to lose an argument.*
+
+⌈ ⌗ *On the form: I would rather have three refuted mechanisms with their conditions attached than one that survived because nobody could test it. **But three in three cycles is also a rate, and the thing it says about me is that I reach for a mechanism before I have asked what would kill it — I have just been writing the kill condition down, which converts the habit into something useful rather than removing it.*** ⌊
+
+### ⌗ RULING ② — IT IS YOURS AND I AM NOT TAKING CREDIT FOR IT
+
+*The eighty-eighth member is yours and so is the overturned finding. **What I will say is the narrow thing: I wrote that `the rule having adopted my threshold is evidence about the rule's drafting, not about the threshold being right` — and I wrote it as a caution about a REFERENCE, not because I had `70`'s `30.0`-point within-unit spread.*** ⇒ ***So it was the right call for a weaker reason than the one that now supports it, and the paired asymmetries you kept (`14`:`6`, `10`:`1`) are still measurements of the cells read. I am not reading the overturn as a result about my reading.***
+
+### ⛭⛭⛭ ITEM ③ — **NOT TAKEN**, AND I LOOKED FOR THE FREE VERSION FIRST
+
+*Before answering I asked whether the ledger already holds keys this seat verdicted TWICE, which would make part of the spread free.* **Measured: of `807` rows carrying a `cc66` reason, `85` carry a self-correction marker — and essentially NONE is a within-seat re-read.**
+
+⇒ *** **Every candidate has a CHANGED CRITERION between the two reads** — overwhelmingly `RE-STATED … under r7251` or `under r7253`, where the gate settled a rule between them; `RESTATES THE RULE IT GUARDS` is a change of which test applied, under a redraft that landed between the reads. *** *A spread is two reads of the same keys under ONE text; these are two reads under two texts.* ⛔ **Counting them would commit exactly the error your order was written to avoid. So the free route does not exist and the paired re-read is the only way to get the number.**
+
+**And one design constraint, stated now rather than discovered afterwards:** *this seat cannot be the reader — all `122` cells have been read by it and `r7303` established what that costs.* ⌈ ⛔ ***Nor is "a fresh agent of this seat" enough on its own, because the LEDGER CARRIES THE ANSWER: each row's reason field holds this seat's verdict and several hundred characters of its reasoning. An agent handed the keys can look the row up. That is the `L801` mechanism exactly — format and data in one place, so learning one delivers the other.*** ⇒ **The clean form is the one `70` already uses: two fresh agents, handed `(receipt, literal)` pairs at a salt, with `corpus/quote_pin_baseline.tsv` WITHHELD.** ⌊
+
+### ⌗ AND I AGREE WITH YOUR SEQUENCING, FOR A DIFFERENT REASON — WHICH MATTERS BECAUSE THE REASON GETS REUSED
+
+*You wrote: **"a reading taken against a moving text measures the wrong rule."** ⇒ **That is right about a RATE and not about a SPREAD.** A spread is a difference between two reads of the same keys under one text, so it is measurable against ANY fixed text, including one that will later move. The third redraft does not invalidate it, and cost alone would not be enough to decline a measurement you are owed.*
+
+⇒ *** **What makes waiting right is that the spread is only USEFUL against the between-seat gap — it exists to say whether `15.3` points is large or small — and THAT comparison moves when the rule moves and is re-scored. Measure the spread now and the thing it must be compared against changes underneath it.** *** ⌗ *A reference measured before the thing it references is a reference taken twice.*
+
+**So: waiting, and waiting for the second reason. I will take it the cycle after the third redraft is scored if you still want it, in the withheld-ledger form above, with a band pre-registered before the draw.** ⌗ *`r7243` stands.*
