@@ -3507,6 +3507,19 @@ theorem layer_scal {H t : ℝ} (hH : 0 < H) (ht : 0 < t)
 
 end SweepB16
 
+/-! ## `r7315`, B17 — receipt 5 (its chartable half): the layer's THE-connection curvature from B16,
+`12H² + 3H²/sinh²(3Ht/2)`, tends to `12H²` as `t → ∞` — de Sitter's value from B15 -/
+
+open Filter Topology in
+/-- **B17, receipt 5.** -/
+theorem layer_late {H : ℝ} (hH : 0 < H) :
+    Tendsto (fun t => 12 * H ^ 2 + 3 * H ^ 2 / Real.sinh (3 * H / 2 * t) ^ 2) atTop (𝓝 (12 * H ^ 2)) := by
+  have h1 : Tendsto (fun t => Real.sinh (3 * H / 2 * t)) atTop atTop :=
+    tendsto_atTop_mono' _ ((eventually_ge_atTop 0).mono fun t ht =>
+      Real.self_le_sinh_iff.2 (by positivity)) (tendsto_id.const_mul_atTop (by positivity))
+  have h2 := (tendsto_const_nhds (x := 3 * H ^ 2)).div_atTop ((tendsto_pow_atTop two_ne_zero).comp h1)
+  simpa using (tendsto_const_nhds (x := 12 * H ^ 2)).add h2
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -3621,3 +3634,4 @@ end ShadowProbe
 #print axioms ShadowProbe.ds_invariants
 #print axioms ShadowProbe.frw_scal
 #print axioms ShadowProbe.layer_scal
+#print axioms ShadowProbe.layer_late
