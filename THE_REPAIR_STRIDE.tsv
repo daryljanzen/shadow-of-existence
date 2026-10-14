@@ -1,80 +1,95 @@
-# THE REPAIR STRIDE -- PO-78's repair phase.  Set at r7329, re-cut to two seats at r7331,
-#   RE-CUT TO THREE SEATS AT r7339 when the secondment's return trigger fired.  Data, not code.
+# THE REPAIR STRIDE -- PO-78's repair phase.  Set at r7329, re-cut to two seats at r7331, re-cut to
+#   THREE SEATS at r7339 when the secondment's return trigger fired.  Data, not code.
 # ** THIS IS THE WHOLE LIST AND IT IS NOT A TRIAGE. **  Every REPAIR-OWED row in
-#   corpus/quote_pin_baseline.tsv is on it.  AT r7339: 284 rows in 90 receipts over 53 prefixes,
-#   down from 366 in 135 at r7329 -- 82 rows and 45 receipts cleared in two revisions, and NOTHING
-#   cleared at r7339, because both repair seats spent the revision on pre-registrations.  A row
-#   leaves by being REPAIRED or by being WITHDRAWN with its case written down beside the repair --
-#   never by reclassification and never by looking hard at it.
+#   corpus/quote_pin_baseline.tsv is on it.  AT r7341: 268 rows in 82 receipts over 53 prefixes,
+#   down from 366 in 135 at r7329.  A row leaves by being REPAIRED or by being WITHDRAWN with its case
+#   written down beside the repair -- never by reclassification and never by looking hard at it.
+#   Median 3 rows a receipt, mean 3.27, max 12; 10 of the 82 receipts hold exactly one.
+#   The whole list splits 155 PAPER / 113 SOURCE and 177 SENTENCE / 91 TOKEN.
 #
 # ** THE UNIT IS THE RECEIPT, NOT THE ROW, AND THE BALANCE IS ON RECEIPTS. **  A repair edits a receipt's
-#   assertions, so a receipt holding five owed rows is one repair touching five keys.  Median 2 rows a
-#   receipt, mean 3.16 at r7339, max 12; 12 of the 90 receipts hold exactly one.  The whole list splits
-#   171 PAPER / 113 SOURCE and 188 SENTENCE / 96 TOKEN.  r7329's first cut
+#   assertions, so a receipt holding five owed rows is one repair touching five keys.  r7329's first cut
 #   balanced on ROWS and came out 74 receipts against 61 -- balancing on the wrong unit, caught in the
-#   same cycle.  The three-seat cut below is 30 receipts a seat exactly, and the rows fall where the
-#   receipts put them: 90, 89 and 105, which is 3.00, 2.97 and 3.50 rows a receipt.
+#   same cycle.  r7339's three-seat cut was 30 receipts a seat exactly.  NO RE-CUT AT r7341: cc66 has
+#   worked 8 receipts off its 30 and is simply ahead, which is the cut doing its job rather than failing.
+#   A re-cut comes when a seat runs dry, not when the counts stop being equal.
 #
-# ** THREE SEATS FROM r7339.  THE SECONDMENT IS DISCHARGED. **  70 was seconded to the Lean line's
-#   campaign 2 at r7331 with the return trigger "when the last three reopenable rows land".  They
-#   landed: 70 took row 72, 71 took 59 and 62, and 71's census reads REOPENABLE 0 at r7337+71.3.  So
-#   70 returns to the repair stride here and the cut goes to three seats in the same revision, as
-#   r7337's clause said it would.  70 keeps the nightly at 11:00 UTC.  Node 71 is not on this stride
-#   -- it has the Lean census and campaign 3.  Node 69 is not a workhorse and takes none.
+# ** THREE SEATS.  THE SECONDMENT IS DISCHARGED (r7339). **  70 returned when 71's census read
+#   REOPENABLE 0.  70 keeps the nightly at 11:00 UTC.  Node 71 is not on this stride -- it has the Lean
+#   census and the campaigns.  Node 69 is not a workhorse and takes none.
 #
-# ** THE RE-CUT RULE, FROM r7333, AND IT BINDS THIS RE-CUT. **  A stride re-cut applies to work NOT YET
-#   BEGUN, and the blocks a seat was told to do FIRST under the old cut stay that seat's.  Held here:
-#   cc66 keeps P15_CR_cosmology, whose last 12 receipts it pre-registered at r7337+cc66; 60 keeps
-#   L165/L211/L175/L204, the 19 receipts it pre-registered at r7338.  Those 31 receipts were not
-#   available to the re-cut and 70's 30 come entirely from the unbegun 59.  r7331 reassigned
-#   L147_two_arm to 60 and told it to start there while 70 was already working it under r7329's order;
-#   both seats repaired the same 13 rows.  A re-cut that reassigns the head of a seat's queue is a
-#   re-cut that will be raced.
+# ** THE RE-CUT RULE, FROM r7333. **  A stride re-cut applies to work NOT YET BEGUN, and the blocks a
+#   seat was told to do FIRST under the old cut stay that seat's.  r7331 reassigned L147_two_arm to 60
+#   while 70 was already working it under r7329's order; both seats repaired the same 13 rows.
 #
-# ** AFFINITY, AND IT IS WEAKER THAN IT WAS. **  cc66 holds P15_CR_cosmology and its own sector
-#   prefixes; 60 holds the L165/L175/L211/L204 block it verdicted.  70's 30 are the unbegun tail and
-#   carry no affinity claim beyond L202/L_probability, which it has read this revision.  A repair wants
-#   the seat that verdicted the prefix, because the repairer has to recognise what the check was trying
-#   to assert -- but 59 of 90 receipts had no begun claim on them, so most of this cut is balance.
+# ** AFFINITY. **  cc66 holds P15_CR_cosmology and its own sector prefixes; 60 holds the
+#   L165/L175/L211/L204 block it verdicted; 70's 30 are the tail that had not been begun at r7339.
 #
 # ** WHAT A REPAIR IS. **  THE_RULE.md at 1a3c13a61 is the WORKING RULE, adopted at r7329 and refined in
-#   use.  A repair makes the check assert what the claim IS rather than that a sentence is present --
-#   the form 60 used on its own S45 key at r7330.  Where the rule owes a repair that should not be owed,
-#   or misses one it should catch, the case is written down beside the repair and the rule is amended
-#   from those cases in small named changes.  The text stays applied throughout.
+#   use, now carrying two amendments.  A repair makes the check assert what the claim IS rather than that
+#   a sentence is present.  Where the rule owes a repair that should not be owed, or misses one it should
+#   catch, the case is written down beside the repair and the rule is amended from those cases in small
+#   named changes.  The text stays applied throughout.
 #
-# ** AND NO INTER-RATER MEASURE GOVERNS A REPAIR (r7333). **  Both those L147 repairs pass all five
-#   receipts while agreeing on 48-78 per cent of what to remove and on 2 replacement literals of
-#   fifty-odd: a repair has many correct outputs where a verdict had one.  The arbiter is the 134-gate
-#   sweep plus the carry ledger (git fetch origin refs/ci/carry && git show FETCH_HEAD:carry.json),
-#   per repair.
+# ** AND NO INTER-RATER MEASURE GOVERNS A REPAIR (r7333). **  Two independent repairs of the same 13 rows
+#   passed all five receipts while agreeing on 48-78 per cent of what to remove: a repair has many correct
+#   outputs where a verdict had one.
+#
+# ** THE ARBITER, RESTATED AT r7341 BECAUSE THE OLD STATEMENT OF IT WAS A COUNT. **  It is
+#   `bash scripts/sweep_gates.sh` plus the carry ledger
+#   (git fetch origin refs/ci/carry && git show FETCH_HEAD:carry.json), per repair.  This header said
+#   "the 134-gate sweep" for four revisions and there are 129 gate files -- a count cited where a roster
+#   was meant, which is cc66's own r7339+cc66.2 lesson landing on the document that names the arbiter.
+#   ⛔ cc66 ran the sweep as `while read g; do ... done < gatelist.txt` and a gate's child consumed the
+#   rest of the list, because the list IS the loop's stdin: it wrote DONE having recorded 120 of the 134
+#   it claimed, the 13 missing being exactly the tail, check_revision_collisions among them.
+#   ⇒ FIXED AT r7341 IN scripts/sweep_gates.sh, structurally and not by advice: every gate is invoked
+#   with `< /dev/null`, and the sweep ASSERTS ITS OWN ROSTER -- it records each name it runs and goes red
+#   if that set is not exactly the set of gate files.  A tally that cannot be reconciled is not a result.
+#   ** No seat runs an ad-hoc gate loop any more.  Run the script. **
 #
 # ** AND TWO QUANTITIES, NEITHER STANDING FOR THE OTHER (r7333, r7337). **  Report EFFORT and REALISED
 #   receipts a revision with the assignment named; and report the owed count BESIDE the keys minted and
-#   adjudicated, because a repair clears a row either by making the check assert the claim in a form the
-#   instrument reads or by restructuring it out of pin form -- both repairs, only the first visible.
+#   adjudicated.  AT r7341 the second quantity has its first trunk-wide measurement: 24 keys minted and
+#   adjudicated against 16 rows cleared, 1.50 a row, against 0.30 the revision before.
 #
-# ** WHAT A REPAIR WRITES, AS AMENDED TWICE. **  THE_RULE.md (r7335, 69 from 60's case): the SHORTEST
-#   span that carries the whole claim and occurs once under the checker's own normalisation, and then
-#   STOP.  r7339 rules on cc66's routed case against it and the second amendment is owed from 69:
-#   A LOCUS-SCOPED CONJUNCTION OF SPANS SATISFIES THE FLOOR.  cc66's locus-scoped form asserts a unique
-#   prose locator and the claim's value within ONE locus; all 13 of its locators are unique and only 4
-#   of its 12 value fragments are, so read as requiring ONE CONTIGUOUS span the floor owes 8 of 25
-#   again -- all 8 failures being the asserted ATOM and none the statement that says it.  Measured at
-#   r7339: uniqueness alone costs 0.6x the pair form's characters -- the growth is CONTIGUITY, not
-#   uniqueness, and contiguity was never a stated requirement.  The minimand is TOTAL
-#   PINNED CHARACTERS, not the number of spans.  Until 69's text lands, a locus-scoped repair is
-#   compliant and is not re-opened -- EXCEPT C40, which has no unique anchor at all (its one span,
-#   "against the measured", stands 8 times), so there is nothing for the within-locus condition to
-#   attach to and that row is genuinely still owed.  7 retired, 1 standing.
-# ** AND EVERY COUNT UNDER THE FLOOR IS REPORTED NORMALISED (r7339, cc66's). **  check_quote_pins's
-#   _unmark is many-to-one, so a span's normalised count can only RISE: a raw count is a LOWER bound on
-#   the count the floor is tested against.  Verified on cc66's 25 spans -- one case, the theta ratio,
-#   twice raw and three times normalised.
+# ** WHAT A REPAIR WRITES: TWO AMENDMENTS, AND THE SECOND IS CORRECTED THE REVISION IT LANDED. **
+#   THE_RULE.md (r7335, 69 from 60's case): the shortest span that carries the whole claim and occurs once
+#   under the checker's own normalisation, then stop.  (r7339/r7341, 69 from cc66's case): a pin may be
+#   SEVERAL spans required together inside ONE LOCUS -- one anchor occurring exactly once, every other
+#   span required within the anchor's locus, exactly one locus holding them all.  A pin none of whose
+#   spans occurs once has nothing to locate it and does not meet the floor however its pieces are
+#   arranged.  Counts are taken normalised, because the normaliser only merges and a raw count is a lower
+#   bound.
+#   ⛔ AND THE MINIMAND IS CORRECTED AT r7341, AGAINST THE GATE'S OWN r7339 RULING.  r7339 set the
+#   minimand to total pinned characters and told cc66 to prefer the locus-scoped form.  Measured on the
+#   trunk: the locus-scoped form minted 0 keys of 7 repairs at r7335, and the contiguous form minted 24
+#   against 16 rows cleared at r7341.  A pin the instrument cannot key is not a cheaper pin; it is not on
+#   the minimand's domain.  ⇒ THE MINIMAND RANKS PINS THE RATCHET CAN READ.  Among keyable pins, fewest
+#   pinned characters over all spans.  When cc66's narrowed hop lands and the locus-scoped form becomes
+#   keyable, the minimand will prefer it with no further change -- the domain widens when the instrument
+#   widens, which is why this is not a sunset clause.
+#   ⌗ And contiguity's price is now measured from both ends on the same eight rows: uniqueness alone
+#   0.60x the locus-scoped form, uniqueness-plus-contiguity 2.81x (410 characters -> 1154).  cc66's
+#   earlier 10.3x measured the anchor SENTENCE, which the rule never asks for, and cc66 withdrew it.
+#
+# ** FLOOR 2 DOES NOT APPLY TO A PINNED CONTAINER (r7341, cc66's case and cc66's reason). **  The defect
+#   floor 2 prevents is a later edit landing on the wrong site; a container pinned at a commit has no
+#   later edits.  Rows asserted against a frozen file are not owed a uniqueness repair.
+#
+# ** AND TWO CLASSES THE OWED COUNT CANNOT SEE, ROUTED TO cc66 WITH THE NARROWED HOP (r7341). **
+#   ⒜ THE DEAD PIN: cc66 found a disjunction whose STRONGER arm matches zero times, so the check had been
+#   passing on the weaker arm alone -- and the dead arm carried a ledger row, verdict EXTENDED, green.
+#   A pin that matches nothing can sit adjudicated indefinitely because the disjunction around it carries
+#   the check, and no count of owed rows can see it.
+#   ⒝ THE VANISHING SPAN: 15 of 302 P15-wide readings vanish under the normaliser entirely, every one
+#   produced by EXTENDING a shorter literal by a character distance so the boundary lands mid-token.
+#   Neither class is a repair and neither is on the list below; both are measurements the ledger owes
+#   itself, because they decide whether a falling owed count means anything.
 #
 # seat	prefix	rows	receipts	PAPER/SOURCE	SENTENCE/TOKEN
-# ---- cc66: 90 rows in 30 receipts over 17 prefixes, of which 12 receipts are BEGUN and were not re-cut
-cc66	P15_CR_cosmology	22	12	22/0	15/7
+# ---- cc66: 74 rows in 22 receipts over 17 prefixes
+cc66	P15_CR_cosmology	6	4	6/0	4/2
 cc66	P16_cosmogenesis_paper	8	2	8/0	8/0
 cc66	L271_the_statistics_bake	5	2	2/3	1/4
 cc66	L269_the_second_theatre	12	1	0/12	10/2
@@ -91,7 +106,7 @@ cc66	L277_the_unclaimed_surface	2	1	0/2	0/2
 cc66	L552_weyl_and_torus	2	1	0/2	2/0
 cc66	P17_geometric_core_paper	2	1	2/0	2/0
 cc66	L809_one_loop_quartic	1	1	1/0	1/0
-# ---- 60: 89 rows in 30 receipts over 15 prefixes, of which 19 receipts are BEGUN and were not re-cut
+# ---- 60: 89 rows in 30 receipts over 15 prefixes
 60	L165_interacting_tower	23	8	20/3	19/4
 60	L211_closure_adjacency	16	4	10/6	13/3
 60	L204_physics_reach	12	4	4/8	1/11
@@ -107,7 +122,7 @@ cc66	L809_one_loop_quartic	1	1	1/0	1/0
 60	L551_register_integrity	2	1	0/2	2/0
 60	L811_po7_inversions_closed	2	1	0/2	0/2
 60	L281_the_prior_art_hole	1	1	0/1	0/1
-# ---- 70: 105 rows in 30 receipts over 21 prefixes, all of them newly cut
+# ---- 70: 105 rows in 30 receipts over 21 prefixes
 70	P10_canonical_time	5	4	3/2	4/1
 70	L202_phase_at_the_seam	15	2	13/2	13/2
 70	L207_the_bend	10	2	10/0	7/3

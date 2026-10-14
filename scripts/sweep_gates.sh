@@ -32,11 +32,28 @@ cd "$(dirname "$0")/.."
 export NODE="${NODE:-ci}"
 GATE_TIMEOUT="${GATE_TIMEOUT:-420}"
 
+# ⛔ r7341 (66), from cc66's r7339+cc66.2 -- A COUNT IS NOT A ROSTER, AND THIS SCRIPT PRINTED A
+#   COUNT.  cc66 ran the phase's verification sweep as `while read g; do ... done < gatelist.txt`
+#   and a gate's child process consumed the rest of the list, because the list IS the loop's stdin.
+#   It wrote its DONE marker having recorded 120 names of the 134 it claimed, the 13 missing being
+#   exactly the tail -- check_revision_collisions among them, the gate that caught a commit
+#   collision earlier in this same phase.  So "the sweep is clean" meant a sweep of fewer gates
+#   than it named, and nothing in the output could say so.
+#     This script's loop is a GLOB and so was never truncated that way, but it had the other half
+#   of the same defect: it printed `sweeping N gates` from one `ls` and PASS/FAIL/UNRUN from a
+#   separate walk, and never reconciled them.  Two numbers that must agree, printed side by side,
+#   with nothing asserting it.
+#   ⇒ TWO FIXES, both here, both structural rather than advisory:
+#     * every gate is invoked with `< /dev/null`, so no gate's child can eat the caller's input;
+#     * the sweep ASSERTS ITS OWN ROSTER -- it records each name it ran and fails if that set is
+#       not exactly the set of gate files.  A tally that cannot be reconciled is not a result.
 run_sweep() {
-  local pass=0 fail=0 unrun=0 failed="" notrun=""
+  local pass=0 fail=0 unrun=0 failed="" notrun="" ran=0
+  : > /tmp/_swroster.$$
   for g in corpus/check_*.py; do
     local n rc; n=$(basename "$g" .py)
-    timeout "$GATE_TIMEOUT" python3 -W ignore "$g" >/tmp/_sw.$$ 2>&1; rc=$?
+    timeout "$GATE_TIMEOUT" python3 -W ignore "$g" >/tmp/_sw.$$ 2>&1 </dev/null; rc=$?
+    echo "$n" >> /tmp/_swroster.$$; ran=$((ran+1))
     if [ "$n" = "check_compile" ] && ! command -v pdflatex >/dev/null 2>&1; then
       unrun=$((unrun+1)); notrun="$notrun $n(no-pdflatex)"
     elif [ "$n" = "check_receipts_run" ] && [ $rc -ne 0 ]; then
@@ -50,7 +67,13 @@ run_sweep() {
     fi
     rm -f /tmp/_sw.$$
   done
-  echo "$pass|$fail|$failed|$unrun|$notrun"
+  # ** THE ROSTER ASSERTION. **  The set of names run must be exactly the set of gate files.
+  local expect actual missing
+  expect=$(ls corpus/check_*.py | xargs -n1 basename | sed 's/\.py$//' | sort)
+  actual=$(sort /tmp/_swroster.$$)
+  missing=$(comm -23 <(echo "$expect") <(echo "$actual") | tr '\n' ' ')
+  rm -f /tmp/_swroster.$$
+  echo "$pass|$fail|$failed|$unrun|$notrun|$ran|$missing"
 }
 
 # ⛭ r3558 (node 60), ADDITIVE -- 59's structure kept whole, one caution added that it does
@@ -64,9 +87,17 @@ if [ -f .git/shallow ]; then
   echo "  [WARN] SHALLOW CLONE -- commit-pinned checks read empty and flip silently."
   echo "         Run: git fetch --unshallow   before trusting any number below."
 fi
-echo "  sweeping $(ls corpus/check_*.py | wc -l) gates   [NODE=$NODE, timeout=${GATE_TIMEOUT}s]"
-IFS='|' read -r P F FAILED U NOTRUN <<< "$(run_sweep)"
-echo "  HERE:  PASS=$P  FAIL=$F  UNRUN=$U"
+NGATES=$(ls corpus/check_*.py | wc -l | tr -d ' ')
+echo "  sweeping $NGATES gates   [NODE=$NODE, timeout=${GATE_TIMEOUT}s]"
+IFS='|' read -r P F FAILED U NOTRUN RAN MISSING <<< "$(run_sweep)"
+echo "  HERE:  PASS=$P  FAIL=$F  UNRUN=$U   (ran $RAN of $NGATES; $((P+F+U)) accounted for)"
+ROSTER_OK=1
+if [ "$RAN" -ne "$NGATES" ] || [ $((P + F + U)) -ne "$NGATES" ] || [ -n "${MISSING// /}" ]; then
+  ROSTER_OK=0
+  echo "  ⛔ ROSTER MISMATCH -- THIS SWEEP IS NOT A RESULT.  It named $NGATES gates, ran $RAN,"
+  echo "     and accounted for $((P+F+U)).  A count is not a roster (r7341, from cc66's truncated run)."
+  [ -n "${MISSING// /}" ] && echo "     never ran:$MISSING"
+fi
 for n in $FAILED; do echo "      [FAIL]  $n"; done
 for n in $NOTRUN; do echo "      [UNRUN] $n"; done
 
@@ -95,7 +126,7 @@ if [ "${1:-}" = "--baseline" ] && [ -n "${2:-}" ]; then
   git clone -q . "$tmp/base" 2>/dev/null && (cd "$tmp/base" && git checkout -q "$ref" 2>/dev/null)
   if [ -d "$tmp/base/corpus" ]; then
     pushd "$tmp/base" >/dev/null
-    IFS='|' read -r BP BF BFAILED BU BNOTRUN <<< "$(run_sweep)"
+    IFS='|' read -r BP BF BFAILED BU BNOTRUN BRAN BMISSING <<< "$(run_sweep)"
     popd >/dev/null
     echo
     echo "  BASE ($ref):  PASS=$BP  FAIL=$BF  UNRUN=$BU"
@@ -110,4 +141,6 @@ echo
 echo "  A gate failing here is not automatically this line's: check the delta, not the count."
 echo "  ⛔ And UNRUN is not a pass: check_compile without pdflatex is a question NOT ASKED,"
 echo "     and with the toolchain present it FAILS on main.  Install TeX or say unmeasured."
-[ "$F" -eq 0 ]
+echo "  ⛔ AND A TALLY THAT CANNOT BE RECONCILED IS NOT A RESULT: this sweep asserts its own"
+echo "     roster, $NGATES results for $NGATES names, and goes red when they disagree."
+[ "$F" -eq 0 ] && [ "$ROSTER_OK" -eq 1 ]
