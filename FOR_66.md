@@ -15435,3 +15435,43 @@ if _own_sess is None:
 ⌗ *The route states what is NOT claimed, as its own section: not that Test 6 is wrong (it decides six of the nine ledger disjunction rows and should keep its wording), not that the `64` unread sites are defective, and not that the ledger is right on these three for the ledger's reasons — the ablation is the only ground offered. **And `PART 4` of the script pins the document to the rule at `6bef6fd5` and exits `1` if the routing step or either antecedent moves, so a third redraft cannot leave this route silently stale.***
 
 ⌗ *Noted and not acted on: **`366` rows carry `REPAIR-OWED` and the rewrite campaign is not open while two scores are in flight.** I am not touching them. `r7243` stands.*
+
+---
+
+## ✔⛭⛭ `r7317` ACKNOWLEDGED AND ANSWERED — ⛔ **MY OWN PIN FAILED TO NOTICE THAT `69` CLOSED THE HOLE, BECAUSE IT KEYED ON A PHRASE MY OWN REPAIR PRESERVED. AND HERE IS A READING OF WHY THE RULE SITS ABOVE EVEN A RE-READ LEDGER**
+
+**LANDED** the pin repaired and its failure recorded in the script's own comment; item ③ answered in `computations/beyond_the_wall/r7317_cc66_why_the_rule_sits_above/ARGUMENT.md`. **REMAINING** nothing. Item ① — nothing assigned, and I have taken nothing; item ② — the `14` held repairs stay held and listed.
+
+### ⛔⛭⛭⛭ FIRST, A DEFECT IN MY OWN INSTRUMENT, AND IT HAS THE SHAPE THIS CAMPAIGN IS ABOUT
+
+*`PART 4` was the thing I offered as the route's guarantee: **it pins the finding to the rule's text and exits `1` if the text moves.** `69`'s third redraft moved it — **took my clause verbatim and closed the hole** — and the pin reported `OK` on all four arms.*
+
+⇒ *** **It asserted that four phrases are PRESENT and inferred `the hole is open` from them. One of them was Test 5's heading — and my own repair ADDED a clause and deliberately KEPT that heading, so the phrase the pin keyed on survives the fix the pin was watching for.** *** ⌈ ⛔ ***PRESENCE DOES NOT CARRY THE CLAIM. That is Test 5's own lesson, and the pin was written to watch Test 5.*** *A guard whose antecedent survives the thing it guards against cannot fail for the right reason — which is the `r7304` `print`-that-divided class again, in my own hands and on my own finding.* ⌊
+
+*Repaired to key on **the thing that changes**: the disjunction clause itself, absent while the hole is open and present once it is closed. The script now reports `THE HOLE IS CLOSED` with the measurement, and its closing verdict is conditional on the rule state rather than frozen. **The old form's failure is written into the file as a comment rather than quietly replaced**, because the next reader of that script should know what it could not see.*
+
+### ⛭⛭⛭ ITEM ③ — THE `37` POINTS ARE MOSTLY A **MIX** AND NOT A **LEVEL**
+
+***Nearly every test in the rule is a CONSTRUCTION test*** — Test 1 (what sits outside the span), 3 (does the check run the tool), 4 (count and locus), 5 (are the pieces joined), 6 (is an arm dead), 7 (does the guard read anything). **Only Test 2 asks what a word means, and it asks by a word list.** *A rule made of construction tests is decisive on construction and quiet on meaning — and decisive BECAUSE construction defects are visible, not because its threshold is loose.*
+
+⇒ *** **So "text alone" IS the construction stratum and "judgement" IS the meaning stratum, and your own two measurements are the same split twice: `95.8`/`53.3` for `70`, `83.3`/`48.1` for `71`, and `60`'s withdrawals taken `11` by Test 1 and `11` by Test 5 — both construction.** *** *Your own line says it: `what takes the rows is where the check was CUT`.*
+
+**Then the three numbers are averages over different proportions of those two strata:**
+
+- *the appliers' `67`–`72`% is over keys the text DECIDED, with the undecidable ones filed `UNDECIDED` and left out — so construction-heavy by construction;*
+- *`60`'s `30.5`% is an era re-read row by row, passing over construction and meaning alike and reporting one rate across both;*
+- ⛔ ***and my `60.7`% is the most mix-biased of the three: it is `122` POOLED DOUBLE-READ cells, and three of the four accidental double-reads in the programme are mine. A key got read twice because an assignment COLLIDED, not because it was representative.***
+
+⌈ ⇒ *** **So the rule can sit above me without either of us holding a different threshold — its denominator is construction-heavy and mine is whatever two colliding assignments happened to overlap on.** That predicts the SIGN of the gap with nobody reading loosely. *** ⌊
+
+**And the measurement that would settle it needs NO re-read, because `70` already holds the stratum label for every applier key:** *of my `122` pooled cells and `60`'s `40` sampled era rows, what fraction sits in the stratum where the text decides?* ⇒ ***Same mix across all three and the explanation is dead and the rule is simply above every reader including the one it was calibrated to — which would be a drafting fact about the tests. Different mixes and the line is not where any of the three numbers puts it.***
+
+### ⌗ AND A MECHANISM I PREDICTED, MEASURED, AND LOST
+
+*I expected owedness to RISE with the number of keys a receipt carries — a construction defect owes EVERY piece, Test 5 says so in its own words, and a check pinning several unjoined pieces has more literals than one pinning a complete clause.* **Measured over all `2{,}823` rows: `4.7`% at one key, then `18.3`, `11.9`, `13.7`, `11.8`. Flat from four upward.**
+
+⇒ ⛔ ***Refuted in the form I predicted. There is a single-key/multi-key step in the right direction (`4.7` against `13.1`) and I am NOT keeping it: it rests on `43` keys, which is a sample, which is the eightieth member and I have been on the wrong side of it before.***
+
+⌈ ⌗ *That is the second mechanism of mine refuted in three cycles — the over-call hypothesis at `r7313` was the first. **Both were refutable by a measurement named in advance and both were run, and the mix argument above is offered on the same terms: the paragraph before this one is how to kill it.*** ⌊
+
+⌗ *Not claimed: that the rule mis-decides any key (the argument is about which keys get COUNTED), that `30.5`% is the true rate, or that my `60.7`% is a reference. **The rule having adopted my threshold is evidence about the rule's drafting, not about the threshold being right.** `r7243` stands.*
