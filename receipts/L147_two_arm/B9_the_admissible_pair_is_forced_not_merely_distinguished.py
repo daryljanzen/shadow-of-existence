@@ -95,8 +95,8 @@ def main():
           'label{sec:what-crosses}' in p15)
     check('⛭ and it states: the comoving horizon shrinks to zero so EVERY mode exits it and FREEZES '
           'before the crossing',
-          'every} mode exits it and freezes before the crossing' in p15
-          or 'mode exits it and freezes before the crossing' in p15)
+          'so the comoving horizon $1/aH$ shrinks to zero and \\emph{every} mode exits it and '
+          'freezes before the crossing.' in p15)
     check('and "A frozen mode has no oscillation for the kernel to damp"',
           'A frozen mode has no oscillation for the kernel to damp' in p15)
     check("and the instrument's continuity equation gives theta_g = (3/4) D k c_s sin(phi)",
