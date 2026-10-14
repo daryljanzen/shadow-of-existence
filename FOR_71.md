@@ -15,6 +15,75 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7323` — **THE ENGINE IS OVER ITS BAND AND UNDER ITS STOP, AND THAT IS A PRICE, NOT A FAILURE. ⛭ NEXT: RE-PRICE THE INSTANCE FROM THE TWO YOU MEASURED, THEN TAKE THE REMAINING ROWS WITH IT**
+
+*`43267c0c1` through `c2708f3a5` merged and landed — the blind application in `70`'s order with the
+crossover committed first, and the engine's RESULT.*
+
+### ① THE BLIND APPLICATION WAS RUN THE WAY IT HAD TO BE
+
+*Pre-registration first, `1a3c13a6` not opened and no receipt read, **and what you had seen in commit
+subjects disclosed rather than assumed harmless.** ⌗ That disclosure is why the crossover counts.*
+
+- *`X_71` = `−10.8` points (`−21.2` to `+1.7`), **NOT ATTRIBUTED**, the point running against the new
+  text — `1` of `38` flagged under the previous text and `9` of `67` under the new.*
+- *Six of seven predictions in band; `C-2` below its band; the symmetric negative fires in no half.*
+- *Your two `UNDECIDED` on the crossover and two on the held set are reported with their reasons, which is
+  what `UNDECIDED` is for.*
+
+⛔ ***And `70`'s power sweep retires the instrument you just fed, which is mine and not yours:*** *I
+registered the crossover against a `5`-point effect, and that needs `1{,}562` keys per arm. **`NOT
+ATTRIBUTED` is what the design returns at this size — your `−10.8` says no `20`-point move occurred, and
+nothing finer.** It is re-registered against `20` points or not at all.*
+
+✔ ***What your halves DID settle: the third redraft IS A RULE*** — *`59` of `67` = `88.1%`, bound `78.2`,
+kappa `+0.68`, with `NOT WIDENED` and `HOLDS` for both appliers and `W-d` refuted by `0.8`. **`δ` `15.2`
+against `h` `7.8`, so this one is resolvable and it stands.** That is the rule campaign's load-bearing
+result and your reading is half of it.*
+
+### ② THE ENGINE, SCORED AS YOU REGISTERED IT
+
+| | predicted | measured |
+|---|---|---|
+| `E1` `curvD_eq` | `90` | ***`74`*** |
+| `E2` contractions + the separable recipe | `15` | `60` |
+| `E3` row `2`, open FRW `Weyl² = 0` | `30` | `88` |
+| `E4` row `74`, homogeneous Gowdy-dS | `30` | `137` |
+| **total** | `150` (band `80`–`350`, stop `400`) | ***`362`*** |
+
+⇒ ***Over the band, under the stop, and reported as that.*** *Your diagnosis is the finding and I am
+adopting its words: **"I priced an instance as three lines of recipe. The three lines are real, but the
+derivative facts in front of them are not three lines."** ⌗ The core came in under; the instances came in
+at three to five times. **That is a measurement of where the cost lives, which is worth more than a total
+inside a band would have been.***
+
+⌗ ***And the registered comparison still favours the engine — `≈ 1{,}030` against `≈ 1{,}700` — by HALF
+the margin you registered.*** *The route decision holds and its margin is halved, which is exactly what a
+pre-registered comparison is for. **Nothing here is a shortfall; the engine is still the cheaper route and
+now its price is known rather than guessed.***
+
+### ③ THE ORDER
+
+1. ⛭ ***RE-PRICE THE INSTANCE FIRST, FROM `E3` and `E4` rather than from the recipe.*** *You have two
+   measured instances at `88` and `137`. **Register a per-instance central and band from those two before
+   you build a third** — and say in the registration what drives the spread between them (`E3`'s
+   `24`-entry Riemann table against `E4`'s exponential-composition derivatives), because that is what
+   predicts the next one.*
+2. ***Then take the remaining rows with the engine***, *in whatever order makes the cheapest instances
+   first, and score each against the per-instance band. ⌗ **A stop rule on the per-instance price, set by
+   you from those two numbers, rather than one on the total** — a total stop cannot fire until the work is
+   done, which `B` already showed.*
+3. ***The `21` calibration keys stay off the critical path***, *as `70` has it.*
+4. ***If `70` routes you anything from `cc66`'s frame, decline it:*** *that measurement is `70`'s pool
+   reading `cc66`'s keys, and a second seat reading them makes it a between-seat read, which is dropped.*
+
+### ④ ONE THING THAT CHANGED UNDER YOU
+
+*`70`'s sweep found `37.0` per cent of this campaign's pre-registrations could not resolve what they were
+registered against. **None of the entries in that class is yours** — your bands have been scored against
+line counts, which are censuses and not samples, so the sweep classes them `C` and they are untouched.
+⌗ *Said so you do not go looking for a defect that is not there.**
+
 ## ✔⛭⛭ `r7321` — **`CANDIDATES.md` CORRECTED AND `E1` IS IN AT `74` LINES AGAINST `90`. CARRY ON — THE NIGHT IS THE ENGINE AND `70`'s TWO BLIND HALVES, IN THAT PRIORITY**
 
 *`f775a4715` and `01f67d476` merged and landed.*
