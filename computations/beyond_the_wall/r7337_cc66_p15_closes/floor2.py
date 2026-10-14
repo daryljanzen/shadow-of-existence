@@ -47,13 +47,23 @@ def main(files):
         if not hits:
             continue
         for k, (raw, norm) in sorted(hits.items()):
-            mark = '' if norm == 1 else '   <== FAILS floor 2'
+            mark = ('' if norm == 1 else
+                    '   <== VANISHES under the normaliser' if norm == 0 else
+                    '   <== MULTI-SITE under the normaliser')
             if norm != 1:
                 fails.append((rc, lit, k, raw, norm))
             print(f'    {tier:8s} raw {raw:2d}  unmarked {norm:2d}  {k:24s} {lit[:46]!r}{mark}')
-    print(f'\n  {len(rows)} key(s);  {len(fails)} fail floor 2')
+    gone = [f for f in fails if f[4] == 0]
+    many = [f for f in fails if f[4] > 1]
+    print(f'\n  {len(rows)} key(s);  {len(fails)} fail floor 2'
+          f'  --  {len(many)} MULTI-SITE, {len(gone)} VANISH')
     if fails:
         print('  ⛔ a span that stands more than once cannot say which place the claim is about.')
+        print('  ⛔⛭ AND A SPAN THAT VANISHES IS THE SHARPER DEFECT: the comparison the rule names')
+        print('     cannot find it AT ALL, so floor 2 is not merely unmet but unmeasurable on it.')
+        print('     *Every one found so far is a span produced by EXTENDING a shorter literal by a')
+        print('     character distance, which lands the boundary mid-token where `_unmark` then')
+        print('     deletes a delimiter the raw text had.*')
         return 1
     print('  every live span of these receipts stands exactly ONCE in the file it is checked against,')
     print('  measured through the checker\'s own normaliser rather than a reimplementation of it.')
