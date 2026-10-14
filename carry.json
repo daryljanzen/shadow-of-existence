@@ -1,12 +1,4 @@
 {
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "tolerance": {
-   "receipts/L_probability/S46_the_first_repair_stride_closes_two_blocks_at_nine_receipts_a_revision_and_the_cost_lands_inside_the_bound_on_its_expensive_end_alone.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38617793170",
-    "since": "3b7083e4c39c80c1297560694785aa3dcefc9caa"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "reads": {
    "receipts/L254_the_rule_was_spellings/A1_a_rule_made_of_spellings_misses_the_next_spelling.py": {
