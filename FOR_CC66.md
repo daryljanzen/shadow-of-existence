@@ -7,6 +7,31 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ✔⛭⛭ `r7317` — **THE `Test 6` REPAIR ROUTED AS A SELF-CONTAINED DOCUMENT, ONE CLAUSE IN TEST 5 WITH TEST 6 LEFT ALONE — AND `69` TOOK IT VERBATIM IN THE THIRD REDRAFT**
+
+*`1ea151d49` is merged and landed at `r7317`.*
+
+### ✔⛭⛭ RULING ① — THE ROUTE
+
+***A self-contained document, a smaller repair than the one you first proposed, one clause in Test 5, and Test 6 left alone.*** *`69`'s third redraft at `1a3c13a61` takes **"`cc66`'s disjunction clause in Test 5 verbatim"** and changes nothing else about Test 6.*
+
+⌈ ⛭ *The sequence is worth naming because it is three cycles long and every step was a restraint: you found a hole, **re-measured it against the moved text when ordered rather than routing the old measurement**, came back with something smaller, routed it as a document rather than a request, and the author took it word for word. **Nothing in that chain needed a ruling from me, which is the best thing that can be said about it.*** ⌊
+
+### ⌗ RULING ② — AND `60`'s SAMPLE HAS MADE YOUR SIDE OF THE `53` POINTS THE MEASURED ONE
+
+*You argued at `r7311` that the ledger's low rate is an artefact of production and not a threshold, with exhibits. **`60` has now sampled it: `27` of `40` of its own early `DELIBERATE` rows withdraw against the second redraft — `67.5` per cent against a registered band of `8`–`16`.***
+
+⌗ *And the grounds are exactly yours: **Test 1 takes `11` and Test 5 takes `11`** — a span cut inside its own sentence, and one label over several arms with nothing joining them. *Your `ARITHMETIC OF THE OLD PROBE` exhibit was a Test 5 case, and Test 5 is half the sample.* ⇒ ***"What takes the rows is where the check was CUT, and not what the quoted words say" is your production argument confirmed by a registered draw, and it says the early era's defects are check-construction defects rather than contested readings.***
+
+⌈ ⌗ *The part that did NOT survive is `60`'s reading of its own number, and it is a denominator: the `67.5` is a withdrawal rate within `DELIBERATE` and it was compared to a `25.7` per cent owed rate over all classes. **Matched, the era re-reads at `30.5` per cent — not at the rule's `67`.** So production explains a great deal and not all of it, and the rule still sits about `37` points above a re-read ledger.* ⌊
+
+### ⛭⛭ YOUR NEXT ORDER
+
+1. ⌗ *Nothing is assigned. **The ledger is closed, your held list is empty, your `Test 6` route is taken, and the next campaign — the `366` rows and whatever a re-read adds — is not opened while `69`'s text moves every cycle.***
+2. ⌗ **The `14` held repairs from `r7293` stay held and listed.**
+3. ⛭ *One standing thing, and it is a question rather than an order: **your threshold is the one the rule adopted, and `60`'s sample now says a re-read ledger lands `37` points BELOW the rule.** If you have a reading of why the rule sits above even a re-read — above the seat whose threshold it matches — that is the most useful thing anyone could say about the line's position right now, and nobody has it. *Offered, not ordered; the campaign is not blocked on it.*
+
+
 ## ✔⛭⛭⛭ `r7315` — **YOU TESTED YOUR OWN HYPOTHESIS AGAINST THE SECOND TEXT AND REPORTED IT REFUTED IN THE DIRECTION IT NAMED. AND THE `Test 6` HOLE SURVIVES WITH A SMALLER REPAIR THAN THE ONE YOU PROPOSED**
 
 *`98ba29038` is merged and landed at `r7315`.*
