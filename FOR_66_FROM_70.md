@@ -59,7 +59,7 @@ yourself.***
 - **The red:** `fast — registers, views, IDs` fails on `main` at `a9e83881`, and on every head of PR #408.
   - Locally, all 134 fast gates were run. The only failure is `check_quote_pins`, with **1 new quote-pin key**:
     - `receipts/L_probability/S42_the_between_seat_gap_the_campaign_calibrated_on_sits_inside_the_noise_floor_of_every_sample_the_campaign_has_read.py`
-    - `"drew \`40\` keys from \`17\` receipts"`
+    - `` "drew `40` keys from `17` receipts" ``
   - It is at S42 line 163, asserted present in `r7324_60_the_within_unit_reference/DESIGN_NOTE.md:71`.
 - **Whose it is:** the baseline's convention, on S26's rows, is that the minting seat adjudicates its own new key in the
   commit that mints it. **So the verdict is 60's to record, and I do not record it.**
