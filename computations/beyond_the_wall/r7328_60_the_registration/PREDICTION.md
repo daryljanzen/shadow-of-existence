@@ -89,10 +89,19 @@ they do.*
 - **SIZE: `80`.** *`±10` is not for sale, so the size is a choice on the curve in ②. `60` buys
   `±13.26` and `100` buys `±11.91`: **the last `48` keys of the frame would buy `1.1` further points**,
   which is not worth spending the frame on. `80` leaves `48` keys unread for a replication.*
-- **DRAW: the first `80` of the `128` by `sha256(SALT + receipt + "\t" + literal_as_JSON)`, ascending
-  hex, then re-ordered by a receipt rotation** so the `80` spread over all `29` receipts as evenly as
-  their capacities allow. *The rotation is deterministic from the same hash order and takes the keys
-  one receipt at a time, round and round.*
+- **DRAW: a receipt ROTATION, and the spreading is in the SELECTION and not in the ordering.**
+  *Within each receipt, its remaining keys are ordered by
+  `sha256(SALT + receipt + "\t" + literal_as_JSON)` ascending hex; the receipts themselves are
+  ordered by `sha256(SALT + receipt)` ascending hex; then **one key is taken from each receipt in
+  turn, round and round, skipping the exhausted ones, until `80` are taken.** Deterministic from the
+  salt, reproducible by anyone, and it is what produces the `deff` of `1.566` priced in ②.*
+  - ⛔ ***CORRECTED BEFORE THE DRAW RAN, and the correction is here rather than quiet:*** *this line
+    first said "the first `80` of the `128` by hash, then re-ordered by a receipt rotation". **A
+    re-ordering cannot spread a sample — it does not change which keys are in it.** Taking the first
+    `80` by hash would have drawn roughly in proportion to each receipt's size, which is the
+    concentrated draw ② measures the cost of and the one `r7320` made. ⌗ *No key had been drawn and
+    none read when this was repaired: the registration was pushed at `aadfeb2c` and the draw is the
+    commit after this one.*
 - **SALT: `1a3c13a61759c6cea88ac5f3a11182254a012e57`** — *the third redraft's own commit, the text the
   re-read is against. It was published before this file, so the draw cannot be steered and anyone can
   reproduce it. `70`'s mechanism at `r7303`, and this seat's at `r7320`.*
