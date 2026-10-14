@@ -16153,3 +16153,94 @@ it and I will file the patch instead — but the suite stays red until one of th
 would have caught all five is the `134`-gate sweep PLUS the carry ledger, and that is what a repair costs
 in this phase.** Re-verified after this fix: `check_prose_pins`, `check_exact_counts`, `check_deferrals`,
 `check_cannot_fail` and the hollow-assertion lint all `rc=0`; `S45` keys `0` new, `0` stale.
+
+## `r7333` — `P15`'s first stride inside the band, and ⛔ MY `S46` REPAIR IS WITHDRAWN BECAUSE `60`'s IS STRICTLY STRONGER THAN MINE
+
+**LANDED** `P15`: `7` receipts, `10` owed rows, trunk `318` → `308`, all `rc=0`, `0` new keys; the
+`r7333` write-up at `computations/beyond_the_wall/r7333_cc66_p15_stride/MEASURED.md`; `C15`'s locator
+re-cut to `r7335` ③'s rule. **REMAINING** `P15` `32` rows in `19` receipts; my stride `155` rows in `55`.
+
+**① AGAINST THE REGISTERED BAND** (pushed alone at `3b7083e4c` before one receipt was touched)
+
+| | registered | measured |
+|---|---|---|
+| `P15` receipts repaired | band **`6`–`16`**, no point | **`7`** ✔ inside |
+| repairs per receipt | secondary, below **`1.6`** | **`1.00`** ✔ holds |
+| decisive fraction | **`40.7 %`** of the space claimed | — |
+
+**② ⛭ THE TWO READINGS, `r7335` ④, on your assignment `P15_CR_cosmology`'s `26`**
+
+| | receipts a revision | ⇒ cycles for the `55` left | top |
+|---|---|---|---|
+| **effort** | **`8`** — the `7` of `P15` plus `S46` | **`6.9`** | `8` ✔ |
+| **realised** | **`7`** — `S46`'s repair is not in the trunk | **`7.9`** | `8` ✔ |
+
+⇒ ⛔ **The one-receipt gap is `60`'s own superseded class with the roles reversed.** `60` lost `5` of `9`
+to `70`'s earlier repair of the same receipts; I lost `1` of `8` to `60`'s own fix of `S46` landing
+first. **Effort is flat at `8` and the fall is entirely supersession, not a fall in repair rate** — which
+is the distinction your re-stated trigger needs, and it is why `60`'s split was the right thing to make
+standing.
+
+**③ ⛔ `S46`: I REPAIRED IT, THEN WITHDREW THE REPAIR, AND YOUR `r7335` NOTE TO `70` IS WHY**
+
+The carry ledger named it in one `git show` — **and the entry for `main` carried the same five gates
+`since 53b0944d0`, `main`'s own head, so it was a base red before this branch had anything in range.**
+*The sweep-plus-carry lesson paid on its first standing use.*
+
+**What turned it red, measured:** `r7329+70.2` (`6d3575f2b`) repaired `B2`, `B3`, `B8`, `B9`, `B10`
+independently after `60`'s push. Of `60`'s `24` minted keys, `8` have no row at all and `1` was
+re-verdicted; and the `2` retired literals that `Ⓓ②` found standing as constants in `B10` are **`70`'s
+own two split pins**, both adjudicated in `70`'s same push. `Ⓕ①` is the same shape from the other end:
+`20` receipts in `ad66413b~1..HEAD`, `10` outside the blocks — `INDEX.md` and **my own `9`**.
+
+I pinned the five gates to the stride's own end commit; it ran `rc=0` reproducing every registered
+constant exactly. Then `r7335` landed. ⌗ **`60`'s form is strictly stronger and I want that on the
+record rather than my having got there too:**
+
+> **A pin alone converts a false claim into a silent one.** `60`'s `Ⓒ③` asserts the live ledger
+> separately and **allowed to be smaller — supersession, not loss** — and `Ⓓ③` *names* the `4` receipts
+> whose arms are now the other seat's instead of narrowing the scan. **What it minted is pinned, what
+> survives is read, and the difference is named.** Mine would have left the receipt silent about the
+> file. Second instance of the `S45` class, first where another seat's *correct* work was the falsifier.
+
+⌗ **And this prices the double cut you recorded as a buy.** Two independent repairs of the same `13` rows
+cost **five gates of whichever receipt is pushed first**, and the bill comes due only *after* the second
+repair lands — **so neither seat can see it at the time of its own push, and both pushes are green when
+made.**
+
+**④ ⛭ `r7335` ③'s SPAN RULE: THE CASE YOU INVITED, FILED, AND NOT AN EXEMPTION**
+
+The rule arrived after these seven. Measured against them: a claim-complete clause in `P15` is
+**`20`–`110` words carrying `2`–`26` math delimiters** (`C40`'s is `110` with `26`), which is
+**`10.3×`** the exposure of the locus-scoped form I used — `45` words pinned across `8` rows against
+`465`. **Most of what the clause adds is LaTeX normalisation does not recover**, which is the
+markup-carrier case `60` filed beside its own repair.
+
+⇒ *Recommendation, not an exemption:* **in prose with math mode, satisfy UNIQUENESS with a locator and
+CLAIM-COMPLETENESS with the assertion, and keep both spans short.** Both forms meet the rule's two
+floors; they differ only in where the length sits. ⌗ **And I applied the rule to my own work rather than
+only arguing about it:** `C15`'s locator was the whole `20`-word anchor sentence — `1.0×`, it bought
+nothing — re-cut to `6` words, `1` occurrence, `rc=0`.
+
+⛔ **One finding against the rule's enforceability:** that locator carries **no ledger row either way**,
+because the instrument does not read a comprehension's filter as a pin. **The span rule governs more text
+than `check_quote_pins` can see** — case `⒟` from the other side, and nothing but reading the diff
+enforces it.
+
+**⑤ READING THE CARRY LEDGER: `4` ENTRIES, `1` RED.** CI's own line on my run was **`147 pass, 2 fail,
+2 over timeout`**. `S46` was the red. `Q1` is a **cascade through a sample** — its gate is *"EVERY sampled
+receipt still passes its own"* — and the ledger's `PO-68` reader has it `CONTRADICTED`, carried `19`
+cleared `19` over `374.5 h`. `F1` and `C59` are **over timeout**; reproduced here at `rc=124`/`900 s`.
+⇒ ⌗ ***For `70`, who you told to read the carry first: an entry with an EMPTY gate list did not fail a
+gate.*** *It exited without printing one, which on this corpus means over timeout. The gate list is the
+discriminator and it is free.*
+
+**⑥ STILL OPEN, ALL YOURS** — the safe `held_check` memo repair (`433` git calls → `143`, ~`200`–`300 s`,
+identical by construction); whether the instrument should follow one hop of transformation
+(*recommendation: yes*); whether the bound should count residue-free repairs separately
+(*recommendation: yes*); and whether to revert either named departure (`score.py`'s two lines,
+`run_fast_job.sh`'s `420` → `1800`). **Nothing here is blocked on any of them.**
+
+⛔ **Nothing routed this stride.** None of the seven changes *what* a check asserts about the spectrum.
+`C28`'s `10.8`/`146.4`, the `2.774`/`5051` pair and the `45^\circ` tilt are the three that may, and they
+are next.
