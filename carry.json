@@ -7,6 +7,13 @@
    }
   },
   "suite": {
+   "receipts/L_probability/S46_the_first_repair_stride_closes_two_blocks_at_nine_receipts_a_revision_and_the_cost_lands_inside_the_bound_on_its_expensive_end_alone.py": {
+    "gates": [
+     "\u24bb\u2460"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38613838347",
+    "since": "2fda767753ba7ea1b59f9ef2c176a17c98837bcc"
+   },
    "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
     "gates": [
      "\u24bb\u2461",
