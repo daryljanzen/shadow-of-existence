@@ -3252,6 +3252,53 @@ theorem ds_tt_mode {H k η : ℝ} (hH : H ≠ 0) (hk : k ≠ 0) (hη : η ≠ 0)
 
 end SweepB13
 
+/-! ## `r7315`, B14 — receipt 76: the Mukhanov variable. For THE connection on `a(η)²(−dη² + dx²)`, the field mode
+`φ = h(η) cos kx` has `(□ − m²)φ = −a⁻³ (W″ + (k² + m²a² − a″/a) W) cos kx` with `W = a h`; on de Sitter
+`a = −1/(Hη)`, `a″/a = 2/η²`, so the massless mode obeys `W″ + (k² − 2/η²) W = 0` -/
+
+section SweepB14
+
+variable {a h : ℝ → ℝ} (ha : ∀ s, a s ≠ 0) (has : ContDiff ℝ ∞ a) (hhs : ContDiff ℝ ∞ h)
+include ha has hhs
+
+/-- **B14, receipt 76.** -/
+theorem mukhanov (k m : ℝ) (p : Fin 4 → ℝ) :
+    boxD (ndOf (diag4 (cConf a)) (diag4_symm _) (fun p u h => diag4_nondeg (fun i => cConf_ne ha i p) u h)
+      ((diag4_smooth (cConf_smooth has)).differentiable (by simp))) (cConf a) (fun y => h (y 0) * Real.cos (k * y 1)) p
+      - m ^ 2 * (h (p 0) * Real.cos (k * p 1))
+      = -(a (p 0) ^ 3)⁻¹ * (deriv (deriv fun s => a s * h s) (p 0)
+          + (k ^ 2 + m ^ 2 * a (p 0) ^ 2 - deriv (deriv a) (p 0) / a (p 0)) * (a (p 0) * h (p 0)))
+        * Real.cos (k * p 1) := by
+  have D : ∀ {f : ℝ → ℝ}, ContDiff ℝ ∞ f → ∀ s, HasDerivAt f (deriv f s) s ∧ HasDerivAt (deriv f) (deriv (deriv f) s) s :=
+    fun hf s => ⟨((contDiff_infty_iff_deriv.1 hf).1 s).hasDerivAt,
+      (((contDiff_infty_iff_deriv.1 hf).2.differentiable (by simp)) s).hasDerivAt⟩
+  have d1 : deriv (fun s => a s * h s) = fun s => deriv a s * h s + a s * deriv h s :=
+    funext fun s => ((D has s).1.mul (D hhs s).1).deriv
+  have d2 : deriv (fun s => deriv a s * h s + a s * deriv h s) (p 0) = deriv (deriv a) (p 0) * h (p 0)
+      + deriv a (p 0) * deriv h (p 0) + (deriv a (p 0) * deriv h (p 0) + a (p 0) * deriv (deriv h) (p 0)) :=
+    (HasDerivAt.add ((D has (p 0)).2.mul (D hhs (p 0)).1) ((D has (p 0)).1.mul (D hhs (p 0)).2)).deriv
+  rw [conf_box ha has hhs, d1, d2]
+  have := ha (p 0)
+  field_simp; ring
+
+omit has hhs ha
+
+open Filter Topology in
+/-- On de Sitter, `a = −1/(Hη)`: `a″/a = 2/η²`. -/
+lemma ds_app {H η : ℝ} (hH : H ≠ 0) (hη : η ≠ 0) (haη : a =ᶠ[𝓝 η] fun s => -(H * s)⁻¹) :
+    deriv (deriv a) η / a η = 2 / η ^ 2 := by
+  have hd : ∀ s ≠ 0, HasDerivAt (fun s => -(H * s)⁻¹) ((H * s ^ 2)⁻¹) s := fun s hs =>
+    (((hasDerivAt_id s).const_mul H).inv (mul_ne_zero hH hs)).neg.congr_deriv (by simp only [id_eq]; field_simp)
+  have e1 : deriv a =ᶠ[𝓝 η] fun s => (H * s ^ 2)⁻¹ :=
+    haη.deriv.trans ((eventually_ne_nhds hη).mono fun s hs => (hd s hs).deriv)
+  have h2 : HasDerivAt (fun s => (H * s ^ 2)⁻¹) (-(H * (2 * η)) / (H * η ^ 2) ^ 2) η := by
+    have := ((hasDerivAt_pow 2 η).const_mul H).inv (mul_ne_zero hH (pow_ne_zero 2 hη))
+    convert this using 1; simp
+  rw [e1.deriv_eq, h2.deriv, haη.eq_of_nhds]
+  field_simp
+
+end SweepB14
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -3360,3 +3407,5 @@ end ShadowProbe
 #print axioms ShadowProbe.lcGam_diag4
 #print axioms ShadowProbe.conf_box
 #print axioms ShadowProbe.ds_tt_mode
+#print axioms ShadowProbe.mukhanov
+#print axioms ShadowProbe.ds_app
