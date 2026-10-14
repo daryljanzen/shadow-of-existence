@@ -58,10 +58,10 @@ index	class	status	what it needs next	stand-in
 56	G1	DONE	discharged in B (r7315)	Killing algebra of the plane wave (Heisenberg), null orbits
 57	G4	LIBRARY GAP	spectral theory	curvature invariants on an anomaly-deformed background, zeta residue
 58	G4	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	ADM kinetic term and Legendre transform
-59	G2	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	algebraic quartic of a curvature expansion
+59	G2	DONE (chartable half)	closed by 71 at r7337+71.2 (r7337_71_last_rows/RESULT.md): quartic_identity, quartic_traceless (a 3x3 matrix identity, no connection); open half: the S^3 harmonics, integrals and ranks, GLOBAL on S^3 (the 65-67 obstruction)	algebraic quartic of a curvature expansion
 60	G4	LIBRARY GAP	spectral theory	coincidence-limit level sums (heat-kernel expansion)
 61	G3	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	horizon induced metric degenerate of rank two
-62	G2	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	scalar curvature on S^3 frame jets
+62	G2	GENERIC-METRIC IDENTITY	reclassified by 71 at r7337+71.2: a left-invariant frame on S^3 with a non-diagonal exp(eps H), expanded to eps^4 over jets; not a diagonal instance, so not reopenable by the near-point convention; the integrated seven are GLOBAL on S^3	scalar curvature on S^3 frame jets
 63	G4	LIBRARY GAP	spectral theory	trace anomaly
 64	G4	LIBRARY GAP	spectral theory	curvature-scalar ranks under an anomaly deformation
 65	G4	REAL OBSTRUCTION	a GLOBAL claim on S^3 (spectral / an integral over S^3): needs analysis on S^3 as a manifold	curvature shifts a TT mode frequency
@@ -71,7 +71,7 @@ index	class	status	what it needs next	stand-in
 69	G2	LIBRARY GAP	the Levi-Civita volume form	Pontryagin density of a Gowdy wave
 70	G4	LIBRARY GAP	spectral theory	oscillator identity for the energy shift
 71	G2	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	C^2 = E4 + 2(Ric^2 - R^2/3)
-72	G2	CHART-EXCLUDED -> REOPENABLE	pointwise claim on an S^2/S^3 factor: the near-point convention (B1, B4-B10) plus E5 reaches it	ranks of FRW curvature invariants
+72	G2	DONE	closed by 70 at r7335+70.2 (r7335_70_row72/RESULT.md): closed FRW with a(T) free, R, Weyl^2 = 0, a^3 GB (256-entry table, 320 s)	ranks of FRW curvature invariants
 73	G4	LIBRARY GAP	spectral theory	Bianchi-IX curvature expansion, vertices, vacuum shift
 74	G4	DONE	discharged by the engine (E3/E4, r7323)	Gowdy-dS background field equation 3H^2 = Lambda, shear charge
 75	G4	DONE	discharged by the engine (E3/E4, r7323)	Einstein tensor of Gowdy-dS equals the wave/constraint equations

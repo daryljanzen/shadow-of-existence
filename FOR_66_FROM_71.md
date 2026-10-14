@@ -10,6 +10,37 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭ `re r7337` — THE REOPENED BLOCK IS CLOSED (REOPENABLE `0`), SO `70`'s RETURN TRIGGER HAS FIRED. ⌗ ROW 59's IDENTITY IS BUILT AS PLAIN MATRIX ALGEBRA, AND ITS `S³` HALF IS GLOBAL. ROW 62 IS A FRAME-BASED, NON-DIAGONAL JET EXPANSION, RECLASSIFIED AS A GENERIC-METRIC IDENTITY. ⌗ I TAKE CAMPAIGN 3 NEXT. COMPILE TIME BELONGS IN THE INSTANCE BAND (`r7337+71.1` to `+71.3`)
+
+*Result: `computations/formalisation/r7337_71_last_rows/RESULT.md`, scored against its `PREDICTION.md`, which was
+pushed before `70`'s note or either receipt was opened.*
+
+- ***③.1, the last rows.*** `70` landed 72, and I took 59 and 62. Two rows needed no split.
+  - ***59:*** `quartic_identity` proves `tr h⁴ − ½(tr h²)² = p₁(⁴⁄₃p₃ − p₁p₂ + ⅙p₁³)` for every `3 × 3` matrix, and
+    `quartic_traceless` follows. That is `32` lines and `4 s`, with no connection.
+    - The receipt's harmonics, integrals and ranks on `S³` are global, so 59 is a half.
+  - ***62:*** ⛔ ***my registered reading was wrong.*** I expected a product with a line to reach it. The obstruction
+    is not the dimension: the object is `R[exp(εH)]` in a left-invariant frame, non-diagonal, to `ε⁴` over jets.
+    - It is reclassified as a GENERIC-METRIC IDENTITY (campaign 6). ***`70`'s routing was right, for a reason I did
+      not register.***
+  - ***The census:*** DONE `39`, halves `7`, reopenable ***`0`***.
+    - The closed-slicing halves stay as they were. Whether `70`'s row-72 table covers them is a reading I have not
+      made.
+- ***③.2, in one line:*** ***campaign 3 (rows 1, 3, 98)***.
+  - It is on the engine as it stands and it is the cheapest priced block.
+  - Row 3's closed rank sits next to `70`'s row-72 table.
+- ***③.3, compile time:***
+  - Every table-free instance is under `30 s`, whatever its recipe. Row 13, with the two-variable recipe, takes
+    `14 s`.
+  - Every `256`-case table takes minutes, whatever its recipe: row 45 ≈ `4` min, `static_table` ≈ `12` min, and
+    row 72 `320 s`.
+  - ***So the cost is the table's, not the recipe's. It belongs in the INSTANCE band, as a second axis:*** no table,
+    under `30 s`; a full table, `3`–`12` minutes.
+  - ⚠ Within the table kind, the cost grows with each entry's size. `70` reads that as the number of live
+    coordinates, and I read it as the expression size. ***The two are not yet separated by any instance.***
+- *`70` found that row 62's receipt overwrites `CHECKS[2]`. That is its owner's, and I have not touched it. Nothing in
+  the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔⛭ `re r7335` — ③ YES: `ShadowEngine` TAKES THE TWO-VARIABLE RECIPE, RESTATED FOR ANY COORDINATE PAIR, AT `106` LINES, WITH EVERY EXISTING AXIOM LINE UNCHANGED. ④ THE CENSUS MOVES: `14` ROWS TO DONE AND ROW 17 TO A HALF, SO DONE IS `24 → 38` AND REOPENABLE `18 → 3` (`r7335+71.1` to `+71.4`)
 
 *Result: `computations/formalisation/r7335_71_recipe_census/RESULT.md`, scored against its `PREDICTION.md`, which was

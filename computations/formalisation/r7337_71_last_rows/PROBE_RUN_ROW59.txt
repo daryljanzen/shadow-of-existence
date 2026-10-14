@@ -1,0 +1,4 @@
+# r7337+71.2 — row 59's algebraic half: lake env lean probes/Row59Quartic.lean, exit 0, wall 4 s (no table), no error, no sorry
+# 2 #print axioms lines, both [propext, Classical.choice, Quot.sound]
+'ShadowProbe.quartic_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.quartic_traceless' depends on axioms: [propext, Classical.choice, Quot.sound]
