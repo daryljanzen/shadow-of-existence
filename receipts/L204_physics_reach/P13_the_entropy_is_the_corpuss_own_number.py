@@ -143,20 +143,31 @@ def main():
     #     the markup normaliser the gate layer itself compares with -- emphasis unwrapped, math
     #     delimiters dropped, `~` read as a space -- so a content-intact rewording no longer
     #     breaks it while a changed VALUE still does. ***  ONE site, raw and normalised alike.
-    def _unmark(s):
-        for _ in range(4):
-            s2 = re.sub(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}', r'\1', s)
-            if s2 == s:
-                break
-            s = s2
-        return re.sub(r'\s+', ' ', s.replace('$', '').replace('~', ' ')).strip()
+    # ⚠ ⛭⛭ AND A RULE CASE IS FILED HERE RATHER THAN WORKED AROUND, found by the ledger instrument
+    #   on this very repair.  *The gate layer's normaliser deletes the math delimiter `$` as well as
+    #   unwrapping emphasis, and `70`'s ruling pointed at that form.  ** Applied in a receipt's own
+    #   reader it makes the pin INVISIBLE to the ledger: the instrument keys a literal that is a
+    #   direct operand of an `in` test, so `normalise(literal) in normalise(paper)` mints no key and
+    #   the adjudication beside it describes nothing. **  Measured: both of this receipt's minted
+    #   rows came back STALE on the first run.*
+    #   ⇒ *** So the reader normalises the EMPHASIS FAMILY ONLY and the literal stays raw and
+    #     keyed, which covers the class that actually bit this row -- a markup rewording that keeps
+    #     the formula -- and leaves the `$`-rewording uncovered rather than covered invisibly. ***
+    #     ** Second rule case of this stride, and the same shape as the markdown one: the gate
+    #     layer's normaliser cannot be reached from inside a receipt without losing the key. **
+    _allp_e = allp
+    for _ in range(4):
+        _next = re.sub(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}', r'\1', _allp_e)
+        if _next == _allp_e:
+            break
+        _allp_e = _next
 
     _INPUT = ('The substrate curvature scale is the cosmological-constant scale: in Planck units '
               '$\\Lambda\\ell_P^2\\approx3\\times10^{-122}$')
     check('and states the input WITH the quantity it is of: "the substrate curvature scale is the '
           'cosmological-constant scale: in Planck units $\\Lambda\\ell_P^2\\approx3\\times10^{-122}$" '
           '-- asserted over a markup-normalised read, in place of the bare formula',
-          _unmark(_INPUT) in _unmark(allp))
+          _INPUT in _allp_e)
     check('and declares a Planck value NOT a physical scale but "what unit-counting yields when it has '
           'only gauges to count"',
           'what unit-counting yields when it has only gauges to count' in allp)

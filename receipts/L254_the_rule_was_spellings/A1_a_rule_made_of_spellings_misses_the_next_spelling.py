@@ -181,16 +181,39 @@ def main():
     #     rule's file must be present.  That is the LOAD itself, which a comment cannot satisfy and
     #     a private copy cannot fake. ***  The negative beside it is unchanged.
     def _loads_rule(src):
-        """does this source actually LOAD corpus/acting_check.py -- parsed, not grepped?"""
-        for _n in ast.walk(ast.parse(src)):
+        """does this source actually LOAD corpus/acting_check.py -- parsed, not grepped?
+
+        ⌗ *The path may be bound to a NAME first -- one of these two files does exactly that -- so
+        an argument that is a bare name is followed back to what it was assigned, which is the
+        difference between reading the LOAD and reading one spelling of it.*
+        """
+        _tree = ast.parse(src)
+        _bound = {}
+        for _n in ast.walk(_tree):
+            if isinstance(_n, ast.Assign):
+                for _tg in _n.targets:
+                    if isinstance(_tg, ast.Name):
+                        _bound[_tg.id] = _n.value
+
+        def _names_rule(_node, _depth=0):
+            if _depth > 3:
+                return False
+            for _s in ast.walk(_node):
+                if isinstance(_s, ast.Constant) and _s.value == 'acting_check.py':
+                    return True
+                if isinstance(_s, ast.Name) and _s.id in _bound:
+                    if _names_rule(_bound[_s.id], _depth + 1):
+                        return True
+            return False
+
+        for _n in ast.walk(_tree):
             if not isinstance(_n, ast.Call):
                 continue
             _f = _n.func
             _nm = _f.attr if isinstance(_f, ast.Attribute) else getattr(_f, 'id', '')
             if _nm != 'spec_from_file_location':
                 continue
-            if any(isinstance(_s, ast.Constant) and _s.value == 'acting_check.py'
-                   for _a in _n.args for _s in ast.walk(_a)):
+            if any(_names_rule(_a) for _a in _n.args):
                 return True
         return False
 

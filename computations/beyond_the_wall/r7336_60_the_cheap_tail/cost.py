@@ -144,7 +144,11 @@ RESULT.update({
     'B_NORMALISED': 7,
     'B_STRUCTURAL': 2,
     'B_PLAIN': 5,
-    'CASES': 1,                 # the markdown carrier, filed beside its repair
+    # ** TWO distinct rule cases, carried on THREE rows: ** the markdown carrier, and -- found by
+    #   the ledger instrument on the repair itself -- that the gate layer's normaliser cannot be
+    #   reached from inside a receipt's reader without making the pin invisible to the instrument.
+    'CASES': 2,
+    'CASE_ROWS': 3,
     'ROUTED': 1,                # the row on the do-not-edit list, routed as a patch
     # why ⒝ failed, measured rather than asserted: the tail's rows are composed differently from
     # the dense blocks the band was priced on.

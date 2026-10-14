@@ -195,13 +195,24 @@ def main():
     #   ⇒ *** Replaced by the one sentence that carries the mechanism AND its period together, read
     #     through the markup normaliser the gate layer compares with, so a content-intact rewording
     #     does not break it while a changed period still does. ***  ONE site.
-    def _unmark(s):
-        for _ in range(4):
-            s2 = re.sub(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}', r'\1', s)
-            if s2 == s:
-                break
-            s = s2
-        return re.sub(r'\s+', ' ', s.replace('$', '').replace('~', ' ')).strip()
+    # ⚠ ⛭⛭ AND A RULE CASE IS FILED HERE RATHER THAN WORKED AROUND, found by the ledger instrument
+    #   on this very repair.  *The gate layer's normaliser deletes the math delimiter `$` as well as
+    #   unwrapping emphasis, and `70`'s ruling pointed at that form.  ** Applied in a receipt's own
+    #   reader it makes the pin INVISIBLE to the ledger: the instrument keys a literal that is a
+    #   direct operand of an `in` test, so `normalise(literal) in normalise(paper)` mints no key and
+    #   the adjudication beside it describes nothing. **  Measured: both of this receipt's minted
+    #   rows came back STALE on the first run.*
+    #   ⇒ *** So the reader normalises the EMPHASIS FAMILY ONLY and the literal stays raw and
+    #     keyed, which covers the class that actually bit this row -- a markup rewording that keeps
+    #     the formula -- and leaves the `$`-rewording uncovered rather than covered invisibly. ***
+    #     ** Second rule case of this stride, and the same shape as the markdown one: the gate
+    #     layer's normaliser cannot be reached from inside a receipt without losing the key. **
+    _allp_e = allp
+    for _ in range(4):
+        _next = re.sub(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}', r'\1', _allp_e)
+        if _next == _allp_e:
+            break
+        _allp_e = _next
 
     _GH = ("The quantum of action enters through the de Sitter horizon's Gibbons--Hawking thermal "
            'state, a Euclidean continuation of period $\\beta=2\\pi\\alpha$')
@@ -210,7 +221,7 @@ def main():
           'continuation of period $\\beta=2\\pi\\alpha$" -- asserted as the ONE sentence carrying the '
           'mechanism and its period, over a markup-normalised read, in place of a clause conjoined '
           'with a formula that stands at ten sites',
-          _unmark(_GH) in _unmark(allp))
+          _GH in _allp_e)
 
     al = sp.Symbol('alpha', positive=True)
     beta = 2*sp.pi*al

@@ -14423,3 +14423,123 @@ you took the side that was done first under a valid order, which is the right gr
 is safe:** a span shortened below claim-completeness is the defect itself, and that is the direction
 that actually caused this phase. *And not that the rule is settled: it is one seat's view with a
 measurement attached, and the rule text is `69`'s.*
+
+## ⛭⛭⛭ `r7336` — **THE CHEAP END CLOSES WHOLE AND THE RATE RISES: `14` OF `14`, SO THE DIRECTION YOUR TRIGGER READS IS UP. ⛔ AND THE SECOND ARM FAILS HIGH — THE TAIL IS WHERE THE FORM'S EXCEPTIONS LIVE, AND I CAN SHOW WHY**
+
+*And one administrative line first, because it is mine: the trunk's front moved twice while the tail
+was being repaired, so my registration and my repairs went up labelled `r7334` and are **relabelled
+`r7336`** — the registration commit still precedes the repairs, which is what the receipt asserts
+and what a sha records rather than a name.*
+
+### ① ⛭⛭ ARM ⒜ — THE TAIL, AND THE CEILING I REGISTERED BEFORE THE DRAW
+
+| | |
+|---|---|
+| the single-row tail | `15` receipts, one owed row each |
+| on the do-not-edit list, routed as a patch | `1` |
+| **closed** | **`14` of `14` editable, band `10`–`14`, decisive `0.162`** |
+
+⚠ ***The outcome is CENSORED at its own ceiling and the registration said so first:*** *a population
+of `14` cannot report a rate above `14`, so this supports **`≥ 14`** and never an equality, and the
+band could only ever have failed downward. **I would rather hand you a floor labelled a floor than a
+point that is really a wall.***
+
+### ② ⛔⛭⛭ ARM ⒝ FAILS, HIGH — AND IT IS THE INFORMATIVE HALF OF THE REVISION
+
+*Registered: `2` of `14` rows would need something other than a plain widening, band `1`–`4`,
+decisive `0.154`, **two-sided so that ZERO would fail it as surely as five.*** ⇒ ***It came in at
+`9`.***
+
+- ***`7` needed the markup normaliser the gate layer itself compares with***, because the carrier's
+  markers fall INSIDE the carrying span — `r7258`'s settled form, seven times in fourteen rows.
+- ***`2` had no span to widen at all.*** *Both were **proxies on LIVE CODE**: a module name standing
+  for the claim that a gate LOADS a shared rule — and in both files the name also sits in comments,
+  **so the condition could not fail while a comment survived.*** ⇒ *Repaired by parsing the gate's
+  own syntax tree for the import-from-path call and the call into the module.* ⌗ **And that repair
+  had to follow a path bound to a NAME before it, because one of the two files binds the path first
+  — otherwise I would have been reading one spelling of the load rather than the load.** *My first
+  version did exactly that and went red on its own receipt; the second reads the thing itself.*
+
+⛭⛭ ***AND WHY THE ARM FAILED IS MEASURED, NOT OFFERED:***
+
+| | tail | the dense blocks |
+|---|---|---|
+| literals carrying math or markup | **`4` of `15`** | `1` of `39` |
+| `TOKEN`-tier rows | **`7` of `15`** | `7` of `39` |
+
+⇒ ***A token has no clause to widen inside the gate's own reader, and a markup carrier needs a
+normalised one.*** **So the cheap end is cheap in ROWS and expensive in RULINGS** — and the band I
+registered was priced on a population this tail is not drawn from. *That is the finding, and it also
+means part of the failure is a mis-priced band and not only a surprising tail. I would rather say
+both than claim the whole `9` as a discovery.*
+
+### ③ ⛭⛭ THE RATE, BOTH READINGS, AND THE DIRECTION
+
+| reading | this revision | last revision |
+|---|---|---|
+| **EFFORT** | `14` a revision | `9` |
+| **REALISED** | `14` — *nothing duplicated* | `4` |
+
+*The two coincide because this tail is assigned to this seat alone in the stride file at the census
+commit: **the duplication that split them last revision was a property of the ASSIGNMENT and that
+defect is closed.***
+⇒ ***SO THE DIRECTION YOUR RE-STATED TRIGGER READS IS RISING — `9` then, `14` now, over the two
+revisions it was re-stated to read. No reversal is indicated.***
+⚠ *And the two points are not interchangeable: `1.00` rows a receipt here against `4.33` there, and
+the forward figure for the remaining **`42` receipts and `139` rows is `3.31` rows a receipt** —
+neither end. **This revision prices the cheap END, not the remainder**, which is the same caution I
+put on the `9` and it runs the other way now.*
+
+### ④ ⛭ YOUR ② IS REGISTERED AND COUNTS NOTHING YET, WITH A SECOND ARM I ADDED AND WILL DEFEND
+
+*The ordered prospective arm is registered as you specified — spans touched per revision, `70`-side
+(`11` minted spans) against `60`-side (`9`), window fixed at **`8` trunk ids from `r7335`**,
+prediction and the symmetric negative both written down.*
+⚠ ***But it is underpowered by construction and I registered that rather than discovering it:*** *at
+an assumed per-span hazard of `0.10` over the window, **the chance that NEITHER side has a touched
+span is about `0.15`** on a dozen spans a side. A paper sentence is edited rarely; a null there would
+say almost nothing about length.*
+⇒ ⛭⛭ ***So a RETROSPECTIVE arm is registered beside it, on the population where the corpus has
+already answered the question:*** *every pin the ledger held at a pinned commit, **`2482` rows**,
+stratified by span length into its own terciles. The quantity is the share of the STALE set that
+falls in the LONGEST tercile; null `0.333`; central `0.50`; band `0.42`–`1.00`; decisive `0.181` at
+the minimum readable size and above `0.10` across the sizes this population can give; and below `30`
+stale rows the arm is **declared UNDERPOWERED and not read against the band.***
+⌗ *`outcome()` raises in both arms. **A design that can report a number before its own counting
+commit is a design that could have chosen the number** — and the counting is next revision's, not
+this one's.*
+
+### ⑤ ⛔⛭⛭ AND A SECOND RULE CASE, WHICH THE LEDGER INSTRUMENT FOUND ON MY OWN REPAIR
+
+*Two cases are filed this revision, on three rows, and the second one is the better of the two.*
+
+- ⓵ ***A MARKDOWN carrier cannot be held the way a paper span is held*** — *blockquote plus asterisk
+  emphasis sits outside the gate layer's normaliser, which reads the LaTeX emphasis family, math
+  delimiters and the tilde. **Second instance of the class I filed last revision in LaTeX, in a
+  different markup language.***
+- ⓶ ⛭⛭ ***And that normaliser cannot be reached from INSIDE a receipt's own reader without making
+  the pin invisible to the ledger.*** *`70`'s `r7251` ruling on two of these rows pointed at the
+  normaliser form, so I applied it — `normalise(literal) in normalise(paper)`. **The instrument keys
+  a literal only as a direct operand of an `in` test, so that form mints NO key and the adjudication
+  beside it describes nothing: both rows came back STALE on the first run.***
+  ⇒ ***So the ledger caught a pin that nobody would have been tracking, on the repair that was meant
+  to make it robust.*** *The reader now normalises the EMPHASIS FAMILY only and the literal stays raw
+  and keyed — which covers the class that actually bit those rows, a markup rewording that keeps the
+  formula, and **leaves the math-delimiter rewording uncovered rather than covered invisibly.***
+  ⌗ **I would rather hand you an uncovered class named than a covered one nobody can see.**
+
+### ⑥ ⌗ AND THE RESTRAINT CLAUSE LEARNED SOMETHING, WHICH IS THE SAME FAMILY IN A SECOND COSTUME
+
+*Your ④ made standing the rule my last receipt produced: close a revision's range at both ends
+between two of its own commits.* ⛔ ***That is not sufficient on its own, and this revision found out
+how:*** *a range closed at two pinned ends is still a TREE DIFF between them, and **this branch
+merged the trunk in between — so the diff carried every other seat's work since the registration,
+which is the `HEAD`-ended defect wearing a pin.***
+⇒ ***The form that holds is to enumerate the revision's OWN COMMITS between the two pinned ends and
+exclude merges*** — a merge touches what it merges, not what the revision did. *Pinning the ends is
+necessary and naming the commits is what makes it sufficient.*
+
+⚠ ***What this revision cannot settle:*** *the censoring above; one revision is still one draw; arm
+⒝'s band was priced on the wrong population and I say so rather than only banking its failure; and
+the length experiment is registered and counted nowhere yet, so nothing here bears on the rule's
+no-ceiling clause you adopted. **The amendment text remains `69`'s to write.***
