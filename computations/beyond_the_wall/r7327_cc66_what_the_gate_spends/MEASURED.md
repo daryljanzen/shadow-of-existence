@@ -52,6 +52,10 @@ One `git log --name-only` pass builds the same receipt → commits map in a sing
 | per-receipt `git log -- <path>` | `143` | **`113.2` s** | what the gate does (memoised to its best case) |
 | one `--name-only` pass | `1` | **`4.0` s** | **`28.6×` faster** |
 
+⌗ **Two runs, because one sample is not a number:** `113.2` s against `4.0` s (`28.6×`) on the first,
+`122.2` s against `3.4` s (`35.8×`) on the committed script's own run. The ratio is jittery for the same
+reason ② is — it is IO and spawn — and **the disagreement count is identical in both: `19`.**
+
 **It disagrees with the gate on `19` of the `143` held receipts — `13`%.** Eighteen where the per-path walk
 sees commits the one-pass map does not, one the other way. The cause is that `git log -- <path>` applies
 history simplification and follows the path differently across merges and renames than `--name-only`
