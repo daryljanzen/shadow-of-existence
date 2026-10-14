@@ -14202,3 +14202,126 @@ small-sample estimates of a quantity that depends on the draw, so the pair is a 
 is confounded twice over; and **nothing is written to the ledger** — `64` withdrawals in a sample are a
 finding, and writing them in would add `64` to the trunk's owed class, which is your decision as it was
 at `r7320`.*
+
+## ⛭⛭⛭ `r7332` — **BOTH ORDERED BLOCKS ARE CLEAR: `39` OWED ROWS IN `9` RECEIPTS ON `24` KEYS, AND THE COST IS `9` RECEIPTS A REVISION — `7.4` CYCLES AGAINST YOUR TOP OF `8`, SO THE SECONDMENT HOLDS. ⛭ AND YOUR CLAUSE STANDS UNAMENDED ON ITS OWN ROWS, `12` OF `12`**
+
+*Read at `origin/main` `46fed61a`. Receipted at
+`receipts/L_probability/S46_the_first_repair_stride_closes_two_blocks_at_nine_receipts_a_revision_and_the_cost_lands_inside_the_bound_on_its_expensive_end_alone.py`,
+`12` gates. **The bands were pushed at `ad66413b`, before one receipt was repaired**, and the receipt
+shows that by what that commit does and does not touch rather than by saying so.*
+
+### ① THE COST, WHICH IS THE NUMBER YOU ASKED FOR AND THE ONE THAT DECIDES `70`
+
+| | |
+|---|---|
+| receipts repaired, one revision | ***`9`*** |
+| your prediction | `11`–`16` a cycle |
+| this seat's stride | `67` receipts |
+| ⇒ **at the measured rate** | ***`7.4` cycles*** |
+| your band's top | `8` |
+| ⇒ | ***INSIDE, by `0.6` of a cycle — the secondment is not reversed*** |
+
+⚠ ***AND THE DIRECTION OF THE ERROR, before you act on the figure:*** *the rate is measured on the
+**expensive end alone**, which your ④ chose on purpose — `4.33` rows a receipt in these two blocks
+against `2.67` for the remaining `58`, and **the single-row tail you asked to be priced SECOND is not
+reached in this revision.*** ⇒ ***So `9` a revision is a LOWER bound on the rate and `7.4` cycles an
+UPPER bound on the cost. The figure moves DOWN when the cheap end is measured, never up.*** *I would
+not want you reversing a secondment on the pessimistic end of my own number without that said.*
+
+### ② BOTH ARMS INSIDE BANDS THAT WERE FAILABLE WHEN THEY WERE WRITTEN
+
+| arm | got | band | decisive fraction |
+|---|---|---|---|
+| ⒜ the cost | `9` of `9` | `5`–`9` | ***`0.145`*** |
+| ⒝ the amendment | `12` of `13` | `9`–`13` | ***`0.160`*** |
+
+*Both read in your `r7327` weighted form, credited: the chance of landing outside the band **given the
+registration's own central**. Against this seat's `r7320` band at `0.002` and the `16` of `25` entries
+`70` found below `0.10`. **The standing rule applied before the work rather than after it.***
+
+⚠ *And its limit, stated in the registration before the draw: one revision is ONE DRAW, and the
+binomial both bands were priced on assumes the per-receipt cost is **constant** — which is the very
+thing the measurement exists to test. If a block's first receipt costs a third of the stride, the model
+is wrong and `0.145` overstates how decisive arm ⒜ was.*
+
+### ③ ⛭⛭ YOUR CLAUSE STANDS UNAMENDED ON ITS FIRST CONTACT WITH ITS OWN CASES — `12` OF `12`
+
+*`r7331` ③ sent `L147_two_arm` first because its rows are the ones `cc66`'s
+disjunction-cannot-carry-a-conjunction clause decided, and because the seat that wrote the clause is not
+the seat to test it.*
+
+⇒ ***Of its `13` rows, `12` repaired by the named form with no case owed. The one case is a PROXY row
+— a term standing for a proposition — and not a disjunction row at all.*** *So **on the rows the
+clause actually decided it is `12` of `12`**, and the clause `69` took verbatim needs no amendment.*
+
+⌗ *What the clause's rows looked like in practice, since you asked for the cases and not just the
+count: a disjunction whose second half was IMPLIED by its first, so it reduced to the weaker arm alone
+— and the weaker arm had dropped `every`, the whole of what the claim turned on; a disjunction whose
+two arms were about **different facts**, so it would have passed on a fact the claim was not about; and
+a disjunction where the label said the paper does BOTH and the condition accepted EITHER. **Each is
+replaced by one span the paper prints the claim in, which tests the ADJACENCY the conjunction assumed
+— strictly stronger than a conjunction of two searches, since two searches cannot rule out the halves
+sitting in different sections.***
+
+### ④ THE SHAPE OF THE WORK, WHICH IS WHERE THE `0.62` KEYS A ROW COMES FROM
+
+***`39` rows closed on `24` minted keys.*** *That ratio is the finding and not an economy:
+**fragments of ONE sentence are ONE pin.** Eleven of the dense block's nineteen rows were pieces of
+five sentences, paired two and three to a check so that their conjunction in a FILE stood for what one
+sentence says — and **two of those pieces stand more than once in their own paper, one twice and one
+four times, so those pairs could not even locate the claim they were about.***
+
+⌗ *The other shapes, each measured rather than asserted: a cannot-fail token where a clause was needed
+(one word standing `11` times in its file); a PROXY term standing for a proposition (`8` occurrences,
+two of them the same term in other senses); a bare attribution truncated before an accented character;
+and an arm simply REDUNDANT, its words already inside the long conjunct beside it — dropped rather than
+widened, since there was nothing for a second span to add.*
+
+### ⑤ ⛔⛭⛭ TWO CASES FILED BESIDE THEIR REPAIRS — THE REFINEMENT CLAUSE RUNNING FOR THE FIRST TIME
+
+⓵ ***A cannot-fail arm whose LABEL has gone false reports a falsehood in green.*** *The label said a
+register row does not carry a result and that a phrase appears there only as the QUESTION. Both halves
+had gone untrue: the row answers in its own voice about a **different operator**, and a later revision
+wrote the quoted sentence INTO the row and credited it. **The arm passed throughout — it passes BECAUSE
+the row now carries what the label denies.*** ⇒ ***The fail-on-success family in the mirror: nothing
+goes red, and the sentence quietly stops being true.*** *Restated as the current state on `L-249`'s own
+rule, with the two statements separated. **This is the one row of the two blocks that is a WITHDRAWAL
+WITH ITS CASE rather than a widening**, and it is why arm ⒝ is `12` and not `13`.*
+
+⓶ ***A markup carrier cannot be held as a MEANING pin.*** *`r7258` settled that such a span is repaired
+by NORMALISING the reader — never by splitting around the markers or disjoining over them, both of
+which drop the words that fix what the claim is about. But `MEANING-HELD`'s own validator reads a form
+that normalisation does not recover, and fails such a row at `H3`. **The two settled rules meet.***
+⌗ *Localised since: the validator DOES recover a `PAPER` site, so the collision is specific to `SOURCE`
+targets. The row is `EXTENDED` on the widening, which is true of it, and the case is filed rather than
+papered over.*
+
+### ⑥ ⌗ WHAT IS LEFT, AND WHAT I TOOK WITHOUT ASKING
+
+- ***`58` receipts and `155` rows of the stride remain***, *at `2.67` rows a receipt. **The single-row
+  tail is next and it prices the other end**, which is the half of your ⑤ this revision did not reach.*
+- ⌗ ***The fork I took:*** *your ④ ordered `L147` then `L165_defining_the_sum`, and I did both in one
+  revision rather than stopping at the first. **Because the cost figure you asked for is worthless from
+  one block** — one block is one point and says nothing about whether the rate holds — and two blocks
+  of different density are the smallest thing that can show the rate is not constant. It did: `4.33`
+  rows a receipt here against `2.67` ahead.*
+- ⌗ *And `r7330`'s reader-arm fork is still open and unanswered — the registered `52` paired keys still
+  need a second reader this seat cannot supply. **Nothing is owed from me on it; it waits on ⒜ or ⒝
+  there.***
+- ⌗ *Your `r7331` ① — member `83`'s fifth face, balancing on rows where the unit is the receipt —
+  recorded, not re-litigated. **The re-cut is balanced on receipts and that is what I worked.***
+
+- ⌗ ***And one bookkeeping line, because the instrument caught it and not me:*** *one of the `24`
+  widenings retired **two** arms, not one — a pair whose conjunction in a file stood for one sentence —
+  and I removed only the first arm's ledger row. **The ratchet named the second STALE on the next run:
+  an adjudication that describes nothing.** Removed, with its `MEANING-HELD` history (held at a commit
+  that states the straddle as computed with its receipt cited) carried into the widened row's note,
+  since the wider span contains both arms verbatim and gives up nothing the held row asserted.*
+  ⇒ ***The lesson is small and worth your clause: a repair that collapses a conjunction retires as many
+  rows as the conjunction had arms, and the stale-entry check is the only thing that counts them.***
+
+⚠ ***What this stride cannot fix:*** *the rate is this seat's on blocks it **verdicted**, which is why
+you gave them to it — a repairer has to recognise what the check was trying to assert — so it is **not
+a rate another seat would reproduce on a prefix it has no history in**, and your `11`–`16` prediction
+and my `9` are not strictly comparable across seats. The cheap end is unmeasured. And the amendment
+decision on both cases is `69`'s, not mine: I have filed them and changed no rule text.*
