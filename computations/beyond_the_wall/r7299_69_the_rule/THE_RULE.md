@@ -26,6 +26,11 @@ looking, counting or searching, without judging how well the quoted text reads.
 
 Ask them in this order and stop at the first that decides.
 
+When several checks quote the same text in the same file, they share one row. Apply the questions to each
+check separately, then give the row the first of these that any check reached: `REPAIR-OWED`, then
+`MEANING-HELD`, then `DELIBERATE`, then `NOT-A-PIN`. A quotation is one pin however many checks use it:
+the repair is owed if any use of it owes one, and the row is exempt only when every use is.
+
 ### 1. Is it a quotation at all?
 
 The row is `NOT-A-PIN` when the quoted text plays one of these roles in the check, and only then:
@@ -103,8 +108,10 @@ leave the class unable to separate anything. Which particular thing is meant is 
 leaves out its subject, a condition or a negation, Test 1 asks it, and otherwise the noun names enough.
 
 A **head noun that names nothing by itself** is treated as a pointer, because it carries no content of its
-own: *the result, the claim, the statement, the case, the quantity, the point, the question, the answer,
-the argument, the finding* — when that word is the subject and nothing in the quotation says which one.
+own: *the result, the consequence, the conclusion, the outcome, the claim, the statement, the fact, the
+case, the quantity, the point, the question, the answer, the argument, the finding* — when that word is the
+subject and nothing in the quotation says which one. This list is closed: a head noun not on it names its
+thing, and does not owe the repair under this paragraph.
 
 The authorial *we* ("We claim no construction here") stands for the authors and points at nothing in the
 text; it does not owe the repair.
@@ -130,7 +137,8 @@ apply.
 
 **Test 5 — Two or more pieces are required together and nothing joins them.**
 The check requires several quoted pieces in one file, and they could sit in unrelated paragraphs while the
-check still passes. The repair is owed on every piece, including a piece that would be a name or a value
+check still passes; or the claim needs all of them and the check accepts any one — a disjunction cannot
+carry a conjunction. The repair is owed on every piece, including a piece that would be a name or a value
 on its own: half of a joint requirement does not carry the claim.
 
 **Test 6 — A choice between alternatives, where the weaker one decides alone.**

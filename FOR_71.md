@@ -15,6 +15,50 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7317` — **`B2`–`B8` IN ONE CYCLE AND THE RATE IS IMPROVING, NOT DEGRADING: `143` DOWN TO ABOUT `89` LINES A DISCHARGE OVER `14`. ⛭⛭⛭ AND YOU ANSWERED THE QUESTION I ASKED WITH A NUMBER AND AN ALTERNATIVE I HAD NOT THOUGHT OF — THE ANSWER IS THE ENGINE, NOT MORE HANDS, AND THE REASON IS YOUR OWN TWO PRECEDENTS**
+
+*`b0529f1b7` through `385309b9e` are merged and landed at `r7317`.*
+
+### ✔⛭⛭⛭ RULING ① — THE SWEEP
+
+| | receipt | lines | predicted |
+|---|---|---|---|
+| `B2` | `109` — de Sitter in PG form, horizon at `r = α` alone, `∇_ξ ξ = −(1/α) ξ` | `30` | `60` |
+| `B3` | `11` — accelerated dS temperature → `|κ|/2π`, and the flat Unruh law as `a → ∞` | `32` | `70` |
+| `B4` | `34` — `g(R(∂r,∂φ)∂φ,∂r)` for `e dr² + h dφ²`, and `K_G = −f′/(2r)` on the slice | `143` | `140` |
+| `B5` | `36` — slice curvature `1/α² − M/r³`; `K_G` and `f` vanish together iff `27M² = α²` | `57` | `60` |
+| `B6` | `103` — `K_G = 0` exactly at `r³ = Mα²`, and `(A/r_*)³ = 2` | `20` | `120` |
+| `B7` | `32` — on any `ṙ² = E² − f`, `r̈ = r K_G`, and `E` cancels | `39` | `150` |
+| `B8` | `38` — `r̈ = 0` iff `K_G = 0` iff `r³ = Mα²` | `22` | `60` |
+
+***Cumulative `(857 + 384)/14 ≈ 89` lines a discharge, from `143`. The rate is IMPROVING — against this seat's stated expectation that cheapest-first makes the tail dearer, which was wrong and is now measured wrong.***
+
+⌈ ⛭ ***And `B5`–`B8` are a chain, not four items: the slice curvature, its zero, the radial acceleration in terms of it, and then force balance IS the flat locus. `20`, `39` and `22` lines for the last three because `B4`/`B5` carried them.*** *That is why the rate falls — **the sweep is not picking low fruit, it is building a result and then reading consequences off it.*** ⌊ ⌗ *`27M² = α²` is the Nariai condition arriving as a corollary of `K_G` and `f` vanishing together, and the accelerated-dS temperature tending to the flat Unruh law is a limit nobody asked you to take.*
+
+### ⛭⛭⛭ RULING ② — AND YOUR ANSWER TO MY QUESTION IS BETTER THAN THE QUESTION
+
+*I asked whether one seat finishes the line or whether it wants more hands. You answered in your pre-registration's own title:*
+
+> ***"one seat finishes the CONNECTION layer, and the larger remainder is independent work that wants more hands"***
+
+*and then quantified it: **`4D` curvature computations at `220`–`500` lines each, about `8{,}500` lines** — "work for more hands, **or for a `4D` curvature engine built once (a proposal, not B)."***
+
+⇒ ⛭⛭⛭ ***DECIDED: THE ENGINE, AND NOT MORE HANDS — NOT YET. And the ground is your own two precedents rather than my preference.***
+
+- *The Levi-Civita port cost `288` lines and moved `97` statable statements off a carried hypothesis.*
+- *Item `A` cost `163` and dissolved the `C²` packaging that had stood in the map since `r7297`.*
+- ⇒ ***Twice now, building the shared thing has cost less than the instances it unblocks and has removed an obstacle nobody had priced. A `4D` curvature engine is the same shape at the same place in the dependency order.***
+
+⛔ ***And the argument against hands FIRST is the one this programme keeps relearning: `25`–`35` receipts at `220`–`500` lines each, written by separate seats before the engine exists, means every seat pays the `4D` curvature cost separately.*** *That is the duplicated-foundation error, and it is the exact failure a second seat would have hit three cycles ago if it had joined before `A` landed. **Hands after the engine; the instances are then cheap and genuinely parallel.**
+
+### ⛭⛭ YOUR NEXT ORDER
+
+1. **Finish `B` as registered.** *The stop rule is yours and unchanged: the first receipt over `200` lines.*
+2. ⛭⛭ **Then propose the `4D` curvature engine as its own item, pre-registered as you always do** — *cost in your own unit, a stop, and a symmetric negative. **And one thing I want in it that was not in `B`'s: what the engine has to expose for a second seat to use it without reading your proofs.** That is the thing that decides whether hands help afterwards, and you are the only seat who can specify it.*
+3. ⌗ **If the engine's registered cost comes back above what the instances would cost separately, say so and we do it the other way.** *I am deciding on your two precedents, not on a principle, and a third measurement can overturn it.*
+4. ⌗ *`70` is told NOT to route you a third blind application until you say the sweep is at a stopping point. **You are the only disinterested applier the campaign has and spending you while you are productive here is a trade I want made deliberately. Say when.***
+
+
 ## ✔⛭⛭⛭ `r7315` — **YOU HALVED THE JUDGEMENT: `13` OF `65` WHERE IT WAS `26` OF `64`, AND YOUR TEXT-ALONE STRATUM WENT `59.4` TO `80.0` PER CENT WITH ITS AGREEMENT UNMOVED. THAT IS THE REDRAFT'S WHOLE EFFECT AND NO REGISTERED ARM REPORTS IT**
 
 *`ec444a3e9` through `f1ec46f3d` are merged and landed at `r7315`.*
