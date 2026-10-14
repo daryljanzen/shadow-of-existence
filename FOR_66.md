@@ -15543,3 +15543,62 @@ if _own_sess is None:
 **One line from Daryl authorising this seat to spawn two subagents as the readers.** *I have put it to him in the chat window as the one thing I am blocked on. Everything else is pushed: the lists hand over with the baseline withheld, the band is registered and timestamped ahead of the draw, and `score.py` runs the moment the two `READ_half_*.tsv` files exist.* ⇒ **Nothing here waits on the rule, on a score, or on another seat. It waits on one permission, and I built the whole instrument first so that the permission is all it waits on.**
 
 ⌗ *Item ⑤ noted and not argued with. `r7243` stands.*
+
+---
+
+## `r7324` — the gate I said did not need running, and the one row that clears main
+
+**LANDED** one ledger row, which takes `fast` from red to green on `main` as well as on this branch, plus
+the write-up of a mistake in my own published reasoning.  **REMAINING** `r7321`'s two reads, still blocked
+on the one reader permission; nothing in this item is blocked.
+
+**① A red I carried and said could not exist.** `fast` is red on `445d1cf2`, on `3e3e68e8`, and on
+`origin/main`'s own head `a9e83881` — `⛔ FAILED: check_quote_pins`, one NEW key.  Five of my pull-request
+bodies (#395, #398, #400, #404, #407) carry this sentence verbatim:
+
+> `check_quote_pins` was not re-run and did not need to be: this diff touches no receipt and no ledger row.
+
+**The first clause is about a diff and the second is about a gate, and the second does not follow.** The
+gate's failing predicate is `new = [k for k in live if k not in base]`, where `live` is the instrument over
+the **whole tree** and `base` is the ledger.  A diff can only *add* to `new`; nothing a diff touches or
+fails to touch can show `new` is empty.  **So the ratchet is a property of the tree, not of the diff**, and
+the sentence was a category error that happened to be harmless on four heads and wrong on the fifth.  It
+held four times for five, which is the rate at which the base did not move under me while I was not
+looking — not a vindication.  **I am correcting it on #407 and will not publish it again**; what replaces
+it is *this diff creates no new key; the gate's state also depends on the base, re-read at `<sha>`*.
+
+**② The red is not this branch's, established two ways.** The receipt carrying the pin —
+`S42_the_between_seat_gap_…` — arrived at `30f47196`, `r7324`'s own revision, an ancestor of `main`; the
+file is byte-identical to main's; and main's baseline carries no row for the key, at `30f47196` or now.  So
+the predicate fires at main's head too, which `fast`'s `failure` on `a9e83881` (both twin runs, every
+`scoped` job green) confirms externally.  **A receipt and its ledger row crossed in the night; that is the
+ordinary cost of five seats pushing, and the gate caught it in one run.**
+
+**③ I fixed it rather than reporting it, because the fix is one row of this seat's own ledger.**
+`SOURCE/SENTENCE`, no flags, read off the instrument scoped to the one receipt.  `69`'s rule, in order,
+stopping at the first question that decides:
+
+- step 1, a pin — a prose string required present in a file the receipt does not own;
+- step 2 does **not** reach it: the claim is that the design note *"says in terms"* that a clustered draw
+  inflates every cost, so the `states`/`says` bound applies and the quotation must be the **whole** of that
+  statement.  It is the closing fragment of the bullet;
+- **Test 1 — the subject is left outside.** The quotation `"drew `40` keys from `17` receipts"` begins after
+  `` `r7320`'s own sample ``, the subject of *drew*, so it does not say whose sample drew the keys; and the
+  clause the claim rests on — *a clustered draw inflates every one of them* — is outside the quotation
+  entirely.  **`REPAIR-OWED`, Test 1**, with its repair named in the row.
+
+**④ Test 5 is silent, and the row records why**, because this is the first key I have read where the
+question comes up: the check's other conjunct is `len(_recs) == 17`, a **measurement**, not a second quoted
+piece.  Both the routing step and Test 5 are written about several *quoted pieces*, so neither reaches a
+conjunction one arm of which is a measurement.  **If `69` wants that case covered, it is a one-clause
+widening and this is the instance to write it against — but I am not asking for it: the key decides at
+Test 1 regardless, so nothing turns on it here.**
+
+**⑤ What moved and what did not.** `REPAIR-OWED` 366 → 367; `UNADJUDICATED` stays **0**; the ledger now
+carries 2824 keys against the instrument's 2824; every other ratchet holds (multi-site 230 of 249, list 0,
+pinned-read 0).  `r7321`'s frame is untouched — the draw is keyed on `CELLS_pooled.tsv` and salted on
+`1a3c13a6`, neither of which is the baseline — and no key in `70`'s held sets is touched.  One loose end
+that is not mine: `S40`'s docstring prose "the `366` `REPAIR-OWED` the trunk already carries" is now one
+behind.  No gate reads it; **I left another seat's prose alone.**
+
+Write-up, with the reproduction: `computations/beyond_the_wall/r7324_cc66_the_gate_is_a_property_of_the_tree/MEASURED.md`.
