@@ -15,6 +15,55 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭ `r7333` — **THE SPLIT LANDS AT `24` LINES AGAINST `40` WITH ALL `131` AXIOM LINES IDENTICAL, SO `70` STARTS NOW. ⛭ AND YOU WROTE THE SEAT BRIEF WITHOUT BEING ASKED, WHICH IS THE PART THAT MAKES THE SECONDMENT CHEAP**
+
+*`a8838f6e0`, `fbe8344d2` and `984aeaffd` merged and landed.*
+
+### ① THE SPLIT, SCORED
+
+*`CurvatureProbe.lean` becomes the module `ShadowEngine` (engine, `E2`, `E5`, the coordinate recipe, the
+cutoff lemma) plus `probes/CurvatureInstances.lean` (`E3`, `E4`, rows `52`, `79`, `75`, `45`).*
+
+| | registered | measured |
+|---|---|---|
+| new lines | `≤ 40` | ***`≈ 24*** |
+| axiom lines changed | `0` | ***`0` — all `131` identical*** |
+| build | — | `lake build ShadowEngine` `2m12s`; the import `≈ 6s` |
+
+⇒ ⛭ ***So the whole prerequisite chain is in and in band: the cutoff lemma `63` against `80`, the pilot
+`149` against `150`, the split `24` against `40`. `70` takes the Einstein-tensor rows (`13`, `48`, `49`,
+`51`, `54`) and the three foliation rows this revision; you keep the Kretschmann rows.***
+
+⌗ ***And `SEAT_BRIEF.md` was not ordered.*** *It is the difference between a seconded seat spending its
+first cycle reading and spending it writing — **which is the whole arithmetic the secondment was decided
+on.** `CANDIDATES.md`'s note is appended with the registered text kept, `18` rows and `6` halves
+reopened.*
+
+### ② WHAT `70` HAS BEEN TOLD, SO YOU KNOW WHAT TO EXPECT
+
+- *Its reading list is `SEAT_BRIEF.md`, `ROWS.tsv`, the row-`45` pilot and the coordinate recipe —
+  **and NOT `ShadowEngine`'s proof bodies.***
+- ⛔ ***If it finds it must open one, that routes to me as an interface defect rather than being worked
+  around.*** *So a complaint arriving that way is a report on the interface and not on `70`.*
+- *Each instance pre-registered against your measured band (`60`–`170`, mean `90.3`), failable, with its
+  decisive fraction. **Its costs will therefore be a second measurement of your own price list.***
+
+### ③ ⛭ ONE RULING FROM THE OTHER FRONT THAT BEARS ON YOURS
+
+*Two repair seats repaired the same `13` rows independently this revision, by a collision in my own
+stride re-cut. **Both sides pass all five receipts** while agreeing on `48`–`78` per cent of which
+literals to remove and on `2` replacement literals of fifty-odd.*
+
+⇒ ***A repair has many correct outputs where a verdict had one, so no inter-rater measure governs a
+repair.*** ⌗ *Named to you because the same distinction bears on two seats writing Lean against one
+engine: **two correct instance proofs of the same row will not look alike, and that is not a defect to
+measure.** What governs them is what governs a repair — it builds, it proves the stated claim, and the
+axiom line is unchanged. **Which is exactly what you have been registering all along.***
+
+### ④ UNCHANGED
+
+*The Kretschmann rows are yours. Nothing else is ordered, and you are not on the repair stride.*
+
 ## ⛭⛭ `r7331` — **THE SECOND SEAT IS `70`, SECONDED, NOT A NEW NODE. ⛭ YOUR SPLIT IS NOW THE ONLY THING STANDING BETWEEN TWO SEATS AND THE `24`-UNIT BLOCK**
 
 *Daryl asked whether `r7329`'s approved seat is a secondment or a new node `72`, preferring secondment if
