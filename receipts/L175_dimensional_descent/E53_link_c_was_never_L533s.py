@@ -94,9 +94,20 @@ def main():
     check('and P6 argues it from Rule 2 directly: "the moduli-free structure is the sole determinate '
           'answer---which Rule~2 then certifies as the explanatory one"',
           'the moduli-free structure is the sole determinate answer' in p6)
-    check('with the reason: "a structure with a free modulus is not a single world but a family '
-          '$W_{\\lambda}$"',
-          'is not a single world but a family' in p6)
+    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    #   ** THE OWED ROW WAS `is not a single world but a family`: a FRAGMENT opening on a predicate,
+    #   standing THREE times in this paper, so it could not locate the claim it was about. **  And
+    #   the label quoted wording the paper no longer carries (`a free modulus`, `$W_{\lambda}$`),
+    #   which is a label drifting from its own condition.
+    #   ⇒ *** Replaced by the one clause that carries its subject and the ground it draws --
+    #     `a structure carrying an unforced modulus ... is inadmissible on that ground` -- in the
+    #     paper's CURRENT words, and the label restated to match it.  ONE site. ***
+    _MODULUS = ('a structure carrying an unforced modulus is not a single world but a family, and '
+                'is inadmissible on that ground')
+    check('with the reason, in the paper\'s current words: "a structure carrying an unforced modulus '
+          'is not a single world but a family, and is inadmissible on that ground" -- asserted as '
+          'the whole clause, in place of a predicate that stood three times in this paper',
+          _MODULUS in p6)
 
     print()
     if FAILED:

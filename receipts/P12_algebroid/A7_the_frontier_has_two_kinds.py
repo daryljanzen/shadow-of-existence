@@ -93,8 +93,19 @@ def main():
     rows = {re.search(r'PO-\d+', l).group(0): l
             for l in raw.split('\n') if re.match(r'\|\s*~*\*\*PO-\d+\*\*', l)}
 
-    check('⓵ the sorting rule is P15\'s own: "the whole difference is carried by $H(a)$"',
-          'the whole difference is carried by' in p15)
+    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    #   ** THE OWED ROW WAS `the whole difference is carried by`, and the ground is the TRAILING
+    #   arm: the span ends on `by`, promising an agent it does not carry. **  *The sorting rule this
+    #   receipt runs on is that the difference is carried by $H(a)$ -- the agent is the whole
+    #   content of the rule, and the span stopped one token short of it.*
+    #   ⇒ *** Widened to the clause that names the agent AND what cancels against it, so the span
+    #     carries the division of labour the rule is made of. ***  ONE site.
+    _SORT = ('in the ratio the Thomson physics and the ionisation history cancel identically and '
+             'the whole difference is carried by $H(a)$')
+    check('⓵ the sorting rule is P15\'s own: "in the ratio the Thomson physics and the ionisation '
+          'history cancel identically and the whole difference is carried by $H(a)$" -- asserted as '
+          'the clause that names the AGENT, in place of a span ending on `by`',
+          _SORT in p15)
 
     # every classified row is an open row
     openrows = {t for t, l in rows.items()

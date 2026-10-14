@@ -55,6 +55,7 @@ are a RECORD whose evidence was not kept, and that is now said in the file rathe
 
 Written r3126, `L-254`.  Stated for reversal.
 """
+import ast
 import glob
 import importlib.util
 import os
@@ -170,8 +171,34 @@ def main():
           "no longer matches this file's rule" in old_lint)
     gate_now = open(os.path.join(ROOT, 'corpus', 'check_receipts.py'), encoding='utf-8').read()
     lint_now = open(os.path.join(ROOT, 'scripts', 'lint_assertions.py'), encoding='utf-8').read()
-    check('⓸ᶜ and now neither carries a private copy; both load corpus/acting_check.py',
-          'acting_check.py' in gate_now and 'acting_check.py' in lint_now
+    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    #   ** THE OWED ROW WAS THE TOKEN `acting_check.py` read as a substring of LIVE CODE: a
+    #   FILENAME standing in for the claim that both files LOAD the shared rule. **  *A name can sit
+    #   in a comment of a file that has grown a private copy back -- and in these two files it does
+    #   sit in comments, so the token could not have failed while the comments survived.*
+    #   ⇒ *** There is no span to widen here, so the repair is a different instrument: each file's
+    #     own SYNTAX TREE is parsed and a `spec_from_file_location` call whose arguments name the
+    #     rule's file must be present.  That is the LOAD itself, which a comment cannot satisfy and
+    #     a private copy cannot fake. ***  The negative beside it is unchanged.
+    def _loads_rule(src):
+        """does this source actually LOAD corpus/acting_check.py -- parsed, not grepped?"""
+        for _n in ast.walk(ast.parse(src)):
+            if not isinstance(_n, ast.Call):
+                continue
+            _f = _n.func
+            _nm = _f.attr if isinstance(_f, ast.Attribute) else getattr(_f, 'id', '')
+            if _nm != 'spec_from_file_location':
+                continue
+            if any(isinstance(_s, ast.Constant) and _s.value == 'acting_check.py'
+                   for _a in _n.args for _s in ast.walk(_a)):
+                return True
+        return False
+
+    check('⓸ᶜ and now neither carries a private copy; both LOAD corpus/acting_check.py -- asserted '
+          "by parsing each file's syntax tree for the import-from-path call that names the rule's "
+          'file, in place of the filename appearing anywhere in the source, which both files also '
+          'carry in comments',
+          _loads_rule(gate_now) and _loads_rule(lint_now)
           and not re.search(r"^_COLLECT = r'\\bfail", gate_now, re.M)
           and not re.search(r"re\.compile\(r'\\bfail", lint_now))
     # ** SEEDED: put a private copy back and the guard must fire **

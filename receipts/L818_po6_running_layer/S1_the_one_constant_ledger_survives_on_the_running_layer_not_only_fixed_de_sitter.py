@@ -85,6 +85,7 @@ divergence -- never the register. 't Hooft & Veltman, Ann. IHP A20 (1974) 69; Gi
 (1974) 401. Stated for reversal.
 """
 import os
+import re
 
 import sympy as sp
 
@@ -186,12 +187,25 @@ def main():
     s50_txt = ' '.join(open(s50, encoding='utf-8', errors='replace').read().lower().split()) \
         if os.path.exists(s50) else ''
     tex_txt = open(tex, encoding='utf-8', errors='replace').read().lower() if os.path.exists(tex) else ''
+    _tex_u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1',
+                    re.sub(r'\s+', ' ', tex_txt))
+    _UV_OPEN = ("so the one open thing is the ultraviolet definition of the interacting tower's "
+                'mode sums')
     check('THE CORPUS NAMES THE QUESTION: S50 asks whether "the one-dimensional counterterm basis '
           'survive[s] on a background whose curvature runs" and names the instrument (sub-leading '
           'Schwinger-DeWitt on the sinh^{2/3} layer); canonical_time.tex names the interacting-tower UV -- '
           'this is the decidable answer for the running classical background',
           'curvature runs' in s50_txt and 'counterterm basis survive' in s50_txt
-          and 'definition of the interacting tower' in tex_txt)
+          and _UV_OPEN in _tex_u)
+    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    #   ** THE OWED ROW WAS `definition of the interacting tower`: a VERBLESS NOUN PHRASE standing
+    #   four times in this paper (its count moved from three at one commit), so it was tied to no
+    #   line -- and the claim beside it is that the paper names the interacting-tower UV as WHAT
+    #   REMAINS OPEN, which no occurrence of a noun phrase has to say. **
+    #   ⇒ *** Replaced by the one sentence that states the openness as a predicate -- `the one open
+    #     thing IS the ultraviolet definition of the interacting tower's mode sums` -- read over a
+    #     markup-normalised body, since the paper wraps it in emphasis.  ONE site, where the noun
+    #     phrase alone had four. ***
 
     print()
     if FAILED:

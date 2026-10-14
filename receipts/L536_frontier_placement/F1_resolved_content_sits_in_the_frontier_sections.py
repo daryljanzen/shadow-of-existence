@@ -138,12 +138,23 @@ def main():
     #     from it, and r3119 states it in stronger terms -- WORK versus BOUNDARY, with a boundary
     #     named a result rather than a gap.  Re-pinned to the distinction rather than to the words
     #     that carried it, and the phrases are quoted so the pin is legible. **
+    _p7u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p7f)
+    _FINISHED = ('A list that ends with only boundaries and standing conditions has not failed to '
+                 'empty; it has finished')
     check('and the list states what each item STANDS AT rather than what was removed from it -- '
           'r3119 sharpens this into two kinds: "Work is something unworked that a definite '
           'computation would close" against "A boundary is a result rather than a gap"',
           'e of two kinds, and a reader is owed the difference.} \\emph{Work} is something unworked that a definite computation would close' in p7f
           and 'boundary} is a result rather than a gap' in p7f
-          and 'has not failed to empty; it has finished' in p7f)
+          and _FINISHED in _p7u)
+    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    #   ** THE OWED ROW WAS `has not failed to empty; it has finished`: the span opens on a
+    #   PREDICATE, its subject -- `A list that ends with only boundaries and standing conditions` --
+    #   sits outside it, and the second clause's `it` points back to that same absent subject. **
+    #   ⇒ *** Widened to the whole clause, subject included, over a markup-normalised read because
+    #     the paper wraps the sentence in emphasis and the markers fall around the carrying span
+    #     (`r7258`'s form: normalise the reader, never split the span around the markers). ***
+    #     ONE site.
 
     # ⛭ but the frontier section is the last section
     # ⛔⛭⛭ RE-ANCHORED r3132 (`L-258`).  ** THIS FOUND THE SECTION BY ITS TITLE STRING, AND r3119

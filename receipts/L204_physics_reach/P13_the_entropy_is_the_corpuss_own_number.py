@@ -133,8 +133,30 @@ def main():
           'The one physical length is $\\alpha$, not $\\ell_P$' in allp)
     check('and interprets it: "the size of the universe in gauge-units---a number, not a tuning"',
           'the size of the universe in gauge-units---a number, not a tuning' in allp)
-    check('and states the input: $\\Lambda\\ell_P^2\\approx3\\times10^{-122}$',
-          '\\Lambda\\ell_P^2\\approx3\\times10^{-122}' in allp)
+    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order, and
+    #   the repair is the one `70` prescribed at `r7251` PLUS the widening this seat's own rule asks
+    #   for.  ** THE OWED ROW WAS THE TOKEN `\Lambda\ell_P^2\approx3\times10^{-122}`: a bare
+    #   formula, which a markup rewording that keeps the content breaks, and which says nothing
+    #   about WHAT the value is of. **
+    #   ⇒ *** Two floors, both met: the span is widened to the clause that names the quantity (the
+    #     substrate curvature scale IS the cosmological-constant scale), and the read goes through
+    #     the markup normaliser the gate layer itself compares with -- emphasis unwrapped, math
+    #     delimiters dropped, `~` read as a space -- so a content-intact rewording no longer
+    #     breaks it while a changed VALUE still does. ***  ONE site, raw and normalised alike.
+    def _unmark(s):
+        for _ in range(4):
+            s2 = re.sub(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}', r'\1', s)
+            if s2 == s:
+                break
+            s = s2
+        return re.sub(r'\s+', ' ', s.replace('$', '').replace('~', ' ')).strip()
+
+    _INPUT = ('The substrate curvature scale is the cosmological-constant scale: in Planck units '
+              '$\\Lambda\\ell_P^2\\approx3\\times10^{-122}$')
+    check('and states the input WITH the quantity it is of: "the substrate curvature scale is the '
+          'cosmological-constant scale: in Planck units $\\Lambda\\ell_P^2\\approx3\\times10^{-122}$" '
+          '-- asserted over a markup-normalised read, in place of the bare formula',
+          _unmark(_INPUT) in _unmark(allp))
     check('and declares a Planck value NOT a physical scale but "what unit-counting yields when it has '
           'only gauges to count"',
           'what unit-counting yields when it has only gauges to count' in allp)

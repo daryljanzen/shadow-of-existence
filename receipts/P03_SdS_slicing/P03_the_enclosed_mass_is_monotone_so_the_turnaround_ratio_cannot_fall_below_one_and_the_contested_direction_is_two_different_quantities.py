@@ -489,6 +489,39 @@ _AUTHORISED = {
     'narrating_its_own_history.py': ('r7265 order item 3 (N1): the frontier-table repair moves a '
                                      'number the receipt states about the same material',
                                      'dcef045c'),
+    # ⛭⛭ r7334+60: AND NINE MORE, WHICH IS THE MECHANISM WORKING AND NOT THE CLAIM WIDENING.
+    #   *`r7331` ④ ordered this seat into two blocks outside its prefixes, so the crossing is
+    #   BIDDEN and belongs here by name with the order that bade it -- not in a wider `_owned`,
+    #   which would retire the claim instead of bounding it.*  ** Each is pinned at the commit of
+    #   this branch whose own diff carries it, so the authorisation stays a historical fact and a
+    #   path nobody crossed is still a blanket. **
+    'receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py':
+        ("r7331 order 4 (the repair stride): L147_two_arm named as the block to repair FIRST. The trunk later kept the other seat\u2019s repair of the same five, which the next revision\u2019s orders concede was the assignment and not this crossing",
+         '5d2d8e36'),
+    'receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py':
+        ("r7331 order 4 (the repair stride): L147_two_arm named as the block to repair FIRST. The trunk later kept the other seat\u2019s repair of the same five, which the next revision\u2019s orders concede was the assignment and not this crossing",
+         '5d2d8e36'),
+    'receipts/L147_two_arm/B3_a_dichotomy_stated_is_not_a_dichotomy_proved.py':
+        ("r7331 order 4 (the repair stride): L147_two_arm named as the block to repair FIRST. The trunk later kept the other seat\u2019s repair of the same five, which the next revision\u2019s orders concede was the assignment and not this crossing",
+         '5d2d8e36'),
+    'receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py':
+        ("r7331 order 4 (the repair stride): L147_two_arm named as the block to repair FIRST. The trunk later kept the other seat\u2019s repair of the same five, which the next revision\u2019s orders concede was the assignment and not this crossing",
+         '5d2d8e36'),
+    'receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py':
+        ("r7331 order 4 (the repair stride): L147_two_arm named as the block to repair FIRST. The trunk later kept the other seat\u2019s repair of the same five, which the next revision\u2019s orders concede was the assignment and not this crossing",
+         '5d2d8e36'),
+    'receipts/L165_defining_the_sum/S1_seven_necessary_conditions_on_the_measure.py':
+        ("r7331 order 4 (the repair stride): L165_defining_the_sum named as the second block, the densest this seat holds; repaired row by row and taken whole by the trunk",
+         '5d2d8e36'),
+    'receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py':
+        ("r7331 order 4 (the repair stride): L165_defining_the_sum named as the second block, the densest this seat holds; repaired row by row and taken whole by the trunk",
+         '5d2d8e36'),
+    'receipts/L165_defining_the_sum/S3_c6_is_a_theorem_not_a_condition.py':
+        ("r7331 order 4 (the repair stride): L165_defining_the_sum named as the second block, the densest this seat holds; repaired row by row and taken whole by the trunk",
+         '5d2d8e36'),
+    'receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py':
+        ("r7331 order 4 (the repair stride): L165_defining_the_sum named as the second block, the densest this seat holds; repaired row by row and taken whole by the trunk",
+         '5d2d8e36'),
 }
 
 

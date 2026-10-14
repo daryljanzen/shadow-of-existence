@@ -118,11 +118,22 @@ def main():
           abs(tot[1000]/(1000**4/4) - 1) < 0.01)
 
     # the asymmetry: IR free, UV untouched
+    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order,
+    #   which sent this seat into the tail.  ** THE OWED ROW WAS THE TOKEN `$n\\ge 2$`: a LOCATOR
+    #   standing in for the claim, and a strict substring of this receipt's own longer key. **  A
+    #   range on its own says nothing about WHAT starts at two, so the condition could not fail
+    #   while the paper still printed the symbols anywhere.
+    #   ⇒ *** Replaced by the one span that names the harmonics, says they are the transverse-
+    #     traceless rank-two harmonics of the three-sphere, and gives their eigenvalues AND the
+    #     range -- claim-complete, and ONE site in the paper. ***
+    _TOWER = ('with the $Y^{(n)}_{ij}$ the standard transverse-traceless rank-two harmonics of the '
+              'unit three-sphere and Laplace eigenvalues $n(n+2)-2$, $n\\ge 2$')
     check('⛭ and the tower starts at n = 2: NO zero mode and no soft region, so the INFRARED is '
-          'regulated by compactness for free',
-          '$n\\ge 2$' in p10)
+          'regulated by compactness for free -- asserted as the clause that names the harmonics '
+          'and gives their range together, in place of the bare range',
+          _TOWER in p10)
     check('while the UV degree is the generic one -- so the compactness buys the IR and not the UV',
-          abs(tot[1000]/(1000**4/4) - 1) < 0.01 and '$n\\ge 2$' in p10)
+          abs(tot[1000]/(1000**4/4) - 1) < 0.01 and _TOWER in p10)
 
     # and what P10 asserted
     # ⛭ RE-PINNED r3938.  `the standard problem of the interacting theory` was REMOVED from P10 at

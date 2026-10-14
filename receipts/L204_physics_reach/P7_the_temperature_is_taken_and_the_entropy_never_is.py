@@ -187,11 +187,30 @@ def main():
           'thermodynamics of an idealisation' in allp)
 
     # ⓷ the cosmological horizon, and it is load-bearing
+    # ⛭⛭ r7334+60, PO-78's repair stride, the single-row tail -- EDITED ON `r7333` ④'s order.
+    #   ** THE OWED ROW WAS THE TOKEN `\beta=2\pi\alpha`, standing at TEN sites across the corpus
+    #   and sitting as the second arm of a conjunction whose first arm stopped before the period. **
+    #   *So the conjunction of a clause and a formula IN A FILE stood for what one sentence says,
+    #   and the formula could have been matched in any of the nine other places it appears.*
+    #   ⇒ *** Replaced by the one sentence that carries the mechanism AND its period together, read
+    #     through the markup normaliser the gate layer compares with, so a content-intact rewording
+    #     does not break it while a changed period still does. ***  ONE site.
+    def _unmark(s):
+        for _ in range(4):
+            s2 = re.sub(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}', r'\1', s)
+            if s2 == s:
+                break
+            s = s2
+        return re.sub(r'\s+', ' ', s.replace('$', '').replace('~', ' ')).strip()
+
+    _GH = ("The quantum of action enters through the de Sitter horizon's Gibbons--Hawking thermal "
+           'state, a Euclidean continuation of period $\\beta=2\\pi\\alpha$')
     check('⛭⛭ AND THE COSMOLOGICAL HORIZON IS THE OPPOSITE CASE, AND LOAD-BEARING: "The quantum of '
           "action enters through the de Sitter horizon's Gibbons--Hawking thermal state, a Euclidean "
-          'continuation of period $\\beta=2\\pi\\alpha$"',
-          "The quantum of action enters through the de Sitter horizon's Gibbons--Hawking thermal "
-          'state' in allp and '\\beta=2\\pi\\alpha' in allp)
+          'continuation of period $\\beta=2\\pi\\alpha$" -- asserted as the ONE sentence carrying the '
+          'mechanism and its period, over a markup-normalised read, in place of a clause conjoined '
+          'with a formula that stands at ten sites',
+          _unmark(_GH) in _unmark(allp))
 
     al = sp.Symbol('alpha', positive=True)
     beta = 2*sp.pi*al
