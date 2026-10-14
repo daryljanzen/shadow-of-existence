@@ -2555,6 +2555,27 @@ theorem sds_accel_is_rKG {e h : ℝ → ℝ} (he : ∀ s, e s ≠ 0) (hh : ∀ s
 
 end SweepB7
 
+/-! ## `r7315`, B8 — receipt 38: on the energy family the radial acceleration vanishes exactly where THE
+connection's slice curvature does, at the Hubble–Eddington radius `r³ = Mα²`: force balance IS the flat locus -/
+
+section SweepB8
+
+open Filter Topology in
+/-- **B8, receipt 38.** `r̈ = 0 ↔ K_G = 0 ↔ r³ = Mα²`, for `r > 0` on any member of the family. -/
+theorem sds_balance_is_flat {r v : ℝ → ℝ} {E M α t a : ℝ} (hα : α ≠ 0) (hr : HasDerivAt r (v t) t)
+    (hv : HasDerivAt v a t) (hrt : 0 < r t) (hvt : v t ≠ 0)
+    (hE : ∀ᶠ s in 𝓝 t, v s ^ 2 = E ^ 2 - fSdS M α (r s)) :
+    (a = 0 ↔ 1 / α ^ 2 - M / r t ^ 3 = 0) ∧ (a = 0 ↔ r t ^ 3 = M * α ^ 2) := by
+  have hacc := accel_rKG hr hv hrt.ne' hvt hE
+  have h1 : a = 0 ↔ 1 / α ^ 2 - M / r t ^ 3 = 0 := by
+    rw [hacc, mul_eq_zero, or_iff_right hrt.ne']
+  refine ⟨h1, h1.trans ⟨fun h => ?_, fun h => ?_⟩⟩
+  · field_simp at h; linarith
+  · have hM : M ≠ 0 := fun h0 => (pow_ne_zero 3 hrt.ne') (by rw [h, h0, zero_mul])
+    rw [h]; field_simp; ring
+
+end SweepB8
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2643,3 +2664,4 @@ end ShadowProbe
 #print axioms ShadowProbe.sds_two_ranges
 #print axioms ShadowProbe.accel_rKG
 #print axioms ShadowProbe.sds_accel_is_rKG
+#print axioms ShadowProbe.sds_balance_is_flat
