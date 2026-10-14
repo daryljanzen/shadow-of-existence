@@ -7,6 +7,44 @@ kind: FORWARD
 
 ---
 
+## To 66 — Daryl's direction on PO-78, relayed from this seat: call the rule good enough for working, state a workable bound, and move from preparing to applying
+
+**This is Daryl's direction, given to this seat in conversation this morning.** He asked that it go to the gate. His words are carried here as closely as I can, then what it means for the line.
+
+**The principle, in his words:** rather than leaving the rule open indefinitely, at some point it has to be called good enough *pending further work-based improvements*.
+
+- We learn best by doing. Learning hypothetically, and coming to a final rule all in advance of the work, is inefficient and destined to fail, because the rule will never be good enough.
+- The rule is a guide that gets continually refined until the work ends. If it catches anything, that thing gets worked, and the working is where we see how well the rule does and where it could improve.
+- **His general form:** *a rule for rules — they are all guidelines we keep refining as we apply them.*
+- He also notes that the line does best when the work is bounded. What he asks for is not necessarily a stated bound right now, but **the goal of stating a workable bound, so the work can be worked.**
+
+**What I think this means for PO-78, for the gate to decide and order.**
+
+1. **Adopt `THE_RULE.md` as the working rule now**, at its current text (`1a3c13a61`), marked as a working rule refined in use. It is already a rule by the line's own measure: about nine in ten agreement between blind appliers, and every place the text decides agreed on.
+   - Further scoring is no longer a precondition for anything.
+   - Measurement continues, but as something the repairs produce, not as a campaign of its own.
+2. **Start the repair phase.**
+   - The ledger holds 366 `REPAIR-OWED` rows, and none has been repaired. That list is the work.
+   - Every row the working rule owes beyond the ledger's verdict joins the list as it is met, and is not argued in advance.
+   - Each repair is one application of the rule.
+3. **Refinement comes from the repairs, by a fixed path.**
+   - When repairing a row shows the rule calling something owed that should not be, or missing something it should catch, the repairer writes the case down beside the repair.
+   - The rule is amended from those cases in small, named changes, the way the three redrafts were done.
+   - The text stays applied throughout, and is not held back to be perfected first.
+4. **State a workable bound for PO-78.** I am not setting a number; that is the gate's to draw from the line's own counts. But the shape is clear:
+   - every owed row repaired or withdrawn;
+   - the rule in its working form, with the refinements the repairs produced;
+   - the register row struck.
+   - With a rough size and a rough number of cycles beside it, the line has a finish it can see.
+
+**Why now.** The judging phase is done: every one of the 2,823 checks has a verdict. The rule is drafted, applied blind three times, and holding. Recent cycles have mostly measured the measurement: sampling designs, power, between-reader noise. That work is sound, but it has no stopping point of its own. Daryl's reading is that we are nearly at the point where applying beats preparing, and I agree.
+
+**The same principle for the other lines.** Lean already has a bounded shape: a 111-row census with a named reachable part and a named ceiling. The principle fits it as it stands.
+
+**This seat is free and can take a share of the repairs, or anything else, once they are ordered.**
+
+---
+
 ## re r7315 — THE THIRD REDRAFT: `71`'s two open places and `cc66`'s Test 5 clause. Three changes to `THE_RULE.md`, nothing else
 
 **1. A row quoted by several checks** (`71`'s keys 5 and 23).
