@@ -10,6 +10,81 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⛭⛭⛭ `r7331` — **YOU ARE SECONDED TO THE LEAN LINE'S CAMPAIGN `2`, NOT REPLACED BY A NEW SEAT. ⛔ YOUR REPAIR STRIDE IS RE-CUT AWAY AND GOES TO `cc66` AND `60`. ⌗ AND `r7329`'s STRIDE BALANCED ON THE WRONG UNIT, WHICH IS MINE**
+
+*Daryl asked whether the second formalisation seat `r7329` approved is a secondment or a new node `72`,
+preferring secondment **if there is capacity with the rest of it**. There is. **You are it.***
+
+### ① WHY YOU, AND IT IS NOT THAT YOU HAD SLACK — YOU HAD THE LEAST
+
+*The two fronts want different kinds of seat.*
+
+- ⛭ ***The Lean block is the one job on the board designed for a seat with no history in it.*** *`71`'s
+  interface, specified at `r7317` and built at `r7327`, has the second seat **writing a metric's values
+  and partials against a recipe and never reading `71`'s proofs.** That is the lowest-context job
+  anywhere on this line.*
+- ***The repair stride is the opposite.*** *It wants the seat that VERDICTED the prefix, because the
+  repairer has to recognise what the check was trying to assert — and that recognition is what the
+  bound's refinement clause runs on.*
+- ⌗ ***And the instrument role the phase change retired was yours.*** *The applier machinery is closed,
+  the sweep is done, the enumeration is ported. **What you are freest of is exactly what ended at
+  `r7329`**, and what you are demonstrably good at — disciplined pre-registration over independent units,
+  filed raw — is what `24` independent instance proofs need.*
+
+### ② THE ARITHMETIC, BECAUSE THE ANSWER TURNED ON IT RATHER THAN ON PREFERENCE
+
+| | `PO-78` | Lean campaign `2` | both clear |
+|---|---|---|---|
+| three seats + a new `72` | `3`–`4` cycles | `4`–`6` | ≈ `6` |
+| **two seats, you seconded** | ***`4.2`–`6.2*** | ***`4`–`6*** | ***≈ `6*** |
+| three seats, Lean single-seat | `3`–`4` | `8`–`12` | ≈ `12` |
+
+***So the secondment reaches the same horizon a new seat would have bought, without the seat.*** *The
+Lean figure is `≈ 2{,}900` lines at your new front's measured `250`–`360` a cycle.*
+
+⛔ ***AND THE TRIGGER THAT REVERSES IT IS NAMED NOW, NOT LATER:*** *both rates in that table are
+unmeasured — `11`–`16` receipts a seat a cycle is my own prediction and `250`–`360` lines is `71`'s from
+two cycles. **If the first stride's MEASURED per-receipt cost puts `PO-78` past the band's top of `8`
+cycles, you come back and the Lean block goes single-seat.** The decision is reversible by measurement
+rather than defended.*
+
+### ③ ⌗ AND `r7329`'s STRIDE BALANCED ON THE WRONG UNIT — MINE, ONE REVISION AFTER I WROTE THE HEADER
+
+*`THE_REPAIR_STRIDE.tsv` said in terms that **the receipt is the unit of repair** and then balanced the
+three seats on ROWS at `122` each — which came out `49`, `43` and `43` receipts, and on the re-cut to two
+produced `74` against `61` before I looked. **Balanced on receipts it is `68` and `67`.***
+
+⇒ ⌗ *A rule stated in a file's header and not applied to the file's body: **member `83`, in my hands, one
+revision after writing the header.** No new member — the count holds at `91` and this is `83`'s fifth
+face.*
+
+### ④ WHAT YOU DO, AND WHEN
+
+1. ⛔ ***Do not start the Lean rows until `71` reports the `40`-line probe split done.*** *The split is
+   what stops the two of you working one file. **Until it lands you are on your repair tail and the
+   nightly** — and your stride is re-cut away as of this revision, so the tail means the nightly.*
+2. ***Then take the assignment `71` proposed, unchanged:*** *the **Einstein-tensor rows (`13`, `48`, `49`,
+   `51`, `54`) and the three foliation rows**. `71` takes the Kretschmann rows, which share the table
+   pattern.*
+3. ***Everything you need is already on the trunk and none of it is a proof of `71`'s to read:*** *the
+   cutoff lemma (`63` lines — `B`'s near-the-point caveat is now a theorem), the row-`45` pilot as a
+   template (`149`), and the `44`-line coordinate recipe (`co_d1`/`co_d2`/`pr_d1`/`pr_d2`) every reopened
+   row reuses.*
+4. ***Work in your own instance file***, *which is what the split is for. **Pre-register each instance's
+   cost against `71`'s measured band (`60`–`170`, mean `90.3`), failable, with its decisive fraction**, and
+   file the probe run raw as you have filed everything else.*
+5. ⌗ ***Read `71`'s `ROWS.tsv` and `r7327_71_cutoff_pilot/` for the template and the recipe.*** *You do
+   not need `CurvatureProbe.lean`'s proof bodies and should not spend a cycle on them — if you find you
+   do need one, that is a defect in the interface and I want it routed rather than worked around.*
+
+### ⑤ WHAT STAYS YOURS
+
+- ✔ ***The nightly.*** *Unchanged and still the only guard on the live-subject class. `refs/ci/nightly` is
+  live — read it, **name the red receipts**, and route the push step back to me if it failed.*
+- ✔ ***`π_d` and the decisive fraction on anything you register***, *which now means your instance bands.*
+- ⛔ ***Still stopped: the applier machinery.*** *No blind applications, no crossover, no held sets. The
+  within-pool `π_d` is a recorded stated limit, not an order.*
+
 ## ⛭⛭⛭ `r7329` — **THE REPAIR PHASE STARTS AND YOU HAVE `122` ROWS IN `43` RECEIPTS OVER `24` PREFIXES. ⛔ AND YOUR DECISIVE FRACTION IS THE MEASUREMENT CAMPAIGN'S VERDICT ON ITSELF, WHICH IS WHY THIS IS THE CYCLE IT ENDS**
 
 *`d31aae800` through `53ffb2fb4` merged and landed.*
