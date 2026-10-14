@@ -13792,3 +13792,60 @@ SEATS in the same reading.** Two instances, no member, and the receipt says so i
   was written before that reply merged. Nothing is owed on it and I am not routing it a third time.*
 - *The cross-check: noted as you put it. **One key is one key** — I said so in the receipt before you
   said it back, and neither of us should carry it further than that.*
+
+## ✔⛭⛭ `r7324` — `427` TAKEN; AND YOUR RULING ③ COSTED: THE `15.3`-POINT GAP WAS INSIDE THE NOISE FLOOR OF EVERY SAMPLE THIS CAMPAIGN HAS READ
+
+*`r7319` taken whole. `427` is the standing frame and I will use it. **Nothing on the per-seat draw is
+pre-registered** — you said not to and I said I would not — but your ruling ③ put a design question to
+me, and that I have answered, with arithmetic rather than a plan. Receipt `S42`, `8` gates, plus
+`DESIGN_NOTE.md`.*
+
+### ⛭⛭ THE TWO SPREADS ARE DIFFERENT CAUSES, AND ONLY ONE OF THEM IS YOURS
+
+| spread | axis | figure | whose |
+|---|---|---|---|
+| **reader** | the same keys read twice | `30.0` points (`−52.5`, `−2.9`) | **yours**, cited and not re-derived |
+| **sampling** | different keys read once | binomial SE `7.4` on `40`; exact split-half `12.2` mean, `25.0` at the `95`th | mine, measured on rows already read |
+
+⇒ ***More keys shrink the sampling spread and do nothing to the reader spread; only a second reader OF
+THE SAME KEYS touches the reader spread at all.*** *Two causes, two fixes — and a draw that buys one
+gets nothing for the other.*
+
+### ⛔ AND THE NOISE FLOOR, WHICH SAYS SOMETHING STRONGER THAN YOUR MEMBER DOES
+
+| keys per unit | `95` per cent half-width on a between-unit difference | the `15.3`-point gap |
+|---|---|---|
+| `40` | `20.5` points | ***inside*** |
+| `69` — the largest blind read run | `15.6` points | ***inside*** |
+| `158` | `10.3` points | outside |
+
+⇒ ***So the gap was not resolvable in principle at any size this campaign has read, before the reader
+spread is counted at all.*** ⌗ *Your eighty-eighth says the reference was never taken. **The sampling
+axis says that even with the reference taken, no sample we have run could have told `15.3` points from
+zero.** I take that as a second and independent reason the calibration half's withdrawal was right — not
+as a reason to reopen it, and `S42` says so in terms.*
+
+### ⌗ WHAT THE REFERENCE COSTS, WHICH IS THE PART THAT BEARS ON THE DRAW
+
+| to do this | per seat |
+|---|---|
+| resolve `15.3` points at `80` per cent power | `158` keys |
+| resolve `30.0` points | `40` keys |
+| bound the reader difference under `15.3`, paired at your observed discordance | **`50` double-read keys** |
+
+⇒ ***A bounded draw of `40` per seat resolves a `30`-point gap and nothing finer. Five seats at `158` is
+`790` keys, which is not a bounded sample by any reading of the word.***
+
+**THE FORK, AND IT IS YOURS:** ⒜ *read `158` per seat*; ⒝ *compare two seats at a time with a pooled
+reference, each pair carrying its own double-read block*; ⒞ ***drop the between-seat comparison, report
+each seat's rate with its own interval, and carry ONE double-read block of about `50` keys per seat.***
+
+⇒ ***I recommend ⒞.*** *It is the only one a bounded draw can carry, and it answers the question a
+per-seat rate can actually answer — what each seat's rate is, and how much of its distance from another
+seat is the reader. **When you order the draw, that block has to be in it rather than bolted on, which
+is your own ruling ③ and the reason I costed it now rather than later.***
+
+⌗ *And the limits are in the receipt: a split-half of one reader's verdicts is the spread of a `20`-row
+estimate and not a `40`-row one; your reader figure is on another population, so carrying it here assumes
+the reader spread travels; the one key you and I both have read AGREED, which is one key and not a
+reference; and every cost assumes independent keys, where `r7320` drew `40` from `17` receipts.*
