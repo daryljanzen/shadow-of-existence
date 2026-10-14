@@ -13580,3 +13580,132 @@ direction. ⇒ *It was never the counter race the gate's own narrative assumes: 
 third line's ANSWER to an order carrying the order's own number, the prevention is the suffix form and
 it is already in use across `12` seats, and ordering it binds other seats so it is routed to you with
 the evidence rather than taken.*
+
+## ⛔⛭⛭⛭ `r7320` — THE BOUNDED SAMPLE YOU ORDERED AT `r7313`: `27` OF `40` WITHDRAW, AND MY BAND IS REFUTED
+
+*Three commits in this order, and the first two were pushed before one row was read: `848a1db2` the
+pre-registration — population `168`, SIZE `40`, the draw, the three outcomes, the band `8`–`16`, centre
+`11`, and both refutation conditions; `c9322295` the draw, run from the published salt; then the
+reading. **Receipt `S40`, `17` gates.** Second redraft (`6bef6fd5`), as you specified, not the first.*
+
+| | |
+|---|---|
+| **WITHDRAWN** | **`27` of `40`** — `67.5` per cent |
+| **HELD** | `11` |
+| **MOVED** (`MEANING-HELD`, counted out of the registered quantity) | `2` |
+| registered band `8`–`16` | ***FAILED, above*** |
+| central guess `11` | out by a factor of `2.5` |
+| registered refutation at or above `25` | ***MET*** |
+
+⇒ ***So the claim I made at `r7318` is refuted, in the direction my own pre-registration named and not
+in the flattering one.*** *I said the early era's shortfall was substantially a matter of WHEN it was
+read, and that re-reading early rows with the instruments should bring them to about the
+post-instrument era's `25.7` per cent. **They do not come to `25.7`. They come to `67.5`, which is
+where the rule's own aggregate rate already sat — so on these rows the superset gap you verified at
+`r7313` is a difference of STANDARD and not of era.*** ⌗ *Scored against the figure I gave you as a
+guess rather than a measurement, "the high twenties", the guess was wrong by the same factor.*
+
+### ⛭⛭ AND THE PART THAT IS WORTH MORE THAN THE SCORE: WHAT TAKES THEM IS NOT THE ERA
+
+| ground | rows |
+|---|---|
+| **Test `1`** — the span is cut INSIDE its own sentence, so its subject or its condition stays outside | `11` |
+| **Test `5`** — one compound label over several arms, each found independently, nothing joining them | `11` |
+| Test `3` — a code string standing in for what a tool does, in a check that never runs it | `4` |
+| Test `4` — a bare `243` occurring three times in the block its check reads | `1` |
+| step `4`'s third bullet — the clause the redraft added for this era | ***`0`*** |
+
+⇒ ***`22` OF THE `27` FALL TO TWO GROUNDS, AND NEITHER IS A PROPERTY OF THE ERA. Both are properties
+of how I CUT A GATE.*** *A span taken out of the middle of a sentence leaves its subject or its
+condition behind it; a compound label over three `in` tests leaves each test carrying a claim it
+cannot reach alone. **Reading those rows earlier or later would not have moved either one.** ⌗ And the
+clause `69` added for exactly this era took nothing: every fragment that could have fallen at step
+`4`'s third bullet fell at Test `1` first, one step earlier and naming the words left outside.*
+
+⌈ ⌗ *The sharpest single instance, because it is my own finding turned on my own pin: the `r7192` row
+pinning `the dipole $L=1$ pure gauge` is owed at Test `1` because the TOWER the parenthesis belongs to
+stays outside the span — which is precisely what that receipt was written to establish.*
+⌊ ⌗ *And one that was already a repair: the `r7258` re-cut of `determine the hypercharges completely`
+fixed a mid-word clip and still does not reach its subject.*
+
+### ✔ WHAT HELD IS A REPAIR RECIPE, AND IT IS SHORT
+
+*All `11` held rows are one of three shapes and nothing else held: a value, a formula or a NAME used as
+data (`6`, two of them read by PARSING the other receipt rather than quoting it); a WHOLE clause where
+the claim is that the file states it (`3`); a single unchanged line whose text IS the fact (`2`).*
+
+⇒ ***Pin a value, a name, or a whole clause. Never a span out of the middle of a sentence, and never
+several arms under one label.***
+
+⌗ *The spelling border took nothing either. One row of the `40` reads its target through a markup
+normaliser, and my own `ENCODING-OK` table decides it rather than leaving it open — the paper's
+`\emph{is}` and the read's `is` go to one string, needing the `braces` step, the `emphasis` step alone
+leaving `{is}`. Held on its content, `ENCODING-OK` on its spelling arm.*
+
+### ⛔ THE FORK, WHICH IS YOURS AND NOT MINE: DO THE `27` BECOME LEDGER VERDICTS?
+
+*I have verdicted NOTHING. The receipt asserts that as a specific negative: no drawn row carries an
+`r7320` verdict, and the ledger is byte-identical across both pinned commits.*
+
+- ⒜ ***Land them.*** *`27` of my own rows go `REPAIR-OWED` with their tests, which adds `27` to the
+  `366` the trunk already carries. ⌗ **And your `r7315` repair lands on my own framing here: I had
+  written that the backlog was closed with `0` in every class. The VERDICTING one is; the REWRITING
+  one is the campaign these rows would join, and it is open.** The campaign's own rule says a row is
+  the record of a RECEIPT, so the repairs would be owed on mine, reaching `11` of them.
+- ⒝ ***Hold them as a reading.*** *The table stands as a finding in `r7320`'s directory, the ledger is
+  untouched, and the question of what the rule's standard does to `1{,}665` pre-`r7260` rows stays
+  open rather than being answered `27` rows at a time by the seat that scored them.
+
+⇒ ***My recommendation is ⒝, with one amendment: land the `11` REPAIRS and not the `27` verdicts.***
+*The recipe above is specific enough to act on, and repairing a gate makes its row `DELIBERATE` by
+construction — so the work the withdrawals name can be done WITHOUT re-opening the backlog, and the
+ledger never carries a verdict a sample produced. ⌗ If you want ⒜ instead, the table is in the form a
+ledger pass needs and I will land it in one revision.* ⛔ *Either way, `r7313` is explicit and I am
+not reading past it: this is a finding and not an order to re-read the era.*
+
+### ⛭⛭ AND THE ONE CHECK ON THIS THAT DOES NOT RUN THROUGH ME — `71` LANDED WHILE I WAS READING
+
+*`71`'s blind application of the same redraft to `70`'s held set came in at `r7315`. Different
+population, different seat, nothing seen. I did not know the figures when I registered the band.*
+
+| | `71`, blind, `69` keys | me, self, `40` keys |
+|---|---|---|
+| owed | `50` — `72.5` per cent | `27` — `67.5` per cent |
+| first ground | **Test `1`, `21` of `50`** — `42` per cent | **Test `1`, `11` of `27`** — `41` per cent |
+| second ground | **Test `5`, `12`** | **Test `5`, `11`** |
+
+⇒ ***And one key is in BOTH samples: `$D_M=D_C$`. `71` decides `DELIBERATE` at step `2`'s second
+bullet, because the claim lists its four pieces as each present, which says something about each piece
+ON ITS OWN. I held it at step `2` for the same reason, in the same words.*** *On the one key where a
+blind reader overlaps my self count, the self count does not move — which is the only evidence
+available about its direction, and I would rather hand you that than my assurance.* ⌗ *`71` also names
+the same cause for the second ground: the joint-piece paragraph sends a claim about pieces TOGETHER to
+Test `5` instead of step `2`, and on their population Test `5` doubled.*
+
+### ⌗ AND `71`'s NEW OPEN PLACE, MEASURED HERE — WITH A DISCRIMINATOR THAT FALLS OUT OF THE RULE
+
+*`71` filed: a row several checks quote with different results, and left `2` of their `4` UNDECIDED on
+it. On my `40` the configuration arises `8` times, and `4` of the `8` are decided by a ground that is a
+property of the SITE.*
+
+⇒ ***Tests `1`, `2` and `4` are properties of the SITE and cannot differ between checks; step `2` and
+Tests `3`, `5`, `6`, `7` are properties of the CHECK and can. So the open place only arises when no
+site ground is met*** — *which is `4` of my `8`, and in those four the claim is joint or several alike
+in both checks, so none disagreed.* ⌗ *For the case where they would, my proposed tie-break is **owed
+if any check owes it**: the pin is one key, and a repair is owed if any of its uses is defective. **I
+am not writing it — the rule is `69`'s and the order is yours.***
+
+### ⚠ AND THE LIMIT, WHICH I DECLARED BEFORE THE DRAW AND NOW HAVE TO STAND ON
+
+*This is a SELF count. I said in the pre-registration that the figure is not independent of me and that
+the band was the only protection against a seat who had just argued the early era is weak finding that
+it withdraws. **The band is the thing that failed.** So what I can offer you that does not require
+trusting my reading is the machinery: the draw reproduces from a salt published before it ran, and each
+of the three grounds is corroborated by parsing or counting at a pinned commit rather than by my
+judgement — Test `5` by parsing every one of the `11` receipts, Test `1` by measuring at the site, Test
+`3` by showing the deciding condition contains no call at all.*
+
+⌗ *Still owed from `r7318` and still not started: the prefix-matched comparison that would separate era
+from assignment inside my own rows. **This sample does not do it** — it is `40` rows of one seat in one
+era, it says nothing about another seat's early rows, and `cc66`'s rate moves the other way across
+`r7260`.*
