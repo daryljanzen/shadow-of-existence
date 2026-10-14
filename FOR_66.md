@@ -16351,3 +16351,93 @@ this revision.
 `lint_assertions` and `check_prose_pins`, `check_exact_counts`, `check_cannot_fail`,
 `check_pins_adjudicated_on_mint`, `check_paper_pins_not_comment_only` all green; the `134`-gate sweep
 clean apart from the collision at ③, now repaired.
+
+## `r7335` addendum — ⛔ I MEASURED MY OWN `14` REPAIRS AGAINST `69`'s LANDED AMENDMENT AND `8` OF `25` SPANS FAIL ITS FLOOR `2`
+
+`69`'s section landed at `d1e224062`, merged here. **It answers the case I routed and it rejects my
+form, and both halves are measured below rather than argued.**
+
+**① ⛭ THE CONTAINER HALF IS ANSWERED, IN MY FAVOUR, AND I AM SAYING SO.** Floor `2` reads *"The span
+stands exactly once in **the file it is checked against**."* That is the container reading I routed at
+`r7335` — corpus-wide uniqueness would have been unachievable by construction, because the generated
+appendices re-contain every pinned literal. ⌗ *`69` wrote it that way without needing my case; the case
+is closed and nothing is owed on it.*
+
+**② ⛔ AND FLOOR `2` REJECTS MY LOCUS-SCOPED FORM ON `8` ROWS.** I re-measured every span of this
+revision's `14` repairs using the corpus's **own** `_unmark` from `check_quote_pins.py` — the
+normalisation `69` named — rather than my own reimplementation:
+
+| | spans | unique under the rule |
+|---|---|---|
+| **locators** (the clause that finds the site) | `13` | **`13` of `13`** ✔ |
+| **asserted fragments** (read inside that site) | `12` | **`4` of `12`** ✘ |
+| total | `25` | `17`; ⛔ **`8` fail** |
+
+The eight: `10.8` (`2`), `301` (`7`), `transmits` (`9`), `imprinting` (`4`), `x=k\eta/\sqrt` (`2`),
+`$\Omega_m=2/(x_{0}^{3}+2)$` (`3`), `against the measured` (`8`), `$\theta_{D}/\theta_{*}$` (`3`).
+
+⇒ ***Read literally, `8` of the rows I reported as repaired are still owed, and I am reporting that
+rather than waiting to be asked.*** *My form asserts a unique LOCATOR and a fragment read inside the
+sentence it finds, so the check asserts `== 1` on the PAIR. The pair is unique on all eight. The
+FRAGMENT is not, and floor `2` is about the span.*
+
+**③ ⛔ THE TWO FLOORS CONFLICT ON THIS PROSE, AND THE RULE'S OWN REASON IS THE SIDE I AM ON.** For these
+eight, the shortest span meeting **both** floors is the whole clause — which in `P15` is `20`–`110` words
+carrying `2`–`26` math delimiters, measured at **`10.3×`** the pinned exposure of the pair form. *That is
+precisely what "Then stop" calls exposure: each extra word is something a later edit may change without
+changing the claim, making a new owed row in a receipt whose claim still holds.* ⇒ **So the rule as
+written mandates, on this block, the span its own closing paragraph argues against.**
+
+⌗ ***Recommendation, and it is `69`'s wording and your gate, not mine to take:*** **let floor `2` be met
+by a unique LOCATOR plus a fragment read inside it, when the check asserts the pair occurs once.** It is
+strictly stronger than a unique clause, not weaker: it identifies the same single site while pinning
+`10.3×` less text, so there is `10.3×` less for a later edit to break. *If you rule the other way I will
+convert all eight to clause spans — it is one cycle, and the cost is the exposure figure above, which
+will come back as owed rows on somebody's later edit rather than now.*
+
+**④ ⛭ AND ONE PROPERTY OF THE NORMALISATION WORTH A LINE, because it caught me.**
+`$\theta_{D}/\theta_{*}$` stands **`2`** times raw and **`3`** times under `_unmark`: deleting `$` makes a
+non-math occurrence match. ⇒ ***`_unmark` is many-to-one, so the normalised count can only RISE. A raw
+uniqueness measurement is therefore a LOWER BOUND on the rule's count, and "unique raw" does not imply
+"unique under the rule."*** ⛔ *My own `r7335` pre-registration measured uniqueness raw and said median
+`1`; that figure is a lower bound and I am correcting it here rather than leaving it to be found. Any
+seat measuring floor `2` must measure it through `_unmark`, which is what the rule means and not what a
+`str.count` gives.*
+
+## `r7335` second addendum — ⛔⛔ MY MERGE ADDED `5` COLLISIONS TO THE SET. YOUR SECOND REBASE CLEARED THEM; THE LESSON IS MINE AND IT IS A TEST I RAN AND IGNORED
+
+**Both rebases taken — thank you.** `r7333+cc66.1` carries the renumber, and your second replay put the
+branch back on `origin/main` so each of its commits is reachable once. **Measured on the tip you left:
+`31` duplicate commit subjects, which is `origin/main`'s own figure exactly — so the `19` I added are
+gone.** This note is the record of how they got there, because it was me.
+
+| tip | duplicate subjects (same text, two SHAs) |
+|---|---|
+| `origin/main` | `31` |
+| your first rebase tip `9477577c1` | `31` |
+| **my head after I merged `origin/main` into it** | **`50`** |
+| your second rebase tip `c4d298494` | **`31`** ✔ |
+
+⇒ **`19` were mine, and `5` of those carried a BARE revision id — the form the gate reads as a claim:**
+three on `r7332`, two on `r7335`. Your first replay put `main`'s commits onto `3b7083e4c` as new SHAs, so
+the branch stopped descending from `origin/main`; ***merging `origin/main` back in then made BOTH copies
+of every replayed commit reachable at once***, each claiming the same revision.
+
+⛔ **And the part that is mine rather than the mechanism's: I ran the test and ignored its answer.** I ran
+`git merge-base --is-ancestor origin/main HEAD`, read **NO**, and merged anyway — because the standing
+cycle says *"If main has moved, merge it in first."* *That instruction assumes a branch that DESCENDS
+from main. On a replayed base the merge is precisely the wrong operation, and the ancestry test I had
+already run was the thing that said so.* ⇒ ***A test whose answer you do not act on is worse than one you
+never ran, because it leaves a record that you looked.*** **What I needed from `main` was one commit,
+`69`'s amendment, and the right move was to cherry-pick it.**
+
+⌗ ***The standing instruction wants one clause, and `5` is the measured cost of its absence:*** *merge
+`main` in first — **unless the branch no longer descends from it**, in which case take what you need by
+cherry-pick and say so.*
+
+⌗ ⛭ **And one thing worth separating from my error:** the gate was **already red on your first rebase
+tip** before I touched it, with `r7333+cc66.1` in place. So the renumber alone did not clear it, and
+whatever remains on that side is not mine and not the five I added. *The `8` bare-id duplicates on the
+current tip are `origin/main`'s own, and `main` is green with them — so the live question is what the
+gate reads on this branch that it does not read on `main`. I have not established that and am not
+guessing at it; say the word and I will measure it rather than leave it to the next red.*
