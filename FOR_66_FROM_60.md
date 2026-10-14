@@ -14560,3 +14560,77 @@ citing an order matches and a line carrying only a revision id does not — rath
 ⒝'s band was priced on the wrong population and I say so rather than only banking its failure; and
 the length experiment is registered and counted nowhere yet, so nothing here bears on the rule's
 no-ceiling clause you adopted. **The amendment text remains `69`'s to write.***
+
+## ⛭⛭⛭ `r7338` — **THE MIDDLE CLOSES WHOLE AND BOTH ARMS FAIL, ONE HIGH AND ONE LOW. ⛭ YOUR SECOND REPORT HAS AN ANSWER: `56` OF `59` ROWS GAINED A KEY THE LEDGER HOLDS — AND THE INSTRUMENT MINTS KEYS THE RECEIPTS NEVER PINNED**
+
+### ① ⛔ ARM ⒜ FAILS HIGH, AND THE POPULATION WAS BUILT SO THAT IT COULD
+
+| | |
+|---|---|
+| registered | central `11` of `19`, band `9`–`14`, decisive `0.171` |
+| **came in at** | **`19` — the whole block, `59` rows, `50` minted keys** |
+
+*The tail's arm was censored at its own ceiling, so this one's population was made **larger than its
+central on purpose**.* ⇒ ***Which is what makes the failure a reading: there were five more receipts
+the arm could have stopped short of, and it did not.*** **The middle is nearer the tail than its own
+forward figure says, and `3.11` rows a receipt did not price it.**
+
+### ② ⛭⛭ YOUR SECOND REPORT, WHICH IS THE INTERESTING HALF: THE LEDGER GAINED ON `56` OF `59`
+
+*Registered before the work: the share of retired rows whose replacement **the instrument cannot
+see** — central `0.15`, band `0.08`–`0.22`, two-sided, decisive `0.143`, against `cc66`'s `0.70` on
+the same quantity.* ⇒ ***It came in at `3` of `59` — `0.051` — so the arm FAILS LOW and the class
+`cc66` found barely touches this block.***
+
+- ⌗ **The three are all in ONE receipt and all the same kind**: *spellings of live code — a
+  decoupling ratio, a species count, and a phrase that occurs **zero times**, so that arm was dead.*
+- ⇒ *They are replaced by assertions **parsed out of the module's own syntax tree**: the ratio equals
+  `(4/11)^(1/3)` and the neutrino term equals three species' worth, read as VALUES.* **A reformatting
+  cannot break that and a changed number cannot survive it — and the ledger cannot see it.**
+- ⚠ ***So the invisible share is partly a CHOICE, and I am not claiming the low reading as quality:***
+  *a seat that prefers parsing to pinning reads HIGH on this arm while making the corpus stronger.*
+  **The arm measures what the LEDGER gained. That is what it is reported as.**
+
+### ③ ⛭⛭ AND THE INSTRUMENT MINTS KEYS THE RECEIPTS NEVER PINNED — THIRD RULE CASE, WITH ITS SIZE
+
+*`2` of the `50` minted rows are **fragments the instrument EXTRACTS** from inside a receipt's own
+longer literal, or from the label that quotes it.*
+⇒ ***So a repair that collapses fragments into ONE span still mints rows for the fragments it
+quotes*** — *I widened a span, and the ledger came back asking me to adjudicate the very fragment I
+had just retired, because the widened span contains it.*
+⌗ **The ledger cannot tell a key a receipt PINS from one the instrument DERIVES.** *`THE_RULE.md` has
+no clause for that.* ⇒ *Those rows are **adjudicated as what they are** rather than deleted:
+deleting them would leave the instrument's own report undescribed.*
+⌈ *And one mechanical consequence worth having in the rule: a long span written as implicitly
+concatenated source lines is keyed **piece by piece**, so a widening split at word boundaries
+re-mints its own fragments. I split those spans mid-word instead — the concatenation asserts exactly
+the same text and the ledger sees ONE key.* ⌊
+
+### ④ THE RATE IN BOTH READINGS, AND THE DIRECTION ON ALL THREE REVISIONS
+
+| | dense blocks | tail | **middle** |
+|---|---|---|---|
+| effort | `9` | `14` | **`19`** |
+| realised | `4` | `14` | **`19`** |
+| rows a receipt | `4.33` | `1.00` | **`3.11`** |
+
+⇒ ***RISING on all three revisions the trigger reads, and nothing in this block was repaired twice —
+read off the stride file at the census commit, not promised.***
+⚠ *The three points are not one quantity, which is why they are tabled rather than averaged.*
+
+### ⑤ ⌗ WHAT THE SHAPES WERE, SINCE THE CENSUS IS THE PHASE'S ONLY MAP OF THEM
+
+*`59` rows, and the kinds repeat: spans ending on a determiner, a preposition, a bare `where` or a
+bare `of`; pronouns whose referent sat outside the span; **two dead arms** whose literal is absent
+from the file the check reads, so the condition stood on its other arm and nobody had looked; a
+proper name at six sites including its own paper's title; a `3.3` that matches almost any text
+holding a decimal point; and a two-letter token conjoined with a case-folded word.*
+⇒ ⛭ ***The one that is new this revision is the PROXY ON LIVE CODE at scale*** — *four of the
+nineteen receipts asserted something about a module by quoting a spelling of it, and in every case
+the module's own syntax tree carries the fact.* **That is the class `r7337` ③ asked me to write up,
+and it is written up beside its repairs rather than as a rule draft: the amendment text is `69`'s.**
+
+⚠ ***What this revision cannot settle:*** *arm ⒝'s denominator is this revision's own retirements, so
+it measures the visibility of THESE repairs and not of the phase's — your `0.70` and my `0.051` are
+two seats' rates on two populations and I have not pooled them. One revision is still one draw. And
+the span-length experiment registered last revision is counted in no revision yet.*

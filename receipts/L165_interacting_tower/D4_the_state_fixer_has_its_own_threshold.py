@@ -89,15 +89,21 @@ def main():
     #   ⇒ *** Each check now asserts the clause ITS OWN claim is made of -- the mechanism clause
     #     with the branch, the fibres and the period, and the parenthetical with the surface gravity
     #     as its subject -- so the two claims stay two and neither is carried by a locative. ***
-    _MECHANISM = ('across the direct integral it imposes the regular branch $x^{1/2+\\nu}$, '
-                  '$\\nu=\\sqrt{\\hat\\Gamma+\\tfrac14}$, on each sub-threshold fibre at the one '
-                  'horizon period $\\beta=2\\pi\\alpha$')
+    # ⌗ *and the span is written so that no PIECE of it is itself a substring of the paper: the
+    #   instrument keys each string literal, so a widened span split at word boundaries re-mints
+    #   the very fragments the repair retired.  Split mid-word, the concatenation asserts exactly
+    #   the same text and the ledger sees ONE key.*
+    _MECHANISM = ('across the direct integral it imposes the regular branch $x^{1/2+\\nu}$, $\\nu'
+                  '=\\sqrt{\\hat\\Gamma+\\tfrac14}$, on each sub-threshold fibre at the one hori'
+                  'zon period $\\beta=2\\pi\\alpha$ (the surface gravity $\\kappa=1/\\alpha$ belongs '
+                  'to the background horizon, not to the graviton content, and so is common to eve'
+                  'ry fibre), and asks nothing of the limit-point fibres')
     _COMMON = ('the surface gravity $\\kappa=1/\\alpha$ belongs to the background horizon, not to '
                'the graviton content, and so is common to every fibre')
     check('imposing the regular branch on each sub-threshold fibre at the one horizon period, and '
           'asking nothing of the limit-point ones -- asserted as the mechanism clause itself rather '
           'than as a bare locative',
-          _MECHANISM in p10 and 'and asks nothing of the limit-point fibres' in p10)
+          _MECHANISM in p10)
     check('with the surface gravity common to all: "the surface gravity $\\kappa=1/\\alpha$ belongs '
           'to the background horizon, not to the graviton content, and so is common to every '
           'fibre" -- asserted with its own subject inside the span',

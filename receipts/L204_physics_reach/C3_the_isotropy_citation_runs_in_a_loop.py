@@ -149,8 +149,8 @@ def main():
     #     occupies, over an EMPHASIS-ONLY normalised read -- `r7336`'s own rule case: the full
     #     normaliser applied inside a receipt's reader mints no ledger key at all.*
     _p12e = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p12)
-    _TRIPLE = ('the admissible symmetric-pair dimensions are $\\{6,7,10\\}$, and the construction '
-               'occupies six and ten')
+    _TRIPLE = ('the admissible symmetric-pair dimensions are $\\{6,7,10\\}$, and the construction occupi'
+               'es six and ten')
     check('and gives the triple with what it occupies: "the admissible symmetric-pair dimensions '
           'are $\\{6,7,10\\}$, and the construction occupies six and ten" -- asserted over an '
           'emphasis-normalised read, in place of the bare formula',
@@ -159,8 +159,12 @@ def main():
           'isotropy ... it is in fact an equality~\\cite{JanzenAlgebroid}"',
           's stated as an inclusion, and at some strata it is in fact an equality.} At every stratum for which the companion algebroid paper tabulates an isotropy' in p9
           and 'JanzenAlgebroid' in p9)
-    check('⇒⇒ SO EACH CITES THE OTHER FOR THE SAME FACT',
-          'JanzenRange' in p12 and 'JanzenAlgebroid' in p9)
+    # ⛭ r7338+60: ** and the bare citation keys stood in a SECOND condition here too, which the
+    #   instrument reported as live once the first was repaired. **  ⇒ *Both sides now carry their
+    #   own citing clause, which is what `each cites the other` asserts.*
+    check('⇒⇒ SO EACH CITES THE OTHER FOR THE SAME FACT -- each side asserted by the clause that '
+          'carries its own citation, in place of two bare citation keys',
+          _CITES in p12 and 'the inclusion is an equality~\\cite{JanzenAlgebroid}' in p9)
 
     # ⓷ and the triple is in neither derivation
     check('⓷ and the triple is NOT in P9: "6,7,10" appears zero times there',

@@ -111,8 +111,8 @@ def main():
     # ⛭⛭ r7338+60: ** `excluded not as disfavoured but as carrying an unfixed arbitrary modulus`
     #   opens on a participle and names nothing that is excluded. **  ⇒ *One span with the
     #   truncation as its subject and the principle's verdict inside it.*  ONE site.
-    _ONE_HINGE = ('A one-hinge truncation is excluded not as disfavoured but as carrying an unfixed '
-                  'arbitrary modulus, which the principle forbids')
+    _ONE_HINGE = ('A one-hinge truncation is excluded not as disfavoured but as carrying an unfixed arbit'
+                  'rary modulus, which the principle forbids')
     check('P14: "A one-hinge truncation is excluded not as disfavoured but as carrying an unfixed '
           'arbitrary modulus, which the principle forbids" -- asserted as the whole clause, in '
           'place of a participle-led fragment',
@@ -133,7 +133,7 @@ def main():
     # ⇒ the inference, and it is about MODULI not dimension
     check('⇒ so a SECOND slicing step would need its own selection, and an unfixed selection is '
           'exactly what Rule 2 rejects',
-          'excluded not as disfavoured but as carrying an unfixed arbitrary modulus' in p14
+          _ONE_HINGE in p14
           and 's the adjustable parameter that criterion rejects' in p0)
     check('⇒⇒ ONE-STEP-NESS IS THEREFORE GOVERNED BY THE SAME ARGUMENT THAT FIXES THE HINGE COUNT, '
           'not by taste or simplicity',

@@ -169,8 +169,11 @@ def main():
     check('and L-165 records c54.129 as answering the COMPLETE one -- the cubic\'s apparent '
           'unboundedness is the truncation of pi^2/(1+lambda phi)',
           'TRUNCATION ARTEFACT' in arc and '1+\\lambda\\phi' in arc)
+    # ⛭ r7338+60: the same retired fragment stood in a SECOND condition of this receipt, which the
+    #   ledger instrument reported as a live key after the first was repaired -- so the repair is
+    #   carried to both sites rather than to the one the owed row named.
     check('⛭ ⇒ THE CLAUSE THAT WAS ANSWERED IS THE ONE THE CONSTRUCTION DOES NOT NEED',
-          'not need a lower bound' in straddle.lower() and 'TRUNCATION ARTEFACT' in arc)
+          _NO_FLOOR in straddle and 'TRUNCATION ARTEFACT' in arc)
     check('and the two that remain are named in the row: the UV definition of the tower sums, '
           'and the closed-form nonlinear Lambda>0 solution',
           'ultraviolet definition of the tower sums' in arc

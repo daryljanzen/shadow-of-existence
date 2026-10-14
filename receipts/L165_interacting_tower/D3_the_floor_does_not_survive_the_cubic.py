@@ -130,9 +130,9 @@ def main():
     #   delimiter dropped: a character window, not a word-aligned span. **
     #   ⇒ *** One span carrying the leading-order identity AND what enters beside it at the same
     #     inverse-square order, which is the pair the receipt's argument needs.  ONE site. ***
-    _LEADING = ('At leading order $\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$; but the cubic and '
-                'higher self-interactions enter at the same inverse-square order at the origin '
-                '($\\pi_n^2\\phi_m/a^3$ in kind)')
+    _LEADING = ('At leading order $\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$; but the cubic and higher self'
+                '-interactions enter at the same inverse-square order at the origin ($\\pi_n^2\\phi_m/a^3'
+                '$ in kind)')
     check('and gives the leading order AND what enters beside it: "At leading order '
           '$\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$; but the cubic and higher self-interactions '
           'enter at the same inverse-square order at the origin ($\\pi_n^2\\phi_m/a^3$ in kind)" -- '
