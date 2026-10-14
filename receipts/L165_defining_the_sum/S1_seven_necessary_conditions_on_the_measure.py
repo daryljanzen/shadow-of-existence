@@ -104,19 +104,40 @@ def main():
     allp = ' '.join(re.sub(r'\s+', ' ', '\n'.join(
         l for l in open(f, encoding='utf-8', errors='replace').read().split('\n')
         if not l.lstrip().startswith('%'))) for f in papers)
+    # ⛭⛭ r7332+60, PO-78's repair stride: the three owed rows of this receipt all stood on spans
+    #   read over EVERY PAPER JOINED, where each claim is about ONE paper -- P10, which states all
+    #   three conditions.  A reader for that paper alone is added so the scope of each search can
+    #   match the scope of its claim.
+    p10 = re.sub(r'\s+', ' ', '\n'.join(
+        l for l in open(os.path.join(ROOT, 'corpus', 'canonical_time.tex'),
+                        encoding='utf-8', errors='replace').read().split('\n')
+        if not l.lstrip().startswith('%')))
 
+    #   ⓵ C1 was a CO-OCCURRENCE pin: two spans whose conjunction in a FILE stood for one claim the
+    #     paper makes in one sentence, and the second of them -- `Here it does not` -- is a dangling
+    #     clause whose `it` is the path integral, named only in the first.  => ONE span covering both
+    #     halves as P10 prints them, which proves their ADJACENCY and brings the referent inside.
+    #     ONE site, count never changed.
     check('C1 · the domain excludes the conformal factor: "the path integral ranges over the conformal '
-          'factor of the metric. Here it does not"',
-          'path integral ranges over the conformal factor of the metric' in allp
-          and 'Here it does not' in allp)
+          'factor of the metric. Here it does not" -- asserted as the ONE span the paper prints both '
+          'halves in, so their adjacency is tested and the dangling `it` has its referent inside',
+          'the path integral ranges over the conformal factor of the metric. Here it does '
+          'not' in p10)
     check("C2 · the substrate's scale is not summed over: \"the substrate's scale is $\\alpha$ and is "
           'fixed---not chosen, but required"',
           "substrate's scale is $\\alpha$ and is fixed---not chosen, but required" in allp)
     n_th = len(re.findall('true Hamiltonian', allp, re.I))
     check(f'C3 · a deparametrized TRUE Hamiltonian exists ({n_th} occurrences), so the classical limit '
           'is "the evolution is recovered", not "the constraint is satisfied"', n_th > 0)
+    #   ⓶ C4 stood on `'Brown and Kucha' in allp` -- a bare attribution, TRUNCATED before the
+    #     accented character, standing for the proposition that the clock IS such a fluid.  => P10's
+    #     own phrase, which names the fluid and its role together, with the accent carried rather
+    #     than cut around.  ONE site, count never changed.
     check('C4 · the clock is a dust reference fluid in the manner of Brown and Kuchar, so a measure '
-          'must not also sum over it', 'Brown and Kucha' in allp)
+          "must not also sum over it -- asserted as P10's own phrase naming the fluid AND its role, "
+          'in place of a truncated attribution read over every paper',
+          'a pressureless (dust) reference fluid serving as the cosmic clock in the manner of '
+          'Brown and Kucha\\v{r}' in p10)
     n_def = len(re.findall('deficiency ind', allp, re.I))
     check(f'C5 · deficiency indices are worked explicitly ({n_def} occurrences), so the inner product '
           'is fixed by self-adjointness', len(re.findall('deficiency ind', allp, re.I)) > 0)
@@ -159,8 +180,10 @@ def main():
     check('⇒⇒ SO FOUR OF THE SEVEN (C1, C2, C4, C6) ARE RESTRICTIONS THE CORPUS IMPOSES AND STANDARD '
           'CONSTRUCTIONS DO NOT HAVE -- the sum is a smaller object than a general quantum-gravity path '
           'integral',
-          'path integral ranges over the conformal factor of the metric' in allp
-          and 'Brown and Kucha' in allp)
+          'the path integral ranges over the conformal factor of the metric. Here it does '
+          'not' in p10
+          and 'a pressureless (dust) reference fluid serving as the cosmic clock in the manner of '
+          'Brown and Kucha\\v{r}' in p10)
     check('and three (C3, C5, C7) are CHECKS against work already done, so a candidate can be tested '
           'before anything new is computed',
           n_th > 0 and n_alg > 0 and len(re.findall('deficiency ind', allp, re.I)) > 0)

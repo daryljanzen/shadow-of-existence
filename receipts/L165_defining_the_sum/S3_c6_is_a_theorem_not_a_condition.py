@@ -72,6 +72,18 @@ def main():
                     recursive=True)
     check('⌗ the D1 receipt exists', len(d1p) == 1)
     d1 = re.sub(r'\s+', ' ', open(d1p[0], encoding='utf-8', errors='replace').read())
+    # ⛭⛭ r7332+60, PO-78's repair stride.  ** THE FOUR OWED ROWS OF THIS RECEIPT WERE FOUR
+    #   FRAGMENTS OF TWO SENTENCES **, each with its subject outside the span: `decomposes as a
+    #   DIRECT INTEGRAL over its spectrum` (what decomposes?), `FIBRE BY FIBRE` (a bare adverbial),
+    #   `at leading order` (an adverbial that cannot fail -- it stands in any such text), and
+    #   `irrelevant to whether each of its fibres receives a condition` (irrelevant to what?).
+    #   ⇒ Three of them are fragments of ONE sentence, so ONE span carries all three AND proves
+    #     their adjacency; the fourth is its own sentence and takes its own span.  Read with the
+    #     emphasis normalised -- r7258's form for a markup carrier -- since the markers fall inside
+    #     the only spans that carry the claims.  Measured: ONE site each.
+    d1u = re.sub(r'\s+', ' ', d1.replace('**', ' '))
+    _D1_STRUCTURE = ('the boundary coefficient is an operator $\\\\hat\\\\Gamma = \\\\gamma + c\\\\sum_n\\\\hat\\\\pi_n^2$ (at leading order), and since it commutes with the radial part, $-\\\\partial_x^2 + \\\\hat\\\\Gamma/x^2$ decomposes as a DIRECT INTEGRAL over its spectrum -- essentially self-adjoint where $\\\\hat\\\\Gamma\\\\ge3/4$, limit-circle where $\\\\hat\\\\Gamma<3/4$ -- and thermal regularity supplies the condition FIBRE BY FIBRE')
+    _D1_SEPARATES = ("the sub-threshold set's SIZE -- finite, countable, or a continuum -- is irrelevant to whether each of its fibres receives a condition")
     s1p = os.path.join(ROOT, 'receipts', 'L165_defining_the_sum',
                        'S1_seven_necessary_conditions_on_the_measure.py')
     s1 = re.sub(r'\s+', ' ', open(s1p, encoding='utf-8', errors='replace').read())
@@ -80,10 +92,14 @@ def main():
     check('⓵ D1 states the commutation: the boundary coefficient is an operator "and since it commutes '
           'with the radial part"',
           's an operator $\\\\hat\\\\Gamma = \\\\gamma + c\\\\sum_n\\\\hat\\\\pi_n^2$ (at leading order), and since it commutes with the radial part' in d1)
-    check('and the consequence: it "decomposes as a DIRECT INTEGRAL over its spectrum"',
-          'decomposes as a DIRECT INTEGRAL over its spectrum' in d1)
-    check('and that thermal regularity then supplies the condition "FIBRE BY FIBRE"',
-          'FIBRE BY FIBRE' in d1)
+    check('and the consequence: it "decomposes as a DIRECT INTEGRAL over its spectrum" -- asserted '
+          'inside the whole sentence that names WHAT decomposes, rather than as the verb phrase '
+          'alone',
+          _D1_STRUCTURE in d1u)
+    check('and that thermal regularity then supplies the condition "FIBRE BY FIBRE" -- carried by the '
+          'same one span, so the decomposition and the per-fibre condition are tested as the one '
+          'sentence that states them together',
+          _D1_STRUCTURE in d1u)
 
     # ⓶ what S1 listed it as
     check('⓶ and S1 lists C6 as a CONDITION: "IT MUST RESPECT THE PER-FIBRE CLOSURE"',
@@ -95,13 +111,16 @@ def main():
 
     # ⓷ why the separation is structural
     check("⓷ and D1 says why it is structural rather than lucky: the sub-threshold set's size is "
-          '"irrelevant to whether each of its fibres receives a condition"',
-          'irrelevant to whether each of its fibres receives a condition' in d1)
+          '"irrelevant to whether each of its fibres receives a condition" -- asserted as the clause '
+          'that names the size and its three cases, so what the irrelevance is OF is inside the span',
+          _D1_SEPARATES in d1u)
 
     # the limit
     check('⚠ and D1 states it "at leading order" -- so whether the commutation survives the interaction '
-          "is the interacting tower's own question",
-          'at leading order' in d1)
+          "is the interacting tower's own question: the qualifier is carried inside the same one span, "
+          'where it sits in the sentence it qualifies, rather than being searched for on its own where '
+          'it could not fail',
+          _D1_STRUCTURE in d1u)
 
     print()
     if FAILED:
