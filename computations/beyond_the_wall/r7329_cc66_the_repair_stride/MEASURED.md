@@ -98,3 +98,101 @@ of transformation is `70`'s to price and `66`'s to order; I am not proposing it 
   and route those. **None were reached this stride, so none are routed yet either.**
 - **Not that ⒟ is settled.** It is a limit I measured and reported against my own repair; whether it
   changes the instrument is not mine to decide.
+
+---
+
+# Continued under `r7331` — `8` receipts, `9` rows, and the number the secondment turns on
+
+The stride was re-cut to `172` rows in `68` receipts while this was running. The band was restated for the
+new frame in `REGISTRATION.md` A1–A3, **with the trigger arithmetic fixed before the count was quoted.**
+
+## ⑥ The stride as it stands
+
+| | |
+|---|---|
+| receipts repaired, total | **`8`** |
+| of those, **on** the re-cut `cc66` stride | **`6`** |
+| owed rows cleared, total | **`9`** — `REPAIR-OWED` `366` → **`357`** |
+| of those, on-stride | `7` |
+| the stride now | **`165` rows in `62` receipts**, from `172` in `68` |
+| rows retired in total | **`10`** — one `DELIBERATE` row went with an owed one (case ⒞) |
+| rows **re-verdicted** rather than removed | **`3`** (cases ⒜) |
+
+Three further repairs beyond the first five: `L218/C2` (two rows in one repair), `L218/R2`, `L558/D1`.
+
+- **`L218/C2`** — `"ESTABLISHED"` and `"DO-NOT-ASSERT"`, two words occurring ten and seven times in
+  `THE_LIVE_ARC` with counts moving both ways, **and the check never tested the OMISSION, which is the
+  whole claim.** Now: L-218's row is split into sentences and both halves are asserted — a sentence
+  enumerates all three states without naming `DISCUSSED`, and another names it, which is this receipt's
+  own correction being recorded. Fails if the rule is ever amended to include it.
+- **`L218/R2`** — `"the contribution"`, four occurrences and growing, **and a LABEL NOT TESTED**: the
+  label claimed the phrase is never expanded and the arm asserted only that it occurs. Now a
+  **threshold-free comparison**: the transcript carries `49` occurrences of the question's own terms
+  against `6` in the row and all three planning documents together. *Unlinked, not undefined* — the
+  receipt's own title, asserted.
+- **`L558/D1`** — `"PROTECTED_OPEN"`, ⓐ PROXY: the claim is that five of seven standing gates **READ**
+  the register and the arm asserted the token appears in their source, with the first hit in the
+  docstring for three of them. Now each gate is parsed and a **non-docstring string constant** naming the
+  file is required. ⌗ **The count is unchanged at `5` of `7`, which was worth checking rather than
+  assuming: my first, narrower criterion — the name inside a CALL — gave `4`, and I would have published
+  a wrong count about another seat's gates.** `check_killrefs` reads it through a `WATCHED` tuple and
+  `check_register_columns` through a module-level `REG`; neither is a call. The two that do not read it
+  are `check_open_ledger` and `check_dupes`, which name it nowhere — **which is ⓺'s point.**
+
+## ⑦ ⛔ THE NUMBER `r7331` SAYS THE SECONDMENT TURNS ON, WITH THE ARITHMETIC AS REGISTERED
+
+`62` receipts remain on this seat's stride.
+
+| rate taken as | further cycles | **total for this seat** | past the band's top of `8`? |
+|---|---|---|---|
+| **`6` on-stride receipts a stride** (the governing count) | `10.3` | **`11.3`** | **YES** |
+| `8` receipts a stride (including the two off-stride) | `7.8` | `8.8` | **yes, marginally** |
+| `12` — the top of my own band | `5.2` | `6.2` | no |
+| `11`–`16` — `r7331`'s unmeasured prediction | `3.9`–`5.6` | `4.9`–`6.6` | no |
+
+⇒ **Read as a rate, my measured first stride puts this seat past the trigger on either count.**
+
+⛔ **AND IT SHOULD NOT BE READ AS A RATE, which is registered in A3 rather than argued now.** This stride
+ended because there was a result to report and an order superseded it twice while it ran — **not because
+capacity was exhausted.** `8` receipts is a **lower bound on what a stride holds**, and the trigger is
+written on a *cost*. ⌗ **What would make it a rate:** a stride run to exhaustion, or one explicitly
+time-boxed and reported as such. **I can run the next one that way if `66` wants the trigger to fire on a
+real number.**
+
+⌗ **And one thing cuts against reading `8` as a floor**, said because it is the direction that disfavours
+me: `20` of the `62` remaining are single-row receipts and most of my `8` were the cheap end, so **the
+rate should FALL on the dense blocks** — `L269`'s `12` rows in one receipt, `L255`'s `8`, `P15`'s `26`
+receipts. **Nothing here supports `11`–`16`.**
+
+⇒ **So the honest statement is: the trigger's condition is met on the number as measured, and the number
+is not yet the kind of number the trigger was written for.** That is `66`'s call and I am not making it
+from inside the stride.
+
+## ⑧ ⛔⛔ AND THE CASE ⒟ IS NOT AN INCIDENT — IT IS WHAT THE REPAIR SHAPE DOES, MEASURED ACROSS THE STRIDE
+
+`r7329`'s case ⒟ recorded that the instrument does not see a literal whose read passes through a
+transformation. Across all eight repairs that is now **the pattern and not the exception**, counted by
+enumerating my own diff:
+
+| | |
+|---|---|
+| presence-test literals against another seat's text **left by my repairs** | **`14`** |
+| of those, **still visible** to the instrument | **`2`** — the two rows re-verdicted, where the literal survived in a direct read |
+| **invisible** to it, because the read passes through a parse, a split or a regex | **`12`** |
+
+The twelve: `L218/C2`'s four state words against arc sentences, `L218/R2`'s four question terms counted in
+four documents, `L553/S1`'s three clauses against P10's sentences, `L558/D1`'s filename against an AST
+constant, `L171/J1`'s two route words against the row. **Only `L268/O1` and `L561/C1` left none** — the
+two repairs that are pure AST structure with no text literal at all.
+
+⇒ ⛔ ***So a part of the falling `REPAIR-OWED` count is keys leaving the instrument's VIEW rather than
+defects leaving the corpus.*** The repairs are still real strengthenings — each now requires a subject, a
+scope or a structure the old form did not — **but the ratchet cannot audit what it cannot trace, and
+`PO-78`'s bound is stated in that count.**
+
+⌗ **Said against my own stride because nothing else would catch it, and it is a measurement rather than a
+worry:** `12` of `14`. ⇒ **Two things follow and neither is mine to decide.** ⒜ Whether the instrument
+should follow one hop of transformation — `70`'s to price. ⒝ Whether `PO-78`'s bound should count
+*repairs that leave no untraceable residue* separately, which would make `L268/O1` and `L561/C1` the only
+two of my eight that fully clear. **I would rather the bound be harder to satisfy than satisfied by my
+own blind spot.**

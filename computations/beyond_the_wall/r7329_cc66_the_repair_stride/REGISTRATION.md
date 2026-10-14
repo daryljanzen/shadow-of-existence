@@ -93,3 +93,44 @@ comes in at or above `2.49`, the cheap end was not cheaper.
   there would change what a check asserts **about the spectrum** rather than how it asserts it, I stop and
   route it. Any such receipt is counted as **routed, not repaired**, and reported separately — it is
   neither a repair nor a failure of the band.
+
+---
+
+# Addendum at `r7331` — the stride is re-cut, and the band is restated for the new frame
+
+`r7331` supersedes `r7329`'s stride: **`172` rows in `68` receipts over `34` prefixes**, balanced on
+receipts rather than rows. The first stride had already run under §§0–5 above when the re-cut landed, so
+**this addendum restates the band for the new frame and does not replace the measurement already taken.**
+
+## A1. The frame, re-derived
+
+Re-derived from the ledger rather than taken from the table's head: `172` rows in `68` receipts, matching
+the assignment. **`22` of the `68` hold exactly one row** (against `19` of `49` before), so the cheap end
+grew with the stride.
+
+## A2. The band, unchanged in value and restated in share
+
+**PRIMARY: `4` to `12` receipts repaired in a stride, no point.** Unchanged — nothing in the re-cut
+changes what a repair costs, only how many are waiting.
+
+**The share of the space the band claims, which is what the standing demands of a census** (§2): the
+reachable outcomes are now `0`–`68`, so **`9` of `69` = `13`%**, and the band is wrong on **`87`%** of its
+own outcome space — tighter than the `18`% it claimed against the `49`-receipt frame, because the frame
+grew and the band did not.
+
+## A3. ⛔ And the trigger this measurement fires is named here, before the number is read
+
+`r7331` ①: *if your first stride's MEASURED per-receipt cost puts `PO-78` past the band's top of `8`
+cycles, `70` comes back and the Lean block goes single-seat.* ⇒ **So the arithmetic is fixed now, before
+the count is quoted, so that it cannot be chosen to suit the answer:**
+
+- cycles for this seat = **receipts remaining ÷ receipts repaired per stride**, plus the stride already
+  run;
+- **receipts, not rows**, because `r7331` ① rebalanced on receipts and the receipt is the unit of repair;
+- the **on-stride** count is the one that governs, with any off-stride repairs reported separately rather
+  than folded in to flatter the rate.
+
+⌗ **And the one thing this measurement cannot be, stated before it is taken:** a stride that ends because
+there is a result to report is a **LOWER BOUND on capacity, not a rate.** A rate needs a stride run to
+exhaustion or one explicitly time-boxed. **If the number lands near the trigger, that distinction decides
+whether it should fire, and it is registered here rather than argued afterwards.**

@@ -60,6 +60,7 @@ line\'s and is restored as it stood, not reviewed.
 
 Written c54.224 (`L-558`).  Stated for reversal.
 """
+import ast
 import os
 import re
 import shutil
@@ -213,11 +214,43 @@ def main():
     # ⓺ why nothing standing saw it
     GATES = ('check_row_state', 'check_kills', 'check_open_ledger', 'check_family_pointers',
              'check_register_columns', 'check_killrefs', 'check_dupes')
-    readers = [g for g in GATES
-               if 'PROTECTED_OPEN' in open(os.path.join(ROOT, 'corpus', g + '.py'),
-                                           encoding='utf-8', errors='replace').read()]
-    check(f'⓺ {len(readers)} of {len(GATES)} standing gates READ this file and every one of them was '
-          f'green across the four revisions the duplication was live', len(readers) >= 5)
+    #: ⌗⛭ r7329+cc66 REPAIR, PO-78's stride.  `readers` was gates whose SOURCE TEXT contains the token
+    #: -- 69's ⓐ PROXY: the claim is that they READ the file and the arm asserted only that the name
+    #: occurs, and in three of the seven the first hit is in the DOCSTRING, i.e. a mention.
+    #:   ** What the claim IS: the gate USES the filename -- a string constant naming it in the
+    #:   module's CODE, which is what builds a path or fills a watched-file collection -- rather than
+    #:   discussing it in prose. **  So each gate is PARSED and its docstrings are excluded by
+    #: position, which is the one distinction the old arm could not make.
+    #: ⌗ And the count it reports is UNCHANGED at 5 of 7, which was worth checking rather than
+    #: assuming: a first, narrower criterion (the name inside a CALL) gave 4 and would have published a
+    #: wrong count about another seat's gates -- `check_killrefs` reads the file through a WATCHED
+    #: tuple and `check_register_columns` through a module-level `REG`, neither of which is a call.
+    #: ** The two that do not read it are `check_open_ledger` and `check_dupes`, which name it nowhere
+    #: at all, and that is the point of ⓺: nothing standing was looking. **
+    def _docstrings(_tree):
+        _out = set()
+        for _n in ast.walk(_tree):
+            _b = getattr(_n, 'body', None)
+            if isinstance(_n, (ast.Module, ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)) and _b \
+                    and isinstance(_b[0], ast.Expr) and isinstance(_b[0].value, ast.Constant) \
+                    and isinstance(_b[0].value.value, str):
+                _out.add(id(_b[0].value))
+        return _out
+
+    def _uses_register(_g):
+        _src = open(os.path.join(ROOT, 'corpus', _g + '.py'), encoding='utf-8',
+                    errors='replace').read()
+        _tree = ast.parse(_src)
+        _docs = _docstrings(_tree)
+        return any(isinstance(_n, ast.Constant) and isinstance(_n.value, str)
+                   and 'PROTECTED_OPEN' in _n.value and id(_n) not in _docs
+                   for _n in ast.walk(_tree))
+
+    readers = [g for g in GATES if _uses_register(g)]
+    check(f'⓺ {len(readers)} of {len(GATES)} standing gates READ this file -- the filename used in '
+          f'their code and not merely named in their prose -- and every one of them was '
+          f'green across the four revisions the duplication was live',
+          len(readers) == 5 and set(GATES) - set(readers) == {'check_open_ledger', 'check_dupes'})
     attrs = open(os.path.join(ROOT, '.gitattributes'), encoding='utf-8', errors='replace').read()
     check('⇒ and the mechanism is NOT the one already known: .gitattributes declares merge=union on '
           'four files and warns that "Union merge cannot detect a duplicate ID" -- and '

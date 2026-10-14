@@ -113,8 +113,25 @@ def main():
           total < sents / 10)
 
     # ⚠ the correction, and it is not a retraction
-    check("⚠ and the row's three-way rule omits the fourth state the corpus mostly occupies: DISCUSSED",
-          'ESTABLISHED' in re.sub(r'\s+', ' ', arc) and 'DO-NOT-ASSERT' in re.sub(r'\s+', ' ', arc))
+    #: ⌗⛭ r7329+cc66 REPAIR, PO-78's stride.  This was `'ESTABLISHED' in arc and 'DO-NOT-ASSERT' in
+    #: arc` -- two words occurring ten and seven times in THE_LIVE_ARC, counts moving both ways, tied
+    #: to no line (69's ⓒ CANNOT FAIL), and ** it never tested the OMISSION, which is the whole claim **.
+    #: A conjunction of two presences cannot carry "the rule omits a fourth state".
+    #:   ** What the claim IS, both halves of it: ⓵ L-218's row carries a sentence that ENUMERATES the
+    #:   three states and does NOT name DISCUSSED -- the rule as the row states it; and ⓶ the row names
+    #:   DISCUSSED somewhere ELSE, which is this receipt's correction being recorded. **  So the row is
+    #: found by its row marker, split into sentences, and both halves are asserted.  It fails if the
+    #: rule is ever amended to include DISCUSSED, or if the correction is dropped from the row --
+    #: neither of which the old form could see.
+    _arc_row = [l for l in arc.split('\n') if re.match(r'\|\s*(\*\*|~~)?L-218\b', l)]
+    _THREE = ('ESTABLISHED', 'OPEN', 'DO-NOT-ASSERT')
+    _sents = re.split(r'(?<=[.!?])\s+', _arc_row[0]) if _arc_row else []
+    _rule = [s for s in _sents if all(w in s for w in _THREE) and 'DISCUSSED' not in s]
+    _corrected = [s for s in _sents if 'DISCUSSED' in s]
+    check(f"⚠ and the row's three-way rule omits the fourth state the corpus mostly occupies: "
+          f"DISCUSSED -- {len(_rule)} sentence(s) of L-218's row enumerate all three states without "
+          f"naming it, and {len(_corrected)} name it elsewhere in the row",
+          len(_arc_row) == 1 and len(_rule) >= 1 and len(_corrected) >= 1)
 
     print()
     if FAILED:
