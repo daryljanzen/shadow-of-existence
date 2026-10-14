@@ -2518,6 +2518,43 @@ theorem sds_two_ranges {M α r A : ℝ} (hα : α ≠ 0) (hr : 0 < r) (hA : A ^ 
 
 end SweepB6
 
+/-! ## `r7315`, B7 — receipt 32: on any member of the SdS energy family, `ṙ² = E² − f(r)`, the radial acceleration
+is `r̈ = −f′/2 = r K_G`, with `K_G` THE connection's slice curvature from B5. `E` cancels -/
+
+section SweepB7
+
+open Filter Topology
+
+/-- `ṙ² = E² − f(r)` near `t`, `ṙ ≠ 0` at `t`: then `r̈ = r(1/α² − M/r³)`. -/
+lemma accel_rKG {r v : ℝ → ℝ} {E M α t a : ℝ} (hr : HasDerivAt r (v t) t) (hv : HasDerivAt v a t)
+    (hrt : r t ≠ 0) (hvt : v t ≠ 0) (hE : ∀ᶠ s in 𝓝 t, v s ^ 2 = E ^ 2 - fSdS M α (r s)) :
+    a = r t * (1 / α ^ 2 - M / r t ^ 3) := by
+  have h1 : HasDerivAt (fun s => v s ^ 2) (2 * v t * a) t := by
+    convert hv.pow 2 using 1; ring
+  have h2 : HasDerivAt (fun s => E ^ 2 - fSdS M α (r s)) (-((2 * M / r t ^ 2 - 2 * r t / α ^ 2) * v t)) t := by
+    exact HasDerivAt.congr_deriv (HasDerivAt.sub (hasDerivAt_const t (E ^ 2))
+      ((fSdS_hasDerivAt M α hrt).comp t hr)) (by ring)
+  have key := h1.unique (h2.congr_of_eventuallyEq hE)
+  have hc : v t * (2 * a) = v t * (2 * (r t * (1 / α ^ 2 - M / r t ^ 3))) := by
+    have e2 : 2 * (r t * (1 / α ^ 2 - M / r t ^ 3)) = -(2 * M / r t ^ 2 - 2 * r t / α ^ 2) := by
+      field_simp; ring
+    rw [e2]; linear_combination key
+  linarith [mul_left_cancel₀ hvt hc]
+
+/-- **B7, receipt 32.** `r̈ = r K_G`, with `K_G = g(R(∂_r,∂_φ)∂_φ,∂_r)/(g_rr g_φφ)` of THE Levi-Civita connection. -/
+theorem sds_accel_is_rKG {e h : ℝ → ℝ} (he : ∀ s, e s ≠ 0) (hh : ∀ s, h s ≠ 0) (hes : ContDiff ℝ ∞ e)
+    (hhs : ContDiff ℝ ∞ h) {r v : ℝ → ℝ} {E M α t a φ : ℝ} (hr : HasDerivAt r (v t) t) (hv : HasDerivAt v a t)
+    (hrt : r t ≠ 0) (hvt : v t ≠ 0) (hE : ∀ᶠ s in 𝓝 t, v s ^ 2 = E ^ 2 - fSdS M α (r s))
+    (hf : fSdS M α (r t) ≠ 0) (he1 : e =ᶠ[𝓝 (r t)] fun s => (fSdS M α s)⁻¹) (hh1 : h =ᶠ[𝓝 (r t)] fun s => s ^ 2) :
+    a = r t * (diagF e h (r t, φ) (curv (lcConn (ℝ × ℝ) (ndOf (diagF e h) (diagF_symm e h) (diagF_nondeg he hh)
+        ((diagF_smooth hes hhs).differentiable (by simp))))
+      (fun _ => ((1 : ℝ), (0 : ℝ))) (fun _ => ((0 : ℝ), (1 : ℝ))) (fun _ => ((0 : ℝ), (1 : ℝ))) (r t, φ))
+        ((1 : ℝ), (0 : ℝ)) / (e (r t) * h (r t))) := by
+  rw [sds_slice_gauss he hh hes hhs (p := (r t, φ)) hrt hf he1 hh1]
+  exact accel_rKG hr hv hrt hvt hE
+
+end SweepB7
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2604,3 +2641,5 @@ end ShadowProbe
 #print axioms ShadowProbe.sds_flat_locus
 #print axioms ShadowProbe.sds_nariai_iff
 #print axioms ShadowProbe.sds_two_ranges
+#print axioms ShadowProbe.accel_rKG
+#print axioms ShadowProbe.sds_accel_is_rKG
