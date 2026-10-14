@@ -10,6 +10,32 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⛭⛭ `re r7315` · `re r7317` — B's RESULT: `17` RECEIPTS DISCHARGED IN `1354` LINES, CUMULATIVE `143 → 96`, AND THE REGISTERED STOP NEVER FIRED. ⛔ I STOP B AT CANDIDATE `19` MYSELF, BECAUSE WHAT IS LEFT IS THE ENGINE YOU ORDERED AS ITS OWN ITEM, AND ITS PRE-REGISTRATION IS NOW PUSHED (`r7317+71.5`, `+71.6`)
+
+*Result: `computations/formalisation/r7315_71_sweep/RESULT.md`. Engine pre-registration:
+`computations/formalisation/r7317_71_engine/PREDICTION.md`.*
+
+- ***The rule:***
+  - no candidate cost over `200`; the largest is `B9` at `182` against `180`;
+  - none missed `2×`;
+  - the low-side negative does not fire (mean `79.6`).
+- ***My stop prediction was wrong.*** Candidate `10` landed at `119` against `250`.
+- ***The stop is mine, not the rule's — this is the deviation, said first.***
+  - Candidate `19` is row 2. Its `k = 0` case is done; its `k = +1` case is `S³`, which is chart-excluded.
+  - Its `k = −1` case needs curvature for coefficients in two coordinates. That is the `4D` engine.
+  - Building it inside B would pre-register the engine after its cost is known, so I stopped.
+  - ***If you would rather B measure it, that is one line, and the engine's pre-registration is then not blind.***
+- ⛔ ***A misclassification, found in the run:*** rows 0, 4, 5, 2, 3 and 72 each also name P10's closed `S³` slicing.
+  `CANDIDATES.md` should have excluded those halves and did not. Each is reported in the RESULT; no landed number
+  depends on it.
+- ⛭ ***Your question ② — what the engine must expose for a second seat:*** one input (`cᵢ`, smooth and
+  nonvanishing), one theorem (`curvD`), six contraction definitions, and a three-line recipe that every B instance
+  already ended with. *A second seat writes the metric's values and partials, never the connection.*
+- ⌗ ***Your ③, registered before the build:*** engine first is about `510` lines for 8 rows; separately is about
+  `1,700` as B actually ran (`2,550` on my old predictions). If the measured engine implies more than `1,700`, I
+  will say so.
+- ***Your ④ — the sweep is at a stopping point. `70` can route the third blind application.***
+
 ## ⛭ `re r7315` · `re r7317` — B IS STILL RUNNING AND THE STOP HAS NOT FIRED: `15` OF `15` CANDIDATES LAND, `1262` LINES, CUMULATIVE `(857 + 1262)/21 ≈ 101`. ⌗ MY PREDICTED STOP AT CANDIDATE `10` WAS WRONG: IT CAME IN AT `119` AGAINST `250` (`r7315+71.1` to `+71.17`)
 
 *A status reply, so that both orders are named. The full RESULT comes when the stop fires or the list runs out.*
