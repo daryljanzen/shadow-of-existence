@@ -135,3 +135,18 @@ each row by its chartable half.
 - **Chart-excluded: the 16 rows above, plus row 72, plus the `S³` halves of 0, 4, 5, 2 and 3.**
 
 *No landed number in `RESULT.md` depends on this correction.*
+
+## ⛔ Correction appended at `r7323+71.3`: three more rows fail the chart clause, found when their receipts were opened
+
+*Appended, not revised. Found by `r7323`'s instance pass (`../r7323_71_instances/`), which opened each row's receipt
+for the first time.*
+
+| row | stand-in | what the receipt's metric is | verdict |
+|---|---|---|---|
+| 47 | shear of a foliation from `K` | the constant-`r` foliation of `diag(−F, 1/F, r², r² sin²θ)`, "on ANY static spherically symmetric metric" | ***wholly chart-excluded*** (`S²`) |
+| 102 | extrinsic-curvature shear, closed form | the same foliation of `eq:sds-static`; its eigenvalues `(f′/2√f, √f/r, √f/r)` | ***wholly chart-excluded*** (`S²`) |
+| 94 | umbilic locus of a foliation | the same foliation, `K_ij ∝ h_ij` ⇔ `rf′ = 2f` | ***wholly chart-excluded*** (`S²`) |
+| 79 | `K_ab = 0` of leaves, leaf scalar curvature | SdS's static leaves (`S²`) — ***and*** the flat-FRW check `K = 3H` | the SdS half is excluded; the static vanishing is proved for every chartable static diagonal metric, and the FRW half is chartable |
+
+***Corrected counts:*** *candidates `33`. The three are listed as `ℝ⁴` above, and that was wrong: the `S²` sits in the
+foliation each claim is ABOUT, not in a chart that could be changed.* *No landed number depends on it.*
