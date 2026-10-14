@@ -194,7 +194,13 @@ gate("⛭ the layer's areal radius comes out at `r_0 = 5051` Mpc, `P15`'s own fi
      # ** r7179: half the paper's printed ulp, not 0.03 -- at 0.03 this could not fail on the
      #   quantity it names, the two printed configurations being 0.0137 apart. **
      and abs(ref['DC'] / ref['r0'] - 2.774) < 5e-4
-     and "r_0\\approx5051" in body15 and "D_C/r_0\\approx2.774" in body15)
+     # r7337+cc66, REPAIR: two bare TOKENs on values, each standing TWICE in the paper, so they
+     #   pinned the FILE and not the claim.  Floor 1 excludes a fragment, so the paper read is now
+     #   ONE span naming both figures AND what the paper claims of them -- fixed parameter-free by
+     #   Lambda -- occurring once under `_unmark`.  ⌗ *The COMPUTED assertions beside it and their
+     #   tolerances are untouched, which is why this is form and not spectrum: the bar did not
+     #   bite here.*
+     and "$r_0\\approx5051$~Mpc fixed parameter-free by $\\Lambda$, the stretch $D_C/r_0\\approx2.774$" in body15)
 gate("⛭ and `r_s` is the NARIAI value `2 alpha/(3 sqrt 3)` on both backgrounds -- the quantity the "
      "obstruction below turns on", all(abs(b['rsch'] - 2 * b['alpha'] / (3 * np.sqrt(3))) < 1e-9
                                        for b in B.values()))

@@ -389,10 +389,16 @@ check("P10 locates the remaining question in the STATE, not the geometry",
       't excluded by the geometry, and whatever excludes it does so through' in
       open(os.path.join(ROOT, 'corpus', 'canonical_time.tex'), encoding='utf-8').read())
 check("and P14 has the geometry PERMITTING the chirality-asymmetric action without selecting it",
-      'permits the chirality-asymmetric action and does n' in
-      open(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'), encoding='utf-8').read()
-      or 'does not \\emph{select} it' in
-      open(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'), encoding='utf-8').read())
+      # ⛔⛭ r7337+cc66, REPAIR, and the disjunction was weaker than it looked.  Measured against the
+      #   RAW file the check itself reads: the FIRST arm matches ZERO times -- the paper says
+      #   `permits ... BUT does not select it`, not `and` -- so this check has been passing on the
+      #   second arm alone, and that arm is the bare `does not \emph{select} it`, which stands
+      #   TWICE.  ⇒ *A choice whose stronger arm is dead and whose weaker arm is multi-site is
+      #   Test 6 at its sharpest: the weaker arm does not merely decide alone, it is the only arm
+      #   there is.*  One span now carries the whole claim -- the permission AND the negation --
+      #   and stands ONCE in that paper under `_unmark`.
+      'the geometry \\emph{permits} the chirality-asymmetric action but does not \\emph{select} it'
+      in open(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'), encoding='utf-8').read())
 print("""
   * The source needs THREE things at once --- both polarisation channels, a non-trivial areal
     factor, and the failure of spherical symmetry.  ** The history supplies only the second. **

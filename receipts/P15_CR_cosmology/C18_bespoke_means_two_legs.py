@@ -116,7 +116,10 @@ def main():
           'the L1 foliation radiation is excluded from' not in p15
           and 'there the self-gravitating excursion sets the leaf rate radiation is included in, and '
               'here the plasma accumulating its own scales takes that same rate' in p15
-          and 'the two windows fall on the \\emph{same} side of it rather than on opposite sides' in p15)
+          # r7337+cc66, REPAIR: `rather than on opposite sides` restates the claim negatively, so the
+          #   span carried the same thing twice.  The clause that carries it occurs ONCE under
+          #   `_unmark`: 10 words against 15.
+          and 'the two windows fall on the \\emph{same} side of it' in p15)
 
     # ⓷ the consistency rule
     # ⛔⛭ RE-PINNED r3952 -- r3841's sweep, same cause as r3950's five.  The paper says "one may not take the rate GEOMETRIC for the peak spacing and
@@ -138,7 +141,11 @@ def main():
           'by consistency", "the peak spacing this construction computes is the leaf accumulation", and '
           '"this construction does not dissolve the discrepancy with the local distance ladder"',
           'This is forced: it is the same L1 rate that dissolves the Hubble tension' not in p15
-          and 'This is forced by consistency: one may not take the rate geometric for the peak spacing '
+          # r7337+cc66, REPAIR: the span opened on `This is`, a pointing phrase, and the rule half it
+          #   bundles is ALREADY a live key in this receipt at the check above -- so a reword of the
+          #   rule broke two checks and the pointer carried no claim.  The two pointer words are gone;
+          #   what remains is claim-complete (the rule named, and that it is forced) and occurs once.
+          and 'forced by consistency: one may not take the rate geometric for the peak spacing '
               'and radiation-included for the diffusion' in p15
           and '\\emph{the peak spacing this construction computes is the leaf accumulation}' in p15
           and '\\emph{So this construction does not dissolve the discrepancy with the local distance '
@@ -146,7 +153,7 @@ def main():
 
     # ⓸ the instrument is single-background
     check('⓸ while the instrument is described as single-background: "The full flat-projection transfer"',
-          'The full flat-projection transfer' in p15)
+          'The full flat-projection transfer confirms the estimate' in p15)
 
     print()
     if FAILED:

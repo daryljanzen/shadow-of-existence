@@ -93,12 +93,17 @@ def main():
     #: the paper is split into sentences, the one carrying the anchor span is located (it is unique),
     #: and the value is required in THAT sentence -- which fails if the number is ever moved to another
     #: sentence or changed, and cannot be satisfied by the other occurrence.
-    _rate = [_s for _s in re.split(r'(?<=[.!?]) ', p15)
-             if 'geometric rate gives a diffusion length' in _s]
+    # r7337+cc66, RE-REPAIR under THE_RULE's floor 2: the asserted '10.8' stands twice in this
+    #   paper, so the locus-scoped form met the floor for the PAIR and not for the span.  One
+    #   9-word span now carries subject, verb, object and value, and occurs ONCE under `_unmark`.
+    _rate = ['the geometric rate gives a diffusion length $10.8\\%$ longer'] \
+        if 'the geometric rate gives a diffusion length $10.8\\%$ longer' in p15 else []
     check(f'and it is between two RATES, the value paired with its anchor in ONE sentence: "on the '
           f'inherited datum the geometric rate gives a diffusion length $10.8\\%$ longer" '
           f'({len(_rate)} sentence carries the anchor)',
-          len(_rate) == 1 and '10.8' in _rate[0])
+          #   ⌗ and the bare '10.8' conjunct is GONE rather than kept beside the span: the span
+          #   contains the value, so the fragment added no test and stood twice in the paper.
+          len(_rate) == 1)
     check('with the sound horizon computed the same way: "$r_{s}=146.4$~Mpc against $145.4$ on the '
           'radiation-included"',
           '146.4$~Mpc against $145.4$ on the radiation-i' in p15 and '145.4' in p15)
