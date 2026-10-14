@@ -130,3 +130,16 @@ computed from the LITERALS' classification, which this does not touch.**
 ⌗ *Recorded as an amendment rather than a quiet edit, because the registration was already pushed and a
 band that moves without saying so is not a band. **And the error is the same shape as the one `r7341` ③
 charged to the gate: I named a quantity by describing the instrument instead of reading it.***
+
+## ⛔ SECOND NOTE, ALSO BEFORE MEASURING: MY POINT'S DERIVATION HAD ONE MIS-BIN, AND I AM NOT MOVING THE BAND
+
+Deriving `118` I classified the `202` with a regex that treated a **trailing `$`** as an anchor. *LaTeX
+literals end in `$`.* Checked: **exactly `1`** of the `202` was binned `regex` solely by that clause —
+`'returns the first peak at $222$'`, which is prose, and is my own `C34` span.
+
+⇒ **So the self-consistent point is `119`, not `118`.** ⛔ ***I am leaving the registered band at
+`118` ± `12` and scoring against it, rather than re-registering around the corrected figure.*** *Moving a
+point by one, after finding the defect that produced it and before taking the measurement, is how a band
+stops being a band. The defect is stated; the goalposts stay.* ⌗ *The filter I implement uses the
+CORRECTED rule — no trailing-`$` exclusion — because the rule has to be right even where the prediction
+derived from it was not.*
