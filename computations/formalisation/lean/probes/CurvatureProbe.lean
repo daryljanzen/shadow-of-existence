@@ -2499,6 +2499,25 @@ theorem sds_nariai_iff {M α : ℝ} (hM : 0 < M) (hα : 0 < α) :
 
 end SweepB5
 
+/-! ## `r7315`, B6 — receipt 103: B5's slice curvature `K_G = 1/α² − M/r³` of THE connection vanishes on `r > 0`
+exactly at `r_*³ = Mα²`, and the bead amplitude `A³ = 2Mα²` stands to it as `(A/r_*)³ = 2` -/
+
+section SweepB6
+
+/-- **B6, receipt 103.** -/
+theorem sds_two_ranges {M α r A : ℝ} (hα : α ≠ 0) (hr : 0 < r) (hA : A ^ 3 = 2 * M * α ^ 2) :
+    (1 / α ^ 2 - M / r ^ 3 = 0 ↔ r ^ 3 = M * α ^ 2)
+    ∧ (r ^ 3 = M * α ^ 2 → (A / r) ^ 3 = 2) := by
+  have hr3 : r ^ 3 ≠ 0 := pow_ne_zero 3 hr.ne'
+  refine ⟨⟨fun h => ?_, fun h => ?_⟩, fun h => ?_⟩
+  · field_simp at h; linarith
+  · have hM : M ≠ 0 := fun h0 => hr3 (by rw [h, h0, zero_mul])
+    rw [h]; field_simp; ring
+  · have hM : M ≠ 0 := fun h0 => hr3 (by rw [h, h0, zero_mul])
+    rw [div_pow, hA, h]; field_simp
+
+end SweepB6
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -2584,3 +2603,4 @@ end ShadowProbe
 #print axioms ShadowProbe.sds_slice_gauss
 #print axioms ShadowProbe.sds_flat_locus
 #print axioms ShadowProbe.sds_nariai_iff
+#print axioms ShadowProbe.sds_two_ranges
