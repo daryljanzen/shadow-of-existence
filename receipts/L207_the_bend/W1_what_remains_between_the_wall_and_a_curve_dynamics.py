@@ -100,7 +100,8 @@ def main():
     # ---- the kinematic/dynamic split is P8's own -------------------------------
     check('P8 states the operator is KINEMATIC: it generates stress-energy from the curve, '
           'not the curve\'s dynamics',
-          'it generates the stress-energy from the curve, not the curve\'s own dynamics' in p8)
+          'The slicing operator is kinematic: it generates the stress-energy from the curve, not the curve\'s '
+          'own dynamics' in p8)
 
     # ---- WHAT the bend is: general, and it is the Hamiltonian constraint -------
     BEFORE_R2581 = '9d9f97f'
@@ -128,12 +129,10 @@ def main():
     check('⛭ and r2581\'s rehoming REWORDED it without changing it: P8 now reads "general spatial '
           'leaf the bend-density identity ... is the Hamiltonian constraint '
           '$16\\pi\\rho={}^{3}R+K^{2}-K_{ij}K^{ij}-2\\Lambda$"',
-          'general spatial leaf the bend-density identity of Section~\\ref{sec:bend} is the Hamiltonian constraint $16' in p8
-          and 'is the Hamiltonian constraint' in p8)
+          'general spatial leaf the bend-density identity of Section~\\ref{sec:bend} is the Hamiltonian constraint $16' in p8)
     check('and it IS the Hamiltonian constraint, with rho = m\'/4 pi r^2 its spherical instance -- '
           'still stated, in r2581\'s wording',
-          'Hamiltonian constraint; $\\rho=m\'(r)/4\\pi r^{2}$ is its spherically symmetric case' in p8
-          or 'is the spherical instance' in p8)
+          'Hamiltonian constraint; $\\rho=m\'(r)/4\\pi r^{2}$ is its spherically symmetric case' in p8)
 
     # ---- THE DECISIVE SENTENCE -------------------------------------------------
     check('⇒ P8: the general inhomogeneous evolution is ORDINARY DYNAMICAL EVOLUTION OF THE LEAF, '
@@ -147,7 +146,8 @@ def main():
 
     # ---- the two worked instances ---------------------------------------------
     check('(a) the CONFINED case is exhibited exactly: a TT mode evolving by a wave equation',
-          'the leaf\'s transverse-traceless mode evolves by a wave equation' in p8)
+          'The confined case is exhibited: on a wave that one residual isometry still pins, the leaf\'s '
+          'transverse-traceless mode evolves by a wave equation' in p8)
     check('(a) and it is the FIRST dynamical bend the construction displays, in vacuum',
           'the first dynamical bend the construction displays, in vacuum' in p8_then)
     check('(b) the branch-point crossing is shown WELL POSED with no curvature obstruction',
@@ -158,7 +158,8 @@ def main():
     # ---- and the r2391 bound on the row's own framing --------------------------
     check('cor:wall\'s complement STRICTLY CONTAINS both, so the wall\'s outside is not the '
           'matter sector (r2391)',
-          'strictly contains both' in p9.lower() or 'STRICTLY CONTAINS BOTH' in p9)
+          'So the complement of the range is neither the asymmetric geometries nor those with inhomogeneous '
+          'matter; it strictly contains both' in p9)
 
     # ---- the row's inherited phrase is a SOURCE COMMENT, not published text ----
     raw = open(os.path.join(ROOT, 'corpus', 'slicing_operator.tex'), encoding='utf-8',
@@ -183,7 +184,8 @@ def main():
     # change is routed in FOR_56.md for the observer line to accept, revise or revert.*
     check('the OVERSTATED phrasing no longer stands as the comment\'s own claim (fixed c54.179)',
           len(occurrences) == 0 or all(
-              'until r2376+c54.179' in raw[max(0, i - 400):i + 200] for i in occurrences))
+              'THIS NOTE READ "the deepest open question the construction RAISES" until r2376+c54.179'
+              in raw[max(0, i - 400):i + 200] for i in occurrences))
     check('and any surviving occurrence is inside a % comment line, never published text',
           all(raw[raw.rfind('\n', 0, i):i].lstrip().startswith('%') for i in occurrences))
     check('while the PUBLISHED paragraph says "the deepest question the construction opens onto" and '
