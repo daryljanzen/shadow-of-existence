@@ -28,6 +28,58 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-6awafl": {
+  "suite": {
+   "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
+    "gates": [
+     "\u24ba\u2461",
+     "\u24bb\u2461"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38667087910",
+    "since": "6bde47d482732709aae728aea1bba0102c40e27d"
+   },
+   "receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py": {
+    "gates": [
+     "\u21d2\u21d2 and REPAIR-OWED overshot for ONE meas",
+     "\u24ec",
+     "\u24fd",
+     "\u24fe"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38667087910",
+    "since": "6bde47d482732709aae728aea1bba0102c40e27d"
+   },
+   "receipts/L_probability/S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py": {
+    "gates": [
+     "\u24bb\u2462",
+     "\u24bb\u2463"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38667087910",
+    "since": "6bde47d482732709aae728aea1bba0102c40e27d"
+   },
+   "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
+    "gates": [
+     "\u24bb\u2461",
+     "\u24bc\u2462"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38667087910",
+    "since": "6bde47d482732709aae728aea1bba0102c40e27d"
+   },
+   "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
+    "gates": [
+     "\u24bd\u2461"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38667087910",
+    "since": "6bde47d482732709aae728aea1bba0102c40e27d"
+   },
+   "receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py": {
+    "gates": [
+     "\u24b6\u2460"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38667087910",
+    "since": "6bde47d482732709aae728aea1bba0102c40e27d"
+   }
+  }
+ },
  "claude/youthful-darwin-xvkwh7": {
   "suite": {
    "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
