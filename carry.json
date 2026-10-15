@@ -170,37 +170,64 @@
    }
   },
   "suite": {
-   "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
-    "gates": [
-     "\u24ba\u2461",
-     "\u24bb\u2461"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38667413553",
-    "since": "1bab6c44f20aa08b843675b249b5d674484fd43e"
-   },
    "receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py": {
     "gates": [
-     "\u21d2\u21d2 and REPAIR-OWED overshot for ONE meas",
-     "\u24ec",
-     "\u24fd",
-     "\u24fe"
+     "\u21d2 and EXTENDED was a CATEGORY ERROR, not"
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38667413553",
     "since": "1bab6c44f20aa08b843675b249b5d674484fd43e"
    },
-   "receipts/L_probability/S7_the_paper_pins_are_read_by_reversing_the_clause_they_quote_and_only_one_in_four_would_notice.py": {
+   "receipts/L_probability/S29_the_high_call_is_refuted_again_and_the_low_mode_here_is_a_property_of_the_receipts_because_twenty_three_of_twenty_nine_cannot_take_the_verdict_at_all.py": {
     "gates": [
-     "\u24bc"
+     "\u24ba\u2461"
     ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38671420295",
-    "since": "e7c12102864e3d3b1dc67af1c6e9e6ab4f473f8d"
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38743326580",
+    "since": "b30f3211c816160c9a316b3b714ed49fa2e49484"
    },
-   "receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py": {
+   "receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py": {
     "gates": [
-     "\u24b6\u2460"
+     "\u24b7\u2460"
     ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38667413553",
-    "since": "1bab6c44f20aa08b843675b249b5d674484fd43e"
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38743326580",
+    "since": "b30f3211c816160c9a316b3b714ed49fa2e49484"
+   },
+   "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
+    "gates": [
+     "\u24bb\u2460"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38743326580",
+    "since": "b30f3211c816160c9a316b3b714ed49fa2e49484"
+   },
+   "receipts/L_probability/S51_the_queue_closes_whole_and_both_arms_fail_because_one_arbiter_was_counting_its_own_ledger_and_the_other_counts_a_defect_the_fix_removes_before_the_record.py": {
+    "gates": [
+     "\u24b6\u2462",
+     "\u24b7\u2462",
+     "\u24b8\u2460",
+     "\u24b8\u2462",
+     "\u24b9\u2461"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38743326580",
+    "since": "b30f3211c816160c9a316b3b714ed49fa2e49484"
+   },
+   "receipts/L_probability/S52_the_seats_own_reading_closes_whole_and_two_arms_land_in_band_while_the_effort_band_fails_low_because_the_series_it_was_drawn_from_is_still_falling.py": {
+    "gates": [
+     "\u24b8\u2462",
+     "\u24ba\u2461"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38743326580",
+    "since": "b30f3211c816160c9a316b3b714ed49fa2e49484"
+   },
+   "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
+    "gates": [
+     "\u24b7\u2462",
+     "\u24b7\u2463",
+     "\u24b7\u2464",
+     "\u24b7\u2466",
+     "\u24b7\u2467",
+     "\u24b9\u2460"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38743326580",
+    "since": "b30f3211c816160c9a316b3b714ed49fa2e49484"
    }
   },
   "tolerance": {
