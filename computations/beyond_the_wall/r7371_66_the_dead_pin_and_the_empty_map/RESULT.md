@@ -239,3 +239,52 @@ unnoticed: the index carries a freshness note **in its own header** — `max_age
 ⌗ *A measurement nobody checks is a measurement that goes stale in silence. That is this corpus's
 oldest lesson and the reason every ratchet in it exists — and the index, which decides what `CI` looks
 at, had none.*
+
+## ⓙ ⛭⛭ AND THE READING WAS ALREADY DONE, BY `69` AT DARYL'S DIRECTION — WHICH SUPERSEDES THIS SEAT'S MECHANICAL COUNT BEFORE IT WAS EVER USEFUL
+
+*This seat measured `195` open-language sites across `33` of `55` papers and called it an upper bound
+to size a reading it would begin next revision. **`69` had already read them.***
+
+| `69`'s census (`r7367_69_the_register_census/`) | |
+|---|---|
+| papers | the ***`18`*** published ones, `P1`–`P18`, from the live edition's own list |
+| paragraphs carrying a marker of something unfinished | ***`257`*** |
+| ***read in full*** | ***every one*** |
+| the reading, per paragraph | `items.tsv` — paper, class, topic, the register rows it touches, a note |
+| classes | `OPEN`, `CHECK`, `POINTER`, `NOT-OPEN`, `DECLARED-NOT-OWED`, `STALE` |
+| its stated limit | a paper stating something open with none of the marker words would be missed; every paper's own frontier section was reached and read whole, so the risk sits in body prose |
+
+> ⛔ ***ITS HEADLINE: "The register's open list and the papers' open list have almost nothing in
+> common."***
+
+| of the `29` distinct open items the papers state, merged across papers | |
+|---|---|
+| carried by a LIVE register row | ***`1`*** — `PO-50` |
+| stated open while every register row that touched them is ***STRUCK*** | ***`11`*** |
+| never had a register row at all | ***`17`*** |
+
+⛔ ***And `P18`'s own frontier — which the paper calls "complete and unfiltered" — lists seven open
+items: one has a live row and the other six have rows that are struck.***
+
+⛔ ***Plus `11` places where the papers contradict each other about whether something is open.*** *Those
+are one-state failures in the published corpus, and they are listed.*
+
+⌗ ***`69` deliberately did not decide the struck-but-open cases, and that is the right refusal.*** *A
+strike is meant to rest on a receipted answer, so each case is either **a stale paper** or **a row
+struck too early** — and the census gives each strike's own ground so that whoever works the item can
+see which side to read first. *Deciding them from a census would have been the thing this corpus
+charges most often: a verdict true of what it examined, taken to license a conclusion about something
+else.*
+
+### ⇒ so what is this seat's is not the reading but the ruling and the registering
+
+1. ***`11` struck-versus-open cases, ruled from the receipts, one at a time.*** *Each is a strike to
+   uphold (and then the paper is stale and gets rewritten to the answer) or to lift (and then the row
+   returns and the strike's ground was short).*
+2. ***`17` items with no row, registered as physics rows with their objects named*** — not a triage
+   list, and not a list that loses items by reclassification.
+3. ***`11` paper contradictions, routed to whoever owns each paper.***
+
+⌗ ***And the thing it settles, which is bigger than the list:*** **`PO-78`'s fourth discharge clause is
+not the end of this programme's open work — it was only ever the end of this instrument's.** *That is
+what `69` was pointing at, and it took a census to turn an impression into a list.*
