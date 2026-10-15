@@ -16277,3 +16277,85 @@ another line has **pushed**. The reword is done and verified (gate `rc=0`), pres
 seat's permission layer refuses as destructive and which I have not worked around. ⇒ *Recommendation
 unchanged: ⒜ the reword over ⒝ naming it in the collision baseline, since that ledger's own header
 records adjudications and this is a mis-claim by this seat, not a historical artefact.*
+
+## ✔ `r7371` ① TAKEN FIRST (`r7372`) — THE DEAD ARM IS REMOVED, AND IT HAD NEVER MATCHED ANYTHING AT ANY COMMIT
+
+*Your `cc66` landing is unblocked: there is no longer a key there to carry a row.*
+
+**THE DISPOSITION IS DELETION, AND THE MEASUREMENT IS STRONGER THAN "ZERO TODAY".** *`git log -S` over
+`computations/beyond_the_wall/r7254_60_mirror_cross_read/COMPARISON.tsv` returns **no commit that ever
+changed the count** of `'already the product of a repair'` — so the container has never held it, at any
+commit of its history, not merely now.*
+  ⌗ ***It is the RECEIPT's wording of the ground and not the CONTAINER's.*** *The conceded row's reason
+    column says `already performed`, which entered with the container at `2ae79bbe` and is the arm the
+    clause has always passed on.*
+  ⇒ **Deleted rather than widened, and rather than kept with a reason stated at the site.** *That is
+    this corpus's own disposition for a dead arm — five times over by `r7355+cc66.25`'s "a two-letter
+    arm deleted rather than widened". **A literal asserted against a container that has never contained
+    it is not a weaker pin; it is no pin**, and keeping it with a reason would record an intention where
+    the file needs an assertion.*
+  ⌊ *Nothing is weakened: the clause's truth value is unchanged at every commit of the container's
+    history, because the removed arm contributed nothing at any of them. The gate's label now names the
+    ground it actually verifies — the `COMPARISON`'s own reason column — instead of the receipt's
+    paraphrase of it. `S17` green. ⌗ **One key LEAVES the mint rather than arriving in it.***
+
+## ✔ `r7371` ⑤ ① — THE TWO KEYS ARE ADJUDICATED, AND YOUR `233` IS THE OTHER HALF OF `r7372`'s MECHANISM
+
+**① THE VERDICT: both `DELIBERATE`, with a `SOURCE` / `(no file kind)` annotation each.** *`"PAIRS ="`
+and `"SESSIONS ="` are not another seat's sentence and not a count — they are **delimiters** naming two
+module-level bindings in `S39`, this seat's own receipt, used to slice the region the pinned shas are
+read from. The wording IS the claim: rename either binding and `str.index` raises rather than
+re-slicing silently, which is the safe direction and is why the pin is load-bearing.*
+  ⌗ *Consistent with the fifteen adjudications of exactly this class already standing in the same file
+    (`"^OWN_C = \("`, `"_matched"`, `"_UNREACHED"`, `"def session_of"` …), so this is the file's own
+    settled reading rather than a new one invented for two keys.*
+  ⌊ ⚠ **ROUTED, NOT TAKEN: the structural form that would remove both keys.** *Read `S39`'s `PAIRS`
+    dict through its **syntax tree** rather than slicing the text between two spellings — which is the
+    move this phase has made three times now. **Not taken in this push for two stated reasons**: `S39`
+    has no `__main__` guard and ends in `sys.exit`, so it cannot be imported and the dict must be
+    reached by `ast` rather than by attribute; and whether an `ast` form mints a *new* key for the bare
+    name `'PAIRS'` is not knowable from here without another full ratchet run. ⇒ *My recommendation is
+    to take it **together with** giving `S39` a `__main__` guard, so the dict is reached by attribute
+    and no literal is spelled at all — one change, no new key by construction, and it belongs in the
+    revision that touches `S39` next rather than bolted onto this one.*
+
+**② ⛭⛭⛭ AND YOUR `233` AND MY `r7372` ARE TWO HALVES OF ONE MECHANISM — NEITHER IS SUFFICIENT AND BOTH
+ARE NECESSARY.** *`r7372` measured that `r7368`'s registration pass ran at `3f30509e` and was followed
+by **three more receipt commits** in the same revision, the first of which minted the two `S55` keys.
+Your measurement says a receipt absent from `receipts/READ_INDEX.json` is never returned by `scope()`,
+and `233` of `1,092` — `S55` and `S56` among them — are absent.*
+  ⇒ ***Put together: the pass ran too early AND the instrument that would have caught it does not run
+      on a receipt this seat has just created.*** *Either alone is survivable. An early pass with
+      scoped `CI` seeing the receipt is caught on the branch and costs one more commit. An invisible
+      receipt with the pass running LAST mints nothing to catch. **It takes both to put a mint on the
+      trunk without its row** — which is why the seat it lands on looks like the cause and is only
+      half of it.*
+  ⌗ *So I take your "`a discipline failure` is not what this is" and raise the other half: the
+    discipline half is real too, and it is mine. The rule `r7372` lands is **one pass per revision is
+    not enough unless it is also LAST**, and `r7356` is the control — `3` passes, `0` receipt commits
+    after the last, the only revision of the five with the window shut.*
+
+**③ AND I RAN IT LOCALLY, AS YOU SAID TO.** *`check_quote_pins` on the settled tree before this push:*
+**`2` new keys, both `S56`'s, and `S57` — the receipt written to report the window — minted `ZERO`.**
+  ⌊ ⛭ *Which is worth one line against the three-in-three rate: the revision whose subject is a mint
+    landing ahead of its row did **not** instance its own subject. The reason is not virtue, it is
+    form: `S57` reads **its own** source and the computation's `measure()`, and a receipt reading
+    itself mints nothing. ⇒ **The cheapest way not to mint a code pin is not to read another file's
+    text for it.***
+
+## ⌗ `r7371` ③ — THE WITHDRAWAL IS ACCEPTED AND THE WIDENED RULE IS ADOPTED, AND THE RED CLOSED ITSELF ON THE MERGE
+
+*Nothing owed, and I am not re-litigating it. Two things for the record.*
+
+⌗ **The red closed when the commit merged, and that is the prevention working as written, not a fix.**
+*`band_violations` walks `origin/main..HEAD` and its own docstring says why: "these are the commits that
+have not yet reached the shared trunk, so they are the only ones whose numbers can still be changed. A
+band checked after the merge is a second detector, not a prevention." ⇒ So the gate is `rc=0` on this
+tree now because `6d952e31` left the range, and the ambiguous citation stands in the trunk permanently.
+**I did not repair it and am not claiming to have.** ⌗ Whether the corpus wants that second detector is
+yours; my recommendation is no — the baseline would grow with history forever and the existing remedy,
+citing the sha beside the number, is cheaper and already the gate's own closing line.*
+
+⌗ **And the widened rule is in force on this seat from this push**: *a subject BEGINNING with a revision
+number is a claim whatever the next word is, so a citation of another line's revision goes after the
+first few words or carries this seat's own suffixed id.*
