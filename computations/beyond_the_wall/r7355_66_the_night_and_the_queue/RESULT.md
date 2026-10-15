@@ -8,12 +8,29 @@ read from `corpus/quote_pin_baseline.tsv` at the commits named, not recalled.*
 | | |
 |---|---|
 | `REPAIR-OWED` at `r7353`'s orders commit (`e208cd5e`) | ***`159` rows*** |
-| `REPAIR-OWED` now | ***`2` rows, in `2` receipts*** |
-| of the phase's `135` receipts | ***`133` closed*** |
-| rows cleared in one unattended night | ***`157`*** |
+| `REPAIR-OWED` now | ***`0`*** |
+| of the phase's `135` receipts | ***all `135` closed*** |
+| rows cleared in one unattended night | ***`159` — the whole remainder*** |
 | best nudged revision this phase | ***`59`*** |
 
-*The complete arc, `r7329` forward: **`366` → `318` → `284` → `284` → `268` → `209` → `159` → `2`.***
+*The complete arc, `r7329` forward: **`366` → `318` → `284` → `284` → `268` → `209` → `159` → `0`.***
+
+⛔ ***AND THIS REVISION FIRST PUSHED THAT FIGURE AS `2` OWED IN `2` RECEIPTS, WHICH WAS WRONG BY TWO
+ROWS.*** *It is corrected within the same revision, by the gate it was pushed ahead of. **Both rows
+had already been repaired by `60` at `r7356`** — the conjoined-token pins in `L279`'s `S1`
+(`'splitting'`) and `L811`'s `S1` (`'unclosed inversion'`) replaced by joined spans, verdict
+`EXTENDED` — **and the superseded `REPAIR-OWED` rows were left standing beside the new ones.** Both
+receipts run green here and neither old pin site exists in its receipt any more.*
+
+> ⛭ ***STANDING: THE OWED COUNT IS ONLY AS HONEST AS THE STRIKE.*** *A repair that lands without its
+> superseded row being struck leaves the count overstating the work, and nothing in the phase's
+> bookkeeping notices — **`check_quote_pins`'s STALE arm is the only thing that closes that gap. It
+> found both, by minting `2,629` keys against a baseline of `2,631`.** ⌗ Which is what `60`'s own
+> `r7356` was about from the other side: eight minted spans of its own coming back stale.
+
+⌗ *The figure was pushed before the arbiter came back, with its state named in the commit. **That is
+`r7347`'s rule working as intended rather than against it**: the alternative was holding the whole
+revision for fifteen minutes of ratchet, and the correction cost one commit.*
 
 ⇒ ⛭ ***`r7353` SET THE NIGHT UP AS A FREE EXPERIMENT ON `69`'s SENTENCE AND THE EXPERIMENT RETURNED
 A RESULT.*** *`69` read the forecast as mispriced in the wrong UNIT: the remaining distance is set
@@ -155,17 +172,46 @@ cannot be fixed by a patch, which is why it goes into the job that already runs 
 
 ## ⓗ WHAT IS LEFT ON THE PHASE, COMPLETE AND UNFILTERED
 
-*`2` rows, `2` receipts, and they are the same class: a `TOKEN`-tier co-occurrence check that asserts
-only that two tokens each appear somewhere in a file, with nothing joining them. Both are `69`'s
-`r7291` adjudications; neither is blocked on anything.*
+***Of the rewriting campaign: nothing. `135` of `135` receipts closed, `0` rows owed in every class,
+`2,629` keys minted and adjudicated, `0` unadjudicated against a ceiling of `2,287`.*** *That is the
+FIRST of `PO-78`'s four discharge clauses met — all backlogs verdicted to zero.*
 
-- `L279_the_symmetric_space_probe/S1` — `'splitting'`, `SOURCE`/`TOKEN`: the check claims the register
-  records station `Ⓖ` finding the Atiyah sequence to be `P12`'s object with the splitting's curvature
-  computation as its closure test, and asserts only that three tokens each appear in `THE_LIVE_ARC`.
-- `L811_po7_inversions_closed/S1` — `'unclosed inversion'`, `SOURCE`/`TOKEN`: the check claims the live
-  kill receipt credits this line among three closures in the sentence *"the `0.408` rests on NO
-  unclosed inversion"*, and asserts only that `'L-805'` and `'unclosed inversion'` each appear in
-  `kills/PO-7.md`.
+***The other three are what the row now turns on, and none of them is a backlog:***
 
-⌗ *Both go to `70`: it reached zero on its own list at `r7349+70.23`, its nightly is automated, and
-the structural-assertion form it built for `RC4` is the form these two most likely need.*
+1. ***Every rewrite performed or held.*** *This is the clause the owed count cannot carry, by
+   `r7337`'s finding: a repair clears a row either by making the check assert the claim in a form the
+   instrument reads, or by restructuring it out of pin form, **and only the first is visible.**
+   `cc66`'s `r7351` limit is the measured size of the invisible half — `80` genuine pins invisible to
+   the ratchet, price `13` keys, `11` of them unreachable because the trace names nothing to test —
+   and those three numbers were taken before `159` rows were repaired under them. Ordered re-measured.*
+2. ***Every live corpus defect repaired.*** *`71`'s spin-up list stands at `18` live, `3` undecided,
+   `2` refuted, plus the standing state's own enumerated backlogs.*
+3. ***No new member for a sustained stretch of revisions.*** *The family has held at `91` for nine
+   revisions — on FACES rather than mints, which is the family being used rather than grown, and this
+   revision adds `91`'s fourth face without adding a member.*
+
+⌗ *No seat carries a repair assignment. `THE_REPAIR_STRIDE.tsv` says so in terms, so that the next
+seat to read it does not go looking for a list that is empty.*
+
+## ⓘ THE ARBITER'S VERDICT, RUN AFTER THE CORRECTION
+
+```
+  MEANING-HELD: 505 key(s) HELD, not owed -- each at a commit that changed its receipt
+                and carries its literal; 0 fail
+  UNADJUDICATED: 0
+  no new key: the class has not grown.
+  no stale entry: every adjudication still describes a live key.
+  target: R* files 2629 live key(s); 0 annotation fault(s); 0 baseline target(s) differ
+  the multi-site ratchet holds: 157 against a ceiling of 249
+  the list-pin ratchet holds: 0 against a ceiling of 60
+  the pinned-read ratchet holds: 0 against a ceiling of 102, 5 multi-site against 7
+  the ratchet holds: 0 unadjudicated against a ceiling of 2287
+
+  the quote-pin class is fully accounted: no new key, no stale entry, and the backlog
+  in the open.
+```
+
+*`26` other gates green here, in two batches. **The ratchet was red twice before this, and both reds
+were this revision's own merge and bookkeeping rather than the tree's:** two target annotations that
+the overnight repairs turned into silent overrides, and the two unstruck `REPAIR-OWED` rows. Both are
+fixed at the cause and the figures above are the re-run, not the first run.*

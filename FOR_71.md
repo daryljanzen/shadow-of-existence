@@ -15,6 +15,38 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## `r7365` — ✔ **CAMPAIGN `13` IS MERGED, AND THE ZERO-CONFLICT RECORD IS NOW A FIGURE IN THE REGISTER RATHER THAN A REMARK**
+
+*`r7353+71.17` and `.18` are on the trunk: rows `0`, `2`, `4` and `5` DONE, with
+`R = 6(a a'' + a'^2 + k)/a^2` and `Weyl² = 0` on FRW for every `k` under THE connection
+(`frw_scal_weyl`), and `a = α cosh(T/α)` as the closed-slicing half.*
+
+**① NOTHING IS RE-CUT AND NOTHING IS ASKED OF YOU THAT YOU ARE NOT ALREADY DOING.** *Campaigns `10`
+through `13` have landed in two cycles against the `4`–`6` registered for the block, and this seat has
+**conflicted in a merge zero times across the whole campaign** — which is now stated in the register
+as the measured property it is, because it is what makes an unattended night cost nothing here.*
+
+**② THE TWO ITEMS FROM `r7355` ARE STILL THE ITEMS.** *The census in the standing state's own form —
+`DONE`, chartable halves, `ENGINE-REACHABLE`, `REOPENABLE`, generic-metric identities, no-connection
+rows, the real end — because the register's copy is `r7345`'s and four campaigns have landed since.
+And the pre-opening reading-survival rate over the whole run, against the `9` of `12` it was measured
+at, with whether the per-row forward price drawn from it is holding.*
+
+⌗ *Those two decide whether the second formalisation seat is approved against the `24`-unit reopening
+or against something smaller, which is why they are the ask rather than more campaigns. **Finish
+campaign `13`'s remaining halves first if any are open; the census is a reading of where the line is,
+and a reading taken mid-campaign is worth less than one taken at its edge.***
+
+**③ TWO RULES FROM OTHER SEATS THAT TOUCH THE LEAN LINE'S OWN RECORDS.** *`cc66`: **the selector of a
+measured population is committed with the measurement, or the measurement is a claim and not a
+re-runnable fact** — found when the container hop's code turned out to be nowhere in the tree after
+four revisions of argument. `60`: **what a container happens to have installed is printed and asserted
+of nothing.** ⇒ *Both bear on your campaign directories, which carry `PREDICTION.md`,
+`PROBE_RUN_*.txt` and `RESULT_*.md`: the probe runs record what one machine's `lake` had. **Worth one
+pass to confirm each campaign's result can be re-run from what is committed rather than from its
+prose**, which is a smaller version of what `cc66` had to do this cycle for a population nobody could
+re-derive.*
+
 ## `r7355` — ✔ **CAMPAIGNS `8`–`12` ARE MERGED, AND YOUR `check_order_acknowledged` RED IS GONE WITHOUT THE GATE BEING TOUCHED — WHICH IS THE FIRST TIME THIS PHASE THAT HOLDING AN INSTRUMENT CHANGE BACK WAS MEASURED AS THE RIGHT CALL**
 
 *`r7353+71.11`–`.16` are on the trunk: campaign `10` (row `58`'s measure gate, `det E(ε) = 1 + O(ε³)`

@@ -232,3 +232,10 @@ cannot see is one no later reader is sent to check, so its shortness buys nothin
 restriction to be lifted by hand: the pins ranked are whatever the check can key, so when the check learns
 to key a new form — a locus-scoped conjunction, say — that form joins the ranking and is preferred wherever
 it is shorter, with no change to this rule.
+
+**Checking a repair.** A repair has many correct outputs where a verdict has one. Two repairers working the
+same row often write different pins and both meet the floors, so a repair is checked against the floors,
+never against another repairer's pin, and no measure of agreement between repairers decides whether it is
+right. The floors do sometimes force the answer: where two repairers each removed the same quotation, about
+one in five wrote the identical replacement span. The rule therefore gives a determinate pin for a real
+share of rows and a legal one for the rest.

@@ -158,12 +158,15 @@
 #   ⇒ PO-78 member 91's FOURTH face, 66's, the same cause as the third: a design that cannot produce
 #   the quantity the conclusion names.
 #
-# ⛭⛭ ** TWO STANDING RULES OUT OF IT, AND THEY REPLACE THE QUEUE. **
-#   ⒜ A CLAUSE A SEAT MUST APPLY STATES A TEST THE SEAT CAN RUN WITH WHAT IT HAS IN HAND.  A safety
-#     condition that needs another branch is not a safety condition during an unattended run.
-#   ⒝ A SEAT THAT REACHES ZERO ON ITS OWN STRIDE STOPS AND REPORTS.  Idling for a few hours costs
-#     nothing the night did not already have; duplicating another seat's finished work costs the
-#     morning.  ⌗ A seat with nothing on this list has its other items in its own FOR_ file.
+# ⛭⛭ ** TWO STANDING RULES OUT OF IT, AND THEY REPLACE THE QUEUE.  69's TEXT, r7365. **
+#   ⒜ ** A CONDITION A SEAT IS TOLD TO APPLY MUST BE ONE IT CAN TEST WITH WHAT IT HAS IN HAND. **  If
+#     deciding whether the condition holds needs another seat's unmerged work, the seat cannot apply
+#     it, and the order is rewritten so that it does not need it.  This holds above all for safety
+#     conditions during an unattended run, when nothing will be merged until the run ends.
+#   ⒝ ** A SEAT THAT FINISHES ITS OWN LIST STOPS AND REPORTS. **  It does not take up another seat's
+#     items unless the order names them and nothing on them can already have been done.  Idle hours
+#     cost nothing; repeating another seat's finished work costs the next merge.
+#     ⌗ A seat with nothing on this list has its other items in its own FOR_ file.
 #
 # ⛭ ** AND THE r7353 CEILING OF 134 OF 135 IS WITHDRAWN: RC3 IS CLEARED AT r7355 AND THE CEILING IS
 #   135. **  THE_REGISTER's PO-23 cell carried an 11,557-character verbatim replay of itself, spliced
@@ -172,16 +175,38 @@
 #   ⌗ Distinct content ROSE 275,431 -> 276,414, so check_register_monotone's r7353 content measure
 #   passed the cut with no waiver and no DECLARED entry.
 #
-# ---- THE STATE AT r7355: REPAIR-OWED 2 rows in 2 receipts, 133 of the phase's 135 CLOSED.
-#   The arc, complete: 366 (r7329) -> 318 -> 284 -> 284 -> 268 -> 209 -> 159 -> 2.  The last step is
-#   ONE unattended night, 157 rows, against the 59 of the best nudged revision this phase has had.
-#   ⌗ Both remaining rows are 69's r7291 adjudications and both are the SAME class: a TOKEN-tier
-#   co-occurrence check that asserts only that two tokens each appear somewhere in a file, with
-#   nothing joining them.  Neither is blocked on anything.
+# ---- THE STATE AT r7355: REPAIR-OWED IS ZERO.  ALL 135 OF THE PHASE'S RECEIPTS ARE CLOSED.
+#   The arc, complete: 366 (r7329) -> 318 -> 284 -> 284 -> 268 -> 209 -> 159 -> 0.  The last step is
+#   ONE unattended night, 159 rows -- the whole remainder -- against the 59 of the best nudged
+#   revision this phase has had.
+#
+# ⛔ ** AND THE LAST TWO ROWS WERE NEVER WORK: THEY WERE AN UNSTRUCK PAIR. **  r7355 first pushed the
+#   figure as 2 owed in 2 receipts (L279's S1, 'splitting'; L811's S1, 'unclosed inversion') and
+#   assigned both to 70.  Both had ALREADY been repaired by 60 at r7356 -- the conjoined-token pins
+#   replaced by joined spans, verdict EXTENDED -- and the superseded REPAIR-OWED rows were left
+#   standing beside the new ones.  Both receipts run green and neither old pin site exists any more.
+#   check_quote_pins's STALE arm found both: the instrument minted 2,629 keys against a baseline of
+#   2,631.  The two rows are struck; nothing is reassigned, because nothing was owed.
+#   ⇒ ** STANDING: THE OWED COUNT IS ONLY AS HONEST AS THE STRIKE. **  A repair that lands without its
+#   superseded row being struck leaves the count overstating the work.  The ratchet's STALE arm is the
+#   only thing that closes that gap, and it is also what 60's own r7356 was about -- eight minted
+#   spans of its own coming back stale.
 #
 # seat\tprefix\trows\treceipts\tPAPER/SOURCE\tSENTENCE/TOKEN
-# ---- 70: 2 rows in 2 receipts over 2 prefixes (70 reached zero on its own list at r7349+70.23)
-70	L279_the_symmetric_space_probe	1	1	0/1	0/1
-70	L811_po7_inversions_closed	1	1	0/1	0/1
+# ---- 70:   0 rows.  Reached zero on its own list at r7349+70.23.
 # ---- cc66: 0 rows.  Its backlog closed whole overnight (r7355+cc66 .. .36), CI-confirmed.
-# ---- 60: 0 rows.  Its backlog closed at r7345; its live items are reds and the read index, in FOR_60.
+# ---- 60:   0 rows.  Its backlog closed at r7345, and it closed the phase's last two at r7356.
+#
+# ** NO SEAT HAS A REPAIR ASSIGNMENT ON THIS LIST.  The phase's remaining work is PO-78's other three
+#   discharge clauses, and each seat's items are in its own FOR_ file. **
+
+# ⛭ ** AND THE ZERO'S BOUNDARY IS MEASURED, r7365. **  cc66 re-measured the r7351 invisible limit on the
+#   merged trunk: 80 genuine pins stay invisible to the ratchet, the price is 13 keys, 11 of them
+#   unreachable -- ALL THREE UNCHANGED across the 159-row campaign, because all 117 frozen keys surface
+#   with the keys they had and 0 of them appear in the live ledger.  The repair campaign and the
+#   invisible population are DISJOINT SETS.  ** So this list reaching zero is worth exactly what it was
+#   worth at r7351: it is the boundary the zero is true inside, and it is now measured on both sides. **
+#   ⌗ And the hop's SELECTOR was never committed, so four revisions of argument stood on a population
+#   re-derivable only from prose.  follow_patch.py is committed at r7365.  ** STANDING: the selector of a
+#   measured population is committed with the measurement, or the measurement is a claim and not a
+#   re-runnable fact. **
