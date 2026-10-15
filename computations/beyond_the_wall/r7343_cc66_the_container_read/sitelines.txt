@@ -1,0 +1,125 @@
+-	V1_a_strike_that_reads_as_done_and	PO-	all((v[2] == 'live' and v[1] and 'PO-' in v[1])
+-	S22_the_sentence_over_reached_and_	r7264	_own = [l.split('\t')[0] for l in _log if '\t' in l and 'r7264' in l.split('\t', 1)[1]]
+-	S25_the_backlog_is_a_verdicting_jo	disjunction	all('disjunction' in r[6] for r in _open_rows)
+-	S25_the_backlog_is_a_verdicting_jo	r7270+60	_mine = [r for r in _ra if len(r) > 6 and 'r7270+60' in r[6]]
+-	S37_the_ground_disqualified_sevent	Test 1	len(_steps) >= 4 and sum(_n for _s, _n in _steps.items() if 'Test 1' in _s) >= 8)
+-	C60_the_hier_composition_defect_na	Hl_of(e) if LEAFPERT else Hc_of(e)	if ln.strip().startswith('Hc, Rb =') and 'Hl_of(e) if LEAFPERT else Hc_of(e)' in ln]
+-	P15_the_enumeration_derived_from_t	**PO-31**	ROWS = [l for l in RAW.split('\n') if '**PO-31**' in l or re.search(r'\|\s*`?PO-31`?\s*\|', l)]
+md	B14_identical_in_content_is_po2s_r	identical in content	check(f'⛔ and {t} carries none of it', ('within-state' in row or 'identical in content' in row)
+md	B14_identical_in_content_is_po2s_r	within-state	check(f'⛔ and {t} carries none of it', ('within-state' in row or 'identical in content' in row)
+md	F1_a_table_that_covers_half_a_fami	r3142, `L-261`	if 'r3142, `L-261`' in l]
+md	M1_a_merge_duplicated_four_protect	L-552	any('r2775' in x for x in dup['PO-4']) and any('L-552' in x for x in dup['PO-4'])
+md	M1_a_merge_duplicated_four_protect	L-554	any('r2766' in x for x in dup['PO-6']) and any('L-554' in x for x in dup['PO-6'])
+md	M1_a_merge_duplicated_four_protect	r2766	any('r2766' in x for x in dup['PO-6']) and any('L-554' in x for x in dup['PO-6'])
+md	M1_a_merge_duplicated_four_protect	r2775	any('r2775' in x for x in dup['PO-4']) and any('L-552' in x for x in dup['PO-4'])
+md	A8_the_self_protecting_falsehood.p	is P14	if 'reserves the strike' in r[1] or 'is P14' in r[1]]
+md	A8_the_self_protecting_falsehood.p	reserves the strike	if 'reserves the strike' in r[1] or 'is P14' in r[1]]
+md,py	C1_the_uptake_is_falling_and_this_	C1_the_uptake_is_falling_and_this_	myrow = [l for l in idx if 'C1_the_uptake_is_falling_and_this_line_is_why.py' in l]
+md,py	M1_a_merge_duplicated_four_protect	---	and all(SPL.split(l)[1].strip().startswith('—') or '---' in SPL.split(l)[1]
+md,py	M1_a_merge_duplicated_four_protect	L-541	and all('L-541' in l or 'L-545' in l for l in _dupdup)
+md,py	M1_a_merge_duplicated_four_protect	L-545	and all('L-541' in l or 'L-545' in l for l in _dupdup)
+md,py	M1_a_merge_duplicated_four_protect	L-555	and sum(1 for l in rows if 'L-555' in l) == 1)
+md,py	R1_the_registry_was_checked_from_c	r1869	and 'r1869' in rows_before['storyboard_receipts/X3_seam_schwarz_reflection.py'][2])
+md,py	S10_the_sweep_for_exact_counts_cou	"{}"	and all(f'"{m.group(1)}"' in _pre_lits for m in _from if m))
+md,py,tex	C65_the_next_sixty_keys_are_all_so	r7247+cc66.167	MINE = [(n, p) for n, p in ROWS if len(p) >= 7 and TAG in p[6]]
+md,tsv	S41_a_within_class_rate_set_beside	+60	_pre = [c for c in L if len(c) >= 7 and '+60' in c[6] and (rev(c[6]) or 99999) < 7260]
+md,tsv	S41_a_within_class_rate_set_beside	cc66	_cc = [c for c in _pre if 'cc66' in c[6]]
+md,txt	A3_the_convergence_audit.py	QUESTION IS ANSWERED	answered = [t for t, l in rows.items() if 'QUESTION IS ANSWERED' in l]
+md,txt	A3_the_convergence_audit.py	QUESTION IS ANSWERED	then_answered = [t for t, l in then_rows.items() if 'QUESTION IS ANSWERED' in l]
+md,txt	A4_the_ledger_seven_swept.py	half a result, marked as half	_still = [k for k, v in led.items() if 'half a result, marked as half' in v[1].lower()]
+md,txt	A4_the_ledger_seven_swept.py	|	encoding='utf-8') if l.startswith('# ') and ' | ' in l]
+py	B53_gating_l829_and_l830.py	transmission	names_it = [b for b, t in srcs.items() if 'transmission' in t.lower()]
+py	D1_a_check_pinned_to_a_distance_fr	old_n / 330	_anchor = [l for l in now.split('\n') if 'old_n / 330' in l and l.rstrip().endswith(')')]
+py	F1_the_outstanding_bake_list_was_s	information theory	rank_l = [n for n, _ in loose].index('information theory') + 1
+py	F1_the_outstanding_bake_list_was_s	information theory	rank_t = [n for n, _ in tight].index('information theory') + 1
+py	D1_the_same_four_rows_the_second_m	startswith('| **PO-4**')	if "startswith('| **PO-4**')" in git('show', f'{MERGE}:receipts/L221_the_bridge/{n}.py')
+py	D1_the_same_four_rows_the_second_m	startswith(f'| **{t}**')	or "startswith(f'| **{t}**')" in git('show', f'{MERGE}:receipts/L221_the_bridge/{n}.py')]
+py	S10_the_sweep_for_exact_counts_cou	_FELL_BY, _FROM = 66, 2236	and '_FELL_BY, _FROM = 66, 2236' in _pre[S2REL])
+py	S10_the_sweep_for_exact_counts_cou	len(UNADJ) <= 2170	'len(UNADJ) <= 2170' in _pre[S2REL] and 'len(UNADJ) == 2170' not in '\n'.join(
+py	S36_two_more_faces_of_the_live_sub	[PASS]	len(_g_before) > 0 and all('[PASS]' in l for l in _g_before) and not _still_divides)
+py	P15_a_source_with_no_physics_repro	Hleaf	_XJ = [ln for ln in _C if 'x0' in ln and ('Jac' in ln or 'Hleaf' in ln or 'Hphys' in ln)]
+py	P15_a_source_with_no_physics_repro	Hphys	_XJ = [ln for ln in _C if 'x0' in ln and ('Jac' in ln or 'Hleaf' in ln or 'Hphys' in ln)]
+py	P15_a_source_with_no_physics_repro	Jac	_XJ = [ln for ln in _C if 'x0' in ln and ('Jac' in ln or 'Hleaf' in ln or 'Hphys' in ln)]
+py	P15_a_source_with_no_physics_repro	if _SRCIV:	_G = [ln for ln in _U if ln.strip() in ('if _SRCI:', "if _SRCI == 'sweep':") or "if _SRCIV:" in ln]
+py,tex	P15_the_optical_depth_is_a_photon_	onset parameter	and len([ln for ln in _lines if not ln.lstrip().startswith('%') and _PL in ln]) == 0)
+py,tex	P15_the_optical_depth_is_a_photon_	onset parameter	len([ln for ln in _lines if ln.lstrip().startswith('%') and _PL in ln]) == 1
+py,tsv	S20_the_adopted_dangling_test_has_	NEW SURFACE	_new_surface = [c for c in _landed if 'NEW SURFACE' in c[6]]
+py,tsv	S20_the_adopted_dangling_test_has_	cost	len(_new_surface) <= 2 and all('cost' in c[6] for c in _new_surface))
+py,tsv	S20_the_adopted_dangling_test_has_	extended	_ext_performed = [c for c in _ext if 're-cut' in c[6] or 'extended' in c[6].lower()]
+py,tsv	S20_the_adopted_dangling_test_has_	re-cut	_ext_performed = [c for c in _ext if 're-cut' in c[6] or 'extended' in c[6].lower()]
+py,tsv	S20_the_adopted_dangling_test_has_	the r7257 order ①	_landed = [c for c in _r7260 if 'the r7257 order ①' in c[6]]
+py,tsv	S20_the_adopted_dangling_test_has_	the r7257 order ③	and 'the r7257 order ③' in c[6]]
+tex	U2_the_matter_sector_spends_none.p	a single length cannot build	any('a single length cannot build' in c for c in occ)
+tex	U2_the_matter_sector_spends_none.p	the substrate's ledger does not ca	and any('the substrate\'s ledger does not carry' in c for c in occ))
+tex	B61_the_walls_do_not_cover_the_spe	Atiyah--Hirzebruch	if 'gauge isometry' in _p and 'Atiyah--Hirzebruch' in _p]
+tex	B61_the_walls_do_not_cover_the_spe	gauge isometry	if 'gauge isometry' in _p and 'Atiyah--Hirzebruch' in _p]
+tex	S1_the_shear_needs_exactly_one_new	Pontryagin	if 'Pontryagin' in _s
+tex	S1_the_shear_needs_exactly_one_new	property of the mode chosen and no	and 'property of the mode chosen and not of the geometry' in _s]) == 1
+tex	S1_the_shear_needs_exactly_one_new	second order in the metric perturb	and 'second order in the metric perturbation' in _s
+tex	C1_item_45_answered_against_myself	The emergence of the bend	len(removed) > 2000 and 'The emergence of the bend' in removed)
+tex	C22_the_end_to_end_number.py	The constancy argument runs on	if 'The constancy argument runs on' in _s
+tex	C22_the_end_to_end_number.py	\emph{super-horizon} equation	and '\\emph{super-horizon} equation' in _s]) == 1)
+tex	C28_length_against_angle.py	10.8	if 'geometric rate gives a diffusion length' in _s and '10.8' in _s]) == 1)
+tex	C28_length_against_angle.py	geometric rate gives a diffusion l	if 'geometric rate gives a diffusion length' in _s and '10.8' in _s]) == 1)
+tex	C29_nothing_to_calculate_across_th	\emph{contains no $k$ at all once 	if '\\emph{contains no $k$ at all once $w=0$}' in _s
+tex	C29_nothing_to_calculate_across_th	on a radiation-free rate the probl	and 'on a radiation-free rate the problem is scale-free' in _s]) == 1)
+tex	C31_half_one_owes_a_rule.py	the amplitude in closed form	in _s and 'the amplitude in closed form' in _s]) == 1
+tex	C31_half_one_owes_a_rule.py	the expansion rate, the matter and	if 'the expansion rate, the matter and baryon densities and the tilt free in each arm'
+tex	C33_the_threshold_corrected.py	the amplitude in closed form	'arm' in _s and 'the amplitude in closed form' in _s]) == 1
+tex	C33_the_threshold_corrected.py	the expansion rate, the matter and	if 'the expansion rate, the matter and baryon densities and the tilt free in each '
+tex	C34_the_deliverable_is_a_pair.py	\emph{The single-locus reading is 	if '\\emph{The single-locus reading is not inside that trade}' in _s
+tex	C34_the_deliverable_is_a_pair.py	returns the first peak at $222$	and 'returns the first peak at $222$' in _s]) == 1
+tex	C38_the_comparison_scores_derivati	302.2	if '302.2' in _s and 'against the measured' in _s]) == 1)
+tex	C38_the_comparison_scores_derivati	against the measured	if '302.2' in _s and 'against the measured' in _s]) == 1)
+tex	C39_the_derived_list_read.py	302.2	if '302.2' in _s and 'against the measured' in _s]) == 1)
+tex	C39_the_derived_list_read.py	against the measured	if '302.2' in _s and 'against the measured' in _s]) == 1)
+tex	P15_no_paper_fixes_the_primordial_	normalisation	_NSENT = [s for s in re.split(r'(?<=\.)\s', P16) if 'normalisation' in s]
+tex	P15_the_fitted_onset_is_the_wrong_	onset parameter	_bd = [ln for ln in _lines if not ln.lstrip().startswith('%') and _PL in ln]
+tex	P15_the_fitted_onset_is_the_wrong_	onset parameter	_cm = [ln for ln in _lines if ln.lstrip().startswith('%') and _PL in ln]
+tsv	S17_the_cross_read_leaves_six_of_t	already performed	CLS['CONCEDED'] == 5 and any('already the product of a repair' in r[9] or 'already performed' in r[9]
+tsv	S17_the_cross_read_leaves_six_of_t	already the product of a repair	CLS['CONCEDED'] == 5 and any('already the product of a repair' in r[9] or 'already performed' in r[9]
+tsv	S17_the_cross_read_leaves_six_of_t	discrimination	any('nothing shorter' in r[9].lower() or 'discrimination' in r[9].lower()
+tsv	S17_the_cross_read_leaves_six_of_t	nothing shorter	any('nothing shorter' in r[9].lower() or 'discrimination' in r[9].lower()
+tsv	S17_the_cross_read_leaves_six_of_t	tightening	and any('tightening' in r[9].lower() for r in COMP if r[7] == 'RULE-DISPOSED'))
+tsv	S26_the_repair_owed_share_is_bimod	r7270+60	_prev = [r for r in _rl if len(r) > 6 and 'r7270+60' in r[6]]
+tsv	S26_the_repair_owed_share_is_bimod	r7280+60	_mine = [r for r in _rl if len(r) > 6 and 'r7280+60' in r[6]]
+tsv	S27_my_mode_call_is_refuted_and_th	r7284+60	_mine = [r for r in _ra if len(r) > 6 and 'r7284+60' in r[6]]
+tsv	S2_the_quote_pin_backlog_falls_by_	DIAGNOSTIC PROSE	and all('DIAGNOSTIC PROSE' in r[6] for r in KINDS['NOTE']))
+tsv	S2_the_quote_pin_backlog_falls_by_	Read:	all('Read:' in r[6] for r in MINE))
+tsv	S2_the_quote_pin_backlog_falls_by_	SHOULD go red	all(('SHOULD go red' in r[6]) or ('SHOULD land here' in r[6]) for r in MINE))
+tsv	S2_the_quote_pin_backlog_falls_by_	SHOULD land here	all(('SHOULD go red' in r[6]) or ('SHOULD land here' in r[6]) for r in MINE))
+tsv	S2_the_quote_pin_backlog_falls_by_	asks for NO change	all('asks for NO change' in r[6] and 'r7150' in r[6] for r in KINDS['RULE']))
+tsv	S2_the_quote_pin_backlog_falls_by_	figure	and all('r7150' in r[6] or 'ruling' in r[6] or 'figure' in r[6] for r in MINE))
+tsv	S2_the_quote_pin_backlog_falls_by_	r7150	all('asks for NO change' in r[6] and 'r7150' in r[6] for r in KINDS['RULE']))
+tsv	S2_the_quote_pin_backlog_falls_by_	r7150	and all('r7150' in r[6] or 'ruling' in r[6] or 'figure' in r[6] for r in MINE))
+tsv	S2_the_quote_pin_backlog_falls_by_	ruling	and all('r7150' in r[6] or 'ruling' in r[6] or 'figure' in r[6] for r in MINE))
+tsv	S32_fifty_six_keys_on_this_seats_o	CANNOT FAIL	_cannot = [c for c in _l803 if c[5] == 'REPAIR-OWED' and 'CANNOT FAIL' in (c[6] or '')
+tsv	S32_fifty_six_keys_on_this_seats_o	FALSE POSITIVE OF THE SUBJECT TEST	_fp = [c for c in _mine if 'FALSE POSITIVE OF THE SUBJECT TEST' in (c[6] or '')]
+tsv	S32_fifty_six_keys_on_this_seats_o	closed FINITE list	_gap = [c for c in _mine if 'closed FINITE list' in (c[6] or '')
+tsv	S32_fifty_six_keys_on_this_seats_o	closed LEAD word list	or 'closed LEAD word list' in (c[6] or '')]
+tsv	S32_fifty_six_keys_on_this_seats_o	r7296+60	_mine = [c for c in _all if STAMP in (c[6] or '')]
+tsv	S34_the_blind_read_scores_one_of_s	r7300+60, L811	_l811_mine = [c for c in _l811 if 'r7300+60, L811' in (c[6] or '')]
+tsv	S34_the_blind_read_scores_one_of_s	r7300+60, the r7295 primary	_mine = [c for c in _all if 'r7300+60, the r7295 primary' in (c[6] or '')]
+tsv	S36_two_more_faces_of_the_live_sub	+60	_mine_elsewhere = len({c[0] for c in _led if '+60' in (c[6] or '')
+tsv	S37_the_ground_disqualified_sevent	STEP:	_with_step = [c for c in _mine if 'STEP:' in (c[6] or '')]
+tsv	S37_the_ground_disqualified_sevent	r7310+60	_mine = [c for c in _now if STAMP in (c[6] or '')]
+tsv	S38_the_last_thirty_three_keys_are	r7312+60	_mine = [c for c in _now if STAMP in (c[6] or '')]
+tsv	S3_the_openness_subclass_is_read_i	receipts/P15_CR_cosmology/P15_the_	_owed_is_key = any(k[1] == _OWEDLIT for k in NOW if COR in k[0])
+tsv	S40_twenty_seven_of_forty_early_ro	spelling border	_border = [c for c in RESULT if 'spelling border' in c[8]]
+tsv	S46_the_first_repair_stride_closes	THE CASE IS	_cases = [c for c in _minted if 'WITHDRAWAL WITH ITS CASE' in c[6] or 'THE CASE IS' in c[6]
+tsv	S46_the_first_repair_stride_closes	WITHDRAWAL WITH ITS CASE	_cases = [c for c in _minted if 'WITHDRAWAL WITH ITS CASE' in c[6] or 'THE CASE IS' in c[6]
+tsv	S46_the_first_repair_stride_closes	case about the INSTRUMENT	or 'case about the INSTRUMENT' in c[6]]
+tsv	S46_the_first_repair_stride_closes	r7329	and c[5] != 'REPAIR-OWED' and 'r7329' in c[6]}) for r in _gone_recs}
+tsv	S46_the_first_repair_stride_closes	r7332+60	_live = [c for c in ledger() if any(b in c[0] for b in BLOCKS) and 'r7332+60' in c[6]]
+tsv	S46_the_first_repair_stride_closes	r7332+60	_minted = [c for c in ledger(MINE) if any(b in c[0] for b in BLOCKS) and 'r7332+60' in c[6]]
+tsv	S46_the_first_repair_stride_closes	r7332+60	len(_cases) == K.CASES and all('r7332+60' in c[6] for c in _cases))
+tsv	S47_the_cheap_tail_closes_whole_an	RULE CASE	_cases = [c for c in _minted if 'RULE CASE' in c[6]]
+tsv	S47_the_cheap_tail_closes_whole_an	r7336+60	_minted = [c for c in ledger() if c[0] in EDITABLE and 'r7336+60' in c[6]]
+tsv	S4_the_exact_count_on_a_set_anothe	r7204+60	_r7204_stamped = sum(1 for r in _base if len(r) >= 7 and 'r7204+60' in r[6])
+tsv	C66_the_cross_read_agrees_with_six	WAS: r7247+cc66.16	and all('WAS: r7247+cc66.16' in p[6] for p in _moved))
+tsv	C66_the_cross_read_agrees_with_six	r7247+cc66.16	_mine_all = [p for p in ROWS if 'r7247+cc66.16' in p[6] or 'r7251+cc66.169' in p[6]]
+tsv	C66_the_cross_read_agrees_with_six	r7251+cc66.169	_mine_all = [p for p in ROWS if 'r7247+cc66.16' in p[6] or 'r7251+cc66.169' in p[6]]
+tsv	C66_the_cross_read_agrees_with_six	r7251+cc66.169	_moved = [p for p in ROWS if 'r7251+cc66.169' in p[6]]
+tsv	C67_the_hundred_and_forty_eight_ar	extended from	_from_lit = [p for p in _ext if 'extended from' in p[WHY] or p[GND] == 'NOT-DELIBERATE']
+tsv	C67_the_hundred_and_forty_eight_ar	flagged in this cycle	_flagged = [p for p in _rev if 'flagged in this cycle' in p[4] or 'pre-registration' in p[4]]
+tsv	C67_the_hundred_and_forty_eight_ar	pre-registration	_flagged = [p for p in _rev if 'flagged in this cycle' in p[4] or 'pre-registration' in p[4]]

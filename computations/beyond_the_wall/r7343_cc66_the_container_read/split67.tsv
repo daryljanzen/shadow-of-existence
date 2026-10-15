@@ -1,0 +1,67 @@
+receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py	"Atiyah--Hirzebruch"	PAPER	TOKEN		-	tex
+receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py	"gauge isometry"	PAPER	TOKEN		-	tex
+receipts/L230_computes_convention/C1_the_uptake_is_falling_and_this_line_is_why.py	"C1_the_uptake_is_falling_and_this_line_is_why.py"	SOURCE	TOKEN		-	md,py
+receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py	"old_n / 330"	SOURCE	SENTENCE		-	py
+receipts/L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm.py	"Pontryagin"	PAPER	TOKEN		-	tex
+receipts/L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm.py	"property of the mode chosen and not of the geometry"	PAPER	SENTENCE		-	tex
+receipts/L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm.py	"second order in the metric perturbation"	PAPER	SENTENCE		-	tex
+receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py	"---"	SOURCE	TOKEN	ALT	-	md,py
+receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py	"L-541"	SOURCE	TOKEN	ALT	-	md,py
+receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py	"L-545"	SOURCE	TOKEN	ALT	-	md,py
+receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py	"L-555"	SOURCE	TOKEN		-	md,py
+receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py	"startswith('| **PO-4**')"	SOURCE	TOKEN	ALT	-	py
+receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py	"startswith(f'| **{t}**')"	SOURCE	TOKEN	ALT	-	py
+receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py	"NEW SURFACE"	SOURCE	TOKEN		-	py,tsv
+receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py	"cost"	SOURCE	TOKEN		-	py,tsv
+receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py	"extended"	SOURCE	TOKEN	ALT	-	py,tsv
+receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py	"re-cut"	SOURCE	TOKEN	ALT	-	py,tsv
+receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py	"the r7257 order \u2460"	SOURCE	SENTENCE		-	py,tsv
+receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py	"the r7257 order \u2462"	SOURCE	SENTENCE		-	py,tsv
+receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py	"DIAGNOSTIC PROSE"	SOURCE	TOKEN		-	tsv
+receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py	"Read:"	SOURCE	TOKEN		-	tsv
+receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py	"SHOULD go red"	SOURCE	SENTENCE	ALT	-	tsv
+receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py	"SHOULD land here"	SOURCE	SENTENCE	ALT	-	tsv
+receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py	"asks for NO change"	SOURCE	SENTENCE		-	tsv
+receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py	"figure"	SOURCE	TOKEN	ALT	-	tsv
+receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py	"r7150"	SOURCE	TOKEN	ALT	-	tsv
+receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py	"ruling"	SOURCE	TOKEN	ALT	-	tsv
+receipts/L_probability/S32_fifty_six_keys_on_this_seats_own_claim_and_four_of_eight_registered_bands_missed_every_one_of_them_in_the_same_direction.py	"CANNOT FAIL"	SOURCE	TOKEN		-	tsv
+receipts/L_probability/S32_fifty_six_keys_on_this_seats_own_claim_and_four_of_eight_registered_bands_missed_every_one_of_them_in_the_same_direction.py	"FALSE POSITIVE OF THE SUBJECT TEST"	SOURCE	SENTENCE		-	tsv
+receipts/L_probability/S32_fifty_six_keys_on_this_seats_own_claim_and_four_of_eight_registered_bands_missed_every_one_of_them_in_the_same_direction.py	"closed FINITE list"	SOURCE	SENTENCE	ALT	-	tsv
+receipts/L_probability/S32_fifty_six_keys_on_this_seats_own_claim_and_four_of_eight_registered_bands_missed_every_one_of_them_in_the_same_direction.py	"closed LEAD word list"	SOURCE	SENTENCE	ALT	-	tsv
+receipts/L_probability/S32_fifty_six_keys_on_this_seats_own_claim_and_four_of_eight_registered_bands_missed_every_one_of_them_in_the_same_direction.py	"r7296+60"	SOURCE	TOKEN		-	tsv
+receipts/L_probability/S34_the_blind_read_scores_one_of_seven_and_the_direction_is_the_finding_because_a_base_rate_from_one_batch_is_a_sample_too.py	"r7300+60, L811"	SOURCE	TOKEN		-	tsv
+receipts/L_probability/S34_the_blind_read_scores_one_of_seven_and_the_direction_is_the_finding_because_a_base_rate_from_one_batch_is_a_sample_too.py	"r7300+60, the r7295 primary"	SOURCE	SENTENCE		-	tsv
+receipts/L_probability/S36_two_more_faces_of_the_live_subject_family_and_each_needed_a_different_widening_of_what_gets_run.py	"+60"	SOURCE	TOKEN		-	tsv
+receipts/L_probability/S36_two_more_faces_of_the_live_subject_family_and_each_needed_a_different_widening_of_what_gets_run.py	"[PASS]"	SOURCE	TOKEN		-	py
+receipts/L_probability/S37_the_ground_disqualified_seventeen_of_its_authors_own_calls_and_sixteen_of_them_are_repairs.py	"STEP:"	SOURCE	TOKEN		-	tsv
+receipts/L_probability/S37_the_ground_disqualified_seventeen_of_its_authors_own_calls_and_sixteen_of_them_are_repairs.py	"r7310+60"	SOURCE	TOKEN		-	tsv
+receipts/L_probability/S38_the_last_thirty_three_keys_are_one_class_and_the_flag_had_already_named_it.py	"r7312+60"	SOURCE	TOKEN		-	tsv
+receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py	"RULE CASE"	SOURCE	TOKEN	ALT,XOR	-	tsv
+receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py	"r7336+60"	SOURCE	TOKEN	ALT,XOR	-	tsv
+receipts/P12_algebroid/A3_the_convergence_audit.py	"QUESTION IS ANSWERED"	SOURCE	SENTENCE		-	md,txt
+receipts/P12_algebroid/A4_the_ledger_seven_swept.py	"|"	SOURCE	TOKEN		-	md,txt
+receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	"The constancy argument runs on"	PAPER	SENTENCE		-	tex
+receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	"\\emph{super-horizon} equation"	PAPER	TOKEN		-	tex
+receipts/P15_CR_cosmology/C28_length_against_angle.py	"10.8"	PAPER	TOKEN	MULTI	-	tex
+receipts/P15_CR_cosmology/C28_length_against_angle.py	"geometric rate gives a diffusion length"	PAPER	SENTENCE		-	tex
+receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	"\\emph{contains no $k$ at all once $w=0$}"	PAPER	SENTENCE		-	tex
+receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	"on a radiation-free rate the problem is scale-free"	PAPER	SENTENCE		-	tex
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	"the amplitude in closed form"	PAPER	SENTENCE		-	tex
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	"the expansion rate, the matter and baryon densities and the tilt free in each arm"	PAPER	SENTENCE		-	tex
+receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	"the amplitude in closed form"	PAPER	SENTENCE		-	tex
+receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	"the expansion rate, the matter and baryon densities and the tilt free in each arm"	PAPER	SENTENCE		-	tex
+receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	"\\emph{The single-locus reading is not inside that trade}"	PAPER	SENTENCE		-	tex
+receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	"returns the first peak at $222$"	PAPER	SENTENCE		-	tex
+receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	"302.2"	PAPER	TOKEN		-	tex
+receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	"against the measured"	PAPER	SENTENCE	MULTI,SECSHARED	-	tex
+receipts/P15_CR_cosmology/C39_the_derived_list_read.py	"302.2"	PAPER	TOKEN		-	tex
+receipts/P15_CR_cosmology/C39_the_derived_list_read.py	"against the measured"	PAPER	SENTENCE	MULTI,SECSHARED	-	tex
+receipts/P15_CR_cosmology/C60_the_hier_composition_defect_names_two_flags_its_own_tree_never_had.py	"Hl_of(e) if LEAFPERT else Hc_of(e)"	UNDECIDED	SENTENCE		-	-
+receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py	"Hleaf"	SOURCE	TOKEN	ALT	-	py
+receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py	"Hphys"	SOURCE	TOKEN	ALT	-	py
+receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py	"Jac"	SOURCE	TOKEN	ALT	-	py
+receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py	"if _SRCIV:"	SOURCE	TOKEN	ALT	-	py
+receipts/P15_CR_cosmology/P15_no_paper_fixes_the_primordial_normalisation_because_three_sentences_inherit_it_and_the_L_to_ell_map_is_a_projection_whose_width_passes_the_mode_spacing.py	"normalisation"	PAPER	TOKEN		-	tex
+receipts/P15_CR_cosmology/P15_the_enumeration_derived_from_the_construction_has_two_members_and_the_rows_own_identity_is_one_of_them_with_the_other_held_constant.py	"**PO-31**"	UNDECIDED	TOKEN	ALT	-	-
+receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py	"onset parameter"	UNDECIDED	TOKEN		-	py,tex
