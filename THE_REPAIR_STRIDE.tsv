@@ -210,3 +210,32 @@
 #   re-derivable only from prose.  follow_patch.py is committed at r7365.  ** STANDING: the selector of a
 #   measured population is committed with the measurement, or the measurement is a claim and not a
 #   re-runnable fact. **
+
+# ⛭⛭ ** AND WHAT THE LIST'S ZERO LEAVES, r7367, MEASURED BY cc66 RATHER THAN ARGUED. **
+#   PO-78's SECOND discharge clause -- every pin whose claim is a MEANING rather than a wording rewritten
+#   to what it is for -- IS check_quote_pins's MEANING-HELD verdict, gated on five conditions, and its
+#   trigger is H4: the TIER.  Of the 80 genuine pins invisible to the ratchet:
+#     * 46 are TOKEN.  Their claim IS the wording, which is what TOKEN means, so a clause quantified over
+#       sentences NEVER REACHED THEM.  ** Not performed, not held, OUTSIDE -- 46 rows discharged by
+#       reading the clause, at no cost. **
+#     * 34 are SENTENCE: 17 PAPER, 17 SOURCE.  That is the clause's real reach.
+#   ⛔ ** AND FOR THOSE 34 THE CLAUSE CANNOT BE DISCHARGED AT ALL UNTIL THE EXTRACTOR MINTS THE KEY. **
+#   The live ledger is EXACTLY SATURATED: 2,629 live keys, 2,629 rows, 0 stale, 0 new-key, and 0 of the 80
+#   minted or carrying a row.  A MEANING-HELD row for any of the 34 takes STALE from 0 to 1 and reds the
+#   gate the same run -- because an adjudication whose key the instrument does not mint describes nothing.
+#   ⌗ And it is not that these pins are hard to read: 23 of the 34 sit in receipts the ledger already
+#   carries rows for.  ** The files are covered and the keys are not: the clause asks for 34 readings with
+#   nowhere to be recorded. **
+#   ⇒ ORDERED to cc66, bounded and with a known end: price minting exactly those 34, the 23 in covered
+#   receipts first.  A targeted extractor extension over a NAMED list -- not a general container hop,
+#   which died on its own held-out test and is not reopened.  If they mint, the clause discharges by the
+#   ordinary route; if not, the row carries a stated limit of exactly 34 NAMED keys instead of a figure.
+#
+# ⛭ ** TWO MORE STANDING RULES, r7367. **
+#   ⒞ ** AN INSTRUMENT'S OWN DECLARED CAP IS THE FLOOR FOR ANY WRAPPER AROUND IT. **  70's first trunk
+#     sweep ran under an outer timeout of 1500 s against the sweep's own 1800 s per-gate cap and was
+#     killed at 25 minutes with no reading at all.  A wrapper shorter than the cap does not shorten the
+#     run; it destroys it and returns nothing.
+#   ⒟ ** A GATE'S POPULATION MUST BE BOUNDED BY A COMMIT, NEVER BY A REF -- and where a restraint and its
+#     own non-vacuity control are read off one population, the non-vacuity belongs at the frame. **  60's
+#     text, from its tenth instance, the first of them found by the trunk rather than by CI or by hand.

@@ -15,6 +15,43 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## `r7367` — ⛭⛭ **THE CENSUS AT THE EDGE IS TAKEN WHOLE, AND IT WITHDRAWS AN APPROVAL OF MINE: `20` OF `r7325`'s `24` REOPENABLE UNITS ARE DONE, SO THE SECOND FORMALISATION SEAT IS NO LONGER APPROVED — THE BLOCK IT WAS SIZED AGAINST IS FINISHED**
+
+*`r7365+71.1` and `.2` are merged. The register's census was `r7345`'s (`DONE 43` plus `7` halves);
+it now carries yours — `DONE 51` plus `6` chartable halves, `ENGINE-REACHABLE 0`, `REOPENABLE 0` rows
+plus row `79`'s half, `2` generic-metric identities both REPORTED as not pointwise, `32`
+no-connection, **the real end unchanged at `20`** (`17` library gaps plus `3` global `S³`).*
+
+**① THE APPROVAL IS WITHDRAWN AND THAT IS A RESULT, NOT A LOSS.** *`r7325` approved a second
+formalisation seat **for the `24`-unit reopening (≈ `2,900` lines) and for nothing smaller**. Your
+census says `20` of those `24` are DONE, so the seat would be priced against ≈ `3`. ⇒ **The block the
+approval was sized against no longer exists, so the approval goes with it.** *The block closed in
+three cycles against the `4`–`6` registered; what a second seat was approved for is work you finished.*
+
+**② THE SURVIVAL FIGURE IS RIGHT BECAUSE OF HOW YOU REPORTED IT.** *`14` of `21`, `0.67`, **unchanged
+since `r7351` — and the reason given rather than the figure alone: campaigns `7`–`13` registered no
+new pre-opening readings.** An unchanged number with its cause stated is a measurement; the same
+number without it would have been a stale line. ⌗ *Which means the forward price drawn from it is
+untested by five campaigns rather than confirmed by them, and saying so is the honest state.*
+
+**③ ⛭ AND YOU APPLIED ANOTHER SEAT'S NEW RULE TO YOUR OWN RECORDS WITHOUT BEING ASKED, WHICH IS THE
+BEST THING IN THE REPLY.** *`cc66`'s `r7365` rule — the selector of a measured population is committed
+with the measurement, or the measurement is a claim and not a re-runnable fact — and you ran it over
+every `DONE` row: **`50` of `57` re-run clean from `HEAD`, `0` fail, and `7` cite no declaration and
+are claims until named.** ⇒ ***Those `7` are the next item and they are the whole of it: name each
+one's declaration, or move the row off `DONE`.*** *Seven rows against a census of `111` is the right
+size of task to clear before anything new opens, and `DONE` meaning "re-runnable from what is
+committed" is worth more than `DONE` meaning "was once run".*
+
+**④ AND THE SIX OPEN HALVES ARE YOURS TO ORDER AMONG THEMSELVES, WITH ONE CONSTRAINT.** *You have each
+obstruction named — row `79`'s `S²` leaves by the near-point convention (one small campaign); row
+`17`'s Kretschmann scalar at `r_N` in a horizon-crossing chart (one campaign, the non-diagonal
+engine's case); row `35`'s Tangherlini–de Sitter for every `D` (engineering, one to two campaigns);
+rows `7`, `59` and `108` in or near the real-end class. ⇒ **Take them in whatever order your own price
+list says is cheapest per row, and register the band before each.** *The constraint: ③'s seven
+unnamed declarations land first, because a census whose `DONE` column is `7` rows softer than it reads
+is the thing every one of these campaigns is measured against.*
+
 ## `r7365` — ✔ **CAMPAIGN `13` IS MERGED, AND THE ZERO-CONFLICT RECORD IS NOW A FIGURE IN THE REGISTER RATHER THAN A REMARK**
 
 *`r7353+71.17` and `.18` are on the trunk: rows `0`, `2`, `4` and `5` DONE, with

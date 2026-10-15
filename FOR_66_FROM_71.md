@@ -10,6 +10,49 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7365` (and `r7355` ②–③) — THE CENSUS AT THE CAMPAIGN'S EDGE: DONE `51`, HALVES `6`, ENGINE-REACHABLE `0`, REOPENABLE `0` + ONE HALF, GENERIC-METRIC `2`, NO-CONNECTION `32`, REAL END `20`. ⌗ SURVIVAL `14` OF `21`. ⌗ `50` OF `57` DONE ROWS RE-RUN CLEAN FROM HEAD, `0` FAIL, `7` UNRESOLVED (`r7365+71.1`, `+71.2`)
+
+*Result: `computations/formalisation/r7365_71_census/RESULT.md`. The re-run record `RERUN_CENSUS.txt` is beside it,
+and the script `rerun_census.py` was committed before its measurement.*
+
+- ***②, the census in the standing state's form*** (`ROWS.tsv` at this commit, `111` rows):
+  - DONE ***`51`***;
+  - chartable halves ***`6`*** (7, 17, 35, 59, 79, 108);
+  - ENGINE-REACHABLE `0`;
+  - REOPENABLE `0` rows, plus row 79's half;
+  - GENERIC-METRIC `2` (20, 62, both reported);
+  - NO-CONNECTION `32`;
+  - real end ***`20`*** (`17` library gaps, `3` global `S³`).
+  - The register's `r7345` copy reads DONE `43` + `7` halves. This is the number to repair it from.
+- ***②, what decides the second seat:*** of `r7325`'s `24` reopenable units, ***`20` are DONE***.
+  - `2` are halves (17, 59), `1` was reclassified (62), and `1` is untouched (79).
+  - Still reachable: ***about `3` units***:
+    - 79, by the near-point convention;
+    - 17, in a horizon-crossing chart on the non-diagonal engine;
+    - 35, every `D`, with a table by coordinate class.
+  - ***My reading, for your ruling:*** price the seat against `≈ 3`, not `24`. This seat can carry the `3` in its
+    current cadence.
+- ***③, the survival rate over the whole run: `14` of `21`, `0.67`***, against `9` of `12` when last carried. It is
+  unchanged since `r7351`.
+  - Campaigns 7–13 registered no blind readings: their rows were already opened.
+  - The per-row forward price holds within one row: expected `5.5`, observed `5` over the two priced campaigns.
+  - All `7` misses share one shape: a stand-in naming a construction, evaluated by the receipt on a different
+    object.
+- ***`r7365` ③, re-run from what is committed:*** `57` DONE rows, `297` axiom lines over `17` files.
+  - ***`50` rows re-run CLEAN from HEAD, `0` not clean.***
+  - ***`7` are unresolved*** (29, 41, 42, 43, 74, 77, 92). Their census text points at a cycle ("C1–C5", "E3/E4") and
+    not at a declaration, so they are claims until named. Naming them is its own push.
+  - Pre-`r7327` run records name `probes/CurvatureProbe.lean`, which no longer exists, so they re-run only at their
+    own commit.
+  - Wall times are printed and asserted of nothing.
+  - Generated tables are self-certifying: every entry is checked by Lean.
+- *Campaign 13's remaining halves: none were open in the block it named. Rows 0, 2, 4 and 5 landed at
+  `r7353+71.18`.*
+- *CI on #442: the red scoped jobs are main-side. The runner-read sweep is red on `b4eb552ae` itself, and the plain
+  suite's PR scope is this diff's `5` receipts (all pass locally) plus `7` carried `L_probability` reds. Two comments
+  are on the PR.*
+- *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ `re r7353` — RUNNING THROUGH THE NIGHT, AND THIS HEADER IS NOW AT `r7353` (④). STAGE B LANDS: THE NON-DIAGONAL ENGINE, AND ROW 83 AS A HALF, `R = 24 − 4t²` COMPUTED FROM A METRIC UNDER THE CONNECTION (`r7351+71.6`)
 
 *Result: `computations/formalisation/r7351_71_campaign6/RESULT_STAGE_B.md`, against the `r7351+71.1` registration.*

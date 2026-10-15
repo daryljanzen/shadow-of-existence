@@ -9,6 +9,47 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7367` — ⌗ **NOTHING IS ASKED OF YOU. THIS IS WHAT YOUR LAST THREE TEXTS AND YOUR RULING DID, AND ONE THING YOU MAY WANT TO SEE BECAUSE IT IS THE PHASE'S SHAPE CHANGING**
+
+**① YOUR `91` TRIGGER IS BEING USED AS A RULE ALREADY.** *The family held at `91` again this cycle —
+eleventh revision — and the face charged was `cc66`'s and SELF-charged, not mine. **Your condition was
+specifically about faces arising from this seat writing an order or a conclusion before asking what the
+reader of it has in hand**, so a seat finding its own recurring cause does not touch it. That is the
+trigger doing what a trigger is for: it distinguishes.*
+
+**② AND THE PHASE'S SECOND DISCHARGE CLAUSE STOPPED BEING AN ARGUMENT THIS CYCLE.** *You were offered
+the question last cycle and said `cc66`'s reading should come first. It came, and it is better than a
+definition:*
+
+- *The clause — "every pin whose claim is a sentence's meaning rather than its wording rewritten to
+  what it is for" — **IS a verdict the instrument already computes**, on five conditions, and its
+  trigger is one field: **the tier.***
+- *So of the `80` pins the instrument cannot see, **`46` are `TOKEN` — their claim IS the wording, so
+  the clause never reached them.** Discharged by reading, at no cost.*
+- *The other `34` are sentences, and **the clause cannot be discharged for them at all until the
+  instrument mints their keys**, because the ledger is exactly saturated and a verdict written for a
+  key the instrument does not report would red the gate the same run. "An adjudication whose key the
+  instrument does not mint describes nothing."*
+
+⇒ ***If you want a plain-language sentence for that, it is the one worth having: the backlog did not
+shrink because someone decided what a word meant — it shrank because somebody read the instrument that
+was already deciding, and found it had never been asked about half the rows.*** *Offered, not ordered.*
+
+**③ WHAT THE INFRASTRUCTURE FRONTS LOOK LIKE NOW, SINCE THIS IS THE THING YOU ARE RELIED ON TO EXPLAIN.**
+
+- ***The quote-pin front:*** *the repair campaign is finished — `135` of `135` receipts, `0` owed. What
+  remains is `34` named pins the instrument cannot record a verdict for, and one bounded piece of work
+  to find out whether it can be taught to.*
+- ***The Lean front:*** *`DONE 51` of `111` rows plus `6` halves, the real end at `20`, **and the
+  second seat that was approved for the reopening is no longer needed — `20` of its `24` units are
+  done.** `7` rows now count as claims rather than `DONE` because they cite no declaration, which is
+  one seat's own tightening of its own standard.*
+- ***The trunk:*** *swept after four seats' unattended night — `128` pass, `0` fail, `1` unrun on a
+  stated cache case, `129` of `129` accounted for.*
+
+⌗ *How much merge-prompting to expect: unchanged — each seat is working and pushing, and nothing is
+waiting on a ruling from this seat except the `34`-key price, which is `cc66`'s to measure.*
+
 ## `r7365` — ✔ **ALL THREE TEXTS ARE LANDED AS WRITTEN, AND YOUR RULING ON MEMBER `91` IS TAKEN WITH THE WATCH YOU ATTACHED TO IT, WHICH IS THE PART THAT CHANGES SOMETHING**
 
 *Nothing in this is a new assignment. It is the record of what your three texts did, and one question

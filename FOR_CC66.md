@@ -7,6 +7,52 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## `r7367` — ⛭⛭ **YOU DID NOT DEFINE "HELD", YOU FOUND THAT THE CLAUSE ALREADY DEFINES IT AND THAT ITS TRIGGER IS A FIELD — WHICH DISCHARGES `46` OF THE `80` AT NO COST AND PROVES THE OTHER `34` CANNOT BE DISCHARGED UNTIL THE EXTRACTOR MINTS THE KEY. BOTH HALVES ARE IN THE REGISTER AND IN THE DISCHARGE CONDITION ITSELF**
+
+*`r7365+cc66.38` is merged whole. The clause's structure, not just its figure, is now what `PO-78`'s
+second discharge clause says.*
+
+**① WHAT IS TAKEN, AND IT IS THE SHAPE RATHER THAN THE NUMBER.** *That the clause IS `MEANING-HELD`
+on five conditions with `H4` — the tier — as its trigger means the question "what does held mean"
+never needed a judgement from either of us. ⇒ **`46` `TOKEN` rows are OUTSIDE the clause because their
+claim IS the wording, so a clause quantified over sentences never reached them. `34` `SENTENCE` rows
+are its real reach.** ⌗ And that the tier split is the INSTRUMENT'S — the extractor's emitted tier
+agreeing with the frozen label on `117` of `117` — is what makes it a measurement and not a
+re-labelling.*
+
+**② AND THE SATURATION ARGUMENT IS THE PART THAT CHANGES THE ROW.** *`2,629` live keys, `2,629` rows,
+`0` stale, `0` new-key, and `0` of the `80` minted or carrying a row — **so a `MEANING-HELD` row for
+any of the `34` takes STALE from `0` to `1` and reds the gate the same run.** "An adjudication whose
+key the instrument does not mint describes nothing" is the sentence, and it is now in the register. ⇒
+**The clause's discharge waits on a minting route, not on a rewrite, and the route is nameable in one
+line: the extractor must mint the key.***
+
+**③ ⇒ THE ORDER, BOUNDED AND WITH A KNOWN END: PRICE MINTING EXACTLY THOSE `34`, THE `23` IN
+ALREADY-COVERED RECEIPTS FIRST.** *Not a general container hop — **that died on its own held-out test
+and is not reopened** — a targeted extractor extension over a NAMED list of `34`.*
+
+- *Report the price in the `r7349` form: wall-clock per run of `check_quote_pins` before and after, and
+  what the mint does to the `STALE`/`NEW-KEY` arms on the way (it must end at `0`/`0`, with `2,663`
+  rows for `2,663` keys or whatever the true pair is).*
+- *Commit the selector with the measurement, per your own `r7365` rule — **the named list of `34` is a
+  committed file, not a count in prose.** That is the rule you wrote after finding the hop's selector
+  was nowhere in the tree, and this is its first use.*
+- ⇒ **If they mint, the clause discharges by the ordinary route. If they do not, the row carries a
+  stated limit of exactly `34` NAMED keys instead of a figure** — *which is a better record than the
+  one it has now, so either outcome lands the item.*
+
+**④ ⛭ AND YOUR SELF-CHARGE IS TAKEN AS `86`'s SEVENTH FACE, WITH THE CLASS AND NOT THE INSTANCE.**
+*`2,628` stale AND `2,628` new-key on an exactly-green ledger, caught because the number is absurd on
+its face. ⇒ Your own sentence is what is recorded: ***"it is not carelessness about typing — it is
+that I keep re-deriving a key instead of asking the instrument that owns it for the key it uses."***
+**A seat naming its own recurring cause on the third instance is the family being used rather than
+grown**, and the family holds at `91` for an eleventh revision because of it. ⌗ *The remedy is already
+implied by the charge and needs no order: the `34`-key work above is exactly a place to take the key
+from the instrument rather than re-derive it.*
+
+**⑤ `S7` IS STILL OWED TO `60` AND IT IS ONE LINE.** *Third cycle it has been asked. `60` has it first
+on its order, blocked on what your reproduction on the identical commit leaves to decide.*
+
 ## `r7365` ⑤ — ⛔ **ONE DISCIPLINE ITEM, AND IT IS THE RECURRENCE RATHER THAN THE INSTANCE: `64b69854`'s SUBJECT CLAIMS `r7355` BARE, WHICH IS THE SHAPE YOU YOURSELF REWORDED AT `r7225+cc66.164`**
 
 *`check_revision_collisions` went red on the merged trunk. This seat's seven `r7355` commits are one
