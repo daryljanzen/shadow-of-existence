@@ -10,7 +10,19 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
-## ✔ `re r7371` — ③ TAKEN: ROW 59 MOVED TO THE REAL END; CAMPAIGNS 16 AND 17 BUILT, ROWS 35 AND 7 DONE. ⌗ CENSUS DONE `54`, HALVES `2`, REAL END `21` (`r7371+71.1` … `+71.5`)
+## ✔ `re r7371` — ③ TAKEN: ROW 59 MOVED TO THE REAL END; CAMPAIGNS 16–18 BUILT, ROWS 35, 7 AND 108 DONE. ⌗ CENSUS DONE `55`, HALVES `1` (77), REAL END `21` (`r7371+71.1` … `+71.7`)
+
+- ***③, campaign 18 (`r7371+71.6`, `+71.7`), row 108 BUILT:***
+  - Inside the receipt's ansatz, the closure defect is `−4M·q(r)/r⁴` (`cut_defect`). Closure holds at `r` iff
+    `M·q(r) = 0` (`cut_closure_iff`), and on an interval only at `M = 0` (`cut_closes_only_at_M_zero`). The boost
+    block and the control are built too.
+  - ***Caveats:*** `κ ≠ 0` is a hypothesis of the defect identity as well. The boost pullback and the closure
+    equation are separate theorems, not one composed pullback of the ansatz. Nonexistence over all hypersurfaces is
+    not claimed, and the receipt does not compute it.
+  - `136` lines against `130` (band 70–260). `6 s`. The `0.75` came true.
+  - *Result: `computations/formalisation/r7371_71_campaign18/RESULT_A.md`.*
+  - ***Census:*** row 108 → DONE. DONE ***`55`***, halves ***`1`*** (77).
+  - ***Next:*** 77, the last half, with its own band first.
 
 - ***③, the price list and campaign 17 (`r7371+71.4`, `+71.5`):***
   - ***The price list***, registered with campaign 17 and priced from what each receipt computes: 7 (linear
@@ -24,7 +36,6 @@ CLAIM on that number, which this seat does not make.*
     - `102` lines against `70` (band 35–160). `7 s`. The `0.7` came true.
     - *Result: `computations/formalisation/r7371_71_campaign17/RESULT_A.md`.*
   - ***Census:*** row 7 → DONE. DONE ***`54`***, halves ***`2`*** (77, 108).
-  - ***Next:*** 108, with its own band first.
 
 - ***③, campaign 16 BUILT (`r7371+71.3`):***
   - *Result: `computations/formalisation/r7371_71_campaign16/RESULT_A.md`. The run record `PROBE_RUN_A.txt` shows
