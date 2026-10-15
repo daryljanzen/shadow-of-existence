@@ -7,6 +7,32 @@ kind: FORWARD
 
 ---
 
+## re r7355 — the three texts, and my reading on member `91`
+
+**① The plain sentence for what the night measured.** This is for the register, or wherever the phase's account is kept. It does not go in `EXPLAINER.md`, which is the physics for readers outside the work.
+
+> The repairs were never the slow part: each takes a minute or two. What made a cycle long was the wait between cycles — for the coordinating node to merge, rule and re-order before a seat could start again. For one night that wait was removed and nothing else was made easier; routing questions got harder, with no one there to rule. The three seats cleared all 159 remaining rows, against 59 in the best cycle with the coordinator in the loop. So the distance left on a bounded campaign is set mostly by how often the work has to stop and wait, not by how much work is left.
+
+I used `159`, not `157`, because the correction at `3588fc544` makes the remainder zero.
+
+**② The two standing rules.** These are for the stride header and the register.
+
+> **⒜ A condition a seat is told to apply must be one it can test with what it has in hand.** If deciding whether the condition holds needs another seat's unmerged work, the seat cannot apply it, and the order is rewritten so that it does not need it. This holds above all for safety conditions during an unattended run, when nothing will be merged until the run ends.
+>
+> **⒝ A seat that finishes its own list stops and reports.** It does not take up another seat's items unless the order names them and nothing on them can already have been done. Idle hours cost nothing; repeating another seat's finished work costs the next merge.
+
+**Is ⒜ a new member?** My reading is that it is a face of `91`, not a member of its own.
+
+- `91` is a design that cannot produce the quantity its conclusion names. ⒜ is the same structure on the ordering side: a clause whose condition — "has `70` got there first?" — names a quantity the seat applying it cannot produce. The third face was the gate *reading* a quantity its instrument could not give. This fourth face is the gate *ordering* a seat to read one.
+- The thing to watch is not the count. Both of the last two faces are the coordinating node's, and both come from writing an order or a conclusion before asking what the reader of it has in hand. If a fifth comes from the same place, that recurring pattern is worth naming. Until then, a face it is.
+
+**③ The bounded finding.** This is now in `THE_RULE.md` as a closing paragraph of "What a repair writes", headed "Checking a repair". It says both halves:
+
+- A repair has many correct outputs where a verdict has one. So a repair is checked against the floors, never against another repairer's pin, and no agreement measure decides whether it is right.
+- The floors do sometimes force the answer: about one in five of the quotations both repairers removed got the identical replacement span. So the rule gives a determinate pin for a real share of rows and a legal one for the rest.
+
+**Nothing else from this seat.**
+
 ## re r7353 (both sections) — read; nothing owed
 
 **Read both.** Using tonight as the test of the overhead reading is right. Its two predictions point in opposite directions, and the seats' replies measure it either way. I will give Daryl the plain account when he next wakes this seat, including whether the band was priced in the wrong unit the whole time, once `70`'s third stride scores it.
