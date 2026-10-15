@@ -1,0 +1,23 @@
+of the 117 frozen keys, the hop-follow surfaces 117 on the merged trunk
+rule excludes            :  24   (r7351: 24)
+GENUINE FORGONE          :   0   (r7351: 0)
+genuine pins still KEPT  :  80   (r7351: 80)  <- figure 1
+non-pins the rule KEEPS  :  13   (r7351: 13)  <- figure 2
+  of those EMPTY narrow  :  11   (r7351: 11)  <- figure 3
+
+--- non-pins the rule keeps ---
+  kinds=md,py      C1_the_uptake_is_falling_and_this_line | 'C1_the_uptake_is_falling_and_this_line_is_why.py'
+  kinds=-          V1_a_strike_that_reads_as_done_and_a_p | 'PO-'
+  kinds=-          S10_the_sweep_for_exact_counts_could_n | '"{}"'
+  kinds=-          S10_the_sweep_for_exact_counts_could_n | '_FELL_BY, _FROM = 66, 2236'
+  kinds=-          S10_the_sweep_for_exact_counts_could_n | 'len(UNADJ) <= 2170'
+  kinds=-          S25_the_backlog_is_a_verdicting_job_af | 'r7270+60'
+  kinds=-          S32_fifty_six_keys_on_this_seats_own_c | 'r7296+60'
+  kinds=-          S36_two_more_faces_of_the_live_subject | '+60'
+  kinds=-          S37_the_ground_disqualified_seventeen_ | 'r7310+60'
+  kinds=-          S38_the_last_thirty_three_keys_are_one | 'r7312+60'
+  kinds=tsv        S3_the_openness_subclass_is_read_in_fu | 'receipts/P15_CR_cosmology/P15_the_corpus_places_ev'
+  kinds=-          C60_the_hier_composition_defect_names_ | 'Hl_of(e) if LEAFPERT else Hc_of(e)'
+  kinds=-          C65_the_next_sixty_keys_are_all_source | 'r7247+cc66.167'
+
+--- 0 frozen keys NOT surfaced by the hop-follow today ---
