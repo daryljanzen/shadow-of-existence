@@ -50,6 +50,12 @@ CLAIM on that number, which this seat does not make.*
   - `frw_gb_k` gives `a³·GB = 24a″(a′² + k)` under THE connection for every `k`, from two profile conditions at the
     point. `frw_gb_three` covers `sin²`, `χ²` and `sinh²`.
   - Row 19 stays a half: the running-layer comparison is still open.
+- ***Campaign 10*** (registered `r7353+71.11`): row 58's measure gate (`r7353+71.12`, `row58_det_gate`, `58` lines
+  against `90`, `11 s`).
+  - For the receipt's truncated `exp(εH)` and every traceless `H`, `det E = 1 + O(ε³)`, exact over `ℝ[X]`. The
+    `ε²` cancellation is `½tr H² − ½tr H²`, through a `3 × 3` trace identity proved over any commutative ring.
+  - Caveat: this is the truncation, to `ε²` only. Row 58 stays a half, and its open half is now the Legendre
+    transform alone. Counts unchanged.
 - *CI on #439: the red scoped jobs are the main-side carry (`S7`, `E1`, `D1`), also red on main's own push of
   `e208cd5e1`. One comment on the PR. Nothing ported, because there is no fix to port.*
 - *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
