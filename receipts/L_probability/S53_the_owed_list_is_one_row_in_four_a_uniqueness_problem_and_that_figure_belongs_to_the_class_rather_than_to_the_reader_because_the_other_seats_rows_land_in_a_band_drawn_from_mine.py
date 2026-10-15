@@ -115,19 +115,32 @@ def main():
           dict(reader) == R['BY_READER'] and reader[C.SEAT] == 2 and reader['69'] == 74)
     #: ⛔ the restraint: this revision edits NO receipt, which is what makes it takeable without a
     #: ruling.  Shown over its own commits rather than asserted.
-    #: ⌗ the COMMITTED changes and the working tree together, so the claim holds before this file
-    #: is committed and after -- the assertion is that no receipt OTHER than this one is touched,
-    #: which is what restraint means and is true at both ends.
-    _touched = {f for f in git('diff', '--name-only', f'{C.CENSUS}..HEAD').split()
+    # ⛔⛭⛭⛭ r7364+60: AND IT WAS MEASURED OVER `CENSUS..HEAD`, SO THE NEXT REVISION'S LEGITIMATE WORK
+    #   BROKE IT.  *`r7364` repaired seven receipts -- six of them red, one of them this clause -- and
+    #   every one lands after `r7362`'s census, so this gate read them as `r7362` having touched six
+    #   receipts it did not touch.  **The claim was true and the range it was asserted over keeps
+    #   growing**, which is this phase's own class in its eighth face and the first time it has been
+    #   found in a RESTRAINT rather than in a measurement.*
+    #   ⇒ *** The range is now THIS REVISION'S OWN COMMITS, found by the revision id in the subject
+    #     the way `S50`'s `Ⓗ①` finds them, so a later revision's work cannot enter it. ***
+    #   ⌗ *And the working-tree term goes with it.  It was added at `r7362` so the claim would hold
+    #     before this file's own commit as well as after -- correct then, and once the revision is
+    #     landed it is a term that ANY later edit of ANY receipt satisfies.  A restraint about a
+    #     landed revision is a fact about its commits and nothing else.*
+    _own_c = [l.split()[0] for l in
+              git('log', '--no-merges', '--format=%H %s', f'{C.CENSUS}..HEAD').split('\n')
+              if l.strip() and 'r7362' in l]
+    _touched = {f for c in _own_c
+                for f in git('show', '--no-merges', '--name-only', '--format=', c).split()
                 if f.startswith('receipts/') and f.endswith('.py')}
-    _touched |= {l[3:].strip() for l in git('status', '--porcelain').split('\n')
-                 if l[3:].strip().startswith('receipts/') and l.strip().endswith('.py')}
     _others = sorted(f for f in _touched if 'L_probability/S53' not in f)
-    check(f'Ⓐ③ ⛭ and the RESTRAINT is shown rather than promised: over this revision\'s own commits '
-          f'and its working tree together, {len(_touched)} receipt(s) differ and '
+    check(f'Ⓐ③ ⛭ and the RESTRAINT is shown rather than promised: over this revision\'s OWN '
+          f'{len(_own_c)} commit(s), {len(_touched)} receipt(s) differ and '
           f'{len(_others)} of them is anyone else\'s -- no row of any seat\'s reading is touched '
-          f'{_others or ""}',
-          not _others and len(_touched) == 1)
+          f'{_others or ""}.  ⛭ r7364: *read from the commits whose subject names this revision '
+          f'rather than from `CENSUS..HEAD`, because the next revision\'s repairs land in that '
+          f'range and were being counted as this one\'s*',
+          not _others and len(_touched) == 1 and len(_own_c) >= 1)
 
     # ── Ⓑ arm ⒜ ──────────────────────────────────────────────────────────────────────────────────
     texts = C._corpus_texts(C.CENSUS)
