@@ -19463,3 +19463,86 @@ the guard fix land now; the mint is the next block and I am not reporting a pric
 ⇒ *Expected arms, stated before the run so the outcome can refute it: `STALE` `0`, `NEW-KEY` `0`,
 **`2663` rows for `2663` keys** — and if the pair is anything else, that is the measurement and not a
 miss.*
+
+## `r7367+cc66.40` — **③'s mint is BUILT and EXACT — `34` named, nothing else, proved by a control — but ⛔ the gate is RED ON `main` RIGHT NOW for `2` keys that are not mine, and my own registered total is REFUTED because I computed it from a stale base**
+
+### ⒜ **⑤ — `S7`'s LINE FOR `60`, ITEM ⒜ AGAIN AND ALONE UNTIL YOU SAY IT IS RELAYED**
+
+> **`S7` is nondeterministic on `…5tjf0b` as well as on `…6awafl` — red twice on the byte-identical
+> tree `fb7170f29`, then GREEN on `64b69854b` — so what the reproduction leaves to decide is not
+> which line it is confined to, but whether the ledger's "nothing it reads differs" is reading an
+> incomplete input set, or `S7` depends on something no ledger of its inputs can name.**
+
+### ⒝ **THE MINT, AND THE "NOTHING ELSE" IS A CONTROL AND NOT AN INSPECTION**
+
+*The drop these `34` fall through is one line: `trace = _reads(cont, asg, fns, src)` returns `None`
+because the container is bound by a **loop or comprehension TARGET**, which `asg` does not carry and
+`tasg` does. **The wide hop followed that binding everywhere and was refused on precision; this
+follows it only where the resulting key is in the committed list**, so the list is the SCOPE of the
+change rather than a filter applied to a result.*
+
+| | |
+|---|---|
+| mint OFF (the default) | **`2656`** live keys — *identical to `main`* |
+| mint ON (`QP_MINT_34=1`) | **`2690`** live keys |
+| NEW keys | `36` — **`34` the named list, `2` not named** |
+| STALE | **`0`** |
+
+⛭ ***And the `2` unnamed are NOT the extension's.*** *I moved the selector aside — the loader returns
+empty without it — and re-ran: **the same `2` keys are live with the mint OFF.** ⇒ *A control, because
+"my change minted only what it was scoped to" is exactly the claim a reading of my own diff cannot
+settle.**
+
+### ⒞ **⛔⛭ THOSE `2` ARE `main`'s, AND IT MEANS `check_quote_pins` IS RED ON THE TRUNK NOW**
+
+*At `5d3d40b68`, with no patch of mine in play: **`2656` live against `2654` rows → `2` NEW KEYS**,
+which ⓵ counts as a `[FAIL]`.*
+
+```
+S55_the_previous_repairs_own_written_safety_argument_was_the_defect…  '_PINNED'
+S55_the_previous_repairs_own_written_safety_argument_was_the_defect…  'def _class_of'
+```
+
+*Both `TOKEN`, kinds `py`, sites `398:14` and `399:14`.* ⌗ **`S55` is not mine and I am not taking
+it** — *but it is red on the trunk, so it will be red on every branch cut from it, and it is `2`
+rows.*
+
+### ⒟ **⛔ AND MY REGISTERED TOTAL IS REFUTED. SCORING IT AGAINST MYSELF RATHER THAN REINTERPRETING IT**
+
+*`.39` ⒟ registered: `STALE 0`, `NEW-KEY 0`, **`2663` rows for `2663` keys.***
+
+| | |
+|---|---|
+| predicted | `2663` = `2629` + `34` |
+| ⛔ the base I used | `2629` — **measured before `main` moved TWICE** |
+| true base | `2654` rows, `2656` live |
+| actual | **`2690`** = `2656` + `34` |
+
+⇒ ***The arm that carried the content HOLDS — exactly `34` minted, `0` stale. The total is wrong, and
+it is wrong because I did arithmetic on a remembered number instead of re-reading the ledger.***
+⌗ **Which is the same class again, one step sideways: not a key read by the wrong column, a TOTAL read
+from the wrong revision.** *`.39` ⒝ said naming the class did not stop it; this is the fifth face and
+the first where the stale thing was a number of my own rather than a field of someone else's.*
+
+### ⒠ **⛔ WHAT THE PRICE ACTUALLY IS, AND IT IS NOT THE RUNTIME**
+
+***A commit carrying the mint ALONE turns the gate red by construction***, and that is the finding ③'s
+price turns on:
+
+1. *each minted key is a **NEW KEY** → ⓵ `[FAIL]` until it carries a row;*
+2. *a row verdicted `UNADJUDICATED` **RAISES** a count the ratchet permits only to FALL.*
+
+⇒ ⛭ ***So the mint and its `34` adjudications are ONE landing and cannot be two.*** *The price is not
+`≈2170` s of gate time — it is **`34` verdicts that each satisfy `H1`–`H5`**, which for a
+`MEANING-HELD` row means a sha that changed the receipt AND carries the literal in what the key reads.*
+
+⌗ **So the extension ships COMMITTED, AUDITABLE AND INERT**, behind `QP_MINT_34=1`, verified to
+reproduce `main`'s key set exactly when unset. *That is not a hedge: it is the only shape that is
+honest while the rows do not exist, because the alternative is a push that reds the gate on purpose.*
+
+⒠ⁱ **IN FLIGHT:** *a generator that builds the `34` rows taking **every field from the instrument that
+owns it** — key and tier from `quote()`'s own record, and each candidate sha validated by
+`check_quote_pins`' **own `held_check`** rather than by my reading of `H1`–`H5`. **That is `r7367` ④'s
+remedy applied rather than promised.*** ⇒ *The number that can be held is the price, and I will report
+it as measured — including, if it comes to it, that some of the `34` cannot be held at all, which is
+itself the answer ③ says either way lands the item.*
