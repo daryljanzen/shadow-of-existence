@@ -1,0 +1,109 @@
+# ⛔ THE INDEX, AT HEAD: 69's extraction yields 258 candidate paragraph(s) and items.tsv carries 257 rows.
+#   ⛔ IT DOES NOT RESOLVE.  r7385 ⑧ ⒜: "a census whose row ids no longer resolve is a finding, and a worse one than a word list."
+#   the extraction and items.tsv agree up to cand 67 and diverge at cand 68 (P7 §Null-Boundary Correspondence) -- so a position join at HEAD mis-attaches 189 of 257 rows (73%).
+#   ⇒ the census is joinable ONLY at the corpus revision it was extracted from.
+# THE BASE USED BELOW IS 6be3ddfdd, where the extraction yields 257 against items.tsv's 257.
+
+# the reverse direction, re-measured here: 39 census-OPEN paragraph(s) the arm does not reach
+#   (census rows 257, census OPEN 80, my arm's surviving sentences 221)
+
+# ⑩ ⒝ THE COUNTS
+#      6  BY-DESIGN-P7
+#      2  EXCLUDED
+#     29  VOCABULARY
+#      2  NO-MARKER
+#     39  total
+
+# ⛭ THE EXTRACTION ARTEFACT the NO-MARKER pair exposed, priced across the whole census:
+#   of items.tsv's 257 rows, 13 are paragraphs whose ONLY marker sits inside a LaTeX identifier (\rcpt / \ref / \label / \cite / ...); 3 of those 13 carry 69's class OPEN.
+#   ⇒ 69's net reads a receipt key and a cross-reference label as prose.  Stated as a fact
+#     about the extraction; whether those paragraphs are open is that seat's reading.
+#   cands: [54, 66, 68, 69, 71, 73, 75, 81, 137, 202, 203, 216, 252]
+
+# ⑩ ⒝ ON THE THIRD CLASS -- REGISTRATION ⒟ SAID EXACTLY 0 AND IT IS 2, SO THE BAND IS REFUTED.
+#   paragraphs among the 39 that match NO alternative of 69's net: 0 -- so the REASONING under ⒟ holds: a census paragraph is by definition one
+#   69's net matched, so an open claim carried by no marker at all would be outside the
+#   257 as well as outside this seat's 212.  It is in NEITHER net and NEITHER can count it.
+#   ⛭ WHAT LANDED IN THE CLASS INSTEAD: 2 of the 2 are paragraphs
+#   whose only marker sits inside a LaTeX identifier, where 69's unbounded `frontier`
+#   matches and the law's word-bounded `\bfrontier\b` correctly does not.
+#   ⇒ NOT a gap in this seat's arm and NOT an unmarked open claim: an artefact of the
+#     other instrument's extraction.
+#   ⇒ ⒝'s question -- is the third class large -- CANNOT BE ANSWERED BY THIS POPULATION.
+
+# ⛭ THE EXPRESSIONS BEHIND THE 29 VOCABULARY PARAGRAPHS -- the ratchet's measured seed:
+#      5  not claimed
+#      4  what would
+#      3  is not settled
+#      3  not settled
+#      2  we have not
+#      2  owed
+#      2  undetermined
+#      2  has not been
+#      2  would settle
+#      2  conjectur
+#      1  not computed
+#      1  not built
+#      1  we do not claim
+#      1  is missing
+#      1  unresolved
+#      1  is not fixed
+#      1  not fixed by
+#      1  remain to be
+#      1  have not been
+#   19 distinct expression(s), none of them among the law's six.
+
+# ⑩ ⒝ THE SPECIMENS -- one per class, as asked
+#   BY-DESIGN-P7  cand 60  P7 §What this cosmology opens onto
+#      what the arm missed: the law's own home; the arm is not pointed at it
+#      specimen: \emph{The economy of assumption.} Read as one theory, this cosmology reaches the observations the standard model reaches, and the substance of the comparison is what each must assume to do so. The standard model \emph{assembles} the observed universe---a dark-energy component for the acceleration~\c
+#   EXCLUDED  cand 155  P14 §Which three the generations are seated on, and why it is not the hinges
+#      what the arm missed: CLOSE
+#      specimen: \emph{And the candidates can be listed rather than left open.}\rcpt{P14_the_threes_are_exhausted} The graze points, the horizon roots, the triangle sides, the signed radii, the wall monodromies, the three timelike puncture-pairs and the Nariai root triple all reduce to the hinge three by maps this c
+#   VOCABULARY  cand 11  P2 §The single horizon and the root triple
+#      what the arm missed: not claimed
+#      specimen: The structure function's \emph{values} carry a second triple, independent of its roots and worth recording beside them. On the forced (Nariai) member the marginal congruence satisfies $(\dd r/\dd\tilde\tau)^{2}=1-f$, and the excursion's three critical loci sit at three equally spaced values of $f$: 
+#   NO-MARKER  cand 137  P14 §(none)
+#      what the arm missed: no law-word and no law-word-free expression
+#      specimen: It is not the mass spectrum (electroweak breaking), and the boundary is drawn explicitly; what it does deliver about the gauge sector is the fourth result below. \emph{The count that correspondence has to meet is specified rather than gestured at}\rcpt{P14_the_count_specified}: one generation splits
+
+# THE FULL TABLE -- class / cand / paper / section / what-the-arm-missed / first-sentence
+BY-DESIGN-P7	60	P7	What this cosmology opens onto	the law's own home; the arm is not pointed at it	\emph{The economy of assumption.} Read as one theory, this cosmology reaches the observations the standard model reaches, and the substance of the comparison is what each must assume to do so. The standard model \emph{as
+BY-DESIGN-P7	72	P7	The lift, and the explanation of the initial rate	the law's own home; the arm is not pointed at it	\emph{That the two are one structure is not claimed}: no derivation producing $\{0,1,2\}$ from a single condition with no new input has been exhibited, and the claim is held open\rcpt{LAP_complete_account}.
+BY-DESIGN-P7	74	P7	The central theorem: the augmentation general relativity requires, and the cosmogenesis it forces	the law's own home; the arm is not pointed at it	\begin{remark}[The one datum the theorem does not fix, and why it is not a frontier] The single datum Theorem~\ref{thm:cosmogenesis} does not fix is the \emph{irreducible} interior remainder---the Kerr-inner and Reissner
+BY-DESIGN-P7	75	P7	The general reach: the symmetry-reducible sector as one substrate's cuts	the law's own home; the arm is not pointed at it	What the reducible classification leaves open is the \emph{irreducible} interior remainder: the Kerr-inner and Reissner--Nordstr\"om-interior reassignments, which tie to the matter side and lie in the interior geometry t
+BY-DESIGN-P7	80	P7	Frontiers, boundaries, and what would re-open them	the law's own home; the arm is not pointed at it	\emph{Of the three below, one is work and two are boundaries.} The scalar perturbation sector (item~\ref{frontier:scalar}) is the work.
+BY-DESIGN-P7	83	P7	Frontiers, boundaries, and what would re-open them	the law's own home; the arm is not pointed at it	What is left of it is ordinary interior analysis rather than a frontier of this construction.
+EXCLUDED	155	P14	Which three the generations are seated on, and why it is not the hinges	CLOSE	\emph{And the candidates can be listed rather than left open.}\rcpt{P14_the_threes_are_exhausted} The graze points, the horizon roots, the triangle sides, the signed radii, the wall monodromies, the three timelike punctu
+EXCLUDED	180	P15	What the progenitor supplies: the transmission proof	CLOSE	\emph{And the one wavenumber a thermal factor could have carried is named rather than left open}: the only scale at the crossing is $\kappa$, so $k_{\rm th}=a_{h}\kappa=3/2$ exactly and $\alpha$-free, which in the conven
+NO-MARKER	137	P14	(no section)	no law-word and no law-word-free expression	It is not the mass spectrum (electroweak breaking), and the boundary is drawn explicitly; what it does deliver about the gauge sector is the fourth result below. \emph{The count that correspondence has to meet is specifi
+NO-MARKER	203	P17	Maximal symmetry, worn seven ways	no law-word and no law-word-free expression	The reality of the substrate is the reality of \emph{the} maximally symmetric Lorentzian manifold (Prop.~\ref{prop:unique}); its standard-hood is that same manifold serving as the universal measure (\S\ref{sec:standard})
+VOCABULARY	11	P2	The single horizon and the root triple	not claimed	The structure function's \emph{values} carry a second triple, independent of its roots and worth recording beside them. On the forced (Nariai) member the marginal congruence satisfies $(\dd r/\dd\tilde\tau)^{2}=1-f$, and
+VOCABULARY	18	P3	The discrete symmetry of the groupoid	we have not	\begin{proof} By Proposition~\ref{prop:rigidity} the geometry carries no continuous modulus under change of charting vantage: every continuous deformation of the vantage either fails to act on the slicing curve at all, o
+VOCABULARY	89	P8	Scope and open problems	is not settled ; not settled	\emph{What the construction does not supply is the equation of state---and general relativity does not supply it either.} There the contracted Bianchi identity likewise gives conservation and not the constitutive law, an
+VOCABULARY	103	P10	The closed-$S^3$ lift: the graviton sector on the layer	owed ; undetermined	\emph{So the affirmative branch is a second number owed and not a second length introduced, and the single-scale ledger stands either way}, an undetermined dimensionless number not being a scale. \emph{What it costs inst
+VOCABULARY	107	P10	The closed-$S^3$ lift: the graviton sector on the layer	not claimed	\emph{What it costs is one subtraction more than the free case, and the cost is counted rather than asserted.} The subtractions a spectral regularisation spends are its summand's non-negative powers of the label: the fre
+VOCABULARY	108	P10	The closed-$S^3$ lift: the graviton sector on the layer	not claimed	\emph{One scope belongs with this and it is the closed forms themselves, which the same symmetry does not reach.} They are established on nine levels, six fitted and three held out, with a discriminating control---an odd
+VOCABULARY	110	P10	The closed-$S^3$ lift: the graviton sector on the layer	not computed	\emph{What is not computed is therefore the quartic's \emph{derivative} sector, which the frame-constant level cannot see because its harmonics have no gradients---and it now has a size rather than a name.} Enumerated at
+VOCABULARY	111	P10	The closed-$S^3$ lift: the graviton sector on the layer	not claimed	\emph{And the same argument says which object the sign is a property of, by showing that the obvious candidate is not one.} The level-summed cube of the shear is not invariant under an orthogonal recombination of a level
+VOCABULARY	112	P10	The closed-$S^3$ lift: the graviton sector on the layer	not built	\emph{The shape of that is worth stating plainly, because it is not an accident of this tower.} On a fixed background the one constant is unobservable \emph{because} of a degeneracy---and the degeneracy is switched off b
+VOCABULARY	118	P11	(no section)	not claimed	\emph{At the wall we settle two questions.} The dynamics continues across it; and the wall is \emph{not} a metric singularity in the precise sense the causality paper defines---no measure collapses there---so it is a reg
+VOCABULARY	146	P14	The chiral wall	we do not claim ; we have not	\emph{We have not examined whether any of these has the rank and the structure the Standard Model's content requires beyond what the preceding paragraph settles}, and we do not claim that the question is closed. One furt
+VOCABULARY	147	P14	The chiral wall	what would	\emph{But the check also corrects the question, and the correction matters more than the result.} Fifteen is a sum of representations, not a bundle rank: a rank-fifteen bundle carrying no $\su(3)\times\su(2)\times \mathr
+VOCABULARY	152	P14	Three walls: the count	owed	By Proposition~\ref{prop:wall} each of the three walls binds one chiral zero-mode; the three are localized at distinct walls, hence linearly independent. The generation count is the number of such modes, a wall-localized
+VOCABULARY	159	P15	What the substrate determines: coherence from the null boundary	what would	\emph{Not} settled, and unchanged by that run: whether a displacement of that size in the inferred tilt is a \emph{tension}. The tilt is inherited boundary data here, not predicted, so a different value of it is a differ
+VOCABULARY	161	P15	The acoustic comparison	has not been	\emph{And the residual is neither of the two instrument faults a reader would reasonably suspect}, because both are removed in this configuration: the wavenumber integral is carried past the reported multipole, and the p
+VOCABULARY	163	P15	The acoustic comparison	is missing	\emph{And the condition that would decide cannot be applied, for an exact reason rather than a statistical one.} The excess decelerates across the full range, and \emph{that deceleration is carried entirely by the one ba
+VOCABULARY	164	P15	The acoustic comparison	unresolved	\emph{That the step is the excess's own and not the statistic's is established before anything is read off it, and by a reading that uses no statistic at all.} Three running envelopes differing in \emph{kind}---an arithm
+VOCABULARY	165	P15	The acoustic comparison	would settle	\emph{The accounting that would settle authorship closes exactly and still cannot attribute, and the reason is an identity rather than a want of precision.} Writing each channel's modulation as a vector in the plane the 
+VOCABULARY	168	P15	The acoustic comparison	undetermined	\emph{Applied in the projection's own kernel instead---holding the source's phase and stretching only the projection's argument---it is a real channel whose size the statistic does not fix and it is not the carrier.} \em
+VOCABULARY	171	P15	The acoustic comparison	is not settled ; not settled	\emph{The family that assignment sits in is measured anyway, because what the sky can see of it is worth knowing even once the derivation has settled it.} \emph{The peak positions are the only one of the three readings w
+VOCABULARY	173	P15	The acoustic comparison	has not been	\emph{What the plane has not been given is the observed residual's own position on it, and the statistic as built cannot supply it.} Every response above is read on model spectra---smooth curves with no noise in them---s
+VOCABULARY	174	P15	The acoustic comparison	is not fixed ; not fixed by	\emph{What the plane does not separate is the driving from the clock the driving is read on, and that is established on the construction's own two clocks rather than supposed.} The lap's conformal parameter and the seams
+VOCABULARY	175	P15	The acoustic comparison	what would ; would settle	\emph{Two things this section does not claim, and they are separated because a reader would otherwise supply them.} The alternation figures are read on a multipole grid whose step is the same size as the sky's own gap co
+VOCABULARY	182	P15	Predictions, and the progenitor boundary	what would	Writing the law as $r=Au^{2/3}g(u)$ with $g=[\sinh u/u]^{2/3}$ places every branched factor in $u^{2/3}$ and leaves $g$ even, analytic and non-vanishing at the origin---exactly, since $\log(\sinh u/u)$ is analytic in $u^
+VOCABULARY	190	P15	Conclusion	remain to be	So, plainly, what this paper claims and what it does not. It claims that the observed expansion history, the computation of the acoustic scale, and the structure of the primordial scalar spectrum are consequences of a si
+VOCABULARY	215	P18	The augmentation that follows, and the routes that are not the measurement	is not settled ; not settled	\emph{A second collapse entered with the first cosmology and runs in the opposite direction from what the measurement establishes.} Einstein's static solution fixes the cosmic scale from the content --- with $\lambda=\ka
+VOCABULARY	235	P18	The closure: one substrate read many ways	conjectur	\emph{The meta-collector, where the rest close.} The substrate's maximal symmetry is worn seven ways, and the physics is read as broken-symmetry shadows of one object~\cite{JanzenGeometricCore}. \emph{Its status is state
+VOCABULARY	236	P18	What is held open, and on what footing	conjectur	\emph{And the closure of \S\ref{sec:dissolved} is a conjecture and is labelled one.} The seven ways the substrate wears its symmetry are each established; \emph{their unification is the thesis}, decidable by a named test
+VOCABULARY	237	P18	What licenses the word ``forced'', and the limit on it	have not been	\emph{And the limit on that is stated by the source rather than left for an objector to find.} The record is assembled from celebrated successes, and \emph{a reliability estimated only from successes is survivorship rath
