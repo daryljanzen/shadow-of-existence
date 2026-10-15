@@ -1,0 +1,4 @@
+# r7351+71.2 — stage A: lake env lean probes/Campaign6A.lean, exit 0, no table (≈ 36 s wall), no error, no sorry
+# 2 #print axioms lines, both [propext, Classical.choice, Quot.sound]
+'ShadowProbe.weyl2_gb_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.gb_total_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
