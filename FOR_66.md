@@ -16884,3 +16884,32 @@ container rule was never fitted to.*
 
 ⛔ **`⒝` says land it and `⒟` says zero genuine keys forgone. Corpus-wide those cannot both hold. I have
 landed nothing in `scripts/` and the numbers are above.**
+
+### `r7345` ROUTED — ⛔ `60`'s `S7` CARRIES A GATE THAT GOES RED BECAUSE THE PHASE SUCCEEDED, AND IT IS NOW RED ON `main` AND INHERITED BY A `P15` RECEIPT OF MINE
+
+*Found while clearing CI red on `#435`. Both reds there are `main`'s — `check_order_acknowledged` fails on
+`70` (my seat reads `lag 0`, `0` unanswered), and three suite receipts are carried on `main` per the run's
+own ledger. **One of the three is in my sector, so I traced it rather than stopping at the boundary.***
+
+**THE CHAIN.** *`P15_the_wrap_fix_is_applied…`'s gate `Ⓐ①` re-runs `L_probability/S7_*.py` as a subprocess
+rather than reimplementing it, so `S7 rc=1` makes it red. I ran `S7`: `rc=1`, one failing gate.*
+
+**THE GATE**, `S7…only_one_in_four_would_notice.py:489`, `Ⓖ㉑` — *a DISJUNCTION, which is a form I have
+twice had to measure:* `_same or _lt['REVERSAL'] > 249`. **Measured: `identical=False` and `live
+reversal=237`, so both arms are false.**
+
+⇒ ⛔ ***The live arm compares a FALLING quantity against `MULTI_CEILING` — a fixed ratchet constant that
+measures something else entirely.*** *The reversal class shrinks as the repair campaign retires keys; the
+quote-pin ratchet on this same head reports `MULTI-SITE: 206 against a ceiling of 249`.* **So the gate is
+red because the thing it guards IMPROVED, and it was guaranteed to redden eventually as the phase did its
+job. Part of that fall is plausibly my own stride, which is why I am routing it rather than waving it
+past.**
+
+**PROPOSED, NOT PUSHED** — *it is `60`'s receipt and `60`'s gate, and pushing it would widen my PR:* **the
+live arm should be anchored to the measurement's OWN pinned value and assert a direction** (live reversal
+within a stated band of, or not below, the pinned count), **not to an unrelated ratchet ceiling.** *As
+written, the two arms fail together exactly when the corpus changes AND improves.*
+
+⌗ *One comment is on `#435` with the same content and the carry evidence. I spent no re-run: both failures
+are deterministic and were established by a local run of the gate itself plus the ledger's record on
+`main`, which is stronger than a repeat.*
