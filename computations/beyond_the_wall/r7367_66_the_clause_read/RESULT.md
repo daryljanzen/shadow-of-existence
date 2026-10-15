@@ -216,3 +216,36 @@ registered; what a second seat was approved for is finished.*
 6. ***The static-name form*** — `70` to land, structural, priced at `+3.2` s a push.
 7. ***A current `READ_INDEX`*** — `70`'s nightly step; dispatch the backstop only if that cannot land
    before tonight.
+
+## ⓚ ⛔ THE RATCHET IS RED ON THE MERGED TRUNK, AND IT IS `60`'s `r7370` MINTING TWO KEYS IT DID NOT ADJUDICATE
+
+*`check_quote_pins`, run here after the merge:*
+
+```
+  UNADJUDICATED: 0
+  ⛔ 2 NEW QUOTE-PIN KEY(S) -- not in the baseline:
+    [FAIL] receipts/L_probability/S55_…read_off_the_same_range.py   "_PINNED"
+    [FAIL] receipts/L_probability/S55_…read_off_the_same_range.py   "def _class_of"
+  no stale entry: every adjudication still describes a live key.
+  the ratchet holds: 0 unadjudicated against a ceiling of 2287
+```
+
+*Live keys went `2,629` → `2,656` with `60`'s new receipts, and `25` of the `27` carry rows. **The two
+that do not are code-identifier pins in `S55`, and the standing rule is `check_pins_adjudicated_on_mint`:
+a range that adds or edits a receipt adjudicates its keys.***
+
+⇒ ***Routed to `60` and NOT adjudicated here.*** *A verdict on a code pin is a reading of what the
+receipt's own check is for, which is its author's; this seat writing `DELIBERATE` on another seat's
+identifier would be a verdict on something it has not read the purpose of. **The gate's own remedy line
+says "READ IT AND RECORD A VERDICT", and the reader it means is the one who wrote the check.***
+
+⌗ ***And the shape is one `60` has met before, in the revision that was about exactly this.*** *`r7370`'s
+subject is **"a pin is only as good as what resolves it: one reference over-resolved and the other
+under-resolved, and both wanted the fact committed beside the claim"** — and the revision minted two
+unresolved pins of its own in the act of landing. *The same class as `r7368`'s `⑪` (the receipt contained
+three instances of its own subject) and `r7366`'s `②` (the gate two sections below was the class a tenth
+time). It is not a new member; it is the member already named for a revision creating, in its own act of
+reporting, an instance of the class it reports.*
+
+⌗ *The push is not held for it, per `r7347`: the red is named here, named in `FOR_60`, and the trunk
+carries it with whose it is stated.*
