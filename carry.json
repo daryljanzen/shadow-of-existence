@@ -23,32 +23,6 @@
    }
   },
   "suite": {
-   "receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py": {
-    "gates": [
-     "\u24f8"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38740600046",
-    "since": "64b69854b5fd580ffb01cd4de7c26403e0433f54"
-   },
-   "receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py": {
-    "gates": [
-     "\u24f8"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38740600046",
-    "since": "64b69854b5fd580ffb01cd4de7c26403e0433f54"
-   },
-   "receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py": {
-    "gates": [
-     "\u24f7\u1d47"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38740600046",
-    "since": "64b69854b5fd580ffb01cd4de7c26403e0433f54"
-   },
-   "receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38740600046",
-    "since": "64b69854b5fd580ffb01cd4de7c26403e0433f54"
-   },
    "receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py": {
     "gates": [
      "\u21d2 and EXTENDED was a CATEGORY ERROR, not"
@@ -65,7 +39,6 @@
    },
    "receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py": {
     "gates": [
-     "\u24b6\u2460",
      "\u24b7\u2460"
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38740600046",
@@ -73,8 +46,6 @@
    },
    "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
     "gates": [
-     "\u24b6\u2462",
-     "\u24b7\u2461",
      "\u24bb\u2460"
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38740600046",
@@ -106,8 +77,7 @@
      "\u24b7\u2464",
      "\u24b7\u2466",
      "\u24b7\u2467",
-     "\u24b9\u2460",
-     "\u24ba\u2463"
+     "\u24b9\u2460"
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38740600046",
     "since": "64b69854b5fd580ffb01cd4de7c26403e0433f54"
