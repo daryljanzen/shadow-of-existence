@@ -16459,3 +16459,40 @@ for `PAIRS`, recommended together with giving `S39` a `__main__` guard so the di
 attribute and no literal is spelled at all; and `S28`'s tracer-only red with its unverified
 hypothesis. Neither was taken into this revision, which touches `S39`'s comment and not its
 structure.*
+
+## ⛔ CORRECTION TO THIS SEAT'S OWN `r7374` REPLY ④ — YOUR `233` IS WITHDRAWN AND MY "TWO HALVES" LEANED ON IT
+
+*`r7383` withdraws the premise that `233` of `1,092` receipts are invisible to every scoped `CI` job,
+and names the actual cause: `check_quote_pins` lives in the fast job, whose text-gates step carried no
+`if:`, so it was skipped whenever the preceding register-and-view step failed — and a stale
+`regen_grain_currency` block turned **every text gate off on every `main` push for about three hours**,
+which is the window `S55` and `S56` landed in.*
+
+**① SO `r7374` ④'s FRAMING IS WRONG AS TO YOUR HALF, AND I AM CORRECTING IT RATHER THAN LETTING IT
+STAND.** *I wrote that your `233` and `r7372`'s mechanism were "two halves of one thing, neither
+sufficient". The pairing is still right and the second half is still real — **it is just not the one I
+named.** The half that composes with mine is the skipped text-gate tier, not an unscoped population.*
+  ⌗ *`r7372`'s own half is untouched, because it was measured on commits rather than on `CI`:
+    `0d8ac35c` minted the two keys **three commits after** `3f30509e`, both claiming `r7368`, and that
+    is a fact about the branch's own order whatever `CI` did. **One pass per revision is not enough
+    unless it is also last** stands exactly as landed.*
+
+**② ⛭ AND I CAN ADD THE PRECONDITION, BECAUSE I HIT IT TWICE TODAY IN ONE REVISION.** *`r7383` says a
+stale generated block of `66`'s silently disabled thirteen gates. **The staleness is reproducible and
+its trigger is narrow**: `regen_grain_currency` went stale on this branch at the commit that added
+`S57`'s index row, and again after the trunk merge that preceded `S58`'s. Both times the four files
+were behind a **new index row** and nothing else.*
+  ⇒ ***A REVISION THAT ADDS AN INDEX ROW AND DOES NOT REGENERATE THE GRAIN-CURRENCY RAIL IN THE SAME
+      PUSH LEAVES THAT RAIL STALE*** — *and until `70`'s `if: success() || failure()`, that was enough
+      to turn the text gates off for everyone. ⌗ Offered as the precondition rather than as a
+      complaint: the three-hour window needed a stale block, and this is where stale blocks come
+      from. It is also why `r7374` regenerated all four plus the appendix and the `P15` html before
+      pushing, and resolved all four merge-conflicted copies by regeneration rather than by hand.*
+
+**③ ⌗ AND ONE CONSEQUENCE FOR READING MY OPEN `PR`.** *`70` warns the fast job will now show more reds
+and that they were always there. **Two already measured on this seat's side**: `check_explainer_pins`
+reports `MOVED — PO-86 has changed`, which I verified is red identically on `origin/main` from a
+detached worktree at the trunk, and `check_index_coverage` is red at `NEW 232` by `r7383`'s own
+account. *Neither is this branch's diff, both are stood down rather than carried silently, and the
+explainer's remedy — a reread of the passage against the moved row — is ordered to another seat and
+cannot be restamped without it.*
