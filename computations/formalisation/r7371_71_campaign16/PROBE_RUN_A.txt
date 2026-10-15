@@ -1,0 +1,11 @@
+# r7371+71.3 — campaign 16: lake env lean probes/TangherliniD.lean (2026-10-15T18:26:30Z); wall time printed, asserted of nothing
+'ShadowProbe.tangherlini4_Gtt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.tangherlini4_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.tangherlini6_Gtt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.tangherlini6_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.tangherlini7_Gtt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.tangherlini7_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.tangherlini8_Gtt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.tangherlini8_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 94 s

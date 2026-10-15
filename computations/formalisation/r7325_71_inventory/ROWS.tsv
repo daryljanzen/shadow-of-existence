@@ -34,7 +34,7 @@ index	class	status	what it needs next	stand-in
 32	G3	DONE	discharged in B (r7315)	geodesic acceleration equals r times a slice's Gaussian curvature
 33	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	parity split of the lapse polynomial
 34	G3	DONE	discharged in B (r7315)	a slice's Gaussian curvature equals -f'/(2r)
-35	G4	DONE (chartable half)	closed by 71 at r7341+71.5 (r7341_71_campaign5/RESULT.md): tangherlini5_Gtt, tangherlini5_kernel at D = 5; open half: every other D (the receipt checks 4-8), which needs a table indexed by coordinate class rather than by number	Einstein tensor; vacuum field equation solved by Tangherlini-dS
+35	G4	DONE	closed by 71 at r7341+71.5 (r7341_71_campaign5/RESULT.md): tangherlini5_Gtt, tangherlini5_kernel at D = 5; and at r7371+71.3 (r7371_71_campaign16/RESULT_A.md): tangherlini4_Gtt, tangherlini4_kernel, tangherlini6_Gtt, tangherlini6_kernel, tangherlini7_Gtt, tangherlini7_kernel, tangherlini8_Gtt, tangherlini8_kernel at D = 4, 6, 7, 8 (stereographic sphere, one Fin n definition cTg); the receipt checks 4-8, and every one is built; no theorem over all D	Einstein tensor; vacuum field equation solved by Tangherlini-dS
 36	G3	DONE	discharged in B (r7315)	slice Gaussian curvature zero locus and the Nariai discriminant
 37	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	continuation through a throat: C1-not-C2 join with signature flip
 38	G3	DONE	discharged in B (r7315)	geodesic acceleration = r K_G (slice curvature)

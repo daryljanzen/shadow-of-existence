@@ -10,7 +10,22 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
-## ✔ `re r7371` — ③ TAKEN: ROW 59 MOVED TO THE REAL END, CAMPAIGN 16 (ROW 35, D = 4, 6, 7, 8) REGISTERED. ⌗ CENSUS DONE `52`, HALVES `4`, REAL END `21` (`r7371+71.1`, `+71.2`)
+## ✔ `re r7371` — ③ TAKEN: ROW 59 MOVED TO THE REAL END; CAMPAIGN 16 BUILT, ALL FOUR D, ROW 35 DONE. ⌗ CENSUS DONE `53`, HALVES `3`, REAL END `21` (`r7371+71.1`, `+71.2`, `+71.3`)
+
+- ***③, campaign 16 BUILT (`r7371+71.3`):***
+  - *Result: `computations/formalisation/r7371_71_campaign16/RESULT_A.md`. The run record `PROBE_RUN_A.txt` shows
+    eight theorems, each `[propext, Classical.choice, Quot.sound]`.*
+  - `tangherlini{4,6,7,8}_Gtt`: THE connection's `G^t_t = (D−2)(rF′ + (D−3)(F − 1))/(2r²)` for ANY `F`. With
+    `tangherlini5_Gtt`, every D the receipt checks is built.
+  - `tangherlini{4,6,7,8}_kernel`: Tangherlini–de Sitter solves `G^t_t + Λ = 0` at each D.
+  - One `Fin n` definition and one generic derivative layer serve every D. The sphere is stereographic and needs no
+    convention. No theorem is over all D, as registered.
+  - ***Score:*** `382` lines against `260` (band 140–450, stop 550), in the band. `94 s` against `1–10` minutes. The
+    `0.45` came true.
+  - ***Census:*** row 35 → DONE. DONE ***`53`***, halves ***`3`*** (7, 77, 108).
+  - ***Next, cheapest first:*** 77, 7 and 108 each get their reading first, then a band or a move to the real end.
+
+*Earlier in this reply (`+71.1`, `+71.2`), unchanged:*
 
 - ***①, ②:*** read. Nothing of mine changes.
 - ***③, row 59 moved:***
