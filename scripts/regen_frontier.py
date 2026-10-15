@@ -235,7 +235,24 @@ EST = {
         'what happened: the eight families were worked down, and the one item that outlived them all was never a family '
         'but a question that fell between five rows. Kept rather than rewritten, because that tables own rule is that '
         'nothing is erased. RUNNING TALLY: 6 of 29 items ruled, 1 new row opened, 1 stale map brought current -- and '
-        'the three live artefacts now agree on the acoustic family for the first time since r7037. '),
+        'the three live artefacts now agree on the acoustic family for the first time since r7037. '
+        'r7381: ITEMS 2 AND 28 RULED, and item 2 is the phases first REOPEN. Item 2, whether the damping-tail '
+        'displacement of the inferred tilt is a tension: P15, P6 and P18 all state it open and all three agree, P15 in '
+        'the words Not settled, and unchanged by that run, and PO-24 had struck it at r6801 on the ground that the '
+        'displacement is one sigma on an inherited parameter. The strike and the papers disagree about nothing '
+        'measured; they differ in what they conclude. That is the third outcome: the strike stands as a stopping rule '
+        'and the item is open, so PO-24 RETURNS LIVE with its blocker named and WORKABLE -- P15 itself names the '
+        'routes, the low- and mid-l shape, the polarisation spectra and lensing, and those data exist. Its second half '
+        'is P15s own factor of three at l.492, named in print as work not done and carried by no row until now; the '
+        'same question at finer faithfulness, so it is the rows half and not a row of its own. THE REGISTER WAS THE '
+        'SOLE STALE ARTEFACT FOR THIS ITEM -- no gap and no contradiction, the first such case, and the cleanest '
+        'vindication of reading the papers against the map rather than the map against itself. Item 28, whether a child '
+        'universe lives in its parents cosmological constant: NOT OPEN and never a corpus item at all -- it was a '
+        'wrong sentence in the explainer, which 69 corrected at r7371, and both pinned literals are verified in place, '
+        'P17s cosmic time of the bead law and P15s the expansion rate is fixed by the cosmological constant alone. '
+        'One substrate, one throat alpha, one curve through the branch point, so every generation lives in the same '
+        'constant: the construction answers it and no paper ever asked it. No row, no remainder. RUNNING TALLY: 8 of 29 '
+        'items ruled, 1 new row, 1 reopen, 1 stale map brought current. '),
     'PO-10': ('the likelihood comparison, and which run it rests on', 1, 0, 3, None,
         'r6780: REOPENED. P15 sec:refit-bound reports both arms fitted over 215 bins with the same '
         'five parameters free in each, returning chi^2 = 397.13 against 206.44, 1.891 and 0.983 per '
@@ -7812,7 +7829,8 @@ EST = {
         'condition on the interior mass function. NOT CLAIMED that m fails it: nothing computes the '
         'interior, and mass inflation is about the Cauchy horizon at FINITE r, not about the origin. '
 ),
-    'PO-24': ('whether the tilt displacement is a tension', 1, 1, 5, None,
+    'PO-24': ('a constraint on the tilt off the damping tail, and the factor of three in the signature\'s own magnitude',
+        2, 1, 2, None,
         'r6793 NARROWS IT: the structural legs stand and every quantitative leg was computed on a signature '
         'that has since changed size and can change sign. The signature is theta_D/theta_* = r_D/r_s, the '
         'projection cancels from it, and it depends on exactly two choices -- where the plasma is handed over, '
@@ -7836,7 +7854,22 @@ EST = {
         'ratio of anything -- the observed angle is read at last scattering, the peak of the visibility function, so '
         'both r_s and r_D terminate there. The +2.2 percent was r_s anchored at the observed angle against r_D taken '
         'to a sharp recombination cut; the common-endpoint reading is -0.9 percent and the papers carry it. The re-run '
-        'narrows to one configuration, not two.'),
+        'narrows to one configuration, not two.'
+        'r7381 REOPENS IT on PO-86s ruling of its item 2, and this is the phases THIRD OUTCOME applied for the first '
+        'time: the strikes MEASUREMENT stands and its VERDICT does not. r6801 answered the rows question by pricing '
+        'the displacement -- one sigma at +0.0034 +/- 0.0031, on an inherited parameter -- and the item the papers '
+        'state is the INSTRUMENT that would make a price mean anything. P15 says in print, Not settled, and unchanged '
+        'by that run: whether a displacement of that size in the inferred tilt is a tension; what would make it a '
+        'tension is a constraint on n_s that does not run through the damping tail, which this fit does not supply. P6 '
+        'and P18 say the same, P18 in its own frontier table. The strike agrees with the papers on every measured fact '
+        'and differs only in what it concluded from them. Unlike PO-47 the blocker is NOT data-gated: P15 names the '
+        'routes itself -- the low- and mid-l shape, the polarisation spectra, lensing -- and those data exist, so this '
+        'is WORKABLE and waits on a run rather than on a datum. The rows second half is P15s own work not done at '
+        'l.492: the magnitude is not robust to a factor of three, the faithful route giving 0.92 in chi2 per bin '
+        'against the weaker bound the wash is stated at. Carried forward and not re-run: the Gaussian residual to a '
+        'correlation of 1.000000, the tilts fixed seven-tenths share, the 6.3x window dependence, the shape residual '
+        'as an upper bound. AND THE FINDING BEYOND THE ROW: for item 2 the three papers were already coherent with one '
+        'another and already right, and the register was the sole stale artefact -- the first such case of the phase. '),
     'PO-43': ('the Weyl-squared coefficient at second order in the shear', 1, 1, 5, None,
         'r6415/r6435/r6471: the coefficient is COMPUTED -- 1/60 in units of (4pi)^-2, exactly twice a real minimally co '
         'upled scalars, the tower being two such degrees of freedom by P10s own description. Stated on the PHYSICAL-M '
@@ -9696,7 +9729,7 @@ KIND = {'PO-85': 'BUILD', 'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-86', 'PO-87', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-86', 'PO-87', 'PO-24', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-87': 'D',
          'PO-86': 'F',  # ⛭ r7371: the coherence phase -- the register against the papers.
          # ⛭ r7371: PO-78 moved out of C, the quantum sector, which it never was -- it is the
