@@ -7,7 +7,7 @@ break the degeneracy: none at one graviton, and the tower IS the shear.
 the shear, $4\\sigma^2+O(\\sigma^4)$.  *** Nobody had run what that means for the ROW. ***
 
 ** ⓵ THE DEFICIT'S FORM, AND THE FAMILY IT IS COMPUTED ON, WHICH THIS RECEIPT USED TO NAME WRONG
-(repaired r7342, on `r7341` ①). **  The polynomial below is `L549/Q1`'s, computed there symbolically
+(repaired r7346, on `r7341` ①). **  The polynomial below is `L549/Q1`'s, computed there symbolically
 from a NAMED metric, and the family is READ OUT OF `Q1`'s OWN FILE here rather than retyped:
 
       *** g = diag(-1, e^{2t}, e^{2(t + sigma t)}, e^{2(t - sigma t)})   -- Q1's axisymmetric
@@ -63,7 +63,7 @@ and $\\sigma_{ab}\\sigma^{ab}$ for that family and for the one this receipt used
 amplitude is the corpus's own object -- P10's transverse-traceless tower; nothing is imported except
 `Q1`'s derivation of the polynomial this receipt reasons FROM, which is the repair. *** **
 
-Written r2743.  Repaired r7342 on `r7341` ①.  Stated for reversal.
+Written r2743.  Repaired r7346 on `r7341` ①.  Stated for reversal.
 """
 import ast
 import importlib.util
@@ -97,7 +97,7 @@ def check(label, cond):
 MARKER = re.compile(r'\\(?:ldg|rcpt)\{[A-Za-z0-9_]+\}')
 
 
-#: ** ⛭ THE REPAIR (r7342, on `r7341` ①): THE FAMILY IS READ OUT OF `Q1`'s OWN FILE. **
+#: ** ⛭ THE REPAIR (r7346, on `r7341` ①): THE FAMILY IS READ OUT OF `Q1`'s OWN FILE. **
 #: This receipt asserted `Q1`'s polynomial while NAMING a different family -- `71`'s
 #: `diag(-2 sigma, sigma, sigma)`, invariant `6 sigma^2` -- and the only guard on the naming was that
 #: the triple is trace-free, which every traceless triple satisfies.  *** A formula whose referent no

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""r7342+60 -- THE WRONG REFERENT: the arithmetic of the registration, written and pushed BEFORE the
+"""r7346+60 -- THE WRONG REFERENT: the arithmetic of the registration, written and pushed BEFORE the
 ordered repair.
 
 ** WHAT WAS ORDERED. **  `r7341` ①: *`L165/S10` owes a one-line repair and it is in your registered
@@ -204,7 +204,7 @@ if __name__ == '__main__':
     _pop = population()
     _mem, _seen = census()
     print()
-    print('  r7342+60 -- THE WRONG REFERENT, REGISTERED BEFORE THE ORDERED REPAIR')
+    print('  r7346+60 -- THE WRONG REFERENT, REGISTERED BEFORE THE ORDERED REPAIR')
     print()
     print(f'    the block at {PIN}: {len(_pop)} gates under the four prefixes')
     print(f'    arm (a): central {A_CENTRAL} of {len(_pop)}, band {A_BAND[0]}-{A_BAND[1]}, '

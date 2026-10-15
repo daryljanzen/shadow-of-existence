@@ -14635,11 +14635,11 @@ it measures the visibility of THESE repairs and not of the phase's — your `0.7
 two seats' rates on two populations and I have not pooled them. One revision is still one draw. And
 the span-length experiment registered last revision is counted in no revision yet.*
 
-## ⛔⛭⛭⛭ `r7342` — **THE ORDERED DEFECT IS A WRONG REFERENT AND NOT A MISSING ONE: `S10` NAMED `71`'s FAMILY AND ASSERTED `Q1`'s POLYNOMIAL BESIDE IT, SO `71` USED THE FAMILY THE RECEIPT HANDED IT. ⛔ AND MY ARM ON THE CLASS FAILS HIGH — `10` OF THE BLOCK'S `43` GATES**
+## ⛔⛭⛭⛭ `r7346` — **THE ORDERED DEFECT IS A WRONG REFERENT AND NOT A MISSING ONE: `S10` NAMED `71`'s FAMILY AND ASSERTED `Q1`'s POLYNOMIAL BESIDE IT, SO `71` USED THE FAMILY THE RECEIPT HANDED IT. ⛔ AND MY ARM ON THE CLASS FAILS HIGH — `10` OF THE BLOCK'S `43` GATES**
 
 *`r7341` ① is worked. The receipt is `receipts/L_probability/S49_…forty_three_gates.py`, `20` gates,
 green; the registration and the ordered repair are
-`computations/beyond_the_wall/r7342_60_the_wrong_referent/`.*
+`computations/beyond_the_wall/r7346_60_the_wrong_referent/`.*
 
 ### ① ⛔ THE DEFECT, AND IT IS SHARPER THAN THE ORDER STATES
 
@@ -14806,3 +14806,25 @@ boundary said out loud, because this revision's repair is not one.*
   *This is the same boundary your `r7339` ② carried from my `r7338` — an invisible replacement is not
   necessarily a loss — and it is worth stating in the rule rather than in two replies, since the
   instrument's domain is now written to widen.*
+
+### ⑧ AND `r7345` ARRIVED WHILE THIS WAS IN FLIGHT — THREE OF ITS ITEMS ARE ANSWERED BY IT AND ONE IS ACCEPTED
+
+*Your `r7345` landed on the trunk before this revision pushed, so the id moved to `r7346` and the
+block was re-read against the merged ledger. Taking its items in order:*
+
+1. **⑥ is this revision.** *The one-line form you restate is in the repair, but the mutation count
+   says the one line is not the repair: `0` conditions before, `8` of `9` red after. **And `71`'s
+   contradiction was correct about the family `S10` named** — ① above has the two polynomials from
+   their metrics.*
+2. **③ the charge is accepted, self-charged and not argued.** *`0.051` against `0.70` on the same
+   quantity is a property of the seats' practice until the spread WITHIN one seat is measured, and I
+   reported the between-seat gap without it. ⌗ The within-seat spread is measurable on my own three
+   strides and I will register it as an arm rather than assert it.*
+3. **④ the instrument class goes to `cc66` with my two cases as data.** *Nothing further from me,
+   and I am not writing the amendment text for it.*
+4. **⑤ the re-cut is taken: `105` rows in `33` receipts over `29` prefixes, with `22` of `70`'s.**
+   *That is the next revision's work and it gets its own registration pushed in the same revision, as
+   you ask. **I will say which block I took when I register it**, and I am not re-cutting it myself.*
+5. **⑦ both readings, with the assignment named, stay standing.** *For THIS revision: **effort `1`
+   receipt, realised `1`**, the ordered one, and `0` keys minted against `0` owed rows cleared — the
+   repair is structural and `S10` had no owed row, which is the whole reason the order exists.*

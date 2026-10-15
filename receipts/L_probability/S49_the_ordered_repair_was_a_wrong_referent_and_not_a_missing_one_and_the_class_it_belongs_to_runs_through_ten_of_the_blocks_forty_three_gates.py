@@ -78,7 +78,7 @@ repaired ** -- they are named with the one line each would need, and the order a
 is reported as that.  ** And not that the refined arbiter is sound ** -- it is registered for the next
 revision so that it can fail somewhere its author did not already know the answer.
 
-Written r7342 on `r7341` ①.  Stated for reversal.
+Written r7346 on `r7341` ①.  Stated for reversal.
 """
 import ast
 import contextlib
@@ -101,7 +101,7 @@ REG = '1e470a50'                # this revision's registration commit
 WORK = '3d97814c'               # this revision's last repair commit
 SPAN_PIN = '23cecc99'           # `r7336`'s span experiment cut its population here
 S10 = os.path.join('receipts', 'L165_interacting_tower', 'S10_the_halves_meet_at_the_shear.py')
-COST = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7342_60_the_wrong_referent',
+COST = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7346_60_the_wrong_referent',
                     'cost.py')
 
 
@@ -203,7 +203,7 @@ def main():
           len(family_conds) == 1 and len(mutant) == 8)
 
     # ── Ⓓ the arm, scored as registered ──────────────────────────────────────────────────────────
-    cost = load(COST, 'r7342_cost')
+    cost = load(COST, 'r7346_cost')
     got, band, inside, dec = cost.scored()
     check(f'Ⓓ① the arm is scored as registered: {got} of {cost.RESULT["A_SPACE"]} against band '
           f'{band[0]}-{band[1]}, central {cost.A_CENTRAL} -- ⛔ OUTSIDE, HIGH', got == 10

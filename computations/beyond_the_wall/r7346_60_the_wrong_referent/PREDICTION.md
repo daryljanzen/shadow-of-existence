@@ -1,4 +1,4 @@
-# `r7342`+`60` — THE WRONG REFERENT, REGISTERED BEFORE THE ORDERED REPAIR
+# `r7346`+`60` — THE WRONG REFERENT, REGISTERED BEFORE THE ORDERED REPAIR
 
 **`r7341` ①:** *`L165/S10` owes a one-line repair and it is in your registered block. `S10` asserts
 `C² = σ²(4 + 16σ²/3)` and **names no metric**, so any reader supplies a family and gets a different

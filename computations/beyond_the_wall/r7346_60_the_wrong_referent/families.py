@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""r7342+60 -- THE TWO FAMILIES, EACH COMPUTED FROM ITS OWN METRIC.
+"""r7346+60 -- THE TWO FAMILIES, EACH COMPUTED FROM ITS OWN METRIC.
 
 ** WHY THIS RUNS AT ALL, GIVEN THE ORDER SAYS `do not re-derive it`. **  `r7341` ① settles the
 polynomial and this file does not re-settle it.  *What it establishes is a DIFFERENT fact the order
@@ -58,7 +58,7 @@ if __name__ == '__main__':
     sig = sp.Symbol('sigma', real=True)
     x = [t] + list(sp.symbols('x y z', real=True))
     print()
-    print('  r7342+60 -- THE TWO FAMILIES, FROM THEIR METRICS')
+    print('  r7346+60 -- THE TWO FAMILIES, FROM THEIR METRICS')
     print()
     out = {}
     for name, tri in TRIPLES.items():
