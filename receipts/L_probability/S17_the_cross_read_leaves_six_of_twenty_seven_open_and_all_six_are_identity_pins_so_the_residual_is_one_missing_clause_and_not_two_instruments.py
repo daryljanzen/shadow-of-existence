@@ -190,13 +190,28 @@ gate("Ⓒ① the four classes PARTITION the twenty-seven with nothing over and n
      and CLS['RULE-DISPOSED'] + CLS['CONCEDED'] + CLS['OPEN'] == 21
      and set(CLS) == {'AGREE', 'RULE-DISPOSED', 'CONCEDED', 'OPEN'})
 
+#: ⛔⛭⛭ r7372 (60), on 66's `r7371` ①: ** THE DISJUNCTION'S FIRST ARM IS REMOVED, AND IT HAD NEVER
+#: MATCHED ANYTHING. **  *It read `'already the product of a repair'` against this container, and that
+#: string has ZERO occurrences in `COMPARISON.tsv` -- not merely today: `git log -S` over the file
+#: returns NO commit that ever changed its count, so the container has never held it at any commit of
+#: its history.*  ⌗ **It is the RECEIPT's wording of the ground and not the CONTAINER's**: the conceded
+#: row's reason says `already performed`, which entered with the container at `2ae79bbe` and is the arm
+#: this clause has always passed on.
+#:   ⇒ ** DELETED rather than widened, and rather than kept with a reason stated at the site -- which is
+#:     this corpus's own disposition for a dead arm, five times over by `r7355+cc66.25`'s "a two-letter
+#:     arm deleted rather than widened".  A literal asserted against a container that has never
+#:     contained it is not a weaker pin; it is NO pin, and keeping it with a reason would record an
+#:     intention where the file needs an assertion. **
+#:   ⌗ *Nothing is weakened: the clause's truth value is unchanged at every commit of the container's
+#:     history, because the removed arm contributed nothing at any of them.  And one key LEAVES the
+#:     mint rather than arriving in it -- `cc66`'s targeted landing wanted a row for a literal that
+#:     describes nothing, and there is now no key to carry one.*
 gate("Ⓒ② ✔ AND THE CROSS-READ IS A READING AND NOT A DEFENCE OF THIS SEAT'S OWN COLUMN, which is"
      " checkable rather than claimed: it CONCEDES five of the twenty-one to the other seat, one of"
-     " them on a ground verified in the receipt's own source -- the pinned form is already the"
-     " product of a repair of this very class, recorded in place.  ⌗ *A comparison that conceded"
-     " nothing would be an argument*",
-     CLS['CONCEDED'] == 5 and any('already the product of a repair' in r[9] or 'already performed' in r[9]
-                                  for r in COMP if r[7] == 'CONCEDED'))
+     " them on a ground verified in the COMPARISON's own reason column -- that the pinned form had"
+     " ALREADY PERFORMED the repair this class asks for, recorded there in place.  ⌗ *A comparison"
+     " that conceded nothing would be an argument*",
+     CLS['CONCEDED'] == 5 and any('already performed' in r[9] for r in COMP if r[7] == 'CONCEDED'))
 
 _open_pct = 100 * CLS['OPEN'] / N
 _unexpl_pct = 100 * (CLS['CONCEDED'] + CLS['OPEN']) / N
