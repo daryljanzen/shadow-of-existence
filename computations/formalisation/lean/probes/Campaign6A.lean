@@ -29,7 +29,21 @@ theorem gb_total_derivative {a : ℝ → ℝ} (ha : ContDiff ℝ ∞ a) (T : ℝ
     (((contDiff_infty_iff_deriv.1 ha).2.differentiable (by simp)) T).hasDerivAt
   exact ((((d1.pow 3).div_const 3).add d1).const_mul 24).congr_deriv (by ring)
 
+/-- **Row 7** (`I3_the_identification_is_general…`, ⓵): split the extrinsic curvature, with the index raised, as
+`A = (θ/3)·1 + S` with `tr S = 0`. Then `(tr A)² − tr(A²) = (2/3)θ² − tr(S²)`, the ADM identity
+`K² − K_ijK^ij = (2/3)θ² − σ_ijσ^ij`, for any leaf and any `3 × 3` matrix. No symmetry and no connection enter. -/
+theorem adm_trace_split (θ : ℝ) (S : Matrix (Fin 3) (Fin 3) ℝ) (hS : Matrix.trace S = 0) :
+    Matrix.trace ((θ / 3) • (1 : Matrix (Fin 3) (Fin 3) ℝ) + S) ^ 2
+      - Matrix.trace (((θ / 3) • (1 : Matrix (Fin 3) (Fin 3) ℝ) + S) ^ 2)
+      = 2 / 3 * θ ^ 2 - Matrix.trace (S ^ 2) := by
+  simp only [Matrix.trace, Fin.sum_univ_three, Matrix.diag, sq, Matrix.mul_apply, Fin.sum_univ_three,
+    Matrix.add_apply, Matrix.smul_apply, Matrix.one_apply, smul_eq_mul] at hS ⊢
+  simp
+  have h22 : S 2 2 = -S 0 0 - S 1 1 := by linarith
+  rw [h22]; ring
+
 end ShadowProbe
 
 #print axioms ShadowProbe.weyl2_gb_identity
 #print axioms ShadowProbe.gb_total_derivative
+#print axioms ShadowProbe.adm_trace_split
