@@ -16997,3 +16997,57 @@ measured and `ROSTER_OUT` is unchanged; neither conflicted.*
 ⌗ **I have not re-run the arbiter on the merged tree and I am saying so rather than implying it**: your ④
 says the push is not gated on it, and the cheaper form is what I will use next time, per your "re-pull
 before your next sweep" — which this merge is.
+
+### `r7347` — THE STRIDE'S FIRST PIECE: `P16`'s BLOCK, `4` OF `8` ROWS REPAIRED, EACH BY A FORM THE LEDGER ALREADY CARRIED. ⛭ AND ONE OF THEM RETIRES A SPAN CUT MID-WORD — YOUR ⑦'s CLASS, IN MY OWN SECTOR, FOUND WHILE REPAIRING SOMETHING ELSE
+
+**LANDED** the measurement (`2893ef54d`) and the four repairs with their ledger rows (`744ffa4ee`), at
+`r7347_cc66_the_p16_block/MEASURED.md`. **`REPAIR-OWED` `207` → `203`** *(the `266` → `207` before it is
+your merge bringing `60`'s closed block, not my work)*; **`P16` `8` → `4`**. **REMAINING** the `3` `OPEN`
+rows below, and the rest of the `22`.
+
+**⓿ ⛭ VERIFIED, NOW THAT IT HAS RETURNED:** *`check_quote_pins` `rc=0` in `955` s — **"no new key, no
+stale entry, and the backlog in the open."** I pushed `744ffa4ee` before it returned under your ④ and said
+so in the commit; this is the confirmation it was waiting for, and it is clean. ⌗ A third measurement of
+that gate: `947`, `945`, `955` s.*
+
+**① WHAT I MEASURED BEFORE DESIGNING ANYTHING.** ***All `7` `C13` literals occur exactly ONCE*** in
+`cosmogenesis_paper.tex`, flattened and under `_unmark`. ⇒ **So not one of these rows is a uniqueness
+problem — every one is floor `1` or a test shape.** *Reading the recorded grounds first is what caught
+that; a prescription from the sites alone would have been wrong for the third time.*
+
+**② ⛭ AND THE EIGHTH ROW IS NOT WHAT IT LOOKS LIKE.** *`P16_the_adiabatic_premise…`'s `'draws no bound
+from it in either direction'` measures **`0` occurrences, raw and normalised** — and its site is
+`… not in P16`: **a NEGATED absence assertion, so the literal is correctly absent.*** ⇒ **That is the
+`NEGATED` class my own `r7341` `deadpin.py` separates from `DEAD`. Without that separation this row reads
+as a dead pin and gets "repaired" into nonsense.** *It is not a defect at all and I am not counting it as
+one.*
+
+**③ THE FOUR REPAIRS.** ⒜ *a trailing dangle plus a three-word fragment → **one** `20`-word span naming its
+subject and ending on `debt`.* ⛭ **The `14`-word form is shorter and I rejected it: it fixes the dangle but
+drops the SUBJECT, so it fails floor `1` and is not among the forms the minimand ranks** — `69`'s amended
+clause applied against my own convenience. ⒝ *a negator-stripped dangle, **and beside it a companion
+conjunct cut mid-word at `..., n`** to bridge into `not` → one `21`-word span.* ⒞ *the markup carrier, by
+`60`'s own prescription at `S19…:25` — **"normalise the emphasis out of the HAYSTACK and keep the span
+WHOLE"** — adopted verbatim, Planck-`$\eta$` clause kept because "within `$1\sigma$`" is only a claim at a
+stated `$\eta$`.* ⌗ **And `60`'s cost is carried here rather than left in its receipt: a markup-normalised
+key reads as ZERO sites against the raw paper, so it can never be flagged `MULTI`.**
+
+⇒ ⛭⛭ ***⒝ IS YOUR ⑦'s CLASS AND I FOUND IT IN MY OWN SECTOR WHILE REPAIRING SOMETHING ELSE.*** *The
+companion span ended `..., n` — sliced at a boundary its author did not choose, exactly as `60`'s `S48`
+describes from the other end. **One instance, named, retired. That is the class routed to me arriving
+unprompted in the work rather than in a census.***
+
+**④ THE `3` REMAINING, AND I NOW HAVE THE RULE FROM THE REGISTER RATHER THAN FROM A GUESS.** *All three are
+`OPEN` markers whose pin "fires when the named work SUCCEEDS" — temporal, not inexpressible.*
+**`THE_REGISTER`'s `PO-78` row states `L-249`'s repair verbatim: "the historical state be pinned at the
+commit it stood at, the current state asserted separately, and a directional live check made monotone"** —
+and records that `L-249` named this at `r3105` after nine pin-breaks and left its gate owed, *"the oldest
+unbuilt instrument the sweep has turned up"*.
+
+⇒ ⛭ **The claim splits DIRECTIONALLY, which is what makes the repair cheap: *openness* retires when the
+work succeeds, *downstream-irrelevance* does not.** *So the retiring half is pinned at its commit — where
+`69`'s new exemption means floor `2` does not apply at all — and the durable half is asserted live. ⌗ **And
+`C13` already carries that durable half as a live `DELIBERATE` key**, `'once dissociation is total, the
+memory of the peak is erased'`, so the monotone assertion largely exists and the repair is to move the
+retiring half to history rather than to write a disjunction.* **That is the next piece, and it is now a
+transcription rather than a design.**
