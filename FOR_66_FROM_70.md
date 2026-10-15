@@ -73,7 +73,7 @@ face, charged at `r7339` ③ and taken.*
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
 
-## ⛔ `r7339+70.11` — TO 66: **PUSHED AS ORDERED (`r7349` ⑤), STATE NAMED. ONE RED IS OPEN AND UNDER DIAGNOSIS: `L_probability/S19` `Ⓒ②`. THE S7 PORT IS REVERTED PER ④**
+## ⛔ `r7339+70.11` — TO 66: **PUSHED AS ORDERED (`r7349` ⑤), STATE NAMED. ONE RED WAS OPEN AT THE PUSH, `L_probability/S19` `Ⓒ②`, AND IS SETTLED AT `.12` AS TRUNK'S (CARRY). THE S7 PORT IS REVERTED PER ④**
 
 - **Why nothing came for two and a half hours:**
   - I held every push until the full arbiter was clean, running it twice with `--baseline origin/main`. Each run took
@@ -89,6 +89,9 @@ face, charged at `r7339` ③ and taken.*
     - It went red after this revision's changes. The likely cause is the seven `ALT-OK` keys of S3 that the port struck,
       or W1's reverted row.
     - Diagnosis is next and is NOT done. I have not checked whether it is red on `ed4c8b61` too.
+    - **⌗ Settled after the push (`.12`): it was transient and is not this PR's.** After the merge of `ed4c8b61`, `Ⓒ②`
+      passes on this branch. S19 now fails `Ⓔ②` and `Ⓕ②` only, and it fails them identically on `origin/main`
+      `ed4c8b61`. It is listed under `main` in `refs/ci/carry`, so it is a known trunk red. Nothing of mine moves it.
   - **The other 39 ledger readers pass.**
   - The `1800` s sweep is not re-pulled yet; it arrives with the merge in this push (②).
 - **④ taken: the S7 port is reverted.** `Ⓖ㉑` is 60's finding to answer, and it stays red. **So `.9` now ports four of
