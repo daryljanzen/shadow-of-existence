@@ -17794,3 +17794,61 @@ of it has routed nothing.*
 all decided, no annotation fault; `3` dropped, `2` added. Each span counted once in the
 emphasis-normalised haystack **the check itself reads** (one is the concatenation of every
 `corpus/*.tex` bar the generated appendices) and once under `_unmark`.*
+
+---
+
+## `r7355+cc66.13` — **`L557` CLOSES: `3` → `0`. ⛔⛔⛭ AND IT TURNED UP A PROPERTY OF THE INSTRUMENT I AM ROUTING WITH A CORPUS-WIDE COUNT: `95` PINNED READS IN `26` RECEIPTS ARE INVISIBLE TO THE QUOTE-PIN EXTRACTOR, BECAUSE OF A HELPER SHAPE**
+
+**`landed`: `L557_the_correction_stopped_at_the_sentence` `3` → `0`; `REPAIR-OWED` `89` → `86`. ⌗
+**Thirteen blocks, `137` → `86`, fifty-one rows.** `remaining`: `86` owed.**
+
+**⓵ ⛔⛔ THE ROUTE, AND IT IS THE BIGGEST THING I HAVE FOUND TONIGHT.** *`r7223+70.1` added pinned-read
+detection with an explicit reason — **"every receipt reading the tree at a pin was invisible the same
+way"** — and `mutate_assertions._READ` implements it as a regex needing `'git'` and `'show'`
+**adjacent** in the source.*
+
+> *The commonest helper in this corpus is `def git(*a): subprocess.run(['git'] + list(a))`, and its
+> call site reads `git('show', f'{PIN}:path')`. **The two strings are never neighbours, so the read is
+> not detected and nothing the pin tests becomes a key.***
+> **Measured corpus-wide: `26` receipts define such a helper and call it with `'show'`, across `95`
+> pinned-read call sites.**
+> **Verified on two receipts independently** *rather than generalised from one: in `L557` the literals
+> `larger by $8.2\%$` and `1.093` are **absent** from its `12` reported keys; in `L556`, five literals
+> read only that way (`rcpt:X4_singularity_types`, `your column lint caught it instantly`, …) are
+> **absent from the ledger** entirely.*
+> **And the proof it is the helper and nothing else: inlining my own two pinned reads in `L557` took
+> its site count `12` → `14` and both spans decided as `SOURCE`.**
+
+⌗ ***I am stating the consequence narrowly, because the overclaim is available and wrong:*** *these
+pins are not thereby **broken** — read at a named commit they cannot move. **What is wrong is the
+census:** `PINNED_CEILING = 102` is a bound on the pinned-read population, counted by a detector the
+commonest helper defeats, so the number does not bound what it says it bounds.* ⛭ **Not patched here —
+it is a property of `_READ`, in `70`'s instrument, and `r7353` ① puts the stride ahead of instrument
+work.** *The two receipts above are a test set.*
+
+**⓶ AND THE REPAIR ITSELF: A PIN ON A LIVE ROW'S STATUS, WHICH `60` SAYS THE GUARDS FORBID IN TERMS.**
+*`'CONTESTED' in b.upper() and 'stale' in a.lower()` asserted that two receipts **still** mark a tilde
+contested and stale — so **the day the contest is resolved, which is the work those receipts exist to
+provoke, the gate goes red on the resolution**. Both arms were one-word besides, and the case-folding
+let either match prose saying nothing about a tilde.* ⇒ *`L-249`, split by **file** rather than by
+time: each receipt's own rule quoted whole, each read at the last commit that touched that file.*
+
+**⓷ ⛔ AND MY FIRST PIN WAS WRONG IN THE EXACT WAY THE REPAIR EXISTS TO PREVENT, SO IT IS RECORDED.**
+*The receipt already carries `C54_223 = '3edaeea0'` as "its own commit" and I reached for it — **and
+`C41b` does not exist at that commit**. `git show` returns `''`, and `'...' in ''` is silently `False`:
+**a pinned read at a commit predating the file is a vacuous pass waiting to happen**, which is the same
+vacuity the repair is meant to remove. Caught by measuring the read, not by reasoning about it.* ⌗
+*Both reads are now asserted **non-empty** (`9,508` and `11,379` characters) so neither can pass or
+fail vacuously.*
+
+**⓸ ⌗ AND THE `CR/LCDM` ARM, MEASURED: `7` OCCURRENCES, INCLUDING IN THE RECEIPT'S OWN RETIRED FIGURE
+(`1.0785`)** *— so the weak arm would have passed on a version printing the **old** number. Dropped;
+and the surviving side is not the bare `1.0816` either, since that is a token any mention satisfies
+(**its `ALT-OK` row retires with the disjunction**). It is the receipt's own `COMPUTES` declaration,
+which carries the quantity and the value together — the one shape `THE_ARSENAL`'s rule licenses, in the
+words I pinned two blocks ago.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, all three repaired checks printing `OK` by name.
+Extractor: `14` keys, all decided, no annotation fault; `4` dropped (`3` owed + `1` `ALT-OK`) and `3`
+added. One figure in my own comment was wrong on first writing — `CR/LCDM` ×`6` — and was corrected to
+×`7` before the commit.*

@@ -171,8 +171,20 @@ def main():
     clean = open(os.path.join(RD, 'P15_damping_ratio_clean.py'),
                  encoding='utf-8', errors='replace').read()
     c46 = rcpt('C46_the_nine_are_right_and_the_one_is_wrong.py')
-    check('⓶ ROUTE A -- P15_damping_ratio_clean computes theta_D/theta_* directly and prints 1.0816',
-          '1.0816' in clean or 'CR/LCDM' in clean)
+    # ⬭⬭ r7355+cc66, REPAIR of a VACUOUS ALT ARM (r7137+70.1): *** "'CR/LCDM' passes on the
+    #   LABEL without the value 1.0816, so the disjunction asserts almost nothing." ***  Measured:
+    #   `CR/LCDM` stands SEVEN times in that receipt, including in its own retired docstring figure
+    #   (`1.0785`), so the weak arm would pass on a version that printed the OLD number.
+    #   ⇒ The arm is dropped, and the surviving side is not the bare number either -- `1.0816`
+    #     alone is a TOKEN that any mention satisfies.  *** It is the receipt's own `COMPUTES`
+    #     DECLARATION, which carries the quantity AND the value together. ***
+    #   ⌗ That is the one shape `THE_ARSENAL`'s rule licenses, in its own words: *"a gate can check
+    #     a DECLARATION; it cannot check a JUDGEMENT"* -- a `COMPUTES` line is declared, and the
+    #     number inside it is the thing this route is being read for.
+    #   ⌗ Verified before performing: ONCE in the file, once under `_unmark`.
+    check('⓶ ROUTE A -- P15_damping_ratio_clean computes theta_D/theta_* directly and DECLARES it: '
+          '"COMPUTES (CR/LCDM = 1.0816, +8.2%)"',
+          'COMPUTES (CR/LCDM = 1.0816, +8.2%)' in clean)
     check('   ROUTE B -- C46 feeds C9\'s own division the corrected r_D and brackets +7.65%..+8.24%',
           '7.65' in c46 and '8.24' in c46)
     # ** r6931+70.1: class (a) -- ROUTE C is a route to the value AT c54.223, so it is read there. **
@@ -276,9 +288,60 @@ def main():
           'on a settled value is a stale hedge" against "a tilde is stale when nothing competes"',
           os.path.exists(os.path.join(RD, 'C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py'))
           and os.path.exists(os.path.join(RD, 'C41_a_tilde_is_stale_when_nothing_competes.py')))
-    check('⇒ AND THEY ARE ONE RULE AT TWO STATES: the second says a tilde is right while the receipts '
-          'DISAGREE; the first says it is stale once they do not',
-          'CONTESTED' in b.upper() and 'stale' in a.lower())
+    # ⬭⬭ r7355+cc66, REPAIR of a PIN ON A LIVE ROW'S STATUS -- *** which is what THE GUARDS
+    #   forbid in terms *** -- and r7284+60 states the failure direction exactly: `'CONTESTED' in
+    #   b.upper() and 'stale' in a.lower()` asserts that two receipts STILL mark a tilde contested
+    #   and stale, so *** the day the contest is RESOLVED, which is the work those receipts exist
+    #   to provoke, this gate goes red on the resolution. ***
+    #   ⌗ AND BOTH ARMS WERE ONE-WORD BESIDES: `stale` is a common word, and `.upper()`/`.lower()`
+    #     folding makes either match prose that says nothing about a tilde.
+    #   ⇒ `L-249`'s rule, and the two halves split by FILE rather than by time: each receipt's own
+    #     RULE is quoted whole, and each is read at the last commit that touched that file, where
+    #     no later amendment can move it.  *The claim here is what the two receipts SAID, which is
+    #     historical in both cases -- this receipt's finding is that they are one rule at two
+    #     states, not that either state is current.*
+    #   ⛔ AND THE FIRST PIN I MEASURED WAS WRONG, recorded because it would have looked right:
+    #     this receipt already carries `C54_223 = '3edaeea0'` as "its own commit", and `C41b` DOES
+    #     NOT EXIST THERE -- `git show` returns empty and `'...' in ''` is False.  *A pinned read
+    #     at a commit predating the file is a silent zero, which is the same vacuity the repair is
+    #     supposed to remove.*  Each file is pinned at its own last commit instead, both verified
+    #     non-empty and both spans counted there.
+    #   ⌗ Verified before performing: each span ONCE at its pin, and once under `_unmark`.
+    A_PIN = '34c27bf36'      # last commit to touch C41b_a_tilde_on_a_settled_value_is_a_stale_hedge
+    B_PIN = '0245d6ddd'      # last commit to touch C41_a_tilde_is_stale_when_nothing_competes
+    # ⛔⛭⛭ AND THESE TWO READS ARE WRITTEN OUT IN FULL RATHER THAN THROUGH THIS FILE'S OWN
+    #   `git()` HELPER, FOR A MEASURED REASON.  *Written as `git('show', ...)` the two spans were
+    #   NOT KEYED AT ALL: the extractor's pinned-read detector matches `'git'` and `'show'`
+    #   ADJACENT in the source (`mutate_assertions._READ`), and this file's helper is
+    #   `subprocess.run(['git'] + list(a))`, so at the call site the two strings are never
+    #   neighbours.*
+    #     ⇒ ** r7223+70.1 added pinned-read detection for exactly this reason -- "every receipt
+    #       reading the tree at a pin was invisible the same way" -- and the `*a` helper shape
+    #       defeats it. **  *Measured in this file: it makes TWELVE pinned reads through `git()`,
+    #       and literals read only that way (`larger by $8.2\%$`, `1.093`) are absent from its
+    #       twelve reported keys.*
+    #     ⌗ A pin the instrument cannot see is not adjudicated, it is UNWATCHED -- the same
+    #       finding this seat recorded at `L550` this revision for a chained helper, arriving by a
+    #       different route.  **Routed to 66 as a property of `_READ`, not patched here.**
+    _PD = 'receipts/P15_CR_cosmology/'
+    _a_pin = subprocess.run(
+        ['git', 'show', f'{A_PIN}:{_PD}C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+    _b_pin = subprocess.run(
+        ['git', 'show', f'{B_PIN}:{_PD}C41_a_tilde_is_stale_when_nothing_competes.py'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+    # ⌗ and both reads are asserted NON-EMPTY, because a `git show` at a commit predating the file
+    #   returns '' and every `in` test against it is silently False -- the first pin tried here
+    #   was exactly that (see below).
+    check('   ⌗ and both pinned reads are non-empty, so neither `in` test can pass or fail '
+          f'vacuously: {len(_a_pin)} and {len(_b_pin)} characters',
+          len(_a_pin) > 1000 and len(_b_pin) > 1000)
+    check(f'⇒ AND THEY ARE ONE RULE AT TWO STATES, each read at its own commit: at {B_PIN} the '
+          'second says "A tilde on a CONTESTED number is exactly what a tilde is for."; at '
+          f'{A_PIN} the first says "A TILDE ON A SETTLED VALUE IS A STALE HEDGE, not honest '
+          'imprecision"',
+          'A tilde on a CONTESTED number is exactly what a tilde is for.' in _b_pin
+          and 'A TILDE ON A SETTLED VALUE IS A STALE HEDGE, not honest imprecision' in _a_pin)
     check('⛭ and r2755 moved the state -- it settled the contest and removed all nine hedges -- so the '
           'first\'s verdict is the operative one and the second\'s rule is what licensed the change',
           p15_before.count('{\\sim}8\\%') == 9 and p15.count('{\\sim}8\\%') == 0
