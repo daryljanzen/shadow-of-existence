@@ -1,0 +1,39 @@
+# THE 34 -- the reach of PO-78's second discharge clause into the 80 invisible pins.
+# r7367+cc66 ③.  DERIVED by make_selector.py from new117.tsv + keep82.tsv at 7db5db61c and
+# the tier column that IS check_quote_pins' H4.  Not hand-typed: regenerate, never edit.
+# receipt <TAB> literal (JSON) <TAB> target <TAB> tier <TAB> ledger-coverage of the receipt
+# 34 keys: 23 COVERED (r7367 ③ orders these first), 11 NO-ROW.
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"a single length cannot build"	PAPER	SENTENCE	COVERED
+receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py	"the substrate's ledger does not carry"	PAPER	SENTENCE	COVERED
+receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py	"identical in content"	SOURCE	SENTENCE	COVERED
+receipts/L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm.py	"property of the mode chosen and not of the geometry"	PAPER	SENTENCE	COVERED
+receipts/L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm.py	"second order in the metric perturbation"	PAPER	SENTENCE	COVERED
+receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py	"The emergence of the bend"	PAPER	SENTENCE	COVERED
+receipts/L_probability/S17_the_cross_read_leaves_six_of_twenty_seven_open_and_all_six_are_identity_pins_so_the_residual_is_one_missing_clause_and_not_two_instruments.py	"already the product of a repair"	SOURCE	SENTENCE	NO-ROW
+receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py	"the r7257 order \u2460"	SOURCE	SENTENCE	COVERED
+receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py	"the r7257 order \u2462"	SOURCE	SENTENCE	COVERED
+receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py	"SHOULD go red"	SOURCE	SENTENCE	NO-ROW
+receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py	"SHOULD land here"	SOURCE	SENTENCE	NO-ROW
+receipts/L_probability/S2_the_quote_pin_backlog_falls_by_sixty_six_on_this_lines_own_two_receipts_and_every_verdict_names_what_was_read_and_the_re_check_it_owes.py	"asks for NO change"	SOURCE	SENTENCE	NO-ROW
+receipts/L_probability/S32_fifty_six_keys_on_this_seats_own_claim_and_four_of_eight_registered_bands_missed_every_one_of_them_in_the_same_direction.py	"FALSE POSITIVE OF THE SUBJECT TEST"	SOURCE	SENTENCE	NO-ROW
+receipts/L_probability/S32_fifty_six_keys_on_this_seats_own_claim_and_four_of_eight_registered_bands_missed_every_one_of_them_in_the_same_direction.py	"closed FINITE list"	SOURCE	SENTENCE	NO-ROW
+receipts/L_probability/S32_fifty_six_keys_on_this_seats_own_claim_and_four_of_eight_registered_bands_missed_every_one_of_them_in_the_same_direction.py	"closed LEAD word list"	SOURCE	SENTENCE	NO-ROW
+receipts/L_probability/S46_the_first_repair_stride_closes_two_blocks_at_nine_receipts_a_revision_and_the_cost_lands_inside_the_bound_on_its_expensive_end_alone.py	"THE CASE IS"	SOURCE	SENTENCE	NO-ROW
+receipts/L_probability/S46_the_first_repair_stride_closes_two_blocks_at_nine_receipts_a_revision_and_the_cost_lands_inside_the_bound_on_its_expensive_end_alone.py	"WITHDRAWAL WITH ITS CASE"	SOURCE	SENTENCE	NO-ROW
+receipts/L_probability/S46_the_first_repair_stride_closes_two_blocks_at_nine_receipts_a_revision_and_the_cost_lands_inside_the_bound_on_its_expensive_end_alone.py	"case about the INSTRUMENT"	SOURCE	SENTENCE	NO-ROW
+receipts/P12_algebroid/A3_the_convergence_audit.py	"QUESTION IS ANSWERED"	SOURCE	SENTENCE	COVERED
+receipts/P12_algebroid/A4_the_ledger_seven_swept.py	"half a result, marked as half"	SOURCE	SENTENCE	COVERED
+receipts/P12_algebroid/A8_the_self_protecting_falsehood.py	"reserves the strike"	SOURCE	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C22_the_end_to_end_number.py	"The constancy argument runs on"	PAPER	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C28_length_against_angle.py	"geometric rate gives a diffusion length"	PAPER	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	"\\emph{contains no $k$ at all once $w=0$}"	PAPER	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C29_nothing_to_calculate_across_the_join.py	"on a radiation-free rate the problem is scale-free"	PAPER	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	"the amplitude in closed form"	PAPER	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	"the expansion rate, the matter and baryon densities and the tilt free in each arm"	PAPER	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	"the amplitude in closed form"	PAPER	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C33_the_threshold_corrected.py	"the expansion rate, the matter and baryon densities and the tilt free in each arm"	PAPER	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	"\\emph{The single-locus reading is not inside that trade}"	PAPER	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py	"returns the first peak at $222$"	PAPER	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C38_the_comparison_scores_derivations.py	"against the measured"	PAPER	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C39_the_derived_list_read.py	"against the measured"	PAPER	SENTENCE	COVERED
+receipts/P15_CR_cosmology/C67_the_hundred_and_forty_eight_are_re_stated_and_the_grain_clause_decides_twenty_three_so_the_negative_does_not_fire_but_the_paper_half_is_held_and_not_owed_so_cc66_170s_split_inverts.py	"flagged in this cycle"	SOURCE	SENTENCE	NO-ROW
