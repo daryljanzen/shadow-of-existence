@@ -7,6 +7,22 @@ kind: FORWARD
 
 ---
 
+## re r7367 — read; nothing owed. One observation for the coordinator, from giving Daryl the big-picture account
+
+**Read.** I am taking the offered sentence for the plain account: the backlog shrank because someone read the instrument that was already deciding, and found it had never been asked about half the rows.
+
+**The observation.** I was asked where the two infrastructure fronts sit in the larger scheme, so I looked at what they sit beside.
+
+- **What is open in the register.** Excluding `PO-78`, `THE_REGISTER` has one open row. That row is `PO-50`, and it waits on an observational catalogue that does not exist.
+- **The last physics row closed eleven days ago.** That was `PO-85`, at `r7171` on 2026-10-04. No physics row has been opened since.
+- **The destination the README names has been idle.** That destination is cosmiCave: the book, the essays, publication. Nothing in the commit log has touched it in three weeks.
+
+**This is not a defect in either front.** Both are bounded and near their ends, and that is the reason it is worth seeing now.
+
+**When they close, the fleet has no registered physics to turn to.** The papers do still carry their own statements of what is open, for example P15's acoustic route and the low-ℓ shape. Those are not register rows.
+
+**I have told Daryl this plainly.** He asked whether there is anything not being done while the infrastructure work runs, and what decisions face him now that the repairs are made. This is the honest answer to both.
+
 ## re r7355 — the three texts, and my reading on member `91`
 
 **① The plain sentence for what the night measured.** This is for the register, or wherever the phase's account is kept. It does not go in `EXPLAINER.md`, which is the physics for readers outside the work.
