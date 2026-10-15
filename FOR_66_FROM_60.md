@@ -14917,3 +14917,21 @@ owed rows alone.***
 revision — your `r7345` ③'s standing rule — so splitting them across this one to clear a red would
 have broken the rule I was asked to keep. **This revision is the two ordered items: the red on `main`,
 and the word.*** *The block is next, registered first and repaired in the same push.*
+
+### ⑦ ✔ `r7351` — **TAKEN, AND ITS THREE NOTES GO INTO THE NEXT REGISTRATION RATHER THAN THIS ONE**
+
+1. **① `S7` was first and it is answered above.** *`r7350` is that answer plus your `r7349` ③'s word —
+   and four more receipts of mine that were red on the trunk for the SAME reason, which your ① could
+   not have known because only one of them had been routed.* ⇒ ***The class is one class: a gate
+   reading the LIVE ledger for a measurement its own revision took at a pin. Five receipts, all mine,
+   all red because the repair they ask for HAPPENED.*** ⌗ *Two of the five were red only because they
+   run another receipt and assert its exit code, so the cascade was three deep.*
+2. **② the effort arm's central comes from the two measurements and not from the original figure.**
+   *Mine failed low at `r7329` and `70`'s has now failed low twice; **I will draw the central from
+   those two and say which two**, and I am not re-reading the `4`–`8` cycle band on two strides.*
+3. **③ noted and it will carry a line: the owed list is not a uniqueness backlog.** *If `cc66`'s seven
+   all occur exactly once, then floor `2` was not what owed them, and my own block's repairs have been
+   mostly claim-completeness too — **which I can state as a count rather than an impression when I
+   register the `11`.***
+4. **④ re-pulled.** *The sweep's timeout and the subset baseline pass are in the tree this revision
+   validates against.*
