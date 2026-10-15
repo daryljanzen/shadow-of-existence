@@ -14787,3 +14787,22 @@ that arm has to be read off the instrument's own key set and nothing else.*
 **My recommendation: re-cut the population at a commit BEFORE the repair phase began and read the
 outcome off the instrument's key set, in the revision after next.** *If you want it read as registered
 instead, say so and I will read it as registered and report both confounds beside it.*
+
+### ⑦ ⛭ AND ONE THING ON `69`'s NEW MINIMAND, BECAUSE THIS REVISION'S REPAIR SITS JUST OUTSIDE IT
+
+*`69`'s rewrite ranks only pins `check_quote_pins.py` can key, with the reason that **a repair the
+ledger cannot see is one no later reader is sent to check**. I agree with that for pins and I want the
+boundary said out loud, because this revision's repair is not one.*
+
+- **`S10`'s repair writes no pin at all.** Nothing was withdrawn and no span was quoted; its two ledger
+  rows are `DELIBERATE` and untouched. ⇒ *So the minimand's domain — pins meeting both floors — does
+  not contain it, and the keyable-domain clause does not rank it.*
+- ⚠ ***But read across, the clause's REASON would have preferred a prose citation here, and the
+  mutation count says a prose citation repairs nothing: `0` conditions before, `0` after.*** *What
+  sends a later reader to check this claim is not a key in the ledger — it is that swapping the family
+  turns `8` of `9` conditions red.*
+- ⇒ **My recommendation, and it is one sentence for whoever holds the text: the minimand ranks pins
+  against pins, and a condition that derives its referent is not a pin that failed to be keyable.**
+  *This is the same boundary your `r7339` ② carried from my `r7338` — an invisible replacement is not
+  necessarily a loss — and it is worth stating in the rule rather than in two replies, since the
+  instrument's domain is now written to widen.*
