@@ -18896,3 +18896,86 @@ reconciles them** — pin the exact claim, assert the live one monotone. If that
 `THE_RULE.md` beside the floors rather than being rediscovered per receipt, which is what I just did.*
 
 *⛭ `PR #435`, pushed. `qp16` running; I will report its `rc` either way.*
+
+---
+
+## `r7355+cc66.32` — **all THREE ratchets green on one head, and the CI backlog is now walking forward through my commits confirming each diagnosis in turn**
+
+> **`landed`** — `check_quote_pins` `rc=0` (`2636`/`2636`, `1448` s), `check_prose_pins` `rc=0`
+> (`152`/`152`), `check_exact_counts` `rc=0` (`57`/`57`). **`remaining`** — `REPAIR-OWED` `29`, all
+> `60`'s (`14`) or `70`'s (`15`); `.26` still open.
+
+### ⒜ **The three ledgers, green together, on `fb7170f29`**
+
+| gate | result | cost |
+|---|---|---|
+| `check_quote_pins` | `rc=0` — `2636`/`2636`, **no new key, no stale entry**, `0` annotation faults | `1448` s |
+| `check_prose_pins` | `rc=0` — `152`/`152`, `0` unadjudicated against a ceiling of `0` | ~`60` s |
+| `check_exact_counts` | `rc=0` — `57`/`57`, `EXPOSED` `62`, `FROZEN` `128` | ~`90` s |
+
+**`.31`'s pinned `git show` read adds no quote-pin key and breaks none** — which is the one thing a
+pinned read could have cost, and it did not.
+
+### ⒝ **⛭ The CI backlog is not noise: it is a replay, and it is confirming the chain**
+
+*I called the `~70` red events a backlog at `.30` and dated them with the baseline row count. They have
+now reached my own post-fix commits, and each one lands exactly where the diagnosis predicted:*
+
+**`fast` on `15811294c` (my `.27`):**
+
+```
+⛔ FAILED: check_quote_pins check_exact_counts check_order_acknowledged
+```
+
+⇒ ***`check_prose_pins` is GONE from that list.*** *The `.27` fix is confirmed by CI and not only by my
+own run of the gate. And the three that remain are each already repaired downstream:*
+
+| red on `.27`'s head | repaired in | status |
+|---|---|---|
+| `check_quote_pins` | **`.29`** — the two hand-typed keys | `qp16` `rc=0` |
+| `check_exact_counts` | **`.31`** — the pinned/monotone split | `rc=0` |
+| `check_order_acknowledged` | — | **node `71`'s, not mine** |
+
+### ⒞ **And the ledger has independently confirmed `.28`**
+
+*The plain suite's carry record on that head now reads, for `L268/O1`:*
+
+```
+carried 2, cleared 1, on 2 line(s) over 3.2 h
+```
+
+⇒ ***`cleared 1`.*** *A GREEN has been recorded for `O1` on a later head. **That is the carry ledger
+confirming my repair, not me confirming it** — and it is the kind of evidence I could not produce
+myself, because `O1` is a receipt whose whole subject is being false at the moment it is committed.*
+
+### ⒟ **One correction that runs in MY favour, which is why I am stating it carefully**
+
+*`S19` now carries `⚠ CONTRADICTED` (carried 14, cleared 9, over 63.1 h) where every earlier run read
+it as plain `repeated`:*
+
+```
+red at d17a918e14 ... green at a1a263e095 ... -- nothing it reads differs between the two
+red at 3e2e22b050 ... green at a1a263e095 ... -- nothing it reads differs between the two
+```
+
+**So THREE of the four `main`-side reds — `S19`, `S7`, `P15` — are now flagged nondeterministic by the
+ledger itself, and only `S20` still reads as plainly repeated.** ⌷ *This cuts in the direction I
+already withdrew to at `.30` ⒞, and that is exactly why it needs saying plainly rather than as
+vindication: **I used "both failures are deterministic" to justify not spending the re-run, the ledger
+has now contradicted that three times over, and the honest position is still the one I retreated to —
+I do not know why those four are red, and `S7` is `60`'s to answer.*** *The re-run remains unspent.
+On a job naming only a `CONTRADICTED` receipt, spending it is now the defensible move rather than the
+lazy one, and I will spend it on the first such job on a head that carries `.31`.*
+
+### ⒠ **Standing state**
+
+**`main` has not moved all night** (`dbd23ffd0`, 39 behind this branch), there is **no merge conflict**
+(`mergeable_state: unstable` is CI only), the working tree is clean, and local and remote are both at
+`fb7170f29`. ⌗ *I also rewrote the PR's title and body at `.30`: they described `r7343+cc66.1`–`.4`
+and claimed "still to land: `REPAIR-OWED` `268` → `266`", which was 36 commits stale on the PR's
+central number. It now states what the PR carries, including the six out-of-scope blocks as an error
+rather than an achievement, and the `149`-vs-`152` discriminator so a reader can date the red events
+without asking me.*
+
+*⛭ `PR #435`, pushed, nothing waiting on the chat window. Still blocked only on `.26`, and still not
+starting another seat's rows.*
