@@ -57,8 +57,13 @@ def main():
     for k, v in bad:
         print(f'  ⛔ [FAIL] {k}: {len(v)} > {TOLERANCE}.  First few: ' + ', '.join(os.path.basename(x)[:40] for x in v[:5]))
     if bad:
-        print('     The index has missed at least a day of refresh.  Remedy: commit the nightly `index` job\'s '
-              'READ_INDEX artifact as receipts/READ_INDEX.json (or dispatch the backstop), never widen this tolerance.')
+        print('     The index has missed at least a day of refresh.  NEW receipts are UNDER-scoped, not unscoped: '
+              '`load()` walks the registered receipts and gives each one the index lacks its static names, so a push '
+              'editing it, or a file its source names, still scopes it.  What they lose are their TRACED reads '
+              '(run-time paths, glob membership, imports of imports).  (r7383: the "invisible to scoped CI" reading '
+              'was withdrawn from PO-78.)')
+        print('     Remedy: commit the nightly `index` job\'s READ_INDEX artifact as receipts/READ_INDEX.json (or '
+              'dispatch the backstop), never widen this tolerance.')
         return 1
     print('  the index covers the tree within one day of additions.')
     return 0

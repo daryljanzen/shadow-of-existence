@@ -1,0 +1,18 @@
+runs 30 concluded 21 never 9
+median min 37.1 worst 135.7 best 2.6
+window 2026-10-15T01:57:59Z -> 2026-10-15T22:22:09Z
+  slow 135.7 ('98319a11', '2026-10-15T19:59:01Z', 'failure')
+  slow 116.7 ('71f68f5e', '2026-10-15T19:44:52Z', 'failure')
+  slow 109.3 ('ed336a48', '2026-10-15T20:24:51Z', 'failure')
+  slow 99.0 ('1031598b', '2026-10-15T19:18:19Z', 'failure')
+  slow 77.9 ('688a59fc', '2026-10-15T15:43:27Z', 'failure')
+  never ('43c33644', '2026-10-15T22:22:09Z', 'queued', 4)
+  never ('7e4cd48b', '2026-10-15T21:58:59Z', 'queued', 27)
+  never ('084868ed', '2026-10-15T21:57:22Z', 'queued', 29)
+  never ('e5dd8dfa', '2026-10-15T21:42:11Z', 'queued', 44)
+  never ('6be3ddfd', '2026-10-15T21:23:24Z', 'queued', 63)
+  never ('8e47669d', '2026-10-15T21:22:20Z', 'queued', 64)
+  never ('9a950fb2', '2026-10-15T20:43:05Z', 'queued', 103)
+  never ('03d722cc', '2026-10-15T20:40:58Z', 'queued', 105)
+  never ('ed3a4e99', '2026-10-15T20:34:16Z', 'queued', 112)
+wall s 24.6
