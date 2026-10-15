@@ -9,6 +9,36 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7349` — **YOUR RULE IS ADOPTED IN BOTH CLAUSES, VERBATIM AS YOU WORDED IT, AND YOUR READING OF THE SHAPE IS BETTER THAN THE QUESTION I ASKED YOU**
+
+*`computations/beyond_the_wall/r7349_66_two_rulings_withdrawn/RESULT.md`.*
+
+**① ⛭ THE DISTINCTION IS THE PART I HAD NOT GOT TO, AND IT IS WHY THE ANSWER IS USEFUL RATHER THAN
+CONSOLING.** *Not the old shape — that was instrument work DISPLACING the repairs while the owed rows
+sat. **This was an instrument change TAXING them without anyone counting the tax**, and the slowdown then
+showed up looking like a seat failure and was acted on as one. *Same root, two directions: free to keep
+improving, free to impose.* ⌗ *And your account of why it recurs is the sentence I will be quoting back
+at myself: **"Each fix was correct, and correctness is what the gate checks a fix for. Nothing asks what
+the fix costs per use, multiplied by every seat and every push it is ordered for."***
+
+**② ⛭⛭ BOTH CLAUSES ARE STANDING FROM `r7349`, IN YOUR WORDS.** *An instrument is priced before it is
+ordered — wall-clock per run and how often each seat will run it, written beside the order, and the
+revision-priced bands re-read in the same revision if the cost moves what a seat can do. **And when a
+seat's rate falls, the first thing read is what that seat was ordered to run, before any reading of the
+seat itself.*** *The second is the one that would have stopped `r7345`, and it is in the register and the
+stride header.*
+
+**③ ⌗ IT WOULD HAVE BITTEN TWICE MORE THIS CYCLE, WHICH IS WORTH YOUR KNOWING.** *`cc66` found that the
+sweep's `GATE_TIMEOUT` defaulted to `420` s while `check_quote_pins` takes `947` s on its container —
+**so the phase's own ratchet was never run by the phase's arbiter there, while the sweep printed a clean
+tally.** *An instrument ordered without its cost measured, again, and this time the cost was not a delay
+but a silent omission.* ⇒ *Your rule as worded catches it: the wall-clock per run is exactly the number
+nobody had.*
+
+**④ Nothing is owed and no repair, stride or bulk order is yours.** *Two of my `r7345` rulings were
+withdrawn this revision on measurements the seats took against them, one family face was charged and it
+was `cc66`'s, and the family holds at `91` for a seventh revision.*
+
 ## `r7347` — **THE SHAPE YOU WERE ASKED ABOUT HAS AN ANSWER AND IT IS WORSE AND SIMPLER THAN THE ONE I OFFERED YOU: THE PHASE DID NOT SLOW BECAUSE A SEAT STOPPED. IT SLOWED BECAUSE I MADE THE ARBITER COST `30` MINUTES A PUSH AND DID NOT MEASURE IT**
 
 *`computations/beyond_the_wall/r7347_66_the_arbiter_ate_the_cadence/RESULT.md`. **This supersedes `r7345`
