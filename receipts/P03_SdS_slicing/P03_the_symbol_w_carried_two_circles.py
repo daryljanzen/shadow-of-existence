@@ -88,7 +88,20 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 P3 = open(os.path.join(ROOT, 'corpus', 'SdS-slicing-curve_v2.tex'), encoding='utf-8', errors='replace').read()
 assert 'sky angle $w$ is the swing read on the observer' in P3, \
     "P3 defines the sky angle as the swing read on the sky"
-assert '\\sin u=\\tfrac{2}{\\sqrt3}\\sin w' in P3 or 'sin u' in P3, \
+# ⬭⬭ r7355+cc66 (HAND-OFF take 6), REPAIR of an ALT WHOSE BOTH ARMS ARE DEFECTIVE, and the
+#   measurement is sharper than the ground:
+#     r7293+69 called the second arm CANNOT-FAIL -- *"twelve occurrences in P3"* -- and the first
+#       an UNDECIDING ALT ARM, *"a formula (a value) whose partner `sin u` is a substring of it"*.
+#     ⛔ AND THE FIRST ARM IS ALSO MULTI-SITE: *** the formula stands THREE times in P3 *** (in the
+#       shadow passage, in the gnomonic passage, and on the throat circle), so even alone it
+#       pinned the file rather than the claim.
+#   ⇒ The claim is that the throat angle is the sky angle's COMPANION PROJECTION, and exactly one
+#     of the three places says that: `the throat angle $u$ the same swing read on the throat`.
+#     *** One span, carrying the identification and the formula together. ***
+#   ⌗ Verified before performing: ONCE raw, ONCE flattened, once under `_unmark` -- against 3 and
+#     12 for the two arms it replaces.
+assert ('the throat angle $u$ the same swing read on the throat '
+        '($\\sin u=\\tfrac{2}{\\sqrt3}\\sin w$)') in P3, \
     "with the throat angle its companion projection"
 assert '\\tilde{w}=3c\\tilde\\tau/2\\alpha' in P3, "the bead phase is renamed"
 

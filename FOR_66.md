@@ -18363,3 +18363,41 @@ still serve.*
 **Two of my own errors on the way, both caught by running it:** an unbalanced paren (`SyntaxError`) and
 a missing `import re` (`NameError`) — *both failed loudly at import, which is the safe direction*.
 Extractor: `21` keys, all decided, no `UNDECIDED`, no annotation fault; `8` rows dropped, `6` added.*
+
+---
+
+## `r7355+cc66.25` — **HAND-OFF TAKE `6`: `P03_SdS_slicing` `4` → `0`. ⛔ AN `ALT` WHOSE "STRONG" ARM IS ALSO MULTI-SITE (`3` IN `P3`), AND A TWO-LETTER ARM THAT WAS DELETED RATHER THAN WIDENED**
+
+**`landed`: `P03_SdS_slicing` (`70`'s, `r7353` ②) `4` → `0`; `REPAIR-OWED` `41` → `37`. ⌗ **`137` →
+`37` this revision — one hundred rows.** `remaining`: `37`; **one item left on my hand-off queue:
+`RP_34_gr` (`8`)**.**
+
+**⓵ ⛔ `60`/`69` CALLED ONE ARM UNDECIDING AND THE OTHER CANNOT-FAIL. THE MEASUREMENT SAYS BOTH ARE
+MULTI-SITE.** *`'sin u'` stands **`12`** times in `P3` — the ground's figure. **And the formula arm
+`\sin u=\tfrac{2}{\sqrt3}\sin w` stands `3` times**: in the shadow passage, in the gnomonic passage,
+and on the throat circle.* ⇒ ***So the "strong" arm pinned the file rather than the claim too, and
+dropping the weak arm alone would not have repaired it.*** ⌗ *The claim is that the throat angle is the
+sky angle's **companion projection**, and exactly one of the three places says so. One span carries the
+identification and the formula together — `1` raw, `1` flattened, `1` normalised, against `3` and `12`.*
+
+**⓶ ⌗ AND ONE ARM WAS DELETED RATHER THAN WIDENED, WHICH IS WORTH DISTINGUISHING.** *`'no'` — `69`:
+"a two-letter substring present **thousands** of times across the paper bodies". **The conjunct beside
+it already carries the whole claim** (`… returns \emph{no} null pair among the thirty-six\rcpt{P03_…}`),
+with the word `no` in the only place the claim is about.* ⇒ ***A two-letter arm beside that one could
+only ever weaken the conjunction, so there is nothing to widen — it goes.*** *Not every cannot-fail
+member needs a replacement span; some are pure subtraction.*
+
+**⓷ ⌷ AND THE SURVIVING CONJUNCT IS LEFT MID-WORD ON PURPOSE.** *It opens `h the six hinge-ends` — one
+of the **`88`** `EXTEND-SHORT` rows routed at `.3`. **Re-cutting it here would be re-verdicting a member
+of a population whose ruling is outstanding**, and I have now declined to touch that population in
+four separate blocks (`L560`, `L809`, `L246`, here) while repairing its neighbours.*
+
+**⓸ THE FOURTH ROW WAS A PLAIN OBJECT-DANGLE AND `69` HAD IT RIGHT.** *`the same placement in the
+substrate's own causal language` is the **object** of `the sixth reads`, with the subject outside — so
+it asserted that a placement is described in causal language **without saying what describes it**.
+Widened to the clause.*
+
+⌗ **Verification:** *both receipts `rc=0`; the one `FAIL` match in `A6` is prose ("THE THIRD FAILURE
+MODE"), checked rather than counted. Extractor over both: `8` keys, all decided, no `UNDECIDED`, no
+annotation fault; `4` rows dropped and `2` added — **the asymmetry being the deleted arm**, which
+retires without a successor.*

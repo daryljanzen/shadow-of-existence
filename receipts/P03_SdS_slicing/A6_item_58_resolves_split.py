@@ -92,7 +92,15 @@ def main():
           'differs from the other five in \\emph{kind} rather than in content, and is w' in allp)
     check('with the substrate-language clause the receipt claimed as new: "the same placement read in '
           "the substrate's own causal language rather than in the plane's\"",
-          "the same placement in the substrate's own causal language" in allp)
+          # ⬭⬭ r7355+cc66 (HAND-OFF take 6: 70's receipt, r7353 ②), REPAIR of a DANGLING span
+          #   r7293+69 named: *** "DANGLING (⓵, the OBJECT of `the sixth reads`, its subject
+          #   outside)." ***  The span was the object of a verb whose subject -- what does the
+          #   reading -- sat outside it, so it asserted that a placement is described in causal
+          #   language without saying WHAT describes it.
+          #   ⇒ Widened to include the subject and the verb, which is one clause.
+          #   ⌗ Verified before performing: ONCE in the concatenated paper bodies this check
+          #     reads, once under `check_quote_pins._unmark`.
+          "the sixth reads the same placement in the substrate's own causal language" in allp)
     # ⛭ r4070: THE CITATION COUNT WENT 2 -> 1 WHEN 61's PASS CONSOLIDATED THE PASSAGE.
     #   *P3 used to carry `\\rcpt{P03_the_sixth_equivalence}` twice; it now carries it once, on the
     #   item that DEFINES the sixth equivalence (the $s^{2}$ item, P3 line ~616).*  ⇒ *That is the
@@ -115,7 +123,17 @@ def main():
     # so this converts to a REGRESSION GUARD on the filling. ***
     check('✔ ⓷ and the half that WAS real is now FILLED (r2706): P3 carries the null connectivity '
           '-- "no null pair among the thirty-six" -- and cites its receipt',
-          'no' in allp and 'h the six hinge-ends returns \\emph{no} null pair among the thirty-six\\rcpt{P0' in allp
+          # ⬭⬭ r7355+cc66, REPAIR of the CANNOT-FAIL member r7293+69 named: *** `'no'` is "a
+          #   two-letter substring present THOUSANDS of times across the paper bodies". ***
+          #   ⇒ *** The arm is DELETED rather than widened, because the conjunct beside it already
+          #     carries the whole claim: *** `... returns \emph{no} null pair among the
+          #     thirty-six\rcpt{P03_...}` contains the word `no` in the only place the claim is
+          #     about.  A two-letter arm beside that one could only ever weaken the conjunction.
+          #   ⌷ THE SURVIVING CONJUNCT IS LEFT EXACTLY AS IT STANDS, mid-word opening and all
+          #     (`h the six hinge-ends`): it is one of the 88 `EXTEND-SHORT` rows routed to 66 at
+          #     r7355+cc66.3, and re-cutting it here would be re-verdicting a member of a
+          #     population whose ruling is outstanding.
+          'h the six hinge-ends returns \\emph{no} null pair among the thirty-six\\rcpt{P0' in allp
           and 'P03_slate_worked' in allp)
 
     print()
