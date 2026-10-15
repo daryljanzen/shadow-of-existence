@@ -9,11 +9,12 @@ entire repair phase does -- has no check anywhere that runs a receipt reading wh
 `r7358`, `r7360` and `r7362` on `scripts/run_fast_job.sh`: the gates and the generators, every
 `corpus/check_*.py`, and not one receipt.  The CI job that does run receipts was red on this branch
 throughout and some seventy notifications were each checked against the head, found to name a
-superseded one, and set down.  ** SIX receipts were genuinely red and not one was a receipt this
-seat was watching. **  ⛔ *Four were found by hand; the last two were found by READING the CI log for
-this revision's own REGISTRATION commit -- `S50`'s `Ⓒ①` and `S52`'s `Ⓒ③`, both this seat's, both the
-same class as `S19`'s.  **The hand census missed a third of them**, which is the measure of how
-little a seat can see of its own branch without running the suite.*  ⌗ *And the `tolerance` job's
+superseded one, and set down.  ** SEVEN receipts were genuinely red and not one was a receipt this
+seat was watching. **  ⛔ *Four were found by hand; the rest were found by READING THE CI LOGS for
+this revision's OWN pushes -- `S50`'s `Ⓒ①` and `S52`'s `Ⓒ③` on the registration commit, and `S53`'s
+`Ⓐ③` on the push that carried the first six repairs.  **The hand census missed three of the seven**,
+which is the measure of how little a seat can see of its own branch without running the suite -- and
+the seventh was CAUSED by repairing the other six.*  ⌗ *And the `tolerance` job's
 red is the same `S52` gate, so three distinct CI checks reduce to one defect.*  The six are two
 causes; `r7364`'s first push repaired four and its second the other two:
       `S19` ⒈  `Ⓓ①`'s floor `0 < len(_allday)` FIRED ON ITS OWN SUCCESS -- this line's repairs
@@ -35,6 +36,12 @@ causes; `r7364`'s first push repaired four and its second the other two:
       `S52`    `Ⓒ③` asserted a count of the keys ITS OWN REVISION MINTS, read live: `24` in `12`
                receipts at the commit the figure was taken, `25` in `13` two commits later.
                ** The same revision's next push broke it. **
+      `S53`    `Ⓐ③` measured a RESTRAINT -- "this revision touches no receipt but its own" -- over
+               the range `CENSUS..HEAD`, so **this revision's six repairs, landing after that
+               census, were counted as `r7362`'s.**  *The claim was true; the range it was
+               asserted over keeps growing.*  ⇒ The eighth face of the class, and the first found
+               in a restraint rather than in a measurement -- and the only one of the seven that
+               this revision CAUSED rather than merely uncovered.
 
 ** AND THEN THE REAL FINDING, WHICH IS LARGER THAN THE FOUR.  ⛔⛭⛭⛭ THE READ INDEX IS A LIST OF
 SPELLINGS AND `tsv` IS NOT ON IT. **  `scripts/receipt_scope.py`'s `NAME_RE` enumerates
@@ -339,6 +346,23 @@ def main():
           and (int(a52.group(1)), int(a52.group(2))) == (24, 12)
           and int(a52.group(4)) > int(a52.group(1)))
 
+    s53 = _one('S53_*.py')
+    r53 = run(s53)
+    a53 = re.search(r"over this revision's OWN (\d+) commit\(s\), (\d+) receipt\(s\) differ and "
+                    r'(\d+) of them', r53.stdout)
+    print(f'      S53 exits {r53.returncode};  own commits / touched / others: '
+          f'{a53.groups() if a53 else "NOT PRINTED"}')
+    check(f'Ⓑ⑨ ⛔⛭⛭ `S53` RUNS GREEN (exit `{r53.returncode}`) and it is the one red of the seven '
+          f'that THIS REVISION CAUSED: its restraint was measured over `CENSUS..HEAD`, so the six '
+          f'repairs above were counted as `r7362`\'s.  ** Now read over that revision\'s OWN '
+          f'{a53.group(1) if a53 else "?"} commits -- {a53.group(2) if a53 else "?"} receipt '
+          f'touched, {a53.group(3) if a53 else "?"} of anyone else\'s -- so a later revision\'s '
+          f'work cannot enter the range **  ⌗ *and the working-tree term goes with it: correct '
+          f'before that revision\'s own commit, and a term any later edit satisfies once it is '
+          f'landed*',
+          r53.returncode == 0 and bool(a53)
+          and int(a53.group(2)) == 1 and int(a53.group(3)) == 0 and int(a53.group(1)) >= 1)
+
     # ══════════════════════════════════════════════════════════════════════════════════════════════
     head('C -- THE REGISTRATION OVERREACHED BY ONE CLAUSE, AND THE MEASUREMENT NARROWS IT')
     # ══════════════════════════════════════════════════════════════════════════════════════════════
@@ -380,20 +404,23 @@ def main():
     touched |= {l[3:].strip() for l in git('status', '--porcelain').split('\n')
                 if l[3:].strip().startswith('receipts/') and l.strip().endswith('.py')}
     allowed = ('L_probability/S19', 'L_probability/S50', 'L_probability/S52',
-               'L_probability/S54', 'L_probability/S5_',
+               'L_probability/S53', 'L_probability/S54', 'L_probability/S5_',
                'P03_SdS_slicing/P03_the_enclosed_mass')
     strays = sorted(f for f in touched if not any(a in f for a in allowed))
     print(f'      receipts differing over this revision and its working tree: {len(touched)}')
     for f in sorted(touched):
         print(f'        {f}')
     check(f'Ⓓ① ⛭ this revision touches {len(touched)} receipt(s) and every one of them is named in '
-          f'its own commit messages: the four red ones, the authorship gate two of them share, and '
+          f'its own commit messages: the six red ones, the authorship gate two of them share, and '
           f'this file.  {len(strays)} stray(s).  ⌗ Counted over the COMMITTED diff and the working '
           f'tree together, so the claim holds before this file is committed and after.  ⛭ r7364: '
-          f'*it was `4` until CI\'s own run on the registration commit named two more reds this '
-          f'seat\'s census had missed -- `S50` and `S52`, both the same class -- and the count moves '
-          f'with the work rather than the work being trimmed to the count*',
-          not strays and len(touched) == 6
+          f'*it was `4`, then `6` when CI\'s run on the registration commit named `S50` and `S52`, '
+          f'and now `7` because repairing those six broke `S53`\'s restraint -- the count moves with '
+          f'the work rather than the work being trimmed to the count.*  ⚠ **And this clause is the '
+          f'same shape as the one it is counting: a restraint read over a range. It is read from '
+          f'THIS revision\'s registration commit forward, which is fixed, and it names the files '
+          f'rather than counting a diff against a moving head**',
+          not strays and len(touched) == 7
           and not any(a in f for a in STOOD_DOWN for f in touched))
 
     print(f'\n{BAR}')
