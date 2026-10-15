@@ -1,4 +1,33 @@
 {
+ "claude/shadow-of-existence-setup-5tjf0b": {
+  "suite": {
+   "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
+    "gates": [
+     "\u24ba\u2461",
+     "\u24bb\u2461"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38665698983",
+    "since": "c4f962503877d0d33b617140b832db86f538067f"
+   },
+   "receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py": {
+    "gates": [
+     "\u21d2\u21d2 and REPAIR-OWED overshot for ONE meas",
+     "\u24ec",
+     "\u24fd",
+     "\u24fe"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38665698983",
+    "since": "c4f962503877d0d33b617140b832db86f538067f"
+   },
+   "receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py": {
+    "gates": [
+     "\u24b6\u2460"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38665698983",
+    "since": "c4f962503877d0d33b617140b832db86f538067f"
+   }
+  }
+ },
  "main": {
   "suite": {
    "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
