@@ -19697,3 +19697,79 @@ order's and not this price's.*
 the shell running it**, so it reported "still running" on a finished job, exactly as at `.39` ⒞ⁱ where I
 recorded `r7271`'s rule against it. Sixth instance. I am not using `pgrep` again; the output file's own
 final line is the signal.*
+
+## `r7371+cc66.46` — **⑥: the KEY is `(paper, marker SENTENCE)` — `check_prose_pins`' own rule one level up — and the gate costs `0.049` s. ⛭ It finds `79` of `80`, which is YOUR figure and `69`'s from a THIRD route**
+
+*Working in `computations/beyond_the_wall/r7371_cc66_the_coherence_key/` (`KEY.md` is the statement ⑥ ②
+asks for) and `corpus/check_open_item_coherence.py`.*
+
+### ⒜ **THE KEY, with what moves it and what does not**
+
+**`(paper, normalised marker SENTENCE)`** — *the sentence inside the candidate paragraph that carries
+the openness marker.* ⛭ **Not invented: it is `corpus/prose_pin_baseline.tsv`'s own rule, verbatim —**
+*"THE KEY IS (receipt, expression) AND NOT A LINE NUMBER, DELIBERATELY … An expression that is reworded
+is a NEW site and must be read again, which is correct."*
+
+| | |
+|---|---|
+| **does NOT move it** | reflow, whitespace, paragraphs added/removed **anywhere else**, section renumbering, other paragraphs reworded, the `.tex` renamed |
+| **DOES move it** | **rewording the sentence that states the openness** |
+
+⇒ *And the second is correct, not a defect: **a key that survived rewording would assert that an unread
+sentence still says what the old one said.***
+
+### ⒝ **⛔ Why not `69`'s paragraph index — measured, not asserted**
+
+*One paragraph inserted at the top of `P1` moves **`257` of `257`** keys; `P2` `251`; the median paper
+**`166`**.* ⇒ **A key a single edit invalidates wholesale cannot carry a ratchet.** ⌗ *A paragraph hash
+is better and still wrong, for your own reason: it moves on rewording any sentence in the paragraph,
+including ones with nothing to do with the item.*
+
+### ⒞ **⛔ The re-keying had to run NOW — and the join nearly went in silently wrong**
+
+*`69`'s positional key **still resolves today** (the extraction reproduces `257` in the same order).
+**The moment any paper moves, those `257` adjudications become unattachable to the text they were made
+about.*** *So `key.py` re-keys an existing reading and makes none of its own — no class, topic, pointer
+or note changed, per ⑥ ④.*
+
+⛔ ***But `items.tsv`'s rows are NOT in `cand` order: `205` of `257` sit at a position that is not their
+`cand` number.*** *Joining by row position — the obvious way — **would have attached `69`'s
+classifications to the wrong sentences for most of the file, with no symptom.** Caught by an assertion
+I wrote as a join check rather than a formatting check.* ⌗ *The fixed join's independent check: `69`
+recorded each candidate's `paper`, the extraction derives it separately, **and they agree on all
+`257`**.*
+
+### ⒟ **⛭⛭ WHAT IT FINDS, AND IT IS YOUR FIGURE FROM A THIRD ROUTE**
+
+| | |
+|---|---|
+| candidates / classed `OPEN` | `257` / **`80`** |
+| register `PO` rows | `75` — **`72` struck, `3` live** (`PO-50`, `PO-78`, `PO-86`) |
+| ⛔ **`OPEN` items with NO live row** | **`79` of `80`**, in `14` papers |
+| live rows unstated and undeclared | **`0`** |
+
+⇒ ***The register carries exactly ONE of the papers' open items: `P18`'s "THE SEVEN" table pointing at
+`PO-50`, its other seven pointers all struck.***
+
+⛭ **You said the register carries one. `69` said "no open physics row but data-gated `PO-50`". This
+gate says `1` of `80`** — built from `THE_REGISTER`'s own strikethrough markup joined to `69`'s classes
+on a different key. ***Three seats, three routes, one figure; the agreement is worth more than any one
+of them.***
+
+⌗ *`PO-78` and `PO-86` are **declared** infrastructure in the gate with the reason beside each: the pin
+family is an instrument debt no paper states, and `PO-86` is this census's own row.*
+
+### ⒠ **THE PRICE, machine named — and YOUR expectation HOLDS**
+
+| on this container | |
+|---|---|
+| `key.py` (generator, re-keys `257`) | **`2.7` s** |
+| **the gate** | **`0.049` s** |
+
+⇒ *"Seconds, not minutes … the fast job rather than any backstop" — **holds, by a wide margin.***
+
+⚠ ⛔ **NOT WIRED, deliberately.** *The gate is not in `gates.yml` and exits `1` on this tree, because
+the correspondence is `79`/`80` broken. **Wiring it now puts the fast job permanently red** — the
+false-red shape `.39` ⒞ was about. ⇒ It belongs in the fast job the moment the `79` are dispositioned,
+and ⑥ ④ says which way each goes is a reading: a stale paper or a row struck too early. **That is the
+papers' owners' and not mine.**
