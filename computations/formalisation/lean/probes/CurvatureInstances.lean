@@ -1053,6 +1053,20 @@ theorem row98_einstein_tidal (M α : ℝ) (p : Fin 4 → ℝ)
   ⟨(sds_contractions hF hP hS hF0 hP0 hS0 M _ p eF eP eS).1,
     fun k0 k1 hk i j hi hj => static_radial_tidal hF hP hS hF0 hP0 hS0 p eP k0 k1 hk i j hi hj⟩
 
+open Filter Topology in
+/-- **Row 71, its non-vacuous instance (`r7351+71`).** On SdS, `C² = 48M²/r⁶`, `E₄ = 48M²/r⁶ + 8Λ²/3`, and the
+remainder `2(Ric² − R²/3) = −8Λ²/3`: the identity `weyl2_gb_identity` carries weight here, with `C² ≠ 0` at `M ≠ 0`. -/
+theorem row71_sds (M Λ : ℝ) (p : Fin 4 → ℝ)
+    (eF : F =ᶠ[𝓝 (p 1)] fun s => 1 - 2 * M * s⁻¹ - Λ / 3 * s ^ 2) (eP : P =ᶠ[𝓝 (p 1)] fun s => s ^ 2)
+    (eS : S =ᶠ[𝓝 (p 2)] fun s => Real.sin s ^ 2) :
+    weyl2C (fun i => cK F P S i p) (RK hF hP hS hF0 hP0 hS0 p) = 48 * M ^ 2 / p 1 ^ 6 ∧
+      gbC (fun i => cK F P S i p) (RK hF hP hS hF0 hP0 hS0 p) = 48 * M ^ 2 / p 1 ^ 6 + 8 * Λ ^ 2 / 3 ∧
+      2 * (ric2C (fun i => cK F P S i p) (RK hF hP hS hF0 hP0 hS0 p)
+        - scalC (fun i => cK F P S i p) (RK hF hP hS hF0 hP0 hS0 p) ^ 2 / 3) = -(8 * Λ ^ 2 / 3) := by
+  obtain ⟨-, h2, h3, h4⟩ := sds_contractions hF hP hS hF0 hP0 hS0 M Λ p eF eP eS
+  simp only [weyl2C, gbC, h2, h3, h4]
+  refine ⟨by ring, by ring, by ring⟩
+
 end Inst_Kretschmann
 
 end ShadowProbe
@@ -1082,3 +1096,4 @@ end ShadowProbe
 #print axioms ShadowProbe.row110_petrov
 #print axioms ShadowProbe.static_radial_tidal
 #print axioms ShadowProbe.row98_einstein_tidal
+#print axioms ShadowProbe.row71_sds

@@ -6,7 +6,7 @@ index	class	status	what it needs next	stand-in
 4	G2	DONE (chartable half)	discharged in B (r7315); closed half: the closed slicing's R -> REOPENABLE by the near-point convention	curvature invariants; Ricci scalar of a layer
 5	G2	DONE (chartable half)	discharged in B (r7315); closed half: the closed slicing's constant R -> REOPENABLE by the near-point convention	Ricci scalar of two slicings
 6	G2	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	Einstein tensor and its divergence (contracted Bianchi identity)
-7	G3	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	ADM identity for extrinsic curvature K_ij of a slice
+7	G3	DONE (chartable half)	closed by 71 at r7351+71.3 (r7351_71_campaign6/RESULT.md): adm_trace_split, K^2 - K_ij K^ij = (2/3) theta^2 - sigma_ij sigma^ij for any leaf; open half: the receipt's count claims (the Killing vectors buy a count, the shear count is the gap)	ADM identity for extrinsic curvature K_ij of a slice
 8	G4	DONE	discharged in B (r7315)	TT mode function of a field on de Sitter
 9	G3	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	plane sections of the dS hyperboloid as submanifolds with radius
 10	G3	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	plane sections of the dS quadric identified as dS_{D-1} / sphere
@@ -18,7 +18,7 @@ index	class	status	what it needs next	stand-in
 16	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	LTB turnaround time (functions)
 17	G2	DONE (chartable half)	closed by 71 at r7333+71.3 (r7333_71_kretschmann/RESULT.md): nariai_curvature, K = 72/alpha^4 on dS2 x S2; open half: SdS K AT the horizon point r_N, where f = 0 and the static chart fails (a limit or a horizon-crossing chart)	Kretschmann scalar on the Nariai cut
 18	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	branched covering and its canonical flat connection
-19	G2	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	Weyl^2, Gauss-Bonnet as a total derivative
+19	G2	DONE (chartable half)	closed by 71 at r7351+71.2 with 70's frw_closed (r7351_71_campaign6/RESULT.md): gb_total_derivative, sqrt(g) E4 = d/dT[24(a'^3/3 + a')] on closed FRW for every a; open half: the k = 0 and k = -1 total derivatives and the running-layer comparison	Weyl^2, Gauss-Bonnet as a total derivative
 20	G4	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	momentum constraint, mode ODE, div G
 21	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	Nariai limit identified as dS2 x S2
 22	G2	DONE	discharged in B (r7315)	de Sitter curvature invariants
@@ -70,7 +70,7 @@ index	class	status	what it needs next	stand-in
 68	G4	LIBRARY GAP	spectral theory	completeness relation, level overlap (spectral)
 69	G2	LIBRARY GAP	the Levi-Civita volume form	Pontryagin density of a Gowdy wave
 70	G4	LIBRARY GAP	spectral theory	oscillator identity for the energy shift
-71	G2	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	C^2 = E4 + 2(Ric^2 - R^2/3)
+71	G2	DONE	closed by 71 at r7351+71.4 (r7351_71_campaign6/RESULT.md): weyl2_gb_identity (any metric the engine contracts), row71_sds (non-vacuous: C^2 = 48M^2/r^6 on SdS)	C^2 = E4 + 2(Ric^2 - R^2/3)
 72	G2	DONE	closed by 70 at r7335+70.2 (r7335_70_row72/RESULT.md): closed FRW with a(T) free, R, Weyl^2 = 0, a^3 GB (256-entry table, 320 s)	ranks of FRW curvature invariants
 73	G4	LIBRARY GAP	spectral theory	Bianchi-IX curvature expansion, vertices, vacuum shift
 74	G4	DONE	discharged by the engine (E3/E4, r7323)	Gowdy-dS background field equation 3H^2 = Lambda, shear charge
