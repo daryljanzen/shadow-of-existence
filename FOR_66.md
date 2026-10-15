@@ -19133,3 +19133,73 @@ green locally.*
 keep the PR watched and the check-in armed, and I will not start another seat's rows.***
 
 *⛭ `PR #435`, pushed. Nothing waiting on the chat window.*
+
+---
+
+## `r7355+cc66.36` — **the re-run's verdict: `S7` reproduces on the identical commit, and that narrows `60`'s question rather than answering it**
+
+> **`landed`** — the re-run read and reported; the `.34` prediction replicated on THREE heads.
+> **`remaining`** — `REPAIR-OWED` `29`, all `60`'s or `70`'s; `.26` open. **Nothing of mine is
+> outstanding.**
+
+### ⒜ **The re-run came back RED, as recorded in advance**
+
+*Job `116347772820`, attempt 2 of the runner-read sweep on `fb7170f29`:*
+
+```
+= still red: receipts/L_probability/S7_the_paper_pins_are_read_by_reversing_the_clause_they_quote...
+```
+
+⇒ ***`S7` reproduces on an identical tree.*** *`.33` said: "I expect it to tell nobody anything new, so
+that if it comes back green the surprise is on the record as a surprise." **It came back red, so there
+is no surprise and the expectation is discharged honestly rather than retroactively.** The re-run is
+spent; this PR has no second.*
+
+### ⒝ **⛭ But it DID narrow the question, and the narrowing is the useful part**
+
+*Look at where the `CONTRADICTED` pairs live. **Every one of them is on `…6awafl`:***
+
+```
+red at 224be1de1d on …6awafl, green at af33966d18 on …6awafl -- nothing it reads differs
+red at 224be1de1d on …6awafl, green at 00abda7bf0 on …6awafl -- nothing it reads differs
+```
+
+**And on `…5tjf0b` at `fb7170f29`, `S7` is now red TWICE on the byte-identical tree.**
+
+⇒ ***So `S7` is not nondeterministic in general. It is deterministic here and the green/red pairs are
+confined to `60`'s own line.*** *That is a sharper statement than "⚠ CONTRADICTED" and it points
+somewhere specific: whatever makes `S7` go green on `6awafl` is a property of **that line's trees or
+runners**, not of the receipt's inputs as the ledger measures them — which means the ledger's
+"nothing it reads differs" is either reading an incomplete input set, or `S7` depends on something
+outside it.*
+
+⌷ **I am not pursuing that.** *`S7` is `60`'s receipt and the question was routed to `60` at `r7349`
+⑤. The datum is gathered and handed over; the `Ⓖ㉑` disjunction trace and the proposed patch are in
+this PR's comments, unchanged and still not pushed from here.*
+
+### ⒞ **The `.34` prediction replicated on three heads, not one**
+
+| head | `fast` failure line |
+|---|---|
+| `fb7170f29` (`.31`) | `check_order_acknowledged` |
+| `62909f3de` (`.32`) | `check_order_acknowledged` |
+| `85afbb10f` (`.33`) | `check_order_acknowledged` |
+
+*⌗ I claimed one confirmation and got three independent ones. **Stating that as the stronger result it
+is, rather than letting the original claim stand as if it had been the careful one.***
+
+### ⒟ **Final state of this branch, and it is not going to change without you**
+
+**Done and verified:** *`108` owed rows closed (`137` → `29`); all `17` assigned receipts, all seven
+`r7353` ② hand-off items, six out-of-scope blocks (reported as an error at `.14`); three defects this
+branch introduced found and repaired, each confirmed by CI on the head that first carries the fix;
+three ratchets green together (`2636`/`2636`, `152`/`152`, `57`/`57`); the PR's title and body
+rewritten from 36-commits-stale; four corrections of my own claims recorded (`.27` the weak bound,
+`.30` ⒟ the buffering guess, `.31` ⒞ the "both ratchets" error, `.32` ⒟ the determinism withdrawal).*
+
+**Open and NOT mine:** *`S19`, `S20`, `S7`, `P15` — all red on `main` before this branch existed, no
+portable fix; `check_order_acknowledged` on node `71`.*
+
+⇒ *⛭ **There is no push I can make that improves this PR, and the `29` remaining rows are another
+seat's.** The PR stays watched with the check-in armed. `.26`'s decision is the only thing that
+changes what I do next, and I am not taking another seat's rows without it.*
