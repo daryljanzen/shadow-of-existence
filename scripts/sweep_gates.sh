@@ -30,7 +30,23 @@ set -uo pipefail
 cd "$(dirname "$0")/.."
 
 export NODE="${NODE:-ci}"
-GATE_TIMEOUT="${GATE_TIMEOUT:-420}"
+# ⛔⛔ r7343+cc66: THE SAME DEFECT THIS LINE ALREADY FOUND AT r7323, ONE SCRIPT OVER -- AND I DID NOT
+#   RECOGNISE IT AS MINE UNTIL I READ THE SIBLING.  `scripts/run_fast_job.sh` carries it in full:
+#   `timeout 420` was a claim about the runtime when it was written (r6500), check_quote_pins joined
+#   the fast list three weeks later, nobody re-measured, and that gate takes 1096.1s there.  THIS
+#   script was never corrected, so it kept filing the gate as UNRUN(timeout>420s) -- which its own
+#   header calls "a question NOT ASKED".  ⇒ The phase's ratchet has never been run by the phase's
+#   arbiter, and an UNRUN hides a red exactly as well as it hid the green measured here.
+#     ⌗ Re-measured for this fix, alone on an idle container: *** check_quote_pins 947s, rc=0 ***
+#       -- 2.25x this timeout, and 7.4x the check_cross_row_dupes 128s the 420 was calibrated on.
+#       The two measurements of the same gate (1096.1s at r7323, 947s here) differ by 14 per cent,
+#       which is why the budget is set well clear of either rather than snug to the newer one.
+#   ⇒ 1800, MATCHING run_fast_job.sh AND ITS REASON rather than a fresh judgement of my own: CI
+#     applies NO per-gate timeout (`NODE=ci python3 corpus/$g.py`, job capped at timeout-minutes:
+#     127), so a per-gate limit here is a HANG GUARD and not a budget.  A budget makes the sweep
+#     disagree with the thing it exists to predict.
+GATE_TIMEOUT="${GATE_TIMEOUT:-1800}"
+ROSTER_OUT="${ROSTER_OUT:-/tmp/sweep_roster.txt}"
 
 # ⛔ r7341 (66), from cc66's r7339+cc66.2 -- A COUNT IS NOT A ROSTER, AND THIS SCRIPT PRINTED A
 #   COUNT.  cc66 ran the phase's verification sweep as `while read g; do ... done < gatelist.txt`
@@ -72,6 +88,12 @@ run_sweep() {
   expect=$(ls corpus/check_*.py | xargs -n1 basename | sed 's/\.py$//' | sort)
   actual=$(sort /tmp/_swroster.$$)
   missing=$(comm -23 <(echo "$expect") <(echo "$actual") | tr '\n' ' ')
+  # ⛭ r7343+cc66: THE ROSTER IS KEPT, NOT DESTROYED.  This line asserted its roster and then
+  #   `rm -f`'d it, so a run could PROVE it covered all N names and leave no record of WHICH --
+  #   and cc66 was asked for the roster and could only reconstruct it from `ls`.  An instrument
+  #   that cannot state what it measured is one step short of 66's own r7343 sentence, so the
+  #   names are written where the next reader can read them and printed beside the counts.
+  cp -f /tmp/_swroster.$$ "$ROSTER_OUT" 2>/dev/null || true
   rm -f /tmp/_swroster.$$
   echo "$pass|$fail|$failed|$unrun|$notrun|$ran|$missing"
 }
@@ -100,6 +122,10 @@ if [ "$RAN" -ne "$NGATES" ] || [ $((P + F + U)) -ne "$NGATES" ] || [ -n "${MISSI
 fi
 for n in $FAILED; do echo "      [FAIL]  $n"; done
 for n in $NOTRUN; do echo "      [UNRUN] $n"; done
+if [ -s "$ROSTER_OUT" ]; then
+  echo "  ROSTER ($(grep -c . "$ROSTER_OUT") names actually run, kept at $ROSTER_OUT):"
+  sort "$ROSTER_OUT" | tr '\n' ' ' | fold -s -w 104 | sed 's/^/    /'
+fi
 
 # ** THE STANDING DEBT, SAID OUT LOUD WHERE THE TALLY IS ACTUALLY READ.  ** r3905.
 #   The receipt gate is CACHED: it refuses to speak once the tree has moved, and the
