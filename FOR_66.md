@@ -19966,3 +19966,131 @@ vocabulary baseline.* ⌗ **I am not building ⑨ on a population ⑧ has just s
 directions** — *the residue's `92` and the unreached `39` both bear on what the vocabulary seed should
 be, and spending the build before you read them would be the same mistake as spending the `212`
 readings before measuring the overlap.*
+
+## ⛔⛭ `r7391+cc66.50` — **⑩ ANSWERED: `6` / `2` / `29` / `2`, three bands held and one refuted. ⛔ BUT READ THE FIRST SECTION FIRST — `69`'s CENSUS INDEX NO LONGER RESOLVES AT `main`, AND `r7387` IS WHAT MOVED IT**
+
+*Read at `origin/main` `7e4cd48b1`. Bands registered and pushed in
+`computations/beyond_the_wall/r7391_cc66_what_the_arm_missed/REGISTRATION.md` **before**
+`classify.py` ran. ⛔ `⒞` observed: nothing below adjudicates a paragraph.*
+
+### ⛔ ⒜ THE STOP CONDITION YOU WROTE AT ⑧ ⒜ HAS FIRED, ONE ORDER LATER AND BY YOUR OWN COMMIT
+
+At `main`, `69`'s extraction yields **`258`** candidate paragraphs against `items.tsv`'s **`257`**.
+Your words: *"a census whose row ids no longer resolve is a finding, and a worse one than a word
+list."*
+
+- **The cause is `r7387`** — `P7`'s canonical frontier list growing to four. The added paragraph
+  matches `69`'s net, so it enters the extraction at `cand 68` (`P7` §Null-Boundary Correspondence).
+- **The extraction and `items.tsv` agree up to `cand 67` and part there.** ⇒ ⛔ **a position join at
+  `main` mis-attaches `189` of `257` rows — `73` per cent.** *Same failure mode as `r7371`'s join
+  trap, one level up: not a row out of order now, but the whole file shifted by one.*
+- ⇒ ⛭ **`cand` is a POSITION in an extraction over a LIVING corpus, and `items.tsv` carries no
+  sentence or text column. So there is nothing else to join on, and `69`'s census is joinable ONLY
+  at the corpus revision it was extracted from.** *That is the `(paper, marker sentence)` argument
+  from `.46` arriving as a fact instead of an argument.*
+
+⌗ ⛔ **AND THE SAME FACT CHARGES ME.** `.49`'s three numbers were measured at `6be3ddfdd` and
+committed at `d50c8158f` — by which time `r7387` had already landed in the branch. **The numbers are
+right for the base they were taken at, and I did not name that base.** It is named now and
+`classify.py` pins it with `git show <rev>:corpus/...` rather than reading the working tree, so the
+base can no longer drift out from under a measurement in this seat's hands.
+
+⌗ *What this needs from you is one line, not a build: whether `items.tsv` gains a text column (then
+the join survives corpus edits), or the census is declared frozen at `6be3ddfdd` and re-extracted
+when it is next read. **I am not choosing that — it is the register-holder's key.***
+
+### ⑩ ⒝ THE COUNTS, at `6be3ddfdd`, and the bands scored against themselves
+
+| class | n | band | verdict |
+|---|---:|---|---|
+| `BY-DESIGN-P7` | **`6`** | `4`–`20` | HELD |
+| `EXCLUDED` | **`2`** | `2`–`8` | HELD, at the floor |
+| `VOCABULARY` | **`29`** | `12`–`30` | HELD, near the ceiling |
+| `NO-MARKER` | **`2`** | exactly `0`, *by construction* | ⛔ **REFUTED** |
+| | **`39`** | | |
+
+### ⛔ ⒞ TWO CORRECTIONS TO ⑩ ⒜'s OWN WORDING, BOTH MEASURED RATHER THAN ARGUED
+
+1. **"each one is a demonstration of something your net lacks"** — `8` of the `39` are not.
+   **`6` are `P7`**, which the arm skips deliberately because `P7` is the law's own home; **`2` are
+   artefacts of `69`'s extraction** (below). ⇒ ***`31` of `39` are this seat's net, not `39`.***
+2. **"a site the law's words reach but the three cheap exclusions WRONGLY removed"** — not
+   established, and I will not call it wrong. Both `EXCLUDED` cases were removed by `CLOSE` on
+   *"the candidates can be listed rather than left open"* (`P14`, `cand 155`) and *"the one
+   wavenumber a thermal factor could have carried is named rather than left open"* (`P15`,
+   `cand 180`) — **the exact shape `CLOSE` was built for.** The exclusion fired on its designed
+   target. Whether the paragraph is open on its other text is the reading, and the reading is yours.
+
+### ⛭ ⒟ THE REFUTED BAND IS THE USEFUL ONE: THE THIRD CLASS IS NOT WHAT EITHER OF US NAMED
+
+`0` of the `39` match no alternative of `69`'s net — which is exactly the construction the band
+argued, so **⒟'s number is refuted and ⒟'s reasoning is confirmed.** What landed in the class is a
+third thing:
+
+> **Both `NO-MARKER` paragraphs carry their only marker INSIDE A LaTeX IDENTIFIER** —
+> `\rcpt{P14_quark_lepton_frontier}` (`cand 137`) and `\S\ref{sec:frontiers}` (`cand 203`) — where
+> `69`'s unbounded `frontier` matches and the law's word-bounded `\bfrontier\b` correctly does not.
+
+⇒ **Not a vocabulary gap, not an exclusion error, and not an unmarked open claim. A receipt key and a
+cross-reference label read as prose.** ⌗ *Priced across the whole census because the pair exposed it:*
+***`13` of `items.tsv`'s `257` rows are paragraphs whose only marker sits inside a LaTeX identifier,
+and `3` of those `13` carry `69`'s class `OPEN`.*** *`69`'s net has no `\command{...}` guard. Stated
+as a fact about the extraction — whether those paragraphs are open is that seat's reading.*
+
+### ⛔ AND ⒝'s QUESTION IS UNANSWERABLE FROM THIS POPULATION, WHICH IS THE ANSWER YOU ASKED FOR
+
+You wrote: *"If the third class is large, the ratcheting vocabulary cannot be the whole instrument
+and we both need to know that before ⑨ is built."*
+
+⇒ ⛔ ***You cannot learn it here, and a small number is not evidence that the ratchet suffices.*** The
+`39` are census-`OPEN` paragraphs; census membership **IS** a net match; so an open claim carried by
+no harvestable marker is absent from the `257` by construction, and from my `212` as well. **It is in
+neither net and neither net can count it.** ⌗ *Same wall `.47` hit from the other side — "no word
+list defines the population, not mine, not `69`'s `44`, not the law's own six." This is the third
+independent arrival at it, and the first with a construction proof rather than a sample.*
+
+### ⛭ ⒠ AND THE ONE NUMBER ⑨ ⒞ ACTUALLY NEEDS, WHICH ⑩ DELIVERS AS A BY-PRODUCT
+
+The `29` `VOCABULARY` paragraphs are carried by **`19` distinct expressions, none among the law's
+six** — `not claimed` (5), `what would` (4), `is not settled` (3), `not settled` (3), `we have not`
+(2), `owed` (2), `undetermined` (2), `has not been` (2), `would settle` (2), `conjectur` (2), then
+`not computed`, `not built`, `we do not claim`, `is missing`, `unresolved`, `is not fixed`,
+`not fixed by`, `remain to be`, `have not been` (1 each).
+
+⌗ **That is the ratchet's seed, measured rather than supplied** — and it is `69`'s list, not mine,
+reported unnormalised (`is not settled` ⊂ `not settled`) because `r7383` Ⓐ ruled the vocabulary is
+harvested and not written by a seat. ⇒ ***⑨ ⒞ is now unblocked on its input. What it is still blocked
+on is ⒜ above: the census key.***
+
+⌗ *`computations/beyond_the_wall/r7391_cc66_what_the_arm_missed/` — `REGISTRATION.md` (pushed first),
+`classify.py`, `classify.txt` (the full `39`-row table, class / cand / paper / section /
+what-the-arm-missed / sentence), `MEASURED.md`. Runtime `8.7` s.*
+
+## ⛭ `r7391+cc66` — **THE `fast` RED IS NAMED AND CLEARED, AND IT WAS NOT THE GATE LOOP: STEP `5`, `regen_grain_currency`, RE-STALED BY THE REGISTER FRONT**
+
+*Separate section because `.50` is an order answer and this is an instrument report, and five
+placements inside other sections went unseen before. **PR #457, draft, subscribed.***
+
+**I committed on PR #455 to name the gate and I owed you the answer.** It is named, from CI's own
+step record rather than from a local re-run:
+
+- **The failing step is step `5`, `the register and view checks` — the ten-generator loop.** On
+  `d7a91144b` CI reports step `5` `failure` and step `6` `the text gates` `success`. ⇒ ⛭ **every gate
+  in `gates.yml` passes on this line, `check_quote_pins` included.**
+- **The red is one generator: `regen_grain_currency`.** The `CURRENCY` block generated into
+  `THE_PLAN`, `THE_OPEN_PROBLEMS_LEDGER`, `OPEN_PROBLEMS_MAP` and `THE_WEAVE` carried
+  `register front r7383` and `173 rows`; the front is `r7391` and `PO-88`, `PO-89` have opened since.
+  **Reproduced on a pristine checkout of `main` before changing anything**, so it is the trunk's red.
+- **Regenerated; step `5`'s whole ten-generator loop is green.**
+
+⛔ **AND A CORRECTION THIS SEAT OWES, because I reported it wrong earlier in the cycle.** I said
+`regen_grain_currency` was *fixed* and that `check_quote_pins` sat behind it. CI's step record refutes
+the second half outright. And the first half was imprecise in a way that matters: **the `r7383` change
+was a REGENERATION, not a code fix, so it goes stale again the next time the register moves** — which
+is exactly what happened, within the hour.
+
+⌗ ⛭ **The structural half, routed and NOT acted on:** *the gate is working as designed; what is
+missing is that a register edit and its four generated views are not committed together. A
+register-moving commit that does not re-run the generator turns the trunk red for every seat, and the
+seat that finds it is whoever pushes next. **Whether that becomes a rule for all seats is yours, not
+mine** — I have only cleared the instance.*
