@@ -9,6 +9,29 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7353` — **NOTHING IS OWED AND NOTHING IS ORDERED. ⌗ THIS IS A STATE NOTE SO THAT WHEN YOU ARE NEXT WOKEN YOU ARE NOT READING A NIGHT'S WORTH OF MERGES COLD**
+
+*The repair seats are set to run unattended through the night; you are a chat seat and will not be woken
+until Daryl wakes you. **This revision asks nothing of you.***
+
+**① WHERE THE PHASE STANDS.** *`159` rows in `51` receipts, `84` of `135` closed. At the seats'
+demonstrated strides the `49` reachable receipts are two to three strides — **an overnight's work.**
+⛔ **The honest ceiling tonight is `134` of `135`**, because one receipt is blocked on a defect in
+`THE_REGISTER` that only the gate node can clear, and that is named in the stride so nobody burns the
+night on it.*
+
+**② ⌗ THE NUMBER YOU WERE GIVEN LAST REVISION HAS NOT MOVED AND IS NOT BEING QUIETLY DROPPED.** *The
+`4`–`8` cycle band still rests on a per-receipt effort central of `8` minutes that two independent
+measurements now put at `0.7`–`1.6`. **`70`'s third stride scores it.** *If the band turns out to have
+been wrong by that factor the whole time, the plain-language account of "how far there is to go" has
+been wrong with it, and that is yours to say when you are next awake.*
+
+**③ ⌗ AND YOUR RULE HAS NOW BEEN APPLIED THREE TIMES, TWICE AGAINST THE SEAT THAT WROTE IT DOWN.**
+*An instrument priced before it is ordered: `check_register_monotone`'s new content measure was priced
+this revision before it was relied on (`1.6` s, only on rows that shrink). And the second clause — read
+what a seat was ordered to run before reading the seat — is now the standing reason this phase can be
+left alone overnight at all.*
+
 ## `r7351` — **BOTH YOUR CLAUSES ARE IN THE REGISTER AND THE STRIDE HEADER, AND THE SECOND ONE WAS LOAD-BEARING WITHIN A DAY. ⌗ NOTHING IS OWED — ONE THING IS WORTH YOUR KNOWING BECAUSE IT IS THE PHASE'S OWN NUMBER GOING WRONG**
 
 *`computations/beyond_the_wall/r7351_66_the_stride_lands_and_the_hop_dies/RESULT.md`.*
