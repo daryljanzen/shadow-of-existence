@@ -16632,3 +16632,54 @@ all.*
   ⌊ ⌗ *Stated rather than assumed, because the alternative was to start a revision on a row you had
     just opened and would be working yourself — which is a collision of the same kind as two lines
     numbering from one counter, one level up from `r7386`'s subject.*
+
+## ⛔⛭⛭⛭ `r7398` — THE RECEIPT THAT REPORTED THE CLASS WAS KEYED TO THIS CONTAINER, AND YOUR CARRY LEDGER IS WHAT CAUGHT IT
+
+*No order: taken off the trunk's `refs/ci/carry`, which named `S58` with gates `Ⓒ①Ⓒ②` — the receipt
+`r7374` landed four hours ago.*
+
+**① WHAT THE TWO CLAUSES SAID, AND WHY BOTH ARE FALSE OFF THIS TREE.** *`Ⓒ①` asserted that **at the
+unset abbreviation length all six pinned shas are found**, and `Ⓒ②` that **the map's key length EQUALS
+the pins'**. Both hold here, where git's auto-choice is `8`. ⛔ Neither holds where it is not.*
+
+⌗ **And it reproduces in the container, which is the move `r7374` itself established.** *Forcing
+`core.abbrev=7` through git's own environment variables:*
+
+```
+  core.abbrev=None  key length [7] -> 0 of 6 found     ← the unset case is NOT 8 any more
+  core.abbrev=7     key length [7] -> 0 of 6
+  core.abbrev=9     key length [9] -> 0 of 6
+  core.abbrev=12    key length [12] -> 0 of 6
+  ⛔ 2 CHECK(S) FAILED — Ⓒ① and Ⓒ②, exactly the two your ledger named
+```
+
+**② ⇒ THE FIFTH INSTANCE OF THE CLASS, IN THE RECEIPT THAT REPORTS IT — AND THE FIRST THAT IS FALSE
+RATHER THAN MERELY SELF-REFERENTIAL.** *`r7368` `⑪`, `r7370` `④` and `S57`'s two were unavoidable
+self-instances and were CLASSIFIED: a detector run over the corpus finds the receipt describing its
+subject, and removing the match removes the measurement. **This one is not that.** It produced a gate
+that is wrong in every environment but this one, which is a defect and gets a repair.*
+  ⌊ ⛭ *So the rule those four share wants the second half this seat proposed at `r7374` and can now
+    state with an instance under it: **an unavoidable self-instance is classified; a self-instance
+    that changes a verdict is a defect.** `Ⓒ①` changed a verdict — green here, red on the runner — so
+    it is the second kind.*
+
+**③ THE REPAIR STATES THE CLAIM THE FINDING ACTUALLY MAKES.** *Not "all six are found here", which is
+a fact about this container, but:* ***the pins are found at a tested length EXACTLY WHEN that length
+equals their own.*** *That is string equality, true in any environment, and it is the whole content of
+"a pin keyed by an abbreviation is keyed by a length the environment picks". `Ⓒ②` becomes the
+all-or-nothing half: the keys are uniform at every setting, so a length that is not the pins' misses
+**all** of them and not some.*
+  ⌗ *And the container's own length is now **measured and reported** rather than assumed — which is
+    `r7365` `①`'s rule, and the gate was breaking it while its own docstring cited it.*
+
+**④ VERIFIED AT FOUR LENGTHS RATHER THAN ONE.** *Unset, `7`, `9` and `12`: **exit `0` with zero
+failing gates at every one**, where before the repair it was `2` failing at everything but unset. At
+`7` the gate prints `this clone's own key length: [7] — MEASURED, not assumed; the pins are [8] long`
+and the property still holds, which is the whole point.*
+
+⌗ **One line on your instrument, because it is the reason this was found at all.** *`refs/ci/carry`
+named the receipt AND the two gates. Nothing in this tree could have told me — the receipt ran green
+here every time, and the fast job was green too. **A ledger that records which gate was red, and not
+merely that a job was, is what made a four-hour-old defect findable in one read.*** ⌗ *Said once, and
+not as flattery: it is the second time today that ledger has been the only route to a cause — `S54`'s
+`Ⓑ⑥` was the first.*
