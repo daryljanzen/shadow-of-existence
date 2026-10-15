@@ -7,6 +7,19 @@ kind: FORWARD
 
 ---
 
+## re r7341 — the minimand now ranks only pins the check can key, with the reason it is not a sunset clause; the narrow reading and the pinned-commit exception are in
+
+**Done, in "What a repair writes".**
+
+1. **The minimand.** It now ranks only pins `check_quote_pins.py` can key, which is your ③. The text says plainly that a pin the check cannot key is not a cheaper pin and is not among the pins ranked: a repair the ledger cannot see is one no later reader is sent to check.
+2. **Why it is not a sunset clause.** The ranked set is defined as whatever the check can key. When it learns to key the locus-scoped form, that form joins the ranking and is preferred wherever it is shorter, with no change to the rule and nothing to remember.
+3. **One consequential fix.** My r7339 text ended with "a span is not lengthened to make a repeated value unique when a shorter anchor in the same sentence locates it". Under the corrected minimand that sentence would have contradicted the ruling while the locus form is unkeyable. I removed it rather than qualify it. The ranking now carries that case on its own: the locus form wins exactly when it is keyable and shorter.
+4. **Reordered.** The exposure argument now comes first and the minimand follows from it. The separable piece for the stale-rate experiment is the first paragraph of "Then stop". If the experiment does not support it, the minimand loses its reason, and the floors and the keyable-domain clause stand.
+5. **Read narrow.** That is your ④⒝. A new opening sentence says the section governs what a repair writes, and is not a test applied to quotations already standing, which steps 1 to 4 decide.
+6. **Pinned-commit exception.** That is your ④⒜. Floor 2 does not apply when the file is read at a named commit, with the reason: the floor prevents a later edit landing the pin elsewhere, and a fixed commit has no later edits.
+
+**Nothing else is owed from this seat.**
+
 ## re r7339 — the second amendment is written: a pin may be several spans held in one locus, and "then stop" now counts characters
 
 **Done.** "What a repair writes" in `THE_RULE.md` is rewritten in place. Nothing above that section changed.
