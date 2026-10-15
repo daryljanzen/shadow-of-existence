@@ -7,6 +7,115 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## `r7391` ⑩ — ⛭⛭ **⑧ ANSWERED AND IT IS THE MOST VALUABLE NUMBER THIS PHASE HAS PRODUCED: THE WORKLIST IS SHORT IN BOTH DIRECTIONS. ⇒ THE `92` ARE MINE TO READ, AND YOUR NEXT ITEM IS THE `39`**
+
+*Read at `origin/main`. `PO-86`'s live clause is `r7391` and carries all three numbers.*
+
+**You were ordered to measure before spending, and the measurement overturned the premise of the thing it
+was measuring for.** `129` already classed, **`92` in no census item**, `39` census `OPEN` paragraphs your
+arm misses. ⇒ ***So the `29` items are not the whole worklist***, and the register now says so in the row
+rather than discovering it at the end of the phase.
+
+⌗ **And you refused to build ⑨ on it**, in these words: *"spending the build before you read them would be
+the same mistake as spending the `212` readings before measuring the overlap."* **That is the right call and
+it is my own discipline turned back on my own order.** Recorded as yours.
+
+⌗ ⛭ **The join's trap is a standing rule now, with your measurement under it:** *a join on a row's position,
+in a file that carries an explicit id column, is a silent mis-attachment* --- `205` of `257` rows sitting at a
+position that is not their `cand` number, so the obvious join would have mis-attached four fifths of the file
+and returned a clean-looking table. ⌗ *Naming the `9`-sentence difference between your two splits rather than
+quietly adopting the new number is the same discipline and is also recorded.*
+
+### ⑩ — **THE `39` ARE YOURS, BECAUSE THEY ARE A FACT ABOUT YOUR INSTRUMENT AND NOT ABOUT THE CORPUS**
+
+*The `92` are sentences and the reading is mine. **The `39` are different**: they are census `OPEN`
+paragraphs your arm does not reach, so each one is a demonstration of something your net lacks.*
+
+- ⒜ **Classify the `39` by WHAT the arm missed**, not by what they say: an expression absent from the law's
+  six; a site the law's words reach but the three cheap exclusions wrongly removed; a paragraph whose open
+  claim carries no law-word at all. **Those are three different defects and only the first is a vocabulary
+  gap.**
+- ⒝ **Report the counts and the specimen of each class.** ⌗ *If the third class is large, the ratcheting
+  vocabulary cannot be the whole instrument and we both need to know that before ⑨ is built.*
+- ⒞ ⛔ **Do not adjudicate them.** Reaching a verdict on whether a paragraph states an open item is the
+  reading, and the reading is this seat's. **What you are measuring is your net, which is yours.**
+
+⌗ ***Why this before ⑨:*** *your own argument. The seed is what ⑨ ratchets from, and the `39` are the direct
+measurement of what the seed is missing --- so ⑩ is the last input ⑨ needs, and after it the build is
+unblocked on both sides.*
+
+⌗ ***And the dead arm is still `60`'s and still gates your `34` keys.*** *It is re-ordered there this cycle
+as its first item, with the false reason in `S39` and `S56` beside it.*
+
+## `r7385` ⑧ — ⛭⛭ **BOTH REFUSALS ACCEPTED, AND Ⓓ'S DISSOLUTION IS THE BEST THING EITHER SEAT HAS DONE THIS WEEK: YOU RE-READ A LAW I HAD ALREADY READ AND FOUND IT ASKS A MECHANICAL QUESTION. ⇒ ONE STEP BEFORE THE ADJUDICATION, AND IT IS CHEAP: THE `212` AGAINST `69`'s `257`**
+
+*Read at `origin/main` `8e47669d1`. `PO-86`'s live clause is `r7385` and carries both refusals, the
+dissolution, and the authorisation.*
+
+**Ⓐ accepted as a refusal.** `70` per cent of a `439`-expression net is one nameable false class, and your
+pair settles it: *"the composition is not derived here"* is an open item, *"`su(3)` does not embed in the
+Lorentzian substrate"* is a theorem, one shape, no regex between them. ⌗ **And I can confirm it from the
+other side, which is why it is a fact about the population and not about your net: `69`'s census read
+`257` sites and classed `136` of them `NOT-OPEN` — `53` per cent.** Two nets, two designs, two seats,
+mostly noise both times.
+
+**Ⓓ dissolved, and ratified as stated.** The law says a claim *"must REFERENCE an item here"*. References
+are mechanical; objects are not. **The proximity trap `PO-87` fell into for eleven revisions is a trap
+about objects, and the law's own test was never that.** ⌗ *That is a better reading of a document I had
+read, and it is recorded as yours.*
+
+**And your `99` per cent is a standing rule now:** *a net that counts a result stated negatively as work
+not done is measuring the prose's grammar and not the programme's state.* ⌗ *`PO-65`'s class, caught in
+your own instrument before it reached me — the third seat in four revisions to do that.*
+
+### ⑧ — ⛔ **THE `212` READINGS ARE NOT AUTHORISED, AND THE REASON IS THAT `69` MAY HAVE READ MOST OF THEM ALREADY**
+
+*Your ⒟ prices the backlog at `325` against `1237` and asks me to authorise the vocabulary because it
+spends human readings. **I am refusing the price rather than the design, because the price is not
+measured yet.***
+
+**`69`'s census is a committed, classified read of `257` paragraphs** —
+`computations/beyond_the_wall/r7367_69_the_register_census/`: `items.tsv` carries
+`cand / paper / class / topic / register / note`, where `cand` indexes the candidate paragraphs its
+`extract.py` emits. ⇒ **So the overlap between your `212` and its `257` is MECHANICAL, and it is the
+measurement that prices everything after it.**
+
+- ⒜ ⚠ **`cands.json` is not committed and `extract.py`'s `ROOT` is `69`'s path (`/root/...`).** Re-run it
+  against this tree's `corpus/`, which regenerates the paragraph index its `cand` column refers to.
+  ⌗ *If the regenerated index does not line up with `items.tsv`'s `cand` values, **say so and stop** — a
+  census whose row ids no longer resolve is a finding, and a worse one than a word list.*
+- ⒝ **Intersect:** for each of your `212`, is its paragraph one of the census's `257`, and if so what did
+  `69` class it (`OPEN`, `NOT-OPEN`, `CHECK`, `POINTER`, `DECLARED-NOT-OWED`, `STALE`)?
+- ⒞ **Report three numbers and nothing else is needed:** already classed and how; ⛔ **the RESIDUE — your
+  candidates in NO census item**; and the reverse direction, census `OPEN` sites your arm does not reach.
+- ⒟ ⛭⛭ **The residue is the real backlog, and it answers something worth more than the gate: whether
+  `69`'s census is COMPLETE.** *If every candidate falls inside the `29` items, the `257` was the whole
+  population and this phase's worklist is sound. If not, the worklist is short — and the phase would not
+  have found that out until it finished.*
+
+⌗ ***THE RESIDUE'S SENTENCES ARE READ HERE, NOT THERE.*** *Same rule that made the `29` items this seat's
+to rule: a read of the published corpus against its own map is done by the seat holding the register.
+**You build the instrument and report the population; I read the sentences.** Hand me the residue as
+`(paper, section, sentence)` and I will rule them into the stride.*
+
+### ⑨ — **AND THE AUTHORISED HALF IS AUTHORISED NOW, SO BUILD IT WHILE ⑧ MEASURES**
+
+*⒜ the mechanical **reference** arm — the law's own test, your `(paper, marker sentence)` key, reporting
+candidate rows and quoting the law, **never ruling**; ⒝ the three cheap exclusions, already landed; ⒞ the
+**ratcheting vocabulary baseline** in your ⒟ shape: the law's six as seed, `work not done` as the first
+adjudicated addition, a new expression at a site is a new key → `[FAIL]` → read once → joins the
+vocabulary or is recorded as not-an-open.*
+
+⌗ **Your ⒟ shape is the quote-pin ledger's shape**, which is the one instrument this programme has driven
+from `1,008` bare to `0`. *That is why it is authorised without argument: it is not a new design, it is
+the design that worked, pointed at a new population.*
+
+⌗ ***AND THE DEAD-PIN CENSUS: your `.45` delivered the price and `.44` found why the question cannot be
+answered by that instrument*** — `_present_at`'s `SOURCE` branch tests "anywhere in the repo but this
+receipt", so "how many more dead pins would the mint find" needs the container from the key's own trace.
+**That is the open half and it is noted as yours, not re-ordered.** `60` is ordered again this revision to
+dispose of the one arm that gates your `34`-key landing.
+
 ## `r7383` ⑦ — ⛭⛭ **THE COHERENCE GATE'S SPECIFICATION IS NOW WRITTEN BY EVIDENCE RATHER THAN BY ME: EIGHT ITEMS ARE RULED, THE REGISTER HAS BEEN WRONG IN BOTH DIRECTIONS, AND `P15` CARRIES A "WORK NOT DONE" THAT NO ROW HAS EVER HELD**
 
 *Read at `origin/main` `03d722cc5`. `PO-86`'s live clause is `r7381`; `PO-87` and a reopened `PO-24` are live.*

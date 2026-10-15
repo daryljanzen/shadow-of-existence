@@ -428,6 +428,12 @@ resolves) and as the **clue-map** (everywhere an open touches points at where it
 >   `P7` `\S`inherited-datum calls deriving the datum "a bonus rather than a debt", carries that in a
 >   register note beside the section, and hands the content to the matter sector --- "we claim no derivation
 >   here and record only the identification".*
+>
+> ⛭⛭ **CORRECTED r7389 (66) — FAMILY 8 IS LIVE, AT `PO-89`, AND THE LINE BELOW IS CORRECTED BY THIS SEAT RATHER THAN BY A SEAT.**
+> *`PO-23`'s strike **is** still upheld: its own condition asked for "a definition of the mode sums, or a demonstration that the obstruction is the general one", and a definition was delivered — the interacting sum continued to $-\tfrac43$ exactly on a regulator calibrated before use. ⛔ **But the family is not closed.** `P10`, read whole at `r7389`, states open the definition's **completion**, in the same words as the row's title, and no row carried it: "what remains open is one thing, and it is not a category — and it is the **completion** of a definition" (l.`1827`); "the one open thing is the ultraviolet definition of the interacting tower's mode sums — with the renormalised value at the paying dimension unclaimed and the invariant it is the coefficient of unnamed" (l.`1836`). And at l.`1485` it refuses the inference the line below rests on: "*a definition that holds at one order of an expansion and is silent at the next is a definition with an order attached ... this row exists because a predecessor was struck on an inference of just that shape — a result true where it was computed, read as true where it was wanted.*"*
+> *So the family is **LIVE at `PO-89`**, in three unlike parts: the renormalised value (**data-gated**), the invariant's identity (**blocked on the background**), and the nine-level closed forms (**workable**). `P7` l.`1937` is owed a correction in its own turn; `P10` needs no edit.*
+> ⌗ *The line below stands as what this view said. **It is a closure taken on a row's narrow discharge — the same shape as family `1`'s, and the third instance in three revisions.***
+>
 > - ***Family 8, the interacting quantum tower, at `PO-23` --- CLOSED.*** *The strike is upheld at `r7377`:
 >   it reads "the sums are defined by the construction's own regulator", and `P7`'s body says exactly that,
 >   with its frontiers head classing the quantum sector a BOUNDARY whose two handovers are not this
@@ -472,6 +478,19 @@ resolves) and as the **clue-map** (everywhere an open touches points at where it
 Format — **OWED** (established | open) · **HOME** · **WHY GENUINELY OPEN** · **CLUE-MAP** (mention clusters).
 
 **1. Matter branch-point crossing worldline-and-field dynamics.**
+
+> ⛭⛭ **BROUGHT CURRENT r7387 (66) — THIS FAMILY IS LIVE AGAIN, AT `PO-88`, AND THE DEFECT WAS INSIDE THIS ENTRY ALL ALONG.**
+>
+> *This entry says both things at once, and they are not the same object. `c54.113` reads **"THE WORLDLINE HALF, AND THE FAMILY CLOSES: there is no worldline crossing to compute"**, and `c54.115` retires the item from `P7` `sec:frontiers` on that closure. And the entry's own **`OPEN:`** line, unchanged beneath it, reads **"the *detailed* worldline-and-field dynamics for a concrete model."***
+>
+> ⇒ ***A closure taken on the WORLDLINE half does not reach an open line naming a CONCRETE MODEL'S DYNAMICS.*** *That is `PO-86`'s third outcome for the second time: the ground stands for what it answered and does not reach the item. **The `ESTABLISHED:` line is right, the `OPEN:` line is right, and the closure between them was taken on a narrower ground than the item it closed.***
+>
+> *Three artefacts carried the open and two carried the closure: `P15` §scope in print, `P5`'s check clause, and **`P7`'s own canon note in Daryl's words** — "`OPEN` = the crossing's matter `DYNAMICS` (the 'how'), `NOT` its unitarity (the 'whether', settled)" — against this closure and `P7`'s body, which said "settled on both halves" in six places.*
+>
+> **LANDED AT `r7387`:** *the row `PO-88` is opened on the item; `P7` carries it again as **enumerated item `4`** (`frontier:crossing`), classed `WORK` by that section's own distinction, with its head now reading "of the four below, two are work and two are boundaries"; `P7`'s six over-claiming sites are brought to one state and the trailing paragraph folded into the item. `P15`'s sentence and `P5`'s clause are the remaining consequence and are owed their own turns.*
+>
+> ⌗ *Kept rather than rewritten, by this table's own rule: the lines above stand as what the family said, this block as what it says now. **And the retirement is the thing to learn from — an item left `P7`'s canonical list by a reclassification rather than by being done, which is the one way this programme's rules say a list may never shrink.***
+
 
 **[r2376+c54.113 — THE WORLDLINE HALF, AND THE FAMILY CLOSES.]** ⇒⇒ ***There is no worldline crossing to compute.*** *A comoving worldline reaches the branch point at finite proper time with divergent curvature and divergent tidal stretch and **terminates** in the real section; what continues is the **analytic continuation**.* ⚠⚠ **And this family's own 'finite-curvature branch point $r=0$' is wrong as written — P2 classifies $r=0$ as the INFINITE-curvature species at which worldlines terminate.** ✔ *What it was protecting survives on better ground: at fixed $r$ the divergence carries $M$, but along the bead in the faller's own proper time it does not — $K=12[2+\sinh^{-4}(3\tau/2\alpha)]/\alpha^4\to(64/27)\tau^{-4}$, $M$-free, the same history for every progenitor. **The universality is of the APPROACH.*** ⌗ *And the two halves resolve on two clocks: zero cosmic duration, finite conformal length $3.32\alpha$ — the field half has something to act on, the worldline half nothing to transport.* **Landed in P2; receipt `P02_the_approach_is_mass_free`.**
 

@@ -40,6 +40,58 @@ EST = {
     #   residual and the damping-scale Gaussian) and the data-gated half (the fourth peak, where PO-47
     #   measured that the sky cannot discriminate).  GATED on a discriminating datum, which is why the
     #   generated view must show it as gated rather than as ordinary work.
+    'PO-89': ('the completion of the interacting towers definition, in three unlike parts',
+        3, 0, 3, 'a datum off this background that separates the three dimension-six directions',
+        'r7389: OPENED on PO-86s ruling of its item 7, and it corrects the second half of this seats own r7377 '
+        'ruling. What stands: PO-23s strike is UPHELD -- its object was the ultraviolet definition of the mode sums '
+        'and its own condition read a definition of the mode sums, or a demonstration that the obstruction is the '
+        'general one, and a definition WAS delivered, the interacting sum continued to -4/3 exactly on a regulator '
+        'calibrated before use. What does not stand: that ruling concluded what remains is P10s wording, now the odd '
+        'statement out. P10s wording is right. Read whole this revision, P10 says what remains open is the COMPLETION '
+        'of a definition, and at l.1485 it refuses the very inference the ruling made -- a definition that holds at one '
+        'order of an expansion and is silent at the next is a definition with an order attached, this row existing '
+        'because a predecessor was struck on an inference of just that shape, a result true where it was computed read '
+        'as true where it was wanted. So the two objects share a title and are not the same: PO-23 asked for a '
+        'definition and got one, while P10 states open the definitions completion. That is r7013 (1), so a row and '
+        'nothing unstruck. Open in three unlike parts: the renormalised value at dimension six, DATA-GATED since a '
+        'renormalised value is a measurement and the construction takes the horizons temperature and never its '
+        'entropy; which invariant the computed coefficient -15405/8192 belongs to, BLOCKED ON THE BACKGROUND since each '
+        'of the three surviving dimension-six directions alone reproduces the residue after a single rescaling and a '
+        'rank of one makes representatives indistinguishable rather than forced, with the count a lower bound so '
+        'completing the basis can only deepen it; and the nine-level closed forms, WORKABLE, established on nine levels '
+        'with three held out against a discriminating control and not proved from the recoupling algebra, two routes '
+        'tried and neither closing, while the parity they carry IS proved by the channel lists own mirror symmetry. '
+        'THIRD IN THREE REVISIONS after PO-87 and PO-88: every one a correct strike with the papers item lying beyond '
+        'it, and three is where it stops being a coincidence -- the registers rows answered narrower questions than '
+        'the papers state, as a habit rather than an accident, and this phases real product is the rows nobody opened. '
+        'The face is charged on this seat: 91s fifth face in prose, ruling item 7 from P7s report of P10 rather than '
+        'from P10, P7 citing P10 for the definition and the citation being read as the paper. Owed and named: P7 l.1937 '
+        'reads of the three items named above, all three are settled, the ultraviolet definition of the mode sums with '
+        'them -- the inference P10 refuses -- and that sentence is owed a correction in P7s own turn. P10 needs no '
+        'edit: read whole here and right. '),
+    'PO-88': ('the field evolution of a concrete matter model through the branch point',
+        2, 0, 3, None,
+        'r7387: OPENED on PO-86s ruling of its item 8, and it is a frontier item P7 once carried and retired on a '
+        'narrower ground. P15 states in print that what remains open is the detailed worldline and field dynamics of '
+        'the crossing for a concrete matter model; P5 asks whether such a models history reaches the branch point; P1 '
+        'points at both; and P7s own canon note carries Daryls words, OPEN is the crossings matter DYNAMICS, the '
+        'how, not its unitarity, the whether, which is settled. Against that, P7s body said in six places that the '
+        'crossing is settled on both halves, and THE_OPEN_PROBLEMS_LEDGERs family 1 -- titled with this rows object '
+        'verbatim -- closed at c54.113 on THE WORLDLINE HALF, there is no worldline crossing to compute, and retired '
+        'the P7 item at c54.115 on that closure, while the familys own OPEN line still reads the detailed worldline- '
+        'and-field dynamics for a concrete model. A closure taken on the worldline half and an open line naming a '
+        'concrete models dynamics are not the same object, which is PO-86s third outcome for the second time. The row '
+        'is NEW and not a reopen: PO-30, which the census column names, was struck at r6758 on the geometry supplies no '
+        'choices, the matter contents generative law, a different object. Settled and not re-run: the crossing is well '
+        'posed, isotropizing, scale-free, obeys a structural transition law; the field half is lossless for every '
+        'species because nothing arrives oscillating; the worldline half has nothing to compute; and a concrete models '
+        'APPROACH is computed with a nuclear network on it. What discharges it: a concrete models stress-energy '
+        'carried THROUGH the branch point as a dynamical problem rather than a transmitted datum. It terminates as a '
+        'BOUNDARY if the two structural results are shown to leave the through-crossing evolution no freedom at all, '
+        'which is the exit c54.113 reached for and did not demonstrate. Landed with the row: P7 carries it again as '
+        'enumerated item 4, frontier:crossing, classed WORK, the head now reading of the four below two are work and '
+        'two are boundaries, the six over-claiming sites brought to one state, and the trailing paragraph folded into '
+        'the item. P15s sentence and P5s clause are owed their own turns. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 0, 3, 'a datum that discriminates the models at the fourth peak',
         'r7379: OPENED on PO-86\'s ruling of its item 1.  Five rows stood near this question and every one was a '
@@ -275,7 +327,51 @@ EST = {
         'backlog is the RESIDUE -- candidate sites in no census item -- which is one mechanical intersection, and it '
         'answers whether 69s census is complete. The reading of the residue is this seats and is not farmed out. '
         'Running tally unchanged at 8 of 29: this revision bought the gates design and the populations price, not an '
-        'item. '),
+        'item. '
+        'r7387: ITEM 8 IS CLOSED and it cost a whole turn on P7 and bought the corpus a frontier item back. PO-88 is '
+        'opened and P7 sec:frontiers goes from three enumerated items to FOUR. The ruling turned twice: first a stated '
+        'limit, on the ground that nothing rests on the through-crossing evolution and that P16 computes a concrete '
+        'models approach; then the mandatory whole-paper read found P7s own canon note in Daryls words, OPEN is the '
+        'crossings matter DYNAMICS, the how, not its unitarity, the whether, which is settled -- P7s body '
+        'contradicting P7s Daryl-directed header -- and the limit reading was withdrawn before it was committed. Then '
+        'the ledger showed why the item had no home: its family 1 is titled with the item verbatim, closed at c54.113 '
+        'on the WORLDLINE half and retired the P7 item at c54.115 on that closure, while the familys own OPEN line in '
+        'the same entry still reads the detailed worldline-and-field dynamics for a concrete model. A closure on the '
+        'worldline half does not reach an open line naming a concrete models dynamics: the third outcome for the '
+        'second time. Consequences all landed: PO-88 opened as r7013 (1), since PO-30 was struck on a different object; '
+        'P7 rewritten to one state with six over-claiming sites corrected and the trailing paragraph folded into '
+        'enumerated item 4, classed WORK, the head reading of the four below two are work and two are boundaries, '
+        'recompiled clean at 87 pages; and the ledgers family 1 brought current and live again. The phase has now '
+        'found the register wrong in both directions and P7s canonical list wrong in the only direction that matters, '
+        'an item having left it by reclassification. Owed and named: P15s sentence and P5s clause, one paper per '
+        'turn. RUNNING TALLY: 9 of 29 ruled, 2 new rows, 1 reopen, 2 stale maps brought current, 1 frontier item '
+        'restored. '
+        'r7389: ITEM 7 CLOSED, PO-89 OPENED, and this revision corrects the second half of this seats own r7377 ruling '
+        '-- caught by reading P10 whole, the first time the one-paper-per-turn method has caught a RULING rather than a '
+        'sentence. Stands: PO-23s strike is upheld, its own condition having asked for a definition of the mode sums '
+        'and a definition having been delivered. Does not stand: the r7377 conclusion that P10s wording was the odd '
+        'statement out. P10 says what remains open is the COMPLETION of a definition and at l.1485 refuses the '
+        'inference the ruling made. So the two objects share a title and are not the same, which is r7013 (1) and a '
+        'row. THIRD IN THREE REVISIONS after PO-87 and PO-88, every one a correct strike with the papers item beyond '
+        'it: the registers rows answered narrower questions than the papers state, as a habit, and this phases real '
+        'product is the rows nobody opened. 91s fifth face charged on this seat in prose. Owed and named: P7 l.1937. '
+        'RUNNING TALLY: 10 of 29 ruled, 3 new rows, 1 reopen, 2 stale maps brought current, 1 frontier item restored, 1 '
+        'of this seats own rulings corrected. '
+        'r7391: THE WORKLIST IS SHORT AND NOW IT IS MEASURED. cc66s intersection, ordered at r7385 to price the '
+        'backlog before spending it, returns three numbers over its 221 candidates: 129 already classed by 69 (OPEN 65, '
+        'NOT-OPEN 44, CHECK 13, STALE 3, POINTER 2, DECLARED-NOT-OWED 2), 92 in NO census item, and 39 census OPEN '
+        'paragraphs its own arm does not reach. So the 29 items are not the whole worklist: 69s census is the best '
+        'instrument pointed at the question and it is incomplete, and cc66s arm is incomplete the other way. Neither '
+        'net is the population, measured now three ways. The 92 are not 92 open items: they are 92 sentences for a '
+        'reading, listed as (paper, section, sentence) in residue.txt, and the reading is this seats by the same rule '
+        'that made the 29 this seats to rule. cc66 declined to build the authorised arm on a population just shown '
+        'short in both directions, which is the right call and this rows own discipline turned back on its order. And '
+        'a standing rule arrives with a measurement: A JOIN ON A ROWS POSITION, IN A FILE THAT CARRIES AN EXPLICIT ID '
+        'COLUMN, IS A SILENT MIS-ATTACHMENT -- items.tsvs rows are not in cand order, 205 of 257 sitting at a position '
+        'that is not their cand number, so a positional join would have mis-attached four fifths of the file and '
+        'returned a clean-looking table. The line-up check passed: 257 re-extracted, 257 of 257 agreeing on paper, '
+        'derived rather than assumed. RUNNING TALLY: 10 of 29 ruled, and the denominator is now known to be wrong, '
+        'which is worth more than the numerator. '),
     'PO-10': ('the likelihood comparison, and which run it rests on', 1, 0, 3, None,
         'r6780: REOPENED. P15 sec:refit-bound reports both arms fitted over 215 bins with the same '
         'five parameters free in each, returning chi^2 = 397.13 against 206.44, 1.891 and 0.983 per '
@@ -9794,8 +9890,8 @@ KIND = {'PO-85': 'BUILD', 'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-86', 'PO-87', 'PO-24', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-87': 'D',
+ORDER = ['PO-86', 'PO-89', 'PO-88', 'PO-87', 'PO-24', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-89': 'C', 'PO-88': 'D', 'PO-87': 'D',
          'PO-86': 'F',  # ⛭ r7371: the coherence phase -- the register against the papers.
          # ⛭ r7371: PO-78 moved out of C, the quantum sector, which it never was -- it is the
          #   quote-pin instrument.  F is the programme's own record, and PO-86 is there too.
