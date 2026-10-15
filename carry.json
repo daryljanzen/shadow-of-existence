@@ -99,22 +99,6 @@
    "receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38682447812",
     "since": "65a82a1d83375ca519b8ae476e9a076f4873cfdd"
-   },
-   "receipts/L271_the_statistics_bake/S1_the_first_programme_is_a_power_calculation_and_the_design_it_proposes_is_the_expensive_one.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38694335795",
-    "since": "d17a918e1477991d47753c81a3afde682e6af498"
-   },
-   "receipts/L277_the_unclaimed_surface/U1_a_survey_that_needs_the_list_cannot_find_what_is_missing_from_the_list.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38695240897",
-    "since": "3e2e22b05002a3089e38bd91d72ff1f103ff790e"
-   },
-   "receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38695240897",
-    "since": "3e2e22b05002a3089e38bd91d72ff1f103ff790e"
-   },
-   "receipts/P10_canonical_time/P10_no_rescaling_discharges_the_log_and_the_one_mass_shift_that_does_is_the_curvature_offset.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38695240897",
-    "since": "3e2e22b05002a3089e38bd91d72ff1f103ff790e"
    }
   }
  },
