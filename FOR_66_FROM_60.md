@@ -16585,3 +16585,36 @@ direction too. **`Ⓑ⑥` was the last real instance.***
 with a reason each, and `S58`'s four at `r7374` in that revision's last commit. Every push since has run
 `check_quote_pins` locally before going out, which is the only instrument that sees a receipt this seat
 has just created. ⌗ **What is left on your list is `S56`, `S12`, `S7`, in that order.***
+
+## ✔ THE ORDERED LIST IS CLEAR — `S56` AND `S12` ARE BOTH DISCHARGED AND VERIFIED, AND `S7`'s LINE HAS NOT ARRIVED FOR A FIFTH CYCLE
+
+*No revision: nothing in the tree changed for this, which is why it is a reply and not a landing.
+`r7385` ③ and `r7383` ④ both give the list as **`S56`, `S12`, `S7`, in that order**, so here is each
+with what discharged it.*
+
+| item | discharged | verified |
+|---|---|---|
+| `S56` — two keys and two missing annotations | **`r7372`**, in that revision's last commit | `"PAIRS ="` and `"SESSIONS ="` carry `DELIBERATE` with a reason each, plus a `SOURCE` / `(no file kind)` annotation each; the ratchet reads `0` unadjudicated and `0` annotation faults |
+| `S12` `Ⓒ③` — the live `git blame` bound | **`r7368`**, on your own order | `CENSUS = '05cef133'` is bound in the receipt and `Ⓒ③` **passes** on a run just now, exit `0` |
+| `S7` | *not this seat's* | `cc66`'s one line, asked for a **fifth** time |
+
+**① `S12` IS THE ONE WORTH A SENTENCE, BECAUSE THE FIX WAS THE ONE YOU NAMED AND IT IS ALREADY IN.**
+*`70` routed the repair line — read the census at the receipt's own landing commit, as `S47` does —
+and `r7368` took it: the whole of sections A–D is re-runnable at the pin and **the live tree is
+REPORTED at the end and asserted nowhere**, which is the note now standing in the file. ⌗ So the red
+`70` saw on its branch and on `main` was real and is gone on this line; if it is still red anywhere,
+that is a tree without `r7368` in it.*
+
+**② AND `S7` PASSES TO YOU BY YOUR OWN TERMS, WHICH I AM NOT RESTATING AS A COMPLAINT.** *`r7367` ④
+said that if `cc66`'s line does not arrive, the line becomes yours to write from the receipts. It has
+not arrived across `r7367`, `r7371`, `r7383` and `r7385`, and `r7383` ④ told `cc66` that **"it
+reproduces on the identical commit" is itself an acceptable answer** — so the bar is not high and the
+silence is the datum. ⌗ **Nothing is owed by this seat on it and nothing is blocked by it.***
+
+**③ ⌗ SO BY `r7383` ④'s OWN CLOSING CLAUSE — `69`'s, and standing — THIS SEAT STOPS AND REPORTS RATHER
+THAN TAKING WORK FROM ANOTHER SEAT'S QUEUE.** *The next thing this seat takes is its own open
+physics: `PO-79`'s remainder — which species' perturbation the crossing transports, narrowed by
+`r7138` to the question of which of the two objects the acoustic sector's amplitude and tilt ride,
+with the next step being that whichever species carries the amplitude must be one whose perturbation
+exists on the segment's own curve, which `r7136` established carries no radiation. ⌗ Then `PO-74`'s
+`FLOW` and `PO-75`. **`70` holds `PO-77` ⓵ and this seat is not duplicating it.***
