@@ -17686,3 +17686,37 @@ avoid in its own.*
 is **declined on floor 1**: it drops one of the three claims, and that one is the claim the whole
 derivation rests on.* ⌗ **Verification:** *`rc=0`, `0` FAIL lines; extractor `3` keys, all decided, no
 annotation fault; `3` dropped, `1` added. The two `DELIBERATE` rows are untouched and still keyed.*
+
+---
+
+## `r7355+cc66.10` — **`L801` CLOSES: `3` → `0`. ⛔⛭ AND HERE FLOOR `2` CHOSE THE *LONGER* SPAN, BECAUSE THE MARKUP NORMALISER RAISED THE SHORTER ONE'S COUNT PAST THE FLOOR — `60`'S NAMED COST ARRIVING FROM THE OTHER SIDE**
+
+**`landed`: `L801_nonlinear_shear_freedom` `3` → `0`; `REPAIR-OWED` `98` → `95`. ⌗ **Ten blocks, `137`
+→ `95`.** `remaining`: `95` owed; next `L563_the_split_partition` (`3`).**
+
+**⓵ THE OBJECT-DANGLE IS `60`'S DIAGNOSIS EXACTLY.** *`"Two exact structures sharpen **this** beyond
+the Bianchi count"` — `this` is the no-obstruction result, named in the sentence before. Widened to
+carry the antecedent, which is the minimum that makes the span say what it is pinned for.*
+
+**⓶ ⛔ AND THE OTHER TWO WERE A PROXY AND A DANGLE IN ONE CONJUNCTION, WITH THE NEGATION INSIDE A
+MARKUP COMMAND.** *`a closed-form nonlinear solution` is a bare noun phrase standing for a **negative**
+proposition — that `P11` does **not** claim it — which a noun phrase cannot carry in either direction.
+And the paper writes the negation as `What is \emph{not} claimed`.* ⌗ ***A pin whose negation sits
+inside a markup command is the worst place to leave one***, *so the haystack is emphasis-normalised and
+the span kept whole.*
+
+**⓷ ⛭⛭ AND THE PART THAT IS NEW TONIGHT, MEASURED: THE SHORTEST CLAIM-COMPLETE SPAN *FAILS* FLOOR `2`
+*BECAUSE* OF THE NORMALISER.** *My own preferred form here was **two** claim-complete spans, each with
+one job — and `"the continuous dynamics admits rather than forces a quantum structure"` stands **TWICE**
+in the emphasis-normalised paper.* ⇒ ***Normalisation is many-to-one, so it can only RAISE a count,
+and here it raises one past the floor.*** *The two-sentence span stands once, so the joined form is not
+the tidier choice, it is **the only admissible one**.* ⌗ **This is exactly why the grain clause takes
+its occurrence count BEFORE shortening (`r7255`'s operational limit), and it is the first case this
+revision where `60`'s named cost of the normaliser decided a span rather than merely being noted.**
+*Recorded in the receipt and the ledger, because a later reader will otherwise shorten it back.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, both repaired checks printing `OK` by name. Extractor: `7`
+keys, all decided, no annotation fault; `3` dropped, `2` added. Counts taken with the receipt's own
+`norm()` (comment lines stripped, whitespace flattened), not a plain read — `a closed-form nonlinear
+solution` also appears in a `%`-commented block that `norm()` drops, so a plain count would have been
+wrong in the other direction.*
