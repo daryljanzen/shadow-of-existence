@@ -16782,3 +16782,46 @@ free and the bill falls on the stride you ratified**, and you should have that b
 reading — the section governs what a repair writes, not quotations already standing. That is `r7337` ⑤'s
 recommendation.* ⇒ **My `305` of `977` stands as a count and was never a defect list, and because I
 re-verdicted none of those rows there is nothing to reverse: the `28` previously-HELD rows stay held.**
+
+### `r7345` ⛔⛔ CORRECTION BEFORE ANYTHING ELSE — MY `117 of 117` MEASURED A FIELD THAT DOES NOT EXIST, AND YOUR `r7345` ① ACCEPTED IT. THE TRUE FIGURE IS `28` OF `121`, AND THE NARROW TRACE CARRIES KINDS FOR THE OTHER `93`
+
+**LANDED** the correction, on its own and before any `r7345` work —
+`r7343_cc66_the_container_read/CORRECTION.md`, with `READING.md` ① marked as superseded at the point the
+claim is made. **REMAINING** your four rulings, now with ⒞'s design affected by this and ⒝'s object
+established by it.
+
+**① THE ERROR.** *`quote()` builds each row with `_trace=trace`, and `_multi_flags` — which runs inside
+`quote()` before it returns — does `tr = r.pop('_trace', None)` at `scripts/mutate_assertions.py:884`.*
+⇒ ***`_trace` is popped off every row, so no row has it; my `kinds.py` read `r.get('_trace') or ''` and got
+`''` for all `3089` rows.*** **So `117 of 117` was not a property of the traces. It was my driver reading an
+absent key through a default that cannot fail.** ⌗ *Checked, not inferred: `'_trace' in r` is `False` for
+`3089` of `3089`.*
+
+**② THE TRUE FIGURE**, re-measured with the `pop` made a `get` in a **scratch copy** (`scripts/` untouched),
+on the merged tree: **the hop mints `121` keys, `0` lost; the narrow trace NAMES a kind for `93` and is
+empty for `28` (`23 %`).** *`121` against `r7341`'s `117` because `main`'s `12` commits are merged in.*
+
+**③ ⛔ WHAT IT CHANGES, AT FULL STRENGTH.** *A container gate **is** implementable on the **narrow** trace —
+the object that decides key-hood — for `93` of `121`. Only `28` would need the wide trace.* ⇒ ***So it is
+not, in general, the structural change I described to you; for three quarters of the population it is the
+additive one, and your ① accepted an obstruction that is `23 %` of what I said it was.***
+
+**④ ⛭ AND WHAT IT DOES NOT CHANGE, WHICH I WANT SAID AS PLAINLY.** *Everything measured from `_kinds`
+stands — `_kinds` is a real field `_multi_flags` does not touch: the three non-pin classes (`14`/`19`/`2`),
+the prose split, the per-site-versus-per-key null, the split-form contrast (`R=67`, `71.6 %`, `34` genuine
+forgone), and the `70.1 %` full read.* ⇒ **The finding you ratified — the hop's shape carries nothing and
+the container almost all — rests on those and is untouched. It is the obstruction that was false, not the
+result.**
+
+**⑤ ⌗ AND DO NOT READ `93 of 121` AS "GATE ON NARROW `py`" — I CHECKED THAT TOO.** *Narrow kinds containing
+`py` is `13` keys against my hand-judged `14`, agreeing on `10`. It over-catches `3` I judge genuine —
+`'information theory'`, `'r1869'`, and `'onset parameter'`, whose narrow kinds are `py,tex` because its
+container reaches both — and under-catches `4`: `S10`'s three, which reach another receipt's source through
+a dict, and `C60`'s.* ⇒ **Ruling ⒝ needs the conjunction you ruled — a container that reads another
+receipt's source LINE BY LINE — and I will report the implemented rule's agreement against the hand-judged
+`14` rather than assert it.**
+
+**⑥ THE CLASS.** *A count that was not a roster, a cache that was not a measurement, a timeout that made the
+decisive gate a question not asked — and now a field that was not there, read through a default that cannot
+fail.* ⛔ **Found only because your ⒝ sent me back to the same traces to implement a filter: I went looking
+for the text and there was none. Had the ruling not required the trace, the number would have stood.**
