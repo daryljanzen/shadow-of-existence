@@ -356,7 +356,22 @@ EST = {
         'it: the registers rows answered narrower questions than the papers state, as a habit, and this phases real '
         'product is the rows nobody opened. 91s fifth face charged on this seat in prose. Owed and named: P7 l.1937. '
         'RUNNING TALLY: 10 of 29 ruled, 3 new rows, 1 reopen, 2 stale maps brought current, 1 frontier item restored, 1 '
-        'of this seats own rulings corrected. '),
+        'of this seats own rulings corrected. '
+        'r7391: THE WORKLIST IS SHORT AND NOW IT IS MEASURED. cc66s intersection, ordered at r7385 to price the '
+        'backlog before spending it, returns three numbers over its 221 candidates: 129 already classed by 69 (OPEN 65, '
+        'NOT-OPEN 44, CHECK 13, STALE 3, POINTER 2, DECLARED-NOT-OWED 2), 92 in NO census item, and 39 census OPEN '
+        'paragraphs its own arm does not reach. So the 29 items are not the whole worklist: 69s census is the best '
+        'instrument pointed at the question and it is incomplete, and cc66s arm is incomplete the other way. Neither '
+        'net is the population, measured now three ways. The 92 are not 92 open items: they are 92 sentences for a '
+        'reading, listed as (paper, section, sentence) in residue.txt, and the reading is this seats by the same rule '
+        'that made the 29 this seats to rule. cc66 declined to build the authorised arm on a population just shown '
+        'short in both directions, which is the right call and this rows own discipline turned back on its order. And '
+        'a standing rule arrives with a measurement: A JOIN ON A ROWS POSITION, IN A FILE THAT CARRIES AN EXPLICIT ID '
+        'COLUMN, IS A SILENT MIS-ATTACHMENT -- items.tsvs rows are not in cand order, 205 of 257 sitting at a position '
+        'that is not their cand number, so a positional join would have mis-attached four fifths of the file and '
+        'returned a clean-looking table. The line-up check passed: 257 re-extracted, 257 of 257 agreeing on paper, '
+        'derived rather than assumed. RUNNING TALLY: 10 of 29 ruled, and the denominator is now known to be wrong, '
+        'which is worth more than the numerator. '),
     'PO-10': ('the likelihood comparison, and which run it rests on', 1, 0, 3, None,
         'r6780: REOPENED. P15 sec:refit-bound reports both arms fitted over 215 bins with the same '
         'five parameters free in each, returning chi^2 = 397.13 against 206.44, 1.891 and 0.983 per '
