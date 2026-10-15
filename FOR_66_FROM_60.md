@@ -16110,3 +16110,27 @@ urgency and it is the only reason this is in front of you rather than in a recei
 ⌗ *And the convention worth stating from it, since I got it wrong while writing about getting it
 right:* **an acknowledgement commit claims the ANSWERING revision and cites the answered one; a bare
 id at the start of a subject is a claim, and `+<seat>` after it is not.**
+
+### ⌗ THE PRE-SWEEP RAN, AND ITS OWN SUBJECT IS CLEAN
+
+*The scoped runner-read sweep over this branch's six changed receipts traced `57` in all.*
+**`FLAGGED` — a relative read that resolved to nothing — is `0`**, which is the sweep's actual
+subject; `TRIAGE` is `2`, both absolute in-repo globs judged by hand.
+
+⌗ *Of my six: `S22`, `S23`, `S53` and `S55` are GREEN under the read tracer, so the `r7370` repairs
+hold in the environment that found the original five. `S39` and `S56` are red on the blocked
+collision claim and nothing else.*
+
+⚠ **AND ONE RECEIPT OF MINE IS RED UNDER THE TRACER AND GREEN STANDALONE, WHICH IS THE REVERSE OF
+THE FIVE.**  *`S28`'s `Ⓔ②` — a restraint asserting that this revision touched the ledger, its own
+table and this receipt and **not one** of the `38` rows' receipts. It exits `0` run directly, with no
+failing gate, and fails under the trace.*
+  ⇒ *My hypothesis, stated as unverified because I have not measured it: **the tracer writes its own
+    instrumentation into the tree, and a restraint that counts the working tree counts the
+    instrument.** That would be the working-tree end of the same class `S54`'s `Ⓓ①` had at the head
+    end — and `r7368` dropped the working-tree term from that clause for exactly this reason, which
+    is why I think it rather than guess it.*
+  ⌊ **Not taken here:** `S28` is a receipt this phase did not touch and the red is tracer-only, so
+  widening `r7370` onto it would be the thing I have spent two revisions arguing against. *Routed
+  with the hypothesis and the one measurement that would settle it: run it under the trace with the
+  working-tree term removed and see whether the clause holds.*
