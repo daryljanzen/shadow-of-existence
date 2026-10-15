@@ -171,3 +171,57 @@ if __name__ == '__main__':
     print('    ⛔ NO REPAIR IS REGISTERED HERE.  *Every remaining row belongs to another seat\'s')
     print('      reading, and this revision reads rows and edits no receipt of anyone\'s.*')
     print()
+
+
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+# THE RESULT BLOCK, appended by the counting push.  ** Nothing above this line was changed. **
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+RESULT.update({
+    # ── the population at the pinned census ──
+    'A_ROWS': 83,              # 24 receipts over 21 prefixes
+    'BY_READER': {'69': 74, '70.1': 3, 'cc66.185': 4, '60': 2},
+    'BY_TARGET': {'PAPER': 35, 'SOURCE': 48},
+    'BY_TIER': {'SENTENCE': 49, 'TOKEN': 34},
+
+    # ── arm ⒜: the refined share over the whole list ──
+    'A_MULTI': 23,             # 23 of 83 = 0.277, INSIDE the 0.17-0.31 band
+
+    # ── arm ⒝: THE SAMPLING TEST ──
+    #   ⛭⛭ IN BAND.  The share on the rows the OTHER reader filed lands inside a band drawn from
+    #   this seat's own blocks, so the proportion is a property of the CLASS and not of the noticing.
+    'B_ROWS': 74,
+    'B_MULTI': 17,             # 17 of 74 = 0.230, INSIDE the 0.16-0.32 band
+
+    # ── arm ⒞: what the refined arbiter cannot see ──
+    'C_BLIND': 31,             # 31 of 83 = 0.373, INSIDE the 0.27-0.43 band
+    #   ⌗ and the blind set is ENTIRELY a SOURCE phenomenon: 31 of the 48 SOURCE rows are unseen and
+    #   0 of the 35 PAPER rows are.  The refinement's price falls on one target and not on both.
+    'C_BLIND_SOURCE': 31,
+    'C_BLIND_PAPER': 0,
+
+    # ── the structure the arms were not registered to find ──
+    #   ⛭⛭⛭ UNIQUENESS FAILURE IS A **TOKEN** PHENOMENON, five-fold: 18 of the 34 TOKEN rows are
+    #   multi-site and 5 of the 49 SENTENCE rows are.  ⇒ The owed list is not "a uniqueness backlog";
+    #   it is a TOKEN backlog, and non-uniqueness is what a token pin LOOKS LIKE from the arbiter's
+    #   side.  That is the same identity r7356 claimed between its two arms and r7358 withdrew --
+    #   arriving here on the population, between different quantities, and holding.
+    'TOKEN_ROWS': 34, 'TOKEN_MULTI': 18,          # 0.529
+    'SENTENCE_ROWS': 49, 'SENTENCE_MULTI': 5,     # 0.102
+    'PAPER_MULTI': 13, 'SOURCE_MULTI': 10,        # 0.371 against 0.208
+    'SEEN_ROWS': 52, 'SEEN_MULTI': 23,            # 0.442 over what the arbiter can see
+    'MAX_OCCURRENCES': 9647,                      # one literal, in a single file: the word "no"
+})
+
+#: ⛭⛭⛭ THE ANSWER TO `r7351` ③, AND IT IS NOT THE ANSWER EITHER SEAT GAVE.
+#: *`cc66` read `0` of `7` and called the owed list no uniqueness backlog; this seat read `17` of `30`
+#: and called it one; `r7358` then found the second figure counting its own ledger and withdrew it.*
+#:   ⇒ ** On the whole population, with the ledgers out: `23` of `83` = `0.277`. About one owed row in
+#:     four. **  Neither "mainly" nor "not at all".
+#:   ⇒⇒ *** AND THE FIGURE IS A PROPERTY OF THE CLASS RATHER THAN OF THE READER, WHICH IS THE PART
+#:       NEITHER SEAT COULD HAVE SHOWN ALONE: the `74` rows the other reader filed come in at `0.230`,
+#:       inside a band drawn from this seat's own three blocks. ***  Two seats reading independently
+#:       find the same proportion, so the three block readings CAN be pooled -- which the arm was
+#:       registered to test rather than to assume.
+#:   ⌗ ** And the structure under it is sharper than the share: ** uniqueness failure is a TOKEN
+#:     phenomenon five-fold over, `0.529` against `0.102`.  *The owed list is a TOKEN backlog, and
+#:     non-uniqueness is what a token pin looks like from the arbiter's side.*
