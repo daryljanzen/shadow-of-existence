@@ -10,8 +10,11 @@ the shear, $4\\sigma^2+O(\\sigma^4)$.  *** Nobody had run what that means for th
 (repaired r7346, on `r7341` ①). **  The polynomial below is `L549/Q1`'s, computed there symbolically
 from a NAMED metric, and the family is READ OUT OF `Q1`'s OWN FILE here rather than retyped:
 
-      *** g = diag(-1, e^{2t}, e^{2(t + sigma t)}, e^{2(t - sigma t)})   -- Q1's axisymmetric
-          Bianchi I family, shear eigenvalues (0, sigma, -sigma) over an isotropic expansion
+      *** g = diag(-1, e^{2t}, e^{2(t + sigma t)}, e^{2(t - sigma t)})   -- Q1's PLANAR
+          Bianchi I family, rates (1, 1+sigma, 1-sigma), shear eigenvalues (0, sigma, -sigma)
+          ** NOT axisymmetric: all three rates differ.  The AXISYMMETRIC family is the one this
+          receipt used to name, (-2 sigma, sigma, sigma), rates (H-2 sigma, H+sigma, H+sigma) --
+          and that is the whole distinction the repair turns on (corrected r7350 on `r7349` ③). **
 
           sigma_ab sigma^ab = 2 sigma^2
           C^2 = sigma^2 (4 + 16 sigma^2 / 3) = 4 sigma^2 + O(sigma^4)

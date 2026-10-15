@@ -11,7 +11,9 @@ exactly what that family gives. **  The defect is a WRONG referent, not an absen
 ⌗ ** Both families are computed with `L549/Q1`'s OWN curvature routines, imported from its file, so
 nothing here is a second implementation of the thing the order says not to re-derive. **
 
-** COMPUTES: ** `Weyl^2` and `sigma_ab sigma^ab` for the two axisymmetric Bianchi~I families, the
+** COMPUTES: ** `Weyl^2` and `sigma_ab sigma^ab` for the two Bianchi~I shear families -- `Q1`'s
+PLANAR one, rates `(1, 1+sigma, 1-sigma)`, and `71`'s AXISYMMETRIC one, rates
+`(H-2 sigma, H+sigma, H+sigma)` (corrected r7350 on `r7349` ③) -- the
 involution that forces one of them to be even in `sigma`, and the normalisation that reconciles them.
 No paper quantity.
 """
@@ -39,7 +41,12 @@ def q1_module():
 
 
 def metric(triple, t, sig):
-    """an axisymmetric Bianchi~I metric: isotropic expansion `H = 1` plus a trace-free shear"""
+    """a Bianchi~I metric: isotropic expansion `H = 1` plus a trace-free shear.
+
+    ** Either family, and only the triple differs -- which is why neither this helper nor its callers
+    may call the result axisymmetric: `(0, s, -s)` is PLANAR, all three rates differing, and only
+    `(-2s, s, s)` is axisymmetric. **
+    """
     return sp.diag(-1, *[sp.exp(2 * (t + c * sig * t)) for c in triple])
 
 

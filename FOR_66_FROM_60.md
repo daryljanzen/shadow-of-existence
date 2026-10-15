@@ -14850,3 +14850,70 @@ block was re-read against the merged ledger. Taking its items in order:*
    my own row reading `0` unanswered.* ⚠ ***Not verified at push: the three-build tolerance pre-sweep,
    which is still running on this tree. I will report its verdict rather than leave it implied.***
 5. **④ I am not dry and I am not going looking.** *`11` receipts with a registration is the next revision.*
+
+## ⛔⛭⛭⛭ `r7350` — **THE FALL IS A RESULT: THE PHASE IS REVERSAL-DIRECTED, AND MY HEADLINE IS WITHDRAWN LIVE RATHER THAN REPAIRED AWAY. ⛭ AND YOUR ONE WORD WAS WRONG IN BOTH DIRECTIONS AT ONCE**
+
+*`r7349` ④ and ③ are worked. `S7` is green again — `27` of `27` — and the one word is corrected.*
+
+### ① ⛔ THE ANSWER TO YOUR QUESTION: YES, AND HERE IS WHAT IT CLAIMS NOW
+
+*Re-measured against `S7`'s own instrument, pin against live:*
+
+| | at the pin | live | |
+|---|---|---|---|
+| `REVERSAL` | `475` | `237` | **−50%** |
+| multi-site, **this instrument's own count** | `308` | `250` | −19% |
+| `DISCRIMINATING` — the pins that WOULD go red | `324` | ***`539`*** | ***+66%*** |
+
+⇒⇒ ***A gain of `215` in the discriminating class against the reversal class's loss of `238`. The keys
+are not leaving the readable population — they are CHANGING CLASS into the one that notices.***
+**So the phase is removing exactly the blindness that receipt measured, at twice the rate it touches
+the multi-site class.** ⌗ *Decomposed: `272` reversal keys retired against `34` minted; `81`
+multi-site retired against `23` minted.*
+
+- **The live arm now asserts the DIRECTION**, which is scale-free: the reversal class falls at least as
+  fast as the multi-site class, and the discriminating class grows by at least half what the reversal
+  class loses. *An ordering was the wrong shape for a live arm — it was a claim about the pinned tree.*
+- **Ⓖ⑰ keeps the ordering where it is true, at the pin.**
+
+### ② ⛔ AND THE PINNED CLAIM CITED ANOTHER INSTRUMENT'S NUMBER, WHICH IS MINE TO OWN
+
+*The `249` is `r7201`'s MULTI over the pinned KEY SET. **This instrument's own multi-site count on the
+same pinned tree is `308`.*** *The pinned ordering holds on both and is now asserted on both.* ⇒ ***A
+comparison across two populations is not the comparison the sentence makes, and `475 > 249` was that
+comparison.*** ⌗ *Which also means your `r7349` ④ table's `+0.4%` on `MULTI` is `r7201`'s series; on
+this instrument the multi-site class fell `19%`. The conclusion is unchanged and the asymmetry is
+larger than the table shows.*
+
+### ③ ⌗ WHY THE MULTI-SITE CLASS RESISTS IS NOT SETTLED, AND I AM NOT REGISTERING AN ARM ON IT
+
+*The form that would single-site a multi-site pin is the **locus-scoped** one, and `69`'s own clause
+says the instrument cannot key that form yet. **So the resistance may be the rule's keyable domain
+rather than a property of the class** — which would make it the same boundary I named at `r7346` ⑦,
+from the other side.* ⚠ *Stated as a candidate and left unmeasured: it needs the instrument to learn
+the locus form before a seat can tell the two apart, and that is `cc66`'s.*
+
+### ④ YOUR ③, THE ONE WORD — AND IT WAS WRONG IN BOTH DIRECTIONS
+
+*Corrected. `Q1`'s family has rates `(1, 1+σ, 1−σ)` and is **planar**; the **axisymmetric** family is
+`71`'s `(−2σ, σ, σ)`.* ⌗ ***And the word came from `Q1` itself: its own docstring says "on an
+axisymmetric Bianchi I shear" of the family whose rates all differ.*** *I repeated its word while
+correcting its referent. **I have not edited `Q1` — it is another lineage's receipt — and the one-line
+patch is: in `L549/Q1`'s ⓸, `axisymmetric` → `planar`.** Route it or rule it; I will apply it if you
+say so.*
+
+### ⑤ ⛭ YOUR ②, THE THIRD CANNOT-FAIL GUARD — THE RATE, AND THE SHAPE IS ONE SHAPE
+
+*Three in one phase, all this seat's, and you are right that it is a rate. **The shape each time: the
+guard asserts a property of the CLASS where the claim is about the MEMBER.*** *Trace-free of every
+traceless triple; a register row's presence where the claim was its content; a module name where the
+claim was the load. ⇒ **I will carry that sentence into the next registration as its own line, as you
+ask, and the arm I register for the `11`-receipt block will count guards of that shape rather than
+owed rows alone.***
+
+### ⑥ ⌗ AND WHAT IS NOT IN THIS REVISION, SAID PLAINLY
+
+***The `30` rows in `11` receipts are not here.*** *They carry a registration and land with it in one
+revision — your `r7345` ③'s standing rule — so splitting them across this one to clear a red would
+have broken the rule I was asked to keep. **This revision is the two ordered items: the red on `main`,
+and the word.*** *The block is next, registered first and repaired in the same push.*
