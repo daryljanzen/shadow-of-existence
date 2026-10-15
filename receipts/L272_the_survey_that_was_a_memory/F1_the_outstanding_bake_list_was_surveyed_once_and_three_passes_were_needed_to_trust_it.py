@@ -62,6 +62,7 @@ names it and none should.  Declared at r3660 rather than inferred.
 import ast
 import os
 import re
+import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -192,17 +193,46 @@ def main():
     #     constant -- one per mode. ***  A text pin on `return 1` could not tell two guards from
     #     one, or from a `return 1` in an unrelated helper.
     #   ⌗ Verified before performing: `ast` finds 2 guard(s), both returning `[1]`.
-    _fs_src_ = open(os.path.join(ROOT, 'corpus', 'field_survey.py'),
-                    encoding='utf-8', errors='replace').read()
-    _fs_guards = [[r.value.value for r in ast.walk(n)
-                   if isinstance(r, ast.Return) and isinstance(r.value, ast.Constant)]
-                  for n in ast.walk(ast.parse(_fs_src_)) if isinstance(n, ast.If)]
-    _fs_guards = [g for g in _fs_guards if g]
+    #: ⛭⛭ SPLIT r7355+cc66.31, and the gate that forced it was a THIRD one I did not know fed on
+    #:   this repair.  `check_exact_counts` flagged the form I first wrote -- `len(_fs_guards) == 2`
+    #:   on the LIVE module -- as *** "an equality on a set another seat can move" ***, and it is
+    #:   right: `corpus/field_survey.py` is a live instrument, and a seat adding a THIRD failure
+    #:   mode would redden this receipt while the claim about the two modes stayed true.
+    #:   ⛔ ** AND THE OBVIOUS REMEDY IS THE DEFECT I REPAIRED AT `.27`. **  Relaxing it to `>= 2`
+    #:   would make the assertion WEAKER THAN ITS OWN LABEL, which says EXACTLY TWO, one per mode.
+    #: ⇒ ** So it splits, by `L-249`'s rule (`THE_REGISTER` PO-78): *"the historical state be pinned
+    #:   at the commit it stood at, the current state asserted separately, and a directional live
+    #:   check made monotone."* **
+    #:     ⓐ the EXACT claim is asserted on the module READ AT `FS_PIN`, where it is frozen and
+    #:       cannot be moved by anyone -- `2` guards, each returning non-zero, one per failure mode;
+    #:     ⓑ the LIVE claim is MONOTONE -- the two modes still fail the survey, and a third guard
+    #:       added later satisfies it rather than breaking it.
+    #:   ⌗ Verified before performing: the pinned and live sources are byte-identical today, so the
+    #:     split changes no verdict now and only changes which seat's edit can falsify it later.
+    FS_PIN = 'f61100f7b'          # r4068, the commit that last moved `corpus/field_survey.py`
+
+    def _fs_guards_of(src_text):
+        _g = [[r.value.value for r in ast.walk(n)
+               if isinstance(r, ast.Return) and isinstance(r.value, ast.Constant)]
+              for n in ast.walk(ast.parse(src_text)) if isinstance(n, ast.If)]
+        return [g for g in _g if g]
+
+    _fs_pinned = subprocess.run(['git', '-C', ROOT, 'show', f'{FS_PIN}:corpus/field_survey.py'],
+                                capture_output=True, text=True, errors='replace').stdout
+    assert _fs_pinned.strip(), f'the pinned read of field_survey.py at {FS_PIN} came back empty'
+    _fs_guards = _fs_guards_of(_fs_pinned)
+    _fs_live = _fs_guards_of(open(os.path.join(ROOT, 'corpus', 'field_survey.py'),
+                                  encoding='utf-8', errors='replace').read())
     check('⓵ᶜ the survey exits 0 only when both hold: a missing ledger or an unfindable control '
-          'FAILS it rather than being reported and passed over -- STRUCTURAL: '
-          f'{len(_fs_guards)} guard(s) returning {_fs_guards}, one per failure mode, read off the '
-          'parsed module rather than matched as text',
+          'FAILS it rather than being reported and passed over -- STRUCTURAL, and read AT THE PIN '
+          f'{FS_PIN} where the claim is frozen: {len(_fs_guards)} guard(s) returning {_fs_guards}, '
+          'one per failure mode, off the parsed module rather than matched as text',
           len(_fs_guards) == 2 and all(g and all(v != 0 for v in g) for g in _fs_guards))
+    check('⓵ᵈ ⛭ and the LIVE module still enforces both, asserted MONOTONE so a third failure mode '
+          f'added by another seat satisfies it rather than breaking it: {len(_fs_live)} guard(s) '
+          f'returning {_fs_live} now, against {len(_fs_guards)} at the pin',
+          len(_fs_live) >= len(_fs_guards)
+          and all(g and all(v != 0 for v in g) for g in _fs_live))
 
     print()
     print('  ' + '=' * 74)

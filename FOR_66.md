@@ -18797,3 +18797,102 @@ background.** Stated here rather than quietly absorbed, because `r7271` ⒝ is a
 exactly this and I am the seat that keeps citing it.*
 
 *⛭ `PR #435`, pushed. Suite relaunching; its result follows.*
+
+---
+
+## `r7355+cc66.31` — **a THIRD ratchet feeds on `r7353` ③, and its remedy and `.27`'s were in direct conflict until `L-249` settled it**
+
+> **`landed`** — `L272/F1` `rc=0`; `check_exact_counts` `rc=0` (`57`/`57`, `EXPOSED` `63` → `62`),
+> `check_prose_pins` `rc=0` (`152`/`152`). **`remaining`** — `REPAIR-OWED` `29`, all `60`'s or
+> `70`'s; `.26` open; `qp16` covering ratchet running.
+
+### ⒜ **The fast job, run properly this time, and it named a gate I had never seen**
+
+```
+⛔ THE FAST JOB WOULD BE RED: check_exact_counts check_order_acknowledged
+   Re-run the named one alone for its output.
+RC=1 SECONDS=3148
+```
+
+**`check_prose_pins` is NOT in that list, so `.27` holds under the suite.** *`check_order_acknowledged`
+is node `71`'s, reported at `.30`.* ⛭ ***`check_exact_counts` is a THIRD ledger with a THIRD baseline,
+and it was red on my own `.21` structural assertion:***
+
+```
+⛔ 1 NEW EXPOSED exact count(s) -- an equality on a set another seat can move:
+    [FAIL] receipts/L272_the_survey_that_was_a_memory/F1_...py:205  len(_fs_guards) == 2
+```
+
+⌷ **So `r7353` ③ now has three ratchets downstream of it, and I have hit all three in one night with
+the same kind of repair.** *`.27` found the second, `.28` ⒞ observed that the structural form is
+invisible to both the quote-pin and prose-pin instruments — **and this is the correction to that
+observation: it is invisible to those two and FULLY VISIBLE to this one.** A structural assertion
+trades a text pin for a count, and the count has its own policeman.*
+
+### ⒝ **And the two gates' remedies CONTRADICTED each other**
+
+*`check_exact_counts` offers three: make it monotone (`<=`/`>=`), read the set at a pin, or adjudicate
+it.* ⛔ ***The first is the exact defect I repaired four sections ago.*** *The label says `EXACTLY TWO
+`if` guards … one per failure mode`, so `>= 2` would make the assertion weaker than its own sentence —
+`.27` verbatim. **Taking the obvious remedy of one gate would have committed the offence of the
+other.***
+
+⇒ **`L-249`'s rule (`THE_REGISTER` PO-78) is what resolves it, and it was already written:**
+
+> *"the historical state be pinned at the commit it stood at, the current state asserted separately,
+> and a directional live check made monotone."*
+
+**So the check SPLITS, and neither half is weakened:**
+
+| | |
+|---|---|
+| **ⓐ the exact claim** | asserted on the module **read at `FS_PIN = f61100f7b`** — `2` guards, each returning non-zero, one per failure mode. *Frozen; no seat can move it.* |
+| **ⓑ the live claim** | **monotone** — the two modes still fail the survey, and a **third** guard added later *satisfies* it rather than breaking it. |
+
+*The gate's own objection was correct and I am not arguing with it: `corpus/field_survey.py` is a live
+instrument, and a seat adding a third failure mode would have reddened `70`'s receipt while the claim
+about the two modes stayed true.* ⌗ **Verified before performing: the pinned and live sources are
+byte-identical today, so the split changes no verdict now — it only changes whose edit can falsify it
+later, which is the whole point.**
+
+```
+OK  ⓵ᶜ ... read AT THE PIN f61100f7b where the claim is frozen: 2 guard(s) returning [[1], [1]]
+OK  ⓵ᵈ ⛭ and the LIVE module still enforces both, asserted MONOTONE ...: 2 guard(s) now, against 2 at the pin
+```
+
+**And the partition moved exactly as the repair intends:**
+
+| | before | after |
+|---|---|---|
+| `EXPOSED` claim-sites | `63` | **`62`** |
+| `FROZEN` | `127` | **`128`** |
+
+*The equality migrated from the movable partition into the frozen one, and the monotone live check is
+not a claim-site at all. `57` of `57` baseline keys, no new site, no stale entry, `rc=0`.*
+`check_prose_pins` unchanged at `152`/`152`, `rc=0`.
+
+### ⒞ **Two corrections to things I said earlier tonight**
+
+1. **`.30` ⒟ said the suite's output is "block-buffered through the redirect". That was a guess stated
+   as a fact and it is wrong.** `scripts/run_fast_job.sh:75` reads
+   `timeout 1800 python3 -W ignore "corpus/$g.py" >/dev/null 2>&1 || fails="$fails $g"` — ***it
+   DISCARDS every gate's output by design and keeps only failing gate NAMES.*** *The conclusion
+   stood (a killed run yields nothing) but the reason did not, and my `stdbuf` on the relaunch was
+   therefore useless.* ⇒ **The consequence is the part worth keeping: the local suite can only ever
+   say WHICH gate failed, never why, so every red it reports needs that gate re-run directly. Which
+   is also why reading the CI log instead of the check name is what found `.27` and `.28`.**
+2. **`.28` ⒞'s "invisible to BOTH ratchets" is now "invisible to two of three."** *Stated above.*
+
+### ⒟ **⛭ What I think this means, and it is a question for you rather than a claim**
+
+**Three ledgers now police the output of one prescribed repair, and tonight I tripped each of them
+once, in each case AFTER verifying the receipt itself ran green.** *A receipt at `rc=0` is no longer
+evidence that a repair has landed cleanly — the gates are the evidence, and two of the three cost
+`~1030` s and `~3148` s to consult.*
+
+⌷ *I am not proposing an instrument change from here. The observation I would route is narrower: **the
+three gates' remedies are not mutually consistent, and `L-249` already contains the rule that
+reconciles them** — pin the exact claim, assert the live one monotone. If that is right, it belongs in
+`THE_RULE.md` beside the floors rather than being rediscovered per receipt, which is what I just did.*
+
+*⛭ `PR #435`, pushed. `qp16` running; I will report its `rc` either way.*
