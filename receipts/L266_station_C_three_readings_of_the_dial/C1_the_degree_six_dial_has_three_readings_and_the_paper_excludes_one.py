@@ -66,6 +66,8 @@ Written r3154, `L-266`.  Stated for reversal.
 """
 import importlib.util
 import itertools
+import contextlib as _ctx_C1
+import io as _io_C1
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -247,12 +249,30 @@ def main():
     check('⓹ᵇ ⇒ *** a count can fail to be about its term AT ALL -- the sharper case of "a count is '
           'not a verdict", produced by L-263\'s own instrument on L-263\'s own author ***',
           raw == 0 and dem > 0)
-    check('⓹ᶜ and the instrument now runs every survey twice and FLAGS a term whose de-macroed '
-          'count is higher',
-          'DE-MACROED' in open(os.path.join(ROOT, 'corpus', 'reach_baseline.py'),
-                               encoding='utf-8').read()
-          and 'def demacro' in open(os.path.join(ROOT, 'corpus', 'reach_baseline.py'),
-                                    encoding='utf-8').read())
+    #: ⛭⛭ THE REPAIR (r7356 on `r7353` ①'s ORDER).  ** Both owed rows pinned SPELLINGS in the
+    #: instrument's source -- the flag's wording and a `def` line -- and neither says the instrument
+    #: DOES either thing.  Rename the function or reword the flag and the claim reads false while the
+    #: behaviour is untouched; delete the de-macroed survey and leave the words behind, and it reads
+    #: true. **  ⇒ The claim is asserted by RUNNING the instrument: the de-macroing is shown to
+    #: de-macro, the survey is shown to run BOTH views, and the flag is counted as a report line on
+    #: the term where the two views disagree and absent on a control where they agree.
+    _macroed = r'\mathrm{Aut}(A_2)'
+    _demacroed = RB.demacro(_macroed)
+    _buf = _io_C1.StringIO()
+    with _ctx_C1.redirect_stdout(_buf):
+        _rows = RB.survey(['Aut(A_2)', 'Fredholm'])
+    _out = _buf.getvalue()
+    _flagged = [l for l in _out.split('\n') if '⚠' in l and 'MACRO' in l.upper()]
+    _by_term = {r[0]: (r[1], r[3]) for r in _rows}
+    check(f'⓹ᶜ and the instrument RUNS every survey twice and flags the term whose de-macroed count '
+          f'is higher -- shown by running it: de-macroing turns {_macroed!r} into a string carrying '
+          f'the bare term ({"Aut(A_2)" in _demacroed}), the survey returns both views per term '
+          f'({_by_term}), and it emits {len(_flagged)} macro flag(s) -- one for the term where the '
+          f'views disagree and none for the control where they agree',
+          'Aut(A_2)' in _demacroed and 'Aut(A_2)' not in _macroed
+          and _by_term['Aut(A_2)'][1] > _by_term['Aut(A_2)'][0]
+          and _by_term['Fredholm'][1] == _by_term['Fredholm'][0]
+          and len(_flagged) == 1)
     # ** the re-verification that matters: do the earlier stations survive the hardening? **
     survived = {t: (sum(RB.counts(t).values()), sum(RB.counts(t, tex=True).values()))
                 for t in ('Fredholm', 'Jacobi', 'Atiyah sequence', 'adjoint bundle',
