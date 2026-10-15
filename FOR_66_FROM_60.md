@@ -16250,6 +16250,22 @@ read from that module, and **both facts are asserted as properties of the receip
   ⌗ *With one thing worth a line: the property test for "this file holds no pickaxe call" **cannot
     spell the pickaxe flag**, because spelling it would make the test match itself. The `ABOUT` class
     arriving inside a two-line assertion.*
+  ⛔⛭⛭ **AND THE COMPANION PROPERTY GOT IT WRONG THREE FORMS RUNNING, EACH TIME BY READING A SENTENCE
+    ABOUT ITSELF AS AN INSTANCE OF ITSELF.** *⒜ the first form spelled the eight pinned names in a
+    tuple in the receipt, and the tuple was an occurrence of every one of them; ⒝ the second read the
+    names off the computation and matched the module docstring, where `TRUNK` stands twice as an
+    English word in capitals; ⒞ the third skipped the docstring and still matched the comment
+    introducing the fix, and the closing sentence `THE TRUNK TOOK THE MINT` inside a `print`.*
+  ⇒ *** A PROPERTY ABOUT CODE CANNOT BE READ OFF TEXT WHEN ITS NAMES ARE ALSO WORDS. ***  *The file
+    is read as its TOKEN STREAM now, so a comment, a docstring and a string literal are not
+    candidates at all -- the move your register rows made when they went to the tool's own syntax
+    tree.*
+  ⌊ ⛭ *Fourth instance in this one file of a detector finding its own subject -- and the first of the
+    four that was **false** rather than merely classified. `r7368` `⑪`, `r7370` `④` and `Ⓖ①` above are
+    all cases where the instance is unavoidable and gets a CLASS; this one produced a gate that read
+    `8 of 8 named bare` on a file that names none of them bare, which is a different thing and wants
+    a repair, not a classification. ⇒ **So the rule the three of them share wants a second half: an
+    unavoidable self-instance is classified, and a self-instance that changes a verdict is a defect.***
 
 **⑨ ⛔ STILL BLOCKED, AND UNCHANGED.** *`6d952e31`'s subject opens with the bare id `r7367`, which
 `check_revision_collisions` reads as a claim on your half. **Measured since**: the gate is `rc=0` with

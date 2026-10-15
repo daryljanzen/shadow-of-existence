@@ -62,13 +62,28 @@ this file's source.*
     because spelling it would make the test match itself -- the `ABOUT` class from `r7370` ④,
     arriving in a two-line assertion.*
 
+** ⛔⛭⛭⛭ Ⓗ AND THE PROPERTY THAT SAYS SO READ ITS OWN PROSE AS CODE, THREE FORMS RUNNING. **
+      ⒜ *The first form spelled the eight pinned names in a tuple here -- and the tuple was an
+        occurrence of every one of them, so the test read this file as naming all eight bare.*
+      ⒝ *The second read the names off the computation and matched the module docstring, where
+        `TRUNK` stands twice as an English word in capitals.*
+      ⒞ *The third skipped the docstring and still matched the comment introducing the fix, and the
+        closing sentence `THE TRUNK TOOK THE MINT` inside a `print`.*
+  ⇒ *** A PROPERTY ABOUT CODE CANNOT BE READ OFF TEXT WHEN ITS NAMES ARE ALSO WORDS. ***  *The file
+    is read as its TOKEN STREAM, so a comment, a docstring and a string literal are not candidates
+    at all -- the move the register rows made when they went to the tool's own syntax tree.*
+  ⌊ ⛭ *Fourth instance in this one file of a detector finding its own subject, and the first of the
+    four that was not harmless: the other three were classified, and this one was FALSE.*
+
     python3 receipts/L_probability/S57_the_registration_pass_ran_three_commits_before_the_revisions_last_edit_so_the_mint_reached_the_trunk_a_revision_ahead_of_its_row.py
 """
 import importlib.util
+import io
 import os
 import re
 import subprocess
 import sys
+import tokenize
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -234,18 +249,48 @@ def main():
     # ── Ⓖ the detector is not copied here ─────────────────────────────────────────────────────────
     head('Ⓖ  the detector lives in the computation and is consumed, not restated')
     _pickaxe = "'-" + "S'"          # ⚠ spelled in two pieces: a literal here would match itself
-    _spelled = re.search(r"^\s*(MINT_C|ROW_C|PASS_C|TRUNK|BASE|FRAME|R7368_TIP|R7370_PASS)\s*=",
-                         _src, re.M)
-    print(f'      this file binds a pinned sha of its own: {bool(_spelled)}')
-    print(f'      this file contains a pickaxe call of its own: {_pickaxe in _src}')
-    check(f'Ⓖ① every figure is READ from the revision\'s computation: this file calls measure() and '
-          f'mint_of() and holds no pickaxe call of its own ({_pickaxe in _src})',
-          'C.measure(' in _src and 'C.mint_of(' in _src and _pickaxe not in _src)
+    #: ⛭⛭⛭ ** AND THE TEST FOR "NO PIN IS BOUND HERE" COULD NOT BE WRITTEN WITHOUT SPELLING EVERY
+    #: PIN -- so its first form, an alternation of the eight names, WAS an occurrence of all eight
+    #: and read this file as having named every one of them bare. **  ⚠ *A property test over a set
+    #: of names cannot spell the set, because the spelling is a member of what it tests.*  ⇒ *The
+    #: names are read off the computation by the SHAPE OF THEIR VALUES -- an eight-hex string bound
+    #: to an upper-case name -- so nothing here spells them and both halves of the property are
+    #: built from the one definition.  Which is this revision's own lesson arriving inside its own
+    #: assertion: consume the definition, do not restate it.*
+    _pin_names = sorted(n for n, v in vars(C).items()
+                        if n.isupper() and isinstance(v, str) and re.fullmatch(r'[0-9a-f]{8}', v))
+    #: ⛔⛭⛭⛭ ** AND READING THIS FILE AS TEXT WAS WRONG THREE TIMES RUNNING, EACH TIME BY FINDING
+    #: A SENTENCE ABOUT THE PROPERTY AND COUNTING IT AS AN INSTANCE OF IT. **
+    #:   ⒜ the first form spelled the eight names in a tuple HERE, and the tuple was an occurrence
+    #:     of every one of them;
+    #:   ⒝ the second read them out of the module but matched the module docstring, where `TRUNK`
+    #:     stands twice as an English word in capitals;
+    #:   ⒞ the third skipped the docstring and still matched this very comment, and the closing
+    #:     sentence `THE TRUNK TOOK THE MINT`, which is prose inside a `print`.
+    #: ⇒ *** A PROPERTY ABOUT CODE CANNOT BE READ OFF TEXT WHEN ITS NAMES ARE ALSO WORDS. ***  The
+    #: file is read as its TOKEN STREAM, so a comment, a docstring and a string literal are not
+    #: candidates at all -- the same move the register rows made when they went to the tool's own
+    #: syntax tree, and the fourth instance in this one file of a detector finding its own subject.
+    _toks = [t for t in tokenize.generate_tokens(io.StringIO(_src).readline)
+             if t.type in (tokenize.NAME, tokenize.OP)]
 
-    check(f'Ⓖ② and the pinned shas are read from that module rather than re-spelled here, so there '
-          f'is ONE place a pin can go stale -- asserted as a property of this file\'s source, not as '
-          f'a promise in a comment: binds one itself = {bool(_spelled)}',
-          _spelled is None and _src.count('C.MINT_C') >= 2)
+    def _through_module(i):
+        return i >= 2 and _toks[i - 1].string == '.' and _toks[i - 2].string == 'C'
+
+    _hits = [(i, t.string) for i, t in enumerate(_toks) if t.string in _pin_names]
+    _bare = sorted({n for i, n in _hits if not _through_module(i)})
+    _via = sorted({n for i, n in _hits if _through_module(i)})
+    _bound = sorted({n for i, n in _hits
+                     if i + 1 < len(_toks) and _toks[i + 1].string == '='})
+    print(f'      {len(_toks)} code token(s); {len(_hits)} name their pinned constants')
+    print(f'      read through the module: {_via}')
+    print(f'      named bare: {_bare};  bound here: {_bound}')
+    check(f'Ⓖ② and the pinned shas are READ from that module rather than re-spelled here, so there '
+          f'is ONE place a pin can go stale -- a PROPERTY over this file\'s TOKEN STREAM, whose '
+          f'names come from the computation by the shape of their values, so neither half of it can '
+          f'match its own prose: {len(_bare)} named bare, {len(_bound)} bound here, {len(_via)} of '
+          f'{len(_pin_names)} read through the module',
+          _bare == [] and _bound == [] and len(_via) >= 4)
 
     check(f'Ⓖ③ and this receipt is REGISTERED in the index, so the suite runs it and the ratchets '
           f'that caught the original red run over it too: {os.path.basename(__file__)[:12]}',
