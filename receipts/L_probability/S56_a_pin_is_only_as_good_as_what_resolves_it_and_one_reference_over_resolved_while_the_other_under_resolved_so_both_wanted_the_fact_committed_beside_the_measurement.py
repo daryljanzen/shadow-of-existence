@@ -56,6 +56,15 @@ named and the other to less, and both wanted the fact committed beside the measu
              as this seat's, which is the unsafe direction.*
       `S22`  returns exactly its `3` today.  Repaired on the same pattern.
 
+** ⛔⛭⛭⛭ Ⓓ④ AND THE SCAN FINDS THIS FILE, WHICH IS THE THIRD TIME THIS PHASE. **  *`4` of the live
+sites are in this receipt, because a gate that re-measures a match must perform the match.*
+  ⇒ *** A DETECTOR RUN OVER THE CORPUS WILL ALWAYS FIND THE RECEIPT THAT DESCRIBES ITS SUBJECT, AND
+      IT CANNOT TELL A MEASUREMENT OF A SHAPE FROM AN INSTANCE OF IT. ***  *`r7368`'s reporting arms,
+  `r7368`'s detector counting its own remedy as its disease, and now this.*
+  ⌊ ** So the describing receipt is CLASSIFIED and never repaired -- removing the match would remove
+    the measurement -- and `ABOUT` is a PROPERTY, the file that CONSUMES this computation, so it
+    needs no hand entry and carries no date. **
+
 ** Ⓕ AND THE SCAN'S OWN CLASSIFIER NEEDED THE SAME LESSON TWICE. **  ⌗ *`CONTROL` is a PROPERTY and
 not a hand entry -- every one of these sites was `SELECTS` before its commits were pinned and is the
 control beside the pin after, so a hand entry would bake in the date.*  ⛔ **And the property was
@@ -231,6 +240,15 @@ def main():
           f'SELECTS at the frame and {R["A_LIVE_SELECTS"]} live, with {R["A_LIVE_CONTROL"]} id '
           f'matches left standing ON PURPOSE beside a pinned list',
           R['A_LIVE_SELECTS'] == 0 and R['A_LIVE_CONTROL'] == 3)
+    check(f'Ⓓ④ ⛔⛭⛭⛭ AND THE SCAN FINDS THIS FILE: {R["A_LIVE_ABOUT"]} of the live sites are in '
+          f'THIS receipt, which must perform the match to re-measure it.  ** A detector run over '
+          f'the corpus will ALWAYS find the receipt that describes its subject, and it cannot tell '
+          f'a measurement of a shape from an instance of it. **  ⇒ *Third time this phase: '
+          f'`r7368`\'s reporting arms, `r7368`\'s detector counting its own remedy as its disease, '
+          f'and now this -- so the describing receipt is CLASSIFIED and never repaired, because '
+          f'removing the match would remove the measurement.*  ⌗ *`ABOUT` is a PROPERTY -- the file '
+          f'that CONSUMES this computation -- so it needs no hand entry and carries no date*',
+          R['A_LIVE_ABOUT'] == 4 and '_THIS in _t' in open(COST, encoding='utf-8').read())
 
     # ── Ⓔ two of the four are this phase's own repairs ────────────────────────────────────────────
     head('Ⓔ.  TWO OF THE FOUR ARE REPAIRS THIS PHASE ITSELF MADE')

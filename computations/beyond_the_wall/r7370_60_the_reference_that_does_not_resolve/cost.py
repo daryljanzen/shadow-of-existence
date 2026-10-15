@@ -91,8 +91,16 @@ def scan(sha=None):
 _PINNED_OWN = re.compile(r"^\s*(?:OWN|OWN_C)\s*=\s*\(", re.M)
 
 
+#: the receipt that measures this shape is the one that CONSUMES this computation -- a property, so
+#: it needs no hand entry and carries no date.
+_THIS = os.path.basename(os.path.dirname(os.path.abspath(__file__)))
+
+
 def _class_of(rel, sha=None):
-    return 'CONTROL' if _PINNED_OWN.search(text(rel, sha)) else 'SELECTS'
+    _t = text(rel, sha)
+    if _THIS in _t:
+        return 'ABOUT'
+    return 'CONTROL' if _PINNED_OWN.search(_t) else 'SELECTS'
 
 
 #: ** THE CLASSIFICATION, BY HAND AND COMMITTED HERE. **
@@ -100,6 +108,12 @@ def _class_of(rel, sha=None):
 #:   CONTROL  -- the match is kept deliberately, beside a pinned list, to prove it over-resolves.
 #:   LABEL    -- the id is matched against a SUBJECT LINE to read a revision's own claim, which is
 #:               what the id is for; no commit set is selected by it.
+#:   ABOUT    -- the site is in the receipt that MEASURES this shape, which must perform the match to
+#:               re-measure it.  ⛔⛭⛭⛭ *A detector run over the corpus will ALWAYS find the receipt
+#:               that describes its subject, and it cannot tell a measurement of a shape from an
+#:               instance of it.  Third time this phase: `r7368`'s reporting arms, `r7368`'s detector
+#:               counting its own remedy as its disease, and now this.*  ⇒ ** The describing receipt
+#:               is CLASSIFIED, never repaired -- removing the match would remove the measurement. **
 CLASS = {
     #: ⌗ a FALSE POSITIVE of this detector, kept rather than tuned away: the id is matched against a
     #: LEDGER CELL and not against a commit message at all -- the proximity test caught a
@@ -148,18 +162,22 @@ def main():
              if (CLASS.get((r, n)) or _class_of(r, None)) == 'SELECTS']
     _ctl = [(r, l) for r, ss in live.items() for l, n, _s in ss
             if (CLASS.get((r, n)) or _class_of(r, None)) == 'CONTROL']
+    _abt = [(r, l) for r, ss in live.items() for l, n, _s in ss
+            if (CLASS.get((r, n)) or _class_of(r, None)) == 'ABOUT']
     print(f'\n    AT THE FRAME {sha}: sites {tot};  SELECTS {len(sel)};  '
           f'files holding one: {len({r for r, _l in sel})}')
     print(f'    LIVE, after this revision repaired them: sites '
-          f'{sum(len(v) for v in live.values())};  SELECTS {len(_lsel)};  CONTROL {len(_ctl)} -- '
-          f'each an id match kept beside a pinned commit list ON PURPOSE, so the pin cannot '
-          f'quietly become the match again')
+          f'{sum(len(v) for v in live.values())};  SELECTS {len(_lsel)};  CONTROL {len(_ctl)} '
+          f'(each an id match kept beside a pinned commit list ON PURPOSE);  ABOUT {len(_abt)} '
+          f'(in the receipt that MEASURES this shape, which must perform the match to re-measure '
+          f'it -- a detector always finds the receipt describing its subject)')
     RESULT.update({
         'A_SITES': len(sel),
         'A_FILES': sorted({r for r, _l in sel}),
         'A_NEW': len([1 for r, _l in sel if '/S29_' not in r]),
         'A_LIVE_SELECTS': len(_lsel),
         'A_LIVE_CONTROL': len(_ctl),
+        'A_LIVE_ABOUT': len(_abt),
         'B_MATCHED': B_MATCHED,
         'B_OWN': B_OWN,
         'B_EXTRA': B_MATCHED - B_OWN,
