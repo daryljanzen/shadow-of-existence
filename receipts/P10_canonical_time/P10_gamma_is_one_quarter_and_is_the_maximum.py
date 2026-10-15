@@ -63,8 +63,8 @@ def main():
     check('the kinetic power is p_a^2/a, from eq:Hphys at source',
           '\\frac{2\\pi}{3}\\,\\frac{p_a^2}{a}' in p10)
     check('and the paper states gamma = 1/4 across the family, threshold 3/4',
-          'attaining $\\gamma=\\tfrac14$ across the natural ordering family' in p10
-          and '\\tfrac34' in p10)
+          '$\\gamma=\\tfrac14$ across the natural ordering family, strictly below the '
+          'essential-self-adjointness threshold $\\tfrac34$' in p10)
 
     # the ordering family reduces exactly
     def T(e):

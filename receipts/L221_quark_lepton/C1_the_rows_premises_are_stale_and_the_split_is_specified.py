@@ -152,15 +152,13 @@ def main():
     # premise 3: the check the row said was not made
     check('⛭ P14 states the colourless count: the D_6 representations trivial on the deck Z_3 -- '
           '"which is what carrying no colour would mean" -- are its FOUR one-dimensional ones',
-          'trivial on the deck $\\mathbb{Z}_{3}$' in pub
-          and 'which is what carrying no colour would mean' in pub
-          and 'e its four one-dimensional ones' in pub)
+          'the representations of $D_{6}$ that are trivial on the deck $\\mathbb{Z}_{3}$---which is what '
+          'carrying no colour would mean---are its four one-dimensional ones' in pub)
     check('so a colourless sector on this structure has TOTAL DIMENSION FOUR',
           'e its four one-dimensional ones, so a colourless sector on this structure has total dimension four' in pub)
     check('⇒ and P14\'s own specified split is "12 coloured against 3 colourless '
           '(4 with a right-handed neutrino)"',
-          'one generation splits $12$ coloured against $3$ colourless' in pub
-          and 'with a right-handed neutrino' in pub)
+          'one generation splits $12$ coloured against $3$ colourless ($4$ with a right-handed neutrino)' in pub)
     check('⇒⇒ FOUR is the colourless count WITH nu_R: the structure produces the number the '
           'split needs', True is not None and 'e its four one-dimensional ones, so a colourless sector on this structure has total dimension four' in pub)
 
@@ -191,7 +189,7 @@ def main():
           po5_struck)
     check('and the closure ran by the route `PROTECTED_OPEN` states: a kill receipt in the register',
           os.path.exists(os.path.join(ROOT, 'kills', 'PO-5.md'))
-          and 'made in the register with a kill receipt' in po)
+          and 'a closure on a protected item is made in the register with a kill receipt' in po)
 
     print()
     if FAILED:

@@ -87,8 +87,8 @@ def main():
     # ⓵ P11 places the graviton in the perturbative regime
     check('⛭ P11: "Friedrich is a small-data result, exactly the perturbative regime of the propagating '
           'graviton, so it settles the in-regime all-orders stability directly"',
-          'exactly the perturbative regime of the propagating graviton' in p11
-          and 'settles the in-regime all-orders stability directly' in p11)
+          'Friedrich is a small-data result, exactly the perturbative regime of the propagating graviton, so it '
+          'settles the in-regime all-orders stability directly' in p11)
     check('and P11 places the linearized graviton as a de Sitter wave admitting Bunch--Davies '
           'quantization', 's a massive scalar on de Sitter and admits a clean, unitary Bunch--Davies quantization~\\cite{BunchDavies1978' in p11)
 
@@ -99,15 +99,20 @@ def main():
           'a sweep cannot carry' in p9)
     check('⇒⇒ SO THE STRATUM\'S FREE DATA IS THE OBJECT P11 ALREADY PLACES IN THE PERTURBATIVE REGIME '
           '-- two statements about the same thing, never set side by side',
-          'exactly the perturbative regime of the propagating graviton' in p11
+          'Friedrich is a small-data result, exactly the perturbative regime of the propagating graviton, so it '
+          'settles the in-regime all-orders stability directly' in p11
           and "The graviton's two propagating polarizations are exactly the transverse degrees of freedom a sweep cann" in p9)
 
     # ⓷ the entry condition fixes the size
     check('and the wall is "the loss of all confining symmetry" that FREES those polarizations',
-          'only the loss of all confining symmetry frees' in p9)
+          'High symmetry forbids radiation' in p9
+          and 'only the loss of all confining symmetry frees it, in the type-N plane wave \\eqref{eq:ppwave} and the '
+          'generic gravitational wave beyond the wall' in p9)
     check('⇒ SO THE STRATUM IS ENTERED FROM sigma^TT = 0: you arrive BY the transverse freedom being '
           'released, so departures start small by construction',
-          'only the loss of all confining symmetry frees' in p9)
+          'High symmetry forbids radiation' in p9
+          and 'only the loss of all confining symmetry frees it, in the type-N plane wave \\eqref{eq:ppwave} and the '
+          'generic gravitational wave beyond the wall' in p9)
 
     # cc54's grid, on this tree
     s1 = os.path.join(ROOT, 'receipts', 'L802_stability_bracket',
@@ -119,12 +124,14 @@ def main():
               'Friedrich' in t and ('Ringstr' in t) and 'Rodnianski' in t)
         check('and the single open cell as the cosmic no-hair conjecture -- general relativity\'s '
               'problem, not a CR-specific hole',
-              'no-hair' in t.lower())
+              "The ONE open cell is (general, all-data) = the cosmic no-hair conjecture, and it is general "
+          "relativity's open problem, not CR's" in ' '.join(t.split()))
 
     # ⚠ the r2505 caveat
     check('⚠ AND THE CAVEAT IS r2505\'s: "no mechanism in the corpus drives sigma^TT large" is NOT '
           '"nothing can" -- the local negative must not be globalised',
-          'exactly the perturbative regime of the propagating graviton' in p11)
+          'Friedrich is a small-data result, exactly the perturbative regime of the propagating graviton, so it '
+          'settles the in-regime all-orders stability directly' in p11)
 
     print()
     if FAILED:

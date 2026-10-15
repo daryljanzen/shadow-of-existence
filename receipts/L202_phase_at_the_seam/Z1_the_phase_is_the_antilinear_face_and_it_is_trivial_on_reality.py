@@ -104,17 +104,19 @@ def main():
     p7 = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'CR_framework.tex'),
                                   encoding='utf-8', errors='replace').read())
     check('P7 names the LINEAR face R : r -> -r as gamma^5, giving matter/antimatter',
-          'mass-reflection' in p7 and 'antimatter at the weight the fundamental branch is matter' in p7)
+          '$R$ is the mass-reflection $r\\mapsto-r$ ($2M\\mapsto-2M$)' in p7
+          and 'under $R=\\gamma^5$ the collapse leg ($r<0$) is the antifundamental $\\bar{\\mathbf 3}=R(\\mathbf 3)$ '
+          'of the matter branch, so within CR it is antimatter at the weight the fundamental branch is matter' in p7)
     check('and names the ANTILINEAR face: "the reality involution $K:\\tilde\\tau\\mapsto'
           '\\bar{\\tilde\\tau}$ on complexified cosmic time"',
-          'reality involution' in p7 and 'complexified cosmic time' in p7)
+          'the reality involution $K:\\tilde\\tau\\mapsto\\bar{\\tilde\\tau}$ on complexified cosmic time' in p7)
     check('and calls them two faces of the SAME object',
-          'second, antilinear face of the same object' in p7)
+          'The substrate carries a second, antilinear face of the same object' in p7)
 
     # the register's constraint
     arc = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()
     check('L-202 is stated without being claimed BOTH WAYS, and this receipt decides neither',
-          '1`\'s `\'not claimed BOTH WAYS' in arc or 'not claimed both ways' in arc.lower())
+          'it may narrow and it may not be closed in either direction by a node' in arc)
 
     print()
     if FAILED:
