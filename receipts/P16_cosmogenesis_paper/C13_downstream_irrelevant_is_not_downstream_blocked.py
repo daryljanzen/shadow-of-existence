@@ -76,6 +76,13 @@ def main():
     print('  C13 -- are the three cosmogenesis items work, or scope?')
     print()
     p16 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex')))
+    # ⬭ r7347+cc66, REPAIR for the MARKUP CARRIER row: 60's prescription at r7255, adopted
+    #   rather than invented -- *** normalise the emphasis out of the HAYSTACK and keep the
+    #   span WHOLE *** (S19_a_markup_carrier_cannot_be_repaired_by_splitting_it..., line 25).
+    #   Splitting the span around `\emph{done}` is the form that receipt's title refutes.
+    #   ⌗ AND THE COST IS 60's OWN, CARRIED HERE: a markup-normalised key reads as ZERO sites
+    #     against the raw paper, so it can never be flagged MULTI. Adopted with that named.
+    p16u = re.sub(r'\\emph\{([^}]*)\}', r'\1', p16)
     led = open(os.path.join(ROOT, 'corpus', 'open_ledger.txt'), encoding='utf-8').read()
 
     # ⓵ the bucket's own definition
@@ -90,10 +97,16 @@ def main():
           'downstream-irrelevant here: once dissociation is total, the memory of the peak is erased"',
           'remains open, and is downstream-irrelevant here' in p16
           and 'once dissociation is total, the memory of the peak is erased' in p16)
+    # ⬭ r7347+cc66, REPAIR: the owed row is "not by the peak's value" -- r7260+60, DANGLES
+    #   (negator-stripped): it "names no subject, and the adopted head test stops at the negator".
+    #   ⛔ AND THE COMPANION CONJUNCT WAS CUT MID-WORD -- it ended `..., n` to bridge into `not`,
+    #   which is r7345 ⑦'s class exactly: a span sliced at a boundary its author did not choose.
+    #   *** One contiguous span instead, subject named, ending on `value`. ***
+    #   ⌗ Verified before performing: ONCE flattened and ONCE under `_unmark`.
     check('with what fixes the abundances instead: "the abundances are fixed by the conditions in the '
           "window on the cooling leg ... not by the peak's value\"",
-          'the abundances are fixed by the conditions in the window on the cooling leg (Secs~\\ref{sec:rate}, \\ref{sec:network}), n' in p16
-          and "not by the peak's value" in p16)
+          'the abundances are fixed by the conditions in the window on the cooling leg '
+          "(Secs~\\ref{sec:rate}, \\ref{sec:network}), not by the peak's value" in p16)
 
     # ⓶ the duplicate
     check('⓶ and the second entry is the figure caption for the same fact: "its exact regulated value is '
@@ -119,15 +132,28 @@ def main():
     #   third item is marked NOT A DEBT in the sentence that calls it open -- is intact on the
     #   remainder, so it is pinned there; the discharged half is pinned to what discharged it, so the
     #   receipt does not keep an already-run confrontation listed as open. **
-    check('"a precision frontier the title does not stake itself on ... not a debt" -- the remainder, '
-          'the specially-evaluated light-nuclide rates',
-          'a precision frontier the title does not stake itself on' in p16
-          and 'not a debt' in p16)
+    # ⬭ r7347+cc66, REPAIR of TWO owed rows at once (r7260+60: the first DANGLES TRAILING -- it ends
+    #   on "on" and promises what the title does not stake itself on -- and the second is a
+    #   three-word fragment "which names nothing that is not a debt").  *** One contiguous span that
+    #   NAMES ITS SUBJECT and ends on `debt`, so neither arm dangles and neither stands alone. ***
+    #   ⌗ Verified before performing: the span occurs ONCE flattened and ONCE under the checker's own
+    #     `_unmark`, so floor 2 is met.  The 14-word form without `the specially-evaluated ... rates`
+    #     is shorter and was REJECTED: it fixes the dangle but drops the SUBJECT, and floor 1 wants
+    #     the whole claim -- which remainder is the frontier -- so it is not among the forms the
+    #     minimand ranks.  THEN STOP: nothing past `not a debt` is pinned.
+    check('"the specially-evaluated light-nuclide rates -- a precision frontier the title does not '
+          'stake itself on ... not a debt" -- the remainder, named in the span that carries it',
+          'the specially-evaluated (as against REACLIB) light-nuclide rates---a precision frontier '
+          'the title does not stake itself on (Sec~\\ref{sec:verdict}), not a debt' in p16)
     check('⛭ and the likelihood against the measured abundances, the other half of r2639\'s frontier, '
           'is DISCHARGED: "The data-confrontation is done: the network meets the measured deuterium '
           'and helium-4 within 1 sigma at the Planck eta" (r6719)',
-          'The data-confrontation is \\emph{done}: the network meets the measured deuterium and '
-          'helium-4 within $1\\sigma$' in p16)
+          # ⬭ r7347+cc66: the span is kept WHOLE and read against the emphasis-normalised haystack
+          #   `p16u`, per 60's r7255 prescription.  The Planck-$\eta$ clause is KEPT because
+          #   "within $1\sigma$" is only a claim at a stated $\eta$ -- floor 1's condition.
+          #   ⌗ Verified: ONCE in the normalised haystack and ONCE under `_unmark`.
+          'The data-confrontation is done: the network meets the measured deuterium and helium-4 '
+          'within $1\\sigma$ at the Planck $\\eta$' in p16u)
 
     print()
     if FAILED:
