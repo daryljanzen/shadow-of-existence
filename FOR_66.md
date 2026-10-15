@@ -20233,3 +20233,44 @@ on it"*) — and one ledger entry, `fb2d798ceb`, carries a literal **no longer i
 ⇒ ⛔ ***So the trunk cannot go green by my hand, and I am saying so once rather than guessing three
 verdicts to clear a red.*** *Three verdicts and a `--rebuild` for the stale entry, and `fast` is
 green. ⌗ Same line I held at `.47` and ⑨: an instrument is mine, a reading is yours.*
+
+## ⛔ `r7391+cc66.53` — **AND THE THREE `scoped` CHECKS ARE RED ON `main` AND ON FOUR OTHER LINES AT ONCE. THE REPO'S OWN LEDGER MARKS `S55` ⚠ CONTRADICTED: RED AND GREEN WHERE NOTHING IT READS DIFFERS**
+
+*Its own section because it is not `fast` and not any seat's diff. **Stood down on PR #457 with the
+evidence, once**, per the rule that a standing-down is never silent. ⌗ Every red that woke this
+session was on a head the branch has since replaced; head is `44dc6fdab`.*
+
+`scoped — the plain suite`, `scoped — the runner-read sweep` and `scoped — the tolerance
+perturbation` all fail on `main` itself — run `38791351771` at `dbfe8db85`. **And `scripts/red_carry.py`
+says more than "also red on `main`":**
+
+> `repeated` `S37_the_ground_disqualified_seventeen_of_its_authors_own_calls_and_six` — carried `5`,
+> cleared `0`, **on `5` line(s)** over `2.8` h
+> `repeated` `S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_th` — carried `12`,
+> cleared `7`, on `5` line(s) over `8.0` h
+> ⚠ **`CONTRADICTED`** `S55_the_previous_repairs_own_written_safety_argument_was_the_defect_be` —
+> carried `8`, cleared `5`, on `5` line(s) over `5.2` h
+> — *"red at `5d3d40b680` on `…xvkwh7`, green at `4d22257787` on `…6awafl` — **nothing it reads
+> differs between the two**"*, and four more such pairs
+
+⇒ ⛭ ***The programme's own instrument is reporting a non-deterministic receipt, and it is reporting it
+across five lines including the trunk.*** *So the `scoped` red is neither this branch's diff nor a
+deterministic fact about any line, and there is nothing for this seat to port: `S37`, `S54` and `S55`
+are other seats' receipts, and `S55`'s contradiction is the finding rather than a bug I can patch
+from here.*
+
+⌗ **I did not spend a manual re-run.** *The confirming re-run the rule allows is already in flight as
+`44dc6fdab`'s own `scoped` run from scratch; re-running a superseded head buys nothing. If
+`44dc6fdab` comes back red with a DIFFERENT cause, that one is mine.*
+
+⌗ ⛔ **What this is worth to you, and it is the only part that is not bookkeeping:** `S54` has cleared
+`7` of `12` and `S55` `5` of `8` — **so the carry ledger is doing its job and the receipts are
+flapping, not failing.** *A receipt that is red on one line and green on another with identical inputs
+is the `PO-60` class one level up: an instrument whose verdict is not a function of what it reads.
+**That is a registration, not a repair, and it is not re-ordered here** — it is reported because the
+ledger found it and because three seats are currently reading its red as their own.*
+
+⌗ *The `P7` repair at `.52` is validated beyond its own two gates: `check_exact_counts`,
+`check_prose_pins`, `check_marker_transposition`, `check_pin_board`, `check_citation_chain`,
+`check_glyph_coverage`, `check_pages_render`, `check_floats_carried` and `check_figures_shown` all
+pass on this tree — the nine a paper edit most endangers.*
