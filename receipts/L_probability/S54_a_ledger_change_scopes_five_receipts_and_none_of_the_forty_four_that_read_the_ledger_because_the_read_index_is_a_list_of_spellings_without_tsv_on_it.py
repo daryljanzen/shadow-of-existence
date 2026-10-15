@@ -63,11 +63,20 @@ either, so no entry anywhere in the index carries a `.tsv`.
   ⒞ `0` of them visible to any gate -- ** the point prediction, exactly. **
 
 ** ⛔⛭⛭⛭ AND THE ARM'S OWN INSTRUMENT HAD THE CLASS INSIDE IT. **  *The run named a SIXTH red: a
-receipt that DRIVES another seat's audit as a subprocess.  That audit fails on an import this
-container does not have, so the receipt parsed empty output and died on a `KeyError`.*  ⇒ ** It is
-dependency-missing one layer down, and the runner called it RED because it tests for the import error
-in the RECEIPT'S OWN stderr while the module surfaced in the stderr of the process it drove. **  *A
-classifier keyed on a spelling, in the wrong process's output -- and it inflated arm ⒜ by one.*
+receipt that DRIVES another seat's audit as a subprocess.  That audit failed on an import the
+container running the scope did not have, so the receipt parsed empty output and died on a
+`KeyError`.*  ⇒ ** It is dependency-missing one layer down, and the runner called it RED because it
+tests for the import error in the RECEIPT'S OWN stderr while the module surfaced in the stderr of
+the process it drove. **  *A classifier keyed on a spelling, in the wrong process's output -- and it
+inflated arm ⒜ by one.*
+
+** ⛔⛭⛭⛭ AND THE GATE THAT REPORTS THAT WAS THE CLASS AGAIN, ONE LEVEL UP. **  *Its first cut
+asserted the module was ABSENT FROM THIS CONTAINER -- an environmental fact written as a fact about
+the corpus -- and it went red on the runner, where that module IS installed and the audit exits `0`.*
+⇒ ** So the claim is proved BY CONSTRUCTION on a two-level fixture that needs no absent dependency,
+and what this machine happens to have is PRINTED and asserted of nothing. **  *The ninth instance of
+this phase's class, committed by this seat, inside the gate whose subject is that class, in the act
+of reporting it.*
 
 ** AND THE REGISTRATION'S OWN CLAIM IS NARROWED BY THE MEASUREMENT, WHICH IS WHY IT WAS PUSHED
 FIRST. **  `PREDICTION.md` said the standing instruction to stand down from `L259/D1` and
@@ -487,27 +496,65 @@ def main():
           and not re.search(r'receipts/\S*\.py', job))
 
     # ── ⛔ and the arm's own instrument carried the class ──────────────────────────────────────────
+    # ⛔⛭⛭⛭ r7364+60: AND THE FIRST CUT OF THIS GATE WAS THE CLASS AGAIN, ONE LEVEL UP.  *It asserted
+    #   that the driven audit FAILS on an import `absent from this container` -- an ENVIRONMENTAL
+    #   ABSENCE stated as a fact about the corpus.  On the runner, where that module IS installed,
+    #   the audit exits `0` and the gate went red: the ninth instance of this phase's class, written
+    #   into the very gate whose subject is that class, in the act of reporting it.*
+    #   ⇒ *** The defect being claimed is a property of the RUNNER'S LOGIC, not of this machine, so
+    #     it is proved BY CONSTRUCTION on a two-level fixture that needs no absent dependency: an
+    #     outer script drives an inner one that imports a module no tree has, and the outer dies the
+    #     way the receipt died.  The classifier's own rule is then evaluated on both stderrs. ***
+    #   ⌗ *What this container happens to have is PRINTED and asserted of nothing.*
+    import tempfile
+    with tempfile.TemporaryDirectory() as _fx:
+        _inner = os.path.join(_fx, 'inner.py')
+        _outer = os.path.join(_fx, 'outer.py')
+        io.open(_inner, 'w').write('import a_module_no_tree_has_xyz\nprint("rows")\n')
+        io.open(_outer, 'w').write(
+            'import subprocess, sys\n'
+            'r = subprocess.run([sys.executable, %r], capture_output=True, text=True)\n'
+            'scan = {int(l): 1 for l in r.stdout.split() if l.isdigit()}\n'
+            'print(scan[1996])\n' % _inner)
+        _in_r = subprocess.run([sys.executable, _inner], capture_output=True, text=True,
+                               errors='replace')
+        _out_r = subprocess.run([sys.executable, _outer], capture_output=True, text=True,
+                                errors='replace')
+    #: the runner's own rule, evaluated on each process's stderr
+    _rule_on_outer = 'ModuleNotFoundError' in _out_r.stderr
+    _rule_on_inner = 'ModuleNotFoundError' in _in_r.stderr
+    print(f'      the fixture: the DRIVEN process exits {_in_r.returncode} and its stderr carries '
+          f'the import error ({_rule_on_inner}); the DRIVING one exits {_out_r.returncode} with '
+          f'`KeyError` ({"KeyError" in _out_r.stderr}) and its own stderr carries the import error '
+          f'({_rule_on_outer})')
+    print(f'      ⇒ so the runner\'s test -- `ModuleNotFoundError in the receipt\'s own stderr` -- '
+          f'reads {_rule_on_outer} on a receipt whose dependency is missing one layer down, and '
+          f'classifies it RED')
     _aud = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7101_70_three_grid_audit',
                         'audit.py')
     _ar = subprocess.run([sys.executable, _aud], cwd=ROOT, capture_output=True, text=True,
-                         errors='replace', timeout=600)
-    _missing = re.search(r"No module named '([^']+)'", _ar.stderr)
-    _absent = subprocess.run([sys.executable, '-c', f'import {_missing.group(1)}']
-                             if _missing else [sys.executable, '-c', 'pass'],
-                             capture_output=True).returncode != 0
-    print(f'      the driven audit exits {_ar.returncode}; its own stderr names the absent module: '
-          f'{_missing.group(1) if _missing else "NONE"};  absent here: {_absent}')
+                         errors='replace', timeout=900)
+    _here = subprocess.run([sys.executable, '-c', 'import camb'], capture_output=True).returncode
+    print(f'      ⌗ REPORTED, asserted of nothing: on THIS machine the audit exits '
+          f'{_ar.returncode} and `camb` imports {"yes" if _here == 0 else "no"} -- which is why the '
+          f'run at the census saw the failure and why this gate must not assert it')
     check(f'Ⓔ④ ⛔⛭⛭⛭ AND THE SIXTH "RED" WAS DEPENDENCY-MISSING ONE LAYER DOWN, WHICH THE ARM\'S OWN '
-          f'INSTRUMENT GOT WRONG: the receipt DRIVES another seat\'s audit, that audit fails on '
-          f'`import {_missing.group(1) if _missing else "?"}` which is absent from this container, '
-          f'so the receipt parsed empty output and died on a `KeyError` -- and the runner called it '
-          f'RED because it tests for the import error IN THE RECEIPT\'S OWN STDERR while the module '
-          f'surfaced in the stderr of the process it drove.  ** A classifier keyed on a spelling, in '
-          f'the wrong process\'s output: the instrument built to measure how much is red had this '
-          f'revision\'s own class inside it, and it inflated arm ⒜ from {R["A_RED"]} to '
-          f'{R["A_RED_IF_MISCLASSIFIED"]} **',
-          _ar.returncode != 0 and bool(_missing) and _absent
+          f'INSTRUMENT GOT WRONG -- proved on a FIXTURE rather than on this container: a driving '
+          f'script whose driven script imports a module no tree has dies with `KeyError`, its own '
+          f'stderr carries NO import error ({_rule_on_outer}) while the driven one\'s does '
+          f'({_rule_on_inner}), so the runner\'s test classifies it RED.  ** A classifier keyed on '
+          f'a spelling, in the wrong process\'s output: the instrument built to measure how much is '
+          f'red had this revision\'s own class inside it, and it inflated arm ⒜ from {R["A_RED"]} '
+          f'to {R["A_RED_IF_MISCLASSIFIED"]}. **  ⛭ *And the FIRST CUT OF THIS GATE asserted the '
+          f'module was absent from this container -- an environmental fact stated as a corpus one, '
+          f'which went red on the runner where it is installed: the class again, one level up, in '
+          f'the act of reporting it*',
+          # the classifier property, by construction and two-sided
+          _rule_on_inner and not _rule_on_outer and 'KeyError' in _out_r.stderr
+          and _in_r.returncode != 0 and _out_r.returncode != 0
+          # and the reclassification as the RUN recorded it, read from the artefact
           and R['SIXTH_WAS_DEP'] is True
+          and len(SR['reclassified_dep']) == 1
           and R['DEP_AFTER'] == R['DEP_BEFORE_RECLASSIFY'] + 1
           and R['A_RED_IF_MISCLASSIFIED'] == R['A_RED'] + 1)
 
