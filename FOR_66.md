@@ -20184,3 +20184,52 @@ the `19` into this gate's population, and that is deliberate: widening the net w
 backlog, and the `19` are `69`'s harvest rather than an adjudicated vocabulary. **`r7385` ⑨ ⒞ says an
 addition joins the vocabulary after it is READ once. That read is yours, and the seed is sitting
 ready in `.50`.***
+
+## ⛔⛔ `r7391+cc66.52` — **THE `fast` RED HAS A SECOND LAYER AND IT IS `r7387`'s: `P7` MOVED AND THREE DERIVED VIEWS DID NOT. I CLEARED TWO OF THE THREE; THE THIRD IS A READING AND IT IS YOURS**
+
+*Its own section, because `.50` and `.51` are order answers and this is the trunk. **PR #457, draft,
+subscribed.** ⌗ Read from CI's step record on `6c62a1c13`, which is my own grain-currency fix.*
+
+**My step-`5` fix worked and uncovered the layer behind it.** On `6c62a1c13` CI now reports step `5`
+`success` and **step `6`, the gate loop, `failure`**:
+
+> `⛔ FAILED: check_depmatrix check_open_ledger check_open_ledger check_pages_current`
+
+⛭ ***All three are `P7` / `CR_framework`, and all three are `r7387` — the commit that grew `P7`'s
+canonical frontier list to four.*** *The paper moved; its derived views did not. ⌗ **That is the
+third instance this cycle of one shape: `r7391`'s register front vs the `CURRENCY` block, `r7387`'s
+`P7` vs `69`'s census index (`.50` ⒜), and now `r7387`'s `P7` vs its own three views.***
+
+### ✔ CLEARED, both with the repo's own tooling and nothing by hand
+
+- **`check_depmatrix`** — `P7`'s dependency-matrix row was stale in exactly two cells: `P15`
+  `36`→`37`, `P16` `15`→`16`, the citations `r7387` added. Ran `scripts/depmatrix.py` from `corpus/`,
+  replaced the one row at `corpus/CR_framework.tex:1540`, regenerated with
+  `scripts/gen_matrix_html_tbody.py`. ⌗ ⛭ **And the gate caught me half-doing it:** I refreshed the
+  LaTeX and not `BOOK_INTRO_cosmiCave/assets/dependency_matrix.html`, and it answered *"The same
+  claim in two places, and only one was refreshed — which is the correction-reaches-one-grain failure
+  exactly."* **It caught the precise failure it was built for, on me, in the same minute.** Now green
+  on all four of its own arms (rows, HTML companion, figure, ledger block).
+- **`check_pages_current`** — `paper_P7.html` was `2296` bytes behind its `.tex`. Ran
+  `scripts/gen_paper_html.py P7`. ⌗ *I read the diff as the gate instructs: it is `r7387`'s own
+  content catching up, and the telling line is* ***"Of the three below, one is work and two are
+  boundaries" → "Of the four below, two are work and two are boundaries."*** *The served book was
+  still publishing three.*
+
+### ⛔ NOT CLEARED, AND NOT MINE TO CLEAR: `check_open_ledger` NEEDS THREE VERDICTS
+
+Three qualifications in `CR_framework` carry **no verdict** in the ledger — `9177c52baf`
+(*"What is open is the crossing's matter dynamics"*), `cf8bd7a858` (*"What stays open on the interior
+side is the interior reassignment"*), `db7d54f2d8` (*"And it is open without anything above waiting
+on it"*) — and one ledger entry, `fb2d798ceb`, carries a literal **no longer in any paper**.
+
+**The verdict vocabulary is `DO-NOT-ASSERT` / `SCOPE-BY-DESIGN` / `STANDARD-PHYSICS` /
+`METHOD-PROSE` / `SELF-ANSWERED` / `REGISTERED` / `NAMED-UNBUILT` / `PRECISION` /
+`OPEN-DOWNSTREAM`.** ⛔ **Every one of those is a reading.** The gate's own words:
+
+> *"A GREP IS NOT A LIST OF WHAT IS OWED. It is a list of places to look, and the looking has to be
+> written down or it does not count."*
+
+⇒ ⛔ ***So the trunk cannot go green by my hand, and I am saying so once rather than guessing three
+verdicts to clear a red.*** *Three verdicts and a `--rebuild` for the stale entry, and `fast` is
+green. ⌗ Same line I held at `.47` and ⑨: an instrument is mine, a reading is yours.*
