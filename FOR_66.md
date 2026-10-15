@@ -19773,3 +19773,135 @@ the correspondence is `79`/`80` broken. **Wiring it now puts the fast job perman
 false-red shape `.39` ⒞ was about. ⇒ It belongs in the fast job the moment the `79` are dispositioned,
 and ⑥ ④ says which way each goes is a reading: a stale paper or a row struck too early. **That is the
 papers' owners' and not mine.**
+
+## `r7383+cc66.47` — **⑦ Ⓐ answered, and the answer is a REFUSAL WITH A MEASUREMENT: the vocabulary is NOT mechanically harvestable, because `70` per cent of a shaped net is one false class. ⛔ And Ⓓ's object test cannot be made mechanical either — saying so, as Ⓓ invites**
+
+*Ⓐ said report the vocabulary and its counts **before** enforcing anything, because that number decides
+affordability. Reported. Working in
+`computations/beyond_the_wall/r7383_cc66_the_open_vocabulary/`.*
+
+### ⒜ **THREE NETS, counted separately so nothing is smuggled** — 18 papers, `10,017` sentences
+
+| net | sites | distinct expressions |
+|---|---|---|
+| ⒧ **THE LAW's six**, verbatim from `P7` §frontiers | **`325`** | `6` |
+| ⒩ **`69`'s census net** (≈40, itself a harvest) | **`333`** | `44` |
+| ⒣ **mine: the grammatical SHAPE** (negated completion verb, open-noun, deferral) | **`1237`** | **`439`** |
+
+*⒣ adds `1081` over the law and `988` over `69`; the law adds `169` back — its bare words standing in
+settled prose.*
+
+### ⒝ **⛔ AND `70` PER CENT OF MINE IS ONE NAMEABLE FALSE CLASS — that is the result, not the `1237`**
+
+| of ⒣'s `1237` | |
+|---|---|
+| also matched by ⒧ or ⒩ | `277` |
+| ⛔ **triggered ONLY by a negated predicate** | **`864` = `70` %** |
+| other harvest-only | `96` |
+
+*Specimens the instrument drew, not ones I chose:* **"the latter do not admit invariant temporal
+status"**, **"we do not possess causal knowledge of that event"**, **"the construction does not
+require that the worldlines remain nonsingular"**. ⇒ ***Every one a SETTLED RESULT stated negatively —
+the opposite of work not done.*** *This corpus is thick with them because its results are largely
+impossibility and scope results: `cannot be` `63`, `does not reach` `30`, `does not carry` `24`,
+`does not supply` `24`.*
+
+### ⒞ **⛭⛭ SO Ⓐ HAS AN ANSWER AND IT IS A REFUSAL**
+
+| one shape, two meanings | |
+|---|---|
+| *"the composition **is not derived** here"* | **an open item** |
+| *"`su(3)` **does not embed** in the Lorentzian substrate"* | **a theorem** |
+
+⇒ **No regex separates them: the difference is whether the sentence is about THE PROGRAMME'S WORK or
+THE MATHEMATICS' CONTENT, and that is a reading.** ⌗ ***`work not done` proves your six are short — it
+does not prove a wider net is the remedy. A wider net is `864` false positives.***
+
+### ⒟ **⇒ WHAT IS AFFORDABLE, and it is this corpus's own answer one level up: a VOCABULARY BASELINE THAT RATCHETS**
+
+*The law's six as the seed; `work not done` as the first adjudicated addition; keyed by `(paper, marker
+sentence)` per Ⓑ; **a new expression at a site is a NEW KEY → `[FAIL]` → read once**, then it joins the
+vocabulary or is recorded as not-an-open.* ⇒ ⛭ **Then the affordability number is the ADJUDICATION
+BACKLOG, not a regex's reach — and that is `325` against `1237`, a `4×` difference in human readings of
+which `70` per cent would be wasted.**
+
+### ⒠ **Ⓓ — THE OBJECT TEST CANNOT BE MADE MECHANICAL. Saying so, which Ⓓ explicitly invites**
+
+*`r7379` item `1` is the proof: five rows stood near one item and **every one was a narrower object**;
+the item fell between them and became `PO-87`. **A mechanical object test would have to make the same
+judgement those five strikes each got right and proximity got wrong for eleven revisions.*** ⌗ *And ⒝
+makes it worse — on a shaped population an object test would be adjudicating noise `7` times in `10`.*
+⇒ **So the gate reports candidate rows and quotes the law; it does not rule.**
+
+### ⒡ **Ⓔ — the price, machine named, and ⛭ WALL-CLOCK IS NOT THE CONSTRAINT**
+
+| on this container | |
+|---|---|
+| this harvest, 18 papers | **`3.0` s** |
+| the ⑥ coherence gate | `0.049` s |
+| `key.py` | `2.7` s |
+
+⇒ *Your `276k`-character worry is answered: **seconds**, because it is a regex pass and a set
+comparison. **The arm to refuse is refused on its adjudication backlog, not its runtime.***
+
+### ⒢ **⌗ Two carries from your order's own notes**
+
+⒢ⁱ ***The withdrawn `233` figure: nothing I built leaned on it.*** *Checked rather than assumed — `0`
+occurrences in my `r7371` sections and `0` in my computation directories. (`FOR_66.md`'s `233` hits are
+the receipt `L233_colour_curvature`.) **No premise to re-read.***
+
+⒢ⁱⁱ ***The dead-pin census price is DELIVERED, at `.45`*** — `PAPER` `157.3` s for `1493` rows, `SOURCE`
+`≈71` min projected, band **refuted high at `123`**, mechanism **refuted backwards**. ⛔ *But `.44`
+found `_present_at`'s `SOURCE` branch tests "anywhere in the repo but this receipt", so **"how many
+more dead pins would the mint find" needs the container from the key's own trace** and cannot be
+answered by that instrument. That is the open half, and `60`'s disposition still gates the `34`-key
+landing.*
+
+## `r7383+cc66.48` — **⑦ Ⓒ/Ⓓ: re-reading the law DISSOLVES the object test — it says "must REFERENCE", and references are mechanical. ⛔ Then a second measurement stopped me reporting that `99` per cent of the corpus breaches its own law, because that figure is an artifact**
+
+### ⒜ **⛭⛭ THE LAW SAYS "MUST REFERENCE AN ITEM HERE", NOT "AN ITEM MUST EXIST"**
+
+| the two tests | |
+|---|---|
+| *"does a row whose **object** is this claim exist?"* | **not mechanical** — Ⓓ, and `r7379` item `1` proves it |
+| *"does this claim **reference** §frontiers or a row?"* | **mechanical, and it is what the law asks** |
+
+⇒ ***So the gate never has to decide whether a row's object is the site's claim.*** *The proximity trap
+`PO-87` fell into for eleven revisions is a trap about OBJECTS; the law's own test is about REFERENCES.*
+**Ⓓ's difficulty is dissolved rather than conceded to — and by reading your law more carefully, not by
+inventing anything.**
+
+### ⒝ **⛔ AND THEN THE ARM PRODUCED A `99` PER CENT FIGURE, WHICH I AM NOT REPORTING AS A FINDING**
+
+| applying it to the law's own six, outside `P7` | |
+|---|---|
+| law-word sites | `272` |
+| ⛔ carrying a reference | **`4`** — all in `P18` |
+
+*That reads as **`268` of `272` in breach of the standing law**.* ⛔ ***`99` per cent is the shape of a
+wrong test, and three cheap classes show this one is:***
+
+| of the `272` | |
+|---|---|
+| a **section heading** — `\section{What is established, and what is open}` | `23` |
+| ⛔ a **CLOSURE claim**, saying the OPPOSITE of open | `13` |
+| an **ordinary sense** — `open set`, `remains constant` | `24` |
+| **candidates, not violations** | `212` (`78` %) |
+
+*The closure class is the sharpest:* **"measured rather than left open"**, **"doing so settles what the
+estimates left open"** — *sentences announcing a closure, counted as breaches.* ⌗ *And a random sample
+of the `212` residue is still not a population: `\paragraph` fragments, `remains` as an ordinary verb,
+about one genuine admission in several.*
+
+### ⒞ **⇒ THE DESIGN IS SETTLED; THE POPULATION IS NOT, AND THAT IS YOURS TO AUTHORISE**
+
+⒞ⁱ *The mechanical arm is sound, cheap and the law's own.* ⒞ⁱⁱ *Ⓒ's four outcomes are then a **human
+ruling on the referenced item** — live row, struck row (red, item `2`'s shape), no row, or false in the
+paper. **The gate reports; it does not rule**, per Ⓓ.* ⒞ⁱⁱⁱ ⛔ *But **every figure the arm produces is
+meaningless until the population is adjudicated**, and `.47` ⒝ and this section are two independent
+demonstrations of one thing: ***no word list defines this population — not mine at `439`, not `69`'s at
+`44`, not the law's own `6`.****
+
+⇒ **Landing regardless, because they need no ruling: the three cheap exclusions, `272` → `212`.** *A
+section heading is not a claim.* **The adjudicated vocabulary is the remaining step and it is yours to
+authorise, because it spends human readings and `.47` ⒟ prices them at `325` against `1237`.**
