@@ -39,21 +39,19 @@ receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overc
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"0.0467"	SOURCE	py,tex	tex-present
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"2.19 (statistical, from COV_TT)"	SOURCE	-	tex-absent
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"Cooke"	SOURCE	-	tex-present
-receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"DU = np.array([delta_on("	SOURCE	-	tex-absent
-receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"INPUT"	SOURCE	py,tex	tex-present
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"It is not the sky's uncertainty"	SOURCE	-	tex-absent
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"NOT a re-opening of the phase intercept, the damping envelope, the driving or the refit, a"	SOURCE	-	tex-absent
-receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"PROCEDURE"	SOURCE	-	tex-present
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"SIGMA_RATE"	SOURCE	-	tex-absent
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"bank_already_existed"	SOURCE	-	tex-present
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"corpus measured"	SOURCE	py,tex	tex-absent
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"np.std(DU, ddof=1)"	SOURCE	-	tex-absent
-receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"phase_of(g, OA"	SOURCE	-	tex-absent
-receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"phase_of(g, OC"	SOURCE	-	tex-absent
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"rng.normal(0, mult, k)"	SOURCE	-	tex-absent
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"seven parabola windows the sky's $\\varphi/\\pi$ moves by $\\pm0"	SOURCE	-	tex-absent
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"x0 = 1.6648"	SOURCE	py,tex	tex-absent
 receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"x0=1.6648"	SOURCE	py,tex	tex-absent
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"COV_TT"	SOURCE	-	r7355+cc66: read through a helper or a parsed tree, so R* sees no file kind
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"that number is a PROCEDURE spread -- how far the answer moves as the parabola window is swept over seven values on ONE realisation of the sky"	SOURCE	-	r7355+cc66: read through a helper or a parsed tree, so R* sees no file kind
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"INPUT   x0 = 1.6648"	SOURCE	-	r7355+cc66: read through a helper or a parsed tree, so R* sees no file kind
 receipts/L_probability/S9_the_exposure_is_zero_so_the_count_judgement_was_right_and_the_class_was_already_registered_before_it.py	"L-258"	SOURCE	-	tex-present
 receipts/L_probability/S9_the_exposure_is_zero_so_the_count_judgement_was_right_and_the_class_was_already_registered_before_it.py	"a live register read negatively"	SOURCE	-	tex-present
 receipts/L_probability/S9_the_exposure_is_zero_so_the_count_judgement_was_right_and_the_class_was_already_registered_before_it.py	"pinned to the parent and carries the opposite live assertion"	SOURCE	-	tex-present

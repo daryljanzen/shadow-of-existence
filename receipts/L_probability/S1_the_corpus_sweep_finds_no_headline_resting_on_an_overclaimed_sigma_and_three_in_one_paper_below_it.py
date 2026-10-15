@@ -51,6 +51,7 @@ is the deliverable and every hit is routed to 66.  No other seat's receipt touch
 
 Written r7037 by node 70.  Stated for reversal.
 """
+import ast
 import glob
 import os
 import re
@@ -144,13 +145,56 @@ GROUP_I = [
      'P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demonstration_does_not_cover_it', {'COV'}),
 ]
 _LIKF = open(os.path.join(ROOT, 'computations', 'planck_tt_likelihood', 'chi2_of_spectrum.py'), encoding='utf-8').read()
+
+
+def _du_from_delta_on(src_text):
+    """how many module-level `DU = ...delta_on(...)...` assignments the source makes
+
+    ⌗ r7355+cc66: structural, because the pin it replaces was a character window cut on an open
+    parenthesis.  What the claim needs is that `DU` is BUILT FROM a call to `delta_on`, and that
+    survives any reformatting of the line it is written on.
+    """
+    tree = ast.parse(src_text)
+    return sum(1 for n in ast.walk(tree)
+               if isinstance(n, ast.Assign)
+               and any(isinstance(g, ast.Name) and g.id == 'DU' for g in n.targets)
+               and 'delta_on' in {c.func.id for c in ast.walk(n.value)
+                                  if isinstance(c, ast.Call) and isinstance(c.func, ast.Name)})
+
+
+def _phase_args(src_text):
+    """the positional NAMES `delta_on` passes to `phase_of` -- {'OA', 'OC', ...} if it compares arms"""
+    tree = ast.parse(src_text)
+    out = set()
+    for f in [n for n in ast.walk(tree) if isinstance(n, ast.FunctionDef) and n.name == 'delta_on']:
+        for c in ast.walk(f):
+            if isinstance(c, ast.Call) and isinstance(c.func, ast.Name) and c.func.id == 'phase_of':
+                out |= {a.id for a in c.args if isinstance(a, ast.Name)}
+    return out
 _CHI2 = _LIKF[_LIKF.find('def chi2_of('):]
 _CHI2 = _CHI2[:_CHI2.find('\ndef ', 10)]
 print('\n' + '=' * 100)
 print('PART (i) -- THE CLAIMS THAT STAND: each source carries a real noise model in its own code')
 print('=' * 100)
-check("the likelihood function `chi2_of` counted as COV evidence reads the covariance itself -- checked, not assumed",
-      'cov = COV_TT[np.ix_(keep, keep)]' in _CHI2)
+# ⬭⬭ r7355+cc66 (HAND-OFF take 4: 70's line, r7353 ②) -- REPAIR of a WHOLE-LINE SOURCE PIN.
+#   r7260+60: *** "a strictly shorter word-aligned span (`COV_TT`) carries the claim that the
+#   likelihood reads the covariance; THE FULL LINE PINS SPACING." ***  The ground is right about
+#   the defect and `COV_TT` alone is a bare token, so neither form is what the claim wants.
+#   ⇒ `r7353` ③: no pin on that line is admissible, so the repair is a STRUCTURAL ASSERTION --
+#     *** `chi2_of` is located in the parsed likelihood module and the names it SUBSCRIPTS are read
+#     off the tree. ***  Reformatting, renaming `keep`, or switching to `.take()` cannot break it;
+#     deleting the covariance read can.
+#   ⌗ Verified before performing: 1 `chi2_of` definition, subscripting
+#     `['BIN_HI', 'BIN_LO', 'COV_TT', 'X_DATA', 'mb']` -- so `COV_TT` is read there and the
+#     assertion is about the function rather than about a line of text.
+_CHI2_FN = [n for n in ast.walk(ast.parse(_LIKF))
+            if isinstance(n, ast.FunctionDef) and n.name == 'chi2_of']
+_CHI2_SUBS = {n.value.id for f in _CHI2_FN for n in ast.walk(f)
+              if isinstance(n, ast.Subscript) and isinstance(n.value, ast.Name)}
+check("the likelihood function `chi2_of` counted as COV evidence reads the covariance itself -- "
+      f"checked STRUCTURALLY, not assumed: {len(_CHI2_FN)} definition(s), subscripting "
+      f"{sorted(_CHI2_SUBS)}",
+      len(_CHI2_FN) == 1 and 'COV_TT' in _CHI2_SUBS)
 for what, name, need in GROUP_I:
     ev = set(evidence(name))
     check(f"(i) {what}", need <= ev, f"`{name[:60]}` carries {sorted(ev)}")
@@ -187,14 +231,39 @@ check("(ii)1 \"one standard deviation from the sky\": the intercept's +-0.0099 i
       not evidence(NP) and 'seven parabola windows the sky\'s $\\varphi/\\pi$ moves by $\\pm0' in t_np and '0.0099' in t_np, f"evidence {evidence(NP)}")
 check("    and the receipt that DID propagate the covariance through the locator says it does not re-open the "
       "intercept, and names the window spread as a procedure spread and not the sky's uncertainty",
-      'NOT a re-opening of the phase intercept, the damping envelope, the driving or the refit, a' in src(FP) and 'PROCEDURE' in src(FP)
+      # ⬭⬭ r7355+cc66, REPAIR of a one-word pin r7260+60 named: *** "a single upper-case word at
+      #   2 sites standing in for the whole procedure-spread claim." ***  (Measured now: THREE
+      #   sites, one of them inside the ORDER being quoted rather than the finding -- so the arm
+      #   could be satisfied by the question instead of the answer.)
+      #   ⇒ Widened to the sentence that says what a procedure spread IS, which is the claim.
+      #     The haystack is flattened, as the neighbouring conjunct already does.
+      #   ⌗ Verified before performing: ONCE flattened, once under `_unmark`.
+      'NOT a re-opening of the phase intercept, the damping envelope, the driving or the refit, a' in src(FP)
+      and 'that number is a PROCEDURE spread -- how far the answer moves as the parabola window '
+          'is swept over seven values on ONE realisation of the sky'
+          in ' '.join(src(FP).split())
       and "It is not the sky's uncertainty" in ' '.join(src(FP).split()))
 NS = 'P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control'
 t_ns = src(NS)
 check("(ii)2 \"better than seven standard deviations\": the +-0.000974 is the standard error over disjoint stretches of "
       "the phase difference between two COMPUTED spectra, with no noise anywhere in the source",
-      not evidence(NS) and 'DU = np.array([delta_on(' in t_ns and 'np.std(DU, ddof=1)' in t_ns
-      and 'phase_of(g, OA' in t_ns and 'phase_of(g, OC' in t_ns, f"evidence {evidence(NS)}")
+      # ⬭⬭⬭ r7355+cc66, REPAIR of THREE CLIPPED CODE PINS in one conjunction, every one of them
+      #   cut inside a call -- r7260+60: *** `DU = np.array([delta_on(` "CLIPPED on an open
+      #   parenthesis"; `phase_of(g, OA` and `phase_of(g, OC` "CLIPPED mid-call, the closing
+      #   parenthesis dropped: A CHARACTER WINDOW." ***
+      #   ⇒ `r7353` ③ again: a character window into source is not an admissible pin at any width,
+      #     so all three become ONE STRUCTURAL ASSERTION on the swept receipt's own tree --
+      #     *** `DU` is assigned from a call to `delta_on`, and `delta_on` calls `phase_of` with
+      #     BOTH `OA` and `OC`. ***  That IS the claim this check makes (a phase difference between
+      #     two COMPUTED spectra); the three windows only gestured at it.
+      #   ⌗ And it is immune to exactly what broke them: reformatting, line wrapping, renaming the
+      #     loop variable.  It still fails if the arms stop being compared or `DU` stops being
+      #     built from the comparison.
+      #   ⌗ Verified before performing: 1 `DU <- delta_on(...)` assignment; `phase_of` called
+      #     inside `delta_on` with positional names {OA, OC, a, b, g}.
+      not evidence(NS) and 'np.std(DU, ddof=1)' in t_ns
+      and _du_from_delta_on(t_ns) == 1 and {'OA', 'OC'} <= _phase_args(t_ns),
+      f"evidence {evidence(NS)}")
 BK = 'P15_the_bank_already_existed_and_the_doppler_carries_a_growing_minority_of_the_excess'
 R7033 = 'P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear'
 check("(ii)3 \"indistinguishable from zero at the lowest bands\": its source is the one r7033 gated as drawing no "
@@ -221,8 +290,15 @@ check("(iii)2 z_acc's +-0.0467: every script that carries it takes it as an INPU
       "receipt the paper cites for the equation does not carry it, and none computes the fit",
       os.path.exists(ALPHA) and 'INPUT   x0 = 1.6648 +- 0.0467' in open(ALPHA, encoding='utf-8').read()
       and '0.0467' not in src('P03_acceleration_is_slice_curvature')
+      # ⬭⬭ r7355+cc66, REPAIR of the VACUOUS ARM r7137+70.1 named: *** "'INPUT' passes on any
+      #   file carrying the word, so the disjunction asserts almost nothing." ***
+      #   ⌗ MEASURED ARM BY ARM OVER THE FOUR `CARRY` FILES BEFORE TOUCHING IT, so the tightening
+      #     could be shown to change no verdict: two pass on `corpus measured`; `ALPHA` passes on
+      #     `INPUT` (6 occurrences) AND on the strictly stronger `INPUT   x0 = 1.6648`; `JINT`
+      #     passes on `x0 = 1.6648`.  *** So the loose arm is load-bearing for exactly ONE file,
+      #     and that file satisfies the tight form too. ***  All four still pass.
       and all(('corpus measured' in open(os.path.join(ROOT, c), encoding='utf-8').read()
-               or 'INPUT' in open(os.path.join(ROOT, c), encoding='utf-8').read()
+               or 'INPUT   x0 = 1.6648' in open(os.path.join(ROOT, c), encoding='utf-8').read()
                or 'x0 = 1.6648' in open(os.path.join(ROOT, c), encoding='utf-8').read()
                or 'x0=1.6648' in open(os.path.join(ROOT, c), encoding='utf-8').read()) for c in CARRY),
       CARRY)

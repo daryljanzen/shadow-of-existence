@@ -18271,3 +18271,49 @@ much — it would have passed and I would not have known.** Fixed and re-run fro
 Extractor: `11` keys, all decided, no `UNDECIDED`, no annotation fault; `7` rows dropped (`6` owed + the
 `MEANING-HELD` clause now inside a span) and `6` added. The three mid-word `EXTENDED` rows in this
 receipt are **left as they stand** — more of the `88`.*
+
+---
+
+## `r7355+cc66.23` — **HAND-OFF TAKE `4`: `L_probability`'s `6` → `0`, ALL SIX CODE PINS. ⛭ FOUR BECOME ONE STRUCTURAL ASSERTION EACH, AND THE VACUOUS ARM WAS TIGHTENED ONLY AFTER MEASURING THAT IT CHANGES NO VERDICT**
+
+**`landed`: `L_probability` (`70`'s line, `r7353` ②) `6` → `0`; `REPAIR-OWED` `55` → `49`. ⌗ **`137`
+→ `49` this revision — eighty-eight rows.** `remaining`: `49`; next in the queue
+`L247_the_build_already_stands` (`8`).**
+
+**⓵ ALL SIX WERE PINS ON SOURCE CODE, AND THREE WERE CHARACTER WINDOWS CUT INSIDE A CALL.** *`60`'s
+words: `DU = np.array([delta_on(` **"CLIPPED on an open parenthesis"**; `phase_of(g, OA` and
+`phase_of(g, OC` **"CLIPPED mid-call, the closing parenthesis dropped: A CHARACTER WINDOW"**.* ⇒
+*`r7353` ③: a character window into source is not admissible at any width, so **all three became one
+structural assertion** on the swept receipt's own tree — **`DU` is assigned from a call to `delta_on`,
+and `delta_on` calls `phase_of` with both `OA` and `OC`**.* ⛭ ***That IS the claim the check makes***
+*(a phase difference between two **computed** spectra); the three windows only gestured at it — and it
+is immune to exactly what broke them: reformatting, line wrapping, renaming the loop variable.*
+
+**⓶ THE WHOLE-LINE PIN: `60` WAS RIGHT THAT THE LINE PINS SPACING, AND THE SHORTER SPAN IT OFFERED IS A
+BARE TOKEN.** *So neither form is what the claim wants. `chi2_of` is located in the parsed likelihood
+module and **the names it subscripts** are read off the tree: `['BIN_HI','BIN_LO','COV_TT','X_DATA',
+'mb']`. Deleting the covariance read fails it; reformatting cannot.*
+
+**⓷ THE ONE-WORD PIN HAD A THIRD SITE `60`'S READ DID NOT COUNT, AND IT MATTERS.** *The ground says
+`PROCEDURE` stands at "2 sites". **Re-measured: three — and one of them is inside the ORDER being
+quoted rather than the finding.*** ⇒ ***So the arm could be satisfied by the question instead of the
+answer.*** *Widened to the sentence that says what a procedure spread **is**.*
+
+**⓸ ⛭ AND THE VACUOUS `INPUT` ARM WAS TIGHTENED ONLY AFTER MEASURING THE WHOLE POPULATION IT GUARDS.**
+*`70` filed it at `r7137` as passing "on any file carrying the word". **Measured arm by arm over all
+four `CARRY` files, before touching it:** two pass on `corpus measured`; `ALPHA` passes on `INPUT`
+(`6` occurrences) **and** on the strictly stronger `INPUT   x0 = 1.6648`; `JINT` passes on `x0 =
+1.6648`.* ⇒ ***The loose arm is load-bearing for exactly one file, and that file satisfies the tight
+form too — so the tightening is provably verdict-preserving, not hopefully so.*** *All four still
+pass and the arm that could not fail is gone.*
+
+**⓹ ⌗ AND THE ANNOTATION TABLE DID ITS JOB, WHICH IS WORTH RECORDING AFTER THE `L548` SCARE.** *Three
+of the new keys file `UNDECIDED` — they reach their comparison through a helper, a glob or `ast.walk`,
+so `R*` sees no file kind — and each carries a hand-kept `corpus/target_annotations.tsv` row. **Five
+stale rows for the retired literals came out.** `0` annotation faults after the edit.* ⌗ *That is the
+designed path, not the `L548` defect: there the normaliser made a **decidable** key undecidable; here
+the key is genuinely undecidable from the trace.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, all five touched checks printing `[PASS]` with their
+measured values inline. Extractor: `21` keys, **`0` `[TARGET-ANNOTATION]` faults**; `6` baseline rows
+dropped and `3` added, `5` annotation rows dropped and `3` added.*
