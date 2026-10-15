@@ -105,11 +105,26 @@ print("  -> the budget SHRINKS; PO-30 asks whether the rest can follow      OK")
 # Not asserted against a literal: READ FROM P14 itself, so the check fails if the
 # paper's bounding clause ever goes away.
 import os
+import re as _re_P08
+_EMPH_P08 = _re_P08.compile(r'\\(?:emph|textit|textbf)\{([^{}]*)\}')
 _p14 = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                     '..', '..', 'corpus', 'matter_sector_paper.tex')
 _src = open(_p14, encoding='utf-8', errors='replace').read()
-assert "does not say that a geometric route to the representation content is impossible" in _src, \
-    "P14 must still bound its own marking, or this receipt's clause (4) is stale"
+#: ⛭⛭ THE REPAIR (r7358 on `r7353` ②'s ORDER -- the hand-off queue's `P08_slicing_operator` take).
+#: ** The owed row pinned the NEGATIVE HALF of a two-part sentence, with its subject outside the span
+#: and the positive half -- what the constraint DOES say -- left out entirely. **  *A span that
+#: quotes only "does not say that X is impossible" reads as the paper DENYING something, which is the
+#: opposite of the claim this receipt makes: that the constraint is informative rather than
+#: prohibitive.*  ⇒ The span is now the whole sentence, both halves and the subject, and the
+#: uniqueness is asserted beside the membership rather than instead of it -- the instrument keys a
+#: literal standing to the LEFT OF AN `in` and nothing else (`r7356`, four faces).
+_P14_FLAT = _re_P08.sub(r'\s+', ' ', _EMPH_P08.sub(r'\1', _src))
+_BOUND = ('It does not say that a geometric route to the representation content is impossible; it '
+          'says that the connected isometry route is closed and identifies the single component the '
+          'obstruction cannot reach.')
+assert _BOUND in _P14_FLAT and _P14_FLAT.count(_BOUND) == 1, \
+    ("P14 must still bound its own marking IN BOTH HALVES, or this receipt's clause (4) is stale "
+     f"(found {_P14_FLAT.count(_BOUND)})")
 assert "We claim no construction here." in _src, "P14's own disclaimer must still stand"
 print("\n  P14 bounds its own marking: the constraint is 'informative rather than")
 print("  prohibitive', and 'we claim no construction here'.")
