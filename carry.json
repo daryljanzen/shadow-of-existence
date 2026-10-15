@@ -70,27 +70,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38682447812",
     "since": "65a82a1d83375ca519b8ae476e9a076f4873cfdd"
    },
-   "receipts/L271_the_statistics_bake/S1_the_first_programme_is_a_power_calculation_and_the_design_it_proposes_is_the_expensive_one.py": {
-    "gates": [
-     "NameError @ L254"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38694335795",
-    "since": "d17a918e1477991d47753c81a3afde682e6af498"
-   },
-   "receipts/L277_the_unclaimed_surface/U1_a_survey_that_needs_the_list_cannot_find_what_is_missing_from_the_list.py": {
-    "gates": [
-     "NameError @ L154"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38695240897",
-    "since": "3e2e22b05002a3089e38bd91d72ff1f103ff790e"
-   },
-   "receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py": {
-    "gates": [
-     "\u21d2 AND THEY ARE ONE RULE AT TWO STATES: t"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38695240897",
-    "since": "3e2e22b05002a3089e38bd91d72ff1f103ff790e"
-   },
    "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
     "gates": [
      "\u24b8\u2461",
@@ -107,12 +86,13 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38693142380",
     "since": "a1a263e09553294ac1e14e316fc211b3001dbda3"
    },
-   "receipts/P10_canonical_time/P10_no_rescaling_discharges_the_log_and_the_one_mass_shift_that_does_is_the_curvature_offset.py": {
+   "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
     "gates": [
-     "NameError @ L191"
+     "\u24bb\u2461",
+     "\u24bc\u2462"
     ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38695240897",
-    "since": "3e2e22b05002a3089e38bd91d72ff1f103ff790e"
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38697273015",
+    "since": "62cb1dc62743e25ac60fdd3e63cc33dc37579b8d"
    }
   },
   "tolerance": {
