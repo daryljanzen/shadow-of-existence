@@ -130,7 +130,9 @@ def main():
     check('⓶ N1: "Lovelock" occurs 0 times in P12 at eda3ad7 (r2515, its own build) and is present '
           'now -- the fork\'s c54.202 added it',
           'Lovelock' not in p12_then
-          and 'the same algebra closes for the Lovelock theories' in live)
+          and '\\emph{That forcing is dimension-dependent}: the same algebra closes for the Lovelock '
+              'theories~\\cite{TeitelboimZanelli1987}, which coincide with general relativity only in four '
+              'dimensions' in live)
     p0_then = flat(git('show', 'aa2b6ee:corpus/geometric_core_paper.tex'))
     # ** r6931+70.1: RE-POINTED, class (b) DISCHARGED -- and at what discharged it. **  The c54.179
     #    split sentence ("The item has two sides and they now stand differently, so it is split rather
@@ -152,8 +154,11 @@ def main():
           and 'item has two sides and they now stand differently' in p0_split
           and 'e one fact.\'\' \\emph{The test has two sides, and each has been run.}' in _p0_live
           and '\\emph{On the constant side}, \\S\\ref{sec:ledger} states that the gravitational--cosmological--quantum sector spends \\emph{n' in _p0_live
-          and '\\emph{On the datum side}' in _p0_live
-          and 'for want of work}\\rcpt{X1_the_ratio_is_a_clock_reading_not_a_carried_datum}' in _p0_live
+          and ('\\emph{On the datum side}, $\\rho_r/\\rho_m$ is a matter initial condition and not a constant, so '
+               'it is not in the geometric residue at all, and it is a clock reading rather than a datum a '
+               'handover transmits. \\emph{It cannot be derived from the progenitor collapse, for a '
+               'structural reason rather than for want of work}'
+               '\\rcpt{X1_the_ratio_is_a_clock_reading_not_a_carried_datum}') in _p0_live
           and 'Reach: stated as a target, not a result' not in live)
     p7_then = flat(git('show', 'e8e58cf:corpus/CR_framework.tex'))
     seg_then = p7_then[p7_then.find('\\section{Frontiers and open problems}'):]
