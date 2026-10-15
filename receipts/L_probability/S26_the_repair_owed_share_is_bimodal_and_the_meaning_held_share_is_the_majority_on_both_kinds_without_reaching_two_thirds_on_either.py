@@ -276,7 +276,10 @@ print('\n── Ⓖ  THE SECOND INSTANCE OF THE SAME LATENT SHAPE, AND WHY IT IS
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 _Q1 = ('receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_'
        'gap.py')
-_q1_src = read(_Q1)
+# ⌗ r7339+70 (ported, for 60 to confirm or replace): Q1 is read at AFTER, the state this revision
+#   verdicted, not live -- r7339+70.5 withdrew the bare OPEN test with its case, and r7335's
+#   three-way rule reads what the revision found at the revision's own commit.
+_q1_src = _git('show', f'{AFTER}:{_Q1}')
 _q1_bare = "'PO-5' in po and 'OPEN' in po" in _q1_src
 _q1_intro = _git('log', '--diff-filter=A', '--format=%H%x00%s%x00%B', '-1', '--', _Q1)
 _q1_rid = re.search(r'\br(\d{4,})\b', _q1_intro.split('\x00')[1] if '\x00' in _q1_intro else '')

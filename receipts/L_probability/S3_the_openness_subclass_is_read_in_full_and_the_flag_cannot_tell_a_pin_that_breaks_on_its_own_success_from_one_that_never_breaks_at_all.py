@@ -317,11 +317,13 @@ gate("Ⓑ③ᵇ ⌗ and the five grounds DISCRIMINATE rather than excuse: not on
 # ============================================================ C. same literal, opposite failure
 head("C.  ⓶ THE SAME TOKEN IN THE SAME FILE, FRAGILE ONE WAY AND VACUOUS THE OTHER")
 
-Q1 = open(os.path.join(ROOT, 'receipts', 'L221_quark_lepton',
-                       'Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py'),
-          encoding='utf-8').read()
-B15 = open(os.path.join(ROOT, 'receipts', 'L221_the_bridge', 'B15_po3_both_clauses_answered.py'),
-           encoding='utf-8').read()
+# ⌗ r7339+70 (ported, for 60 to confirm or replace): the two sources are read at `SRC_AT`, this
+#   receipt's last content commit -- the finding is about the shapes they carried then, and r7339+70.5
+#   withdrew Q1's bare OPEN test, which read live turned these gates red (r7335's three-way rule).
+SRC_AT = '9ce054ba'
+Q1 = show(f'{SRC_AT}:receipts/L221_quark_lepton/'
+          'Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py')
+B15 = show(f'{SRC_AT}:receipts/L221_the_bridge/B15_po3_both_clauses_answered.py')
 # ** ⛭⛭ AND THESE TWO READS ARE WRITTEN AS TWO-STATE COVERS ON PURPOSE.  *** A receipt whose finding
 #   is that another receipt's expression is defective must not pin that expression in a form that goes
 #   red when it is REPAIRED -- that is the very class this file is about, and committing it here would
@@ -394,9 +396,8 @@ gate("Ⓒ④ ✔ THE MUST-COME-BACK-WRONG CONTROL: `Q1`'s condition is not a tau
 # ============================================================ D. the ALT flag measures syntax
 head("D.  ⓷ THE `ALT` FLAG IS A SYNTAX DETECTOR, AND IT IS WRONG IN BOTH DIRECTIONS")
 
-Z1 = open(os.path.join(ROOT, 'receipts', 'L202_phase_at_the_seam',
-                       'Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py'),
-          encoding='utf-8').read()
+Z1 = show(f'{SRC_AT}:receipts/L202_phase_at_the_seam/'
+          'Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py')   # ⌗ r7339+70, as Q1
 _z1_arms = ['not claimed BOTH WAYS', 'not claimed both ways']
 _z1_one_state = _z1_arms[0].casefold() == _z1_arms[1].casefold()
 _ARC_HAS = 'the row is not claimed BOTH WAYS here'

@@ -176,7 +176,9 @@ _SEVEN = ('L165_defining_the_sum', 'L175_dimensional_descent', 'L202_phase_at_th
           'L269_the_second_theatre', 'P12_algebroid', L557)
 _tab = {}
 for _p in _SEVEN:
-    _vd, _ro, _mh = pfx_share(_rn, _p)
+    # ⌗ r7339+70 (ported, for 60 to confirm or replace): the table is this revision's claim, so it
+    #   is read at AFTER -- live, a later repair stride moved L202 and L221 under it (r7335's rule).
+    _vd, _ro, _mh = pfx_share(_ra, _p)
     if _vd:
         _tab[_p] = (_vd, 100.0 * _ro / _vd, 100.0 * _mh / _vd)
 for _p, (_vd, _r, _m) in sorted(_tab.items(), key=lambda kv: -kv[1][1]):
