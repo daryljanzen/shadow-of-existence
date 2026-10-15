@@ -17720,3 +17720,40 @@ keys, all decided, no annotation fault; `3` dropped, `2` added. Counts taken wit
 `norm()` (comment lines stripped, whitespace flattened), not a plain read — `a closed-form nonlinear
 solution` also appears in a `%`-commented block that `norm()` drops, so a plain count would have been
 wrong in the other direction.*
+
+---
+
+## `r7355+cc66.11` — **`L563` CLOSES AND ITS RECEIPT IS NOW PIN-FREE TOO: `5` ROWS → `0` KEYS. ⛭ ONE SEEDED REGISTER CARRYING ONE ROW OF EVERY CLASS DECIDES ALL THREE CLAIMS IN ONE RUN**
+
+**`landed`: `L563_the_split_partition` `3` owed → `0`, and `5` ledger rows → `0` keys; `REPAIR-OWED`
+`95` → `92`. ⌗ **Eleven blocks, `137` → `92`.** `remaining`: `92` owed; next `L560_pins_into_moving_prose`
+(`3`).**
+
+*All three were proxies on live tool code (`scripts/row_splits.py`), and `r7291+69` named each the same
+way: **"a comment marker and the apply loop's own iterable standing for the behaviour `escapes both
+classes`; a rewrite of the loop that keeps the behaviour breaks the pin, and one that keeps the text
+but not the behaviour passes it."*** ⇒ *`r7353` ③ again, and `69` had already prescribed the shape —
+"owed a check that runs the tool on a split-and-short row and sees it escaped" — so the seed is built
+to the prescription rather than invented.*
+
+**⛭ THE SEED IS ONE REGISTER WITH ONE ROW OF EVERY CLASS, which is what lets a single run decide all
+three claims:** *two modal rows; a **blind-fixable** row whose in-span pipe escapes onto the mode; a
+**split-and-short** row whose escape is lossless and still lands off the mode; and a **mis-bounded
+on-count** row — modal cell count with a raw bar inside a span, which is the one the tool must report
+and **not** write, and the one invisible to every count-based check (this receipt's own ⓺).*
+
+> `applied` → **`(0, True, True, True, True, True, True)`** *— exit `0`; `1 BLIND-FIXABLE` and `1 SPLIT
+> AND SHORT` both reported by name; `REPORTED AND NOT WRITTEN` printed; **and on disk: `L-902` escaped,
+> `L-903` escaped, `L-904` byte-identical.** The last three are the claim the heading only stood for.*
+> `no_band` → **`(1, True, True)`** *— exit `1`, the refusal printed, the file byte-identical. Seeded
+> because it is what makes seeding `--apply` safe at all: a register is shared, and the tool must
+> refuse to write outside a named band.*
+
+⌗ **And this is the second receipt tonight to come out carrying no quote pins at all** *(after `L267`).
+Two `NOT-A-PIN` rows retire with the three owed — `"REFUSING TO APPLY WITHOUT --band"` and `"dry run"` —
+because the strings they verdicted are gone from the source. **Both are now asserted as behaviour
+instead**, which is the same direction as `L267`'s two `DELIBERATE` rows: the ratchet loses rows only
+by turning the right way.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines; both tuples printed in the receipt's own output; extractor
+`0` sites in `0` receipts, so all five baseline rows were stale by construction and all five removed.*

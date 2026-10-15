@@ -168,11 +168,63 @@ def main():
           f'come out with every raw bar structural -- they were ESCAPABLE, and only the SHAPE-ONLY '
           f'rows ever needed a reader',
           len(both_rows) > 0 and len(escapable) == len(both_rows))
-    tool = open(os.path.join(ROOT, 'scripts', 'row_splits.py'),
-                encoding='utf-8', errors='replace').read()
-    check('⇒ and the tool is corrected with it: it escapes both classes and reports which rows are '
-          'still off the mode, instead of refusing the ones that are',
-          'CORRECTED c54.230' in tool and 'fixable + both' in tool)
+    # ⬭⬭⬭ r7355+cc66 -- THE THREE OWED ROWS HERE WERE PROXIES ON LIVE TOOL CODE, and r7291+69
+    #   named each one the same way: *** a comment marker and the apply loop's own iterable
+    #   "standing for the behaviour `escapes both classes`; a rewrite of the loop that keeps the
+    #   behaviour breaks the pin, and one that keeps the text but not the behaviour passes it." ***
+    #   ⇒ `r7353` ③'s disposition: no pin is admissible, so the repair is a STRUCTURAL ASSERTION
+    #     and the rows retire as repaired-and-invisible.  69 even prescribed the shape -- *"owed a
+    #     check that runs the tool on a split-and-short row and sees it escaped"* -- so the seed is
+    #     built to that prescription rather than invented.
+    #   ⌗ ONE SEEDED REGISTER CARRIES ONE ROW OF EVERY CLASS, which is what makes the run decide
+    #     all three claims at once: a modal row, a BLIND-FIXABLE row (escaping lands it on the
+    #     mode), a SPLIT-AND-SHORT row (the escape is lossless and it stays off the mode), and a
+    #     MIS-BOUNDED ON-COUNT row (modal count, raw bar inside a span).  *The last is the one the
+    #     tool must REPORT and NOT WRITE, and it is invisible to every count-based check -- which
+    #     is this receipt's own ⓺.*
+    import shutil
+    import tempfile
+    _SEED_ROWS = [
+        '| L-900 | plain | ok |',
+        '| L-901 | plain | ok |',
+        '| L-902 | a `x|y` b | ok |',
+        '| L-903 | a `x|y` b | c | d |',
+        '| L-904 | a `x|y` b |',
+    ]
+    splits = {}
+    with tempfile.TemporaryDirectory() as td:
+        os.makedirs(os.path.join(td, 'scripts'))
+        shutil.copy(os.path.join(ROOT, 'scripts', 'row_splits.py'), os.path.join(td, 'scripts'))
+        reg = os.path.join(td, 'SEED.md')
+        open(reg, 'w', encoding='utf-8').write('\n'.join(_SEED_ROWS) + '\n')
+        _tool = os.path.join(td, 'scripts', 'row_splits.py')
+        # ⓐ the REFUSAL, which is what makes the apply loop safe to seed at all
+        _r0 = subprocess.run([sys.executable, _tool, '--file', 'SEED.md', '--apply'], cwd=td,
+                             capture_output=True, text=True, errors='replace', timeout=300)
+        splits['no_band'] = (_r0.returncode, 'REFUSING TO APPLY WITHOUT --band' in _r0.stdout,
+                             open(reg, encoding='utf-8').read() == '\n'.join(_SEED_ROWS) + '\n')
+        # ⓑ the apply, in a band this seed owns
+        _r1 = subprocess.run([sys.executable, _tool, '--file', 'SEED.md', '--apply',
+                              '--band', '900-999'], cwd=td, capture_output=True, text=True,
+                             errors='replace', timeout=300)
+        _after = open(reg, encoding='utf-8').read().split('\n')
+        splits['applied'] = (
+            _r1.returncode,
+            '1 BLIND-FIXABLE' in _r1.stdout,
+            '1 SPLIT AND SHORT' in _r1.stdout,
+            'REPORTED AND NOT WRITTEN' in _r1.stdout,
+            _after[2] == '| L-902 | a `x\\|y` b | ok |',        # blind-fixable: ESCAPED
+            _after[3] == '| L-903 | a `x\\|y` b | c | d |',     # split-and-short: ESCAPED TOO
+            _after[4] == '| L-904 | a `x|y` b |',               # mis-bounded on-count: UNTOUCHED
+        )
+    print(f'    ⌗ seeded row_splits: {splits}')
+    check('⇒ and the tool is corrected with it: SEEDED -- run on a register carrying one row of '
+          'each class it escapes the BLIND-FIXABLE row AND the SPLIT-AND-SHORT one, reports both '
+          f'by name, and leaves the mis-bounded on-count row untouched: {splits["applied"]}',
+          splits['applied'] == (0, True, True, True, True, True, True))
+    check('⇒ and it still REFUSES to write without a band, because a register is shared: SEEDED, '
+          f'{splits["no_band"]} -- exit 1, the refusal printed, and the file byte-identical',
+          splits['no_band'] == (1, True, True))
 
     # ⓷ the invariant, and that it is what makes the class safe
     lines = live.split('\n')
@@ -251,8 +303,12 @@ def main():
           'worse by the metric and right by the boundary -- one goes 5 -> 3 -- so the metric a gate '
           'baselines on is the thing in question, and moving rows under a baseline while disputing '
           'the baseline is not a repair',
-          'REPORTED AND NOT WRITTEN' in open(
-              os.path.join(ROOT, 'scripts', 'row_splits.py'), encoding='utf-8').read())
+          # ⬭ r7355+cc66: this read only that a printed HEADING was present in the live
+          #   source, and r7291+69 is exact about the hole -- *"the heading can stay while the
+          #   apply loop starts writing those rows."*  The seed above decides the behaviour
+          #   itself: the mis-bounded on-count row `| L-904 ... |` comes out of `--apply`
+          #   BYTE-IDENTICAL while its two neighbours are escaped, which is the claim.
+          splits['applied'][3] and splits['applied'][6])
     check('⛭ and the duplicated `L-551` the two sweeps produced is resolved by the invariant rather '
           'than by preference: the copy kept is the one whose every raw bar is structural, and the '
           'dropped copy contributed no word the kept one lacks',
