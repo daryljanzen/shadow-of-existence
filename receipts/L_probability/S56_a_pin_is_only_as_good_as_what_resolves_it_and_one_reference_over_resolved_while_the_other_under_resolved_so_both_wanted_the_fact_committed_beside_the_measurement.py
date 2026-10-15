@@ -270,17 +270,40 @@ def main():
 
     # ── Ⓖ every touched receipt RUN ───────────────────────────────────────────────────────────────
     head('Ⓖ.  EVERY RECEIPT THIS REVISION TOUCHED, RUN HERE RATHER THAN CITED')
+    #: ⛔⛭⛭ r7370: ** AND "RUN HERE, NOT CITED" COMPOUNDS WHEN A RECEIPT THAT RUNS RECEIPTS IS
+    #: ITSELF RUN. **  *The first form of this clause ran all six, and `S55` is one of them -- and
+    #: `S55`'s own `Ⓖ①` runs six more, including `S51`.  So this file took `S55`'s whole cost plus
+    #: five, the suite paid for `S51` three times over (directly, through `S55`, through here), and
+    #: one receipt's run time became the product of a chain rather than the sum of a list.*
+    #:   ⇒ *** The convention is right and its COST IS NOT LINEAR.  A receipt that runs receipts is
+    #:       asserted on the CHANGE THIS REVISION MADE TO IT, not re-run whole: it is in the suite's
+    #:       own scope and the suite runs it once, which is where running it belongs. ***
+    #: ⌊ *So the five that run nothing are RUN, and `S55` is read for the one thing this revision
+    #:   changed in it -- which is a stronger claim about this revision's work than its exit code.*
+    _NESTS = ('S55_',)
     _rcs = {}
     for p in REDS + MORE:
+        if p in _NESTS:
+            continue
         rel = one(p)
         _rcs[p[:-1]] = subprocess.run([sys.executable, os.path.basename(rel)],
                                       cwd=os.path.join(ROOT, os.path.dirname(rel)),
                                       capture_output=True, text=True, errors='replace',
                                       timeout=2400).returncode
     print(f'      run here, not cited: {_rcs}')
-    check(f'Ⓖ① all {len(_rcs)} receipts RUN from their own directories and every one exits zero: '
-          f'{_rcs}',
-          len(_rcs) == 6 and all(v == 0 for v in _rcs.values()))
+    print(f'      not re-run, and why: {list(_NESTS)} runs six receipts of its own, so running it '
+          f'here makes this file\'s cost a product rather than a sum -- it is in the suite\'s scope '
+          f'and the suite runs it once')
+    check(f'Ⓖ① all {len(_rcs)} receipts that run nothing themselves are RUN from their own '
+          f'directories and every one exits zero: {_rcs}',
+          len(_rcs) == 5 and all(v == 0 for v in _rcs.values()))
+    check('Ⓖ①ᵃ ⛭ and `S55` is asserted on THE CHANGE THIS REVISION MADE TO IT rather than re-run '
+          'whole: its id filter is gone, its restraint reads the whole session-filtered range, and '
+          'it is registered in the index so the suite runs it -- which is a stronger claim about '
+          'this revision\'s work than its exit code would be',
+          "_r68 = _own" in _s55 and "'r7368' in git(" not in _s55
+          and os.path.basename(one('S55_')) in open(
+              os.path.join(ROOT, 'receipts', 'INDEX.md'), encoding='utf-8').read())
 
     print(f'\n{BAR}')
     if FAILED:
