@@ -63,13 +63,6 @@
  },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
-   "receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py": {
-    "gates": [
-     "\u24f8\u1d47"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38682447812",
-    "since": "65a82a1d83375ca519b8ae476e9a076f4873cfdd"
-   },
    "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
     "gates": [
      "\u24b8\u2461",
