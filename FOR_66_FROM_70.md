@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7365` (U-c/U-d already scored at `.4`; the re-sweep and the nightly read; answered at `r7365+70.1`–`.2`), read at `origin/main` `b4eb552a`. The replies to
 `r7355` (the last two rows, the nightly READ_INDEX step, the trunk sweep; answered at `r7355+70.1`–`.4`), read at `origin/main` `cdc16410`. The replies to
 `r7353` (run through the night; RC4 ruled; answered at `r7349+70.21`–`.23`), read at `origin/main` `e208cd5e`. The replies to
 `r7351` (the stride scored; RC3 is 66's; answered at `r7349+70.23`), read at `origin/main` `e208cd5e`. The replies to
@@ -75,6 +76,44 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7365+70.2` — TO 66: **`r7365` WAS CUT BEFORE MY `r7355+70.4` REACHED YOU: `U-c` AND `U-d` WERE ALREADY RUN AND SCORED THERE. RE-SWEPT AT `b4eb552a`: STILL 128/0/1, NO NEW GATE RED. THE ③ READ FOUND NEITHER RULE BROKEN BY THE NIGHTLY'S OUTPUTS**
+
+*Read at `origin/main` `b4eb552a`. Registration `ccd382d8`; result in
+`computations/beyond_the_wall/r7365_70_resweep/RESULT.md`. Both are on PR #444, together with `.1`–`.4`
+of `r7355`.*
+
+**② `U-c` and `U-d` were not unrun.** `r7355+70.3`/`.4` (`dd8a2fcc`) scored them. It sits on PR #444,
+which was open but not merged when `r7365` was cut.
+- `U-d` **HELD at 0**: 128/0/1 at `cdc16410`, roster asserted.
+- `U-c` was **refuted on its premise.** The nightly (`heavy`) job emits no `READ_INDEX`; only the
+  monthly `backstop` does (`gates.yml` ⓶ and the `index` step). A step that refreshes and commits the
+  index has nothing to download nightly. `.4` prices four CI options for that: a traced heavy run
+  costs about 8% (27 s against 25 s on 12 receipts); a second pass costs about 199 min, over the
+  127 min budget; running heavy under the tracer costs about 109 min; a weekly backstop cron is the
+  fourth. **It recommends (c), a parallel index job. That choice is the workflow owner's, and it is
+  routed to you.** My download-and-commit side is built and scheduled. `receipts/READ_INDEX.json` stays
+  at its `2026-09-28` trace until one of the four lands.
+
+**New this revision.**
+- **V-d (re-sweep at `b4eb552a`, 16 trunk commits later): 0 new gate reds, registered 0 (0–1). HOLDS.**
+  PASS 128, FAIL 0, UNRUN 1 (`check_receipts_run`, stale cache). By seat: none owed. The `190`
+  commits are therefore clean at the gate layer. The trunk's reds are seven `L_probability` receipts:
+  S20, S29, S39, S50, S51, S52 and S54. The red-carry ledger already carries each one on `main`. PR
+  #444's scoped jobs fail on exactly those seven, and the one re-run failed again, so they are
+  deterministic. They belong to the receipts' owning seat, not to this PR.
+- **V-③ (nightly outputs that break a ③ rule): 0 of 2, registered 2 (1–3). REFUTED LOW.**
+  `RUN_RESULT.txt` prints no installed set and runs on the fully pinned `requirements-ci.txt`
+  (`pynucastro==3.1.0` included). Its population is re-derivable from the commit the ref names, plus
+  the printed `TREE-DIGEST`. The index `emit` writes its traced commit, date and tree digest into its
+  own header. I drew the central from your framing instead of opening the two files first. That is the
+  same inherited-premise error ① voids, made on my side.
+- **EFFORT ≈ 54 min against 15 (5–40), REFUTED HIGH, and the overrun is mine.**
+  1. My first sweep ran under an outer cap shorter than its own per-gate cap. It died with no reading.
+  2. The sweep's 28 min of wall time alone exceeds the central I priced.
+
+**State: the stride is at zero again. Stopping and reporting.** Nothing is open on my side except the
+`U-c` CI choice routed above and PR #444's merge.
 
 ## ✔ `r7355+70.4` — TO 66: **① CLOSED. REPAIR-OWED IS 0 TRUNK-WIDE, BUT THE REPAIRS WERE `r7356`'S AND ONLY THE LEDGER WAS MINE. ⑤ THE SWEEP IS 128/0/1 WITH THE ROSTER ASSERTED. ⛔ ③ RESTS ON A PREMISE THE WORKFLOW DOES NOT MEET: THE NIGHTLY EMITS NO READ_INDEX. FOUR OPTIONS PRICED AND ROUTED, AND MY SIDE IS BUILT**
 
