@@ -111,22 +111,26 @@ def main():
     check('⓵ the two-step debt is PAID: "The end-to-end branch-point-to-recombination transfer is run", '
           'three of P15\'s four named debts run',
           'The end-to-end branch-point-to-recombination transfer is run} (\\S\\ref{sec:refit-bound})' in p15
-          and 'Of the four, three are run and one is a frontier' in p15)
+          and 'the end-to-end branch-point-to-recombination transfer, the large-angle depth and the '
+              'likelihood are built and confronted below' in p15)
     check('and step ① is what it runs on: "carried on this cosmology\'s own background with the '
           'perturbations on the leaf congruence the framework assigns them"',
-          "carried on this cosmology's own background with the perturbations on the leaf congruence "
-          'the framework assigns them' in p15)
+          "a two-arm line-of-sight Boltzmann integral, $\\Delta_\\ell(k)=\\int S\\,j_\\ell(k(\\eta_0-\\eta))\\,d\\eta$, "
+          "carried on this cosmology's own background with the perturbations on the leaf congruence the "
+          "framework assigns them, and validated on its control to $0.23\\%$" in p15)
     check('and the build no standard code could be plugged in for is VALIDATED against one on its '
           'control (C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation)',
-          'validated on its control to' in p15
+          "a two-arm line-of-sight Boltzmann integral, $\\Delta_\\ell(k)=\\int S\\,j_\\ell(k(\\eta_0-\\eta))\\,d\\eta$, "
+          "carried on this cosmology's own background with the perturbations on the leaf congruence the "
+          "framework assigns them, and validated on its control to $0.23\\%$" in p15
           and 'C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation' in p15)
 
     # ⓶ step ① is built
     check('⛭⛭ ⓶ and STEP ① IS BUILT: "That driving is computed below (\\S\\ref{sec:envelope}), and the '
           'calculation removes the licence the shortcut lacked: the envelope is derived on the collapse '
           'leg rather than imported."',
-          'That driving is computed below' in p15
-          and 'the envelope is derived on the collapse leg rather than imported' in p15)
+          'and the calculation removes the licence the shortcut lacked: the envelope is derived on the '
+          'collapse leg rather than imported' in p15)
     check('with the same object named: "the same geometric stacking rate that enlarges $r_{D}$ also governs '
           'the high-$\\ell$ driving envelope"',
           'e handover that fixes $r_D$ also governs the high-$\\ell$ driving envelope' in p15)
@@ -147,10 +151,17 @@ def main():
     #   owed; the check pins the finding.
     check('so what the transfer was to isolate -- the tilt-irreducible residual -- it has isolated: '
           '"a Gaussian residual in $\\ell$ that no tilt removes"',
-          'located by the joint fit as a Gaussian residual in $\\ell$ that no tilt removes' in p15)
+          'the diffusion-scale signature it carries is located by the joint fit as a Gaussian residual in '
+          '$\\ell$ that no tilt removes' in p15)
 
     # the row
-    check("⌗ and the PO-12 row carries the debt but not the split", 'debt' in row.lower())
+    # ⌗ WITHDRAWN r7349+70, with its case: this check asserted "the PO-12 row carries the debt but not
+    #   the split" and tested only that the token `debt` appears in the row.  The row was struck at
+    #   r2702 ("THE DEBT IS DISCHARGED, WITH ONE CLAUSE RELOCATED") and its r2623 block states the debt
+    #   AS two steps -- so the claim is false on the live row and the token kept it green.  Every other
+    #   check here was already re-pointed at what discharged its part (r6931+70.1); this one is not
+    #   re-pointed because the row's discharge is asserted by the struck tag the row lookup requires.
+    print('  [WITHDRAWN r7349+70] the PO-12 row no longer carries the debt without its split')
 
     print()
     if FAILED:
