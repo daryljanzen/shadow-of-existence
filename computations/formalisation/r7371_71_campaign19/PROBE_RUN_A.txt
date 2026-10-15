@@ -1,0 +1,15 @@
+# r7371+71.9 — campaign 19: lake env lean probes/Row77Killing.lean (2026-10-15T18:40:17Z); wall time printed, asserted of nothing
+probes/Row77Killing.lean:74:13: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+'ShadowProbe.killF_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.killF_coord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.coord_not_killing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.gowdy_coord_not_killing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.rot_killF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.gowdy_rot_not_killing' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 9 s

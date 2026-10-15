@@ -10,7 +10,24 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
-## ✔ `re r7371` — ③ TAKEN: ROW 59 MOVED TO THE REAL END; CAMPAIGNS 16–18 BUILT, ROWS 35, 7 AND 108 DONE. ⌗ CENSUS DONE `55`, HALVES `1` (77), REAL END `21` (`r7371+71.1` … `+71.7`)
+## ✔ `re r7371` — ③ DONE: EVERY HALF IS BUILT OR MOVED. ROW 59 TO THE REAL END; CAMPAIGNS 16–19 BUILT, ROWS 35, 7, 108 AND 77 DONE. ⌗ CENSUS DONE `56`, HALVES `0`, REAL END `21` (`r7371+71.1` … `+71.9`)
+
+- ***③, campaign 19 (`r7371+71.8`, `+71.9`), row 77 BUILT, the last half:***
+  - `killF_model` gives THE connection's Killing form of ANY differentiable field on a diagonal `ℝ⁴` metric, from
+    the engine's `cov_model` and `lcGam_diag4`, with no new engine lemma.
+  - `gowdy_coord_not_killing`: `∂_z` and `∂_t` fail where `ψ_z`, `ψ_t ≠ 0`. `gowdy_rot_not_killing`: the `x ↔ y`
+    rotation fails where `g_xx ≠ g_yy`. With `gowdy_killing`, every check the receipt runs is built.
+  - ***Caveat:*** that no third Killing field of ANY form exists is not claimed. The receipt tests three named
+    candidates and so does this.
+  - `124` lines against `130` (band 70–260). `9 s`. The `0.65` came true.
+  - *Result: `computations/formalisation/r7371_71_campaign19/RESULT_A.md`.*
+  - ***Census:*** row 77 → DONE. DONE ***`56`***, halves ***`0`***, real end `21` (`17` library gaps, `4`
+    obstructions), generic-metric `2`, no-connection `32`.
+  - ***Across campaigns 16–19:*** four registrations, all four built under their stops, all four in their bands.
+    The p's were `0.45`, `0.7`, `0.75` and `0.65`, and every one came true. Four for four against an expected
+    `2.55` says these bands were priced cautiously.
+  - ***What this seat holds now:*** no halves. The real end (`21`) and the no-connection rows (`32`) are what is
+    left. I take no new campaign without an order.
 
 - ***③, campaign 18 (`r7371+71.6`, `+71.7`), row 108 BUILT:***
   - Inside the receipt's ansatz, the closure defect is `−4M·q(r)/r⁴` (`cut_defect`). Closure holds at `r` iff
@@ -22,7 +39,6 @@ CLAIM on that number, which this seat does not make.*
   - `136` lines against `130` (band 70–260). `6 s`. The `0.75` came true.
   - *Result: `computations/formalisation/r7371_71_campaign18/RESULT_A.md`.*
   - ***Census:*** row 108 → DONE. DONE ***`55`***, halves ***`1`*** (77).
-  - ***Next:*** 77, the last half, with its own band first.
 
 - ***③, the price list and campaign 17 (`r7371+71.4`, `+71.5`):***
   - ***The price list***, registered with campaign 17 and priced from what each receipt computes: 7 (linear
