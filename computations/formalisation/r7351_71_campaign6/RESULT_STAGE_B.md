@@ -1,4 +1,4 @@
-# `r7351+71.6` — RESULT, stage B: the non-diagonal engine lands, and row 83 with it. ⌗ THE connection of the squashed `S⁵` has `R = 24 − 4t²` (at `y = 0`), the value the receipt quotes from O'Neill, now computed from a metric. ⌗ `467` lines against `350` (band 200–500, ⛔ stop `600`): in the band. ⌗ Compile time `239 s` against a registered `≈ 30` minutes, `7.6×` under: the registered multiplier `m = 4` was wrong by about `12×`. ⌗ Row 62 is not in this landing
+# `r7351+71.6` — RESULT, stage B: the non-diagonal engine lands, and row 83 with it. ⌗ THE connection of the squashed `S⁵` has `R = 24 − 4t²` (at `y = 0`), the value the receipt quotes from O'Neill, now computed from a metric. ⌗ `467` lines against `350` (band 200–500, ⛔ stop `600`): in the band. ⌗ Compile time `239 s` against a registered `≈ 30` minutes, `7.6×` under: the registered multiplier `m = 4` was wrong by about `12×`. ⌗ Row 62 is REPORTED: its object is a rank over jets, not a pointwise identity
 
 *Scored against `PREDICTION.md` in this directory (pushed at `r7351+71.1`). It is not revised. Every new axiom line is
 `[propext, Classical.choice, Quot.sound]`, with no `sorryAx` (`PROBE_RUN_STAGE_B.txt`). The engine file is not
@@ -88,13 +88,20 @@ diagonal layers never needed.
 | Stage B lands under its stop | `0.45` | ***yes***, `467` |
 | row 83 is built from a metric | (registered as stage B's first instance) | ***yes, at a point*** |
 
-## Row 62 is not in this landing
+## Row 62: REPORTED, because the frame does not reduce to coordinates
 
-- It was priced at `0.4×` of 83, conditional on "the frame reduces to coordinates".
-- Its object is a left-invariant FRAME on `S³` with a non-diagonal `exp(εH)`, expanded to `ε⁴` over jets, and its
-  integrated seven are global on `S³` (`r7337`).
-- `curvG` works in coordinates. Whether the frame reduces to them is the next question. Until then it stays
-  `GENERIC-METRIC IDENTITY`.
+The registration's condition was "62 if the frame reduces to coordinates". It does not, and the reason is the object
+rather than the frame. From `r7337`'s reading, which was opened then and not re-opened here:
+- the receipt's object is `R[exp(εH)]` in the LEFT-INVARIANT orthonormal frame, with `C^c_ab = 2ε_abc` and `H` a
+  general symmetric perturbation that varies over `S³`;
+- its claims are RANKS of `1104` contractions over the jets of `H`, expanded to `ε⁴`.
+
+`curvG` gives the curvature of a given metric at a point, in coordinates. The round `S³` in a chart is within its
+reach. A rank over a jet space of a varying `H` is not a value at a point: it is linear algebra over symbolic jets,
+of a size no table here approaches.
+
+***Obstruction, named:*** a jet-space rank claim, not a pointwise identity. The row stays `GENERIC-METRIC IDENTITY`.
+It does not leave the list by this reclassification of its reason, and it is not done.
 
 ## Census (moved in this push)
 

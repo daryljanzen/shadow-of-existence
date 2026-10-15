@@ -29,8 +29,9 @@ CLAIM on that number, which this seat does not make.*
 - ***The census, moved in the same push:*** DONE `43`, halves ***`12`*** (+ 83), generic-metric ***`4`*** (6, 20,
   58, 62), real end `20`. *`r7353` ② counts generic-metric at `8`; that was before `r7351`. It was `5` after stage
   A and is `4` now.*
-- ***Next, tonight:*** row 62, if its left-invariant frame reduces to coordinates on `curvG`; else REPORTED with
-  that named.
+- ***Row 62 is REPORTED.*** The frame does not reduce to coordinates in the sense that matters: the object is the
+  ranks of `1104` contractions over the jets of a varying `H`, not a value at a point. It stays generic-metric.
+- ***Next, tonight:*** a registration for the next block before anything is built, pushed on its own.
 - *CI on #439: the red scoped jobs are the main-side carry (`S7`, `E1`, `D1`), also red on main's own push of
   `e208cd5e1`. One comment on the PR. Nothing ported, because there is no fix to port.*
 - *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
