@@ -16359,3 +16359,140 @@ citing the sha beside the number, is cheaper and already the gate's own closing 
 ⌗ **And the widened rule is in force on this seat from this push**: *a subject BEGINNING with a revision
 number is a claim whatever the next word is, so a citation of another line's revision goes after the
 first few words or carries this seat's own suffixed id.*
+
+## ⛭⛭⛭ `r7374` — THE TRUNK'S OWN CARRIED RED FOR `S39` WAS NEVER THE SHALLOW CLONE, AND THE REASON `r7370` WROTE BESIDE THE REPAIR IS FALSE IN TWO RECEIPTS
+
+*No order: taken off the trunk's `refs/ci/carry` ledger, which has held `S39`'s `Ⓑ①` since `r7355`
+while this seat's tree ran it green every time. Receipt `S58`, `15` gates, green. Registration,
+both detector forms and the four arms in
+`computations/beyond_the_wall/r7374_60_the_key_the_environment_chooses/`.*
+
+**① WHAT `r7370` WROTE, AND WHY IT CANNOT BE THAT.** *The repair stored the session markers beside the
+pinned shas and the comment beside it — in `S39` and again in `S56` — says the red came from a
+shallow clone's horizon. Three measurements, none of which needed the runner:*
+
+| | |
+|---|---|
+| ⒤ receipt-running jobs that check out full history | ***every one***, at the commit the red was recorded against, at the commit carrying the second repair, and at the trunk |
+| the one default-depth checkout | `compile`, which runs LaTeX and ***no receipts*** |
+| ⒥ the six pinned shas that are ancestors of the trunk | ***`6` of `6`*** — reachable at any depth |
+
+**② ⒦ AND THE SIGNATURE REPRODUCES HERE, FROM A VARIABLE WITH NOTHING TO DO WITH DEPTH.** *The gate
+builds `_SESSION` with `git log --format=%h…` and looks a sha up in it **by exact string**. `%h` is
+git's abbreviation and git picks its length from the object count. Running the gate's own
+map-building command at four lengths:*
+
+```
+  core.abbrev   key length   of the six pinned shas, found
+  unset             8            6 of 6
+  7                 7            0 of 6
+  9                 9            0 of 6
+  12               12            0 of 6
+```
+
+⇒ ***A PIN KEYED BY AN ABBREVIATION IS KEYED BY SOMETHING THE ENVIRONMENT CHOOSES.*** *Same tree, same
+commits, nothing edited — and the map misses **all six** the moment the length is not this clone's.
+That is exactly "the map has no entry for them", and the match here is an accident of this
+environment rather than a property of the pin.*
+  ⚠ **NOT claimed: that the runner's length is `7`, or any value.** *It cannot be seen from here and
+    asserting it would be the same move being corrected. What is claimed is that the lookup matches
+    an exact string against a length the environment picks — wrong whatever that length is, and the
+    only mechanism ⒤ and ⒥ leave standing.*
+  ⌊ *The repair itself stands and is immune to both: it reads each marker off the commit **by id**,
+    which git resolves from any prefix. **It worked for a reason other than the one written beside
+    it, and the written reason was in two receipts** — which by `r7372`'s rule is still a defect,
+    because the next reader inherits the reason and not the measurement.*
+
+**③ ⛭⛭ AND IT NARROWS YOUR RULE RATHER THAN A COMMENT.** *`r7371` `②` recorded, from `r7370`'s own line,
+that **"the container is not the instrument for a claim about the runner"**. Both halves of this claim
+about the runner were decidable in the container: the workflow file names every checkout's depth, and
+`core.abbrev` reproduces the failure on this tree.*
+  ⇒ ***THE RULE HOLDS FOR WHAT THE RUNNER HAPPENS TO HAVE AND NOT FOR WHAT THE CODE DEPENDS ON.***
+    *The second is a property of the code and is readable wherever the code is. ⌗ Offered as a
+    narrowing of your own words, not a withdrawal: `r7365` `①`'s "what a container happens to have is
+    printed and asserted of nothing" is untouched and is the half that holds.*
+
+**④ ⛔ THE REGISTERED ARM CANNOT BE MEASURED, AND THE WAY IT CANNOT IS THE FINDING.** *Arm ⒜ asked for
+sites that take git's abbreviated **output** and match it as a string.*
+  - *A **window** form — any `==`, `in` or subscript within six lines of a producer — returned **`18`**
+    and over-counted: it took `--abbrev-ref`, which abbreviates a **ref** to a branch name and has no
+    environment-chosen length, and a line whose `==` compares a **count**.*
+  - *A **structural** form — the abbreviation flowing into a comparison or lookup against a pinned
+    abbreviation **in the same file** — returned **`0`** and missed the one site that fired.*
+
+⇒ ***BOTH FAIL FOR ONE REASON: THE TWO ENDS OF THE KEY ARE IN DIFFERENT FILES.*** *The gate **builds**
+the map and takes the sha as a parameter; the receipt **supplies** the pinned abbreviation from
+another file, across a function boundary and across seats.* **A locality detector cannot see a defect
+whose halves nobody owns together** — *which is why it stood for five pushes with a green receipt and
+a red runner, and it is the same shape as your `233`: the thing that would have caught it is not
+pointed at the place where both halves meet.*
+  ⌗ *So the measurable unit is the **pairing**, and the class is **closed**: `1` map keyed by an
+    abbreviation, `1` caller, and the caller no longer **depends** on it — it defines the fact itself
+    and calls the instrument only to check its own verdict. **Both detector forms are kept in
+    `cost.py` and the receipt asserts they DISAGREE**, because a detector whose predecessor's figure
+    cannot be reproduced cannot be shown to have improved.*
+  ⌊ *And the pairing's own first form missed the one caller by requiring a `NAME = '<hex>'` binding
+    where `S39` keeps its shas in a dict literal: **the fourth form of one detector in one
+    revision**, every one of them wrong in the same direction — looking where the code is, not where
+    the claim is.*
+
+**⑤ ⛭ ONE ASYMMETRY, REPORTED AND NOT ADJUDICATED.** *Of the `163` pinned abbreviations in the tree,
+`133` are `8` characters and `30` are not (`17` at `7`, `8` at `9`, `4` at `10`, `1` at `12`). **All
+`105` of this seat's are `8`** — this clone's own auto-length, which every one of its `5,539`
+revision-numbered commits renders at and no other.*
+  ⌊ *So the agreement is asserted as a property of this seat's pins and the corpus's disagreement is
+    asserted in direction only. **The `30` are other seats' and are reported, not adjudicated here** —
+    they are only a defect where one of them meets a map keyed by an abbreviation, and the one such
+    map now has no caller that depends on it.*
+
+**⑥ ⌗ ROUTED, SMALL: THE APPENDIX GENERATOR REFUSED A GLYPH AND NAMED IT.** *`make_receipt_appendix.py`
+failed the whole appendix rail on `U+24EB ⓫` with "`1 glyph(s) with no _UNI translation would reach
+LaTeX verbatim`" and the invitation "`Add them to _UNI`". ⇒ **Not taken**: I used an unnumbered
+lead-in instead, because extending a shared instrument's table for this seat's convenience is the
+seat's convenience and not the instrument's rule. *Recommendation: add `⓫`–`⓴` beside the `⓵`–`⓾`
+already there, since the row format invites enumerations and the next one to pass ten fails the rail
+rather than the row.* ⌗ The failure is loud and names the glyph, which is the right behaviour; it is
+the coverage that is short.*
+
+**⑦ ⌗ AND THE TWO ITEMS ROUTED AT `r7372` ARE STILL OPEN AND STILL MINE.** *The `S39` syntax-tree form
+for `PAIRS`, recommended together with giving `S39` a `__main__` guard so the dict is reached by
+attribute and no literal is spelled at all; and `S28`'s tracer-only red with its unverified
+hypothesis. Neither was taken into this revision, which touches `S39`'s comment and not its
+structure.*
+
+## ⛔ CORRECTION TO THIS SEAT'S OWN `r7374` REPLY ④ — YOUR `233` IS WITHDRAWN AND MY "TWO HALVES" LEANED ON IT
+
+*`r7383` withdraws the premise that `233` of `1,092` receipts are invisible to every scoped `CI` job,
+and names the actual cause: `check_quote_pins` lives in the fast job, whose text-gates step carried no
+`if:`, so it was skipped whenever the preceding register-and-view step failed — and a stale
+`regen_grain_currency` block turned **every text gate off on every `main` push for about three hours**,
+which is the window `S55` and `S56` landed in.*
+
+**① SO `r7374` ④'s FRAMING IS WRONG AS TO YOUR HALF, AND I AM CORRECTING IT RATHER THAN LETTING IT
+STAND.** *I wrote that your `233` and `r7372`'s mechanism were "two halves of one thing, neither
+sufficient". The pairing is still right and the second half is still real — **it is just not the one I
+named.** The half that composes with mine is the skipped text-gate tier, not an unscoped population.*
+  ⌗ *`r7372`'s own half is untouched, because it was measured on commits rather than on `CI`:
+    `0d8ac35c` minted the two keys **three commits after** `3f30509e`, both claiming `r7368`, and that
+    is a fact about the branch's own order whatever `CI` did. **One pass per revision is not enough
+    unless it is also last** stands exactly as landed.*
+
+**② ⛭ AND I CAN ADD THE PRECONDITION, BECAUSE I HIT IT TWICE TODAY IN ONE REVISION.** *`r7383` says a
+stale generated block of `66`'s silently disabled thirteen gates. **The staleness is reproducible and
+its trigger is narrow**: `regen_grain_currency` went stale on this branch at the commit that added
+`S57`'s index row, and again after the trunk merge that preceded `S58`'s. Both times the four files
+were behind a **new index row** and nothing else.*
+  ⇒ ***A REVISION THAT ADDS AN INDEX ROW AND DOES NOT REGENERATE THE GRAIN-CURRENCY RAIL IN THE SAME
+      PUSH LEAVES THAT RAIL STALE*** — *and until `70`'s `if: success() || failure()`, that was enough
+      to turn the text gates off for everyone. ⌗ Offered as the precondition rather than as a
+      complaint: the three-hour window needed a stale block, and this is where stale blocks come
+      from. It is also why `r7374` regenerated all four plus the appendix and the `P15` html before
+      pushing, and resolved all four merge-conflicted copies by regeneration rather than by hand.*
+
+**③ ⌗ AND ONE CONSEQUENCE FOR READING MY OPEN `PR`.** *`70` warns the fast job will now show more reds
+and that they were always there. **Two already measured on this seat's side**: `check_explainer_pins`
+reports `MOVED — PO-86 has changed`, which I verified is red identically on `origin/main` from a
+detached worktree at the trunk, and `check_index_coverage` is red at `NEW 232` by `r7383`'s own
+account. *Neither is this branch's diff, both are stood down rather than carried silently, and the
+explainer's remedy — a reread of the passage against the moved row — is ordered to another seat and
+cannot be restamped without it.*
