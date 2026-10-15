@@ -221,6 +221,14 @@ def main():
     #     value instead of its wished-for one.
     #   ⌗ Read at the pin with the residue, because a distance between two sentences is a fact
     #     about the paragraph as it stood, and it retires when the residue does.
+    #   ⛭ TIGHTENED r7355+cc66.27, against this block's own first form.  It was written
+    #     `n_sent <= 4`, and `check_prose_pins` flagged it as a NEW pin on a count -- correctly.
+    #     *** A `<= 4` bound admits 3 and 4, neither of which is "two sentences earlier", so the
+    #     slack made the assertion WEAKER THAN THE CLAIM IT LABELS -- and the comment four lines
+    #     above already said `n_sent == 2`, so the code contradicted its own prose. ***
+    #   ⇒ ** The haystack is read at `P14_PIN`, so the count cannot move while the pin holds: an
+    #     equality is immovable here for exactly the reason a slack bound is unnecessary. **  The
+    #     headroom was protecting against nothing and hiding the claim's own number.
     p14_pin = flat_at(P14_PIN, 'corpus/matter_sector_paper.tex')
     _raw_pin = raw_at(P14_PIN, 'corpus/matter_sector_paper.tex')
     i_dim, i_res = p14_pin.index(dim), p14_pin.index(residue)
@@ -232,7 +240,7 @@ def main():
     check(f'   with the residue {i_res - i_dim} characters and {n_sent} sentence-ends later, across '
           f'{n_para} paragraph break(s) -- the paragraph IMMEDIATELY BEFORE, two sentences on, and '
           f'not a distant echo (r7143 claimed the SAME paragraph and that is false, see above)',
-          0 < i_res - i_dim < 900 and n_sent <= 4 and n_para == 1)
+          0 < i_res - i_dim < 900 and n_sent == 2 and n_para == 1)
 
     # THE POINT: the bounding sentence names no route
     routes = [w for w in ('holonomy', 'isometry', 'flat', 'bundle', 'monodromy', 'winding')

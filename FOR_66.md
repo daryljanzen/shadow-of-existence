@@ -18470,3 +18470,82 @@ it again deliberately, after reporting it as an error, would make the report wor
 
 *⛭ **Until you answer I will keep the gate reported and the branch pushed, and I will not start on
 another seat's rows.** `PR #435`, every revision pushed, nothing waiting on the chat window.*
+
+---
+
+## `r7355+cc66.27` — **a SECOND ratchet was feeding on my repairs all night, and the one assertion it caught was genuinely weaker than its own label**
+
+> **`landed`** — `check_prose_pins` green (`152`/`152`, `rc=0`), three sites adjudicated, one of them
+> tightened first. **`remaining`** — `REPAIR-OWED` `29`, all on `60`'s list (`14`) or `70`'s (`15`);
+> the decision at `.26` is still open and I have still not started another seat's rows.
+
+### ⒜ **What happened: `fast` went red on a gate I had never looked at, and the cause was mine**
+
+*The `fast — registers, views, IDs` check has been red on this PR since `r7343`, and I commented on
+it then: the failing gate was `check_order_acknowledged`, red on node `70`, and byte-identical on
+`main`.* ⛭ ***That is no longer true, and I would have kept reporting it as "the known `main`-side
+cause" if I had not read the log instead of the check name.***
+
+```
+   60    order r7351  acknowledged r7347  lag 4  own unanswered 2
+   70    order r7351  acknowledged r7349  lag 2  own unanswered 1
+   71    order r7351  acknowledged r7345  lag 6  own unanswered 3
+   cc66  order r7351  acknowledged r7355  lag -4  own unanswered 0
+  5 seat(s); no order is sitting unread.
+```
+
+**`70` read its orders, so the gate I blamed now PASSES — and `fast` is red on `check_prose_pins`
+instead**, which is a *different gate with a different baseline*, and which **three sites introduced
+by tonight's own repairs** had just broken:
+
+| site | where it came from |
+|---|---|
+| `n_sent <= 4` | `L550` `M1`, my corrected distance check (`.5`) |
+| `n_para == 1` | `L550` `M1`, same check |
+| `len(_CHI2_FN) == 1` | `L_probability` `S1`, the `r7353` ③ structural assertion (`.23`) |
+
+⌷ ***I have been feeding `quote_pin_baseline.tsv` for twenty-seven sections and did not know that a
+`check()` on a COUNT lands in a second ledger with its own ratchet.*** *Every structural repair I made
+tonight that counts something — and `r7353` ③ makes counting the default repair when no pin is
+admissible — adds a row that gate demands. **That is a standing cost of ③ and it is worth saying out
+loud: the invisible-pin shapes at `.21` have a mirror image here, a VISIBLE assertion in a ledger I
+was not reading.***
+
+### ⒝ **One of the three was not a false positive. The gate was right about my own work.**
+
+*Two are honest count pins and one is not a count at all, but the first one I had written wrong:*
+
+```python
+0 < i_res - i_dim < 900 and n_sent <= 4 and n_para == 1     # as I wrote it at .5
+0 < i_res - i_dim < 900 and n_sent == 2 and n_para == 1     # as it now stands
+```
+
+⛔ ***A `<= 4` bound admits `3` and `4`, and neither of those is "two sentences earlier" — which is
+the receipt's TITLE.*** *So the assertion was weaker than the claim it labels; and the comment eight
+lines above it already said `n_sent == 2`, so **the code contradicted its own prose, in the same
+block where I was repairing exactly that defect in other people's receipts.*** Measured: `529`
+characters, `2` sentence-ends, `1` paragraph break.
+
+⇒ **The slack was protecting against nothing.** *The haystack is read at `P14_PIN = 593fe7ba8`, so
+the count cannot move while the pin holds — an equality is **immovable here for precisely the reason
+the headroom was unnecessary**, and it retires with the residue, which is what the pin comment
+already said.* Receipt `rc=0`, no `FAIL` line.
+
+- **`n_para == 1` — `DELIBERATE`, and this count IS the finding rather than a proxy for it.** *`r7143`
+  claimed the bound and the residue stand in the same paragraph; the measured `1` is what refutes it.
+  Taken on the RAW text because flattening destroys the thing being counted.*
+- **`len(_CHI2_FN) == 1` — `NOT-A-COUNT`.** *A list of `ast.FunctionDef` nodes off a parsed module is
+  a uniqueness assertion over a **parse tree**, not a tally of matches in text: reformatting, renaming
+  a local or rewrapping a line cannot change it. Precedent `len(mr) == 6` (`r7151+cc66.112`).*
+  ⛭ **And the site exists BECAUSE a text pin was removed** — `r7353` ③ ruled no pin on that line
+  admissible, so *the thing this gate flagged is the repair, not the defect.*
+
+### ⒞ **What I am NOT doing**
+
+*I am not widening the tightening into a sweep.* ⌷ **There are `70` `PIN`-tier rows in that baseline
+and I have read three.** *If `<= 4`-for-`== 2` is a class rather than my own slip, the other `67` are
+where it would live — and that is a measurement, not a guess, so it goes on the instrument list at
+`.26` ⒝ rather than into this push.*
+
+*⛭ `PR #435`, pushed. The `fast` check should now turn on `check_prose_pins`; the three `scoped`
+checks I am reading next.*
