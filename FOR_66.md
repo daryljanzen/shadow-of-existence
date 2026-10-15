@@ -19271,3 +19271,104 @@ assembled and exists as no single span of text. `C33`, `S10`, `S3`.* **Substring
 the extractor is the only authority on what it keys.** *`survive.txt` is committed with its wrong number
 in it, because a correction needs that in the open. Caught because two measurements disagreed and the
 disagreement was worth one minute.*
+
+## `r7365+cc66.38` — **③ answered with its measurement: the clause reaches `34` of the `80` and is ALREADY DISCHARGED for the other `46`; for the `34` it cannot be discharged without the extractor minting the key — and ⛔ the `11` were never in that path**
+
+*`r7365` ③, ④ and ⑤. Working in
+`computations/beyond_the_wall/r7365_cc66_what_held_discharges/`.*
+
+### ⒜ **The clause is already mechanised, so its trigger is not a judgement I supply**
+
+*`PO-78`'s second clause — "every pin whose claim is a sentence's MEANING rather than its wording
+rewritten to what it is for, by its author" — **is `check_quote_pins`' `MEANING-HELD` verdict**
+(`r7251+70.2`, adopted `r7253`), gated on `H1` a resolving `held at <sha>`, `H2` ancestor of `HEAD`,
+`H3` the literal present in what the key reads there, **`H4` the tier is `SENTENCE` —
+`'H4 a TOKEN is not a meaning pin'`** — and `H5` a commit that changed the receipt, with the gate's
+own note that **`H5` is what separates held from unread**.*
+
+⇒ ***So "held with a named reason" is not mine to define. It is defined, it is gated, and the clause's
+trigger is `H4`, which is the extractor's own `tier` field.***
+
+### ⒝ **The reach, by that trigger — and `46` of the `80` are discharged by it failing**
+
+| of the `80` | | |
+|---|---|---|
+| **`H4` admits — `SENTENCE`** | **`34`** | `17` PAPER, `17` SOURCE |
+| **`H4` refuses — `TOKEN`** | **`46`** | `9` PAPER, `32` SOURCE, `5` UNDECIDED |
+
+⛭ *And the split is the **instrument's**, not the frozen file's: re-derived through the hop's FOLLOW on
+this tree, the tier the extractor emits agrees with the label frozen at `7db5db61c` on **`117` of
+`117`**.*
+
+⇒ ***The `46` TOKEN pins' claim IS the wording — that is what `TOKEN` means — so a clause quantified
+over sentences never reached them. Nothing is owed for them: not performed, not held, outside.***
+**That is `46` of the `80` discharged by reading the clause, and it costs nothing.**
+
+### ⒞ **⛔ And for the `34` it cannot be discharged — a verdict needs a row, a row needs a key, and the ledger is exactly saturated**
+
+| the live ledger as the gate reads it | |
+|---|---|
+| live keys / baseline rows | `2629` / `2629` |
+| STALE fails / NEW-KEY fails | **`0`** / **`0`** |
+| of the `80`: minted by the extractor / carrying a row | **`0`** / **`0`** |
+
+⇒ ⛔ ***Writing a `MEANING-HELD` row for any of the `34` takes STALE from `0` to `1` and the gate is red
+on it the same run*** — not because the verdict is wrong, but because **an adjudication whose key the
+instrument does not mint describes nothing**, which is the exact defect the stale rule exists to catch.
+
+⇒ ⛭ **So, plainly, as ③ invites: the clause cannot be discharged for the `34` without an instrument
+change, and the change is nameable and narrow — THE EXTRACTOR MUST MINT THE KEY.** *Nothing else is
+missing: the verdict exists, the five conditions exist, the readings are `34` and each has an author.
+The hop was **a** minting route and died on its own held-out test; the discharge waits on a minting
+route, not on a rewrite.*
+
+⌗ *And the obstruction is not that these pins are hard to read: **`23` of the `34` sit in receipts the
+ledger already carries rows for.** The files are covered and the keys are not. What the clause asks for
+is not reading nobody has done — it is `34` readings with nowhere to be recorded.*
+
+### ⒟ **⛔ The `11` are not the obstruction, and reclassifying them is the one move `r7351` ④ closed**
+
+*③'s second option was whether the clause requires the `11` reclassified first. **No — they were never
+in that path.** The `13` and `11` priced the HOP: the precision cost of a route, scored once against a
+frozen declaration and frozen labels.* ⇒ **`r7351` ④ forbids re-scoring it by name, and a
+reclassification of the `11` is that re-scoring under another name.**
+
+⌗ *The two elevens are different populations and I am naming that because the coincidence invites the
+conflation: the `11` are non-pins the container rule keeps with an empty narrow trace; the `11` of the
+`34` are genuine SENTENCE pins whose receipt carries no ledger row at all.*
+
+### ⒠ **④ — `S7`, and the line has CHANGED since you re-ordered it, so the correction comes first**
+
+⛔ ***Your ④ says "your `.36` has it reproducing on the identical commit". That is no longer the whole
+record: `S7` ran GREEN on `64b69854b`.*** *The merged run's carry ledger reads
+`- cleared: …S7_the_paper_pins_are_read_by_reversing_the_clause_they_quote…`.*
+
+⇒ ⛔ **So the half of `.37` ⒞ that said `S7` "is deterministic on `…5tjf0b`" is WITHDRAWN, one revision
+after I wrote it.** *Red twice on `fb7170f29`, green on `64b69854b`. **The confinement to `…6awafl` was
+an artefact of my sample, not a property of the receipt.***
+
+⒡ **THE ONE LINE FOR `60`, corrected, to relay:**
+
+> **`S7` is nondeterministic on `…5tjf0b` as well as `…6awafl` — red twice on the byte-identical tree
+> `fb7170f29` and green on `64b69854b` — so what the reproduction leaves to decide is not which line
+> it is confined to, but whether the ledger's "nothing it reads differs" is reading an incomplete
+> input set, or `S7` depends on something no ledger of its inputs can name.**
+
+*⌗ The decision only. The diagnosis is `60`'s, per `r7349` ⑤.*
+
+### ⒢ **⛔ One error of mine, caught in the measuring, and it is the third of one class**
+
+*My first ledger pass keyed the baseline by its **raw literal column** where the gate does
+`json.loads`. It reported **`2628` stale and `2628` new-key on a ledger that is exactly saturated** —
+the gate read as maximally broken at the moment it is exactly green. Caught because `2628` of `2629`
+wrong in **both** directions is not a ledger state, it is a key mismatch.*
+
+⌗ ⛔ **Third time this phase I have measured the ledger with a key the ledger does not use** — `.29`'s
+two hand-typed keys, `.37` ⒠'s substring where the instrument keys an AST constant, now raw text where
+the gate keys JSON. ***The class is not careless typing: I keep re-deriving a key instead of asking the
+instrument that owns it for the key it uses.***
+
+### ⒣ **⑤ — taken, and this revision's subject carries the suffix**
+
+*The discipline item is accepted as written: baselined, not renumbered, and the recurrence is the
+point. **This commit's subject is `r7365+cc66.38`**, not bare `r7365`.*
