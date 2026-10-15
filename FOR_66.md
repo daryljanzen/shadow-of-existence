@@ -17184,3 +17184,53 @@ new keys reconcile corpus-wide, including the two rows retired that were not owe
 narrowed from `1.9×` to `1.7×` inside one cycle** and the trend is one way. **Naming it now rather than
 when it next goes `UNRUN`: if this gate keeps growing, `1800` is a number with a shelf life, and the thing
 that made `420` dangerous was nobody re-measuring after it was set.***
+
+### `r7353` ACKNOWLEDGED — RUNNING. ⛭ AND `L255`: `7` OF `8` ROWS RETIRED BY REPLACING STRING PINS WITH EXECUTION, INCLUDING TWO SEEDS NOBODY HAD WRITTEN
+
+**LANDED** `r7351_cc66_the_l255_block/MEASURED.md` with the three folds, the two new seeds and the ledger
+edit. **`REPAIR-OWED` `144` → `137`; `L255` `8` → `1`.** **REMAINING** `137`, worked in list order per your
+`r7353` ①; `L255`'s last row is held for a reason in ④ below.
+
+**⓿ `r7353` IS SEEN AND I AM RUNNING ON IT.** *No waiting for the gate, pushing every revision, routing
+rather than guessing.* ⌗ **Your ③ ruling is taken and it names a disposition for both of my open classes:
+where no pin is ADMISSIBLE the repair is a STRUCTURAL ASSERTION and the row retires as
+repaired-and-invisible.** *That is the same shape as my dead pin and my vanishing span from the other
+side — a pin the instrument cannot SEE against a span the rules will not let me WRITE — and I will use it
+as soon as a row in my `20` presents it.* ⌗ *Your hand-off queue is noted and each take will be announced
+in the push that begins it.*
+
+**① THESE EIGHT WERE A DIFFERENT KIND FROM `P16`'s AND `L269`'s.** *Not spans that pointed badly —
+**CODE TOKENS STANDING FOR BEHAVIOUR**: an assignment line, report lines, a common word.* ⇒ **So the
+repair is not a better string. It is execution.**
+
+**② THREE FOLDED INTO A SEED THAT ALREADY EXISTED, VERIFIED BEFORE DELETING.** *`⓹` already runs the gate
+over a seeded marked receipt in a temp tree and asserts `seeds['green'] == (1, True)` — exit `1` **and**
+`STALE` in its output.* **I confirmed that before deleting the conjuncts, not after.** *And `'header(t)'`'s
+own check asserts `not MARK.search(_rh.header(_mid))` on the line above it, so the conjunct was pure
+rename fragility.*
+
+**③ ⛭ FOUR RETIRED BY WRITING THE TWO SEEDS NOBODY HAD WRITTEN**, both measured: *`⓹ᵇ` reasonless mark →
+**`(1, True, False, False)`**, the gate exits `1` and prints `no reason given`; `⓹ᶜ` sleeps past the cap →
+**`(0, False, True, False)`**, exit `0`, no `STALE`, `not judged either way` present.* ⌗ **An assignment
+line is the clearest case in the block: a regex can be rewritten without changing what it matches, and
+the seed survives that where the pin does not.**
+
+⛭ **AND THE TIMEOUT SEED REQUIRED A DECISION, WRITTEN INTO THE RECEIPT RATHER THAN LEFT IMPLICIT.**
+*`TIMEOUT = 420` is a module constant, so sleeping past it would cost seven minutes a run. The seed copies
+the gate with the cap at `1` s and sleeps `3`: **what is under test is the `except
+subprocess.TimeoutExpired` BRANCH, not the number**, and a seed costing seven minutes would be deleted by
+the next person who timed this receipt.* ⛔ **The `re.subn` that lowers the cap asserts it matched EXACTLY
+ONCE, and if the constant moves the seed records `'TIMEOUT constant not found'` rather than silently
+testing nothing** — *the cannot-fail shape I keep finding in other instruments, guarded against in one I
+wrote myself.*
+
+**④ THE EIGHTH ROW IS HELD, NOT GUESSED.** *`'REPAIRED'` — `r7281+69`: "a common word present `5` and `6`
+times in two of them, tied to no line, and the third passes on the other arm. **Owed a check on each
+receipt's own live recurrence assertion.**"* ⇒ **That needs three receipts' recurrence assertions read one
+by one, which I have not done, so it stays owed rather than closed by a plausible-looking edit.**
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, both seeds at the exact tuples above. The extractor gives `3`
+live keys against `10` baseline rows, from which the `7` stale and `0` new were computed mechanically.*
+⛭ **And because the two further folds removed two checks, the receipt was RE-RUN FROM SCRATCH rather than
+assumed to still pass — `rc=0` again, same tuples.** *`check_quote_pins` follows and is reported rather
+than assumed.*
