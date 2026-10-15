@@ -19066,3 +19066,70 @@ where it can be checked against a result I do not yet have.*
 itself is the finding and it is mine to chase.*
 
 *⛭ `PR #435`, pushed. Nothing waiting on the chat window.*
+
+---
+
+## `r7355+cc66.35` — **the `.34` prediction HOLDS, exactly as written, and the one re-run is now SPENT**
+
+> **`landed`** — the prediction tested and confirmed; the re-run spent on the one qualifying job.
+> **`remaining`** — `REPAIR-OWED` `29`, all `60`'s (`14`) or `70`'s (`15`); `.26` open.
+
+### ⒜ **The prediction, and the result**
+
+*What `.34` said, before the evidence existed:*
+
+> *"On the first `fast` run against a head carrying `.31` (`fb7170f29` or later), I expect the failure
+> line to read EXACTLY: `⛔ FAILED: check_order_acknowledged` — one gate, node `71`'s, nothing of
+> mine."*
+
+**`fast — registers, views, IDs`, job `116328114905`, head `fb7170f29`:**
+
+```
+⛔ FAILED: check_order_acknowledged
+```
+
+⇒ ***Exactly that. One gate, node `71`'s, nothing of mine.***
+
+**So `fast` on this branch has gone from three of my gates plus one of `71`'s, to `71`'s alone:**
+
+| head | `fast` failure line |
+|---|---|
+| pre-`.27` | `check_prose_pins check_order_acknowledged` |
+| `.27` (`15811294c`) | `check_quote_pins check_exact_counts check_order_acknowledged` |
+| `.29`/`.30` | `check_exact_counts check_order_acknowledged` |
+| **`.31` (`fb7170f29`)** | **`check_order_acknowledged`** |
+
+*⌗ And the two scoped receipt checks on that same head name `S7` alone. The only red this branch
+carries that a push from here could change is **none**.*
+
+### ⒝ **The re-run: SPENT, and on the job the rule points at**
+
+*The `403` at `09:08` was `"The workflow run containing this job is already running"` — sibling jobs in
+run `38706805207` were still executing, so GitHub refused a single-job re-run. **That run is now
+`completed failure`, and the re-run was accepted.***
+
+| | |
+|---|---|
+| **job** | `116328114464` — `scoped — the runner-read sweep`, head `fb7170f29` |
+| **why it qualifies** | names **only** `S7`, `⚠ CONTRADICTED`, on a head carrying `.31` |
+| **status** | **spent**; this PR has no second re-run |
+
+⌷ ***And my prediction about it, recorded at `.33` before spending it: "I expect it to tell nobody
+anything new, so that if it comes back green the surprise is on the record as a surprise."*** *That
+stands. If it comes back **red**, `S7` reproduces on an identical tree and the `CONTRADICTED` flag is
+about something other than this commit. If it comes back **green**, `S7` is nondeterministic on this
+branch too, and that is a fact `60` can use — it is `60`'s receipt and `60`'s question, routed at
+`r7349` ⑤, and I am gathering the datum rather than answering it.*
+
+### ⒞ **⛭ Where that leaves this branch**
+
+**Every gate this branch broke is confirmed repaired by CI. Every gate still red was red on `main`
+before this branch existed, and none of them has a fix I can port.** *`main` has not moved all night
+(`dbd23ffd0`, 42 behind), there is no merge conflict, the tree is clean, and all three ratchets are
+green locally.*
+
+⇒ ***There is nothing left on this PR that a push from me can improve.*** *The remaining `29` rows are
+`60`'s and `70`'s, and the instrument items are routed and waiting on your choice at `.26`. **I will
+keep the PR watched and the check-in armed, and I will not start another seat's rows.***
+
+*⛭ `PR #435`, pushed. Nothing waiting on the chat window.*
