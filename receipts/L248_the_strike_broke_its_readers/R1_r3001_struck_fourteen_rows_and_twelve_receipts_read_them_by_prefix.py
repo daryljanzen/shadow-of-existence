@@ -43,6 +43,7 @@ Written r3100 (`L-248`).  Stated for reversal.
 import glob
 import os
 import re
+import re as _re_R1
 import subprocess
 import sys
 
@@ -73,8 +74,20 @@ check('⓵ᵇ ⛔ and the rows the twelve look for are NOT present in the unstru
       not any(p in unstruck for p in ('PO-2', 'PO-3', 'PO-5', 'PO-6', 'PO-7')))
 # ** the row TEXT survives the strike -- so the claims that quote it were never stale **
 row6 = [l for l in raw.split('\n') if re.match(r'\|\s*~?~?\*\*PO-6\*\*', l)]
-check('⓵ᶜ ⛭ and the struck row is still THERE and still carries its text, so what broke was the '
-      'lookup and not the claim', len(row6) == 1 and 'bounded below' in row6[0])
+#: ⛭⛭ THE REPAIR (r7358 on `r7353` ②'s ORDER -- the queue's `L248_the_strike_broke_its_readers`
+#: take).  ** The owed row pinned the two words `bounded below`, which say nothing about WHICH row
+#: carries them and which the register uses wherever that spectrum is discussed. **  ⇒ The row is
+#: already LOCATED here, so the claim is asserted inside its own DESCRIPTION CELL -- cell by cell,
+#: as data -- and the cell's whole clause is quoted rather than two words of it.
+_ROW6_CELL = ('The interacting tower — the spectrum of $\\hat\\Gamma$, whether it is bounded below, '
+              'the UV definition')
+_row6_cells = [c.strip() for c in _re_R1.sub(r'\s+', ' ',
+                                            _re_R1.sub(r'\*+|~~', ' ', row6[0])).split('|')] \
+    if row6 else []
+check(f'⓵ᶜ ⛭ and the struck row is still THERE and still carries its text, so what broke was the '
+      f'lookup and not the claim -- asserted in the row\'s own description CELL rather than on two '
+      f'words of it ({len(_row6_cells)} cells)',
+      len(row6) == 1 and len(_row6_cells) > 3 and _ROW6_CELL in _row6_cells[2])
 
 print()
 print('=' * 78)
@@ -192,9 +205,20 @@ NEW = 'is not assumed here'
 print(f'    the wording `S4` pins  : "...{OLD}..."')
 print(f'    what P10 now says      : "...{NEW}... though it does in fact"')
 check('⓸ the pinned wording is GONE from P10', OLD not in re.sub(r'\s+', ' ', p10))
-check('⓸ᵇ and the sentence that replaced it is present, and is STRONGER -- the openness the receipt '
-      'pinned has been resolved', NEW in re.sub(r'\s+', ' ', p10)
-      and 'w is not assumed here~\\rcpt{P10_the_straddle_does_not_need_a_floor}, though it does in fact' in re.sub(r'\s+', ' ', p10))
+#: ⛭⛭ AND THE SECOND ARM CARRIED A MARKER INSIDE THE SPAN, which is `r7258`'s settled case: ** a
+#: `\rcpt{}` marker is APPARATUS, not prose, so a bake that lands one correctly must not be able to
+#: falsify a quotation of the sentence it marks. **  ⇒ The markers are stripped IN THE READER --
+#: together with the `~` that binds them to the preceding word -- and the span is the whole clause,
+#: both halves of the concession, asserted with a MEMBERSHIP test beside its uniqueness count so the
+#: key stays visible to the instrument (`r7356`).
+_MARK_R1 = _re_R1.compile(r'~?\\(?:ldg|rcpt)\{[A-Za-z0-9_]+\}')
+_p10_flat = _MARK_R1.sub('', _re_R1.sub(r'\s+', ' ', p10))
+_RESOLVED = ('whether the complete $\\hat\\Gamma$ is bounded below is not assumed here, though it '
+             'does in fact follow')
+check(f'⓸ᵇ and the sentence that replaced it is present, and is STRONGER -- the openness the receipt '
+      f'pinned has been resolved: the whole clause, markers normalised in the reader, occurring once '
+      f'({_p10_flat.count(_RESOLVED)})',
+      _RESOLVED in _p10_flat and _p10_flat.count(_RESOLVED) == 1)
 print('  ⇒ ** THE PIN BROKE BECAUSE THE ARGUMENT WON. **  *`S4`\'s finding may well survive, but')
 print('     deciding what it now asserts is a reading of P10 and belongs to whoever owns P10.*')
 print('  ⌷ ** Repairing it by weakening the assertion to match the new sentence would be fitting the')
