@@ -172,16 +172,27 @@
 #   ⌗ Distinct content ROSE 275,431 -> 276,414, so check_register_monotone's r7353 content measure
 #   passed the cut with no waiver and no DECLARED entry.
 #
-# ---- THE STATE AT r7355: REPAIR-OWED 2 rows in 2 receipts, 133 of the phase's 135 CLOSED.
-#   The arc, complete: 366 (r7329) -> 318 -> 284 -> 284 -> 268 -> 209 -> 159 -> 2.  The last step is
-#   ONE unattended night, 157 rows, against the 59 of the best nudged revision this phase has had.
-#   ⌗ Both remaining rows are 69's r7291 adjudications and both are the SAME class: a TOKEN-tier
-#   co-occurrence check that asserts only that two tokens each appear somewhere in a file, with
-#   nothing joining them.  Neither is blocked on anything.
+# ---- THE STATE AT r7355: REPAIR-OWED IS ZERO.  ALL 135 OF THE PHASE'S RECEIPTS ARE CLOSED.
+#   The arc, complete: 366 (r7329) -> 318 -> 284 -> 284 -> 268 -> 209 -> 159 -> 0.  The last step is
+#   ONE unattended night, 159 rows -- the whole remainder -- against the 59 of the best nudged
+#   revision this phase has had.
+#
+# ⛔ ** AND THE LAST TWO ROWS WERE NEVER WORK: THEY WERE AN UNSTRUCK PAIR. **  r7355 first pushed the
+#   figure as 2 owed in 2 receipts (L279's S1, 'splitting'; L811's S1, 'unclosed inversion') and
+#   assigned both to 70.  Both had ALREADY been repaired by 60 at r7356 -- the conjoined-token pins
+#   replaced by joined spans, verdict EXTENDED -- and the superseded REPAIR-OWED rows were left
+#   standing beside the new ones.  Both receipts run green and neither old pin site exists any more.
+#   check_quote_pins's STALE arm found both: the instrument minted 2,629 keys against a baseline of
+#   2,631.  The two rows are struck; nothing is reassigned, because nothing was owed.
+#   ⇒ ** STANDING: THE OWED COUNT IS ONLY AS HONEST AS THE STRIKE. **  A repair that lands without its
+#   superseded row being struck leaves the count overstating the work.  The ratchet's STALE arm is the
+#   only thing that closes that gap, and it is also what 60's own r7356 was about -- eight minted
+#   spans of its own coming back stale.
 #
 # seat\tprefix\trows\treceipts\tPAPER/SOURCE\tSENTENCE/TOKEN
-# ---- 70: 2 rows in 2 receipts over 2 prefixes (70 reached zero on its own list at r7349+70.23)
-70	L279_the_symmetric_space_probe	1	1	0/1	0/1
-70	L811_po7_inversions_closed	1	1	0/1	0/1
+# ---- 70:   0 rows.  Reached zero on its own list at r7349+70.23.
 # ---- cc66: 0 rows.  Its backlog closed whole overnight (r7355+cc66 .. .36), CI-confirmed.
-# ---- 60: 0 rows.  Its backlog closed at r7345; its live items are reds and the read index, in FOR_60.
+# ---- 60:   0 rows.  Its backlog closed at r7345, and it closed the phase's last two at r7356.
+#
+# ** NO SEAT HAS A REPAIR ASSIGNMENT ON THIS LIST.  The phase's remaining work is PO-78's other three
+#   discharge clauses, and each seat's items are in its own FOR_ file. **
