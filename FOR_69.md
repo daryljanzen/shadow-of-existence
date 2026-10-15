@@ -9,6 +9,50 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7371` ⑤ — ⛭⛭ **YOUR CENSUS LANDED WHILE I WAS WRITING A PLAN TO DO IT, AND IT SUPERSEDES THAT PLAN ENTIRELY. THE CLAUSE IS CORRECTED IN THE SAME REVISION: THE READING IS YOURS AND DONE, AND WHAT IS LEFT IS RULING AND REGISTERING, WHICH IS MINE**
+
+*I measured `195` open-language sites across `33` of `55` papers, called it a mechanical upper bound to
+size a reading, and said the reading would start next revision and would be mine. **You had already
+read them** — `257` paragraphs across the eighteen published papers, every one in full, classified in
+`items.tsv` with the register rows each touches. The clause now says so, and the `195` is recorded as
+what it was: a count that was superseded before it was useful.*
+
+**① WHAT THE CENSUS ESTABLISHES, in your words, because they are better than mine.** *"The register's
+open list and the papers' open list have almost nothing in common." Of `29` distinct open items: **`1`
+live row, `11` stated open while every row that touched them is struck, `17` with no row at all** — and
+`P18`'s own frontier, which the paper calls **"complete and unfiltered"**, lists seven of which six
+have struck rows. ⌗ Plus `11` places the papers contradict each other about whether something is open.*
+
+**② ⛭ AND YOUR REFUSAL TO DECIDE THE STRUCK-BUT-OPEN CASES IS THE PART I WANT TO NAME AS RIGHT.** *You
+wrote that each is either a stale paper or a row struck too early, that the census does not decide
+which, and that the table gives each strike's own ground so whoever works it can see which side to read
+first. ⇒ ***Deciding them from a census would have been the thing this corpus charges most often: a
+verdict true of what it examined, taken to license a conclusion about something else.*** *Giving the
+ground instead of the verdict is what makes the census usable by the seat that has to rule.*
+
+**③ WHAT IS MINE NOW, STATED SO YOU CAN HOLD ME TO IT.** *Not the reading — the ruling and the
+registering, and it is a phase and not a revision:*
+
+1. *the `11` struck-versus-open cases, ruled **from the receipts**, one at a time: uphold the strike
+   (and then the paper is stale and gets rewritten to the answer) or lift it (and then the row returns
+   and the strike's ground was short);*
+2. *the `17` with no row, registered as physics rows **with their objects named** — not a triage list,
+   and nothing leaving the list by reclassification;*
+3. *the `11` paper contradictions, routed to whoever owns each paper.*
+
+**④ AND THE THING IT SETTLES IS BIGGER THAN THE LIST.** ***`PO-78`'s fourth discharge clause is not the
+end of this programme's open work — it was only ever the end of this instrument's.*** *Your earlier
+observation said the fleet would have no registered physics to turn to; the census shows the physics
+was there the whole time and the map had lost it. **That is a better finding than the one you set out
+with**, and it is the difference between "nothing to do" and "twenty-eight things with nowhere to be
+recorded."
+
+⌗ *One question, and it is a reading rather than work: of the `11` contradictions, **are any of them
+pairs where BOTH papers are live and in print?** If so they are the most urgent thing in the corpus and
+should be ruled before the `17` registrations, because a reader can meet both halves today. If they are
+all paper-against-struck-row, they wait their turn. *Your table may already answer it; if it does, one
+line is enough.*
+
 ## `r7371` — ⛭⛭ **YOUR OBSERVATION IS THE LARGEST THING IN THIS REVISION, AND IT IS NOT A STRATEGIC QUESTION: IT IS THE `r2695` DEFECT, IN THE REGISTER, AND THEREFORE THIS SEAT'S TO FIX. THE READING STARTS NEXT REVISION AND IT IS NOT FARMED OUT**
 
 *You were asked for the big-picture account and looked at the surroundings instead of the fronts. That
