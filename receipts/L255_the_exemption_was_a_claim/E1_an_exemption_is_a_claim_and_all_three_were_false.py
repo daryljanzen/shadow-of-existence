@@ -163,20 +163,53 @@ def main():
     check(f'⓶ᵇ and each was genuinely RED in its pre-r3125 form against this tree: {reds} -- so the '
           'mark described something real, and the question is only whether it was PERMANENT',
           all(v != 0 for v in reds.values()))
-    greens = {}
+    greens, _outs = {}, {}
     for p in THREE:
         r = subprocess.run([sys.executable, os.path.join(ROOT, p)],
                            cwd=os.path.dirname(os.path.join(ROOT, p)), capture_output=True,
                            text=True, errors='replace', timeout=600)
         greens[os.path.basename(p)[:34]] = r.returncode
+        _outs[p] = r.stdout
     check(f'⛔ ⓷ *** AND ALL THREE NOW EXIT 0 AFTER r3125 PINNED BOTH ENDS: {greens} -- the '
           'exemption claimed a permanence none of them had ***',
           all(v == 0 for v in greens.values()))
-    check('⓷ᵇ and the repair is the pin, not a weakening: each keeps a LIVE check, and it is the '
-          'one claim that belongs live -- that the defect has not RECURRED',
-          all(('REPAIRED' in open(os.path.join(ROOT, p), encoding='utf-8').read()
-               or 'seed_took' in open(os.path.join(ROOT, p), encoding='utf-8').read())
-              for p in THREE))
+    # ⬭⬭⬭ r7355+cc66, THE LAST OWED ROW OF THIS RECEIPT, AND IT WAS HELD AT r7353 RATHER THAN
+    #   GUESSED.  r7293+69: *** "cannot-fail, ⓑ-shaped ALT: check ⓷ᵇ claims each of the three
+    #   receipts keeps the one LIVE check that belongs live (the defect has not recurred), and it
+    #   asserts 'REPAIRED' or 'seed_took' ANYWHERE in each file.  'REPAIRED' is a common word
+    #   present 5 and 6 times in two of them, tied to no line, and the third passes on the other
+    #   arm.  Owed a check on each receipt's own live recurrence assertion." ***
+    #   ⌗ And the word was not even standing for prose: in two of the three, `REPAIRED` is a
+    #     PYTHON CONSTANT holding a commit sha (`REPAIRED = 'a83455b4...'`), so the arm was
+    #     satisfied by a variable NAME.  *A pin that reads an identifier is not reading a claim.*
+    #   ⇒ *** THE REPAIR IS EXECUTION, and the runs ALREADY HAPPEN three lines above: *** ⓷ runs
+    #     all three receipts to show they exit 0, and threw their output away.  Each receipt's own
+    #     live recurrence assertion is now read OUT OF THAT OUTPUT, so the claim is that the live
+    #     check RAN AND REPORTED -- not that a word appears in a file.
+    #   ⌗ EACH RECEIPT'S OWN LINE, read one by one as 69's ground requires, because they are three
+    #     different claims and no single string covers them:
+    #       `L551`/`R1`  -- "AND NO PROTECTED ROW IS SPLIT IN THE LIVE REGISTER EITHER", its
+    #                       live-register split count, read against the working tree;
+    #       `L555`/`M1`  -- "AND THE DEFECT HAS NOT RECURRED, live:", its live protected-id count;
+    #       `L556`/`R1`  -- its SEEDED gate round-trip, "check_appendix_current: clean tree exits
+    #                       ... restored ... byte-identical", which is how THAT receipt shows the
+    #                       defect would be caught if it came back (it has no live-state claim to
+    #                       make -- its subject is an instrument, not a register).
+    #   ⌗ Verified before performing: all three lines are present in the three receipts' stdout,
+    #     checked by running them.  *And the third was found only by running it: its `seed_took`
+    #     assertion is a bare `assert` that prints NOTHING, so an output-based check on that
+    #     string would have been a silent zero.*
+    _LIVE_LINE = {
+        THREE[0]: 'AND NO PROTECTED ROW IS SPLIT IN THE LIVE REGISTER EITHER',
+        THREE[1]: 'AND THE DEFECT HAS NOT RECURRED, live:',
+        THREE[2]: 'check_appendix_current: clean tree exits',
+    }
+    _live_seen = {os.path.basename(p)[:30]: (_LIVE_LINE[p] in _outs[p]) for p in THREE}
+    check('⓷ᵇ and the repair is the pin, not a weakening: each keeps a LIVE check and each one RAN '
+          f'and REPORTED in the run above -- {_live_seen}, read one receipt at a time because they '
+          'are three different claims: a live split count, a live protected-id count, and a seeded '
+          'gate round-trip',
+          all(_live_seen.values()) and len(_LIVE_LINE) == len(THREE))
     # ** and the repair is NAMED to a commit rather than to "recently", because that is the whole
     #   subject of the revision that made it. **
     subj = git('log', '-1', '--format=%s', PINNED).strip()

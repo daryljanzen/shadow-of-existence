@@ -17987,3 +17987,47 @@ reports its own failure. Measured before performing: the subject-bearing sentenc
 introduced and removed it (`c01f56c5b` `r2419`, `ed0bc031c` `c54.206`). Extractor: `4` keys, all
 decided; the row is **rewritten in place** rather than dropped-and-added, since it is the same
 adjudication at a better span.*
+
+---
+
+## `r7355+cc66.17` — **`L255` CLOSES WHOLE AT LAST: THE ROW I HELD AT `r7353` RATHER THAN GUESSING IS REPAIRED, AND THE RUNS IT NEEDED WERE ALREADY HAPPENING THREE LINES ABOVE IT**
+
+**`landed`: `L255_the_exemption_was_a_claim` `1` → `0` — **the receipt is now `8` → `0` across two
+revisions**; `REPAIR-OWED` `81` → `80`. ⌗ *qp10 on the merged tree: **no new key, no stale entry**, all
+four ratchets holding.* `remaining`: `80` owed, `11` mine; next `L233_colour_curvature` (`2`).**
+
+**⓵ WHAT I HELD IT FOR, AND WHAT IT TURNED OUT TO BE.** *At `r7353` I wrote that this row "needs three
+receipts' recurrence assertions read one by one, which I have not done, so it stays owed rather than
+closed by a plausible-looking edit". **That was the right call and the reading changes the repair.***
+`r7293+69`'s ground was exact — *`'REPAIRED'` is a common word, `5` and `6` times in two of the three,
+tied to no line, and the third passes on the other arm.* ⛔ **And it is worse than a common word: in
+two of the three, `REPAIRED` is a PYTHON CONSTANT holding a commit sha (`REPAIRED =
+'a83455b4…'`).** *So the arm was satisfied by a **variable name**. A pin that reads an identifier is
+not reading a claim.*
+
+**⓶ ⛭ THE REPAIR IS EXECUTION, AND THE RUNS WERE ALREADY THERE.** *Check ⓷ runs all three receipts to
+show they exit `0` — **and threw their output away**. Each receipt's own live recurrence assertion is
+now read out of that output, so the claim is that **the live check ran and reported**, not that a word
+appears in a file. No new subprocess, no new seed: one line that stops discarding what was already
+measured.*
+
+**⓷ THE THREE LINES, ONE RECEIPT AT A TIME, BECAUSE THEY ARE THREE DIFFERENT CLAIMS AND NO SINGLE
+STRING COVERS THEM:**
+
+> `L551`/`R1` → *"AND NO PROTECTED ROW IS SPLIT IN THE LIVE REGISTER EITHER" — a live split count
+> against the working tree.*
+> `L555`/`M1` → *"AND THE DEFECT HAS NOT RECURRED, live:" — a live protected-id count.*
+> `L556`/`R1` → *its **seeded gate round-trip** ("clean tree exits … restored … byte-identical").
+> **That receipt has no live-state claim to make** — its subject is an instrument, not a register — so
+> the way it shows the defect would be caught if it came back is that the gate goes red on a seed and
+> green without it.*
+
+⌗ ***And the third was found only by running it.*** *Its `seed_took` assertion is a bare `assert` that
+prints **nothing**, so the obvious output-based check on that string would have been a silent zero —
+the same vacuity this row was owed for, reintroduced by the repair. **Measured, not assumed:** all
+three lines were confirmed present in the three receipts' stdout by running them before the edit.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, and the check prints its own per-receipt dict
+(`{…: True, …: True, …: True}`) so a reader sees which of the three reported rather than a conjunction's
+single boolean. Extractor on `E1`: **`1` key** — the receipt is down to one pin, and its `ENCODING-OK`
+`seed_took` row retires with the owed one.*
