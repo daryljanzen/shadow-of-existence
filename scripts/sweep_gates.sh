@@ -47,11 +47,28 @@ GATE_TIMEOUT="${GATE_TIMEOUT:-420}"
 #     * every gate is invoked with `< /dev/null`, so no gate's child can eat the caller's input;
 #     * the sweep ASSERTS ITS OWN ROSTER -- it records each name it ran and fails if that set is
 #       not exactly the set of gate files.  A tally that cannot be reconciled is not a result.
+# ⛔ r7347 (66), AND THE COST WAS MINE TO PRICE AND I DID NOT.  r7341 ⑤ ordered every seat to run this
+#   script instead of an ad-hoc loop, and the script's own docstring tells the reader that --baseline is
+#   "the only number that says whether THIS work broke anything".  Taken together that is an order to run
+#   129 gates TWICE, plus a full `git clone`, before every push.  Node 70 did exactly that and queued 28
+#   commits behind it; the gate that was meant to make the arbiter honest made it unaffordable, and the
+#   silence was then read as a seat that had stopped waking.
+#   ⇒ THE DELTA QUESTION DOES NOT NEED A SECOND FULL SWEEP.  "Did THIS work break it?" is only ever asked
+#   about gates that FAILED here, so the baseline pass re-runs exactly those -- usually none, sometimes
+#   one or two.  Cost goes from 2N to N + f.
+#   ⌗ And the baseline pass is NOT a sweep and must not print like one: it runs a named subset, so the
+#   roster assertion belongs to the HEAD pass alone.  A count is not a roster (r7341) cuts both ways --
+#   a partial run must not be dressed as a complete one either.
+# Usage: run_sweep [gate names...]   -- no arguments means every gate, and only that asserts the roster.
 run_sweep() {
+  local only="$*"
   local pass=0 fail=0 unrun=0 failed="" notrun="" ran=0
   : > /tmp/_swroster.$$
   for g in corpus/check_*.py; do
     local n rc; n=$(basename "$g" .py)
+    if [ -n "$only" ]; then
+      case " $only " in *" $n "*) ;; *) continue;; esac
+    fi
     timeout "$GATE_TIMEOUT" python3 -W ignore "$g" >/tmp/_sw.$$ 2>&1 </dev/null; rc=$?
     echo "$n" >> /tmp/_swroster.$$; ran=$((ran+1))
     if [ "$n" = "check_compile" ] && ! command -v pdflatex >/dev/null 2>&1; then
@@ -67,11 +84,16 @@ run_sweep() {
     fi
     rm -f /tmp/_sw.$$
   done
-  # ** THE ROSTER ASSERTION. **  The set of names run must be exactly the set of gate files.
+  # ** THE ROSTER ASSERTION, ON A WHOLE SWEEP ONLY. **  The set of names run must be exactly the set of
+  #   gate files.  A named-subset run is not a sweep and does not claim a roster.
   local expect actual missing
-  expect=$(ls corpus/check_*.py | xargs -n1 basename | sed 's/\.py$//' | sort)
-  actual=$(sort /tmp/_swroster.$$)
-  missing=$(comm -23 <(echo "$expect") <(echo "$actual") | tr '\n' ' ')
+  if [ -n "$only" ]; then
+    missing=""
+  else
+    expect=$(ls corpus/check_*.py | xargs -n1 basename | sed 's/\.py$//' | sort)
+    actual=$(sort /tmp/_swroster.$$)
+    missing=$(comm -23 <(echo "$expect") <(echo "$actual") | tr '\n' ' ')
+  fi
   rm -f /tmp/_swroster.$$
   echo "$pass|$fail|$failed|$unrun|$notrun|$ran|$missing"
 }
@@ -122,20 +144,32 @@ if [ -f receipts/ASSERTION_DEBT.txt ]; then
 fi
 
 if [ "${1:-}" = "--baseline" ] && [ -n "${2:-}" ]; then
-  ref="$2"; tmp=$(mktemp -d)
-  git clone -q . "$tmp/base" 2>/dev/null && (cd "$tmp/base" && git checkout -q "$ref" 2>/dev/null)
-  if [ -d "$tmp/base/corpus" ]; then
-    pushd "$tmp/base" >/dev/null
-    IFS='|' read -r BP BF BFAILED BU BNOTRUN BRAN BMISSING <<< "$(run_sweep)"
-    popd >/dev/null
+  ref="$2"
+  # ** THE BASELINE PASS RE-RUNS ONLY WHAT FAILED HERE (r7347).  See run_sweep's note. **  The question
+  #   is "did THIS work break it", which is only asked of a gate that is red here.  Nothing red, nothing
+  #   to ask, no clone.
+  if [ -z "${FAILED// /}" ]; then
     echo
-    echo "  BASE ($ref):  PASS=$BP  FAIL=$BF  UNRUN=$BU"
-    echo "  DELTA: $((F - BF)) newly failing gate(s) attributable to work since $ref"
-    for n in $FAILED; do
-      case " $BFAILED " in *" $n "*) ;; *) echo "      [NEW] $n -- introduced since $ref";; esac
-    done
+    echo "  BASE ($ref): not run -- nothing failed here, so there is no delta to attribute."
+    echo "    ⌗ r7347: the baseline pass re-runs only the gates that FAILED above (cost N + f, not 2N)."
+  else
+    tmp=$(mktemp -d)
+    git clone -q . "$tmp/base" 2>/dev/null && (cd "$tmp/base" && git checkout -q "$ref" 2>/dev/null)
+    if [ -d "$tmp/base/corpus" ]; then
+      echo
+      echo "  BASE ($ref): re-running only the $F gate(s) that failed here --$FAILED"
+      pushd "$tmp/base" >/dev/null
+      IFS='|' read -r BP BF BFAILED BU BNOTRUN BRAN BMISSING <<< "$(run_sweep $FAILED)"
+      popd >/dev/null
+      echo "  BASE ($ref):  of those, PASS=$BP  FAIL=$BF  UNRUN=$BU"
+      echo "  DELTA: $((F - BF)) newly failing gate(s) attributable to work since $ref"
+      for n in $FAILED; do
+        case " $BFAILED " in *" $n "*) echo "      [PRE-EXISTING] $n -- already red at $ref";;
+                             *) echo "      [NEW] $n -- introduced since $ref";; esac
+      done
+    fi
+    rm -rf "$tmp"
   fi
-  rm -rf "$tmp"
 fi
 echo
 echo "  A gate failing here is not automatically this line's: check the delta, not the count."
