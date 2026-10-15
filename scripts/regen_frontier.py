@@ -36,6 +36,67 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
+    # ⛭ r7371: the coherence phase.  5 steps = the contradictions, P7, P18's frontier table, the
+    #   seventeen unrowed items, and the gate that stops the drift recurring.  Not gated on anything:
+    #   every ruling is a read of receipts and no part of it waits on PO-78 or on the Lean line.
+    'PO-86': ("the register's open list against the papers' own, in both directions", 5, 0, 2, None,
+        'r7371: node 69 read 257 paragraphs across the eighteen published papers, every one in full, '
+        'and the register carries 1 of the 29 distinct open items they state -- 11 are stated open '
+        'while every row that touched them is struck, 17 have never had a row, and 11 places the '
+        'papers contradict each other about whether something is open. The work is 29 items, each '
+        'needing one ruling and then up to three consequences: the row, the papers rewritten to one '
+        'state, and the remainder in r7013s three kinds. P7 is one side of five of the eleven '
+        'contradictions, so it is read first; P18s frontier table and the registers live rows are the '
+        'same list when the phase ends.'
+        '⛭ THE LIVE CLAUSE (SET r7371). '
+        'r7371: OPENED on node 69s census, which is a reading and not an impression: 257 paragraphs across the '
+        'eighteen published papers, every one read in full. Its headline is that the registers open list and the '
+        'papers open list have almost nothing in common. Of 29 distinct open items the papers state, ONE is carried by '
+        'a live row (PO-50), ELEVEN are stated open while every register row that touched them is STRUCK, and SEVENTEEN '
+        'have never had a row at all. P18s own frontier, which the paper calls complete and unfiltered, lists seven: '
+        'one live row, six struck. And ELEVEN places the papers contradict each other about whether something is open '
+        '-- one-state failures in the published corpus, every one live-against-live and readable today by anyone '
+        'opening two papers on the site. THIS IS NOT A STRATEGIC QUESTION, IT IS THE r2695 DEFECT: if the open problems '
+        'map is not even a genuine list of open problems, work the list till it is a legitimate list. check_row_state '
+        'exists because that exact failure once survived fifty revisions; this is the same failure at the level of '
+        'which rows exist rather than what their heads say. AND THE WORK IS SMALLER THAN THE THREE NUMBERS SUGGEST. It '
+        'is not 11 + 11 + 17 pieces: it is 29 items, each needing ONE ruling -- is it open? -- and then up to three '
+        'consequences. The REGISTER: the row goes live, stays struck, or is written for the first time. The PAPERS: '
+        'every paper that states it is rewritten to ONE state, to the worked claim and never to was-open-later- '
+        'resolved. The REMAINDER, in r7013s three kinds: a different kind of object is a ROW, the same question at '
+        'finer resolution is a STATED LIMIT, and a remainder whose discharge is known is an ORDER. One item closes '
+        'completely before the next, and nothing leaves the list by reclassification. THE RULING TEMPLATE FOR A STRUCK '
+        'ROW, which is the elevens whole difficulty: a strike is meant to rest on a receipted answer, so for each one, '
+        'does the strikes ground answer the item the papers state, or something adjacent to it? Adjacent means the row '
+        'returns LIVE and the paper was right -- this corpuss most-charged class in another dress, a verdict true of '
+        'what it examined taken to license a conclusion about something else. If it answers it, the PAPER is stale and '
+        'is rewritten to the answer. AND A THIRD OUTCOME THE REGISTER COULD NOT EXPRESS UNTIL NOW: the strike stands as '
+        'a STOPPING RULE, the item is open, and the row returns live WITH ITS BLOCKER NAMED -- data-gated rather than '
+        'workable. PO-47 is the clearest case already read: struck because the sky cannot tell the two models apart '
+        'there, with its own text recording that the three candidate mechanisms were not run -- a stopping rule on '
+        'measurability, which is not an answer to what displaces the peak. PO-50 is already this shape and was carried '
+        'as plain OPEN. From here a live row whose discharge waits on a measurement says so in its head, so a reader '
+        'can tell a workable frontier from a data-gated one. ORDER OF WORK, measured rather than tidy: the '
+        'contradictions first, since all eleven are live-against-live in print and fixing one requires ruling its item '
+        'anyway; then P7 first among the papers, because it is one side of C1, C2, C3, C6 and C8, so one papers '
+        'rewrite clears five of the eleven; then P18s frontier table, because it is what a reader takes as the '
+        'programmes open list and C9 is that list omitting items P18 itself states elsewhere -- when this phase ends, '
+        'P18s frontier table and the registers live rows are the SAME LIST; then the seventeen unrowed items get rows '
+        'with their objects named; then the gate. THE READING IS THE REGISTER-KEEPERS AND IS NOT FARMED OUT: this '
+        'phase is a read of the published corpus against its own map, so the papers are read whole, one at a time, by '
+        'the seat that holds the register. The other seats queues are untouched -- PO-78 and the Lean line run '
+        'alongside and are not blocked by it, and every ruling here is a read of receipts rather than a piece of '
+        'physics, which is why the quality work does not wait on them and the physics waits on it. Opening the physics '
+        'against a false map is what produced this situation. THE WORKLIST is THE_COHERENCE_STRIDE.tsv, generated from '
+        'the census by scripts/build_coherence_stride.py rather than retyped, per r7371s rule that the selector of a '
+        'measured population is committed with the measurement. WHAT WOULD DISCHARGE IT: every one of the 29 items '
+        'ruled and its consequences landed; no paper contradicting another or itself about whether something is open; '
+        'P18s frontier table and the registers live rows the same list; and A GATE ASSERTING IT, so the drift cannot '
+        'recur -- every open item the papers state has a live row, and every live row is stated open in a paper or is '
+        'declared infrastructure. Until that gate exists this rows own worklist is a measurement that will go stale in '
+        'silence, which is this corpuss oldest lesson. OR TERMINATES IF the census is shown to have mis-read the '
+        'papers at a rate that makes its 29 the wrong population -- testable, since 69 committed extract.py and '
+        'items.tsv and the reading of every paragraph is in them. '),
     'PO-10': ('the likelihood comparison, and which run it rests on', 1, 0, 3, None,
         'r6780: REOPENED. P15 sec:refit-bound reports both arms fitted over 215 bins with the same '
         'five parameters free in each, returning chi^2 = 397.13 against 206.44, 1.891 and 0.983 per '
@@ -9496,8 +9557,11 @@ KIND = {'PO-85': 'BUILD', 'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-85': 'C', 'PO-84': 'D', 'PO-83': 'D', 'PO-82': 'C', 'PO-81': 'D', 'PO-80': 'D', 'PO-79': 'D', 'PO-78': 'C', 'PO-77': 'D', 'PO-76': 'C', 'PO-75': 'D', 'PO-74': 'D', 'PO-73': 'D', 'PO-72': 'C', 'PO-71': 'C', 'PO-70': 'D', 'PO-69': 'C', 'PO-68': 'C', 'PO-67': 'C', 'PO-66': 'C', 'PO-65': 'C', 'PO-64': 'C', 'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
+ORDER = ['PO-86', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-86': 'F',  # ⛭ r7371: the coherence phase -- the register against the papers.
+         # ⛭ r7371: PO-78 moved out of C, the quantum sector, which it never was -- it is the
+         #   quote-pin instrument.  F is the programme's own record, and PO-86 is there too.
+         'PO-85': 'C', 'PO-84': 'D', 'PO-83': 'D', 'PO-82': 'C', 'PO-81': 'D', 'PO-80': 'D', 'PO-79': 'D', 'PO-78': 'F', 'PO-77': 'D', 'PO-76': 'C', 'PO-75': 'D', 'PO-74': 'D', 'PO-73': 'D', 'PO-72': 'C', 'PO-71': 'C', 'PO-70': 'D', 'PO-69': 'C', 'PO-68': 'C', 'PO-67': 'C', 'PO-66': 'C', 'PO-65': 'C', 'PO-64': 'C', 'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.
          'PO-45': 'A', 'PO-46': 'A',  # ⛔ r6549: a FOURTH hardcoded list -- GROUP -- and a row missing here raises.
          'PO-10': 'D', 'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
          # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
@@ -9513,6 +9577,9 @@ GROUP = {'PO-85': 'C', 'PO-84': 'D', 'PO-83': 'D', 'PO-82': 'C', 'PO-81': 'D', '
 #   heading over an empty table is a reader's trap, not a section. **  Dropped; if a row
 #   ever needs a second matter sector it gets a title of its own at that point.
 GNAME = {'A': 'the matter sector', 'C': 'the quantum sector',
+         # ⛭ r7371: F exists because two live rows are about the PROGRAMME's own record rather than
+         #   about physics, and carrying them under a physics heading mis-states what a reader is seeing.
+         'F': "the programme's own record",
          'D': 'the cosmology', 'E': 'the substrate geometry'}
 
 
