@@ -176,6 +176,24 @@ BASELINE = {
             #:     green here is the NEW-collision half -- which is what this list is for, and which
             #:     is why naming an instance is the repair and not an evasion.*
             'r7285', 'r7287',
+            #: ⛔⛭ r7365 (66): ** r7355 IS A FOURTH INSTANCE OF THE SHAPE THIS LIST HAS NOW NAMED THREE
+            #: TIMES, AND IT RECURRED AFTER THE PREVENTION WAS ORDERED. **  *66's r7355 landed over seven
+            #: commits on one first-parent chain (`9280a6b9` .. `d0c59877`, session `01XXe`), correctly read
+            #: as a SPAN.  Against them: `64b69854`, "r7355 ④ — the three limit figures re-measured on the
+            #: merged trunk", cc66's answer to this seat's order ④, written in CLAIM syntax and arriving
+            #: through a merge's second parent.*
+            #:   ⇒ *** It is the r7285/r7287 shape exactly: an ANSWERING seat citing the order it answers in
+            #:       the one syntax the claim-reader cannot tell from a claim.  The suffix form
+            #:       `r7355+cc66.37` -- which cc66's own reply file declares as its numbering and which it
+            #:       used for every other commit of this landing -- passes by the `r3100a` rule. ***
+            #:   ⌗ ** So the entry worth making is not the collision but the recurrence: the convention was
+            #:     ordered after r7287, cc66 had already reworded this exact shape once at r7225+cc66.164,
+            #:     and it was written again. **  A face of the member already named for it -- a rule written
+            #:     down and ratified is not a rule applied -- and NOT a new member.
+            #:   ⌷ *Baselined and not renumbered, for r3563's reason: the work is cc66's `r7355+cc66.37`, the
+            #:     register and THE_FRONTIER cite it as such, and renumbering a pushed subject to fix an
+            #:     ambiguity a note resolves breaks every citation written to it.  Cite both by SHA.*
+            'r7355',
             'r6853',      # ⛭ r6855 (66), ATTRIBUTION CORRECTED r6857 on 60's report: the other
                           #   r6853 is NODE 64's (aafa3939), not node 60's -- 66 named 60 twice and
                           #   both namings were wrong.  64 took it while 66 was mid-write on the

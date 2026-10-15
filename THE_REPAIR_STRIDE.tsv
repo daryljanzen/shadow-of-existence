@@ -158,12 +158,15 @@
 #   ⇒ PO-78 member 91's FOURTH face, 66's, the same cause as the third: a design that cannot produce
 #   the quantity the conclusion names.
 #
-# ⛭⛭ ** TWO STANDING RULES OUT OF IT, AND THEY REPLACE THE QUEUE. **
-#   ⒜ A CLAUSE A SEAT MUST APPLY STATES A TEST THE SEAT CAN RUN WITH WHAT IT HAS IN HAND.  A safety
-#     condition that needs another branch is not a safety condition during an unattended run.
-#   ⒝ A SEAT THAT REACHES ZERO ON ITS OWN STRIDE STOPS AND REPORTS.  Idling for a few hours costs
-#     nothing the night did not already have; duplicating another seat's finished work costs the
-#     morning.  ⌗ A seat with nothing on this list has its other items in its own FOR_ file.
+# ⛭⛭ ** TWO STANDING RULES OUT OF IT, AND THEY REPLACE THE QUEUE.  69's TEXT, r7365. **
+#   ⒜ ** A CONDITION A SEAT IS TOLD TO APPLY MUST BE ONE IT CAN TEST WITH WHAT IT HAS IN HAND. **  If
+#     deciding whether the condition holds needs another seat's unmerged work, the seat cannot apply
+#     it, and the order is rewritten so that it does not need it.  This holds above all for safety
+#     conditions during an unattended run, when nothing will be merged until the run ends.
+#   ⒝ ** A SEAT THAT FINISHES ITS OWN LIST STOPS AND REPORTS. **  It does not take up another seat's
+#     items unless the order names them and nothing on them can already have been done.  Idle hours
+#     cost nothing; repeating another seat's finished work costs the next merge.
+#     ⌗ A seat with nothing on this list has its other items in its own FOR_ file.
 #
 # ⛭ ** AND THE r7353 CEILING OF 134 OF 135 IS WITHDRAWN: RC3 IS CLEARED AT r7355 AND THE CEILING IS
 #   135. **  THE_REGISTER's PO-23 cell carried an 11,557-character verbatim replay of itself, spliced
@@ -196,3 +199,14 @@
 #
 # ** NO SEAT HAS A REPAIR ASSIGNMENT ON THIS LIST.  The phase's remaining work is PO-78's other three
 #   discharge clauses, and each seat's items are in its own FOR_ file. **
+
+# ⛭ ** AND THE ZERO'S BOUNDARY IS MEASURED, r7365. **  cc66 re-measured the r7351 invisible limit on the
+#   merged trunk: 80 genuine pins stay invisible to the ratchet, the price is 13 keys, 11 of them
+#   unreachable -- ALL THREE UNCHANGED across the 159-row campaign, because all 117 frozen keys surface
+#   with the keys they had and 0 of them appear in the live ledger.  The repair campaign and the
+#   invisible population are DISJOINT SETS.  ** So this list reaching zero is worth exactly what it was
+#   worth at r7351: it is the boundary the zero is true inside, and it is now measured on both sides. **
+#   ⌗ And the hop's SELECTOR was never committed, so four revisions of argument stood on a population
+#   re-derivable only from prose.  follow_patch.py is committed at r7365.  ** STANDING: the selector of a
+#   measured population is committed with the measurement, or the measurement is a claim and not a
+#   re-runnable fact. **
