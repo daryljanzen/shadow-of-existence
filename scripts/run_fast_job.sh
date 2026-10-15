@@ -71,16 +71,45 @@ done
 #   ⇒ CI applies NO per-gate timeout (`NODE=ci python3 corpus/$g.py`, the job capped at
 #     `timeout-minutes: 127`), so a per-gate limit here is a HANG GUARD and not a budget.  Set well
 #     above the slowest measured gate, and the measurement is quoted above rather than remembered.
+# ⛔⛭⛭ r7367+cc66 -- AND r7323's REMEDY RESTORED ITS OWN DEFECT, BECAUSE IT FIXED THE NUMBER AND NOT
+#   THE CONFLATION.  `timeout` exits *** 124 *** when the HANG GUARD fires, and `|| fails=...` read
+#   that as the gate failing -- so `check_quote_pins`, measured at 1096.1s when r7323 set the guard
+#   to 1800, now takes ~2170s on this container and the SAME false red is back on the SAME gate.
+#   ⇒ *** A guard compared against a runtime that moves cannot be fixed by choosing a bigger
+#   constant: it is fixed by not conflating the two exits. ***  The guard is raised as well, but that
+#   is the belt and this is the braces: 124 is REPORTED as a guard trip and never counted as red.
+#     ⌗ The direction matters -- r7323 recorded this line's two earlier failures as FALSE GREEN and
+#       its third as a FALSE RED.  A false red makes "only commit green" unsatisfiable rather than
+#       strict, which is the one failure mode that trains a seat to push past its own suite.
+guarded=""
 for g in $GATES; do
-  timeout 1800 python3 -W ignore "corpus/$g.py" >/dev/null 2>&1 || fails="$fails $g"
+  timeout 3600 python3 -W ignore "corpus/$g.py" >/dev/null 2>&1
+  rc=$?
+  if [ "$rc" = 124 ]; then
+    guarded="$guarded $g"
+  elif [ "$rc" != 0 ]; then
+    fails="$fails $g"
+  fi
 done
 python3 scripts/lint_assertions.py >/dev/null 2>&1 || fails="$fails lint_assertions"
 
+if [ -n "$guarded" ]; then
+  echo "  ⚠ HANG GUARD TRIPPED, NOT A FAILURE:$guarded"
+  echo "     Each exceeded 3600s here and was killed.  CI applies NO per-gate timeout, so this says"
+  echo "     nothing about CI -- re-run the named one alone and time it, then re-set the guard above"
+  echo "     the measurement.  ⌗ A guard trip is NOT counted as red: see r7367+cc66 above."
+  echo
+fi
 if [ -n "$fails" ]; then
   echo "  ⛔ THE FAST JOB WOULD BE RED:$fails"
   echo "     Re-run the named one alone for its output."
   echo
   exit 1
+fi
+if [ -n "$guarded" ]; then
+  echo "  every step that COMPLETED passes on this tree; the guarded one(s) above are unmeasured here."
+  echo
+  exit 0
 fi
 echo "  every step of the fast job passes on this tree."
 echo "  ⌗ Green here is a claim about CI's CURRENT list, because the list was read and not remembered."

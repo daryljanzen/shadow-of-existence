@@ -1,0 +1,318 @@
+# r7367+71.5 — campaign 15: lake env lean probes/NonDiag.lean (2026-10-15T17:33:06Z); whole file (row 83 tables + EF section); wall time printed, asserted of nothing
+probes/NonDiag.lean:108:13: warning: `ContinuousLinearMap.coe_sum'` has been deprecated: Use `FunLike.coe_sum` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵u̵m̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲u̲m̲
+probes/NonDiag.lean:108:61: warning: `ContinuousLinearMap.coe_smul'` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵m̵u̵l̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲m̲u̲l̲
+probes/NonDiag.lean:156:25: warning: `ContinuousLinearMap.coe_smul'` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵m̵u̵l̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲m̲u̲l̲
+probes/NonDiag.lean:156:56: warning: `ContinuousLinearMap.coe_sum'` has been deprecated: Use `FunLike.coe_sum` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵u̵m̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲u̲m̲
+probes/NonDiag.lean:157:4: warning: `ContinuousLinearMap.coe_add'` has been deprecated: Use `FunLike.coe_add` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add'` to `FunLike.coe_add x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵a̵d̵d̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲a̲d̲d̲
+probes/NonDiag.lean:157:34: warning: `ContinuousLinearMap.coe_sub'` has been deprecated: Use `FunLike.coe_sub` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sub'` to `FunLike.coe_sub x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵u̵b̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲u̲b̲
+probes/NonDiag.lean:185:13: warning: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵s̲u̲m̲_̲a̲p̲p̲l̲y̲
+probes/NonDiag.lean:185:44: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+probes/NonDiag.lean:185:75: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+probes/NonDiag.lean:254:13: warning: `ContinuousLinearMap.coe_smul'` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵m̵u̵l̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲m̲u̲l̲
+probes/NonDiag.lean:254:44: warning: `ContinuousLinearMap.coe_add'` has been deprecated: Use `FunLike.coe_add` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add'` to `FunLike.coe_add x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵a̵d̵d̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲a̲d̲d̲
+probes/NonDiag.lean:254:74: warning: `ContinuousLinearMap.coe_sum'` has been deprecated: Use `FunLike.coe_sum` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵u̵m̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲u̲m̲
+probes/NonDiag.lean:278:13: warning: `ContinuousLinearMap.coe_smul'` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵m̵u̵l̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲m̲u̲l̲
+probes/NonDiag.lean:278:44: warning: `ContinuousLinearMap.coe_add'` has been deprecated: Use `FunLike.coe_add` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add'` to `FunLike.coe_add x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵a̵d̵d̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲a̲d̲d̲
+probes/NonDiag.lean:278:74: warning: `ContinuousLinearMap.coe_neg'` has been deprecated: Use `FunLike.coe_neg` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_neg'` to `FunLike.coe_neg x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵n̵e̵g̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲n̲e̲g̲
+probes/NonDiag.lean:279:4: warning: `ContinuousLinearMap.coe_sum'` has been deprecated: Use `FunLike.coe_sum` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵u̵m̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲u̲m̲
+probes/NonDiag.lean:315:13: warning: `ContinuousLinearMap.coe_smul'` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵m̵u̵l̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲m̲u̲l̲
+probes/NonDiag.lean:315:44: warning: `ContinuousLinearMap.coe_add'` has been deprecated: Use `FunLike.coe_add` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add'` to `FunLike.coe_add x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵a̵d̵d̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲a̲d̲d̲
+probes/NonDiag.lean:330:13: warning: `ContinuousLinearMap.coe_smul'` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵m̵u̵l̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲m̲u̲l̲
+probes/NonDiag.lean:330:44: warning: `ContinuousLinearMap.coe_add'` has been deprecated: Use `FunLike.coe_add` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add'` to `FunLike.coe_add x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵a̵d̵d̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲a̲d̲d̲
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+probes/NonDiag.lean:495:108: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/NonDiag.lean:495:112: warning: Unused tactic linter: `simp` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/NonDiag.lean:495:112: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+probes/NonDiag.lean:639:26: warning: Variable name `F1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _F1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/NonDiag.lean:639:29: warning: Variable name `F2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _F2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/NonDiag.lean:639:36: warning: Variable name `c` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _c
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/NonDiag.lean:641:23: warning: Variable name `F0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _F0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/NonDiag.lean:641:29: warning: Variable name `F2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _F2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/NonDiag.lean:643:23: warning: Variable name `F0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _F0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/NonDiag.lean:643:26: warning: Variable name `F1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _F1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/NonDiag.lean:645:30: warning: Variable name `F2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _F2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/NonDiag.lean:647:35: warning: Variable name `c` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _c
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/NonDiag.lean:649:36: warning: Variable name `c` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _c
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/NonDiag.lean:663:109: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/NonDiag.lean:663:113: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/NonDiag.lean:663:113: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+probes/NonDiag.lean:683:78: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/NonDiag.lean:683:78: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+probes/NonDiag.lean:696:103: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/NonDiag.lean:696:107: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/NonDiag.lean:696:107: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+'ShadowProbe.lcGam_formG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.fderiv_lcGam_formG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curvG_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.GS_nondeg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.GiS_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.D2_tab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Ric_tab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row83_squashed_S5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.GiG_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.D2G_tab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.RicG_tab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row83_squashed_S5_everywhere' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.GE_nondeg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.RE_tab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.RUE_tab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.ef_kretschmann' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sds_kretschmann_ef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.nariai_horizon_kretschmann' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 435 s

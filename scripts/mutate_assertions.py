@@ -658,6 +658,50 @@ def _trace(expr, asg, fns, src, depth, seen, wide=True):
     return '\n'.join(acc), hit
 
 
+# ⛭⛭ r7367+cc66 ③ -- THE TARGETED MINT, OVER A COMMITTED NAMED LIST AND NOTHING ELSE.
+#   `r7367` ③: *"Not a general container hop -- that died on its own held-out test and is not
+#   reopened -- a targeted extractor extension over a NAMED list of 34."*
+#   The drop this lifts is one line below (`trace = _reads(cont, asg, ...)` returning None): these
+#   sites test a literal against a container bound by a LOOP OR COMPREHENSION TARGET, which `asg`
+#   does not carry and `tasg` does.  The wide hop followed that binding for every site and was
+#   refused on precision; this follows it ONLY where the resulting key is in the committed list, so
+#   the list is the scope of the change and not a filter applied after a measurement.
+#   ⌗ The list is DERIVED (computations/.../r7367_cc66_pricing_the_thirty_four/make_selector.py) and
+#     the file is data: if it is absent the mint is simply off and the extractor behaves as before.
+_MINT_34 = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        'computations', 'beyond_the_wall', 'r7367_cc66_pricing_the_thirty_four',
+                        'thirty_four.tsv')
+
+
+def _mint_list():
+    """{(receipt, normalised literal)} -- the committed 34, or empty unless the mint is asked for
+
+    ⛔⛭ INERT BY DEFAULT, AND THAT IS THE POINT, NOT A HEDGE.  Minting these `34` keys makes each a
+    NEW KEY, which `check_quote_pins` ⓵ counts as a `[FAIL]` until the key carries a row -- and a row
+    whose verdict is `UNADJUDICATED` RAISES a count the ratchet lets only FALL.  ⇒ *** So the mint
+    and its `34` adjudications are ONE landing and cannot be two: a commit carrying the mint alone
+    turns the gate red by construction. ***  Until the rows exist the extension ships committed,
+    auditable and OFF, and `QP_MINT_34=1` is what the measurement sets to turn it on.
+    """
+    if os.environ.get('QP_MINT_34') != '1':
+        return frozenset()
+    try:
+        with open(_MINT_34, encoding='utf-8') as _fh:
+            raw = _fh.read()
+    except OSError:
+        return frozenset()
+    out = set()
+    for ln in raw.split('\n'):
+        if '\t' not in ln or ln.startswith('#'):
+            continue
+        c = ln.split('\t')
+        out.add((c[0], ' '.join(json.loads(c[1]).split())))
+    return frozenset(out)
+
+
+_MINTED = _mint_list()
+
+
 _EXT = re.compile(r'\.(tex|py|md|json|tsv|txt|csv|ya?ml|log)\b')
 
 
@@ -969,6 +1013,8 @@ def quote(root, files=None):
             visit(r, False, False, 2, frozenset())
         for n, lit, cont, alt in best.values():
             trace = _reads(cont, asg, fns, src)
+            if trace is None and (os.path.relpath(f, root), ' '.join(lit.split())) in _MINTED:
+                trace = _reads(cont, tasg, fns, src)     # r7367+cc66 ③: the targeted mint, list-scoped
             if trace is None:
                 continue
             # not text another seat owns: the receipt's OWN source (`open(__file__)`, a self-pin, found in the

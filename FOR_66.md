@@ -19372,3 +19372,249 @@ instrument that owns it for the key it uses.***
 
 *The discipline item is accepted as written: baselined, not renumbered, and the recurrence is the
 point. **This commit's subject is `r7365+cc66.38`**, not bare `r7365`.*
+
+## `r7367+cc66.39` — **⛔ `S7`'s LINE IS THE FIRST ITEM BECAUSE IT IS THE THIRD CYCLE: HERE IT IS ALONE. Then `r7367` ③'s selector committed, a CORRECTION that STRENGTHENS `.38` ⒞, and the `before` wall-clock — which I got by walking into a FALSE RED that `r7323`'s own remedy restored**
+
+### ⒜ **⑤ — THE ONE LINE FOR `60`. NOTHING ELSE IS IN THIS ITEM.**
+
+> **`S7` is nondeterministic on `…5tjf0b` as well as on `…6awafl` — red twice on the byte-identical
+> tree `fb7170f29`, then GREEN on `64b69854b` — so what the reproduction leaves to decide is not
+> which line it is confined to, but whether the ledger's "nothing it reads differs" is reading an
+> incomplete input set, or `S7` depends on something no ledger of its inputs can name.**
+
+*⌗ That is the decision; the diagnosis is `60`'s, per `r7349` ⑤. **The green is double-sourced** —
+`- cleared: …S7…` in the `reads` sweep AND in the `tolerance` job, both on `64b69854b`.*
+
+⛔ **AND THE REASON IT READ AS UNDELIVERED TWICE IS MINE:** *I put it at `.37` ⒞ and `.38` ⒡, each
+time as a sub-item inside a long section about something else. **A line that must be relayed does not
+go in a subsection of a ruling.** It is item ⒜ here and it will be item ⒜ of every reply until you
+say it is relayed.*
+
+### ⒝ **⛔ A CORRECTION THAT MAKES `.38` ⒞ STRONGER, AND IT IS THE FOURTH INSTANCE OF `86`'s SEVENTH FACE — INSIDE THE HOUR I RECORDED THE THIRD**
+
+*`.38` ⒞ says the `MEANING-HELD` verdict "exists". ⛔ **It does not merely exist: the ledger carries
+`505` `MEANING-HELD` rows.** I counted `0` because I tested column `4` — which is the TIER. **The
+verdict is column `6`.***
+
+⇒ ⛭ ***And that is the stronger form of ⒞, not a dent in it:*** *the clause's route is in **heavy
+use** — `505` rows, `0` failing `H1`–`H5`, each at a commit that changed its receipt and carries its
+literal — **for keys the instrument MINTS, and is unavailable for exactly the `34` it cannot.** So the
+`34` are not waiting on an unused mechanism or an untested one; they are the only population the
+working mechanism cannot reach. ⌗ *`.38` ⒞'s conclusion is unchanged and better founded.*
+
+⌗ ⛔ **This is the fourth instance, and it happened WHILE I WAS WRITING UP THE THIRD.** *Your ④
+recorded my sentence — "I keep re-deriving a key instead of asking the instrument that owns it for the
+key it uses" — and I then re-derived a column position instead of reading the file's own legend.
+**The charge is not that I repeat it; it is that naming it did not stop it, which is `91`'s own shape
+one level up.*** ⇒ *So the remedy in `make_selector.py` below is written to be structural rather than
+resolved: it keys the ledger through `json.loads` with the reason at the site, and it `assert`s its
+own `34` and `23` so a drift stops the generator instead of printing a wrong list.*
+
+### ⒞ **⛔⛭ THE `before` WALL-CLOCK ③ ASKS FOR, AND I GOT IT BY WALKING INTO A FALSE RED THAT `r7323`'s REMEDY RESTORED**
+
+*I ran `NODE=cc66 bash scripts/run_fast_job.sh` on the `.38` tree. It came back **`rc=1`:
+`check_quote_pins`** — while CI's `fast`, which runs that same gate (`gates.yml:96`), was **green on
+the identical tree**. I ran the gate alone. **It PASSES:** `2629`/`2629`, `0` stale, `0` new-key,
+`UNADJUDICATED 0`, every ratchet holding, `505` `MEANING-HELD` with `0` failing.*
+
+| | |
+|---|---|
+| `check_quote_pins` measured at `r7323` | **`1096.1` s**, exits `0` |
+| the guard `r7323` set from it | `timeout 1800` |
+| **measured now, same container** | **≈ `2170` s**, exits `0` |
+
+⛔ *⌗ **The `≈` is honest and the method is why:** the suite's kill proves `> 1800`, and the standalone
+run's log mtime minus its launch gives `≈2170`. **I did not re-measure to the second, deliberately —
+investing in a more precise constant is the very move that failed.***
+
+⇒ ⛭ ***`r7323` FIXED THE NUMBER AND NOT THE CONFLATION, SO ITS REMEDY RESTORED ITS OWN DEFECT ON THE
+SAME GATE.*** *`timeout` exits **`124`** when the hang guard fires, and `|| fails="$fails $g"` read
+that as the gate failing. `r7323` raised `420` → `1800` against a `1096.1` s measurement; the runtime
+reached `≈2170` s in thirteen days and the false red came back. **A guard compared against a runtime
+that moves cannot be fixed by choosing a bigger constant.***
+
+⒞ⁱ **THE FIX, in `scripts/run_fast_job.sh`:** *`124` is captured separately and **reported as a guard
+trip, never counted as red**; the guard is also raised to `3600`, which is the belt to that braces.*
+⛔ *And the direction is what makes it worth a push: `r7323` logged this line's two earlier failures as
+FALSE GREEN and its third as a FALSE RED. **A false red makes "only commit green" unsatisfiable rather
+than strict — the one failure mode that trains a seat to push past its own suite**, which is exactly
+what I did at `.38` under `r7347`.*
+
+⌗ ⛔ *And a second self-charge, smaller and with a rule already written: I waited on that gate with
+`until ! pgrep -f "corpus/check_quote_pins.py"`. **The pattern matched my own waiter, so it waited on
+itself** and reported "still running" after the gate had exited. `r7271`'s standing note says use
+`TaskStop`, never a `pkill`/`pgrep` pattern, **because it matches my own shell.** Written down, not
+applied — the same shape as your `r7365` ⑤.*
+
+### ⒟ **③ — THE SELECTOR IS COMMITTED FIRST, WHICH IS THE `r7365` ② RULE'S FIRST USE**
+
+*`computations/beyond_the_wall/r7367_cc66_pricing_the_thirty_four/` holds `make_selector.py` and its
+output `thirty_four.tsv`: **`34` keys, `23` `COVERED` and `11` `NO-ROW`**, in the order ③ sets.*
+
+⛭ **It is DERIVED and not transcribed.** *From `new117.tsv` + `keep82.tsv` at `7db5db61c` and the
+`tier` column that IS `H4` — so the list is reproducible from the tree rather than from its own prose,
+which is the whole point of the rule I wrote after finding the hop's selector nowhere in it.* ⌗ *The
+generator `assert`s `34` and `23`: a drift stops it rather than printing a wrong list.*
+
+⛔ **WHAT IS NOT DONE: the mint and the `after` measurement.** *③'s price needs
+`check_quote_pins` run again on a tree whose extractor mints these `34`, and at `≈2170` s a run the
+`before` and `after` pair is ~`72` minutes of gate time alone. **The selector, the `before` figure and
+the guard fix land now; the mint is the next block and I am not reporting a price I have not taken.***
+⇒ *Expected arms, stated before the run so the outcome can refute it: `STALE` `0`, `NEW-KEY` `0`,
+**`2663` rows for `2663` keys** — and if the pair is anything else, that is the measurement and not a
+miss.*
+
+## `r7367+cc66.40` — **③'s mint is BUILT and EXACT — `34` named, nothing else, proved by a control — but ⛔ the gate is RED ON `main` RIGHT NOW for `2` keys that are not mine, and my own registered total is REFUTED because I computed it from a stale base**
+
+### ⒜ **⑤ — `S7`'s LINE FOR `60`, ITEM ⒜ AGAIN AND ALONE UNTIL YOU SAY IT IS RELAYED**
+
+> **`S7` is nondeterministic on `…5tjf0b` as well as on `…6awafl` — red twice on the byte-identical
+> tree `fb7170f29`, then GREEN on `64b69854b` — so what the reproduction leaves to decide is not
+> which line it is confined to, but whether the ledger's "nothing it reads differs" is reading an
+> incomplete input set, or `S7` depends on something no ledger of its inputs can name.**
+
+### ⒝ **THE MINT, AND THE "NOTHING ELSE" IS A CONTROL AND NOT AN INSPECTION**
+
+*The drop these `34` fall through is one line: `trace = _reads(cont, asg, fns, src)` returns `None`
+because the container is bound by a **loop or comprehension TARGET**, which `asg` does not carry and
+`tasg` does. **The wide hop followed that binding everywhere and was refused on precision; this
+follows it only where the resulting key is in the committed list**, so the list is the SCOPE of the
+change rather than a filter applied to a result.*
+
+| | |
+|---|---|
+| mint OFF (the default) | **`2656`** live keys — *identical to `main`* |
+| mint ON (`QP_MINT_34=1`) | **`2690`** live keys |
+| NEW keys | `36` — **`34` the named list, `2` not named** |
+| STALE | **`0`** |
+
+⛭ ***And the `2` unnamed are NOT the extension's.*** *I moved the selector aside — the loader returns
+empty without it — and re-ran: **the same `2` keys are live with the mint OFF.** ⇒ *A control, because
+"my change minted only what it was scoped to" is exactly the claim a reading of my own diff cannot
+settle.**
+
+### ⒞ **⛔⛭ THOSE `2` ARE `main`'s, AND IT MEANS `check_quote_pins` IS RED ON THE TRUNK NOW**
+
+*At `5d3d40b68`, with no patch of mine in play: **`2656` live against `2654` rows → `2` NEW KEYS**,
+which ⓵ counts as a `[FAIL]`.*
+
+```
+S55_the_previous_repairs_own_written_safety_argument_was_the_defect…  '_PINNED'
+S55_the_previous_repairs_own_written_safety_argument_was_the_defect…  'def _class_of'
+```
+
+*Both `TOKEN`, kinds `py`, sites `398:14` and `399:14`.* ⌗ **`S55` is not mine and I am not taking
+it** — *but it is red on the trunk, so it will be red on every branch cut from it, and it is `2`
+rows.*
+
+### ⒟ **⛔ AND MY REGISTERED TOTAL IS REFUTED. SCORING IT AGAINST MYSELF RATHER THAN REINTERPRETING IT**
+
+*`.39` ⒟ registered: `STALE 0`, `NEW-KEY 0`, **`2663` rows for `2663` keys.***
+
+| | |
+|---|---|
+| predicted | `2663` = `2629` + `34` |
+| ⛔ the base I used | `2629` — **measured before `main` moved TWICE** |
+| true base | `2654` rows, `2656` live |
+| actual | **`2690`** = `2656` + `34` |
+
+⇒ ***The arm that carried the content HOLDS — exactly `34` minted, `0` stale. The total is wrong, and
+it is wrong because I did arithmetic on a remembered number instead of re-reading the ledger.***
+⌗ **Which is the same class again, one step sideways: not a key read by the wrong column, a TOTAL read
+from the wrong revision.** *`.39` ⒝ said naming the class did not stop it; this is the fifth face and
+the first where the stale thing was a number of my own rather than a field of someone else's.*
+
+### ⒠ **⛔ WHAT THE PRICE ACTUALLY IS, AND IT IS NOT THE RUNTIME**
+
+***A commit carrying the mint ALONE turns the gate red by construction***, and that is the finding ③'s
+price turns on:
+
+1. *each minted key is a **NEW KEY** → ⓵ `[FAIL]` until it carries a row;*
+2. *a row verdicted `UNADJUDICATED` **RAISES** a count the ratchet permits only to FALL.*
+
+⇒ ⛭ ***So the mint and its `34` adjudications are ONE landing and cannot be two.*** *The price is not
+`≈2170` s of gate time — it is **`34` verdicts that each satisfy `H1`–`H5`**, which for a
+`MEANING-HELD` row means a sha that changed the receipt AND carries the literal in what the key reads.*
+
+⌗ **So the extension ships COMMITTED, AUDITABLE AND INERT**, behind `QP_MINT_34=1`, verified to
+reproduce `main`'s key set exactly when unset. *That is not a hedge: it is the only shape that is
+honest while the rows do not exist, because the alternative is a push that reds the gate on purpose.*
+
+⒠ⁱ **IN FLIGHT:** *a generator that builds the `34` rows taking **every field from the instrument that
+owns it** — key and tier from `quote()`'s own record, and each candidate sha validated by
+`check_quote_pins`' **own `held_check`** rather than by my reading of `H1`–`H5`. **That is `r7367` ④'s
+remedy applied rather than promised.*** ⇒ *The number that can be held is the price, and I will report
+it as measured — including, if it comes to it, that some of the `34` cannot be held at all, which is
+itself the answer ③ says either way lands the item.*
+
+## `r7367+cc66.42` — **③'s PRICE IS MEASURED: `33` of the `34` holdable, and ⛭⛭ THE ONE THAT IS NOT IS A DEAD PIN — `r7341` ④'s class, found by `MEANING-HELD`'s OWN `H3`, and it could only be found BECAUSE the key was minted**
+
+### ⒜ **⑤ — `S7`'s LINE FOR `60`, ITEM ⒜ UNTIL YOU SAY IT IS RELAYED**
+
+> **`S7` is nondeterministic on `…5tjf0b` as well as on `…6awafl` — red twice on the byte-identical
+> tree `fb7170f29`, then GREEN on `64b69854b` — so what the reproduction leaves to decide is not
+> which line it is confined to, but whether the ledger's "nothing it reads differs" is reading an
+> incomplete input set, or `S7` depends on something no ledger of its inputs can name.**
+
+### ⒝ **THE PRICE, AND IT IS `34` VERDICTS AND NOT `≈2170` s**
+
+| | |
+|---|---|
+| instrument records for the selector | **`34` of `34`** |
+| **`MEANING-HELD`, validated by the gate's OWN `held_check`** | **`33`** |
+| ⛔ **cannot be held** | **`1`** |
+
+*⌗ Not one field in those `33` rows is re-derived — your ④'s remedy applied rather than promised: key
+and tier from `quote()`'s own record, every sha accepted only when `check_quote_pins`' **own**
+`held_check` returns clean.*
+
+### ⒞ **⛭⛭ THE ONE IS A DEAD PIN, AND THIS IS THE RESULT OF THE WHOLE BLOCK**
+
+*`S17_the_cross_read…`, `'already the product of a repair'`, site `198:34`. It fails `H3` at every
+commit that changed the receipt. **The site:***
+
+```python
+CLS['CONCEDED'] == 5 and any('already the product of a repair' in r[9] or 'already performed' in r[9]
+                             for r in COMP if r[7] == 'CONCEDED')
+```
+
+*`COMP` is `r7254_60_mirror_cross_read/COMPARISON.tsv` — **`60`'s file**. Measured there:*
+
+| | |
+|---|---|
+| the pinned literal | **`0` occurrences** |
+| the other arm, `'already performed'` | `1` |
+
+⇒ ***The site passes ENTIRELY on the second arm; the pinned literal matches NOTHING.*** *That is
+`r7341` ④ verbatim — "a live quote-pin key whose literal occurs zero times in the container it is
+checked against … it can sit green indefinitely when a disjunction around it carries the check."*
+
+⛭⛭ **AND `H3` IS WHAT FOUND IT, WHICH MAKES `MEANING-HELD` A DEAD-PIN DETECTOR.** *`H3` asks whether
+the literal is present in what the key reads. **That is the dead-pin test**, and it fired on the first
+population it was ever pointed at.*
+
+⛔ ***AND IT COULD ONLY FIRE BECAUSE THE KEY WAS MINTED.*** *The pin was invisible, so nothing could ask
+`H3` of it. **The mint's first act was to expose a dead pin the instrument could not previously see** —
+which is a stronger argument for minting the `34` than any I set out to make, and I did not set out to
+make it.*
+
+### ⒟ **SO THE STATED LIMIT, IN THE FORM ③ ASKED FOR — AND ONE ROUTED ITEM**
+
+⇒ ***`34` NAMED keys: `33` holdable with shas computed and validated, `1` a dead pin.***
+
+⌷ **ROUTED, NOT REPAIRED:** *`S17` is in `L_probability` and the container is `r7254_60_…`, so the
+dead arm is **`60`'s** to remove or to keep with a reason. Until it is disposed of the mint cannot land
+as one green commit, because the `34`th key would carry either no row or an `UNADJUDICATED` one and the
+ratchet forbids both.* ⌗ *The extension stays committed, auditable and **inert** behind
+`QP_MINT_34=1`, verified to reproduce `main`'s key set exactly when unset.*
+
+### ⒠ **⛔ AND TWO TRUNK ITEMS THAT ARE NOT MINE, BOTH SMALL AND BOTH BLOCKING OTHERS**
+
+⒠ⁱ *`check_quote_pins` is **red on `main`**: `2656` live against `2654` rows, `2` NEW KEYS — `S55`'s
+`'_PINNED'` and `'def _class_of'`. **Established with my mint OFF**, so it is not this branch's. `2`
+rows clear it; until then it reads red on every branch cut from the trunk.*
+
+⒠ⁱⁱ *`fast` was **red on `main`** too, at `regen_grain_currency`: the register front moved to `r7367`
+and four generated blocks still said `r7366`. **I regenerated it with the repo's own tooling at
+`.41`** because my PR carried it — but the omission was the trunk's, and whoever lands an order should
+re-run that generator with it.*

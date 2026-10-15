@@ -194,6 +194,31 @@ BASELINE = {
             #:     register and THE_FRONTIER cite it as such, and renumbering a pushed subject to fix an
             #:     ambiguity a note resolves breaks every citation written to it.  Cite both by SHA.*
             'r7355',
+            #: ⛔⛭⛭ r7371 (66): ** r7367 IS A FIFTH INSTANCE, AND IT WITHDRAWS THE r7365 CHARGE AGAINST THE
+            #: FOURTH.  THE PREVENTION'S SCOPE WAS SHORT, NOT UNAPPLIED. **  *66's five r7367 commits are one
+            #: first-parent chain (`fad38d00` .. `688a59fc`, session `01XXe`) and read as a SPAN.  Against them:
+            #: `6d952e31`, "r7367 acknowledged — the ordered read on S50's frame selector is done and
+            #: confirmed", node 60's ACKNOWLEDGEMENT of an order, arriving through a merge's second parent.*
+            #:   ⛔ ** r7365 charged the fourth instance as a face of "a rule written down and ratified is not a
+            #:     rule applied".  THAT CHARGE IS WITHDRAWN. **  *The prevention -- write the SUFFIX form
+            #:     `rNNNN+<seat>` -- was drawn from r7185, r7285 and r7287, which are all ANSWER commits a
+            #:     suffix fixes because the number is the answering seat's own base.  ** `r7367 acknowledged`
+            #:     has NO suffix to add: the number is not this seat's at all, it is the order being cited. **
+            #:     So the rule never reached this shape, and five instances across three seats with the
+            #:     convention demonstrably in use is a rule with a short scope rather than three seats failing
+            #:     to apply it.*
+            #:   ⇒ *** THE RULE, WIDENED AND ORDERED TO EVERY SEAT AT r7371: A COMMIT SUBJECT THAT BEGINS WITH
+            #:       A REVISION NUMBER IS A CLAIM TO THIS GATE, WHATEVER THE NEXT WORD IS.  An acknowledgement,
+            #:       an answer or any citation of another line's revision does not BEGIN with that number --
+            #:       put it after the first few words ("acknowledged: r7367's ordered read ...") or use the
+            #:       seat's own suffixed id. ***
+            #:   ⌗ *And the gate is deliberately NOT given a keyword exemption for `acknowledged`: a list of
+            #:     permitted second words is an enumeration that is wrong the first time a seat writes
+            #:     "r7367 read" or "r7367 noted", which is the same shape as every other spelling list this
+            #:     corpus has had to widen.  The repair is upstream, in how the subject is WRITTEN -- which is
+            #:     r3622's own lesson ("the repair is upstream of the citation") applied one step further on.*
+            #:   ⌷ *Baselined and not renumbered, for r3563's reason.  Cite both by SHA.*
+            'r7367',
             'r6853',      # ⛭ r6855 (66), ATTRIBUTION CORRECTED r6857 on 60's report: the other
                           #   r6853 is NODE 64's (aafa3939), not node 60's -- 66 named 60 twice and
                           #   both namings were wrong.  64 took it while 66 was mid-write on the

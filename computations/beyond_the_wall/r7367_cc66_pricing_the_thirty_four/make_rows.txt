@@ -1,0 +1,4 @@
+instrument records for the selector: 34 of 34
+HELD and validated by the gate's own held_check : 33
+could NOT be held                               : 1
+   [UNHELD] S17_the_cross_read_leaves_six_of_twenty_seve | 'already the product of a repair' | SOURCE/SENTENCE | H3 the literal is not in what the key reads at f147b9e5e154e36e5a620e3af7685c6cc55f0e08

@@ -10,6 +10,53 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7367` — ③ DONE FIRST, AS ORDERED: THE SEVEN ARE NAMED, AND ONE OF THEM IS NOT DONE. `57` OF `57` DONE ROWS NOW RE-RUN CLEAN FROM HEAD. ⌗ CENSUS DONE `50`, HALVES `7` (`r7367+71.1`)
+
+*Result: `computations/formalisation/r7367_71_named/RESULT.md`, with `RERUN_CENSUS.txt` beside it. The same committed
+`rerun_census.py` was run on the census as edited.*
+
+- ***①:*** the withdrawal is read and stands as you wrote it. Nothing of mine was sized against the second seat.
+- ***②:*** agreed. The forward price is untested by campaigns 7–13, not confirmed by them, and from now on it is
+  reported that way.
+- ***③, the seven:***
+  - ***Six are named and stay DONE:***
+    - 29: `cycloid_proper_time` and 3 more;
+    - 41: `kappa_half_fprime`, `surface_gravity`;
+    - 42: `one_plus_z`, `charge_const` and 3 more;
+    - 43: `homothety_charge` and 2 more;
+    - 74: `gowdy_ds_field`, `gowdy_shear_charge`;
+    - 92: `sinh23_flow` and 2 more.
+  - ***Row 77 leaves DONE:***
+    - Its declarations (`killing_of_invariant`, `gowdy_killing`) prove `∂_x`, `∂_y` Killing.
+    - The receipt's "EXACTLY two" (no third Killing vector) was recorded as NOT built in `r7297`'s own RESULT, and
+      the census never carried that.
+    - Naming the declarations is what showed they do not cover the row.
+    - It is now a chartable half, with the uniqueness as its open half.
+  - ***The re-run:*** `57` of `57` DONE-status rows re-run CLEAN from HEAD: `0` not clean, `0` unresolved, `345`
+    axiom lines over `22` files.
+  - ***Census:*** DONE ***`50`***, halves ***`7`*** (7, 17, 35, 59, 77, 79, 108). The rest is unchanged.
+- ***④:*** the open halves next, cheapest first by my price list, each with a registered band. The first is row 79
+  (`S²` leaves, near-point convention). Row 77's uniqueness half is added to the list, priced as a Lie-derivative
+  argument with no connection.
+- ***④, campaign 14*** (registered `r7367+71.2`, BUILT at `+71.3`): ***row 79 is DONE***, in `probes/Row79Leaf.lean`
+  (`170` lines against `140`, `12 s`).
+  - SdS's static leaves have `K_ab = 0`.
+  - The leaf metric on the `Fin 3` engine has `³R = 2(1 − F − rF′)/r²`, which is `6/α²` for SdS, independent of `M`.
+  - ***The pre-opening reading survived*** (p `0.55`): the running rate is `15` of `22`. This is the forward price's
+    first test since `r7351`.
+  - The compile price was wrong by `≈ 10×`: a scalar-only instance has no `fin_cases` table to price.
+  - Census: DONE ***`51`***, halves ***`6`***.
+- ***④, campaign 15*** (registered `r7367+71.4`, BUILT at `+71.5`): ***row 17 is DONE***, in `probes/NonDiag.lean`
+  `section EFNariai` (`281` lines against `350`, `435 s` for the whole file).
+  - SdS's Kretschmann scalar is computed AT the Nariai horizon, where `f = f′ = 0` and the static chart fails. It is
+    done in the ingoing Eddington–Finkelstein chart, which is nondegenerate for every `F`, on the non-diagonal engine.
+  - THE connection gives `K = F″² + 4F′²/r² + 4(1 − F)²/r⁴`. For SdS that is `48M²/r⁶ + 24/α⁴` at every `r`,
+    horizons included, and `72/α⁴` at `r_N = 3M` with `α² = 27M²`: the receipt's value, at the point, not as a
+    limit.
+  - The generator is committed (`gen_ef_tables.py`). Every one of the `≈ 1,000` table entries is checked.
+  - Census: DONE ***`52`***, halves ***`5`***.
+- *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ `re r7365` (and `r7355` ②–③) — THE CENSUS AT THE CAMPAIGN'S EDGE: DONE `51`, HALVES `6`, ENGINE-REACHABLE `0`, REOPENABLE `0` + ONE HALF, GENERIC-METRIC `2`, NO-CONNECTION `32`, REAL END `20`. ⌗ SURVIVAL `14` OF `21`. ⌗ `50` OF `57` DONE ROWS RE-RUN CLEAN FROM HEAD, `0` FAIL, `7` UNRESOLVED (`r7365+71.1`, `+71.2`)
 
 *Result: `computations/formalisation/r7365_71_census/RESULT.md`. The re-run record `RERUN_CENSUS.txt` is beside it,

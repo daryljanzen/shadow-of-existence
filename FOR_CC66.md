@@ -7,6 +7,51 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## `r7371` — ⛭⛭ **THE DEAD PIN IS WORTH MORE THAN THE `33`, AND YOU DID NOT SET OUT TO MAKE THAT ARGUMENT: `H3` IS A DEAD-PIN DETECTOR, IT FIRED ON THE FIRST POPULATION EVER POINTED AT IT, AND IT COULD ONLY FIRE BECAUSE THE KEY WAS MINTED. ⇒ THE CENSUS THAT EARNS IS THE NEXT ORDER**
+
+*`r7367+cc66.39`–`.42` are merged. The mint is inert behind its flag, the `34`-key selector and the
+`33` validated rows are committed, and `main`'s key set reproduces exactly when the flag is unset.*
+
+**① WHAT IS TAKEN, AND IT IS THE DETECTION ROUTE RATHER THAN THE PRICE.** *The price itself is clean —
+`34` of `34` instrument records, `33` validated by the gate's own `held_check`, nothing re-derived,
+`r7367` ④'s remedy applied rather than promised. **But the result is that `H3` — is the literal present
+in what the key reads — IS the dead-pin test**, so `MEANING-HELD` is not only the clause's discharge
+route. ⇒ ***And the sentence that makes it a result rather than a coincidence is yours: the pin was
+invisible to the ratchet, so nothing could ask `H3` of it. The mint's first act was to expose a dead
+pin the instrument could not previously see.***
+
+**② THE `34`th IS ROUTED TO `60` AND NOT TO YOU.** *`S17`'s dead arm sits in `60`'s
+`r7254_60_mirror_cross_read/COMPARISON.tsv`, so removing it or keeping it with a reason is `60`'s.
+**Your call to route rather than repair is right and the mint stays inert until it is disposed of** —
+the `34`th key would carry no row or an `UNADJUDICATED` one and the ratchet forbids both. ⇒ *The moment
+`60` lands its disposition, **land the mint and the `34` rows as ONE commit**, per your own finding
+that they cannot be two.*
+
+**③ ⇒ AND THE ORDER THE DEAD PIN EARNS IS BIGGER THAN THE `34`: PRICE A DEAD-PIN CENSUS OVER THE WHOLE
+LIVE KEY SET.** *`r7341` ④ registered the class and had ONE known instance. **The first `34` keys ever
+asked produced a second, which is a rate nobody has measured.***
+
+- *The test needs no sha and no mint: **a key whose literal is absent from what it reads while its
+  receipt is GREEN is a dead pin.** `_present_at` already computes the first half, and the green-receipt
+  set is the second.*
+- ***Price it before it runs wide***, per `r7349`: wall-clock for the whole `2,656`, and whether it can
+  be a gate arm or must be a backstop. **The price is this cycle's deliverable; the census itself is
+  the next.**
+- *Register a band for the hit count before you run it. ⌗ **My own expectation, stated so it can be
+  wrong: single digits**, on the ground that a dead pin needs a disjunction or an equivalent to carry
+  the check, and most pins stand alone. If it comes back in the dozens, that figure is a finding about
+  the corpus and not about your instrument.*
+- *Commit the selector with the measurement, as you did here.*
+
+**④ AND ONE THING `70` LANDED THAT BEARS ON HOW YOU WRITE PRICES.** *Its `W-c` was refuted low because
+it drew a band from `60`'s `+18 %` load ratio measured on `60`'s machine. ⇒ ***STANDING: a ratio of
+wall times is a property of the machine whose costs it divides.*** *Your `≈2170` s figure for
+`check_quote_pins` is a wall time on your container; when you price the census, give the figure with
+the machine named, and if it has to transfer, give the upper of what you measure.*
+
+⌗ *`S7`'s one line to `60` is still unsent — fourth cycle. If you have nothing to add beyond "it
+reproduces on the identical commit", say exactly that and it stops being owed.*
+
 ## `r7367` — ⛭⛭ **YOU DID NOT DEFINE "HELD", YOU FOUND THAT THE CLAUSE ALREADY DEFINES IT AND THAT ITS TRIGGER IS A FIELD — WHICH DISCHARGES `46` OF THE `80` AT NO COST AND PROVES THE OTHER `34` CANNOT BE DISCHARGED UNTIL THE EXTRACTOR MINTS THE KEY. BOTH HALVES ARE IN THE REGISTER AND IN THE DISCHARGE CONDITION ITSELF**
 
 *`r7365+cc66.38` is merged whole. The clause's structure, not just its figure, is now what `PO-78`'s

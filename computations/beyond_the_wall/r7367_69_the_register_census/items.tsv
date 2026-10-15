@@ -1,0 +1,258 @@
+cand	paper	class	topic	register	note
+0	P1	NOT-OPEN	literature tense of "collapsed objects"	-	rhetorical
+1	P1	NOT-OPEN	cosmic censorship	-	standard physics, declined as unneeded
+2	P1	NOT-OPEN	degenerate-horizon temperature readings	PO-48/54/55	self-answered: mechanism absent
+3	P1	POINTER	UV regime of late-time collapsing surface: benign? what a treatment must supply	PO-23?	homed in P15/P11; check there
+4	P1	CHECK	content of BH entropy for a perpetually collapsing body	PO-32 struck	not settled by this argument
+5	P1	POINTER	dynamics of matter/observers crossing the finite-curvature boundary	PO-30 struck	"carried, and left open, in the companions" P15/P11
+6	P2	NOT-OPEN	FQXi conjecture history	-	historical
+7	P2	POINTER	ontological reading of the r=0 divergence	-	deferred to P2 sec:ontology
+8	P2	NOT-OPEN	z-curve as fundamental object	-	answered by companions (substrate)
+10	P2	NOT-OPEN	cycloid generalisation	-	stated not open
+11	P2	OPEN	whether root triple {roots} and value triple f in {0,1,2} are one structure	-	no derivation exhibited
+12	P3	CHECK	the object an su(3) would act on (bundle/connection) -- "what is owed"	PO-45 struck	
+13	P3	CHECK	identification of conjugate-form su(3) as physical colour "left open"	PO-45 struck	
+14	P3	OPEN	whether the Q->-Q Z2 is the source of distinction between complementary readings	-	noted, not claimed, untested
+15	P3	CHECK	colour identification "left open"	PO-45 struck	same as 13
+16	P3	NOT-OPEN	why cosmological reassignment selects degenerate member	-	scope; answered in P7
+17	P3	NOT-OPEN	-M/r^3 attribution	PO-29 struck	self-answered
+18	P3	OPEN	whether involution + sky-angle periodicity generate the full discrete vantage structure	-	classification not done; check P5
+20	P3	CHECK	charged closed loop: no branch point ("Open. One thing is open")	PO-49/PO-25 struck	paper's Open paragraph; dynamics shown not to reach the eternal inner horizon
+21	P3	NOT-OPEN	status paragraph	-	
+22	P4	NOT-OPEN	relativity of simultaneity question	-	
+23	P4	NOT-OPEN	margin to close	-	
+24	P4	POINTER	whether the content-independence extends from the rate to the scale	-	taken up in P7
+25	P4	NOT-OPEN	which geometry realises the augmentation	-	answered by companions
+26	P5	NOT-OPEN	abstract pointer to frontier	-	see 32
+27	P5	CHECK	whether a concrete matter model's history reaches the branch point	PO-30 struck	"what remains to be checked"
+28	P5	NOT-OPEN	sign choices	-	maths
+29	P5	CHECK	the gauge-acted, isometry-realised sector on the compact face "stays unbuilt"	PO-26 struck	paper says unbuilt; row struck
+31	P5	NOT-OPEN	no open direction of its own	-	
+32	P5	CHECK	irreducible interiors: whether a spacelike origin forms behind the inner horizon turns on the interior mass function at the origin	PO-25/PO-49 struck	
+33	P6	NOT-OPEN	abstract	-	
+34	P6	NOT-OPEN	rules	-	
+35	P6	NOT-OPEN	least-arbitrariness	-	
+36	P6	NOT-OPEN	"bets outstanding"	-	epistemic accounting
+37	P6	NOT-OPEN	boundary	-	
+38	P6	NOT-OPEN	history	-	
+39	P6	OPEN	the discipline's first programme: sampling historical episodes (incl. those where the criterion was applied and disregarded) to measure whether the rules track truth	-	THE_BASE_RATE.md exists; no register row
+40	P6	CHECK	"two edges remain open": the matter sector; the damping-scale signature (weight as a tension turns on an independent tilt measure)	PO-24 struck	
+41	P6	NOT-OPEN	pointer; reliability question = 39	-	
+42	P6	NOT-OPEN	conjectures in standard GR	-	
+43	P6	NOT-OPEN	bet outstanding	-	
+44	P7	NOT-OPEN	theorem env	-	
+45	P7	NOT-OPEN	intro	-	
+46	P7	POINTER	"what the framework does not yet build ... open problems at the close": SM matter sector	-	see P7 sec:frontiers
+47	P7	POINTER	matter and SM sectors "it does not yet build"	-	see P7 sec:frontiers
+48	P7	POINTER	onset of free radiation beyond the confining isometry	-	treated in P8/P9
+49	P7	NOT-OPEN	CTCs in GR	-	standard physics
+50	P7	NOT-OPEN	chronology protection	-	
+51	P7	NOT-OPEN	cosmic censorship	-	
+52	P7	NOT-OPEN	information paradox	-	
+53	P7	NOT-OPEN	Page curve falsifier	-	
+54	P7	NOT-OPEN	lift objection	-	settled
+55	P7	CHECK	content of BH entropy for a perpetually collapsing body	PO-32 struck	same as 4
+56	P7	NOT-OPEN	synchrony	-	
+57	P7	NOT-OPEN	heading	-	
+58	P7	NOT-OPEN	synthesis	-	
+59	P7	NOT-OPEN	synthesis	-	
+60	P7	OPEN	a mechanism for the acoustic peak-shape deficit (full-spectrum likelihood rejects the computed TT spectrum on its shape) -- "named as owed"	PO-10/47/56/70 struck	no live row carries the mechanism
+61	P7	CHECK	derivation of eta and the onset	PO-31/40/41 struck	paper: inherited by conservation; derivation must reach progenitor's conserved charge
+62	P7	CHECK	representation content (species, multiplets, masses) undelivered; the composition frontier and fermion-sector frontier are one	PO-26/45 struck	paper calls it a frontier, "handed over to the matter sector"
+63	P7	NOT-OPEN	crossing cannot supply asymmetry	-	settled constraint
+64	P7	NOT-OPEN	discrete side	-	settled
+65	P7	NOT-OPEN	continuous question closed	-	settled
+66	P7	NOT-OPEN	crossing settled in frontiers	-	
+67	P7	NOT-OPEN	-	-	
+68	P7	NOT-OPEN	-	-	
+69	P7	NOT-OPEN	-	-	
+70	P7	NOT-OPEN	antimatter progenitor	-	
+71	P7	POINTER	reckoning of relational R-reading with matter sector's crossing account (crest fixed by S3 not by R)	-	carried in P14/P13
+72	P7	OPEN	root triple and causal-value triple {0,1,2} one structure? "held open"	-	same as 11
+73	P7	NOT-OPEN	matter of the collapse	-	
+74	P7	OPEN	the irreducible interior reassignments (Kerr-inner, Reissner-Nordstrom-interior): "what stays open there is the interior reassignment" (called ordinary interior analysis, not a frontier)	PO-25/49 struck	same object as 20, 32, 75, 83
+75	P7	OPEN	irreducible interior remainder left open by the reducible classification	PO-25/49 struck	same as 74
+76	P7	POINTER	geometric-core unification "stated there as a conjecture, together with the test that would decide it"	-	see P17
+77	P7	NOT-OPEN	scope of unification	-	
+78	P7	NOT-OPEN	heading	-	
+79	P7	NOT-OPEN	work vs boundary definition	-	
+80	P7	OPEN	scalar sector, "the work": what displaces the fourth peak / about one multipole at each peak / TT-shape rejection / damping-scale Gaussian residual	PO-47 struck r6877	paper names it open; its row is struck
+81	P7	CHECK	SM sector: "open work ... narrowed to the chiral content, the asymmetric action permitted ... not selected"	PO-14/45/26 struck	boundary list + standing Higgs-compatibility condition
+82	P7	NOT-OPEN	quantum sector: ordering external; UV definition settled; order-by-order bookkeeping	PO-23/51/71 struck	boundary per paper
+83	P7	OPEN	classification of causal reassignments: irreducible remainder (Kerr-inner, RN interiors)	PO-25/49 struck	same as 74
+84	P8	NOT-OPEN	scope	-	answered by P9
+85	P8	NOT-OPEN	isotropy equality	-	
+86	P8	NOT-OPEN	2012 question answered	-	
+88	P8	NOT-OPEN	what is open is narrow; free radiation handed to ordinary evolution	-	
+89	P8	OPEN	a generative law for the content: the continuous half (a principle selecting a matter profile; whether masses/mixings can follow) -- "what is not settled", no construction claimed or excluded	PO-30 struck r6758	PO-30 was struck as "the geometry supplies no choices"
+90	P8	POINTER	empirical discriminant: the rate is geometric (radiation carries no rate term), decided by early-universe data	-	developed in P15; explicit higher-dim embedding declared not owed
+91	P9	NOT-OPEN	abstract pointer	-	
+92	P9	NOT-OPEN	range question answered	-	
+93	P9	OPEN	irreducible interior reassignments across an inner horizon	PO-25/49 struck	same as 74
+95	P9	OPEN	irreducible interior reassignments	PO-25/49 struck	same as 74
+96	P9	NOT-OPEN	wall	-	
+97	P10	OPEN	the ultraviolet definition of the interacting graviton tower's mode sums -- "carried as this programme's own open frontier"	PO-23 struck; PO-51/52/71 struck	CONTRADICTS P7 item 82, which says all three tower items are settled "the ultraviolet definition of the mode sums with them"
+98	P10	CHECK	a quantum treatment of the imaginary-time (Euclidean) segment itself -- "not addressed ... not claimed"; framework carries the segment's quantum reading on	-	check P7/P11 for whether it is carried as open
+99	P10	NOT-OPEN	adiabatic bound	-	
+100	P10	NOT-OPEN	minisuperspace ordering	-	settled in sec:lock
+101	P10	OPEN	UV definition of tower sums (same as 97); whether the coupling acts on the sum as a free-spectrum deformation	PO-23 struck	same as 97
+102	P10	NOT-OPEN	counterterm basis	-	
+103	P10	OPEN	affirmative branch: a second dimensionless number owed (determination declined: needs a state count for the substrate horizon)	PO-23 struck	part of 97
+104	P10	NOT-OPEN	-	-	
+105	P10	NOT-OPEN	"nothing new is owed"	-	
+106	P10	NOT-OPEN	-	-	
+107	P10	OPEN	renormalised value at the paying dimension not claimed	PO-71 struck	part of 97
+108	P10	OPEN	the closed forms on nine levels are established by fit with held-out control, not proved from the recoupling algebra (two proof routes tried, neither closed)	-	minor; paper says warrant not content
+109	P10	NOT-OPEN	rank equality	-	
+110	P10	OPEN	the quartic's derivative sector is not computed (eight pointwise invariants, at most seven integrated)	-	part of 97
+111	P10	OPEN	value of the level-summed cubic-coupling sign not claimed; needs two-point bitensor integrals the machinery does not reach	-	part of 97
+112	P10	OPEN	"the interacting theory is not built" (back-reaction semiclassical)	-	part of 97
+113	P10	NOT-OPEN	-	-	
+114	P10	OPEN	"the one open thing is the UV definition of the interacting tower's mode sums", invariant at the paying dimension unnamed	PO-23/71 struck	summary of 97
+115	P10	NOT-OPEN	-	-	
+116	P10	NOT-OPEN	-	-	
+117	P10	NOT-OPEN	-	-	
+118	P11	OPEN	no non-perturbative quantization of the interacting tower ("the framework paper carries [it] as an open problem of the programme")	PO-23 struck	P11 says P7 carries it open; P7 says settled -- the same contradiction as 97
+119	P11	NOT-OPEN	2012 gap worked out	-	
+120	P11	NOT-OPEN	propagating chiral member	-	
+121	P11	NOT-OPEN	de Sitter stability	-	settled externally
+123	P11	DECLARED-NOT-OWED	a closed-form nonlinear solution: "not built", not needed for the verdict	-	listed for completeness
+124	P12	CHECK	"the chiral content this parity would grade is not built here"	PO-14/45 struck	same cluster as 81
+126	P12	POINTER	"that the rungs are one fact is advanced there [P17] as a conjecture"	-	see P17; same as 76
+127	P13	NOT-OPEN	abstract scope	-	
+128	P13	NOT-OPEN	frontiers pointer	-	
+129	P13	NOT-OPEN	register	-	
+131	P13	DECLARED-NOT-OWED	no claim that no further escape route from the zero-mode obstruction exists; the compact-face sector is not built	PO-26 struck	robustness bound only
+132	P13	CHECK	the undelivered content (representation content) as a well-posed bounded problem	PO-26/45 struck	same cluster as 62
+133	P13	CHECK	"what remains outstanding": the colour and isospin structure the hypercharge constraint takes as given (chiral content not supplied)	PO-45 struck	same cluster as 81
+134	P13	NOT-OPEN	mass hierarchy not claimed	-	scope
+135	P13	NOT-OPEN	synthesis	-	
+136	P13	OPEN	whether the two real forms ARE physics' actual quantum and gauge sectors, not a structural rhyme -- "an open question ... a located question with a stated blocker" (needs dynamics: a field strength and coupling)	-	no register row
+137	P14	OPEN	the fifth multiplet: horn orbits 2+2 where the SM is 2+1+1; "delivered on neither member" (asymmetric action permitted, not selected)	PO-45/14/37 struck	P7 frames as a boundary fixed on the ordinary route; P14 as what "a successor must supply"
+138	P14	NOT-OPEN	hypercharge is a composition	-	settled
+139	P14	NOT-OPEN	hypercharge	-	settled
+141	P14	NOT-OPEN	P13 conjecture taken up	-	
+142	P14	OPEN	the bundle question: what the wall Dirac operator acts on and what fixes it (generation multiplicity = bundle rank); a route across the wall would settle both composition data	PO-26/45 struck	cluster with 62
+143	P14	NOT-OPEN	null legs account	-	answered in place
+144	P14	NOT-OPEN	flatness complete obstruction	-	
+145	P14	OPEN	a third mechanism (neither holonomy nor isometry) that could supply a colour coupling: "no third mechanism has been named, so naming one remains open"	-	no register row
+146	P14	OPEN	whether any substrate bundle (5D tangent, spinor, wall normal, ruling bundles) furnishes the SM group action -- "we have not examined ... we do not claim the question is closed"	-	no register row; same as 147
+147	P14	OPEN	the remaining bundle candidates, and structure arising from none alone, "untouched here"	-	same as 146
+148	P14	NOT-OPEN	per-wall anomaly falsifier	-	
+149	P14	NOT-OPEN	hypercharge	-	
+150	P14	OPEN	"genuinely outstanding": the gauge group and the multiplet structure; and an account of the matter-to-baryon energy ratio at the onset and of what shares the radiation with photons ("owed an account by this sector")	PO-26/45 struck	cluster with 62
+151	P14	NOT-OPEN	framing	-	
+152	P14	OPEN	deformation invariance of the graded generation index on the branched bead: Atiyah-Singer statement "traced rather than computed"	-	minor; count itself computed
+153	P14	CHECK	not done: deriving the content from the anomaly requirement; the mass spectrum, mixing, existence of nu^c	-	P7 places masses/mixing on the electroweak route; cluster with 62
+154	P14	NOT-OPEN	hierarchy not claimed	-	scope
+155	P14	OPEN	the seat of the colourless triple / fifth multiplet: "what a successor must supply"; the threes enumeration "does not close the question"; the lift's 2+1 is "not an identification"	PO-45 struck r6733	same object as 137
+156	P15	OPEN	exposed edge: acoustic peak structure rejected on TT shape; damping-scale signature as a Gaussian residual no tilt removes	PO-10/24/47 struck	same cluster as 60, 80
+157	P15	OPEN	"open edge": last-percent precision of the produced light-element abundances against measurement (a data confrontation)	-	no register row; lithium-7 over-prediction shared with LCDM
+158	P15	OPEN	which exponent the imaginary segment's own field obeys (omega = k c_s, or the substrate field with no sound speed; differ by sqrt3) -- "remains open"; and on which branch the freezing census should be run	PO-79/77/73 struck	consequences drawn on the sound-speed reading
+159	P15	OPEN	whether the damping-tail displacement of the inferred tilt is a tension: needs an n_s constraint that does not run through the damping tail	PO-24 struck	same as 40
+160	P15	NOT-OPEN	super-horizon scope	-	
+161	P15	OPEN	the size of the polarisation source's pull on the reported configuration "has not been measured"	-	minor
+162	P15	OPEN	acoustic excess: direction settled, functional form not; sign of its curvature "belongs to the statistic and not yet to the excess"	PO-56/70 struck	acoustic-excess cluster
+163	P15	OPEN	the deciding condition cannot be applied: the deceleration is carried by the one band no estimator reaches	PO-56/70 struck	acoustic-excess cluster
+164	P15	OPEN	the step in the lowest band: size "unresolved rather than small" on the window-free reading	PO-56/70 struck	acoustic-excess cluster
+165	P15	OPEN	authorship of the excess cannot be attributed between channels (an identity, not precision)	PO-56/70 struck	acoustic-excess cluster
+166	P15	NOT-OPEN	step composition measured	-	
+167	P15	OPEN	"what remains to be explained is what distinguishes the first acoustic cycle from the rest"	PO-56/70 struck	acoustic-excess cluster
+168	P15	OPEN	projection-kernel channel: size set only to a range by anchoring; projection contrast effect bounded ~2% with sign undetermined	PO-56/70 struck	acoustic-excess cluster
+169	P15	OPEN	"what is open is whether that [two-rate] assignment is right, not whether the transfer implements it" (sound horizon on leaf rate vs conformal distance on stacking rate)	PO-56 struck r7037	acoustic cluster
+170	P15	POINTER	"one bounded calculation outstanding that could still bear on it" (the contrast disagreement)	-	see P15 sec:scope
+171	P15	OPEN	whether the first three peaks locate to one multipole "is not settled"; the sky's value lies outside the clock family	-	minor, acoustic cluster
+172	P15	OPEN	what carries the running phase at correct spacing: the driving and the baryon loading -- "named rather than measured"	-	acoustic cluster
+173	P15	OPEN	the observed residual's own position on the component plane: not given; the route is located peaks on a pair-merged bank at four peaks	-	acoustic cluster; EXPLAINER describes this route
+174	P15	OPEN	separating the driving from a reparametrisation of its clock: a high-/low-multipole weighting "located rather than built"	-	acoustic cluster
+175	P15	OPEN	smaller gap contractions at low ell unresolved on the grid ("a finer grid is what would settle those"); the phase read against the driving subtraction is carried in sec:scope	-	minor
+176	P15	NOT-OPEN	progenitor vacuum	-	closed
+177	P15	OPEN	whether the progenitor's angular momentum is carried off by matter or torqued away -- "this paper does not settle"	-	minor; not removed by the throat mechanism
+178	P15	NOT-OPEN	layer continuation across the lap	PO-72/74 struck	self-answered: continuation fails, layer becomes the throat's S2
+179	P15	NOT-OPEN	exact low-ell transmission	-	
+180	P15	OPEN	the source of the anisotropic spectrum on the expansion leg: "named here as owed and developed in neither this paper nor the bead"	PO-75 struck	clear mismatch; seam flux declared not computable on the construction (boundary)
+181	P15	OPEN	derivation of the inherited spectral data (A_s, n_s, and with them rho_r/rho_m and eta): "a modelling task awaiting a progenitor interior"; A_s permanently inherited, n_s need not be	PO-31 struck; PO-73 struck	sec:scope calls it "the genuine frontier"
+182	P15	OPEN	a progenitor with real matter content (pressure, dissipation) would break the leg's evenness -- "returns the question to what the progenitor was"	PO-31 struck	part of 181
+184	P15	NOT-OPEN	sorting criterion	-	
+185	P15	OPEN	the acoustic contrast excess: a measured discrepancy "whose carrier is not attributable from here"; attribution needs a channel independent of the plane or an amplitude-carrying estimator	PO-56/70 struck	acoustic cluster. INTERNAL TENSION: para 189 (item 169) says the rate assignment is open; paras 301-302 say the distance assignment is settled, constitutively
+186	P15	NOT-OPEN	the kernel distance identification	-	settled constitutively
+187	P15	POINTER	"a frontier of a different kind ... the dynamics of matter crossing the branch point"	-	see 188
+188	P15	OPEN	"what remains open is the detailed worldline and field dynamics of the crossing for a concrete matter model"	PO-30 struck	CONTRADICTS P7 (items 74, 66-69): "the matter branch-point crossing is settled on the field side and on the worldline side"
+189	P15	OPEN	"remain to be built": dark matter (the component not removed, its particle question unanswered: "that column stands at full weight"); detailed crossing dynamics; derivation of inherited data; SM content (gauge reps, mass spectrum); last-percent abundance precision	-	dark matter has no register row
+190	P15	OPEN	"remain to be built": matter sector, derivation of the progenitor spectrum, fermion content; acoustic peak structure and damping-tail signature "edges still to be settled"	PO-31/24/47 struck	summary
+191	P16	OPEN	abstract: "Open, and the frontier this paper sets up to close": the exact regulated peak temperature (downstream-irrelevant); the progenitor spectrum. "Argued, not computed exactly": thermalisation of the infall energy that sets the floor	PO-31 struck	SELF-CONTRADICTION: the abstract lists the last-percent abundance precision as "closed rather than open"; the body (198) says it "remains open"; P15 (157, 189) and P17 (210) call it the open edge. Also lists derivation of eta and rho_r/rho_m as closed, where P7 (61) and P15 (181, 189) treat the derivation as open/frontier
+192	P16	NOT-OPEN	thesis conjecture discharged	-	
+193	P16	OPEN	the exact regulated peak temperature on the smooth substrate through the branch point "remains open" (downstream-irrelevant)	-	no register row
+194	P16	CHECK	"sharpens the frontier": a derivation of eta would have to reach a conserved charge of the progenitor	PO-40/41 struck	body treats eta-derivation as frontier; abstract as closed
+195	P16	NOT-OPEN	adiabaticity inherited	-	
+196	P16	NOT-OPEN	spherical symmetry is a premise	-	scope
+197	P16	OPEN	peak value open (figure caption)	-	same as 193
+198	P16	OPEN	last-percent precision of the abundances (specially evaluated light-nuclide rates): "a precision frontier ... not a debt"	-	contradicts own abstract
+199	P16	NOT-OPEN	verdict	-	
+200	P16	NOT-OPEN	lithium: the standard theory's open problem, shared	-	standard physics
+201	P16	OPEN	"the progenitor spectrum is the open item, and a modelled progenitor interior is what would discharge it"	PO-31 struck	same as 181
+202	P17	NOT-OPEN	phase structure decided	-	
+203	P17	OPEN	the unification thesis (seven results as one fact of maximal symmetry) held "as a conjecture", decidable by the free-data-count test	-	test run on both sides and not falsified; still stated as conjecture in P6, P7, P12, P17; no register row
+204	P17	NOT-OPEN	chirality forced	-	
+205	P17	CHECK	"the chiral content this parity would grade is not built here"	PO-14/45 struck	cluster 81
+206	P17	CHECK	the content half (gauge assignment, mass values) "the open search"; mass values "relocated without closing it"	PO-45 struck	cluster 62/81
+207	P17	NOT-OPEN	entropy value unclaimed	-	
+208	P17	NOT-OPEN	families' skeleton	-	
+209	P17	NOT-OPEN	one principle	-	
+210	P17	STALE	P17's tour says P5 leaves open whether the shared A2 abstract type is significant; P5 rem:a2-distinct now answers it (an analytic connection through the common complexification). Also restates the last-percent precision as P16's open edge	-	inconsistency, not an open item
+212	P17	NOT-OPEN	free-data test run both sides	-	
+213	P17	NOT-OPEN	datum side settled	-	
+9	P2	NOT-OPEN	section heading	-	
+19	P3	NOT-OPEN	section heading	-	
+30	P5	NOT-OPEN	section heading	-	
+87	P8	NOT-OPEN	section heading	-	
+94	P9	NOT-OPEN	section heading	-	
+122	P11	NOT-OPEN	section heading	-	
+125	P12	NOT-OPEN	section heading	-	
+130	P13	NOT-OPEN	section heading	-	
+140	P14	NOT-OPEN	section heading	-	
+183	P15	NOT-OPEN	section heading	-	
+211	P17	NOT-OPEN	section heading	-	
+214	P18	NOT-OPEN	abstract	-	
+215	P18	OPEN	whether the content-independence extends from the rate to the scale: "not settled by the measurement"	-	same as P4 item 24; P4 points to P7, where no settling statement was found by search
+216	P18	NOT-OPEN	routes	-	
+217	P18	OPEN	the deparametrized tower's mode-sum definition "leaves open"; one dimensionless constant spent	PO-23 struck	same as P10 item 97; omitted from P18's own list of seven
+218	P18	NOT-OPEN	thesis question answered	-	
+219	P18	OPEN	a generative law for the content: "carried on the frontier below"	PO-30 struck	= P18 frontier item 2
+220	P18	CHECK	field-level charge structure "not settled"; rides on the declined sector	-	boundary per P18
+221	P18	NOT-OPEN	colour algebra not on substrate	-	settled negatively
+222	P18	OPEN	whether the geometric A2 and colour's coincide for a structural reason or by accident of abstract type -- "left open"	-	CONFLICTS with P5 rem:a2-distinct, which states the connection is analytic (common complexification)
+223	P18	NOT-OPEN	ordering external	-	boundary
+224	P18	OPEN	"what is open is the definition of the interacting tower"	PO-23 struck	same as 97; contradicts P7 item 82
+225	P18	OPEN	a measured CMB disagreement "whose standing is not yet settled"	PO-47/56/70 struck	acoustic cluster
+226	P18	NOT-OPEN	flatness	-	
+227	P18	OPEN	the modelling of the progenitor's interior: "a derivation not yet carried out"	PO-31 struck	= P18 frontier item 4
+228	P18	NOT-OPEN	unbuilt derivation vs fitted epoch	-	
+229	P18	OPEN	the progenitor interior a modelling task not yet carried out; composition, amplitude and tilt enter from outside	PO-31 struck	same as 227
+230	P18	DECLARED-NOT-OWED	an evidence comparison over the larger model family: "named here rather than run" (turns on priors)	-	
+231	P18	OPEN	"what is open is a mechanism" for the acoustic deficit	PO-47/56/70 struck	acoustic cluster
+232	P18	NOT-OPEN	coherence	-	
+233	P18	OPEN	open question about the deficit's mechanism: physical, numerical, or the handover datum not representing the construction; "whether this background requires that acceptance or the wavenumber sum is not yet carried far enough"	PO-70 struck	TENSION with P15 sec:scope: "not an artefact of how the integral is carried"
+234	P18	NOT-OPEN	dissolution	-	
+235	P18	OPEN	the unification is "a conjecture decidable by a named test"	-	same as 203
+236	P18	OPEN	the closure is a conjecture and labelled one	-	same as 203
+237	P18	OPEN	the base rate of the criterion: failure cases "have not been sampled and no base rate has been computed"; set as the discipline's first programme	-	same as 39
+238	P18	NOT-OPEN	altitude of "forced"	-	
+239	P18	CHECK	the projection route by the parity is "open rather than closed"; chiral content "remains the ordinary route"	PO-14/45 struck	cluster 81; P18 places it as decline, P7 as open work
+240	P18	NOT-OPEN	section heading	-	
+241	P18	NOT-OPEN	"seven items stand open ... complete and unfiltered"	-	the list is at 247
+242	P18	NOT-OPEN	seven against seventy-four	-	
+243	P18	NOT-OPEN	compact-face fermion sector not an open item	PO-26 struck	consistent with P5 item 29 read as a boundary
+244	P18	OPEN	"the acoustic rejection ... is the largest open item in the paper"; a mechanism for the deficit owed	PO-10/47/56/70 struck	acoustic cluster
+245	P18	OPEN	whether a charged collapse forms the Cauchy horizon (a question about GR's dynamical interior)	PO-25/49 struck	= P18 frontier item 6; -M/r^3 attribution a reading
+246	P18	NOT-OPEN	heading	-	
+247	P18	OPEN	THE SEVEN: colourless triple's seat; matter content's generative law; what sets this arm's first peak; progenitor spectrum; which mass the Hubble-Eddington radius tracks; charged collapse and Cauchy horizon; whether the tilt displacement is a tension	PO-45/30/47/31 struck; PO-50 OPEN; PO-25/49/24 struck	only item 5 has a live row
+248	P18	NOT-OPEN	inherited datum and radiation amplitude closed by impossibility	-	CONFLICTS with P7 item 61/62 and P15 item 189
+249	P18	NOT-OPEN	declines not frontier	-	
+250	P18	NOT-OPEN	list is not the weighing	-	
+251	P18	NOT-OPEN	heading	-	
+252	P18	STALE	refers to "the sixteenth Weyl fermion of sec:frontier", which the frontier list does not carry	PO-37 struck	dangling reference
+253	P18	NOT-OPEN	two questions	-	
+254	P18	OPEN	one real open item in the cosmology (acoustic mechanism); one unresolved observational question (damping tilt tension); lithium the field's	PO-24/47 struck	
+255	P18	NOT-OPEN	entropy convention answered	-	
+256	P18	NOT-OPEN	unpaid column	-	

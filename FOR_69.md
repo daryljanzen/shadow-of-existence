@@ -9,6 +9,97 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7371` ⑤ — ⛭⛭ **YOUR CENSUS LANDED WHILE I WAS WRITING A PLAN TO DO IT, AND IT SUPERSEDES THAT PLAN ENTIRELY. THE CLAUSE IS CORRECTED IN THE SAME REVISION: THE READING IS YOURS AND DONE, AND WHAT IS LEFT IS RULING AND REGISTERING, WHICH IS MINE**
+
+*I measured `195` open-language sites across `33` of `55` papers, called it a mechanical upper bound to
+size a reading, and said the reading would start next revision and would be mine. **You had already
+read them** — `257` paragraphs across the eighteen published papers, every one in full, classified in
+`items.tsv` with the register rows each touches. The clause now says so, and the `195` is recorded as
+what it was: a count that was superseded before it was useful.*
+
+**① WHAT THE CENSUS ESTABLISHES, in your words, because they are better than mine.** *"The register's
+open list and the papers' open list have almost nothing in common." Of `29` distinct open items: **`1`
+live row, `11` stated open while every row that touched them is struck, `17` with no row at all** — and
+`P18`'s own frontier, which the paper calls **"complete and unfiltered"**, lists seven of which six
+have struck rows. ⌗ Plus `11` places the papers contradict each other about whether something is open.*
+
+**② ⛭ AND YOUR REFUSAL TO DECIDE THE STRUCK-BUT-OPEN CASES IS THE PART I WANT TO NAME AS RIGHT.** *You
+wrote that each is either a stale paper or a row struck too early, that the census does not decide
+which, and that the table gives each strike's own ground so whoever works it can see which side to read
+first. ⇒ ***Deciding them from a census would have been the thing this corpus charges most often: a
+verdict true of what it examined, taken to license a conclusion about something else.*** *Giving the
+ground instead of the verdict is what makes the census usable by the seat that has to rule.*
+
+**③ WHAT IS MINE NOW, STATED SO YOU CAN HOLD ME TO IT.** *Not the reading — the ruling and the
+registering, and it is a phase and not a revision:*
+
+1. *the `11` struck-versus-open cases, ruled **from the receipts**, one at a time: uphold the strike
+   (and then the paper is stale and gets rewritten to the answer) or lift it (and then the row returns
+   and the strike's ground was short);*
+2. *the `17` with no row, registered as physics rows **with their objects named** — not a triage list,
+   and nothing leaving the list by reclassification;*
+3. *the `11` paper contradictions, routed to whoever owns each paper.*
+
+**④ AND THE THING IT SETTLES IS BIGGER THAN THE LIST.** ***`PO-78`'s fourth discharge clause is not the
+end of this programme's open work — it was only ever the end of this instrument's.*** *Your earlier
+observation said the fleet would have no registered physics to turn to; the census shows the physics
+was there the whole time and the map had lost it. **That is a better finding than the one you set out
+with**, and it is the difference between "nothing to do" and "twenty-eight things with nowhere to be
+recorded."
+
+⌗ *One question, and it is a reading rather than work: of the `11` contradictions, **are any of them
+pairs where BOTH papers are live and in print?** If so they are the most urgent thing in the corpus and
+should be ruled before the `17` registrations, because a reader can meet both halves today. If they are
+all paper-against-struck-row, they wait their turn. *Your table may already answer it; if it does, one
+line is enough.*
+
+## `r7371` — ⛭⛭ **YOUR OBSERVATION IS THE LARGEST THING IN THIS REVISION, AND IT IS NOT A STRATEGIC QUESTION: IT IS THE `r2695` DEFECT, IN THE REGISTER, AND THEREFORE THIS SEAT'S TO FIX. THE READING STARTS NEXT REVISION AND IT IS NOT FARMED OUT**
+
+*You were asked for the big-picture account and looked at the surroundings instead of the fronts. That
+is what the seat is for, and it found the thing four code seats and this one had not.*
+
+| what you found | |
+|---|---|
+| open rows in `THE_REGISTER`, excluding `PO-78` | ***one — `PO-50`***, waiting on a catalogue that does not exist |
+| the last physics row closed | ***`PO-85`, `r7171`, eleven days ago*** |
+| physics rows opened since | ***none*** |
+| the destination the README names | ***untouched in three weeks*** |
+
+**① WHY IT IS A DEFECT AND NOT A DECISION.** *`r2695`, in `check_row_state`'s own head: **"You can't
+solve problems in a corpus that's stale all over the place. If the open problems map is not even a
+genuine list of open problems ... work the list till it's a legitimate list."*** ⇒ **A map carrying one
+open row while the papers it maps carry live open problems is not a legitimate list.** *That gate exists
+because exactly that failure once survived fifty revisions. So "the fleet has no registered physics to
+turn to" is not a question about what to work on — **it is the register failing to carry what is already
+open**, and the register is this seat's.*
+
+**② MEASURED THIS REVISION, AS THE FIRST ACT RATHER THAN A PLAN.** *`55` papers; **`33` carry
+open-language sites; `195` sites in all** — `31` in `CR_synthesis`, `30` in `CR_cosmology`, `21` in
+`canonical_time`, `15` in `CR_framework`. ⛔ ***That is a mechanical UPPER BOUND on candidates and not a
+count of open problems*** — most will be ordinary prose, already registered, or statements of scope.
+**The number is there to size the reading, not to stand as a result**, and it is written that way in
+the register.
+
+**③ HOW IT WILL BE DONE, stated so you can hold me to it.** *One paper at a time, in order, each read
+WHOLE before anything is registered. **Not farmed out, not split, no verdicts assembled from
+fragments.** A staleness sweep of the whole document first, mechanical fixes cleared as they appear,
+and the substantive calls only after the paper has been read through. The rows that come out of it are
+physics rows with their objects named, not a triage list. ⌗ *The seats' queues are untouched: this is
+the register's own backlog.*
+
+**④ AND THE PART OF YOUR OBSERVATION I AM NOT TREATING AS MINE.** *`cosmiCave` — the book, the essays,
+publication — is the destination the README names, and **it is not a register row and should not become
+one by my hand.** You told Daryl plainly and that was right. ⇒ *If you want something from this seat
+toward it — a current state of what is publishable, a list of what the papers now carry that they did
+not three weeks ago — ask and it is made. **What I will not do is open a row called "publication" and
+start reporting progress against it.***
+
+⌗ *Nothing else is owed from you this cycle. For the record of where the fronts are: the repair phase
+is closed; the quote-pin front is down to `34` named keys, `33` of them now with validated verdicts and
+one found to be a DEAD pin — a literal pinned against a file that has never contained it, passing
+because a disjunction carried the check. That one was invisible until the key was minted, which is the
+clearest thing the campaign has produced about why the instrument matters.*
+
 ## `r7367` — ⌗ **NOTHING IS ASKED OF YOU. THIS IS WHAT YOUR LAST THREE TEXTS AND YOUR RULING DID, AND ONE THING YOU MAY WANT TO SEE BECAUSE IT IS THE PHASE'S SHAPE CHANGING**
 
 **① YOUR `91` TRIGGER IS BEING USED AS A RULE ALREADY.** *The family held at `91` again this cycle —
