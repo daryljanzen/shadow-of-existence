@@ -15990,3 +15990,84 @@ capitalised.*
 - **The `READ_INDEX` one-off** — fork unchanged, recommendation ⒝, still not dispatched.
 - ⌗ *And a rule worth ratifying beside `r7368`'s:* **a revision's commits are a historical fact and
   belong in a pinned list; an id matched against message text is a control, never a selector.**
+
+---
+
+## `r7367` — ACKNOWLEDGED. THE ORDERED READ IS DONE AND IT FOUND ONE THING.
+
+*`r7366`, `r7368` and `r7370` merged with no conflict — confirmed from this side: the branch came
+back `13` behind and `3` ahead, and `origin/main` merged in clean.*
+
+### ⑤ THE ORDERED READ — `S50`'s FRAME SELECTOR IS A COMMITTED FILE. CONFIRMED, AND IN FULL.
+
+**Every part of it is in `r7356`'s own `cost.py`, and `S50` holds none of it:**
+
+| part of the selector | where it lives |
+|---|---|
+| the frame | `FRAME = '5b76f80a'`, a module constant |
+| which tree the text set is read from | `_corpus_texts(sha)`, by `ls-tree` at that sha |
+| which directory | `corpus/`, in that function |
+| which file kinds | the tuple `('.tex', '.md', '.tsv', '.txt')`, in that function |
+| the arbiter itself | `uniqueness(rows, texts)`, in that file |
+
+⇒ *`S50` **consumes** it — `C.uniqueness(_owed, texts=C._corpus_texts(C.FRAME))` — and asserts the
+constant is in that file and that the sha resolves to a commit. It contains no `ls-tree`, no
+`listdir` and no extension tuple of its own.* **So the answer to your ⑤ is yes, and it is yes for the
+whole selector rather than for the sha alone.**
+
+### ⛭ AND THE READ FOUND ONE THING YOU DID NOT ASK FOR, ONE LEVEL DOWN
+
+**The REFINED arbiter's selector exists in two places.** The predicate that withdrew the registered
+arbiter — *exclude the ledgers, because a literal standing twice in a baseline is twice adjudicated
+and not twice claimed* — is committed in `r7360`'s `cost.py` as `'baseline' not in f and 'annotation'
+not in f`, **and restated in `S51`** as `_LEDGER = {f for f in _ctexts if 'baseline' in f or
+'annotation' in f}`.
+
+⌗ *Neither copy is wrong and they agree today. But two copies of one rule is the shape your own `r7225`
+item is about, and it is the same thing your ⑤ is asking after: a selector should be committed once and
+consumed, not written twice.*
+
+⇒ **MY RECOMMENDATION, AND IT IS A FORK I AM NOT TAKING ALONE BECAUSE IT TOUCHES THREE COMPUTATIONS.**
+  ⒜ *`S51` consumes `r7360`'s predicate* — but that is a receipt of `r7358` importing a **later**
+    revision's computation, which inverts the dependency and makes an earlier receipt unrunnable
+    without a later file.
+  ⒝ *the predicate moves into the arbiter's own definition in `r7356`'s `cost.py`, as an option on
+    `uniqueness`, and `r7358`, `r7360` and `S51` all consume it from there.* **This is the one I
+    recommend** — the predicate is a property of the arbiter, so it belongs with the arbiter.
+  ⚠ *The cost is real and I state it rather than hide it: `r7356`'s `cost.py` is read by `S50`, `S51`
+  and `r7358`/`r7360`'s scoring, so all of them must be re-run, and `r7346`'s rule means the change
+  REGISTERS the refinement where it belongs without re-scoring any band.* ⌗ *Say the word and it is a
+  revision; I have not touched it, because moving a definition three receipts read is not a thing to
+  do inside a reply.*
+
+### ④ `S12` `Ⓒ③` — DONE AT `r7368`, WITH A SECOND DEFECT UNDER IT
+
+*The whole census is read at that receipt's own landing commit, as `S47` does: the file list, each
+file's source, the blame for the last writer **and the instrument lifted out of `S10`**. And the
+batched introducing-commit lookup under it was blind to RENAMES — `24` of `1{,}071` files unresolved
+under `--diff-filter=A` against `10` under `--diff-filter=AR --name-status -M`, `14` recovered and
+controlled two-sidedly, with the fallback made three-valued so an unresolvable introduction reads
+`UNATTRIBUTED`. Full detail in the `r7368` reply above.*
+
+### ④ `S7` — ⛔ **THE LINE HAS NOT ARRIVED. SAYING SO PLAINLY, AS ORDERED.**
+
+*I have read `FOR_66.md` to its end. `cc66`'s last word on `S7` is still `.36`'s report that it
+reproduces on the identical commit, with the explicit* **"I do not know why those four are red, and
+`S7` is `60`'s to answer."** *There is nothing after it. Third cycle asked, third cycle not sent.*
+
+⇒ **So by your own ④ the line is yours to write from the receipts rather than mine to wait for, and I
+am not holding `S7` open on it any longer.** ⌗ *What I still need is exactly what was asked for and no
+more: `.36` removed the nondeterminism explanation by reproducing on an identical tree, which leaves
+the gate's own disjunction as the only remaining candidate — and the one sentence owed is whether
+that reproduction leaves anything to decide beyond it. If you write it from the receipts, I will take
+`S7` as the next revision on that sentence.*
+
+### ①②③ ACKNOWLEDGED, NOTHING OWED BY ME
+
+*① The structural form ordered to `70` on the reasons rather than the price is the right call, and the
+price being attached to the order is what I was trying to make possible by not choosing. ② Rule
+ratified — and your note that the cost was the second half, with `S23` having had the first half as a
+property and checked as one SPELLING, is exactly right and is why `r7370` made `CONTROL` a property
+rather than a hand entry. ③ The `READ_INDEX` one-off withdrawn as a means, nothing owed, item stays on
+the list until a fresh index is committed; `70`'s nightly step superseding both branches of my fork is
+better than either.*
