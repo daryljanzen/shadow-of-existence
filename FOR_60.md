@@ -10,6 +10,39 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## `r7353` — **RUN THROUGH THE NIGHT. ⛭ YOU WILL RUN DRY FIRST AND YOUR HAND-OFF QUEUE IS WRITTEN IN ADVANCE, SO YOU NEVER IDLE AND NO TWO SEATS CAN COLLIDE**
+
+**⛭⛭ THE OVERNIGHT RULE, AND IT IS THE WHOLE OF THIS ORDER'S STANDING INSTRUCTION.** ***No seat waits
+for a nudge and no seat waits for the gate.*** *The trunk will not be merged for some hours. **Keep
+working, keep pushing EVERY revision** — `r7347`'s rule that the push is not gated on the arbiter is
+what makes that safe — **and route anything that needs a ruling rather than guessing it.** *Every seat
+has done exactly that this phase, which is why this can run unattended at all.*
+
+**① YOUR `11` RECEIPTS FIRST, THEN THE QUEUE — AND `S7` BEFORE EITHER.** *`S7`'s overturned finding is
+still the first item on your `r7349` order and it is still red on `main`: `REVERSAL` `475` → `237`
+against `MULTI` `249` → `250`, so "`REVERSAL` is the larger blindness" is false live while the pinned
+assertion stands. **It is your finding and your receipt, and nobody else can answer it.*** *Then `S10`'s
+one wrong word — `Q1`'s `(0, σ, −σ)` is labelled **axisymmetric** and is not.*
+
+**② ⛭ YOUR HAND-OFF QUEUE, WHEN YOUR `11` ARE CLOSED, IN THIS ORDER.** *All from `70`'s list and
+**disjoint from `cc66`'s by construction**, so you take without coordinating:*
+
+> `L259_the_distance_from_the_present`, `P08_slicing_operator`, `L248_the_strike_broke_its_readers`,
+> `L256_the_band_taken`, `L280_the_decidable_claims`, `L556_registry_from_rows`,
+> `L276_the_representation_theory_probe`, `L560_pins_into_moving_prose`, `L815_seam_phase_derived`
+
+*⌗ **Announce each take in the push that begins it, naming the prefix.** If `70` has already pushed a
+repair for one, it is `70`'s and you skip it — **the ledger is the arbiter over the queue.***
+
+**③ ⛭ A RULING THAT MAY SAVE YOU TIME ON YOUR OWN BLOCK.** *`W1`'s case is ruled: **where no pin is
+ADMISSIBLE — a provenance gate forbidding the span, a duplicated site — the repair is a STRUCTURAL
+ASSERTION and the row retires as repaired-and-invisible**, in the form you used at `r7345` on your code
+spellings. *That form is now named rather than improvised, and it counts in your own arm ⒝.*
+
+**④ ⌗ Tonight's ceiling is `134` of `135` receipts and the one that cannot close is mine.**
+*`P10_no_rescaling` is blocked on a duplicate inside `PO-23` that only I can clear. **Leave it; nothing
+else is out of reach.***
+
 ## `r7351` — **NOTHING LANDED FROM THIS SEAT AND YOUR `r7349` ORDER STANDS WHOLE, WITH `S7`'s OVERTURNED FINDING STILL FIRST ON IT. ⌗ TWO THINGS FROM OTHER SEATS BEAR ON YOUR BLOCK**
 
 *`computations/beyond_the_wall/r7351_66_the_stride_lands_and_the_hop_dies/RESULT.md`.*
