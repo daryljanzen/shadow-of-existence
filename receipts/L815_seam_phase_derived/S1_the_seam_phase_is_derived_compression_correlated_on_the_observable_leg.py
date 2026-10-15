@@ -156,7 +156,10 @@ def main():
         cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
     check('THE CORPUS SUPPORTS THE ROUTE: the onset matter is pressureless and the pre-onset problem '
           'is "scale-free" and "imprints nothing" -- exactly the residue this derivation closes',
-          'pressureless' in tex and 'scale-free' in tex and 'imprints nothing' in tex)
+          (r"the potential equation for a pressureless component, $\Phi''+3\mathcal{H}(1+w)\Phi'+"
+           r"[2\mathcal{H}'+(1+3w)\mathcal{H}^{2}]\Phi+wk^{2}\Phi=0$, \emph{contains no $k$ at all once $w=0$}, "
+           r"so on a radiation-free rate the problem is scale-free and a scale-free problem imprints nothing")
+          in ' '.join(tex.split()))
     check('⌗ and the two entries were named by their correlation with the potential well at '
           '48e55a6b^, before r4111 restated the section: "one enters as a compression correlated '
           'with the well and the other as a rarefaction against it".  *Supporting context for a '

@@ -103,7 +103,7 @@ def main():
           'STRUCK r3148' in reach and 'real forms' in reach)
     check('⓵ᵇ and the re-survey marked the field "partly discharged" and wanting a targeted probe '
           'rather than a full bake — so the field is thrown at one sentence by design',
-          'partly discharged' in reach and 'probe' in reach.lower())
+          'Real but partly discharged:** *Ⓕ was struck as already held in `P13`, and `P13`/`P14` do their own.* ⇒ *Wants a targeted probe, not a full bake' in reach)
 
     print()
     print('  ' + '=' * 74)
@@ -195,7 +195,7 @@ def main():
     check('⓹ᵇ ⛭ and the class is the corpus\'s own: OWED 621 recorded a gloss drifting from the '
           'computation beneath it — "a receipt\'s prose is not its result" — at receipt grain; '
           'this is the same shape at PAPER grain',
-          "a receipt's prose is not its result" in owed or 'prose is not its result' in owed)
+          "a receipt's prose is not its result" in owed)
 
     print()
     print('  ' + '=' * 74)

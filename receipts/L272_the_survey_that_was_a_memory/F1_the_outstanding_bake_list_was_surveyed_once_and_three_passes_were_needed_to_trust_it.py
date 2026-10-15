@@ -59,6 +59,7 @@ NOT-A-FIELD-BAKE-RECEIPT: an audit of the programme's own records, not a probe o
 field bakes as its subject matter rather than settling a field's probe, so no ledger
 names it and none should.  Declared at r3660 rather than inferred.
 """
+import io
 import os
 import re
 import sys
@@ -69,6 +70,17 @@ FAILED = []
 sys.path.insert(0, os.path.join(ROOT, 'corpus'))
 import reach_baseline as RB                                                # noqa: E402
 import field_survey as FS                                                  # noqa: E402
+
+
+def _survey_rc(fields):
+    import contextlib
+    saved = FS.FIELDS
+    FS.FIELDS = fields
+    try:
+        with contextlib.redirect_stdout(io.StringIO()):
+            return FS.main()
+    finally:
+        FS.FIELDS = saved
 
 
 def check(label, cond):
@@ -183,8 +195,11 @@ def main():
           all(os.path.exists(os.path.join(ROOT, l)) for _, l, _ in controls))
     check('⓵ᶜ the survey exits 0 only when both hold: a missing ledger or an unfindable control '
           'FAILS it rather than being reported and passed over',
-          'return 1' in open(os.path.join(ROOT, 'corpus', 'field_survey.py'),
-                             encoding='utf-8', errors='replace').read())
+          # r7349+70: the BEHAVIOUR, run rather than a `return 1` token read (a proxy on live code
+          #   that a behaviour-preserving `sys.exit(1)` would break): one field naming a ledger not
+          #   on disk, then one control its own vocabulary cannot find, and each must fail the survey.
+          _survey_rc([FS.FIELDS[0], ('a field with no ledger', 'NO_SUCH_LEDGER.md', FS.FIELDS[0][2])]) == 1
+          and _survey_rc([FS.FIELDS[0], ('an unfindable control', FS.FIELDS[0][1], ['zqxjvnotaword'])]) == 1)
 
     print()
     print('  ' + '=' * 74)
@@ -257,13 +272,13 @@ def main():
     p07 = RB.BODIES_TEX['P07']
     check('⓸ catastrophe theory is discharged by the ODE/dynamical-systems bake: P07 states '
           'outright "The word fold is used here in its bifurcation-theoretic sense"',
-          'bifurcation-theoretic sense' in p07)
+          'Fold is used here in its bifurcation-theoretic sense' in p07)
     check('⓸ᵇ and the reach document records that bake and its result -- the Nariai merger is a '
           'fold, and the fold forces a scaling law the corpus did not have',
-          'the Nariai merger is a FOLD' in reach or 'is a FOLD' in reach)
+          'The Nariai merger is a FOLD, and the fold forces a scaling law the corpus did not have' in reach)
     check('⓸ᶜ the operator half of spectral theory is R-M station Ⓗ\'s, thrown at r3150 (L-264) as '
           'a Weyl limit-point test',
-          'L-264' in reach or 'limit-point' in reach.lower())
+          'the OPERATOR half of spectral theory by station Ⓗ (`L-264`)' in reach)
     check('⓸ᵈ ⛭ so a candidate can be large, word-bounded, correctly sensed AND ALREADY ANSWERED -- '
           'which is the pass a count cannot perform and the reason this instrument orders the '
           'reading rather than doing it',
@@ -281,7 +296,8 @@ def main():
           'SUBSTRING' in fs_src and 'arbitrary' in fs_src)
     check('⓹ᵇ and so are the four homonyms and the two discharged candidates, with the refusal of '
           'optimisation stated as a verdict rather than an omission',
-          'REFUSED rather than thrown' in fs_src and 'bifurcation-theoretic sense' in fs_src)
+          'REFUSED rather than thrown' in fs_src
+          and 'AND TWO CANDIDATES ARE ALREADY DISCHARGED BY EARLIER BAKES' in fs_src)
     # ⛭ r7151+cc66.112: `> 20` was a round floor under a label that printed NO number, so the
     #   margin was invisible to its own reader.  The claim is that the rule is applied here at all.
     _ann = fs_src.count('#:')

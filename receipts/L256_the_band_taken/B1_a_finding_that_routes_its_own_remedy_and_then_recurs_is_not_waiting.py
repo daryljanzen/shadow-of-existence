@@ -239,7 +239,8 @@ def main():
     print('  ' + '=' * 74)
     check('⓸ the check reads `origin/main..HEAD` -- this line\'s own unmerged commits, the only '
           'ones whose numbers can still be changed', "f'{UPSTREAM}..HEAD'" in src
-          and 'not yet reached the shared trunk' in src)
+          and ('these are the commits that have not yet reached the shared trunk, so they are the only ones '
+               'whose numbers can still be changed') in ' '.join(src.split()))
     # ** ⛔⛭ r6937 (66, on this file's own report): THIS CHECK WAS PASSING BECAUSE THE
     #   EXEMPTION WAS TOTAL, AND IT BREAKS THE MOMENT THE PREVENTION WORKS. **
     #   *This file sets `NODE=60` at the top so PART 4's seed exercises the EVEN band on a built
@@ -352,7 +353,10 @@ def main():
           f'behind it, a name absorbs exactly itself.  {sorted(C.BAND_GRANDFATHERED)}',
           C.BAND_GRANDFATHERED
           and all(re.fullmatch(r'r\d+', x) for x in C.BAND_GRANDFATHERED)
-          and 'r3125' in C.BAND_GRANDFATHERED and 'NAMED, not dated' in src)
+          and 'r3125' in C.BAND_GRANDFATHERED)
+    # r7349+70: the conjunct `'NAMED, not dated' in src` is dropped -- the claim is that the exceptions
+    #   ARE names, which the three data arms above test on the gate's own set; the heading's presence in
+    #   its source added nothing to that, and no span of its markdown-emphasised line is claim-complete.
 
     # ============================================================ (5) the half that is a request
     print()

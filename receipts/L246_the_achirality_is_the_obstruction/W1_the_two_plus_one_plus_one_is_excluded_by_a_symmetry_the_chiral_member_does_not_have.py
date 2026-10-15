@@ -363,7 +363,8 @@ p11 = open(os.path.join(ROOT, 'corpus', 'dynamics_paper.tex'),
            encoding='utf-8', errors='replace').read()
 check('⓼ P11 carries a built unpolarised section', r'\label{sec:unpolarized}' in p11)
 check('⓼ᵇ in which the exchanging map is shown to REVERSE ORIENTATION, so it lies outside the '
-      'identity component', 'determinant $-1$' in p11 and 'identity component does not reach' in p11)
+      'identity component', 'determinant $-1$' in p11 and r'so it lies in the component of $\mathrm{Isom}(\mathbb{H}^2)$ that the identity component does not reach'
+      in p11)
 # ⛔⛭ AMENDED r4524: the twist is a DISPLAY in P11 -- `c \;=\; R\,e^{2P}\,Q_t \;=\; \text{const}`
 #    at `eq:twist` -- and this asked for the unspaced inline form.  The sign-flip half was always
 #    fine.  ⇒ Matched across LaTeX spacing macros, and the label is required too, so the check
@@ -470,7 +471,8 @@ check('⓭ the wall-mode kernel is a count of GENERATIONS, not of states within 
       'index counts generations, not the states within them' in p14.replace('\n', ' '))
 check('⓭ᵇ while the four states PART 2 acts on are the COLOURLESS four of one generation, both '
       'chiralities present -- P14 names them as the lepton content',
-      'colourless' in p14 and 'e its four one-dimensional' in p14.replace('\n', ' '))
+      'so a colourless sector on this structure has total dimension four' in ' '.join(p14.split())
+      and 'e its four one-dimensional' in p14.replace('\n', ' '))
 print('    the wall kernel : one Weyl mode per wall, three walls, ALL ONE CHIRALITY  -> 3 and 0')
 print('    the four states : nu_L, e_L, e_R, nu_R of ONE generation -> both chiralities present')
 check('⓭ᶜ so no map is being asked to exchange the wall kernel with an empty space; Phel acts on '
@@ -480,10 +482,15 @@ print()
 print('  ⛭⛭ ** AND P14 REPORTS THE SURVIVING SHAPE AND CALLS IT CORRECT, which is the corroboration')
 print('     this part exists to find. **')
 check('⓮ P14 states that every Z_2 grading splits those four 2+2',
-      'Every $\\mathbb{Z}_2$ grading splits those four $2+2$' in p14)
+      'Every $\\mathbb{Z}_2$ grading splits those four $2+2$, which looks like a failure to reproduce a colourless '
+      'sector that is chirality-asymmetric. \\emph{It is not a failure, because colour does not see the chirality of a '
+      'colour singlet in the Standard Model either}' in ' '.join(p14.split()))
 check('⓮ᵇ ⛭ and that this is NOT a failure, because colour is vector-like on colour singlets in '
       'the Standard Model too -- so the 2+2 the no-go PREDICTS is the one the paper OBSERVES and '
-      'defends', 'It is not a failure, because colour does not see the chirality' in p14)
+      'defends',
+      'Every $\\mathbb{Z}_2$ grading splits those four $2+2$, which looks like a failure to reproduce a colourless '
+      'sector that is chirality-asymmetric. \\emph{It is not a failure, because colour does not see the chirality of a '
+      'colour singlet in the Standard Model either}' in ' '.join(p14.split()))
 print('  ⇒ *** So the no-go and P14 agree on the outcome and differ on its status: the paper')
 print('      reports 2+2 as what the gradings happen to give, and PART 2 shows it is the only')
 print('      thing they COULD give. ***')

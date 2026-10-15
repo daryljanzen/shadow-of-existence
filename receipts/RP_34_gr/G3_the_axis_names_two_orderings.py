@@ -82,8 +82,9 @@ def main():
 
     # ---- THE ANSWER: three later passages define the axis in horizon/symmetry terms
     check('(i) the inner end is THE HORIZON CUBIC\'S DOUBLE ROOT where two horizon null surfaces merge',
-          "the horizon cubic's double root $\\Lambda M^{2}=1/9$ where two horizon null surfaces merge"
-          in flat)
+          "the programme's recurring object is again the seam---the inner, Type-D end of the "
+          "null-degeneracy axis the introduction lays out, the horizon cubic's double root "
+          "$\\Lambda M^{2}=1/9$ where two horizon null surfaces merge" in flat)
     # ** r6931+70.1: THE PIN FROZE AN ERROR.  Class (a).  r6719 (`440623b6`, "the cowork read's list
     #   worked across eleven papers") corrected P9's outer end from "where the last CONTINUOUS
     #   symmetry is lost" to "where the last symmetry ABLE TO ANCHOR A SWEEP is lost": the type-N
@@ -98,12 +99,14 @@ def main():
     check('(ii) the outer end is WHERE THE LAST SYMMETRY ABLE TO ANCHOR A SWEEP IS LOST (not merely '
           'the last continuous symmetry -- the plane wave keeps five Killing fields and is beyond it)',
           'where the last symmetry able to anchor a sweep is lost the operator can no longer generate '
-          'the leaf' in flat
+          'the leaf by a sweep' in flat
           and 'last continuous symmetry is lost' not in flat)
     check('(ii) and that passage names the two as the axis\'s endpoints',
-          'out to the wall, the two its endpoints' in flat)
+          'so the layered generation runs from the seam (the inner, Nariai end of the null-degeneracy '
+          'axis) out to the wall, the two its endpoints' in flat)
     check('(iii) and the seam is placed at the inner end a third time',
-          'this range places at the inner end of the null-degeneracy axis' in flat)
+          'the degenerate Nariai member this range places at the inner end of the null-degeneracy axis'
+          in flat)
     check('NEITHER endpoint is stated as a Weyl-tensor condition',
           'Weyl' not in flat[flat.find("the horizon cubic's double root") - 300:
                              flat.find("the horizon cubic's double root") + 300])
@@ -125,7 +128,9 @@ def main():
 
     # ---- and Type N is OUTSIDE the range, which is why "beyond" is the right reading
     check('P9 excludes the type-N plane wave from the range (cor:wall\'s exemplar)',
-          'plane wave' in flat or 'pp-wave' in flat.lower())
+          'The wall is the complement: geometries with no symmetry able to anchor a sweep---which '
+          'contains every geometry whose matter is genuinely inhomogeneous, and the vacuum plane wave '
+          'with its null orbits besides' in flat)
     check('the wall is described as the COMPLEMENT, not as a Petrov endpoint inside the range',
           'The wall is the complement' in flat)
 

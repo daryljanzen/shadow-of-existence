@@ -269,9 +269,18 @@ def main():
 
     # ------------------------------------------------------------------ the fixes, verified
     reader = open(os.path.join(ROOT, 'corpus', 'index_rows.py'), encoding='utf-8').read()
+    _DASH_ROW = '| — | `receipts/X/Y.py` | a | b | c | d | e |'
+    _HEAD_ROW = '| paper | path | a | b | c | d | e |'
+    _RULE_ROW = '|---|---|---|---|---|---|---|'
     check('⛭ THE FIX IS A DELETION, NOT A FIFTH PATCH: corpus/index_rows.py decides membership by '
           'header-or-rule only, and the paper-column predicate appears nowhere in it',
-          'def is_data_row' in reader and OLD_FILTER_SRC not in reader)
+          # r7349+70: the membership rule EXERCISED rather than its `def` line read -- a row whose
+          #   paper column is an em-dash (the old predicate's exclusion) is a data row, the old filter
+          #   still drops it, and the header and the alignment rule are the only rows refused.
+          index_rows.is_data_row(index_rows.split_cells(_DASH_ROW)) and not old_filter(_DASH_ROW)
+          and not index_rows.is_data_row(index_rows.split_cells(_HEAD_ROW))
+          and not index_rows.is_data_row(index_rows.split_cells(_RULE_ROW))
+          and OLD_FILTER_SRC not in reader)
     live = index_rows.rows(resolve_paths=True)
     check(f'⇒ and it is a SUPERSET: every row the old predicate admitted is still admitted, '
           f'{len(live)} rows in all, none unresolvable',
@@ -285,11 +294,17 @@ def main():
                  'corpus/check_supersession.py', 'scripts/run_all_receipts.py',
                  'scripts/work_entry_points.py'):
         src = open(os.path.join(ROOT, name), encoding='utf-8').read()
-        lits = {n.value for n in ast.walk(ast.parse(src))
+        _tree = ast.parse(src)
+        lits = {n.value for n in ast.walk(_tree)
                 if isinstance(n, ast.Constant) and isinstance(n.value, str) and len(n.value) < 6}
+        # r7349+70: 'calls the shared reader' asked of the AST too -- an import of index_rows -- in
+        #   place of the token anywhere in the source, comments included.
+        _imports = any((isinstance(n, ast.Import) and any(a.name == 'index_rows' for a in n.names))
+                       or (isinstance(n, ast.ImportFrom) and n.module == 'index_rows')
+                       for n in ast.walk(_tree))
         check(f'  · {name} calls the shared reader, and no `| P` / ``| ` `` literal survives in its '
               f'CODE (prose keeps the history)',
-              'index_rows' in src and '| P' not in lits and '| `' not in lits)
+              _imports and '| P' not in lits and '| `' not in lits)
 
     # ------------------------------------------------------------------ the new gate, SEEDED
     # ** A gate is verified against a SEEDED DEFECT, never against a clean tree. **  The seed is placed

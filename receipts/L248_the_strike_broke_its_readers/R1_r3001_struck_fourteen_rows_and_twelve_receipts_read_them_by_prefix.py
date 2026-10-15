@@ -73,8 +73,15 @@ check('⓵ᵇ ⛔ and the rows the twelve look for are NOT present in the unstru
       not any(p in unstruck for p in ('PO-2', 'PO-3', 'PO-5', 'PO-6', 'PO-7')))
 # ** the row TEXT survives the strike -- so the claims that quote it were never stale **
 row6 = [l for l in raw.split('\n') if re.match(r'\|\s*~?~?\*\*PO-6\*\*', l)]
+# r7349+70: 'the text survived the strike' is a COMPARISON, made against the row's unstruck body at the
+#   commit before r3001 struck it (aeeba47f) -- its name, statement and first cells byte-identical --
+#   rather than a two-word phrase present 21 times in a 93,000-character row.
+_pre = subprocess.run(['git', 'show', 'aeeba47f~1:PROTECTED_OPEN.md'], cwd=ROOT, capture_output=True,
+                      text=True, errors='replace').stdout
+row6_pre = [l for l in _pre.split('\n') if re.match(r'\|\s*~?~?\*\*PO-6\*\*', l)]
 check('⓵ᶜ ⛭ and the struck row is still THERE and still carries its text, so what broke was the '
-      'lookup and not the claim', len(row6) == 1 and 'bounded below' in row6[0])
+      'lookup and not the claim', len(row6) == 1 and len(row6_pre) == 1
+      and row6[0].split('|')[2:5] == row6_pre[0].split('|')[2:5])
 
 print()
 print('=' * 78)
@@ -188,13 +195,12 @@ print('=' * 78)
 p10 = open(os.path.join(ROOT, 'corpus', 'canonical_time.tex'),
            encoding='utf-8', errors='replace').read()
 OLD = 'is part of what this paragraph leaves open at its end'
-NEW = 'is not assumed here'
 print(f'    the wording `S4` pins  : "...{OLD}..."')
-print(f'    what P10 now says      : "...{NEW}... though it does in fact"')
+print('    what P10 now says      : "...is not assumed here... though it does in fact"')
 check('⓸ the pinned wording is GONE from P10', OLD not in re.sub(r'\s+', ' ', p10))
 check('⓸ᵇ and the sentence that replaced it is present, and is STRONGER -- the openness the receipt '
-      'pinned has been resolved', NEW in re.sub(r'\s+', ' ', p10)
-      and 'w is not assumed here~\\rcpt{P10_the_straddle_does_not_need_a_floor}, though it does in fact' in re.sub(r'\s+', ' ', p10))
+      'pinned has been resolved',
+      'w is not assumed here~\\rcpt{P10_the_straddle_does_not_need_a_floor}, though it does in fact' in re.sub(r'\s+', ' ', p10))
 print('  ⇒ ** THE PIN BROKE BECAUSE THE ARGUMENT WON. **  *`S4`\'s finding may well survive, but')
 print('     deciding what it now asserts is a reading of P10 and belongs to whoever owns P10.*')
 print('  ⌷ ** Repairing it by weakening the assertion to match the new sentence would be fitting the')
