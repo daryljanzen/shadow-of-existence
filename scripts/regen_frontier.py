@@ -40,6 +40,35 @@ EST = {
     #   residual and the damping-scale Gaussian) and the data-gated half (the fourth peak, where PO-47
     #   measured that the sky cannot discriminate).  GATED on a discriminating datum, which is why the
     #   generated view must show it as gated rather than as ordinary work.
+    'PO-89': ('the completion of the interacting towers definition, in three unlike parts',
+        3, 0, 3, 'a datum off this background that separates the three dimension-six directions',
+        'r7389: OPENED on PO-86s ruling of its item 7, and it corrects the second half of this seats own r7377 '
+        'ruling. What stands: PO-23s strike is UPHELD -- its object was the ultraviolet definition of the mode sums '
+        'and its own condition read a definition of the mode sums, or a demonstration that the obstruction is the '
+        'general one, and a definition WAS delivered, the interacting sum continued to -4/3 exactly on a regulator '
+        'calibrated before use. What does not stand: that ruling concluded what remains is P10s wording, now the odd '
+        'statement out. P10s wording is right. Read whole this revision, P10 says what remains open is the COMPLETION '
+        'of a definition, and at l.1485 it refuses the very inference the ruling made -- a definition that holds at one '
+        'order of an expansion and is silent at the next is a definition with an order attached, this row existing '
+        'because a predecessor was struck on an inference of just that shape, a result true where it was computed read '
+        'as true where it was wanted. So the two objects share a title and are not the same: PO-23 asked for a '
+        'definition and got one, while P10 states open the definitions completion. That is r7013 (1), so a row and '
+        'nothing unstruck. Open in three unlike parts: the renormalised value at dimension six, DATA-GATED since a '
+        'renormalised value is a measurement and the construction takes the horizons temperature and never its '
+        'entropy; which invariant the computed coefficient -15405/8192 belongs to, BLOCKED ON THE BACKGROUND since each '
+        'of the three surviving dimension-six directions alone reproduces the residue after a single rescaling and a '
+        'rank of one makes representatives indistinguishable rather than forced, with the count a lower bound so '
+        'completing the basis can only deepen it; and the nine-level closed forms, WORKABLE, established on nine levels '
+        'with three held out against a discriminating control and not proved from the recoupling algebra, two routes '
+        'tried and neither closing, while the parity they carry IS proved by the channel lists own mirror symmetry. '
+        'THIRD IN THREE REVISIONS after PO-87 and PO-88: every one a correct strike with the papers item lying beyond '
+        'it, and three is where it stops being a coincidence -- the registers rows answered narrower questions than '
+        'the papers state, as a habit rather than an accident, and this phases real product is the rows nobody opened. '
+        'The face is charged on this seat: 91s fifth face in prose, ruling item 7 from P7s report of P10 rather than '
+        'from P10, P7 citing P10 for the definition and the citation being read as the paper. Owed and named: P7 l.1937 '
+        'reads of the three items named above, all three are settled, the ultraviolet definition of the mode sums with '
+        'them -- the inference P10 refuses -- and that sentence is owed a correction in P7s own turn. P10 needs no '
+        'edit: read whole here and right. '),
     'PO-88': ('the field evolution of a concrete matter model through the branch point',
         2, 0, 3, None,
         'r7387: OPENED on PO-86s ruling of its item 8, and it is a frontier item P7 once carried and retired on a '
@@ -316,7 +345,18 @@ EST = {
         'found the register wrong in both directions and P7s canonical list wrong in the only direction that matters, '
         'an item having left it by reclassification. Owed and named: P15s sentence and P5s clause, one paper per '
         'turn. RUNNING TALLY: 9 of 29 ruled, 2 new rows, 1 reopen, 2 stale maps brought current, 1 frontier item '
-        'restored. '),
+        'restored. '
+        'r7389: ITEM 7 CLOSED, PO-89 OPENED, and this revision corrects the second half of this seats own r7377 ruling '
+        '-- caught by reading P10 whole, the first time the one-paper-per-turn method has caught a RULING rather than a '
+        'sentence. Stands: PO-23s strike is upheld, its own condition having asked for a definition of the mode sums '
+        'and a definition having been delivered. Does not stand: the r7377 conclusion that P10s wording was the odd '
+        'statement out. P10 says what remains open is the COMPLETION of a definition and at l.1485 refuses the '
+        'inference the ruling made. So the two objects share a title and are not the same, which is r7013 (1) and a '
+        'row. THIRD IN THREE REVISIONS after PO-87 and PO-88, every one a correct strike with the papers item beyond '
+        'it: the registers rows answered narrower questions than the papers state, as a habit, and this phases real '
+        'product is the rows nobody opened. 91s fifth face charged on this seat in prose. Owed and named: P7 l.1937. '
+        'RUNNING TALLY: 10 of 29 ruled, 3 new rows, 1 reopen, 2 stale maps brought current, 1 frontier item restored, 1 '
+        'of this seats own rulings corrected. '),
     'PO-10': ('the likelihood comparison, and which run it rests on', 1, 0, 3, None,
         'r6780: REOPENED. P15 sec:refit-bound reports both arms fitted over 215 bins with the same '
         'five parameters free in each, returning chi^2 = 397.13 against 206.44, 1.891 and 0.983 per '
@@ -9835,8 +9875,8 @@ KIND = {'PO-85': 'BUILD', 'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-86', 'PO-88', 'PO-87', 'PO-24', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-88': 'D', 'PO-87': 'D',
+ORDER = ['PO-86', 'PO-89', 'PO-88', 'PO-87', 'PO-24', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-89': 'C', 'PO-88': 'D', 'PO-87': 'D',
          'PO-86': 'F',  # ⛭ r7371: the coherence phase -- the register against the papers.
          # ⛭ r7371: PO-78 moved out of C, the quantum sector, which it never was -- it is the
          #   quote-pin instrument.  F is the programme's own record, and PO-86 is there too.

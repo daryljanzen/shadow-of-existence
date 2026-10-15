@@ -428,6 +428,12 @@ resolves) and as the **clue-map** (everywhere an open touches points at where it
 >   `P7` `\S`inherited-datum calls deriving the datum "a bonus rather than a debt", carries that in a
 >   register note beside the section, and hands the content to the matter sector --- "we claim no derivation
 >   here and record only the identification".*
+>
+> ⛭⛭ **CORRECTED r7389 (66) — FAMILY 8 IS LIVE, AT `PO-89`, AND THE LINE BELOW IS CORRECTED BY THIS SEAT RATHER THAN BY A SEAT.**
+> *`PO-23`'s strike **is** still upheld: its own condition asked for "a definition of the mode sums, or a demonstration that the obstruction is the general one", and a definition was delivered — the interacting sum continued to $-\tfrac43$ exactly on a regulator calibrated before use. ⛔ **But the family is not closed.** `P10`, read whole at `r7389`, states open the definition's **completion**, in the same words as the row's title, and no row carried it: "what remains open is one thing, and it is not a category — and it is the **completion** of a definition" (l.`1827`); "the one open thing is the ultraviolet definition of the interacting tower's mode sums — with the renormalised value at the paying dimension unclaimed and the invariant it is the coefficient of unnamed" (l.`1836`). And at l.`1485` it refuses the inference the line below rests on: "*a definition that holds at one order of an expansion and is silent at the next is a definition with an order attached ... this row exists because a predecessor was struck on an inference of just that shape — a result true where it was computed, read as true where it was wanted.*"*
+> *So the family is **LIVE at `PO-89`**, in three unlike parts: the renormalised value (**data-gated**), the invariant's identity (**blocked on the background**), and the nine-level closed forms (**workable**). `P7` l.`1937` is owed a correction in its own turn; `P10` needs no edit.*
+> ⌗ *The line below stands as what this view said. **It is a closure taken on a row's narrow discharge — the same shape as family `1`'s, and the third instance in three revisions.***
+>
 > - ***Family 8, the interacting quantum tower, at `PO-23` --- CLOSED.*** *The strike is upheld at `r7377`:
 >   it reads "the sums are defined by the construction's own regulator", and `P7`'s body says exactly that,
 >   with its frontiers head classing the quantum sector a BOUNDARY whose two handovers are not this
