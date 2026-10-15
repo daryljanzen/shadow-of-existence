@@ -48,12 +48,6 @@
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
-  "reads": {
-   "receipts/L_probability/S7_the_paper_pins_are_read_by_reversing_the_clause_they_quote_and_only_one_in_four_would_notice.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38668531573",
-    "since": "ed4c8b61dbb57f63664e6ec1bcc1577ab1a928b1"
-   }
-  },
   "suite": {
    "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
     "gates": [
