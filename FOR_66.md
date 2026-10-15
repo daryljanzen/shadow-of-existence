@@ -18317,3 +18317,49 @@ the key is genuinely undecidable from the trace.*
 ⌗ **Verification:** *`rc=0`, `0` FAIL lines, all five touched checks printing `[PASS]` with their
 measured values inline. Extractor: `21` keys, **`0` `[TARGET-ANNOTATION]` faults**; `6` baseline rows
 dropped and `3` added, `5` annotation rows dropped and `3` added.*
+
+---
+
+## `r7355+cc66.24` — **HAND-OFF TAKE `5`: `L247_the_build_already_stands` `8` → `0`, THE LARGEST BLOCK LEFT. ⛔ A FOUR-TOKEN CO-OCCURRENCE OVER A TWO-MEGABYTE REGISTER, AND A NEEDLE THE RECEIPT'S OWN COMMENT RECORDS AS ALREADY BROKEN ONCE**
+
+**`landed`: `L247_the_build_already_stands` (`70`'s, `r7353` ②) `8` → `0`; `REPAIR-OWED` `49` → `41`.
+⌗ **`137` → `41` this revision — ninety-six rows.** `remaining`: `41`; next in the queue
+`P03_SdS_slicing` (`4`), then `RP_34_gr` (`8`).**
+
+**⓵ ⛔ THE FOUR-TOKEN CO-OCCURRENCE IS THE WORST SCALE I HAVE SEEN TONIGHT: `THE_REGISTER.md` IS
+`2` MB FLAT.** *The check claims the finding **landed on the row** — the `r2419` provenance recorded
+there and the Dirac sector carried as the successor — and it asserted that four tokens appear
+**somewhere** in two megabytes.* ⌗ **Measured: `r2419` ×`7`, `PO-21` ×`4`, `Dirac sector` ×`3`,
+`FALSE WHEN WRITTEN` ×`1`.** ⇒ ***Three of the four were satisfiable in unrelated rows, and the one
+unique token carries a DIFFERENT finding from the other three*** *(that `P14`'s sentence was false
+when written, not that the row records the provenance).* ⛭ **So a single verdict had to cover one sound
+pin and three loose ones — which is why it is two spans and not one:** *the successor row itself, which
+names `PO-21`, `r2419`, `PO-14` struck **and** the Dirac sector in one row; and separately the sentence
+about `P14`'s denial.*
+
+**⓶ ⌗ AND THE DISPLAY-BODY NEEDLE CARRIES ITS OWN HISTORY: `60` QUOTED THE RECEIPT BACK AT ITSELF.**
+*The ground says the needle `e^{2P}\,Q_t` is "a piece of the equation BODY … **and the receipt's own
+amended comment records this needle already breaking once on display spacing**". The comment in
+question calls it the "**sixth typesetting break of this run**".* ⇒ *Pinned to `\label{eq:twist}` — as
+`sec:unpolarized` already is **in the same list**. One convention for the whole list instead of two.*
+
+**⓷ AND ONE OF THE THREE P11 NEEDLES WAS MULTI-SITE AS WELL AS NARROW, WHICH THE GROUND DID NOT SAY.**
+*`60` filed `wave map into the hyperbolic plane` as a proxy — "the span names the object and not the
+identification". **Measured: it stands TWICE in `P11`** (once in the overview, once in the section), so
+the pin could land on either. The span is now the sentence that **makes** the identification.*
+
+**⓸ ⌗ AND THE SAME SENTENCE AS `L246`, PINNED THE SAME WAY — WHICH IS THE RIGHT OUTCOME.** *`identity
+component does not reach` is owed in **both** receipts (different keys, same sentence). I used the
+identical widened span in both.* ⇒ **Two receipts reading one sentence should pin it identically**, *and
+a reader comparing the two ledger rows can now see that they do.*
+
+**⓹ ⌗ THREE NEEDLES CAME OUT OF THE `MARKS` LIST ALTOGETHER, AND THAT IS THE STRUCTURAL POINT.** *The
+list matches every needle against one raw haystack. The repaired spans need **three different**
+haystacks — raw, flattened, and emphasis-normalised.* ⇒ ***A list that shares one haystack cannot carry
+spans that need three***, *so the three are asserted individually and the list keeps the needles it can
+still serve.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines; all four repaired/kept check lines print `OK` by name.
+**Two of my own errors on the way, both caught by running it:** an unbalanced paren (`SyntaxError`) and
+a missing `import re` (`NameError`) — *both failed loudly at import, which is the safe direction*.
+Extractor: `21` keys, all decided, no `UNDECIDED`, no annotation fault; `8` rows dropped, `6` added.*

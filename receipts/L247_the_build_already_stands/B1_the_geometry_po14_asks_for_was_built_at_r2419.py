@@ -23,6 +23,7 @@ Run:  python3 receipts/L247_the_build_already_stands/B1_...py
 Written r3099 (`L-247`).  Stated for reversal.
 """
 import os
+import re
 import subprocess
 import sys
 
@@ -65,6 +66,13 @@ check('⓵ᶜ `THE_FRONTIER` priced it there as a BUILD at 5 turns, flagged -- t
       'of the three', 'PO-14' in fro_pre and 'BUILD' in fro_pre and '5 ⚠' in fro_pre)
 # ** and the CURRENT state, asserted against the live files rather than assumed from the above **
 reg = open(os.path.join(ROOT, 'THE_REGISTER.md'), encoding='utf-8', errors='replace').read()
+# ⌗ r7355+cc66: the register MARKDOWN-NORMALISED and flattened, for the two spans repaired below.
+#   Bound from the path in one expression rather than from `reg`, for the reason measured on `L548`
+#   this revision: a haystack bound through another binding can leave the key UNDECIDED.
+_regn = re.sub(r'\*+([^*]*)\*+', r'\1',
+               re.sub(r'~~([^~]*)~~', r'\1',
+                      re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_REGISTER.md'),
+                                                encoding='utf-8', errors='replace').read())))
 fro = open(os.path.join(ROOT, 'THE_FRONTIER.md'), encoding='utf-8', errors='replace').read()
 # ** r3101: the pins below tested for ONE disposition of the finding (re-specify `PO-14` in place).
 #    The main line took the other, and it is the one the row's own text forces: `PO-14`'s stated
@@ -75,8 +83,24 @@ fro = open(os.path.join(ROOT, 'THE_FRONTIER.md'), encoding='utf-8', errors='repl
 #    rather than which of the two dispositions carried it. **
 check('⓵ᵈ ⛭ and the finding LANDED on the live register -- the r2419 provenance recorded on the row '
       'and the Dirac sector carried as the successor, not merely reported here',
-      'r2419' in reg and 'FALSE WHEN WRITTEN' in reg and 'PO-21' in reg
-      and 'Dirac sector' in reg)
+      # ⬭⬭⬭ r7355+cc66 (HAND-OFF take 5: 70's receipt, r7353 ②), REPAIR of a FOUR-TOKEN
+      #   CO-OCCURRENCE r7293+69 named: the check claims the finding LANDED ON THE ROW, *** and it
+      #   asserted only that four tokens appear SOMEWHERE in a 2-MEGABYTE register. ***
+      #   ⌗ Measured: `r2419` ×7, `PO-21` ×4, `Dirac sector` ×3, `FALSE WHEN WRITTEN` ×1 -- so
+      #     three of the four were satisfiable in unrelated rows, and the one unique token carries
+      #     a DIFFERENT finding (P14's sentence) from the other three.
+      #   ⇒ *** TWO spans, because these are TWO claims and no single span carries both: *** the
+      #     successor row itself -- which names `PO-21`, the `r2419` provenance, `PO-14` struck AND
+      #     the Dirac sector as what remains, all in one row -- and separately the sentence that
+      #     says P14's denial was false when written.
+      #   ⌗ A markup carrier (`~~`, `**`), so the register is markdown-normalised and the spans
+      #     kept whole; flattened too, the rows being long.  Verified before performing: each ONCE
+      #     so normalised, and once under `check_quote_pins._unmark`.
+      ("PO-21 | $T$'S ACTION ON A WALL MODE OF THE UNPOLARISED CUT. The geometry is not what "
+          'is missing: P11 `sec:unpolarized` has built the unpolarised cut since r2419 (`PO-14`, '
+          'struck), and `L-832` has since evolved an explicit propagating member of it. What is '
+          'missing is the Dirac sector ON it.' in _regn
+      and 'That sentence was FALSE WHEN WRITTEN, not stale.' in _regn))
 check('⓵ᵉ and no live frontier row prices an already-standing build at 5 turns',
       'PO-14' not in fro or '5 ⚠' not in fro)
 
@@ -88,19 +112,52 @@ p11 = open(os.path.join(ROOT, 'corpus', 'dynamics_paper.tex'), encoding='utf-8',
            errors='replace').read()
 MARKS = [
     (r'\label{sec:unpolarized}', 'a section labelled sec:unpolarized'),
-    ('restoring the second polarization', 'which restores the second polarisation'),
-    ('wave map into the hyperbolic plane', 'and identifies the two polarisations as a wave map'),
+    # ⬭⬭ r7355+cc66, THREE OF THIS LIST'S NEEDLES REPAIRED, each as r7300+60/r7293+69 read it.
+    #   ⒜ `restoring the second polarization` was *"a participle ... the proposition a held
+    #     verdict rests on.  The repair is a widening to the clause that names what does the
+    #     restoring"* -- so it now runs from `its unpolarized generalization, which we now build`.
+    #   ⒝ `wave map into the hyperbolic plane` *"names the object and not the identification"* --
+    #     and MEASURED, it stands TWICE in P11, so it was multi-site as well as narrow.  The span
+    #     is the sentence that makes the identification.
+    #   ⒞ `identity component does not reach` -- *"`does not reach` WHAT is the claim"* -- widened
+    #     to the object, the same span this seat landed in `L246` for the same sentence.
+    #   ⌗ The list is matched against the RAW paper, so each span was measured raw: ⒜ 1, ⒝ 1
+    #     (emphasis-normalised, since the sentence is `\emph{}`-wrapped and the needle must be
+    #     matched inside it), ⒞ 1 flattened.  ** Which is why the three are moved OUT of `MARKS`
+    #     and asserted against the haystacks they need ** -- a list that shares one haystack cannot
+    #     carry spans that need three.
     ('Gaussian curvature $-1$', 'into a target of Gaussian curvature -1'),
     ('determinant $-1$', 'with the exchanging map reversing orientation'),
-    ('identity component does not reach', 'so it lies outside the identity component'),
     # ⛔⛭ AMENDED r4524: P11 sets the twist as a DISPLAY with spacing macros --
     #    `c \;=\; R\,e^{2P}\,Q_t \;=\; \text{const}` at `eq:twist` -- and this needle was the
     #    unspaced inline form.  *Sixth typesetting break of this run; the physics is identical.*
-    (r'e^{2P}\,Q_t', 'and carrying the conserved twist c = R e^{2P} Q_t (eq:twist)'),
+    # ⬭⬭ r7355+cc66, REPAIR of a DISPLAY-BODY pin: r7300+60 said *"the needle is a piece of the
+    #   equation BODY and the constancy the claim rests on is outside it --- and the receipt's own
+    #   amended comment records this needle ALREADY BREAKING ONCE ON DISPLAY SPACING.  The repair
+    #   is to pin the equation LABEL rather than a piece of its body."*  ⌗ The comment above says
+    #   it was the *"sixth typesetting break of this run"*, so the ground is quoting the receipt's
+    #   own history back at it.  ⇒ The label, as `sec:unpolarized` is already pinned in this same
+    #   list -- one convention for the whole list instead of two.
+    (r'\label{eq:twist}', 'and carrying the conserved twist at eq:twist'),
     (r'c\mapsto-c', 'on which the parity acts as a sign flip'),
 ]
 for needle, what in MARKS:
     check(f'⓶ P11 {what}', needle in p11)
+_f11 = re.sub(r'\s+', ' ', p11)
+_u11 = re.sub(r'\\emph\{([^}]*)\}', r'\1', _f11)
+check('⓶ P11 restores the second polarisation, and the clause names what does it: "its unpolarized '
+      'generalization, which we now build---restoring the second polarization as the off-diagonal '
+      '$\\omega$ of the torus block"',
+      'its unpolarized generalization, which we now build---restoring the second polarization as '
+      'the off-diagonal $\\omega$ of the torus block' in _f11)
+check('⓶ P11 makes the identification rather than naming the object: "The two polarizations are a '
+      'wave map into the hyperbolic plane."',
+      'The two polarizations are a wave map into the hyperbolic plane.' in _u11)
+check('⓶ P11 puts the exchanging map outside the identity component, with the object named: "it '
+      'reverses orientation, so it lies in the component of $\\mathrm{Isom}(\\mathbb{H}^2)$ that '
+      'the identity component does not reach"',
+      'it reverses orientation, so it lies in the component of '
+      '$\\mathrm{Isom}(\\mathbb{H}^2)$ that the identity component does not reach' in _f11)
 
 print()
 print('=' * 78)
