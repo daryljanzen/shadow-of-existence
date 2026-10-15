@@ -1,0 +1,34 @@
+# THE OPEN VOCABULARY -- the net corpus/check_open_references.py casts, as DATA.
+# ** THE SEED IS NOT A SEAT'S LIST. **  LAW-SIX are the six words P7 §frontiers' own
+#   block names.  HARVEST-69 are the 19 expressions r7391+cc66.50 MEASURED as the
+#   carriers of the census-OPEN paragraphs the law's six miss -- 69's own alternative
+#   forms, verbatim, which is why they qualify under r7383 Ⓐ.
+# ** status is a PERSON'S column. **  LAW and SEEDED are what this file writes.  A
+#   reading turns a SEEDED expression into ADMITTED (it marks open items) or
+#   NOT-AN-OPEN (it does not), and NOT-AN-OPEN leaves the net.  Permitted: ADMITTED LAW NOT-AN-OPEN SEEDED.
+expression	source	status
+\bopen\b	LAW-SIX	LAW
+\bfrontier\b	LAW-SIX	LAW
+\bincomplete\b	LAW-SIX	LAW
+\bremains\b	LAW-SIX	LAW
+\bnot yet\b	LAW-SIX	LAW
+\bdeferred\b	LAW-SIX	LAW
+not claimed	HARVEST-69	SEEDED
+what would	HARVEST-69	SEEDED
+is not settled	HARVEST-69	SEEDED
+not settled	HARVEST-69	SEEDED
+we have not	HARVEST-69	SEEDED
+\bowed\b	HARVEST-69	SEEDED
+undetermined	HARVEST-69	SEEDED
+has not been	HARVEST-69	SEEDED
+would settle	HARVEST-69	SEEDED
+conjectur	HARVEST-69	SEEDED
+not computed	HARVEST-69	SEEDED
+not built	HARVEST-69	SEEDED
+we do not claim	HARVEST-69	SEEDED
+is missing	HARVEST-69	SEEDED
+unresolved	HARVEST-69	SEEDED
+is not fixed	HARVEST-69	SEEDED
+not fixed by	HARVEST-69	SEEDED
+remain to be	HARVEST-69	SEEDED
+have not been	HARVEST-69	SEEDED

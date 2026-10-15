@@ -20274,3 +20274,85 @@ ledger found it and because three seats are currently reading its red as their o
 `check_prose_pins`, `check_marker_transposition`, `check_pin_board`, `check_citation_chain`,
 `check_glyph_coverage`, `check_pages_render`, `check_floats_carried` and `check_figures_shown` all
 pass on this tree — the nine a paper edit most endangers.*
+
+## ⛭⛭ `r7395+cc66.54` — **⑨ IS BUILT, BOTH ARMS. ⒜ WAS ALREADY DONE AT `.51` (YOU HAD NOT SEEN IT); ⒞ IS NOW `390` KEYS OVER `329` SITES, AND THE VOCABULARY IS DATA THAT RATCHETS IN BOTH DIRECTIONS. ⛔ PRICED AND NOT WIRED**
+
+*Read at `origin/main` `f8f481638`; `r7395` merged in first. Bands registered and pushed in
+`computations/beyond_the_wall/r7395_cc66_the_ratcheting_vocabulary/REGISTRATION.md` **before**
+`price.py` ran. ⛔ Nothing below adjudicates a site or an expression.*
+
+⌗ ⛭ **First, so you are not reading a stale premise: ⒜ landed before your order did.** `.51` built the
+reference arm and found the same thing your ⒜ accepts — the law's literal test discharges `0` of
+`221`, because `P7`'s four items carry LaTeX labels and the eighteen papers compile separately.
+**Read `.51` before this section; it also carries two defects in my own net that I found while
+binding-testing it, with `221` − `11` + `4` = `214` named rather than adopted.**
+
+### ⑨ ⒞ THE PRICE, which is the number you said decides
+
+| | |
+|---|---:|
+| **SITES** `(paper, normalised sentence)` | **`329`** |
+| **KEYS** `(paper, sentence, expression)` | **`390`** |
+| of those sites, the law's six alone reach | `214` |
+| ⇒ **added by your authorised `19`** | **`115` sites, `150` keys** |
+
+⌗ **Two independent implementations agree:** `price.py` and the gate's own `population()`, written
+separately, both return `329`/`390`.
+
+### THE BANDS, SCORED — ONE HELD, TWO REFUTED, AND THE SECOND REFUTATION IS THE FINDING
+
+- ⒜ **sites `380`–`900` → `329`. ⛔ REFUTED LOW.** *I wrote the band wide because I could not predict
+  it and it was still wrong — in the direction that makes the arm cheaper.*
+- ⒝ **keys/sites `1.05`–`1.35`× → `1.185`. HELD.**
+- ⒞ ⛭⛭ **"the two largest among the `19` will be `what would` and `has not been`" → ⛔ REFUTED.** The
+  top two are **`\bowed\b` (`24`)** and **`conjectur` (`18`)**; `what would` is joint third at `16`,
+  `has not been` is `5`.
+  ⇒ ***The harvested expressions that fire most are THE PROGRAMME's OWN VOCABULARY, not ordinary
+  English.*** *`owed` is this programme's word for an outstanding obligation; `conjectur` marks a
+  conjecture. Both are about unfinishedness by construction.* ⛭ **So the widened net is LESS noisy
+  than I predicted — the opposite of `.47`'s `70`-per-cent false class, and it had to be measured to
+  be known.** ⌗ *My reason for the band was that ordinary constructions would flood it. They do not.*
+- ⒟ **a commitment, not a prediction, written before the number and honoured: the ratchet costs `0`
+  human readings to install at ANY size**, so the `390` is your reading queue and not a reason to
+  refuse the arm — ⛔ **and the gate is NOT WIRED, at this size or any other, on this seat's
+  authority.**
+
+### WHAT IS BUILT, AND THE VOCABULARY RATCHETS IN BOTH DIRECTIONS
+
+- **`corpus/open_vocabulary.tsv` — the net as DATA, not code.** `25` rows: the law's six as `LAW`,
+  your `19` as `SEEDED`. ⛭ **`status` is your column, and `NOT-AN-OPEN` MECHANICALLY REMOVES AN
+  EXPRESSION FROM THE NET** — ⒞'s *"joins the vocabulary or is recorded as not-an-open"*, enforced
+  rather than advised.
+- **`corpus/open_reference_baseline.tsv` — `390` rows, every one `UNREAD`,** keyed
+  `(paper, sentence, expression)`. `--regen` writes `UNREAD` for a new key and never changes a
+  verdict you have written.
+- ⛭ **The `\command{...}` guard is STATED on every run, exactly as you asked** — *"the guard is a
+  property your arm has and `69`'s net lacks, and the gate should state that rather than inherit it
+  silently"* — with `.50`'s `13` of `257` printed beside it and the heading-fusion correction beside
+  that.
+
+### THE BINDING CHECKS — six, each in the direction that fails if the mechanism is absent
+
+| | case | expected | got |
+|---|---|---|---|
+| A | unchanged tree | green | **rc `0`** |
+| B | a new open-language sentence in its own paragraph | red | **rc `1`** |
+| C | a new open claim FUSED to a `\paragraph{...}` heading | red | **rc `1`** |
+| D | a marker present ONLY inside `\S\ref{sec:open-probe}` | green | **rc `0`** |
+| E | ⛭ **a NEW EXPRESSION admitted to the vocabulary** — ⒞'s own case | red | **rc `1`**, `762` new keys |
+| F | an expression read `NOT-AN-OPEN` (`conjectur`) | green, keys retired | **rc `0`**, `18` keys gone |
+
+⌗ ⛭ ***E is what shows ⒞'s key is really the triple:*** *admitting one expression created `762` new
+keys at sentences that ALREADY HAD ROWS. **A sentence key alone would have stayed green straight
+through it** — so your "a new expression at a site being a new key" was not a restatement of `.46`'s
+key, it was a correction to it.* ⌗ *Gate runtime `1.553` s, up from `0.417` s because the net is `25`
+patterns rather than one.*
+
+### ⌗ WHAT IS NOW IN YOUR HANDS, THREE LINES
+
+1. **Wiring.** One line in `gates.yml` for `check_open_references`, and ⑦'s
+   `check_open_item_coherence` is still unwired beside it on the same ground.
+2. **`fast` is red on the trunk and only you can clear it** — `.52`: three verdicts for
+   `9177c52baf`, `cf8bd7a858`, `db7d54f2d8` and a `--rebuild` for `fb2d798ceb`.
+3. **The `scoped` reds are not any seat's diff** — `.53`: red on `main` and four other lines, with
+   `red_carry` marking `S55` ⚠ `CONTRADICTED`.
