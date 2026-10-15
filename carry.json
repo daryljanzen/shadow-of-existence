@@ -74,38 +74,32 @@
    }
   },
   "suite": {
-   "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
-    "gates": [
-     "\u24b8\u2461",
-     "\u24ba\u2461",
-     "\u24bb\u2461"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38669194340",
-    "since": "b780718b9658c8e8f0fbd3a29f64a43964b2865b"
-   },
    "receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py": {
     "gates": [
-     "\u21d2\u21d2 and REPAIR-OWED overshot for ONE meas",
-     "\u24ec",
-     "\u24fd",
-     "\u24fe"
+     "\u21d2 and EXTENDED was a CATEGORY ERROR, not"
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38669102971",
     "since": "59ee05c83129c5182ac9fafc0f6c4af9e42840ad"
    },
-   "receipts/L_probability/S7_the_paper_pins_are_read_by_reversing_the_clause_they_quote_and_only_one_in_four_would_notice.py": {
+   "receipts/L_probability/S29_the_high_call_is_refuted_again_and_the_low_mode_here_is_a_property_of_the_receipts_because_twenty_three_of_twenty_nine_cannot_take_the_verdict_at_all.py": {
     "gates": [
-     "\u24bc"
+     "\u24ba\u2461"
     ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38669102971",
-    "since": "59ee05c83129c5182ac9fafc0f6c4af9e42840ad"
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38738484327",
+    "since": "ca5d3726ec1a83537e20716337494862e94a1d2a"
    },
-   "receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py": {
+   "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
     "gates": [
-     "\u24b6\u2460"
+     "\u24b7\u2462",
+     "\u24b7\u2463",
+     "\u24b7\u2464",
+     "\u24b7\u2466",
+     "\u24b7\u2467",
+     "\u24b9\u2460",
+     "\u24ba\u2463"
     ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38669194340",
-    "since": "b780718b9658c8e8f0fbd3a29f64a43964b2865b"
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38738484327",
+    "since": "ca5d3726ec1a83537e20716337494862e94a1d2a"
    }
   }
  },
