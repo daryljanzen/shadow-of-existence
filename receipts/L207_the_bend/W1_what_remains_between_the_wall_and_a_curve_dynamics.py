@@ -182,9 +182,19 @@ def main():
     # earned is preserved verbatim in the check labels.
     # *Edited across the line boundary only because the fork's own edit is what made it red; the
     # change is routed in FOR_56.md for the observer line to accept, revise or revert.*
+    # ⛭ r7349+70, RC4 as ruled at r7353 ①: the claim-complete span IS this comment and the provenance
+    #   gates forbid quoting it, so the PIN FORM is dropped -- not the check, not the claim.  The note is
+    #   PARSED: exactly one `%` line records the correction in the form `THIS NOTE READ "<old>" until
+    #   r<N>+c54.<M>`, its revision is r2376+c54.179, and the old phrasing it quotes occurs nowhere else
+    #   in the file, case-folded -- so it survives only as the record of its own correction.  *The
+    #   pinned predecessor tested `occurrences`, which a case-sensitive search left EMPTY against the
+    #   comment's upper-case RAISES, so it passed on `len(occurrences) == 0` and read nothing.*
+    _notes = [m for l in raw.split('\n') if l.lstrip().startswith('%')
+              for m in [re.search(r'THIS NOTE READ "([^"]+)" until r(\d+)\+c54\.(\d+)', l)] if m]
     check('the OVERSTATED phrasing no longer stands as the comment\'s own claim (fixed c54.179)',
-          len(occurrences) == 0 or all(
-              'until r2376+c54.179' in raw[max(0, i - 400):i + 200] for i in occurrences))
+          len(_notes) == 1
+          and (int(_notes[0].group(2)), int(_notes[0].group(3))) == (2376, 179)
+          and raw.casefold().count(_notes[0].group(1).casefold()) == 1)
     check('and any surviving occurrence is inside a % comment line, never published text',
           all(raw[raw.rfind('\n', 0, i):i].lstrip().startswith('%') for i in occurrences))
     check('while the PUBLISHED paragraph says "the deepest question the construction opens onto" and '
