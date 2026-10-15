@@ -18706,3 +18706,94 @@ the instrument list at `.26` ⒝ and not building it inside a repair push.*
 
 *⛭ Fresh covering ratchet (`qp15`) running alone on the corrected ledger; I will report its `rc`
 either way. `PR #435`, pushed.*
+
+---
+
+## `r7355+cc66.30` — **the ratchet is GREEN on the corrected ledger; the slack-bound question is CLOSED as "not a class"; and the `~60` red CI events tonight are one backlog with a one-line discriminator**
+
+> **`landed`** — `check_quote_pins` `rc=0` (`2636`/`2636`, `1306` s), `check_prose_pins` `rc=0`
+> (`152`/`152`). **`remaining`** — `REPAIR-OWED` `29`, all `60`'s (`14`) or `70`'s (`15`); `.26` open.
+
+### ⒜ **The ratchet, reported rather than assumed**
+
+```
+no new key: the class has not grown.
+no stale entry: every adjudication still describes a live key.
+target: R* files 2636 live key(s) (annotations included); 0 annotation fault(s); 0 baseline target(s) differ
+MULTI-SITE: 158 against a ceiling of 249      list-pin: 0 against 60
+pinned-read: 0 against 102, 5 multi-site against 7
+the ratchet holds: 0 unadjudicated against a ceiling of 2287
+RC=0 SECONDS=1306
+```
+
+**The two keys `.29` corrected were the whole of `qp14`'s `rc=1`.**
+
+### ⒝ **`.27` ⒞ is CLOSED, and the answer is NO — with the measurement**
+
+*I asked whether `slack bound where the claim names a number` is a class or my own slip, and said it
+needed measuring. **It is measured and it is not a class.** Of `77` `PIN`-tier rows, `17` assert a
+slack bound against an integer, and the `17` partition cleanly:*
+
+| | | |
+|---|---|---|
+| **`8`** | `> 0` **presence controls** | *`> 0` IS the claim — "the vocabulary is present"* |
+| **`4`** | `NOT-A-COUNT` | *character distances, computed ratios — not counts of matches* |
+| **`5`** | `DELIBERATE` thresholds | *every one already argued minimal in its own row* |
+
+⛭ ***And four of the five were REPAIRED FROM round floors earlier in this campaign*** *— `n_wall >= 3`
+→ `> 1` (`r7125`), `have['SU(3)'] > 50` → `> 0` (`r7125`), with `n_crit >= 2` and `len(inc) <= 1`
+read and held at `r7143`. The sweep you would have ordered has already run.*
+
+⛔ **But the record indicts me more sharply than a class would have.** *`A8`'s row — **which I wrote at
+`r7151+cc66.112`** — says this:*
+
+> *"`>= 2` is the weakest reading of the label's own claim … **⛔ BUT THE FLOOR HID A DEAD HEADLINE:
+> the receipt's own verdict line read TWICE against a measured `5`, and `>= 2` passed at two and at
+> five alike. The headline prints the count now.**"*
+
+⇒ ***So `n_sent <= 4` was an instance of a shape I had personally named, adjudicated and fixed two
+hundred revisions earlier, and the remedy I applied at `.27` — print the count, tighten the bound —
+is verbatim the remedy that row already prescribes.*** *The class was closed; I reopened it in my own
+hand. That is worth more than the two minutes the repair cost, and it is the argument for the
+round-trip check at `.29`: **the ledger already knew.***
+
+### ⒞ **The CI events: ONE cause, and a one-line way to read them**
+
+*Roughly `60` `check_run.completed` failures arrived tonight across `~12` head SHAs. **None of them
+tests the fixes at `.27`–`.29`, and I nearly treated the first as a new breakage.***
+
+**The check runs for the current head (`3279e6688`, created `07:11`) are ALL STILL `queued`.** *What is
+draining is a backlog of runs created for superseded merge commits — `44d37a43a`, `c0e36af64`,
+`867d86c03`, `a9c59fdab` and the rest — each built from a head that predates the fix it would test.*
+
+⌷ **The discriminator is free and it is printed in every log:**
+
+> **`the instrument reports N … the baseline carries 149` → the run PREDATES `.27`.
+> `carries 152` → it includes it.** *(Quote-pin side: `2652` or `2638` is stale; `2636` is current.)*
+
+*Both heads I checked report `149` and still show the live code as `n_sent <= 4`.* ⇒ ***A baseline row
+count in the gate's own output dates a run more cheaply and more reliably than mapping merge SHAs,
+because the merge SHA is not in my history and the row count is in the artefact I am already reading.***
+
+⌗ **One genuine change in the same events, and it is not mine: `check_order_acknowledged` has moved
+from node `70` to node `71`** *(`order r7353`, acknowledged `r7345`, lag `8`, `4` own unanswered
+against a ceiling of `3`; `70` is now at `2` and `69` at `0`).* **`cc66` is at lag `-2`, `0`
+unanswered.** *Same gate, same class, no fix portable from here — the gate's own remedy line says a
+reminder is not the remedy. Routed, not commented a fourth time.*
+
+### ⒟ **Two things I did badly tonight, both mine and both cheap to have avoided**
+
+1. **I ran the same `~1030`-second ratchet twice at once.** *I launched `qp15`, then launched
+   `run_fast_job.sh`, **which CONTAINS `check_quote_pins`** — so the two contended and each slowed
+   the other. `r7271`'s own words, which I quoted an hour earlier: **"redundant is not the same as
+   rigorous."***
+2. **I bounded the suite at `timeout 1500` when one gate inside it is allowed `1800`.** *So the
+   wrapper was guaranteed to kill the suite before its most expensive gate finished — and because the
+   script's output is block-buffered through the redirect, a killed run yields **no partial result at
+   all**. Relaunching bounded properly, alone.*
+
+⇒ *⛭ Both are the same error in two costumes: **I treated a long run as free because it was in the
+background.** Stated here rather than quietly absorbed, because `r7271` ⒝ is a standing order about
+exactly this and I am the seat that keeps citing it.*
+
+*⛭ `PR #435`, pushed. Suite relaunching; its result follows.*
