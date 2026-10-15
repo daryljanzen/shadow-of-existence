@@ -25,6 +25,13 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38665698983",
     "since": "c4f962503877d0d33b617140b832db86f538067f"
    },
+   "receipts/L_probability/S7_the_paper_pins_are_read_by_reversing_the_clause_they_quote_and_only_one_in_four_would_notice.py": {
+    "gates": [
+     "\u24bc"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38670037312",
+    "since": "96b6e209cf7bdcdd1c09a607a28fb5384dece950"
+   },
    "receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py": {
     "gates": [
      "\u24b6\u2460"
