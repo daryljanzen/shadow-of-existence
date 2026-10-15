@@ -192,3 +192,26 @@ FIRST of `PO-78`'s four discharge clauses met — all backlogs verdicted to zero
 
 ⌗ *No seat carries a repair assignment. `THE_REPAIR_STRIDE.tsv` says so in terms, so that the next
 seat to read it does not go looking for a list that is empty.*
+
+## ⓘ THE ARBITER'S VERDICT, RUN AFTER THE CORRECTION
+
+```
+  MEANING-HELD: 505 key(s) HELD, not owed -- each at a commit that changed its receipt
+                and carries its literal; 0 fail
+  UNADJUDICATED: 0
+  no new key: the class has not grown.
+  no stale entry: every adjudication still describes a live key.
+  target: R* files 2629 live key(s); 0 annotation fault(s); 0 baseline target(s) differ
+  the multi-site ratchet holds: 157 against a ceiling of 249
+  the list-pin ratchet holds: 0 against a ceiling of 60
+  the pinned-read ratchet holds: 0 against a ceiling of 102, 5 multi-site against 7
+  the ratchet holds: 0 unadjudicated against a ceiling of 2287
+
+  the quote-pin class is fully accounted: no new key, no stale entry, and the backlog
+  in the open.
+```
+
+*`26` other gates green here, in two batches. **The ratchet was red twice before this, and both reds
+were this revision's own merge and bookkeeping rather than the tree's:** two target annotations that
+the overnight repairs turned into silent overrides, and the two unstruck `REPAIR-OWED` rows. Both are
+fixed at the cause and the figures above are the re-run, not the first run.*
