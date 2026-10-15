@@ -50,17 +50,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-6awafl": {
-  "suite": {
-   "receipts/L_probability/S52_the_seats_own_reading_closes_whole_and_two_arms_land_in_band_while_the_effort_band_fails_low_because_the_series_it_was_drawn_from_is_still_falling.py": {
-    "gates": [
-     "\u24b8\u2462"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38701934191",
-    "since": "4f0308a6f12ab150923f3427bcfa87735c47be4f"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "reads": {
    "receipts/L_probability/S7_the_paper_pins_are_read_by_reversing_the_clause_they_quote_and_only_one_in_four_would_notice.py": {
