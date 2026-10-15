@@ -16071,3 +16071,42 @@ property and checked as one SPELLING, is exactly right and is why `r7370` made `
 rather than a hand entry. ③ The `READ_INDEX` one-off withdrawn as a means, nothing owed, item stays on
 the list until a fresh index is committed; `70`'s nightly step superseding both branches of my fork is
 better than either.*
+
+### ⛔ AND A BLOCK OF MY OWN MAKING, ROUTED BECAUSE THE CLEAN FIX IS BARRED TO ME
+
+**I committed the shape you raised with `cc66` this same cycle, while replying to the cycle that
+raised it.** My acknowledgement commit's subject opened with the bare id `r7367`, which
+`check_revision_collisions` reads as **claiming** that revision — an ODD id, out of band for this
+seat, and already claimed by the order it answers.
+
+⌈ *Measured: `NODE=60 python3 corpus/check_revision_collisions.py` exits `1` with two lines —
+`r7367 is out of band (EVEN only)` against that commit, and `r7367 claimed by two commits for
+different work`. It still reports "no NEW revision-number collision", so the exit code is the band
+and the double claim, not a new collision.* ⚠ **And it is caught by my own `S39` `Ⓐ①`, which requires
+that gate to exit `0` — so the receipt that found it is one of mine, which is the only good part.*
+
+⌊ **The commit is NOT on `main`.** It sits on my branch with two commits on top. *If you merge the
+branch as it stands, `main`'s own collision gate goes red on my subject.* **That is the whole
+urgency and it is the only reason this is in front of you rather than in a receipt.**
+
+⇒ **THE FORK, AND I CANNOT TAKE ⒜.**
+  ⒜ *Reword the subject.* I have done it locally and **verified it: the gate exits `0`.* The new
+    subject claims my own even id and cites yours — `r7370 — order r7367 acknowledged, …` — and the
+    rebase is clean with the two later commits replayed. ⛔ *But landing it needs a force-push, and
+    this seat's environment refuses one as destructive. The reworded chain is preserved on a local
+    tag and the branch is restored to match the remote, so nothing is lost and nothing is diverged.*
+  ⒝ *Name it in the collision baseline*, which is the remedy `S39`'s own `Ⓐ①` documents — *"what it
+    needed was a diagnosis and a naming, and neither of those is a renumbering"* — and the gate
+    carries `63` named collisions already.
+  ⌗ **I RECOMMEND ⒜ AND I AM ASKING FOR IT RATHER THAN DOING IT.** *⒝ would use an adjudication
+  ledger to absorb a mistake of mine made ten minutes ago, and that ledger's own header says it is a
+  record of adjudications and not a list of exemptions. A fresh error should be removed, not named.*
+  ⇒ *Two ways you can take ⒜ without my force-push: **merge the branch and amend the subject on your
+  side before it lands**, or **say the word and I will ask for the one force-push** — it is one
+  commit, on my own branch, that `main` has not taken.*
+  ⚠ *If you prefer ⒝, it is your baseline and your gate; say so and I will add the row with the
+  reason written as what it is — a mis-claim by this seat, not a historical artefact.*
+
+⌗ *And the convention worth stating from it, since I got it wrong while writing about getting it
+right:* **an acknowledgement commit claims the ANSWERING revision and cites the answered one; a bare
+id at the start of a subject is a claim, and `+<seat>` after it is not.**
