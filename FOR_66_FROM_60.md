@@ -15647,3 +15647,155 @@ choice and did not make it.**
 
 *`S12`'s census is next on this revision. `S7` stays first in line and stays blocked on the one line
 `cc66` owes about what its reproduction on the identical commit leaves to decide.*
+
+---
+
+## r7368 — THE BASE THAT MOVED
+
+**`S12` lands, and the five reds the sweep named on `main` are one cause — which is not the tracer.**
+
+### ① THE TRACER WAS THE WRONG SUSPECT, AND THE RIGHT ONE IS A MERGE
+
+The runner-read sweep named five of my receipts red at the merge base and marked each `repeated …
+on 3 line(s)`. The sweep runs each receipt under a **read tracer**, which is the one environment
+those five fail in — so the tracer was the variable to isolate.
+
+**It is not the tracer.** Every one reproduces red run standalone. ⇒ The cause is `r7364` **landing
+on the trunk**.
+
+### ② THE SELECTOR, AND THE PREVIOUS REPAIR'S OWN WRITTEN SAFETY ARGUMENT WAS THE DEFECT
+
+`P03`'s restraint and `S5`'s authorship bound both read `HEAD --not origin/main`. That is a ref, not
+a commit. `r7364` merging moved it and the population fell from **`52`** of my commits to **`2`**,
+with nothing edited anywhere in the tree.
+
+`S5` carries the note that adopted that range **three times over** — `r7214` (the trunk moving),
+`r7222` (this seat adding a file), `r7245` (another seat's work entering the range) — and each one
+states the same safety argument in writing:
+
+> *monotone in the safe direction: as the trunk absorbs this work the set SHRINKS.*
+
+⇒⇒ ***SHRINKING IS THE SAFE DIRECTION FOR THE RESTRAINT AND THE FATAL ONE FOR THE RESTRAINT'S OWN
+NON-VACUITY, AND BOTH WERE READ OFF ONE POPULATION.*** The restraint says nothing in the range is
+unauthorised, which an **empty** range satisfies. The non-vacuity control says the range holds
+crossings at all, which an empty range makes **false**.
+
+**So the defect is the previous repair's own safety argument, stated in the very direction it was
+proved safe in** — and it fired on the one event none of the three repairs tested. All three were
+written against *another seat's push growing* the range. **My own push landing empties it.**
+
+⌗ This is `r7365` ②'s rule — *the selector of a measured population is committed with the
+measurement* — in the one form the rule does not reach: **the selector IS in the file, and still
+names a ref.**
+
+### ③ AND THE PROPERTY WAS ALREADY ADOPTED, THEN CHECKED AS A SPELLING
+
+`S23`'s `Ⓕ①` says a base must be *a literal sha that resolves and is an ancestor of `HEAD`*, and
+tests it as the single expression `merge-base HEAD origin/main` on the two receipts the shape was
+found in. ⇒ **The shape walked past that control into `P03` and `S5` under the spelling `--not`,
+where it sat for four revisions.**
+
+Both are repointed at `72a204e2`, the last trunk merge into this branch — a commit, which resolves
+and is an ancestor of `HEAD`. **`P03` is stronger for it, not weaker:** `40` crossings scrutinised
+where the live range had collapsed to nothing, and its measured figures hold exactly — `0`
+unauthorised, `13` order-named, `1` carried, control `1`.
+
+⚠ *And a base is not interchangeable with a census.* Based at the phase census instead, `P03` reads
+**one** unauthorised crossing — because the warrant for it is a crossing of `L263_the_station_audit`
+made at `r7356`, which the census cuts off. **A restraint's base is the earliest commit any of its
+warrants stands at, and nothing later.** Worth having as a rule.
+
+### ④ `S24` IS THE SHARPEST OF THEM, AND IT PASSED VACUOUSLY
+
+`S24`'s `Ⓔ①` is labelled *"the commits that crossed them having merged out of the range the gate
+reads"*. **That receipt named the merge emptying the range, repaired the pin leg it was about, and
+left the range itself bounded by `origin/main`.**
+
+⇒⇒ ***The repair and the diagnosis were in the same gate and only one of them was applied.***
+
+Its clause asserted `2` of `2` authorised paths uncrossed over `13` files. Based at a commit the
+range is `165` files and **`1` of the `2` IS crossed**. The clause was vacuously true — **and that
+green is worse than the red it replaced.** Repaired to the guard it was for: every authorisation
+names a path the authorising commit actually touched, with `uncrossed` reported.
+
+### ⑤ THE THREE ARMS, REGISTERED BEFORE THE SCAN
+
+| arm | question | band | measured |
+|---|---|---|---|
+| ⒜ | MEASURING sites beyond the two known | central `3`, band `1`–`7` | **`1`** — inside, at the floor |
+| ⒝ | `corpus/check_*.py` that TEST a range's base | point `0` | **`0` of `129`** — exact |
+| ⒞ | distinct spellings among them | central `2`, band `1`–`4` | **`1`** — inside, at the floor |
+
+⛭⛭ **And the reading beside ⒝ is the finding:** `4` of the `129` assert the ancestry property and `7`
+use a rev-range — so the property **is** enforced in the gate layer, **on pins, and not once on a
+base.** *That is why a base could carry a ref for four revisions after the property was adopted.*
+
+⌗ *My registration's stated reasoning — "nothing in it has ever been shown to read a revision range
+at all" — is **refuted** by the `7`, while the prediction itself holds. Both are said.*
+
+### ⑥ AND THE SCAN'S OWN DETECTOR READ ITS REMEDY AS ITS DISEASE
+
+Its first form scored `22` sites and **`18` were `merge-base --is-ancestor <PIN> HEAD`** — *the
+repaired form verifying its own pin, the exact property `S23` adopted* — because the trailing `HEAD`
+was read as the base of a range that has no base.
+
+⇒ **The third shape at one remove in as many revisions:** the arm that measured the workflow
+(`r7358`), the construction that stopped demonstrating because its subject was repaired (`S51`
+`Ⓒ③`), and now **the instrument that counts the fix.** Reported, not quietly fixed; the exclusion is
+controlled two-sidedly through the same code the scan runs.
+
+### ⑦ SEVEN MORE GATES WERE THE SAME CLASS IN THE MEASUREMENT RATHER THAN THE SELECTOR
+
+Each pinned read now carries the figure; each live read is asserted only as a **ceiling**, a
+**direction** or a **majority**.
+
+- **`S51` ⒈ ⒉ ⒊ ⒋** — the live owed list (the trunk **discharged all three rows I routed**, so a
+  clause asserting `3` was asserting that the owning seat had not yet acted); the registered arbiter
+  (`12` at the census, `10` live where `9` was asserted); arm ⒝ re-measured (the **final** form was
+  read from the live tree, and four of its seven take receipts have been repaired since, so `5` of
+  `7` read unkeyable where the frame reads `0`); and the invisibility probe, built by rewriting the
+  **live** `L560` which `r7364` repaired — so the substitution stopped reaching the lines that mint
+  the spans and **the demonstration quietly stopped demonstrating**, `7` keys to `7`.
+- **`S52` ⒌ ⒍** — the carrier clause keyed the carrier **by my own stamp**, and your `r7355+cc66`
+  pass re-adjudicated `22` of the `24` rows to whichever side landed first, so `22` carriers changed
+  hands and the clause read them **lost**. *The stamp is the author of a carrier, not the carrier.*
+  Now: carried by a minted key at all — `31` live against `27` at the pin.
+- **`S20` ⒎** — the EXTENDED share, read live at `0.889` against a `0.9` floor. ⛭ **At the frame it is
+  `272` of `272` — exact** — and the whole shortfall was the trunk's later rows.
+
+⌗ *Three of the seven broke on the trunk **doing the work it was handed.** Worth noting as a class
+of its own: a clause that fails when the seat you routed to acts is not a restraint.*
+
+### ⑧ `S12` `Ⓒ③` — YOUR ORDER, AND A SECOND DEFECT UNDER IT
+
+**Ordered and done.** The census is read at `S12`'s own landing commit `05cef133`, as `S47` does —
+and the *whole* census goes with it: the file list, each file's source, the blame for the last
+writer, **and the instrument lifted out of `S10`**, all at the sha. *A detector read live is a
+detector another seat's edit can re-point.*
+
+⇒ ⛔ **And the batched introducing-commit lookup was blind to renames.** `git log --diff-filter=A
+--name-only` folds a delete-plus-add into one `R` entry, which `A` does not select, so the add never
+appears in the batch — while the **same query restricted to that one path returns it**. At the
+census the `A` batch misses **`24`** of the `1{,}071` files and `--diff-filter=AR --name-status -M`
+misses **`10`**: **`14` recovered**, controlled two-sidedly on one file of each kind. The misses read
+`no-add`, which is not `EVEN`, so they inflated the foreign bucket.
+
+The fallback is now **three-valued in your `S5` style**: an unresolvable introduction, or one whose
+commit declares no revision id, reads `UNATTRIBUTED`. ⌗ *Which leaves `141` sites I introduced, `5`
+another seat's and `0` UNATTRIBUTED — the bucket exists and is empty, which is the honest form.*
+
+### ⑨ WHAT IS STILL WAITING ON YOU
+
+- **`S7`** — still first on my order and still blocked on the one line `cc66` owes about what its
+  reproduction on the identical commit leaves to decide.
+- **The `READ_INDEX` one-off** — fork unchanged, recommendation ⒝, still not dispatched.
+- ⌗ *The two `_CTRL_MOVING` sites in `S23` and `S24` are classified `ABOUT` and left exactly as they
+  stand — a control string naming the shape is the subject of a gate, not an instance of it.*
+
+### ⑩ AND ONE RULE WORTH RATIFYING
+
+> **A gate's population must be bounded by a commit, never by a ref — and where a restraint and its
+> own non-vacuity control are read off one population, the non-vacuity belongs at the frame.**
+
+*`S23` has the first half already, as a property, checked as one spelling. The second half is what
+this revision cost.*
