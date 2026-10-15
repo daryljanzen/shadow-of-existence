@@ -344,13 +344,32 @@ def main():
 
     r23 = run(s23)
     print(f'      S23 exits {r23.returncode}')
-    check(f'Ⓑ⑥ and `S23` RUNS GREEN (exit `{r23.returncode}`) with nothing repaired in it: both its '
-          f'red gates read `P03`, so they cleared when `P03` did -- asserted by running it rather '
-          f'than by citing it',
+    #: ⛔⛭⛭⛭ r7374: ** A FOURTH CLAUSE OF THE SAME SHAPE, AND THE NOTE RECORDING THE CENSUS SAYS
+    #: "THREE". **  *`r7368` found three clauses here reading the LIVE state of something this revision
+    #: measured at a pin, and repaired all three -- and this one, four lines of code away, read a diff
+    #: whose base was pinned and whose head was `HEAD`.  `r7370` then touched `S23` to pin its commit
+    #: tuple, and the clause went red for a later revision having done work.*
+    #:   ⇒ ** A range has TWO ends, and a census of that shape inside ONE FILE missed an instance of
+    #:     it. **  *Which is `r7368`'s own `S24` lesson one level up: there the repair and the
+    #:     diagnosis sat in the same gate and only one was applied; here the repair was applied to
+    #:     three gates and not to the fourth beside them.*
+    #:   ⌊ *Repaired the way the other three were: the range is closed at `FRAME` and the LIVE reading
+    #:     is printed beside it and asserted of nothing, per `r7368` ②.  The claim this gate makes is
+    #:     historical -- that `r7364` repaired nothing in `S23` -- so the pinned range is the only one
+    #:     that can state it, and the live figure is what a later revision is entitled to change.*
+    _s23_at_frame = [f for f in git('diff', '--name-only', f'{REG}~1..{FRAME}').split()
+                     if f.endswith(os.path.basename(s23))]
+    _s23_live = [f for f in git('diff', '--name-only', f'{REG}~1..HEAD').split()
+                 if f.endswith(os.path.basename(s23))]
+    print(f'      S23 touched in {REG}~1..{FRAME}: {_s23_at_frame};  live to HEAD: {_s23_live} '
+          f'-- REPORTED, asserted of nothing')
+    check(f'Ⓑ⑥ and `S23` RUNS GREEN (exit `{r23.returncode}`) with nothing repaired in it BY THIS '
+          f'REVISION: both its red gates read `P03`, so they cleared when `P03` did -- asserted by '
+          f'running it rather than by citing it, and read over the range this revision closed at '
+          f'`{FRAME}` rather than to a live `HEAD` a later revision moves ({len(_s23_live)} live)',
           r23.returncode == 0
           and os.path.relpath(s23, '').startswith('receipts/')
-          and not any(f.endswith(os.path.basename(s23))
-                      for f in git('diff', '--name-only', f'{REG}~1..HEAD').split()))
+          and not _s23_at_frame)
 
     # ── and the two CI found that this seat's own census had missed ────────────────────────────────
     #   ⛔ Both are the SAME class as S19's and both are this seat's: a figure a revision measured,

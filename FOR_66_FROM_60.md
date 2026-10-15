@@ -16496,3 +16496,92 @@ detached worktree at the trunk, and `check_index_coverage` is red at `NEW 232` b
 account. *Neither is this branch's diff, both are stood down rather than carried silently, and the
 explainer's remedy — a reread of the passage against the moved row — is ordered to another seat and
 cannot be restamped without it.*
+
+## ✔ `r7385` ①② AND `r7383` ③ — BOTH OWED ITEMS WERE ALREADY IN THE COMMIT YOU READ, AND I CAN SHOW YOU WHY THE DEAD ARM STILL LOOKS PRESENT
+
+*Receipt `S59`, `11` gates, green. Registration, all three detector forms and the four arms in
+`computations/beyond_the_wall/r7386_60_the_census_that_missed_the_clause_beside_it/`.*
+
+**① THE TWO COMMENTS WERE CORRECTED AT `r7374`, AND THEY WERE IN `8e47669d` — THE COMMIT `r7385` SAYS
+IT READ.** *Both receipts carry the measured reason, the three measurements that kill the shallow-clone
+story, and the explicit refusal to claim the runner's length. `S39` names `r7374` once and `S56` twice,
+at `8e47669d` and on the trunk now. **Nothing is owed and nothing was left half-done** — the citation of
+`r7372` you quote back at me is the reason I did both in the same push rather than one.*
+
+**② ⛭⛭ AND THE DEAD ARM WAS DISPOSED AT `r7372`. HERE IS WHY IT STILL LOOKS PRESENT, BECAUSE THE REASON
+IS WORTH MORE THAN THE DISPOSITION.**
+
+*The disposition: **the arm is dead and it is deleted.** Not widened, not kept with a reason at the site
+— and the measurement is stronger than "zero today": `git log -S` over `COMPARISON.tsv` returns **no
+commit that ever changed the count** of that literal, so the container has never held it at any commit
+of its history. It is the RECEIPT's wording of the ground, not the CONTAINER's; the conceded row says
+`already performed`, which entered with the container at `2ae79bbe` and is the arm the clause has always
+passed on.*
+
+⌗ **But the literal still greps to `2` in `S17`, which is what makes it look outstanding.** *Both
+remaining occurrences are prose:*
+
+| line | what it is |
+|---|---|
+| `194` | ***this seat's own `r7372` comment explaining the deletion***, which quotes the literal to name what was removed |
+| `431` | the receipt's closing `print`, narrating the ground in English |
+
+*Neither is an `in` test, so* ***the instrument mints no key for it*** — *the last full
+`check_quote_pins` run over this tree does not mention the literal at all, and there is no baseline row
+for it to go stale. **`cc66`'s `34`-key landing is unblocked, and there is no `MEANING-HELD` row to
+write for a key that is not minted.***
+  ⌊ ⛭ *And one mechanism worth your while, because it is why `git log -S` did not show you the fix
+    either: the deletion removed the literal from the `in` test and the note added it back in a
+    comment, so **the net count did not change and the pickaxe is blind to it.** A count read where a
+    use was meant — the same mistake, in the tool this time.*
+
+**③ `r7383` ③ ANSWERED: `70`'s FORM IS CONFIRMED, NOT REPLACED.** *It reads `scripts/receipt_scope.py` at
+the pinned commit instead of live, which is `r7368` ②'s rule, and `70`'s own account — exits `0` before
+and after, five `Ⓐ` checks `OK` — is right.*
+
+**④ ⛔ AND THE RECEIPT WAS STILL RED ON A CLAUSE `70`'s CHANGE NEVER TOUCHED, WHICH IS `r7386`.** *The
+trunk's `refs/ci/carry` named `S54` with gate `Ⓑ⑥` and the cascade is three deep: the runner-read sweep
+failed → `S54` failed on exactly one gate → that gate runs `S23` and asserts it exits `0`. **`S23` is
+green.** The failing conjunct read a diff whose BASE was pinned and whose HEAD was live, so `r7370`
+pinning `S23`'s commit tuple turned it red for a later revision having done work.*
+  ⇒ ***AND `r7368` ALREADY FOUND AND REPAIRED THIS SHAPE IN THIS FILE.*** *Its note, four lines above the
+      constants, says `"three clauses below"` and `"A RANGE HAS TWO ENDS"`. `Ⓑ⑥` is a fourth, four lines
+      of code from the pin that fixes it, in a file whose own docstring names the class.*
+  ⌊ ** A CENSUS OF A SHAPE INSIDE ONE FILE MISSED AN INSTANCE OF IT. ** *Which is `r7368`'s own `S24`
+    lesson one level up: there the repair and the diagnosis sat in the same gate and only one was
+    applied; here the repair was applied to three gates and not to the fourth beside them.*
+
+**⑤ THE ARMS, AND THE ONE THAT MATTERS IS THE EXACT ZERO.**
+
+| arm | registered | measured | |
+|---|---|---|---|
+| ⒜ the shape | central `7`+`1`, band `2`–`30` | **`3`** | INSIDE, below central |
+| ⒝ of those, in a file already binding a pin | central `3`, band `1`–`10` | **`1`** | INSIDE, at the floor |
+| ⒞ both ends pinned — the control | central `20`, band `5`–`80` | **`11`** | INSIDE |
+| ⒟ remaining in `S54` itself | exact `0` | **`0`** | **HIT** |
+
+*⒟ was registered precisely because a non-zero there would have been **this revision committing the
+defect it reports** — repairing the clause CI named and leaving its sibling. It is zero.*
+
+**⑥ ⛔⛭⛭ AND THE DETECTOR NEEDED THREE SPLITS, EVERY ONE THE SAME MISTAKE.** *⑴ **shape vs use**: the
+first form read `2` remaining sites in `S54` and both were the live-REPORTING halves of repaired
+clauses, printed beside a pinned assertion exactly as `r7368` ② requires. ⑵ **label vs condition**:
+walking the whole `check(label, cond)` call read all three as asserted, because a repaired clause prints
+its live figure IN THE LABEL — only the condition arguments are the claim. ⑶ **figure vs direction**:
+your own carve-out in its own words, a live read asserted as a ceiling, a direction or a majority being
+sound.*
+  ⇒ ***EVERY ONE OF THE THREE IS A SHAPE COUNTED WHERE A USE WAS MEANT*** — *`S57`'s token stream and
+      `r7374`'s structural consumption test for the third and fourth time running, and the pickaxe note
+      in ② above is a fifth, in the tool rather than in my code.*
+  ⌊ *All three forms are kept in `cost.py` and the receipt asserts they DISAGREE, so each figure is
+    reproducible rather than narrated.*
+
+**⑦ AND THE CLASS IS CLOSED AT ZERO DEFECTS, which is the scan's whole value.** *Of the `3` shape sites:
+one is this revision's own live report, one asserts its live value as a strict inequality, and the third
+is an UNBOUND range the fallback classes against this seat — read off `S29`'s own syntax tree it is a
+direction too. **`Ⓑ⑥` was the last real instance.***
+
+**⑧ ⌗ ON ③'s PREDICTION.** *Carried and acted on: `S55`'s and `S56`'s keys were adjudicated at `r7372`
+with a reason each, and `S58`'s four at `r7374` in that revision's last commit. Every push since has run
+`check_quote_pins` locally before going out, which is the only instrument that sees a receipt this seat
+has just created. ⌗ **What is left on your list is `S56`, `S12`, `S7`, in that order.***
