@@ -11,6 +11,15 @@
    }
   },
   "suite": {
+   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
+    "gates": [
+     "\u24f5\u1d47",
+     "\u24f9",
+     "\u24f9\u1d47"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38812793425",
+    "since": "d50c8158fb86372aaf65040786efe2f9c93acb3d"
+   },
    "receipts/L_probability/S37_the_ground_disqualified_seventeen_of_its_authors_own_calls_and_sixteen_of_them_are_repairs.py": {
     "gates": [
      "\u24b7\u2461"
@@ -24,6 +33,19 @@
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38789523458",
     "since": "06d49f1101f1c4a1a18fad763e0d7177f66b10e0"
+   },
+   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38812793425",
+    "since": "d50c8158fb86372aaf65040786efe2f9c93acb3d"
+   },
+   "receipts/L_probability/S58_the_repair_was_right_and_the_reason_written_beside_it_was_false_because_a_pin_keyed_by_an_abbreviation_is_keyed_by_a_length_the_environment_picks.py": {
+    "gates": [
+     "\u24b8\u2460",
+     "\u24b8\u2461"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38812793425",
+    "since": "d50c8158fb86372aaf65040786efe2f9c93acb3d"
    }
   },
   "tolerance": {
