@@ -16913,3 +16913,55 @@ written, the two arms fail together exactly when the corpus changes AND improves
 ⌗ *One comment is on `#435` with the same content and the carry evidence. I spent no re-run: both failures
 are deterministic and were established by a local run of the gate itself plus the ledger's record on
 `main`, which is stronger than a repeat.*
+
+### `r7345` ⒞ — ⛔ THE ONE TEST IS SCORED AND THE RULE FAILS: `0` GENUINE FORGONE ON HELD-OUT `B`, BUT `7` NON-PINS KEPT. ⇒ THE HOP IS ABANDONED PER YOUR ⒞. ⛭ AND THE FAILURE IS SYMMETRIC, WHICH REFUTES THE FITTING DIAGNOSIS THE TEST WAS BUILT AROUND
+
+**LANDED** the declaration frozen before the score (`5d45a20e0`) and the score itself
+(`r7345_cc66_the_one_test/`, with `score.py` reproducing every number from those two commits alone).
+**REMAINING** the `22`-row stride, which your ⑧ says the phase needs more than the hop.
+
+**① THE SCORE.**
+
+| half | keys | rule excludes | genuine forgone | non-pins kept |
+|---|---|---|---|---|
+| `A` declaration | `58` | `15` | **`0`** | `6` |
+| **`B` held out** | **`59`** | **`9`** | **`0`** | ⛔ **`7`** |
+
+*Your ⒟, both halves required: **zero genuine forgone — ✔ PASSES on both**; every imprecise key named and
+excluded — ⛔ **FAILS, `7` kept in `B`**.* ⇒ ⛔ ***So, in your words: "the hop is abandoned with its
+measurement." IT IS. I am not arguing with the ruling after the fact.***
+
+**② ⛭ AND THE FAILURE IS SYMMETRIC — `6` of `58` against `7` of `59`, `10.3 %` against `11.9 %`.** *A rule
+fitted to `A`'s residue scores well on `A` and badly on `B`. This one scores the same on both.*
+
+⇒ ⛭ ***So what defeats the container rule is NOT the fitting I diagnosed at `r7343` and you ratified at
+`r7345` ①. The four narrowings WERE fits and stopping them was right — but fitting is not what was failing
+here.*** **This rule, declared once and never tuned, fails by UNDER-COVERAGE at the same rate on the data
+it was written from and the data it never saw.** *That is a correction to my own diagnosis, delivered by
+the test you ordered to check it, which is the best thing the test could have done.*
+
+**③ ONE CAUSE, COUNTED.** *Of the `13` non-pins kept over both halves, **`11` have an EMPTY narrow kind
+set** — the trace names no file at all — and **every exclusion in the declaration is gated on kinds**, so
+no container rule can reach them.* Only `2` are residuals a container rule could in principle reach —
+`C1`'s filename (container is an `INDEX.md` row) and `S3`'s ledger **key-column** path — **and both were
+already named in `READING.md` ③ before this test existed.** ⌗ *And the empty-kind class is enriched in what
+needs excluding: `11` of its `28` are non-pins, `39 %`, against `32 %` for the whole population.*
+
+**④ ⛭⛭ THE STATED LIMIT YOUR ⒞ ASKED FOR — AND IT IS `13` KEYS, NOT `118`.**
+
+- *The hop makes `117` keys visible on the frozen population (`121` on the merged tree): **`80` genuine
+  pins, `37` not**.*
+- *The declared rule excludes `24` of the `37` and **forgoes `0` genuine pins — on both halves**. **That is
+  the result worth keeping: a container rule CAN be stated that takes no real pin with it.***
+- *It leaves `93` keys: `80` genuine and `13` not, and **`11` of the `13` have no container to test**, so
+  they are not a tuning problem and no fifth narrowing could reach them.*
+
+⇒ ***THE LIMIT: `80` genuine pins stay invisible to the ratchet, and the price of making them visible is
+`13` keys no stated container rule excludes, `11` of them because the instrument's own trace names nothing
+to test.*** **That is what four revisions produce, and it is now a trade you can decide in one line instead
+of a fifth measurement.**
+
+⌗ *Excluded from every number above, as the declaration said in advance: the `4` keys the merged tree mints
+beyond the `117`, three of them in `60`'s new `S48`. Their labels would have been written after the rule.*
+
+⇒ **Going to the `22`-row stride now, per your ⑧.**
