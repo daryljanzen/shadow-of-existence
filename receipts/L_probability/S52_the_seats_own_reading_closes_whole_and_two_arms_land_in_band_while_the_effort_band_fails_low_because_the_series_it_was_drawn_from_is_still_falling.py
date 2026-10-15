@@ -222,11 +222,34 @@ def main():
           max(_u.values()) == R['A_MAX'] == 42)
 
     # ── Ⓒ arm ⒝, the invisible share, computed under the repairs' own normalisation ───────────────
-    _minted = {}
-    for ln in open(os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv'), encoding='utf-8'):
-        p = ln.rstrip('\n').split('\t')
-        if len(p) >= 7 and not ln.startswith('#') and p[6].startswith('r7360+60'):
-            _minted.setdefault(p[0], []).append(json.loads(p[1]))
+    # ⛔⛭⛭⛭ r7364+60: AND THE COUNT OF KEYS **THIS REVISION ITSELF MINTS** WAS READ LIVE, SO THIS
+    #   REVISION'S OWN NEXT COMMIT BROKE IT.  *`Ⓒ③` asserted `24` rows in `12` receipts stamped
+    #   `r7360+60`.  The stamp set stood at `24`/`12` at `62cb1dc6`, where the figure was taken, and
+    #   at `25`/`13` from `8ddce199` -- **the same revision's next push, which repaired two more
+    #   gates and minted one more key.**  Not a later seat and not a later revision: two commits on.*
+    #   ⇒ *** The pinned frame carries the figure and the live set is REPORTED.  The live clause is
+    #     the one thing a correct later push cannot break: no retired row has LOST its carrier, so
+    #     `carried` is asserted MONOTONE UPWARD rather than the stamp count being asserted at all. ***
+    #   ⌗ *A stamp count cannot be asserted live in either direction: it grows while the revision is
+    #     still pushing and falls if a later seat re-adjudicates one of its rows -- and neither of
+    #     those is a defect in what this gate claims, which is about the NORMALISATION.*
+    MINT_PIN = '62cb1dc6'          # the commit the 24/12 figure was taken at
+
+    def _minted_at(sha=None):
+        out = {}
+        if sha is None:
+            lines = open(os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv'),
+                         encoding='utf-8').read().split('\n')
+        else:
+            lines = git('show', f'{sha}:corpus/quote_pin_baseline.tsv').split('\n')
+        for ln in lines:
+            p = ln.rstrip('\r').split('\t')
+            if len(p) >= 7 and not ln.startswith('#') and p[6].startswith('r7360+60'):
+                out.setdefault(p[0], []).append(json.loads(p[1]))
+        return out
+
+    _minted = _minted_at(MINT_PIN)
+    _minted_live = _minted_at()
     _nocarry = [r for r in _ed
                 if not any(_same(json.loads(r[1])) in _same(s) for s in _minted.get(r[0], []))]
     #: ⛔ the DEAD arm: a regex that matches nothing on any tree, so it pinned nothing to begin with
@@ -244,10 +267,26 @@ def main():
     check('Ⓒ② ⛭ INSIDE THE BAND and ON the central -- the second arm of this revision to land '
           'inside, and the first time this seat has had two in one revision',
           S['b'][2] is True and abs(len(_inv) / len(_ed) - C.B_CENTRAL) < 0.001)
+    _carry_pin = [r for r in _ed
+                  if any(_same(json.loads(r[1])) in _same(s) for s in _minted.get(r[0], []))]
+    _carry_live = [r for r in _ed
+                   if any(_same(json.loads(r[1])) in _same(s)
+                          for s in _minted_live.get(r[0], []))]
+    print(f'      keys stamped r7360+60: {sum(len(v) for v in _minted.values())} in '
+          f'{len(_minted)} receipt(s) at {MINT_PIN}, where the figure was taken;  LIVE '
+          f'{sum(len(v) for v in _minted_live.values())} in {len(_minted_live)} -- this revision\'s '
+          f'own next push minted one more, and the live set is REPORTED, not asserted')
+    print(f'      retired rows whose claim is CARRIED by a minted key: {len(_carry_pin)} at the pin, '
+          f'{len(_carry_live)} live')
     check(f'Ⓒ③ and the count is taken under the SAME normalisation the repairs applied, so a span '
           f'merely NORMALISED counts as carried: {sum(len(v) for v in _minted.values())} keys '
-          f'minted in {len(_minted)} of the {len(_rcs)} receipts, against {len(_ed)} retired',
-          sum(len(v) for v in _minted.values()) == R['B_MINTED'] == 24 and len(_minted) == 12)
+          f'minted in {len(_minted)} of the {len(_rcs)} receipts, against {len(_ed)} retired.  '
+          f'⛭ r7364: *read AT `{MINT_PIN}`, the commit the figure was taken at, because a count of '
+          f'keys THIS revision mints cannot be read live -- its own next push minted a twenty-fifth. '
+          f'The live clause is instead that no retired row has LOST its carrier*',
+          sum(len(v) for v in _minted.values()) == R['B_MINTED'] == 24 and len(_minted) == 12
+          # LIVE, and monotone in the only direction correct later work can move it
+          and len(_carry_live) >= len(_carry_pin) > 0)
     check(f'Ⓒ④ ⛔ AND THE NINTH DEFECT KIND: {len(_dead)} retired arm was a REGEX that matches '
           f'nothing on any tree -- it looks for \\delta{{2}} where the paper writes \\delta^{{2}} -- '
           f'so it is DEAD BY CONSTRUCTION and is excluded rather than counted: a row that pinned '
