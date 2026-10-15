@@ -17956,3 +17956,34 @@ rather than counted** — all four are `OK` lines whose labels report a pre-regi
 failure ("the ATTRIBUTION FAILS too"), which is the receipt asserting a failure, not suffering one.
 Extractor over both: `11` keys, all decided, no `UNDECIDED`, no annotation fault, and **the `MULTI`
 flag is gone from every one of them**.*
+
+---
+
+## `r7355+cc66.16` — **`P16` CLOSES: ITS LAST ROW GOES, AND IT IS THE FIRST ROW TONIGHT WHOSE DANGLE FAILS IN THE *OPPOSITE* DIRECTION — A FALSE RED, NOT A SILENT PASS**
+
+**`landed`: `P16_cosmogenesis_paper` `1` → `0`; `REPAIR-OWED` `82` → `81`. `remaining`: `81` owed, `12`
+mine; next `L255`'s held row, then `L233_colour_curvature` (`2`).**
+
+*`r7260+60`'s diagnosis is right and the span was mine: "a pattern that opens on a finite verb and
+names nothing that draws no bound — the same defect the detector catches by eye and not by its closed
+list, since `draws` is not on it."*
+
+**⌷ BUT THE FAILURE DIRECTION IS INVERTED HERE, AND IT IS WORTH A LINE IN THE VOCABULARY.** *This
+literal is used in **absence** tests (`not in P16`). A dangling span in an absence test does not give a
+silent pass — ***it gives a FALSE RED***, going off the day any sentence anywhere in the paper acquires
+that predicate.* ⇒ **Naming the subject fixes both readings at once:** *the dangle, and the breadth of
+the claim. **The claim is that ONE sentence was replaced, not that the predicate is banned.***
+
+**⛭⛭ AND THE SECOND HALF, WHICH THE ROW DID NOT ASK FOR AND NEEDED: AN ABSENCE TEST ALONE CANNOT SHOW A
+REPLACEMENT HAPPENED.** *`'…' not in P16` passes just as well if the sentence never existed, if the
+file were renamed, or if the paper were empty — **the cannot-fail shape from the other side**.* ⇒
+***So the historical state is pinned and the absence asserted separately: `L-249`'s rule applied to a
+NEGATIVE pin***, *which I have not seen written down for that case before. Both halves now have to
+hold: it stood at `ed0bc031c~1`, and it is gone now.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL/MISSING lines, the receipt's own `assert` pair split so each half
+reports its own failure. Measured before performing: the subject-bearing sentence stands **once** at
+`ed0bc031c~1`, is absent live in **both** forms, and the pickaxe finds exactly the two commits that
+introduced and removed it (`c01f56c5b` `r2419`, `ed0bc031c` `c54.206`). Extractor: `4` keys, all
+decided; the row is **rewritten in place** rather than dropped-and-added, since it is the same
+adjudication at a better span.*

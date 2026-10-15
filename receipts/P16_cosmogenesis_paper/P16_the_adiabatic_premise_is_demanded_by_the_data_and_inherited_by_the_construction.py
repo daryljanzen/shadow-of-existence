@@ -85,6 +85,7 @@ LEVEL: NO RATE -- this receipt uses no expansion rate at all, so no level applie
 """
 import os
 import re
+import subprocess
 import sys
 
 import numpy as np
@@ -172,6 +173,28 @@ print("=" * 78)
 print("PART 3 — AND THE DISARMING MOVE WAS ALREADY IN P16, VERBATIM")
 print("=" * 78)
 P16 = open(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'), encoding='utf-8').read()
+
+# ⬭⬭ r7355+cc66 -- REPAIR of the one owed row, `draws no bound from it in either direction`.
+#   r7260+60: *** "a pattern that opens on a finite verb and names nothing that draws no bound: the
+#   same defect the detector catches by eye and not by its closed list, since `draws` is not on
+#   it." ***  The diagnosis is right and the span is this seat's.
+#   ⌷ AND THE FAILURE DIRECTION IS THE OPPOSITE OF THE USUAL ONE, which is why it is worth a note:
+#     *this literal is used in ABSENCE tests (`not in P16`), so a dangling span does not produce a
+#     silent pass -- it produces a FALSE RED, going off if ANY sentence anywhere in the paper
+#     acquires that predicate.*  ⇒ ** Naming the subject fixes both readings at once: the dangle,
+#     and the breadth of the absence claim.  The claim is that ONE sentence was replaced, not that
+#     the predicate is banned. **
+#   ⛭⛭ AND AN ABSENCE TEST ALONE CANNOT SHOW A REPLACEMENT HAPPENED.  `'...' not in P16` passes
+#     just as well if the sentence never existed, if the file were renamed, or if the paper were
+#     empty -- the cannot-fail shape from the other side.  *** So the historical state is PINNED
+#     and the absence asserted separately, which is `L-249`'s rule applied to a negative pin. ***
+#   ⌗ Measured before performing: the subject-bearing sentence stands ONCE at `ed0bc031c~1`, is
+#     ABSENT live in both forms, and the pickaxe finds exactly the two commits that introduced and
+#     removed it (`c01f56c5b` r2419, `ed0bc031c` c54.206).
+_REPLACED = 'this paper draws no bound from it in either direction'
+_P16_WAS = subprocess.run(
+    ['git', 'show', 'ed0bc031c~1:corpus/cosmogenesis_paper.tex'], cwd=ROOT,
+    capture_output=True, text=True, errors='replace').stdout
 CHECKS = [
     ("P16 already says the progenitor carries a nearly scale-invariant ADIABATIC spectrum",
      r'nearly scale-invariant adiabatic spectrum processed by ordinary structure formation'),
@@ -186,7 +209,10 @@ CHECKS = [
 ]
 for what, pat in CHECKS:
     if pat is None:
-        ok = 'draws no bound from it in either direction' not in P16
+        # ⬭ r7355+cc66: the subject is named, and the REPLACEMENT is asserted -- it stood at
+        #   the parent of the commit that removed it, and it is gone now.  Either half alone is
+        #   satisfiable without a replacement having happened.
+        ok = _REPLACED in _P16_WAS and _REPLACED not in P16
     else:
         ok = re.search(pat, P16, re.I | re.S) is not None
     print(f"  {'OK ' if ok else 'MISSING'}  {what}")
@@ -226,7 +252,8 @@ assert 280 <= _l1i <= 310, f"the isocurvature peak is {_l1i}, outside the reprod
 assert _d > 1e5, f"Delta chi^2 is only {_d:.3g}"
 assert RES['adiabatic']['chi2'] / RES['adiabatic']['nbin'] < 1.2, "the adiabatic arm does not fit"
 assert _amp_fit, "no closed-form amplitude fit in the instrument"
-assert 'draws no bound from it in either direction' not in P16, "the replaced sentence is still there"
+assert _REPLACED in _P16_WAS, "the sentence said to have been replaced never stood at the pin"
+assert _REPLACED not in P16, "the replaced sentence is still there"
 assert re.search(r'nearly scale-invariant adiabatic spectrum processed by ordinary structure formation',
                  P16), "P16 no longer carries the inherit-not-seed sentence"
 print(f"GATE c54.206 (r2552), `L-528`: adiabatic ell_1 = {_l1a} and isocurvature ell_1 = {_l1i} on one "
