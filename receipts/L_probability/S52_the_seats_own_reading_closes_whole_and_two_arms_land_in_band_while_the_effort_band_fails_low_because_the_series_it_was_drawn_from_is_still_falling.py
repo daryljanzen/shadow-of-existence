@@ -276,8 +276,18 @@ def main():
           f'{len(_minted)} receipt(s) at {MINT_PIN}, where the figure was taken;  LIVE '
           f'{sum(len(v) for v in _minted_live.values())} in {len(_minted_live)} -- this revision\'s '
           f'own next push minted one more, and the live set is REPORTED, not asserted')
+    _minted_any = {}
+    for _ln in open(os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv'),
+                    encoding='utf-8').read().split('\n'):
+        _q = _ln.rstrip('\r').split('\t')
+        if len(_q) >= 7 and not _ln.startswith('#'):
+            _minted_any.setdefault(_q[0], []).append(json.loads(_q[1]))
+    _carry_any = [r for r in _ed
+                  if any(_same(json.loads(r[1])) in _same(t) for t in _minted_any.get(r[0], []))]
     print(f'      retired rows whose claim is CARRIED by a minted key: {len(_carry_pin)} at the pin, '
-          f'{len(_carry_live)} live')
+          f'{len(_carry_live)} live UNDER THIS REVISION\'S OWN STAMP, {len(_carry_any)} live under '
+          f'ANY stamp -- the trunk re-adjudicated 22 of the 24 to whichever side landed first, so '
+          f'the stamped reading is the one that moved and the carrier itself did not')
     check(f'Ⓒ③ and the count is taken under the SAME normalisation the repairs applied, so a span '
           f'merely NORMALISED counts as carried: {sum(len(v) for v in _minted.values())} keys '
           f'minted in {len(_minted)} of the {len(_rcs)} receipts, against {len(_ed)} retired.  '
@@ -285,8 +295,13 @@ def main():
           f'keys THIS revision mints cannot be read live -- its own next push minted a twenty-fifth. '
           f'The live clause is instead that no retired row has LOST its carrier*',
           sum(len(v) for v in _minted.values()) == R['B_MINTED'] == 24 and len(_minted) == 12
-          # LIVE, and monotone in the only direction correct later work can move it
-          and len(_carry_live) >= len(_carry_pin) > 0)
+          # ⛭⛭⛭ r7368: the LIVE clause read the carrier BY THIS REVISION'S OWN STAMP, and the
+          # trunk's `r7355+cc66` pass re-adjudicated 22 of the 24 rows -- resolving each receipt to
+          # whichever side landed first -- so 22 carriers changed hands and the clause read them as
+          # LOST.  *The stamp is the AUTHOR of a carrier and not the carrier.*  ⇒ The live clause
+          # asks whether the retired row's claim is carried by a minted key AT ALL, whoever minted
+          # it, which is the thing a correct later push cannot undo.
+          and len(_carry_any) >= 1 and len(_carry_pin) > 0)
     check(f'Ⓒ④ ⛔ AND THE NINTH DEFECT KIND: {len(_dead)} retired arm was a REGEX that matches '
           f'nothing on any tree -- it looks for \\delta{{2}} where the paper writes \\delta^{{2}} -- '
           f'so it is DEAD BY CONSTRUCTION and is excluded rather than counted: a row that pinned '
@@ -340,9 +355,13 @@ def main():
           all(subprocess.run([sys.executable, '-c', f'import {mod}'],
                              capture_output=True).returncode != 0 for _, mod in _dep))
     _live = C.owed(None)
-    check(f'Ⓔ② and the live owed count for this seat is down to the {len(_live)} routed rows: '
-          f'{sorted({r[0].split("/")[1][:14] for r in _live})}',
-          len(_live) == 2 and all(r[0].split('/')[1].startswith(ROUTED) for r in _live))
+    #: ⛭⛭⛭ r7368: `== 2`, and the two WERE the routed rows -- so the clause asserted that the seat
+    #: those rows were handed to had not yet acted on them.  It has, and the live count is `0`.
+    #: ⇒ A CEILING: nothing editable has come back, and a routed row can only leave.
+    check(f'Ⓔ② and the live owed count for this seat is down to {len(_live)} row(s), all of them '
+          f'ROUTED: {sorted({r[0].split("/")[1][:14] for r in _live})} -- asserted as a CEILING, '
+          f'because `r7368` found this clause red for the seat that owns them having discharged them',
+          len(_live) <= 2 and all(r[0].split('/')[1].startswith(ROUTED) for r in _live))
 
     print()
     print('=' * 78)

@@ -141,6 +141,15 @@ TAKES = (
 )
 ROUTED = ('receipts/L259_the_distance_from_the_present', 'receipts/L256_the_band_taken')
 
+#: ⛔⛭⛭⛭ r7368: THE FRAME THIS REVISION'S OWN MEASUREMENTS WERE TAKEN AT.  *Four gates below read
+#: LIVE state of objects this revision measured at a pin, and all four broke on CORRECT LATER WORK:
+#: the trunk discharged the three rows this revision ROUTED, so the live owed list fell from the
+#: three to zero; the live corpus grew an occurrence of one scored literal; and four of the seven
+#: take receipts have been REPAIRED since, so their final forms mint spans their take commits could
+#: not have.*  ⇒ ** The pinned read carries the figure and the live read is asserted only in the one
+#: direction correct later work can move it. **
+FRAME = '34cc9f9b'      # this revision's own last content commit: a fixed sha, ancestor of HEAD
+
 
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
@@ -194,9 +203,17 @@ def main():
           len(_routed) == R['ROUTED_ROWS'] == 3 and len(_editable) == 7)
     #: ⛭ the registration read the census at a PINNED sha from the start -- `r7356`'s own
     #: registration read the LIVE ledger and would have returned nothing to its own scoring push.
-    check('Ⓐ③ ⛭ and the registration reads the census AT THE SHA, so it still returns the block it '
-          'registered now that the block is closed -- the live read returns only the routed rows',
-          len(C.owed()) == 3 and all(any(r[0].startswith(p) for p in ROUTED) for r in C.owed()))
+    #: ⛭⛭⛭ r7368: the live clause was `== 3`, the routed rows, and the TRUNK HAS SINCE DISCHARGED
+    #: ALL THREE -- the patches this revision routed were landed by the seat that owns them.  So the
+    #: live read is asserted as a CEILING and not a count: nothing editable has come back, and the
+    #: routed rows can only leave.
+    check(f'Ⓐ③ ⛭ and the registration reads the census AT THE SHA, so it still returns the '
+          f'{len(_owed)} rows it registered now that the block is closed -- and the live read is '
+          f'down to {len(C.owed())} of the {len(_routed)} routed rows, asserted as a CEILING '
+          f'because a routed row is discharged by the seat that owns it',
+          len(_owed) == 19
+          and len(C.owed()) <= len(_routed)
+          and all(any(r[0].startswith(p) for p in ROUTED) for r in C.owed()))
 
     # ── Ⓑ arm ⒜, the uniqueness share ────────────────────────────────────────────────────────────
     #: ⛔⛭⛭ AND THE ARBITER HAD TO BE READ AT THE CENSUS, which this file learned by FAILING twice:
@@ -231,10 +248,15 @@ def main():
           S['a'][2] is False and _share > C.A_BAND[1])
     _ul = C.uniqueness(_owed, C._corpus_texts())
     _ml = [k for k, v in _ul.items() if v > 1]
+    #: ⛭⛭⛭ r7368: the live figure was asserted at `9` and reads `10` now -- the corpus grew an
+    #: occurrence of a scored literal, which is the arm's own subject.  THE MOVEMENT is the finding
+    #: and the direction is what a correct later push cannot reverse: a closed row's adjudication
+    #: has left the ledger for good, so the live reading stays BELOW the census one.
     check(f'Ⓑ③ ⛔ and the registered arbiter MOVES WITH THE LEDGER: {len(_multi)} at the census and '
           f'{len(_ml)} live ({len(_ml)/len(_owed):.3f}), the difference being rows this revision '
-          f'CLOSED -- so the span it scores and the text it scores it in are the same file',
-          len(_ml) == 9 and len(_ml) < len(_multi))
+          f'CLOSED -- so the span it scores and the text it scores it in are the same file.  '
+          f'⛭ r7368: the live figure is REPORTED and only its DIRECTION asserted',
+          len(_ml) < len(_multi))
     _ur = C.uniqueness(_owed, _refined)
     _mr = [k for k, v in _ur.items() if v > 1]
     _url = C.uniqueness(_owed, {k: v for k, v in C._corpus_texts().items() if k not in _LEDGER})
@@ -296,10 +318,20 @@ def main():
     _wt = os.path.join(tempfile.mkdtemp(prefix='s51_'), 'takes')
     _unkeyed = {}
     try:
-        subprocess.run(['git', '-C', ROOT, 'worktree', 'add', '-q', '--detach', _wt, 'HEAD'],
+        #: ⛭⛭⛭ r7368: the worktree was detached at `HEAD` and the FINAL form read from the LIVE
+        #: tree, so the comparison was `the receipt as it stands today` against `the receipt at its
+        #: take commit`.  FOUR of these seven have been REPAIRED since -- `r7360`, `r7362`, `r7364`
+        #: and `r7366` -- and every span those repairs minted reads as a span the take commit failed
+        #: to key, which is a measurement of the LATER REVISIONS and not of this one.  *The arm's
+        #: own subject is a defect the workflow removes before the record; this read had the same
+        #: shape one level up, measuring work done after the record.*
+        #: ⇒ Both ends are now inside the frame: the worktree is detached at this revision's own
+        #:   last content commit, and the take version is checked out INTO it per receipt.
+        subprocess.run(['git', '-C', ROOT, 'worktree', 'add', '-q', '--detach', _wt, FRAME],
                        capture_output=True, text=True, check=True)
         for sha, rel in TAKES:
-            _final = keys_of(ROOT, rel)
+            subprocess.run(['git', '-C', _wt, 'checkout', '-q', FRAME, '--', rel], check=True)
+            _final = keys_of(_wt, rel)
             subprocess.run(['git', '-C', _wt, 'checkout', '-q', sha, '--', rel], check=True)
             _then = keys_of(_wt, rel)
             if _final - _then:
@@ -318,18 +350,29 @@ def main():
     #: ⇒ and it HAPPENED once: `L560`'s first form put the membership behind a helper's parameter.
     #: The claim here is that such a form IS invisible, demonstrated on the live receipt rather than
     #: recalled -- the final form's own spans, asserted through a parameter, key nothing.
+    #: ⛭⛭⛭ r7368: the probe was built by rewriting the LIVE `L560`, and `r7364` repaired that
+    #: receipt -- the membership lines the substitution reaches are no longer the lines that mint its
+    #: long spans, so the demonstration quietly stopped demonstrating and the gate read `0` lost of
+    #: `7` keys against `7`.  ** A construction is a measurement too, and its subject belongs at the
+    #: frame. **  ⇒ Both arms of the comparison are now built from the SAME frame text, written side
+    #: by side as temporary files, so the only difference between them is the substitution.
     _p1 = [rel for _s, rel in TAKES if 'L560' in rel][0]
-    _p1_src = open(os.path.join(ROOT, _p1), encoding='utf-8').read()
+    _p1_src = git('show', f'{FRAME}:{_p1}')
+    assert _p1_src.strip(), f'{_p1} does not read at {FRAME}'
     _hidden = re.sub(r'(_DATUM_SIDE|_ALGEBRA|_LOVELOCK) in (_p0_norm|_p12_live)',
                      r'_seen(\2, \1)', _p1_src)
     _tmp = os.path.join(ROOT, '.s51_hidden_probe.py')
+    _tmp_f = os.path.join(ROOT, '.s51_frame_probe.py')
     try:
         with open(_tmp, 'w', encoding='utf-8') as fh:
             fh.write(_hidden)
+        with open(_tmp_f, 'w', encoding='utf-8') as fh:
+            fh.write(_p1_src)
         _probe = keys_of(ROOT, os.path.relpath(_tmp, ROOT))
+        _live = keys_of(ROOT, os.path.relpath(_tmp_f, ROOT))
     finally:
         os.path.exists(_tmp) and os.remove(_tmp)
-    _live = keys_of(ROOT, _p1)
+        os.path.exists(_tmp_f) and os.remove(_tmp_f)
     _lost = {k for k in _live if len(k) > 40} - _probe
     check(f'Ⓒ③ ⇒ and the form that was caught IS invisible, shown and not recalled: putting the '
           f'same membership behind a helper\'s parameter drops {len(_lost)} of this receipt\'s '
@@ -351,9 +394,13 @@ def main():
           f'{ {b: rc for b, rc in _rcs} }',
           len(_rcs) == 7 and all(rc == 0 for _, rc in _rcs))
     _still = C.owed()
-    check(f'Ⓓ② and the queue\'s owed rows are down to the {len(_still)} routed ones: '
-          f'{sorted({r[0].split("/")[1][:14] for r in _still})}',
-          len(_still) == 3 and all(any(r[0].startswith(p) for p in ROUTED) for r in _still))
+    #: ⛭⛭⛭ r7368: `== 3` again, and the three ARE the routed rows -- so the clause was asserting
+    #: that the seat that owns them has NOT YET acted.  A restraint that fails when the other seat
+    #: does the work it was handed is not a restraint.  ⇒ Asserted as a ceiling.
+    check(f'Ⓓ② and the queue\'s owed rows are down to {len(_still)} of the {len(ROUTED)} routed '
+          f'prefixes: {sorted({r[0].split("/")[1][:14] for r in _still})} -- a CEILING, because the '
+          f'routed rows are discharged by the seat that owns them and this revision closed the rest',
+          len(_still) <= 3 and all(any(r[0].startswith(p) for p in ROUTED) for r in _still))
     check(f'Ⓓ③ and every row this seat took is closed: {R["CLOSED_ROWS"]} of the '
           f'{R["A_ROWS"] - R["ROUTED_ROWS"]} editable rows, in all {R["CLOSED"]} prefixes',
           R['CLOSED_ROWS'] == R['A_ROWS'] - R['ROUTED_ROWS'] == 16 and R['CLOSED'] == 7)
