@@ -124,7 +124,7 @@ def main():
           'is a threshold: the first replacement asserted `> 10x` against a measured 8.75.*',
           r_new > r_old)
     check('⓶ᶜ and `B1` now asserts the inequality and not the multiple',
-          'directional claim' in now.lower() or 'DIRECTIONAL and unfitted' in now)
+          'DIRECTIONAL and unfitted' in now)   # r7349+70: the dead 'directional claim' arm deleted
 
     print()
     print('  ' + '=' * 74)
