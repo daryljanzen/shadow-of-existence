@@ -154,9 +154,36 @@ def main():
     _tex_then = re.sub(r'\s+', ' ', subprocess.run(
         ['git', 'show', '48e55a6b^:corpus/CR_cosmology.tex'],
         cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
-    check('THE CORPUS SUPPORTS THE ROUTE: the onset matter is pressureless and the pre-onset problem '
-          'is "scale-free" and "imprints nothing" -- exactly the residue this derivation closes',
-          'pressureless' in tex and 'scale-free' in tex and 'imprints nothing' in tex)
+    # ⬭⬭ r7355+cc66, REPAIR of the THREE-TOKEN CO-OCCURRENCE r7291+69 named: *** "the check
+    #   claims P15 says the onset matter is pressureless and the pre-onset problem is scale-free
+    #   and imprints nothing, and it asserts only that three tokens each appear SOMEWHERE in P15
+    #   ... no sentence has to join them." ***
+    #   ⌗ AND THE COUNTS MAKE THAT CONCRETE, re-measured here rather than taken from the ground:
+    #     `pressureless` x8, `scale-free` x19, `imprints nothing` **x2**.  *69 recorded the last as
+    #     x1 "at the time of reading"; it has since risen, which is the ground's own point about a
+    #     token tied to no line arriving from the other direction.*
+    #   ⇒ *** P15 MAKES ALL THREE CLAIMS IN ONE SENTENCE, so one span replaces three tokens *** --
+    #     and it is the sentence this receipt's own docstring was already quoting in pieces.
+    #   ⌗ A markup carrier (`\emph{contains no $k$ at all once $w=0$}` sits inside it), so 60's
+    #     r7255 prescription applies: the emphasis comes out of the HAYSTACK, the span stays whole.
+    #     The haystack is also FLATTENED, because the sentence spans source lines -- read raw, the
+    #     span would occur zero times, which is the silent-never-match shape this line keeps
+    #     finding.
+    #   ⌗ The shorter form ending at `imprints nothing` without the pressureless clause stands once
+    #     too, and is DECLINED on floor 1: it drops one of the three claims, and that one is the
+    #     claim the whole derivation rests on (`it is precisely r2701's pressureless pre-onset that
+    #     pins the sign`).
+    _texu = re.sub(r'\\emph\{([^}]*)\}', r'\1', re.sub(r'\s+', ' ', open(
+        os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8',
+        errors='replace').read()))
+    check('THE CORPUS SUPPORTS THE ROUTE, in ONE sentence rather than three loose tokens: "the '
+          'potential equation for a pressureless component ... contains no $k$ at all once $w=0$, '
+          'so on a radiation-free rate the problem is scale-free and a scale-free problem imprints '
+          'nothing" -- exactly the residue this derivation closes',
+          "the potential equation for a pressureless component, $\\Phi''+3\\mathcal{H}(1+w)"
+          "\\Phi'+[2\\mathcal{H}'+(1+3w)\\mathcal{H}^{2}]\\Phi+wk^{2}\\Phi=0$, contains no "
+          '$k$ at all once $w=0$, so on a radiation-free rate the problem is scale-free and a '
+          'scale-free problem imprints nothing' in _texu)
     check('⌗ and the two entries were named by their correlation with the potential well at '
           '48e55a6b^, before r4111 restated the section: "one enters as a compression correlated '
           'with the well and the other as a rarefaction against it".  *Supporting context for a '

@@ -17659,3 +17659,30 @@ stronger assertion.*
 ⌗ **Verification:** *`rc=0`, `0` FAIL lines, both repaired checks printing `OK` by name. Extractor on
 `G1`: `4` keys, all decided, no `UNDECIDED`, no annotation fault — `5` dropped (`4` owed + `1`
 `DELIBERATE`) and `2` added, each number read off the instrument rather than inferred.*
+
+---
+
+## `r7355+cc66.9` — **`L815` CLOSES: `3` → `0` ON ONE SENTENCE, AND A THIRD STALE COUNT IN THE GROUNDS — `imprints nothing` IS `x2`, NOT THE `x1` RECORDED**
+
+**`landed`: `L815_seam_phase_derived` `3` → `0`; `REPAIR-OWED` `101` → `98`. ⌗ **Nine blocks, `137` →
+`98`.** `remaining`: `98` owed; next `L801_nonlinear_shear_freedom` (`3`).**
+
+*`r7291+69` read this as a three-token co-occurrence and it is exactly that: `'pressureless'`,
+`'scale-free'` and `'imprints nothing'` asserted to appear **somewhere** in `P15`, with no sentence
+required to join them.* ⌗ **Counts re-measured rather than taken from the ground: `pressureless` ×`8`,
+`scale-free` ×`19`, `imprints nothing` ×`2`.** *`69` recorded the last as ×`1` "at the time of
+reading", and it has since **risen** — which is the ground's own point about a token tied to no line,
+arriving from the other direction. **Third stale figure in the grounds this revision**, after `L263`'s
+`1`-that-is-`3` and its zero-occurrence prescription.*
+
+⇒ ***`P15` makes all three claims in ONE sentence***, *so one span replaces three tokens — and it is
+the sentence this receipt's own docstring was already quoting in pieces.* ⌗ *Markup carrier
+(`\emph{contains no $k$ at all once $w=0$}` inside), so your `r7255` prescription applies; **and the
+haystack is flattened as well, because the sentence spans source lines — read raw the span would occur
+ZERO times**, the silent-never-match shape this line keeps finding in other people's work and had to
+avoid in its own.*
+
+⌗ *The shorter form ending at `imprints nothing`, without the pressureless clause, stands once too and
+is **declined on floor 1**: it drops one of the three claims, and that one is the claim the whole
+derivation rests on.* ⌗ **Verification:** *`rc=0`, `0` FAIL lines; extractor `3` keys, all decided, no
+annotation fault; `3` dropped, `1` added. The two `DELIBERATE` rows are untouched and still keyed.*
