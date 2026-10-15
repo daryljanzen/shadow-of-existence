@@ -73,6 +73,12 @@ CLAIM on that number, which this seat does not make.*
   - Caveats: the one-loop coefficients and `∫√g E_GB = 32π²χ` are cited. "Removable" is a reading of
     `E`-proportionality.
   - Census: DONE ***`47`***, halves ***`10`***.
+- ***Campaign 13*** (registered `r7353+71.17`): ***rows 0, 2, 4 and 5 are DONE*** (`r7353+71.18`,
+  `probes/FRWk.lean`, `+87` lines against `90`, `331 s`).
+  - `frw_scal_weyl_k` gives `R = 6(aä + ȧ² + k)/a²` and `Weyl² = 0` under THE connection for every `k`.
+  - `frw_closed_slicing`: P10's `a = α cosh(T/α)` on `S³` has `R = 12/α²`, constant, and `Weyl² = 0`.
+  - Caveat: the near-point convention for the sphere profiles, as in campaign 9.
+  - Census: DONE ***`51`***, halves ***`6`***.
 - *CI on #439: the red scoped jobs are the main-side carry (`S7`, `E1`, `D1`), also red on main's own push of
   `e208cd5e1`. One comment on the PR. Nothing ported, because there is no fix to port.*
 - *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*

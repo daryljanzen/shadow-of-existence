@@ -80,19 +80,13 @@ noncomputable def fRk (A A1 A2 s d d2 s2 e e2 : ℝ) : Fin 4 → Fin 4 → Fin 4
 
 omit hk hm hn in
 set_option maxHeartbeats 0 in
-/-- **Row 19, every `k`.** -/
-theorem frw_gb_k {a S₁ S₂ : ℝ → ℝ} (ha : ContDiff ℝ ∞ a) (h1 : ContDiff ℝ ∞ S₁) (h2 : ContDiff ℝ ∞ S₂)
-    (ha0 : ∀ s, a s ≠ 0) (h10 : ∀ s, S₁ s ≠ 0) (h20 : ∀ s, S₂ s ≠ 0) (p : Fin 4 → ℝ) (k : ℝ)
-    (hd : deriv S₁ (p 1) ^ 2 = 4 * S₁ (p 1) * (1 - k * S₁ (p 1))) (hd2 : deriv (deriv S₁) (p 1) = 2 - 4 * k * S₁ (p 1))
-    (he : deriv S₂ (p 2) ^ 2 = 4 * S₂ (p 2) * (1 - S₂ (p 2))) (he2 : deriv (deriv S₂) (p 2) = 2 - 4 * S₂ (p 2)) :
-    let g := fun i => cF a S₁ S₂ i p
-    let Rf := fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cF a S₁ S₂)) (diag4_symm _)
-      (fun p u h => diag4_nondeg (fun i => cF_ne ha0 h10 h20 i p) u h)
-      ((diag4_smooth (cF_smooth ha h1 h2)).differentiable (by simp))))
-      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
-      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p
-    a (p 0) ^ 3 * gbC g Rf = 24 * deriv (deriv a) (p 0) * (deriv a (p 0) ^ 2 + k) := by
-  intro g Rf
+/-- THE table, proved once: `R(eᵢ, eⱼ)eₖ` of the general-`k` FRW metric at `p`, in the point values of `a`,
+`S₁`, `S₂` and their first two derivatives. -/
+lemma frw_tab_k {a S₁ S₂ : ℝ → ℝ} (ha : ContDiff ℝ ∞ a) (h1 : ContDiff ℝ ∞ S₁) (h2 : ContDiff ℝ ∞ S₂)
+    (ha0 : ∀ s, a s ≠ 0) (h10 : ∀ s, S₁ s ≠ 0) (h20 : ∀ s, S₂ s ≠ 0) (p : Fin 4 → ℝ) :
+    ∀ i j k l, curvD (cF a S₁ S₂) p (Pi.single i 1) (Pi.single j 1) (Pi.single k 1) l
+      = fRk (a (p 0)) (deriv a (p 0)) (deriv (deriv a) (p 0)) (S₁ (p 1)) (deriv S₁ (p 1)) (deriv (deriv S₁) (p 1))
+          (S₂ (p 2)) (deriv S₂ (p 2)) (deriv (deriv S₂) (p 2)) i j k l := by
   have d0 : ∀ s, HasDerivAt a (deriv a s) s := fun s => ((ha.differentiable (by simp)) s).hasDerivAt
   have d1 : ∀ s, HasDerivAt (deriv a) (deriv (deriv a) s) s := fun s =>
     (((contDiff_infty_iff_deriv.1 ha).2.differentiable (by simp)) s).hasDerivAt
@@ -148,12 +142,62 @@ theorem frw_gb_k {a S₁ S₂ : ℝ → ℝ} (ha : ContDiff ℝ ∞ a) (h1 : Con
        simp [cF, fRk, Fin.sum_univ_four]
        try field_simp
        try ring)
+  exact hT
+
+omit hk hm hn in
+set_option maxHeartbeats 0 in
+/-- **Row 19, every `k`.** -/
+theorem frw_gb_k {a S₁ S₂ : ℝ → ℝ} (ha : ContDiff ℝ ∞ a) (h1 : ContDiff ℝ ∞ S₁) (h2 : ContDiff ℝ ∞ S₂)
+    (ha0 : ∀ s, a s ≠ 0) (h10 : ∀ s, S₁ s ≠ 0) (h20 : ∀ s, S₂ s ≠ 0) (p : Fin 4 → ℝ) (k : ℝ)
+    (hd : deriv S₁ (p 1) ^ 2 = 4 * S₁ (p 1) * (1 - k * S₁ (p 1))) (hd2 : deriv (deriv S₁) (p 1) = 2 - 4 * k * S₁ (p 1))
+    (he : deriv S₂ (p 2) ^ 2 = 4 * S₂ (p 2) * (1 - S₂ (p 2))) (he2 : deriv (deriv S₂) (p 2) = 2 - 4 * S₂ (p 2)) :
+    let g := fun i => cF a S₁ S₂ i p
+    let Rf := fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cF a S₁ S₂)) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => cF_ne ha0 h10 h20 i p) u h)
+      ((diag4_smooth (cF_smooth ha h1 h2)).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p
+    a (p 0) ^ 3 * gbC g Rf = 24 * deriv (deriv a) (p 0) * (deriv a (p 0) ^ 2 + k) := by
+  intro g Rf
+  have hT := frw_tab_k ha h1 h2 ha0 h10 h20 p
+  have hA := ha0 (p 0); have hS1 := h10 (p 1); have hS2 := h20 (p 2)
   simp only [g, Rf, gbC, riem2C, ric2C, scalC, ricC, curvD_eq (cF_ne ha0 h10 h20) (cF_smooth ha h1 h2), hT]
   simp [Fin.sum_univ_four, fRk, cF]
   rw [hd2, he2]
   field_simp
   simp only [hd, he]
   ring
+
+omit hk hm hn in
+set_option maxHeartbeats 0 in
+/-- **Campaign 13.** Under the same profile conditions, for every `k`: `R = 6(aä + ȧ² + k)/a²` and `Weyl² = 0`. -/
+theorem frw_scal_weyl_k {a S₁ S₂ : ℝ → ℝ} (ha : ContDiff ℝ ∞ a) (h1 : ContDiff ℝ ∞ S₁) (h2 : ContDiff ℝ ∞ S₂)
+    (ha0 : ∀ s, a s ≠ 0) (h10 : ∀ s, S₁ s ≠ 0) (h20 : ∀ s, S₂ s ≠ 0) (p : Fin 4 → ℝ) (k : ℝ)
+    (hd : deriv S₁ (p 1) ^ 2 = 4 * S₁ (p 1) * (1 - k * S₁ (p 1))) (hd2 : deriv (deriv S₁) (p 1) = 2 - 4 * k * S₁ (p 1))
+    (he : deriv S₂ (p 2) ^ 2 = 4 * S₂ (p 2) * (1 - S₂ (p 2))) (he2 : deriv (deriv S₂) (p 2) = 2 - 4 * S₂ (p 2)) :
+    let g := fun i => cF a S₁ S₂ i p
+    let Rf := fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cF a S₁ S₂)) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => cF_ne ha0 h10 h20 i p) u h)
+      ((diag4_smooth (cF_smooth ha h1 h2)).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p
+    scalC g Rf = 6 * (a (p 0) * deriv (deriv a) (p 0) + deriv a (p 0) ^ 2 + k) / a (p 0) ^ 2 ∧ weyl2C g Rf = 0 := by
+  intro g Rf
+  have hT := frw_tab_k ha h1 h2 ha0 h10 h20 p
+  have hA := ha0 (p 0); have hS1 := h10 (p 1); have hS2 := h20 (p 2)
+  constructor
+  · simp only [g, Rf, scalC, ricC, curvD_eq (cF_ne ha0 h10 h20) (cF_smooth ha h1 h2), hT]
+    simp [Fin.sum_univ_four, fRk, cF]
+    rw [hd2, he2]
+    simp only [hd, he]
+    field_simp
+    ring
+  · simp only [g, Rf, weyl2C, riem2C, ric2C, scalC, ricC, curvD_eq (cF_ne ha0 h10 h20) (cF_smooth ha h1 h2), hT]
+    simp [Fin.sum_univ_four, fRk, cF]
+    rw [hd2, he2]
+    simp only [hd, he]
+    field_simp
+    ring
 
 /-- Profile data at a point, for `S = sin²`, `χ²` and `sinh²` near it. -/
 lemma prof_sin2 {S : ℝ → ℝ} {θ : ℝ} (eS : S =ᶠ[𝓝 θ] fun s => Real.sin s ^ 2) :
@@ -215,6 +259,47 @@ theorem frw_gb_three {a S₁ S₂ : ℝ → ℝ} (ha : ContDiff ℝ ∞ a) (h1 :
   · obtain ⟨hd, hd2⟩ := prof_sinh2 e1
     exact frw_gb_k ha h1 h2 ha0 h10 h20 p (-1) hd hd2 he he2
 
+omit hk hm hn in
+/-- The closed slicing's curvature combination: `a = α cosh(T/α)` gives `6(aä + ȧ² + 1)/a² = 12/α²`. -/
+lemma cosh_slicing_R {α : ℝ} (hα : α ≠ 0) (T : ℝ) :
+    6 * ((fun T => α * Real.cosh (T / α)) T * deriv (deriv fun T => α * Real.cosh (T / α)) T
+      + deriv (fun T => α * Real.cosh (T / α)) T ^ 2 + 1) / (fun T => α * Real.cosh (T / α)) T ^ 2 = 12 / α ^ 2 := by
+  have d1 : ∀ T, HasDerivAt (fun T => α * Real.cosh (T / α)) (Real.sinh (T / α)) T := fun T => by
+    have := ((Real.hasDerivAt_cosh (T / α)).comp T ((hasDerivAt_id T).div_const α)).const_mul α
+    exact this.congr_deriv (by simp; field_simp)
+  have e1 : deriv (fun T => α * Real.cosh (T / α)) = fun T => Real.sinh (T / α) := funext fun T => (d1 T).deriv
+  have d2 : HasDerivAt (fun T => Real.sinh (T / α)) (Real.cosh (T / α) / α) T := by
+    have := (Real.hasDerivAt_sinh (T / α)).comp T ((hasDerivAt_id T).div_const α)
+    exact this.congr_deriv (by simp; field_simp)
+  rw [e1, d2.deriv]
+  have hc := Real.cosh_sq (T / α)
+  have hc0 := (Real.cosh_pos (T / α)).ne'
+  simp only
+  field_simp
+  rw [hc]; ring
+
+omit hk hm hn in
+/-- **Campaign 13: P10's closed slicing.** `a = α cosh(T/α)` on `S³` (`S₁ = sin²χ`, `S₂ = sin²θ` near the point):
+THE connection's `R = 12/α²` at every point, constant and de Sitter's, and `Weyl² = 0`. -/
+theorem frw_closed_slicing {S₁ S₂ : ℝ → ℝ} {α : ℝ} (hα : α ≠ 0) (h1 : ContDiff ℝ ∞ S₁) (h2 : ContDiff ℝ ∞ S₂)
+    (h10 : ∀ s, S₁ s ≠ 0) (h20 : ∀ s, S₂ s ≠ 0) (p : Fin 4 → ℝ)
+    (e1 : S₁ =ᶠ[𝓝 (p 1)] fun s => Real.sin s ^ 2) (e2 : S₂ =ᶠ[𝓝 (p 2)] fun s => Real.sin s ^ 2) :
+    let a := fun T => α * Real.cosh (T / α)
+    have ha : ContDiff ℝ ∞ a := by fun_prop
+    have ha0 : ∀ s, a s ≠ 0 := fun s => mul_ne_zero hα (Real.cosh_pos _).ne'
+    let g := fun i => cF a S₁ S₂ i p
+    let Rf := fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cF a S₁ S₂)) (diag4_symm _)
+      (fun p u h => diag4_nondeg (fun i => cF_ne ha0 h10 h20 i p) u h)
+      ((diag4_smooth (cF_smooth ha h1 h2)).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
+      (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p
+    scalC g Rf = 12 / α ^ 2 ∧ weyl2C g Rf = 0 := by
+  intro a ha ha0 g Rf
+  obtain ⟨hd, hd2⟩ := prof_sin2 e1
+  obtain ⟨he, he2⟩ := prof_sin2 e2
+  obtain ⟨hR, hW⟩ := frw_scal_weyl_k ha h1 h2 ha0 h10 h20 p 1 (by rw [hd]; ring) (by rw [hd2]; ring) he he2
+  exact ⟨hR.trans (cosh_slicing_R hα (p 0)), hW⟩
+
 /-- **Row 19's total derivative, every `k`**: `d/dT[24(a′³/3 + k a′)] = 24a″(a′² + k)`. -/
 theorem gb_total_derivative_k {a : ℝ → ℝ} (ha : ContDiff ℝ ∞ a) (k T : ℝ) :
     HasDerivAt (fun s => 24 * (deriv a s ^ 3 / 3 + k * deriv a s))
@@ -230,3 +315,5 @@ end ShadowProbe
 #print axioms ShadowProbe.frw_gb_k
 #print axioms ShadowProbe.frw_gb_three
 #print axioms ShadowProbe.gb_total_derivative_k
+#print axioms ShadowProbe.frw_scal_weyl_k
+#print axioms ShadowProbe.frw_closed_slicing

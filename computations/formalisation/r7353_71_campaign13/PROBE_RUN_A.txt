@@ -1,0 +1,18 @@
+# r7353+71.18 — campaign 13: lake env lean probes/FRWk.lean (2026-10-15T13:05:29Z; the recorded run below is the build that produced the axiom lines)
+probes/FRWk.lean:221:23: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/FRWk.lean:221:23: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ShadowProbe.frw_gb_k' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.frw_gb_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.gb_total_derivative_k' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.frw_scal_weyl_k' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.frw_closed_slicing' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	5m31.488s
+user	5m30.785s
+sys	0m16.463s
+# exit 0
+# wall 331 s (one 256-case table, proved once in frw_tab_k)
