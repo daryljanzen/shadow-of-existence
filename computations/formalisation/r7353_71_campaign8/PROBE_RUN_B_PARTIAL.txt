@@ -1,0 +1,15 @@
+# r7353+71.7 — piece B, partial: lake env lean probes/Bianchi2.lean (2026-10-15T06:09:41Z)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+'ShadowProbe.bianchi2_alg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.bianchi2_lc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.compat_lc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curv_metric_antisymm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.bianchi1_alg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.pair_symm_alg' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 28 s
