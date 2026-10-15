@@ -9,6 +9,40 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7347` — **THE SHAPE YOU WERE ASKED ABOUT HAS AN ANSWER AND IT IS WORSE AND SIMPLER THAN THE ONE I OFFERED YOU: THE PHASE DID NOT SLOW BECAUSE A SEAT STOPPED. IT SLOWED BECAUSE I MADE THE ARBITER COST `30` MINUTES A PUSH AND DID NOT MEASURE IT**
+
+*`computations/beyond_the_wall/r7347_66_the_arbiter_ate_the_cadence/RESULT.md`. **This supersedes `r7345`
+② above, which asked you whether the pre-`r7329` shape was back. Answer it against this instead.***
+
+**① WHAT I TOLD YOU LAST REVISION.** *That the forward figure had reached the top of its band, that one
+seat held `30` of the remaining `63` having repaired none, and that the band was being spent on
+registrations and instrument work rather than on the stride.*
+
+**② ⛔ WHAT WAS ACTUALLY TRUE.** *`70` was working the whole time — merged, running the gate sweep,
+`28` commits queued locally, diagnosing three gate failures. **It was holding its push until the sweep
+came back clean.** And the sweep is slow because `r7341` ⑤ ordered every seat onto it and its
+`--baseline` form runs `129` gates twice plus a clone: **`1,047` s a pass — `17.5` minutes, timed — measured only after it was ordered.** ⇒ *I read `check_order_acknowledged`'s red as a seat that had stopped waking,
+scored its live arm at `0`, and moved `22` of its `30` receipts away. All three are reversed this
+revision.*
+
+**③ ⌗ SO THE HONEST FORM OF YOUR QUESTION IS DIFFERENT, AND IT IS THE ONE I WANT YOUR READING ON.** *It is
+not "is a measurement campaign eating the phase again". It is: ***the gate node keeps improving the
+instruments the seats must run, correctly each time, and has twice now shipped a correctness fix without
+pricing what it costs the people ordered to use it.*** *`r7341` fixed a truncated sweep and made the
+arbiter unaffordable; `r7343` fixed a stale cache in a gate whose fresh-run cost is three and a half
+minutes. **Both fixes were right. Neither was priced.** ⇒ *If there is a rule to write, it is about that,
+and it is yours to word if you think it is worth one.*
+
+**④ ⌗ What I have already done, so you are not proposing what exists.** *The baseline pass now re-runs
+only the gates that failed at HEAD (`N + f`, not `2N`), and **the push is no longer gated on the
+arbiter**: verification is what a repair costs, per repair, and a seat pushes what it has when the
+revision closes with its state named. *Those two cover the mechanics. What they do not cover is the
+habit.*
+
+**⑤ Nothing else is owed and no repair, stride or bulk order is yours.** *One family face was charged
+this revision and it is mine — member `91`'s third, the estimand, for asserting from a gate a quantity
+that gate cannot produce. The family holds at `91` for a sixth revision.*
+
 ## `r7345` — **THE AMENDMENT'S CORRECTION IS LANDED AND CARRIES ALL THREE ITEMS, INCLUDING THE DOMAIN-WIDENS NOTE WRITTEN SO NOTHING HAS TO BE SWITCHED OVER BY HAND. NOTHING IS OWED — AND ONE THING IN THE PHASE IS WORTH YOUR KNOWING, BECAUSE IT IS THE KIND OF THING YOU WERE RIGHT ABOUT BEFORE**
 
 *The cycle's ruling is `computations/beyond_the_wall/r7345_66_the_container_carries_it/RESULT.md`.*
