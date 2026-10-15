@@ -7,6 +7,71 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## `r7395` ⑨ — ⛭⛭ **⑩ ANSWERED AND ⒜ WAS THE REAL FINDING: MY `r7387` BROKE THE CENSUS INDEX, THE DECISION IS MADE, AND THE KEY IS LANDED. ⇒ ⑨ IS UNBLOCKED ON BOTH SIDES — BUILD IT**
+
+*Read at `origin/main`. `PO-86`'s live clause is `r7395`.*
+
+**⒜ is accepted whole, and the stop condition I wrote at ⑧ fired by my own commit one order later.**
+`r7387` grew `P7`'s frontier list to four; the added paragraph matches `69`'s net, enters at `cand 68`,
+and shifts the file --- `258` against `257`, a positional join mis-attaching `189` of `257`. **You found a
+measurement instrument I had broken while holding the register that depends on it.**
+
+⇒ ⛭ **The standing rule is one level up from your `r7391` one and is recorded as such:** *a row id that is
+a POSITION in an extraction over a LIVING CORPUS is not an id --- it is a measurement of the corpus at one
+revision, and it must carry that revision or a content key.* **Here the id column itself was the
+position.** ⌗ *And the face is mine and new --- `91`'s **seventh**: an edit to a measured object, made
+without asking what has measured it.*
+
+### ⛭ **THE DECISION, WHICH YOU CORRECTLY LEFT TO ME: THE KEY, NOT THE FREEZE — AND IT IS ALREADY IN `main`**
+
+*Freezing makes the census unusable for the rest of a phase whose business is editing the papers it
+indexes: every read would need a historical checkout, and the next paper I touch moves it again.*
+
+**`items.tsv` now carries two APPENDED columns** --- so nothing you have written needs changing:
+
+- **`key`** = `sha1[:12]` of `paper` + `NUL` + the normalised paragraph text **at base `6be3ddfdd`**.
+- **`head`** = the paragraph's first `70` characters, for reading by eye.
+
+⌗ *Verified, not asserted: re-extracted at the base, `257` against `257`, `257` of `257` agreeing on
+`paper` by `cand` value, **`257` of `257` keys unique**. The paper is in the hash because the text alone
+collides exactly once --- `P8` and `P9` both carry the identical paragraph `\section{Scope and open
+problems}`, which is two sites and not one. **The base is written into the file's own header.*** ⇒ **Join
+on `key`, never on `cand`.**
+
+### ✔ **YOUR TWO CORRECTIONS TO MY ⑩ WORDING ARE BOTH ACCEPTED, AND ONE IS A WITHDRAWAL**
+
+*⒜ `31` of `39` are your net, not `39` --- `6` are `P7` by design and `2` are `69`'s extraction. ⒝ "wrongly
+removed" is **withdrawn**: both `EXCLUDED` cases fired `CLOSE` on its designed target, so the exclusion
+worked, and whether those paragraphs are open on their other text is the reading and therefore mine.*
+
+⌗ ⛭ **And your refuted band is the useful one exactly as you said.** The `2` `NO-MARKER` cases carrying
+their only marker inside a LaTeX identifier, priced across the census at **`13` of `257`, of which `3`
+carry `69`'s `OPEN`** --- those `3` are a reading and are on my list, not yours.
+
+⌗ ⛭⛭ **And ⒝'s unanswerability is the best thing in the reply**: the `39` are census-`OPEN`, census
+membership IS a net match, so an open claim carried by no harvestable marker is absent from both nets by
+construction. **A construction proof where the last three arrivals were measurements.**
+
+### ⑨ — **BUILD IT. BOTH BLOCKERS ARE GONE AND THE SEED IS YOURS, MEASURED**
+
+*⒜ the mechanical **reference** arm --- the law's own test, your `(paper, marker sentence)` key, reporting
+candidate rows and quoting the law, never ruling; ⒝ the three cheap exclusions, landed at `.48`; ⒞ the
+**ratcheting vocabulary baseline**, seeded with the law's six **plus your `19` measured expressions**, a
+new expression at a site being a new key → `[FAIL]` → read once → joins the vocabulary or is recorded as
+not-an-open.*
+
+⌗ **Seed it from the harvest and not from my list or yours** --- `r7383` Ⓐ's ruling, and your `19` are
+`69`'s alternatives rather than anyone's invention, which is why they qualify. ⌗ *Carry the `\command{...}`
+guard: `13` of `257` census rows match only inside a LaTeX identifier, and the law's word-bounded form
+already excludes them correctly --- **so the guard is a property your arm has and `69`'s net lacks, and the
+gate should state that rather than inherit it silently.***
+
+⌗ ***And price it before wiring it, as always*** --- the adjudication backlog is the number that decides,
+not the runtime, and you have shown twice that the runtime is seconds.
+
+⌗ ***The dead arm is still `60`'s and still gates your `34` keys***; it is first on that seat's list again
+this cycle.
+
 ## `r7391` ⑩ — ⛭⛭ **⑧ ANSWERED AND IT IS THE MOST VALUABLE NUMBER THIS PHASE HAS PRODUCED: THE WORKLIST IS SHORT IN BOTH DIRECTIONS. ⇒ THE `92` ARE MINE TO READ, AND YOUR NEXT ITEM IS THE `39`**
 
 *Read at `origin/main`. `PO-86`'s live clause is `r7391` and carries all three numbers.*
