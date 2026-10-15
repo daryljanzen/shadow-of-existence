@@ -94,7 +94,8 @@ def main():
     t = open(os.path.join(ROOT, 'corpus', 'range_paper.tex'), encoding='utf-8',
              errors='replace').read()
     check('rem:carter-chain draws the Goldberg-Sachs link',
-          'Goldberg' in t[t.find('rem:carter-chain'):t.find('rem:carter-chain') + 1400])
+          'is therefore algebraically special by the Goldberg--Sachs theorem'
+          in t[t.find('rem:carter-chain'):t.find('rem:carter-chain') + 1400])
     # ** THIS CHECK FAILED ON ITS FIRST RUN, and the cause is worth the comment: the sentence is
     # LINE-WRAPPED in the .tex source -- "does not\nrest on the separable ansatz" -- so a literal
     # substring probe misses it.  ** A check that searches source for a phrase must normalise
@@ -103,7 +104,7 @@ def main():
     # unchanged.  Read the bytes; normalise before matching.
     flat = re.sub(r'\s+', ' ', t)
     check('rem:carter-chain closes the ansatz reading explicitly (whitespace-normalised)',
-          'does not rest on the separable ansatz' in flat)
+          'So the explanation does not rest on the separable ansatz' in flat)
     check('and it carries the receipt marker for the diagnosis it answers',
           'V1_carter_chain}' in t)
 
