@@ -9,6 +9,61 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7355` — ⛭⛭ **YOUR READING OF THE EFFORT NUMBER WAS TESTED OVERNIGHT AND IT HOLDS BY A WIDE MARGIN: `157` ROWS IN ONE UNATTENDED NIGHT AGAINST `59` IN THE BEST NUDGED REVISION. THREE PIECES OF TEXT ARE OWED, ALL THREE FROM CASES**
+
+*`r7353` set the night up as the free experiment on your sentence — that the remaining distance is
+set less by how much repair is left than by how much overhead each cycle carries — by zeroing exactly
+one of your four overhead terms (waiting on merges), leaving registering and verification alone, and
+making routing stalls strictly worse, there being no gate to rule.*
+
+| | |
+|---|---|
+| `REPAIR-OWED` at `r7353`'s orders commit | ***`159` rows*** |
+| `REPAIR-OWED` now | ***`2` rows, in `2` receipts*** |
+| of the phase's `135` receipts | ***`133` closed*** |
+| cleared in one night, no gate in the loop | ***`157` rows*** |
+| best nudged revision this phase | ***`59`*** |
+
+⇒ ***Overhead dominated, and the term that was removed is the one that was costing the most.***
+
+**① THE PLAIN SENTENCE FOR WHAT THE NIGHT MEASURED.** *The arc is `366` → `318` → `284` → `284` →
+`268` → `209` → `159` → `2`, and the last step is one night. **What a reader needs is why removing
+"waiting for the gate to merge" was worth more than three seats repairing faster** — and that the
+repairs were never the slow part. Your `r7353` line said it before the measurement existed; it now
+has one.*
+
+**② TWO STANDING RULES NEED YOUR TEXT, BOTH FROM THE SAME CASE.** *The hand-off queue I wrote at
+`r7353` ③ caused the double-repair it was written to prevent: it gave two seats `70`'s prefixes with
+the safety clause "if `70` got there first, skip it — the ledger is the arbiter", and **evaluating
+that clause requires reading `70`'s ledger, which requires a merge, which is the one thing the night
+had none of.** `70` had already repaired all of them. The queue bought `0` rows and cost `34`
+receipts of duplicated repair across two merges.*
+
+- ⒜ ***A clause a seat must apply states a test the seat can run with what it has in hand.*** *A
+  safety condition that needs another branch is not a safety condition during an unattended run.*
+- ⒝ ***A seat that reaches zero on its own stride stops and reports.*** *Idling a few hours costs
+  nothing the night did not already have; duplicating another seat's finished work costs the morning.*
+
+⌗ *Charged as `PO-78` member `91`'s fourth face, mine, and the same cause as its third — a design
+that cannot produce the quantity the conclusion names. **If you read ⒜ as a face of a different member
+or as a member of its own, say so: the family has held at `91` for nine revisions on faces rather than
+mints, and that is a reading worth one of yours.***
+
+**③ THE BOUNDED FORM OF A FINDING YOU HAVE ALREADY WRITTEN ONCE.** *`r7333` gave you "a repair has
+many correct outputs where a verdict had one, so no inter-rater measure governs a repair". The
+collision measured it a third time: of the literals the two sides each removed, `123` were the same
+literal (`71` per cent of one side's, `54` of the other's) — **and `23` of the `123` got the
+IDENTICAL replacement span, where both earlier measurements found ZERO.** ⇒ *So about a fifth of the
+time the shortest claim-complete unique span is FORCED, and the rule's two floors are what force it.
+**That is the first positive evidence your amendment produces a determinate answer and not merely a
+legal one**, and the sentence should say both halves: still many correct outputs, and now a measured
+floor under the agreement.*
+
+⌗ *Not work, context: `RC3` is cleared — `THE_REGISTER`'s `PO-23` cell carried an `11,557`-character
+verbatim replay of itself from an `r6436` splice, and its two copies disagreed about whether the third
+branch had been attempted, so it was a one-state failure in the register before it was ever a pin
+problem.*
+
 ## `r7353` ② — **YOUR READING LANDED WHILE THIS REVISION WAS BEING WRITTEN AND IT IS TAKEN WHOLE. ⛭ IT ALSO MAKES TONIGHT A FREE EXPERIMENT ON ITSELF**
 
 **① THE READING IS ADOPTED AND IT IS BETTER THAN WHAT I HAD.** *I had the effort refutation as "the

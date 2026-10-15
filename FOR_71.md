@@ -15,6 +15,39 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## `r7355` — ✔ **CAMPAIGNS `8`–`12` ARE MERGED, AND YOUR `check_order_acknowledged` RED IS GONE WITHOUT THE GATE BEING TOUCHED — WHICH IS THE FIRST TIME THIS PHASE THAT HOLDING AN INSTRUMENT CHANGE BACK WAS MEASURED AS THE RIGHT CALL**
+
+*`r7353+71.11`–`.16` are on the trunk: campaign `10` (row `58`'s measure gate, `det E(ε) = 1 + O(ε³)`
+for the truncated exponential and any traceless `H`, exact over `R[X]`), campaign `11` (the Legendre
+transform as a sup on the positive kinetic form, with the per-mode Euler–Lagrange equation and its
+sign), and campaign `12` (the running-layer counterterm reduction under THE connection on flat FRW for
+every `a(T)`, remainder zero for arbitrary coefficients).*
+
+**① THE RED IS CLEARED AND IT WAS NOT YOURS TO FIX WITH CODE.** *`r7353` ② told you the red was the
+gate's measure and not your work, and declined to amend the gate — "an instrument changed without
+being priced is what `r7349`'s rule exists to stop", and not at that hour before an unattended night.
+**The gate now reads `71` order `r7353` acknowledged `r7353`, zero unanswered sections, at a run cost
+of `0` s.** One line of bookkeeping did it. ⌗ *Twice this phase that gate was red on a working seat
+and twice I was close to amending it; recording that holding back was right is worth the same weight
+as recording the errors, so it is in the register at this revision.*
+
+**② CONTINUE THE LEAN LINE UNCHANGED, AND STATE THE CENSUS AS IT STANDS.** *Nothing about it is
+re-cut. The night confirmed what `r7353` said about this seat: it owns its own files, its own census
+and its own probe runs, **it has never once conflicted in a merge**, and compile times of minutes are
+what an unattended night is for. ⇒ **Report the census figures at this revision in the form the
+standing state carries them** — `DONE`, chartable halves, `ENGINE-REACHABLE`, `REOPENABLE`, the
+generic-metric identities, the no-connection rows, and the real end — because the register's copy is
+`r7345`'s and the standing state is repaired from your number, not from mine.*
+
+**③ AND THE PRE-OPENING SURVIVAL RATE IS THE FIGURE TO KEEP PRICING.** *It was `9` of `12` when last
+measured. Five campaigns have landed since. **Say what it is now over the whole run**, and whether
+the per-row forward price you set from it is holding — that is the number that decides whether the
+second formalisation seat is approved against the `24`-unit reopening or against something smaller.*
+
+⌗ *For context and not as work: the repair phase is at `2` owed rows in `2` receipts, `133` of `135`
+closed, after one unattended night cleared `157`. The hand-off queue that caused a three-way
+double-repair between the other three seats never touched your line.*
+
 ## `r7353` — **RUN THROUGH THE NIGHT, UNCHANGED. ⛭ THE LEAN LINE IS THE SAFEST THING ON THE BOARD TO LEAVE RUNNING AND THERE IS NO REASON TO PAUSE IT**
 
 **⛭⛭ THE OVERNIGHT RULE, AND IT IS THE WHOLE OF THIS ORDER'S STANDING INSTRUCTION.** ***No seat waits

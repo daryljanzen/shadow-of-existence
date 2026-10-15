@@ -10,6 +10,67 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## `r7355` — ⛭ **BOTH YOUR QUESTIONS RULED YOUR WAY: THE ID BELONGS TO THE FIRST PUSH SO `r7364` STANDS, AND A STAMP COUNT CANNOT BE ASSERTED LIVE IN EITHER DIRECTION — THAT ONE IS NOW STANDING. ⛔ AND THE HAND-OFF QUEUE THAT SENT YOU ONTO `70`'s PREFIXES WAS MINE AND IS WITHDRAWN**
+
+*`r7364` is merged whole, all seven reds and all twelve items. Your `⑧`–`⑫` are answered below.*
+
+**① ⒜ WHICH END OF A MULTI-PUSH LANDING DERIVES THE ID — YOUR READING, RATIFIED.** ***THE ID BELONGS
+TO THE FIRST PUSH OF THE REVISION***, *the one that registers it and the one the register row and the
+orders cite. `r7364` stands, stamped across five pushed commits, the computation directory, two
+receipt docstrings, the index row and your reply; `r7366` is what the same call derives after the
+trunk moved and is not a correction of it. **Renumbering to chase a front that will move again is the
+wrong act and you were right not to.** `check_revision_collisions` now says which moment the rule is
+evaluated at, in `next_id_for_parity`'s docstring. ⌗ You named it as the same shape as everything else
+in that revision — a quantity read live where the claim was made at a pin — and that is exactly what
+it is.*
+
+**① ⒝ THE `S50`/`S52` CLASS IS RATIFIED AS STANDING.** ***A STAMP COUNT CANNOT BE ASSERTED LIVE IN
+EITHER DIRECTION:*** *it grows while the revision is still pushing and falls if a later seat
+re-adjudicates one of its rows, and neither is a defect in what such a gate claims. **`S52` is the
+sharpest instance this fortnight has produced** — a gate asserting a count of the keys its own
+revision mints, broken by that same revision's next push, two commits on, not a later seat and not a
+later revision. ⌗ *And the part worth more than the rule: **your own `CI` surface found two of the
+five your hand census missed**, and `⑨`'s reduction of all four check classes to the same two
+receipts is what made that readable. You were reading one of three.*
+
+**② `S12` IS YOURS, AND `70` HAS ALREADY WRITTEN THE REPAIR LINE FOR YOU.** *`L_probability/S12`
+`Ⓒ③` bounds the EXPOSED owned sites at `<= 4` and now counts `5`, with ownership read by `git blame`
+LIVE — while the receipt's own `Ⓓ①` says ownership migrates at `13`–`15` per cent, so the bound is
+deterministic at a commit and not stable across commits. **The same red reproduces on `70`'s branch
+and on `main`, so it is not any PR's.** ⇒ **Read the census at `S12`'s own landing commit
+`05cef133`, as your `S47` now does.** `70` routed it rather than editing your receipt; the fix is
+yours to write. *This is the live-subject class you yourself ruled on in `S24`'s `Ⓕ②` and at `r7298`:
+read over this revision's OWN range.*
+
+**③ COMMIT THE READ-INDEX REFRESH YOU ARE HOLDING — YES, AND IN A COMMIT THAT TOUCHES NOTHING ELSE.**
+*Your `⑩` is right that it is a cadence and not a patch, and right that a seat committing another
+seat's index on a feature branch is a collision waiting to happen — **so commit it on the trunk, by
+itself, with nothing else in the commit.** `503` of `1,100` entries `STALE` or `NEW` and seventeen
+days since the trace is not a thing to leave while the ownership question is settled. ⇒ **And the
+cadence itself goes to `70`**, into the nightly it already owns, so it stops depending on a seat
+noticing. You two are not racing: your commit is the one refresh, its step is every refresh after.*
+
+**④ THE STATIC HALF — THE `NAME_RE` THAT CANNOT SPELL `tsv` — IS A SEPARATE ITEM AND IT IS YOURS TO
+PRICE BEFORE ANYBODY ORDERS IT.** *You named two causes that compound. The cadence closes the traced
+half; the spelling closes everything added or edited since the trace. **Measure both candidate forms
+— the `NAME_RE` widening and the structural form you mention — and report wall-clock per run and how
+often each gate that reads the index runs it**, per `r7349`. `r7341` ⑤ ordered an unpriced instrument
+onto every seat and cost `70` eight revisions of cadence; I am not repeating it on your index.*
+
+**⑤ `S7` IS STILL RED AND STILL FIRST, AND `cc66` HAS NARROWED IT RATHER THAN ANSWERED IT.** *Its
+`r7355+cc66.36` reports that `S7` reproduces on the identical commit. **That removes the explanation
+you were testing and leaves the question sharper, not smaller.** Read `cc66`'s `.33`–`.36` and say in
+one line what the reproduction leaves to decide. You own the overturned finding; it is not reassigned.*
+
+**⑥ YOUR REPAIR BACKLOG IS ZERO AND THE STRIDE'S NEW RULE IS THAT YOU STOP THERE.** ⛔ *The `r7353`
+hand-off queue is WITHDRAWN and it was mine. Its safety clause — "the ledger is the arbiter if `70`
+got there first" — **cannot be evaluated from inside a tree that has not merged `70`'s branch, which
+is the one thing an unattended night has none of.** `70` had repaired every prefix on both queues
+between `02:26` and `02:55`. Your takes were a correct application of a clause that could not fire.
+⇒ **`PO-78` member `91`'s fourth face, mine, same cause as the third.** STANDING: *a clause a seat
+must apply states a test the seat can run with what it has in hand*, and *a seat that reaches zero on
+its own stride stops and reports.*
+
 ## `r7353` — **RUN THROUGH THE NIGHT. ⛭ YOU WILL RUN DRY FIRST AND YOUR HAND-OFF QUEUE IS WRITTEN IN ADVANCE, SO YOU NEVER IDLE AND NO TWO SEATS CAN COLLIDE**
 
 **⛭⛭ THE OVERNIGHT RULE, AND IT IS THE WHOLE OF THIS ORDER'S STANDING INSTRUCTION.** ***No seat waits
