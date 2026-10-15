@@ -219,13 +219,44 @@ def main():
           f'in the object. After the repair the overlap is {sorted(hit_after)}',
           hit_before == {'fermion', 'gauge'} and hit_after == set()
           and 'fermion' not in gwords(on['PO-4']) and 'gauge' not in gwords(on['PO-4']))
-    gate = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'check_family_pointers.py'),
-                                    encoding='utf-8').read())
-    check('   ⇒ *** and family 6 is the gate\'s OWN FOUNDING CASE -- "family 6 is \'the propagating '
-          'fermion and gauge sector\'" is why it was built. The corruption was supplying a spurious '
-          'match on the very row that case was corrected AWAY from. ***',
-          "family 6 is \"** the propagating fermion and gauge" in gate
-          or 'the propagating fermion and gauge' in gate)
+    #: ⛭⛭ THE REPAIR (r7356 on `r7353` ①'s ORDER).  ** The owed row was a DISJUNCTION of two
+    #: fragments of another gate's docstring, one of them carrying `**` markdown emphasis inside the
+    #: span -- so the arm broke on any re-emphasis of a sentence whose words never changed, and
+    #: neither arm named WHAT family 6 is. **  ⇒ The claim splits in two and each half is asserted
+    #: where it lives:
+    #:   ⒜ ** what family 6 IS is a fact about the REGISTER **, so it is read off the register's own
+    #:     table row as data -- cell by cell, not as prose; and
+    #:   ⒝ ** that it is this gate's FOUNDING CASE is a fact about the gate's own history **, so it
+    #:     is one claim-complete clause of that history, with the markdown emphasis family
+    #:     normalised IN THE READER (`r7258`'s settled form, extended to markdown at `r7336`) rather
+    #:     than the span being split around the markers.
+    #: ⌗ The normaliser does exactly two things -- drop the `*` runs, then collapse whitespace --
+    #: and nothing else, so the span below carries the spaces the stripped markers leave behind.
+    #: *A normaliser that also tidied the quotes would be making the text nicer rather than making
+    #: the markup invisible, and the second is the only thing a reader can check.*
+    _STAR = re.compile(r'\*+')
+
+    def _demark(_t):
+        return re.sub(r'\s+', ' ', _STAR.sub(' ', _t))
+
+    gate = _demark(open(os.path.join(ROOT, 'corpus', 'check_family_pointers.py'),
+                        encoding='utf-8').read())
+    _reg = open(os.path.join(ROOT, 'THE_OPEN_PROBLEMS_LEDGER.md'), encoding='utf-8',
+                errors='replace').read()
+    _fam6 = [[c.strip() for c in l.split('|')] for l in _reg.split('\n')
+             if l.startswith('>') and l.count('|') >= 3
+             and [c.strip() for c in l.split('|')][1:2] == ['6']]
+    _FOUNDING = ('and it went stale AGAIN, silently: family 6 is " the propagating fermion and '
+                 'gauge sector "')
+    check(f'   ⇒ ⒜ *** and family 6 IS that sector by the REGISTER\'s own row, read as data: '
+          f'{len(_fam6)} row(s) whose first cell is 6, carrying {_fam6[0][2] if _fam6 else None!r} '
+          f'***',
+          len(_fam6) == 1 and _demark(_fam6[0][2]) == fam6)
+    check(f'   ⇒ ⒝ *** and it is the gate\'s OWN FOUNDING CASE: its history says so in one clause, '
+          f'which occurs once under whitespace and markdown normalisation '
+          f'({gate.count(_FOUNDING)}) -- "{_FOUNDING}".  The corruption was supplying a spurious '
+          f'match on the very row that case was corrected AWAY from. ***',
+          gate.count(_FOUNDING) == 1)
     check('   ⚠ and stated at its true size: family 6 still PASSES, because its correction note also '
           'names PO-11, which genuinely matches. What the corruption bought was a second, false '
           'reason to pass -- not the only one',
