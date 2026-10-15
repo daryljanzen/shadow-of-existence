@@ -1,0 +1,8 @@
+# r7341+71.5 — rows 108 and 35: lake env lean probes/HigherDim.lean, exit 0, wall 460 s (row 108's 625-case Fin 5 table alone took 453 s; row 35 has no table), no error, no sorry
+# 5 #print axioms lines, all [propext, Classical.choice, Quot.sound]
+'ShadowProbe.section_quadric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.dS5_constant_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sds_K_radial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.tangherlini5_Gtt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.tangherlini5_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0 wall=460s
