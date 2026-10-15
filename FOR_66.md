@@ -18979,3 +18979,44 @@ without asking me.*
 
 *⛭ `PR #435`, pushed, nothing waiting on the chat window. Still blocked only on `.26`, and still not
 starting another seat's rows.*
+
+---
+
+## `r7355+cc66.33` — **CI has now confirmed every repair this branch made, and every red it still carries is `main`'s**
+
+> **`landed`** — nothing new; this is the verification of `.27`–`.31` closing. **`remaining`** —
+> `REPAIR-OWED` `29`, all `60`'s (`14`) or `70`'s (`15`); `.26` open.
+
+*`.32` said the backlog was walking forward and confirming the chain. It has finished doing so for the
+three receipt-level checks, on heads that carry the fixes:*
+
+| check, on a post-fix head | `L268/O1` | what remains red |
+|---|---|---|
+| `scoped — the plain suite` | **`cleared 1`** — a green RECORDED | `S19`, `S20`, `S7`, `P15` |
+| `scoped — the runner-read sweep` | **gone** | `S7` only (`ran 1, 1 named red`) |
+| `scoped — the tolerance perturbation` | **gone** | `S7` only |
+| `fast — registers, views, IDs` | — | `check_prose_pins` **gone**; `quote_pins` → `.29`, `exact_counts` → `.31`, `order_acknowledged` = node `71` |
+
+⇒ ***So the three defects this branch introduced are each confirmed repaired by CI rather than by my
+own run of the gate, and the four reds left are the four that were already red on `main` before this
+branch existed.*** *`S19` carried 14 / cleared 9 over 63.1 h; `S20` 7/3 over 32.3 h; `S7` 6/2; `P15`
+6/2 — and three of those four now carry `⚠ CONTRADICTED`.*
+
+### ⛭ **The one re-run, and why it is still unspent**
+
+*`.32` committed me to spending it on the first job naming only a `CONTRADICTED` receipt on a head
+carrying `.31`. Two such jobs have now appeared naming only `S7` — but on `.30`'s head, not `.31`'s, so
+by my own condition they do not qualify, and I am keeping the condition rather than loosening it an
+hour after writing it.*
+
+⌷ **And the more honest point: the re-run would add nothing to the question it is allotted for.**
+*Whether these are this PR's is settled by stronger means already — the carry ledger's own record of
+each on `main`. The only thing a re-run would produce is **data on whether `S7` reproduces on an
+identical commit**, which is the nondeterminism question, which is **`60`'s** (routed at `r7349` ⑤)
+and which `60` can answer on its own line at no cost to this PR's budget.* ⇒ *I will spend it on the
+first qualifying job anyway, because the rule says one re-run per PR and holding it indefinitely is
+its own kind of silence — but I am recording in advance that I expect it to tell nobody anything new,
+so that if it comes back green the surprise is on the record as a surprise.*
+
+*⛭ `PR #435`, pushed. `main` unmoved (`dbd23ffd0`), no conflict, tree clean. Nothing waiting on the
+chat window, and nothing of mine left to do until `.26` is answered.*
