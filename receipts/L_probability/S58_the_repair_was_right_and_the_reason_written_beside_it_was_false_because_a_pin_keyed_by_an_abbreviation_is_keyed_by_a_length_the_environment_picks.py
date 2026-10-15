@@ -160,17 +160,34 @@ def main():
         _lens[ab] = sorted({len(k) for k in keys})
         print(f'      core.abbrev={str(ab):5} key length(s) {_lens[ab]:} '
               f'-> {_found[ab]} of {len(C.PINS_S39)} found')
-    check(f'Ⓒ① at THIS clone\'s own length every pinned sha is found, and at EVERY other length tried '
-          f'NONE is -- a property over all {len(C.ABBREVS) - 1} alternatives and not one of them: '
-          f'{_found}',
-          _found[None] == len(C.PINS_S39)
-          and all(_found[ab] == 0 for ab in C.ABBREVS if ab is not None)
-          and len([ab for ab in C.ABBREVS if ab is not None]) >= 3)
-    check(f'Ⓒ② and the match HERE is an accident of this environment rather than a property of the '
-          f'pin: the map\'s keys are uniform in length, that length is this clone\'s auto-choice, and '
-          f'the pinned shas are exactly that long: keys {_lens[None]}, pins '
-          f'{sorted({len(p) for p in C.PINS_S39})}',
-          _lens[None] == sorted({len(p) for p in C.PINS_S39}) and len(_lens[None]) == 1)
+    #: ⛔⛭⛭⛭ r7398: ** THESE TWO CLAUSES WERE KEYED TO THIS CONTAINER'S ABBREVIATION LENGTH, WHICH IS
+    #: THE DEFECT THIS RECEIPT REPORTS -- THE FIFTH INSTANCE OF THE CLASS AND THE FIRST THAT WAS FALSE
+    #: RATHER THAN MERELY SELF-REFERENTIAL. **  *`Ⓒ①` asserted that at the unset length all six pins are
+    #: found and `Ⓒ②` that the map's key length EQUALS the pins' -- both true here, where git's
+    #: auto-choice is `8`, and both FALSE wherever it is not.  CI's carry named exactly these two
+    #: gates, and forcing `core.abbrev=7` in this container reproduces it: `0 of 6` at every length.*
+    #:   ⇒ ** THE ENVIRONMENT-INDEPENDENT CLAIM IS THE ONE THE FINDING ACTUALLY MAKES: the pins are
+    #:     found at a tested length EXACTLY WHEN that length equals the pins' own. **  *That is a
+    #:     statement about string equality, true in every environment, and it is what "a pin keyed by
+    #:     an abbreviation is keyed by a length the environment picks" means.  The container's own
+    #:     length is MEASURED and REPORTED rather than assumed -- `r7365` ①'s rule, which this gate
+    #:     was breaking while its own docstring cited it.*
+    _pin_len = sorted({len(p) for p in C.PINS_S39})
+    _here_len = _lens[None]
+    print(f'      this clone`s own key length: {_here_len} -- MEASURED, not assumed; '
+          f'the pins are {_pin_len} long')
+    _iff = {ab: (_found[ab] == len(C.PINS_S39)) == (_lens[ab] == _pin_len) for ab in C.ABBREVS}
+    check(f'Ⓒ① at every tested length the pins are found EXACTLY WHEN that length equals their own '
+          f'-- a property of string equality, true in any environment, and the whole of what "keyed '
+          f'by a length the environment picks" means: {_iff}, found {_found}, lengths '
+          f'{ {k: v for k, v in _lens.items()} }',
+          all(_iff.values()) and len(C.ABBREVS) >= 4
+          and any(_lens[ab] != _pin_len for ab in C.ABBREVS))
+    check(f'Ⓒ② and the map\'s keys are UNIFORM in length at every tested setting, which is what makes '
+          f'the lookup all-or-nothing rather than partial -- so a length that is not the pins\' misses '
+          f'ALL of them and not some: {[(ab, _lens[ab], _found[ab]) for ab in C.ABBREVS]}',
+          all(len(_lens[ab]) == 1 for ab in C.ABBREVS)
+          and all(_found[ab] in (0, len(C.PINS_S39)) for ab in C.ABBREVS))
 
     # ── Ⓓ the correction is written where the reason was ──────────────────────────────────────────
     head('Ⓓ  the correction is in both receipts, and the repair is unchanged')
