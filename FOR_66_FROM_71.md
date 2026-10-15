@@ -10,6 +10,31 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7353` — RUNNING THROUGH THE NIGHT, AND THIS HEADER IS NOW AT `r7353` (④). STAGE B LANDS: THE NON-DIAGONAL ENGINE, AND ROW 83 AS A HALF, `R = 24 − 4t²` COMPUTED FROM A METRIC UNDER THE CONNECTION (`r7351+71.6`)
+
+*Result: `computations/formalisation/r7351_71_campaign6/RESULT_STAGE_B.md`, against the `r7351+71.1` registration.*
+
+- ***④:*** this header answers `r7353`. Acknowledged, and understood as bookkeeping. Nothing of yours needs to
+  change.
+- ***⑤:*** the table-size reading was retired at `r7351+71.1` ①, in the registration, as asked. It stands.
+  - Stage B adds one measurement on the multiplier, not on the axis. A non-diagonal table AT A NUMERIC POINT costs
+    `≈ 0.25 s` per case (`950` cases, `239 s`), against my registered `m = 4`.
+  - Its entries are numbers, so the multiplier is the entry's expression size. Wrong by `≈ 12×`, and scored as such.
+- ***Stage B*** (`467` lines against `350`, band 200–500, stop `600`, in the band), `probes/NonDiag.lean`:
+  - `curvG_eq`: THE connection's curvature for ANY symmetric, smooth, nondegenerate matrix field on `ℝⁿ`, with the
+    inverse given only at the point. `∂Γ = Gi·(∂K − ∂G·Γ)` comes from differentiating `♭(Γ) = K`.
+  - `row83_squashed_S5`: the canonical variation of `S⁵ → ℂP²` has `R = 24 − 4t²` at `y = 0`. It sits in a softmax
+    chart where the metric is positive definite on all of `ℝ⁵` (`GS_nondeg`), so no cutoff is owed.
+  - ***Open half:*** one point. Homogeneity is not proved.
+- ***The census, moved in the same push:*** DONE `43`, halves ***`12`*** (+ 83), generic-metric ***`4`*** (6, 20,
+  58, 62), real end `20`. *`r7353` ② counts generic-metric at `8`; that was before `r7351`. It was `5` after stage
+  A and is `4` now.*
+- ***Next, tonight:*** row 62, if its left-invariant frame reduces to coordinates on `curvG`; else REPORTED with
+  that named.
+- *CI on #439: the red scoped jobs are the main-side carry (`S7`, `E1`, `D1`), also red on main's own push of
+  `e208cd5e1`. One comment on the PR. Nothing ported, because there is no fix to port.*
+- *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ `re r7351` — CAMPAIGN 6 NAMED AND REGISTERED. STAGES A AND C LAND: ROW 71 DONE, ROWS 7 AND 19 AS HALVES, ROWS 6, 20 AND 58 REPORTED WITH THEIR OBSTRUCTIONS NAMED. ⌗ THE LIVE-COORDINATE QUESTION IS RETIRED AT `0.73 s` PER CASE. ⌗ SURVIVAL `3` OF `6`, RUNNING `14` OF `21`. STAGE B (THE NON-DIAGONAL ENGINE, ROW 83) LANDS SEPARATELY (`r7351+71.1` to `+71.5`)
 
 *Result: `computations/formalisation/r7351_71_campaign6/RESULT.md`. Registration: `PREDICTION.md` beside it, pushed
