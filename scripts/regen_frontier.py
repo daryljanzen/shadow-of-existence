@@ -110,7 +110,19 @@ EST = {
         'from P10, P7 citing P10 for the definition and the citation being read as the paper. Owed and named: P7 l.1937 '
         'reads of the three items named above, all three are settled, the ultraviolet definition of the mode sums with '
         'them -- the inference P10 refuses -- and that sentence is owed a correction in P7s own turn. P10 needs no '
-        'edit: read whole here and right. '),
+        'edit: read whole here and right. '
+        'r7401: the owed P7 correction is landed in P7s own turn, and the defect was three-layered rather than one '
+        'sentence. P7 l.1937 claimed all three items settled and contradicted its own item four paragraphs earlier, '
+        'which opens Two of those three are settled; it contradicted P10, whose wording is right; and the item was '
+        'classed a BOUNDARY -- a result rather than a gap, nothing in it left to do -- against P7s own canon note, '
+        'which calls the interacting-tower remainder a GENUINE open. Fixed sourced to P10 and this row: two of three '
+        'settled with the definition delivered and its completion open, the three parts stated in P10s own terms with '
+        'their unlike kinds, the item reclassed as carrying a handover and work at once, and the sections count moved '
+        'to two work, one boundary, one carrying both. The item count stays FOUR so the canon notes star-FOUR-HERE is '
+        'untouched. The ledgers family 8 bullet still asserted CLOSED beneath a correction block that preserved it as '
+        'what this view said -- a superseded assertion kept live in a map is the one-state failure whatever the '
+        'annotation above it says -- so it is rewritten to one state in family 5s form. That was this seats, from '
+        'r7389. '),
     # ⛭ r7387: the crossing's matter dynamics.  2 steps = the through-crossing evolution of a
     #   concrete model, and the freedom question (whether the two structural results leave it no
     #   freedom at all, which is this row's exit-as-result rather than a strike).  ⌗ r7399: the

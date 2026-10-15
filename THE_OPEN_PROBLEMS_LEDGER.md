@@ -1,7 +1,7 @@
 ---
 name: the-open-problems-ledger
 kind: STATE
-current: r7399
+current: r7401
 class: whole-corpus-instrument
 job: The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it.
 sources: [cowork, chat]
@@ -55,7 +55,7 @@ reading of `L-269`–`L-273`; no open problem opened or closed, which is itself 
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7399
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7401
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
@@ -429,16 +429,25 @@ resolves) and as the **clue-map** (everywhere an open touches points at where it
 >   register note beside the section, and hands the content to the matter sector --- "we claim no derivation
 >   here and record only the identification".*
 >
-> ⛭⛭ **CORRECTED r7389 (66) — FAMILY 8 IS LIVE, AT `PO-89`, AND THE LINE BELOW IS CORRECTED BY THIS SEAT RATHER THAN BY A SEAT.**
-> *`PO-23`'s strike **is** still upheld: its own condition asked for "a definition of the mode sums, or a demonstration that the obstruction is the general one", and a definition was delivered — the interacting sum continued to $-\tfrac43$ exactly on a regulator calibrated before use. ⛔ **But the family is not closed.** `P10`, read whole at `r7389`, states open the definition's **completion**, in the same words as the row's title, and no row carried it: "what remains open is one thing, and it is not a category — and it is the **completion** of a definition" (l.`1827`); "the one open thing is the ultraviolet definition of the interacting tower's mode sums — with the renormalised value at the paying dimension unclaimed and the invariant it is the coefficient of unnamed" (l.`1836`). And at l.`1485` it refuses the inference the line below rests on: "*a definition that holds at one order of an expansion and is silent at the next is a definition with an order attached ... this row exists because a predecessor was struck on an inference of just that shape — a result true where it was computed, read as true where it was wanted.*"*
-> *So the family is **LIVE at `PO-89`**, in three unlike parts: the renormalised value (**data-gated**), the invariant's identity (**blocked on the background**), and the nine-level closed forms (**workable**). `P7` l.`1937` is owed a correction in its own turn; `P10` needs no edit.*
-> ⌗ *The line below stands as what this view said. **It is a closure taken on a row's narrow discharge — the same shape as family `1`'s, and the third instance in three revisions.***
->
-> - ***Family 8, the interacting quantum tower, at `PO-23` --- CLOSED.*** *The strike is upheld at `r7377`:
->   it reads "the sums are defined by the construction's own regulator", and `P7`'s body says exactly that,
->   with its frontiers head classing the quantum sector a BOUNDARY whose two handovers are not this
->   construction's to close.  ⌗ `P10`'s "the one open thing is the ultraviolet definition" is the remaining
->   statement to reconcile, and it is a wording question in `P10` rather than a live family here.*
+> - ***Family 8, the interacting quantum tower --- THE ROW IS CLOSED AND THE FAMILY IS LIVE AT A NEW ROW,
+>   `PO-89`.*** *`PO-23`'s strike is upheld: its own condition asked for "a definition of the mode sums, or a
+>   demonstration that the obstruction is the general one", and a definition was delivered --- the interacting
+>   sum continued to $-\tfrac43$ exactly on a regulator calibrated before use.  ⇒ **But the family is not
+>   closed, because the definition and its completion are two objects.** `P10` states the second open in the
+>   same words as the row's title, and no row carried it: "what remains open is one thing, and it is not a
+>   category --- and it is the **completion** of a definition" (l.`1827`); "the one open thing is the
+>   ultraviolet definition of the interacting tower's mode sums --- with the renormalised value at the paying
+>   dimension unclaimed and the invariant it is the coefficient of unnamed" (l.`1836`).  At l.`1485` it refuses
+>   the inference a narrow discharge invites: "a definition that holds at one order of an expansion and is
+>   silent at the next is a definition with an order attached ... a result true where it was computed, read as
+>   true where it was wanted".  ⇒ `PO-89` is opened at `r7389` on the item itself, **in three unlike parts**:
+>   the renormalised value (**data-gated** --- a renormalised value is read from the world), the invariant's
+>   identity (**blocked on the background** --- the five dimension-six scalars are of rank one on this
+>   one-parameter family, so the representative is indistinguishable rather than forced), and the nine-level
+>   closed forms (**workable** --- a proof from the recoupling algebra, two routes taken and neither closed).
+>   ⌗ `P7` §frontiers item `3` is brought to that state at `r7401`: its "all three are settled" is corrected to
+>   two, the item reclassed as carrying a handover and work at once rather than as a boundary, and the
+>   section's own count with it.  `P10` needs no edit --- read whole at `r7389` and right.*
 > - ***Family 5's remainder, the acoustic contrast, at `PO-56` --- THE ROW IS CLOSED AND THE FAMILY IS LIVE
 >   AT A NEW ROW, `PO-87`.*** *`PO-56` was struck `r7037` on its own terminal clause --- the accounting
 >   closes exactly and still cannot attribute --- and that row's object was the accounting.  **Five rows
