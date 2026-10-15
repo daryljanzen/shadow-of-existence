@@ -38,6 +38,14 @@ CLAIM on that number, which this seat does not make.*
 - ***④:*** the open halves next, cheapest first by my price list, each with a registered band. The first is row 79
   (`S²` leaves, near-point convention). Row 77's uniqueness half is added to the list, priced as a Lie-derivative
   argument with no connection.
+- ***④, campaign 14*** (registered `r7367+71.2`, BUILT at `+71.3`): ***row 79 is DONE***, in `probes/Row79Leaf.lean`
+  (`170` lines against `140`, `12 s`).
+  - SdS's static leaves have `K_ab = 0`.
+  - The leaf metric on the `Fin 3` engine has `³R = 2(1 − F − rF′)/r²`, which is `6/α²` for SdS, independent of `M`.
+  - ***The pre-opening reading survived*** (p `0.55`): the running rate is `15` of `22`. This is the forward price's
+    first test since `r7351`.
+  - The compile price was wrong by `≈ 10×`: a scalar-only instance has no `fin_cases` table to price.
+  - Census: DONE ***`51`***, halves ***`6`***.
 - *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
 
 ## ✔ `re r7365` (and `r7355` ②–③) — THE CENSUS AT THE CAMPAIGN'S EDGE: DONE `51`, HALVES `6`, ENGINE-REACHABLE `0`, REOPENABLE `0` + ONE HALF, GENERIC-METRIC `2`, NO-CONNECTION `32`, REAL END `20`. ⌗ SURVIVAL `14` OF `21`. ⌗ `50` OF `57` DONE ROWS RE-RUN CLEAN FROM HEAD, `0` FAIL, `7` UNRESOLVED (`r7365+71.1`, `+71.2`)

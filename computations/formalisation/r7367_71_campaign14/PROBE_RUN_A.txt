@@ -1,0 +1,6 @@
+# r7367+71.3 — campaign 14: lake env lean probes/Row79Leaf.lean (2026-10-15T16:22:21Z); wall time printed, asserted of nothing
+'ShadowProbe.sds_leaf_K_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.leaf_scal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.sds_leaf_R3' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 12 s
