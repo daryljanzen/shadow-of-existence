@@ -35,8 +35,10 @@ Written r7123.  Stated for reversal.
 """
 import os
 import re
+import shutil
 import subprocess
 import sys
+import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
@@ -96,9 +98,32 @@ def main():
                 print(f'      {w_}')
         return 0
 
-    out = os.path.join(os.environ.get('RUNNER_TEMP', '/tmp'), 'tilt_ratchet.txt')
-    r = subprocess.run([sys.executable, INSTRUMENT, '--tilt', LIST, out],
-                       cwd=ROOT, capture_output=True, text=True, timeout=14400)
+    # ⛔ r7341 (66), MY OWN GATE AND MY OWN DEFECT.  This line read
+    #     out = os.path.join(os.environ.get('RUNNER_TEMP', '/tmp'), 'tilt_ratchet.txt')
+    #   -- a FIXED path, which the instrument fills with one cached JSON per receipt and then REUSES.
+    #   The path outlives the tree.  On this container it held a 69-file cache from twelve days earlier,
+    #   and the gate read it as a measurement of the tree: it reported DETACHED 0 against a baseline of
+    #   2 and went red with "2 STALE BASELINE ENTRIES ... REMOVE the entry".  Both sites are LIVE and
+    #   DETACHED -- the instrument run over a fresh directory reports both, and with the cache cleared
+    #   this gate reports DETACHED 2, no stale entry, green.
+    #   ⇒ ** SO THE GATE'S OWN REMEDY LINE WOULD HAVE DELETED TWO CORRECT ADJUDICATIONS AND LEFT TWO
+    #   GENUINELY DETACHED SITES UNADJUDICATED -- the silent permission to regress that the baseline
+    #   exists to prevent, created by following the gate that warns of it. **
+    #   FACE OF MEMBER 86: the verdict came from a cache rather than from the corpus it governs.
+    #   THE FIX IS A FRESH DIRECTORY PER RUN, and it is the right cost rather than a compromise: this
+    #   gate is documented above as a monthly backstop precisely because it pays one receipt run per
+    #   site, so there was never a per-push cadence for a cache to protect.  A cached measurement whose
+    #   key does not move with the tree is not a measurement of the tree.
+    #   AND THE RULE THE REMEDY LINE NEEDS, which is written into it below: a gate that prescribes a
+    #   DESTRUCTIVE remedy states what its own measurement rests on, because the remedy is only correct
+    #   if the measurement is sound and this one said so unconditionally.
+    tmp = tempfile.mkdtemp(prefix='tilt_ratchet_')
+    try:
+        out = os.path.join(tmp, 'tilt_ratchet.txt')
+        r = subprocess.run([sys.executable, INSTRUMENT, '--tilt', LIST, out],
+                           cwd=ROOT, capture_output=True, text=True, timeout=14400)
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
     live, unreached = {}, []
     for ln in r.stdout.splitlines():
         m = SITE.match(ln)
@@ -142,6 +167,13 @@ def main():
             print(f'    [STALE] {p}')
             print(f'            {e}')
         print('     ⌗ A fixed site left in a baseline is a silent permission to regress there (r7069).')
+        print('     ⛔ AND THIS REMEDY IS DESTRUCTIVE, SO READ WHAT IT RESTS ON FIRST (r7341): it is')
+        print('        correct only if the run above measured the TREE.  That run is made in a FRESH')
+        print('        directory per invocation for exactly this reason -- at r7341 a fixed cache path')
+        print('        twelve days stale reported both of these live sites as absent, and following')
+        print('        this line would have deleted two correct adjudications and left two DETACHED')
+        print('        sites unadjudicated.  If DETACHED above is ZERO while the baseline is not,')
+        print('        suspect the run before you suspect the baseline.')
         bad += 1
     else:
         print('    no stale entry: every adjudication still describes a live site.')

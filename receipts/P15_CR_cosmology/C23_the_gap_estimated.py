@@ -84,7 +84,13 @@ def main():
     # ⓵ the paper's two inputs
     check('⓵ the rate is the paper\'s: "the rate responsible is $k^{2}/(3\\mathcal{H})$, which grows with '
           '$k$"',
-          'the rate responsible is $k^{2}/(3\\mathcal{H})$, which grows with $k$ and refers to no content at a' in p15 and '3\\mathcal{H}' in p15)
+          # r7337+cc66, REPAIR: two defects in one condition.  The long conjunct ended MID-WORD at
+          #   `no content at a`, a character-window artefact; and the bare '3\\mathcal{H}' beside it
+          #   stood THREE times in the paper and is flagged SECSHARED, so no section scope could
+          #   single-site it -- and it was redundant, because the rate expression contains it.
+          #   ⇒ One span now carries exactly what the label quotes: the rate named, and the
+          #   property the claim turns on.  9 words, ONE occurrence under `_unmark`.
+          'the rate responsible is $k^{2}/(3\\mathcal{H})$, which grows with $k$' in p15)
     # ⛔⛭⛭ RE-PINNED r3950.  This pin read `the geometric stacking rate near recombination is`.
     #   ** THE PAPER NEVER SAID THAT. **  r3841 swept receipts/ replacing the retired phrase
     #   `radiation-free` with `geometric stacking` -- 114 instances across 37 files -- while the

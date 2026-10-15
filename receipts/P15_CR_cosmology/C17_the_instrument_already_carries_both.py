@@ -126,10 +126,11 @@ def main():
           'how the fluctuations gravitate on the' not in p15
           and "carried on this cosmology's own background with the perturbations on the leaf "
               'congruence the framework assigns them' in p15
-          and 'Both arms run on one set of equations, so no comparison between them is a difference '
-              'of machinery' in p15
-          and 'the change is an exact chain rule between two monotone conformal times, so every '
-              'spline and grid is untouched' in p15)
+          # r7337+cc66, REPAIR: both spans BUNDLED the clause this check's own label quotes with a
+          #   consequence clause the label does not.  Each is now the clause the label quotes, and
+          #   each occurs ONCE under `_unmark`: 8 words and 12 words against 16 and 17.
+          and 'Both arms run on one set of equations' in p15
+          and 'the change is an exact chain rule between two monotone conformal times' in p15)
     check('and the corpus states what would differ: "the whole difference is carried by $H(a)$"',
           'the whole difference is carried by $H(a)$' in p15)
 

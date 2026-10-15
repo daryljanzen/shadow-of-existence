@@ -1021,6 +1021,38 @@ theorem row110_petrov (M Λ : ℝ) (p : Fin 4 → ℝ)
   refine ⟨hW2, hW3, ?_⟩
   rw [hW2, hW3]; field_simp; ring
 
+open Filter Topology in
+/-- **The radial null tidal matrix vanishes** for `diag(−F, 1/F, r², r²S)`, whatever `F` and `S`. For a radial null
+`k = (k⁰, k¹, 0, 0)` (`(k¹)² = F² (k⁰)²`), every screen component of `R(eᵢ, k)k` is zero: Ricci focusing and the
+shear source vanish together. -/
+theorem static_radial_tidal (p : Fin 4 → ℝ) (eP : P =ᶠ[𝓝 (p 1)] fun s => s ^ 2) (k0 k1 : ℝ)
+    (hk : k1 ^ 2 = F (p 1) ^ 2 * k0 ^ 2) (i j : Fin 4) (hi : i = 2 ∨ i = 3) (hj : j = 2 ∨ j = 3) :
+    ∑ a, ∑ b, (![k0, k1, 0, 0] : Fin 4 → ℝ) a * (![k0, k1, 0, 0] : Fin 4 → ℝ) b * RK hF hP hS hF0 hP0 hS0 p i a b j
+      = 0 := by
+  set r := p 1 with hr_def
+  have hr : r ≠ 0 := fun h => hP0 r (by rw [eP.eq_of_nhds, h]; simp)
+  have hPv : P r = r ^ 2 := eP.eq_of_nhds
+  have hP1 : deriv P r = 2 * r := by rw [eP.deriv_eq]; simp
+  have hP2 : deriv (deriv P) r = 2 := by
+    rw [(eP.deriv.trans (Eventually.of_forall fun s => by simp) : deriv P =ᶠ[𝓝 r] fun s => 2 * s).deriv_eq]; simp
+  have hf := hF0 r; have hs := hS0 (p 2)
+  rcases hi with rfl | rfl <;> rcases hj with rfl | rfl <;>
+    (simp [Fin.sum_univ_four, static_table, kG, ← hr_def, hPv, hP1, hP2]
+     try (field_simp; rw [hk]; ring))
+
+open Filter Topology in
+/-- **Row 98.** SdS with `Λ = 3/α²`: it is Einstein, `R_ab = (3/α²) g_ab` (the receipt's Ⓒ①), and on both radial
+null congruences the optical tidal matrix vanishes identically (Ⓒ③). -/
+theorem row98_einstein_tidal (M α : ℝ) (p : Fin 4 → ℝ)
+    (eF : F =ᶠ[𝓝 (p 1)] fun s => 1 - 2 * M * s⁻¹ - 3 / α ^ 2 / 3 * s ^ 2) (eP : P =ᶠ[𝓝 (p 1)] fun s => s ^ 2)
+    (eS : S =ᶠ[𝓝 (p 2)] fun s => Real.sin s ^ 2) :
+    (∀ j k, ricC (RK hF hP hS hF0 hP0 hS0 p) j k = 3 / α ^ 2 * if j = k then cK F P S j p else 0) ∧
+      ∀ k0 k1, k1 ^ 2 = F (p 1) ^ 2 * k0 ^ 2 → ∀ i j, (i = 2 ∨ i = 3) → (j = 2 ∨ j = 3) →
+        ∑ a, ∑ b, (![k0, k1, 0, 0] : Fin 4 → ℝ) a * (![k0, k1, 0, 0] : Fin 4 → ℝ) b * RK hF hP hS hF0 hP0 hS0 p i a b j
+          = 0 :=
+  ⟨(sds_contractions hF hP hS hF0 hP0 hS0 M _ p eF eP eS).1,
+    fun k0 k1 hk i j hi hj => static_radial_tidal hF hP hS hF0 hP0 hS0 p eP k0 k1 hk i j hi hj⟩
+
 end Inst_Kretschmann
 
 end ShadowProbe
@@ -1048,3 +1080,5 @@ end ShadowProbe
 #print axioms ShadowProbe.row104_nariai_root
 #print axioms ShadowProbe.nariai_curvature
 #print axioms ShadowProbe.row110_petrov
+#print axioms ShadowProbe.static_radial_tidal
+#print axioms ShadowProbe.row98_einstein_tidal

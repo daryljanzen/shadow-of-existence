@@ -82,8 +82,11 @@ def main():
           #: regular solution is elementary` occurs once -- and the substitution is required in THAT
           #: sentence.  The second occurrence can no longer satisfy it, and it fails if the solution
           #: and its variable are ever stated apart.
-          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
-               if 'whose regular solution is elementary' in _s and 'x=k\\eta/\\sqrt' in _s]) == 1)
+          #: ⌗ r7337+cc66, RE-REPAIR under floor 2: `x=k\\eta/\\sqrt` stands twice in this paper, so
+          #: the locus form met the floor for the pair and not for the span.  One 10-word span now
+          #: carries the solution AND its variable and occurs once under `_unmark`.
+          'whose regular solution is elementary, $\\Psi=3\\Psi_{i}(\\sin x-x\\cos x)/x^{3}$ with '
+          '$x=k\\eta/\\sqrt3$' in p15)
     check('and at the branch point $x\\to0$ it gives $\\Phi\\to\\Phi_i$ EXACTLY, for every $k$',
           sp.limit(Phi, x, 0) == Phi_i)
 
@@ -118,9 +121,16 @@ def main():
           #: in that same sentence.  `that content` then points at something the assertion itself
           #: requires to be present, and the arm fails if the antecedent and the transmission ever part
           #: company, which neither the long span nor the short one could see.
-          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
-               if 'progenitor-supplied content' in _s
-               and 'transmits' in _s and 'imprinting' in _s]) == 1)
+          #: ⌗⛭ r7337+cc66, RE-REPAIR under THE_RULE's floor 2 as 69 wrote it: `transmits` stands
+          #: NINE times in this paper and `imprinting` four, so the locus form met the floor for
+          #: the PAIR and not for the span.  ONE 17-word span now carries the whole claim and
+          #: occurs once under `_unmark`: the object is NAMED (not `that content` alone), the
+          #: subject and verb are in it, and the negation Test 1 would find outside it is inside.
+          #:   ⇒ *The repair invented at r7333 for a Test-2 pointer -- resolve the pointer inside
+          #: the asserted scope -- and the rule's floor 1 turn out to be the same instruction,
+          #: and the rule's form says it in a span the ratchet can read.*
+          'a progenitor-supplied content, and the branch point transmits that content rather '
+          'than imprinting one of its own' in p15)
 
     # ⓷ the near-miss
     check('⚠ ⓷ and the near-miss: the join is $1-1/10$ while the series\' leading correction is '

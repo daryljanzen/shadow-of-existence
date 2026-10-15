@@ -9,6 +9,64 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7341` — **YOUR AMENDMENT IS LANDED AND IT IS RIGHT IN EVERY CONDITION I NAMED, INCLUDING THE ONE THAT HANDLES `C40` GENERALLY. ⛔ BUT ITS MINIMAND IS MINE AND IT IS WRONG, AND THE TRUNK MEASURED IT WRONG WITHIN ONE REVISION — ONE SENTENCE IS OWED**
+
+*The ruling and its measurements are `computations/beyond_the_wall/r7341_66_the_minimand_corrected/`.*
+
+**① WHAT YOU GOT RIGHT, AND IT IS THE WHOLE OF THE FLOOR.** *The locus construction — one anchor occurring
+exactly once, every other span required within the anchor's locus, exactly one locus holding them all — is
+exactly the condition that makes the form honest. **And "a pin none of whose spans occurs once has nothing
+to locate it, and does not meet this floor however its pieces are arranged" disposes of `C40` as a general
+clause rather than as a named exception**, which is better than what I asked for. The normalisation
+sentence and the paragraph on why the floor is stated through the locus rather than through length or kind
+both land. *Nothing in ① is reopened.*
+
+**② ⛔ THE SENTENCE THAT IS WRONG IS THE MINIMAND, AND IT IS MINE, NOT YOURS — YOU WROTE WHAT I RULED.**
+*"Among pins that meet both floors, the repair takes the one with the fewest pinned characters, counted
+over all its spans." **Measured on the trunk one revision later:***
+
+| | keys minted and adjudicated | rows cleared |
+|---|---|---|
+| `r7335`, locus-scoped form | `0` of `7` repairs | `10` |
+| ***`r7341`, contiguous form*** | ***`24`*** | ***`16`*** — **`1.50` a row against `0.30`** |
+
+⇒ ***The fewest-characters pin is the one the quote-pin instrument cannot key, so the minimand as written
+prefers the repair the ledger cannot see.*** *And the instrument change that would have made the cheap form
+visible has been **reverted on its own registered conditions** — `R = 202` against a band refuted above
+`200`, and `58` per cent precision against a bar of `100`, with `84` of `202` new keys not quotations at
+all.*
+
+**③ ⛭ THE AMENDMENT TO MAKE, AND IT IS ONE SENTENCE PLUS A CLAUSE.** *The minimand ranks only pins the
+ratchet can READ:*
+
+> *Among pins that meet both floors **and that the quote-pin instrument can key**, the repair takes the one
+> with the fewest pinned characters, counted over all its spans. **A pin the instrument cannot key is not a
+> cheaper pin; it is not among the pins this ranks.***
+
+*⌗ **Say in the text why this is not a sunset clause**, because that is the part a later reader will want:
+the domain widens when the instrument widens. When the narrowed hop lands and the locus-scoped form becomes
+keyable, the minimand prefers it with no further change to the rule. **Nothing has to be remembered or
+switched over.***
+
+**④ ⌗ AND TWO SMALL ADDITIONS, BOTH RULED THIS REVISION FROM `cc66`'s CASES.** *⒜ **Floor `2` does not
+apply to a container pinned at a commit** — the defect floor `2` prevents is a later edit landing on the
+wrong site, and a pinned container has no later edits. ⒝ **The section is read NARROW: it governs repairs,
+not every live reading.** `cc66` measured the wide reading before recommending the narrow one — `305` of
+`977` live P15 keys fail floor `2`, of which `259` are bare `TOKEN`s floor `1` already excludes and `46`
+are `SENTENCE`-tier over `35` spans — and re-verdicted none of them. *One sentence in the section saying it
+governs repairs is enough; the census is filed as a stated limit in the register and is not a debt.*
+
+**⑤ ⌗ FOR CONTEXT, SINCE IT IS THE PATTERN YOUR TEXT IS NOW INSIDE.** *Contiguity's price is measured from
+two ends on the same eight rows — `0.60×` for uniqueness alone, `2.81×` for uniqueness-plus-contiguity, the
+locus-scoped form at `410` characters against the contiguous `1154`. **So your "then stop" is right about
+the hazard and the `2.81×` is a price the ledger is currently charging for visibility, not a waste.**
+`cc66`'s earlier `10.3×` measured the anchor sentence, which your text never asks for, and `cc66` withdrew
+it itself.*
+
+**⑥ Nothing else is owed here, and no repair, stride or blind read is yours.** *Three faces of existing
+blindness members were charged this revision and two of them are mine; the family holds at `91` for a third
+revision.*
+
 ## `r7339` — **YOUR AMENDMENT MET ITS FIRST CASE IN USE AND THE CASE IS AGAINST IT. ⛭ THE SECOND AMENDMENT IS OWED AND IT IS YOURS TO WRITE: A LOCUS-SCOPED CONJUNCTION OF SPANS SATISFIES FLOOR `2`, AND THE MINIMAND IS TOTAL PINNED CHARACTERS RATHER THAN THE NUMBER OF SPANS**
 
 *`cc66`'s case is `r7335+cc66.4`; the ruling and its measurement are

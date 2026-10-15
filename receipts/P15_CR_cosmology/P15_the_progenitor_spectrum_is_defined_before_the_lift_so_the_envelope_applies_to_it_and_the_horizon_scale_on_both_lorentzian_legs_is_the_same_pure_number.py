@@ -355,7 +355,10 @@ gate(f"*** `PO-73` `Q1` ANSWERED: BEFORE.  The locus where the spectrum is defin
      f"and the seam ***",
      D_sky / L_COLL < 0.02 and 78.0 < L_sky < 79.0 and abs(ref['st'] - 2.7737) < 1e-3)
 
-_PREMISE = 'the crossing accumulates no divergent phase'     # the paper's load-bearing clause,
+# r7337+cc66, REPAIR: the premise stood TWICE in the paper -- once in the prose and once inside
+#   `prop:transmit` -- so the read pinned the FILE and not the clause the row is about.  The span now
+#   carries both halves of the paper's own premise, and occurs ONCE under `_unmark`.
+_PREMISE = ('the crossing accumulates no divergent phase and stamps no scale')  # the paper's clause,
 _ANSWERED = 'carried across unaltered' not in b15.lower()    # and whether this row has landed in it
 print(f"\n      the paper's own premise, read from the CURRENT source: {_PREMISE!r} present "
       f"{b15.count(_PREMISE)}x;  `prop:transmit` now carries the factor: {_ANSWERED}")

@@ -16441,3 +16441,73 @@ whatever remains on that side is not mine and not the five I added. *The `8` bar
 current tip are `origin/main`'s own, and `main` is green with them — so the live question is what the
 gate reads on this branch that it does not read on `main`. I have not established that and am not
 guessing at it; say the word and I will measure it rather than leave it to the next red.*
+
+## `r7339` — ⛔ THE RULING ARRIVED AFTER I HAD ALREADY CONVERTED, AND MY OWN NUMBER SAYS THE CONVERSION WAS A REGRESSION OF `2.81×` ON THE MINIMAND YOU JUST NAMED
+
+**LANDED** `P15` `22` rows in `12` receipts → **`7` in `5`**: `15` rows cleared in `8` receipts, `14`
+keys minted-and-adjudicated, **`0` routed**. Trunk `REPAIR-OWED` `284` → **`269`**. Pushed at
+`b609df6e3`, registration first at `62a21d479`.
+
+**① ⛭ THE RULING IS TAKEN, AND ⛔ I HAD ALREADY DONE THE THING IT SAYS NOT TO DO.** *"Seven of your eight
+rows are not re-opened. Convert nothing."* — **I converted all eight, and pushed them at `df3a119ff`
+before `r7339` landed.** Nothing is re-opened by it and every converted receipt is green, so the cost is
+not a red; **the cost is the minimand, and here it is.**
+
+**② ⛔ MY `10.3×` ATTRIBUTION, PRICED A THIRD WAY, ON MY OWN EIGHT — AND IT CONFIRMS YOUR RULING AND
+CONDEMNS MY CONVERSION IN THE SAME NUMBER**
+
+| form, on the same `8` rows | total pinned characters |
+|---|---|
+| **⒜ locus-scoped pair** (`r7335`, what I had) | **`410`** |
+| ⒝ shortest UNIQUE span containing the atom (your pricing) | `208` → **`0.60×`** of your `344` |
+| **⒞ shortest CLAIM-COMPLETE unique contiguous span** (`r7337`, what I pushed) | **`1154`** → **`2.81×`** of ⒜ |
+
+⇒ ***So contiguity is the whole of it, measured twice independently: uniqueness alone is `0.60×` and
+uniqueness-plus-contiguity is `2.81×`. Your ruling and my regression are the same measurement read from
+two ends.*** **Member `90`'s second face is taken: I charged a cost to the floor that co-varied with a
+requirement the amendment never stated.**
+
+⌗ ⛔ ***AND THE CONSEQUENCE IS MINE TO OFFER RATHER THAN DEFEND: I paid `2.81×` on the minimand to buy a
+visibility that ⑤ now makes free.*** *Recommendation: **revert the seven to the locus-scoped form and
+keep `C40`'s**, which restores `410` and leaves `C40` repaired. It retires `8` of the `9` keys those
+conversions minted — which is exactly the loss ⑤'s instrument change is ordered to recover, so the
+sequence you designed is cheap-and-visible and mine was expensive-and-visible.* **Say the word and it is
+one cycle; I have not done it, because reverting a pushed, green, compliant form on my own reading of a
+minimand is the kind of call that belongs to you.**
+
+**③ ⛭ `C40` IS REPAIRED, AND IT WAS REPAIRED BY THE SAME PUSH THAT WAS UNNECESSARY FOR THE OTHER SEVEN.**
+Its atom `against the measured` stands `8` times with no unique anchor, exactly as you have it. It now
+reads `$\ell_{*}=\pi D_{M}/r_{s}=302.2$ against the measured $301.76$` — `6` words, **one** occurrence
+under `_unmark`, and it names both figures the claim compares. ⌗ *So the conversion that was wrong for
+seven was right for one, and I could not have told which without your ②.*
+
+**④ ⛔ AND YOUR ⑥ CATCHES ME ON THE ORDER OF OPERATIONS: I TOUCHED THE BLOCK BEFORE THE RE-REGISTRATION.**
+*"Re-register that band before you touch the block rather than scoring it against the withdrawn text."*
+**The block was already touched when `r7339` arrived — `15` rows in `8` receipts.**
+
+⇒ ***So the secondary is reported with no band attached and claims nothing:*** keys minted-and-adjudicated
+per row cleared came in at **`14/15 = 0.93`** against last revision's `0.30`. ⛔ **It is not a hit. The
+mechanism I registered for it — "a bare token cannot be repaired by a locator" — is the one ① withdraws,
+and a number scored against withdrawn text is not evidence.** *What `0.93` is evidence of, if anything,
+is ⑤'s mechanism rather than mine, and that is a different prediction which I will register before the
+next block rather than claim after this one.*
+
+**⑤ THE PRIMARY, WHICH YOU LEFT STANDING, AND IT CAME IN EMPTY.** `0` of `19` routed against a named set
+⊆ `5` with size `≤2`, decisive fraction `0.0039`. ⌗ *The set is not merely within the bound — it is
+**empty**, and three of the five are now resolved as form in the record: `C23`'s bare `3\mathcal{H}` was
+redundant with a conjunct containing it; `45^\circ` became the paper's clause naming what is at that
+angle and to what; the `2.774`/`5051` pair became one span naming both figures and the claim about them,
+**with the computed assertions and their tolerances untouched — which is what makes it form**.*
+
+**⑥ ⛭ AND A DEFECT CLASS SHARPER THAN MULTI-SITE, WHICH YOUR ⑧ IMPLIES AND MY INSTRUMENT NOW SEPARATES.**
+`floor2.py` over `P15`'s `976` live keys: **`302` fail, `287` MULTI-SITE and `15` VANISHING.** *A
+vanishing span is one the rule's own comparison **cannot find at all** — normalised count `0` where raw
+is `1`.* ⇒ ⛔ ***Every vanishing span I sampled is one produced by EXTENDING a shorter literal by a
+character distance***, which lands the boundary mid-token where `_unmark` then deletes a delimiter the
+raw text had. **They are `70`'s rows and I have repaired none of them; reported because `70` has just
+returned and this is cheap for it to read.**
+
+**⑦ BOTH COUNTS, AS STANDING.** Assignment `P15_CR_cosmology`. **Effort `8` receipts; realised `8`** —
+nothing of mine was superseded this revision. Owed `284` → `269`; keys minted-and-adjudicated `14`.
+⌗ *And `⑤`'s instrument change is ordered and not yet begun: it is registered before it is made, per
+your own instruction, and the registration will price what it recovers of the already-invisible rows.*

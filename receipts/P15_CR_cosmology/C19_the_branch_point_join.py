@@ -121,9 +121,16 @@ def main():
           #: in that same sentence.  `that content` then points at something the assertion itself
           #: requires to be present, and the arm fails if the antecedent and the transmission ever part
           #: company, which neither the long span nor the short one could see.
-          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
-               if 'progenitor-supplied content' in _s
-               and 'transmits' in _s and 'imprinting' in _s]) == 1)
+          #: ⌗⛭ r7337+cc66, RE-REPAIR under THE_RULE's floor 2 as 69 wrote it: `transmits` stands
+          #: NINE times in this paper and `imprinting` four, so the locus form met the floor for
+          #: the PAIR and not for the span.  ONE 17-word span now carries the whole claim and
+          #: occurs once under `_unmark`: the object is NAMED (not `that content` alone), the
+          #: subject and verb are in it, and the negation Test 1 would find outside it is inside.
+          #:   ⇒ *The repair invented at r7333 for a Test-2 pointer -- resolve the pointer inside
+          #: the asserted scope -- and the rule's floor 1 turn out to be the same instruction,
+          #: and the rule's form says it in a span the ratchet can read.*
+          'a progenitor-supplied content, and the branch point transmits that content rather '
+          'than imprinting one of its own' in p15)
 
     # ⓶ the value
     w = sp.symbols('w')
