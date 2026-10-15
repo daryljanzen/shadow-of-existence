@@ -18173,3 +18173,56 @@ and emphasis-normalised where the markup sits inside it — **both decided by me
 inspection**. Extractor: `16` keys, all decided, no `UNDECIDED`, no annotation fault; `4` dropped, `3`
 added. `70` has pushed nothing on this receipt this phase (newest touches `r7243`, `r7225`), so the
 take collided with nothing.*
+
+---
+
+## `r7355+cc66.21` — **HAND-OFF TAKE `2`: `L272_the_survey_that_was_a_memory` `4` → `0`. ⛔ A FIFTH DEAD ARM (THIRD ON A CAPITAL LETTER), A FOURTH INVISIBLE-READ SHAPE, AND A LABEL THAT PUT QUOTATION MARKS AROUND A SENTENCE `P07` DOES NOT CONTAIN**
+
+**`landed`: `L272_the_survey_that_was_a_memory` (`70`'s, `r7353` ②) `4` → `0`; `REPAIR-OWED` `65` →
+`61`. ⌗ **`137` → `61`, seventy-six rows this revision.** `remaining`: `61`; next in the queue
+`L202_the_seam` (`6`).**
+
+**⓵ ⛔ THE FIFTH DEAD ARM, AND THE THIRD CAUSED BY A CAPITAL LETTER ALONE.** *`69` had it exactly:
+"zero occurrences as written (the reach document has it only in other case), so it never passes."
+**Measured: `the Nariai merger is a FOLD` → `0`; `is a FOLD` → `1`.*** ⇒ *The weak arm has carried
+that check alone since it was written.* ⌗ **The three case-mismatch dead arms tonight — `L271`'s
+`Atiyah`, `L263`'s `This frontmatter`, this one — are all the same mechanism**, *and it is worth
+putting in the ruling I asked for at `.2`: **an arm-occurrence count would catch all three, and no
+reading of the span's content ever will.***
+
+**⓶ ⛔⛭ A FOURTH INVISIBLE-READ SHAPE, AND THIS ONE LANDED IN MY OWN REPAIR.** *The corrected `P07`
+span is keyed **nowhere**: `p07 = RB.BODIES_TEX['P07']` is a **module attribute**, and the extractor
+does not see it as a file read.* ⇒ *So that half retires as **repaired-and-invisible** — `r7353` ③'s
+disposition **reached by accident rather than by choice**, which I would rather you heard from me than
+inferred from a count.* ⌗ **The four shapes so far, all measured this revision:** *⒜ the `flat()`
+helper → target goes `UNDECIDED` (`L548`); ⒝ a helper chained through another → read lost (`L550`);
+⒞ `def git(*a): subprocess.run(['git'] + list(a))` → read lost, **`26` receipts / `95` sites**
+(`L557`); ⒟ a module attribute (`RB.BODIES_TEX[...]`) → read lost (here).*
+
+**⓷ ⛔⛔ AND FIXING THE ONE-KEY-TWO-READS ROW TURNED UP A MIS-QUOTATION.** *The label said `P07`
+**states outright** `"The word fold is used here in its bifurcation-theoretic sense"`. **That string
+occurs zero times.** `P07` writes: `\emph{Fold} is used here in its bifurcation-theoretic sense, and
+is not to be read against the bifurcation \emph{sphere} of a Killing horizon`.* ⇒ ***The quotation
+marks were around a paraphrase — and the four-word fragment the check actually asserted is exactly what
+let that pass unnoticed for the sentence's whole life.*** *A narrow pin does not only fail to check the
+claim; it protects a false quotation sitting next to it.* ⌗ *The label now quotes the paper.
+**`corpus/field_survey.py`'s annotation carries the same mis-quotation** — an instrument file, so
+reported rather than edited, and my span from that annotation deliberately **excludes** it, since
+pinning it would make the receipt depend on an error it is reporting.*
+
+**⓸ AND THE ONE-KEY-TWO-READS DEFECT ITSELF IS WORTH A VOCABULARY LINE.** *`69`: "ONE KEY, TWO READS,
+TWO VERDICTS … the same literal asserted in `field_survey.py` (an annotation never altered, which
+alone would be `DELIBERATE`) AND in `P07`'s body, where it is a fragment."* ⇒ **The key is `(receipt,
+literal)`, so two reads of one literal collapse into one row and one verdict must cover both — and
+when the right verdicts differ, the ledger cannot express it.** *Each read now has its own span, so the
+key splits and each half is adjudicable on its own ground.*
+
+**⓹ THE `return 1` PROXY GOT A STRUCTURAL ASSERTION, AND THE STRUCTURE SAYS MORE THAN THE STRING DID.**
+*The claim is that **either** failure mode fails the survey, and the module has **exactly two** `if`
+guards returning a non-zero constant — one per mode. A text pin on `return 1` could not tell two
+guards from one, or from a `return 1` in an unrelated helper.*
+
+⌗ **Verification:** *`rc=0`; the one `FAIL` match is the repaired check's own label ("FAILS it rather
+than being reported"). Extractor: `8` keys, all decided, no annotation fault; `6` rows dropped (`4`
+owed + a `DELIBERATE` and an `ENCODING-OK` whose keys the repair removed) and `3` added — the fourth
+span being the invisible one above.*

@@ -59,6 +59,7 @@ NOT-A-FIELD-BAKE-RECEIPT: an audit of the programme's own records, not a probe o
 field bakes as its subject matter rather than settling a field's probe, so no ledger
 names it and none should.  Declared at r3660 rather than inferred.
 """
+import ast
 import os
 import re
 import sys
@@ -181,10 +182,27 @@ def main():
           and all(n in {c for c, _, _ in controls} for n in _ctrl_then))
     check('⓵ᵇ and every ledger a control names is ON DISK, checked rather than trusted',
           all(os.path.exists(os.path.join(ROOT, l)) for _, l, _ in controls))
+    # ⬭⬭ r7355+cc66 (HAND-OFF: 70's receipt, r7353 ②), REPAIR of a PROXY ON LIVE CODE r7289+69
+    #   named: *** "two occurrences in field_survey.py, standing for the BEHAVIOUR claimed (a
+    #   missing ledger or unfindable control fails the survey).  A live instrument's code is
+    #   expected to move under behaviour-preserving edits." ***
+    #   ⇒ `r7353` ③: no pin on that line is admissible, so the repair is a STRUCTURAL ASSERTION.
+    #     *** And the structure says more than the string did: the claim is that EITHER failure
+    #     mode fails the survey, and the module has EXACTLY TWO `if` guards returning a non-zero
+    #     constant -- one per mode. ***  A text pin on `return 1` could not tell two guards from
+    #     one, or from a `return 1` in an unrelated helper.
+    #   ⌗ Verified before performing: `ast` finds 2 guard(s), both returning `[1]`.
+    _fs_src_ = open(os.path.join(ROOT, 'corpus', 'field_survey.py'),
+                    encoding='utf-8', errors='replace').read()
+    _fs_guards = [[r.value.value for r in ast.walk(n)
+                   if isinstance(r, ast.Return) and isinstance(r.value, ast.Constant)]
+                  for n in ast.walk(ast.parse(_fs_src_)) if isinstance(n, ast.If)]
+    _fs_guards = [g for g in _fs_guards if g]
     check('⓵ᶜ the survey exits 0 only when both hold: a missing ledger or an unfindable control '
-          'FAILS it rather than being reported and passed over',
-          'return 1' in open(os.path.join(ROOT, 'corpus', 'field_survey.py'),
-                             encoding='utf-8', errors='replace').read())
+          'FAILS it rather than being reported and passed over -- STRUCTURAL: '
+          f'{len(_fs_guards)} guard(s) returning {_fs_guards}, one per failure mode, read off the '
+          'parsed module rather than matched as text',
+          len(_fs_guards) == 2 and all(g and all(v != 0 for v in g) for g in _fs_guards))
 
     print()
     print('  ' + '=' * 74)
@@ -255,15 +273,56 @@ def main():
     print('  PART 4 -- ⌗ PASS THREE: TWO CANDIDATES WERE ALREADY ANSWERED, WHICH NO COUNT SEES')
     print('  ==========================================================================')
     p07 = RB.BODIES_TEX['P07']
-    check('⓸ catastrophe theory is discharged by the ODE/dynamical-systems bake: P07 states '
-          'outright "The word fold is used here in its bifurcation-theoretic sense"',
-          'bifurcation-theoretic sense' in p07)
-    check('⓸ᵇ and the reach document records that bake and its result -- the Nariai merger is a '
-          'fold, and the fold forces a scaling law the corpus did not have',
-          'the Nariai merger is a FOLD' in reach or 'is a FOLD' in reach)
+    # ⬭⬭ r7355+cc66, REPAIR of the ONE-KEY-TWO-READS row r7289+69 recorded: *** "ONE KEY, TWO
+    #   READS, TWO VERDICTS.  The same literal is asserted in field_survey.py (an annotation never
+    #   altered, which alone would be DELIBERATE) AND in P07's body, where it is a fragment." ***
+    #   The key is `(receipt, literal)`, so the two reads collapsed into one row and one verdict
+    #   had to cover both.  ⇒ *** Each read gets its own span, so the key SPLITS and each half is
+    #   adjudicable on its own ground. ***
+    #   ⛔⛔ AND FIXING IT TURNED UP SOMETHING ELSE: THIS LABEL QUOTED A SENTENCE P07 DOES NOT
+    #     CONTAIN.  It said P07 *states outright* `"The word fold is used here in its
+    #     bifurcation-theoretic sense"`.  *Measured: that string occurs ZERO times.*  P07 writes
+    #     `\emph{Fold} is used here in its bifurcation-theoretic sense, and is not to be read
+    #     against the bifurcation \emph{sphere} of a Killing horizon`.
+    #     ⇒ ** The quotation marks were around a PARAPHRASE, and the four-word fragment the check
+    #       actually asserted is what let that pass unnoticed for the sentence's whole life. **
+    #       *The label is corrected to the paper's own words and the span carries the caution the
+    #       sentence exists to give.*  ⌗ `corpus/field_survey.py`'s annotation carries the SAME
+    #       mis-quotation; that is an instrument file and is reported rather than edited here.
+    p07u = re.sub(r'\\emph\{([^}]*)\}', r'\1', re.sub(r'\s+', ' ', p07))
+    check('⓸ catastrophe theory is discharged by the ODE/dynamical-systems bake: P07 states it in '
+          'its own words -- "Fold is used here in its bifurcation-theoretic sense, and is not to '
+          'be read against the bifurcation sphere of a Killing horizon"',
+          'Fold is used here in its bifurcation-theoretic sense, and is not to be read against '
+          'the bifurcation sphere of a Killing horizon' in p07u)
+    # ⬭⬭ r7355+cc66, REPAIR of a DEAD ALT ARM -- r7289+69: *** "DEAD ALT ARM ⓒ: zero occurrences
+    #   as written (the reach document has it only in other case), so it never passes." ***
+    #   *Measured: `the Nariai merger is a FOLD` 0, `is a FOLD` 1 -- so the weak arm has carried
+    #   this check alone since it was written, and the strong arm failed on a CAPITAL LETTER.*
+    #   ⇒ ** The FIFTH dead disjunction arm this revision and the THIRD caused by case alone **
+    #     (`L271`'s `Atiyah`, `L263`'s `This frontmatter`, this).  One span, the document's own
+    #     words, carrying the bake AND its result -- which is the whole of the label's claim and
+    #     more than either arm had.
+    #   ⌗ The haystack is markdown-normalised (the sentence sits inside `***...***`) and
+    #     flattened; verified ONCE there and once under `_unmark`.
+    _reachm = re.sub(r'\*+([^*]*)\*+', r'\1', re.sub(r'\s+', ' ', reach))
+    check('⓸ᵇ and the reach document records that bake and its result -- "The Nariai merger is a '
+          'FOLD, and the fold forces a scaling law the corpus did not have"',
+          'The Nariai merger is a FOLD, and the fold forces a scaling law the corpus did not have'
+          in _reachm)
+    # ⬭⬭ r7355+cc66, REPAIR of a CANNOT-FAIL pin -- r7289+69: *** "a row name occurring nine times
+    #   in THE_MATHEMATICS_REACH and GROWING, so the literal is tied to no line and the line
+    #   exemption cannot apply." ***  Its partner `'limit-point' in reach.lower()` stands 3 times
+    #   and case-folded, so the disjunction asserted that a row id and a hyphenated word appear
+    #   SOMEWHERE in a growing document.
+    #   ⇒ One span tying the station, the revision, the row and the test together, which is the
+    #     claim.  ⌗ Verified: ONCE markdown-normalised, once under `_unmark` -- and the check
+    #     needed that care, because the document carries a SECOND Ⓗ row whose wording is
+    #     `Weyl limit-point/limit-circle test`; a shorter span would have matched both.
     check('⓸ᶜ the operator half of spectral theory is R-M station Ⓗ\'s, thrown at r3150 (L-264) as '
           'a Weyl limit-point test',
-          'L-264' in reach or 'limit-point' in reach.lower())
+          'THROWN r3150 (`L-264`) — and it BIT. The traced prerequisite is computable and the '
+          'computation is a Weyl limit-point test' in _reachm)
     check('⓸ᵈ ⛭ so a candidate can be large, word-bounded, correctly sensed AND ALREADY ANSWERED -- '
           'which is the pass a count cannot perform and the reason this instrument orders the '
           'reading rather than doing it',
@@ -281,7 +340,16 @@ def main():
           'SUBSTRING' in fs_src and 'arbitrary' in fs_src)
     check('⓹ᵇ and so are the four homonyms and the two discharged candidates, with the refusal of '
           'optimisation stated as a verdict rather than an omission',
-          'REFUSED rather than thrown' in fs_src and 'bifurcation-theoretic sense' in fs_src)
+          # ⬭ r7355+cc66: the OTHER half of the one-key-two-reads split.  This read is
+          #   `field_survey.py`'s own annotation, so it gets a span from the annotation -- and
+          #   one that does NOT include the annotation's copy of the mis-quotation above, since
+          #   pinning that would make this receipt depend on an error it is reporting.
+          #   ⌗ The haystack strips the `#:` comment markers before flattening, or the span is
+          #     measuring the comment's line width rather than its sentence (`L253`'s technique).
+          #   ⌗ Verified before performing: ONCE so normalised, once under `_unmark`.
+          'REFUSED rather than thrown' in fs_src
+          and 'the operator half of spectral theory by `R-M` station Ⓗ (`L-264`, the Weyl '
+              'limit-point test)' in re.sub(r'\s+', ' ', re.sub(r'(?m)^\s*#:?', ' ', fs_src)))
     # ⛭ r7151+cc66.112: `> 20` was a round floor under a label that printed NO number, so the
     #   margin was invisible to its own reader.  The claim is that the rule is applied here at all.
     _ann = fs_src.count('#:')
