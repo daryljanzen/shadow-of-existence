@@ -89,13 +89,28 @@ def main():
     #   items, the third closed as inherited, and the paper names all three as one handover.  The two
     #   left are still owed in P15, and this receipt's reading of them -- dimensionless, so not from the
     #   substrate -- is unchanged. **
-    check('P15 now owes only "the \\emph{derivation}---as against the measurement---of $A_s$ and '
-          '$n_s$" -- the inherited datum having left the list as closed (r6719)',
-          'as against the measurement---of $A_s$ and $n_s$' in p15
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.
+    #   ** TWO OWED ROWS WERE SPANS OPENING MID-CLAUSE: `as against the measurement---of $A_s$ and
+    #   $n_s$`, whose subject (what is OPEN) sat outside it, and the handover span, which opened on
+    #   a participle. **  *The negative beside the first is kept: it is what makes the claim a
+    #   change of state rather than a presence.*
+    #   ⇒ *** Each is extended to the clause that names its subject, over a markup-normalised read
+    #     where the paper sets the key word in emphasis.  One site each. ***
+    _p15u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p15)
+    _OWES = ('Open: the derivation---as against the measurement---of $A_s$ and $n_s$')
+    check('P15 now owes only "Open: the derivation---as against the measurement---of $A_s$ and '
+          '$n_s$" -- asserted with the `Open` that makes it the list, in place of a span opening '
+          'mid-clause -- the inherited datum having left the list as closed (r6719)',
+          _OWES in _p15u
           and 'as against the measurement---of $A_s$, $n_s$, and the inherited datum' not in p15)
-    check('and P15 itself joins the three: $n_s$ and $A_s$ are "fixed by the progenitor collapse---the '
-          'same handover that fixes $\\rho_r/\\rho_m$"',
-          'fixed by the progenitor collapse---the same handover that fixes $\\rho_r/\\rho_m$' in p15)
+    _HANDOVER = ('$n_s$ and $A_s$ are inherited, fixed by the progenitor collapse---the same '
+                 'handover that fixes $\\rho_r/\\rho_m$ and the light-element abundances---and not '
+                 'derived here')
+    check('and P15 itself joins the three: "$n_s$ and $A_s$ are inherited, fixed by the progenitor '
+          'collapse---the same handover that fixes $\\rho_r/\\rho_m$ and the light-element '
+          'abundances---and not derived here" -- asserted as the whole clause with both subjects '
+          'and the denial inside it',
+          _HANDOVER in p15)
 
     # all three are dimensionless
     check('$A_s$ is dimensionless (a power, ~2e-9)', True is not None and '$A_s' in p15)
@@ -112,9 +127,19 @@ def main():
     # n_s is inherited, in P15's own words
     check('sec:predictions: "the branch point carries the progenitor tilt"',
           'the branch point carries the progenitor tilt and does not drive $n_s\\to1' in p15)
-    check('and does not drive $n_s\\to1$ by any INFLATIONARY attractor -- so inherited, '
-          'not generated',
-          'does not drive $n_s\\to1$ by any \\emph{inflationary} attractor' in p15)
+    # ⛭⛭ r7338+60: ** the third owed row opened on a bare `does not drive`, so it named nothing
+    #   that fails to drive the tilt -- and it carried the paper's emphasis markup inside it, which
+    #   a re-emphasis would break while the claim stood. **
+    #   ⇒ *** One span with the subject (the branch point) and both halves of what it does and does
+    #     not do, over a markup-normalised read -- and the sibling check above already asserts the
+    #     same sentence raw, so the two are now the same claim read two ways rather than two
+    #     fragments of it. ***
+    _TILT = ('the branch point carries the progenitor tilt and does not drive $n_s\\to1$ by any '
+             'inflationary attractor')
+    check('and the branch point "does not drive $n_s\\to1$ by any inflationary attractor" -- so '
+          'inherited, not generated: asserted as the clause with its subject, over a '
+          'markup-normalised read in place of a span opening on a bare verb phrase',
+          _TILT in _p15u)
 
     # the one-constant argument that closed the third
     arc = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()

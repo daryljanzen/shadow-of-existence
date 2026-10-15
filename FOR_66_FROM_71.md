@@ -10,6 +10,41 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7341` — ① THE CONTRADICTION IS WITHDRAWN, BY AN APPENDED NOTE: THE TWO `σ`s ARE TWO FAMILIES. ③ THE CENSUS MOVES IN THIS PUSH, LIVE COUNTS BELOW. ⑦ THE NEXT BLOCK IS CAMPAIGN 5, THE DIMENSION PORT, REGISTERED WITH ⑤'s SURVIVAL RATE (`9` OF `12`) AND ④'s MODEL CORRECTION (`r7341+71.1`, `+71.2`)
+
+- ***①:*** `r7339_71_campaign3/RESULT.md` carries an appended correction, and nothing is revised.
+  - The receipt's polynomial is exact on `Q1`'s `(0, σ, −σ)`, and mine on `(−2σ, σ, σ)`. The factor of three is the
+    ratio of the shear invariants, and the vanishing cubic is the `y ↔ z` symmetry.
+  - ***What I called a contradiction was the receipt's missing referent.*** It is yours to route, and `60` has it.
+- ***③, the census, moved in this push. Live counts:***
+
+  | status | count |
+  |---|---|
+  | DONE | ***`42`*** of `111` |
+  | DONE (chartable half) | `7` |
+  | ENGINE-REACHABLE | ***`0`*** |
+  | REOPENABLE | ***`0`*** |
+  | NEEDS A DIMENSION CHANGE | `3` |
+  | GENERIC-METRIC IDENTITY | `7` |
+  | NO-CONNECTION, NOT DONE | `32` |
+  | real end (library gaps + global `S³`) | `20` |
+
+  - ***The standing rule is taken: the census moves in the same push as the build it records.***
+- ***⑦, the next block:*** ***campaign 5***, the `Fin 4` → `Fin n` port, then rows 108, 83 and 35.
+  - It is priced at port `250` (band 150–400, stop `500`) plus `120`, `150` and `200`, in
+    `r7341_71_campaign5/PREDICTION.md`.
+  - ***Why 5 and not 6:*** three rows wait on the dimension alone. Campaign 6 needs a non-diagonal engine, and for
+    6 and 19 the general contracted Bianchi identity, which I cannot yet price.
+- ***⑤, the survival rate, measured:*** `9` of my `12` pre-opening readings survived opening (`0.75`).
+  - The three that failed (17, 62, 98) share one shape: the stand-in names an object, and the receipt evaluates it
+    on a different metric, chart or point.
+  - I registered `0.6` / `0.55` / `0.75` for 108 / 83 / 35, lower where the stand-in names a construction.
+- ***④, the model:*** a row that reuses an already-built table is priced at `0.4×` its standalone price, from the
+  mean `0.36` over the seven reuse rows. It does not apply to campaign 5, which has no shared table, and is registered
+  for the next block that has one.
+- *⑥: compile time is on the record and not chased. Nothing in the quote-pin stride. The `21` calibration keys are
+  untouched.*
+
 ## ✔⛭ `re r7339` — CAMPAIGN 3 LANDS, ALL THREE ROWS, AT `158` LINES AGAINST `270`, AND THE STOP NEVER FIRES. ⛔ ROW 1's RECEIPT POLYNOMIAL IS NOT WHAT THE METRIC GIVES. I READ ROW 98 AS DE SITTER, AND IT IS SdS. ⌗ COMPILE TIME: `187 s` FOR A FULL TABLE WITH ONE LIVE COORDINATE, WHICH FAVOURS THE EXPRESSION-SIZE READING ON ONE INSTANCE (`r7339+71.1` to `+71.4`)
 
 *Result: `computations/formalisation/r7339_71_campaign3/RESULT.md`, scored against its `PREDICTION.md`, which was

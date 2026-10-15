@@ -80,10 +80,18 @@ def main():
     arc = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_LIVE_ARC.md'),
                                    encoding='utf-8', errors='replace').read())
 
-    check('PROTECTED_OPEN asks for narrowing: "narrowing is ALWAYS a node\'s to do and is what this '
-          'register wants"',
-          "narrowing is **always** a node's to do" in po
-          or 'narrowing is always a node' in po.lower())
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.
+    #   ** THE OWED ROW WAS `narrowing is always a node`, the weaker arm of a DISJUNCTION read
+    #   case-folded: it stops before `'s to do`, so it names no agent and the stronger arm beside
+    #   it carried a markup spelling that a rewrite of the emphasis would break. **
+    #   ⇒ *** One span over a MARKDOWN-normalised read -- the register's own rule clause with its
+    #     agent inside it -- in place of a disjunction whose weak arm decided. ***
+    _po_md = re.sub(r'\*+', '', po)
+    _NARROWING = "narrowing is always a node's to do"
+    check('PROTECTED_OPEN asks for narrowing: "narrowing is always a node\'s to do" -- asserted with '
+          'the agent inside the span over a markdown-normalised read, in place of a case-folded '
+          'fragment disjoined with a markup spelling',
+          _NARROWING in _po_md)
 
     # the chain, at source
     check('p0: the substrate is the five-dimensional dS_5 = SO(5,1)/SO(4,1)',
@@ -104,10 +112,19 @@ def main():
     # the construction is single-step and says so
     check('P3: "one slicing plane---a door---swings about one fixed line in the substrate, the hinge"',
           'swings about one fixed line in the substrate, the hinge, and the whole family of cuts is t' in p3)
-    check('and "the whole family of cuts is the single arc of that swing"',
-          'the single arc of that swing' in p3)
+    # ⛭⛭ r7338+60: ** and `the single arc of that swing` stands TWICE in its paper and opens on a
+    #   determiner, so it names no construction. **  ⇒ *One span: the paper's own sentence, with
+    #   the construction, its one moving part and the arc all inside it.*  ONE site.
+    _ONE_SWING = ('This paper carries the construction to the Schwarzschild--de~Sitter family, and '
+                  'the vacuum construction it arrives at has a single moving part: one slicing '
+                  'plane swings about one fixed line, and the whole family of cuts is the single '
+                  'arc of that swing')
+    check('and the construction "has a single moving part: one slicing plane swings about one fixed '
+          'line, and the whole family of cuts is the single arc of that swing" -- asserted as the '
+          'one sentence, in place of a determiner-led fragment standing twice',
+          _ONE_SWING in p3)
     check('⇒⇒ SO A DESCENT FROM D>5 MUST BE MULTI-STEP, AND THE CORPUS HAS NO SECOND DOOR',
-          'the single arc of that swing' in p3 and leaf_dim(6) != 4)
+          _ONE_SWING in p3 and leaf_dim(6) != 4)
 
     # the guard is obeyed
     check("the row's guard: the CUT's dimension is settled at four; the SUBSTRATE's is bounded "

@@ -100,11 +100,24 @@ def main():
     p0 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'geometric_core_paper.tex')))
     p10 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'canonical_time.tex')))
 
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.
+    #   ** TWO OWED ROWS: a TRAILING-DANGLING span ending on `of` and promising the power it does
+    #   not carry, and the single ubiquitous word `counterterm` at 201 sites across 7 files -- a pin
+    #   that cannot discriminate, standing for the claim that a verdict was BANKED in this paper. **
+    #   ⇒ *** The first is closed by carrying the power; the second by asserting the SENTENCE the
+    #     banked verdict is, which names the shear, the degeneracy and the Weyl-squared factor the
+    #     verdict is about.  One site each. ***
+    _PURE_POWER = ('every curvature invariant on either face is a pure power of $1/\\alpha^{2}$')
+    _BANKED = ('where the shear breaks the degeneracy among the quadratic invariants, one further '
+               "counterterm whose Weyl-squared coefficient is twice a real scalar")
     check("⓵ p0 supplies the premise: \"every curvature invariant on either face is a pure power of "
-          '$1/\\alpha^{2}$"',
-          'every curvature invariant on either face is a pure power of' in p0)
-    check('⌗ and c54.210 banked the A7 verdict into P10 -- "counterterm" now appears there',
-          'counterterm' in p10)
+          '$1/\\alpha^{2}$" -- asserted with the power inside the span, in place of a span ending '
+          'on `of`',
+          _PURE_POWER in p0)
+    check('⌗ and c54.210 banked the A7 verdict into P10 -- asserted as the SENTENCE that carries it, '
+          'naming the shear, the broken degeneracy and the Weyl-squared factor, in place of the '
+          'word `counterterm` standing at two hundred sites',
+          _BANKED in p10)
 
     # ⓵ the degeneracy, re-derived
     a, K, D = sp.symbols('alpha K D', positive=True)

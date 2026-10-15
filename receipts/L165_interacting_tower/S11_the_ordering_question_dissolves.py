@@ -78,19 +78,37 @@ def main():
     check('⛔ ⓵ P10: the Hamiltonian carries deficiency indices (1,1) "independently of operator '
           'ordering"',
           '1)$ independently of operator ordering' in p10)
-    check('with the coefficient bounded across the whole family: "attaining $\\le1/4$ across the '
-          'natural ordering family, strictly below the essential-self-adjointness threshold $3/4$"',
-          'across the natural ordering family' in p10
-          and 'strictly below the essential-self-adjointness threshold' in p10)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.  ** TWO OF
+    #   THIS CHECK'S ARMS WERE OWED: `across the natural ordering family`, a leading preposition
+    #   carrying the family but not what attains the value across it, and `strictly below the
+    #   essential-self-adjointness threshold`, which stops BEFORE the threshold value the claim
+    #   needs and occurs twice. **
+    #   ⇒ *** One span: the coefficient, the value it attains, the family it attains it across, and
+    #     the threshold it is strictly below -- all four pieces of the one claim.  ONE site. ***
+    _ORDERING = ('the inverse-square coefficient at the origin attaining $\\gamma=\\tfrac14$ across '
+                 'the natural ordering family, strictly below the essential-self-adjointness '
+                 'threshold $\\tfrac34$')
+    check('with the coefficient bounded across the whole family: "the inverse-square coefficient at '
+          'the origin attaining $\\gamma=\\tfrac14$ across the natural ordering family, strictly '
+          'below the essential-self-adjointness threshold $\\tfrac34$" -- one span carrying the '
+          'value AND the threshold, in place of two spans that carried neither',
+          _ORDERING in p10)
     check('⓶ and the consequence stated outright: "The ordering ambiguity cannot render the '
           'quantization unique; the residual reduces to the physical choice of that boundary '
           'condition"',
           'ordering ambiguity cannot render the quantization unique' in p10)
 
-    check('⛭⛭ ⓷ while the residual is closed without a free parameter: the de Sitter horizon\'s '
-          'Hartle--Hawking thermal state "selects the Friedrichs extension"',
-          'selects the Friedrichs extension' in p10
-          and 'closed without a free parameter' in p10)
+    # ⛭⛭ r7338+60: ** `closed without a free parameter` stands at FIVE sites across four files, so
+    #   it cannot discriminate which closure is meant. **  ⇒ *Replaced by the sentence that says
+    #   WHAT is closed and in what sense, with the Friedrichs clause left standing beside it as the
+    #   separate claim it is.*  ONE site.
+    _CLOSED = ('The deficiency freedom is thereby not merely parametrized but closed, and closed '
+               'without a free parameter')
+    check('⛭⛭ ⓷ while the residual is closed without a free parameter -- "The deficiency freedom is '
+          'thereby not merely parametrized but closed, and closed without a free parameter" -- and '
+          "the de Sitter horizon's Hartle--Hawking thermal state \"selects the Friedrichs "
+          'extension"',
+          _CLOSED in p10 and 'selects the Friedrichs extension' in p10)
 
     check('⓸ and the COUPLED case is answered in the same sentence: with the tower coupled "the same '
           'thermal regularity supplies the condition fibre by fibre"',
@@ -103,11 +121,21 @@ def main():
     #   MEASURED here rather than characterised---quartic, at a leading constant fixed by the
     #   propagating-component count rather than assumed."
     #   ⇒ Prose moved, thesis intact and stronger, so the pin moves with it.
-    check('so that "what remains open is not the boundary condition but the definition of the '
-          'interacting tower---the standard problem of the interacting theory rather than a residual '
-          'freedom in the quantization"',
-          'what remains open is not the boundary' in p10
-          and 'a different thing from a residual freedom in the quantization' in p10)
+    # ⛭⛭ r7338+60: ** the fourth owed row was `what remains open is not the boundary`, a span cut
+    #   before the object of its own `not ... but` -- and the ledger's ground is this seat's own
+    #   class: the check's label quotes wording the paper REMOVED, so the historical state and the
+    #   current one were being carried by the same arm. **
+    #   ⇒ *** Repaired as a class rather than as a span: the CURRENT state is asserted in the
+    #     paper's own words -- what remains open is the definition of the interacting tower -- over
+    #     a markup-normalised read, and the history stays in the note above rather than in the
+    #     condition.  ONE site. ***
+    _p10u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p10)
+    _OPEN = ('what remains open is not the boundary condition but the definition of the interacting '
+             'tower')
+    check('so that, in the paper\'s current words, "what remains open is not the boundary condition '
+          'but the definition of the interacting tower" -- asserted as the whole `not ... but` with '
+          'its object inside the span, over a markup-normalised read',
+          _OPEN in _p10u)
 
     print()
     if FAILED:

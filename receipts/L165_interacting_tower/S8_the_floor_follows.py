@@ -88,16 +88,37 @@ def main():
                     encoding='utf-8', errors='replace').read()
 
     # ⓵ the mechanism
-    check('⛭⛭ ⓵ P10 names the mechanism: the boundary coefficient is "promoted from the c-number '
-          '$1/4$ of the free scale factor to an operator ... whose spectrum straddles the $3/4$ '
-          'threshold"',
-          'promoted from the c-number' in p10 and 'straddles the' in p10)
-    check('acting at the origin as an inverse-square operator: "in the geodesic coordinate, the '
-          'inverse-square operator ... at the origin"',
-          '3$ is, in the geodesic coordinate, the inverse-square operator' in p10 and 'at the origin' in p10)
-    check('and $3/4$ is the Weyl alternative -- P10 states both sides: "essentially self-adjoint where" '
-          'the coefficient is above, "and limit-circle where" below',
-          'limit-circle where $\\hat\\Gamma<\\tfrac34' in p10 and 'essentially self-adjoint where' in p10)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.  ** FOUR OWED
+    #   ROWS IN THIS RECEIPT, ALL THE SAME SHAPE: ** `at the origin`, a three-word locative at
+    #   several sites; `essentially self-adjoint where`, ending on `where` so the condition it
+    #   introduces -- which IS the claim -- sat outside it; `straddles the`, a token ending on a
+    #   DETERMINER, which the dangling detector does not test for and which `69` routed rather than
+    #   patched; and `is an artefact of truncation`, opening on a finite verb and naming nothing.
+    #   ⇒ *** Each check now asserts the sentence its own claim is made of, and the three that were
+    #     CONJUNCTIONS of a long arm with a dangling one become single spans.  One site each. ***
+    _PROMOTED = ('the boundary coefficient is promoted from the c-number $\\gamma\\le\\tfrac14$ of '
+                 'the free scale factor to an operator $\\hat\\Gamma$ on the tower whose spectrum '
+                 'straddles the $\\tfrac34$ threshold')
+    _ORIGIN = ("Each mode's kinetic term $\\pi_n^2/2a^3$ is, in the geodesic coordinate, the "
+               'inverse-square operator $\\pi_n^2/2x^2$ at the origin')
+    _WEYL = ('essentially self-adjoint where $\\hat\\Gamma\\ge\\tfrac34$---the graviton momentum '
+             'makes the origin limit-point and removes the boundary freedom---and limit-circle '
+             'where $\\hat\\Gamma<\\tfrac34$')
+    check('⛭⛭ ⓵ P10 names the mechanism: "the boundary coefficient is promoted from the c-number '
+          '$\\gamma\\le\\tfrac14$ of the free scale factor to an operator $\\hat\\Gamma$ on the tower '
+          'whose spectrum straddles the $\\tfrac34$ threshold" -- one span carrying the promotion '
+          'AND the threshold, in place of a long arm conjoined with a token ending on `the`',
+          _PROMOTED in p10)
+    check('acting at the origin as an inverse-square operator: "Each mode\'s kinetic term '
+          '$\\pi_n^2/2a^3$ is, in the geodesic coordinate, the inverse-square operator '
+          '$\\pi_n^2/2x^2$ at the origin" -- asserted with its subject and both forms inside the '
+          'span, in place of a three-word locative',
+          _ORIGIN in p10)
+    check('and $3/4$ is the Weyl alternative -- P10 states both sides in one sentence: "essentially '
+          'self-adjoint where $\\hat\\Gamma\\ge\\tfrac34$ ... and limit-circle where '
+          '$\\hat\\Gamma<\\tfrac34$" -- asserted as that sentence, in place of a span ending on '
+          '`where` whose condition was the claim',
+          _WEYL in p10)
 
     # ⓶ what is left open, exactly
     check('⓶ and the receipt states what is open: the decomposition "needs only that the spectrum of '
@@ -113,10 +134,19 @@ def main():
     check(f'⛭ ⓷ the truncated coefficient goes NEGATIVE ({min(trunc):+.3f} at $\\lambda\\phi=10$) while '
           f'the full one stays POSITIVE ({min(full):+.3f}) -- so the check is not vacuous',
           min(trunc) < 0 and min(full) > 0)
-    check('and P10 says why: "the cubic term\'s apparent unboundedness is an artefact of truncation ... '
-          'whose full coefficient is positive wherever the metric is non-degenerate"',
-          'is an artefact of truncation' in p10
-          and 'positive wherever the metric is non-degenerate' in p10)
+    # ⛭⛭ r7338+60: the fourth owed row, same treatment -- one sentence, markup-normalised because
+    #   the paper wraps its first half in emphasis (`r7258`'s form).
+    _p10u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p10)
+    _ARTEFACT = ("So the cubic term's apparent unboundedness is an artefact of truncation: "
+                 '$\\pi^{2}(1-\\lambda\\phi+\\cdots)$ is the expansion of '
+                 '$\\pi^{2}/(1+\\lambda\\phi)$, whose full coefficient is positive wherever the '
+                 'metric is non-degenerate')
+    check('and P10 says why, in one sentence: "So the cubic term\'s apparent unboundedness is an '
+          'artefact of truncation: $\\pi^{2}(1-\\lambda\\phi+\\cdots)$ is the expansion of '
+          '$\\pi^{2}/(1+\\lambda\\phi)$, whose full coefficient is positive wherever the metric is '
+          'non-degenerate" -- asserted over a markup-normalised read, in place of a dangling '
+          'opening conjoined with its own tail',
+          _ARTEFACT in _p10u)
 
     print()
     if FAILED:

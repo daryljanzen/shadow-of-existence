@@ -82,8 +82,19 @@ def main():
     # and the corpus already fixes that spread, from the observed amplitude
     cap = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_ASSUMPTIONS_RETREATED_UPWARD.md'),
                                    encoding='utf-8', errors='replace').read())
-    check('⛭ the capstone runs the transfer chain BACKWARDS from the OBSERVED amplitude',
-          'run the transfer chain backwards from the' in cap and 'observed' in cap)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.
+    #   ** THE OWED ROW WAS THE TOKEN `observed`, conjoined with a span that stops at `from the`:
+    #   the conjunction asked for a prefix AND for a word that occurs throughout the file, so the
+    #   arm could not fail for the right reason. **
+    #   ⇒ *** One span over a MARKDOWN-normalised read -- the emphasis falls on `observed` inside
+    #     the carrying clause -- running to what the backward chain actually yields. ***
+    _cap_md = re.sub(r'\*+', '', cap)
+    _BACKWARDS = ('run the transfer chain backwards from the observed amplitude and the density '
+                  'contrast peaks where matter domination ends')
+    check('⛭ the capstone runs the transfer chain BACKWARDS from the OBSERVED amplitude -- asserted '
+          'as the clause that names what the backward run yields, over a markdown-normalised read, '
+          'in place of a prefix conjoined with a ubiquitous word',
+          _BACKWARDS in _cap_md)
     check('and gets a density contrast peaking at ~1e-6 where matter domination ends',
           '10^{-6}' in cap and 'where matter domination ends' in cap)
     check('⇒ that backward run IS a statement about E(r)\'s spread -- the freedom is SPENT',
@@ -118,12 +129,18 @@ def main():
     # what survives from r2458
     p16 = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'),
                                    encoding='utf-8', errors='replace').read())
-    check("the SIGN of E is still forced by sec:trev's turnaround requirement",
-          'it is the event that makes them' in p16)
+    # ⛭⛭ r7338+60: ** and `it is the event that makes them` opens on a pronoun whose referent --
+    #   the crossing -- sits outside the span, so it carries no proposition. **
+    #   ⇒ *One span: the crossing named, and what it is not incidental to.*  ONE site.
+    _CROSSING = ('The crossing from collapse to expansion is therefore not incidental to the '
+                 'abundances: it is the event that makes them')
+    check("the SIGN of E is still forced by sec:trev's turnaround requirement -- \"The crossing "
+          'from collapse to expansion is therefore not incidental to the abundances: it is the '
+          'event that makes them", asserted with its own subject inside the span',
+          _CROSSING in p16)
     check('⇒ so BOTH halves are determined -- sign by the construction, profile scale by '
           'measurement -- and NEITHER is an undeclared free parameter',
-          'it is the event that makes them' in p16
-          and 'run the transfer chain backwards from the' in cap)
+          _CROSSING in p16 and _BACKWARDS in _cap_md)
 
     print()
     if FAILED:

@@ -9,6 +9,39 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7345` — **THE AMENDMENT'S CORRECTION IS LANDED AND CARRIES ALL THREE ITEMS, INCLUDING THE DOMAIN-WIDENS NOTE WRITTEN SO NOTHING HAS TO BE SWITCHED OVER BY HAND. NOTHING IS OWED — AND ONE THING IN THE PHASE IS WORTH YOUR KNOWING, BECAUSE IT IS THE KIND OF THING YOU WERE RIGHT ABOUT BEFORE**
+
+*The cycle's ruling is `computations/beyond_the_wall/r7345_66_the_container_carries_it/RESULT.md`.*
+
+**① WHAT YOU LANDED, AND IT IS RIGHT IN ALL THREE.** *The section now says in terms that it governs
+repairs and is not a test applied to quotations already standing; floor `2` does not apply when the file is
+read at a named commit, with the reason beside it; and the minimand ranks only pins
+`corpus/check_quote_pins.py` can key. ⛭ **And the sentence I would have asked for and did not —
+*"A repair the ledger cannot see is one no later reader is sent to check, so its shortness buys
+nothing"* — states the WHY in a form a later reader can use, where my own ruling only stated the rule.***
+
+**② ⌗ THE ONE THING WORTH YOUR KNOWING, BECAUSE YOU NAMED THIS SHAPE ONCE BEFORE AND WERE RIGHT.** *The
+repair phase's forward figure has reached the top of its own band — **`8.3` to `8.5` cycles against the
+`4`–`8` registered at `r7329`** — and the reason is not the difficulty of the work:*
+
+| realised receipts a revision | `r7333` | `r7337` | `r7339` | `r7341` | `r7345` |
+|---|---|---|---|---|---|
+| | `17` | `28` | ***`0`*** | `8` | ***`19`*** |
+
+*`72` of `135` receipts closed, `63` remaining, **and one seat holds `30` of those `63` having repaired
+none in two revisions** while the other two took their `30`s to `11` and `22`. ⇒ *The band is being spent
+on registrations and instrument work rather than on the stride.* ⛭ **This is the same shape you named
+before `r7329`: a measurement campaign about measurement with no stopping point of its own, running while
+the owed rows sat.** *It is smaller this time and it is named with its arithmetic rather than discovered
+late, the re-cut trigger is declared forward rather than taken, and the seat's own live registration is
+being scored before its population moves. **But you saw it first last time, and if you think the shape is
+back rather than merely rhyming, say so.***
+
+**③ Nothing is owed and no repair, stride, blind read or bulk order is yours.** *`THE_RULE.md` at
+`1a3c13a61` plus your two amendments is the working rule and stays applied throughout. One family member
+was charged this revision and it was `60`'s, on its own figure, self-found; the family holds at `91` for a
+fifth revision.*
+
 ## `r7341` — **YOUR AMENDMENT IS LANDED AND IT IS RIGHT IN EVERY CONDITION I NAMED, INCLUDING THE ONE THAT HANDLES `C40` GENERALLY. ⛔ BUT ITS MINIMAND IS MINE AND IT IS WRONG, AND THE TRUNK MEASURED IT WRONG WITHIN ONE REVISION — ONE SENTENCE IS OWED**
 
 *The ruling and its measurements are `computations/beyond_the_wall/r7341_66_the_minimand_corrected/`.*
