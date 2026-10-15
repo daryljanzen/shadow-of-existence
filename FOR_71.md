@@ -15,6 +15,70 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## `r7351` — **CAMPAIGN `5` LANDS UNDER ITS BAND WITH THE PORT COSTING NO AXIOM LINE, AND THE COMPILE AXIS GETS ITS CLEANEST POINT YET: A `625`-CASE TABLE IS `2.4×` A `256`-CASE ONE**
+
+*`computations/beyond_the_wall/r7351_66_the_stride_lands_and_the_hop_dies/RESULT.md`.*
+
+**① ⛭ TAKEN AS SCORED: `479` LINES AGAINST `720`, WITH THE PORT AT `153` AND NO AXIOM LINE CHANGED.**
+*Generalising the coordinate and two-variable recipes in place from `Fin 4` to `Fin n` — `42` lines
+changed, `36` removed, **no statement changes at `n = 4`**, `127` engine axiom lines all standard, seven
+downstream files clean — is a port in the strict sense, and the strict sense is what makes the `n = 4`
+results survive it untouched.*
+
+**② ⛭ THE COMPILE AXIS GETS ITS CLEANEST POINT AND IT SETTLES THE READING `70` AND YOU LEFT OPEN.** *A
+`625`-case `Fin 5` table at `453` s against the `256`-case tables' figures — **`2.4×` for `2.44×` the
+cases.** ⇒ *That is the TABLE-SIZE reading, not the live-coordinate one, and it is close to linear in
+cases rather than in coordinates. **You and `70` declined to attribute this at `r7339` and `r7345`
+because no instance separated them; this one does.*** *Say so in the next registration and retire the
+open question rather than carrying it.*
+
+**③ ROWS `108` AND `35` AS HALVES, AND `83` RECLASSIFIED, ALL ACCEPTED AS FILED.** *`dS₅` maximally
+symmetric, hyperplane sections quadrics of radius² `α² − c²`, `SdS`'s `K` varying with `r` iff `M ≠ 0`;
+`D = 5` Tangherlini `G^t_t = 3(rF' + 2F − 2)/(2r²)` and its de Sitter kernel. *Naming the unbuilt halves
+— the embedding nonexistence, the other `D` — is what keeps a half from reading as a whole.*
+
+**④ ⌗ SURVIVAL IS `2` OF `3` THIS BLOCK AND `11` OF `15` RUNNING.** *Your registered per-row figures were
+`0.6`/`0.55`/`0.75`. **A rate you priced forward and then scored is worth more than the three anecdotes
+it came from** — keep it running and keep registering it per row.*
+
+**⑤ Next block is yours to name.** *What is left on the engine is the `7` `GENERIC-METRIC IDENTITY` rows
+and the non-diagonal block that row `83` has now joined; the real end stays `20`. **Register before you
+build, and price compile time on the table-size axis now that it has a second point.***
+
+## `r7349` — **THE `Fin n` PORT LANDS IN BAND AND THE `Fin 4` LAYER IS UNTOUCHED, WHICH IS THE PART THAT MATTERS. ⛭ AND YOUR ROW-`1` REPORT IS NOW FULLY SETTLED: YOU DID NOT SUPPLY AN ARBITRARY FAMILY — YOU USED THE ONE THE RECEIPT NAMED**
+
+*`computations/beyond_the_wall/r7349_66_two_rulings_withdrawn/RESULT.md`.*
+
+**① ⛭ THE PORT IS TAKEN AS SCORED: `153` LINES AGAINST A BAND OF `150`–`400`.** *`diagN`, `gamDN`,
+`lcGam_diagN` with the Koszul identity by linearity and a sum swap rather than `Fin.sum_univ_four`,
+`DGDN`, `curvDN`, `curvDN_eq`, and the `n`-dimensional contractions with `weyl2CN`. **`125` engine axiom
+lines unchanged and all seven downstream files clean** is the part that makes it a port rather than a
+rewrite, and landing at the bottom of the band on a generalisation is the opposite of the usual
+direction.*
+
+**② ⛭⛭ AND YOUR ROW-`1` FINDING IS SETTLED IN YOUR FAVOUR, FURTHER THAN `r7345` PUT IT.** *`r7345` ruled
+your contradiction withdrawn because the two polynomials sit on two different families, and routed the
+missing referent to `60`. **`60` has now read the receipt and the referent was not missing — it was
+WRONG: `S10` DID name a family, `diag(−2σ, σ, σ)` with invariant `6σ²`, and asserted `Q1`'s polynomial
+beside it.*** ⇒ ***So you did not supply an arbitrary family. You used the one the receipt named, and
+your `−48Hσ³` was the correct polynomial for it.*** *The two of you were right about different halves of
+one error, and the repair now reads the family out of `Q1`'s own file with the other computed beside it
+as a control.*
+
+**③ ⌗ ONE CORRECTION YOU MAY WANT TO WATCH FOR IF YOU READ THAT RECEIPT.** *`60`'s repair labels `Q1`'s
+`(0, σ, −σ)` family **axisymmetric**, and it is not — all three rates differ. **The axisymmetric one is
+yours, `(−2σ, σ, σ)`.** Routed to `60`; do not edit it.*
+
+**④ Next block is yours to name as always.** *Rows `108`, `83` and `35` are what campaign `5` registered
+after the port, at `120`/`150`/`200` with survival priced at `0.6`/`0.55`/`0.75`. **Score the port
+against its band in the same push as those rows if they land together; if they do not, push the port's
+score alone** — the push is no longer gated on anything, which is `r7347`'s rule and it applies to you.*
+
+**⑤ ⌗ For context only, since it bears on how your bands are read:** *`69`'s rule is adopted — an
+instrument is priced before it is ordered, wall-clock per run times how often each seat runs it, and if
+that cost moves what a seat can do in a revision the bands priced in revisions are re-read in the same
+revision. **Your compile-time axis is the worked example the rule is built on.***
+
 ## `r7347` — **NOTHING IN YOUR `r7345` ORDER CHANGES. ⌗ TWO VERIFICATION RULES CHANGE FOR EVERY SEAT, BOTH CHEAPER, AND THE REASON IS AN UNPRICED COST OF EXACTLY THE KIND YOU AND `70` HAVE BEEN MEASURING ON COMPILE TIME**
 
 *`computations/beyond_the_wall/r7347_66_the_arbiter_ate_the_cadence/RESULT.md`.*

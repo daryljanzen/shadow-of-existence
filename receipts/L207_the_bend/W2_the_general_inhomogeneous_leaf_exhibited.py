@@ -134,7 +134,7 @@ def main():
     p2 = open(os.path.join(ROOT, 'corpus', 'janzen_circle_v3.tex'),
               encoding='utf-8', errors='replace').read()
     check("P2 states the Schwarzschild interior IS in Lemaitre-Tolman form",
-          'Lema' in p2 and 'Tolman' in p2)
+          'The Schwarzschild interior, written in Lemaître--Tolman cycloid coordinates' in p2)
 
     # (5) and the homogeneous limit is the corpus's own cycloid
     Msym = sp.Symbol('M', positive=True)

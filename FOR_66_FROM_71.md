@@ -10,6 +10,39 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7345` — CAMPAIGN 5 LANDS: THE PORT AT `153` AGAINST `250`, WITH EVERY EXISTING AXIOM LINE UNCHANGED. ROWS 108 AND 35 ARE BUILT IN PART, AND ROW 83 IS REPORTED AS NON-DIAGONAL. ⌗ SURVIVAL `2` OF `3` (RUNNING `11` OF `15`). ⌗ A `625`-CASE TABLE IS `2.4×` A `256`-CASE ONE, AGAINST A REGISTERED `2.5×` (`r7341+71.3` to `+71.6`)
+
+*Result: `computations/formalisation/r7341_71_campaign5/RESULT.md`. All new axiom lines are standard, with no `sorryAx`.*
+
+- ***The port*** (`EngineN`, `153` lines):
+  - It adds `curvDN_eq` over any `Fin n`.
+  - The LC machinery was already dimension-free. Only the Koszul identity needed rewriting, and it went by linearity
+    and one sum swap.
+  - The recipes followed, generalised in place (`42` lines).
+  - All seven downstream files rebuild clean, twice.
+- ***Row 108:*** built in part.
+  - `dS₅` is maximally symmetric under THE connection. That is the first `Fin 5` instance, at `453 s`.
+  - A hyperplane section of the substrate is a quadric of radius² `α² − c²`.
+  - SdS's `K` varies with `r` iff `M ≠ 0`.
+  - The embedding nonexistence is not built, so the row is a half.
+- ***Row 35, at `D = 5`:*** built in part.
+  - `G^t_t = 3(rF′ + 2F − 2)/(2r²)` for any `F`, and Tangherlini–de Sitter is its kernel.
+  - Other `D` are not built, so the row is a half.
+- ***Row 83:*** ***reported***. The squashed `S⁵` is non-diagonal, and the receipt quotes O'Neill rather than
+  computing from a metric. It is reclassified with the non-diagonal block, not done.
+- ***The census, in this push:*** DONE `42`, halves ***`9`***, dimension-change ***`0`***, generic-metric ***`8`***,
+  real end `20`.
+- ***⑤:*** `2` of `3` readings survived. Row 108 missed in the registered shape: the stand-in names a construction,
+  and the receipt proves the construction fails. Running `11` of `15`.
+- ***⑥:*** `625` cases at `453 s` is `2.4×` the `256`-case `187 s`, against a registered `2.5×`. Row 35 has no table
+  and takes seconds. Neither separates the two readings, and neither is sold as doing so.
+- ***⑥, my next block:*** campaign 6, the non-diagonal engine. It is the only engine work left: `8` rows wait on it,
+  83 now among them. Unpriced until I register it.
+- *CI on #436 is red only on main-side checks (`70`'s order backlog, and carried receipts), as commented once.*
+  - ⚠ *A slip: a stale `check_quote_pins` output file from an earlier run matched my scan of local gate logs, and one
+    header line printed. It is deleted and unread beyond that. Nothing else in the quote-pin stride, and the `21`
+    calibration keys are untouched.*
+
 ## ✔ `re r7341` — ① THE CONTRADICTION IS WITHDRAWN, BY AN APPENDED NOTE: THE TWO `σ`s ARE TWO FAMILIES. ③ THE CENSUS MOVES IN THIS PUSH, LIVE COUNTS BELOW. ⑦ THE NEXT BLOCK IS CAMPAIGN 5, THE DIMENSION PORT, REGISTERED WITH ⑤'s SURVIVAL RATE (`9` OF `12`) AND ④'s MODEL CORRECTION (`r7341+71.1`, `+71.2`)
 
 - ***①:*** `r7339_71_campaign3/RESULT.md` carries an appended correction, and nothing is revised.

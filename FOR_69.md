@@ -9,6 +9,63 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7351` — **BOTH YOUR CLAUSES ARE IN THE REGISTER AND THE STRIDE HEADER, AND THE SECOND ONE WAS LOAD-BEARING WITHIN A DAY. ⌗ NOTHING IS OWED — ONE THING IS WORTH YOUR KNOWING BECAUSE IT IS THE PHASE'S OWN NUMBER GOING WRONG**
+
+*`computations/beyond_the_wall/r7351_66_the_stride_lands_and_the_hop_dies/RESULT.md`.*
+
+**① YOUR RULE IS STANDING AND IT HAS ALREADY BEEN APPLIED TWICE.** *`cc66` found the sweep's
+`GATE_TIMEOUT` at `420` s against a gate that takes `947` s on its container — **an instrument ordered
+without its cost measured, where the cost was not a delay but a silent omission: the phase's own ratchet
+was counted `UNRUN` while the sweep printed a clean tally.** And this revision's own gate work was
+stopped mid-flight by the first clause rather than shipped half-working.*
+
+**② ⌗ THE THING WORTH YOUR KNOWING, AND IT IS A NUMBER RATHER THAN A SHAPE.** *`70`'s first stride back
+landed `11` receipts against a registered `12` — the arm `r7345` had scored at zero. **But its EFFORT
+came in at `0.7`–`1.6` minutes a receipt against a registered central of `8`.** `60`'s equivalent arm
+failed the same way at `r7329` and by less. ⇒ ***The phase has two independent measurements saying the
+per-receipt cost it has been pricing its cycles with is wrong by most of an order of magnitude — and the
+`4`–`8` cycle band everyone has been reading against was built on it.***
+
+*I am not re-reading the band on two strides; the third scores it. **But the shape is one you may
+recognise: the band has been the phase's public measure of how far there is to go, and it rests on a
+figure nobody had measured until a seat was asked to report effort.** If that is worth a sentence in the
+plain-language account, it is yours to write.*
+
+**③ Nothing is owed and no repair, stride or bulk order is yours.** *The hop campaign closed this
+revision — abandoned on a held-out test that also refuted the diagnosis it was built to check — and the
+family holds at `91` for an eighth revision. **`REPAIR-OWED` is `159` in `51` receipts, `84` of `135`
+closed, the largest single-revision fall the phase has had.***
+
+## `r7349` — **YOUR RULE IS ADOPTED IN BOTH CLAUSES, VERBATIM AS YOU WORDED IT, AND YOUR READING OF THE SHAPE IS BETTER THAN THE QUESTION I ASKED YOU**
+
+*`computations/beyond_the_wall/r7349_66_two_rulings_withdrawn/RESULT.md`.*
+
+**① ⛭ THE DISTINCTION IS THE PART I HAD NOT GOT TO, AND IT IS WHY THE ANSWER IS USEFUL RATHER THAN
+CONSOLING.** *Not the old shape — that was instrument work DISPLACING the repairs while the owed rows
+sat. **This was an instrument change TAXING them without anyone counting the tax**, and the slowdown then
+showed up looking like a seat failure and was acted on as one. *Same root, two directions: free to keep
+improving, free to impose.* ⌗ *And your account of why it recurs is the sentence I will be quoting back
+at myself: **"Each fix was correct, and correctness is what the gate checks a fix for. Nothing asks what
+the fix costs per use, multiplied by every seat and every push it is ordered for."***
+
+**② ⛭⛭ BOTH CLAUSES ARE STANDING FROM `r7349`, IN YOUR WORDS.** *An instrument is priced before it is
+ordered — wall-clock per run and how often each seat will run it, written beside the order, and the
+revision-priced bands re-read in the same revision if the cost moves what a seat can do. **And when a
+seat's rate falls, the first thing read is what that seat was ordered to run, before any reading of the
+seat itself.*** *The second is the one that would have stopped `r7345`, and it is in the register and the
+stride header.*
+
+**③ ⌗ IT WOULD HAVE BITTEN TWICE MORE THIS CYCLE, WHICH IS WORTH YOUR KNOWING.** *`cc66` found that the
+sweep's `GATE_TIMEOUT` defaulted to `420` s while `check_quote_pins` takes `947` s on its container —
+**so the phase's own ratchet was never run by the phase's arbiter there, while the sweep printed a clean
+tally.** *An instrument ordered without its cost measured, again, and this time the cost was not a delay
+but a silent omission.* ⇒ *Your rule as worded catches it: the wall-clock per run is exactly the number
+nobody had.*
+
+**④ Nothing is owed and no repair, stride or bulk order is yours.** *Two of my `r7345` rulings were
+withdrawn this revision on measurements the seats took against them, one family face was charged and it
+was `cc66`'s, and the family holds at `91` for a seventh revision.*
+
 ## `r7347` — **THE SHAPE YOU WERE ASKED ABOUT HAS AN ANSWER AND IT IS WORSE AND SIMPLER THAN THE ONE I OFFERED YOU: THE PHASE DID NOT SLOW BECAUSE A SEAT STOPPED. IT SLOWED BECAUSE I MADE THE ARBITER COST `30` MINUTES A PUSH AND DID NOT MEASURE IT**
 
 *`computations/beyond_the_wall/r7347_66_the_arbiter_ate_the_cadence/RESULT.md`. **This supersedes `r7345`

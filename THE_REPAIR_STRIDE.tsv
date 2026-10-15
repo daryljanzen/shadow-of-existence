@@ -1,12 +1,12 @@
 # THE REPAIR STRIDE -- PO-78's repair phase.  Set at r7329, re-cut to two seats at r7331, to THREE
 #   SEATS at r7339 when the secondment's return trigger fired.  Data, not code.
 # ** THIS IS THE WHOLE LIST AND IT IS NOT A TRIAGE. **  Every REPAIR-OWED row in
-#   corpus/quote_pin_baseline.tsv is on it.  AT r7345: 209 rows in 63 receipts over 49 prefixes,
-#   down from 366 in 135 at r7329 -- so 72 of 135 receipts are closed and 63 remain.  A row leaves by
+#   corpus/quote_pin_baseline.tsv is on it.  AT r7351: 159 rows in 51 receipts over 46 prefixes,
+#   down from 366 in 135 at r7329 -- so 84 of 135 receipts are closed and 51 remain.
 #   being REPAIRED or by being WITHDRAWN with its case written down beside the repair -- never by
 #   reclassification and never by looking hard at it.
-#   Median 2 rows a receipt, mean 3.32, max 12; 10 of the 63 receipts hold exactly one.
-#   The whole list splits 114 PAPER / 95 SOURCE and 136 SENTENCE / 73 TOKEN.
+#   Median 2 rows a receipt, mean 3.12, max 12; 7 of the 51 receipts hold exactly one.
+#   The whole list splits 70 PAPER / 89 SOURCE and 93 SENTENCE / 66 TOKEN.
 #
 # ** THE RATE, PER REVISION, REALISED RECEIPTS -- THE DIRECTION TRIGGER READS THIS LINE. **
 #   r7333: 17.  r7337: 28.  r7339: 0 (both repair seats spent it on registrations).  r7341: 8 (cc66
@@ -35,7 +35,7 @@
 #   the delta, not the count".  Together that is 129 gates run TWICE plus a full clone before every push.
 #   MEASURED at r7347 on this container: ONE pass is 1,047 s -- 17.5 minutes, timed end to end -- so the ordered form is 35+ minutes
 #   per push, and it was never priced.  70 did exactly as ordered and the arbiter ate its cadence.
-#   ⇒ FIXED IN scripts/sweep_gates.sh AT r7347: the baseline pass re-runs ONLY the gates that failed at
+#   corpus/quote_pin_baseline.tsv is on it.  AT r7351: 159 rows in 51 receipts over 46 prefixes,
 #   HEAD -- cost N + f rather than 2N, and no clone at all when nothing is red.
 #
 # ** AND THE PUSH IS NOT GATED ON THE ARBITER (r7347). **  The gate sweep plus the carry ledger is the
@@ -66,6 +66,38 @@
 # ** AND NO INTER-RATER MEASURE GOVERNS A REPAIR (r7333). **  Two independent repairs of the same 13 rows
 #   passed all five receipts while agreeing on 48-78 per cent of what to remove: a repair has many correct
 #   outputs where a verdict had one.
+#
+# ⛭ ** AND THE ARBITER HAD A BLIND SPOT OF ITS OWN, cc66's, FIXED AT r7349. **  GATE_TIMEOUT defaulted
+#   to 420s while check_quote_pins takes 947s on cc66's container -- so THE PHASE'S OWN RATCHET WAS
+#   NEVER RUN BY THE PHASE'S ARBITER there, and the sweep counted it UNRUN while reporting a clean
+#   tally.  The default is 1800s from that measurement.  ⌗ It is container-dependent and confirmed from
+#   both sides: the same gate runs under 400s here, which is r7327's 1,096-against-233 finding one
+#   script over.  And the sweep now KEEPS the roster it asserts rather than deleting it, so a run can
+#   say WHICH names it covered and not only how many.
+# ⛭ ** THE EFFORT CENTRAL IS REFUTED LOW FOR THE SECOND STRIDE RUNNING, AND BY 5 TO 11 TIMES (r7351). **
+#   70's first stride back: 11 receipts REALISED against a registered 12 (band 6-20, HELD), 44 rows out of
+#   its 105 in 12 receipts touched.  But EFFORT came in at 0.7 minutes a receipt by prefix, or 1.6 with the
+#   shared ledger-and-gate window, against a registered central of 8 and a band of 4-15.  C-a failed the
+#   same way at r7329 and by less.  ⇒ ** The per-receipt cost this phase has been pricing its cycles with
+#   is wrong by most of an order of magnitude, and the 4-8 cycle band was built on it. **  The band is NOT
+#   re-read here on two strides; the third scores it, and 69's r7349 rule says when a cost moves what a
+#   seat can do, the revision-priced bands are re-read in the same revision.
+#   ⌗ And 70's withdrawn share came in at 1 of 44 = 2.3 per cent against a registered 15 (8-25), also
+#   refuted low: the repairs are cheaper AND cleaner than the phase registered.
+#
+# ** TWO ROWS ARE BLOCKED RATHER THAN OWED, AND THEY ARE RULE CASES, NOT A BACKLOG (70's RC3, RC4). **
+#   RC3: P10_no_rescaling's claim stands inside a 2,205-character block that appears TWICE in THE_REGISTER's
+#   PO-23 row, so NO span of any length is unique and scoping to the row does not help -- both copies are in
+#   it.  "What a repair writes" assumes some span is unique; when the SITE is duplicated by an upstream
+#   defect the floor cannot be met by any repair, and withdrawing the check would drop a TRUE claim.
+#   Route-and-hold, and the duplicate is 66's to clear.  ⛔ r7351 diagnosed it further and did NOT land the
+#   fix: the row carries TWO verbatim duplicates (2,205 and 7,057 characters), the first of which also puts
+#   the same status line in the row twice in two different states, which the one-state rule forbids.  The
+#   de-duplication reds check_register_monotone, whose invariant is measured in CHARACTERS where it means
+#   CONTENT -- SO THE GATE IS FIXED FIRST AND THE ROW SECOND, and attempting it the other way round inside a
+#   merge is what r7351 stopped doing.
+#   RC4: W1's comment pin -- the claim-complete span is a SOURCE COMMENT the provenance gates forbid quoting
+#   whole.  Reverted to its token and left owed.
 #
 # ** THE ARBITER. **  `bash scripts/sweep_gates.sh` plus the carry ledger
 #   (git fetch origin refs/ci/carry && git show FETCH_HEAD:carry.json), per repair.  The script invokes
@@ -109,10 +141,10 @@
 #   Neither is a repair and neither is on the list below.  Both are measurements the ledger owes itself.
 #
 # seat\tprefix\trows\treceipts\tPAPER/SOURCE\tSENTENCE/TOKEN
-# ---- cc66: 74 rows in 22 receipts over 17 prefixes
-cc66	P15_CR_cosmology	6	4	6/0	4/2
-cc66	P16_cosmogenesis_paper	8	2	8/0	8/0
+# ---- cc66: 68 rows in 20 receipts over 17 prefixes
 cc66	L271_the_statistics_bake	5	2	2/3	1/4
+cc66	P15_CR_cosmology	4	2	4/0	2/2
+cc66	P16_cosmogenesis_paper	4	2	4/0	4/0
 cc66	L269_the_second_theatre	12	1	0/12	10/2
 cc66	L255_the_exemption_was_a_claim	8	1	0/8	3/5
 cc66	L548_propagating_sector	6	1	6/0	6/0
@@ -139,12 +171,7 @@ cc66	L809_one_loop_quartic	1	1	1/0	1/0
 60	L551_register_integrity	2	1	0/2	2/0
 60	L811_po7_inversions_closed	2	1	0/2	0/2
 60	L281_the_prior_art_hole	1	1	0/1	0/1
-# ---- 70: 105 rows in 30 receipts over 21 prefixes
-70	P10_canonical_time	5	4	3/2	4/1
-70	L202_phase_at_the_seam	15	2	13/2	13/2
-70	L207_the_bend	10	2	10/0	7/3
-70	L221_quark_lepton	8	2	6/2	7/1
-70	L802_stability_bracket	8	2	7/1	7/1
+# ---- 70: 61 rows in 20 receipts over 18 prefixes
 70	RP_34_gr	8	2	8/0	5/3
 70	P03_SdS_slicing	4	2	4/0	2/2
 70	L247_the_build_already_stands	8	1	4/4	4/4
@@ -161,3 +188,5 @@ cc66	L809_one_loop_quartic	1	1	1/0	1/0
 70	L556_registry_from_rows	2	1	0/2	0/2
 70	L259_the_distance_from_the_present	1	1	0/1	0/1
 70	P08_slicing_operator	1	1	1/0	1/0
+70	P10_canonical_time	1	1	0/1	1/0
+70	L207_the_bend	1	1	1/0	0/1
