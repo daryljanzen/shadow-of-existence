@@ -34,7 +34,7 @@ index	class	status	what it needs next	stand-in
 32	G3	DONE	discharged in B (r7315)	geodesic acceleration equals r times a slice's Gaussian curvature
 33	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	parity split of the lapse polynomial
 34	G3	DONE	discharged in B (r7315)	a slice's Gaussian curvature equals -f'/(2r)
-35	G4	NEEDS A DIMENSION CHANGE	the engine over Fin n (108: R^5; 35: general D; 83: squashed S^5, also chart-excluded)	Einstein tensor; vacuum field equation solved by Tangherlini-dS
+35	G4	DONE (chartable half)	closed by 71 at r7341+71.5 (r7341_71_campaign5/RESULT.md): tangherlini5_Gtt, tangherlini5_kernel at D = 5; open half: every other D (the receipt checks 4-8), which needs a table indexed by coordinate class rather than by number	Einstein tensor; vacuum field equation solved by Tangherlini-dS
 36	G3	DONE	discharged in B (r7315)	slice Gaussian curvature zero locus and the Nariai discriminant
 37	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	continuation through a throat: C1-not-C2 join with signature flip
 38	G3	DONE	discharged in B (r7315)	geodesic acceleration = r K_G (slice curvature)
@@ -82,7 +82,7 @@ index	class	status	what it needs next	stand-in
 80	G5	LIBRARY GAP	homogeneous spaces G/H	dS as a coset space with the Killing-form metric
 81	G2	DONE	closed by 71 at r7333+71.3 (r7333_71_kretschmann/RESULT.md): row81_separator	Ricci = Lambda g; Kretschmann carries M
 82	G4	LIBRARY GAP	spinors	Dirac spectrum on S^5/S^4
-83	G2	NEEDS A DIMENSION CHANGE	the engine over Fin n (108: R^5; 35: general D; 83: squashed S^5, also chart-excluded)	scalar curvature of a squashed S^5
+83	G2	GENERIC-METRIC IDENTITY	reclassified by 71 at r7341+71.5, not done: the dimension is no longer the obstruction (the engine runs over Fin n); the squashed S^5 is a non-diagonal SU(3)-invariant metric, so it waits on the non-diagonal engine of campaign 6; the receipt quotes R_t = 24 - 4t^2 from O'Neill rather than computing it	scalar curvature of a squashed S^5
 84	G4	LIBRARY GAP	spinors	Dirac gap on S^5
 85	G4	LIBRARY GAP	spinors	leaf tetrad and spin connection give the superpotential W
 86	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	branches of a height function on the quadric
@@ -107,7 +107,7 @@ index	class	status	what it needs next	stand-in
 105	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	f = f' = 0 at the Nariai root
 106	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	Wick rotation identifies the dS5 quadric with S^5
 107	G3	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	a confocal quadric family as a foliation
-108	G3	NEEDS A DIMENSION CHANGE	the engine over Fin n (108: R^5; 35: general D; 83: squashed S^5, also chart-excluded)	SdS as a cut of dS5; hyperplane sections of constant curvature
+108	G3	DONE (chartable half)	closed by 71 at r7341+71.5 (r7341_71_campaign5/RESULT.md): section_quadric, dS5_constant_curvature (first Fin 5 instance), sds_K_radial; open half: the receipt's (4)-(5), no static spherically symmetric hypersurface of dS5 induces SdS at M != 0, an embedding-nonexistence argument and not a pointwise curvature claim	SdS as a cut of dS5; hyperplane sections of constant curvature
 109	G4	DONE	discharged in B (r7315)	de Sitter surface gravity and entropy
 110	G2	DONE	closed by 71 at r7333+71.4 (r7333_71_kretschmann/RESULT.md): row110_petrov, real invariants (C^2)^3 = 12 (C^3)^2; the dual (imaginary) parts need the LC volume form, unstated	SdS Petrov invariant vanishes
 # CONVENTION (r7335+71.2, written once): a row moved to DONE names, in "what it needs next", the seat that closed it, the revision, the RESULT that scores it, and the theorem(s). The form is the same whichever seat closed the row, so the seat is named and needs no second mark. A row closed with an open part is DONE (chartable half), and the open part is named after "open half:". Only 71 edits this file; another seat routes its status changes here.
