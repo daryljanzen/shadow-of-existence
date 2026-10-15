@@ -155,7 +155,10 @@ gate(f'Ⓑ②  AND BOTH BANDS WERE FAILABLE WHEN THEY WERE WRITTEN, which is `r7
 head('C -- THE TAIL IS CLEAR, AND WHAT IT HELD IS READ AT THE CENSUS COMMIT')
 
 _was = [c for c in ledger(CENSUS) if c[5] == 'REPAIR-OWED' and c[0] in TAIL]
-_now = [c for c in ledger() if c[5] == 'REPAIR-OWED' and c[0] in TAIL]
+# ⌗ r7349+70 (ported, for 60 to confirm or replace): the AFTER state is read at this receipt's own landing
+#   commit `5eb9ee2c` -- live, the routed BARRED row (L259/D1, in 70's stride) closed at r7349+70.15 and the
+#   'one that remains' went to zero on that success (r7335's three-way rule).
+_now = [c for c in ledger('5eb9ee2c') if c[5] == 'REPAIR-OWED' and c[0] in TAIL]
 print(f'      owed at {CENSUS}: {len(_was)} rows in {len(TAIL)} receipts;  owed now: {len(_now)} '
       f'({[c[0].split("/")[1][:22] for c in _now]})')
 gate(f'Ⓒ①  ⛭⛭ EVERY EDITABLE TAIL RECEIPT CARRIES NO OWED ROW, and what the tail HELD is read at the '
