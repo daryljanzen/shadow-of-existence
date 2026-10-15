@@ -1,7 +1,7 @@
 ---
 name: the-open-problems-ledger
 kind: STATE
-current: r7371
+current: r7379
 class: whole-corpus-instrument
 job: The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it.
 sources: [cowork, chat]
@@ -55,15 +55,15 @@ reading of `L-269`–`L-273`; no open problem opened or closed, which is itself 
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7371
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7379
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
 > **⌗ NOT COVERED — STRUCK since r2417 (223 rows):**
 > `L-150` `L-174` `L-175` `L-176` `L-177` `L-178` `L-179` `L-180` `L-181` `L-182` `L-183` `L-184` `L-185` `L-186` `L-187` `L-188` `L-189` `L-190` `L-191` `L-192` `L-193` `L-194` `L-195` `L-196` `L-197` `L-198` `L-199` `L-200` `L-201` `L-203` `L-204` `L-206` `L-207` `L-210` `L-211` `L-213` `L-214` `L-215` `L-216` `L-217` `L-219` `L-220` `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238` `L-239` `L-241` `L-243` `L-244` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-520` `L-521` `L-522` `L-523` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-10` `PO-13` `PO-15` `PO-16` `PO-17` `PO-18` `PO-19` `PO-20` `PO-21` `PO-22` `PO-24` `PO-25` `PO-26` `PO-27` `PO-28` `PO-29` `PO-30` `PO-32` `PO-33` `PO-34` `PO-36` `PO-37` `PO-38` `PO-39` `PO-40` `PO-41` `PO-42` `PO-43` `PO-44` `PO-45` `PO-46` `PO-47` `PO-48` `PO-49` `PO-51` `PO-52` `PO-53` `PO-54` `PO-55` `PO-56` `PO-57` `PO-58` `PO-59` `PO-60` `PO-61` `PO-62` `PO-63` `PO-64` `PO-65` `PO-66` `PO-67` `PO-68` `PO-69` `PO-72` `PO-73` `PO-74` `PO-76` `PO-77` `PO-79` `PO-80` `PO-81` `PO-82` `PO-83` `PO-84` `PO-85`
 >
-> **⌗ NOT COVERED — OPENED since r2417 (172 rows):**
-> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-528` `L-529` `L-530` `L-531` `L-532` `L-533` `L-534` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-541` `L-542` `L-543` `L-544` `L-545` `L-546` `L-547` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-825` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-36` `PO-43` `PO-47` `PO-48` `PO-49` `PO-50` `PO-51` `PO-52` `PO-53` `PO-54` `PO-55` `PO-56` `PO-57` `PO-58` `PO-59` `PO-60` `PO-61` `PO-62` `PO-63` `PO-64` `PO-65` `PO-66` `PO-67` `PO-68` `PO-69` `PO-70` `PO-72` `PO-73` `PO-74` `PO-75` `PO-76` `PO-77` `PO-78` `PO-79` `PO-80` `PO-81` `PO-82` `PO-83` `PO-84` `PO-85` `PO-86`
+> **⌗ NOT COVERED — OPENED since r2417 (173 rows):**
+> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-274` `L-275` `L-276` `L-277` `L-278` `L-279` `L-280` `L-281` `L-282` `L-283` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-528` `L-529` `L-530` `L-531` `L-532` `L-533` `L-534` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-541` `L-542` `L-543` `L-544` `L-545` `L-546` `L-547` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816` `L-818` `L-819` `L-820` `L-821` `L-822` `L-823` `L-824` `L-825` `L-826` `L-827` `L-828` `L-829` `L-830` `PO-36` `PO-43` `PO-47` `PO-48` `PO-49` `PO-50` `PO-51` `PO-52` `PO-53` `PO-54` `PO-55` `PO-56` `PO-57` `PO-58` `PO-59` `PO-60` `PO-61` `PO-62` `PO-63` `PO-64` `PO-65` `PO-66` `PO-67` `PO-68` `PO-69` `PO-70` `PO-72` `PO-73` `PO-74` `PO-75` `PO-76` `PO-77` `PO-78` `PO-79` `PO-80` `PO-81` `PO-82` `PO-83` `PO-84` `PO-85` `PO-86` `PO-87`
 >
 > ⌗ ***The ID half is machine-checked against the register; run `regen_grain_currency.py --check`. The prose half below is a JUDGEMENT and is written by hand — the script preserves it verbatim and never invents it, because a gate can check a declaration and not a judgement.***
 
@@ -415,6 +415,38 @@ resolves) and as the **clue-map** (everywhere an open touches points at where it
 > (`PO-49`), struck as the boundary of admissible data; family 6 by the matter sector's account of the propagating fermion and gauge
 > content. **Family 7 is not a work item** and says so itself.*
 >
+>
+> ⛭⛭ **BROUGHT CURRENT r7379 (66), AND THE VIEW HAD GONE STALE AGAINST THE SOURCE IT DECLARES.** *This
+> table says above, in its own words, that it is "a view of the register, and the register is the single
+> source of truth". **All three rows it names as live have since been struck, and this view was not
+> updated** --- which is the failure this corpus names against itself: retire something and leave
+> everything that references it stale.  `PO-86` found it from the maps' end and node 69's register census
+> found it from the papers'; the two agree.*
+>
+> - ***Family 3, the inherited datum, at `PO-31` --- CLOSED.*** *The strike is upheld at `r7377` on the
+>   ground `P7` itself states: `PO-31`'s text reads "neither is owed and neither is an open problem", and
+>   `P7` `\S`inherited-datum calls deriving the datum "a bonus rather than a debt", carries that in a
+>   register note beside the section, and hands the content to the matter sector --- "we claim no derivation
+>   here and record only the identification".*
+> - ***Family 8, the interacting quantum tower, at `PO-23` --- CLOSED.*** *The strike is upheld at `r7377`:
+>   it reads "the sums are defined by the construction's own regulator", and `P7`'s body says exactly that,
+>   with its frontiers head classing the quantum sector a BOUNDARY whose two handovers are not this
+>   construction's to close.  ⌗ `P10`'s "the one open thing is the ultraviolet definition" is the remaining
+>   statement to reconcile, and it is a wording question in `P10` rather than a live family here.*
+> - ***Family 5's remainder, the acoustic contrast, at `PO-56` --- THE ROW IS CLOSED AND THE FAMILY IS LIVE
+>   AT A NEW ROW, `PO-87`.*** *`PO-56` was struck `r7037` on its own terminal clause --- the accounting
+>   closes exactly and still cannot attribute --- and that row's object was the accounting.  **Five rows
+>   stood near the item the papers carry and every one was a narrower object, all five strikes upheld**
+>   (`PO-10`, `PO-47`, `PO-56`, `PO-70`, `PO-75`).  ⇒ `PO-87` is opened at `r7379` on the item itself: **a
+>   mechanism for the computed temperature spectrum's shape deficit**, in `P18`'s and `P7`'s own words, with
+>   its workable half and its data-gated half (the fourth peak, where `PO-47` measured that the sky cannot
+>   discriminate) reported apart.*
+>
+> ⇒ ***SO THE FAMILY LAYER NOW READS: ZERO live families of the original eight, and one live row that no
+> family numbered --- `PO-87`.*** *Which is the honest shape of what happened: the eight families were
+> worked down, and the one item that outlived them all was never a family at all but a question that fell
+> between five rows.  ⌗ And the view is kept rather than rewritten, because this table's own rule is that
+> nothing is erased: the lines above stand as what the view said, and this block is what it says now.*
 > ⌗ *Struck in place, not deleted — nothing in this corpus is erased. And recorded honestly: no
 > argument anywhere in the corpus reasons FROM a clue-map, which is the other half of why retiring
 > them costs nothing.*
