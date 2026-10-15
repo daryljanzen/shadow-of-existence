@@ -16825,3 +16825,62 @@ receipt's source LINE BY LINE — and I will report the implemented rule's agree
 decisive gate a question not asked — and now a field that was not there, read through a default that cannot
 fail.* ⛔ **Found only because your ⒝ sent me back to the same traces to implement a filter: I went looking
 for the text and there was none. Had the ruling not required the trace, the number would have stood.**
+
+### `r7345` ⒝ — ⛔⛔ IT DOES NOT LAND AS ORDERED AND MY OWN RECOMMENDATION FOR IT IS REFUTED: THE `_SELF` SIBLING DROPS `485` EXISTING KEYS, `334` ADJUDICATED `DELIBERATE`. HOP-SCOPED IT IS CLEAN — `9` CAUGHT, `0` OVER-CAUGHT — SO IT SHOULD LAND WITH THE HOP, NOT BEFORE IT
+
+**LANDED** the measurement at `r7345_cc66_ruling_b/MEASURED.md` with its four scripts and the `485`-row
+table. **NOTHING IS LANDED IN `scripts/`.** **REMAINING** ⒞'s held-out test and the `22`-row stride; ⒝
+needs your call because it collides with your own ⒟.
+
+**① FIRST, MY CLAIM THAT FALLS.** *`READING.md` ⑥ ①: "This is worth doing **whether or not the hop lands**:
+it is a hole in the instrument as it stands today… its effect on the existing `2772` is unmeasured and is
+the first thing to measure."* ⇒ **I measured it and the sentence before it is wrong. It is not worth doing
+whether or not the hop lands; it is only coherent inside the hop.**
+
+**② THE RULE, THREE MECHANISM TESTS ON THE NARROW TRACE** — ⓐ kinds **exactly** `{py}` (`tex`/`md` beside it
+is `_rstar`'s `UNDECIDED` shape, so decide nothing); ⓑ a **text** read (`splitlines`, `split('\n')`,
+`readlines`, `open(`, `cat-file`, `git('show'`, `git('grep'`); ⓒ **not** an import and **not** a path used
+only as a dict **key**. *Each is a mechanism, not a shape — which is what your ⒜ phrasing asked for.*
+
+**③ ⛭ HOP-SCOPED IT IS THE BEST RULE THIS PHASE HAS MEASURED.** Against the hand-judged `14`, on the hop's
+`121`:
+
+| rule | caught | hit | over | missed |
+|---|---|---|---|---|
+| kinds `== {py}` alone | `11` | `9` | `2` | `5` |
+| `{py}` + linewise | `9` | `8` | `1` | `6` |
+| `py ∈ kinds` + linewise | `11` | `9` | `2` | `5` |
+| `({py}`/no kind`)` + linewise/blob | `36` | `12` | ⛔ `24` | `2` |
+| **ⓐ∧ⓑ∧ⓒ** | **`9`** | **`9`** | **`0`** | `5` |
+
+⇒ **`0` genuine keys forgone — the half of your ⒟ bar that tuning cannot buy.** ⌗ *The `5` named, as ⒟
+requires: `C1`'s filename key is **misfiled by me** (its container is an `INDEX.md` row, so it is imprecise
+as a literal and not as a container — it does not belong in class ⒜); and `S10`×`3` plus `C60` have a
+container path held in a **variable** the narrow trace does not resolve at depth `3`, which is a stated
+limit of the trace.*
+
+**④ ⛔⛔ AND CORPUS-WIDE IT IS A DISASTER, WHICH IS WHY IT CANNOT LAND AS YOU ORDERED IT.** *The filter tests
+the container, so it is not hop-scoped by construction — it applies to every key. On the base extractor,
+the one the ratchet reads since the hop is reverted, it drops **`485` of `2736`**, `17.7 %` of the ledger:*
+**`334` `DELIBERATE`**, `55` `EXTENDED`, `47` `REPAIR-OWED`, `16` `NOT-A-PIN`, `16` `ALT-OK`, `9`
+`MEANING-HELD`, `8` `ENCODING-OK`. *All `SOURCE`: `312` `SENTENCE`, `173` `TOKEN`.*
+
+⇒ ⛔ ***It would delete `334` keys the corpus has explicitly ruled deliberate, against `16` it calls
+`NOT-A-PIN`.*** *Reading them settles it — they are other receipts' **stated claims**, quoted as wording:
+`'the corpus's colour is the CENTRE and its structure…'`, `'reached three independent ways'`, `'nothing in
+the identity says which of them…'`, `'THE TOWER IS INFINITE: one bound zero-mode…'`.*
+
+⇒ ⛭⛭ ***So `_SELF`'s asymmetry is not an oversight, and that is what I had wrong: it excludes a receipt
+reading its OWN source because self-reference proves nothing, while reading ANOTHER receipt's source is a
+legitimate cross-check the corpus performs `485` times. They are not siblings — they are opposites sharing
+a mechanism.***
+
+**⑤ WHAT I RECOMMEND, AND THE CONFLICT NAMED RATHER THAN RESOLVED BY ME.** ⑴ **Scope ⒝ to the hop**, where
+it is `9`/`0`/`5`; ⑵ ⛔ **land it WITH the hop and not before** — the hop is reverted, so a corpus-wide
+filter has no hop keys to act on and only the `485` to destroy; ⑶ ⛭ *and the `485` are a result in their
+own right: **a population of `485` keys that pin another receipt's prose, `334` deliberately**, which
+nobody has named — and it is the obvious held-out candidate for your ⒞, being a corpus-wide class the
+container rule was never fitted to.*
+
+⛔ **`⒝` says land it and `⒟` says zero genuine keys forgone. Corpus-wide those cannot both hold. I have
+landed nothing in `scripts/` and the numbers are above.**
