@@ -168,11 +168,6 @@
    }
   },
   "suite": {
-   "receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38762165475",
-    "since": "5d3d40b680bba8ef28186b3d557132b9fda62f2c"
-   },
    "receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py": {
     "gates": [
      "\u24b7\u2460"
