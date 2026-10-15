@@ -113,8 +113,19 @@ def main():
     p0 = norm('geometric_core_paper.tex')
     check('SOURCE: p0 absorbs a CONSTANT vacuum energy into the one curvature -- "is absorbed into that '
           'one observed curvature" and "enters the profile\'s $\\Lambda r^2/3$ term, not as a $2m/r$ bend"',
+          # ⬭⬭ r7355+cc66, REPAIR of the DANGLING span r7300+60 named: *** "the span opens on a
+          #   NEGATOR followed by a preposition and names no subject at all." ***  `not as a $2m/r$
+          #   bend` is the tail of a contrast whose whole content -- what DOES gravitate as what --
+          #   sat outside it.  Widened to the clause that supplies the mechanism and the subject.
+          #   ⌗ Verified before performing: ONCE in the paper as this receipt normalises it, once
+          #     under `_unmark`.
+          #   ⌷ The first conjunct (`t a source held against a bare $\Lambda$ ...`) is LEFT AS IT
+          #     STANDS: it is mid-word by construction of 70's D-extension and one of the 88 rows
+          #     routed to 66 at r7355+cc66.3, which are not this seat's to re-verdict while that
+          #     ruling is outstanding.
           't a source held against a bare $\\Lambda$ but is absorbed into that one observed curvature' in p0
-          and 'not as a $2m/r$ bend' in p0)
+          and "a constant density gravitates as a curvature scale, so it enters the profile's "
+              '$\\Lambda r^2/3$ term, not as a $2m/r$ bend' in p0)
     check('SOURCE: and there is no bare-Lambda-versus-vacuum split for a cancellation to act on -- '
           '"there is no bare-$\\Lambda$-versus-vacuum-energy split"',
           'there is no bare-$\\Lambda$-versus-vacuum-energy split' in p0

@@ -285,6 +285,7 @@ head("PART 5 — THE NUMBER'S USES, COUNTED IN THE TREE RATHER THAN RECALLED")
 #   to the repository root from this file's own location; the count of 3 is re-measured, not
 #   restated. **
 import pathlib
+import re
 tex = (pathlib.Path(__file__).resolve().parents[2] / "corpus" / "geometric_core_paper.tex").read_text()
 needles = [r"\label{eq:ds-entropy}", r"3\pi/(\Lambda\ell_P^{2})", r"3\pi/(\Lambda\ell_P^2)"]
 hits = [(nd, tex.count(nd)) for nd in needles]
@@ -292,9 +293,29 @@ total = sum(c for _, c in hits)
 for nd, c in hits:
     print(f"    {nd!r:<34} occurrences: {c}")
 check(total == 3, f"the number has {total} uses in the corpus, all inside P17 §ledger")
-check("de~Sitter horizon whose" in tex,
+# ⬭⬭ r7355+cc66, REPAIR of the two DANGLING spans r7291+69 named.
+#   ⒜ `de~Sitter horizon whose` is *** a verbless noun phrase that ENDS ON THE RELATIVE PRONOUN ***
+#     -- it stops exactly where the clause that identifies the horizon begins, so it named a
+#     horizon and said nothing about it.  Widened through the relative clause and the area.
+#   ⒝ `differ by $3/8$` opens on the verb, its subject (`The two`, the two readings) outside it.
+#     Widened to the whole clause, which also carries `and by nothing else` -- the part that makes
+#     it a comparison rather than a coincidence.
+#   ⌗ ⒝ is a MARKUP CARRIER (`\emph{The two differ by $3/8$ and by nothing else}`), so 60's r7255
+#     prescription applies: the emphasis comes out of the HAYSTACK, the span stays whole.
+#   ⌗ Verified before performing: each ONCE in the flattened paper (⒝ in the emphasis-normalised
+#     one), and each once under `check_quote_pins._unmark`.
+#   ⛔ AND THE HAYSTACK HAD TO BE FLATTENED FOR ⒜, caught by measuring rather than by reading:
+#     `tex` here is read RAW (`pathlib ... .read_text()`), and the widened horizon span crosses a
+#     source line wrap, so it stands **0** times raw and ONCE flattened.  *A long span asserted
+#     against an unflattened `.tex` is the silent-never-match shape -- the same defect this seat
+#     has been reporting in other seats' receipts all revision, avoided in its own only because
+#     the count was taken.*  ⌗ ⒝ needs no flattening (ONCE raw) and no normaliser: the `\emph`
+#     wraps the span rather than sitting inside it, which was also measured rather than assumed.
+_texf = re.sub(r'\s+', ' ', tex)
+check("The de~Sitter horizon whose Gibbons--Hawking state supplies $\\hbar$ above has area "
+      "$A=4\\pi\\alpha^{2}$" in _texf,
       "and each is the de Sitter reading's — §ledger names that horizon in its own voice")
-check("differ by $3/8$" in tex,
+check("The two differ by $3/8$ and by nothing else" in tex,
       "including the cosmological-constant-factor comparison, which compares one reading's S to a density, not two readings")
 
 # =============================================================================================
