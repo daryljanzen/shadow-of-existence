@@ -1,0 +1,5 @@
+# r7353+71.5 — piece A: lake env lean probes/Bianchi2.lean (2026-10-15T05:58:50Z)
+'ShadowProbe.bianchi2_alg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.bianchi2_lc' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 21 s
