@@ -28,6 +28,15 @@
    }
   }
  },
+ "claude/youthful-darwin-xvkwh7": {
+  "suite": {
+   "receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38664975922",
+    "since": "e71d129d3f67d5566bacf86909212f3fb5fc5afd"
+   }
+  }
+ },
  "main": {
   "suite": {
    "receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py": {
