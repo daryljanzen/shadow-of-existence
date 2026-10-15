@@ -166,8 +166,18 @@ gate("`CR_framework`'s bead figure writes the INWARD leg with a leading MINUS an
      "`r=-(2M\\alpha^2)^{1/3}\\cosh^{2/3}(3\\operatorname{Re}\\tilde\\tau/2\\alpha)`, and the lift as "
      "the single vertical segment at `\\operatorname{Re}\\tilde\\tau=0` -- so the branch is the "
      "paper's and not a choice of mine",
+     # ⬭⬭ r7355+cc66, REPAIR of the MULTI-SITE row r7255+cc66.185 filed against `\cosh^{2/3}`
+     #   ("a pin on the FILE and not on the claim"), which was this seat's OWN adjudication.
+     #   Measured arm by arm: the STRONG form stands ONCE space-stripped; the bare `\cosh^{2/3}`
+     #   stands TWICE; the anchor stands ONCE.
+     #   ⇒ *** The fallback arm is not needed, so the disjunction goes rather than being
+     #     re-paired: *** the strong form is unique and the anchor is unique, so the two are
+     #     asserted as a CONJUNCTION -- which is order ①'s family-B pairing with both halves
+     #     single-site, instead of a multi-site token leaning on an anchor.
+     #   ⌗ Both claims the label makes are now carried: the leading minus with the cosh, AND the
+     #     lift as the single vertical segment.  The `or` carried only the first.
      '-(2M\\alpha^2)^{1/3}\\cosh^{2/3}' in b07.replace(' ', '')
-     or ('\\cosh^{2/3}' in b07 and 'single vertical segment at $\\operatorname{Re}\\tilde\\tau=0$, and is d' in b07))
+     and 'single vertical segment at $\\operatorname{Re}\\tilde\\tau=0$, and is d' in b07)
 
 # sinh(X - i pi/2) = -i cosh X , so the inward leg is r = A (-i cosh)^{2/3}; the figure's minus sign
 # forces (-i)^{2/3} = -1 (phase pi), NOT the principal e^{-i pi/3}.
@@ -474,8 +484,23 @@ gate("⌗ and the label half of the answer is the half the order said would secu
      "which it does: the bead's angular block is `r^2d\\Omega^2`, the lift moves `r` at fixed angles, "
      "and `(L,M)` is a DISCRETE label on a CONTINUOUS path -- so it crosses untouched with no "
      "integration needed, and `sec:properframe`'s `r^2d\\Omega^2` is where that is read from",
-     'r^2d\\Omega^2' in b15.replace(' ', '') or 'r^{2}d\\Omega^{2}' in b15.replace(' ', '')
-     or 'd\\Omega^2' in b15.replace(' ', ''))
+     # ⬭⬭⬭ r7355+cc66, REPAIR of the MULTI-SITE row filed against `d\Omega^2` -- AND ALL THREE
+     #   ARMS OF THIS DISJUNCTION ARE DEFECTIVE, measured one by one:
+     #     `r^2d\Omega^2`        -- **4** sites space-stripped.  Multi-site, not a pin on a claim.
+     #     `r^{2}d\Omega^{2}`    -- *** 0 sites.  DEAD, and it has been dead since it was
+     #                              written. ***  The fourth dead disjunction arm this revision
+     #                              and the FIRST IN THIS SEAT'S OWN WORK -- the other three were
+     #                              found in 69's and 60's grounds, so the class is not somebody
+     #                              else's habit.
+     #     `d\Omega^2`           -- **9** sites.  Cannot fail in any paper that writes a sphere.
+     #   ⇒ *** So the check has been carried by a 4-site token with a dead arm and a 9-site token
+     #     beside it. ***  The ground offered a section scope; the LINE ELEMENT ITSELF is better
+     #     and simpler, because it is unique in the WHOLE paper: no scope to get wrong, and it is
+     #     the equation `sec:properframe` is being read for.
+     #   ⌗ Verified before performing: ONCE in the paper's body as this receipt reads it, and once
+     #     under `check_quote_pins._unmark`.  (In-section it is also 1, so the scope would have
+     #     worked -- it is simply not needed.)
+     'ds^2=-d\\tau^2+(\\partial_\\chi r)^2\\,d\\chi^2+r^2 d\\Omega^2' in b15)
 
 
 # ============================================================ G. scope

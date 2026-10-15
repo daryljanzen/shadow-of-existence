@@ -317,9 +317,22 @@ _tex_live = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf
 #   horizon entry` spans a wrap in this very file and read FALSE on the first run.
 _tex_pin = ' '.join(_tex_pin.split())
 _tex_live = ' '.join(_tex_live.split())
-_CLAUSES = ('is an amplitude and not a phase',
+# ⬭⬭ r7355+cc66, REPAIR of the two MULTI-SITE rows r7255+cc66.185 filed against this list -- both
+#   this seat's own adjudications, and both exactly as filed: *** "the literal occurs more than once
+#   in its container: a pin on the FILE and not on the claim." ***
+#   Measured live: `is an amplitude and not a phase` **2** sites, `a constant phase shift` **2**,
+#   `rides entirely in the amplitude at horizon entry` **1**.
+#   ⛔ AND THE TWO SITES OF THE FIRST ARE NEARLY THE SAME SENTENCE -- "the collapse leg's
+#     contribution TO IT" in the proposition and "...TO THE STATE THAT MEETS IT" in the prose -- so
+#     a short widening does not separate them.  *The span is taken back to the clause that names
+#     what the contribution is to: the potential at its regular value.*
+#   ⌗ Each widened clause is verified ONCE LIVE **and** ONCE AT THE PIN, because this list is read
+#     against both, and a span unique live but absent at the pin would turn the pinned arm into a
+#     silent zero.
+_CLAUSES = ("the potential at its regular value---and the collapse leg's contribution to it is an "
+            'amplitude and not a phase',
             'rides entirely in the amplitude at horizon entry',
-            'a constant phase shift')
+            'their deep sub-horizon effect is a constant phase shift and a constant suppression')
 gate("Ⓓ③ at the pin, the construction states the handover's contribution is an amplitude and the "
      "driving's k-dependence rides in the amplitude, and the neutrino phase shift is constant",
      all(c in _tex_pin for c in _CLAUSES))

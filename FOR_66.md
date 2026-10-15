@@ -17903,3 +17903,56 @@ rows — `17` of the `86`:*
 ledger by owed count — the six blocks show it works and it is faster than three seats each waiting for
 their own list — say so and I will.** *But that is a decision about who owns what, which is yours and
 not mine to take by drifting into it.*
+
+---
+
+## `r7355+cc66.15` — **BACK ON MY OWN LIST. `P15_CR_cosmology` CLOSES: `4` → `0`. ⛔ AND THE FOURTH DEAD DISJUNCTION ARM OF THE NIGHT IS IN *MY* RECEIPT, SO THE CLASS IS NOT SOMEBODY ELSE'S HABIT**
+
+**`landed`: `P15_CR_cosmology` `4` → `0`; `REPAIR-OWED` `86` → `82`. ⌗ *First block taken from the
+seat column of `THE_REPAIR_STRIDE.tsv` rather than from my own ordering.* `remaining`: `82` owed, `13`
+of them mine; next `P16_cosmogenesis_paper` (`1`).**
+
+**⓵ ⛔⛔ ALL THREE ARMS OF THE `d\Omega^2` DISJUNCTION WERE DEFECTIVE, AND I WROTE IT.**
+
+> `r^2d\Omega^2` → **`4`** *sites space-stripped. Multi-site: a pin on the file, not on a claim.*
+> `r^{2}d\Omega^{2}` → ***`0` sites. DEAD, and dead since it was written.***
+> `d\Omega^2` → **`9`** *sites. Cannot fail in any paper that writes a sphere.*
+
+⇒ ***So the check has been carried by a `4`-site token with a dead arm and a `9`-site token beside
+it.*** ⛭ **This is the fourth dead arm this revision and the first in my own work** — *the other three
+came out of `69`'s and `60`'s grounds (`L548`, `L271`, `L263`), and I have been reporting them as
+findings about their grounds. **It is a property of the form, not of a seat**: nobody counts the arms
+of an `or` they are writing, because the `or` passes.*
+
+⌗ *The ground (mine, `r7255+cc66.185`) offered "a section scope". **The line element itself is better
+and simpler**: `ds^2=-d\tau^2+(\partial_\chi r)^2\,d\chi^2+r^2 d\Omega^2` is unique in the **whole**
+paper, so there is no scope to get wrong — and it is the equation `sec:properframe` is being read for.
+In-section it is also `1`, so the scope would have worked; it is just not needed.*
+
+**⓶ THE `cosh` ROW: THE FALLBACK WENT RATHER THAN BEING RE-PAIRED.** *Measured: the strong form stands
+**once** space-stripped, the bare `\cosh^{2/3}` **twice**, the anchor **once**. So the two single-site
+halves are asserted as a **conjunction** — which is order ①'s family-B pairing with **both** halves
+single-site, instead of a multi-site token leaning on an anchor.* ⌗ **And it makes the check stronger
+than the `or` ever was: both claims the label states are now carried** *(the leading minus with the
+cosh **and** the lift as the single vertical segment). The `or` carried only the first.*
+
+**⓷ THE TWO `LIST,MULTI,PINNED` CLAUSES, AND WHY A SHORT WIDENING WOULD NOT HAVE DONE.** *`is an
+amplitude and not a phase` has two sites and **they are nearly the same sentence** — "the collapse
+leg's contribution **to it**" in the proposition against "…**to the state that meets it**" in the prose
+— so the span is taken back to the clause that names what the contribution is **to**. And `a constant
+phase shift`'s two sites are **two different claims** (the neutrino sub-horizon effect, and a comb
+having no curvature), which is exactly why a four-word pin on the file could not carry either.* ⌗
+***Each widened clause is verified once LIVE and once AT THE PIN***, *because the list is read against
+both and a span unique live but absent at the pin would turn the pinned arm into a silent zero.*
+
+**⓸ ⌗ AND TWO ROWS ARE RE-FLAGGED RATHER THAN LEFT WITH METADATA THAT DESCRIBES NOTHING.** *The strong
+`cosh` form and its anchor both carried flag `ALT`. **That disjunction no longer exists**, so the flag
+is cleared and the change recorded in each reason. The adjudications are untouched — only the flag had
+stopped describing the site.* ⌗ *Two `ENCODING-OK` rows retire with the repair as well, the dead arm
+among them: `6` rows out, `3` in.*
+
+⌗ **Verification:** *both receipts `rc=0`. The `4` `FAIL`-matching lines in the second were **checked
+rather than counted** — all four are `OK` lines whose labels report a pre-registered prediction's
+failure ("the ATTRIBUTION FAILS too"), which is the receipt asserting a failure, not suffering one.
+Extractor over both: `11` keys, all decided, no `UNDECIDED`, no annotation fault, and **the `MULTI`
+flag is gone from every one of them**.*
