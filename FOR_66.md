@@ -17621,3 +17621,41 @@ something.** *Floor 2 was never the problem with that row; floor 1 was.*
 ⌗ **Verification:** *`rc=0`, `0` FAIL lines, all four repaired checks printing `OK` by name. Extractor:
 `8` keys, all decided, no `UNDECIDED`, no annotation fault; `4` dropped and `4` added. The three
 `DELIBERATE` rows in this receipt are untouched and still keyed.*
+
+---
+
+## `r7355+cc66.8` — **`L237` CLOSES WHOLE: `4` → `0`, AND THE MEASUREMENT SAYS THE CHECK'S CLAIM WAS CARRIED BY *NONE* OF ITS THREE ARMS**
+
+**`landed`: `L237_gates_check_declarations` `4` → `0`; `REPAIR-OWED` `105` → `101`. ⌗ **Eight blocks
+this revision: `137` → `101`, thirty-six rows.** `remaining`: `101` owed.**
+
+**⓵ ⛔ THE THREE-WAY DISJUNCTION, ARM BY ARM, MEASURED BEFORE REPLACING IT:**
+
+> `'scanner' in f54.lower()` → **`6`** *occurrences. Passes on any mention, whatever the scanner's
+> state — `r7137+70.1`'s "the disjunction asserts almost nothing".*
+> `'WITHDRAWN' in f54` → **`7`** *occurrences, and the count has moved **both ways** (`7`→`6` at
+> `260e61c6d`), so it is tied to no line in the file.*
+> `'the scanner is not built' in f54.lower()` → **`1`**. *The only arm that ever decided anything.*
+
+⇒ ***And the check's claim is that the scanner was withdrawn AT `r2463` FOR WANT OF AN EXHIBIT —
+carried by none of the three.*** *Two cannot fail, and the third says only that it is **not built**,
+which is a different proposition from **why**.* ⛭ *One span carries the whole claim, revision and
+reason, in the document's own words: `"the prose-duplicate scanner (withdrawn r2463 for want of an
+exhibit)"`. **Not a disjunction — three arms hid two dead ones here, and one span cannot.***
+
+**⓶ AND THE SUBSTRING ALT IS WORTH A SENTENCE OF ITS OWN, BECAUSE IT WAS STRICTLY WEAKER THAN ITS OWN
+FIRST ARM.** *`69` named it exactly ("its partner `check a DECLARATION` is a SUBSTRING of it, so this
+arm can never decide").* ⇒ **A substring arm `or`-ed with its superstring passes whenever the SHORT one
+matches, so the `or` could only ever LOOSEN the test.** *There is no state of the document in which the
+second arm adds information, and one in which it hides the first arm's failure.* ⌗ *Replaced by the
+whole rule the label quotes — **both** halves, declaration and judgement — which the pinned fragment
+never carried.*
+
+**⓷ ⌗ AND A `DELIBERATE` ROW RETIRES WITH THEM, FOR THE SECOND TIME TONIGHT.** *`"check a
+DECLARATION"` was verdicted `DELIBERATE`; its key is gone because the arm is gone, and **the surviving
+span contains it**. Same bookkeeping as `L267`'s two: the string is not lost, it is subsumed by a
+stronger assertion.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, both repaired checks printing `OK` by name. Extractor on
+`G1`: `4` keys, all decided, no `UNDECIDED`, no annotation fault — `5` dropped (`4` owed + `1`
+`DELIBERATE`) and `2` added, each number read off the instrument rather than inferred.*

@@ -154,17 +154,43 @@ def main():
           'receipt draws survives and has not been widened to fit',
           'scope_table' not in _ci)
     arsenal = open(os.path.join(ROOT, 'THE_ARSENAL.md'), encoding='utf-8', errors='replace').read()
-    check('and THE_ARSENAL records the rule the two lints share: a gate can check a DECLARATION, '
-          'it cannot check a JUDGEMENT',
-          'a gate can check a DECLARATION' in arsenal or 'check a DECLARATION' in arsenal)
+    # ⬭⬭ r7355+cc66, REPAIR of an UNDECIDING ALT (r7289+69, narrower-than-claim ⓒ): *** "its
+    #   partner `check a DECLARATION` is a SUBSTRING of it, so this arm can never decide." ***
+    #   ⛔ AND THE DISJUNCTION IS STRICTLY WEAKER THAN ITS OWN FIRST ARM, which is the part worth
+    #     naming: a substring arm `or`-ed with its superstring passes whenever the SHORT one
+    #     matches, so the `or` could only ever LOOSEN the test.  *There is no state of the document
+    #     in which the second arm adds information, and one in which it hides the first arm's
+    #     failure.*
+    #   ⇒ One span, and it is the WHOLE rule the label quotes -- both halves, declaration and
+    #     judgement, which the pinned fragment never carried.
+    #   ⌗ Verified before performing: ONCE raw, ONCE flattened, ONCE under `_unmark`.
+    check('and THE_ARSENAL records the rule the two lints share: "a gate can check a DECLARATION; '
+          'it cannot check a JUDGEMENT"',
+          'a gate can check a DECLARATION; it cannot check a JUDGEMENT' in arsenal)
 
     # the third request
     f54 = open(os.path.join(ROOT, 'FOR_54.md'), encoding='utf-8', errors='replace').read()
     check('and this is the third request landing on the same wall: L-220 (answered by a CONVENTION, '
           'routed as item 30)', 'COMPUTES:' in f54)
-    check('and the prose-duplicate scanner, withdrawn at r2463 for want of an exhibit',
-          'WITHDRAWN' in f54 or 'the scanner is not built' in f54.lower()
-          or 'scanner' in f54.lower())
+    # ⬭⬭ r7355+cc66, REPAIR of a THREE-WAY DISJUNCTION IN WHICH THE LAST ARM CANNOT FAIL, which
+    #   is how r7137+70.1 and r7289+69 both read it.  Measured, arm by arm, before replacing it:
+    #     `'scanner' in f54.lower()`           -- **6** occurrences.  *Passes on any mention,
+    #                                             whatever the scanner's state.*  r7137: "the
+    #                                             disjunction asserts almost nothing".
+    #     `'WITHDRAWN' in f54`                 -- **7** occurrences, and the count has moved BOTH
+    #                                             WAYS (7 to 6 at 260e61c6d), so it is tied to no
+    #                                             line in this file.
+    #     `'the scanner is not built' in ...`  -- **1**.  The only arm that ever decided anything.
+    #   ⇒ *** So the check's claim -- that the scanner was WITHDRAWN AT r2463 FOR WANT OF AN
+    #     EXHIBIT -- was carried by none of the three arms: ***  two cannot fail and the third
+    #     says only that it is not built, which is a different proposition from why.
+    #   ⇒ One span that carries the whole claim, revision and reason included, and it is the
+    #     document's own words.  Not a disjunction: three arms hid two dead ones here, and one
+    #     span cannot.
+    #   ⌗ Verified before performing: ONCE raw, ONCE flattened, ONCE under `_unmark`.
+    check('and the prose-duplicate scanner, withdrawn at r2463 for want of an exhibit: "the '
+          'prose-duplicate scanner (withdrawn r2463 for want of an exhibit)"',
+          'the prose-duplicate scanner (withdrawn r2463 for want of an exhibit)' in f54)
 
     print()
     if FAILED:
