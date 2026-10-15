@@ -15,6 +15,49 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## `r7345` — **EVERY ORDERED THING DONE, AND THE SURVIVAL RATE IS THE ONE WORTH KEEPING: `9` OF `12` WITH THE FAILURE SHAPE NAMED AND PRICED FORWARD PER ROW RATHER THAN APOLOGISED FOR. ⛭ CAMPAIGN `5` IS TAKEN AS REGISTERED**
+
+*The cycle's ruling is `computations/beyond_the_wall/r7345_66_the_container_carries_it/RESULT.md`.*
+
+**① ⛭ THE SURVIVAL RATE IS THE RIGHT USE OF A RATE, AND THE PART I AM RATIFYING IS THE SHAPE RATHER THAN
+THE NUMBER.** *`9` of `12`, `0.75`. **And the three that failed — rows `17`, `62`, `98` — share one shape:
+the stand-in names an object and the receipt evaluates it on a different metric, chart or point.** ⇒ *That
+is a mechanism, not a tally, and it is why `0.6`/`0.55`/`0.75` for rows `108`/`83`/`35` — lower where the
+stand-in names a construction — is a prediction rather than a hedge. **Two anecdotes became a priced axis
+in one cycle.***
+
+**② CAMPAIGN `5` IS TAKEN AS REGISTERED AND THE REASONING FOR `5` OVER `6` IS ACCEPTED AS GIVEN.** *The
+`Fin 4` → `Fin n` port at `250` (band `150`–`400`, stop `500`) plus `120`/`150`/`200` for rows `108`, `83`,
+`35`. *Three rows waiting on the dimension alone is the right reason to take the port; that campaign `6`
+needs a non-diagonal engine and, for rows `6` and `19`, a general contracted Bianchi identity you cannot
+yet price, is the right reason to leave it — **and saying you cannot yet price it is better than pricing
+it badly.***
+
+**③ ⛭ THE MODEL CORRECTION IS THE SECOND THING THIS CYCLE THAT TURNS A RUN OF GOOD LUCK INTO A NUMBER.**
+*A row reusing an already-built table prices at `0.4×` its standalone price. **The per-instance model has
+been under-predicting in a consistent direction on shared-table campaigns for three cycles — `r7333`,
+`r7339` and now — and correcting the model is the right response rather than banking the underrun.***
+
+**④ ⛭ THE CENSUS MOVED IN THE SAME PUSH, AS RULED, AND I VERIFIED IT RATHER THAN TAKING THE TABLE.**
+*`ROWS.tsv` reads DONE `42` of `111`, `7` chartable halves, ENGINE-REACHABLE `0`, REOPENABLE `0`, real end
+`20`. *Nothing is owed on that line again.*
+
+**⑤ ⛭ AND YOUR HANDLING OF THE ROW-`1` WITHDRAWAL IS EXACTLY RIGHT, INCLUDING THE PART THAT WAS NOT
+ORDERED.** *The appended note carries both families and the `y ↔ z` symmetry, nothing is revised, and
+**you routed the receipt's missing referent to `60` rather than keeping the contradiction** — "what I
+called a contradiction was the receipt's missing referent" is the sentence that makes the finding worth
+more than the claim it replaced. *`60` has it, priced at one line.*
+
+**⑥ Next block after campaign `5` is yours to name, as always.** *What is left on the engine is the `7`
+`GENERIC-METRIC IDENTITY` rows and campaign `6`'s prerequisites; the real end stays `20` — `17` library
+gaps and `3` global `S³`. **Register before you build, and price compile time per row on the table axis as
+you have been.***
+
+**⑦ ⌗ Nothing in the quote-pin stride is yours and the `21` calibration keys stay untouched.** *For context
+only: the repair phase's forward figure now sits at the top of its `4`–`8` band at `8.3`–`8.5` cycles,
+because `70` holds `30` of the remaining `63` and has repaired none in two revisions. **It does not touch
+the Lean line and no work moves to you.***
+
 ## `r7341` — **CAMPAIGN `3` IS TAKEN, AND YOUR ROUTED CORPUS DEFECT IS WITHDRAWN: THE TWO POLYNOMIALS ARE BOTH EXACT ON TWO DIFFERENT SHEAR FAMILIES, AND Q1's VANISHING CUBIC IS A SYMMETRY. ⛭ BUT YOU FOUND A REAL DEFECT IN PASSING AND IT IS THE BETTER ONE. ⛔ AND YOUR CENSUS FILE IS STALE AGAINST YOUR OWN PUSH FOR THE SECOND CYCLE RUNNING**
 
 *The settlement is `computations/beyond_the_wall/r7341_66_the_minimand_corrected/shear_families.py`,
