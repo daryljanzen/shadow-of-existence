@@ -47,6 +47,7 @@ Run:  python3 receipts/L251_the_numbering_collides/N1_...py
 
 Written r3112 (`L-251`); PART 2 re-pinned and the band taken r3128 (`L-256`).  Stated for reversal.
 """
+import ast as _ast_N1
 import os
 import re
 import subprocess
@@ -307,8 +308,26 @@ check('⓷ quotepin names the revision for r3111\'s own find, or says its horizo
 check('⓷ᵇ ⛭ AND prints the commit SHA beside it, which is unambiguous where the revision number is '
       'not -- asserted here so it cannot be removed silently', 'commit ' in why)
 qp = open(os.path.join(ROOT, 'corpus', 'quotepin.py'), encoding='utf-8', errors='replace').read()
-check('⓷ᶜ and the SHA is in the message template rather than incidental to one path',
-      'commit {sha[:12]}' in qp)
+#: ⛭⛭ THE REPAIR (r7356 on `r7353` ①'s ORDER).  ** The owed row pinned the FORMAT FRAGMENT
+#: `commit {sha[:12]}` -- a spelling of the template, which any reformat of the same message breaks
+#: and which says nothing about WHERE in the file it sits. **  The claim is that the sha is in THE
+#: MESSAGE TEMPLATE and not incidental to one path, so it is asserted structurally: the one
+#: assignment to `msg` is found in the syntax tree and its f-string shown to interpolate a slice of
+#: `sha`.  ⇒ *** Reformat the message and this still passes; move the sha into a branch, or drop it,
+#: and it goes red. ***
+_qp_tree = _ast_N1.parse(qp)
+_msg_assigns = [n for n in _ast_N1.walk(_qp_tree)
+                if isinstance(n, _ast_N1.Assign)
+                and any(getattr(t, 'id', '') == 'msg' for t in n.targets)]
+_sha_in_template = [n for n in _msg_assigns
+                    if isinstance(n.value, _ast_N1.JoinedStr)
+                    and any('sha' in _ast_N1.unparse(v.value)
+                            for v in _ast_N1.walk(n.value)
+                            if isinstance(v, _ast_N1.FormattedValue))]
+check(f'⓷ᶜ and the SHA is in THE message template rather than incidental to one path: `quotepin` '
+      f'assigns `msg` exactly once ({len(_msg_assigns)}) and that f-string interpolates a slice of '
+      f'`sha` ({len(_sha_in_template)}), read out of its syntax tree rather than matched as text',
+      len(_msg_assigns) == 1 and len(_sha_in_template) == 1)
 
 print()
 print('=' * 78)
@@ -409,10 +428,28 @@ check(f'⓹ᵇ and it is PREVENTION: it reads the RUNNING line\'s own unmerged c
 #     property of the gate and it SURVIVES the answer, which is what the old form did not. **
 _gate_src = open(os.path.join(ROOT, 'corpus', 'check_revision_collisions.py'),
                  encoding='utf-8', errors='replace').read()
-check('⓹ᶜ ⌗ and the gate cannot describe itself as prevention on a half it does not hold: with '
-      '`OTHER_HALF` unset it prints "THE BAND IS A PROPOSAL, NOT A PREVENTION" instead',
-      'THE BAND IS A PROPOSAL, NOT A PREVENTION' in _gate_src
-      and 'if OTHER_HALF is None:' in _gate_src)
+#: ⛭⛭ THE REPAIR (r7356 on `r7353` ①'s ORDER).  ** The second arm pinned the SOURCE LINE
+#: `if OTHER_HALF is None:` -- a spelling, which `if OTHER_HALF is None :` or an inverted test
+#: breaks while the behaviour is untouched. **  The claim is that the proposal wording is what the
+#: gate prints ON THAT BRANCH, so the branch is found in the syntax tree and the string shown to be
+#: inside its body.
+_gate_tree = _ast_N1.parse(_gate_src)
+_none_branches = [n for n in _ast_N1.walk(_gate_tree)
+                  if isinstance(n, _ast_N1.If)
+                  and isinstance(n.test, _ast_N1.Compare)
+                  and 'OTHER_HALF' in _ast_N1.unparse(n.test.left)
+                  and any(isinstance(o, _ast_N1.Is) for o in n.test.ops)
+                  and any(isinstance(c, _ast_N1.Constant) and c.value is None
+                          for c in n.test.comparators)]
+_proposal_in_branch = [n for n in _none_branches
+                       if any('THE BAND IS A PROPOSAL, NOT A PREVENTION' in str(getattr(c, 'value', ''))
+                              for b in n.body for c in _ast_N1.walk(b)
+                              if isinstance(c, _ast_N1.Constant))]
+check(f'⓹ᶜ ⌗ and the gate cannot describe itself as prevention on a half it does not hold: the '
+      f'branch testing `OTHER_HALF is None` is found in its syntax tree ({len(_none_branches)}) and '
+      f'the proposal wording is INSIDE that branch ({len(_proposal_in_branch)}), so the claim is '
+      f'the behaviour and not the spelling of the line',
+      len(_none_branches) >= 1 and len(_proposal_in_branch) >= 1)
 check('⓹ᶜ¹ ⛭ and the other half IS held now, carried as a fact in the other line\'s own words '
       'rather than presumed', C.OTHER_HALF is not None and 'PARITY = 1' in C.OTHER_HALF)
 # ⌗ same repair (r3964): the claim is that the exceptions are NAMED rather than expressed as a
