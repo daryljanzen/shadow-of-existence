@@ -65,6 +65,12 @@ check('⓵ᶜ `THE_FRONTIER` priced it there as a BUILD at 5 turns, flagged -- t
       'of the three', 'PO-14' in fro_pre and 'BUILD' in fro_pre and '5 ⚠' in fro_pre)
 # ** and the CURRENT state, asserted against the live files rather than assumed from the above **
 reg = open(os.path.join(ROOT, 'THE_REGISTER.md'), encoding='utf-8', errors='replace').read()
+
+
+def _row(text, rid):
+    return next((l for l in text.split('\n') if l.startswith('|') and f'**{rid}**' in l[:30]), '')
+
+
 fro = open(os.path.join(ROOT, 'THE_FRONTIER.md'), encoding='utf-8', errors='replace').read()
 # ** r3101: the pins below tested for ONE disposition of the finding (re-specify `PO-14` in place).
 #    The main line took the other, and it is the one the row's own text forces: `PO-14`'s stated
@@ -75,8 +81,12 @@ fro = open(os.path.join(ROOT, 'THE_FRONTIER.md'), encoding='utf-8', errors='repl
 #    rather than which of the two dispositions carried it. **
 check('⓵ᵈ ⛭ and the finding LANDED on the live register -- the r2419 provenance recorded on the row '
       'and the Dirac sector carried as the successor, not merely reported here',
-      'r2419' in reg and 'FALSE WHEN WRITTEN' in reg and 'PO-21' in reg
-      and 'Dirac sector' in reg)
+      # r7349+70: scoped to the two ROWS the claim names (a locus-scoped conjunction: no single span
+      #   carries it, since the provenance is on the struck PO-14 row and the successor is PO-21).
+      'AND THE CONDITION WAS MET AT r2419, 587 REVISIONS BEFORE THE ROW WAS READ' in _row(reg, 'PO-14')
+      and 'That sentence was FALSE WHEN WRITTEN, not stale.' in _row(reg, 'PO-14')
+      and 'has built the unpolarised cut since r2419 (`PO-14`, struck)' in _row(reg, 'PO-21')
+      and 'What is missing is the Dirac sector ON it.' in _row(reg, 'PO-21'))
 check('⓵ᵉ and no live frontier row prices an already-standing build at 5 turns',
       'PO-14' not in fro or '5 ⚠' not in fro)
 
@@ -88,15 +98,18 @@ p11 = open(os.path.join(ROOT, 'corpus', 'dynamics_paper.tex'), encoding='utf-8',
            errors='replace').read()
 MARKS = [
     (r'\label{sec:unpolarized}', 'a section labelled sec:unpolarized'),
-    ('restoring the second polarization', 'which restores the second polarisation'),
-    ('wave map into the hyperbolic plane', 'and identifies the two polarisations as a wave map'),
+    (r'which we now build---restoring the second polarization as the off-diagonal $\omega$ of the torus block',
+     'which restores the second polarisation'),
+    ('The two polarizations are then shown to be a wave map into the hyperbolic plane',
+     'and identifies the two polarisations as a wave map'),
     ('Gaussian curvature $-1$', 'into a target of Gaussian curvature -1'),
     ('determinant $-1$', 'with the exchanging map reversing orientation'),
-    ('identity component does not reach', 'so it lies outside the identity component'),
+    (r'so it lies in the component of $\mathrm{Isom}(\mathbb{H}^2)$ that the identity component does not reach',
+     'so it lies outside the identity component'),
     # ⛔⛭ AMENDED r4524: P11 sets the twist as a DISPLAY with spacing macros --
     #    `c \;=\; R\,e^{2P}\,Q_t \;=\; \text{const}` at `eq:twist` -- and this needle was the
     #    unspaced inline form.  *Sixth typesetting break of this run; the physics is identical.*
-    (r'e^{2P}\,Q_t', 'and carrying the conserved twist c = R e^{2P} Q_t (eq:twist)'),
+    (r'c \;=\; R\,e^{2P}\,Q_t \;=\; \text{const}', 'and carrying the conserved twist c = R e^{2P} Q_t (eq:twist)'),
     (r'c\mapsto-c', 'on which the parity acts as a sign flip'),
 ]
 for needle, what in MARKS:
