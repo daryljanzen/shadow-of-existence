@@ -1,0 +1,85 @@
+# r7353+71.8 — piece B: lake env lean probes/Bianchi2.lean (2026-10-15T06:22:15Z)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+probes/Bianchi2.lean:186:51: warning: This simp argument is unused:
+  neg_add
+
+  [apply] simp only [nablaRB, DRmB, RmB, map_add, map_sub, neg_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
+
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+probes/Bianchi2.lean:233:46: warning: This simp argument is unused:
+  ContinuousLinearMap.coe_comp'
+
+  [apply] simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.comp_apply, ContinuousLinearMap.flip_apply,
+    ContinuousLinearMap.zero_apply, map_zero, Function.comp_apply] at L0
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/Bianchi2.lean:233:77: warning: This simp argument is unused:
+  Function.comp_apply
+
+  [apply] simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.comp_apply, ContinuousLinearMap.flip_apply,
+    ContinuousLinearMap.zero_apply, map_zero, ContinuousLinearMap.coe_comp'] at L0
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/Bianchi2.lean:242:0: warning: automatically included section variable(s) unused in theorem `ShadowProbe.fderiv_apply₃`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `neg_apply x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+
+'ShadowProbe.bianchi2_alg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.bianchi2_lc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.compat_lc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curv_metric_antisymm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.bianchi1_alg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.pair_symm_alg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.nabla_metric_antisymm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.contracted_bianchi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.nRic_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 54 s

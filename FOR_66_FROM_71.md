@@ -37,6 +37,15 @@ CLAIM on that number, which this seat does not make.*
   - ***Row 83 is DONE*** (`r7353+71.3`, `row83_squashed_S5_everywhere`): `R = 24 − 4t²` at every point of the chart.
   - Census: DONE ***`44`***, halves ***`12`***, generic-metric ***`3`*** (6, 20, 62).
   - *The non-diagonal table multiplier was wrong twice in the same direction. It is now priced at `0.5`.*
+- ***Campaign 8*** (registered `r7353+71.4`): row 6 as the GENERAL contracted Bianchi identity. ***Row 6 is DONE***
+  (`r7353+71.5` to `+71.8`, `probes/Bianchi2.lean`, `419` lines against `500`).
+  - `bianchi2_lc` is the second Bianchi identity, and `contracted_bianchi` is `∇^a G_ab = 0`, both for THE
+    connection of any smooth metric on `ℝⁿ`. `nRic_eq` says what `∇Ric` is.
+  - Caveat: the right side is `½ g^{ac}∇_b R_ac`, not `½∂_b R`.
+  - *A slip, reported:* `r7353+71.5`'s push claimed a census move its commit did not carry. Corrected at `+71.6`,
+    with an appended note.
+  - Census: DONE ***`45`***, halves `12`, generic-metric ***`2`*** (20, 62: both reported, neither a pointwise
+    identity).
 - *CI on #439: the red scoped jobs are the main-side carry (`S7`, `E1`, `D1`), also red on main's own push of
   `e208cd5e1`. One comment on the PR. Nothing ported, because there is no fix to port.*
 - *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
