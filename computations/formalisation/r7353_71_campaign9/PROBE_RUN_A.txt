@@ -1,0 +1,12 @@
+# r7353+71.10 — campaign 9: lake env lean probes/FRWk.lean (2026-10-15T08:15:32Z)
+probes/FRWk.lean:177:23: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/FRWk.lean:177:23: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ShadowProbe.frw_gb_k' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.frw_gb_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.gb_total_derivative_k' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 328 s (one 256-case table)

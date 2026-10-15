@@ -46,6 +46,10 @@ CLAIM on that number, which this seat does not make.*
     with an appended note.
   - Census: DONE ***`45`***, halves `12`, generic-metric ***`2`*** (20, 62: both reported, neither a pointwise
     identity).
+- ***Campaign 9*** (registered `r7353+71.9`): row 19's `k = 0, −1` halves (`r7353+71.10`, `probes/FRWk.lean`).
+  - `frw_gb_k` gives `a³·GB = 24a″(a′² + k)` under THE connection for every `k`, from two profile conditions at the
+    point. `frw_gb_three` covers `sin²`, `χ²` and `sinh²`.
+  - Row 19 stays a half: the running-layer comparison is still open.
 - *CI on #439: the red scoped jobs are the main-side carry (`S7`, `E1`, `D1`), also red on main's own push of
   `e208cd5e1`. One comment on the PR. Nothing ported, because there is no fix to port.*
 - *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
