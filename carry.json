@@ -89,6 +89,10 @@
    "receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38682447812",
     "since": "65a82a1d83375ca519b8ae476e9a076f4873cfdd"
+   },
+   "receipts/L_probability/S7_the_paper_pins_are_read_by_reversing_the_clause_they_quote_and_only_one_in_four_would_notice.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38682771681",
+    "since": "224be1de1d9c1bfcc80406e1e8c2de4c1be1efb0"
    }
   }
  },
