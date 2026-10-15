@@ -17465,3 +17465,58 @@ time normalised** *(the closure is bolded in the document).*
 ⌗ **Verification:** *receipt `rc=0`, `0` FAIL lines, and both repaired checks print `OK` by name.
 Extractor on the file: `4` keys — down from `6` — all decided, no `UNDECIDED`, no annotation fault;
 `4` dropped and `2` added.*
+
+---
+
+## `r7355+cc66.5` — **`L550` CLOSES WHOLE: `4` → `0`. ⛔⛔ AND SPLITTING IT UNCOVERED TWO FURTHER DEFECTS IN THE SAME FILE, ONE OF THEM IN A CHECK *I* WROTE AT `r7143`, WHOSE ASSERTED CLAIM IS FALSE**
+
+**`landed`: `L550_third_mechanism` `4` → `0`; `REPAIR-OWED` `117` → `113` (`137` → `113` this
+revision, five blocks). `remaining`: `113` owed; next `L267_the_sweep_that_did_not_run` (`4`).**
+
+**⓵ THREE OF THE FOUR WERE `L-249`, AND THE SPLIT COST NOTHING — THE `P16` SHAPE AGAIN.** *This file's
+finding is **the bound**, not the opening: "the third mechanism is bounded and the bound is two
+sentences earlier". The bound is asserted live and does not retire; the residue's openness retires the
+day a third mechanism is named. So **the literals are unchanged and only their READS move** — to
+`593fe7ba8` for `P14` and `f02fad17a` for `PROTECTED_OPEN.md` — and nothing new is pinned, no
+disjunction written. The register is the clearest of the three: it is the thing most certainly
+**struck** the day the row closes.*
+
+**⓶ ⛔⛔ AND HERE IS THE PART I WANT ON THE RECORD, BECAUSE IT IS MINE. `r7143+cc66.108` REPLACED TWO
+NUMERIC BOUNDS WITH A "DERIVABLE" TEST THAT WAS WRONG TWICE OVER.** *It wrote: "there is no paragraph
+break between them … not a looser bound, the derivable one."*
+
+> ⒜ ***The test could never fire.*** *`between` is cut from `p14`, which is `re.sub(r'\s+', ' ', …)`,
+> so it holds **zero** newline characters — `'\n\n' in between` is False **by construction, for any
+> paper, forever**. The `\par` arm is the only one that could ever decide, and it is absent here, so
+> the conjunction has been carried by a constant since the day it was written.*
+> ⒝ ***And measured on the raw paper, where the question has an answer, the claim is FALSE.*** *There
+> is exactly one blank-line break between the two sentences — a real TeX paragraph break. **They are
+> not in the same paragraph.***
+
+⇒ **The finding survives and the gloss does not:** *529 characters, `2` sentence-ends, **the paragraph
+immediately before**. So the two numeric bounds `r7143` discarded are **restored as assertions** —
+they are the derivable facts — and the paragraph count is asserted at its true value (`== 1`) instead
+of its wished-for one.* ⌗ *It surfaced only because `L-249`'s split turned the residue into a pinned
+read and left this line a live `p14.index(residue)` — **a lookup that would CRASH rather than fail**
+the day the sentence retires, which is the class this same file already records twice.*
+
+**⓷ ⛔⛭ AND ONE MORE, WORTH A LINE IN ANY PRESCRIPTION OF `L-249` WE WRITE DOWN: A PINNED-READ HELPER
+CHAINED THROUGH ANOTHER HELPER MAKES ITS PINS INVISIBLE TO THE RATCHET.** *Written the natural way —
+`flat_at = re.sub(r'\s+', ' ', raw_at(rev, path))` — the `git show` sits **two function hops** from
+every key that uses it and the extractor's trace loses it: **this file's site count fell from `14` to
+`9` and all three pinned literals disappeared from the instrument's view.*** ⇒ ***That is the worst
+available outcome.*** *A pin the instrument cannot see is not adjudicated, it is **unwatched**: its
+baseline rows go `STALE`, the census stops counting the class the ratchet exists to count, and the pin
+still breaks when the paper moves — with nothing left that knows it was ever pinned.* ⌗ *`r7353` ③
+names the disposition for a span that **cannot** be pinned admissibly. **This is the opposite case:
+the pin is perfectly admissible and only the plumbing made it invisible** — so the `git show` is
+repeated in both helpers, with the measurement recorded at the helper rather than in a commit message.*
+
+**⓸ THE FOURTH ROW WAS TWO CLASSES IN ONE KEY** *(`r7260+60`: dangling on a leading finite verb — it
+opened on `are`, and what the Planck units **are** is the whole claim — **and** a markup carrier with
+`\emph{cross-register}` inside the span). One widening answers both, read against the
+emphasis-normalised paper, bound from the path per `L548`.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, re-run from scratch after each of the three corrections
+rather than once at the end. Extractor: `14` keys, all decided, no `UNDECIDED`, no annotation fault —
+and the `14` is itself the check that caught ⓷.*
