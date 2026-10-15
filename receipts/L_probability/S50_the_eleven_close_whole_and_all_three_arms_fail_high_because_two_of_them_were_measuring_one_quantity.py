@@ -157,13 +157,49 @@ def main():
           C.decisive(C.A_SPACE, C.A_CENTRAL, C.A_BAND) >= 0.10)
 
     # ── Ⓒ arm ⒝, the arbiter applied at the pin ──────────────────────────────────────────────────
-    _u = C.uniqueness(_owed)
+    # ⛔⛭⛭⛭ r7364+60: AND THIS ARM'S ARBITER READS THE CORPUS **LIVE**, WHICH IS THE DEFECT `r7358`
+    #   WITHDREW THE HEADLINE FOR, ARRIVING IN THE GATE THAT SCORES IT.  *`r7356`'s
+    #   `_corpus_texts()` takes no sha: it lists `corpus/` on the tree it is run on, and `corpus/`
+    #   includes the `.tsv` ledgers.  **So the number this gate pins moves with every adjudication
+    #   any seat makes** -- it stood at `17` of `30` when the arm was scored and reads `16` live.*
+    #   ⇒ *** The frame is supplied HERE, at `r7356`'s own commit, rather than the registration's
+    #     arithmetic being edited after the fact: the arm is a FROZEN RECORD of a withdrawn arbiter,
+    #     and the live figure is PRINTED beside it with the reason it moved. ***
+    #   ⌗ *`r7358` replaced this arbiter with one that excludes the ledgers and `r7360`, `r7362` used
+    #     the refined form; nothing here re-opens that -- the withdrawal stands and this gate stops
+    #     asserting a live number on the arbiter that was withdrawn.*
+    PIN_7356 = '5b76f80a'          # r7356's own first commit: the tree the arm was scored on
+
+    def _texts_at(sha):
+        """`corpus/`'s text set AS IT STOOD at `sha` -- the frame `_corpus_texts()` does not take"""
+        names = subprocess.run(['git', '-C', ROOT, 'ls-tree', '--name-only', f'{sha}:corpus'],
+                               capture_output=True, text=True, errors='replace').stdout.split()
+        return {n: subprocess.run(['git', '-C', ROOT, 'show', f'{sha}:corpus/{n}'],
+                                  capture_output=True, text=True, errors='replace').stdout
+                for n in names if n.endswith(('.tex', '.md', '.tsv', '.txt'))}
+
+    _u = C.uniqueness(_owed, texts=_texts_at(PIN_7356))
+    _u_live = C.uniqueness(_owed)
+    print(f'      the arbiter at {PIN_7356}, where the arm was scored: '
+          f'{sum(1 for v in _u.values() if v > 1)} multi-site of {len(_owed)};  '
+          f'LIVE it reads {sum(1 for v in _u_live.values() if v > 1)} -- it counts the `.tsv` '
+          f'ledgers, which is what r7358 withdrew this arbiter for')
     _multi = {k: v for k, v in _u.items() if v > 1}
     _unseen = {k: v for k, v in _u.items() if v == 0}
     _share = len(_multi) / len(_owed)
-    check(f'Ⓒ① arm ⒝ scored as registered: {len(_multi)} of {len(_owed)} = {_share:.4f} against '
-          f'band {C.B_BAND[0]}-{C.B_BAND[1]}, central {C.B_CENTRAL} -- ⛔ OUTSIDE, HIGH',
-          len(_multi) == R['B_MULTI'] and not (C.B_BAND[0] <= _share <= C.B_BAND[1]))
+    check(f'Ⓒ① arm ⒝ scored as registered, IN THE FRAME IT WAS SCORED IN: {len(_multi)} of '
+          f'{len(_owed)} = {_share:.4f} against band {C.B_BAND[0]}-{C.B_BAND[1]}, central '
+          f'{C.B_CENTRAL} -- ⛔ OUTSIDE, HIGH.  ⛭ r7364: *the text set is read at `{PIN_7356}`, '
+          f'r7356\'s own commit, because this arbiter lists `corpus/` LIVE and counts the `.tsv` '
+          f'ledgers -- so the figure moved with other seats\' adjudications and read '
+          f'{sum(1 for v in _u_live.values() if v > 1)} live. The arm is a FROZEN RECORD of the '
+          f'arbiter `r7358` withdrew, and the live figure is printed above rather than asserted*',
+          len(_multi) == R['B_MULTI'] and not (C.B_BAND[0] <= _share <= C.B_BAND[1])
+          # and the withdrawal is RECORDED rather than left to this comment: the refined arbiter
+          # that excludes the ledgers exists, and it is the one the later blocks were read on.
+          and 'baseline' in open(os.path.join(
+              ROOT, 'computations', 'beyond_the_wall', 'r7358_60_the_queue', 'cost.py'),
+              encoding='utf-8', errors='replace').read())
     check(f'Ⓒ② ⛭ and it contradicts the expectation the order carried: the other seat found 0 of 7 '
           f'of its own block\'s literals occurring more than once, and this block reads '
           f'{len(_multi)} of {len(_owed)}, the worst of them {max(_multi.values())} times',
