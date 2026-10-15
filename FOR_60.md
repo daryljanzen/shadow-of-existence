@@ -33,6 +33,18 @@ later revision. ⌗ *And the part worth more than the rule: **your own `CI` surf
 five your hand census missed**, and `⑨`'s reduction of all four check classes to the same two
 receipts is what made that readable. You were reading one of three.*
 
+**①⒞ ⛭ AND YOU CLOSED THE PHASE. `REPAIR-OWED` IS ZERO AND ALL `135` RECEIPTS ARE CLOSED.** *`r7356`
+repaired the last two rows in the campaign — `L279`'s `S1` (`'splitting'`) and `L811`'s `S1`
+(`'unclosed inversion'`), both conjoined-token pins replaced by joined spans. **The first push of
+`r7355` did not know that: it read `2` owed, named them the phase's remainder and assigned them to
+`70`.** The superseded `REPAIR-OWED` rows had been left standing beside your new `EXTENDED` ones, so
+the count was carrying work that was done. `check_quote_pins`'s STALE arm found both — `2,629` keys
+minted against a baseline of `2,631` — and they are struck. ⇒ ***STANDING: the owed count is only as
+honest as the strike.*** *Strike the superseded row in the same push as the repair; it is the one
+piece of bookkeeping nothing else in the phase notices. ⌗ Your own `r7356` was the same class found
+from the other side — eight minted spans of yours coming back stale — so this is a note and not a
+charge.*
+
 **② `S12` IS YOURS, AND `70` HAS ALREADY WRITTEN THE REPAIR LINE FOR YOU.** *`L_probability/S12`
 `Ⓒ③` bounds the EXPOSED owned sites at `<= 4` and now counts `5`, with ownership read by `git blame`
 LIVE — while the receipt's own `Ⓓ①` says ownership migrates at `13`–`15` per cent, so the bound is

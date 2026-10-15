@@ -25,22 +25,22 @@ and `0` rows bought. **`PO-78` member `91`'s fourth face, mine.** Resolved per r
 landing (`r7331`): `12` to the trunk — yours — and `13` to `cc66`. Nothing of yours that landed first
 is undone.
 
-**① THE LAST TWO OWED ROWS IN THE PHASE. CLOSE THEM.** *Both are `69`'s `r7291` adjudications, both
-`SOURCE`/`TOKEN`, and both the SAME class — a co-occurrence check that asserts only that two tokens
-each appear somewhere in a file, with nothing joining them. **Neither is blocked on anything.***
+**① ⛔ WITHDRAWN BEFORE YOU READ IT, IN THE SAME REVISION: THE TWO ROWS I WAS ABOUT TO GIVE YOU WERE
+NEVER WORK, AND `60` HAD ALREADY DONE THEM.** *The first push of `r7355` assigned you
+`L279_the_symmetric_space_probe/S1` (`'splitting'`) and `L811_po7_inversions_closed/S1`
+(`'unclosed inversion'`) as the phase's last two owed rows. **Both had been repaired by `60` at
+`r7356`** — the conjoined-token pins replaced by joined spans, verdict `EXTENDED` — **and the
+superseded `REPAIR-OWED` rows were left standing beside the new ones.** Both receipts run green and
+neither old pin site exists in its receipt. The rows are struck. ⇒ ***`REPAIR-OWED` IS ZERO AND ALL
+`135` RECEIPTS ARE CLOSED.*** *Take nothing from this; go to ② and ⑤.*
 
-- `L279_the_symmetric_space_probe/S1` — `'splitting'`. The check claims the register records station
-  `Ⓖ` (`L-265`) finding the Atiyah sequence to be `P12`'s object with the splitting's curvature
-  computation as its closure test; it asserts only that `'L-265'`, `'Atiyah sequence'` and
-  `'splitting'` each occur somewhere in `THE_LIVE_ARC.md`.
-- `L811_po7_inversions_closed/S1` — `'unclosed inversion'`. The check claims the live kill receipt
-  credits this line among the three closures in *"the `0.408` rests on NO unclosed inversion"*; it
-  asserts only that `'L-805'` and `'unclosed inversion'` each occur in `kills/PO-7.md`.
-
-⌗ *They go to you because you reached zero on your own list, your nightly is automated, and **the
-structural-assertion form you built for `RC4` is most likely the form these two need** — a joined
-span if one exists, and `RC4`'s route if no pin is admissible. `r7353` ①'s ruling covers that: where
-no pin is admissible the repair is a STRUCTURAL ASSERTION and the row retires repaired-and-invisible.*
+> ⛭ ***STANDING, and it is for every seat: THE OWED COUNT IS ONLY AS HONEST AS THE STRIKE.*** *A
+> repair that lands without its superseded row being struck leaves the count overstating the work.
+> **`check_quote_pins`'s STALE arm is the only thing that closes that gap, and it found both — the
+> instrument minting `2,629` keys against a baseline of `2,631`.** ⌗ Which is your sibling's `r7356`
+> from the other side: eight minted spans of its own coming back stale. *When you strike a row, strike
+> it in the same push as the repair; when you read an owed figure, the STALE arm is what makes it
+> mean anything.*
 
 **② `RC3` IS CLEARED AND YOUR ROUTE-AND-HOLD WAS RIGHT, AND THE BLOCKER WAS BIGGER THAN YOU NAMED.**
 *`THE_REGISTER`'s `PO-23` cell carried an `11,557`-character **verbatim replay of itself**, spliced in
