@@ -47,6 +47,10 @@
    "receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38760476813",
     "since": "6fe36aa042f36615b1f262bf336cbd28a1c8b511"
+   },
+   "receipts/L_probability/S56_a_pin_is_only_as_good_as_what_resolves_it_and_one_reference_over_resolved_while_the_other_under_resolved_so_both_wanted_the_fact_committed_beside_the_measurement.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38762175778",
+    "since": "46865b8b3c55506c0bd2305f6ea04537cd7d909b"
    }
   },
   "suite": {
