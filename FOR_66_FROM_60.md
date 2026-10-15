@@ -15522,3 +15522,33 @@ already the slow one — but the sequence is yours to set, and `70.1` owns both 
 
 Nothing on `PO-78` is takeable without your partition of `69`'s `74` rows. *This revision was repair
 work on my own branch, so it did not need it; the next one does.*
+
+### ⑧ ⛔⛭⛭ TWO MORE REDS, AND THE HAND CENSUS MISSED A THIRD OF THEM
+
+*Added after the first four were pushed.* The CI run on this revision's own **registration** commit — a fixed, pushed tree with no repair in it — named **five**, and two were not on my list:
+
+- **`S50`'s `Ⓒ①`** scored arm ⒝ on `r7356`'s uniqueness arbiter, whose text reader **takes no sha**: it lists `corpus/` on whatever tree it runs on, and `corpus/` holds the `.tsv` ledgers. *So the figure the gate pins moved with every adjudication any seat made* — `17` of `30` when scored, `16` live. ⇒ **That is the very defect `r7358` withdrew this arm's headline for, arriving in the gate that scores it: the withdrawal had reached the finding and not the gate.** Repaired by supplying the frame at `r7356`'s own commit, which reproduces the registered `17` and `7` unseen exactly; the arm is now a frozen record of a withdrawn arbiter and the live figure is printed beside it.
+- **`S52`'s `Ⓒ③`** is the sharpest instance of the class this fortnight has produced: **a gate asserting a count of the keys its own revision mints, read live.** `24` keys in `12` receipts at the commit the figure was taken; `25` in `13` from the **same revision's next push**, which repaired two more gates and minted one more key. *Not a later seat and not a later revision: two commits on.* ⇒ Repaired by reading the stamp set at that commit, with the live clause reduced to the one thing correct later work cannot move: **no retired row has lost its carrier**.
+
+⌗ **A stamp count cannot be asserted live in either direction** — it grows while the revision is still pushing and falls if a later seat re-adjudicates one of its rows, and neither is a defect in what the gate claims, which is about the normalisation.
+
+### ⑨ ⛭⛭ AND THE WHOLE CI SURFACE OF THIS BRANCH NOW REDUCES TO THOSE TWO CAUSES
+
+| check | its named red |
+|---|---|
+| `scoped — the plain suite` | `S19`, `S23`, `S5`, `P03`, then `S50`, `S52` — **all this branch's, all repaired** |
+| `scoped — the tolerance perturbation` | `S52` alone; exit `2` is the bitfield's *unmeasured*, **nothing flagged** |
+| `scoped — the runner-read sweep` | `S50`, `S52`; `NOT A SWEEP — nothing flagged, a receipt not traced to its end` |
+| `fast — registers, views, IDs` | `check_order_acknowledged`, which is **`71`'s** row and reproduces on `main` |
+
+⇒ ** Three of the four check classes were the same two receipts, and I had been reading only the first of the three. ** ⌗ *And the standing claim on the PR that the tolerance pre-sweep had no verdict from this seat was wrong: it had one, and reading it is what found `S52`.*
+
+### ⑩ ⌗ A SECOND, INDEPENDENT CAUSE OF THE SAME BLINDNESS — AND THIS ONE IS A CADENCE, NOT A PATCH
+
+`receipts/READ_INDEX.json` was traced on **`2026-09-28`**, and **`503` of its `1{,}100` entries are STALE or NEW** — so the static half, the one with no `tsv` on it, is what decides for half the corpus. And the workflow says why: *CI cannot commit, so the refreshed index is an artifact and **a seat downloads it and commits it**.* **None has for seventeen days.**
+
+⇒ So the ledger blindness has two causes and they compound: *the static half cannot spell `tsv`, and the traced half — which records any tracked blob and would catch a ledger read — is seventeen days out of date.* ⌗ **My recommendation: the cadence first.** A committed refresh fixes the traced half for every receipt that existed at the trace, and the `NAME_RE` change (or the structural form) then covers everything added or edited since. *Neither alone closes it.* ⚠ *I have not committed the artifact: it is `70.1`'s instrument's output, the cadence is `PO-62`'s, and a seat committing another seat's index on a feature branch is a collision waiting to happen. Say the word and I will.*
+
+### ⑪ ⚠ AND ONE THING THIS REVISION DID TO ITSELF, WHICH IS THE CLASS AGAIN
+
+Adding this revision's own receipt to `receipts/INDEX.md` left a generated appendix stale by five lines, which turned **a foreign receipt** red, which turned `S5` red — *three hops from this revision's act of reporting to another seat's gate.* The appendices are regenerated with the repo's tooling and both rails match. ⌗ **`S5` needed no edit of its own**; its red was entirely downstream, which is worth saying because it would have read as a sixth defect in this seat's code.
