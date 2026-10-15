@@ -495,8 +495,16 @@ def main():
 
     # ── Ⓘ the restraint ───────────────────────────────────────────────────────────────────────────
     head('Ⓘ.  THE RESTRAINT: WHAT THIS REVISION TOUCHED, AND WHAT IT DID NOT')
+    #: ⛔⛭⛭⛭ r7370, FOUND BY THE SCAN THIS REVISION'S SUCCESSOR REGISTERED: ** AND THIS CLAUSE
+    #: PICKED ITS COMMITS BY MATCHING THE REVISION ID IN THE SUBJECT -- the `S29` shape, in the
+    #: receipt that names the class. **  *A later commit whose subject cites `r7368` would join, and
+    #: the corpus's convention is to cite revisions by number.*
+    #:   ⇒ *** The id filter is DROPPED rather than pinned, because here it was never needed: the
+    #:       population is already this seat's own commits since a pinned base, and the restraint --
+    #:       that none of them touched a do-not-edit path -- is TRUE AND STRONGER over all of them.
+    #:       `74` files scrutinised against the `17` the id match left. ***
     _own = mine_since(BASE, _sess)
-    _r68 = [c for c in _own if 'r7368' in git('log', '-1', '--format=%s', c)]
+    _r68 = _own
     _touched = sorted({f for c in _r68
                        for f in git('show', '--no-merges', '--name-only', '--format=',
                                     c).split('\n') if f})
@@ -506,9 +514,11 @@ def main():
     _viol = [f for f in _touched if f.startswith(_NOEDIT)]
     print(f'      this revision\'s own commits: {len(_r68)};  files touched: {len(_touched)};  '
           f'do-not-edit paths among them: {len(_viol)}')
-    check(f'Ⓘ① this revision touched {len(_touched)} file(s) across its {len(_r68)} commits and '
-          f'NONE of them is on this seat\'s do-not-edit list -- asserted over the commits by their '
-          f'own subject line rather than over a range whose base can move',
+    check(f'Ⓘ① this seat touched {len(_touched)} file(s) across all {len(_r68)} of its commits '
+          f'since the pinned base and NONE of them is on its do-not-edit list.  ⛭ r7370: *asserted '
+          f'over the WHOLE session-filtered range rather than over the commits whose subject names '
+          f'this revision -- an id match in a subject is the `S29` shape, and dropping it here made '
+          f'the restraint stronger rather than weaker*',
           len(_viol) == 0 and len(_r68) > 0)
     check('Ⓘ② ⇒ and the one change that is NOT this seat\'s to make is not made: the two '
           '`_CTRL_MOVING` sites are classified `ABOUT` and left exactly as they stand, because a '

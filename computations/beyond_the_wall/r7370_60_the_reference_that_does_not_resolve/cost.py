@@ -84,7 +84,17 @@ def scan(sha=None):
 #:   CONTROL  -- the match is kept deliberately, beside a pinned list, to prove it over-resolves.
 #:   LABEL    -- the id is matched against a SUBJECT LINE to read a revision's own claim, which is
 #:               what the id is for; no commit set is selected by it.
-CLASS = {}
+CLASS = {
+    #: ⌗ a FALSE POSITIVE of this detector, kept rather than tuned away: the id is matched against a
+    #: LEDGER CELL and not against a commit message at all -- the proximity test caught a
+    #: commit-listing call three lines off.  *The detector is reported with its own miss.*
+    ('receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py',
+     'id-in-text'): 'LABEL',
+    #: ⛭ `r7370` PINNED this revision's commits and kept the string match beside them deliberately,
+    #: so it must still over-resolve or the pin has quietly become the match again.
+    ('receipts/L_probability/S29_the_high_call_is_refuted_again_and_the_low_mode_here_is_a_property_of_the_receipts_because_twenty_three_of_twenty_nine_cannot_take_the_verdict_at_all.py',
+     're-on-body'): 'CONTROL',
+}
 
 #: ⒜ THE POPULATION, beyond the one repaired (`S29`)
 A_KNOWN = 1

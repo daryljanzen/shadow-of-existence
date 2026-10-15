@@ -127,9 +127,22 @@ def main():
     #     before this file's own commit as well as after -- correct then, and once the revision is
     #     landed it is a term that ANY later edit of ANY receipt satisfies.  A restraint about a
     #     landed revision is a fact about its commits and nothing else.*
-    _own_c = [l.split()[0] for l in
-              git('log', '--no-merges', '--format=%H %s', f'{C.CENSUS}..HEAD').split('\n')
-              if l.strip() and 'r7362' in l]
+    #   ⛔⛭⛭⛭ r7370: ** AND THE REPAIR ABOVE WAS THE SAME DEFECT ONE SPELLING ON. **  *Finding the
+    #     revision's commits "by the revision id in the subject" selects every commit WHOSE SUBJECT
+    #     NAMES IT, and the corpus's convention is to cite revisions by number.  `S29` carried the
+    #     identical form and went red when another seat's commit cited `r7290` and touched two
+    #     receipts; this one is not broken yet only because no later subject has named `r7362`.*
+    #     ⇒ *** `r7364`'s note above -- "a later revision's work cannot enter it" -- is false as
+    #         written: a later revision WRITING ABOUT this one enters it.  The commits are PINNED,
+    #         and the id match is kept as the CONTROL beside them. ***
+    OWN_C = ('c6fe446c', '4f0308a6')      # this revision's own two commits, pinned
+    _own_c = [c for c in OWN_C if git('cat-file', '-t', c).strip() == 'commit']
+    assert len(_own_c) == len(OWN_C), f'{OWN_C} do not all resolve in this clone'
+    _matched_c = [l.split()[0] for l in
+                  git('log', '--no-merges', '--format=%H %s', f'{C.CENSUS}..HEAD').split('\n')
+                  if l.strip() and 'r7362' in l]
+    print(f'      the pinned commits: {len(_own_c)};  what the id match in the subject returns: '
+          f'{len(_matched_c)} -- REPORTED, and the control in the clause')
     _touched = {f for c in _own_c
                 for f in git('show', '--no-merges', '--name-only', '--format=', c).split()
                 if f.startswith('receipts/') and f.endswith('.py')}
@@ -140,7 +153,10 @@ def main():
           f'{_others or ""}.  ⛭ r7364: *read from the commits whose subject names this revision '
           f'rather than from `CENSUS..HEAD`, because the next revision\'s repairs land in that '
           f'range and were being counted as this one\'s*',
-          not _others and len(_touched) == 1 and len(_own_c) >= 1)
+          not _others and len(_touched) == 1 and len(_own_c) >= 1
+          # ⛭⛭⛭ r7370: and the id match is the control -- it must still return at least the
+          # pinned pair, so the pin cannot quietly become the match again.
+          and all(any(m.startswith(c) for m in _matched_c) for c in _own_c))
 
     # ── Ⓑ arm ⒜ ──────────────────────────────────────────────────────────────────────────────────
     texts = C._corpus_texts(C.CENSUS)
