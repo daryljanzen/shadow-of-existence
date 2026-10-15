@@ -92,8 +92,8 @@ def main():
           'the orientation parity and the threefold symmetry of the slicing' in p14)
     check('recorded as "the one opening through which matter might enter", which P14 "takes up '
           'concretely"',
-          'the one opening through which matter might enter' in p14
-          and 'takes up that opening concretely' in p14)
+          'recorded there as the one opening through which matter might enter' in p14
+          and 'This paper takes up that opening concretely' in p14)
 
     # ⓶ and the calculation is on the massless side
     check('⛭ and P14 solves the MASSLESS radial Dirac problem',
@@ -119,7 +119,8 @@ def main():
           'massless vacuum"',
           'the $R$-symmetric sector is exactly the offset-free, massless vacuum' in p6)
     check('with mass "the $R$-odd \\emph{departure} from it"',
-          'is the $R$-odd \\emph{departure} from it' in p6)
+          'the $R$-symmetric sector is exactly the offset-free, massless vacuum, and mass (geometric $M$ or fermionic '
+          '$m$) is the $R$-odd \\emph{departure} from it' in p6)
     check('⇒⇒ SO P14 COMPUTES ON R\'s EVEN SECTOR, AND THE HIGGS MECHANISM IN CR\'s OWN TERMS IS WHAT '
           'TAKES YOU OFF IT',
           'massless radial Dirac problem' in p14
@@ -128,14 +129,14 @@ def main():
     # ⓷ and that is why the four have no operator
     check("r2476's asymmetry: second quantisation is available because the three wall modes are ONE "
           "OPERATOR'S KERNEL",
-          "e one operator's kernel" in p14.lower() or 'e one operator\'s kernel and therefore identical particles' in p14
-          or 'are one operator' in p14.lower())
+          "available because the three wall modes are one operator's kernel and therefore identical particles" in p14)
     check('and the count is a well-defined INDEX because the leaf is compact and carries a Dirac '
           'operator', 'index' in p14.lower() and 'Dirac' in p14)
     check('⇒⇒ SO ANY OPERATOR WHOSE KERNEL WERE THE COLOURLESS FOUR MUST LIVE OFF THE MASSLESS '
           'SECTOR -- precisely where P6 puts electroweak breaking',
           'massless radial Dirac problem' in p14
-          and 'is the $R$-odd \\emph{departure} from it' in p6)
+          and 'the $R$-symmetric sector is exactly the offset-free, massless vacuum, and mass (geometric $M$ or fermionic '
+          '$m$) is the $R$-odd \\emph{departure} from it' in p6)
     check('⇒ SO PO-5\'s OPERATOR QUESTION AND L-242\'s IDENTIFICATION ARE ONE QUESTION: both ask what '
           'happens when you leave R\'s even sector',
           'the $R$-symmetric sector is exactly the offset-free, massless vacuum' in p6
@@ -147,8 +148,11 @@ def main():
     # and because no receipt in this directory exhibits an operator. **
     po = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'PROTECTED_OPEN.md'),
                                   encoding='utf-8', errors='replace').read())
-    check('⚠ and PO-5 stays open -- PROTECTED_OPEN carries it, and nothing here builds an operator',
-          'PO-5' in po and 'OPEN' in po)
+    # r7339+70 -- WITHDRAWN, with its case: this check claimed "PO-5 stays open" and passed on the bare
+    # token 'OPEN' anywhere in PROTECTED_OPEN.md.  PO-5 was CLOSED at r2947 (kills/PO-5.md, the row struck),
+    # so the claim is false and the token kept it green for the wrong reason.  C1 in this prefix asserts
+    # the closure correctly; nothing here builds an operator, which the label's second half still says.
+    print('  [WITHDRAWN r7339+70] "PO-5 stays open" -- PO-5 closed r2947 (kills/PO-5.md); see C1')
     check('and P14 itself says the splitting is "external to the geometry", so no mass is derived',
           'external to the geometry' in p14)
 

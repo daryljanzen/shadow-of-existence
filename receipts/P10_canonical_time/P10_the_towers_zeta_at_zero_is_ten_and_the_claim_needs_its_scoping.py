@@ -78,6 +78,7 @@ sentence, unscoped where it names the quantum sector, is the thing to repair.
 Written r4568.  Stated for reversal.
 """
 import os
+import re
 import subprocess
 import sys
 
@@ -118,7 +119,8 @@ def main():
           and 'the tower\'s frequencies are $\\mu_n^2=n(n+2)$' in p10)
     check('⓵ᵇ and the degeneracy 2(n-1)(n+3), ten at the floor -- a Peter-Weyl component count '
           'rather than a scaling',
-          'the degeneracy is $2(n-1)(n+3)$' in p10 and 'ten at the floor' in p10)
+          'the degeneracy is $2(n-1)(n+3)$, ten at the floor $n=2$'
+          in re.sub(r'\\emph\{([^{}]*)\}', r'\1', p10))
     check('⓵ᶜ and the tower is time-dependent oscillators with frequency mu_n/a, one per tensor '
           'harmonic -- so the object is a countable system, not a field theory',
           'tower of time-dependent oscillators' in p10 and 'one per tensor harmonic' in p10)
@@ -247,7 +249,8 @@ def main():
     check('⓺ᵍ and the scoping the earlier wording said was OWED is now CARRIED -- the ledger\'s '
           'statement is about the geometric constants and not about the tower\'s regularisation',
           'the claim carries the scoping' in syn
-          and "not about the tower's regularisation" in syn.replace('\\emph{', ''))
+          and "the ledger's own statement is about the geometric constants and not about the tower's "
+          "regularisation" in syn.replace('\\emph{', ''))
     check('⓺ᶜ *** AND THE MEASURED COEFFICIENT IS WHAT PUT IT THERE: non-zero, so the free static '
           'tower spends one dimensionless constant. *** ⌗ This check read "the scoping is OWED" '
           'until r4572; it says CARRIED now because the paper moved, which is the outcome this '

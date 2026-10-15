@@ -75,33 +75,43 @@ def main():
     check('P7 names the antilinear face K on complexified cosmic time',
           'reality involution $K:\\tilde\\tau\\mapsto\\bar{\\tilde\\tau}$' in p7)
     check('⛭ and says what it DOES off the real axis: it "swaps the two conjugate wings of the lap"',
-          'swaps the two conjugate wings of the lap' in p7)
+          'the reality involution $K:\\tilde\\tau\\mapsto\\bar{\\tilde\\tau}$ on complexified cosmic time---complex-analytic '
+          'and geometric---which fixes the neutral real axis, the self-conjugate photon congruence, and swaps the two '
+          'conjugate wings of the lap' in p7)
     check('so the off-real contour demonstrably carries structure -- the two wings',
-          'two conjugate wings' in p7)
+          'the reality involution $K:\\tilde\\tau\\mapsto\\bar{\\tilde\\tau}$ on complexified cosmic time---complex-analytic '
+          'and geometric---which fixes the neutral real axis, the self-conjugate photon congruence, and swaps the two '
+          'conjugate wings of the lap' in p7)
     check('and R and K are "the two axis-symmetries of one analytic object, the plate"',
-          'the two axis-symmetries of one analytic object' in p7)
+          '$R$ and $K$ are the two axis-symmetries of one analytic object' in p7)
     check('the tau~-axis carrying K with the cosmogenetic lap and its two wings',
-          'carrying $K$ with the cosmogenetic lap and its two wings' in p7)
+          'the $\\tilde\\tau$-axis carrying $K$ with the cosmogenetic lap and its two wings' in p7)
 
     check('⛭⛭ and the composite CLOSES charge conjugation: R o K reproduces C\'s action on species, '
           'on |2M|, on the mass-sign and on the Feynman-Stueckelberg wing structure',
-          "s an antilinear involution reproducing $C$'s action on species, on $|2" in p7
-          and 'Feynman--St\\"uckelberg particle$\\leftrightarrow$antiparticle wing structure' in p7)
+          "$R\\circ K$ is an antilinear involution reproducing $C$'s action on species, on $|2M|$, on the mass-sign, "
+          'and on the Feynman--St\\"uckelberg particle$\\leftrightarrow$antiparticle wing structure' in p7)
     check('with C factorising as (Q -> -Q)_field o (R o K)_geometric',
           'C=(Q\\mapsto-Q)_{\\mathrm{field}}\\circ(R\\circ K)_{\\mathrm{geometric}}' in p7)
     check('⇒ so K is NOT an interpretive overlay: it is geometric and it does work',
-          'complex-analytic and geometric' in p7)
+          'the reality involution $K:\\tilde\\tau\\mapsto\\bar{\\tilde\\tau}$ on complexified cosmic time---complex-analytic '
+          'and geometric---which fixes the neutral real axis, the self-conjugate photon congruence, and swaps the two '
+          'conjugate wings of the lap' in p7)
 
     # the cut that keeps this open
     check('AND K FIXES A TRAJECTORY CLASS: "the self-conjugate photon congruence"',
-          'the self-conjugate photon congruence' in p7)
+          'the reality involution $K:\\tilde\\tau\\mapsto\\bar{\\tilde\\tau}$ on complexified cosmic time---complex-analytic '
+          'and geometric---which fixes the neutral real axis, the self-conjugate photon congruence, and swaps the two '
+          'conjugate wings of the lap' in p7)
     check('so SOME trajectories stand in a definite relation to K -- the null ones are its fixed set',
-          'fixes the neutral real axis, the self-conjugate photon congruence' in p7)
+          'the reality involution $K:\\tilde\\tau\\mapsto\\bar{\\tilde\\tau}$ on complexified cosmic time---complex-analytic '
+          'and geometric---which fixes the neutral real axis, the self-conjugate photon congruence, and swaps the two '
+          'conjugate wings of the lap' in p7)
 
     # and the row's constraint, unbroken
     arc = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()
     check('L-202 is stated without being claimed BOTH WAYS, and this receipt decides neither',
-          'not claimed BOTH WAYS' in arc)
+          'it may narrow and it may not be closed in either direction by a node' in arc)
     check("Z1's location -- 'does the off-real contour carry anything a trajectory can be said to "
           "HAVE?' -- is what this narrows, not what it answers",
           's the off-real' in arc)

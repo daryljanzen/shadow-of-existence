@@ -86,8 +86,18 @@ _SITE = re.compile(r'\s*\[QUOTE-PIN\]\[(\w+)\]\[(\w+)\]\[([^\]]*)\]\s+(\S+?):(\d
 
 
 def alt_sites():
-    r = subprocess.run([sys.executable, INSTRUMENT, '--quote'], cwd=ROOT, capture_output=True,
-                       text=True, timeout=900)
+    # ⌗ r7339+70 (ported, for 60 to confirm or replace): the arms are read at AFTER, the tree whose
+    #   verdicts they are joined to -- live, a later repair stride deletes arms (dead disjuncts) and
+    #   the minority this receipt reported moves under it (r7335's three-way rule).
+    import tempfile
+    wt = tempfile.mkdtemp(prefix='S35_after_')
+    subprocess.run(['git', 'worktree', 'add', '--detach', '-f', wt, AFTER], cwd=ROOT,
+                   capture_output=True)
+    try:
+        r = subprocess.run([sys.executable, os.path.join(wt, 'scripts', 'mutate_assertions.py'),
+                            '--quote'], cwd=wt, capture_output=True, text=True, timeout=900)
+    finally:
+        subprocess.run(['git', 'worktree', 'remove', '--force', wt], cwd=ROOT, capture_output=True)
     out = collections.defaultdict(list)
     for l in r.stdout.split('\n'):
         m = _SITE.match(l)

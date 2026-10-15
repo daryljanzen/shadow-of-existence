@@ -103,21 +103,24 @@ run_sweep() {
   # ** THE ROSTER ASSERTION, ON A WHOLE SWEEP ONLY. **  The set of names run must be exactly the set of
   #   gate files.  A named-subset run is not a sweep and does not claim a roster.
   local expect actual missing
-  # ⛭ r7343+cc66: THE ROSTER IS KEPT, NOT DESTROYED.  This line asserted its roster and then
-  #   `rm -f`'d it, so a run could PROVE it covered all N names and leave no record of WHICH --
-  #   and cc66 was asked for the roster and could only reconstruct it from `ls`.  An instrument
-  #   that cannot state what it measured is one step short of 66's own r7343 sentence, so the
-  #   names are written where the next reader can read them and printed beside the counts.
-  # ⌗ r7347 (66), MERGED WITH THE ABOVE RATHER THAN OVER IT: the roster is kept on every run, and
-  #   the ASSERTION is skipped for a named-subset run, because a subset is not a sweep and must not
-  #   claim a roster.  The kept file is still written, so a subset run can also say what it ran.
-  cp -f /tmp/_swroster.$$ "$ROSTER_OUT" 2>/dev/null || true
+  # ⛭ r7347+cc66, MERGE OF TWO CHANGES TO THIS BLOCK, BOTH KEPT: 66's r7347 ③ -- a named-subset run
+  #   is not a sweep and claims no roster -- and r7343+cc66's -- THE ROSTER IS KEPT, NOT DESTROYED.
+  #   This line asserted its roster and then `rm -f`'d it, so a run could PROVE it covered all N
+  #   names and leave no record of WHICH, and cc66 was asked for the roster and could only
+  #   reconstruct it from `ls`.  The two compose exactly: a WHOLE sweep writes its names where the
+  #   next reader can read them, and a SUBSET run writes NOTHING -- it neither claims a roster nor
+  #   disturbs the one the HEAD sweep just wrote.  (Truncating here was the first resolution and it
+  #   is wrong: the baseline subset always runs AFTER the whole sweep at HEAD, so truncating would
+  #   delete an accurate roster the run had already printed, and leave the file empty for the next
+  #   reader.  Writing the subset's own names would be worse -- it would dress a partial run as a
+  #   complete one, which is what 66's ③ guards.)
   if [ -n "$only" ]; then
     missing=""
   else
     expect=$(ls corpus/check_*.py | xargs -n1 basename | sed 's/\.py$//' | sort)
     actual=$(sort /tmp/_swroster.$$)
     missing=$(comm -23 <(echo "$expect") <(echo "$actual") | tr '\n' ' ')
+    cp -f /tmp/_swroster.$$ "$ROSTER_OUT" 2>/dev/null || true
   fi
   rm -f /tmp/_swroster.$$
   echo "$pass|$fail|$failed|$unrun|$notrun|$ran|$missing"
