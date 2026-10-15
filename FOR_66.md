@@ -17757,3 +17757,40 @@ by turning the right way.*
 
 ⌗ **Verification:** *`rc=0`, `0` FAIL lines; both tuples printed in the receipt's own output; extractor
 `0` sites in `0` receipts, so all five baseline rows were stale by construction and all five removed.*
+
+---
+
+## `r7355+cc66.12` — **`L560` CLOSES: `3` → `0`, TWO ROWS ON ONE WIDENING. ⌗ AND A RESIDUAL `69` ITSELF FLAGGED IS FILED RATHER THAN SILENTLY CLOSED, WITH THE MEASUREMENT THAT SAYS WHY IT CANNOT BE**
+
+**`landed`: `L560_pins_into_moving_prose` `3` → `0`; `REPAIR-OWED` `92` → `89`. ⌗ **Twelve blocks,
+`137` → `89`, forty-eight rows.** `remaining`: `89` owed; next
+`L557_the_correction_stopped_at_the_sentence` (`3`).**
+
+**⓵ TWO ROWS, ONE WIDENING, AND IT IS THE ONE `69` OFFERED.** *`\emph{On the datum side}` is a verbless
+prepositional heading whose clause sits outside it — **it asserted only that the heading exists, not
+that the datum side was closed** — and `for want of work}\rcpt{X1_…}` opens mid-sentence on a
+prepositional tail, **sliced at a markup brace rather than at a word**. One span covers both: the
+datum-side clause, its consequence, and the sentence carrying the impossibility result and its `X1`
+citation.* ⌗ ***The citation stays inside the span, because "closed at `X1`" is the claim*** — *`69`'s
+alternative offer of the bare citation would have pinned the name without the finding.*
+
+**⓶ ⌗ AND THE `Lovelock` ROW'S ANAPHOR IS FILED, NOT CLOSED, BECAUSE NO SPAN CAN CLOSE IT.** *The
+defect `69` named — "the condition the claim needs (`That forcing is dimension-dependent`) is outside
+the span" — is fixed, and the consequence that makes it bite is carried too. **But `the same algebra`
+is still a back-reference**, and `69` flagged that in the same ground as a border case ("`the same X`
+is not among ⓶'s listed forms").* ⇒ *Measured before deciding rather than asserted: the algebra's own
+name, `hypersurface-deformation algebra`, stands **only inside a `%`-commented block about `2,000`
+characters upstream**, so **no contiguous span reaches both it and this clause**. The widening that
+exists is taken; the part that cannot be done is written down.*
+
+**⓷ ⌷ AND ONE CONJUNCT IN THE SAME ASSERTION IS DELIBERATELY LEFT ALONE.** *`'e one fact.'' …'` is one
+of the **`88`** `EXTEND-SHORT` rows I routed at `r7355+cc66.3` — adjudicated `EXTENDED`, mid-word by
+construction of `70`'s `D`-extension.* ⇒ **I said I had not touched one of them and I have not touched
+this one either, although it sits in a line I was already rewriting.** *Re-verdicting those is yours
+while the ruling is outstanding, and a seat that routes a population and then quietly fixes one member
+of it has routed nothing.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, both repaired checks printing `OK`. Extractor: `7` keys,
+all decided, no annotation fault; `3` dropped, `2` added. Each span counted once in the
+emphasis-normalised haystack **the check itself reads** (one is the concatenation of every
+`corpus/*.tex` bar the generated appendices) and once under `_unmark`.*

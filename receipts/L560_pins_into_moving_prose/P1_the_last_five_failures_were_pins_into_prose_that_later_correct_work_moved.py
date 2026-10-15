@@ -129,8 +129,25 @@ def main():
     p12_then = flat(git('show', 'eda3ad7:corpus/algebroid_paper.tex'))
     check('⓶ N1: "Lovelock" occurs 0 times in P12 at eda3ad7 (r2515, its own build) and is present '
           'now -- the fork\'s c54.202 added it',
+          # ⬭⬭ r7355+cc66, REPAIR of a DANGLING span (r7291+69, ⓶): *** "the condition the claim
+          #   needs ('That forcing is dimension-dependent') is outside the span." ***  Widened to
+          #   carry it, and the consequence that makes it bite (the Lovelock theories coincide
+          #   with GR only in four dimensions).  A markup carrier too -- the condition is written
+          #   `\emph{That forcing is dimension-dependent}` -- so the emphasis comes out of the
+          #   haystack and the span stays whole.
+          #   ⌗ AND A RESIDUAL IS FILED RATHER THAN SILENTLY CLOSED: `the same algebra` is still
+          #     an anaphoric back-reference.  69 flagged it as a BORDER CASE in the same ground --
+          #     *"'the same X' is not among ⓶'s listed forms"* -- and the algebra's own NAME
+          #     (`hypersurface-deformation algebra`) stands only in a `%`-commented block far
+          #     upstream, so no contiguous span reaches both it and this clause.  *Measured before
+          #     deciding: the named form is ~2,000 characters away and inside LaTeX comments.*
+          #   ⌗ Verified before performing: ONCE in the emphasis-normalised corpus text this check
+          #     reads, once under `_unmark`.
           'Lovelock' not in p12_then
-          and 'the same algebra closes for the Lovelock theories' in live)
+          and 'That forcing is dimension-dependent: the same algebra closes for the Lovelock '
+              'theories~\\cite{TeitelboimZanelli1987}, which coincide with general relativity only '
+              'in four dimensions'
+              in re.sub(r'\\emph\{([^}]*)\}', r'\1', live))
     p0_then = flat(git('show', 'aa2b6ee:corpus/geometric_core_paper.tex'))
     # ** r6931+70.1: RE-POINTED, class (b) DISCHARGED -- and at what discharged it. **  The c54.179
     #    split sentence ("The item has two sides and they now stand differently, so it is split rather
@@ -152,8 +169,34 @@ def main():
           and 'item has two sides and they now stand differently' in p0_split
           and 'e one fact.\'\' \\emph{The test has two sides, and each has been run.}' in _p0_live
           and '\\emph{On the constant side}, \\S\\ref{sec:ledger} states that the gravitational--cosmological--quantum sector spends \\emph{n' in _p0_live
-          and '\\emph{On the datum side}' in _p0_live
-          and 'for want of work}\\rcpt{X1_the_ratio_is_a_clock_reading_not_a_carried_datum}' in _p0_live
+          # ⬭⬭ r7355+cc66, REPAIR of TWO DANGLING spans with ONE widening, which is what
+          #   r7291+69 proposed for the first of them ("a widening to the clause, OR to the
+          #   sentence carrying the X1 citation").  Both defects are real:
+          #     `\emph{On the datum side}` is a VERBLESS PREPOSITIONAL HEADING whose clause
+          #       ("$\rho_r/\rho_m$ is a matter initial condition and not a constant") sits
+          #       outside it, so *** it asserted only that the heading exists, not that the datum
+          #       side was closed ***;
+          #     `for want of work}\rcpt{X1_...}` opens MID-SENTENCE on a prepositional tail, with
+          #       the clause's subject and verb outside it -- and it is sliced at a markup brace,
+          #       not at a word.
+          #   ⇒ ONE span covers both: the datum-side clause, its consequence, and the following
+          #     sentence that carries the impossibility result and its X1 citation.  *The citation
+          #     stays INSIDE the span, because `closed at X1` is the claim -- 69's alternative
+          #     offer of the bare citation would have pinned the name without the finding.*
+          #   ⌗ A markup carrier three times over (`\emph{On the datum side}`, `\emph{It cannot be
+          #     derived ...}`), so the emphasis comes out of the HAYSTACK per 60's r7255.
+          #   ⌗ Verified before performing: ONCE in the emphasis-normalised paper, once under
+          #     `_unmark`.
+          #   ⌷ The mid-word conjunct above (`e one fact.'' ...`) is LEFT AS IT STANDS.  It is one
+          #     of the 88 `EXTEND-SHORT` rows routed to 66 at r7355+cc66.3 -- adjudicated
+          #     EXTENDED, mid-word by construction of 70's D-extension -- and re-verdicting those
+          #     is not this seat's to do while the ruling is outstanding.
+          and ('On the datum side, $\\rho_r/\\rho_m$ is a matter initial condition and not a '
+               'constant, so it is not in the geometric residue at all, and it is a clock reading '
+               'rather than a datum a handover transmits. It cannot be derived from the progenitor '
+               'collapse, for a structural reason rather than for want of '
+               'work\\rcpt{X1_the_ratio_is_a_clock_reading_not_a_carried_datum}')
+              in re.sub(r'\\emph\{([^}]*)\}', r'\1', _p0_live)
           and 'Reach: stated as a target, not a result' not in live)
     p7_then = flat(git('show', 'e8e58cf:corpus/CR_framework.tex'))
     seg_then = p7_then[p7_then.find('\\section{Frontiers and open problems}'):]
