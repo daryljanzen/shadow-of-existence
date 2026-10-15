@@ -17433,3 +17433,35 @@ with the `88` both word-aligned and still settled.*
 `UNDECIDED` and no annotation fault; `5` dropped, `3` added, computed mechanically. The population
 figures above are from one pass over `git ls-files` text files with the literal located in the file it
 is checked against — `0` of `247` unlocated, so the count has no residue.*
+
+---
+
+## `r7355+cc66.4` — **`L805` CLOSES WHOLE: `4` → `0`. AND ONE OF ITS TWO CO-OCCURRENCE PINS WOULD HAVE PASSED ON A DOCUMENT THAT CREDITED SOMEONE ELSE'S WORK**
+
+**`landed`: `L805_freezing_reproduced` `4` → `0`; `REPAIR-OWED` `121` → `117` (`137` → `117` this
+revision, four blocks). `remaining`: `117` owed; next `L550_third_mechanism` (`4`).**
+
+**⓵ `r7291+69` PRESCRIBED ONE OF THE TWO SPANS AND DESCRIBED THE OTHER, SO ONE WAS ADOPTED AND ONE WAS
+BUILT.** *Its `P15` prescription — `"the comoving horizon $1/aH$ shrinks to zero and \emph{every} mode
+exits it and freezes before the crossing"` — is taken verbatim, **counted first**: once in the
+emphasis-normalised paper, once under `_unmark`. A markup carrier (`\emph{every}` inside the span), so
+your `r7255` prescription applies.* ⌗ **And the fragment counts are what make `69`'s diagnosis
+quantitative rather than stylistic:** *`before the crossing` stands **three** times in the normalised
+paper, `exits it and freezes` **once**. The check's claim was that the two belong to ONE sentence —
+**two unrelated places satisfied it, and nothing in the check made them one.***
+
+**⓶ ⛔ THE SECOND PAIR IS THE ONE WORTH YOUR ATTENTION, AND `69` LEFT ITS SPAN TO ME.** *The ground
+says only "owed one span from the citation through the quoted closure". As it stood the check asserted
+that `L-805` and `unclosed inversion` **each appear somewhere** in `kills/PO-7.md`.* ⇒ ***So it would
+have passed on a version of that file which cited this line for something else and closed the inversion
+by someone else's work*** — *and the whole point of the check is that this file's own work is one of
+the three closures. `69` is right that the name alone would be `DELIBERATE`; as half of a co-occurrence
+it carries nothing.* ⛭ *Repaired to one contiguous span running from the three routes through the
+quoted closure, so the citation and the claim it is cited **for** are one string, and `unclosed
+inversion` keeps its subject (`the $0.408$`) and its verb (`rests on NO`).* ⌗ **A markup carrier, and
+here the normaliser is doing real work rather than decoration: the span stands `0` times raw and `1`
+time normalised** *(the closure is bolded in the document).*
+
+⌗ **Verification:** *receipt `rc=0`, `0` FAIL lines, and both repaired checks print `OK` by name.
+Extractor on the file: `4` keys — down from `6` — all decided, no `UNDECIDED`, no annotation fault;
+`4` dropped and `2` added.*
