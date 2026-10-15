@@ -40,6 +40,11 @@ GATE = 'corpus/check_revision_collisions.py'
 #: the six `S39` pins, and the lengths the gate's own map-building command was run at
 PINS_S39 = ('8afa9ed3', 'fadf708d', '311e7ac6', 'e7b7c7ab', 'a2555f4f', '566a97fc')
 ABBREVS = (None, 7, 9, 12)
+#: the commits the workflow's checkout depths are read at: where the red was recorded, where the second
+#: repair landed, and the trunk -- pinned, with the live trunk reading printed beside them
+RED_AT = 'cdc16410'
+REPAIR_AT = '4cb449fe'
+TRUNK = '1031598b'
 
 #: ** THE PRODUCERS: the ways git is asked for an abbreviation of an OBJECT NAME. **
 #: ⚠ *`--abbrev-ref` is NOT one of them -- it abbreviates a REF to a branch name, which has no length
@@ -255,6 +260,31 @@ def pairings():
             callers[rel] = hit
     return readers, callers
 
+
+#: ** THE FIRST FORM, KEPT SO THE FIGURE IS CHECKABLE RATHER THAN NARRATED. **
+#: *Any `==`, `in`, `.get(` or subscript-assignment within six lines of a producer, with `--abbrev-ref`
+#: counted as a producer -- which is how it returned `18`.  It is kept as a CONTROL on the tightened
+#: form: a detector whose predecessor's figure cannot be reproduced cannot be shown to have improved.*
+_WINDOW_PROD = ('%h', '--short', '--abbrev')
+_WINDOW_CONSUME = re.compile(r'(==|!=|\bin\b|\.get\(|\.setdefault\(|\[[^\]]*\]\s*=)')
+
+
+def window_form():
+    """[(rel, lineno, text)] the over-counting first form, and the subset it took on `--abbrev-ref`"""
+    hits, refhits = [], []
+    for rel in tracked('receipts', 'corpus'):
+        lines = code_lines(rel)
+        by_no = dict(lines)
+        for no, ln in lines:
+            if not any(p in ln for p in _WINDOW_PROD):
+                continue
+            window = '\n'.join(by_no.get(n, '') for n in range(no - 6, no + 7))
+            if _WINDOW_CONSUME.search(window):
+                hits.append((rel, no, ln.strip()[:120]))
+                if '--abbrev-ref' in ln:
+                    refhits.append((rel, no))
+    return hits, refhits
+
 def measure():
     if RESULT:
         return RESULT
@@ -298,7 +328,8 @@ def measure():
                     not8.append((rel, name, val))
 
     readers, callers = pairings()
-    RESULT.update(readers=readers, callers=callers,
+    window, refhits = window_form()
+    RESULT.update(readers=readers, callers=callers, window=window, refhits=refhits,
                   files=files, sites=sites, consuming=consuming, about=about,
                   argument=argument, gates=gates, consts=consts, mine=mine, not8=not8,
                   session=sess)
@@ -330,7 +361,7 @@ def main():
     print()
 
     print('  (i) THE WORKFLOW`S CHECKOUT DEPTHS, read at three commits')
-    for sha in ('cdc16410', '4cb449fe', 'origin/main'):
+    for sha in (RED_AT, REPAIR_AT, TRUNK):
         d = depths(sha)
         defaults = [j for j, v in d.items() if v == 'default']
         rec = {j: runs_receipts(sha, j) for j in defaults}
@@ -340,9 +371,12 @@ def main():
 
     print('  (ii) THE SIX PINNED SHAS AGAINST THE TRUNK')
     _on = [p for p in PINS_S39
-           if subprocess.run(['git', '-C', ROOT, 'merge-base', '--is-ancestor', p, 'origin/main'],
+           if subprocess.run(['git', '-C', ROOT, 'merge-base', '--is-ancestor', p, TRUNK],
                              capture_output=True).returncode == 0]
-    print(f'      {len(_on)} of {len(PINS_S39)} are ancestors of origin/main, so reachable at any depth')
+    print(f'      {len(_on)} of {len(PINS_S39)} are ancestors of the pinned trunk {TRUNK}, so '
+          f'reachable at any depth')
+    print(f'      the live trunk reads {git("rev-parse", "--short=8", "origin/main").strip()} and is '
+          f'asserted of nothing, per r7368 ②')
     print()
 
     R = measure()
@@ -366,7 +400,11 @@ def main():
     print(f'      => 1 map, {len(R["callers"])} caller(s): the two ends of the key in different files')
     print()
 
-    print('  EVERY CONSUMING SITE (structural test; the window test returned 18, over-counting)')
+    print(f'  THE FIRST FORM, kept as a control: {len(R["window"])} site(s), of which '
+          f'{len(R["refhits"])} taken on `--abbrev-ref`, which abbreviates a REF and has no '
+          f'environment-chosen length')
+    print()
+    print('  EVERY CONSUMING SITE (structural test)')
     for rel, no, txt in R['consuming']:
         print(f'      {rel}:{no}')
         print(f'         {txt}')

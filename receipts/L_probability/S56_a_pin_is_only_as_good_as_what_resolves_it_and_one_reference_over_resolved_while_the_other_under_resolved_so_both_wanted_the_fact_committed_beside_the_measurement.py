@@ -30,6 +30,20 @@ fails -- on the runner and not here, where the clone is full.*
     stored value carries the claim and the absence is REPORTED. **  `r7365` ②, for a fact rather than
   for a selector.
 
+⛔⛭⛭⛭ **CORRECTED AT `r7374`: THE REPAIR ABOVE IS RIGHT AND THE CAUSE WRITTEN BESIDE IT IS FALSE.**
+*Three measurements, none needing the runner.* ⒤ **No job that runs a receipt is shallow** — every
+receipt-running job in `.github/workflows/gates.yml` checks out with `fetch-depth: 0`, read at the
+commit the red was recorded against, at the commit carrying the second repair, and on the trunk now;
+the one default-depth checkout runs LaTeX and no receipts. ⒥ **All six shas are ancestors of the
+trunk**, so reachable at any depth. ⒦ **The signature reproduces here from another variable**: the
+map is keyed by `%h`, git picks that length from the object count, and at this clone's `8` all `6`
+shas are found while at `7`, `9` and `12` **none** is.
+  ⇒ *** A PIN KEYED BY AN ABBREVIATION IS KEYED BY SOMETHING THE ENVIRONMENT CHOOSES. ***
+  ⌊ ⚠ *Not claimed: that the runner's length is any particular value — asserting that would be the
+    same move being corrected. And `r7371` `②`'s rule narrows rather than falls: the container is not
+    the instrument for what the runner HAPPENS to have, but it always is for what the code DEPENDS
+    ON, which is a property of the code and readable wherever the code is.*
+
 ** ⇒⇒⇒ THE RULE: A PIN IS ONLY AS GOOD AS WHAT RESOLVES IT.  One reference resolved to more than it
 named and the other to less, and both wanted the fact committed beside the measurement. ***
 
@@ -222,8 +236,9 @@ def main():
           {h for h, _m in _stored} == _pinned_shas and _pinned_shas
           and len(_agree) == len(_stored))
     check('Ⓒ② ⇒ and the walk it used to depend on is gone from the clause: the marker is read from '
-          'the commit by id, not out of a map built by walking the history reachable from `HEAD`, '
-          'which a shallow clone truncates',
+          'the commit by id, which git resolves from any prefix, rather than out of a map built '
+          'by walking the history reachable from `HEAD` and KEYED BY AN ABBREVIATION -- a map a '
+          'shallow clone truncates and a different abbreviation length empties (r7374)',
           'def session_of' in _s39 and '_SESSION.get' not in _s39
           and '_UNREACHED' in _s39)
     check('Ⓒ③ ⇒⇒ and the absence is REPORTED rather than failing or passing: a sha this clone does '

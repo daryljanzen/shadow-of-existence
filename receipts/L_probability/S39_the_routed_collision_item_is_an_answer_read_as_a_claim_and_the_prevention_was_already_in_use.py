@@ -74,6 +74,30 @@ PAIRS = {'r7285': ('8afa9ed3', ('fadf708d', '311e7ac6')),
 #   ⌊ *The markers are stored here, which is `r7365` ②'s rule.  Where the object IS present they are
 #     CHECKED against what the commit says, so the stored data cannot drift unchallenged; where it is
 #     absent the stored value carries the claim and the absence is REPORTED.*
+# ⛔⛭⛭⛭ r7374: ** AND THE CAUSE WRITTEN ABOVE IS FALSE.  THE REPAIR IS RIGHT; THE REASON BESIDE IT IS
+#   NOT. **  *Three measurements, none of which needed the runner:*
+#     ⒤ ** No job that runs a receipt is shallow. **  Read out of `.github/workflows/gates.yml` at the
+#       commit this red was recorded against (`cdc16410`), at the commit that carried the second repair
+#       (`4cb449fe`), and on the trunk now: every receipt-running job checks out with `fetch-depth: 0`.
+#       The one default-depth checkout is `compile`, which runs LaTeX and no receipts.
+#     ⒥ ** All six shas below are ancestors of the trunk, ** so `git log` from `HEAD` reaches them at
+#       any depth on any branch based on it.
+#     ⒦ ** The signature reproduces here, from a different variable. **  The gate builds its map with
+#       `git log --format=%h…` and looks a sha up in it by EXACT STRING.  `%h` is git's abbreviation and
+#       git picks its length from the object count.  Running the gate's own command at four lengths:
+#       at this clone's `8`, **`6` of `6`** of the shas below are found; at `7`, at `9` and at `12`,
+#       **`0` of `6`** -- same tree, same commits, nothing edited.
+#   ⇒ *** A PIN KEYED BY AN ABBREVIATION IS KEYED BY SOMETHING THE ENVIRONMENT CHOOSES. ***  *That is
+#       exactly "the map has no entry for them", produced by a variable with nothing to do with depth.*
+#   ⌈ ⚠ *NOT claimed: that the runner's abbreviation length is `7`, or any value.  It cannot be seen
+#     from here, and asserting it would be the same move being corrected.  What is claimed is that the
+#     lookup matches an exact string against a length the environment picks -- wrong whatever that
+#     length is, and the only mechanism ⒤ and ⒥ leave standing.*
+#   ⌊ *The repair stands unchanged and is immune to both: it reads each marker off the commit BY ID,
+#     which git resolves from any prefix, and never consults the abbreviated map.  `r7372`'s rule, one
+#     turn further: a fix whose stated cause is wrong is still a defect, because the next reader
+#     inherits the reason and not the measurement.*
+
 SESSIONS = {
     '8afa9ed3': 'https://claude.ai/code/session_01YGJEEs8cWKLi4PTi1bxhuK',
     'fadf708d': 'https://claude.ai/code/session_01XXeapZm1snJuJTXbjf7Wtv',
