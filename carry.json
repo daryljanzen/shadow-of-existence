@@ -372,7 +372,6 @@
    },
    "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
     "gates": [
-     "\u24b6\u2462",
      "\u24bb\u2460"
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38738353300",
@@ -404,8 +403,7 @@
      "\u24b7\u2464",
      "\u24b7\u2466",
      "\u24b7\u2467",
-     "\u24b9\u2460",
-     "\u24ba\u2463"
+     "\u24b9\u2460"
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38738353300",
     "since": "cdc1641064b9d02ee72f87c3a3b3fe3e721600dd"
