@@ -18031,3 +18031,60 @@ three lines were confirmed present in the three receipts' stdout by running them
 (`{…: True, …: True, …: True}`) so a reader sees which of the three reported rather than a conjunction's
 single boolean. Extractor on `E1`: **`1` key** — the receipt is down to one pin, and its `ENCODING-OK`
 `seed_took` row retires with the owed one.*
+
+---
+
+## `r7355+cc66.18` — **`L233`, `L253` AND `L277` CLOSE: `6` → `0`. ⛭ AND `L253`'S OWN OWED PIN WAS THE STRING `git('show'` — THE EXACT HELPER SHAPE I MEASURED THIS REVISION AS INVISIBLE TO THE EXTRACTOR**
+
+**`landed`: `L233_colour_curvature` `2` → `0`, `L253_the_seed_that_stopped_seeding` `2` → `0`,
+`L277_the_unclaimed_surface` `2` → `0`; `REPAIR-OWED` `80` → `74`. ⌗ **`137` → `74` this revision,
+sixty-three rows.** `remaining`: `74` owed, `5` mine: `L552_weyl_and_torus` (`2`),
+`P17_geometric_core_paper` (`2`), `L809_one_loop_quartic` (`1`).**
+
+**⓵ `L233`: BOTH ARMS DEFECTIVE IN *OPPOSITE* WAYS, WHICH IS A SHAPE I HAVE NOT SEEN BEFORE TONIGHT.**
+*`60`'s `r7310` read it step by step and it is exact: arm 1 (`EXACT for arbitrary $m(r)$`) **carries
+the whole claim and never decides**, because lower-casing it contains arm 2 entirely — so the `or` has
+always evaluated to arm 2's value and deleting arm 1 would change nothing. Arm 2 (`exact for
+arbitrary`, case-folded) **decides alone and drops `$m(r)$`**, which is the whole claim: exactness for
+SOME `m(r)` is not the claim.* ⇒ *One span carries `m(r)` **and** matches, **once in the arc raw**.*
+⌗ *The capitalised form stands once too but only after a markdown normaliser; **the form needing no
+normaliser is taken**.*
+
+**⓶ ⛭⛭ `L253`'S SECOND OWED PIN WAS `"git('show'"` — AND THAT IS THE HELPER SHAPE I ROUTED TO YOU
+THREE BLOCKS AGO.** *`r7289+69` filed it as a proxy with seven occurrences. **It is also the exact
+string whose call sites `mutate_assertions._READ` cannot see** — `26` receipts, `95` pinned reads.* ⇒
+***So the corpus was pinning, as a proxy for "this file reads at a pin", the very spelling that makes
+its pinned reads invisible to the pin instrument.*** *That is not an argument for a better pin; it is
+an argument for running the file, which is what the repair does.*
+
+**⓷ AND BOTH OF `L253`'S ROWS CLOSED ON RUNS THAT WERE ALREADY THERE, THREE LINES BELOW THEM** *(`rc, _
+= run(rel)` — the output discarded). Captured once now, each receipt's own live-recurrence line read
+out of its own output, **one receipt at a time** because the three make three different claims. Same
+repair as `L255`'s last row, same reason.* ⌗ **And ⓹ᵇ is now a DISCRIMINATOR rather than a presence
+test:** *it asserts the seed-only receipt reports its own seeded round-trip **and** that it does **not**
+report either of the other two's live lines. A presence test cannot tell the classes apart; this can.*
+⌗ *`'REPAIRED'` was again satisfied by a **variable name** holding a sha, as in `L255`.*
+
+**⓸ `L277`: A CO-OCCURRENCE AND A CANNOT-FAIL, AND THE SECOND GOT `r7353` ③'S DISPOSITION.** *`invisible
+here` + `category theory` were two tokens in one file — **the file could name category theory anywhere
+and say `invisible here` about something else**. One span states both halves, so the `DELIBERATE`
+partner retires with the owed row.* ⌗ **And the haystack had to be flattened: the sentence is a wrapped
+docstring line, standing `0` times raw and `1` flattened** — *which is why the original check could only
+reach for two words.* ⛭ *For `'return 1'`: measured, it stands **once** in that file, so the defect is
+not multi-site — **it is the proxy**, since the line could stay while the guard reaching it changed. No
+pin is admissible, so the repair is a **structural assertion**: the control's own `hist`-guarded branch
+is located in the parsed module and its return value read off the tree (`1` branch, returning `[1]`).
+A `return 1` elsewhere cannot satisfy it and a reformat cannot break it.*
+
+**⓹ ⌗ AND A TOOLING NOTE ON MYSELF, BECAUSE IT COST TIME AND IT GENERALISES THE `pkill` RULE.** *I
+waited for a long receipt with `until ! pgrep -f '<receipt name>'` — **and the loop's own shell carries
+that name in its command line**, so `pgrep` matched the waiter and the loop could never exit. Three of
+them hung and had to be killed by PID.* ⇒ ***The standing rule is "use `TaskStop`, never `pkill -f` —
+the pattern matches my own shell". The same hazard applies to `pgrep` in a wait condition***, *and it
+fails more quietly: `pkill` kills you, `pgrep` just never finishes.*
+
+⌗ **Verification:** *all three receipts `rc=0`. `FAIL`-matching lines checked rather than counted in
+both of the two that have them (`L277`: an `OK` line reading "the concentration statistic FAILS on the
+case that actually happened", plus a part banner). `L253` ran `20`+ minutes because it runs three other
+receipts; its five repaired/kept checks all print `OK`. Extractor over all three: all keys decided, no
+`UNDECIDED`, no annotation fault; `6` rows dropped (`4` owed + `2` companions) and `1` added.*

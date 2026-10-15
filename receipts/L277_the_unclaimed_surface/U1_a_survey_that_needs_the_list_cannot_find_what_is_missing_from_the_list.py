@@ -59,7 +59,9 @@ finding.
 
 Written r3172, `L-277`.  Stated for reversal.
 """
+import ast
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -133,9 +135,22 @@ def main():
     print('  ==========================================================================')
     fs_src = open(os.path.join(ROOT, 'corpus', 'field_survey.py'),
                   encoding='utf-8', errors='replace').read()
-    check('⓵ `field_survey` writes its own limitation into itself: a field used under names not in '
-          'its list is invisible to it, and it names category theory as the case',
-          'invisible here' in fs_src and 'category theory' in fs_src)
+    # ⬭⬭ r7355+cc66, REPAIR of the PROXY r7300+60 named -- *"a short noun phrase or status phrase
+    #   standing for a proposition, able to fail and carrying less than the claim"* -- and it was a
+    #   CO-OCCURRENCE besides: two tokens in ONE file, so `field_survey` could name category theory
+    #   anywhere and say `invisible here` about something else, and the check would pass.
+    #   ⇒ One span, and it is the sentence that makes both halves of the claim at once.
+    #   ⛔ AND THE HAYSTACK HAD TO BE FLATTENED, which is why only tokens worked before: the
+    #     sentence is a wrapped docstring line, so it stands **0** times in the raw source and
+    #     ONCE flattened.  *A long span read raw against wrapped prose is the silent-never-match
+    #     shape -- it is the reason the original check could only reach for two words.*
+    #   ⌗ Verified before performing: raw 0, flattened 1, and 1 under `check_quote_pins._unmark`.
+    check('⓵ `field_survey` writes its own limitation into itself: "A field the corpus uses under '
+          'names not in its list is invisible here -- which is exactly the defect that hid category '
+          'theory for ninety revisions"',
+          'A field the corpus uses under names not in its list is invisible here -- which is '
+          'exactly the defect that hid category theory for ninety revisions'
+          in re.sub(r'\s+', ' ', fs_src))
     check('⓵ᵇ and its question genuinely requires the answer in advance: every field it surveys is '
           'a hand-written vocabulary in its own FIELDS table',
           len(FS.FIELDS) > 15 and all(isinstance(t, list) for _, _, t in FS.FIELDS))
@@ -194,10 +209,27 @@ def main():
           'not a no-op',
           not any(w in withct for w in ('groupoid', 'algebroid', 'morphism')))
     rc = os.system(f'cd {ROOT} && python3 corpus/unclaimed_surface.py --top 4 >/dev/null 2>&1')
+    # ⬭⬭ r7355+cc66, REPAIR of the CANNOT-FAIL pin r7300+60 called *"the extreme of the
+    #   narrower-than-claim family: a single common word or a line of code"*.  ⌗ Measured: in THIS
+    #   file `return 1` stands exactly ONCE, so the defect is not multi-site -- *** it is the
+    #   PROXY: the line could stay while the guard that reaches it changed, and a reformat or a
+    #   rename breaks the pin without touching the behaviour. ***
+    #   ⇒ `r7353` ③'s disposition: no pin on that line is admissible, so the repair is a
+    #     STRUCTURAL ASSERTION -- *** the control's OWN guard is located in the parsed module and
+    #     its return value read off the tree. ***  A `return 1` elsewhere cannot satisfy it, and
+    #     renaming or rewrapping cannot break it.
+    #   ⌗ Verified before performing: exactly ONE `hist`-guarded `if` in the module, and the
+    #     constant returns inside it are `[1]`.
+    _us_tree = ast.parse(open(os.path.join(ROOT, 'corpus', 'unclaimed_surface.py'),
+                              encoding='utf-8', errors='replace').read())
+    _guards = [[r.value.value for r in ast.walk(n)
+                if isinstance(r, ast.Return) and isinstance(r.value, ast.Constant)]
+               for n in ast.walk(_us_tree)
+               if isinstance(n, ast.If) and 'hist' in ast.dump(n.test)]
     check('⓸ᶜ and the control runs on every invocation and FAILS the instrument if the historical '
-          'case ever stops surviving', rc == 0
-          and 'return 1' in open(os.path.join(ROOT, 'corpus', 'unclaimed_surface.py'),
-                                 encoding='utf-8', errors='replace').read())
+          f'case ever stops surviving -- STRUCTURAL: {len(_guards)} `hist`-guarded branch(es) in '
+          f'the module, returning {_guards}, read off the parsed tree rather than matched as text',
+          rc == 0 and len(_guards) == 1 and _guards[0] and all(v != 0 for v in _guards[0]))
 
     print()
     print('  ' + '=' * 74)
