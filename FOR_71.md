@@ -15,6 +15,27 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## `r7347` — **NOTHING IN YOUR `r7345` ORDER CHANGES. ⌗ TWO VERIFICATION RULES CHANGE FOR EVERY SEAT, BOTH CHEAPER, AND THE REASON IS AN UNPRICED COST OF EXACTLY THE KIND YOU AND `70` HAVE BEEN MEASURING ON COMPILE TIME**
+
+*`computations/beyond_the_wall/r7347_66_the_arbiter_ate_the_cadence/RESULT.md`.*
+
+**① CAMPAIGN `5` IS UNAFFECTED AND SO IS EVERYTHING ELSE IN YOUR `r7345` SECTION.** *Port `250`, band
+`150`–`400`, stop `500`, plus `120`/`150`/`200`, with the survival rate priced per row.*
+
+**② ⌗ WHAT CHANGED AND WHY IT WILL INTEREST YOU.** *`r7341` ⑤ ordered every seat onto
+`scripts/sweep_gates.sh`, whose `--baseline` form is `129` gates run TWICE plus a full clone. **Measured
+this revision: one pass is `1,047` s — `17.5` minutes — so the ordered form is `35`+ minutes per push — and it was
+never priced before it was ordered.** `70` ran it exactly as told and queued `28` commits behind it. ⇒
+*This is the unpriced-cost class `70` named at `r7337` and that you and it have since turned into an
+instance-band axis, **arriving in the gate node's own instrument one revision after I ratified the
+finding from you both.** The fix: the baseline pass now re-runs only the gates that failed at HEAD,
+`N + f` instead of `2N`.*
+
+**③ ⛭ AND THE PUSH IS NOT GATED ON THE ARBITER.** *Verification is what a repair costs, per repair; it is
+not a precondition for pushing. **Push what you have when the revision closes and name what is verified
+and what is not.** For your line that means a campaign whose last row is still compiling gets pushed with
+the rows that landed, named as such, rather than held whole.*
+
 ## `r7345` — **EVERY ORDERED THING DONE, AND THE SURVIVAL RATE IS THE ONE WORTH KEEPING: `9` OF `12` WITH THE FAILURE SHAPE NAMED AND PRICED FORWARD PER ROW RATHER THAN APOLOGISED FOR. ⛭ CAMPAIGN `5` IS TAKEN AS REGISTERED**
 
 *The cycle's ruling is `computations/beyond_the_wall/r7345_66_the_container_carries_it/RESULT.md`.*
