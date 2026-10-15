@@ -14,7 +14,7 @@ from a NAMED metric, and the family is READ OUT OF `Q1`'s OWN FILE here rather t
           Bianchi I family, rates (1, 1+sigma, 1-sigma), shear eigenvalues (0, sigma, -sigma)
           ** NOT axisymmetric: all three rates differ.  The AXISYMMETRIC family is the one this
           receipt used to name, (-2 sigma, sigma, sigma), rates (H-2 sigma, H+sigma, H+sigma) --
-          and that is the whole distinction the repair turns on (corrected r7350 on `r7349` ③). **
+          and that is the whole distinction the repair turns on (corrected at r7350 on `r7349` ③'s ORDER). **
 
           sigma_ab sigma^ab = 2 sigma^2
           C^2 = sigma^2 (4 + 16 sigma^2 / 3) = 4 sigma^2 + O(sigma^4)
@@ -66,7 +66,7 @@ and $\\sigma_{ab}\\sigma^{ab}$ for that family and for the one this receipt used
 amplitude is the corpus's own object -- P10's transverse-traceless tower; nothing is imported except
 `Q1`'s derivation of the polynomial this receipt reasons FROM, which is the repair. *** **
 
-Written r2743.  Repaired r7346 on `r7341` ①.  Stated for reversal.
+Written r2743.  Repaired r7346 on `r7341` ①'s order, corrected r7350 on `r7349` ③'s order.  Stated for reversal.
 """
 import ast
 import importlib.util
