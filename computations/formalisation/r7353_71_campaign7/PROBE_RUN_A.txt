@@ -1,0 +1,78 @@
+# r7353+71.2 — piece A: lake env lean probes/Campaign7.lean (2026-10-15T04:59:22Z)
+probes/Campaign7.lean:54:37: warning: This simp argument is unused:
+  coeff_C_mul
+
+  [apply] simp only [Mgg, expT, expTd, coeff_mul, Finset.Nat.sum_antidiagonal_succ, Finset.Nat.antidiagonal_zero,
+    Finset.sum_singleton, coeff_add, coeff_C_mul_X_pow, coeff_C_mul_X, coeff_C, coeff_X_pow, coeff_X, coeff_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/Campaign7.lean:54:50: warning: This simp argument is unused:
+  coeff_C_mul_X_pow
+
+  [apply] simp only [Mgg, expT, expTd, coeff_mul, Finset.Nat.sum_antidiagonal_succ, Finset.Nat.antidiagonal_zero,
+    Finset.sum_singleton, coeff_add, coeff_C_mul, coeff_C_mul_X, coeff_C, coeff_X_pow, coeff_X, coeff_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/Campaign7.lean:54:69: warning: This simp argument is unused:
+  coeff_C_mul_X
+
+  [apply] simp only [Mgg, expT, expTd, coeff_mul, Finset.Nat.sum_antidiagonal_succ, Finset.Nat.antidiagonal_zero,
+    Finset.sum_singleton, coeff_add, coeff_C_mul, coeff_C_mul_X_pow, coeff_C, coeff_X_pow, coeff_X, coeff_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/Campaign7.lean:55:4: warning: This simp argument is unused:
+  coeff_one
+
+  [apply] simp only [Mgg, expT, expTd, coeff_mul, Finset.Nat.sum_antidiagonal_succ, Finset.Nat.antidiagonal_zero,
+    Finset.sum_singleton, coeff_add, coeff_C_mul, coeff_C_mul_X_pow, coeff_C_mul_X, coeff_C, coeff_X_pow, coeff_X]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/Campaign7.lean:57:13: warning: This simp argument is unused:
+  pow_zero
+
+  [apply] simp only [one_mul, mul_add, neg_add, mul_smul_comm, smul_sub, smul_add, sq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/Campaign7.lean:57:23: warning: This simp argument is unused:
+  one_mul
+
+  [apply] simp only [pow_zero, mul_add, neg_add, mul_smul_comm, smul_sub, smul_add, sq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/Campaign7.lean:57:75: warning: This simp argument is unused:
+  smul_add
+
+  [apply] simp only [pow_zero, one_mul, mul_add, neg_add, mul_smul_comm, smul_sub, sq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/Campaign7.lean:70:31: warning: This simp argument is unused:
+  coeff_C_mul
+
+  [apply] simp only [kinADM, coeff_sub, trX_coeff, sq, coeff_mul, Finset.Nat.sum_antidiagonal_succ,
+    Finset.Nat.antidiagonal_zero, Finset.sum_singleton, m0, m1, m2, trX_coeff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/Campaign7.lean:73:49: warning: This simp argument is unused:
+  Matrix.trace_one
+
+  [apply] simp only [smul_mul_assoc, mul_smul_comm, Matrix.one_mul, Matrix.mul_one, Matrix.trace_add, Matrix.trace_smul,
+    smul_eq_mul, t0, t2, hHd, Fintype.card_fin, smul_one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/Campaign7.lean:73:67: warning: This simp argument is unused:
+  Fintype.card_fin
+
+  [apply] simp only [smul_mul_assoc, mul_smul_comm, Matrix.one_mul, Matrix.mul_one, Matrix.trace_add, Matrix.trace_smul,
+    smul_eq_mul, t0, t2, hHd, Matrix.trace_one, smul_one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/Campaign7.lean:73:85: warning: This simp argument is unused:
+  smul_one_mul
+
+  [apply] simp only [smul_mul_assoc, mul_smul_comm, Matrix.one_mul, Matrix.mul_one, Matrix.trace_add, Matrix.trace_smul,
+    smul_eq_mul, t0, t2, hHd, Matrix.trace_one, Fintype.card_fin]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ShadowProbe.row58_adm_kinetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 9 s
