@@ -18,6 +18,7 @@ import collections
 import io
 import os
 import re
+import subprocess
 from math import comb
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
@@ -162,4 +163,83 @@ if __name__ == '__main__':
     for _r, _n in sorted(_b.items(), key=lambda kv: (-kv[1], kv[0])):
         print(f'      {_n:2d}  {_r.split("/")[1][:30]:30s} '
               f'{"ROUTED" if f"/{ROUTED}" in _r else ""}')
+    print()
+
+
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+# THE RESULT, appended after the block closed.  ** No band, central or decisive fraction above is
+# touched. **
+#
+# ⛔⛭⛭ AND ONE THING THE REGISTRATION GOT WRONG IN ITS OWN MACHINERY, DECLARED HERE RATHER THAN
+# QUIETLY FIXED: `owed()` and `block()` above read the LIVE ledger.  ** The moment the block closed
+# they returned nothing -- the census would have gone empty exactly when the work succeeded. **  That
+# is the fail-on-success class this seat has now met five times, and this is the first time in a
+# REGISTRATION rather than a receipt.  ⇒ The arbiter is unchanged; the population is simply read at
+# `CENSUS`, the commit the block stood at before the first repair, and the receipt asserts it there.
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+CENSUS = 'af33966d'             # the tree before the first repair of this block
+
+
+def owed_at(sha=CENSUS):
+    """the block's owed rows, read at the commit they stood at -- what `owed()` should have been"""
+    def _at(path):
+        return subprocess.run(['git', '-C', ROOT, 'show', f'{sha}:{path}'],
+                              capture_output=True, text=True, errors='replace').stdout
+    pref = {l.split('\t')[1] for l in _at('THE_REPAIR_STRIDE.tsv').split('\n')
+            if l.strip() and not l.startswith('#') and l.split('\t')[0] == SEAT}
+    return [l.rstrip('\r').split('\t') for l in _at('corpus/quote_pin_baseline.tsv').split('\n')
+            if l.startswith('receipts/')
+            and l.rstrip('\r').split('\t')[5] == 'REPAIR-OWED'
+            and l.split('\t')[0].split('/')[1] in pref]
+
+
+RESULT.update({
+    # ── arm ⒜ -- receipts of the ten closed.  ⛔ OUTSIDE THE BAND, HIGH.
+    'A_CLOSED': 10,
+    # ── arm ⒝ -- the uniqueness share of the 30 owed rows.  ⛔ OUTSIDE THE BAND, HIGH, and it
+    #   contradicts the expectation the order carried: `cc66` found 0 of 7 of its own block's
+    #   literals occurring more than once, and this block reads 17 of 30.
+    'B_MULTI': 17,
+    'B_ROWS': 30,
+    # ⚠ the arbiter's own blind spot, measured rather than described: 7 of the 30 literals occur
+    #   NOWHERE in the text set it reads (`corpus/` only), because they are SOURCE pins into
+    #   `scripts/`, `kills/` and the root registers.  Those 7 are counted as NOT multi-site, so the
+    #   share is a LOWER BOUND and the arm fails high either way: over the 23 the arbiter can see it
+    #   is 17 of 23.
+    'B_UNSEEN': 7,
+    # ── arm ⒞ -- receipts carrying a guard of the CANNOT-FAIL shape.  ⛔ OUTSIDE THE BAND, HIGH.
+    'C_GUARDS': 7,
+    # ⛭⛭ AND THE TWO ARMS TURNED OUT TO MEASURE ONE QUANTITY, WHICH NEITHER REGISTRATION SAW:
+    #   a literal occurring more than once in the file its check reads CANNOT DISTINGUISH the site
+    #   the claim is about, so every uniqueness failure IS a class-where-the-claim-is-about-a-member
+    #   guard.  ⇒ Arm ⒞'s 7 is arm ⒝'s 17 projected onto receipts, and they are not independent.
+    'C_IS_B_PROJECTED': True,
+    # ── the effort reading, from the commit stamps rather than from an impression
+    'EFFORT_MINUTES': 69.6,
+    'EFFORT_PER_RECEIPT': 6.96,
+    'REALISED': 10,
+    # ── and the eleventh, routed rather than repaired
+    'ROUTED_ROWS': 5,
+})
+
+if __name__ == '__main__':
+    _o = owed_at()
+    _u = uniqueness(_o)
+    print('  THE RESULT')
+    print()
+    print(f'    owed at the census commit {CENSUS}: {len(_o)} rows')
+    print(f'    arm (a): {RESULT["A_CLOSED"]} of {A_SPACE} closed, band {A_BAND} -- '
+          f'{"INSIDE" if A_BAND[0] <= RESULT["A_CLOSED"] <= A_BAND[1] else "OUTSIDE, HIGH"}')
+    _share = RESULT['B_MULTI'] / RESULT['B_ROWS']
+    print(f'    arm (b): {RESULT["B_MULTI"]} of {RESULT["B_ROWS"]} = {_share:.4f}, band {B_BAND} -- '
+          f'{"INSIDE" if B_BAND[0] <= _share <= B_BAND[1] else "OUTSIDE, HIGH"}; '
+          f'{RESULT["B_UNSEEN"]} of the rows are outside the arbiter\'s text set, so this is a '
+          f'LOWER bound')
+    print(f'    arm (c): {RESULT["C_GUARDS"]} of {C_SPACE}, band {C_BAND} -- '
+          f'{"INSIDE" if C_BAND[0] <= RESULT["C_GUARDS"] <= C_BAND[1] else "OUTSIDE, HIGH"}')
+    print(f'    effort: {RESULT["EFFORT_MINUTES"]} minutes for {RESULT["REALISED"]} receipts = '
+          f'{RESULT["EFFORT_PER_RECEIPT"]} a receipt, against the {EFFORT_CENTRAL_MIN_PER_RECEIPT} '
+          f'drawn from the two measured strides (and the {EFFORT_SUPERSEDES} the phase was priced '
+          f'on)')
+    print(f'    routed, not repaired: {RESULT["ROUTED_ROWS"]} rows on the do-not-edit receipt')
     print()

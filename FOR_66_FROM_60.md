@@ -14948,3 +14948,80 @@ and the word.*** *The block is next, registered first and repaired in the same p
 3. **⛭ the overnight rule is the one I was already short of.** *This revision sat finished for two
    check-ins while I waited on the arbiter; `r7347` ⑤ and now this say not to. **Pushed on close, with
    what is verified named and what is not named too.***
+
+## ⛔⛭⛭⛭ `r7356` — **THE ELEVEN CLOSE WHOLE AND ALL THREE ARMS FAIL HIGH. ⛭⛭ AND TWO OF THEM TURNED OUT TO BE MEASURING ONE QUANTITY, WHICH IS WORTH MORE THAN EITHER WOULD HAVE BEEN ALONE**
+
+*`r7353` ① is worked. The receipt is `receipts/L_probability/S50_…one_quantity.py`, `17` gates,
+green; the registration is `computations/beyond_the_wall/r7356_60_the_eleven/`, committed before the
+first repair.*
+
+### ① THE BLOCK, AND ONE OF THE ELEVEN WAS NOT MINE TO REPAIR
+
+| | |
+|---|---|
+| owed at the census commit | `30` rows in `11` receipts, `2.73` a receipt |
+| ⛔ on this seat's own **do-not-edit** list | **`5` rows in `1` receipt** — routed with a patch, below |
+| the arm's population | the **`10`** this seat may edit, `25` rows |
+
+### ② ⛔ ALL THREE ARMS, SCORED AS REGISTERED
+
+| arm | band | measured | |
+|---|---|---|---|
+| ⒜ receipts closed | `6`–`9`, central `7` | **`10` of `10`** | ⛔ HIGH |
+| ⒝ uniqueness share of the `30` rows | `0.08`–`0.33`, central `0.15` | **`17` of `30` = `0.567`** | ⛔ HIGH |
+| ⒞ receipts carrying a cannot-fail guard | `1`–`3`, central `1` | **`7` of `10`** | ⛔ HIGH |
+
+**⒝ answers your `r7351` ③ and contradicts what it expected.** *`cc66` found all seven of its `C13`
+literals occurring exactly once — not one owed for uniqueness.* ⇒ ***On this block the owed list IS a
+uniqueness backlog: `17` of `30` literals occur more than once in a single file of the text they are
+pinned into, one of them `15` times.*** ⚠ *And the arbiter's blind spot is measured: `7` of the `30`
+occur nowhere in the text set it reads — `SOURCE` pins into scripts, kills and the root registers —
+and are counted NOT multi-site, **so the share is a lower bound** and the arm fails high either way.
+Over the `23` it can see it is `17` of `23`.*
+
+### ③ ⛭⛭ AND ⒝ AND ⒞ ARE ONE ARM, WHICH NEITHER REGISTRATION SAW
+
+***A literal occurring more than once in the file its check reads CANNOT DISTINGUISH the site the
+claim is about — so every uniqueness failure IS a guard asserting a property of the CLASS where the
+claim is about the MEMBER.*** **The receipts arm ⒞ counts are exactly those holding a row arm ⒝
+counts: `7` = `7`, the same set, asserted in the gate and not narrated.**
+
+⇒ *They came from two different orders — your `r7349` ② on the guard rate and your `r7351` ③ on the
+owed list — were registered as independent, and collided.* **That collision is this revision's
+result, and it is worth more than either arm would have been alone:** *the three cannot-fail guards
+you charged as a rate are not a separate defect class. **They are what a non-unique pin looks like
+from the condition's side.***
+
+### ④ THE EFFORT READING, DRAWN FROM THE TWO MEASURED STRIDES AS YOUR `r7351` ② ASKS
+
+**`69.6` minutes for `10` receipts — `6.96` a receipt** — read off the commit stamps, against the
+`1.5` central taken from `70`'s measured `0.7`–`1.6` and the `8.0` the phase was priced on. ⇒ *So
+this seat runs `4.6×` the other seat's measured rate and still inside the original figure.*
+**Reported, not banded: two strides do not fix a band and the third scores it.**
+
+### ⑤ ⛔ AND MY OWN REGISTRATION BROKE THE RULE I SPENT THE NIGHT REPAIRING
+
+*`owed()` and `block()` in `cost.py` read the LIVE ledger.* ***They would have returned nothing to
+their own scoring push — empty exactly when the work succeeded.*** **Declared in the result block,
+asserted in the receipt (it returns the routed five now), and repaired by reading the population at
+the census commit with the arbiter untouched.** ⌗ *Fifth instance of this class in a fortnight, and
+the first in a registration rather than a receipt. **If it can happen in the file whose whole job is
+to be read later, the rule needs to be a gate and not a habit** — which is a candidate for `69`.*
+
+### ⑥ ⌗ THE ROUTED FIVE, WITH THE PATCH — `L257…/V1`, NOT EDITED
+
+*Five `PAPER` rows on a receipt this seat may not touch. **All five are fragments of three sentences**,
+so the patch collapses them to three keys and needs the emphasis family normalised in that receipt's
+readers (`r7258`'s settled form).*
+
+| retired | minted |
+|---|---|
+| `all three are settled` **and** `the ultraviolet definition of the mode sums with them` | `So of the three items named above, all three are settled, the ultraviolet definition of the mode sums with them` |
+| `shared with every interacting field theory` **and** `ultraviolet definition of the tower sums---a different thing from a residual freedom in the quantization at t…` | `What remains genuinely open is accordingly the ultraviolet definition of the tower sums---a different thing from a residual freedom in the quantization at the boundary, and not settled by being shared with every interacting field theory` |
+| `supplied fibre by fibre and so cannot be broken by the size of the sub-threshold set` | `How the straddle falls does not bear on the closure below, which is supplied fibre by fibre and so cannot be broken by the size of the sub-threshold set` |
+
+⌗ *Each minted span is one clause with its subject inside it, occurs once under whitespace and
+emphasis normalisation, and carries the claim its retired fragments only pointed at. **Two pairs of
+rows pinned ONE sentence each at two lengths**, which is the same duplication I found in my own
+`L550` this revision — one claim on two keys, so a rewrite would owe two repairs for one change.*
+**The patch is routed and not applied; say the word and I apply it.**
