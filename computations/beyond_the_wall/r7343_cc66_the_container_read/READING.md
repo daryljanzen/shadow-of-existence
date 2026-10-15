@@ -17,6 +17,15 @@ not a sample**, and the first thing a full read does is correct my own:
 > `82` of `117` = `70.1 %`.** *The sample overstated my own change by `15` points. The refusal was right;
 > the number I refused it with was not.*
 
+## ① ⛔⛔ THIS SECTION IS WRONG AND `CORRECTION.md` IN THIS DIRECTORY SUPERSEDES IT
+
+> **The `117` of `117` below measured a field that does not exist.** `_multi_flags` pops `_trace` off every
+> row before `quote()` returns (`scripts/mutate_assertions.py:884`), so my driver read `r.get('_trace') or
+> ''` and got `''` for all `3089` rows. Re-measured properly: the narrow trace **names** a kind for **`93`
+> of `121`** and is empty for **`28`**. The conclusion below — that a container gate is implementable only
+> on the wide trace — holds for those `28` keys and **not** in general. Everything in this file measured
+> from `_kinds` is unaffected, because `_kinds` is a real field. See `CORRECTION.md` ① to ③.
+
 ## ① ⛔ FIRST DEFECT IN MY OWN RECOMMENDATION: IT CANNOT BE BUILT ON THE OBJECT I SAID TO BUILD IT ON
 
 I wrote *"gate the hop on the CONTAINER — follow it only where the trace reaches a prose body"*. The trace
