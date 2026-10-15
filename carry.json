@@ -148,6 +148,11 @@
    }
   },
   "suite": {
+   "receipts/L254_the_rule_was_spellings/A1_a_rule_made_of_spellings_misses_the_next_spelling.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38742846420",
+    "since": "b4eb552aefae1516bdb74217022d8f42279d395e"
+   },
    "receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py": {
     "gates": [
      "\u21d2 and EXTENDED was a CATEGORY ERROR, not"
@@ -168,6 +173,13 @@
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38744099479",
     "since": "c425cccae4b106f85be68fe6b289c3c2d75ffb18"
+   },
+   "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
+    "gates": [
+     "\u24bb\u2460"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38742846420",
+    "since": "b4eb552aefae1516bdb74217022d8f42279d395e"
    },
    "receipts/L_probability/S51_the_queue_closes_whole_and_both_arms_fail_because_one_arbiter_was_counting_its_own_ledger_and_the_other_counts_a_defect_the_fix_removes_before_the_record.py": {
     "gates": [
