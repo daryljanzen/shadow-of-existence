@@ -473,6 +473,19 @@ Format — **OWED** (established | open) · **HOME** · **WHY GENUINELY OPEN** �
 
 **1. Matter branch-point crossing worldline-and-field dynamics.**
 
+> ⛭⛭ **BROUGHT CURRENT r7387 (66) — THIS FAMILY IS LIVE AGAIN, AT `PO-88`, AND THE DEFECT WAS INSIDE THIS ENTRY ALL ALONG.**
+>
+> *This entry says both things at once, and they are not the same object. `c54.113` reads **"THE WORLDLINE HALF, AND THE FAMILY CLOSES: there is no worldline crossing to compute"**, and `c54.115` retires the item from `P7` `sec:frontiers` on that closure. And the entry's own **`OPEN:`** line, unchanged beneath it, reads **"the *detailed* worldline-and-field dynamics for a concrete model."***
+>
+> ⇒ ***A closure taken on the WORLDLINE half does not reach an open line naming a CONCRETE MODEL'S DYNAMICS.*** *That is `PO-86`'s third outcome for the second time: the ground stands for what it answered and does not reach the item. **The `ESTABLISHED:` line is right, the `OPEN:` line is right, and the closure between them was taken on a narrower ground than the item it closed.***
+>
+> *Three artefacts carried the open and two carried the closure: `P15` §scope in print, `P5`'s check clause, and **`P7`'s own canon note in Daryl's words** — "`OPEN` = the crossing's matter `DYNAMICS` (the 'how'), `NOT` its unitarity (the 'whether', settled)" — against this closure and `P7`'s body, which said "settled on both halves" in six places.*
+>
+> **LANDED AT `r7387`:** *the row `PO-88` is opened on the item; `P7` carries it again as **enumerated item `4`** (`frontier:crossing`), classed `WORK` by that section's own distinction, with its head now reading "of the four below, two are work and two are boundaries"; `P7`'s six over-claiming sites are brought to one state and the trailing paragraph folded into the item. `P15`'s sentence and `P5`'s clause are the remaining consequence and are owed their own turns.*
+>
+> ⌗ *Kept rather than rewritten, by this table's own rule: the lines above stand as what the family said, this block as what it says now. **And the retirement is the thing to learn from — an item left `P7`'s canonical list by a reclassification rather than by being done, which is the one way this programme's rules say a list may never shrink.***
+
+
 **[r2376+c54.113 — THE WORLDLINE HALF, AND THE FAMILY CLOSES.]** ⇒⇒ ***There is no worldline crossing to compute.*** *A comoving worldline reaches the branch point at finite proper time with divergent curvature and divergent tidal stretch and **terminates** in the real section; what continues is the **analytic continuation**.* ⚠⚠ **And this family's own 'finite-curvature branch point $r=0$' is wrong as written — P2 classifies $r=0$ as the INFINITE-curvature species at which worldlines terminate.** ✔ *What it was protecting survives on better ground: at fixed $r$ the divergence carries $M$, but along the bead in the faller's own proper time it does not — $K=12[2+\sinh^{-4}(3\tau/2\alpha)]/\alpha^4\to(64/27)\tau^{-4}$, $M$-free, the same history for every progenitor. **The universality is of the APPROACH.*** ⌗ *And the two halves resolve on two clocks: zero cosmic duration, finite conformal length $3.32\alpha$ — the field half has something to act on, the worldline half nothing to transport.* **Landed in P2; receipt `P02_the_approach_is_mass_free`.**
 
 
