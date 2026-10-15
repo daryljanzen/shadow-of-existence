@@ -3647,9 +3647,9 @@ noncomputable def einsteinC (g : Fin 4 → ℝ) (Rf : Fin 4 → Fin 4 → Fin 4 
 /-- A separable diagonal metric: `cₖ(p) = Fₖ(p⁰) Gₖ(p¹)`. -/
 def cS (F G : Fin 4 → ℝ → ℝ) : Fin 4 → (Fin 4 → ℝ) → ℝ := fun k y => F k (y 0) * G k (y 1)
 
-lemma fd_coord_i {k : ℝ → ℝ} {x : Fin 4 → ℝ} (i : Fin 4) (hk : DifferentiableAt ℝ k (x i)) :
-    HasFDerivAt (fun y : Fin 4 → ℝ => k (y i)) (deriv k (x i) • ContinuousLinearMap.proj (R := ℝ)
-      (φ := fun _ : Fin 4 => ℝ) i) x :=
+lemma fd_coord_i {n : ℕ} {k : ℝ → ℝ} {x : Fin n → ℝ} (i : Fin n) (hk : DifferentiableAt ℝ k (x i)) :
+    HasFDerivAt (fun y : Fin n → ℝ => k (y i)) (deriv k (x i) • ContinuousLinearMap.proj (R := ℝ)
+      (φ := fun _ : Fin n => ℝ) i) x :=
   hk.hasDerivAt.comp_hasFDerivAt x (hasFDerivAt_apply (𝕜 := ℝ) i x)
 
 variable {F G : Fin 4 → ℝ → ℝ} (hF : ∀ k, ContDiff ℝ ∞ (F k)) (hG : ∀ k, ContDiff ℝ ∞ (G k))
@@ -3707,21 +3707,23 @@ section Engine4D_E5
 
 set_option synthInstance.maxHeartbeats 400000
 
-lemma fdA_hasFDerivAt {f : (Fin 4 → ℝ) → ℝ} (hf : ContDiff ℝ ∞ f) (p v : Fin 4 → ℝ) :
+variable {n : ℕ}
+
+lemma fdA_hasFDerivAt {f : (Fin n → ℝ) → ℝ} (hf : ContDiff ℝ ∞ f) (p v : Fin n → ℝ) :
     HasFDerivAt (fun y => fderiv ℝ f y v) ((fderiv ℝ (fderiv ℝ f) p).flip v) p := by
   have h2 := (hf.fderiv_right (m := ∞) (by simp)).differentiable (by simp) p
   exact (h2.hasFDerivAt.clm_apply (hasFDerivAt_const v p)).congr_fderiv (by ext; simp)
 
 /-- **E5.** The second partial `∂_u∂_v F` is `L u` for any derivative `L` of the first partial `∂_v F`. -/
-lemma d2_of {F φ : (Fin 4 → ℝ) → ℝ} (hF : ContDiff ℝ ∞ F) {p v : Fin 4 → ℝ}
-    (hφ : ∀ y, fderiv ℝ F y v = φ y) {L : (Fin 4 → ℝ) →L[ℝ] ℝ} (hL : HasFDerivAt φ L p) (u : Fin 4 → ℝ) :
+lemma d2_of {F φ : (Fin n → ℝ) → ℝ} (hF : ContDiff ℝ ∞ F) {p v : Fin n → ℝ}
+    (hφ : ∀ y, fderiv ℝ F y v = φ y) {L : (Fin n → ℝ) →L[ℝ] ℝ} (hL : HasFDerivAt φ L p) (u : Fin n → ℝ) :
     fderiv ℝ (fderiv ℝ F) p u v = L u := by
   have := (fdA_hasFDerivAt hF p v).unique (by rw [show (fun y => fderiv ℝ F y v) = φ from funext hφ]; exact hL)
   rw [show fderiv ℝ (fderiv ℝ F) p u v = ((fderiv ℝ (fderiv ℝ F) p).flip v) u from rfl, this]
 
 /-- **E5.** No dependence on coordinate `i` ⇒ every second partial with an `i` slot vanishes. -/
-lemma d2_indep {f : (Fin 4 → ℝ) → ℝ} (hf : ContDiff ℝ ∞ f) {i : Fin 4}
-    (h0 : ∀ y, fderiv ℝ f y (Pi.single i 1) = 0) (p u : Fin 4 → ℝ) :
+lemma d2_indep {f : (Fin n → ℝ) → ℝ} (hf : ContDiff ℝ ∞ f) {i : Fin n}
+    (h0 : ∀ y, fderiv ℝ f y (Pi.single i 1) = 0) (p u : Fin n → ℝ) :
     fderiv ℝ (fderiv ℝ f) p u (Pi.single i 1) = 0 ∧ fderiv ℝ (fderiv ℝ f) p (Pi.single i 1) u = 0 := by
   have h1 : fderiv ℝ (fderiv ℝ f) p u (Pi.single i 1) = 0 := by
     rw [d2_of hf (φ := fun _ => 0) h0 (hasFDerivAt_const (0 : ℝ) p)]; simp
@@ -3799,34 +3801,36 @@ section CoordRecipe
 
 set_option synthInstance.maxHeartbeats 400000
 
+variable {n : ℕ}
+
 variable {k m : ℝ → ℝ} (hk : ContDiff ℝ ∞ k) (hm : ContDiff ℝ ∞ m)
 
 include hk in
-lemma co_d1 (i : Fin 4) (y v : Fin 4 → ℝ) : fderiv ℝ (fun y : Fin 4 → ℝ => k (y i)) y v = deriv k (y i) * v i := by
+lemma co_d1 (i : Fin n) (y v : Fin n → ℝ) : fderiv ℝ (fun y : Fin n → ℝ => k (y i)) y v = deriv k (y i) * v i := by
   rw [(fd_coord_i i ((hk.differentiable (by simp)) _)).fderiv]; simp
 
 include hk in
-lemma co_d2 (i : Fin 4) (p u v : Fin 4 → ℝ) :
-    fderiv ℝ (fderiv ℝ (fun y : Fin 4 → ℝ => k (y i))) p u v = deriv (deriv k) (p i) * u i * v i := by
-  rw [d2_of (F := fun y : Fin 4 → ℝ => k (y i)) (hk.comp (contDiff_apply ℝ ℝ i)) (fun y => co_d1 hk i y v)
+lemma co_d2 (i : Fin n) (p u v : Fin n → ℝ) :
+    fderiv ℝ (fderiv ℝ (fun y : Fin n → ℝ => k (y i))) p u v = deriv (deriv k) (p i) * u i * v i := by
+  rw [d2_of (F := fun y : Fin n → ℝ => k (y i)) (hk.comp (contDiff_apply ℝ ℝ i)) (fun y => co_d1 hk i y v)
     ((fd_coord_i i (((contDiff_infty_iff_deriv.1 hk).2.differentiable (by simp)) _)).mul_const (v i))]
   simp; ring
 
 include hk hm in
-lemma pr_d1 (i j : Fin 4) (y v : Fin 4 → ℝ) : fderiv ℝ (fun y : Fin 4 → ℝ => k (y i) * m (y j)) y v
+lemma pr_d1 (i j : Fin n) (y v : Fin n → ℝ) : fderiv ℝ (fun y : Fin n → ℝ => k (y i) * m (y j)) y v
     = deriv k (y i) * v i * m (y j) + k (y i) * (deriv m (y j) * v j) := by
-  rw [(show HasFDerivAt (fun y : Fin 4 → ℝ => k (y i) * m (y j)) _ y from
+  rw [(show HasFDerivAt (fun y : Fin n → ℝ => k (y i) * m (y j)) _ y from
     (fd_coord_i i ((hk.differentiable (by simp)) _)).mul (fd_coord_i j ((hm.differentiable (by simp)) _))).fderiv]
   simp; ring
 
 include hk hm in
-lemma pr_d2 (i j : Fin 4) (p u v : Fin 4 → ℝ) :
-    fderiv ℝ (fderiv ℝ (fun y : Fin 4 → ℝ => k (y i) * m (y j))) p u v
+lemma pr_d2 (i j : Fin n) (p u v : Fin n → ℝ) :
+    fderiv ℝ (fderiv ℝ (fun y : Fin n → ℝ => k (y i) * m (y j))) p u v
       = deriv (deriv k) (p i) * u i * v i * m (p j) + deriv k (p i) * v i * (deriv m (p j) * u j)
         + deriv k (p i) * u i * (deriv m (p j) * v j) + k (p i) * (deriv (deriv m) (p j) * u j * v j) := by
   have dk := fun s => ((contDiff_infty_iff_deriv.1 hk).2.differentiable (by simp)) s
   have dm := fun s => ((contDiff_infty_iff_deriv.1 hm).2.differentiable (by simp)) s
-  rw [d2_of (F := fun y : Fin 4 → ℝ => k (y i) * m (y j))
+  rw [d2_of (F := fun y : Fin n → ℝ => k (y i) * m (y j))
     ((hk.comp (contDiff_apply ℝ ℝ i)).mul (hm.comp (contDiff_apply ℝ ℝ j))) (fun y => pr_d1 hk hm i j y v)
     (HasFDerivAt.add (((fd_coord_i i (dk _)).mul_const (v i)).mul (fd_coord_i j ((hm.differentiable (by simp)) _)))
       ((fd_coord_i i ((hk.differentiable (by simp)) _)).mul ((fd_coord_i j (dm _)).mul_const (v j))))]
@@ -3841,12 +3845,12 @@ end CoordRecipe
 section TwoVarRecipe
 
 /-- `y ↦ (yⁱ, yʲ)`. -/
-noncomputable def prP (i j : Fin 4) : (Fin 4 → ℝ) →L[ℝ] ℝ × ℝ :=
-  (ContinuousLinearMap.proj (R := ℝ) (φ := fun _ : Fin 4 => ℝ) i).prod (ContinuousLinearMap.proj j)
+noncomputable def prP (i j : Fin n) : (Fin n → ℝ) →L[ℝ] ℝ × ℝ :=
+  (ContinuousLinearMap.proj (R := ℝ) (φ := fun _ : Fin n => ℝ) i).prod (ContinuousLinearMap.proj j)
 
-lemma prP_apply (i j : Fin 4) (y : Fin 4 → ℝ) : prP i j y = (y i, y j) := rfl
+lemma prP_apply (i j : Fin n) (y : Fin n → ℝ) : prP i j y = (y i, y j) := rfl
 
-lemma prP_split (i j : Fin 4) (y : Fin 4 → ℝ) :
+lemma prP_split (i j : Fin n) (y : Fin n → ℝ) :
     prP i j y = y i • ((1 : ℝ), (0 : ℝ)) + y j • ((0 : ℝ), (1 : ℝ)) := by
   simp [prP_apply]
 
@@ -3855,16 +3859,16 @@ noncomputable def eTV : Fin 2 → ℝ × ℝ := ![(1, 0), (0, 1)]
 noncomputable def d1H (h : ℝ × ℝ → ℝ) (q : ℝ × ℝ) (a : Fin 2) : ℝ := fderiv ℝ h q (eTV a)
 noncomputable def d2H (h : ℝ × ℝ → ℝ) (q : ℝ × ℝ) (a b : Fin 2) : ℝ := fderiv ℝ (fderiv ℝ h) q (eTV a) (eTV b)
 
-variable {h : ℝ × ℝ → ℝ} (hh : ContDiff ℝ ∞ h) (i j : Fin 4)
+variable {h : ℝ × ℝ → ℝ} (hh : ContDiff ℝ ∞ h) (i j : Fin n)
 
 include hh in
-lemma tw_has (y : Fin 4 → ℝ) :
-    HasFDerivAt (fun y : Fin 4 → ℝ => h (y i, y j)) ((fderiv ℝ h (prP i j y)).comp (prP i j)) y :=
+lemma tw_has (y : Fin n → ℝ) :
+    HasFDerivAt (fun y : Fin n → ℝ => h (y i, y j)) ((fderiv ℝ h (prP i j y)).comp (prP i j)) y :=
   ((hh.differentiable (by simp)) _).hasFDerivAt.comp y (prP i j).hasFDerivAt
 
 include hh in
-lemma tw_d1 (y v : Fin 4 → ℝ) :
-    fderiv ℝ (fun y : Fin 4 → ℝ => h (y i, y j)) y v = v i * d1H h (y i, y j) 0 + v j * d1H h (y i, y j) 1 := by
+lemma tw_d1 (y v : Fin n → ℝ) :
+    fderiv ℝ (fun y : Fin n → ℝ => h (y i, y j)) y v = v i * d1H h (y i, y j) 0 + v j * d1H h (y i, y j) 1 := by
   rw [(tw_has hh i j y).fderiv, ContinuousLinearMap.comp_apply, prP_split i j v, map_add, map_smul, map_smul]
   simp [d1H, eTV, prP_apply]
 
@@ -3875,14 +3879,14 @@ lemma tw_line (w q : ℝ × ℝ) : HasFDerivAt (fun x => fderiv ℝ h x w) ((fde
     (by rw [ContinuousLinearMap.comp_zero, zero_add])
 
 include hh in
-lemma tw_d2 (p u v : Fin 4 → ℝ) :
-    fderiv ℝ (fderiv ℝ (fun y : Fin 4 → ℝ => h (y i, y j))) p u v
+lemma tw_d2 (p u v : Fin n → ℝ) :
+    fderiv ℝ (fderiv ℝ (fun y : Fin n → ℝ => h (y i, y j))) p u v
       = u i * v i * d2H h (p i, p j) 0 0 + (u i * v j + u j * v i) * d2H h (p i, p j) 0 1
         + u j * v j * d2H h (p i, p j) 1 1 := by
   have hs := (hh.contDiffAt (x := (p i, p j))).isSymmSndFDerivAt (by simp)
   have L0 := (tw_line hh ((1 : ℝ), (0 : ℝ)) (prP i j p)).comp p (prP i j).hasFDerivAt
   have L1 := (tw_line hh ((0 : ℝ), (1 : ℝ)) (prP i j p)).comp p (prP i j).hasFDerivAt
-  rw [d2_of (F := fun y : Fin 4 → ℝ => h (y i, y j)) (hh.comp (prP i j).contDiff) (fun y => tw_d1 hh i j y v)
+  rw [d2_of (F := fun y : Fin n → ℝ => h (y i, y j)) (hh.comp (prP i j).contDiff) (fun y => tw_d1 hh i j y v)
     (((L0.const_mul (v i)).add (L1.const_mul (v j))).congr_of_eventuallyEq
       (Eventually.of_forall fun y => by simp [d1H, eTV, prP_apply]))]
   simp only [add_apply, smul_apply, ContinuousLinearMap.comp_apply,
@@ -3893,13 +3897,13 @@ lemma tw_d2 (p u v : Fin 4 → ℝ) :
   rw [hs ((0 : ℝ), (1 : ℝ)) ((1 : ℝ), (0 : ℝ))]
   ring
 
-variable {k : ℝ → ℝ} (hk : ContDiff ℝ ∞ k) (l : Fin 4)
+variable {k : ℝ → ℝ} (hk : ContDiff ℝ ∞ k) (l : Fin n)
 
 include hh hk in
-lemma twp_d1 (y v : Fin 4 → ℝ) :
-    fderiv ℝ (fun y : Fin 4 → ℝ => h (y i, y j) * k (y l)) y v
+lemma twp_d1 (y v : Fin n → ℝ) :
+    fderiv ℝ (fun y : Fin n → ℝ => h (y i, y j) * k (y l)) y v
       = (v i * d1H h (y i, y j) 0 + v j * d1H h (y i, y j) 1) * k (y l) + h (y i, y j) * (deriv k (y l) * v l) := by
-  have H : HasFDerivAt (fun y : Fin 4 → ℝ => h (y i, y j) * k (y l)) _ y :=
+  have H : HasFDerivAt (fun y : Fin n → ℝ => h (y i, y j) * k (y l)) _ y :=
     (tw_has hh i j y).mul (fd_coord_i l ((hk.differentiable (by simp)) _))
   rw [H.fderiv]
   simp only [add_apply, smul_apply, ContinuousLinearMap.comp_apply,
@@ -3908,8 +3912,8 @@ lemma twp_d1 (y v : Fin 4 → ℝ) :
   simp [d1H, eTV, prP_apply]; ring
 
 include hh hk in
-lemma twp_d2 (p u v : Fin 4 → ℝ) :
-    fderiv ℝ (fderiv ℝ (fun y : Fin 4 → ℝ => h (y i, y j) * k (y l))) p u v
+lemma twp_d2 (p u v : Fin n → ℝ) :
+    fderiv ℝ (fderiv ℝ (fun y : Fin n → ℝ => h (y i, y j) * k (y l))) p u v
       = (u i * v i * d2H h (p i, p j) 0 0 + (u i * v j + u j * v i) * d2H h (p i, p j) 0 1
           + u j * v j * d2H h (p i, p j) 1 1) * k (p l)
         + (v i * d1H h (p i, p j) 0 + v j * d1H h (p i, p j) 1) * (deriv k (p l) * u l)
@@ -3921,7 +3925,7 @@ lemma twp_d2 (p u v : Fin 4 → ℝ) :
   have K0 := fd_coord_i (x := p) l ((hk.differentiable (by simp)) (p l))
   have K1 := fd_coord_i (x := p) l (((contDiff_infty_iff_deriv.1 hk).2.differentiable (by simp)) (p l))
   have H := tw_has hh i j p
-  rw [d2_of (F := fun y : Fin 4 → ℝ => h (y i, y j) * k (y l))
+  rw [d2_of (F := fun y : Fin n → ℝ => h (y i, y j) * k (y l))
     ((hh.comp (prP i j).contDiff).mul (hk.comp (contDiff_apply ℝ ℝ l))) (fun y => twp_d1 hh i j hk l y v)
     (((((L0.const_mul (v i)).add (L1.const_mul (v j))).mul K0).add (H.mul (K1.mul_const (v l)))).congr_of_eventuallyEq
       (Eventually.of_forall fun y => by simp [d1H, eTV, prP_apply]))]
@@ -3944,6 +3948,8 @@ that used `Fin.sum_univ_four` (the Koszul identity in `lcGam_diag4`) is done by 
 section EngineN
 
 set_option synthInstance.maxHeartbeats 400000
+
+variable {n : ℕ}
 
 variable {n : ℕ}
 

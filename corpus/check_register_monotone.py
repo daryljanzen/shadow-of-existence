@@ -91,6 +91,25 @@ def git(*args):
     return subprocess.run(('git',) + args, cwd=ROOT, capture_output=True, text=True)
 
 
+def _row_line(text, rid):
+    """The whole register line for `rid`, or '' if it is not there."""
+    for line in text.split('\n'):
+        m = ROW.match(line)
+        if m and m.group(1) == rid:
+            return line
+    return ''
+
+
+def _row_text_at(sha, rid):
+    r = git('show', '%s:%s' % (sha, TARGET))
+    return _row_line(r.stdout, rid) if r.returncode == 0 else ''
+
+
+def _row_text_now(rid):
+    with open(os.path.join(ROOT, TARGET), encoding='utf-8') as fh:
+        return _row_line(fh.read(), rid)
+
+
 def main():
     path = os.path.join(ROOT, TARGET)
     if not os.path.exists(path):
@@ -158,16 +177,63 @@ def main():
         print('    [re-baselined] %-7s at %s' % (rid, DECLARED[rid][0]))
         print('                   %s' % DECLARED[rid][1])
 
-    shrunk, vanished = [], []
+    # ⛭ r7353 (66): THE INVARIANT IS ABOUT CONTENT AND IT WAS MEASURED IN CHARACTERS.
+    #   A row that drops a VERBATIM DUPLICATE of text it still carries has lost no content, and under a
+    #   character measure it reds exactly like a row that lost a paragraph.  THE_REGISTER's PO-23 row
+    #   carries a 2,205-char block twice; 70's RC3 at r7351 is a repair that CANNOT be made because no
+    #   span inside that block is unique, and clearing it necessarily shrinks the row.
+    #   ⇒ A shrink is measured against DISTINCT content: collapse every maximal verbatim-duplicated run
+    #   in each version and compare what is left.  Dropping a second copy leaves the distinct size
+    #   unchanged; dropping a paragraph lowers it, and still reds.
+    #   ⌗ r7351 tried this with a shingle-containment test and it was WRONG: the row legitimately
+    #   rewrites its live-clause marker every revision, so old shingles are absent by design and every
+    #   shrink looked like a loss.  Containment asks "is the old text still there"; the invariant asks
+    #   "does the row carry as much".  Those differ exactly where the row is edited rather than appended.
+    #   PRICED, per r7349: runs ONLY on rows that shrink, so it costs nothing on a green tree; measured
+    #   at 1.6 s for one 287k-character row.
+    def _distinct_size(text, w=200):
+        """len(text) less the extra copies of every maximal verbatim-duplicated run."""
+        if len(text) <= w:
+            return len(text)
+        seen, extra, i = {}, 0, 0
+        while i <= len(text) - w:
+            sub = text[i:i + w]
+            j = seen.get(sub)
+            if j is None:
+                seen[sub] = i
+                i += 1
+                continue
+            e1, e2 = j + w, i + w
+            while e2 < len(text) and text[e1] == text[e2]:
+                e1 += 1
+                e2 += 1
+            extra += e2 - i
+            i = e2
+        return len(text) - extra
+
+    shrunk, vanished, dedup = [], [], []
     for rid, (peak, sha) in sorted(best.items()):
         if rid not in now:
             vanished.append((rid, peak, sha))
         elif now[rid] < peak:
-            shrunk.append((rid, peak, now[rid], sha))
+            old_text, new_text = _row_text_at(sha, rid), _row_text_now(rid)
+            if old_text and new_text and _distinct_size(new_text) >= _distinct_size(old_text):
+                dedup.append((rid, peak, now[rid], sha,
+                              _distinct_size(old_text), _distinct_size(new_text)))
+            else:
+                shrunk.append((rid, peak, now[rid], sha))
+
+    for rid, peak, cur, sha, od, nd in dedup:
+        print()
+        print('    [DE-DUPLICATED] %s  is %d chars against %d at %s, and NOTHING WAS LOST:'
+              % (rid, cur, peak, sha[:10]))
+        print('                    distinct content %d then, %d now -- the %d characters it dropped'
+              % (od, nd, peak - cur))
+        print('                    were verbatim second copies of text the row still carries.')
 
     if not shrunk and not vanished:
         print()
-        print('    every row carries at least as much as it ever did.')
+        print('    every row carries at least as much CONTENT as it ever did.')
         print('  ⌗ Append-forward is a DESIGN invariant of this file, and an invariant nobody')
         print('    checks is an invariant a merge can quietly undo.')
         return 0
