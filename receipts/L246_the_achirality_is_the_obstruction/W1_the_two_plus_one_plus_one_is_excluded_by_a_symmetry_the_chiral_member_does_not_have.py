@@ -362,8 +362,20 @@ print('  ** AND P11 BUILDS THE CHIRAL MEMBER, WITH THE STRONGEST FORM OF THAT ST
 p11 = open(os.path.join(ROOT, 'corpus', 'dynamics_paper.tex'),
            encoding='utf-8', errors='replace').read()
 check('⓼ P11 carries a built unpolarised section', r'\label{sec:unpolarized}' in p11)
+# ⬭⬭ r7355+cc66, REPAIR of an OBJECT-DANGLING span r7287+69 named, and its note on the span is the
+#   part worth keeping: *** "a relative clause whose head (`the component of $\mathrm{Isom}
+#   (\mathbb{H}^2)$ that`) is outside it -- the clause has its own verb and subject, so IT READS
+#   COMPLETE." ***  ⌗ And 69 recorded that its own mechanical arm MISSED it: *"a finite verb is
+#   present and the span opens on a noun, and only a reader sees that the relative clause has lost
+#   its head."*  **That is the case the subject rule exists for and the detector cannot reach.**
+#   ⇒ Widened from `it reverses orientation` so the head, the clause and the conclusion are one
+#     span.  The haystack is flattened because the sentence crosses a source wrap.
+#   ⌗ Verified before performing: ONCE flattened, once under `check_quote_pins._unmark`.
+_f11 = re.sub(r'\s+', ' ', p11)
 check('⓼ᵇ in which the exchanging map is shown to REVERSE ORIENTATION, so it lies outside the '
-      'identity component', 'determinant $-1$' in p11 and 'identity component does not reach' in p11)
+      'identity component', 'determinant $-1$' in p11
+      and 'it reverses orientation, so it lies in the component of '
+          '$\\mathrm{Isom}(\\mathbb{H}^2)$ that the identity component does not reach' in _f11)
 # ⛔⛭ AMENDED r4524: the twist is a DISPLAY in P11 -- `c \;=\; R\,e^{2P}\,Q_t \;=\; \text{const}`
 #    at `eq:twist` -- and this asked for the unspaced inline form.  The sign-flip half was always
 #    fine.  ⇒ Matched across LaTeX spacing macros, and the label is required too, so the check
@@ -470,7 +482,19 @@ check('⓭ the wall-mode kernel is a count of GENERATIONS, not of states within 
       'index counts generations, not the states within them' in p14.replace('\n', ' '))
 check('⓭ᵇ while the four states PART 2 acts on are the COLOURLESS four of one generation, both '
       'chiralities present -- P14 names them as the lepton content',
-      'colourless' in p14 and 'e its four one-dimensional' in p14.replace('\n', ' '))
+      # ⬭⬭ r7355+cc66, REPAIR of a CANNOT-FAIL pin r7287+69 named: *** `colourless` stands
+      #   SEVENTEEN times in P14, *** so it could only fail by leaving the paper, while the claim
+      #   is that P14 NAMES THE FOUR STATES PART 2 ACTS ON as the colourless content of ONE
+      #   GENERATION.  ⇒ The span is the sentence that counts them: `one generation splits $12$
+      #   coloured against $3$ colourless ($4$ with a right-handed neutrino)` -- generation,
+      #   split, and the four, inside one span.
+      #   ⌗ Verified before performing: ONCE in the flattened paper, once under `_unmark`.
+      #   ⌷ The companion conjunct `e its four one-dimensional` is LEFT AS IT STANDS: mid-word by
+      #     construction of 70's D-extension, one of the 88 rows routed to 66 at r7355+cc66.3,
+      #     and not this seat's to re-verdict while that ruling is outstanding.
+      'one generation splits $12$ coloured against $3$ colourless ($4$ with a right-handed '
+      'neutrino)' in re.sub(r'\s+', ' ', p14)
+      and 'e its four one-dimensional' in p14.replace('\n', ' '))
 print('    the wall kernel : one Weyl mode per wall, three walls, ALL ONE CHIRALITY  -> 3 and 0')
 print('    the four states : nu_L, e_L, e_R, nu_R of ONE generation -> both chiralities present')
 check('⓭ᶜ so no map is being asked to exchange the wall kernel with an empty space; Phel acts on '
@@ -479,11 +503,36 @@ check('⓭ᶜ so no map is being asked to exchange the wall kernel with an empty
 print()
 print('  ⛭⛭ ** AND P14 REPORTS THE SURVIVING SHAPE AND CALLS IT CORRECT, which is the corroboration')
 print('     this part exists to find. **')
-check('⓮ P14 states that every Z_2 grading splits those four 2+2',
-      'Every $\\mathbb{Z}_2$ grading splits those four $2+2$' in p14)
-check('⓮ᵇ ⛭ and that this is NOT a failure, because colour is vector-like on colour singlets in '
-      'the Standard Model too -- so the 2+2 the no-go PREDICTS is the one the paper OBSERVES and '
-      'defends', 'It is not a failure, because colour does not see the chirality' in p14)
+# ⬭⬭⬭ r7355+cc66, TWO OWED ROWS CLOSED BY ONE SPAN, and `69`'s own two prescriptions had to be
+#   reconciled rather than applied as written:
+#     for `Every $\mathbb{Z}_2$ grading splits those four $2+2$` it said *"OBJECT-DANGLING (⓶):
+#       subject named, but `those four` is a demonstrative whose antecedent is outside the span.
+#       Repair: widen to the antecedent"*;
+#     for `It is not a failure, because colour does not see the chirality` it said *"PRONOUN
+#       SUBJECT (⓶, `It`) and the FIFTH VARIANT ⓔ besides: the span stops before `of a colour
+#       singlet in the Standard Model either`, which is the ground the claim rests on.  Repair:
+#       from `Every $\mathbb{Z}_2$ grading splits those four` through `either`"*.
+#   ⛔ THE SECOND PRESCRIBED SPAN BEGINS AT THE FIRST LITERAL, so taken alone it does NOT fix the
+#     first row's demonstrative -- the two prescriptions do not compose.
+#   ⇒ *** The single span from `Every` through `either` fixes BOTH, and for a reason worth stating:
+#     it resolves the pronoun by containing its antecedent, and it resolves the demonstrative by
+#     containing `a colourless sector that is chirality-asymmetric` -- the clause that says what
+#     `those four` ARE. ***  So no widening to the earlier paragraph is needed; the naming is
+#     already inside the sentence pair.
+#   ⌗ A markup carrier (`\emph{It is not a failure ...}`), so 60's r7255 prescription applies: the
+#     emphasis comes out of the HAYSTACK and the span stays whole.  Flattened too, since the pair
+#     crosses source wraps.
+#   ⌗ Verified before performing: ONCE in the emphasis-normalised flattened paper, once under
+#     `_unmark`.
+_u14 = re.sub(r'\\emph\{([^}]*)\}', r'\1', re.sub(r'\s+', ' ', p14))
+_GRADING = ('Every $\\mathbb{Z}_2$ grading splits those four $2+2$, which looks like a failure to '
+            'reproduce a colourless sector that is chirality-asymmetric. It is not a failure, '
+            'because colour does not see the chirality of a colour singlet in the Standard Model '
+            'either')
+check('⓮ P14 states that every Z_2 grading splits those four 2+2 -- and in the same breath that it '
+      'is NOT a failure, because colour is vector-like on colour singlets in the Standard Model '
+      'too, so the 2+2 the no-go PREDICTS is the one the paper OBSERVES and defends',
+      _GRADING in _u14)
 print('  ⇒ *** So the no-go and P14 agree on the outcome and differ on its status: the paper')
 print('      reports 2+2 as what the gradings happen to give, and PART 2 shows it is the only')
 print('      thing they COULD give. ***')

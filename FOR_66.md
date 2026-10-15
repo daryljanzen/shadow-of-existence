@@ -18136,3 +18136,40 @@ receipts are already done, out of order and by my scheduling error — `L560_pin
 `L815_seam_phase_derived` (`r7355+cc66.12` and `.9`), both reported at `.14`.** *They are not on the
 queue above, so nothing on it is skipped for them.* ⇒ ***Taking `L246_the_achirality_is_the_obstruction`
 now.*** *If `70` has it in flight, the ledger will say so and I will move to `L272`.*
+
+---
+
+## `r7355+cc66.20` — **HAND-OFF TAKE `1` LANDS: `L246_the_achirality_is_the_obstruction` `4` → `0`. ⛔ AND `69`'S TWO PRESCRIPTIONS FOR THE SAME SENTENCE PAIR DO NOT COMPOSE, SO THEY HAD TO BE RECONCILED RATHER THAN APPLIED**
+
+**`landed`: `L246_the_achirality_is_the_obstruction` (`70`'s receipt, taken on `r7353` ②) `4` → `0`;
+`REPAIR-OWED` `69` → `65`. ⌗ **`137` → `65`, seventy-two rows this revision.** `remaining`: `65`;
+next in the queue `L272_the_survey_that_was_a_memory` (`4`).**
+
+**⓵ ⛔ THE TWO PRESCRIPTIONS DO NOT COMPOSE, AND IT IS WORTH ONE LINE BECAUSE A SEAT APPLYING THEM IN
+ORDER WOULD LEAVE A DEFECT STANDING.** *For the grading span `69` said **"widen to the antecedent"**;
+for its neighbour it said **"from `Every … those four` through `either`"**.* ⇒ ***The second prescribed
+span BEGINS AT the first literal, so taken alone it leaves the first row's demonstrative exactly as it
+was.*** ⌗ **The single span from `Every` through `either` fixes both, and for a reason worth stating:**
+*it resolves the **pronoun** by containing its antecedent, and it resolves the **demonstrative** by
+containing `a colourless sector that is chirality-asymmetric` — the clause that says what "those four"
+**are**. So the widening to the earlier paragraph `69` asked for is **not needed**: the naming is
+already inside the sentence pair.*
+
+**⓶ ⌗ AND `69` RECORDED ITS OWN DETECTOR MISSING ONE, WHICH IS THE BEST NOTE IN THE BLOCK.** *On
+`identity component does not reach`: "a relative clause whose head … is outside it — the clause has its
+own verb and subject, **so it reads complete**", and its mechanical arm **MISSED** it because "a finite
+verb is present and the span opens on a noun, and **only a reader** sees that the relative clause has
+lost its head".* ⇒ **That is precisely the case the subject rule exists for and no detector reaches.**
+*Widened from `it reverses orientation` so the head, the clause and the conclusion are one span.*
+
+**⓷ THE CANNOT-FAIL ONE: `colourless` ×`17` IN `P14`.** *It could only fail by leaving the paper, while
+the claim is that `P14` names the four states PART 2 acts on as the colourless content of **one
+generation**. The span is the sentence that counts them.* ⌗ *Its mid-word companion is **left as it
+stands** — one of the `88`, still yours.*
+
+⌗ **Verification:** *`rc=0`; the one `FAIL` match checked rather than counted (prose inside a truth
+table, "the no-go's hypothesis FAILS"). Each span flattened where the sentence crosses a source wrap
+and emphasis-normalised where the markup sits inside it — **both decided by measurement, not by
+inspection**. Extractor: `16` keys, all decided, no `UNDECIDED`, no annotation fault; `4` dropped, `3`
+added. `70` has pushed nothing on this receipt this phase (newest touches `r7243`, `r7225`), so the
+take collided with nothing.*
