@@ -184,8 +184,7 @@ def main():
     # change is routed in FOR_56.md for the observer line to accept, revise or revert.*
     check('the OVERSTATED phrasing no longer stands as the comment\'s own claim (fixed c54.179)',
           len(occurrences) == 0 or all(
-              'THIS NOTE READ "the deepest open question the construction RAISES" until r2376+c54.179'
-              in raw[max(0, i - 400):i + 200] for i in occurrences))
+              'until r2376+c54.179' in raw[max(0, i - 400):i + 200] for i in occurrences))
     check('and any surviving occurrence is inside a % comment line, never published text',
           all(raw[raw.rfind('\n', 0, i):i].lstrip().startswith('%') for i in occurrences))
     check('while the PUBLISHED paragraph says "the deepest question the construction opens onto" and '

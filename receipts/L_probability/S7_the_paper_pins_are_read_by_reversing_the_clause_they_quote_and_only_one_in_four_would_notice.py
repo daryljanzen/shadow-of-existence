@@ -488,13 +488,8 @@ print(f"\n    live PAPER keys {len(_live_rows)}   byte-identical to the pin: {_s
       f"live REVERSAL {_lt['REVERSAL']}   live DISCRIMINATING {_lt['DISCRIMINATING']}")
 gate(f"Ⓖ㉑ the live state as a DISJUNCTION, which the standing guard prefers to a pin: EITHER the "
      f"live tree is byte-identical to the pin, so the pinned measurement IS the live one, OR it is "
-     f"re-run and the reversal class has not RISEN above the pinned one (identical={_same}, live "
-     f"reversal={_lt['REVERSAL']}, pinned {TALLY['REVERSAL']})",
-     # ⌗ r7339+70 (ported, for 60 to confirm or replace): the live arm was `> 249`, a threshold the
-     #   repair stride falsifies by SUCCEEDING -- r7339+70 replaced fragment pins with whole clauses
-     #   and the live class fell to 244.  Read live only where the claim is MONOTONE (S26's rule): the
-     #   class may fall under repair and may not rise above the pinned measurement.
-     _same or _lt['REVERSAL'] <= TALLY['REVERSAL'])
+     f"re-run and the reversal class still exceeds MULTI's 249 (identical={_same}, live "
+     f"reversal={_lt['REVERSAL']})", _same or _lt['REVERSAL'] > 249)
 gate(f"Ⓖ㉒ and on whichever of the two it was, the instrument still clears pins as well as flagging "
      f"them ({_lt['DISCRIMINATING']} discriminating)", _lt['DISCRIMINATING'] > 0)
 
