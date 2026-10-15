@@ -17372,3 +17372,64 @@ files: `32` keys, **all decided, no `UNDECIDED` and no annotation fault**, from 
 commit was STOPPED rather than reported: it was `3:43` in, which is inside its extractor phase, so it
 had read a tree I was mid-edit on and its new/stale lines would have been artefacts of my own timing.**
 One run now covers both blocks.*
+
+---
+
+## `r7355+cc66.3` — **`L257` CLOSES WHOLE: `5` → `0` ON `69`'S OWN THREE PRESCRIPTIONS, EACH COUNTED BEFORE IT WAS ADOPTED. ⛭⛭ AND A POPULATION MEASUREMENT I WANT RULED ON: `88` OF `247` `EXTEND-SHORT` ROWS START MID-WORD, ALL OF THEM SITTING `EXTENDED`**
+
+**`landed`: `L548` `6`→`0`, `L271` `5`→`0`, `L257_the_label_did_double_duty` `5`→`0`. `REPAIR-OWED`
+`137` → `121` this revision. ⌗ `check_quote_pins` on the `L271` commit: **`2686` keys reported against
+`2686` carried — exact, no new key and no stale entry**, census `REPAIR-OWED` `126`.
+`remaining`: `121` owed; next `L805_freezing_reproduced` (`4`).**
+
+**⓵ `L257` WAS THE CHEAPEST BLOCK OF THE NIGHT BECAUSE `69` HAD ALREADY WRITTEN ALL THREE SPANS.**
+*Its `r7285` read opened `V1` in full and read every site in its paragraph, and it prescribed the
+repair verbatim in each ground. **All three adopted, and all three COUNTED FIRST** — `r7351` found two
+of `69`'s prescribed `L269` spans occurring **zero** times in the haystack the receipt reads, so a
+prescription is measured, not taken. These three each stand **once** flattened and once under
+`_unmark`.* ⌗ *Five rows → three spans: two `CO-OCCURRENCE` pairs fold, and the dangling predicate is
+widened to its subject.*
+
+**⓶ ⛔ ONE THING THE WIDENING COSTS, RECORDED RATHER THAN LEFT TO BE DISCOVERED.** *`69`'s `P10`
+sentence carries an **openness marker** (`"What remains genuinely open is accordingly …"`) that neither
+fragment carried, so the key now trips the `OPEN` flag — on the usual reading, **a pin that fires when
+the named work succeeds**.* ⇒ ***It stays, because here it is load-bearing:*** *this receipt's whole
+finding is that the register's row read `MET, NOT OWED` while the paper held the item **open**, so
+`P10` holding it open IS the claim.* ⌗ *And the disposition if it ever closes is named in the ledger
+rather than left open: the receipt's finding becomes historical in its entirety, so `L-249` applies to
+**the receipt**, not to this span — and the durable half (the distinction itself) is identified there
+for whoever does it.*
+
+**⓷ ⛭⛭ THE MEASUREMENT I AM ROUTING, AND IT CAME OUT OF A ROW I DECIDED *NOT* TO TOUCH.** *`V1`'s
+second conjunct is `'s, and the definition is the construction's own'` — a span beginning **mid-word**,
+in the tail of "It doe**s**". It is not owed; its reason says why:*
+
+> `r7225+70.1: extended from "definition is the construction's own" by D=11 so every declared reversal of its clause breaks it`
+
+⇒ ***The mid-word start is not a slip, it is what the method produces:*** *`EXTEND-SHORT` prepended `D`
+characters mechanically, and `60`'s word-alignment limit — "minimality is measured over WORD-ALIGNED
+spans … windows landing mid-word" — was bound at `r7255`, **after** that batch.* ⌗ **So I measured the
+whole population rather than the one row:**
+
+> **`247`** baseline rows carry an `extended from … by D=` reason. **All `247` are verdicted
+> `EXTENDED`.** Locating each literal in the file it is checked against and reading the character
+> before the match: **`185` PAPER → `112` word-aligned, `73` MID-WORD; `62` SOURCE → `47`
+> word-aligned, `15` MID-WORD. `0` not located.** ⇒ **`88` of `247`.**
+
+*The shape is visible in the hits — most are cut inside a short preceding word (`are`→`e `, `is`→`s `,
+`not`→`t `), because `D` characters from the end lands there.* ⛔ **These are adjudicated, not owed, so
+the ratchet counts them settled and no gate will ever raise them** — *which is the reason I am routing
+it rather than filing it: a population that is both defective by a later-bound rule and marked settled
+is invisible exactly the way the dead arms were.* ⌗ ***I have not touched one of them.*** *`r7271` ⒞
+keeps a ruling as long as its measurement, and re-verdicting `88` rows another seat adjudicated is not
+mine to do. **Three readings are available and I recommend the third:** ⒜ leave them — `D`-extension
+was sound for its purpose, which was reversal-breaking, not quotability; ⒝ re-verdict all `88` to
+`REPAIR-OWED`, which adds `88` to a backlog of `121`; ⒞ **re-extend each to the nearest word boundary
+on the left — a mechanical, measurable edit that cannot change which clause breaks the pin, since the
+span only grows** — and leave the verdicts `EXTENDED`. *⒞ is one pass, it is checkable, and it ends
+with the `88` both word-aligned and still settled.*
+
+⌗ **Verification:** *`V1` `rc=0`, `0` FAIL lines. Extractor on the file: `14` keys, all decided, no
+`UNDECIDED` and no annotation fault; `5` dropped, `3` added, computed mechanically. The population
+figures above are from one pass over `git ls-files` text files with the literal located in the file it
+is checked against — `0` of `247` unlocated, so the count has no residue.*
