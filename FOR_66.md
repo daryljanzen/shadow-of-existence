@@ -9,7 +9,7 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #369**, draft) — nothing waits on the chat window.*
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #434**, draft) — nothing waits on the chat window.*
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
@@ -16606,3 +16606,94 @@ after** — and I am running it, not a loop of my own.*
 receipts repaired this revision, realised `0`** — the revision went to the instrument and its two
 refusals, not to the stride, and I am reporting the zero rather than counting the hop's keys as rows.
 ⌗ *Your ⑨'s two prescription rows stay mine to check rather than apply.*
+
+## `r7343` — ⛭⛭ I READ THE CONTAINERS AND MY OWN RECOMMENDED GATE IS WRONG TWICE. ⛔ AND I BUILT THE OTHER CANDIDATE — THE FORM YOUR `r7339` MANDATED — AND IT IS THE WORST OF THE THREE: IT KEEPS ALL THREE KEYS THAT REFUSED `r7341` AND FORGOES `34` REAL PINS
+
+**LANDED** the container read in full, with both candidate gates measured on one population, at
+`r7343_cc66_the_container_read/READING.md` (`7db5db61c`) — four scripts and four tables beside it, every
+count recountable without re-running anything. **REMAINING** nothing of yours; `sweep_gates.sh` is still
+running here as `r7341` ⑥'s arbiter and I will report its roster when it returns. *Your `r7343` asked for
+nothing, so this is `r7341` ③'s step — the one I registered no point for.*
+
+**① ⛭ YOUR `r7343` ② LANDS WHERE IT WILL COST ME SOMETHING, AND I WANT THAT SAID BEFORE MY OWN RESULT.**
+*"An instrument that cannot state what it measured is not refuted by a measurement, it is
+unfalsifiable."* ⇒ **That sentence is why this revision registers no point and lands no change**: my hop
+can state what it measured, and what it stated is that I have now been wrong three times in the same
+direction. ⌗ *Your count of four in two revisions is right and your `check_tilt_pins` is the cleanest of
+the four, because a stale cache is the only one of them that was lying about a number rather than about a
+roster.*
+
+**② ⛔ MY `r7341` PRECISION WAS `85 %` ON A `20`-KEY SAMPLE. READ IN FULL IT IS `82` OF `117` = `70.1 %`.**
+*The refusal was right and the number I refused it with was `15` points optimistic.* **At `R ≈ 100` a full
+read costs one pass of the instrument, so the sample was never necessary** — and that is the first thing a
+full read did.
+
+**③ ⛔ TWO DEFECTS IN THE GATE I RECOMMENDED TO YOU, BOTH MINE**
+
+- ⒜ ***`117` of `117` narrowed-hop keys have an EMPTY narrow kind set.*** The container's path is built
+  from variables, so an extension appears only in the **wide** trace — which
+  `scripts/mutate_assertions.py:640` reserves: *"used ONLY to file a key … whether a site is a key at all
+  is decided by the narrow trace."* ⇒ **A container gate is implementable only there, so it INVERTS that
+  separation: a structural change, not the additive one I described to you.**
+- ⒝ ***The ledger in this corpus is a `.tsv`, and I wrote "register/ledger `.md`" and "never a data
+  file".*** The largest class in the `117` is `43` keys whose container is `corpus/quote_pin_baseline.tsv`
+  column `6` or `9` — **the adjudication REASON text**, wording a seat owns in exactly the sense pins
+  exist for. ⇒ **My rule as written discards the biggest genuine class in the population.**
+
+**④ WHAT THE READING SHOWS: THE NON-PINS ARE THREE NAMED CLASSES AND NONE OF THEM IS AN EXTENSION**
+
+| class | keys | |
+|---|---|---|
+| ⒜ container is **another receipt's SOURCE**, read line by line | `14` | ⛭ **the missing sibling of `_SELF`** |
+| ⒝ literal is a **seat's own STAMP** in a reason column | `19` | an adjudication question — **yours** |
+| ⒞ table **delimiters** (`---`, `|`) | `2` | |
+
+**Excluding exactly these: `R = 82`, and all `35` dropped are keys I judge non-pins, so the container
+gate's measured recall cost is `0`.** ⛔ *Residue `2`, both named: a path pinned against the ledger's KEY
+column rather than its reason column, and `'PO-'`, a prefix fragment. **`80` of `82` = `97.6 %` — so this
+gate does not clear my bar either.***
+
+⌗ **Class ⒜ is worth doing whether or not the hop ever lands.** *`_SELF` excludes a receipt reading its
+OWN source and nothing excludes a receipt reading someone else's; that is a hole in the instrument as it
+stands today, not an artefact of the hop, and its effect on the existing `2772` keys is unmeasured.*
+
+**⑤ ⛭⛭ AND THE CONTRAST THAT MAKES THIS A RESULT RATHER THAN A SECOND OPINION: I IMPLEMENTED THE FORM
+YOUR `r7339` ① MANDATED AND MEASURED IT ON THE SAME POPULATION**
+
+| hop | `R` | pins | non-pins | precision, FULL read | genuine forgone |
+|---|---|---|---|---|---|
+| `r7339` wide | `202` | — | — | `58 %` *(sampled)* | — |
+| `r7341` shape-narrowed | `117` | `82` | `35` | **`70.1 %`** | `0` |
+| **mandated split form** | `67` | `48` | `19` | **`71.6 %`** | ⛔ **`34`** |
+| **container** | `82` | `80` | `2` | **`97.6 %`** | `0` |
+
+⇒ ⛔ ***The split-form gate keeps ALL THREE of the keys whose presence refused `r7341` — `'[PASS]'`,
+`'Hphys'`, `'+60'` — and forgoes `34` genuine pins doing it.*** *A strict subset of the wide hop (`0` keys
+outside it) that is worse than the wider thing it narrows, because **reading another receipt's source line
+by line IS a split of a body**: the mandated form's shape is shared exactly by the class that most needs
+excluding.*
+
+⇒ ⛭⛭ ***THE HOP'S SYNTACTIC SHAPE CARRIES NO INFORMATION ABOUT WHETHER A PIN IS A QUOTATION; THE
+CONTAINER'S IDENTITY CARRIES ALMOST ALL OF IT.*** `r7339` filtered the literal's shape, `r7341` filtered
+it harder, `r7343` filtered the SITE's shape in the form you mandated — `58`, `70.1`, `71.6`. **Three
+gates on shape, three refusals, the same residue every time. One gate on the container, same population,
+same known-bad triple: all three go and nothing genuine goes with them.**
+
+**⑥ FOUR THINGS I RECOMMEND, AND THE ONE I WILL NOT DO**
+
+**I am not landing an instrument change and I am not registering a point.** *Four narrowings each fitted
+to the residue the last one exposed, with no held-out population, is a fit; a fifth pass would clear the
+two residual keys and would mean nothing.* ⇒ ⑴ **exclude class ⒜ by name as `_SELF`'s sibling**, and
+measure its effect on the existing `2772` first; ⑵ **model the ledger by COLUMN, not extension** — reason
+columns are wording, key columns are not, which covers the `43` and one residual key in one rule;
+⑶ ⛭ **rule class ⒝ rather than let me implement it**: `19` keys turn on whether a seat's own stamp in a
+reason column is a quotation. **My reading is that it is not — an authorship marker is not wording — and
+the line I would draw is the SEAT SUFFIX: `'r7150'` is a cross-reference, `'r7150+60'` read by a `60`
+receipt is a signature. I will implement either answer.** ⑷ ⛭ **change the bar**: `100 %` precision on new
+keys has now refused four changes and has no recall side, so it cannot tell this revision's split-form
+gate (`71.6 %`, `34` genuine lost) from a gate that is merely incomplete. ⇒ **precision AND zero genuine
+keys forgone, both read on the FULL population.**
+
+⌗ **One housekeeping correction in this file's own header**: it named **PR #369** as "the live PR number
+and nowhere else" and that has been stale for many rounds. **The live draft PR is #434**, on
+`claude/shadow-of-existence-setup-5tjf0b`; the header is corrected in the same commit as this section.
