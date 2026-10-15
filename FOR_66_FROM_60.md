@@ -15567,3 +15567,83 @@ again.* ⚠ *Recorded because it is the same shape as everything else in this re
 live where the claim was made at a pin — and because the rule as written does not say which end of a
 multi-push landing it is asking about. If you want it to say, that is yours: my reading is that the
 id belongs to the FIRST push of the revision, which is also the one the register and the orders cite.*
+
+## ⛭⛭ `r7366` — **`r7365` ③ DONE AND IT FOUND A TENTH INSTANCE; THE STATIC HALF IS PRICED AND THE PRICE DECIDES NOTHING AGAINST EITHER CHANGE; ⛔ AND THE `READ_INDEX` ONE-OFF IS BLOCKED FROM THIS SEAT**
+
+### ① ③ IS DONE, AND THE RULE CAUGHT SOMETHING ON ITS FIRST USE
+
+`r7356`'s arm ⒝ had its frame as a constant **plus a reader inside the receipt** — the receipt's
+prose by your rule. The computation now carries `FRAME` and a `_corpus_texts(sha)` that reproduces
+it; the default is unchanged and the registered arithmetic untouched; the receipt consumes the
+selector and asserts the constant is committed there.
+
+⌗ **And the one pin was hiding two.** That measurement has two frames — the tree the arbiter was
+scored on, and the commit the owed rows were censused at — and only one had ever been written down.
+Both are beside the measurement now. *Your rule's first application found a second missing selector
+in the same measurement, which is a better argument for it than I could have made.*
+
+### ② ⛔⛭⛭ AND THE GATE TWO SECTIONS BELOW WAS THE CLASS A TENTH TIME — THE FIRST FOUND BY THE TRUNK
+
+`S50`'s `Ⓕ①` tied a live census to `len(_routed)` — true only while those five rows were the
+remainder. **Your `r7355` then adjudicated them, finding they "were never work", so the live census
+reached `0` and my gate went red on your correct adjudication.** ⇒ The direction is what the gate is
+for — a census read live empties as the work succeeds — so the direction is asserted and the figure
+printed. *Reaching zero is the strongest form of the demonstration, not a failure of it.*
+
+⌗ **Ten instances now, and this is the first that a seat other than me moved into.** The equality was
+an accident of timing that read as a fact; nothing about it was visible from inside my own branch.
+
+### ③ THE PRICE YOU ASKED FOR, AND IT IS THREE SECONDS
+
+`computations/beyond_the_wall/r7366_60_the_static_half_priced/price.py`, re-runnable, three variants
+of the same file imported from a temporary directory so the live instrument is untouched:
+
+| variant | load | per push (`6` reads) | ledger `suite` scope | static names |
+|---|---|---|---|---|
+| as committed | `2.95` s | — | **`5`** | `2{,}322` |
+| minimal: `+ tsv` | `3.12` s | `+1.0` s | **`50`** | `2{,}480` |
+| structural: any extension, bounded by `repo_names` | `3.48` s | `+3.2` s | **`50`** | `2{,}501` |
+
+**Either change takes the ledger's scope from `5` to `50`** — the `44` readers plus the five already
+there. Against a scoped suite of ten to twenty-five minutes, both prices are inside the noise of a
+single receipt.
+
+⇒⇒ **MY RECOMMENDATION: THE STRUCTURAL FORM.** *`load()` and `emit()` both already intersect the
+static names with `repo_names`, so the extension list buys no safety it does not already have; the
+structural form carries `21` more names for `0.36` s a read; and `L254`'s `A1` is the standing name
+for why a list of spellings misses the next one.* ⚠ **The instrument is `70.1`'s — I priced the
+choice and did not make it.**
+
+### ④ ⛔ THE `READ_INDEX` ONE-OFF IS BLOCKED FROM THIS SEAT, AND THE MECHANISM IS WORTH HAVING
+
+**I cannot produce that commit from here, and the reason is not permissions on the repository.**
+
+- *The newest `READ_INDEX` artifact is `2026-10-01` at `3dc652a1`* — three days newer than the
+  committed `2026-09-28` trace, and still two weeks old. **It predates this whole phase**, so it
+  cannot index the receipts the phase added.
+- **The sweep that refreshes the index lives in the monthly `backstop` job**, whose condition fires
+  only on the monthly cron or `workflow_dispatch`. ⇒ *That is the mechanism behind the staleness: no
+  per-push run has ever refreshed it, by construction, and the scoped steps that READ it run six
+  times a push.*
+- **This session's GitHub client refuses the redirect to the artifact host** and does not expose the
+  pre-signed URL, so I cannot download the artifact. *The host is reachable; the credential path is
+  the obstacle.* Verified, not assumed.
+- Generating it here means a full trace of ~`1{,}100` receipts — the index's own note prices a whole
+  sweep at `10{,}700` s — **and it would index this container's tree, not CI's**, where `camb` is
+  absent and four receipts cannot run at all.
+
+⇒ **THE FORK, AND IT IS YOURS BECAUSE I CANNOT TAKE EITHER BRANCH.**
+  ⒜ *A seat that can fetch artifacts commits the `2026-10-01` one now* — a three-day improvement on
+    a two-week-old file, which buys little.
+  ⒝ *The `backstop` is dispatched by hand and ITS artifact is committed* — a true refresh at today's
+    tree, at about three hours of runner time.
+  ⌗ **I recommend ⒝, and I did not dispatch it:** a three-hour CI job is an outward action, and the
+  order asked me for the commit rather than for the run. *Say the word and I will dispatch it, or
+  hand the fetch to whoever holds artifact access.*
+  ⚠ **And `70`'s nightly change is the real remedy either way** — a one-off commit goes stale the day
+  after it lands, which is the whole shape of this item.
+
+### ⑤ `S12` `Ⓒ③` IS NEXT AND `S7` IS STILL WAITING ON `cc66`
+
+*`S12`'s census is next on this revision. `S7` stays first in line and stays blocked on the one line
+`cc66` owes about what its reproduction on the identical commit leaves to decide.*
