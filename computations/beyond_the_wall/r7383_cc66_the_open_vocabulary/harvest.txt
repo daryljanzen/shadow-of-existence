@@ -1,0 +1,452 @@
+# 18 papers, 10017 sentences
+
+net                        SITES   distinct expressions
+(l) THE LAW's six            325                      6
+(n) 69's census net          333                     44
+(h) THIS HARVEST            1237                    439
+
+# ⒣ adds over ⒧ : 1081 sites the LAW's six do not reach
+# ⒣ adds over ⒩ :  988 sites 69's net does not reach
+# ⒩ adds over ⒧ :  180
+# ⒧ adds over ⒣ :  169   <-- law-only sites: the bare words in settled prose
+
+# ⒣ THE HARVESTED VOCABULARY, by frequency -- the list Ⓐ asks for
+#      63          cannot be
+#      53  LAW 69  frontier
+#      32          missing
+#      30          does not reach
+#      28      69  owed
+#      24          does not carry
+#      24          does not supply
+#      23          left to
+#      22  LAW 69  left open
+#      22          cannot reach
+#      19          cannot carry
+#      16          does not depend
+#      16      69  is not claimed
+#      16          does not advance
+#      15          cannot supply
+#      14          does not claim
+#      14      69  is not settled
+#      14          does not move
+#      13          does not contain
+#      13          does not survive
+#      12          does not arise
+#      12          does not vanish
+#      12          does not fix
+#      12          does not exist
+#      12      69  undelivered
+#      11          did not compile
+#      11          cannot see
+#      11          does not settle
+#      10          does not follow
+#      10          cannot terminate
+#      10  LAW 69  remains open
+#       9          no closed
+#       9          does not rest
+#       8          could not have
+#       8          does not touch
+#       8          does not appear
+#       8          does not enter
+#       8          does not act
+#       8      69  outstanding
+#       8          not selected
+#       8          does not imply
+#       8  LAW     deferred
+#       8          does not run
+#       7          does not require
+#       7          is not carried
+#       7          does not turn
+#       7          does not by
+#       7          cannot move
+#       7          do not share
+#       7  LAW 69  open edge
+#       7          does not distinguish
+#       6          does not say
+#       6          set aside
+#       6  LAW 69  open problems
+#       6          cannot use
+#       6          does not do
+#       6          cannot do
+#       6          does not merely
+#       6      69  is not fixed
+#       6          does not stop
+#       5          does not change
+#       5          does not end
+#       5          does not force
+#       5          does not deliver
+#       5  LAW 69  open problem
+#       5  LAW 69  open item
+#       5          does not make
+#       5      69  undetermined
+#       5          not derived
+#       4          do not take
+#       4          does not lie
+#       4          does not occur
+#       4          is not forced
+#       4  LAW 69  open items
+#       4          do not move
+#       4          does not establish
+#       4          do not claim
+#       4          does not close
+#       4          does not derive
+#       4          is not supplied
+#       3          does not mean
+#       3          do not make
+#       3          do not radiate
+#       3          does not hold
+#       3          does not leave
+#       3          does not share
+#       3          no forced
+#       3          do not close
+#       3          cannot change
+#       3          does not need
+#       3          does not single
+#       3          does not disturb
+#       3          does not measure
+#       3          do not coincide
+#       3          does not select
+#       3  LAW 69  remains to be
+#       3          does not fail
+#       3      69  unbuilt
+#       3          does not see
+#       3          cannot exceed
+#       3          does not modify
+#       3          does not assert
+#       3      69  unresolved
+#       3          does not set
+#       3          not delivered
+#       3          cannot sit
+#       3          does not permute
+#       3          does not couple
+#       3          cannot distinguish
+#       3      69  not settled
+#       3          no fixed
+#       3          cannot have
+#       3      69  is not computed
+#       3      69  is not built
+#       3          cannot fix
+#       3          do not exist
+#       3          does not source
+#       3          could not reach
+#       3  LAW 69  open question
+#       3          does not apply
+#       3          does not return
+#       3          are not carried
+#       3          does not model
+#       3          does not dissolve
+#       3          is not resolved
+#       3          does not have
+#       3          do not reach
+#       2          does not name
+#       2          does not licence
+#       2          did not lay
+#       2          not fixed
+#       2          does not transfer
+#       2          does not become
+#       2          cannot pass
+#       2          do not stand
+#       2          does not bear
+#       2          does not translate
+#       2          cannot share
+#       2          does not build
+#       2          does not wait
+#       2          does not disappear
+#       2          cannot enter
+#       2          does not vary
+#       2          does not show
+#       2          unsettled
+#       2          does not re
+#       2          do not privilege
+#       2          does not pin
+#       2          cannot deny
+#       2          pending
+#       2  LAW 69  does not yet build
+#       2          does not dispense
+#       2          do not occur
+#       2          do not correspond
+#       2          cannot generate
+#       2          does not terminate
+#       2          do not require
+#       2          does not sit
+#       2          never answered
+#       2          does not read
+#       2          does not already
+#       2          cannot differ
+#       2          do not entail
+#       2          is not determined
+#       2          does not extend
+#       2          do not themselves
+#       2          does not pass
+#       2          cannot remove
+#       2          do not produce
+#       2          does not generate
+#       2          does not collapse
+#       2          does not state
+#       2          did not put
+#       2          is not closed
+#       2          cannot touch
+#       2          cannot cross
+#       2          do not flip
+#       2          cannot act
+#       2          is not delivered
+#       2          does not reopen
+#       2          not carried
+#       2          does not cross
+#       2          do not enter
+#       2          cannot tell
+#       2          are not resolved
+#       2          cannot make
+#       2          cannot attribute
+#       2          cannot mix
+#       2          not established
+#       2      69  remain to be
+#       2          does not recollapse
+#       2          cannot remain
+#       2          cannot transmit
+#       2          cannot determine
+#       2          cannot vanish
+#       2          does not come
+#       2          does not degenerate
+#       2          does not attach
+#       2          does not discriminate
+#       2          do not return
+#       2  LAW 69  not yet carried
+#       2          cannot avoid
+#       1          cannot know
+#       1          do not admit
+#       1          do not possess
+#       1          did not individuate
+#       1          cannot overturn
+#       1          does not individuate
+#       1          does not encode
+#       1          do not twist
+#       1          do not now
+#       1          does not address
+#       1          cannot define
+#       1          does not buy
+#       1  LAW     incomplete
+#       1          cannot sweep
+#       1          does not yield
+#       1          do not resolve
+#       1          does not display
+#       1          does not dispute
+#       1          does not falsify
+#       1          do not invoke
+#       1  LAW 69  open questions
+#       1          does not notice
+#       1          did not choose
+#       1          do not merely
+#       1          does not want
+#       1          cannot coincide
+#       1      69  not claimed
+#       1          does not refer
+#       1          cannot scale
+#       1          does not detect
+#       1          does not ask
+#       1          does not relate
+#       1          do not pin
+#       1          cannot recover
+#       1          no selected
+#       1          does not know
+#       1          does not soften
+#       1          do not establish
+#       1          have not done
+#       1          does not look
+#       1          does not otherwise
+#       1      69  are not settled
+#       1          does not satisfy
+#       1          does not privilege
+#       1          does not consume
+#       1          cannot detect
+#       1          does not form
+#       1          do not lean
+#       1          does not fence
+#       1          did not require
+#       1  LAW 69  remain open
+#       1          did not reach
+#       1          cannot draw
+#       1          is not shown
+#       1          does not constitute
+#       1          cannot lose
+#       1          do not puncture
+#       1          does not restrict
+#       1          does not admit
+#       1          cannot establish
+#       1          is not answered
+#       1          cannot localize
+#       1          cannot forbid
+#       1          cannot rule
+#       1          do not supply
+#       1          does not bind
+#       1          cannot alter
+#       1          does not invoke
+#       1          does not use
+#       1          does not give
+#       1          does not divide
+#       1          does not possess
+#       1          could not anticipate
+#       1          cannot itself
+#       1          do not arise
+#       1          does not embed
+#       1          does not shrink
+#       1          does not either
+#       1          does not raise
+#       1          do not choose
+#       1          cannot arise
+#       1          cannot promote
+#       1          does not foreclose
+#       1          do not bind
+#       1          could not meet
+#       1          does not remove
+#       1          does not acquire
+#       1          do not propose
+#       1          cannot describe
+#       1          did not have
+#       1          could not supply
+#       1          cannot exhibit
+#       1          cannot render
+#       1          does not in
+#       1          cannot populate
+#       1          do not fail
+#       1          cannot pair
+#       1          does not alternate
+#       1          are not proved
+#       1          cannot answer
+#       1          does not narrow
+#       1          does not rise
+#       1          do not vanish
+#       1          do not depend
+#       1          cannot hold
+#       1          is not selected
+#       1          do not by
+#       1          cannot collapse
+#       1          left undone
+#       1          does not forbid
+#       1          does not exhaust
+#       1          could not state
+#       1          does not fit
+#       1          does not trigger
+#       1          cannot conflict
+#       1          does not deny
+#       1          does not evade
+#       1          does not map
+#       1          does not constrain
+#       1          does not withhold
+#       1          did not need
+#       1          cannot produce
+#       1          cannot is
+#       1          cannot work
+#       1          cannot come
+#       1      69  was not built
+#       1          could not otherwise
+#       1          does not deform
+#       1          cannot build
+#       1          does not factor
+#       1          is not done
+#       1          does not predict
+#       1          does not evidence
+#       1          cannot seat
+#       1          does not preserve
+#       1          no built
+#       1          cannot even
+#       1          does not draw
+#       1          does not multiplet
+#       1          does not exchange
+#       1          not closed
+#       1          cannot claim
+#       1          does not normalize
+#       1          not resolved
+#       1          not determined
+#       1          does not degrade
+#       1          do not divide
+#       1          does not encounter
+#       1          work not done
+#       1          does not create
+#       1          cannot offset
+#       1          cannot pay
+#       1          do not ride
+#       1          does not cancel
+#       1          does not confound
+#       1          cannot pin
+#       1          cannot show
+#       1          do not account
+#       1          does not are
+#       1          do not add
+#       1          does not reverse
+#       1          does not fall
+#       1          are not established
+#       1          does not inherit
+#       1          cannot separate
+#       1          do not come
+#       1          does not explain
+#       1          does not compose
+#       1          does not reduce
+#       1          cannot vary
+#       1          do not compete
+#       1          does not report
+#       1          cannot serve
+#       1          cannot report
+#       1          cannot drift
+#       1          does not separate
+#       1          does not dwell
+#       1          does not travel
+#       1          cannot implement
+#       1          does not describe
+#       1          does not grow
+#       1          does not treat
+#       1          does not tilt
+#       1          cannot imprint
+#       1          cannot tilt
+#       1          does not take
+#       1          cannot take
+#       1          does not isolate
+#       1          cannot mean
+#       1          cannot deliver
+#       1          does not drive
+#       1          do not single
+#       1          does not await
+#       1          does not help
+#       1          cannot resolve
+#       1          cannot represent
+#       1          postponed
+#       1          does not solve
+#       1          cannot tune
+#       1      69  has not built
+#       1      69  not computed
+#       1          does not add
+#       1          cannot destroy
+#       1          do not because
+#       1          does not stake
+#       1          do not weigh
+#       1          does not itself
+#       1          cannot force
+#       1          did not read
+#       1          cannot both
+#       1          does not posit
+#       1          do not appear
+#       1          do not fall
+#       1          does not dynamically
+#       1      69  not built
+#       1          does not account
+#       1          does not sort
+#       1          cannot occur
+#       1          does not meet
+#       1          cannot decide
+#       1          does not exceed
+#       1  LAW 69  is not yet settled
+#       1          cannot justify
+#       1          does not offer
+#       1          does not answer
+#       1          do not measure
+#       1  LAW 69  is not yet carried
+#       1          does not shed
+#       1          does not is
+#       1      69  cannot yet be
+#       1          is not established
+#       1          do not need
+#       1          does not cover
+#       1          does not put
+#       1          does not characterise
+#       1          cannot weigh
+#       1          does not owe
