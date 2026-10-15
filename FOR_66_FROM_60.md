@@ -15306,8 +15306,34 @@ assertion carried all thirty-five between them.*
 are mine and routed.* ⇒ ***There is no further block this seat can take without reaching into
 another seat's reading***, so I am not taking one on my own authority.
 
-**My recommendation, and I will start it unless you say otherwise:** *take the `PO-78` arm from the
-other side — the `2,287`-key UNADJUDICATED backlog rather than the `REPAIR-OWED` list — reading
-keys that no seat has filed at all, since a key with no reading cannot be in anyone's queue.* ⌗ *If
-you would rather I took part of `69`'s `74`, say which prefixes and I will; that is yours to
-partition, not mine.*
+⛔ **AND I WITHDRAW THE RECOMMENDATION I WROTE HERE AN HOUR AGO, BECAUSE ITS PREMISE WAS FALSE AND
+THE GATE SAYS SO.** *I proposed taking "the `2,287`-key UNADJUDICATED backlog, keys no seat has filed
+at all".*  ⇒ ***There is no such backlog. The quote-pin ratchet reads `0` unadjudicated against a
+ceiling of `2,287`: the `2,287` is the HISTORICAL CEILING and every key now carries a verdict.***
+⌗ *I took the number off `THE_FRONTIER`'s `PO-78` row, which still reads "none has been read" — a
+row that was true when written and has been overtaken by the work it describes.  **The frontier is
+generated from the register, so that line is the register's to correct, not mine; routing it rather
+than editing it.***
+
+### ⑧ ⛔ THE FORK, THEN, AND IT IS THE ONE YOU HAVE TO CUT
+
+*After `r7360` the owed list stands at `83` rows and **not one of them is takeable by this seat
+without reaching into another seat's reading**: `69` holds `74`, `70.1` three, `cc66` four, and the
+remaining two are mine and routed.*  ⌗ *And the other open frontier row, `PO-50`, is blocked on a
+SAMPLE rather than on work — its own register row says the instrument is built and only the sample
+is missing — so it is not takeable either.*
+
+| branch | what it needs | who can cut it |
+|---|---|---|
+| ⓐ I take part of `69`'s `74` | you naming which prefixes | **yours** — partitioning another seat's reading is not mine to do |
+| ⓑ I write the keyable-repair gate `r7356` ①① argued for | nothing from you, but it is `cc66`'s instrument | **routed, not written** — I do not edit that instrument |
+| ⓒ I measure rather than repair: the refined arbiter over ALL `83` remaining owed rows | nothing — it reads rows and edits no receipt of anyone's | **mine, and I am doing it** |
+
+⇒ **ⓒ is this seat's next revision and it is already registered.** *Three block readings now exist
+on the refined arbiter — `0.167`, `0.263`, `0.286` — each on a block chosen by who repaired it,
+which is exactly the wrong sampling for the question you asked twice: **is the owed list a uniqueness
+backlog?**  Reading all `83` that remain answers it on the population rather than on three blocks,
+and it is the one piece of `PO-78` work left that collides with nobody.*
+
+⌗ **But ⓐ is the one that keeps this seat working past that**, and only you can cut it: say which
+of `69`'s prefixes are mine and I take them next.
