@@ -150,7 +150,7 @@ print('\n' + '=' * 100)
 print('PART (i) -- THE CLAIMS THAT STAND: each source carries a real noise model in its own code')
 print('=' * 100)
 check("the likelihood function `chi2_of` counted as COV evidence reads the covariance itself -- checked, not assumed",
-      'cov = COV_TT[np.ix_(keep, keep)]' in _CHI2)
+      'COV_TT[np.ix_(keep, keep)]' in _CHI2)
 for what, name, need in GROUP_I:
     ev = set(evidence(name))
     check(f"(i) {what}", need <= ev, f"`{name[:60]}` carries {sorted(ev)}")
@@ -187,14 +187,17 @@ check("(ii)1 \"one standard deviation from the sky\": the intercept's +-0.0099 i
       not evidence(NP) and 'seven parabola windows the sky\'s $\\varphi/\\pi$ moves by $\\pm0' in t_np and '0.0099' in t_np, f"evidence {evidence(NP)}")
 check("    and the receipt that DID propagate the covariance through the locator says it does not re-open the "
       "intercept, and names the window spread as a procedure spread and not the sky's uncertainty",
-      'NOT a re-opening of the phase intercept, the damping envelope, the driving or the refit, a' in src(FP) and 'PROCEDURE' in src(FP)
+      'NOT a re-opening of the phase intercept, the damping envelope, the driving or the refit, a' in src(FP)
+      and "BUT THAT IS A PROCEDURE SPREAD, NOT THE SKY'S UNCERTAINTY" in src(FP)
       and "It is not the sky's uncertainty" in ' '.join(src(FP).split()))
 NS = 'P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control'
 t_ns = src(NS)
 check("(ii)2 \"better than seven standard deviations\": the +-0.000974 is the standard error over disjoint stretches of "
       "the phase difference between two COMPUTED spectra, with no noise anywhere in the source",
-      not evidence(NS) and 'DU = np.array([delta_on(' in t_ns and 'np.std(DU, ddof=1)' in t_ns
-      and 'phase_of(g, OA' in t_ns and 'phase_of(g, OC' in t_ns, f"evidence {evidence(NS)}")
+      not evidence(NS)
+      and 'DU = np.array([delta_on(x, x + 1.0) for x in np.arange(QE0[1], QE0[-1] - 1.0 + 1e-9, 1.0)])' in t_ns
+      and 'np.std(DU, ddof=1)' in t_ns
+      and 'pa, pc = phase_of(g, OA, a, b), phase_of(g, OC, a, b)' in t_ns, f"evidence {evidence(NS)}")
 BK = 'P15_the_bank_already_existed_and_the_doppler_carries_a_growing_minority_of_the_excess'
 R7033 = 'P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear'
 check("(ii)3 \"indistinguishable from zero at the lowest bands\": its source is the one r7033 gated as drawing no "
@@ -222,7 +225,6 @@ check("(iii)2 z_acc's +-0.0467: every script that carries it takes it as an INPU
       os.path.exists(ALPHA) and 'INPUT   x0 = 1.6648 +- 0.0467' in open(ALPHA, encoding='utf-8').read()
       and '0.0467' not in src('P03_acceleration_is_slice_curvature')
       and all(('corpus measured' in open(os.path.join(ROOT, c), encoding='utf-8').read()
-               or 'INPUT' in open(os.path.join(ROOT, c), encoding='utf-8').read()
                or 'x0 = 1.6648' in open(os.path.join(ROOT, c), encoding='utf-8').read()
                or 'x0=1.6648' in open(os.path.join(ROOT, c), encoding='utf-8').read()) for c in CARRY),
       CARRY)
