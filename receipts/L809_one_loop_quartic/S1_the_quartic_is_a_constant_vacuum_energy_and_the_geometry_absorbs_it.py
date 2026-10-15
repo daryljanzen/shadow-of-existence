@@ -114,7 +114,11 @@ def main():
     check('SOURCE: p0 absorbs a CONSTANT vacuum energy into the one curvature -- "is absorbed into that '
           'one observed curvature" and "enters the profile\'s $\\Lambda r^2/3$ term, not as a $2m/r$ bend"',
           't a source held against a bare $\\Lambda$ but is absorbed into that one observed curvature' in p0
-          and 'not as a $2m/r$ bend' in p0)
+          #: ⛭ r7360+60: the retired arm opened on a NEGATOR followed by a preposition and named
+          #: no subject at all -- 'not as a $2m/r$ bend' says nothing about what is not a bend.
+          #: Widened to the clause that names what enters where, and as what it does not.
+          and ('a constant density gravitates as a curvature scale, so it enters the profile\'s '
+               '$\\Lambda r^2/3$ term, not as a $2m/r$ bend') in p0)
     check('SOURCE: and there is no bare-Lambda-versus-vacuum split for a cancellation to act on -- '
           '"there is no bare-$\\Lambda$-versus-vacuum-energy split"',
           'there is no bare-$\\Lambda$-versus-vacuum-energy split' in p0

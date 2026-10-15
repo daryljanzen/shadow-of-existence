@@ -111,8 +111,19 @@ def main():
     check('and the corpus exhibited exactly that at r2450: the general inhomogeneous LTB leaf, '
           'm(r) and E(r) free, one equation per comoving shell',
           'one equation per comoving shell' in arc or 'ONE equation per comoving shell, and the shells do n' in arc)
-    check('with the bend-density identity EXACT for arbitrary m(r)',
-          'EXACT for arbitrary $m(r)$' in arc or 'exact for arbitrary' in arc.lower())
+    #: ⛭⛭ r7360+60: an ALT whose arms were a FRAGMENT and a CASE-FOLDED SUBSTRING of itself, so
+    #: the pair passed wherever either stood and neither carried the claim -- which is that the
+    #: identity holds for arbitrary $m(r)$ AND that $E(r)$ drops out.  ** One span, the register's
+    #: own clause with the identity written out, markdown emphasis normalised in the reader
+    #: (`r7336`) so a re-styling of the row cannot break a claim about what it says. **
+    _ARC_MD = re.sub(r'\*+|~~', '', re.sub(r'\s+', ' ', arc))
+    _EXACT = ("the bend-density identity is EXACT for arbitrary $m(r)$: $G_{tt}-\\Lambda = "
+              "2m'(r)/(R^2R')$, i.e. P8's $\\rho=m'/4\\pi R^2R'$ with no condition on $m$, and "
+              "$E(r)$ drops out of the density entirely")
+    check(f'with the bend-density identity EXACT for arbitrary m(r), and E(r) dropping out of the '
+          f'density -- the register\'s whole clause with the identity written out '
+          f'({_ARC_MD.count(_EXACT)} occurrence)',
+          _EXACT in _ARC_MD and _ARC_MD.count(_EXACT) == 1)
 
     # and the stop
     # ** RE-ANCHORED r2516: this pinned L-233's INSTRUCTION, and L-233 was STRUCK at r2468 -- the

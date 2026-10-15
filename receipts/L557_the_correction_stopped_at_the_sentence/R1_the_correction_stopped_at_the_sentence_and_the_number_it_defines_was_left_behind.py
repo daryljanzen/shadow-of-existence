@@ -125,6 +125,24 @@ def rcpt(name):
     return open(os.path.join(RD, name), encoding='utf-8', errors='replace').read()
 
 
+def _alloc_sha(name):
+    """the commit that ALLOCATED a receipt -- the oldest commit touching it"""
+    out = subprocess.run(['git', 'log', '--format=%H', '--', os.path.join('receipts', 'P15_CR_cosmology', name)],
+                         cwd=ROOT, capture_output=True, text=True, errors='replace').stdout.split()
+    if not out:
+        out = subprocess.run(['git', 'log', '--format=%H', '--follow', '--',
+                              os.path.relpath(os.path.join(RD, name), ROOT)],
+                             cwd=ROOT, capture_output=True, text=True,
+                             errors='replace').stdout.split()
+    return out[-1] if out else ''
+
+
+def _at(rev, name):
+    """a receipt's text at a commit -- for a span pinned where it stood (`L-249`'s rule)"""
+    return subprocess.run(['git', 'show', f'{rev}:{os.path.relpath(os.path.join(RD, name), ROOT)}'],
+                          cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+
+
 def main():
     print()
     print('  R1 -- r2755 corrected the sentence; did it correct the number the sentence defines?')
@@ -272,13 +290,25 @@ def main():
     # ------------------------------------------------------------------ ⓹ the C41 knot
     a = rcpt('C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py')
     b = rcpt('C41_a_tilde_is_stale_when_nothing_competes.py')
+    #: the pair's own allocating commit -- r2749, which created both files
+    _PIN_C41 = _alloc_sha('C41_a_tilde_is_stale_when_nothing_competes.py')
+    _a_then = _at(_PIN_C41, 'C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py')
+    _b_then = _at(_PIN_C41, 'C41_a_tilde_is_stale_when_nothing_competes.py')
+    _CONTESTED, _STALE = 'CONTESTED', 'stale'
     check('⓹ the two r2749 commits allocate `C41` twice and their titles read as opposites: "a tilde '
           'on a settled value is a stale hedge" against "a tilde is stale when nothing competes"',
           os.path.exists(os.path.join(RD, 'C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py'))
           and os.path.exists(os.path.join(RD, 'C41_a_tilde_is_stale_when_nothing_competes.py')))
     check('⇒ AND THEY ARE ONE RULE AT TWO STATES: the second says a tilde is right while the receipts '
           'DISAGREE; the first says it is stale once they do not',
-          'CONTESTED' in b.upper() and 'stale' in a.lower())
+          #: ⛔⛭⛭ r7360+60: BOTH ARMS WERE ONE-WORD LIVE-STATUS PINS AND BOTH FIRED ON SUCCESS.
+          #: *The contest those two receipts exist to provoke was RESOLVED at r2755 -- which this
+          #: very check asserts two lines down -- so the day either receipt records the resolution
+          #: in its own head, this gate goes red for the resolution having happened.*
+          #:   ⇒ `L-249`'s rule: ** the two titles are the claim and they are read at the commit
+          #:     that allocated them (r2749's own pair), where no later edit reaches them. **  The
+          #:     live state is the next check's, which reads r2755 and is already pinned there.
+          _CONTESTED in _b_then.upper() and _STALE in _a_then.lower())
     check('⛭ and r2755 moved the state -- it settled the contest and removed all nine hedges -- so the '
           'first\'s verdict is the operative one and the second\'s rule is what licensed the change',
           p15_before.count('{\\sim}8\\%') == 9 and p15.count('{\\sim}8\\%') == 0
