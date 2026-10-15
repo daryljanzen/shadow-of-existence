@@ -1,0 +1,24 @@
+# THE FRONTIER STEP TOTALS, one row per revision, WRITTEN BY scripts/regen_frontier.py.
+# ** This file exists so THE_FRONTIER's "(was N last revision)" is not a sum of a hand-written
+#   field. **  r7399 ⑪: that field was 0 on seven of nine live rows and the published delta was
+#   false at 14 of the 15 revisions r7371..r7399, with the SIGN INVERTED at r7389.
+# ** Keyed by revision so a second run in one revision replaces its own row rather than
+#   shifting the baseline ** -- the re-stale trap regen_grain_currency hit four times.
+# Rows up to r7399 were derived from the repository's own history by
+#   computations/beyond_the_wall/r7399_cc66_the_unrottable_delta/history.py, not written by hand.
+revision	steps
+r7371	7
+r7373	7
+r7375	7
+r7377	7
+r7379	9
+r7381	11
+r7383	11
+r7385	11
+r7387	19
+r7389	16
+r7391	16
+r7393	19
+r7395	19
+r7397	19
+r7399	19

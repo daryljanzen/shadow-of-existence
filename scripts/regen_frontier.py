@@ -33,6 +33,88 @@ import re
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
+# ** r7399 ⑪: `was` IS NO LONGER A SUM OF A HAND-WRITTEN FIELD. **  It was
+#   `sum(EST[p][2] for p in ORDER if p in live)` -- index 2 being `steps-last-revision`, written by
+#   hand and backfilled by nobody.  Measured against the history by
+#   computations/beyond_the_wall/r7399_cc66_the_unrottable_delta/history.py: of the 15 revisions
+#   r7371..r7399 the published delta was FALSE at 14, and at r7389 it was false IN THE OTHER
+#   DIRECTION -- the real step count FELL 19 -> 16 while the headline announced a rise from 2 to 16.
+#   *** A generated line whose sign can invert is worse than a missing line. ***
+#   The previous total is now PERSISTED BY THIS GENERATOR, keyed by revision.
+# ** THE RE-STALE TRAP, named because regen_grain_currency hit it four times: ** a second run in ONE
+#   revision must not shift the baseline, so a repeat run REPLACES its own row instead of appending.
+STEPS_HISTORY = os.path.join(ROOT, 'corpus', 'frontier_steps_history.tsv')
+
+
+def _register_rev():
+    """The revision to key the step history by -- DERIVED from the register's content, not its stamp.
+
+    ** WHY NOT `current:`. **  Found while building this, and it is the same failure shape one level
+    down: THE_REGISTER.md's own `current:` read `r6933` at r7399 while its body carried rows up to
+    `r7399` -- a hand-written stamp 466 revisions stale, which `regen_frontier.py` was also copying
+    into THE_FRONTIER's `current:`.  Keying a fix for a rotted field BY a rotted field would have
+    recorded every revision under one key and published a permanent zero delta.
+    The maximum revision marker in the register's body is a measurement of its content and cannot
+    rot while its rows carry markers.  Reported to the register's holder; not repaired here.
+    """
+    try:
+        raw = open(os.path.join(ROOT, 'THE_REGISTER.md'), encoding='utf-8',
+                   errors='replace').read()
+    except OSError:
+        return 'unversioned'
+    marks = re.findall(r'\br(\d{3,5})\b', raw)
+    return f'r{max(int(x) for x in marks)}' if marks else 'unversioned'
+
+
+def _steps_history():
+    rows = []
+    try:
+        for line in open(STEPS_HISTORY, encoding='utf-8').read().split('\n'):
+            if not line or line.startswith('#') or '\t' not in line:
+                continue
+            rev, steps = line.split('\t')[:2]
+            if rev == 'revision':
+                continue
+            rows.append((rev, int(steps)))
+    except (OSError, ValueError):
+        pass
+    return rows
+
+
+def _steps_was(rev, steps):
+    """The PREVIOUS revision's own recorded total, and this revision's total recorded for next time.
+
+    Returns the `was` to publish.  With no prior revision on record it returns `steps`, so the
+    headline reads a zero delta -- which is the true statement when nothing is known to have moved,
+    and not the false one a missing hand-written field produced.
+    """
+    rows = _steps_history()
+    if rows and rows[-1][0] == rev:
+        was = rows[-2][1] if len(rows) > 1 else steps
+        rows[-1] = (rev, steps)
+    else:
+        was = rows[-1][1] if rows else steps
+        rows.append((rev, steps))
+    with open(STEPS_HISTORY, 'w', encoding='utf-8') as fh:
+        fh.write('# THE FRONTIER STEP TOTALS, one row per revision, WRITTEN BY '
+                 'scripts/regen_frontier.py.\n')
+        fh.write('# ** This file exists so THE_FRONTIER\'s "(was N last revision)" is not a sum of a '
+                 'hand-written\n')
+        fh.write('#   field. **  r7399 ⑪: that field was 0 on seven of nine live rows and the '
+                 'published delta was\n')
+        fh.write('#   false at 14 of the 15 revisions r7371..r7399, with the SIGN INVERTED at r7389.'
+                 '\n')
+        fh.write('# ** Keyed by revision so a second run in one revision replaces its own row '
+                 'rather than\n')
+        fh.write('#   shifting the baseline ** -- the re-stale trap regen_grain_currency hit four '
+                 'times.\n')
+        fh.write('# Rows up to r7399 were derived from the repository\'s own history by\n')
+        fh.write('#   computations/beyond_the_wall/r7399_cc66_the_unrottable_delta/history.py, not '
+                 'written by hand.\n')
+        fh.write('revision\tsteps\n')
+        for r, n in rows:
+            fh.write(f'{r}\t{n}\n')
+    return was
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
@@ -10127,7 +10209,6 @@ def main():
             live.add(m.group(2))
 
     steps = sum(EST[p][1] for p in ORDER if p in live)
-    was = sum(EST[p][2] for p in ORDER if p in live)
     turns = sum(EST[p][1] * EST[p][3] for p in ORDER if p in live)
 
     L = []
@@ -10154,6 +10235,8 @@ def main():
     L.append('# ▣ THE FRONTIER\n')
     L.append('*Generated by `scripts/regen_frontier.py`. **The open problems, in dependency order.** '
              'A STEP is one worked result; turns-per-step is a separate estimate.*\n')
+    # r7399 ⑪: `was` comes from the persisted per-revision total, never from a hand-written field.
+    was = _steps_was(_register_rev(), steps)
     L.append(f'## ⇒ **{len(live)} OPEN · {steps} STEPS LEFT** *(was {was} last revision)* '
              f'**· ~{turns} turns at current estimates**\n')
     blocked = [p for p in ORDER if p in live and EST[p][4]]

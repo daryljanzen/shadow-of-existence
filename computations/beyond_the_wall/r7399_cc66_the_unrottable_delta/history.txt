@@ -1,0 +1,23 @@
+# ⑪ THE HISTORY -- one row per revision, read at the last commit carrying its marker
+# rev     sha        pub OPEN pub steps pub was calc steps calc was  ROUTE-B zero rows
+# r7371   dbfe8db85         3         7       1          7        1  [-B] 2 zero: PO-86 PO-78   (no prior rev)
+# r7373   1031598be         3         7       1          7        1  [AB] 2 zero: PO-86 PO-78   routeA would publish was=7
+# r7375   71f68f5e7         3         7       1          7        1  [AB] 2 zero: PO-86 PO-78   routeA would publish was=7
+# r7377   98319a115         3         7       1          7        1  [AB] 2 zero: PO-86 PO-78   routeA would publish was=7
+# r7379   ed336a484         4         9       1          9        1  [AB] 3 zero: PO-86 PO-87 PO-78   routeA would publish was=7
+# r7381   ed3a4e995         5        11       2         11        2  [AB] 3 zero: PO-86 PO-87 PO-78   routeA would publish was=9
+# r7383   9a950fb27         5        11       2         11        2  [AB] 3 zero: PO-86 PO-87 PO-78   routeA would publish was=11
+# r7385   6be3ddfdd         5        11       2         11        2  [AB] 3 zero: PO-86 PO-87 PO-78   routeA would publish was=11
+# r7387   7edc29fec         9        19       2         19        2  [AB] 7 zero: PO-86 PO-91 PO-90 PO-89 PO-88 PO-87 PO-78   routeA would publish was=11
+# r7389   084868eda         7        16       2         16        2  [AB] 5 zero: PO-86 PO-89 PO-88 PO-87 PO-78   routeA would publish was=19
+# r7391   8d35f196b         7        16       2         16        2  [AB] 5 zero: PO-86 PO-89 PO-88 PO-87 PO-78   routeA would publish was=16
+# r7393   43c33644c         9        19       2         19        2  [AB] 7 zero: PO-86 PO-91 PO-90 PO-89 PO-88 PO-87 PO-78   routeA would publish was=16
+# r7395   f93bed7e4         9        19       2         19        2  [AB] 7 zero: PO-86 PO-91 PO-90 PO-89 PO-88 PO-87 PO-78   routeA would publish was=19
+# r7397   f8f481638         9        19       2         19        2  [AB] 7 zero: PO-86 PO-91 PO-90 PO-89 PO-88 PO-87 PO-78   routeA would publish was=19
+# r7399   15c6a1d9b         9        19      19         19       19  [--] 0 zero: (none)   routeA would publish was=19
+
+# ⒜ ROUTE B caught 14 of 15 revision(s) read  (condition: a live row with steps-last-revision 0 and steps-left non-zero)
+# ⒝ ROUTE A would have differed from the published `was` at 13 of 15 (first revision has no prior total, so it cannot differ)
+
+# ⌗ Route A is scored only where a PRIOR revision exists in the window; Route B needs no
+#   prior revision, which is itself a difference between them and not a bookkeeping detail.
