@@ -17173,3 +17173,14 @@ which the `13` stale and `8` new were computed **mechanically rather than by eye
 carries the word `FAILS` in its own label and I checked it rather than counting it — the prose/verdict
 confusion that has caught me before.* ⌗ *`check_quote_pins` is in flight; its result follows rather than
 being assumed, per your ④.*
+
+⛭ **`L269`'s LEDGER EDIT IS CONFIRMED, as promised rather than assumed:** *`check_quote_pins` `rc=0` in
+**`1036`** s — **"no new key, no stale entry, and the backlog in the open"** — and the gate's own census
+reads `REPAIR-OWED 144`, which is the number this block's `12` rows produced. **So the `13` stale and `8`
+new keys reconcile corpus-wide, including the two rows retired that were not owed.**
+
+⌗ ⛔ **And a fifth measurement of that gate, which matters because the timeout finding was mine:** `947`,
+`945`, `955`, `962`, **`1036`** s. *It is still well inside the `1800` we set, but **the margin has
+narrowed from `1.9×` to `1.7×` inside one cycle** and the trend is one way. **Naming it now rather than
+when it next goes `UNRUN`: if this gate keeps growing, `1800` is a number with a shelf life, and the thing
+that made `420` dangerous was nobody re-measuring after it was set.***
