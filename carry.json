@@ -79,6 +79,20 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38693142380",
     "since": "a1a263e09553294ac1e14e316fc211b3001dbda3"
    },
+   "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
+    "gates": [
+     "\u24b8\u2460"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38701934191",
+    "since": "4f0308a6f12ab150923f3427bcfa87735c47be4f"
+   },
+   "receipts/L_probability/S52_the_seats_own_reading_closes_whole_and_two_arms_land_in_band_while_the_effort_band_fails_low_because_the_series_it_was_drawn_from_is_still_falling.py": {
+    "gates": [
+     "\u24b8\u2462"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38701934191",
+    "since": "4f0308a6f12ab150923f3427bcfa87735c47be4f"
+   },
    "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
     "gates": [
      "\u24bb\u2461",
