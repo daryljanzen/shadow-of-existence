@@ -200,3 +200,62 @@ def report():
 
 if __name__ == '__main__':
     report()
+
+
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+# THE RESULT BLOCK, appended by the reading push.  ** Nothing above this line was changed. **
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+RESULT.update({
+    # ── the run: the registered scope, on a FIXED tree in a detached worktree at `CENSUS` ──
+    #   ⌗ The first attempt read the working tree while this revision was repairing it, so its reds
+    #   mixed pre- and post-repair receipts.  It was discarded and re-run at the pinned commit.
+    'RAN': 155, 'GREEN': 145, 'DEP': 5, 'ABSENT': 0,
+    'RED_ALL': 5,              # S19, S23, S5 (hand-found, in scope) + S50, S52 (arm ⒜'s)
+
+    # ── arm ⒜: red in the 152 nobody had looked at ──
+    #   ⛭ INSIDE THE BAND, AT ITS FLOOR.  2 of 152 = 0.0132 against 0.013-0.060 (2 to 9 receipts).
+    #   Central was 5.  *The arm holds by one receipt: had either `S50` or `S52` been green, it would
+    #   have failed LOW, and the floor was put at 2 precisely so that it could.*
+    'A_SPACE_READ': 152, 'A_RED': 2,          # S50, S52
+    'A_SHARE': 0.0132,
+
+    # ── arm ⒝: one cause or many ──
+    #   ⛭ INSIDE, AT THE CEILING -- and the registration DECLARED that a pass here carries no
+    #   information, because the band can only fail low.  All 5 reds are the one cause:
+    #     S19 ⒈⒉  a floor and an ordering re-read live against a pinned measurement
+    #     S50     an arm scored on an arbiter that lists `corpus/` live, ledgers included
+    #     S52     a count of the keys its own revision mints, read live
+    #     S5      the authorisation carrier -- a gate reading the live state of its own branch
+    #     S23     downstream of `P03`'s authorisation, which it runs
+    'B_RED_SCORED': 5, 'B_ONE_CAUSE': 5, 'B_SHARE': 1.0,
+
+    # ── arm ⒞: what the gate layer would have caught ──
+    #   ⛭ THE POINT PREDICTION HOLDS EXACTLY: 0.  No `corpus/check_*.py` runs a receipt, so none of
+    #   the five is visible to the job this seat landed three revisions on.
+    'C_GATE_VISIBLE': 0,
+
+    # ── ⛔⛭⛭⛭ AND THE ARM'S OWN INSTRUMENT HAD THE CLASS IN IT, WHICH IS THE SIXTH "RED" ──
+    #   The run named a 6th red: `P15_the_three_grid_comparison...`, which DRIVES another seat's
+    #   audit as a subprocess.  That audit imports `camb`, absent from this container, so the
+    #   receipt parsed empty output and died on a `KeyError`.
+    #   ⇒ *** It is DEPENDENCY-MISSING, one layer down -- and the runner called it RED because it
+    #     tests for `ModuleNotFoundError` IN THE RECEIPT'S OWN STDERR, while the missing module
+    #     surfaced in the stderr of the process the receipt drove. ***
+    #   ** A classifier keyed on a spelling, in the wrong process's output.  The instrument built to
+    #   measure how much is red had this revision's own class inside it, and it inflated arm ⒜ by
+    #   one. **  Reclassified by reading the driven audit's own failure, which names the module.
+    'SIXTH_WAS_DEP': True,
+    'DEP_BEFORE_RECLASSIFY': 4, 'DEP_AFTER': 5,
+    'A_RED_IF_MISCLASSIFIED': 3,              # what the arm would have read uncorrected
+})
+
+#: ⛭⛭⛭ ALL THREE ARMS LAND AS REGISTERED, AND TWO OF THE THREE SAY SO WITH CAVEATS THE REGISTRATION
+#: WROTE DOWN FIRST.
+#:   ⒜ `2` of `152` = `0.0132`, INSIDE `0.013`-`0.060` -- **at the floor, holding by one receipt.**
+#:   ⒝ `5` of `5` = `1.00`, INSIDE `0.55`-`1.00` -- **at the ceiling, and declared in advance to
+#:     carry no information there.**  The informative outcome would have been refutation.
+#:   ⒞ `0`, the point prediction, EXACTLY. *The gate layer could not have caught one of them.*
+#: ⇒ ** So the hole has one shape: every red behind the landing sequence is a gate re-reading live
+#:   what its own revision measured at a pin, or the authorisation face of the same thing. **
+#: ⌗ And the seventh red, `S53`'s restraint, is the same class again and was CAUSED by repairing the
+#:   other six -- it is outside this frame because it was green at `CENSUS`.

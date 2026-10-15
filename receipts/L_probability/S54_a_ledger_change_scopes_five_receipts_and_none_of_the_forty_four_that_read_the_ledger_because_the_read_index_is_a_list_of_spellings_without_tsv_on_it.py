@@ -54,6 +54,21 @@ either, so no entry anywhere in the index carries a `.tsv`.
     in the list the scope goes `5` to `49` and all `44` readers come in.  `scripts/receipt_scope.py`
     is `70.1`'s instrument, so it is ROUTED as a patch in `FOR_66_FROM_60.md` and not edited here.*
 
+** AND ALL THREE REGISTERED ARMS LAND, TWO OF THEM WITH THE CAVEAT THE REGISTRATION WROTE FIRST. **
+  ⒜ `2` red in the `152` nobody had looked at -- `0.0132` against `0.013`-`0.060`.  ** INSIDE, AT
+    THE FLOOR, holding by ONE receipt: had either been green it would have failed LOW. **
+  ⒝ `5` of the `5` reds are the ONE cause -- `1.00` against `0.55`-`1.00`.  ⚠ ** Inside at the
+    CEILING, and the registration declared in advance that a pass there carries no information;
+    the informative outcome was refutation and it did not come. **
+  ⒞ `0` of them visible to any gate -- ** the point prediction, exactly. **
+
+** ⛔⛭⛭⛭ AND THE ARM'S OWN INSTRUMENT HAD THE CLASS INSIDE IT. **  *The run named a SIXTH red: a
+receipt that DRIVES another seat's audit as a subprocess.  That audit fails on an import this
+container does not have, so the receipt parsed empty output and died on a `KeyError`.*  ⇒ ** It is
+dependency-missing one layer down, and the runner called it RED because it tests for the import error
+in the RECEIPT'S OWN stderr while the module surfaced in the stderr of the process it drove. **  *A
+classifier keyed on a spelling, in the wrong process's output -- and it inflated arm ⒜ by one.*
+
 ** AND THE REGISTRATION'S OWN CLAIM IS NARROWED BY THE MEASUREMENT, WHICH IS WHY IT WAS PUSHED
 FIRST. **  `PREDICTION.md` said the standing instruction to stand down from `L259/D1` and
 `L_numerics/Q1` rests on the same marking.  *It does not: neither of those receipts names a `.tsv`
@@ -381,7 +396,12 @@ def main():
           f'extension blindness reaches `S19`, where it was demonstrated, and NOT those two.  '
           f'** The registration carried a consequence it had not checked, and the check retracts it '
           f'rather than a sentence doing so **',
-          len(sd) == 2 and all(not t for t in sd.values()) and s19_tsv
+          # ⌗ r7364: per-NAME rather than `len(sd) == 2`.  A count on a set built by scanning the
+          #   registry is a pin on something the tree can grow -- the prose-pin ratchet flagged it,
+          #   and it is this revision's own class.  Each stood-down prefix is asserted to have
+          #   RESOLVED, which is the non-vacuity the count was standing in for.
+          all(any(w in r for r in sd) for w in STOOD_DOWN)
+          and all(not t for t in sd.values()) and s19_tsv
           and os.path.basename(LEDGER) in s19_tsv
           and 'rests on the same marking' in pred)
 
@@ -422,6 +442,81 @@ def main():
           f'rather than counting a diff against a moving head**',
           not strays and len(touched) == 7
           and not any(a in f for a in STOOD_DOWN for f in touched))
+
+    # ══════════════════════════════════════════════════════════════════════════════════════════════
+    head('E -- THE THREE REGISTERED ARMS, SCORED ON THE RUN')
+    # ══════════════════════════════════════════════════════════════════════════════════════════════
+    import json as _j
+    SR = _j.load(io.open(os.path.join(os.path.dirname(COST), 'SUITE_RESULT.json'),
+                         encoding='utf-8'))
+    R = C.RESULT
+    _hand = set(C.known_red(C.scope()))
+    _red = [r for r in SR['red'] if r not in SR['reclassified_dep']]
+    _arm_a = [r for r in _red if r not in _hand]
+    print(f"      the run at {SR['ran_at']}: green {SR['green']}, red {len(SR['red'])} as the runner "
+          f"classified them, {len(SR['reclassified_dep'])} of those RECLASSIFIED "
+          f"dependency-missing, dep {len(SR['dep'])} -> {len(SR['dep']) + 1}")
+    print(f'      arm ⒜\'s reds -- in the scope, not hand-found: '
+          f'{[r.split("/")[-1][:22] for r in _arm_a]}')
+    _lo, _hi = C.A_BAND[0] * C.A_SPACE, C.A_BAND[1] * C.A_SPACE
+    check(f'Ⓔ① arm ⒜ scored on the registered space: {len(_arm_a)} red in the {C.A_SPACE} nobody '
+          f'had looked at = {len(_arm_a) / C.A_SPACE:.4f} against band {C.A_BAND[0]}–{C.A_BAND[1]} '
+          f'({_lo:.2f}–{_hi:.2f} receipts), central {C.A_CENTRAL} -- ⛭ INSIDE, AT THE FLOOR.  '
+          f'** It holds by ONE receipt: had either of the two been green the arm would have failed '
+          f'LOW, and the floor was put at 2 so that it could **',
+          len(_arm_a) == R['A_RED'] == 2 and _lo <= len(_arm_a) <= _hi
+          and C.decisive_share(C.A_SPACE, C.A_CENTRAL, C.A_BAND) >= 0.05)
+
+    _pred = io.open(os.path.join(os.path.dirname(COST), 'PREDICTION.md'), encoding='utf-8').read()
+    check(f'Ⓔ② arm ⒝ scored: {R["B_ONE_CAUSE"]} of the {R["B_RED_SCORED"]} reds are the ONE cause -- '
+          f'a gate re-reading live what its own revision measured at a pin, or the authorisation '
+          f'face of it -- = {R["B_SHARE"]:.2f} against band {C.B_BAND[0]}–{C.B_BAND[1]}.  '
+          f'⚠ INSIDE, AT THE CEILING, **and the registration declared in advance that a pass here '
+          f'carries no information because the band can only fail low**: the informative outcome '
+          f'was refutation and it did not come',
+          R['B_ONE_CAUSE'] == R['B_RED_SCORED'] == len(_red)
+          and C.B_BAND[0] <= R['B_SHARE'] <= C.B_BAND[1]
+          and 'fails only low' in _pred.lower().replace('fails only below', 'fails only low'))
+
+    check(f'Ⓔ③ arm ⒞ scored, and the POINT prediction holds EXACTLY: {R["C_GATE_VISIBLE"]} of the '
+          f'{len(_red)} reds is visible to any `corpus/check_*.py`, because none of the '
+          f'{len(gates)} of them runs a receipt -- which `Ⓐ①` establishes from the job script '
+          f'itself.  *Any one of them would have refuted it*',
+          R['C_GATE_VISIBLE'] == 0
+          and all(r.startswith('receipts/') for r in _red)
+          and not re.search(r'receipts/\S*\.py', job))
+
+    # ── ⛔ and the arm's own instrument carried the class ──────────────────────────────────────────
+    _aud = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7101_70_three_grid_audit',
+                        'audit.py')
+    _ar = subprocess.run([sys.executable, _aud], cwd=ROOT, capture_output=True, text=True,
+                         errors='replace', timeout=600)
+    _missing = re.search(r"No module named '([^']+)'", _ar.stderr)
+    _absent = subprocess.run([sys.executable, '-c', f'import {_missing.group(1)}']
+                             if _missing else [sys.executable, '-c', 'pass'],
+                             capture_output=True).returncode != 0
+    print(f'      the driven audit exits {_ar.returncode}; its own stderr names the absent module: '
+          f'{_missing.group(1) if _missing else "NONE"};  absent here: {_absent}')
+    check(f'Ⓔ④ ⛔⛭⛭⛭ AND THE SIXTH "RED" WAS DEPENDENCY-MISSING ONE LAYER DOWN, WHICH THE ARM\'S OWN '
+          f'INSTRUMENT GOT WRONG: the receipt DRIVES another seat\'s audit, that audit fails on '
+          f'`import {_missing.group(1) if _missing else "?"}` which is absent from this container, '
+          f'so the receipt parsed empty output and died on a `KeyError` -- and the runner called it '
+          f'RED because it tests for the import error IN THE RECEIPT\'S OWN STDERR while the module '
+          f'surfaced in the stderr of the process it drove.  ** A classifier keyed on a spelling, in '
+          f'the wrong process\'s output: the instrument built to measure how much is red had this '
+          f'revision\'s own class inside it, and it inflated arm ⒜ from {R["A_RED"]} to '
+          f'{R["A_RED_IF_MISCLASSIFIED"]} **',
+          _ar.returncode != 0 and bool(_missing) and _absent
+          and R['SIXTH_WAS_DEP'] is True
+          and R['DEP_AFTER'] == R['DEP_BEFORE_RECLASSIFY'] + 1
+          and R['A_RED_IF_MISCLASSIFIED'] == R['A_RED'] + 1)
+
+    _reg_cost = git('show', f'{REG}:computations/beyond_the_wall/'
+                            f'r7364_60_the_suite_the_gate_never_ran/cost.py')
+    check(f'Ⓔ⑤ and the registration was committed and PUSHED before the run was read: `{REG}` '
+          f'carries the three bands and NO result block, and the block arrives in a later commit',
+          'A_BAND' in _reg_cost and 'RESULT.update' not in _reg_cost
+          and 'RESULT.update' in io.open(COST, encoding='utf-8').read())
 
     print(f'\n{BAR}')
     if FAILED:

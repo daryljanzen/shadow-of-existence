@@ -195,10 +195,13 @@ def main():
           f'{sum(1 for v in _u_live.values() if v > 1)} live. The arm is a FROZEN RECORD of the '
           f'arbiter `r7358` withdrew, and the live figure is printed above rather than asserted*',
           len(_multi) == R['B_MULTI'] and not (C.B_BAND[0] <= _share <= C.B_BAND[1])
-          # and the withdrawal is RECORDED rather than left to this comment: the refined arbiter
-          # that excludes the ledgers exists, and it is the one the later blocks were read on.
-          and 'baseline' in open(os.path.join(
-              ROOT, 'computations', 'beyond_the_wall', 'r7358_60_the_queue', 'cost.py'),
+          # and the withdrawal is RECORDED rather than left to this comment: the REFINED arbiter
+          # that excludes the ledgers exists in the computation the later blocks were read on.
+          # ⌗ r7364: the first cut of this conjunct looked for `baseline` in r7358's cost.py, where
+          #   that word is a PATH CONSTANT -- a pin that passes on a spelling the claim does not
+          #   rest on.  It asks for the exclusion EXPRESSION instead, which is the refinement itself.
+          and "'baseline' not in f and 'annotation' not in f" in open(os.path.join(
+              ROOT, 'computations', 'beyond_the_wall', 'r7360_60_the_seats_own_reading', 'cost.py'),
               encoding='utf-8', errors='replace').read())
     check(f'Ⓒ② ⛭ and it contradicts the expectation the order carried: the other seat found 0 of 7 '
           f'of its own block\'s literals occurring more than once, and this block reads '
