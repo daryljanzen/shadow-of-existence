@@ -87,8 +87,15 @@ def check(label, cond):
         FAILED.append(label)
 
 
+#: ⛭⛭ r7356 (60) on `r7353` ①'s ORDER: the emphasis family is normalised IN THE READER, which is
+#: `r7258`'s settled form -- ** a span that runs through `\emph` is repaired by making the markup
+#: invisible to the reader, never by splitting the span around the markers. **
+_EMPH_M1 = re.compile(r'\\(?:emph|textit|textbf)\{([^{}]*)\}')
+
+
 def flat(path):
-    return re.sub(r'\s+', ' ', open(path, encoding='utf-8', errors='replace').read())
+    return _EMPH_M1.sub(r'\1', re.sub(r'\s+', ' ',
+                                      open(path, encoding='utf-8', errors='replace').read()))
 
 
 def main():
@@ -120,9 +127,19 @@ def main():
     residue = ('What is not excluded here is a mechanism that is neither holonomy nor isometry; the '
                'isometry route is excluded separately, and no third mechanism has been named, so '
                'naming one remains open.')
-    check('⓵ P14 states the residue as an unbounded existential: "no third mechanism has been named"',
-          residue in p14)
-    check('   and the register carries it that way too', 'no third mechanism has been named' in po)
+    #: ⛭ THE REPAIR (r7356 on `r7353` ①'s ORDER).  ** Two of the owed rows pinned the SAME sentence
+    #: at two lengths -- the whole residue and the fragment `no third mechanism has been named, so
+    #: naming one remains open` -- so the receipt carried one claim on two keys, and the shorter was
+    #: a fragment of the longer. **  ⇒ The whole sentence is kept as the one key, asserted ONCE and
+    #: shown unique; the duplicate is withdrawn rather than re-pinned.  ⌗ And the register's half is
+    #: read as the ROW it lives in rather than as a phrase anywhere in the file.
+    _po_rows = [l for l in po.split('|') if 'no third mechanism has been named' in l]
+    check(f'⓵ P14 states the residue as an unbounded existential, in one sentence that occurs once '
+          f'({p14.count(residue)}): "{residue}"',
+          p14.count(residue) == 1)
+    check(f'   and the register carries it that way too, in ITS OWN CELL rather than anywhere in the '
+          f'file ({len(_po_rows)} cell(s))',
+          len(_po_rows) == 1)
 
     # ---------------------------------------------------- (2) the bounding sentence, and its form
     dim = ('a Yang--Mills term in four dimensions carries a dimensionless coupling that a single '
@@ -157,9 +174,16 @@ def main():
     check('⓸ and P14\'s premise "a single length" is p0\'s ledger position, stated in another paper: '
           '"' + ledger + ' ... is the size of the universe in gauge-units---a number, not a tuning"',
           ledger in p0 and 'the size of the universe in gauge-units---a number, not a tuning' in p0)
-    check('   and p0 says WHY l_P is not a second length: the Planck units are "combinations of these '
-          'gauges, and \\emph{cross-register} ones"',
-          'are combinations of these gauges, and \\emph{cross-register} ones' in p0)
+    #: ⛭ and this arm's span began mid-sentence, at `are combinations`, with its SUBJECT outside it
+    #: and `\emph` markup inside it.  ** The subject is the whole point -- it is the Planck units
+    #: that are combinations -- so the span now starts there and the markup is normalised in the
+    #: reader. **
+    _CROSS = ('The traditional Planck length, mass, and time---$\\ell_P=\\sqrt{\\hbar G/c^3}$, '
+              '$m_P=\\sqrt{\\hbar c/G}$, $t_P=\\sqrt{\\hbar G/c^5}$---are combinations of these '
+              'gauges, and cross-register ones')
+    check(f'   and p0 says WHY l_P is not a second length, with the SUBJECT in the span and the '
+          f'clause occurring once ({p0.count(_CROSS)}): "{_CROSS}"',
+          p0.count(_CROSS) == 1)
 
     # ---------------------------------------------------- (4) the arithmetic
     print()
@@ -227,9 +251,14 @@ def main():
           'what a third mechanism must deliver is therefore a fixed pure number rather than a free '
           'parameter' in p14)
     # ** r6931+70.1: class (c), same rewording as ⓵ (43965df3): ", and naming" -> ", so naming". **
-    check('   ⚠ and the paragraph still DECLINES to close the row: "no third mechanism has been '
-          'named, so naming one remains open"',
-          'no third mechanism has been named, so naming one remains open' in p14)
+    #: ⛔ WITHDRAWN WITH ITS CASE (r7356): this arm pinned a FRAGMENT OF THE SENTENCE ⓵ already
+    #: pins whole, so the receipt held one claim on two keys and a rewrite of the sentence would
+    #: have owed two repairs.  ** The declining is asserted from the sentence ⓵ pins -- the same
+    #: words, read once -- rather than on a second key. **
+    check('   ⚠ and the paragraph still DECLINES to close the row, which is the TAIL of the very '
+          'sentence ⓵ pins -- read from that one key rather than pinned again',
+          residue.endswith('no third mechanism has been named, so naming one remains open.')
+          and p14.count(residue) == 1)
     check('   ⛭ and P14 now says this receipt\'s point itself, right after the residue: "What can be '
           'said about one before it is named is more than nothing, and it is the dimensional sentence '
           'just used, which mentions no route"',
