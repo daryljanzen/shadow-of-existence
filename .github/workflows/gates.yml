@@ -72,6 +72,14 @@ jobs:
           done
           if [ -n "$fails" ]; then echo "⛔ FAILED:$fails"; exit 1; fi
       - name: the text gates
+        # ⛔ r7371+70.2 (70): A RED REGEN STEP SKIPPED EVERY TEXT GATE.  Without an `if:`, this step runs
+        #   only on `success()`, so when `regen_grain_currency` went stale at `5d3d40b6` (15:38 UTC,
+        #   2026-10-15) the whole list below -- `check_quote_pins` among it -- stopped running on every
+        #   push, and `S55`'s and `S56`'s unadjudicated keys reached the trunk through a job that was red
+        #   for an unrelated reason.  r2692's lesson one level up: the step above collects its failures
+        #   so a first red hides none of the rest, and the step boundary hid them all.  Both steps now
+        #   run; the job still fails if either does.
+        if: success() || failure()
         # r3572 (60): check_compile is listed in BOTH jobs and only ONE of them has a
         # toolchain.  Here it has none, so its compile half is UNRUN -- and UNRUN is not a
         # pass, so the skip is DECLARED here, in writing, naming where the question IS
