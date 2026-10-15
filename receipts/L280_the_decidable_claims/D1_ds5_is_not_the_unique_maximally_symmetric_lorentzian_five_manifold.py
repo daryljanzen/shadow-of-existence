@@ -153,8 +153,11 @@ def main():
           len(rows) > 200)
     # ⚠ matched on markers that do not span a line wrap: the first form of this check searched
     #   for a phrase the source breaks across two lines, and failed on a file that says it.
+    _CANNOT = ('It cannot tell a TRUE claim from a false one, and it cannot tell a load-bearing '
+               'claim from a passing remark')
     dc_src = open(os.path.join(ROOT, 'corpus', 'decidable_claims.py'),
                   encoding='utf-8', errors='replace').read()
+    _dc_flat = re.sub(r'\s+', ' ', re.sub(r'\*+', ' ', dc_src))
     check('⓵ᵇ and it says so in its own head: it cannot tell a true claim from a false one, nor a '
           'load-bearing one from a passing remark',
           # ⛭ r7293+cc66: the `reading list` arm is repaired, and the repair is the one this
@@ -165,9 +168,16 @@ def main():
           #   wrap is to flatten the READER, never to shorten the span: shortening buys a match
           #   and loses the site. **  The other two arms are 69's DELIBERATE where this seat read
           #   REPAIR-OWED and are left for the gate to rule.
-          'WHAT IT CANNOT DO' in dc_src
-          and 'It produces a reading list' in re.sub(r'\s+', ' ', dc_src)
-          and 'load-bearing claim from a passing remark' in dc_src)
+          #: ⛭⛭ THE REPAIR (r7358 on `r7353` ②'s ORDER -- the queue's `L280_the_decidable_claims`
+          #: take).  ** Two of the three arms were a SECTION HEADING and a sentence FRAGMENT: the
+          #: heading says nothing about what the tool cannot do, and the fragment drops the subject
+          #: and the first of the two things it cannot tell. **  ⇒ One span, the tool's own sentence,
+          #: with both inabilities and the subject inside it -- flattened and de-emphasised in the
+          #: reader (`r7258`, as extended to markdown at `r7336`) so a re-emphasis cannot falsify a
+          #: sentence whose words did not change -- and asserted by membership beside its uniqueness
+          #: count so the key stays visible to the instrument (`r7356`).
+          _CANNOT in _dc_flat and _dc_flat.count(_CANNOT) == 1
+          and 'It produces a reading list' in re.sub(r'\s+', ' ', dc_src))
     check('⓵ᶜ ⌗ and the two prior findings it generalises came from reading, not counting: L-276 '
           'from one sentence, L-278 from following a field into an argument',
           os.path.isdir(os.path.join(ROOT, 'receipts', 'L276_the_representation_probe'))
