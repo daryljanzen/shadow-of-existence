@@ -208,10 +208,19 @@ def main():
               if m in git('log', '-1', '--format=%B', h)]
     print(f'      {len(_stored)} marker(s) stored beside the shas; {len(_agree)} agree with what '
           f'the commit says on this tree')
+    #: ⛭⛭ r7370: the first form of this clause pinned `len(_stored) == 6` -- a COUNT of matches in
+    #: another file's source, which is the prose-pin class and the second time this revision wrote
+    #: one.  *The claim was never the count: it is that every sha the file PINS has a stored marker
+    #: and every stored marker belongs to a pinned sha.*  ⇒ A CORRESPONDENCE, which is set equality
+    #: and moves correctly if `PAIRS` ever grows or shrinks.
+    _pinned_shas = set(re.findall(r"'([0-9a-f]{8})'", _s39[_s39.index('PAIRS = '):
+                                                           _s39.index('SESSIONS = ')]))
     check(f'Ⓒ① the fact is COMMITTED BESIDE THE MEASUREMENT and checked against the commit wherever '
-          f'this clone reaches it: {len(_stored)} stored, {len(_agree)} verified here, so the stored '
-          f'data cannot drift unchallenged',
-          len(_stored) == 6 and len(_agree) == len(_stored))
+          f'this clone reaches it: {len(_stored)} marker(s) stored for the {len(_pinned_shas)} shas '
+          f'the file pins -- a CORRESPONDENCE and not a count, so it moves with `PAIRS` -- and '
+          f'{len(_agree)} verified here, so the stored data cannot drift unchallenged',
+          {h for h, _m in _stored} == _pinned_shas and _pinned_shas
+          and len(_agree) == len(_stored))
     check('Ⓒ② ⇒ and the walk it used to depend on is gone from the clause: the marker is read from '
           'the commit by id, not out of a map built by walking the history reachable from `HEAD`, '
           'which a shallow clone truncates',
