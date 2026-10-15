@@ -17520,3 +17520,59 @@ emphasis-normalised paper, bound from the path per `L548`.*
 ⌗ **Verification:** *`rc=0`, `0` FAIL lines, re-run from scratch after each of the three corrections
 rather than once at the end. Extractor: `14` keys, all decided, no `UNDECIDED`, no annotation fault —
 and the `14` is itself the check that caught ⓷.*
+
+---
+
+## `r7355+cc66.6` — **`L267` CLOSES AND THE RECEIPT NOW CARRIES *NO QUOTE PINS AT ALL*: `6` ROWS → `0` KEYS, WHICH IS `r7353` ③'S "REPAIRED-AND-INVISIBLE" REACHED FROM THE DISPOSITION RATHER THAN BY ACCIDENT**
+
+**`landed`: `L267_the_sweep_that_did_not_run` `4` owed → `0`, and `6` ledger rows → `0` keys;
+`REPAIR-OWED` `113` → `109` (`137` → `109` this revision, six blocks). ⌗ `check_quote_pins` on the
+`L271` commit finished: **`rc=0` in `1045` s, no new key, no stale entry, all four ratchets holding**
+(`2287`, `249`, `60`, `102`). `remaining`: `109` owed; next `L263_the_station_audit` (`4`).**
+
+**⓵ `r7291+69` GAVE ALL FOUR ROWS THE SAME DIAGNOSIS AND IT IS EXACTLY RIGHT.** *"PROXY ⓐ on LIVE
+CODE … standing for the BEHAVIOUR the check claims; a behaviour-preserving refactor of a live
+instrument would red it, so the line exemption does not reach it even though the file has one
+commit."* ⇒ ***A string pin on `if red:` cannot be made admissible at any width:*** *rename the
+variable and the claim is untouched while the pin breaks.* ⛭ **So your `r7353` ③ is the disposition,
+and it fits without stretching: no pin is admissible, the repair is a structural assertion, the rows
+retire as repaired-and-invisible.** *Same repair `L255` took for its eight.*
+
+**⓶ ⛭ AND THE SEED THAT ALREADY EXISTED WAS DOING ONE OF THE FOUR JOBS UNASSERTED.** *`⓸ᵉ` runs
+`gate_sweep.py` in a temp tree holding exactly one gate — `check_seed_ok`, **a name no hand-carried
+list in this corpus could contain**. If the sweep runs it, the sweep **globbed**. It did, and its own
+report said `2 instrument(s) run`, and nothing asserted it.* ⌗ *So the glob row retires on a run that
+had been happening for revisions, and the second new seed re-proves it at a different arity (`3`, with
+`check_zz_glob_probe_never_listed`).*
+
+**⓷ THE THREE SEEDS NOBODY HAD WRITTEN, AND ALL THREE TUPLES ARE EXACT:**
+
+> `green` → **`(0, True, True, False)`** *— rc `0`, the pass line present, `3 instrument(s) run`, no
+> `RED`. **This is the direction `⓸ᵉ` never reached:** it only proved the pass line is withheld when
+> something is red. **A one-directional seed is how a gate comes to pass on everything**, so both
+> directions are now asserted.*
+> `node` → **`('ci', False)`** *— the gate was handed `ci`, with `NODE` **removed from the parent
+> environment first** (`False` records that it was no longer set). Otherwise the seed would be
+> measuring this shell rather than the default. The gate writes what it was given to a file, because
+> the sweep prints a gate's own output only for the generator.*
+> `timeout` → **`(1, True, True, True)`** *— rc `1`, `TIMEOUT` reported, `counts as RED` printed, no
+> pass line.*
+
+⛭ **The timeout seed required the same decision as `L255`'s, and it is written into the receipt:**
+*`TIMEOUT = 900` is a module constant, so sleeping past it would cost fifteen minutes a run. The seed
+copies the sweep with the cap at `1` s and sleeps `3`, because **what is under test is the `except
+subprocess.TimeoutExpired` branch and the RED classification, not the number**. The `re.subn` asserts
+it matched **exactly once**, and if the constant moves the seed records `'TIMEOUT constant not found'`
+rather than silently testing nothing.*
+
+**⓸ ⌗ AND TWO `DELIBERATE` ROWS RETIRE WITH THE FOUR, WHICH IS WORTH SAYING OUT LOUD.** *`"counts as
+RED"` and `"every gate green -- and this line is printed by the same run that measured them."` were
+the companion conjuncts of the pins I replaced, verdicted `DELIBERATE` — the wording IS the claim.
+Their keys are gone because the strings are gone.* ⇒ ***No ground is lost, and the ground is
+stronger:*** *the seeds assert those lines are **PRINTED in the right circumstance and withheld in the
+wrong one**, which strictly subsumes "the string exists in the source". A `DELIBERATE` row retiring
+into an executed seed is a ratchet turning the right way.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, all three tuples printed in the receipt's own output.
+**Extractor on the file: `0` quote-pin sites in `0` receipts** — so all six baseline rows were stale by
+construction and all six were removed, not four.*
