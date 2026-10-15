@@ -111,9 +111,20 @@ def main():
               '220' in blob and '294' in blob)
         check('and the likelihood separation: adiabatic chi^2 ~ 206 of 215 bins against isocurvature '
               '327,150', '206' in blob and ('327' in blob))
-        check('⇒ Delta chi^2 ~ 3.3e5, and NO AMPLITUDE RESCALING RESCUES IT because the peaks are in '
-              'the wrong place',
-              'rescal' in blob.lower() or 'wrong place, which is e' in blob.lower() or '3.3' in blob)
+        # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.
+        #   ** BOTH OWED ROWS WERE ARMS OF A VACUOUS THREE-WAY DISJUNCTION: `3.3`, which matches
+        #   almost any text that contains a decimal, and `rescal`, a case-folded word stem.  With
+        #   `3.3` in the disjunction the whole condition asserted almost nothing. **
+        #   ⇒ *** Replaced by the one sentence the other seat's receipt states the result in, which
+        #     carries the figure, the exclusion AND the reason -- so the arm that decides is the
+        #     claim and not a decimal point. ***
+        _DELTA = ('Delta chi^2 ~ 3.3e5 -- pure isocurvature is excluded overwhelmingly, and no '
+                  'amplitude rescaling rescues it because the PEAK POSITIONS are wrong')
+        _blob1 = re.sub(r'\s+', ' ', blob)
+        check('⇒ Delta chi^2 ~ 3.3e5, and NO AMPLITUDE RESCALING RESCUES IT because the peak '
+              "positions are wrong -- asserted as the other seat's own result sentence, in place "
+              'of a disjunction whose `3.3` arm matched almost any text',
+              _DELTA in _blob1)
 
     # ⓷ two independent supports
     check('⇒⇒ SO THE PREMISE HAS TWO INDEPENDENT SUPPORTS -- the DATA demands it and the CONSTRUCTION '

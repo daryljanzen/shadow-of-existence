@@ -121,23 +121,50 @@ def main():
     for k in ('isotropy-3', 'six of the nine', 'nine types'):
         check(f'⓵ F12 says P12 claims "{k}" -- it appears ZERO times across the papers',
               len(re.findall(re.escape(k), allp, re.I)) == 0)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.
+    #   ** THREE OWED ROWS HERE. ** The first was cut mid-parenthesis -- the label it quotes runs
+    #   to `Zipoy--Voorhees, dimension two)` and the pinned span stopped inside it, so it was not
+    #   the shortest span that carries the claim but a prefix of one.
     check('and P12\'s only "Bianchi" is a label on one stratum: "Type I (Bianchi, dimension three; '
-          'Zipoy--Voorhees, dimension two)"',
-          'Type I (Bianchi, dimension three' in p12)
+          'Zipoy--Voorhees, dimension two)" -- asserted as the whole parenthetical it is, in place '
+          'of a span cut inside it',
+          'Type I (Bianchi, dimension three; Zipoy--Voorhees, dimension two)' in p12)
 
     # ⓶ the real sentence
-    check('⛭⛭ ⓶ but P12 states: "The isotropy dimensions are the Killing-vector counts the construction '
-          'establishes~\\cite{JanzenRange}"',
-          'The isotropy dimensions are the Killing-vector counts the construction establishes' in p12
-          and 'JanzenRange' in p12)
-    check('and gives the triple: "the symmetric-pair isotropy dimensions of $\\so(5,1)$ are $\\{6,7,10\\}$"',
-          '\\{6,7,10\\}' in p12)
+    # ⛭⛭ r7338+60: ** the second owed row was the bare citation KEY `JanzenRange`, conjoined with
+    #   the sentence -- so the conjunction asserted `this sentence is present AND this key is
+    #   present somewhere in the paper`, which is not the claim that the sentence CITES it. **
+    #   ⇒ *One span carrying the sentence and its own citation.  The gate layer's normaliser does
+    #     not touch references, which is a stated limit, so this span is brittle to a citation-key
+    #     rename and not to a rewording -- the right way round for a claim about WHO is cited.*
+    _CITES = ('The isotropy dimensions are the Killing-vector counts the construction '
+              'establishes~\\cite{JanzenRange}')
+    check('⛭⛭ ⓶ but P12 states, citing the range paper in the same breath: "The isotropy dimensions '
+          'are the Killing-vector counts the construction establishes~\\cite{JanzenRange}" -- one '
+          'span, in place of a sentence conjoined with a bare citation key',
+          _CITES in p12)
+    # ⛭⛭ r7338+60: ** and the third was the bare formula `$\{6,7,10\}$`, which a markup rewording
+    #   keeping the content breaks and which says nothing about what the triple IS. **
+    #   ⇒ *Extended to the clause that names the dimensions AND which two the construction
+    #     occupies, over an EMPHASIS-ONLY normalised read -- `r7336`'s own rule case: the full
+    #     normaliser applied inside a receipt's reader mints no ledger key at all.*
+    _p12e = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p12)
+    _TRIPLE = ('the admissible symmetric-pair dimensions are $\\{6,7,10\\}$, and the construction occupi'
+               'es six and ten')
+    check('and gives the triple with what it occupies: "the admissible symmetric-pair dimensions '
+          'are $\\{6,7,10\\}$, and the construction occupies six and ten" -- asserted over an '
+          'emphasis-normalised read, in place of the bare formula',
+          _TRIPLE in _p12e)
     check('while P9 points BACK: "at every stratum for which the companion algebroid paper tabulates an '
           'isotropy ... it is in fact an equality~\\cite{JanzenAlgebroid}"',
           's stated as an inclusion, and at some strata it is in fact an equality.} At every stratum for which the companion algebroid paper tabulates an isotropy' in p9
           and 'JanzenAlgebroid' in p9)
-    check('⇒⇒ SO EACH CITES THE OTHER FOR THE SAME FACT',
-          'JanzenRange' in p12 and 'JanzenAlgebroid' in p9)
+    # ⛭ r7338+60: ** and the bare citation keys stood in a SECOND condition here too, which the
+    #   instrument reported as live once the first was repaired. **  ⇒ *Both sides now carry their
+    #   own citing clause, which is what `each cites the other` asserts.*
+    check('⇒⇒ SO EACH CITES THE OTHER FOR THE SAME FACT -- each side asserted by the clause that '
+          'carries its own citation, in place of two bare citation keys',
+          _CITES in p12 and 'the inclusion is an equality~\\cite{JanzenAlgebroid}' in p9)
 
     # ⓷ and the triple is in neither derivation
     check('⓷ and the triple is NOT in P9: "6,7,10" appears zero times there',

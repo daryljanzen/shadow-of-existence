@@ -110,10 +110,22 @@ def main():
     #   MEASURED here rather than characterised---quartic, at a leading constant fixed by the
     #   propagating-component count rather than assumed."
     #   ⇒ Prose moved, thesis intact and stronger, so the pin moves with it.
-    check('so that what remains open is "the standard problem of the interacting theory rather than '
-          'a residual freedom in the quantization"',
-          'a different thing from a residual freedom in the quantization' in p10
-          and 'does not settle it' in p10)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order, which sent
+    #   this seat through the part its own forward figure prices.  ** THE OWED ROW WAS `does not
+    #   settle it`: a LEADING-DANGLING span opening on a finite verb, standing at six sites across
+    #   four files -- a pin on the FILE and not on the claim -- conjoined with a second fragment of
+    #   the same sentence, so their co-occurrence IN A FILE stood for what one sentence says. **
+    #   ⇒ *** Replaced by the one sentence that carries both halves and the subject `That` refers
+    #     to, over a markup-normalised read (`r7258`'s form: the emphasis wraps the whole clause).
+    #     ONE site. ***
+    p10u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p10)
+    _NOT_SETTLED = ('That is a different thing from a residual freedom in the quantization, and its '
+                    'shared character with every interacting field theory does not settle it')
+    check('so that what remains open is the definition of the interacting tower: "That is a '
+          'different thing from a residual freedom in the quantization, and its shared character '
+          'with every interacting field theory does not settle it" -- asserted as the ONE sentence, '
+          'in place of two fragments of it conjoined over a file',
+          _NOT_SETTLED in p10u)
 
     # the per-fibre fact: applicability does not vary
     sub = [-5, -0.25, 0, 0.25, 0.7499]
@@ -138,8 +150,16 @@ def main():
           straddles(float('-inf'), float('inf')))
     # ** the source writes it in caps: "IT DOES NOT NEED A LOWER BOUND."  Matching case-sensitively
     # a phrase whose emphasis is the point is the smallest possible version of reading the surface. **
-    check("which is exactly P10's own receipt: 'IT DOES NOT NEED A LOWER BOUND'",
-          'not need a lower bound' in straddle.lower())
+    # ⛭⛭ r7338+60: ** AND THE SECOND OWED ROW WAS `not need a lower bound`, read CASE-FOLDED over
+    #   a whole receipt's source: a negator-stripped fragment that names nothing which does not need
+    #   the bound. **  *The receipt it reads writes the claim in capitals, as its own CLAIM line.*
+    #   ⇒ *** Replaced by that claim clause, case-sensitive and with its subject inside it, so the
+    #     check reads the proposition the other receipt asserts rather than four words of it. ***
+    _NO_FLOOR = 'THE DIRECT-INTEGRAL DECOMPOSITION OF THE COUPLED BOUNDARY OPERATOR NEEDS ONLY THAT THE SPECTRUM OF $\\\\hat\\\\Gamma$ MEET BOTH SIDES OF $3/4$. IT DOES NOT NEED A LOWER BOUND.'
+    check("which is exactly P10's own receipt, in its own CLAIM line: the decomposition needs only "
+          'that the spectrum meet both sides of 3/4, and IT DOES NOT NEED A LOWER BOUND -- asserted '
+          'case-sensitively as the whole claim, in place of a negator-stripped fragment',
+          _NO_FLOOR in straddle)
 
     # the re-weighting
     check('the straddle receipt distinguishes the LEADING-ORDER operator from the COMPLETE one',
@@ -149,8 +169,11 @@ def main():
     check('and L-165 records c54.129 as answering the COMPLETE one -- the cubic\'s apparent '
           'unboundedness is the truncation of pi^2/(1+lambda phi)',
           'TRUNCATION ARTEFACT' in arc and '1+\\lambda\\phi' in arc)
+    # ⛭ r7338+60: the same retired fragment stood in a SECOND condition of this receipt, which the
+    #   ledger instrument reported as a live key after the first was repaired -- so the repair is
+    #   carried to both sites rather than to the one the owed row named.
     check('⛭ ⇒ THE CLAUSE THAT WAS ANSWERED IS THE ONE THE CONSTRUCTION DOES NOT NEED',
-          'not need a lower bound' in straddle.lower() and 'TRUNCATION ARTEFACT' in arc)
+          _NO_FLOOR in straddle and 'TRUNCATION ARTEFACT' in arc)
     check('and the two that remain are named in the row: the UV definition of the tower sums, '
           'and the closed-form nonlinear Lambda>0 solution',
           'ultraviolet definition of the tower sums' in arc

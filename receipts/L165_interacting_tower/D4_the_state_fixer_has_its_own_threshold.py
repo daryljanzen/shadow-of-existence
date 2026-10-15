@@ -82,11 +82,32 @@ def main():
           'mode by mode"',
           'Thermal (Hartle--Hawking) regularity is Euclidean smoothness at the horizon mode by mode'
           in p10)
-    check('imposing a branch on each sub-threshold fibre, and asking nothing of the limit-point ones',
-          'on each sub-threshold fibre' in p10 and 'limit-point fibres' in p10)
-    check('with the surface gravity common to all: "belongs to the background horizon, not to the '
-          'graviton content, and so is common to every fibre"',
-          'and so is common to every fibre' in p10)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.  ** BOTH OWED
+    #   ROWS WERE LEADING-DANGLING SPANS of one long sentence: `on each sub-threshold fibre`, a bare
+    #   locative standing in for the claim its label makes, and `and so is common to every fibre`,
+    #   opening on a bare conjunction and naming nothing that is common. **
+    #   ⇒ *** Each check now asserts the clause ITS OWN claim is made of -- the mechanism clause
+    #     with the branch, the fibres and the period, and the parenthetical with the surface gravity
+    #     as its subject -- so the two claims stay two and neither is carried by a locative. ***
+    # ⌗ *and the span is written so that no PIECE of it is itself a substring of the paper: the
+    #   instrument keys each string literal, so a widened span split at word boundaries re-mints
+    #   the very fragments the repair retired.  Split mid-word, the concatenation asserts exactly
+    #   the same text and the ledger sees ONE key.*
+    _MECHANISM = ('across the direct integral it imposes the regular branch $x^{1/2+\\nu}$, $\\nu'
+                  '=\\sqrt{\\hat\\Gamma+\\tfrac14}$, on each sub-threshold fibre at the one hori'
+                  'zon period $\\beta=2\\pi\\alpha$ (the surface gravity $\\kappa=1/\\alpha$ belongs '
+                  'to the background horizon, not to the graviton content, and so is common to eve'
+                  'ry fibre), and asks nothing of the limit-point fibres')
+    _COMMON = ('the surface gravity $\\kappa=1/\\alpha$ belongs to the background horizon, not to '
+               'the graviton content, and so is common to every fibre')
+    check('imposing the regular branch on each sub-threshold fibre at the one horizon period, and '
+          'asking nothing of the limit-point ones -- asserted as the mechanism clause itself rather '
+          'than as a bare locative',
+          _MECHANISM in p10)
+    check('with the surface gravity common to all: "the surface gravity $\\kappa=1/\\alpha$ belongs '
+          'to the background horizon, not to the graviton content, and so is common to every '
+          'fibre" -- asserted with its own subject inside the span',
+          _COMMON in p10)
 
     # ⓶ the threshold
     for G, real in ((0.75, True), (0.25, True), (-0.24, True), (-0.26, False), (-5.0, False)):

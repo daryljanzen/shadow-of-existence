@@ -139,3 +139,37 @@ if __name__ == '__main__':
     for _r, _n in sorted(_b.items()):
         print(f'      {_n}  {_r}')
     print()
+
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+# THE RESULT, appended after the stride and read by the receipt.  ** The registration above is
+# untouched: no band, central or decisive fraction moves. **
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+RESULT.update({
+    # arm ⒜ -- receipts closed.  ⛔ OUTSIDE THE BAND, HIGH: the whole block closed, where the
+    #   registration's central was 11 of 19.  One of the two failures named in advance.
+    'A_CLOSED': 19,
+    # arm ⒝ -- the invisible share.  ⛔ OUTSIDE THE BAND, LOW.
+    'B_RETIRED': 59,
+    'B_INVISIBLE': 3,
+    # the three, named: all in one receipt, all SPELLINGS OF LIVE CODE, and all replaced by a
+    #   structural assertion parsed out of the module's own syntax tree, which mints no key.
+    'INVISIBLE_ROWS': (
+        ('receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py',
+         '(4/11)'),
+        ('receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py',
+         '3 nu'),
+        ('receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py',
+         'three neutrino'),
+    ),
+    'MINTED': 50,
+    # ⛭ the rule case this revision turned up, with its size: the instrument reports
+    #   document-matching fragments found INSIDE a receipt's own longer literals and labels, so a
+    #   repair that collapses fragments into one span still mints rows for the fragments it quotes.
+    # ⌗ one of the three was retired in the same push, once the repair was carried to the second
+    #   condition of its receipt and the fragment stopped being reported at all.
+    'EXTRACTS': 2,
+    'CASES': 1,
+    # ⌗ and two retired arms were DEAD: their literal is absent from the file the check reads, so
+    #   that arm of the disjunction could never have fired at all.
+    'DEAD_ARMS': 2,
+})

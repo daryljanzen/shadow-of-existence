@@ -80,15 +80,44 @@ def main():
     # and P16 forces the turnaround independently
     check('P16 sec:trev: the heating leg cannot fix a surviving abundance',
           'The heating leg' in p16 and 'cannot fix a surviving light-element abundance' in p16)
-    check('⇒ "the turnaround ... is the event that makes them"',
-          'it is the event that makes them' in p16)
-    check('⛭ SO THE SIGN OF THE SECOND FREE FUNCTION IS FIXED BY NUCLEOSYNTHESIS, not chosen',
-          'only a subsequent \\emph{cooling} pass through the window can' in p16
-          or 'only a subsequent' in p16)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.  ** FOUR OWED
+    #   ROWS. ** `it is the event that makes them` opens on a pronoun whose referent is outside it;
+    #   `only a subsequent \emph{cooling} pass through the window can` carries markup a re-emphasis
+    #   would break and names no subject, and it stood DISJOINED with `only a subsequent`, three
+    #   words that cannot carry anything -- so the weaker arm decided.
+    #   ⇒ *** The crossing clause is asserted with its own subject, and the cooling claim as the
+    #     whole sentence that names what cannot fix the abundance and what can, over a
+    #     markup-normalised read.  One site each. ***
+    _p16u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p16)
+    _CROSSING = ('The crossing from collapse to expansion is therefore not incidental to the '
+                 'abundances: it is the event that makes them')
+    _COOLING = ('The heating leg---the infall---cannot fix a surviving light-element abundance; '
+                'only a subsequent cooling pass through the window can')
+    check('⇒ "The crossing from collapse to expansion is therefore not incidental to the '
+          'abundances: it is the event that makes them" -- asserted with its own subject, in place '
+          'of a pronoun-led fragment',
+          _CROSSING in p16)
+    check('⛭ SO THE SIGN OF THE SECOND FREE FUNCTION IS FIXED BY NUCLEOSYNTHESIS, not chosen: "The '
+          'heating leg---the infall---cannot fix a surviving light-element abundance; only a '
+          'subsequent cooling pass through the window can" -- one sentence over a '
+          'markup-normalised read, in place of a markup-carrying span disjoined with three words',
+          _COOLING in _p16u)
 
     # the profile is a choice: P2's cycloid is E = -1/2 constant
-    check("P2 carries the cycloid r(z) = M(1 + cos z)",
-          'M(1+\\cos z)' in p2 or 'M\\left(1+\\cos z\\right)' in p2 or '1+\\cos z' in p2)
+    # ⛭⛭ r7338+60: ** and the fourth owed row was `1+\cos z`, a bare formula at FOUR sites in its
+    #   paper, as the last arm of a three-way spelling disjunction. **
+    #   ⇒ *One span: the paper's own statement of what the cycloid IS, with the arc and its two
+    #     endpoints named.  ONE site, one arm.*
+    _CYCLOID = ('The Schwarzschild interior, written in Lema\u00eetre--Tolman cycloid '
+                'coordinates~\\cite{Tolman1934,Bondi1947}, has areal radius $r(z) = M(1+\\cos z)$ '
+                'for $z \\in [0,\\pi]$, taking the horizon value $r=2M$ at $z=0$ and the standard '
+                '``singularity\'\' value $r=0$ at $z=\\pi$')
+    check('P2 carries the cycloid with its range and both endpoint values: "The Schwarzschild '
+          'interior, written in Lema\u00eetre--Tolman cycloid coordinates, has areal radius '
+          '$r(z) = M(1+\\cos z)$ for $z \\in [0,\\pi]$, taking the horizon value $r=2M$ at $z=0$ '
+          'and the standard singularity value $r=0$ at $z=\\pi$" -- asserted as that clause, in '
+          'place of a bare formula at four sites disjoined with two spellings of itself',
+          _CYCLOID in p2)
     z, Msym, eta = sp.symbols('z M eta', positive=True)
     lhs = Msym*(1 + sp.cos(z))
     rhs = (Msym/(-2*sp.Rational(-1, 2)))*(1 - sp.cos(eta))

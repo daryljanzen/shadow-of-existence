@@ -109,11 +109,35 @@ def main():
     #    positive on non-degenerate metrics).  This receipt's subject is whether the floor survives
     #    the cubic, and that question is sharpened rather than removed: P10's derivation is stated for
     #    the quadratic tower, so what the cubic does to it is exactly what this receipt tests. **
-    check('⓵ P10 does not ASSUME the floor and now derives it: "is not assumed here ... though it '
-          'does in fact follow"',
-          'is not assumed here' in p10 and 'w is not assumed here~\\rcpt{P10_the_straddle_does_not_need_a_floor}, though it does in fact follow' in p10)
-    check('and gives the leading order: "At leading order $\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$"',
-          'At leading order $\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$' in p10)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.  ** THE OWED
+    #   ROW WAS `is not assumed here`: a LEADING-DANGLING span opening on a finite verb, naming
+    #   nothing that is not assumed -- conjoined with an arm that began MID-WORD (`w is not assumed
+    #   here~...`), so two broken spans in one file stood for one clause. **
+    #   ⇒ *** Replaced by the one clause that names the subject (whether the complete operator is
+    #     bounded below), says it is not assumed, and carries the receipt citation and the `though
+    #     it does in fact follow` that the receipt's own thesis turns on.  ONE site. ***
+    _NOT_ASSUMED = ('whether the complete $\\hat\\Gamma$ is bounded below is not assumed '
+                    'here~\\rcpt{P10_the_straddle_does_not_need_a_floor}, though it does in fact '
+                    'follow')
+    check('⓵ P10 does not ASSUME the floor and now derives it: "whether the complete $\\hat\\Gamma$ '
+          'is bounded below is not assumed here, though it does in fact follow" -- asserted as the '
+          'whole clause with its subject and its citation, in place of a dangling fragment '
+          'conjoined with a mid-word one',
+          _NOT_ASSUMED in p10)
+    # ⛭⛭ r7338+60: ** TWO MORE OWED ROWS WERE TWO PIECES OF ONE SENTENCE -- the leading-order
+    #   identity, whose span opened on the locative `At leading order` and stated no subject for
+    #   the operator, and `\pi_n^2\phi_m/a^3$ in kind`, which was CLIPPED MID-TOKEN with the maths
+    #   delimiter dropped: a character window, not a word-aligned span. **
+    #   ⇒ *** One span carrying the leading-order identity AND what enters beside it at the same
+    #     inverse-square order, which is the pair the receipt's argument needs.  ONE site. ***
+    _LEADING = ('At leading order $\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$; but the cubic and higher self'
+                '-interactions enter at the same inverse-square order at the origin ($\\pi_n^2\\phi_m/a^3'
+                '$ in kind)')
+    check('and gives the leading order AND what enters beside it: "At leading order '
+          '$\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$; but the cubic and higher self-interactions '
+          'enter at the same inverse-square order at the origin ($\\pi_n^2\\phi_m/a^3$ in kind)" -- '
+          'one span, in place of a locative-led identity and a mid-token window',
+          _LEADING in p10)
     check('⛭⛭ and names what enters beyond it: "the cubic and higher self-interactions enter at the same '
           'inverse-square order at the origin ($\\pi_n^2\\phi_m/a^3$ in kind)"',
           'the cubic and higher self-interactions enter at the same inverse-square order at the origin'
@@ -137,10 +161,21 @@ def main():
           abs((gamma + 100.0 * (c + g3 * (-2.0 * c / g3))) - (gamma - c * 100.0)) < 1e-9)
 
     # ⓷ why the decomposition was built not to need it
-    check('⓷ and P10 built the decomposition not to need it: it "uses only that both sides of the '
-          'threshold are occupied, and not that the spectrum has a floor"',
-          'uses only that both sides of the threshold are occupied' in p10
-          and 'not that the spectrum has a floor' in p10)
+    # ⛭⛭ r7338+60: ** AND THE LAST TWO OWED ROWS WERE ALSO TWO PIECES OF ONE SENTENCE: a shortened
+    #   span standing at three sites across two files (the pin on the FILE), and a negator-stripped
+    #   fragment naming no subject. **
+    #   ⇒ *** One span: the leading-order spectrum, the sum-of-squares aside, and what the
+    #     decomposition uses INSTEAD of a floor -- the whole of what the receipt reasons from.
+    #     ONE site, and the same span this seat's own `S4` already asserts for the same clause. ***
+    _USES_ONLY = ('At leading order that spectrum is bounded below by $\\gamma$ and unbounded '
+                  'above---the operator is a sum of squares, displayed below---but the '
+                  'decomposition that follows uses only that both sides of the threshold are '
+                  'occupied, and not that the spectrum has a floor')
+    check('⓷ and P10 built the decomposition not to need it: "the decomposition that follows uses '
+          'only that both sides of the threshold are occupied, and not that the spectrum has a '
+          'floor" -- asserted as the one sentence it is a part of, in place of a shortened span at '
+          'three sites conjoined with a negator-stripped fragment',
+          _USES_ONLY in p10)
 
     print()
     if FAILED:
