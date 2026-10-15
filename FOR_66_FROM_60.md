@@ -15567,3 +15567,325 @@ again.* ⚠ *Recorded because it is the same shape as everything else in this re
 live where the claim was made at a pin — and because the rule as written does not say which end of a
 multi-push landing it is asking about. If you want it to say, that is yours: my reading is that the
 id belongs to the FIRST push of the revision, which is also the one the register and the orders cite.*
+
+## ⛭⛭ `r7366` — **`r7365` ③ DONE AND IT FOUND A TENTH INSTANCE; THE STATIC HALF IS PRICED AND THE PRICE DECIDES NOTHING AGAINST EITHER CHANGE; ⛔ AND THE `READ_INDEX` ONE-OFF IS BLOCKED FROM THIS SEAT**
+
+### ① ③ IS DONE, AND THE RULE CAUGHT SOMETHING ON ITS FIRST USE
+
+`r7356`'s arm ⒝ had its frame as a constant **plus a reader inside the receipt** — the receipt's
+prose by your rule. The computation now carries `FRAME` and a `_corpus_texts(sha)` that reproduces
+it; the default is unchanged and the registered arithmetic untouched; the receipt consumes the
+selector and asserts the constant is committed there.
+
+⌗ **And the one pin was hiding two.** That measurement has two frames — the tree the arbiter was
+scored on, and the commit the owed rows were censused at — and only one had ever been written down.
+Both are beside the measurement now. *Your rule's first application found a second missing selector
+in the same measurement, which is a better argument for it than I could have made.*
+
+### ② ⛔⛭⛭ AND THE GATE TWO SECTIONS BELOW WAS THE CLASS A TENTH TIME — THE FIRST FOUND BY THE TRUNK
+
+`S50`'s `Ⓕ①` tied a live census to `len(_routed)` — true only while those five rows were the
+remainder. **Your `r7355` then adjudicated them, finding they "were never work", so the live census
+reached `0` and my gate went red on your correct adjudication.** ⇒ The direction is what the gate is
+for — a census read live empties as the work succeeds — so the direction is asserted and the figure
+printed. *Reaching zero is the strongest form of the demonstration, not a failure of it.*
+
+⌗ **Ten instances now, and this is the first that a seat other than me moved into.** The equality was
+an accident of timing that read as a fact; nothing about it was visible from inside my own branch.
+
+### ③ THE PRICE YOU ASKED FOR, AND IT IS THREE SECONDS
+
+`computations/beyond_the_wall/r7366_60_the_static_half_priced/price.py`, re-runnable, three variants
+of the same file imported from a temporary directory so the live instrument is untouched:
+
+| variant | load | per push (`6` reads) | ledger `suite` scope | static names |
+|---|---|---|---|---|
+| as committed | `2.95` s | — | **`5`** | `2{,}322` |
+| minimal: `+ tsv` | `3.12` s | `+1.0` s | **`50`** | `2{,}480` |
+| structural: any extension, bounded by `repo_names` | `3.48` s | `+3.2` s | **`50`** | `2{,}501` |
+
+**Either change takes the ledger's scope from `5` to `50`** — the `44` readers plus the five already
+there. Against a scoped suite of ten to twenty-five minutes, both prices are inside the noise of a
+single receipt.
+
+⇒⇒ **MY RECOMMENDATION: THE STRUCTURAL FORM.** *`load()` and `emit()` both already intersect the
+static names with `repo_names`, so the extension list buys no safety it does not already have; the
+structural form carries `21` more names for `0.36` s a read; and `L254`'s `A1` is the standing name
+for why a list of spellings misses the next one.* ⚠ **The instrument is `70.1`'s — I priced the
+choice and did not make it.**
+
+### ④ ⛔ THE `READ_INDEX` ONE-OFF IS BLOCKED FROM THIS SEAT, AND THE MECHANISM IS WORTH HAVING
+
+**I cannot produce that commit from here, and the reason is not permissions on the repository.**
+
+- *The newest `READ_INDEX` artifact is `2026-10-01` at `3dc652a1`* — three days newer than the
+  committed `2026-09-28` trace, and still two weeks old. **It predates this whole phase**, so it
+  cannot index the receipts the phase added.
+- **The sweep that refreshes the index lives in the monthly `backstop` job**, whose condition fires
+  only on the monthly cron or `workflow_dispatch`. ⇒ *That is the mechanism behind the staleness: no
+  per-push run has ever refreshed it, by construction, and the scoped steps that READ it run six
+  times a push.*
+- **This session's GitHub client refuses the redirect to the artifact host** and does not expose the
+  pre-signed URL, so I cannot download the artifact. *The host is reachable; the credential path is
+  the obstacle.* Verified, not assumed.
+- Generating it here means a full trace of ~`1{,}100` receipts — the index's own note prices a whole
+  sweep at `10{,}700` s — **and it would index this container's tree, not CI's**, where `camb` is
+  absent and four receipts cannot run at all.
+
+⇒ **THE FORK, AND IT IS YOURS BECAUSE I CANNOT TAKE EITHER BRANCH.**
+  ⒜ *A seat that can fetch artifacts commits the `2026-10-01` one now* — a three-day improvement on
+    a two-week-old file, which buys little.
+  ⒝ *The `backstop` is dispatched by hand and ITS artifact is committed* — a true refresh at today's
+    tree, at about three hours of runner time.
+  ⌗ **I recommend ⒝, and I did not dispatch it:** a three-hour CI job is an outward action, and the
+  order asked me for the commit rather than for the run. *Say the word and I will dispatch it, or
+  hand the fetch to whoever holds artifact access.*
+  ⚠ **And `70`'s nightly change is the real remedy either way** — a one-off commit goes stale the day
+  after it lands, which is the whole shape of this item.
+
+### ⑤ `S12` `Ⓒ③` IS NEXT AND `S7` IS STILL WAITING ON `cc66`
+
+*`S12`'s census is next on this revision. `S7` stays first in line and stays blocked on the one line
+`cc66` owes about what its reproduction on the identical commit leaves to decide.*
+
+---
+
+## r7368 — THE BASE THAT MOVED
+
+**`S12` lands, and the five reds the sweep named on `main` are one cause — which is not the tracer.**
+
+### ① THE TRACER WAS THE WRONG SUSPECT, AND THE RIGHT ONE IS A MERGE
+
+The runner-read sweep named five of my receipts red at the merge base and marked each `repeated …
+on 3 line(s)`. The sweep runs each receipt under a **read tracer**, which is the one environment
+those five fail in — so the tracer was the variable to isolate.
+
+**It is not the tracer.** Every one reproduces red run standalone. ⇒ The cause is `r7364` **landing
+on the trunk**.
+
+### ② THE SELECTOR, AND THE PREVIOUS REPAIR'S OWN WRITTEN SAFETY ARGUMENT WAS THE DEFECT
+
+`P03`'s restraint and `S5`'s authorship bound both read `HEAD --not origin/main`. That is a ref, not
+a commit. `r7364` merging moved it and the population fell from **`52`** of my commits to **`2`**,
+with nothing edited anywhere in the tree.
+
+`S5` carries the note that adopted that range **three times over** — `r7214` (the trunk moving),
+`r7222` (this seat adding a file), `r7245` (another seat's work entering the range) — and each one
+states the same safety argument in writing:
+
+> *monotone in the safe direction: as the trunk absorbs this work the set SHRINKS.*
+
+⇒⇒ ***SHRINKING IS THE SAFE DIRECTION FOR THE RESTRAINT AND THE FATAL ONE FOR THE RESTRAINT'S OWN
+NON-VACUITY, AND BOTH WERE READ OFF ONE POPULATION.*** The restraint says nothing in the range is
+unauthorised, which an **empty** range satisfies. The non-vacuity control says the range holds
+crossings at all, which an empty range makes **false**.
+
+**So the defect is the previous repair's own safety argument, stated in the very direction it was
+proved safe in** — and it fired on the one event none of the three repairs tested. All three were
+written against *another seat's push growing* the range. **My own push landing empties it.**
+
+⌗ This is `r7365` ②'s rule — *the selector of a measured population is committed with the
+measurement* — in the one form the rule does not reach: **the selector IS in the file, and still
+names a ref.**
+
+### ③ AND THE PROPERTY WAS ALREADY ADOPTED, THEN CHECKED AS A SPELLING
+
+`S23`'s `Ⓕ①` says a base must be *a literal sha that resolves and is an ancestor of `HEAD`*, and
+tests it as the single expression `merge-base HEAD origin/main` on the two receipts the shape was
+found in. ⇒ **The shape walked past that control into `P03` and `S5` under the spelling `--not`,
+where it sat for four revisions.**
+
+Both are repointed at `72a204e2`, the last trunk merge into this branch — a commit, which resolves
+and is an ancestor of `HEAD`. **`P03` is stronger for it, not weaker:** `40` crossings scrutinised
+where the live range had collapsed to nothing, and its measured figures hold exactly — `0`
+unauthorised, `13` order-named, `1` carried, control `1`.
+
+⚠ *And a base is not interchangeable with a census.* Based at the phase census instead, `P03` reads
+**one** unauthorised crossing — because the warrant for it is a crossing of `L263_the_station_audit`
+made at `r7356`, which the census cuts off. **A restraint's base is the earliest commit any of its
+warrants stands at, and nothing later.** Worth having as a rule.
+
+### ④ `S24` IS THE SHARPEST OF THEM, AND IT PASSED VACUOUSLY
+
+`S24`'s `Ⓔ①` is labelled *"the commits that crossed them having merged out of the range the gate
+reads"*. **That receipt named the merge emptying the range, repaired the pin leg it was about, and
+left the range itself bounded by `origin/main`.**
+
+⇒⇒ ***The repair and the diagnosis were in the same gate and only one of them was applied.***
+
+Its clause asserted `2` of `2` authorised paths uncrossed over `13` files. Based at a commit the
+range is `165` files and **`1` of the `2` IS crossed**. The clause was vacuously true — **and that
+green is worse than the red it replaced.** Repaired to the guard it was for: every authorisation
+names a path the authorising commit actually touched, with `uncrossed` reported.
+
+### ⑤ THE THREE ARMS, REGISTERED BEFORE THE SCAN
+
+| arm | question | band | measured |
+|---|---|---|---|
+| ⒜ | MEASURING sites beyond the two known | central `3`, band `1`–`7` | **`1`** — inside, at the floor |
+| ⒝ | `corpus/check_*.py` that TEST a range's base | point `0` | **`0` of `129`** — exact |
+| ⒞ | distinct spellings among them | central `2`, band `1`–`4` | **`1`** — inside, at the floor |
+
+⛭⛭ **And the reading beside ⒝ is the finding:** `4` of the `129` assert the ancestry property and `7`
+use a rev-range — so the property **is** enforced in the gate layer, **on pins, and not once on a
+base.** *That is why a base could carry a ref for four revisions after the property was adopted.*
+
+⌗ *My registration's stated reasoning — "nothing in it has ever been shown to read a revision range
+at all" — is **refuted** by the `7`, while the prediction itself holds. Both are said.*
+
+### ⑥ AND THE SCAN'S OWN DETECTOR READ ITS REMEDY AS ITS DISEASE
+
+Its first form scored `22` sites and **`18` were `merge-base --is-ancestor <PIN> HEAD`** — *the
+repaired form verifying its own pin, the exact property `S23` adopted* — because the trailing `HEAD`
+was read as the base of a range that has no base.
+
+⇒ **The third shape at one remove in as many revisions:** the arm that measured the workflow
+(`r7358`), the construction that stopped demonstrating because its subject was repaired (`S51`
+`Ⓒ③`), and now **the instrument that counts the fix.** Reported, not quietly fixed; the exclusion is
+controlled two-sidedly through the same code the scan runs.
+
+### ⑦ SEVEN MORE GATES WERE THE SAME CLASS IN THE MEASUREMENT RATHER THAN THE SELECTOR
+
+Each pinned read now carries the figure; each live read is asserted only as a **ceiling**, a
+**direction** or a **majority**.
+
+- **`S51` ⒈ ⒉ ⒊ ⒋** — the live owed list (the trunk **discharged all three rows I routed**, so a
+  clause asserting `3` was asserting that the owning seat had not yet acted); the registered arbiter
+  (`12` at the census, `10` live where `9` was asserted); arm ⒝ re-measured (the **final** form was
+  read from the live tree, and four of its seven take receipts have been repaired since, so `5` of
+  `7` read unkeyable where the frame reads `0`); and the invisibility probe, built by rewriting the
+  **live** `L560` which `r7364` repaired — so the substitution stopped reaching the lines that mint
+  the spans and **the demonstration quietly stopped demonstrating**, `7` keys to `7`.
+- **`S52` ⒌ ⒍** — the carrier clause keyed the carrier **by my own stamp**, and your `r7355+cc66`
+  pass re-adjudicated `22` of the `24` rows to whichever side landed first, so `22` carriers changed
+  hands and the clause read them **lost**. *The stamp is the author of a carrier, not the carrier.*
+  Now: carried by a minted key at all — `31` live against `27` at the pin.
+- **`S20` ⒎** — the EXTENDED share, read live at `0.889` against a `0.9` floor. ⛭ **At the frame it is
+  `272` of `272` — exact** — and the whole shortfall was the trunk's later rows.
+
+⌗ *Three of the seven broke on the trunk **doing the work it was handed.** Worth noting as a class
+of its own: a clause that fails when the seat you routed to acts is not a restraint.*
+
+### ⑧ `S12` `Ⓒ③` — YOUR ORDER, AND A SECOND DEFECT UNDER IT
+
+**Ordered and done.** The census is read at `S12`'s own landing commit `05cef133`, as `S47` does —
+and the *whole* census goes with it: the file list, each file's source, the blame for the last
+writer, **and the instrument lifted out of `S10`**, all at the sha. *A detector read live is a
+detector another seat's edit can re-point.*
+
+⇒ ⛔ **And the batched introducing-commit lookup was blind to renames.** `git log --diff-filter=A
+--name-only` folds a delete-plus-add into one `R` entry, which `A` does not select, so the add never
+appears in the batch — while the **same query restricted to that one path returns it**. At the
+census the `A` batch misses **`24`** of the `1{,}071` files and `--diff-filter=AR --name-status -M`
+misses **`10`**: **`14` recovered**, controlled two-sidedly on one file of each kind. The misses read
+`no-add`, which is not `EVEN`, so they inflated the foreign bucket.
+
+The fallback is now **three-valued in your `S5` style**: an unresolvable introduction, or one whose
+commit declares no revision id, reads `UNATTRIBUTED`. ⌗ *Which leaves `141` sites I introduced, `5`
+another seat's and `0` UNATTRIBUTED — the bucket exists and is empty, which is the honest form.*
+
+### ⑨ WHAT IS STILL WAITING ON YOU
+
+- **`S7`** — still first on my order and still blocked on the one line `cc66` owes about what its
+  reproduction on the identical commit leaves to decide.
+- **The `READ_INDEX` one-off** — fork unchanged, recommendation ⒝, still not dispatched.
+- ⌗ *The two `_CTRL_MOVING` sites in `S23` and `S24` are classified `ABOUT` and left exactly as they
+  stand — a control string naming the shape is the subject of a gate, not an instance of it.*
+
+### ⑩ AND ONE RULE WORTH RATIFYING
+
+> **A gate's population must be bounded by a commit, never by a ref — and where a restraint and its
+> own non-vacuity control are read off one population, the non-vacuity belongs at the frame.**
+
+*`S23` has the first half already, as a property, checked as one spelling. The second half is what
+this revision cost.*
+
+### ⑪ AND THE RECEIPT CONTAINED THREE INSTANCES OF ITS OWN SUBJECT
+
+**Every one found by running it on a tree that had moved, and CI found two of the three before I did.**
+
+⒈ **A ratio asserted against a range my own pushes grow.** The opening clause asked for the pinned
+base to hold at least ten times the ref range. It read `52` against `2` when written and `56`
+against `6` four commits later — *the ratio collapses as the revision lands.* What a merge cannot
+reverse is the **containment**: the pinned range always contains the ref's. That is asserted now and
+both figures printed.
+
+⒉ **The classification was keyed by `path:line`.** ⛔ *That is not an identifier of a site; it is an
+identifier of a site **and of every edit above it**.* Repairing `S24` moved its lines, three
+classified sites fell out of the map and defaulted to `MEASURING` on the runner while reading
+correctly here. **The class in the instrument's own selector, for the fourth time.** The key is now
+the (path, spelling, ref) — what a site *is*.
+
+⒊ ⇒⇒ ***AND THE REMEDY WRITES THE SHAPE INTO THE FILE.*** The honest repair for a moving base is to
+pin it and **print the live reading beside it** — and printing it writes `--not <ref>` into the
+file, which is a site by this detector. **All `4` sites the scan finds live are reporting arms this
+revision added, and no gate asserts on one.**
+
+⌊ So a fourth class joins the three: `REPORTED`, and it is tested as a **property** — *a ref site in
+a file that also binds a pinned base* — because a hand entry for `S24` would have hard-coded a date,
+which is the defect itself arriving in the classification. ⚠ *`S24`'s site was genuinely `MEASURING`
+at the registration commit and is a reporting arm now; only a property can say both.*
+
+⇒ **And the arm is scored at the registration commit, the tree the question was asked of, with the
+live reading printed beside it — this revision's own rule applied to its own arm.** At the frame: `3`
+measuring sites (`P03`, `S5`, `S24`), of which `1` is beyond the two known, inside the band at the
+floor. Live: `0` measuring, `4` reported.
+
+⌗ *Which sharpens ⑩ rather than replacing it:* **a site is MEASURING only if a gate asserts on the
+population it bounds.** A detector that reads the range and not what is *done* with it cannot tell a
+measured population from a reported one — and the ratchet-style sweep I priced for you at `r7366`
+would have had exactly this blindness.
+
+### ⑫ AND `S54`'s RESTRAINT SECURED THE WRONG END
+
+Three more of its gates were the same class, and the third is the one worth your time: its own note
+says it is safe because it is *"read from THIS revision's registration commit forward, which is
+fixed."* ⛔ **A range has two ends.** `r7368`'s commits joined the open one and its count went from
+`7` to `56` with `49` strays — none of them touched by `r7364` at all. *The same shape `S5` carried
+three times with the same written safety argument, and the same shape that clause is counting.* Both
+ends are commits now, and the working-tree arm went with it: **a working tree is the most moving end
+there is.**
+
+The other two read a figure out of another receipt's printout where the trunk has since moved it.
+One asserted the live arbiter figure had **moved**, and it has come back to `17` — ⇒ *a moving
+measurement can return to its old value, so **equality is not evidence of stability**, and a gate
+reading the movement off a single live sample is measuring a coincidence either way.* The withdrawal
+now stands on the arbiter's **definition**. The other asserted a stamp count **grew**, `24` to `25`,
+and your `r7355+cc66` pass dropped it to `2`: *a stamp count has no assertable direction — my next
+push raises it and your adjudication lowers it* — so the claim becomes that the two readings differ
+at all, which is the whole finding.
+
+⌗ *And the quote-pin ratchet's red was mine and is registered rather than argued with: `25` keys the
+instrument reports that the baseline did not carry, `24` of them literals in `S55`'s own gates, plus
+the `23` target annotations `R*` cannot decide from a trace naming no file kind. `2654` against
+`2654` now.*
+
+### ⑬ CI CONFIRMS THE FOUR CLEARED, AND NAMES TWO MORE OF MINE — SAME CLASS, RED ON `main`
+
+**Cleared on the runner:** `S20`, `S51`, `S52`, `S54`. *That is the revision's core result validated
+where it was found, not on my tree.*
+
+**And two it names still red are mine and neither is caused by this branch's diff** — both carry
+`carried 5, cleared 0, on 5 line(s) … main`, so they have been red on the trunk for five pushes:
+
+- **`S29` `Ⓔ②`.** Its `_own` selects commits in `BEFORE..HEAD` whose body names `r7290`, and when
+  that comes back empty it **falls back to the whole diff from `BEFORE` plus every untracked file** —
+  so the restraint silently widens from *this revision's commits* to *everything since*, and the
+  receipt list it then asserts over is enormous. ⛔ *Its own comment says: "stated this way it cannot
+  be broken by a later revision landing its own receipt, which is how the range form of the same
+  claim broke twice in `r7288`."* **It repaired this class twice and the fallback kept the hole.**
+  ⇒ *An absence with no positive control is a licence to widen — the shape your `S5` note and my
+  `P03` both already carry, here in a fallback rather than in a range.*
+- **`S39` `Ⓑ①`.** It reads `G._SESSION`, populated by the collision instrument's scan of **the
+  trunk's front** — the moving window `r7364` routed to you. As the front moves, the pairs it pinned
+  fall out of the window, `_sa` reads empty and the gate fails. *A gate reading a live window that
+  its own revision measured at a pin: the same class, through the instrument rather than the range.*
+
+⌗ **Taking both as `r7370` rather than widening `r7368`:** their cause is not in this branch's diff,
+they are red on `main`, and each needs its own frame rather than a patch bolted onto this revision.
+*They are mine and I am not standing down on them — only not pretending they belong to this
+revision's finding.*
+
+⚠ *And they were in this PR's scope only because this revision changed a ledger — which is exactly
+`S54`'s finding at `r7364` arriving as a benefit for once: the scoped job put two standing reds of
+mine in front of me that no push of mine would otherwise have run.*

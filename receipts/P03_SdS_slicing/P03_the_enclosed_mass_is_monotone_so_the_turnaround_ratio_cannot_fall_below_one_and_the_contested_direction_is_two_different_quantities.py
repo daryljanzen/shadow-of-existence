@@ -408,14 +408,47 @@ assert _own_sess, (
     'the introducing commit of ' + _SELF_REL + ' carries no Claude-Session marker: the ownership '
     'filter below would widen to every seat, so this fails here instead of passing wider')
 _own_sess = _own_sess.group(1)
-_MINE_C = []
-for _blk in _git('log', '--no-merges', '--format=%H%x00%B%x01',
-                 'HEAD', '--not', 'origin/main').split('\x01'):
-    if '\x00' in _blk:
-        _sha, _body = _blk.split('\x00', 1)
-        _m = _SESS.search(_body)
-        if _m and _m.group(1) == _own_sess:
-            _MINE_C.append(_sha.strip())
+#: ⛔⛭⛭⛭ r7368 (60): AND THE PREVIOUS REPAIR'S OWN WRITTEN SAFETY ARGUMENT WAS THE DEFECT.
+#   *`S5` carries this same range and the note that adopted it three times over -- `r7214`, `r7222`,
+#   `r7245` -- each time with the same safety argument in writing: ** "monotone in the safe
+#   direction: as the trunk absorbs this work the set SHRINKS." **  Shrinking IS the safe direction
+#   for the RESTRAINT, whose claim is that nothing in the range is unauthorised and which an empty
+#   range satisfies.  It is FATAL for the restraint's own NON-VACUITY, which is the one clause an
+#   empty range makes false -- and both were read off ONE population.*
+#   ⇒ *** `origin/main` is a selector that is not committed with the measurement: `r7365` ②'s rule
+#       in the one spelling the rule did not cover, since the selector IS in the file and still
+#       names a ref.  `S23`'s `Ⓕ①` had already adopted the property -- a base must be a literal sha
+#       that resolves and is an ancestor of `HEAD` -- and checked it as the single expression
+#       `merge-base HEAD origin/main` on the two receipts it was found in.  The shape walked past
+#       that control into this file and `S5` under `--not`. ***
+#   ⇒⇒ ** And it did not fail until THIS SEAT'S OWN WORK MERGED, which is the one event none of the
+#      three earlier repairs tested: another seat's push GROWS the range, and the three repairs were
+#      all written against growth.  My own push LANDING empties it. **
+#   ⌊ *The population is this branch's own run, based at the LAST TRUNK MERGE INTO IT -- a commit,
+#     not a ref, so it is stable whoever merges what afterwards.  It is the same set the figures were
+#     measured over, now named by what it IS; the live range is REPORTED below, never asserted.*
+#   ⚠ *And the base is not interchangeable with the phase's census: based at the census this gate
+#     reads ONE unauthorised crossing, because the warrant for it is a crossing of
+#     `L263_the_station_audit` made at `r7356`, which the census cuts off.  **A restraint's base is
+#     the earliest commit any of its warrants stands at, and nothing later.** *
+BASE = '72a204e2'       # the last trunk merge into this branch: a fixed sha, ancestor of HEAD
+
+
+def _mine_since(_base):
+    """this seat's own commits since `_base`, by the session marker on the introducing commit"""
+    _out = []
+    for _blk in _git('log', '--no-merges', '--format=%H%x00%B%x01',
+                     'HEAD', '--not', _base).split('\x01'):
+        if '\x00' in _blk:
+            _sha, _body = _blk.split('\x00', 1)
+            _m = _SESS.search(_body)
+            if _m and _m.group(1) == _own_sess:
+                _out.append(_sha.strip())
+    return _out
+
+
+_MINE_C = _mine_since(BASE)
+_MINE_LIVE = _mine_since('origin/main')
 _touched = [l for c in _MINE_C
             for l in _git('show', '--no-merges', '--name-only', '--format=',
                           c).split('\n') if l]
@@ -652,6 +685,10 @@ _positional = sorted({c for c in _MINE_C
                       and any(q in _BYC[c] and not _announced(q) for q in _unauth)})
 print(f"      with this branch as it stands: {len(_real)} UNAUTHORISED modified unowned receipt(s) "
       f"({len(_unauth)} crossed in all, {len(_AUTHORISED)} of them ordered)")
+print(f"      ⌗ and the range a MOVING base would have given: {len(_MINE_LIVE)} of these "
+      f"{len(_MINE_C)} commit(s) are not yet on the trunk, so `HEAD --not origin/main` scrutinises "
+      f"{len(_MINE_LIVE)} and this clause scrutinises {len(_MINE_C)} -- REPORTED, and the reason "
+      f"the base is a commit")
 for _q, _v in sorted(_AUTHORISED.items()):
     print(f"        ⌗ ordered: {_q.split('/')[-1][:52]} -- {_v[0][:58]}\n"
           f"            {'crossed on this branch' if _q in _unauth else 'crossed at ' + _v[1]}"

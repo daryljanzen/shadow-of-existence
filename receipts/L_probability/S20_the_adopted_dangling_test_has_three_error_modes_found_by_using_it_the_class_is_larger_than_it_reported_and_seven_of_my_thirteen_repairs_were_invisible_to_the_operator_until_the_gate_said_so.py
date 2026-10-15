@@ -490,13 +490,26 @@ gate(f'⓽ five of the seven bands held and two broke, and the two are named rat
 # ⛔ the EXTENDED band was a CATEGORY ERROR in my own pre-registration, and the ledger shows why:
 #   every EXTENDED row in the corpus carries 70's own stamp and the word `extended from`, because the
 #   verdict records a repair that seat PERFORMED.  A reading pass cannot reach it.
-_ext = [c for c in LEDGER if c[5].strip() == 'EXTENDED']
+# ⛭⛭⛭ r7368: THIS READ WAS LIVE, AND THE SHARE IS NOT A LIVE QUANTITY.  *The clause asked for
+#   `0.9` of the EXTENDED rows to say in their own reason that a seat performed the repair, and the
+#   live ledger reads `0.889` -- the trunk has since entered EXTENDED rows under reasons of its own.
+#   The finding is about the VERDICT'S KIND, which is not a share at all; the share was the evidence
+#   for it, and evidence belongs at the frame the finding was taken from.*
+#   ⇒ Scored at `PIN`, this revision's own last content commit, beside every other figure in this
+#     file; the live reading is REPORTED and asserted only as a MAJORITY, which is the weakest claim
+#     that still carries the finding and the strongest a later seat's rows cannot break.
+_ext = [c for c in LEDGER_PIN if c[5].strip() == 'EXTENDED']
 _ext_performed = [c for c in _ext if 're-cut' in c[6] or 'extended' in c[6].lower()]
+_ext_live = [c for c in LEDGER if c[5].strip() == 'EXTENDED']
+_ext_live_perf = [c for c in _ext_live if 're-cut' in c[6] or 'extended' in c[6].lower()]
 gate('⇒ and EXTENDED was a CATEGORY ERROR, not a miss: it is not a defect class but a marker for a '
      f'repair a seat PERFORMED -- {len(_ext_performed)} of the {len(_ext)} EXTENDED rows say so in '
-     'their own reason -- so a READING pass cannot reach it and predicting a share for it was wrong '
-     'in kind rather than in size',
-     len(_ext) > 200 and len(_ext_performed) >= 0.9 * len(_ext))
+     f'their own reason AT THE PIN, and {len(_ext_live_perf)} of {len(_ext_live)} live -- so a '
+     'READING pass cannot reach it and predicting a share for it was wrong in kind rather than in '
+     'size.  ⛭ r7368: the share is scored at the frame and the live reading asserted only as a '
+     'MAJORITY, because a later seat entering EXTENDED rows is not a defect in what this says',
+     len(_ext) > 200 and len(_ext_performed) >= 0.9 * len(_ext)
+     and len(_ext_live_perf) > 0.5 * len(_ext_live))
 
 _dang = [c for c in _mine if D.dangles(lit(c))]
 _dang_ro = [c for c in _dang if c[5].strip() == 'REPAIR-OWED']

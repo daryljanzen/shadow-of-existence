@@ -63,10 +63,27 @@ def git(*a):
                           errors='replace').stdout
 
 
+# ⛔⛭⛭⛭ r7368, ON `66`'s ORDER: ** THE WHOLE CENSUS IS READ AT THIS RECEIPT'S OWN LANDING COMMIT, **
+#   as `S47` reads its tail.  *Every figure in this file was a LIVE read -- the file list, each
+#   file's source, `git blame` for the last writer, and the instrument lifted out of `S10` -- so a
+#   receipt this seat does not own changing anywhere under `receipts/` moved this receipt's census,
+#   and `Ⓒ③`'s `_exp_foreign` arm went red for exactly that.*
+#   ⇒ *** A scope measured over a tree is a measurement OF that tree at a commit.  Pinned, the whole
+#       of sections A-D is re-runnable; the live tree is REPORTED at the end and asserted nowhere. ***
+CENSUS = '05cef133'     # this receipt's own landing commit: a fixed sha, ancestor of HEAD
+
+
+def show(sha, rel):
+    return git('show', f'{sha}:{rel}')
+
+
 # ============================================================ the instrument, lifted from r7240
-S10 = [p for p in git('ls-files', 'receipts/L_probability/').split('\n')
+#: ⛭ the instrument is lifted AT THE CENSUS too: a detector read live is a detector another seat's
+#: edit can re-point, and then the census moves with no change to this file.
+S10 = [p for p in git('ls-tree', '-r', '--name-only', CENSUS,
+                      'receipts/L_probability/').split('\n')
        if os.path.basename(p).startswith('S10_')][0]
-_s10 = open(os.path.join(ROOT, S10), encoding='utf-8').read()
+_s10 = show(CENSUS, S10)
 _keep = {'detect', 'grounds_of', 'ground', 'in_claim', '_tg', '_reaches', 'pinned_names'}
 _body = [n for n in ast.parse(_s10).body
          if (isinstance(n, ast.Assign) and any(getattr(x, 'id', '') in
@@ -85,7 +102,14 @@ NO_EDIT = ('receipts/L256', 'receipts/L257', 'receipts/L259', 'receipts/L_probab
            'receipts/L_probability/C1', 'receipts/L_numerics/Q1')
 
 
-def listed(pre):
+def listed(pre, sha=CENSUS):
+    """the `.py` files under `pre` AS THE TREE STOOD AT `sha` -- no untracked arm, because an
+    untracked file is not a state any later reader can reproduce."""
+    return sorted({x for x in git('ls-tree', '-r', '--name-only', sha, pre).split('\n')
+                   if x.endswith('.py')})
+
+
+def listed_live(pre):
     a = git('ls-files', pre).split('\n')
     b = git('ls-files', '--others', '--exclude-standard', pre).split('\n')
     return sorted({x for x in a + b if x.endswith('.py')})
@@ -99,13 +123,17 @@ def no_edit(rel):
     return rel.startswith(NO_EDIT)
 
 
-def claim_sites(rels):
+def claim_sites(rels, sha=CENSUS):
     out = []
     for rel in rels:
-        try:
-            s = open(os.path.join(ROOT, rel), encoding='utf-8').read()
-        except OSError:
+        s = show(sha, rel) if sha else None
+        if sha and not s.strip():
             continue
+        if not sha:
+            try:
+                s = open(os.path.join(ROOT, rel), encoding='utf-8').read()
+            except OSError:
+                continue
         h = detect(s)
         if not h:
             continue
@@ -117,7 +145,7 @@ def claim_sites(rels):
     return out
 
 
-def last_writers(sites):
+def last_writers(sites, sha=CENSUS):
     byfile = collections.defaultdict(set)
     for rel, l, *_ in sites:
         byfile[rel].add(l)
@@ -125,7 +153,8 @@ def last_writers(sites):
     for rel, lines in byfile.items():
         sha = ln = None
         info = {}
-        for row in git('blame', '--line-porcelain', '--', rel).split('\n'):
+        for row in git('blame', '--line-porcelain', *( (sha,) if sha else () ),
+                       '--', rel).split('\n'):
             p = row.split()
             if len(p) >= 3 and len(p[0]) == 40 and all(c in '0123456789abcdef' for c in p[0]):
                 sha, ln = p[0], int(p[2])
@@ -273,26 +302,52 @@ gate('Ⓑ③ and the `2` false positives this seat`s own repair manufactured are
 # ============================================================ C. the obligation it creates
 head('C.  WHERE THE THIRTY ACTUALLY ARE, AND THE EDITING CONFLICT PRICED AT ITS REAL SIZE')
 
+# ⛔⛭⛭⛭ r7368: ** THE BATCHED INTRODUCING-COMMIT LOOKUP MISSED EVERY FILE THAT REACHED ITS CURRENT
+#   PATH BY A RENAME. **  *`git log --diff-filter=A --name-only` folds a delete-plus-add into one `R`
+#   entry, which `A` does not select, so the add never appears in the batch -- while the SAME query
+#   restricted to that one path returns it.  The misses read `no-add`, which is not `EVEN`, so they
+#   landed in `_exp_foreign` and inflated it.*
+#   ⌈ *Measured at the census: `S51` is one of them, renamed at `r7358` from
+#     `...the_uniqueness_arm_lands_in_band...`; `10` files under `receipts/` were missing in all.*
+#   ⌊ *Repaired with `--diff-filter=AR --name-status -M`, taking the DESTINATION path of an `R` and
+#     the path of an `A`.  ⇒ And the fallback is made THREE-VALUED in `S5`'s style: a path whose
+#     introduction cannot be resolved, or whose introducing commit declares no revision id, reads
+#     `UNATTRIBUTED` and is counted as neither this seat's nor another's -- because an absence with
+#     no positive ground is the shape this stretch has been working, and reading it as `another
+#     seat's` is the unsafe direction.*
 _add, _cur = {}, None
-for row in git('log', '--diff-filter=A', '--name-only', '--format=@@%h|%s', '--',
-               'receipts/').split('\n'):
+for row in git('log', '--diff-filter=AR', '--name-status', '-M', '--format=@@%h|%s', CENSUS,
+               '--', 'receipts/').split('\n'):
     if row.startswith('@@'):
         _cur = row[2:]
     elif row.strip() and _cur:
-        _add[row.strip()] = _cur       # the LAST seen is the earliest in log order
+        _f = row.split('\t')
+        if _f[0].startswith('R') and len(_f) >= 3:
+            _add[_f[2].strip()] = _cur     # a rename: the DESTINATION path is where the file is
+        elif _f[0].startswith('A') and len(_f) >= 2:
+            _add[_f[1].strip()] = _cur
+        # the LAST seen is the earliest in log order
 
 
 def intro_parity(rel):
+    """EVEN / ODD where the introducing commit declares a revision id, else UNATTRIBUTED."""
     rec = _add.get(rel)
-    return parity(rec.split('|', 1)[1]) if rec else 'no-add'
+    if rec is None:
+        return 'UNATTRIBUTED'
+    _p = parity(rec.split('|', 1)[1])
+    return 'UNATTRIBUTED' if _p == 'no-rev' else _p
 
 
-_foreign_file = [s for s in MINE if intro_parity(s[0]) != 'EVEN']
+_foreign_file = [s for s in MINE if intro_parity(s[0]) == 'ODD']
+_unattr_file = [s for s in MINE if intro_parity(s[0]) == 'UNATTRIBUTED']
 _noedit = [s for s in MINE if no_edit(s[0])]
-_exp_foreign = [s for s in _me if intro_parity(s[0]) != 'EVEN']
+_exp_foreign = [s for s in _me if intro_parity(s[0]) == 'ODD']
+_exp_unattr = [s for s in _me if intro_parity(s[0]) == 'UNATTRIBUTED']
 _exp_noedit = [s for s in _me if no_edit(s[0])]
-print(f"      owned sites in files this seat itself INTRODUCED: {len(MINE) - len(_foreign_file)};  "
-      f"in files another seat introduced: {len(_foreign_file)}")
+print(f"      owned sites in files this seat itself INTRODUCED: "
+      f"{len(MINE) - len(_foreign_file) - len(_unattr_file)};  in files another seat introduced: "
+      f"{len(_foreign_file)};  UNATTRIBUTED (no resolvable introduction, or no revision id on it): "
+      f"{len(_unattr_file)}")
 print(f"      owned sites on the explicit do-not-edit list: {len(_noedit)};  of those EXPOSED: "
       f"{len(_exp_noedit)}")
 for s in _foreign_file:

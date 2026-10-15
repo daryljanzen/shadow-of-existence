@@ -343,21 +343,43 @@ def crossed_at(q, sha):
     return q in _git('show', '--no-merges', '--name-only', '--format=', sha).split('\n')
 
 
+# ⛔⛭⛭⛭ r7368: ** AND THIS GATE WAS PASSING FOR THE REASON IT ITSELF NAMED. **  *Its label reads
+#   "the commits that crossed them having merged out of the range the gate reads" -- so this receipt
+#   DIAGNOSED the merge emptying the range, repaired the PIN leg it was about, and left the range
+#   bounded by `origin/main`.  The repair and the diagnosis were in the same gate and only one of
+#   them was applied.*
+#   ⌈ *Measured: `HEAD --not origin/main` is 3 commits touching 6 files, and `2` of `2` authorised
+#     paths read uncrossed.  Based at the last trunk merge into this branch it is 158 commits over
+#     163 files, and `1` of the `2` IS crossed here.  ** The clause was vacuously true. **  Its red
+#     at `r7245` and its green now have the same cause, and the green is the worse of the two.*
+#   ⌊ *The base becomes a commit; `uncrossed` becomes a REPORTED figure, since whether an authorised
+#     path happens to be crossed on a given branch is not a property of the guard; and the clause
+#     asserts what the guard is FOR -- that every authorisation names a path the authorising commit
+#     actually touched, which is the leg `Ⓔ②` controls from the other side.*
+BASE = '72a204e2'        # the last trunk merge into this branch: a fixed sha, ancestor of HEAD
 _this_branch = set(_f for _c in _git('log', '--no-merges', '--format=%H', 'HEAD',
-                                     '--not', 'origin/main').split()
+                                     '--not', BASE).split()
                    for _f in _git('show', '--no-merges', '--name-only', '--format=', _c).split('\n')
                    if _f)
+_this_branch_live = set(_f for _c in _git('log', '--no-merges', '--format=%H', 'HEAD',
+                                          '--not', 'origin/main').split()
+                        for _f in _git('show', '--no-merges', '--name-only', '--format=',
+                                       _c).split('\n') if _f)
 _uncrossed = [_q for _q in _AUTH_SHAS if _q not in _this_branch]
 _pins_hold = [_q for _q in _AUTH_SHAS if crossed_at(_q, _AUTH_SHAS[_q])]
-print(f'      authorisations: {len(_AUTH_SHAS)};  uncrossed on this branch {len(_uncrossed)};  '
-      f'pins that hold {len(_pins_hold)}')
-gate(f'Ⓔ① ⛔⛭⛭ the live-only form of the anti-blanket guard was RED on this branch and the pinned '
-     f'form is green: `{len(_uncrossed)}` of `{len(_AUTH_SHAS)}` authorised paths are not crossed '
-     f'here at all --- the commits that crossed them having merged out of the range the gate reads '
-     f'--- while `{len(_pins_hold)}` of `{len(_AUTH_SHAS)}` pins hold at the commit that MADE the '
-     f'crossing.  ** An authorisation is a historical fact about a commit, so it is pinned at that '
-     f'commit: `L-249` for the third time this stretch **',
-     len(_uncrossed) == len(_AUTH_SHAS) and len(_pins_hold) == len(_AUTH_SHAS))
+print(f'      authorisations: {len(_AUTH_SHAS)};  pins that hold at the authorising commit '
+      f'{len(_pins_hold)};  uncrossed on this branch {len(_uncrossed)} -- REPORTED')
+print(f'      the range, both ways: {len(_this_branch)} file(s) based at {BASE}, a commit; '
+      f'{len(_this_branch_live)} based at `origin/main`, a ref that this seat\'s own work landing '
+      f'empties -- and the second is what this gate was reading when it passed')
+gate(f'Ⓔ① ⛔⛭⛭⛭ r7368: the guard is asserted as what it is FOR and not as an accident of the range: '
+     f'all `{len(_pins_hold)}` of `{len(_AUTH_SHAS)}` authorisations name a path the AUTHORISING '
+     f'COMMIT ACTUALLY TOUCHED, so an entry naming a path nobody ever crossed is a blanket and is '
+     f'caught.  ** An authorisation is a historical fact about a commit, so it is pinned at that '
+     f'commit: `L-249` for the third time this stretch. **  ⌗ *`{len(_uncrossed)}` of them is '
+     f'uncrossed on this branch, REPORTED -- the first form asserted `{len(_AUTH_SHAS)}` of '
+     f'`{len(_AUTH_SHAS)}` and was true only because `origin/main` had absorbed the crossings*',
+     len(_pins_hold) == len(_AUTH_SHAS) and len(_this_branch) > len(_this_branch_live))
 
 gate('Ⓔ② ✔⛭ and the pin is not a rubber stamp: THIS receipt\'s own path fails it at both authorising '
      'commits, so an entry naming a path nobody ever crossed is still a blanket and the guard still '

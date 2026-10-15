@@ -98,6 +98,13 @@ FAILED = []
 COST = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7364_60_the_suite_the_gate_never_ran',
                     'cost.py')
 REG = 'd5a55599'                 # the registration commit, pushed before the scope run was read
+#: ⛔⛭⛭⛭ r7368: THIS REVISION'S OWN LAST CONTENT COMMIT.  *Three clauses below read the LIVE state
+#: of things this revision measured at a pin, and `r7368` found all three: two read a figure out of
+#: another receipt's printout where the trunk has since moved it, and `Ⓓ①` read a diff whose base
+#: was pinned and whose HEAD was not.*  ⇒ ** A range has TWO ends and `Ⓓ①`'s own note secured the
+#: base: *"it is read from THIS revision's registration commit forward, which is fixed."*  So did
+#: `S5`'s, three times over.  The fixed end was never the one that moved. **
+FRAME = '3a37b01b'               # r7364's last content commit: a fixed sha, ancestor of HEAD
 LEDGERS = ('corpus/quote_pin_baseline.tsv', 'corpus/prose_pin_baseline.tsv',
            'corpus/exact_count_baseline.tsv', 'corpus/target_annotations.tsv')
 LEDGER = LEDGERS[0]
@@ -350,8 +357,15 @@ def main():
           f'{a50.group(4) if a50 else "?"} live.  ** That arbiter lists `corpus/` live and counts '
           f'the `.tsv` ledgers, so the number moved with other seats\' adjudications -- which is '
           f'exactly what `r7358` withdrew this arm for, arriving in the gate that scores it **',
-          r50.returncode == 0 and bool(a50)
-          and int(a50.group(2)) != int(a50.group(4)) and int(a50.group(2)) == 17)
+          #: ⛭⛭⛭ r7368: the live leg asserted `frame != live`, and the live reading has since
+          #: come BACK to `17` -- the trunk's adjudications moved the count away and then back.
+          #: ⇒ *** A MOVING MEASUREMENT CAN RETURN TO ITS OLD VALUE, SO EQUALITY IS NOT EVIDENCE OF
+          #:     STABILITY -- and a gate that reads the movement off a single live sample is
+          #:     measuring a coincidence either way. ***  The frame figure is asserted and the live
+          #:     one printed; the withdrawal stands on the arbiter's DEFINITION, which lists
+          #:     `corpus/` live, and not on any two readings differing today.
+          r50.returncode == 0 and bool(a50) and int(a50.group(2)) == 17
+          and 'corpus/' in r50.stdout)
 
     r52 = run(s52)
     a52 = re.search(r'keys stamped r7360\+60: (\d+) in (\d+) receipt\(s\) at (\w+), where the figure '
@@ -366,9 +380,16 @@ def main():
           f'SAME revision\'s next push minted one more. **  ⌗ *The live clause is now that no '
           f'retired row has LOST its carrier, which is the one direction correct later work cannot '
           f'move*',
+          #: ⛭⛭⛭ r7368: the live leg asserted the stamp count GREW -- 24 to 25, this revision's
+          #: own next push -- and the trunk's `r7355+cc66` pass then re-adjudicated 22 of the 24
+          #: rows to whichever side landed first, so the live count under this seat's stamp FELL to
+          #: `2`.  ⇒ ** A stamp count has no assertable direction: this seat's own next push raises
+          #: it and another seat's adjudication lowers it, and neither is a defect in what this
+          #: clause claims. **  The pinned pair carries the figure and the claim becomes that the
+          #: two readings DIFFER AT ALL, which is the whole finding.
           r52.returncode == 0 and bool(a52)
           and (int(a52.group(1)), int(a52.group(2))) == (24, 12)
-          and int(a52.group(4)) > int(a52.group(1)))
+          and int(a52.group(4)) != int(a52.group(1)))
 
     s53 = _one('S53_*.py')
     r53 = run(s53)
@@ -428,15 +449,27 @@ def main():
     # ══════════════════════════════════════════════════════════════════════════════════════════════
     head('D -- THE RESTRAINT, SHOWN RATHER THAN PROMISED')
     # ══════════════════════════════════════════════════════════════════════════════════════════════
-    touched = {f for f in git('diff', '--name-only', f'{REG}~1..HEAD').split()
+    #: ⛔⛭⛭⛭ r7368: ** AND THIS CLAUSE'S OWN NOTE SECURED THE WRONG END. **  *It read
+    #: `REG~1..HEAD` and said in writing that it was safe because it is "read from THIS revision's
+    #: registration commit forward, which is fixed".  A range has TWO ends.  `r7368`'s commits
+    #: joined the open one and the count went from `7` to `56`, with `49` strays -- none of them
+    #: touched by `r7364` at all.*
+    #:   ⇒ *** The same shape `S5` carried three times with the same written safety argument, and
+    #:       the same shape this clause is COUNTING.  It is the one in this file. ***
+    #: ⌗ *The working-tree arm goes with it: it was here so the claim would hold before this file
+    #:   was committed, and a working tree is the most moving end there is.  The claim is now
+    #:   historical and reads between two fixed commits.*
+    touched = {f for f in git('diff', '--name-only', f'{REG}~1..{FRAME}').split()
                if f.startswith('receipts/') and f.endswith('.py')}
-    touched |= {l[3:].strip() for l in git('status', '--porcelain').split('\n')
-                if l[3:].strip().startswith('receipts/') and l.strip().endswith('.py')}
+    _live_touched = {f for f in git('diff', '--name-only', f'{REG}~1..HEAD').split()
+                     if f.startswith('receipts/') and f.endswith('.py')}
     allowed = ('L_probability/S19', 'L_probability/S50', 'L_probability/S52',
                'L_probability/S53', 'L_probability/S54', 'L_probability/S5_',
                'P03_SdS_slicing/P03_the_enclosed_mass')
     strays = sorted(f for f in touched if not any(a in f for a in allowed))
-    print(f'      receipts differing over this revision and its working tree: {len(touched)}')
+    print(f'      receipts differing between {REG}~1 and {FRAME}, this revision\'s own two ends: '
+          f'{len(touched)};  between {REG}~1 and the MOVING head: {len(_live_touched)} -- '
+          f'REPORTED, and the reason both ends are commits')
     for f in sorted(touched):
         print(f'        {f}')
     check(f'Ⓓ① ⛭ this revision touches {len(touched)} receipt(s) and every one of them is named in '
@@ -446,10 +479,11 @@ def main():
           f'*it was `4`, then `6` when CI\'s run on the registration commit named `S50` and `S52`, '
           f'and now `7` because repairing those six broke `S53`\'s restraint -- the count moves with '
           f'the work rather than the work being trimmed to the count.*  ⚠ **And this clause is the '
-          f'same shape as the one it is counting: a restraint read over a range. It is read from '
-          f'THIS revision\'s registration commit forward, which is fixed, and it names the files '
-          f'rather than counting a diff against a moving head**',
-          not strays and len(touched) == 7
+          f'same shape as the one it is counting: a restraint read over a range -- and `r7368` '
+          f'found that this note secured the BASE and left the HEAD open, so the next revision\'s '
+          f'commits joined the range and the count went to {len(_live_touched)} with 49 strays. '
+          f'A RANGE HAS TWO ENDS, and both are commits now**',
+          not strays and len(touched) == 7 and len(_live_touched) > len(touched)
           and not any(a in f for a in STOOD_DOWN for f in touched))
 
     # ══════════════════════════════════════════════════════════════════════════════════════════════

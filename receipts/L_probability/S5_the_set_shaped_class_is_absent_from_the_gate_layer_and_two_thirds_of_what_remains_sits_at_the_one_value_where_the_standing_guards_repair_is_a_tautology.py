@@ -648,10 +648,32 @@ _own_sess = _SESS.search(_own_log)
 _own_sess = _own_sess.group(1) if _own_sess else None
 
 
-def _mine_commits():
+# ⛔⛭⛭⛭ r7368 REPAIR, AND IT IS THIS RECEIPT'S OWN CLASS CAUGHT A FOURTH TIME -- the first was the
+#   trunk moving at `r7214`, the second this seat adding a file at `r7222`, the third another seat's
+#   work entering the range at `r7245`, and this one is ** THIS SEAT'S OWN WORK LEAVING IT. **
+#   *Each of the three earlier repairs is written here with the same safety argument: "monotone in
+#   the safe direction: as the trunk absorbs this work the set SHRINKS."*
+#   ⇒ *** SHRINKING IS THE SAFE DIRECTION FOR THE RESTRAINT AND THE FATAL ONE FOR ITS NON-VACUITY,
+#       AND BOTH WERE READ OFF ONE POPULATION.  The restraint says nothing in the range is
+#       unauthorised, which an EMPTY range satisfies; the non-vacuity control says the range holds
+#       crossings at all, which an empty range makes FALSE.  So the previous repair's own written
+#       safety argument is the defect, stated in the direction it was proved safe in. ***
+#   ⌈ *Measured: `r7364` landed on the trunk and the range fell from 52 of this seat's commits to
+#     `2`, with no edit anywhere in the tree.  `P03` carried the same range and its non-vacuity
+#     figures fell from `13`/`1` to `0`/`0`; three gates of `S54`, which run those two receipts and
+#     read their printouts, went red on a MERGE.*
+#   ⌊ *The base becomes the LAST TRUNK MERGE INTO THIS BRANCH: a literal sha that resolves and is an
+#     ancestor of `HEAD`, which is the property `S23`'s `Ⓕ①` already adopted and checked as the one
+#     expression `merge-base HEAD origin/main` on the two receipts the shape was found in -- it
+#     walked past that control into this file and `P03` under the spelling `--not`.  The live range
+#     is REPORTED beside it, never asserted.*
+BASE = '72a204e2'       # the last trunk merge into this branch: a fixed sha, ancestor of HEAD
+
+
+def _mine_commits(_base=BASE):
     out = []
     for blk in _git('log', '--no-merges', '--format=%H%x00%B%x01',
-                    'HEAD', '--not', 'origin/main').split('\x01'):
+                    'HEAD', '--not', _base).split('\x01'):
         if '\x00' not in blk:
             continue
         sha, body = blk.split('\x00', 1)
@@ -662,6 +684,7 @@ def _mine_commits():
 
 
 _MINE_C = _mine_commits()
+_MINE_LIVE = _mine_commits('origin/main')
 _touched = [l for c in _MINE_C
             for l in _git('show', '--no-merges', '--name-only', '--format=', c).split('\n') if l]
 # ⛭⛭⛭ r7222 REPAIR, AND IT IS THIS RECEIPT'S OWN CLASS CAUGHT A SECOND TIME -- the first was the

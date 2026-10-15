@@ -313,11 +313,29 @@ gate(f'Ⓔ① ⛭⛭ `{_un_before - _un_now}` LANDED, `{_un_now}` REMAIN --- rea
      f'another seat\'s work cannot turn this row red',
      _un_before - _un_now >= 29 and _un_now <= _un_before)
 
-_own = []
+# ⛔⛭⛭⛭ r7370: ** AND THE SELECTOR WAS A STRING MATCH ON COMMIT MESSAGES. **  *`\br7290\b` over
+#   `BEFORE..HEAD` does not select this revision's commits; it selects EVERY COMMIT WHOSE MESSAGE
+#   MENTIONS IT -- and the corpus's convention is to cite revisions by number in every message, which
+#   the comment four lines above this one says in so many words and then did not act on.*
+#   ⌈ *Measured: the match returned `5` commits of which `2` are this revision's.  The other three
+#     are `r7292`'s pre-registration, which cites `r7290`; another seat's `r7355+cc66.2`, which cites
+#     it AND touched two receipts, which is what turned this clause red; and `r7368`'s own commit
+#     message about this very defect.*
+#   ⇒ *** A REVISION THAT WRITES ABOUT ANOTHER JOINS ITS SELECTOR.  The gate was red five pushes
+#       running and the commit that demonstrates it is the one describing it. ***
+#   ⌊ *The commits of a revision are a historical fact and are PINNED, exactly as `BEFORE` beside
+#     them is -- and the string match is kept as the CONTROL: it must return strictly more than the
+#     pinned pair, so the pin cannot silently become the match again.*
+OWN = ('dc5e48dc', 'db791aad')      # this revision's own two commits, pinned
+_own = [c for c in OWN if _git('cat-file', '-t', c).strip() == 'commit']
+assert len(_own) == len(OWN), f'{OWN} do not all resolve in this clone: {_own}'
+_matched = []
 for _rec in _git('log', '--format=%H%x1f%B%x1e', f'{BEFORE}..HEAD').split('\x1e'):
     _rec = _rec.strip()
     if _rec and '\x1f' in _rec and re.search(r'\br7290\b', _rec.split('\x1f', 1)[1]):
-        _own.append(_rec.split('\x1f', 1)[0])
+        _matched.append(_rec.split('\x1f', 1)[0])
+print(f'      the pinned commits: {len(_own)};  what the string match returns now: '
+      f'{len(_matched)} -- REPORTED, and the control below')
 _touched = sorted({f for _h in _own for f in _git('show', '--name-only', '--format=', _h).split('\n')
                    if f})
 if not _touched:
@@ -341,7 +359,12 @@ gate(f'Ⓔ② ⛭⛭ the restraint, as the SPECIFIC NEGATIVE: the `{len(_keys)}`
      f'gate it describes.  ** Stated this way it cannot be broken by a later revision landing its own '
      f'receipt, which is how the range form of the same claim broke twice in `r7288` **',
      BASE in _touched and not _touched_subjects
-     and all(f.endswith(os.path.basename(__file__)) for f in _rcpt))
+     and all(f.endswith(os.path.basename(__file__)) for f in _rcpt)
+     # ⛭⛭⛭ r7370: and the string match that USED to select these commits is kept as the control --
+     # it returns strictly MORE than the pinned pair, because later commits cite the revision by
+     # number, so the pin cannot quietly become the match again without this failing.
+     and len(_matched) > len(_own)
+     and all(any(m.startswith(c) for m in _matched) for c in _own))
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print()

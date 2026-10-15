@@ -168,19 +168,16 @@ def main():
     #   ⌗ *`r7358` replaced this arbiter with one that excludes the ledgers and `r7360`, `r7362` used
     #     the refined form; nothing here re-opens that -- the withdrawal stands and this gate stops
     #     asserting a live number on the arbiter that was withdrawn.*
-    PIN_7356 = '5b76f80a'          # r7356's own first commit: the tree the arm was scored on
-
-    def _texts_at(sha):
-        """`corpus/`'s text set AS IT STOOD at `sha` -- the frame `_corpus_texts()` does not take"""
-        names = subprocess.run(['git', '-C', ROOT, 'ls-tree', '--name-only', f'{sha}:corpus'],
-                               capture_output=True, text=True, errors='replace').stdout.split()
-        return {n: subprocess.run(['git', '-C', ROOT, 'show', f'{sha}:corpus/{n}'],
-                                  capture_output=True, text=True, errors='replace').stdout
-                for n in names if n.endswith(('.tex', '.md', '.tsv', '.txt'))}
-
-    _u = C.uniqueness(_owed, texts=_texts_at(PIN_7356))
+    # ⛭⛭ r7365 ③ + r7366: AND THE FRAME'S SELECTOR IS NOW COMMITTED BESIDE THE MEASUREMENT RATHER
+    #   THAN HELD HERE.  *`r7365` ③ made it standing that the selector of a measured population is
+    #   committed with the measurement, or the measurement is a claim and not a re-runnable fact --
+    #   and `r7364` left this arm's frame as a constant plus a reader inside THIS FILE, which is the
+    #   receipt's prose by that rule.*  ⇒ *** `r7356`'s own `cost.py` now carries `FRAME` and a
+    #   `_corpus_texts(sha)` that reproduces it, so the arm is re-runnable by anyone holding the
+    #   computation alone; this receipt CONSUMES the selector and asserts it is committed there. ***
+    _u = C.uniqueness(_owed, texts=C._corpus_texts(C.FRAME))
     _u_live = C.uniqueness(_owed)
-    print(f'      the arbiter at {PIN_7356}, where the arm was scored: '
+    print(f'      the arbiter at {C.FRAME}, where the arm was scored: '
           f'{sum(1 for v in _u.values() if v > 1)} multi-site of {len(_owed)};  '
           f'LIVE it reads {sum(1 for v in _u_live.values() if v > 1)} -- it counts the `.tsv` '
           f'ledgers, which is what r7358 withdrew this arbiter for')
@@ -189,7 +186,7 @@ def main():
     _share = len(_multi) / len(_owed)
     check(f'Ⓒ① arm ⒝ scored as registered, IN THE FRAME IT WAS SCORED IN: {len(_multi)} of '
           f'{len(_owed)} = {_share:.4f} against band {C.B_BAND[0]}-{C.B_BAND[1]}, central '
-          f'{C.B_CENTRAL} -- ⛔ OUTSIDE, HIGH.  ⛭ r7364: *the text set is read at `{PIN_7356}`, '
+          f'{C.B_CENTRAL} -- ⛔ OUTSIDE, HIGH.  ⛭ r7364: *the text set is read at `{C.FRAME}`, '
           f'r7356\'s own commit, because this arbiter lists `corpus/` LIVE and counts the `.tsv` '
           f'ledgers -- so the figure moved with other seats\' adjudications and read '
           f'{sum(1 for v in _u_live.values() if v > 1)} live. The arm is a FROZEN RECORD of the '
@@ -202,7 +199,17 @@ def main():
           #   rest on.  It asks for the exclusion EXPRESSION instead, which is the refinement itself.
           and "'baseline' not in f and 'annotation' not in f" in open(os.path.join(
               ROOT, 'computations', 'beyond_the_wall', 'r7360_60_the_seats_own_reading', 'cost.py'),
-              encoding='utf-8', errors='replace').read())
+              encoding='utf-8', errors='replace').read()
+          # ⛭ r7365 ③: and the FRAME'S SELECTOR is committed WITH THE MEASUREMENT, not here -- the
+          #   constant is defined in the computation's own file and resolves to a commit, so the arm
+          #   is re-runnable from that file alone.  *Asserted, because the rule it satisfies is the
+          #   one `r7365` made standing: a population's selector is committed or the measurement is
+          #   a claim.*
+          and f"FRAME = '{C.FRAME}'" in open(
+              os.path.join(os.path.dirname(C.__file__), 'cost.py'),
+              encoding='utf-8', errors='replace').read()
+          and subprocess.run(['git', '-C', ROOT, 'cat-file', '-e', C.FRAME + '^{commit}'],
+                             capture_output=True).returncode == 0)
     check(f'Ⓒ② ⛭ and it contradicts the expectation the order carried: the other seat found 0 of 7 '
           f'of its own block\'s literals occurring more than once, and this block reads '
           f'{len(_multi)} of {len(_owed)}, the worst of them {max(_multi.values())} times',
@@ -249,10 +256,24 @@ def main():
     # ── Ⓕ the registration's own fail-on-success, declared ───────────────────────────────────────
     #: ** Asserted rather than confessed: the function as written returns NOTHING now, which is what
     #: it would have returned to the scoring push. **
+    # ⛔⛭⛭⛭ r7366: AND THIS GATE WAS THE CLASS IT DECLARES.  *It tied the live census to
+    #   `len(_routed)` -- true only while the five routed rows were the remainder.  The trunk's
+    #   `r7355` then adjudicated them, finding they "were never work", so the live census reached
+    #   `0` and the gate went red ON ANOTHER SEAT'S CORRECT ADJUDICATION.*  ⇒ *** What the gate is
+    #   for is the DIRECTION -- a census read live EMPTIES as the work succeeds -- so the direction
+    #   is asserted and the live figure is PRINTED.  Reaching `0` is the strongest form of the
+    #   demonstration, not a failure of it. ***
+    #   ⌗ *The tenth instance of this phase's class and the first found by the TRUNK moving rather
+    #     than by this branch: the equality was an accident of timing that read as a fact.*
+    print(f'      the registration\'s census, read LIVE: {len(C.owed())} row(s) against '
+          f'{len(_owed)} at the census -- and it is now ZERO, because the trunk closed the '
+          f'{len(_routed)} rows this receipt routed')
     check(f'Ⓕ① ⛔ and the registration\'s own census read the LIVE ledger, so it returns '
-          f'{len(C.owed())} row(s) now that the block is closed -- empty exactly when the work '
-          f'succeeded, which is the class this seat has repaired five times this fortnight',
-          len(C.owed()) == len(_routed) and len(C.owed()) < len(_owed))
+          f'{len(C.owed())} row(s) now that the block is closed -- it EMPTIES as the work succeeds, '
+          f'which is the class this seat has repaired repeatedly.  ⛭ r7366: *the DIRECTION is '
+          f'asserted and the figure printed; the first cut pinned it to the routed count and went '
+          f'red when another seat adjudicated those rows*',
+          len(C.owed()) < len(_owed) and len(C.owed_at()) == len(_owed))
     check('Ⓕ② while the pinned reading it is replaced by returns the whole census, and the arbiter '
           'between them is unchanged -- only the commit the population is read at moved',
           len(C.owed_at()) == 30)

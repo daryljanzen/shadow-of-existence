@@ -60,6 +60,45 @@ def gate(label, ok):
 PAIRS = {'r7285': ('8afa9ed3', ('fadf708d', '311e7ac6')),
          'r7287': ('e7b7c7ab', ('a2555f4f', '566a97fc'))}
 
+# ⛔⛭⛭⛭ r7370: ** THE SHAS WERE PINNED AND THE FACT READ OFF THEM WAS NOT. **  *`Ⓑ①` below took each
+#   commit's session marker out of `G._SESSION`, which the collision gate fills by WALKING THE WHOLE
+#   HISTORY REACHABLE FROM `HEAD`.  On a shallow clone that walk stops at the horizon -- the gate's
+#   own comment says it was once "reporting green over 8 per cent of the corpus's revision history"
+#   -- and these six commits sit some eighty revisions back.*
+#   ⌈ *So the map has no entry for them, `_sa` reads empty, `bool(_sa)` is False and the gate fails
+#     -- on the runner and not here, where the clone is full.  Red on five lines for five pushes,
+#     green on this tree every time, with nothing in the tree to explain it.*
+#   ⇒ *** A PIN IS ONLY AS GOOD AS WHAT RESOLVES IT.  `S29`'s reference OVER-resolved -- a string
+#       match that later commits citing the revision join -- and this one UNDER-resolves: a sha the
+#       environment may not reach.  Both wanted the fact committed beside the measurement. ***
+#   ⌊ *The markers are stored here, which is `r7365` ②'s rule.  Where the object IS present they are
+#     CHECKED against what the commit says, so the stored data cannot drift unchallenged; where it is
+#     absent the stored value carries the claim and the absence is REPORTED.*
+SESSIONS = {
+    '8afa9ed3': 'https://claude.ai/code/session_01YGJEEs8cWKLi4PTi1bxhuK',
+    'fadf708d': 'https://claude.ai/code/session_01XXeapZm1snJuJTXbjf7Wtv',
+    '311e7ac6': 'https://claude.ai/code/session_01XXeapZm1snJuJTXbjf7Wtv',
+    'e7b7c7ab': 'https://claude.ai/code/session_01YGJEEs8cWKLi4PTi1bxhuK',
+    'a2555f4f': 'https://claude.ai/code/session_01XXeapZm1snJuJTXbjf7Wtv',
+    '566a97fc': 'https://claude.ai/code/session_01XXeapZm1snJuJTXbjf7Wtv',
+}
+_SESS_RE = __import__('re').compile(r'^Claude-Session:\s*(\S+)', __import__('re').M)
+_UNREACHED = []
+
+
+def session_of(sha):
+    """the session marker of a PINNED commit: checked against the commit where this clone reaches
+    it, taken from the stored value where it does not, and the absence reported either way."""
+    _body = subprocess.run(['git', 'log', '-1', '--format=%B', sha], cwd=ROOT,
+                           capture_output=True, text=True, errors='replace').stdout
+    _m = _SESS_RE.search(_body)
+    if _m:
+        assert _m.group(1) == SESSIONS[sha], (
+            f'{sha} says {_m.group(1)} and this file stores {SESSIONS[sha]}')
+        return _m.group(1)
+    _UNREACHED.append(sha)
+    return SESSIONS[sha]
+
 
 def _subj(sha):
     return subprocess.run(['git', 'log', '-1', '--format=%s', sha], cwd=ROOT,
@@ -106,14 +145,17 @@ print('\n── Ⓑ  AND THE SHAPE IS AN ANSWER IN CLAIM SYNTAX, READ OFF THE CO
 G.collisions()        # populates the gate's own session map from the commits
 _shape = {}
 for _rev, (_ans, _own) in PAIRS.items():
-    _sa = G._SESSION.get((G.ROOT, _ans), '')
-    _so = [G._SESSION.get((G.ROOT, s), '') for s in _own]
+    _sa = session_of(_ans)
+    _so = [session_of(s) for s in _own]
     _shape[_rev] = (bool(_sa) and all(_so) and _sa not in _so and len(set(_so)) == 1,
                     G._same_line(_own[0], _own[1]),
                     not G._same_line(_ans, _own[0]) and not G._same_line(_ans, _own[1]))
     print(f'      {_rev}: answering session differs from the ordering line\'s {_shape[_rev][0]}; '
           f'the ordering line\'s two commits are ONE line {_shape[_rev][1]}; '
           f'the answer is NOT that line {_shape[_rev][2]}')
+print(f'      the pinned commits this clone does not reach: {len(_UNREACHED)} of '
+      f'{len(SESSIONS)} -- REPORTED, and where it does reach one the stored marker is CHECKED '
+      f'against what the commit says rather than trusted')
 gate(f'Ⓑ① ⛔⛭⛭⛭ and the shape is read off the COMMITS and not from the gate\'s narrative: in both, '
      f'the two commits of the ordering line are one session and are correctly read as ONE line, and '
      f'the third commit is ANOTHER session answering that order.  ** So the collision is not two '
