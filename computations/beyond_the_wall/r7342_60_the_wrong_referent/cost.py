@@ -221,3 +221,135 @@ if __name__ == '__main__':
     print(f'    of the {len(_pop)}: {_hc} write a closed form by hand; of those {_dv} DERIVE it and '
           f'{_ti} TIE it in code')
     print()
+
+
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+# ⛭ POST-HOC, AND LABELLED AS THAT: THE REFINED ARBITER.  ** The arm above is scored exactly as
+# registered.  Nothing below changes a band, a central or a decisive fraction, and nothing below is
+# an arm of this revision -- it is REGISTERED HERE FOR THE NEXT ONE, which is the only honest place
+# to put an arbiter that was written after seeing a count. **
+#
+# ** WHY THE REGISTERED ARBITER OVER-INCLUDES, measured rather than asserted. **  It asks whether the
+# module DERIVES the form (builds a metric, calls a curvature routine).  *That is a property of the
+# module's machinery, and the defect is a property of the CHECK: a formula is unreferenced exactly
+# when no condition it enters can fail if its referent is swapped.*  ⇒ So the refinement asks, of
+# every check the form enters, whether any OTHER operand in that condition is a quantity the module
+# DERIVED -- a name assigned from a call, rather than a symbol or a literal.
+#   ⌗ On `S10` before the repair this is decisive in the sharpest possible way: the family appeared in
+#     no condition at all, so there was nothing to mutate.  After the repair, swapping the family back
+#     turns 8 of the 9 checks of ⓵ red.
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+_SYMBOLIC = ('Symbol', 'symbols', 'Rational', 'Integer', 'Float', 'pi', 'sympify')
+
+
+def _derived_names(tree):
+    """names assigned from a CALL that is not merely minting a symbol or a literal"""
+    out = set()
+    for n in ast.walk(tree):
+        if not isinstance(n, (ast.Assign, ast.AnnAssign)):
+            continue
+        v = n.value
+        has_call = any(isinstance(k, ast.Call) for k in ast.walk(v)) if v is not None else False
+        if not has_call:
+            continue
+        names = {(k.func.attr if isinstance(k.func, ast.Attribute) else
+                  getattr(k.func, 'id', '')) for k in ast.walk(v) if isinstance(k, ast.Call)}
+        if names <= set(_SYMBOLIC):
+            continue
+        tgts = n.targets if isinstance(n, ast.Assign) else [n.target]
+        for t in tgts:
+            if isinstance(t, ast.Name):
+                out.add(t.id)
+            elif isinstance(t, (ast.Tuple, ast.List)):
+                out.update(e.id for e in t.elts if isinstance(e, ast.Name))
+    return out
+
+
+def _form_names(tree):
+    """the names a hand-written closed form is assigned to"""
+    syms = _symbol_names(tree)
+    out = set()
+    for n in ast.walk(tree):
+        if not isinstance(n, ast.Assign) or n.value is None:
+            continue
+        sub = list(ast.walk(n.value))
+        powered = any(isinstance(k, ast.BinOp) and isinstance(k.op, ast.Pow)
+                      and isinstance(k.left, ast.Name) and k.left.id in syms for k in sub)
+        numeric = any((isinstance(k, ast.Constant) and isinstance(k.value, (int, float))
+                       and k.value not in (0, 1))
+                      or (isinstance(k, ast.Call) and getattr(k.func, 'attr', '') == 'Rational')
+                      for k in sub)
+        if powered and numeric:
+            out.update(t.id for t in n.targets if isinstance(t, ast.Name))
+    return out
+
+
+def unreferenced_refined(path, sha=PIN):
+    """the refined reading: {form: True} when no condition the form enters holds a DERIVED operand"""
+    tree = ast.parse(_source(path, sha))
+    forms, derived = _form_names(tree), _derived_names(tree)
+    if not forms:
+        return {}
+    conds = []
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Call) and getattr(n.func, 'id', '') == 'check' and len(n.args) >= 2:
+            conds.append(n.args[1])
+    out = {}
+    for f in sorted(forms):
+        entered = [c for c in conds
+                   if any(isinstance(k, ast.Name) and k.id == f for k in ast.walk(c))]
+        if not entered:
+            out[f] = True                       # it enters no condition at all
+            continue
+        out[f] = not any(isinstance(k, ast.Name) and k.id in derived and k.id != f
+                         for c in entered for k in ast.walk(c))
+    return {k: v for k, v in out.items() if v}
+
+
+RESULT.update({
+    # ── arm ⒜, scored exactly as registered.  ⛔ OUTSIDE THE BAND, HIGH.
+    'A_SPACE': 43,
+    'A_MEMBERS': 10,
+    # the three conditions, counted over the same 43 so the arm can be read apart
+    'HANDWRITTEN': 14,
+    'DERIVES': 2,
+    'TIED_IN_CODE': 2,
+    # ── the refined reading, post-hoc and not an arm of this revision
+    'REFINED_MEMBERS': 7,
+    # ⛭ AND THE ADJUDICATION, which is this seat's READING and is reported as that: of the 7, how
+    #   many are a result QUOTED from elsewhere that the receipt reasons FROM (the ordered class), and
+    #   how many are the object the receipt DEFINES, where the form IS its own referent?
+    'ADJUDICATED': 5,
+    'ADJUDICATION': (
+        ('L165/S10', 'CLASS -- Q1\'s polynomial, and the family named was a DIFFERENT one; the only '
+                     'member shown WRONG rather than merely unreferenced'),
+        ('L165/S5', 'CLASS -- the maximally symmetric $Ric^2$/$Riem^2$ identities written out, with '
+                    'the family carried only by a substitution value and in no condition'),
+        ('L204/P13', 'CLASS -- the horizon entropy written out; the area it is a quarter of is not '
+                     'derived here'),
+        ('L204/P7', 'CLASS, at one remove -- $A=4\\pi\\alpha^2$ is written out and $S$ IS derived '
+                    'from it, so the unreferenced form is the area and not the entropy'),
+        ('L211/A3', 'CLASS, in a different costume -- an exact solution written out, with nothing '
+                    'asserting that it solves the equation it is a solution OF'),
+        ('L204/P5', 'not the class -- the form is the metric function the receipt DEFINES, and the '
+                    'horizon and surface gravity are derived FROM it'),
+        ('L204/P8', 'not the class -- the form is the polynomial the receipt analyses; its roots and '
+                    'critical points are solved for'),
+    ),
+    # ── the ordered repair, measured by mutation: swap the family back and the gate goes red
+    'MUTATION_BEFORE': 0,           # conditions the family entered before the repair: none
+    'MUTATION_AFTER': 8,            # of the 9 checks of ⓵, red when the family is swapped back
+})
+
+if __name__ == '__main__':
+    _ref = {p: unreferenced_refined(p) for p in census()[0]}
+    print('  ⛭ THE REFINED READING, POST-HOC AND NOT AN ARM OF THIS REVISION')
+    print()
+    for _p, _f in sorted(_ref.items()):
+        print(f'      {"UNREFERENCED" if _f else "referenced  "}  {_p.split("/")[-1][:58]}')
+        if _f:
+            print(f'         forms entering no falsifiable condition: {sorted(_f)}')
+    print()
+    print(f'    registered arbiter: {RESULT["A_MEMBERS"]} of {RESULT["A_SPACE"]};  '
+          f'refined: {sum(1 for v in _ref.values() if v)} of {RESULT["A_SPACE"]}')
+    print()

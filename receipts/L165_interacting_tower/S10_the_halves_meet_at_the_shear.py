@@ -97,7 +97,7 @@ def check(label, cond):
 MARKER = re.compile(r'\\(?:ldg|rcpt)\{[A-Za-z0-9_]+\}')
 
 
-#: ** ⚭ THE REPAIR (r7342, on `r7341` ①): THE FAMILY IS READ OUT OF `Q1`'s OWN FILE. **
+#: ** ⛭ THE REPAIR (r7342, on `r7341` ①): THE FAMILY IS READ OUT OF `Q1`'s OWN FILE. **
 #: This receipt asserted `Q1`'s polynomial while NAMING a different family -- `71`'s
 #: `diag(-2 sigma, sigma, sigma)`, invariant `6 sigma^2` -- and the only guard on the naming was that
 #: the triple is trace-free, which every traceless triple satisfies.  *** A formula whose referent no
@@ -168,7 +168,7 @@ def main():
           f'NOT the $6\\sigma^2$ of the family this receipt used to name',
           sp.simplify(inv - 2*s**2) == 0)
     C2 = weyl(gQ, mod, x)
-    check(f'⚭ and `Q1`\'s polynomial is what THAT metric gives, derived here with `Q1`\'s own '
+    check(f'⛭ and `Q1`\'s polynomial is what THAT metric gives, derived here with `Q1`\'s own '
           f'curvature routines rather than retyped: $C^2={sp.sstr(sp.factor(C2))}$',
           sp.simplify(C2 - s**2*(4 + sp.Rational(16, 3)*s**2)) == 0)
     check('and $C^2$ vanishes identically at $\\sigma=0$ -- the degeneracy is exact on any shear-free '
