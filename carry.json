@@ -247,25 +247,9 @@
  },
  "claude/youthful-darwin-xvkwh7": {
   "reads": {
-   "receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38742807421",
-    "since": "b4eb552aefae1516bdb74217022d8f42279d395e"
-   },
-   "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38742807421",
-    "since": "b4eb552aefae1516bdb74217022d8f42279d395e"
-   },
-   "receipts/L_probability/S51_the_queue_closes_whole_and_both_arms_fail_because_one_arbiter_was_counting_its_own_ledger_and_the_other_counts_a_defect_the_fix_removes_before_the_record.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38742807421",
-    "since": "b4eb552aefae1516bdb74217022d8f42279d395e"
-   },
-   "receipts/L_probability/S52_the_seats_own_reading_closes_whole_and_two_arms_land_in_band_while_the_effort_band_fails_low_because_the_series_it_was_drawn_from_is_still_falling.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38742807421",
-    "since": "b4eb552aefae1516bdb74217022d8f42279d395e"
-   },
-   "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38742807421",
-    "since": "b4eb552aefae1516bdb74217022d8f42279d395e"
+   "receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38762165475",
+    "since": "5d3d40b680bba8ef28186b3d557132b9fda62f2c"
    }
   },
   "suite": {
