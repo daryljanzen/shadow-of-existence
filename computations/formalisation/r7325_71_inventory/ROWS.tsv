@@ -28,7 +28,7 @@ index	class	status	what it needs next	stand-in
 26	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	horizons sorted by completion (global)
 27	G1	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	continuation reproduces exterior metric coefficients (a metric in a chart)
 28	G2	DONE	closed by 71 at r7333+71.3 (r7333_71_kretschmann/RESULT.md): row28_curves (bead stated as r^3 = 2M alpha^2 sinh^2)	Kretschmann along a curve
-29	G1	DONE	discharged before B (r7297 C1-C5 and earlier)	cycloid solves the radial geodesic equation
+29	G1	DONE	discharged before B (r7297 C1-C5 and earlier); declarations named at r7367+71.1 (r7367 ③): unitU_geodesic, interior_chart, interior_geodesic, cycloid_proper_time (ShadowEngine.lean, section StaticDiag, r7297 C4)	cycloid solves the radial geodesic equation
 30	G1	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	interior metric in cycloid coordinates; causal character of eta
 31	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	complex continuation lands on real r on three axes
 32	G3	DONE	discharged in B (r7315)	geodesic acceleration equals r times a slice's Gaussian curvature
@@ -40,9 +40,9 @@ index	class	status	what it needs next	stand-in
 38	G3	DONE	discharged in B (r7315)	geodesic acceleration = r K_G (slice curvature)
 39	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	points on the ambient quadric and values of the ambient interval
 40	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	deck group Z_{D-1} from the imaginary period
-41	G1	DONE	discharged before B (r7297 C1-C5 and earlier)	zero-energy radial orbit; null flow fixed points with kappa = f'/2
-42	G1	DONE	discharged before B (r7297 C1-C5 and earlier)	I20: conformal Killing, charge on null geodesics, 1+z
-43	G1	DONE	discharged before B (r7297 C1-C5 and earlier)	homothety charge conserved on null geodesics only
+41	G1	DONE	discharged before B (r7297 C1-C5 and earlier); declarations named at r7367+71.1 (r7367 ③): surface_gravity, kappa_half_fprime (ShadowEngine.lean, section SurfGrav, r7297 C3)	zero-energy radial orbit; null flow fixed points with kappa = f'/2
+42	G1	DONE	discharged before B (r7297 C1-C5 and earlier); declarations named at r7367+71.1 (r7367 ③): conformalKilling_cov, charge_const, xi_isConformalKilling, a_omega_const, one_plus_z (probes/InstanceProbe.lean, r7277 R4 and earlier)	I20: conformal Killing, charge on null geodesics, 1+z
+43	G1	DONE	discharged before B (r7297 C1-C5 and earlier); declarations named at r7367+71.1 (r7367 ③): flat_isLeviCivita, homothety_nabla, homothety_charge (ShadowEngine.lean, section FlatLC, r7297 C1)	homothety charge conserved on null geodesics only
 44	G1	DONE	discharged in B (r7315)	photon-sphere Lyapunov exponent of the geodesic flow
 45	G2	DONE	closed by 71 at r7327+71.3 (r7327_71_cutoff_pilot/RESULT.md): sds_kretschmann	SdS Kretschmann from Riemann
 46	G4	LIBRARY GAP	the Levi-Civita volume form	horizon areas and entropies of two readings
@@ -73,10 +73,10 @@ index	class	status	what it needs next	stand-in
 71	G2	DONE	closed by 71 at r7351+71.4 (r7351_71_campaign6/RESULT.md): weyl2_gb_identity (any metric the engine contracts), row71_sds (non-vacuous: C^2 = 48M^2/r^6 on SdS)	C^2 = E4 + 2(Ric^2 - R^2/3)
 72	G2	DONE	closed by 70 at r7335+70.2 (r7335_70_row72/RESULT.md): closed FRW with a(T) free, R, Weyl^2 = 0, a^3 GB (256-entry table, 320 s)	ranks of FRW curvature invariants
 73	G4	LIBRARY GAP	spectral theory	Bianchi-IX curvature expansion, vertices, vacuum shift
-74	G4	DONE	discharged by the engine (E3/E4, r7323)	Gowdy-dS background field equation 3H^2 = Lambda, shear charge
+74	G4	DONE	discharged by the engine (E3/E4, r7323); declarations named at r7367+71.1 (r7367 ③): gowdy_ds_field, gowdy_shear_charge (probes/CurvatureInstances.lean, E4)	Gowdy-dS background field equation 3H^2 = Lambda, shear charge
 75	G4	DONE	discharged by the engine (E3/E4, r7323)	Einstein tensor of Gowdy-dS equals the wave/constraint equations
 76	G4	DONE	discharged in B (r7315)	Mukhanov variable mode equation on de Sitter
-77	G1	DONE	discharged before B (r7297 C1-C5 and earlier)	Killing equation: exactly two Killing vectors
+77	G1	DONE (chartable half)	discharged before B (r7297 C1-C5 and earlier); declarations named at r7367+71.1: killing_of_invariant, gowdy_killing (ShadowEngine.lean, section KillingTrans, r7297 C5); MOVED OFF DONE at r7367+71.1 (r7367 ③): the receipt also claims EXACTLY two Killing vectors (no third), which r7297's RESULT recorded as not built (a Lie-derivative statement with no connection); open half: that uniqueness	Killing equation: exactly two Killing vectors
 78	G2	DONE	discharged in B (r7315)	Brinkmann wave Ricci-flat
 79	G3	DONE (chartable half)	closed half: SdS's static S^2 leaves (K=0, leaf 3R) -> REOPENABLE by the near-point convention	extrinsic curvature K_ab = 0 of leaves, leaf scalar curvature
 80	G5	LIBRARY GAP	homogeneous spaces G/H	dS as a coset space with the Killing-form metric
@@ -91,7 +91,7 @@ index	class	status	what it needs next	stand-in
 89	G2	LIBRARY GAP	the Levi-Civita volume form	Pontryagin density from a metric
 90	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	the quadric has no real point on the axis
 91	G1	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	sinh^(2/3) satisfies the radial geodesic first integral
-92	G1	DONE	discharged before B (r7297 C1-C5 and earlier)	sinh^(2/3) solves the E = 1 radial geodesic
+92	G1	DONE	discharged before B (r7297 C1-C5 and earlier); declarations named at r7367+71.1 (r7367 ③): rain_geodesic, sds_rain_geodesic, sinh23_flow (ShadowEngine.lean, section RainPG, r7297 C2)	sinh^(2/3) solves the E = 1 radial geodesic
 93	G2	DONE	closed by 71 at r7333+71.3 (r7333_71_kretschmann/RESULT.md): row93_weyl_split	SdS Kretschmann; Weyl to Lambda ratio
 94	G3	DONE	closed by 70 at r7333+70.2 (r7333_70_second_seat/RESULT.md): leaf_umbilic_iff	umbilic locus of a foliation
 95	G4	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	separated wave operator (Killing vectors via Lie derivative on the way)

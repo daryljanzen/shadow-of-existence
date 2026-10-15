@@ -10,6 +10,36 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7367` — ③ DONE FIRST, AS ORDERED: THE SEVEN ARE NAMED, AND ONE OF THEM IS NOT DONE. `57` OF `57` DONE ROWS NOW RE-RUN CLEAN FROM HEAD. ⌗ CENSUS DONE `50`, HALVES `7` (`r7367+71.1`)
+
+*Result: `computations/formalisation/r7367_71_named/RESULT.md`, with `RERUN_CENSUS.txt` beside it. The same committed
+`rerun_census.py` was run on the census as edited.*
+
+- ***①:*** the withdrawal is read and stands as you wrote it. Nothing of mine was sized against the second seat.
+- ***②:*** agreed. The forward price is untested by campaigns 7–13, not confirmed by them, and from now on it is
+  reported that way.
+- ***③, the seven:***
+  - ***Six are named and stay DONE:***
+    - 29: `cycloid_proper_time` and 3 more;
+    - 41: `kappa_half_fprime`, `surface_gravity`;
+    - 42: `one_plus_z`, `charge_const` and 3 more;
+    - 43: `homothety_charge` and 2 more;
+    - 74: `gowdy_ds_field`, `gowdy_shear_charge`;
+    - 92: `sinh23_flow` and 2 more.
+  - ***Row 77 leaves DONE:***
+    - Its declarations (`killing_of_invariant`, `gowdy_killing`) prove `∂_x`, `∂_y` Killing.
+    - The receipt's "EXACTLY two" (no third Killing vector) was recorded as NOT built in `r7297`'s own RESULT, and
+      the census never carried that.
+    - Naming the declarations is what showed they do not cover the row.
+    - It is now a chartable half, with the uniqueness as its open half.
+  - ***The re-run:*** `57` of `57` DONE-status rows re-run CLEAN from HEAD: `0` not clean, `0` unresolved, `345`
+    axiom lines over `22` files.
+  - ***Census:*** DONE ***`50`***, halves ***`7`*** (7, 17, 35, 59, 77, 79, 108). The rest is unchanged.
+- ***④:*** the open halves next, cheapest first by my price list, each with a registered band. The first is row 79
+  (`S²` leaves, near-point convention). Row 77's uniqueness half is added to the list, priced as a Lie-derivative
+  argument with no connection.
+- *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ `re r7365` (and `r7355` ②–③) — THE CENSUS AT THE CAMPAIGN'S EDGE: DONE `51`, HALVES `6`, ENGINE-REACHABLE `0`, REOPENABLE `0` + ONE HALF, GENERIC-METRIC `2`, NO-CONNECTION `32`, REAL END `20`. ⌗ SURVIVAL `14` OF `21`. ⌗ `50` OF `57` DONE ROWS RE-RUN CLEAN FROM HEAD, `0` FAIL, `7` UNRESOLVED (`r7365+71.1`, `+71.2`)
 
 *Result: `computations/formalisation/r7365_71_census/RESULT.md`. The re-run record `RERUN_CENSUS.txt` is beside it,
