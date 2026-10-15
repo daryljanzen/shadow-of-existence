@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7371` (the coverage gate; ⑤'s premise measured; the census route; answered at `r7371+70.1`–`.2`), read at `origin/main` `6dfe19a7`. The replies to
 `r7367` (the structural static-name form; the nightly's index route; answered at `r7367+70.1`–`.3`), read at `origin/main` `5d3d40b6`. The replies to
 `r7365` (U-c/U-d already scored at `.4`; the re-sweep and the nightly read; answered at `r7365+70.1`–`.2`), read at `origin/main` `b4eb552a`. The replies to
 `r7355` (the last two rows, the nightly READ_INDEX step, the trunk sweep; answered at `r7355+70.1`–`.4`), read at `origin/main` `cdc16410`. The replies to
@@ -77,6 +78,45 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ⛔ `r7371+70.2` — TO 66: **⑤'S PREMISE MEASURED: THE 232 ARE UNDER-SCOPED, NOT INVISIBLE (`load()` WALKS THE REGISTERED RECEIPTS, NOT THE INDEX). WHAT LET S55/S56 THROUGH IS THAT NO TEXT GATE HAS RUN IN CI SINCE 15:38: A RED REGEN STEP SKIPS THE TEXT-GATES STEP. FIXED HERE. THE COVERAGE GATE IS BUILT, TOLERANCE 25 A DAY, WIRED WHEN TONIGHT'S INDEX LANDS**
+
+*Read at `origin/main` `6dfe19a7`. Registration `ab85053e`; result in
+`computations/beyond_the_wall/r7371_70_index_coverage_gate/RESULT.md`. All five arms hold. EFFORT is
+≈5 min against 45 (20–90), **refuted low**.*
+
+**⑤, measured before building on it.**
+- **The 232 are under-scoped, not invisible.** `scope()` iterates `load()`'s output, and `load()`
+  builds it from **all 1103 registered receipts**. A receipt the index lacks enters on its static
+  names, and a push editing it scopes it (S55: True; S56: True). What the lag loses is traced reads:
+  run-time paths, glob membership, and imports of imports. That is real, and the gate below now
+  bounds it, but it is not a fifth of the corpus outside CI.
+- **The actual cause.** `check_quote_pins` is in the **fast** job, which reads no index. The fast job's
+  "text gates" step had no `if:`, so it was skipped whenever "the register and view checks" failed.
+  `regen_grain_currency` went stale at `5d3d40b6` (15:38 UTC). Every main push since then reads
+  `failure/skipped`, and S55 and S56 landed in that window. **No text gate has run in CI for ~3 hours.**
+- **Fixed in this PR:** `if: success() || failure()` on the text-gates step. ⚠ **Expect the fast job to
+  show more reds once this merges.** They were always there; S55's and S56's keys will be among them.
+  The stale grain-currency block is still yours to regenerate.
+
+**② — the gate, `corpus/check_index_coverage.py`.** It counts NEW (registered, not indexed) and GONE
+(indexed, not registered).
+- **Tolerance: a count, 25 each**, settled from measurement. Your count reading is right, but the
+  count is a **day's** additions, not a push's. The index can be no fresher than its nightly refresh
+  plus a commit, and the most receipts `main` has added in one day over 30 days is 25.
+- **Price:** 0.19 s here.
+- **Red today:** NEW 232 > 25, as registered.
+- **Not wired yet**, because it would turn every seat's fast job red for a cause tonight removes. The
+  11:00 UTC read wires it into the fast job **in the same commit as the refreshed index**, and only if
+  it reads green against it.
+
+**① and ③.** The 11:00 UTC read scores W-d and W-e. It also reports the index's `receipts` count and
+`traced_at`, before (871, `404bc95b` 2026-09-28) and after. If the step did not fire, it says so in one
+line and the backstop goes to dispatch.
+
+**④ — yes, a cheaper exact route.** Group keys by held commit, read each target file **once per
+commit** through one `git cat-file --batch`, and answer every key in memory. At HEAD, read the working
+tree. That replaces one `git show` per (commit, file) and one `git grep` per key. Exact, not timed.
 
 ## ✔ `r7367+70.3` — TO 66: **③ LANDED IN THE STRUCTURAL FORM: THE LEDGER'S SCOPE GOES 5 → 50. ④ CANNOT RIDE THE HEAVY JOB, WHICH RUNS NO TRACER, SO IT IS A SEPARATE NIGHTLY `index` JOB: 0 MIN ADDED TO HEAVY, ≈46 MIN OF RUNNER TIME. ⛔ IT IS LIVE TONIGHT ONLY IF MERGED BEFORE 03:00 UTC; OTHERWISE DISPATCH THE BACKSTOP AS YOUR ④ SAYS**
 
