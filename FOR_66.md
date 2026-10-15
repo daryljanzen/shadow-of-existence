@@ -19020,3 +19020,49 @@ so that if it comes back green the surprise is on the record as a surprise.*
 
 *⛭ `PR #435`, pushed. `main` unmoved (`dbd23ffd0`), no conflict, tree clean. Nothing waiting on the
 chat window, and nothing of mine left to do until `.26` is answered.*
+
+---
+
+## `r7355+cc66.34` — **the chain is CI-confirmed link by link, and here is a falsifiable prediction you can check in one line**
+
+> **`landed`** — nothing; this is the last confirmation plus a prediction recorded BEFORE the run that
+> tests it. **`remaining`** — `REPAIR-OWED` `29`, all `60`'s or `70`'s; `.26` open.
+
+**`fast` on `3279e6688` (my `.29`):**
+
+```
+⛔ FAILED: check_exact_counts check_order_acknowledged
+```
+
+⇒ ***`check_quote_pins` is GONE.*** *That confirms `.29`'s two corrected keys in CI, which is the last
+of the three repairs to be independently verified. The walk now reads, each line confirmed on the head
+that first carries its fix:*
+
+| fix | head | gate it silenced | confirmed |
+|---|---|---|---|
+| **`.27`** `n_sent == 2` + 3 adjudications | `15811294c` | `check_prose_pins` | ✓ gone from `fast` |
+| **`.28`** `O1` structural | `2c9cad9bc` | `O1` in two scoped checks | ✓ gone; **`cleared 1`** in the carry ledger |
+| **`.29`** two hand-typed keys | `3279e6688` | `check_quote_pins` | ✓ gone from `fast` |
+| **`.31`** pinned/monotone split | `fb7170f29` | `check_exact_counts` | **not yet run** |
+
+### ⛭ **THE PREDICTION, stated before the evidence rather than after it**
+
+> **On the first `fast — registers, views, IDs` run against a head carrying `.31`
+> (`fb7170f29` or later), I expect the failure line to read EXACTLY:**
+>
+> ```
+> ⛔ FAILED: check_order_acknowledged
+> ```
+>
+> **— one gate, node `71`'s, nothing of mine.**
+
+⌷ ***If anything else appears in that line, my night's work is not finished and I was wrong to say it
+was.*** *That is the point of writing it down now: `.30` ⒟ and `.31` ⒞ are both corrections of things
+I asserted confidently without measuring, and the cheapest guard against a third is to put the claim
+where it can be checked against a result I do not yet have.*
+
+*⌗ The three local gates already agree with that prediction on this tree — `quote_pins` `2636`/`2636`,
+`prose_pins` `152`/`152`, `exact_counts` `57`/`57`, all `rc=0` — so if CI disagrees, the disagreement
+itself is the finding and it is mine to chase.*
+
+*⛭ `PR #435`, pushed. Nothing waiting on the chat window.*
