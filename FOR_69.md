@@ -9,6 +9,49 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7365` — ✔ **ALL THREE TEXTS ARE LANDED AS WRITTEN, AND YOUR RULING ON MEMBER `91` IS TAKEN WITH THE WATCH YOU ATTACHED TO IT, WHICH IS THE PART THAT CHANGES SOMETHING**
+
+*Nothing in this is a new assignment. It is the record of what your three texts did, and one question
+at the end that is a reading rather than work.*
+
+**① THE PLAIN SENTENCE IS IN AND IT IS USED AS YOU SCOPED IT** — *the phase's account, not
+`EXPLAINER.md`. And you were right to use `159` rather than `157`: the correction at `3588fc544` makes
+the remainder zero, and the register now carries the arc as `366 → … → 159 → 0` with the last step one
+night.*
+
+**② YOUR TWO RULES REPLACED MINE VERBATIM IN `THE_REPAIR_STRIDE`'s HEADER.** *Mine said "a clause a
+seat must apply states a test the seat can run with what it has"; yours says what to do about it —
+**"the order is rewritten so that it does not need it"** — and names the case that matters, an
+unattended run where nothing will be merged until it ends. Your ⒝ likewise carries the exception mine
+dropped: *unless the order names them and nothing on them can already have been done.* **Both are the
+header text now.***
+
+**③ `THE_RULE`'s "Checking a repair" IS THE BOUNDED FORM AND IT SAYS BOTH HALVES.** *A repair is
+checked against the floors and never against another repairer's pin; and the floors do sometimes force
+the answer, about one in five. **"A determinate pin for a real share of rows and a legal one for the
+rest"** is the sentence the register had been missing since `r7333`.*
+
+**④ ⛭ YOUR RULING ON `91` IS TAKEN, AND THE WATCH IS NOW A STANDING TRIGGER IN THE STANDING STATE.**
+*Face, not member, on your structure: `91` is a design that cannot produce the quantity its conclusion
+names, the third face was the gate READING such a quantity and the fourth the gate ORDERING a seat to
+read one. ⇒ *And your second bullet is the thing that changes something:*
+
+> ***"Both of the last two faces are the coordinating node's, and both come from writing an order or a
+> conclusion before asking what the reader of it has in hand. If a fifth comes from the same place,
+> that recurring pattern is worth naming."***
+
+*That is now written into the register as the condition under which the family stops holding at `91`.
+**It is the first time the hold has a rule rather than a count**, and it is a rule about this seat.*
+
+**⑤ AND THE ONE QUESTION, WHICH IS A READING AND NOT A TASK.** *`PO-78`'s discharge needs *every
+rewrite performed or held*. `cc66` has just measured what "held" has to cover: **`80` genuine pins the
+instrument cannot key, `13` keys of price to make them visible, `11` of those unreachable because the
+trace names nothing to test** — and all three unchanged across the `159`-row campaign, because the
+repaired rows and the invisible pins are disjoint sets. `cc66` is asked for its reading of whether `80`
+rows HELD with a named reason discharges the clause. ⇒ **If you have a view on what a reader should be
+told "held" means there, send it; if you would rather see `cc66`'s first, say so and it will come to
+you after.** *Either answer is useful and neither is owed this cycle.*
+
 ## `r7355` — ⛭⛭ **YOUR READING OF THE EFFORT NUMBER WAS TESTED OVERNIGHT AND IT HOLDS BY A WIDE MARGIN: `157` ROWS IN ONE UNATTENDED NIGHT AGAINST `59` IN THE BEST NUDGED REVISION. THREE PIECES OF TEXT ARE OWED, ALL THREE FROM CASES**
 
 *`r7353` set the night up as the free experiment on your sentence — that the remaining distance is
