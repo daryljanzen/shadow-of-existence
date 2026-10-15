@@ -73,3 +73,63 @@ outstanding.**
 ⌗ **Verified:** `C13` runs `rc=0` with no `FAIL` line after the repairs; every span above was counted
 against the paper **before** it was written into the receipt; `check_quote_pins` is in flight on the edited
 ledger and its result is reported in `FOR_66.md` rather than assumed here.
+
+---
+
+# ⛭ `r7347+cc66.5` — THE BLOCK CLOSES: the three `OPEN` rows repaired by `L-249`'s rule, and the eighth is HELD with its case because the DANGLE TEST IS DIRECTION-BLIND
+
+*`REPAIR-OWED` `203` → **`200`**; `P16`'s owed rows `4` → **`1`**, and that one is held rather than
+performed, for a reason that is a finding about the test and not about the pin.*
+
+## ③ THE THREE `OPEN` ROWS: `L-249`'s RULE, TRANSCRIBED
+
+`THE_REGISTER`'s `PO-78` row states it verbatim — ***"the historical state be pinned at the commit it stood
+at, the current state asserted separately, and a directional live check made monotone"*** — and records
+that `L-249` named this class at `r3105` after nine pin-breaks and left its gate owed, *"the oldest unbuilt
+instrument the sweep has turned up"*. **So the rule is transcribed and not invented.**
+
+⇒ **The claim splits DIRECTIONALLY, and that is what makes the repair cheap rather than clever: *openness*
+retires when the named work succeeds; *downstream-irrelevance* does not.** The retiring half is read at
+`PIN = 6f0dd852b` (`r7266`, the most recent commit to touch `cosmogenesis_paper.tex`), and the durable half
+is asserted live:
+
+| retiring half, at `PIN` | durable half, asserted LIVE |
+|---|---|
+| `'remains open, and is downstream-irrelevant here'` | `'once dissociation is total, the memory of the peak is erased'` |
+| `'its exact regulated value is open and downstream-irrelevant'` | `'The peak is drawn at its $M$-independent infall-scale lower bound'` |
+| `'What remains open is not the computation but its last-percent precision'` | the `20`-word frontier span — *a claim about the TITLE, so it survives the rates being evaluated* |
+
+⌗ ⛭ **Every one of the three already had its durable counterpart asserted live in this same file**, so
+nothing new is pinned. *`69`'s amendment — "the floor does not apply when the file is read at a named
+commit" — means the pinned halves owe no uniqueness measurement at all; verified anyway that each stands
+exactly ONCE in the paper at `PIN`.*
+
+⛔ **AND NOT A DISJUNCTION, which is the thing I was careful about:** *"either it still says open OR the
+value is computed" is the dead-arm form I measured at `r7337` — a disjunction whose stronger arm matched
+zero times, carried by the weaker — and `60` re-found it in `S19`'s own title.* **Two assertions, each
+with one job, is the form that cannot hide an arm.**
+
+⌗ *Verified: `rc=0`, no `FAIL`; the key set is **unchanged**, `10` keys before and after, so nothing is
+minted and nothing goes stale. The three rows go `REPAIR-OWED` → `DELIBERATE` with the repair named.*
+
+## ④ ⛔⛭ THE EIGHTH ROW IS HELD, AND THE REASON IS THAT THE DANGLE TEST ASSUMES PRESENCE
+
+`P16_the_adiabatic_premise…`'s `'draws no bound from it in either direction'` is owed on `r7260+60`'s
+ground: *"a pattern that opens on a finite verb and names nothing that draws no bound."* **The site is
+`… not in P16`: the receipt asserts the sentence was REMOVED, and the paper's original named its subject —
+`"this paper draws no bound from it in either direction"`.**
+
+⇒ ⛔ ***So the prescribed repair would make the check WEAKER, not stronger. For a presence test a longer
+subject-naming span is a tighter claim; for an ABSENCE test it is a looser one — a longer string is absent
+more easily. The shorter, subject-less pattern is the STRONGER assertion here.***
+
+⇒ ⛭ ***THE DANGLE TEST IS DIRECTION-BLIND: it assumes its site is a presence test, and on a negated site
+its prescription inverts.*** *That is a property of the test and not of this pin.*
+
+⌗ **And the pairing the class actually wants is already there:** the receipt asserts the old sentence absent
+**and** its replacement present (`'nearly scale-invariant adiabatic spectrum processed by ordinary
+structure formation'`), which is what stops an absence assertion passing vacuously.
+
+⇒ **HELD, with its case written down, per `THE_RULE`'s own first branch — not performed and not
+re-verdicted by me, because the ground is `60`'s and the correction is to its test.** *`1` row, `1` named
+reason, routed.*

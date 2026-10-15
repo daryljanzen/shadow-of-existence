@@ -60,6 +60,7 @@ Written r3154, `L-267`.  Stated for reversal.
 """
 import glob
 import os
+import re
 import subprocess
 import sys
 
@@ -155,18 +156,22 @@ def main():
     print('  ' + '=' * 74)
     sw = os.path.join(ROOT, 'scripts', 'gate_sweep.py')
     src = open(sw, encoding='utf-8').read()
-    check('⓸ it GLOBS the gates rather than listing them, so it grows with the corpus',
-          "glob.glob(os.path.join(ROOT, 'corpus', 'check_*.py'))" in src)
-    check('⓸ᵇ and the verdict is computed FROM the runs: the pass line is emitted only after the '
-          'red list is found empty, in the same process that produced it',
-          'if red:' in src and 'every gate green -- and this line is printed by the same run that '
-                               'measured them.' in src)
-    check('⓸ᶜ a gate that TIMES OUT is RED and not skipped -- an instrument that could not finish '
-          'has not said the tree is clean',
-          "return 'TIMEOUT'" in src and 'counts as RED' in src)
-    check('⓸ᵈ and NODE=ci is set, because check_claims refuses to guess a node and a sweep that '
-          'skipped it would be a sweep with a hole',
-          "'NODE': os.environ.get('NODE', 'ci')" in src)
+    # ⬭⬭⬭ r7355+cc66 -- THE FOUR CHECKS THAT STOOD HERE WERE CODE TOKENS STANDING FOR BEHAVIOUR,
+    #   and r7291+69 named all four the same way: *** "PROXY ⓐ on LIVE CODE ... standing for the
+    #   BEHAVIOUR the check claims; a behaviour-preserving refactor of a live instrument would red
+    #   it, so the line exemption does not reach it even though the file has one commit." ***
+    #   ⇒ `r7353` ③ gives the disposition: ** where no pin is ADMISSIBLE the repair is a
+    #     STRUCTURAL ASSERTION and the row retires as repaired-and-invisible. **  A string pin on
+    #     `if red:` cannot be made admissible -- rename the variable and the claim is untouched
+    #     while the pin breaks -- so all four are replaced by EXECUTION, which is the same repair
+    #     `L255` took for its eight at r7353.
+    #   ⌗ AND THE SEED THAT ALREADY EXISTED DOES HALF THE WORK, so it is extended rather than
+    #     duplicated: `⓸ᵉ` below already runs `gate_sweep.py` in a temp tree. Its tree contains
+    #     exactly one gate, `check_seed_ok.py`, *** a name no hand-carried list in this corpus
+    #     could possibly contain *** -- so if the sweep runs it, the sweep globbed. That was true
+    #     before and went unasserted; it is asserted now.
+    #   ⌗ Verified before deleting each string check: every claim below is carried by a seed whose
+    #     tuple is asserted, and the seeds were run and their values read before the strings went.
     # ** SEEDED: point it at a tree whose generator is broken and it must NOT report a pass **
     import shutil
     import tempfile
@@ -183,6 +188,86 @@ def main():
           f'exits {rs.returncode} and does NOT print a pass -- where the shell idiom printed one',
           rs.returncode == 1 and 'every gate green' not in rs.stdout
           and 'make_all_appendices' in rs.stdout)
+    # ⬭ r7355+cc66: and THAT run already proves the glob, which nothing asserted.  Its tree holds
+    #   one gate, `check_seed_ok`, a name no hand-carried list could carry -- and `2 instrument(s)
+    #   run` means the generator AND that gate were both run.  *** The sweep found a gate by
+    #   looking, not by being told. ***
+    check('⓸ it GLOBS the gates rather than listing them, so it grows with the corpus -- the seeded '
+          'tree\'s only gate is named `check_seed_ok`, which appears in no list anywhere, and the '
+          'seeded run reports `2 instrument(s) run`',
+          '2 instrument(s) run' in rs.stdout)
+
+    # ⬭⬭ r7355+cc66, THE THREE SEEDS NOBODY HAD WRITTEN.  Each replaces one code-token pin.
+    seeds = {}
+    with tempfile.TemporaryDirectory() as td:
+        os.makedirs(os.path.join(td, 'corpus'))
+        os.makedirs(os.path.join(td, 'scripts'))
+        shutil.copy(sw, os.path.join(td, 'scripts'))
+        open(os.path.join(td, 'corpus', 'make_all_appendices.py'), 'w').write('raise SystemExit(0)\n')
+        open(os.path.join(td, 'corpus', 'check_seed_ok.py'), 'w').write('raise SystemExit(0)\n')
+        # ⓐ THE GREEN DIRECTION, which the existing seed does not reach: the pass line is emitted
+        #   when the red list IS empty.  Together with ⓸ᵉ that is both directions of the claim,
+        #   and a one-directional seed is how a gate comes to pass on everything.
+        #   ⌗ the second gate's name could not be in a hand-carried list either, so the glob is
+        #     re-proved at a different arity: 3 instruments, not 2.
+        open(os.path.join(td, 'corpus', 'check_zz_glob_probe_never_listed.py'), 'w').write(
+            'raise SystemExit(0)\n')
+        rg = subprocess.run([sys.executable, os.path.join(td, 'scripts', 'gate_sweep.py')],
+                            cwd=td, capture_output=True, text=True, errors='replace', timeout=600)
+        seeds['green'] = (rg.returncode, 'every gate green' in rg.stdout,
+                          '3 instrument(s) run' in rg.stdout, 'RED' in rg.stdout)
+        # ⓑ `NODE` DEFAULTS TO `ci`.  The gate writes what it was given, because the sweep prints a
+        #   gate's own output only for the generator -- so the behaviour is read from the file the
+        #   gate wrote, not from the sweep's report.  And NODE is REMOVED from the parent
+        #   environment first, or the seed would be measuring this shell rather than the default.
+        probe = os.path.join(td, 'node_seen.txt')
+        open(os.path.join(td, 'corpus', 'check_zz_node_probe.py'), 'w').write(
+            'import os\n'
+            f'open({probe!r}, "w").write(os.environ.get("NODE", "<unset>"))\n'
+            'raise SystemExit(0)\n')
+        _env = {k: v for k, v in os.environ.items() if k != 'NODE'}
+        subprocess.run([sys.executable, os.path.join(td, 'scripts', 'gate_sweep.py')],
+                       cwd=td, capture_output=True, text=True, errors='replace', timeout=600,
+                       env=_env)
+        seeds['node'] = (open(probe, encoding='utf-8').read(), 'NODE' in _env)
+
+    # ⓒ A GATE THAT TIMES OUT IS RED.  `TIMEOUT = 900` is a module constant, so sleeping past it
+    #   would cost fifteen minutes a run: the seed copies the sweep with the cap at 1s and sleeps
+    #   3, because *** what is under test is the `except subprocess.TimeoutExpired` branch and the
+    #   RED classification, not the number. ***  The `re.subn` asserts it matched EXACTLY ONCE,
+    #   and if the constant moves the seed RECORDS that rather than silently testing nothing --
+    #   the cannot-fail shape this line keeps finding in other instruments.
+    with tempfile.TemporaryDirectory() as td:
+        os.makedirs(os.path.join(td, 'corpus'))
+        os.makedirs(os.path.join(td, 'scripts'))
+        _sw, _n = re.subn(r'(?m)^TIMEOUT = \d+$', 'TIMEOUT = 1', src)
+        if _n != 1:
+            seeds['timeout'] = ('TIMEOUT constant not found', _n)
+        else:
+            open(os.path.join(td, 'scripts', 'gate_sweep.py'), 'w').write(_sw)
+            open(os.path.join(td, 'corpus', 'make_all_appendices.py'), 'w').write(
+                'raise SystemExit(0)\n')
+            open(os.path.join(td, 'corpus', 'check_zz_slow.py'), 'w').write(
+                'import time\ntime.sleep(3)\n')
+            rt = subprocess.run([sys.executable, os.path.join(td, 'scripts', 'gate_sweep.py')],
+                                cwd=td, capture_output=True, text=True, errors='replace',
+                                timeout=600)
+            seeds['timeout'] = (rt.returncode, 'TIMEOUT' in rt.stdout, 'counts as RED' in rt.stdout,
+                                'every gate green' not in rt.stdout)
+
+    print(f'    ⌗ seeds: {seeds}')
+    check('⓸ᵇ and the verdict is computed FROM the runs: the pass line is emitted only after the '
+          'red list is found empty, in the same process that produced it -- SEEDED IN BOTH '
+          f'DIRECTIONS, green tree gives {seeds["green"]}, red tree gives exit 1 with no pass line',
+          seeds['green'] == (0, True, True, False))
+    check('⓸ᶜ a gate that TIMES OUT is RED and not skipped -- an instrument that could not finish '
+          f'has not said the tree is clean.  SEEDED at a 1s cap with a 3s gate: {seeds["timeout"]}',
+          seeds['timeout'] == (1, True, True, True))
+    check('⓸ᵈ and NODE=ci is set, because check_claims refuses to guess a node and a sweep that '
+          'skipped it would be a sweep with a hole.  SEEDED with NODE REMOVED from the parent '
+          f'environment ({seeds["node"][1]} = it was still set), the gate was handed '
+          f'{seeds["node"][0]!r}',
+          seeds['node'] == ('ci', False))
 
     # ============================================================ (5) the red set
     print()

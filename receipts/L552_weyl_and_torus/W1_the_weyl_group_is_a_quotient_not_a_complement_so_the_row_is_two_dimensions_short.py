@@ -123,8 +123,27 @@ def main():
     check('⓵ the row states it: "' + claim[:78] + '..."', claim in po)
     check('   and draws the row\'s difficulty from it: "a Weyl element is HALF the generating data '
           'and wants only the torus" / "`PO-5` is WALLED; this row is ONE FACTOR SHORT"',
+          # ⬭⬭ r7355+cc66, REPAIR of the DANGLING span r7293+69 named, AND A REGISTER DEFECT
+          #   FOUND WHILE MEASURING IT -- the second is the bigger finding and it is why floor 2
+          #   cannot be met here by any span.
+          #   ⇒ FLOOR 1 IS FIXED: the span now carries the subject (`The corpus treats these as
+          #     one frontier`) and the contrast the verdict rests on, where before it opened on a
+          #     bare id and a predicate.
+          #   ⛔⛔ FLOOR 2 CANNOT BE MET, AND NOT BECAUSE OF THE SPAN: *** `PROTECTED_OPEN.md`'s
+          #     `PO-4` row contains a 1,932-CHARACTER BLOCK DUPLICATED VERBATIM, *** the two
+          #     copies 18,059 characters apart inside one 32,200-character row, and BOTH of this
+          #     check's spans sit inside it.  *Measured by growing the identical region outward
+          #     from each occurrence: 1,161 characters of common prefix and 771 of common suffix.*
+          #     ⌗ So every span in that block occurs exactly twice, and no widening can change it.
+          #     ** This is the class `L551`/`R1` and `L555`/`M1` exist for, in the register they
+          #     were written about, and no gate has flagged it. **  *Routed to 66 with the
+          #     measurement; NOT asserted here, because this receipt's claim is about what PO-4
+          #     SAYS and reddening it for someone else's duplication would be a gate failing on a
+          #     defect it does not own.*
           'a Weyl element is HALF the generating data and wants only the torus' in po
-          and '`PO-5` is WALLED; this row is ONE FACTOR SHORT' in po)
+          and 'The corpus treats these as one frontier — "the gauge group and the multiplet '
+              'structure" — and they are two problems of different shape: **`PO-5` is WALLED; '
+              'this row is ONE FACTOR SHORT**' in po)
 
     # ----------------------------------------------------------- (2) the part that is RIGHT
     inv = np.linalg.inv(W)
@@ -201,8 +220,13 @@ def main():
     check('⚠ and the row\'s own SHARPER half is untouched and stays the harder question: '
           '"$SU(2)_L$ acts on **LEFT**-handed doublets, and P14 says the occupations differ on the '
           '**RIGHT**-handed pair"',
-          '$SU(2)_L$ acts on **LEFT**-handed doublets' in po
-          and 'the occupations differ on the **RIGHT**-handed pair' in po)
+          # ⬭ r7355+cc66, REPAIR of the CO-OCCURRENCE: two spans of ONE sentence pinned in one
+          #   check, so the register could carry each half in an unrelated place and the check
+          #   would pass.  One span now, the sentence whole -- and it is the same 1,932-character
+          #   duplicated block as above, so it too stands exactly twice for the register's reason
+          #   rather than the span's.
+          '$SU(2)_L$ acts on **LEFT**-handed doublets, and P14 says the occupations differ on the '
+          '**RIGHT**-handed pair' in po)
 
     print()
     if FAILED:

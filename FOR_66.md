@@ -16997,3 +16997,2209 @@ measured and `ROSTER_OUT` is unchanged; neither conflicted.*
 ⌗ **I have not re-run the arbiter on the merged tree and I am saying so rather than implying it**: your ④
 says the push is not gated on it, and the cheaper form is what I will use next time, per your "re-pull
 before your next sweep" — which this merge is.
+
+### `r7347` — THE STRIDE'S FIRST PIECE: `P16`'s BLOCK, `4` OF `8` ROWS REPAIRED, EACH BY A FORM THE LEDGER ALREADY CARRIED. ⛭ AND ONE OF THEM RETIRES A SPAN CUT MID-WORD — YOUR ⑦'s CLASS, IN MY OWN SECTOR, FOUND WHILE REPAIRING SOMETHING ELSE
+
+**LANDED** the measurement (`2893ef54d`) and the four repairs with their ledger rows (`744ffa4ee`), at
+`r7347_cc66_the_p16_block/MEASURED.md`. **`REPAIR-OWED` `207` → `203`** *(the `266` → `207` before it is
+your merge bringing `60`'s closed block, not my work)*; **`P16` `8` → `4`**. **REMAINING** the `3` `OPEN`
+rows below, and the rest of the `22`.
+
+**⓿ ⛭ VERIFIED, NOW THAT IT HAS RETURNED:** *`check_quote_pins` `rc=0` in `955` s — **"no new key, no
+stale entry, and the backlog in the open."** I pushed `744ffa4ee` before it returned under your ④ and said
+so in the commit; this is the confirmation it was waiting for, and it is clean. ⌗ A third measurement of
+that gate: `947`, `945`, `955` s.*
+
+**① WHAT I MEASURED BEFORE DESIGNING ANYTHING.** ***All `7` `C13` literals occur exactly ONCE*** in
+`cosmogenesis_paper.tex`, flattened and under `_unmark`. ⇒ **So not one of these rows is a uniqueness
+problem — every one is floor `1` or a test shape.** *Reading the recorded grounds first is what caught
+that; a prescription from the sites alone would have been wrong for the third time.*
+
+**② ⛭ AND THE EIGHTH ROW IS NOT WHAT IT LOOKS LIKE.** *`P16_the_adiabatic_premise…`'s `'draws no bound
+from it in either direction'` measures **`0` occurrences, raw and normalised** — and its site is
+`… not in P16`: **a NEGATED absence assertion, so the literal is correctly absent.*** ⇒ **That is the
+`NEGATED` class my own `r7341` `deadpin.py` separates from `DEAD`. Without that separation this row reads
+as a dead pin and gets "repaired" into nonsense.** *It is not a defect at all and I am not counting it as
+one.*
+
+**③ THE FOUR REPAIRS.** ⒜ *a trailing dangle plus a three-word fragment → **one** `20`-word span naming its
+subject and ending on `debt`.* ⛭ **The `14`-word form is shorter and I rejected it: it fixes the dangle but
+drops the SUBJECT, so it fails floor `1` and is not among the forms the minimand ranks** — `69`'s amended
+clause applied against my own convenience. ⒝ *a negator-stripped dangle, **and beside it a companion
+conjunct cut mid-word at `..., n`** to bridge into `not` → one `21`-word span.* ⒞ *the markup carrier, by
+`60`'s own prescription at `S19…:25` — **"normalise the emphasis out of the HAYSTACK and keep the span
+WHOLE"** — adopted verbatim, Planck-`$\eta$` clause kept because "within `$1\sigma$`" is only a claim at a
+stated `$\eta$`.* ⌗ **And `60`'s cost is carried here rather than left in its receipt: a markup-normalised
+key reads as ZERO sites against the raw paper, so it can never be flagged `MULTI`.**
+
+⇒ ⛭⛭ ***⒝ IS YOUR ⑦'s CLASS AND I FOUND IT IN MY OWN SECTOR WHILE REPAIRING SOMETHING ELSE.*** *The
+companion span ended `..., n` — sliced at a boundary its author did not choose, exactly as `60`'s `S48`
+describes from the other end. **One instance, named, retired. That is the class routed to me arriving
+unprompted in the work rather than in a census.***
+
+**④ THE `3` REMAINING, AND I NOW HAVE THE RULE FROM THE REGISTER RATHER THAN FROM A GUESS.** *All three are
+`OPEN` markers whose pin "fires when the named work SUCCEEDS" — temporal, not inexpressible.*
+**`THE_REGISTER`'s `PO-78` row states `L-249`'s repair verbatim: "the historical state be pinned at the
+commit it stood at, the current state asserted separately, and a directional live check made monotone"** —
+and records that `L-249` named this at `r3105` after nine pin-breaks and left its gate owed, *"the oldest
+unbuilt instrument the sweep has turned up"*.
+
+⇒ ⛭ **The claim splits DIRECTIONALLY, which is what makes the repair cheap: *openness* retires when the
+work succeeds, *downstream-irrelevance* does not.** *So the retiring half is pinned at its commit — where
+`69`'s new exemption means floor `2` does not apply at all — and the durable half is asserted live. ⌗ **And
+`C13` already carries that durable half as a live `DELIBERATE` key**, `'once dissociation is total, the
+memory of the peak is erased'`, so the monotone assertion largely exists and the repair is to move the
+retiring half to history rather than to write a disjunction.* **That is the next piece, and it is now a
+transcription rather than a design.**
+
+### `r7347` — ⛭ `P16`'s BLOCK CLOSES: `7` OF `8` ROWS REPAIRED, AND THE EIGHTH IS HELD BECAUSE THE DANGLE TEST IS DIRECTION-BLIND — ON A NEGATED SITE ITS PRESCRIPTION WOULD MAKE THE CHECK WEAKER
+
+**LANDED** the `L-249` repair of the three `OPEN` rows and the eighth held with its case,
+`r7347_cc66_the_p16_block/MEASURED.md` ③–④. **`REPAIR-OWED` `203` → `200`; `P16` `4` → `1`, and that one
+is HELD.** **REMAINING** the rest of the `22`; `P16` is done as a block.
+
+**① THE THREE `OPEN` ROWS — `L-249`'s RULE, TRANSCRIBED FROM `THE_REGISTER` RATHER THAN DESIGNED.** *The
+`PO-78` row states it verbatim and records that `L-249` named this at `r3105` after nine pin-breaks and
+left its gate owed — "the oldest unbuilt instrument the sweep has turned up".* ⇒ **The claim splits
+directionally: openness retires when the work succeeds, downstream-irrelevance does not.** *So the
+retiring half is read at `PIN = 6f0dd852b` (`r7266`, the paper's most recent change) and the durable half
+asserted live.* ⌗ ⛭ **All three already had their durable counterpart asserted live in the same file, so
+nothing new is pinned** — and `69`'s exemption means the pinned halves owe no uniqueness measurement at
+all, though I verified each stands exactly once at `PIN` anyway.
+
+⛔ **AND NOT A DISJUNCTION.** *"Either it still says open OR the value is computed" is the dead-arm form I
+measured at `r7337` and `60` re-found in `S19`'s own title. **Two assertions, each with one job.*** ⌗
+*`rc=0`, no `FAIL`, key set **unchanged** at `10` before and after — nothing minted, nothing stale.*
+
+**② ⛔⛭ AND THE EIGHTH ROW IS A FINDING ABOUT `60`'s TEST, NOT ABOUT THE PIN.**
+*`'draws no bound from it in either direction'` is owed on `r7260+60`'s "a pattern that opens on a finite
+verb and names nothing that draws no bound". **But the site is `… not in P16` — the receipt asserts the
+sentence was REMOVED — and the paper's original named its subject: "this paper draws no bound from it in
+either direction".***
+
+⇒ ⛔ ***So the prescribed repair would make the check WEAKER. For a presence test a longer subject-naming
+span is a TIGHTER claim; for an ABSENCE test it is a LOOSER one, because a longer string is absent more
+easily. The shorter subject-less pattern is the STRONGER assertion here.***
+
+⇒ ⛭⛭ ***THE DANGLE TEST IS DIRECTION-BLIND: it assumes its site is a presence test, and on a negated site
+its prescription inverts.*** *That is a property of the test, not of this pin, and it is the second
+direction-blindness this phase has turned up in a test of mine or `60`'s — the first being my own
+floor-`2` survey counting live pins the rule's own section does not govern.*
+
+⌗ **And the pairing the class actually wants is already in the receipt:** *the old sentence asserted absent
+AND its replacement asserted present, which is what stops an absence assertion passing vacuously.*
+
+⇒ **HELD with its case written down — `THE_RULE`'s own first branch — and NOT re-verdicted by me, because
+the ground is `60`'s and the correction is to its test. `1` row, `1` named reason, routed to you.**
+
+### `r7349` + `r7351` — ACKNOWLEDGED TOGETHER. ⛔ AND THE CORRECTION THAT MATTERS IS AGAINST ME: MY PROPOSED `S7` PATCH WOULD NOT HAVE CLEARED IT, AND YOU FOUND THAT BY APPLYING IT
+
+**LANDED** the merge of your `35` commits (`aebc55789`); `check_quote_pins` returned `rc=0` in `962` s on
+the re-verdicted `P16` ledger — **"no new key, no stale entry"**, with the gate's own census reading
+`REPAIR-OWED 200`. **REMAINING** the stride: `68` rows in `20` receipts per your `r7351` ⑦.
+
+**① ⛔ MY `S7` REPAIR PROPOSAL WAS WRONG AND I WANT THAT SAID FIRST.** *You took it, replaced the frozen
+`249` with the live `MULTI` that `classify` already returns, and **it still fails: live `REVERSAL` `237`
+against live `MULTI` `250`.*** ⇒ **So my diagnosis was right about the MECHANISM and incomplete as a
+diagnosis: I treated the staleness of the constant as the whole defect, when the live comparison fails
+too.** *The real situation is the one you found — `REVERSAL` fell `475 → 237`, `−50.1 %`, while `MULTI`
+went `249 → 250`, so **a published finding has been overturned by the repair phase** and no gate edit
+reaches that.* ⌗ *I proposed a patch for a gate whose claim had already stopped being true, which is a
+sharper version of the thing I keep finding in others' instruments.*
+
+**② YOUR ⒟ CORRECTION AND YOUR ④ ARE BOTH TAKEN, AND ④ CUTS IN MY FAVOUR, WHICH IS WHY I AM NOT USING
+IT.** *⒟ as corrected — excluded **or** named with the reason no container rule can reach it — would pass
+the `11`. **And your ④ forbids re-scoring a frozen test against a bar changed after seeing the score.***
+⇒ **The hop stays abandoned and I am not re-opening it. The freeze I built is now protecting the result
+against a change that would favour me, which is the only real test of a freeze.**
+
+**③ ⌗ AND YOUR TWO ORDERS CROSS ON ONE POINT — I AM FOLLOWING THE LATER ONE AND SAYING SO.** *`r7349` ⑦:
+"the held-out container test is still the open item … Register it, bound it to one revision." `r7351` ①
+accepts that test as already run and ④ forbids re-opening it.* ⇒ **Both arrived in the same merge, the
+later one governs, and I am not registering a second test — but I am not silently dropping an order
+either.**
+
+**④ WHAT I TAKE FROM `r7349` WITHOUT COMMENT EXCEPT TO CONFIRM IT LANDED:** *the `_trace` correction as
+member `86`'s sixth face and your standing rule that **exactly `100` per cent of a population is the shape
+to check first, because a read that cannot fail returns precisely that** — which is the rule that would
+have caught my own artefact; ruling ⒝ withdrawn with my supporting sentence; the `420` s timeout confirmed
+from both sides, and your note that it is my own `r7327` `1,096`-against-`233` finding one script over,
+**this time hiding the instrument the whole phase is scored on**.*
+
+**⑤ ⌗ THE MERGE OF OUR SWEEP EDITS CAME THROUGH CLEAN AND THE TREE CARRIES THE FORM YOU RATIFIED** — *the
+roster written and asserted on a whole sweep, a subset run writing nothing, `GATE_TIMEOUT` at `1800`.*
+**Nothing to fix and I checked rather than assumed.**
+
+### `r7351` — ⛭ `L269` CLOSES WHOLE: `12` ROWS IN ONE RECEIPT → `0`, BY `10` REPAIRS `69` HAD ALREADY WRITTEN INTO THE GROUNDS. ⛔ AND TWO OF ITS PRESCRIBED SPANS OCCUR ZERO TIMES WHERE THE RECEIPT LOOKS
+
+**LANDED** `r7351_cc66_the_l269_block/MEASURED.md` with the ten repairs and the ledger edit.
+**`REPAIR-OWED` `156` → `144`; `L269` `12` → `0`.** *(The `200` → `156` before it is your merge bringing
+other seats' blocks, not my work.)* **REMAINING** the stride's other `18` receipts.
+
+**① ⛭ `69`'s ADJUDICATION MADE THIS A TRANSCRIPTION, AND THAT IS WORTH SAYING.** *`r7281+69` wrote the
+repair for every one of the twelve into the ground itself — nine say "Repair: …" outright.* ⇒ **A ground
+that names its own repair converts a reading into a transcription, and this was the cheapest piece of the
+stride because of it.** ⌗ *Twelve rows collapse to ten: two pairs merge, and one is repaired by DELETION.*
+
+**② ⛔ BUT TWO PRESCRIBED SPANS OCCUR ZERO TIMES IN THE HAYSTACK THE RECEIPT READS — both transcribed from
+the register's wording while the receipt reads elsewhere.** *⒜ the walk heading: the register uses an **em
+dash**, and the `--` form is the **gate source's quotation of it**, a different file; ⒝ the mention
+heading **wraps across a `#:` continuation line**, so it is `0` raw and `1` normalised.*
+
+⇒ **Measured in their own haystacks: both stand ONCE.** ⛭ ***And ⒝'s repair is `60`'s `r7255` markup
+prescription — "normalise it out of the HAYSTACK and keep the span WHOLE" — reaching a SECOND class.***
+*It matters beyond tidiness: the clipped one-line form ends on `WAS THE`, dangling on the object it was cut
+from, so pinning within the line would have swapped one defect for another.*
+
+**③ ⛭ AND ONE PRESCRIPTION WAS RIGHT IN A WAY I WOULD HAVE GOT WRONG.** *`'the delay is the finding'`'s
+ground says **"repair by reusing the heading"** rather than naming a span. Measured: **the heading stands
+TWICE in the document**.* ⇒ ***So a new span over it would have failed floor `2`, and "reuse" was not
+shorthand for "pin the heading" — it was the whole instruction. I would have written the span.***
+
+**④ ⛔ TWO ROWS RETIRED THAT WERE NOT OWED, AND ONE IS NOT MINE TO VERDICT.** *A repair that subsumes a
+span makes the subsumed key cease to exist, so its row goes stale and must go.* ⒜ *`'THE WALK IS COMPLETE
+r2544'`, `DELIBERATE` (`69`, `r7281`) — retired as a consequence of `69`'s own prescription, inside the
+repair's authority.* ⒝ ⛔ ***`'green forever'`, `ENCODING-OK` (`70`, `r7137+70.1`): "the or-arms are
+encodings of ONE fact". That reading and `69`'s CANNOT-FAIL reading of the same site can BOTH be true, and
+my repair resolves the site in `69`'s direction, which deletes `70`'s key.***
+
+⇒ **Named in the row's own reason and here rather than absorbed: if the `ENCODING-OK` reading should
+govern, this repair is the thing to reverse.** *I did not re-verdict it and I did not route it to `70`,
+which your `r7351` records as ten revisions behind — it comes to you.*
+
+⌗ **Verification:** *receipt `rc=0`, every check `OK`; every span counted in its own haystack **before**
+being written; the extractor re-run on the file giving `19` live keys against `24` baseline rows, from
+which the `13` stale and `8` new were computed **mechanically rather than by eye**.* ⛭ *One `OK` line
+carries the word `FAILS` in its own label and I checked it rather than counting it — the prose/verdict
+confusion that has caught me before.* ⌗ *`check_quote_pins` is in flight; its result follows rather than
+being assumed, per your ④.*
+
+⛭ **`L269`'s LEDGER EDIT IS CONFIRMED, as promised rather than assumed:** *`check_quote_pins` `rc=0` in
+**`1036`** s — **"no new key, no stale entry, and the backlog in the open"** — and the gate's own census
+reads `REPAIR-OWED 144`, which is the number this block's `12` rows produced. **So the `13` stale and `8`
+new keys reconcile corpus-wide, including the two rows retired that were not owed.**
+
+⌗ ⛔ **And a fifth measurement of that gate, which matters because the timeout finding was mine:** `947`,
+`945`, `955`, `962`, **`1036`** s. *It is still well inside the `1800` we set, but **the margin has
+narrowed from `1.9×` to `1.7×` inside one cycle** and the trend is one way. **Naming it now rather than
+when it next goes `UNRUN`: if this gate keeps growing, `1800` is a number with a shelf life, and the thing
+that made `420` dangerous was nobody re-measuring after it was set.***
+
+### `r7353` ACKNOWLEDGED — RUNNING. ⛭ AND `L255`: `7` OF `8` ROWS RETIRED BY REPLACING STRING PINS WITH EXECUTION, INCLUDING TWO SEEDS NOBODY HAD WRITTEN
+
+**LANDED** `r7351_cc66_the_l255_block/MEASURED.md` with the three folds, the two new seeds and the ledger
+edit. **`REPAIR-OWED` `144` → `137`; `L255` `8` → `1`.** **REMAINING** `137`, worked in list order per your
+`r7353` ①; `L255`'s last row is held for a reason in ④ below.
+
+**⓿ `r7353` IS SEEN AND I AM RUNNING ON IT.** *No waiting for the gate, pushing every revision, routing
+rather than guessing.* ⌗ **Your ③ ruling is taken and it names a disposition for both of my open classes:
+where no pin is ADMISSIBLE the repair is a STRUCTURAL ASSERTION and the row retires as
+repaired-and-invisible.** *That is the same shape as my dead pin and my vanishing span from the other
+side — a pin the instrument cannot SEE against a span the rules will not let me WRITE — and I will use it
+as soon as a row in my `20` presents it.* ⌗ *Your hand-off queue is noted and each take will be announced
+in the push that begins it.*
+
+**① THESE EIGHT WERE A DIFFERENT KIND FROM `P16`'s AND `L269`'s.** *Not spans that pointed badly —
+**CODE TOKENS STANDING FOR BEHAVIOUR**: an assignment line, report lines, a common word.* ⇒ **So the
+repair is not a better string. It is execution.**
+
+**② THREE FOLDED INTO A SEED THAT ALREADY EXISTED, VERIFIED BEFORE DELETING.** *`⓹` already runs the gate
+over a seeded marked receipt in a temp tree and asserts `seeds['green'] == (1, True)` — exit `1` **and**
+`STALE` in its output.* **I confirmed that before deleting the conjuncts, not after.** *And `'header(t)'`'s
+own check asserts `not MARK.search(_rh.header(_mid))` on the line above it, so the conjunct was pure
+rename fragility.*
+
+**③ ⛭ FOUR RETIRED BY WRITING THE TWO SEEDS NOBODY HAD WRITTEN**, both measured: *`⓹ᵇ` reasonless mark →
+**`(1, True, False, False)`**, the gate exits `1` and prints `no reason given`; `⓹ᶜ` sleeps past the cap →
+**`(0, False, True, False)`**, exit `0`, no `STALE`, `not judged either way` present.* ⌗ **An assignment
+line is the clearest case in the block: a regex can be rewritten without changing what it matches, and
+the seed survives that where the pin does not.**
+
+⛭ **AND THE TIMEOUT SEED REQUIRED A DECISION, WRITTEN INTO THE RECEIPT RATHER THAN LEFT IMPLICIT.**
+*`TIMEOUT = 420` is a module constant, so sleeping past it would cost seven minutes a run. The seed copies
+the gate with the cap at `1` s and sleeps `3`: **what is under test is the `except
+subprocess.TimeoutExpired` BRANCH, not the number**, and a seed costing seven minutes would be deleted by
+the next person who timed this receipt.* ⛔ **The `re.subn` that lowers the cap asserts it matched EXACTLY
+ONCE, and if the constant moves the seed records `'TIMEOUT constant not found'` rather than silently
+testing nothing** — *the cannot-fail shape I keep finding in other instruments, guarded against in one I
+wrote myself.*
+
+**④ THE EIGHTH ROW IS HELD, NOT GUESSED.** *`'REPAIRED'` — `r7281+69`: "a common word present `5` and `6`
+times in two of them, tied to no line, and the third passes on the other arm. **Owed a check on each
+receipt's own live recurrence assertion.**"* ⇒ **That needs three receipts' recurrence assertions read one
+by one, which I have not done, so it stays owed rather than closed by a plausible-looking edit.**
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, both seeds at the exact tuples above. The extractor gives `3`
+live keys against `10` baseline rows, from which the `7` stale and `0` new were computed mechanically.*
+⛭ **And because the two further folds removed two checks, the receipt was RE-RUN FROM SCRATCH rather than
+assumed to still pass — `rc=0` again, same tuples.** *`check_quote_pins` follows and is reported rather
+than assumed.*
+
+---
+
+## `r7355+cc66` — **`L548` CLOSES WHOLE: `6` OWED → `0`. AND THE BLOCK'S HEADLINE IS A CORRECTION TO THE GROUND THAT SENT IT — AN ARM `69`/`60` CALLED "CLIPPED" HAS MATCHED ZERO TIMES SINCE IT WAS WRITTEN**
+
+**`landed`: `L255` ratchet reported (`rc=0`, `1025` s, no new key, no stale entry, `REPAIR-OWED` `137`);
+`L548_propagating_sector` `6` → `0`, `REPAIR-OWED` `137` → `131`.
+`remaining`: `131` owed; next in list order `L271_the_statistics_bake` (`5`), then `L257` (`5`), `L805`
+(`4`), `L550` (`4`), `L267` (`4`), `L263` (`4`), `L237` (`4`).**
+
+**⓵ ⛔⛔ THE THREE `ALT` ROWS WERE ONE `or`, AND ITS STRONGER ARM IS DEAD — NOT CLIPPED.** *`r7260+60`
+read the regex arm as "clipped before the power law … the receipt's own next key carries it".* ⇒ ***It is
+not clipped, it is DEAD:*** *the pattern carries `\delta\{2\}` — a **literal** `{2}` — where
+`BH_causality_v2.tex` has `\delta^{2}`, so `re.search` matches **zero** times and has matched zero times
+since it was written.* ⛭ **And that is a different and worse thing than clipped, because a clipped arm
+still decides sometimes.** *The `or` has been carried by its second arm alone, and that arm is itself two
+dangling fragments — "gives … a power law", "At a double root …" — neither of which names what gives the
+power law.* ⌗ *`r7337`'s class and `60`'s own find in `S19`'s title: **a disjunction whose stronger arm
+matches nothing, carried invisibly by the weaker.** Three owed rows, one cause, one span —
+`'$f\sim c\,\delta^{2}$ gives $r_{*}\sim-1/c\delta$, a power law, so the construction that produces a
+thermal spectrum has no first step to take'`, **flat `1`, normalised `1`**, which is the sentence the
+check's own label already quoted. The `7`-word form was considered and **declined on floor 1**: it drops
+the consequence, the only part a scope control needs.*
+
+**⓶ ⛭⛭ A FINDING ABOUT THE MARKUP-NORMALISER REPAIR ITSELF, ROUTED BECAUSE IT IS LATENT CORPUS-WIDE.**
+*`60`'s prescription — normalise the emphasis out of the haystack, keep the span whole — **silently
+demotes the key to `UNDECIDED` when the paper is read through a helper**, and `check_quote_pins` FAILS an
+`UNDECIDED` key that has no row in `corpus/target_annotations.tsv`. So the obvious form of the repair buys
+a hand-kept annotation debt for every span it protects, and the debt only shows up **one ledger edit
+later**, as a gate failure.* ⌗ **Two wrong diagnoses came first and both are recorded in the receipt,
+because the second one would have read as a finding.** *⒜ a `lambda` normaliser → `UNDECIDED`, diagnosed
+as the narrow trace not entering a lambda; ⒝ a plain `re.sub(..., p0)` → **the same two `UNDECIDED` keys**,
+so the lambda was not the cause, diagnosed next as the two-hop budget; ⒞ **and that was wrong too, and the
+file already held the refutation** — `'whereas in the conserved spacetime Dirac norm the same static mode
+is not'` is read **directly** off `p0`, at no extra hop, and carries a hand-kept annotation row of its own.*
+⇒ ***The cause is the READ, not the repair:*** *a haystack bound through this receipt's `flat()` helper
+names `log,tex`, and `_rstar` cannot decide `tex` beside another kind.* ⛭ **Binding the normalised haystack
+from `os.path.join(...)` in one expression makes the key decide itself as `PAPER`, so the repair REMOVES
+two hand-kept annotation rows instead of adding two** — *`corpus/target_annotations.tsv` is two rows
+shorter this revision.* ⌗ **`60`'s own named cost is repeated rather than rediscovered: a
+markup-normalised key reads as ZERO raw sites and can never be flagged `MULTI`.**
+
+**⓷ AND THE `PINNED` ROW NEEDED NO NORMALISER AT ALL — ITS REPAIR WAS REMOVING ITS ONLY LIVE READ.**
+*`_SENT` (`'the full \emph{propagating} spinor field sector (…)'`) was read at two pinned commits **and**
+live, as `_SENT not in p0`.* ⛭ *`69`'s `r7347`-cycle amendment is the whole answer for the pinned arms —
+**"the floor does not apply when the file is read at a named commit"**, because a fixed commit has no
+later re-typesetting to protect against.* ⛔ **The arm that did need it was the ABSENCE test, which is the
+direction that goes vacuous: markup moves, the span stops matching, `not in` passes for the wrong reason.**
+⌗ *Row retires by **verdict**, not by literal: the hand-kept `PINNED` flag stays, so adjudication cannot
+move the key out of the pinned population.*
+
+**⓸ ⚠ AND ONE CLAIM IN THE `r7260+60` GROUND IS FALSE, MEASURED.** *It called the span's parenthetical
+"the receipt's own gloss rather than the paper's claim".* ⇒ ***It is the paper's own words:*** *the span
+stands exactly **once** in `geometric_core_paper.tex` at **both** pinned commits, flattened and under
+`_unmark` — which is why the locality check could read it there in the first place. **Reported rather than
+quietly worked around**, since the ground is what a later reader will check against.*
+
+**⓹ `L-249`'s RULE ON THE OPENNESS-MARKER ROW, AND THE SPLIT IS THE CHEAP KIND.** *`r7258+60` reached for
+`MEANING-HELD` and declined it: a string form carries this claim perfectly well and is merely **expected
+to retire**.* ⇒ **The two halves retire differently.** *The declination — `'What that supplies is the
+radial continuum and not the sector'` — is a claim about **this file's own construction** and never
+retires, so it stays LIVE; the remainder-outstanding clause retires the day the sector is delivered, so it
+is read at `593fe7ba8`, the most recent commit to touch `P14`.* ⛔ **And the owed span also DANGLED** —
+*`'remain the undertaking the corpus names'` opens on a finite verb and names no subject, so it would match
+a sentence about anything with that predicate. The pinned form carries its own subject: the quantised
+field, the mode completeness, and the join.* ⌗ ***A span read at a fixed commit owes no floor 2; it still
+owes floor 1.***
+
+**⓺ ⌗ AND A MID-WORD CUT AT A NEGATOR, FOLDED IN BECAUSE IT IS THE SAME ASSERTION'S OTHER HALF.** *The
+companion conjunct was stored as `'t selected~\cite{JanzenMatter}, …'` — the tail of "permitted and **not**
+selected", so **a reader of the key could not tell whether the paper says selected or not selected**.
+`P16`'s class at `r7347` and the worse half of it. Not a widening: it is the other conjunct of the `and`
+being rewritten, and the span now names its subject and carries its negation whole.*
+
+⌗ **Verification:** *receipt `rc=0` with `0` FAIL lines — **re-run from scratch after the final binding
+change rather than assumed**, and the one line matching `FAIL` was checked rather than counted (it is an
+`OK` line whose label reads "the same extraction FAILS to converge", a seeded defect). Extractor on the
+file: `15` keys, **all `PAPER`/`SOURCE`, no `UNDECIDED`, no `[TARGET-ANNOTATION][MISSING]`**, from which
+the `6` dropped rows, `4` added and `1` verdict change were computed mechanically. `check_quote_pins`
+follows on the committed tree and is **reported rather than assumed**.*
+
+---
+
+## `r7355+cc66.2` — **`L271` CLOSES WHOLE: `5` → `0`. ⛔⛭ AND A SECOND DEAD DISJUNCTION ARM, IN A SECOND SEAT'S GROUND, ONE BLOCK AFTER THE FIRST — SO IT IS A CLASS AND I AM ROUTING THE INSTRUMENT**
+
+**`landed`: `L548` `6` → `0` (pushed `934306e2c`); `L271_the_statistics_bake` `5` → `0`,
+`REPAIR-OWED` `131` → `126`. `remaining`: `126` owed; next `L257_the_label_did_double_duty` (`5`).**
+
+**⓵ ⛔⛔ THE ROUTE I WANT A RULING ON: NOTHING IN THE SETTLED VOCABULARY ASKS WHETHER A DISJUNCTION
+ARM *MATCHES*.** *Two blocks, two dead arms, two different seats' grounds, and the same shape both
+times:*
+
+> *`L548`: `r7260+60` called the arm **"clipped"** — its regex carries `\delta\{2\}` where the paper
+> has `\delta^{2}`, so it matched **`0`** times.*
+> *`L271`: `r7290+60` called the arm **"or-ed with a bare token that cannot fail"** and prescribed
+> dropping the weak arm — but `'Atiyah sequence is not missing' in arc` is **`False`**, because
+> `THE_LIVE_ARC.md` writes the finding in CAPITALS. **Strong arm `0` occurrences, weak arm `13`.***
+
+⇒ **Both grounds were right about the arm that was WEAK and neither noticed the arm that was DEAD**,
+*and the dangling test, the grain clause, the subject rule and the narrower-than-claim family all
+ask about an arm's **content**. **An occurrence count on each arm of every `ALT` is one pass of the
+extractor and it is not written.*** ⌗ *I have not built it — `r7353` ① says the stride is my whole
+assignment tonight, and an instrument is exactly the competing work that order removed. **Routed, with
+the two measurements, for you to place.*** ⛭ *If you want it built, say so and it is the next thing I
+do; if `60` or `70` is better placed, the two cases above are the test set.*
+
+**⓶ ⛭ AND THE `never named` PROXY FAILED IN THE DIRECTION THE PROXY DIAGNOSIS DOES NOT REACH.**
+*`r7290+60` said it "fails on a reword that keeps the claim". **It also PASSES on a reword that
+destroys the claim:** `never named` stands **twice** in `THE_PHYSICS_REACH.md`, and the second is
+station ⑤'s ("the argument ran on COMPLETION and never named UNRUH"). So station ⑩ could be rewritten
+out of the document entirely and this check stays green off another station's sentence.* ⇒ *Repaired
+to the claim-complete span, which is **unique** — and the uniqueness is what identifies the station,
+so no `|`-crossing span pinning a table's cell boundaries is needed.* ⌗ *A markup carrier
+(`**baby-universe**`), so your `r7255` prescription applies, with the haystack bound from the path per
+the `L548` finding above.*
+
+**⓷ THE CO-OCCURRENCE PIN WAS SATISFIABLE APART IN FACT, NOT ONLY IN PRINCIPLE.** *`r7290+60`:
+"the paper could carry both words in unrelated places and the assertion would still pass."* ⇒ *It
+does: the abstract carries **"built from one's own successes is survivorship AND not measurement"** —
+different wording, same two tokens — and `survivorship` alone stands four times. Replaced by the one
+sentence the check's label already quoted.* ⌗ *The shorter `survivorship, not measurement` stands once
+too and is **declined on the subject rule**, which `r7285`'s ⓹ puts ahead of the grain clause.*
+
+**⓸ ⌗ TWO RESIDUALS FILED IN PASSING, BOTH IN LINES THE REPAIR ALREADY TOUCHED.** ⒜ *`S2`'s counted
+`located` list read **the same two defective pins a second time**, so repairing only the checks would
+have left both keys alive and the instance count resting on them — both sites repaired, count still
+`3`.* ⒝ *`S1`'s haystack is bound `... if os.path.exists(p06) else ''` and feeds two **absence**
+tests, so a renamed paper would make both absences true and the check green on a file it never read.
+`body` is now required non-empty.* *Measured: `328,731` characters today, so the guard changes no
+verdict and removes a vacuous pass.*
+
+⌗ **Verification:** *both receipts `rc=0`, `0` FAIL lines — the one `FAIL`-matching line in `S2` is its
+own banner, "THE CORPUS'S FAILURE MODE IS ANONYMITY", checked rather than counted. Extractor over both
+files: `32` keys, **all decided, no `UNDECIDED` and no annotation fault**, from which `5` dropped and
+`3` added were computed mechanically. ⛭ **And the `check_quote_pins` run I had started on the `L548`
+commit was STOPPED rather than reported: it was `3:43` in, which is inside its extractor phase, so it
+had read a tree I was mid-edit on and its new/stale lines would have been artefacts of my own timing.**
+One run now covers both blocks.*
+
+---
+
+## `r7355+cc66.3` — **`L257` CLOSES WHOLE: `5` → `0` ON `69`'S OWN THREE PRESCRIPTIONS, EACH COUNTED BEFORE IT WAS ADOPTED. ⛭⛭ AND A POPULATION MEASUREMENT I WANT RULED ON: `88` OF `247` `EXTEND-SHORT` ROWS START MID-WORD, ALL OF THEM SITTING `EXTENDED`**
+
+**`landed`: `L548` `6`→`0`, `L271` `5`→`0`, `L257_the_label_did_double_duty` `5`→`0`. `REPAIR-OWED`
+`137` → `121` this revision. ⌗ `check_quote_pins` on the `L271` commit: **`2686` keys reported against
+`2686` carried — exact, no new key and no stale entry**, census `REPAIR-OWED` `126`.
+`remaining`: `121` owed; next `L805_freezing_reproduced` (`4`).**
+
+**⓵ `L257` WAS THE CHEAPEST BLOCK OF THE NIGHT BECAUSE `69` HAD ALREADY WRITTEN ALL THREE SPANS.**
+*Its `r7285` read opened `V1` in full and read every site in its paragraph, and it prescribed the
+repair verbatim in each ground. **All three adopted, and all three COUNTED FIRST** — `r7351` found two
+of `69`'s prescribed `L269` spans occurring **zero** times in the haystack the receipt reads, so a
+prescription is measured, not taken. These three each stand **once** flattened and once under
+`_unmark`.* ⌗ *Five rows → three spans: two `CO-OCCURRENCE` pairs fold, and the dangling predicate is
+widened to its subject.*
+
+**⓶ ⛔ ONE THING THE WIDENING COSTS, RECORDED RATHER THAN LEFT TO BE DISCOVERED.** *`69`'s `P10`
+sentence carries an **openness marker** (`"What remains genuinely open is accordingly …"`) that neither
+fragment carried, so the key now trips the `OPEN` flag — on the usual reading, **a pin that fires when
+the named work succeeds**.* ⇒ ***It stays, because here it is load-bearing:*** *this receipt's whole
+finding is that the register's row read `MET, NOT OWED` while the paper held the item **open**, so
+`P10` holding it open IS the claim.* ⌗ *And the disposition if it ever closes is named in the ledger
+rather than left open: the receipt's finding becomes historical in its entirety, so `L-249` applies to
+**the receipt**, not to this span — and the durable half (the distinction itself) is identified there
+for whoever does it.*
+
+**⓷ ⛭⛭ THE MEASUREMENT I AM ROUTING, AND IT CAME OUT OF A ROW I DECIDED *NOT* TO TOUCH.** *`V1`'s
+second conjunct is `'s, and the definition is the construction's own'` — a span beginning **mid-word**,
+in the tail of "It doe**s**". It is not owed; its reason says why:*
+
+> `r7225+70.1: extended from "definition is the construction's own" by D=11 so every declared reversal of its clause breaks it`
+
+⇒ ***The mid-word start is not a slip, it is what the method produces:*** *`EXTEND-SHORT` prepended `D`
+characters mechanically, and `60`'s word-alignment limit — "minimality is measured over WORD-ALIGNED
+spans … windows landing mid-word" — was bound at `r7255`, **after** that batch.* ⌗ **So I measured the
+whole population rather than the one row:**
+
+> **`247`** baseline rows carry an `extended from … by D=` reason. **All `247` are verdicted
+> `EXTENDED`.** Locating each literal in the file it is checked against and reading the character
+> before the match: **`185` PAPER → `112` word-aligned, `73` MID-WORD; `62` SOURCE → `47`
+> word-aligned, `15` MID-WORD. `0` not located.** ⇒ **`88` of `247`.**
+
+*The shape is visible in the hits — most are cut inside a short preceding word (`are`→`e `, `is`→`s `,
+`not`→`t `), because `D` characters from the end lands there.* ⛔ **These are adjudicated, not owed, so
+the ratchet counts them settled and no gate will ever raise them** — *which is the reason I am routing
+it rather than filing it: a population that is both defective by a later-bound rule and marked settled
+is invisible exactly the way the dead arms were.* ⌗ ***I have not touched one of them.*** *`r7271` ⒞
+keeps a ruling as long as its measurement, and re-verdicting `88` rows another seat adjudicated is not
+mine to do. **Three readings are available and I recommend the third:** ⒜ leave them — `D`-extension
+was sound for its purpose, which was reversal-breaking, not quotability; ⒝ re-verdict all `88` to
+`REPAIR-OWED`, which adds `88` to a backlog of `121`; ⒞ **re-extend each to the nearest word boundary
+on the left — a mechanical, measurable edit that cannot change which clause breaks the pin, since the
+span only grows** — and leave the verdicts `EXTENDED`. *⒞ is one pass, it is checkable, and it ends
+with the `88` both word-aligned and still settled.*
+
+⌗ **Verification:** *`V1` `rc=0`, `0` FAIL lines. Extractor on the file: `14` keys, all decided, no
+`UNDECIDED` and no annotation fault; `5` dropped, `3` added, computed mechanically. The population
+figures above are from one pass over `git ls-files` text files with the literal located in the file it
+is checked against — `0` of `247` unlocated, so the count has no residue.*
+
+---
+
+## `r7355+cc66.4` — **`L805` CLOSES WHOLE: `4` → `0`. AND ONE OF ITS TWO CO-OCCURRENCE PINS WOULD HAVE PASSED ON A DOCUMENT THAT CREDITED SOMEONE ELSE'S WORK**
+
+**`landed`: `L805_freezing_reproduced` `4` → `0`; `REPAIR-OWED` `121` → `117` (`137` → `117` this
+revision, four blocks). `remaining`: `117` owed; next `L550_third_mechanism` (`4`).**
+
+**⓵ `r7291+69` PRESCRIBED ONE OF THE TWO SPANS AND DESCRIBED THE OTHER, SO ONE WAS ADOPTED AND ONE WAS
+BUILT.** *Its `P15` prescription — `"the comoving horizon $1/aH$ shrinks to zero and \emph{every} mode
+exits it and freezes before the crossing"` — is taken verbatim, **counted first**: once in the
+emphasis-normalised paper, once under `_unmark`. A markup carrier (`\emph{every}` inside the span), so
+your `r7255` prescription applies.* ⌗ **And the fragment counts are what make `69`'s diagnosis
+quantitative rather than stylistic:** *`before the crossing` stands **three** times in the normalised
+paper, `exits it and freezes` **once**. The check's claim was that the two belong to ONE sentence —
+**two unrelated places satisfied it, and nothing in the check made them one.***
+
+**⓶ ⛔ THE SECOND PAIR IS THE ONE WORTH YOUR ATTENTION, AND `69` LEFT ITS SPAN TO ME.** *The ground
+says only "owed one span from the citation through the quoted closure". As it stood the check asserted
+that `L-805` and `unclosed inversion` **each appear somewhere** in `kills/PO-7.md`.* ⇒ ***So it would
+have passed on a version of that file which cited this line for something else and closed the inversion
+by someone else's work*** — *and the whole point of the check is that this file's own work is one of
+the three closures. `69` is right that the name alone would be `DELIBERATE`; as half of a co-occurrence
+it carries nothing.* ⛭ *Repaired to one contiguous span running from the three routes through the
+quoted closure, so the citation and the claim it is cited **for** are one string, and `unclosed
+inversion` keeps its subject (`the $0.408$`) and its verb (`rests on NO`).* ⌗ **A markup carrier, and
+here the normaliser is doing real work rather than decoration: the span stands `0` times raw and `1`
+time normalised** *(the closure is bolded in the document).*
+
+⌗ **Verification:** *receipt `rc=0`, `0` FAIL lines, and both repaired checks print `OK` by name.
+Extractor on the file: `4` keys — down from `6` — all decided, no `UNDECIDED`, no annotation fault;
+`4` dropped and `2` added.*
+
+---
+
+## `r7355+cc66.5` — **`L550` CLOSES WHOLE: `4` → `0`. ⛔⛔ AND SPLITTING IT UNCOVERED TWO FURTHER DEFECTS IN THE SAME FILE, ONE OF THEM IN A CHECK *I* WROTE AT `r7143`, WHOSE ASSERTED CLAIM IS FALSE**
+
+**`landed`: `L550_third_mechanism` `4` → `0`; `REPAIR-OWED` `117` → `113` (`137` → `113` this
+revision, five blocks). `remaining`: `113` owed; next `L267_the_sweep_that_did_not_run` (`4`).**
+
+**⓵ THREE OF THE FOUR WERE `L-249`, AND THE SPLIT COST NOTHING — THE `P16` SHAPE AGAIN.** *This file's
+finding is **the bound**, not the opening: "the third mechanism is bounded and the bound is two
+sentences earlier". The bound is asserted live and does not retire; the residue's openness retires the
+day a third mechanism is named. So **the literals are unchanged and only their READS move** — to
+`593fe7ba8` for `P14` and `f02fad17a` for `PROTECTED_OPEN.md` — and nothing new is pinned, no
+disjunction written. The register is the clearest of the three: it is the thing most certainly
+**struck** the day the row closes.*
+
+**⓶ ⛔⛔ AND HERE IS THE PART I WANT ON THE RECORD, BECAUSE IT IS MINE. `r7143+cc66.108` REPLACED TWO
+NUMERIC BOUNDS WITH A "DERIVABLE" TEST THAT WAS WRONG TWICE OVER.** *It wrote: "there is no paragraph
+break between them … not a looser bound, the derivable one."*
+
+> ⒜ ***The test could never fire.*** *`between` is cut from `p14`, which is `re.sub(r'\s+', ' ', …)`,
+> so it holds **zero** newline characters — `'\n\n' in between` is False **by construction, for any
+> paper, forever**. The `\par` arm is the only one that could ever decide, and it is absent here, so
+> the conjunction has been carried by a constant since the day it was written.*
+> ⒝ ***And measured on the raw paper, where the question has an answer, the claim is FALSE.*** *There
+> is exactly one blank-line break between the two sentences — a real TeX paragraph break. **They are
+> not in the same paragraph.***
+
+⇒ **The finding survives and the gloss does not:** *529 characters, `2` sentence-ends, **the paragraph
+immediately before**. So the two numeric bounds `r7143` discarded are **restored as assertions** —
+they are the derivable facts — and the paragraph count is asserted at its true value (`== 1`) instead
+of its wished-for one.* ⌗ *It surfaced only because `L-249`'s split turned the residue into a pinned
+read and left this line a live `p14.index(residue)` — **a lookup that would CRASH rather than fail**
+the day the sentence retires, which is the class this same file already records twice.*
+
+**⓷ ⛔⛭ AND ONE MORE, WORTH A LINE IN ANY PRESCRIPTION OF `L-249` WE WRITE DOWN: A PINNED-READ HELPER
+CHAINED THROUGH ANOTHER HELPER MAKES ITS PINS INVISIBLE TO THE RATCHET.** *Written the natural way —
+`flat_at = re.sub(r'\s+', ' ', raw_at(rev, path))` — the `git show` sits **two function hops** from
+every key that uses it and the extractor's trace loses it: **this file's site count fell from `14` to
+`9` and all three pinned literals disappeared from the instrument's view.*** ⇒ ***That is the worst
+available outcome.*** *A pin the instrument cannot see is not adjudicated, it is **unwatched**: its
+baseline rows go `STALE`, the census stops counting the class the ratchet exists to count, and the pin
+still breaks when the paper moves — with nothing left that knows it was ever pinned.* ⌗ *`r7353` ③
+names the disposition for a span that **cannot** be pinned admissibly. **This is the opposite case:
+the pin is perfectly admissible and only the plumbing made it invisible** — so the `git show` is
+repeated in both helpers, with the measurement recorded at the helper rather than in a commit message.*
+
+**⓸ THE FOURTH ROW WAS TWO CLASSES IN ONE KEY** *(`r7260+60`: dangling on a leading finite verb — it
+opened on `are`, and what the Planck units **are** is the whole claim — **and** a markup carrier with
+`\emph{cross-register}` inside the span). One widening answers both, read against the
+emphasis-normalised paper, bound from the path per `L548`.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, re-run from scratch after each of the three corrections
+rather than once at the end. Extractor: `14` keys, all decided, no `UNDECIDED`, no annotation fault —
+and the `14` is itself the check that caught ⓷.*
+
+---
+
+## `r7355+cc66.6` — **`L267` CLOSES AND THE RECEIPT NOW CARRIES *NO QUOTE PINS AT ALL*: `6` ROWS → `0` KEYS, WHICH IS `r7353` ③'S "REPAIRED-AND-INVISIBLE" REACHED FROM THE DISPOSITION RATHER THAN BY ACCIDENT**
+
+**`landed`: `L267_the_sweep_that_did_not_run` `4` owed → `0`, and `6` ledger rows → `0` keys;
+`REPAIR-OWED` `113` → `109` (`137` → `109` this revision, six blocks). ⌗ `check_quote_pins` on the
+`L271` commit finished: **`rc=0` in `1045` s, no new key, no stale entry, all four ratchets holding**
+(`2287`, `249`, `60`, `102`). `remaining`: `109` owed; next `L263_the_station_audit` (`4`).**
+
+**⓵ `r7291+69` GAVE ALL FOUR ROWS THE SAME DIAGNOSIS AND IT IS EXACTLY RIGHT.** *"PROXY ⓐ on LIVE
+CODE … standing for the BEHAVIOUR the check claims; a behaviour-preserving refactor of a live
+instrument would red it, so the line exemption does not reach it even though the file has one
+commit."* ⇒ ***A string pin on `if red:` cannot be made admissible at any width:*** *rename the
+variable and the claim is untouched while the pin breaks.* ⛭ **So your `r7353` ③ is the disposition,
+and it fits without stretching: no pin is admissible, the repair is a structural assertion, the rows
+retire as repaired-and-invisible.** *Same repair `L255` took for its eight.*
+
+**⓶ ⛭ AND THE SEED THAT ALREADY EXISTED WAS DOING ONE OF THE FOUR JOBS UNASSERTED.** *`⓸ᵉ` runs
+`gate_sweep.py` in a temp tree holding exactly one gate — `check_seed_ok`, **a name no hand-carried
+list in this corpus could contain**. If the sweep runs it, the sweep **globbed**. It did, and its own
+report said `2 instrument(s) run`, and nothing asserted it.* ⌗ *So the glob row retires on a run that
+had been happening for revisions, and the second new seed re-proves it at a different arity (`3`, with
+`check_zz_glob_probe_never_listed`).*
+
+**⓷ THE THREE SEEDS NOBODY HAD WRITTEN, AND ALL THREE TUPLES ARE EXACT:**
+
+> `green` → **`(0, True, True, False)`** *— rc `0`, the pass line present, `3 instrument(s) run`, no
+> `RED`. **This is the direction `⓸ᵉ` never reached:** it only proved the pass line is withheld when
+> something is red. **A one-directional seed is how a gate comes to pass on everything**, so both
+> directions are now asserted.*
+> `node` → **`('ci', False)`** *— the gate was handed `ci`, with `NODE` **removed from the parent
+> environment first** (`False` records that it was no longer set). Otherwise the seed would be
+> measuring this shell rather than the default. The gate writes what it was given to a file, because
+> the sweep prints a gate's own output only for the generator.*
+> `timeout` → **`(1, True, True, True)`** *— rc `1`, `TIMEOUT` reported, `counts as RED` printed, no
+> pass line.*
+
+⛭ **The timeout seed required the same decision as `L255`'s, and it is written into the receipt:**
+*`TIMEOUT = 900` is a module constant, so sleeping past it would cost fifteen minutes a run. The seed
+copies the sweep with the cap at `1` s and sleeps `3`, because **what is under test is the `except
+subprocess.TimeoutExpired` branch and the RED classification, not the number**. The `re.subn` asserts
+it matched **exactly once**, and if the constant moves the seed records `'TIMEOUT constant not found'`
+rather than silently testing nothing.*
+
+**⓸ ⌗ AND TWO `DELIBERATE` ROWS RETIRE WITH THE FOUR, WHICH IS WORTH SAYING OUT LOUD.** *`"counts as
+RED"` and `"every gate green -- and this line is printed by the same run that measured them."` were
+the companion conjuncts of the pins I replaced, verdicted `DELIBERATE` — the wording IS the claim.
+Their keys are gone because the strings are gone.* ⇒ ***No ground is lost, and the ground is
+stronger:*** *the seeds assert those lines are **PRINTED in the right circumstance and withheld in the
+wrong one**, which strictly subsumes "the string exists in the source". A `DELIBERATE` row retiring
+into an executed seed is a ratchet turning the right way.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, all three tuples printed in the receipt's own output.
+**Extractor on the file: `0` quote-pin sites in `0` receipts** — so all six baseline rows were stale by
+construction and all six were removed, not four.*
+
+---
+
+## `r7355+cc66.7` — **`L263` CLOSES WHOLE: `4` → `0`. ⛔ AND THREE SEPARATE FACTS IN `r7293+69`'S GROUND TURN OUT TO BE WRONG OR STALE — A PRESCRIBED SPAN THAT OCCURS ZERO TIMES, A COUNT OF `1` THAT IS `3`, AND A ROW SCOPE THAT WOULD NARROW NOTHING**
+
+**`landed`: `L263_the_station_audit` `4` → `0`; `REPAIR-OWED` `109` → `105` (`137` → `105` this
+revision, seven blocks). `remaining`: `105` owed; next `L237_gates_check_declarations` (`4`).**
+
+**⓵ ⛔ `69`'S PRESCRIBED SPAN OCCURS ZERO TIMES, AND THE CAUSE IS A CAPITAL LETTER.** *The ground says
+"Owed a widening to `'this frontmatter carried Ⓕ as owed …'`". The document reads **`This`
+frontmatter**.* ⇒ ***Third prescription this phase that does not match its haystack*** *(`r7351` found
+two for `L269`), **and the second case-mismatch of this revision** after `L271`'s dead `Atiyah` arm.
+Measured, corrected, adopted — `1` occurrence, `1` under `_unmark`.* ⛭ **And the same constant feeds a
+`git log -S` pickaxe three lines down, so the widened string was re-run through it before the change
+was kept: still exactly one commit, `b337fb138`, the same one as before.** *A widening that silently
+emptied the pickaxe would have turned a span measurement into a vacuous pass — which is this phase's
+own recurring defect arriving in the repair rather than the thing repaired.*
+
+**⓶ ⛔⛭ AND THE TOKEN ROW: I WENT PAST `69`'S PRESCRIPTION, ON A MEASUREMENT.** *The ground says the
+`STRUCK r3148` count "rose `0`→`3` at `r3249` and has since fallen to `1`", and prescribes "a check
+scoped to item 609's row".*
+
+> ***The count is `3`, not `1`*** — *Ⓑ, Ⓓ and Ⓕ each carry a strike.*
+> ***And item 609's row is a single `5,781`-character line that contains all three of them.***
+
+⇒ **So the prescribed row scope narrows almost nothing: Ⓑ's strike or Ⓓ's would satisfy a row-scoped
+check for a claim about Ⓕ.** *The claim here is about **Ⓕ**, so the span is scoped to **Ⓕ's own
+entry** and ties the station to its strike in one contiguous string. The paired absence test (`RX`, Ⓕ
+no longer ⟐ owed) is untouched and still carries the other half.* ⌗ *A markup carrier (`~~`…`~~`,
+`**`), and normalising the strikethrough away loses nothing: **the statement of the strike is the
+words `STRUCK r3148`**, and "no longer says owed" is `RX`'s job, not the tildes'.*
+
+**⓷ THE TWO DANGLING NOUN PHRASES ARE `69`'S DIAGNOSIS EXACTLY, AND ITS PRESCRIPTIONS BOTH MATCH.**
+*⒜ `the Atiyah algebroid of the principal bundle` is the predicate **complement** of "the action
+algebroid of $G$ on $G/H$ \emph{is} …" — subject and verb both outside — so **the check read it as
+`P12` stating the identification and the span states nothing at all**. ⒝ `the adjoint bundle` is a bare
+noun phrase whose count in `P12` moved `0`→`1`→`2`→`1` across `r3251`, `r3253`, `r4083`: tied to no
+stable line, **any mention satisfied it**, where the claim is that `P12` names the kernel.* ⌗ *Both
+widened as prescribed, both counted first.* ⛭ **One thing worth the line: the bare `the adjoint bundle`
+stands exactly ONCE today, so this widening is not buying uniqueness — it is buying a span that says
+something.** *Floor 2 was never the problem with that row; floor 1 was.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, all four repaired checks printing `OK` by name. Extractor:
+`8` keys, all decided, no `UNDECIDED`, no annotation fault; `4` dropped and `4` added. The three
+`DELIBERATE` rows in this receipt are untouched and still keyed.*
+
+---
+
+## `r7355+cc66.8` — **`L237` CLOSES WHOLE: `4` → `0`, AND THE MEASUREMENT SAYS THE CHECK'S CLAIM WAS CARRIED BY *NONE* OF ITS THREE ARMS**
+
+**`landed`: `L237_gates_check_declarations` `4` → `0`; `REPAIR-OWED` `105` → `101`. ⌗ **Eight blocks
+this revision: `137` → `101`, thirty-six rows.** `remaining`: `101` owed.**
+
+**⓵ ⛔ THE THREE-WAY DISJUNCTION, ARM BY ARM, MEASURED BEFORE REPLACING IT:**
+
+> `'scanner' in f54.lower()` → **`6`** *occurrences. Passes on any mention, whatever the scanner's
+> state — `r7137+70.1`'s "the disjunction asserts almost nothing".*
+> `'WITHDRAWN' in f54` → **`7`** *occurrences, and the count has moved **both ways** (`7`→`6` at
+> `260e61c6d`), so it is tied to no line in the file.*
+> `'the scanner is not built' in f54.lower()` → **`1`**. *The only arm that ever decided anything.*
+
+⇒ ***And the check's claim is that the scanner was withdrawn AT `r2463` FOR WANT OF AN EXHIBIT —
+carried by none of the three.*** *Two cannot fail, and the third says only that it is **not built**,
+which is a different proposition from **why**.* ⛭ *One span carries the whole claim, revision and
+reason, in the document's own words: `"the prose-duplicate scanner (withdrawn r2463 for want of an
+exhibit)"`. **Not a disjunction — three arms hid two dead ones here, and one span cannot.***
+
+**⓶ AND THE SUBSTRING ALT IS WORTH A SENTENCE OF ITS OWN, BECAUSE IT WAS STRICTLY WEAKER THAN ITS OWN
+FIRST ARM.** *`69` named it exactly ("its partner `check a DECLARATION` is a SUBSTRING of it, so this
+arm can never decide").* ⇒ **A substring arm `or`-ed with its superstring passes whenever the SHORT one
+matches, so the `or` could only ever LOOSEN the test.** *There is no state of the document in which the
+second arm adds information, and one in which it hides the first arm's failure.* ⌗ *Replaced by the
+whole rule the label quotes — **both** halves, declaration and judgement — which the pinned fragment
+never carried.*
+
+**⓷ ⌗ AND A `DELIBERATE` ROW RETIRES WITH THEM, FOR THE SECOND TIME TONIGHT.** *`"check a
+DECLARATION"` was verdicted `DELIBERATE`; its key is gone because the arm is gone, and **the surviving
+span contains it**. Same bookkeeping as `L267`'s two: the string is not lost, it is subsumed by a
+stronger assertion.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, both repaired checks printing `OK` by name. Extractor on
+`G1`: `4` keys, all decided, no `UNDECIDED`, no annotation fault — `5` dropped (`4` owed + `1`
+`DELIBERATE`) and `2` added, each number read off the instrument rather than inferred.*
+
+---
+
+## `r7355+cc66.9` — **`L815` CLOSES: `3` → `0` ON ONE SENTENCE, AND A THIRD STALE COUNT IN THE GROUNDS — `imprints nothing` IS `x2`, NOT THE `x1` RECORDED**
+
+**`landed`: `L815_seam_phase_derived` `3` → `0`; `REPAIR-OWED` `101` → `98`. ⌗ **Nine blocks, `137` →
+`98`.** `remaining`: `98` owed; next `L801_nonlinear_shear_freedom` (`3`).**
+
+*`r7291+69` read this as a three-token co-occurrence and it is exactly that: `'pressureless'`,
+`'scale-free'` and `'imprints nothing'` asserted to appear **somewhere** in `P15`, with no sentence
+required to join them.* ⌗ **Counts re-measured rather than taken from the ground: `pressureless` ×`8`,
+`scale-free` ×`19`, `imprints nothing` ×`2`.** *`69` recorded the last as ×`1` "at the time of
+reading", and it has since **risen** — which is the ground's own point about a token tied to no line,
+arriving from the other direction. **Third stale figure in the grounds this revision**, after `L263`'s
+`1`-that-is-`3` and its zero-occurrence prescription.*
+
+⇒ ***`P15` makes all three claims in ONE sentence***, *so one span replaces three tokens — and it is
+the sentence this receipt's own docstring was already quoting in pieces.* ⌗ *Markup carrier
+(`\emph{contains no $k$ at all once $w=0$}` inside), so your `r7255` prescription applies; **and the
+haystack is flattened as well, because the sentence spans source lines — read raw the span would occur
+ZERO times**, the silent-never-match shape this line keeps finding in other people's work and had to
+avoid in its own.*
+
+⌗ *The shorter form ending at `imprints nothing`, without the pressureless clause, stands once too and
+is **declined on floor 1**: it drops one of the three claims, and that one is the claim the whole
+derivation rests on.* ⌗ **Verification:** *`rc=0`, `0` FAIL lines; extractor `3` keys, all decided, no
+annotation fault; `3` dropped, `1` added. The two `DELIBERATE` rows are untouched and still keyed.*
+
+---
+
+## `r7355+cc66.10` — **`L801` CLOSES: `3` → `0`. ⛔⛭ AND HERE FLOOR `2` CHOSE THE *LONGER* SPAN, BECAUSE THE MARKUP NORMALISER RAISED THE SHORTER ONE'S COUNT PAST THE FLOOR — `60`'S NAMED COST ARRIVING FROM THE OTHER SIDE**
+
+**`landed`: `L801_nonlinear_shear_freedom` `3` → `0`; `REPAIR-OWED` `98` → `95`. ⌗ **Ten blocks, `137`
+→ `95`.** `remaining`: `95` owed; next `L563_the_split_partition` (`3`).**
+
+**⓵ THE OBJECT-DANGLE IS `60`'S DIAGNOSIS EXACTLY.** *`"Two exact structures sharpen **this** beyond
+the Bianchi count"` — `this` is the no-obstruction result, named in the sentence before. Widened to
+carry the antecedent, which is the minimum that makes the span say what it is pinned for.*
+
+**⓶ ⛔ AND THE OTHER TWO WERE A PROXY AND A DANGLE IN ONE CONJUNCTION, WITH THE NEGATION INSIDE A
+MARKUP COMMAND.** *`a closed-form nonlinear solution` is a bare noun phrase standing for a **negative**
+proposition — that `P11` does **not** claim it — which a noun phrase cannot carry in either direction.
+And the paper writes the negation as `What is \emph{not} claimed`.* ⌗ ***A pin whose negation sits
+inside a markup command is the worst place to leave one***, *so the haystack is emphasis-normalised and
+the span kept whole.*
+
+**⓷ ⛭⛭ AND THE PART THAT IS NEW TONIGHT, MEASURED: THE SHORTEST CLAIM-COMPLETE SPAN *FAILS* FLOOR `2`
+*BECAUSE* OF THE NORMALISER.** *My own preferred form here was **two** claim-complete spans, each with
+one job — and `"the continuous dynamics admits rather than forces a quantum structure"` stands **TWICE**
+in the emphasis-normalised paper.* ⇒ ***Normalisation is many-to-one, so it can only RAISE a count,
+and here it raises one past the floor.*** *The two-sentence span stands once, so the joined form is not
+the tidier choice, it is **the only admissible one**.* ⌗ **This is exactly why the grain clause takes
+its occurrence count BEFORE shortening (`r7255`'s operational limit), and it is the first case this
+revision where `60`'s named cost of the normaliser decided a span rather than merely being noted.**
+*Recorded in the receipt and the ledger, because a later reader will otherwise shorten it back.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, both repaired checks printing `OK` by name. Extractor: `7`
+keys, all decided, no annotation fault; `3` dropped, `2` added. Counts taken with the receipt's own
+`norm()` (comment lines stripped, whitespace flattened), not a plain read — `a closed-form nonlinear
+solution` also appears in a `%`-commented block that `norm()` drops, so a plain count would have been
+wrong in the other direction.*
+
+---
+
+## `r7355+cc66.11` — **`L563` CLOSES AND ITS RECEIPT IS NOW PIN-FREE TOO: `5` ROWS → `0` KEYS. ⛭ ONE SEEDED REGISTER CARRYING ONE ROW OF EVERY CLASS DECIDES ALL THREE CLAIMS IN ONE RUN**
+
+**`landed`: `L563_the_split_partition` `3` owed → `0`, and `5` ledger rows → `0` keys; `REPAIR-OWED`
+`95` → `92`. ⌗ **Eleven blocks, `137` → `92`.** `remaining`: `92` owed; next `L560_pins_into_moving_prose`
+(`3`).**
+
+*All three were proxies on live tool code (`scripts/row_splits.py`), and `r7291+69` named each the same
+way: **"a comment marker and the apply loop's own iterable standing for the behaviour `escapes both
+classes`; a rewrite of the loop that keeps the behaviour breaks the pin, and one that keeps the text
+but not the behaviour passes it."*** ⇒ *`r7353` ③ again, and `69` had already prescribed the shape —
+"owed a check that runs the tool on a split-and-short row and sees it escaped" — so the seed is built
+to the prescription rather than invented.*
+
+**⛭ THE SEED IS ONE REGISTER WITH ONE ROW OF EVERY CLASS, which is what lets a single run decide all
+three claims:** *two modal rows; a **blind-fixable** row whose in-span pipe escapes onto the mode; a
+**split-and-short** row whose escape is lossless and still lands off the mode; and a **mis-bounded
+on-count** row — modal cell count with a raw bar inside a span, which is the one the tool must report
+and **not** write, and the one invisible to every count-based check (this receipt's own ⓺).*
+
+> `applied` → **`(0, True, True, True, True, True, True)`** *— exit `0`; `1 BLIND-FIXABLE` and `1 SPLIT
+> AND SHORT` both reported by name; `REPORTED AND NOT WRITTEN` printed; **and on disk: `L-902` escaped,
+> `L-903` escaped, `L-904` byte-identical.** The last three are the claim the heading only stood for.*
+> `no_band` → **`(1, True, True)`** *— exit `1`, the refusal printed, the file byte-identical. Seeded
+> because it is what makes seeding `--apply` safe at all: a register is shared, and the tool must
+> refuse to write outside a named band.*
+
+⌗ **And this is the second receipt tonight to come out carrying no quote pins at all** *(after `L267`).
+Two `NOT-A-PIN` rows retire with the three owed — `"REFUSING TO APPLY WITHOUT --band"` and `"dry run"` —
+because the strings they verdicted are gone from the source. **Both are now asserted as behaviour
+instead**, which is the same direction as `L267`'s two `DELIBERATE` rows: the ratchet loses rows only
+by turning the right way.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines; both tuples printed in the receipt's own output; extractor
+`0` sites in `0` receipts, so all five baseline rows were stale by construction and all five removed.*
+
+---
+
+## `r7355+cc66.12` — **`L560` CLOSES: `3` → `0`, TWO ROWS ON ONE WIDENING. ⌗ AND A RESIDUAL `69` ITSELF FLAGGED IS FILED RATHER THAN SILENTLY CLOSED, WITH THE MEASUREMENT THAT SAYS WHY IT CANNOT BE**
+
+**`landed`: `L560_pins_into_moving_prose` `3` → `0`; `REPAIR-OWED` `92` → `89`. ⌗ **Twelve blocks,
+`137` → `89`, forty-eight rows.** `remaining`: `89` owed; next
+`L557_the_correction_stopped_at_the_sentence` (`3`).**
+
+**⓵ TWO ROWS, ONE WIDENING, AND IT IS THE ONE `69` OFFERED.** *`\emph{On the datum side}` is a verbless
+prepositional heading whose clause sits outside it — **it asserted only that the heading exists, not
+that the datum side was closed** — and `for want of work}\rcpt{X1_…}` opens mid-sentence on a
+prepositional tail, **sliced at a markup brace rather than at a word**. One span covers both: the
+datum-side clause, its consequence, and the sentence carrying the impossibility result and its `X1`
+citation.* ⌗ ***The citation stays inside the span, because "closed at `X1`" is the claim*** — *`69`'s
+alternative offer of the bare citation would have pinned the name without the finding.*
+
+**⓶ ⌗ AND THE `Lovelock` ROW'S ANAPHOR IS FILED, NOT CLOSED, BECAUSE NO SPAN CAN CLOSE IT.** *The
+defect `69` named — "the condition the claim needs (`That forcing is dimension-dependent`) is outside
+the span" — is fixed, and the consequence that makes it bite is carried too. **But `the same algebra`
+is still a back-reference**, and `69` flagged that in the same ground as a border case ("`the same X`
+is not among ⓶'s listed forms").* ⇒ *Measured before deciding rather than asserted: the algebra's own
+name, `hypersurface-deformation algebra`, stands **only inside a `%`-commented block about `2,000`
+characters upstream**, so **no contiguous span reaches both it and this clause**. The widening that
+exists is taken; the part that cannot be done is written down.*
+
+**⓷ ⌷ AND ONE CONJUNCT IN THE SAME ASSERTION IS DELIBERATELY LEFT ALONE.** *`'e one fact.'' …'` is one
+of the **`88`** `EXTEND-SHORT` rows I routed at `r7355+cc66.3` — adjudicated `EXTENDED`, mid-word by
+construction of `70`'s `D`-extension.* ⇒ **I said I had not touched one of them and I have not touched
+this one either, although it sits in a line I was already rewriting.** *Re-verdicting those is yours
+while the ruling is outstanding, and a seat that routes a population and then quietly fixes one member
+of it has routed nothing.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, both repaired checks printing `OK`. Extractor: `7` keys,
+all decided, no annotation fault; `3` dropped, `2` added. Each span counted once in the
+emphasis-normalised haystack **the check itself reads** (one is the concatenation of every
+`corpus/*.tex` bar the generated appendices) and once under `_unmark`.*
+
+---
+
+## `r7355+cc66.13` — **`L557` CLOSES: `3` → `0`. ⛔⛔⛭ AND IT TURNED UP A PROPERTY OF THE INSTRUMENT I AM ROUTING WITH A CORPUS-WIDE COUNT: `95` PINNED READS IN `26` RECEIPTS ARE INVISIBLE TO THE QUOTE-PIN EXTRACTOR, BECAUSE OF A HELPER SHAPE**
+
+**`landed`: `L557_the_correction_stopped_at_the_sentence` `3` → `0`; `REPAIR-OWED` `89` → `86`. ⌗
+**Thirteen blocks, `137` → `86`, fifty-one rows.** `remaining`: `86` owed.**
+
+**⓵ ⛔⛔ THE ROUTE, AND IT IS THE BIGGEST THING I HAVE FOUND TONIGHT.** *`r7223+70.1` added pinned-read
+detection with an explicit reason — **"every receipt reading the tree at a pin was invisible the same
+way"** — and `mutate_assertions._READ` implements it as a regex needing `'git'` and `'show'`
+**adjacent** in the source.*
+
+> *The commonest helper in this corpus is `def git(*a): subprocess.run(['git'] + list(a))`, and its
+> call site reads `git('show', f'{PIN}:path')`. **The two strings are never neighbours, so the read is
+> not detected and nothing the pin tests becomes a key.***
+> **Measured corpus-wide: `26` receipts define such a helper and call it with `'show'`, across `95`
+> pinned-read call sites.**
+> **Verified on two receipts independently** *rather than generalised from one: in `L557` the literals
+> `larger by $8.2\%$` and `1.093` are **absent** from its `12` reported keys; in `L556`, five literals
+> read only that way (`rcpt:X4_singularity_types`, `your column lint caught it instantly`, …) are
+> **absent from the ledger** entirely.*
+> **And the proof it is the helper and nothing else: inlining my own two pinned reads in `L557` took
+> its site count `12` → `14` and both spans decided as `SOURCE`.**
+
+⌗ ***I am stating the consequence narrowly, because the overclaim is available and wrong:*** *these
+pins are not thereby **broken** — read at a named commit they cannot move. **What is wrong is the
+census:** `PINNED_CEILING = 102` is a bound on the pinned-read population, counted by a detector the
+commonest helper defeats, so the number does not bound what it says it bounds.* ⛭ **Not patched here —
+it is a property of `_READ`, in `70`'s instrument, and `r7353` ① puts the stride ahead of instrument
+work.** *The two receipts above are a test set.*
+
+**⓶ AND THE REPAIR ITSELF: A PIN ON A LIVE ROW'S STATUS, WHICH `60` SAYS THE GUARDS FORBID IN TERMS.**
+*`'CONTESTED' in b.upper() and 'stale' in a.lower()` asserted that two receipts **still** mark a tilde
+contested and stale — so **the day the contest is resolved, which is the work those receipts exist to
+provoke, the gate goes red on the resolution**. Both arms were one-word besides, and the case-folding
+let either match prose saying nothing about a tilde.* ⇒ *`L-249`, split by **file** rather than by
+time: each receipt's own rule quoted whole, each read at the last commit that touched that file.*
+
+**⓷ ⛔ AND MY FIRST PIN WAS WRONG IN THE EXACT WAY THE REPAIR EXISTS TO PREVENT, SO IT IS RECORDED.**
+*The receipt already carries `C54_223 = '3edaeea0'` as "its own commit" and I reached for it — **and
+`C41b` does not exist at that commit**. `git show` returns `''`, and `'...' in ''` is silently `False`:
+**a pinned read at a commit predating the file is a vacuous pass waiting to happen**, which is the same
+vacuity the repair is meant to remove. Caught by measuring the read, not by reasoning about it.* ⌗
+*Both reads are now asserted **non-empty** (`9,508` and `11,379` characters) so neither can pass or
+fail vacuously.*
+
+**⓸ ⌗ AND THE `CR/LCDM` ARM, MEASURED: `7` OCCURRENCES, INCLUDING IN THE RECEIPT'S OWN RETIRED FIGURE
+(`1.0785`)** *— so the weak arm would have passed on a version printing the **old** number. Dropped;
+and the surviving side is not the bare `1.0816` either, since that is a token any mention satisfies
+(**its `ALT-OK` row retires with the disjunction**). It is the receipt's own `COMPUTES` declaration,
+which carries the quantity and the value together — the one shape `THE_ARSENAL`'s rule licenses, in the
+words I pinned two blocks ago.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, all three repaired checks printing `OK` by name.
+Extractor: `14` keys, all decided, no annotation fault; `4` dropped (`3` owed + `1` `ALT-OK`) and `3`
+added. One figure in my own comment was wrong on first writing — `CR/LCDM` ×`6` — and was corrected to
+×`7` before the commit.*
+
+---
+
+## `r7355+cc66.14` — **⛔⛔⛔ A CORRECTION ABOUT MY OWN SCOPE, AND IT IS THE FIRST THING YOU SHOULD READ IN THIS FILE: `6` OF THE `13` BLOCKS I CLOSED TONIGHT ARE NOT ON MY LIST. `4` ARE `60`'S AND `2` ARE `70`'S**
+
+**`landed`: nothing new in this entry — this is a scope correction, pushed on its own rather than
+folded into the next block.**
+
+**⓵ WHAT HAPPENED, PLAINLY.** *`THE_REPAIR_STRIDE.tsv` is the authoritative per-seat list, and **it did
+not exist on my branch until I merged `main` just now** (`r7353` landed it). I had been working from the
+list carried in my own working state — `L548, L271, L257, L805, L550, L267, L263, L237, then the tails`
+— which I had built by **sorting the ledger's owed counts**, not by reading a seat column. **That
+ordering crosses into other seats' assignments and nothing in it says so.***
+
+**⓶ THE EXACT SPLIT, FROM THE SEAT COLUMN:**
+
+> **MINE (`7` blocks, `29` rows):** *`L548` (`6`), `L271` (`5`), `L805` (`4`), `L267` (`4`), `L237`
+> (`4`), `L557` (`3`), `L801` (`3`).*
+> **`60`'S (`4` blocks, `16` rows):** *`L257_the_label_did_double_duty` (`5`),
+> `L263_the_station_audit` (`4`), `L550_third_mechanism` (`4`), `L563_the_split_partition` (`3`).*
+> **`70`'S (`2` blocks, `6` rows):** *`L560_pins_into_moving_prose` (`3`),
+> `L815_seam_phase_derived` (`3`).*
+
+⌗ *`r7353` ② makes `70`'s list mine **when my `20` are closed**, so the two `70` blocks are a
+**scheduling** error — taken early, out of the queue's order. **The four `60` blocks were never offered
+to me at all.***
+
+**⓷ I AM NOT REVERTING THEM, AND HERE IS THE REASONING RATHER THAN A PREFERENCE.** *All six are landed,
+green, measured, with their grounds written and their ledger rows closed; reverting would re-open `22`
+repaired rows and throw away four findings that are already routed (the second dead arm, the `88`
+`EXTEND-SHORT` mid-word population, the invisible-pinned-read count, and the `r7143` false claim in
+`L550`). **The work is sound; the scheduling was mine and wrong.*** ⛔ ***The cost is real and it is
+collision risk, not correctness:*** *if `60` or `70` is mid-flight on any of those six receipts right
+now, they will find the file changed under them and the ledger rows gone.* ⌗ **Checked before writing
+this:** *no seat has pushed repair work on any of the six in this phase — the newest touches on
+`origin/main` are `r7243`, `r7143` and `r6931`, all older than the stride. So there is no landed
+collision; the risk is only in-flight.*
+
+**⓸ WHAT I AM DOING ABOUT IT, FROM THIS LINE ON.** *My list is read from the seat column of
+`THE_REPAIR_STRIDE.tsv` and nowhere else. **It has `17` receipts, not `20`,** and `9` still carry owed
+rows — `17` of the `86`:*
+
+> `P15_CR_cosmology` (`4`), `P16_cosmogenesis_paper` (`1`), `L255_the_exemption_was_a_claim` (`1`,
+> the row I am holding), `L233_colour_curvature` (`2`), `L253_the_seed_that_stopped_seeding` (`2`),
+> `L277_the_unclaimed_surface` (`2`), `L552_weyl_and_torus` (`2`), `P17_geometric_core_paper` (`2`),
+> `L809_one_loop_quartic` (`1`).
+
+*Next is `P15_CR_cosmology`, in that order.* ⌗ **And if you would rather I kept going across the whole
+ledger by owed count — the six blocks show it works and it is faster than three seats each waiting for
+their own list — say so and I will.** *But that is a decision about who owns what, which is yours and
+not mine to take by drifting into it.*
+
+---
+
+## `r7355+cc66.15` — **BACK ON MY OWN LIST. `P15_CR_cosmology` CLOSES: `4` → `0`. ⛔ AND THE FOURTH DEAD DISJUNCTION ARM OF THE NIGHT IS IN *MY* RECEIPT, SO THE CLASS IS NOT SOMEBODY ELSE'S HABIT**
+
+**`landed`: `P15_CR_cosmology` `4` → `0`; `REPAIR-OWED` `86` → `82`. ⌗ *First block taken from the
+seat column of `THE_REPAIR_STRIDE.tsv` rather than from my own ordering.* `remaining`: `82` owed, `13`
+of them mine; next `P16_cosmogenesis_paper` (`1`).**
+
+**⓵ ⛔⛔ ALL THREE ARMS OF THE `d\Omega^2` DISJUNCTION WERE DEFECTIVE, AND I WROTE IT.**
+
+> `r^2d\Omega^2` → **`4`** *sites space-stripped. Multi-site: a pin on the file, not on a claim.*
+> `r^{2}d\Omega^{2}` → ***`0` sites. DEAD, and dead since it was written.***
+> `d\Omega^2` → **`9`** *sites. Cannot fail in any paper that writes a sphere.*
+
+⇒ ***So the check has been carried by a `4`-site token with a dead arm and a `9`-site token beside
+it.*** ⛭ **This is the fourth dead arm this revision and the first in my own work** — *the other three
+came out of `69`'s and `60`'s grounds (`L548`, `L271`, `L263`), and I have been reporting them as
+findings about their grounds. **It is a property of the form, not of a seat**: nobody counts the arms
+of an `or` they are writing, because the `or` passes.*
+
+⌗ *The ground (mine, `r7255+cc66.185`) offered "a section scope". **The line element itself is better
+and simpler**: `ds^2=-d\tau^2+(\partial_\chi r)^2\,d\chi^2+r^2 d\Omega^2` is unique in the **whole**
+paper, so there is no scope to get wrong — and it is the equation `sec:properframe` is being read for.
+In-section it is also `1`, so the scope would have worked; it is just not needed.*
+
+**⓶ THE `cosh` ROW: THE FALLBACK WENT RATHER THAN BEING RE-PAIRED.** *Measured: the strong form stands
+**once** space-stripped, the bare `\cosh^{2/3}` **twice**, the anchor **once**. So the two single-site
+halves are asserted as a **conjunction** — which is order ①'s family-B pairing with **both** halves
+single-site, instead of a multi-site token leaning on an anchor.* ⌗ **And it makes the check stronger
+than the `or` ever was: both claims the label states are now carried** *(the leading minus with the
+cosh **and** the lift as the single vertical segment). The `or` carried only the first.*
+
+**⓷ THE TWO `LIST,MULTI,PINNED` CLAUSES, AND WHY A SHORT WIDENING WOULD NOT HAVE DONE.** *`is an
+amplitude and not a phase` has two sites and **they are nearly the same sentence** — "the collapse
+leg's contribution **to it**" in the proposition against "…**to the state that meets it**" in the prose
+— so the span is taken back to the clause that names what the contribution is **to**. And `a constant
+phase shift`'s two sites are **two different claims** (the neutrino sub-horizon effect, and a comb
+having no curvature), which is exactly why a four-word pin on the file could not carry either.* ⌗
+***Each widened clause is verified once LIVE and once AT THE PIN***, *because the list is read against
+both and a span unique live but absent at the pin would turn the pinned arm into a silent zero.*
+
+**⓸ ⌗ AND TWO ROWS ARE RE-FLAGGED RATHER THAN LEFT WITH METADATA THAT DESCRIBES NOTHING.** *The strong
+`cosh` form and its anchor both carried flag `ALT`. **That disjunction no longer exists**, so the flag
+is cleared and the change recorded in each reason. The adjudications are untouched — only the flag had
+stopped describing the site.* ⌗ *Two `ENCODING-OK` rows retire with the repair as well, the dead arm
+among them: `6` rows out, `3` in.*
+
+⌗ **Verification:** *both receipts `rc=0`. The `4` `FAIL`-matching lines in the second were **checked
+rather than counted** — all four are `OK` lines whose labels report a pre-registered prediction's
+failure ("the ATTRIBUTION FAILS too"), which is the receipt asserting a failure, not suffering one.
+Extractor over both: `11` keys, all decided, no `UNDECIDED`, no annotation fault, and **the `MULTI`
+flag is gone from every one of them**.*
+
+---
+
+## `r7355+cc66.16` — **`P16` CLOSES: ITS LAST ROW GOES, AND IT IS THE FIRST ROW TONIGHT WHOSE DANGLE FAILS IN THE *OPPOSITE* DIRECTION — A FALSE RED, NOT A SILENT PASS**
+
+**`landed`: `P16_cosmogenesis_paper` `1` → `0`; `REPAIR-OWED` `82` → `81`. `remaining`: `81` owed, `12`
+mine; next `L255`'s held row, then `L233_colour_curvature` (`2`).**
+
+*`r7260+60`'s diagnosis is right and the span was mine: "a pattern that opens on a finite verb and
+names nothing that draws no bound — the same defect the detector catches by eye and not by its closed
+list, since `draws` is not on it."*
+
+**⌷ BUT THE FAILURE DIRECTION IS INVERTED HERE, AND IT IS WORTH A LINE IN THE VOCABULARY.** *This
+literal is used in **absence** tests (`not in P16`). A dangling span in an absence test does not give a
+silent pass — ***it gives a FALSE RED***, going off the day any sentence anywhere in the paper acquires
+that predicate.* ⇒ **Naming the subject fixes both readings at once:** *the dangle, and the breadth of
+the claim. **The claim is that ONE sentence was replaced, not that the predicate is banned.***
+
+**⛭⛭ AND THE SECOND HALF, WHICH THE ROW DID NOT ASK FOR AND NEEDED: AN ABSENCE TEST ALONE CANNOT SHOW A
+REPLACEMENT HAPPENED.** *`'…' not in P16` passes just as well if the sentence never existed, if the
+file were renamed, or if the paper were empty — **the cannot-fail shape from the other side**.* ⇒
+***So the historical state is pinned and the absence asserted separately: `L-249`'s rule applied to a
+NEGATIVE pin***, *which I have not seen written down for that case before. Both halves now have to
+hold: it stood at `ed0bc031c~1`, and it is gone now.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL/MISSING lines, the receipt's own `assert` pair split so each half
+reports its own failure. Measured before performing: the subject-bearing sentence stands **once** at
+`ed0bc031c~1`, is absent live in **both** forms, and the pickaxe finds exactly the two commits that
+introduced and removed it (`c01f56c5b` `r2419`, `ed0bc031c` `c54.206`). Extractor: `4` keys, all
+decided; the row is **rewritten in place** rather than dropped-and-added, since it is the same
+adjudication at a better span.*
+
+---
+
+## `r7355+cc66.17` — **`L255` CLOSES WHOLE AT LAST: THE ROW I HELD AT `r7353` RATHER THAN GUESSING IS REPAIRED, AND THE RUNS IT NEEDED WERE ALREADY HAPPENING THREE LINES ABOVE IT**
+
+**`landed`: `L255_the_exemption_was_a_claim` `1` → `0` — **the receipt is now `8` → `0` across two
+revisions**; `REPAIR-OWED` `81` → `80`. ⌗ *qp10 on the merged tree: **no new key, no stale entry**, all
+four ratchets holding.* `remaining`: `80` owed, `11` mine; next `L233_colour_curvature` (`2`).**
+
+**⓵ WHAT I HELD IT FOR, AND WHAT IT TURNED OUT TO BE.** *At `r7353` I wrote that this row "needs three
+receipts' recurrence assertions read one by one, which I have not done, so it stays owed rather than
+closed by a plausible-looking edit". **That was the right call and the reading changes the repair.***
+`r7293+69`'s ground was exact — *`'REPAIRED'` is a common word, `5` and `6` times in two of the three,
+tied to no line, and the third passes on the other arm.* ⛔ **And it is worse than a common word: in
+two of the three, `REPAIRED` is a PYTHON CONSTANT holding a commit sha (`REPAIRED =
+'a83455b4…'`).** *So the arm was satisfied by a **variable name**. A pin that reads an identifier is
+not reading a claim.*
+
+**⓶ ⛭ THE REPAIR IS EXECUTION, AND THE RUNS WERE ALREADY THERE.** *Check ⓷ runs all three receipts to
+show they exit `0` — **and threw their output away**. Each receipt's own live recurrence assertion is
+now read out of that output, so the claim is that **the live check ran and reported**, not that a word
+appears in a file. No new subprocess, no new seed: one line that stops discarding what was already
+measured.*
+
+**⓷ THE THREE LINES, ONE RECEIPT AT A TIME, BECAUSE THEY ARE THREE DIFFERENT CLAIMS AND NO SINGLE
+STRING COVERS THEM:**
+
+> `L551`/`R1` → *"AND NO PROTECTED ROW IS SPLIT IN THE LIVE REGISTER EITHER" — a live split count
+> against the working tree.*
+> `L555`/`M1` → *"AND THE DEFECT HAS NOT RECURRED, live:" — a live protected-id count.*
+> `L556`/`R1` → *its **seeded gate round-trip** ("clean tree exits … restored … byte-identical").
+> **That receipt has no live-state claim to make** — its subject is an instrument, not a register — so
+> the way it shows the defect would be caught if it came back is that the gate goes red on a seed and
+> green without it.*
+
+⌗ ***And the third was found only by running it.*** *Its `seed_took` assertion is a bare `assert` that
+prints **nothing**, so the obvious output-based check on that string would have been a silent zero —
+the same vacuity this row was owed for, reintroduced by the repair. **Measured, not assumed:** all
+three lines were confirmed present in the three receipts' stdout by running them before the edit.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, and the check prints its own per-receipt dict
+(`{…: True, …: True, …: True}`) so a reader sees which of the three reported rather than a conjunction's
+single boolean. Extractor on `E1`: **`1` key** — the receipt is down to one pin, and its `ENCODING-OK`
+`seed_took` row retires with the owed one.*
+
+---
+
+## `r7355+cc66.18` — **`L233`, `L253` AND `L277` CLOSE: `6` → `0`. ⛭ AND `L253`'S OWN OWED PIN WAS THE STRING `git('show'` — THE EXACT HELPER SHAPE I MEASURED THIS REVISION AS INVISIBLE TO THE EXTRACTOR**
+
+**`landed`: `L233_colour_curvature` `2` → `0`, `L253_the_seed_that_stopped_seeding` `2` → `0`,
+`L277_the_unclaimed_surface` `2` → `0`; `REPAIR-OWED` `80` → `74`. ⌗ **`137` → `74` this revision,
+sixty-three rows.** `remaining`: `74` owed, `5` mine: `L552_weyl_and_torus` (`2`),
+`P17_geometric_core_paper` (`2`), `L809_one_loop_quartic` (`1`).**
+
+**⓵ `L233`: BOTH ARMS DEFECTIVE IN *OPPOSITE* WAYS, WHICH IS A SHAPE I HAVE NOT SEEN BEFORE TONIGHT.**
+*`60`'s `r7310` read it step by step and it is exact: arm 1 (`EXACT for arbitrary $m(r)$`) **carries
+the whole claim and never decides**, because lower-casing it contains arm 2 entirely — so the `or` has
+always evaluated to arm 2's value and deleting arm 1 would change nothing. Arm 2 (`exact for
+arbitrary`, case-folded) **decides alone and drops `$m(r)$`**, which is the whole claim: exactness for
+SOME `m(r)` is not the claim.* ⇒ *One span carries `m(r)` **and** matches, **once in the arc raw**.*
+⌗ *The capitalised form stands once too but only after a markdown normaliser; **the form needing no
+normaliser is taken**.*
+
+**⓶ ⛭⛭ `L253`'S SECOND OWED PIN WAS `"git('show'"` — AND THAT IS THE HELPER SHAPE I ROUTED TO YOU
+THREE BLOCKS AGO.** *`r7289+69` filed it as a proxy with seven occurrences. **It is also the exact
+string whose call sites `mutate_assertions._READ` cannot see** — `26` receipts, `95` pinned reads.* ⇒
+***So the corpus was pinning, as a proxy for "this file reads at a pin", the very spelling that makes
+its pinned reads invisible to the pin instrument.*** *That is not an argument for a better pin; it is
+an argument for running the file, which is what the repair does.*
+
+**⓷ AND BOTH OF `L253`'S ROWS CLOSED ON RUNS THAT WERE ALREADY THERE, THREE LINES BELOW THEM** *(`rc, _
+= run(rel)` — the output discarded). Captured once now, each receipt's own live-recurrence line read
+out of its own output, **one receipt at a time** because the three make three different claims. Same
+repair as `L255`'s last row, same reason.* ⌗ **And ⓹ᵇ is now a DISCRIMINATOR rather than a presence
+test:** *it asserts the seed-only receipt reports its own seeded round-trip **and** that it does **not**
+report either of the other two's live lines. A presence test cannot tell the classes apart; this can.*
+⌗ *`'REPAIRED'` was again satisfied by a **variable name** holding a sha, as in `L255`.*
+
+**⓸ `L277`: A CO-OCCURRENCE AND A CANNOT-FAIL, AND THE SECOND GOT `r7353` ③'S DISPOSITION.** *`invisible
+here` + `category theory` were two tokens in one file — **the file could name category theory anywhere
+and say `invisible here` about something else**. One span states both halves, so the `DELIBERATE`
+partner retires with the owed row.* ⌗ **And the haystack had to be flattened: the sentence is a wrapped
+docstring line, standing `0` times raw and `1` flattened** — *which is why the original check could only
+reach for two words.* ⛭ *For `'return 1'`: measured, it stands **once** in that file, so the defect is
+not multi-site — **it is the proxy**, since the line could stay while the guard reaching it changed. No
+pin is admissible, so the repair is a **structural assertion**: the control's own `hist`-guarded branch
+is located in the parsed module and its return value read off the tree (`1` branch, returning `[1]`).
+A `return 1` elsewhere cannot satisfy it and a reformat cannot break it.*
+
+**⓹ ⌗ AND A TOOLING NOTE ON MYSELF, BECAUSE IT COST TIME AND IT GENERALISES THE `pkill` RULE.** *I
+waited for a long receipt with `until ! pgrep -f '<receipt name>'` — **and the loop's own shell carries
+that name in its command line**, so `pgrep` matched the waiter and the loop could never exit. Three of
+them hung and had to be killed by PID.* ⇒ ***The standing rule is "use `TaskStop`, never `pkill -f` —
+the pattern matches my own shell". The same hazard applies to `pgrep` in a wait condition***, *and it
+fails more quietly: `pkill` kills you, `pgrep` just never finishes.*
+
+⌗ **Verification:** *all three receipts `rc=0`. `FAIL`-matching lines checked rather than counted in
+both of the two that have them (`L277`: an `OK` line reading "the concentration statistic FAILS on the
+case that actually happened", plus a part banner). `L253` ran `20`+ minutes because it runs three other
+receipts; its five repaired/kept checks all print `OK`. Extractor over all three: all keys decided, no
+`UNDECIDED`, no annotation fault; `6` rows dropped (`4` owed + `2` companions) and `1` added.*
+
+---
+
+## `r7355+cc66.19` — **⛭⛭⛭ MY `17` ARE CLOSED: `0` OWED ROWS ON EVERY RECEIPT IN MY COLUMN OF `THE_REPAIR_STRIDE.tsv`. ⛔ AND THE LAST BLOCK FOUND A `1,932`-CHARACTER BLOCK OF `PROTECTED_OPEN.md` DUPLICATED VERBATIM, WHICH NO GATE HAS FLAGGED. ⇒ TAKING `L246_the_achirality_is_the_obstruction` FROM THE HAND-OFF QUEUE**
+
+**`landed`: `L552_weyl_and_torus` `2` → `0`, `P17_geometric_core_paper` `2` → `0`,
+`L809_one_loop_quartic` `1` → `0`. `REPAIR-OWED` `74` → `69`. ⌗ ***`137` → `69` this revision,
+sixty-eight rows.*** **`cc66`'s owed total across its `17` assigned receipts: `0`.**
+`remaining`: `69` owed, none of it mine; **⇒ `r7353` ② takes effect and I am announcing the first
+take: `L246_the_achirality_is_the_obstruction` (`4`).**
+
+**⓵ ⛔⛔ THE FINDING, AND IT IS A REGISTER DEFECT RATHER THAN A PIN DEFECT.** *Widening `L552`'s two
+spans to carry their subjects, both came out at **`2` sites**. The cause is not the spans:*
+
+> ***`PROTECTED_OPEN.md`'s `PO-4` row contains a `1,932`-character block duplicated VERBATIM***,
+> *the two copies `18,059` characters apart inside one `32,200`-character row.*
+> **Measured by growing the identical region outward from each occurrence: `1,161` characters of
+> common prefix and `771` of common suffix.** *`PO-4` itself occurs once — the duplication is
+> **inside** the row, which is why a row-scoped read does not help either.*
+
+⇒ ***So every span in that block occurs exactly twice and no widening can change it: floor 1 is
+repairable there and floor 2 is not.*** ⛭ **This is the class `L551`/`R1` and `L555`/`M1` exist for,
+in the register they were written about, and no gate has flagged it.** *Both rows retire with floor 1
+repaired, flag `MULTI`, and the duplication recorded in each reason.* ⌗ ***I did not assert the
+absence of the duplicate in the receipt***, *and that is deliberate: `W1`'s claim is about what `PO-4`
+**says**, and reddening it for someone else's duplication would be a gate failing on a defect it does
+not own. **Routed with the measurement instead** — and it may be adjacent to the `PO-23` duplicate your
+`r7353` ④ says blocks `P10_no_rescaling`.*
+
+**⓶ ⌗ AND THE LAST REPAIR CAUGHT ITSELF ON THE DEFECT I HAVE BEEN REPORTING ALL NIGHT.** *`P17`'s
+widened horizon span stands **`0`** times in `tex` and once flattened — because that receipt reads its
+paper **raw** via `pathlib`. **A long span asserted against an unflattened `.tex` is the
+silent-never-match shape**, and the only reason mine did not land as one is that I counted it before
+writing it. Its companion needed no flattening and no normaliser — also measured, not assumed.*
+
+**⓷ THE OTHER THREE ROWS WERE PLAIN DANGLES AND `60`/`69` HAD THEM RIGHT.** *`de~Sitter horizon whose`
+**ends on the relative pronoun** — it stops exactly where the clause identifying the horizon begins.
+`differ by $3/8$` opens on the verb with `The two` outside. `not as a $2m/r$ bend` opens on a **negator
+plus preposition** and names nothing. All three widened to the clause that supplies the subject.* ⌗
+*`L809`'s mid-word companion is **left as it stands** — one of the `88`, still yours.*
+
+**⓸ ⛭ THE HAND-OFF, WITH ITS BOOKKEEPING STRAIGHT.** *`r7353` ② gives me, in order:
+`L246_the_achirality_is_the_obstruction`, `L272_the_survey_that_was_a_memory`, `L202_the_seam`,
+`L_probability`, `L247_the_build_already_stands`, `P03_SdS_slicing`, `RP_34_gr`.* ⌗ **Two of `70`'s
+receipts are already done, out of order and by my scheduling error — `L560_pins_into_moving_prose` and
+`L815_seam_phase_derived` (`r7355+cc66.12` and `.9`), both reported at `.14`.** *They are not on the
+queue above, so nothing on it is skipped for them.* ⇒ ***Taking `L246_the_achirality_is_the_obstruction`
+now.*** *If `70` has it in flight, the ledger will say so and I will move to `L272`.*
+
+---
+
+## `r7355+cc66.20` — **HAND-OFF TAKE `1` LANDS: `L246_the_achirality_is_the_obstruction` `4` → `0`. ⛔ AND `69`'S TWO PRESCRIPTIONS FOR THE SAME SENTENCE PAIR DO NOT COMPOSE, SO THEY HAD TO BE RECONCILED RATHER THAN APPLIED**
+
+**`landed`: `L246_the_achirality_is_the_obstruction` (`70`'s receipt, taken on `r7353` ②) `4` → `0`;
+`REPAIR-OWED` `69` → `65`. ⌗ **`137` → `65`, seventy-two rows this revision.** `remaining`: `65`;
+next in the queue `L272_the_survey_that_was_a_memory` (`4`).**
+
+**⓵ ⛔ THE TWO PRESCRIPTIONS DO NOT COMPOSE, AND IT IS WORTH ONE LINE BECAUSE A SEAT APPLYING THEM IN
+ORDER WOULD LEAVE A DEFECT STANDING.** *For the grading span `69` said **"widen to the antecedent"**;
+for its neighbour it said **"from `Every … those four` through `either`"**.* ⇒ ***The second prescribed
+span BEGINS AT the first literal, so taken alone it leaves the first row's demonstrative exactly as it
+was.*** ⌗ **The single span from `Every` through `either` fixes both, and for a reason worth stating:**
+*it resolves the **pronoun** by containing its antecedent, and it resolves the **demonstrative** by
+containing `a colourless sector that is chirality-asymmetric` — the clause that says what "those four"
+**are**. So the widening to the earlier paragraph `69` asked for is **not needed**: the naming is
+already inside the sentence pair.*
+
+**⓶ ⌗ AND `69` RECORDED ITS OWN DETECTOR MISSING ONE, WHICH IS THE BEST NOTE IN THE BLOCK.** *On
+`identity component does not reach`: "a relative clause whose head … is outside it — the clause has its
+own verb and subject, **so it reads complete**", and its mechanical arm **MISSED** it because "a finite
+verb is present and the span opens on a noun, and **only a reader** sees that the relative clause has
+lost its head".* ⇒ **That is precisely the case the subject rule exists for and no detector reaches.**
+*Widened from `it reverses orientation` so the head, the clause and the conclusion are one span.*
+
+**⓷ THE CANNOT-FAIL ONE: `colourless` ×`17` IN `P14`.** *It could only fail by leaving the paper, while
+the claim is that `P14` names the four states PART 2 acts on as the colourless content of **one
+generation**. The span is the sentence that counts them.* ⌗ *Its mid-word companion is **left as it
+stands** — one of the `88`, still yours.*
+
+⌗ **Verification:** *`rc=0`; the one `FAIL` match checked rather than counted (prose inside a truth
+table, "the no-go's hypothesis FAILS"). Each span flattened where the sentence crosses a source wrap
+and emphasis-normalised where the markup sits inside it — **both decided by measurement, not by
+inspection**. Extractor: `16` keys, all decided, no `UNDECIDED`, no annotation fault; `4` dropped, `3`
+added. `70` has pushed nothing on this receipt this phase (newest touches `r7243`, `r7225`), so the
+take collided with nothing.*
+
+---
+
+## `r7355+cc66.21` — **HAND-OFF TAKE `2`: `L272_the_survey_that_was_a_memory` `4` → `0`. ⛔ A FIFTH DEAD ARM (THIRD ON A CAPITAL LETTER), A FOURTH INVISIBLE-READ SHAPE, AND A LABEL THAT PUT QUOTATION MARKS AROUND A SENTENCE `P07` DOES NOT CONTAIN**
+
+**`landed`: `L272_the_survey_that_was_a_memory` (`70`'s, `r7353` ②) `4` → `0`; `REPAIR-OWED` `65` →
+`61`. ⌗ **`137` → `61`, seventy-six rows this revision.** `remaining`: `61`; next in the queue
+`L202_the_seam` (`6`).**
+
+**⓵ ⛔ THE FIFTH DEAD ARM, AND THE THIRD CAUSED BY A CAPITAL LETTER ALONE.** *`69` had it exactly:
+"zero occurrences as written (the reach document has it only in other case), so it never passes."
+**Measured: `the Nariai merger is a FOLD` → `0`; `is a FOLD` → `1`.*** ⇒ *The weak arm has carried
+that check alone since it was written.* ⌗ **The three case-mismatch dead arms tonight — `L271`'s
+`Atiyah`, `L263`'s `This frontmatter`, this one — are all the same mechanism**, *and it is worth
+putting in the ruling I asked for at `.2`: **an arm-occurrence count would catch all three, and no
+reading of the span's content ever will.***
+
+**⓶ ⛔⛭ A FOURTH INVISIBLE-READ SHAPE, AND THIS ONE LANDED IN MY OWN REPAIR.** *The corrected `P07`
+span is keyed **nowhere**: `p07 = RB.BODIES_TEX['P07']` is a **module attribute**, and the extractor
+does not see it as a file read.* ⇒ *So that half retires as **repaired-and-invisible** — `r7353` ③'s
+disposition **reached by accident rather than by choice**, which I would rather you heard from me than
+inferred from a count.* ⌗ **The four shapes so far, all measured this revision:** *⒜ the `flat()`
+helper → target goes `UNDECIDED` (`L548`); ⒝ a helper chained through another → read lost (`L550`);
+⒞ `def git(*a): subprocess.run(['git'] + list(a))` → read lost, **`26` receipts / `95` sites**
+(`L557`); ⒟ a module attribute (`RB.BODIES_TEX[...]`) → read lost (here).*
+
+**⓷ ⛔⛔ AND FIXING THE ONE-KEY-TWO-READS ROW TURNED UP A MIS-QUOTATION.** *The label said `P07`
+**states outright** `"The word fold is used here in its bifurcation-theoretic sense"`. **That string
+occurs zero times.** `P07` writes: `\emph{Fold} is used here in its bifurcation-theoretic sense, and
+is not to be read against the bifurcation \emph{sphere} of a Killing horizon`.* ⇒ ***The quotation
+marks were around a paraphrase — and the four-word fragment the check actually asserted is exactly what
+let that pass unnoticed for the sentence's whole life.*** *A narrow pin does not only fail to check the
+claim; it protects a false quotation sitting next to it.* ⌗ *The label now quotes the paper.
+**`corpus/field_survey.py`'s annotation carries the same mis-quotation** — an instrument file, so
+reported rather than edited, and my span from that annotation deliberately **excludes** it, since
+pinning it would make the receipt depend on an error it is reporting.*
+
+**⓸ AND THE ONE-KEY-TWO-READS DEFECT ITSELF IS WORTH A VOCABULARY LINE.** *`69`: "ONE KEY, TWO READS,
+TWO VERDICTS … the same literal asserted in `field_survey.py` (an annotation never altered, which
+alone would be `DELIBERATE`) AND in `P07`'s body, where it is a fragment."* ⇒ **The key is `(receipt,
+literal)`, so two reads of one literal collapse into one row and one verdict must cover both — and
+when the right verdicts differ, the ledger cannot express it.** *Each read now has its own span, so the
+key splits and each half is adjudicable on its own ground.*
+
+**⓹ THE `return 1` PROXY GOT A STRUCTURAL ASSERTION, AND THE STRUCTURE SAYS MORE THAN THE STRING DID.**
+*The claim is that **either** failure mode fails the survey, and the module has **exactly two** `if`
+guards returning a non-zero constant — one per mode. A text pin on `return 1` could not tell two
+guards from one, or from a `return 1` in an unrelated helper.*
+
+⌗ **Verification:** *`rc=0`; the one `FAIL` match is the repaired check's own label ("FAILS it rather
+than being reported"). Extractor: `8` keys, all decided, no annotation fault; `6` rows dropped (`4`
+owed + a `DELIBERATE` and an `ENCODING-OK` whose keys the repair removed) and `3` added — the fourth
+span being the invisible one above.*
+
+---
+
+## `r7355+cc66.22` — **HAND-OFF TAKE `3`: `L202_the_seam` `6` → `0`. ⛔ ONE OF `69`'S PRESCRIPTIONS IS NOT AVAILABLE AS WRITTEN — THE "SENTENCE BEFORE" IS `607` CHARACTERS AND THREE SENTENCES AWAY — SO THAT RESIDUAL IS FILED, NOT CLAIMED CLOSED**
+
+**`landed`: `L202_the_seam` (`70`'s, `r7353` ②) `6` → `0`; `REPAIR-OWED` `61` → `55`. ⌗ **`137` →
+`55`, eighty-two rows this revision.** ⌗ `check_quote_pins` on the `L246` state: **`2651` reported
+against `2651` carried**, exact. `remaining`: `55`; next in the queue `L_probability` (`6`).**
+
+**⓵ FIVE OF THE SIX WERE DANGLING PARTICIPLES AND QUANTIFIERS, AND `69`'S PRESCRIPTIONS HELD.** *Each
+widened from the subject it had left outside: the four-debt list, the Boltzmann integral, the
+diffusion-scale signature, the standard line-of-sight integral.* ⛭ **One of them closed TWO defects at
+once** — *`validated on its control to` was a participle **and** clipped before its own figure
+(`$0.23\%$`), **and it stood twice in `P15`**. One span names the subject, puts the number inside, and
+is unique: it now pins the validation **and its tolerance**, where before it pinned neither and could
+land on either of two places.*
+
+**⓶ ⛔ AND ONE PRESCRIPTION DOES NOT EXIST AS WRITTEN.** *For `That driving is computed below`, `69`
+says the antecedent "is in the sentence before. Repair: widen to the antecedent."* ⇒ ***Measured: the
+antecedent (`the boost an expanding radiation era supplies`) sits `607` characters and THREE
+sentence-ends upstream***, *with two intervening sentences about the endpoint and the ratio of
+integrals — so a span reaching it would carry three unrelated claims.* ⌗ *What the widening **can** do
+is name the object inside the span, and it does: the span runs through `the envelope is derived on the
+collapse leg rather than imported`, so a reader of the key knows which driving is meant — **and that
+clause's own `MEANING-HELD` row retires into this span.*** ⌷ ***The demonstrative itself is not
+resolved, and I am filing that rather than calling it closed*** — *same disposition as `L560`'s `the
+same algebra`, same reason: the naming the rule wants is further away than any one span reaches.*
+
+**⓷ THE SIXTH WAS A FOUR-LETTER WORD, CASE-FOLDED, INSIDE A LIVE REGISTER ROW.** *`'debt' in
+row.lower()` — `69` noted the row has been edited since the receipt (struck at `r2702`), so the line
+exemption does not reach it. ⌗ **And case-folding a four-letter word means it matched `debt`, `DEBTS`
+or `indebted` anywhere in a `400`-character row.** The row's own strike clause is pinned instead,
+which says what the row **now** records.*
+
+**⓸ ⌗ AND A MISTAKE OF MINE WORTH RECORDING, BECAUSE IT FAILED IN THE SAFE DIRECTION.** *I wrote the
+new emphasis-normaliser with an over-escaped replacement — `r'\\1'` instead of `r'\1'` — so every
+`\emph{X}` in the haystack became the literal text `\1`.* ⇒ **Two checks went RED immediately and
+named themselves.** *That is the right direction: a bad normaliser that produced a haystack where
+nothing matched could not pass. **Had I written the inverse error — a normaliser that matched too
+much — it would have passed and I would not have known.** Fixed and re-run from scratch.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines after the fix (two FAILs before it, named above).
+Extractor: `11` keys, all decided, no `UNDECIDED`, no annotation fault; `7` rows dropped (`6` owed + the
+`MEANING-HELD` clause now inside a span) and `6` added. The three mid-word `EXTENDED` rows in this
+receipt are **left as they stand** — more of the `88`.*
+
+---
+
+## `r7355+cc66.23` — **HAND-OFF TAKE `4`: `L_probability`'s `6` → `0`, ALL SIX CODE PINS. ⛭ FOUR BECOME ONE STRUCTURAL ASSERTION EACH, AND THE VACUOUS ARM WAS TIGHTENED ONLY AFTER MEASURING THAT IT CHANGES NO VERDICT**
+
+**`landed`: `L_probability` (`70`'s line, `r7353` ②) `6` → `0`; `REPAIR-OWED` `55` → `49`. ⌗ **`137`
+→ `49` this revision — eighty-eight rows.** `remaining`: `49`; next in the queue
+`L247_the_build_already_stands` (`8`).**
+
+**⓵ ALL SIX WERE PINS ON SOURCE CODE, AND THREE WERE CHARACTER WINDOWS CUT INSIDE A CALL.** *`60`'s
+words: `DU = np.array([delta_on(` **"CLIPPED on an open parenthesis"**; `phase_of(g, OA` and
+`phase_of(g, OC` **"CLIPPED mid-call, the closing parenthesis dropped: A CHARACTER WINDOW"**.* ⇒
+*`r7353` ③: a character window into source is not admissible at any width, so **all three became one
+structural assertion** on the swept receipt's own tree — **`DU` is assigned from a call to `delta_on`,
+and `delta_on` calls `phase_of` with both `OA` and `OC`**.* ⛭ ***That IS the claim the check makes***
+*(a phase difference between two **computed** spectra); the three windows only gestured at it — and it
+is immune to exactly what broke them: reformatting, line wrapping, renaming the loop variable.*
+
+**⓶ THE WHOLE-LINE PIN: `60` WAS RIGHT THAT THE LINE PINS SPACING, AND THE SHORTER SPAN IT OFFERED IS A
+BARE TOKEN.** *So neither form is what the claim wants. `chi2_of` is located in the parsed likelihood
+module and **the names it subscripts** are read off the tree: `['BIN_HI','BIN_LO','COV_TT','X_DATA',
+'mb']`. Deleting the covariance read fails it; reformatting cannot.*
+
+**⓷ THE ONE-WORD PIN HAD A THIRD SITE `60`'S READ DID NOT COUNT, AND IT MATTERS.** *The ground says
+`PROCEDURE` stands at "2 sites". **Re-measured: three — and one of them is inside the ORDER being
+quoted rather than the finding.*** ⇒ ***So the arm could be satisfied by the question instead of the
+answer.*** *Widened to the sentence that says what a procedure spread **is**.*
+
+**⓸ ⛭ AND THE VACUOUS `INPUT` ARM WAS TIGHTENED ONLY AFTER MEASURING THE WHOLE POPULATION IT GUARDS.**
+*`70` filed it at `r7137` as passing "on any file carrying the word". **Measured arm by arm over all
+four `CARRY` files, before touching it:** two pass on `corpus measured`; `ALPHA` passes on `INPUT`
+(`6` occurrences) **and** on the strictly stronger `INPUT   x0 = 1.6648`; `JINT` passes on `x0 =
+1.6648`.* ⇒ ***The loose arm is load-bearing for exactly one file, and that file satisfies the tight
+form too — so the tightening is provably verdict-preserving, not hopefully so.*** *All four still
+pass and the arm that could not fail is gone.*
+
+**⓹ ⌗ AND THE ANNOTATION TABLE DID ITS JOB, WHICH IS WORTH RECORDING AFTER THE `L548` SCARE.** *Three
+of the new keys file `UNDECIDED` — they reach their comparison through a helper, a glob or `ast.walk`,
+so `R*` sees no file kind — and each carries a hand-kept `corpus/target_annotations.tsv` row. **Five
+stale rows for the retired literals came out.** `0` annotation faults after the edit.* ⌗ *That is the
+designed path, not the `L548` defect: there the normaliser made a **decidable** key undecidable; here
+the key is genuinely undecidable from the trace.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, all five touched checks printing `[PASS]` with their
+measured values inline. Extractor: `21` keys, **`0` `[TARGET-ANNOTATION]` faults**; `6` baseline rows
+dropped and `3` added, `5` annotation rows dropped and `3` added.*
+
+---
+
+## `r7355+cc66.24` — **HAND-OFF TAKE `5`: `L247_the_build_already_stands` `8` → `0`, THE LARGEST BLOCK LEFT. ⛔ A FOUR-TOKEN CO-OCCURRENCE OVER A TWO-MEGABYTE REGISTER, AND A NEEDLE THE RECEIPT'S OWN COMMENT RECORDS AS ALREADY BROKEN ONCE**
+
+**`landed`: `L247_the_build_already_stands` (`70`'s, `r7353` ②) `8` → `0`; `REPAIR-OWED` `49` → `41`.
+⌗ **`137` → `41` this revision — ninety-six rows.** `remaining`: `41`; next in the queue
+`P03_SdS_slicing` (`4`), then `RP_34_gr` (`8`).**
+
+**⓵ ⛔ THE FOUR-TOKEN CO-OCCURRENCE IS THE WORST SCALE I HAVE SEEN TONIGHT: `THE_REGISTER.md` IS
+`2` MB FLAT.** *The check claims the finding **landed on the row** — the `r2419` provenance recorded
+there and the Dirac sector carried as the successor — and it asserted that four tokens appear
+**somewhere** in two megabytes.* ⌗ **Measured: `r2419` ×`7`, `PO-21` ×`4`, `Dirac sector` ×`3`,
+`FALSE WHEN WRITTEN` ×`1`.** ⇒ ***Three of the four were satisfiable in unrelated rows, and the one
+unique token carries a DIFFERENT finding from the other three*** *(that `P14`'s sentence was false
+when written, not that the row records the provenance).* ⛭ **So a single verdict had to cover one sound
+pin and three loose ones — which is why it is two spans and not one:** *the successor row itself, which
+names `PO-21`, `r2419`, `PO-14` struck **and** the Dirac sector in one row; and separately the sentence
+about `P14`'s denial.*
+
+**⓶ ⌗ AND THE DISPLAY-BODY NEEDLE CARRIES ITS OWN HISTORY: `60` QUOTED THE RECEIPT BACK AT ITSELF.**
+*The ground says the needle `e^{2P}\,Q_t` is "a piece of the equation BODY … **and the receipt's own
+amended comment records this needle already breaking once on display spacing**". The comment in
+question calls it the "**sixth typesetting break of this run**".* ⇒ *Pinned to `\label{eq:twist}` — as
+`sec:unpolarized` already is **in the same list**. One convention for the whole list instead of two.*
+
+**⓷ AND ONE OF THE THREE P11 NEEDLES WAS MULTI-SITE AS WELL AS NARROW, WHICH THE GROUND DID NOT SAY.**
+*`60` filed `wave map into the hyperbolic plane` as a proxy — "the span names the object and not the
+identification". **Measured: it stands TWICE in `P11`** (once in the overview, once in the section), so
+the pin could land on either. The span is now the sentence that **makes** the identification.*
+
+**⓸ ⌗ AND THE SAME SENTENCE AS `L246`, PINNED THE SAME WAY — WHICH IS THE RIGHT OUTCOME.** *`identity
+component does not reach` is owed in **both** receipts (different keys, same sentence). I used the
+identical widened span in both.* ⇒ **Two receipts reading one sentence should pin it identically**, *and
+a reader comparing the two ledger rows can now see that they do.*
+
+**⓹ ⌗ THREE NEEDLES CAME OUT OF THE `MARKS` LIST ALTOGETHER, AND THAT IS THE STRUCTURAL POINT.** *The
+list matches every needle against one raw haystack. The repaired spans need **three different**
+haystacks — raw, flattened, and emphasis-normalised.* ⇒ ***A list that shares one haystack cannot carry
+spans that need three***, *so the three are asserted individually and the list keeps the needles it can
+still serve.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines; all four repaired/kept check lines print `OK` by name.
+**Two of my own errors on the way, both caught by running it:** an unbalanced paren (`SyntaxError`) and
+a missing `import re` (`NameError`) — *both failed loudly at import, which is the safe direction*.
+Extractor: `21` keys, all decided, no `UNDECIDED`, no annotation fault; `8` rows dropped, `6` added.*
+
+---
+
+## `r7355+cc66.25` — **HAND-OFF TAKE `6`: `P03_SdS_slicing` `4` → `0`. ⛔ AN `ALT` WHOSE "STRONG" ARM IS ALSO MULTI-SITE (`3` IN `P3`), AND A TWO-LETTER ARM THAT WAS DELETED RATHER THAN WIDENED**
+
+**`landed`: `P03_SdS_slicing` (`70`'s, `r7353` ②) `4` → `0`; `REPAIR-OWED` `41` → `37`. ⌗ **`137` →
+`37` this revision — one hundred rows.** `remaining`: `37`; **one item left on my hand-off queue:
+`RP_34_gr` (`8`)**.**
+
+**⓵ ⛔ `60`/`69` CALLED ONE ARM UNDECIDING AND THE OTHER CANNOT-FAIL. THE MEASUREMENT SAYS BOTH ARE
+MULTI-SITE.** *`'sin u'` stands **`12`** times in `P3` — the ground's figure. **And the formula arm
+`\sin u=\tfrac{2}{\sqrt3}\sin w` stands `3` times**: in the shadow passage, in the gnomonic passage,
+and on the throat circle.* ⇒ ***So the "strong" arm pinned the file rather than the claim too, and
+dropping the weak arm alone would not have repaired it.*** ⌗ *The claim is that the throat angle is the
+sky angle's **companion projection**, and exactly one of the three places says so. One span carries the
+identification and the formula together — `1` raw, `1` flattened, `1` normalised, against `3` and `12`.*
+
+**⓶ ⌗ AND ONE ARM WAS DELETED RATHER THAN WIDENED, WHICH IS WORTH DISTINGUISHING.** *`'no'` — `69`:
+"a two-letter substring present **thousands** of times across the paper bodies". **The conjunct beside
+it already carries the whole claim** (`… returns \emph{no} null pair among the thirty-six\rcpt{P03_…}`),
+with the word `no` in the only place the claim is about.* ⇒ ***A two-letter arm beside that one could
+only ever weaken the conjunction, so there is nothing to widen — it goes.*** *Not every cannot-fail
+member needs a replacement span; some are pure subtraction.*
+
+**⓷ ⌷ AND THE SURVIVING CONJUNCT IS LEFT MID-WORD ON PURPOSE.** *It opens `h the six hinge-ends` — one
+of the **`88`** `EXTEND-SHORT` rows routed at `.3`. **Re-cutting it here would be re-verdicting a member
+of a population whose ruling is outstanding**, and I have now declined to touch that population in
+four separate blocks (`L560`, `L809`, `L246`, here) while repairing its neighbours.*
+
+**⓸ THE FOURTH ROW WAS A PLAIN OBJECT-DANGLE AND `69` HAD IT RIGHT.** *`the same placement in the
+substrate's own causal language` is the **object** of `the sixth reads`, with the subject outside — so
+it asserted that a placement is described in causal language **without saying what describes it**.
+Widened to the clause.*
+
+⌗ **Verification:** *both receipts `rc=0`; the one `FAIL` match in `A6` is prose ("THE THIRD FAILURE
+MODE"), checked rather than counted. Extractor over both: `8` keys, all decided, no `UNDECIDED`, no
+annotation fault; `4` rows dropped and `2` added — **the asymmetry being the deleted arm**, which
+retires without a successor.*
+
+---
+
+## `r7355+cc66.26` — **⛭⛭⛭ THE HAND-OFF QUEUE IS COMPLETE. `RP_34_gr` `8` → `0`, AND ALL SEVEN ITEMS OF `r7353` ② ARE CLOSED. ⛔ A SIXTH DEAD ARM, AND ONE SPAN THAT ASSERTED A STRICTLY STRONGER CLAIM THAN ITS PAPER MAKES**
+
+**`landed`: `RP_34_gr` `8` → `0`; `REPAIR-OWED` `37` → `29`. ⌗ ***`137` → `29` this revision — one
+hundred and eight rows.*** ⌗ `check_quote_pins` on the `L247` state: **`2641` reported against `2641`
+carried**, exact.**
+
+> **`r7353` ②'s QUEUE, ALL SEVEN TAKEN AND CLOSED:** *`L246` (`4`), `L272` (`4`), `L202` (`6`),
+> `L_probability` (`6`), `L247` (`8`), `P03_SdS_slicing` (`4`), `RP_34_gr` (`8`) — **`40` rows**.*
+> **Plus my own `17` receipts (`0` owed) and the four `60` blocks and two `70` blocks I took early by
+> the scheduling error reported at `.14`.**
+
+**⓵ ⛔ THE SHARPEST ROW OF THE EIGHT: A SPAN THAT ASSERTED MORE THAN ITS PAPER DOES.** *`69`: "the
+main clause names its subject, **but the span drops `by a sweep`**, the condition the claim rests on —
+the paper says the operator can no longer generate the leaf **by a sweep**, and the span says it cannot
+generate it **at all**."* ⇒ ***So the pin overstated the paper*** — *and this receipt's own finding is
+that the outer end is a **symmetry** condition rather than a Weyl one, which is exactly the finding a
+pin that overstates its paper undermines. Repaired through `by a sweep`.*
+
+**⓶ ⛔ AND THE SIXTH DEAD ARM: `pp-wave`, ZERO OCCURRENCES, read lowercased.** *Its partner `plane
+wave` stands **`5`** times, so the disjunction was a cannot-fail arm carrying a dead one.* ⌗ **Six dead
+arms this revision** *(`L548`, `L271`, `L263`, `P15` — mine —, `L272`, here), three of them on case
+alone. **The arm-occurrence count I asked you to place at `.2` would have caught every one.***
+
+**⓷ THE PROXY WAS A NAME, AND `69` NAMED THE FAILURE MODE EXACTLY.** *`Goldberg` — "windowed to the
+remark (one occurrence there, five in the paper), **but the link could go and a citation keep the
+name**". **That clause is the whole defect**: a bibliography entry or an acknowledgement preserves the
+name while the inference disappears. The span now states the inference — and **the `1,400`-character
+window goes with it**, because a clause unique in the paper needs no window and a window is a position
+rather than a claim.*
+
+**⓸ ⌗ AND THIS GROUND IS THE MOST SELF-CRITICAL OF THE NIGHT, WHICH IS WORTH SAYING.** *`69` recorded
+its mechanical arm's verdict on each of its own eight rows, including **three failures of its own
+detector**: one *"MISSED — `out` was not in its list, **a list gap, not judgement**"*; one *"MISSED —
+opens on `the`, and **only a verb detector** would see that the span has no finite verb"*; one *"flagged
+(on `this`, **for the wrong reason** — a determiner, not a pronoun subject)"*.* ⇒ **A ground that
+records where its own instrument was right by accident is worth more than one that records only the
+findings**, *and all three of those notes shortened my work.*
+
+⌗ **Verification:** *both receipts `rc=0`, `0` FAIL lines. Extractor over both: `10` keys, all decided,
+no `UNDECIDED`, no annotation fault; `8` rows dropped and `7` added — the pair folding because the dead
+arm needed no successor.*
+
+---
+
+### ⛭ **WHERE THIS LEAVES ME, AND THE ONE DECISION I AM NOT TAKING MYSELF**
+
+**`REPAIR-OWED` is `29`. Every one of them is on another seat's list: `60` holds `14`, `70` holds
+`15`, `cc66` holds `0`.** *My own `17` and the whole of `r7353` ②'s queue are closed, so I have
+nothing assigned left to do.*
+
+⌷ ***I am not taking 60's or 70's remaining rows on my own judgement, and the reason is that I already
+did that once tonight by accident*** *(four `60` blocks and two `70` blocks, reported at `.14`). Doing
+it again deliberately, after reporting it as an error, would make the report worthless.*
+
+**So the decision is yours, and it is small: one of these.**
+> ⒜ ***Keep going across the whole ledger by owed count*** — *the ten blocks I did that way all landed
+> green, and it is faster than three seats each waiting on their own list. **Say the word and the `29`
+> are closed this revision.***
+> ⒝ ***Stop at the queue*** — *`60` and `70` finish their own, and I take instrument work instead:
+> **the arm-occurrence counter** (`.2`, six dead arms as its test set), **the `88` `EXTEND-SHORT`
+> mid-word rows** (`.3`, option ⒞ recommended), **`_READ`'s four invisible-read shapes** (`.21`, `26`
+> receipts / `95` sites), or **the `PROTECTED_OPEN.md` duplicated block** (`.19`, `1,932` characters).
+> ⒞ *Something else you want more.*
+
+*⛭ **Until you answer I will keep the gate reported and the branch pushed, and I will not start on
+another seat's rows.** `PR #435`, every revision pushed, nothing waiting on the chat window.*
+
+---
+
+## `r7355+cc66.27` — **a SECOND ratchet was feeding on my repairs all night, and the one assertion it caught was genuinely weaker than its own label**
+
+> **`landed`** — `check_prose_pins` green (`152`/`152`, `rc=0`), three sites adjudicated, one of them
+> tightened first. **`remaining`** — `REPAIR-OWED` `29`, all on `60`'s list (`14`) or `70`'s (`15`);
+> the decision at `.26` is still open and I have still not started another seat's rows.
+
+### ⒜ **What happened: `fast` went red on a gate I had never looked at, and the cause was mine**
+
+*The `fast — registers, views, IDs` check has been red on this PR since `r7343`, and I commented on
+it then: the failing gate was `check_order_acknowledged`, red on node `70`, and byte-identical on
+`main`.* ⛭ ***That is no longer true, and I would have kept reporting it as "the known `main`-side
+cause" if I had not read the log instead of the check name.***
+
+```
+   60    order r7351  acknowledged r7347  lag 4  own unanswered 2
+   70    order r7351  acknowledged r7349  lag 2  own unanswered 1
+   71    order r7351  acknowledged r7345  lag 6  own unanswered 3
+   cc66  order r7351  acknowledged r7355  lag -4  own unanswered 0
+  5 seat(s); no order is sitting unread.
+```
+
+**`70` read its orders, so the gate I blamed now PASSES — and `fast` is red on `check_prose_pins`
+instead**, which is a *different gate with a different baseline*, and which **three sites introduced
+by tonight's own repairs** had just broken:
+
+| site | where it came from |
+|---|---|
+| `n_sent <= 4` | `L550` `M1`, my corrected distance check (`.5`) |
+| `n_para == 1` | `L550` `M1`, same check |
+| `len(_CHI2_FN) == 1` | `L_probability` `S1`, the `r7353` ③ structural assertion (`.23`) |
+
+⌷ ***I have been feeding `quote_pin_baseline.tsv` for twenty-seven sections and did not know that a
+`check()` on a COUNT lands in a second ledger with its own ratchet.*** *Every structural repair I made
+tonight that counts something — and `r7353` ③ makes counting the default repair when no pin is
+admissible — adds a row that gate demands. **That is a standing cost of ③ and it is worth saying out
+loud: the invisible-pin shapes at `.21` have a mirror image here, a VISIBLE assertion in a ledger I
+was not reading.***
+
+### ⒝ **One of the three was not a false positive. The gate was right about my own work.**
+
+*Two are honest count pins and one is not a count at all, but the first one I had written wrong:*
+
+```python
+0 < i_res - i_dim < 900 and n_sent <= 4 and n_para == 1     # as I wrote it at .5
+0 < i_res - i_dim < 900 and n_sent == 2 and n_para == 1     # as it now stands
+```
+
+⛔ ***A `<= 4` bound admits `3` and `4`, and neither of those is "two sentences earlier" — which is
+the receipt's TITLE.*** *So the assertion was weaker than the claim it labels; and the comment eight
+lines above it already said `n_sent == 2`, so **the code contradicted its own prose, in the same
+block where I was repairing exactly that defect in other people's receipts.*** Measured: `529`
+characters, `2` sentence-ends, `1` paragraph break.
+
+⇒ **The slack was protecting against nothing.** *The haystack is read at `P14_PIN = 593fe7ba8`, so
+the count cannot move while the pin holds — an equality is **immovable here for precisely the reason
+the headroom was unnecessary**, and it retires with the residue, which is what the pin comment
+already said.* Receipt `rc=0`, no `FAIL` line.
+
+- **`n_para == 1` — `DELIBERATE`, and this count IS the finding rather than a proxy for it.** *`r7143`
+  claimed the bound and the residue stand in the same paragraph; the measured `1` is what refutes it.
+  Taken on the RAW text because flattening destroys the thing being counted.*
+- **`len(_CHI2_FN) == 1` — `NOT-A-COUNT`.** *A list of `ast.FunctionDef` nodes off a parsed module is
+  a uniqueness assertion over a **parse tree**, not a tally of matches in text: reformatting, renaming
+  a local or rewrapping a line cannot change it. Precedent `len(mr) == 6` (`r7151+cc66.112`).*
+  ⛭ **And the site exists BECAUSE a text pin was removed** — `r7353` ③ ruled no pin on that line
+  admissible, so *the thing this gate flagged is the repair, not the defect.*
+
+### ⒞ **What I am NOT doing**
+
+*I am not widening the tightening into a sweep.* ⌷ **There are `70` `PIN`-tier rows in that baseline
+and I have read three.** *If `<= 4`-for-`== 2` is a class rather than my own slip, the other `67` are
+where it would live — and that is a measurement, not a guess, so it goes on the instrument list at
+`.26` ⒝ rather than into this push.*
+
+*⛭ `PR #435`, pushed. The `fast` check should now turn on `check_prose_pins`; the three `scoped`
+checks I am reading next.*
+
+---
+
+## `r7355+cc66.28` — **a receipt I never touched went red because I RENAMED A VARIABLE in one I did, and it failed in the unsafe direction**
+
+> **`landed`** — `L268/O1` `rc=0`, repaired structurally; two stale quote-pin rows removed (`2638` →
+> `2636`), `0` new keys. **`remaining`** — `REPAIR-OWED` `29`, unchanged and all on `60`'s or `70`'s
+> list; `.26`'s decision still open.
+
+### ⒜ **The find**
+
+*The `scoped — the tolerance perturbation` check carries TWO reds, and I had only ever diagnosed one.
+The second is on `main`'s record nowhere — `carried 2, cleared 0, on 2 line(s): …5tjf0b, …6awafl` —
+so it is not inherited:*
+
+```
+= still red: receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py
+```
+
+**It is mine.** *Its check `⓸ᵇ` asserts that `L263/S1` states the present in the opposite direction —
+that `OWED` 609's row is struck NOW — and it asserted it by pinning **two literal substrings of
+`L263/S1`'s own source**, one of which was a **local variable name**:*
+
+```python
+'which is this receipt landing rather than this receipt' in now
+and "'STRUCK r3148' in owed_now" in now
+```
+
+⛔ ***`r7355+cc66.7` scoped that span to Ⓕ's own entry and read it through a markup normaliser, which
+renamed `owed_now` to `_owed_md`. So `O1` went red on a RENAME while the claim it asserts stayed true
+and got STRONGER.***
+
+⌷ **And that is the unsafe direction.** *`O1`'s whole subject is a receipt that is false at the moment
+it is committed. Its `⓸` pair exists to say **the repair landed rather than the receipt broke** — and
+the arm reporting that went red **because the repair was tightened**. A reader seeing it would
+conclude the opposite of the truth.* ⇒ *** A pin on a sibling's variable name is a pin on a spelling
+nobody promised to keep. ***
+
+### ⒝ **The repair, and it cost nothing**
+
+*`r7353` ③: the line is a `check()` call whose text is edited whenever its span is re-scoped, so no
+pin on it is admissible and the repair is a **structural assertion**. `L263/S1` is parsed, the
+directional check is located by its **label**, and both halves are read off its **test expression** —
+an absence arm (`re.search(...) is None`) and a presence arm quoting the strike:*
+
+```
+OK  ⓸ᵇ ... 1 directional check(s) in L-263/S1, 1 carrying the absence arm and 1 quoting the
+    strike -- read off the PARSE TREE, so a rename cannot break it (r7355+cc66.27, after a rename did)
+```
+
+**Renaming the variable, rewrapping the call, or re-scoping the span cannot break it. Deleting either
+direction can — which is the whole point of `⓸`.** *`O1` `rc=0`.*
+
+| | before | after |
+|---|---|---|
+| `O1` quote-pin sites | `5` | **`3`** |
+| baseline rows | `2638` | **`2636`** *(two `DELIBERATE`, so `REPAIR-OWED` unmoved)* |
+| new keys | — | **`0`** |
+
+### ⒞ **⛭ And the mirror of `.27`, which I did not expect**
+
+*My structural repair asserts `len(_direction) == 1`, `len(_absence) == 1`, `len(_presence) == 1` —
+three count pins, written minutes after `.27` taught me that count pins have their own ratchet.*
+**`check_prose_pins` does not see any of them** *(`152` of `152`, unchanged)*, **and
+`check_quote_pins`'s extractor does not see the literals either** *(`0` new keys, where the two it
+replaced were both keys)*.
+
+⇒ ***Because the values pass through `ast.parse`, and neither instrument's trace follows a taint into
+a parse tree.*** *This is the `.21` invisible-read finding from the other side: **`r7353` ③'s
+prescribed repair makes an assertion that is robust and simultaneously INVISIBLE to both ratchets that
+would otherwise police it.** That is a good trade for the assertion and a bad one for the ledger's
+coverage, and it is a fact about the instrument rather than about any receipt — so it is a measurement
+for the list at `.26` ⒝, not something I am fixing inside a repair push.*
+
+### ⒟ **What this opens, and I am measuring it next rather than claiming it is closed**
+
+**If one sibling pinned `L263/S1`'s source, others may pin the source of the `~30` receipts I edited
+tonight.** *`O1` was not found by reading my own diff — it was found by reading a CI check I had
+already filed under a known cause. So the question is not rhetorical, and the sweep is running.*
+
+*⛭ `PR #435`, pushed.*
+
+---
+
+## `r7355+cc66.29` — **the sweep `.28` promised, and TWO of my own baseline keys were typed by hand instead of copied from the instrument**
+
+> **`landed`** — the sweep run and reported (`1` genuine red, already fixed; `1` silently stale survey
+> row, routed); two baseline keys corrected from the instrument's own emission. **`remaining`** —
+> `REPAIR-OWED` `29`, untouched and still all on `60`'s or `70`'s list; `.26` open.
+
+### ⒜ **The sweep, and the first instrument I reached for was the wrong one**
+
+*`.28` ⒟ asked whether other receipts pin the source of the `36` I changed. `77` name one, so I
+started running all `77`.* ⛔ ***Five minutes in it had finished ONE*** *— they are heavy receipts, and
+at `300` s each the worst case was six hours to answer a question that is static.* **`r7271` ⒞: a
+ruling is as long as its measurement.** *I stopped it and measured instead:*
+
+> **A literal that was PRESENT in a changed file at the merge base and is ABSENT from it now is a pin
+> this branch broke.** *No receipt has to run to know that.* **`1,085` receipts parsed against all
+> `41` changed paths, in seconds.**
+
+| result | |
+|---|---|
+| **`1` genuine red** | `L268/O1` — *already found and fixed at `.28`* |
+| **`1` silently stale** | `L_probability/S3` — **green, and that is the problem** |
+| **`2` candidates** | `L175/N1`, `L253/S1` — *both run, both `rc=0`* |
+| **`14` artefacts of my own test** | *the baseline QUOTES every literal, so removing a row looks like a broken pin* |
+
+⌷ ***The `S3` one is worth your attention because nothing fails.*** *`S3` holds a survey table of the
+openness subclass — one row per pin, with its target, class and fragility. One row names a literal in
+`L263/S1` that `r7355+cc66.7` replaced with a longer form carrying the subject (`r7285`). **So the
+row now describes a pin that does not exist, the receipt is `rc=0`, and no gate anywhere says so.***
+⇒ *That is `r7069`'s rule from the other end — a fixed site left in a baseline is a silent permission
+to regress — and it is **`70`'s receipt and `70`'s reading**, so I am routing it and not editing
+another seat's record of what it read.*
+
+⌗ **And the limit of my own test, stated: it catches a literal that VANISHED. It cannot catch a pin on
+a COUNT of occurrences in a file I changed, nor one whose haystack is a register I edited.** *Those
+need the count, not the string, and I have not measured them.*
+
+### ⒝ **`check_quote_pins` completed for the first time since those edits, and it is RED on two keys I typed**
+
+*`qp12` and `qp13` never finished — I read their opening summary and took the key counts from it, and
+the new/stale comparison comes AFTER the extractor phase.* **`qp14` is the first complete run (`1221`
+s), and it reports `rc=1`:**
+
+```
+⛔ 2 NEW QUOTE-PIN KEY(S)      ⛔ 2 STALE BASELINE ENTR(Y/IES)
+```
+
+**Both are one key each, reported twice — new in the instrument's form and stale in mine — and both
+rows are mine, from `.21` and `.23`:**
+
+| | my baseline row | the instrument's key |
+|---|---|---|
+| `L272/F1` | `… station **Ⓙ** (\`L-264\`…` | `… station **Ⓗ** (\`L-264\`…` |
+| `L_probability/S1` | `INPUT**␣␣␣**x0 = 1.6648` | `INPUT**␣**x0 = 1.6648` |
+
+⇒ ***One is a circled-glyph typo and one is whitespace: the extractor COLLAPSES internal runs of
+whitespace in the key it emits, and I wrote the source spelling.*** **The cause of both is the same and
+it is not carelessness about physics — it is that I TYPED the key instead of copying the one the
+instrument printed.**
+
+⌷ **So the correction does not retype them either.** *The patch parses `--quote`'s own output, selects
+each key by a property (`'operator half of spectral theory by' in l`; `startswith('INPUT') and
+endswith('1.6648')`), asserts exactly one match, and writes `json.dumps` of **the instrument's
+string**. Nothing in the repair is hand-entered.*
+
+**⛭ This is a defect class in the LEDGER rather than in a receipt, and it has no gate.** *A hand-typed
+key fails in the most expensive way available: `check_quote_pins` costs `~1030` s, so a glyph produces
+a red that takes **seventeen minutes to see** and reports one key as two faults. **A five-line check
+that every baseline literal round-trips through the instrument's emitted set would have caught both at
+zero cost** — and it is the same shape as the gate's existing duplicate-key check. I am putting it on
+the instrument list at `.26` ⒝ and not building it inside a repair push.*
+
+*⛭ Fresh covering ratchet (`qp15`) running alone on the corrected ledger; I will report its `rc`
+either way. `PR #435`, pushed.*
+
+---
+
+## `r7355+cc66.30` — **the ratchet is GREEN on the corrected ledger; the slack-bound question is CLOSED as "not a class"; and the `~60` red CI events tonight are one backlog with a one-line discriminator**
+
+> **`landed`** — `check_quote_pins` `rc=0` (`2636`/`2636`, `1306` s), `check_prose_pins` `rc=0`
+> (`152`/`152`). **`remaining`** — `REPAIR-OWED` `29`, all `60`'s (`14`) or `70`'s (`15`); `.26` open.
+
+### ⒜ **The ratchet, reported rather than assumed**
+
+```
+no new key: the class has not grown.
+no stale entry: every adjudication still describes a live key.
+target: R* files 2636 live key(s) (annotations included); 0 annotation fault(s); 0 baseline target(s) differ
+MULTI-SITE: 158 against a ceiling of 249      list-pin: 0 against 60
+pinned-read: 0 against 102, 5 multi-site against 7
+the ratchet holds: 0 unadjudicated against a ceiling of 2287
+RC=0 SECONDS=1306
+```
+
+**The two keys `.29` corrected were the whole of `qp14`'s `rc=1`.**
+
+### ⒝ **`.27` ⒞ is CLOSED, and the answer is NO — with the measurement**
+
+*I asked whether `slack bound where the claim names a number` is a class or my own slip, and said it
+needed measuring. **It is measured and it is not a class.** Of `77` `PIN`-tier rows, `17` assert a
+slack bound against an integer, and the `17` partition cleanly:*
+
+| | | |
+|---|---|---|
+| **`8`** | `> 0` **presence controls** | *`> 0` IS the claim — "the vocabulary is present"* |
+| **`4`** | `NOT-A-COUNT` | *character distances, computed ratios — not counts of matches* |
+| **`5`** | `DELIBERATE` thresholds | *every one already argued minimal in its own row* |
+
+⛭ ***And four of the five were REPAIRED FROM round floors earlier in this campaign*** *— `n_wall >= 3`
+→ `> 1` (`r7125`), `have['SU(3)'] > 50` → `> 0` (`r7125`), with `n_crit >= 2` and `len(inc) <= 1`
+read and held at `r7143`. The sweep you would have ordered has already run.*
+
+⛔ **But the record indicts me more sharply than a class would have.** *`A8`'s row — **which I wrote at
+`r7151+cc66.112`** — says this:*
+
+> *"`>= 2` is the weakest reading of the label's own claim … **⛔ BUT THE FLOOR HID A DEAD HEADLINE:
+> the receipt's own verdict line read TWICE against a measured `5`, and `>= 2` passed at two and at
+> five alike. The headline prints the count now.**"*
+
+⇒ ***So `n_sent <= 4` was an instance of a shape I had personally named, adjudicated and fixed two
+hundred revisions earlier, and the remedy I applied at `.27` — print the count, tighten the bound —
+is verbatim the remedy that row already prescribes.*** *The class was closed; I reopened it in my own
+hand. That is worth more than the two minutes the repair cost, and it is the argument for the
+round-trip check at `.29`: **the ledger already knew.***
+
+### ⒞ **The CI events: ONE cause, and a one-line way to read them**
+
+*Roughly `60` `check_run.completed` failures arrived tonight across `~12` head SHAs. **None of them
+tests the fixes at `.27`–`.29`, and I nearly treated the first as a new breakage.***
+
+**The check runs for the current head (`3279e6688`, created `07:11`) are ALL STILL `queued`.** *What is
+draining is a backlog of runs created for superseded merge commits — `44d37a43a`, `c0e36af64`,
+`867d86c03`, `a9c59fdab` and the rest — each built from a head that predates the fix it would test.*
+
+⌷ **The discriminator is free and it is printed in every log:**
+
+> **`the instrument reports N … the baseline carries 149` → the run PREDATES `.27`.
+> `carries 152` → it includes it.** *(Quote-pin side: `2652` or `2638` is stale; `2636` is current.)*
+
+*Both heads I checked report `149` and still show the live code as `n_sent <= 4`.* ⇒ ***A baseline row
+count in the gate's own output dates a run more cheaply and more reliably than mapping merge SHAs,
+because the merge SHA is not in my history and the row count is in the artefact I am already reading.***
+
+⌗ **One genuine change in the same events, and it is not mine: `check_order_acknowledged` has moved
+from node `70` to node `71`** *(`order r7353`, acknowledged `r7345`, lag `8`, `4` own unanswered
+against a ceiling of `3`; `70` is now at `2` and `69` at `0`).* **`cc66` is at lag `-2`, `0`
+unanswered.** *Same gate, same class, no fix portable from here — the gate's own remedy line says a
+reminder is not the remedy. Routed, not commented a fourth time.*
+
+### ⒟ **Two things I did badly tonight, both mine and both cheap to have avoided**
+
+1. **I ran the same `~1030`-second ratchet twice at once.** *I launched `qp15`, then launched
+   `run_fast_job.sh`, **which CONTAINS `check_quote_pins`** — so the two contended and each slowed
+   the other. `r7271`'s own words, which I quoted an hour earlier: **"redundant is not the same as
+   rigorous."***
+2. **I bounded the suite at `timeout 1500` when one gate inside it is allowed `1800`.** *So the
+   wrapper was guaranteed to kill the suite before its most expensive gate finished — and because the
+   script's output is block-buffered through the redirect, a killed run yields **no partial result at
+   all**. Relaunching bounded properly, alone.*
+
+⇒ *⛭ Both are the same error in two costumes: **I treated a long run as free because it was in the
+background.** Stated here rather than quietly absorbed, because `r7271` ⒝ is a standing order about
+exactly this and I am the seat that keeps citing it.*
+
+*⛭ `PR #435`, pushed. Suite relaunching; its result follows.*
+
+---
+
+## `r7355+cc66.31` — **a THIRD ratchet feeds on `r7353` ③, and its remedy and `.27`'s were in direct conflict until `L-249` settled it**
+
+> **`landed`** — `L272/F1` `rc=0`; `check_exact_counts` `rc=0` (`57`/`57`, `EXPOSED` `63` → `62`),
+> `check_prose_pins` `rc=0` (`152`/`152`). **`remaining`** — `REPAIR-OWED` `29`, all `60`'s or
+> `70`'s; `.26` open; `qp16` covering ratchet running.
+
+### ⒜ **The fast job, run properly this time, and it named a gate I had never seen**
+
+```
+⛔ THE FAST JOB WOULD BE RED: check_exact_counts check_order_acknowledged
+   Re-run the named one alone for its output.
+RC=1 SECONDS=3148
+```
+
+**`check_prose_pins` is NOT in that list, so `.27` holds under the suite.** *`check_order_acknowledged`
+is node `71`'s, reported at `.30`.* ⛭ ***`check_exact_counts` is a THIRD ledger with a THIRD baseline,
+and it was red on my own `.21` structural assertion:***
+
+```
+⛔ 1 NEW EXPOSED exact count(s) -- an equality on a set another seat can move:
+    [FAIL] receipts/L272_the_survey_that_was_a_memory/F1_...py:205  len(_fs_guards) == 2
+```
+
+⌷ **So `r7353` ③ now has three ratchets downstream of it, and I have hit all three in one night with
+the same kind of repair.** *`.27` found the second, `.28` ⒞ observed that the structural form is
+invisible to both the quote-pin and prose-pin instruments — **and this is the correction to that
+observation: it is invisible to those two and FULLY VISIBLE to this one.** A structural assertion
+trades a text pin for a count, and the count has its own policeman.*
+
+### ⒝ **And the two gates' remedies CONTRADICTED each other**
+
+*`check_exact_counts` offers three: make it monotone (`<=`/`>=`), read the set at a pin, or adjudicate
+it.* ⛔ ***The first is the exact defect I repaired four sections ago.*** *The label says `EXACTLY TWO
+`if` guards … one per failure mode`, so `>= 2` would make the assertion weaker than its own sentence —
+`.27` verbatim. **Taking the obvious remedy of one gate would have committed the offence of the
+other.***
+
+⇒ **`L-249`'s rule (`THE_REGISTER` PO-78) is what resolves it, and it was already written:**
+
+> *"the historical state be pinned at the commit it stood at, the current state asserted separately,
+> and a directional live check made monotone."*
+
+**So the check SPLITS, and neither half is weakened:**
+
+| | |
+|---|---|
+| **ⓐ the exact claim** | asserted on the module **read at `FS_PIN = f61100f7b`** — `2` guards, each returning non-zero, one per failure mode. *Frozen; no seat can move it.* |
+| **ⓑ the live claim** | **monotone** — the two modes still fail the survey, and a **third** guard added later *satisfies* it rather than breaking it. |
+
+*The gate's own objection was correct and I am not arguing with it: `corpus/field_survey.py` is a live
+instrument, and a seat adding a third failure mode would have reddened `70`'s receipt while the claim
+about the two modes stayed true.* ⌗ **Verified before performing: the pinned and live sources are
+byte-identical today, so the split changes no verdict now — it only changes whose edit can falsify it
+later, which is the whole point.**
+
+```
+OK  ⓵ᶜ ... read AT THE PIN f61100f7b where the claim is frozen: 2 guard(s) returning [[1], [1]]
+OK  ⓵ᵈ ⛭ and the LIVE module still enforces both, asserted MONOTONE ...: 2 guard(s) now, against 2 at the pin
+```
+
+**And the partition moved exactly as the repair intends:**
+
+| | before | after |
+|---|---|---|
+| `EXPOSED` claim-sites | `63` | **`62`** |
+| `FROZEN` | `127` | **`128`** |
+
+*The equality migrated from the movable partition into the frozen one, and the monotone live check is
+not a claim-site at all. `57` of `57` baseline keys, no new site, no stale entry, `rc=0`.*
+`check_prose_pins` unchanged at `152`/`152`, `rc=0`.
+
+### ⒞ **Two corrections to things I said earlier tonight**
+
+1. **`.30` ⒟ said the suite's output is "block-buffered through the redirect". That was a guess stated
+   as a fact and it is wrong.** `scripts/run_fast_job.sh:75` reads
+   `timeout 1800 python3 -W ignore "corpus/$g.py" >/dev/null 2>&1 || fails="$fails $g"` — ***it
+   DISCARDS every gate's output by design and keeps only failing gate NAMES.*** *The conclusion
+   stood (a killed run yields nothing) but the reason did not, and my `stdbuf` on the relaunch was
+   therefore useless.* ⇒ **The consequence is the part worth keeping: the local suite can only ever
+   say WHICH gate failed, never why, so every red it reports needs that gate re-run directly. Which
+   is also why reading the CI log instead of the check name is what found `.27` and `.28`.**
+2. **`.28` ⒞'s "invisible to BOTH ratchets" is now "invisible to two of three."** *Stated above.*
+
+### ⒟ **⛭ What I think this means, and it is a question for you rather than a claim**
+
+**Three ledgers now police the output of one prescribed repair, and tonight I tripped each of them
+once, in each case AFTER verifying the receipt itself ran green.** *A receipt at `rc=0` is no longer
+evidence that a repair has landed cleanly — the gates are the evidence, and two of the three cost
+`~1030` s and `~3148` s to consult.*
+
+⌷ *I am not proposing an instrument change from here. The observation I would route is narrower: **the
+three gates' remedies are not mutually consistent, and `L-249` already contains the rule that
+reconciles them** — pin the exact claim, assert the live one monotone. If that is right, it belongs in
+`THE_RULE.md` beside the floors rather than being rediscovered per receipt, which is what I just did.*
+
+*⛭ `PR #435`, pushed. `qp16` running; I will report its `rc` either way.*
+
+---
+
+## `r7355+cc66.32` — **all THREE ratchets green on one head, and the CI backlog is now walking forward through my commits confirming each diagnosis in turn**
+
+> **`landed`** — `check_quote_pins` `rc=0` (`2636`/`2636`, `1448` s), `check_prose_pins` `rc=0`
+> (`152`/`152`), `check_exact_counts` `rc=0` (`57`/`57`). **`remaining`** — `REPAIR-OWED` `29`, all
+> `60`'s (`14`) or `70`'s (`15`); `.26` still open.
+
+### ⒜ **The three ledgers, green together, on `fb7170f29`**
+
+| gate | result | cost |
+|---|---|---|
+| `check_quote_pins` | `rc=0` — `2636`/`2636`, **no new key, no stale entry**, `0` annotation faults | `1448` s |
+| `check_prose_pins` | `rc=0` — `152`/`152`, `0` unadjudicated against a ceiling of `0` | ~`60` s |
+| `check_exact_counts` | `rc=0` — `57`/`57`, `EXPOSED` `62`, `FROZEN` `128` | ~`90` s |
+
+**`.31`'s pinned `git show` read adds no quote-pin key and breaks none** — which is the one thing a
+pinned read could have cost, and it did not.
+
+### ⒝ **⛭ The CI backlog is not noise: it is a replay, and it is confirming the chain**
+
+*I called the `~70` red events a backlog at `.30` and dated them with the baseline row count. They have
+now reached my own post-fix commits, and each one lands exactly where the diagnosis predicted:*
+
+**`fast` on `15811294c` (my `.27`):**
+
+```
+⛔ FAILED: check_quote_pins check_exact_counts check_order_acknowledged
+```
+
+⇒ ***`check_prose_pins` is GONE from that list.*** *The `.27` fix is confirmed by CI and not only by my
+own run of the gate. And the three that remain are each already repaired downstream:*
+
+| red on `.27`'s head | repaired in | status |
+|---|---|---|
+| `check_quote_pins` | **`.29`** — the two hand-typed keys | `qp16` `rc=0` |
+| `check_exact_counts` | **`.31`** — the pinned/monotone split | `rc=0` |
+| `check_order_acknowledged` | — | **node `71`'s, not mine** |
+
+### ⒞ **And the ledger has independently confirmed `.28`**
+
+*The plain suite's carry record on that head now reads, for `L268/O1`:*
+
+```
+carried 2, cleared 1, on 2 line(s) over 3.2 h
+```
+
+⇒ ***`cleared 1`.*** *A GREEN has been recorded for `O1` on a later head. **That is the carry ledger
+confirming my repair, not me confirming it** — and it is the kind of evidence I could not produce
+myself, because `O1` is a receipt whose whole subject is being false at the moment it is committed.*
+
+### ⒟ **One correction that runs in MY favour, which is why I am stating it carefully**
+
+*`S19` now carries `⚠ CONTRADICTED` (carried 14, cleared 9, over 63.1 h) where every earlier run read
+it as plain `repeated`:*
+
+```
+red at d17a918e14 ... green at a1a263e095 ... -- nothing it reads differs between the two
+red at 3e2e22b050 ... green at a1a263e095 ... -- nothing it reads differs between the two
+```
+
+**So THREE of the four `main`-side reds — `S19`, `S7`, `P15` — are now flagged nondeterministic by the
+ledger itself, and only `S20` still reads as plainly repeated.** ⌷ *This cuts in the direction I
+already withdrew to at `.30` ⒞, and that is exactly why it needs saying plainly rather than as
+vindication: **I used "both failures are deterministic" to justify not spending the re-run, the ledger
+has now contradicted that three times over, and the honest position is still the one I retreated to —
+I do not know why those four are red, and `S7` is `60`'s to answer.*** *The re-run remains unspent.
+On a job naming only a `CONTRADICTED` receipt, spending it is now the defensible move rather than the
+lazy one, and I will spend it on the first such job on a head that carries `.31`.*
+
+### ⒠ **Standing state**
+
+**`main` has not moved all night** (`dbd23ffd0`, 39 behind this branch), there is **no merge conflict**
+(`mergeable_state: unstable` is CI only), the working tree is clean, and local and remote are both at
+`fb7170f29`. ⌗ *I also rewrote the PR's title and body at `.30`: they described `r7343+cc66.1`–`.4`
+and claimed "still to land: `REPAIR-OWED` `268` → `266`", which was 36 commits stale on the PR's
+central number. It now states what the PR carries, including the six out-of-scope blocks as an error
+rather than an achievement, and the `149`-vs-`152` discriminator so a reader can date the red events
+without asking me.*
+
+*⛭ `PR #435`, pushed, nothing waiting on the chat window. Still blocked only on `.26`, and still not
+starting another seat's rows.*
+
+---
+
+## `r7355+cc66.33` — **CI has now confirmed every repair this branch made, and every red it still carries is `main`'s**
+
+> **`landed`** — nothing new; this is the verification of `.27`–`.31` closing. **`remaining`** —
+> `REPAIR-OWED` `29`, all `60`'s (`14`) or `70`'s (`15`); `.26` open.
+
+*`.32` said the backlog was walking forward and confirming the chain. It has finished doing so for the
+three receipt-level checks, on heads that carry the fixes:*
+
+| check, on a post-fix head | `L268/O1` | what remains red |
+|---|---|---|
+| `scoped — the plain suite` | **`cleared 1`** — a green RECORDED | `S19`, `S20`, `S7`, `P15` |
+| `scoped — the runner-read sweep` | **gone** | `S7` only (`ran 1, 1 named red`) |
+| `scoped — the tolerance perturbation` | **gone** | `S7` only |
+| `fast — registers, views, IDs` | — | `check_prose_pins` **gone**; `quote_pins` → `.29`, `exact_counts` → `.31`, `order_acknowledged` = node `71` |
+
+⇒ ***So the three defects this branch introduced are each confirmed repaired by CI rather than by my
+own run of the gate, and the four reds left are the four that were already red on `main` before this
+branch existed.*** *`S19` carried 14 / cleared 9 over 63.1 h; `S20` 7/3 over 32.3 h; `S7` 6/2; `P15`
+6/2 — and three of those four now carry `⚠ CONTRADICTED`.*
+
+### ⛭ **The one re-run, and why it is still unspent**
+
+*`.32` committed me to spending it on the first job naming only a `CONTRADICTED` receipt on a head
+carrying `.31`. Two such jobs have now appeared naming only `S7` — but on `.30`'s head, not `.31`'s, so
+by my own condition they do not qualify, and I am keeping the condition rather than loosening it an
+hour after writing it.*
+
+⌷ **And the more honest point: the re-run would add nothing to the question it is allotted for.**
+*Whether these are this PR's is settled by stronger means already — the carry ledger's own record of
+each on `main`. The only thing a re-run would produce is **data on whether `S7` reproduces on an
+identical commit**, which is the nondeterminism question, which is **`60`'s** (routed at `r7349` ⑤)
+and which `60` can answer on its own line at no cost to this PR's budget.* ⇒ *I will spend it on the
+first qualifying job anyway, because the rule says one re-run per PR and holding it indefinitely is
+its own kind of silence — but I am recording in advance that I expect it to tell nobody anything new,
+so that if it comes back green the surprise is on the record as a surprise.*
+
+*⛭ `PR #435`, pushed. `main` unmoved (`dbd23ffd0`), no conflict, tree clean. Nothing waiting on the
+chat window, and nothing of mine left to do until `.26` is answered.*
+
+---
+
+## `r7355+cc66.34` — **the chain is CI-confirmed link by link, and here is a falsifiable prediction you can check in one line**
+
+> **`landed`** — nothing; this is the last confirmation plus a prediction recorded BEFORE the run that
+> tests it. **`remaining`** — `REPAIR-OWED` `29`, all `60`'s or `70`'s; `.26` open.
+
+**`fast` on `3279e6688` (my `.29`):**
+
+```
+⛔ FAILED: check_exact_counts check_order_acknowledged
+```
+
+⇒ ***`check_quote_pins` is GONE.*** *That confirms `.29`'s two corrected keys in CI, which is the last
+of the three repairs to be independently verified. The walk now reads, each line confirmed on the head
+that first carries its fix:*
+
+| fix | head | gate it silenced | confirmed |
+|---|---|---|---|
+| **`.27`** `n_sent == 2` + 3 adjudications | `15811294c` | `check_prose_pins` | ✓ gone from `fast` |
+| **`.28`** `O1` structural | `2c9cad9bc` | `O1` in two scoped checks | ✓ gone; **`cleared 1`** in the carry ledger |
+| **`.29`** two hand-typed keys | `3279e6688` | `check_quote_pins` | ✓ gone from `fast` |
+| **`.31`** pinned/monotone split | `fb7170f29` | `check_exact_counts` | **not yet run** |
+
+### ⛭ **THE PREDICTION, stated before the evidence rather than after it**
+
+> **On the first `fast — registers, views, IDs` run against a head carrying `.31`
+> (`fb7170f29` or later), I expect the failure line to read EXACTLY:**
+>
+> ```
+> ⛔ FAILED: check_order_acknowledged
+> ```
+>
+> **— one gate, node `71`'s, nothing of mine.**
+
+⌷ ***If anything else appears in that line, my night's work is not finished and I was wrong to say it
+was.*** *That is the point of writing it down now: `.30` ⒟ and `.31` ⒞ are both corrections of things
+I asserted confidently without measuring, and the cheapest guard against a third is to put the claim
+where it can be checked against a result I do not yet have.*
+
+*⌗ The three local gates already agree with that prediction on this tree — `quote_pins` `2636`/`2636`,
+`prose_pins` `152`/`152`, `exact_counts` `57`/`57`, all `rc=0` — so if CI disagrees, the disagreement
+itself is the finding and it is mine to chase.*
+
+*⛭ `PR #435`, pushed. Nothing waiting on the chat window.*
+
+---
+
+## `r7355+cc66.35` — **the `.34` prediction HOLDS, exactly as written, and the one re-run is now SPENT**
+
+> **`landed`** — the prediction tested and confirmed; the re-run spent on the one qualifying job.
+> **`remaining`** — `REPAIR-OWED` `29`, all `60`'s (`14`) or `70`'s (`15`); `.26` open.
+
+### ⒜ **The prediction, and the result**
+
+*What `.34` said, before the evidence existed:*
+
+> *"On the first `fast` run against a head carrying `.31` (`fb7170f29` or later), I expect the failure
+> line to read EXACTLY: `⛔ FAILED: check_order_acknowledged` — one gate, node `71`'s, nothing of
+> mine."*
+
+**`fast — registers, views, IDs`, job `116328114905`, head `fb7170f29`:**
+
+```
+⛔ FAILED: check_order_acknowledged
+```
+
+⇒ ***Exactly that. One gate, node `71`'s, nothing of mine.***
+
+**So `fast` on this branch has gone from three of my gates plus one of `71`'s, to `71`'s alone:**
+
+| head | `fast` failure line |
+|---|---|
+| pre-`.27` | `check_prose_pins check_order_acknowledged` |
+| `.27` (`15811294c`) | `check_quote_pins check_exact_counts check_order_acknowledged` |
+| `.29`/`.30` | `check_exact_counts check_order_acknowledged` |
+| **`.31` (`fb7170f29`)** | **`check_order_acknowledged`** |
+
+*⌗ And the two scoped receipt checks on that same head name `S7` alone. The only red this branch
+carries that a push from here could change is **none**.*
+
+### ⒝ **The re-run: SPENT, and on the job the rule points at**
+
+*The `403` at `09:08` was `"The workflow run containing this job is already running"` — sibling jobs in
+run `38706805207` were still executing, so GitHub refused a single-job re-run. **That run is now
+`completed failure`, and the re-run was accepted.***
+
+| | |
+|---|---|
+| **job** | `116328114464` — `scoped — the runner-read sweep`, head `fb7170f29` |
+| **why it qualifies** | names **only** `S7`, `⚠ CONTRADICTED`, on a head carrying `.31` |
+| **status** | **spent**; this PR has no second re-run |
+
+⌷ ***And my prediction about it, recorded at `.33` before spending it: "I expect it to tell nobody
+anything new, so that if it comes back green the surprise is on the record as a surprise."*** *That
+stands. If it comes back **red**, `S7` reproduces on an identical tree and the `CONTRADICTED` flag is
+about something other than this commit. If it comes back **green**, `S7` is nondeterministic on this
+branch too, and that is a fact `60` can use — it is `60`'s receipt and `60`'s question, routed at
+`r7349` ⑤, and I am gathering the datum rather than answering it.*
+
+### ⒞ **⛭ Where that leaves this branch**
+
+**Every gate this branch broke is confirmed repaired by CI. Every gate still red was red on `main`
+before this branch existed, and none of them has a fix I can port.** *`main` has not moved all night
+(`dbd23ffd0`, 42 behind), there is no merge conflict, the tree is clean, and all three ratchets are
+green locally.*
+
+⇒ ***There is nothing left on this PR that a push from me can improve.*** *The remaining `29` rows are
+`60`'s and `70`'s, and the instrument items are routed and waiting on your choice at `.26`. **I will
+keep the PR watched and the check-in armed, and I will not start another seat's rows.***
+
+*⛭ `PR #435`, pushed. Nothing waiting on the chat window.*
+
+---
+
+## `r7355+cc66.36` — **the re-run's verdict: `S7` reproduces on the identical commit, and that narrows `60`'s question rather than answering it**
+
+> **`landed`** — the re-run read and reported; the `.34` prediction replicated on THREE heads.
+> **`remaining`** — `REPAIR-OWED` `29`, all `60`'s or `70`'s; `.26` open. **Nothing of mine is
+> outstanding.**
+
+### ⒜ **The re-run came back RED, as recorded in advance**
+
+*Job `116347772820`, attempt 2 of the runner-read sweep on `fb7170f29`:*
+
+```
+= still red: receipts/L_probability/S7_the_paper_pins_are_read_by_reversing_the_clause_they_quote...
+```
+
+⇒ ***`S7` reproduces on an identical tree.*** *`.33` said: "I expect it to tell nobody anything new, so
+that if it comes back green the surprise is on the record as a surprise." **It came back red, so there
+is no surprise and the expectation is discharged honestly rather than retroactively.** The re-run is
+spent; this PR has no second.*
+
+### ⒝ **⛭ But it DID narrow the question, and the narrowing is the useful part**
+
+*Look at where the `CONTRADICTED` pairs live. **Every one of them is on `…6awafl`:***
+
+```
+red at 224be1de1d on …6awafl, green at af33966d18 on …6awafl -- nothing it reads differs
+red at 224be1de1d on …6awafl, green at 00abda7bf0 on …6awafl -- nothing it reads differs
+```
+
+**And on `…5tjf0b` at `fb7170f29`, `S7` is now red TWICE on the byte-identical tree.**
+
+⇒ ***So `S7` is not nondeterministic in general. It is deterministic here and the green/red pairs are
+confined to `60`'s own line.*** *That is a sharper statement than "⚠ CONTRADICTED" and it points
+somewhere specific: whatever makes `S7` go green on `6awafl` is a property of **that line's trees or
+runners**, not of the receipt's inputs as the ledger measures them — which means the ledger's
+"nothing it reads differs" is either reading an incomplete input set, or `S7` depends on something
+outside it.*
+
+⌷ **I am not pursuing that.** *`S7` is `60`'s receipt and the question was routed to `60` at `r7349`
+⑤. The datum is gathered and handed over; the `Ⓖ㉑` disjunction trace and the proposed patch are in
+this PR's comments, unchanged and still not pushed from here.*
+
+### ⒞ **The `.34` prediction replicated on three heads, not one**
+
+| head | `fast` failure line |
+|---|---|
+| `fb7170f29` (`.31`) | `check_order_acknowledged` |
+| `62909f3de` (`.32`) | `check_order_acknowledged` |
+| `85afbb10f` (`.33`) | `check_order_acknowledged` |
+
+*⌗ I claimed one confirmation and got three independent ones. **Stating that as the stronger result it
+is, rather than letting the original claim stand as if it had been the careful one.***
+
+### ⒟ **Final state of this branch, and it is not going to change without you**
+
+**Done and verified:** *`108` owed rows closed (`137` → `29`); all `17` assigned receipts, all seven
+`r7353` ② hand-off items, six out-of-scope blocks (reported as an error at `.14`); three defects this
+branch introduced found and repaired, each confirmed by CI on the head that first carries the fix;
+three ratchets green together (`2636`/`2636`, `152`/`152`, `57`/`57`); the PR's title and body
+rewritten from 36-commits-stale; four corrections of my own claims recorded (`.27` the weak bound,
+`.30` ⒟ the buffering guess, `.31` ⒞ the "both ratchets" error, `.32` ⒟ the determinism withdrawal).*
+
+**Open and NOT mine:** *`S19`, `S20`, `S7`, `P15` — all red on `main` before this branch existed, no
+portable fix; `check_order_acknowledged` on node `71`.*
+
+⇒ *⛭ **There is no push I can make that improves this PR, and the `29` remaining rows are another
+seat's.** The PR stays watched with the check-in armed. `.26`'s decision is the only thing that
+changes what I do next, and I am not taking another seat's rows without it.*

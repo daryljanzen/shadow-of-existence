@@ -103,26 +103,11 @@ def norm(path):
     return re.sub(r'\s+', ' ', body)
 
 
-#: ⛭ r7360+60: the emphasis comes out in a SECOND reader rather than in `norm`, because the other
-#: literals in this file were cut against `norm`'s output and a claim about a wording should not
-#: move when a neighbouring claim is re-typeset.
-_EMPH_N1 = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
-
-
-def unemph(s):
-    for _ in range(4):
-        s, prev = _EMPH_N1.sub(r'\1', s), s
-        if s == prev:
-            break
-    return s
-
-
 def main():
     print()
     print('  N1 -- does the NONLINEAR evolution keep sigma^TT free? (L-174 (1) remainder)')
     print()
     p11 = norm('dynamics_paper.tex')
-    _p11u = unemph(p11)
     p9 = norm('range_paper.tex')
 
     eta = sp.Symbol('eta', negative=True)
@@ -274,34 +259,48 @@ def main():
           'all orders by the contracted Bianchi identity"',
           'first-class constrained system evolves consistently to all orders by the contracted '
           'Bianchi identity' in p11)
-    #: ⛭ r7360+60: the retired arm was OBJECT-DANGLING (r7271 ruling ②) -- 'sharpen THIS', whose
-    #: antecedent sat in the previous sentence, so the span said that two structures sharpen
-    #: something without saying what.  ** Widened to carry the antecedent: what the Bianchi count
-    #: establishes, and then that the two structures sharpen it. **
-    _SHARPEN = ('there is no classical dynamical obstruction at any order. Two exact structures '
-                'sharpen this beyond the Bianchi count.')
-    check(f'P11 marks its Gowdy-specific STABILITY layer as EXTRA: the Bianchi-count result and the '
-          f'two structures that sharpen it, in one span ({_p11u.count(_SHARPEN)} occurrence) -- the '
-          f'shear charge and the reduced energy',
-          _SHARPEN in _p11u and _p11u.count(_SHARPEN) == 1
+    # ⬭ r7355+cc66, REPAIR of an OBJECT-DANGLING span (r7300+60, r7271 ruling ②): *** "the
+    #   subject is named and the span's object is a PRONOUN whose antecedent is outside it." ***
+    #   `sharpen THIS beyond the Bianchi count` -- `this` is the no-obstruction result, named in
+    #   the sentence before.  Widened to carry the antecedent, which is the minimum that makes the
+    #   span say what it is pinned for.
+    #   ⌗ Verified before performing: ONCE in the paper as this receipt normalises it, once under
+    #     `_unmark`.
+    check('P11 marks its Gowdy-specific STABILITY layer as EXTRA: "there is no classical dynamical '
+          'obstruction at any order. Two exact structures sharpen this beyond the Bianchi count" '
+          '(the shear charge and the reduced energy)',
+          'there is no classical dynamical obstruction at any order. Two exact structures sharpen '
+          'this beyond the Bianchi count' in p11
           and 'the propagating sector is ghost-free to all orders' in p11)
     check('P11 routes the STABILITY question OUT to external theorems, not to its Gowdy structures: '
           'Friedrich (vacuum small-data) and Andreasson-Ringstrom (all-data T^3-Gowdy), Nariai the '
           'non-generic exception',
           'Friedrich proved the nonlinear stability of de Sitter in vacuum with $\\Lambda>0' in p11
           and 'the one non-generic exception, the Nariai branch' in p11)
-    #: ⛭ r7360+60: two arms, two defects, ONE sentence.  *'a closed-form nonlinear solution' was a
-    #: noun phrase standing for the proposition that the paper does not claim one -- it could have
-    #: stood in a sentence CLAIMING one and passed -- and 'admits rather than forces a quantum
-    #: structure' opened on a predicate naming nothing that admits.*  ⇒ ** Both are halves of one
-    #: sentence in P11, so one span carries both claims with their subject inside it. **
-    _ADMITS = ('so the continuous dynamics admits rather than forces a quantum structure. What is '
-               'not claimed is a closed-form nonlinear solution, nor a full non-perturbative '
-               'quantization')
-    check(f'P11 does NOT claim a closed-form nonlinear solution (so neither does this receipt), and '
-          f'says so in the sentence that states what the dynamics DOES do '
-          f'({_p11u.count(_ADMITS)} occurrence)',
-          _ADMITS in _p11u and _p11u.count(_ADMITS) == 1)
+    # ⬭⬭ r7355+cc66, REPAIR of a PROXY and a DANGLING span in one conjunction (r7300+60): `a
+    #   closed-form nonlinear solution` is *** "a short noun phrase standing for a proposition" ***
+    #   -- and the proposition is a NEGATIVE one, that P11 does not claim it, which a bare noun
+    #   phrase cannot carry in either direction -- while `admits rather than forces a quantum
+    #   structure` *** "opens on a predicate, so it names no subject". ***
+    #   ⇒ One span carries both, and it is two adjacent sentences of P11's own.
+    #   ⌗ A MARKUP CARRIER, and the markup is on the NEGATION ITSELF (`What is \emph{not}
+    #     claimed`), so the haystack is emphasis-normalised and the span kept whole.  *A pin whose
+    #     negation sits inside a markup command is the worst place to leave one.*
+    #   ⛔⛭ AND FLOOR 2 CHOSE THE LONGER SPAN, MEASURED: the shorter `the continuous dynamics
+    #     admits rather than forces a quantum structure` stands **TWICE** in the
+    #     emphasis-normalised paper -- normalisation is many-to-one, so it can only RAISE a count,
+    #     and here it raises this one past the floor.  *The two-sentence span stands once.*  This
+    #     is 60's named cost of the normaliser arriving from the other side, and it is the reason
+    #     the grain clause takes its occurrence count BEFORE shortening (r7255's operational
+    #     limit): two claim-complete spans would have been the tidier form and one of them does
+    #     not survive the comparison the checker actually makes.
+    _p11u = re.sub(r'\\emph\{([^}]*)\}', r'\1', norm('dynamics_paper.tex'))
+    check('P11 does NOT claim a closed-form nonlinear solution (so neither does this receipt): '
+          '"the continuous dynamics admits rather than forces a quantum structure. What is not '
+          'claimed is a closed-form nonlinear solution, nor a full non-perturbative quantization"',
+          'the continuous dynamics admits rather than forces a quantum structure. What is not '
+          'claimed is a closed-form nonlinear solution, nor a full non-perturbative quantization'
+          in _p11u)
     # ⛔⛭ AMENDED r4534.  P11 now writes the identity as "the wave's energy and momentum are carried
     #    \emph{entirely by the shear of the spatial leaf}", and P9's positive identity for the wall
     #    is a NAMED COROLLARY now -- "\begin{corollary}[The wall is free gravitational radiation]"

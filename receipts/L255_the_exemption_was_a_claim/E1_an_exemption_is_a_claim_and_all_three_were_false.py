@@ -163,20 +163,53 @@ def main():
     check(f'⓶ᵇ and each was genuinely RED in its pre-r3125 form against this tree: {reds} -- so the '
           'mark described something real, and the question is only whether it was PERMANENT',
           all(v != 0 for v in reds.values()))
-    greens = {}
+    greens, _outs = {}, {}
     for p in THREE:
         r = subprocess.run([sys.executable, os.path.join(ROOT, p)],
                            cwd=os.path.dirname(os.path.join(ROOT, p)), capture_output=True,
                            text=True, errors='replace', timeout=600)
         greens[os.path.basename(p)[:34]] = r.returncode
+        _outs[p] = r.stdout
     check(f'⛔ ⓷ *** AND ALL THREE NOW EXIT 0 AFTER r3125 PINNED BOTH ENDS: {greens} -- the '
           'exemption claimed a permanence none of them had ***',
           all(v == 0 for v in greens.values()))
-    check('⓷ᵇ and the repair is the pin, not a weakening: each keeps a LIVE check, and it is the '
-          'one claim that belongs live -- that the defect has not RECURRED',
-          all(('REPAIRED' in open(os.path.join(ROOT, p), encoding='utf-8').read()
-               or 'seed_took' in open(os.path.join(ROOT, p), encoding='utf-8').read())
-              for p in THREE))
+    # ⬭⬭⬭ r7355+cc66, THE LAST OWED ROW OF THIS RECEIPT, AND IT WAS HELD AT r7353 RATHER THAN
+    #   GUESSED.  r7293+69: *** "cannot-fail, ⓑ-shaped ALT: check ⓷ᵇ claims each of the three
+    #   receipts keeps the one LIVE check that belongs live (the defect has not recurred), and it
+    #   asserts 'REPAIRED' or 'seed_took' ANYWHERE in each file.  'REPAIRED' is a common word
+    #   present 5 and 6 times in two of them, tied to no line, and the third passes on the other
+    #   arm.  Owed a check on each receipt's own live recurrence assertion." ***
+    #   ⌗ And the word was not even standing for prose: in two of the three, `REPAIRED` is a
+    #     PYTHON CONSTANT holding a commit sha (`REPAIRED = 'a83455b4...'`), so the arm was
+    #     satisfied by a variable NAME.  *A pin that reads an identifier is not reading a claim.*
+    #   ⇒ *** THE REPAIR IS EXECUTION, and the runs ALREADY HAPPEN three lines above: *** ⓷ runs
+    #     all three receipts to show they exit 0, and threw their output away.  Each receipt's own
+    #     live recurrence assertion is now read OUT OF THAT OUTPUT, so the claim is that the live
+    #     check RAN AND REPORTED -- not that a word appears in a file.
+    #   ⌗ EACH RECEIPT'S OWN LINE, read one by one as 69's ground requires, because they are three
+    #     different claims and no single string covers them:
+    #       `L551`/`R1`  -- "AND NO PROTECTED ROW IS SPLIT IN THE LIVE REGISTER EITHER", its
+    #                       live-register split count, read against the working tree;
+    #       `L555`/`M1`  -- "AND THE DEFECT HAS NOT RECURRED, live:", its live protected-id count;
+    #       `L556`/`R1`  -- its SEEDED gate round-trip, "check_appendix_current: clean tree exits
+    #                       ... restored ... byte-identical", which is how THAT receipt shows the
+    #                       defect would be caught if it came back (it has no live-state claim to
+    #                       make -- its subject is an instrument, not a register).
+    #   ⌗ Verified before performing: all three lines are present in the three receipts' stdout,
+    #     checked by running them.  *And the third was found only by running it: its `seed_took`
+    #     assertion is a bare `assert` that prints NOTHING, so an output-based check on that
+    #     string would have been a silent zero.*
+    _LIVE_LINE = {
+        THREE[0]: 'AND NO PROTECTED ROW IS SPLIT IN THE LIVE REGISTER EITHER',
+        THREE[1]: 'AND THE DEFECT HAS NOT RECURRED, live:',
+        THREE[2]: 'check_appendix_current: clean tree exits',
+    }
+    _live_seen = {os.path.basename(p)[:30]: (_LIVE_LINE[p] in _outs[p]) for p in THREE}
+    check('⓷ᵇ and the repair is the pin, not a weakening: each keeps a LIVE check and each one RAN '
+          f'and REPORTED in the run above -- {_live_seen}, read one receipt at a time because they '
+          'are three different claims: a live split count, a live protected-id count, and a seeded '
+          'gate round-trip',
+          all(_live_seen.values()) and len(_LIVE_LINE) == len(THREE))
     # ** and the repair is NAMED to a commit rather than to "recently", because that is the whole
     #   subject of the revision that made it. **
     subj = git('log', '-1', '--format=%s', PINNED).strip()
@@ -193,11 +226,21 @@ def main():
     gate_now = open(GATE, encoding='utf-8').read()
     check('⓸ the gate was a REASON-PRESENCE check only: at the parent it never ran a marked receipt',
           'subprocess' not in gate_was and 'STALE' not in gate_was)
-    check('⓸ᵇ and it now runs each marked receipt and fails on exit 0',
-          'STALE EXEMPTION' in gate_now and 'subprocess.run' in gate_now)
-    check('⓸ᶜ ⌷ and a timeout or an environmental death is REPORTED, not counted as green -- a '
-          'receipt that could not be run says nothing about whether it can pass',
-          'TimeoutExpired' in gate_now and 'not judged either way' in gate_now)
+    # ⬭ r7351+cc66, REPAIR of TWO owed rows by FOLDING, which is what r7281+69's ground offered:
+    #   `STALE EXEMPTION` and `subprocess.run` were CODE TOKENS STANDING FOR BEHAVIOUR -- a common
+    #   word and an assignment line, tied to no claim of their own -- and "the behaviour is already
+    #   tested by seeds in ⓹ (a green marked receipt fails the gate and prints STALE), so the repair
+    #   is to delete ⓸ᵇ's text conjuncts or fold them into ⓹".
+    #   ⌗ Verified before deleting rather than assumed: ⓹ runs the gate over a seeded marked receipt
+    #     in a temp tree and asserts `seeds['green'] == (1, True)` -- exit 1 AND the word STALE in
+    #     its output -- so the behaviour both tokens stood for is tested by execution.  ⓸ᵇ is folded
+    #     into ⓹'s label, and nothing is now asserted by the spelling of the gate's source.
+    # ⬭ r7351+cc66: ⓸ᶜ is FOLDED INTO ⓹ᶜ below, which seeds this behaviour instead of quoting the
+    #   gate's source for it.  Its two conjuncts -- `TimeoutExpired` and `not judged either way` --
+    #   were both owed rows: r7281+69 said "No seed tests a timeout.  Owed a seeded marked receipt
+    #   that sleeps past a short cap, with the gate shown not to count it as stale."  ⓹ᶜ is that
+    #   seed, and it measures `(0, False, True, False)` -- exit 0, no STALE, the report line
+    #   present -- so the claim is now carried by the gate's behaviour and not by its spelling.
 
     # ** SEEDED, TWICE: a marked receipt that passes must FAIL the gate, and a marked receipt that
     #   fails must not. **  *Both directions, because a gate that fails on everything is not a gate.*
@@ -223,8 +266,55 @@ def main():
                                timeout=600)
             seeds[name] = (r.returncode, 'STALE' in r.stdout)
     check(f'⓹ SEEDED BOTH WAYS: a marked receipt that EXITS 0 fails the gate {seeds["green"]}, and '
-          f'a marked receipt that exits 1 passes it {seeds["red"]}',
+          f'a marked receipt that exits 1 passes it {seeds["red"]} -- which is also what ⓸ᵇ asserted '
+          f'by quoting the gate\'s source, now carried by execution instead',
           seeds['green'] == (1, True) and seeds['red'] == (0, False))
+
+    # ⬭⬭ r7351+cc66, REPAIR of FOUR owed rows by SEEDING THE TWO BEHAVIOURS NOBODY SEEDED.
+    #   r7281+69 owed exactly this: `MARK = re.compile` and `with no reason given` were "owed a
+    #   seeded marked receipt with no reason, shown to fail the gate", and `TimeoutExpired` and
+    #   `not judged either way` were "owed a seeded marked receipt that sleeps past a short cap,
+    #   with the gate shown not to count it as stale".  Four code/report tokens standing for two
+    #   behaviours; two seeds retire all four.
+    #   ⛭ THE CAP IS LOWERED IN THE SEED'S OWN COPY OF THE GATE, not slept past in the real one.
+    #     `TIMEOUT = 420` is a module constant, so sleeping past it would cost seven minutes a run.
+    #     The seed copies the gate with the cap at 1 s and sleeps 3.  *** What is under test is the
+    #     `except subprocess.TimeoutExpired` BRANCH, not the number, and a seed that cost seven
+    #     minutes would be deleted by the next person who timed this receipt. ***
+    #   ⌗ The mark is ASSEMBLED and never written, for the reason ⓹ already gives: this receipt must
+    #     not itself look marked, because the gate RUNS what it marks.
+    seeds2 = {}
+    for name, cap, body in (('noreason', None, 'import sys\nsys.exit(1)\n'),
+                            ('slow', 1, 'import time\ntime.sleep(3)\n')):
+        with tempfile.TemporaryDirectory() as td:
+            os.makedirs(os.path.join(td, 'corpus'))
+            os.makedirs(os.path.join(td, 'receipts', 'Z8_seed'))
+            _g = open(GATE, encoding='utf-8').read()
+            if cap is not None:
+                _g, _n = re.subn(r'(?m)^TIMEOUT = \d+$', f'TIMEOUT = {cap}', _g)
+                if _n != 1:                      # the constant moved: say so, do not guess
+                    seeds2[name] = ('TIMEOUT constant not found', _n)
+                    continue
+            open(os.path.join(td, 'corpus', 'check_rerunnable_honest.py'), 'w',
+                 encoding='utf-8').write(_g)
+            _mk = '#!/usr/bin/env python3\n# RERUNNABLE: ' + 'NO'
+            head = (_mk + '\n') if name == 'noreason' else (
+                _mk + ' \u2014 POINT-IN-TIME\n' + '# ' + 'x' * 100 + '\n')
+            open(os.path.join(td, 'receipts', 'Z8_seed', 'Z8.py'), 'w',
+                 encoding='utf-8').write(head + body)
+            r = subprocess.run([sys.executable, os.path.join(td, 'corpus',
+                                                             'check_rerunnable_honest.py')],
+                               cwd=td, capture_output=True, text=True, errors='replace',
+                               timeout=120)
+            seeds2[name] = (r.returncode, 'no reason given' in r.stdout,
+                            'not judged either way' in r.stdout, 'STALE' in r.stdout)
+    check(f'⓹ᵇ SEEDED: a marked receipt with NO REASON fails the gate {seeds2["noreason"]} -- which '
+          'is the behaviour `MARK = re.compile` and `with no reason given` were quoted for',
+          seeds2['noreason'][:2] == (1, True))
+    check(f'⓹ᶜ SEEDED: a marked receipt that sleeps PAST THE CAP is REPORTED and not counted stale '
+          f'{seeds2["slow"]} -- the behaviour `TimeoutExpired` and `not judged either way` were '
+          'quoted for, with the cap lowered in the seed\'s own copy of the gate',
+          seeds2['slow'] == (0, False, True, False))
 
     # ============================================================ (4) the marks came off, in place
     print()
@@ -253,15 +343,23 @@ def main():
     check('⓺ᵉ ⛔ and the gate reads only the LEADING COMMENT BLOCK: the mark inside a string '
           'literal further down is a MENTION and is not matched, which is what stopped this '
           'receipt and the gate from running each other forever',
-          MARK.search(_mid) and not MARK.search(_rh.header(_mid))
-          and 'header(t)' in gate_now)
+          # ⬭ r7351+cc66, REPAIR of an owed row: `header(t)` was a code token standing for the
+          #   behaviour this very check already tests directly on the line above -- r7281+69: "⓺ᵉ
+          #   already tests the behaviour directly (MARK.search(_rh.header(_mid)) is falsy), so the
+          #   text conjunct adds nothing but rename fragility.  Owed deletion."  Deleted.
+          MARK.search(_mid) and not MARK.search(_rh.header(_mid)))
     check('⓺ᵇ and each of the three carries the falsification IN PLACE, so a reader who finds the '
           'convention documented at r2902 can see how its instances ended',
           all('THE `RERUNNABLE: NO — POINT-IN-TIME` MARK WAS REMOVED HERE AT r3126'
               in open(os.path.join(ROOT, p), encoding='utf-8').read() for p in THREE))
-    check('⓺ᶜ ⌗ and the CONVENTION is kept, not deleted: the gate still requires a reason beside '
-          'any future mark',
-          'with no reason given' in gate_now and 'MARK = re.compile' in gate_now)
+    # ⬭ r7351+cc66: ⓺ᶜ is FOLDED INTO ⓹ᵇ, which seeds this behaviour instead of quoting the gate's
+    #   source for it.  Its two conjuncts -- `with no reason given` and `MARK = re.compile`, a
+    #   report line and an ASSIGNMENT LINE -- were both owed rows standing for "the convention is
+    #   kept", and r7281+69 said "no seed tests a reasonless mark.  Owed a seeded marked receipt
+    #   with no reason, shown to fail the gate."  ⓹ᵇ is that seed, and it measures `(1, True, ...)`
+    #   -- the gate EXITS 1 and prints `no reason given` -- which is the convention being kept,
+    #   demonstrated rather than quoted.  ⌗ An assignment line is the clearest case in this block:
+    #   a regex can be rewritten without changing what it matches, and the seed survives that.
     r = subprocess.run([sys.executable, GATE], capture_output=True, text=True, errors='replace',
                        timeout=900)
     check(f'⓺ᵈ and the gate is green: exits {r.returncode}', r.returncode == 0)

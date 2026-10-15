@@ -102,7 +102,12 @@ def main():
     phys = open(os.path.join(ROOT, 'THE_PHYSICS_REACH.md'), encoding='utf-8').read()
     check('⓵ it declares the walk complete: "THE WALK IS COMPLETE r2544 — every station, and the '
           'class is six-for-six"',
-          'THE WALK IS COMPLETE r2544' in phys and 'every station' in phys)
+          # ⬭ r7351+cc66, REPAIR of r7281+69's CO-OCCURRENCE row: `every station` was pinned as a
+          #   SECOND span continuing the same heading, so two spans carried one claim.  ONE span over
+          #   the heading instead.  ⌗ Verified in THE_PHYSICS_REACH.md before performing: the heading
+          #   span stands ONCE -- and it takes an EM DASH there, where the gate source quotes it with
+          #   `--`, which is why the prescribed text was measured in its own haystack and not copied.
+          'THE WALK IS COMPLETE r2544 — every station, and the class is six-for-six' in phys)
     th = TC.theatre_state()
     rp = {k: v for k, v in th.items() if v[0] == 'THE_PHYSICS_REACH.md'}
     print(f'    station rows in the physics theatre: {sorted(rp)}')
@@ -134,7 +139,11 @@ def main():
           'delay is the finding"', 'THE ①② STRIKE — made r2383, and the delay is the finding' in phys)
     check('⓷ᵇ and inside it, the error in the same words OWED later used: the row "read \\"NEXT — '
           'the earliest unrun station\\" while ①② had already been run"',
-          'the earliest unrun station' in phys and 'had already been run' in phys)
+          # ⬭ r7351+cc66, REPAIR of r7281+69's DANGLING row: "while ①② had already been run" has its
+          #   subject outside the span and stands TWICE in the document.  The note's own sentence
+          #   carries the whole claim and stands ONCE.  ⌗ Verified before performing.
+          'The row above read "NEXT — the earliest unrun station" while ①② had already been run'
+          in phys)
     check('⛭ ⓷ᶜ *** so the exact phrase OWED uses at r3122 is the phrase that document recorded as '
           'the error at r2383 -- the diagnosis was written, in the right place, about the right '
           'station, in the right words, and the list reproduced it seven hundred revisions later ***',
@@ -155,7 +164,13 @@ def main():
           'Ⓕ, and the physics theatre on ①②',
           'carried Ⓕ as owed for forty-eight revisions a' in
           open(os.path.join(ROOT, 'THE_MATHEMATICS_REACH.md'), encoding='utf-8').read()
-          and 'the delay is the finding' in phys)
+          # ⬭ r7351+cc66, REPAIR of r7281+69's REDUNDANT row: `the delay is the finding` is a strict
+          #   SUBSTRING of the heading key this same receipt already pins at ⓷ (verdict DELIBERATE),
+          #   so it added no locating power and 69's repair is to reuse the heading rather than to
+          #   write a span.  The conjunct is DROPPED; ⓷'s key carries it.
+          #   ⌗ And a span was NOT written: the heading stands TWICE in the document, so a new span
+          #     over it would not have met floor 2 -- which is why the prescription said reuse.
+          )
 
     # ============================================================ (5) the gate
     print()
@@ -165,13 +180,20 @@ def main():
     src = open(os.path.join(ROOT, 'corpus', 'check_theatre_currency.py'), encoding='utf-8').read()
     check('⓹ the gate prints its population every run, and FAILS rather than passing when the parse '
           'finds too few stations to be measuring anything',
-          'a consistency check that matches nothing is green forever' in src.lower()
-          or 'green forever' in src)
+          # ⬭ r7351+cc66, REPAIR of r7281+69's CANNOT-FAIL row: the complete clause was `or`-ed with
+          #   the bare `green forever`, which stands THREE times in the gate, so the weak arm alone
+          #   could carry the check and the clause never decided it.  The disjunction is DROPPED and
+          #   the complete clause stands alone.  ⌗ Verified: it occurs ONCE, case-folded, as read.
+          'a consistency check that matches nothing is green forever' in src.lower())
     check('⓹ᵇ ⚠ and its first form under-matched: the marker regex required `⟐` at segment end while '
           'the list writes it mid-segment, so it reported ONE station and called six AGREED that it '
           'had not read -- recorded in the gate rather than quietly fixed',
-          'reported six stations as AGREED that it had simply not read' in src
-          or 'AGREED that it had' in src)
+          # ⬭ r7351+cc66, REPAIR of TWO of r7281+69's rows at once: the second arm
+          #   `AGREED that it had` is a mid-clause SUBSTRING of the first, so the wide arm could
+          #   never decide the check -- 69's words -- and the fragment named no subject.  The
+          #   disjunction is DROPPED and the arm is WIDENED to the antecedent of its own "it", which
+          #   is what 69 prescribed.  ⌗ Verified: the widened span occurs ONCE in the gate source.
+          'it reported six stations as AGREED that it had simply not read' in src)
     rc = subprocess.run([sys.executable, os.path.join(ROOT, 'corpus',
                                                       'check_theatre_currency.py')],
                         cwd=ROOT, capture_output=True, text=True, errors='replace',
@@ -214,6 +236,13 @@ def main():
     #    act of documenting the fix re-created the failure it documents.*
     tc = open(os.path.join(ROOT, 'corpus', 'check_theatre_currency.py'),
               encoding='utf-8', errors='replace').read()
+    # ⬭ r7351+cc66: the gate's comment HEADINGS wrap across `#:` continuation lines, so a heading is
+    #   one logical sentence split by the source's own formatting.  Normalising the continuation out
+    #   of the HAYSTACK -- 60's r7255 prescription for markup carriers, which reaches this class too
+    #   -- lets a heading be pinned WHOLE and claim-complete instead of clipped at the line break.
+    #   ⌗ Measured: the MENTION heading is 0 occurrences raw and 1 normalised, and the clipped
+    #     one-line form ends on "WAS THE", which dangles on the object it was cut from.
+    tcn = re.sub(r'\s+', ' ', re.sub(r'\n\s*#:?\s*', ' ', tc))
     sys.path.insert(0, os.path.join(ROOT, 'corpus'))
     import importlib
     ctc = importlib.import_module('check_theatre_currency')
@@ -227,10 +256,23 @@ def main():
           ctc.control_fires() is True and 'if not control_fires():' in tc)
     check('\u2465\u1d9c THE FINDING IS IN THE GATE, not only here: it records that the quotation '
           'belongs to the REPAIR, so the next reader learns why un-quoting is there',
-          'MENTION VERSUS USE' in tc and 'the victim' in tc.lower())
+          # ⬭ r7351+cc66, REPAIR of TWO of r7281+69's rows: `MENTION VERSUS USE` and `the victim`
+          #   are two fragments of ONE comment heading, and the second is a noun with no predicate
+          #   matched case-insensitively.  ONE span over the whole heading, read through `tcn`.
+          #   ⌗ Verified: ONCE normalised, and it ends on `REPAIR ITSELF.` rather than mid-clause.
+          'MENTION VERSUS USE -- THE FIFTH TIME IN THIS LINE, AND THE FIRST TIME THE VICTIM WAS '
+          'THE REPAIR ITSELF.' in tcn)
     check('\u2465\u1d48 and the cost is NAMED rather than hidden: a genuine owed-marker written '
           'inside quotes would be missed, and the weaker alternative considered is recorded',
-          'THE COST, NAMED' in tc and 'weakens the gate everywhere' in tc)
+          # ⬭ r7351+cc66, REPAIR of TWO of r7281+69's rows: `THE COST, NAMED` is a PROXY -- a heading
+          #   standing in for the cost it names, so the sentence could go and the heading stay -- and
+          #   `weakens the gate everywhere` is a predicate whose subject, "the alternative
+          #   considered", sits outside it.  Each is replaced by what it was standing in for: the
+          #   cost's own sentence, and the clause from its own subject.
+          #   ⌗ Verified: the cost sentence ONCE raw; the subject clause ONCE normalised.
+          'A genuine owed-marker written inside quotes would be missed' in tc
+          and 'the alternative considered (treat any station with a `~~STRUCK~~` disposition as '
+              'disposed regardless of markers) weakens the gate everywhere' in tcn)
 
     # ** and the struck OWED row does quote it -- so the situation the gate had to survive is real **
     owed = open(os.path.join(ROOT, 'OWED.md'), encoding='utf-8', errors='replace').read()
@@ -252,10 +294,17 @@ def main():
           'staleness with no document boundary to cross at all; corrected r3158',
           math_reach.count('\u2605 NEXT') == 1
           and '"\u2605 NEXT"' in math_reach
-          and 'CLOSED r3154 (`L-266`)' in math_reach)
+          # ⬭ r7351+cc66, REPAIR of r7281+69's row: the claim is about the LIST line, but
+          #   `CLOSED r3154 (`L-266`)` stands TWICE -- the station table's occurrence alone satisfied
+          #   the key, so the pin could pass without the line the claim is about.  The list line's
+          #   own clause stands ONCE.  ⌗ Verified in THE_MATHEMATICS_REACH.md before performing.
+          and 'CLOSED r3154 (`L-266`) — and this line read "★ NEXT"' in math_reach)
     check('\u2466\u1d9c \u2318 AND THE GATE DOES NOT CLAIM THIS ONE: it reads station TABLES, not '
           'prose lists, and its own docstring bounds its reach rather than implying more',
-          'WHAT IT CANNOT DO' in tc)
+          # ⬭ r7351+cc66, REPAIR of r7281+69's PROXY row: `WHAT IT CANNOT DO` is a docstring HEADING
+          #   standing for the bound it introduces -- the bound could be deleted with the heading
+          #   kept -- so the bound's own sentence is pinned.  ⌗ Verified: ONCE raw.
+          'It compares MARKINGS, not work' in tc)
     check('\u2466\u1d48 and the file carried a corrupted heading from r2419 -- "THE FIELDS TO THROW '
           '(candid" spliced before a second copy of itself -- repaired r3158',
           'THE FIELDS TO THROW (candid## ' not in math_reach

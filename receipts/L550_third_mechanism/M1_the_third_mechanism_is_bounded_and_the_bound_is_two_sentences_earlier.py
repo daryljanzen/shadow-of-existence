@@ -87,15 +87,70 @@ def check(label, cond):
         FAILED.append(label)
 
 
-#: ⛭⛭ r7356 (60) on `r7353` ①'s ORDER: the emphasis family is normalised IN THE READER, which is
-#: `r7258`'s settled form -- ** a span that runs through `\emph` is repaired by making the markup
-#: invisible to the reader, never by splitting the span around the markers. **
-_EMPH_M1 = re.compile(r'\\(?:emph|textit|textbf)\{([^{}]*)\}')
-
-
 def flat(path):
-    return _EMPH_M1.sub(r'\1', re.sub(r'\s+', ' ',
-                                      open(path, encoding='utf-8', errors='replace').read()))
+    return re.sub(r'\s+', ' ', open(path, encoding='utf-8', errors='replace').read())
+
+
+# ⬭⬭ r7355+cc66 -- `L-249`'s RULE, needed three times in this file, so its reader is written once.
+#   THE_REGISTER's PO-78 row states the rule verbatim: *** "the historical state be pinned at the
+#   commit it stood at, the current state asserted separately, and a directional live check made
+#   monotone." ***  r7258+60 and r7260+60 put three of this file's four owed rows in that class and
+#   said why: the claim is carried by an OPENNESS MARKER in the corpus's own prose, so *** the pin
+#   FIRES WHEN THE NAMED WORK SUCCEEDS. ***  They reached for MEANING-HELD and declined it -- a
+#   string form carries this claim perfectly well and is merely EXPECTED TO RETIRE, which is
+#   TEMPORAL and not inexpressible.
+#   ⇒ AND THE SPLIT COSTS NOTHING HERE, because this file's finding is the BOUND, not the opening:
+#     "the third mechanism is bounded and the bound is two sentences earlier".  The bound is
+#     asserted live below and does not retire; the residue's openness retires the day a third
+#     mechanism is named.  So the openness halves move to named commits and *** nothing new is
+#     pinned and no disjunction is written *** -- the same shape as the three landed on P16 at
+#     r7347.
+#   ⌗ 69's r7347-cycle amendment: "the floor does not apply when the file is read at a named
+#     commit", a fixed commit having no later edits for the floor to protect against.
+#   ⌗ Verified before performing: each span stands exactly ONCE in its file at its pin.
+P14_PIN = '593fe7ba8'   # most recent commit to touch matter_sector_paper.tex
+PO_PIN = 'f02fad17a'    # most recent commit to touch PROTECTED_OPEN.md
+
+
+def raw_at(rev, path):
+    """a tracked file exactly as it read at a commit, NOT flattened"""
+    import subprocess
+    return subprocess.run(['git', 'show', f'{rev}:{path}'], cwd=ROOT,
+                          capture_output=True, text=True, errors='replace').stdout
+
+
+def flat_at(rev, path):
+    """the same file, flattened the way `flat()` flattens it
+
+    ⛔⛭ r7355+cc66 -- AND THE `git show` IS REPEATED HERE RATHER THAN TAKEN FROM `raw_at`, WHICH
+    LOOKS LIKE DUPLICATION AND IS NOT.  *Written as `re.sub(r'\s+', ' ', raw_at(rev, path))`, the
+    read sits TWO function hops from every key that uses it, and the extractor's trace
+    (`mutate_assertions.visit(r, False, False, 2, frozenset())`) loses it: this file's site count
+    fell from `14` to `9` and the three pinned literals DISAPPEARED from the instrument's view
+    entirely.*
+      ⇒ *** That is the worst available outcome, not a cosmetic one. ***  A pin the instrument
+        cannot see is not an adjudicated pin, it is an unwatched one: its baseline rows go STALE,
+        the ratchet's census stops counting the class it exists to count, and the pin still
+        breaks when the paper moves -- with nothing left that knows it was ever pinned.
+      ⌗ `r7353` ③ names the disposition for a span that CANNOT be pinned admissibly -- a
+        structural assertion, retiring as repaired-and-invisible.  ** This is the opposite case:
+        the pin is perfectly admissible, and only the plumbing made it invisible. **  So the
+        plumbing changes, not the pin.
+    """
+    import subprocess
+    out = subprocess.run(['git', 'show', f'{rev}:{path}'], cwd=ROOT,
+                         capture_output=True, text=True, errors='replace').stdout
+    return re.sub(r'\s+', ' ', out)
+
+
+def locate(raw, span):
+    """where a FLATTENED span sits in the UNFLATTENED text
+
+    ⌗ r7355+cc66: the flattening is many-to-one, so a span taken from flattened text cannot be
+    `find`-ed in the raw text at all.  Each single space in the span is matched against any run
+    of whitespace, which is exactly the relation `re.sub(r'\s+', ' ', ...)` collapses.
+    """
+    return re.compile(r'\s+'.join(re.escape(w) for w in span.split(' '))).search(raw)
 
 
 def main():
@@ -127,38 +182,65 @@ def main():
     residue = ('What is not excluded here is a mechanism that is neither holonomy nor isometry; the '
                'isometry route is excluded separately, and no third mechanism has been named, so '
                'naming one remains open.')
-    #: ⛭ THE REPAIR (r7356 on `r7353` ①'s ORDER).  ** Two of the owed rows pinned the SAME sentence
-    #: at two lengths -- the whole residue and the fragment `no third mechanism has been named, so
-    #: naming one remains open` -- so the receipt carried one claim on two keys, and the shorter was
-    #: a fragment of the longer. **  ⇒ The whole sentence is kept as the one key, asserted ONCE and
-    #: shown unique; the duplicate is withdrawn rather than re-pinned.  ⌗ And the register's half is
-    #: read as the ROW it lives in rather than as a phrase anywhere in the file.
-    _po_rows = [l for l in po.split('|') if 'no third mechanism has been named' in l]
-    check(f'⓵ P14 states the residue as an unbounded existential, in one sentence that occurs once '
-          f'({p14.count(residue)}): "{residue}"',
-          residue in p14 and p14.count(residue) == 1)
-    check(f'   and the register carries it that way too, in ITS OWN CELL rather than anywhere in the '
-          f'file ({len(_po_rows)} cell(s))',
-          len(_po_rows) == 1)
+    # ⬭ L-249 split: the RESIDUE is the retiring half, read at P14's own pin.
+    check(f'⓵ at {P14_PIN} P14 stated the residue as an unbounded existential: "no third mechanism '
+          'has been named" -- the RETIRING half, read where naming one cannot turn it red',
+          residue in flat_at(P14_PIN, 'corpus/matter_sector_paper.tex'))
+    # ⬭ L-249 split: the register's copy of the same existential, at the register's own pin.  A
+    #   register is the thing most certain to be struck when the row closes, so pinning it is the
+    #   clearest case of the three.
+    check(f'   and at {PO_PIN} the register carried it that way too',
+          'no third mechanism has been named' in flat_at(PO_PIN, 'PROTECTED_OPEN.md'))
 
     # ---------------------------------------------------- (2) the bounding sentence, and its form
     dim = ('a Yang--Mills term in four dimensions carries a dimensionless coupling that a single '
            'length cannot build')
     check('⛔ ⓶ and TWO SENTENCES EARLIER, in the same paragraph: "' + dim + '"', dim in p14)
 
-    i_dim, i_res = p14.index(dim), p14.index(residue)
-    between = p14[i_dim:i_res]
+    # ⛔⛔⛔ r7355+cc66 -- AND THIS SEAT'S OWN r7143 AMENDMENT WAS WRONG TWICE OVER, which is
+    #   found here only because `L-249`'s split made the residue a pinned read and this line a
+    #   LIVE `p14.index(residue)` -- a lookup that would CRASH rather than fail the day the
+    #   sentence retires, which is the class this very line's file records twice elsewhere.
+    #   ** r7143+cc66.108 replaced two numeric bounds (`< 900` characters, `<= 4` sentence-ends)
+    #   with what it called the derivable test, and wrote: "there is no paragraph break between
+    #   them ... not a looser bound, the derivable one." **
+    #     ⓐ *** THE TEST COULD NEVER FIRE. ***  `between` is cut from `p14`, which is
+    #       `re.sub(r'\s+', ' ', ...)`, so it holds ZERO newline characters -- `'\n\n' in
+    #       between` is False by construction, for any paper, forever.  *Measured: `flat(p14)`
+    #       contains 0 newlines.*  The `\par` arm is the only one that could ever decide, and it
+    #       is absent here, so the conjunction has been carried by a constant since it was written.
+    #     ⓑ *** AND ON THE TEXT WHERE IT CAN BE MEASURED, IT IS FALSE. ***  Located in the
+    #       UNFLATTENED paper, the material between the two sentences contains a blank line -- a
+    #       real TeX paragraph break.  *** So the two sentences are NOT in the same paragraph, and
+    #       the claim r7143 asserted is untrue. ***
+    #   ⇒ ** The FINDING survives and the GLOSS does not: ** the bound is still two sentences
+    #     earlier (`n_sent == 2`) and 529 characters earlier, and it is in the paragraph
+    #     IMMEDIATELY BEFORE rather than the same one.  So the two numeric bounds r7143 discarded
+    #     are restored AS ASSERTIONS -- they are the derivable facts -- and the paragraph count is
+    #     measured on the raw text, where the question has an answer, and asserted at its true
+    #     value instead of its wished-for one.
+    #   ⌗ Read at the pin with the residue, because a distance between two sentences is a fact
+    #     about the paragraph as it stood, and it retires when the residue does.
+    #   ⛭ TIGHTENED r7355+cc66.27, against this block's own first form.  It was written
+    #     `n_sent <= 4`, and `check_prose_pins` flagged it as a NEW pin on a count -- correctly.
+    #     *** A `<= 4` bound admits 3 and 4, neither of which is "two sentences earlier", so the
+    #     slack made the assertion WEAKER THAN THE CLAIM IT LABELS -- and the comment four lines
+    #     above already said `n_sent == 2`, so the code contradicted its own prose. ***
+    #   ⇒ ** The haystack is read at `P14_PIN`, so the count cannot move while the pin holds: an
+    #     equality is immovable here for exactly the reason a slack bound is unnecessary. **  The
+    #     headroom was protecting against nothing and hiding the claim's own number.
+    p14_pin = flat_at(P14_PIN, 'corpus/matter_sector_paper.tex')
+    _raw_pin = raw_at(P14_PIN, 'corpus/matter_sector_paper.tex')
+    i_dim, i_res = p14_pin.index(dim), p14_pin.index(residue)
+    between = p14_pin[i_dim:i_res]
     n_sent = between.count('. ')
-    # ⛭⛭ r7143+cc66.108: `< 900` CHARACTERS AND `<= 4` SENTENCE-ENDS WERE BOTH PARAGRAPH-SCALE PINS
-    #   STANDING IN FOR THE CLAIM THE LABEL MAKES -- *the same paragraph, not a distant echo*. ** And
-    #   "the same paragraph" is derivable from the text instead of approximated by a length: there is no
-    #   paragraph break between them. **  ⇒ *So the bound is the claim rather than a figure near it: not
-    #   a looser bound, the derivable one.*  ⌗ Both numbers stay in the label, printed, because the
-    #   distance is worth reading; neither is asserted.
-    _para_break = '\n\n' in between or '\par' in between
-    check(f'   with the residue {i_res - i_dim} characters and {n_sent} sentence-ends later, and NO '
-          f'paragraph break between them -- the same paragraph, not a distant echo',
-          0 < i_res - i_dim and not _para_break)
+    _m_dim, _m_res = locate(_raw_pin, dim), locate(_raw_pin, residue)
+    _between_raw = _raw_pin[_m_dim.end():_m_res.start()]
+    n_para = _between_raw.count('\n\n') + _between_raw.count('\par')
+    check(f'   with the residue {i_res - i_dim} characters and {n_sent} sentence-ends later, across '
+          f'{n_para} paragraph break(s) -- the paragraph IMMEDIATELY BEFORE, two sentences on, and '
+          f'not a distant echo (r7143 claimed the SAME paragraph and that is false, see above)',
+          0 < i_res - i_dim < 900 and n_sent == 2 and n_para == 1)
 
     # THE POINT: the bounding sentence names no route
     routes = [w for w in ('holonomy', 'isometry', 'flat', 'bundle', 'monodromy', 'winding')
@@ -174,16 +256,26 @@ def main():
     check('⓸ and P14\'s premise "a single length" is p0\'s ledger position, stated in another paper: '
           '"' + ledger + ' ... is the size of the universe in gauge-units---a number, not a tuning"',
           ledger in p0 and 'the size of the universe in gauge-units---a number, not a tuning' in p0)
-    #: ⛭ and this arm's span began mid-sentence, at `are combinations`, with its SUBJECT outside it
-    #: and `\emph` markup inside it.  ** The subject is the whole point -- it is the Planck units
-    #: that are combinations -- so the span now starts there and the markup is normalised in the
-    #: reader. **
-    _CROSS = ('The traditional Planck length, mass, and time---$\\ell_P=\\sqrt{\\hbar G/c^3}$, '
-              '$m_P=\\sqrt{\\hbar c/G}$, $t_P=\\sqrt{\\hbar G/c^5}$---are combinations of these '
-              'gauges, and cross-register ones')
-    check(f'   and p0 says WHY l_P is not a second length, with the SUBJECT in the span and the '
-          f'clause occurring once ({p0.count(_CROSS)}): "{_CROSS}"',
-          _CROSS in p0 and p0.count(_CROSS) == 1)
+    # ⬭⬭ r7355+cc66, TWO DEFECT CLASSES IN ONE KEY, which is how r7260+60 read it: DANGLING
+    #   (leading, finite verb -- the span opens on `are`, and what the Planck units ARE is the
+    #   whole claim, so its subject sat outside) AND a MARKUP CARRIER (`\emph{cross-register}`
+    #   inside the span).
+    #   ⇒ One widening answers both: the span now opens on `The traditional Planck length, mass,
+    #     and time`, carries their definitions and the `cross-register` predicate whole, and is
+    #     read against the EMPHASIS-NORMALISED paper per 60's r7255 prescription.
+    #   ⌗ The normalised haystack is bound FROM THE PATH rather than from `p0`, for the reason
+    #     measured on `L548` this revision: a haystack bound through another binding can leave the
+    #     key UNDECIDED, which owes a hand-kept `corpus/target_annotations.tsv` row.
+    #   ⌗ Verified before performing: ONCE in the normalised paper, once under `_unmark`.
+    p0u = re.sub(r'\\emph\{([^}]*)\}', r'\1',
+                 flat(os.path.join(ROOT, 'corpus', 'geometric_core_paper.tex')))
+    check('   and p0 says WHY l_P is not a second length: "The traditional Planck length, mass, and '
+          'time ... are combinations of these gauges, and cross-register ones, mixing the thermal '
+          '$\\hbar$ with the real-geometric $c$ and $G$"',
+          'The traditional Planck length, mass, and time---$\\ell_P=\\sqrt{\\hbar G/c^3}$, '
+          '$m_P=\\sqrt{\\hbar c/G}$, $t_P=\\sqrt{\\hbar G/c^5}$---are combinations of these '
+          'gauges, and cross-register ones, mixing the thermal $\\hbar$ with the real-geometric '
+          '$c$ and $G$' in p0u)
 
     # ---------------------------------------------------- (4) the arithmetic
     print()
@@ -251,14 +343,15 @@ def main():
           'what a third mechanism must deliver is therefore a fixed pure number rather than a free '
           'parameter' in p14)
     # ** r6931+70.1: class (c), same rewording as ⓵ (43965df3): ", and naming" -> ", so naming". **
-    #: ⛔ WITHDRAWN WITH ITS CASE (r7356): this arm pinned a FRAGMENT OF THE SENTENCE ⓵ already
-    #: pins whole, so the receipt held one claim on two keys and a rewrite of the sentence would
-    #: have owed two repairs.  ** The declining is asserted from the sentence ⓵ pins -- the same
-    #: words, read once -- rather than on a second key. **
-    check('   ⚠ and the paragraph still DECLINES to close the row, which is the TAIL of the very '
-          'sentence ⓵ pins -- read from that one key rather than pinned again',
-          residue.endswith('no third mechanism has been named, so naming one remains open.')
-          and p14.count(residue) == 1)
+    # ⬭ L-249 split: the third openness read, same rule, same pin.  *The DURABLE half of this
+    #   very paragraph is the sentence asserted immediately above -- "what a third mechanism must
+    #   deliver is therefore a fixed pure number rather than a free parameter" -- which is LIVE and
+    #   stays true whether or not a third mechanism is ever named.  That is why no disjunction is
+    #   needed: the two halves are already in two checks.*
+    check(f'   ⚠ and at {P14_PIN} the paragraph still DECLINED to close the row: "no third '
+          'mechanism has been named, so naming one remains open"',
+          'no third mechanism has been named, so naming one remains open'
+          in flat_at(P14_PIN, 'corpus/matter_sector_paper.tex'))
     check('   ⛭ and P14 now says this receipt\'s point itself, right after the residue: "What can be '
           'said about one before it is named is more than nothing, and it is the dimensional sentence '
           'just used, which mentions no route"',

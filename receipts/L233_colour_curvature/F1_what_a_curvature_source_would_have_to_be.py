@@ -111,19 +111,24 @@ def main():
     check('and the corpus exhibited exactly that at r2450: the general inhomogeneous LTB leaf, '
           'm(r) and E(r) free, one equation per comoving shell',
           'one equation per comoving shell' in arc or 'ONE equation per comoving shell, and the shells do n' in arc)
-    #: ⛭⛭ r7360+60: an ALT whose arms were a FRAGMENT and a CASE-FOLDED SUBSTRING of itself, so
-    #: the pair passed wherever either stood and neither carried the claim -- which is that the
-    #: identity holds for arbitrary $m(r)$ AND that $E(r)$ drops out.  ** One span, the register's
-    #: own clause with the identity written out, markdown emphasis normalised in the reader
-    #: (`r7336`) so a re-styling of the row cannot break a claim about what it says. **
-    _ARC_MD = re.sub(r'\*+|~~', '', re.sub(r'\s+', ' ', arc))
-    _EXACT = ("the bend-density identity is EXACT for arbitrary $m(r)$: $G_{tt}-\\Lambda = "
-              "2m'(r)/(R^2R')$, i.e. P8's $\\rho=m'/4\\pi R^2R'$ with no condition on $m$, and "
-              "$E(r)$ drops out of the density entirely")
-    check(f'with the bend-density identity EXACT for arbitrary m(r), and E(r) dropping out of the '
-          f'density -- the register\'s whole clause with the identity written out '
-          f'({_ARC_MD.count(_EXACT)} occurrence)',
-          _EXACT in _ARC_MD and _ARC_MD.count(_EXACT) == 1)
+    # ⬭⬭ r7355+cc66, REPAIR of the ALT r7310+60 read step by step, and both arms were defective
+    #   in opposite ways:
+    #     arm 1, `EXACT for arbitrary $m(r)$` -- *** carries the whole claim and NEVER DECIDES, ***
+    #       because lower-casing it contains arm 2 entirely: arm 2 is true whenever arm 1 is, so
+    #       the `or` has always evaluated to arm 2's value and deleting arm 1 would change nothing.
+    #     arm 2, `exact for arbitrary` against `arc.lower()` -- *** decides the check alone and
+    #       DROPS `$m(r)$`, *** which is the whole of the claim: exactness for SOME $m(r)$ is not
+    #       the claim, and the span stands 3 times case-folded.
+    #   ⇒ ONE span that both carries `m(r)` and matches: *** `the bend-density identity exact for
+    #     arbitrary $m(r)$` -- subject, predicate and quantifier inside, ONCE in the arc RAW. ***
+    #   ⌗ Measured before choosing: the capitalised form stands once too but only after a markdown
+    #     normaliser (`***EXACT ...***`), and this one needs none -- it sits wholly inside one
+    #     emphasis run, so there is no markup inside the span to normalise.  *The simpler
+    #     admissible form is taken over the one that needs a normaliser.*
+    #   ⌗ And once under `check_quote_pins._unmark`.
+    check('with the bend-density identity "exact for arbitrary $m(r)$" -- the quantifier inside the '
+          'span, because exactness for SOME m(r) is not the claim',
+          'the bend-density identity exact for arbitrary $m(r)$' in arc)
 
     # and the stop
     # ** RE-ANCHORED r2516: this pinned L-233's INSTRUCTION, and L-233 was STRUCK at r2468 -- the

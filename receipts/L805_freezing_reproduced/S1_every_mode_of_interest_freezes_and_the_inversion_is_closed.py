@@ -164,9 +164,26 @@ def main():
     # SOURCE anchors -- the argument this reproduces, and the chain check that named it
     p15 = norm('corpus/CR_cosmology.tex')
     kill = norm('kills/PO-7.md')
-    check('SOURCE: P15 sec:what-crosses states the freezing AS AN ARGUMENT -- "every mode exits it and '
-          'freezes before the crossing" from horizon exit',
-          'exits it and freezes' in p15 and 'before the crossing' in p15)
+    # ⬭⬭ r7355+cc66, REPAIR of the PAIR r7291+69 named, and its prescribed span taken verbatim
+    #   after counting it.  Both defects were real and both are closed by the one widening:
+    #   `exits it and freezes` DANGLES on ⓵ and ⓶ and object-dangles besides -- it opens on the
+    #   verb, its subject (`every mode`) is outside and its object `it` stands for the comoving
+    #   horizon named in the clause before -- while `before the crossing` is a bare prepositional
+    #   fragment asserted only to appear SOMEWHERE in P15.
+    #   ⛔ AND THE FRAGMENT'S COUNT IS WHY `somewhere` IS THE WRONG TEST: *** `before the
+    #     crossing` stands THREE times in the normalised paper, `exits it and freezes` once. ***
+    #     So the check's claim -- that the two belong to ONE sentence -- was satisfiable by two
+    #     unrelated places, and nothing in it made them one sentence.
+    #   ⌗ A MARKUP CARRIER too (`\emph{every}` sits inside the prescribed span), so 60's r7255
+    #     prescription applies: the emphasis comes out of the HAYSTACK and the span stays WHOLE.
+    #   ⌗ Verified before adopting, not taken from the ground: ONCE in the emphasis-normalised
+    #     paper and once under `check_quote_pins._unmark`.
+    p15u = re.sub(r'\\emph\{([^}]*)\}', r'\1', norm('corpus/CR_cosmology.tex'))
+    check('SOURCE: P15 sec:what-crosses states the freezing AS AN ARGUMENT -- "the comoving horizon '
+          '$1/aH$ shrinks to zero and every mode exits it and freezes before the crossing" from '
+          'horizon exit',
+          'the comoving horizon $1/aH$ shrinks to zero and every mode exits it and freezes before '
+          'the crossing' in p15u)
     # AMENDED r3105 (L-249).  THIS PIN BROKE BECAUSE THIS RECEIPT SUCCEEDED.
     # kills/PO-7.md used to say (d) was "AN ARGUMENT, NOT A COMPUTATION ... reproduced nowhere".
     # r2993 struck PO-7 -- "both clauses of the object answered" -- and rewrote the file, because
@@ -184,7 +201,22 @@ def main():
           'IS AN ARGUMENT, NOT A COMPUTATION' in then_kill and 'reproduced nowhere' in then_kill)
     check('and the gap is DISCHARGED in the live file, which cites this line by name among the three '
           'closures -- "the 0.408 rests on NO unclosed inversion"',
-          'L-805' in kill and 'unclosed inversion' in kill
+          # ⬭⬭ r7355+cc66, REPAIR of the OTHER PAIR, which r7291+69 described rather than
+          #   prescribed: "owed one span from the citation through the quoted closure".  As it
+          #   stood the check asserted only that `L-805` and `unclosed inversion` each appear
+          #   SOMEWHERE in the file -- *** so it would pass on a version that cited this line for
+          #   something else and closed the inversion by someone else's work. ***  The name alone
+          #   would be DELIBERATE; as half of a co-occurrence it carries nothing.
+          #   ⌗ The span runs from the three routes through the quoted closure, so the citation
+          #     and the claim it is cited FOR are one contiguous string, and `unclosed inversion`
+          #     keeps its subject (`the $0.408$`) and its verb (`rests on NO`).
+          #   ⌗ A MARKUP CARRIER (the closure is bolded in the document), so the markdown
+          #     emphasis is normalised out of the HAYSTACK and the span kept whole.  *Measured:
+          #     the span stands ZERO times raw and ONCE normalised -- the normaliser is doing
+          #     real work here, not decoration.*
+          'a third admissible phase, estimator bias, and a seam derivation off $\\{0,\\pi\\}$ '
+          '(`L-805`, `L-806`, `L-807`), so "the $0.408$ rests on NO unclosed inversion"'
+          in re.sub(r'\*\*([^*]*)\*\*', r'\1', norm('kills/PO-7.md'))
           and 'IS AN ARGUMENT, NOT A COMPUTATION' not in kill)
 
     print()

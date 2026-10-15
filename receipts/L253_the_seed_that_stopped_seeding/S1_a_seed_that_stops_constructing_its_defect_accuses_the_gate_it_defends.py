@@ -253,21 +253,51 @@ def main():
         print(f'    {os.path.basename(rel)[:58]}')
         print(f'          working-tree reads of {TARGET[rel]}: {was.count(pat)} at {BEFORE}, '
               f'{open(os.path.join(ROOT, rel), encoding="utf-8").read().count(pat)} now')
+    # ⬭⬭⬭ r7355+cc66, REPAIR of the TWO owed rows, and the runs they needed were ALREADY BELOW
+    #   THEM, with their output thrown away (`rc, _ = run(rel)`).  r7289+69 on both:
+    #     `'REPAIRED' in <file>`  -- *** CANNOT FAIL ⓒ: six occurrences in M1, tied to no line. ***
+    #       And worse than a common word: in both receipts `REPAIRED` is a PYTHON CONSTANT holding
+    #       a commit sha, so the arm was satisfied by a VARIABLE NAME.
+    #     `"git('show'" in <file>` -- *** PROXY ⓐ / CANNOT FAIL: seven occurrences. ***
+    #   ⌗ AND THAT SECOND LITERAL IS THE EXACT HELPER SHAPE THIS SEAT MEASURED THIS REVISION AS
+    #     INVISIBLE TO THE QUOTE-PIN EXTRACTOR (`mutate_assertions._READ` needs `'git'` and
+    #     `'show'` adjacent; 26 receipts and 95 call sites do not have them adjacent).  *So the
+    #     string being pinned here is a shape whose own pinned reads the instrument cannot see --
+    #     which is a reason to stop pinning the string and start running the file.*
+    #   ⇒ *** The runs are captured ONCE, above the checks that need them, and each receipt's own
+    #     LIVE RECURRENCE LINE is read out of its own output. ***  Same repair as `L255`'s last
+    #     row this revision, and the same reason: the claim is that the live check RAN AND
+    #     REPORTED, not that a word appears in a file.
+    #   ⌗ Read one receipt at a time, because the three make three different claims:
+    #       `L551`/`R1`  "AND NO PROTECTED ROW IS SPLIT IN THE LIVE REGISTER EITHER";
+    #       `L555`/`M1`  "AND THE DEFECT HAS NOT RECURRED, live:";
+    #       `L556`/`R1`  its SEEDED gate round-trip -- which is the POSITIVE form of ⓹ᵇ's claim
+    #                    that its live reads are live claims: it asserts what the reader does NOW
+    #                    and shows the defect would be caught if it returned.
+    #   ⌗ Verified before performing: all three lines present in the three receipts' stdout.
+    _LIVE_LINE = {
+        REPAIR_RECEIPTS[0]: 'AND NO PROTECTED ROW IS SPLIT IN THE LIVE REGISTER EITHER',
+        REPAIR_RECEIPTS[1]: 'AND THE DEFECT HAS NOT RECURRED, live:',
+        SEED_ONLY: 'check_appendix_current: clean tree exits',
+    }
+    _rc, _out = {}, {}
+    for rel in REPAIR_RECEIPTS + [SEED_ONLY]:
+        _rc[rel], _out[rel] = run(rel)
+    _seen = {os.path.basename(r)[:30]: (_LIVE_LINE[r] in _out[r]) for r in REPAIR_RECEIPTS}
     check('⓹ and every remaining working-tree read is a LIVE claim that says so: both receipts now '
           'pin the repaired state to the commit that made it, and each keeps a separate regression '
-          'check asserting the defect has not recurred',
-          all('REPAIRED' in open(os.path.join(ROOT, r), encoding='utf-8').read()
-              for r in REPAIR_RECEIPTS))
+          f'check asserting the defect has not recurred -- and both RAN AND REPORTED: {_seen}',
+          all(_seen.values()))
     check(f'⓹ᵇ and `{os.path.basename(SEED_ONLY)[:44]}` is NOT counted here: its live reads are live '
-          'CLAIMS about what the reader does NOW, and they are correct -- it belonged to ⓵\'s class',
-          "git('show'" in open(os.path.join(ROOT, SEED_ONLY), encoding='utf-8').read()
-          and 'REPAIRED' not in open(os.path.join(ROOT, SEED_ONLY), encoding='utf-8').read()
-          and 'seed_took' in open(os.path.join(ROOT, SEED_ONLY), encoding='utf-8').read())
+          'CLAIMS about what the reader does NOW, and they are correct -- it belonged to ⓵\'s '
+          'class, and what it reports instead is its SEEDED gate round-trip, red on the seed and '
+          'green without it',
+          _LIVE_LINE[SEED_ONLY] in _out[SEED_ONLY]
+          and all(_LIVE_LINE[r] not in _out[SEED_ONLY] for r in REPAIR_RECEIPTS))
 
     # ** and the point: all three run green, where before they could not **
     for rel in REPAIR_RECEIPTS + [SEED_ONLY]:
-        rc, _ = run(rel)
-        check(f'   ⓹ᶜ {os.path.basename(rel)[:52]} exits {rc}', rc == 0)
+        check(f'   ⓹ᶜ {os.path.basename(rel)[:52]} exits {_rc[rel]}', _rc[rel] == 0)
 
     # ============================================================ (4) M1's one-of-three
     print()

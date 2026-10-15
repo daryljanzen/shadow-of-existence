@@ -243,7 +243,20 @@ def main():
     #     and is unchanged.
     _p7f = re.sub(r'\s+', ' ', p7)
     _shared = 'the shared character of the wall' in _p7f
-    _settled = ('all three are settled' in _p7f
+    # ⬭⬭ r7355+cc66, REPAIR of the TWO P5 ROWS, and the span is `r7285+69`'s own prescription
+    #   taken verbatim: *** "So of the three items named above, all three are settled, the
+    #   ultraviolet definition of the mode sums with them". ***  69 read this receipt in full on
+    #   the r7285 order ② and named both defects on this pair -- `all three` is a PRONOUN whose
+    #   antecedent ("the three items named above") is outside the span, and the pair is a
+    #   CO-OCCURRENCE of two fragments of ONE P5 passage pinned in one check.  The prescribed
+    #   span closes both at once: the antecedent is inside it, and there is one span where there
+    #   were two.
+    #   ⌗ VERIFIED BEFORE ADOPTING, not assumed from the ground -- r7351 found two of 69's
+    #     prescribed spans for `L269` occurring ZERO times in the haystack the receipt reads.
+    #     This one stands ONCE in the flattened `CR_framework.tex` and once under `_unmark`.
+    _P5 = ('So of the three items named above, all three are settled, the ultraviolet definition '
+           'of the mode sums with them')
+    _settled = (_P5 in _p7f
                 and 's, and the definition is the construction\'s own' in _p7f)
     print(f'    ⌗ REPORTED, never required: P07 still argues from the shared wall: {_shared}; '
           f'P07 states the item settled on the construction\'s own regulator: {_settled}')
@@ -252,7 +265,11 @@ def main():
           'and it does so by naming the construction\'s own regulator, which is NOT the generic-wall '
           'ground clause ③ gave, so the clause reaches the right verdict by an argument the corpus '
           'declined to use',
-          _settled and 'the ultraviolet definition of the mode sums with them' in _p7f)
+          # ⬭ r7355+cc66: the second conjunct WAS the other owed row, a verbless absolute
+          #   phrase whose predicate and whose pronoun's antecedent both sat outside it.  It is
+          #   inside `_P5` now, so the conjunct is removed rather than rewritten -- two rows
+          #   retire on one span, which is what the CO-OCCURRENCE diagnosis asks for.
+          _settled)
     po6 = [l for l in prot.split('\n') if re.match(r'\|\s*~*\*\*PO-6\*\*', l)]
     # ** ⛭⛭⛭ AND HERE IS THE FINDING BEING ACTED ON, IN THE REGISTER ITSELF (re-pinned r3962). **
     # ** This file's whole argument is that clause ③ read "THE UV DEFINITION: MET, NOT OWED" while
@@ -299,9 +316,18 @@ def main():
           'the quantization at the boundary, and not settled by being shared with every interacting '
           'field theory" -- so the two papers agree and it is the ROW\'s one-word label that reads '
           'otherwise',
-          'ultraviolet definition of the tower sums---a different thing from a residual freedom in '
-          'the quantization at the boundary' in re.sub(r'\s+', ' ', p10)
-          and 'shared with every interacting field theory' in re.sub(r'\s+', ' ', p10))
+          # ⬭⬭ r7355+cc66, REPAIR of the OTHER CO-OCCURRENCE pair, and again 69's prescription
+          #   ("the one sentence from `What remains genuinely open`") taken after measuring it.
+          #   Both fragments came out of ONE P10 sentence: the first is a noun phrase clipped
+          #   from "What remains genuinely open is accordingly the ...", its subject outside it;
+          #   the second is a bare participle ("not settled by being shared with ...").  Pinned
+          #   apart, the paper could carry them in unrelated places and the check would pass.
+          #   ⌗ Verified before adopting: the whole sentence stands ONCE in the flattened
+          #     `canonical_time.tex` and once under `_unmark`.
+          'What remains genuinely open is accordingly the ultraviolet definition of the tower '
+          'sums---a different thing from a residual freedom in the quantization at the boundary, '
+          'and not settled by being shared with every interacting field theory'
+          in re.sub(r'\s+', ' ', p10))
     # ⛔⛭ AMENDED r4548, AND IT *** CRASHED *** RATHER THAN FAILING -- the third receipt in this
     #    line's work with a bare `next(...)`/`led[id]` over the ledger and no default.  ** r4525
     #    corrected the sentence FOLLOWING this row's claim, which moved the row's hash, so the row
@@ -372,7 +398,16 @@ def main():
     check('⓸ᵃ ⌗ and the half this section turns on is untouched: the closure "is supplied fibre by '
           'fibre and so cannot be broken by the size of the sub-threshold set" -- which is why the '
           'reading held while the item was open and holds now that it is closed',
-          'supplied fibre by fibre and so cannot be broken by the size of the sub-threshold set'
+          # ⬭⬭ r7355+cc66, REPAIR of the DANGLING span (69's ⓵ and ⓷): it reads as a complete
+          #   proposition and opens on a predicate, its subject -- "the closure below, which is"
+          #   -- sitting outside it.  *** That is the case the subject rule exists for: a span
+          #   that reads complete is the one a reader will not re-check. ***  69's prescribed
+          #   widening names the subject and is taken verbatim.
+          #   ⌗ Verified before adopting: ONCE in the flattened `canonical_time.tex`, once under
+          #     `_unmark`.  The widening adds no new document and no new claim -- the same
+          #     sentence, read from its subject.
+          'How the straddle falls does not bear on the closure below, which is supplied fibre by '
+          'fibre and so cannot be broken by the size of the sub-threshold set'
           in _p10)
     # ** ⛔ AND THIS ONE DID NOT FAIL, IT CRASHED (repaired r3962). **  `next(...)` with no default
     # ** raised `StopIteration` when the `f36eef9790` row left the ledger at r3803 -- so PART 5 never
