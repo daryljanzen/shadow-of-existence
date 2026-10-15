@@ -85,7 +85,11 @@ PROSE = ('.tex', '.md', '.bib')
 MAX_AGE_DAYS = 35                 # the monthly backstop plus a week: one missed refresh is visible, two fail
 COLLAPSE_MIN, COLLAPSE_FRAC = 8, 0.5
 SUBTREE_MIN = 40                  # a receipt reading this many `T/...*.ext` files is indexed as `T/**/*.ext`
-NAME_RE = re.compile(r'([A-Za-z0-9_.-]+\.(?:py|tex|md|txt|npz|npy|json|dat|csv|bib))')
+# ⛭ r7367+70.2 (70): the static half matches ANY extension, bounded by `repo_names` at its two uses
+#   (`emit`, `load`).  The list it replaces had no `tsv`, so the 44 receipts that name the quote-pin ledger
+#   in source were out of its `suite` scope (S54); a list of spellings misses the next one (L254 A1), and
+#   `repo_names` already bounds the match to files the tree has.  Priced by 60 at r7366: +0.53 s a read.
+NAME_RE = re.compile(r'([A-Za-z0-9_.-]+\.[A-Za-z0-9]{1,6})')
 WILD = re.compile(r'[*?\[]')
 
 

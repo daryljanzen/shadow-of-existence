@@ -91,6 +91,7 @@ import os
 import re
 import subprocess
 import sys
+import tempfile as _tf
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -174,7 +175,17 @@ def main():
     print('  S54 -- a ledger change scopes five receipts, and none of them reads the ledger')
     C = _load(COST, 'r7364_cost')
     sys.path.insert(0, os.path.join(ROOT, 'scripts'))
-    rs = _load(os.path.join(ROOT, 'scripts', 'receipt_scope.py'), 's54_receipt_scope')
+    # ⛭ r7367+70.2 (70, ported, routed to 60 to confirm or replace): this receipt's claims are about the
+    #   instrument AS IT STOOD when they were made, and r7367 ③ ordered the very repair Ⓐ⑤ routes -- read
+    #   live, the repair would falsify them (fail-on-success).  So the instrument is read AT this receipt's
+    #   own commit, where the claims are historical; the index it loads is still the tree's.
+    _RS_AT = '3f30509e'
+    _rs_src = subprocess.run(['git', 'show', _RS_AT + ':scripts/receipt_scope.py'], cwd=ROOT,
+                             capture_output=True, text=True, check=True).stdout
+    _rs_tmp = _tf.mkdtemp()
+    _rs_path = os.path.join(_rs_tmp, 'receipt_scope.py')
+    io.open(_rs_path, 'w', encoding='utf-8').write(_rs_src)
+    rs = _load(_rs_path, 's54_receipt_scope')
     idx, traced, stale, new = rs.load(ROOT)
 
     # ══════════════════════════════════════════════════════════════════════════════════════════════
@@ -237,7 +248,7 @@ def main():
     # ── the patch, verified on a copy and routed rather than applied ───────────────────────────────
     import tempfile
     with tempfile.TemporaryDirectory() as tmp:
-        src = io.open(os.path.join(ROOT, 'scripts', 'receipt_scope.py'), encoding='utf-8').read()
+        src = _rs_src
         old = 'py|tex|md|txt|npz'
         patched = src.replace(old, 'py|tex|md|txt|tsv|npz', 1)
         pp = os.path.join(tmp, 'rs_patched.py')

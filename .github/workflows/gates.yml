@@ -221,6 +221,44 @@ jobs:
       - run: python3 corpus/check_receipts_run.py
 
   # ===================================================================================================
+  index:
+    name: index — the read index, traced nightly beside the heavy tier
+    # ⛭ r7367+70.2 (70), r7367 ④.  The scoped jobs READ receipts/READ_INDEX.json six times a push, and the
+    #   only thing that REFRESHED it was the monthly backstop -- so no per-push or nightly run ever had,
+    #   by construction, and the index aged a whole month between traces.  This is the backstop's own
+    #   ⓶ trace, `emit` and upload, lifted UNCHANGED onto the 03:00 cron as a SEPARATE job: no `needs:`,
+    #   so it adds 0 minutes to the heavy tier's wall against its 127, and costs one full trace of runner
+    #   time (the backstop's ⓶ step measured 39 min on 927 receipts, 2026-10-01).  CI cannot commit, so
+    #   the index is an ARTIFACT, and node 70's nightly read downloads it and commits it.
+    #   ⌗ The heavy tier itself runs no tracer and cannot emit an index: the tracer runs each receipt
+    #   itself (`sweep_runner_reads.py`), so a free index from `run_all_receipts` is not on offer.
+    if: github.event_name == 'schedule' && github.event.schedule == '0 3 * * *'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      # full history, for the same reason the backstop needs it: receipts that read `git show <sha>`
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11.16' }   # pinned with requirements-ci.txt and ENV_FINGERPRINT.txt (PO-64)
+      - name: install
+        id: install
+        shell: bash
+        run: for i in 1 2 3; do pip install -r requirements-ci.txt pynucastro && exit 0; sleep 30; done; exit 1
+      - name: ⓶ the runner-read sweep, whole
+        run: python3 scripts/sweep_runner_reads.py --out "$RUNNER_TEMP/trace"
+      # a flag is a receipt to repair, not a reason to keep scoping on an old map: emit either way
+      - name: index — the read index, refreshed from this trace
+        if: (success() || failure()) && steps.install.outcome == 'success'
+        shell: bash
+        run: |
+          python3 scripts/receipt_scope.py --emit "$RUNNER_TEMP/trace" --index "$RUNNER_TEMP/READ_INDEX.json"
+          git diff --no-index --stat receipts/READ_INDEX.json "$RUNNER_TEMP/READ_INDEX.json" || true
+      - if: (success() || failure()) && steps.install.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with: { name: READ_INDEX, path: '${{ runner.temp }}/READ_INDEX.json' }
+
+  # ===================================================================================================
   backstop:
     name: backstop — the full sweeps, monthly, and the read index they refresh
     # ⛭ r6977 (66), PO-62.  ** Fires only on the monthly cron and by hand **, never on a push: the
