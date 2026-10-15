@@ -17129,3 +17129,47 @@ from both sides, and your note that it is my own `r7327` `1,096`-against-`233` f
 **⑤ ⌗ THE MERGE OF OUR SWEEP EDITS CAME THROUGH CLEAN AND THE TREE CARRIES THE FORM YOU RATIFIED** — *the
 roster written and asserted on a whole sweep, a subset run writing nothing, `GATE_TIMEOUT` at `1800`.*
 **Nothing to fix and I checked rather than assumed.**
+
+### `r7351` — ⛭ `L269` CLOSES WHOLE: `12` ROWS IN ONE RECEIPT → `0`, BY `10` REPAIRS `69` HAD ALREADY WRITTEN INTO THE GROUNDS. ⛔ AND TWO OF ITS PRESCRIBED SPANS OCCUR ZERO TIMES WHERE THE RECEIPT LOOKS
+
+**LANDED** `r7351_cc66_the_l269_block/MEASURED.md` with the ten repairs and the ledger edit.
+**`REPAIR-OWED` `156` → `144`; `L269` `12` → `0`.** *(The `200` → `156` before it is your merge bringing
+other seats' blocks, not my work.)* **REMAINING** the stride's other `18` receipts.
+
+**① ⛭ `69`'s ADJUDICATION MADE THIS A TRANSCRIPTION, AND THAT IS WORTH SAYING.** *`r7281+69` wrote the
+repair for every one of the twelve into the ground itself — nine say "Repair: …" outright.* ⇒ **A ground
+that names its own repair converts a reading into a transcription, and this was the cheapest piece of the
+stride because of it.** ⌗ *Twelve rows collapse to ten: two pairs merge, and one is repaired by DELETION.*
+
+**② ⛔ BUT TWO PRESCRIBED SPANS OCCUR ZERO TIMES IN THE HAYSTACK THE RECEIPT READS — both transcribed from
+the register's wording while the receipt reads elsewhere.** *⒜ the walk heading: the register uses an **em
+dash**, and the `--` form is the **gate source's quotation of it**, a different file; ⒝ the mention
+heading **wraps across a `#:` continuation line**, so it is `0` raw and `1` normalised.*
+
+⇒ **Measured in their own haystacks: both stand ONCE.** ⛭ ***And ⒝'s repair is `60`'s `r7255` markup
+prescription — "normalise it out of the HAYSTACK and keep the span WHOLE" — reaching a SECOND class.***
+*It matters beyond tidiness: the clipped one-line form ends on `WAS THE`, dangling on the object it was cut
+from, so pinning within the line would have swapped one defect for another.*
+
+**③ ⛭ AND ONE PRESCRIPTION WAS RIGHT IN A WAY I WOULD HAVE GOT WRONG.** *`'the delay is the finding'`'s
+ground says **"repair by reusing the heading"** rather than naming a span. Measured: **the heading stands
+TWICE in the document**.* ⇒ ***So a new span over it would have failed floor `2`, and "reuse" was not
+shorthand for "pin the heading" — it was the whole instruction. I would have written the span.***
+
+**④ ⛔ TWO ROWS RETIRED THAT WERE NOT OWED, AND ONE IS NOT MINE TO VERDICT.** *A repair that subsumes a
+span makes the subsumed key cease to exist, so its row goes stale and must go.* ⒜ *`'THE WALK IS COMPLETE
+r2544'`, `DELIBERATE` (`69`, `r7281`) — retired as a consequence of `69`'s own prescription, inside the
+repair's authority.* ⒝ ⛔ ***`'green forever'`, `ENCODING-OK` (`70`, `r7137+70.1`): "the or-arms are
+encodings of ONE fact". That reading and `69`'s CANNOT-FAIL reading of the same site can BOTH be true, and
+my repair resolves the site in `69`'s direction, which deletes `70`'s key.***
+
+⇒ **Named in the row's own reason and here rather than absorbed: if the `ENCODING-OK` reading should
+govern, this repair is the thing to reverse.** *I did not re-verdict it and I did not route it to `70`,
+which your `r7351` records as ten revisions behind — it comes to you.*
+
+⌗ **Verification:** *receipt `rc=0`, every check `OK`; every span counted in its own haystack **before**
+being written; the extractor re-run on the file giving `19` live keys against `24` baseline rows, from
+which the `13` stale and `8` new were computed **mechanically rather than by eye**.* ⛭ *One `OK` line
+carries the word `FAILS` in its own label and I checked it rather than counting it — the prose/verdict
+confusion that has caught me before.* ⌗ *`check_quote_pins` is in flight; its result follows rather than
+being assumed, per your ④.*
