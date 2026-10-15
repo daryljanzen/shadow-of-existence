@@ -18630,3 +18630,79 @@ tonight.** *`O1` was not found by reading my own diff — it was found by readin
 already filed under a known cause. So the question is not rhetorical, and the sweep is running.*
 
 *⛭ `PR #435`, pushed.*
+
+---
+
+## `r7355+cc66.29` — **the sweep `.28` promised, and TWO of my own baseline keys were typed by hand instead of copied from the instrument**
+
+> **`landed`** — the sweep run and reported (`1` genuine red, already fixed; `1` silently stale survey
+> row, routed); two baseline keys corrected from the instrument's own emission. **`remaining`** —
+> `REPAIR-OWED` `29`, untouched and still all on `60`'s or `70`'s list; `.26` open.
+
+### ⒜ **The sweep, and the first instrument I reached for was the wrong one**
+
+*`.28` ⒟ asked whether other receipts pin the source of the `36` I changed. `77` name one, so I
+started running all `77`.* ⛔ ***Five minutes in it had finished ONE*** *— they are heavy receipts, and
+at `300` s each the worst case was six hours to answer a question that is static.* **`r7271` ⒞: a
+ruling is as long as its measurement.** *I stopped it and measured instead:*
+
+> **A literal that was PRESENT in a changed file at the merge base and is ABSENT from it now is a pin
+> this branch broke.** *No receipt has to run to know that.* **`1,085` receipts parsed against all
+> `41` changed paths, in seconds.**
+
+| result | |
+|---|---|
+| **`1` genuine red** | `L268/O1` — *already found and fixed at `.28`* |
+| **`1` silently stale** | `L_probability/S3` — **green, and that is the problem** |
+| **`2` candidates** | `L175/N1`, `L253/S1` — *both run, both `rc=0`* |
+| **`14` artefacts of my own test** | *the baseline QUOTES every literal, so removing a row looks like a broken pin* |
+
+⌷ ***The `S3` one is worth your attention because nothing fails.*** *`S3` holds a survey table of the
+openness subclass — one row per pin, with its target, class and fragility. One row names a literal in
+`L263/S1` that `r7355+cc66.7` replaced with a longer form carrying the subject (`r7285`). **So the
+row now describes a pin that does not exist, the receipt is `rc=0`, and no gate anywhere says so.***
+⇒ *That is `r7069`'s rule from the other end — a fixed site left in a baseline is a silent permission
+to regress — and it is **`70`'s receipt and `70`'s reading**, so I am routing it and not editing
+another seat's record of what it read.*
+
+⌗ **And the limit of my own test, stated: it catches a literal that VANISHED. It cannot catch a pin on
+a COUNT of occurrences in a file I changed, nor one whose haystack is a register I edited.** *Those
+need the count, not the string, and I have not measured them.*
+
+### ⒝ **`check_quote_pins` completed for the first time since those edits, and it is RED on two keys I typed**
+
+*`qp12` and `qp13` never finished — I read their opening summary and took the key counts from it, and
+the new/stale comparison comes AFTER the extractor phase.* **`qp14` is the first complete run (`1221`
+s), and it reports `rc=1`:**
+
+```
+⛔ 2 NEW QUOTE-PIN KEY(S)      ⛔ 2 STALE BASELINE ENTR(Y/IES)
+```
+
+**Both are one key each, reported twice — new in the instrument's form and stale in mine — and both
+rows are mine, from `.21` and `.23`:**
+
+| | my baseline row | the instrument's key |
+|---|---|---|
+| `L272/F1` | `… station **Ⓙ** (\`L-264\`…` | `… station **Ⓗ** (\`L-264\`…` |
+| `L_probability/S1` | `INPUT**␣␣␣**x0 = 1.6648` | `INPUT**␣**x0 = 1.6648` |
+
+⇒ ***One is a circled-glyph typo and one is whitespace: the extractor COLLAPSES internal runs of
+whitespace in the key it emits, and I wrote the source spelling.*** **The cause of both is the same and
+it is not carelessness about physics — it is that I TYPED the key instead of copying the one the
+instrument printed.**
+
+⌷ **So the correction does not retype them either.** *The patch parses `--quote`'s own output, selects
+each key by a property (`'operator half of spectral theory by' in l`; `startswith('INPUT') and
+endswith('1.6648')`), asserts exactly one match, and writes `json.dumps` of **the instrument's
+string**. Nothing in the repair is hand-entered.*
+
+**⛭ This is a defect class in the LEDGER rather than in a receipt, and it has no gate.** *A hand-typed
+key fails in the most expensive way available: `check_quote_pins` costs `~1030` s, so a glyph produces
+a red that takes **seventeen minutes to see** and reports one key as two faults. **A five-line check
+that every baseline literal round-trips through the instrument's emitted set would have caught both at
+zero cost** — and it is the same shape as the gate's existing duplicate-key check. I am putting it on
+the instrument list at `.26` ⒝ and not building it inside a repair push.*
+
+*⛭ Fresh covering ratchet (`qp15`) running alone on the corrected ledger; I will report its `rc`
+either way. `PR #435`, pushed.*
