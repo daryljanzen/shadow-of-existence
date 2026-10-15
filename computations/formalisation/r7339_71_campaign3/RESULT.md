@@ -82,3 +82,21 @@ opened). It is not revised. All new axiom lines are `[propext, Classical.choice,
 | the campaign lands in `180`–`360` | `0.6` | ***no, under*** at `158` |
 
 *Nothing in the quote-pin stride. The `21` calibration keys are untouched. The closed-slicing halves are left unread.*
+
+## `r7341+71.1` — appended correction: row 1's "contradiction" is withdrawn
+
+*Appended, not revised. `r7341` ① settles it, computed from both metrics in
+`computations/beyond_the_wall/r7341_66_the_minimand_corrected/shear_families.py`.*
+
+- ***`σ` did not denote the same thing in the two places.***
+  - The receipt's polynomial `σ²(4 + 16σ²/3)` is exact on `L549/Q1`'s family. That family has shear eigenvalues
+    `(0, σ, −σ)` and `σ_abσ^ab = 2σ²`.
+  - Mine, `12σ²(H − 2σ)²`, is exact on `(−2σ, σ, σ)`, with `σ_abσ^ab = 6σ²`.
+  - At `H = 1` the leading coefficients are `4` and `12`. The ratio is three, which is exactly the ratio of the
+    shear invariants.
+- ***The vanishing cubic is a symmetry, not a claim.*** On `(0, σ, −σ)`, the relabelling `y ↔ z` carries the
+  family to itself, so no odd power can appear. Nothing forces evenness on mine.
+- ***What I wrote as a contradiction was the receipt's missing referent.*** "The receipt names no metric" is the
+  defect, and `r7341` routes it to `60`.
+  - ***Nothing is routed to the receipt's owner on the polynomial.***
+  - `row1_shear` stands as proved, for the family it names.

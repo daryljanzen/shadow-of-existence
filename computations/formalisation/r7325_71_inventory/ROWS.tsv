@@ -1,8 +1,8 @@
 index	class	status	what it needs next	stand-in
 0	G2	DONE (chartable half)	closed half: the closed S^3 slicing's R -> REOPENABLE by the near-point convention	curvature invariants of max-symmetric spaces, R of a slicing
-1	G2	ENGINE-REACHABLE	a diagonal instance on the existing 4D engine (Bianchi I / dS)	Weyl^2 (C^2) as a polynomial in shear
+1	G2	DONE	closed by 71 at r7339+71.2 (r7339_71_campaign3/RESULT.md): bianchi_weyl2, row1_shear on the (-2s, s, s) family; the receipt's polynomial is exact on Q1's (0, s, -s) family (r7341)	Weyl^2 (C^2) as a polynomial in shear
 2	G2	DONE (chartable half)	closed half: k=+1 (closed FRW) -> REOPENABLE by the near-point convention	Weyl^2 = 0 on FRW
-3	G2	ENGINE-REACHABLE	a diagonal instance on the existing 4D engine (Bianchi I / dS); closed half: the closed-FRW rank -> REOPENABLE	rank of curvature-invariant basis, Weyl^2 = 0
+3	G2	DONE	closed by 71 at r7339+71.2 (r7339_71_campaign3/RESULT.md): row3_rank (Weyl^2 = 0 shear-free; GB, C^2 independent, remaining direction (1, 1, 3)); its closed-FRW half is left unread (r7339 6)	rank of curvature-invariant basis, Weyl^2 = 0
 4	G2	DONE (chartable half)	discharged in B (r7315); closed half: the closed slicing's R -> REOPENABLE by the near-point convention	curvature invariants; Ricci scalar of a layer
 5	G2	DONE (chartable half)	discharged in B (r7315); closed half: the closed slicing's constant R -> REOPENABLE by the near-point convention	Ricci scalar of two slicings
 6	G2	GENERIC-METRIC IDENTITY	index algebra over an arbitrary (non-diagonal) metric: a separate item, not an instance	Einstein tensor and its divergence (contracted Bianchi identity)
@@ -97,7 +97,7 @@ index	class	status	what it needs next	stand-in
 95	G4	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	separated wave operator (Killing vectors via Lie derivative on the way)
 96	G2	LIBRARY GAP	the Levi-Civita volume form	Pontryagin density of three metrics
 97	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	induced slice identified as R x S^2, not S^3
-98	G2	ENGINE-REACHABLE	a diagonal instance on the existing 4D engine (Bianchi I / dS)	Einstein condition and optical tidal matrix
+98	G2	DONE	closed by 71 at r7339+71.3 (r7339_71_campaign3/RESULT.md): row98_einstein_tidal, static_radial_tidal (SdS, in the static chart; the proper-frame chart and the affine-parameter claim not built)	Einstein condition and optical tidal matrix
 99	G1	DONE	discharged in B (r7315)	surface gravities at the two roots
 100	G5	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	proper-frame metric tends to dS2 x S2 (identification)
 101	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	derivatives of r(s) along a collapse leg

@@ -182,6 +182,9 @@ test cannot be checked by the next reader.
 
 ## What a repair writes
 
+This section governs repairs. It says what a repair writes in place of an owed quotation; it is not a
+test applied to quotations already standing, which steps 1 to 4 decide.
+
 A repair either withdraws the check, with its case written down, or replaces the owed quotation with a new
 pin. The new pin is one span of the site, or several spans required together inside one locus, and it meets
 both of these floors.
@@ -205,6 +208,9 @@ both of these floors.
    Test 5 would owe the repair again. A pin none of whose spans occurs once has nothing to locate it, and
    does not meet this floor however its pieces are arranged.
 
+   The floor does not apply when the file is read at a named commit. What it prevents is a later edit
+   landing the pin on the wrong place, and a file read at a fixed commit has no later edits.
+
 The normaliser only merges texts, never separates them, so a count can rise under normalisation and never
 fall: a raw count is a lower bound on the count this floor is tested against. Every count under this floor
 is taken normalised.
@@ -215,9 +221,14 @@ throughout is not unique at any length it has. What separates them is whether th
 says or what the claim is about, and the checker cannot see that difference. The locus lets a pin require
 the thing the claim is about without requiring that thing to occur once.
 
-**Then stop.** Among pins that meet both floors, the repair takes the one with the fewest pinned
-characters, counted over all its spans. Words beyond what the floors require add no protection. Each is
-something a later edit may change without changing the claim, and when one is changed the check fails in a
-receipt whose claim still holds: a new owed row made by the repair. So a single span is never a sentence and
-a half, and a span is not lengthened to make a repeated value unique when a shorter anchor in the same
-sentence locates it.
+**Then stop.** Words beyond what the floors require add no protection. Each is something a later edit may
+change without changing the claim, and when one is changed the check fails in a receipt whose claim still
+holds: a new owed row made by the repair. So among pins that meet both floors **and that the quote-pin check
+(`corpus/check_quote_pins.py`) can key as pins**, the repair takes the one with the fewest pinned
+characters, counted over all its spans. A single span is never a sentence and a half.
+
+A pin the check cannot key is not a cheaper pin; it is not among the pins this ranks. A repair the ledger
+cannot see is one no later reader is sent to check, so its shortness buys nothing. This is not a temporary
+restriction to be lifted by hand: the pins ranked are whatever the check can key, so when the check learns
+to key a new form — a locus-scoped conjunction, say — that form joins the ranking and is preferred wherever
+it is shorter, with no change to this rule.

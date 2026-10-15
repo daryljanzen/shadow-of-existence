@@ -86,8 +86,15 @@ def main():
     arc = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_LIVE_ARC.md'),
                                    encoding='utf-8', errors='replace').read())
 
-    check('PROTECTED_OPEN asks for narrowing and reserves only closure',
-          'narrowing is **always** a node' in po or 'narrowing is always a node' in po.lower())
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.
+    #   ** Same owed row as this prefix's `E1`: `narrowing is always a node`, the weaker arm of a
+    #   disjunction read case-folded, stopping before `'s to do` so it names no agent. **
+    _po_md = re.sub(r'\*+', '', po)
+    _NARROWING = "narrowing is always a node's to do"
+    check('PROTECTED_OPEN asks for narrowing and reserves only closure: "narrowing is always a '
+          'node\'s to do" -- asserted with its agent inside the span over a markdown-normalised '
+          'read',
+          _NARROWING in _po_md)
 
     # the principle, at source in p0
     check("p0 names it: least-arbitrariness is \"the programme's own criterion of necessity "
@@ -101,19 +108,32 @@ def main():
     check('P14 applies it to a COUNT: the least-arbitrary construction places a slicing plane on '
           'each of the three hinges',
           's the one CR\'s own founding principle selects, places a slicing plane on each' in p14)
-    check('⛭⛭ and excludes a truncation ON THE GROUND THAT ITS SELECTION IS UNFIXED: "a one-hinge '
-          'truncation is excluded not as disfavoured but as carrying an unfixed arbitrary modulus, '
-          'which the principle forbids"',
-          'excluded not as disfavoured but as carrying an unfixed arbitrary modulus' in p14)
+    # ⛭⛭ r7338+60: ** `excluded not as disfavoured but as carrying an unfixed arbitrary modulus`
+    #   opens on a participle and names nothing that is excluded. **  ⇒ *One span with the
+    #   truncation as its subject and the principle's verdict inside it.*  ONE site.
+    _ONE_HINGE = ('A one-hinge truncation is excluded not as disfavoured but as carrying an unfixed arbit'
+                  'rary modulus, which the principle forbids')
+    check('P14: "A one-hinge truncation is excluded not as disfavoured but as carrying an unfixed '
+          'arbitrary modulus, which the principle forbids" -- asserted as the whole clause, in '
+          'place of a participle-led fragment',
+          _ONE_HINGE in p14)
 
     # the construction is single-step and says so
-    check('P3: the vacuum construction "has a single moving part" -- one door, one hinge, one swing',
-          'has a single moving part' in p3 and 'the single arc of that swing' in p3)
+    # ⛭⛭ r7338+60: ** and two fragments of ONE sentence stood conjoined here -- `has a single
+    #   moving part` and `the single arc of that swing`, each at two sites in its paper. **
+    _ONE_SWING = ('This paper carries the construction to the Schwarzschild--de~Sitter family, and '
+                  'the vacuum construction it arrives at has a single moving part: one slicing '
+                  'plane swings about one fixed line, and the whole family of cuts is the single '
+                  'arc of that swing')
+    check('P3: the vacuum construction "has a single moving part: one slicing plane swings about '
+          'one fixed line, and the whole family of cuts is the single arc of that swing" -- '
+          'asserted as the one sentence, in place of two of its fragments conjoined',
+          _ONE_SWING in p3)
 
     # ⇒ the inference, and it is about MODULI not dimension
     check('⇒ so a SECOND slicing step would need its own selection, and an unfixed selection is '
           'exactly what Rule 2 rejects',
-          'excluded not as disfavoured but as carrying an unfixed arbitrary modulus' in p14
+          _ONE_HINGE in p14
           and 's the adjustable parameter that criterion rejects' in p0)
     check('⇒⇒ ONE-STEP-NESS IS THEREFORE GOVERNED BY THE SAME ARGUMENT THAT FIXES THE HINGE COUNT, '
           'not by taste or simplicity',

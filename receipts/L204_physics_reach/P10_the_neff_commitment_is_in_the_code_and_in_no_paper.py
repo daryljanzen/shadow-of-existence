@@ -65,6 +65,7 @@ precisely because nothing downstream breaks. ***
 
 Written r2544.  Stated for reversal.
 """
+import ast as _ast
 import glob
 import os
 import re
@@ -135,10 +136,46 @@ def main():
         break
     check('⛭⛭ and bbn_network.py exists', net is not None)
     if net:
-        check('committing explicitly to the neutrino decoupling ratio (4/11)^(1/3)',
-              '(4.0/11.0)**(1.0/3.0)' in net or '(4/11)' in net)
-        check('and to THREE neutrino species in the relativistic degrees of freedom',
-              '3 nu' in net or 'three neutrino' in net.lower())
+        # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.
+        #   ** FOUR OWED ROWS IN THIS RECEIPT, and three of them were SPELLINGS OF CODE: `(4/11)`,
+        #   `3 nu` and `three neutrino` -- the ledger's ground is that a rewrite that keeps the
+        #   content breaks every arm, so they encoded one WORDING and not one fact (and
+        #   `three neutrino` occurs zero times, so that arm was dead). **
+        #   ⇒ *** There is no span to widen in live code, so the instrument changes: the module's
+        #     own syntax tree is parsed, the two commitments are read off as VALUES, and the
+        #     assertion is arithmetic -- the decoupling ratio equals $(4/11)^{1/3}$ and the
+        #     neutrino contribution to the relativistic degrees of freedom equals three species'
+        #     worth.  ** A reformatting cannot break it and a changed NUMBER cannot survive it. ***
+        _tree = _ast.parse(net)
+
+        def _assigned(_name):
+            for _n in _ast.walk(_tree):
+                if isinstance(_n, _ast.Assign) and any(
+                        isinstance(_tg, _ast.Name) and _tg.id == _name for _tg in _n.targets):
+                    return _n.value
+            return None
+
+        def _value_of(_name, _stub=None):
+            _node = _assigned(_name)
+            if _node is None:
+                return None
+            _src = _ast.unparse(_node)
+            for _k, _v in (_stub or {}).items():
+                _src = _src.replace(_k, _v)
+            try:
+                return eval(_src, {'__builtins__': {}}, {})          # numbers only, by construction
+            except Exception:
+                return None
+
+        _rnu = _value_of('r_nu')
+        _gnu = _value_of('gnu', {'Tnu_over_T(T_MeV)': '1.0'})
+        check('committing explicitly to the neutrino decoupling ratio (4/11)^(1/3) -- read as a '
+              f'VALUE off the module\'s own syntax tree ({_rnu}), not as a spelling of it',
+              _rnu is not None and abs(_rnu - (4.0 / 11.0) ** (1.0 / 3.0)) < 1e-12)
+        check('and to THREE neutrino species in the relativistic degrees of freedom -- read as a '
+              f'VALUE with the temperature ratio set to one ({_gnu}), which is exactly '
+              f'$3\\times\\tfrac78\\times2$',
+              _gnu is not None and abs(_gnu - 3.0 * (7.0 / 8.0) * 2.0) < 1e-12)
         # ⛔⛭ r7125+cc66.98: THIS LABEL AND ITS CONDITION SAID OPPOSITE THINGS.  *The label read
         # "ADOPTED IN CODE AND STATED IN NO PAPER" while the condition asserted
         # `len(re.findall('Neff', allp)) > 0` -- that it IS in a paper.  Same rot as the loop above,
@@ -147,12 +184,23 @@ def main():
               f'({n_named}x in the live spelling), which is the half this receipt was written before.  '
               f"** The code commitment is the part that still stands as this receipt's own; the "
               f"naming is `P11`'s **",
-              ('(4.0/11.0)**(1.0/3.0)' in net or '(4/11)' in net)
+              _rnu is not None and abs(_rnu - (4.0 / 11.0) ** (1.0 / 3.0)) < 1e-12
               and n_named > 0)
 
     # ⓸ and why it is not cosmetic here
-    check("⌗ and the construction carries a right-handed neutrino in the colourless four",
-          'right-handed' in allp and ('nu_R' in allp or '\\nu_R' in allp or 'neutrino' in allp))
+    # ⛭⛭ r7338+60: ** the fourth owed row was the token `neutrino`, the third arm of a
+    #   disjunction: with it in place the condition was satisfied by any paper mentioning
+    #   neutrinos at all, so the check no longer located the state it is about. **
+    #   ⇒ *** Replaced by the clause that carries the claim -- the correspondence carries the
+    #     right-handed neutrino as the sixteenth Weyl fermion and fixes its PLACE while fixing none
+    #     of its couplings, which is this receipt's own subject.  ONE site. ***
+    _NU_R = ("Its correspondence with the Standard Model's content carries a right-handed neutrino "
+             "as the sixteenth Weyl fermion of each generation, and fixes that state's place while "
+             'fixing none of its couplings')
+    check('⌗ and the construction carries a right-handed neutrino in the colourless four, as a '
+          'PLACE and not a coupling -- asserted as the clause that says so, in place of a token '
+          'any paper mentioning neutrinos would satisfy',
+          _NU_R in allp)
     # ⛔⛭ r7125+cc66.98: the THIRD stale pairing in this file.  *The label said "the unnamed adoption
     # is what hides it" while the condition asserts the name IS present -- and the question it calls
     # "unasked" has since been ANSWERED, by `P11` in this directory: CR gives the nu_R a place and no

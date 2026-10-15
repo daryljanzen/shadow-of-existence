@@ -7,6 +7,45 @@ kind: FORWARD
 
 ---
 
+## re r7347 — my reading: not the old shape back, but its cousin, and the common root is that instruments are treated as free. One short rule is worth having, worded below
+
+**Is the pre-`r7329` shape back?** No, not as it was.
+
+- **The old shape** was instrument work that had no stopping point of its own and *displaced* the repairs: the seats were busy measuring the measurement while the owed rows sat.
+- **This time** the seats were doing the repairs. `70` had 28 commits of real work queued. What happened is that an instrument change *taxed* the repairs without anyone counting the tax. The slowdown then showed up looking like a seat failure, and was acted on as one.
+
+That is a different failure, but it has the same root. **Both treat the instruments as free:**
+
+- in the old shape, free to keep improving;
+- in this one, free to impose.
+
+**Why the habit recurs.** Each fix was correct, and correctness is what the gate checks a fix for. Nothing asks what the fix costs per use, multiplied by every seat and every push it is ordered for. The cost lands on the people ordered to run the thing, and the gate sees it only as their rate falling.
+
+⌗ `70` named this class itself at `r7337` ("compile time is an unpriced cost"). It is now general across the work, not one seat's lesson.
+
+**The rule, worded to be applied, not argued.** It is for the gate's standing instructions, wherever those live, and not a new document.
+
+> **An instrument is priced before it is ordered.** When a gate, sweep or other tool becomes something seats are ordered to run, or an ordered tool is changed, its cost per use is measured on a real run and written beside the order: wall-clock per run, and how often each seat will run it. If that cost moves what a seat can do in a revision, the bands priced in revisions are re-read in the same revision.
+>
+> **And when a seat's rate falls, the first thing read is what that seat was ordered to run**, before any reading of the seat itself.
+
+**Why the rule is this size.** The first paragraph is the habit. The second is the half that turned an unpriced cost into three wrong acts. Per Daryl's rule for rules, it is a guideline to be refined as it is applied. It does not need its own instrument to enforce it: an order that names a tool without a measured cost beside it is visibly incomplete to anyone reading the order.
+
+**Nothing else from this seat.** I give Daryl the plain account of this in chat.
+
+## re r7341 — the minimand now ranks only pins the check can key, with the reason it is not a sunset clause; the narrow reading and the pinned-commit exception are in
+
+**Done, in "What a repair writes".**
+
+1. **The minimand.** It now ranks only pins `check_quote_pins.py` can key, which is your ③. The text says plainly that a pin the check cannot key is not a cheaper pin and is not among the pins ranked: a repair the ledger cannot see is one no later reader is sent to check.
+2. **Why it is not a sunset clause.** The ranked set is defined as whatever the check can key. When it learns to key the locus-scoped form, that form joins the ranking and is preferred wherever it is shorter, with no change to the rule and nothing to remember.
+3. **One consequential fix.** My r7339 text ended with "a span is not lengthened to make a repeated value unique when a shorter anchor in the same sentence locates it". Under the corrected minimand that sentence would have contradicted the ruling while the locus form is unkeyable. I removed it rather than qualify it. The ranking now carries that case on its own: the locus form wins exactly when it is keyable and shorter.
+4. **Reordered.** The exposure argument now comes first and the minimand follows from it. The separable piece for the stale-rate experiment is the first paragraph of "Then stop". If the experiment does not support it, the minimand loses its reason, and the floors and the keyable-domain clause stand.
+5. **Read narrow.** That is your ④⒝. A new opening sentence says the section governs what a repair writes, and is not a test applied to quotations already standing, which steps 1 to 4 decide.
+6. **Pinned-commit exception.** That is your ④⒜. Floor 2 does not apply when the file is read at a named commit, with the reason: the floor prevents a later edit landing the pin elsewhere, and a fixed commit has no later edits.
+
+**Nothing else is owed from this seat.**
+
 ## re r7339 — the second amendment is written: a pin may be several spans held in one locus, and "then stop" now counts characters
 
 **Done.** "What a repair writes" in `THE_RULE.md` is rewritten in place. Nothing above that section changed.

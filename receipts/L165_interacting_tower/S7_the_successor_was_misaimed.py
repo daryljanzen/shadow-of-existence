@@ -69,9 +69,18 @@ def main():
     check("⓵ L-543 asks about a RUNNING background: \"does the one-dimensional basis survive on a "
           'background whose curvature runs?"',
           'survive on a background whose curvature runs' in po6)
-    check('and r2691 already withdrew the object it was built on: the row records P10\'s slicing as '
-          'exactly de Sitter',
-          's ** $R=12/\\alpha^2' in po6 or 'cosh(T/\\alpha)' in po6 or 'de Sitter' in po6)
+    # ⛭⛭ r7338+60, PO-78's repair stride, the middle -- EDITED ON `r7337` ④'s order.  ** THE OWED
+    #   ROW WAS THE BARE PROPER NAME `de Sitter`, at seven sites in this one row, sitting as the
+    #   last arm of a THREE-ARM DISJUNCTION -- so the weakest arm decided and the name could not
+    #   carry the claim that the slicing IS exactly de Sitter. **
+    #   ⇒ *** Replaced by the one clause that states the identification with its own figure: the
+    #     closed FRW case gives the de Sitter curvature exactly.  ONE site, one arm. ***
+    _EXACTLY_DS = ('closed FRW $k=+1$ gives $R=12/\\alpha^2$, exactly de Sitter')
+    check('and r2691 already withdrew the object it was built on: the row records the slicing as '
+          'exactly de Sitter -- "closed FRW $k=+1$ gives $R=12/\\alpha^2$, exactly de Sitter", '
+          'asserted as the clause that carries the figure, in place of a bare proper name disjoined '
+          'with two others',
+          _EXACTLY_DS in po6)
 
     # ⓶ both backgrounds
     T, al, t, H = sp.symbols('T alpha t H', positive=True)
@@ -89,11 +98,26 @@ def main():
           sp.simplify(R1.subs(al, 1/H) - sp.limit(R2, t, sp.oo)) == 0)
 
     # ⓷ the real limit
-    check('⓷ and P10 states the real limit itself: the free tower evolves on $a(T)$ as a "fixed '
-          'classical background" and the question is what happens once the scale factor "is itself '
-          'quantized and back-reacts"',
-          '0\'s deeper caveat is that the coupled sector where Gamma-hat lives has NO fixed classical' in po6.lower().replace('**', '')
-          or 'back-react' in po6.lower())
+    # ⛔⛭⛭ r7338+60: ** AND THIS ONE IS A WITHDRAWAL WITH ITS CASE, BECAUSE THE LABEL HAD GONE
+    #   FALSE.  The check said the row names the REAL LIMIT as the coupled sector -- what happens
+    #   once the scale factor is quantized and back-reacts.  The row now says the opposite in its
+    #   own voice: the degeneracy is conformal flatness, so NO scale factor can break it and
+    #   back-reaction cannot, and THE REAL LIMIT IS THE SHEAR. **
+    #   *The owed arm `'back-react' in po6.lower()` passed throughout -- it passed BECAUSE the row
+    #   discusses back-reaction while DENYING it is the limit.*
+    #   ⇒ *** Second instance in this seat's stride of a cannot-fail arm whose LABEL has gone false:
+    #     nothing goes red and the sentence quietly stops being true.  Restated as the CURRENT
+    #     state, which is `L-249`'s rule, over a MARKDOWN-normalised read because the row's emphasis
+    #     markers fall inside the carrying span. ***
+    _po6_md = re.sub(r'\*+', '', po6)
+    _REAL_LIMIT = ('the degeneracy is CONFORMAL FLATNESS, not maximal symmetry, so no scale factor '
+                   'can break it, and back-reaction cannot. THE REAL LIMIT IS THE SHEAR')
+    check('⓷ and the row states the real limit in its OWN voice, which is no longer the one this '
+          'check was written for: "the degeneracy is CONFORMAL FLATNESS, not maximal symmetry, so '
+          'no scale factor can break it, and back-reaction cannot.  THE REAL LIMIT IS THE SHEAR" '
+          '-- asserted as the clause that carries the withdrawal, in place of the token '
+          '`back-react`, which passed BECAUSE the row denies what the label claimed',
+          _REAL_LIMIT in _po6_md)
 
     print()
     if FAILED:

@@ -3937,6 +3937,157 @@ lemma twp_d2 (p u v : Fin 4 → ℝ) :
 end TwoVarRecipe
 
 
+/-! ## `r7341` campaign 5 — the engine over `Fin n`: the diagonal layer (`diagN`, `gamDN`, `curvDN`) for any dimension.
+The `Fin 4` layer above is untouched. Every proof here is the `Fin 4` one with the sums left abstract; the only step
+that used `Fin.sum_univ_four` (the Koszul identity in `lcGam_diag4`) is done by linearity and a sum swap. -/
+
+section EngineN
+
+set_option synthInstance.maxHeartbeats 400000
+
+variable {n : ℕ}
+
+/-- A diagonal form on `ℝⁿ`: `Σᵢ cᵢ(p) dxᵢ²`, any signature. -/
+noncomputable def diagN (c : Fin n → (Fin n → ℝ) → ℝ) (p : Fin n → ℝ) :
+    (Fin n → ℝ) →L[ℝ] (Fin n → ℝ) →L[ℝ] ℝ :=
+  ∑ i, c i p • (ContinuousLinearMap.mul ℝ ℝ).bilinearComp (ContinuousLinearMap.proj i)
+    (ContinuousLinearMap.proj i)
+
+lemma diagN_apply (c : Fin n → (Fin n → ℝ) → ℝ) (p u v : Fin n → ℝ) :
+    diagN c p u v = ∑ i, c i p * (u i * v i) := by
+  simp [diagN]
+
+lemma diagN_symm (c : Fin n → (Fin n → ℝ) → ℝ) (p u v : Fin n → ℝ) : diagN c p u v = diagN c p v u := by
+  rw [diagN_apply, diagN_apply]; exact Finset.sum_congr rfl fun i _ => by ring
+
+lemma diagN_nondeg {c : Fin n → (Fin n → ℝ) → ℝ} {p : Fin n → ℝ} (hc : ∀ i, c i p ≠ 0) (u : Fin n → ℝ)
+    (h : ∀ v : Fin n → ℝ, diagN c p u v = 0) : u = 0 := by
+  funext j
+  have hj := h (Pi.single j 1)
+  rw [diagN_apply, Finset.sum_eq_single j (fun i _ hi => by simp [Pi.single_apply, hi])
+    (by simp)] at hj
+  simpa [hc j] using hj
+
+lemma diagN_smooth {c : Fin n → (Fin n → ℝ) → ℝ} (hcs : ∀ i, ContDiff ℝ ∞ (c i)) : ContDiff ℝ ∞ (diagN c) := by
+  rw [contDiff_clm_apply_iff]; intro a; rw [contDiff_clm_apply_iff]; intro b
+  simp only [diagN_apply]
+  exact ContDiff.sum fun i _ => (hcs i).mul contDiff_const
+
+/-- The Christoffel form of `Σ cᵢ(p) dxᵢ²` on `ℝⁿ`. -/
+noncomputable def gamDN (c : Fin n → (Fin n → ℝ) → ℝ) (p a b : Fin n → ℝ) : Fin n → ℝ := fun k =>
+  (fderiv ℝ (c k) p a * b k + fderiv ℝ (c k) p b * a k - ∑ j, fderiv ℝ (c j) p (Pi.single k 1) * (a j * b j))
+    / (2 * c k p)
+
+variable {c : Fin n → (Fin n → ℝ) → ℝ} (hc : ∀ i p, c i p ≠ 0) (hcs : ∀ i, ContDiff ℝ ∞ (c i))
+include hc hcs
+
+/-- **The engine over `ℝⁿ`:** `lcGam` of any diagonal metric is `gamDN`. -/
+lemma lcGam_diagN (p a b : Fin n → ℝ) : lcGam (diagN c) p a b = gamDN c p a b := by
+  have inv := flat_isInvertible (diagN c) (fun p u h => diagN_nondeg (fun i => hc i p) u h) p
+  have hD : ∀ e a b : Fin n → ℝ, fderiv ℝ (diagN c) p e a b = ∑ i, fderiv ℝ (c i) p e * (a i * b i) :=
+    fun e a b => by
+    rw [fderiv_apply₂' ((diagN_smooth hcs).differentiable (by simp) p),
+      show (fun y => diagN c y a b) = fun y => ∑ i, c i y * (a i * b i) from funext fun y => diagN_apply c y a b]
+    rw [(HasFDerivAt.fun_sum fun i _ => (((hcs i).differentiable (by simp) p).hasFDerivAt.mul_const
+      (a i * b i))).fderiv]
+    simp; exact Finset.sum_congr rfl fun i _ => by ring
+  have hK : koszK (diagN c) p a b = diagN c p (gamDN c p a b) := by
+    refine ContinuousLinearMap.ext fun v => ?_
+    have hlin : ∀ j, fderiv ℝ (c j) p v = ∑ k, v k * fderiv ℝ (c j) p (Pi.single k 1) := fun j => by
+      conv_lhs => rw [show v = ∑ k, v k • (Pi.single k 1 : Fin n → ℝ) by ext i; simp [Pi.single_apply]]
+      simp [map_sum, map_smul]
+    rw [koszK_apply, hD, hD, hD, diagN_apply]
+    have hk : ∀ k, c k p * (gamDN c p a b k * v k) = (fderiv ℝ (c k) p a * b k + fderiv ℝ (c k) p b * a k
+        - ∑ j, fderiv ℝ (c j) p (Pi.single k 1) * (a j * b j)) * v k / 2 := fun k => by
+      have := hc k p; simp only [gamDN]; field_simp
+    rw [Finset.sum_congr rfl fun k _ => hk k]
+    simp only [hlin, Finset.sum_mul, Finset.sum_div, sub_mul, add_mul, Finset.sum_sub_distrib,
+      Finset.sum_add_distrib, sub_div, add_div]
+    rw [Finset.sum_comm (f := fun x y => v y * fderiv ℝ (c x) p (Pi.single y 1) * (a x * b x) / 2)]
+    congr 1
+    · congr 1 <;> exact Finset.sum_congr rfl fun i _ => by ring
+    · exact Finset.sum_congr rfl fun i _ => Finset.sum_congr rfl fun j _ => by ring
+  rw [lcGam_apply, hK, inv.inverse_apply_self]
+
+omit hc hcs
+
+/-- First and second partials of a coefficient on `ℝⁿ`. -/
+noncomputable def dC1N (c : Fin n → (Fin n → ℝ) → ℝ) (p : Fin n → ℝ) (k : Fin n) (v : Fin n → ℝ) : ℝ :=
+  fderiv ℝ (c k) p v
+noncomputable def dC2N (c : Fin n → (Fin n → ℝ) → ℝ) (p : Fin n → ℝ) (k : Fin n) (u v : Fin n → ℝ) : ℝ :=
+  fderiv ℝ (fderiv ℝ (c k)) p u v
+
+/-- `∂_u` of `gamDN`, componentwise. -/
+noncomputable def DGDN (c : Fin n → (Fin n → ℝ) → ℝ) (p u a b : Fin n → ℝ) : Fin n → ℝ := fun k =>
+  ((dC2N c p k u a * b k + dC2N c p k u b * a k - ∑ j, dC2N c p j u (Pi.single k 1) * (a j * b j)) * (2 * c k p)
+    - (dC1N c p k a * b k + dC1N c p k b * a k - ∑ j, dC1N c p j (Pi.single k 1) * (a j * b j)) * (2 * dC1N c p k u))
+    / (2 * c k p) ^ 2
+
+/-- **The closed form over `ℝⁿ`**: `R(u,v)w = ∂_u Γ(v,w) − ∂_v Γ(u,w) + Γ(u,Γ(v,w)) − Γ(v,Γ(u,w))`. -/
+noncomputable def curvDN (c : Fin n → (Fin n → ℝ) → ℝ) (p u v w : Fin n → ℝ) : Fin n → ℝ :=
+  DGDN c p u v w - DGDN c p v u w + gamDN c p u (gamDN c p v w) - gamDN c p v (gamDN c p u w)
+
+include hc hcs
+
+omit hc in
+lemma dC1N_hasFDerivAt (p : Fin n → ℝ) (k : Fin n) (v : Fin n → ℝ) :
+    HasFDerivAt (fun y => fderiv ℝ (c k) y v) ((fderiv ℝ (fderiv ℝ (c k)) p).flip v) p := by
+  have h2 := ((hcs k).fderiv_right (m := ∞) (by simp)).differentiable (by simp) p
+  exact (h2.hasFDerivAt.clm_apply (hasFDerivAt_const v p)).congr_fderiv (by ext; simp)
+
+lemma gamDN_comp_hasFDerivAt (p a b : Fin n → ℝ) (k : Fin n) :
+    ∃ L : (Fin n → ℝ) →L[ℝ] ℝ, HasFDerivAt (fun y => gamDN c y a b k) L p ∧ ∀ u, L u = DGDN c p u a b k := by
+  have hN : HasFDerivAt (fun y => fderiv ℝ (c k) y a * b k + fderiv ℝ (c k) y b * a k
+      - ∑ j, fderiv ℝ (c j) y (Pi.single k 1) * (a j * b j)) _ p :=
+    HasFDerivAt.sub (HasFDerivAt.add ((dC1N_hasFDerivAt hcs p k a).mul_const _) ((dC1N_hasFDerivAt hcs p k b).mul_const _))
+      (HasFDerivAt.fun_sum fun j _ => (dC1N_hasFDerivAt hcs p j _).mul_const _)
+  have hD : HasFDerivAt (fun y => 2 * c k y) _ p :=
+    (((hcs k).differentiable (by simp) p).hasFDerivAt).const_mul 2
+  have hq := HasFDerivAt.mul hN ((hasDerivAt_inv (mul_ne_zero two_ne_zero (hc k p))).comp_hasFDerivAt p hD)
+  refine ⟨_, hq, fun u => ?_⟩
+  simp only [DGDN, dC1N, dC2N]
+  have := hc k p
+  simp
+  field_simp
+  rw [Finset.sum_congr rfl fun x _ => (by ring : a x * b x * fderiv ℝ (fderiv ℝ (c x)) p u (Pi.single k 1)
+    = fderiv ℝ (fderiv ℝ (c x)) p u (Pi.single k 1) * a x * b x)]
+  ring
+
+lemma fderiv_gamDN (p u a b : Fin n → ℝ) : fderiv ℝ (fun y => gamDN c y a b) p u = DGDN c p u a b := by
+  choose L hL hLu using fun k => gamDN_comp_hasFDerivAt hc hcs p a b k
+  have hd : DifferentiableAt ℝ (fun y => gamDN c y a b) p := differentiableAt_pi.2 fun k => (hL k).differentiableAt
+  funext k
+  rw [show fderiv ℝ (fun y => gamDN c y a b) p u k = fderiv ℝ (fun y => gamDN c y a b k) p u by
+    rw [_root_.fderiv_apply hd k]; rfl, (hL k).fderiv, hLu]
+
+/-- **The engine over `ℝⁿ`.** THE connection's curvature of `Σ cₖ dxₖ²` on constant fields is `curvDN`. -/
+theorem curvDN_eq (p u v w : Fin n → ℝ) :
+    curv (lcConn (Fin n → ℝ) (ndOf (diagN c) (diagN_symm _) (fun p u h => diagN_nondeg (fun i => hc i p) u h)
+      ((diagN_smooth hcs).differentiable (by simp)))) (fun _ => u) (fun _ => v) (fun _ => w) p = curvDN c p u v w := by
+  have hGd : Differentiable ℝ (lcGam (diagN c)) :=
+    (lcGam_smooth (fun p u h => diagN_nondeg (fun i => hc i p) u h) (diagN_smooth hcs)).differentiable (by simp)
+  have hF : ∀ e a b, fderiv ℝ (lcGam (diagN c)) p e a b = DGDN c p e a b := fun e a b => by
+    rw [fderiv_apply₂' (hGd p), show (fun y => lcGam (diagN c) y a b) = fun y => gamDN c y a b from
+      funext fun y => lcGam_diagN hc hcs y a b, fderiv_gamDN hc hcs]
+  rw [curv_model _ _ (fun x w u => lcConn_const (diagN_symm _) _ _ x w u) hGd, hF, hF,
+    lcGam_diagN hc hcs, lcGam_diagN hc hcs, lcGam_diagN hc hcs, lcGam_diagN hc hcs]
+  rfl
+
+omit hc hcs
+
+/-- Contractions over `ℝⁿ`, as the `Fin 4` ones; the Weyl square carries the dimension. -/
+noncomputable def ricCN (Rf : Fin n → Fin n → Fin n → Fin n → ℝ) (j k : Fin n) : ℝ := ∑ i, Rf i j k i
+noncomputable def scalCN (g : Fin n → ℝ) (Rf : Fin n → Fin n → Fin n → Fin n → ℝ) : ℝ := ∑ j, ricCN Rf j j / g j
+noncomputable def ric2CN (g : Fin n → ℝ) (Rf : Fin n → Fin n → Fin n → Fin n → ℝ) : ℝ :=
+  ∑ j, ∑ k, ricCN Rf j k ^ 2 / (g j * g k)
+noncomputable def riem2CN (g : Fin n → ℝ) (Rf : Fin n → Fin n → Fin n → Fin n → ℝ) : ℝ :=
+  ∑ i, ∑ j, ∑ k, ∑ l, (g l * Rf i j k l) ^ 2 / (g i * g j * g k * g l)
+/-- `C² = Riem² − 4/(n−2) Ric² + 2/((n−1)(n−2)) R²`. -/
+noncomputable def weyl2CN (g : Fin n → ℝ) (Rf : Fin n → Fin n → Fin n → Fin n → ℝ) : ℝ :=
+  riem2CN g Rf - 4 / ((n : ℝ) - 2) * ric2CN g Rf + 2 / (((n : ℝ) - 1) * ((n : ℝ) - 2)) * scalCN g Rf ^ 2
+
+end EngineN
+
 end ShadowProbe
 
 #print axioms ShadowProbe.curv_smul_left
@@ -4064,3 +4215,5 @@ end ShadowProbe
 #print axioms ShadowProbe.tw_d2
 #print axioms ShadowProbe.twp_d1
 #print axioms ShadowProbe.twp_d2
+#print axioms ShadowProbe.lcGam_diagN
+#print axioms ShadowProbe.curvDN_eq

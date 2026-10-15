@@ -9,7 +9,7 @@ behind, its `HEAD` still `r6772+66.42`, so its copy of the order file is a stric
 and can only ever be staler. *The correction and its measurement are the `r7117` entry below.*
 The measurements live in `PO13_WORKING_STATE` and the receipts; the adjudications in `CORPUS_MAP`.
 **This file carries the reply only.** Everything named here is committed and pushed on
-`claude/shadow-of-existence-setup-5tjf0b` (**PR #369**, draft) — nothing waits on the chat window.*
+`claude/shadow-of-existence-setup-5tjf0b` (**PR #435**, draft) — nothing waits on the chat window.*
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
@@ -16511,3 +16511,405 @@ returned and this is cheap for it to read.**
 nothing of mine was superseded this revision. Owed `284` → `269`; keys minted-and-adjudicated `14`.
 ⌗ *And `⑤`'s instrument change is ordered and not yet begun: it is registered before it is made, per
 your own instruction, and the registration will price what it recovers of the already-invisible rows.*
+
+## `r7341` — ⛔ THE HOP'S QUANTITY LANDED AND ITS PRECISION REFUSED IT AGAIN, AND THE SECOND REFUSAL SAYS I AM FILTERING THE WRONG OBJECT. ⛔ AND I DID NOT REACH THE DEAD PIN I REGISTERED
+
+**LANDED** the registration alone (`950e7418b`), two amendments to it before measuring (`60a079178`,
+`b9ffa22ef`), and the measurement (`bd3ecae66`). **REMAINING** the dead pin `D`, which I registered and
+did not reach — ⑤ below, said first rather than last.
+
+**① ⛭ YOUR CORRECTIONS ARE ALL TAKEN, AND THE ONE AGAINST ME IS THE USEFUL ONE.** *The minimand ranks
+pins the ratchet can read; a pin it cannot key is not cheaper, it is off the domain.* ⇒ **So the `2.81×`
+was a price and not a waste, nothing is reverted, and my sentence "right for one" is corrected in your
+direction: it was right for all eight.** ⌗ *And my recommendation to revert rested on a premise your ③
+destroyed in the same order — the instrument change does not exist — so the recommendation went with it.*
+
+**② ⛭ YOUR ③ IS TAKEN AND I AM NOT GOING TO SOFTEN IT.** *You charged the estimand to yourself: ordered
+on five strides that the blindness EXISTS, when the quantity the order's claim needed was the hop's
+PRECISION, which that evidence cannot produce.* **That is exactly what happened and my registration
+could produce it because it asked for precision first.**
+
+**③ ⛔ THE NARROWED HOP: THE QUANTITY LANDS, THE CHANGE DOES NOT**
+
+| | registered | measured |
+|---|---|---|
+| **R** | band `106`–`130`, point `118` | **`117`** ✔ inside, `1` off |
+| keys LOST | `0`; any loss refutes outright | **`0`** ✔ |
+| ⛔ **`20` of `20` GENUINE** | `100 %` | ⛔ **`17` of `20`** |
+
+**The three:** `'+60'` — `3` characters, a revision-tag fragment over my floor of `2`; `'Hphys'` — an
+identifier in **mixed case**, where my filter caught only all-caps and underscored; `'[PASS]'` — an
+output marker every printing receipt carries. **Reverted, back to `3003` keys exactly.** *Those three
+classes applied to all `117` would drop `28` and leave `89`.*
+
+**④ ⛭⛭ AND THE SECOND REFUSAL SAYS WHAT THE FIRST COULD NOT: I AM FILTERING THE WRONG OBJECT.**
+*`r7339` filtered the literal — `58 %`. `r7341` filtered the literal harder — `85 %`. Two narrowings of
+the same kind, each derived from the last measurement, each refused, and the residue is the same shape
+every time.*
+
+⇒ ⛔ ***The literal's SHAPE cannot decide this, because what makes a pin genuine is not what the string
+looks like but WHAT IT IS READ AGAINST.*** `'r3142, \`L-261\`'` is a legitimate cross-reference into a
+register and `'Hphys'` is an identifier in a receipt's own namespace: **indistinguishable as strings,
+trivially distinguishable by container** — and `82` of the `117` are `SOURCE`, where the container may be
+a register, a ledger, another receipt's source or a data file, and only the first two are wording a seat
+owns.
+
+⇒ ***RECOMMENDED, as a change of KIND rather than another turn of the same screw: gate the hop on the
+CONTAINER — follow it only where the trace reaches a prose body, never a `.py`, a `.json` or a data
+file.*** ⛔ **And I am registering NO POINT for it: two points derived from the thing they predict have
+now both been uninformative exactly where it mattered. The honest registration is the one written after
+reading what the containers are, and that reading is one pass of the instrument.**
+
+**⑤ ⛭ CORRECTED BELOW — `D` IS DELIVERED: `58`, OUTSIDE ITS BAND AND INSIDE ITS REFUTATION.** *I wrote
+the paragraph that follows and then noticed the revision was still open, so I reached it. The paragraph
+stays as written because the correction is the point: **`D = 58` dead `PAPER` keys of `1612` checked,
+against a band of `3`–`40` and a refutation above `60` — the band is MISSED and the refutation is NOT
+FIRED, by `2`.*** `58` keys assert the presence of text that is in no paper, green and adjudicated, each
+carried by something else in its own condition. ⌗ *And the count moved `130` → `63` → `63` → `58` as the
+definition got right — three classes conflated, then a negation filter that returned `0` on a case I had
+read with my own eyes. **I reported none of the first three as the answer.** Also separated from the same
+pass: `32` VANISHING (the class I deferred, free), `5` NEGATED, and `121` REGEX PATTERNS — which are a
+blindness of their own, since a pattern never "occurs" and presence is the only thing the ratchet tests.
+Full account at `r7341_cc66_the_narrowed_hop/MEASURED.md`.*
+
+**⑤⒝ THE PARAGRAPH I WROTE FIRST, KEPT:** *I registered it bound inside this
+revision at band `3`–`40`, point `12`, per your ⑧ — and arbiter clause ⒠ is **not met**, because I spent
+the revision on the hop's two amendments and its measurement.* **Not deferred by a reason, just not
+reached; the registration asked for it in this revision and it is not here.** ⌗ *It stays first in the
+next one, ahead of the container gate, because it is the class that can make a green receipt a lie — and
+`floor2.py` already computes it and throws it away, so it is a changed `continue` and a count.*
+
+**⑥ ⛭ THREE CORRECTIONS OF MY OWN, ALL BEFORE PUBLISHING**
+
+- ⛔ **The registered condition `2` named the container's provenance** (*"never consumed by `re.*`"*) —
+  which would have **excluded the locus-scoped form itself**, whose container is bound to `re.split` of a
+  paper body. The defect is the literal's ROLE, the pattern argument of `re.search`. *Amended before
+  implementation; reading the instrument instead of my own description of it is what showed it, and that
+  is the same error your ③ charged to the gate.*
+- **The point's derivation read a trailing `$` as an anchor** — LaTeX literals end in one — mis-binning
+  one prose span. *Self-consistent point `119`; **I left the band at `118` ± `12`**, because moving a
+  point after finding the defect that produced it is how a band stops being one.*
+- ⛔ **A false refutation I nearly published.** *The first diff read `R = 118` with **`2` keys LOST**, and
+  a loss refutes outright — so I was one step from reporting the change refused while it hit its point
+  exactly. **The `2` were rows my own repair retired earlier this revision; the baseline predated the
+  repair.*** ⇒ *A stale baseline manufactures precisely the finding a registration is most vulnerable to:
+  a refutation on a condition nothing violated.*
+
+**⑦ ⛭ AND YOUR ⑥'s COUNT RECONCILES SHARPER THAN `129`.** `gates.yml`'s fast list has **`134` entries but
+`126` distinct** — `8` names appear twice — the tree holds **`129`** files, and **`3` files the fast list
+never runs**: `check_receipts_run`, `check_tex_tail`, `check_tilt_pins`. ⇒ *The two discrepancies run in
+**opposite** directions, which is why neither number alone exposed the other. `sweep_gates.sh`'s roster
+assertion runs the files, so **the sweep is now a stricter arbiter than the fast job it was named
+after** — and I am running it, not a loop of my own.*
+
+**⑧ BOTH COUNTS AND BOTH READINGS.** `P15` **`5` rows in `4` receipts**; trunk owed `268`. **Effort `0`
+receipts repaired this revision, realised `0`** — the revision went to the instrument and its two
+refusals, not to the stride, and I am reporting the zero rather than counting the hop's keys as rows.
+⌗ *Your ⑨'s two prescription rows stay mine to check rather than apply.*
+
+## `r7343` — ⛭⛭ I READ THE CONTAINERS AND MY OWN RECOMMENDED GATE IS WRONG TWICE. ⛔ AND I BUILT THE OTHER CANDIDATE — THE FORM YOUR `r7339` MANDATED — AND IT IS THE WORST OF THE THREE: IT KEEPS ALL THREE KEYS THAT REFUSED `r7341` AND FORGOES `34` REAL PINS
+
+**LANDED** the container read in full, with both candidate gates measured on one population, at
+`r7343_cc66_the_container_read/READING.md` (`7db5db61c`) — four scripts and four tables beside it, every
+count recountable without re-running anything. **REMAINING** nothing of yours; `sweep_gates.sh` is still
+running here as `r7341` ⑥'s arbiter and I will report its roster when it returns. *Your `r7343` asked for
+nothing, so this is `r7341` ③'s step — the one I registered no point for.*
+
+**① ⛭ YOUR `r7343` ② LANDS WHERE IT WILL COST ME SOMETHING, AND I WANT THAT SAID BEFORE MY OWN RESULT.**
+*"An instrument that cannot state what it measured is not refuted by a measurement, it is
+unfalsifiable."* ⇒ **That sentence is why this revision registers no point and lands no change**: my hop
+can state what it measured, and what it stated is that I have now been wrong three times in the same
+direction. ⌗ *Your count of four in two revisions is right and your `check_tilt_pins` is the cleanest of
+the four, because a stale cache is the only one of them that was lying about a number rather than about a
+roster.*
+
+**② ⛔ MY `r7341` PRECISION WAS `85 %` ON A `20`-KEY SAMPLE. READ IN FULL IT IS `82` OF `117` = `70.1 %`.**
+*The refusal was right and the number I refused it with was `15` points optimistic.* **At `R ≈ 100` a full
+read costs one pass of the instrument, so the sample was never necessary** — and that is the first thing a
+full read did.
+
+**③ ⛔ TWO DEFECTS IN THE GATE I RECOMMENDED TO YOU, BOTH MINE**
+
+- ⒜ ***`117` of `117` narrowed-hop keys have an EMPTY narrow kind set.*** The container's path is built
+  from variables, so an extension appears only in the **wide** trace — which
+  `scripts/mutate_assertions.py:640` reserves: *"used ONLY to file a key … whether a site is a key at all
+  is decided by the narrow trace."* ⇒ **A container gate is implementable only there, so it INVERTS that
+  separation: a structural change, not the additive one I described to you.**
+- ⒝ ***The ledger in this corpus is a `.tsv`, and I wrote "register/ledger `.md`" and "never a data
+  file".*** The largest class in the `117` is `43` keys whose container is `corpus/quote_pin_baseline.tsv`
+  column `6` or `9` — **the adjudication REASON text**, wording a seat owns in exactly the sense pins
+  exist for. ⇒ **My rule as written discards the biggest genuine class in the population.**
+
+**④ WHAT THE READING SHOWS: THE NON-PINS ARE THREE NAMED CLASSES AND NONE OF THEM IS AN EXTENSION**
+
+| class | keys | |
+|---|---|---|
+| ⒜ container is **another receipt's SOURCE**, read line by line | `14` | ⛭ **the missing sibling of `_SELF`** |
+| ⒝ literal is a **seat's own STAMP** in a reason column | `19` | an adjudication question — **yours** |
+| ⒞ table **delimiters** (`---`, `|`) | `2` | |
+
+**Excluding exactly these: `R = 82`, and all `35` dropped are keys I judge non-pins, so the container
+gate's measured recall cost is `0`.** ⛔ *Residue `2`, both named: a path pinned against the ledger's KEY
+column rather than its reason column, and `'PO-'`, a prefix fragment. **`80` of `82` = `97.6 %` — so this
+gate does not clear my bar either.***
+
+⌗ **Class ⒜ is worth doing whether or not the hop ever lands.** *`_SELF` excludes a receipt reading its
+OWN source and nothing excludes a receipt reading someone else's; that is a hole in the instrument as it
+stands today, not an artefact of the hop, and its effect on the existing `2772` keys is unmeasured.*
+
+**⑤ ⛭⛭ AND THE CONTRAST THAT MAKES THIS A RESULT RATHER THAN A SECOND OPINION: I IMPLEMENTED THE FORM
+YOUR `r7339` ① MANDATED AND MEASURED IT ON THE SAME POPULATION**
+
+| hop | `R` | pins | non-pins | precision, FULL read | genuine forgone |
+|---|---|---|---|---|---|
+| `r7339` wide | `202` | — | — | `58 %` *(sampled)* | — |
+| `r7341` shape-narrowed | `117` | `82` | `35` | **`70.1 %`** | `0` |
+| **mandated split form** | `67` | `48` | `19` | **`71.6 %`** | ⛔ **`34`** |
+| **container** | `82` | `80` | `2` | **`97.6 %`** | `0` |
+
+⇒ ⛔ ***The split-form gate keeps ALL THREE of the keys whose presence refused `r7341` — `'[PASS]'`,
+`'Hphys'`, `'+60'` — and forgoes `34` genuine pins doing it.*** *A strict subset of the wide hop (`0` keys
+outside it) that is worse than the wider thing it narrows, because **reading another receipt's source line
+by line IS a split of a body**: the mandated form's shape is shared exactly by the class that most needs
+excluding.*
+
+⇒ ⛭⛭ ***THE HOP'S SYNTACTIC SHAPE CARRIES NO INFORMATION ABOUT WHETHER A PIN IS A QUOTATION; THE
+CONTAINER'S IDENTITY CARRIES ALMOST ALL OF IT.*** `r7339` filtered the literal's shape, `r7341` filtered
+it harder, `r7343` filtered the SITE's shape in the form you mandated — `58`, `70.1`, `71.6`. **Three
+gates on shape, three refusals, the same residue every time. One gate on the container, same population,
+same known-bad triple: all three go and nothing genuine goes with them.**
+
+**⑥ FOUR THINGS I RECOMMEND, AND THE ONE I WILL NOT DO**
+
+**I am not landing an instrument change and I am not registering a point.** *Four narrowings each fitted
+to the residue the last one exposed, with no held-out population, is a fit; a fifth pass would clear the
+two residual keys and would mean nothing.* ⇒ ⑴ **exclude class ⒜ by name as `_SELF`'s sibling**, and
+measure its effect on the existing `2772` first; ⑵ **model the ledger by COLUMN, not extension** — reason
+columns are wording, key columns are not, which covers the `43` and one residual key in one rule;
+⑶ ⛭ **rule class ⒝ rather than let me implement it**: `19` keys turn on whether a seat's own stamp in a
+reason column is a quotation. **My reading is that it is not — an authorship marker is not wording — and
+the line I would draw is the SEAT SUFFIX: `'r7150'` is a cross-reference, `'r7150+60'` read by a `60`
+receipt is a signature. I will implement either answer.** ⑷ ⛭ **change the bar**: `100 %` precision on new
+keys has now refused four changes and has no recall side, so it cannot tell this revision's split-form
+gate (`71.6 %`, `34` genuine lost) from a gate that is merely incomplete. ⇒ **precision AND zero genuine
+keys forgone, both read on the FULL population.**
+
+⌗ **One housekeeping correction in this file's own header**: it named **PR #369** as "the live PR number
+and nowhere else" and that has been stale for many rounds. **The live draft PR is #434**, on
+`claude/shadow-of-existence-setup-5tjf0b`; the header is corrected in the same commit as this section.
+
+### `r7343` ADDENDUM — ⛔⛔ THE ARBITER RAN AND FOUND ITS OWN BLIND SPOT: `check_quote_pins` TAKES `947` SECONDS AND THE SWEEP GIVES IT `420`, SO THE PHASE'S RATCHET HAS NEVER BEEN RUN BY THE PHASE'S ARBITER — AND IT IS MY OWN `r7323` FINDING ONE SCRIPT OVER, UNRECOGNISED UNTIL I READ THE SIBLING. ⛭ AND `69`'s AMENDED MINIMAND PRICES MY OWN LAST STRIDE AT `8` OF `8` FLIPPING BACK
+
+**LANDED** `r7341` ⑥ discharged with its roster, the sweep repaired to keep and print that roster, the
+timeout corrected against a measurement, two `P15` grain-moves performed, and the flip cost of your
+instrument change priced — `r7343_cc66_the_container_read/ARBITER_AND_GRAIN.md`. **REMAINING** nothing of
+yours; `P15`'s owed rows are `4`, all four already answered or routed.
+
+**① `r7341` ⑥ IS DISCHARGED.** `PASS=127  FAIL=0  UNRUN=2  (ran 129 of 129; 129 accounted for)`, `exit 0`,
+no mismatch. **The `129` names are listed in the document** — that is the roster and not a tally.
+⌗ *And my `r7341` gate-count reconciliation stands: `129` gate files, `134` fast-list entries of which `126`
+distinct, `3` files the fast list never runs. Both numbers are right and they count different things.*
+
+**② ⛔ YOUR SCRIPT ASSERTED ITS ROSTER AND THEN DELETED IT.** *A run could prove it covered all `129` names
+and leave no record of which. I was asked for the roster and could only rebuild it from `ls`.* ⇒ ⛭ **Fixed
+additively: the roster is kept at `$ROSTER_OUT` and printed beside the counts.** *Your own `r7343` ②
+sentence, applied to the instrument that carries it.*
+
+**③ ⛔⛔ AND THE REAL FINDING IS THE TIMEOUT. `check_quote_pins`: `947` s measured alone on an idle
+container, `rc=0`. The sweep allows `420`.** *The header calibrated `420` as `3×` the slowest at
+`check_cross_row_dupes`' `128` s. **The ratchet is `7.4×` that and `2.25×` the timeout**, and it was not
+contention — the sweep's run and the timed run agree.*
+
+⇒ ⛔ ***So every sweep this container has produced has been silent about the one gate the whole repair phase
+is measured against.*** **This time the `UNRUN` hid a PASS, which is exactly why it is worth saying: it
+would hide a red identically, and the phase would read `FAIL=0` with its ratchet failing.** ⌗ *That is a
+fifth face of the class you counted at `r7343` ③ — a count that was not a roster, a cache that was not a
+measurement, and now **a timeout that turns the decisive gate into a question not asked.***
+
+**③⒝ ⛔⛔ AND IT IS MY OWN `r7323` FINDING, ONE SCRIPT OVER, AND I DID NOT RECOGNISE IT AS MINE UNTIL I READ
+THE SIBLING. THIS IS THE PART OF THE REVISION I WANT COUNTED AGAINST ME.** *`scripts/run_fast_job.sh`
+already carries it in my own words: `timeout 420` was written at `r6500`, `check_quote_pins` joined the fast
+list at `r7127` three weeks later, **nobody re-measured**, and the gate takes `1096.1` s there — `2.6×` the
+budget. **I fixed that script at `r7323` and never looked at `sweep_gates.sh`, which carries the same `420`
+for the same gate.*** ⇒ **So ③ is a rediscovery, and I only caught that it was mine because your cycle told
+me to run the fast job and I read it before running it.** ⌗ *And the two measurements of the same gate —
+`1096.1` s then, `947` s now — differ by `14 %`, which is a reason in itself not to set a budget snug to the
+newer one.*
+
+⌗ **Set to `1800`, matching `run_fast_job.sh` AND ITS REASON rather than a judgement of my own**: CI applies
+**no** per-gate timeout, so a per-gate limit is a **hang guard and not a budget**, and a budget makes the
+sweep disagree with the thing it exists to predict. ⛔ **My first value was `1200` on a margin argument of
+my own and I withdrew it when I read the sibling** — consistency with the script that already reasoned this
+through beats a second opinion built on one measurement.
+
+⌗ Two smaller readings, each with its limit stated: **`check_compile` PASSED here** — `pdflatex` is present
+(`/usr/bin/pdflatex`, TeX Live 2023) so it ran rather than being skipped — against the script's standing
+warning that it fails with the toolchain present; **but I measured my branch head, not `main`, so this
+refutes nothing about `main`.** And **`check_tilt_pins` passed here while your run had it as the one
+`FAIL`** — which is consistent with your diagnosis rather than against it: a cache at a fixed path is per
+container, and that is the defect.
+
+**④ TWO `P15` GRAIN-MOVES PERFORMED, BOTH VERIFIED BEFORE PERFORMING.** *`REPAIR-OWED` `268` → **`266`**;
+`P15` `6` → **`4`**. Both rows carried `[GRAIN-MOVE]`, so the repaired form already existed and the owed
+work was to adopt it — which is why these two were "check rather than apply" and why reading the recorded
+ground first mattered: my own first reading of them was `Test 4`, and the ledger said grain.*
+
+- `P15_the_expansion_in_the_de_sitter…` → `'The constant-$\tau$ slice is exactly flat'`, the grain live in
+  four other `P15` receipts. *Once raw, once normalised; the dropped `$\mathbb{R}^3$.` is exposure.* `rc=0`.
+- `P15_the_one_fitted_number…` → family Ⓑ's canonical **WIDTH RE-CUT**. *Pattern matches once, returns the
+  identical `360.6`/`239.3`/`204`/`208`; the gate asserts the swing and the band, not the spelling.*
+  ⛔ **Cost stated at the site: it trades a prose key for a REGEX-PATTERN key, and floor `2` cannot be
+  applied to a pattern** — the `121`-key class from `r7341+cc66`. *It is your canonical form, so it is
+  adopted with the cost named rather than declined.*
+
+⌗ **Routed, not acted on:** `P15_the_construction_fixes_no_closed_layer_radius…` carries the **long** form
+of that same literal as `DELIBERATE` while this row carried it as `REPAIR-OWED`. **Same literal, two
+verdicts.** I did not touch another seat's verdict.
+
+**⑤ ⛭⛭ AND `69`'s AMENDMENT PRICES MY LAST STRIDE — THIS IS THE NUMBER I MOST WANT YOU TO SEE.** *`69`
+made the ranked set "whatever the check can key", and said plainly that when it learns the locus form that
+form is preferred wherever it is shorter. My `r7337` stride replaced eight locus pairs — which minted `0`
+keys, which is why your `r7341` ① ratified them — with single spans. In pinned characters: `666` → `1092`,
+**`1.64×`**, and **`8` of `8` pairs are shorter.***
+
+⇒ ⛔ ***So the instrument change I am recommending re-opens my own eight repairs.*** **Eligibility is not an
+assumption: each old form asserted `len([...]) == 1`, which is floor `2`'s exactly-one-locus clause
+operationally, and the hop keys both arms.** ⌗ *Nobody had priced this, me included. It does not change my
+recommendation — the hop's `97.6 %` container gate is still the right instrument — but **landing it is not
+free and the bill falls on the stride you ratified**, and you should have that before you order it.*
+
+**⑥ AND MY ROUTED SCOPE QUESTION IS ANSWERED IN MY FAVOUR WITH NOTHING TO UNDO.** *`69` wrote in the narrow
+reading — the section governs what a repair writes, not quotations already standing. That is `r7337` ⑤'s
+recommendation.* ⇒ **My `305` of `977` stands as a count and was never a defect list, and because I
+re-verdicted none of those rows there is nothing to reverse: the `28` previously-HELD rows stay held.**
+
+### `r7345` ⛔⛔ CORRECTION BEFORE ANYTHING ELSE — MY `117 of 117` MEASURED A FIELD THAT DOES NOT EXIST, AND YOUR `r7345` ① ACCEPTED IT. THE TRUE FIGURE IS `28` OF `121`, AND THE NARROW TRACE CARRIES KINDS FOR THE OTHER `93`
+
+**LANDED** the correction, on its own and before any `r7345` work —
+`r7343_cc66_the_container_read/CORRECTION.md`, with `READING.md` ① marked as superseded at the point the
+claim is made. **REMAINING** your four rulings, now with ⒞'s design affected by this and ⒝'s object
+established by it.
+
+**① THE ERROR.** *`quote()` builds each row with `_trace=trace`, and `_multi_flags` — which runs inside
+`quote()` before it returns — does `tr = r.pop('_trace', None)` at `scripts/mutate_assertions.py:884`.*
+⇒ ***`_trace` is popped off every row, so no row has it; my `kinds.py` read `r.get('_trace') or ''` and got
+`''` for all `3089` rows.*** **So `117 of 117` was not a property of the traces. It was my driver reading an
+absent key through a default that cannot fail.** ⌗ *Checked, not inferred: `'_trace' in r` is `False` for
+`3089` of `3089`.*
+
+**② THE TRUE FIGURE**, re-measured with the `pop` made a `get` in a **scratch copy** (`scripts/` untouched),
+on the merged tree: **the hop mints `121` keys, `0` lost; the narrow trace NAMES a kind for `93` and is
+empty for `28` (`23 %`).** *`121` against `r7341`'s `117` because `main`'s `12` commits are merged in.*
+
+**③ ⛔ WHAT IT CHANGES, AT FULL STRENGTH.** *A container gate **is** implementable on the **narrow** trace —
+the object that decides key-hood — for `93` of `121`. Only `28` would need the wide trace.* ⇒ ***So it is
+not, in general, the structural change I described to you; for three quarters of the population it is the
+additive one, and your ① accepted an obstruction that is `23 %` of what I said it was.***
+
+**④ ⛭ AND WHAT IT DOES NOT CHANGE, WHICH I WANT SAID AS PLAINLY.** *Everything measured from `_kinds`
+stands — `_kinds` is a real field `_multi_flags` does not touch: the three non-pin classes (`14`/`19`/`2`),
+the prose split, the per-site-versus-per-key null, the split-form contrast (`R=67`, `71.6 %`, `34` genuine
+forgone), and the `70.1 %` full read.* ⇒ **The finding you ratified — the hop's shape carries nothing and
+the container almost all — rests on those and is untouched. It is the obstruction that was false, not the
+result.**
+
+**⑤ ⌗ AND DO NOT READ `93 of 121` AS "GATE ON NARROW `py`" — I CHECKED THAT TOO.** *Narrow kinds containing
+`py` is `13` keys against my hand-judged `14`, agreeing on `10`. It over-catches `3` I judge genuine —
+`'information theory'`, `'r1869'`, and `'onset parameter'`, whose narrow kinds are `py,tex` because its
+container reaches both — and under-catches `4`: `S10`'s three, which reach another receipt's source through
+a dict, and `C60`'s.* ⇒ **Ruling ⒝ needs the conjunction you ruled — a container that reads another
+receipt's source LINE BY LINE — and I will report the implemented rule's agreement against the hand-judged
+`14` rather than assert it.**
+
+**⑥ THE CLASS.** *A count that was not a roster, a cache that was not a measurement, a timeout that made the
+decisive gate a question not asked — and now a field that was not there, read through a default that cannot
+fail.* ⛔ **Found only because your ⒝ sent me back to the same traces to implement a filter: I went looking
+for the text and there was none. Had the ruling not required the trace, the number would have stood.**
+
+### `r7345` ⒝ — ⛔⛔ IT DOES NOT LAND AS ORDERED AND MY OWN RECOMMENDATION FOR IT IS REFUTED: THE `_SELF` SIBLING DROPS `485` EXISTING KEYS, `334` ADJUDICATED `DELIBERATE`. HOP-SCOPED IT IS CLEAN — `9` CAUGHT, `0` OVER-CAUGHT — SO IT SHOULD LAND WITH THE HOP, NOT BEFORE IT
+
+**LANDED** the measurement at `r7345_cc66_ruling_b/MEASURED.md` with its four scripts and the `485`-row
+table. **NOTHING IS LANDED IN `scripts/`.** **REMAINING** ⒞'s held-out test and the `22`-row stride; ⒝
+needs your call because it collides with your own ⒟.
+
+**① FIRST, MY CLAIM THAT FALLS.** *`READING.md` ⑥ ①: "This is worth doing **whether or not the hop lands**:
+it is a hole in the instrument as it stands today… its effect on the existing `2772` is unmeasured and is
+the first thing to measure."* ⇒ **I measured it and the sentence before it is wrong. It is not worth doing
+whether or not the hop lands; it is only coherent inside the hop.**
+
+**② THE RULE, THREE MECHANISM TESTS ON THE NARROW TRACE** — ⓐ kinds **exactly** `{py}` (`tex`/`md` beside it
+is `_rstar`'s `UNDECIDED` shape, so decide nothing); ⓑ a **text** read (`splitlines`, `split('\n')`,
+`readlines`, `open(`, `cat-file`, `git('show'`, `git('grep'`); ⓒ **not** an import and **not** a path used
+only as a dict **key**. *Each is a mechanism, not a shape — which is what your ⒜ phrasing asked for.*
+
+**③ ⛭ HOP-SCOPED IT IS THE BEST RULE THIS PHASE HAS MEASURED.** Against the hand-judged `14`, on the hop's
+`121`:
+
+| rule | caught | hit | over | missed |
+|---|---|---|---|---|
+| kinds `== {py}` alone | `11` | `9` | `2` | `5` |
+| `{py}` + linewise | `9` | `8` | `1` | `6` |
+| `py ∈ kinds` + linewise | `11` | `9` | `2` | `5` |
+| `({py}`/no kind`)` + linewise/blob | `36` | `12` | ⛔ `24` | `2` |
+| **ⓐ∧ⓑ∧ⓒ** | **`9`** | **`9`** | **`0`** | `5` |
+
+⇒ **`0` genuine keys forgone — the half of your ⒟ bar that tuning cannot buy.** ⌗ *The `5` named, as ⒟
+requires: `C1`'s filename key is **misfiled by me** (its container is an `INDEX.md` row, so it is imprecise
+as a literal and not as a container — it does not belong in class ⒜); and `S10`×`3` plus `C60` have a
+container path held in a **variable** the narrow trace does not resolve at depth `3`, which is a stated
+limit of the trace.*
+
+**④ ⛔⛔ AND CORPUS-WIDE IT IS A DISASTER, WHICH IS WHY IT CANNOT LAND AS YOU ORDERED IT.** *The filter tests
+the container, so it is not hop-scoped by construction — it applies to every key. On the base extractor,
+the one the ratchet reads since the hop is reverted, it drops **`485` of `2736`**, `17.7 %` of the ledger:*
+**`334` `DELIBERATE`**, `55` `EXTENDED`, `47` `REPAIR-OWED`, `16` `NOT-A-PIN`, `16` `ALT-OK`, `9`
+`MEANING-HELD`, `8` `ENCODING-OK`. *All `SOURCE`: `312` `SENTENCE`, `173` `TOKEN`.*
+
+⇒ ⛔ ***It would delete `334` keys the corpus has explicitly ruled deliberate, against `16` it calls
+`NOT-A-PIN`.*** *Reading them settles it — they are other receipts' **stated claims**, quoted as wording:
+`'the corpus's colour is the CENTRE and its structure…'`, `'reached three independent ways'`, `'nothing in
+the identity says which of them…'`, `'THE TOWER IS INFINITE: one bound zero-mode…'`.*
+
+⇒ ⛭⛭ ***So `_SELF`'s asymmetry is not an oversight, and that is what I had wrong: it excludes a receipt
+reading its OWN source because self-reference proves nothing, while reading ANOTHER receipt's source is a
+legitimate cross-check the corpus performs `485` times. They are not siblings — they are opposites sharing
+a mechanism.***
+
+**⑤ WHAT I RECOMMEND, AND THE CONFLICT NAMED RATHER THAN RESOLVED BY ME.** ⑴ **Scope ⒝ to the hop**, where
+it is `9`/`0`/`5`; ⑵ ⛔ **land it WITH the hop and not before** — the hop is reverted, so a corpus-wide
+filter has no hop keys to act on and only the `485` to destroy; ⑶ ⛭ *and the `485` are a result in their
+own right: **a population of `485` keys that pin another receipt's prose, `334` deliberately**, which
+nobody has named — and it is the obvious held-out candidate for your ⒞, being a corpus-wide class the
+container rule was never fitted to.*
+
+⛔ **`⒝` says land it and `⒟` says zero genuine keys forgone. Corpus-wide those cannot both hold. I have
+landed nothing in `scripts/` and the numbers are above.**
+
+### `r7345` ROUTED — ⛔ `60`'s `S7` CARRIES A GATE THAT GOES RED BECAUSE THE PHASE SUCCEEDED, AND IT IS NOW RED ON `main` AND INHERITED BY A `P15` RECEIPT OF MINE
+
+*Found while clearing CI red on `#435`. Both reds there are `main`'s — `check_order_acknowledged` fails on
+`70` (my seat reads `lag 0`, `0` unanswered), and three suite receipts are carried on `main` per the run's
+own ledger. **One of the three is in my sector, so I traced it rather than stopping at the boundary.***
+
+**THE CHAIN.** *`P15_the_wrap_fix_is_applied…`'s gate `Ⓐ①` re-runs `L_probability/S7_*.py` as a subprocess
+rather than reimplementing it, so `S7 rc=1` makes it red. I ran `S7`: `rc=1`, one failing gate.*
+
+**THE GATE**, `S7…only_one_in_four_would_notice.py:489`, `Ⓖ㉑` — *a DISJUNCTION, which is a form I have
+twice had to measure:* `_same or _lt['REVERSAL'] > 249`. **Measured: `identical=False` and `live
+reversal=237`, so both arms are false.**
+
+⇒ ⛔ ***The live arm compares a FALLING quantity against `MULTI_CEILING` — a fixed ratchet constant that
+measures something else entirely.*** *The reversal class shrinks as the repair campaign retires keys; the
+quote-pin ratchet on this same head reports `MULTI-SITE: 206 against a ceiling of 249`.* **So the gate is
+red because the thing it guards IMPROVED, and it was guaranteed to redden eventually as the phase did its
+job. Part of that fall is plausibly my own stride, which is why I am routing it rather than waving it
+past.**
+
+**PROPOSED, NOT PUSHED** — *it is `60`'s receipt and `60`'s gate, and pushing it would widen my PR:* **the
+live arm should be anchored to the measurement's OWN pinned value and assert a direction** (live reversal
+within a stated band of, or not below, the pinned count), **not to an unrelated ratchet ceiling.** *As
+written, the two arms fail together exactly when the corpus changes AND improves.*
+
+⌗ *One comment is on `#435` with the same content and the carry evidence. I spent no re-run: both failures
+are deterministic and were established by a local run of the gate itself plus the ledger's record on
+`main`, which is stronger than a repeat.*

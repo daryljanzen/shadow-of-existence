@@ -247,15 +247,36 @@ def main():
     #   correction: the finding (the start moves the denominator and not the numerator) is what the
     #   paper now cites it for, and the check no longer asserts the onset is a parameter the
     #   construction carries.  The file keeps its name; the docstring says what it now means.
+    # ⬭⬭ r7343+cc66.3 GRAIN-MOVE PERFORMED -- the ledger's own [GRAIN-MOVE] limb (r7255+cc66.182).
+    #   This literal was the l_A scan sentence pinned WHOLE, with its four connectives -- `from`,
+    #   `down to`, `while the first peak sits between`, `throughout` -- so a reword of the sentence
+    #   would redden a gate whose claim is arithmetic.  The WIDTH RE-CUT, family Ⓑ's canonical form,
+    #   has been live in P15_the_fitted_onset since cc66.172 and returns the identical four values;
+    #   the owed work was to adopt it here.  ** The symbol anchors it and bounded non-`$` windows
+    #   carry the gaps, so the four values are READ and the prose between them is free. **
+    #   ⌗ Verified before performing: the pattern matches ONCE in CR_cosmology.tex and returns
+    #     360.6, 239.3, 204, 208; and the \rcpt citation of this receipt stands exactly ONCE, so it
+    #     carries `this receipt cited` on its own without the sentence wrapped around it.
+    #   ⛔ AND THE COST IS NAMEABLE RATHER THAN SILENT: this trades a prose key for a REGEX-PATTERN
+    #     key, and THE_RULE's floor 2 cannot be applied to a pattern -- r7341+cc66 measured 121 such
+    #     keys already sitting on a presence ratchet whose test cannot reach them.  It is the form
+    #     the ledger ruled canonical at r7255, so it is adopted, and the cost is recorded here.
+    _SCAN = re.search(r'\$\\ell_\{A\}\$[^$]{0,30}\$([\d.]+)\$[^$]{0,30}\$([\d.]+)\$'
+                      r'[^$]{0,80}\$([\d.]+)\$[^$]{0,30}\$([\d.]+)\$', p15)
+    _hi, _lo, _plo, _phi = (float(x) for x in _SCAN.groups()) if _SCAN else (0.0, 0.0, 0.0, 0.0)
+    print(f'    achieved: the paper\'s scan runs l_A {_hi} -> {_lo}, a swing of {_hi - _lo:.1f} '
+          f'(bound > 100); the first peak stays in [{_plo}, {_phi}], a band {_phi - _plo:.1f} wide '
+          f'(bound <= 10) and entirely below {_lo}')
     check('⓵ᶜ and P15 states this scan in its own voice as the reason the start is NOT a parameter: '
           '"Where the plasma starts moves the scale and not the peak, which is why the start is not '
-          'free", with the scan\'s 360.6 / 239.3 / 204-208 and this receipt cited, and "no '
-          'early-universe parameter" in the bill',
+          'free", with the sentence\'s own four numbers saying it -- l_A swings across the scan '
+          'while the first-peak band is narrow and sits wholly below it -- this receipt cited, and '
+          '"no early-universe parameter" in the bill',
           'Where the plasma starts moves the scale and not the peak, which is why the start is not '
           'free' in p15
-          and 'runs $\\ell_{A}$ from $360.6$ down to $239.3$ while the first peak sits between $204$ '
-              'and $208$ throughout\\rcpt{P15_the_one_fitted_number_moves_the_scale_and_not_the_peak}'
-          in p15
+          and _SCAN is not None
+          and _hi - _lo > 100.0 and _phi - _plo <= 10.0 and _phi < _lo
+          and '\\rcpt{P15_the_one_fitted_number_moves_the_scale_and_not_the_peak}' in p15
           and 'There is no early-universe parameter among them' in p15
           and 'the one fitted number' not in p15)
 

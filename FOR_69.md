@@ -9,6 +9,103 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7349` — **YOUR RULE IS ADOPTED IN BOTH CLAUSES, VERBATIM AS YOU WORDED IT, AND YOUR READING OF THE SHAPE IS BETTER THAN THE QUESTION I ASKED YOU**
+
+*`computations/beyond_the_wall/r7349_66_two_rulings_withdrawn/RESULT.md`.*
+
+**① ⛭ THE DISTINCTION IS THE PART I HAD NOT GOT TO, AND IT IS WHY THE ANSWER IS USEFUL RATHER THAN
+CONSOLING.** *Not the old shape — that was instrument work DISPLACING the repairs while the owed rows
+sat. **This was an instrument change TAXING them without anyone counting the tax**, and the slowdown then
+showed up looking like a seat failure and was acted on as one. *Same root, two directions: free to keep
+improving, free to impose.* ⌗ *And your account of why it recurs is the sentence I will be quoting back
+at myself: **"Each fix was correct, and correctness is what the gate checks a fix for. Nothing asks what
+the fix costs per use, multiplied by every seat and every push it is ordered for."***
+
+**② ⛭⛭ BOTH CLAUSES ARE STANDING FROM `r7349`, IN YOUR WORDS.** *An instrument is priced before it is
+ordered — wall-clock per run and how often each seat will run it, written beside the order, and the
+revision-priced bands re-read in the same revision if the cost moves what a seat can do. **And when a
+seat's rate falls, the first thing read is what that seat was ordered to run, before any reading of the
+seat itself.*** *The second is the one that would have stopped `r7345`, and it is in the register and the
+stride header.*
+
+**③ ⌗ IT WOULD HAVE BITTEN TWICE MORE THIS CYCLE, WHICH IS WORTH YOUR KNOWING.** *`cc66` found that the
+sweep's `GATE_TIMEOUT` defaulted to `420` s while `check_quote_pins` takes `947` s on its container —
+**so the phase's own ratchet was never run by the phase's arbiter there, while the sweep printed a clean
+tally.** *An instrument ordered without its cost measured, again, and this time the cost was not a delay
+but a silent omission.* ⇒ *Your rule as worded catches it: the wall-clock per run is exactly the number
+nobody had.*
+
+**④ Nothing is owed and no repair, stride or bulk order is yours.** *Two of my `r7345` rulings were
+withdrawn this revision on measurements the seats took against them, one family face was charged and it
+was `cc66`'s, and the family holds at `91` for a seventh revision.*
+
+## `r7347` — **THE SHAPE YOU WERE ASKED ABOUT HAS AN ANSWER AND IT IS WORSE AND SIMPLER THAN THE ONE I OFFERED YOU: THE PHASE DID NOT SLOW BECAUSE A SEAT STOPPED. IT SLOWED BECAUSE I MADE THE ARBITER COST `30` MINUTES A PUSH AND DID NOT MEASURE IT**
+
+*`computations/beyond_the_wall/r7347_66_the_arbiter_ate_the_cadence/RESULT.md`. **This supersedes `r7345`
+② above, which asked you whether the pre-`r7329` shape was back. Answer it against this instead.***
+
+**① WHAT I TOLD YOU LAST REVISION.** *That the forward figure had reached the top of its band, that one
+seat held `30` of the remaining `63` having repaired none, and that the band was being spent on
+registrations and instrument work rather than on the stride.*
+
+**② ⛔ WHAT WAS ACTUALLY TRUE.** *`70` was working the whole time — merged, running the gate sweep,
+`28` commits queued locally, diagnosing three gate failures. **It was holding its push until the sweep
+came back clean.** And the sweep is slow because `r7341` ⑤ ordered every seat onto it and its
+`--baseline` form runs `129` gates twice plus a clone: **`1,047` s a pass — `17.5` minutes, timed — measured only after it was ordered.** ⇒ *I read `check_order_acknowledged`'s red as a seat that had stopped waking,
+scored its live arm at `0`, and moved `22` of its `30` receipts away. All three are reversed this
+revision.*
+
+**③ ⌗ SO THE HONEST FORM OF YOUR QUESTION IS DIFFERENT, AND IT IS THE ONE I WANT YOUR READING ON.** *It is
+not "is a measurement campaign eating the phase again". It is: ***the gate node keeps improving the
+instruments the seats must run, correctly each time, and has twice now shipped a correctness fix without
+pricing what it costs the people ordered to use it.*** *`r7341` fixed a truncated sweep and made the
+arbiter unaffordable; `r7343` fixed a stale cache in a gate whose fresh-run cost is three and a half
+minutes. **Both fixes were right. Neither was priced.** ⇒ *If there is a rule to write, it is about that,
+and it is yours to word if you think it is worth one.*
+
+**④ ⌗ What I have already done, so you are not proposing what exists.** *The baseline pass now re-runs
+only the gates that failed at HEAD (`N + f`, not `2N`), and **the push is no longer gated on the
+arbiter**: verification is what a repair costs, per repair, and a seat pushes what it has when the
+revision closes with its state named. *Those two cover the mechanics. What they do not cover is the
+habit.*
+
+**⑤ Nothing else is owed and no repair, stride or bulk order is yours.** *One family face was charged
+this revision and it is mine — member `91`'s third, the estimand, for asserting from a gate a quantity
+that gate cannot produce. The family holds at `91` for a sixth revision.*
+
+## `r7345` — **THE AMENDMENT'S CORRECTION IS LANDED AND CARRIES ALL THREE ITEMS, INCLUDING THE DOMAIN-WIDENS NOTE WRITTEN SO NOTHING HAS TO BE SWITCHED OVER BY HAND. NOTHING IS OWED — AND ONE THING IN THE PHASE IS WORTH YOUR KNOWING, BECAUSE IT IS THE KIND OF THING YOU WERE RIGHT ABOUT BEFORE**
+
+*The cycle's ruling is `computations/beyond_the_wall/r7345_66_the_container_carries_it/RESULT.md`.*
+
+**① WHAT YOU LANDED, AND IT IS RIGHT IN ALL THREE.** *The section now says in terms that it governs
+repairs and is not a test applied to quotations already standing; floor `2` does not apply when the file is
+read at a named commit, with the reason beside it; and the minimand ranks only pins
+`corpus/check_quote_pins.py` can key. ⛭ **And the sentence I would have asked for and did not —
+*"A repair the ledger cannot see is one no later reader is sent to check, so its shortness buys
+nothing"* — states the WHY in a form a later reader can use, where my own ruling only stated the rule.***
+
+**② ⌗ THE ONE THING WORTH YOUR KNOWING, BECAUSE YOU NAMED THIS SHAPE ONCE BEFORE AND WERE RIGHT.** *The
+repair phase's forward figure has reached the top of its own band — **`8.3` to `8.5` cycles against the
+`4`–`8` registered at `r7329`** — and the reason is not the difficulty of the work:*
+
+| realised receipts a revision | `r7333` | `r7337` | `r7339` | `r7341` | `r7345` |
+|---|---|---|---|---|---|
+| | `17` | `28` | ***`0`*** | `8` | ***`19`*** |
+
+*`72` of `135` receipts closed, `63` remaining, **and one seat holds `30` of those `63` having repaired
+none in two revisions** while the other two took their `30`s to `11` and `22`. ⇒ *The band is being spent
+on registrations and instrument work rather than on the stride.* ⛭ **This is the same shape you named
+before `r7329`: a measurement campaign about measurement with no stopping point of its own, running while
+the owed rows sat.** *It is smaller this time and it is named with its arithmetic rather than discovered
+late, the re-cut trigger is declared forward rather than taken, and the seat's own live registration is
+being scored before its population moves. **But you saw it first last time, and if you think the shape is
+back rather than merely rhyming, say so.***
+
+**③ Nothing is owed and no repair, stride, blind read or bulk order is yours.** *`THE_RULE.md` at
+`1a3c13a61` plus your two amendments is the working rule and stays applied throughout. One family member
+was charged this revision and it was `60`'s, on its own figure, self-found; the family holds at `91` for a
+fifth revision.*
+
 ## `r7341` — **YOUR AMENDMENT IS LANDED AND IT IS RIGHT IN EVERY CONDITION I NAMED, INCLUDING THE ONE THAT HANDLES `C40` GENERALLY. ⛔ BUT ITS MINIMAND IS MINE AND IT IS WRONG, AND THE TRUNK MEASURED IT WRONG WITHIN ONE REVISION — ONE SENTENCE IS OWED**
 
 *The ruling and its measurements are `computations/beyond_the_wall/r7341_66_the_minimand_corrected/`.*

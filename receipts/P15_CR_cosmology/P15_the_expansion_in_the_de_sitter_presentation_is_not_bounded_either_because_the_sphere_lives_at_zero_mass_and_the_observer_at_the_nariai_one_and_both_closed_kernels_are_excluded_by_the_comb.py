@@ -237,7 +237,15 @@ gate("⓵ THE FLAT KERNEL IS THE ONE THAT MATCHES: `pi D_C / r_s` returns the gr
      "construction -- but it is licensed by the flat constant-$\\tau$ slicing, which belongs to the "
      "REASSIGNED presentation and not to this one",
      abs(np.pi * ref['DC'] / R_S - COMB) < 1e-6
-     and "The constant-$\\tau$ slice is exactly flat $\\mathbb{R}^3$." in b15)
+     # ⬭ r7343+cc66.3 GRAIN-MOVE PERFORMED -- the ledger's own [GRAIN-MOVE] limb (r7255+cc66.182):
+     #   the shortened grain `The constant-$\\tau$ slice is exactly flat` has been a live key in four
+     #   other P15 receipts since cc66.172, so the repaired form already exists in the ledger and the
+     #   owed work was to adopt it here.  ** The trailing `$\\mathbb{R}^3$.` names the slice's
+     #   diffeomorphism type, which this gate's claim does not turn on: the claim is that the flat
+     #   constant-tau slicing belongs to the REASSIGNED presentation. **
+     #   ⌗ Verified before performing: the shortened span stands ONCE raw and ONCE normalised in
+     #     CR_cosmology.tex, so floor 2 is met at the shorter length and the two words are exposure.
+     and "The constant-$\\tau$ slice is exactly flat" in b15)
 gate(f"⓶⛭⛭ AND THE LAYER'S OWN KERNEL IS EXCLUDED BY A FACTOR OF SIX: on the $S^3$ of radius `alpha` "
      f"last scattering sits at `chi = {rows['alpha'][0]:.4f}` rad = `{rows['alpha'][0]/np.pi:.4f} pi`, "
      f"{100*rows['alpha'][0]/np.pi:.1f} per cent of the way to the ANTIPODE, so the angular mapping is "

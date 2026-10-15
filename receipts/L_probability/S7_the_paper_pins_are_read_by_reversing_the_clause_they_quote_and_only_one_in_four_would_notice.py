@@ -483,13 +483,30 @@ _live_rows = read_baseline(_live_bl)
 _live_bodies = {p: open(os.path.join(ROOT, 'corpus', f'{p}.tex'), encoding='utf-8').read()
                 for p in PAPERS}
 _same = _live_bl == _bl and _live_bodies == BODIES
-_lt = TALLY if _same else classify(_live_rows, _live_bodies)[0]
+# ⛔⛭ r7349 (66), AND THE GATE HAS HANDS BECAUSE THIS WAS RED ON main.  cc66 found it at
+#   r7345+cc66.3 while clearing CI on #435 and proposed the repair without pushing, correctly, since
+#   this is 60's receipt; 66 verified it here and landed it because main was red and a routed red
+#   stays red for a cycle.
+#   ** Ⓖ㉑'s live arm compared a FALLING quantity against a FIXED constant that measures something
+#   else. **  The 249 is r7201's MULTI count, frozen into this file; REVERSAL shrinks as the repair
+#   phase retires keys, so the gate was GUARANTEED to redden as the phase did its job -- red because
+#   the thing it guards improved.  Measured here: live REVERSAL 237 against the frozen 249, and the
+#   quote-pin ratchet reports MULTI-SITE 206 on the same head.
+#   ⇒ THE CLAIM Ⓖ㉑ MAKES IS "REVERSAL IS STILL THE LARGER BLINDNESS", so it is asserted against the
+#   LIVE MULTI, which classify already returns and this line was throwing away.  That is scale-free:
+#   it survives the phase retiring keys from either class, where a frozen number cannot.
+#   ⌗ Ⓖ⑰'s PINNED assertion (475 > 249) is untouched -- it is a claim about the pinned tree and both
+#   of its numbers are from that tree.
+_lt, _l_lone, _l_neg, _l_rev, _l_multi = ((TALLY, LONE, NEG, REV, MULTI) if _same
+                                          else classify(_live_rows, _live_bodies))
 print(f"\n    live PAPER keys {len(_live_rows)}   byte-identical to the pin: {_same}   "
       f"live REVERSAL {_lt['REVERSAL']}   live DISCRIMINATING {_lt['DISCRIMINATING']}")
 gate(f"Ⓖ㉑ the live state as a DISJUNCTION, which the standing guard prefers to a pin: EITHER the "
      f"live tree is byte-identical to the pin, so the pinned measurement IS the live one, OR it is "
-     f"re-run and the reversal class still exceeds MULTI's 249 (identical={_same}, live "
-     f"reversal={_lt['REVERSAL']})", _same or _lt['REVERSAL'] > 249)
+     f"re-run and the reversal class is STILL THE LARGER BLINDNESS -- measured against the LIVE "
+     f"multi-site class and not against r7201's frozen 249, because both classes shrink as the "
+     f"repair phase retires keys (identical={_same}, live reversal={_lt['REVERSAL']}, live "
+     f"multi-site={len(_l_multi)})", _same or _lt['REVERSAL'] > len(_l_multi))
 gate(f"Ⓖ㉒ and on whichever of the two it was, the instrument still clears pins as well as flagging "
      f"them ({_lt['DISCRIMINATING']} discriminating)", _lt['DISCRIMINATING'] > 0)
 

@@ -1,0 +1,485 @@
+receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py	"delta_g = D cos(k c_s (eta - eta_S) + phi)"	SOURCE	SENTENCE
+receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py	"phi = 0 is a density extremum with theta = 0"	SOURCE	SENTENCE
+receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py	"theta_g = (3/4) D k c_s sin(phi)"	SOURCE	SENTENCE
+receipts/L147_two_arm/B9_the_admissible_pair_is_forced_not_merely_distinguished.py	"theta_g = (3/4) D k c_s sin(phi)"	SOURCE	SENTENCE
+receipts/L165_defining_the_sum/S3_c6_is_a_theorem_not_a_condition.py	"6 \u00b7 IT MUST RESPECT THE PER-FIBRE CLOSURE"	SOURCE	SENTENCE
+receipts/L165_defining_the_sum/S3_c6_is_a_theorem_not_a_condition.py	"s an operator $\\\\hat\\\\Gamma = \\\\gamma + c\\\\sum_n\\\\hat\\\\pi_n^2$ (at leading order), and since it commutes with the radial part"	SOURCE	SENTENCE
+receipts/L165_defining_the_sum/S3_c6_is_a_theorem_not_a_condition.py	"the boundary coefficient is an operator $\\\\hat\\\\Gamma = \\\\gamma + c\\\\sum_n\\\\hat\\\\pi_n^2$ (at leading order), and since it commutes with the radial part, $-\\\\partial_x^2 + \\\\hat\\\\Gamma/x^2$ decomposes as a DIRECT INTEGRAL over its spectrum -- essentially self-adjoint where $\\\\hat\\\\Gamma\\\\ge3/4$, limit-circle where $\\\\hat\\\\Gamma<3/4$ -- and thermal regularity supplies the condition FIBRE BY FIBRE"	SOURCE	SENTENCE
+receipts/L165_defining_the_sum/S3_c6_is_a_theorem_not_a_condition.py	"the sub-threshold set's SIZE -- finite, countable, or a continuum -- is irrelevant to whether each of its fibres receives a condition"	SOURCE	SENTENCE
+receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	"THE DIRECT-INTEGRAL DECOMPOSITION OF THE COUPLED BOUNDARY OPERATOR NEEDS ONLY THAT THE SPECTRUM OF $\\\\hat\\\\Gamma$ MEET BOTH SIDES OF $3/4$. IT DOES NOT NEED A LOWER BOUND."	SOURCE	SENTENCE
+receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	"the first of the leading-order"	SOURCE	SENTENCE
+receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	"the second of the complete one"	SOURCE	SENTENCE
+receipts/L165_interacting_tower/S8_the_floor_follows.py	"IT DOES NOT NEED A LOWER BOUND"	SOURCE	SENTENCE
+receipts/L165_interacting_tower/S8_the_floor_follows.py	"h statements are correct of DIFFERENT operators"	SOURCE	SENTENCE
+receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	"D_j sigma^ij"	SOURCE	TOKEN
+receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	"K^2 - K_ij K^ij = (2/3) theta^2 - sigma_ij sigma^ij"	SOURCE	SENTENCE
+receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	"five-dimensional space of shear configurations at fixed rho and fixed theta"	SOURCE	SENTENCE
+receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py	"nothing in the identity says which of them a bend can be"	SOURCE	SENTENCE
+receipts/L174_general_matter_dynamics/I6_two_objects_one_word_the_optical_shear_is_not_the_ADM_shear.py	"K_ij = \\(1/3\\) theta g_ij \\+ sigma_ij"	SOURCE	SENTENCE
+receipts/L175_dimensional_descent/E52_the_plane_section_reduction_reproduced.py	"transitive on unit spacelike normals"	SOURCE	SENTENCE
+receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"206"	SOURCE	TOKEN
+receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"220"	SOURCE	TOKEN
+receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"294"	SOURCE	TOKEN
+receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"327"	SOURCE	TOKEN
+receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py	"Delta chi^2 ~ 3.3e5 -- pure isocurvature is excluded overwhelmingly, and no amplitude rescaling rescues it because the PEAK POSITIONS are wrong"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B20_centre_and_weyl_are_opposite_ends.py	"reached three independent ways"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B20_centre_and_weyl_are_opposite_ends.py	"the corpus's colour is the CENTRE and its structure group"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B20_centre_and_weyl_are_opposite_ends.py	"the pushforward's holonomy"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B20_centre_and_weyl_are_opposite_ends.py	"the thing that arrives is a discrete label and the thing that does not is a coupling"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B20_centre_and_weyl_are_opposite_ends.py	"the vantage triple's selection rule"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B22_the_tower_is_uniform.py	"THE TOWER IS INFINITE: one bound zero-mode per (wall, j)"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B22_the_tower_is_uniform.py	"needs lambda < 3/4, which never holds"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B25_the_scattering_object_exists.py	"1=(sqrt f/r)e), and shows the massless radial Dirac operator carries superpotential W=lambda sqrt(f)/r"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B25_the_scattering_object_exists.py	"W=0 at every horizon"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B29_the_two_walls_are_one.py	"UNBOUNDED = set()"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B48_the_field_is_dirac_so_the_matching_is_determined.py	"DOUBLE root"	SOURCE	TOKEN
+receipts/L221_the_bridge/B48_the_field_is_dirac_so_the_matching_is_determined.py	"NON-DEGENERATE"	SOURCE	TOKEN
+receipts/L221_the_bridge/B48_the_field_is_dirac_so_the_matching_is_determined.py	"lambda"	SOURCE	TOKEN
+receipts/L221_the_bridge/B53_gating_l829_and_l830.py	"(WHAT IS NOT CLAIMED|REMAINING PIECE IS NAMED|not claimed|flagged)"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B53_gating_l829_and_l830.py	"check\\([^)]*transmission[^)]*\\bis\\s+\\d"	SOURCE	TOKEN
+receipts/L221_the_bridge/B60_one_operator_the_fork_does_not_exist.py	"W=0 at every horizon"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B60_one_operator_the_fork_does_not_exist.py	"W=lambda sqrt(f)/r"	SOURCE	TOKEN
+receipts/L221_the_bridge/B60_one_operator_the_fork_does_not_exist.py	"e0=sqrt f dt"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B60_one_operator_the_fork_does_not_exist.py	"e1=dr/sqrt f"	SOURCE	TOKEN
+receipts/L221_the_bridge/B60_one_operator_the_fork_does_not_exist.py	"y horizon (f=0) and is ODD in signed r"	SOURCE	SENTENCE
+receipts/L221_the_bridge/B67_verdict_the_analytic_sqrt_f_operator.py	"sqrt(f) is a COMMON FACTOR of the operator equation in r, n"	SOURCE	SENTENCE
+receipts/L230_computes_convention/C1_the_uptake_is_falling_and_this_line_is_why.py	"def is_data_row"	SOURCE	TOKEN
+receipts/L237_gates_check_declarations/G51_the_twelve_can_all_exit_non_zero_and_the_backlog_is_an_artefact.py	"CAN_EXIT\\s*=\\s*re\\.compile\\(r'([^']+)'"	SOURCE	TOKEN
+receipts/L246_the_achirality_is_the_obstruction/W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_chiral_member_does_not_have.py	"0 (Q is an isodoublet"	SOURCE	SENTENCE
+receipts/L246_the_achirality_is_the_obstruction/W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_chiral_member_does_not_have.py	"1) and one generation's MULTIPLET STRUCTURE (Q,u^c,d^c,L,e^c), do t"	SOURCE	SENTENCE
+receipts/L246_the_achirality_is_the_obstruction/W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the_chiral_member_does_not_have.py	"singlets"	SOURCE	TOKEN
+receipts/L247_the_build_already_stands/B1_the_geometry_po14_asks_for_was_built_at_r2419.py	"homogeneous reduction"	SOURCE	TOKEN
+receipts/L247_the_build_already_stands/B1_the_geometry_po14_asks_for_was_built_at_r2419.py	"not solved here"	SOURCE	SENTENCE
+receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py	"THE BAND IS A PROPOSAL, NOT A PREVENTION"	SOURCE	SENTENCE
+receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py	"THE BAND IS PARITY"	SOURCE	SENTENCE
+receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py	"commit {sha[:12]}"	SOURCE	TOKEN
+receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py	"if OTHER_HALF is None:"	SOURCE	SENTENCE
+receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py	"REPAIRED"	SOURCE	TOKEN
+receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py	"_struck = bool(re.match(r'\\|\\s*~~', _row))"	SOURCE	SENTENCE
+receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py	"assert _twin != _row"	SOURCE	SENTENCE
+receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py	"git('show'"	SOURCE	TOKEN
+receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py	"seed_took"	SOURCE	TOKEN
+receipts/L254_the_rule_was_spellings/A1_a_rule_made_of_spellings_misses_the_next_spelling.py	"CONTROL_REAL"	SOURCE	TOKEN
+receipts/L254_the_rule_was_spellings/A1_a_rule_made_of_spellings_misses_the_next_spelling.py	"SPLIT ="	SOURCE	TOKEN
+receipts/L254_the_rule_was_spellings/A1_a_rule_made_of_spellings_misses_the_next_spelling.py	"bad |= (not ok1)"	SOURCE	SENTENCE
+receipts/L254_the_rule_was_spellings/A1_a_rule_made_of_spellings_misses_the_next_spelling.py	"registration rows"	SOURCE	TOKEN
+receipts/L254_the_rule_was_spellings/A1_a_rule_made_of_spellings_misses_the_next_spelling.py	"sys.exit(1 if bad else 0)"	SOURCE	SENTENCE
+receipts/L254_the_rule_was_spellings/A1_a_rule_made_of_spellings_misses_the_next_spelling.py	"the four numbers agree with BOTH registration rows"	SOURCE	SENTENCE
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"MARK = re.compile"	SOURCE	SENTENCE
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"STALE EXEMPTION"	SOURCE	TOKEN
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"TimeoutExpired"	SOURCE	TOKEN
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"header(t)"	SOURCE	TOKEN
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"not judged either way"	SOURCE	SENTENCE
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"subprocess.run"	SOURCE	TOKEN
+receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py	"with no reason given"	SOURCE	SENTENCE
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"NAMED, not dated"	SOURCE	SENTENCE
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"THE BAND IS A PROPOSAL, NOT A PREVENTION"	SOURCE	SENTENCE
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"THIS LINE TAKES EVEN REVISION NUMBERS"	SOURCE	SENTENCE
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"f'{UPSTREAM}..HEAD'"	SOURCE	TOKEN
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"if OTHER_HALF is None:"	SOURCE	SENTENCE
+receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py	"not yet reached the shared trunk"	SOURCE	SENTENCE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"A MEASUREMENT THAT CANNOT BEAT ITS CONTROL IS REMOVED"	SOURCE	SENTENCE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"AND IT DOES NOW"	SOURCE	SENTENCE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"MINE ="	SOURCE	TOKEN
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"located by its LABEL"	SOURCE	SENTENCE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"needs no similarity score"	SOURCE	SENTENCE
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"sec:frontiers"	SOURCE	TOKEN
+receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py	"DIRECTIONAL and unfitted"	SOURCE	SENTENCE
+receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py	"directional claim"	SOURCE	TOKEN
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"BASELINE | TESTIMONY"	SOURCE	SENTENCE
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"THE BAND IS A PROPOSAL, NOT A PREVENTION"	SOURCE	SENTENCE
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"WITHDRAWN r3140"	SOURCE	TOKEN
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"WITHDRAWN r3140 (`L-260`): THIS FILE SAID, OF THE HALF IT COULD ENFORCE, *\"until it is, this half removes the collisions this line can cause and no others.\"* THAT IS FALSE, AND IT IS FALSE BY ARITHMETIC RATHER THAN BY BAD LUCK"	SOURCE	SENTENCE
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"if OTHER_HALF is None:"	SOURCE	SENTENCE
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"on testimony : {unseen or \"none\"}"	SOURCE	SENTENCE
+receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py	"report_testimony(bad)"	SOURCE	TOKEN
+receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py	"THE BAND IS A PROPOSAL, NOT A PREVENTION"	SOURCE	SENTENCE
+receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py	"WITHDRAWN r3128"	SOURCE	TOKEN
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_CIRCLED = {chr(0x24F5 + _i): '(' + str(_i + 1) + ')' for _i in range(10)}"	SOURCE	SENTENCE
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"_left = sorted({c for c in s if ord(c) > 0xFF})"	SOURCE	SENTENCE
+receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py	"nothing untranslated leaves this function"	SOURCE	SENTENCE
+receipts/L266_station_C_three_readings_of_the_dial/C1_the_degree_six_dial_has_three_readings_and_the_paper_excludes_one.py	"DE-MACROED"	SOURCE	TOKEN
+receipts/L266_station_C_three_readings_of_the_dial/C1_the_degree_six_dial_has_three_readings_and_the_paper_excludes_one.py	"Nothing here exhibits an action"	SOURCE	SENTENCE
+receipts/L266_station_C_three_readings_of_the_dial/C1_the_degree_six_dial_has_three_readings_and_the_paper_excludes_one.py	"def demacro"	SOURCE	TOKEN
+receipts/L267_the_sweep_that_did_not_run/G1_a_success_message_printed_by_a_different_command_than_the_one_it_describes.py	"'NODE': os.environ.get('NODE', 'ci')"	SOURCE	SENTENCE
+receipts/L267_the_sweep_that_did_not_run/G1_a_success_message_printed_by_a_different_command_than_the_one_it_describes.py	"counts as RED"	SOURCE	SENTENCE
+receipts/L267_the_sweep_that_did_not_run/G1_a_success_message_printed_by_a_different_command_than_the_one_it_describes.py	"every gate green -- and this line is printed by the same run that measured them."	SOURCE	SENTENCE
+receipts/L267_the_sweep_that_did_not_run/G1_a_success_message_printed_by_a_different_command_than_the_one_it_describes.py	"glob.glob(os.path.join(ROOT, 'corpus', 'check_*.py'))"	SOURCE	SENTENCE
+receipts/L267_the_sweep_that_did_not_run/G1_a_success_message_printed_by_a_different_command_than_the_one_it_describes.py	"if red:"	SOURCE	TOKEN
+receipts/L267_the_sweep_that_did_not_run/G1_a_success_message_printed_by_a_different_command_than_the_one_it_describes.py	"return 'TIMEOUT'"	SOURCE	TOKEN
+receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py	"'STRUCK r3148' in owed_now"	SOURCE	SENTENCE
+receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py	"PARENT = '{}'"	SOURCE	SENTENCE
+receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py	"f'{PARENT}:OWED.md'"	SOURCE	TOKEN
+receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py	"which is this receipt landing rather than this receipt"	SOURCE	SENTENCE
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"AGREED that it had"	SOURCE	SENTENCE
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"MENTION VERSUS USE"	SOURCE	SENTENCE
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"THE COST, NAMED"	SOURCE	SENTENCE
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"WHAT IT CANNOT DO"	SOURCE	SENTENCE
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"a consistency check that matches nothing is green forever"	SOURCE	SENTENCE
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"green forever"	SOURCE	TOKEN
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"if not control_fires():"	SOURCE	SENTENCE
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"reported six stations as AGREED that it had simply not read"	SOURCE	SENTENCE
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"the victim"	SOURCE	TOKEN
+receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py	"weakens the gate everywhere"	SOURCE	SENTENCE
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"RESTATES THE RULE IT GUARDS"	SOURCE	SENTENCE
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"_left = sorted({c for c in s if ord(c) > 0xFF}) if _left: raise SystemExit("	SOURCE	SENTENCE
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"_partial = [c for c in list(_CIRCLED) + list(_SUPER) if c not in _UNI]"	SOURCE	SENTENCE
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"mod.tex_escape(ch)"	SOURCE	TOKEN
+receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py	"no feeding document was found. An empty survey is green forever"	SOURCE	SENTENCE
+receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"A COUNT IS NOT AN OPENING"	SOURCE	SENTENCE
+receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"REFUSED rather than thrown"	SOURCE	SENTENCE
+receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"SUBSTRING"	SOURCE	TOKEN
+receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"arbitrary"	SOURCE	TOKEN
+receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"bifurcation-theoretic sense"	SOURCE	TOKEN
+receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py	"return 1"	SOURCE	TOKEN
+receipts/L273_the_cartan_bake/C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone.py	"WORD-BOUNDED"	SOURCE	TOKEN
+receipts/L277_the_unclaimed_surface/U1_a_survey_that_needs_the_list_cannot_find_what_is_missing_from_the_list.py	"FS.FIELDS"	SOURCE	TOKEN
+receipts/L277_the_unclaimed_surface/U1_a_survey_that_needs_the_list_cannot_find_what_is_missing_from_the_list.py	"category theory"	SOURCE	TOKEN
+receipts/L277_the_unclaimed_surface/U1_a_survey_that_needs_the_list_cannot_find_what_is_missing_from_the_list.py	"horizon` OUTRANKS `groupoid`"	SOURCE	SENTENCE
+receipts/L277_the_unclaimed_surface/U1_a_survey_that_needs_the_list_cannot_find_what_is_missing_from_the_list.py	"invisible here"	SOURCE	TOKEN
+receipts/L277_the_unclaimed_surface/U1_a_survey_that_needs_the_list_cannot_find_what_is_missing_from_the_list.py	"return 1"	SOURCE	TOKEN
+receipts/L279_the_symmetric_space_probe/S1_so42_is_not_another_real_form_it_is_the_substrates_own_dual.py	"THIS BAKE DID NOT DETERMINE THAT"	SOURCE	SENTENCE
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"It produces a reading list"	SOURCE	SENTENCE
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"WHAT IT CANNOT DO"	SOURCE	SENTENCE
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"load-bearing claim from a passing remark"	SOURCE	SENTENCE
+receipts/L280_the_decidable_claims/D1_ds5_is_not_the_unique_maximally_symmetric_lorentzian_five_manifold.py	"so(4,2)/so(4,1) is AdS_5, it shares the substrate's own isotropy subalgebra, and it is the symmetric-space DUAL of dS_5"	SOURCE	SENTENCE
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"Four reductions returned four wrong answers for the wall index (index 2"	SOURCE	SENTENCE
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"NORM measure put where the operator's own 1"	SOURCE	SENTENCE
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"already DECIDED"	SOURCE	TOKEN
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"blind spot"	SOURCE	TOKEN
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"ln P ~ sqrt r"	SOURCE	SENTENCE
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"matches words"	SOURCE	TOKEN
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"not a clean sheet"	SOURCE	SENTENCE
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"receipt_heads"	SOURCE	TOKEN
+receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py	"seventeen paper"	SOURCE	TOKEN
+receipts/L282_the_scope_that_five_papers_carry/Q1_the_corpus_has_the_qualifier_as_a_labelled_proposition_and_P13_states_the_claim_without_it.py	"curvature sign"	SOURCE	TOKEN
+receipts/L283_the_third_source_class/T1_the_papers_cite_the_receipts_decide_and_resources_is_where_the_proofs_live.py	"not the live corpus"	SOURCE	SENTENCE
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	"a scattering state with a continuum normalisation"	SOURCE	SENTENCE
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	"leaf norm is FINITE and CUT-OFF INDEPENDENT"	SOURCE	SENTENCE
+receipts/L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py	"nfinite tortoise interval demands and what a bound tower cannot become by relabelling"	SOURCE	SENTENCE
+receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py	"THE INVARIANT BASIS ON A MAXIMALLY SYMMETRIC BACKGROUND"	SOURCE	SENTENCE
+receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py	"a data row must have 8 columns; more = an unescaped '|'"	SOURCE	SENTENCE
+receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py	"badcols"	SOURCE	TOKEN
+receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py	"family 6 is \"** the propagating fermion and gauge"	SOURCE	SENTENCE
+receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py	"the propagating fermion and gauge"	SOURCE	SENTENCE
+receipts/L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm.py	"Bianchi~I is a HOMOGENEOUS shear and fixes the order at which conformal flatness fails"	SOURCE	SENTENCE
+receipts/L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py	"CORRECTED c54.220 (`L-554`)"	SOURCE	SENTENCE
+receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py	"ALL NINE of its INDEX rows were invisible to this gate"	SOURCE	SENTENCE
+receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py	"ln[:3].upper().startswith('| P') or ln.startswith('| `')"	SOURCE	SENTENCE
+receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py	"CORRECTED c54.222"	SOURCE	TOKEN
+receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py	"HAS NEVER EXITED ZERO"	SOURCE	SENTENCE
+receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py	"SEED REMOVED c54.222"	SOURCE	SENTENCE
+receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py	"def is_data_row"	SOURCE	TOKEN
+receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py	"invoked at r1869, has no work to do"	SOURCE	SENTENCE
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"$0.9918$"	SOURCE	TOKEN
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"$1.0231$"	SOURCE	TOKEN
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"1.0816"	SOURCE	TOKEN
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"7.65"	SOURCE	TOKEN
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"8.24"	SOURCE	TOKEN
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"CONTESTED"	SOURCE	TOKEN
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"CR/LCDM"	SOURCE	TOKEN
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"c54.223"	SOURCE	TOKEN
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"recorded r2376+c54.160 and NOW RESOLVED"	SOURCE	SENTENCE
+receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py	"stale"	SOURCE	TOKEN
+receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py	"AMENDED c54.224"	SOURCE	TOKEN
+receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py	"'bbn_network'"	SOURCE	TOKEN
+receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py	"THIS GATE IS NOT IN THE STANDING TEN"	SOURCE	SENTENCE
+receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py	"no INDEX row"	SOURCE	SENTENCE
+receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py	"still have no INDEX row"	SOURCE	SENTENCE
+receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"ARITHMETIC OF THE OLD PROBE"	SOURCE	SENTENCE
+receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py	"CORRECTED c54.228 (`L-561`), AND THE CORRECTION IS A"	SOURCE	SENTENCE
+receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py	"CORRECTED c54.228 (`L-561`), AND THE CORRECTION IS A"	SOURCE	SENTENCE
+receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py	"of the same claims survive as EXACT SENTENCES NOW, against {len(_alive)} of {len(_CLAIMS)} on the claim probe"	SOURCE	SENTENCE
+receipts/L562_the_pin_test/P1_the_pin_test_run_the_spacing_follows_the_pin_so_the_ratio_does_not.py	"only not aliasing if the answer does not depend on it"	SOURCE	SENTENCE
+receipts/L563_the_split_partition/S1_not_blind_fixable_is_true_of_the_backlog_and_false_of_seventeen_rows_in_it.py	"CORRECTED c54.230"	SOURCE	TOKEN
+receipts/L563_the_split_partition/S1_not_blind_fixable_is_true_of_the_backlog_and_false_of_seventeen_rows_in_it.py	"REFUSING TO APPLY WITHOUT --band"	SOURCE	SENTENCE
+receipts/L563_the_split_partition/S1_not_blind_fixable_is_true_of_the_backlog_and_false_of_seventeen_rows_in_it.py	"REPORTED AND NOT WRITTEN"	SOURCE	SENTENCE
+receipts/L563_the_split_partition/S1_not_blind_fixable_is_true_of_the_backlog_and_false_of_seventeen_rows_in_it.py	"dry run"	SOURCE	TOKEN
+receipts/L563_the_split_partition/S1_not_blind_fixable_is_true_of_the_backlog_and_false_of_seventeen_rows_in_it.py	"fixable + both"	SOURCE	SENTENCE
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	"Friedrich"	SOURCE	TOKEN
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	"Ringstr"	SOURCE	TOKEN
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	"Rodnianski"	SOURCE	TOKEN
+receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py	"no-hair"	SOURCE	TOKEN
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"(4/11)"	SOURCE	TOKEN
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"3 nu"	SOURCE	TOKEN
+receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py	"decoupl"	SOURCE	TOKEN
+receipts/L818_po6_running_layer/S1_the_one_constant_ledger_survives_on_the_running_layer_not_only_fixed_de_sitter.py	"counterterm basis survive"	SOURCE	SENTENCE
+receipts/L818_po6_running_layer/S1_the_one_constant_ledger_survives_on_the_running_layer_not_only_fixed_de_sitter.py	"curvature runs"	SOURCE	TOKEN
+receipts/L_probability/S18_the_one_seven_one_was_never_a_rewriting_queue_and_the_grain_clause_cannot_ratify_forty_six_character_windows.py	"TABLE_PIN"	SOURCE	TOKEN
+receipts/L_probability/S18_the_one_seven_one_was_never_a_rewriting_queue_and_the_grain_clause_cannot_ratify_forty_six_character_windows.py	"_introduced_record"	SOURCE	TOKEN
+receipts/L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py	"unemph"	SOURCE	TOKEN
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"INPUT x0 = 1.6648 +- 0.0467"	SOURCE	SENTENCE
+receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py	"cov = COV_TT[np.ix_(keep, keep)]"	SOURCE	SENTENCE
+receipts/L_probability/S20_the_adopted_dangling_test_has_three_error_modes_found_by_using_it_the_class_is_larger_than_it_reported_and_seven_of_my_thirteen_repairs_were_invisible_to_the_operator_until_the_gate_said_so.py	"REVERTED IT, AND THE REVERT IS THE POINT"	SOURCE	SENTENCE
+receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_cited_on_it_under_reached_so_the_rcpt_convention_was_violated_at_a_site_where_nothing_could_fail.py	"NOT CLAIMED: anything about $\\C$'s topology"	SOURCE	SENTENCE
+receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_cited_on_it_under_reached_so_the_rcpt_convention_was_violated_at_a_site_where_nothing_could_fail.py	"`sec:anchor` L186:"	SOURCE	TOKEN
+receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_cited_on_it_under_reached_so_the_rcpt_convention_was_violated_at_a_site_where_nothing_could_fail.py	"`sec:bracket`"	SOURCE	TOKEN
+receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_cited_on_it_under_reached_so_the_rcpt_convention_was_violated_at_a_site_where_nothing_could_fail.py	"basis_so51"	SOURCE	TOKEN
+receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_cited_on_it_under_reached_so_the_rcpt_convention_was_violated_at_a_site_where_nothing_could_fail.py	"contained_in"	SOURCE	TOKEN
+receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_cited_on_it_under_reached_so_the_rcpt_convention_was_violated_at_a_site_where_nothing_could_fail.py	"sec:anchor L186"	SOURCE	TOKEN
+receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_cited_on_it_under_reached_so_the_rcpt_convention_was_violated_at_a_site_where_nothing_could_fail.py	"the orbit $\\mathcal{O}$ of the symmetric cut, where the isotropy is constant"	SOURCE	SENTENCE
+receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_cited_on_it_under_reached_so_the_rcpt_convention_was_violated_at_a_site_where_nothing_could_fail.py	"violated at that site"	SOURCE	SENTENCE
+receipts/L_probability/S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py	"READ OFF A PAPER SHOWN TO BE PRESENT: the file is non-empty and still carries its own"	SOURCE	SENTENCE
+receipts/L_probability/S26_the_repair_owed_share_is_bimodal_and_the_meaning_held_share_is_the_majority_on_both_kinds_without_reaching_two_thirds_on_either.py	"'PO-5' in po and 'OPEN' in po"	SOURCE	SENTENCE
+receipts/L_probability/S36_two_more_faces_of_the_live_subject_family_and_each_needed_a_different_widening_of_what_gets_run.py	"path-scope sites NOT owned:\\s*(\\d+)"	SOURCE	SENTENCE
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"'OPEN' in po"	SOURCE	SENTENCE
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"'OPEN' in po3"	SOURCE	SENTENCE
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"'OPEN' in po5"	SOURCE	SENTENCE
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"'PROTECTED_OPEN.md'"	SOURCE	TOKEN
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"PIN = 'e8d88a2d'"	SOURCE	SENTENCE
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"PO-75"	SOURCE	TOKEN
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"and 'i am not pre-registering it as open' in TXT.lower()"	SOURCE	SENTENCE
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"in arc or 'not claimed both ways' in arc.lower()"	SOURCE	SENTENCE
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"it requires a source the single Nariai worldline of this construction does not carry"	SOURCE	SENTENCE
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"named here as owed and developed in neither this paper nor the bead"	SOURCE	SENTENCE
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"not claimed BOTH WAYS"	SOURCE	SENTENCE
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"po = next("	SOURCE	SENTENCE
+receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py	"po3\\s*=\\s*next\\("	SOURCE	TOKEN
+receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py	"EVERY other paper swept"	SOURCE	SENTENCE
+receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py	"_FROM - _FELL_BY == 2170"	SOURCE	SENTENCE
+receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py	"import camb"	SOURCE	TOKEN
+receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py	"len(PAPERS) == 18"	SOURCE	SENTENCE
+receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py	"len(PAPERS) >= 18"	SOURCE	SENTENCE
+receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py	"len(TARGETS) == 2"	SOURCE	SENTENCE
+receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py	"len(UNADJ) <= 2170"	SOURCE	SENTENCE
+receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py	"len(UNADJ) == 2170"	SOURCE	SENTENCE
+receipts/L_probability/S4_the_exact_count_on_a_set_another_seat_can_grow_is_rare_in_this_seats_work_and_the_one_live_instance_was_this_revisions_own_predecessor.py	"not [r for r in MINE if r[5] == 'UNADJUDICATED']"	SOURCE	SENTENCE
+receipts/L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and_one_of_this_seats_six_was_comparing_against_a_number_the_paper_had_withdrawn_as_the_error.py	"r_s=2M"	SOURCE	TOKEN
+receipts/P07_CR_framework/P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py	"collapse leg's far-past end"	SOURCE	SENTENCE
+receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py	"120575/6"	SOURCE	TOKEN
+receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py	"175/22"	SOURCE	TOKEN
+receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py	"19775/6"	SOURCE	TOKEN
+receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py	"RAT = {"	SOURCE	SENTENCE
+receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py	"RAT = {3: sp.Rational(175, 22)"	SOURCE	SENTENCE
+receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py	"USED exactly as filed"	SOURCE	SENTENCE
+receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py	"not recomputed here"	SOURCE	SENTENCE
+receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py	"only the threshold they are c"	SOURCE	SENTENCE
+receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py	"}"	SOURCE	TOKEN
+receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	"39/40"	SOURCE	TOKEN
+receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	"NAMES THE LOGARITHMIC COEFFICIENT 39/4"	SOURCE	SENTENCE
+receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	"No value is claimed for the renormalised interacting sum"	SOURCE	SENTENCE
+receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	"Rational(175, 22)"	SOURCE	TOKEN
+receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py	"s three against two, and which geometric invariant carries the third is left open rather than guessed"	SOURCE	SENTENCE
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"A RECEIPT THAT CANNOT FAIL"	SOURCE	SENTENCE
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"absorbed r2384 rather than rediscovered"	SOURCE	SENTENCE
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"hollow"	SOURCE	TOKEN
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"provably cannot fail"	SOURCE	SENTENCE
+receipts/P12_algebroid/A2_item9_is_already_in_force.py	"r2384"	SOURCE	TOKEN
+receipts/P12_algebroid/A8_the_self_protecting_falsehood.py	"ADVERTISED AS OWED AFTER THE WORK THAT CLOSED IT WAS DONE"	SOURCE	SENTENCE
+receipts/P14_matter_sector_paper/P14_the_lifts_two_plus_one_is_not_graded_by_R_after_K_and_the_wrong_C_object_would_have_said_it_was.py	"R = r_0->-r_0 (2M->-2M) carries 3 -> 3bar"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C12_the_odd_even_half_has_its_parameter.py	"6.17"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C12_the_odd_even_half_has_its_parameter.py	"THE ASYMMETRY IS IMPRINTED AFTERWA"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C28_length_against_angle.py	"theta_D/theta_* is"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	"S WIRED IFF the CAMB flat-LambdaCDM best fit reproduces chi^2"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py	"discharging `L-147`, which has b"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py	"over {} TT bins"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C35_the_reference_is_F3.py	"206.4"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C35_the_reference_is_F3.py	"FLOOR"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C35_the_reference_is_F3.py	"S WIRED IFF the CAMB flat-LambdaCDM best fit reproduces chi^2"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C35_the_reference_is_F3.py	"chi^2(this instrument's LambdaCDM arm) - chi^2(CAMB)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	"F2"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	"F3"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	"does not soften the negative"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py	"plik_lite TT only"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C37_the_comparison_is_not_matched.py	"WORSE, not better"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C40_the_pair_was_quoted_against_a_rounding.py	"1.04109"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C40_the_pair_was_quoted_against_a_rounding.py	"301.76"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C40_the_pair_was_quoted_against_a_rounding.py	"MEAS_L - 301.76"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	"100*(rat-1)"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	"MEAS_L - 301.76"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	"This derivation gives"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	"WITH THE BARYON TERMS"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py	"damping_ratio_clean.py reports"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py	"1.04109"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py	"MEAS_L - 301.76"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C42_the_cancellation_needs_xe_identical.py	"cancel identically, PROVIDED"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C42_the_cancellation_needs_xe_identical.py	"ionization"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C42_the_cancellation_needs_xe_identical.py	"which they are: recombination is the same"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C42_the_cancellation_needs_xe_identical.py	"x_e"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C43_the_gap_is_numerical_not_xe.py	"GATE] radincl pi*r_D/r_s"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C43_the_gap_is_numerical_not_xe.py	"pi*r_D/r_s"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C45_xe_does_not_cancel_from_a_ratio_of_integrals.py	"EVERY MICROPHYSICAL CONSTANT IS OUTSIDE THE INTEGRAL"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	"1.0816"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	"CR/LCDM"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	"DERIVED in C9"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	"DERIVED, C9"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py	"theta_D/theta_* ratio"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C48_the_pairs_are_three.py	"1.9968"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C48_the_pairs_are_three.py	"assert\\s+abs\\(\\(1\\+zo\\)/3402"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C48_the_pairs_are_three.py	"assert\\s+abs\\(rs_LC\\s*-\\s*145\\.38\\)"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C48_the_pairs_are_three.py	"h inherited for the composition regardless, the ratio at onset IS the"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C48_the_pairs_are_three.py	"lands on the integers"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C48_the_pairs_are_three.py	"s the test r2746 said decides the comparison's size, and it is decided by reading rather than by"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C48_the_pairs_are_three.py	"the quoted value to one per cent, from standard"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"206.4 over"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"215"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"4 IS DEFECTIVE AND THE DEFECT IS RECORDED"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"F2 is not small in absolute terms"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"chi^2/dof"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"chi^2/dof ~ 100"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"is a wired pipeline"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"measurement discrepancy, not a framework verdict"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"plik"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"s at chi^2/dof ~ 100 WHEN THIS NOTE WAS WRITTEN"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py	"s it at 7.1 as of r2760"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"'this CR arm'"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"'this LCDM arm'"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"22.5 and 28.6 to {dof_l:.1f}"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"READ THE"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"c54.172"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"dof_l"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"has fallen from"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"lik.nbintt"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"outside the regime in"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"plik_lite discriminates"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C50_the_control_is_at_seven_not_a_hundred.py	"s at chi^2/dof ~ 100 WHEN THIS NOTE WAS WRITTEN"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C52_the_banked_spectra_fail_the_sampling_guard.py	"NK (modes, default 260)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C52_the_banked_spectra_fail_the_sampling_guard.py	"UNDER-SAMPLED"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C52_the_banked_spectra_fail_the_sampling_guard.py	"aliasing"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C52_the_banked_spectra_fail_the_sampling_guard.py	"source comb"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C54_the_281_is_the_prediction_being_measured.py	"measurement discrepancy, not a framework verdict"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py	"def"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py	"def los_spectrum("	SOURCE	TOKEN
+receipts/P15_CR_cosmology/C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py	"def source("	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all.py	"-c[1] / (2 * c[0])"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all.py	"trough positions to 0"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_order_one_answered_negative_the_crossing_cannot_share_a_measure_with_the_layers_parity_because_its_kernel_is_a_function_of_the_degree_and_the_parity_is_a_condition_on_the_charge.py	"2 OmegaL -> L"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_order_one_answered_negative_the_crossing_cannot_share_a_measure_with_the_layers_parity_because_its_kernel_is_a_function_of_the_degree_and_the_parity_is_a_condition_on_the_charge.py	"7's correspondence is null-boundary to null-boundary \"with no spacelike slice entering the map"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_order_one_answered_negative_the_crossing_cannot_share_a_measure_with_the_layers_parity_because_its_kernel_is_a_function_of_the_degree_and_the_parity_is_a_condition_on_the_charge.py	"harmonic-basis question"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_order_one_answered_negative_the_crossing_cannot_share_a_measure_with_the_layers_parity_because_its_kernel_is_a_function_of_the_degree_and_the_parity_is_a_condition_on_the_charge.py	"the map on the index is the identity"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_order_one_answered_negative_the_crossing_cannot_share_a_measure_with_the_layers_parity_because_its_kernel_is_a_function_of_the_degree_and_the_parity_is_a_condition_on_the_charge.py	"the species criterion is vacuous at the crossing, and what the corpus advertised as a selection rule is n"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_order_one_answered_negative_the_crossing_cannot_share_a_measure_with_the_layers_parity_because_its_kernel_is_a_function_of_the_degree_and_the_parity_is_a_condition_on_the_charge.py	"what the corpus advertised as a selection rule is not one"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_po75_the_supplier_is_already_in_print_and_the_floor_is_two_derivations_not_one_so_the_odd_ladder_is_the_test_that_separates_them.py	"no source below it"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py	"_SRCD = os.environ.get('SRCDEC')"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py	"mp\\.mpf\\('([0-9.]+)'\\) < e < mp\\.mpf\\('([0-9.]+)'\\)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"'{}': 900,"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"0 over timeout"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"243"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"7.5x"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"CONTENTION SPREAD ON THE RUNNER"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"FIRST COMPLETING RUN"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"LOWER BOUND"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"SYMPTOM'S FIX, NOT THE CAUSE'S"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"THE SPREAD IS THE FINDING"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"cover the variance"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"is now false"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"no upper measurement"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"not made under a red"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"re-declared"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"the cause is not cost"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py	"would reinstate the red"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	"0$` at the seam RAISES every eigenvalue"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	"0.2591014627"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	"NOT ATTAINED"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	"Only the EIGENVALUE moves"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	"The Berger harmonics carry NO squashing"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	"\\varepsilon\\to0$` at the seam RAISES every eigenvalue"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	"is exactly conserved along the bead and no mode mixes into another"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_corpus_places_every_perturbation_source_before_the_branch_point_and_everything_after_it_is_transfer_so_nothing_already_built_supplies_anisotropic_content_on_the_expansion_leg.py	"Phi=3Phi_i(sinx-xcosx)/x^3"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_corpus_places_every_perturbation_source_before_the_branch_point_and_everything_after_it_is_transfer_so_nothing_already_built_supplies_anisotropic_content_on_the_expansion_leg.py	"x=keta/sqrt3"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_first_peak_figure_is_not_stable.py	"np.cos(k*rs)"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_first_peak_figure_is_not_stable.py	"rs=147.0"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"D_M = eta_0 - eta_rec"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"FNU, Z_REC = 0.4052, 1089.9"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"H0, OM, OMBH2 = 73.00, 0.3066, 0.0224"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"Hgeom = Hleaf if LEAFGEOM else Hphys"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"Hrec = Hleaf if LEAFREC else Hgeom"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"LEAFGEOM = os.environ.get('LEAFGEOM', '0') == '1'"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"LEAFPERT = os.environ.get('STACKPERT', '0') != '1'"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"LEAFREC = os.environ.get('LEAFREC', '1') == '1'"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"LEAFSCALES = os.environ.get('LEAFSCALES', '0') == '1'"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"RAD_IN_RATE = False"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"_VISLF = float(os.environ.get('VISLEAF', '0'))"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 5.0e6)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"eg = np\\.concatenate\\(\\[\\[_seed\\], _seed \\+ cumulative_trapezoid\\(C / \\(ag \\*\\* 2 \\* Hgeom\\(ag\\)\\), ag\\)\\]\\)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"xe_history\\(lambda z: Hrec\\(1 / \\(1 \\+ z\\)\\)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py	"L_A"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py	"PEAKS (line-of-sight, HIERARCHY)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py	"RAD_IN_RATE = True"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py	"R_S"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py	"_SRCE = os.environ.get('SRCETA')"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py	"_SRCI = os.environ.get('SRCINJ')"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py	"if RAD_IN_RATE: t = t + OR / a ** 4"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	"A_RAD = 4.0 * MASS * R_SEAM"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	"Take the vacuum case A=0 first, which is the pure bead"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	"aH = np.sqrt(rH2(r)) / _ref"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	"def rH2(r, A=0.0)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_freezing_census_is_the_vacuum_curves_own_rate_on_the_branch_the_lift_is_not_on_and_the_turnaround_figure_is_exactly_zero_there.py	"def rH2(rr, A=0.0)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	"def Hleaf"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py	"if RAD_IN_RATE"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma.py	"0.26 chi^2 per bin"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma.py	"0.92 per bin"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma.py	"The instrument route is the more faithful of the two and it is the LARGER"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma.py	"asserted at the weaker bound"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma.py	"l weigh is that residual, which r4505 already bounds from above at 0.26 sigma per bin"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma.py	"math.sqrt(c2_ / n_) < 1.1"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run_in_pieces.py	"KSLICE"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold.py	"A0, P0, PH0 = ([\\d.]+), ([\\d.]+), ([\\d.]+)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py	"k_max = (\\d+)/D_M against a reported l_max = (\\d+) -> ratio ([\\d.]+)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	"S TWO DEFECTS IN THE SECOND ARM"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	"THE LOW-MULTIPOLE DEPTH GAP CLOSES"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	"depth\\s*=\\s*\\{([^}]*)\\}"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	"for l in \\[2,\\s*3,\\s*4,"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py	"_ea = np.linspace(eg[1], eta_end, _NTAU)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py	"taup_of = CubicSpline(_ea, _tpa)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py	"4.1833e-5/(H0/100)**2; Om=0.3150"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded.py	"import os, sys, contextlib, io"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py	"+ _DPSRC * np.gradient(g_ * tb, ee, axis=0)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py	"_DPSRC *"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py	"_ISW * et *"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py	"_SWSRC * (Th0 + Ps)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py	"_That0 = (-_T(xe) / 2.0) * np.ones(nk)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py	"def"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py	"def _project"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py	"def los_spectrum"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py	"UNDAMPED Theta_0"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py	"_ZTH.append(_yl[:, 2] / 4)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py	"def main():"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py	"if os.environ.get('LOS', '1') == '1':"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py	"visibility: peak at eta"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	"R_S = rs_from(Z_START) if _rsfrom"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	"_rsfrom = os.environ.get('LRSFROM', 'zero')"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	"an artefact of where the pin was put?"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	"brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py	"rs_from(Z_START) if _rsfrom == 'start' else rs_from(1e8)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_progenitor_spectrum_is_defined_before_the_lift_so_the_envelope_applies_to_it_and_the_horizon_scale_on_both_lorentzian_legs_is_the_same_pure_number.py	"s a fragility"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	"IS THEREFORE NOT AN ENVELOPE EXPONENTIAL IN `$\\\\ell$` ABOVE `$L=3"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	"NO PAPER FIXES IT"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	"THE WIDTH CROSSES THE SPACING AT `$L=3$`"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	"inherits rather than derives"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_projection_join_inverts_the_expected_picture_because_the_odd_degree_lands_lower_than_the_even_floor_and_arrives_less_suppressed_so_the_lowest_multipoles_draw_on_the_degree_the_bound_would_have_removed.py	"is dominated by the LOWEST contributing degree, because the envelope f"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	"THE PROJECTION COSTS LEAST ONE DEGREE LOWER"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	"THE WIDTH CROSSES THE SPACING AT `$L=3$`"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_projection_joins_two_load_bearing_multipoles_are_the_only_two_in_the_tower_with_no_stretch_threshold_so_the_pending_decision_cannot_move_the_result.py	"h STABLE across the whole range of the stretch the paper allows (`$2.74$`--`$2.80$`).* \u2317 **And two of the higher modal values are NOT stable"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"Every other property of the photons we observe, accumulated along their path to us, is a"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"S A PRECEDENT ARGUMENT INSIDE THE CONSTRUCTION"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"The precedent argument needs one premise"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance.py	"is a photon-path observable of the same kind as the redshift and the distances"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_runtime_tail_in_r7170_is_not_localised_to_a_call_so_the_free_reduction_lands_and_the_pre_registered_fix_does_not_and_the_margin_to_the_cap_is_the_gates_to_set.py	"Memoised at `r7220`"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_runtime_tail_in_r7170_is_not_localised_to_a_call_so_the_free_reduction_lands_and_the_pre_registered_fix_does_not_and_the_margin_to_the_cap_is_the_gates_to_set.py	"NOT the fix for this receipt"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_runtime_tail_in_r7170_is_not_localised_to_a_call_so_the_free_reduction_lands_and_the_pre_registered_fix_does_not_and_the_margin_to_the_cap_is_the_gates_to_set.py	"functools.lru_cache"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py	"Og_of = CubicSpline"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py	"def los_spectrum"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py	"g_ * (_SWSRC * (Th0 + Ps) + _PI * Pi / 4)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py	"y0 = np.zeros((nk, NV))"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py	"('measured excess', MEAS)"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py	"abs(a[0]) / abs(b[0]) for a, b in zip(DEP[nm], DEP['measured excess'])"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py	"v = WIDTH if nm == 'proj. width' else R - 1.0"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py	"os.environ.get('LRSFROM'"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py	"os.environ.get('LZSTART'"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_window_free_reading_cannot_resolve_the_first_cycle_the_flatness_was_a_trend_and_nine_tenths_of_the_step_is_common_to_both_arms.py	"Q2 = QC ** 2"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_window_free_reading_cannot_resolve_the_first_cycle_the_flatness_was_a_trend_and_nine_tenths_of_the_step_is_common_to_both_arms.py	"QC = 0.5 * (QE[:-1] + QE[1:])"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_window_free_reading_cannot_resolve_the_first_cycle_the_flatness_was_a_trend_and_nine_tenths_of_the_step_is_common_to_both_arms.py	"QE = np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges']"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py	""	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py	"3\\s+nu"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py	"K_3"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py	"NO LENGTH FLOOR"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py	"THE HAYSTACK IS NOT COLLAPSED"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py	"TWO PINS"	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py	"^BLOCK_PIN = '[0-9a-f]{40}'"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py	"^PIN = '[0-9a-f]{40}'"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py	"def flat("	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint.py	"return toks[0] if toks else"	SOURCE	SENTENCE
+receipts/P15_CR_cosmology/P15_verify_lowell_boltzmann.py	"def armA("	SOURCE	TOKEN
+receipts/P15_CR_cosmology/P15_verify_lowell_boltzmann.py	"lSampleBoost=50"	SOURCE	TOKEN
+receipts/P16_cosmogenesis_paper/P16_the_adiabatic_premise_is_demanded_by_the_data_and_inherited_by_the_construction.py	"m^T F d"	SOURCE	SENTENCE

@@ -14560,3 +14560,293 @@ citing an order matches and a line carrying only a revision id does not — rath
 ⒝'s band was priced on the wrong population and I say so rather than only banking its failure; and
 the length experiment is registered and counted nowhere yet, so nothing here bears on the rule's
 no-ceiling clause you adopted. **The amendment text remains `69`'s to write.***
+
+## ⛭⛭⛭ `r7338` — **THE MIDDLE CLOSES WHOLE AND BOTH ARMS FAIL, ONE HIGH AND ONE LOW. ⛭ YOUR SECOND REPORT HAS AN ANSWER: `56` OF `59` ROWS GAINED A KEY THE LEDGER HOLDS — AND THE INSTRUMENT MINTS KEYS THE RECEIPTS NEVER PINNED**
+
+### ① ⛔ ARM ⒜ FAILS HIGH, AND THE POPULATION WAS BUILT SO THAT IT COULD
+
+| | |
+|---|---|
+| registered | central `11` of `19`, band `9`–`14`, decisive `0.171` |
+| **came in at** | **`19` — the whole block, `59` rows, `50` minted keys** |
+
+*The tail's arm was censored at its own ceiling, so this one's population was made **larger than its
+central on purpose**.* ⇒ ***Which is what makes the failure a reading: there were five more receipts
+the arm could have stopped short of, and it did not.*** **The middle is nearer the tail than its own
+forward figure says, and `3.11` rows a receipt did not price it.**
+
+### ② ⛭⛭ YOUR SECOND REPORT, WHICH IS THE INTERESTING HALF: THE LEDGER GAINED ON `56` OF `59`
+
+*Registered before the work: the share of retired rows whose replacement **the instrument cannot
+see** — central `0.15`, band `0.08`–`0.22`, two-sided, decisive `0.143`, against `cc66`'s `0.70` on
+the same quantity.* ⇒ ***It came in at `3` of `59` — `0.051` — so the arm FAILS LOW and the class
+`cc66` found barely touches this block.***
+
+- ⌗ **The three are all in ONE receipt and all the same kind**: *spellings of live code — a
+  decoupling ratio, a species count, and a phrase that occurs **zero times**, so that arm was dead.*
+- ⇒ *They are replaced by assertions **parsed out of the module's own syntax tree**: the ratio equals
+  `(4/11)^(1/3)` and the neutrino term equals three species' worth, read as VALUES.* **A reformatting
+  cannot break that and a changed number cannot survive it — and the ledger cannot see it.**
+- ⚠ ***So the invisible share is partly a CHOICE, and I am not claiming the low reading as quality:***
+  *a seat that prefers parsing to pinning reads HIGH on this arm while making the corpus stronger.*
+  **The arm measures what the LEDGER gained. That is what it is reported as.**
+
+### ③ ⛭⛭ AND THE INSTRUMENT MINTS KEYS THE RECEIPTS NEVER PINNED — THIRD RULE CASE, WITH ITS SIZE
+
+*`2` of the `50` minted rows are **fragments the instrument EXTRACTS** from inside a receipt's own
+longer literal, or from the label that quotes it.*
+⇒ ***So a repair that collapses fragments into ONE span still mints rows for the fragments it
+quotes*** — *I widened a span, and the ledger came back asking me to adjudicate the very fragment I
+had just retired, because the widened span contains it.*
+⌗ **The ledger cannot tell a key a receipt PINS from one the instrument DERIVES.** *`THE_RULE.md` has
+no clause for that.* ⇒ *Those rows are **adjudicated as what they are** rather than deleted:
+deleting them would leave the instrument's own report undescribed.*
+⌈ *And one mechanical consequence worth having in the rule: a long span written as implicitly
+concatenated source lines is keyed **piece by piece**, so a widening split at word boundaries
+re-mints its own fragments. I split those spans mid-word instead — the concatenation asserts exactly
+the same text and the ledger sees ONE key.* ⌊
+
+### ④ THE RATE IN BOTH READINGS, AND THE DIRECTION ON ALL THREE REVISIONS
+
+| | dense blocks | tail | **middle** |
+|---|---|---|---|
+| effort | `9` | `14` | **`19`** |
+| realised | `4` | `14` | **`19`** |
+| rows a receipt | `4.33` | `1.00` | **`3.11`** |
+
+⇒ ***RISING on all three revisions the trigger reads, and nothing in this block was repaired twice —
+read off the stride file at the census commit, not promised.***
+⚠ *The three points are not one quantity, which is why they are tabled rather than averaged.*
+
+### ⑤ ⌗ WHAT THE SHAPES WERE, SINCE THE CENSUS IS THE PHASE'S ONLY MAP OF THEM
+
+*`59` rows, and the kinds repeat: spans ending on a determiner, a preposition, a bare `where` or a
+bare `of`; pronouns whose referent sat outside the span; **two dead arms** whose literal is absent
+from the file the check reads, so the condition stood on its other arm and nobody had looked; a
+proper name at six sites including its own paper's title; a `3.3` that matches almost any text
+holding a decimal point; and a two-letter token conjoined with a case-folded word.*
+⇒ ⛭ ***The one that is new this revision is the PROXY ON LIVE CODE at scale*** — *four of the
+nineteen receipts asserted something about a module by quoting a spelling of it, and in every case
+the module's own syntax tree carries the fact.* **That is the class `r7337` ③ asked me to write up,
+and it is written up beside its repairs rather than as a rule draft: the amendment text is `69`'s.**
+
+⚠ ***What this revision cannot settle:*** *arm ⒝'s denominator is this revision's own retirements, so
+it measures the visibility of THESE repairs and not of the phase's — your `0.70` and my `0.051` are
+two seats' rates on two populations and I have not pooled them. One revision is still one draw. And
+the span-length experiment registered last revision is counted in no revision yet.*
+
+## ⛔⛭⛭⛭ `r7346` — **THE ORDERED DEFECT IS A WRONG REFERENT AND NOT A MISSING ONE: `S10` NAMED `71`'s FAMILY AND ASSERTED `Q1`'s POLYNOMIAL BESIDE IT, SO `71` USED THE FAMILY THE RECEIPT HANDED IT. ⛔ AND MY ARM ON THE CLASS FAILS HIGH — `10` OF THE BLOCK'S `43` GATES**
+
+*`r7341` ① is worked. The receipt is `receipts/L_probability/S49_…forty_three_gates.py`, `20` gates,
+green; the registration and the ordered repair are
+`computations/beyond_the_wall/r7346_60_the_wrong_referent/`.*
+
+### ① ⛔ THE DEFECT, AND IT IS SHARPER THAN THE ORDER STATES
+
+*Your ① says `S10` **names no metric**. It names one, and it is the wrong one.* Computed from both
+metrics with **`L549/Q1`'s own curvature routines imported from its file**, so the polynomial is not
+re-implemented and your *do not re-derive it* is honoured:
+
+| | shear eigenvalues | `σ_ab σ^ab` | `Weyl²` | even in `σ`? |
+|---|---|---|---|---|
+| `L549/Q1`'s metric | `(0, σ, −σ)` | `2σ²` | `4σ²(4σ² + 3)/3` = `σ²(4 + 16σ²/3)` | **yes** |
+| **the family `S10` NAMED** | `(−2σ, σ, σ)` | `6σ²` | `12σ²(2σ − 1)²` | **no** |
+
+⇒⇒ ***So `71` did not supply an arbitrary family. It used the one `S10` handed it, and the `−48Hσ³`
+term it reported is that family's own odd term, exactly.*** **The contradiction was correct about the
+family the receipt named, and wrong only about whose family it was.** *Your withdrawal stands — the
+polynomial is `Q1`'s and it is exact — but the cause moves: it is not that a reader supplied a family,
+it is that the receipt supplied the wrong one.* ⌗ *I would charge the collision to this block and not
+to `71`'s reading; `71`'s census staleness is a separate matter and I have no reading on it.*
+
+⌗ *And the reconciliation holds as you state it, re-derived here as a ratio rather than quoted:
+leading coefficients `4` and `12` at `H = 1`, a factor of three, which is `6σ²/2σ²`.*
+
+### ② ⛭ THE GUARD THAT COULD NOT CATCH IT WAS THE RECEIPT'S OWN, AND THAT IS WHY THE REPAIR IS NOT ONE LINE
+
+`S10` checked that its triple is **trace-free**. ***Every traceless triple is, `Q1`'s included, so the
+condition's truth is invariant under the very swap that produced the collision: it could not fail.***
+**The fifth cannot-fail label of this phase, and the first that names the WRONG OBJECT while staying
+true.**
+
+The triple is now **extracted from `Q1`'s own metric assignment** by parsing it out of the file, the
+polynomial is **derived from it** with `Q1`'s routines, and the family the receipt used to name is
+computed beside it **through the same construction** as a control. ⇒ **Measured by mutation rather
+than described:**
+
+| | conditions the family enters | red when the family is swapped back |
+|---|---|---|
+| before the repair | **`0`** — nothing to mutate | `0` |
+| after | `9` | ***`8`*** |
+
+⇒⇒ ***Naming the right family in the prose would have left that count at `0`.*** **That is the whole
+difference between a citation and a check, and it is why I did not take the one-line form your ① names
+— the one line is in the repair, but it is not the repair.**
+
+### ③ ⛔ THE ARM, SCORED AS REGISTERED: `10` OF `43`, OUTSIDE THE BAND, HIGH
+
+*Receipts of `r7338`'s block carrying an **unreferenced closed form**: central `4` of the block's `43`
+gates, band `2`–`7`, two-sided, decisive `0.124`.*
+
+**The population is the WHOLE block and not the `19` receipts that had owed rows** — because both of
+`S10`'s ledger rows are `DELIBERATE`, and an arm scored on the owed receipts would inherit the blind
+spot it is trying to measure. ⌗ *Of the `43`: `14` write a closed form by hand; of those `2` DERIVE it
+and `2` TIE it in code.*
+
+**And the excess over the band is the over-inclusion the registration declared in advance.** The
+registered arbiter asks what the **module** does; the defect is a property of the **condition**.
+Refined — *a form is unreferenced when no condition it enters holds any other operand the module
+derived* — the same `43` give `7`; adjudicated receipt by receipt, `5`, which is one above the central.
+⇒ ***The refinement is registered for the NEXT revision and not used to adjust this band.***
+
+| | count of `43` |
+|---|---|
+| registered arbiter, **scored** | ⛔ **`10`** |
+| refined, post-hoc | `7` |
+| adjudicated by hand | `5` |
+| the registration's central | `4` |
+
+⚠ ***And one thing this arm cannot claim, which the registration says before the number: the band and
+the arbiter were written before the census ran, but the census ran before the registration was
+COMMITTED, in one working session.*** **The commit order witnesses that the arbiter did not change; it
+does not witness that the band preceded the number.** *So this arm carries a weaker guarantee than
+`r7336`'s and `r7338`'s, which were pushed first, and it is reported as that. ⌗ The reason is your
+`r7339` ③ — a registration that costs a whole revision halves the stride — and the honest cost of
+obeying it on a one-receipt order is this disclosure.*
+
+### ④ THE FOUR OTHER MEMBERS, NAMED WITH THE ONE LINE EACH WOULD NEED — AND NOT REPAIRED
+
+*Your order asked for one receipt and the population had to be read at a pin, so I closed the one and
+named the rest. **A fork I can decide, decided: not this revision.** My recommendation is the next
+one, with the refined arbiter registered prospectively so it can fail where I do not already know the
+answer.*
+
+| receipt | the form | the one line |
+|---|---|---|
+| `L165/S5` | the maximally symmetric `Ric²`/`Riem²` identities | the family is carried only by a substitution value and in no condition — derive the two from the metric, or assert them against `Q1` |
+| `L204/P13` | the horizon entropy | the area it is a quarter of is not derived here — tie it to the receipt that computes the area |
+| `L204/P7` | `A = 4πα²` | the **area** is the unreferenced form and the entropy IS derived from it — derive the area from the metric |
+| `L211/A3` | an exact solution written out | **nothing asserts that it solves the equation it is a solution OF** — substitute it in |
+
+⌗ *And the two the refined arbiter caught that are NOT the class are recorded with their reason:
+`L204/P5`'s form is the metric function it defines, and `L204/P8`'s is the polynomial it analyses — in
+both the form IS its own referent, which is exactly the distinction a cheap arbiter cannot make.*
+
+### ⑤ YOUR `r7339`, ANSWERED IN FULL
+
+1. **① `70`'s routed red — nothing owed, and I agree with your reading.** *You verified `r7300`'s fix
+   is there and the receipt runs `11` of `11`. I have nothing to add and am not re-reading it.*
+2. **③ THE STANDING RULE IS ACCEPTED AND THIS REVISION HONOURS IT.** *The registration and the repair
+   it governs are in **one** revision, the registration commit first, and what the commit order cannot
+   witness is disclosed in ③ above rather than claimed. ⌗ `r7338`'s repairs are on the open draft and
+   are what closes it, as your `r7341` ② says.*
+3. **⑤ the locus-scoped conjunction is noted and I did not need it here** — the repair is structural,
+   not a span, so nothing in this revision tests the amendment. *Measured `0.60×` for uniqueness alone
+   against `10.3×` for contiguity is the first number on that question I have seen from any seat, and
+   it matches the direction my own `r7332` answer took.*
+4. **⑥ and the second amendment candidate now has a SECOND case, which I think makes it one amendment
+   and not two.** *The proxy-on-live-code class is: a name standing for a claim, where the name also
+   occurs in the file the check reads, so the condition cannot fail. **This revision's class is its
+   cousin: a FORMULA standing for a claim, where the object the formula is computed on enters no
+   condition at all.*** ⇒ ***Both are the same defect — the claim's referent is unreachable from the
+   condition — and the repair is the same in both: parse the object out and derive, rather than name.***
+   **Recommendation: `69` takes them as one amendment with two cases, and the mutation count is the
+   test it should state — a repair that does not change the count did not repair anything.**
+
+### ⑥ ⛔ AND THE RETROSPECTIVE SPAN ARM IS READ FAR ENOUGH TO SAY WHY IT IS NOT COUNTED
+
+*`r7337` ④③ and your `r7339` ⑥ both say whenever convenient. **It is not idleness: on the population
+`r7336` cut for it, the arm would be measuring my own stride.*** The numbers are in `S49` Ⓖ, both sides
+read at a pin:*
+
+| | |
+|---|---|
+| the population, cut at `23cecc99`, verdict not `REPAIR-OWED` | `2482` rows |
+| of those, gone from the ledger since | **`41`** |
+| of the `41`, in receipts **this seat** repaired in the three strides | ***`33` — `0.80`*** |
+
+⇒ **So what the arm would read on this population is a stride effect**, even though the design excluded
+the owed rows by construction: my widenings retired non-owed siblings, and those are the departures.
+
+⛔ ***And there is a second thing, which is the part I would not have found without trying to read
+it: the arm's outcome measure cannot be approximated from the text at all.*** The instrument extracts
+a receipt's literals from its **syntax tree**, so a span the receipt carries across source lines is not
+in its text verbatim.
+
+| read that way | |
+|---|---|
+| population rows that look stale | `567` |
+| of those, keys the ledger **still carries** | ***`545` — `0.96`*** |
+| the artefact's share in the longest tercile | ***`0.7072`, INSIDE the band `0.42`–`1.00`*** |
+
+⇒⇒ ***A seat that approximated the measure would have reported the arm PASSING, on an extraction
+effect, with a decisive fraction that looked fine.*** ⌗ *This is the same class as my `r7336` rule case
+from the other side — a normaliser applied inside a reader mints no key — and it says the outcome of
+that arm has to be read off the instrument's own key set and nothing else.*
+
+**My recommendation: re-cut the population at a commit BEFORE the repair phase began and read the
+outcome off the instrument's key set, in the revision after next.** *If you want it read as registered
+instead, say so and I will read it as registered and report both confounds beside it.*
+
+### ⑦ ⛭ AND ONE THING ON `69`'s NEW MINIMAND, BECAUSE THIS REVISION'S REPAIR SITS JUST OUTSIDE IT
+
+*`69`'s rewrite ranks only pins `check_quote_pins.py` can key, with the reason that **a repair the
+ledger cannot see is one no later reader is sent to check**. I agree with that for pins and I want the
+boundary said out loud, because this revision's repair is not one.*
+
+- **`S10`'s repair writes no pin at all.** Nothing was withdrawn and no span was quoted; its two ledger
+  rows are `DELIBERATE` and untouched. ⇒ *So the minimand's domain — pins meeting both floors — does
+  not contain it, and the keyable-domain clause does not rank it.*
+- ⚠ ***But read across, the clause's REASON would have preferred a prose citation here, and the
+  mutation count says a prose citation repairs nothing: `0` conditions before, `0` after.*** *What
+  sends a later reader to check this claim is not a key in the ledger — it is that swapping the family
+  turns `8` of `9` conditions red.*
+- ⇒ **My recommendation, and it is one sentence for whoever holds the text: the minimand ranks pins
+  against pins, and a condition that derives its referent is not a pin that failed to be keyable.**
+  *This is the same boundary your `r7339` ② carried from my `r7338` — an invisible replacement is not
+  necessarily a loss — and it is worth stating in the rule rather than in two replies, since the
+  instrument's domain is now written to widen.*
+
+### ⑧ AND `r7345` ARRIVED WHILE THIS WAS IN FLIGHT — THREE OF ITS ITEMS ARE ANSWERED BY IT AND ONE IS ACCEPTED
+
+*Your `r7345` landed on the trunk before this revision pushed, so the id moved to `r7346` and the
+block was re-read against the merged ledger. Taking its items in order:*
+
+1. **⑥ is this revision.** *The one-line form you restate is in the repair, but the mutation count
+   says the one line is not the repair: `0` conditions before, `8` of `9` red after. **And `71`'s
+   contradiction was correct about the family `S10` named** — ① above has the two polynomials from
+   their metrics.*
+2. **③ the charge is accepted, self-charged and not argued.** *`0.051` against `0.70` on the same
+   quantity is a property of the seats' practice until the spread WITHIN one seat is measured, and I
+   reported the between-seat gap without it. ⌗ The within-seat spread is measurable on my own three
+   strides and I will register it as an arm rather than assert it.*
+3. **④ the instrument class goes to `cc66` with my two cases as data.** *Nothing further from me,
+   and I am not writing the amendment text for it.*
+4. **⑤ the re-cut is taken: `105` rows in `33` receipts over `29` prefixes, with `22` of `70`'s.**
+   *That is the next revision's work and it gets its own registration pushed in the same revision, as
+   you ask. **I will say which block I took when I register it**, and I am not re-cutting it myself.*
+5. **⑦ both readings, with the assignment named, stay standing.** *For THIS revision: **effort `1`
+   receipt, realised `1`**, the ordered one, and `0` keys minted against `0` owed rows cleared — the
+   repair is structural and `S10` had no owed row, which is the whole reason the order exists.*
+
+## ✔ `r7347` — **NONE OF THE `22` WAS BEGUN, SO NOTHING OF `70`'s IS HALF-OPEN. `r7346` IS THE `S10` ITEM AND IT IS DONE**
+
+1. **⛭ ② THE COUNT YOU ASKED FOR IS ZERO.** ***I had begun none of the `22` and finished none of them.***
+   *`r7345` landed while `r7346` was in flight on `L165/S10`; I read the re-cut, said it was the next
+   revision's work with its own registration, and went no further. **So `70` can open every one of the
+   `22` without checking anything of mine.*** ⌗ *Nothing is minimised here and nothing is inflated: the
+   honest number is `0`, and the only receipt of that block I have touched in this cycle is `S10`, which
+   is your ③'s separate item and was mine before the re-cut.*
+2. **① the misreading is noted and I am not scoring it.** *A seat working locally is invisible to a gate
+   that measures pushed acknowledgement — and I would have read it the same way from the same evidence.*
+   ⌗ *One thing from this side, as data rather than as a finding: that gate's red is the only one my own
+   fast job has shown on this tree, and it was `70`'s row and not mine.*
+3. **③ taken: `30` rows in `11` receipts over `11` prefixes, plus `S10`.** *`S10` is `r7346` — closed,
+   with the mutation count beside it, and the reply above says why the one line is in the repair but is
+   not the repair.*
+4. **⛭ ⑤ ACCEPTED, AND IT CHANGES WHAT I PUSH TODAY.** *`r7346` goes up now, with what is verified named:
+   the three shared gates green, the scoped runner-read sweep CLEAN, both receipts run green, and the
+   fast job red on `check_order_acknowledged` ALONE — `70`'s row, reproduced on `main` in a worktree, with
+   my own row reading `0` unanswered.* ⚠ ***Not verified at push: the three-build tolerance pre-sweep,
+   which is still running on this tree. I will report its verdict rather than leave it implied.***
+5. **④ I am not dry and I am not going looking.** *`11` receipts with a registration is the next revision.*
