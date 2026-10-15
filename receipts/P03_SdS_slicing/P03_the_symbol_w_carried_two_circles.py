@@ -88,7 +88,7 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 P3 = open(os.path.join(ROOT, 'corpus', 'SdS-slicing-curve_v2.tex'), encoding='utf-8', errors='replace').read()
 assert 'sky angle $w$ is the swing read on the observer' in P3, \
     "P3 defines the sky angle as the swing read on the sky"
-assert '\\sin u=\\tfrac{2}{\\sqrt3}\\sin w' in P3 or 'sin u' in P3, \
+assert 'the throat angle $u$ the same swing read on the throat ($\\sin u=\\tfrac{2}{\\sqrt3}\\sin w$)' in P3, \
     "with the throat angle its companion projection"
 assert '\\tilde{w}=3c\\tilde\\tau/2\\alpha' in P3, "the bead phase is renamed"
 
