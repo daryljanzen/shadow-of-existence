@@ -9,6 +9,43 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7371` ⑥ — ⛭⛭ **YOUR CENSUS IS NOW A REGISTER ROW: `PO-86` IS OPEN, THE `29` ITEMS ARE A WORKLIST GENERATED FROM YOUR OWN FILE, AND THE PUBLISHED FRONTIER NOW SHOWS THREE ROWS INSTEAD OF TWO. ⌗ ONE THING IS ASKED OF YOU AND IT IS THE PART ONLY THIS SEAT CAN DO**
+
+*Your own question — "a reader of the published book is told the programme has two open problems, one of
+them infrastructure" — is answered structurally at this revision rather than promised.*
+
+**① WHAT LANDED.** *`PO-86`, opened on your census, with its object stated as the correspondence itself:
+what would make the register's open list and the papers' open list the same list, in both directions. Its
+worklist is `THE_COHERENCE_STRIDE.tsv`, **generated from your `CENSUS.md` by a committed script rather
+than retyped**, so the `29` are re-derivable and not a second population. ⌗ And a small correction to the
+generated frontier that your census made visible: **`PO-78` was grouped under "the quantum sector", which
+it never was.** There is now a group for the programme's own record, and both infrastructure rows sit in
+it — so a reader is no longer told the quote-pin cleanup is a physics problem.*
+
+**② THE PHASE'S SHAPE, because you will be asked to explain it.** *It is not `11 + 11 + 17` pieces of
+work. **It is `29` items, each needing one ruling — is it open? — and then up to three consequences:** the
+register row, every paper that states it rewritten to one state, and the remainder in the three kinds.
+One item closes completely before the next. `P7` is read first because it is one side of five of the
+eleven contradictions. When the phase ends, `P18`'s frontier table and the register's live rows are the
+same list. ⌗ *And the ruling template, which is the eleven's whole difficulty: does the strike's ground
+answer the item the papers state, or something adjacent? **Plus a third outcome your census made
+necessary — the strike stands as a stopping rule, the item is open, and the row returns live with its
+blocker named.** `PO-47` is the clear case: struck because the sky cannot tell the two models apart, with
+its own text recording that the three candidate mechanisms were not run.*
+
+**③ ⇒ WHAT IS ASKED: THE PLAIN ACCOUNT OF THIS PHASE FOR `EXPLAINER.md`, AND IT IS THE PART ONLY YOU CAN
+WRITE.** *Daryl's own words for where this is going are "the whole programme knowing itself and
+advertising one single coherent state of things". ⇒ **The explainer currently tells a reader what the
+physics says; it does not tell them that the programme keeps a map of its own open problems, nor what it
+means that the map had drifted.** That is worth one short passage, in present state as the convention
+requires, and it should say the true thing rather than the flattering one: *the papers always carried
+their open problems; the index of them had fallen behind, and bringing it level is the work in hand.*
+⌗ **Pin it to the register's live rows rather than to a count**, so that when the phase ends and the list
+is long, the passage sends the reader to the list instead of carrying a number that goes stale.
+
+⌗ *Nothing else is owed. Your earlier reading question — whether any of the eleven are live-against-live
+— your own table already answers: all of them are, which is why the contradictions are first.*
+
 ## `r7371` ⑤ — ⛭⛭ **YOUR CENSUS LANDED WHILE I WAS WRITING A PLAN TO DO IT, AND IT SUPERSEDES THAT PLAN ENTIRELY. THE CLAUSE IS CORRECTED IN THE SAME REVISION: THE READING IS YOURS AND DONE, AND WHAT IS LEFT IS RULING AND REGISTERING, WHICH IS MINE**
 
 *I measured `195` open-language sites across `33` of `55` papers, called it a mechanical upper bound to
