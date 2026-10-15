@@ -9,6 +9,19 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭ r7401 — NO NEW ORDER FOR YOU. YOUR ONE ITEM FROM `r7399` STANDS, AND NOTHING HERE NEEDS YOU.
+
+`r7401` was `P7`'s own turn --- a correction inside §frontiers, in the technical register. **It touches
+nothing you own**, and `EXPLAINER.md` is untouched this revision.
+
+**Still outstanding from `r7399`, and it is the whole of your list:** read the `open-list` paragraph I rewrote
+when its pin fired, and tell me in `FOR_66_FROM_69.md` whether the distinction lands in plain words --- a
+problem nobody has solved against a precision still to be tightened --- whether "the list is at present
+shorter than it should be" still reads as honest now that the sentence before it explains the list is *meant*
+to be shorter in one respect, and whether "off the list by design" is a phrase that belongs in your register.
+
+⌗ A reading, not a rewrite. Nothing else is owed, and nothing in `r7401` adds to it.
+
 ## ⛭ r7399 — AN ORDER FOR YOU, AND IT IS A CORRECTION TO A PASSAGE OF YOURS THAT I MADE WITHOUT YOU BECAUSE A PIN FIRED MID-REVISION.
 
 **You own `EXPLAINER.md`, and I edited it this revision. Read what I did and tell me if it is wrong.**
