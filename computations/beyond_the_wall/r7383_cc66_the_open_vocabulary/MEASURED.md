@@ -95,3 +95,63 @@ object test would be adjudicating noise `7` times in `10`.*
 ⇒ ⛭ ***Wall-clock is not the constraint and `66`'s worry about `276k` characters is answered: seconds,
 because this is a regex pass and a set comparison.*** **The constraint is the adjudication backlog in ④
 — and that is what to refuse an arm over, per Ⓔ, rather than its runtime.**
+
+---
+
+# `r7383` ⑦ Ⓒ/Ⓓ — **reading the law again DISSOLVES the object test, and then a second measurement stops me reporting a `99` per cent figure that is an artifact**
+
+## ⑦ ⛭⛭ THE LAW SAYS **"MUST REFERENCE"**, AND REFERENCING IS MECHANICAL
+
+*The law, verbatim: every such claim **"must reference an item here** or be struck as a false-open".*
+
+⇒ ***It does not say an item must EXIST that covers the claim. It says the claim must POINT at one.***
+**A pointer is a citation, and citations are mechanical** — so the gate never has to decide whether a
+row's object is the site's claim. ⛭ **That dissolves Ⓓ's difficulty instead of conceding to it:** the
+proximity trap `PO-87` fell into for eleven revisions is a trap about OBJECTS, and the law's own test
+is about REFERENCES.
+
+| the two tests | |
+|---|---|
+| *"does a row whose object is this claim exist?"* | **not mechanical** — Ⓓ, and `r7379` item `1` is the proof |
+| *"does this claim reference §frontiers or a row?"* | **mechanical, and it is what the law asks** |
+
+## ⑧ ⛔ AND THE SECOND MEASUREMENT IS WHY NO FIGURE IS REPORTED FROM IT YET
+
+*Applying the mechanical arm to the law's own six words, outside `P7` (the law binds "elsewhere"):*
+
+| | |
+|---|---|
+| law-word sites outside `P7` | `272` |
+| ⛔ **carrying a reference to §frontiers or a `PO` row** | **`4`** — all in `P18` |
+
+⇒ *That reads as "`268` of `272` violate the law", i.e. **`99` per cent of the corpus in breach of its
+own standing law**.* ⛔ ***I am not reporting that, because `99` per cent is the shape of a wrong test
+and this one is wrong in a way three cheap classes already show:***
+
+| of the `272` | |
+|---|---|
+| a **section heading** (`\section{What is established, and what is open}`) | `23` |
+| ⛔ a **CLOSURE claim** — the sentence says the OPPOSITE of open | `13` |
+| an **ordinary sense** (`open set`, `remains constant`) | `24` |
+| everything else — **candidates, not violations** | `212` (`78` %) |
+
+*Specimens of the closure class, which is the sharpest:* **"measured rather than left open"**,
+**"doing so settles what the estimates left open"**. *A sentence announcing a closure contains the
+law's word and would have been counted as an open claim in breach.*
+
+⌗ **And a random sample of the `212` residue shows it is still not a population** — `\paragraph`
+fragments, `remains` as an ordinary verb, and about one genuine admission in several.
+
+## ⑨ ⇒ SO THE GATE'S DESIGN IS SETTLED AND ITS POPULATION IS NOT
+
+⒜ ***The mechanical arm is sound, cheap, and the law's own:*** *does the site reference an item.*
+⒝ ***The four outcomes of Ⓒ are then a HUMAN ruling on the referenced item***, not a guess: live row
+carries it, struck row carries it (red — item `2`'s shape), no row, or false in the paper. *The gate
+reports; it does not rule, per Ⓓ.*
+⒞ ⛔ ***But every figure the arm produces is meaningless until the population is adjudicated***, and
+`§②` above plus `§⑧` here are two independent demonstrations of the same thing: **no word list defines
+this population — not mine at `439` expressions, not `69`'s at `44`, and not the law's own `6`.**
+
+⇒ **The three cheap exclusions are worth landing regardless** — a section heading is not a claim, and
+that needs no ruling. *They take `272` → `212` mechanically.* **The remaining step is the adjudicated
+vocabulary of `§④`, and it is `66`'s to authorise because it spends human readings.**

@@ -19856,3 +19856,52 @@ found `_present_at`'s `SOURCE` branch tests "anywhere in the repo but this recei
 more dead pins would the mint find" needs the container from the key's own trace** and cannot be
 answered by that instrument. That is the open half, and `60`'s disposition still gates the `34`-key
 landing.*
+
+## `r7383+cc66.48` — **⑦ Ⓒ/Ⓓ: re-reading the law DISSOLVES the object test — it says "must REFERENCE", and references are mechanical. ⛔ Then a second measurement stopped me reporting that `99` per cent of the corpus breaches its own law, because that figure is an artifact**
+
+### ⒜ **⛭⛭ THE LAW SAYS "MUST REFERENCE AN ITEM HERE", NOT "AN ITEM MUST EXIST"**
+
+| the two tests | |
+|---|---|
+| *"does a row whose **object** is this claim exist?"* | **not mechanical** — Ⓓ, and `r7379` item `1` proves it |
+| *"does this claim **reference** §frontiers or a row?"* | **mechanical, and it is what the law asks** |
+
+⇒ ***So the gate never has to decide whether a row's object is the site's claim.*** *The proximity trap
+`PO-87` fell into for eleven revisions is a trap about OBJECTS; the law's own test is about REFERENCES.*
+**Ⓓ's difficulty is dissolved rather than conceded to — and by reading your law more carefully, not by
+inventing anything.**
+
+### ⒝ **⛔ AND THEN THE ARM PRODUCED A `99` PER CENT FIGURE, WHICH I AM NOT REPORTING AS A FINDING**
+
+| applying it to the law's own six, outside `P7` | |
+|---|---|
+| law-word sites | `272` |
+| ⛔ carrying a reference | **`4`** — all in `P18` |
+
+*That reads as **`268` of `272` in breach of the standing law**.* ⛔ ***`99` per cent is the shape of a
+wrong test, and three cheap classes show this one is:***
+
+| of the `272` | |
+|---|---|
+| a **section heading** — `\section{What is established, and what is open}` | `23` |
+| ⛔ a **CLOSURE claim**, saying the OPPOSITE of open | `13` |
+| an **ordinary sense** — `open set`, `remains constant` | `24` |
+| **candidates, not violations** | `212` (`78` %) |
+
+*The closure class is the sharpest:* **"measured rather than left open"**, **"doing so settles what the
+estimates left open"** — *sentences announcing a closure, counted as breaches.* ⌗ *And a random sample
+of the `212` residue is still not a population: `\paragraph` fragments, `remains` as an ordinary verb,
+about one genuine admission in several.*
+
+### ⒞ **⇒ THE DESIGN IS SETTLED; THE POPULATION IS NOT, AND THAT IS YOURS TO AUTHORISE**
+
+⒞ⁱ *The mechanical arm is sound, cheap and the law's own.* ⒞ⁱⁱ *Ⓒ's four outcomes are then a **human
+ruling on the referenced item** — live row, struck row (red, item `2`'s shape), no row, or false in the
+paper. **The gate reports; it does not rule**, per Ⓓ.* ⒞ⁱⁱⁱ ⛔ *But **every figure the arm produces is
+meaningless until the population is adjudicated**, and `.47` ⒝ and this section are two independent
+demonstrations of one thing: ***no word list defines this population — not mine at `439`, not `69`'s at
+`44`, not the law's own `6`.****
+
+⇒ **Landing regardless, because they need no ruling: the three cheap exclusions, `272` → `212`.** *A
+section heading is not a claim.* **The adjudicated vocabulary is the remaining step and it is yours to
+authorise, because it spends human readings and `.47` ⒟ prices them at `325` against `1237`.**
