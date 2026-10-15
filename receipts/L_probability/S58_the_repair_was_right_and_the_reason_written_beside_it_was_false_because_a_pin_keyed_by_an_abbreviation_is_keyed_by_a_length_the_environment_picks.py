@@ -60,6 +60,7 @@ every one of its `5,539` revision-numbered commits renders at, and no other.*
 
     python3 receipts/L_probability/S58_the_repair_was_right_and_the_reason_written_beside_it_was_false_because_a_pin_keyed_by_an_abbreviation_is_keyed_by_a_length_the_environment_picks.py
 """
+import ast
 import importlib.util
 import io
 import os
@@ -76,6 +77,10 @@ BAR = '=' * 100
 COST = os.path.join(ROOT, 'computations', 'beyond_the_wall',
                     'r7374_60_the_key_the_environment_chooses', 'cost.py')
 INDEX = os.path.join(ROOT, 'receipts', 'INDEX.md')
+#: the two names `Ⓔ②` reads off S39's syntax tree: its own definition, and the
+#: instrument's method it checks that definition against
+LOCAL = 'same_line'
+ATTR = '_same_line'
 
 
 def check(label, cond):
@@ -179,6 +184,8 @@ def main():
           'the commit by id, which git resolves from any prefix, and the abbreviated map is not '
           'consulted for it',
           'def session_of' in _s39 and '_SESSION.get' not in _s39)
+    print(f'      and the same two facts off the tree rather than the text: `session_of` defined '
+          f'{"session_of" in {n.name for n in ast.parse(_s39).body if isinstance(n, ast.FunctionDef)}}')
 
     # ── Ⓔ the class, as a pairing ─────────────────────────────────────────────────────────────────
     head('Ⓔ  the class: one map keyed by an abbreviation, one caller, and no dependence')
@@ -190,11 +197,33 @@ def main():
           f'abbreviation and {len(R["callers"])} file reaches it carrying a pinned one',
           len(R['gates']) == 1 and len(R['callers']) == 1
           and any('S39_' in os.path.basename(k) for k in R['callers']))
-    check('Ⓔ② and the caller no longer DEPENDS on it -- it computes the fact itself from the markers '
-          'it commits and calls the instrument only to CHECK its own verdict, so a map emptied by any '
-          'cause changes no claim here',
-          'def same_line' in _s39 and 'G._same_line' in _s39
-          and re.search(r'if\s+G\._same_line\([^)]*\)\s*!=', _s39) is not None)
+    #: ⛭⛭ *The first form of this clause read the shape off the SOURCE TEXT with
+    #: `re.search(r'if\\s+G\\._same_line\\(...\\)\\s*!=')`, and that is a pin on another receipt's
+    #: FORMATTING: a line break between the call and the operator, or an intermediate variable, breaks
+    #: it while the claim stays true.  ⇒ Read off the SYNTAX TREE instead -- a comparison whose
+    #: operator is `!=` and one of whose sides calls `_same_line` on the instrument -- which is this
+    #: revision's own lesson spent on its own gate, and the third time in two receipts.*
+    _t39 = ast.parse(_s39)
+    _defs = {n.name for n in _t39.body if isinstance(n, ast.FunctionDef)}
+
+    def _checked_against(attr):
+        for node in ast.walk(_t39):
+            if not (isinstance(node, ast.Compare) and any(isinstance(o, ast.NotEq) for o in node.ops)):
+                continue
+            for side in [node.left, *node.comparators]:
+                for sub in ast.walk(side):
+                    if isinstance(sub, ast.Call) and isinstance(sub.func, ast.Attribute) \
+                            and sub.func.attr == attr:
+                        return True
+        return False
+
+    print(f'      S39 module-level defs: {sorted(_defs)[:12]}')
+    print(f'      the instrument`s verdict is compared against the local one: {_checked_against(ATTR)}')
+    check(f'Ⓔ② and the caller no longer DEPENDS on it -- it defines the fact itself and calls the '
+          f'instrument only to CHECK its own verdict, so a map emptied by any cause changes no claim '
+          f'here.  Read off S39`s SYNTAX TREE and not its formatting: defs carry `{LOCAL}` '
+          f'{LOCAL in _defs}, and a `!=` comparison calls `{ATTR}` {_checked_against(ATTR)}',
+          LOCAL in _defs and _checked_against(ATTR))
 
     # ── Ⓕ the arm that could not be measured, with both forms reproducible ────────────────────────
     head('Ⓕ  the arm as registered, and why neither form of it is the measurement')
