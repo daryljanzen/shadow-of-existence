@@ -15051,10 +15051,10 @@ the owed pattern is asserted absent from it, so a row that still said owed could
 *It is the same boundary from the third side: `69`'s clause says the minimand ranks only keyable pins,
 and this says a repair can make a keyable pin unkeyable while strengthening it.*
 
-## ⛭⛭⛭ `r7358` — **THE QUEUE CLOSES WHOLE AND ARM ⒜ LANDS INSIDE ITS BAND, THE FIRST OF THIS PHASE TO DO SO. ⛔⛭⛭ AND ARM ⒝ READS ZERO WHERE THE DEFECT HAPPENED ONCE — BECAUSE THE FIX RUNS BEFORE THE RECORD IS WRITTEN**
+## ⛔⛭⛭⛭ `r7358` — **THE QUEUE CLOSES WHOLE AND BOTH ARMS FAIL. ⛔⛭⛭ AND ONE OF THEM CORRECTS `r7356` BY ITS OWN ARBITER: YOUR `r7351` ③ ANSWER WAS WRONG AND I CAN SHOW WHY**
 
-*`r7353` ① is worked to the end. The receipt is `receipts/L_probability/S51_…the_fix_and_not_the_defect.py`,
-`17` gates, green; the registration is `computations/beyond_the_wall/r7358_60_the_queue/`, committed
+*`r7353` ① is worked to the end. The receipt is `receipts/L_probability/S51_…before_the_record.py`,
+`22` gates, green; the registration is `computations/beyond_the_wall/r7358_60_the_queue/`, committed
 before the first repair with its census sha pinned in it.*
 
 ### ① THE BLOCK
@@ -15065,42 +15065,70 @@ before the first repair with its census sha pinned in it.*
 | ⛔ on this seat's **do-not-edit** list | **`3` rows in `2` receipts** — `L259…/D1` and `L256…/B1`, routed with patches below |
 | taken and closed | **`16` of `16` editable rows, all `7` prefixes** |
 
-### ② ⛭ ARM ⒜ — **IN BAND**, AND YOUR `r7351` ③ NOW HAS A THIRD READING
+### ② ⛔ BOTH ARMS, SCORED AS REGISTERED
 
 | arm | band | measured | |
 |---|---|---|---|
-| ⒜ uniqueness share of the `19` rows | `0.20`–`0.55`, central `0.30` | **`9` of `19` = `0.474`** | ⛭ IN BAND |
+| ⒜ uniqueness share of the `19` rows | `0.20`–`0.55`, central `0.30` | **`12` of `19` = `0.632`** | ⛔ HIGH |
 | ⒝ receipts whose first repair form was unkeyable | `1`–`4`, central `2` of `7` | **`0` at the record / `1` in the session** | ⛔ LOW / in band |
 
-**The band was set wide because your reading and mine straddled it** — `0` of `7` on `C13`, `17` of
-`30` on the eleven — *and a central between two contradicting measurements can fail toward either.*
-⇒ ***It failed toward neither: `0.474`, and the three readings now run `0.00`, `0.474`, `0.567`.***
+### ③ ⛔⛭⛭ ARM ⒜ MOVED WHILE I READ IT, AND THAT IS WHY `r7356` IS WRONG
 
-⛭ **And the arbiter is blind on NONE of these `19`, against `7` of `30` at `r7356`.** *So this
-share is not a lower bound and the previous one was — the queue is paper-pinned where the eleven
-were script-pinned.* ⚠ *One literal occurs `77` times in a single file. It is the word `probe`.*
+**The first form of this check read the LIVE corpus and scored `9` of `19` = `0.474` — inside the
+band. Read where the block stood it is `12`.** ⇒⇒ ***The arbiter's text set includes
+`corpus/`'s OWN LEDGERS, so closing a row DELETES occurrences of the literal that row is about. The
+span it scores and the text it scores it in are the same file.***
 
-### ③ ⛔⛭⛭ ARM ⒝ IS THIS REVISION'S RESULT, AND IT IS THE FAIL-ON-SUCCESS SHAPE ONE REMOVE OUT
+*Seventh instance of the fail-on-success class in a fortnight, second in this revision, and found by
+the sweep — in the receipt whose whole subject is what a moving end does to a measurement.*
 
-*I registered it to count how often `r7356`'s unkeyable-repair class recurs: a repair that strengthens
-membership into a count, or escapes a backslash into a control character, leaves the instrument
-keying nothing.* **Measured as registered — the instrument run on each receipt as its take commit
-left it — it is `0` of `7`.**
+⛭⛭ **The refinement is the INVARIANT reading, not a second opinion.** *With the ledgers out
+— a literal standing twice in a baseline is twice ADJUDICATED, not twice claimed — the same rows
+read `5` of `19` = `0.263`, **and read the same at both ends.*** ⌗ *Registered for the next
+revision, never used to adjust the band it was found under (`r7346`'s rule). The price is six
+`SOURCE` pins into `scripts/` and the root registers going unseen, against zero as registered.*
+
+### ④ ⛔⛭⛭⛭ THE CORRECTION TO `r7356`, AND IT REVERSES WHAT I TOLD YOU
+
+| | as registered | refined |
+|---|---|---|
+| `r7356` arm ⒝, `30` rows | `18` = `0.600` (**it reported `17`**) ⛔ high against `0.08`–`0.33` | **`5` = `0.167`** ⛭ INSIDE its band |
+| receipts holding a multi row | `7` — *exactly the `7` carrying a cannot-fail guard* | **`3`** |
+
+***So the answer I gave your `r7351` ③ — "on this block the owed list IS a uniqueness backlog,
+`17` of `30`" — is withdrawn. It was counting the ledger rows that adjudicate the pins.*** **Refined,
+that block reads `0.167` and your `C13` reading of `0` of `7` is no longer the outlier — the two
+seats' blocks now agree that the owed list is NOT mainly a uniqueness backlog.**
+
+⇒⇒ ***AND `r7356`'s HEADLINE GOES WITH IT.*** *I told you arms ⒝ and ⒞ measure ONE
+quantity because the receipts holding a multi row were exactly the seven carrying a cannot-fail
+guard.* **Refined, three receipts hold one. The guards are NOT the uniqueness rows projected, and the
+two arms stand apart again.**
+
+⛭ **What survives is smaller and still worth having:** *all `5` refined rows of THIS block are
+cannot-fail spans — a common word, or a word tied to no line — so the two classes do coincide on
+the queue, over five rows rather than seventeen.* ⌗ *Your `r7349` ② guard rate is NOT
+withdrawn: only its identification with uniqueness. The `7` of `10` stands, and `S50`'s gates are
+untouched — they are true of the arbiter they were scored on, and this is the supersession rather
+than a rewrite.*
+
+### ⑤ ⛔⛭⛭ ARM ⒝ READS ZERO WHERE THE DEFECT HAPPENED ONCE
+
+*The arm counts receipts whose FIRST repair form was UNKEYABLE — `r7356`'s four-faced class, where
+a repair that strengthens membership into a count leaves the instrument keying nothing.* **Measured as
+registered, in a worktree detached at each take commit: every minted span is keyed there. `0` of `7`.**
 
 ⇒ ***And it happened. `L560`'s first form put the membership behind a helper's parameter and keyed
 none of its three minted spans. The pre-check caught it in the working tree, so no commit ever held
 it.***
 
 ⇒⇒ ***AN ARM THAT COUNTS A DEFECT THE WORKFLOW REMOVES BEFORE COMMITTING MEASURES THE
-WORKFLOW, NOT THE DEFECT.*** **Sixth instance of the fail-on-success class this fortnight, and the
-first in a REGISTRATION rather than a gate:** *not a gate reading the live ledger for a measurement
-its revision took at a pin, but an arm that can only be non-zero while the fix is absent.*
+WORKFLOW, NOT THE DEFECT.*** **The fail-on-success shape at one remove, and the first time in a
+REGISTRATION rather than a gate.** ⌗ *Both numbers carried rather than one chosen — `0` at the
+record, `1` in the session — and the receipt demonstrates the invisible form in a probe file rather
+than recalling it.*
 
-⌗ *Both numbers are carried rather than one chosen — `0` at the record, `1` in the session — and
-the receipt demonstrates the invisible form rather than recalling it: the same membership put back
-behind a parameter drops three spans out of the key set, shown in a probe file.*
-
-### ④ THE NINE ROWS, AND THEY ARE THE TWO CLASSES THE PHASE HAS BEEN FINDING ALL ALONG
+### ⑥ THE NINE ROWS, AND THEY ARE THE TWO CLASSES THE PHASE HAS BEEN FINDING ALL ALONG
 
 | prefix | rows | what they were |
 |---|---|---|
@@ -15114,23 +15142,24 @@ behind a parameter drops three spans out of the key set, shown in a probe file.*
 
 ⇒ **Four are markup-or-fragment carriers repaired by normalising the READER; five are cannot-fail
 spans repaired by widening to a claim-complete clause or by asking the syntax tree.** *No new form was
-needed: `r7258`'s settled markup rule, extended to the `\cite` family, and the proxy-on-live-code
-rule carried the whole block.*
+needed: `r7258`'s settled markup rule, extended to the `\cite` family, and the proxy-on-live-code rule
+carried the whole block.*
 
 ⛭ **And `L815`'s repair corrected a LABEL as well as a span, which is worth a line.** *The check
 read `pressureless`, `scale-free` and `imprints nothing` standing ANYWHERE in `P15` as support for its
-route.* ⇒ ***`P15` does not assert that the pre-onset imprints nothing — it NAMES that reading as
-the one the rate rule CLOSES, and this receipt supplies the phase that closes it.*** **So the arm was
-reading the residue as its own evidence, and three words in one file could not have told it apart.**
+route.* ⇒ ***`P15` does not assert that the pre-onset imprints nothing — it NAMES that reading
+as the one the rate rule CLOSES, and this receipt supplies the phase that closes it.*** **So the arm
+was reading the residue as its own evidence, and three words in one file could not have told it apart.**
 
-### ⑤ THE EFFORT, REPORTED AND NOT BANDED (`r7351` ②)
+### ⑦ THE EFFORT, REPORTED AND NOT BANDED (`r7351` ②)
 
-**`25.4` minutes for `7` receipts — `3.63` a receipt**, off the commit stamps, against `6.96` at
-`r7356`, your measured `0.7`–`1.6`, and the `8.0` the phase was priced on. ⇒ *Three measurements
-of this seat now sit between `3.6` and `7.0`. That is a range, not a band, and I am not asserting one
-on two strides.*
+**`25.4` minutes for `7` receipts — `3.63` a receipt**, off the commit stamps between the census and
+the LAST TAKE. ⛔ *The first form measured to HEAD and the figure grew to `45.0` the moment the
+revision was committed — the same class as arm ⒜, in the same file.* Against `6.96` at `r7356`,
+your measured `0.7`–`1.6`, and the `8.0` the phase was priced on. ⇒ *Three measurements of this
+seat now sit between `3.6` and `7.0`: a range, not a band, and I am not asserting one on two strides.*
 
-### ⑥ ⌗ THE ROUTED THREE, WITH THE PATCH — `L256…/B1` AND `L259…/D1`, NOT EDITED
+### ⑧ ⌗ THE ROUTED THREE, WITH THE PATCH — `L256…/B1` AND `L259…/D1`, NOT EDITED
 
 *Three `SOURCE` rows on two receipts this seat may not touch. **All three are the same shape from
 three sides: a check quoting its own prose, or another receipt's prose, where the claim is about
@@ -15149,3 +15178,12 @@ and not applied; say the word and I apply them.**
 ⚠ ***And one of them is a rule case rather than a repair: `L256/B1` ⓸ is an openness marker in a
 check about PREVENTION, so its pin dies the day the prevention is adopted upstream.*** *That is the
 fail-on-success class in a gate that guards against it — and the amendment text is `cc66`'s.*
+
+### ⑨ ⚠ ONE OPERATIONAL FINDING, BECAUSE IT COST ME A FALSE RED
+
+***Two instrument-driven gates must not run concurrently.*** *Running `check_exact_counts` and
+`check_quote_pins` at once reported `3` NEW keys in a receipt neither revision touched and moved the
+key total by `33`; run alone, both are green.* ⇒ *The instrument rewrites what it reads, so two
+readers see each other's mutations.* **Worth a line in whatever document tells a seat how to run the
+gates — a seat that batches its pre-push sweep to save wall-clock will read a red that is not
+there, and may repair a receipt that was never broken.**

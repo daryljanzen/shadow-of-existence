@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""S51 -- THE HAND-OFF QUEUE: seven prefixes close whole, the uniqueness arm lands INSIDE its band --
-the first arm of this phase to do so -- and ** the second arm reads ZERO where the defect it counts
-happened once, because the countermeasure runs before the record is written. **
+"""S51 -- THE HAND-OFF QUEUE: seven prefixes close whole, and ** both arms fail -- one because the
+arbiter was counting its own ledger, and one because the fix it counts runs before the record is
+written. ** ⛔ *** AND THE FIRST FAILURE CORRECTS THE PREVIOUS REVISION: `r7356`'s arm and its
+headline are both withdrawn here, by the arbiter they were scored on. ***
 
 ** WHAT WAS ORDERED. **  `r7353` ①: *your `11` receipts first, then the queue.*  The eleven landed as
 `r7356`; this is the queue.  The registration is `computations/beyond_the_wall/r7358_60_the_queue/`,
@@ -12,17 +13,37 @@ queue's `9` prefixes at the census.  ⛔ *`L259…/D1` carries one and `L256…/
 seat's own DO-NOT-EDIT list, so the three are ROUTED with patches and never edited.*  ⇒ `16` rows in
 `7` prefixes were this seat's, and all `16` are closed.
 
-** Ⓑ ARM ⒜ -- `9` OF THE `19` OWED ROWS ARE UNIQUENESS PROBLEMS.  ⛭ INSIDE THE BAND. **  Central
-`0.30`, band `0.20`-`0.55`, two-sided, decisive `0.144`; measured `0.474`.
+** Ⓑ ARM ⒜ -- `12` OF THE `19` OWED ROWS ARE UNIQUENESS PROBLEMS AS REGISTERED.  ⛔ OUTSIDE THE BAND,
+HIGH -- AND THE ARM TAUGHT ME WHY BY MOVING WHILE I READ IT. **  Central `0.30`, band
+`0.20`-`0.55`, two-sided, decisive `0.144`; measured `0.632`.
 
-  *The band was set wide on purpose: the two existing measurements STRADDLED it -- `cc66` read `0` of
-  `7` on its own block and this seat read `17` of `30` on the eleven -- and a central between them
-  could fail toward either seat's reading.*  ⇒ ** It failed toward neither.  `0.474` sits inside, and
-  the three readings now run `0.00`, `0.474`, `0.567`. **
-  ⛭ ** And the arbiter is not blind on this block: ** `0` of the `19` occur nowhere in the text set it
-  reads, against `7` of `30` at `r7356`.  *So this share is not a lower bound and the previous one
-  was -- the queue is paper-pinned where the eleven were script-pinned.*
-  ⚠ One literal occurs `77` times in a single file.  *It is the word `probe`.*
+  *The first form of this check read the LIVE corpus and scored `9` of `19` = `0.474`, inside the
+  band.  Read where the block stood it is `12`.*
+  ⇒⇒ *** THE ARBITER'S TEXT SET INCLUDES `corpus/`'s OWN LEDGERS, so closing a row DELETES
+      occurrences of the literal that row is about: the span it scores and the text it scores it in
+      are the same file. ***  **Seventh instance of the fail-on-success class in a fortnight, second
+  in this revision, and found by the sweep -- in the receipt whose whole subject is what a moving end
+  does to a measurement.**  *Scored AS REGISTERED at the census, per `r7346`'s rule.*
+  ⛭⛭ ** AND THE REFINEMENT IS THE INVARIANT READING, NOT A SECOND OPINION: ** with the ledgers
+  excluded -- *a literal standing twice in a baseline is twice ADJUDICATED, not twice claimed* --
+  the same rows read `5` of `19` = `0.263`, ** and read the SAME at both ends. **  *Registered for the
+  next revision, never used to adjust this band.  The price is six `SOURCE` pins into `scripts/` and
+  the root registers going unseen, against zero unseen as registered.*
+  ⚠ One literal occurs `77` times in a single file at the census and `78` now.  *It is the word
+  `probe`, and the `78`th is this revision's own index row, baked into the corpus appendix.*
+
+** ⛔ Ⓑ⑧-⑩ AND THE SAME ARBITER SCORED `r7356`, SO THAT REVISION IS CORRECTED HERE. **  *Its arm ⒝
+read `17` of `30` and failed high against `0.08`-`0.33`; the same rows, re-read at its own census,
+are `18` as registered and `5` of `30` = `0.167` refined -- ** INSIDE its band. ***
+  ⇒⇒ *** AND ITS HEADLINE GOES WITH IT.  `r7356` asserted that arms ⒝ and ⒞ measure ONE quantity,
+      because the receipts holding a multi row were exactly the `7` carrying a cannot-fail guard.
+      Refined, `3` receipts hold one.  The guards are NOT the uniqueness rows projected, and the two
+      arms stand apart again. ***
+  ⛭ ** What survives is smaller and still worth having: ** all `5` refined rows of THIS block are
+  cannot-fail spans -- a common word, or a word tied to no line -- *so the two classes do coincide on
+  the queue, over five rows rather than seventeen.*
+  ⌗ *`S50`'s gates are not touched: they are true of the arbiter they were scored on, and this is the
+  supersession rather than a rewrite.*
 
 ** Ⓒ ARM ⒝ -- `0` OF `7` AT THE RECORD, AND THE ZERO IS NOT THE QUANTITY THE ARM NAMES.  ⛔ FAILS
 LOW, AND THE GAP IS THE RESULT. **  Central `2` of `7`, band `1`-`4`, decisive `0.118`.
@@ -31,15 +52,15 @@ LOW, AND THE GAP IS THE RESULT. **  Central `2` of `7`, band `1`-`4`, decisive `
   deep: the instrument keys a literal standing to the LEFT OF AN `in` and nothing else, so a repair
   that strengthens membership into a count, or escapes a backslash into a control character, leaves
   the ledger adjudicating nothing.*
-  ⇒ ** Measured as registered, by running the instrument on each receipt as its take commit left it:
-    every span the final form keys is keyed there.  `0` of `7`. **
+  ⇒ ** Measured as registered, by running the instrument on each receipt as its take commit left it,
+    in a worktree detached at that commit: every span the final form keys is keyed there.  `0` of
+    `7`. **
   ⇒⇒ *** AND IT HAPPENED ONCE.  `L560`'s first form put the membership behind a helper's parameter,
       so its three minted spans keyed nothing -- and the pre-check caught it in the working tree, so
       the commit never held it. ***
   ⇒⇒ *** AN ARM THAT COUNTS A DEFECT THE WORKFLOW REMOVES BEFORE COMMITTING MEASURES THE WORKFLOW,
-      NOT THE DEFECT. ***  **That is the fail-on-success shape at one remove, and the sixth instance
-  this fortnight: not a gate reading the live ledger for a measurement its revision took at a pin,
-  but a REGISTRATION whose arm can only be non-zero while the fix is absent.**
+      NOT THE DEFECT. ***  **The fail-on-success shape at one remove, and the first time in a
+  REGISTRATION rather than a gate.**
   ⌗ *Both numbers are carried rather than one chosen -- `0` at the record, `1` in the session -- so
   the arm is IN BAND where it was measurable and FAILS LOW where it is auditable.*
 
@@ -61,17 +82,20 @@ LOW, AND THE GAP IS THE RESULT. **  Central `2` of `7`, band `1`-`4`, decisive `
   that read three words as support was reading the residue as its own evidence.*
 
 ** Ⓔ THE EFFORT, REPORTED AND NOT BANDED (`r7351` ②). **  `25.4` minutes for `7` receipts, `3.63` a
-receipt, read off the commit stamps -- against `6.96` at `r7356`, the `0.7`-`1.6` the other seat
-measured, and the `8.0` the phase was priced on.  ⇒ *Two strides at `6.96` and `3.63` do not fix a
-band; three measurements of this seat now sit between `3.6` and `7.0`.*
+receipt, read off the commit stamps between the census and the LAST TAKE -- *not HEAD, which the
+first form used and which grew the figure to `45.0` the moment the revision was committed* -- against
+`6.96` at `r7356`, the `0.7`-`1.6` the other seat measured, and the `8.0` the phase was priced on.
+⇒ *Three measurements of this seat now sit between `3.6` and `7.0`: a range, not a band.*
 
 ** COMPUTES: ** the block's census at the pinned commit; both arms against their registered bands
 with their decisive fractions; the uniqueness count and the arbiter's blind count; arm ⒝ re-measured
 HERE by running the instrument against each take commit rather than by trusting the result block; the
 effort from the commit stamps; and the seven receipts, run.  No paper quantity.
 
-** WHAT IS NOT CLAIMED. **  ** Not that the uniqueness share is `0.47` in general ** -- one block, and
-the three readings are reported side by side rather than pooled.  ** Not that the pre-check makes the
+** WHAT IS NOT CLAIMED. **  ** Not that the refined share is the right number in general ** -- one block under
+two arbiters, with both readings reported side by side rather than pooled, and the refinement
+REGISTERED rather than adopted here.  ** Not that `r7356`'s cannot-fail guard rate is withdrawn ** --
+only its identification with the uniqueness rows; the `7` of `10` stands.  ** Not that the pre-check makes the
 unkeyable class extinct ** -- it moves where the class is caught, which is what arm ⒝ measured.  ** Not
 that the three routed rows are repaired ** -- they are routed with patches.  ** And not that `3.63`
 minutes a receipt is this seat's rate ** -- it is this block's, on one container.
@@ -175,24 +199,96 @@ def main():
           len(C.owed()) == 3 and all(any(r[0].startswith(p) for p in ROUTED) for r in C.owed()))
 
     # ── Ⓑ arm ⒜, the uniqueness share ────────────────────────────────────────────────────────────
-    _u = C.uniqueness(_owed)
+    #: ⛔⛭⛭ AND THE ARBITER HAD TO BE READ AT THE CENSUS, which this file learned by FAILING twice:
+    #: the first form read the LIVE corpus and scored `9` of `19`; read where the block stood it is
+    #: `12` of `19`.  ** The arbiter's text set includes `corpus/`'s OWN LEDGERS -- the baselines that
+    #: hold the adjudication rows -- so closing a row DELETES occurrences of the literal the row is
+    #: about. **
+    #:   ⇒ *** A measurement of the corpus taken by a revision that EDITS the corpus cannot be read
+    #:     live, and this is the arm about pins into moving text. ***  Seventh instance of the class
+    #:     in a fortnight, second in this revision, found by the sweep.
+    #:   ⇒ ** Scored AS REGISTERED at the census -- `r7346`'s rule: a refinement found during the
+    #:     work is reported and registered, never used to adjust the band it was found under. **
+    _ctexts = {f: git('show', f'{C.CENSUS}:corpus/{f}')
+               for f in sorted(os.listdir(os.path.join(ROOT, 'corpus')))
+               if f.endswith(('.tex', '.md', '.tsv', '.txt'))}
+    _ctexts = {k: v for k, v in _ctexts.items() if v}
+    #: the refinement: the LEDGERS are the adjudication, not text a row is pinned INTO.  A literal
+    #: standing twice in `quote_pin_baseline.tsv` is twice adjudicated, not twice claimed.
+    _LEDGER = {f for f in _ctexts if 'baseline' in f or 'annotation' in f}
+    _refined = {k: v for k, v in _ctexts.items() if k not in _LEDGER}
+    _u = C.uniqueness(_owed, _ctexts)
     _multi = [k for k, v in _u.items() if v > 1]
     _unseen = [k for k, v in _u.items() if v == 0]
     _share = len(_multi) / len(_owed)
-    check(f'Ⓑ① arm ⒜: {len(_multi)} of {len(_owed)} owed literals occur MORE THAN ONCE in a single '
-          f'file of the text they are pinned into -- {_share:.3f}, against central {C.A_CENTRAL} '
-          f'and band {C.A_BAND[0]}-{C.A_BAND[1]}, decisive {S["a"][3]:.3f}',
-          len(_multi) == R['A_MULTI'] == 9 and abs(_share - 0.474) < 0.001)
-    check(f'Ⓑ② ⛭ INSIDE THE BAND -- the first arm of this phase to land inside one.  The three '
-          f'readings now run 0.00 (the other seat), {_share:.3f} (here), 0.567 (the eleven)',
-          S['a'][2] is True and C.A_BAND[0] <= _share <= C.A_BAND[1])
-    check(f'Ⓑ③ ⛭ and the arbiter is not blind on this block: {len(_unseen)} of the {len(_owed)} '
-          f'occur nowhere in the text set it reads, against 7 of 30 at r7356 -- so this share is '
-          f'NOT a lower bound and the previous one was',
-          len(_unseen) == R['A_UNSEEN'] == 0)
-    check(f'Ⓑ④ and the worst single literal occurs {max(_u.values())} times in one file: '
-          f'{json.dumps(sorted(_u.items(), key=lambda kv: -kv[1])[0][0][1])}',
-          max(_u.values()) == R['A_MAX'] == 77)
+    check(f'Ⓑ① arm ⒜ as registered, read AT THE CENSUS: {len(_multi)} of {len(_owed)} owed literals '
+          f'occur MORE THAN ONCE in a single file of the text set the registration fixed -- '
+          f'{_share:.3f}, against central {C.A_CENTRAL} and band {C.A_BAND[0]}-{C.A_BAND[1]}, '
+          f'decisive {S["a"][3]:.3f}',
+          len(_multi) == R['A_MULTI'] == 12 and abs(_share - 0.632) < 0.001)
+    check('Ⓑ② ⛔ OUTSIDE THE BAND, HIGH -- and the reading that would have been INSIDE it is the '
+          'live one, which is the reading this arm may not take',
+          S['a'][2] is False and _share > C.A_BAND[1])
+    _ul = C.uniqueness(_owed, C._corpus_texts())
+    _ml = [k for k, v in _ul.items() if v > 1]
+    check(f'Ⓑ③ ⛔ and the registered arbiter MOVES WITH THE LEDGER: {len(_multi)} at the census and '
+          f'{len(_ml)} live ({len(_ml)/len(_owed):.3f}), the difference being rows this revision '
+          f'CLOSED -- so the span it scores and the text it scores it in are the same file',
+          len(_ml) == 9 and len(_ml) < len(_multi))
+    _ur = C.uniqueness(_owed, _refined)
+    _mr = [k for k, v in _ur.items() if v > 1]
+    _url = C.uniqueness(_owed, {k: v for k, v in C._corpus_texts().items() if k not in _LEDGER})
+    _mrl = [k for k, v in _url.items() if v > 1]
+    check(f'Ⓑ④ ⛭⛭ and the REFINED arbiter -- the ledgers excluded, because a literal standing twice '
+          f'in a baseline is twice ADJUDICATED and not twice claimed -- reads {len(_mr)} of '
+          f'{len(_owed)} = {len(_mr)/len(_owed):.3f}, and reads the SAME at both ends: '
+          f'{len(_mr)} at the census, {len(_mrl)} live',
+          len(_mr) == len(_mrl) == R['A_MULTI_REFINED'] == 5)
+    check('Ⓑ⑤ ⇒ so the refinement is not a second opinion but the INVARIANT reading: the registered '
+          'arbiter is the one that moves, and it moves by exactly the rows whose adjudication left '
+          'the ledger.  REGISTERED for the next revision, not used to adjust this band',
+          len(_mr) == len(_mrl) and len(_ml) != len(_multi))
+    check(f'Ⓑ⑥ and the arbiter\'s blind count is stated under both: {len(_unseen)} of {len(_owed)} '
+          f'unseen as registered, {len([k for k, v in _ur.items() if v == 0])} refined -- the '
+          f'refinement trades six SOURCE pins into scripts and root registers for a reading that '
+          f'does not move',
+          len(_unseen) == R['A_UNSEEN'] == 0
+          and len([k for k, v in _ur.items() if v == 0]) == R['A_UNSEEN_REFINED'] == 6)
+    check(f'Ⓑ⑦ and the worst single literal occurs {max(_u.values())} times in one file at the '
+          f'census: {json.dumps(sorted(_u.items(), key=lambda kv: -kv[1])[0][0][1])}.  Live it is '
+          f'{max(_ul.values())}, stated MONOTONE, because this revision\'s own index row -- baked '
+          f'into the corpus appendix -- quotes the word',
+          max(_u.values()) == R['A_MAX'] == 77 and max(_ul.values()) >= max(_u.values()))
+    #: ⛔⛭⛭⛭ AND THE SAME ARBITER SCORED THE PREVIOUS REVISION, SO THAT ARM IS CORRECTED HERE.
+    _C56 = load(os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7356_60_the_eleven',
+                             'cost.py'), 'r7356_cost')
+    _r56 = _C56.owed_at()
+    _c56 = {f: git('show', f'{_C56.CENSUS}:corpus/{f}')
+            for f in sorted(os.listdir(os.path.join(ROOT, 'corpus')))
+            if f.endswith(('.tex', '.md', '.tsv', '.txt'))}
+    _c56 = {k: v for k, v in _c56.items() if v}
+    _u56 = _C56.uniqueness(_r56, _c56)
+    _u56r = _C56.uniqueness(_r56, {k: v for k, v in _c56.items() if k not in _LEDGER})
+    _m56 = [k for k, v in _u56.items() if v > 1]
+    _m56r = [k for k, v in _u56r.items() if v > 1]
+    check(f'Ⓑ⑧ ⛔ THE CORRECTION: the same arbiter scored r7356\'s arm ⒝ at {len(_m56)} of '
+          f'{len(_r56)} ({len(_m56)/len(_r56):.3f}) and it FAILED HIGH against 0.08-0.33 -- refined, '
+          f'the same rows read {len(_m56r)} of {len(_r56)} = {len(_m56r)/len(_r56):.3f}, which is '
+          f'INSIDE that band',
+          len(_m56) >= 17 and len(_m56r) == 5
+          and _C56.B_BAND[0] <= len(_m56r) / len(_r56) <= _C56.B_BAND[1])
+    _rc56 = {k[0] for k, v in _u56r.items() if v > 1}
+    check(f'Ⓑ⑨ ⛔⛭ AND r7356\'s HEADLINE IS WITHDRAWN WITH IT: that revision asserted arms ⒝ and ⒞ '
+          f'measure ONE quantity because the receipts holding a multi row were exactly the '
+          f'{_C56.RESULT["C_GUARDS"]} carrying a cannot-fail guard.  Refined, {len(_rc56)} receipts '
+          f'hold one -- so the guards are NOT the uniqueness rows projected, and the two arms stand '
+          f'apart again',
+          len(_rc56) == 3 and len(_rc56) != _C56.RESULT['C_GUARDS']
+          and _C56.RESULT['C_IS_B_PROJECTED'] is True)
+    check(f'Ⓑ⑩ ⇒ and what SURVIVES of it is smaller and still worth having: all {len(_mr)} refined '
+          f'rows of THIS block are cannot-fail spans -- a common word or a word tied to no line -- '
+          f'so on the queue the two classes do coincide, over five rows and not seventeen',
+          len(_mr) == 5 and all(_u[k] >= 2 for k in _mr))
 
     # ── Ⓒ arm ⒝, RE-MEASURED HERE against the take commits ───────────────────────────────────────
     #: ⛔ the result block is not trusted: the instrument is run on each receipt AS ITS TAKE COMMIT
@@ -263,8 +359,12 @@ def main():
           R['CLOSED_ROWS'] == R['A_ROWS'] - R['ROUTED_ROWS'] == 16 and R['CLOSED'] == 7)
 
     # ── Ⓔ the effort, from the stamps ────────────────────────────────────────────────────────────
+    #: ⛔ and the far end is the LAST TAKE, not HEAD: the first form read `{CENSUS}..HEAD`, so the
+    #: landing commit itself entered the window and the figure rose from 25.4 to 45.0 minutes.
+    #: ** A duration measured to HEAD grows every time the revision is pushed. **  Same class as the
+    #: arm above, same revision, and `L-258` is the receipt that took the band against exactly it.
     _base = int(git('log', '-1', '--format=%ct', C.CENSUS).strip())
-    _last = max(int(x) for x in git('log', '--format=%ct', f'{C.CENSUS}..HEAD').split())
+    _last = max(int(git('log', '-1', '--format=%ct', _s).strip()) for _s, _r in TAKES)
     _mins = (_last - _base) / 60
     check(f'Ⓔ① the effort, read off the commit stamps and REPORTED not banded: {_mins:.1f} minutes '
           f'for {R["CLOSED"]} receipts, {_mins/R["CLOSED"]:.2f} a receipt -- against 6.96 at r7356, '
@@ -285,8 +385,13 @@ def main():
         return 1
     print('  ⇒ ** ALL CHECKS PASS. **')
     print('  ⛭ ** THE QUEUE CLOSES WHOLE: 16 of 16 editable rows in 7 prefixes, 3 routed. **')
-    print('  ⛭ ** ARM ⒜ LANDS INSIDE ITS BAND at 0.474 -- the first of this phase to do so -- and')
-    print('     the arbiter is blind on none of the 19, so the share is not a lower bound. **')
+    print('  ⛔ ** ARM ⒜ FAILS HIGH AS REGISTERED, 12 of 19 = 0.632 -- and it moved while it was')
+    print('     read: the arbiter counts corpus/\'s own LEDGERS, so closing a row deletes')
+    print('     occurrences of the literal the row is about.  Refined, 5 of 19 = 0.263 at BOTH')
+    print('     ends -- the invariant reading, registered and not adopted here. **')
+    print('  ⛔⛭ ** AND THAT CORRECTS r7356 BY ITS OWN ARBITER: its arm reads 5 of 30 = 0.167')
+    print('     refined, INSIDE its band, and its headline -- two arms measuring one quantity --')
+    print('     is withdrawn: 3 receipts hold a multi row, not the 7 carrying a guard. **')
     print('  ⛔ ** ARM ⒝ READS ZERO AND THE DEFECT HAPPENED ONCE: the pre-check removes it before')
     print('     the commit, so the arm measures the workflow and not the defect.  The fail-on-')
     print('     success shape at one remove, and the first time in a REGISTRATION rather than a')

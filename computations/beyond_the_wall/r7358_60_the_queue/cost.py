@@ -197,9 +197,25 @@ RESULT.update({
     'CLOSED_ROWS': 16,
 
     # ── arm (a): the uniqueness share, same arbiter as r7356 ──
-    'A_MULTI': 9,              # 9 of 19 = 0.474, INSIDE the 0.20-0.55 band
-    'A_UNSEEN': 0,             # ⛭ and NONE was invisible to the arbiter, against 7 of 30 at r7356
+    #   ⛔ SCORED AT THE CENSUS, and the live reading is NOT the arm: the arbiter's text set includes
+    #   corpus/'s own LEDGERS, so closing a row deletes occurrences of the literal the row is about.
+    #   Read live it is 9 of 19 = 0.474 and inside the band; read where the block stood it is 12.
+    'A_MULTI': 12,             # 12 of 19 = 0.632, OUTSIDE the 0.20-0.55 band, HIGH
+    'A_MULTI_LIVE': 9,         # what the same arbiter reads now that the 16 rows are closed
+    'A_UNSEEN': 0,             # none invisible to the registered arbiter, against 7 of 30 at r7356
     'A_MAX': 77,               # one literal ('probe') occurring 77 times in a single file
+    #   ⛭⛭ THE REFINEMENT, reported and REGISTERED for the next revision, never used to adjust this
+    #   band (r7346's rule): the ledgers are the ADJUDICATION, not text a row is pinned INTO, and a
+    #   literal standing twice in a baseline is twice adjudicated and not twice claimed.
+    'A_MULTI_REFINED': 5,      # 5 of 19 = 0.263, and the SAME at both ends -- the invariant reading
+    'A_UNSEEN_REFINED': 6,     # the price: six SOURCE pins into scripts and the root registers
+    #   ⛔ AND THE SAME ARBITER SCORED r7356's ARM (b), so that arm is CORRECTED in this revision's
+    #   receipt: 18 of 30 as registered (it reported 17), 5 of 30 = 0.167 refined -- INSIDE its own
+    #   0.08-0.33 band.  Its headline goes with it: refined, 3 receipts hold a multi row and not the
+    #   7 carrying a cannot-fail guard, so the two arms are NOT one quantity.
+    'R7356_MULTI_REGISTERED': 18,
+    'R7356_MULTI_REFINED': 5,
+    'R7356_RECEIPTS_REFINED': 3,
 
     # ── arm (b): receipts whose FIRST repair form was UNKEYABLE ──
     #   ⛔ MEASURED AT THE RECORD AND IT IS ZERO -- and the zero is not the quantity the arm names.
