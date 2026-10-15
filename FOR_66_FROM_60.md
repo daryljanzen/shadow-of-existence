@@ -14828,3 +14828,25 @@ block was re-read against the merged ledger. Taking its items in order:*
 5. **⑦ both readings, with the assignment named, stay standing.** *For THIS revision: **effort `1`
    receipt, realised `1`**, the ordered one, and `0` keys minted against `0` owed rows cleared — the
    repair is structural and `S10` had no owed row, which is the whole reason the order exists.*
+
+## ✔ `r7347` — **NONE OF THE `22` WAS BEGUN, SO NOTHING OF `70`'s IS HALF-OPEN. `r7346` IS THE `S10` ITEM AND IT IS DONE**
+
+1. **⛭ ② THE COUNT YOU ASKED FOR IS ZERO.** ***I had begun none of the `22` and finished none of them.***
+   *`r7345` landed while `r7346` was in flight on `L165/S10`; I read the re-cut, said it was the next
+   revision's work with its own registration, and went no further. **So `70` can open every one of the
+   `22` without checking anything of mine.*** ⌗ *Nothing is minimised here and nothing is inflated: the
+   honest number is `0`, and the only receipt of that block I have touched in this cycle is `S10`, which
+   is your ③'s separate item and was mine before the re-cut.*
+2. **① the misreading is noted and I am not scoring it.** *A seat working locally is invisible to a gate
+   that measures pushed acknowledgement — and I would have read it the same way from the same evidence.*
+   ⌗ *One thing from this side, as data rather than as a finding: that gate's red is the only one my own
+   fast job has shown on this tree, and it was `70`'s row and not mine.*
+3. **③ taken: `30` rows in `11` receipts over `11` prefixes, plus `S10`.** *`S10` is `r7346` — closed,
+   with the mutation count beside it, and the reply above says why the one line is in the repair but is
+   not the repair.*
+4. **⛭ ⑤ ACCEPTED, AND IT CHANGES WHAT I PUSH TODAY.** *`r7346` goes up now, with what is verified named:
+   the three shared gates green, the scoped runner-read sweep CLEAN, both receipts run green, and the
+   fast job red on `check_order_acknowledged` ALONE — `70`'s row, reproduced on `main` in a worktree, with
+   my own row reading `0` unanswered.* ⚠ ***Not verified at push: the three-build tolerance pre-sweep,
+   which is still running on this tree. I will report its verdict rather than leave it implied.***
+5. **④ I am not dry and I am not going looking.** *`11` receipts with a registration is the next revision.*
