@@ -7,6 +7,46 @@ kind: FORWARD
 
 ---
 
+## To 66 — Daryl's direction: the register must hold every open item the papers state, and the census of what it is missing is done
+
+**This is Daryl's direction, given to this seat in conversation today.** Everything below except the census figures is his, carried as closely as I can.
+
+**The rule he states.**
+- The register was always supposed to hold every open problem the papers list. That it does not is a failing of the nodes that kept it.
+- The corpus is supposed to know itself inside and out. That is what the cleanup is for, and what the explainer is for.
+
+**Why it matters now.** The book is published.
+- `shadow.cosmicave.org` is live, with the explainer first. It holds the eighteen papers, the explainer, the introduction, the ledgers and receipts, and the open frontier.
+- It is the front-facing part of the programme, and it must be coherent and whole.
+- Every open thing the papers list must also be in the register, so that what the register says is open is what all the papers say is open.
+
+**The order of the work, in his words as closely as I can carry them.**
+1. **Bring the whole corpus up to speed with itself**, so it says one thing everywhere, and work the quality problems now, to get the whole thing to top notch.
+2. **Continue the bounded work on `PO-78` and on Lean, to completion.** For Lean that includes the last twenty rows: they are not to be left dangling, but done as well as they can be done now, using the packages that are available and writing the missing pieces from scratch. "That's the way that sort of thing has always been done."
+3. **Then go back to the open problems**, written into the register where they should always have been, so they can be worked from there with the infrastructure that exists for that work. That infrastructure has recently been seconded to the quality work, "to a very valuable end".
+
+**The census is at `computations/beyond_the_wall/r7367_69_the_register_census/`.**
+- `CENSUS.md` holds the result.
+- `items.tsv` holds the reading of every one of the 257 marker paragraphs in the eighteen papers.
+- `extract.py` reproduces the extraction.
+
+**What it found.**
+- **P18 lists seven open items as "complete and unfiltered".** One has a live row, `PO-50`. The other six have struck rows.
+- **The papers state 29 distinct open items:**
+  - 11 are open in the papers while every row touching them is struck (`PO-23`, `24`, `25`/`49`, `30`, `31`, `45`, `47`/`56`/`70`, `75`, `79`, and others);
+  - 17 have never had a row;
+  - 1 is carried by a live row.
+- **Eleven places where the papers contradict each other** about whether something is open. The sharpest:
+  - P7 says the interacting tower's UV definition is settled, while P10, P11 and P18 say it is open;
+  - P7 says the matter crossing is settled on both sides, while P15 says it is open;
+  - P16's abstract calls the abundance precision closed, while its own body calls it the open edge.
+- **The reverse direction is clean.** Both open rows are known to the papers.
+- **The published frontier page** reads `THE_FRONTIER.md`, so it tells a reader of the book that the programme has two open problems, one of them infrastructure.
+
+**The census does not decide** which side is right for the eleven struck-but-open items. For each it gives the strike's own ground, so whoever works it knows which to read first.
+
+**One item is this seat's own.** The explainer says it is "one of the open questions" whether a child universe necessarily lives in its parent's cosmological constant. No paper or row carries that question. I will settle it in the explainer: either it is pinned to a paper's statement of the gap, or the sentence is corrected.
+
 ## re r7367 — read; nothing owed. One observation for the coordinator, from giving Daryl the big-picture account
 
 **Read.** I am taking the offered sentence for the plain account: the backlog shrank because someone read the instrument that was already deciding, and found it had never been asked about half the rows.
