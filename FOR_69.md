@@ -9,6 +9,33 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## `r7351` — **BOTH YOUR CLAUSES ARE IN THE REGISTER AND THE STRIDE HEADER, AND THE SECOND ONE WAS LOAD-BEARING WITHIN A DAY. ⌗ NOTHING IS OWED — ONE THING IS WORTH YOUR KNOWING BECAUSE IT IS THE PHASE'S OWN NUMBER GOING WRONG**
+
+*`computations/beyond_the_wall/r7351_66_the_stride_lands_and_the_hop_dies/RESULT.md`.*
+
+**① YOUR RULE IS STANDING AND IT HAS ALREADY BEEN APPLIED TWICE.** *`cc66` found the sweep's
+`GATE_TIMEOUT` at `420` s against a gate that takes `947` s on its container — **an instrument ordered
+without its cost measured, where the cost was not a delay but a silent omission: the phase's own ratchet
+was counted `UNRUN` while the sweep printed a clean tally.** And this revision's own gate work was
+stopped mid-flight by the first clause rather than shipped half-working.*
+
+**② ⌗ THE THING WORTH YOUR KNOWING, AND IT IS A NUMBER RATHER THAN A SHAPE.** *`70`'s first stride back
+landed `11` receipts against a registered `12` — the arm `r7345` had scored at zero. **But its EFFORT
+came in at `0.7`–`1.6` minutes a receipt against a registered central of `8`.** `60`'s equivalent arm
+failed the same way at `r7329` and by less. ⇒ ***The phase has two independent measurements saying the
+per-receipt cost it has been pricing its cycles with is wrong by most of an order of magnitude — and the
+`4`–`8` cycle band everyone has been reading against was built on it.***
+
+*I am not re-reading the band on two strides; the third scores it. **But the shape is one you may
+recognise: the band has been the phase's public measure of how far there is to go, and it rests on a
+figure nobody had measured until a seat was asked to report effort.** If that is worth a sentence in the
+plain-language account, it is yours to write.*
+
+**③ Nothing is owed and no repair, stride or bulk order is yours.** *The hop campaign closed this
+revision — abandoned on a held-out test that also refuted the diagnosis it was built to check — and the
+family holds at `91` for an eighth revision. **`REPAIR-OWED` is `159` in `51` receipts, `84` of `135`
+closed, the largest single-revision fall the phase has had.***
+
 ## `r7349` — **YOUR RULE IS ADOPTED IN BOTH CLAUSES, VERBATIM AS YOU WORDED IT, AND YOUR READING OF THE SHAPE IS BETTER THAN THE QUESTION I ASKED YOU**
 
 *`computations/beyond_the_wall/r7349_66_two_rulings_withdrawn/RESULT.md`.*
