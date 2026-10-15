@@ -30,7 +30,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                     '..', '..', '..'))
 
 #: the frame: this revision's registration commit, filled by the landing push
-FRAME = ''
+FRAME = '122d0247'
 
 #: a revision id matched against commit message TEXT.  The three spellings this corpus uses: a raw
 #: regex on the body, an `in` against the subject, and a formatted id inside a search pattern.
@@ -79,6 +79,22 @@ def scan(sha=None):
     return {rel: s for rel in receipts(sha) if (s := sites(rel, sha))}
 
 
+#: ⛭⛭⛭ `CONTROL` IS A PROPERTY AND NOT A HAND ENTRY, for `r7368`'s reason: the same site changes
+#: class when the file is repaired -- every one of these was `SELECTS` before its commits were
+#: pinned and is the control beside the pin after.  *A hand entry would bake in the date, which is
+#: the defect this phase is about arriving in the classification.*
+#: ⇒ ** A file that binds its revision's commits to a pinned tuple has had its selector fixed, and
+#:   an id match left in it is the CONTROL the repair keeps on purpose.  Tested as the property. **
+#: ⌗ *and the pattern allows LEADING INDENTATION: `S53` binds its tuple inside the function
+#:   that uses it, and an anchor without `\s*` read that file as unrepaired -- the property
+#:   tested by a spelling again, caught by the figure not falling to zero.*
+_PINNED_OWN = re.compile(r"^\s*(?:OWN|OWN_C)\s*=\s*\(", re.M)
+
+
+def _class_of(rel, sha=None):
+    return 'CONTROL' if _PINNED_OWN.search(text(rel, sha)) else 'SELECTS'
+
+
 #: ** THE CLASSIFICATION, BY HAND AND COMMITTED HERE. **
 #:   SELECTS  -- the match is what picks the commits a gate then asserts over.  Arm ⒜ counts these.
 #:   CONTROL  -- the match is kept deliberately, beside a pinned list, to prove it over-resolves.
@@ -90,10 +106,6 @@ CLASS = {
     #: commit-listing call three lines off.  *The detector is reported with its own miss.*
     ('receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py',
      'id-in-text'): 'LABEL',
-    #: ⛭ `r7370` PINNED this revision's commits and kept the string match beside them deliberately,
-    #: so it must still over-resolve or the pin has quietly become the match again.
-    ('receipts/L_probability/S29_the_high_call_is_refuted_again_and_the_low_mode_here_is_a_property_of_the_receipts_because_twenty_three_of_twenty_nine_cannot_take_the_verdict_at_all.py',
-     're-on-body'): 'CONTROL',
 }
 
 #: ⒜ THE POPULATION, beyond the one repaired (`S29`)
@@ -126,22 +138,28 @@ def main():
     tot = 0
     for rel, ss in sorted(found.items()):
         for ln, name, src in ss:
-            k = CLASS.get((rel, name), 'SELECTS')
+            k = CLASS.get((rel, name)) or _class_of(rel, sha)
             tot += 1
             print(f'    {k:8s} {name:11s} {os.path.basename(rel)[:46]:48s} L{ln}')
             print(f'             {src}')
     sel = [(r, l) for r, ss in found.items() for l, n, _s in ss
-           if CLASS.get((r, n), 'SELECTS') == 'SELECTS']
+           if (CLASS.get((r, n)) or _class_of(r, sha)) == 'SELECTS']
     _lsel = [(r, l) for r, ss in live.items() for l, n, _s in ss
-             if CLASS.get((r, n), 'SELECTS') == 'SELECTS']
+             if (CLASS.get((r, n)) or _class_of(r, None)) == 'SELECTS']
+    _ctl = [(r, l) for r, ss in live.items() for l, n, _s in ss
+            if (CLASS.get((r, n)) or _class_of(r, None)) == 'CONTROL']
     print(f'\n    AT THE FRAME {sha}: sites {tot};  SELECTS {len(sel)};  '
           f'files holding one: {len({r for r, _l in sel})}')
-    print(f'    LIVE: sites {sum(len(v) for v in live.values())};  SELECTS {len(_lsel)}')
+    print(f'    LIVE, after this revision repaired them: sites '
+          f'{sum(len(v) for v in live.values())};  SELECTS {len(_lsel)};  CONTROL {len(_ctl)} -- '
+          f'each an id match kept beside a pinned commit list ON PURPOSE, so the pin cannot '
+          f'quietly become the match again')
     RESULT.update({
         'A_SITES': len(sel),
         'A_FILES': sorted({r for r, _l in sel}),
         'A_NEW': len([1 for r, _l in sel if '/S29_' not in r]),
         'A_LIVE_SELECTS': len(_lsel),
+        'A_LIVE_CONTROL': len(_ctl),
         'B_MATCHED': B_MATCHED,
         'B_OWN': B_OWN,
         'B_EXTRA': B_MATCHED - B_OWN,

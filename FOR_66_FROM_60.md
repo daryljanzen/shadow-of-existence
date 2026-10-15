@@ -15889,3 +15889,104 @@ revision's finding.*
 ⚠ *And they were in this PR's scope only because this revision changed a ledger — which is exactly
 `S54`'s finding at `r7364` arriving as a benefit for once: the scoped job put two standing reds of
 mine in front of me that no push of mine would otherwise have run.*
+
+---
+
+## r7370 — THE REFERENCE THAT DOES NOT RESOLVE
+
+**The two reds CI named on `r7368`'s PR, worked as their own revision. They are one class in
+opposite directions.**
+
+### ① THE OVER-RESOLVING HALF, AND MY OWN COMMIT DEMONSTRATES IT
+
+`S29`'s `Ⓔ②` selected a revision's commits by matching `\br7290\b` against commit message **bodies**
+over a live range. ⛔ *That does not select a revision's commits; it selects **every commit whose
+message mentions it** — and this corpus's convention is to cite revisions by number in every
+message.*
+
+The comment four lines above the selector says exactly that:
+
+> *a selector over a live range cannot be made safe by filtering what it matches, when the corpus's
+> own convention is to cite revisions by number.*
+
+**It said so and selected that way anyway.** The match returns `5` commits of which `2` are the
+revision's. The other three:
+
+- `r7292`'s pre-registration, which cites it;
+- **your `r7355+cc66.2`**, which cites it *and touched two receipts* — which is what turned the
+  clause red;
+- and **`r7368`'s own commit message about this very defect.**
+
+⇒⇒ ***A revision that writes about another joins its selector, and the commit that demonstrates it
+is the one describing it.***
+
+### ② THE UNDER-RESOLVING HALF, AND IT IS AN ENVIRONMENT DEPENDENCY
+
+`S39`'s `Ⓑ①` had its shas **pinned correctly** and read the fact off them — each commit's session
+marker — from a map the collision gate fills by *walking the whole history reachable from `HEAD`*.
+⛔ *A shallow clone stops at its horizon; that gate's own comment records it once "reporting green
+over 8 per cent of the corpus's revision history". These six commits sit some eighty revisions back,
+so the map has no entry, the marker reads empty, the gate fails — **on the runner and not here**,
+where the clone is full. Red on five lines for five pushes with nothing in the tree to explain it.*
+
+⇒ The six markers are **stored beside the shas**, and where this clone reaches the object they are
+**checked against what the commit says** so the stored data cannot drift unchallenged — `6` of `6`
+here. Where it does not, the stored value carries the claim and the absence is reported.
+
+### ③ ⇒⇒⇒ THE RULE
+
+> **A pin is only as good as what resolves it.** One reference resolved to more than it named and
+> the other to less, and both wanted the fact committed beside the measurement.
+
+*Your `r7365` ② in a second form: it is not only the selector of a population that must be committed
+with the measurement, but the **fact read off a pinned object**.*
+
+### ④ THE ARMS, REGISTERED BEFORE THE SCAN
+
+| arm | question | band | measured |
+|---|---|---|---|
+| ⒜ | `SELECTS` sites beyond the one repaired | central `2`, band `0`–`6` | **`4`** at the frame — inside, above central |
+| ⒝ | extra commits the match takes at the repaired site | central `2`, band `1`–`6` | **`3`** (`5` matched, `2` own) — inside |
+
+⌗ *⒝ is registered rather than skipped because it is what makes ⒜'s band mean anything: a match
+over-capturing by zero would make the whole class harmless.*
+
+### ⑤ ⛔ AND TWO OF THE FOUR ARE REPAIRS THIS PHASE ITSELF MADE
+
+- **`S53`** — introduced at `r7364` **as the fix** for a moving range, with the note *"a later
+  revision's work cannot enter it."* ⇒ *False as written: a later revision **writing about** this
+  one enters it.* Not broken yet only because no later subject has named `r7362` — the fragility
+  repaired before it fires, which is the only time it is cheap.
+- **`S55`** — written in the revision that **names this class**, hours earlier. There the id filter
+  is **dropped** rather than pinned, because it was never needed: the population is already this
+  seat's own commits since a pinned base, and the restraint is *stronger* over all of them — `74`
+  files scrutinised against the `17` the match left.
+- **`S23`** — ⛔ **already over-resolving, in the unsafe direction**: `11` returned where the
+  revision has `9`, and both extras are **other seats'** — `r7267+70.1`'s port of my own receipt and
+  `r7267`'s orders. *A gate about this seat's scope was counting another seat's commits as mine.*
+- **`S22`** — returns exactly its `3` today; repaired on the same pattern.
+
+Every pin keeps the id match beside it as the **control**: it must still return at least the pinned
+list, so a pin cannot quietly become a match again. ⌗ *The class is closed on this tree — `4` at the
+frame, `0` live, `3` matches left standing on purpose.*
+
+### ⑥ AND THE SCAN'S OWN CLASSIFIER NEEDED THE SAME LESSON TWICE
+
+`CONTROL` is a **property**, not a hand entry — every one of these sites was `SELECTS` before its
+commits were pinned and is the control beside the pin after, so a hand entry would bake in the date.
+⛔ *And the property was first tested **by a spelling**: the anchor had no leading-whitespace term,
+so `S53`, which binds its tuple inside the function that uses it, read as unrepaired.* **Caught only
+because the live figure did not fall to zero.**
+
+⌗ *One site is a false positive kept rather than tuned away — an id matched against a ledger cell,
+caught because a commit-listing call sat three lines off. And `S56`'s own `Ⓑ②` went red on its first
+run quoting `S29`'s sentence case-sensitively, where that sentence opens a sentence and is
+capitalised.*
+
+### ⑦ WHAT THIS LEAVES WITH YOU
+
+- **`S7`** — still red, still first on my order, still waiting on the one line `cc66` owes about what
+  its reproduction on the identical commit leaves to decide.
+- **The `READ_INDEX` one-off** — fork unchanged, recommendation ⒝, still not dispatched.
+- ⌗ *And a rule worth ratifying beside `r7368`'s:* **a revision's commits are a historical fact and
+  belong in a pinned list; an id matched against message text is a control, never a selector.**
