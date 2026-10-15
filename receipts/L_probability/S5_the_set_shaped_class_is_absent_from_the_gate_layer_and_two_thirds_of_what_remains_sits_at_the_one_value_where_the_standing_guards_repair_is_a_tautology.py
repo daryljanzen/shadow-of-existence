@@ -748,13 +748,52 @@ def _edit_cites_order(p):
     return False
 
 
+# ⛔⛭⛭⛭ r7364+60: AND THE FOURTH GROUND WAS THE ONE THE ORDERS ACTUALLY USE, AND THIS CLAUSE HAD NO
+#   LEG FOR IT.  *Five receipts read UNOWNED on this branch and every one of their DIRECTORIES IS
+#   NAMED IN AN ORDER TO THIS SEAT.  `r7353` ② routed nine prefixes by name and said "announce each
+#   take in the push that begins it" -- the warrant is in `FOR_60.md` and the announcement is in the
+#   COMMIT MESSAGE, and all three legs here read the diff or the introducing commit.*  ** The same
+#   defect, in the same words, in `P03`'s `Ⓗ②` on the same branch: two authorship gates of this
+#   seat's own, written four revisions apart, both looking for the warrant inside the file. **
+#   ⇒ *** The fourth leg reads the ORDER FILE at the commit that made the crossing -- not live, so an
+#     order given later cannot authorise a take already made and a later edit cannot retract one. ***
+#   ⌗ *`P03`'s clause also needed a fifth leg, for a receipt whose own source names a directory this
+#     branch repaired under an order.  **It is not added here**: this branch gives that leg no
+#     population, and an authorship leg with no instance is this receipt's own `r7248` complaint
+#     about itself.  The two clauses agree on every crossing either can see.*
+_ORDERS_FILE = 'FOR_60.md'
+_BYC = {c: set(l for l in _git('show', '--no-merges', '--name-only', '--format=', c).split('\n') if l)
+        for c in _MINE_C}
+_ORD_AT = {}
+
+
+def _orders_at(c):
+    if c not in _ORD_AT:
+        _ORD_AT[c] = _git('show', f'{c}:{_ORDERS_FILE}')
+    return _ORD_AT[c]
+
+
+def _order_names_prefix(p):
+    """is `p`'s receipt DIRECTORY named in the order file AS IT STOOD when this branch crossed it?"""
+    bits = p.split('/')
+    d = bits[1] if len(bits) > 2 else ''
+    return bool(d) and any(p in _BYC[c] and d in _orders_at(c) for c in _MINE_C)
+
+
 _out_owned = [p for p in _outside if _introduced_parity(p) == 'EVEN']
 _out_unattr = [p for p in _outside if p not in _out_owned
                and _introduced_parity(p) == 'UNATTRIBUTED']
 _out_ordered = [p for p in _outside if p not in _out_owned and p not in _out_unattr
                 and _edit_cites_order(p)]
+_out_named = [p for p in _outside if p not in _out_owned and p not in _out_unattr
+              and p not in _out_ordered and _order_names_prefix(p)]
 _outside_unowned = [p for p in _outside if p not in _out_owned and p not in _out_unattr
-                    and p not in _out_ordered]
+                    and p not in _out_ordered and p not in _out_named]
+#: the order-name test, two-sided on the same file: a prefix `r7353` ② routed by name is found, and a
+#: real receipt directory no order to this seat has ever named is not.
+_HEAD_ORDERS = _git('show', f'HEAD:{_ORDERS_FILE}')
+_name_control = ('L548_propagating_sector' in _HEAD_ORDERS
+                 and 'L558_the_second_duplication' not in _HEAD_ORDERS)
 print(f"      this branch's OWN commits touch: {len(_touched)} path(s), "
       f"{len(_outside)} of them MODIFIED receipts outside this seat's directories; "
       f"{len([p for p in _added if p.startswith('receipts/')])} receipt(s) ADDED by this branch, "
@@ -762,14 +801,18 @@ print(f"      this branch's OWN commits touch: {len(_touched)} path(s), "
 print(f"      of those {len(_outside)}: {len(_out_owned)} INTRODUCED by this seat's own parity "
       f"(`r7244`'s rule), {len(_out_unattr)} UNATTRIBUTED (merge-introduced, or an introducing "
       f"commit with no revision id), {len(_out_ordered)} edited under an order the diff itself "
-      f"cites, and {len(_outside_unowned)} none of the three --- which is the number that may not "
-      f"be above zero")
+      f"cites, {len(_out_named)} whose PREFIX THE ORDER FILE NAMES at the crossing commit, and "
+      f"{len(_outside_unowned)} none of the four --- which is the number that may not be above zero")
 for _p in _out_owned:
     print(f"          [owned]   {_p}")
 for _p in _out_unattr:
     print(f"          [unattr]  {_p}")
 for _p in _out_ordered:
     print(f"          [ordered] {_p}")
+for _p in _out_named:
+    print(f"          [named]   {_p}")
+print(f"      the order-name test, controlled two-sidedly on the same file: a routed prefix is "
+      f"found and a receipt directory no order names is not -- {_name_control}")
 for _p in _outside_unowned:
     print(f"          ⛔ UNOWNED {_p}")
 
@@ -785,9 +828,15 @@ gate(f"Ⓕ② and the authorship bound is kept where it actually binds: `{len(_e
      "second clause had to move with the first, or the sentence would use ONE notion of `does not "
      "own` for its census and ANOTHER for its bound: the census stays on the PATH scope, which is "
      "what it is a census of, and the bound asks whether a receipt in this branch's diff is one "
-     "this seat may not edit.*",
-     len(_outside_unowned) == 0
+     "this seat may not edit.*  ⛔⛭⛭⛭ r7364: *and a FOURTH ground was needed, the one the orders "
+     "actually use: `5` crossings read UNOWNED and every one of their directories is NAMED IN AN "
+     "ORDER to this seat.  `r7353` ② put the warrant in `FOR_60.md` and the announcement in the "
+     "push, and all three legs here read the diff or the introducing commit -- the same defect, in "
+     "the same words, as `P03`'s `Ⓗ②` on this branch.  The order file is read AT THE CROSSING "
+     "COMMIT, so a later order cannot authorise a take already made.*",
+     len(_outside_unowned) == 0 and _name_control
      and not any(e[0] in _touched and e[0] not in _out_owned and e[0] not in _out_ordered
+                 and e[0] not in _out_named
                  for e in _exp_other))
 
 # ⛭⛭ r7248: ** AND THE `ordered` BRANCH ABOVE WAS UNEXERCISED, SO IT WAS CONTROLLED RATHER THAN

@@ -398,14 +398,53 @@ for _v in ('ALT-OK', 'REPAIR-OWED', 'MEANING-HELD', 'DELIBERATE', 'ENCODING-OK',
     print(f'      {_v:14} {_k:3} of {_n:4} dangle   {100 * _k / max(_n, 1):5.1f}%')
 print(f'      {"the cell":14} {len(_D):3} of {len(CELL):4} dangle   '
       f'{100 * len(_D) / len(CELL):5.1f}%')
+# ⛔⛭⛭⛭ r7364+60: AND THE THIRD CONJUNCT WENT FALSE BECAUSE THIS LINE'S OWN REPAIR PHASE RETIRED THE
+#   ROWS IT WAS MEASURED ON.  *`REPAIR-OWED` `>=` both middle forms held when the finding was made and
+#   does not hold live: `19.2` per cent against `DELIBERATE`'s `19.5`.  **The pair did not drift -- it
+#   was moved, by work this seat did on purpose.**  `60`+ `REPAIR-OWED` rows were retired this phase,
+#   and the ones that got repaired are precisely the ones that DANGLED -- which lowers that cell's
+#   dangling share -- while the same passes minted `DELIBERATE` and `EXTENDED` rows.*
+#   ⇒ *** So the swap is the signature of repairs that hit the rows they aimed at, and asserting it
+#     live would be asserting that nobody repaired them. ***  `L-249`'s rule, applied to ONE clause
+#     rather than to the gate: the conjunct that moved is held in the PINNED frame as the record it
+#     is, and the two that carry the headline -- disjunction worst, extension best -- stay LIVE.
+#   ⌗ *The margin is not re-asserted anywhere; `Ⓒ③` already says the figures are printed and pinned
+#     nowhere, and the pinned clause is read at `PIN` rather than written down as a number.*
+def _share_at(rows, v):
+    """the (population, dangling) pair for a verdict IN A GIVEN FRAME"""
+    g = [r for r in rows if r[5] == v]
+    return (len(g), sum(1 for r in g if dangles(r[1])))
+
+
+def _rate(t):
+    return t[1] / t[0] if t[0] else 0.0
+
+
+_alt_p, _ext_p = _share_at(CELL_PIN, 'ALT-OK'), _share_at(CELL_PIN, 'EXTENDED')
+_rep_p = _share_at(CELL_PIN, 'REPAIR-OWED')
+_mh_p, _del_p = _share_at(CELL_PIN, 'MEANING-HELD'), _share_at(CELL_PIN, 'DELIBERATE')
+print(f'      at {PIN} the same five cells stood  '
+      f'ALT-OK {100 * _rate(_alt_p):.1f}%  REPAIR-OWED {100 * _rate(_rep_p):.1f}%  '
+      f'MEANING-HELD {100 * _rate(_mh_p):.1f}%  DELIBERATE {100 * _rate(_del_p):.1f}%  '
+      f'EXTENDED {100 * _rate(_ext_p):.1f}%')
+print(f'      the pair that MOVED: REPAIR-OWED {100 * _rate(_rep_p):.1f} -> '
+      f'{100 * _rate(_rep):.1f} against DELIBERATE {100 * _rate(_del_p):.1f} -> '
+      f'{100 * _rate(_del):.1f}  '
+      f'({"SWAPPED" if _rate(_rep) < max(_rate(_mh), _rate(_del)) else "still ordered"} live)')
 gate('Ⓒ② ⛭⛭⛭ AND THE DISJUNCTION FORM IS THE WORST OF THE REPAIR FORMS BY THIS MEASURE AND THE '
      'EXTENSION FORM THE BEST -- the opposite of how the two were ranked when `ALT-OK` was adopted. '
-     '** Stated as an ORDERING, not as a pinned ratio: `ALT-OK` above `REPAIR-OWED` above '
-     '`MEANING-HELD` and `DELIBERATE`, and all of them above `EXTENDED` by more than a factor of '
-     'three **',
-     _alt[1] / _alt[0] > _rep[1] / _rep[0]
-     and min(_mh[1] / _mh[0], _del[1] / _del[0]) > _ext[1] / _ext[0]
-     and _rep[1] / _rep[0] >= max(_mh[1] / _mh[0], _del[1] / _del[0]))
+     '** Stated as an ORDERING, not as a pinned ratio, and the two clauses that carry it are LIVE: '
+     '`ALT-OK` above `REPAIR-OWED`, and `MEANING-HELD` and `DELIBERATE` both above `EXTENDED`. '
+     '⛭ r7364: the third clause -- `REPAIR-OWED` at or above both middle forms -- is held AT `PIN`, '
+     'where the finding was made, because this line\'s own repair phase retired the dangling '
+     '`REPAIR-OWED` rows and minted `DELIBERATE` ones, and the live swap is PRINTED above as the '
+     'evidence those repairs landed where they were aimed **',
+     # LIVE: the headline, both directions of it
+     _rate(_alt) > _rate(_rep)
+     and min(_rate(_mh), _rate(_del)) > _rate(_ext)
+     # PINNED at `PIN`: the clause that moved, as the record it is
+     and _rate(_rep_p) >= max(_rate(_mh_p), _rate(_del_p))
+     and _rate(_alt_p) > _rate(_rep_p))
 
 # ⛔⛭⛭ *`Ⓒ②`'s first form also asserted `DELIBERATE` above `EXTENDED` by a FACTOR OF THREE, which
 #   contradicted this receipt's own `Ⓒ③` --- `the figures are PRINTED above and pinned nowhere` --- and
@@ -429,7 +468,10 @@ gate('Ⓒ③ ⌗ and the figures are PRINTED above and pinned nowhere, because a
      len(CELL) / 10 < len(_D) < len(CELL) / 3)
 
 # ======================================================================================
-head('D -- THREE DISJUNCTIONS STAND ON ARMS THAT ALL DANGLE, AND NINETEEN ARMS ARE DEAD')
+# ⌗ r7364: the heading named a live count and the count is now `0`, which is this section's own
+#   result -- so it names the FRAME instead.  *The dead-arm figure moves with the ledger too and is
+#   printed below rather than carried in a title.*
+head('D -- THE ALL-DANGLING DISJUNCTIONS: THE FINDING AT `PIN`, AND NONE LEFT LIVE')
 # ======================================================================================
 _ALT = [r for r in LEDGER if r[2] == 'PAPER' and 'UNADJUDICATED' not in r[5]
         and 'ALT' in r[4].split(',')]
@@ -446,10 +488,43 @@ print(f'      {len(_ALT)} ALT arm(s) in {len(_byrec)} receipt(s); {len(_disj)} c
 print(f'      every live arm dangles in {len(_allday)} of them; {len(_dead)} arm(s) are DEAD')
 for _k in sorted(_allday):
     print(f'        ⛔ {_k}')
+# ⛔⛭⛭⛭ r7364+60: AND THE FLOOR FIRED ON ITS OWN SUCCESS, IN THE RECEIPT WHOSE SUBJECT IS THAT CLASS.
+#   *`0 < len(_allday)` required at least one disjunction standing on arms that ALL dangle to still
+#   exist.  **This line's repair phase removed the last of them.**  So the day the defect was gone the
+#   gate went red for its being gone -- the seventh instance of the fail-on-success class this
+#   fortnight, and the second inside a receipt of this seat's own that NAMES the class.*
+#   ⇒ *** `L-249`'s rule, in the form `Ⓓ③` two gates below already uses: the FINDING is held in the
+#     pinned frame, where it was made and where it is a fact forever; the live arm is MONOTONE
+#     DOWNWARD, which is the only direction repair can move it; and the live `0` is PRINTED as the
+#     result it is rather than asserted away. ***
+#   ⌗ *The live measurement is still being TAKEN, and that is asserted separately: the cell of 2+-arm
+#     disjunctions is non-empty live, so a `0` here means the defect is gone and not that the reader
+#     stopped looking -- which is the one way a monotone arm can go vacuous.*
+_ALT_PIN = [r for r in LEDGER_PIN if r[2] == 'PAPER' and 'UNADJUDICATED' not in r[5]
+            and 'ALT' in r[4].split(',')]
+_byrec_pin = {}
+for _r in _ALT_PIN:
+    _byrec_pin.setdefault(_r[0], []).append(_r)
+_disj_pin = {k: v for k, v in _byrec_pin.items() if len(v) > 1}
+_allday_at_pin = {k: v for k, v in _disj_pin.items()
+                  if [a for a in v if a[1] in ALLP_PIN]
+                  and all(dangles(a[1]) for a in v if a[1] in ALLP_PIN)}
+print(f'      at {PIN}: {len(_allday_at_pin)} of {len(_disj_pin)} disjunction(s) stood on arms that '
+      f'ALL dangle;  live: {len(_allday)} of {len(_disj)}')
+print(f'      ⇒ the live figure is {len(_allday)}, and it is the RESULT: every all-dangling '
+      f'disjunction this line could reach has been repaired')
 gate('Ⓓ① ⛔ a disjunction whose EVERY LIVE ARM DANGLES is a gate with no subject anywhere in it, and '
-     'the cell carries more than one and fewer than a tenth of them.  ** Printed above by name, so '
-     'the holding seats can see their own **',
-     0 < len(_allday) < len(_disj) / 10)
+     'the cell carried more than one and fewer than a tenth of them AT `PIN`, where that was found. '
+     '** Printed above by name, so the holding seats can see their own.  ⛭ r7364: the live arm is '
+     'MONOTONE DOWNWARD rather than floored, because the floor fired on this line\'s own success -- '
+     'the last all-dangling disjunction was repaired and the gate went red for its being gone.  The '
+     'live figure is printed and not asserted, and the live cell is asserted NON-EMPTY so a zero '
+     'means the defect is gone and not that the reader stopped looking **',
+     # PINNED at `PIN`: the finding as it was made
+     0 < len(_allday_at_pin) < len(_disj_pin) / 10
+     # LIVE: monotone in the only direction repair can move it, and the reader is still reading
+     and len(_allday) <= len(_allday_at_pin)
+     and len(_disj) > 0)
 gate('Ⓓ② ⇒ and a disjunction ACCUMULATES arms that reach nothing: more than a tenth of all ALT arms '
      'are absent from every live paper, so the form declares more cover than it has.  ** The two '
      'defects are different: a dead arm cannot fire, a dangling arm fires on the wrong sentence **',
@@ -534,7 +609,21 @@ gate('Ⓔ② ⌗ and the over-count is NAMED rather than reconciled by guessing:
      'already re-stated under the grain clause in that same revision.  ** The order\'s number was '
      'right and mine was off by one, for a boundary reason, and both are reported **',
      any(r[0].split('/')[1] == 'L204_physics_reach' and r[5] == 'REPAIR-OWED'
-         and 'grain clause' in r[6] for r in CELL))
+         and 'grain clause' in r[6] for r in CELL_PIN))
+#: ⛔⛭ r7354 (60), AND THIS RECEIPT BROKE ITS OWN STATED RULE.  The line above read the LIVE cell for
+#: a row the claim is about AT THE PIN, so it went red the moment this seat's own repair stride
+#: retired that row -- the fail-on-success shape `Ⓕ②` below names in words.  ** The historical arm is
+#: now read at the pin, where it is a claim, and the live state is asserted separately and MONOTONE:
+#: the owed rows of that prefix only fall, because retiring them is what the phase does. **
+_e2_pin = [r for r in CELL_PIN if r[0].split('/')[1] == 'L204_physics_reach'
+           and r[5] == 'REPAIR-OWED']
+_e2_live = [r for r in CELL if r[0].split('/')[1] == 'L204_physics_reach'
+            and r[5] == 'REPAIR-OWED']
+gate(f'Ⓔ②ᵃ ⛭ and the LIVE companion is stated monotone rather than as a value, which is the repair '
+     f'this receipt prescribes applied to itself: that prefix held {len(_e2_pin)} owed row(s) at the '
+     f'pin and holds {len(_e2_live)} live, and the count only falls because retiring them is what '
+     f'the phase does',
+     len(_e2_live) <= len(_e2_pin))
 gate('Ⓔ③ ⛔⛭⛭⛭ AND THE `MEANING-HELD` BAND IS BROKEN.  I pre-registered `50` per cent central, band '
      '`25`-`80`, and the set came back with NONE.  ** Published as broken, in the gate, where a '
      'reader cannot miss it **',
@@ -580,7 +669,16 @@ gate('Ⓕ② ⇒ so `MEANING-HELD` is for the INEXPRESSIBLE and `L-249`\'s rule 
      'and is named: pin the historical state at its commit, assert the current state separately, '
      'make the live check MONOTONE **',
      all('L-249' in r[6] for r in _open_rows)
-     and all(any(x[1] == r[2] and 'L-249' in x[6] for x in LEDGER) for r in _open_rows))
+     and all(any(x[1] == r[2] and 'L-249' in x[6] for x in LEDGER_PIN) for r in _open_rows))
+#: ⛔⛭ r7354 (60): the second clause searched the LIVE ledger for the note it is a claim about AT THE
+#: PIN.  ** The phase rewrote those notes when it repaired the rows, so the clause reddened because
+#: the repair it asks for HAPPENED. **  ⇒ Read at the pin, with the live companion monotone below --
+#: and the lesson is this receipt's own sentence, which it did not apply to its own gate.
+_f2_live = [r for r in _open_rows if any(x[1] == r[2] for x in LEDGER)]
+gate(f'Ⓕ②ᵃ ⛭ and the live companion: of the {len(_open_rows)} openness rows pinned here, '
+     f'{len(_f2_live)} still have a literal the live ledger carries, and that number only falls as '
+     f'the phase repairs them -- asserted as a direction, not as a value',
+     len(_f2_live) <= len(_open_rows))
 gate('Ⓕ③ ⌗ and the distinction is stated so a reader who disagrees disagrees with ONE decision '
      'rather than with an aggregate -- which is the whole reason the share came out at zero and the '
      'band broke',

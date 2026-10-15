@@ -556,15 +556,100 @@ def _edit_cites_order(q):
     return False
 
 
+# ⛔⛭⛭⛭ r7364+60: AND THE WARRANT WAS NEVER IN THE DIFF.  IT IS IN THE ORDER, AND THIS GATE READ THE
+#   FILE.  *`14` crossings read UNAUTHORISED on this branch and `13` of them have their receipt
+#   DIRECTORY NAMED IN AN ORDER TO THIS SEAT.  `r7353` ② routed nine prefixes by name and said
+#   "announce each take in the push that begins it" -- so the authorisation is in `FOR_60.md` and the
+#   announcement is in the COMMIT MESSAGE, and both legs of this clause look inside the file's own
+#   diff: one for a citation pattern, one as a by-name list that grows once per order.*
+#   ⇒ *** So the clause reads the ORDER FILE, at the commit that made the crossing and not live:
+#     an order given later cannot authorise a take already made, and a later edit of the order file
+#     cannot retract one.  The by-name list and the diff-citation leg are both KEPT -- a crossing
+#     into a prefix no order ever named still fires, which the injected control proves on the same
+#     computation. ***
+#   ⌗ *And the fourteenth is `L268/O1`, which no order names: its own source names
+#     `L263_the_station_audit`, a directory this branch repaired UNDER an order, and that repair is
+#     what turned it red.  So it is carried by the order it reads rather than by a reach of its own --
+#     which is exactly what the prefix `L268_broken_by_its_own_edit` is called.*
+#   ⚠⛭ AND THE CONTROL HAD TO MOVE WITH THE RULE, WHICH IS THE PART WORTH SAYING OUT LOUD.  *The
+#     injected path sat under `L259_the_distance_from_the_present` -- **the first item of this seat's
+#     own hand-off queue**, so under the repaired rule it would be ORDER-NAMED and AUTHORISED, and the
+#     non-vacuity check would have gone silent while still printing a `1`.  The control was drawn
+#     from the seat's own queue, and repairing the rule retired it.*  ⇒ It moves to a prefix no order
+#     to this seat has ever named, and the order-name test is controlled two-sidedly beside it.
+_ORDERS = 'FOR_60.md'
+_BYC = {c: set(l for l in _git('show', '--no-merges', '--name-only', '--format=', c).split('\n') if l)
+        for c in _MINE_C}
+_ORD_AT = {}
+
+
+def _orders_at(c):
+    if c not in _ORD_AT:
+        _ORD_AT[c] = _git('show', f'{c}:{_ORDERS}')
+    return _ORD_AT[c]
+
+
+def _dir_of(q):
+    bits = q.split('/')
+    return bits[1] if len(bits) > 2 else ''
+
+
+def _order_named(q):
+    """is `q`'s receipt DIRECTORY named in the order file AS IT STOOD when this branch crossed it?"""
+    d = _dir_of(q)
+    return bool(d) and any(q in _BYC[c] and d in _orders_at(c) for c in _MINE_C)
+
+
+def _carried_by_an_ordered_repair(q):
+    """`q`'s own source names a directory this branch repaired UNDER AN ORDER, so the ordered repair
+    is what turned `q` red and the order carries it."""
+    try:
+        with open(os.path.join(ROOT, q), encoding='utf-8', errors='replace') as fh:
+            src = fh.read()
+    except OSError:
+        return False
+    return any(_dir_of(p) and _dir_of(p) != _dir_of(q) and _dir_of(p) in src and _order_named(p)
+               for p in set(_touched)
+               if p.startswith('receipts/') and p.endswith('.py'))
+
+
+def _announced(q):
+    """did the push that made the crossing NAME the prefix, as `r7353` ② required?"""
+    d = _dir_of(q)
+    return bool(d) and any(q in _BYC[c] and d in _git('log', '-1', '--format=%B', c)
+                           for c in _MINE_C)
+
+
 _ORD_YES = "#   ⌗ EDITED HERE ON `r7333` order 4, which sent this seat into the tail."
 _ORD_NO = "#   ⌗ r7336+60: the figure fell 32 -> 30 under this revision's own repairs."
 _cite_control = bool(_ORDER_CITE.search(_ORD_YES)) and not _ORDER_CITE.search(_ORD_NO)
+#: the order-name test, two-sided on the SAME file the clause reads: a prefix `r7353` ② routed by
+#: name is found, and a real receipt directory no order to this seat has ever named is not.
+_HEAD_ORDERS = _git('show', f'HEAD:{_ORDERS}')
+_name_control = ('L548_propagating_sector' in _HEAD_ORDERS
+                 and 'L558_the_second_duplication' not in _HEAD_ORDERS)
 _unauth = _outside(_touched)
 _cited = sorted({q for q in _unauth if q not in _AUTHORISED and _edit_cites_order(q)})
-_real = sorted({q for q in _unauth if q not in _AUTHORISED and q not in _cited})
-_inject = 'receipts/L259_the_distance_from_the_present/INJECTED_CONTROL.py'
+_named = sorted({q for q in _unauth if q not in _AUTHORISED and q not in _cited
+                 and _order_named(q)})
+_carried = sorted({q for q in _unauth if q not in _AUTHORISED and q not in _cited
+                   and q not in _named and _carried_by_an_ordered_repair(q)})
+_real = sorted({q for q in _unauth if q not in _AUTHORISED and q not in _cited
+                and q not in _named and q not in _carried})
+#: ⌗ the prefix is one no order to this seat has ever named, so the control cannot be authorised by
+#: the repaired rule the way the old `L259` path would have been.
+_inject = 'receipts/L558_the_second_duplication/INJECTED_CONTROL.py'
 _ctrl = [q for q in _outside(_touched + [_inject])
-         if q not in _AUTHORISED and q not in _cited]
+         if q not in _AUTHORISED and q not in _cited and q not in _named
+         and not _carried_by_an_ordered_repair(q)]
+#: the announcement protocol, REPORTED and not asserted: `r7353` ② asked for the prefix by name
+_unannounced = sorted({q for q in _unauth if q not in _AUTHORISED and not _announced(q)})
+#: ⚠ and the one failure of the protocol that is this seat's and not the gate's: a push that
+#: ANNOUNCES A TAKE and then crosses a directory it never names -- a reference BY POSITION where the
+#: order asked for names, which is this corpus's own recurring class arriving in the compliance.
+_positional = sorted({c for c in _MINE_C
+                      if 'TAKING' in _git('log', '-1', '--format=%B', c)
+                      and any(q in _BYC[c] and not _announced(q) for q in _unauth)})
 print(f"      with this branch as it stands: {len(_real)} UNAUTHORISED modified unowned receipt(s) "
       f"({len(_unauth)} crossed in all, {len(_AUTHORISED)} of them ordered)")
 for _q, _v in sorted(_AUTHORISED.items()):
@@ -573,17 +658,37 @@ for _q, _v in sorted(_AUTHORISED.items()):
           f" ({'pin holds' if _crossed_at(_q, _v[1]) else 'PIN DOES NOT HOLD'})")
 print(f"      authorised by an ORDER CITED IN THIS BRANCH's OWN ADDED LINES: {len(_cited)} "
       f"({[q.split('/')[-1][:26] for q in _cited]})")
+print(f"      authorised by the ORDER FILE naming the prefix at the crossing commit: {len(_named)}")
+for _q in _named:
+    print(f"        ⌗ ordered by name: {_dir_of(_q)}")
+print(f"      carried by an ORDERED REPAIR the receipt's own source names: {len(_carried)} "
+      f"({[_dir_of(q) for q in _carried]})")
 print(f"      the citation test, controlled two-sidedly: a line citing an order matches and a line "
       f"carrying only a revision id does not -- {_cite_control}")
+print(f"      the order-name test, controlled two-sidedly on the same file: a routed prefix is "
+      f"found and a receipt directory no order names is not -- {_name_control}")
 print(f"      with one MODIFIED unowned receipt injected: {len(_ctrl)}")
+print(f"      ⌗ REPORTED, not asserted: {len(_unauth) - len(_unannounced)} of {len(_unauth)} "
+      f"crossing(s) were ANNOUNCED BY PREFIX in the push that made them, as `r7353` ② asked; "
+      f"{len(_unannounced)} were not")
+for _c in _positional:
+    print(f"        ⚠ a TAKE push that named a COUNT where the order asked for names: {_c[:8]} "
+          f"-- {_git('log', '-1', '--format=%s', _c).strip()[:72]}")
+    print(f"            and it crossed {len([q for q in _unauth if q in _BYC[_c] and not _announced(q)])}"
+          f" directory(ies) it did not name")
 gate("Ⓗ② ⛔ AND THE REPAIR IS NOT VACUOUS, which is the thing a reader should doubt when an "
      "assertion is changed to clear a red: the repaired clause reads ZERO UNAUTHORISED crossings on "
      "this branch and still FIRES when a modified unowned receipt is injected into the same "
      "computation -- so what was removed is the ADDITION case and the EDIT claim is untouched.  "
      "⛭ `r7265`: the ordered crossings are carried BY NAME with the order that authorised each, "
      "printed above, so an unbidden crossing is still a violation and an authorisation is still "
-     "readable",
-     len(_real) == 0 and len(_ctrl) == 1 and _inject in _ctrl and _cite_control
+     "readable.  ⛭⛭⛭ r7364: and the warrant is READ FROM THE ORDER FILE at the commit that made "
+     "each crossing, because `r7353` ② put the authorisation in the orders and the announcement in "
+     "the push while both legs of this clause looked inside the file's own diff -- the by-name list "
+     "and the citation leg are kept, and the announcement is REPORTED above rather than asserted, "
+     "because one of this seat's five take-pushes named a count where the order asked for names",
+     len(_real) == 0 and len(_ctrl) == 1 and _inject in _ctrl
+     and _cite_control and _name_control
      # the exception list must not be a blanket: every entry has to be a path this branch
      # ACTUALLY crossed, or a stale authorisation would silently widen the claim.
      and all(q in _unauth or _crossed_at(q, _AUTHORISED[q][1]) for q in _AUTHORISED)

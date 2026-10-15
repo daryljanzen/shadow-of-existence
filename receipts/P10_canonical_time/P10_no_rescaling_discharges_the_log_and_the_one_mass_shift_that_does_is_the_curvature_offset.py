@@ -69,6 +69,7 @@ before it is added --- no large quantity is ever formed, so none is ever subtrac
 Written r6436.  Stated for reversal.
 """
 import os
+import re
 import subprocess
 import sys
 
@@ -188,10 +189,17 @@ def main():
     print('  ' + '=' * 74)
     reg = ' '.join(open(os.path.join(ROOT, 'THE_REGISTER.md'),
                         encoding='utf-8', errors='replace').read().split())
+    _reg_md = re.sub(r'\*+|~~', '', reg)
     check('⓹ r6435 already records that on this conformally flat background the log\'s counterterm '
           'is degenerate with Einstein-Hilbert and the cosmological term -- so this result NARROWS '
           'the row rather than reopening it',
-          'degenerate with Einstein' in reg)
+          #: ⛭ r7360+60: the retired key stopped at 'Einstein' where the register reads
+          #: 'Einstein--Hilbert', so it was a CHARACTER WINDOW cut mid-name and the word-aligned
+          #: limb had nothing to run on.  ** Widened to the register's whole clause: the two
+          #: integrals both proportional to the volume, and the degeneracy that follows. **
+          ('so $\\int\\!\\sqrt g\\,R^{2}$ and $\\int\\!\\sqrt g\\,R$ are both $\\propto V$: the '
+           "log's counterterm is degenerate with Einstein--Hilbert and the cosmological term "
+           'there.') in _reg_md)
 
     print()
     print('  ' + '=' * 74)

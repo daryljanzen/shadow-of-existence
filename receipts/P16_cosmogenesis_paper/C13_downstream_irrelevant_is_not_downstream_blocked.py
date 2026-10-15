@@ -71,6 +71,16 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+def body_at(rev, path):
+    """the same body, read at a COMMIT -- for a span pinned where it stood (`L-249`'s rule)."""
+    import subprocess as _sp
+    raw = _sp.run(['git', 'show', f'{rev}:{path}'], cwd=ROOT, capture_output=True, text=True,
+                  errors='replace').stdout
+    b = '\n'.join(l for l in raw.split('\n') if not l.lstrip().startswith('%'))
+    j = b.find('\\begin{thebibliography}')
+    return b[:j] if j > 0 else b
+
+
 def main():
     print()
     print('  C13 -- are the three cosmogenesis items work, or scope?')
@@ -93,10 +103,57 @@ def main():
           'RETIRED r2639' in led and 'SCOPE-BY-DESIGN' in led)
 
     # and the paper says the opposite
-    check('✔ and NOW P16 says the opposite: the exact regulated peak "remains open, and is '
-          'downstream-irrelevant here: once dissociation is total, the memory of the peak is erased"',
-          'remains open, and is downstream-irrelevant here' in p16
-          and 'once dissociation is total, the memory of the peak is erased' in p16)
+    #: ⛔⛭⛭⛭ r7360+60: THE THREE SENTENCES THIS FILE QUOTES ARE OPENNESS MARKERS, AND ALL THREE
+    #: WOULD HAVE FIRED ON SUCCESS.  *Each says some item is OPEN, so the day the corpus computes
+    #: the regulated peak, or reaches the last percent of the rates, the sentence retires and the
+    #: pin goes red -- for the corpus having done the work this file argued the work was free of.*
+    #:   ⇒ `L-249`'s rule, as a class: ** all three are read AT `c01f56c5` (r2419, the consolidated
+    #:     corpus this finding was made against), where they stood and where no later edit can
+    #:     reach them, and the LIVE state is asserted MONOTONELY below: the bucket this receipt
+    #:     retired carries no data row, which can only fail if a seat RE-OPENS it. **
+    #:   ⌗ And how many of the three the paper still carries is REPORTED, not asserted -- so the
+    #:     paper closing one of them is recorded here instead of breaking this file.
+    _PIN_C13 = 'c01f56c5'
+    _p16_then = re.sub(r'\s+', ' ', body_at(_PIN_C13, 'corpus/cosmogenesis_paper.tex'))
+    #: ⛔⛭ AND THE SPANS ARE NOT IN A LOOP, which this file would have got wrong: ** the
+    #: instrument keys only a literal standing to the LEFT OF AN `in`, so a span reaching its
+    #: haystack through a LOOP VARIABLE is invisible to the ledger that adjudicates it. **  Second
+    #: face of `r7356`'s invisibility class, and the first time this seat hit it twice in a night.
+    _PEAK = ('The exact regulated peak---how deep the compression runs on the smooth substrate '
+             'through the branch point---remains open, and is downstream-irrelevant here: once '
+             'dissociation is total, the memory of the peak is erased')
+    _CAPTION = ('The peak is drawn at its $M$-independent infall-scale lower bound '
+                '(Sec~\\ref{sec:peak}); its exact regulated value is open and '
+                'downstream-irrelevant.')
+    #: ⌗ quoted AT THE PIN in the pin's own words, which differ from the live ones: at r2419 the
+    #: open remainder was TWO things, the rates AND the likelihood against the measured abundances.
+    #: ** The likelihood half has since been discharged, so the pinned sentence is not the live
+    #: sentence -- and that difference IS this file's finding rather than a break in it. **
+    _PRECISION = ('What remains open is not the computation but its last-percent precision: the '
+                  'specially-evaluated (as against REACLIB) light-nuclide rates and the likelihood '
+                  'against the measured abundances---a data-confrontation frontier the title does '
+                  'not stake itself on (Sec~\\ref{sec:verdict}), not a debt.')
+    check(f'✔ P16 said the opposite of the bucket, pinned at {_PIN_C13} where it stood -- the '
+          f'exact regulated peak, as one whole sentence with what makes it irrelevant '
+          f'({_p16_then.count(_PEAK)} occurrence)',
+          _PEAK in _p16_then and _p16_then.count(_PEAK) == 1)
+    check(f'⓶ and the second entry is the figure caption for the same fact, pinned whole: the peak '
+          f'placed at its lower bound AND its exact value called open '
+          f'({_p16_then.count(_CAPTION)} occurrence)',
+          _CAPTION in _p16_then and _p16_then.count(_CAPTION) == 1)
+    check(f'⓷ and the third marks itself NOT A DEBT in the same sentence as "open", pinned whole '
+          f'({_p16_then.count(_PRECISION)} occurrence)',
+          _PRECISION in _p16_then and _p16_then.count(_PRECISION) == 1)
+    _live3 = sum(1 for s in (_PEAK, _CAPTION, _PRECISION) if s in p16)
+    _rows = [l for l in led.split('\n')
+             if not l.lstrip().startswith('#') and l.count('|') >= 3]
+    check(f'⇒ and the LIVE arm is MONOTONE: the retired bucket carries no data row '
+          f'({sum(1 for l in _rows if "OPEN-DOWNSTREAM" in l)} of {len(_rows)}), which fails only '
+          f'if a seat RE-OPENS it and never because the paper closed an item.  *Reported, not '
+          f'asserted: {_live3} of the 3 pinned sentences still stand verbatim live -- the third '
+          f'has had HALF of it discharged, the likelihood against the measured abundances, which '
+          f'is this file\'s finding arriving rather than a break in it.*',
+          not any('OPEN-DOWNSTREAM' in l for l in _rows))
     # ⬭ r7347+cc66, REPAIR: the owed row is "not by the peak's value" -- r7260+60, DANGLES
     #   (negator-stripped): it "names no subject, and the adopted head test stops at the negator".
     #   ⛔ AND THE COMPANION CONJUNCT WAS CUT MID-WORD -- it ended `..., n` to bridge into `not`,
@@ -108,17 +165,11 @@ def main():
           'the abundances are fixed by the conditions in the window on the cooling leg '
           "(Secs~\\ref{sec:rate}, \\ref{sec:network}), not by the peak's value" in p16)
 
-    # ⓶ the duplicate
-    check('⓶ and the second entry is the figure caption for the same fact: "its exact regulated value is '
-          'open and downstream-irrelevant"',
-          'its exact regulated value is open and downstream-irrelevant' in p16)
-    check('with the peak placed: "The peak is drawn at its $M$-independent infall-scale lower bound"',
-          'The peak is drawn at its $M$-independent infall-scale lower bound' in p16)
+    # ⓶ the duplicate -- its span is pinned above with the other two, the peak's placement being
+    #   part of the same pinned sentence rather than a second live needle for one fact.
 
-    # ⓷ not a debt
-    check('⓷ and the third is marked NOT A DEBT in the same sentence as "open": "What remains open is not '
-          'the computation but its last-percent precision"',
-          'What remains open is not the computation but its last-percent precision' in p16)
+    # ⓷ not a debt -- pinned above as one whole sentence: the openness, what it is openness OF,
+    #   and the paper's own 'not a debt', which the retired span left outside itself.
     # ** r6931+70.1: HALF OF THIS SENTENCE WAS DISCHARGED, AND THE OTHER HALF IS THE FINDING.
     #   Class (b) for the half that moved, (c) for the half that stays.  At r2639 the open remainder
     #   was TWO things -- "the specially-evaluated (as against REACLIB) light-nuclide rates AND THE

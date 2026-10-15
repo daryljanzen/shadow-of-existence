@@ -10,8 +10,11 @@ the shear, $4\\sigma^2+O(\\sigma^4)$.  *** Nobody had run what that means for th
 (repaired r7346, on `r7341` ①). **  The polynomial below is `L549/Q1`'s, computed there symbolically
 from a NAMED metric, and the family is READ OUT OF `Q1`'s OWN FILE here rather than retyped:
 
-      *** g = diag(-1, e^{2t}, e^{2(t + sigma t)}, e^{2(t - sigma t)})   -- Q1's axisymmetric
-          Bianchi I family, shear eigenvalues (0, sigma, -sigma) over an isotropic expansion
+      *** g = diag(-1, e^{2t}, e^{2(t + sigma t)}, e^{2(t - sigma t)})   -- Q1's PLANAR
+          Bianchi I family, rates (1, 1+sigma, 1-sigma), shear eigenvalues (0, sigma, -sigma)
+          ** NOT axisymmetric: all three rates differ.  The AXISYMMETRIC family is the one this
+          receipt used to name, (-2 sigma, sigma, sigma), rates (H-2 sigma, H+sigma, H+sigma) --
+          and that is the whole distinction the repair turns on (corrected at r7354 on `r7349` ③'s ORDER). **
 
           sigma_ab sigma^ab = 2 sigma^2
           C^2 = sigma^2 (4 + 16 sigma^2 / 3) = 4 sigma^2 + O(sigma^4)
@@ -63,7 +66,7 @@ and $\\sigma_{ab}\\sigma^{ab}$ for that family and for the one this receipt used
 amplitude is the corpus's own object -- P10's transverse-traceless tower; nothing is imported except
 `Q1`'s derivation of the polynomial this receipt reasons FROM, which is the repair. *** **
 
-Written r2743.  Repaired r7346 on `r7341` ①.  Stated for reversal.
+Written r2743.  Repaired r7346 on `r7341` ①'s order, corrected r7354 on `r7349` ③'s order.  Stated for reversal.
 """
 import ast
 import importlib.util

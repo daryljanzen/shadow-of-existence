@@ -74,9 +74,17 @@ def check(label, cond):
         FAILED.append(label)
 
 
+#: ⛭⛭ r7356 (60) on `r7353` ①'s ORDER, and the form is `r7258`'s settled one: ** a span that runs
+#: through emphasis markup is repaired by NORMALISING THE MARKUP IN THE READER, never by splitting
+#: the span around the markers or disjoining over them. **  *A bake that lands `\emph` correctly must
+#: not be able to falsify a receipt about the sentence it emphasises.*
+_EMPH = re.compile(r'\\(?:emph|textit|textbf)\{([^{}]*)\}')
+
+
 def flat(f):
-    return re.sub(r'\s+', ' ', open(os.path.join(ROOT, f), encoding='utf-8',
-                                    errors='replace').read())
+    _t = re.sub(r'\s+', ' ', open(os.path.join(ROOT, f), encoding='utf-8',
+                                  errors='replace').read())
+    return _EMPH.sub(r'\1', _t)
 
 
 def main():
@@ -109,12 +117,25 @@ def main():
     # (2) is untouched -- and it is a stated criterion, not an oversight
     check('(2): P13 denies the compact face existence by a STATED CRITERION, not by arbitrariness',
           'a thing exists only insofar as it endures' in p13)
-    check('and names what the face lacks: no timelike direction, no clock, no duration',
-          'no timelike direction, no clock, no duration' in p13)
-    check('and calls it real-by-construction, so this is not a claim that it is unreal',
-          'real-by-construction' in p13)
-    check('⇒ (2) UNTOUCHED by (1): a capacity to host colour is not a clock',
-          'no timelike direction, no clock, no duration' in p13)
+    #: ⛭ THE REPAIR (r7356 on `r7353` ①'s order).  ** Both owed rows pinned a FRAGMENT: the first
+    #: named the lacks without naming WHOSE they are, and the second was a single hyphenated token
+    #: occurring THREE times in the paper -- a pin on the file and not on the claim. **  Each is now
+    #: the shortest whole clause that carries its claim and occurs once under normalisation.
+    _LACKS = ('The fully Wick-rotated $S^5$ is Riemannian: no timelike direction, no clock, '
+              'no duration')
+    _REAL = ('it is real-by-construction---a genuine real form, a faithful analytic '
+             'continuation---but not a second physical world')
+    check(f'and names what the face lacks, with the face NAMED in the same clause and the clause '
+          f'occurring once ({p13.count(_LACKS)}): "{_LACKS}"',
+          _LACKS in p13 and p13.count(_LACKS) == 1)
+    check(f'and calls it real-by-construction AND not a second physical world in one clause, so '
+          f'this is not a claim that it is unreal -- and the clause occurs once where the bare '
+          f'token occurs {p13.count("real-by-construction")} times: "{_REAL}"',
+          _REAL in p13 and p13.count(_REAL) == 1
+          and p13.count('real-by-construction') > 1)
+    check('⇒ (2) UNTOUCHED by (1): a capacity to host colour is not a clock -- asserted on the '
+          'same named clause, which is what says the face has no clock',
+          _LACKS in p13 and p13.count(_LACKS) == 1)
 
     # (3) untouched and independently fatal
     check('(3): P13 demands BOTH grounds of any coherent matter route',

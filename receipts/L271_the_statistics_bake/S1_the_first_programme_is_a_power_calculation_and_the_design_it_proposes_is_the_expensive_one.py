@@ -73,6 +73,7 @@ most, which is exactly why the missing power statement is worth naming.
 Written r3160, `L-271`.  Stated for reversal.
 """
 import os
+import re
 import sys
 from math import comb
 
@@ -251,9 +252,16 @@ def main():
           p5_two <= 0.05)
     p06 = os.path.join(ROOT, 'corpus', 'shadow_of_existence.tex')
     body = open(p06, encoding='utf-8', errors='replace').read() if os.path.exists(p06) else ''
+    _p06_flat = re.sub(r'\s+', ' ', body)
+    _SURVIVORSHIP = ("a reliability estimate built from one's own successes is survivorship and not "
+                     'measurement')
     check('⓸ᵇ ⛔ AND THEY MAY NOT BE SO READ, on the paper\'s OWN ground: it says a reliability '
           'estimate built only from successes is survivorship, not measurement',
-          'survivorship' in body and 'not measurement' in body)
+          #: ⛭ r7360+60: the arm was the two TOKENS 'survivorship' and 'not measurement' conjoined
+          #: for one claim made in ONE sentence, so the paper could carry both words in unrelated
+          #: places and the assertion would still pass.  ** Widened to the sentence, which names
+          #: what is survivorship and what it is not. **
+          _SURVIVORSHIP in _p06_flat and _p06_flat.count(_SURVIVORSHIP) == 1)
     check('⓸ᶜ ⛭ so the finding is not that the lemma is nearly proved -- it is that the binding '
           'constraint moves from SAMPLE SIZE to SELECTION DISCIPLINE, and the corpus carries '
           'neither `pre-registration` nor `blinded` anywhere in seventeen papers',

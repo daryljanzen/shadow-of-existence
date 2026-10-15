@@ -111,6 +111,31 @@ def flat(path):
     return re.sub(r'\s+', ' ', open(path, encoding='utf-8', errors='replace').read())
 
 
+#: ⛭⛭ r7360+60: THE MARKUP IS NORMALISED IN THE READER, which is `r7258`'s settled form and the
+#: repair two of this prefix's owed rows were waiting for.  ** `\emph{...}` inside a pinned span makes
+#: the pin break on any re-typesetting that keeps the meaning, and apparatus markers -- `\rcpt`,
+#: `\ldg`, `\cite` with the `~` that binds them -- are not prose at all. **  *The span is never split
+#: to dodge them.*
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+_MARK = re.compile(r'~?\\(?:ldg|rcpt|cite[a-z]*)\{[^{}]*\}')
+
+
+def _unmark(s):
+    for _ in range(4):
+        s, prev = _EMPH.sub(r'\1', s), s
+        if s == prev:
+            break
+    return _MARK.sub('', s)
+
+
+def norm_at(rev, name='geometric_core_paper.tex'):
+    """a paper at a revision, read the same way -- for a span pinned to the commit it stood at"""
+    import subprocess as _sp
+    return _unmark(re.sub(r'\s+', ' ', _sp.run(
+        ['git', 'show', f'{rev}:corpus/{name}'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout))
+
+
 # ---------------------------------------------------------------- the geometry
 M, AL = 0.12, 1.0                      # P14's own undercritical values
 f = lambda r: 1 - 2*M/r - r**2/AL**2
@@ -184,6 +209,7 @@ def main():
 
     # ------------------------------------------------------- (1) the two sentences
     p14 = flat(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'))
+    _p14_norm = _unmark(p14)
     check('⓵ P14 states the divergence WITH its cause: "the horizons sit at infinite tortoise '
           'distance, where the mode tends to a constant"',
           re.search(r'the horizons sit at infinite tortoise\s+distance, where the mode tends to a '
@@ -199,6 +225,7 @@ def main():
     #    L^2(dr_*) is CONTAINED in L^2(dl) here, so a Dirac-normalizable mode is automatically
     #    leaf-normalizable -- the inclusion is checked below).  Disambiguated at c54.214.
     p0 = flat(os.path.join(ROOT, 'corpus', 'geometric_core_paper.tex'))
+    _p0_norm = _unmark(p0)
     check('   ⛔ and p0\'s parenthesis now reads unambiguously: "whereas in the conserved spacetime '
           'Dirac norm the same static mode is not"',
           'whereas in the conserved spacetime Dirac norm the same static mode is not' in p0
@@ -221,11 +248,17 @@ def main():
     _DISAMB = 'c6facd47'        # c54.214 -- the disambiguation this section is about
     _before = _flat_at(f'{_DISAMB}~1')
     _after = _flat_at(_DISAMB)
-    _SENT = 'the full \\emph{propagating} spinor field sector (the built modes being leaf-bound, not '\
-            'the propagating theory)'
+    #: ⛭ r7360+60: the markup is out of the READER now, so the span is the paper's words and the
+    #: emphasis is not part of the claim.  *The span stays PINNED to the commit it is about: it is a
+    #: claim that one commit changed the parenthesis and nothing else, and a commit cannot reword
+    #: itself.*
+    _before_n, _after_n = _unmark(_before), _unmark(_after)
+    _SENT = ('the full propagating spinor field sector (the built modes being leaf-bound, not the '
+             'propagating theory)')
     check('   and the disambiguation was LOCAL, checked at its own commit: the surrounding sentence '
-          'stood unchanged across c54.214 -- only the parenthesis moved',
-          _SENT in _before and _SENT in _after)
+          'stood unchanged across c54.214 -- only the parenthesis moved, read with the emphasis '
+          'normalised so a re-typesetting cannot break a claim about a parenthesis',
+          _SENT in _before_n and _SENT in _after_n)
     # ** r6931+70.1: class (c), STALE.  r6683 (73eb61ef) rewrote p0's "the propagating spinor field
     #   sector is now built as well~\cite{JanzenDynamics}, the leaf-bound modes and the propagating
     #   field being two sectors rather than one owed" into "the descent onto a \emph{propagating}
@@ -240,10 +273,15 @@ def main():
           'Dirac field there propagating on the light cone", "the leaf-bound modes and the propagating '
           'field being two sectors" -- which is this file\'s own reading arriving in the paper, the '
           'divergence having been the normalisation and not the obstruction',
-          ('the descent onto a \\emph{propagating} spinor sector is built on the chiral member, which '
-           'is the unpolarised one, a Dirac field there propagating on the light cone') in p0
-          and 't selected~\\cite{JanzenMatter}, the leaf-bound modes and the propagating field being two sectors' in p0
-          and _SENT not in p0)
+          ('the descent onto a propagating spinor sector is built on the chiral member, which is '
+           'the unpolarised one, a Dirac field there propagating on the light cone') in _p0_norm
+          #: ⌗ and the second conjunct was a MID-WORD fragment -- "t selected~\\cite{...}, the
+          #: leaf-bound modes ..." -- which the normaliser would have broken anyway; widened to the
+          #: clause that names the sector, since its claim is that the two sectors are TWO.
+          and ('the propagating Dirac sector is built on the chiral member, which is the '
+               'unpolarised one, the chirality-asymmetric action on it permitted and not selected, '
+               'the leaf-bound modes and the propagating field being two sectors') in _p0_norm
+          and _SENT not in _p0_norm)
 
     # AND THE RESULT IS BANKED IN P14, not only in this file -- an unbanked result is lost
     # (corpus/check_receipts.py: "a result that lands in no paper is not banked").  These bind the
@@ -256,10 +294,30 @@ def main():
           'infinite tortoise distance is the plane-wave asymptotic"',
           'a modulus tending to a constant at infinite tortoise distance is the plane-wave '
           'asymptotic' in p14)
-    check('   ⚠ and it DECLINES the closure in the same passage: "What that supplies is the radial '
-          'continuum and not the sector"',
-          'What that supplies is the radial continuum and not the sector' in p14
-          and 'remain the undertaking the corpus names' in p14)
+    #: ⛔⛭⛭ r7360+60: THIS WAS AN OPENNESS MARKER AND IT FIRED ON SUCCESS.  *'remain the
+    #: undertaking the corpus names' asserts that P14 still calls the sector OPEN -- so the day the
+    #: corpus takes the undertaking up, this gate goes red for the corpus having done the work.*
+    #:   ⇒ `L-249`'s rule, as a class: ** the declining sentence is PINNED at the commit it stood at
+    #:     -- whole, with its subject, markup normalised -- and the LIVE state is asserted
+    #:     MONOTONELY: what must hold now is that this receipt's result is still BANKED in P14,
+    #:     which only fails if the result is unbanked. **
+    #:   ⌗ And whether the paper still declines is REPORTED rather than asserted, so the corpus
+    #:     closing the undertaking is recorded here instead of breaking this file.
+    _p14_then = norm_at(_DISAMB, 'matter_sector_paper.tex')
+    _DECLINES = ('What that supplies is the radial continuum and not the sector: the quantised '
+                 'field, its mode completeness, and the join between the static region\'s continuum '
+                 'and the wall---which sit in different regions---remain the undertaking the corpus '
+                 'names.')
+    _still = _DECLINES in _p14_norm
+    check(f'   ⚠ and it DECLINED the closure in the same passage at c54.214, pinned there as one '
+          f'whole sentence with its subject: the radial continuum is supplied and the field, its '
+          f'completeness and the join are not.  *Live, the paper {"still says so" if _still else "has moved on, which is the undertaking being TAKEN UP and not a failure here"}.*',
+          _DECLINES in _p14_then and _p14_then.count(_DECLINES) == 1)
+    check('   ⇒ and the LIVE arm is monotone: what must hold now is that this file\'s result is '
+          'still BANKED in P14 -- the paper citing it at the passage that uses it -- which fails '
+          'only if the result is unbanked, never because the corpus closed the undertaking',
+          'C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it'
+          in flat(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex')))
 
     b22 = flat(os.path.join(ROOT, 'receipts', 'L221_the_bridge', 'B22_the_tower_is_uniform.py'))
     check('⓶ B22 states what the row owes: "a scattering state with a continuum normalisation" that '
@@ -402,13 +460,24 @@ def main():
     # ⚠ this was written as check(..., True) and the hollow-assertion lint caught it at c54.214 --
     #   correctly: a scope claim asserted against the constant True certifies nothing.  Anchored
     #   instead to the corpus sentence the scope defers to.
+    #: ⛔⛭ r7360+60: this was an ALT of THREE arms and not one of them carried the claim.  *The
+    #: first was a REGEX matching a pattern clipped before the power law; the second was the clause
+    #: from 'gives' onward, naming nothing that gives it; the third was the leading half, naming no
+    #: subject -- and the three stood in a disjunction, so the weakest decided.*
+    #:   ⇒ ** ONE span: the whole sentence, both halves of the colon, with the emphasis unwrapped
+    #:     and the receipt marker stripped in the reader -- the double root named, the power law
+    #:     stated, and the consequence drawn. **  Occurring once, membership beside the count.
+    #: ⌗ and the read stays TRACEABLE: `flat` first, `_unmark` after.  **A normaliser wrapped
+    #: around the open() is `r7336`'s first face of the invisibility class -- the instrument cannot
+    #: see through it, so the pin gets better and the ledger goes blind.**
     bh = flat(os.path.join(ROOT, 'corpus', 'BH_causality_v2.tex'))
-    check('   ⇒ nothing here is claimed at a double root, and the corpus says why: "$f\\sim c\\,'
-          '\\delta^{2}$ gives $r_{*}\\sim-1/c\\delta$, a power law, so the construction that produces '
-          'a thermal spectrum has no first step to take"',
-          re.search(r'\$f\\sim c\\,\\delta\{2\}\$ gives', bh) is not None
-          or ('gives $r_{*}\\sim-1/c\\delta$, a power law' in bh
-              and 'At a double root the relation is not available at all' in bh))
+    bh = _unmark(bh)
+    _DOUBLE = ('At a double root the relation is not available at all: $f\\sim c\\,\\delta^{2}$ gives '
+               '$r_{*}\\sim-1/c\\delta$, a power law, so the construction that produces a thermal '
+               'spectrum has no first step to take.')
+    check(f'   ⇒ nothing here is claimed at a double root, and the corpus says why in one sentence '
+          f'({bh.count(_DOUBLE)} occurrence): "{_DOUBLE}"',
+          _DOUBLE in bh and bh.count(_DOUBLE) == 1)
 
     print()
     if FAILED:

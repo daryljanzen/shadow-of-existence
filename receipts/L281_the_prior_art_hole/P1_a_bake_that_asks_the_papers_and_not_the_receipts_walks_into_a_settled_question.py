@@ -57,6 +57,7 @@ settled ** -- `B67` says outright it is not, and this receipt does not touch it.
 
 Written r3180, `L-281`.  Stated for reversal.
 """
+import ast as _ast_P1
 import os
 import sys
 
@@ -114,12 +115,39 @@ def main():
     print('  ==========================================================================')
     heads = PA.receipt_heads()
     print(f'      receipt heads available to be searched : {len(heads)}')
+    #: ⛭⛭ THE REPAIR (r7356 on `r7353` ①'s ORDER).  ** The owed row pinned the phrase `seventeen
+    #: paper` in `reach_baseline.py` -- a SPELLING of the claim and not the claim. **  The claim is
+    #: that the baseline reads the PAPER BODIES and reads NO receipt docstring, so it is asserted as
+    #: that: the paper set is read out of the file's own `TEX2P` assignment and every member checked
+    #: to be a `.tex` the corpus holds, and the file's CODE is shown to name no `receipts` path at
+    #: all -- its docstring excluded, because the docstring discusses receipts at length and a
+    #: sentence cannot fail.  ⇒ *** Re-spell the sentence and this still passes; make the baseline
+    #: read a receipt, or drop a paper from its set, and it goes red. ***
+    _rb_src = open(os.path.join(ROOT, 'corpus', 'reach_baseline.py'),
+                   encoding='utf-8', errors='replace').read()
+    _rb = _ast_P1.parse(_rb_src)
+    _tex2p = None
+    for _n in _ast_P1.walk(_rb):
+        if (isinstance(_n, _ast_P1.Assign)
+                and any(getattr(t, 'id', '') == 'TEX2P' for t in _n.targets)):
+            _tex2p = eval(_ast_P1.unparse(_n.value), {'__builtins__': {}}, {})
+    _docstrings = set()
+    for _n in _ast_P1.walk(_rb):
+        if isinstance(_n, (_ast_P1.Module, _ast_P1.FunctionDef, _ast_P1.AsyncFunctionDef,
+                           _ast_P1.ClassDef)) and _ast_P1.get_docstring(_n, clean=False) is not None:
+            _docstrings.add(id(_n.body[0].value))
+    _code_names_receipts = [_n.value for _n in _ast_P1.walk(_rb)
+                            if isinstance(_n, _ast_P1.Constant) and isinstance(_n.value, str)
+                            and id(_n) not in _docstrings and 'receipts' in _n.value]
+    _missing = [k for k in (_tex2p or {})
+                if not os.path.exists(os.path.join(ROOT, 'corpus', k))]
     check(f'⓶ the corpus carries {len(heads)} receipt docstrings, and `reach_baseline` reads none '
-          'of them — it reads the seventeen paper bodies',
-          len(heads) > 500
-          and 'seventeen paper' in open(os.path.join(ROOT, 'corpus', 'reach_baseline.py'),
-                                        encoding='utf-8', errors='replace').read().lower()
-          .replace('17 paper', 'seventeen paper'))
+          f'of them -- its CODE names no `receipts` path ({len(_code_names_receipts)} of them) -- '
+          f'while the paper set it DOES read is its own `TEX2P`: {len(_tex2p or {})} `.tex` bodies, '
+          f'all present in the corpus ({len(_missing)} missing)',
+          len(heads) > 500 and _tex2p is not None and len(_tex2p) > 0
+          and all(k.endswith('.tex') for k in _tex2p) and not _missing
+          and not _code_names_receipts)
     hits = PA.search(['sqrt f', 'wall index'], heads=heads)
     files = {h[0] for h in hits}
     bridge = {h for h in files if 'L221_the_bridge' in h}

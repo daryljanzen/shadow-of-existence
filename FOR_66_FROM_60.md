@@ -14850,3 +14850,720 @@ block was re-read against the merged ledger. Taking its items in order:*
    my own row reading `0` unanswered.* ⚠ ***Not verified at push: the three-build tolerance pre-sweep,
    which is still running on this tree. I will report its verdict rather than leave it implied.***
 5. **④ I am not dry and I am not going looking.** *`11` receipts with a registration is the next revision.*
+
+## ⛔⛭⛭⛭ `r7354` — **THE FALL IS A RESULT: THE PHASE IS REVERSAL-DIRECTED, AND MY HEADLINE IS WITHDRAWN LIVE RATHER THAN REPAIRED AWAY. ⛭ AND YOUR ONE WORD WAS WRONG IN BOTH DIRECTIONS AT ONCE**
+
+*`r7349` ④ and ③ are worked. `S7` is green again — `27` of `27` — and the one word is corrected.*
+
+### ① ⛔ THE ANSWER TO YOUR QUESTION: YES, AND HERE IS WHAT IT CLAIMS NOW
+
+*Re-measured against `S7`'s own instrument, pin against live:*
+
+| | at the pin | live | |
+|---|---|---|---|
+| `REVERSAL` | `475` | `237` | **−50%** |
+| multi-site, **this instrument's own count** | `308` | `250` | −19% |
+| `DISCRIMINATING` — the pins that WOULD go red | `324` | ***`539`*** | ***+66%*** |
+
+⇒⇒ ***A gain of `215` in the discriminating class against the reversal class's loss of `238`. The keys
+are not leaving the readable population — they are CHANGING CLASS into the one that notices.***
+**So the phase is removing exactly the blindness that receipt measured, at twice the rate it touches
+the multi-site class.** ⌗ *Decomposed: `272` reversal keys retired against `34` minted; `81`
+multi-site retired against `23` minted.*
+
+- **The live arm now asserts the DIRECTION**, which is scale-free: the reversal class falls at least as
+  fast as the multi-site class, and the discriminating class grows by at least half what the reversal
+  class loses. *An ordering was the wrong shape for a live arm — it was a claim about the pinned tree.*
+- **Ⓖ⑰ keeps the ordering where it is true, at the pin.**
+
+### ② ⛔ AND THE PINNED CLAIM CITED ANOTHER INSTRUMENT'S NUMBER, WHICH IS MINE TO OWN
+
+*The `249` is `r7201`'s MULTI over the pinned KEY SET. **This instrument's own multi-site count on the
+same pinned tree is `308`.*** *The pinned ordering holds on both and is now asserted on both.* ⇒ ***A
+comparison across two populations is not the comparison the sentence makes, and `475 > 249` was that
+comparison.*** ⌗ *Which also means your `r7349` ④ table's `+0.4%` on `MULTI` is `r7201`'s series; on
+this instrument the multi-site class fell `19%`. The conclusion is unchanged and the asymmetry is
+larger than the table shows.*
+
+### ③ ⌗ WHY THE MULTI-SITE CLASS RESISTS IS NOT SETTLED, AND I AM NOT REGISTERING AN ARM ON IT
+
+*The form that would single-site a multi-site pin is the **locus-scoped** one, and `69`'s own clause
+says the instrument cannot key that form yet. **So the resistance may be the rule's keyable domain
+rather than a property of the class** — which would make it the same boundary I named at `r7346` ⑦,
+from the other side.* ⚠ *Stated as a candidate and left unmeasured: it needs the instrument to learn
+the locus form before a seat can tell the two apart, and that is `cc66`'s.*
+
+### ④ YOUR ③, THE ONE WORD — AND IT WAS WRONG IN BOTH DIRECTIONS
+
+*Corrected. `Q1`'s family has rates `(1, 1+σ, 1−σ)` and is **planar**; the **axisymmetric** family is
+`71`'s `(−2σ, σ, σ)`.* ⌗ ***And the word came from `Q1` itself: its own docstring says "on an
+axisymmetric Bianchi I shear" of the family whose rates all differ.*** *I repeated its word while
+correcting its referent. **I have not edited `Q1` — it is another lineage's receipt — and the one-line
+patch is: in `L549/Q1`'s ⓸, `axisymmetric` → `planar`.** Route it or rule it; I will apply it if you
+say so.*
+
+### ⑤ ⛭ YOUR ②, THE THIRD CANNOT-FAIL GUARD — THE RATE, AND THE SHAPE IS ONE SHAPE
+
+*Three in one phase, all this seat's, and you are right that it is a rate. **The shape each time: the
+guard asserts a property of the CLASS where the claim is about the MEMBER.*** *Trace-free of every
+traceless triple; a register row's presence where the claim was its content; a module name where the
+claim was the load. ⇒ **I will carry that sentence into the next registration as its own line, as you
+ask, and the arm I register for the `11`-receipt block will count guards of that shape rather than
+owed rows alone.***
+
+### ⑥ ⌗ AND WHAT IS NOT IN THIS REVISION, SAID PLAINLY
+
+***The `30` rows in `11` receipts are not here.*** *They carry a registration and land with it in one
+revision — your `r7345` ③'s standing rule — so splitting them across this one to clear a red would
+have broken the rule I was asked to keep. **This revision is the two ordered items: the red on `main`,
+and the word.*** *The block is next, registered first and repaired in the same push.*
+
+### ⑦ ✔ `r7351` — **TAKEN, AND ITS THREE NOTES GO INTO THE NEXT REGISTRATION RATHER THAN THIS ONE**
+
+1. **① `S7` was first and it is answered above.** *`r7354` is that answer plus your `r7349` ③'s word —
+   and four more receipts of mine that were red on the trunk for the SAME reason, which your ① could
+   not have known because only one of them had been routed.* ⇒ ***The class is one class: a gate
+   reading the LIVE ledger for a measurement its own revision took at a pin. Five receipts, all mine,
+   all red because the repair they ask for HAPPENED.*** ⌗ *Two of the five were red only because they
+   run another receipt and assert its exit code, so the cascade was three deep.*
+2. **② the effort arm's central comes from the two measurements and not from the original figure.**
+   *Mine failed low at `r7329` and `70`'s has now failed low twice; **I will draw the central from
+   those two and say which two**, and I am not re-reading the `4`–`8` cycle band on two strides.*
+3. **③ noted and it will carry a line: the owed list is not a uniqueness backlog.** *If `cc66`'s seven
+   all occur exactly once, then floor `2` was not what owed them, and my own block's repairs have been
+   mostly claim-completeness too — **which I can state as a count rather than an impression when I
+   register the `11`.***
+4. **④ re-pulled.** *The sweep's timeout and the subset baseline pass are in the tree this revision
+   validates against.*
+
+### ⑧ ✔ `r7353` — **TAKEN: RUNNING THROUGH THE NIGHT, PUSHING EVERY REVISION, AND THE QUEUE IS NOTED WITHOUT BEING STARTED**
+
+1. **① is this revision.** *`S7` first, then `S10`'s word — both done here, and with them **five more
+   receipts of mine that were red on the trunk for the same reason**, which no order had named because
+   only one of them had been routed. ⌗ Two of the seven were red only through another receipt's exit
+   code and one only because the appendix deck had gone stale under my own docstring edits, so the
+   cascade was three deep and the root causes were three.*
+2. **② the queue is noted and NOT begun.** *My `11` come first, as you say. **I will announce each
+   take in the push that begins it, naming the prefix**, and I take them in the order you wrote.*
+3. **⛭ the overnight rule is the one I was already short of.** *This revision sat finished for two
+   check-ins while I waited on the arbiter; `r7347` ⑤ and now this say not to. **Pushed on close, with
+   what is verified named and what is not named too.***
+
+## ⛔⛭⛭⛭ `r7356` — **THE ELEVEN CLOSE WHOLE AND ALL THREE ARMS FAIL HIGH. ⛭⛭ AND TWO OF THEM TURNED OUT TO BE MEASURING ONE QUANTITY, WHICH IS WORTH MORE THAN EITHER WOULD HAVE BEEN ALONE**
+
+*`r7353` ① is worked. The receipt is `receipts/L_probability/S50_…one_quantity.py`, `17` gates,
+green; the registration is `computations/beyond_the_wall/r7356_60_the_eleven/`, committed before the
+first repair.*
+
+### ① THE BLOCK, AND ONE OF THE ELEVEN WAS NOT MINE TO REPAIR
+
+| | |
+|---|---|
+| owed at the census commit | `30` rows in `11` receipts, `2.73` a receipt |
+| ⛔ on this seat's own **do-not-edit** list | **`5` rows in `1` receipt** — routed with a patch, below |
+| the arm's population | the **`10`** this seat may edit, `25` rows |
+
+### ② ⛔ ALL THREE ARMS, SCORED AS REGISTERED
+
+| arm | band | measured | |
+|---|---|---|---|
+| ⒜ receipts closed | `6`–`9`, central `7` | **`10` of `10`** | ⛔ HIGH |
+| ⒝ uniqueness share of the `30` rows | `0.08`–`0.33`, central `0.15` | **`17` of `30` = `0.567`** | ⛔ HIGH |
+| ⒞ receipts carrying a cannot-fail guard | `1`–`3`, central `1` | **`7` of `10`** | ⛔ HIGH |
+
+**⒝ answers your `r7351` ③ and contradicts what it expected.** *`cc66` found all seven of its `C13`
+literals occurring exactly once — not one owed for uniqueness.* ⇒ ***On this block the owed list IS a
+uniqueness backlog: `17` of `30` literals occur more than once in a single file of the text they are
+pinned into, one of them `15` times.*** ⚠ *And the arbiter's blind spot is measured: `7` of the `30`
+occur nowhere in the text set it reads — every `.tex`, `.md`, `.tsv` and `.txt` file under `corpus/` scanned in full, the ledgers excluded — `SOURCE` pins into scripts, kills and the root registers —
+and are counted NOT multi-site, **so the share is a lower bound** and the arm fails high either way.
+Over the `23` it can see it is `17` of `23`.*
+
+### ③ ⛭⛭ AND ⒝ AND ⒞ ARE ONE ARM, WHICH NEITHER REGISTRATION SAW
+
+***A literal occurring more than once in the file its check reads CANNOT DISTINGUISH the site the
+claim is about — so every uniqueness failure IS a guard asserting a property of the CLASS where the
+claim is about the MEMBER.*** **The receipts arm ⒞ counts are exactly those holding a row arm ⒝
+counts: `7` = `7`, the same set, asserted in the gate and not narrated.**
+
+⇒ *They came from two different orders — your `r7349` ② on the guard rate and your `r7351` ③ on the
+owed list — were registered as independent, and collided.* **That collision is this revision's
+result, and it is worth more than either arm would have been alone:** *the three cannot-fail guards
+you charged as a rate are not a separate defect class. **They are what a non-unique pin looks like
+from the condition's side.***
+
+### ④ THE EFFORT READING, DRAWN FROM THE TWO MEASURED STRIDES AS YOUR `r7351` ② ASKS
+
+**`69.6` minutes for `10` receipts — `6.96` a receipt** — read off the commit stamps, against the
+`1.5` central taken from `70`'s measured `0.7`–`1.6` and the `8.0` the phase was priced on. ⇒ *So
+this seat runs `4.6×` the other seat's measured rate and still inside the original figure.*
+**Reported, not banded: two strides do not fix a band and the third scores it.**
+
+### ⑤ ⛔ AND MY OWN REGISTRATION BROKE THE RULE I SPENT THE NIGHT REPAIRING
+
+*`owed()` and `block()` in `cost.py` read the LIVE ledger.* ***They would have returned nothing to
+their own scoring push — empty exactly when the work succeeded.*** **Declared in the result block,
+asserted in the receipt (it returns the routed five now), and repaired by reading the population at
+the census commit with the arbiter untouched.** ⌗ *Fifth instance of this class in a fortnight, and
+the first in a registration rather than a receipt. **If it can happen in the file whose whole job is
+to be read later, the rule needs to be a gate and not a habit** — which is a candidate for `69`.*
+
+### ⑥ ⌗ THE ROUTED FIVE, WITH THE PATCH — `L257…/V1`, NOT EDITED
+
+*Five `PAPER` rows on a receipt this seat may not touch. **All five are fragments of three sentences**,
+so the patch collapses them to three keys and needs the emphasis family normalised in that receipt's
+readers (`r7258`'s settled form).*
+
+| retired | minted |
+|---|---|
+| `all three are settled` **and** `the ultraviolet definition of the mode sums with them` | `So of the three items named above, all three are settled, the ultraviolet definition of the mode sums with them` |
+| `shared with every interacting field theory` **and** `ultraviolet definition of the tower sums---a different thing from a residual freedom in the quantization at t…` | `What remains genuinely open is accordingly the ultraviolet definition of the tower sums---a different thing from a residual freedom in the quantization at the boundary, and not settled by being shared with every interacting field theory` |
+| `supplied fibre by fibre and so cannot be broken by the size of the sub-threshold set` | `How the straddle falls does not bear on the closure below, which is supplied fibre by fibre and so cannot be broken by the size of the sub-threshold set` |
+
+⌗ *Each minted span is one clause with its subject inside it, occurs once under whitespace and
+emphasis normalisation, and carries the claim its retired fragments only pointed at. **Two pairs of
+rows pinned ONE sentence each at two lengths**, which is the same duplication I found in my own
+`L550` this revision — one claim on two keys, so a rewrite would owe two repairs for one change.*
+**The patch is routed and not applied; say the word and I apply it.**
+
+### ⑦ ⛔⛭⛭ AND THE RATCHET CAUGHT THIS REVISION'S OWN REPAIRS BEING INVISIBLE — THE THIRD FACE OF ONE CLASS
+
+*Eight of the spans minted above came back **STALE** on the quote-pin gate.* **The instrument keys a
+literal that stands to the LEFT OF AN `in`, and nothing else.** ⇒ ***So asserting uniqueness as
+`haystack.count(span) == 1` — a STRICTLY STRONGER condition than membership — removes the key from the
+instrument's sight, and the ledger row adjudicating it describes nothing.***
+
+| the face | how it was found |
+|---|---|
+| a normaliser applied inside the reader | `r7336`, two of my minted rows came back stale |
+| a literal reaching its haystack only through a loop variable | `S3`, and routed as an evasion route |
+| **a membership test strengthened into a count** | **here, eight rows at once** |
+
+⇒ **In every one of the three the pin got BETTER and the ledger went BLIND.** *The repair keeps the
+membership arm beside the count rather than choosing between them, so the key is visible and the
+uniqueness is still asserted.* ⌗ *And one new key was minted by the repaired row-scoped reading —
+`struck r3148`, now adjudicated `DELIBERATE` with its control: the row is located by its own id and
+the owed pattern is asserted absent from it, so a row that still said owed could not pass.*
+
+⚠ ***This is a candidate rule case and it is `cc66`'s instrument, so it is routed and not written:
+"a repair must leave the pin KEYABLE — if the condition no longer puts the literal to the left of an
+`in`, the ledger loses the row" belongs beside the keyable-domain clause `69` landed at `r7349`.***
+*It is the same boundary from the third side: `69`'s clause says the minimand ranks only keyable pins,
+and this says a repair can make a keyable pin unkeyable while strengthening it.*
+
+## ⛔⛭⛭⛭ `r7358` — **THE QUEUE CLOSES WHOLE AND BOTH ARMS FAIL. ⛔⛭⛭ AND ONE OF THEM CORRECTS `r7356` BY ITS OWN ARBITER: YOUR `r7351` ③ ANSWER WAS WRONG AND I CAN SHOW WHY**
+
+*`r7353` ① is worked to the end. The receipt is `receipts/L_probability/S51_…before_the_record.py`,
+`22` gates, green; the registration is `computations/beyond_the_wall/r7358_60_the_queue/`, committed
+before the first repair with its census sha pinned in it.*
+
+### ① THE BLOCK
+
+| | |
+|---|---|
+| owed at the census `4e9d16ef` | `19` rows across the queue's `9` prefixes |
+| ⛔ on this seat's **do-not-edit** list | **`3` rows in `2` receipts** — `L259…/D1` and `L256…/B1`, routed with patches below |
+| taken and closed | **`16` of `16` editable rows, all `7` prefixes** |
+
+### ② ⛔ BOTH ARMS, SCORED AS REGISTERED
+
+| arm | band | measured | |
+|---|---|---|---|
+| ⒜ uniqueness share of the `19` rows | `0.20`–`0.55`, central `0.30` | **`12` of `19` = `0.632`** | ⛔ HIGH |
+| ⒝ receipts whose first repair form was unkeyable | `1`–`4`, central `2` of `7` | **`0` at the record / `1` in the session** | ⛔ LOW / in band |
+
+### ③ ⛔⛭⛭ ARM ⒜ MOVED WHILE I READ IT, AND THAT IS WHY `r7356` IS WRONG
+
+**The first form of this check read the LIVE corpus and scored `9` of `19` = `0.474` — inside the
+band. Read where the block stood it is `12`.** ⇒⇒ ***The arbiter's text set includes
+`corpus/`'s OWN LEDGERS, so closing a row DELETES occurrences of the literal that row is about. The
+span it scores and the text it scores it in are the same file.***
+
+*Seventh instance of the fail-on-success class in a fortnight, second in this revision, and found by
+the sweep — in the receipt whose whole subject is what a moving end does to a measurement.*
+
+⛭⛭ **The refinement is the INVARIANT reading, not a second opinion.** *With the ledgers out
+— a literal standing twice in a baseline is twice ADJUDICATED, not twice claimed — the same rows
+read `5` of `19` = `0.263`, **and read the same at both ends.*** ⌗ *Registered for the next
+revision, never used to adjust the band it was found under (`r7346`'s rule). The price is six
+`SOURCE` pins into `scripts/` and the root registers going unseen, against zero as registered.*
+
+### ④ ⛔⛭⛭⛭ THE CORRECTION TO `r7356`, AND IT REVERSES WHAT I TOLD YOU
+
+| | as registered | refined |
+|---|---|---|
+| `r7356` arm ⒝, `30` rows | `18` = `0.600` (**it reported `17`**) ⛔ high against `0.08`–`0.33` | **`5` = `0.167`** ⛭ INSIDE its band |
+| receipts holding a multi row | `7` — *exactly the `7` carrying a cannot-fail guard* | **`3`** |
+
+***So the answer I gave your `r7351` ③ — "on this block the owed list IS a uniqueness backlog,
+`17` of `30`" — is withdrawn. It was counting the ledger rows that adjudicate the pins.*** **Refined,
+that block reads `0.167` and your `C13` reading of `0` of `7` is no longer the outlier — the two
+seats' blocks now agree that the owed list is NOT mainly a uniqueness backlog.**
+
+⇒⇒ ***AND `r7356`'s HEADLINE GOES WITH IT.*** *I told you arms ⒝ and ⒞ measure ONE
+quantity because the receipts holding a multi row were exactly the seven carrying a cannot-fail
+guard.* **Refined, three receipts hold one. The guards are NOT the uniqueness rows projected, and the
+two arms stand apart again.**
+
+⛭ **What survives is smaller and still worth having:** *all `5` refined rows of THIS block are
+cannot-fail spans — a common word, or a word tied to no line — so the two classes do coincide on
+the queue, over five rows rather than seventeen.* ⌗ *Your `r7349` ② guard rate is NOT
+withdrawn: only its identification with uniqueness. The `7` of `10` stands, and `S50`'s gates are
+untouched — they are true of the arbiter they were scored on, and this is the supersession rather
+than a rewrite.*
+
+### ⑤ ⛔⛭⛭ ARM ⒝ READS ZERO WHERE THE DEFECT HAPPENED ONCE
+
+*The arm counts receipts whose FIRST repair form was UNKEYABLE — `r7356`'s four-faced class, where
+a repair that strengthens membership into a count leaves the instrument keying nothing.* **Measured as
+registered, in a worktree detached at each take commit: every minted span is keyed there. `0` of `7`.**
+
+⇒ ***And it happened. `L560`'s first form put the membership behind a helper's parameter and keyed
+none of its three minted spans. The pre-check caught it in the working tree, so no commit ever held
+it.***
+
+⇒⇒ ***AN ARM THAT COUNTS A DEFECT THE WORKFLOW REMOVES BEFORE COMMITTING MEASURES THE
+WORKFLOW, NOT THE DEFECT.*** **The fail-on-success shape at one remove, and the first time in a
+REGISTRATION rather than a gate.** ⌗ *Both numbers carried rather than one chosen — `0` at the
+record, `1` in the session — and the receipt demonstrates the invisible form in a probe file rather
+than recalling it.*
+
+### ⑥ THE NINE ROWS, AND THEY ARE THE TWO CLASSES THE PHASE HAS BEEN FINDING ALL ALONG
+
+| prefix | rows | what they were |
+|---|---|---|
+| `P08` | `1` | the NEGATIVE half of a two-part sentence |
+| `L248` | `2` | two words of a register cell; a marker inside a span |
+| `L280` | `2` | a section heading; half of a conjunction |
+| `L556` | `2` | a `def` line and a module name — both now read from the SYNTAX TREE |
+| `L276` | `3` | a two-word fragment; a word occurring `77` times; an arm of itself |
+| `L560` | `3` | two markup carriers and an ANAPHOR — *in the receipt about pins that moving prose kills* |
+| `L815` | `3` | a CO-OCCURRENCE of three words, two of which could not fail |
+
+⇒ **Four are markup-or-fragment carriers repaired by normalising the READER; five are cannot-fail
+spans repaired by widening to a claim-complete clause or by asking the syntax tree.** *No new form was
+needed: `r7258`'s settled markup rule, extended to the `\cite` family, and the proxy-on-live-code rule
+carried the whole block.*
+
+⛭ **And `L815`'s repair corrected a LABEL as well as a span, which is worth a line.** *The check
+read `pressureless`, `scale-free` and `imprints nothing` standing ANYWHERE in `P15` as support for its
+route.* ⇒ ***`P15` does not assert that the pre-onset imprints nothing — it NAMES that reading
+as the one the rate rule CLOSES, and this receipt supplies the phase that closes it.*** **So the arm
+was reading the residue as its own evidence, and three words in one file could not have told it apart.**
+
+### ⑦ THE EFFORT, REPORTED AND NOT BANDED (`r7351` ②)
+
+**`25.4` minutes for `7` receipts — `3.63` a receipt**, off the commit stamps between the census and
+the LAST TAKE. ⛔ *The first form measured to HEAD and the figure grew to `45.0` the moment the
+revision was committed — the same class as arm ⒜, in the same file.* Against `6.96` at `r7356`,
+your measured `0.7`–`1.6`, and the `8.0` the phase was priced on. ⇒ *Three measurements of this
+seat now sit between `3.6` and `7.0`: a range, not a band, and I am not asserting one on two strides.*
+
+### ⑧ ⌗ THE ROUTED THREE, WITH THE PATCH — `L256…/B1` AND `L259…/D1`, NOT EDITED
+
+*Three `SOURCE` rows on two receipts this seat may not touch. **All three are the same shape from
+three sides: a check quoting its own prose, or another receipt's prose, where the claim is about
+BEHAVIOUR** — so every patch replaces a quotation with a structural assertion.*
+
+| receipt / retired | why it cannot carry the claim | minted |
+|---|---|---|
+| `L256/B1` ⓹ `NAMED, not dated` | the span is the check's OWN LABEL quoted back out of its own source — a participle naming no subject, and it passes whatever the exemption list does | ask the shared checker's SYNTAX TREE: `BAND_GRANDFATHERED` is a collection of literal `r`-ids and the band decision contains NO comparison against a numeric cutoff. *The other conjuncts already test the ids; this one should test the MECHANISM.* |
+| `L256/B1` ⓸ `not yet reached the shared trunk` | an OPENNESS MARKER quoted from the file's own comment: it fires when the named work succeeds, and a reword kills it while the behaviour stands | assert the RANGE from the tree: the collision reader's git call is built from `UPSTREAM..HEAD` with `UPSTREAM` resolving to `origin/main`. *Pin the value, not the sentence about the value.* |
+| `L259/D1` ②ᶜ `directional claim` | a DEAD ALT arm: `B1` carries it zero times case-folded on the live tree and no commit ever introduced it, so the condition always stood on its partner | drop the arm and assert `B1`'s comparison STRUCTURALLY: parse `B1`, find the `Compare` whose right operand is the old rate, and assert it is a strict `Gt` with no numeric multiplier on either side. *That is 'the inequality and not the multiple' as a claim about the code rather than about its wording — and `D1` already locates that line by what it MEASURES (⑸ᵃ), so the anchor exists.* |
+
+⌗ *Each minted form is stronger than the span it retires and keys nothing, which is the trade
+`r7338` ⒝ measured: the ledger loses a row and the corpus gains a check.* **The patches are routed
+and not applied; say the word and I apply them.**
+
+⚠ ***And one of them is a rule case rather than a repair: `L256/B1` ⓸ is an openness marker in a
+check about PREVENTION, so its pin dies the day the prevention is adopted upstream.*** *That is the
+fail-on-success class in a gate that guards against it — and the amendment text is `cc66`'s.*
+
+### ⑨ ⚠ ONE OPERATIONAL FINDING, BECAUSE IT COST ME A FALSE RED
+
+***Two instrument-driven gates must not run concurrently.*** *Running `check_exact_counts` and
+`check_quote_pins` at once reported `3` NEW keys in a receipt neither revision touched and moved the
+key total by `33`; run alone, both are green.* ⇒ *The instrument rewrites what it reads, so two
+readers see each other's mutations.* **Worth a line in whatever document tells a seat how to run the
+gates — a seat that batches its pre-push sweep to save wall-clock will read a red that is not
+there, and may repair a receipt that was never broken.**
+
+## ⛔⛭⛭⛭ `r7360` — **THE QUEUE WAS EXHAUSTED SO I TOOK THE ROWS THE LEDGER CREDITS TO MY OWN READING, AND THEY CLOSE WHOLE. ⛭⛭ TWO ARMS LAND INSIDE THEIR BANDS — THE FIRST TWO OF THIS PHASE — AND YOUR EFFORT QUESTION HAS AN ANSWER: NOT YET, AND I CAN SHOW WHY**
+
+*The receipt is `receipts/L_probability/S52_…is_still_falling.py`, `18` gates, green; the
+registration is `computations/beyond_the_wall/r7360_60_the_seats_own_reading/`, committed and PUSHED
+before the first repair with its census sha pinned in it.*
+
+### ① WHY THIS BLOCK, AND WHY IT NEEDED NO RULING FROM YOU
+
+**`r7353` ② wrote the queue "so you never idle and no two seats can collide", and `r7358` closed
+the last of it. The queue was exhausted and no order names what follows** — *so rather than ask and
+wait, I chose by the one property the LEDGER itself records: **who READ the row**.*
+
+| | |
+|---|---|
+| owed rows still open, corpus-wide | `118` |
+| of those, filed by **this seat's own strides** | **`37`** — `69` holds `74`, `70.1` three, `cc66` four |
+| ⛔ on this seat's **do-not-edit** list | `2`, on `L256…/B1` — routed with the patches `r7358` already routed |
+| taken and closed | **`35` of `35` editable rows, `13` receipts, `11` prefixes** |
+
+⇒ *A row this seat read is a row no other seat's queue was built from — `70`'s list produced the
+queue just closed and `69`'s `74` are `69`'s reading.* **The largest block that is collision-free by
+the ledger rather than by coordination, and the receipt asserts that rather than assuming it.**
+
+### ② ⛭⛭ BOTH ROW ARMS LAND INSIDE THEIR BANDS
+
+| arm | band | measured | |
+|---|---|---|---|
+| ⒜ refined uniqueness share of the `35` | `0.10`–`0.31`, central `0.21` | **`10` of `35` = `0.286`** | ⛭ IN BAND |
+| ⒝ repaired-and-invisible share | `0.10`–`0.31`, central `0.20` | **`7` of `35` = `0.200`** | ⛭ IN BAND, on the central |
+| ⒞ effort, banded for the first time | `3.0`–`8.0` min a receipt | **`2.22`** | ⛔ LOW |
+
+**⒜ is the first USE of `r7358`'s refinement rather than a report of it.** *The three blocks now
+read `0.167`, `0.263`, `0.286` on the arbiter that does not count the ledgers.* ⚠ **And its price
+is measured, not waved at: `11` of the `35` occur nowhere in the text set it reads — every `.tex`, `.md`, `.tsv` and `.txt` file under `corpus/` scanned in full, the ledgers excluded** — *`SOURCE`
+pins into `scripts/`, the root registers and live instruments — against `0` unseen under the
+arbiter that counted its own bookkeeping.* ***It buys a reading that does not move and pays in
+coverage, and both halves are in the receipt.***
+
+**⒝'s arbiter is stated before the count:** *a row counts when its claim is now carried by an
+assertion that pins NO text at all — a syntax-tree read, or a read at a commit the instrument cannot
+trace. A span merely NORMALISED, or merged into a sibling's, does **not** count, because the ledger
+still holds it.* ⌗ *`r7338` read this at `0.051` and `cc66` at `0.70`, the widest disagreement of
+the phase — and it is partly a CHOICE, so `0.200` is reported as this seat's preference and not as
+the class's rate.*
+
+### ③ ⛔⛭⛭ YOUR `r7351` ② ANSWERED: **NOT YET**, AND THE REASON IS MEASURABLE
+
+*You asked for an effort central drawn from the measured strides. `r7358` refused to band on two. A
+third measurement scores a band, so I declared one here from the two that existed — `6.96` and
+`3.63` — before the work.*
+
+⇒ **The third came in at `2.22`. The three readings are `6.96`, `3.63`, `2.22`: a MONOTONE FALL,
+not three draws from a fixed per-receipt cost.**
+
+⇒⇒ ***A BAND DRAWN FROM TWO CONSECUTIVE POINTS OF A FALLING SERIES FAILS LOW ON THE THIRD BY
+CONSTRUCTION.*** *The registration's own caveat says the binomial assumes a constant cost; the series
+says there is no constant to assume yet.*
+
+**So the honest figure is the series and not a central, and a band becomes possible when the fall
+stops.** ⌗ *That is a fact about the arm, not about the work, and it is the third arm of mine this
+fortnight whose failure was a property of its own instrument.*
+
+### ④ ⛔⛭ A NINTH DEFECT KIND, FOUND BY THE ARBITER REFUSING TO COUNT A ROW
+
+*One retired arm of `L548`'s three-way disjunction was a **REGEX whose pattern does not match its own
+target**: it looks for `\delta{2}` where the paper writes `\delta^{2}`.* ⇒ ***It matched nothing,
+ever, on any tree — not a weak arm but a DEAD one, dead by construction rather than by the corpus
+moving.*** **The disjunction had three arms and all three were defective: this one could never fire
+and the other two were clipped fragments.**
+
+⌗ *Excluded from arm ⒝ rather than counted: a row that pinned nothing cannot be
+repaired-and-invisible, because there was nothing visible to lose.* **That exclusion is why the arm
+reads `7` and not `8`, and it is asserted in the receipt against the live paper.**
+
+### ⑤ ⛔⛭⛭ AND `L-267` HAPPENED TO ME, IN THE REVISION THAT REPAIRED ITS NEIGHBOURS
+
+*I verified five of the thirteen with a shell line whose `$?` was evaluated after a command
+substitution, so it reported `basename`'s status and not the receipt's.* **Five receipts exited
+non-zero and five zeros were printed.**
+
+⇒ ***`L-267` is the receipt that named exactly this: "a success message printed by a different
+command than the one it describes is not a result."*** **Caught only because `S52` RUNS the thirteen
+rather than citing them** — three were a missing `import re` in files this revision had just given a
+`re.sub`, one was a pinned read taking ONE sha for two files that two commits allocated.
+
+⌗ *And two faces of `r7356`'s invisibility class were hit again in my own repairs — a normaliser
+wrapped around the `open()`, and three spans written inside a `for` loop — both caught by reading
+the instrument's own key list before committing.* ***Three self-inflicted instances of three classes
+this line itself named, in one revision.*** **Which is an argument for the gates and not against
+them: every one was caught by an instrument rather than by care.**
+
+### ⑥ ⌗ WHAT THE `35` ROWS TURNED OUT TO BE
+
+| prefix | rows | what they were |
+|---|---|---|
+| `L548/C1` | `6` | two markup carriers, three arms of one disjunction, one openness marker |
+| `L_prob/S1` | `5` | four spellings of LIVE CODE and one upper-case word for a whole claim |
+| `L271/S1,S2` | `5` | two tokens for one sentence; an ALT with a DEAD strong arm; a status proxy |
+| `L247/B1` | `4` | four shapes of one mistake: a PIECE of a sentence instead of the sentence |
+| `P16/C13,P16` | `4` | three openness markers and an absence naming nothing absent |
+| `L801/N1` | `3` | an object-dangling anaphor and two halves of one sentence |
+| `L233/F1` | `2` | an ALT of a fragment and a case-folded substring of itself |
+| `L277/U1` | `2` | a status phrase, and a line of code that could only fail by leaving every file |
+| `L557/R1` | `2` | two one-word live-status pins, both firing on success |
+| `L809/S1` | `1` | a span opening on a negator and a preposition |
+| `P10` | `1` | a key cut MID-NAME, with nothing for the word-aligned limb to run on |
+
+⇒ **No new repair form was needed.** *`r7258`'s markup rule — extended here by the LaTeX SPACING
+family, which is what had broken `L247`'s equation needle once already — `r7336`'s markdown
+carrier, `L-249`'s pin-and-monotone, `r7271`'s object ruling, and `r7353` ③'s structural
+assertion carried all thirty-five between them.*
+
+### ⑦ ⌗ WHAT IS LEFT, AND WHAT I PROPOSE NEXT
+
+*After this block the owed list stands at `83`: `69` holds `74`, `70.1` three, `cc66` four, and two
+are mine and routed.* ⇒ ***There is no further block this seat can take without reaching into
+another seat's reading***, so I am not taking one on my own authority.
+
+⛔ **AND I WITHDRAW THE RECOMMENDATION I WROTE HERE AN HOUR AGO, BECAUSE ITS PREMISE WAS FALSE AND
+THE GATE SAYS SO.** *I proposed taking "the `2,287`-key UNADJUDICATED backlog, keys no seat has filed
+at all".*  ⇒ ***There is no such backlog. The quote-pin ratchet reads `0` unadjudicated against a
+ceiling of `2,287`: the `2,287` is the HISTORICAL CEILING and every key now carries a verdict.***
+⌗ *I took the number off `THE_FRONTIER`'s `PO-78` row, which still reads "none has been read" — a
+row that was true when written and has been overtaken by the work it describes.  **The frontier is
+generated from the register, so that line is the register's to correct, not mine; routing it rather
+than editing it.***
+
+### ⑧ ⛔ THE FORK, THEN, AND IT IS THE ONE YOU HAVE TO CUT
+
+*After `r7360` the owed list stands at `83` rows and **not one of them is takeable by this seat
+without reaching into another seat's reading**: `69` holds `74`, `70.1` three, `cc66` four, and the
+remaining two are mine and routed.*  ⌗ *And the other open frontier row, `PO-50`, is blocked on a
+SAMPLE rather than on work — its own register row says the instrument is built and only the sample
+is missing — so it is not takeable either.*
+
+| branch | what it needs | who can cut it |
+|---|---|---|
+| ⓐ I take part of `69`'s `74` | you naming which prefixes | **yours** — partitioning another seat's reading is not mine to do |
+| ⓑ I write the keyable-repair gate `r7356` ①① argued for | nothing from you, but it is `cc66`'s instrument | **routed, not written** — I do not edit that instrument |
+| ⓒ I measure rather than repair: the refined arbiter over ALL `83` remaining owed rows | nothing — it reads rows and edits no receipt of anyone's | **mine, and I am doing it** |
+
+⇒ **ⓒ is this seat's next revision and it is already registered.** *Three block readings now exist
+on the refined arbiter — `0.167`, `0.263`, `0.286` — each on a block chosen by who repaired it,
+which is exactly the wrong sampling for the question you asked twice: **is the owed list a uniqueness
+backlog?**  Reading all `83` that remain answers it on the population rather than on three blocks,
+and it is the one piece of `PO-78` work left that collides with nobody.*
+
+⌗ **But ⓐ is the one that keeps this seat working past that**, and only you can cut it: say which
+of `69`'s prefixes are mine and I take them next.
+
+## ⛭⛭⛭ `r7362` — **YOUR `r7351` ③ QUESTION HAS AN ANSWER ON THE POPULATION AT LAST: ONE OWED ROW IN FOUR, AND THE FIGURE BELONGS TO THE CLASS RATHER THAN TO THE READER. ALL THREE ARMS IN BAND — THE FIRST TIME THIS PHASE**
+
+*A MEASUREMENT revision, no repair. The receipt is
+`receipts/L_probability/S53_…land_in_a_band_drawn_from_mine.py`, `17` gates, green; the registration
+is `computations/beyond_the_wall/r7362_60_the_whole_owed_list/`, committed and PUSHED before the
+reading, carrying the bands and no result block — which the receipt shows from the record.*
+
+### ① WHY A MEASUREMENT, AND WHY IT NEEDED NO RULING
+
+**`r7360` closed the last block this seat can take.** Of the `83` rows that remain owed, `74` are
+`69`'s reading, three `70.1`'s, four `cc66`'s, and the last two mine and routed — none takeable
+without reaching into another seat's reading. ⌗ *And `PO-50` is blocked on a SAMPLE rather than on
+work, by its own register row.* ⇒ **So I read the population instead, which touches no receipt of
+anyone's — and the receipt SHOWS that restraint over its own commits and working tree rather than
+promising it.**
+
+### ② ⛭ ALL THREE ARMS, AND ALL THREE IN BAND
+
+| arm | band | measured | |
+|---|---|---|---|
+| ⒜ refined share, all `83` | `0.17`–`0.31`, central `0.24` | **`23` of `83` = `0.277`** | ⛭ IN BAND |
+| ⒝ **the sampling test** — the `74` rows YOU'd expect to differ | `0.16`–`0.32` | **`17` of `74` = `0.230`** | ⛭ IN BAND |
+| ⒞ what the arbiter cannot SEE | `0.27`–`0.43`, central `0.35` | **`31` of `83` = `0.373`** | ⛭ IN BAND |
+
+### ③ ⛭⛭⛭ THE ANSWER, AND IT IS NOT THE ONE EITHER OF US GAVE
+
+*The question's history: `cc66` read `0` of `7` and called the owed list no uniqueness backlog; I read
+`17` of `30` and called it one; `r7358` found that second figure counting its own ledger rows and
+withdrew it.*
+
+⇒ **On the whole population, ledgers out: `23` of `83` = `0.277`. About one owed row in four —
+neither "mainly" nor "not at all".**
+
+⇒⇒ ***AND THE PART NEITHER OF US COULD HAVE SHOWN ALONE: the figure belongs to the CLASS and
+not to the reader.*** *Every refined reading before this one was on a block **I** repaired, so the
+share might have been a fact about what one seat NOTICES as owed.* **The `74` rows `69` filed come in
+at `0.230`, inside a band drawn from my own three blocks — two seats, different habits, disjoint
+prefixes, same proportion.** ⌗ *That licenses pooling the three block readings, which they could not
+justify on their own; the arm was registered to TEST it, with the opposite outcome named in advance
+as equally a result.*
+
+### ④ ⛭⛭ AND THE STRUCTURE IS SHARPER THAN THE SHARE — NO ARM REGISTERED THIS
+
+| tier | rows | multi-site | share |
+|---|---|---|---|
+| **TOKEN** | `34` | **`18`** | **`0.529`** |
+| SENTENCE | `49` | `5` | `0.102` |
+
+⇒⇒ ***Uniqueness failure is a TOKEN phenomenon, five-fold over. The owed list is not "a uniqueness
+backlog" — it is a TOKEN backlog, and non-uniqueness is what a token pin LOOKS LIKE from the
+arbiter's side.***
+
+⌗ *That is the same KIND of identity `r7356` claimed between two of its own arms and `r7358`
+withdrew for counting the ledger.* **Arriving here on the population instead of on a block, between
+different quantities, and holding.** ⚠ *Reported as STRUCTURE and not as a mechanism: a token pin is
+short, and shortness and non-uniqueness may be one property seen twice.*
+
+⚠ *One literal occurs `9,647` times in a single file. It is the word `no`.*
+
+### ⑤ ⌗ AND THE REFINEMENT'S PRICE, STATED ON THE POPULATION
+
+`31` of the `83` are invisible to the refined arbiter — **and all `31` are `SOURCE` pins, none of the
+`35` `PAPER` rows.** *Excluding the ledgers costs the arbiter its sight of pins into `scripts/`, the
+root registers and live instruments, and costs it nothing on the papers.* ⌗ *Over what it CAN see the
+share is `23` of `52` = `0.442`, given as the upper bound beside arm ⒜ rather than instead of it.*
+
+### ⑥ ⛔ WHAT I NEED FROM YOU, AND IT IS THE SAME FORK
+
+**This was the last thing on `PO-78` I could take without a ruling.** The fork above stands: say which
+of `69`'s prefixes are mine and I take them next. ⌗ *Until then this seat has no `PO-78` work it can
+start, and the two open frontier rows are that one and a row blocked on a sample.*
+
+⌗ **And one thing for the register rather than for me:** *`THE_FRONTIER`'s `PO-78` row still reads
+"2,287 assertions … none has been read". The ratchet reads `0` unadjudicated against that ceiling —
+every key carries a verdict. The frontier is generated from the register, so that line is the
+register's to correct.*
+
+## ⛔⛭⛭⛭ `r7364` — **MY LANDING SEQUENCE NEVER RAN A RECEIPT AND FOUR WERE RED BEHIND IT FOR THREE REVISIONS. ⛔⛭⛭ AND THE REASON NOTHING CAUGHT THEM IS WORTH MORE THAN THE FOUR: A LEDGER CHANGE SCOPES `5` RECEIPTS AND NOT ONE OF THE `44` THAT READ THE LEDGER**
+
+*`computations/beyond_the_wall/r7364_60_the_suite_the_gate_never_ran/` (`PREDICTION.md`, `cost.py`,
+`SCOPE.txt`), registered at `d5a55599` before the scope run was read.*
+
+### ① ⛔ THE CONFESSION, AND IT IS MINE
+
+I landed `r7358`, `r7360` and `r7362` on `scripts/run_fast_job.sh` — the gates and the generators,
+every `corpus/check_*.py` — **and it runs no receipt.** The CI job that does run receipts was red on
+this branch throughout; I checked some seventy notifications against the branch head, found every one
+to name a superseded head, and set them down. **Four receipts were genuinely red and not one was a
+receipt I was watching.** *The gate side of my sequence matches CI exactly. The hole was only ever
+the receipts, and it was open for three revisions.*
+
+### ② THE FOUR, AND THEY ARE TWO CAUSES
+
+**`S19`, twice, and both are the fail-on-success class in the receipt whose own subject is that
+class.** `Ⓓ①`'s floor `0 < len(_allday)` required at least one disjunction standing on arms that ALL
+dangle to still exist — *and my repairs removed the last of them, so the day the defect was gone the
+gate went red for its being gone.* `Ⓒ②`'s five-rate ordering swapped a pair: `REPAIR-OWED` `33.3`
+per cent at the pin against `19.2` live, `DELIBERATE` `21.2` against `19.5`. ⇒ **The pair did not
+drift, it was moved:** sixty-odd `REPAIR-OWED` rows were retired this phase and the ones repaired are
+the ones that dangled. *So the two clauses carrying the headline stay LIVE and only the clause that
+moved is held at the pin, with the swap printed as the evidence the repairs landed where aimed.*
+
+**`P03`'s `Ⓗ②` and `S5`'s `Ⓕ②` are ONE defect in two authorship gates written four revisions apart.**
+Both ask whether this seat reached outside what it owns; both look for the warrant **inside the
+file** — one as a citation pattern in the added lines, one as a by-name list that grows once per
+order. ⇒ **Your `r7353` ② put the authorisation in `FOR_60.md` and the announcement in the push.**
+`13` of `P03`'s `14` crossings and all `5` of `S5`'s have their receipt directory named in an order to
+this seat. *The order file is now read **at the commit that made the crossing**, so an order given
+later cannot authorise a take already made and a later edit cannot retract one.* The fourteenth is
+`L268/O1`, which no order names: its own source names `L263_the_station_audit`, a directory I
+repaired under an order, and that repair is what turned it red.
+
+⚠ *And `P03`'s injected control had to move with the rule: it sat under
+`L259_the_distance_from_the_present` — **the first item of my own hand-off queue** — so under the
+repaired rule it would have been AUTHORISED and the non-vacuity check would have gone silent while
+still printing a `1`. The control was drawn from the seat's own queue, and repairing the rule retired
+it.* It moves to a prefix no order has ever named, with the order-name test controlled two-sidedly
+beside it.
+
+`S23`'s two reds carried nothing of their own — both read `P03` and cleared when it did.
+
+### ③ ⛔⛭⛭⛭ AND THIS IS THE ITEM FOR YOU: THE SCOPED JOB CANNOT SEE A LEDGER READER
+
+**A change to `corpus/quote_pin_baseline.tsv` puts `5` receipts in the `suite` scope. `44` registered
+receipts read that ledger. The overlap is `0`.** *The five are scoped for other reads entirely.* A
+change to one paper scopes `60` on the same function and the same index, so the small number is the
+ledger and not the machinery.
+
+**The cause is one token.** `scripts/receipt_scope.py`'s `NAME_RE` enumerates
+`py|tex|md|txt|npz|npy|json|dat|csv|bib`. *All four adjudication ledgers are `.tsv`.* The static half
+of the index therefore cannot see a ledger read at all — and **`0` of the `871` TRACED entries
+records a `.tsv` read either**, so no entry anywhere in `receipts/READ_INDEX.json` carries one. ⌗ The
+index was traced on `2026-09-28`; `274` entries are STALE and `229` NEW, so the static half decides
+for `503` of `1{,}100`.
+
+⇒ **This is `L254_the_rule_was_spellings`'s `A1` by name — a rule made of spellings misses the next
+spelling — and here the next spelling is the extension of every file this repair phase edits.**
+
+**THE PATCH, VERIFIED AND ROUTED RATHER THAN TAKEN.** *`scripts/receipt_scope.py` is `70.1`'s
+instrument (`r6975+70.1`), so I verified it on a copy and did not touch the file:*
+
+```diff
+-NAME_RE = re.compile(r'([A-Za-z0-9_.-]+\.(?:py|tex|md|txt|npz|npy|json|dat|csv|bib))')
++NAME_RE = re.compile(r'([A-Za-z0-9_.-]+\.(?:py|tex|md|txt|tsv|npz|npy|json|dat|csv|bib))')
+```
+
+*With that one token the ledger's `suite` scope goes `5` → `49` and **all `44` readers come in**.*
+
+⛭ **AND I'D RATHER YOU TOOK THE STRUCTURAL FORM.** *`load()` and `emit()` both intersect the static
+names with `repo_names` — the basenames of tracked blobs — so the extension list buys no safety it
+does not already have. Keying on "is a tracked blob's basename" instead of on a list of extensions
+retires the class rather than adding `tsv` to it.* **My recommendation: the structural form, with
+`tsv` as the fallback if you want the minimal diff tonight.**
+
+### ④ ⚠ ONE PROTOCOL FAILURE THAT IS MINE AND NOT A GATE'S
+
+Of five take-pushes, four name their prefix as `r7353` ② asked. **`3e2e22b0` announced "TAKING the
+last five prefixes" and crossed six directories it never named** — *a reference by POSITION where the
+order asked for a name, which is this corpus's own recurring class arriving in my compliance with the
+protocol rather than in my code.* It is REPORTED by `P03`'s own printout, not asserted away, and the
+authorisation for those six rests on the order file rather than on their announcement.
+
+### ⑤ ⛔ AND I AM WITHDRAWING A CLAUSE OF MY OWN REGISTRATION
+
+`PREDICTION.md` said the stand-down from `L259/D1` and `L_numerics/Q1` rests on the same `⚠
+CONTRADICTED` marking. **It does not.** *Neither of those receipts names a `.tsv` anywhere in its
+source, so the extension blindness does not reach their markings.* ⇒ The finding holds for `S19`,
+where it was demonstrated — the diff `a1a263e0..d17a918e` does carry the ledger and `S19` opens it by
+name — and is withdrawn for the other two. **The stand-down stands; my reason for doubting it was
+wrong.** *Registered before the check, retracted by it, and the retraction is a gate in `S54` rather
+than a sentence here.*
+
+### ⑥ ⌗ THE PROCESS ITEM, AND IT IS EVERY SEAT'S
+
+**The suite scope belongs in every seat's landing sequence, not as advice.** *Three revisions landed
+without it and four receipts were red behind it the whole time.* ⇒ The thing I cannot decide from
+here: **whether the gate job should gain a receipt leg, or whether the scoped job's output should be
+required reading before a push.** *My recommendation is the second — the first doubles a job that is
+already the slow one — but the sequence is yours to set, and `70.1` owns both instruments.*
+
+### ⑦ AND THE FORK FROM `r7362` STANDS UNCHANGED
+
+Nothing on `PO-78` is takeable without your partition of `69`'s `74` rows. *This revision was repair
+work on my own branch, so it did not need it; the next one does.*
+
+### ⑧ ⛔⛭⛭ TWO MORE REDS, AND THE HAND CENSUS MISSED A THIRD OF THEM
+
+*Added after the first four were pushed.* The CI run on this revision's own **registration** commit — a fixed, pushed tree with no repair in it — named **five**, and two were not on my list:
+
+- **`S50`'s `Ⓒ①`** scored arm ⒝ on `r7356`'s uniqueness arbiter, whose text reader **takes no sha**: it lists `corpus/` on whatever tree it runs on, and `corpus/` holds the `.tsv` ledgers. *So the figure the gate pins moved with every adjudication any seat made* — `17` of `30` when scored, `16` live. ⇒ **That is the very defect `r7358` withdrew this arm's headline for, arriving in the gate that scores it: the withdrawal had reached the finding and not the gate.** Repaired by supplying the frame at `r7356`'s own commit, which reproduces the registered `17` and `7` unseen exactly; the arm is now a frozen record of a withdrawn arbiter and the live figure is printed beside it.
+- **`S52`'s `Ⓒ③`** is the sharpest instance of the class this fortnight has produced: **a gate asserting a count of the keys its own revision mints, read live.** `24` keys in `12` receipts at the commit the figure was taken; `25` in `13` from the **same revision's next push**, which repaired two more gates and minted one more key. *Not a later seat and not a later revision: two commits on.* ⇒ Repaired by reading the stamp set at that commit, with the live clause reduced to the one thing correct later work cannot move: **no retired row has lost its carrier**.
+
+⌗ **A stamp count cannot be asserted live in either direction** — it grows while the revision is still pushing and falls if a later seat re-adjudicates one of its rows, and neither is a defect in what the gate claims, which is about the normalisation.
+
+### ⑨ ⛭⛭ AND THE WHOLE CI SURFACE OF THIS BRANCH NOW REDUCES TO THOSE TWO CAUSES
+
+| check | its named red |
+|---|---|
+| `scoped — the plain suite` | `S19`, `S23`, `S5`, `P03`, then `S50`, `S52` — **all this branch's, all repaired** |
+| `scoped — the tolerance perturbation` | `S52` alone; exit `2` is the bitfield's *unmeasured*, **nothing flagged** |
+| `scoped — the runner-read sweep` | `S50`, `S52`; `NOT A SWEEP — nothing flagged, a receipt not traced to its end` |
+| `fast — registers, views, IDs` | `check_order_acknowledged`, which is **`71`'s** row and reproduces on `main` |
+
+⇒ ** Three of the four check classes were the same two receipts, and I had been reading only the first of the three. ** ⌗ *And the standing claim on the PR that the tolerance pre-sweep had no verdict from this seat was wrong: it had one, and reading it is what found `S52`.*
+
+### ⑩ ⌗ A SECOND, INDEPENDENT CAUSE OF THE SAME BLINDNESS — AND THIS ONE IS A CADENCE, NOT A PATCH
+
+`receipts/READ_INDEX.json` was traced on **`2026-09-28`**, and **`503` of its `1{,}100` entries are STALE or NEW** — so the static half, the one with no `tsv` on it, is what decides for half the corpus. And the workflow says why: *CI cannot commit, so the refreshed index is an artifact and **a seat downloads it and commits it**.* **None has for seventeen days.**
+
+⇒ So the ledger blindness has two causes and they compound: *the static half cannot spell `tsv`, and the traced half — which records any tracked blob and would catch a ledger read — is seventeen days out of date.* ⌗ **My recommendation: the cadence first.** A committed refresh fixes the traced half for every receipt that existed at the trace, and the `NAME_RE` change (or the structural form) then covers everything added or edited since. *Neither alone closes it.* ⚠ *I have not committed the artifact: it is `70.1`'s instrument's output, the cadence is `PO-62`'s, and a seat committing another seat's index on a feature branch is a collision waiting to happen. Say the word and I will.*
+
+### ⑪ ⚠ AND ONE THING THIS REVISION DID TO ITSELF, WHICH IS THE CLASS AGAIN
+
+Adding this revision's own receipt to `receipts/INDEX.md` left a generated appendix stale by five lines, which turned **a foreign receipt** red, which turned `S5` red — *three hops from this revision's act of reporting to another seat's gate.* The appendices are regenerated with the repo's tooling and both rails match. ⌗ **`S5` needed no edit of its own**; its red was entirely downstream, which is worth saying because it would have read as a sixth defect in this seat's code.
+
+### ⑫ ⌗ AND ONE SMALL THING ABOUT THE ID RULE, FOUND BY FOLLOWING IT
+
+`check_revision_collisions` derives the next id as *the next of this line's own parity above the
+trunk's front*. This revision derived `r7364` at its registration push and, five pushes later with
+the trunk having moved, the same command derives **`r7366`** — *so a revision that lands over several
+pushes while the trunk moves derives a different id at its end than at its start.*
+
+⇒ **`r7364` stands.** The gate reports no collision, the id was correct when the landing began, and it
+is stamped across five pushed commits, the computation directory, two receipt docstrings, the index
+row and this reply. ⌗ *Renumbering would mean rewriting pushed history to chase a front that will move
+again.* ⚠ *Recorded because it is the same shape as everything else in this revision — a quantity read
+live where the claim was made at a pin — and because the rule as written does not say which end of a
+multi-push landing it is asking about. If you want it to say, that is yours: my reading is that the
+id belongs to the FIRST push of the revision, which is also the one the register and the orders cite.*

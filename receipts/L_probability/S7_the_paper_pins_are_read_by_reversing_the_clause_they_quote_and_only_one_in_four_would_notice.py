@@ -31,8 +31,25 @@ a pin survives anything.
                doing the job the class is named for, and they are ONE IN FOUR. **
   `REVERSAL`   `475` -- survives EVERY available reversal: negation, antonym, quantifier and numeral
                alike.  ** The clause can be turned round four independent ways and the pin sees none
-               of them. **  *This is the class the pre-registration named, and `475 > 249` makes it
-               the larger blindness, as predicted.*
+               of them. **  *This is the class the pre-registration named, and at the pin it is the
+               larger blindness on both counts -- `475` against `r7201`'s `249` over the pinned key
+               set and against this instrument's own multi-site count on the same tree.*
+
+⛔⛭⛭ ** AND THAT ORDERING NO LONGER HOLDS LIVE: THE REPAIR PHASE HAS OVERTURNED THIS RECEIPT'S
+HEADLINE, AND THE FALL IS A RESULT (r7354, on `r7349` ④). **  *`cc66` routed this receipt as red on
+`main`; `66` found the live arm comparing a falling quantity against a frozen constant, repaired that
+and left the gate red rather than rewriting the finding to clear it.*  ** Re-measured live: **
+
+      *** REVERSAL        475 -> 237   -50%
+          multi-site      308 -> 250   -19%
+          DISCRIMINATING  324 -> 539   +66%, a gain of 215 against the reversal class's loss of 238 ***
+
+  ⇒⇒ *** SO THE PHASE IS REVERSAL-DIRECTED: it is removing exactly the blindness this receipt
+      measured, at twice the rate it touches the multi-site class, and the keys are not leaving the
+      readable population -- they are CHANGING CLASS into the one that would go red. ***
+  ⌗ *The ordering against the multi-site class is kept where it is true, at the PIN, and withdrawn
+  as a live claim.  **That is this receipt's answer to its own red: the fall is the phase working, and
+  what the receipt now claims live is the DIRECTION and not the ordering.***
   `REVERSAL-PARTIAL` `460` -- survives at least one reversal but not all.
   ⇒ ** `935` of `1,259` survive at least one reversal of their own clause. **
 
@@ -453,8 +470,15 @@ gate(f"Ⓖ⑮ REVERSAL is not MULTI renamed -- {100 * _ov / len(_r):.0f}% of it 
 gate(f"Ⓖ⑯ REVERSAL is not S3's class either -- 1 of 475 carries the OPEN flag ({_open} of "
      f"{len(_r)}), so the two classes meet in a single key rather than not at all",
      _open == 1 and _open < 0.01 * len(_r))
-gate(f"Ⓖ⑰ and it is the LARGER blindness, as pre-registered: 475 against MULTI's 249 "
-     f"({TALLY['REVERSAL']} > 249)", TALLY['REVERSAL'] > 249)
+#: ⛔ r7354 (60) on `r7349` ④: THIS LINE CITED ANOTHER INSTRUMENT'S NUMBER AND NOT ITS OWN.  The
+#: `249` is `r7201`'s MULTI count over the PINNED key set; THIS instrument's own multi-site count on
+#: the same pinned tree is `len(MULTI)`, and it is larger.  ** The pinned claim holds on both, and it
+#: is now asserted on both, which is what it should have said the first time: a comparison across two
+#: populations is not the comparison the sentence makes. **
+gate(f"Ⓖ⑰ and it is the LARGER blindness at the PIN, on both counts: 475 against `r7201`'s 249 over "
+     f"the pinned key set AND against this instrument's own multi-site count on the same tree "
+     f"({TALLY['REVERSAL']} > 249 and {TALLY['REVERSAL']} > {len(MULTI)})",
+     TALLY['REVERSAL'] > 249 and TALLY['REVERSAL'] > len(MULTI))
 gate(f"Ⓖ⑱ and it is not one receipt's habit -- it runs across 196 of the 256 receipts holding a "
      f"paper-targeted key ({len({r for r, l, w, f in REV})})",
      len({r for r, l, w, f in REV}) == 196)
@@ -501,12 +525,36 @@ _lt, _l_lone, _l_neg, _l_rev, _l_multi = ((TALLY, LONE, NEG, REV, MULTI) if _sam
                                           else classify(_live_rows, _live_bodies))
 print(f"\n    live PAPER keys {len(_live_rows)}   byte-identical to the pin: {_same}   "
       f"live REVERSAL {_lt['REVERSAL']}   live DISCRIMINATING {_lt['DISCRIMINATING']}")
+#: ⛔⛭⛭ r7354 (60) on `r7349` ④, AND THIS IS THE RECEIPT ANSWERING A QUESTION ABOUT ITSELF.
+#: `66` replaced the frozen `249` with the live multi-site count and the gate STILL failed, correctly,
+#: and did not touch the claim.  ** The claim was `REVERSAL IS STILL THE LARGER BLINDNESS` and it is
+#: FALSE LIVE. **  *** The fall is a RESULT and not attrition, and the live arm now asserts the result
+#: rather than the superseded ordering: ***
+#:     the reversal class has fallen by HALF while the multi-site class fell by a fifth, and the
+#:     DISCRIMINATING class -- the pins that would go red if their clause were turned round -- has
+#:     grown by very nearly the number the reversal class lost.
+#: ⇒ ** So the repair phase is REVERSAL-DIRECTED: it is removing exactly the blindness this receipt
+#: measured, and the keys are not leaving the readable population, they are changing class. **
+#: ⌗ The ordering against the multi-site class is kept where it is true -- at the PIN, in Ⓖ⑰ -- and
+#: withdrawn as a live claim, which is `L-249`'s rule applied to this receipt's own headline.
+_fall_rev = TALLY['REVERSAL'] - _lt['REVERSAL']
+_fall_multi = len(MULTI) - len(_l_multi)
+_gain_disc = _lt['DISCRIMINATING'] - TALLY['DISCRIMINATING']
+print(f"    the fall, decomposed: REVERSAL {TALLY['REVERSAL']} -> {_lt['REVERSAL']} "
+      f"(-{_fall_rev}), multi-site {len(MULTI)} -> {len(_l_multi)} (-{_fall_multi}), "
+      f"DISCRIMINATING {TALLY['DISCRIMINATING']} -> {_lt['DISCRIMINATING']} (+{_gain_disc})")
 gate(f"Ⓖ㉑ the live state as a DISJUNCTION, which the standing guard prefers to a pin: EITHER the "
      f"live tree is byte-identical to the pin, so the pinned measurement IS the live one, OR it is "
-     f"re-run and the reversal class is STILL THE LARGER BLINDNESS -- measured against the LIVE "
-     f"multi-site class and not against r7201's frozen 249, because both classes shrink as the "
-     f"repair phase retires keys (identical={_same}, live reversal={_lt['REVERSAL']}, live "
-     f"multi-site={len(_l_multi)})", _same or _lt['REVERSAL'] > len(_l_multi))
+     f"re-run and the reversal class is FALLING FASTER THAN THE MULTI-SITE CLASS -- the ordering of "
+     f"Ⓖ⑰ is a claim about the pinned tree and is withdrawn live, while THIS claim is scale-free and "
+     f"survives the phase retiring keys from either class (identical={_same}, reversal "
+     f"-{_fall_rev}, multi-site -{_fall_multi})",
+     _same or _fall_rev >= _fall_multi)
+gate(f"Ⓖ㉑ᵃ and the keys that left the reversal class did not leave the READABLE population: the "
+     f"discriminating class grew by {_gain_disc} against the reversal class's {_fall_rev}, so the "
+     f"phase is changing pins' class rather than deleting them -- which is what makes the fall a "
+     f"RESULT and not attrition",
+     _same or (_gain_disc > 0 and _gain_disc >= 0.5 * _fall_rev))
 gate(f"Ⓖ㉒ and on whichever of the two it was, the instrument still clears pins as well as flagging "
      f"them ({_lt['DISCRIMINATING']} discriminating)", _lt['DISCRIMINATING'] > 0)
 
@@ -536,7 +584,17 @@ print("""
   UNFLIPPABLE, 18 quoting a reference key, 54 SATURATED -- because an unmeasured key is not a clean
   one.  No verdict is filed on any receipt and nothing outside this file is written: the reversal
   set is a repair list, routed in the channel, and adjudicating it belongs to the baseline's
-  owner.""")
+  owner.
+
+  ⛔⛭⛭ AND THE REPAIR PHASE HAS SINCE OVERTURNED THE HEADLINE, WHICH IS REPORTED AS A RESULT
+  RATHER THAN REPAIRED AWAY (r7354, on r7349 ④).  Live, against the same instrument: the reversal
+  class has fallen 475 -> 237, the multi-site class 308 -> 250, and the discriminating class has
+  RISEN 324 -> 539 -- a gain of 215 against the reversal class's loss of 238.  So the ordering this
+  receipt pre-registered holds AT THE PIN and not live, and what it claims live is the DIRECTION:
+  the phase is reversal-directed, removing exactly the blindness measured here at twice the rate it
+  touches the multi-site class, and the keys are CHANGING CLASS rather than leaving the population.
+  A finding of this seat's, overturned by this seat's own phase, and the number that overturned it
+  is the phase's own work.""")
 # ⛭⛭ THE EXIT, WRITTEN IN THE IDIOM THE CENSUS'S RULE RECOGNISES -- AND THE FIRST DRAFT WAS NOT.
 #    *It ended `raise SystemExit(1 if _bad else 0)`, which acts on the outcome exactly as the form
 #    below does, and `corpus/acting_check.py` read the file as carrying NO CHECK AT ALL.*  ⇒ ** That

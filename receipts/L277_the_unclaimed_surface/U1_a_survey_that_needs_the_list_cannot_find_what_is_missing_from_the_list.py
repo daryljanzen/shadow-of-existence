@@ -59,7 +59,9 @@ finding.
 
 Written r3172, `L-277`.  Stated for reversal.
 """
+import ast as _ast
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -123,6 +125,23 @@ def _claimed_at_throw():
     return _CLAIMED_THEN
 
 
+def _control_fails_nonzero():
+    """the control's failure branch returns non-zero -- read off `unclaimed_surface.py`'s tree"""
+    src = open(os.path.join(ROOT, 'corpus', 'unclaimed_surface.py'), encoding='utf-8',
+               errors='replace').read()
+    for node in _ast.walk(_ast.parse(src)):
+        if not isinstance(node, _ast.If):
+            continue
+        test = _ast.unparse(node.test)
+        if 'hist' not in test or 'all' not in test:
+            continue
+        for inner in _ast.walk(node):
+            if (isinstance(inner, _ast.Return) and isinstance(inner.value, _ast.Constant)
+                    and inner.value.value):
+                return True
+    return False
+
+
 def main():
     print()
     print('  U1 -- a survey that needs the list cannot find what is missing from the list')
@@ -133,9 +152,15 @@ def main():
     print('  ==========================================================================')
     fs_src = open(os.path.join(ROOT, 'corpus', 'field_survey.py'),
                   encoding='utf-8', errors='replace').read()
+    _fs_flat = re.sub(r'\s+', ' ', fs_src)
+    _INVISIBLE = ('A field the corpus uses under names not in its list is invisible here -- which '
+                  'is exactly the defect that hid category theory for ninety revisions')
     check('⓵ `field_survey` writes its own limitation into itself: a field used under names not in '
           'its list is invisible to it, and it names category theory as the case',
-          'invisible here' in fs_src and 'category theory' in fs_src)
+          #: ⛭ r7360+60: 'invisible here' was a two-word STATUS PHRASE standing for the whole
+          #: limitation; widened to the sentence the instrument writes about itself, which names
+          #: what is invisible and the case it hid.
+          _INVISIBLE in _fs_flat and 'category theory' in fs_src)
     check('⓵ᵇ and its question genuinely requires the answer in advance: every field it surveys is '
           'a hand-written vocabulary in its own FIELDS table',
           len(FS.FIELDS) > 15 and all(isinstance(t, list) for _, _, t in FS.FIELDS))
@@ -196,8 +221,12 @@ def main():
     rc = os.system(f'cd {ROOT} && python3 corpus/unclaimed_surface.py --top 4 >/dev/null 2>&1')
     check('⓸ᶜ and the control runs on every invocation and FAILS the instrument if the historical '
           'case ever stops surviving', rc == 0
-          and 'return 1' in open(os.path.join(ROOT, 'corpus', 'unclaimed_surface.py'),
-                                 encoding='utf-8', errors='replace').read())
+          #: ⛭⛭ r7360+60: `'return 1'` was a LINE OF CODE that stands in most of the corpus, so
+          #: it could only have failed by leaving every file.  ** Asked of the instrument's own
+          #: syntax tree instead: the control's failure branch -- the one guarded by the historical
+          #: case not surviving -- RETURNS a non-zero code. **  Repaired-and-invisible (`r7353` ③):
+          #: it mints no ledger key and is what the claim actually says.
+          and _control_fails_nonzero())
 
     print()
     print('  ' + '=' * 74)

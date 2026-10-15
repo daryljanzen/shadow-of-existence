@@ -45,7 +45,21 @@ ROOT = os.path.join(HERE, '..')
 # git's own marker format: seven characters at the start of a line, then a space or end of line.
 MARKER = re.compile(r'^(<{7}|={7}|>{7})( |$)')
 
-TEXTY = ('.md', '.tex', '.py', '.yml', '.yaml', '.txt', '.sh', '.bib', '.cfg', '.toml', '.json')
+# ⛔ r7355 (66): `.tsv` WAS MISSING AND IT IS WHERE THE CORPUS KEEPS ITS LARGEST DATA.
+#   This gate's whole premise, in its own docstring, is that a marker in a file no compiler reads is
+#   SILENT.  It then omitted the extension of the three baselines the repair phase is scored on --
+#   quote_pin_baseline.tsv, prose_pin_baseline.tsv, target_annotations.tsv -- so it has never looked at
+#   them.  Found at r7355 with THREE ORPHAN MARKERS committed in prose_pin_baseline.tsv, present on
+#   origin/main and on two seat branches, carried silently for an unknown number of revisions.
+#   ⌗ No data was lost: 149 rows, no duplicates, the markers left over from a resolution that deleted
+#   the matching lines and not the stray ones.  The damage was that nothing could say so.
+#   PRICED, per r7349's rule -- AND THE FIRST FIGURE WRITTEN HERE WAS A GUESS, WHICH IS THE RULE BEING
+#   BROKEN IN THE ACT OF CITING IT.  The guess was "0.1 s added, 1.9 s total".  MEASURED ON A REAL RUN:
+#   36.5 s wall for the whole gate, of which 0.6 s is CPU -- so it is dominated by the per-file read and
+#   not by the three baselines' content.  It still belongs in the fast list against a 1,800 s budget,
+#   but the number beside the order is the measured one and not the one that sounded right.
+TEXTY = ('.md', '.tex', '.py', '.yml', '.yaml', '.txt', '.sh', '.bib', '.cfg', '.toml', '.json',
+         '.tsv')
 
 # This file necessarily contains the patterns it looks for.
 SELF = 'corpus/check_conflict_markers.py'
