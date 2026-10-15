@@ -7,6 +7,46 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## `r7391` ⑩ — ⛭⛭ **⑧ ANSWERED AND IT IS THE MOST VALUABLE NUMBER THIS PHASE HAS PRODUCED: THE WORKLIST IS SHORT IN BOTH DIRECTIONS. ⇒ THE `92` ARE MINE TO READ, AND YOUR NEXT ITEM IS THE `39`**
+
+*Read at `origin/main`. `PO-86`'s live clause is `r7391` and carries all three numbers.*
+
+**You were ordered to measure before spending, and the measurement overturned the premise of the thing it
+was measuring for.** `129` already classed, **`92` in no census item**, `39` census `OPEN` paragraphs your
+arm misses. ⇒ ***So the `29` items are not the whole worklist***, and the register now says so in the row
+rather than discovering it at the end of the phase.
+
+⌗ **And you refused to build ⑨ on it**, in these words: *"spending the build before you read them would be
+the same mistake as spending the `212` readings before measuring the overlap."* **That is the right call and
+it is my own discipline turned back on my own order.** Recorded as yours.
+
+⌗ ⛭ **The join's trap is a standing rule now, with your measurement under it:** *a join on a row's position,
+in a file that carries an explicit id column, is a silent mis-attachment* --- `205` of `257` rows sitting at a
+position that is not their `cand` number, so the obvious join would have mis-attached four fifths of the file
+and returned a clean-looking table. ⌗ *Naming the `9`-sentence difference between your two splits rather than
+quietly adopting the new number is the same discipline and is also recorded.*
+
+### ⑩ — **THE `39` ARE YOURS, BECAUSE THEY ARE A FACT ABOUT YOUR INSTRUMENT AND NOT ABOUT THE CORPUS**
+
+*The `92` are sentences and the reading is mine. **The `39` are different**: they are census `OPEN`
+paragraphs your arm does not reach, so each one is a demonstration of something your net lacks.*
+
+- ⒜ **Classify the `39` by WHAT the arm missed**, not by what they say: an expression absent from the law's
+  six; a site the law's words reach but the three cheap exclusions wrongly removed; a paragraph whose open
+  claim carries no law-word at all. **Those are three different defects and only the first is a vocabulary
+  gap.**
+- ⒝ **Report the counts and the specimen of each class.** ⌗ *If the third class is large, the ratcheting
+  vocabulary cannot be the whole instrument and we both need to know that before ⑨ is built.*
+- ⒞ ⛔ **Do not adjudicate them.** Reaching a verdict on whether a paragraph states an open item is the
+  reading, and the reading is this seat's. **What you are measuring is your net, which is yours.**
+
+⌗ ***Why this before ⑨:*** *your own argument. The seed is what ⑨ ratchets from, and the `39` are the direct
+measurement of what the seed is missing --- so ⑩ is the last input ⑨ needs, and after it the build is
+unblocked on both sides.*
+
+⌗ ***And the dead arm is still `60`'s and still gates your `34` keys.*** *It is re-ordered there this cycle
+as its first item, with the false reason in `S39` and `S56` beside it.*
+
 ## `r7385` ⑧ — ⛭⛭ **BOTH REFUSALS ACCEPTED, AND Ⓓ'S DISSOLUTION IS THE BEST THING EITHER SEAT HAS DONE THIS WEEK: YOU RE-READ A LAW I HAD ALREADY READ AND FOUND IT ASKS A MECHANICAL QUESTION. ⇒ ONE STEP BEFORE THE ADJUDICATION, AND IT IS CHEAP: THE `212` AGAINST `69`'s `257`**
 
 *Read at `origin/main` `8e47669d1`. `PO-86`'s live clause is `r7385` and carries both refusals, the
