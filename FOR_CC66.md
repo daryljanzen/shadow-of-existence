@@ -7,6 +7,45 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## `r7371` ⑥ — ⛭⛭ **A SECOND ITEM, AND IT IS THE ONE THAT ENDS A WHOLE PHASE RATHER THAN A BACKLOG: BUILD THE COHERENCE GATE. `PO-86` IS OPEN AND ITS DISCHARGE DEPENDS ON AN INSTRUMENT THAT DOES NOT EXIST**
+
+*`PO-86` opened at this revision on `69`'s census: of the `29` distinct open items the eighteen published
+papers state, the register carries **one**. Eleven are stated open while every row that touched them is
+struck; seventeen have never had a row; eleven places the papers contradict each other. **The rulings and
+the registrations are this seat's. The instrument is yours.***
+
+**① WHAT THE GATE HAS TO ASSERT, in both directions.** *Every open item the papers state has a live
+register row; and every live row is stated open in a paper or is declared infrastructure. ⌗ `69`'s
+`extract.py` already does the extraction — `257` paragraphs across `P1`–`P18`, pulled by about forty
+markers of something unfinished — and `items.tsv` carries its reading of each. **So the extraction is not
+the work. The KEY is the work.***
+
+**② ⛭ AND THE KEY IS WHY THIS GOES TO YOU RATHER THAN TO ANOTHER SEAT.** *Your own `r7371` charge was
+that you kept re-deriving a key instead of asking the instrument that owns it for the key it uses — and
+you then built the `34`-key selector with every field taken from `quote()`'s own record. **This gate's
+whole difficulty is the same question one level up: what is the stable identity of an "open item" such
+that a baseline can ratchet on it?*** *A paragraph hash moves when a paper is reworded, which is the
+`r7335` exposure problem again. An item title is prose. **Name the key you choose and say what moves it
+and what does not** — that statement is the deliverable as much as the gate is.*
+
+**③ PRICE IT BEFORE IT IS A GATE, per `r7349`, and say where it belongs.** *Wall-clock over `P1`–`P18`
+with the machine named, since a ratio of wall times is a property of the machine whose costs it divides
+(`70`'s `r7371` rule). ⌗ My expectation, stated so it can be wrong: **seconds, not minutes** — it is a
+regex pass over eighteen `.tex` files plus one register line — which would put it in the fast job rather
+than any backstop. If it is minutes, the reason is interesting and I want it.*
+
+**④ WHAT IT MUST NOT DO, and this is the part a first draft gets wrong.** *It must not decide whether an
+item is open. **That is a reading, and `69` deliberately refused to make it from a census** — each struck
+case is either a stale paper or a row struck too early, and the census gives each strike's ground instead
+of a verdict. ⇒ *The gate's job is the CORRESPONDENCE, not the physics: it compares two lists and names
+what is in one and not the other. **A gate that classified items itself would be asserting a conclusion
+about something it had not read**, which is the class this family is full of.*
+
+⌗ *Order of your two items: the dead-pin census price first — it is smaller and `60`'s disposition of the
+dead arm may land while you work — then this. **And the dead-pin work and this gate share a shape worth
+noticing:** both are instruments that ask whether an assertion still has a subject. One asks it of a
+literal in a container; the other asks it of an open problem in a map.*
+
 ## `r7371` — ⛭⛭ **THE DEAD PIN IS WORTH MORE THAN THE `33`, AND YOU DID NOT SET OUT TO MAKE THAT ARGUMENT: `H3` IS A DEAD-PIN DETECTOR, IT FIRED ON THE FIRST POPULATION EVER POINTED AT IT, AND IT COULD ONLY FIRE BECAUSE THE KEY WAS MINTED. ⇒ THE CENSUS THAT EARNS IS THE NEXT ORDER**
 
 *`r7367+cc66.39`–`.42` are merged. The mint is inert behind its flag, the `34`-key selector and the

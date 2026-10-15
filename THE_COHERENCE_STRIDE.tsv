@@ -1,0 +1,93 @@
+# THE COHERENCE STRIDE -- the 29 open items the eighteen published papers state, against what the
+#   register says is open.  GENERATED from 69's census by scripts/build_coherence_stride.py; the RULING
+#   and OWNER columns are hand-held and are never regenerated.
+#
+# ⚑ WHY THIS PHASE EXISTS, AND IT IS NOT A STRATEGIC QUESTION.  r2695, Daryl: "You can't solve problems
+#   in a corpus that's stale all over the place.  If the open problems map is not even a genuine list of
+#   open problems ... work the list till it's a legitimate list."
+#   ⇒ Node 69's census (r7367_69_the_register_census) read 257 paragraphs across the eighteen published
+#   papers, every one in full, and found: ** the register's open list and the papers' open list have
+#   almost nothing in common. **  Of 29 distinct open items the papers state, ONE is carried by a live
+#   row (PO-50), ELEVEN are stated open while every register row that touched them is STRUCK, and
+#   SEVENTEEN have never had a row at all.  P18's own frontier, which the paper calls "complete and
+#   unfiltered", lists seven: one live row, six struck.  And ELEVEN places the papers contradict each
+#   other about whether something is open -- one-state failures in the published corpus, readable today
+#   by anyone opening two papers on the site.
+#
+# ⛭⛭ THE SHAPE OF THE WORK, AND IT IS SMALLER THAN THE THREE NUMBERS SUGGEST.
+#   It is NOT 11 + 11 + 17 pieces of work.  ** It is 29 items, each needing ONE ruling -- is it open? --
+#   and then up to three consequences: **
+#     ⒜ the REGISTER: the row goes live, stays struck, or is written for the first time;
+#     ⒝ the PAPERS: every paper that states it is rewritten to ONE state (the one-state rule: rewritten
+#        to the worked claim, never "was open, later resolved");
+#     ⒞ the REMAINDER, in r7013's three kinds: a different kind of object is a ROW, the same question at
+#        finer resolution is a STATED LIMIT, and a remainder whose discharge is known is an ORDER.
+#   ** One item closes completely before the next.  Nothing leaves this list by reclassification. **
+#
+# ⛭ THE RULING TEMPLATE FOR A STRUCK ROW, which is the eleven's whole difficulty.
+#   A strike is meant to rest on a receipted answer.  So for each: ** does the strike's ground answer the
+#   item the papers state, or something adjacent to it? **
+#     * ADJACENT -> the row returns LIVE and the paper was right.  (This is the corpus's most-charged
+#       class in another dress: a verdict true of what it examined, taken to license a conclusion about
+#       something else.)
+#     * IT ANSWERS IT -> the PAPER is stale, and is rewritten to the answer.
+#   ⌗ And a third outcome the register could not express until r7371: ** the strike stands as a STOPPING
+#   RULE, the item is open, and the row returns live WITH ITS BLOCKER NAMED -- data-gated rather than
+#   workable. **  PO-50 is already that shape and was carried as plain OPEN; from here a live row whose
+#   discharge waits on a measurement says so in its head, so a reader can tell a workable frontier from
+#   a data-gated one.
+#
+# ⛔ ORDER OF WORK, and the reason is measured rather than tidy.
+#   ① THE CONTRADICTIONS FIRST.  All eleven are live-against-live in print -- a reader can meet both
+#     halves today -- and fixing one requires ruling its item anyway, so they are not a separate stage.
+#   ② P7 FIRST AMONG THE PAPERS.  It is one side of C1, C2, C3, C6 and C8: ** five of the eleven.  One
+#     paper's rewrite clears nearly half the contradictions. **
+#   ③ P18's FRONTIER TABLE SECOND.  It is what a reader takes as the programme's open list, and C9 is
+#     that list omitting items P18 itself states elsewhere.  ** When this phase ends, P18's frontier
+#     table and the register's live rows are the SAME LIST. **
+#   ④ THEN the seventeen unrowed items get rows, with their objects named.
+#   ⑤ THEN the coherence GATE, below, so the drift cannot recur.
+#
+# ⛭⛭ WHAT ENDS THE PHASE, AND IT IS AN INSTRUMENT AND NOT A SWEEP.
+#   Nothing in the suite asserts that the register's open list matches the papers'.  That is why the
+#   drift was invisible until a census was run by hand.  69's extract.py is the instrument; wrapped as a
+#   gate it ratchets: ** every open item the papers state has a live row, and every live row is stated
+#   open in a paper or is declared infrastructure. **  Until that gate exists, this list is a measurement
+#   that will go stale in silence -- which is this corpus's oldest lesson.
+#
+# ⌗ THE PHYSICS WAITS AND THE QUALITY WORK DOES NOT.  Every ruling here is a read of receipts, every
+#   registration is an act of registration, and every contradiction is a one-state repair in prose.
+#   ** None of it requires doing the physics. **  Opening the physics against a false map is what
+#   produced this situation, so the map is made true first.  PO-78 and the Lean line run alongside and
+#   are not blocked by it.
+#
+# item\tclass\ttitle\tpapers\tregister\tcontradiction\truling\towner
+1	STRUCK-ROW	The acoustic peak structure	P6, P7, P15, P18	`PO-10` struck r6799 (refit run like-for-like); `PO-47` struck r6877 (stopping rule: the sky cannot tell the two models apart at the fourth peak); `PO-56` struc	--	--	--
+2	STRUCK-ROW	Whether the damping-tail displacement of the inferred tilt is a tension	P6, P15, P18 (frontier item 7)	`PO-24` struck r6801 ("almost nothing left to weigh")	--	--	--
+3	STRUCK-ROW	The progenitor spectrum	P15, P16, P18 (frontier item 4)	`PO-31` struck: its strike text says "neither is owed and neither is an open problem"	--	--	--
+4	STRUCK-ROW	The matter content's generative law	P7, P8, P13, P14, P17, P18 (frontier item 2)	`PO-30` struck r6758 ("the geometry supplies no choices"); `PO-26` struck r6463	--	--	--
+5	STRUCK-ROW	Where a generation's colourless triple sits; the fifth multiplet	P14, P18 (frontier item 1)	`PO-45` struck r6733 ("each part of the answer is receipted")	--	--	--
+6	STRUCK-ROW	The charged collapse and the Cauchy horizon	P3 (its "Open" paragraph), P5, P7, P9, P18 (frontier item 6)	`PO-25` struck r6843; `PO-49` struck r6913	--	--	--
+7	STRUCK-ROW	The ultraviolet definition of the interacting graviton tower	P10, P11, P18 (in its body, not its list)	`PO-23` struck r7077 ("the sums are defined by the construction's own regulator"); `PO-71` struck. P7 says all of it is settled: contradiction C1	C1	--	--
+8	STRUCK-ROW	The detailed worldline and field dynamics of matter crossing the branch point, for a concrete ma	P1, P5, P15	`PO-30` struck. P7 says the crossing "is settled on the field side and on the worldline side": contradiction C2	C2	--	--
+9	STRUCK-ROW	Which exponent the imaginary segment's own field obeys: $\omega=kc_s$, or the substrate field wi	P15	`PO-79` struck r7145 ("the crossing transports the species the vacuum curve supports")	--	--	--
+10	STRUCK-ROW	The source of the anisotropic spectrum on the expansion leg: "named here as owed and developed i	P15	`PO-75` struck r7243 ("a stated limit and not an order")	--	--	--
+11	STRUCK-ROW	The chiral content	P7, P12, P17	`PO-14`, `PO-45` struck. P18 places it as the ordinary route, a decline and not an open item: contradiction C8	C8	--	--
+12	NO-ROW	Dark matter	P15	--	--	--	--
+13	NO-ROW	The last-percent precision of the light-element abundances against measurement, on the specially	P15, P16, P17	--	C4	--	--
+14	NO-ROW	The exact regulated peak temperature through the branch point, "downstream-irrelevant"; and the 	P16	--	--	--	--
+15	NO-ROW	The unification thesis: the substrate's maximal symmetry as one fact behind seven separately est	P6, P7, P12, P17, P18	--	--	--	--
+16	NO-ROW	The base rate of the criterion of necessity	P6, P18	--	--	--	--
+17	NO-ROW	Whether the two real forms are physics' actual quantum and gauge sectors, not a structural rhyme	P3, P13, P18, the explainer. P5's remark `rem:a2-distinct` answers the $A_2$ half (an analytic connection through the common complexification): contradiction C7	--	--	--	--
+18	NO-ROW	A third mechanism, neither holonomy nor isometry, that could supply a colour coupling: "naming o	P14	--	--	--	--
+19	NO-ROW	Whether any substrate bundle furnishes the Standard Model's group action: the five-dimensional t	P14	--	--	--	--
+20	NO-ROW	Whether the root triple and the causal-value triple $f\in\{0,1,2\}$ are one structure: "held ope	P2, P7	--	--	--	--
+21	NO-ROW	Whether the $Q\mapsto-Q$ $\mathbb{Z}_2$ is the source of a distinction between complementary rea	P3	--	--	--	--
+22	NO-ROW	Whether the involution and the sky-angle periodicity generate the full discrete vantage structur	P3	--	--	--	--
+23	NO-ROW	The deformation invariance of the graded generation index on the branched bead: the Atiyah–Singe	P14	--	--	--	--
+24	NO-ROW	Whether the progenitor's angular momentum is carried off by matter or torqued away: "this paper 	P15	--	--	--	--
+25	NO-ROW	Instrument limits on the acoustic comparison: the polarisation source's pull "has not been measu	P15	--	--	--	--
+26	NO-ROW	Whether the reversal of determination extends from the rate to the scale: "not settled by the me	P4, P18	--	--	--	--
+27	NO-ROW	The ultraviolet regime of the late-time collapsing surface: "not settled here ..	P1	--	--	--	--
+28	NO-ROW	Whether a child universe necessarily lives in its parent's cosmological constant: "one of the op	the explainer	--	--	--	--
+29	LIVE-ROW	Which mass the Hubble–Eddington radius tracks: measured against independently measured baryonic 	P18 (frontier item 5)	`PO-50` open	--	--	--
