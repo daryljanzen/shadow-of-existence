@@ -133,6 +133,28 @@ def rows_at(sha):
     return out
 
 
+
+#: ** THE CONDITION A GATE WOULD HAVE CHECKED, and the two shas that make it two-sided. **
+R7368_TIP = '0ab366bd'      # r7368's LAST commit: the condition must be FALSE here
+R7370_PASS = 'ba75b3fb'     # the pass that finally wrote the rows: the condition must be TRUE here
+
+
+def uncovered_named(sha):
+    """the NAMED keys whose literal is in `S55` at `sha` but which have NO baseline row at `sha`
+
+    *That is the whole of the remedy as a predicate: at the moment a revision is pushed, every literal
+    its own receipt edits introduced must already carry a row.  It is evaluated on two pinned shas
+    rather than argued, because a condition that fires nowhere is not a condition.*
+    """
+    rel = [p for p in git('ls-tree', '-r', '--name-only', sha, 'receipts/L_probability/').split('\n')
+           if os.path.basename(p).startswith('S55_')]
+    if not rel:
+        return None
+    rows = rows_at(sha)
+    text = git('show', f'{sha}:{rel[0]}')
+    return [lit for lit in NAMED if lit in text and (rel[0], lit) not in rows]
+
+
 def mint_of(receipt, literal, tip=FRAME, base=BASE):
     """the OLDEST commit in the pinned range whose diff on `receipt` changes the count of `literal`"""
     shas = git('log', '--reverse', '--format=%H', '-S', literal, tip, '--not', base,
@@ -274,6 +296,11 @@ def main():
     print(f'      => {R["d_rev"]} after each revision\'s LAST pass -- arm (d), central 2 band 1-6 -> '
           f'{score(R["d_rev"], 1, 6)}')
     print(f'      => {R["d_sum"]} summed over every pass (the other reading, reported not scored)')
+    print()
+
+    print('  THE REMEDY AS A PREDICATE, on two pinned shas')
+    print(f'      at {R7368_TIP} (r7368\'s last commit):  uncovered {uncovered_named(R7368_TIP)}')
+    print(f'      at {R7370_PASS} (the pass that wrote them): uncovered {uncovered_named(R7370_PASS)}')
     print()
 
     print('  WHAT THE FIGURES SAY')

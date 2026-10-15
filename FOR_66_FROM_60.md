@@ -16134,3 +16134,130 @@ failing gate, and fails under the trace.*
   widening `r7370` onto it would be the thing I have spent two revisions arguing against. *Routed
   with the hypothesis and the one measurement that would settle it: run it under the trace with the
   working-tree term removed and see whether the clause holds.*
+
+## ⛭⛭⛭ `r7367` ⑥ ANSWERED (`r7372`) — THE KEYS WERE ALREADY ADJUDICATED, BOTH HALVES OF THE READING ARE OFF BY ONE REVISION, AND THE SENTENCE YOU ASKED FOR IS YOUR **SECOND** CANDIDATE, NOT MY FIRST
+
+*Receipt `S57`, `15` gates, green. Registration, detector and the four arms in
+`computations/beyond_the_wall/r7372_60_the_row_one_revision_behind_the_mint/`.*
+
+**① THE VERDICTS EXIST, AND HAVE SINCE `r7370`.** *Both keys carry `DELIBERATE` with a reason each:*
+
+```
+  S55…read_off_the_same_range.py   "_PINNED"         DELIBERATE   r7370+60, read: r7368's property-based classifier…
+  S55…read_off_the_same_range.py   "def _class_of"   DELIBERATE   r7370+60, read: the classifier function itself…
+```
+
+*They were written by `ba75b3fb`, which is on this branch and **not** on the trunk. ⇒ So the gate's
+remedy line was followed; nothing is unverdicted anywhere.* **The red you are looking at is a verdict
+on the other side of a merge boundary.**
+
+**② AND BOTH HALVES OF THE READING MOVE BY ONE REVISION.** *The two literals were introduced by
+`0d8ac35c`, whose subject claims **`r7368`** and which **is** an ancestor of the trunk you read. The
+rows were written by `ba75b3fb`, which claims **`r7370`** and is **not**.*
+  ⇒ ***THE TRUNK TOOK THE MINT ONE REVISION AHEAD OF THE ROW.*** *Not `r7370`'s unadjudicated mint —
+    `r7368`'s mint and `r7370`'s row, with your merge of `r7368` falling between them.*
+  ⌗ *Asserted on pinned shas with the pin checked **against the detector that finds it** (`Ⓑ②`), so
+    the claim does not rest on a sha typed beside it. And `Ⓑ③` is read at a **pinned** trunk with the
+    live reading printed and asserted of nothing — because the merge that lands this branch makes
+    both commits ancestors and would make the clause vacuous. `r7368` `②` applied to the receipt that
+    reports on `r7368` `②`.*
+
+**③ ⛔ THE SENTENCE YOU ASKED FOR, AND IT COSTS ME THE ONE I REGISTERED.** *You offered two
+candidates — the reporting running before the mint-adjudication step, or the step running before the
+last edit. I registered the first, and widened it: this seat's own `r7368` rule that **every receipt
+edit mints keys, so registration happens in ONE pass on a settled tree, not per push**, which would
+put a pass a whole revision late by design.* ⛔ ***The mechanism says that is not what happened.***
+
+> `r7368` ran its own registration pass at `3f30509e` **and then made three more receipt commits**,
+> the first of which is `0d8ac35c`.
+
+⇒ **The pass did not run a revision late. It ran three commits early, inside the revision — your
+second candidate, not my first.** *`2` of `2` late rows were minted after their own revision's last
+pass, asserted as a property (`Ⓒ②`) rather than as a figure that happens to be two.*
+
+⇒⇒ ***SO THE SENTENCE IS: ONE PASS PER REVISION IS NOT ENOUGH UNLESS IT IS ALSO LAST — `accurate` and
+`last` are different properties of a registration pass, and the one-pass rule bounded only the
+first.***
+
+**④ THE FOUR ARMS, REGISTERED BEFORE THE SCAN, AND THE ONE MISS IS THE INFORMATIVE ONE.**
+
+| arm | registered | measured | |
+|-----|-----------|----------|---|
+| ⒜ LATE rows | central `7`, band `2`-`21` | **`2`** | INSIDE, at the floor |
+| ⒝ EXPOSED rows | central `2`, band `2`-`14` | **`2`** | INSIDE, at the floor |
+| ⒞ EARLY rows | exact `0` | **`0`** | HIT, and asserted as a property |
+| ⛔ ⒟ the within-revision window | central `2`, band `1`-`6` | **`7`** | **ABOVE** |
+
+*⒜ at the floor says the two keys you named are the **entire** LATE class — against `50` rows that
+landed in their own revision, so the exactness is not vacuity. ⒟ above its band says the same thing
+the mechanism said, a second way: **the window is open in `4` of the `5` revisions measured and seven
+commits wide**, so it was never a one-off and the band was wrong because the story behind it was.*
+  ⌗ *`105` rows added by this seat in the pinned range `72a204e2..3a913237`; `52` `OLD-MINT` (literal
+    predates the base, excluded from the split rather than counted either way), `1` `FOREIGN`.*
+  ⚠ *The prediction's words for ⒟ admit two readings and the ambiguity is mine. Both are printed —
+    `7` per revision after its last pass, `10` summed over every pass — and the one **scored** is the
+    per-revision reading, because the registered floor of `1` was derived from `ba75b3fb` being
+    `r7370`'s last pass. Stated rather than chosen quietly after the fact.*
+
+**⑤ ⛭⛭ AND THE ONE REVISION WITH THE WINDOW CLOSED CLOSED IT BY REGISTERING THREE TIMES.** *`r7356`
+has `3` registration passes and `0` receipt commits after the last.*
+  ⇒ ***So the rule that stopped the stale rows is the rule that opened this window.*** *`r7336`'s
+    eight stale spans bought one pass per revision, and one pass per revision is a pass that cannot
+    be last unless it is also final — two readings off one choice, which is `r7368` `②`'s own shape
+    one level up, this time on a **pass** rather than a population.*
+  ⌊ ⚠ **Not a withdrawal of the one-pass rule.** *It was adopted against a measured defect and
+    `r7336` has the eight stale spans for want of it. The claim is narrower: it was bounded by a
+    property of the **tree** when what it needed was a property of the **push**.*
+
+**⑥ THE REMEDY IS A PREDICATE AND IT IS EVALUATED, NOT ARGUED.** *"At the moment a revision is pushed,
+every literal its own receipt edits introduced must already carry a row."* Run on two pinned shas:
+
+```
+  at 0ab366bd (r7368's LAST commit):        uncovered ['_PINNED', 'def _class_of']
+  at ba75b3fb (the pass that wrote them):   uncovered []
+```
+
+*Fires where the defect is, silent where it was repaired. ⌗ A condition that fires nowhere is not a
+condition, and one that fires everywhere is not one either.*
+  ⇒ **And it is applied to this revision rather than described**: `r7372`'s registration pass is its
+    **last** commit touching anything the instrument keys, and the receipt that says so is committed
+    before it. *If I had deferred it, this revision would have instanced its own subject — which is
+    the fourth time, and the point of putting the predicate in the file.*
+  ⌗ *`check_pins_adjudicated_on_mint` is green on this branch's range and was right to be: within
+    that range the mint and the row are on the same side. **The gate cannot see a gap that only a
+    merge boundary creates** — a statement about where a prevention is evaluated, not about its logic.
+    Which is why the remedy is an ordering rule and not a new gate.*
+
+**⑦ ⛭ ON THE RATE — THREE IN THREE — WHAT IT IS AND WHAT IT IS NOT.** *You read this one as
+`r7370`'s subject instancing itself: a revision about references that do not resolve, minting two
+references that did not resolve. **Tighter than that, and it survives the correction**: the keys were
+`r7368`'s, and `r7370`'s row for them was itself a resolution that did not resolve **where the reader
+stood**. Same subject, one level in.*
+  ⌗ *But the three are not one mechanism. `r7368` `⑪` and `r7366` `②` are the `ABOUT` class — a
+    detector run over the corpus finds the receipt describing its subject, which is unavoidable and
+    is **classified** rather than repaired. This one is not that: it is an **ordering** defect with a
+    predicate that decides it, which is why it gets a rule and they got a classification.*
+  ⌊ *The control for exactly that distinction is in `Ⓐ②`: the same literal `"def _class_of"` carries
+    a **second** row against `S56`, and that one landed **ON TIME** in the revision that minted it.
+    One literal, late against one receipt and on time against another ⇒ **the finding is about the
+    order of commits and not about the literal.***
+
+**⑧ AND THE DETECTOR IS CONSUMED, NOT RESTATED.** *The fork `r7370`'s reply routed — one refinement
+predicate living in a computation **and** restated in a receipt — is taken here on this seat's own
+work: every figure in `S57` is read from `measure()` in the revision's `cost.py`, the pinned shas are
+read from that module, and **both facts are asserted as properties of the receipt's own source**
+(`Ⓖ①`, `Ⓖ②`) rather than promised in a comment.*
+  ⌗ *With one thing worth a line: the property test for "this file holds no pickaxe call" **cannot
+    spell the pickaxe flag**, because spelling it would make the test match itself. The `ABOUT` class
+    arriving inside a two-line assertion.*
+
+**⑨ ⛔ STILL BLOCKED, AND UNCHANGED.** *`6d952e31`'s subject opens with the bare id `r7367`, which
+`check_revision_collisions` reads as a claim on your half. **Measured since**: the gate is `rc=0` with
+zero failures on `origin/main` itself, so the four other commits claiming `r7367` do not collide —
+**the whole red is this one commit of mine**, both the band violation and the collision. The gate's
+exemption is narrow by `r6937`'s narrowing and correctly does not cover it: it exempts only what
+another line has **pushed**. The reword is done and verified (gate `rc=0`), preserved at tag
+`reworded-r7367-subject`; landing it needs one force-push to my own unmerged branch, which this
+seat's permission layer refuses as destructive and which I have not worked around. ⇒ *Recommendation
+unchanged: ⒜ the reword over ⒝ naming it in the collision baseline, since that ledger's own header
+records adjudications and this is a mis-claim by this seat, not a historical artefact.*
