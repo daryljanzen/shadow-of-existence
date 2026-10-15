@@ -181,3 +181,52 @@ if __name__ == '__main__':
         _flag = 'ROUTED' if any(_p.split('/')[1].startswith(q[:14]) for q in ROUTED_PREFIXES) else ''
         print(f'      {_n:2d}  {_p.split("/")[1][:34]:34s} {_flag}')
     print()
+
+
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+# THE RESULT BLOCK, appended by the counting push.  ** Nothing above this line was changed. **
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+CENSUS = '4e9d16ef'            # the first repair commit's parent, as registered
+CENSUS_SHA = '4e9d16ef'
+
+RESULT.update({
+    # ── the block as it stood at the census ──
+    'A_ROWS': 19,              # the queue's owed rows at CENSUS, 9 prefixes
+    'ROUTED_ROWS': 3,          # on L259/D1 (1) and L256/B1 (2) -- routed with patches, never edited
+    'CLOSED': 7,               # prefixes taken and closed, every editable row of each
+    'CLOSED_ROWS': 16,
+
+    # ── arm (a): the uniqueness share, same arbiter as r7356 ──
+    'A_MULTI': 9,              # 9 of 19 = 0.474, INSIDE the 0.20-0.55 band
+    'A_UNSEEN': 0,             # ⛭ and NONE was invisible to the arbiter, against 7 of 30 at r7356
+    'A_MAX': 77,               # one literal ('probe') occurring 77 times in a single file
+
+    # ── arm (b): receipts whose FIRST repair form was UNKEYABLE ──
+    #   ⛔ MEASURED AT THE RECORD AND IT IS ZERO -- and the zero is not the quantity the arm names.
+    #   The instrument was run on each receipt's key list BEFORE its take was committed, so an
+    #   unkeyable first form was repaired in the working tree and never reached a commit.  ** The
+    #   arm reads the record; the record cannot hold what the pre-check removes. **
+    'B_UNKEYABLE': 0,          # at the take commits, every minted span of the final form is keyed
+    'B_UNKEYABLE_IN_SESSION': 1,   # L560: the first form put the membership behind a helper's
+                                   # parameter, so the three minted spans keyed nothing; caught by
+                                   # the pre-check, not by the gate, and fixed before the commit
+    'B_SPACE_MEASURED': 7,
+
+    # ── the effort reading, reported and not banded ──
+    'EFFORT_MINUTES': 25.4,        # census commit to the last repair commit
+    'EFFORT_PER_RECEIPT': 3.63,    # against 6.96 at r7356 and the 8.0 the phase was priced on
+})
+
+#: ⛔⛭⛭ THE FINDING THIS REVISION DID NOT REGISTER, AND IT IS ARM (b) TURNING INTO ITS OWN SUBJECT.
+#: *`r7356` found four faces of ONE class: a repair that strengthens a pin can make it invisible to
+#: the instrument that adjudicates it.*  The countermeasure was to read the instrument's own key list
+#: per receipt before committing -- and this arm was registered to count how often the class recurs.
+#:   ⇒ ** It recurred once and the record holds zero, because the countermeasure runs BEFORE the
+#:     record is written. **  *An arm that counts a defect the workflow removes pre-commit measures
+#:     the workflow, not the defect.*
+#:   ⇒ ** That is the fail-on-success shape at one remove, and it is the sixth instance this
+#:     fortnight: not a gate reading the live ledger for a pinned measurement, but a REGISTRATION
+#:     whose arm can only be non-zero while the fix is absent. **
+#:   ⌗ Both numbers are carried rather than one chosen: `0` at the record, `1` in the session.  The
+#:     band is `1`-`4`, so the arm is IN BAND where it was measurable and FAILS LOW where it is
+#:     auditable -- and the gap is the result.

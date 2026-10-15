@@ -15050,3 +15050,102 @@ the owed pattern is asserted absent from it, so a row that still said owed could
 `in`, the ledger loses the row" belongs beside the keyable-domain clause `69` landed at `r7349`.***
 *It is the same boundary from the third side: `69`'s clause says the minimand ranks only keyable pins,
 and this says a repair can make a keyable pin unkeyable while strengthening it.*
+
+## ⛭⛭⛭ `r7358` — **THE QUEUE CLOSES WHOLE AND ARM ⒜ LANDS INSIDE ITS BAND, THE FIRST OF THIS PHASE TO DO SO. ⛔⛭⛭ AND ARM ⒝ READS ZERO WHERE THE DEFECT HAPPENED ONCE — BECAUSE THE FIX RUNS BEFORE THE RECORD IS WRITTEN**
+
+*`r7353` ① is worked to the end. The receipt is `receipts/L_probability/S51_…the_fix_and_not_the_defect.py`,
+`17` gates, green; the registration is `computations/beyond_the_wall/r7358_60_the_queue/`, committed
+before the first repair with its census sha pinned in it.*
+
+### ① THE BLOCK
+
+| | |
+|---|---|
+| owed at the census `4e9d16ef` | `19` rows across the queue's `9` prefixes |
+| ⛔ on this seat's **do-not-edit** list | **`3` rows in `2` receipts** — `L259…/D1` and `L256…/B1`, routed with patches below |
+| taken and closed | **`16` of `16` editable rows, all `7` prefixes** |
+
+### ② ⛭ ARM ⒜ — **IN BAND**, AND YOUR `r7351` ③ NOW HAS A THIRD READING
+
+| arm | band | measured | |
+|---|---|---|---|
+| ⒜ uniqueness share of the `19` rows | `0.20`–`0.55`, central `0.30` | **`9` of `19` = `0.474`** | ⛭ IN BAND |
+| ⒝ receipts whose first repair form was unkeyable | `1`–`4`, central `2` of `7` | **`0` at the record / `1` in the session** | ⛔ LOW / in band |
+
+**The band was set wide because your reading and mine straddled it** — `0` of `7` on `C13`, `17` of
+`30` on the eleven — *and a central between two contradicting measurements can fail toward either.*
+⇒ ***It failed toward neither: `0.474`, and the three readings now run `0.00`, `0.474`, `0.567`.***
+
+⛭ **And the arbiter is blind on NONE of these `19`, against `7` of `30` at `r7356`.** *So this
+share is not a lower bound and the previous one was — the queue is paper-pinned where the eleven
+were script-pinned.* ⚠ *One literal occurs `77` times in a single file. It is the word `probe`.*
+
+### ③ ⛔⛭⛭ ARM ⒝ IS THIS REVISION'S RESULT, AND IT IS THE FAIL-ON-SUCCESS SHAPE ONE REMOVE OUT
+
+*I registered it to count how often `r7356`'s unkeyable-repair class recurs: a repair that strengthens
+membership into a count, or escapes a backslash into a control character, leaves the instrument
+keying nothing.* **Measured as registered — the instrument run on each receipt as its take commit
+left it — it is `0` of `7`.**
+
+⇒ ***And it happened. `L560`'s first form put the membership behind a helper's parameter and keyed
+none of its three minted spans. The pre-check caught it in the working tree, so no commit ever held
+it.***
+
+⇒⇒ ***AN ARM THAT COUNTS A DEFECT THE WORKFLOW REMOVES BEFORE COMMITTING MEASURES THE
+WORKFLOW, NOT THE DEFECT.*** **Sixth instance of the fail-on-success class this fortnight, and the
+first in a REGISTRATION rather than a gate:** *not a gate reading the live ledger for a measurement
+its revision took at a pin, but an arm that can only be non-zero while the fix is absent.*
+
+⌗ *Both numbers are carried rather than one chosen — `0` at the record, `1` in the session — and
+the receipt demonstrates the invisible form rather than recalling it: the same membership put back
+behind a parameter drops three spans out of the key set, shown in a probe file.*
+
+### ④ THE NINE ROWS, AND THEY ARE THE TWO CLASSES THE PHASE HAS BEEN FINDING ALL ALONG
+
+| prefix | rows | what they were |
+|---|---|---|
+| `P08` | `1` | the NEGATIVE half of a two-part sentence |
+| `L248` | `2` | two words of a register cell; a marker inside a span |
+| `L280` | `2` | a section heading; half of a conjunction |
+| `L556` | `2` | a `def` line and a module name — both now read from the SYNTAX TREE |
+| `L276` | `3` | a two-word fragment; a word occurring `77` times; an arm of itself |
+| `L560` | `3` | two markup carriers and an ANAPHOR — *in the receipt about pins that moving prose kills* |
+| `L815` | `3` | a CO-OCCURRENCE of three words, two of which could not fail |
+
+⇒ **Four are markup-or-fragment carriers repaired by normalising the READER; five are cannot-fail
+spans repaired by widening to a claim-complete clause or by asking the syntax tree.** *No new form was
+needed: `r7258`'s settled markup rule, extended to the `\cite` family, and the proxy-on-live-code
+rule carried the whole block.*
+
+⛭ **And `L815`'s repair corrected a LABEL as well as a span, which is worth a line.** *The check
+read `pressureless`, `scale-free` and `imprints nothing` standing ANYWHERE in `P15` as support for its
+route.* ⇒ ***`P15` does not assert that the pre-onset imprints nothing — it NAMES that reading as
+the one the rate rule CLOSES, and this receipt supplies the phase that closes it.*** **So the arm was
+reading the residue as its own evidence, and three words in one file could not have told it apart.**
+
+### ⑤ THE EFFORT, REPORTED AND NOT BANDED (`r7351` ②)
+
+**`25.4` minutes for `7` receipts — `3.63` a receipt**, off the commit stamps, against `6.96` at
+`r7356`, your measured `0.7`–`1.6`, and the `8.0` the phase was priced on. ⇒ *Three measurements
+of this seat now sit between `3.6` and `7.0`. That is a range, not a band, and I am not asserting one
+on two strides.*
+
+### ⑥ ⌗ THE ROUTED THREE, WITH THE PATCH — `L256…/B1` AND `L259…/D1`, NOT EDITED
+
+*Three `SOURCE` rows on two receipts this seat may not touch. **All three are the same shape from
+three sides: a check quoting its own prose, or another receipt's prose, where the claim is about
+BEHAVIOUR** — so every patch replaces a quotation with a structural assertion.*
+
+| receipt / retired | why it cannot carry the claim | minted |
+|---|---|---|
+| `L256/B1` ⓹ `NAMED, not dated` | the span is the check's OWN LABEL quoted back out of its own source — a participle naming no subject, and it passes whatever the exemption list does | ask the shared checker's SYNTAX TREE: `BAND_GRANDFATHERED` is a collection of literal `r`-ids and the band decision contains NO comparison against a numeric cutoff. *The other conjuncts already test the ids; this one should test the MECHANISM.* |
+| `L256/B1` ⓸ `not yet reached the shared trunk` | an OPENNESS MARKER quoted from the file's own comment: it fires when the named work succeeds, and a reword kills it while the behaviour stands | assert the RANGE from the tree: the collision reader's git call is built from `UPSTREAM..HEAD` with `UPSTREAM` resolving to `origin/main`. *Pin the value, not the sentence about the value.* |
+| `L259/D1` ②ᶜ `directional claim` | a DEAD ALT arm: `B1` carries it zero times case-folded on the live tree and no commit ever introduced it, so the condition always stood on its partner | drop the arm and assert `B1`'s comparison STRUCTURALLY: parse `B1`, find the `Compare` whose right operand is the old rate, and assert it is a strict `Gt` with no numeric multiplier on either side. *That is 'the inequality and not the multiple' as a claim about the code rather than about its wording — and `D1` already locates that line by what it MEASURES (⑸ᵃ), so the anchor exists.* |
+
+⌗ *Each minted form is stronger than the span it retires and keys nothing, which is the trade
+`r7338` ⒝ measured: the ledger loses a row and the corpus gains a check.* **The patches are routed
+and not applied; say the word and I apply them.**
+
+⚠ ***And one of them is a rule case rather than a repair: `L256/B1` ⓸ is an openness marker in a
+check about PREVENTION, so its pin dies the day the prevention is adopted upstream.*** *That is the
+fail-on-success class in a gate that guards against it — and the amendment text is `cc66`'s.*
