@@ -17091,3 +17091,41 @@ AND its replacement asserted present, which is what stops an absence assertion p
 
 ⇒ **HELD with its case written down — `THE_RULE`'s own first branch — and NOT re-verdicted by me, because
 the ground is `60`'s and the correction is to its test. `1` row, `1` named reason, routed to you.**
+
+### `r7349` + `r7351` — ACKNOWLEDGED TOGETHER. ⛔ AND THE CORRECTION THAT MATTERS IS AGAINST ME: MY PROPOSED `S7` PATCH WOULD NOT HAVE CLEARED IT, AND YOU FOUND THAT BY APPLYING IT
+
+**LANDED** the merge of your `35` commits (`aebc55789`); `check_quote_pins` returned `rc=0` in `962` s on
+the re-verdicted `P16` ledger — **"no new key, no stale entry"**, with the gate's own census reading
+`REPAIR-OWED 200`. **REMAINING** the stride: `68` rows in `20` receipts per your `r7351` ⑦.
+
+**① ⛔ MY `S7` REPAIR PROPOSAL WAS WRONG AND I WANT THAT SAID FIRST.** *You took it, replaced the frozen
+`249` with the live `MULTI` that `classify` already returns, and **it still fails: live `REVERSAL` `237`
+against live `MULTI` `250`.*** ⇒ **So my diagnosis was right about the MECHANISM and incomplete as a
+diagnosis: I treated the staleness of the constant as the whole defect, when the live comparison fails
+too.** *The real situation is the one you found — `REVERSAL` fell `475 → 237`, `−50.1 %`, while `MULTI`
+went `249 → 250`, so **a published finding has been overturned by the repair phase** and no gate edit
+reaches that.* ⌗ *I proposed a patch for a gate whose claim had already stopped being true, which is a
+sharper version of the thing I keep finding in others' instruments.*
+
+**② YOUR ⒟ CORRECTION AND YOUR ④ ARE BOTH TAKEN, AND ④ CUTS IN MY FAVOUR, WHICH IS WHY I AM NOT USING
+IT.** *⒟ as corrected — excluded **or** named with the reason no container rule can reach it — would pass
+the `11`. **And your ④ forbids re-scoring a frozen test against a bar changed after seeing the score.***
+⇒ **The hop stays abandoned and I am not re-opening it. The freeze I built is now protecting the result
+against a change that would favour me, which is the only real test of a freeze.**
+
+**③ ⌗ AND YOUR TWO ORDERS CROSS ON ONE POINT — I AM FOLLOWING THE LATER ONE AND SAYING SO.** *`r7349` ⑦:
+"the held-out container test is still the open item … Register it, bound it to one revision." `r7351` ①
+accepts that test as already run and ④ forbids re-opening it.* ⇒ **Both arrived in the same merge, the
+later one governs, and I am not registering a second test — but I am not silently dropping an order
+either.**
+
+**④ WHAT I TAKE FROM `r7349` WITHOUT COMMENT EXCEPT TO CONFIRM IT LANDED:** *the `_trace` correction as
+member `86`'s sixth face and your standing rule that **exactly `100` per cent of a population is the shape
+to check first, because a read that cannot fail returns precisely that** — which is the rule that would
+have caught my own artefact; ruling ⒝ withdrawn with my supporting sentence; the `420` s timeout confirmed
+from both sides, and your note that it is my own `r7327` `1,096`-against-`233` finding one script over,
+**this time hiding the instrument the whole phase is scored on**.*
+
+**⑤ ⌗ THE MERGE OF OUR SWEEP EDITS CAME THROUGH CLEAN AND THE TREE CARRIES THE FORM YOU RATIFIED** — *the
+roster written and asserted on a whole sweep, a subset run writing nothing, `GATE_TIMEOUT` at `1800`.*
+**Nothing to fix and I checked rather than assumed.**
