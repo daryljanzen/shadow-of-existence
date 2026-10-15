@@ -534,7 +534,21 @@ gate('Ⓔ② ⌗ and the over-count is NAMED rather than reconciled by guessing:
      'already re-stated under the grain clause in that same revision.  ** The order\'s number was '
      'right and mine was off by one, for a boundary reason, and both are reported **',
      any(r[0].split('/')[1] == 'L204_physics_reach' and r[5] == 'REPAIR-OWED'
-         and 'grain clause' in r[6] for r in CELL))
+         and 'grain clause' in r[6] for r in CELL_PIN))
+#: ⛔⛭ r7350 (60), AND THIS RECEIPT BROKE ITS OWN STATED RULE.  The line above read the LIVE cell for
+#: a row the claim is about AT THE PIN, so it went red the moment this seat's own repair stride
+#: retired that row -- the fail-on-success shape `Ⓕ②` below names in words.  ** The historical arm is
+#: now read at the pin, where it is a claim, and the live state is asserted separately and MONOTONE:
+#: the owed rows of that prefix only fall, because retiring them is what the phase does. **
+_e2_pin = [r for r in CELL_PIN if r[0].split('/')[1] == 'L204_physics_reach'
+           and r[5] == 'REPAIR-OWED']
+_e2_live = [r for r in CELL if r[0].split('/')[1] == 'L204_physics_reach'
+            and r[5] == 'REPAIR-OWED']
+gate(f'Ⓔ②ᵃ ⛭ and the LIVE companion is stated monotone rather than as a value, which is the repair '
+     f'this receipt prescribes applied to itself: that prefix held {len(_e2_pin)} owed row(s) at the '
+     f'pin and holds {len(_e2_live)} live, and the count only falls because retiring them is what '
+     f'the phase does',
+     len(_e2_live) <= len(_e2_pin))
 gate('Ⓔ③ ⛔⛭⛭⛭ AND THE `MEANING-HELD` BAND IS BROKEN.  I pre-registered `50` per cent central, band '
      '`25`-`80`, and the set came back with NONE.  ** Published as broken, in the gate, where a '
      'reader cannot miss it **',
@@ -580,7 +594,16 @@ gate('Ⓕ② ⇒ so `MEANING-HELD` is for the INEXPRESSIBLE and `L-249`\'s rule 
      'and is named: pin the historical state at its commit, assert the current state separately, '
      'make the live check MONOTONE **',
      all('L-249' in r[6] for r in _open_rows)
-     and all(any(x[1] == r[2] and 'L-249' in x[6] for x in LEDGER) for r in _open_rows))
+     and all(any(x[1] == r[2] and 'L-249' in x[6] for x in LEDGER_PIN) for r in _open_rows))
+#: ⛔⛭ r7350 (60): the second clause searched the LIVE ledger for the note it is a claim about AT THE
+#: PIN.  ** The phase rewrote those notes when it repaired the rows, so the clause reddened because
+#: the repair it asks for HAPPENED. **  ⇒ Read at the pin, with the live companion monotone below --
+#: and the lesson is this receipt's own sentence, which it did not apply to its own gate.
+_f2_live = [r for r in _open_rows if any(x[1] == r[2] for x in LEDGER)]
+gate(f'Ⓕ②ᵃ ⛭ and the live companion: of the {len(_open_rows)} openness rows pinned here, '
+     f'{len(_f2_live)} still have a literal the live ledger carries, and that number only falls as '
+     f'the phase repairs them -- asserted as a direction, not as a value',
+     len(_f2_live) <= len(_open_rows))
 gate('Ⓕ③ ⌗ and the distinction is stated so a reader who disagrees disagrees with ONE decision '
      'rather than with an aggregate -- which is the whole reason the share came out at zero and the '
      'band broke',

@@ -132,11 +132,31 @@ def git(*a):
 BASE = os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv')
 LEDGER = tsv(BASE, 7)
 
+#: ⛔⛭⛭ r7350 (60): THIS RECEIPT'S HISTORICAL ARMS WERE READING THE LIVE LEDGER, and they went red
+#: the moment this seat's own repair stride retired and re-stamped the rows this revision minted --
+#: the fail-on-success shape, in the receipt that measured the instrument that finds it.
+#: ** PIN is this revision's OWN last content commit, which is the frame its measurement was taken
+#: in; every band, share and named row below is a claim about THAT tree. **  The live state is
+#: asserted separately and monotone, at the end of the band block.
+PIN = 'fcbcb38a'
+
+
+def _tsv_text(text, ncol=7):
+    out = []
+    for ln in text.split('\n'):
+        c = ln.rstrip('\r').split('\t')
+        if len(c) >= ncol and c[0].startswith('receipts/'):
+            out.append(c)
+    return out
+
 
 def git_show(sha, rel):
     import subprocess as _sp
     return _sp.run(['git', 'show', f'{sha}:{rel}'], cwd=ROOT, capture_output=True, text=True,
                    errors='replace').stdout
+
+
+LEDGER_PIN = _tsv_text(git_show(PIN, os.path.join('corpus', 'quote_pin_baseline.tsv')))
 
 
 def tsv_text(text, n):
@@ -357,7 +377,7 @@ gate(f'⇒ ⛔ AND ADOPTING THE TEST CREATES A BACKLOG RETROSPECTIVELY: {len(_de
 # ======================================================================================
 head('F.  THE 163 VERDICTS, AND THE RESEMBLANCE TEST FIXED BEFORE ANY KEY WAS READ')
 # ======================================================================================
-_mine = [c for c in LEDGER if c[0].split('/')[1] in MINE_PREFIXES and c[6].startswith(STAMP)
+_mine = [c for c in LEDGER_PIN if c[0].split('/')[1] in MINE_PREFIXES and c[6].startswith(STAMP)
          and 'the r7257 order ③' in c[6]]
 # ⛔⛭⛭ r7314+60: THIS GATE ASSERTED ITS OWN STAMP WAS STILL ON THE ROWS, AND READ IT LIVE.
 #   A stamp is a fact about a REVISION.  `r7310` re-verdicted one of these keys under the
@@ -507,7 +527,14 @@ gate('⓬ and one defect found this revision is ROUTED rather than patched: "str
      'ARTICLE, so no arm of the three sees it, and it sits in the ledger as REPAIR-OWED with that '
      'reason written into its row rather than a fourth arm written in a hurry',
      any(lit(c) == 'straddles the' and c[5].strip() == 'REPAIR-OWED' and 'ARTICLE' in c[6]
-         for c in LEDGER))
+         for c in LEDGER_PIN))
+#: ⛭ r7350 (60): the live companion, monotone -- that row was repaired by a later revision of this
+#: seat's, which is the routing being discharged and not the claim failing.
+_live_straddle = [c for c in LEDGER if lit(c) == 'straddles the']
+gate(f'⓬ᵃ and the LIVE state of that routed row is asserted separately and monotone: '
+     f'{len(_live_straddle)} row(s) carry that literal now, against 1 at the pin -- a routed defect '
+     f'is discharged by a later revision, and the pinned claim is what this receipt measured',
+     len(_live_straddle) <= 1)
 
 # ⛔⛭⛭ AND ONE REPAIR OF THIS REVISION WAS REVERTED, WHICH IS THE COSTLIEST LINE IN THIS FILE.
 #   *`B66` carries TWO markup carriers and only ONE is an owed row.  The first cut repaired both --
