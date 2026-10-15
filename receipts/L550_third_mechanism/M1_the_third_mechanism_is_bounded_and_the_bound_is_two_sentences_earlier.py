@@ -136,7 +136,7 @@ def main():
     _po_rows = [l for l in po.split('|') if 'no third mechanism has been named' in l]
     check(f'⓵ P14 states the residue as an unbounded existential, in one sentence that occurs once '
           f'({p14.count(residue)}): "{residue}"',
-          p14.count(residue) == 1)
+          residue in p14 and p14.count(residue) == 1)
     check(f'   and the register carries it that way too, in ITS OWN CELL rather than anywhere in the '
           f'file ({len(_po_rows)} cell(s))',
           len(_po_rows) == 1)
@@ -183,7 +183,7 @@ def main():
               'gauges, and cross-register ones')
     check(f'   and p0 says WHY l_P is not a second length, with the SUBJECT in the span and the '
           f'clause occurring once ({p0.count(_CROSS)}): "{_CROSS}"',
-          p0.count(_CROSS) == 1)
+          _CROSS in p0 and p0.count(_CROSS) == 1)
 
     # ---------------------------------------------------- (4) the arithmetic
     print()

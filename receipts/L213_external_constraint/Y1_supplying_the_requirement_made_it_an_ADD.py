@@ -127,14 +127,15 @@ def main():
              'continuation---but not a second physical world')
     check(f'and names what the face lacks, with the face NAMED in the same clause and the clause '
           f'occurring once ({p13.count(_LACKS)}): "{_LACKS}"',
-          p13.count(_LACKS) == 1)
+          _LACKS in p13 and p13.count(_LACKS) == 1)
     check(f'and calls it real-by-construction AND not a second physical world in one clause, so '
           f'this is not a claim that it is unreal -- and the clause occurs once where the bare '
           f'token occurs {p13.count("real-by-construction")} times: "{_REAL}"',
-          p13.count(_REAL) == 1 and p13.count('real-by-construction') > 1)
+          _REAL in p13 and p13.count(_REAL) == 1
+          and p13.count('real-by-construction') > 1)
     check('⇒ (2) UNTOUCHED by (1): a capacity to host colour is not a clock -- asserted on the '
           'same named clause, which is what says the face has no clock',
-          p13.count(_LACKS) == 1)
+          _LACKS in p13 and p13.count(_LACKS) == 1)
 
     # (3) untouched and independently fatal
     check('(3): P13 demands BOTH grounds of any coherent matter route',

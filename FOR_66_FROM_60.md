@@ -15025,3 +15025,28 @@ emphasis normalisation, and carries the claim its retired fragments only pointed
 rows pinned ONE sentence each at two lengths**, which is the same duplication I found in my own
 `L550` this revision — one claim on two keys, so a rewrite would owe two repairs for one change.*
 **The patch is routed and not applied; say the word and I apply it.**
+
+### ⑦ ⛔⛭⛭ AND THE RATCHET CAUGHT THIS REVISION'S OWN REPAIRS BEING INVISIBLE — THE THIRD FACE OF ONE CLASS
+
+*Eight of the spans minted above came back **STALE** on the quote-pin gate.* **The instrument keys a
+literal that stands to the LEFT OF AN `in`, and nothing else.** ⇒ ***So asserting uniqueness as
+`haystack.count(span) == 1` — a STRICTLY STRONGER condition than membership — removes the key from the
+instrument's sight, and the ledger row adjudicating it describes nothing.***
+
+| the face | how it was found |
+|---|---|
+| a normaliser applied inside the reader | `r7336`, two of my minted rows came back stale |
+| a literal reaching its haystack only through a loop variable | `S3`, and routed as an evasion route |
+| **a membership test strengthened into a count** | **here, eight rows at once** |
+
+⇒ **In every one of the three the pin got BETTER and the ledger went BLIND.** *The repair keeps the
+membership arm beside the count rather than choosing between them, so the key is visible and the
+uniqueness is still asserted.* ⌗ *And one new key was minted by the repaired row-scoped reading —
+`struck r3148`, now adjudicated `DELIBERATE` with its control: the row is located by its own id and
+the owed pattern is asserted absent from it, so a row that still said owed could not pass.*
+
+⚠ ***This is a candidate rule case and it is `cc66`'s instrument, so it is routed and not written:
+"a repair must leave the pin KEYABLE — if the condition no longer puts the literal to the left of an
+`in`, the ledger loses the row" belongs beside the keyable-domain clause `69` landed at `r7349`.***
+*It is the same boundary from the third side: `69`'s clause says the minimand ranks only keyable pins,
+and this says a repair can make a keyable pin unkeyable while strengthening it.*

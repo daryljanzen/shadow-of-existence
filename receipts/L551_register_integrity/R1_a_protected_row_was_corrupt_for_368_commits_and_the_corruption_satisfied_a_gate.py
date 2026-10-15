@@ -256,7 +256,7 @@ def main():
           f'which occurs once under whitespace and markdown normalisation '
           f'({gate.count(_FOUNDING)}) -- "{_FOUNDING}".  The corruption was supplying a spurious '
           f'match on the very row that case was corrected AWAY from. ***',
-          gate.count(_FOUNDING) == 1)
+          _FOUNDING in gate and gate.count(_FOUNDING) == 1)
     check('   ⚠ and stated at its true size: family 6 still PASSES, because its correction note also '
           'names PO-11, which genuinely matches. What the corruption bought was a second, false '
           'reason to pass -- not the only one',

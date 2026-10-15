@@ -449,7 +449,11 @@ check(f'⓹ᶜ ⌗ and the gate cannot describe itself as prevention on a half i
       f'branch testing `OTHER_HALF is None` is found in its syntax tree ({len(_none_branches)}) and '
       f'the proposal wording is INSIDE that branch ({len(_proposal_in_branch)}), so the claim is '
       f'the behaviour and not the spelling of the line',
-      len(_none_branches) >= 1 and len(_proposal_in_branch) >= 1)
+      len(_none_branches) >= 1 and len(_proposal_in_branch) >= 1
+      #: ⌗ and the wording is kept as a MEMBERSHIP test beside the structural one, because the
+      #: instrument keys `literal in haystack` and nothing else -- drop it and the ledger row
+      #: that adjudicates this pin describes nothing (found by the ratchet, r7356).
+      and 'THE BAND IS A PROPOSAL, NOT A PREVENTION' in _gate_src)
 check('⓹ᶜ¹ ⛭ and the other half IS held now, carried as a fact in the other line\'s own words '
       'rather than presumed', C.OTHER_HALF is not None and 'PARITY = 1' in C.OTHER_HALF)
 # ⌗ same repair (r3964): the claim is that the exceptions are NAMED rather than expressed as a

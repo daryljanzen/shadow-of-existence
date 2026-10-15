@@ -52,6 +52,17 @@ NOTHING the moment the block closed -- empty exactly when the work succeeded. **
 untouched; the population is read at the census commit and asserted there.  ⌗ *Five instances of this
 class in one fortnight, and the first in a REGISTRATION rather than a receipt.*
 
+** Ⓖ ⛔⛭⛭ AND THE RATCHET CAUGHT THIS REVISION'S OWN REPAIRS BEING INVISIBLE, WHICH IS THE
+THIRD FACE OF ONE CLASS. **  *Eight of the spans minted here came back STALE: the instrument keys a
+literal that stands to the LEFT OF AN `in`, and nothing else.*  ⇒ ** A repair that asserts uniqueness
+as `haystack.count(span) == 1` -- a STRONGER condition than membership -- removes the key from the
+instrument's sight, so the ledger row adjudicating it describes nothing. **
+  ⌗ *The three faces now on record, all found by falling into them: a normaliser applied inside the
+  reader (`r7336`), a literal reaching its haystack only through a loop variable (`S3`), and now a
+  membership test strengthened into a count.*  ⇒ *** In every one the pin got BETTER and the ledger
+  went BLIND, which is why the repair here keeps the membership arm beside the count rather than
+  choosing between them. ***
+
 ** COMPUTES: ** the block's census at a pinned commit; the three arms against their registered bands
 with their decisive fractions; the uniqueness count and the receipts it projects onto; the effort in
 minutes a receipt from the commit stamps; and the ten receipts, run here.  No paper quantity.

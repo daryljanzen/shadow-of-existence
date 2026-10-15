@@ -162,7 +162,7 @@ def main():
     _CREDIT = 'a third admissible phase, estimator bias, and a seam derivation off $\\{0,\\pi\\}$ (`L-805`, `L-806`, `L-807`), so "the $0.408$ rests on NO unclosed inversion'
     check(f'and the live kill receipt still credits this line AMONG THE THREE closures, in one '
           f'clause that occurs once ({_kill_flat.count(_CREDIT)}): "{_CREDIT}"',
-          _kill_flat.count(_CREDIT) == 1)
+          _CREDIT in _kill_flat and _kill_flat.count(_CREDIT) == 1)
 
     print()
     if FAILED:

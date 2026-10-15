@@ -183,7 +183,8 @@ def main():
           f'one clause -- "{_FOUND}" -- and the clause occurs once in the whole register '
           f'({_arc_flat.count(_FOUND)}).  Recomputed here only as the premise the duality needs, '
           f'and not claimed as new',
-          len(_r265) == 1 and _FOUND in _r265[0][2] and _arc_flat.count(_FOUND) == 1)
+          len(_r265) == 1 and _FOUND in _r265[0][2] and _FOUND in _arc_flat
+          and _arc_flat.count(_FOUND) == 1)
 
     print()
     print('  ' + '=' * 74)

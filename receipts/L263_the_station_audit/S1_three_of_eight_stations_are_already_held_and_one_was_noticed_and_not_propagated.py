@@ -174,7 +174,8 @@ def main():
     check(f'⓶ the theatre\'s own frontmatter says it, in one clause with its subject, occurring '
           f'once ({_reach_flat.count(NOTICE)}) where the bare fragment occurs '
           f'{_reach_flat.count(_FRAGMENT)} times: "{NOTICE}"',
-          _reach_flat.count(NOTICE) == 1 and _reach_flat.count(_FRAGMENT) > 1)
+          NOTICE in _reach_flat and _reach_flat.count(NOTICE) == 1
+          and _reach_flat.count(_FRAGMENT) > 1)
     # ⛔⛭⛭ AMENDED r3156 (`L-268`).  ** THESE TWO CHECKS READ THE LIVE `OWED.md` FOR A CLAIM ABOUT
     # ** THE STATE THIS RECEIPT'S OWN REVISION CHANGED. **  *r3148 struck Ⓕ in `OWED` 609 -- that is
     #   what the receipt is FOR -- and the checks then asserted that `OWED` still carried it.*
@@ -272,7 +273,8 @@ def main():
           f'station is not owed as it was',
           g['exact sequence'] > 0
           and r'\label{eq:atiyah}' in _p12src
-          and _p12flat.count(_IDENT) == 1 and _p12flat.count(_KERNEL) == 1)
+          and _IDENT in _p12flat and _p12flat.count(_IDENT) == 1
+          and _KERNEL in _p12flat and _p12flat.count(_KERNEL) == 1)
     h = {t: sum(RB.counts(t).values()) for t in
          ('Fredholm', 'limit-point', 'deficiency ind', 'Atiyah--Singer', 'graded index',
           'traced rather than computed')}
