@@ -117,10 +117,38 @@ def main():
     now = open(S1, encoding='utf-8').read()
     check('⓸ the absence is read at the PARENT rather than live',
           f"PARENT = '{PARENT}'" in now and "f'{PARENT}:OWED.md'" in now)
-    check('⓸ᵇ and the present is asserted in the opposite direction -- that the row is struck NOW, '
-          'which says the repair landed rather than that the receipt broke',
-          'which is this receipt landing rather than this receipt' in now
-          and "'STRUCK r3148' in owed_now" in now)
+    #: ⛭⛭ r7355+cc66.27 REPAIR, and THE DEFECT WAS FOUND BY BREAKING IT MYSELF.  This arm was
+    #:   `'which is this receipt landing rather than this receipt' in now and
+    #:    "'STRUCK r3148' in owed_now" in now`
+    #:   -- *** two literal substrings of ANOTHER RECEIPT'S SOURCE, one of them a LOCAL VARIABLE
+    #:   NAME. ***  `r7355+cc66.7` scoped `L263/S1`'s struck-form span to Ⓕ's own entry and read it
+    #:   through a markup normaliser, which renamed `owed_now` to `_owed_md` on that line.
+    #:     ⇒ ** So this receipt went red on a RENAME, while the claim it asserts stayed true and got
+    #:       STRONGER.  A pin on a sibling's variable name is a pin on a spelling nobody promised to
+    #:       keep: it fails in the UNSAFE direction, reporting a broken repair where the repair was
+    #:       tightened. **
+    #: ⌗ `r7353` ③: no pin on that line is admissible -- the line is a `check()` call whose text is
+    #:   edited whenever its span is re-scoped -- so the repair is a STRUCTURAL ASSERTION.  `L263/S1`
+    #:   is PARSED, the directional check is located by its LABEL, and the two halves of the claim are
+    #:   read off ITS TEST EXPRESSION: an absence arm (`re.search(...) is None`) and a presence arm
+    #:   quoting the strike.  Renaming the variable, rewrapping the call or re-scoping the span cannot
+    #:   break it; deleting either direction can, which is the whole point of ⓸.
+    #: ⌗ Verified before performing: 1 such check located, its test carrying both arms.
+    _s1_tree = ast.parse(now)
+    _direction = [c for c in ast.walk(_s1_tree)
+                  if isinstance(c, ast.Call) and isinstance(c.func, ast.Name) and c.func.id == 'check'
+                  and c.args and isinstance(c.args[0], ast.Constant)
+                  and isinstance(c.args[0].value, str)
+                  and 'this receipt landing rather than this receipt' in c.args[0].value]
+    _tests = [ast.unparse(c.args[1]) for c in _direction if len(c.args) > 1]
+    _absence = [t for t in _tests if 're.search' in t and 'is None' in t]
+    _presence = [t for t in _tests if 'STRUCK r3148' in t]
+    check(f'⓸ᵇ and the present is asserted in the opposite direction -- that the row is struck NOW, '
+          f'which says the repair landed rather than that the receipt broke: {len(_direction)} '
+          f'directional check(s) in L-263/S1, {len(_absence)} carrying the absence arm and '
+          f'{len(_presence)} quoting the strike -- read off the PARSE TREE, so a rename cannot '
+          f'break it (r7355+cc66.27, after a rename did)',
+          len(_direction) == 1 and len(_absence) == 1 and len(_presence) == 1)
     rc = subprocess.run([sys.executable, S1], cwd=os.path.dirname(S1), capture_output=True,
                         text=True, errors='replace', timeout=900).returncode
     check(f'⓸ᶜ and L-263/S1 exits {rc}', rc == 0)

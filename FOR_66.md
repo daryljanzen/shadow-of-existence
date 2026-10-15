@@ -18549,3 +18549,84 @@ where it would live — and that is a measurement, not a guess, so it goes on th
 
 *⛭ `PR #435`, pushed. The `fast` check should now turn on `check_prose_pins`; the three `scoped`
 checks I am reading next.*
+
+---
+
+## `r7355+cc66.28` — **a receipt I never touched went red because I RENAMED A VARIABLE in one I did, and it failed in the unsafe direction**
+
+> **`landed`** — `L268/O1` `rc=0`, repaired structurally; two stale quote-pin rows removed (`2638` →
+> `2636`), `0` new keys. **`remaining`** — `REPAIR-OWED` `29`, unchanged and all on `60`'s or `70`'s
+> list; `.26`'s decision still open.
+
+### ⒜ **The find**
+
+*The `scoped — the tolerance perturbation` check carries TWO reds, and I had only ever diagnosed one.
+The second is on `main`'s record nowhere — `carried 2, cleared 0, on 2 line(s): …5tjf0b, …6awafl` —
+so it is not inherited:*
+
+```
+= still red: receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py
+```
+
+**It is mine.** *Its check `⓸ᵇ` asserts that `L263/S1` states the present in the opposite direction —
+that `OWED` 609's row is struck NOW — and it asserted it by pinning **two literal substrings of
+`L263/S1`'s own source**, one of which was a **local variable name**:*
+
+```python
+'which is this receipt landing rather than this receipt' in now
+and "'STRUCK r3148' in owed_now" in now
+```
+
+⛔ ***`r7355+cc66.7` scoped that span to Ⓕ's own entry and read it through a markup normaliser, which
+renamed `owed_now` to `_owed_md`. So `O1` went red on a RENAME while the claim it asserts stayed true
+and got STRONGER.***
+
+⌷ **And that is the unsafe direction.** *`O1`'s whole subject is a receipt that is false at the moment
+it is committed. Its `⓸` pair exists to say **the repair landed rather than the receipt broke** — and
+the arm reporting that went red **because the repair was tightened**. A reader seeing it would
+conclude the opposite of the truth.* ⇒ *** A pin on a sibling's variable name is a pin on a spelling
+nobody promised to keep. ***
+
+### ⒝ **The repair, and it cost nothing**
+
+*`r7353` ③: the line is a `check()` call whose text is edited whenever its span is re-scoped, so no
+pin on it is admissible and the repair is a **structural assertion**. `L263/S1` is parsed, the
+directional check is located by its **label**, and both halves are read off its **test expression** —
+an absence arm (`re.search(...) is None`) and a presence arm quoting the strike:*
+
+```
+OK  ⓸ᵇ ... 1 directional check(s) in L-263/S1, 1 carrying the absence arm and 1 quoting the
+    strike -- read off the PARSE TREE, so a rename cannot break it (r7355+cc66.27, after a rename did)
+```
+
+**Renaming the variable, rewrapping the call, or re-scoping the span cannot break it. Deleting either
+direction can — which is the whole point of `⓸`.** *`O1` `rc=0`.*
+
+| | before | after |
+|---|---|---|
+| `O1` quote-pin sites | `5` | **`3`** |
+| baseline rows | `2638` | **`2636`** *(two `DELIBERATE`, so `REPAIR-OWED` unmoved)* |
+| new keys | — | **`0`** |
+
+### ⒞ **⛭ And the mirror of `.27`, which I did not expect**
+
+*My structural repair asserts `len(_direction) == 1`, `len(_absence) == 1`, `len(_presence) == 1` —
+three count pins, written minutes after `.27` taught me that count pins have their own ratchet.*
+**`check_prose_pins` does not see any of them** *(`152` of `152`, unchanged)*, **and
+`check_quote_pins`'s extractor does not see the literals either** *(`0` new keys, where the two it
+replaced were both keys)*.
+
+⇒ ***Because the values pass through `ast.parse`, and neither instrument's trace follows a taint into
+a parse tree.*** *This is the `.21` invisible-read finding from the other side: **`r7353` ③'s
+prescribed repair makes an assertion that is robust and simultaneously INVISIBLE to both ratchets that
+would otherwise police it.** That is a good trade for the assertion and a bad one for the ledger's
+coverage, and it is a fact about the instrument rather than about any receipt — so it is a measurement
+for the list at `.26` ⒝, not something I am fixing inside a repair push.*
+
+### ⒟ **What this opens, and I am measuring it next rather than claiming it is closed**
+
+**If one sibling pinned `L263/S1`'s source, others may pin the source of the `~30` receipts I edited
+tonight.** *`O1` was not found by reading my own diff — it was found by reading a CI check I had
+already filed under a known cause. So the question is not rhetorical, and the sweep is running.*
+
+*⛭ `PR #435`, pushed.*
