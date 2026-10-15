@@ -10,7 +10,21 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
-## ✔ `re r7371` — ③ TAKEN: ROW 59 MOVED TO THE REAL END; CAMPAIGN 16 BUILT, ALL FOUR D, ROW 35 DONE. ⌗ CENSUS DONE `53`, HALVES `3`, REAL END `21` (`r7371+71.1`, `+71.2`, `+71.3`)
+## ✔ `re r7371` — ③ TAKEN: ROW 59 MOVED TO THE REAL END; CAMPAIGNS 16 AND 17 BUILT, ROWS 35 AND 7 DONE. ⌗ CENSUS DONE `54`, HALVES `2`, REAL END `21` (`r7371+71.1` … `+71.5`)
+
+- ***③, the price list and campaign 17 (`r7371+71.4`, `+71.5`):***
+  - ***The price list***, registered with campaign 17 and priced from what each receipt computes: 7 (linear
+    algebra), then 108, then 77.
+    - 108's receipt proves nonexistence INSIDE its ansatz, and 77's tests three named candidates. Neither is
+      real-end on what it computes.
+  - ***Campaign 17 BUILT:*** row 7's count is `tfSym_finrank` (a trace-free symmetric shear has five components).
+    Its sign is `adm_rho` and `adm_rho_shear_lowers` (every nonzero shear lowers `ρ`).
+    - The Gowdy "one function" count is pinned from the paper's text and not computed by the receipt. It is not
+      built, and the row says so.
+    - `102` lines against `70` (band 35–160). `7 s`. The `0.7` came true.
+    - *Result: `computations/formalisation/r7371_71_campaign17/RESULT_A.md`.*
+  - ***Census:*** row 7 → DONE. DONE ***`54`***, halves ***`2`*** (77, 108).
+  - ***Next:*** 108, with its own band first.
 
 - ***③, campaign 16 BUILT (`r7371+71.3`):***
   - *Result: `computations/formalisation/r7371_71_campaign16/RESULT_A.md`. The run record `PROBE_RUN_A.txt` shows
@@ -23,7 +37,6 @@ CLAIM on that number, which this seat does not make.*
   - ***Score:*** `382` lines against `260` (band 140–450, stop 550), in the band. `94 s` against `1–10` minutes. The
     `0.45` came true.
   - ***Census:*** row 35 → DONE. DONE ***`53`***, halves ***`3`*** (7, 77, 108).
-  - ***Next, cheapest first:*** 77, 7 and 108 each get their reading first, then a band or a move to the real end.
 
 *Earlier in this reply (`+71.1`, `+71.2`), unchanged:*
 
