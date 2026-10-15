@@ -86,3 +86,64 @@ reached this push**; ⒡ `sweep_gates.sh` — run on the reverted tree; ⒢ `--s
 ⇒ **One of three testable conditions fails and the change is withdrawn by its own registration, again.**
 *The quantity was right and the rule was wrong, which is the opposite of last revision, where the rule's
 precision was the thing I had never measured.*
+
+---
+
+# `D = 58`: the dead pin DELIVERED after all, outside its band and inside its refutation, and the count moved `130 → 63 → 58` as the definition got right
+
+`r7341` ⑧. ⛭ **I reported in `FOR_66.md` that I had not reached this. The revision was still open, so I
+reached it.** *That reply is corrected by this section rather than left standing.*
+
+## ① The result
+
+| | registered | measured |
+|---|---|---|
+| **D**, dead `PAPER` keys | band **`3`–`40`**, point **`12`** | **`58`** |
+| ⛔ refutation | `D = 0` or **`D > 60`** | **not fired**, by `2` |
+| verdict | — | ⛔ ***OUTSIDE THE BAND, NOT REFUTED*** |
+
+⇒ ***`58` PAPER keys assert the presence of text that is in NO paper*** — green, adjudicated, and each
+carried by something else in its own condition. **The class is `4.8×` my point and nearly `1.5×` my band's
+top, and my own registration's refutation threshold is the only thing it clears.** *I am stating the
+distinction my registration created rather than collapsing it: a band missed is not a band refuted, and I
+wrote both numbers down in advance precisely so this case would have a name.*
+
+**Separated out of the same pass:** `32` **VANISHING** (present raw, destroyed by the normaliser) — *the
+class this revision DEFERRED, obtained free because one pass yields both* — `5` **NEGATED**, and `121`
+**REGEX PATTERNS**.
+
+## ② ⛔ AND THE COUNT MOVED `130 → 63 → 63 → 58`. I REPORTED NONE OF THE FIRST THREE AS THE ANSWER
+
+| form | D | what the next occurrence exposed |
+|---|---|---|
+| ⒜ `_unmark(lit) not in _unmark(text)` | **`130`** | it conflates **three** classes |
+| ⒝ + regex and vanishing separated | **`63`** | a regex **matches** and never occurs, so ⒜ called `121` of them dead by construction; and a span present raw and killed by the normaliser is the VANISHING class, not this one |
+| ⒞ + negation, `all(occurrences)` | **`63`** | the filter caught **`0`** though I had verified one by hand — `all` is too strict |
+| ⒟ + negation over **asserting** occurrences only | **`58`** | a receipt may MENTION the literal in a comment beside the two places it tests `not in`, and **a prose mention is not an assertion** |
+
+⌗ ⛭ ***Form ⒞ is the one worth keeping: the filter returned `0` on a case I had already read with my own
+eyes, and that disagreement is what found the comment-mention.*** *Had I trusted the filter over the
+reading, I would have published `63` with a negation filter that did nothing and a confident note saying
+negation was excluded.*
+
+## ③ How the contamination was found: by spot-reading `3` of `63`, of which `1` was contaminated
+
+*`'draws no bound from it in either direction'` is asserted `not in P16` in the very receipt it is keyed
+against — the replaced-sentence form, where **absence is the point**.* ⇒ **A sample of `3` with `1`
+contaminated is not a measurement, but it is enough to stop a number being published**, and it is why ⒟
+exists. ⌗ *The other two of the three are genuinely dead.*
+
+## ④ ⛔ And the `121` regex-pattern keys are a finding of their own
+
+*`check_quote_pins` is a PRESENCE ratchet: it asks whether a literal stands in its container.* ⇒ ***For a
+key whose literal is a regex PATTERN, presence is not the question and cannot be — the pattern matches or
+it does not, and it never "occurs".*** **So `121` live `PAPER` keys are on a ratchet whose test does not
+apply to them.** *That is not a repair and not on the stride; it is a fourth blindness of the same
+instrument, and I am naming it rather than measuring it, because this revision already carries two.*
+
+## ⑤ Against the arbiter, completed
+
+⒜ `R` in `106`–`130` — **PASSES** (`117`); ⒝ `0` keys lost — **PASSES**; ⒞ precision `20` of `20` —
+⛔ **FAILS** (`17`); ⒠ `D` in `3`–`40` — ⛔ **FAILS** (`58`, not refuted); ⒡ `sweep_gates.sh` — run;
+⒢ `--seed` — OK. ⇒ **Two of the measurable conditions fail, the hop stays reverted, and `D` is on the
+record with its band missed and its refutation standing.**

@@ -16560,7 +16560,19 @@ file.*** ⛔ **And I am registering NO POINT for it: two points derived from the
 now both been uninformative exactly where it mattered. The honest registration is the one written after
 reading what the containers are, and that reading is one pass of the instrument.**
 
-**⑤ ⛔ WHAT I OWE AND DID NOT DELIVER: `D`, THE DEAD PIN.** *I registered it bound inside this
+**⑤ ⛭ CORRECTED BELOW — `D` IS DELIVERED: `58`, OUTSIDE ITS BAND AND INSIDE ITS REFUTATION.** *I wrote
+the paragraph that follows and then noticed the revision was still open, so I reached it. The paragraph
+stays as written because the correction is the point: **`D = 58` dead `PAPER` keys of `1612` checked,
+against a band of `3`–`40` and a refutation above `60` — the band is MISSED and the refutation is NOT
+FIRED, by `2`.*** `58` keys assert the presence of text that is in no paper, green and adjudicated, each
+carried by something else in its own condition. ⌗ *And the count moved `130` → `63` → `63` → `58` as the
+definition got right — three classes conflated, then a negation filter that returned `0` on a case I had
+read with my own eyes. **I reported none of the first three as the answer.** Also separated from the same
+pass: `32` VANISHING (the class I deferred, free), `5` NEGATED, and `121` REGEX PATTERNS — which are a
+blindness of their own, since a pattern never "occurs" and presence is the only thing the ratchet tests.
+Full account at `r7341_cc66_the_narrowed_hop/MEASURED.md`.*
+
+**⑤⒝ THE PARAGRAPH I WROTE FIRST, KEPT:** *I registered it bound inside this
 revision at band `3`–`40`, point `12`, per your ⑧ — and arbiter clause ⒠ is **not met**, because I spent
 the revision on the hop's two amendments and its measurement.* **Not deferred by a reason, just not
 reached; the registration asked for it in this revision and it is not here.** ⌗ *It stays first in the
