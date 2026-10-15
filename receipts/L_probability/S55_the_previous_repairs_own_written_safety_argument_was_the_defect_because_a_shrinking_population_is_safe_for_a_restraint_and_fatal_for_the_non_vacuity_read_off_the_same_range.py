@@ -275,11 +275,25 @@ def main():
     assert _p03 and _s5, (_p03, _s5)
     _src = {k: open(os.path.join(ROOT, v), encoding='utf-8').read()
             for k, v in (('P03', _p03), ('S5', _s5))}
-    check(f'Ⓑ① both receipts now bind their base to a literal sha and neither bounds its population '
-          f'by a ref: `BASE = \'{BASE}\'` stands in each, and `--not\', \'origin/main` survives in '
-          f'neither as the bound of the asserted population',
-          all(f"BASE = '{BASE}'" in s for s in _src.values())
-          and all(s.count("'--not', 'origin/main'") <= 1 for s in _src.values()))
+    #: ⛔⛭⛭ r7368: the first form of this clause asserted `s.count("'--not', 'origin/main'") <= 1`
+    #: -- A PIN ON A COUNT OF MATCHES IN ANOTHER FILE'S SOURCE, which is the prose-pin class, and a
+    #: hedged ceiling at that: I meant ZERO and wrote `<= 1` because I had not checked.
+    #: ⇒ *** The claim is a PROPERTY, so it is tested as one: every argument either file passes to
+    #:     `--not` is a NAME, and the module binds `BASE` to a literal sha that RESOLVES and is an
+    #:     ANCESTOR of `HEAD` -- which is the property `S23`'s `Ⓕ①` adopted, applied here instead of
+    #:     counting a spelling.  Testing the spelling is what let the shape into these two files. ***
+    _NOT_ARG = re.compile(r"""['\"]--not['\"]\s*,\s*([^)\]]+?)[\)\],]""")
+    _NAME = re.compile(r'^[A-Za-z_][A-Za-z0-9_]*$')
+    _args = {k: [a.strip() for a in _NOT_ARG.findall(v)] for k, v in _src.items()}
+    print(f'      what each file passes to `--not`: {_args}')
+    _ctl = "for c in run(['git', 'log', '--not', 'origin/main']):"
+    check(f'Ⓑ① ⛭ both receipts bound their population by a COMMIT, tested as the property rather '
+          f'than by counting a spelling: every argument either passes to `--not` is a NAME '
+          f'({_args}), each module binds `BASE` to a literal sha that resolves and is an ancestor '
+          f'of `HEAD`, and the control line passing a ref LITERAL fails the same test',
+          all(_args[k] and all(_NAME.match(a) for a in _args[k]) for k in _src)
+          and all(f"BASE = '{BASE}'" in v for v in _src.values())
+          and not all(_NAME.match(a.strip()) for a in _NOT_ARG.findall(_ctl)))
     #: ⛭ the three earlier repairs are IN `S5`'s own comment history, with the safety argument in
     #: writing -- read out of the file rather than recalled, because that sentence IS the finding.
     _arg = 'as the trunk absorbs this work the set SHRINKS'
