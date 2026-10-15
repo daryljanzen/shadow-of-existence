@@ -90,8 +90,29 @@ def owed():
             if r[5] == 'REPAIR-OWED' and r[0].split('/')[1] in pref]
 
 
-def _corpus_texts():
-    """the corpus text a row can be pinned into: the papers, and the registers under `corpus/`"""
+#: ⛭⛭ r7365 ③ + r7366: THE SELECTOR OF THIS MEASUREMENT'S TEXT SET, COMMITTED BESIDE THE
+#: MEASUREMENT.  *`r7365` made it standing that **the selector of a measured population is committed
+#: with the measurement, or the measurement is a claim and not a re-runnable fact** -- and arm ⒝'s
+#: text frame was being supplied by `S50`'s own prose and a constant inside the receipt.*
+#:   ⇒ *** The frame is this constant, and `_corpus_texts` takes it, so the arm is re-runnable by
+#:     anyone holding this file alone. ***  ⚠ The default is unchanged, so nothing that read this
+#:     function before reads anything different now: the registered arithmetic is untouched.
+#:   ⌗ *And the frame is `r7356`'s OWN first commit, not its census: the arbiter was scored on the
+#:     tree as it stood when the arm was taken, which is not the tree the OWED ROWS were read at.
+#:     Two different pins in one measurement, and they are now both written down.*
+FRAME = '5b76f80a'              # the tree arm (b)'s arbiter was scored on: r7356's own first commit
+
+
+def _corpus_texts(sha=None):
+    """the corpus text a row can be pinned into: the papers, and the registers under `corpus/`.
+    With `sha`, the set AS IT STOOD at that commit -- the frame is `FRAME` and is committed here
+    rather than described in a receipt's prose (`r7365` ③)."""
+    if sha:
+        names = subprocess.run(['git', '-C', ROOT, 'ls-tree', '--name-only', f'{sha}:corpus'],
+                               capture_output=True, text=True, errors='replace').stdout.split()
+        return {f: subprocess.run(['git', '-C', ROOT, 'show', f'{sha}:corpus/{f}'],
+                                  capture_output=True, text=True, errors='replace').stdout
+                for f in sorted(names) if f.endswith(('.tex', '.md', '.tsv', '.txt'))}
     out = {}
     for d in (os.path.join(ROOT, 'corpus'),):
         for f in sorted(os.listdir(d)):
