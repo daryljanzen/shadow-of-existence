@@ -1,0 +1,17 @@
+the 80 invisible genuine pins, split by H4 -- the clause's own trigger:
+  SENTENCE  (H4 admits):  34   PAPER=17  SOURCE=17
+  TOKEN     (H4 refuses):  46   PAPER=9  SOURCE=32  UNDECIDED=5
+
+frozen tier re-derived through the hop FOLLOW on this tree:
+  of 117 frozen keys the follow surfaces : 117   <-- 117 or the follow is not faithful
+  tier agrees with the frozen label      : 117   <-- the split is the instrument's, not the file's
+
+the live ledger as the gate reads it:
+  live keys                              : 2629
+  baseline rows                          : 2629
+  baseline rows NOT live  (STALE fails)  :   0
+  live keys with no row   (NEW-KEY fails):   0
+  of the 80, minted by the extractor     :   0
+  of the 80, carrying a baseline row     :   0
+
+  ⇒ a MEANING-HELD row for any of the 80 takes STALE from 0 to 1 and the gate is red on it.
