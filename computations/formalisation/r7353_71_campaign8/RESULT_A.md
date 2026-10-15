@@ -39,3 +39,12 @@
 | real end | `20` | `20` |
 
 *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
+## `r7353+71.6` — appended: the census did NOT move in `r7353+71.5`'s push
+
+*Appended, not revised.*
+- The script that edits `ROWS.tsv` failed on a quoting error, and the commit went out without it. So
+  `r7353+71.5`'s push carried this RESULT and the build, but not the census row it claims.
+- That breaks the `r7341` rule (the census moves in the SAME push as the build).
+- It is corrected in the very next push (`r7353+71.6`), which carries only the census row.
+- *What I change:* the census edit is now checked by its counts before the commit, in the same command.
