@@ -62,6 +62,7 @@ system and the geodesic structure were not thrown.
 Written r3176, `L-279`.  Stated for reversal.
 """
 import os
+import re as _re_S1
 import sys
 
 import numpy as np
@@ -160,11 +161,29 @@ def main():
     # ** ASSERTED, not narrated: the register records station Ⓖ's finding, so the claim that
     #   [m,m] in h is already the corpus's is checkable rather than polite. **
     arc = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()
-    check('⓵ᵈ ⌗ and the last of those is P12\'s own: the register records station Ⓖ (L-265) '
-          'finding the Atiyah sequence to be P12\'s object and its closure test to be the '
-          'splitting\'s curvature computation — recomputed here only as the premise the duality '
-          'needs, and not claimed as new',
-          'L-265' in arc and 'Atiyah sequence' in arc and 'splitting' in arc)
+    #: ⛭⛭ THE REPAIR (r7356 on `r7353` ①'s ORDER).  ** The owed rows were THREE TOKENS conjoined --
+    #: a lemma code, a two-word term and the single word `splitting` -- each of which occurs in that
+    #: register for reasons this claim is not about, and none of which says the station FOUND
+    #: anything. **  ⇒ The register is a TABLE, so its row is read as DATA: the row whose first cell
+    #: is this station's lemma is located cell by cell, and the finding is asserted as one
+    #: claim-complete clause of that row's own finding cell -- with the markdown emphasis and
+    #: strike-through families normalised in the reader rather than the span split around them.
+    _MARKUP = _re_S1.compile(r'\*+|~~')
+
+    def _cells(_line):
+        return [c.strip() for c in
+                _re_S1.sub(r'\s+', ' ', _MARKUP.sub(' ', _line)).split('|')]
+
+    _arc_flat = _re_S1.sub(r'\s+', ' ', _MARKUP.sub(' ', arc))
+    _rows = [_cells(l) for l in arc.split('\n') if l.startswith('|') and l.count('|') >= 3]
+    _r265 = [c for c in _rows if c[1:2] == ['L-265']]
+    _FOUND = "THE ATIYAH SEQUENCE IS NOT MISSING FROM `P12`. IT IS `P12`'S OBJECT, UNNAMED"
+    check(f'⓵ᵈ ⌗ and the last of those is P12\'s own, read off the REGISTER AS A TABLE: the row '
+          f'whose first cell is this station\'s lemma ({len(_r265)} such row) carries the finding in '
+          f'one clause -- "{_FOUND}" -- and the clause occurs once in the whole register '
+          f'({_arc_flat.count(_FOUND)}).  Recomputed here only as the premise the duality needs, '
+          f'and not claimed as new',
+          len(_r265) == 1 and _FOUND in _r265[0][2] and _arc_flat.count(_FOUND) == 1)
 
     print()
     print('  ' + '=' * 74)
