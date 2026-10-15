@@ -453,6 +453,105 @@ theorem row83_squashed_S5 {t : ℝ} (ht : t ≠ 0) :
   field_simp
   ring
 
+/-! ### Row 83's open half: the same computation at EVERY point `y`
+
+At a general `y` the tables are polynomial (derivatives) or rational (`Γ`) in `m₀ = μ₀(y)`, `m₁ = μ₁(y)`, with
+`μ₂ = 1 − m₀ − m₁`. -/
+
+lemma mu_two (y : Fin 5 → ℝ) : mu 2 y = 1 - mu 0 y - mu 1 y := by
+  have := mu_sum y; simp only [Fin.sum_univ_three] at this; linarith
+
+noncomputable def GiG (m0 m1 t : ℝ) : Fin 5 → Fin 5 → ℝ := ![![(4*(m1 - 1)/(m0*(m0 + m1 - 1))), (-4/(m0 + m1 - 1)), 0, 0, 0], ![(-4/(m0 + m1 - 1)), (4*(m0 - 1)/(m1*(m0 + m1 - 1))), 0, 0, 0], ![0, 0, (-(m0*t^2 - m0 - t^2)/(m0*t^2)), (-(t - 1)*(t + 1)/t^2), (-(t - 1)*(t + 1)/t^2)], ![0, 0, (-(t - 1)*(t + 1)/t^2), (-(m1*t^2 - m1 - t^2)/(m1*t^2)), (-(t - 1)*(t + 1)/t^2)], ![0, 0, (-(t - 1)*(t + 1)/t^2), (-(t - 1)*(t + 1)/t^2), (-(m0*t^2 - m0 + m1*t^2 - m1 + 1)/(t^2*(m0 + m1 - 1)))]]
+
+noncomputable def D1G (m0 m1 t : ℝ) : Fin 5 → Fin 5 → Fin 5 → ℝ := ![![![(m0*(m0 - 1)*(2*m0 - 1)/4), (m0*m1*(2*m0 - 1)/4), 0, 0, 0], ![(m0*m1*(2*m0 - 1)/4), (m0*m1*(2*m1 - 1)/4), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![(m0*m1*(2*m0 - 1)/4), (m0*m1*(2*m1 - 1)/4), 0, 0, 0], ![(m0*m1*(2*m1 - 1)/4), (m1*(m1 - 1)*(2*m1 - 1)/4), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![(-m0*(m0 - 1)*(2*m0*t^2 - 2*m0 + 1)), (-m0*m1*(2*m0*t^2 - 2*m0 + 1)), 0, 0, 0], ![(-m0*m1*(2*m0 - 1)*(t - 1)*(t + 1)), (-m0*m1*(2*m1 - 1)*(t - 1)*(t + 1)), 0, 0, 0], ![(m0*(2*m0 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), (2*m0*m1*(t - 1)*(t + 1)*(m0 + m1 - 1)), 0, 0, 0]], ![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![(-m0*m1*(2*m0 - 1)*(t - 1)*(t + 1)), (-m0*m1*(2*m1 - 1)*(t - 1)*(t + 1)), 0, 0, 0], ![(-m0*m1*(2*m1*t^2 - 2*m1 + 1)), (-m1*(m1 - 1)*(2*m1*t^2 - 2*m1 + 1)), 0, 0, 0], ![(2*m0*m1*(t - 1)*(t + 1)*(m0 + m1 - 1)), (m1*(2*m1 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), 0, 0, 0]], ![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![(m0*(2*m0 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), (2*m0*m1*(t - 1)*(t + 1)*(m0 + m1 - 1)), 0, 0, 0], ![(2*m0*m1*(t - 1)*(t + 1)*(m0 + m1 - 1)), (m1*(2*m1 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), 0, 0, 0], ![(-m0*(m0 + m1 - 1)*(2*m0*t^2 - 2*m0 + 2*m1*t^2 - 2*m1 - 2*t^2 + 1)), (-m1*(m0 + m1 - 1)*(2*m0*t^2 - 2*m0 + 2*m1*t^2 - 2*m1 - 2*t^2 + 1)), 0, 0, 0]]]
+
+noncomputable def D2G (m0 m1 t : ℝ) : Fin 5 → Fin 5 → Fin 5 → Fin 5 → ℝ := ![![![![(-m0*(m0 - 1)*(6*m0^2 - 6*m0 + 1)/4), (-m0*m1*(6*m0^2 - 6*m0 + 1)/4), 0, 0, 0], ![(-m0*m1*(6*m0^2 - 6*m0 + 1)/4), (-m0*m1*(6*m0*m1 - 2*m0 - 2*m1 + 1)/4), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![(-m0*m1*(6*m0^2 - 6*m0 + 1)/4), (-m0*m1*(6*m0*m1 - 2*m0 - 2*m1 + 1)/4), 0, 0, 0], ![(-m0*m1*(6*m0*m1 - 2*m0 - 2*m1 + 1)/4), (-m0*m1*(6*m1^2 - 6*m1 + 1)/4), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]]], ![![![(-m0*m1*(6*m0^2 - 6*m0 + 1)/4), (-m0*m1*(6*m0*m1 - 2*m0 - 2*m1 + 1)/4), 0, 0, 0], ![(-m0*m1*(6*m0*m1 - 2*m0 - 2*m1 + 1)/4), (-m0*m1*(6*m1^2 - 6*m1 + 1)/4), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![(-m0*m1*(6*m0*m1 - 2*m0 - 2*m1 + 1)/4), (-m0*m1*(6*m1^2 - 6*m1 + 1)/4), 0, 0, 0], ![(-m0*m1*(6*m1^2 - 6*m1 + 1)/4), (-m1*(m1 - 1)*(6*m1^2 - 6*m1 + 1)/4), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]]], ![![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![(m0*(m0 - 1)*(6*m0^2*t^2 - 6*m0^2 - 4*m0*t^2 + 6*m0 - 1)), (m0*m1*(6*m0^2*t^2 - 6*m0^2 - 4*m0*t^2 + 6*m0 - 1)), 0, 0, 0], ![(m0*m1*(6*m0^2*t^2 - 6*m0^2 - 4*m0*t^2 + 6*m0 - 1)), (m0*m1*(6*m0*m1*t^2 - 6*m0*m1 - 2*m0*t^2 + 2*m0 + 2*m1 - 1)), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![(m0*m1*(t - 1)*(t + 1)*(6*m0^2 - 6*m0 + 1)), (m0*m1*(t - 1)*(t + 1)*(6*m0*m1 - 2*m0 - 2*m1 + 1)), 0, 0, 0], ![(m0*m1*(t - 1)*(t + 1)*(6*m0*m1 - 2*m0 - 2*m1 + 1)), (m0*m1*(t - 1)*(t + 1)*(6*m1^2 - 6*m1 + 1)), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![(-m0*(t - 1)*(t + 1)*(m0 + m1 - 1)*(6*m0^2 - 6*m0 + 1)), (-2*m0*m1*(3*m0 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), 0, 0, 0], ![(-2*m0*m1*(3*m0 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), (-2*m0*m1*(3*m1 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]]], ![![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![(m0*m1*(t - 1)*(t + 1)*(6*m0^2 - 6*m0 + 1)), (m0*m1*(t - 1)*(t + 1)*(6*m0*m1 - 2*m0 - 2*m1 + 1)), 0, 0, 0], ![(m0*m1*(t - 1)*(t + 1)*(6*m0*m1 - 2*m0 - 2*m1 + 1)), (m0*m1*(t - 1)*(t + 1)*(6*m1^2 - 6*m1 + 1)), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![(m0*m1*(6*m0*m1*t^2 - 6*m0*m1 + 2*m0 - 2*m1*t^2 + 2*m1 - 1)), (m0*m1*(6*m1^2*t^2 - 6*m1^2 - 4*m1*t^2 + 6*m1 - 1)), 0, 0, 0], ![(m0*m1*(6*m1^2*t^2 - 6*m1^2 - 4*m1*t^2 + 6*m1 - 1)), (m1*(m1 - 1)*(6*m1^2*t^2 - 6*m1^2 - 4*m1*t^2 + 6*m1 - 1)), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![(-2*m0*m1*(3*m0 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), (-2*m0*m1*(3*m1 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), 0, 0, 0], ![(-2*m0*m1*(3*m1 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), (-m1*(t - 1)*(t + 1)*(m0 + m1 - 1)*(6*m1^2 - 6*m1 + 1)), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]]], ![![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![(-m0*(t - 1)*(t + 1)*(m0 + m1 - 1)*(6*m0^2 - 6*m0 + 1)), (-2*m0*m1*(3*m0 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), 0, 0, 0], ![(-2*m0*m1*(3*m0 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), (-2*m0*m1*(3*m1 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![(-2*m0*m1*(3*m0 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), (-2*m0*m1*(3*m1 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), 0, 0, 0], ![(-2*m0*m1*(3*m1 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)), (-m1*(t - 1)*(t + 1)*(m0 + m1 - 1)*(6*m1^2 - 6*m1 + 1)), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]], ![![(m0*(m0 + m1 - 1)*(6*m0^2*t^2 - 6*m0^2 + 6*m0*m1*t^2 - 6*m0*m1 - 8*m0*t^2 + 6*m0 - 2*m1*t^2 + 2*m1 + 2*t^2 - 1)), (2*m0*m1*(m0 + m1 - 1)*(3*m0*t^2 - 3*m0 + 3*m1*t^2 - 3*m1 - 3*t^2 + 2)), 0, 0, 0], ![(2*m0*m1*(m0 + m1 - 1)*(3*m0*t^2 - 3*m0 + 3*m1*t^2 - 3*m1 - 3*t^2 + 2)), (m1*(m0 + m1 - 1)*(6*m0*m1*t^2 - 6*m0*m1 - 2*m0*t^2 + 2*m0 + 6*m1^2*t^2 - 6*m1^2 - 8*m1*t^2 + 6*m1 + 2*t^2 - 1)), 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0], ![0, 0, 0, 0, 0]]]]
+
+noncomputable def GamG (m0 m1 t : ℝ) : Fin 5 → Fin 5 → Fin 5 → ℝ := ![![![(-(2*m0 - 1)/2), 0, 0, 0, 0], ![(-m1/2), (-m0/2), 0, 0, 0], ![0, 0, (-(m0 - 1)*(m0*t^2 - m0 + 1)/2), (-m0^2*(t - 1)*(t + 1)/2), (-m0^2*(t - 1)*(t + 1)/2)], ![0, 0, (-m1*(m0 - 1)*(t - 1)*(t + 1)/2), (-m0*(m1*t^2 - m1 + 1)/2), (-m0*m1*(t - 1)*(t + 1)/2)], ![0, 0, ((m0 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)/2), (m0*(t - 1)*(t + 1)*(m0 + m1 - 1)/2), (m0*(m0*t^2 - m0 + m1*t^2 - m1 - t^2)/2)]], ![![(-m1/2), (-m0/2), 0, 0, 0], ![0, (-(2*m1 - 1)/2), 0, 0, 0], ![0, 0, (-m1*(m0*t^2 - m0 + 1)/2), (-m0*(m1 - 1)*(t - 1)*(t + 1)/2), (-m0*m1*(t - 1)*(t + 1)/2)], ![0, 0, (-m1^2*(t - 1)*(t + 1)/2), (-(m1 - 1)*(m1*t^2 - m1 + 1)/2), (-m1^2*(t - 1)*(t + 1)/2)], ![0, 0, (m1*(t - 1)*(t + 1)*(m0 + m1 - 1)/2), ((m1 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)/2), (m1*(m0*t^2 - m0 + m1*t^2 - m1 - t^2)/2)]], ![![0, 0, (-(m0 - 1)*(m0*t^2 - m0 + 1)/2), (-m0^2*(t - 1)*(t + 1)/2), (-m0^2*(t - 1)*(t + 1)/2)], ![0, 0, (-m1*(m0*t^2 - m0 + 1)/2), (-m0*(m1 - 1)*(t - 1)*(t + 1)/2), (-m0*m1*(t - 1)*(t + 1)/2)], ![(-2*(2*m0*t^2 - 2*m0 + 1)), 0, 0, 0, 0], ![(-2*m1*(t - 1)*(t + 1)), (-2*m0*(t - 1)*(t + 1)), 0, 0, 0], ![(2*(t - 1)*(t + 1)*(2*m0 + m1 - 1)), (2*m0*(t - 1)*(t + 1)), 0, 0, 0]], ![![0, 0, (-m1*(m0 - 1)*(t - 1)*(t + 1)/2), (-m0*(m1*t^2 - m1 + 1)/2), (-m0*m1*(t - 1)*(t + 1)/2)], ![0, 0, (-m1^2*(t - 1)*(t + 1)/2), (-(m1 - 1)*(m1*t^2 - m1 + 1)/2), (-m1^2*(t - 1)*(t + 1)/2)], ![(-2*m1*(t - 1)*(t + 1)), (-2*m0*(t - 1)*(t + 1)), 0, 0, 0], ![0, (-2*(2*m1*t^2 - 2*m1 + 1)), 0, 0, 0], ![(2*m1*(t - 1)*(t + 1)), (2*(t - 1)*(t + 1)*(m0 + 2*m1 - 1)), 0, 0, 0]], ![![0, 0, ((m0 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)/2), (m0*(t - 1)*(t + 1)*(m0 + m1 - 1)/2), (m0*(m0*t^2 - m0 + m1*t^2 - m1 - t^2)/2)], ![0, 0, (m1*(t - 1)*(t + 1)*(m0 + m1 - 1)/2), ((m1 - 1)*(t - 1)*(t + 1)*(m0 + m1 - 1)/2), (m1*(m0*t^2 - m0 + m1*t^2 - m1 - t^2)/2)], ![(2*(t - 1)*(t + 1)*(2*m0 + m1 - 1)), (2*m0*(t - 1)*(t + 1)), 0, 0, 0], ![(2*m1*(t - 1)*(t + 1)), (2*(t - 1)*(t + 1)*(m0 + 2*m1 - 1)), 0, 0, 0], ![(-2*(2*m0*t^2 - 2*m0 + 2*m1*t^2 - 2*m1 - 2*t^2 + 1)), (-2*(2*m0*t^2 - 2*m0 + 2*m1*t^2 - 2*m1 - 2*t^2 + 1)), 0, 0, 0]]]
+
+noncomputable def RicG (m0 m1 t : ℝ) : Fin 5 → Fin 5 → ℝ := ![![(m0*(m0 - 1)*(t^2 - 3)/2), (m0*m1*(t^2 - 3)/2), 0, 0, 0], ![(m0*m1*(t^2 - 3)/2), (m1*(m1 - 1)*(t^2 - 3)/2), 0, 0, 0], ![0, 0, (2*m0*(2*m0*t^4 + m0*t^2 - 3*m0 - t^2 + 3)), (2*m0*m1*(t - 1)*(t + 1)*(2*t^2 + 3)), (-2*m0*(t - 1)*(t + 1)*(2*t^2 + 3)*(m0 + m1 - 1))], ![0, 0, (2*m0*m1*(t - 1)*(t + 1)*(2*t^2 + 3)), (2*m1*(2*m1*t^4 + m1*t^2 - 3*m1 - t^2 + 3)), (-2*m1*(t - 1)*(t + 1)*(2*t^2 + 3)*(m0 + m1 - 1))], ![0, 0, (-2*m0*(t - 1)*(t + 1)*(2*t^2 + 3)*(m0 + m1 - 1)), (-2*m1*(t - 1)*(t + 1)*(2*t^2 + 3)*(m0 + m1 - 1)), (2*(m0 + m1 - 1)*(2*m0*t^4 + m0*t^2 - 3*m0 + 2*m1*t^4 + m1*t^2 - 3*m1 - 2*t^4))]]
+
+lemma GiG_inv {t : ℝ} (ht : t ≠ 0) (y : Fin 5 → ℝ) (m k : Fin 5) :
+    ∑ l, GS t m l y * GiG (mu 0 y) (mu 1 y) t l k = if m = k then 1 else 0 := by
+  have h0 := (mu_pos 0 y).ne'; have h1 := (mu_pos 1 y).ne'
+  have h2 : 1 - mu 0 y - mu 1 y ≠ 0 := by rw [← mu_two]; exact (mu_pos 2 y).ne'
+  have h2' : -1 + mu 0 y + mu 1 y ≠ 0 := fun h => h2 (by linarith)
+  have h3 : mu 0 y + mu 1 y - 1 ≠ 0 := fun h => h2 (by linarith)
+  fin_cases m <;> fin_cases k <;> simp [Fin.sum_univ_five, GS, alphaS, betaS, blk, cix, mu_two, GiG] <;>
+    field_simp <;> ring
+
+set_option maxHeartbeats 0 in
+lemma D1G_tab (t : ℝ) (y : Fin 5 → ℝ) (i j c : Fin 5) :
+    dG1 (GS t) y i j (Pi.single c 1) = D1G (mu 0 y) (mu 1 y) t i j c := by
+  rw [dG1, fderiv_GS]
+  fin_cases i <;> fin_cases j <;> fin_cases c <;>
+    simp [GD1, dmu, mu_two, nu, nuL, alphaS, betaS, blk, cix, D1G, Fin.sum_univ_three] <;> ring
+
+set_option maxHeartbeats 0 in
+lemma D2G_tab (t : ℝ) (y : Fin 5 → ℝ) (i j a c : Fin 5) :
+    dG2 (GS t) y i j (Pi.single a 1) (Pi.single c 1) = D2G (mu 0 y) (mu 1 y) t i j a c := by
+  rw [dG2, fderiv2_GS]
+  fin_cases i <;> fin_cases j <;> fin_cases a <;> fin_cases c <;>
+    simp [GD2, ddmu, dmu, mu_two, nu, nuL, alphaS, betaS, blk, cix, D2G, Fin.sum_univ_three] <;> (try ring) <;> simp
+
+lemma mu_facts (y : Fin 5 → ℝ) : mu 0 y ≠ 0 ∧ mu 1 y ≠ 0 ∧ mu 0 y + mu 1 y - 1 ≠ 0 ∧ -1 + mu 0 y + mu 1 y ≠ 0 ∧
+    1 - mu 0 y - mu 1 y ≠ 0 := by
+  have h2 : 1 - mu 0 y - mu 1 y ≠ 0 := by rw [← mu_two]; exact (mu_pos 2 y).ne'
+  exact ⟨(mu_pos 0 y).ne', (mu_pos 1 y).ne', fun h => h2 (by linarith), fun h => h2 (by linarith), h2⟩
+
+set_option maxHeartbeats 0 in
+lemma GamG_tab {t : ℝ} (ht : t ≠ 0) (y : Fin 5 → ℝ) (i j k : Fin 5) :
+    gamG (GS t) (GiG (mu 0 y) (mu 1 y) t) y (Pi.single i 1) (Pi.single j 1) k = GamG (mu 0 y) (mu 1 y) t i j k := by
+  obtain ⟨h0, h1, h3, h3', h2⟩ := mu_facts y
+  simp only [gamG, kosG_basis, D1G_tab, Fin.sum_univ_five]
+  generalize mu 0 y = a at *; generalize mu 1 y = b at *
+  fin_cases i <;> fin_cases j <;> fin_cases k <;> simp [D1G, GiG, GamG] <;> field_simp <;> ring
+
+lemma DGamG_basis {t : ℝ} (ht : t ≠ 0) (y : Fin 5 → ℝ) (u i j k : Fin 5) :
+    DgamG (GS t) (GiG (mu 0 y) (mu 1 y) t) y (Pi.single u 1) (Pi.single i 1) (Pi.single j 1) k
+      = ∑ l, ((D2G (mu 0 y) (mu 1 y) t j l u i + D2G (mu 0 y) (mu 1 y) t l i u j - D2G (mu 0 y) (mu 1 y) t i j u l) / 2
+        - ∑ m, D1G (mu 0 y) (mu 1 y) t m l u * GamG (mu 0 y) (mu 1 y) t i j m) * GiG (mu 0 y) (mu 1 y) t l k := by
+  simp only [DgamG, DkosG_basis, D2G_tab, D1G_tab, GamG_tab ht]
+
+lemma GamGamG {t : ℝ} (ht : t ≠ 0) (y : Fin 5 → ℝ) (i j k l : Fin 5) :
+    gamG (GS t) (GiG (mu 0 y) (mu 1 y) t) y (Pi.single i 1)
+      (gamG (GS t) (GiG (mu 0 y) (mu 1 y) t) y (Pi.single j 1) (Pi.single k 1)) l
+      = ∑ c, GamG (mu 0 y) (mu 1 y) t j k c * GamG (mu 0 y) (mu 1 y) t i c l := by
+  rw [gamG_right (fun y u h => GS_nondeg ht y u h) (GS_smooth t) (GiG_inv ht y)]
+  simp only [GamG_tab ht]
+
+/-- The curvature array of THE connection at `y`, on coordinate fields. -/
+noncomputable def RfG (t : ℝ) (y : Fin 5 → ℝ) (i j k l : Fin 5) : ℝ :=
+  curvG (GS t) (GiG (mu 0 y) (mu 1 y) t) y (Pi.single i 1) (Pi.single j 1) (Pi.single k 1) l
+
+set_option maxHeartbeats 0 in
+lemma RicG_tab {t : ℝ} (ht : t ≠ 0) (y : Fin 5 → ℝ) (j k : Fin 5) :
+    ricCN (RfG t y) j k = RicG (mu 0 y) (mu 1 y) t j k := by
+  obtain ⟨h0, h1, h3, h3', h2⟩ := mu_facts y
+  simp only [ricCN, RfG, curvG, Pi.sub_apply, Pi.add_apply, GamGamG ht, DGamG_basis ht, Fin.sum_univ_five]
+  generalize mu 0 y = a at *; generalize mu 1 y = b at *
+  fin_cases j <;> fin_cases k <;> simp [D1G, D2G, GiG, GamG, RicG] <;> field_simp <;> ring
+
+/-- **Row 83, the open half closed.** THE connection of the squashed `S⁵` has scalar curvature `24 − 4t²` at EVERY
+point `y ∈ ℝ⁵` of the chart, contracted with the inverse metric there. -/
+theorem row83_squashed_S5_everywhere {t : ℝ} (ht : t ≠ 0) (y : Fin 5 → ℝ) :
+    scalG (GiG (mu 0 y) (mu 1 y) t) (fun i j k l => curv (lcConn (Fin 5 → ℝ) (ndOf (formG (GS t))
+      (formG_symm (GS_symm t)) (fun y u h => GS_nondeg ht y u h) ((formG_smooth (GS_smooth t)).differentiable (by simp))))
+      (fun _ => Pi.single i 1) (fun _ => Pi.single j 1) (fun _ => Pi.single k 1) y l) = 24 - 4 * t ^ 2 := by
+  have h : (fun i j k l => curv (lcConn (Fin 5 → ℝ) (ndOf (formG (GS t)) (formG_symm (GS_symm t))
+      (fun y u h => GS_nondeg ht y u h) ((formG_smooth (GS_smooth t)).differentiable (by simp))))
+      (fun _ => (Pi.single i 1 : Fin 5 → ℝ)) (fun _ => Pi.single j 1) (fun _ => Pi.single k 1) y l) = RfG t y := by
+    funext i j k l
+    rw [curvG_eq (GS_symm t) (fun y u h => GS_nondeg ht y u h) (GS_smooth t) (GiG_inv ht y)]
+    rfl
+  obtain ⟨h0, h1, h3, h3', h2⟩ := mu_facts y
+  rw [h, scalG]
+  simp only [RicG_tab ht, Fin.sum_univ_five]
+  generalize mu 0 y = a at *; generalize mu 1 y = b at *
+  simp [GiG, RicG]
+  field_simp
+  ring
+
 end SquashedS5
 
 end ShadowProbe
@@ -465,3 +564,7 @@ end ShadowProbe
 #print axioms ShadowProbe.D2_tab
 #print axioms ShadowProbe.Ric_tab
 #print axioms ShadowProbe.row83_squashed_S5
+#print axioms ShadowProbe.GiG_inv
+#print axioms ShadowProbe.D2G_tab
+#print axioms ShadowProbe.RicG_tab
+#print axioms ShadowProbe.row83_squashed_S5_everywhere

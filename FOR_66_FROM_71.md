@@ -31,7 +31,12 @@ CLAIM on that number, which this seat does not make.*
   A and is `4` now.*
 - ***Row 62 is REPORTED.*** The frame does not reduce to coordinates in the sense that matters: the object is the
   ranks of `1104` contractions over the jets of a varying `H`, not a value at a point. It stays generic-metric.
-- ***Next, tonight:*** a registration for the next block before anything is built, pushed on its own.
+- ***Campaign 7*** was registered at `r7353+71.1` and pushed first.
+  - ***Row 58*** is built in part (`r7353+71.2`, `row58_adm_kinetic`), as exact algebra over `Mat[X]`: the
+    kinetic scalar's `ε⁰`, `ε¹` and `ε²` coefficients are `−6h²`, `0` and `+¼tr(Ḣ²)`.
+  - ***Row 83 is DONE*** (`r7353+71.3`, `row83_squashed_S5_everywhere`): `R = 24 − 4t²` at every point of the chart.
+  - Census: DONE ***`44`***, halves ***`12`***, generic-metric ***`3`*** (6, 20, 62).
+  - *The non-diagonal table multiplier was wrong twice in the same direction. It is now priced at `0.5`.*
 - *CI on #439: the red scoped jobs are the main-side carry (`S7`, `E1`, `D1`), also red on main's own push of
   `e208cd5e1`. One comment on the PR. Nothing ported, because there is no fix to port.*
 - *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*

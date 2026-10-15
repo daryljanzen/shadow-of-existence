@@ -82,7 +82,7 @@ index	class	status	what it needs next	stand-in
 80	G5	LIBRARY GAP	homogeneous spaces G/H	dS as a coset space with the Killing-form metric
 81	G2	DONE	closed by 71 at r7333+71.3 (r7333_71_kretschmann/RESULT.md): row81_separator	Ricci = Lambda g; Kretschmann carries M
 82	G4	LIBRARY GAP	spinors	Dirac spectrum on S^5/S^4
-83	G2	DONE (chartable half)	closed by 71 at r7351+71.6 (r7351_71_campaign6/RESULT_STAGE_B.md): row83_squashed_S5, R = 24 - 4t^2 under THE connection for the canonical variation of the Hopf fibration S^5 -> CP^2, on the non-diagonal engine curvG_eq (probes/NonDiag.lean), in a softmax chart where the metric is smooth and positive definite on all of R^5; open half: the value is proved at the one point y = 0, not at every point (the SU(3)-homogeneity that makes it constant is not proved)	scalar curvature of a squashed S^5
+83	G2	DONE	closed by 71 at r7353+71.3 (r7353_71_campaign7/RESULT_B.md): row83_squashed_S5_everywhere, R = 24 - 4t^2 under THE connection at EVERY point of the softmax chart on R^5 (curvG_eq, probes/NonDiag.lean), closing the r7351+71.6 half (row83_squashed_S5, y = 0 only)	scalar curvature of a squashed S^5
 84	G4	LIBRARY GAP	spinors	Dirac gap on S^5
 85	G4	LIBRARY GAP	spinors	leaf tetrad and spin connection give the superpotential W
 86	G0	NO-CONNECTION, NOT DONE	statable now; no connection to discharge (functions, metric coefficients, counts, identifications)	branches of a height function on the quadric

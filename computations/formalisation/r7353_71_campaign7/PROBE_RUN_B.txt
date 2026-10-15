@@ -1,0 +1,156 @@
+# r7353+71.3 — piece B: lake env lean probes/NonDiag.lean (2026-10-15T05:25:41Z)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add'` to `FunLike.coe_add x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sub'` to `FunLike.coe_sub x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add'` to `FunLike.coe_add x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add'` to `FunLike.coe_add x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_neg'` to `FunLike.coe_neg x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add'` to `FunLike.coe_add x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add'` to `FunLike.coe_add x`).
+
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+probes/NonDiag.lean:495:108: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/NonDiag.lean:495:112: warning: Unused tactic linter: `simp` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/NonDiag.lean:495:112: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'ShadowProbe.lcGam_formG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.fderiv_lcGam_formG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.curvG_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.GS_nondeg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.GiS_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.D2_tab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Ric_tab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row83_squashed_S5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.GiG_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.D2G_tab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.RicG_tab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row83_squashed_S5_everywhere' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 349 s (whole file: the y = 0 tables of r7351+71.6 plus the general-point tables, 125 + 625 + 125 + 25 + 25 cases each)
