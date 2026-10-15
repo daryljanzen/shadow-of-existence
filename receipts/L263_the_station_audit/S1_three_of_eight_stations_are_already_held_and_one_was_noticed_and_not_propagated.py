@@ -161,7 +161,21 @@ def main():
     print('  PART 2 -- ⛔ AND Ⓕ WAS DIAGNOSED IN WRITING, WHERE IT HAPPENED')
     print('  ' + '=' * 74)
     reach = open(os.path.join(ROOT, 'THE_MATHEMATICS_REACH.md'), encoding='utf-8').read()
-    NOTICE = 'carried Ⓕ as owed for forty-eight revisions after its own ① block recorded the answer'
+    # ⬭⬭ r7355+cc66, REPAIR of the DANGLING span r7293+69 named: it opened on the verb `carried`
+    #   and its subject (`this frontmatter`) sat outside, so it would match a sentence about
+    #   anything that carried Ⓕ as owed.  THE_MATHEMATICS_REACH.md is a live theatre document and
+    #   not a record kind, so the record clause does not reach it even though the line never moved.
+    #   ⛔ AND 69's PRESCRIBED SPAN -- `'this frontmatter carried Ⓕ as owed ...'` -- OCCURS **ZERO**
+    #     TIMES: the document capitalises it, `This frontmatter`.  *The third prescription this
+    #     phase that does not match its haystack (r7351 found two for L269), and the second
+    #     case-mismatch of the night after L271's dead `Atiyah` arm.*  ⇒ ** Measured, corrected,
+    #     adopted: `1` occurrence, and `1` under `_unmark`. **
+    #   ⌗ The `git log -S` pickaxe below searches this same constant, so it was re-run on the
+    #     widened string before the change was kept: still exactly ONE commit, b337fb138, the same
+    #     one it found before.  *A widening that silently emptied the pickaxe would have turned the
+    #     span-measurement into a vacuous pass.*
+    NOTICE = ('This frontmatter carried Ⓕ as owed for forty-eight revisions after its own ① block '
+              'recorded the answer')
     check(f'⓶ the theatre\'s own frontmatter says it: "{NOTICE[:60]}..."', NOTICE in reach)
     # ⛔⛭⛭ AMENDED r3156 (`L-268`).  ** THESE TWO CHECKS READ THE LIVE `OWED.md` FOR A CLAIM ABOUT
     # ** THE STATE THIS RECEIPT'S OWN REVISION CHANGED. **  *r3148 struck Ⓕ in `OWED` 609 -- that is
@@ -185,9 +199,31 @@ def main():
     check('⓶ᶜ *** so a notice written where the error happened did not reach the list that repeats '
           'it -- the frontmatter corrected itself and nothing carried the correction ***',
           NOTICE in reach and was is not None)
+    # ⬭⬭ r7355+cc66, REPAIR of the token pin, AND IT GOES PAST 69's PRESCRIPTION ON A
+    #   MEASUREMENT.  r7293+69: "it asserts the token anywhere in OWED.md, a live register where
+    #   its count rose 0->3 at r3249 and has since fallen to 1 ... Owed a check scoped to item
+    #   609's row."
+    #   ⛔ TWO THINGS IN THAT GROUND ARE OUT OF DATE, both measured here: *** the count is 3, not
+    #     1 *** -- all three of Ⓑ, Ⓓ and Ⓕ carry a strike -- and *** item 609's row is a single
+    #     5,781-character line that contains all three of them. ***  So the prescribed row scope
+    #     narrows almost nothing: Ⓑ's strike or Ⓓ's would satisfy a row-scoped check for a claim
+    #     about Ⓕ.
+    #   ⇒ ** The claim of this check is about Ⓕ, so the span is scoped to Ⓕ's OWN entry ** and
+    #     ties the station to its strike in one contiguous string.  The paired absence test (`RX`,
+    #     Ⓕ no longer ⟐ owed) is unchanged and still carries the other half.
+    #   ⌗ A MARKUP CARRIER (`~~`...`~~` and `**`), so 60's r7255 prescription applies: the
+    #     markdown emphasis comes out of the HAYSTACK and the span stays whole.  Nothing is lost
+    #     by normalising the strikethrough away -- the STATEMENT of the strike is the words
+    #     `STRUCK r3148`, and "no longer says owed" is `RX`'s job, not the tildes'.
+    #   ⌗ Verified before performing: ONCE in the normalised register, once under `_unmark`.
+    _owed_md = re.sub(r'~~([^~]*)~~', r'\1',
+                      re.sub(r'\*\*([^*]*)\*\*', r'\1',
+                             open(os.path.join(ROOT, 'OWED.md'), encoding='utf-8').read()))
     check('⓶ᵉ ⛭ and it is struck NOW, which is this receipt landing rather than this receipt '
-          'breaking: the live row says STRUCK r3148 and no longer says owed',
-          re.search(RX, owed_now) is None and 'STRUCK r3148' in owed_now)
+          'breaking: Ⓕ\'s own entry says "Ⓕ the two real forms of $SO(6,\\mathbb{C})$ STRUCK '
+          'r3148" and no longer says owed',
+          re.search(RX, owed_now) is None
+          and 'Ⓕ the two real forms of $SO(6,\\mathbb{C})$ STRUCK r3148' in _owed_md)
     # the span, measured rather than recalled
     walked = subprocess.run(['git', '-C', ROOT, 'log', '--format=%s', '-S', NOTICE,
                              '--', 'THE_MATHEMATICS_REACH.md'], capture_output=True,
@@ -237,10 +273,27 @@ def main():
     check('⓷ᵃ ⛭ AND IT IS NO LONGER THE BASELINE: P12 DISPLAYS the Atiyah sequence at eq:atiyah and '
           'states the identification in its own voice, and p0 carries an exact sequence -- so Ⓖ has '
           'been WORKED since this audit and the station is not owed as it was',
+          # ⬭⬭ r7355+cc66, REPAIR of the two DANGLING noun phrases r7293+69 named.
+          #   ⒜ `the Atiyah algebroid of the principal bundle` is the predicate COMPLEMENT of
+          #     "the action algebroid of $G$ on $G/H$ \emph{is} ...", so its subject and its verb
+          #     were both outside the span -- *** the check read it as P12 stating the
+          #     identification, and the span states nothing at all. ***  Widened to the clause
+          #     from `the action algebroid`, as prescribed.  A markup carrier too (`\emph{is}`
+          #     inside), so the emphasis comes out of the haystack and the span stays whole.
+          #   ⒝ `the adjoint bundle` is a bare noun phrase whose count in P12 moved 0->1->2->1
+          #     across r3251, r3253 and r4083 -- *** tied to no stable line, and ANY mention
+          #     satisfied it *** where the claim is that P12 NAMES THE KERNEL.  Widened to the
+          #     clause that names it, as prescribed.
+          #   ⌗ Verified before performing: ⒜ once in the emphasis-normalised paper and once under
+          #     `_unmark`; ⒝ once raw and once under `_unmark`, and the bare phrase it replaces
+          #     also stands once today -- so the widening is not buying uniqueness, it is buying a
+          #     span that says something.
           g['exact sequence'] > 0
           and r'\label{eq:atiyah}' in _p12src
-          and 'the Atiyah algebroid of the principal bundle' in _p12src
-          and 'the adjoint bundle' in _p12src)
+          and ('the action algebroid of $G$ on $G/H$ is the Atiyah algebroid of the principal '
+               'bundle $G\\to G/H$'
+               in re.sub(r'\\emph\{([^}]*)\}', r'\1', _p12src))
+          and 'the adjoint bundle, ten-dimensional' in _p12src)
     h = {t: sum(RB.counts(t).values()) for t in
          ('Fredholm', 'limit-point', 'deficiency ind', 'Atiyah--Singer', 'graded index',
           'traced rather than computed')}

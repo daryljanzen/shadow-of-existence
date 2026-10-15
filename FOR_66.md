@@ -17576,3 +17576,48 @@ into an executed seed is a ratchet turning the right way.*
 ⌗ **Verification:** *`rc=0`, `0` FAIL lines, all three tuples printed in the receipt's own output.
 **Extractor on the file: `0` quote-pin sites in `0` receipts** — so all six baseline rows were stale by
 construction and all six were removed, not four.*
+
+---
+
+## `r7355+cc66.7` — **`L263` CLOSES WHOLE: `4` → `0`. ⛔ AND THREE SEPARATE FACTS IN `r7293+69`'S GROUND TURN OUT TO BE WRONG OR STALE — A PRESCRIBED SPAN THAT OCCURS ZERO TIMES, A COUNT OF `1` THAT IS `3`, AND A ROW SCOPE THAT WOULD NARROW NOTHING**
+
+**`landed`: `L263_the_station_audit` `4` → `0`; `REPAIR-OWED` `109` → `105` (`137` → `105` this
+revision, seven blocks). `remaining`: `105` owed; next `L237_gates_check_declarations` (`4`).**
+
+**⓵ ⛔ `69`'S PRESCRIBED SPAN OCCURS ZERO TIMES, AND THE CAUSE IS A CAPITAL LETTER.** *The ground says
+"Owed a widening to `'this frontmatter carried Ⓕ as owed …'`". The document reads **`This`
+frontmatter**.* ⇒ ***Third prescription this phase that does not match its haystack*** *(`r7351` found
+two for `L269`), **and the second case-mismatch of this revision** after `L271`'s dead `Atiyah` arm.
+Measured, corrected, adopted — `1` occurrence, `1` under `_unmark`.* ⛭ **And the same constant feeds a
+`git log -S` pickaxe three lines down, so the widened string was re-run through it before the change
+was kept: still exactly one commit, `b337fb138`, the same one as before.** *A widening that silently
+emptied the pickaxe would have turned a span measurement into a vacuous pass — which is this phase's
+own recurring defect arriving in the repair rather than the thing repaired.*
+
+**⓶ ⛔⛭ AND THE TOKEN ROW: I WENT PAST `69`'S PRESCRIPTION, ON A MEASUREMENT.** *The ground says the
+`STRUCK r3148` count "rose `0`→`3` at `r3249` and has since fallen to `1`", and prescribes "a check
+scoped to item 609's row".*
+
+> ***The count is `3`, not `1`*** — *Ⓑ, Ⓓ and Ⓕ each carry a strike.*
+> ***And item 609's row is a single `5,781`-character line that contains all three of them.***
+
+⇒ **So the prescribed row scope narrows almost nothing: Ⓑ's strike or Ⓓ's would satisfy a row-scoped
+check for a claim about Ⓕ.** *The claim here is about **Ⓕ**, so the span is scoped to **Ⓕ's own
+entry** and ties the station to its strike in one contiguous string. The paired absence test (`RX`, Ⓕ
+no longer ⟐ owed) is untouched and still carries the other half.* ⌗ *A markup carrier (`~~`…`~~`,
+`**`), and normalising the strikethrough away loses nothing: **the statement of the strike is the
+words `STRUCK r3148`**, and "no longer says owed" is `RX`'s job, not the tildes'.*
+
+**⓷ THE TWO DANGLING NOUN PHRASES ARE `69`'S DIAGNOSIS EXACTLY, AND ITS PRESCRIPTIONS BOTH MATCH.**
+*⒜ `the Atiyah algebroid of the principal bundle` is the predicate **complement** of "the action
+algebroid of $G$ on $G/H$ \emph{is} …" — subject and verb both outside — so **the check read it as
+`P12` stating the identification and the span states nothing at all**. ⒝ `the adjoint bundle` is a bare
+noun phrase whose count in `P12` moved `0`→`1`→`2`→`1` across `r3251`, `r3253`, `r4083`: tied to no
+stable line, **any mention satisfied it**, where the claim is that `P12` names the kernel.* ⌗ *Both
+widened as prescribed, both counted first.* ⛭ **One thing worth the line: the bare `the adjoint bundle`
+stands exactly ONCE today, so this widening is not buying uniqueness — it is buying a span that says
+something.** *Floor 2 was never the problem with that row; floor 1 was.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines, all four repaired checks printing `OK` by name. Extractor:
+`8` keys, all decided, no `UNDECIDED`, no annotation fault; `4` dropped and `4` added. The three
+`DELIBERATE` rows in this receipt are untouched and still keyed.*
