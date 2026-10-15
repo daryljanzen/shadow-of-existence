@@ -20094,3 +20094,142 @@ missing is that a register edit and its four generated views are not committed t
 register-moving commit that does not re-run the generator turns the trunk red for every seat, and the
 seat that finds it is whoever pushes next. **Whether that becomes a rule for all seats is yours, not
 mine** — I have only cleared the instance.*
+
+## ⛭⛭ `r7391+cc66.51` — **⑨ ⒜ PRICED AND THE PRICE KILLED THE DESIGN: THE LAW'S LITERAL TEST DISCHARGES `0` OF `221`, BECAUSE A `\ref` CANNOT CROSS A PAPER. ⇒ BUILT AS A RATCHET INSTEAD — `0` HUMAN READINGS TO INSTALL, AND IT HAS TEETH ON ALL FOUR BINDING CASES**
+
+*⑨ ⒜ + ⒞, authorised at `r7385`. Bands registered and pushed in
+`computations/beyond_the_wall/r7385_cc66_the_reference_arm/REGISTRATION.md` **before** `price.py`
+ran. ⛔ Nothing below rules on a site.*
+
+### ⛔ ⒜ THE PRICE, AND IT IS THE WHOLE ANSWER
+
+| mechanism | in the sentence | in its paragraph | band | verdict |
+|---|---:|---:|---|---|
+| `\ref{frontier:...}` | **`0`** | **`0`** | exactly `0` | HELD |
+| `\cite{JanzenCRframework}` | `7` | **`41`** | `15`–`60` | HELD |
+| `\rcpt{...}` | `13` | **`64`** | `120`–`200` | ⛔ **REFUTED LOW** |
+
+**`P7` §frontiers carries four labelled items** — `frontier:scalar`, `frontier:sm`,
+`frontier:quantum`, `frontier:crossing` — **and all `5` occurrences of `ref{frontier:` in the whole
+corpus are inside `corpus/CR_framework.tex` itself.** The eighteen papers compile separately, so a
+`\ref` cannot cross a document boundary.
+
+⇒ ⛔ ***The law's LITERAL test discharges `0` of `221` sites, and an arm that reds on "no reference"
+reds on its entire population.*** *That is `.48`'s `99`-per-cent artefact arriving by a second route,
+and Ⓔ says refuse it. **So `.48`'s dissolution of Ⓓ was right that the law asks a mechanical
+question, and this is the measurement of what the mechanism actually is: between papers, there
+isn't one.*** `131` of the `221` carry no pointer at all; `49` carry only a receipt key.
+
+### ⇒ WHAT I BUILT INSTEAD, AND WHY IT IS STILL ⑨ ⒜ AND NOT A SUBSTITUTE
+
+`corpus/check_open_references.py` + `corpus/open_reference_baseline.tsv` — **`214` rows, every one
+`UNREAD`, and the gate reds on ONE thing: a candidate site that is not in the baseline.**
+
+- ⛭ ***The backlog is FROZEN; it may not GROW.*** It costs **`0` human readings to install**, which
+  is the opposite of the `212` I twice refused to spend. The worklist comes down only when you read a
+  site and write its verdict in.
+- **Its failure text quotes `P7` §frontiers' law verbatim** and states in terms that the gate is
+  *not* calling the site a false-open. *`⑨ ⒜`: "reporting candidate rows and quoting the law, never
+  ruling."*
+- **`verdict` is YOUR column.** `--regen` writes `UNREAD` for a new key and never touches an existing
+  verdict. Permitted: `UNREAD` `REFERENCED` `FALSE-OPEN` `NOT-AN-OPEN` `OWED`.
+- **The key is `(paper, normalised marker sentence)`** — `.46`'s key, so a reworded open claim is a
+  NEW claim and is read again. **Tested in that direction.**
+- **`mechanism` is reported, never a discharge:** `124` none, `49` `rcpt`, `26` `cite-P7`, `15` both.
+- **Runtime `0.417` s.** ⌗ *Ⓔ asked for three cheap arms rather than one complete one. This is the
+  cheapest and the only one so far with teeth.*
+
+### ⛔ AND TWO DEFECTS IN MY OWN NET, FOUND WHILE BINDING-TESTING IT — `221` − `11` + `4` = `214`
+
+1. **A sectioning command carries no terminal punctuation**, so the sentence split fuses it with the
+   prose after it and `HEAD` then vetoed that prose. **`4` prose open claims were invisible for
+   exactly that reason** — among them `P3`'s ***`\paragraph{Open.} One thing is open, and
+   \S\ref{sec:lap} states its obstruction exactly`***, which is the plainest instance in the corpus
+   of the claim the law targets. ⌗ ⛭ **Found by accident: my first binding test injected its probe on
+   the line after a `\section{...}` and the gate stayed green. The botched test found a real defect**
+   — and had I called the test wrong and moved on, the defect would have shipped inside a baseline.
+2. **An identifier is not prose.** `\label{rem:phase-open}`, `\S\ref{sec:open}`, a receipt key —
+   **`11` of the original `221` were reached ONLY that way.** ⇒ *That is `.50`'s finding about `69`'s
+   net (`13` of `257`, `3` classed `OPEN`) applied to THIS instrument before it could repeat it.*
+   Formatting that wraps prose (`\emph`, `\textit`) is deliberately not stripped.
+
+⌗ ⛭ **`price.py` is left at its registered `221` and NOT retrofitted.** *Re-running a pre-registered
+measurement on a corrected population would make its bands unfalsifiable. The two numbers and the
+arithmetic between them are the report.*
+
+### THE BINDING CHECKS — all four, each in the direction that fails if the fix is absent
+
+| | case | expected | got |
+|---|---|---|---|
+| A | unchanged tree | green | **rc `0`** |
+| B | a new open-language sentence in its own paragraph | red | **rc `1`** |
+| C | a new open claim FUSED to a `\paragraph{...}` heading | red | **rc `1`** |
+| D | a law word present ONLY inside `\S\ref{sec:open-probe}` | green | **rc `0`** |
+
+⌗ *Run end-to-end against a copied corpus tree, not by patching the module.*
+
+### ⛔ NOT WIRED INTO `gates.yml`, AND THE REASON IS NOT TIMIDITY
+
+**Wiring spends every seat's `CI` time and can red the trunk** — and `main` has just spent a cycle
+red on a generator, so I am not adding a gate to that queue on my own authority. `⑦`'s
+`check_open_item_coherence.py` was left unwired on the same ground. **The gate is green on the current
+tree and has teeth on all four cases; wiring it is one line in `gates.yml` and it is yours to
+authorise.** ⌗ *`r7271` ⒟: the human is the intended bottleneck.*
+
+### ⌗ WHAT ⑨ STILL OWES, STATED PLAINLY
+
+⒝ landed at `.48`. ⒜ is the ratchet above. **⒞'s ratcheting VOCABULARY is the remaining half**, and
+`.50` delivered its seed as a measurement (`19` expressions, none among the six). ⛔ *I have not wired
+the `19` into this gate's population, and that is deliberate: widening the net widens the frozen
+backlog, and the `19` are `69`'s harvest rather than an adjudicated vocabulary. **`r7385` ⑨ ⒞ says an
+addition joins the vocabulary after it is READ once. That read is yours, and the seed is sitting
+ready in `.50`.***
+
+## ⛔⛔ `r7391+cc66.52` — **THE `fast` RED HAS A SECOND LAYER AND IT IS `r7387`'s: `P7` MOVED AND THREE DERIVED VIEWS DID NOT. I CLEARED TWO OF THE THREE; THE THIRD IS A READING AND IT IS YOURS**
+
+*Its own section, because `.50` and `.51` are order answers and this is the trunk. **PR #457, draft,
+subscribed.** ⌗ Read from CI's step record on `6c62a1c13`, which is my own grain-currency fix.*
+
+**My step-`5` fix worked and uncovered the layer behind it.** On `6c62a1c13` CI now reports step `5`
+`success` and **step `6`, the gate loop, `failure`**:
+
+> `⛔ FAILED: check_depmatrix check_open_ledger check_open_ledger check_pages_current`
+
+⛭ ***All three are `P7` / `CR_framework`, and all three are `r7387` — the commit that grew `P7`'s
+canonical frontier list to four.*** *The paper moved; its derived views did not. ⌗ **That is the
+third instance this cycle of one shape: `r7391`'s register front vs the `CURRENCY` block, `r7387`'s
+`P7` vs `69`'s census index (`.50` ⒜), and now `r7387`'s `P7` vs its own three views.***
+
+### ✔ CLEARED, both with the repo's own tooling and nothing by hand
+
+- **`check_depmatrix`** — `P7`'s dependency-matrix row was stale in exactly two cells: `P15`
+  `36`→`37`, `P16` `15`→`16`, the citations `r7387` added. Ran `scripts/depmatrix.py` from `corpus/`,
+  replaced the one row at `corpus/CR_framework.tex:1540`, regenerated with
+  `scripts/gen_matrix_html_tbody.py`. ⌗ ⛭ **And the gate caught me half-doing it:** I refreshed the
+  LaTeX and not `BOOK_INTRO_cosmiCave/assets/dependency_matrix.html`, and it answered *"The same
+  claim in two places, and only one was refreshed — which is the correction-reaches-one-grain failure
+  exactly."* **It caught the precise failure it was built for, on me, in the same minute.** Now green
+  on all four of its own arms (rows, HTML companion, figure, ledger block).
+- **`check_pages_current`** — `paper_P7.html` was `2296` bytes behind its `.tex`. Ran
+  `scripts/gen_paper_html.py P7`. ⌗ *I read the diff as the gate instructs: it is `r7387`'s own
+  content catching up, and the telling line is* ***"Of the three below, one is work and two are
+  boundaries" → "Of the four below, two are work and two are boundaries."*** *The served book was
+  still publishing three.*
+
+### ⛔ NOT CLEARED, AND NOT MINE TO CLEAR: `check_open_ledger` NEEDS THREE VERDICTS
+
+Three qualifications in `CR_framework` carry **no verdict** in the ledger — `9177c52baf`
+(*"What is open is the crossing's matter dynamics"*), `cf8bd7a858` (*"What stays open on the interior
+side is the interior reassignment"*), `db7d54f2d8` (*"And it is open without anything above waiting
+on it"*) — and one ledger entry, `fb2d798ceb`, carries a literal **no longer in any paper**.
+
+**The verdict vocabulary is `DO-NOT-ASSERT` / `SCOPE-BY-DESIGN` / `STANDARD-PHYSICS` /
+`METHOD-PROSE` / `SELF-ANSWERED` / `REGISTERED` / `NAMED-UNBUILT` / `PRECISION` /
+`OPEN-DOWNSTREAM`.** ⛔ **Every one of those is a reading.** The gate's own words:
+
+> *"A GREP IS NOT A LIST OF WHAT IS OWED. It is a list of places to look, and the looking has to be
+> written down or it does not count."*
+
+⇒ ⛔ ***So the trunk cannot go green by my hand, and I am saying so once rather than guessing three
+verdicts to clear a red.*** *Three verdicts and a `--rebuild` for the stale entry, and `fast` is
+green. ⌗ Same line I held at `.47` and ⑨: an instrument is mine, a reading is yours.*
