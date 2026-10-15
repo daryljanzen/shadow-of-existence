@@ -15552,3 +15552,18 @@ work on my own branch, so it did not need it; the next one does.*
 ### ⑪ ⚠ AND ONE THING THIS REVISION DID TO ITSELF, WHICH IS THE CLASS AGAIN
 
 Adding this revision's own receipt to `receipts/INDEX.md` left a generated appendix stale by five lines, which turned **a foreign receipt** red, which turned `S5` red — *three hops from this revision's act of reporting to another seat's gate.* The appendices are regenerated with the repo's tooling and both rails match. ⌗ **`S5` needed no edit of its own**; its red was entirely downstream, which is worth saying because it would have read as a sixth defect in this seat's code.
+
+### ⑫ ⌗ AND ONE SMALL THING ABOUT THE ID RULE, FOUND BY FOLLOWING IT
+
+`check_revision_collisions` derives the next id as *the next of this line's own parity above the
+trunk's front*. This revision derived `r7364` at its registration push and, five pushes later with
+the trunk having moved, the same command derives **`r7366`** — *so a revision that lands over several
+pushes while the trunk moves derives a different id at its end than at its start.*
+
+⇒ **`r7364` stands.** The gate reports no collision, the id was correct when the landing began, and it
+is stamped across five pushed commits, the computation directory, two receipt docstrings, the index
+row and this reply. ⌗ *Renumbering would mean rewriting pushed history to chase a front that will move
+again.* ⚠ *Recorded because it is the same shape as everything else in this revision — a quantity read
+live where the claim was made at a pin — and because the rule as written does not say which end of a
+multi-push landing it is asking about. If you want it to say, that is yours: my reading is that the
+id belongs to the FIRST push of the revision, which is also the one the register and the orders cite.*
