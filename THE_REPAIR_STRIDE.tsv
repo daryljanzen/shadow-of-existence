@@ -1,12 +1,12 @@
 # THE REPAIR STRIDE -- PO-78's repair phase.  Set at r7329, re-cut to two seats at r7331, to THREE
 #   SEATS at r7339 when the secondment's return trigger fired.  Data, not code.
 # ** THIS IS THE WHOLE LIST AND IT IS NOT A TRIAGE. **  Every REPAIR-OWED row in
-#   corpus/quote_pin_baseline.tsv is on it.  AT r7345: 209 rows in 63 receipts over 49 prefixes,
-#   down from 366 in 135 at r7329 -- so 72 of 135 receipts are closed and 63 remain.  A row leaves by
+#   corpus/quote_pin_baseline.tsv is on it.  AT r7349: 207 rows in 61 receipts over 49 prefixes,
+#   down from 366 in 135 at r7329 -- so 74 of 135 receipts are closed and 61 remain.
 #   being REPAIRED or by being WITHDRAWN with its case written down beside the repair -- never by
 #   reclassification and never by looking hard at it.
-#   Median 2 rows a receipt, mean 3.32, max 12; 10 of the 63 receipts hold exactly one.
-#   The whole list splits 114 PAPER / 95 SOURCE and 136 SENTENCE / 73 TOKEN.
+#   Median 3 rows a receipt, mean 3.39, max 12; 8 of the 61 receipts hold exactly one.
+#   The whole list splits 112 PAPER / 95 SOURCE and 134 SENTENCE / 73 TOKEN.
 #
 # ** THE RATE, PER REVISION, REALISED RECEIPTS -- THE DIRECTION TRIGGER READS THIS LINE. **
 #   r7333: 17.  r7337: 28.  r7339: 0 (both repair seats spent it on registrations).  r7341: 8 (cc66
@@ -35,7 +35,7 @@
 #   the delta, not the count".  Together that is 129 gates run TWICE plus a full clone before every push.
 #   MEASURED at r7347 on this container: ONE pass is 1,047 s -- 17.5 minutes, timed end to end -- so the ordered form is 35+ minutes
 #   per push, and it was never priced.  70 did exactly as ordered and the arbiter ate its cadence.
-#   ⇒ FIXED IN scripts/sweep_gates.sh AT r7347: the baseline pass re-runs ONLY the gates that failed at
+#   corpus/quote_pin_baseline.tsv is on it.  AT r7349: 207 rows in 61 receipts over 49 prefixes,
 #   HEAD -- cost N + f rather than 2N, and no clone at all when nothing is red.
 #
 # ** AND THE PUSH IS NOT GATED ON THE ARBITER (r7347). **  The gate sweep plus the carry ledger is the
@@ -67,6 +67,13 @@
 #   passed all five receipts while agreeing on 48-78 per cent of what to remove: a repair has many correct
 #   outputs where a verdict had one.
 #
+# ⛭ ** AND THE ARBITER HAD A BLIND SPOT OF ITS OWN, cc66's, FIXED AT r7349. **  GATE_TIMEOUT defaulted
+#   to 420s while check_quote_pins takes 947s on cc66's container -- so THE PHASE'S OWN RATCHET WAS
+#   NEVER RUN BY THE PHASE'S ARBITER there, and the sweep counted it UNRUN while reporting a clean
+#   tally.  The default is 1800s from that measurement.  ⌗ It is container-dependent and confirmed from
+#   both sides: the same gate runs under 400s here, which is r7327's 1,096-against-233 finding one
+#   script over.  And the sweep now KEEPS the roster it asserts rather than deleting it, so a run can
+#   say WHICH names it covered and not only how many.
 # ** THE ARBITER. **  `bash scripts/sweep_gates.sh` plus the carry ledger
 #   (git fetch origin refs/ci/carry && git show FETCH_HEAD:carry.json), per repair.  The script invokes
 #   every gate with `< /dev/null` and ASSERTS ITS OWN ROSTER -- 129 results for 129 names -- after cc66
@@ -109,10 +116,10 @@
 #   Neither is a repair and neither is on the list below.  Both are measurements the ledger owes itself.
 #
 # seat\tprefix\trows\treceipts\tPAPER/SOURCE\tSENTENCE/TOKEN
-# ---- cc66: 74 rows in 22 receipts over 17 prefixes
-cc66	P15_CR_cosmology	6	4	6/0	4/2
+# ---- cc66: 72 rows in 20 receipts over 17 prefixes
 cc66	P16_cosmogenesis_paper	8	2	8/0	8/0
 cc66	L271_the_statistics_bake	5	2	2/3	1/4
+cc66	P15_CR_cosmology	4	2	4/0	2/2
 cc66	L269_the_second_theatre	12	1	0/12	10/2
 cc66	L255_the_exemption_was_a_claim	8	1	0/8	3/5
 cc66	L548_propagating_sector	6	1	6/0	6/0
