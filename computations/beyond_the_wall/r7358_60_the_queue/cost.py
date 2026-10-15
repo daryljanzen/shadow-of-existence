@@ -26,31 +26,44 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 STRIDE = os.path.join(ROOT, 'THE_REPAIR_STRIDE.tsv')
 BASELINE = os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv')
 SEAT = '60'
-ROUTED = 'L257'                 # the do-not-edit receipt's prefix: routed, never edited
+#: the queue, in the order `r7353` ② gives it
+QUEUE = ('L259_the_distance_from_the_present', 'P08_slicing_operator',
+         'L248_the_strike_broke_its_readers', 'L256_the_band_taken',
+         'L280_the_decidable_claims', 'L556_registry_from_rows',
+         'L276_the_representation_theory_probe', 'L560_pins_into_moving_prose',
+         'L815_seam_phase_derived')
+#: ⛔ two of the nine are on this seat's own DO-NOT-EDIT list -- the queue's FIRST item among them --
+#: so their rows are ROUTED with patches and the arms are scored on the rest.
+ROUTED_PREFIXES = ('L259_the_distance_from_the_present', 'L256_the_band_taken')
 
-# ── arm ⒜: receipts of the TEN closed in this revision ───────────────────────────────────────────
-A_SPACE = 10
-A_CENTRAL = 7
-A_BAND = (6, 9)
+#: ⛔⛭ AND THE CENSUS IS PINNED FROM THE START THIS TIME.  *`r7356`'s registration read the LIVE
+#: ledger and would have returned nothing to its own scoring push; the lesson is applied here rather
+#: than repaired afterwards.*
+CENSUS = ''                     # '' means HEAD-at-write; the landing push pins it to the sha below
+CENSUS_SHA = None               # filled by the first repair commit's parent
 
-# ── arm ⒝: the share of the 30 owed rows that are UNIQUENESS problems ────────────────────────────
-#   `r7351` ③ registered rather than asserted.  ** A row is a uniqueness problem when its literal
-#   occurs MORE THAN ONCE in a single file of the corpus text it is pinned into. **  Claim-completeness
-#   is the complement: the literal is unique and the row is owed for what the span does not say.
-B_SPACE = 30
-B_CENTRAL = 0.15
-B_BAND = (0.08, 0.33)
+# ── arm ⒜: the uniqueness share of the queue's 19 owed rows ──────────────────────────────────────
+#   Same arbiter as `r7356`: a row is a uniqueness problem when its literal occurs MORE THAN ONCE in
+#   a single file of the text it is pinned into.
+#   ⚠ The two existing measurements STRADDLE this central: `cc66` read 0 of 7 on its block, this seat
+#   read 17 of 30 on its own.  ⇒ The band can fail toward either seat's reading.
+A_SPACE = 19
+A_CENTRAL = 0.30
+A_BAND = (0.20, 0.55)
 
-# ── arm ⒞: guards of the CANNOT-FAIL shape in the ten ────────────────────────────────────────────
-#   `r7349` ②'s rate.  ** A guard counts when its condition is true of EVERY member of the class the
-#   claim's subject belongs to, so it cannot distinguish the member the claim is about. **
-C_SPACE = 10
-C_CENTRAL = 1
-C_BAND = (1, 3)
+# ── arm ⒝: receipts whose FIRST repair form was UNKEYABLE ────────────────────────────────────────
+#   `r7356`'s last finding, four faces deep: the instrument keys a literal standing to the left of an
+#   `in` and nothing else, so a condition that strengthens membership into a count -- or a literal
+#   whose escaping decodes to a control character -- leaves the ledger describing nothing.
+#   ** A receipt counts when its FIRST form, written before the gate ran, would have done that --
+#   measured by running the gate, not by recalling what was written. **
+B_SPACE = 7
+B_CENTRAL = 2
+B_BAND = (1, 4)
 
-# ── the effort reading, drawn from the two measured strides and NOT banded (r7351 ②) ─────────────
-EFFORT_CENTRAL_MIN_PER_RECEIPT = 1.5
-EFFORT_SUPERSEDES = 8.0         # the figure the phase was priced on, not used as a central here
+# ── the effort reading, reported and not banded (`r7351` ②) ──────────────────────────────────────
+EFFORT_MEASURED = (0.7, 1.6, 6.96)   # the other seat's two, and this seat's own from `r7356`
+EFFORT_SUPERSEDES = 8.0
 
 RESULT = {}
 
@@ -77,17 +90,30 @@ def prefixes():
             if l.strip() and not l.startswith('#') and l.split('\t')[0] == SEAT}
 
 
-def block():
-    """{receipt: owed rows} for this seat's remaining stride"""
-    pref = prefixes()
-    return collections.Counter(r[0] for r in _rows(BASELINE)
-                               if r[5] == 'REPAIR-OWED' and r[0].split('/')[1] in pref)
+def block(sha=None):
+    """{receipt: owed rows} for the QUEUE, read at `sha` when one is given"""
+    rows = _rows_at(sha) if sha else _rows(BASELINE)
+    return collections.Counter(r[0] for r in rows
+                               if r[5] == 'REPAIR-OWED'
+                               and any(r[0].split('/')[1].startswith(q[:14]) for q in QUEUE))
 
 
-def owed():
-    pref = prefixes()
-    return [r for r in _rows(BASELINE)
-            if r[5] == 'REPAIR-OWED' and r[0].split('/')[1] in pref]
+def _rows_at(sha):
+    txt = subprocess.run(['git', '-C', ROOT, 'show', f'{sha}:corpus/quote_pin_baseline.tsv'],
+                         capture_output=True, text=True, errors='replace').stdout
+    return [l.rstrip('\r').split('\t') for l in txt.split('\n') if l.startswith('receipts/')]
+
+
+def owed(sha=None):
+    """the queue's owed rows.  ** Pass the census sha to read them where they stood. **"""
+    rows = _rows_at(sha) if sha else _rows(BASELINE)
+    return [r for r in rows if r[5] == 'REPAIR-OWED'
+            and any(r[0].split('/')[1].startswith(q[:14]) for q in QUEUE)]
+
+
+def routed(sha=None):
+    return [r for r in owed(sha)
+            if any(r[0].split('/')[1].startswith(q[:14]) for q in ROUTED_PREFIXES)]
 
 
 def _corpus_texts():
@@ -118,51 +144,40 @@ def uniqueness(rows=None, texts=None):
 
 
 def scored():
-    """the three arms against their bands -- None until the result block is appended"""
+    """the two arms against their bands -- None until the result block is appended"""
     if not RESULT:
         return None
-    a = RESULT.get('A_CLOSED')
-    b = RESULT.get('B_MULTI')
-    c = RESULT.get('C_GUARDS')
     out = {}
-    if a is not None:
-        out['a'] = (a, A_BAND, A_BAND[0] <= a <= A_BAND[1], decisive(A_SPACE, A_CENTRAL, A_BAND))
-    if b is not None:
-        share = b / B_SPACE
-        out['b'] = (share, B_BAND, B_BAND[0] <= share <= B_BAND[1],
-                    decisive_share(B_SPACE, B_CENTRAL, B_BAND))
-    if c is not None:
-        out['c'] = (c, C_BAND, C_BAND[0] <= c <= C_BAND[1], decisive(C_SPACE, C_CENTRAL, C_BAND))
+    if RESULT.get('A_MULTI') is not None:
+        share = RESULT['A_MULTI'] / RESULT['A_ROWS']
+        out['a'] = (share, A_BAND, A_BAND[0] <= share <= A_BAND[1],
+                    decisive_share(RESULT['A_ROWS'], A_CENTRAL, A_BAND))
+    if RESULT.get('B_UNKEYABLE') is not None:
+        b = RESULT['B_UNKEYABLE']
+        out['b'] = (b, B_BAND, B_BAND[0] <= b <= B_BAND[1], decisive(B_SPACE, B_CENTRAL, B_BAND))
     return out
 
 
 if __name__ == '__main__':
-    _b = block()
     _o = owed()
-    _routed = [r for r in _o if f'/{ROUTED}' in r[0]]
+    _r = routed()
     print()
-    print('  60 -- THE ELEVEN, REGISTERED BEFORE THE FIRST REPAIR')
+    print("  60 -- THE HAND-OFF QUEUE, REGISTERED BEFORE THE FIRST REPAIR")
     print()
-    print(f'    prefixes assigned: {len(prefixes())};  owed receipts {len(_b)};  owed rows '
-          f'{sum(_b.values())}, {sum(_b.values()) / len(_b):.2f} a receipt')
-    print(f'    ⛔ of those, {len(_routed)} row(s) in {len({r[0] for r in _routed})} receipt(s) '
-          f'are on this seat\'s DO-NOT-EDIT list and are ROUTED, never edited')
-    print(f'    by target {dict(collections.Counter(r[2] for r in _o))};  '
-          f'by tier {dict(collections.Counter(r[3] for r in _o))}')
+    print(f'    the queue, {len(QUEUE)} prefixes in the order given: {len(_o)} owed rows')
+    print(f'    \u26d4 of those, {len(_r)} row(s) in '
+          f'{len({r[0] for r in _r})} receipt(s) are on this seat\'s DO-NOT-EDIT list and are ROUTED')
+    print(f'    \u21d2 the arms are scored on {len(_o) - len(_r)} rows in '
+          f'{len({r[0] for r in _o}) - len({r[0] for r in _r})} receipts')
     print()
-    print(f'    arm (a): central {A_CENTRAL} of {A_SPACE}, band {A_BAND[0]}-{A_BAND[1]}, two-sided, '
-          f'decisive {decisive(A_SPACE, A_CENTRAL, A_BAND):.3f}')
-    print(f'    arm (b): central {B_CENTRAL}, band {B_BAND[0]}-{B_BAND[1]}, two-sided, '
-          f'decisive {decisive_share(B_SPACE, B_CENTRAL, B_BAND):.3f} at {B_SPACE} rows')
-    print(f'    arm (c): central {C_CENTRAL} of {C_SPACE}, band {C_BAND[0]}-{C_BAND[1]}, two-sided, '
-          f'decisive {decisive(C_SPACE, C_CENTRAL, C_BAND):.3f}')
-    print(f'    effort:  reported in minutes a receipt against {EFFORT_CENTRAL_MIN_PER_RECEIPT}, '
-          f'drawn from the two measured strides and NOT from the {EFFORT_SUPERSEDES} the phase was '
-          f'priced on -- reported, not banded')
+    print(f'    arm (a): central {A_CENTRAL}, band {A_BAND[0]}-{A_BAND[1]}, two-sided, '
+          f'decisive {decisive_share(A_SPACE, A_CENTRAL, A_BAND):.3f} at {A_SPACE} rows')
+    print(f'    arm (b): central {B_CENTRAL} of {B_SPACE}, band {B_BAND[0]}-{B_BAND[1]}, '
+          f'two-sided, decisive {decisive(B_SPACE, B_CENTRAL, B_BAND):.3f}')
+    print(f'    effort: reported in minutes a receipt, beside {EFFORT_MEASURED} and the '
+          f'{EFFORT_SUPERSEDES} the phase was priced on -- NOT banded')
     print()
-    for _r, _n in sorted(_b.items(), key=lambda kv: (-kv[1], kv[0])):
-        print(f'      {_n:2d}  {_r.split("/")[1][:30]:30s} '
-              f'{"ROUTED" if f"/{ROUTED}" in _r else ""}')
+    for _p, _n in sorted(block().items(), key=lambda kv: (-kv[1], kv[0])):
+        _flag = 'ROUTED' if any(_p.split('/')[1].startswith(q[:14]) for q in ROUTED_PREFIXES) else ''
+        print(f'      {_n:2d}  {_p.split("/")[1][:34]:34s} {_flag}')
     print()
-
-
