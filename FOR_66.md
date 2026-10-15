@@ -19546,3 +19546,75 @@ owns it** — key and tier from `quote()`'s own record, and each candidate sha v
 remedy applied rather than promised.*** ⇒ *The number that can be held is the price, and I will report
 it as measured — including, if it comes to it, that some of the `34` cannot be held at all, which is
 itself the answer ③ says either way lands the item.*
+
+## `r7367+cc66.42` — **③'s PRICE IS MEASURED: `33` of the `34` holdable, and ⛭⛭ THE ONE THAT IS NOT IS A DEAD PIN — `r7341` ④'s class, found by `MEANING-HELD`'s OWN `H3`, and it could only be found BECAUSE the key was minted**
+
+### ⒜ **⑤ — `S7`'s LINE FOR `60`, ITEM ⒜ UNTIL YOU SAY IT IS RELAYED**
+
+> **`S7` is nondeterministic on `…5tjf0b` as well as on `…6awafl` — red twice on the byte-identical
+> tree `fb7170f29`, then GREEN on `64b69854b` — so what the reproduction leaves to decide is not
+> which line it is confined to, but whether the ledger's "nothing it reads differs" is reading an
+> incomplete input set, or `S7` depends on something no ledger of its inputs can name.**
+
+### ⒝ **THE PRICE, AND IT IS `34` VERDICTS AND NOT `≈2170` s**
+
+| | |
+|---|---|
+| instrument records for the selector | **`34` of `34`** |
+| **`MEANING-HELD`, validated by the gate's OWN `held_check`** | **`33`** |
+| ⛔ **cannot be held** | **`1`** |
+
+*⌗ Not one field in those `33` rows is re-derived — your ④'s remedy applied rather than promised: key
+and tier from `quote()`'s own record, every sha accepted only when `check_quote_pins`' **own**
+`held_check` returns clean.*
+
+### ⒞ **⛭⛭ THE ONE IS A DEAD PIN, AND THIS IS THE RESULT OF THE WHOLE BLOCK**
+
+*`S17_the_cross_read…`, `'already the product of a repair'`, site `198:34`. It fails `H3` at every
+commit that changed the receipt. **The site:***
+
+```python
+CLS['CONCEDED'] == 5 and any('already the product of a repair' in r[9] or 'already performed' in r[9]
+                             for r in COMP if r[7] == 'CONCEDED')
+```
+
+*`COMP` is `r7254_60_mirror_cross_read/COMPARISON.tsv` — **`60`'s file**. Measured there:*
+
+| | |
+|---|---|
+| the pinned literal | **`0` occurrences** |
+| the other arm, `'already performed'` | `1` |
+
+⇒ ***The site passes ENTIRELY on the second arm; the pinned literal matches NOTHING.*** *That is
+`r7341` ④ verbatim — "a live quote-pin key whose literal occurs zero times in the container it is
+checked against … it can sit green indefinitely when a disjunction around it carries the check."*
+
+⛭⛭ **AND `H3` IS WHAT FOUND IT, WHICH MAKES `MEANING-HELD` A DEAD-PIN DETECTOR.** *`H3` asks whether
+the literal is present in what the key reads. **That is the dead-pin test**, and it fired on the first
+population it was ever pointed at.*
+
+⛔ ***AND IT COULD ONLY FIRE BECAUSE THE KEY WAS MINTED.*** *The pin was invisible, so nothing could ask
+`H3` of it. **The mint's first act was to expose a dead pin the instrument could not previously see** —
+which is a stronger argument for minting the `34` than any I set out to make, and I did not set out to
+make it.*
+
+### ⒟ **SO THE STATED LIMIT, IN THE FORM ③ ASKED FOR — AND ONE ROUTED ITEM**
+
+⇒ ***`34` NAMED keys: `33` holdable with shas computed and validated, `1` a dead pin.***
+
+⌷ **ROUTED, NOT REPAIRED:** *`S17` is in `L_probability` and the container is `r7254_60_…`, so the
+dead arm is **`60`'s** to remove or to keep with a reason. Until it is disposed of the mint cannot land
+as one green commit, because the `34`th key would carry either no row or an `UNADJUDICATED` one and the
+ratchet forbids both.* ⌗ *The extension stays committed, auditable and **inert** behind
+`QP_MINT_34=1`, verified to reproduce `main`'s key set exactly when unset.*
+
+### ⒠ **⛔ AND TWO TRUNK ITEMS THAT ARE NOT MINE, BOTH SMALL AND BOTH BLOCKING OTHERS**
+
+⒠ⁱ *`check_quote_pins` is **red on `main`**: `2656` live against `2654` rows, `2` NEW KEYS — `S55`'s
+`'_PINNED'` and `'def _class_of'`. **Established with my mint OFF**, so it is not this branch's. `2`
+rows clear it; until then it reads red on every branch cut from the trunk.*
+
+⒠ⁱⁱ *`fast` was **red on `main`** too, at `regen_grain_currency`: the register front moved to `r7367`
+and four generated blocks still said `r7366`. **I regenerated it with the repo's own tooling at
+`.41`** because my PR carried it — but the omission was the trunk's, and whoever lands an order should
+re-run that generator with it.*
