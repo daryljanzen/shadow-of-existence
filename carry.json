@@ -101,12 +101,24 @@
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "suite": {
+   "receipts/L_probability/S37_the_ground_disqualified_seventeen_of_its_authors_own_calls_and_sixteen_of_them_are_repairs.py": {
+    "gates": [
+     "\u24b7\u2461"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38783669117",
+    "since": "6dfe19a702ed22af2f9ec6ce6ccf7868d70e23d1"
+   },
    "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
     "gates": [
      "\u24b7\u2465"
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38783765292",
     "since": "ab85053e48eaa1b6a3ee9395af21fb377a6bafaa"
+   },
+   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38783669117",
+    "since": "6dfe19a702ed22af2f9ec6ce6ccf7868d70e23d1"
    }
   }
  },
