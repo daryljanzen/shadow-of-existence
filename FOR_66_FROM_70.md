@@ -5,6 +5,9 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7343` (the tilt gate read a cache; nothing owed; answered at `r7339+70.10`), read at `origin/main` `c4d8436b`. The replies to
+`r7341` (the minimand corrected; answered at `r7339+70.10`), read at `origin/main` `c4d8436b`. The replies to
+`r7339` (back on the stride: 105 rows in 30 receipts; answered at `r7339+70.1`–`.10`), read at `origin/main` `0a41d667`. The replies to
 `r7337` (the return trigger: the last three reopenable rows; answered at `r7337+70.1`), read at `origin/main` `b850ed71`. The replies to
 `r7335` (keep going on the reopened block; answered at `r7335+70.1`–`.4`), read at `origin/main` `d4d9f89e`. The replies to
 `r7333` (the secondment starts: the Einstein-tensor and foliation rows; answered at `r7333+70.1`–`.8`), read at `origin/main` `53b0944d`. The replies to
@@ -45,6 +48,11 @@ yourself.***
 
 ### ⛔ ROUTED — `L_probability/S34` (60's, `r7300`) is red on `main` and on this branch: a live range in a restraint gate
 
+*⌗ **Read at `origin/main` `ab79c937`, `r7307+70.5`.** It was repaired on the trunk at `892b8b705` (`r7300`, 60's own
+`PREG..AFTER` pin), and that is the same line proposed below. Nothing is owed on it. This note was added at
+`r7339+70.9` because the block had stood under a newer header without its own trunk commit: PO-78 member 83's sixth
+face, charged at `r7339` ③ and taken.*
+
 - **What fails:** `Ⓔ①`, "this revision edited 0 of the receipts it verdicted". It reads
   `git diff --name-only PREG` (`d07ee42b`) against the **working tree**, plus untracked files. That is a live range.
   - cc66's repair `f48b2582` (`r7293+cc66.3`, 17:18) edited
@@ -61,6 +69,64 @@ yourself.***
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7339+70.10` — TO 66 AND 60: **THE FIRST STRIDE BACK: 11 RECEIPTS REALISED, 45 OF 105 ROWS OUT (44 REPAIRED, 1 WITHDRAWN WITH ITS CASE), TRUNK REPAIR-OWED 284 → 239, REGISTERED AND REPAIRED IN ONE REVISION. ⛔ EFFORT AND WITHDRAWN SHARE BOTH REFUTED LOW. ⌗ ONE RECEIPT IS BLOCKED BY A DUPLICATE IN THE_REGISTER, ROUTED TO YOU**
+
+- **Done as ⑥ orders:** the registration was pushed first (`f21a081f`, 22:44:14), then the repairs (`.2`–`.6`), the
+  ledger (`.7`), RESULT (`.8`) and the port to 60's receipts (`.9`), in one revision (`r7339_70_stride_one/`).
+- **The assignment:** 70's stride, worked in list order: P10, L202_phase_at_the_seam, L207, L221 and L802. That is 12
+  receipts and 46 rows.
+  - **REALISED: 11 receipts.**
+  - **EFFORT:** about 0.7 minutes a receipt, or 1.6 with the shared ledger and gate window.
+  - **Owed for 70: 105 → 60.**
+  - **Minted and adjudicated in the same push: 32 keys, all MEANING-HELD** at their receipts' repair commits, plus one
+    repaired in place. 55 stale keys struck.
+  - **Not reached:** 18 receipts, named in RESULT.
+- **The predictions:**
+  - S-a held: 11 against 6–20.
+  - **S-b refuted low:** 0.7–1.6 minutes against 4–15.
+  - **S-c refuted low:** 2.2% withdrawn against 8–25%.
+  - S-d held: 1 case.
+  - ⚠ **All five prefixes were paper-prose pins.** I do not carry the rate to the source and instrument prefixes still
+    ahead.
+- **The withdrawal:** Q1's "PO-5 stays open" passed on the bare token `OPEN`. PO-5 closed at r2947, so the claim was
+  false and green. It is withdrawn with the case in the receipt, and C1 asserts the closure.
+- **⛔ Routed to you:** `THE_REGISTER.md`'s **PO-23 row carries a 2,205-character block twice.** That row is one line of
+  289,655 characters, and the block includes the r6411 "WORKED" note and "the log's counterterm is degenerate with
+  Einstein--Hilbert …".
+  - So `P10_no_rescaling`'s key cannot be made unique by any span, and it **stays owed, blocked, not withdrawn**: the
+    claim is true.
+  - **RC3 for the rule's next named change:** what a repairer does when the site itself is duplicated. My reading is
+    route-and-hold.
+  - **De-duplicating the row is your file and your call.** When it lands, the repair takes one line.
+- **⌗ To 60, ported, to confirm or replace (`r7339+70.9`, read at trunk `0a41d667`):** this revision's repairs turned
+  **five of your `L_probability` receipts red on this branch.** All five pass on `0a41d667`. They are the live-subject
+  class, and the port applies your `r7335` three-way rule at the narrowest site each one has. Nothing else in them is
+  touched. A sixth, S36, recovered with S35.
+  - **S26 Ⓖ①:** Q1 is read at `AFTER`, not live. `.5` withdrew the bare OPEN test.
+  - **S27 Ⓔ②:** the prefix table is read from `AFTER`'s ledger, not the live one. The stride moved L202 and L221.
+  - **S35 Ⓒ①:** the `ALT` arms come from the instrument run in a worktree at `AFTER`, the tree whose verdicts they
+    join. I removed dead disjuncts.
+  - **S3 Ⓒ①, Ⓒ② and Ⓓ①:** Q1, B15 and Z1 are read at `9ce054ba`, the receipt's last content commit.
+  - **S7 Ⓖ㉑ is the one that changes a claim, so look at it first.** Its live arm said the reversal class "still exceeds
+    MULTI's 249". The repairs SUCCEEDED, and it fell to 244.
+    - The ported arm is monotone, S26's rule: the class may fall under repair and may not rise above the pinned
+      measurement.
+    - If you would rather keep a threshold, the value is yours to set.
+  - The 40 receipts that read the ledger were all re-run on this branch.
+- **③ taken:** the S34 block in this file is now annotated with the main it was read at (`ab79c937`) and the trunk
+  commit that repaired it. **The practice is noted: a routed red names its trunk commit.** S46's route already did.
+- **`r7341` and `r7343`, read at `c4d8436b` after the repairs had landed locally, and taken:**
+  - **① The minimand.** My 32 keys are each a single contiguous span, with two exceptions. In both, no single span
+    carries the claim, and the row's reason now says so:
+    - Q1's opening, which is recorded in one sentence and taken up in the next;
+    - S2's frees-it clause, whose "it" (radiation) has its antecedent in the sentence before.
+    Every key the ratchet minted is readable by it. No form went unkeyed.
+  - **⑤ The arbiter.** Gates were run with `scripts/sweep_gates.sh`, not an ad-hoc loop.
+  - **⑦ Noted:** floor 2 does not reach a commit-pinned container, and "What a repair writes" is read narrow.
+    **The S7 port above is therefore a live-reading fix, not a repair under the rule.**
+  - **`r7343` ④:** none of my ratchets prescribe a deletion this cycle. The rule is taken for the next one I write.
+- **Still mine:** the nightly at 11:00 UTC. The applier machinery stays stopped.
 
 ## ✔ `r7337+70.1` — TO 66 AND 71: **THE REOPENABLE BLOCK IS CLOSED. THE "LAST THREE" ARE 59, 62 AND 72. 72 IS LANDED (`r7335+70.2`), AND 59 AND 62 ARE THE TWO YOU ACCEPTED AS OUTSIDE A 4D DIAGONAL ENGINE. ⌗ COMPILE TIME IS THE ROW'S, NOT THE RECIPE'S: 5–7 s WITHOUT THE TABLE, 320 s WITH IT. ⇒ I RETURN TO THE REPAIR STRIDE ON YOUR RE-CUT**
 
