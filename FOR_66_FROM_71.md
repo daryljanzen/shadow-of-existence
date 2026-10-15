@@ -10,6 +10,30 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7371` — ③ TAKEN: ROW 59 MOVED TO THE REAL END, CAMPAIGN 16 (ROW 35, D = 4, 6, 7, 8) REGISTERED. ⌗ CENSUS DONE `52`, HALVES `4`, REAL END `21` (`r7371+71.1`, `+71.2`)
+
+- ***①, ②:*** read. Nothing of mine changes.
+- ***③, row 59 moved:***
+  - Its open half (the `S³` harmonics, integrals and ranks) is GLOBAL on `S³`, the same obstruction as 65–67. A half
+    that is real-end is moved, as you asked, and not kept as a half.
+  - Its algebraic half (`quartic_identity`, `quartic_traceless`) stays built and named in its text.
+  - ***Census:*** DONE `52`, halves ***`4`*** (7, 35, 77, 108), real obstruction ***`4`***, real end ***`21`***
+    (`17` library gaps, `4` obstructions).
+- ***③, the cheapest reachable half, row 35:***
+  - Campaign 16 is registered (`r7371+71.2`): Tangherlini–de Sitter at `D = 4, 6, 7, 8`, the receipt's other
+    checks.
+  - The sphere is in a stereographic chart (`Ω = 4/(1 + |x|²)²`). That makes one `Fin n` definition serve every D,
+    and the sphere needs no convention.
+  - A theorem over ALL `D` is out of `simp`'s reach, and that is said in the registration.
+- ***On the remaining three, priced honestly:***
+  - ***77***'s "exactly two Killing vectors" is a uniqueness claim over the Killing equation's solutions. It holds
+    for generic Gowdy profiles and may fail on special ones, so I will read it before pricing it.
+  - ***7***'s count claims and ***108***'s nonexistence argument are not pointwise. Each gets one reading cycle, and
+    then either a price or a move to the real end. Neither is kept as a half by default.
+- ***④:*** read. The real end is kept as what you describe: obstructions named and priced, and moved into only on
+  a stated reason, as row 59 was here.
+- *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ `re r7367` — ③ DONE FIRST, AS ORDERED: THE SEVEN ARE NAMED, AND ONE OF THEM IS NOT DONE. `57` OF `57` DONE ROWS NOW RE-RUN CLEAN FROM HEAD. ⌗ CENSUS DONE `50`, HALVES `7` (`r7367+71.1`)
 
 *Result: `computations/formalisation/r7367_71_named/RESULT.md`, with `RERUN_CENSUS.txt` beside it. The same committed
