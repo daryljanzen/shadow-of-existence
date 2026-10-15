@@ -54,6 +54,28 @@ The clause was vacuously true -- and its green is worse than the red it replaced
       ⒞ *the spellings* -- distinct ones among the MEASURING sites.  Central `2`, band `1`-`4`.
         Measured **`1`** -- INSIDE, at the floor: `--not`, the one `S23`'s control does not cover.
 
+** ⛔⛭⛭⛭ Ⓔ②ᵃ-ᵇ AND THIS FILE CONTAINED THREE INSTANCES OF ITS OWN SUBJECT, EVERY ONE FOUND BY
+RUNNING IT ON A TREE THAT HAD MOVED. **
+      ⒈ `Ⓐ②` asserted a RATIO -- base at least ten times the ref range -- and the ref range is the
+        one THIS SEAT'S OWN PUSHES GROW: `52` against `2` when written, `56` against `6` four
+        commits later.  *What a merge cannot reverse is the CONTAINMENT, so that is what is
+        asserted and the figures are printed.*
+      ⒉ The arm's own classification was keyed by `path:line`.  ** That is not an identifier of a
+        site; it is an identifier of a site AND of every edit above it. **  Repairing `S24` moved
+        its lines, three classified sites fell out of the map and defaulted to `MEASURING` on the
+        runner while reading correctly here.  *The key is now the (path, spelling, ref).*
+      ⒊ ⇒⇒ *** AND THE REMEDY WRITES THE SHAPE INTO THE FILE. ***  The honest repair for a moving
+        base is to pin it and PRINT the live reading beside it -- and printing it writes
+        `--not <ref>` into the file, which is a site by this detector.  **All `4` sites the scan
+        finds live are reporting arms this revision added, and no gate asserts on one.**
+        ⌊ *So a fourth class joins the three: `REPORTED`, tested as a PROPERTY -- a ref site in a
+          file that also binds a pinned base -- because a hand entry for `S24` would have
+          hard-coded a date, which is the defect itself arriving in the classification.*
+      ⇒ ** And the arm is scored AT THE REGISTRATION COMMIT, the tree the question was asked of,
+        with the live reading printed beside it: this revision's own rule, applied to its own arm. **
+        *At the frame, `3` MEASURING sites -- `P03`, `S5`, `S24` -- of which `1` is beyond the two
+        known.  Live, `0` MEASURING and `4` REPORTED.*
+
 ** Ⓕ AND THE SCAN'S OWN DETECTOR READ ITS REMEDY AS ITS DISEASE. **  The first form scored `22` sites
 and `18` were `merge-base --is-ancestor <PIN> HEAD` -- *the repaired form verifying its own pin, the
 exact property `S23` adopted* -- because the trailing `'HEAD'` was read as the base of a range that
@@ -219,11 +241,22 @@ def main():
     _at_ref = mine_since('origin/main', _sess)
     print(f"      this seat's own commits in the range, both ways: {len(_at_base)} based at {BASE}, "
           f"a commit;  {len(_at_ref)} based at `origin/main`, a ref")
+    #: ⛔⛭⛭⛭ r7368, FOUND BY RUNNING THIS FILE: ** AND THIS CLAUSE WAS THE CLASS AGAIN. **  *Its
+    #: first form asserted a RATIO -- base at least ten times the ref range -- and the ref range is
+    #: the one THIS SEAT'S OWN PUSHES GROW.  It read `52` against `2` when written and `56` against
+    #: `6` four commits later, and the ratio collapses as the revision lands.*
+    #:   ⇒ *** The receipt about a population bounded by a ref contained three instances of it, and
+    #:       every one was found by running it on a tree that had moved.  This is the first. ***
+    #: ⌊ *What a merge cannot reverse is the DIRECTION: the pinned base is an ancestor of the ref's
+    #:   merge-base, so its range always CONTAINS the ref's.  The figures are printed; the
+    #:   containment and the strictness are asserted.*
     check(f'Ⓐ② ⛔⛭⛭⛭ AND THE CAUSE IS A MERGE AND NOT AN EDIT, MEASURED ON ONE TREE: the same '
           f'session-filtered range holds {len(_at_base)} commits based at a COMMIT and '
           f'{len(_at_ref)} based at `origin/main` -- the trunk absorbing this seat\'s own work '
-          f'removed {len(_at_base) - len(_at_ref)} of them, with nothing edited anywhere',
-          len(_at_base) > 10 * max(1, len(_at_ref)) and len(_at_ref) >= 0)
+          f'removed {len(_at_base) - len(_at_ref)} of them, with nothing edited anywhere.  '
+          f'⛭ r7368: the RATIO was asserted here and the ratio is a live quantity this seat\'s own '
+          f'pushes move, so the CONTAINMENT is asserted and the figures printed',
+          set(_at_ref) < set(_at_base))
     check('Ⓐ③ ⇒ and the base this revision adopts has the property `S23`\'s `Ⓕ①` asked for, tested '
           'as the property and not as a name: it RESOLVES to a commit and is an ANCESTOR of `HEAD`, '
           'while a ref satisfies neither half stably',
@@ -331,6 +364,25 @@ def main():
           f'REFUTES the registration\'s stated reasoning, that nothing in the gate layer reads a '
           f'range at all, while the prediction itself holds -- both are said*',
           R['B_ASSERTS_ON_A_PIN'] > 0 and R['B_USES'] > R['B_ASSERTS_ON_A_PIN'] and _b == 0)
+    check(f'Ⓔ②ᵃ ⛔⛭⛭⛭ AND THE ARM HAD TO BE SCORED AT A FRAME, WHICH IS THIS REVISION\'S OWN RULE '
+          f'ARRIVING IN ITS OWN ARM: read LIVE the scan finds {R["A_LIVE_MEASURING"]} MEASURING '
+          f'sites and {R["A_LIVE_REPORTED"]} REPORTED ones, because ** the remedy for a moving base '
+          f'is to PIN it and PRINT the live reading beside it -- and printing it writes '
+          f'`--not <ref>` into the file. **  Every one of the {R["A_LIVE_REPORTED"]} is a reporting '
+          f'arm this revision added, and no gate asserts on any.  ⇒ *A detector that reads the range '
+          f'and not what is DONE with it cannot tell a measured population from a reported one*',
+          R['A_LIVE_MEASURING'] == 0 and R['A_LIVE_REPORTED'] == 4
+          and R['A_ASSERTED_ON'] == 0)
+    check(f'Ⓔ②ᵇ ⇒⇒ and the classification itself was keyed by `path:line`, which is not an '
+          f'identifier of a site but of a site AND every edit above it: repairing `S24` moved its '
+          f'lines and three classified sites fell out of the map and defaulted to `MEASURING` on '
+          f'the runner while reading correctly here.  ** The class in the instrument\'s own '
+          f'selector, for the fourth time. **  ⌗ *The key is now the (path, spelling, ref), and '
+          f'`REPORTED` is a PROPERTY -- a ref site in a file that also binds a pinned base -- '
+          f'because a hand entry for `S24` would have hard-coded a date*',
+          "('path, spelling, literal')" not in open(COST, encoding='utf-8').read()
+          and '_PINNED' in open(COST, encoding='utf-8').read()
+          and 'def _class_of' in open(COST, encoding='utf-8').read())
     check(f'Ⓔ⑤ arm ⒞ -- distinct spellings among the MEASURING sites: {_c} ({R["C_SPELLINGS"]}), '
           f'against central {C.C_CENTRAL} and band {C.C_BAND[0]}-{C.C_BAND[1]}.  ** INSIDE, at the '
           f'floor -- and it is the one spelling `S23`\'s control does not cover **',
@@ -447,7 +499,7 @@ def main():
     check('Ⓘ② ⇒ and the one change that is NOT this seat\'s to make is not made: the two '
           '`_CTRL_MOVING` sites are classified `ABOUT` and left exactly as they stand, because a '
           'control string naming the shape is the subject of a gate and not an instance of it',
-          R['A_SITES'] == 1
+          R['A_LIVE_MEASURING'] == 0 and R['A_SITES'] == 3
           and all('_CTRL_MOVING' in open(os.path.join(ROOT, one(p)),
                                          encoding='utf-8').read() for p in ('S23_', 'S24_')))
 
