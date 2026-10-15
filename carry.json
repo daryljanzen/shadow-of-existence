@@ -112,13 +112,6 @@
  },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
-   "receipts/L_probability/S29_the_high_call_is_refuted_again_and_the_low_mode_here_is_a_property_of_the_receipts_because_twenty_three_of_twenty_nine_cannot_take_the_verdict_at_all.py": {
-    "gates": [
-     "\u24ba\u2461"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38744099479",
-    "since": "c425cccae4b106f85be68fe6b289c3c2d75ffb18"
-   },
    "receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py": {
     "gates": [
      "\u24b7\u2460"
