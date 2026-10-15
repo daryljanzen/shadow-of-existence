@@ -40,6 +40,48 @@ EST = {
     #   residual and the damping-scale Gaussian) and the data-gated half (the fourth peak, where PO-47
     #   measured that the sky cannot discriminate).  GATED on a discriminating datum, which is why the
     #   generated view must show it as gated rather than as ordinary work.
+    'PO-91': ('whether the charts vantage-dependence encodes something physical about observation',
+        1, 0, 3, None,
+        'r7393: OPENED from the residue of 69s census. P2 raises it, declines it explicitly, and no row carried it. P2 '
+        'section Construction, not error: We note, and do not resolve here, that this is also where the construction '
+        'becomes most interesting rather than least. That two analytically identical metric singularities are charted '
+        'into a sharply asymmetric pair -- one passed through smoothly, one ringed with a divergent curvature invariant '
+        'and a chain of associated physical puzzles -- is not a defect to be discarded but a structural fact to be '
+        'understood: the geometry of the chart, and of the symmetry-reduction implicit in sweeping an asymmetric radial '
+        'profile about one of its endpoints, is doing work that the symmetric underlying structure alone does not '
+        'display. Whether that work is purely an artefact of the vantage, or whether the vantage-dependence itself '
+        'encodes something physical about how such geometries are observed, is a question this construction raises and '
+        'leaves open. This is NOT the perspectival-reading scope note P7 and P5 already carry: that is a scope note on '
+        'a claim the corpus makes, and this is the other direction, whether the charts asymmetry is itself carrying '
+        'physical content about observation. It is recorded at the weight P2 gives it -- a structural fact to be '
+        'understood, not a defect and not a debt -- so it may well terminate as a stated limit, but it OPENS, because a '
+        'question a paper raises and leaves open with no row is exactly what this phase exists to find and P7s '
+        'standing law gives it two fates only. Discharged by an account on which the sweeps asymmetry predicts '
+        'something about observation that the symmetric substrate alone does not, the optical additions of P7 being the '
+        'nearest existing instance of that shape. Terminates as a stated limit if the asymmetry is shown exhausted by '
+        'the chart, which is the likely exit on this corpuss own reading -- and the row exists so that it is reached '
+        'by argument rather than by nobody asking. '),
+    'PO-90': ('the skys selective suppression of l=2 alone against a floor that starves l=2 and l=3 together',
+        2, 0, 3, 'a measurement of the sectors own cosmic variance at the l=2-to-3 ratio',
+        'r7393: OPENED from the residue of 69s census, and it is the sharpest kind of item there is -- a measured '
+        'discrepancy against the sky that P15 states and no row carried. P15, in print: the structural expectation that '
+        'a single floor starves l=2 and l=3 together is therefore NOT relieved by the exact treatment, and the observed '
+        'skys selective suppression of l=2 alone, by a factor of order three, REMAINS UNACCOUNTED FOR. Why a row and '
+        'not a caveat: the constructions low-multipole deficit is a structural consequence of ONE floor, the lowest '
+        'physical mode fixed by Lambda through the present curvature radius, landing near l=8 with no power below it, '
+        'so it starves l=2 and l=3 TOGETHER -- and the sky suppresses l=2 ALONE. A floor cannot produce a selective '
+        'suppression of the lowest multipole relative to the next, so this is not a size to be refined but a shape the '
+        'construction does not produce. And the paper closes the escapes before stating it: the adiabatic worry is '
+        'measured and refused, the residual ratio running 0.926, 0.913, 0.901, 0.891, 0.889 and DECREASING with l, so '
+        'the discrepancy is smallest where the adiabaticity parameter is order unity and largest where it is small, the '
+        'opposite of an adiabatic error; the exact filter is uniformly slightly stronger, 4 per cent across a factor of '
+        'twenty in l and 1.4 per cent on the l=2-to-3 ratio -- one and a half per cent against a discrepancy of order '
+        'three hundred. Not to be confused with the sectors verdict: the low multipoles are a NON-DISCRIMINATING test, '
+        'and this row is not about whether the sector discriminates but about a shape the construction states it does '
+        'not produce. Discharged by a mechanism that suppresses l=2 relative to l=3, which the single floor cannot be, '
+        'or by the discrepancy being shown the skys own. Terminates as a RESULT if the selective suppression is within '
+        'cosmic variance at the level the sectors own Monte Carlo over 10^4 skies measures -- a measurement this '
+        'programme can take, which is why it is data-gated in part rather than blocked. '),
     'PO-89': ('the completion of the interacting towers definition, in three unlike parts',
         3, 0, 3, 'a datum off this background that separates the three dimension-six directions',
         'r7389: OPENED on PO-86s ruling of its item 7, and it corrects the second half of this seats own r7377 '
@@ -111,7 +153,24 @@ EST = {
         'both routes).  THE ROW OPENS SPLIT: the one-multipole shape residual and the damping-SCALE Gaussian that no '
         'tilt removes are workable now; the fourth-peak displacement is DATA-GATED, since a candidate there can be '
         'computed but not tested against this datum.  Saying which half is which is the distinction r7377 found the '
-        'register could not express.'),
+        'register could not express.'
+        'r7393: TWO NAMED, LOCATED, WORKABLE STEPS added from the residue of 69s census, both already quantified in '
+        'print and neither on any row until now. (1) WHICH TERM OF THE PROJECTION MAKES THE CONTRAST EXCESS. P18: the '
+        'same statistic reads 0.996 on the source at last scattering and 1.045 on the spectrum, so the excess is made '
+        'in the projection from wavenumber to multipole and not in the acoustic dynamics -- which term of the '
+        'projection makes it is the open computation. That is sharper than anything this row carried: the excess is '
+        'LOCATED, to one side of a named boundary, and what is open is which term inside it; and it narrows PO-56s '
+        'struck cannot-attribute without unstriking it, that row having been unable to attribute from the accounting '
+        'while this attributes from a statistic read at two places. (2) WHETHER THE RESIDUALS MODULATION LIES AT ell_A '
+        'AT ALL. P15: the residuals own period is not the combs, which is where this sectors open work now sits; the '
+        'fold is taken at ell_A by construction and nothing had asked whether that is where the modulation actually '
+        'lies. Fitted free over 240 <= p < 380 the unfitted arm prefers 312.0 on a one-sigma interval [308.5, 315.2] '
+        'that EXCLUDES ell_A=298 at delta-chi-squared 15.0, a +4.7 per cent offset, and freeing four parameters pulls '
+        'it to 307.3 without reaching ell_A. The control prefers a longer period too, 347, so preferring one is not by '
+        'itself this arms -- the part the paper is careful about and this row carries forward. Both are workable and '
+        'neither is data-gated, so they join the workable half beside the one-multipole shape residual and the damping- '
+        'scale Gaussian, and they sharpen it: the shape deficit now has a located carrier (the projection) and a '
+        'candidate period offset (the folds own ell_A). '),
     # ⛭ r7371: the coherence phase.  5 steps = the contradictions, P7, P18's frontier table, the
     #   seventeen unrowed items, and the gate that stops the drift recurring.  Not gated on anything:
     #   every ruling is a read of receipts and no part of it waits on PO-78 or on the Lean line.
@@ -371,7 +430,30 @@ EST = {
         'that is not their cand number, so a positional join would have mis-attached four fifths of the file and '
         'returned a clean-looking table. The line-up check passed: 257 re-extracted, 257 of 257 agreeing on paper, '
         'derived rather than assumed. RUNNING TALLY: 10 of 29 ruled, and the denominator is now known to be wrong, '
-        'which is worth more than the numerator. '),
+        'which is worth more than the numerator. '
+        'r7393: THE 92 ARE READ. FOUR are genuine stated-opens with no row; the other 88 are not open claims at all. So '
+        '69s census is incomplete at the margin and not in substance, and the denominator moves by four rather than by '
+        'ninety-two. The 88 by what they are, largest class first: open as a GEOMETRIC term, the open/flat/closed '
+        'trichotomy of spatial leaves, P8s three-constant-curvature-slicings section alone carrying most of them -- a '
+        'net built on the word open cannot tell an open problem from an open universe; remains in its ordinary sense; '
+        'the proof idiom it remains to check, which is the next step of an argument and not a frontier; CLOSURE '
+        'statements whose job is to say the opposite (resolved, not open; settled, not open; none of them an open case; '
+        'should not be mistaken for an open bracket); and section-level pointers. Which confirms cc66s refusal from '
+        'the other side with a fourth measurement: no word list defines this population -- 70 per cent of cc66s shaped '
+        'net false, 53 per cent of 69s net NOT-OPEN, and now 96 per cent of the laws own six words residue not an '
+        'open claim. The four: PO-90 opened on P15s observed skys selective suppression of l=2 alone by a factor of '
+        'order three, remains unaccounted for, against a floor that starves l=2 and l=3 together -- a shape the '
+        'construction states it does not produce, the adiabatic escape measured and refused; PO-91 opened on P2s we '
+        'note, and do not resolve here, whether the vantage-dependence itself encodes something physical about how such '
+        'geometries are observed; and two fold onto PO-87 as named workable steps, which term of the projection makes '
+        'the contrast excess (0.996 on the source against 1.045 on the spectrum, the excess located in the projection '
+        'and only which term open) and whether the residuals modulation lies at ell_A at all (period 312.0 on '
+        '[308.5,315.2], excluding 298 at delta-chi-squared 15.0). So the worklists denominator is 33 and not 29, and '
+        'the two rows it gained are sharper than most of the 29. The 39 census-OPEN paragraphs cc66s arm misses are '
+        'ordered back to it as item 10, classified by what the net missed, which is a fact about the instrument and so '
+        'is cc66s where these sentences were a reading and so were this seats. RUNNING TALLY: 10 of 33 ruled, 5 new '
+        'rows, 1 reopen, 2 stale maps brought current, 1 frontier item restored, 1 of this seats own rulings '
+        'corrected. '),
     'PO-10': ('the likelihood comparison, and which run it rests on', 1, 0, 3, None,
         'r6780: REOPENED. P15 sec:refit-bound reports both arms fitted over 215 bins with the same '
         'five parameters free in each, returning chi^2 = 397.13 against 206.44, 1.891 and 0.983 per '
@@ -9890,8 +9972,8 @@ KIND = {'PO-85': 'BUILD', 'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-86', 'PO-89', 'PO-88', 'PO-87', 'PO-24', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-89': 'C', 'PO-88': 'D', 'PO-87': 'D',
+ORDER = ['PO-86', 'PO-91', 'PO-90', 'PO-89', 'PO-88', 'PO-87', 'PO-24', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-91': 'E', 'PO-90': 'D', 'PO-89': 'C', 'PO-88': 'D', 'PO-87': 'D',
          'PO-86': 'F',  # ⛭ r7371: the coherence phase -- the register against the papers.
          # ⛭ r7371: PO-78 moved out of C, the quantum sector, which it never was -- it is the
          #   quote-pin instrument.  F is the programme's own record, and PO-86 is there too.
