@@ -19905,3 +19905,64 @@ demonstrations of one thing: ***no word list defines this population — not min
 ⇒ **Landing regardless, because they need no ruling: the three cheap exclusions, `272` → `212`.** *A
 section heading is not a claim.* **The adjudicated vocabulary is the remaining step and it is yours to
 authorise, because it spends human readings and `.47` ⒟ prices them at `325` against `1237`.**
+
+## `r7385+cc66.49` — **⑧'s three numbers: `129` already classed, ⛔ `92` RESIDUE, `39` the reverse ⇒ `69`'s census is NOT complete — and NEITHER IS MY ARM, which is the fairer statement**
+
+*Working in `computations/beyond_the_wall/r7385_cc66_the_residue/`. **The `92` are listed as
+`(paper, section, sentence)` in `residue.txt` for you to read**, per ⑧'s division of labour.*
+
+### ⒜ **⒜'s line-up check PASSES — and it was already run at `.46`**
+
+| | |
+|---|---|
+| census rows | `257` |
+| candidate paragraphs re-extracted from **this tree** | **`257`** |
+| `paper` column agreeing | **`257` of `257`** |
+
+*So this does not stop.* ⌗ *The `paper` agreement is independent, not assumed — you recorded it per
+candidate, the extraction derives it separately.*
+
+⛔ **The one trap, carried from `.46`: `items.tsv`'s rows are NOT in `cand` order — `205` of `257` sit
+at a position that is not their `cand` number.** *Joining by row position — the obvious way — would
+mis-attach your classifications to the wrong paragraphs for most of the file, silently. The join is on
+the `cand` VALUE.*
+
+### ⒝ **My population here is `221`, not `.48`'s `212`, and I am naming the `9` rather than quietly using the new number**
+
+| method | sites |
+|---|---|
+| `.48` — sentence-split the WHOLE paper | **`212`** |
+| here — sentence-split **EACH PARAGRAPH** | **`221`** |
+
+*The join is at paragraph level as ⑧ ⒝ words it, so the per-paragraph split is what this needs.*
+⌗ **The `9` are paragraph breaks that are not sentence breaks** — measured both ways side by side, not
+assumed. *`.48`'s `212` stands for `.48`'s method.*
+
+### ⒞ **THE THREE NUMBERS**
+
+| | |
+|---|---|
+| **① already classed by you** | **`129`** — `OPEN` `65`, `NOT-OPEN` `44`, `CHECK` `13`, `STALE` `3`, `POINTER` `2`, `DECLARED-NOT-OWED` `2` |
+| ⛔ **② THE RESIDUE, in no census item** | **`92`** |
+| **③ reverse — census `OPEN` my arm misses** | **`39`** |
+
+### ⒟ **⛭⛭ THE ANSWER TO WHAT YOU CALLED WORTH MORE THAN THE GATE**
+
+⇒ ⛔ ***`92` of `221` fall OUTSIDE the `257`. The worklist is SHORT.***
+
+⌗ ⛭ **And short in BOTH directions, which is the fairer statement: `39` census `OPEN` paragraphs my
+arm does not reach either.** ***Neither net is the population*** — the same conclusion `.47` and `.48`
+reached from two other directions, now with a third measurement and a number on each side.
+
+⛔ ***AND THE `92` ARE NOT `92` OPEN ITEMS.*** *`.47` put `70` per cent of a shaped net in one false
+class; `.48` found the law's own six carrying headings, closure claims and ordinary senses. **So the
+residue is `92` sentences for a reading, and the reading is yours** — "You build the instrument and
+report the population; I read the sentences."*
+
+### ⒠ **⑨ is AUTHORISED and NOT started: ⑧ was ordered to measure first and its residue is what you read next**
+
+*⒜ the mechanical reference arm, ⒝ the three cheap exclusions (landed at `.48`), ⒞ the ratcheting
+vocabulary baseline.* ⌗ **I am not building ⑨ on a population ⑧ has just shown to be short in both
+directions** — *the residue's `92` and the unreached `39` both bear on what the vocabulary seed should
+be, and spending the build before you read them would be the same mistake as spending the `212`
+readings before measuring the overlap.*
