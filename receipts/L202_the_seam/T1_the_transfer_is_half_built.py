@@ -82,6 +82,14 @@ def main():
     print()
     p15 = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
                                    encoding='utf-8', errors='replace').read())
+    # ⌗ r7355+cc66: the EMPHASIS-NORMALISED paper, for the two repaired spans whose
+    #   markup sits INSIDE them (60's r7255 prescription).  Bound from the path in one
+    #   expression rather than from `p15`, for the reason measured on `L548` this
+    #   revision: a haystack bound through another binding can leave the key UNDECIDED.
+    _p15u = re.sub(r'\\emph\{([^}]*)\}', r'\1',
+                   re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus',
+                                             'CR_cosmology.tex'),
+                                             encoding='utf-8', errors='replace').read()))
         # ** r2722: a STRUCK row's tag is `~~**PO-12**~~`.  *** A `startswith` on the unstruck
         # form raises StopIteration the moment the row closes -- so the record dies on the
         # corpus moving FORWARD, which is the one thing a record must survive. ***
@@ -110,23 +118,64 @@ def main():
     #                         build, not a plug-in" had to come to.
     check('⓵ the two-step debt is PAID: "The end-to-end branch-point-to-recombination transfer is run", '
           'three of P15\'s four named debts run',
+          # ⬭⬭ r7355+cc66 (HAND-OFF take 3: 70's receipt, r7353 ②), REPAIR of a DANGLING span
+          #   r7289+69 named: *** "`the four` and the quantifier subject `three` BOTH stand for
+          #   the four named debts, which are listed OUTSIDE the span." ***  Widened through the
+          #   list, so the span says which three are run.
+          #   ⌗ A markup carrier (`\emph{Of the four ...}`), so the haystack is
+          #     emphasis-normalised per 60's r7255 and the span kept whole.  Verified before
+          #     performing: ONCE there, once under `check_quote_pins._unmark`.
           'The end-to-end branch-point-to-recombination transfer is run} (\\S\\ref{sec:refit-bound})' in p15
-          and 'Of the four, three are run and one is a frontier' in p15)
+          and 'Of the four, three are run and one is a frontier: the end-to-end '
+              'branch-point-to-recombination transfer, the large-angle depth and the likelihood '
+              'are built and confronted below' in _p15u)
     check('and step ① is what it runs on: "carried on this cosmology\'s own background with the '
           'perturbations on the leaf congruence the framework assigns them"',
-          "carried on this cosmology's own background with the perturbations on the leaf congruence "
-          'the framework assigns them' in p15)
+          # ⬭ r7355+cc66, REPAIR of a DANGLING PARTICIPLE (r7289+69, ⓵): *"its subject, the
+          #   two-arm line-of-sight Boltzmann integral, is outside."*  Widened from the integral,
+          #   as prescribed -- which brings its definition inside the span too, so the check now
+          #   pins WHAT is carried on this cosmology's background rather than only that something
+          #   is.  ⌗ Verified: ONCE flattened, once under `_unmark`.
+          'a two-arm line-of-sight Boltzmann integral, '
+          '$\\Delta_\\ell(k)=\\int S\\,j_\\ell(k(\\eta_0-\\eta))\\,d\\eta$, carried on this '
+          "cosmology's own background with the perturbations on the leaf congruence the framework "
+          'assigns them' in p15)
     check('and the build no standard code could be plugged in for is VALIDATED against one on its '
           'control (C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation)',
-          'validated on its control to' in p15
+          # ⬭⬭ r7355+cc66, REPAIR of a DANGLING PARTICIPLE that was ALSO clipped before its own
+          #   figure -- r7289+69: *"a participle, TWO OCCURRENCES in P15, and clipped before its
+          #   figure (`$0.23\%$`).  Repair: from the integral it qualifies through the figure."*
+          #   ⇒ *** Both defects in one span: the subject is named and the number is inside, so
+          #     the check now pins the validation AND its tolerance where before it pinned neither
+          #     and could land on either of two places. ***
+          #   ⌗ Verified: ONCE flattened, once under `_unmark` -- against TWO for the fragment.
+          'the standard line-of-sight integral across a visibility of finite width, validated on '
+          'its control to $0.23\\%$ in the first-to-second height ratio' in p15
           and 'C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation' in p15)
 
     # ⓶ step ① is built
     check('⛭⛭ ⓶ and STEP ① IS BUILT: "That driving is computed below (\\S\\ref{sec:envelope}), and the '
           'calculation removes the licence the shortcut lacked: the envelope is derived on the collapse '
           'leg rather than imported."',
-          'That driving is computed below' in p15
-          and 'the envelope is derived on the collapse leg rather than imported' in p15)
+          # ⬭⬭ r7355+cc66, REPAIR of a DANGLING DEMONSTRATIVE (r7289+69, ⓶): *"`That driving` is
+          #   a demonstrative whose antecedent (the high-$\ell$ driving envelope) is in the
+          #   sentence before.  Repair: widen to the antecedent."*
+          #   ⌗ AND THE PRESCRIBED WIDENING IS NOT AVAILABLE AS WRITTEN, measured: the antecedent
+          #     (`the boost an expanding radiation era supplies`) sits **607 characters and three
+          #     sentence-ends upstream**, not in the sentence before -- two intervening sentences
+          #     are about the endpoint and the ratio of integrals.  A span reaching it would carry
+          #     three unrelated claims.
+          #   ⇒ *** What the widening CAN do is name the object inside the span, and it does: the
+          #     span now runs through `the envelope is derived on the collapse leg rather than
+          #     imported`, so a reader of the key knows which driving is meant. ***  ⌷ THE
+          #     DEMONSTRATIVE ITSELF IS NOT RESOLVED and that residual is FILED rather than
+          #     claimed closed -- the same disposition as `L560`'s `the same algebra`, and for the
+          #     same reason: the naming the rule wants is further away than any one span reaches.
+          #   ⌗ Markup carrier (the clause is `\emph{}`-wrapped); verified ONCE in the
+          #     emphasis-normalised paper and once under `_unmark`.
+          'That driving is computed below (\\S\\ref{sec:envelope}), and the calculation removes '
+          'the licence the shortcut lacked: the envelope is derived on the collapse leg rather '
+          'than imported' in _p15u)
     check('with the same object named: "the same geometric stacking rate that enlarges $r_{D}$ also governs '
           'the high-$\\ell$ driving envelope"',
           'e handover that fixes $r_D$ also governs the high-$\\ell$ driving envelope' in p15)
@@ -147,10 +196,24 @@ def main():
     #   owed; the check pins the finding.
     check('so what the transfer was to isolate -- the tilt-irreducible residual -- it has isolated: '
           '"a Gaussian residual in $\\ell$ that no tilt removes"',
-          'located by the joint fit as a Gaussian residual in $\\ell$ that no tilt removes' in p15)
+          # ⬭ r7355+cc66, REPAIR of a DANGLING PARTICIPLE (r7289+69, ⓵): *"the subject, `the
+          #   diffusion-scale signature it carries is`, is outside."*  Widened from the subject,
+          #   as prescribed.  ⌗ Verified: ONCE flattened, once under `_unmark`.
+          'the diffusion-scale signature it carries is located by the joint fit as a Gaussian '
+          'residual in $\\ell$ that no tilt removes' in p15)
 
     # the row
-    check("⌗ and the PO-12 row carries the debt but not the split", 'debt' in row.lower())
+    # ⬭⬭ r7355+cc66, REPAIR of a PROXY ON A LIVE REGISTER ROW -- r7289+69: *** "the token is
+    #   read inside PO-12's row, which has been EDITED SINCE this receipt (struck at r2702), so
+    #   the line exemption does not apply; and `debt` stands for the claim that the row carries
+    #   it." ***  ⌗ And the read was case-folded on a four-letter word, so it would match `debt`,
+    #   `DEBTS`, `indebted` -- anything in a 400-character row.
+    #   ⇒ The row's own strike clause instead, which says what the row NOW records and is the
+    #     thing this check is reading it for.
+    #   ⌗ Verified before performing: ONCE in the flattened register, once under `_unmark`.
+    check("⌗ and the PO-12 row carries the debt but not the split",
+          'STRUCK r2702 — THE DEBT IS DISCHARGED, WITH ONE CLAUSE RELOCATED.'
+          in re.sub(r'\s+', ' ', row))
 
     print()
     if FAILED:

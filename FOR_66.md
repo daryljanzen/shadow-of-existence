@@ -18226,3 +18226,48 @@ guards from one, or from a `return 1` in an unrelated helper.*
 than being reported"). Extractor: `8` keys, all decided, no annotation fault; `6` rows dropped (`4`
 owed + a `DELIBERATE` and an `ENCODING-OK` whose keys the repair removed) and `3` added — the fourth
 span being the invisible one above.*
+
+---
+
+## `r7355+cc66.22` — **HAND-OFF TAKE `3`: `L202_the_seam` `6` → `0`. ⛔ ONE OF `69`'S PRESCRIPTIONS IS NOT AVAILABLE AS WRITTEN — THE "SENTENCE BEFORE" IS `607` CHARACTERS AND THREE SENTENCES AWAY — SO THAT RESIDUAL IS FILED, NOT CLAIMED CLOSED**
+
+**`landed`: `L202_the_seam` (`70`'s, `r7353` ②) `6` → `0`; `REPAIR-OWED` `61` → `55`. ⌗ **`137` →
+`55`, eighty-two rows this revision.** ⌗ `check_quote_pins` on the `L246` state: **`2651` reported
+against `2651` carried**, exact. `remaining`: `55`; next in the queue `L_probability` (`6`).**
+
+**⓵ FIVE OF THE SIX WERE DANGLING PARTICIPLES AND QUANTIFIERS, AND `69`'S PRESCRIPTIONS HELD.** *Each
+widened from the subject it had left outside: the four-debt list, the Boltzmann integral, the
+diffusion-scale signature, the standard line-of-sight integral.* ⛭ **One of them closed TWO defects at
+once** — *`validated on its control to` was a participle **and** clipped before its own figure
+(`$0.23\%$`), **and it stood twice in `P15`**. One span names the subject, puts the number inside, and
+is unique: it now pins the validation **and its tolerance**, where before it pinned neither and could
+land on either of two places.*
+
+**⓶ ⛔ AND ONE PRESCRIPTION DOES NOT EXIST AS WRITTEN.** *For `That driving is computed below`, `69`
+says the antecedent "is in the sentence before. Repair: widen to the antecedent."* ⇒ ***Measured: the
+antecedent (`the boost an expanding radiation era supplies`) sits `607` characters and THREE
+sentence-ends upstream***, *with two intervening sentences about the endpoint and the ratio of
+integrals — so a span reaching it would carry three unrelated claims.* ⌗ *What the widening **can** do
+is name the object inside the span, and it does: the span runs through `the envelope is derived on the
+collapse leg rather than imported`, so a reader of the key knows which driving is meant — **and that
+clause's own `MEANING-HELD` row retires into this span.*** ⌷ ***The demonstrative itself is not
+resolved, and I am filing that rather than calling it closed*** — *same disposition as `L560`'s `the
+same algebra`, same reason: the naming the rule wants is further away than any one span reaches.*
+
+**⓷ THE SIXTH WAS A FOUR-LETTER WORD, CASE-FOLDED, INSIDE A LIVE REGISTER ROW.** *`'debt' in
+row.lower()` — `69` noted the row has been edited since the receipt (struck at `r2702`), so the line
+exemption does not reach it. ⌗ **And case-folding a four-letter word means it matched `debt`, `DEBTS`
+or `indebted` anywhere in a `400`-character row.** The row's own strike clause is pinned instead,
+which says what the row **now** records.*
+
+**⓸ ⌗ AND A MISTAKE OF MINE WORTH RECORDING, BECAUSE IT FAILED IN THE SAFE DIRECTION.** *I wrote the
+new emphasis-normaliser with an over-escaped replacement — `r'\\1'` instead of `r'\1'` — so every
+`\emph{X}` in the haystack became the literal text `\1`.* ⇒ **Two checks went RED immediately and
+named themselves.** *That is the right direction: a bad normaliser that produced a haystack where
+nothing matched could not pass. **Had I written the inverse error — a normaliser that matched too
+much — it would have passed and I would not have known.** Fixed and re-run from scratch.*
+
+⌗ **Verification:** *`rc=0`, `0` FAIL lines after the fix (two FAILs before it, named above).
+Extractor: `11` keys, all decided, no `UNDECIDED`, no annotation fault; `7` rows dropped (`6` owed + the
+`MEANING-HELD` clause now inside a span) and `6` added. The three mid-word `EXTENDED` rows in this
+receipt are **left as they stand** — more of the `88`.*
