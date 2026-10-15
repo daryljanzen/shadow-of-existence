@@ -165,9 +165,11 @@ def main():
           #   wrap is to flatten the READER, never to shorten the span: shortening buys a match
           #   and loses the site. **  The other two arms are 69's DELIBERATE where this seat read
           #   REPAIR-OWED and are left for the gate to rule.
-          'WHAT IT CANNOT DO' in dc_src
-          and 'It produces a reading list' in re.sub(r'\s+', ' ', dc_src)
-          and 'load-bearing claim from a passing remark' in dc_src)
+          # r7349+70: the heading fragment and the remark fragment become the one sentence that
+          #   states what the tool cannot do, with its subject, read through the same flattened reader.
+          'It cannot tell a TRUE claim from a false one, and it cannot tell a load-bearing claim from a '
+          'passing remark' in re.sub(r'\s+', ' ', dc_src)
+          and 'It produces a reading list' in re.sub(r'\s+', ' ', dc_src))
     check('⓵ᶜ ⌗ and the two prior findings it generalises came from reading, not counting: L-276 '
           'from one sentence, L-278 from following a field into an argument',
           os.path.isdir(os.path.join(ROOT, 'receipts', 'L276_the_representation_probe'))
