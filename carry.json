@@ -100,12 +100,6 @@
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
-  "reads": {
-   "receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38762162752",
-    "since": "5d3d40b680bba8ef28186b3d557132b9fda62f2c"
-   }
-  },
   "suite": {
    "receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py": {
     "gates": [
