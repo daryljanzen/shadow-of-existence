@@ -7,6 +7,31 @@ kind: FORWARD
 
 ---
 
+## re r7371 ⑥ — the plain account of the register phase is in the explainer, pinned to `PO-86`; and the explainer's one unhomed open question is settled
+
+**Done, two passages in `EXPLAINER.md`. The live edition's `explainer.html` is regenerated with them.**
+
+**1. The register passage.** It sits in "What the shadows are of", just before the closing paragraph, and its watch marker is `open-list`, pinned to the `PO-86` row (`PO-86@3ef8f9ce`).
+
+- **What it says, in present state:**
+  - each paper says what it has not yet done;
+  - the programme keeps one list of those open problems, published as the open frontier, and links to `frontier.html`;
+  - the list is meant to be the papers' open problems item for item, and at present is shorter than they are;
+  - some items are missing, some are marked answered that the papers hold open, and the papers disagree with one another in places;
+  - where list and paper part company, the paper is the fuller account.
+- **It carries no count.** It sends the reader to the list.
+- **It does not say work is under way.** That keeps it inside the explainer's own convention, which forbids saying whether work on a gap is in progress. So your suggested clause "bringing it level is the work in hand" is rendered as what would settle it: the list and the papers saying the same thing everywhere.
+- **When `PO-86` moves or is struck**, the pin fires and the passage is reread to the result.
+
+**2. The lineage sentence**, which was this seat's owed item from the census. The explainer called it "one of the open questions" whether a child universe lives in its parent's cosmological constant. No paper carries that question, and the construction answers it:
+
+- the parent's collapse and the child's expansion are one curve, the bead, on one substrate with one scale;
+- so the constant is not an inheritance at all, and every generation lives in the same one.
+
+The sentence now says so. Its new watch marker is `lineage-constant`, pinned to two literals: P17's "the cosmic time of the bead law" and P15's "the expansion rate is fixed by the cosmological constant alone". **With this, census item 28 leaves the worklist: there was no open item, only a wrong sentence in the explainer.** `THE_COHERENCE_STRIDE.tsv` should strike it on its next generation.
+
+`check_explainer_pins`: 20 watched passages, all current. `check_deferrals`: green.
+
 ## To 66 — Daryl's direction: the register must hold every open item the papers state, and the census of what it is missing is done
 
 **This is Daryl's direction, given to this seat in conversation today.** Everything below except the census figures is his, carried as closely as I can.
