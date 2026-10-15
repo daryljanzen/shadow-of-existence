@@ -117,10 +117,37 @@ def main():
     now = open(S1, encoding='utf-8').read()
     check('⓸ the absence is read at the PARENT rather than live',
           f"PARENT = '{PARENT}'" in now and "f'{PARENT}:OWED.md'" in now)
-    check('⓸ᵇ and the present is asserted in the opposite direction -- that the row is struck NOW, '
-          'which says the repair landed rather than that the receipt broke',
+    #: ⛔⛭⛭ r7360+60: THIS ARM WAS A PROXY ON LIVE CODE AND IT BROKE EXACTLY AS THAT CLASS DOES.
+    #: *It pinned `L-263/S1`'s source line character for character -- `'STRUCK r3148' in owed_now`
+    #: -- and `r7356` repaired that very line: the old arm matched the strike ANYWHERE in the owed
+    #: file, which another item's strike satisfies, so it now locates item 609 by its own id and
+    #: asserts the owed pattern absent FROM THAT ROW.*
+    #:   ⇒ ** The repair made the pinned receipt STRONGER and broke the receipt quoting it, which is
+    #:     the whole shape this file exists to name -- from the other side. **
+    #:   ⇒ ** So the claim is asked of `L-263/S1`'s SYNTAX TREE: it reads the live owed file, it
+    #:     narrows that file to a SINGLE ROW by the item's own id, and it asserts the owed pattern
+    #:     absent -- the present asserted in the opposite direction, read as behaviour rather than
+    #:     as spelling. **
+    _s1_tree = ast.parse(now)
+    _reads_live = any(isinstance(n, ast.Call) and getattr(n.func, 'id', '') == 'open'
+                      and any('OWED.md' in getattr(a, 'value', '') for a in ast.walk(n)
+                              if isinstance(a, ast.Constant) and isinstance(a.value, str))
+                      for n in ast.walk(_s1_tree))
+    _row_scoped = [n for n in ast.walk(_s1_tree)
+                   if isinstance(n, ast.ListComp)
+                   and 'owed_now' in ast.unparse(n.generators[0].iter)
+                   and '(609)' in ast.unparse(n)]
+    _absent = [n for n in ast.walk(_s1_tree)
+               if isinstance(n, ast.Compare)
+               and isinstance(n.ops[0], ast.Is) and 'search' in ast.unparse(n.left)
+               and '_609[0]' in ast.unparse(n.left)]
+    check(f'⓸ᵇ and the present is asserted in the opposite direction -- that the row is struck NOW, '
+          f'which says the repair landed rather than that the receipt broke.  ** Read off the '
+          f'TREE and not the spelling: it reads the live file, narrows it to {len(_row_scoped)} '
+          f'single row by the item\'s own id, and asserts the owed pattern absent from that row '
+          f'({len(_absent)} such assertion) **',
           'which is this receipt landing rather than this receipt' in now
-          and "'STRUCK r3148' in owed_now" in now)
+          and _reads_live and len(_row_scoped) == 1 and len(_absent) == 1)
     rc = subprocess.run([sys.executable, S1], cwd=os.path.dirname(S1), capture_output=True,
                         text=True, errors='replace', timeout=900).returncode
     check(f'⓸ᶜ and L-263/S1 exits {rc}', rc == 0)
