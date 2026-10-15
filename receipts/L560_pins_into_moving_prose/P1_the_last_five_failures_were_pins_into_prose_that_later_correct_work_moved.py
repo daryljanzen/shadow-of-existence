@@ -99,6 +99,50 @@ def src(rel):
     return open(os.path.join(RD, rel), encoding='utf-8', errors='replace').read()
 
 
+#: ⛭⛭ r7358+60, THE HAND-OFF QUEUE, L560: THREE PINS INTO MOVING PROSE REPAIRED BY THE READER AND BY
+#: WIDENING, and the irony is the file's own: *the receipt about pins that die of correct work pinned
+#: three spans that could not carry their claims.*  ** Two were markup carriers ** -- one span wholly
+#: inside `\emph{...}`, one opening on a prepositional tail and closing on a `\rcpt{}` marker with the
+#: brace that ends the emphasis -- ** and one was an anaphor **, 'the same algebra', whose referent and
+#: whose condition both sat outside the span.
+#:   ⇒ `r7258`'s settled form, extended: ** the markup is normalised in the READER ** -- emphasis
+#:     unwrapped, and `\ldg`/`\rcpt`/`\cite` markers stripped together with the `~` that binds them --
+#:     ** and the span is the WHOLE CLAIM **, never split to dodge a brace.
+#:   ⇒ ** And the citation tie is asserted by POSITION, not quoted. **  Each stripped marker's NAME is
+#:     kept with the offset it sat at in the stripped text, so 'this clause is cited to `X1`' is a
+#:     claim about where the marker SITS -- which is what the claim is -- instead of a quotation of a
+#:     fragment glued to a marker, which is what the old span was.
+_EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+_MARK = re.compile(r'~?\\(?:ldg|rcpt|cite[a-z]*)\{([^{}]*)\}')
+
+
+def read_tex(name):
+    """the paper, flattened, emphasis unwrapped and apparatus markers stripped; returns the text and
+    the (offset, cited-name) of every marker removed, so a citation can be tied to a pinned span by
+    where it sat rather than by being quoted inside it."""
+    t = flat(open(os.path.join(ROOT, 'corpus', name), encoding='utf-8', errors='replace').read())
+    for _ in range(4):
+        t, prev = _EMPH.sub(r'\1', t), t
+        if t == prev:
+            break
+    out, marks, last, pos = [], [], 0, 0
+    for m in _MARK.finditer(t):
+        out.append(t[last:m.start()])
+        pos += m.start() - last
+        marks.append((pos, m.group(1)))
+        last = m.end()
+    out.append(t[last:])
+    return ''.join(out), marks
+
+
+def cited_in(text, marks, span):
+    """the names of the markers sitting inside `span` where it occurs in `text`."""
+    i = text.find(span)
+    return [] if i < 0 else [n for p, n in marks if i <= p <= i + len(span)]
+
+
+
+
 def flat(s):
     return re.sub(r'\s+', ' ', s)
 
@@ -127,10 +171,28 @@ def main():
                             os.path.join(ROOT, 'corpus', '*.tex')))
                         if not os.path.basename(f).startswith('appendix_receipts')))
     p12_then = flat(git('show', 'eda3ad7:corpus/algebroid_paper.tex'))
-    check('⓶ N1: "Lovelock" occurs 0 times in P12 at eda3ad7 (r2515, its own build) and is present '
-          'now -- the fork\'s c54.202 added it',
+    # ** r7358+60: the live arm was 'the same algebra closes for the Lovelock theories' -- an ANAPHOR.
+    #    'the same algebra' names nothing, and the condition the claim needs ('That forcing is
+    #    dimension-dependent') sat outside the span, so a reword of either end left the pin standing
+    #    while the claim went.  ⇒ TWO whole clauses, markup normalised in the reader: the one that
+    #    NAMES the algebra, and the one that carries the finding with the forcing named in it -- and
+    #    the anaphor's referent pinned by asserting the ORDER they stand in. **
+    _p12_live, _p12_marks = read_tex('algebroid_paper.tex')
+    _ALGEBRA = 'deformations of a spatial hypersurface generate an algebra'
+    _LOVELOCK = ('requiring a canonical representation of them on $(g_{ij},\\pi^{ij})$ alone recovers '
+                 'the Einstein Hamiltonian. That forcing is dimension-dependent: the same algebra '
+                 'closes for the Lovelock theories, which coincide with general relativity only in '
+                 'four dimensions.')
+    check('⓶ N1: "Lovelock" occurs 0 times in P12 at eda3ad7 (r2515, its own build) and the sentence '
+          'is present now -- the fork\'s c54.202 added it: the clause that NAMES the algebra and the '
+          'clause that says the same algebra closes for the Lovelock theories, each occurring once '
+          'with the markup normalised in the reader, and the naming clause standing FIRST so the '
+          'anaphor has its referent',
           'Lovelock' not in p12_then
-          and 'the same algebra closes for the Lovelock theories' in live)
+          and _ALGEBRA in _p12_live and _p12_live.count(_ALGEBRA) == 1
+          and _LOVELOCK in _p12_live and _p12_live.count(_LOVELOCK) == 1
+          and _p12_live.find(_ALGEBRA) < _p12_live.find(_LOVELOCK)
+          and 'TeitelboimZanelli1987' in cited_in(_p12_live, _p12_marks, _LOVELOCK))
     p0_then = flat(git('show', 'aa2b6ee:corpus/geometric_core_paper.tex'))
     # ** r6931+70.1: RE-POINTED, class (b) DISCHARGED -- and at what discharged it. **  The c54.179
     #    split sentence ("The item has two sides and they now stand differently, so it is split rather
@@ -145,6 +207,18 @@ def main():
     _p0_live = flat(open(os.path.join(ROOT, 'corpus', 'geometric_core_paper.tex'),
                          encoding='utf-8', errors='replace').read())
     p0_split = flat(git('show', '2af0b0b3:corpus/geometric_core_paper.tex'))
+    # ** r7358+60: the datum side was pinned twice and neither span could carry it.  '\\emph{On the
+    #    datum side}' is a VERBLESS heading whose clause sat outside it, and the second span opened on
+    #    the prepositional tail 'for want of work' and closed on a `\\rcpt{}` marker plus the brace that
+    #    ended the emphasis -- a markup carrier, `r7258`'s case.  ⇒ ONE span, the whole closure: the
+    #    datum side named, the ratio named, what it IS stated, and what cannot be derived from what --
+    #    with the emphasis unwrapped and the marker stripped in the reader, and the X1 citation
+    #    asserted by the position it sat at rather than quoted as part of the prose. **
+    _p0_norm, _p0_marks = read_tex('geometric_core_paper.tex')
+    _DATUM_SIDE = ('On the datum side, $\\rho_r/\\rho_m$ is a matter initial condition and not a '
+                   'constant, so it is not in the geometric residue at all, and it is a clock reading '
+                   'rather than a datum a handover transmits. It cannot be derived from the progenitor '
+                   'collapse, for a structural reason rather than for want of work.')
     check('⇒ U1/U3: p0 read "Reach: stated as a target, not a result" at aa2b6ee; the fork\'s c54.179 '
           '(2af0b0b3) split it -- "two sides and they now stand differently" -- and the item now reads '
           '"The test has two sides, and each has been run", the datum side closed at X1',
@@ -152,8 +226,9 @@ def main():
           and 'item has two sides and they now stand differently' in p0_split
           and 'e one fact.\'\' \\emph{The test has two sides, and each has been run.}' in _p0_live
           and '\\emph{On the constant side}, \\S\\ref{sec:ledger} states that the gravitational--cosmological--quantum sector spends \\emph{n' in _p0_live
-          and '\\emph{On the datum side}' in _p0_live
-          and 'for want of work}\\rcpt{X1_the_ratio_is_a_clock_reading_not_a_carried_datum}' in _p0_live
+          and _DATUM_SIDE in _p0_norm and _p0_norm.count(_DATUM_SIDE) == 1
+          and 'X1_the_ratio_is_a_clock_reading_not_a_carried_datum'
+              in cited_in(_p0_norm, _p0_marks, _DATUM_SIDE)
           and 'Reach: stated as a target, not a result' not in live)
     p7_then = flat(git('show', 'e8e58cf:corpus/CR_framework.tex'))
     seg_then = p7_then[p7_then.find('\\section{Frontiers and open problems}'):]
