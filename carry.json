@@ -87,12 +87,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38697273015",
     "since": "62cb1dc62743e25ac60fdd3e63cc33dc37579b8d"
    }
-  },
-  "tolerance": {
-   "receipts/L268_broken_by_its_own_edit/O1_a_receipt_that_asserts_a_state_its_own_revision_changes_is_false_when_committed.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38682447812",
-    "since": "65a82a1d83375ca519b8ae476e9a076f4873cfdd"
-   }
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
