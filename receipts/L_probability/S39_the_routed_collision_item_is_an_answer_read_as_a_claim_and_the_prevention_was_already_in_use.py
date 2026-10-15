@@ -84,6 +84,29 @@ SESSIONS = {
 }
 _SESS_RE = __import__('re').compile(r'^Claude-Session:\s*(\S+)', __import__('re').M)
 _UNREACHED = []
+_SAME_LINE_DISAGREED = []
+
+
+# ⛔⛭⛭⛭ r7370, SECOND PASS -- ** AND THE FIRST REPAIR MISSED HALF THE CLAUSE. **  *`session_of`
+#   below took the marker off the commit instead of out of the walked map, and `Ⓑ①` ALSO calls
+#   `G._same_line` twice -- which reads that same map, and whose fallback when the map is empty is
+#   `merge-base --is-ancestor` plus a first-parent walk.  **Both branches need the objects present,
+#   so on a shallow clone the test returns False either way and the clause stayed red on the runner
+#   while passing here.**  Caught by reading CI's record on the head that carried the first repair.*
+#   ⇒ *** One clause, two readers of one map, and repairing the one I had measured left the other.
+#       The lesson is `r7368`'s with the sign flipped: a fix verified where the defect does not
+#       reproduce verifies nothing about where it does. ***
+#   ⌊ *`same_line` is computed from the markers this file COMMITS -- the instrument's own rule, that
+#     one session is one line whatever the merge shape -- and where the objects ARE reachable the
+#     local verdict is CHECKED against the instrument's, so the two cannot drift apart unnoticed.*
+def same_line(a, b):
+    """one line's span, from the markers committed here: one session is one line, which is the
+    instrument's own rule -- checked against the instrument wherever this clone can run it."""
+    _local = session_of(a) == session_of(b)
+    if a not in _UNREACHED and b not in _UNREACHED:
+        if G._same_line(a, b, ROOT) != _local:
+            _SAME_LINE_DISAGREED.append((a, b))
+    return _local
 
 
 def session_of(sha):
@@ -148,11 +171,13 @@ for _rev, (_ans, _own) in PAIRS.items():
     _sa = session_of(_ans)
     _so = [session_of(s) for s in _own]
     _shape[_rev] = (bool(_sa) and all(_so) and _sa not in _so and len(set(_so)) == 1,
-                    G._same_line(_own[0], _own[1]),
-                    not G._same_line(_ans, _own[0]) and not G._same_line(_ans, _own[1]))
+                    same_line(_own[0], _own[1]),
+                    not same_line(_ans, _own[0]) and not same_line(_ans, _own[1]))
     print(f'      {_rev}: answering session differs from the ordering line\'s {_shape[_rev][0]}; '
           f'the ordering line\'s two commits are ONE line {_shape[_rev][1]}; '
           f'the answer is NOT that line {_shape[_rev][2]}')
+print(f'      the local same-line verdict against the instrument\'s, where this clone can run it: '
+      f'{len(_SAME_LINE_DISAGREED)} disagreement(s)')
 print(f'      the pinned commits this clone does not reach: {len(_UNREACHED)} of '
       f'{len(SESSIONS)} -- REPORTED, and where it does reach one the stored marker is CHECKED '
       f'against what the commit says rather than trusted')

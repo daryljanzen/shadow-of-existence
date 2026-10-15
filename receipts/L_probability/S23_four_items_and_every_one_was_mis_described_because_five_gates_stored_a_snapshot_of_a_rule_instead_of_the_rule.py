@@ -570,7 +570,25 @@ gate('Ⓖ④ ⛭⛭ the one-state rule, in the only form a gate can check: no na
      and _NARRATION.search(_CONTROL) and _CONTROL not in p18 and _CONTROL not in p16)
 
 _log = _git('log', '--no-merges', '--format=%H\t%s', BEFORE + '..HEAD').split('\n')
-_own = [l.split('\t')[0] for l in _log if '\t' in l and 'r7266' in l.split('\t', 1)[1]]
+# ⛔⛭⛭⛭ r7370: ** THE SELECTOR MATCHED A REVISION ID AGAINST COMMIT SUBJECTS, WHICH SELECTS EVERY
+#   COMMIT WHOSE SUBJECT NAMES IT. **  *The corpus's convention is to cite revisions by number in
+#   every message, so a later revision writing ABOUT this one enters its commit set.  `S29` carried
+#   the identical form and went red when another seat's commit cited `r7290` and touched two
+#   receipts.*
+#   ⌈ *And this one is ALREADY over-resolving: the match returns `11` where the revision has `9`,
+#     and both extras are OTHER SEATS' -- `r7267+70.1`'s port of this seat's receipt and `r7267`'s
+#     orders, each citing `r7266` in its subject.  **A gate about THIS seat's scope was counting
+#     another seat's commits as this seat's, which is the unsafe direction.** *
+#   ⇒ *** The commits of a revision are a historical fact and are PINNED.  The id match is kept
+#       beside them as the CONTROL: it must still return at least the pinned list, so the pin cannot
+#       quietly become the match again. ***
+OWN_C = ('0704573d', '6d600151', '9c4dd4a4', '53122214', 'e7f431c6', 'dcef045c', '67d74800', '6f0dd852', 'c261d5bb')
+_own = [c for c in OWN_C if _git("cat-file", "-t", c).strip() == 'commit']
+assert len(_own) == len(OWN_C), f'{OWN_C} do not all resolve in this clone'
+_matched = [l.split('\t')[0] for l in _log if '\t' in l and 'r7266' in l.split('\t', 1)[1]]
+print(f'      the pinned commits: {len(_own)};  what the id match in the subject returns: {len(_matched)} -- REPORTED, and the control below')
+assert all(any(m.startswith(x) for m in _matched) for x in _own), (
+    'the id match no longer returns the pinned commits: the pin and the control have come apart')
 _changed = sorted({f for sh in _own for f in
                    _git('diff-tree', '--no-commit-id', '--name-only', '-r', sh).split()})
 _tex = [f for f in _changed if f.startswith('corpus/') and f.endswith('.tex')

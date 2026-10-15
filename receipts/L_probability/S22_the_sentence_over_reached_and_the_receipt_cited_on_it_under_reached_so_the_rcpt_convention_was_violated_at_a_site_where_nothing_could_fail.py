@@ -366,7 +366,23 @@ gate(f'Ⓕ② ⛭⛭ the one-state rule, in the only form a gate can check: not 
 #   written to answer the second of them.***
 _log = subprocess.run(['git', 'log', '--no-merges', '--format=%H\t%s', BEFORE + '..HEAD'],
                       cwd=ROOT, capture_output=True, text=True).stdout.split('\n')
-_own = [l.split('\t')[0] for l in _log if '\t' in l and 'r7264' in l.split('\t', 1)[1]]
+# ⛔⛭⛭⛭ r7370: ** THE SELECTOR MATCHED A REVISION ID AGAINST COMMIT SUBJECTS, WHICH SELECTS EVERY
+#   COMMIT WHOSE SUBJECT NAMES IT. **  *The corpus's convention is to cite revisions by number in
+#   every message, so a later revision writing ABOUT this one enters its commit set.  `S29` carried
+#   the identical form and went red when another seat's commit cited `r7290` and touched two
+#   receipts.*
+#   ⌗ *Here the match returns exactly this revision's `3` and no more TODAY -- so this is the
+#     fragility repaired before it fires, which is the only time it is cheap.*
+#   ⇒ *** The commits of a revision are a historical fact and are PINNED.  The id match is kept
+#       beside them as the CONTROL: it must still return at least the pinned list, so the pin cannot
+#       quietly become the match again. ***
+OWN_C = ('64a24860', '53644c16', '302ab941')
+_own = [c for c in OWN_C if subprocess.run(["git", "cat-file", "-t", c], cwd=ROOT, capture_output=True, text=True).stdout.strip() == 'commit']
+assert len(_own) == len(OWN_C), f'{OWN_C} do not all resolve in this clone'
+_matched = [l.split('\t')[0] for l in _log if '\t' in l and 'r7264' in l.split('\t', 1)[1]]
+print(f'      the pinned commits: {len(_own)};  what the id match in the subject returns: {len(_matched)} -- REPORTED, and the control below')
+assert all(any(m.startswith(x) for m in _matched) for x in _own), (
+    'the id match no longer returns the pinned commits: the pin and the control have come apart')
 _changed = sorted({f for sh in _own for f in subprocess.run(
     ['git', 'diff-tree', '--no-commit-id', '--name-only', '-r', sh],
     cwd=ROOT, capture_output=True, text=True).stdout.split()})
