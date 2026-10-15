@@ -168,13 +168,22 @@ def solve(om, lam, sgn, XR, tail=0.0):
 
 
 
-def _flat_at(rev):
-    """`geometric_core_paper.tex` at a revision, flattened the way `flat()` flattens it."""
+def _flat_at(rev, path='corpus/geometric_core_paper.tex'):
+    """a corpus paper at a revision, flattened the way `flat()` flattens it
+
+    ⬭ r7355+cc66: the `path` argument is added for `L-249`'s rule below, which needs
+    `matter_sector_paper.tex` at a named commit as well.  The default keeps every existing
+    call site reading the same file it read before.
+    """
     import re as _re
     import subprocess as _sp
     return _re.sub(r'\s+', ' ', _sp.run(
-        ['git', 'show', f'{rev}:corpus/geometric_core_paper.tex'],
+        ['git', 'show', f'{rev}:{path}'],
         cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
+
+
+#: r7266-era commits are no longer the latest; this is the most recent commit to touch P14
+P14_PIN = '593fe7ba8'
 
 
 def main():
@@ -223,6 +232,50 @@ def main():
     _after = _flat_at(_DISAMB)
     _SENT = 'the full \\emph{propagating} spinor field sector (the built modes being leaf-bound, not '\
             'the propagating theory)'
+    # ⬭⬭ r7355+cc66, THE MARKUP-CARRIER REPAIR, by 60's prescription at r7255 (`S19...:25`):
+    #   *** "normalise the emphasis out of the HAYSTACK and keep the span WHOLE." ***  Two of this
+    #   file's owed rows carry `\emph{propagating}` INSIDE the pinned span, so the pin breaks on any
+    #   re-typesetting that keeps the meaning -- and the re-typesetting is the likely edit, because
+    #   emphasis is what a copy-edit moves.
+    #   ⌗ AND 60 NAMED THE COST, so it is repeated rather than discovered later: a markup-normalised
+    #     key reads as ZERO sites in the raw file and can never be flagged `MULTI`.  That is accepted
+    #     here for the same reason as the thirteen landed at r7351: an unflaggable key that cannot
+    #     break beats a flaggable one that breaks on a copy-edit.
+    #   ⌷ `_SENT` ITSELF IS LEFT ALONE WHERE IT IS READ AT A NAMED COMMIT.  69's r7347-cycle
+    #     amendment to THE_RULE -- "the floor does not apply when the file is read at a named
+    #     commit" -- is the whole answer for the two pinned arms: a fixed commit has no later
+    #     re-typesetting, so there is nothing for the normaliser to protect against.  Only the LIVE
+    #     arm needs it, and the live arm is an ABSENCE test, which is the direction that goes
+    #     vacuous: markup moves, the span stops matching, `not in` passes for the wrong reason.
+    #   ⛔⛭ AND THE NORMALISED HAYSTACK IS BOUND FROM THE PATH, NOT FROM `p0`.  TWO WRONG
+    #     FORMS AND TWO WRONG DIAGNOSES CAME FIRST, AND BOTH ARE RECORDED BECAUSE THE SECOND
+    #     ONE WOULD HAVE READ AS A FINDING.
+    #     ⓐ `_unemph = lambda s: ...` applied to `p0` -- both spans filed **UNDECIDED** and the
+    #       instrument printed two `[TARGET-ANNOTATION][MISSING]` lines.  Diagnosed as the
+    #       lambda: the narrow trace follows plain assignments and does not enter one.
+    #     ⓑ The plain `re.sub(..., p0)` -- *the same two UNDECIDED keys and the same two MISSING
+    #       lines.*  So the lambda was not the cause.  Diagnosed next as the hop budget
+    #       (`visit(r, False, False, 2, ...)`), `p0` having spent a hop inside `flat()`.
+    #     ⓒ *** AND THAT WAS WRONG TOO, and this file already held the refutation: ***
+    #       `whereas in the conserved spacetime Dirac norm the same static mode is not` is read
+    #       DIRECTLY off `p0`, at no extra hop, and it carries a hand-kept
+    #       `corpus/target_annotations.tsv` row of its own.  ** A `p0` read is UNDECIDED before
+    #       any normaliser is added. **  The kinds that table records for it are `log,tex` --
+    #       tex beside another kind, which is `_rstar`'s UNDECIDED verdict exactly.
+    #   ⇒ *** So the cause is the READ, not the repair: a haystack bound through the `flat()`
+    #     helper names more than one kind and cannot decide its own target. ***  Binding the
+    #     normalised haystack from `os.path.join(...)` in one expression gives the trace a single
+    #     kind, and the key files PAPER on its own.
+    #   ⌗ WHICH MAKES THE LEDGER ARITHMETIC THE OTHER WAY ROUND FROM WHAT WAS FEARED: the two
+    #     repaired spans owe NO hand-kept annotation, and the two rows their predecessors needed
+    #     (`corpus/target_annotations.tsv` 27-28) come OUT.  A hand-kept table is a cost, and
+    #     this repair pays two of them off rather than adding two.
+    #   ⌷ The `check_quote_pins` consequence is why this is worth the paragraph: the gate FAILS
+    #     an UNDECIDED key with no row there, so the wrong form would not have shown up here at
+    #     all -- it would have shown up as a gate failure one ledger edit later.
+    p0u = re.sub(r'\\emph\{([^}]*)\}', r'\1',
+                 flat(os.path.join(ROOT, 'corpus', 'geometric_core_paper.tex')))
+    _SENTU = re.sub(r'\\emph\{([^}]*)\}', r'\1', _SENT)
     check('   and the disambiguation was LOCAL, checked at its own commit: the surrounding sentence '
           'stood unchanged across c54.214 -- only the parenthesis moved',
           _SENT in _before and _SENT in _after)
@@ -240,10 +293,19 @@ def main():
           'Dirac field there propagating on the light cone", "the leaf-bound modes and the propagating '
           'field being two sectors" -- which is this file\'s own reading arriving in the paper, the '
           'divergence having been the normalisation and not the obstruction',
-          ('the descent onto a \\emph{propagating} spinor sector is built on the chiral member, which '
-           'is the unpolarised one, a Dirac field there propagating on the light cone') in p0
-          and 't selected~\\cite{JanzenMatter}, the leaf-bound modes and the propagating field being two sectors' in p0
-          and _SENT not in p0)
+          # ⬭ r7355+cc66: read against the EMPHASIS-NORMALISED paper, spans whole.  And the
+          #   second conjunct was CUT MID-WORD AT A NEGATOR: it began `t selected~\cite{...}`,
+          #   the tail of "permitted and NOT selected", so the key as stored could not be read
+          #   either way round -- P16's class at r7347 exactly, and the worse half of it, because
+          #   a reader of the key cannot tell whether the paper says selected or not selected.
+          #   ⌗ Verified before performing: each span occurs ONCE in the normalised paper, and
+          #     once again under `check_quote_pins._unmark`.
+          ('the descent onto a propagating spinor sector is built on the chiral member, which '
+           'is the unpolarised one, a Dirac field there propagating on the light cone') in p0u
+          and ('the chirality-asymmetric action on it permitted and not '
+               'selected~\\cite{JanzenMatter}, the leaf-bound modes and the propagating field '
+               'being two sectors') in p0u
+          and _SENTU not in p0u)
 
     # AND THE RESULT IS BANKED IN P14, not only in this file -- an unbanked result is lost
     # (corpus/check_receipts.py: "a result that lands in no paper is not banked").  These bind the
@@ -256,10 +318,31 @@ def main():
           'infinite tortoise distance is the plane-wave asymptotic"',
           'a modulus tending to a constant at infinite tortoise distance is the plane-wave '
           'asymptotic' in p14)
+    # ⬭⬭ r7355+cc66, `L-249`'s RULE, transcribed from THE_REGISTER's PO-78 row: *** "the
+    #   historical state be pinned at the commit it stood at, the current state asserted
+    #   separately, and a directional live check made monotone." ***  r7258+60 declined
+    #   MEANING-HELD for this row and said why: the claim is carried by an OPENNESS MARKER in the
+    #   corpus's own prose, so *** the pin FIRES WHEN THE NAMED WORK SUCCEEDS. ***
+    #   ⇒ THE TWO HALVES RETIRE DIFFERENTLY, which is what makes the split cheap: *** the
+    #     declination ("what this supplies is the continuum and not the sector") is a claim about
+    #     THIS FILE'S construction and never retires; the remainder-outstanding clause retires the
+    #     day the sector is delivered. ***  So the durable half stays LIVE and the retiring half is
+    #     read at a named commit, where it cannot break.
+    #   ⛔ AND THE OWED SPAN ALSO DANGLED -- `remain the undertaking the corpus names` opens on a
+    #     finite verb and names no subject, so it would match a sentence about anything with that
+    #     predicate.  The pinned form carries its own subject: the quantised field, the mode
+    #     completeness, and the join.  *A span read at a fixed commit still owes floor 1.*
+    #   ⌗ Verified before performing: the pinned span stands exactly ONCE in P14 at the pin.
     check('   ⚠ and it DECLINES the closure in the same passage: "What that supplies is the radial '
-          'continuum and not the sector"',
-          'What that supplies is the radial continuum and not the sector' in p14
-          and 'remain the undertaking the corpus names' in p14)
+          'continuum and not the sector" -- the DURABLE half, asserted live',
+          'What that supplies is the radial continuum and not the sector' in p14)
+    check(f'   ⌗ and at {P14_PIN} the same passage named what was still outstanding, subject and '
+          'all: "the quantised field, its mode completeness, and the join between the static '
+          "region's continuum and the wall ... remain the undertaking the corpus names\" -- the "
+          'RETIRING half, read where a delivery cannot turn it red',
+          "the quantised field, its mode completeness, and the join between the static region's "
+          'continuum and the wall---which sit in different regions---remain the undertaking the '
+          'corpus names' in _flat_at(P14_PIN, 'corpus/matter_sector_paper.tex'))
 
     b22 = flat(os.path.join(ROOT, 'receipts', 'L221_the_bridge', 'B22_the_tower_is_uniform.py'))
     check('⓶ B22 states what the row owes: "a scattering state with a continuum normalisation" that '
@@ -406,9 +489,24 @@ def main():
     check('   ⇒ nothing here is claimed at a double root, and the corpus says why: "$f\\sim c\\,'
           '\\delta^{2}$ gives $r_{*}\\sim-1/c\\delta$, a power law, so the construction that produces '
           'a thermal spectrum has no first step to take"',
-          re.search(r'\$f\\sim c\\,\\delta\{2\}\$ gives', bh) is not None
-          or ('gives $r_{*}\\sim-1/c\\delta$, a power law' in bh
-              and 'At a double root the relation is not available at all' in bh))
+          # ⬭⬭ r7355+cc66, AND THE FINDING IS SHARPER THAN THE GROUND THAT SENT IT.  r7260+60
+          #   read the regex arm as "clipped before the power law ... the receipt's own next key
+          #   carries it".  *** IT IS NOT CLIPPED, IT IS DEAD: *** the pattern carries
+          #   `\delta\{2\}` -- a literal `{2}` -- where the paper has `\delta^{2}`, so
+          #   `re.search` matches ZERO times and has matched zero times since it was written.
+          #   ⇒ ** And that is a different and worse thing than clipped, because a clipped arm
+          #     still decides sometimes. **  This `or` has been carried by its second arm alone,
+          #     and the second arm is itself two dangling fragments ("gives ... a power law",
+          #     "At a double root ...") neither of which names what gives the power law.
+          #   ⌗ r7337's class and 60's own find in S19's title: a disjunction whose stronger arm
+          #     matches nothing, carried invisibly by the weaker.  Three owed rows, one cause.
+          #   ⇒ *** ONE CONTIGUOUS SPAN, which is the sentence the label already quotes. ***  Not
+          #     a disjunction: two arms can hide a dead one, and one span cannot.
+          #   ⌗ Verified before performing: ONCE in the flattened file, and ONCE under `_unmark`.
+          #     The seven-word form ending on "a power law" was considered and DECLINED on floor 1
+          #     -- it drops the consequence, which is the only part this scope control needs.
+          '$f\\sim c\\,\\delta^{2}$ gives $r_{*}\\sim-1/c\\delta$, a power law, so the '
+          'construction that produces a thermal spectrum has no first step to take' in bh)
 
     print()
     if FAILED:

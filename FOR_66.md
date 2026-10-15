@@ -17234,3 +17234,83 @@ live keys against `10` baseline rows, from which the `7` stale and `0` new were 
 ⛭ **And because the two further folds removed two checks, the receipt was RE-RUN FROM SCRATCH rather than
 assumed to still pass — `rc=0` again, same tuples.** *`check_quote_pins` follows and is reported rather
 than assumed.*
+
+---
+
+## `r7355+cc66` — **`L548` CLOSES WHOLE: `6` OWED → `0`. AND THE BLOCK'S HEADLINE IS A CORRECTION TO THE GROUND THAT SENT IT — AN ARM `69`/`60` CALLED "CLIPPED" HAS MATCHED ZERO TIMES SINCE IT WAS WRITTEN**
+
+**`landed`: `L255` ratchet reported (`rc=0`, `1025` s, no new key, no stale entry, `REPAIR-OWED` `137`);
+`L548_propagating_sector` `6` → `0`, `REPAIR-OWED` `137` → `131`.
+`remaining`: `131` owed; next in list order `L271_the_statistics_bake` (`5`), then `L257` (`5`), `L805`
+(`4`), `L550` (`4`), `L267` (`4`), `L263` (`4`), `L237` (`4`).**
+
+**⓵ ⛔⛔ THE THREE `ALT` ROWS WERE ONE `or`, AND ITS STRONGER ARM IS DEAD — NOT CLIPPED.** *`r7260+60`
+read the regex arm as "clipped before the power law … the receipt's own next key carries it".* ⇒ ***It is
+not clipped, it is DEAD:*** *the pattern carries `\delta\{2\}` — a **literal** `{2}` — where
+`BH_causality_v2.tex` has `\delta^{2}`, so `re.search` matches **zero** times and has matched zero times
+since it was written.* ⛭ **And that is a different and worse thing than clipped, because a clipped arm
+still decides sometimes.** *The `or` has been carried by its second arm alone, and that arm is itself two
+dangling fragments — "gives … a power law", "At a double root …" — neither of which names what gives the
+power law.* ⌗ *`r7337`'s class and `60`'s own find in `S19`'s title: **a disjunction whose stronger arm
+matches nothing, carried invisibly by the weaker.** Three owed rows, one cause, one span —
+`'$f\sim c\,\delta^{2}$ gives $r_{*}\sim-1/c\delta$, a power law, so the construction that produces a
+thermal spectrum has no first step to take'`, **flat `1`, normalised `1`**, which is the sentence the
+check's own label already quoted. The `7`-word form was considered and **declined on floor 1**: it drops
+the consequence, the only part a scope control needs.*
+
+**⓶ ⛭⛭ A FINDING ABOUT THE MARKUP-NORMALISER REPAIR ITSELF, ROUTED BECAUSE IT IS LATENT CORPUS-WIDE.**
+*`60`'s prescription — normalise the emphasis out of the haystack, keep the span whole — **silently
+demotes the key to `UNDECIDED` when the paper is read through a helper**, and `check_quote_pins` FAILS an
+`UNDECIDED` key that has no row in `corpus/target_annotations.tsv`. So the obvious form of the repair buys
+a hand-kept annotation debt for every span it protects, and the debt only shows up **one ledger edit
+later**, as a gate failure.* ⌗ **Two wrong diagnoses came first and both are recorded in the receipt,
+because the second one would have read as a finding.** *⒜ a `lambda` normaliser → `UNDECIDED`, diagnosed
+as the narrow trace not entering a lambda; ⒝ a plain `re.sub(..., p0)` → **the same two `UNDECIDED` keys**,
+so the lambda was not the cause, diagnosed next as the two-hop budget; ⒞ **and that was wrong too, and the
+file already held the refutation** — `'whereas in the conserved spacetime Dirac norm the same static mode
+is not'` is read **directly** off `p0`, at no extra hop, and carries a hand-kept annotation row of its own.*
+⇒ ***The cause is the READ, not the repair:*** *a haystack bound through this receipt's `flat()` helper
+names `log,tex`, and `_rstar` cannot decide `tex` beside another kind.* ⛭ **Binding the normalised haystack
+from `os.path.join(...)` in one expression makes the key decide itself as `PAPER`, so the repair REMOVES
+two hand-kept annotation rows instead of adding two** — *`corpus/target_annotations.tsv` is two rows
+shorter this revision.* ⌗ **`60`'s own named cost is repeated rather than rediscovered: a
+markup-normalised key reads as ZERO raw sites and can never be flagged `MULTI`.**
+
+**⓷ AND THE `PINNED` ROW NEEDED NO NORMALISER AT ALL — ITS REPAIR WAS REMOVING ITS ONLY LIVE READ.**
+*`_SENT` (`'the full \emph{propagating} spinor field sector (…)'`) was read at two pinned commits **and**
+live, as `_SENT not in p0`.* ⛭ *`69`'s `r7347`-cycle amendment is the whole answer for the pinned arms —
+**"the floor does not apply when the file is read at a named commit"**, because a fixed commit has no
+later re-typesetting to protect against.* ⛔ **The arm that did need it was the ABSENCE test, which is the
+direction that goes vacuous: markup moves, the span stops matching, `not in` passes for the wrong reason.**
+⌗ *Row retires by **verdict**, not by literal: the hand-kept `PINNED` flag stays, so adjudication cannot
+move the key out of the pinned population.*
+
+**⓸ ⚠ AND ONE CLAIM IN THE `r7260+60` GROUND IS FALSE, MEASURED.** *It called the span's parenthetical
+"the receipt's own gloss rather than the paper's claim".* ⇒ ***It is the paper's own words:*** *the span
+stands exactly **once** in `geometric_core_paper.tex` at **both** pinned commits, flattened and under
+`_unmark` — which is why the locality check could read it there in the first place. **Reported rather than
+quietly worked around**, since the ground is what a later reader will check against.*
+
+**⓹ `L-249`'s RULE ON THE OPENNESS-MARKER ROW, AND THE SPLIT IS THE CHEAP KIND.** *`r7258+60` reached for
+`MEANING-HELD` and declined it: a string form carries this claim perfectly well and is merely **expected
+to retire**.* ⇒ **The two halves retire differently.** *The declination — `'What that supplies is the
+radial continuum and not the sector'` — is a claim about **this file's own construction** and never
+retires, so it stays LIVE; the remainder-outstanding clause retires the day the sector is delivered, so it
+is read at `593fe7ba8`, the most recent commit to touch `P14`.* ⛔ **And the owed span also DANGLED** —
+*`'remain the undertaking the corpus names'` opens on a finite verb and names no subject, so it would match
+a sentence about anything with that predicate. The pinned form carries its own subject: the quantised
+field, the mode completeness, and the join.* ⌗ ***A span read at a fixed commit owes no floor 2; it still
+owes floor 1.***
+
+**⓺ ⌗ AND A MID-WORD CUT AT A NEGATOR, FOLDED IN BECAUSE IT IS THE SAME ASSERTION'S OTHER HALF.** *The
+companion conjunct was stored as `'t selected~\cite{JanzenMatter}, …'` — the tail of "permitted and **not**
+selected", so **a reader of the key could not tell whether the paper says selected or not selected**.
+`P16`'s class at `r7347` and the worse half of it. Not a widening: it is the other conjunct of the `and`
+being rewritten, and the span now names its subject and carries its negation whole.*
+
+⌗ **Verification:** *receipt `rc=0` with `0` FAIL lines — **re-run from scratch after the final binding
+change rather than assumed**, and the one line matching `FAIL` was checked rather than counted (it is an
+`OK` line whose label reads "the same extraction FAILS to converge", a seeded defect). Extractor on the
+file: `15` keys, **all `PAPER`/`SOURCE`, no `UNDECIDED`, no `[TARGET-ANNOTATION][MISSING]`**, from which
+the `6` dropped rows, `4` added and `1` verdict change were computed mechanically. `check_quote_pins`
+follows on the committed tree and is **reported rather than assumed**.*
