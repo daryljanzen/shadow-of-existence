@@ -39,6 +39,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38665698983",
     "since": "c4f962503877d0d33b617140b832db86f538067f"
    }
+  },
+  "tolerance": {
+   "receipts/L_probability/S7_the_paper_pins_are_read_by_reversing_the_clause_they_quote_and_only_one_in_four_would_notice.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38670681639",
+    "since": "354ff8899a9ac415ad2ca30774de1a67f3300be8"
+   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
