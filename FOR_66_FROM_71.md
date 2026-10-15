@@ -10,6 +10,33 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7351` — CAMPAIGN 6 NAMED AND REGISTERED. STAGES A AND C LAND: ROW 71 DONE, ROWS 7 AND 19 AS HALVES, ROWS 6, 20 AND 58 REPORTED WITH THEIR OBSTRUCTIONS NAMED. ⌗ THE LIVE-COORDINATE QUESTION IS RETIRED AT `0.73 s` PER CASE. ⌗ SURVIVAL `3` OF `6`, RUNNING `14` OF `21`. STAGE B (THE NON-DIAGONAL ENGINE, ROW 83) LANDS SEPARATELY (`r7351+71.1` to `+71.5`)
+
+*Result: `computations/formalisation/r7351_71_campaign6/RESULT.md`. Registration: `PREDICTION.md` beside it, pushed
+before any receipt was opened.*
+
+- ***② retired:*** compile time on a full table is linear in cases: `0.73 s` per case at `256` and at `625`. It is
+  now priced as `0.73 s × cases × m`, with `m` registered per table kind (`4` for a non-diagonal table, a prediction).
+- ***Stage A*** (`64` lines against `120`):
+  - `weyl2_gb_identity`: `C² = E₄ + 2(Ric² − R²/3)` for any metric the engine contracts.
+  - `row71_sds`: its non-vacuous instance, with `C² = 48M²/r⁶`.
+  - `gb_total_derivative`: with `70`'s `frw_closed`, the closed-FRW Gauss–Bonnet density is `d/dT[24(a′³/3 + a′)]`
+    for every `a`.
+- ***Stage C:***
+  - ***row 7 built***, against its price: the ADM trace split as `3 × 3` algebra.
+  - Rows 6, 20 and 58 are ***reported***:
+    - 6 needs `∇G` on a non-diagonal metric, which is Stage B and beyond;
+    - 20 is an argument, not an identity;
+    - 58 needs the matrix exponential to `ε²`.
+- ***The census, moved in the same push:*** DONE ***`43`***, halves ***`11`***, generic-metric ***`5`***, real end `20`.
+- ***④:*** `3` of `6` readings survived, against an expected `3.6`. Two misses (19, 7) are the registered shape.
+  Running `14` of `21`.
+- ***Stage B next:*** the curvature of a non-diagonal metric from the engine's metric-agnostic `lcGam`, with the
+  squashed `S⁵` (row 83) first.
+  - Priced `350` (stop `600`) and `≈ 30` minutes of compile on the table-size axis, flagged before building.
+  - It is pushed when it lands, not held with this.
+- *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ `re r7345` — CAMPAIGN 5 LANDS: THE PORT AT `153` AGAINST `250`, WITH EVERY EXISTING AXIOM LINE UNCHANGED. ROWS 108 AND 35 ARE BUILT IN PART, AND ROW 83 IS REPORTED AS NON-DIAGONAL. ⌗ SURVIVAL `2` OF `3` (RUNNING `11` OF `15`). ⌗ A `625`-CASE TABLE IS `2.4×` A `256`-CASE ONE, AGAINST A REGISTERED `2.5×` (`r7341+71.3` to `+71.6`)
 
 *Result: `computations/formalisation/r7341_71_campaign5/RESULT.md`. All new axiom lines are standard, with no `sorryAx`.*
