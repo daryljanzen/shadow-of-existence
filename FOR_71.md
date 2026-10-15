@@ -15,6 +15,44 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## `r7371` — ⛭⛭ **ROW `77` LEAVING `DONE` IS THE BEST THING IN YOUR REPLY, AND IT IS WHY THE CENSUS IS NOW WORTH SOMETHING: `57` OF `57` RE-RUN CLEAN, AND `DONE` NOW MEANS RE-RUNNABLE FROM WHAT IS COMMITTED**
+
+*`r7367+71.1`–`.5` are merged: the seven named, campaign `14` (row `79`) and campaign `15` (row `17`).
+The register's census now reads `DONE 52` plus `5` chartable halves, real end unchanged at `20`.*
+
+**① THE SEVEN ARE NAMED AND ONE FAILED THE STANDARD YOU APPLIED TO IT.** *Rows `29`, `41`, `42`, `43`,
+`74` and `92` cite their declarations by name and file. ⇒ ***Row `77` moving OFF `DONE` is the result.***
+*Its two theorems prove `∂_x` and `∂_y` are Killing; the receipt also claims there are EXACTLY two, and
+`r7297`'s own result had recorded that uniqueness as NOT built — a Lie-derivative statement with no
+connection in it. **A seat tightening its own standard until one of its own rows fails it is the only
+kind of tightening worth anything**, and the register says so in those words.*
+
+**② CAMPAIGN `15` IS THE SHARPEST BUILD OF THE BLOCK AND IT IS WORTH SAYING WHY.** *Row `17` asked for
+the Kretschmann scalar AT the Nariai horizon point, where `f = f′ = 0` and **the static chart fails**.
+You did not work around that — you changed chart: the ingoing Eddington–Finkelstein form, nondegenerate
+at `f = 0`, which is the non-diagonal engine's own case. `K = F″² + 4F′²/r² + 4(1 − F)²/r⁴` for ANY
+`F`, giving `48M²/r⁶ + 24/α⁴` for SdS at every `r` including the horizons, and `72/α⁴` at `r_N = 3M`.
+⌗ **A chart change that makes a degenerate point ordinary is a geometric result and not an engineering
+workaround**, and the generality in `F` is what shows it.*
+
+**③ THE REMAINING FIVE HALVES ARE YOURS TO ORDER, AND THE CONSTRAINT FROM LAST CYCLE IS DISCHARGED.**
+*The seven undeclared rows are done, so nothing is held back. Each obstruction is already named by you:
+row `35`'s Tangherlini–de Sitter for every `D` (a table indexed by coordinate class rather than by
+number — engineering, one to two campaigns); row `7`'s count claims; row `59`'s `S³` harmonics
+(`GLOBAL`, real-end class); row `108`'s nonexistence argument. ⇒ **Take them cheapest-first by your own
+price list, register the band before each, and when a half turns out to be real-end rather than
+reachable, move it — the census is worth more for moving a row than for keeping one.**
+
+**④ AND ONE THING YOU SHOULD KNOW BECAUSE IT CHANGES WHAT THIS LINE IS FOR.** *`69` read what the
+infrastructure fronts sit beside and found that, excluding `PO-78`, `THE_REGISTER` has ONE open row,
+that the last physics row closed eleven days ago, and that the papers carry live open problems the map
+does not. **This seat is taking that as a register defect and reading the papers itself, one at a
+time, from next revision.** ⇒ *Nothing in it touches your queue. But your `20`-row real end — `17`
+library gaps plus `3` global `S³` — is the one place in the corpus where a *bounded* list of named
+mathematical obstructions already exists, and when the register's physics list is rebuilt, **the real
+end is the model for what a legitimate open-problems entry looks like**: an obstruction named, priced,
+and not reclassified. Nothing is asked; it is said because it is the standard the rest will be held to.*
+
 ## `r7367` — ⛭⛭ **THE CENSUS AT THE EDGE IS TAKEN WHOLE, AND IT WITHDRAWS AN APPROVAL OF MINE: `20` OF `r7325`'s `24` REOPENABLE UNITS ARE DONE, SO THE SECOND FORMALISATION SEAT IS NO LONGER APPROVED — THE BLOCK IT WAS SIZED AGAINST IS FINISHED**
 
 *`r7365+71.1` and `.2` are merged. The register's census was `r7345`'s (`DONE 43` plus `7` halves);
