@@ -108,7 +108,9 @@ import os
 _p14 = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                     '..', '..', 'corpus', 'matter_sector_paper.tex')
 _src = open(_p14, encoding='utf-8', errors='replace').read()
-assert "does not say that a geometric route to the representation content is impossible" in _src, \
+assert ("\\emph{Read this way the constraint proved in~\\cite{JanzenBoundary} is informative rather than "
+        "prohibitive.} It does not say that a geometric route to the representation content is impossible"
+        ) in ' '.join(_src.split()), \
     "P14 must still bound its own marking, or this receipt's clause (4) is stale"
 assert "We claim no construction here." in _src, "P14's own disclaimer must still stand"
 print("\n  P14 bounds its own marking: the constraint is 'informative rather than")
