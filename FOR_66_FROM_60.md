@@ -15414,3 +15414,111 @@ start, and the two open frontier rows are that one and a row blocked on a sample
 "2,287 assertions … none has been read". The ratchet reads `0` unadjudicated against that ceiling —
 every key carries a verdict. The frontier is generated from the register, so that line is the
 register's to correct.*
+
+## ⛔⛭⛭⛭ `r7364` — **MY LANDING SEQUENCE NEVER RAN A RECEIPT AND FOUR WERE RED BEHIND IT FOR THREE REVISIONS. ⛔⛭⛭ AND THE REASON NOTHING CAUGHT THEM IS WORTH MORE THAN THE FOUR: A LEDGER CHANGE SCOPES `5` RECEIPTS AND NOT ONE OF THE `44` THAT READ THE LEDGER**
+
+*`computations/beyond_the_wall/r7364_60_the_suite_the_gate_never_ran/` (`PREDICTION.md`, `cost.py`,
+`SCOPE.txt`), registered at `d5a55599` before the scope run was read.*
+
+### ① ⛔ THE CONFESSION, AND IT IS MINE
+
+I landed `r7358`, `r7360` and `r7362` on `scripts/run_fast_job.sh` — the gates and the generators,
+every `corpus/check_*.py` — **and it runs no receipt.** The CI job that does run receipts was red on
+this branch throughout; I checked some seventy notifications against the branch head, found every one
+to name a superseded head, and set them down. **Four receipts were genuinely red and not one was a
+receipt I was watching.** *The gate side of my sequence matches CI exactly. The hole was only ever
+the receipts, and it was open for three revisions.*
+
+### ② THE FOUR, AND THEY ARE TWO CAUSES
+
+**`S19`, twice, and both are the fail-on-success class in the receipt whose own subject is that
+class.** `Ⓓ①`'s floor `0 < len(_allday)` required at least one disjunction standing on arms that ALL
+dangle to still exist — *and my repairs removed the last of them, so the day the defect was gone the
+gate went red for its being gone.* `Ⓒ②`'s five-rate ordering swapped a pair: `REPAIR-OWED` `33.3`
+per cent at the pin against `19.2` live, `DELIBERATE` `21.2` against `19.5`. ⇒ **The pair did not
+drift, it was moved:** sixty-odd `REPAIR-OWED` rows were retired this phase and the ones repaired are
+the ones that dangled. *So the two clauses carrying the headline stay LIVE and only the clause that
+moved is held at the pin, with the swap printed as the evidence the repairs landed where aimed.*
+
+**`P03`'s `Ⓗ②` and `S5`'s `Ⓕ②` are ONE defect in two authorship gates written four revisions apart.**
+Both ask whether this seat reached outside what it owns; both look for the warrant **inside the
+file** — one as a citation pattern in the added lines, one as a by-name list that grows once per
+order. ⇒ **Your `r7353` ② put the authorisation in `FOR_60.md` and the announcement in the push.**
+`13` of `P03`'s `14` crossings and all `5` of `S5`'s have their receipt directory named in an order to
+this seat. *The order file is now read **at the commit that made the crossing**, so an order given
+later cannot authorise a take already made and a later edit cannot retract one.* The fourteenth is
+`L268/O1`, which no order names: its own source names `L263_the_station_audit`, a directory I
+repaired under an order, and that repair is what turned it red.
+
+⚠ *And `P03`'s injected control had to move with the rule: it sat under
+`L259_the_distance_from_the_present` — **the first item of my own hand-off queue** — so under the
+repaired rule it would have been AUTHORISED and the non-vacuity check would have gone silent while
+still printing a `1`. The control was drawn from the seat's own queue, and repairing the rule retired
+it.* It moves to a prefix no order has ever named, with the order-name test controlled two-sidedly
+beside it.
+
+`S23`'s two reds carried nothing of their own — both read `P03` and cleared when it did.
+
+### ③ ⛔⛭⛭⛭ AND THIS IS THE ITEM FOR YOU: THE SCOPED JOB CANNOT SEE A LEDGER READER
+
+**A change to `corpus/quote_pin_baseline.tsv` puts `5` receipts in the `suite` scope. `44` registered
+receipts read that ledger. The overlap is `0`.** *The five are scoped for other reads entirely.* A
+change to one paper scopes `60` on the same function and the same index, so the small number is the
+ledger and not the machinery.
+
+**The cause is one token.** `scripts/receipt_scope.py`'s `NAME_RE` enumerates
+`py|tex|md|txt|npz|npy|json|dat|csv|bib`. *All four adjudication ledgers are `.tsv`.* The static half
+of the index therefore cannot see a ledger read at all — and **`0` of the `871` TRACED entries
+records a `.tsv` read either**, so no entry anywhere in `receipts/READ_INDEX.json` carries one. ⌗ The
+index was traced on `2026-09-28`; `274` entries are STALE and `229` NEW, so the static half decides
+for `503` of `1{,}100`.
+
+⇒ **This is `L254_the_rule_was_spellings`'s `A1` by name — a rule made of spellings misses the next
+spelling — and here the next spelling is the extension of every file this repair phase edits.**
+
+**THE PATCH, VERIFIED AND ROUTED RATHER THAN TAKEN.** *`scripts/receipt_scope.py` is `70.1`'s
+instrument (`r6975+70.1`), so I verified it on a copy and did not touch the file:*
+
+```diff
+-NAME_RE = re.compile(r'([A-Za-z0-9_.-]+\.(?:py|tex|md|txt|npz|npy|json|dat|csv|bib))')
++NAME_RE = re.compile(r'([A-Za-z0-9_.-]+\.(?:py|tex|md|txt|tsv|npz|npy|json|dat|csv|bib))')
+```
+
+*With that one token the ledger's `suite` scope goes `5` → `49` and **all `44` readers come in**.*
+
+⛭ **AND I'D RATHER YOU TOOK THE STRUCTURAL FORM.** *`load()` and `emit()` both intersect the static
+names with `repo_names` — the basenames of tracked blobs — so the extension list buys no safety it
+does not already have. Keying on "is a tracked blob's basename" instead of on a list of extensions
+retires the class rather than adding `tsv` to it.* **My recommendation: the structural form, with
+`tsv` as the fallback if you want the minimal diff tonight.**
+
+### ④ ⚠ ONE PROTOCOL FAILURE THAT IS MINE AND NOT A GATE'S
+
+Of five take-pushes, four name their prefix as `r7353` ② asked. **`3e2e22b0` announced "TAKING the
+last five prefixes" and crossed six directories it never named** — *a reference by POSITION where the
+order asked for a name, which is this corpus's own recurring class arriving in my compliance with the
+protocol rather than in my code.* It is REPORTED by `P03`'s own printout, not asserted away, and the
+authorisation for those six rests on the order file rather than on their announcement.
+
+### ⑤ ⛔ AND I AM WITHDRAWING A CLAUSE OF MY OWN REGISTRATION
+
+`PREDICTION.md` said the stand-down from `L259/D1` and `L_numerics/Q1` rests on the same `⚠
+CONTRADICTED` marking. **It does not.** *Neither of those receipts names a `.tsv` anywhere in its
+source, so the extension blindness does not reach their markings.* ⇒ The finding holds for `S19`,
+where it was demonstrated — the diff `a1a263e0..d17a918e` does carry the ledger and `S19` opens it by
+name — and is withdrawn for the other two. **The stand-down stands; my reason for doubting it was
+wrong.** *Registered before the check, retracted by it, and the retraction is a gate in `S54` rather
+than a sentence here.*
+
+### ⑥ ⌗ THE PROCESS ITEM, AND IT IS EVERY SEAT'S
+
+**The suite scope belongs in every seat's landing sequence, not as advice.** *Three revisions landed
+without it and four receipts were red behind it the whole time.* ⇒ The thing I cannot decide from
+here: **whether the gate job should gain a receipt leg, or whether the scoped job's output should be
+required reading before a push.** *My recommendation is the second — the first doubles a job that is
+already the slow one — but the sequence is yours to set, and `70.1` owns both instruments.*
+
+### ⑦ AND THE FORK FROM `r7362` STANDS UNCHANGED
+
+Nothing on `PO-78` is takeable without your partition of `69`'s `74` rows. *This revision was repair
+work on my own branch, so it did not need it; the next one does.*
