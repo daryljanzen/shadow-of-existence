@@ -83,6 +83,7 @@ left because they are short (still true -- they are short, and now unsplit), and
 Written c54.229 (`L-563`), CORRECTED c54.230.  Stated for reversal.
 """
 import collections
+import ast as _ast_S1
 import os
 import re
 import subprocess
@@ -170,9 +171,31 @@ def main():
           len(both_rows) > 0 and len(escapable) == len(both_rows))
     tool = open(os.path.join(ROOT, 'scripts', 'row_splits.py'),
                 encoding='utf-8', errors='replace').read()
-    check('⇒ and the tool is corrected with it: it escapes both classes and reports which rows are '
-          'still off the mode, instead of refusing the ones that are',
-          'CORRECTED c54.230' in tool and 'fixable + both' in tool)
+    #: ⛭⛭ THE REPAIR (r7356 on `r7353` ①'s ORDER).  ** Three owed rows pinned PROSE AND CODE
+    #: SPELLINGS in the tool -- a correction stamp, the source text `fixable + both`, and a report
+    #: heading -- and none of them says what the tool DOES.  Reformat the expression or reword the
+    #: heading and the claims read false while the behaviour is untouched; delete the behaviour and
+    #: leave the words and they read true. **  ⇒ Both claims are now read out of the tool's own
+    #: syntax tree: WHICH classes its write path touches, and which it only reports.
+    _tool_tree = _ast_S1.parse(tool)
+    _writes = [n for n in _ast_S1.walk(_tool_tree)
+               if isinstance(n, _ast_S1.For)
+               and any(isinstance(b, _ast_S1.Assign)
+                       and any(isinstance(t, _ast_S1.Subscript)
+                               and getattr(t.value, 'id', '') == 'lines' for t in b.targets)
+                       for b in n.body)]
+    _written = {_ast_S1.unparse(n.iter) for n in _writes}
+    _reported = [n for n in _ast_S1.walk(_tool_tree)
+                 if isinstance(n, _ast_S1.Call) and getattr(n.func, 'id', '') == 'print'
+                 and 'shape' in _ast_S1.unparse(n)]
+    check(f'⇒ and the tool is corrected with it, read off its own syntax tree: its write path '
+          f'iterates {sorted(_written)} -- BOTH escapable classes -- while the shape-only rows are '
+          f'only ever printed ({len(_reported)} report site(s)), so it escapes both and reports '
+          f'what is still off the mode instead of refusing the ones that are',
+          len(_writes) == 1
+          and all(k in _ast_S1.unparse(_writes[0].iter) for k in ('fixable', 'both'))
+          and 'shape' not in _ast_S1.unparse(_writes[0].iter)
+          and len(_reported) > 0)
 
     # ⓷ the invariant, and that it is what makes the class safe
     lines = live.split('\n')
@@ -247,12 +270,19 @@ def main():
           f'{len(_oncount)} of them carry the MODAL cell count while doing it -- mis-bounded and '
           f'invisible to every count-based check',
           len(_mis) > 0 and len(_oncount) > 0)
-    check('⇒ and it is REPORTED, NOT WRITTEN: escaping a mis-bounded on-count row makes its count '
-          'worse by the metric and right by the boundary -- one goes 5 -> 3 -- so the metric a gate '
-          'baselines on is the thing in question, and moving rows under a baseline while disputing '
-          'the baseline is not a repair',
-          'REPORTED AND NOT WRITTEN' in open(
-              os.path.join(ROOT, 'scripts', 'row_splits.py'), encoding='utf-8').read())
+    #: ⛭ and the same tree answers the second claim: the rows in question are REPORTED and NOT
+    #: WRITTEN because the write path does not range over their class -- asserted above -- and
+    #: because escaping them MOVES the metric, computed here with the tool's own two functions
+    #: rather than quoted from its heading.
+    _moved = [l for l in _mis
+              if row_splits.cells(row_splits.escape_in_spans(l)) != row_splits.cells(l)]
+    check(f'⇒ and it is REPORTED, NOT WRITTEN: escaping a mis-bounded on-count row moves its cell '
+          f'count ({len(_moved)} of {len(_mis)} move) -- worse by the metric and right by the '
+          f'boundary -- while the write path shown above never ranges over that class.  So the '
+          f'metric a gate baselines on is the thing in question, and moving rows under a baseline '
+          f'while disputing the baseline is not a repair',
+          len(_mis) > 0 and len(_moved) > 0
+          and 'shape' not in _ast_S1.unparse(_writes[0].iter))
     check('⛭ and the duplicated `L-551` the two sweeps produced is resolved by the invariant rather '
           'than by preference: the copy kept is the one whose every raw bar is structural, and the '
           'dropped copy contributed no word the kept one lacks',
