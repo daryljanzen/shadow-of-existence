@@ -23,6 +23,7 @@ Run:  python3 receipts/L247_the_build_already_stands/B1_...py
 Written r3099 (`L-247`).  Stated for reversal.
 """
 import os
+import re
 import subprocess
 import sys
 
@@ -86,21 +87,58 @@ print('PART 2 -- WHAT P11 ALREADY CARRIES, READ OUT OF THE PAPER')
 print('=' * 78)
 p11 = open(os.path.join(ROOT, 'corpus', 'dynamics_paper.tex'), encoding='utf-8',
            errors='replace').read()
+#: ⛭⛭⛭ r7360+60: FOUR OF THESE NEEDLES COULD NOT CARRY WHAT THE ROW SAID THEY CARRIED, and they
+#: were four different shapes of the same mistake -- quoting a PIECE of a sentence instead of the
+#: sentence.  *A participle naming nobody who restores; a technical TERM standing for the
+#: identification that uses it; a verb phrase ending with its OBJECT outside the span; and a
+#: fragment of an equation BODY, already recorded here as breaking once on display spacing.*
+#:   ⇒ ** The reader now flattens, unwraps the emphasis, strips the apparatus markers AND the LaTeX
+#:     spacing macros (`r7258` extended by the spacing family, which is what bit at `r4524`), and
+#:     each of the four is the whole claim: who restores what, what the two polarisations ARE, what
+#:     the identity component does not reach, and the labelled display that states the twist. **
+#:   ⌗ The four short needles that DO carry their claims -- a section label, two target constants, a
+#:     parity sign -- stay as they are: each is a NAME or a VALUE, and the span IS the thing.
+_EMPH_B1 = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+_MARK_B1 = re.compile(r'~?\\(?:ldg|rcpt|cite[a-z]*)\{[^{}]*\}')
+_SPACE_B1 = re.compile(r'\\[;,!:>]|\\quad|\\qquad')
+
+
+def _tex(s):
+    s = re.sub(r'\s+', ' ', s)
+    for _ in range(4):
+        s, prev = _EMPH_B1.sub(r'\1', s), s
+        if s == prev:
+            break
+    return re.sub(r'\s+', ' ', _SPACE_B1.sub('', _MARK_B1.sub('', s)))
+
+
+_p11n = _tex(p11)
 MARKS = [
     (r'\label{sec:unpolarized}', 'a section labelled sec:unpolarized'),
-    ('restoring the second polarization', 'which restores the second polarisation'),
-    ('wave map into the hyperbolic plane', 'and identifies the two polarisations as a wave map'),
     ('Gaussian curvature $-1$', 'into a target of Gaussian curvature -1'),
     ('determinant $-1$', 'with the exchanging map reversing orientation'),
-    ('identity component does not reach', 'so it lies outside the identity component'),
-    # ⛔⛭ AMENDED r4524: P11 sets the twist as a DISPLAY with spacing macros --
-    #    `c \;=\; R\,e^{2P}\,Q_t \;=\; \text{const}` at `eq:twist` -- and this needle was the
-    #    unspaced inline form.  *Sixth typesetting break of this run; the physics is identical.*
-    (r'e^{2P}\,Q_t', 'and carrying the conserved twist c = R e^{2P} Q_t (eq:twist)'),
     (r'c\mapsto-c', 'on which the parity acts as a sign flip'),
+]
+WHOLE = [
+    ('The first chiral member of the reachable sector is therefore not this one but its '
+     'unpolarized generalization, which we now build---restoring the second polarization as the '
+     'off-diagonal $\omega$ of the torus block',
+     'names what restores the second polarisation, and as what'),
+    ('The two polarizations are then shown to be a wave map into the hyperbolic plane, the '
+     'polarized case being a geodesic of the target and the turning of the polarization plane '
+     'being motion off it',
+     'IDENTIFIES the two polarisations as a wave map, with what the polarized case is in it'),
+    ('it lies in the component of $\mathrm{Isom}(\mathbb{H}^2)$ that the identity component does '
+     'not reach. No connected target isometry identifies the two handednesses.',
+     'says WHAT the identity component does not reach, and draws the consequence'),
+    (r'\begin{equation}\label{eq:twist} c = Re^{2P}Q_t = \text{const}, \end{equation}',
+     'carries the conserved twist as a LABELLED DISPLAY, body and label together'),
 ]
 for needle, what in MARKS:
     check(f'⓶ P11 {what}', needle in p11)
+for needle, what in WHOLE:
+    check(f'⓶ P11 {what} ({_p11n.count(needle)} occurrence)',
+          needle in _p11n and _p11n.count(needle) == 1)
 
 print()
 print('=' * 78)

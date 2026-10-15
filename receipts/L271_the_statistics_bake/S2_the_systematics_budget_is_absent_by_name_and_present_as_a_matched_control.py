@@ -68,6 +68,10 @@ Written r3160, `L-271`.  Stated for reversal.
 """
 import os
 import re
+
+#: `r7336`'s markdown carrier form: the register's emphasis runs are APPARATUS, so they come out in
+#: the reader rather than splitting the span that quotes the row.
+_re_md = re.compile(r'\*+|~~')
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -272,17 +276,33 @@ def main():
     arc = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()
     phys = open(os.path.join(ROOT, 'THE_PHYSICS_REACH.md'), encoding='utf-8',
                 errors='replace').read()
+    #: ⛔⛭⛭ r7360+60: THE ALT HERE HAD A DEAD STRONG ARM AND A BARE NAME CARRYING IT.  *The register
+    #: says it in CAPITALS -- 'THE ATIYAH SEQUENCE IS NOT MISSING FROM `P12`' -- so the lower-case
+    #: arm matched nothing and the pair passed on `'Atiyah' in arc`, a name that stands in the live
+    #: arc whatever the sequence's status.*  ⇒ ** The weak arm is dropped and the strong one is the
+    #: register's own clause, with the markdown emphasis normalised in the reader (`r7336`) so a
+    #: re-styling cannot break a claim about what the row SAYS. **
+    _md = lambda s: _re_md.sub('', re.sub(r'\s+', ' ', s))
+    _arc_md, _phys_md = _md(arc), _md(phys)
+    _ATIYAH = ('THE ATIYAH SEQUENCE IS NOT MISSING FROM `P12`. IT IS `P12`\'S OBJECT, UNNAMED, AND '
+               'ALL FOUR OF ITS TERMS ARE ALREADY IN THE PAPER UNDER FOUR OTHER WORDS.')
     check('⓹ L-265: the Atiyah sequence is not missing from P12, it is P12\'s object under other '
-          'names', 'Atiyah sequence is not missing' in arc or 'Atiyah' in arc)
+          'names -- the register\'s whole clause, occurring once',
+          _ATIYAH in _arc_md and _arc_md.count(_ATIYAH) == 1)
     check('⓹ᵇ R-P station ⑨: the sector rests on N_eff at both ends and names it in no paper -- '
           '"One missing NAME, not a missing sector"',
           'missing NAME, not a missing sector' in phys)
-    check('⓹ᶜ R-P station ⑩: the resolution is the baby-universe one, never named',
-          'never named' in phys)
+    #: ⛭ r7360+60: 'never named' was a two-word PROXY for the whole proposition, in a LIVE
+    #: document another seat edits, so it failed on any reword that kept the claim.  Widened to the
+    #: station's own clause, markdown normalised.
+    _BABY = 'the resolution is the baby-universe one, never named; routed as item 53'
+    check('⓹ᶜ R-P station ⑩: the resolution is the baby-universe one, never named -- the station\'s '
+          'whole clause with its routing, occurring once',
+          _BABY in _phys_md and _phys_md.count(_BABY) == 1)
     # ** ASSERTED by COUNTING the located instances, not by declaring a total. **
-    located = [('L-265', 'the Atiyah sequence', 'Atiyah' in arc),
+    located = [('L-265', 'the Atiyah sequence', _ATIYAH in _arc_md),
                ('R-P ⑨', 'N_eff', 'missing NAME, not a missing sector' in phys),
-               ('R-P ⑩', 'the baby universe', 'never named' in phys)]
+               ('R-P ⑩', 'the baby universe', _BABY in _phys_md)]
     found = [k for k, _, ok in located if ok]
     check(f'⓹ᵈ ⛭ so this is instance number {len(found)+1}: {len(found)} prior instances are '
           f'located in the register and the reach documents by this receipt ({", ".join(found)}), '
