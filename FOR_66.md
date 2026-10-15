@@ -18401,3 +18401,72 @@ Widened to the clause.*
 MODE"), checked rather than counted. Extractor over both: `8` keys, all decided, no `UNDECIDED`, no
 annotation fault; `4` rows dropped and `2` added — **the asymmetry being the deleted arm**, which
 retires without a successor.*
+
+---
+
+## `r7355+cc66.26` — **⛭⛭⛭ THE HAND-OFF QUEUE IS COMPLETE. `RP_34_gr` `8` → `0`, AND ALL SEVEN ITEMS OF `r7353` ② ARE CLOSED. ⛔ A SIXTH DEAD ARM, AND ONE SPAN THAT ASSERTED A STRICTLY STRONGER CLAIM THAN ITS PAPER MAKES**
+
+**`landed`: `RP_34_gr` `8` → `0`; `REPAIR-OWED` `37` → `29`. ⌗ ***`137` → `29` this revision — one
+hundred and eight rows.*** ⌗ `check_quote_pins` on the `L247` state: **`2641` reported against `2641`
+carried**, exact.**
+
+> **`r7353` ②'s QUEUE, ALL SEVEN TAKEN AND CLOSED:** *`L246` (`4`), `L272` (`4`), `L202` (`6`),
+> `L_probability` (`6`), `L247` (`8`), `P03_SdS_slicing` (`4`), `RP_34_gr` (`8`) — **`40` rows**.*
+> **Plus my own `17` receipts (`0` owed) and the four `60` blocks and two `70` blocks I took early by
+> the scheduling error reported at `.14`.**
+
+**⓵ ⛔ THE SHARPEST ROW OF THE EIGHT: A SPAN THAT ASSERTED MORE THAN ITS PAPER DOES.** *`69`: "the
+main clause names its subject, **but the span drops `by a sweep`**, the condition the claim rests on —
+the paper says the operator can no longer generate the leaf **by a sweep**, and the span says it cannot
+generate it **at all**."* ⇒ ***So the pin overstated the paper*** — *and this receipt's own finding is
+that the outer end is a **symmetry** condition rather than a Weyl one, which is exactly the finding a
+pin that overstates its paper undermines. Repaired through `by a sweep`.*
+
+**⓶ ⛔ AND THE SIXTH DEAD ARM: `pp-wave`, ZERO OCCURRENCES, read lowercased.** *Its partner `plane
+wave` stands **`5`** times, so the disjunction was a cannot-fail arm carrying a dead one.* ⌗ **Six dead
+arms this revision** *(`L548`, `L271`, `L263`, `P15` — mine —, `L272`, here), three of them on case
+alone. **The arm-occurrence count I asked you to place at `.2` would have caught every one.***
+
+**⓷ THE PROXY WAS A NAME, AND `69` NAMED THE FAILURE MODE EXACTLY.** *`Goldberg` — "windowed to the
+remark (one occurrence there, five in the paper), **but the link could go and a citation keep the
+name**". **That clause is the whole defect**: a bibliography entry or an acknowledgement preserves the
+name while the inference disappears. The span now states the inference — and **the `1,400`-character
+window goes with it**, because a clause unique in the paper needs no window and a window is a position
+rather than a claim.*
+
+**⓸ ⌗ AND THIS GROUND IS THE MOST SELF-CRITICAL OF THE NIGHT, WHICH IS WORTH SAYING.** *`69` recorded
+its mechanical arm's verdict on each of its own eight rows, including **three failures of its own
+detector**: one *"MISSED — `out` was not in its list, **a list gap, not judgement**"*; one *"MISSED —
+opens on `the`, and **only a verb detector** would see that the span has no finite verb"*; one *"flagged
+(on `this`, **for the wrong reason** — a determiner, not a pronoun subject)"*.* ⇒ **A ground that
+records where its own instrument was right by accident is worth more than one that records only the
+findings**, *and all three of those notes shortened my work.*
+
+⌗ **Verification:** *both receipts `rc=0`, `0` FAIL lines. Extractor over both: `10` keys, all decided,
+no `UNDECIDED`, no annotation fault; `8` rows dropped and `7` added — the pair folding because the dead
+arm needed no successor.*
+
+---
+
+### ⛭ **WHERE THIS LEAVES ME, AND THE ONE DECISION I AM NOT TAKING MYSELF**
+
+**`REPAIR-OWED` is `29`. Every one of them is on another seat's list: `60` holds `14`, `70` holds
+`15`, `cc66` holds `0`.** *My own `17` and the whole of `r7353` ②'s queue are closed, so I have
+nothing assigned left to do.*
+
+⌷ ***I am not taking 60's or 70's remaining rows on my own judgement, and the reason is that I already
+did that once tonight by accident*** *(four `60` blocks and two `70` blocks, reported at `.14`). Doing
+it again deliberately, after reporting it as an error, would make the report worthless.*
+
+**So the decision is yours, and it is small: one of these.**
+> ⒜ ***Keep going across the whole ledger by owed count*** — *the ten blocks I did that way all landed
+> green, and it is faster than three seats each waiting on their own list. **Say the word and the `29`
+> are closed this revision.***
+> ⒝ ***Stop at the queue*** — *`60` and `70` finish their own, and I take instrument work instead:
+> **the arm-occurrence counter** (`.2`, six dead arms as its test set), **the `88` `EXTEND-SHORT`
+> mid-word rows** (`.3`, option ⒞ recommended), **`_READ`'s four invisible-read shapes** (`.21`, `26`
+> receipts / `95` sites), or **the `PROTECTED_OPEN.md` duplicated block** (`.19`, `1,932` characters).
+> ⒞ *Something else you want more.*
+
+*⛭ **Until you answer I will keep the gate reported and the branch pushed, and I will not start on
+another seat's rows.** `PR #435`, every revision pushed, nothing waiting on the chat window.*

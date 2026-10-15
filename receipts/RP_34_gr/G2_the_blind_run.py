@@ -93,8 +93,19 @@ def main():
     # and the repair is verifiable by content, not only by position
     t = open(os.path.join(ROOT, 'corpus', 'range_paper.tex'), encoding='utf-8',
              errors='replace').read()
+    # ⬭⬭ r7355+cc66 (HAND-OFF take 7: 70's receipt, r7353 ②), REPAIR of a PROXY r7293+69 named:
+    #   *** "a NAME standing for the claim that rem:carter-chain DRAWS the Goldberg--Sachs link;
+    #   windowed to the remark (one occurrence there, FIVE in P9), BUT THE LINK COULD GO AND A
+    #   CITATION KEEP THE NAME." ***  ⌗ That last clause is the whole defect: a bibliography entry
+    #   or an acknowledgement preserves the name while the inference disappears.
+    #   ⇒ 69's prescribed clause, which states the inference rather than naming the theorem.  And
+    #     the 1,400-character window goes with it: a clause unique in the paper needs no window,
+    #     and a window is a position rather than a claim.
+    #   ⌗ Verified before performing: ONCE in the flattened paper, once under
+    #     `check_quote_pins._unmark` -- against FIVE for the bare name.
     check('rem:carter-chain draws the Goldberg-Sachs link',
-          'Goldberg' in t[t.find('rem:carter-chain'):t.find('rem:carter-chain') + 1400])
+          'is therefore algebraically special by the Goldberg--Sachs theorem'
+          in re.sub(r'\s+', ' ', t))
     # ** THIS CHECK FAILED ON ITS FIRST RUN, and the cause is worth the comment: the sentence is
     # LINE-WRAPPED in the .tex source -- "does not\nrest on the separable ansatz" -- so a literal
     # substring probe misses it.  ** A check that searches source for a phrase must normalise
@@ -102,8 +113,12 @@ def main():
     # Same class as the encoding failure at r2412: the write reported success and the file was
     # unchanged.  Read the bytes; normalise before matching.
     flat = re.sub(r'\s+', ' ', t)
+    # ⬭ r7355+cc66, REPAIR of a DANGLING span r7293+69 named: *"DANGLING (⓵, opens on `does`; ⓷,
+    #   READS COMPLETE): the subject `the explanation` is outside."*  ⌗ ⓷ is the point -- the span
+    #   reads like a whole sentence, so a reader does not re-check it.  69's prescribed widening
+    #   carries the subject.  ⌗ Verified: ONCE flattened, once under `_unmark`.
     check('rem:carter-chain closes the ansatz reading explicitly (whitespace-normalised)',
-          'does not rest on the separable ansatz' in flat)
+          'So the explanation does not rest on the separable ansatz' in flat)
     check('and it carries the receipt marker for the diagnosis it answers',
           'V1_carter_chain}' in t)
 

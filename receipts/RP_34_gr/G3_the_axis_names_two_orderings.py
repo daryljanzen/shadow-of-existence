@@ -81,9 +81,19 @@ def main():
           not t[t.rfind('\n', 0, i):i].lstrip().startswith('%'))
 
     # ---- THE ANSWER: three later passages define the axis in horizon/symmetry terms
+    # ⬭⬭ r7355+cc66, REPAIR of a DANGLING APPOSITIVE r7293+69 named: *"an appositive whose head,
+    #   `the seam`, is outside it, IN A LIST OF THREE APPOSITIVES."*  ⌗ The list is the reason it
+    #   matters: three appositives in a row all describe the same head, so a span that takes one of
+    #   them names a property without naming what has it.
+    #   ⌗ AND 69 RECORDED ITS ARM MISSING THIS ONE, with the diagnosis: *"MISSED -- opens on `the`,
+    #     and ONLY A VERB DETECTOR would see that the span has no finite verb."*  That is a
+    #     different gap from the list gap it reported two rows down, and both are in the ground.
+    #   ⇒ Widened from the head, as prescribed: `the programme's recurring object is again the
+    #     seam`.  Verified: ONCE flattened, once under `check_quote_pins._unmark`.
     check('(i) the inner end is THE HORIZON CUBIC\'S DOUBLE ROOT where two horizon null surfaces merge',
-          "the horizon cubic's double root $\\Lambda M^{2}=1/9$ where two horizon null surfaces merge"
-          in flat)
+          "the programme's recurring object is again the seam---the inner, Type-D end of the "
+          "null-degeneracy axis the introduction lays out, the horizon cubic's double root "
+          '$\\Lambda M^{2}=1/9$ where two horizon null surfaces merge' in flat)
     # ** r6931+70.1: THE PIN FROZE AN ERROR.  Class (a).  r6719 (`440623b6`, "the cowork read's list
     #   worked across eleven papers") corrected P9's outer end from "where the last CONTINUOUS
     #   symmetry is lost" to "where the last symmetry ABLE TO ANCHOR A SWEEP is lost": the type-N
@@ -97,13 +107,35 @@ def main():
     #   asserted gone so the refuted condition cannot return. **
     check('(ii) the outer end is WHERE THE LAST SYMMETRY ABLE TO ANCHOR A SWEEP IS LOST (not merely '
           'the last continuous symmetry -- the plane wave keeps five Killing fields and is beyond it)',
-          'where the last symmetry able to anchor a sweep is lost the operator can no longer generate '
-          'the leaf' in flat
+          # ⬭⬭ r7355+cc66, REPAIR of the FIFTH VARIANT ⓔ r7293+69 named, and it is the sharpest
+          #   of the eight: *** "the main clause names its subject, BUT THE SPAN DROPS `by a
+          #   sweep`, the condition the claim rests on -- P9 says the operator can no longer
+          #   generate the leaf BY A SWEEP, and the span says it cannot generate it AT ALL." ***
+          #   ⇒ ** So the pinned span asserted a strictly STRONGER claim than the paper makes, **
+          #     and it is this receipt's own finding that the outer end is a symmetry condition
+          #     rather than a Weyl one -- a pin that overstates its paper undermines exactly that.
+          #   ⌗ Repaired through `by a sweep`, as prescribed.  Verified: ONCE flattened, once
+          #     under `_unmark`.
+          'where the last symmetry able to anchor a sweep is lost the operator can no longer '
+          'generate the leaf by a sweep' in flat
           and 'last continuous symmetry is lost' not in flat)
     check('(ii) and that passage names the two as the axis\'s endpoints',
-          'out to the wall, the two its endpoints' in flat)
+          # ⬭ r7355+cc66, REPAIR of a DANGLING span r7293+69 named: *"a prepositional phrase plus
+          #   a verbless absolute; the subject `the layered generation runs from the seam` is
+          #   outside."*  ⌗ 69 also recorded that its mechanical arm MISSED it -- *"`out` was not
+          #   in its list -- a LIST GAP, not judgement"* -- which is the honest kind of note.
+          #   Widened from the subject as prescribed; verified ONCE flattened, once under
+          #   `_unmark`.
+          'so the layered generation runs from the seam (the inner, Nariai end of the '
+          'null-degeneracy axis) out to the wall, the two its endpoints' in flat)
     check('(iii) and the seam is placed at the inner end a third time',
-          'this range places at the inner end of the null-degeneracy axis' in flat)
+          # ⬭ r7355+cc66, REPAIR of an OBJECT-DANGLING span: *"a relative clause whose object,
+          #   `the degenerate Nariai member`, is outside it."*  ⌗ 69 noted its arm flagged this
+          #   one *"for the wrong reason -- a determiner, not a pronoun subject"*, so the flag was
+          #   right and its ground was not.  Widened to carry the object; verified ONCE flattened,
+          #   once under `_unmark`.
+          'the degenerate Nariai member this range places at the inner end of the '
+          'null-degeneracy axis' in flat)
     check('NEITHER endpoint is stated as a Weyl-tensor condition',
           'Weyl' not in flat[flat.find("the horizon cubic's double root") - 300:
                              flat.find("the horizon cubic's double root") + 300])
@@ -125,7 +157,15 @@ def main():
 
     # ---- and Type N is OUTSIDE the range, which is why "beyond" is the right reading
     check('P9 excludes the type-N plane wave from the range (cor:wall\'s exemplar)',
-          'plane wave' in flat or 'pp-wave' in flat.lower())
+          # ⬭⬭ r7355+cc66, REPAIR of a CANNOT-FAIL ARM BESIDE A DEAD ONE -- both halves measured:
+          #     `plane wave`  -- FIVE occurrences in the paper, so it could only fail by the term
+          #                      leaving the paper, while the claim is that `cor:wall` EXCLUDES
+          #                      the type-N plane wave from the range;
+          #     `pp-wave`     -- *** ZERO occurrences, read lowercased.  DEAD, and dead since it
+          #                      was written. ***  The SIXTH dead disjunction arm this revision.
+          #   ⇒ One span, 69's prescription, which says the exclusion rather than mentioning the
+          #     object.  ⌗ Verified: ONCE flattened, once under `_unmark`, against 5 and 0.
+          'and the vacuum plane wave with its null orbits besides' in flat)
     check('the wall is described as the COMPLEMENT, not as a Petrov endpoint inside the range',
           'The wall is the complement' in flat)
 
