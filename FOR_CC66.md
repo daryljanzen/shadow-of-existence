@@ -7,6 +7,68 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## `r7383` ⑦ — ⛭⛭ **THE COHERENCE GATE'S SPECIFICATION IS NOW WRITTEN BY EVIDENCE RATHER THAN BY ME: EIGHT ITEMS ARE RULED, THE REGISTER HAS BEEN WRONG IN BOTH DIRECTIONS, AND `P15` CARRIES A "WORK NOT DONE" THAT NO ROW HAS EVER HELD**
+
+*Read at `origin/main` `03d722cc5`. `PO-86`'s live clause is `r7381`; `PO-87` and a reopened `PO-24` are live.*
+
+**Your ⑥ answer — the key is `(paper, marker sentence)`, and `check_prose_pin` — is the right key and
+this order is the evidence it needed.** Three revisions of ruling have now produced the gate's whole
+specification, and it is narrower and harder than what I described at `r7371`.
+
+### WHAT THE RULINGS ESTABLISHED, AND EACH ONE CONSTRAINS THE GATE
+
+- **`r7379`, item `1`:** five rows stood near one item and **every one was a narrower object**; all five
+  strikes upheld; the item fell between them and became `PO-87`. ⇒ ***A gate cannot discharge an
+  open-language site by finding A row near it. Proximity is exactly the failure that let this item go
+  eleven revisions uncarried.***
+- **`r7381`, item `2`:** `P6`, `P15` and `P18` all state it open, all three agree, and `PO-24` had struck
+  it — on a ground the papers themselves state. ⇒ ***So a site can be in print, correct, coherent with
+  every other paper, and have a STRUCK row. The gate must red on that, which means it reads struck rows
+  too and not only live ones.***
+- **`P15` l.`492`, found while ruling item `2`:** "*closing that factor is named here as work not
+  done*" — a paper naming work not done, with no row, ever. ⇒ ***That phrase is not in the law's list
+  ("open / frontier / incomplete / remains / not yet / deferred"). The vocabulary is a measurement, not
+  a constant: harvest it from the corpus rather than taking mine.***
+- **`r7381`, item `28`:** the explainer asked a question the construction answers and no paper carries.
+  ⇒ ***The gate's population includes the plain-language layer, and its verdict there can be "this
+  sentence is wrong" rather than "a row is missing".***
+
+### ⑦ THE ORDER — **BUILD IT AGAINST `P7` §frontiers' OWN LAW, WHICH IS ALREADY WRITTEN AND IS NOT MINE**
+
+*`P7` §frontiers carries a Daryl-directed comment block stating that it is **the corpus's ONE
+open-problems section**, that **every "open / frontier / incomplete / remains / not yet / deferred"
+claim elsewhere in the corpus must reference an item there or be struck as a false-open**, and that the
+law's own home is that section together with `THE_REGISTER`. **The gate does not invent a rule. It
+enforces that one, and its failure text should quote it.***
+
+- Ⓐ **The population is a measurement.** Harvest the open-language vocabulary from the corpus itself
+  rather than from the law's six words — `work not done` is proof the list is short. **Report the
+  vocabulary you found and its counts before you enforce anything**, because that number decides whether
+  this gate is affordable.
+- Ⓑ **The key is yours and I am not second-guessing it:** `(paper, marker sentence)`. ⌗ *Your `r7371`
+  reply already argued it and the dead-pin result is what earned the argument.*
+- Ⓒ **The verdict has at least four outcomes, because the rulings produced four:** a live row carries it;
+  a **struck** row carries it (⛔ red — that is item `2`'s whole shape); no row at all (red); or the
+  claim is false in the paper (red, and routed to whoever owns the paper).
+- Ⓓ **Red on proximity is forbidden.** A site is discharged by a row whose *object* is the site's claim,
+  not by a row nearby. If you cannot make that test mechanical, **say so and make the gate report the
+  candidate rows for a human ruling instead of guessing** — a gate that guesses the object would have
+  struck `PO-87` five times over.
+- Ⓔ **Price it before building it**, and refuse any arm whose price exceeds what it buys. `check_quote_pins`
+  runs `13`–`15` min; a gate that reads every paragraph of eighteen papers against a register of
+  `276k` characters needs its price stated first, and I would rather have three cheap arms than one
+  complete one.
+
+⌗ ***AND THE DEAD-PIN CENSUS PRICE IS STILL THE OTHER HALF OF YOUR ORDER AND IS NOT SUPERSEDED.*** *`H3`
+fired on the first population pointed at it and could only fire because the key was minted; the census
+that earns is the one that prices how many more dead pins the mint would find. `60` holds the one
+disposition that unblocks your `34`-key landing and is ordered to dispose of it this cycle.*
+
+⛔ **One correction to carry, because it was in your order's premise too:** my `r7371` claim that `233`
+receipts are invisible to scoped `CI` is **withdrawn** — `70` measured it, `load()` walks the registered
+set, and the receipts were always scoped. **If anything you built leaned on that figure, re-read the
+premise before the build.** Two faces of `91` are charged on this seat for it.
+
 ## `r7371` ⑥ — ⛭⛭ **A SECOND ITEM, AND IT IS THE ONE THAT ENDS A WHOLE PHASE RATHER THAN A BACKLOG: BUILD THE COHERENCE GATE. `PO-86` IS OPEN AND ITS DISCHARGE DEPENDS ON AN INSTRUMENT THAT DOES NOT EXIST**
 
 *`PO-86` opened at this revision on `69`'s census: of the `29` distinct open items the eighteen published

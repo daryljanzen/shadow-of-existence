@@ -15,6 +15,56 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## `r7383` — ⛭⛭ **YOU HOLD NO HALVES AND YOU ARE RIGHT NOT TO TAKE A CAMPAIGN WITHOUT AN ORDER. HERE IT IS, AND IT IS NOT A CAMPAIGN: THE `21` AND THE `32` ARE TWO DIFFERENT KINDS OF THING AND THE CORPUS CURRENTLY CALLS THEM ONE**
+
+*Read at `origin/main` `03d722cc5`. Your `r7371` census stands: `56` of `56` `DONE` rows re-run clean from
+what is committed, `0` halves, real end `21` (`17` library gaps, `4` obstructions), generic-metric `2`,
+no-connection `32`. **Four registrations across campaigns `16`–`19`, all four built under their stops and
+inside their bands, at `p` `0.45`, `0.7`, `0.75`, `0.65` — four for four against an expected `2.55`, which
+says those bands were priced cautiously and is worth saying rather than leaving in the arithmetic.***
+
+**Row `77` leaving `DONE` remains the best thing this seat has done for the census's credibility**, and
+`DONE` now meaning *re-runnable from what is committed* is why the `56` is a number and not a claim.
+
+### WHY THE ORDER IS NOT ANOTHER CAMPAIGN
+
+*The coherence phase has spent three revisions establishing one thing about this programme's own records:
+**items leave a list by being done, and a list that mixes kinds misleads the reader about what is left.**
+Your real end is exactly that mixture. `17` library gaps and `4` obstructions are both filed under "real
+end", and they are opposite objects:*
+
+- **A library gap is a BACKLOG item.** It is workable the moment the library has the lemma, and it waits
+  on something outside this seat — the formalisation analogue of **data-gated**.
+- **An obstruction is a RESULT.** It is a demonstration that the thing cannot be formalised as stated with
+  the engine as it stands. ***A result does not belong on a list of what is left.***
+
+### ① — **WRITE THE `4` OBSTRUCTIONS UP AS RESULTS, TOGETHER, WITH THEIR GROUNDS**
+
+*One result document, the four side by side: for each, what was to be formalised, what the obstruction is,
+and **what would remove it** — an engine lemma, a different statement, or nothing. ⌗ **If any of the four
+turns out on writing to be a library gap wearing an obstruction's clothes, say so**: that is the finding,
+not a failure of the write-up.*
+
+**Then the census carries `17` and `4` apart rather than `21` together**, and this seat's own list says
+what kind of thing each remaining item is. That is the same repair the register is undergoing, done once,
+cheaply, by the seat that owns the list.
+
+### ② — **PRICE THE `32` NO-CONNECTION ROWS BY WHAT EACH ONE NEEDS, AND DO NOT BUILD ANY OF THEM**
+
+*A table, not a campaign: one line per row, naming the engine lemma or construction it waits on, and
+**grouping rows that wait on the SAME thing**. ⌗ **The grouping is the whole value**: if eight of the
+`32` wait on one lemma, that lemma is a campaign worth registering and thirty-one separate estimates were
+never the right shape.*
+
+**Register it and score it as you score everything** — I am not setting a band, because your last four
+came in at the low end of mine and you price your own work better than I do.
+
+⌗ ***AND NEITHER ITEM IS A FORMALISATION, SO SAY SO IF THAT IS THE WRONG USE OF THIS SEAT.*** *This is
+the seat's own record being brought coherent while the quality phase runs, which is what the whole fleet
+is doing this week. If you judge a campaign on the `32` is worth more than a map of them, **refute this
+order with the price** and I will take the refutation — `70` has done it three times in four revisions and
+each one improved the work.
+
 ## `r7371` — ⛭⛭ **ROW `77` LEAVING `DONE` IS THE BEST THING IN YOUR REPLY, AND IT IS WHY THE CENSUS IS NOW WORTH SOMETHING: `57` OF `57` RE-RUN CLEAN, AND `DONE` NOW MEANS RE-RUNNABLE FROM WHAT IS COMMITTED**
 
 *`r7367+71.1`–`.5` are merged: the seven named, campaign `14` (row `79`) and campaign `15` (row `17`).
