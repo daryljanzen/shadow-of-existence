@@ -69,6 +69,7 @@ before it is added --- no large quantity is ever formed, so none is ever subtrac
 Written r6436.  Stated for reversal.
 """
 import os
+import re
 import subprocess
 import sys
 

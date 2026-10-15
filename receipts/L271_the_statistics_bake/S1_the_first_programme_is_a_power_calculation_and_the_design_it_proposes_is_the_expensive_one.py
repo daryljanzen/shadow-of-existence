@@ -73,6 +73,7 @@ most, which is exactly why the missing power statement is worth naming.
 Written r3160, `L-271`.  Stated for reversal.
 """
 import os
+import re
 import sys
 from math import comb
 

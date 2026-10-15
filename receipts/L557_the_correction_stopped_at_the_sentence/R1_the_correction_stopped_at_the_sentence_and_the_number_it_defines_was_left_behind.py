@@ -290,10 +290,12 @@ def main():
     # ------------------------------------------------------------------ ⓹ the C41 knot
     a = rcpt('C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py')
     b = rcpt('C41_a_tilde_is_stale_when_nothing_competes.py')
-    #: the pair's own allocating commit -- r2749, which created both files
-    _PIN_C41 = _alloc_sha('C41_a_tilde_is_stale_when_nothing_competes.py')
-    _a_then = _at(_PIN_C41, 'C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py')
-    _b_then = _at(_PIN_C41, 'C41_a_tilde_is_stale_when_nothing_competes.py')
+    #: ⌗ each file at ITS OWN allocating commit: the two r2749 commits are two commits, so one sha
+    #: does not hold both files -- the claim is about the title each one ALLOCATED.
+    _A_NAME = 'C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py'
+    _B_NAME = 'C41_a_tilde_is_stale_when_nothing_competes.py'
+    _a_then = _at(_alloc_sha(_A_NAME), _A_NAME)
+    _b_then = _at(_alloc_sha(_B_NAME), _B_NAME)
     _CONTESTED, _STALE = 'CONTESTED', 'stale'
     check('⓹ the two r2749 commits allocate `C41` twice and their titles read as opposites: "a tilde '
           'on a settled value is a stale hedge" against "a tilde is stale when nothing competes"',

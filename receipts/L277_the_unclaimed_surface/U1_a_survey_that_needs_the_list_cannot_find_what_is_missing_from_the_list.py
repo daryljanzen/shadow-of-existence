@@ -61,6 +61,7 @@ Written r3172, `L-277`.  Stated for reversal.
 """
 import ast as _ast
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))

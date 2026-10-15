@@ -193,3 +193,58 @@ if __name__ == '__main__':
         _f = 'ROUTED' if any(_p.split('/')[1].startswith(q) for q in ROUTED_PREFIXES) else ''
         print(f'      {_n:2d}  {_p.split("/")[1][:38]:38s} {_f}')
     print()
+
+
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+# THE RESULT BLOCK, appended by the counting push.  ** Nothing above this line was changed. **
+# ══════════════════════════════════════════════════════════════════════════════════════════════════
+RESULT.update({
+    # ── the block as it stood at the census ──
+    'A_ROWS': 35,              # the editable rows, 13 receipts over 11 prefixes
+    'ROUTED_ROWS': 2,          # on L256/B1 -- routed with the patches r7358 already routed
+    'CLOSED': 13,              # receipts taken and closed, every editable row of each
+    'CLOSED_ROWS': 35,
+
+    # ── arm (a): the REFINED uniqueness share, r7358's refinement in use for the first time ──
+    'A_MULTI': 10,             # 10 of 35 = 0.286, INSIDE the 0.10-0.31 band
+    'A_UNSEEN': 11,            # the refinement's price: SOURCE pins into scripts and root registers
+    'A_MAX': 42,               # one literal ('stale') occurring 42 times in a single file
+
+    # ── arm (b): the share whose repair is REPAIRED-AND-INVISIBLE ──
+    #   ⌗ THE ARBITER, stated: a retired row counts when its claim is now carried by an assertion
+    #   that pins NO text at all -- a syntax-tree read, or a read at a commit the instrument cannot
+    #   trace.  A row whose span was merely NORMALISED, or that merged into a sibling's minted span,
+    #   does NOT count: it is still pinned, and the ledger still holds it.
+    'B_INVISIBLE': 7,          # 7 of 35 = 0.200, INSIDE the band and ON the central
+    'B_MINTED': 24,            # keys minted at this revision, in 12 of the 13 receipts
+    #   ⛔ and one more retired row pinned NOTHING to begin with, so it cannot be counted as
+    #   invisible: there was nothing visible to lose.  See B_DEAD_REGEX below.
+    'B_DEAD_REGEX': 1,
+
+    # ── arm (c): the effort, banded for the first time -- and the band FAILS LOW ──
+    'EFFORT_MINUTES': 28.8,        # census commit to the last take commit
+    'EFFORT_PER_RECEIPT': 2.22,    # against the band 3.0-8.0: OUTSIDE, LOW
+    'EFFORT_SERIES': (6.96, 3.63, 2.22),   # r7356, r7358, r7360 -- three consecutive falls
+})
+
+#: ⛔⛭⛭ WHAT ARM ⒞ ACTUALLY MEASURED, AND IT IS NOT WHAT IT WAS REGISTERED TO MEASURE.
+#: *The band was drawn from the only two measurements that existed, `6.96` and `3.63`, and the third
+#: came in at `2.22` -- below it.*
+#:   ⇒ ** The three readings are `6.96`, `3.63`, `2.22`: a MONOTONE FALL, not three draws from a
+#:     fixed per-receipt cost. **  The registration's own caveat says the binomial assumes a constant
+#:     cost; the series says there is no constant to assume yet.
+#:   ⇒ *** A BAND DRAWN FROM TWO CONSECUTIVE POINTS OF A FALLING SERIES FAILS LOW ON THE THIRD BY
+#:     CONSTRUCTION. ***  That is a fact about the arm and not about the work, and it is reported as
+#:     that: the honest figure is the series, and a band becomes possible when the fall stops.
+#:   ⌗ `r7351` ② asked for a central from the measured strides.  This is the answer: **not yet** --
+#:     and the reason is measurable rather than a hedge.
+
+#: ⛔⛭ AND A NINTH DEFECT KIND, FOUND BY THE ARBITER REFUSING TO COUNT A ROW.
+#: *One retired arm of `L548`'s three-way disjunction was a REGEX whose pattern does not match its
+#: own target: it looked for `\delta{2}` where the paper writes `\delta^{2}`, so it matched nothing,
+#: ever, on any tree.*
+#:   ⇒ ** Not a weak arm -- a DEAD one, dead by construction rather than by the corpus moving. **
+#:     The disjunction it stood in had three arms and all three were defective: this one could never
+#:     fire, and the other two were clipped fragments.
+#:   ⌗ It is excluded from arm ⒝ rather than counted: a row that pinned nothing cannot be
+#:     repaired-and-invisible, because there was nothing visible to lose.

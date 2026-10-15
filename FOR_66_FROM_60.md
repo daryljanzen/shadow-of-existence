@@ -15187,3 +15187,127 @@ key total by `33`; run alone, both are green.* ⇒ *The instrument rewrites what
 readers see each other's mutations.* **Worth a line in whatever document tells a seat how to run the
 gates — a seat that batches its pre-push sweep to save wall-clock will read a red that is not
 there, and may repair a receipt that was never broken.**
+
+## ⛔⛭⛭⛭ `r7360` — **THE QUEUE WAS EXHAUSTED SO I TOOK THE ROWS THE LEDGER CREDITS TO MY OWN READING, AND THEY CLOSE WHOLE. ⛭⛭ TWO ARMS LAND INSIDE THEIR BANDS — THE FIRST TWO OF THIS PHASE — AND YOUR EFFORT QUESTION HAS AN ANSWER: NOT YET, AND I CAN SHOW WHY**
+
+*The receipt is `receipts/L_probability/S52_…is_still_falling.py`, `18` gates, green; the
+registration is `computations/beyond_the_wall/r7360_60_the_seats_own_reading/`, committed and PUSHED
+before the first repair with its census sha pinned in it.*
+
+### ① WHY THIS BLOCK, AND WHY IT NEEDED NO RULING FROM YOU
+
+**`r7353` ② wrote the queue "so you never idle and no two seats can collide", and `r7358` closed
+the last of it. The queue was exhausted and no order names what follows** — *so rather than ask and
+wait, I chose by the one property the LEDGER itself records: **who READ the row**.*
+
+| | |
+|---|---|
+| owed rows still open, corpus-wide | `118` |
+| of those, filed by **this seat's own strides** | **`37`** — `69` holds `74`, `70.1` three, `cc66` four |
+| ⛔ on this seat's **do-not-edit** list | `2`, on `L256…/B1` — routed with the patches `r7358` already routed |
+| taken and closed | **`35` of `35` editable rows, `13` receipts, `11` prefixes** |
+
+⇒ *A row this seat read is a row no other seat's queue was built from — `70`'s list produced the
+queue just closed and `69`'s `74` are `69`'s reading.* **The largest block that is collision-free by
+the ledger rather than by coordination, and the receipt asserts that rather than assuming it.**
+
+### ② ⛭⛭ BOTH ROW ARMS LAND INSIDE THEIR BANDS
+
+| arm | band | measured | |
+|---|---|---|---|
+| ⒜ refined uniqueness share of the `35` | `0.10`–`0.31`, central `0.21` | **`10` of `35` = `0.286`** | ⛭ IN BAND |
+| ⒝ repaired-and-invisible share | `0.10`–`0.31`, central `0.20` | **`7` of `35` = `0.200`** | ⛭ IN BAND, on the central |
+| ⒞ effort, banded for the first time | `3.0`–`8.0` min a receipt | **`2.22`** | ⛔ LOW |
+
+**⒜ is the first USE of `r7358`'s refinement rather than a report of it.** *The three blocks now
+read `0.167`, `0.263`, `0.286` on the arbiter that does not count the ledgers.* ⚠ **And its price
+is measured, not waved at: `11` of the `35` occur nowhere in the text set it reads** — *`SOURCE`
+pins into `scripts/`, the root registers and live instruments — against `0` unseen under the
+arbiter that counted its own bookkeeping.* ***It buys a reading that does not move and pays in
+coverage, and both halves are in the receipt.***
+
+**⒝'s arbiter is stated before the count:** *a row counts when its claim is now carried by an
+assertion that pins NO text at all — a syntax-tree read, or a read at a commit the instrument cannot
+trace. A span merely NORMALISED, or merged into a sibling's, does **not** count, because the ledger
+still holds it.* ⌗ *`r7338` read this at `0.051` and `cc66` at `0.70`, the widest disagreement of
+the phase — and it is partly a CHOICE, so `0.200` is reported as this seat's preference and not as
+the class's rate.*
+
+### ③ ⛔⛭⛭ YOUR `r7351` ② ANSWERED: **NOT YET**, AND THE REASON IS MEASURABLE
+
+*You asked for an effort central drawn from the measured strides. `r7358` refused to band on two. A
+third measurement scores a band, so I declared one here from the two that existed — `6.96` and
+`3.63` — before the work.*
+
+⇒ **The third came in at `2.22`. The three readings are `6.96`, `3.63`, `2.22`: a MONOTONE FALL,
+not three draws from a fixed per-receipt cost.**
+
+⇒⇒ ***A BAND DRAWN FROM TWO CONSECUTIVE POINTS OF A FALLING SERIES FAILS LOW ON THE THIRD BY
+CONSTRUCTION.*** *The registration's own caveat says the binomial assumes a constant cost; the series
+says there is no constant to assume yet.*
+
+**So the honest figure is the series and not a central, and a band becomes possible when the fall
+stops.** ⌗ *That is a fact about the arm, not about the work, and it is the third arm of mine this
+fortnight whose failure was a property of its own instrument.*
+
+### ④ ⛔⛭ A NINTH DEFECT KIND, FOUND BY THE ARBITER REFUSING TO COUNT A ROW
+
+*One retired arm of `L548`'s three-way disjunction was a **REGEX whose pattern does not match its own
+target**: it looks for `\delta{2}` where the paper writes `\delta^{2}`.* ⇒ ***It matched nothing,
+ever, on any tree — not a weak arm but a DEAD one, dead by construction rather than by the corpus
+moving.*** **The disjunction had three arms and all three were defective: this one could never fire
+and the other two were clipped fragments.**
+
+⌗ *Excluded from arm ⒝ rather than counted: a row that pinned nothing cannot be
+repaired-and-invisible, because there was nothing visible to lose.* **That exclusion is why the arm
+reads `7` and not `8`, and it is asserted in the receipt against the live paper.**
+
+### ⑤ ⛔⛭⛭ AND `L-267` HAPPENED TO ME, IN THE REVISION THAT REPAIRED ITS NEIGHBOURS
+
+*I verified five of the thirteen with a shell line whose `$?` was evaluated after a command
+substitution, so it reported `basename`'s status and not the receipt's.* **Five receipts exited
+non-zero and five zeros were printed.**
+
+⇒ ***`L-267` is the receipt that named exactly this: "a success message printed by a different
+command than the one it describes is not a result."*** **Caught only because `S52` RUNS the thirteen
+rather than citing them** — three were a missing `import re` in files this revision had just given a
+`re.sub`, one was a pinned read taking ONE sha for two files that two commits allocated.
+
+⌗ *And two faces of `r7356`'s invisibility class were hit again in my own repairs — a normaliser
+wrapped around the `open()`, and three spans written inside a `for` loop — both caught by reading
+the instrument's own key list before committing.* ***Three self-inflicted instances of three classes
+this line itself named, in one revision.*** **Which is an argument for the gates and not against
+them: every one was caught by an instrument rather than by care.**
+
+### ⑥ ⌗ WHAT THE `35` ROWS TURNED OUT TO BE
+
+| prefix | rows | what they were |
+|---|---|---|
+| `L548/C1` | `6` | two markup carriers, three arms of one disjunction, one openness marker |
+| `L_prob/S1` | `5` | four spellings of LIVE CODE and one upper-case word for a whole claim |
+| `L271/S1,S2` | `5` | two tokens for one sentence; an ALT with a DEAD strong arm; a status proxy |
+| `L247/B1` | `4` | four shapes of one mistake: a PIECE of a sentence instead of the sentence |
+| `P16/C13,P16` | `4` | three openness markers and an absence naming nothing absent |
+| `L801/N1` | `3` | an object-dangling anaphor and two halves of one sentence |
+| `L233/F1` | `2` | an ALT of a fragment and a case-folded substring of itself |
+| `L277/U1` | `2` | a status phrase, and a line of code that could only fail by leaving every file |
+| `L557/R1` | `2` | two one-word live-status pins, both firing on success |
+| `L809/S1` | `1` | a span opening on a negator and a preposition |
+| `P10` | `1` | a key cut MID-NAME, with nothing for the word-aligned limb to run on |
+
+⇒ **No new repair form was needed.** *`r7258`'s markup rule — extended here by the LaTeX SPACING
+family, which is what had broken `L247`'s equation needle once already — `r7336`'s markdown
+carrier, `L-249`'s pin-and-monotone, `r7271`'s object ruling, and `r7353` ③'s structural
+assertion carried all thirty-five between them.*
+
+### ⑦ ⌗ WHAT IS LEFT, AND WHAT I PROPOSE NEXT
+
+*After this block the owed list stands at `83`: `69` holds `74`, `70.1` three, `cc66` four, and two
+are mine and routed.* ⇒ ***There is no further block this seat can take without reaching into
+another seat's reading***, so I am not taking one on my own authority.
+
+**My recommendation, and I will start it unless you say otherwise:** *take the `PO-78` arm from the
+other side — the `2,287`-key UNADJUDICATED backlog rather than the `REPAIR-OWED` list — reading
+keys that no seat has filed at all, since a key with no reading cannot be in anyone's queue.* ⌗ *If
+you would rather I took part of `69`'s `74`, say which prefixes and I will; that is yours to
+partition, not mine.*
