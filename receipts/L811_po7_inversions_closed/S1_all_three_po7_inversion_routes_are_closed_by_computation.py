@@ -151,9 +151,18 @@ def main():
           'its object, which is the outcome that guard existed to leave room for',
           bool(re.search(r'\|\s*~~\*\*PO-7\*\*', open(
               os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read())))
-    check('and the live kill receipt still credits this line among the three closures -- "the 0.408 '
-          'rests on NO unclosed inversion"',
-          'L-805' in kill and 'unclosed inversion' in kill)
+    #: ⛭⛭ THE REPAIR (r7356 on `r7353` ①'s ORDER).  ** The owed rows were two TOKENS -- a lemma code
+    #: and a two-word phrase -- conjoined.  Either can appear in that file for a reason the claim is
+    #: not about, and neither says this line is credited AMONG THE THREE. **  ⇒ The claim is one
+    #: clause of the kill receipt naming all three routes and the conclusion together, the shortest
+    #: span that carries it and occurs once, with the markdown emphasis family normalised in the
+    #: READER (`r7258`'s form as extended to markdown at `r7336`) so a re-emphasis cannot falsify a
+    #: sentence whose words did not change.
+    _kill_flat = re.sub(r'\s+', ' ', re.sub(r'\*+', ' ', kill))
+    _CREDIT = 'a third admissible phase, estimator bias, and a seam derivation off $\\{0,\\pi\\}$ (`L-805`, `L-806`, `L-807`), so "the $0.408$ rests on NO unclosed inversion'
+    check(f'and the live kill receipt still credits this line AMONG THE THREE closures, in one '
+          f'clause that occurs once ({_kill_flat.count(_CREDIT)}): "{_CREDIT}"',
+          _kill_flat.count(_CREDIT) == 1)
 
     print()
     if FAILED:
