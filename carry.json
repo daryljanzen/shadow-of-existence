@@ -131,6 +131,22 @@
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38744099479",
     "since": "c425cccae4b106f85be68fe6b289c3c2d75ffb18"
+   },
+   "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
+    "gates": [
+     "\u24b7\u2466",
+     "\u24b7\u2467",
+     "\u24b9\u2460"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38751707570",
+    "since": "cfa26a4ee7e70cd1fd23e9a148869b8f5ff53e9e"
+   },
+   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
+    "gates": [
+     "\u24ba\u2461"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38751707570",
+    "since": "cfa26a4ee7e70cd1fd23e9a148869b8f5ff53e9e"
    }
   },
   "tolerance": {
