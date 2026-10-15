@@ -3516,6 +3516,17 @@ EST = {
         'runs, has never once conflicted in a merge, its compile times of minutes to twelve minutes are what an '
         'unattended night is for, and its remaining reachable block is 32 NO-CONNECTION rows plus 8 GENERIC-METRIC '
         'IDENTITY against a real end of 20 that does not move. 70 is on the repair stride and not on Lean; the '
+        'AND 69 LANDED A READING OF THE EFFORT NUMBER WHILE THIS WAS BEING WRITTEN: the band was not wrong because the '
+        'work was mispriced, it was priced in the WRONG UNIT. At one to two minutes a receipt the 51 receipts left are '
+        'about an hour of repair effort across three seats, so what fills a cycle is registering bands, running '
+        'verification, routing questions and waiting on merges -- the remaining distance is set less by how much repair '
+        'is left than by how much overhead each cycle carries, and overhead is the part the gate controls. AND TONIGHT '
+        'IS THE NATURAL EXPERIMENT ON THAT, AT NO COST: of those four terms, waiting on merges goes to ZERO for a night '
+        'and verification is already cheap after r7347 and cc66s timeout fix, registering stays, and routing stalls '
+        'get WORSE because there is no gate to rule. So the night separates them -- if overhead dominates the seats '
+        'clear far more than the two-to-three strides the repair-time estimate predicts, and if routing stalls bite '
+        'they clear less and name the stalls in their replies. The mornings merge measures it and no seat does '
+        'anything differently tonight. '
         'secondment discharged at r7339. row names runs to r7353 and the rows it rules on to r7354. '
         ),
     'PO-79': ('the crossings kernel is one operator with one frequency slot and the two exponents the corpus computes are it acting on two species: which species perturbation does the crossing transport', 1, 0, 3, None,
