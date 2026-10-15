@@ -36,6 +36,30 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
+    # ⛭ r7379: the shape-deficit mechanism.  2 steps = the workable half (the one-multipole shape
+    #   residual and the damping-scale Gaussian) and the data-gated half (the fourth peak, where PO-47
+    #   measured that the sky cannot discriminate).  GATED on a discriminating datum, which is why the
+    #   generated view must show it as gated rather than as ordinary work.
+    'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
+        2, 0, 3, 'a datum that discriminates the models at the fourth peak',
+        'r7379: OPENED on PO-86\'s ruling of its item 1.  Five rows stood near this question and every one was a '
+        'narrower object, and all five strikes are upheld: PO-10 (which run the comparison rests on), PO-47 (what '
+        'displaces the fourth peak -- struck on a STOPPING RULE, the sky unable to tell the models apart there, with '
+        'three candidates unrun), PO-56 (the contrast accounting -- closes exactly and cannot attribute), PO-70 (the '
+        'projection\'s extra retention -- constitutive rather than evidential, and required), PO-75 (the anisotropic '
+        'source -- undischargeable rather than merely unmeasured).  So nothing was wrongly struck: the item the '
+        'papers carry fell between five rows, which is r7013 (1), a different kind of object, and earns a row of its '
+        'own.  P18 states it: the acoustic rejection is the largest open item in the paper, and what the cosmology '
+        'names as owed is a mechanism for the deficit, which the driving\'s measured size does not supply -- and the '
+        'object rejected is a computed spectrum rather than the framework.  ALREADY RULED OUT: the driving (within '
+        'four per cent of the control\'s, measured by subtraction on both arms and slightly weaker rather than '
+        'stronger), the damping envelope (imposing the control\'s moves the peak a seventh of a multipole against an '
+        'offset of two), the two instrument faults (the wavenumber integral carried past the reported multipole, the '
+        'projection carrying the polarisation source), and the third-peak band (tracking matter-radiation equality on '
+        'both routes).  THE ROW OPENS SPLIT: the one-multipole shape residual and the damping-SCALE Gaussian that no '
+        'tilt removes are workable now; the fourth-peak displacement is DATA-GATED, since a candidate there can be '
+        'computed but not tested against this datum.  Saying which half is which is the distinction r7377 found the '
+        'register could not express.'),
     # ⛭ r7371: the coherence phase.  5 steps = the contradictions, P7, P18's frontier table, the
     #   seventeen unrowed items, and the gate that stops the drift recurring.  Not gated on anything:
     #   every ruling is a read of receipts and no part of it waits on PO-78 or on the Lean line.
@@ -125,7 +149,110 @@ EST = {
         'opposed, which is a one-state defect in P7 either way. Whether they conflict with P10s claim that the one '
         'open thing is the ultraviolet definition depends on what P10 means by it, so P10 is the next paper. 1 of 29 '
         'items ruled, 1 more ruled open with its consequence named, 1 shown to need a second paper. The P7 read '
-        'continues before any P7 edit. '),
+        'continues before any P7 edit. '
+        '⛭ THE LIVE CLAUSE (SET r7375). THE P7 READ IS TWO-THIRDS DONE AND IT HAS MOVED TWO OF THE ELEVEN '
+        'CONTRADICTIONS OUT OF P7 ALTOGETHER: C3 and C4 are one-state failures inside P16, its abstract against its own '
+        'body. Read in full since r7373: the axioms and the lapse-shift proposition, the consistency section, the whole '
+        'applications section including the time-travel, censorship, Hawking, information, mechanics, hole-argument and '
+        'FLRW subsections and the applications synthesis, the three optical additions, the SdS construction, and the '
+        'inherited datum. Still unread: the Null-Boundary Correspondence, the lift, the central theorem, the whole- '
+        'corpus synthesis and the frontiers middle -- so no P7 edit is made at this revision either. ITEM 1, THE '
+        'ACOUSTIC PEAK STRUCTURE: OPEN, AND P7 SAYS SO, with no P7 defect in it at all. P7: the full-spectrum '
+        'likelihood rejects the computed temperature spectrum on its shape, the sharpest datum against the '
+        'construction, and a mechanism for that deficit is what the cosmology names as owed; its frontiers item says '
+        'what is open is what displaces the fourth peak, narrowed by what is already ruled out. So P6, P15 and P18 are '
+        'right and the whole defect is in the REGISTER: four rows struck while the papers carry the item. Each of the '
+        'four strikes is read separately, and PO-47s is already read as a stopping rule on measurability whose own '
+        'text records that the three candidate mechanisms were not run. ITEM 13 and C4: THE DEFECT IS INSIDE P16 and is '
+        'ruleable as a contradiction without the physics. P16s ABSTRACT lists the last-percent abundance precision as '
+        'closed rather than open; P16s own BODY, with P15 and P17, calls it the open edge. Whatever the physics, one '
+        'paper cannot say both. The items STATUS waits on P16s read; the DEFECT does not, and recording it now stops '
+        'the repair being attributed to P7. ITEM 3 and C3: P7s SIDE IS THE CLEAREST OF THE FOUR AND IT IS HANDED OVER, '
+        'NOT OWED. Eta is inherited exactly as flat LCDM inherits it and nothing here needs it derived; a derivation of '
+        'eta and of the onset is what would go beyond, and the lap cannot supply one, baryon number crossing conserved '
+        'and the branch point relabelling its sign, so the construction has no baryogenesis and needs none. We claim no '
+        'derivation here and record only the identification: this item and the matter sectors are ONE item read at two '
+        'ends, and what both wait on is handed over to the matter sector rather than owed by the substrate. And P7 '
+        'carries the strikes own ground in a register note beside the section: PO-16 struck because the item is worked '
+        'and deriving the datum is a bonus rather than a debt -- a strike whose ground the paper itself states and '
+        'endorses, which is the shape an UPHELD strike will have. Not ruleable without P15 and P16. And a second site '
+        'for item 8s scope defect: the information section also says the crossing itself is settled on both halves, so '
+        'that repair touches two sites in P7 and not one. RUNNING TALLY: 2 items ruled, 3 more with their defect '
+        'located and their owner identified, 1 shown to need a second paper. And the direction is consistent -- every '
+        'reading so far has made the problem smaller or moved it off P7. '
+        '⛭ THE LIVE CLAUSE (SET r7377). THE ARCHITECTURE WAS ALREADY THERE, AND FINDING IT CORRECTS THIS ROWS OWN '
+        'FRAMING: the programme did not lose its open problems, it keeps them under a standing law, and what drifted is '
+        'that the register struck the three rows the other two maps point at. P7s frontiers section carries a Daryl- '
+        'directed comment block stating the law: this is the corpuss ONE open-problems section, and every open / '
+        'frontier / incomplete / remains / not yet / deferred claim elsewhere must reference an item here or be struck '
+        'as a false-open, the laws own home being this section together with THE_REGISTER; and THE BINARY, kill or a '
+        'family member, with park forbidden. THREE LIVE ARTEFACTS, NOT ONE MAP: P7 frontiers with three items (the '
+        'scalar perturbation sector as WORK, the quantum and matter sectors as BOUNDARIES); THE_OPEN_PROBLEMS_LEDGER '
+        'with eight families, currency-generated and current to r7371, declaring itself a view of the register and the '
+        'register the single source of truth, and whose view says three families are live at PO-31, PO-23 and PO-56; '
+        'and THE_REGISTER, which has struck all three of those rows. THE_PLANs canonical opens block is deliberately '
+        'marked historical, so it is not a live mirror and not a defect. SO THE DEFECT IS THE RECURRING ONE THIS CORPUS '
+        'NAMES AGAINST ITSELF: the register retired three rows and nothing that references them was updated. 69s '
+        'census found it from the papers end; this is the same defect from the maps end, and the two agree. And the '
+        'registers strike is the newest statement but not automatically the right one, which is what makes each case a '
+        'reading: two of the strikes in question are a stopping rule and a non-attribution finding rather than answers. '
+        'THREE ITEMS RULED ON THAT EVIDENCE. Item 7, the ultraviolet definition: PO-23s STRIKE IS UPHELD -- the strike '
+        'says the sums are defined by the constructions own regulator and P7s body says exactly that, with its '
+        'frontiers head classing the quantum sector a boundary whose handovers are not this constructions to close; '
+        'register and paper agree and the LEDGERs family-8 entry is the stale reference, which makes P10s wording the '
+        'odd statement out rather than the paper the register contradicts. Item 3, the progenitor spectrum: PO-31s '
+        'STRIKE IS UPHELD on the ground P7 itself states, its strike text reading that neither is owed and neither is '
+        'an open problem while P7 calls deriving the datum a bonus rather than a debt in a register note beside the '
+        'section; the ledgers family-3 entry is stale and what remains is the papers wording in P15 and P16, which is '
+        'prose and not a register question. Item 1, the acoustic peak structure: THE ITEM IS OPEN AND NEEDS A NEW ROW, '
+        'and both strikes were correct about different objects -- PO-56 was struck ON ITS TERMINAL CLAUSE, the '
+        'accounting closing exactly and still unable to attribute because the share it returns is the cosine of a phase '
+        'offset identically and blind to the channels amplitude, which is that rows own stated termination firing on '
+        'a row whose object was the accounting; and PO-47 was struck on a stopping rule with its own text recording '
+        'that the three candidate mechanisms were not run. Neither answers what P7 states is owed, a mechanism for the '
+        'deficit. That is r7013 (1) exactly, a different kind of object, so the consequence is a NEW ROW whose object '
+        'is the mechanism, and nothing is unstruck; PO-10 and PO-70s strikes are read before that rows object is '
+        'written. RUNNING TALLY: 5 items ruled of 29, 2 more with their defect located, and the phases shape corrected '
+        'for the third time -- each time smaller. '
+        '⛭ THE LIVE CLAUSE (SET r7379). ITEM 1 IS CLOSED -- ruled and its consequence landed -- and the ruling is that '
+        'NOTHING WAS WRONGLY STRUCK: all five strikes are upheld and the item the papers carry fell between them. Each '
+        'row read against what it actually asked: PO-10, which run the comparison rests on; PO-47, what displaces the '
+        'fourth peak, struck on a stopping rule with the sky unable to tell the models apart there and three candidates '
+        'unrun; PO-56, the contrast accounting, struck on its own terminal clause, closing exactly and still unable to '
+        'attribute; PO-70, the projections extra retention and whether required, constitutive rather than evidential, '
+        'required, the missing second support structural; PO-75, the anisotropic source, undischargeable rather than '
+        'merely unmeasured. Five correct strikes of five narrower objects. That is r7013 (1) exactly, so the '
+        'consequence is a row: PO-87 IS OPENED AT THIS REVISION on the item itself, a mechanism for the computed '
+        'temperature spectrums shape deficit in P18s and P7s own words, and it opens SPLIT, with its workable half '
+        '(the one-multipole shape residual and the damping-scale Gaussian no tilt removes) and its data-gated half (the '
+        'fourth peak) stated apart in its head. It opens narrow too: the driving, the damping envelope, the two '
+        'instrument faults and the third-peak band are recorded in the row as already ruled out, so nobody re-runs '
+        'them. AND THE_OPEN_PROBLEMS_LEDGERs FAMILY VIEW IS BROUGHT CURRENT IN THE SAME REVISION, which is the other '
+        'half of the repair and the half that was missing last time. The view declares itself a view of the register '
+        'and the register the single source of truth, and all three rows it named as live had since been struck. It now '
+        'reads family 3 CLOSED, family 8 CLOSED, and family 5s remainder closed at PO-56 and LIVE AT PO-87 -- so zero '
+        'live families of the original eight, and one live row that no family numbered. That is the honest shape of '
+        'what happened: the eight families were worked down, and the one item that outlived them all was never a family '
+        'but a question that fell between five rows. Kept rather than rewritten, because that tables own rule is that '
+        'nothing is erased. RUNNING TALLY: 6 of 29 items ruled, 1 new row opened, 1 stale map brought current -- and '
+        'the three live artefacts now agree on the acoustic family for the first time since r7037. '
+        'r7381: ITEMS 2 AND 28 RULED, and item 2 is the phases first REOPEN. Item 2, whether the damping-tail '
+        'displacement of the inferred tilt is a tension: P15, P6 and P18 all state it open and all three agree, P15 in '
+        'the words Not settled, and unchanged by that run, and PO-24 had struck it at r6801 on the ground that the '
+        'displacement is one sigma on an inherited parameter. The strike and the papers disagree about nothing '
+        'measured; they differ in what they conclude. That is the third outcome: the strike stands as a stopping rule '
+        'and the item is open, so PO-24 RETURNS LIVE with its blocker named and WORKABLE -- P15 itself names the '
+        'routes, the low- and mid-l shape, the polarisation spectra and lensing, and those data exist. Its second half '
+        'is P15s own factor of three at l.492, named in print as work not done and carried by no row until now; the '
+        'same question at finer faithfulness, so it is the rows half and not a row of its own. THE REGISTER WAS THE '
+        'SOLE STALE ARTEFACT FOR THIS ITEM -- no gap and no contradiction, the first such case, and the cleanest '
+        'vindication of reading the papers against the map rather than the map against itself. Item 28, whether a child '
+        'universe lives in its parents cosmological constant: NOT OPEN and never a corpus item at all -- it was a '
+        'wrong sentence in the explainer, which 69 corrected at r7371, and both pinned literals are verified in place, '
+        'P17s cosmic time of the bead law and P15s the expansion rate is fixed by the cosmological constant alone. '
+        'One substrate, one throat alpha, one curve through the branch point, so every generation lives in the same '
+        'constant: the construction answers it and no paper ever asked it. No row, no remainder. RUNNING TALLY: 8 of 29 '
+        'items ruled, 1 new row, 1 reopen, 1 stale map brought current. '),
     'PO-10': ('the likelihood comparison, and which run it rests on', 1, 0, 3, None,
         'r6780: REOPENED. P15 sec:refit-bound reports both arms fitted over 215 bins with the same '
         'five parameters free in each, returning chi^2 = 397.13 against 206.44, 1.891 and 0.983 per '
@@ -7702,7 +7829,8 @@ EST = {
         'condition on the interior mass function. NOT CLAIMED that m fails it: nothing computes the '
         'interior, and mass inflation is about the Cauchy horizon at FINITE r, not about the origin. '
 ),
-    'PO-24': ('whether the tilt displacement is a tension', 1, 1, 5, None,
+    'PO-24': ('a constraint on the tilt off the damping tail, and the factor of three in the signature\'s own magnitude',
+        2, 1, 2, None,
         'r6793 NARROWS IT: the structural legs stand and every quantitative leg was computed on a signature '
         'that has since changed size and can change sign. The signature is theta_D/theta_* = r_D/r_s, the '
         'projection cancels from it, and it depends on exactly two choices -- where the plasma is handed over, '
@@ -7726,7 +7854,22 @@ EST = {
         'ratio of anything -- the observed angle is read at last scattering, the peak of the visibility function, so '
         'both r_s and r_D terminate there. The +2.2 percent was r_s anchored at the observed angle against r_D taken '
         'to a sharp recombination cut; the common-endpoint reading is -0.9 percent and the papers carry it. The re-run '
-        'narrows to one configuration, not two.'),
+        'narrows to one configuration, not two.'
+        'r7381 REOPENS IT on PO-86s ruling of its item 2, and this is the phases THIRD OUTCOME applied for the first '
+        'time: the strikes MEASUREMENT stands and its VERDICT does not. r6801 answered the rows question by pricing '
+        'the displacement -- one sigma at +0.0034 +/- 0.0031, on an inherited parameter -- and the item the papers '
+        'state is the INSTRUMENT that would make a price mean anything. P15 says in print, Not settled, and unchanged '
+        'by that run: whether a displacement of that size in the inferred tilt is a tension; what would make it a '
+        'tension is a constraint on n_s that does not run through the damping tail, which this fit does not supply. P6 '
+        'and P18 say the same, P18 in its own frontier table. The strike agrees with the papers on every measured fact '
+        'and differs only in what it concluded from them. Unlike PO-47 the blocker is NOT data-gated: P15 names the '
+        'routes itself -- the low- and mid-l shape, the polarisation spectra, lensing -- and those data exist, so this '
+        'is WORKABLE and waits on a run rather than on a datum. The rows second half is P15s own work not done at '
+        'l.492: the magnitude is not robust to a factor of three, the faithful route giving 0.92 in chi2 per bin '
+        'against the weaker bound the wash is stated at. Carried forward and not re-run: the Gaussian residual to a '
+        'correlation of 1.000000, the tilts fixed seven-tenths share, the 6.3x window dependence, the shape residual '
+        'as an upper bound. AND THE FINDING BEYOND THE ROW: for item 2 the three papers were already coherent with one '
+        'another and already right, and the register was the sole stale artefact -- the first such case of the phase. '),
     'PO-43': ('the Weyl-squared coefficient at second order in the shear', 1, 1, 5, None,
         'r6415/r6435/r6471: the coefficient is COMPUTED -- 1/60 in units of (4pi)^-2, exactly twice a real minimally co '
         'upled scalars, the tower being two such degrees of freedom by P10s own description. Stated on the PHYSICAL-M '
@@ -9586,8 +9729,9 @@ KIND = {'PO-85': 'BUILD', 'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-86', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-24', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-86': 'F',  # ⛭ r7371: the coherence phase -- the register against the papers.
+ORDER = ['PO-86', 'PO-87', 'PO-24', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-87': 'D',
+         'PO-86': 'F',  # ⛭ r7371: the coherence phase -- the register against the papers.
          # ⛭ r7371: PO-78 moved out of C, the quantum sector, which it never was -- it is the
          #   quote-pin instrument.  F is the programme's own record, and PO-86 is there too.
          'PO-85': 'C', 'PO-84': 'D', 'PO-83': 'D', 'PO-82': 'C', 'PO-81': 'D', 'PO-80': 'D', 'PO-79': 'D', 'PO-78': 'F', 'PO-77': 'D', 'PO-76': 'C', 'PO-75': 'D', 'PO-74': 'D', 'PO-73': 'D', 'PO-72': 'C', 'PO-71': 'C', 'PO-70': 'D', 'PO-69': 'C', 'PO-68': 'C', 'PO-67': 'C', 'PO-66': 'C', 'PO-65': 'C', 'PO-64': 'C', 'PO-63': 'C', 'PO-62': 'C', 'PO-61': 'C', 'PO-60': 'C', 'PO-59': 'C', 'PO-58': 'A', 'PO-57': 'D', 'PO-56': 'D',  # r6891: PO-13's live remainder, the acoustic sector.

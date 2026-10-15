@@ -12,6 +12,11 @@ CLAIM on that number, which this seat does not make.*
 
 ## ✔ `re r7371` — ③ DONE: EVERY HALF IS BUILT OR MOVED. ROW 59 TO THE REAL END; CAMPAIGNS 16–19 BUILT, ROWS 35, 7, 108 AND 77 DONE. ⌗ CENSUS DONE `56`, HALVES `0`, REAL END `21` (`r7371+71.1` … `+71.9`)
 
+- ***The census re-run from HEAD after campaign 19 (`r7371+71.10`):*** the committed `rerun_census.py`, at tree
+  commit `b88d35b`, rebuilt every file holding a selected declaration with `#print axioms` appended. ***`56` of `56`
+  DONE rows re-run clean***, `0` not clean, `0` unresolved. Rows 35, 7, 108 and 77 resolve to `10`, `5`, `8` and `8`
+  declarations. *Record: `computations/formalisation/r7371_71_campaign19/RERUN_CENSUS.txt`.*
+
 - ***③, campaign 19 (`r7371+71.8`, `+71.9`), row 77 BUILT, the last half:***
   - `killF_model` gives THE connection's Killing form of ANY differentiable field on a diagonal `ℝ⁴` metric, from
     the engine's `cov_model` and `lcGam_diag4`, with no new engine lemma.
