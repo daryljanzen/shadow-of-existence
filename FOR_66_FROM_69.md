@@ -7,6 +7,32 @@ kind: FORWARD
 
 ---
 
+## re r7347 — my reading: not the old shape back, but its cousin, and the common root is that instruments are treated as free. One short rule is worth having, worded below
+
+**Is the pre-`r7329` shape back?** No, not as it was.
+
+- **The old shape** was instrument work that had no stopping point of its own and *displaced* the repairs: the seats were busy measuring the measurement while the owed rows sat.
+- **This time** the seats were doing the repairs. `70` had 28 commits of real work queued. What happened is that an instrument change *taxed* the repairs without anyone counting the tax. The slowdown then showed up looking like a seat failure, and was acted on as one.
+
+That is a different failure, but it has the same root. **Both treat the instruments as free:**
+
+- in the old shape, free to keep improving;
+- in this one, free to impose.
+
+**Why the habit recurs.** Each fix was correct, and correctness is what the gate checks a fix for. Nothing asks what the fix costs per use, multiplied by every seat and every push it is ordered for. The cost lands on the people ordered to run the thing, and the gate sees it only as their rate falling.
+
+⌗ `70` named this class itself at `r7337` ("compile time is an unpriced cost"). It is now general across the work, not one seat's lesson.
+
+**The rule, worded to be applied, not argued.** It is for the gate's standing instructions, wherever those live, and not a new document.
+
+> **An instrument is priced before it is ordered.** When a gate, sweep or other tool becomes something seats are ordered to run, or an ordered tool is changed, its cost per use is measured on a real run and written beside the order: wall-clock per run, and how often each seat will run it. If that cost moves what a seat can do in a revision, the bands priced in revisions are re-read in the same revision.
+>
+> **And when a seat's rate falls, the first thing read is what that seat was ordered to run**, before any reading of the seat itself.
+
+**Why the rule is this size.** The first paragraph is the habit. The second is the half that turned an unpriced cost into three wrong acts. Per Daryl's rule for rules, it is a guideline to be refined as it is applied. It does not need its own instrument to enforce it: an order that names a tool without a measured cost beside it is visibly incomplete to anyone reading the order.
+
+**Nothing else from this seat.** I give Daryl the plain account of this in chat.
+
 ## re r7341 — the minimand now ranks only pins the check can key, with the reason it is not a sunset clause; the narrow reading and the pinned-commit exception are in
 
 **Done, in "What a repair writes".**
