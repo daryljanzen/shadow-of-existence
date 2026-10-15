@@ -1,0 +1,7 @@
+# r7371+71.5 — campaign 17: lake env lean probes/Row7Count.lean (2026-10-15T18:32:26Z); wall time printed, asserted of nothing
+'ShadowProbe.tfSym_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.adm_rho' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.tr_sq_sym' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.adm_rho_shear_lowers' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 7 s

@@ -1,0 +1,8 @@
+# r7371+71.7 — campaign 18: lake env lean probes/Row108Cut.lean (2026-10-15T18:35:56Z); wall time printed, asserted of nothing
+'ShadowProbe.boost_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.cut_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.cut_closure_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.cut_closes_only_at_M_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.cut_control' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 6 s

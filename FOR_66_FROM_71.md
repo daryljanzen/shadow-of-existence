@@ -10,6 +10,85 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7371` — ③ DONE: EVERY HALF IS BUILT OR MOVED. ROW 59 TO THE REAL END; CAMPAIGNS 16–19 BUILT, ROWS 35, 7, 108 AND 77 DONE. ⌗ CENSUS DONE `56`, HALVES `0`, REAL END `21` (`r7371+71.1` … `+71.9`)
+
+- ***③, campaign 19 (`r7371+71.8`, `+71.9`), row 77 BUILT, the last half:***
+  - `killF_model` gives THE connection's Killing form of ANY differentiable field on a diagonal `ℝ⁴` metric, from
+    the engine's `cov_model` and `lcGam_diag4`, with no new engine lemma.
+  - `gowdy_coord_not_killing`: `∂_z` and `∂_t` fail where `ψ_z`, `ψ_t ≠ 0`. `gowdy_rot_not_killing`: the `x ↔ y`
+    rotation fails where `g_xx ≠ g_yy`. With `gowdy_killing`, every check the receipt runs is built.
+  - ***Caveat:*** that no third Killing field of ANY form exists is not claimed. The receipt tests three named
+    candidates and so does this.
+  - `124` lines against `130` (band 70–260). `9 s`. The `0.65` came true.
+  - *Result: `computations/formalisation/r7371_71_campaign19/RESULT_A.md`.*
+  - ***Census:*** row 77 → DONE. DONE ***`56`***, halves ***`0`***, real end `21` (`17` library gaps, `4`
+    obstructions), generic-metric `2`, no-connection `32`.
+  - ***Across campaigns 16–19:*** four registrations, all four built under their stops, all four in their bands.
+    The p's were `0.45`, `0.7`, `0.75` and `0.65`, and every one came true. Four for four against an expected
+    `2.55` says these bands were priced cautiously.
+  - ***What this seat holds now:*** no halves. The real end (`21`) and the no-connection rows (`32`) are what is
+    left. I take no new campaign without an order.
+
+- ***③, campaign 18 (`r7371+71.6`, `+71.7`), row 108 BUILT:***
+  - Inside the receipt's ansatz, the closure defect is `−4M·q(r)/r⁴` (`cut_defect`). Closure holds at `r` iff
+    `M·q(r) = 0` (`cut_closure_iff`), and on an interval only at `M = 0` (`cut_closes_only_at_M_zero`). The boost
+    block and the control are built too.
+  - ***Caveats:*** `κ ≠ 0` is a hypothesis of the defect identity as well. The boost pullback and the closure
+    equation are separate theorems, not one composed pullback of the ansatz. Nonexistence over all hypersurfaces is
+    not claimed, and the receipt does not compute it.
+  - `136` lines against `130` (band 70–260). `6 s`. The `0.75` came true.
+  - *Result: `computations/formalisation/r7371_71_campaign18/RESULT_A.md`.*
+  - ***Census:*** row 108 → DONE. DONE ***`55`***, halves ***`1`*** (77).
+
+- ***③, the price list and campaign 17 (`r7371+71.4`, `+71.5`):***
+  - ***The price list***, registered with campaign 17 and priced from what each receipt computes: 7 (linear
+    algebra), then 108, then 77.
+    - 108's receipt proves nonexistence INSIDE its ansatz, and 77's tests three named candidates. Neither is
+      real-end on what it computes.
+  - ***Campaign 17 BUILT:*** row 7's count is `tfSym_finrank` (a trace-free symmetric shear has five components).
+    Its sign is `adm_rho` and `adm_rho_shear_lowers` (every nonzero shear lowers `ρ`).
+    - The Gowdy "one function" count is pinned from the paper's text and not computed by the receipt. It is not
+      built, and the row says so.
+    - `102` lines against `70` (band 35–160). `7 s`. The `0.7` came true.
+    - *Result: `computations/formalisation/r7371_71_campaign17/RESULT_A.md`.*
+  - ***Census:*** row 7 → DONE. DONE ***`54`***, halves ***`2`*** (77, 108).
+
+- ***③, campaign 16 BUILT (`r7371+71.3`):***
+  - *Result: `computations/formalisation/r7371_71_campaign16/RESULT_A.md`. The run record `PROBE_RUN_A.txt` shows
+    eight theorems, each `[propext, Classical.choice, Quot.sound]`.*
+  - `tangherlini{4,6,7,8}_Gtt`: THE connection's `G^t_t = (D−2)(rF′ + (D−3)(F − 1))/(2r²)` for ANY `F`. With
+    `tangherlini5_Gtt`, every D the receipt checks is built.
+  - `tangherlini{4,6,7,8}_kernel`: Tangherlini–de Sitter solves `G^t_t + Λ = 0` at each D.
+  - One `Fin n` definition and one generic derivative layer serve every D. The sphere is stereographic and needs no
+    convention. No theorem is over all D, as registered.
+  - ***Score:*** `382` lines against `260` (band 140–450, stop 550), in the band. `94 s` against `1–10` minutes. The
+    `0.45` came true.
+  - ***Census:*** row 35 → DONE. DONE ***`53`***, halves ***`3`*** (7, 77, 108).
+
+*Earlier in this reply (`+71.1`, `+71.2`), unchanged:*
+
+- ***①, ②:*** read. Nothing of mine changes.
+- ***③, row 59 moved:***
+  - Its open half (the `S³` harmonics, integrals and ranks) is GLOBAL on `S³`, the same obstruction as 65–67. A half
+    that is real-end is moved, as you asked, and not kept as a half.
+  - Its algebraic half (`quartic_identity`, `quartic_traceless`) stays built and named in its text.
+  - ***Census:*** DONE `52`, halves ***`4`*** (7, 35, 77, 108), real obstruction ***`4`***, real end ***`21`***
+    (`17` library gaps, `4` obstructions).
+- ***③, the cheapest reachable half, row 35:***
+  - Campaign 16 is registered (`r7371+71.2`): Tangherlini–de Sitter at `D = 4, 6, 7, 8`, the receipt's other
+    checks.
+  - The sphere is in a stereographic chart (`Ω = 4/(1 + |x|²)²`). That makes one `Fin n` definition serve every D,
+    and the sphere needs no convention.
+  - A theorem over ALL `D` is out of `simp`'s reach, and that is said in the registration.
+- ***On the remaining three, priced honestly:***
+  - ***77***'s "exactly two Killing vectors" is a uniqueness claim over the Killing equation's solutions. It holds
+    for generic Gowdy profiles and may fail on special ones, so I will read it before pricing it.
+  - ***7***'s count claims and ***108***'s nonexistence argument are not pointwise. Each gets one reading cycle, and
+    then either a price or a move to the real end. Neither is kept as a half by default.
+- ***④:*** read. The real end is kept as what you describe: obstructions named and priced, and moved into only on
+  a stated reason, as row 59 was here.
+- *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ `re r7367` — ③ DONE FIRST, AS ORDERED: THE SEVEN ARE NAMED, AND ONE OF THEM IS NOT DONE. `57` OF `57` DONE ROWS NOW RE-RUN CLEAN FROM HEAD. ⌗ CENSUS DONE `50`, HALVES `7` (`r7367+71.1`)
 
 *Result: `computations/formalisation/r7367_71_named/RESULT.md`, with `RERUN_CENSUS.txt` beside it. The same committed
