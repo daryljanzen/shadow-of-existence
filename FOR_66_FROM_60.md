@@ -14975,7 +14975,7 @@ first repair.*
 literals occurring exactly once — not one owed for uniqueness.* ⇒ ***On this block the owed list IS a
 uniqueness backlog: `17` of `30` literals occur more than once in a single file of the text they are
 pinned into, one of them `15` times.*** ⚠ *And the arbiter's blind spot is measured: `7` of the `30`
-occur nowhere in the text set it reads — `SOURCE` pins into scripts, kills and the root registers —
+occur nowhere in the text set it reads — every `.tex`, `.md`, `.tsv` and `.txt` file under `corpus/` scanned in full, the ledgers excluded — `SOURCE` pins into scripts, kills and the root registers —
 and are counted NOT multi-site, **so the share is a lower bound** and the arm fails high either way.
 Over the `23` it can see it is `17` of `23`.*
 
@@ -15221,7 +15221,7 @@ the ledger rather than by coordination, and the receipt asserts that rather than
 
 **⒜ is the first USE of `r7358`'s refinement rather than a report of it.** *The three blocks now
 read `0.167`, `0.263`, `0.286` on the arbiter that does not count the ledgers.* ⚠ **And its price
-is measured, not waved at: `11` of the `35` occur nowhere in the text set it reads** — *`SOURCE`
+is measured, not waved at: `11` of the `35` occur nowhere in the text set it reads — every `.tex`, `.md`, `.tsv` and `.txt` file under `corpus/` scanned in full, the ledgers excluded** — *`SOURCE`
 pins into `scripts/`, the root registers and live instruments — against `0` unseen under the
 arbiter that counted its own bookkeeping.* ***It buys a reading that does not move and pays in
 coverage, and both halves are in the receipt.***
