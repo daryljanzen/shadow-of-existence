@@ -51,6 +51,7 @@ is the deliverable and every hit is routed to 66.  No other seat's receipt touch
 
 Written r7037 by node 70.  Stated for reversal.
 """
+import ast as _ast
 import glob
 import os
 import re
@@ -149,8 +150,41 @@ _CHI2 = _CHI2[:_CHI2.find('\ndef ', 10)]
 print('\n' + '=' * 100)
 print('PART (i) -- THE CLAIMS THAT STAND: each source carries a real noise model in its own code')
 print('=' * 100)
-check("the likelihood function `chi2_of` counted as COV evidence reads the covariance itself -- checked, not assumed",
-      'cov = COV_TT[np.ix_(keep, keep)]' in _CHI2)
+#: ⛭⛭ r7360+60: THE THREE CODE SPELLINGS IN THIS FILE ARE READ FROM THE SYNTAX TREE INSTEAD.
+#: *Each was a PROXY on live code -- a line of someone else's source quoted character for character,
+#: two of them clipped mid-call on an open parenthesis -- so a reformat, a rename or a space broke
+#: the pin while the behaviour stood, and the behaviour is the whole claim.*
+#:   ⇒ `r7345`'s form, ruled at `r7353` ③: ** where no pin is ADMISSIBLE the repair is a STRUCTURAL
+#:     ASSERTION and the row retires as repaired-and-invisible. **  These three mint no ledger key and
+#:     are strictly stronger than the spans they replace.
+def _reads_name(tree, inside, name):
+    """does the function `inside` READ the global `name` anywhere in its body?"""
+    for fn in [n for n in _ast.walk(tree)
+               if isinstance(n, _ast.FunctionDef) and n.name == inside]:
+        if any(isinstance(n, _ast.Name) and n.id == name and isinstance(n.ctx, _ast.Load)
+               for n in _ast.walk(fn)):
+            return True
+    return False
+
+
+def _calls(tree, fn_name, arg_names=()):
+    """the calls to `fn_name` in `tree`, optionally requiring these bare Name arguments"""
+    out = []
+    for n in _ast.walk(tree):
+        if (isinstance(n, _ast.Call) and getattr(n.func, 'id', getattr(n.func, 'attr', None))
+                == fn_name):
+            have = {a.id for a in n.args if isinstance(a, _ast.Name)}
+            if set(arg_names) <= have:
+                out.append(n)
+    return out
+
+
+_LIK_TREE = _ast.parse(_LIKF)
+check("the likelihood function `chi2_of` counted as COV evidence reads the covariance itself -- "
+      "asked of its SYNTAX TREE rather than of its spacing: the function body loads COV_TT, and a "
+      "reformat or a rename cannot make that look true",
+      _reads_name(_LIK_TREE, 'chi2_of', 'COV_TT')
+      and _CHI2.strip().startswith('def chi2_of('))
 for what, name, need in GROUP_I:
     ev = set(evidence(name))
     check(f"(i) {what}", need <= ev, f"`{name[:60]}` carries {sorted(ev)}")
@@ -187,14 +221,48 @@ check("(ii)1 \"one standard deviation from the sky\": the intercept's +-0.0099 i
       not evidence(NP) and 'seven parabola windows the sky\'s $\\varphi/\\pi$ moves by $\\pm0' in t_np and '0.0099' in t_np, f"evidence {evidence(NP)}")
 check("    and the receipt that DID propagate the covariance through the locator says it does not re-open the "
       "intercept, and names the window spread as a procedure spread and not the sky's uncertainty",
-      'NOT a re-opening of the phase intercept, the damping envelope, the driving or the refit, a' in src(FP) and 'PROCEDURE' in src(FP)
+      #: ⛭ r7360+60: `'PROCEDURE'` alone was a single upper-case word at two sites standing in for
+      #: the whole claim.  ** Replaced by the clause that MAKES the claim, with its subject -- which
+      #: number, what spread, and what it is not -- read whitespace-normalised because it wraps. **
+      'NOT a re-opening of the phase intercept, the damping envelope, the driving or the refit, a' in src(FP)
+      and ("quoted the sky's fourth peak as 1121.9 with a spread of 0.87, and that number is a "
+           "PROCEDURE spread -- how far the answer moves as the parabola window is swept over seven "
+           "values on ONE realisation of the sky") in ' '.join(src(FP).split())
       and "It is not the sky's uncertainty" in ' '.join(src(FP).split()))
 NS = 'P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control'
 t_ns = src(NS)
+_NS_TREE = _ast.parse(t_ns)
+
+
+def _ns_structure():
+    """DU built from `delta_on` over a comprehension, its spread np.std(DU, ddof=1), and `delta_on`
+    reaching both arms through `phase_of` -- the claim, read off the tree."""
+    #: ⌗ DU is assigned twice -- built, then filtered to the finite entries -- so the test is that
+    #: exactly ONE of its assignments BUILDS it, not that it is assigned once.
+    du = [n for n in _ast.walk(_NS_TREE) if isinstance(n, _ast.Assign)
+          and any(isinstance(x, _ast.Name) and x.id == 'DU' for x in n.targets)]
+    built = [n for n in du if _calls(n.value, 'delta_on')
+             and any(isinstance(k, (_ast.ListComp, _ast.GeneratorExp))
+                     for k in _ast.walk(n.value))]
+    if len(built) != 1:
+        return False
+    spread = [c for c in _calls(_NS_TREE, 'std', ('DU',))
+              if any(k.arg == 'ddof' and getattr(k.value, 'value', None) == 1 for k in c.keywords)]
+    if len(spread) != 1:
+        return False
+    fn = [n for n in _ast.walk(_NS_TREE)
+          if isinstance(n, _ast.FunctionDef) and n.name == 'delta_on']
+    arms = {a.id for f in fn for c in _calls(f, 'phase_of') for a in c.args
+            if isinstance(a, _ast.Name)}
+    return len(fn) == 1 and {'OA', 'OC'} <= arms
 check("(ii)2 \"better than seven standard deviations\": the +-0.000974 is the standard error over disjoint stretches of "
       "the phase difference between two COMPUTED spectra, with no noise anywhere in the source",
-      not evidence(NS) and 'DU = np.array([delta_on(' in t_ns and 'np.std(DU, ddof=1)' in t_ns
-      and 'phase_of(g, OA' in t_ns and 'phase_of(g, OC' in t_ns, f"evidence {evidence(NS)}")
+      #: ⛭⛭ r7360+60: four code spellings, two of them CLIPPED MID-CALL on an open parenthesis --
+      #: character windows, not claims.  ** Asked of the syntax tree instead: DU is built by a
+      #: comprehension over `delta_on`, its spread is `np.std(..., ddof=1)` of DU, and `delta_on`
+      #: calls `phase_of` on BOTH arms. **  That is what 'the standard error over disjoint stretches
+      #: of the phase difference between two computed spectra' says, and it survives a reformat.
+      not evidence(NS) and _ns_structure(), f"evidence {evidence(NS)}")
 BK = 'P15_the_bank_already_existed_and_the_doppler_carries_a_growing_minority_of_the_excess'
 R7033 = 'P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear'
 check("(ii)3 \"indistinguishable from zero at the lowest bands\": its source is the one r7033 gated as drawing no "
