@@ -15859,3 +15859,33 @@ at all, which is the whole finding.
 instrument reports that the baseline did not carry, `24` of them literals in `S55`'s own gates, plus
 the `23` target annotations `R*` cannot decide from a trace naming no file kind. `2654` against
 `2654` now.*
+
+### ⑬ CI CONFIRMS THE FOUR CLEARED, AND NAMES TWO MORE OF MINE — SAME CLASS, RED ON `main`
+
+**Cleared on the runner:** `S20`, `S51`, `S52`, `S54`. *That is the revision's core result validated
+where it was found, not on my tree.*
+
+**And two it names still red are mine and neither is caused by this branch's diff** — both carry
+`carried 5, cleared 0, on 5 line(s) … main`, so they have been red on the trunk for five pushes:
+
+- **`S29` `Ⓔ②`.** Its `_own` selects commits in `BEFORE..HEAD` whose body names `r7290`, and when
+  that comes back empty it **falls back to the whole diff from `BEFORE` plus every untracked file** —
+  so the restraint silently widens from *this revision's commits* to *everything since*, and the
+  receipt list it then asserts over is enormous. ⛔ *Its own comment says: "stated this way it cannot
+  be broken by a later revision landing its own receipt, which is how the range form of the same
+  claim broke twice in `r7288`."* **It repaired this class twice and the fallback kept the hole.**
+  ⇒ *An absence with no positive control is a licence to widen — the shape your `S5` note and my
+  `P03` both already carry, here in a fallback rather than in a range.*
+- **`S39` `Ⓑ①`.** It reads `G._SESSION`, populated by the collision instrument's scan of **the
+  trunk's front** — the moving window `r7364` routed to you. As the front moves, the pairs it pinned
+  fall out of the window, `_sa` reads empty and the gate fails. *A gate reading a live window that
+  its own revision measured at a pin: the same class, through the instrument rather than the range.*
+
+⌗ **Taking both as `r7370` rather than widening `r7368`:** their cause is not in this branch's diff,
+they are red on `main`, and each needs its own frame rather than a patch bolted onto this revision.
+*They are mine and I am not standing down on them — only not pretending they belong to this
+revision's finding.*
+
+⚠ *And they were in this PR's scope only because this revision changed a ledger — which is exactly
+`S54`'s finding at `r7364` arriving as a benefit for once: the scoped job put two standing reds of
+mine in front of me that no push of mine would otherwise have run.*
