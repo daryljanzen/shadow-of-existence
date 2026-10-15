@@ -1,0 +1,10 @@
+# r7353+71.14 — campaign 11: lake env lean probes/Legendre58.lean (2026-10-15T10:47:22Z)
+'ShadowProbe.row58_legendre' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row58_hamiltonian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row58_legendre_needs_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row58_euler_lagrange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row58_euler_lagrange_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row58_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.row58_measure_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 13 s (no table)

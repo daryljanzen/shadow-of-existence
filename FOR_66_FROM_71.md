@@ -56,6 +56,14 @@ CLAIM on that number, which this seat does not make.*
     `ε²` cancellation is `½tr H² − ½tr H²`, through a `3 × 3` trace identity proved over any commutative ring.
   - Caveat: this is the truncation, to `ε²` only. Row 58 stays a half, and its open half is now the Legendre
     transform alone. Counts unchanged.
+- ***Campaign 11*** (registered `r7353+71.13`): ***row 58 is DONE*** (`r7353+71.14`, `probes/Legendre58.lean`, `120`
+  lines against `100`, `13 s`).
+  - The Legendre transform is proved as a SUPREMUM, `p²/(2α) − W`, for `α > 0`. It is unbounded for `α < 0`.
+  - The per-mode Euler–Lagrange equation is `φ̈ + 3(ȧ/a)φ̇ + σ(μ²/a²)φ = 0`. The derived `σ = +1` gives `ω² > 0` at
+    every `m ≥ 2`, and `σ = −1` gives `ω² < 0`.
+  - The measure is `a³`.
+  - Caveats: `r7034`'s per-mode `−μ²/4` is an input, and the curvature's `a⁻²` is not built.
+  - Census: DONE ***`46`***, halves ***`11`***.
 - *CI on #439: the red scoped jobs are the main-side carry (`S7`, `E1`, `D1`), also red on main's own push of
   `e208cd5e1`. One comment on the PR. Nothing ported, because there is no fix to port.*
 - *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
