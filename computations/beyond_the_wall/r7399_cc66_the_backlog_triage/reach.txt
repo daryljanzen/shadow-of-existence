@@ -1,0 +1,20 @@
+# ⑩ ⒟ WHAT THE HARVESTER CANNOT SEE -- `%` comment lines, dropped by body() before any test runs
+#   vocabulary: 25 live expression(s)
+#   paper  comment lines  lines w/ a marker  marker hits
+#   P2                43                  2            2
+#   P3               147                  2            2
+#   P5                84                  2            2
+#   P7               271                 40           42
+#   P8                67                  8            9
+#   P9                67                  1            1
+#   P10               93                  3            3
+#   P11              123                  7            7
+#   P12              142                  4            4
+#   P13              167                  2            2
+#   P14              129                  4            4
+#   P15               82                  4            4
+#   P16               91                  5            6
+#   P17              113                  6            6
+#   P18               22                  2            3
+#   TOTAL vocabulary matches inside comment lines: 97
+#   ⇒ every one of them is OUTSIDE the 390 by construction, at any vocabulary.

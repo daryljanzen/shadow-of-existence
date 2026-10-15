@@ -20356,3 +20356,85 @@ patterns rather than one.*
    `9177c52baf`, `cf8bd7a858`, `db7d54f2d8` and a `--rebuild` for `fb2d798ceb`.
 3. **The `scoped` reds are not any seat's diff** — `.53`: red on `main` and four other lines, with
    `red_carry` marking `S55` ⚠ `CONTRADICTED`.
+
+## ⛭⛭ `r7399+cc66.56` — **⑩ ANSWERED AND THE NUMBER CUTS THE WORK: `80` PER CENT OF THE BACKLOG OWES NOTHING, AND ONLY `7.5` PER CENT OWES A ROW. ⛔ THREE BANDS OF FOUR REFUTED AND EVERY REFUTATION RAN TOWARD A SMALLER WORKLIST**
+
+*Read at `origin/main` `15c6a1d9b`, merged in first. Sample and bands registered in
+`computations/beyond_the_wall/r7399_cc66_the_backlog_triage/REGISTRATION.md` and **pushed before a
+single site was read**. ⛔ Nothing is written into `open_reference_baseline.tsv`.*
+
+### THE SAMPLE AND THE COUNTS
+
+`n = 40` of the `329` sites, `random.Random(7399).sample(sorted(sites), 40)`, fixed before the read.
+Finite-population correction `0.9387`.
+
+| bucket | n | of `40` | over the `329` |
+|---|---:|---|---|
+| `NOT-AN-OPEN-CLAIM` | `19` | `47.5` % ± `7.4`pp | `156` ± `24` |
+| **`②` a stated limit — owes nothing** | **`13`** | **`32.5` % ± `7.0`pp** | **`107` ± `23`** |
+| `③` discharge named — owes an ORDER | `5` | `12.5` % ± `4.9`pp | `41` ± `16` |
+| `①` a distinct object — owes a ROW | `3` | `7.5` % ± `3.9`pp | `25` ± `13` |
+
+**The number you asked for, both ways:** kind `②` is **`32.5` % ± `7.0`pp of the backlog**, and
+**`61.9` % ± `10.6`pp of the OPEN-CLAIM subset** — six open claims in ten are limits the register must
+not row.
+
+### ⇒ ⛭ BUT THE NUMBER THAT ACTUALLY MAKES THE WORK SMALLER IS BIGGER THAN EITHER, AND IT IS YOURS
+
+**`PO-86` owes no row for a `NOT-AN-OPEN-CLAIM` site either.** So the fraction that owes nothing is
+not `32.5` per cent but:
+
+> ⛭ ***`80.0` % ± `5.9`pp of the `329` owes NOTHING*** — `263` ± `20` sites.
+> ⛔ ***`20.0` % ± `5.9`pp owes anything at all*** — `66` ± `20`.
+> ⛔ ***And only `7.5` % ± `3.9`pp owes a ROW*** — `25` ± `13`. The rest of what is owed is **ORDERS**.
+
+⇒ ***`PO-86`'s discharge is a reading of about `66` sites, of which about `25` can end in a register
+row. Not `390`, and not `329`.***
+
+### THE BANDS — ⒟ HELD, ⒜ ⒝ ⒞ REFUTED, AND ALL THREE TOWARD LESS WORK
+
+- ⒜ `NOT-AN-OPEN-CLAIM` `55`–`85` % → **`47.5` %. REFUTED LOW.** *I took the band from `.47`'s `70`
+  per cent. **This net is less noisy than that one** — consistent with `.54`, where the harvested
+  expressions that fire most turned out to be the programme's own vocabulary and not ordinary
+  English.*
+- ⒝ kind `②` of the open-claim subset `20`–`55` % → **`61.9` %. REFUTED HIGH.**
+- ⒞ kind `③` `0`–`15` % → **`23.8` %. REFUTED HIGH.** *My reason was that a remainder whose discharge
+  is KNOWN would usually already carry a row. **It does not: the corpus names its own discharge
+  routes in prose far more often than it rows them.***
+- ⒟ comment-line markers `60`–`400` → **`97`. HELD.**
+
+### ⛔ YOUR CAUTION IS CONFIRMED EXACTLY, AND ONE HALF OF IT IS NOT MINE TO FIX
+
+**`97` vocabulary matches sit inside `%` comment lines, every one outside the population BY
+CONSTRUCTION** — `body()` drops comment lines before any test runs, at any vocabulary. `42` are in
+`P7` (excluded by design), so **`55` are in papers the arm covers.**
+
+⛭ **And `P16`'s case is verified, not inferred.** Its `STATUS` block, lines `79`–`87`, literally reads
+*"Remaining open edge = the last-percent rate"* and *"open edge: the abstract and Sec verdict class it
+closed rather than open"*. ⇒ ***That is the defect you charged against the net, and the fix for it is
+a SCOPE change — read comment blocks — not a vocabulary change.*** *Your words: "Both were in a
+comment block or a parenthetical, and the whole-document read found them." The comment block is
+mechanically reachable if you want it; say so and I will build it.*
+
+⛔ **The second one I will not claim the net could have caught.** *"`η` standing as an analogue of
+itself" carries no openness marker of any kind — it is a self-reference defect in an explanatory
+sentence. **No vocabulary and no scope change to this harvester reaches it, because it is not in this
+instrument's class at all.** A parenthetical is NOT stripped, so reach was never the problem there.*
+
+### ⛭ AND YOU ASKED WHETHER KIND ② WANTS ITS OWN VERDICT. IT DOES — AND SO DOES ③
+
+*Said with the measurement and ⛔ **not added**, per your line that the verdict column is yours:*
+
+- **`STATED-LIMIT`** for `②` — `107` ± `23` sites. *Without it these rows can only be marked
+  `NOT-AN-OPEN-CLAIM`, which is FALSE (they are open claims), or sit `UNREAD` for ever. **It is the
+  largest class in the backlog after the false positives.***
+- **`OWES-AN-ORDER`** for `③` — `41` ± `16`. *`OWED` is the nearest existing value and it is wrong:
+  `OWED` reads as a row owed, and `③` owes an order instead.*
+- ⌗ *`①` needs nothing new — `OWED` fits it.* ⛭ **The gap in the current vocabulary is precisely the
+  rows the register MUST NOT row, which it cannot express at all.**
+
+⌗ *`classified.tsv` carries all `40` rows with the reason for each, so any one can be overturned on
+its own evidence. **A definitive `①`-against-`②` ruling against the register's existing items is
+yours** — what I measured is the shape of each paragraph's claim. ⌗ Two instrument notes reported
+rather than smoothed: the host-paragraph lookup failed on `2` of `40` (sites `10`, `36`) on
+whitespace normalisation; both were read from the sentence alone and are marked.*
