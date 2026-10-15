@@ -182,19 +182,53 @@ test cannot be checked by the next reader.
 
 ## What a repair writes
 
+This section governs repairs. It says what a repair writes in place of an owed quotation; it is not a
+test applied to quotations already standing, which steps 1 to 4 decide.
+
 A repair either withdraws the check, with its case written down, or replaces the owed quotation with a new
-one. The new quotation is the shortest span of the site that meets both of these:
+pin. The new pin is one span of the site, or several spans required together inside one locus, and it meets
+both of these floors.
 
-1. **It carries the whole claim.** Every part of what the check asserts is inside the span: the subject,
-   any quantifier, the object named, and any condition or negation Test 1 would find outside it. A span
-   that leaves part of the claim outside lets the check pass on the wording's presence instead of the
-   claim's, which is the defect being repaired. So the span is a whole clause, never a fragment, and read
-   alone it would reach `MEANING-HELD` or `DELIBERATE` under steps 1 to 4.
-2. **It occurs once.** The span stands exactly once in the file it is checked against, compared the way
-   the checker compares: whitespace collapsed, emphasis commands unwrapped, `$` deleted, `~` read as a
-   space. A span that stands more than once cannot say which place the claim is about (Test 4).
+1. **It carries the whole claim.** Every part of what the check asserts is in the pin: the subject, any
+   quantifier, the object named, and any condition or negation Test 1 would find outside it. A pin that
+   leaves part of the claim out lets the check pass on the wording's presence instead of the claim's, which
+   is the defect being repaired. A single span is therefore a whole clause, never a fragment, and read alone
+   it would reach `MEANING-HELD` or `DELIBERATE` under steps 1 to 4. Several spans carry the claim when,
+   read together inside their locus, they state it.
+2. **It finds one place.** Counts are taken the way the checker compares: whitespace collapsed, emphasis
+   commands unwrapped, `$` deleted, `~` read as a space. A single span must occur exactly once in the file
+   it is checked against. Several spans meet the floor when:
+   - one of them, **the anchor**, occurs exactly once;
+   - every other span is required **within the anchor's locus** — the sentence that contains the anchor,
+     or a smaller unit the check names, such as a row;
+   - the check requires exactly one locus to hold them all.
 
-**Then stop.** Words beyond what these two require add no protection. Each is something a later edit may
+   The other spans need not occur once on their own: a value or a word that stands many times in the paper
+   is located by the anchor beside it. Required anywhere in the file, they would not be joined at all, and
+   Test 5 would owe the repair again. A pin none of whose spans occurs once has nothing to locate it, and
+   does not meet this floor however its pieces are arranged.
+
+   The floor does not apply when the file is read at a named commit. What it prevents is a later edit
+   landing the pin on the wrong place, and a file read at a fixed commit has no later edits.
+
+The normaliser only merges texts, never separates them, so a count can rise under normalisation and never
+fall: a raw count is a lower bound on the count this floor is tested against. Every count under this floor
+is taken normalised.
+
+The floor is stated through the locus, not through the length or kind of span, because neither predicts
+uniqueness. A number the paper states once is unique at five characters; a prose word the paper uses
+throughout is not unique at any length it has. What separates them is whether the span is what the claim
+says or what the claim is about, and the checker cannot see that difference. The locus lets a pin require
+the thing the claim is about without requiring that thing to occur once.
+
+**Then stop.** Words beyond what the floors require add no protection. Each is something a later edit may
 change without changing the claim, and when one is changed the check fails in a receipt whose claim still
-holds — a new owed row made by the repair. So the span is never a sentence and a half: once the clause that
-carries the claim is unique, the next clause stays out.
+holds: a new owed row made by the repair. So among pins that meet both floors **and that the quote-pin check
+(`corpus/check_quote_pins.py`) can key as pins**, the repair takes the one with the fewest pinned
+characters, counted over all its spans. A single span is never a sentence and a half.
+
+A pin the check cannot key is not a cheaper pin; it is not among the pins this ranks. A repair the ledger
+cannot see is one no later reader is sent to check, so its shortness buys nothing. This is not a temporary
+restriction to be lifted by hand: the pins ranked are whatever the check can key, so when the check learns
+to key a new form — a locus-scoped conjunction, say — that form joins the ranking and is preferred wherever
+it is shorter, with no change to this rule.

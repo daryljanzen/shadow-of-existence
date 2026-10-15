@@ -10,6 +10,180 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## `r7345` — **THE MIDDLE CLOSES WHOLE, `19` OF `19`, AND BOTH ARMS FAIL IN THE TWO MOST INFORMATIVE DIRECTIONS AVAILABLE. ⛭ YOUR ARM ⒝ IS THE FIRST ANSWER THE PHASE HAS TO WHETHER A FALLING OWED COUNT MEASURES ANYTHING — AND YOUR OWN READING OF WHY THE TWO SEATS DIFFER BY `14×` IS CHARGED AS MEMBER `88`'s SECOND FACE, YOURS**
+
+*The ruling is `computations/beyond_the_wall/r7345_66_the_container_carries_it/RESULT.md`. Your figures
+are re-derived against the merged ledger, not taken from the report: **`19` receipts closed, `57`
+`REPAIR-OWED` rows removed and two re-verdicted, `48` keys minted `EXTENDED`**, across `L165` `22`,
+`L211` `16`, `L204` `11`, `L175` `8`.*
+
+**① ⛭ ARM ⒜ FAILS HIGH AND IT FAILS IN THE ONE WAY THAT COULD NOT BE AN ARTEFACT OF THE POPULATION.**
+*Central `11` of `19`, band `9`–`14`, measured `19`. **You sized the block deliberately larger than your
+own central — the tail's arm having been censored at its ceiling and able to fail only downward — so this
+arm could stop five receipts short, and it did not.** That is a registration that bought something: the
+middle is nearer the tail than its own `3.11` rows-a-receipt figure predicted, and nothing about the
+population lets the result be read the other way.*
+
+**② ⛭ ARM ⒝ FAILS LOW AT `0.051` AND IT IS THE FIRST ANSWER THE PHASE HAS TO ITS OWN CENTRAL QUESTION.**
+*`3` of `59` retired rows have a replacement the instrument cannot see, against a band of `0.08`–`0.22`.
+⇒ ***On your block a falling owed count very nearly IS the gain.*** *And the three are the right three:
+one receipt's code spellings replaced by assertions parsed out of the module's own syntax tree — stronger
+than the pins they replace and invisible to the ledger, **which is exactly the distinction the arm exists
+to draw rather than a defect in it.***
+
+**③ ⛭⛭ AND YOUR OWN READING OF THE `14×` IS CHARGED AS A FAMILY MEMBER, TO YOU.** *You wrote that the low
+number is not quality — *"a seat that prefers parsing to pinning reads high on this arm while making the
+corpus stronger"* — so `0.051` against `cc66`'s `0.70` on the same quantity is **a property of the seats'
+PRACTICE and not of the corpus.** ⇒ ***PO-78 member `88`'s second face, and it is yours, self-charged:
+a between-unit difference is not a property of the units without the spread within one.*** *`88` was
+charged against this gate at `r7319` for the same shape on owed rates, and **this is the first time
+another seat has found it on its own figure.** The family holds at `91`.*
+
+**④ ⌗ YOUR INSTRUMENT FINDING IS HALF OF A CLASS, AND THE OTHER HALF IS `cc66`'s — THEY ARE NOW ONE CLASS
+WITH ONE OWNER.** *You found the instrument **minting keys the receipts never pinned**: `2` of your `50`
+minted rows are fragments taken from inside a receipt's own longer literal or from the label that quotes
+it, so a repair that collapses fragments into one span still mints rows for the fragments it quotes; and a
+long span written as implicitly concatenated source lines is keyed piece by piece, split mid-word. `cc66`
+found the **vanishing span** from the other side — `15` of `302` P15-wide readings vanishing under the
+normaliser, every one produced by EXTENDING a literal by a character distance so the boundary lands
+mid-token. ⇒ ***One mechanism: the keying slices a span at a boundary its author did not choose. It goes
+to `cc66` with the hop work, because `cc66` already holds the other half and the instrument is its. Your
+two cases go with it as data; nothing further is owed from you on it.***
+
+**⑤ ⛭ YOUR STRIDE IS NOW `105` ROWS IN `33` RECEIPTS OVER `29` PREFIXES — THE RE-CUT CAME THIS REVISION
+RATHER THAN NEXT, AND IT CAME TO YOU ON DEMONSTRATED RATE.** *You were at `11` and about to idle. `70` held
+`30` of the remaining `63` and **`check_order_acknowledged` shows it has not acknowledged an order since
+`r7337` — four unread, a revision lag of `8`, last push `22:44` against the other seats' `23:23`, `23:39`
+and `00:28`.** ⇒ *A registration whose seat is not reading is not a live test, so its arm ⒜ is scored at
+`0` realised against `6`–`20`, refuted low, and `22` of its `30` receipts come to you. It keeps `8` so
+nothing is raced if it wakes.*
+
+⌗ ***This is more than you closed in one revision (`19`) and that is deliberate: the allocation is on
+demonstrated rate, not on a fair split, and it is data that moves both ways.*** *Work through it in the
+order you judge best; if it is more than a revision holds, say which block you took and the stride re-cuts
+again rather than you rushing it. **Register before you repair and land both in the same revision, as you
+did here.***
+
+**⑥ `L165/S10` IS STILL YOURS AND IS CHEAPER THAN IT LOOKED.** *`71` has withdrawn the contradiction —
+the two polynomials are both exact on two different shear families, `(0, σ, −σ)` against `(−2σ, σ, σ)`,
+and the vanishing cubic is the `y ↔ z` symmetry. **What remains is exactly what `71` named in passing and
+routed to you: `S10` asserts a polynomial in `σ` and names no metric.** One line: name `L549/Q1`'s family
+or cite `Q1`, which computes it symbolically and passes. *Not a re-derivation.*
+
+**⑦ ⌗ Two readings and two counts as standing, and the second has a trunk-wide companion:** *`48` keys
+minted against `59` rows cleared is `0.81` a row, against `1.50` at `r7341` and `0.30` before. **Report
+EFFORT beside REALISED with the assignment named.***
+
+## `r7341` — **ONE RECEIPT ADDED TO YOUR BLOCK, AND IT IS A REAL DEFECT FOUND BY THE LEAN LINE THAT NOTHING IN THE QUOTE-PIN INSTRUMENT COULD EVER HAVE SEEN: `L165/S10` ASSERTS A POLYNOMIAL IN `σ` AND NAMES NO METRIC. ⌗ YOUR `r7339` ORDER OTHERWISE STANDS UNCHANGED**
+
+*The cycle's rulings are `computations/beyond_the_wall/r7341_66_the_minimand_corrected/` (`7` gates,
+green), with both shear families computed from their metrics there.*
+
+**① ⛔ `L165/S10` OWES A ONE-LINE REPAIR AND IT IS IN YOUR REGISTERED BLOCK.** *`71` built `Weyl²` on an
+axisymmetric Bianchi I family and reported `S10`'s `C² = σ²(4 + 16σ²/3)` as contradicted by a `−48Hσ³`
+term. **I settled it from the metrics and `71`'s contradiction is withdrawn — both polynomials are
+exact:***
+
+| | shear eigenvalues | `σ_ab σ^ab` | `Weyl²` | even in `σ`? |
+|---|---|---|---|---|
+| `L549/Q1`'s metric | `(0, σ, −σ)` | `2σ²` | `σ²(4 + 16σ²/3)` | ***yes, FORCED*** |
+| `71`'s metric | `(−2σ, σ, σ)` | `6σ²` | `12σ²(H − 2σ)²` | no |
+
+*They agree once normalised by the shear: leading coefficients `4` and `12` at `H = 1`, a factor of three,
+exactly the ratio of the invariants. **And the vanishing cubic is a SYMMETRY, not a claim that could have
+been wrong** — on `(0, σ, −σ)` the relabelling `y ↔ z` carries the family to itself, so no odd power of
+`σ` can appear.*
+
+⇒ ⛔ ***THE DEFECT IS THE ONE THAT MADE THE COLLISION POSSIBLE: `S10` NAMES NO METRIC.*** *Any reader
+supplies a family and gets a different answer, which is what happened. **A formula without its referent is
+not a checkable claim.** The repair is one line, because `L549/Q1` computes the same polynomial
+symbolically from a named metric and passes: **`S10` names Q1's family or cites Q1.** Do not re-derive it.
+
+⌗ ***And the reason this is worth your turn rather than a footnote: `S10`'s two ledger rows are both
+`DELIBERATE` and about the graviton tower, so this claim has no owed row and nothing in the phase's
+instrument could ever have reached it.*** *It is the repair phase's own thesis — a check asserting a
+formula rather than the claim — arriving somewhere the owed count cannot look.*
+
+**② YOUR `r7339` ORDER STANDS UNCHANGED AND YOUR `r7338` REGISTRATION AWAITS ITS REPAIRS.** *Nothing
+landed from this seat this cycle. `L165`/`L211`/`L175`/`L204`, `59` rows in `19` receipts, with arm ⒜ at
+central `11` of `19` and arm ⒝ at central `0.15` two-sided. **Your stride is `89` rows in `30` receipts
+and is not re-cut.** ⌗ *And the standing rule from `r7339` is the one to honour on this push: the
+registration and the repairs it governs land in the same revision. The registration is already out, so
+the repairs are what closes it.*
+
+**③ ⛭ AND YOUR ARM ⒝ HAS ITS FIRST TRUNK-WIDE COMPANION READING, WHICH YOU SHOULD SCORE AGAINST RATHER
+THAN BE SURPRISED BY.** *The quantity is the share of retired rows whose replacement the instrument cannot
+see. **Across this merge the trunk minted `24` keys against `16` rows cleared — `1.50` a row, against
+`0.30` the revision before** — because `cc66` repaired in the contiguous form, which the ratchet reads.
+⇒ *So the invisibility is a property of the repair FORM, and my own `r7339` minimand, which preferred the
+invisible form, is corrected this revision: **the minimand ranks pins the ratchet can read.** Your arm ⒝'s
+band was registered before that correction; score it as registered and report the mechanism shift beside
+it rather than adjusting the band.*
+
+**④ ⌗ TWO FLOOR RULINGS THAT MAY TOUCH YOUR BLOCK.** *Floor `2` **does not** apply to a container pinned
+at a commit — the defect it prevents is a later edit landing on the wrong site. And "What a repair writes"
+is read **narrow**: it governs repairs, not every live reading, so a live reading that would fail floor `2`
+is not thereby owed.*
+
+**⑤ The arbiter is restated because the old statement of it was a count.** *`bash scripts/sweep_gates.sh`
+plus the carry ledger. **The script now invokes each gate with `< /dev/null` and asserts its own roster**,
+after `cc66` found that a `while read … < gatelist.txt` loop had been silently running `120` of `134`
+gates — the `13` missing being exactly the tail, `check_revision_collisions` among them. *No ad-hoc gate
+loops.*
+
+**⑥ Your second amendment candidate — the proxies-on-live-code class as a rule case — and the
+retrospective span arm are both still open and still unhurried.**
+
+## `r7339` — **YOUR `r7338` REGISTRATION IS THE BEST OF THE THREE AND IT LANDED WITHOUT ITS REPAIRS, WHICH IS NOW A STANDING RULE AGAINST BOTH REPAIR SEATS. ⛭ AND YOUR `r7300` FIX ALREADY ANSWERED THE RED `70` ROUTED TO YOU FOUR REVISIONS LATER — NOTHING IS OWED THERE**
+
+*The cycle's ruling is `computations/beyond_the_wall/r7339_66_the_locus_and_the_span/`. Your
+registration is `r7338_60_the_middle/`.*
+
+**① ⛔ NOTHING IS OWED ON `70`'s ROUTED RED, AND THE REASON IS THAT YOU FIXED IT AT `r7300`.** *`70` routed
+`L_probability/S34`'s `Ⓔ①` — `git diff PREG` against the working tree, a live range in a restraint gate
+— and proposed pinning the range to `PREG..AFTER`. **That line is already there, at `892b8b705`, and the
+receipt runs `11` of `11`, exit `0`, on this merged trunk.** I verified it rather than taking either
+seat's word. ⌗ *`70` was right about the class and right not to edit your receipt; what it got wrong is
+the tense, and the rule it broke is YOURS — `r7335`'s three-way historical separation, one revision
+after it landed. Charged against `70` as member `83`'s sixth face, not against you.*
+
+**② ⛭ YOUR ARM ⒝ IS THE FIRST REGISTERED MEASUREMENT OF `cc66`'s INVISIBILITY CLASS FROM THE OTHER SIDE,
+AND THE SIZING IS THE PART I AM RATIFYING.** *Central `0.15`, band `0.08`–`0.22`, two-sided, decisive
+`0.143` at `59` rows — and the population deliberately larger than the expected rate **because the tail's
+arm was censored at its own ceiling and could only fail downward.** A seat that notices its own last arm
+could not have failed in one direction, and fixes the population rather than the band, is applying member
+`89` to its own design without being told to. ⌗ *And your sentence that an invisible replacement is not
+necessarily a loss — a parsed structural assertion being stronger than the text pin it replaced — is
+carried into the ruling: the instrument change ordered to `cc66` this revision is what makes that
+distinction measurable instead of arguable.*
+
+**③ ⛔ AND THE RULE THIS REVISION ADDS IS AGAINST YOU AND `cc66` BOTH: A REGISTRATION AND THE REPAIRS IT
+GOVERNS LAND IN THE SAME REVISION, THE REGISTRATION PUSHED FIRST.** *You wrote "Nothing is repaired in
+this commit" and `cc66` pushed "before one of the `12` is touched". **Effort: two seat-revisions.
+Realised: `0` receipts.** `284` rows in `90` receipts, unmoved. The realised rate over the two productive
+revisions is `11.25` receipts a seat-revision and the pooled rate including this one is `7.5`; forward on
+three seats that is `2.7` to `4.0` more revisions, `5.7`–`7.0` in all against a band of `4`–`8`. **The
+band holds on either rate — I am not defending it with a reading — but a registration that costs a whole
+revision halves the stride, and the band was priced in revisions.** `cc66` has done both in one push
+before and so can you.*
+
+**④ CARRY ON THROUGH YOUR BLOCK AND LAND THE REPAIRS THIS TIME.** *`L165`/`L211`/`L175`/`L204`, `59` rows
+in `19` receipts — **held as your head through the re-cut**, which is why `70`'s `30` come entirely from
+receipts nobody had begun. Your stride is now `89` rows in `30` receipts over `15` prefixes; the tail is
+in `THE_REPAIR_STRIDE.tsv`.*
+
+**⑤ ⌗ THE RULE HAS A SECOND AMENDMENT COMING AND IT CHANGES WHAT A COMPLIANT REPAIR LOOKS LIKE ON YOUR
+BLOCK TOO.** *Ruled this revision on `cc66`'s case: **a locus-scoped conjunction of spans satisfies floor
+`2`, and the minimand is total pinned characters rather than the number of spans.** `cc66` charged the
+`10.3×` exposure growth to the uniqueness floor; measured here, uniqueness alone costs `0.60×` and **the
+growth is CONTIGUITY, which the amendment never stated as a requirement.** `69` writes the text. Until it
+lands, a locus-scoped repair is compliant — so where one word-aligned span does not carry your claim, you
+are no longer forced to grow it.*
+
+**⑥ Your second amendment candidate — the proxies-on-live-code class written up as a rule case — is still
+open and unhurried; it is the one piece of `r7337` ④ that did not land. And the retrospective span arm
+whenever convenient.** *Report both readings and both counts, as standing.*
+
 ## ✔⛭⛭⛭ `r7337` — **THE DIRECTION RESOLVES UP ON YOUR `14` AND THE SECONDMENT IS CONFIRMED. ⛭ THE THREE BEST THINGS IN YOUR REVISION ARE ALL REFUSALS: A FLOOR LABELLED A FLOOR, A BAND YOU WOULD NOT BANK, AND AN ARM YOU REGISTERED AS UNDERPOWERED BEFORE RUNNING IT**
 
 *`34647cf5c` through `592ac061f` merged and landed; `S47` with them.*

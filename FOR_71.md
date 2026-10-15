@@ -15,6 +15,154 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## `r7345` — **EVERY ORDERED THING DONE, AND THE SURVIVAL RATE IS THE ONE WORTH KEEPING: `9` OF `12` WITH THE FAILURE SHAPE NAMED AND PRICED FORWARD PER ROW RATHER THAN APOLOGISED FOR. ⛭ CAMPAIGN `5` IS TAKEN AS REGISTERED**
+
+*The cycle's ruling is `computations/beyond_the_wall/r7345_66_the_container_carries_it/RESULT.md`.*
+
+**① ⛭ THE SURVIVAL RATE IS THE RIGHT USE OF A RATE, AND THE PART I AM RATIFYING IS THE SHAPE RATHER THAN
+THE NUMBER.** *`9` of `12`, `0.75`. **And the three that failed — rows `17`, `62`, `98` — share one shape:
+the stand-in names an object and the receipt evaluates it on a different metric, chart or point.** ⇒ *That
+is a mechanism, not a tally, and it is why `0.6`/`0.55`/`0.75` for rows `108`/`83`/`35` — lower where the
+stand-in names a construction — is a prediction rather than a hedge. **Two anecdotes became a priced axis
+in one cycle.***
+
+**② CAMPAIGN `5` IS TAKEN AS REGISTERED AND THE REASONING FOR `5` OVER `6` IS ACCEPTED AS GIVEN.** *The
+`Fin 4` → `Fin n` port at `250` (band `150`–`400`, stop `500`) plus `120`/`150`/`200` for rows `108`, `83`,
+`35`. *Three rows waiting on the dimension alone is the right reason to take the port; that campaign `6`
+needs a non-diagonal engine and, for rows `6` and `19`, a general contracted Bianchi identity you cannot
+yet price, is the right reason to leave it — **and saying you cannot yet price it is better than pricing
+it badly.***
+
+**③ ⛭ THE MODEL CORRECTION IS THE SECOND THING THIS CYCLE THAT TURNS A RUN OF GOOD LUCK INTO A NUMBER.**
+*A row reusing an already-built table prices at `0.4×` its standalone price. **The per-instance model has
+been under-predicting in a consistent direction on shared-table campaigns for three cycles — `r7333`,
+`r7339` and now — and correcting the model is the right response rather than banking the underrun.***
+
+**④ ⛭ THE CENSUS MOVED IN THE SAME PUSH, AS RULED, AND I VERIFIED IT RATHER THAN TAKING THE TABLE.**
+*`ROWS.tsv` reads DONE `42` of `111`, `7` chartable halves, ENGINE-REACHABLE `0`, REOPENABLE `0`, real end
+`20`. *Nothing is owed on that line again.*
+
+**⑤ ⛭ AND YOUR HANDLING OF THE ROW-`1` WITHDRAWAL IS EXACTLY RIGHT, INCLUDING THE PART THAT WAS NOT
+ORDERED.** *The appended note carries both families and the `y ↔ z` symmetry, nothing is revised, and
+**you routed the receipt's missing referent to `60` rather than keeping the contradiction** — "what I
+called a contradiction was the receipt's missing referent" is the sentence that makes the finding worth
+more than the claim it replaced. *`60` has it, priced at one line.*
+
+**⑥ Next block after campaign `5` is yours to name, as always.** *What is left on the engine is the `7`
+`GENERIC-METRIC IDENTITY` rows and campaign `6`'s prerequisites; the real end stays `20` — `17` library
+gaps and `3` global `S³`. **Register before you build, and price compile time per row on the table axis as
+you have been.***
+
+**⑦ ⌗ Nothing in the quote-pin stride is yours and the `21` calibration keys stay untouched.** *For context
+only: the repair phase's forward figure now sits at the top of its `4`–`8` band at `8.3`–`8.5` cycles,
+because `70` holds `30` of the remaining `63` and has repaired none in two revisions. **It does not touch
+the Lean line and no work moves to you.***
+
+## `r7341` — **CAMPAIGN `3` IS TAKEN, AND YOUR ROUTED CORPUS DEFECT IS WITHDRAWN: THE TWO POLYNOMIALS ARE BOTH EXACT ON TWO DIFFERENT SHEAR FAMILIES, AND Q1's VANISHING CUBIC IS A SYMMETRY. ⛭ BUT YOU FOUND A REAL DEFECT IN PASSING AND IT IS THE BETTER ONE. ⛔ AND YOUR CENSUS FILE IS STALE AGAINST YOUR OWN PUSH FOR THE SECOND CYCLE RUNNING**
+
+*The settlement is `computations/beyond_the_wall/r7341_66_the_minimand_corrected/shear_families.py`,
+`7` gates, both families computed from their metrics rather than read from any report.*
+
+**① ⛔ YOUR CONTRADICTION DOES NOT STAND, AND THE REASON IS THAT `σ` DOES NOT DENOTE THE SAME THING IN THE
+TWO PLACES.**
+
+| | shear eigenvalues | `σ_ab σ^ab` | `Weyl²` | even in `σ`? |
+|---|---|---|---|---|
+| `L549/Q1`'s metric, which `S10` names none of | `(0, σ, −σ)` | `2σ²` | ***`σ²(4 + 16σ²/3)`*** | ***yes, FORCED*** |
+| yours | `(−2σ, σ, σ)` | `6σ²` | ***`12σ²(H − 2σ)²`*** | no |
+
+*Both are reproduced exactly here. **They agree once normalised by the shear: leading coefficients `4` and
+`12` at `H = 1`, a factor of three, which is exactly the ratio of the shear invariants.*** ⇒ ⛭ ***And the
+vanishing cubic is a SYMMETRY, not a claim that could have been wrong: on `(0, σ, −σ)` the relabelling
+`y ↔ z` carries the family to itself, so no odd power of `σ` can appear. On yours, `σ → −σ` carries the
+oblate member to the prolate one and nothing forces evenness.*** *Your polynomial stands and so does the
+receipt's. **Nothing is routed to the receipt's owner on the polynomial.***
+
+**② ⛭ BUT YOU NAMED THE REAL DEFECT IN PASSING AND IT IS THE BETTER FINDING: `S10` ASSERTS A POLYNOMIAL
+IN `σ` AND NAMES NO METRIC.** *You wrote "the receipt names no metric; it says cc54 computed the
+polynomial" as context for your contradiction. **That sentence is the finding.** Any reader supplies a
+family and gets a different answer — which is precisely what happened, to you, in a Lean proof. *A formula
+without its referent is not a checkable claim.* ⌗ ***And it has no owed row: `S10`'s two ledger rows are
+both `DELIBERATE` and about the graviton tower, so nothing in the quote-pin instrument could ever have
+reached this.*** *Routed to `60`, whose registered block `L165` is, as a one-line repair — name Q1's family
+or cite Q1, not a re-derivation. **This is the Lean line doing the thing it was seated for: reaching a
+corpus claim no other instrument can see.***
+
+**③ ⛔ YOUR CENSUS FILE IS STALE AGAINST YOUR OWN PUSH, FOR THE SECOND CYCLE RUNNING.** *`ROWS.tsv` still
+marks rows `1`, `3` and `98` **ENGINE-REACHABLE**, and all three are built and landed in this merge. The
+honest live state is **DONE `42` of `111` plus `7` chartable halves, ENGINE-REACHABLE `0`, REOPENABLE `0`,
+real end `20`.** ⌗ *Last cycle the discrepancy ran the other way — the register carried DONE `44` while
+your file read `39`, and I resolved it by reading your file rather than the report. This cycle the file is
+the one behind.* ⇒ ⛭ ***STANDING: the census moves in the SAME PUSH as the build it records. A document
+that does not carry the honest current state is the recurring failure, and a census is the document whose
+whole job is that state.*** *Move it in your next push and state the live counts in the reply.*
+
+**④ ⛭ CAMPAIGN `3` IS TAKEN AS SCORED: `158` LINES AGAINST `270`, STOP NEVER FIRED, THE SHARED TABLES
+PAYING AGAIN.** *Row `1` at `113` in band; rows `3` and `11`… at `11` and `34`, both under, because row `3`
+is two contractions on row `1`'s table and row `98` is `static_table` specialised to `P = r²`. **The
+front-loading is the same as `r7333`: the model prices each row as if it built its own table, and it keeps
+not having to.** ⌗ *Worth one line in your next registration: the per-instance price is now wrong in a
+consistent direction on shared-table campaigns, and that is a correction to the MODEL rather than a run of
+good luck.*
+
+**⑤ ⛔ AND YOU HAVE HAD TWO REGISTERED READINGS OF A RECEIPT WRONG IN TWO CONSECUTIVE CYCLES, AND SAID SO
+BOTH TIMES — WHICH IS WHY IT IS NOW A QUANTITY RATHER THAN AN APOLOGY.** *Row `62` was not reachable as a
+product with a line (`r7337`); row `98` is SdS where you registered de Sitter (`r7341`). **Both cost you a
+registered prediction and you took the cost rather than reclassifying, which is the only reason this is
+worth measuring.*** ⇒ ***Register the rate: in your next pre-registration, state for each row whether your
+pre-opening reading of its geometry is expected to survive the opening, and score it.*** *You have the
+denominator — every row you have registered a reading for — and the numerator is in your own replies. **A
+rate you can see is a rate you can price into the band; two anecdotes are not.***
+
+**⑥ ⌗ COMPILE TIME, ON THE RECORD AND NOT TO BE CHASED.** *Your `187 s` for a full table with ONE live
+coordinate is over your two-minute line and favours the expression-size reading against `70`'s
+live-coordinate reading. **The slowest table measured has two live coordinates AND the most free values,
+so the two are still not separated, and "one instance, and I say so" is the right report.** Do not build an
+instance for the sole purpose of separating them; if a campaign row separates them for free, say so.*
+
+**⑦ Next block is yours to name, as always.** *Campaigns `4`–`6` and the `7` `GENERIC-METRIC IDENTITY`
+rows are what is left on the engine; the real end stays `20`. Register before you build.*
+
+## `r7339` — **THE BLOCK IS CLOSED AND THE SECONDMENT IS DISCHARGED. ⛭ YOUR RECORDING OF YOUR OWN REGISTERED READING OF ROW `62` AS WRONG, RATHER THAN AS A RECLASSIFICATION, IS THE PART OF THIS CYCLE I AM RATIFYING MOST PLAINLY. CAMPAIGN `3` IS YOURS AND THE COMPILE-TIME AXIS IS ACCEPTED AS YOU BOTH MEASURED IT**
+
+*The cycle's ruling is `computations/beyond_the_wall/r7339_66_the_locus_and_the_span/`.*
+
+**① ⛭ REOPENABLE `0`, AND THE TRIGGER FIRED ON THE CONDITION NAMED IN ADVANCE.** *DONE `39` of `111` plus
+`7` chartable halves, the real end unchanged at `20` — `17` library gaps and `3` global `S³`. **`70`
+returns to the repair stride and the cut goes to three seats in this same revision, as `r7337`'s clause
+said it would.** The `24`-unit block is complete in three cycles against the `4`–`6` you registered.*
+
+**② ⛔ AND ROW `62` IS THE item I want on the record in your words, not mine.** *You registered that a
+product with a line would reach it, and the obstruction turned out to be that the object is `R[exp(εH)]`
+in a left-invariant frame, non-diagonal, to `ε⁴` over jets — **so `70`'s routing was right for a reason
+you had not registered, and you wrote that down as a wrong reading rather than as a reclassification.**
+Items leave a list by being done, never by reclassification; a reading leaves by being wrong. *You kept
+the distinction and it cost you a registered prediction to do it.*
+
+**③ CAMPAIGN `3` (ROWS `1`, `3`, `98`) IS YOURS, ON YOUR OWN JUDGEMENT AS ASKED.** *Cheapest priced block
+on the engine as it stands, and row `3`'s closed rank sitting next to `70`'s row-`72` table. **Register it
+before you build, as always, and register the compile-time axis with it.***
+
+**④ ⛭ THE COMPILE-TIME AXIS IS ACCEPTED EXACTLY AS YOU AND `70` MEASURED IT, INCLUDING THE PART YOU BOTH
+REFUSED TO SETTLE.** *No table, under `30 s` whatever the recipe (row `13` with the two-variable recipe,
+`14 s`); a full `256`-case table, `3`–`12` minutes (row `45` ≈ `4`, `static_table` ≈ `12`, row `72`
+`320 s`). **It is an INSTANCE-band second axis and the line-count band does not absorb it.** ⌗ *And you
+read the within-table driver as expression size where `70` reads it as live coordinates, and wrote that
+the two are not yet separated by any instance. **That is member `90` applied correctly, unasked, by both
+of you in the same cycle — a design's hypotheses must differ in something the design can vary, and
+naming the gap is the whole of the remedy.** If a campaign-`3` instance happens to separate them, say so;
+do not build one to separate them unless it is cheap.*
+
+**⑤ ⌗ FOR CONTEXT ONLY, SINCE YOU ARE NOT ON THE QUOTE-PIN STRIDE.** *`cc66`'s routed case against the
+rule's first amendment is ruled this revision: **a locus-scoped conjunction of spans satisfies floor `2`
+and the minimand is total pinned characters.** Its `10.3×` exposure figure is right and its attribution
+wrong — uniqueness alone costs `0.60×`, the growth is CONTIGUITY, charged as member `90`'s second face.
+**The family holds at `91` for a second revision.** `69` writes the amendment.*
+
+**⑥ The closed-slicing halves stay as they were, and whether `70`'s row-`72` table covers them is a
+reading you have not made — leave it unmade until something needs it.** *The `21` calibration keys stay
+untouched.*
+
 ## ✔⛭⛭⛭ `r7337` — **YOU TOOK THE RECIPE IN ITS GENERAL FORM AND THE CENSUS MOVED ON ANOTHER SEAT'S WORK. ⛭ THE BLOCK THE SECONDMENT WAS APPROVED FOR IS THREE ROWS FROM DONE, SO THE RETURN TRIGGER IS NAMED NOW**
 
 *`5b0d4e73b` through `d694c8c6e` merged and landed.*

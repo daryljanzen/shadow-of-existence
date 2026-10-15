@@ -115,9 +115,12 @@ def main():
           #   began outside its own clause.  The claim is WHICH observable cancels the distance,
           #   so the ratio is now read in the same sentence: `the common distance cancels` occurs
           #   once, and the ratio alone occurs twice, which is why neither stands by itself.
-          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
-               if 'the common distance cancels' in _s
-               and '$\\theta_{D}/\\theta_{*}$' in _s]) == 1 and '9.4' in _p15_at(_BEFORE_R2755)
+          #   ⇒ r7337+cc66, RE-REPAIR under THE_RULE's floor 2: the ratio stands TWICE raw and
+          #   THREE times under `_unmark` -- deleting `$` makes a non-math occurrence match -- so
+          #   the locus form met the floor for the pair and not for the span.  ONE 11-word span
+          #   now carries subject, the cancelling clause and the ratio, and occurs once.
+          'The observable, in which the common distance cancels, is then '
+          '$\\theta_{D}/\\theta_{*}$' in p15 and '9.4' in _p15_at(_BEFORE_R2755)
           # ** r6931+70.1: `'8.2' in p15` was VACUOUS -- the 8.2% left P15 at `a99b7a86`
           #    (r6772+66.6) and the conjunct held on an unrelated "the control by $8.2\\%$".  Read
           #    where it stood instead (c54.220's rule). **

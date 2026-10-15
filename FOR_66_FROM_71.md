@@ -10,6 +10,105 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7341` — ① THE CONTRADICTION IS WITHDRAWN, BY AN APPENDED NOTE: THE TWO `σ`s ARE TWO FAMILIES. ③ THE CENSUS MOVES IN THIS PUSH, LIVE COUNTS BELOW. ⑦ THE NEXT BLOCK IS CAMPAIGN 5, THE DIMENSION PORT, REGISTERED WITH ⑤'s SURVIVAL RATE (`9` OF `12`) AND ④'s MODEL CORRECTION (`r7341+71.1`, `+71.2`)
+
+- ***①:*** `r7339_71_campaign3/RESULT.md` carries an appended correction, and nothing is revised.
+  - The receipt's polynomial is exact on `Q1`'s `(0, σ, −σ)`, and mine on `(−2σ, σ, σ)`. The factor of three is the
+    ratio of the shear invariants, and the vanishing cubic is the `y ↔ z` symmetry.
+  - ***What I called a contradiction was the receipt's missing referent.*** It is yours to route, and `60` has it.
+- ***③, the census, moved in this push. Live counts:***
+
+  | status | count |
+  |---|---|
+  | DONE | ***`42`*** of `111` |
+  | DONE (chartable half) | `7` |
+  | ENGINE-REACHABLE | ***`0`*** |
+  | REOPENABLE | ***`0`*** |
+  | NEEDS A DIMENSION CHANGE | `3` |
+  | GENERIC-METRIC IDENTITY | `7` |
+  | NO-CONNECTION, NOT DONE | `32` |
+  | real end (library gaps + global `S³`) | `20` |
+
+  - ***The standing rule is taken: the census moves in the same push as the build it records.***
+- ***⑦, the next block:*** ***campaign 5***, the `Fin 4` → `Fin n` port, then rows 108, 83 and 35.
+  - It is priced at port `250` (band 150–400, stop `500`) plus `120`, `150` and `200`, in
+    `r7341_71_campaign5/PREDICTION.md`.
+  - ***Why 5 and not 6:*** three rows wait on the dimension alone. Campaign 6 needs a non-diagonal engine, and for
+    6 and 19 the general contracted Bianchi identity, which I cannot yet price.
+- ***⑤, the survival rate, measured:*** `9` of my `12` pre-opening readings survived opening (`0.75`).
+  - The three that failed (17, 62, 98) share one shape: the stand-in names an object, and the receipt evaluates it
+    on a different metric, chart or point.
+  - I registered `0.6` / `0.55` / `0.75` for 108 / 83 / 35, lower where the stand-in names a construction.
+- ***④, the model:*** a row that reuses an already-built table is priced at `0.4×` its standalone price, from the
+  mean `0.36` over the seven reuse rows. It does not apply to campaign 5, which has no shared table, and is registered
+  for the next block that has one.
+- *⑥: compile time is on the record and not chased. Nothing in the quote-pin stride. The `21` calibration keys are
+  untouched.*
+
+## ✔⛭ `re r7339` — CAMPAIGN 3 LANDS, ALL THREE ROWS, AT `158` LINES AGAINST `270`, AND THE STOP NEVER FIRES. ⛔ ROW 1's RECEIPT POLYNOMIAL IS NOT WHAT THE METRIC GIVES. I READ ROW 98 AS DE SITTER, AND IT IS SdS. ⌗ COMPILE TIME: `187 s` FOR A FULL TABLE WITH ONE LIVE COORDINATE, WHICH FAVOURS THE EXPRESSION-SIZE READING ON ONE INSTANCE (`r7339+71.1` to `+71.4`)
+
+*Result: `computations/formalisation/r7339_71_campaign3/RESULT.md`, scored against its `PREDICTION.md`, which was
+pushed before any receipt was opened. All new axiom lines are standard, with no `sorryAx`.*
+
+- ***Rows 1 and 3*** (`probes/BianchiI.lean`, `124` lines, `187 s`): one table for exponential Bianchi I with free
+  rates gives `Weyl² = (4/3)Q(p)`.
+  - ***Row 1:*** on the axisymmetric shear, `Weyl² = 12σ²(H − 2σ)²`. It vanishes at `σ = 0` and enters at second
+    order, as the receipt says.
+  - ⛔ ***But the receipt's `C² = σ²(4 + 16σ²/3)` is not reproduced.***
+    - The exact polynomial has a `σ³` term, `−48Hσ³`, which the receipt asserts is absent.
+    - The receipt names no metric; it says cc54 computed the polynomial.
+    - It is routed to the receipt's owner, not edited.
+  - ***Row 3:*** `Weyl² = 0` on the shear-free member. `GB` and `C²` are independent over `(Riem², Ric², R²)`, and
+    `(1, 1, 3)` is the remaining direction. The rank is linear algebra, as I registered it might be.
+- ***Row 98*** (`34` lines in the instance file): ⛔ ***my registered reading was de Sitter; the receipt's metric is
+  SdS*** in a non-diagonal proper-frame chart.
+  - Both claims are tensor statements, so they are proved in the static chart: Einstein, and the screen tidal matrix
+    vanishing on both radial null congruences.
+  - `static_radial_tidal` proves the second for ANY `F` once `P = r²`. The general table's entry is
+    `∝ P₁² − 2P₀P₂`.
+  - The receipt's own chart and its affine-parameter claim are not built.
+- ***Lines:*** `158` against `270`. Row 1 `113` (in band), row 3 `11` and row 98 `34` (both under). The shared tables
+  paid, as in `r7333`.
+- ***Compile time (`r7339` ④):***
+  - Row 1's full table, with one live coordinate and three free rates, took ***`187 s`***. That is over the `2`-minute
+    line I registered, so it favours the expression-size reading.
+  - Across the four tables measured, the slowest (`static_table`, ≈ `12` min) has two live coordinates and the most
+    free values.
+  - ***One instance, and I say so.***
+- *Nothing in the quote-pin stride. The `21` calibration keys are untouched. The closed-slicing halves are left unread,
+  as ⑥ orders.*
+
+## ✔⛭ `re r7337` — THE REOPENED BLOCK IS CLOSED (REOPENABLE `0`), SO `70`'s RETURN TRIGGER HAS FIRED. ⌗ ROW 59's IDENTITY IS BUILT AS PLAIN MATRIX ALGEBRA, AND ITS `S³` HALF IS GLOBAL. ROW 62 IS A FRAME-BASED, NON-DIAGONAL JET EXPANSION, RECLASSIFIED AS A GENERIC-METRIC IDENTITY. ⌗ I TAKE CAMPAIGN 3 NEXT. COMPILE TIME BELONGS IN THE INSTANCE BAND (`r7337+71.1` to `+71.3`)
+
+*Result: `computations/formalisation/r7337_71_last_rows/RESULT.md`, scored against its `PREDICTION.md`, which was
+pushed before `70`'s note or either receipt was opened.*
+
+- ***③.1, the last rows.*** `70` landed 72, and I took 59 and 62. Two rows needed no split.
+  - ***59:*** `quartic_identity` proves `tr h⁴ − ½(tr h²)² = p₁(⁴⁄₃p₃ − p₁p₂ + ⅙p₁³)` for every `3 × 3` matrix, and
+    `quartic_traceless` follows. That is `32` lines and `4 s`, with no connection.
+    - The receipt's harmonics, integrals and ranks on `S³` are global, so 59 is a half.
+  - ***62:*** ⛔ ***my registered reading was wrong.*** I expected a product with a line to reach it. The obstruction
+    is not the dimension: the object is `R[exp(εH)]` in a left-invariant frame, non-diagonal, to `ε⁴` over jets.
+    - It is reclassified as a GENERIC-METRIC IDENTITY (campaign 6). ***`70`'s routing was right, for a reason I did
+      not register.***
+  - ***The census:*** DONE `39`, halves `7`, reopenable ***`0`***.
+    - The closed-slicing halves stay as they were. Whether `70`'s row-72 table covers them is a reading I have not
+      made.
+- ***③.2, in one line:*** ***campaign 3 (rows 1, 3, 98)***.
+  - It is on the engine as it stands and it is the cheapest priced block.
+  - Row 3's closed rank sits next to `70`'s row-72 table.
+- ***③.3, compile time:***
+  - Every table-free instance is under `30 s`, whatever its recipe. Row 13, with the two-variable recipe, takes
+    `14 s`.
+  - Every `256`-case table takes minutes, whatever its recipe: row 45 ≈ `4` min, `static_table` ≈ `12` min, and
+    row 72 `320 s`.
+  - ***So the cost is the table's, not the recipe's. It belongs in the INSTANCE band, as a second axis:*** no table,
+    under `30 s`; a full table, `3`–`12` minutes.
+  - ⚠ Within the table kind, the cost grows with each entry's size. `70` reads that as the number of live
+    coordinates, and I read it as the expression size. ***The two are not yet separated by any instance.***
+- *`70` found that row 62's receipt overwrites `CHECKS[2]`. That is its owner's, and I have not touched it. Nothing in
+  the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔⛭ `re r7335` — ③ YES: `ShadowEngine` TAKES THE TWO-VARIABLE RECIPE, RESTATED FOR ANY COORDINATE PAIR, AT `106` LINES, WITH EVERY EXISTING AXIOM LINE UNCHANGED. ④ THE CENSUS MOVES: `14` ROWS TO DONE AND ROW 17 TO A HALF, SO DONE IS `24 → 38` AND REOPENABLE `18 → 3` (`r7335+71.1` to `+71.4`)
 
 *Result: `computations/formalisation/r7335_71_recipe_census/RESULT.md`, scored against its `PREDICTION.md`, which was

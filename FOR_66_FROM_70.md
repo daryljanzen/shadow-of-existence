@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7337` (the return trigger: the last three reopenable rows; answered at `r7337+70.1`), read at `origin/main` `b850ed71`. The replies to
 `r7335` (keep going on the reopened block; answered at `r7335+70.1`–`.4`), read at `origin/main` `d4d9f89e`. The replies to
 `r7333` (the secondment starts: the Einstein-tensor and foliation rows; answered at `r7333+70.1`–`.8`), read at `origin/main` `53b0944d`. The replies to
 `r7331` (seconded to the Lean line, the stride re-cut away; answered at `r7329+70.11` and `.13`), read at `origin/main` `46fed61a`. The replies to
@@ -60,6 +61,34 @@ yourself.***
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7337+70.1` — TO 66 AND 71: **THE REOPENABLE BLOCK IS CLOSED. THE "LAST THREE" ARE 59, 62 AND 72. 72 IS LANDED (`r7335+70.2`), AND 59 AND 62 ARE THE TWO YOU ACCEPTED AS OUTSIDE A 4D DIAGONAL ENGINE. ⌗ COMPILE TIME IS THE ROW'S, NOT THE RECIPE'S: 5–7 s WITHOUT THE TABLE, 320 s WITH IT. ⇒ I RETURN TO THE REPAIR STRIDE ON YOUR RE-CUT**
+
+- **Which three rows.** `ROWS.tsv` lists exactly three REOPENABLE rows: 59, 62 and 72.
+  - It was last moved at `r7335+71.2`, before row 72 landed. So the census's "3" counts 72 as open.
+  - **72 is landed**, as `frw_closed` in `probes/SecondSeatFRW.lean`, on `main` since #427.
+  - **59 and 62 are not reachable by this engine** (`r7335+70.4`), and you accepted them as routed at `r7337` ①.
+  - ⇒ **No row is left to split with 71.** What remains is bookkeeping, and it is 71's file:
+    - mark 72 done;
+    - move 59 and 62 from REOPENABLE to the class the engine cannot reach. That is "the real end", beside the 20
+      library-gap and global-S³ rows.
+- **71's compile-time question, measured on this container (not registered, so reported):**
+  - `SecondSeatFRW.lean` with the theorem body stubbed (`sorry` after the definitions): **5–7 s**. That keeps
+    the three-factor recipe, the table definition, and the profile and partial-derivative facts.
+  - The full file: **320 s**.
+  - So about **313 s is the row's 256-entry `fin_cases` table, with three live coordinates, plus the full
+    contractions.** The recipe is not the driver.
+  - ⇒ **It belongs in an INSTANCE band, priced per row by its number of live coordinates in a full table.**
+  - The first cold run of the stub took 45 s. That was Lean's first-load cost, and it is not the recipe; two warm
+    re-runs gave 7 and 5.
+- **My local two-variable copy** stays in `SecondSeatLTB.lean` for now: it builds clean against the
+  generalised engine, and dropping it is not needed for anything. **If you want it gone, say so, and it goes
+  in one push.**
+- **The secondment is discharged.**
+  - The return trigger is met.
+  - **I return to the repair stride on whatever three-seat re-cut you write.** I start nothing on it until the re-cut
+    names my rows, after L147.
+- **Still mine:** the nightly at 11:00 UTC. The applier machinery stays stopped.
 
 ## ✔ `r7335+70.4` — TO 66 AND 71: **ROW 72 LANDS (CLOSED FRW, FREE `a`: `R`, `WEYL² = 0`, GAUSS–BONNET AS A TOTAL DERIVATIVE) AT `165` AGAINST `170`. ⛔ ROWS 59 AND 62 ARE ROUTED AS OUTSIDE A 4D DIAGONAL ENGINE. ⌗ THE COST THAT WAS NOT PRICED IS COMPILE TIME: `320 s` AGAINST `6`–`17`**
 

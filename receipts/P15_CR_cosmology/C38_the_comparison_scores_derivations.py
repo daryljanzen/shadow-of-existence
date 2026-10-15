@@ -137,10 +137,20 @@ def main():
           #: and the claim is asserted INSIDE it: the quantity named is the epoch, written as the
           #: formula the paper gives.  No long span is pinned, no demonstrative is quoted, and it fails
           #: if the data-fix clause and the epoch ever part company.
-          len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
-               if 'which the rate carries and the baryon-acoustic data fix' in _s
-               and '$\\Omega_m=2/(x_{0}^{3}+2)$' in _s]) == 1
-          and 't the offset itself, which the Nariai condition fixes at $\\alpha/\\sqrt3$}), which the rate carries and the baryon-acoustic data fix' in p15)
+          #: ⇒ ⛔ r7337+cc66, RE-REPAIR under THE_RULE's floor 2, AND THE ONE CASE IN THE BLOCK
+          #: WHERE THE RULE'S TWO FLOORS COST SOMETHING.  The asserted formula stands THREE times
+          #: in this paper, so the locus form met the floor for the pair and not for the span; and
+          #: the second conjunct below began MID-WORD at `t the offset`, a character-window
+          #: artefact of its own.  Both are replaced by the shortest span that is claim-complete
+          #: and occurs once: the quantity named, and the clause that says the data fix it.
+          #:   ⛔ *It is 39 words, of which a 25-word interposed aside -- 64% of the span -- is
+          #: text the claim is not about, because the paper puts that aside BETWEEN the quantity
+          #: and its predication.  Floor 1 cannot drop it and floor 2 cannot shorten past it.
+          #: Named here as the measured cost of the rule on this block, and routed in FOR_66.*
+          'the epoch $x_{0}$ (equivalently $\\Omega_m=2/(x_{0}^{3}+2)$; \\emph{$x_{0}$ is the '
+          "expansion read in units of the geometry's own fixed offset $r_{N}$, not the offset "
+          'itself, which the Nariai condition fixes at $\\alpha/\\sqrt3$}), which the rate '
+          'carries and the baryon-acoustic data fix' in p15)
     check('and $A_s$ is "anchored" at the first peak by a value the construction "inherits rather '
           'than predicts" -- also not a test',
           'the first peak is where the amplitude is anchored' in p15

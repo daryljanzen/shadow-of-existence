@@ -132,7 +132,12 @@ def main():
           'handed over at the branch point", which "carries no finite redshift at all" -- and '
           '$z_{\\mathrm{onset}}\\approx6797$ is gone',
           _ONSET.search(p15) is None and 'z_{\\mathrm{onset}}' not in p15
-          and 'the plasma is handed over at the branch point' in p15
+          # r7337+cc66, REPAIR: the phrase stands FOUR times across the papers and twice in this one,
+          #   so it pinned the FILE and not the claim.  The continuation that distinguishes THIS
+          #   occurrence is now inside the span -- the locus named, and what holds at it -- and the
+          #   span occurs ONCE under `_unmark`.
+          and 'the plasma is handed over at the branch point, where every acoustic mode is outside '
+              'the horizon and the potential sits at its regular value' in p15
           and 'which therefore carries no finite redshift at all' in p15)
     check('and how it is fixed -- not "fitted to the acoustic angle" but as a limit: "It is a limit rather '
           'than a parameter: carried back over two decades in starting redshift the peaks hold to the '
@@ -144,8 +149,12 @@ def main():
     check('and that it is not a knob: "Where the plasma starts moves the scale and not the peak, which is '
           'why the start is not free", with "no early-universe parameter left to carry the acoustic angle"',
           'meets the scale at every' not in p15
-          and '\\emph{Where the plasma starts moves the scale and not the peak, which is why the start is '
-              'not free.}' in p15
+          # r7337+cc66, REPAIR: the pin carried the \\emph{} braces, which `_unmark` deletes before
+          #   comparing -- so the braces were never part of what the check tested, and the ledger
+          #   measured the unbraced form at exactly the same ONE occurrence.  A pin should not read
+          #   markup the comparison removes: the span is the sentence's own words.
+          and 'Where the plasma starts moves the scale and not the peak, which is why the start is '
+              'not free' in p15
           and 'there is no early-universe parameter left to carry the acoustic angle' in p15)
 
     # ⓶ the model checks at the onset

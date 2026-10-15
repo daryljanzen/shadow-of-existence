@@ -376,7 +376,10 @@ gate(f"at `r=0` exactly the layer AT THAT FIXED `\\tilde\\tau` is a POINT -- `V\
      f"magnitude either side of the seam.  ⇒ ** the divergence is the AREAL COORDINATE degenerating, "
      f"which `P15`'s own abstract already says of the branch point, and NOT a change in what the "
      f"layer is **",
-     max(near) < 1e-12 and 'areal coordinate degenerating' in b15)
+     # r7337+cc66, REPAIR: the phrase stands THREE times in the paper, so it pinned the FILE and not
+     #   the claim.  The subject is now inside the span -- WHAT is degenerating and what it is the
+     #   divergence OF -- and the span occurs ONCE under `_unmark`.
+     max(near) < 1e-12 and 'the divergence is the areal coordinate degenerating' in b15)
 
 _FOLIATION = 'the cosmic layers are the surfaces of constant areal radius'
 _WAS_CONJECTURE = 'as a conjecture and do not claim it as a theorem' in b15
@@ -487,7 +490,10 @@ gate("`\\partial_\\chi r=\\partial_\\tau r` identically -- the corpus's own step
      "and each worldline reaches a given `r` at its OWN `\\tau=\\tilde\\tau-\\chi`",
      same == 0
      and r'r(\tau,\chi)=r(\tau+\chi)' in b15.replace(' ', '')
-     and r'45^\circ' in b15)
+     # r7337+cc66, REPAIR: a bare `45^\circ` is a TOKEN and floor 1 excludes a fragment, so the
+     #   tilt is now read as the paper's own clause: WHAT is at 45 degrees (the level sets of r)
+     #   and to WHAT (constant tau+chi).  11 words, ONE occurrence under `_unmark`.
+     and r'the level sets of $r$ the $45^\circ$ lines of constant $\tau+\chi$' in b15)
 
 gate("⇒ ** THEREFORE THE LOCUS `r=0` IS A ONE-PARAMETER FAMILY OF EVENTS, ONE ON EACH WORLDLINE -- "
      "the author's \"circle of geodesic points\" -- and so are the seam, the turnaround and the "
@@ -567,7 +573,9 @@ gate("⛔ and what is NOT claimed: that the reassignment is a diffeomorphism or 
      "invariant of either FOUR-geometry is computed for comparison across the registers, which "
      "`r7115` says would register only that fact; the source spectrum is not reassigned and the paper "
      "is READ and not edited",
-     'not a diffeomorphism' in b15)
+     # r7337+cc66, REPAIR: a three-word phrase standing TWICE, whose claim is a specific denial about
+     #   the REASSIGNMENT.  The thing denied of is now named in the span; once under `_unmark`.
+     'the reassignment is not a diffeomorphism' in b15)
 
 
 # ============================================================ verdict

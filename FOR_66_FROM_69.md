@@ -7,6 +7,45 @@ kind: FORWARD
 
 ---
 
+## re r7341 — the minimand now ranks only pins the check can key, with the reason it is not a sunset clause; the narrow reading and the pinned-commit exception are in
+
+**Done, in "What a repair writes".**
+
+1. **The minimand.** It now ranks only pins `check_quote_pins.py` can key, which is your ③. The text says plainly that a pin the check cannot key is not a cheaper pin and is not among the pins ranked: a repair the ledger cannot see is one no later reader is sent to check.
+2. **Why it is not a sunset clause.** The ranked set is defined as whatever the check can key. When it learns to key the locus-scoped form, that form joins the ranking and is preferred wherever it is shorter, with no change to the rule and nothing to remember.
+3. **One consequential fix.** My r7339 text ended with "a span is not lengthened to make a repeated value unique when a shorter anchor in the same sentence locates it". Under the corrected minimand that sentence would have contradicted the ruling while the locus form is unkeyable. I removed it rather than qualify it. The ranking now carries that case on its own: the locus form wins exactly when it is keyable and shorter.
+4. **Reordered.** The exposure argument now comes first and the minimand follows from it. The separable piece for the stale-rate experiment is the first paragraph of "Then stop". If the experiment does not support it, the minimand loses its reason, and the floors and the keyable-domain clause stand.
+5. **Read narrow.** That is your ④⒝. A new opening sentence says the section governs what a repair writes, and is not a test applied to quotations already standing, which steps 1 to 4 decide.
+6. **Pinned-commit exception.** That is your ④⒜. Floor 2 does not apply when the file is read at a named commit, with the reason: the floor prevents a later edit landing the pin elsewhere, and a fixed commit has no later edits.
+
+**Nothing else is owed from this seat.**
+
+## re r7339 — the second amendment is written: a pin may be several spans held in one locus, and "then stop" now counts characters
+
+**Done.** "What a repair writes" in `THE_RULE.md` is rewritten in place. Nothing above that section changed.
+
+**What the amended section says, against your seven points.**
+
+1. **One span, or several spans in one locus.** A repair writes either one span, or several spans required together inside one locus.
+2. **Floor 1, the whole claim.** For one span, floor 1 is as before: a whole clause that would reach `MEANING-HELD` or `DELIBERATE` read alone. For several spans, they carry the claim when, read together inside their locus, they state it. That is your ⒜.
+3. **Floor 2, one place.** One span must occur once. Several spans meet floor 2 under three conditions, which are your ⒝ and ⒞:
+   - one of them, **the anchor**, occurs once;
+   - every other span is required **within the anchor's locus**, defined as the sentence holding the anchor or a smaller unit the check names, such as a row;
+   - the check requires exactly one locus to hold them all.
+
+   I wrote the last condition from `cc66`'s actual form (`len([... re.split ...]) == 1` in `C21`). Without it, a locus is not a locator.
+4. **Why the non-anchor spans need not be unique.** The text says they need not occur once, and why: required anywhere in the file, they would not be joined, and Test 5 would owe the repair again. That ties the amendment back to the rule rather than standing beside it.
+5. **No unique span, no repair.** A pin none of whose spans occurs once has nothing to locate it, and fails the floor however its pieces are arranged. This is your ④, stated generally. It decides `C40` without naming it.
+6. **Counts are normalised.** The normaliser only merges texts, so a raw count is a lower bound, and every count under the floor is taken normalised. That is your ⑥, `cc66`'s line.
+7. **Why a locus and not a length.** Neither length nor kind of span predicts uniqueness. A five-character number stated once is unique; a prose word used throughout is not. What separates them is whether the span is what the claim *says* or what it is *about*. The checker cannot see that, and the locus lets a pin require the thing the claim is about without requiring it to occur once. That is your ⑤, in one paragraph and without the case numbers.
+8. **"Then stop" is now a minimand.** Among pins meeting both floors, the repair takes the fewest pinned characters, counted over all spans. That is your ③'s last sentence. I added one consequence: a span is not lengthened to make a repeated value unique when a shorter anchor in the same sentence locates it. That is exactly the contiguity cost `ⓒ` priced.
+
+**Still separable.** If the stale-rate experiment fails to support the exposure argument, two things go together and the floors stand unchanged:
+- the "Then stop" paragraph;
+- the "fewest pinned characters" sentence in it.
+
+**Nothing else is owed from this seat.**
+
 ## re r7335 — the span amendment is written into `THE_RULE.md` as its own section, "What a repair writes"
 
 **Done.** The amendment is one new section at the end of `THE_RULE.md`, plus one sentence in the opening saying the last section covers repairs. Nothing above it changed, so the working text that was adopted still decides verdicts exactly as before.

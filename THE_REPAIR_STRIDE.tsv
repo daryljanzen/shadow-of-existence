@@ -1,109 +1,144 @@
-# THE REPAIR STRIDE -- PO-78's repair phase.  Set at r7329, RE-CUT TO TWO SEATS at r7331.  Data, not code.
+# THE REPAIR STRIDE -- PO-78's repair phase.  Set at r7329, re-cut to two seats at r7331, to THREE
+#   SEATS at r7339 when the secondment's return trigger fired.  Data, not code.
 # ** THIS IS THE WHOLE LIST AND IT IS NOT A TRIAGE. **  Every REPAIR-OWED row in
-#   corpus/quote_pin_baseline.tsv is on it.  AT r7337: 284 rows in 90 receipts, down from
-#   366 in 135 at r7329 -- 82 rows and 45 receipts cleared in two revisions.  A row leaves by
+#   corpus/quote_pin_baseline.tsv is on it.  AT r7345: 209 rows in 63 receipts over 49 prefixes,
+#   down from 366 in 135 at r7329 -- so 72 of 135 receipts are closed and 63 remain.  A row leaves by
 #   being REPAIRED or by being WITHDRAWN with its case written down beside the repair -- never by
 #   reclassification and never by looking hard at it.
+#   Median 2 rows a receipt, mean 3.32, max 12; 10 of the 63 receipts hold exactly one.
+#   The whole list splits 114 PAPER / 95 SOURCE and 136 SENTENCE / 73 TOKEN.
+#
+# ** THE RATE, PER REVISION, REALISED RECEIPTS -- THE DIRECTION TRIGGER READS THIS LINE. **
+#   r7333: 17.  r7337: 28.  r7339: 0 (both repair seats spent it on registrations).  r7341: 8 (cc66
+#   alone).  r7345: 19 (60 alone, its whole middle block).  Cleared in all: 72 of 135 over FIVE repair
+#   revisions.
+#   ⛔ AND THE FORWARD FIGURE NOW SITS AT THE TOP OF THE REGISTERED BAND, WHICH IS SAID HERE RATHER THAN
+#   DEFENDED: 63 receipts remain; at 19 a revision that is 3.3 more and at the pooled rate 3.5, so about
+#   8.3 to 8.5 cycles in all against a band of 4-8 set at r7329.  The reason is identifiable and it is not
+#   the work: 70 holds 30 of the 63 -- 48 per cent of what remains -- and has repaired NONE in two
+#   revisions, while 60 has taken its 30 to 11 and cc66 its 30 to 22.
+#
+# ** RE-CUT AT r7345 TO 60 33 / cc66 22 / 70 8, AND THE GROUND IS check_order_acknowledged RATHER THAN
+#   THE COUNTS. **  This revision's first draft declared a forward trigger and took no re-cut, on the
+#   reasoning that 70's r7339 arm (12 realised of 30, band 6-20) was live and shrinking its population
+#   would withdraw a test before scoring it.  ⛔ THE GATE REFUTED THAT PREMISE IN THE SAME REVISION:
+#   70 has FOUR of its own order sections unanswered and last acknowledged r7337 -- a revision lag of 8 --
+#   so r7339, r7341, r7343 and r7345 are unread.  Its last push was 22:44 while the other three seats
+#   pushed at 23:23, 23:39 and 00:28.  ** A registration whose seat is not reading is not a live test. **
+#   check_order_acknowledged's own remedy line names the two ways out -- the seat is woken by something
+#   other than its own pull request merging, or the work comes back to the gate -- and the second is the
+#   one the gate can take.
+#   ⇒ 70's arm (a) is SCORED AS IT STANDS: 0 realised against a band of 6-20, REFUTED LOW.  That is a
+#   scoring and not a withdrawal: the test had four revisions.
+#   ** 70 KEEPS 8 RECEIPTS so that a seat which wakes mid-cycle has work and no prefix sits on two seats
+#   -- the r7333 race, avoided by assignment rather than by hope. **  The other 22 go to 60, which closed
+#   19 receipts in one revision and was about to idle at 11.  The allocation is on DEMONSTRATED RATE and
+#   says so: it is not a fair split and is not meant to be.
 #
 # ** THE UNIT IS THE RECEIPT, NOT THE ROW, AND THE BALANCE IS ON RECEIPTS. **  A repair edits a receipt's
-#   assertions, so a receipt holding five owed rows is one repair touching five keys.  Median 2 rows a
-#   receipt, mean 2.71, max 12; 44 of the 135 receipts hold exactly one.  r7329's first cut balanced on
-#   ROWS and came out 74 receipts against 61 -- balancing on the wrong unit, caught in the same cycle.
-#   The per-receipt cost is UNMEASURED: the first stride measures it and the measurement replaces the
-#   cycle figure in THE_REGISTER's bound rather than being argued against.
-#
-# ** TWO SEATS, BY SECONDMENT RATHER THAN A NEW SEAT.  Decided at r7331 on the arithmetic below. **
-#   Node 70 is SECONDED to the Lean line's campaign 2 -- the 24-unit reopening -- because that block is
-#   the one job on the board designed for a seat with no history in it: 71's interface has the second
-#   seat writing a metric's values and partials against a recipe, never reading 71's proofs.  The repair
-#   stride is the opposite kind of work: it wants the seat that verdicted the prefix, because the
-#   repairer has to recognise what the check was trying to assert.  70 keeps the nightly.
-#   Two seats put both fronts on the same horizon as three plus a new seat would have, ~6 cycles, so the
-#   secondment costs nothing the arithmetic can see.  ** If the first stride's measured per-receipt cost
-#   puts PO-78 past the band's top of 8 cycles, 70 comes back and the Lean block goes single-seat. **
-#
-# ** AFFINITY. **  cc66 holds P15_CR_cosmology and its own sector prefixes; 60 holds the L165/L175/L211
-#   block it verdicted, plus L147 (the rows cc66's Test 5 clause decided) and the L202/L204 instrument
-#   prefixes 70 was carrying.  The tails are assigned to balance receipts and carry no affinity claim.
-#   Node 71 is not on this stride -- it has the Lean census.  Node 69 is not a workhorse and takes none.
-#
-# ** WHAT A REPAIR IS. **  THE_RULE.md at 1a3c13a61 is the WORKING RULE, adopted at r7329 and refined in
-#   use.  A repair makes the check assert what the claim IS rather than that a sentence is present --
-#   the form 60 used on its own S45 key at r7330.  Where the rule owes a repair that should not be owed,
-#   or misses one it should catch, the case is written down beside the repair and the rule is amended
-#   from those cases in small named changes.  The text stays applied throughout.
+#   assertions, so a receipt holding five owed rows is one repair touching five keys.  r7329's first cut
+#   balanced on ROWS and came out 74 receipts against 61 -- balancing on the wrong unit, caught in the
+#   same cycle.
 #
 # ** THE RE-CUT RULE, FROM r7333. **  A stride re-cut applies to work NOT YET BEGUN, and the blocks a
 #   seat was told to do FIRST under the old cut stay that seat's.  r7331 reassigned L147_two_arm to 60
-#   and told it to start there while 70 was already working it under r7329's order; both seats repaired
-#   the same 13 rows.  A re-cut that reassigns the head of a seat's queue is a re-cut that will be raced.
-# ** AND NO INTER-RATER MEASURE GOVERNS A REPAIR (r7333). **  Both those repairs pass all five receipts
-#   while agreeing on 48-78 per cent of what to remove and on 2 replacement literals of fifty-odd: a
-#   repair has many correct outputs where a verdict had one.  The arbiter is the 134-gate sweep plus the
-#   carry ledger (git fetch origin refs/ci/carry && git show FETCH_HEAD:carry.json), per repair.
+#   while 70 was already working it under r7329's order; both seats repaired the same 13 rows.
+#
+# ** AND NO INTER-RATER MEASURE GOVERNS A REPAIR (r7333). **  Two independent repairs of the same 13 rows
+#   passed all five receipts while agreeing on 48-78 per cent of what to remove: a repair has many correct
+#   outputs where a verdict had one.
+#
+# ** THE ARBITER. **  `bash scripts/sweep_gates.sh` plus the carry ledger
+#   (git fetch origin refs/ci/carry && git show FETCH_HEAD:carry.json), per repair.  The script invokes
+#   every gate with `< /dev/null` and ASSERTS ITS OWN ROSTER -- 129 results for 129 names -- after cc66
+#   found at r7341 that a `while read g; do ... done < gatelist.txt` loop had been running 120 of the 134
+#   it claimed, a gate's child having eaten the list.  ** No seat runs an ad-hoc gate loop. **
+#   ⌗ And at r7343 the first full-roster run found one red that was a stale CACHE in check_tilt_pins, not
+#   a defect in the tree; that gate now takes a fresh directory per run.  A count is not a roster and a
+#   cache is not a measurement.
 #
 # ** AND TWO QUANTITIES, NEITHER STANDING FOR THE OTHER (r7333, r7337). **  Report EFFORT and REALISED
 #   receipts a revision with the assignment named; and report the owed count BESIDE the keys minted and
-#   adjudicated, because a repair clears a row either by making the check assert the claim in a form the
-#   instrument reads or by restructuring it out of pin form -- both repairs, only the first visible.
-#   ⌗ Until the instrument follows one hop of transformation, prefer the DIRECT-SPAN form wherever one
-#   word-aligned span carries the claim: cc66 minted 3 of 3 adjudicable keys that way and 0 of 7 the other.
-# ** WHAT A REPAIR WRITES is now in THE_RULE.md (r7335, 69 from 60's case): the SHORTEST span that carries
-#   the whole claim and occurs once under the checker's own normalisation, and then STOP. **
+#   adjudicated.  Trunk-wide: 24 keys against 16 rows cleared at r7341 (1.50 a row), 48 against 59 at
+#   r7345 (0.81).  ⛭ AND 60 MEASURED THE QUANTITY THE SECOND READING EXISTS FOR, ON ITS OWN BLOCK: 3 of
+#   59 retired rows have a replacement the instrument cannot see -- 0.051, against its registered band of
+#   0.08-0.22 and against cc66's 0.70 on the same quantity.  So for THAT block a falling owed count very
+#   nearly IS the gain.  60 named why the two seats differ by 14x and the reason is PRACTICE, not corpus:
+#   a seat that prefers parsing to pinning reads high on this arm while making the corpus stronger.
 #
-# seat	prefix	rows	receipts	PAPER/SOURCE	SENTENCE/TOKEN
-# ---- cc66: 145 rows in 48 receipts over 29 prefixes
-cc66	P15_CR_cosmology	22	12	22/0	15/7
-cc66	L269_the_second_theatre	12	1	0/12	10/2
-cc66	L207_the_bend	10	2	10/0	7/3
-cc66	L221_quark_lepton	8	2	6/2	7/1
-cc66	L255_the_exemption_was_a_claim	8	1	0/8	3/5
-cc66	L802_stability_bracket	8	2	7/1	7/1
-cc66	P16_cosmogenesis_paper	8	2	8/0	8/0
-cc66	L202_the_seam	6	1	5/1	5/1
-cc66	L_probability	6	1	0/6	2/4
-cc66	L257_the_label_did_double_duty	5	1	5/0	5/0
-cc66	P10_canonical_time	5	4	3/2	4/1
-cc66	L246_the_achirality_is_the_obstruction	4	1	4/0	3/1
-cc66	L263_the_station_audit	4	1	2/2	3/1
-cc66	L267_the_sweep_that_did_not_run	4	1	0/4	2/2
-cc66	L550_third_mechanism	4	1	3/1	4/0
-cc66	P03_SdS_slicing	4	2	4/0	2/2
-cc66	L276_the_representation_theory_probe	3	1	0/3	1/2
-cc66	L279_the_symmetric_space_probe	3	1	0/3	0/3
-cc66	L801_nonlinear_shear_freedom	3	1	3/0	3/0
-cc66	L815_seam_phase_derived	3	1	3/0	0/3
-cc66	L233_colour_curvature	2	1	0/2	2/0
-cc66	L248_the_strike_broke_its_readers	2	1	1/1	1/1
-cc66	L253_the_seed_that_stopped_seeding	2	1	0/2	0/2
-cc66	L551_register_integrity	2	1	0/2	2/0
-cc66	L556_registry_from_rows	2	1	0/2	0/2
-cc66	P17_geometric_core_paper	2	1	2/0	2/0
-cc66	L281_the_prior_art_hole	1	1	0/1	0/1
-cc66	L809_one_loop_quartic	1	1	1/0	1/0
-cc66	P08_slicing_operator	1	1	1/0	1/0
-# ---- 60: 139 rows in 42 receipts over 24 prefixes
-60	L165_interacting_tower	23	8	20/3	19/4
-60	L211_closure_adjacency	16	4	10/6	13/3
-60	L202_phase_at_the_seam	15	2	13/2	13/2
-60	L204_physics_reach	12	4	4/8	1/11
-60	L175_dimensional_descent	8	3	7/1	8/0
-60	L247_the_build_already_stands	8	1	4/4	4/4
+# ** WHAT A REPAIR WRITES: THE_RULE.md, two amendments, the second corrected the revision it landed. **
+#   (r7335, 69 from 60's case): the shortest span that carries the whole claim and occurs once under the
+#   checker's own normalisation, then stop.  (r7339-r7341, 69 from cc66's case): a pin may be SEVERAL
+#   spans required together inside ONE LOCUS -- one anchor occurring exactly once, every other span
+#   required within the anchor's locus, exactly one locus.  A pin none of whose spans occurs once has
+#   nothing to locate it.  Counts are taken normalised.  The section governs REPAIRS and is not a test on
+#   quotations already standing.  Floor 2 does not apply to a file read at a named commit.
+#   ⛭ AND THE MINIMAND RANKS ONLY PINS check_quote_pins CAN KEY (r7341, the gate's own correction of its
+#   r7339 ruling): a pin the instrument cannot key is not a cheaper pin, it is not among the pins ranked.
+#   Among keyable pins, fewest pinned characters over all spans.  The domain widens when the instrument
+#   widens, so nothing has to be switched over by hand.
+#
+# ** ONE CLASS, FOUND BY TWO SEATS FROM OPPOSITE ENDS, AND IT IS NOW ONE CLASS (r7345). **  The keying
+#   mechanism slices a span at a boundary the span's author did not choose:
+#   ⒜ 60's: the instrument MINTS KEYS THE RECEIPTS NEVER PINNED -- 2 of its 50 minted rows are fragments
+#   extracted from inside a receipt's own longer literal or from the label that quotes it, so a repair
+#   that collapses fragments into one span still mints rows for the fragments it quotes; and a long span
+#   written as implicitly concatenated source lines is keyed piece by piece, split mid-word.
+#   ⒝ cc66's: the VANISHING SPAN -- 15 of 302 P15-wide readings vanish under the normaliser entirely,
+#   every one produced by EXTENDING a shorter literal by a character distance so the boundary lands
+#   mid-token where _unmark then deletes a delimiter the raw text had.
+#   Neither is a repair and neither is on the list below.  Both are measurements the ledger owes itself.
+#
+# seat\tprefix\trows\treceipts\tPAPER/SOURCE\tSENTENCE/TOKEN
+# ---- 60: 105 rows in 33 receipts over 29 prefixes
+60	L221_quark_lepton	8	2	6/2	7/1
+60	L802_stability_bracket	8	2	7/1	7/1
 60	RP_34_gr	8	2	8/0	5/3
-60	L548_propagating_sector	6	1	6/0	6/0
-60	L271_the_statistics_bake	5	2	2/3	1/4
-60	L237_gates_check_declarations	4	1	0/4	2/2
+60	P03_SdS_slicing	4	2	4/0	2/2
+60	L247_the_build_already_stands	8	1	4/4	4/4
+60	L202_the_seam	6	1	5/1	5/1
+60	L_probability	6	1	0/6	2/4
+60	L257_the_label_did_double_duty	5	1	5/0	5/0
+60	L246_the_achirality_is_the_obstruction	4	1	4/0	3/1
+60	L263_the_station_audit	4	1	2/2	3/1
 60	L272_the_survey_that_was_a_memory	4	1	0/4	1/3
-60	L805_freezing_reproduced	4	1	2/2	2/2
-60	L557_the_correction_stopped_at_the_sentence	3	1	0/3	0/3
+60	L550_third_mechanism	4	1	3/1	4/0
+60	L276_the_representation_theory_probe	3	1	0/3	1/2
+60	L279_the_symmetric_space_probe	3	1	0/3	0/3
 60	L560_pins_into_moving_prose	3	1	3/0	3/0
 60	L563_the_split_partition	3	1	0/3	2/1
+60	L815_seam_phase_derived	3	1	3/0	0/3
 60	L213_external_constraint	2	1	2/0	1/1
+60	L248_the_strike_broke_its_readers	2	1	1/1	1/1
 60	L251_the_numbering_collides	2	1	0/2	1/1
 60	L256_the_band_taken	2	1	0/2	2/0
 60	L266_station_C_three_readings_of_the_dial	2	1	0/2	0/2
-60	L277_the_unclaimed_surface	2	1	0/2	0/2
 60	L280_the_decidable_claims	2	1	0/2	2/0
-60	L552_weyl_and_torus	2	1	0/2	2/0
+60	L551_register_integrity	2	1	0/2	2/0
+60	L556_registry_from_rows	2	1	0/2	0/2
 60	L811_po7_inversions_closed	2	1	0/2	0/2
 60	L259_the_distance_from_the_present	1	1	0/1	0/1
+60	L281_the_prior_art_hole	1	1	0/1	0/1
+60	P08_slicing_operator	1	1	1/0	1/0
+# ---- cc66: 74 rows in 22 receipts over 17 prefixes
+cc66	P15_CR_cosmology	6	4	6/0	4/2
+cc66	P16_cosmogenesis_paper	8	2	8/0	8/0
+cc66	L271_the_statistics_bake	5	2	2/3	1/4
+cc66	L269_the_second_theatre	12	1	0/12	10/2
+cc66	L255_the_exemption_was_a_claim	8	1	0/8	3/5
+cc66	L548_propagating_sector	6	1	6/0	6/0
+cc66	L237_gates_check_declarations	4	1	0/4	2/2
+cc66	L267_the_sweep_that_did_not_run	4	1	0/4	2/2
+cc66	L805_freezing_reproduced	4	1	2/2	2/2
+cc66	L557_the_correction_stopped_at_the_sentence	3	1	0/3	0/3
+cc66	L801_nonlinear_shear_freedom	3	1	3/0	3/0
+cc66	L233_colour_curvature	2	1	0/2	2/0
+cc66	L253_the_seed_that_stopped_seeding	2	1	0/2	0/2
+cc66	L277_the_unclaimed_surface	2	1	0/2	0/2
+cc66	L552_weyl_and_torus	2	1	0/2	2/0
+cc66	P17_geometric_core_paper	2	1	2/0	2/0
+cc66	L809_one_loop_quartic	1	1	1/0	1/0
+# ---- 70: 30 rows in 8 receipts over 3 prefixes
+70	P10_canonical_time	5	4	3/2	4/1
+70	L202_phase_at_the_seam	15	2	13/2	13/2
+70	L207_the_bend	10	2	10/0	7/3

@@ -130,11 +130,17 @@ def main():
     #: carrying the computed `302.2` is located (it occurs ONCE in the whole paper), and the measured
     #: value is required IN THAT SENTENCE.  It fails if the pairing is ever split across sentences or
     #: the measured value changes, neither of which the old arm could see.
-    _cal = [_s for _s in re.split(r'(?<=[.!?]) ', p15) if '302.2' in _s]
+    # r7337+cc66, RE-REPAIR under THE_RULE's floor 2: the asserted '301' stands SEVEN times in
+    #   this paper.  The computed value and the measured one now sit in one 6-word span that
+    #   occurs once under `_unmark` -- the claim is the comparison, so the comparison is the span.
+    _cal = ['$\\ell_{*}=\\pi D_{M}/r_{s}=302.2$ against the measured $301.76$'] \
+        if '$\\ell_{*}=\\pi D_{M}/r_{s}=302.2$ against the measured $301.76$' in p15 else []
     check(f'⛭⛭ ⓷ and the projection is calibrated in ONE sentence, the computed ratio beside the '
           f'measured one: "$\\ell_{{*}}=\\pi D_{{M}}/r_{{s}}=302.2$ against the measured $301.76$" '
           f'({len(_cal)} sentence carries the computed value)',
-          len(_cal) == 1 and '301' in _cal[0])
+          #   ⌗ and the bare '301' conjunct is GONE: the span names $301.76$ itself, so the
+          #   fragment added no test and stood SEVEN times in the paper.
+          len(_cal) == 1)
 
     # ⓷ the ratio, recomputed
     # ** r6931+70.1 (PO-59): CLASS (a) -- this pair was passing VACUOUSLY at head and failed at r6774

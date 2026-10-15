@@ -94,11 +94,17 @@ def main():
     #:   COMPARISON. **  So the sentence carrying the computed `302.2` is located -- unique in the paper
     #: -- and the comparison is required in THAT sentence.  Seven of the eight occurrences can no longer
     #: satisfy it, and it fails if the pairing is ever split across sentences.
-    _pair = [_s for _s in re.split(r'(?<=[.!?]) ', p15) if '302.2' in _s]
+    # r7337+cc66, RE-REPAIR under THE_RULE's floor 2: 'against the measured' stands EIGHT times in
+    #   this paper.  The pair this receipt is about is one 6-word span occurring once under
+    #   `_unmark`, and it names both values rather than locating a sentence that holds them.
+    _pair = ['$\\ell_{*}=\\pi D_{M}/r_{s}=302.2$ against the measured $301.76$'] \
+        if '$\\ell_{*}=\\pi D_{M}/r_{s}=302.2$ against the measured $301.76$' in p15 else []
     check(f'⛭⛭ ⓵ P15\'s prose pairs them in ONE sentence: '
           f'"$\\ell_{{*}}=\\pi D_{{M}}/r_{{s}}=302.2$ against the measured $301.76$" '
           f'({len(_pair)} sentence carries the computed ratio)',
-          len(_pair) == 1 and 'against the measured' in _pair[0])
+          #   ⌗ and the bare 'against the measured' conjunct is GONE: the span contains the phrase,
+          #   so the fragment added no test and stood EIGHT times in the paper.
+          len(_pair) == 1)
     check('while its own receipt carries the unrounded measurement: "Pinning the MEASURED acoustic '
           'angle 100theta_* = 1.04109 (l_A = pi/theta_* = 301.76)"',
           '1.04109' in z and '301.76' in z)
