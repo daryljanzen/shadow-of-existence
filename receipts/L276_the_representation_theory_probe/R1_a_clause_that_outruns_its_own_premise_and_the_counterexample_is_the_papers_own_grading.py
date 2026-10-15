@@ -56,6 +56,7 @@ eight -- no room, exactly as `P14` and `P07` say.*
 Written r3170, `L-276`.  Stated for reversal.
 """
 import os
+import re as _re_R1_276
 import sys
 from math import gcd
 
@@ -101,9 +102,19 @@ def main():
     check('⓵ station Ⓕ — the two real forms of SO(6,C), the reach list\'s representation-theory '
           'entry — was STRUCK r3148 as already held in P13',
           'STRUCK r3148' in reach and 'real forms' in reach)
-    check('⓵ᵇ and the re-survey marked the field "partly discharged" and wanting a targeted probe '
-          'rather than a full bake — so the field is thrown at one sentence by design',
-          'partly discharged' in reach and 'probe' in reach.lower())
+    #: ⛭⛭ THE REPAIR (r7358 on `r7353` ②'s ORDER -- the queue's `L276_the_representation_theory_probe`
+    #: take).  ** Two owed arms conjoined a two-word fragment with the single word `probe`, which
+    #: occurs fourteen times in that file -- so the second arm could not fail and the first named no
+    #: field. **  ⇒ One span, the re-survey's own CELL, carrying the verdict and the recommendation
+    #: together, read through a reader that normalises the emphasis and strike-through families and
+    #: asserted by membership beside its uniqueness count.
+    _reach_flat = _re_R1_276.sub(r'\s+', ' ', _re_R1_276.sub(r'\*+|~~', ' ', reach))
+    _VERDICT = ('Real but partly discharged: Ⓕ was struck as already held in `P13`, and `P13`/`P14` '
+                'do their own. ⇒ Wants a targeted probe, not a full bake')
+    check(f'⓵ᵇ and the re-survey\'s own cell says BOTH halves -- the verdict and the recommendation '
+          f'-- in one clause occurring once ({_reach_flat.count(_VERDICT)}), where the bare word '
+          f'`probe` occurs {_reach_flat.lower().count("probe")} times: "{_VERDICT}"',
+          _VERDICT in _reach_flat and _reach_flat.count(_VERDICT) == 1)
 
     print()
     print('  ' + '=' * 74)
@@ -192,10 +203,15 @@ def main():
           'three values, and this paper uses one---the centre"',
           'The restriction is the premise and not a general fact' in p14
           and '$Z_3$ character takes three values' in p14)
-    check('⓹ᵇ ⛭ and the class is the corpus\'s own: OWED 621 recorded a gloss drifting from the '
-          'computation beneath it — "a receipt\'s prose is not its result" — at receipt grain; '
-          'this is the same shape at PAPER grain',
-          "a receipt's prose is not its result" in owed or 'prose is not its result' in owed)
+    #: ⛭ and the second owed arm was a DISJUNCTION whose second branch is a FRAGMENT of its first,
+    #: so the shorter arm could satisfy it wherever the words appeared.  ** One span, the owed
+    #: item's own clause naming the class, asserted once. **
+    _owed_flat = _re_R1_276.sub(r'\s+', ' ', _re_R1_276.sub(r'\*+|~~', ' ', owed))
+    _CLASS = "The class is worth naming: a receipt's prose is not its result"
+    check(f'⓹ᵇ ⛭ and the class is the corpus\'s own: the owed item names it in one clause occurring '
+          f'once ({_owed_flat.count(_CLASS)}) -- "{_CLASS}" -- at receipt grain, and this is the '
+          f'same shape at PAPER grain',
+          _CLASS in _owed_flat and _owed_flat.count(_CLASS) == 1)
 
     print()
     print('  ' + '=' * 74)

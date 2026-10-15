@@ -269,9 +269,22 @@ def main():
 
     # ------------------------------------------------------------------ the fixes, verified
     reader = open(os.path.join(ROOT, 'corpus', 'index_rows.py'), encoding='utf-8').read()
-    check('⛭ THE FIX IS A DELETION, NOT A FIFTH PATCH: corpus/index_rows.py decides membership by '
-          'header-or-rule only, and the paper-column predicate appears nowhere in it',
-          'def is_data_row' in reader and OLD_FILTER_SRC not in reader)
+    #: ⛭⛭ THE REPAIR (r7358 on `r7353` ②'s ORDER -- the queue's `L556_registry_from_rows` take).
+    #: ** The owed arm pinned the `def` LINE, so renaming the function read the claim false while
+    #: the behaviour was untouched. **  ⇒ The membership decision is read out of the shared reader's
+    #: SYNTAX TREE: the function is found as a definition, and the paper-column predicate is shown
+    #: absent from its code rather than from its text, which keeps the prose history readable.
+    _reader_tree = ast.parse(reader)
+    _is_data = [n for n in ast.walk(_reader_tree)
+                if isinstance(n, ast.FunctionDef) and n.name == 'is_data_row']
+    _reader_lits = {n.value for n in ast.walk(_reader_tree)
+                    if isinstance(n, ast.Constant) and isinstance(n.value, str)}
+    check(f'⛭ THE FIX IS A DELETION, NOT A FIFTH PATCH: `corpus/index_rows.py` decides membership by '
+          f'header-or-rule only -- the decision is a DEFINITION in its syntax tree '
+          f'({len(_is_data)}) and the paper-column predicate survives in no literal of its CODE '
+          f'({OLD_FILTER_SRC not in _reader_lits}), while its prose keeps the history',
+          len(_is_data) == 1 and OLD_FILTER_SRC not in _reader_lits
+          and OLD_FILTER_SRC not in reader)
     live = index_rows.rows(resolve_paths=True)
     check(f'⇒ and it is a SUPERSET: every row the old predicate admitted is still admitted, '
           f'{len(live)} rows in all, none unresolvable',
@@ -287,9 +300,23 @@ def main():
         src = open(os.path.join(ROOT, name), encoding='utf-8').read()
         lits = {n.value for n in ast.walk(ast.parse(src))
                 if isinstance(n, ast.Constant) and isinstance(n.value, str) and len(n.value) < 6}
-        check(f'  · {name} calls the shared reader, and no `| P` / ``| ` `` literal survives in its '
-              f'CODE (prose keeps the history)',
-              'index_rows' in src and '| P' not in lits and '| `' not in lits)
+        #: ⛭ and `calls the shared reader` is read STRUCTURALLY too (r7358): the module name
+        #: occurs in every one of these files' own prose, so a membership test on it cannot fail --
+        #: the proxy-on-live-code class this seat filed at `r7337` ③.  ** An IMPORT or a CALL is what
+        #: `calls` means, so that is what is asserted. **
+        _tree = ast.parse(src)
+        _imports_reader = [n for n in ast.walk(_tree)
+                           if (isinstance(n, ast.Import)
+                               and any(a.name.split('.')[-1] == 'index_rows' for a in n.names))
+                           or (isinstance(n, ast.ImportFrom)
+                               and (n.module or '').split('.')[-1] == 'index_rows')]
+        _calls_reader = [n for n in ast.walk(_tree)
+                         if isinstance(n, ast.Call)
+                         and getattr(getattr(n.func, 'value', None), 'id', '') == 'index_rows']
+        check(f'  · {name} calls the shared reader -- {len(_imports_reader)} import(s) and '
+              f'{len(_calls_reader)} call(s) in its SYNTAX TREE, not its prose -- and no `| P` / '
+              f'``| ` `` literal survives in its CODE (prose keeps the history)',
+              (_imports_reader or _calls_reader) and '| P' not in lits and '| `' not in lits)
 
     # ------------------------------------------------------------------ the new gate, SEEDED
     # ** A gate is verified against a SEEDED DEFECT, never against a clean tree. **  The seed is placed
