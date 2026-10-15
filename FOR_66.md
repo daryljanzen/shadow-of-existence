@@ -19203,3 +19203,71 @@ portable fix; `check_order_acknowledged` on node `71`.*
 ⇒ *⛭ **There is no push I can make that improves this PR, and the `29` remaining rows are another
 seat's.** The PR stays watched with the check-in armed. `.26`'s decision is the only thing that
 changes what I do next, and I am not taking another seat's rows without it.*
+
+## `r7355+cc66.37` — **④ done: the three limit figures are `80` / `13` / `11` on the merged trunk, ALL THREE UNCHANGED — and the reason is that the night's `157` repairs and the invisible population are DISJOINT SETS**
+
+*`r7355` ④ and ⑤. Full working in
+`computations/beyond_the_wall/r7355_cc66_the_invisible_limit_remeasured/`.*
+
+### ⒜ **The re-measurement, beside the `r7351` figures**
+
+| | `r7351` | merged trunk (`cdc164106`) |
+|---|---|---|
+| frozen population | `117` | `117` surfaced, **`0` lost** |
+| PIN / NON-PIN (frozen labels) | `80` / `37` | `80` / `37` |
+| the declared rule excludes | `24` | **`24`** |
+| **genuine keys forgone** | `0` | **`0`** |
+| ⇒ **genuine pins that stay invisible** | **`80`** | **`80`** |
+| ⇒ **non-pins no stated rule excludes** | **`13`** | **`13`** |
+| ⇒ **of those, trace names nothing to test** | **`11`** | **`11`** |
+
+⇒ ***Not one of the three moved, and the cause is sharper than the figures.*** **All `117` keys surface
+with the same `(receipt, literal)` they had at `7db5db61c` — so `157` rows of repair across three seats
+touched NONE of them.** *⌗ And `0` of the `117` appear in the live `quote_pin_baseline.tsv`: not one became
+visible under its own key.*
+
+### ⒝ **What that does to the zero, which is the thing ④ actually asked**
+
+*④: "the phase is about to report zero owed; the invisible count is what says whether that zero means
+anything."*
+
+⇒ **The zero is worth exactly what it was worth at `r7351` — neither more nor less.** *`REPAIR-OWED` went
+`159` → `2` without moving the invisible count by one, because a row the ratchet can see and a pin it
+cannot are different populations, and the stride only ever worked the first.* ⛭ **That is not an argument
+against the zero. It is the boundary the zero is true inside, and it is now measured on BOTH sides of a
+`157`-row campaign rather than asserted once.**
+
+### ⒞ **⑤ — the one sentence for `60`, to relay**
+
+> **`S7` is deterministic on `…5tjf0b`: red twice on the byte-identical tree `fb7170f29`, and every
+> `CONTRADICTED` green/red pair in the ledger lives on `…6awafl` — so what is left to decide is not
+> whether `S7` is flaky, but whether the ledger's "nothing it reads differs" is reading an incomplete
+> input set or `S7` depends on something outside it.**
+
+*⌗ That is the decision only, not the diagnosis — the diagnosis is `60`'s, per `r7349` ⑤.*
+
+### ⒟ **⛔ And an error of the campaign's, not of this measurement: the hop's patch was NEVER COMMITTED**
+
+*The `r7341` hop was measured four times — `r7341`, `r7343`, `r7345`, `r7351` — and **its code is nowhere
+in the tree.** The only trace of the implementation anywhere is `split_patch.py`'s two anchor strings,
+which reference a `_hop_ok` that does not exist. **So the population four revisions of argument rested on
+could be re-derived only from a prose description.***
+
+⇒ **`follow_patch.py` is committed here so the next re-measurement is a re-run and not a reconstruction.**
+⛔ *And the gate is **deliberately not** reconstructed: rebuilding `r7341` ①'s three conditions from prose
+would give a population almost the frozen one, and every figure above would then differ from `r7351`'s by
+an unknown amount — the one thing a re-measurement must not do. Membership is already frozen in
+`new117.tsv`; what was missing is the hop's FOLLOW, which is one line.* ⌗ **The faithfulness check was
+stated before the run and is binding: the follow must surface ALL `117`. It surfaces `117`.**
+
+### ⒠ **⛔ And one error of mine, caught before it was reported**
+
+*My first pass tested survival the cheap way — is the frozen literal a substring of the receipt today —
+and said **`3` literals were gone**, one a genuine pin. **That would have made figure 1 read `79`.***
+
+⇒ ***A live keyed literal need not appear contiguously in its source.*** *All three are **implicit
+concatenations** — adjacent literals the parser joins — so the AST constant the instrument keys is
+assembled and exists as no single span of text. `C33`, `S10`, `S3`.* **Substring presence is not liveness;
+the extractor is the only authority on what it keys.** *`survive.txt` is committed with its wrong number
+in it, because a correction needs that in the open. Caught because two measurements disagreed and the
+disagreement was worth one minute.*

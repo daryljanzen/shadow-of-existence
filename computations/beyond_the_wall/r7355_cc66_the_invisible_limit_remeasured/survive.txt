@@ -1,0 +1,13 @@
+frozen population 117 keys: PIN 80, NON-PIN 37  (residual reclassified: 2)
+live baseline carries 2631 keys
+
+--- frozen label PIN ---
+    79  STILL-INVISIBLE
+     1  LITERAL-GONE
+--- frozen label NON-PIN ---
+    35  STILL-INVISIBLE
+     2  LITERAL-GONE
+
+  [PIN/LITERAL-GONE] C33_the_threshold_corrected.py | 'the expansion rate, the matter and baryon densities and the '
+  [NON-PIN/LITERAL-GONE] S10_the_sweep_for_exact_counts_could_not_conta | '"{}"'
+  [NON-PIN/LITERAL-GONE] S3_the_openness_subclass_is_read_in_full_and_t | 'receipts/P15_CR_cosmology/P15_the_corpus_places_every_pertur'
