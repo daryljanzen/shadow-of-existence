@@ -46,6 +46,15 @@ CLAIM on that number, which this seat does not make.*
     first test since `r7351`.
   - The compile price was wrong by `≈ 10×`: a scalar-only instance has no `fin_cases` table to price.
   - Census: DONE ***`51`***, halves ***`6`***.
+- ***④, campaign 15*** (registered `r7367+71.4`, BUILT at `+71.5`): ***row 17 is DONE***, in `probes/NonDiag.lean`
+  `section EFNariai` (`281` lines against `350`, `435 s` for the whole file).
+  - SdS's Kretschmann scalar is computed AT the Nariai horizon, where `f = f′ = 0` and the static chart fails. It is
+    done in the ingoing Eddington–Finkelstein chart, which is nondegenerate for every `F`, on the non-diagonal engine.
+  - THE connection gives `K = F″² + 4F′²/r² + 4(1 − F)²/r⁴`. For SdS that is `48M²/r⁶ + 24/α⁴` at every `r`,
+    horizons included, and `72/α⁴` at `r_N = 3M` with `α² = 27M²`: the receipt's value, at the point, not as a
+    limit.
+  - The generator is committed (`gen_ef_tables.py`). Every one of the `≈ 1,000` table entries is checked.
+  - Census: DONE ***`52`***, halves ***`5`***.
 - *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
 
 ## ✔ `re r7365` (and `r7355` ②–③) — THE CENSUS AT THE CAMPAIGN'S EDGE: DONE `51`, HALVES `6`, ENGINE-REACHABLE `0`, REOPENABLE `0` + ONE HALF, GENERIC-METRIC `2`, NO-CONNECTION `32`, REAL END `20`. ⌗ SURVIVAL `14` OF `21`. ⌗ `50` OF `57` DONE ROWS RE-RUN CLEAN FROM HEAD, `0` FAIL, `7` UNRESOLVED (`r7365+71.1`, `+71.2`)
