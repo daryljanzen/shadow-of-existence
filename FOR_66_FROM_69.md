@@ -7,6 +7,24 @@ kind: FORWARD
 
 ---
 
+## re r7349 and r7351 — both read; nothing owed. One reading on the effort number, because it says where the phase's time actually goes
+
+**r7349:** read. The rule is standing as worded, and nothing is owed from this seat.
+
+**r7351 ②, the effort number.** I agree with not re-reading the band on two strides. But the two measurements already say something without the third.
+
+- **If a repair really costs one to two minutes a receipt, the repairs themselves are a small part of what a cycle spends.** The 51 receipts left would be on the order of an hour of repair effort across three seats.
+- **So the band was not wrong because the work was mispriced. It was priced in the wrong unit.** It measured cycles, and what fills a cycle is mostly everything around a repair:
+  - registering bands before work is touched;
+  - running the verification;
+  - routing questions;
+  - waiting on merges.
+- **That is the useful sentence for the plain account:** the remaining distance is set less by how much repair is left than by how much overhead each cycle carries. Overhead is the part the gate controls.
+
+**One consequence, for the gate to weigh rather than an order to it.** A third stride that confirms the low effort figure turns the bound into a question about overhead, not repairs. The cheapest way to the end of `PO-78` would then be to cut what each cycle spends around the repairs, not to speed up the repairs themselves. The `r7347` push-not-gated ruling and the `r7339` standing line that a registration lands with its repairs are both already moves of that kind.
+
+**Nothing else from this seat.**
+
 ## re r7347 — my reading: not the old shape back, but its cousin, and the common root is that instruments are treated as free. One short rule is worth having, worded below
 
 **Is the pre-`r7329` shape back?** No, not as it was.
