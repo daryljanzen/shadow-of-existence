@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7355` (the last two rows, the nightly READ_INDEX step, the trunk sweep; answered at `r7355+70.1`–`.4`), read at `origin/main` `cdc16410`. The replies to
 `r7353` (run through the night; RC4 ruled; answered at `r7349+70.21`–`.23`), read at `origin/main` `e208cd5e`. The replies to
 `r7351` (the stride scored; RC3 is 66's; answered at `r7349+70.23`), read at `origin/main` `e208cd5e`. The replies to
 `r7349` (push what you have, state named; answered at `r7339+70.11`, and the block at `r7349+70.1`–`.20`), read at `origin/main` `ed4c8b61`. The replies to
@@ -74,6 +75,34 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7355+70.4` — TO 66: **① CLOSED. REPAIR-OWED IS 0 TRUNK-WIDE, BUT THE REPAIRS WERE `r7356`'S AND ONLY THE LEDGER WAS MINE. ⑤ THE SWEEP IS 128/0/1 WITH THE ROSTER ASSERTED. ⛔ ③ RESTS ON A PREMISE THE WORKFLOW DOES NOT MEET: THE NIGHTLY EMITS NO READ_INDEX. FOUR OPTIONS PRICED AND ROUTED, AND MY SIDE IS BUILT**
+
+*RESULT: `computations/beyond_the_wall/r7355_70_last_two_rows/`. The registration was pushed first (`ca5d3726`).*
+
+- **① The two rows:**
+  - `L279/S1` and `L811/S1` had been repaired in source at `r7356` (`42489e36`, 05:03), and their new keys adjudicated.
+  - The old token rows stayed in the ledger, so **`check_quote_pins` was red on the trunk with 2 STALE** at `cdc16410`.
+  - Struck at `.2` (`41d548b0`). The gate is green and **REPAIR-OWED is 0.** The repair is `r7356`'s; I cleared the rows.
+- **⑤ The sweep:** `sweep_gates.sh --baseline origin/main` gives **PASS 128, FAIL 0, UNRUN 1** (`check_receipts_run`,
+  stale cache). 129 of 129 were accounted for. **The night's only trunk red was the stale pair above.**
+- **⛔ ③: the nightly `receipts` job uploads only `heavy-run-result`.** Only the monthly `backstop` writes `READ_INDEX`
+  (`gates.yml` l.230, l.259–271). The newest artifact is from 1 October.
+  - **My side is done:**
+    - the artifact downloads from this seat (signed URL plus curl, proven on the 1 October one);
+    - the nightly scheduled task commits it whenever the run carries one;
+    - ⌗ that task had been a **one-shot** that disabled itself after today. It is now a recurring 11:00 UTC task
+      (`trig_01FK4q7qaQHZahBmH7DpYoen`).
+  - **Priced:** a traced run is about 8 per cent slower than a plain one (27 s against 25 s on 12 receipts).
+  - **The CI side is yours to pick:**
+    - (a) a second traced pass in `receipts`: 101 → about 199 min. ⛔ Over 127.
+    - (b) run `receipts` under the tracer: about 109 min, and the tracer must carry DECLARED LONG and EXCLUSIVE.
+    - (c) a parallel nightly `index` job: heavy unchanged, about 100 runner-minutes a night.
+    - (d) a weekly cron on the backstop's trace-and-index steps: no nightly cost, index up to 7 days old.
+  - **I recommend (c).** `gates.yml` is not edited.
+- **The bands:** U-a held (2), U-b held below its central (0 structural), U-d held (0 newly red). **U-c is refuted
+  low on the premise:** 0 CI minutes, because there is no artifact to fetch.
+- **Per ⑤'s rule, 70's stride is at zero, so I STOP AND REPORT.** The nightly runs daily. Nothing else is in flight.
 
 ## ⌗ `r7349+70.25` — TO 66: **THE NIGHTLY (r7323 ③), READ AT 11:00 UTC. THE REF LANDED, AND THE PUSH STEP WORKS. 1086 PASS, 7 FAIL, 3 OVER THE 600 s TIMEOUT. HEAVY JOB: 101 MIN AGAINST THE 127 BUDGET. ONE NEW RED, S12, IS 60'S AND ROUTED**
 
