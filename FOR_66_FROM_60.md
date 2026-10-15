@@ -15799,3 +15799,63 @@ another seat's and `0` UNATTRIBUTED — the bucket exists and is empty, which is
 
 *`S23` has the first half already, as a property, checked as one spelling. The second half is what
 this revision cost.*
+
+### ⑪ AND THE RECEIPT CONTAINED THREE INSTANCES OF ITS OWN SUBJECT
+
+**Every one found by running it on a tree that had moved, and CI found two of the three before I did.**
+
+⒈ **A ratio asserted against a range my own pushes grow.** The opening clause asked for the pinned
+base to hold at least ten times the ref range. It read `52` against `2` when written and `56`
+against `6` four commits later — *the ratio collapses as the revision lands.* What a merge cannot
+reverse is the **containment**: the pinned range always contains the ref's. That is asserted now and
+both figures printed.
+
+⒉ **The classification was keyed by `path:line`.** ⛔ *That is not an identifier of a site; it is an
+identifier of a site **and of every edit above it**.* Repairing `S24` moved its lines, three
+classified sites fell out of the map and defaulted to `MEASURING` on the runner while reading
+correctly here. **The class in the instrument's own selector, for the fourth time.** The key is now
+the (path, spelling, ref) — what a site *is*.
+
+⒊ ⇒⇒ ***AND THE REMEDY WRITES THE SHAPE INTO THE FILE.*** The honest repair for a moving base is to
+pin it and **print the live reading beside it** — and printing it writes `--not <ref>` into the
+file, which is a site by this detector. **All `4` sites the scan finds live are reporting arms this
+revision added, and no gate asserts on one.**
+
+⌊ So a fourth class joins the three: `REPORTED`, and it is tested as a **property** — *a ref site in
+a file that also binds a pinned base* — because a hand entry for `S24` would have hard-coded a date,
+which is the defect itself arriving in the classification. ⚠ *`S24`'s site was genuinely `MEASURING`
+at the registration commit and is a reporting arm now; only a property can say both.*
+
+⇒ **And the arm is scored at the registration commit, the tree the question was asked of, with the
+live reading printed beside it — this revision's own rule applied to its own arm.** At the frame: `3`
+measuring sites (`P03`, `S5`, `S24`), of which `1` is beyond the two known, inside the band at the
+floor. Live: `0` measuring, `4` reported.
+
+⌗ *Which sharpens ⑩ rather than replacing it:* **a site is MEASURING only if a gate asserts on the
+population it bounds.** A detector that reads the range and not what is *done* with it cannot tell a
+measured population from a reported one — and the ratchet-style sweep I priced for you at `r7366`
+would have had exactly this blindness.
+
+### ⑫ AND `S54`'s RESTRAINT SECURED THE WRONG END
+
+Three more of its gates were the same class, and the third is the one worth your time: its own note
+says it is safe because it is *"read from THIS revision's registration commit forward, which is
+fixed."* ⛔ **A range has two ends.** `r7368`'s commits joined the open one and its count went from
+`7` to `56` with `49` strays — none of them touched by `r7364` at all. *The same shape `S5` carried
+three times with the same written safety argument, and the same shape that clause is counting.* Both
+ends are commits now, and the working-tree arm went with it: **a working tree is the most moving end
+there is.**
+
+The other two read a figure out of another receipt's printout where the trunk has since moved it.
+One asserted the live arbiter figure had **moved**, and it has come back to `17` — ⇒ *a moving
+measurement can return to its old value, so **equality is not evidence of stability**, and a gate
+reading the movement off a single live sample is measuring a coincidence either way.* The withdrawal
+now stands on the arbiter's **definition**. The other asserted a stamp count **grew**, `24` to `25`,
+and your `r7355+cc66` pass dropped it to `2`: *a stamp count has no assertable direction — my next
+push raises it and your adjudication lowers it* — so the claim becomes that the two readings differ
+at all, which is the whole finding.
+
+⌗ *And the quote-pin ratchet's red was mine and is registered rather than argued with: `25` keys the
+instrument reports that the baseline did not carry, `24` of them literals in `S55`'s own gates, plus
+the `23` target annotations `R*` cannot decide from a trace naming no file kind. `2654` against
+`2654` now.*
