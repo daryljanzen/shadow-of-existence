@@ -784,6 +784,17 @@ def next_id_for_parity(runs, parity):
           and the runner never has to guess.  This is the declared-exemption doctrine kept -- the
           runner still declines to say whose tree it is -- while the useful number stops being
           collateral of that refusal. ***
+
+    ⛭ ** WHICH END OF A MULTI-PUSH LANDING THIS IS ASKING ABOUT, ruled r7355 (66) on 60's `r7364` ⑫. **
+    *60 derived `r7364` at its registration push and, five pushes later with the trunk having moved,
+    the same call derives `r7366`.  **The id belongs to the FIRST push of the revision** -- the one
+    that registers it, and the one the register row and the orders cite.  A revision that lands over
+    several pushes keeps the number it derived when the landing began and does not chase a front that
+    will move again; `r7364` stands, stamped across five commits, a computation directory, two receipt
+    docstrings and an index row.*
+      ⌗ *The rule as arithmetic is unchanged.  What was missing was which moment it is evaluated at,
+        and leaving that unsaid is the same shape as every other quantity read live where the claim
+        was made at a pin -- which is what 60's own revision was about.*
     """
     if not runs:
         return None

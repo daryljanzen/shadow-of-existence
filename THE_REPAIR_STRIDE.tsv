@@ -146,76 +146,42 @@
 #   guessing it -- every seat has done exactly that this phase and it is why this can run unattended.
 #   ** Work your own prefixes in list order.  Nothing is re-cut while nobody is merging. **
 #
-# ** AND THE HAND-OFF QUEUE, SO A DRY SEAT NEVER IDLES AND NO TWO SEATS CAN COLLIDE. **  60 holds 11
-#   receipts against 20 each and will run dry first.  The queues below are DISJOINT BY CONSTRUCTION, so
-#   a seat takes from its own queue only and never needs to coordinate:
-#     * 60, when its 11 are closed, takes from 70 in this order:
-#         L259_the_distance_from_the_present, P08_slicing_operator, L248_the_strike_broke_its_readers,
-#         L256_the_band_taken, L280_the_decidable_claims, L556_registry_from_rows,
-#         L276_the_representation_theory_probe, L560_pins_into_moving_prose, L815_seam_phase_derived
-#     * cc66, when its 20 are closed, takes from 70 in this order:
-#         L246_the_achirality_is_the_obstruction, L272_the_survey_that_was_a_memory, L202_the_seam,
-#         L_probability, L247_the_build_already_stands, P03_SdS_slicing, RP_34_gr
-#     * 70 keeps P10_canonical_time and L207_the_bend (its two BLOCKED receipts) and works its own list
-#       from the top; it hands off from the BOTTOM, so the two ends never meet.
-#   ** A seat announces each take in the push that begins it, naming the prefix.  If 70 has already
-#   pushed a repair for a prefix in your queue, it is 70's and you skip it -- the ledger is the
-#   arbiter, not the queue. **
+# ⛔⛭ ** THE HAND-OFF QUEUE OF r7353 IS WITHDRAWN AT r7355, AND IT CAUSED THE DOUBLE-REPAIR IT WAS
+#   WRITTEN TO PREVENT. **  It handed 60 nine of 70's prefixes and cc66 seven others, with a safety
+#   clause: "if 70 has already pushed a repair for a prefix in your queue, it is 70's and you skip it
+#   -- the ledger is the arbiter, not the queue."  70 had repaired EVERY prefix on both queues between
+#   02:26 and 02:55 and said so in its reply.  ** Both seats took them anyway, because evaluating that
+#   clause requires reading 70's ledger, which requires a merge, which is the one thing the night had
+#   none of.  The clause was inert by construction. **
+#   Cost: 25 receipts of duplicated repair with cc66 and 9 with 60, a 28-path merge conflict, and 126
+#   ledger rows dropped in the resolution.  Rows bought: none.
+#   ⇒ PO-78 member 91's FOURTH face, 66's, the same cause as the third: a design that cannot produce
+#   the quantity the conclusion names.
 #
-# ⛔ ** THE CEILING TONIGHT IS 134 OF 135 RECEIPTS, NOT 135, AND IT IS NAMED SO NOBODY BURNS THE NIGHT
-#   ON IT. **  P10_no_rescaling's one owed row is BLOCKED on a defect in THE_REGISTER (70's RC3): its
-#   claim stands inside a block duplicated inside the PO-23 row, so no span is unique and no repair can
-#   meet the floor.  That duplicate is 66's to clear and the gate it needs -- check_register_monotone
-#   measuring CONTENT rather than CHARACTERS -- landed at r7353; the row itself is 66's next revision's
-#   first item.  ** Leave that receipt alone.  Everything else is reachable. **
+# ⛭⛭ ** TWO STANDING RULES OUT OF IT, AND THEY REPLACE THE QUEUE. **
+#   ⒜ A CLAUSE A SEAT MUST APPLY STATES A TEST THE SEAT CAN RUN WITH WHAT IT HAS IN HAND.  A safety
+#     condition that needs another branch is not a safety condition during an unattended run.
+#   ⒝ A SEAT THAT REACHES ZERO ON ITS OWN STRIDE STOPS AND REPORTS.  Idling for a few hours costs
+#     nothing the night did not already have; duplicating another seat's finished work costs the
+#     morning.  ⌗ A seat with nothing on this list has its other items in its own FOR_ file.
+#
+# ⛭ ** AND THE r7353 CEILING OF 134 OF 135 IS WITHDRAWN: RC3 IS CLEARED AT r7355 AND THE CEILING IS
+#   135. **  THE_REGISTER's PO-23 cell carried an 11,557-character verbatim replay of itself, spliced
+#   in at r6436, so the clause P10_no_rescaling pins stood twice and no span of it was unique.  The
+#   replay is removed; the clause stands once; 60's r7360 widening keys; the receipt runs green.
+#   ⌗ Distinct content ROSE 275,431 -> 276,414, so check_register_monotone's r7353 content measure
+#   passed the cut with no waiver and no DECLARED entry.
+#
+# ---- THE STATE AT r7355: REPAIR-OWED 2 rows in 2 receipts, 133 of the phase's 135 CLOSED.
+#   The arc, complete: 366 (r7329) -> 318 -> 284 -> 284 -> 268 -> 209 -> 159 -> 2.  The last step is
+#   ONE unattended night, 157 rows, against the 59 of the best nudged revision this phase has had.
+#   ⌗ Both remaining rows are 69's r7291 adjudications and both are the SAME class: a TOKEN-tier
+#   co-occurrence check that asserts only that two tokens each appear somewhere in a file, with
+#   nothing joining them.  Neither is blocked on anything.
 #
 # seat\tprefix\trows\treceipts\tPAPER/SOURCE\tSENTENCE/TOKEN
-# ---- cc66: 68 rows in 20 receipts over 17 prefixes
-cc66	L271_the_statistics_bake	5	2	2/3	1/4
-cc66	P15_CR_cosmology	4	2	4/0	2/2
-cc66	P16_cosmogenesis_paper	4	2	4/0	4/0
-cc66	L269_the_second_theatre	12	1	0/12	10/2
-cc66	L255_the_exemption_was_a_claim	8	1	0/8	3/5
-cc66	L548_propagating_sector	6	1	6/0	6/0
-cc66	L237_gates_check_declarations	4	1	0/4	2/2
-cc66	L267_the_sweep_that_did_not_run	4	1	0/4	2/2
-cc66	L805_freezing_reproduced	4	1	2/2	2/2
-cc66	L557_the_correction_stopped_at_the_sentence	3	1	0/3	0/3
-cc66	L801_nonlinear_shear_freedom	3	1	3/0	3/0
-cc66	L233_colour_curvature	2	1	0/2	2/0
-cc66	L253_the_seed_that_stopped_seeding	2	1	0/2	0/2
-cc66	L277_the_unclaimed_surface	2	1	0/2	0/2
-cc66	L552_weyl_and_torus	2	1	0/2	2/0
-cc66	P17_geometric_core_paper	2	1	2/0	2/0
-cc66	L809_one_loop_quartic	1	1	1/0	1/0
-# ---- 60: 30 rows in 11 receipts over 11 prefixes
-60	L257_the_label_did_double_duty	5	1	5/0	5/0
-60	L263_the_station_audit	4	1	2/2	3/1
-60	L550_third_mechanism	4	1	3/1	4/0
-60	L279_the_symmetric_space_probe	3	1	0/3	0/3
-60	L563_the_split_partition	3	1	0/3	2/1
-60	L213_external_constraint	2	1	2/0	1/1
-60	L251_the_numbering_collides	2	1	0/2	1/1
-60	L266_station_C_three_readings_of_the_dial	2	1	0/2	0/2
-60	L551_register_integrity	2	1	0/2	2/0
-60	L811_po7_inversions_closed	2	1	0/2	0/2
-60	L281_the_prior_art_hole	1	1	0/1	0/1
-# ---- 70: 61 rows in 20 receipts over 18 prefixes
-70	RP_34_gr	8	2	8/0	5/3
-70	P03_SdS_slicing	4	2	4/0	2/2
-70	L247_the_build_already_stands	8	1	4/4	4/4
-70	L202_the_seam	6	1	5/1	5/1
-70	L_probability	6	1	0/6	2/4
-70	L246_the_achirality_is_the_obstruction	4	1	4/0	3/1
-70	L272_the_survey_that_was_a_memory	4	1	0/4	1/3
-70	L276_the_representation_theory_probe	3	1	0/3	1/2
-70	L560_pins_into_moving_prose	3	1	3/0	3/0
-70	L815_seam_phase_derived	3	1	3/0	0/3
-70	L248_the_strike_broke_its_readers	2	1	1/1	1/1
-70	L256_the_band_taken	2	1	0/2	2/0
-70	L280_the_decidable_claims	2	1	0/2	2/0
-70	L556_registry_from_rows	2	1	0/2	0/2
-70	L259_the_distance_from_the_present	1	1	0/1	0/1
-70	P08_slicing_operator	1	1	1/0	1/0
-70	P10_canonical_time	1	1	0/1	1/0
-70	L207_the_bend	1	1	1/0	0/1
+# ---- 70: 2 rows in 2 receipts over 2 prefixes (70 reached zero on its own list at r7349+70.23)
+70	L279_the_symmetric_space_probe	1	1	0/1	0/1
+70	L811_po7_inversions_closed	1	1	0/1	0/1
+# ---- cc66: 0 rows.  Its backlog closed whole overnight (r7355+cc66 .. .36), CI-confirmed.
+# ---- 60: 0 rows.  Its backlog closed at r7345; its live items are reds and the read index, in FOR_60.
