@@ -154,9 +154,38 @@ def main():
     _tex_then = re.sub(r'\s+', ' ', subprocess.run(
         ['git', 'show', '48e55a6b^:corpus/CR_cosmology.tex'],
         cwd=ROOT, capture_output=True, text=True, errors='replace').stdout)
-    check('THE CORPUS SUPPORTS THE ROUTE: the onset matter is pressureless and the pre-onset problem '
-          'is "scale-free" and "imprints nothing" -- exactly the residue this derivation closes',
-          'pressureless' in tex and 'scale-free' in tex and 'imprints nothing' in tex)
+    # ** r7358+60, THE HAND-OFF QUEUE, L815: THE SUPPORT ARM WAS A CO-OCCURRENCE OF THREE WORDS, and
+    #    two of them could not fail: 'pressureless' stood eight times in P15 and 'scale-free'
+    #    nineteen, each tied to no line, and the third was a VERB PHRASE whose subject sat outside it.
+    #    ** Three tokens somewhere in one file is not a sentence: nothing made P15 JOIN them, so the
+    #    arm passed on a paper that said neither thing. **
+    #      ⇒ ** Two whole claims, one per proposition, each occurring once with the markup normalised
+    #        in the reader (`r7258`, `r7336`) ** -- and the label now says what the claim IS.  P15
+    #        does not ASSERT that the pre-onset imprints nothing: it NAMES that reading as the one the
+    #        rate rule closes, and this receipt supplies the phase that closes it.  *The old label
+    #        read the residue as support, which is the opposite of what the paragraph says.*
+    _EMPH = re.compile(r'\\(?:emph|textit|textbf|textsl|textup|textsc)\{([^{}]*)\}')
+    _MARK = re.compile(r'~?\\(?:ldg|rcpt|cite[a-z]*)\{[^{}]*\}')
+    _p15 = re.sub(r'\s+', ' ', tex)
+    for _ in range(4):
+        _p15, _prev = _EMPH.sub(r'\1', _p15), _p15
+        if _p15 == _prev:
+            break
+    _p15 = _MARK.sub('', _p15)
+    _LEG = ('The collapse leg of this construction is the second root exactly: near the branch point '
+            '$f\\to-2M/r$, so the leg is pressureless there')
+    _RESIDUE = ('What the rate rule closes is the alternative reading, on which the modes re-enter '
+                'under pressureless matter and nothing is imprinted: the potential equation for a '
+                "pressureless component, $\\Phi''+3\\mathcal{H}(1+w)\\Phi'+[2\\mathcal{H}'+(1+3w)"
+                '\\mathcal{H}^{2}]\\Phi+wk^{2}\\Phi=0$, contains no $k$ at all once $w=0$, so on a '
+                'radiation-free rate the problem is scale-free and a scale-free problem imprints '
+                'nothing.')
+    check('THE CORPUS CARRIES BOTH ENDS OF THE ROUTE, each as a whole claim and each once: the '
+          'pre-onset collapse leg is PRESSURELESS at the branch point, and the scale-free reading on '
+          'which nothing is imprinted is NAMED BY P15 AS THE ONE THE RATE RULE CLOSES -- which is '
+          'the residue this derivation closes, not a sentence of support for it',
+          _LEG in _p15 and _p15.count(_LEG) == 1
+          and _RESIDUE in _p15 and _p15.count(_RESIDUE) == 1)
     check('⌗ and the two entries were named by their correlation with the potential well at '
           '48e55a6b^, before r4111 restated the section: "one enters as a compression correlated '
           'with the well and the other as a rarefaction against it".  *Supporting context for a '
