@@ -71,6 +71,39 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+# ⬭⬭ r7347+cc66, REPAIR of the THREE OPENNESS-MARKER rows, by L-249's rule as THE_REGISTER's PO-78
+#   row states it verbatim: *** "the historical state be pinned at the commit it stood at, the
+#   current state asserted separately, and a directional live check made monotone." ***  L-249 named
+#   this class at r3105 after nine pin-breaks and left its gate owed -- "the oldest unbuilt
+#   instrument the sweep has turned up" -- so the rule is transcribed here and not invented.
+#     r7258+60 is explicit about why these three are owed: the claim is carried by an OPENNESS
+#   MARKER in the corpus's own prose, so *** the pin FIRES WHEN THE NAMED WORK SUCCEEDS. ***  It
+#   declined MEANING-HELD for them and said so: a string form carries the claim perfectly well and
+#   is merely EXPECTED TO RETIRE, which is TEMPORAL and not inexpressible.
+#   ⇒ THE CLAIM SPLITS DIRECTIONALLY, and that is what makes the repair cheap rather than clever:
+#     *** openness retires when the work succeeds; downstream-irrelevance does not. ***  So the
+#     retiring half is read at a NAMED COMMIT, where it can never break, and the durable half is
+#     asserted LIVE -- and every one of the three already had its durable counterpart asserted
+#     live in this same file, so nothing new is pinned and no disjunction is written.
+#   ⌗ 69's r7347-cycle amendment to THE_RULE: "the floor does not apply when the file is read at a
+#     named commit", because the floor prevents a later edit landing the pin elsewhere and a fixed
+#     commit has no later edits.  So the pinned halves below owe no uniqueness measurement at all.
+#   ⌗ Verified before performing: all three sentences stand exactly ONCE in the paper at PIN.
+#   ⛔ AND NOT A DISJUNCTION.  The obvious alternative -- "either it still says open OR the value is
+#     computed" -- is the dead-arm form measured at r7337 (a disjunction whose stronger arm matched
+#     zero times, carried by the weaker) and re-found by 60 in S19's own title.  Two assertions,
+#     each with one job, is the form that cannot hide an arm.
+PIN = '6f0dd852b'   # r7266, the most recent commit to touch cosmogenesis_paper.tex
+
+
+def _p16_at(rev):
+    """cosmogenesis_paper.tex as it read at a commit -- whitespace-flattened, same as the live read"""
+    import subprocess
+    out = subprocess.run(['git', 'show', f'{rev}:corpus/cosmogenesis_paper.tex'],
+                         cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+    return re.sub(r'\s+', ' ', out)
+
+
 def main():
     print()
     print('  C13 -- are the three cosmogenesis items work, or scope?')
@@ -83,6 +116,7 @@ def main():
     #   ⌗ AND THE COST IS 60's OWN, CARRIED HERE: a markup-normalised key reads as ZERO sites
     #     against the raw paper, so it can never be flagged MULTI. Adopted with that named.
     p16u = re.sub(r'\\emph\{([^}]*)\}', r'\1', p16)
+    p16_pin = _p16_at(PIN)   # L-249: the historical state, read where it cannot break
     led = open(os.path.join(ROOT, 'corpus', 'open_ledger.txt'), encoding='utf-8').read()
 
     # ⓵ the bucket's own definition
@@ -93,10 +127,13 @@ def main():
           'RETIRED r2639' in led and 'SCOPE-BY-DESIGN' in led)
 
     # and the paper says the opposite
-    check('✔ and NOW P16 says the opposite: the exact regulated peak "remains open, and is '
-          'downstream-irrelevant here: once dissociation is total, the memory of the peak is erased"',
-          'remains open, and is downstream-irrelevant here' in p16
-          and 'once dissociation is total, the memory of the peak is erased' in p16)
+    # ⬭ L-249 split: the OPENNESS half at PIN, the DURABLE half live.
+    check(f'✔ and at {PIN} P16 said the exact regulated peak "remains open, and is '
+          'downstream-irrelevant here" -- the retiring half, read where it cannot break',
+          'remains open, and is downstream-irrelevant here' in p16_pin)
+    check('✔ and the half that does NOT retire is asserted LIVE: "once dissociation is total, the '
+          'memory of the peak is erased" -- true whether or not the exact value is ever computed',
+          'once dissociation is total, the memory of the peak is erased' in p16)
     # ⬭ r7347+cc66, REPAIR: the owed row is "not by the peak's value" -- r7260+60, DANGLES
     #   (negator-stripped): it "names no subject, and the adopted head test stops at the negator".
     #   ⛔ AND THE COMPANION CONJUNCT WAS CUT MID-WORD -- it ended `..., n` to bridge into `not`,
@@ -109,16 +146,20 @@ def main():
           "(Secs~\\ref{sec:rate}, \\ref{sec:network}), not by the peak's value" in p16)
 
     # ⓶ the duplicate
-    check('⓶ and the second entry is the figure caption for the same fact: "its exact regulated value is '
-          'open and downstream-irrelevant"',
-          'its exact regulated value is open and downstream-irrelevant' in p16)
+    # ⬭ L-249 split: the caption's OPENNESS half at PIN; its placement claim is live below.
+    check(f'⓶ and at {PIN} the figure caption said the same of the same fact: "its exact regulated '
+          'value is open and downstream-irrelevant" -- the retiring half, read at the commit',
+          'its exact regulated value is open and downstream-irrelevant' in p16_pin)
     check('with the peak placed: "The peak is drawn at its $M$-independent infall-scale lower bound"',
           'The peak is drawn at its $M$-independent infall-scale lower bound' in p16)
 
     # ⓷ not a debt
-    check('⓷ and the third is marked NOT A DEBT in the same sentence as "open": "What remains open is not '
-          'the computation but its last-percent precision"',
-          'What remains open is not the computation but its last-percent precision' in p16)
+    # ⬭ L-249 split: the OPENNESS half at PIN.  The durable half -- that the remainder is a frontier
+    #   the title does not stake itself on, and not a debt -- is asserted LIVE further down, and it
+    #   stays true when the rates are specially evaluated, because it is a claim about the TITLE.
+    check(f'⓷ and at {PIN} the third was marked open in the sentence that calls it not a debt: '
+          '"What remains open is not the computation but its last-percent precision"',
+          'What remains open is not the computation but its last-percent precision' in p16_pin)
     # ** r6931+70.1: HALF OF THIS SENTENCE WAS DISCHARGED, AND THE OTHER HALF IS THE FINDING.
     #   Class (b) for the half that moved, (c) for the half that stays.  At r2639 the open remainder
     #   was TWO things -- "the specially-evaluated (as against REACLIB) light-nuclide rates AND THE

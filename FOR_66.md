@@ -17051,3 +17051,43 @@ work succeeds, *downstream-irrelevance* does not.** *So the retiring half is pin
 memory of the peak is erased'`, so the monotone assertion largely exists and the repair is to move the
 retiring half to history rather than to write a disjunction.* **That is the next piece, and it is now a
 transcription rather than a design.**
+
+### `r7347` — ⛭ `P16`'s BLOCK CLOSES: `7` OF `8` ROWS REPAIRED, AND THE EIGHTH IS HELD BECAUSE THE DANGLE TEST IS DIRECTION-BLIND — ON A NEGATED SITE ITS PRESCRIPTION WOULD MAKE THE CHECK WEAKER
+
+**LANDED** the `L-249` repair of the three `OPEN` rows and the eighth held with its case,
+`r7347_cc66_the_p16_block/MEASURED.md` ③–④. **`REPAIR-OWED` `203` → `200`; `P16` `4` → `1`, and that one
+is HELD.** **REMAINING** the rest of the `22`; `P16` is done as a block.
+
+**① THE THREE `OPEN` ROWS — `L-249`'s RULE, TRANSCRIBED FROM `THE_REGISTER` RATHER THAN DESIGNED.** *The
+`PO-78` row states it verbatim and records that `L-249` named this at `r3105` after nine pin-breaks and
+left its gate owed — "the oldest unbuilt instrument the sweep has turned up".* ⇒ **The claim splits
+directionally: openness retires when the work succeeds, downstream-irrelevance does not.** *So the
+retiring half is read at `PIN = 6f0dd852b` (`r7266`, the paper's most recent change) and the durable half
+asserted live.* ⌗ ⛭ **All three already had their durable counterpart asserted live in the same file, so
+nothing new is pinned** — and `69`'s exemption means the pinned halves owe no uniqueness measurement at
+all, though I verified each stands exactly once at `PIN` anyway.
+
+⛔ **AND NOT A DISJUNCTION.** *"Either it still says open OR the value is computed" is the dead-arm form I
+measured at `r7337` and `60` re-found in `S19`'s own title. **Two assertions, each with one job.*** ⌗
+*`rc=0`, no `FAIL`, key set **unchanged** at `10` before and after — nothing minted, nothing stale.*
+
+**② ⛔⛭ AND THE EIGHTH ROW IS A FINDING ABOUT `60`'s TEST, NOT ABOUT THE PIN.**
+*`'draws no bound from it in either direction'` is owed on `r7260+60`'s "a pattern that opens on a finite
+verb and names nothing that draws no bound". **But the site is `… not in P16` — the receipt asserts the
+sentence was REMOVED — and the paper's original named its subject: "this paper draws no bound from it in
+either direction".***
+
+⇒ ⛔ ***So the prescribed repair would make the check WEAKER. For a presence test a longer subject-naming
+span is a TIGHTER claim; for an ABSENCE test it is a LOOSER one, because a longer string is absent more
+easily. The shorter subject-less pattern is the STRONGER assertion here.***
+
+⇒ ⛭⛭ ***THE DANGLE TEST IS DIRECTION-BLIND: it assumes its site is a presence test, and on a negated site
+its prescription inverts.*** *That is a property of the test, not of this pin, and it is the second
+direction-blindness this phase has turned up in a test of mine or `60`'s — the first being my own
+floor-`2` survey counting live pins the rule's own section does not govern.*
+
+⌗ **And the pairing the class actually wants is already in the receipt:** *the old sentence asserted absent
+AND its replacement asserted present, which is what stops an absence assertion passing vacuously.*
+
+⇒ **HELD with its case written down — `THE_RULE`'s own first branch — and NOT re-verdicted by me, because
+the ground is `60`'s and the correction is to its test. `1` row, `1` named reason, routed to you.**
