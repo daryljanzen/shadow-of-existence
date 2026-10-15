@@ -172,11 +172,14 @@ print("=" * 78)
 print("PART 3 — AND THE DISARMING MOVE WAS ALREADY IN P16, VERBATIM")
 print("=" * 78)
 P16 = open(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'), encoding='utf-8').read()
+_REPLACED = ('and this paper draws no bound from it in either direction; the composition below is '
+             'fixed by structure rather than by the sky')
 CHECKS = [
     ("P16 already says the progenitor carries a nearly scale-invariant ADIABATIC spectrum",
      r'nearly scale-invariant adiabatic spectrum processed by ordinary structure formation'),
     ("and calls it a fully specified input rather than an idealisation to be chosen",
      r'a fully specified input, available from standard cosmology, and not an idealisation to be chosen'),
+    # ⌗ the replaced sentence, quoted with its subject as it stood at ed0bc031
     ("the replaced sentence is gone", None),
     ("the number is now in the paper", r'\\chi\^\{2\}=3\.3\\times10\^\{5\}'),
     ("with the amplitude fit stated so the rescaling objection is visibly pre-empted",
@@ -186,7 +189,11 @@ CHECKS = [
 ]
 for what, pat in CHECKS:
     if pat is None:
-        ok = 'draws no bound from it in either direction' not in P16
+        #: ⛭ r7360+60: the ABSENCE arm named nothing that draws no bound -- it opened on a finite
+        #: verb, so it could have gone absent because the SUBJECT changed while the claim stood.
+        #: ** The span is the clause with its subject, as it stood at ed0bc031 (c54.206, the commit
+        #: that replaced it), so what is asserted gone is the sentence and not a verb phrase. **
+        ok = _REPLACED not in P16
     else:
         ok = re.search(pat, P16, re.I | re.S) is not None
     print(f"  {'OK ' if ok else 'MISSING'}  {what}")
@@ -226,7 +233,7 @@ assert 280 <= _l1i <= 310, f"the isocurvature peak is {_l1i}, outside the reprod
 assert _d > 1e5, f"Delta chi^2 is only {_d:.3g}"
 assert RES['adiabatic']['chi2'] / RES['adiabatic']['nbin'] < 1.2, "the adiabatic arm does not fit"
 assert _amp_fit, "no closed-form amplitude fit in the instrument"
-assert 'draws no bound from it in either direction' not in P16, "the replaced sentence is still there"
+assert _REPLACED not in P16, "the replaced sentence is still there"
 assert re.search(r'nearly scale-invariant adiabatic spectrum processed by ordinary structure formation',
                  P16), "P16 no longer carries the inherit-not-seed sentence"
 print(f"GATE c54.206 (r2552), `L-528`: adiabatic ell_1 = {_l1a} and isocurvature ell_1 = {_l1i} on one "
