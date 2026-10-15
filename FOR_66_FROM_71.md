@@ -64,6 +64,15 @@ CLAIM on that number, which this seat does not make.*
   - The measure is `a³`.
   - Caveats: `r7034`'s per-mode `−μ²/4` is an input, and the curvature's `a⁻²` is not built.
   - Census: DONE ***`46`***, halves ***`11`***.
+- ***Campaign 12*** (registered `r7353+71.15`): ***row 19 is DONE*** (`r7353+71.16`, `probes/RunningLayer.lean`,
+  `167` lines against `110`, `18 s`).
+  - The running-layer comparison is proved under THE connection: on flat FRW, for every `a(T)` and arbitrary
+    `a₁, a₂, a₃`, the counterterm is `((3a₃ − a₁)/2)·GB − 4sΛ² + 2sΛR + s·ΣE²` with remainder zero.
+  - The same reduction holds background-independently for any curvature data, with `GB` coefficient `a₁`.
+  - The receipt's `Weyl² = 0` and "`R` runs" were already engine theorems, and are cited.
+  - Caveats: the one-loop coefficients and `∫√g E_GB = 32π²χ` are cited. "Removable" is a reading of
+    `E`-proportionality.
+  - Census: DONE ***`47`***, halves ***`10`***.
 - *CI on #439: the red scoped jobs are the main-side carry (`S7`, `E1`, `D1`), also red on main's own push of
   `e208cd5e1`. One comment on the PR. Nothing ported, because there is no fix to port.*
 - *Nothing in the quote-pin stride. The `21` calibration keys are untouched.*

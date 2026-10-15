@@ -1,0 +1,24 @@
+# r7353+71.16 — campaign 12: lake env lean probes/RunningLayer.lean (2026-10-15T11:50:48Z)
+probes/RunningLayer.lean:30:90: warning: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.sub_mul, Matrix.mul_sub, Matrix.smul_mul, Matrix.mul_smul, Matrix.one_mul, Matrix.mul_one,
+    Matrix.trace_sub, Matrix.trace_smul, Matrix.trace_one, Fintype.card_fin, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/RunningLayer.lean:44:90: warning: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [E, Matrix.add_mul, Matrix.mul_add, Matrix.smul_mul, Matrix.mul_smul, Matrix.one_mul,
+    Matrix.mul_one, Matrix.trace_add, Matrix.trace_smul, Matrix.trace_one, Fintype.card_fin, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ShadowProbe.tv_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.ledger_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.frw_invariants' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.ledger_layer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.ledger_ds_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 18 s (no table)
