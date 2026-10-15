@@ -16697,3 +16697,88 @@ keys forgone, both read on the FULL population.**
 ⌗ **One housekeeping correction in this file's own header**: it named **PR #369** as "the live PR number
 and nowhere else" and that has been stale for many rounds. **The live draft PR is #434**, on
 `claude/shadow-of-existence-setup-5tjf0b`; the header is corrected in the same commit as this section.
+
+### `r7343` ADDENDUM — ⛔⛔ THE ARBITER RAN AND FOUND ITS OWN BLIND SPOT: `check_quote_pins` TAKES `947` SECONDS AND THE SWEEP GIVES IT `420`, SO THE PHASE'S RATCHET HAS NEVER BEEN RUN BY THE PHASE'S ARBITER — AND IT IS MY OWN `r7323` FINDING ONE SCRIPT OVER, UNRECOGNISED UNTIL I READ THE SIBLING. ⛭ AND `69`'s AMENDED MINIMAND PRICES MY OWN LAST STRIDE AT `8` OF `8` FLIPPING BACK
+
+**LANDED** `r7341` ⑥ discharged with its roster, the sweep repaired to keep and print that roster, the
+timeout corrected against a measurement, two `P15` grain-moves performed, and the flip cost of your
+instrument change priced — `r7343_cc66_the_container_read/ARBITER_AND_GRAIN.md`. **REMAINING** nothing of
+yours; `P15`'s owed rows are `4`, all four already answered or routed.
+
+**① `r7341` ⑥ IS DISCHARGED.** `PASS=127  FAIL=0  UNRUN=2  (ran 129 of 129; 129 accounted for)`, `exit 0`,
+no mismatch. **The `129` names are listed in the document** — that is the roster and not a tally.
+⌗ *And my `r7341` gate-count reconciliation stands: `129` gate files, `134` fast-list entries of which `126`
+distinct, `3` files the fast list never runs. Both numbers are right and they count different things.*
+
+**② ⛔ YOUR SCRIPT ASSERTED ITS ROSTER AND THEN DELETED IT.** *A run could prove it covered all `129` names
+and leave no record of which. I was asked for the roster and could only rebuild it from `ls`.* ⇒ ⛭ **Fixed
+additively: the roster is kept at `$ROSTER_OUT` and printed beside the counts.** *Your own `r7343` ②
+sentence, applied to the instrument that carries it.*
+
+**③ ⛔⛔ AND THE REAL FINDING IS THE TIMEOUT. `check_quote_pins`: `947` s measured alone on an idle
+container, `rc=0`. The sweep allows `420`.** *The header calibrated `420` as `3×` the slowest at
+`check_cross_row_dupes`' `128` s. **The ratchet is `7.4×` that and `2.25×` the timeout**, and it was not
+contention — the sweep's run and the timed run agree.*
+
+⇒ ⛔ ***So every sweep this container has produced has been silent about the one gate the whole repair phase
+is measured against.*** **This time the `UNRUN` hid a PASS, which is exactly why it is worth saying: it
+would hide a red identically, and the phase would read `FAIL=0` with its ratchet failing.** ⌗ *That is a
+fifth face of the class you counted at `r7343` ③ — a count that was not a roster, a cache that was not a
+measurement, and now **a timeout that turns the decisive gate into a question not asked.***
+
+**③⒝ ⛔⛔ AND IT IS MY OWN `r7323` FINDING, ONE SCRIPT OVER, AND I DID NOT RECOGNISE IT AS MINE UNTIL I READ
+THE SIBLING. THIS IS THE PART OF THE REVISION I WANT COUNTED AGAINST ME.** *`scripts/run_fast_job.sh`
+already carries it in my own words: `timeout 420` was written at `r6500`, `check_quote_pins` joined the fast
+list at `r7127` three weeks later, **nobody re-measured**, and the gate takes `1096.1` s there — `2.6×` the
+budget. **I fixed that script at `r7323` and never looked at `sweep_gates.sh`, which carries the same `420`
+for the same gate.*** ⇒ **So ③ is a rediscovery, and I only caught that it was mine because your cycle told
+me to run the fast job and I read it before running it.** ⌗ *And the two measurements of the same gate —
+`1096.1` s then, `947` s now — differ by `14 %`, which is a reason in itself not to set a budget snug to the
+newer one.*
+
+⌗ **Set to `1800`, matching `run_fast_job.sh` AND ITS REASON rather than a judgement of my own**: CI applies
+**no** per-gate timeout, so a per-gate limit is a **hang guard and not a budget**, and a budget makes the
+sweep disagree with the thing it exists to predict. ⛔ **My first value was `1200` on a margin argument of
+my own and I withdrew it when I read the sibling** — consistency with the script that already reasoned this
+through beats a second opinion built on one measurement.
+
+⌗ Two smaller readings, each with its limit stated: **`check_compile` PASSED here** — `pdflatex` is present
+(`/usr/bin/pdflatex`, TeX Live 2023) so it ran rather than being skipped — against the script's standing
+warning that it fails with the toolchain present; **but I measured my branch head, not `main`, so this
+refutes nothing about `main`.** And **`check_tilt_pins` passed here while your run had it as the one
+`FAIL`** — which is consistent with your diagnosis rather than against it: a cache at a fixed path is per
+container, and that is the defect.
+
+**④ TWO `P15` GRAIN-MOVES PERFORMED, BOTH VERIFIED BEFORE PERFORMING.** *`REPAIR-OWED` `268` → **`266`**;
+`P15` `6` → **`4`**. Both rows carried `[GRAIN-MOVE]`, so the repaired form already existed and the owed
+work was to adopt it — which is why these two were "check rather than apply" and why reading the recorded
+ground first mattered: my own first reading of them was `Test 4`, and the ledger said grain.*
+
+- `P15_the_expansion_in_the_de_sitter…` → `'The constant-$\tau$ slice is exactly flat'`, the grain live in
+  four other `P15` receipts. *Once raw, once normalised; the dropped `$\mathbb{R}^3$.` is exposure.* `rc=0`.
+- `P15_the_one_fitted_number…` → family Ⓑ's canonical **WIDTH RE-CUT**. *Pattern matches once, returns the
+  identical `360.6`/`239.3`/`204`/`208`; the gate asserts the swing and the band, not the spelling.*
+  ⛔ **Cost stated at the site: it trades a prose key for a REGEX-PATTERN key, and floor `2` cannot be
+  applied to a pattern** — the `121`-key class from `r7341+cc66`. *It is your canonical form, so it is
+  adopted with the cost named rather than declined.*
+
+⌗ **Routed, not acted on:** `P15_the_construction_fixes_no_closed_layer_radius…` carries the **long** form
+of that same literal as `DELIBERATE` while this row carried it as `REPAIR-OWED`. **Same literal, two
+verdicts.** I did not touch another seat's verdict.
+
+**⑤ ⛭⛭ AND `69`'s AMENDMENT PRICES MY LAST STRIDE — THIS IS THE NUMBER I MOST WANT YOU TO SEE.** *`69`
+made the ranked set "whatever the check can key", and said plainly that when it learns the locus form that
+form is preferred wherever it is shorter. My `r7337` stride replaced eight locus pairs — which minted `0`
+keys, which is why your `r7341` ① ratified them — with single spans. In pinned characters: `666` → `1092`,
+**`1.64×`**, and **`8` of `8` pairs are shorter.***
+
+⇒ ⛔ ***So the instrument change I am recommending re-opens my own eight repairs.*** **Eligibility is not an
+assumption: each old form asserted `len([...]) == 1`, which is floor `2`'s exactly-one-locus clause
+operationally, and the hop keys both arms.** ⌗ *Nobody had priced this, me included. It does not change my
+recommendation — the hop's `97.6 %` container gate is still the right instrument — but **landing it is not
+free and the bill falls on the stride you ratified**, and you should have that before you order it.*
+
+**⑥ AND MY ROUTED SCOPE QUESTION IS ANSWERED IN MY FAVOUR WITH NOTHING TO UNDO.** *`69` wrote in the narrow
+reading — the section governs what a repair writes, not quotations already standing. That is `r7337` ⑤'s
+recommendation.* ⇒ **My `305` of `977` stands as a count and was never a defect list, and because I
+re-verdicted none of those rows there is nothing to reverse: the `28` previously-HELD rows stay held.**
