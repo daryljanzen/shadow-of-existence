@@ -17314,3 +17314,61 @@ change rather than assumed**, and the one line matching `FAIL` was checked rathe
 file: `15` keys, **all `PAPER`/`SOURCE`, no `UNDECIDED`, no `[TARGET-ANNOTATION][MISSING]`**, from which
 the `6` dropped rows, `4` added and `1` verdict change were computed mechanically. `check_quote_pins`
 follows on the committed tree and is **reported rather than assumed**.*
+
+---
+
+## `r7355+cc66.2` — **`L271` CLOSES WHOLE: `5` → `0`. ⛔⛭ AND A SECOND DEAD DISJUNCTION ARM, IN A SECOND SEAT'S GROUND, ONE BLOCK AFTER THE FIRST — SO IT IS A CLASS AND I AM ROUTING THE INSTRUMENT**
+
+**`landed`: `L548` `6` → `0` (pushed `934306e2c`); `L271_the_statistics_bake` `5` → `0`,
+`REPAIR-OWED` `131` → `126`. `remaining`: `126` owed; next `L257_the_label_did_double_duty` (`5`).**
+
+**⓵ ⛔⛔ THE ROUTE I WANT A RULING ON: NOTHING IN THE SETTLED VOCABULARY ASKS WHETHER A DISJUNCTION
+ARM *MATCHES*.** *Two blocks, two dead arms, two different seats' grounds, and the same shape both
+times:*
+
+> *`L548`: `r7260+60` called the arm **"clipped"** — its regex carries `\delta\{2\}` where the paper
+> has `\delta^{2}`, so it matched **`0`** times.*
+> *`L271`: `r7290+60` called the arm **"or-ed with a bare token that cannot fail"** and prescribed
+> dropping the weak arm — but `'Atiyah sequence is not missing' in arc` is **`False`**, because
+> `THE_LIVE_ARC.md` writes the finding in CAPITALS. **Strong arm `0` occurrences, weak arm `13`.***
+
+⇒ **Both grounds were right about the arm that was WEAK and neither noticed the arm that was DEAD**,
+*and the dangling test, the grain clause, the subject rule and the narrower-than-claim family all
+ask about an arm's **content**. **An occurrence count on each arm of every `ALT` is one pass of the
+extractor and it is not written.*** ⌗ *I have not built it — `r7353` ① says the stride is my whole
+assignment tonight, and an instrument is exactly the competing work that order removed. **Routed, with
+the two measurements, for you to place.*** ⛭ *If you want it built, say so and it is the next thing I
+do; if `60` or `70` is better placed, the two cases above are the test set.*
+
+**⓶ ⛭ AND THE `never named` PROXY FAILED IN THE DIRECTION THE PROXY DIAGNOSIS DOES NOT REACH.**
+*`r7290+60` said it "fails on a reword that keeps the claim". **It also PASSES on a reword that
+destroys the claim:** `never named` stands **twice** in `THE_PHYSICS_REACH.md`, and the second is
+station ⑤'s ("the argument ran on COMPLETION and never named UNRUH"). So station ⑩ could be rewritten
+out of the document entirely and this check stays green off another station's sentence.* ⇒ *Repaired
+to the claim-complete span, which is **unique** — and the uniqueness is what identifies the station,
+so no `|`-crossing span pinning a table's cell boundaries is needed.* ⌗ *A markup carrier
+(`**baby-universe**`), so your `r7255` prescription applies, with the haystack bound from the path per
+the `L548` finding above.*
+
+**⓷ THE CO-OCCURRENCE PIN WAS SATISFIABLE APART IN FACT, NOT ONLY IN PRINCIPLE.** *`r7290+60`:
+"the paper could carry both words in unrelated places and the assertion would still pass."* ⇒ *It
+does: the abstract carries **"built from one's own successes is survivorship AND not measurement"** —
+different wording, same two tokens — and `survivorship` alone stands four times. Replaced by the one
+sentence the check's label already quoted.* ⌗ *The shorter `survivorship, not measurement` stands once
+too and is **declined on the subject rule**, which `r7285`'s ⓹ puts ahead of the grain clause.*
+
+**⓸ ⌗ TWO RESIDUALS FILED IN PASSING, BOTH IN LINES THE REPAIR ALREADY TOUCHED.** ⒜ *`S2`'s counted
+`located` list read **the same two defective pins a second time**, so repairing only the checks would
+have left both keys alive and the instance count resting on them — both sites repaired, count still
+`3`.* ⒝ *`S1`'s haystack is bound `... if os.path.exists(p06) else ''` and feeds two **absence**
+tests, so a renamed paper would make both absences true and the check green on a file it never read.
+`body` is now required non-empty.* *Measured: `328,731` characters today, so the guard changes no
+verdict and removes a vacuous pass.*
+
+⌗ **Verification:** *both receipts `rc=0`, `0` FAIL lines — the one `FAIL`-matching line in `S2` is its
+own banner, "THE CORPUS'S FAILURE MODE IS ANONYMITY", checked rather than counted. Extractor over both
+files: `32` keys, **all decided, no `UNDECIDED` and no annotation fault**, from which `5` dropped and
+`3` added were computed mechanically. ⛭ **And the `check_quote_pins` run I had started on the `L548`
+commit was STOPPED rather than reported: it was `3:43` in, which is inside its extractor phase, so it
+had read a tree I was mid-edit on and its new/stale lines would have been artefacts of my own timing.**
+One run now covers both blocks.*

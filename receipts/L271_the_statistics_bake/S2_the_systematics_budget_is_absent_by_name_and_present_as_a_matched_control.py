@@ -272,17 +272,64 @@ def main():
     arc = open(os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8', errors='replace').read()
     phys = open(os.path.join(ROOT, 'THE_PHYSICS_REACH.md'), encoding='utf-8',
                 errors='replace').read()
+    # ⬭⬭ r7355+cc66, REPAIR of the UNDECIDING ALT -- AND ITS STRONG ARM IS DEAD, WHICH THE
+    #   GROUND DID NOT SAY.  r7290+60 read this as "the strong arm is or-ed with the bare token
+    #   `Atiyah`, which occurs in the live arc whatever the sequence's status, so the pair cannot
+    #   fail on the claim it is labelled with", and prescribed dropping the weak arm.
+    #   ⛔ *** The weak arm is not merely load-bearing, IT IS THE ONLY ARM: *** the register
+    #     writes the finding in CAPITALS -- "THE ATIYAH SEQUENCE IS NOT MISSING FROM `P12`" --
+    #     so `'Atiyah sequence is not missing' in arc` is **False**, and has been since it was
+    #     written.  *Measured: strong arm 0 occurrences, `Atiyah` 13.*
+    #   ⇒ ** The second dead disjunction arm found in two consecutive blocks, in two different
+    #     seats' grounds, and the same shape both times: a case or escaping mismatch nobody runs
+    #     a count on, hidden by an `or` whose weak arm is a token that cannot fail. **  The
+    #     dangling test asks whether an arm is WEAK; nothing yet asks whether an arm MATCHES.
+    #     *Routed to 66 rather than instrumented here -- the stride is the assignment.*
+    #   ⌗ Verified before performing: the replacement stands ONCE in `THE_LIVE_ARC.md` and once
+    #     under `_unmark`, and it carries the whole claim -- not missing, whose object it is, and
+    #     that all four terms are already there under other words.
     check('⓹ L-265: the Atiyah sequence is not missing from P12, it is P12\'s object under other '
-          'names', 'Atiyah sequence is not missing' in arc or 'Atiyah' in arc)
+          'names', "THE ATIYAH SEQUENCE IS NOT MISSING FROM `P12`. IT IS `P12`'S OBJECT, "
+          'UNNAMED, AND ALL FOUR OF ITS TERMS ARE ALREADY IN THE PAPER UNDER FOUR OTHER WORDS'
+          in arc)
     check('⓹ᵇ R-P station ⑨: the sector rests on N_eff at both ends and names it in no paper -- '
           '"One missing NAME, not a missing sector"',
           'missing NAME, not a missing sector' in phys)
-    check('⓹ᶜ R-P station ⑩: the resolution is the baby-universe one, never named',
-          'never named' in phys)
+    # ⬭⬭ r7355+cc66, REPAIR of the PROXY `never named` -- AND IT WAS WORSE THAN A PROXY.
+    #   r7290+60: "a two-word phrase standing for the proposition that the resolution is the
+    #   baby-universe one and is named in no paper ... it fails on a reword that keeps the claim."
+    #   ⛔ *** It also PASSES on a reword that destroys the claim: `never named` stands TWICE in
+    #     `THE_PHYSICS_REACH.md`, and the other occurrence is station ⑤'s ("the argument ran on
+    #     COMPLETION and never named UNRUH"). ***  So rewriting station ⑩ entirely leaves this
+    #     check green off a different station's sentence -- the failure direction the proxy
+    #     diagnosis does not reach.
+    #   ⇒ The claim-complete span, and it is UNIQUE, which is what identifies the station: no
+    #     other row in the document says it.  `|`-crossing forms that name ⑩'s subject matter
+    #     explicitly were considered and declined -- they pin a table's cell boundaries, and
+    #     floor 2 does the identifying work here instead.
+    #   ⌗ A MARKUP CARRIER, so 60's r7255 prescription applies: normalise the emphasis out of the
+    #     HAYSTACK and keep the span WHOLE (`**baby-universe**` sits inside it).  And the
+    #     normalised haystack is bound FROM THE PATH, not from `phys`, for the reason measured at
+    #     r7355 on `L548`: a haystack bound through another binding can leave the key UNDECIDED,
+    #     which owes a hand-kept `corpus/target_annotations.tsv` row.
+    #   ⌗ Verified before performing: ONCE in the normalised document, and once under `_unmark`.
+    physu = re.sub(r'\*\*([^*]*)\*\*', r'\1',
+                   open(os.path.join(ROOT, 'THE_PHYSICS_REACH.md'), encoding='utf-8',
+                        errors='replace').read())
+    check('⓹ᶜ R-P station ⑩: "the resolution is the baby-universe one, never named"',
+          'the resolution is the baby-universe one, never named' in physu)
     # ** ASSERTED by COUNTING the located instances, not by declaring a total. **
-    located = [('L-265', 'the Atiyah sequence', 'Atiyah' in arc),
+    # ⌗ r7355+cc66: the counted list read the SAME two defective pins a second time -- the dead
+    #   ALT's token arm and the twice-occurring proxy -- so repairing only the checks above would
+    #   have left both keys alive here and the count resting on them.  Both sites now read the
+    #   repaired spans, and the count rests on what the checks assert.
+    located = [('L-265', 'the Atiyah sequence',
+                "THE ATIYAH SEQUENCE IS NOT MISSING FROM `P12`. IT IS `P12`'S OBJECT, UNNAMED, "
+                'AND ALL FOUR OF ITS TERMS ARE ALREADY IN THE PAPER UNDER FOUR OTHER WORDS'
+                in arc),
                ('R-P ⑨', 'N_eff', 'missing NAME, not a missing sector' in phys),
-               ('R-P ⑩', 'the baby universe', 'never named' in phys)]
+               ('R-P ⑩', 'the baby universe',
+                'the resolution is the baby-universe one, never named' in physu)]
     found = [k for k, _, ok in located if ok]
     check(f'⓹ᵈ ⛭ so this is instance number {len(found)+1}: {len(found)} prior instances are '
           f'located in the register and the reach documents by this receipt ({", ".join(found)}), '

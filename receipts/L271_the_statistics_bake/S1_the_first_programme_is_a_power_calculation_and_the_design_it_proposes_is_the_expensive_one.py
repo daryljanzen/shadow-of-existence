@@ -251,13 +251,35 @@ def main():
           p5_two <= 0.05)
     p06 = os.path.join(ROOT, 'corpus', 'shadow_of_existence.tex')
     body = open(p06, encoding='utf-8', errors='replace').read() if os.path.exists(p06) else ''
-    check('⓸ᵇ ⛔ AND THEY MAY NOT BE SO READ, on the paper\'s OWN ground: it says a reliability '
-          'estimate built only from successes is survivorship, not measurement',
-          'survivorship' in body and 'not measurement' in body)
+    # ⬭⬭ r7355+cc66, REPAIR of the CO-OCCURRENCE pin r7290+60 named: *** "the conjunction of two
+    #   short spans in ONE FILE standing for one claim made in one sentence of the paper, so the
+    #   paper could carry both words in unrelated places and the assertion would still pass." ***
+    #   ⌗ AND THE PAPER DOES CARRY THEM IN UNRELATED PLACES, so this was not hypothetical: the
+    #     abstract says "built from one's own successes is survivorship AND not measurement" --
+    #     different wording, same two tokens -- and `survivorship` alone stands four times.
+    #   ⇒ *** The sentence itself, which is what the label was already quoting. ***  One span, not
+    #     a conjunction: two tokens can be satisfied apart and one sentence cannot.
+    #   ⌗ Verified before performing: ONCE in the RAW body (this read is not flattened, so a span
+    #     crossing a line break would silently never match -- the dead-arm shape from the other
+    #     side), and ONCE under `check_quote_pins._unmark`.
+    #   ⌗ The shorter `survivorship, not measurement` also stands once, and is DECLINED on the
+    #     subject rule: it names nothing, and r7285's ⓹ puts the subject rule BEFORE the grain
+    #     clause.  The chosen span's subject -- `a reliability estimate built only from successes`
+    #     -- is inside it, and so is the negation the claim turns on.
+    check('⓸ᵇ ⛔ AND THEY MAY NOT BE SO READ, on the paper\'s OWN ground: it says "a reliability '
+          'estimate built only from successes is survivorship, not measurement"',
+          'a reliability estimate built only from successes is survivorship, not measurement'
+          in body)
     check('⓸ᶜ ⛭ so the finding is not that the lemma is nearly proved -- it is that the binding '
           'constraint moves from SAMPLE SIZE to SELECTION DISCIPLINE, and the corpus carries '
           'neither `pre-registration` nor `blinded` anywhere in seventeen papers',
-          'pre-registration' not in body and 'blinded' not in body)
+          # ⌗ r7355+cc66, A RESIDUAL FILED IN PASSING, in the two lines above's own `body`: this
+          #   is an ABSENCE test over a haystack bound as `... if os.path.exists(p06) else ''`,
+          #   so a renamed or moved paper makes BOTH absences true and the check green on a file
+          #   it never read -- the read-through-a-default-that-cannot-fail class.  `body` is now
+          #   required non-empty.  *Measured: it is 328,731 characters today, so the guard
+          #   changes no verdict and removes a vacuous pass.*
+          bool(body) and 'pre-registration' not in body and 'blinded' not in body)
 
     # ============================================================== (5) the sawtooth
     print()
