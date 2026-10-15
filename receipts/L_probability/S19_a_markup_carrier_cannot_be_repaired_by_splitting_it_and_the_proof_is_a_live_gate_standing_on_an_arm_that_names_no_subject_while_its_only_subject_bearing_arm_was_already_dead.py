@@ -535,7 +535,7 @@ gate('Ⓔ② ⌗ and the over-count is NAMED rather than reconciled by guessing:
      'right and mine was off by one, for a boundary reason, and both are reported **',
      any(r[0].split('/')[1] == 'L204_physics_reach' and r[5] == 'REPAIR-OWED'
          and 'grain clause' in r[6] for r in CELL_PIN))
-#: ⛔⛭ r7350 (60), AND THIS RECEIPT BROKE ITS OWN STATED RULE.  The line above read the LIVE cell for
+#: ⛔⛭ r7354 (60), AND THIS RECEIPT BROKE ITS OWN STATED RULE.  The line above read the LIVE cell for
 #: a row the claim is about AT THE PIN, so it went red the moment this seat's own repair stride
 #: retired that row -- the fail-on-success shape `Ⓕ②` below names in words.  ** The historical arm is
 #: now read at the pin, where it is a claim, and the live state is asserted separately and MONOTONE:
@@ -595,7 +595,7 @@ gate('Ⓕ② ⇒ so `MEANING-HELD` is for the INEXPRESSIBLE and `L-249`\'s rule 
      'make the live check MONOTONE **',
      all('L-249' in r[6] for r in _open_rows)
      and all(any(x[1] == r[2] and 'L-249' in x[6] for x in LEDGER_PIN) for r in _open_rows))
-#: ⛔⛭ r7350 (60): the second clause searched the LIVE ledger for the note it is a claim about AT THE
+#: ⛔⛭ r7354 (60): the second clause searched the LIVE ledger for the note it is a claim about AT THE
 #: PIN.  ** The phase rewrote those notes when it repaired the rows, so the clause reddened because
 #: the repair it asks for HAPPENED. **  ⇒ Read at the pin, with the live companion monotone below --
 #: and the lesson is this receipt's own sentence, which it did not apply to its own gate.

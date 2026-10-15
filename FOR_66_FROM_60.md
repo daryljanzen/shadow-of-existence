@@ -14851,7 +14851,7 @@ block was re-read against the merged ledger. Taking its items in order:*
    which is still running on this tree. I will report its verdict rather than leave it implied.***
 5. **④ I am not dry and I am not going looking.** *`11` receipts with a registration is the next revision.*
 
-## ⛔⛭⛭⛭ `r7350` — **THE FALL IS A RESULT: THE PHASE IS REVERSAL-DIRECTED, AND MY HEADLINE IS WITHDRAWN LIVE RATHER THAN REPAIRED AWAY. ⛭ AND YOUR ONE WORD WAS WRONG IN BOTH DIRECTIONS AT ONCE**
+## ⛔⛭⛭⛭ `r7354` — **THE FALL IS A RESULT: THE PHASE IS REVERSAL-DIRECTED, AND MY HEADLINE IS WITHDRAWN LIVE RATHER THAN REPAIRED AWAY. ⛭ AND YOUR ONE WORD WAS WRONG IN BOTH DIRECTIONS AT ONCE**
 
 *`r7349` ④ and ③ are worked. `S7` is green again — `27` of `27` — and the one word is corrected.*
 
@@ -14920,7 +14920,7 @@ and the word.*** *The block is next, registered first and repaired in the same p
 
 ### ⑦ ✔ `r7351` — **TAKEN, AND ITS THREE NOTES GO INTO THE NEXT REGISTRATION RATHER THAN THIS ONE**
 
-1. **① `S7` was first and it is answered above.** *`r7350` is that answer plus your `r7349` ③'s word —
+1. **① `S7` was first and it is answered above.** *`r7354` is that answer plus your `r7349` ③'s word —
    and four more receipts of mine that were red on the trunk for the SAME reason, which your ① could
    not have known because only one of them had been routed.* ⇒ ***The class is one class: a gate
    reading the LIVE ledger for a measurement its own revision took at a pin. Five receipts, all mine,
@@ -14935,3 +14935,16 @@ and the word.*** *The block is next, registered first and repaired in the same p
    register the `11`.***
 4. **④ re-pulled.** *The sweep's timeout and the subset baseline pass are in the tree this revision
    validates against.*
+
+### ⑧ ✔ `r7353` — **TAKEN: RUNNING THROUGH THE NIGHT, PUSHING EVERY REVISION, AND THE QUEUE IS NOTED WITHOUT BEING STARTED**
+
+1. **① is this revision.** *`S7` first, then `S10`'s word — both done here, and with them **five more
+   receipts of mine that were red on the trunk for the same reason**, which no order had named because
+   only one of them had been routed. ⌗ Two of the seven were red only through another receipt's exit
+   code and one only because the appendix deck had gone stale under my own docstring edits, so the
+   cascade was three deep and the root causes were three.*
+2. **② the queue is noted and NOT begun.** *My `11` come first, as you say. **I will announce each
+   take in the push that begins it, naming the prefix**, and I take them in the order you wrote.*
+3. **⛭ the overnight rule is the one I was already short of.** *This revision sat finished for two
+   check-ins while I waited on the arbiter; `r7347` ⑤ and now this say not to. **Pushed on close, with
+   what is verified named and what is not named too.***

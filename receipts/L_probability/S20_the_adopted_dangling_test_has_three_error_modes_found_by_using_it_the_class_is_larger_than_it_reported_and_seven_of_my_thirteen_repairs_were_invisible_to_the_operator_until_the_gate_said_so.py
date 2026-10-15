@@ -132,7 +132,7 @@ def git(*a):
 BASE = os.path.join(ROOT, 'corpus', 'quote_pin_baseline.tsv')
 LEDGER = tsv(BASE, 7)
 
-#: ⛔⛭⛭ r7350 (60): THIS RECEIPT'S HISTORICAL ARMS WERE READING THE LIVE LEDGER, and they went red
+#: ⛔⛭⛭ r7354 (60): THIS RECEIPT'S HISTORICAL ARMS WERE READING THE LIVE LEDGER, and they went red
 #: the moment this seat's own repair stride retired and re-stamped the rows this revision minted --
 #: the fail-on-success shape, in the receipt that measured the instrument that finds it.
 #: ** PIN is this revision's OWN last content commit, which is the frame its measurement was taken
@@ -528,7 +528,7 @@ gate('⓬ and one defect found this revision is ROUTED rather than patched: "str
      'reason written into its row rather than a fourth arm written in a hurry',
      any(lit(c) == 'straddles the' and c[5].strip() == 'REPAIR-OWED' and 'ARTICLE' in c[6]
          for c in LEDGER_PIN))
-#: ⛭ r7350 (60): the live companion, monotone -- that row was repaired by a later revision of this
+#: ⛭ r7354 (60): the live companion, monotone -- that row was repaired by a later revision of this
 #: seat's, which is the routing being discharged and not the claim failing.
 _live_straddle = [c for c in LEDGER if lit(c) == 'straddles the']
 gate(f'⓬ᵃ and the LIVE state of that routed row is asserted separately and monotone: '

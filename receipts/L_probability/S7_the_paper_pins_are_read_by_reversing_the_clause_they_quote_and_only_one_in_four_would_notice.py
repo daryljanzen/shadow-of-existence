@@ -36,7 +36,7 @@ a pin survives anything.
                set and against this instrument's own multi-site count on the same tree.*
 
 ⛔⛭⛭ ** AND THAT ORDERING NO LONGER HOLDS LIVE: THE REPAIR PHASE HAS OVERTURNED THIS RECEIPT'S
-HEADLINE, AND THE FALL IS A RESULT (r7350, on `r7349` ④). **  *`cc66` routed this receipt as red on
+HEADLINE, AND THE FALL IS A RESULT (r7354, on `r7349` ④). **  *`cc66` routed this receipt as red on
 `main`; `66` found the live arm comparing a falling quantity against a frozen constant, repaired that
 and left the gate red rather than rewriting the finding to clear it.*  ** Re-measured live: **
 
@@ -470,7 +470,7 @@ gate(f"Ⓖ⑮ REVERSAL is not MULTI renamed -- {100 * _ov / len(_r):.0f}% of it 
 gate(f"Ⓖ⑯ REVERSAL is not S3's class either -- 1 of 475 carries the OPEN flag ({_open} of "
      f"{len(_r)}), so the two classes meet in a single key rather than not at all",
      _open == 1 and _open < 0.01 * len(_r))
-#: ⛔ r7350 (60) on `r7349` ④: THIS LINE CITED ANOTHER INSTRUMENT'S NUMBER AND NOT ITS OWN.  The
+#: ⛔ r7354 (60) on `r7349` ④: THIS LINE CITED ANOTHER INSTRUMENT'S NUMBER AND NOT ITS OWN.  The
 #: `249` is `r7201`'s MULTI count over the PINNED key set; THIS instrument's own multi-site count on
 #: the same pinned tree is `len(MULTI)`, and it is larger.  ** The pinned claim holds on both, and it
 #: is now asserted on both, which is what it should have said the first time: a comparison across two
@@ -525,7 +525,7 @@ _lt, _l_lone, _l_neg, _l_rev, _l_multi = ((TALLY, LONE, NEG, REV, MULTI) if _sam
                                           else classify(_live_rows, _live_bodies))
 print(f"\n    live PAPER keys {len(_live_rows)}   byte-identical to the pin: {_same}   "
       f"live REVERSAL {_lt['REVERSAL']}   live DISCRIMINATING {_lt['DISCRIMINATING']}")
-#: ⛔⛭⛭ r7350 (60) on `r7349` ④, AND THIS IS THE RECEIPT ANSWERING A QUESTION ABOUT ITSELF.
+#: ⛔⛭⛭ r7354 (60) on `r7349` ④, AND THIS IS THE RECEIPT ANSWERING A QUESTION ABOUT ITSELF.
 #: `66` replaced the frozen `249` with the live multi-site count and the gate STILL failed, correctly,
 #: and did not touch the claim.  ** The claim was `REVERSAL IS STILL THE LARGER BLINDNESS` and it is
 #: FALSE LIVE. **  *** The fall is a RESULT and not attrition, and the live arm now asserts the result
@@ -587,7 +587,7 @@ print("""
   owner.
 
   ⛔⛭⛭ AND THE REPAIR PHASE HAS SINCE OVERTURNED THE HEADLINE, WHICH IS REPORTED AS A RESULT
-  RATHER THAN REPAIRED AWAY (r7350, on r7349 ④).  Live, against the same instrument: the reversal
+  RATHER THAN REPAIRED AWAY (r7354, on r7349 ④).  Live, against the same instrument: the reversal
   class has fallen 475 -> 237, the multi-site class 308 -> 250, and the discriminating class has
   RISEN 324 -> 539 -- a gain of 215 against the reversal class's loss of 238.  So the ordering this
   receipt pre-registered holds AT THE PIN and not live, and what it claims live is the DIRECTION:
