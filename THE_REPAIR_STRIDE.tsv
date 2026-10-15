@@ -140,6 +140,35 @@
 #   mid-token where _unmark then deletes a delimiter the raw text had.
 #   Neither is a repair and neither is on the list below.  Both are measurements the ledger owes itself.
 #
+# ⛭⛭ ** THE OVERNIGHT RULE, SET AT r7353.  NO SEAT WAITS FOR A NUDGE AND NO SEAT WAITS FOR THE GATE. **
+#   The trunk is not merged while the gate node is away.  Keep working, keep pushing EVERY revision
+#   (r7347: the push is not gated on the arbiter), and route anything that needs a ruling rather than
+#   guessing it -- every seat has done exactly that this phase and it is why this can run unattended.
+#   ** Work your own prefixes in list order.  Nothing is re-cut while nobody is merging. **
+#
+# ** AND THE HAND-OFF QUEUE, SO A DRY SEAT NEVER IDLES AND NO TWO SEATS CAN COLLIDE. **  60 holds 11
+#   receipts against 20 each and will run dry first.  The queues below are DISJOINT BY CONSTRUCTION, so
+#   a seat takes from its own queue only and never needs to coordinate:
+#     * 60, when its 11 are closed, takes from 70 in this order:
+#         L259_the_distance_from_the_present, P08_slicing_operator, L248_the_strike_broke_its_readers,
+#         L256_the_band_taken, L280_the_decidable_claims, L556_registry_from_rows,
+#         L276_the_representation_theory_probe, L560_pins_into_moving_prose, L815_seam_phase_derived
+#     * cc66, when its 20 are closed, takes from 70 in this order:
+#         L246_the_achirality_is_the_obstruction, L272_the_survey_that_was_a_memory, L202_the_seam,
+#         L_probability, L247_the_build_already_stands, P03_SdS_slicing, RP_34_gr
+#     * 70 keeps P10_canonical_time and L207_the_bend (its two BLOCKED receipts) and works its own list
+#       from the top; it hands off from the BOTTOM, so the two ends never meet.
+#   ** A seat announces each take in the push that begins it, naming the prefix.  If 70 has already
+#   pushed a repair for a prefix in your queue, it is 70's and you skip it -- the ledger is the
+#   arbiter, not the queue. **
+#
+# ⛔ ** THE CEILING TONIGHT IS 134 OF 135 RECEIPTS, NOT 135, AND IT IS NAMED SO NOBODY BURNS THE NIGHT
+#   ON IT. **  P10_no_rescaling's one owed row is BLOCKED on a defect in THE_REGISTER (70's RC3): its
+#   claim stands inside a block duplicated inside the PO-23 row, so no span is unique and no repair can
+#   meet the floor.  That duplicate is 66's to clear and the gate it needs -- check_register_monotone
+#   measuring CONTENT rather than CHARACTERS -- landed at r7353; the row itself is 66's next revision's
+#   first item.  ** Leave that receipt alone.  Everything else is reachable. **
+#
 # seat\tprefix\trows\treceipts\tPAPER/SOURCE\tSENTENCE/TOKEN
 # ---- cc66: 68 rows in 20 receipts over 17 prefixes
 cc66	L271_the_statistics_bake	5	2	2/3	1/4
