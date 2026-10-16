@@ -1,0 +1,25 @@
+# ⓬ THE CLASSIFICATION COLUMN, added to ⑩'s already-fixed 40 (r7399+cc66.56).  Constructs and the
+# agreement rule are in REGISTRATION.md, pushed before this was scored.
+#   C1 = a heading that NAMES openness / closure / scope / debt / a limit   (narrow, as registered)
+#   C1b = a heading that classifies by status more loosely ("the substrate DETERMINES", "boundary",
+#         "Tier one") -- reported as a SENSITIVITY, not folded into the headline
+#   C2 = the paper's "We mark maturity throughout / Established / Argued / Measured" paragraph
+#   C3 = a % status comment block -- 0 BY CONSTRUCTION, the population strips comment lines
+#   C4 = a P7 §frontiers item's WORK/BOUNDARY kind -- P7 is outside the arm's population
+n	paper	construct	what it asserts	agrees?	note
+12	P9	C1	§Scope and open problems	AGREES	a scope statement under a scope-and-open heading
+18	P11	C1	§Scope, and where what is not claimed here is settled	AGREES	three limits stated with where each stands
+21	P13	C1	§What stays open	AGREES	the charging gap stays as stated
+31	P18	C1	§...and the limit on it	AGREES	an uncomputed base rate, named as the limit
+35	P18	C1	§What is genuinely unpaid, at its actual size	DISAGREES-DECLARED	heading says unpaid; prose says "answered rather than owed" AND SAYS SO IN TERMS -- the opposite of r7401's defect, where neither sentence flagged the other
+36	P18	C1	§What is held open, and on what footing	AGREES	a conjecture, labelled one, with a named test
+38	P18	C1	§What is genuinely unpaid, at its actual size	AGREES	"One unresolved observational question"
+39	P18	C1	§What is not on this list, and why that matters	AGREES	"not carried as open ... In neither case is a derivation owed"
+40	P18	C1	§...and the limit on what the threefold supplies	AGREES	"is left open ... the same question one level up"
+23	P15	C2	maturity: "the coherence mechanism" = ARGUED	AGREES	"Not settled, and unchanged by that run" -- argued, not settled
+24	P15	C2	maturity: "the amplitude floor" = ESTABLISHED	⛔ CANDIDATE DISAGREEMENT	§2356 "What the substrate determines: the amplitude floor and the classical character" l.2366: "One scope qualification is owed immediately, and closing it is what makes the classical reading a result rather than an inference"; the site's own sentence: "One check is owed here and is not optional".  ⌗ THE OTHER READING, stated: the maturity entry may name the floor PROPOSITION (which rules out the substrate's vacuum, established) while the qualification concerns the PROGENITOR's vacuum, a different quantity.  66 rules.
+25	P15	C2	maturity: "the transmission dichotomy" = ESTABLISHED	AGREES	the dichotomy is established; what is open is the CONTENT it carries -- two objects, and the paper says so
+26	P15	C2	maturity: "the throat" = ESTABLISHED	AGREES	"The guard that remains is narrower and is worth stating as such" -- established with a stated guard
+27	P15	C2	maturity: "the transmission dichotomy" = ESTABLISHED	AGREES	the uncomputed flux is a third object, reassigned to the quantum state
+29	P16	C2	maturity: the cooling leg's standard-BBN character = ESTABLISHED	AGREES	the open peak temperature is a different object and P16's abstract names it a frontier
+30	P16	C2	maturity: "the synthesis spine" = ESTABLISHED	AGREES	"the conjecture is discharged as Theorem B"

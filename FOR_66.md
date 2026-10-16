@@ -20497,3 +20497,59 @@ fails until the next seat pushes.*
 `check_open_ledger` alone. **It was one of four, and one of the four was mine.** *I had read the step
 record and stopped at the first cause rather than reading the whole `FAILED` line — the same shape as
 the `r7383` red, where I reported a fix and the layer behind it was still there.*
+
+## ⛭⛭ `r7401+cc66.58` — **⓬ MEASURED: `16` of `40` CARRY A CLASSIFICATION, `1` DISAGREES — AND THE ONE THAT DOES SITS IN THE CONSTRUCT THIS ARM CANNOT READ, WHICH IS THE ANSWER TO YOUR GATE QUESTION**
+
+*Read at `origin/main`. Constructs, the agreement rule and four bands registered in
+`computations/beyond_the_wall/r7401_cc66_the_classification_column/REGISTRATION.md` and **pushed
+before anything was scored**. The column went on ⑩'s already-fixed `40`, not a new draw. ⛔ Not built,
+as ⓬ instructs.*
+
+| | | |
+|---|---|---|
+| **carry a classification** | **`16` of `40`** | `40.0` % ± `7.3`pp → `132` ± `24` of `329` |
+| of those, **disagree** | **`1`** | `6.2` % ± `6.1`pp |
+| incl. one the prose itself declares | `2` | `12.5` % ± `8.3`pp |
+
+By construct: **`C1`** a heading naming openness/closure/scope/debt — **`9`**; **`C2`** the maturity
+paragraph — **`7`**; **`C3`** a `%` status block — **`0`**; **`C4`** a `P7` frontiers kind — **`0`**.
+
+### ⛔ THE CANDIDATE, WITH BOTH READINGS, BECAUSE YOU RULE AND I DO NOT
+
+`P15` l.`138` lists **`the amplitude floor`** under `\emph{Established}`. `P15` §`2356` is
+`What the substrate determines: the amplitude floor and the classical character`, and l.`2366` inside
+it says ***"One scope qualification is owed immediately, and closing it is what makes the classical
+reading a result rather than an inference"*** — with the sampled sentence itself reading *"One check
+is owed here and is not optional"*.
+
+⇒ **The construct says `Established`; the prose inside it says a qualification is owed and that
+closing it is what would make the reading a result.** ⌗ ⛭ **The other reading, stated rather than
+suppressed:** *the maturity entry may name the floor PROPOSITION — which rules out the substrate's
+vacuum and is established — while the qualification concerns the PROGENITOR's vacuum, a different
+quantity the section itself distinguishes. On that reading there is no defect.* **Yours.**
+
+⌗ *And one that disagrees but **declares** it, which is the opposite of your shape rather than an
+instance of it: `P18` §`What is genuinely unpaid` contains "and one that is sharper here than in the
+field, and is **answered rather than owed**". The heading says unpaid, the prose says answered — and
+says so in terms. Your `r7401` defect was two sentences neither of which flagged the other.*
+
+### ⛭⛭ AND THE CAVEAT I REGISTERED BEFORE THE NUMBER IS BORNE OUT, WHICH ANSWERS YOUR GATE QUESTION
+
+I registered that **your two instances both sit in constructs this arm's population largely or wholly
+excludes** — `P16`'s in an abstract/maturity paragraph, `P7`'s item `3` in the frontiers section the
+arm skips by design — **so the sample would UNDER-see the shape ⓬ names.**
+
+⇒ ⛔ ***It does, and the measurement says so from the inside: the only candidate came from `C2`, the
+maturity paragraph — a construct this harvester has NO access to, because a maturity column is PROSE
+and not a marker. `C1`, the construct the net does reach, gave `9` sites and `0` disagreements.***
+
+⇒ **So "every classified item agrees with its own classification" is cheap only if something parses
+the classifying constructs — and the two that carry your three known defects (`C2` the maturity
+paragraph, `C4` the frontiers kind) are exactly the two this population does not read.** ⌗ *That is a
+POPULATION change, not a column. ⛔ Priced and reported, not built.*
+
+⌗ **Bands: ⒜ `8`–`22` → `16` HELD. ⒝ `0`–`3` → `1` HELD. ⒞ `C2` `0`–`6` → `7` REFUTED HIGH, just —
+the maturity subjects turned out to be named closely enough to the section headings that seven of the
+nine `P15`/`P16` sites matched, and every match carries its reasoning in `column.tsv` so any one can
+be overturned. ⒟ `C3` = `0` BY CONSTRUCTION and worth nothing, as registered: `97` vocabulary matches
+are stranded in comment blocks this population strips.**
