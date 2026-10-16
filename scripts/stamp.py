@@ -177,7 +177,11 @@ def main():
     #     vague one both count as one.  So the stamp now carries the FRONTIER's shape. *** **
     # ** r2712: PO-10 STRUCK -- its remainder is a procedure, not a question. **
     # ** r2717: PO-11 STRUCK -- the propagating sector exists as states. **
-    BOUNDED = {'PO-4', 'PO-5', 'PO-6', 'PO-46'}  # ⌗ r6685: PO-46 asks a sharp question --
+    # ⛭ r7413: PO-92 entered on opening rather than left to the silent default -- the row states
+    #   exactly what would discharge it (the charged interior carried past the locus, returning
+    #   either a spacelike r=0 or a named alternative) and exactly what terminates it (an r7013
+    #   kind 2 stated limit if it carries no CR-specific content), so it is bounded on both ends.
+    BOUNDED = {'PO-4', 'PO-5', 'PO-6', 'PO-46', 'PO-92'}  # ⌗ r6685: PO-46 asks a sharp question --
     # a propagating Dirac field on the polarised member with its characteristic cone computed
     # as P11's was -- so it is bounded, and it is gated by nothing.
     # ** r2729: UNBOUNDED WITHDRAWN.  *** The word was never in the register -- it was written
@@ -198,7 +202,7 @@ def main():
     # ⌗ r6685: PO-46 closes BY CONSTRUCTION -- a propagating Dirac field built on the chiral
     #   member, with its characteristic cone computed as P11's was -- so it is a definedness
     #   row and not a prediction one; no run against the sky can settle it.
-    DEFINEDNESS = ('PO-2', 'PO-4', 'PO-5', 'PO-6', 'PO-46')
+    DEFINEDNESS = ('PO-2', 'PO-4', 'PO-5', 'PO-6', 'PO-46', 'PO-92')
     PREDICTION = ('PO-7',)
     print(f'**KIND: {len(DEFINEDNESS)} DEFINEDNESS ({", ".join(DEFINEDNESS)}) · '
           f'{len(PREDICTION)} PREDICTION ({", ".join(PREDICTION)})**')

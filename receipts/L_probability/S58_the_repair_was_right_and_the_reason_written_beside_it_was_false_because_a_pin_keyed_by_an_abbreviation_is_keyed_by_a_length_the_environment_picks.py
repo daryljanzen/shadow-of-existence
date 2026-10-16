@@ -183,11 +183,31 @@ def main():
           f'{ {k: v for k, v in _lens.items()} }',
           all(_iff.values()) and len(C.ABBREVS) >= 4
           and any(_lens[ab] != _pin_len for ab in C.ABBREVS))
-    check(f'Ⓒ② and the map\'s keys are UNIFORM in length at every tested setting, which is what makes '
-          f'the lookup all-or-nothing rather than partial -- so a length that is not the pins\' misses '
-          f'ALL of them and not some: {[(ab, _lens[ab], _found[ab]) for ab in C.ABBREVS]}',
-          all(len(_lens[ab]) == 1 for ab in C.ABBREVS)
-          and all(_found[ab] in (0, len(C.PINS_S39)) for ab in C.ABBREVS))
+    # ⛔⛭⛭⛭ r7410+60: THE PREVIOUS FORM OF THIS CLAUSE WAS ENVIRONMENT-KEYED TOO, which makes it the
+    #   sixth instance of this receipt's own class and the FIRST THE REPAIR INTRODUCED.  `r7398` replaced
+    #   an `8`-only claim with the claim that the map's keys are UNIFORM in length at every tested
+    #   setting -- and ** git never emits an ambiguous abbreviation: it LENGTHENS one to keep it
+    #   unique. **  Measured at r7410 with nothing forced: at `core.abbrev=7` the lengths come out
+    #   `[7, 8]` over `5,647` keys, one setting of four non-uniform with an excess of exactly `1`, and
+    #   the non-uniformity grows with the object store -- so the clause passed when it landed only
+    #   because no 7-character prefix was ambiguous THEN.  The runner's own read sweep surfaced it.
+    #   ⇒ ** WHAT MAKES THE LOOKUP ALL-OR-NOTHING IS EXACT STRING EQUALITY, NOT A UNIFORM LENGTH. **
+    #     The two claims below are git's documented minimum and string equality, true in any
+    #     environment: no key is SHORTER than the length requested, and a pin is found ONLY IF the
+    #     pins' own length is among the lengths the keys actually take.
+    _short = {ab: [L for L in _lens[ab] if isinstance(ab, int) and L < ab] for ab in C.ABBREVS}
+    _only_if = {ab: (_found[ab] == 0) or (_pin_len[0] in _lens[ab]) for ab in C.ABBREVS}
+    _uniform = {ab: len(_lens[ab]) == 1 for ab in C.ABBREVS}
+    print(f'      key lengths {dict((ab, _lens[ab]) for ab in C.ABBREVS)}; uniform {_uniform} '
+          f'-- REPORTED and asserted of nothing, because git lengthens to disambiguate')
+    check(f'Ⓒ② ⛭⛭ and what makes the lookup all-or-nothing is EXACT STRING EQUALITY and NOT a '
+          f'uniform key length: no key is shorter than the length requested ({_short}), and a pin is '
+          f'found ONLY IF the pins\' own length is among the lengths the keys take ({_only_if}).  '
+          f'** Uniformity is {_uniform} here and is reported rather than asserted -- git never emits an '
+          f'ambiguous abbreviation, it LENGTHENS one, so at one of these four settings the keys are '
+          f'NOT uniform (r7410, the sixth instance of this receipt\'s class and the first its own '
+          f'repair introduced) **',
+          not any(_short.values()) and all(_only_if.values()))
 
     # ── Ⓓ the correction is written where the reason was ──────────────────────────────────────────
     head('Ⓓ  the correction is in both receipts, and the repair is unchanged')
