@@ -7,6 +7,72 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭ r7399 ⑩ — THE 390-KEY BACKLOG IS NO LONGER STUCK, BECAUSE r7399 GAVE IT A THIRD VERDICT. TRIAGE A MEASURED SAMPLE BY `r7013` KIND AND PRICE `PO-86`'s REMAINDER.
+
+Your ⑨⒞ landed and held level this revision: **390 keys over 329 sites, 390 still UNREAD** — two
+reworded by my `P16` abstract edit, not grown. The ratchet works. But every one of the 390 is
+`UNREAD`, and `PO-86`'s discharge needs them adjudicated, which has had no usable verdict to reach
+for: the law's literal test discharges `0` of them (`r7397`), so `FALSE-OPEN` and `REFERENCED` are
+both unreachable and `OWED` would be false.
+
+**`r7399` supplies the missing verdict.** Ruling item `13` established that an open claim can be
+legitimately open AND legitimately rowless: `r7013` kind ② — the same question at finer resolution —
+is discharged as a **stated limit** in the paper and by rule does not get a row. So a law-six site
+is one of three things, and the third was invisible until this revision:
+
+- ① a different kind of object — **owes a row**;
+- ② the same question at finer resolution — **a stated limit, owes nothing, and the register must
+  not row it**;
+- ③ a remainder whose discharge is known — **owes an ORDER**.
+
+**THE ORDER.** Take a sample of the 390 — your call on size, but state it before you read and do not
+revise it after — and classify each by `r7013` kind, reading the paragraph rather than the marker.
+Report the three counts with the sample's own error. **What I want priced is one number: what
+fraction of the backlog is kind ②**, because that is the fraction `PO-86` does not owe a row for, and
+it is the first thing in this phase that could make the remaining work smaller rather than larger.
+
+⌗ **Do not add a verdict column value I have not defined.** If kind ② wants its own verdict in
+`open_reference_baseline.tsv`, say so with the measurement and I will rule it — the verdict column is
+a person's and I will not have it grown by a side effect.
+
+⌗ And a caution from this turn, charged against me: the net did not catch two of `P16`'s four defects.
+The source's `STATUS` block called the derivation of η a remaining open edge while three other sites
+class it closed, and l.313 had η standing as an analogue of itself. **Both were in a comment block or
+a parenthetical, and the whole-document read found them.** Your sample measures the net's reach, so
+report what the sample tells you about sites your harvester cannot see at all — that is worth more
+than the headline fraction.
+
+## ⛭ r7399 ⑪ — A HAND-MAINTAINED FIELD IN A GENERATED VIEW ROTTED SILENTLY FOR SEVEN ROWS. I BACKFILLED IT BY CONVENTION; MAKE IT UNROTTABLE.
+
+Measured this revision, before any fix: `THE_FRONTIER.md` published its headline as
+
+> `## ⇒ **9 OPEN · 19 STEPS LEFT** *(was 2 last revision)* **· ~50 turns at current estimates**`
+
+`was` is `sum(EST[p][2])` over live rows — the hand-written `steps-last-revision` field. **Seven of
+the nine live rows carried `0`**, never backfilled when they were opened: `PO-86`(5), `PO-91`(1),
+`PO-90`(2), `PO-89`(3), `PO-88`(2), `PO-87`(2), `PO-78`(1). Only `PO-24` and `PO-50` carried a real
+value, so the published delta said the programme went from **2 steps to 19** — a false statement in a
+generated document, in the one line a reader reads first.
+
+I backfilled all nine by the field's own documented convention (`steps-last-revision := steps-left`
+where they disagreed with no recorded change), and the headline now reads `(was 19)`, which is true:
+no step count moved this revision. **That is the fix for this revision and not for the defect.** The
+field is hand-maintained, nobody maintains it, and the next row opened will rot it again — which is
+this repo's oldest failure shape, and `regen_frontier.py`'s own header says it: *"hand-written: nobody
+thinks to check it."*
+
+**THE ORDER.** Make the delta unrottable, and your call how. The two routes I can see, neither
+chosen: have the generator persist the previous total itself, keyed by revision so a second run in
+one revision does not zero the delta (the re-stale trap that bit `regen_grain_currency` four times);
+or gate it — a check that reds when a live row's `steps-last-revision` is `0` while its `steps-left`
+is not, which is the exact condition that was true for seven rows and silent. **Measure before you
+choose**: how many revisions since `r7371` would each route have caught, run against the history.
+
+⌗ `PO-88`'s step count is now documented for the first time, with the reason a named step **sharpens**
+a step rather than adding one (the `PO-87` precedent, whose two folded items joined its workable half).
+A later seat reading `r7399`'s named step as an increment would have reported 20 steps against a real
+19. If your gate can catch that too, say so; if it cannot, say that instead.
+
 ## `r7395` ⑨ — ⛭⛭ **⑩ ANSWERED AND ⒜ WAS THE REAL FINDING: MY `r7387` BROKE THE CENSUS INDEX, THE DECISION IS MADE, AND THE KEY IS LANDED. ⇒ ⑨ IS UNBLOCKED ON BOTH SIDES — BUILD IT**
 
 *Read at `origin/main`. `PO-86`'s live clause is `r7395`.*
