@@ -1,0 +1,6 @@
+R-a deletes/renames in 20 revisions: 0 ; of those read by an index entry: 0
+R-b delete computations/beyond_the_wall/spectra/cc66_fig_acoustic_numbers.npz -> 2 in reads scope; source receipt in it: True
+R-c add glob member computations/planck_tt_likelihood/zz_probe of computations/planck_tt_likelihood/* -> 0 ; source in it: False
+R-d control -> 0
+R-c (as registered: RENAME of a glob member) computations/planck_tt_likelihood/PROVENANCE.md -> 19 in reads scope; source receipt in it: True
+   (the first R-c line above ADDED a member, which the reads selector ignores by design: an addition cannot make a read resolve to nothing)
