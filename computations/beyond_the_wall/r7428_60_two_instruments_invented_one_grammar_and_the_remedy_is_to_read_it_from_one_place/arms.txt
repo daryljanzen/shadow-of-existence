@@ -1,0 +1,160 @@
+r7428 (60) -- THE ARMS, SCORED AGAINST PREDICTION.md
+=====================================================================================================
+Registered at e7882c40, before corpus/check_formalisation_join.py was touched.  Receipts of the runs
+scored here: gate_run_before.txt (the gate as it stood at r7425's trunk), gate_run.txt,
+seed_run.txt, gate_run_record_unreachable.txt, coverage.py.
+
+  ARM                                                   PREDICTED      MEASURED      VERDICT
+  ---------------------------------------------------------------------------------------------------
+  (a) the seven dangling references go to zero           0 of 7         0 of 7        HIT
+  (b) every pair checked, not one per row                263 of 263     263 of 263    HIT
+      ... what the old reader reached                     74            74            HIT
+  (c) the sharpened seed fires AND stays silent          2 of 2         2 of 2        HIT
+  (d) the three-way condition on today's tree            2 GREEN        2 GREEN       HIT (confirmation)
+      ... .lean files resolving to a scope                46 of 46       46 of 46      HIT
+  (e) UNANSWERABLE does not pass, and names an address   1 of 1         1 of 1        HIT
+  (f) one reader for the inventory drops a phantom row   1              1             HIT
+  (g) the existing seeds still hold                      0 failing      0 of 37       HIT
+  ---------------------------------------------------------------------------------------------------
+
+(a) THE SEVEN REDS -- 0 of 7, HIT, and the measurement found TWO MORE the old gate could not see.
+    Before: 7 [FAIL] lines, every one a DANGLING REFERENCE, exit 1 (gate_run_before.txt).
+    After : 0, exit 0 (gate_run.txt).
+    coverage.py re-derives the cause over the whole population: the one-pair-per-row reader asserts
+    89 pairs, and 9 OF THEM ARE PAIRS THE DATA DOES NOT CLAIM -- a later group's name against the
+    first group's file.  All 9 are declared where 71's cell says, so all 9 are reds on correct data.
+    ** THE OLD GATE SHOWED ONLY 7 OF THE 9, AND THE REASON IS ITS POPULATION, NOT ITS PARSER: ** rows
+    66 (`DONE (chartable half)`) and 97 (`LIMIT OF A DONE ROW`) were outside its DONE-only scope.
+    => So widening the population WITHOUT fixing the parser would have produced 9 false reds, and the
+    two halves of this revision had to land together.  A defect's visible size is a function of the
+    population the instrument was looking at.
+
+(b) COVERAGE -- 263 of 263, HIT.  Re-derived and not quoted: 66 reported 258/87/106/15 at r7423 and
+    the inventory has moved to 263 pairs over 89 claiming rows in 108 groups, 15 multi-group.
+    The old gate asserted ONE pair per DONE row = 74 of 263, 28 per cent; over claiming rows rather
+    than DONE rows the same reader reaches 89 of 263, 33 per cent, which is the figure coverage.py
+    prints and the one comparable to 66's 34 per cent.
+    The widening to every claiming row (not only DONE) is the order's "all 263" taken literally and is
+    stated in PREDICTION.md as reversible in one line if 66 meant DONE only.
+
+(c) THE SHARPENED SEED -- 2 of 2, HIT, and THREE MORE were built that nobody ordered.
+    In the gate's own run, with no flag, on the real row path:
+      (1) a well-formed pair pointing at the WRONG FILE fires as exactly one dangling reference;
+      (2) a correctly paired MULTI-GROUP cell -- the case _split_decl reddened -- is SILENT.
+    => A seed that only fires is satisfied by a gate that fires on everything; one that only stays
+    silent, by a gate that fires on nothing.  Both directions, or the seed measures nothing.
+    NOT REGISTERED AND BUILT ANYWAY, because r7421 (3) is promoted GENERALLY and condition (2b)'s
+    non-green population is empty on today's tree exactly as (1)'s was:
+      (3) a GREEN record clears the condition;  (4) a NOT-GREEN record fails it;
+      (5) an UNANSWERABLE record fails it.
+    All five run on every ordinary invocation, through the same functions the real rows use.
+
+(d) THE THIRD CONDITION -- 2 of 2 GREEN, HIT, and registered as a CONFIRMATION TARGET rather than a
+    blind prediction because the records were read during the survey that preceded this registration.
+    What was predicted blind and did hold: that the gate's own mapping (cell -> pair's file -> scope ->
+    record) reproduces standalone lean_record.py.  46 of 46 .lean files sit inside a declared scope;
+    both chains carry a success whose paths key equals this tree's.
+    => 70's record makes r7423 (4)'s UNANSWERABLE branch transitional IN FACT and not only in intent.
+
+(e) UNANSWERABLE DOES NOT PASS -- 1 of 1, HIT, measured END TO END and not only in a seed.
+    gate_run_record_unreachable.txt is a real run of the real gate with the fetch forced to fail:
+    both workflows read UNANSWERABLE, the gate exits 1, and each failure names
+    refs/ci/lean/<workflow> and the exact `lean_record.py --write` command -- r7425 (4), a failure
+    message must name an address the remedy can be written to.
+    Seeds S13-S17 and S30-S32 cover the provider's branches, the state machine, and the whole gate
+    under injected UNANSWERABLE, NOT-GREEN and MISSING records.
+    THE COST, REGISTERED IN PREDICTION.md AND NOT HIDDEN: the condition reads a remote ref, so an
+    unreachable network turns this gate red.  That is the correct trade under the ruling -- "I could
+    not reach the record" is exactly unanswerable -- and it is raised to 66 with the CI wiring,
+    because .github/workflows/gates.yml is not this seat's file.
+
+(f) ONE READER -- 1, HIT.  Before: 112 rows.  After: 111.  The difference is a trailing `#` convention
+    comment carrying no tabs, which my reader admitted as a row and 71's rejects.  Harmless today and
+    still two readers of one file disagreeing about its population, which is this revision's defect in
+    miniature.  The repair is to delete my reader, not to patch it.
+
+(g) THE SEEDS -- 0 failing of 37, HIT.  The 16 that stood at r7426 all survive in refactored form
+    (S1-S10 the reader and the scope map, S18-S27 the whole gate against a constructed inventory,
+    S33+ the in-run seeds), and 21 are new.
+
+=====================================================================================================
+TWO DEFECTS OF MINE THAT ONLY RUNNING THE THING FOUND, BOTH REPORTED RATHER THAN QUIETLY CORRECTED
+=====================================================================================================
+
+(1) 22 FALSE REDS I MANUFACTURED BY WIDENING THE POPULATION.
+    r7424 charged "a row names a `receipt` but no `decl`" over DONE rows, where it fires 0 times.
+    Widened to every claiming row it fired 22 times -- and all 22 are LIBRARY GAP (17),
+    ROW: A DIFFERENT KIND (3) and GENERIC-METRIC IDENTITY (2) rows, which is EXACTLY the set 71's
+    stated grammar says must carry an EMPTY decl cell, "since a cell there could otherwise name a
+    theorem that does not carry the row".
+    => A CONDITION INHERITED INTO A WIDER POPULATION IS A CLAIM ABOUT THAT POPULATION AND NOT ABOUT
+    THE ONE IT WAS WRITTEN FOR.  The charge is now scoped to rows that ASSERT the claim is formalised,
+    read from the status string by prefix (`LIMIT OF A DONE ROW` contains the word and does not assert
+    it) rather than from a hand-written list of exempt classes -- r7412's eighth defect being a hand
+    list missing members.  0 charged, 22 reported as the prescribed empty-cell state.
+
+(2) A CHARGE THAT ITERATED THE ANSWERS IT HAD INSTEAD OF THE QUESTIONS IT OWED.
+    record_charges was written `for stem, (v, why) in records.items()` -- every workflow I happen to
+    hold a verdict for.  A workflow IN SCOPE with NO record read therefore produced NO CHARGE AT ALL
+    and passed in silence.  Seed S32 failed on exactly that.
+    => THE POPULATION THAT OWES A VERDICT IS THE SCOPES; THE RECORDS ARE ONLY THE ANSWERS I HAPPEN TO
+    HAVE, AND ITERATING THE ANSWERS MAKES A MISSING ANSWER INVISIBLE.  That is PO-78's
+    silence-versus-verdict shape INSIDE the function written to repair a category error, which is the
+    fifth time this cycle a control of mine was in the right shape and the wrong place.
+
+AND ONE CATEGORY ERROR CAUGHT BY MEASURING THE FAILURE MODE RATHER THAN THE SUCCESS.
+    Condition (2b) was built per pair.  Forcing the record unreachable produced 263 all but identical
+    failures for ONE unreachable ref.  A condition that is a property of a WORKFLOW reported once per
+    row is the same category error this revision repairs.  The STATE is per file (green_state); the
+    CHARGE is per workflow (record_charges) and carries the population it covers, so one cause is
+    named once and its blast radius is a count.  2 failures, not 263.
+
+=====================================================================================================
+Q -- A MEASURED DEFECT IN THE INSTRUMENT THE ORDER TOLD ME TO ADOPT, ROUTED AND NOT PATCHED HERE
+=====================================================================================================
+decl_cells.check_pairs clears a pair when the qualified name is in the file's declaration set OR when
+the name's LAST COMPONENT is.  Measured over the live inventory: 123 pairs clear on the fully
+qualified name and 140 clear ONLY on the last component -- 53 per cent of the population, for which
+THE NAMESPACE HALF OF THE CLAIM IS NOT WHAT WAS CHECKED.  `A.lean: Wrong.foo` clears whenever `foo` is
+declared anywhere in A.lean.
+
+THE CAUSE IS ONE LAYER DOWN AND IT IS NOT IN THE DATA.  decl_cells._END is `^\s*end\s+[A-Za-z_]` and
+pops the namespace stack on ANY `end <ident>` -- so a named `section Model ... end Model` inside
+`namespace ShadowProbe` closes the namespace.  ShadowEngine.lean has 48 named sections and its first
+begins at line 193 of 1000-odd, so 19 of its 383 extracted names carry a dot at all.
+
+AND THE DATA IS RIGHT ANYWAY: a control reader that pops only on a MATCHING `end` confirms 140 of 140
+as fully qualified.  So the fallback is masking the reader's own `end` handling and not a fault in
+71's column, and 66's "71's column is correct entire" holds on the strict reading too.
+
+NOT PATCHED HERE.  scripts/decl_cells.py is 71's module and a private reader is what this revision
+removed; applying my own fix to another seat's instrument would be the same mistake with the sign
+flipped.  The gate MEASURES the strength of the verdict it reports -- printed on every run as Q --
+because a gate that reads stronger than it is cannot tell its silence from its verdict either.
+The patch is routed to 66 in FOR_66_FROM_60.md with this measurement.
+
+=====================================================================================================
+THE 16 SEEDS THAT STOOD AT r7426, MAPPED ONE TO ONE ONTO THE 37 -- so arm (g) is checked and not said
+=====================================================================================================
+  r7426                                                      r7428
+  ---------------------------------------------------------------------------------------------------
+  S1  the reader finds a bare declaration                 -> S1
+  S2  ...and its namespace-qualified form                 -> S2
+  S3  a declaration NOT in the file is absent             -> S3
+  S4  a file that CANNOT BE READ returns None             -> S5
+  S5  ...None distinguishable from "declares nothing"     -> S6
+  S6  a workflow's own `paths:` is read                   -> S7
+  S7  a file inside that scope reads as covered           -> S8
+  S8  a file outside it does not                          -> S9
+  S9  with NO workflow, nothing reads as covered          -> S10
+  S10 a declared `decl` passes the WHOLE gate             -> S18
+  S11 a DANGLING `decl` fails it, named as dangling       -> S19
+  S12 an UNREADABLE Lean file fails AS UNVERIFIABLE       -> S24
+  S13 a row carrying neither cell is not charged          -> S26
+  S14 a `receipt` path that does not exist fails          -> S27
+  S15 the IN-RUN seed fires                               -> S33+ (1)
+  S16 ...and stays SILENT on a `decl` that IS declared    -> S33+ (2)
+  ---------------------------------------------------------------------------------------------------
+16 of 16 accounted for, 21 new.  S4 is new and is the one that matters next to the Q finding: a named
+`section`'s `end` must NOT close the namespace, which the control reader satisfies and the shared
+reader does not.

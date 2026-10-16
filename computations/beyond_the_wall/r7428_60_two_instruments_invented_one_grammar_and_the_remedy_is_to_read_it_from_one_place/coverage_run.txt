@@ -1,0 +1,25 @@
+  THE POPULATION
+      rows in the inventory                      : 111
+      rows carrying a `decl` claim               : 89
+      `(file, name)` pairs claimed               : 263
+      file groups                                : 108
+      rows carrying MORE THAN ONE group          : 15
+
+  WHAT A ONE-PAIR-PER-ROW READER REACHED
+      pairs it asserted                          : 89 of 263 (33 %)
+      of those, pairs THE DATA DOES NOT CLAIM    : 9  <- its own mispairings
+        row 7: asserted `ShadowProbe.adm_rho_shear_lowers` in Campaign6A.lean; the data claims it in Row7Count.lean -- a red on correct data
+        row 17: asserted `ShadowProbe.nariai_horizon_kretschmann` in CurvatureInstances.lean; the data claims it in NonDiag.lean -- a red on correct data
+        row 19: asserted `ShadowProbe.gb_total_derivative_k` in Campaign6A.lean; the data claims it in FRWk.lean -- a red on correct data
+        row 58: asserted `ShadowProbe.row58_legendre_needs_sign` in Campaign7.lean; the data claims it in Legendre58.lean -- a red on correct data
+        row 66: asserted `ShadowProbe.euler_tt_transverse` in S3Frame.lean; the data claims it in NonDiag.lean -- a red on correct data
+        row 67: asserted `ShadowProbe.euler_tt_transverse` in S3Frame.lean; the data claims it in NonDiag.lean -- a red on correct data
+        row 77: asserted `ShadowProbe.gowdy_coord_not_killing` in ShadowEngine.lean; the data claims it in Row77Killing.lean -- a red on correct data
+        row 97: asserted `ShadowProbe.sds_kretschmann` in ShadowEngine.lean; the data claims it in CurvatureInstances.lean -- a red on correct data
+        row 108: asserted `ShadowProbe.cut_closes_only_at_M_zero` in HigherDim.lean; the data claims it in Row108Cut.lean -- a red on correct data
+
+  Ⓠ WHAT THE SHARED CHECK ACTUALLY CHECKS
+      cleared on the FULLY QUALIFIED name        : 123
+      cleared ONLY on the last component         : 140
+      of those, qualified under a MATCHING-`end` reader: 140 of 140
+      ⇒ the data is right on the strict reading; the fallback masks the reader

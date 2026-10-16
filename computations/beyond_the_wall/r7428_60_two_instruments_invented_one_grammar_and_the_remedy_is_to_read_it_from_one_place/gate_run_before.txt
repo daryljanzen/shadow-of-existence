@@ -1,0 +1,40 @@
+====================================================================================================
+  FORMALISATION JOIN -- is every DONE row's declaration still declared, its file still gated,
+  and its receipt still there?
+====================================================================================================
+
+  ⓪ THE POSITIVE CONTROL -- can this gate read declarations at all?
+      `.lean` files found: 46
+      distinct identifiers the reader extracts: 1977
+    ✔ the reader sees 1977 identifier(s), so a verdict about a `decl` cell is a reading and not a silence
+
+  ⓪ᵇ THE IN-RUN SEED -- one `decl` that is NOT declared, put through the same row path
+    ✔ it FIRED: ⓵ DANGLING REFERENCE -- `DONE` row SEED names `in_run_seed_absent`, and computations/formalisation/lean/_InRunSeed.lean 
+    ⇒ ** so a zero from this run is a MEASURED zero ** (`r7421` ③, `70`'s words), and the seed is synthetic -- counted in nothing below.
+
+  ⓶ THE WORKFLOW SCOPES -- read from each workflow's own `paths:`
+      formalisation-mathlib.yml: ['computations/formalisation/lean/**']
+      formalisation-physlib.yml: ['computations/formalisation/lean-physlib/**']
+      `.lean` files under at least one workflow: 46 of 46
+
+  THE INVENTORY
+      columns: ['index', 'class', 'status', 'what it needs next', 'stand-in', 'receipt', 'decl']
+      rows: 112;  `DONE` rows: 74
+    [FAIL] ⓵ DANGLING REFERENCE -- `DONE` row 7 names `ShadowProbe.adm_rho_shear_lowers`, and computations/formalisation/lean/probes/Campaign6A.lean declares 6 identifier(s), none of them that one
+    [FAIL] ⓵ DANGLING REFERENCE -- `DONE` row 17 names `ShadowProbe.nariai_horizon_kretschmann`, and computations/formalisation/lean/probes/CurvatureInstances.lean declares 100 identifier(s), none of them that one
+    [FAIL] ⓵ DANGLING REFERENCE -- `DONE` row 19 names `ShadowProbe.gb_total_derivative_k`, and computations/formalisation/lean/probes/Campaign6A.lean declares 6 identifier(s), none of them that one
+    [FAIL] ⓵ DANGLING REFERENCE -- `DONE` row 58 names `ShadowProbe.row58_legendre_needs_sign`, and computations/formalisation/lean/probes/Campaign7.lean declares 28 identifier(s), none of them that one
+    [FAIL] ⓵ DANGLING REFERENCE -- `DONE` row 67 names `ShadowProbe.euler_tt_transverse`, and computations/formalisation/lean/probes/S3Frame.lean declares 36 identifier(s), none of them that one
+    [FAIL] ⓵ DANGLING REFERENCE -- `DONE` row 77 names `ShadowProbe.gowdy_coord_not_killing`, and computations/formalisation/lean/ShadowEngine.lean declares 738 identifier(s), none of them that one
+    [FAIL] ⓵ DANGLING REFERENCE -- `DONE` row 108 names `ShadowProbe.cut_closes_only_at_M_zero`, and computations/formalisation/lean/probes/HigherDim.lean declares 28 identifier(s), none of them that one
+
+====================================================================================================
+  ⛔ THE FORMALISATION JOIN GATE IS RED: 7 failure(s)
+      - ⓵ DANGLING REFERENCE -- `DONE` row 7 names `ShadowProbe.adm_rho_shear_lowers`, and computations/formalisation/lean/probes/Campaign6A.lean de
+      - ⓵ DANGLING REFERENCE -- `DONE` row 17 names `ShadowProbe.nariai_horizon_kretschmann`, and computations/formalisation/lean/probes/CurvatureIn
+      - ⓵ DANGLING REFERENCE -- `DONE` row 19 names `ShadowProbe.gb_total_derivative_k`, and computations/formalisation/lean/probes/Campaign6A.lean 
+      - ⓵ DANGLING REFERENCE -- `DONE` row 58 names `ShadowProbe.row58_legendre_needs_sign`, and computations/formalisation/lean/probes/Campaign7.le
+      - ⓵ DANGLING REFERENCE -- `DONE` row 67 names `ShadowProbe.euler_tt_transverse`, and computations/formalisation/lean/probes/S3Frame.lean decla
+      - ⓵ DANGLING REFERENCE -- `DONE` row 77 names `ShadowProbe.gowdy_coord_not_killing`, and computations/formalisation/lean/ShadowEngine.lean dec
+      - ⓵ DANGLING REFERENCE -- `DONE` row 108 names `ShadowProbe.cut_closes_only_at_M_zero`, and computations/formalisation/lean/probes/HigherDim.l
+====================================================================================================

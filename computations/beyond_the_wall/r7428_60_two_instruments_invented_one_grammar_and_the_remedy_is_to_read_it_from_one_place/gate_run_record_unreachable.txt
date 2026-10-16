@@ -1,0 +1,53 @@
+====================================================================================================
+  FORMALISATION JOIN -- is every pair a `decl` cell claims still declared in the file that
+  pair names, is that file under a workflow whose record says GREEN, and is every `receipt`
+  path still there?
+====================================================================================================
+
+  ⓪ THE POSITIVE CONTROL -- can this gate see declarations at all?
+      `.lean` files found: 46
+      distinct identifiers the control reader extracts: 1977
+    ✔ the control sees 1977 identifier(s), so a verdict about a `decl` cell is a reading and not a silence
+
+  ⓪ᵇ THE IN-RUN SEEDS -- this run proving, on the real row path, that it could have fired
+    ✔ ⑴ a well-formed pair pointing at the WRONG FILE fires as a dangling reference
+        ⓵ DANGLING REFERENCE -- row SEED claims `Seeded.seeded_other` in computations/formalisation/lean/_InRunSeed/Right.lean, which declares 2 identifier(s)
+    ✔ ⑵ ...and a CORRECTLY PAIRED MULTI-GROUP cell is silent, so the seed is not rigged to fire
+        no failure, as required
+    ✔ ⑶ a GREEN record clears the workflow condition
+        no ⓶ᵇ charge, as required
+    ✔ ⑷ a NOT-GREEN record FAILS it
+        ⓶ᵇ NOT-GREEN -- `formalisation-inrunseed`'s record says it did NOT pass on this tree, and 2 claimed `.lean` file(s) sit under it: 
+    ✔ ⑸ an UNANSWERABLE record FAILS it, and does not pass
+        ⓶ᵇ UNANSWERABLE, WHICH IS NOT A PASS -- whether `formalisation-inrunseed` passed on this tree cannot be evaluated here, so this ga
+    ⇒ ** so a zero from this run is a MEASURED zero ** (`r7421` ③, `70`'s words), for the dangling-reference condition AND for the workflow condition, and the seeds are synthetic -- counted in nothing below.
+
+  ⓶ᵃ THE WORKFLOW SCOPES -- read from each workflow's own `paths:`, never from a filename
+      formalisation-mathlib.yml: ['computations/formalisation/lean/**']
+      formalisation-physlib.yml: ['computations/formalisation/lean-physlib/**']
+      `.lean` files inside at least one scope: 46 of 46
+
+  ⓶ᵇ THE RECORD -- did each workflow pass on THIS tree?  three-way, and `UNANSWERABLE` is not a pass
+      formalisation-mathlib: UNANSWERABLE
+        refs/ci/lean/formalisation-mathlib could not be fetched (fatal: unable to access 'https://github.com/daryljanzen/shadow-of-existence/': F)  ⇒ the remedy is written to ref
+      formalisation-physlib: UNANSWERABLE
+        refs/ci/lean/formalisation-physlib could not be fetched (fatal: unable to access 'https://github.com/daryljanzen/shadow-of-existence/': F)  ⇒ the remedy is written to ref
+
+  THE INVENTORY
+      columns: ['index', 'class', 'status', 'what it needs next', 'stand-in', 'receipt', 'decl']
+      rows: 111;  rows carrying a `decl` or a `receipt`: 111
+      their statuses: {'DONE': 74, 'DONE (CHARTABLE HALF)': 2, 'GENERIC-METRIC IDENTITY': 2, 'LIBRARY GAP': 17, 'LIMIT OF A DONE ROW': 12, 'ORDER: ENGINE-REACHABLE': 1, 'ROW: A DIFFERENT KIND': 3}
+      rows carrying a `receipt` and NO `decl`: 22, in 3 status class(es) ['GENERIC-METRIC IDENTITY', 'LIBRARY GAP', 'ROW: A DIFFERENT KIND']
+        of which 0 ASSERT the claim is formalised and are charged; the rest are the empty-cell state `71`'s grammar prescribes and are not
+      ⇒ `(file, name)` pairs checked: 263 over 111 row(s), naming 27 distinct `.lean` file(s)
+    [FAIL] ⓶ᵇ UNANSWERABLE, WHICH IS NOT A PASS -- whether `formalisation-mathlib` passed on this tree cannot be evaluated here, so this gate says so rather than succeeding (`r7423` ④, `70`'s ruling), and 27 claimed `.lean` file(s) sit under it: refs/ci/lean/formalisation-mathlib could not be fetched (fatal: unable to access 'https://github.com/daryljanzen/shadow-of-existence/': F)  ⇒ the remedy is written to refs/ci/lean/formalisation-mathlib:  python3 scripts/lean_record.py --write formalisation-mathlib --conclusion success --run <id> --event push
+    [FAIL] ⓶ᵇ UNANSWERABLE, WHICH IS NOT A PASS -- whether `formalisation-physlib` passed on this tree cannot be evaluated here, so this gate says so rather than succeeding (`r7423` ④, `70`'s ruling), and no claimed `.lean` file sits under it: refs/ci/lean/formalisation-physlib could not be fetched (fatal: unable to access 'https://github.com/daryljanzen/shadow-of-existence/': F)  ⇒ the remedy is written to refs/ci/lean/formalisation-physlib:  python3 scripts/lean_record.py --write formalisation-physlib --conclusion success --run <id> --event push
+    ⌗ Ⓠ of the cleared pairs, 123 clear on the fully qualified name and 140 clear ONLY on the name's last component -- so for those 140, the namespace half of the claim is not what was checked
+    ⌗ Ⓠ the cause is in the shared reader and not in the data: it pops its namespace stack on any `end <ident>`, so a named `section` inside a `namespace` closes the namespace.  An independent control reader that pops only on a MATCHING `end` confirms 140 of those 140 as fully qualified after all
+    ⌗ Ⓠ ⇒ so the inventory is correct entire on the strict reading too, and the fallback is masking the reader's own `end` handling rather than a fault in the data.  Routed to `66` with the patch; NOT applied here, because a private reader is what this revision removed
+
+====================================================================================================
+  ⛔ THE FORMALISATION JOIN GATE IS RED: 2 failure(s)
+      - ⓶ᵇ UNANSWERABLE, WHICH IS NOT A PASS -- whether `formalisation-mathlib` passed on this tree cannot be evaluated here, so this gate says so r
+      - ⓶ᵇ UNANSWERABLE, WHICH IS NOT A PASS -- whether `formalisation-physlib` passed on this tree cannot be evaluated here, so this gate says so r
+====================================================================================================

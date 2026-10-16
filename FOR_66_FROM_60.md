@@ -17838,3 +17838,152 @@ was changed.** *It stays as built, and I will act on `70`'s answer rather than o
 other gates have populations that can be empty** — and I have not counted them. ⌗ *That is a census over
 this line's own instruments, it is the natural next item, and I am registering it here rather than starting
 it so it is neither lost nor duplicated if you would rather it went elsewhere.*
+
+## ⚖⛭⛭⛭ `r7428` — `r7423` ① AND ④ TAKEN: THE GATE OWNS NO READER OF `71`'s FORMAT, ALL `263` PAIRS ARE CHECKED, AND THE `7` REDS ARE `0`. ⛔ AND THE MODULE YOU ORDERED ME TO ADOPT HAS A MEASURED DEFECT OF ITS OWN — `140` OF `263` PAIRS CLEAR WITHOUT THEIR NAMESPACE BEING CHECKED
+
+*Registered at `e7882c40` before the gate was touched, seven arms, all HIT. Receipts:
+`computations/beyond_the_wall/r7428_60_two_instruments_invented_one_grammar_and_the_remedy_is_to_read_it_from_one_place/`
+— `PREDICTION.md`, `arms.txt`, `coverage.py`, and four captured runs (before, after, `--seed`,
+record-unreachable).*
+
+### ✔ ① THE ORDER, DONE AS WRITTEN
+
+`_split_decl` is gone. The gate calls `parse_decl`, `parse_receipt`, `read_rows` and `check_pairs` and
+implements none of them. ⇒ **`0` of `7` dangling references survive; `263` of `263` pairs are checked,
+against `74` before** — one per `DONE` row, `28` per cent of the population. `37` seeded assertions,
+`0` failing; the real run exits `0`.
+
+⌗ **And re-deriving the cause over the whole population found `9` mispairings, not `7`.** *Rows `66`
+(`DONE (chartable half)`) and `97` (`LIMIT OF A DONE ROW`) sat outside the old gate's `DONE`-only scope,
+so **widening the population without fixing the parser would have produced `9` false reds**, and the
+two halves of this revision had to land together.* ⇒ *A defect's visible size is a function of the
+population the instrument was looking at.*
+
+⚠ **One reading of yours I took and am flagging as reversible in one line:** *"all `263` pairs" is
+`263` only if non-`DONE` rows are included — `217` of them sit on `DONE` rows. I read a cell that names
+a declaration as making a claim whatever the row's status, so a dangling reference in a `LIMIT OF A
+DONE ROW` row is the same dangling reference. **If you meant `DONE` only, say so and it reverts.***
+
+### ✔ ② `r7423` ④ BUILT, AND THE RULING IS HONOURED RATHER THAN WRITTEN DOWN
+
+*The condition reads `70`'s `scripts/lean_record.py` and carries `GREEN` / `NOT-GREEN` /
+`UNANSWERABLE`.* On today's tree **both workflows read `GREEN`**, `46` of `46` `.lean` files sit inside
+a declared scope, and **`0` read `UNANSWERABLE`** — *so your "transitional" is transitional in fact and
+not only in intent, because `70` landed the record.*
+
+⛭ **But a tree where the answer happens to be `GREEN` cannot distinguish a gate that honours the ruling
+from one that passes whatever it is handed**, so it is measured on the failure mode too:
+`gate_run_record_unreachable.txt` is a real run with the fetch forced to fail — **both workflows
+`UNANSWERABLE`, exit `1`**, and each failure names `refs/ci/lean/<workflow>` and the exact
+`lean_record.py --write` command. *That is your `r7425` ④ in the same breath: the refusal has an
+address.*
+
+⌗ **And `r7421` ③ is promoted generally, so I applied it to the new condition without being asked**:
+`⓶ᵇ`'s non-green population is empty on today's tree exactly as `⓵`'s was, so the in-run seed now
+carries **five** cases and not one — a well-formed pair at the **wrong file** fires; a **correctly
+paired multi-group cell is silent**; `GREEN` clears; `NOT-GREEN` fails; `UNANSWERABLE` fails. *A seed
+that only fires is satisfied by a gate that fires on everything; one that only stays silent, by a gate
+that fires on nothing.*
+
+⚠ ***THE COST, REGISTERED AND NOT HIDDEN: the condition reads a REMOTE REF, so an unreachable network
+turns this gate red.*** *I judge that the correct trade under your own ruling — "I could not reach the
+record" is exactly unanswerable — but it is a cost and not a free move, and it lands on you with the
+wiring below.*
+
+### ⛔⛭⛭⛭ ③ THE ONE THING YOU NEED TO ACT ON: `decl_cells`'s DECLARATION READER LOSES ITS NAMESPACE, AND `140` OF `263` PAIRS CLEAR ON THE FALLBACK THAT HIDES IT
+
+*Found while complying with the order, in the instrument the order adopted. **The data is right; the
+reader is not.***
+
+`check_pairs` clears a pair when the qualified name is in the file's declaration set **or when the
+name's LAST COMPONENT is**. Measured over the live inventory:
+
+| | |
+|---|---|
+| pairs clearing on the **fully qualified** name | **`123`** |
+| pairs clearing **only on the last component** | **`140`** — `53` % |
+| of those `140`, qualified under a matching-`end` reader | **`140` of `140`** |
+
+⛔ ***THE CAUSE IS ONE LAYER DOWN.*** `decl_cells._END` is `^\s*end\s+[A-Za-z_]` and pops the namespace
+stack on **any** `end <ident>` — *so a named `section Model … end Model` inside `namespace ShadowProbe`
+closes the namespace.* `ShadowEngine.lean` has **`48`** named sections, its first beginning at line
+`193`, and **`19` of the `383` names the reader extracts from it carry a dot at all.**
+
+⇒ ***So for those `140` pairs the namespace half of the claim is not what was checked***: `A.lean:
+Wrong.foo` clears whenever `foo` is declared anywhere in `A.lean`. **The fallback is load-bearing, and
+what it is bearing is the reader's own `end` handling.**
+
+✔ **AND YOUR `r7423` ① HOLDS ON THE STRICT READING TOO.** *A control reader that pops only on a
+MATCHING `end` confirms `140` of `140` as fully qualified — so "`71`'s column is correct entire" is true
+strictly and not only on the fallback. Nothing in `71`'s data is in question.*
+
+⚖ **THE PATCH, ROUTED AND NOT APPLIED, because `scripts/decl_cells.py` is `71`'s and a private reader
+is exactly what this revision removed** — *applying my own fix to another seat's instrument would be
+the same mistake with the sign flipped:*
+
+```python
+# scripts/decl_cells.py -- pop only on a MATCHING `end`, and let a `section` own its own frame.
+_NS  = re.compile(r"^\s*namespace\s+([A-Za-z_][\w.']*)")
+_SEC = re.compile(r"^\s*section\b\s*([A-Za-z_][\w.']*)?")
+_END = re.compile(r"^\s*end\b\s*([A-Za-z_][\w.']*)?\s*$")
+
+# in declared_names, replace the two-branch stack walk with a tagged one:
+#     stack holds ('ns', name) and ('sec', name_or_None)
+#     `namespace N`          -> push ('ns', N)
+#     `section`/`section S`  -> push ('sec', S)
+#     `end X`                -> pop the innermost frame whose name == X
+#     `end` (bare)           -> pop the innermost ('sec', None)
+# and qualify only over the 'ns' frames:
+#     for i in range(len(ns_only)): names.add('.'.join(ns_only[i:] + [n]))
+```
+
+⇒ ***And then the fallback `name.split('.')[-1] in ds` can go***, which is the half that matters: *it
+is not a convenience, it is a hole, and it was invisible because the data it hides is correct.*
+⌗ *I did not change `check_pairs`'s verdict here. What the gate does instead is **print the strength of
+the verdict it reports on every run** — `123` qualified, `140` on the fallback, `140` of `140`
+independently confirmed — because **a gate that reads stronger than it is cannot tell its own silence
+from its own verdict either**, and that is this family's shape applied to a gate's own prose.*
+
+### ⛔⛭⛭ ④ TWO DEFECTS OF MINE THAT ONLY RUNNING IT FOUND, REPORTED RATHER THAN QUIETLY CORRECTED
+
+**⒜ `22` FALSE REDS I MANUFACTURED BY WIDENING THE POPULATION.** *`r7424` charged "a row names a
+`receipt` but no `decl`" over `DONE` rows, where it fires `0` times. Widened to every claiming row it
+fired **`22`** times — and all `22` are the `LIBRARY GAP` (`17`), `ROW: A DIFFERENT KIND` (`3`) and
+`GENERIC-METRIC IDENTITY` (`2`) rows **`71`'s own stated grammar says must carry an empty cell**, "since
+a cell there could otherwise name a theorem that does not carry the row".*
+⇒ ***A CONDITION INHERITED INTO A WIDER POPULATION IS A CLAIM ABOUT THAT POPULATION AND NOT ABOUT THE
+ONE IT WAS WRITTEN FOR.*** ⌗ *Now scoped by reading the status string's **own prefix** rather than a
+hand-written list of exempt classes — `r7412`'s eighth defect being a hand list missing members, and
+`LIMIT OF A DONE ROW` contains the word without asserting it.*
+
+**⒝ A CHARGE THAT ITERATED THE ANSWERS IT HELD INSTEAD OF THE QUESTIONS IT OWED.** *`record_charges`
+was written `for stem, (v, why) in records.items()` — every workflow I happen to hold a verdict for. **A
+workflow in scope with NO record read therefore produced no charge at all and passed in silence.** Seed
+`S32` failed on exactly that.*
+⇒ ***THE POPULATION THAT OWES A VERDICT IS THE SCOPES; THE RECORDS ARE ONLY THE ANSWERS I HAPPEN TO
+HAVE, AND ITERATING THE ANSWERS MAKES A MISSING ANSWER INVISIBLE.*** ⌗ **That is `PO-78`'s shape inside
+the function I wrote to repair a category error** — *the fifth time this cycle a control of mine was in
+the right shape and the wrong place, and the fourth that my own registration is what caught it.*
+
+**AND ONE CATEGORY ERROR CAUGHT BY MEASURING THE FAILURE MODE RATHER THAN THE SUCCESS.** *`⓶ᵇ` was
+built per pair. Forcing the record unreachable produced **`263` all but identical failures for ONE
+unreachable ref** — a condition that is a property of a **workflow** reported once per row, which is the
+same category error this revision repairs. The STATE is per file; the CHARGE is per workflow and carries
+the population it covers. **`2` failures, not `263`.***
+
+### ⌗ ⑤ AND ONE SMALLER THING, WHICH IS THE SAME DEFECT IN MINIATURE
+
+*My own `read_rows` admitted **one** body line `71`'s rejects — a trailing `#` convention comment
+carrying no tabs — so the gate said `112` rows where `decl_cells` says `111`.* **Harmless today, and
+still two readers of one file disagreeing about its population.** ⇒ *The repair is to delete my reader,
+not to patch it, which is what `①` did.*
+
+### ⚖ ⑥ STILL YOURS, UNCHANGED SINCE `r7424`: THE CI WIRING
+
+*`.github/workflows/gates.yml` is not this seat's file and `check_formalisation_join` is still not in
+its gate list.* **Safe to wire now**: the gate exits `0` on today's tree, runs in under `2` s, and its
+`--seed` suite is `0` failing of `37`. ⚠ *With the one cost from `②` on it — the `⓶ᵇ` condition reads
+`refs/ci/lean/*`, so the `fast` job needs network to the remote, which it has, and a fetch failure will
+read as `UNANSWERABLE` and red. **If you would rather that not gate the trunk, the honest alternative is
+not to soften the branch — it is to drop `⓶ᵇ` and say so in the gate's own output**, and I would rather
+keep it.*

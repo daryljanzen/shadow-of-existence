@@ -1,0 +1,39 @@
+    [ok]  S1. the control reader finds a bare declaration
+    [ok]  S2. ...and its namespace-qualified form
+    [ok]  S3. a declaration NOT in the file is absent from its set
+    [ok]  S4. ...and a named `section`'s `end` does NOT close the namespace, so a declaration AFTER it is still qualified
+    [ok]  S5. a file that CANNOT BE READ returns None, which is not an empty set
+    [ok]  S6. ...and None is distinguishable from a file that declares nothing
+    [ok]  S7. a `formalisation-*` workflow's own `paths:` is read
+    [ok]  S8. a file inside that scope reads as covered
+    [ok]  S9. a file outside it does not
+    [ok]  S10. and with NO workflow at all, nothing reads as covered
+    [ok]  S11. `rooted()` redirects `71`'s module too, so a seed reads the SEEDED tree
+    [ok]  S12. ...and restores it, so the real tree is readable after
+    [ok]  S13. a workflow `lean_record` keeps no record for reads UNANSWERABLE, never GREEN
+    [ok]  S14. ...and its message NAMES the ref the remedy is written to (`r7425` ④)
+    [ok]  S15. a record read that RAISES reads UNANSWERABLE and not GREEN
+    [ok]  S16. ...and still names the ref AND the command that writes it
+    [ok]  S17. GREEN clears, NOT-GREEN and UNANSWERABLE do not, UNSCOPED is its own state
+    [ok]  S18. a row whose pair IS declared passes the WHOLE gate
+    [ok]  S19. a DANGLING pair fails the whole gate, named as dangling
+    [ok]  S20. a CORRECTLY PAIRED multi-group cell passes -- the case `_split_decl` reddened
+    [ok]  S21. ...and a bad pair in the SECOND group is caught against the SECOND group's file
+    [ok]  S22. a WELL-FORMED pair pointing at the WRONG FILE is caught (`r7423` ③'s class)
+    [ok]  S23. ...and every pair is counted, not one per row
+    [ok]  S24. a Lean path that is not a readable file fails AS UNVERIFIABLE, not as clean
+    [ok]  S25. ...and a path with NOTHING at it fails as absent, which is a different sentence
+    [ok]  S26. a row carrying neither cell is not charged and not cleared
+    [ok]  S27. a `receipt` path that does not exist fails
+    [ok]  S28. a `decl` cell that DOES NOT PARSE fails as a parse error, not as an empty claim
+    [ok]  S29. a NON-`DONE` row's pair is checked too (`r7423`: ALL the pairs)
+    [ok]  S30. ⛔ a row that is otherwise CLEAN does NOT pass when the record is UNANSWERABLE
+    [ok]  S31. ...and does not pass when the record says NOT-GREEN either
+    [ok]  S32. ...and a MISSING record is UNANSWERABLE rather than absent of condition
+    [ok]  S33+. the IN-RUN seed: ⑴ a well-formed pair pointing at the WRONG FILE fires as a dangling reference
+    [ok]  S33+. the IN-RUN seed: ⑵ ...and a CORRECTLY PAIRED MULTI-GROUP cell is silent, so the seed is not rigged to fire
+    [ok]  S33+. the IN-RUN seed: ⑶ a GREEN record clears the workflow condition
+    [ok]  S33+. the IN-RUN seed: ⑷ a NOT-GREEN record FAILS it
+    [ok]  S33+. the IN-RUN seed: ⑸ an UNANSWERABLE record FAILS it, and does not pass
+
+  37 assertion(s), 0 failing
