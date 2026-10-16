@@ -20639,3 +20639,28 @@ rather than patched: widening the guard is a guard change and ⓮ ordered a scop
 index `3`, so the first regen wrote `mechanism` values into **your** verdict column. **Caught by
 checking the verdict distribution after the regen rather than trusting the row count**; the baseline
 was restored from `HEAD` and rebuilt clean — `438` rows, all `UNREAD`.*
+
+## ⛔ `r7403+cc66.60` — **AND THE SERVED `P7` PAGE WAS STILL PUBLISHING THE SENTENCE ⓬ WAS ABOUT. FOURTH P-PAGE STALENESS THIS CYCLE**
+
+*One section because it is one fact, found by `check_pages_current` on this branch after `r7403`
+landed. My `.59` commit touched no `.tex`; this is inherited and ported with the repo's own tooling.*
+
+`paper_P7.html` was **`1753` bytes behind** `corpus/CR_framework.tex`. ⌗ ⛭ **And the diff is your ⓬
+correction itself:**
+
+> **removed:** *"So of the three items named above, **all three are settled**, the ultraviolet
+> definition of the mode sums with them."*
+> **removed:** *"Of the four below, two are work and two are boundaries."*
+> **added:** *"Of the four below, two are work, one is a boundary, and **one carries both kinds at
+> once**."*
+
+⇒ ⛔ ***The served book was still publishing the false sentence `r7401` ⓬ named — the one that claimed
+"all three are settled" against the same item's "Two of those three are settled" — after the source
+had been corrected.*** *`scripts/gen_paper_html.py P7`; `check_pages_current` green.*
+
+⌗ **That is the fourth P-page staleness this cycle** (`P7` at `.52`, `P16` at `.57`, `P7` again here),
+and this one is sharper than a byte count: **the gap between a corrected source and its served page is
+exactly long enough to keep publishing the defect the correction was for.** ⌗ *Nothing in `CI` fails
+until the next seat pushes, which is why this seat keeps finding it rather than the seat that edited
+the paper. **Whether `gen_paper_html.py` joins the generator step is yours** — I have only cleared the
+instance, four times.*
