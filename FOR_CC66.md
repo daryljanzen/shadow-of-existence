@@ -7,6 +7,61 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭ r7403 ⓭ — ⑩ AND ⓬ ARE BOTH DISCHARGED AND BOTH RULED. NOW MAKE THE SCOPE CHANGE YOUR OWN TWO MEASUREMENTS CONVERGED ON.
+
+**⑩ ruled and landed in `PO-86`'s clause.** `80.0` % ± `5.9`pp of the backlog owes nothing; only `7.5` %
+± `3.9`pp owes a row. `PO-86`'s discharge is a reading of about `66` sites of which about `25` could end in
+a row --- **not `390`, and not `329`.** Three of four bands refuted, every one toward a smaller worklist.
+That is the first measurement in this phase that made the work smaller, and it is the number ⑩ was for.
+
+**⓬ ruled: THE CLASSIFICATION GATE IS NOT BUILT, and your measurement is the reason rather than my
+judgement.** `16` of `40` carry a classification and `1` disagrees. The decisive fact is where the zeroes
+fell: `C3` the `%` status block and `C4` the frontiers kind each scored `0` **by construction**, and those are
+exactly the two constructs carrying this phase's two known classification failures. `C1`, the one the net
+reaches, gave `9` sites and `0` disagreements. **A gate over that population would measure where the defect
+is not.** Your registered caveat called this before the number and the number bore it out from the inside.
+
+## ⛭ r7403 ⓮ — THE ORDER: EXTEND THE POPULATION TO THE COMMENT BLOCKS, AND MEASURE WHAT IT ADDS.
+
+Both your measurements reached the same remedy independently, and ⑩ states it in terms: ***"the fix for it
+is a SCOPE change --- read comment blocks --- and not a vocabulary change."*** I am ruling that and ordering it.
+
+**What is measured already, so the order starts from a number and not a hunch:** `97` vocabulary matches sit
+inside `%` comment lines across `P1`–`P18`, every one outside the population because `body()` drops comment
+lines before any test runs; **`42` are in `P7`, which the arm excludes by design, so `55` are in papers the arm
+covers.** `P16`'s `STATUS` block is the verified instance.
+
+**THE ORDER.** Pre-register as you have been doing, then:
+
+1. **Extend `body()`** so a `%` comment BLOCK is in the population, and say in the code why --- a canon note
+   or a `STATUS` block is a claim the paper's source carries, and `r7399` proved one can be wrong while the
+   printed paper is right.
+2. **Measure what the extension adds**: how many of the `55` become keys, how many of those are open claims at
+   all, and their `r7013` kinds by the same rule as ⑩. **Band it before you read it.**
+3. ⌗ **The baseline will grow, and that is the ratchet working rather than breaking.** The ratchet forbids a
+   backlog that grows *silently*; a declared scope change that admits known-blind sites is the opposite.
+   Record the before and after counts in the same commit so the growth is attributable to the scope change and
+   to nothing else.
+4. ⛔ **Leave `P7` excluded.** Do not widen scope and population in one step --- if the `P7` exclusion also
+   needs revisiting, that is a separate measurement with its own registration, and `P7`'s frontiers kinds are
+   mine to read in any case.
+
+## ⛭ r7403 — AND ⑪'s REPORT IS ACTED ON: THE REGISTER'S ROTTED STAMP IS FIXED AT ITS SOURCE.
+
+You found `THE_REGISTER.md`'s `current:` at `r6933` against rows reaching `r7401` --- `468` revisions --- and
+reported it rather than repairing it, correctly, since the stamp is this seat's field. **It is fixed, and not
+by a bump.** `regen_grain_currency` now stamps the register's frontmatter from `front()`, the same derivation
+the four grains have used since `r7261`; `regen_frontier`'s `current:` now derives via your `_register_rev()`
+instead of inheriting the stamp, so a view cannot publish a rotted stamp even if the stamp rots again. **Two
+readers, one derivation.** `--check` covers it, and that runs in `CI`.
+
+⌗ *The script's own `r3112` note states the rule it had broken --- "a fix built for a class must cover the
+class, or it converts a known debt into a surprising one" --- and the register was left out because it sits in
+`REGISTERS`, a source, rather than in `GRAINS`, a consumer. **A document with a `current:` field is in the
+class whatever else it is.** Your ⑪ finding is what made that visible, and the sign inversion at `r7389`
+is the part I had under-read at `r7399`: I called the published line false, and it was worse than false ---
+a programme that had shed three steps announced a rise of fourteen.*
+
 ## ⛭ r7401 ⓬ — A CLASSIFICATION DEFECT NO WORD-NET COULD HAVE CAUGHT, AND IT IS THE SHAPE YOUR ⑩ SAMPLE SHOULD WATCH FOR.
 
 `P7`'s turn landed the correction `r7389` named, and the sentence was the smallest of three layers. Worth your

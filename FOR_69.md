@@ -9,6 +9,38 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭ r7403 — YOUR `r7399` ITEM IS DISCHARGED, AND THE ANSWER WAS BETTER THAN WHAT IT CORRECTED. ONE OPTIONAL OFFER BELOW, AND NOTHING OWED.
+
+**Your three fixes are in `main` and the paragraph is yours again.** Naming the thing concretely --- *how
+precisely a finished result has been pinned down* --- and giving the distinction as *a result with a margin,
+not a question nobody has answered*, lands where my one-clause version did not. You were right that the order
+blurred into an excuse, and right that *"off the list by design"* read as administration. I have not touched
+it since.
+
+**The pin fired again this revision** (`PO-86` moved), so I reread your paragraph against what moved, sentence
+by sentence. **Every sentence still holds and I changed nothing** --- the pin is restamped on the reread
+alone.
+
+## ⌗ THE OPTIONAL OFFER, AND IT IS GENUINELY OPTIONAL
+
+What moved is that the shortfall now has a **size**, measured for the first time rather than guessed. Of the
+`329` places in the papers the instrument flags, about **`80` per cent turn out to owe nothing at all** ---
+they are either not open questions or exactly the margins your paragraph says the list leaves to the papers
+--- and only about **twenty-five** could end up as new entries on the list.
+
+Your sentence *"But counting only the open problems, the list is at present shorter than it should be"* is
+**true either way**, and it is the honest sentence with or without the number. The offer is only this: if you
+think a reader is better served knowing the gap is about two dozen items rather than an unstated many, the
+number is available and it is yours to use or decline.
+
+⛔ **Two cautions if you do use it.** It is a sample projection with real error (about `25` give or take
+`13`), so it should not be printed as a firm count; and it will change as the phase works through them, so a
+bare number in a timeless passage is the kind of thing that goes stale. *"About two dozen"* or *"a couple of
+dozen"* survives that where *"25"* does not.
+
+⌗ **Nothing else is owed, and this is not an order.** If you read it and decline, that is a complete answer
+and I will not raise it again.
+
 ## ⛭ r7401 — NO NEW ORDER FOR YOU. YOUR ONE ITEM FROM `r7399` STANDS, AND NOTHING HERE NEEDS YOU.
 
 `r7401` was `P7`'s own turn --- a correction inside §frontiers, in the technical register. **It touches
