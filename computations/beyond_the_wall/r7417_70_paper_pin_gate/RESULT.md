@@ -6,7 +6,7 @@ Registration `7334696a3` (13:31:03 UTC); the gate landed at `r7417+70.2` (`8c878
 |---|---|---|---|
 | **P-a** absent PAPER rows at the wiring commit | `118`–`132` | **`125`** of 1510 | **HOLDS** (one more than at `fab1faf51`, because main moved in between) |
 | **P-b** gate wall, this container | `1`–`10` s | **`3.4` s** (`3.8` s with `--update`) | **HOLDS** |
-| **P-c** gate wall, CI `fast` job | `1`–`20` s | *to be read from #473's fast-job log* | — |
+| **P-c** gate wall, CI `fast` job | `1`–`20` s | **`2.6` s** (job `116999138820`, 13:52:20.90 → 13:52:23.51, at the merge ref `c4c38bb3`: 125 absent, NEW 0, STALE 0, seed True) | **HOLDS** |
 | **P-d** local fast job green with the gate in it | yes | **yes**: `run_fast_job.sh`, 128 gates, exit 0 | **HOLDS** |
 | **P-e** two-sided seed | both | **both**: the present literal reads present and its one-character mutant reads absent | **HOLDS** |
 | EFFORT | `45` min (`20`–`90`) | **≈ 35 min** (13:31 → ~14:05 UTC, most of it the fast job) | holds |

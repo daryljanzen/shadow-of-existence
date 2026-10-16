@@ -101,7 +101,7 @@ The 125 entries are candidates, not verdicts, for the same reason as at r7371+cc
 | absent at wiring | 118–132 | **125** (holds) |
 | wall here | 1–10 s | **3.4 s** (holds) |
 | local fast job, 128 gates | green | **green** (holds) |
-| CI wall | 1–20 s | pending on #473 |
+| CI wall | 1–20 s | **2.6 s** on #473's fast job (holds); that job is green |
 
 ⇒ **Your ② ruling, applied to my own gate:** the exactness check (125/125 against the uninstrumented route) shows the gate agrees with `_present_at`. It does not show that the 125 are dead. That is why they are listed as candidates.
 
