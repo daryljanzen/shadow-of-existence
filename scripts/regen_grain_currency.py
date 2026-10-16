@@ -50,6 +50,10 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), 
 REGISTERS = [os.path.join(ROOT, 'THE_LIVE_ARC.md'),
              os.path.join(ROOT, 'THE_REGISTER.md')]
 
+# r7403: live sources that carry a `current:` of their own.  Stamped from front() in main(), for the
+# reason set out there: a document with a `current:` field is in the class this script stamps.
+STAMPED_SOURCES = ['THE_REGISTER.md']
+
 # the grains that carry a currency block, and the baseline each declares from
 # ⛔⛭⛭ ** EXTENDED r3112 (`L-252`): THIS COVERED TWO OF THE FOUR GRAINS `check_grains` MEASURES. **
 # *This script's own docstring says these documents "will go stale every ~20 revisions FOREVER,
@@ -214,12 +218,44 @@ def main():
             st, op = since(base)
             print(f'  {g:<32} baseline r{base}: {len(st)} struck, {len(op)} opened since')
 
+    # ⛔⛭⛭ ** r7403: THE SOURCE WAS LEFT OUT OF THE CLASS THIS SCRIPT STAMPS, AND IT ROTTED 468
+    #   REVISIONS. **  `THE_REGISTER.md`'s own frontmatter read `current: r6933` while its rows
+    #   carried markers to `r7401`, and `regen_frontier.py` was copying that stamp into
+    #   `THE_FRONTIER.md`'s `current:` -- so a rotted hand field was being published in a generated
+    #   view.  Found by `cc66` at `r7399`+⑪ while building the step-delta fix, and reported rather
+    #   than repaired there because the stamp is the register-holder's field.
+    #   ⇒ *This script's own r3112 note states the rule it then broke here: "a fix built for a class
+    #     must cover the class, or it converts a known debt into a surprising one -- which is worse,
+    #     because nobody is watching the half that was fixed."*  The grains were stamped from
+    #     `front()` at r7261 and the register that DEFINES `front()` was not, because it sits in
+    #     REGISTERS (a source) rather than in GRAINS (a consumer).  A document with a `current:`
+    #     field is in the class whatever else it is.
+    #   ⌗ THE_LIVE_ARC is deliberately NOT here: it closed at r3001 and its `current:
+    #     r2785+c54.223` is the true currency of a closed record, not a stale stamp.
+    for s in STAMPED_SOURCES:
+        p = os.path.join(ROOT, s)
+        if not os.path.exists(p):
+            continue
+        t = open(p, encoding='utf-8', errors='replace').read()
+        if not t.startswith('---\n'):
+            continue
+        fm_end = t.index('\n---\n', 4)
+        out = re.sub(r'^current:.*$', f'current: r{front()}', t[:fm_end], count=1,
+                     flags=re.M) + t[fm_end:]
+        if checking:
+            if out != t:
+                bad.append(s)
+        else:
+            open(p, 'w', encoding='utf-8').write(out)
+            print(f'  {s:<32} frontmatter stamped current: r{front()} (derived from its own rows)')
+
     if checking:
         if bad:
             print(f'  [FAIL] grain currency block is stale in: {", ".join(bad)}')
             print('     Run: python3 scripts/regen_grain_currency.py')
             return 1
-        print(f'  grain currency blocks match the register ({len(GRAINS)} grains)')
+        print(f'  grain currency blocks match the register '
+              f'({len(GRAINS)} grains, {len(STAMPED_SOURCES)} stamped source)')
     return 0
 
 
