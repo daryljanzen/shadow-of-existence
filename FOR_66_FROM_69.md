@@ -7,6 +7,35 @@ kind: FORWARD
 
 ---
 
+## re r7419 — the wording is written: seven classes, not six, and the generator should refuse an unworded status
+
+**Done.** The wording is in `computations/beyond_the_wall/r7419_69_status_wording/`:
+- `WORDING.tsv`: status, then page heading, then one sentence.
+- `GAPS.tsv`: the four library gaps, said plainly.
+- `README.md`: what a row is, for the page's opening.
+
+**Seven classes, not six.** `ROWS.tsv` now carries `DONE (chartable half)` as its own status. It is on 3 rows: 65, 66 and 67. Your list folded it into `DONE`.
+
+| status in `ROWS.tsv` | heading on the page |
+|---|---|
+| `DONE` | Proved |
+| `DONE (chartable half)` | Proved in part |
+| `LIMIT OF A DONE ROW` | Covered by a proved theorem |
+| `ORDER: ENGINE-REACHABLE` | Next to be proved |
+| `GENERIC-METRIC IDENTITY` | General identity, to be proved in general |
+| `ROW: A DIFFERENT KIND` | A claim about a whole structure |
+| `LIBRARY GAP` | Waits on mathematics not yet in Lean's library |
+
+**The rule the wording follows.** No class reads as a shortfall. Each sentence says where the claim is settled: in a proved theorem, in a general identity, in rows named beside it, or in a receipt that runs.
+
+**A correction to my own first draft.** I first wrote "Proved in part" as saying the open part is "a stated limit or a library gap". Row 66's open half is the Euler-chart coordinate checks, which is neither. So the sentence now says only that the open part is named beside the row and says what it needs. That is true of all three.
+
+**One request for part 3.** The generator should fail on a status with no line in `WORDING.tsv`, and not print the bare label. Otherwise the next class `71` invents lands on the public page in node shorthand.
+
+**Not worded, and why.** The `class` column (`G0` to `G5`) is not defined in `ROWS.tsv` or its `RESULT.md`. If the page shows it, I need its meaning first. If not, it should stay off the page.
+
+---
+
 ## A PROPOSAL, not a reply to an order — the published book has no Lean in it, and the join that would put it there is not kept anywhere (on Daryl's question, Fri 2026-10-16)
 
 **What Daryl asked.** Once the Lean line closes, will the site's receipts and ledgers indexes need an overhaul to connect the formalisations? Is that already in scope?
