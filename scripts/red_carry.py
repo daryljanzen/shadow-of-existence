@@ -172,20 +172,25 @@ def carried(ledger, lines, which):
     return out
 
 
-def apply(ledger, branch, which, ran, red, sha, run, gone, relabelled=None):
+def apply(ledger, branch, which, ran, red, sha, run, gone, relabelled=None, unmeasured=()):
     """this push's delta: every receipt it RAN is cleared unless red; every red is added (keeping the
     first push it was seen at); a receipt no longer registered leaves, by name.
     ⛭ r7281+70.1: when `red` is a MAPPING receipt -> labels (the `suite` class), the failing gates' labels
     are written beside `since`/`run` as `gates`, and a receipt already carried and red again is told apart:
     `relabelled` lists (receipt, old labels or None, new labels) whose labels CHANGED -- a gate newly red in
     an already-carried receipt is the `73`rd member's case, which the two-field entry had nowhere to write.
-    Pass a list as `relabelled` to receive (receipt, old labels or None, new labels) for each."""
+    Pass a list as `relabelled` to receive (receipt, old labels or None, new labels) for each.
+    ⛭ r7422, on r7417 ①: `unmeasured` names receipts the run NEVER PROBED.  They are carried -- so the
+    union re-probes them -- and written with `unmeasured: True`, which is the ledger's own optional-field
+    idiom (`gates` is the other) rather than a schema change.  **An entry that gains a measurement loses
+    the mark**, so the field is set and cleared on every push and never goes stale."""
     cur = ledger.setdefault(branch, {}).setdefault(which, {})
     labels = red if isinstance(red, dict) else {}
     added, cleared, kept = [], [], []
     relabelled = relabelled if relabelled is not None else []
+    unmeasured = set(unmeasured)
     for rec in sorted(ran):
-        if rec in red:
+        if rec in red or rec in unmeasured:
             new = labels.get(rec)
             if rec in cur:
                 kept.append(rec)
@@ -198,6 +203,11 @@ def apply(ledger, branch, which, ran, red, sha, run, gone, relabelled=None):
                 if new is not None:
                     cur[rec]['gates'] = new
                 added.append(rec)
+            # set and cleared every push, so a receipt that gains a measurement loses the mark
+            if rec in unmeasured:
+                cur[rec]['unmeasured'] = True
+            else:
+                cur[rec].pop('unmeasured', None)
         elif rec in cur:
             del cur[rec]
             cleared.append(rec)
@@ -285,9 +295,27 @@ def reds_suite(log):
 
 
 def reds_tolerance(dirs, root, scope):
+    """(red, unmeasured) -- the two states this class can be in, told apart.
+
+    ⛔⛭⛭⛭ r7422, on r7417 ①: ** THIS FUNCTION USED TO RETURN ONE SET, AND A RECEIPT THE JOB NEVER
+    REACHED WENT INTO IT BESIDE ONE THAT TIMED OUT. **  *So the ledger filed the absence of its own
+    measurement as a property of the thing measured, and nothing in it told the two apart --
+    `r7420`'s correction found that one step short of the finding, and `r7417` named it the FOURTH
+    GUISE of one defect: an instrument measuring an object adjacent to the one asserted, beside
+    `r7403`'s label rule, `r7405`'s detector rule and `r7411`'s copied-list rule.*
+      ⌈ *The ground, from `r7420` `③`: two adjacent heads, the scope identical at `48` receipts, filed
+        `2` against `20`, differing by ONE added markdown file.  **A `PREDICTION.md` can neither time
+        out eighteen receipts nor fail to probe them, so the ledger could not say which happened.***
+      ⌊ ⇒ *** A RECEIPT NEVER PROBED IS NOT A RED RECEIPT.  IT IS AN UNMEASURED ONE. ***  *Distinct
+        from red and distinct from pass: still carried, so the union re-probes it next run, and
+        MARKED, so no reader can take non-coverage for a verdict.*
+
+    ⌗ The three sources stay separate in what they mean, and only the third is reclassified: a
+    `FLAG`/`FLIP` is a finding about NUMBERS, a `not_swept` is a finding about the COVERAGE OF A PAIR,
+    and never-probed is the ABSENCE OF A MEASUREMENT.  The first two remain red."""
     st = _mod('sweep_tolerances')
     key = {r.replace('/', '_'): r for r in scope}
-    red, a = set(), dirs[0]
+    red, unmeasured, a = set(), set(), dirs[0]
     for b in dirs[1:]:
         if not (os.path.isdir(a) and os.path.isdir(b)):
             return None
@@ -296,11 +324,25 @@ def reds_tolerance(dirs, root, scope):
         for r in flags:
             if r not in judged:
                 red.add(r['receipt'])
-        red.update(n for n, _ in st.not_swept(a, b))
+        # ⛔⛭⛭ r7422: `not_swept` CONFLATES THE TWO STATES ITSELF, and its own reason string tells
+        #   them apart -- it reports "every receipt whose probe did not run to exit 0 on BOTH builds"
+        #   with `rc=` and ` timeout` beside each.  *A probe that RAN and timed out or exited non-zero
+        #   is a measured property of the receipt; `rc=missing` is no log at all, which is the run not
+        #   reaching it.*  ⇒ Split on the instrument's own words rather than on a guess of mine: this
+        #   seat's first reading of `not_swept` called it uniformly red, and the seed below refuted that.
+        for _n, _why in st.not_swept(a, b):
+            parts = [x.strip() for x in _why.split(',') if x.strip()]
+            if parts and all(x.endswith('rc=missing') for x in parts):
+                unmeasured.add(_n)
+            else:
+                red.add(_n)
     for d in dirs:
         have = {os.path.basename(p)[:-5] for p in os.listdir(d) if p.endswith('.json')} if os.path.isdir(d) else set()
-        red.update(k for k in key if k not in have)              # never probed at all
-    return {key.get(r, key.get(r + '.py', r)) for r in red}
+        unmeasured.update(k for k in key if k not in have)        # never probed at all
+    name = (lambda r: key.get(r, key.get(r + '.py', r)))
+    red = {name(r) for r in red}
+    # a receipt that is BOTH flagged and missing a log somewhere is red: a finding outranks an absence.
+    return red, {name(r) for r in unmeasured} - red
 
 
 def reds_reads(trace, root, scope):
@@ -336,6 +378,8 @@ def do_union(root, which, path, remote):
     for r in sorted(carry):
         e = carry[r]
         print(f'    carried since {e["since"][:10]} on {e["line"]}: {r}'
+              + ('  -- NEVER PROBED: the run did not reach it, so this is an absent measurement '
+                 'and not a verdict (r7422)' if e.get('unmeasured') else '')
               + (f'  -- gate(s) {e["gates"]}' if e.get('gates') else
                  '  -- the run named no gate' if e.get('gates') == [] else '')
               + ('  (NOT REGISTERED here -- cannot run)' if r in absent else ''), file=sys.stderr)
@@ -361,16 +405,29 @@ def do_record(root, which, path, outcome, evidence, remote):
               f'write it (its scope is the whole PR, asked again on every PR event)', file=sys.stderr)
         return 0
     ran = [l.strip() for l in open(path) if l.strip()] if os.path.exists(path) else []
+    # ⛭ r7422, on r7417 ①: the `tolerance` evidence is a PAIR -- what is red, and what was NEVER
+    #   PROBED.  The second is not a verdict about the receipt, so it is carried under its own mark and
+    #   counted on its own line, every run, green ones included: *a silence that prints nothing is the
+    #   defect this revision was ordered to remove.*
+    unmeasured = set()
     if outcome == 'success':
         red, how = set(), 'the run passed'
+        if which == 'tolerance':
+            ev = evidence()
+            if ev is not None:
+                _r, unmeasured = ev
+                red = set()            # a green run's verdict stands; only its COVERAGE is reported
     else:
         red = evidence()
-        if not red:
+        if which == 'tolerance' and red is not None:
+            red, unmeasured = red
+        if not red and not unmeasured:
             red = {r: [] for r in ran} if which == 'suite' else set(ran)
             how = (f'the job ended "{outcome}" with no receipt it can name -- '
                    f'the WHOLE scope of {len(ran)} is carried')
         else:
-            how = f'{len(red)} named red'
+            how = (f'{len(red)} named red'
+                   + (f', {len(unmeasured)} NEVER PROBED' if unmeasured else ''))
     regs = set(_mod('receipt_scope').registered(root))
     sha, run = os.environ.get('GITHUB_SHA', 'HEAD'), (
         f'{os.environ.get("GITHUB_SERVER_URL", "")}/{os.environ.get("GITHUB_REPOSITORY", "")}'
@@ -379,11 +436,20 @@ def do_record(root, which, path, outcome, evidence, remote):
         ledger, tip = fetch(root, remote)
         gone = {r for r in (ledger.get(branch, {}).get(which) or {}) if r not in regs}
         relabelled = []
-        added, cleared, kept, removed = apply(ledger, branch, which, ran, red, sha, run, gone, relabelled)
+        added, cleared, kept, removed = apply(ledger, branch, which, ran, red, sha, run, gone,
+                                              relabelled, unmeasured)
         still = sorted((ledger.get(branch, {}).get(which) or {}))
         print(f'  RECORD ({which}, {branch} @ {sha[:10]}): ran {len(ran)}, {how}; '
               f'+{len(added)} carried, {len(cleared)} cleared by a green, {len(kept)} still red, '
               f'{len(removed)} no longer registered; {len(still)} carried after this push', file=sys.stderr)
+        # ⛭ r7422: printed EVERY run, including a green one and including zero, because the whole
+        #   defect was that non-coverage left no trace to read.
+        if which == 'tolerance':
+            print(f'  NEVER PROBED ({which}): {len(unmeasured)} of the {len(ran)} in scope -- the run '
+                  f'did not reach them, which is NOT a verdict about them; carried under '
+                  f'`unmeasured` so the next union re-probes them', file=sys.stderr)
+            for r in sorted(unmeasured):
+                print(f'    ~ never probed: {r}', file=sys.stderr)
         new_gate = {r for r, o, n in relabelled}
         for tag, xs in (('+ carried', added), ('- cleared', cleared),
                         ('= still red', [r for r in kept if r not in new_gate]),
@@ -590,7 +656,10 @@ def silenced(root, n, cands, work, index=None, timeout=600):
             for tag, extra in (('A', []), ('B', ['--threads', '4']), ('C', ['--threads', '2', '--coretype', 'Prescott'])):
                 subprocess.run([sys.executable, tol, '--root', work, '--probe', os.path.join(d, tag), '--from', lst,
                                 *extra], capture_output=True, text=True)
-            red = reds_tolerance([os.path.join(d, t) for t in 'ABC'], work, [rec])
+            _rt = reds_tolerance([os.path.join(d, t) for t in 'ABC'], work, [rec])
+            # r7422: a pair now.  An UNMEASURED receipt is not red here either -- a stride that never
+            # probed it says nothing about whether it is silenced.
+            red = None if _rt is None else _rt[0]
             return 'red' if red else 'green'
         finally:
             shutil.rmtree(d, ignore_errors=True)
@@ -726,6 +795,7 @@ def seed():
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     res.update(seed_labels())
+    res.update(seed_unmeasured())
     for k, v in res.items():
         print(f'    [{"ok" if v else "FAIL"}]  {k}')
     ok = all(res.values())
@@ -795,6 +865,69 @@ def seed_labels():
     L3 = {}
     apply(L3, 'main', 'tolerance', {'receipts/A/R1.py'}, {'receipts/A/R1.py'}, 's6', 'x', set())
     res['L9. a class whose evidence is a set writes no field'] = 'gates' not in L3['main']['tolerance']['receipts/A/R1.py']
+    return {k: bool(v) for k, v in res.items()}
+
+
+def seed_unmeasured():
+    """⛭⛭⛭ r7422, on `r7417` ①: ** THE THIRD STATE, ON CONSTRUCTED PROBE DIRS -- a receipt that
+    genuinely TIMED OUT must read red, and one that was genuinely NEVER PROBED must read unmeasured,
+    from the same call. **
+
+    *This is the arm `PREDICTION.md` registers as the whole claim: `r7420`'s correction showed the two
+    were indistinguishable in the ledger, so a build that does not separate them here has not done what
+    was ordered, whatever else it prints.*  ⌗ The dirs are built rather than mocked: a probe log is a
+    JSON file per receipt, so a receipt with no log in one build is one the run never reached."""
+    st = _mod('sweep_tolerances')
+    res = {}
+    tmp = tempfile.mkdtemp(prefix='r7422_seed_')
+    try:
+        root = os.path.join(tmp, 'repo')
+        os.makedirs(os.path.join(root, 'receipts', 'A'), exist_ok=True)
+        timed = 'receipts/A/T1.py'          # probed in BOTH builds, and it timed out
+        never = 'receipts/A/N1.py'          # a log in the first build, none in the second
+        clean = 'receipts/A/C1.py'          # probed in both, no finding
+        a, b = os.path.join(tmp, 'tA'), os.path.join(tmp, 'tB')
+        os.makedirs(a, exist_ok=True)
+        os.makedirs(b, exist_ok=True)
+
+        def log(d, rel, **kw):
+            rec = {'receipt': os.path.join(root, rel), 'rc': 0, 'sites': {}, 'timeout': None}
+            rec.update(kw)
+            with open(os.path.join(d, rel.replace('/', '_') + '.json'), 'w') as fh:
+                json.dump(rec, fh)
+
+        for d in (a, b):
+            log(d, timed, rc=None, timeout=True)
+            log(d, clean)
+        log(a, never)                        # present in A, absent in B -> never probed by B
+
+        out = reds_tolerance([a, b], root, [timed, never, clean])
+        res['U0. the evidence is a PAIR and not one set'] = isinstance(out, tuple) and len(out) == 2
+        red, unmeasured = out if res['U0. the evidence is a PAIR and not one set'] else (set(), set())
+        res['U1. a receipt that TIMED OUT reads red'] = timed in red
+        res['U2. ...and is NOT reported unmeasured'] = timed not in unmeasured
+        res['U3. a receipt NEVER PROBED reads unmeasured'] = never in unmeasured
+        res['U4. ...and is NOT reported red -- the defect r7417 ① ordered removed'] = never not in red
+        res['U5. a receipt probed everywhere with no finding is in neither'] = \
+            clean not in red and clean not in unmeasured
+
+        # the ledger: carried under its own mark, and the mark clears when a measurement arrives
+        L = {}
+        apply(L, 'main', 'tolerance', [timed, never, clean], red, 's1', 'x', set(), None, unmeasured)
+        ent = L['main']['tolerance']
+        res['U6. an unmeasured receipt is CARRIED, so the next union re-probes it'] = never in ent
+        res['U7. ...marked `unmeasured`, so a reader cannot take it for a verdict'] = \
+            ent[never].get('unmeasured') is True
+        res['U8. a red receipt carries NO unmeasured mark'] = 'unmeasured' not in ent[timed]
+        log(b, never)                        # the measurement arrives
+        red2, unmeasured2 = reds_tolerance([a, b], root, [timed, never, clean])
+        apply(L, 'main', 'tolerance', [timed, never, clean], red2, 's2', 'x', set(), None, unmeasured2)
+        res['U9. the mark is CLEARED when the receipt is probed, so it never goes stale'] = \
+            never not in (L.get('main', {}).get('tolerance') or {})
+        res['U10. and the class still writes no `gates` field (L9 unbroken)'] = \
+            'gates' not in (L.get('main', {}).get('tolerance') or {}).get(timed, {})
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
     return {k: bool(v) for k, v in res.items()}
 
 
