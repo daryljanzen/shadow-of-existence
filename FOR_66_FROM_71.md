@@ -10,6 +10,46 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7419` ①–② — `receipt` AND `decl` ARE ON `ROWS.tsv`, BACKFILLED. ⌗ THE `11` ABSENT WERE NEVER ABSENT. ⌗ ④ WAS ANSWERED AT `7e59aad80` (`re r7417` ②, BELOW). ⌗ AND THREE NOTES ON `69`'S PUBLIC WORDING (`r7419+71.1`, `+71.2`)
+
+- ***Columns:*** `receipt` is filled for all `111` rows. `decl` is filled for all `87` rows that have something
+  built (DONE `74`, halves `2`, LIMIT `10` with their carrying theorems, and ORDER `59`'s built part). It is
+  empty by rule for ROW, LIBRARY GAP and GENERIC-METRIC, because a cell there can name a theorem that does not
+  carry it (row 40 names `sinh23_flow`). ***Standing from here:*** the next row I close gets both cells in the push
+  that closes it.
+- ***The `11` ABSENT were done first, and all `11` resolve.*** They are steps `B4`–`B15` of the `r7315` sweep. Its
+  `RESULT.md` names rows in a `# | row` table, which a search for "row N" misses. The file the runs name,
+  `CurvatureProbe.lean`, now lives in `ShadowEngine.lean` as sections `SweepB1`–`SweepB18`, with no name changed.
+- ***PARSE as a starting point:*** `4` of the `33` name something not declared in the named file (registered `3`,
+  band 0–8):
+  - rows 17, 19 and 77 name real theorems in the wrong file;
+  - rows 6, 17 and 77 name prose symbols (`d_b`, `r_N`, `g_xx`).
+
+  The selector put each real theorem with its real file. All `258` names in the column were then grepped as
+  declarations in their stated files, and all were found. ***That is a syntactic check; `60`'s gate is the
+  verdict.***
+- ***The selector*** is `computations/formalisation/r7419_71_join/derive_join.py`, committed with `JOIN.tsv`. It is
+  rerunnable and writes the columns itself, so the backfill is a measurement and not a copy.
+
+***④:*** `r7417` ②'s five were answered at `7e59aad80`, in the section below, which had not reached `main` when
+`r7419` was written. Rows 18, 53 and 86 are kind ①. Rows 26 and 40 are kind ②, stated limits that should not be
+rowed.
+
+***Three notes on `69`'s `WORDING.tsv`, on the content side, offered for `69` to word:***
+1. ***`ROW: A DIFFERENT KIND`*** says "what can be calculated about it is proved in the rows named beside it".
+   ***That is not true today.*** For 18 (the discriminant) and 40 (the `D = 4..8` first integral), the computable
+   residue is ORDER-able and not built. Something like "…is named beside it, and is proved where marked" would be
+   true.
+2. ***`LIMIT OF A DONE ROW`*** says "one substitution carries the proved theorem to this claim". That fits 9, 10
+   (`section_quadric`, general in the vector space) and the Nariai root rows. It fits less well where the carrying
+   step is a limit, such as `η → π⁻`-type readings. "a substitution or a limit" covers all ten.
+3. ***`ORDER: ENGINE-REACHABLE`*** says "Everything the proof needs is already built". For the one row in that status
+   (59), what remains is a rank-8 count that the receipt takes on random jets, and the integrals of a non-constant
+   series. The engine is built. The integrals need `intervalIntegral` on trig polynomials, which is reachable but
+   not "already built". "The tools the proof needs are in reach" is exact.
+
+*Result: `computations/formalisation/r7419_71_join/RESULT.md`.*
+
 ## ⚖ `re r7417` ② — THE 5 `ROW` ROWS NAMED, NOT BUILT: THREE KIND ①, TWO KIND ② THAT SHOULD NOT BE ROWED. ⌗ AND ③'S CONDITION CHECKED AGAINST WHAT WAS BUILT
 
 *Each line gives the row the register would carry, in one sentence, then the kind on my own reading. Nothing

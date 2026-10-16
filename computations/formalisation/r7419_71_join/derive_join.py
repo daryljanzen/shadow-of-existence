@@ -1,0 +1,179 @@
+#!/usr/bin/env python3
+"""r7419+71 — the selector for ROWS.tsv's `receipt` and `decl` columns.
+
+Indexes every declaration in computations/formalisation/lean (theorem, lemma, def, abbrev, structure,
+instance, inductive), with its namespace, by file. For each row, candidate names come from
+  (1) the row's own `what it needs next` cell,
+  (2) JOIN_SCOPE.tsv's identifiers_named (66's measurement at r7419),
+  (3) SWEEP_MAP below: the r7315 sweep's row -> step B<k> table, whose new declarations per step are
+      read off consecutive PROBE_RUN_B<k>.txt files (the 11 rows JOIN_SCOPE marks ABSENT are all here).
+A candidate enters `decl` ONLY if it is declared in the index; a name declared in several files is
+written with the file the row's own cell names if it names one, else every file that declares it is
+reported for a decision (printed, not guessed).
+Writes JOIN.tsv (index, receipt, decl, sources, unresolved) beside this file. Run from the repo root.
+"""
+import csv, re, sys, pathlib, collections
+
+ROOT = pathlib.Path('.')
+F = ROOT / 'computations/formalisation'
+LEAN = F / 'lean'
+HERE = F / 'r7419_71_join'
+
+DECL = re.compile(r'^\s*(?:@\[[^\]]*\]\s*)?(?:private\s+|protected\s+)?(?:noncomputable\s+)?'
+                  r'(theorem|lemma|def|abbrev|structure|instance|inductive|class)\s+([^\s:({\[]+)')
+NS = re.compile(r'^\s*namespace\s+(\S+)')
+END = re.compile(r'^\s*end\s+(\S+)')
+SEC = re.compile(r'^\s*section\b(?:\s+(\S+))?')
+
+
+def index():
+    idx = collections.defaultdict(set)          # short name -> {(file, fullname)}
+    files = [p for p in LEAN.rglob('*.lean') if '.lake' not in p.parts]
+    for p in files:
+        stack = []
+        for line in p.read_text(encoding='utf-8').splitlines():
+            m = NS.match(line)
+            if m:
+                stack.append(('ns', m.group(1))); continue
+            m = SEC.match(line)
+            if m and not line.strip().startswith('section_'):
+                stack.append(('sec', m.group(1) or '')); continue
+            m = END.match(line)
+            if m:
+                for i in range(len(stack) - 1, -1, -1):
+                    if stack[i][1] == m.group(1):
+                        del stack[i:]; break
+                continue
+            if line.strip() == 'end' and stack:
+                stack.pop(); continue
+            m = DECL.match(line)
+            if m:
+                name = m.group(2)
+                ns = '.'.join(s[1] for s in stack if s[0] == 'ns')
+                full = f'{ns}.{name}' if ns and not name.startswith('_root_') else name
+                rel = str(p.relative_to(LEAN))
+                idx[name.split('.')[-1]].add((rel, full))
+    return idx
+
+
+# r7315_71_sweep/RESULT.md's `# | row` table; the declarations are those new at each step's PROBE_RUN.
+SWEEP_STEPS = {99: 1, 109: 2, 11: 3, 34: 4, 36: 5, 103: 6, 32: 7, 38: 8, 56: 9, 44: 10, 78: 11, 55: 12,
+               8: 13, 76: 14, 22: 15, 4: 16, 5: 17}
+
+
+# Rows no automatic source reaches, each read by hand from the file cited.
+MANUAL = {
+    52: (['open_leaf_curv', 'horo_on_hyperboloid'], 'r7323_71_instances/PROBE_RUN_R52.txt; CurvatureInstances.lean "Row 52"'),
+    75: (['gowdy_tz_field'], 'r7323_71_instances/PROBE_RUN_R75.txt; CurvatureInstances.lean "Row 75"'),
+    72: (['frw_closed'], 'r7335_70_row72/PROBE_RUN_FRW.txt; SecondSeatFRW.lean "Row 72"'),
+    99: (['two_surface_gravities'], 'r7315_71_sweep RESULT table step B1; ShadowEngine.lean section SweepB1'),
+}
+
+
+def sweep_map():
+    out, prev = {}, set()
+    for k in range(1, 18):
+        txt = (F / f'r7315_71_sweep/PROBE_RUN_B{k}.txt').read_text(encoding='utf-8')
+        cur = set(re.findall(r"'ShadowProbe\.([^']+)'", txt))
+        new = cur - prev
+        prev = cur
+        row = [r for r, s in SWEEP_STEPS.items() if s == k][0]
+        out[row] = sorted(new) if k > 1 else []   # B1's run prints the whole earlier probe; read by hand
+    return out
+
+
+def main(join_scope):
+    idx = index()
+    rows = list(csv.reader(open(F / 'r7325_71_inventory/ROWS.tsv', encoding='utf-8'), delimiter='\t'))
+    head, body = rows[0], [r for r in rows[1:] if len(r) > 3 and r[0].strip().isdigit()]
+    readings = {r[0]: r[1] for r in csv.reader(open(F / 'r7285_71_restate/READINGS.tsv', encoding='utf-8'),
+                                                  delimiter='\t') if r and r[0].isdigit()}
+    js = {}
+    for r in csv.reader(open(join_scope, encoding='utf-8'), delimiter='\t'):
+        if r and r[0].isdigit():
+            js[r[0]] = r
+    sw = sweep_map()
+    out = []
+    for r in body:
+        i, status, cell = r[0], r[2], r[3]
+        files_named = set(re.findall(r'probes/[A-Za-z0-9_]+\.lean', cell))
+        cands = collections.OrderedDict()
+        for tok in re.findall(r"[A-Za-z_][A-Za-z0-9_'₀-₉]*", cell):
+            if tok in idx and '_' in tok and len(tok) > 3:
+                cands.setdefault(tok, 'cell')
+        if i in js:
+            for tok in js[i][5].split(';'):
+                if tok and tok != '-':
+                    cands.setdefault(tok, 'join_scope')
+        for tok in sw.get(int(i), []):
+            cands.setdefault(tok, 'sweep')
+        for tok in MANUAL.get(int(i), ([], ''))[0]:
+            cands.setdefault(tok, 'manual')
+        decl, unres = [], []
+        for tok, src in cands.items():
+            hits = idx.get(tok, set())
+            if not hits:
+                unres.append(f'{tok}(not declared)'); continue
+            pick = [h for h in hits if f'probes/{pathlib.Path(h[0]).name}' in files_named or h[0] in files_named]
+            if not pick:
+                pick = sorted(hits) if len(hits) == 1 else []
+            if not pick:
+                unres.append(f'{tok}(in {len(hits)} files: ' + ','.join(sorted(h[0] for h in hits)) + ')'); continue
+            for f_, full in pick:
+                decl.append(f'{full} @ {f_}')
+        out.append([i, status, readings.get(i, ''), '; '.join(decl), ','.join(sorted(set(cands.values()))),
+                    '; '.join(unres)])
+    with open(HERE / 'JOIN.tsv', 'w', encoding='utf-8', newline='') as fh:
+        w = csv.writer(fh, delimiter='\t', lineterminator='\n')
+        w.writerow(['index', 'status', 'receipt', 'decl', 'sources', 'unresolved'])
+        w.writerows(out)
+    # the registered PARSE score: an identifier named with a file, NOT declared in that file
+    bad = []
+    for i, r in js.items():
+        if r[3] != 'PARSE':
+            continue
+        named = [f for f in r[4].split(';') if f and f != '-']
+        miss = [t for t in r[5].split(';') if t and t != '-'
+                and not any(h[0] == f for h in idx.get(t, set()) for f in named)]
+        if miss:
+            bad.append((i, miss))
+    print(f'PARSE rows: {sum(1 for r in js.values() if r[3] == "PARSE")}; naming an identifier not declared in the named file: {len(bad)}')
+    for i, m in bad:
+        print(f'   row {i}: {m}')
+    absent = [i for i, r in js.items() if r[3] == 'ABSENT']
+    print(f'ABSENT rows: {len(absent)}; resolved to declared names: {sum(1 for o in out if o[0] in absent and o[3])}')
+    print(f'{len(out)} rows; with decl {sum(1 for o in out if o[3])}; with unresolved {sum(1 for o in out if o[5])}')
+
+
+BUILT = ('DONE', 'LIMIT OF A DONE ROW', 'ORDER: ENGINE-REACHABLE')
+
+
+def write_rows():
+    """Lift JOIN.tsv into ROWS.tsv's two new columns. `receipt` for every row; `decl` only where something is
+    built (DONE, its halves, LIMIT's carrying theorems, the ORDER row's built part) -- never for ROW / LIBRARY GAP /
+    GENERIC-METRIC, whose cells may NAME a theorem without being carried by it. Grouped by file, repo-relative."""
+    join = {r[0]: r for r in csv.reader(open(HERE / 'JOIN.tsv', encoding='utf-8'), delimiter='\t')}
+    path = F / 'r7325_71_inventory/ROWS.tsv'
+    lines = path.read_text(encoding='utf-8').split('\n')
+    out = []
+    for n, line in enumerate(lines):
+        f = line.split('\t')
+        if n == 0:
+            out.append('\t'.join(f[:5] + ['receipt', 'decl'])); continue
+        if len(f) < 5 or not f[0].isdigit():
+            out.append(line); continue
+        j = join[f[0]]
+        decl = ''
+        if f[2].startswith(BUILT) and j[3]:
+            byfile = collections.OrderedDict()
+            for d in j[3].split('; '):
+                name, f_ = d.split(' @ ')
+                byfile.setdefault(f_, []).append(name)
+            decl = ' | '.join(f'computations/formalisation/lean/{f_}: ' + ', '.join(ns) for f_, ns in byfile.items())
+        out.append('\t'.join(f[:5] + [j[2], decl]))
+    path.write_text('\n'.join(out), encoding='utf-8')
+
+if __name__ == '__main__':
+    main(sys.argv[1])
+    if '--write' in sys.argv:
+        write_rows()
