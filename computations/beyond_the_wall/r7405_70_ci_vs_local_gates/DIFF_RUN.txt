@@ -1,0 +1,24 @@
+job             local?                       command
+fast            -- NONE --                   python3 scripts/lint_assertions.py  
+fast            -- NONE --                   python3 scripts/sweep_vacuous_pins.py  
+compile         sweep_gates.sh + run_fast_job.sh python3 corpus/check_compile.py  [schedule/dispatch only]
+receipts        -- NONE --                   python3 scripts/run_all_receipts.py --jobs 4 --timeout 600  [schedule/dispatch only]
+receipts        sweep_gates.sh               python3 corpus/check_receipts_run.py  [schedule/dispatch only]
+index           -- NONE --                   python3 scripts/sweep_runner_reads.py --out "$RUNNER_TEMP/trace"  [schedule/dispatch only]
+index           -- NONE --                   python3 scripts/receipt_scope.py --emit "$RUNNER_TEMP/trace" --index "$RUNNER_TEMP/READ_INDEX.json"  [schedule/dispatch only]
+backstop        -- NONE --                   python3 scripts/sweep_vacuous_pins.py  [schedule/dispatch only]
+backstop        -- NONE --                   python3 scripts/sweep_runner_reads.py --out "$RUNNER_TEMP/trace"  [schedule/dispatch only]
+backstop        -- NONE --                   python3 scripts/receipt_scope.py --emit "$RUNNER_TEMP/trace" --index "$RUNNER_TEMP/READ_INDEX.json"  [schedule/dispatch only]
+backstop        sweep_gates.sh + run_fast_job.sh python3 corpus/check_env_fingerprint.py  [schedule/dispatch only]
+backstop        -- NONE --                   python3 scripts/sweep_tolerances.py --probe "$T/tA"  [schedule/dispatch only]
+backstop        sweep_gates.sh               python3 corpus/check_tilt_pins.py  [schedule/dispatch only]
+backstop        -- NONE --                   python3 scripts/mutate_assertions.py --rounding-boundary  [schedule/dispatch only]
+scope-suite     -- NONE --                   python3 scripts/receipt_scope.py --ci --scope suite --list "$RUNNER_TEMP/scope.txt"  
+scope-suite     -- NONE --                   python3 scripts/red_carry.py --union suite --list "$RUNNER_TEMP/scope.txt"  
+scope-suite     -- NONE --                   python3 scripts/run_all_receipts.py --from "$RUNNER_TEMP/scope.txt" --jobs 4 --timeout 600 \  
+scope-reads     -- NONE --                   python3 scripts/receipt_scope.py --ci --scope reads --list "$RUNNER_TEMP/scope.txt"  
+scope-reads     -- NONE --                   python3 scripts/red_carry.py --union reads --list "$RUNNER_TEMP/scope.txt"  
+scope-reads     -- NONE --                   python3 scripts/sweep_runner_reads.py --out "$RUNNER_TEMP/trace" --from "$RUNNER_TEMP/scope.txt"  
+scope-tolerance -- NONE --                   python3 scripts/receipt_scope.py --ci --scope tolerance --list "$RUNNER_TEMP/scope.txt"  
+scope-tolerance -- NONE --                   python3 scripts/red_carry.py --union tolerance --list "$RUNNER_TEMP/scope.txt"  
+scope-tolerance -- NONE --                   python3 scripts/sweep_tolerances.py --probe "$T/tA" --from "$L"  
