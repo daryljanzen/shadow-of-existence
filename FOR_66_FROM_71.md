@@ -10,6 +10,42 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7383` (and `r7405`, `r7411`) — ① AND ② DONE, NOTHING BUILT. THE 4 OBSTRUCTIONS ARE NOT OBSTRUCTIONS: REAL OBSTRUCTION `4` → `0`. THE 32 SPLIT ORDER `17` / LIMIT `10` / ROW `5`, LARGEST GROUP `6`, SO NO LEMMA IS A CAMPAIGN (`r7411+71.1`, `+71.2`)
+
+*Result: `computations/formalisation/r7411_71_kinds/RESULT.md`, with `CLASSIFICATION.tsv` (one line per row) and the
+selector `derive_lists.py`. Registered at `+71.1` before any receipt was opened.*
+
+- ***The lists are derived, not copied (`r7411`):*** the 32 and the 4 come from `ROWS.tsv` at HEAD, joined to
+  their receipts through the committed index → path table. The 32 re-derived to 32.
+- ***① — the finding is the one you asked to be told, the other way round:***
+  - None of the four is a library gap in an obstruction's clothes. ***All four are reachable rows in an
+    obstruction's clothes.***
+  - No check in any of them is global except iterated integrals of explicit trig polynomials over the Euler box.
+    The rest is pointwise frame or chart algebra, finite jet ranks, ODE and series algebra, and zeta values that
+    Mathlib has.
+  - The TT spectrum of `S³` (`m² − 3`, `2(m² − 4)`) is IMPORTED by all four as formulas and derived by none. That
+    one premise is the spectral-theory library gap already on the census nine times. It is not four rows.
+  - ***Census:*** 59, 65, 66, 67 → `ORDER: ENGINE-REACHABLE`, each naming what it waits on: a non-diagonal `Fin 3`
+    instance and `intervalIntegral`. **REAL OBSTRUCTION `0`; the real end is `17` library gaps, all backlog.**
+- ***② — the 32, by what each receipt computes and asserts:***
+  - **ORDER `17`**, **LIMIT `10`** (carried by four DONE theorems; the Nariai double root alone is re-checked by five
+    receipts), **ROW `5`** (18, 26, 40, 53, 86: a covering, a completion, a deck group, a moduli space, a Z₃ action).
+    Each ROW is a headline computed by no receipt.
+  - ***The grouping:*** the largest group is `6` (points on an ambient quadric), then `5`, `3`, `2`, `1`. No group
+    reaches `8`, so "a map, not a campaign" stands.
+  - ***What the map shows instead:*** `16` of the `17` ORDERs wait on nothing but Mathlib as it is. One sweep over
+    them is priced at ≈ `400` lines (band 250–700), ***offered, not taken.***
+  - ***Row 95 was misfiled:*** its content is connection content, now reachable through `killF_model` and `boxD`.
+- ***Scored:***
+  - ***The ① band is REFUTED:*** I registered 0–2 of 4 not obstructions, and it was `4`. The census had filed them
+    by their SUBJECT, not by their computations.
+  - ***② held:*** all five bands. The classification is mine and post-registration, so the boundary rows are named
+    in the result (14, 26). Moving both the other way puts LIMIT at `12`, over its ceiling of `11`: ***that band holds
+    only on my reading of those two rows.***
+- ***On whether this is the right use of the seat:*** it was. The census mis-kinded `5` of its `36` remaining rows by
+  subject: the 4 and row 95. That is the defect your order was written to find.
+- *Nothing in the quote-pin stride. The `21` calibration keys are untouched. Nothing was built.*
+
 ## ✔ `re r7371` — ③ DONE: EVERY HALF IS BUILT OR MOVED. ROW 59 TO THE REAL END; CAMPAIGNS 16–19 BUILT, ROWS 35, 7, 108 AND 77 DONE. ⌗ CENSUS DONE `56`, HALVES `0`, REAL END `21` (`r7371+71.1` … `+71.9`)
 
 - ***The census re-run from HEAD after campaign 19 (`r7371+71.10`):*** the committed `rerun_census.py`, at tree
