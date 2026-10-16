@@ -20553,3 +20553,89 @@ the maturity subjects turned out to be named closely enough to the section headi
 nine `P15`/`P16` sites matched, and every match carries its reasoning in `column.tsv` so any one can
 be overturned. ⒟ `C3` = `0` BY CONSTRUCTION and worth nothing, as registered: `97` vocabulary matches
 are stranded in comment blocks this population strips.**
+
+## ⛭⛭ `r7403+cc66.59` — **⓮ LANDED: `48` KEYS OVER `42` SITES ADDED, THE PROSE HALF UNCHANGED TO THE KEY. ⛔ AND IT BUYS A DEFECT CLASS RATHER THAN A BETTER RATE — ONE OF MY TWO BANDS' REASONING IS WRONG AND THE OTHER'S PREDICTION IS NOT SUPPORTED**
+
+*Read at `origin/main` `622b01b1b`. Bands and the before-count registered in
+`computations/beyond_the_wall/r7403_cc66_the_comment_blocks/REGISTRATION.md` and **pushed before
+anything was built or read**. ⛔ `P7` left excluded, per ⓮ ④.*
+
+### ⓮ ③ BEFORE AND AFTER, IN THIS COMMIT
+
+| | keys | sites |
+|---|---:|---:|
+| **before** (`r7401`, prose only) | `390` | `329` |
+| after, `where = PROSE` | **`390`** | **`329`** |
+| after, `where = COMMENT` | **`48`** | **`42`** |
+| after, total | `438` | `371` |
+
+⛭ ***The `PROSE` half is unchanged to the key***, which is the attributability you asked for: the
+growth is the comment blocks and nothing else. Every row carries its `where`, and the `390` verdicts
+already written are carried forward — `read_baseline()` reads a `7`-column row as the pre-⓮ layout,
+because **a migration that lost your column would be worse than the blindness it fixes**.
+
+### THE BANDS — TWO HELD CLEANLY, AND TWO WHERE THE NUMBER HELD AND THE THINKING DID NOT
+
+- ⒜ **new KEYS `25`–`60` → `48`. HELD**, reasoning and all: I predicted `<` `55` because the `55`
+  counts MATCHES rather than sites.
+- ⒝ **new SITES `20`–`50` → `42`. HELD.**
+- ⒞ **open claims `40`–`80` % → `47.6` % ± `7.7`pp. ⛔ BAND HELD, REASONING WRONG.** *I predicted
+  comment blocks would be LESS noisy than prose because a `STATUS` block is written to record status.
+  **Prose is `52.5` % ± `7.9`pp and comment blocks are `47.6` % ± `7.7`pp — the same within error and
+  if anything noisier.*** ⌗ *From the read: a canon note carries provenance, policy and instructions as
+  well as status, and those fire the net as readily as prose does.*
+- ⒟ ⛔ **kind `②`'s share: I predicted LOWER than prose's `61.9` %, band `10`–`50` % → `60.0` % ±
+  `11.0`pp. BAND REFUTED HIGH, AND THE DIRECTIONAL PREDICTION IS NOT SUPPORTED.** *`60.0` ± `11.0`
+  against `61.9` ± `10.6` is **indistinguishable**, and I will not claim a `1.9`-point margin inside
+  an `11`-point error as a win. My reason — a stated limit is addressed to a reader and a comment
+  block is not — **is not borne out: the notes state limits to the next SEAT exactly as the papers
+  state them to a reader.***
+
+Kinds of the `20` open claims: **`①` `6`, `②` `12`, `③` `2`**; `22` of the `42` state no open claim.
+
+### ⛭⛭ ⒠ WHAT THE SCOPE CHANGE ACTUALLY BUYS, AND IT IS NOT THE RATE
+
+#### ⒠① **THE CORPUS HAS ALREADY CAUGHT ONE OF YOUR CLASS, AND ITS OWN NOTE RECORDS IT**
+
+`P8`, site `09`, verbatim: *"⚠ THIS NOTE READ "the deepest open question the construction RAISES"
+until `r2376+c54.179`, and the stronger phrasing is what propagated: `OPEN_PROBLEMS_MAP`'s `A·1`
+quoted it, and a register row inherited it, **so a map and a row both carried the item as an OPEN
+DISCOVERY while `sec:open` carries it as an EXHIBITION OWED**"*
+
+⇒ ***A comment block's wording propagated into a MAP and a REGISTER ROW and disagreed with the printed
+paper. That is `r7399`/`r7401`'s class, found by this programme before, recorded in the source, and
+invisible to every net until this scope change.*** *Historical — corrected at `r2376` — which is why
+it is evidence the class is real rather than a live defect.*
+
+#### ⒠② ⛔ **AND A NEW FALSE CLASS SPECIFIC TO COMMENT BLOCKS: THE INSTRUCTION NOT TO REPORT**
+
+Three of the `42` instruct the next seat **not** to report something as open — `P10` *"DO NOT REPORT
+THE COUPLED SECTOR AS A RE[SIDUAL]"*, `P11` *"DO NOT REPORT THE NONLINEAR RESONANCE AS OPEN."*, `P12`
+*"THE SMEARED CLOSURE IS A COROLLARY, NOT AN OPEN ITEM."*
+
+⇒ ⛔ ***A net that reads those as open sites reads an instruction NOT to report openness as a report of
+openness.*** *They are correctly `NOT-AN-OPEN-CLAIM` here because the rule reads the claim and not the
+marker — **but a gate that counted markers would INVERT them, and that inversion is worse than a false
+positive: it would re-open exactly what the note exists to keep closed.*** ⌗ *If `PO-86`'s gate ever
+counts markers rather than reading claims, this is the class that makes it dangerous.*
+
+#### ⒠③ **A RESIDUAL IDENTIFIER CLASS THE GUARD CANNOT REACH, BECAUSE IT IS NOT LaTeX**
+
+`P11`'s `[frontier sec 13]` (a bracketed cross-reference) and `P13`'s
+`SILVER_PLATTER_colour-frontier-arc.md` (a FILENAME) survive `STRIP`, which only removes LaTeX
+commands. ⌗ *`2` of `42`, both `NOT-AN-OPEN-CLAIM`, so they cost reading and not correctness. **Named
+rather than patched: widening the guard is a guard change and ⓮ ordered a scope change.***
+
+### THE BINDING CHECKS, AND ONE DEFECT OF MY OWN CAUGHT BEFORE PUSHING
+
+| | case | expected | got |
+|---|---|---|---|
+| A | unchanged copy | green | **rc `0`** |
+| B | ⛭ a new marker in a `%` COMMENT BLOCK | red | **rc `1`**, reported as `3 LAW-SIX/COMMENT` |
+| C | a marker only inside an identifier, inside a comment | green | **rc `0`** |
+| D | a new PROSE site still reds | red | **rc `1`** |
+
+⛔ **And mine:** *widening the row moved the verdict to index `4` while three consumers still read
+index `3`, so the first regen wrote `mechanism` values into **your** verdict column. **Caught by
+checking the verdict distribution after the regen rather than trusting the row count**; the baseline
+was restored from `HEAD` and rebuilt clean — `438` rows, all `UNREAD`.*

@@ -119,26 +119,75 @@ def read_vocab():
     return rows
 
 
-def body(path):
-    b = '\n'.join(l for l in open(path, encoding='utf-8', errors='replace').read().split('\n')
-                  if not l.lstrip().startswith('%'))
-    j = b.find('\\begin{thebibliography}')
-    return b[:j] if j > 0 else b
+def segments(path):
+    """Yield (where, section, text) for every PROSE paragraph and every `%` COMMENT BLOCK.
+
+    ** r7403 ⓮: A COMMENT BLOCK IS IN THE POPULATION, AND HERE IS WHY IT HAS TO BE. **  This
+    function used to drop every line whose first non-space character is `%` before anything else
+    ran, so a canon note or a `STATUS` block was outside the net at ANY vocabulary.
+    r7399+cc66.56 measured the cost: 97 vocabulary matches stranded in those blocks across P1-P18,
+    55 of them in papers this arm covers.  *** A canon note or a STATUS block is a CLAIM the
+    paper's SOURCE carries, and r7399 proved one can be wrong while the printed paper is right ***
+    -- P16's STATUS block called the derivation of eta a remaining open edge while three printed
+    sites class it closed.  A population that cannot see that cannot see a whole defect class.
+
+    ** THE UNIT IS THE BLOCK, not the line. **  The corpus writes these as runs: P16's note is nine
+    lines of one claim, and keying per line would split one sentence into fragments and manufacture
+    keys that are not sites.
+
+    ⌗ The bibliography is cut from both kinds, as before.  Section tracking follows DOCUMENT order
+    and is taken from prose lines only, so a comment block reports the section it sits under.
+    """
+    raw = open(path, encoding='utf-8', errors='replace').read().split('\n')
+    out, sec, prose, com = [], '', [], []
+    stop = False
+
+    def flush_prose():
+        if not prose:
+            return
+        chunk = '\n'.join(prose)
+        for p in re.split(r'\n\s*\n', chunk):
+            if p.strip():
+                out.append(('PROSE', sec, re.sub(r'\s+', ' ', p)))
+        prose.clear()
+
+    def flush_com():
+        if com:
+            out.append(('COMMENT', sec, re.sub(r'\s+', ' ', ' '.join(com))))
+            com.clear()
+
+    for line in raw:
+        if line.lstrip().startswith('%'):
+            flush_prose()
+            com.append(re.sub(r'^\s*%+\s?', '', line))
+            continue
+        flush_com()
+        if '\\begin{thebibliography}' in line:
+            stop = True
+        if stop:
+            continue
+        m = re.findall(r'\\(?:sub)*section\*?\{([^}]*)\}', line)
+        if m:
+            flush_prose()
+            sec = m[-1]
+        prose.append(line)
+    flush_prose()
+    flush_com()
+    return out
 
 
 def population(vocab):
-    """The candidate keys (paper, sentence, expression).  P7 is the law's home and is out."""
+    """The candidate keys (paper, sentence, expression).  P7 is the law's home and is out.
+
+    ⌗ r7403 ⓮ ④: P7 STAYS EXCLUDED.  The scope change is the comment blocks and nothing else; P7's
+    own 42 comment matches are a separate measurement with its own registration.
+    """
     live = [(w, re.compile(w, re.I), src) for w, src, st in vocab if st in LIVE]
     out = {}
     for num, stem in PAPERS:
         if num == 'P7':
             continue
-        sec = ''
-        for p in re.split(r'\n\s*\n', body(os.path.join(ROOT, 'corpus', stem + '.tex'))):
-            m = re.findall(r'\\(?:sub)*section\*?\{([^}]*)\}', p)
-            if m:
-                sec = m[-1]
-            flat = re.sub(r'\s+', ' ', p)
+        for where, sec, flat in segments(os.path.join(ROOT, 'corpus', stem + '.tex')):
             for s in _SENT.split(flat):
                 k = ' '.join(STRIP.sub(' ', ' '.join(s.split())).split())
                 if not k or CLOSE.search(k) or ORD.search(k):
@@ -148,7 +197,7 @@ def population(vocab):
                     continue
                 mech = ','.join(n for n, r in MECH.items() if r.search(flat)) or 'none'
                 for w, src in hit:
-                    out[(num, k, w)] = (sec or '(no section)', src, mech)
+                    out[(num, k, w)] = (sec or '(no section)', src, where, mech)
     return out
 
 
@@ -162,7 +211,14 @@ def read_baseline():
         f = line.split('\t')
         if f[0] == 'paper':
             continue
-        rows[(f[0], f[6], f[2])] = (f[1], f[3], f[4], f[5])
+        # ⌗ r7403 ⓮ widened the row: 8 columns with `where`.  A 7-column row is the PRE-⓮
+        #   layout and is read as PROSE, so the scope change carries the verdicts already written
+        #   rather than resetting them -- a migration that lost a person's column would be worse
+        #   than the blindness it fixes.
+        if len(f) >= 8:
+            rows[(f[0], f[7], f[2])] = (f[1], f[3], f[4], f[5], f[6])
+        elif len(f) == 7:
+            rows[(f[0], f[6], f[2])] = (f[1], f[3], 'PROSE', f[4], f[5])
     return rows
 
 
@@ -184,11 +240,16 @@ def write_baseline(pop, prior):
                  'The law\'s literal\n')
         fh.write('#   test (a \\ref to a P7 frontier item) discharges 0 of these, because the papers '
                  'compile separately.\n')
-        fh.write('paper\tsection\texpression\tsource\tmechanism\tverdict\tsentence\n')
+        fh.write('# `where` is PROSE or COMMENT -- r7403 ⓮ put `%` comment BLOCKS in the '
+                 'population, because a canon\n')
+        fh.write('#   note or a STATUS block is a claim the SOURCE carries and can be wrong while '
+                 'the printed paper is right.\n')
+        fh.write('paper\tsection\texpression\tsource\twhere\tmechanism\tverdict\tsentence\n')
         for (num, k, w) in sorted(pop, key=lambda t: (order.index(t[0]), t[1], t[2])):
-            sec, src, mech = pop[(num, k, w)]
-            verdict = prior.get((num, k, w), (None, None, None, 'UNREAD'))[3] if prior else 'UNREAD'
-            fh.write('\t'.join((num, sec, w, src, mech, verdict, k)) + '\n')
+            sec, src, where, mech = pop[(num, k, w)]
+            # ⌗ the prior tuple is (section, source, where, mechanism, verdict): verdict is [4].
+            verdict = prior.get((num, k, w), (None,) * 4 + ('UNREAD',))[4] if prior else 'UNREAD'
+            fh.write('\t'.join((num, sec, w, src, where, mech, verdict, k)) + '\n')
 
 
 def main(argv):
@@ -209,9 +270,9 @@ def main(argv):
     live = [w for w, _s, st in vocab if st in LIVE]
     new = sorted(k for k in pop if k not in prior)
     gone = sorted(k for k in prior if k not in pop)
-    bad = sorted(v[3] for v in prior.values() if v[3] not in VERDICTS)
+    bad = sorted(v[4] for v in prior.values() if v[4] not in VERDICTS)
     orphan = sorted({w for _n, _k, w in prior} - set(live))
-    unread = sum(1 for k in pop if prior.get(k, ('', '', '', 'UNREAD'))[3] == 'UNREAD')
+    unread = sum(1 for k in pop if prior.get(k, ('',) * 4 + ('UNREAD',))[4] == 'UNREAD')
 
     print()
     print('  OPEN-REFERENCE RATCHET -- the corpus\'s own law, enforced as a ratchet and not a verdict')
@@ -251,7 +312,7 @@ def main(argv):
         return 1
 
     if new:
-        bysrc = Counter(pop[k][1] for k in new)
+        bysrc = Counter(f'{pop[k][1]}/{pop[k][2]}' for k in new)
         print(f'  [FAIL] {len(new)} NEW open-language key(s) with no baseline row '
               f'({", ".join(f"{n} {s}" for s, n in bysrc.most_common())}).')
         print('    THE LAW THIS ENFORCES, from P7 §frontiers\' own block:')
@@ -263,8 +324,8 @@ def main(argv):
         print('      EXPRESSION is the problem, mark it NOT-AN-OPEN in corpus/open_vocabulary.tsv')
         print('      and it leaves the net.')
         for num, k, w in new[:12]:
-            sec, src, mech = pop[(num, k, w)]
-            print(f'      {num} §{sec}  [{w} / {src} / {mech}]')
+            sec, src, where, mech = pop[(num, k, w)]
+            print(f'      {num} §{sec}  [{w} / {src} / {where} / {mech}]')
             print(f'        {k[:200]}')
         if len(new) > 12:
             print(f'      ... and {len(new) - 12} more')
