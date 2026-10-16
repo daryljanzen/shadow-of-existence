@@ -4,8 +4,16 @@
 ** THE SUBJECT. **  Two gates of this seat's went red on `r7368`'s PR, both standing on `main` for
 five pushes, and they are one class in opposite directions.  `S29` selected a revision's commits by
 a STRING MATCH on commit messages, which over-resolves: every later commit citing the revision joins
-the set.  `S39` pinned its shas correctly and then read a fact off them through a walk of the whole
-history, which under-resolves: a shallow clone does not reach them.
+the set.  `S39` pinned its shas correctly and then read a fact off them through a map built over the
+whole history and keyed by an abbreviation, which under-resolves: the key is not spelled the same way
+in every environment.
+
+⛔ ** THE CAUSE THIS COMPUTATION WAS WRITTEN WITH WAS FALSE, AND THE SENTENCE ABOVE IS `r7418`'s
+REPLACEMENT OF IT. **  *`r7370` wrote "a shallow clone does not reach them"; `r7374` measured that no
+job which runs a receipt is shallow, that all six shas are ancestors of the trunk, and that the exact
+signature reproduces from `%h`'s environment-chosen length.  The measurement below is unchanged and
+was never about the cause -- it measures the OVER-resolving half -- but a reader opening this file
+inherited the reason, which is `r7372`'s defect.  See `r7374`'s computation and `S58`.*
 
   ⇒ ** A PIN IS ONLY AS GOOD AS WHAT RESOLVES IT, AND BOTH WANTED THE FACT COMMITTED BESIDE THE
     MEASUREMENT. **

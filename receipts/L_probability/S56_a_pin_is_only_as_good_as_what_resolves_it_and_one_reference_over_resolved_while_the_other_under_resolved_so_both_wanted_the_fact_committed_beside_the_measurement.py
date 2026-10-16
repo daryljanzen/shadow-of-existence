@@ -19,30 +19,37 @@ cite revisions by number in every message.*  The comment four lines above the se
   ⇒⇒ *** A REVISION THAT WRITES ABOUT ANOTHER JOINS ITS SELECTOR, and the commit that demonstrates
       it is the one describing it. ***
 
-** Ⓒ THE UNDER-RESOLVING HALF. **  `S39`'s `Ⓑ①` had its shas PINNED correctly and read the fact off
-them -- each commit's session marker -- from a map the collision gate fills by **walking the whole
-history reachable from `HEAD`**.  ⛔ *A shallow clone stops at its horizon; that gate's own comment
-records it once "reporting green over 8 per cent of the corpus's revision history".  These six
-commits sit some eighty revisions back, so the map has no entry, the marker reads empty, and the gate
-fails -- on the runner and not here, where the clone is full.*
-  ⇒ ** The markers are stored beside the shas now.  Where the object IS reachable they are CHECKED
+** Ⓒ THE UNDER-RESOLVING HALF, AS MEASURED AT `r7374` AND REWRITTEN HERE AT `r7418`. **  `S39`'s
+`Ⓑ①` had its shas PINNED correctly and read the fact off them -- each commit's session marker -- from
+a map the collision gate fills with `git log --format=%h…` and then **looks a sha up in BY EXACT
+STRING**.  ⛔ *`%h` is git's abbreviation and git picks its length from the object count: at this
+clone's `8` all `6` of `S39`'s shas are found, and at `7`, `9` and `12` **none** is.  So the map has
+no entry, the marker reads empty, and the gate fails -- on the runner and not here.*
+  ⇒ *** A PIN KEYED BY AN ABBREVIATION IS KEYED BY SOMETHING THE ENVIRONMENT CHOOSES. ***
+  ⌈ ⚠ *Not claimed: that the runner's length is any particular value — asserting that would be the
+    same move being corrected.  What is claimed is that the lookup matches an exact string against a
+    length the environment picks, wrong whatever that length is.*
+  ⌊ ** The markers are stored beside the shas now.  Where the object IS reachable they are CHECKED
     against what the commit says, so the stored data cannot drift unchallenged; where it is not, the
     stored value carries the claim and the absence is REPORTED. **  `r7365` ②, for a fact rather than
   for a selector.
 
-⛔⛭⛭⛭ **CORRECTED AT `r7374`: THE REPAIR ABOVE IS RIGHT AND THE CAUSE WRITTEN BESIDE IT IS FALSE.**
-*Three measurements, none needing the runner.* ⒤ **No job that runs a receipt is shallow** — every
-receipt-running job in `.github/workflows/gates.yml` checks out with `fetch-depth: 0`, read at the
-commit the red was recorded against, at the commit carrying the second repair, and on the trunk now;
-the one default-depth checkout runs LaTeX and no receipts. ⒥ **All six shas are ancestors of the
-trunk**, so reachable at any depth. ⒦ **The signature reproduces here from another variable**: the
-map is keyed by `%h`, git picks that length from the object count, and at this clone's `8` all `6`
-shas are found while at `7`, `9` and `12` **none** is.
-  ⇒ *** A PIN KEYED BY AN ABBREVIATION IS KEYED BY SOMETHING THE ENVIRONMENT CHOOSES. ***
-  ⌊ ⚠ *Not claimed: that the runner's length is any particular value — asserting that would be the
-    same move being corrected. And `r7371` `②`'s rule narrows rather than falls: the container is not
-    the instrument for what the runner HAPPENS to have, but it always is for what the code DEPENDS
-    ON, which is a property of the code and readable wherever the code is.*
+⛔⛭⛭ **KEPT AS THE RECORD OF A WRONG TURN AND NOT AS A CAUSE.**  *`r7370` wrote the cause above as a
+shallow clone's horizon — "that gate's own comment records it once reporting green over 8 per cent of
+the corpus's revision history" — and `r7374` measured that it cannot be that.*  ⒤ **No job that runs
+a receipt is shallow** — every receipt-running job in `.github/workflows/gates.yml` checks out with
+`fetch-depth: 0`, read at the commit the red was recorded against, at the commit carrying the second
+repair, and re-read on the trunk at `r7418` (`3a922041`) rather than inherited; the one default-depth
+checkout runs LaTeX and no receipts. ⒥ **All six shas are ancestors of the trunk**, so reachable at
+any depth. ⒦ **The signature reproduces from the abbreviation above**, which has nothing to do with
+depth and produces the identical symptom.
+  ⌈ *`r7371` `②`'s rule narrows rather than falls: the container is not the instrument for what the
+    runner HAPPENS to have, but it always is for what the code DEPENDS ON, which is a property of the
+    code and readable wherever the code is.*
+  ⌊ ⌗ **`r7374` appended that correction BELOW the cause it refuted, here and in `S39`, so a reader
+    going top-down met the false cause first — `11` lines of a `367`-line file here and `14` of `305`
+    there, and in `S39` a second carrier `37` lines BELOW the correction that the correction never
+    reached.  `r7418` put the measurement where the cause is read.**
 
 ** ⇒⇒⇒ THE RULE: A PIN IS ONLY AS GOOD AS WHAT RESOLVES IT.  One reference resolved to more than it
 named and the other to less, and both wanted the fact committed beside the measurement. ***
@@ -105,6 +112,7 @@ unreachable here.
 
 Written r7370 on CI's own two reds.  Stated for reversal.
 """
+import ast
 import importlib.util
 import os
 import re
@@ -155,6 +163,85 @@ def one(prefix, where='receipts/L_probability'):
 
 def src(prefix):
     return open(os.path.join(ROOT, one(prefix)), encoding='utf-8').read()
+
+
+#: ⛔⛭⛭ r7420: ** THE EXCLUSION LIST BELOW WAS A HAND-WRITTEN MEMBERSHIP TEST WITH ONE ENTRY, AND IT
+#: MISSED TWO MEMBERS -- INCLUDING THE ONE CARRYING 74 PER CENT OF THIS FILE'S COST. **
+#:   *`r7370` wrote `_NESTS = ('S55_',)` and `Ⓖ①` asserted that all five remaining members "run
+#:   nothing themselves".  `S22` runs `I55` and `S23` runs `N1` and a `P03` receipt, so the clause was
+#:   FALSE for two of its five -- and the list caught only the member it was written about.*
+#:   ⇒ *** The rule `r7370` stated here is right and its LIST was the defect. ***  *That is `r7412`'s
+#:       eighth-instance failure again -- a census whose membership test missed a member it was about
+#:       -- and the first in this phase to REPEAT a reason rather than add one.*
+#:
+#: ⛔⛭⛭⛭ AND THE FIRST TWO REPLACEMENTS WERE BOTH WORSE, WHICH IS WHY THE TEST BELOW IS THREE-WAY.
+#:   ⒤ *A detector keyed on a `sys.executable` subprocess carrying a resolvable `receipts/` string
+#:     missed `S23`: its call is `run(_n1)`, a four-line LOCAL WRAPPER whose path is a PARAMETER, so no
+#:     string appears at the call site or inside the wrapper.*  **Thirteenth instance of this phase's
+#:     family, and a reason it did not have.**
+#:   ⒥ ⛔ *Following the wrapper fixed `S23` and then dropped `S55` -- the one entry the hand-written
+#:     list had RIGHT.  `S55` runs its receipts as `[sys.executable, os.path.basename(rel)]` with the
+#:     directory in `cwd`, **which is this very file's own idiom**, so there is no `receipts/` string to
+#:     match.  Run with that form, this file ran `S55` whole: `1,465` s plus `S55`'s own six, the cost
+#:     becoming the product this section's rule exists to prevent.*  **Fourteenth instance, caught by
+#:     RUNNING the repair rather than reasoning about it -- which is what the arm registered for it was
+#:     for, and `r7406`'s rule in its cheapest form.**
+#:   ⇒ *** A BASENAME CANNOT BE RESOLVED STATICALLY: the directory is in `cwd` at runtime, so the
+#:       question is not answerable from the source and must be REPORTED undecidable, not guessed. ***
+#:   ⌊ ⛭ **And the two errors are not symmetric, which decides the disposition**: excluding a receipt
+#:     that does not nest costs one re-run the suite performs anyway, while including one that does
+#:     risks the product cost.  *So `undecidable` joins the exclusion, and the asymmetry is the
+#:     argument rather than a preference.*
+def _nest_verdict(rel):
+    """'yes' | 'no' | 'undecidable' -- does this receipt hand a receipt to the interpreter?
+
+    Decided from the parse tree where the target is a literal path, and REPORTED UNDECIDABLE where it
+    is a bare basename taken from a variable, because the directory is supplied via `cwd` at runtime
+    and no reading of the source can settle it."""
+    try:
+        tree = ast.parse(open(os.path.join(ROOT, rel), encoding='utf-8', errors='replace').read())
+    except (SyntaxError, OSError):
+        return 'undecidable'
+    binds = {}
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Assign) and isinstance(n.value, ast.Constant) \
+                and isinstance(n.value.value, str):
+            for t in n.targets:
+                if isinstance(t, ast.Name):
+                    binds[t.id] = n.value.value
+    wrappers = set()
+    for n in ast.walk(tree):
+        if not isinstance(n, ast.FunctionDef):
+            continue
+        params = {a.arg for a in n.args.args} | ({n.args.vararg.arg} if n.args.vararg else set())
+        for c in ast.walk(n):
+            if isinstance(c, ast.Call) and "attr='executable'" in ast.dump(c) \
+                    and any(isinstance(x, ast.Name) and x.id in params for x in ast.walk(c)):
+                wrappers.add(n.name)
+    verdict = 'no'
+    for n in ast.walk(tree):
+        if not isinstance(n, ast.Call):
+            continue
+        f = n.func
+        nm = f.attr if isinstance(f, ast.Attribute) else (f.id if isinstance(f, ast.Name) else '')
+        direct = (nm in ('run', 'check_output', 'Popen', 'check_call') and n.args
+                  and "attr='executable'" in ast.dump(n.args[0]))
+        if not (direct or nm in wrappers):
+            continue
+        strs, basename = [], False
+        for a in n.args:
+            for x in ast.walk(a):
+                if isinstance(x, ast.Constant) and isinstance(x.value, str):
+                    strs.append(x.value)
+                elif isinstance(x, ast.Name) and x.id in binds:
+                    strs.append(binds[x.id])
+                elif isinstance(x, ast.Attribute) and x.attr == 'basename':
+                    basename = True
+        if any(re.search(r'(^|/)receipts/', t) for t in strs):
+            return 'yes'
+        if basename and not any(re.search(r'(^|/)(corpus|scripts)/', t) for t in strs):
+            verdict = 'undecidable'
+    return verdict
 
 
 def main():
@@ -235,10 +322,15 @@ def main():
           f'{len(_agree)} verified here, so the stored data cannot drift unchallenged',
           {h for h, _m in _stored} == _pinned_shas and _pinned_shas
           and len(_agree) == len(_stored))
-    check('Ⓒ② ⇒ and the walk it used to depend on is gone from the clause: the marker is read from '
-          'the commit by id, which git resolves from any prefix, rather than out of a map built '
-          'by walking the history reachable from `HEAD` and KEYED BY AN ABBREVIATION -- a map a '
-          'shallow clone truncates and a different abbreviation length empties (r7374)',
+    #: ⛭⛭ r7418: this clause's own text named TWO mechanisms -- "a map a shallow clone truncates and
+    #: a different abbreviation length empties (r7374)" -- citing the revision that refuted the first
+    #: while still asserting it.  *A comment records a belief; an asserting clause states a property
+    #: of the object, so the refuted half was being asserted and not merely remembered.*  ⇒ Only the
+    #: measured mechanism is named now; the refuted one is kept in the header above, as a record.
+    check('Ⓒ② ⇒ and the map it used to depend on is gone from the clause: the marker is read from '
+          'the commit by id, which git resolves from any prefix, rather than out of a map KEYED BY '
+          'AN ABBREVIATION -- a key whose length git picks from the object count, so a different '
+          'length empties it (r7374)',
           'def session_of' in _s39 and '_SESSION.get' not in _s39
           and '_UNREACHED' in _s39)
     check('Ⓒ③ ⇒⇒ and the absence is REPORTED rather than failing or passing: a sha this clone does '
@@ -322,7 +414,8 @@ def main():
     #:       own scope and the suite runs it once, which is where running it belongs. ***
     #: ⌊ *So the five that run nothing are RUN, and `S55` is read for the one thing this revision
     #:   changed in it -- which is a stronger claim about this revision's work than its exit code.*
-    _NESTS = ('S55_',)
+    _VERDICTS = {p: _nest_verdict(one(p)) for p in REDS + MORE}
+    _NESTS = tuple(sorted(p for p, v in _VERDICTS.items() if v in ('yes', 'undecidable')))
     _rcs = {}
     for p in REDS + MORE:
         if p in _NESTS:
@@ -332,20 +425,45 @@ def main():
                                       cwd=os.path.join(ROOT, os.path.dirname(rel)),
                                       capture_output=True, text=True, errors='replace',
                                       timeout=2400).returncode
+    _INDEX = open(os.path.join(ROOT, 'receipts', 'INDEX.md'), encoding='utf-8').read()
     print(f'      run here, not cited: {_rcs}')
-    print(f'      not re-run, and why: {list(_NESTS)} runs six receipts of its own, so running it '
-          f'here makes this file\'s cost a product rather than a sum -- it is in the suite\'s scope '
-          f'and the suite runs it once')
-    check(f'Ⓖ① all {len(_rcs)} receipts that run nothing themselves are RUN from their own '
-          f'directories and every one exits zero: {_rcs}',
-          len(_rcs) == 5 and all(v == 0 for v in _rcs.values()))
-    check('Ⓖ①ᵃ ⛭ and `S55` is asserted on THE CHANGE THIS REVISION MADE TO IT rather than re-run '
-          'whole: its id filter is gone, its restraint reads the whole session-filtered range, and '
-          'it is registered in the index so the suite runs it -- which is a stronger claim about '
-          'this revision\'s work than its exit code would be',
+    print(f'      not re-run, COMPUTED from their own source rather than remembered: {list(_NESTS)} '
+          f'-- each runs a receipt of its own, so running it here makes this file\'s cost a product '
+          f'rather than a sum; each is registered in the index and the suite runs it once')
+    check(f'Ⓖ① every member that runs nothing itself is RUN from its own directory and exits zero, '
+          f'and the population is DERIVED from each file\'s parse tree rather than pinned: '
+          f'{_rcs} against a nesting set of {list(_NESTS)}, {len(_rcs)} + {len(_NESTS)} = '
+          f'{len(REDS + MORE)}',
+          _rcs and all(v == 0 for v in _rcs.values())
+          and len(_rcs) + len(_NESTS) == len(REDS + MORE)
+          and all(_VERDICTS[p] == 'no' for p in REDS + MORE if p not in _NESTS))
+    check(f'Ⓖ①ᵃ ⛭ and every member that DOES run a receipt is asserted on its registration rather '
+          f'than re-run whole -- `r7370`\'s own rule, which it applied to one member and this file '
+          f'now applies to all {len(_NESTS)} the parse tree finds: each is in the index, so the '
+          f'suite runs it once, which is where running it belongs',
+          len(_NESTS) >= 1
+          and all(os.path.basename(one(p)) in _INDEX for p in _NESTS))
+    check('Ⓖ①ᵇ ⛭ and `S55` keeps the specific form too: it is asserted on THE CHANGE THIS REVISION '
+          'MADE TO IT -- its id filter is gone and its restraint reads the whole session-filtered '
+          'range -- which is a stronger claim about this revision\'s work than its exit code',
           "_r68 = _own" in _s55 and "'r7368' in git(" not in _s55
-          and os.path.basename(one('S55_')) in open(
-              os.path.join(ROOT, 'receipts', 'INDEX.md'), encoding='utf-8').read())
+          and os.path.basename(one('S55_')) in _INDEX)
+    check(f'Ⓖ①ᶜ ⛔⛭ and the PREVIOUS form\'s hand-written list missed two of them: it carried '
+          f'`S55` alone while the three-way test finds {len(_NESTS)}, so the clause asserting that '
+          f'all five others "run nothing themselves" was FALSE for two -- `r7412`\'s membership-test '
+          f'failure again, and the first in this phase to repeat a reason rather than add one.  '
+          f'⛭ AND THE COMPUTED SET CONTAINS THE OLD ONE rather than contradicting it: {list(_NESTS)}',
+          len(_NESTS) > 1 and 'S55_' in _NESTS)
+    _undec = sorted(p for p, v in _VERDICTS.items() if v == 'undecidable')
+    check(f'Ⓖ①ᵈ ⛔⛭⛭ and the test is THREE-WAY because a basename cannot be resolved from the '
+          f'source: the directory is in `cwd` at runtime.  Undecidable: {_undec}; nesting: '
+          f'{sorted(p for p, v in _VERDICTS.items() if v == "yes")}; clear: '
+          f'{sorted(p for p, v in _VERDICTS.items() if v == "no")}.  ** Undecidable joins the '
+          f'exclusion, and the ASYMMETRY is the argument: excluding a receipt that does not nest '
+          f'costs one re-run the suite performs anyway, while including one that does risks the '
+          f'product cost this section exists to prevent **',
+          set(_VERDICTS.values()) <= {'yes', 'no', 'undecidable'}
+          and all(p in _NESTS for p in _undec))
 
     print(f'\n{BAR}')
     if FAILED:
