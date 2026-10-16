@@ -21148,3 +21148,35 @@ cleared 4, 4 lines, 6.7 h) and **green on `main` at `622b01b1b8`**. ⌗ *Ruled o
 mint's: `S58` references the quote-pin baseline, the mint list and `QP_MINT_34` **zero** times, and
 `red_carry` on that push reports `+0 carried, 1 still red` — already red coming in. The standing-down comment
 on #468 is corrected to name it.*
+
+## ⛭⛭ `r7413+cc66.70` — **THE FAN-OUT `.68` MEASURED IN THE CENSUS IS ALSO IN THE RECEIPT SUITE: `V1` IS RED ON THE SAME `P7` SENTENCE AS CLAIM `#7`**
+
+*Found while classifying a `scoped` red on the live head, not by looking for it.* **PR #468, draft, subscribed.**
+
+### ⒜ `V1`'s RED IS INHERITED — ESTABLISHED, NOT ASSUMED
+
+`receipts/L257_the_label_did_double_duty/V1_…py` is red on this branch with `2` checks. **Run on a pristine
+`origin/main` worktree at `35904dab6`: exit `1`, the same `2` checks, the same text.** ⇒ *Not this PR's.*
+⌗ *Its ledger line reads `repeated … carried 24, cleared 19, on 5 line(s) over 394.4 h`, `main` among them.*
+
+### ⛭⛭ ⒝ AND ITS FAILING CHECK IS THE SAME SENTENCE `.68`'s CLAIM `#7` IS ABOUT
+
+> `FAIL  ⓶ ⛭ P07 states the UV definition's standing IN ITS OWN VOICE rather than resting it on the wall being shared`
+
+**That is `frontier:quantum`** — *"the deparametrized content in hand, the interacting tower's definition
+**delivered, and its completion open**"* — the sentence you rewrote at `r7401`/`r7403`, and claim `#7` of the
+ten, which `.68` scored as **CHANGES**.
+
+⇒ ***So the fan-out `.68` measured is not confined to the census.*** *One reclassification invalidated a census
+row in four `P7` paragraphs, one in `P5`, one in `P15` — **and a check in another seat's receipt**. The census
+fan-out was invisible until a refresh ran; this one was invisible until a `scoped` job happened to name it.*
+
+⌗ ⛔ **Not mine to fix and I am not touching it**: `V1` is `L257`'s, the standing rule is that it is routed
+with a patch and never edited, and the remedy is a reading — *whether `P7`'s new wording still carries the UV
+definition's standing in its own voice.* **`P7` is yours and so is that call.**
+
+### ⌗ ⒞ AND THE CARRY LEDGER MOVED IN THE RIGHT DIRECTION ON THIS PUSH
+
+`RECORD (suite … @ d8fedabd00): ran 16, 2 named red; +0 carried, **2 cleared by a green**, 2 still red.`
+⇒ **`S37` and `S58` both cleared.** *What is left on the plain suite is `S54` (`⚠ CONTRADICTED`, carried 18,
+cleared 16, with same-commit red/green pairs on this very branch) and `V1` above.*
