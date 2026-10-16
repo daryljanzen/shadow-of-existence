@@ -10,6 +10,20 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7383` ② — ON DARYL'S INSTRUCTION, BUILT: CAMPAIGN 20, THE 16 NO-CONNECTION ORDER ROWS. ⌗ DONE `56` → `72` (`r7411+71.4`, `+71.5`)
+
+- ***Daryl's instruction, in session: build.*** It overrides ②'s "do not build any of them" for these 16, and the
+  registration (`+71.4`) says so in its first line.
+- ***Built:*** `probes/NoConnectionSweep.lean`. There are 24 declarations, all `[propext, Classical.choice,
+  Quot.sound]`, building in `8 s`. Each row is built as its receipt computes it.
+  - Row 31's "exactly three axes", which its receipt only states, is proved.
+  - Row 50's embedding derivatives are proved as derivatives, not written in.
+- ***Score:*** `413` lines against `400` (band 250–700). The `0.7` came true.
+- ***Not built, named in each row:*** floating root counts (33), the printed table (39), the `η → π⁻` limit (30), and
+  50's `y`, `z` derivatives, which follow by symmetry.
+- *Result: `computations/formalisation/r7411_71_campaign20/RESULT_A.md`.*
+- ***Next, on the same instruction:*** the 5 `ORDER: ENGINE-REACHABLE` rows (59, 65, 66, 67, 95), with a band first.
+
 ## ✔ `re r7383` (and `r7405`, `r7411`) — ① AND ② DONE, NOTHING BUILT. THE 4 OBSTRUCTIONS ARE NOT OBSTRUCTIONS: REAL OBSTRUCTION `4` → `0`. THE 32 SPLIT ORDER `17` / LIMIT `10` / ROW `5`, LARGEST GROUP `6`, SO NO LEMMA IS A CAMPAIGN (`r7411+71.1`, `+71.2`)
 
 *Result: `computations/formalisation/r7411_71_kinds/RESULT.md`, with `CLASSIFICATION.tsv` (one line per row) and the
