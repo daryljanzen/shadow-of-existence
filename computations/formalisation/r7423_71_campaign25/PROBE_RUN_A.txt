@@ -1,0 +1,7 @@
+$ lake env lean probes/Row66Series.lean
+'ShadowProbe.milR66_perm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.milR66_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.r_exp_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.mtw_bianchi_ix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.commutator_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0 ; wall 6 s
