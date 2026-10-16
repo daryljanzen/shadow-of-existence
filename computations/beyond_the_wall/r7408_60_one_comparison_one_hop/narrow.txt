@@ -1,0 +1,14 @@
+# r7408 (60) -- one comparison, one hop, at FRAME 0ba253b5
+# ⌗ the one figure quoted from the refuted family, per r7405 ①: the scope-aware bare count,
+#   24 against 93.  The others are superseded and are not repeated.
+
+# ⒜ SENSITIVITY, at the commit before the repair (78c87575ecd7)   (point prediction 1)
+#    0 hit(s) in S37 pre-repair:
+#    and at HEAD, after the repair: 0 hit(s)
+
+# ⒝ PRECISION against the prescribed repair: 0 of 88 carve-out clause(s) charged -- the population imported from r7406   (point prediction 0)
+
+# ⒞ THE CORPUS COUNT at HEAD: 0 hit(s) over 102 receipt(s)   (band 0-4, central 0)
+
+# ⒟ THE PRICE on this container: 80.2s over 102 receipt(s)   (band 5-300 s, central 20 s)
+#    no subprocess, no closure, one pass: the price is a property of the bound.

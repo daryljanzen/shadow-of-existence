@@ -1,0 +1,13 @@
+# r7408 (60) -- the hop distance in S37 at 78c87575ecd7, the commit before the repair
+# the offending comparison is `norm(_a) in norm(b)`, inside `any(... for b in _grp)`
+#   _a      -> nearest PINNED  binding: 3 hop(s); own mark ['']
+#   _c      -> nearest PINNED  binding: 2 hop(s); own mark ['']
+#   _mine   -> nearest PINNED  binding: 1 hop(s); own mark ['']
+#   _now    -> nearest PINNED  binding: 0 hop(s); own mark ['PINNED']
+#   b       -> nearest RUN     binding: 1 hop(s); own mark ['']
+#   _grp    -> nearest RUN     binding: 1 hop(s); own mark ['']
+#   _runs   -> nearest RUN     binding: 0 hop(s); own mark ['RUN']
+#   _alt    -> nearest RUN     binding: 0 hop(s); own mark ['RUN']
+# ⇒ ONE HOP reaches neither side.  The rule r7405 ① bounded to one expression and one hop
+#   therefore cannot see the one instance in this corpus, and widening the hop count IS the
+#   closure walk that four earlier forms died on.
