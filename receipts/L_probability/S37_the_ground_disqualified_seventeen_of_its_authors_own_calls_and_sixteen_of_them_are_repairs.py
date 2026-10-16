@@ -29,6 +29,7 @@ and the check passes on it. **
 ⚠ WHAT THIS CANNOT SETTLE is at the foot.
 """
 import collections
+import importlib.util
 import io
 import json
 import os
@@ -184,27 +185,57 @@ gate(f'Ⓑ① ⛭⛭⛭ and the re-verdicted set is EXACTLY the one the ground d
      f'change **',
      not _mine_left and len(_eo_left) > 0)
 
-_pairs = 0
-for _c in _mine:
-    _p, _a = key(_c)
-    _ln = next((ln for (pp, ln), arms in _alt.items() if pp == _p and _a in arms), None)
-    if _ln is None:
-        continue
-    _grp = _runs[_run_of[(_p, _ln)]]
-    if any(b != _a and (norm(_a) in norm(b) or norm(b) in norm(_a)) for b in _grp):
-        _pairs += 1
-print(f'      of the {len(_mine)}, {_pairs} sit in a substring relation with an arm of their own run')
-gate(f'Ⓑ② ⛭⛭ and the substring family is COUNTED rather than asserted: `{_pairs}` of the '
-     f'`{len(_mine)}` stand in a containment relation with another arm of their own run after the '
-     f'table, which is what makes one of the two decide alone.  ** Both sides of such a pair owe a '
-     f'repair and for OPPOSITE reasons --- the short arm carries less than the claim, the long arm '
-     f'never decides --- and that asymmetry is why each row records its own test **',
+# ⛭⛭⛭ r7402+60: Ⓑ② WAS A FLOOR ON A COUNT THE WORK IT ORDERED DRIVES TO ZERO.  Its rows come
+#   from the baseline AT `AFTER`, a pinned commit; its ARMS came from a mint over the LIVE tree.  And
+#   sixteen of the seventeen rows were `REPAIR-OWED`, so the moment those repairs landed the literals
+#   stopped being `ALT` arms: measured at r7402, `0` of the seventeen are present as a live arm at all,
+#   every iteration below `continue`d, and the count was STRUCTURALLY zero against a floor of ten.
+#   ** A gate that counted the defects it ordered repaired, read live, fails on the success of its own
+#   order ** --- the family `scripts/mutate_assertions.py`'s own docstring names, and the family this
+#   receipt was written about.  ⇒ The count is now taken with the tree AND the instrument at `AFTER`,
+#   in a detached worktree, so both ends of a historical claim are historical; the live figure is
+#   REPORTED beside it and asserted of nothing, which is `r7368` ②'s carve-out.  Measured at `r7402`:
+#   pinned `11`, live `0`.  ⌷ The pinned mint lives in the computation that owns it and is CALLED, not
+#   reimplemented, and the containment test is `r7302`'s `norm` on both sides as it always was.
+_R7402 = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                      'r7402_60_the_gate_that_counted_the_repairs_it_ordered', 'cost.py')
+_spec = importlib.util.spec_from_file_location('r7402_cost', _R7402)
+_r7402 = importlib.util.module_from_spec(_spec)
+sys.modules['r7402_cost'] = _r7402
+_spec.loader.exec_module(_r7402)
+_palt, _prun_of, _pruns = _r7402.pinned_alt(AFTER)
+_pairs, _reached = _r7402.pairs(_mine, _palt, _prun_of, _pruns)
+_pairs_live, _reached_live = _r7402.pairs(_mine, _alt, _run_of, _runs)
+print(f'      of the {len(_mine)}, {_pairs} sit in a substring relation with an arm of their own run '
+      f'AT {AFTER}, where {_reached} of {len(_mine)} are present as an arm at all')
+print(f'      live, for the record and asserted of nothing: {_pairs_live} pair(s), {_reached_live} of '
+      f'{len(_mine)} still present as an arm -- the repairs this revision ordered took them out')
+gate(f'Ⓑ② ⛭⛭ and the substring family is COUNTED rather than asserted, AT THE REVISION THAT '
+     f'MEASURED IT: `{_pairs}` of the `{len(_mine)}` stand in a containment relation with another arm '
+     f'of their own run after the table, with the tree and the instrument both read at `{AFTER}`, '
+     f'which is what makes one of the two decide alone.  ** Both sides of such a pair owe a repair and '
+     f'for OPPOSITE reasons --- the short arm carries less than the claim, the long arm never decides '
+     f'--- and that asymmetry is why each row records its own test. **  ⌷ Live the figure is '
+     f'`{_pairs_live}` with `{_reached_live}` of `{len(_mine)}` still an arm, REPORTED and asserted of '
+     f'nothing: sixteen of these rows owed a repair and a repair rewords the literal, so a live floor '
+     f'here was a gate failing on the success of its own order (r7402)',
      _pairs >= 10)
 
+# ⛔⛭ r7402+60: AND THE CLAUSE BESIDE IT HAD THE SAME TWO ENDS, in the form that RAISES rather than
+#   fails -- `next(...)` with no default over the LIVE map, so once the repairs took the literal out of
+#   the live arms this line threw `StopIteration` and the receipt never reached its later gates.  A
+#   census of this shape inside one file missing the clause four lines below it is `r7386`'s own finding
+#   repeating, and the harder failure was BEHIND the softer one: the carry ledger could only name the
+#   last gate that reported.  ⇒ Read at `AFTER` with the rest, and the live reading reported.
 _the_one = [c for c in _mine if c[5] == 'DELIBERATE'][0]
 _one_lit = key(_the_one)[1]
-_one_ln = next(ln for (pp, ln), arms in _alt.items() if pp == key(_the_one)[0] and _one_lit in arms)
-_one_grp = [b for b in _runs[_run_of[(key(_the_one)[0], _one_ln)]] if b != _one_lit]
+_one_ln = next((ln for (pp, ln), arms in _palt.items()
+                if pp == key(_the_one)[0] and _one_lit in arms), None)
+_one_grp = ([b for b in _pruns[_prun_of[(key(_the_one)[0], _one_ln)]] if b != _one_lit]
+            if _one_ln is not None else [])
+_one_live = any(pp == key(_the_one)[0] and _one_lit in arms for (pp, _l), arms in _alt.items())
+print(f'      the one DELIBERATE row is an arm at {AFTER}: {_one_ln is not None}; live: {_one_live} '
+      f'-- reported, asserted of nothing')
 _carries_five = '5' in norm(_one_lit) and not any('5' in norm(b) for b in _one_grp)
 print(f'      the one DELIBERATE row: its span carries the digit the claim turns on and its '
       f'{len(_one_grp)} partner(s) do not: {_carries_five}')

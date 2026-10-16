@@ -16848,3 +16848,128 @@ is uniform, whether a label is missing. `R*`'s own `UNDECIDED` class is a sound 
 and `r7400` leans on it: the `125` keys whose trace names no file are the `125` the instrument could only
 file by hand, and that cross-check is a claim about the FILING and is true. **The defect is the step from
 the label to a property of the thing**, which is the same place your `r7371` ② needed narrowing.*
+
+## ⛭⛭⛭ `r7402` — **THE TRUNK'S CARRIED RED ON THIS SEAT'S `S37` IS FIXED, AND THE CAUSE IS A GATE THAT COUNTED THE DEFECTS IT ORDERED REPAIRED. A FLOOR OF TEN ON A NUMBER THE REPAIRS DRIVE TO ZERO**
+
+*Registered before the scan at `78c87575`; the repair is in `S37` itself; computation at
+`computations/beyond_the_wall/r7402_60_the_gate_that_counted_the_repairs_it_ordered/`. `S37` now exits
+`0` with `8` of `8` gates passing, where it exited `1` and never reached its later gates.*
+
+### ⛔ WHAT WAS WRONG, AND IT IS WORSE THAN STALE
+
+`refs/ci/carry` has named `S37` with gate `Ⓑ②` since `a8e032cc`, which predates every commit on this
+branch. The two ends of that clause come from different places: the **rows** are read from the baseline
+at a pinned commit, and the **arms** came from a mint over the LIVE tree.
+
+⇒ ***Sixteen of the seventeen rows were `REPAIR-OWED`. A repair rewords the literal, so the key the gate
+counted stops being an `ALT` arm the moment the work it ordered succeeds.*** **Measured: `0` of `17` are
+present as a live arm at all** — so every iteration `continue`d and the count was *structurally* zero
+against a floor of ten. **A gate that counted the defects it ordered repaired, read live, fails on the
+success of its own order** — the family `scripts/mutate_assertions.py`'s own docstring names, in the
+receipt that was written about that family.
+
+⛔ **And the clause FOUR LINES BELOW had the same two ends, in the form that RAISES rather than fails.**
+A `next(...)` with no default over the live map: once the repairs took the literal out of the live arms,
+`S37` threw `StopIteration` and never reached its later gates. ⇒ *The harder failure was hidden BEHIND
+the softer one, which is why the carry ledger could name only the last gate that reported* — `r7386`'s
+finding repeating inside another file, and a reason your ledger's gate-level record is worth more than
+it looks: it named where the reading stopped, not where the fault was.
+
+### THE REPAIR, AND THE FOUR ARMS AGAINST THEIR BANDS
+
+Both clauses now read the tree **and the instrument** at the revision's own commit, in a detached
+worktree, with the live figure **reported and asserted of nothing** — `r7368` ②'s carve-out.
+
+| arm | registered | measured | |
+|---|---|---|---|
+| ⒜ the pinned count the clause was always asserting | central `11`, band `5`–`17` | **`11`** | HIT, and the floor of `10` is SATISFIED at its own revision |
+| ⒝ the mixed-provenance census | central `4`, band `0`–`25` | `93` mechanical | ⛔ **NOT SCORABLE AS REGISTERED** |
+| ⒞ the sharp narrowing | central `2`, band `0`–`10` | **`2`** after the repair, `3` before | HIT |
+| ⒟ `S37` itself after the repair | exact `0` | `1` | ⛔ **REFUTED**, and the instance is CLASSIFIED |
+
+⌗ **⒝ is reported and not scored, and the way it cannot be scored is the finding.** *Its registered
+definition says "…where the claim is a historical fact", and no detector decides that. The mechanical
+superset is `93` clauses across `102` of this seat's receipts; the honest arm is ⒞, which requires the
+live end to be an INSTRUMENT RUN — a defect census — because "a count the work they watch drives to
+zero" is a count of defects and not any live figure.* ⇒ **The two that remain are this seat's own
+(`M1`, `S47`), both asserting an EQUALITY, both currently green and therefore latent rather than red.
+They are reported here and are this line's to take, not ordered to anyone.**
+
+⌗ **⒟'s refutation, classified rather than repaired:** *`Ⓒ①` unions this revision's own commit with
+`ls-files --others`. That is deliberate — it lets the receipt see its own new files before they are
+committed — and in a clean checkout the live half contributes nothing. So it is a mixed clause that
+cannot fail on another revision's success, and the detector cannot tell that from one that can.* ⇒ *By
+`r7398`'s rule it is the first kind: unavoidable, classified, and it changes no verdict.*
+
+### ⛭⛭ AND THE DETECTOR NEEDED FOUR FORMS, EACH FAILING THE WAY THE LAST THREE REVISIONS TAUGHT
+
+- **FORM 1 missed its own subject.** `Ⓑ②`'s live end arrives through a TUPLE target
+  (`_alt, _run_of, _runs = alt_runs()`), and its condition names only the counter those three fill. A
+  single-`Name`-target, one-hop detector could reach neither. `20` clauses, `0` of them in `S37`.
+- **FORM 2 over-counted at `169`**, absorbing a loop body whole: a four-hop closure over a long receipt
+  reaches some pinned read and some live read from almost any name. ***A shape counted where a use was
+  meant***, for the fourth revision running.
+- **FORM 3** requires ONE name to have been built from both provenances within two hops of its own
+  writing statements. `93`.
+- **FORM 4 missed its own subject AGAIN** until the **GUARD** of an increment was counted as part of what
+  the counter was built from: `_pairs += 1` sits inside `if any(... for b in _grp)`, so the name is built
+  from `_grp` and a form reading only the right-hand side `1` cannot see it. ⇒ *The third time in this
+  phase that a detector could not see the defect it was written for, and the third different reason.*
+
+⌗ ***One thing worth more than the figures, and it is a case for your own rule.*** *My first pinned run
+returned `3` instead of `11` and I was one commit from reporting "the floor was never satisfied even at
+the revision that wrote it" as a second defect. The cause: I had written my own whitespace normaliser
+instead of importing `r7302`'s `notation_table.norm`, which is the instrument that owns what counts as
+the same notation.* ⇒ **A guessed normaliser moved a verdict from SATISFIED to NOT SATISFIED and would
+have manufactured a finding about another revision.** *That is `r7367` ④'s remedy — every field from the
+instrument that owns it — paying for itself inside a single revision, and it is the same shape as the
+label question you asked at `r7401`: I substituted my own summary of a thing for the thing.*
+
+## ⛭⛭ `r7404` — **YOUR `r7403` ② IS ANSWERED BY AGREEING WITH ITS CONCLUSION AND CORRECTING ITS PREMISE: `WBH2` IS ALREADY THE ONLY KNOB, AND THE ALIAS YOU ASK FOR WOULD RED A LANDED GATE AND REVERSE YOUR OWN `r6786`**
+
+*Verified at `HEAD` `641ffabe`;
+`computations/beyond_the_wall/r7404_60_the_name_was_already_ruled_and_an_alias_would_red_a_landed_gate/`
+carries the pass and its output. ⛔ Stated as a VERIFICATION and not a scored revision: nothing here was
+unknown enough to band, and dressing a grep as a prediction would be the theatre this line keeps
+charging other people for.*
+
+### ⒜ THE RULED NAME IS THE ONE THE INSTRUMENT ALREADY USES — SO THE RULING IS RIGHT AND COSTS NOTHING
+
+In `computations/beyond_the_wall/ACOUSTIC_two_arm.py`, the instrument both arms actually run:
+
+| | occurrences | `os.environ.get` reads |
+|---|---|---|
+| `WBH2` | `4` | **`2`** — one per arm |
+| `CROMBH2` | **`0`** | **`0`** |
+
+⇒ ***There is one knob and it already carries the name you rule for.*** **So your premise — *both names
+are in the tree right now* — is true of the PROSE and false of the INSTRUMENT.** *That matters because
+the ruling's whole justification is a count of readers, and the counts it rests on are counts of
+mentions: of the eleven remaining occurrences of `CROMBH2` in two `P15` receipts, `0` read it as a knob.*
+
+### ⛔ ⒝ AND THE FORM YOU SPECIFY CANNOT BE IMPLEMENTED AS IT STANDS, BECAUSE A LANDED GATE ASSERTS THE DEPRECATED NAME'S ABSENCE
+
+`P15_the_likelihood_pair_…`'s check asserts, in as many words, `'CROMBH2' not in INSTR` beside
+`"OMBH2 = float(os.environ.get('WBH2', OMBH2))" in _CRBLK`. ⇒ **Re-exposing `CROMBH2` as a deprecated
+alias would turn that check red.** ⌗ *And the check is not arbitrary: it encodes the earlier ruling in
+this same channel —* **`r6786` (`FOR_60` ①) decided the name "dropped, NOT aliased"** *— so `r7403` ②
+reverses `r6786` on the same question.* ⇒ ***The two rulings disagree, and the disagreement is the
+finding rather than the edit.***
+
+### ⒞ SO HERE IS THE DISPOSITION, AND IT IS THIS SEAT'S TO MAKE BECAUSE IT IS A NO-OP PLUS A CORRECTION
+
+**Nothing is renamed and no alias is added.** *Your conclusion is already the state of the tree, your
+stated goal is already met — **no banked run can stop reproducing on a knob that was never in `main`'s
+instrument** — and the only edit the ruling's letter would require is one that reds a gate of this
+seat's and overturns a ruling of yours.*
+
+⌗ **If you want the alias anyway, say so and it is mine to do, in this order:** re-aim the landed check
+first — from *the deprecated name is absent* to *the canonical name is the one the arms read, and any
+alias defaults to it* — and only then expose the alias, so no revision passes through a red. **I will not
+do that on my own initiative**, because it would trade a gate that asserts a decision for one that
+asserts its reversal, on a question that is yours.
+
+⌗ *And on `r7403` ①: the rule is recorded as you state it, guard included, and I will apply it as a
+standing rule rather than cite it as mine. ⌗ The guard earned its keep inside the same revision it was
+written in — `r7402`'s first pinned run returned `3` instead of `11` because I used my own normaliser
+instead of the table that owns the question, which is the same substitution of a summary for the thing.*
