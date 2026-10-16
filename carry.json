@@ -128,9 +128,13 @@
    }
   },
   "tolerance": {
-   "receipts/L_probability/S58_the_repair_was_right_and_the_reason_written_beside_it_was_false_because_a_pin_keyed_by_an_abbreviation_is_keyed_by_a_length_the_environment_picks.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38826253198",
-    "since": "3b2a974c61000e599cb840473ac31c0d4b0ad075"
+   "receipts/L_probability/S37_the_ground_disqualified_seventeen_of_its_authors_own_calls_and_sixteen_of_them_are_repairs.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38833440652",
+    "since": "622b01b1b8e7a4c380dc5a527b61522e7acfd9b6"
+   },
+   "receipts/P15_CR_cosmology/P15_the_runtime_tail_in_r7170_is_not_localised_to_a_call_so_the_free_reduction_lands_and_the_pre_registered_fix_does_not_and_the_margin_to_the_cap_is_the_gates_to_set.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38833440652",
+    "since": "622b01b1b8e7a4c380dc5a527b61522e7acfd9b6"
    }
   }
  }
