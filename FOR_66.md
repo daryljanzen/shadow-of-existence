@@ -20438,3 +20438,62 @@ its own evidence. **A definitive `①`-against-`②` ruling against the register
 yours** — what I measured is the shape of each paragraph's claim. ⌗ Two instrument notes reported
 rather than smoothed: the host-paragraph lookup failed on `2` of `40` (sites `10`, `36`) on
 whitespace normalisation; both were read from the sentence alone and are marked.*
+
+## ⛔ `r7399+cc66.57` — **THE `fast` RED HAS FIVE CAUSES, NOT ONE. ⛔ ONE WAS MINE AND IS FIXED; ONE IS MECHANICAL AND PORTED; TWO ARE READINGS AND ARE YOURS**
+
+*Its own section because `.55` and `.56` are order answers and this is the trunk. **PR #461, draft,
+subscribed.** ⌗ Read from CI's own `FAILED` line on `ff5cd40fe`, which is `.55`.*
+
+> `⛔ FAILED: check_open_ledger check_open_ledger check_view_tables check_absence_claims check_pages_current`
+
+**I had been reporting one cause and there were five.** Separated by running each on a pristine
+`origin/main` worktree beside this branch, which is the only way to tell mine from inherited:
+
+| gate | on `main` | on this branch | whose |
+|---|---|---|---|
+| `check_absence_claims` | **PASSES** | FAILED | ⛔ **MINE** |
+| `check_view_tables` | FAILS | FAILS | inherited |
+| `check_pages_current` | FAILS | FAILS | inherited, mechanical |
+| `check_open_ledger` | FAILS | FAILS | inherited, a reading |
+
+### ⛔ ⒜ THE ONE THAT WAS MINE, AND IT IS THE GATE CATCHING ME DOING THE THING IT EXISTS FOR
+
+`corpus/check_frontier_delta.py`'s own docstring said `regen_frontier.py` *"appears nowhere in
+`.github/workflows/gates.yml`"* — ⛔ **a bare absence claim**, which is exactly what
+`check_absence_claims` is built to stop: *"**'My grep missed it' is not 'it is not there', and that
+collapse is what this gate exists for.**"*
+
+**Fixed by stating the search beside the claim rather than deleting the claim**, which the gate names
+as the wrong remedy: `grep -c 'regen_frontier' .github/workflows/gates.yml` → `0`;
+`grep -c 'argv\|--check' scripts/regen_frontier.py` → `3`, all three inside a runway STRING rather
+than code, so the generator parses no arguments and has no `--check` mode to call. ⌗ ⛭ *The claim was
+TRUE and was still a defect — and I wrote it in the docstring of a gate whose whole subject is a
+field nobody checks. `check_absence_claims` passes now.*
+
+### ✔ ⒝ PORTED, WITH THE REPO'S OWN TOOLING
+
+`check_pages_current` — **`paper_P16.html` was `440` bytes behind its `.tex`**, from your own `r7399`
+`P16` abstract edit. `scripts/gen_paper_html.py P16`. ⌗ *I read the diff as the gate instructs: it is
+your "`Open`—of the three below, two are frontiers this paper sets up to close and one a precision
+frontier the title does not stake itself on" catching up. The served book was still publishing the
+old two-item sentence.* **Green.** ⌗ ⛔ *This is the third P-page staleness this cycle (`P7` twice,
+`P16` once). A paper edit and `gen_paper_html.py` are not committed together, and nothing in `CI`
+fails until the next seat pushes.*
+
+### ⛔ ⒞ TWO ARE YOURS, AND NEITHER IS A NUMBER A PUSH CAN SUPPLY
+
+- **`check_open_ledger`** — three `CR_framework` qualifications with no verdict (`9177c52baf`,
+  `cf8bd7a858`, `db7d54f2d8`) and a `--rebuild` for `fb2d798ceb`. *Reported at `.52` and re-verified
+  on this tree.*
+- **`check_view_tables`** — ⛭ **new, and I am not guessing it.** `regen_frontier.py:KIND` carries
+  `8` live rows absent against a baseline of `7`, and the debt file is *"rewritten DOWNWARD only"*,
+  so recording the higher number is forbidden by design. The remedy is to **add the missing row's
+  `KIND`** — and `KIND` is `READ` or `BUILD`, *which is a judgement about whether a row's work is a
+  reading or a build.* The eight live rows without one are `PO-24` `PO-50` `PO-86` `PO-87` `PO-88`
+  `PO-89` `PO-90` `PO-91`; only `PO-78` has one. ⇒ ***Guessing `READ` or `BUILD` would publish a
+  false claim about whether that row's estimate is measured, in the one view that says so. Yours.***
+
+⌗ ⛭ **And a correction to what I told you twice:** I said `fast`'s remaining blocker was
+`check_open_ledger` alone. **It was one of four, and one of the four was mine.** *I had read the step
+record and stopped at the first cause rather than reading the whole `FAILED` line — the same shape as
+the `r7383` red, where I reported a fix and the layer behind it was still there.*

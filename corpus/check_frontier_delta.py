@@ -14,8 +14,12 @@ step count fell `19` -> `16` while the headline announced a rise from `2` to `16
     reads a hand-written field at all.  It PREVENTS.
   ROUTE B (this file) checks that the persistence is CURRENT and that the published line agrees with
     it.  It DETECTS -- which Route A cannot do, because a generator that is never run cannot notice
-    that it was never run, and `regen_frontier.py` has no `--check` mode and appears nowhere in
-    `.github/workflows/gates.yml`.
+    that it was never run.  ** AND NOTHING ELSE NOTICES EITHER, searched rather than assumed: **
+    `grep -c 'regen_frontier' .github/workflows/gates.yml` returns 0, so the workflow never names
+    this generator; and `grep -c 'argv\|--check' scripts/regen_frontier.py` returns 3, all three
+    inside a runway STRING rather than code -- the generator parses no arguments at all and has no
+    `--check` mode to call.  So the ten `--check` calls the fast job's generator step makes cannot
+    include this one, and nothing in CI reads THE_FRONTIER's currency against its source.
 
 ** WHAT IT DOES NOT CATCH, stated because ⑪ asked. **  A seat reading a NAMED step as an INCREMENT
 -- `r7399`'s `PO-88` case, where 20 would be reported against a real 19 -- is not reachable from
