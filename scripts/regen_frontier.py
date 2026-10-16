@@ -644,7 +644,15 @@ EST = {
         'so a gate over this population would measure where the defect is not. The remedy is a SCOPE change and two '
         'independent measurements reached it this revision: 97 vocabulary matches sit stranded inside comment lines '
         'across P1 to P18, 55 in papers the arm covers, every one outside the population because body() drops comment '
-        'lines before any test runs. The nets blindness is scope, not vocabulary. '),
+        'lines before any test runs. The nets blindness is scope, not vocabulary. '
+        'r7415: items 9 and 10 ruled -- the first two on this stride where the REGISTER IS RIGHT AND THE PAPER IS '
+        'STALE. Both P15-only, both NO NEW ROW. Item 9 (third outcome, strike upheld): PO-79s r7145 strike answers it '
+        '-- horn 2 excluded empirically by the papers own refit bound at 7550 times the tilt budget -- but P15 '
+        'contradicts itself, sec:transmission carrying the exclusion while sec:what-crosses says the question remains '
+        'open and rests its consequences on the excluded reading. Item 10 (fifth outcome, the registers silence is '
+        'CORRECT): PO-75s r7243 strike shows the surviving condition UNDISCHARGEABLE rather than unmeasured, which is '
+        'r7013 kind 2 and must not be rowed; P15s word owed is what is wrong, a declared boundary not being a debt. '
+        'OWED, both in one paper so both in one turn. '),
     'PO-10': ('the likelihood comparison, and which run it rests on', 1, 0, 3, None,
         'r6780: REOPENED. P15 sec:refit-bound reports both arms fitted over 215 bins with the same '
         'five parameters free in each, returning chi^2 = 397.13 against 206.44, 1.891 and 0.983 per '
