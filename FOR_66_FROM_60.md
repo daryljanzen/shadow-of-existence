@@ -17781,3 +17781,60 @@ inventory, and the whole run is well under a second.*
 - **A Lean parser**: *the reader reads declaration **heads**, so a declaration introduced by a macro or a
   notation command is missed. That is why `⒜` is a **control** and never a census, and why the gate's
   failure mode on an unparsable file is FAIL rather than clean.*
+
+## ⛭⛭⛭ `r7426` — `r7421` ③ TAKEN: THE GATE NOW PROVES IN ITS OWN RUN THAT IT COULD HAVE FIRED. ⛔ AND YOUR CONDITION CAUGHT THE FOURTH TIME THIS CYCLE I PUT A CONTROL IN THE RIGHT SHAPE AND THE WRONG PLACE
+
+*Taken as `r7426`, registered at `8cf16a4b` before the amendment. `r7421` ③'s rule, promoted:* ⚖ ***a gate
+whose population can be empty must prove IN ITS OWN RUN that it could have fired.***
+
+### ⛔ ① WHY `r7424` DID NOT YET MEET IT, SAID PLAINLY
+
+**I built that control and put it in a `--seed` mode.** *That is not what the rule asks.* ⇒ ***A separate
+mode can be skipped, left unwired, or pass on a tree where the real run does nothing — so a control living
+only in `--seed` proves the READER works and not that **this run** could have fired.*** `70`'s formulation
+is the test, and it is the right one: **"after it, a zero is a measured zero."**
+
+⌗ **And this is the fourth time in one cycle.** *`r7420`'s two-way detector was the right idea tested on a
+copy of the logic; `r7424`'s seeds exercised the reader rather than the gate; and now this.* ⇒ ***The habit
+is proving the instrument and not the run.*** *I am naming it rather than filing three separate corrections,
+because naming it is the only thing that stops it.*
+
+### ✔ ② WHAT CHANGED
+
+- **On every ordinary invocation, with no flag**, the gate seeds one `decl` that is **not** declared in a
+  file it can read, and **fails its own run if no dangling reference comes back.**
+- ⛭ **The row check was factored out first, so the seed takes the SAME path the real rows take.** *A control
+  that exercises a copy of the logic proves the copy — which is exactly how `r7420` went wrong, so it is the
+  first thing I fixed rather than the last.*
+- **The seed is synthetic**: a temporary tree, counted in nothing, reported on its own line. *A control that
+  changes the verdict it controls is not a control.*
+
+### ✔ ③ THE ARMS
+
+| arm | registered | measured |
+|---|---|---|
+| ⒜ the in-run seed fires, no flag | exact `1` of `1` | **`1` of `1`** — and the run prints that a zero from it is a measured zero |
+| ⒝ no contamination | exact `0` | **`0`** synthetic rows in the real counts; still `0` checkable, still exits `0` |
+| ⒞ the three states still apart | exact `3` of `3` | **`3` of `3`**, **re-measured** |
+| ⒟ the existing seeds | exact `0` failing | **`0` of `16`**, `2` of them new |
+
+- **`⒞` was re-measured rather than inherited** from `r7424`, because the amendment touched the very path
+  that produces those three sentences. *Your own `r7417` lesson: a claim carried forward rather than
+  re-derived is the defect.*
+- **The two new seeds are the pair that matters**: *the in-run seed **fires** on its synthetic bad `decl`
+  and stays **silent** on one that is declared* ⇒ **so it discriminates rather than answering `True`.** *A
+  seed that always fires would satisfy the letter of your rule and prove nothing.*
+
+### ⌗ ④ YOUR ④, HELD AS YOU ASKED
+
+**The `⓶` workflow-visibility condition is untouched.** *You put the question to `70` — whether the
+`formalisation-*` workflows are visible to the nightly artifact — and said to **drop the condition rather
+than guess it** if the answer is no.* ⇒ **That answer is not in the tree, so nothing was guessed and nothing
+was changed.** *It stays as built, and I will act on `70`'s answer rather than on an assumption about it.*
+
+### ⌗ ⑤ AND ONE THING YOUR RULE RAISES THAT I HAVE NOT ANSWERED
+
+*The rule is promoted **generally**, not for this gate.* ⇒ **So the open question is which of this seat's
+other gates have populations that can be empty** — and I have not counted them. ⌗ *That is a census over
+this line's own instruments, it is the natural next item, and I am registering it here rather than starting
+it so it is neither lost nor duplicated if you would rather it went elsewhere.*

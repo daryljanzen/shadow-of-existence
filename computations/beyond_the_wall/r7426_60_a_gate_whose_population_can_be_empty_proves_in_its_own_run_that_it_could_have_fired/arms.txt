@@ -1,0 +1,27 @@
+====================================================================================================
+r7426 (60) -- THE GATE PROVES IN ITS OWN RUN THAT IT COULD HAVE FIRED
+  frame 8cf16a4b;  bands registered in PREDICTION.md at that commit, before the change
+====================================================================================================
+
+⒜ THE IN-RUN SEED, on an ordinary run with NO flag: ** 1 of 1 **
+      the seeded bad `decl` fired through the real row path: True
+      and the run says a zero from it is a MEASURED zero:    True
+    ⇒ HIT -- *`r7421` ③'s rule is now BEHAVIOUR rather than a comment: the gate fails its own run if the seed does not fire.*
+
+⒝ NO CONTAMINATION: ** 0 ** synthetic row(s) in the real counts, against a point prediction of 0
+      the gate still reports `0` checkable on today's tree: True
+      and still exits 0
+    ⇒ HIT -- *a control that changed the verdict it controls would not be a control.*
+
+⒞ THE THREE STATES STILL PRINTED APART: ** 3 of 3 **, re-measured rather than inherited from `r7424`
+      `0` CHECKABLE distinguished from `0` dangling references: True
+      a DANGLING `decl` fails, named as dangling:               True
+      an UNREADABLE file fails AS UNVERIFIABLE:                 True
+    ⇒ HIT -- *the amendment touched the path that produces those sentences, so `r7424`'s figure is not inherited (`r7417`'s own lesson).*
+
+⒟ THE SEEDS: ** 0 ** failing of 16, against a point prediction of 0;  `--seed` exits 0
+    ⌗ 2 of them are new here, and they are the pair that matters: the in-run seed FIRES on its synthetic bad `decl` and stays SILENT on one that is declared ⇒ ** the seed discriminates rather than answering `True` **.
+
+⌗ NOT TOUCHED: the `⓶` workflow-visibility condition.  *`r7421` ④ puts that question to `70` and says to drop the condition rather than guess if the answer is no; the answer is not in the tree, so nothing was guessed and nothing was changed.*
+
+  price: 0.1 s
