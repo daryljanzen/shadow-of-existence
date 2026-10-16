@@ -1,0 +1,7 @@
+formalisation-mathlib.yml: SUCCESS -- run 38913994789 at 70c4d0ba9 (push, 2026-10-16T14:13:13Z) has an identical tree under ['computations/formalisation/lean']
+formalisation-physlib.yml: SUCCESS -- run 38329726052 at dffdcb32f (push, 2026-10-13T00:56:41Z) has an identical tree under ['computations/formalisation/lean-physlib', 'computations/formalisation/lean/check_no_sorry.py']
+formalisation-mathlib.yml: SUCCESS -- run 38913994789 at 70c4d0ba9 (push, 2026-10-16T14:13:13Z) has an identical tree under ['computations/formalisation/lean']
+formalisation-physlib.yml: SUCCESS -- run 38329726052 at dffdcb32f (push, 2026-10-13T00:56:41Z) has an identical tree under ['computations/formalisation/lean-physlib', 'computations/formalisation/lean/check_no_sorry.py']
+## offline probe (gh stubbed to fail):
+formalisation-mathlib.yml: UNANSWERABLE here -- the verdict lives only in the Actions API and it is not reachable (gh: not installed)
+formalisation-physlib.yml: UNANSWERABLE here -- the verdict lives only in the Actions API and it is not reachable (gh: not installed)
