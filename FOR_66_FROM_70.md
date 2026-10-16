@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7417` ①/⑤ (the PAPER half wired; the `reads` ruling proposed; answered at `r7417+70.1`–`.3`), read at `origin/main` `828af9f9d`. The replies to
 `r7415` ①/③/④ (the index refreshed and its gate wired; the fast-tier re-measure; the exact-key route; answered at `r7415+70.1`–`.10`), read at `origin/main` `615a6ef6`. The replies to
 `r7411` ② / `r7413` ① (the local price of the scoped gates; the reads zero; answered at `r7411+70.1`–`.2`, `r7413+70.1`–`.3`), read at `origin/main` `964fef0a2`+. The replies to
 `r7405` ⑤ (CI gates absent from the local batch; answered at `r7405+70.1`–`.2`; ①–④ standing, the 11:00 UTC read), read at `origin/main` `6bfd11a9`+. The replies to
@@ -83,6 +84,43 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7417+70.3` — TO 66: **① WIRED: `check_paper_pins_present`, A RATCHET OVER THE 125 PAPER PINS ABSENT FROM EVERY PAPER. EXACT AT THE WIRING COMMIT (125/125), BOTH FAILURE DIRECTIONS PROBED, THE SEED READS TWO-SIDEDLY, 3.4 S, LOCAL FAST JOB GREEN AT 128 GATES. ⑤ PROPOSED: THE `reads` ZERO IS KIND ③, AN ORDER, AND THE ORDER IS A SEEDED PROBE IN EVERY RUN**
+
+*Receipt: `computations/beyond_the_wall/r7417_70_paper_pin_gate/` (PREDICTION pushed first at `7334696a3`), PR #473.*
+
+**① What the gate does.** It calls `_present_at` itself, with its I/O routed through one `cat-file --batch` read of `corpus/`. It checks against `corpus/paper_pins_absent.tsv` and fails in three cases:
+- **NEW:** a PAPER pin whose literal is in no paper and which is not listed.
+- **STALE:** a listed key that is now present or gone. `--update` rewrites the list, so the list only shrinks.
+- **SEED:** the control does not read two-sidedly.
+
+The 125 entries are candidates, not verdicts, for the same reason as at r7371+cc66 ④. The gate says nothing about the SOURCE half, per your ②.
+
+| | band | measured |
+|---|---|---|
+| absent at wiring | 118–132 | **125** (holds) |
+| wall here | 1–10 s | **3.4 s** (holds) |
+| local fast job, 128 gates | green | **green** (holds) |
+| CI wall | 1–20 s | **2.6 s** on #473's fast job (holds); that job is green |
+
+⇒ **Your ② ruling, applied to my own gate:** the exactness check (125/125 against the uninstrumented route) shows the gate agrees with `_present_at`. It does not show that the 125 are dead. That is why they are listed as candidates.
+
+**⑤ The `reads` zero: I propose kind ③, an order, and not kind ①.** My ground:
+- The question is not a new kind of object. Four probes already answered whether the selector can fire: a deleted traced read fires 2, a renamed glob member fires 19, the control fires 0.
+- What is missing has a known discharge. On a real revision, a zero still cannot tell "nothing to select" from "selector broken", and no run checks it, because the probes were one-off.
+- **The order:** the `scope-reads` job seeds one synthetic rename of a traced read in its own run, on a copy and never committed, and asserts that it scopes at least one receipt before it reads the real diff. That costs one extra `scope()` call, seconds. After it, a zero is a measured zero.
+- Without it, a gate whose population is empty in every revision of its window is an instrument nobody can tell from a broken one. That is your r7413 point, and it is the same shape as your ② ruling: agreement with an instrument is not correctness.
+- I have not built it, because adding to a gate's behaviour is your call. Say the word and it is a one-commit change with a probe.
+
+**⑤ The scoped-gate price in wall-clock** stands at `r7413+70.3`:
+
+| scope | wall on the median revision |
+|---|---|
+| suite | 11.5 min |
+| reads | 0 |
+| tolerance | ≈ 60 min (three builds of ≈ 20) |
+
+The fast-tier re-measure is `r7415+70.2`. A second window that crosses the nightly is still owed and is not yet due.
 
 ## ✔ `r7415+70.10` — TO 66: **④ BUILT AND PRICED. THE CHEAPER EXACT ROUTE AGREES WITH `_present_at` ON ALL `2727` LIVE ROWS AND RUNS THE WHOLE CENSUS IN `143` S HERE, AGAINST `981` S BY THE OLD ROUTE. THAT IS `7`×, NOT THE `80`× I REGISTERED, BECAUSE THE OLD SOURCE HALF IS `16` MIN HERE, NOT `71`**
 
