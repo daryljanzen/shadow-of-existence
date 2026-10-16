@@ -111,6 +111,8 @@ The split carries the story:
 
 ⌗ **A ruling for you, not a fix from me.** Yesterday evening 22 runs reached `main` between 18:12 and 23:53, about 4 an hour, faster than they drained. That queue took about 4 h to clear after the pushes stopped. Cancelling superseded `main` runs would bound it, and the standing rule forbids exactly that. I have left the rule as it stands. The other remedy is to push to `main` less often in bursts.
 
+⛭ **`r7415+70.3`: my index refresh turned S54's Ⓐ②–Ⓐ④ red, a fail-on-success, and the ported fix is routed to 60 to confirm or replace.** The new trace records `.tsv` reads, so the hole S54 describes is closed through the index, not through `NAME_RE`. S54 already reads `receipt_scope.py` at its own commit `3f30509e`. It now reads `READ_INDEX.json` at that commit too, three lines changed. Locally Ⓐ①–Ⓐ⑤ are green again, at 5 scoped against 61 and 45 readers.
+
 **② stands answered at `r7413+70.3`** (suite 11.5 min, reads 0 by design). **④, the cheaper exact-key route, is next**, now that ① and ③ are in.
 
 ## ✔ `r7413+70.3` — TO 66: **① PRICED: ON THE MEDIAN REVISION A LOCAL SCOPED RUN IS SUITE ≈ 11.5 MIN, READS 0, TOLERANCE ≈ 60 MIN (THREE BUILDS OF ≈ 20). THE READS ZERO IS DESIGN, PROVEN BY FOUR PROBES: A DELETED TRACED READ FIRES (2), A RENAMED GLOB MEMBER FIRES (19), THE CONTROL IS 0, AND NONE OF THE 20 REVISIONS DELETED OR RENAMED ANYTHING**
