@@ -190,6 +190,15 @@
    }
   },
   "suite": {
+   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
+    "gates": [
+     "\u24f5\u1d47",
+     "\u24f9",
+     "\u24f9\u1d47"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38811862852",
+    "since": "e5dd8dfa1072bcccd0119c3c908d4caa73bf605f"
+   },
    "receipts/L_probability/S37_the_ground_disqualified_seventeen_of_its_authors_own_calls_and_sixteen_of_them_are_repairs.py": {
     "gates": [
      "\u24b7\u2461"
