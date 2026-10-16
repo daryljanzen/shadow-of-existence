@@ -18122,3 +18122,55 @@ the figure the first reading would have published, `6` of `47` asserting with `0
 wrong in both columns at once.*** ⌗ *This is the first member of `PO-78`'s family where the
 registration predicted the failure mode and named the tell before the instrument ran, which is the
 only reason the `0` was not published.*
+
+## ⛔⛭⛭ FOUND WHILE WATCHING `r7430`'s OWN CI, AND IT IS `r7422`'s DEFECT ONE LEVEL UP: **A CANCELLED JOB LEAVES AN OLDER RUN'S VERDICT STANDING IN THE CARRY, AND NOTHING MARKS IT STALE**
+
+*Not a revision and nothing is built for it — a measurement routed with its remedy, because the file that
+would carry the fix is `.github/workflows/gates.yml` and that is not this seat's.*
+
+### ⛔ ① WHAT HAPPENED, MEASURED
+
+*On `r7430`'s head the `scoped — the tolerance perturbation` job ran **`19:06:34` to `21:11:34` —
+`125` minutes against its own `timeout-minutes: 120`** — and GitHub cancelled it. Its `probe on three
+builds` step reads `cancelled`.*
+
+⛔ ***AND ITS `record` STEP DID NOT RUN AT ALL: its conclusion is `null`.*** *The step is written
+`if: always() && steps.scope.outcome == 'success'` — **so the protection was already intended, and
+`always()` did not survive the JOB being cancelled rather than a STEP failing.***
+
+⇒ ***So the carry's `tolerance` entry for this branch is stamped by run `38868241346` — an OLDER run,
+on an older head — and there is nothing in the ledger saying so.*** A reader asking "what did the
+tolerance class say about this head" is handed a verdict that was never measured on it.
+
+### ⛭⛭ ② WHY THIS IS THE SAME SHAPE AS `r7417` ① AND NOT A NEW ONE
+
+*`r7422` made `never probed` a distinct state **inside** a run, so a zero could not be read as a
+verdict. **This is the same confusion one level up**: a run that never finishes leaves the previous
+run's record in place, so the LEDGER cannot tell "probed, and this is the answer" from "the probe was
+cancelled and you are reading something else."*
+
+⚖ ***A RECORD WRITTEN ONLY BY A RUN THAT COMPLETES IS A CLAIM ABOUT THE LAST RUN THAT COMPLETED, NOT
+ABOUT THE HEAD BEING READ*** — which is `r7411`'s rule (a copy of a list is a claim about the list at
+the moment it was copied) applied to a CI record rather than to a lint line.
+
+### ⚖ ③ THE REMEDY, AND I AM DELIBERATELY NOT PICKING AMONG ITS THREE BRANCHES
+
+*Because the three differ in what they cost you, not in whether they work, and the file is yours:*
+
+⒜ **Stamp the head on the record and have the reader refuse a mismatch** — the strongest, and it is
+`70`'s `refs/ci/lean` idiom exactly: *a record whose key does not match the tree being read is STALE
+and can never read green.* `scripts/red_carry.py` is this seat's, so **I can build this half** the
+moment you say which way; it needs no workflow change at all.
+⒝ **Make the record unorphanable** — fold the `--record` call into the probe step's own `trap`/`finally`
+so a job cancellation cannot skip it. *One workflow edit, and it is the only branch that keeps a
+cancelled run's partial information.*
+⒞ **Raise `timeout-minutes` past the real cost** — *the cheapest to type and the one I would not take
+alone: it treats a `125`-minute probe as the expected cost rather than measuring why three builds now
+cross two hours, and the next inventory growth puts it back.*
+
+⌗ ***My recommendation: ⒜ now and ⒝ with it.*** *⒜ is mine to write and makes the staleness visible
+without touching your file; ⒝ is yours and is what stops the orphaning at source. ⒞ I would hold until
+the probe's own cost is measured, which is a separate question and not one I have an answer to.*
+
+⚠ **And the one re-run this PR has is NOT spent on it.** *A `125`-minute job re-run against a
+`120`-minute limit comes back cancelled, so the re-run would buy nothing and the budget is kept.*
