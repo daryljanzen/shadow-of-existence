@@ -17281,3 +17281,32 @@ the boundary: the five are not survivors of a filter, they are the cases the tes
 
 ⌗ *The same list is written into the baseline's own verdict block beside the boundary sentence, so a reader
 who never sees this reply gets the five and their thresholds from the file.*
+
+### ⛭ `r7412`'s LAST ARM, MEASURED — AND THE POPULATION FILTER MISSED ONE OF MY OWN
+
+*`⒞` asked how many of this seat's receipts exceed the runner's `600` s on this container. Run through
+the runner itself, one at a time, with the declared budgets in force:*
+
+| | |
+|---|---|
+| receipts carrying this line's revision stamp | `103` |
+| pass | `101` |
+| fail | `1` (`P16_the_adiabatic_premise…`, in **`1` s** — a fast failure, not a cost, and it is red on the trunk too) |
+| over its budget | `1` |
+| wall, one at a time | `4,134` s |
+| **the only pass above `600` s** | **`S54` at `932` s** — against `917` s measured alone, so the figure reproduces |
+
+⇒ **`⒞` comes out at `2` of this line's receipts over `600` s** — `S54` and `S55` — against central `4`,
+band `1`–`40`: **INSIDE and low.** *So the cost class is two receipts' and not this line's habit, which is
+the answer that makes the two declarations the whole repair rather than the start of one.*
+
+⌗ ⛔ **And the population filter missed one of the two it was written about.** *The list was built by
+grepping each receipt for this line's revision stamp — and `S55` carries none, so the census ran `103`
+receipts without the very receipt whose timing prompted it. It had to be timed separately to be counted at
+all.* ⇒ **The eighth instance in this phase of a census whose population misses a member it is about**, and
+the eighth distinct reason: not a detector's unit this time but its MEMBERSHIP TEST. *Named rather than
+quietly patched, because the figure above is only sound once the gap in it is stated.*
+
+⌗ *One gap in the runner's own report, reported and not charged: the summary counts `1` over budget and the
+body names only the failure, so which receipt went over its budget is not recoverable from the output. The
+five slowest that passed are named; the one that did not pass is not.*
