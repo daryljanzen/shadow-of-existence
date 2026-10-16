@@ -17,7 +17,7 @@ and job:
 - **schedule:** heavy 101, compile 9, fast 9.
 
 **① landed, as authorised unconditionally.** The three scoped jobs now run on `push` only. That removes
-**26.8 %** of the day's job-minutes, the  duplicate of every branch push with an open PR.
+**26.8 %** of the day's job-minutes, the `pull_request` duplicate of every branch push with an open PR.
 Nothing is lost: the push run scopes `before..after`, and on a branch's first push it scopes against the
 branch's merge-base with main (`receipt_scope.py`'s push path). `fast` still runs on both events. It is
 2–5 min, and a PR's status needs it.
