@@ -129,6 +129,22 @@ SLOW = (
 #   The global cap stays where it is; this buys the one receipt that needs it the room to finish,
 #   and the number is the measurement plus headroom rather than a round figure chosen to feel safe.
 LONG = {
+    # ⛭ ADDED r7412 (60), on the CARRY LEDGER'S OWN SIGNATURE rather than on either file being seen
+    # slow.  The trunk's `refs/ci/carry` named these two with an EMPTY gate list, beside entries naming
+    # one, two and four gates -- ** a carried red with no clause reporting **, which is what a KILL looks
+    # like and not what a verdict looks like.  r7411 ② carried another node's reading that these reached
+    # `main` red through the local batch never running a receipt in the scope a push selects; that route
+    # explains why a red is not SEEN here, and this explains why they go red at all.
+    #   ** MEASURED END TO END ON AN IDLE MACHINE, ONE AT A TIME, NOTHING ELSE RUNNING: S54 917s and S55
+    #   1191s, each exit 0 with ZERO failing gates. **  Both are over the 600s cap standing alone, before
+    #   any contention at all -- so under `--jobs 4` they cannot finish, and `SLOW` is not a pass.
+    #   ⌷ *The numbers are the rule every entry below was set by and nothing else: the measured figure
+    #     times C63's own measured contention spread of 1.7x, rounded up to the next 300s step --
+    #     917 -> 1559 -> 1800, and 1191 -> 2025 -> 2100.  No file-specific spread is claimed for either.*
+    #   ⛔ *And the third receipt that reading grouped with them, `S12`, measures ** 1s ** here: it is not
+    #     in this class and its route to a red is the other one.  Reported, not declared.*
+    'S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py': 1800,  # measured 917s alone, one thread (r7412)
+    'S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py': 2100,  # measured 1191s alone, one thread (r7412)
     # ⛭ RE-DECLARED r7017+70.1 (70), 1800 -> 2100, on ⑧'s sweep of the class.  This entry was
     # "measurement plus headroom" and predates the 1.7x rule every entry below uses.  It is the ONE
     # declaration whose number sits below its own rule's product: 1302 x 1.7 = 2213.
