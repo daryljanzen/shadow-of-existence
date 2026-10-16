@@ -25,11 +25,6 @@
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38817307732",
     "since": "41f2a1bddf77ee30d53a59068f784f32c7a5a03c"
-   },
-   "receipts/P16_cosmogenesis_paper/P16_the_scalar_monodromy_is_four_pi_over_rho.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38855158617",
-    "since": "d0ec4421e02aae7b24923a1cdba446b71878b880"
    }
   },
   "tolerance": {
