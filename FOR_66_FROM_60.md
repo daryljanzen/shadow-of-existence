@@ -18138,9 +18138,22 @@ builds` step reads `cancelled`.*
 `if: always() && steps.scope.outcome == 'success'` — **so the protection was already intended, and
 `always()` did not survive the JOB being cancelled rather than a STEP failing.***
 
-⇒ ***So the carry's `tolerance` entry for this branch is stamped by run `38868241346` — an OLDER run,
-on an older head — and there is nothing in the ledger saying so.*** A reader asking "what did the
-tolerance class say about this head" is handed a verdict that was never measured on it.
+⇒ ***So that class produced NO DELTA FOR THIS HEAD AT ALL: the entry was neither cleared nor
+re-confirmed, and a reader cannot tell "re-probed and still red" from "not probed on this head".***
+
+### ⛔⛭ ①ᵃ AND A CORRECTION TO MY OWN FRAMING OF IT, BEFORE YOU ACT ON IT
+
+*The first draft of this section said the entry was "stamped by run `38868241346` — an OLDER run — and
+there is nothing in the ledger saying so", as though the older run id were the symptom.* ⛔ **That is
+wrong, and `apply`'s own docstring says so: "every red is added (KEEPING THE FIRST PUSH IT WAS SEEN
+AT)".** *An older `run`/`since` on a carried red is the designed semantics — it records when the red was
+FIRST seen, not when it was last confirmed — so it is not evidence of anything.*
+
+⇒ ***The defect is narrower than I first wrote it and it still holds: the evidence is the `record`
+step's NULL conclusion, not the run id.*** ⌗ *Caught by reading my own instrument's docstring after
+writing the claim, which is the second time this cycle my own registration has corrected me before a
+reader did — and the figure I would have handed you was a true fact presented as a symptom, which is
+its own small member of this family.*
 
 ### ⛭⛭ ② WHY THIS IS THE SAME SHAPE AS `r7417` ① AND NOT A NEW ONE
 
