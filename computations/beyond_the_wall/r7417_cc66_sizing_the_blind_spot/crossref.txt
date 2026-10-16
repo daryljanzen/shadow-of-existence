@@ -1,0 +1,31 @@
+  CROSS-REFERENCE EXPOSURE -- a row whose own section held, pointing at a section whose ground moved
+
+    sections whose ground moved: 5
+      P15  What crosses, and what does not
+      P15  What the progenitor supplies: the transmission proof
+      P15  What the substrate determines: the amplitude floor and the classical c
+      P7  Frontiers, boundaries, and what would re-open them
+      P7  Null-Boundary Correspondence
+
+  ⇒ ADDITIONAL exposed rows, not counted by the registered method: 5
+    registered method        7
+    + cross-reference        5
+    = exposure, both routes  12 of 257 = 4.7 %
+
+    by verdict among the additional rows: {'POINTER': 1, 'NOT-OPEN': 2, 'OPEN': 2}
+
+      [P7] POINTER   ref{sec:frontiers} -> Frontiers, boundaries, and what would re-ope
+            sits in: Introduction
+            What the framework does not yet build is set out as its open problems at the close (\S\ref{sec:frontiers}): foremost the Standard-Model matt
+      [P7] NOT-OPEN  ref{sec:frontiers} -> Frontiers, boundaries, and what would re-ope
+            sits in: The Information Paradox
+            \emph{No information is destroyed on the realised spacetime; a basis is selected on it.} The crossing itself is settled on both halves, and 
+      [P7] NOT-OPEN  ref{sec:frontiers} -> Frontiers, boundaries, and what would re-ope
+            sits in: Null--Boundary Correspondence and SdS Entry Geometry
+            What this identification implies for the post-horizon evolution---the dynamics on the cosmological side of the correspondence---is fixed by 
+      [P7] OPEN      ref{sec:frontiers} -> Frontiers, boundaries, and what would re-ope
+            sits in: The general reach: the symmetry-reducible sector as one substrate's cuts
+            This reach answers, for the reducible sector, the classification question this programme places on the table (\S\ref{sec:frontiers}): how mu
+      [P15] OPEN      ref{sec:transmission} -> What the progenitor supplies: the transmissi
+            sits in: Introduction: the cosmological theory and its scalar perturbation sector
+            This paper develops that cosmological theory in the form its observational tests require (\S\ref{sec:background}) and completes it with the 
