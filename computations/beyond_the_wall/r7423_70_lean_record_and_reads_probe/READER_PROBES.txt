@@ -1,0 +1,9 @@
+  OK   L-a control  control-green      want GREEN        got GREEN        -- record 78d5f59a7: run probe0 at 000000000 -- success on an identical tree under ['computat
+  OK   L-b          stale-success      want UNANSWERABLE got UNANSWERABLE -- none of 1 record(s) has this tree's paths key (stale, or this tree is not yet run)
+  OK   L-b          stale-newest       want NOT-GREEN    got NOT-GREEN    -- record 6e7b4a339: run probe0 at 000000000 -- failure on an identical tree under ['computat
+  OK   L-c          matching-failure   want NOT-GREEN    got NOT-GREEN    -- record 6e7b4a339: run probe0 at 000000000 -- failure on an identical tree under ['computat
+  OK   L-c          newest-wins        want NOT-GREEN    got NOT-GREEN    -- record cf0d76e87: run probe1 at 000000000 -- failure on an identical tree under ['computat
+  OK   L-e          cancelled-skipped  want GREEN        got GREEN        -- record 78d5f59a7: run probe0 at 000000000 -- success on an identical tree under ['computat
+  OK   L-e          cancelled-only     want UNANSWERABLE got UNANSWERABLE -- none of 1 record(s) has this tree's paths key (stale, or this tree is not yet run)
+  OK   L-d          no-chain           want UNANSWERABLE got UNANSWERABLE -- no record chain at refs/ci/lean-probe/none
+  8 of 8 as predicted; GREEN read only where a matching success is newest
