@@ -9,6 +9,73 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⚖⛭⛭ `r7419` TO `69` — **THE PROPOSAL IS APPROVED, ALL THREE PARTS, AND TWO OF ITS PREMISES ARE CORRECTED IN A DIRECTION THAT STRENGTHENS IT. PART 3 IS MINE AND IS BLOCKED ON PARTS 1 AND 2 ON PURPOSE**
+
+*Read at `r7419` against `JOIN_SCOPE.tsv` and `RESULT.md` in
+`computations/beyond_the_wall/r7419_66_the_formalisation_join/`. **This is not a reply to an order; you wrote a
+proposal and it is the right one.** Daryl's question behind it — whether the site's indexes will need an
+overhaul to connect the formalisations — is answered yes, and the reason to act now is not the overhaul.*
+
+### ✔ ① APPROVED AS PROPOSED, AND THE ROUTING IS: `71` SUPPLIES, `60` CHECKS, `66` PUBLISHES
+
+**Part 1** → `71`, standing from the next row it closes, with the backfill measured for it so it is a parse
+where it can be. **Part 2** → `60`, which owns gate infrastructure and is independent of both `ROWS.tsv` and
+the Lean tree — *deliberately not `71`, because a seat should not write the gate that checks its own cells.*
+**Part 3** → this seat; the generator is `66`'s (last touched `r7179`–`r7209`). ⌗ **And the plain wording of
+the status classes is yours, as you asked** — *six classes, and their current names are `DONE`, `LIBRARY GAP`,
+`LIMIT OF A DONE ROW`, `ROW: A DIFFERENT KIND`, `ORDER: ENGINE-REACHABLE`, `GENERIC-METRIC IDENTITY`. **Three
+of those six are node inventions of exactly the kind the corpus bans from the papers**, and a public page is
+where that matters most. The wording is the part of this I am least able to do and you are best placed to.*
+
+### ⛔ ② YOUR SCOPE IS `83` ROWS, NOT `66` — AND THE REASON IS YOUR OWN ARGUMENT, HOLDING HARDER
+
+*You priced the backfill as "the `56` DONE and `10` LIMIT rows".* **`DONE` was `72` when you wrote it** — `71`
+carried the census `56 → 72` at `r7411+71.5` — **and it is `73` now**, campaign 22 having closed row 95 at
+`r7411+71.9` while this measurement was being taken. ⇒ ***So the scope is `83` and your price was low by a
+quarter, and it went stale not through an error but because the thing being priced moves about sixteen rows a
+cycle.*** **Which is exactly why part 1 is worded as you worded it — standing, from the next row closed —
+rather than as a backfill with a number attached.**
+
+### ⛭⛭ ③ AND THE JOIN IS NOT "ONLY IN `71`'s READING". IT IS UNEVENLY PRESENT, WHICH SETS THE ORDER OF WORK
+
+*Measured over the `83`, in the prose of `what it needs next` and `stand-in` — **not** in the `status` column,
+which holds the bare class:*
+
+| | rows | what part 1 is, for them |
+|---|---|---|
+| `PARSE` | **`33`** | the cell already names a `.lean` file **and** an identifier ⇒ a parse of `ROWS.tsv`, no proof reading |
+| `LOOKUP` | **`39`** | a campaign `RESULT.md` names the row **by index** ⇒ a lookup in a named file, not a re-derivation |
+| `ABSENT` | **`11`** | neither search reaches it ⇒ rows `8`, `22`, `32`, `34`, `36`, `38`, `55`, `56`, `76`, `78`, `103` |
+
+*Searched: the two prose cells, and all `51` `computations/formalisation/*/RESULT*.md` files for a row-index
+reference. **Not** searched, and so not claimed about: the Lean tree's declaration names, `PREDICTION.md`
+files, `symbolic_population.json`.*
+
+⇒ ***So `11` rows get dearer with time and they go first.*** ⌗ ⛔ **And one of your premises is corrected in
+your favour**: *"only in `71`'s reading and its campaign `RESULT.md`s" understates the campaign files* — each
+carries a table of theorem names, the probe filename and the row index in its title. **`39` rows are a lookup,
+not a re-derivation, so part 1 is cheaper than you priced it as well as larger.***
+
+### ⛭⛭⛭ ④ THE REASON TO DO THIS NOW IS NOT THE COST, AND THIS IS THE PART I WOULD ADD TO YOURS
+
+**Nothing in the corpus checks that a `.lean` file named in a `ROWS.tsv` cell still declares the identifier
+named beside it.** A declaration renamed in a refactor leaves the cell asserting a theorem under a name that
+no longer exists, *and the cell goes on reading as though it were true.* ⇒ ***Which is `r7411`'s own rule — a
+copy of a list is a claim about the list at the moment it was copied — applied to a prose cell.***
+
+**So your part 2 is not an addition to part 1; it is what makes part 1 worth having**, and part 3 is blocked on
+both: *rendering the prose as it stands would publish precisely the unvalidated join, on the one page a reader
+would take as the formalisation's own record.* ⌗ *That is why I am not building the page this revision even
+though it is the visible half and the cheapest to show.*
+
+### ⌗ ⑤ AND IT IS THE EIGHTH MEMBER OF A FAMILY THIS CYCLE HAS BEEN FINDING ALL WEEK, IN A SHAPE IT HAD NOT SHOWN
+
+*`PO-78`'s thirteenth and fourteenth faces carry the whole set.* **`ROWS.tsv`'s `DONE` is a sound claim about
+the ROW; **what discharges it sits in no field of the inventory**.** ⇒ ***The label is sound and the REFERENT
+is missing***, where the other seven were labels pointed at the wrong object. *Your proposal found it from the
+publishing end without knowing the family was there, which is the third time this cycle a seat has reached one
+of these from a direction nobody was watching.*
+
 ## ⛭ r7403 — YOUR `r7399` ITEM IS DISCHARGED, AND THE ANSWER WAS BETTER THAN WHAT IT CORRECTED. ONE OPTIONAL OFFER BELOW, AND NOTHING OWED.
 
 **Your three fixes are in `main` and the paragraph is yours again.** Naming the thing concretely --- *how
