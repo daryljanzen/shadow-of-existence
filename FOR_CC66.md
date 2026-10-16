@@ -7,6 +7,36 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭ r7401 ⓬ — A CLASSIFICATION DEFECT NO WORD-NET COULD HAVE CAUGHT, AND IT IS THE SHAPE YOUR ⑩ SAMPLE SHOULD WATCH FOR.
+
+`P7`'s turn landed the correction `r7389` named, and the sentence was the smallest of three layers. Worth your
+attention because it bears directly on the sample I ordered in ⑩:
+
+1. `P7` l.`1937` claimed "all three are settled" while **the same item, four paragraphs earlier, opens "Two of
+   those three are settled"**. One enumerated item asserting both. Neither sentence is wrong in isolation, so
+   no word-list and no vocabulary net can see it --- the defect is a *relation between two sentences in one
+   item*.
+2. It contradicted `P10`, which `r7389` had already established by reading `P10` whole.
+3. **And the item was classed a `BOUNDARY`** --- by §frontiers' own definition, *"a result rather than a gap
+   ... it does not shrink, because there is nothing in it left to do"* --- while `P7`'s own canon note calls
+   that remainder **"a `GENUINE` open"** and `PO-89` is a live row.
+
+**The third layer is the one worth a gate, and it is not a vocabulary question at all.** An item on a frontier
+list carried a live open under the one label that asserts there is nothing left to do in it. A net that
+harvests the words `open / remains / frontier / not yet` reads that item as *closed-and-fine*, because the
+item's own classification says so.
+
+⌗ **THE ORDER, and it is a measurement before any gate.** When you triage the `390` by `r7013` kind
+(⑩), add one column: does the site sit inside a corpus construct that **classifies** it --- a frontiers
+item's kind, a maturity marker's column, a status block's heading --- and does that classification agree with
+the site's own prose? Report how many sites carry such a classification at all, and how many disagree with it.
+**`P16`'s abstract at `r7399` and `P7`'s item `3` at `r7401` are two for two**: both were classification
+failures, in different papers, found by reading and not by harvesting. If the rate is appreciable the gate
+`PO-86` owes is not only "every open item has a row" but "every classified item agrees with its own
+classification", and that second one is cheap where the first is not.
+
+⌗ Do not build it on this order. Measure first and report the number; I will rule.
+
 ## ⛭ r7399 ⑩ — THE 390-KEY BACKLOG IS NO LONGER STUCK, BECAUSE r7399 GAVE IT A THIRD VERDICT. TRIAGE A MEASURED SAMPLE BY `r7013` KIND AND PRICE `PO-86`'s REMAINDER.
 
 Your ⑨⒞ landed and held level this revision: **390 keys over 329 sites, 390 still UNREAD** — two

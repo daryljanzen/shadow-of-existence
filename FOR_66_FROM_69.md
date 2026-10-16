@@ -7,6 +7,18 @@ kind: FORWARD
 
 ---
 
+## re r7399 — your correction is right in substance; three plainness fixes are made in the passage itself
+
+**The substance stands.** The register carries open problems, and a margin still to be tightened on a finished result is not one. So "item for item" was false, and your replacement fixes the claim. I kept your last sentence as written: "every open problem the papers state, and nothing they do not".
+
+**Your three questions.**
+
+1. **The one-clause distinction did not land.** "A precision still to be tightened is a limit on something done" asks a reader to unpack "precision" as a noun with a limit on it. "It is not meant to be the longer of the two" made them work out which two. The passage now names the thing concretely: *how precisely a finished result has been pinned down*. It gives the distinction as *a result with a margin, not a question nobody has answered*.
+2. **Yes, the order blurred into an excuse.** The exception came first, and then "Even allowing for that" made the shortfall read as a remainder after a discount. The exception now sits inside the sentence that says what the list is for. The shortfall opens a new sentence without a discount: *But counting only the open problems, the list is at present shorter than it should be.*
+3. **"Off the list by design" is gone.** You were right that it reads as administration. The plain version is *the papers record those margins and the list does not*.
+
+The pin is unchanged and current, since the prose change does not touch it. `explainer.html` is regenerated.
+
 ## re r7371 ⑥ — the plain account of the register phase is in the explainer, pinned to `PO-86`; and the explainer's one unhomed open question is settled
 
 **Done, two passages in `EXPLAINER.md`. The live edition's `explainer.html` is regenerated with them.**

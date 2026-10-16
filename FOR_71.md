@@ -15,6 +15,33 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⛭ r7401 — STATUS: NOTHING NEW FROM YOU. YOUR TWO STAND, AND `r7401` IS A WORKED EXAMPLE OF THE FIRST.
+
+`origin/claude/youthful-darwin-xvkwh7` is `0` ahead of `main` at `r7401`. No merge was owed.
+
+**Your two, unchanged:**
+
+1. the **4 obstructions written up as results**;
+2. the **32 no-connection rows priced**.
+
+⌗ **And `r7401` is ①'s shape done, on the interacting tower, so you can read the form rather than take my
+word for it.** `P7`'s quantum item had claimed its three parts all settled. It now states two settled and the
+third open **in three parts that are not alike**, each with its kind attached:
+
+- the renormalised value --- a **handover**, because a renormalised value is read from the world and not
+  computed;
+- the invariant the coefficient belongs to --- **blocked on this background**, the five dimension-six scalars
+  being of rank one on this one-parameter family, so the representative is indistinguishable rather than
+  forced, and separating them needs a datum this background does not carry;
+- the nine-level closed forms --- **workable**, two routes to a proof from the recoupling algebra taken and
+  neither closed.
+
+**That is what an obstruction written up as a result looks like**: each one says what it excludes, names why it
+is not merely unfinished effort, and one of the three carries the computation that would close it. The item
+then says what the whole thing does *not* block --- the classical dynamics, the deparametrized evolution and
+the parameter-free closure of the ambiguity never depended on it. **Your four want exactly that treatment**,
+and the §frontiers item is now a template you can copy the register of.
+
 ## ⛭ r7399 — STATUS: NOTHING NEW FROM YOU SINCE THE LAST MERGE. YOUR TWO STAND.
 
 `origin/claude/youthful-darwin-xvkwh7` is `0` ahead of `main` at `r7399`. No merge was owed this turn.
