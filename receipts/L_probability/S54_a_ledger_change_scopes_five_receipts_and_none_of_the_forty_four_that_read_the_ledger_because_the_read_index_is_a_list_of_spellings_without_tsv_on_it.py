@@ -190,7 +190,7 @@ def main():
     #   commit, for the same reason.  `r7415+70.1` committed a nightly index whose trace records `.tsv`
     #   reads, which is the repair Ⓐ③/Ⓐ④ describe arriving through the index rather than through
     #   `NAME_RE` -- read live, Ⓐ②-Ⓐ④ went red on success.  The claims are about the index as it stood.
-    _idx_path = os.path.join(_rs_tmp, 'READ_INDEX.json')
+    _idx_path = os.path.join(_rs_tmp, os.path.basename(rs.INDEX))
     io.open(_idx_path, 'w', encoding='utf-8').write(subprocess.run(
         ['git', 'show', _RS_AT + ':' + rs.INDEX], cwd=ROOT, capture_output=True, text=True, check=True).stdout)
     idx, traced, stale, new = rs.load(ROOT, _idx_path)
