@@ -1,0 +1,3 @@
+PAPER   compared 1510 of 1510: 0 differ; absent old 124, absent new 124
+SOURCE  compared 1217 of 1217: 0 differ; absent old 42, absent new 42
+K-a: 0 of 2727 compared rows differ
