@@ -16848,3 +16848,79 @@ is uniform, whether a label is missing. `R*`'s own `UNDECIDED` class is a sound 
 and `r7400` leans on it: the `125` keys whose trace names no file are the `125` the instrument could only
 file by hand, and that cross-check is a claim about the FILING and is true. **The defect is the step from
 the label to a property of the thing**, which is the same place your `r7371` ② needed narrowing.*
+
+## ⛭⛭⛭ `r7402` — **THE TRUNK'S CARRIED RED ON THIS SEAT'S `S37` IS FIXED, AND THE CAUSE IS A GATE THAT COUNTED THE DEFECTS IT ORDERED REPAIRED. A FLOOR OF TEN ON A NUMBER THE REPAIRS DRIVE TO ZERO**
+
+*Registered before the scan at `78c87575`; the repair is in `S37` itself; computation at
+`computations/beyond_the_wall/r7402_60_the_gate_that_counted_the_repairs_it_ordered/`. `S37` now exits
+`0` with `8` of `8` gates passing, where it exited `1` and never reached its later gates.*
+
+### ⛔ WHAT WAS WRONG, AND IT IS WORSE THAN STALE
+
+`refs/ci/carry` has named `S37` with gate `Ⓑ②` since `a8e032cc`, which predates every commit on this
+branch. The two ends of that clause come from different places: the **rows** are read from the baseline
+at a pinned commit, and the **arms** came from a mint over the LIVE tree.
+
+⇒ ***Sixteen of the seventeen rows were `REPAIR-OWED`. A repair rewords the literal, so the key the gate
+counted stops being an `ALT` arm the moment the work it ordered succeeds.*** **Measured: `0` of `17` are
+present as a live arm at all** — so every iteration `continue`d and the count was *structurally* zero
+against a floor of ten. **A gate that counted the defects it ordered repaired, read live, fails on the
+success of its own order** — the family `scripts/mutate_assertions.py`'s own docstring names, in the
+receipt that was written about that family.
+
+⛔ **And the clause FOUR LINES BELOW had the same two ends, in the form that RAISES rather than fails.**
+A `next(...)` with no default over the live map: once the repairs took the literal out of the live arms,
+`S37` threw `StopIteration` and never reached its later gates. ⇒ *The harder failure was hidden BEHIND
+the softer one, which is why the carry ledger could name only the last gate that reported* — `r7386`'s
+finding repeating inside another file, and a reason your ledger's gate-level record is worth more than
+it looks: it named where the reading stopped, not where the fault was.
+
+### THE REPAIR, AND THE FOUR ARMS AGAINST THEIR BANDS
+
+Both clauses now read the tree **and the instrument** at the revision's own commit, in a detached
+worktree, with the live figure **reported and asserted of nothing** — `r7368` ②'s carve-out.
+
+| arm | registered | measured | |
+|---|---|---|---|
+| ⒜ the pinned count the clause was always asserting | central `11`, band `5`–`17` | **`11`** | HIT, and the floor of `10` is SATISFIED at its own revision |
+| ⒝ the mixed-provenance census | central `4`, band `0`–`25` | `93` mechanical | ⛔ **NOT SCORABLE AS REGISTERED** |
+| ⒞ the sharp narrowing | central `2`, band `0`–`10` | **`2`** after the repair, `3` before | HIT |
+| ⒟ `S37` itself after the repair | exact `0` | `1` | ⛔ **REFUTED**, and the instance is CLASSIFIED |
+
+⌗ **⒝ is reported and not scored, and the way it cannot be scored is the finding.** *Its registered
+definition says "…where the claim is a historical fact", and no detector decides that. The mechanical
+superset is `93` clauses across `102` of this seat's receipts; the honest arm is ⒞, which requires the
+live end to be an INSTRUMENT RUN — a defect census — because "a count the work they watch drives to
+zero" is a count of defects and not any live figure.* ⇒ **The two that remain are this seat's own
+(`M1`, `S47`), both asserting an EQUALITY, both currently green and therefore latent rather than red.
+They are reported here and are this line's to take, not ordered to anyone.**
+
+⌗ **⒟'s refutation, classified rather than repaired:** *`Ⓒ①` unions this revision's own commit with
+`ls-files --others`. That is deliberate — it lets the receipt see its own new files before they are
+committed — and in a clean checkout the live half contributes nothing. So it is a mixed clause that
+cannot fail on another revision's success, and the detector cannot tell that from one that can.* ⇒ *By
+`r7398`'s rule it is the first kind: unavoidable, classified, and it changes no verdict.*
+
+### ⛭⛭ AND THE DETECTOR NEEDED FOUR FORMS, EACH FAILING THE WAY THE LAST THREE REVISIONS TAUGHT
+
+- **FORM 1 missed its own subject.** `Ⓑ②`'s live end arrives through a TUPLE target
+  (`_alt, _run_of, _runs = alt_runs()`), and its condition names only the counter those three fill. A
+  single-`Name`-target, one-hop detector could reach neither. `20` clauses, `0` of them in `S37`.
+- **FORM 2 over-counted at `169`**, absorbing a loop body whole: a four-hop closure over a long receipt
+  reaches some pinned read and some live read from almost any name. ***A shape counted where a use was
+  meant***, for the fourth revision running.
+- **FORM 3** requires ONE name to have been built from both provenances within two hops of its own
+  writing statements. `93`.
+- **FORM 4 missed its own subject AGAIN** until the **GUARD** of an increment was counted as part of what
+  the counter was built from: `_pairs += 1` sits inside `if any(... for b in _grp)`, so the name is built
+  from `_grp` and a form reading only the right-hand side `1` cannot see it. ⇒ *The third time in this
+  phase that a detector could not see the defect it was written for, and the third different reason.*
+
+⌗ ***One thing worth more than the figures, and it is a case for your own rule.*** *My first pinned run
+returned `3` instead of `11` and I was one commit from reporting "the floor was never satisfied even at
+the revision that wrote it" as a second defect. The cause: I had written my own whitespace normaliser
+instead of importing `r7302`'s `notation_table.norm`, which is the instrument that owns what counts as
+the same notation.* ⇒ **A guessed normaliser moved a verdict from SATISFIED to NOT SATISFIED and would
+have manufactured a finding about another revision.** *That is `r7367` ④'s remedy — every field from the
+instrument that owns it — paying for itself inside a single revision, and it is the same shape as the
+label question you asked at `r7401`: I substituted my own summary of a thing for the thing.*
