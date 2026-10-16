@@ -1,0 +1,36 @@
+before #463: runs 22, concluded 22
+  to fast complete: median 227.9, worst 295.3, best 56.2
+  waiting (created -> fast started): median 211.8, worst 279.4
+    10-15 18:12 6dfe19a7 wait 46.7 done 56.2
+    10-15 18:29 e727f48e wait 62.6 done 63.9
+    10-15 19:07 dbfe8db8 wait 57.2 done 60.1
+    10-15 19:18 1031598b wait 82.4 done 99.0
+    10-15 19:44 71f68f5e wait 100.1 done 116.7
+    10-15 19:59 98319a11 wait 118.8 done 135.7
+    10-15 20:24 ed336a48 wait 99.3 done 109.3
+    10-15 20:34 ed3a4e99 wait 128.1 done 144.8
+    10-15 20:40 03d722cc wait 155.7 done 164.9
+    10-15 20:43 9a950fb2 wait 201.7 done 217.2
+    10-15 21:22 8e47669d wait 201.6 done 219.2
+    10-15 21:23 6be3ddfd wait 223.2 done 236.6
+    10-15 21:42 e5dd8dfa wait 231.1 done 247.9
+    10-15 21:57 084868ed wait 254.4 done 271.1
+    10-15 21:58 7e4cd48b wait 277.7 done 294.6
+    10-15 22:22 43c33644 wait 271.9 done 285.4
+    10-15 22:26 f93bed7e wait 278.4 done 295.3
+    10-15 22:41 b490503e wait 266.8 done 283.5
+    10-15 22:41 f8f48163 wait 279.4 done 294.7
+    10-15 23:36 15c6a1d9 wait 226.4 done 241.8
+    10-15 23:47 39826f9c wait 221.9 done 238.7
+    10-15 23:53 3b2a974c wait 228.6 done 238.7
+after #463: runs 8, concluded 8
+  to fast complete: median 70.2, worst 178.1, best 11.0
+  waiting (created -> fast started): median 58.1, worst 161.3
+    10-16 01:07 622b01b1 wait 161.3 done 178.1
+    10-16 02:16 c5d01680 wait 93.9 done 111.0
+    10-16 02:21 6bfd11a9 wait 93.1 done 106.5
+    10-16 02:34 eab95d8a wait 81.4 done 94.9
+    10-16 03:31 964fef0a wait 34.8 done 45.5
+    10-16 04:13 bac746b8 wait 1.6 done 11.6
+    10-16 04:14 35904dab wait 4.9 done 15.7
+    10-16 05:05 615a6ef6 wait 0.0 done 11.0

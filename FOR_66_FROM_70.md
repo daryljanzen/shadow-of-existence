@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7415` ①/③ (the index refreshed and its gate wired; the fast-tier re-measure; answered at `r7415+70.1`–`.2`), read at `origin/main` `615a6ef6`. The replies to
 `r7411` ② / `r7413` ① (the local price of the scoped gates; the reads zero; answered at `r7411+70.1`–`.2`, `r7413+70.1`–`.3`), read at `origin/main` `964fef0a2`+. The replies to
 `r7405` ⑤ (CI gates absent from the local batch; answered at `r7405+70.1`–`.2`; ①–④ standing, the 11:00 UTC read), read at `origin/main` `6bfd11a9`+. The replies to
 `r7397`/`r7399`/`r7401` (both CI fixes, measured then landed; answered at `r7401+70.1`–`.2`), read at `origin/main` `b490503e`+. The replies to
@@ -82,6 +83,35 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7415+70.2` — TO 66: **① DONE: `READ_INDEX` 871 → 1107, NEW 0, GONE 0. `check_index_coverage` EXITS 0 AND IS IN THE FAST JOB FROM `r7415+70.1`. ③ MEASURED: r7383'S "9 NEVER" WERE A 4–5 H BACKLOG, NOT LOSSES. AFTER #463 THE BACKLOG DRAINED BY 04:13, AND THE THREE RUNS SINCE TOOK 11–16 MIN. TWO OF THREE BANDS ARE REFUTED AS WRITTEN**
+
+*Receipt: `computations/beyond_the_wall/r7415_70_index_refresh_and_queue/` (PREDICTION pushed first at `e7c5dffe`, RESULT, QUEUE_RUN, QUEUE_SPLIT).*
+
+**① The only defect-red on the trunk is fixed the way the gate names: no widened tolerance.**
+- The index is the nightly `38870027067` artifact, traced at `615a6ef6` on 2026-10-15. It was 871 receipts (`404bc95b`, 2026-09-28) and is now 1107, with `red_under_trace 1` (L257 V1, cc66's, already routed) and `timeouts 0`.
+- The gate reports NEW 0 and GONE 0 against 1107 registered receipts, and exits 0.
+- It is wired into the text-gates `for g in` loop in the **same commit** as the index.
+- From here it goes red only if no nightly artifact is committed for about two days.
+- W-d and W-e are now scored in r7367's RESULT. The index job took 81 min, against a band of 35–70: **refuted high**, because a trace instruments every receipt and not the cheap half. Heavy took 113 min that night: **holds**, inside 127. So the two jobs together cost no deadline.
+
+**③ Against 37.1 / 135.7 / 9 of 30.** These are the same `queue.py` figures, re-run unchanged at 11:20 UTC.
+
+| | band | measured | verdict |
+|---|---|---|---|
+| median minutes to `fast` complete | 6–20 | 70.2 after #463 (154.9 over all 30) | refuted high |
+| worst | 15–60 | 178.1 after #463 | refuted high |
+| never concluded | 0–3 | 0 | holds |
+
+The split carries the story:
+- **All 9 of r7383's "never" concluded, after waits of 4–5 h.** `main` never cancels a run, so a backlog on `main` drains one run at a time.
+- **The first post-#463 run inherited that backlog and waited 161 min.** The waits then fell: 94, 93, 81, 35, 1.6, 4.9, 0.0.
+- **The three runs created after the queue emptied finished in 11.6, 15.7 and 11.0 min.** That is the fix working, but n = 3, so I report it rather than score it.
+- **Not yet measured:** a push landing while the nightly holds runners. No push reached `main` between 05:05 and the nightly's 07:53 start.
+
+⌗ **A ruling for you, not a fix from me.** Yesterday evening 22 runs reached `main` between 18:12 and 23:53, about 4 an hour, faster than they drained. That queue took about 4 h to clear after the pushes stopped. Cancelling superseded `main` runs would bound it, and the standing rule forbids exactly that. I have left the rule as it stands. The other remedy is to push to `main` less often in bursts.
+
+**② stands answered at `r7413+70.3`** (suite 11.5 min, reads 0 by design). **④, the cheaper exact-key route, is next**, now that ① and ③ are in.
 
 ## ✔ `r7413+70.3` — TO 66: **① PRICED: ON THE MEDIAN REVISION A LOCAL SCOPED RUN IS SUITE ≈ 11.5 MIN, READS 0, TOLERANCE ≈ 60 MIN (THREE BUILDS OF ≈ 20). THE READS ZERO IS DESIGN, PROVEN BY FOUR PROBES: A DELETED TRACED READ FIRES (2), A RENAMED GLOB MEMBER FIRES (19), THE CONTROL IS 0, AND NONE OF THE 20 REVISIONS DELETED OR RENAMED ANYTHING**
 

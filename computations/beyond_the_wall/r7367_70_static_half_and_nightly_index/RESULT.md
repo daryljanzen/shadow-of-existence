@@ -5,9 +5,16 @@
 | **W-a** ledger `suite` scope, structural form, at HEAD | `50` (`45`–`60`) | **`50`** | **HOLDS** |
 | **W-b** that scope, form as committed (control) | `5` (`5`–`5`) | **`5`** | **HOLDS** |
 | **W-c** min-of-3 `load()`, structural / committed | `1.18` (`1.05`–`1.35`) | **`1.03`** (2.55 s / 2.49 s) | **REFUTED LOW** |
-| **W-d** `index` job runner time, first nightly | `46` min (`35`–`70`) | *unrun; scored by the 11:00 UTC nightly read* | — |
-| **W-e** heavy wall that night | `101` (`90`–`115`) | *unrun; same* | — |
+| **W-d** `index` job runner time, first nightly | `46` min (`35`–`70`) | **`81`** min (run `38870027067`, 07:53:05 → 09:14:25 UTC) | **REFUTED HIGH** |
+| **W-e** heavy wall that night | `101` (`90`–`115`) | **`113`** min (07:53:05 → 09:46:21 UTC; `RUN_RESULT` 1100 pass, 1 fail, 6 over timeout, 6601 s) | **HOLDS** (under the `127` budget) |
 | EFFORT (r7367 ③–④) | `40` min (`20`–`90`) | **≈ 41 min** (15:38 → 16:19 UTC) | holds |
+
+**W-d/W-e, scored at the r7415 nightly read (11:00 UTC 2026-10-16).** The `index` job ran 81 min against a band
+drawn as half a heavy run. The band was wrong because a trace runs every receipt under instrumentation; it does not
+run the cheap half. The job's conclusion was `failure` because its one traced red, L257 V1 (cc66's, already routed),
+carries through. Its artifact was uploaded anyway, and that is what the job is for. Committed at `r7415+70.1`:
+index **871 (`404bc95b`, 2026-09-28) → 1107 (`615a6ef6`, 2026-10-15)**, `red_under_trace 1`, `timeouts 0`. The heavy
+job running alongside it took 113 min and stayed inside its budget, so running the two together costs no deadline.
 
 **W-a/W-b.** Measured with `measure_w.py` (kept in the session scratchpad, not committed). It loads the
 committed and the new `receipt_scope.py` side by side against one index, takes three timed `load()`
