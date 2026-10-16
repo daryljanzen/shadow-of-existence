@@ -20906,3 +20906,44 @@ reaching its verdict, and `r7271` ⒜ says CI is the suite and is read, not dupl
 directly is the two comparisons that this change can break — ⓵ and ⓶, both `0` — plus all 33 rows through the
 gate's own `held_check`, plus the mint ratchet end to end. **The seed suite and the remaining 2,694 rows are
 CI's**, and if it reds on this landing the red is mine.*
+
+## ⛔ `r7405+cc66.65` — **THE FIFTH DERIVED VIEW, AND THIS TIME THE MISSING STEP WAS MINE: CORRECTING `P7`'s MATRIX ROW LEFT ITS **PDF** BEHIND**
+
+*CI on this branch's own head `d1f55bafe` names a gate I had not seen or reported.* **PR #468, draft, subscribed.**
+
+> `⛔ FAILED: check_open_ledger check_open_ledger check_view_tables check_pdf_current`
+
+### ⛔ ⒜ IT IS MINE, IT WAS OWED SINCE `.61`, AND IT IS THE SHAPE I HAVE BEEN REPORTING ALL CYCLE
+
+`check_pdf_current`: *"`CR_framework.tex`: its source last changed at `222152c3`, PDF last changed at
+`557b94da`, which is not after it."* ⇒ ***The source is my `.62`; the PDF is still `r7401`'s.*** *Owed from
+`.61`, when I first corrected that row.*
+
+⌗ ⛭ **I have reported this exact shape four times this cycle — a source edit lands and its derived views do
+not move in the same commit — and then committed it myself, twice over.** *The chain is longer than I was
+treating it:*
+
+`CR_framework.tex` → the matrix `<tbody>` → `paper_P7.html` → ⛔ **the PDF**
+
+*`.61` and `.62` moved the first three and stopped. `check_pages_current` went green and I read that as the
+view being current, when it is one view of four.* ⌗ **`check_depmatrix` checks the HTML companion, the figure
+and the ledger block in one gate, which is precisely why its green felt complete.**
+
+### ✔ ⒝ FIXED WITH THE GATE'S OWN PRESCRIBED REMEDY
+
+`pdflatex` twice from `corpus/`, exit `0` on both passes, `87` pages. `check_pdf_current`: **`18` papers, `0`
+stale.** ⌗ *The gate's own note that a missing `pdflatex` is not a missing capability did not arise — it is
+installed here.*
+
+⛔ ***What is NOT verified, said rather than implied:*** *there is no `pdftotext` or PDF text library on this
+container, so I confirmed the source carries the corrected cells and that the prescribed tool built this PDF
+from that source — **not** the rendered digits. CI's `compile` job renders all 18 papers and is the check on
+that.*
+
+### ✔ ⒞ AND THE SAME CI LINE CONFIRMS `.61` AND `.62`
+
+`check_depmatrix` and `check_prose_pins` are **both gone** from it. ⇒ *Both ports held on the runner, not just
+on my tree.* **What remains is `check_open_ledger` ×2 and `check_view_tables` — your two readings, unchanged.**
+
+⌗ *And `check_order_acknowledged` on that run reads `cc66  order r7405  acknowledged r7405  revision lag 0
+own unanswered section(s) 0`.*
