@@ -1,0 +1,38 @@
+## NO-CONNECTION, NOT DONE: 32
+9	G3	receipts/L175_dimensional_descent/E50_a_second_step_is_emptied_by_rule_two_and_not_forbidden_by_it.py	plane sections of the dS hyperboloid as submanifolds with radius
+10	G3	receipts/L175_dimensional_descent/E52_the_plane_section_reduction_reproduced.py	plane sections of the dS quadric identified as dS_{D-1} / sphere
+12	G1	receipts/L204_physics_reach/P6_the_nariai_frame_does_not_exist_and_the_transplanckian_scope.py	Killing norm: static region pinches off at the double root; blueshift factor
+14	G0	receipts/L210_entry_points/H1_the_FRW_case_is_the_same_cycloid.py	closed-FRW dust scale factor equals a cycloid (a function)
+15	G0	receipts/L211_closure_adjacency/A3_the_second_free_function_is_where_the_progenitor_route_lives.py	LTB turnaround radius (functions of r)
+16	G0	receipts/L211_closure_adjacency/A5_the_free_function_and_the_inherited_datum_are_one_freedom.py	LTB turnaround time (functions)
+18	G5	receipts/L233_colour_curvature/F2_the_flatness_is_what_a_branching_IS.py	branched covering and its canonical flat connection
+21	G5	receipts/L808_nariai_extension/S1_the_nariai_closed_form_extends_as_a_series_in_the_horizon_separation.py	Nariai limit identified as dS2 x S2
+25	G1	receipts/P01_BH_causality/P01_metric_singularity_algebra.py	one metric in four charts; Killing norm at the horizon
+26	G5	receipts/P01_BH_causality/P1_the_unruh_case_is_what_makes_the_criterion_completion_and_not_perspective.py	horizons sorted by completion (global)
+27	G1	receipts/P02_janzen_circle/P02_analytic_continuations.py	continuation reproduces exterior metric coefficients (a metric in a chart)
+30	G1	receipts/P02_janzen_circle/P02_interior_metric.py	interior metric in cycloid coordinates; causal character of eta
+31	G0	receipts/P02_janzen_circle/P02_the_third_axis_is_two_poles.py	complex continuation lands on real r on three axes
+33	G0	receipts/P03_SdS_slicing/P03_charge_parity.py	parity split of the lapse polynomial
+37	G5	receipts/P03_SdS_slicing/P03_seam_continuation.py	continuation through a throat: C1-not-C2 join with signature flip
+39	G0	receipts/P03_SdS_slicing/P03_the_sixth_equivalence.py	points on the ambient quadric and values of the ambient interval
+40	G5	receipts/P03_SdS_slicing/P03_the_weld_and_the_two_folds.py	deck group Z_{D-1} from the imaginary period
+50	G3	receipts/P08_slicing_operator/P08_synchronous_horosphere.py	flat slicing as an embedding with its induced metric
+53	G4	receipts/P09_range_paper/K7_range_is_essential_image.py	parameter count of vacuum-equation solutions; isotropy groups
+61	G3	receipts/P10_canonical_time/P10_the_clause_66_wrote_on_this_seats_offer_says_exactly_what_its_receipt_supports_and_no_more_so_the_loop_the_grade_class_opened_is_closed_on_itself.py	horizon induced metric degenerate of rank two
+86	G0	receipts/P14_matter_sector_paper/P14_is_there_a_singlet_for_the_axis_pair.py	branches of a height function on the quadric
+87	G0	receipts/P14_matter_sector_paper/P14_the_axis_vantage_is_a_pair.py	imaginary roots of X0^2 = -alpha^2
+88	G0	receipts/P14_matter_sector_paper/P14_the_axis_vantage_is_imaginary_not_absent.py	power-of-a-point height: a point on the quadric
+90	G0	receipts/P14_matter_sector_paper/P14_the_fixed_axis_is_not_in_the_substrate.py	the quadric has no real point on the axis
+91	G1	receipts/P15_CR_cosmology/I11_I1_one_condition_two_jobs_and_the_two_routes_are_independent.py	sinh^(2/3) satisfies the radial geodesic first integral
+95	G4	receipts/P15_CR_cosmology/P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py	separated wave operator (Killing vectors via Lie derivative on the way)
+97	G5	receipts/P15_CR_cosmology/P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment.py	induced slice identified as R x S^2, not S^3
+100	G5	receipts/P15_CR_cosmology/P15_the_seam_limit_of_the_carried_layer_with_its_chi_block_is_prop_throats_ds2_times_s2_obtained_with_both_radii_read_off_the_flow.py	proper-frame metric tends to dS2 x S2 (identification)
+101	G0	receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py	derivatives of r(s) along a collapse leg
+105	G0	receipts/P16_cosmogenesis_paper/P16_nariai_welds.py	f = f' = 0 at the Nariai root
+106	G5	receipts/P17_geometric_core_paper/P17_no_second_scale_on_either_face.py	Wick rotation identifies the dS5 quadric with S^5
+107	G3	receipts/P17_geometric_core_paper/P17_the_alpha_family_is_a_foliation.py	a confocal quadric family as a foliation
+## REAL OBSTRUCTION: 4
+59	G2	receipts/P10_canonical_time/P10_the_algebraic_quartic_is_settled_by_the_frame_constant_level_at_every_level_and_the_remainder_is_the_derivative_sectors_eight.py	algebraic quartic of a curvature expansion
+65	G4	receipts/P10_canonical_time/P10_the_frequency_shift_is_the_curvature_term_at_every_level_so_the_log_coefficient_is_fifteen_quarters.py	curvature shifts a TT mode frequency
+66	G4	receipts/P10_canonical_time/P10_the_kinetic_cubic_vertex_is_a_split_artefact_and_the_domain_premise_fails_on_the_marginal_branch.py	cubic kinetic vertex on S^3
+67	G4	receipts/P10_canonical_time/P10_the_lowest_tt_harmonics_are_frame_constant_so_the_overlap_is_a_determinant_times_the_volume.py	TT harmonics on S^3, eigenvalue 6 (spectral)
