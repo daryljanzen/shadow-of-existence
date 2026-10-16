@@ -21056,3 +21056,73 @@ text, so keeping mine would have reverted it for nothing.* **`161` rows, `UNADJU
 from `corpus/`, exit `0` both passes, 87 pages. `check_pdf_current`: `18` papers, `0` stale.
 
 ⌗ `check_depmatrix`, `check_prose_pins` and `check_pages_current` all green on the merged tree.
+
+## ⛭⛭ `r7413+cc66.68` — **① RUN: `6` OF `10` VERDICTS CHANGE AND ALL SIX ARE *ONE* EDIT ARRIVING SIX TIMES. ⛔ AND FIRST — A CORRECTION TO `.66`, BECAUSE YOUR ORDER IS BUILT ON A NUMBER OF MINE THAT WAS WRONG**
+
+*Registered before any claim was re-read (`r7413_cc66_the_ten_claim_refresh/REGISTRATION.md`, pushed first).
+`69` was not called.* **PR #468, draft, subscribed.**
+
+### ⛔⛔ ⒜ THE CORRECTION: IT IS `11` CLAIMS, NOT `10`, AND `10` CARRY A VERDICT, NOT `9`
+
+You accepted *"`10` claims with `9` already verdicted"* and ordered the re-verdict on that shape. **That is
+`.66`'s sentence and `.66` had it wrong.** `pairs.py`'s own last line prints:
+
+> `⇒ CLAIMS the refresh must read: 11  (of which 7 carry an existing verdict)`
+
+`10` stale rows and `11` new candidates: mechanically `7` pair, leaving `4` new and `3` stale unpaired, so
+`7 + 4 = 11`. Under the hand-pairing I reported, `3` of those `4` match the `3`, giving `10` pairs and `1`
+unpaired new — **`11` again.** ⇒ ***All `10` stale rows carry a verdict*** (`CHECK` ×2, `NOT-OPEN` ×4,
+`POINTER` ×1, `OPEN` ×3), **so none of them is the one needing "reading properly" — that is the eleventh,
+`frontier:crossing`, which is in no census row at all.**
+
+⌗ *What does NOT change is your ruling. `11` claims with `10` verdicts in hand is still not a `257`-paragraph
+re-read, so "the refresh is no longer a gate on the phase" stands on the corrected number too.* **I did all
+eleven.**
+
+### ⒝ THE BANDS, AND YOUR PRIOR IS REFUTED IN THE DIRECTION I REGISTERED
+
+| | registered | **measured** |
+|---|---|---|
+| verdicts that **CHANGE** of the `10` | central **5**, band 3–8 | **`6`** ✔ |
+| your prior `2`–`3` | predicted **LOW** | **LOW — it is `6`** ✔ |
+| the `11`th comes out `OPEN` | **YES** | **YES** ✔ |
+| any of the `10` needs `69` | **NO** | **NO**, one named exception ✔ |
+
+**Survives `4`:** `#1` P5 `CHECK` (same check, now counted "of the two requirements"); `#6` P7 `OPEN` (the
+list went `3`→`4` and scalar went from *"the work"* to *"the first work"* — still work); `#9` P15 `NOT-OPEN`;
+`#10` P15 `OPEN` (*"the detailed **worldline and** field dynamics"* → *"the detailed field dynamics"* —
+**narrower, still open**, the worldline half gone because `r7407` ruled it does not exist).
+
+**Changes `6`:** `#2` P5, `#3` `#4` `#5` `#7` `#8` P7. ⌗ *The sharpest is `#5`: *"which `\S`frontiers
+**settles** separately"* → *"which `\S`frontiers **states open**"*. **One word, and it inverts the verdict.***
+
+### ⛭⛭ ⒞ THE FINDING — YOUR ONE KNOWN CHANGE **IS** ALL SIX, AND THE REASON IS CROSS-REFERENCE
+
+You wrote *"one is already known to change: `PO-88`'s item is now stated open in `P7`, `P15` **AND** `P5` in
+agreeing words."* ⇒ ***That one change is every one of the six.*** Each changed row is the same
+reclassification — **the matter branch-point crossing: traversal settled, dynamics open** — landing somewhere
+else: **`P7` four times** (`#3` `#4` `#5` `#8`, four separate paragraphs each cross-referencing its own
+`\S`frontiers), `P5` once (`#2`), `P15` once (`#10`, as the *loss* of the worldline half), and once as the
+item itself (`#11`).
+
+⌗ ⛭ ***So your `2`–`3` was not wrong about how many EDITS there are — there is essentially one. It was wrong
+about the FAN-OUT of one edit.*** **The census has no notion of a cross-reference.** *It keys paragraphs, so a
+reclassification invalidates a row everywhere the paper points at the thing reclassified — and that fan-out is
+invisible until a refresh runs. It is why the stale count beat both our priors while the number of real
+changes is one.*
+
+### ⛔ ⒟ ONE THING I WILL NOT SETTLE, AND IT IS BOOKKEEPING ON YOUR BASELINE
+
+**`#9`.** Its verdict survives — the progenitor-vacuum claim is still `NOT-OPEN` — **but its paragraph now
+keys on a different sentence**, *"One check is owed here and is not optional…"*, which was always there and is
+a *different claim*. ⇒ **Either the row is re-keyed and keeps `NOT-OPEN` for a claim it was never about, or it
+is retired and the new sentence enters as its own row.** *A keying decision on your baseline, not a reading of
+the paper — which is why ⒟ holds with this exception named rather than absorbed.*
+
+### ⛭ ⒠ AND THE MARKER-SHIFT MECHANISM IS NOT A ONE-OFF — HERE IT IS IN A PURER FORM
+
+`#8`'s own sentence — *"What is left of it is ordinary interior analysis rather than a frontier of this
+construction"* — is **present verbatim and unchanged.** The row staled because an **earlier** sentence in its
+paragraph gained the word `open`, and `marker_sentence()` returns the *first* match. ⇒ ***`1` of the `10`
+staled with its own sentence untouched.*** *`.66` found this where the sentence HAD been rewritten; here
+nothing the row describes moved at all. That is the content key's price showing up twice in eleven claims.*
